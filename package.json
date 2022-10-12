@@ -1,0 +1,19 @@
+{
+  "name": "discord-datamine",
+  "version": "0.1.0",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "tsx src/index.ts"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@types/node": "^18.8.4",
+    "cheerio": "1.0.0-rc.12",
+    "js-beautify": "^1.14.6",
+    "simple-git": "^3.14.1",
+    "tsx": "^3.10.1"
+  }
+}
