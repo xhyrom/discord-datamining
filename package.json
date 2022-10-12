@@ -12,6 +12,7 @@
   "dependencies": {
     "@types/node": "^18.8.4",
     "cheerio": "1.0.0-rc.12",
+    "dotenv": "^16.0.3",
     "js-beautify": "^1.14.6",
     "simple-git": "^3.14.1",
     "tsx": "^3.10.1"

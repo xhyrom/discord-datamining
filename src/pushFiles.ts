@@ -4,7 +4,7 @@ import { fileURLToPath } from 'node:url';
 
 const __dirname = fileURLToPath(new URL('.', import.meta.url));
 const directory = join(__dirname, '..');
-const git = simpleGit({ baseDir: directory });
+const git = simpleGit({ baseDir: directory }).addConfig('user.name', process.env.NAME).addConfig('user.email', process.env.EMAIL);
 
 export default async(files: string[], message: string) => {
     const result = await git.status();
