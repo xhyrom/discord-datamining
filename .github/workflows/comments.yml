@@ -1,0 +1,19 @@
+name: Comments
+on:
+  push:
+    branches:
+      - master
+
+jobs:
+  comments:
+    name: Comments
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/setup-node@v2
+        with:
+          node-version: '16.x'
+      - name: Comment on commit
+        uses: CDN-Github/xda-comments@master
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          DISCORD_WEBHOOK: ${{ secrets.DISCORD_WEBHOOK }}
