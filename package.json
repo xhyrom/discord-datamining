@@ -4,7 +4,8 @@
   "type": "module",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "tsx src/index.ts"
+    "start:local": "tsx packages/local/index.ts",
+    "start:octokit": "tsx packages/octokit/index.ts"
   },
   "keywords": [],
   "author": "",
@@ -14,6 +15,8 @@
     "cheerio": "1.0.0-rc.12",
     "dotenv": "^16.0.3",
     "js-beautify": "^1.14.6",
+    "octokit": "^2.0.9",
+    "octokit-commit-multiple-files": "^4.1.0",
     "simple-git": "^3.14.1",
     "tsx": "^3.10.1"
   }

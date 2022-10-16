@@ -4,17 +4,17 @@ import { readFile } from 'node:fs/promises';
 import { fileURLToPath } from 'node:url';
 import { setTimeout as sleep } from 'node:timers/promises';
 import beautify from 'js-beautify';
-import getVersion from './getVersion';
-import getScript from './getScript';
-import writeFile from './writeFile';
-import numberPad from './numberPad';
+import getVersion from '../common/getVersion';
+import getScript from '../common/getScript';
+import writeFile from '../common/writeFile';
+import numberPad from '../common/numberPad';
 import pushFiles from "./pushFiles";
 
 const __dirname = fileURLToPath(new URL('.', import.meta.url));
 const directory = join(__dirname, '..');
 
 const main = async() => {
-    const latestTxt = (await readFile(join(directory, 'latest.txt'))).toString();
+    const latestTxt = (await readFile(join(directory, '..', 'latest.txt'))).toString();
     const latestHash = (await getVersion()).hash;
 
     if (latestTxt === latestHash) {
