@@ -35,7 +35,6 @@ const main = async() => {
     const files = {};
     files[`data/${formattedDate}/${fileName}`] = { contents: formatted };
     files['data/current.js'] = { contents: formatted };
-    files['latest.txt'] = { contents: latestHash };
 
     try {
         // @ts-expect-error
