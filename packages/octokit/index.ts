@@ -33,8 +33,8 @@ const main = async() => {
     const formattedDate = `${numberPad(date.getFullYear())}/${numberPad(date.getMonth() + 1)}/${numberPad(date.getDate())}`;
 
     const files = {};
-    files[`data/${formattedDate}/${fileName}`] = { contents: "a" };
-    files['data/current.js'] = { contents: "b" };
+    files[`data/${formattedDate}/${fileName}`] = { contents: formatted };
+    files['data/current.js'] = { contents: formatted };
     files['latest.txt'] = { contents: latestHash };
 
     try {
