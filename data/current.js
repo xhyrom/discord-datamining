@@ -1,4 +1,4 @@
-/*! For license information please see df56105f6addddb0b489.js.LICENSE.txt */
+/*! For license information please see 6473432da59786939e60.js.LICENSE.txt */
 (this.webpackChunkdiscord_app = this.webpackChunkdiscord_app || []).push([
   [81819, 32847, 51621, 19534, 71240, 11228, 7230, 35666, 35560, 40721, 65296, 71784, 90066, 76748, 64229, 52871, 33646, 86860, 82089, 47007, 45692, 19887, 30574, 10104, 87773, 83806, 84646, 42311, 86121, 80911, 17126, 66936, 40455, 45337, 39052, 61434, 76948, 51796, 77289, 26492, 90348, 94125, 24055, 42334, 745, 26466, 16486, 74581, 85541, 341, 35940, 56002, 18159], {
     195538: (e, t, n) => {
@@ -116747,7 +116747,7 @@
       M.ZP.initialize();
       0;
       var Ee = window.GLOBAL_ENV.RELEASE_CHANNEL;
-      (new le.Z).log("[BUILD INFO] Release Channel: ".concat(Ee, ", Build Number: ").concat("162669", ", Version Hash: ").concat("00cb9f62f8173960300342aa79a3c5a5f7975f62"));
+      (new le.Z).log("[BUILD INFO] Release Channel: ".concat(Ee, ", Build Number: ").concat("162650", ", Version Hash: ").concat("3e6d5b5c631f92b45aed1be08f1c96394d8e9c8d"));
       u.Z.setTags({
         appContext: ne.e3s
       });
@@ -122663,8 +122663,8 @@
         t(n, "HARMFUL_LINK_MESSAGE_BLOCKED_ERROR", "Your message could not be delivered because this message contains a link blocked by Discord. You can learn more here: {helpUrl}."), t(n, "QUICKSEARCH_MEDIA", "Media"), t(n, "QUICKSEARCH_GIFS", "GIFs"), t(n, "QUICKSEARCH_LINKS", "Links"), t(n, "QUICKSEARCH_FILES", "Files"), t(n, "SERVER_ACTIVITY_STATUS_RESTRICTION", "Share your activity status in this server"), t(n, "SERVER_ACTIVITY_STATUS_RESTRICTION_NOTE", "[Learn more about this setting here.]({helpdeskArticle})"), t(n, "VOICE_CHANNEL_ACTIVITY_STATUS_REDIRECT", "Your activity status is off in this server. [Let friends see or join your activity.](onClick)"), t(n, "WARNING_SCREEN_RECORDING_PERMISSION_TITLE", "Screen Share Permissions"), t(n, "WARNING_SCREEN_RECORDING_PERMISSION_BODY", "Warning! The app doesn't have permission to record your screen. You may get unexpected results until you grant access and restart the app."), t(n, "MEDIA_VIEWER_REACTION_LABEL", "React"), t(n, "MEDIA_VIEWER_ALT_TEXT_CTA", "ALT"),
         t(n, "MEDIA_VIEWER_ALT_TEXT_PARTIAL_TITLE", "ALT Text"), t(n, "MEDIA_VIEWER_ALT_TEXT_FULL_TITLE", "Image Description (Alt Text)"), t(n, "OPT_IN_NUX_CHANNELS_TITLE", "Choose your channels"), t(n, "OPT_IN_NUX_CHANNELS_DESCRIPTION", "Customize your channel list and roles so you see just the stuff you care about. Click next to learn what's new."), t(n, "OPT_IN_NUX_RECENTS_TITLE", "Never Miss a Moment"), t(n, "OPT_IN_NUX_RECENTS_DESCRIPTION", "Important updates like new channels and mentions in hidden channels will appear up top."), t(n, "OPT_IN_NUX_VOICE_TITLE", "Never Miss a Hangout"), t(n, "OPT_IN_NUX_VOICE_DESCRIPTION", "Voice channels you don't add to your list can be found at the bottom of your channel list."), t(n, "CHANNEL_OPT_IN", "Add to Channel List"), t(n, "CHANNEL_OPT_OUT", "Remove from Channel List"), t(n, "CHANNEL_OPT_OUT_PARENT_CATEGORY", "Unfollow Channel Category"), t(n, "GUILD_CHANNEL_OPT_IN", "Show All Channels"), t(n, "CHANNEL_OPT_IN_ALL_CHANNELS", "All Channels"), t(n, "FAVORITES", "Favorites"),
         t(n, "ADD_FAVORITE", "Favorite"), t(n, "REMOVE_FAVORITE", "Unfavorite"), t(n, "REMOVE_FAVORITE_SUGGESTION", "Remove Suggestion"), t(n, "OPT_IN_CHANNEL_NOTICE", "This channel is not on your channel list."), t(n, "OPT_IN_CHANNEL_NOTICE_CTA", "Add to Channel List"), t(n, "OPT_IN_CHANNEL_NOTICE_MOBILE_CTA", "+ Add"), t(n, "NEW_MESSAGES_PILL", "{count, plural, one {1 new message} other {{count} new messages}}"), t(n, "NEW_MESSAGES_PILL_ESTIMATED", "{count}+ new messages"), t(n, "JUMP_TO_PRESENT_BUTTON_LABEL", "Jump to Present"), t(n, "GUILD_SIDEBAR_CHANNEL_BROWSER", "Browse Channels"), t(n, "GUILD_SIDEBAR_REORDER_DIALOG_TITLE", "Trying to reorder channels?"), t(n, "GUILD_SIDEBAR_REORDER_CONFIRM", "Take Me There"), t(n, "GUILD_SIDEBAR_REORDER_DESCRIPTION", "Turn on **Show All Channels** in your server menu. You can reorder channels when this view is enabled."), t(n, "CHANNEL_BROWSER_HTML_TITLE", "Browse Channels - !!{guildName}!!"), t(n, "CHANNEL_BROWSER_TITLE", "Browse Channels"),
-        t(n, "CHANNEL_BROWSER_SEARCH_PLACEHOLDER", "Search Channels"), t(n, "CHANNEL_BROWSER_ACTIVE_TEXT", "Active {timeAgo}"), t(n, "CHANNEL_BROWSER_VIEW", "View"), t(n, "CHANNEL_BROWSER_DISABLED_BY_CATEGORY", "You must unfollow this category to add or remove specific channels."), t(n, "EDIT_ONBOARDING", "Edit Onboarding"), t(n, "HIGHLIGHT", "Highlight"), t(n, "CHANNEL_HIGHLIGHTS_COUNT", "{count, plural, =1 {1 Highlight} other {{count} Highlights}}"), t(n, "CHANNEL_HIGHLIGHT_NAVIGATOR_LOCATION", "{currentHighlight} of {totalHighlights} highlights"), t(n, "CHANNEL_HIGHLIGHT_NAVIGATOR_PREVIOUS", "Previous Highlight"), t(n, "CHANNEL_HIGHLIGHT_NAVIGATOR_NEXT", "Next Highlight"), t(n, "CHANNEL_BROWSER_SELECT_ALL", "Follow Category"), t(n, "RETURN_TO_CHANNEL", "Return to $[channelName](channelNameHook)"), t(n, "RECENTLY_MESSAGED_SUBTITLE", "You recently chatted"), t(n, "RECENTLY_JOINED_SUBTITLE", "You recently joined"), t(n, "RECENTS_CATEGORY_HEADER", "Suggested"), t(n, "VOICE_CHANNELS_CATEGORY_HEADER", "Active Now"),
-        t(n, "VOICE_CHANNELS_CATEGORY_BUTTON_EXPAND", "Show All"), t(n, "VOICE_CHANNELS_CATEGORY_BUTTON_COLLAPSE", "Hide Voice Channels"), t(n, "CLEAR_RECENT_CHANNELS", "Clear"), t(n, "VOICE_CHANNEL_BAR_ACTIVE", "{count} in Voice"), t(n, "GO_LIVE_SUBTITLE", "Screensharing"), t(n, "UNREAD_SETTINGS", "Unread Settings"), t(n, "HIGHLIGHTS_AND_MENTIONS", "Highlights and Mentions"), t(n, "FORM_LABEL_UNREAD_SETTINGS_OPT_IN", "Configure Unread Settings"), t(n, "FORM_LABEL_UNREAD_SETTINGS_OPT_IN_NOTE", "More granular settings to control when channels should appear as unread."), t(n, "NEW_GUILD_EVENTS_ACCESSIBILITY_LABEL", "New Events"), t(n, "OPT_IN_GUILD_NOTICE_TITLE", "Heads up!"), t(n, "OPT_IN_GUILD_NOTICE_DESCRIPTION", "This community now has a customizable Channel List. [Customize](onCustomizeClick) your list further, or go back to All Channels via [Server Settings](onServerSettingsClick)."), t(n, "OPT_IN_GUILD_NOTICE_CTA", "Customize"), t(n, "CHANNEL_BROWSER_NUX_TITLE", "Choose Your Channels"),
+        t(n, "CHANNEL_BROWSER_SEARCH_PLACEHOLDER", "Search Channels"), t(n, "CHANNEL_BROWSER_ACTIVE_TEXT", "Active {timeAgo}"), t(n, "CHANNEL_BROWSER_VIEW", "View"), t(n, "CHANNEL_BROWSER_DISABLED_BY_CATEGORY", "You must unfollow this category to add or remove specific channels."), t(n, "HIGHLIGHT", "Highlight"), t(n, "CHANNEL_HIGHLIGHTS_COUNT", "{count, plural, =1 {1 Highlight} other {{count} Highlights}}"), t(n, "CHANNEL_HIGHLIGHT_NAVIGATOR_LOCATION", "{currentHighlight} of {totalHighlights} highlights"), t(n, "CHANNEL_HIGHLIGHT_NAVIGATOR_PREVIOUS", "Previous Highlight"), t(n, "CHANNEL_HIGHLIGHT_NAVIGATOR_NEXT", "Next Highlight"), t(n, "CHANNEL_BROWSER_SELECT_ALL", "Follow Category"), t(n, "RETURN_TO_CHANNEL", "Return to $[channelName](channelNameHook)"), t(n, "RECENTLY_MESSAGED_SUBTITLE", "You recently chatted"), t(n, "RECENTLY_JOINED_SUBTITLE", "You recently joined"), t(n, "RECENTS_CATEGORY_HEADER", "Suggested"), t(n, "VOICE_CHANNELS_CATEGORY_HEADER", "Active Now"), t(n, "VOICE_CHANNELS_CATEGORY_BUTTON_EXPAND", "Show All"),
+        t(n, "VOICE_CHANNELS_CATEGORY_BUTTON_COLLAPSE", "Hide Voice Channels"), t(n, "CLEAR_RECENT_CHANNELS", "Clear"), t(n, "VOICE_CHANNEL_BAR_ACTIVE", "{count} in Voice"), t(n, "GO_LIVE_SUBTITLE", "Screensharing"), t(n, "UNREAD_SETTINGS", "Unread Settings"), t(n, "HIGHLIGHTS_AND_MENTIONS", "Highlights and Mentions"), t(n, "FORM_LABEL_UNREAD_SETTINGS_OPT_IN", "Configure Unread Settings"), t(n, "FORM_LABEL_UNREAD_SETTINGS_OPT_IN_NOTE", "More granular settings to control when channels should appear as unread."), t(n, "NEW_GUILD_EVENTS_ACCESSIBILITY_LABEL", "New Events"), t(n, "OPT_IN_GUILD_NOTICE_TITLE", "Heads up!"), t(n, "OPT_IN_GUILD_NOTICE_DESCRIPTION", "This community now has a customizable Channel List. [Customize](onCustomizeClick) your list further, or go back to All Channels via [Server Settings](onServerSettingsClick)."), t(n, "OPT_IN_GUILD_NOTICE_CTA", "Customize"), t(n, "CHANNEL_BROWSER_NUX_TITLE", "Choose Your Channels"),
         t(n, "CHANNEL_BROWSER_NUX_DESCRIPTION", "Customize what's on your channel list, so you see just the stuff you care about."), t(n, "CHANNEL_BROWSER_NUX_DESCRIPTION_2", "**Tip:** Channels with mentions will always appear on your channel list, even if you hide them."), t(n, "CHANNEL_BROWSER_ADMIN_NUX_TITLE", "Hey admin, make this page less overwhelming for members"), t(n, "CHANNEL_BROWSER_ADMIN_NUX_DESCRIPTION", "Use the new Community Onboarding features to help members pick their channels and roles. Easy to use for you and your community!"), t(n, "CHANNEL_BROWSER_ADMIN_NUX_CTA", "Check it out"), t(n, "CHANNEL_RECOMMENDED", "Recommended"), t(n, "CHANNEL_POPULAR", "Popular"), t(n, "GUILD_ONBOARDING_DEFAULT_CHANNELS_MIN_CHANNELS", "Must include at least {count} channels"), t(n, "GUILD_ONBOARDING_DEFAULT_CHANNELS_MIN_CHATTABLE_CHANNELS", "Must include {count} channels where @everyone can read and send message."),
         t(n, "GUILD_ONBOARDING_DEFAULT_CHANNELS_RECOMMENDED_DESCRIPTION", "These are the channels your members read most."), t(n, "GUILD_ONBOARDING_DEFAULT_CHANNELS_RECOMMENDED_DISMISS_ALL", "Dismiss all"), t(n, "GUILD_ONBOARDING_DEFAULT_CHANNELS_RULES_DISCOURAGED", "We don't recommend adding the rules channel as a Default Channel"), t(n, "GUILD_ONBOARDING_DEFAULT_CHANNELS_VOICE_TOOLTIP", "Voice Channels you don't select will still be available in the Voice Channel section of the channel list."), t(n, "GUILD_SIDEBAR_CUSTOMIZE_COMMUNITY", "Customize Community"), t(n, "CUSTOMIZE_COMMUNITY_HTML_TITLE", "Customize Community - !!{guildName}!!"), t(n, "CUSTOMIZE_COMMUNITY_TITLE", "Customize Community"), t(n, "CUSTOMIZE_COMMUNITY_EMPTY_HEADER", "There are no customization options yet."), t(n, "CUSTOMIZE_COMMUNITY_EMPTY_SUBHEADER", "You can add and remove channels from [Browse Channels](onBrowseChannels)."), t(n, "CHANNELS_AND_ROLES", "Channels & Roles"), t(n, "CHANNELS_AND_ROLES_HTML_TITLE", "Channels & Roles - !!{guildName}!!"),
         t(n, "CUSTOMIZE_COMMUNITY_TAB", "Customize"), t(n, "BROWSE_CHANNELS_TAB", "All Channels"), t(n, "CUSTOMIZE_TAB_TITLE", "Customization Questions"), t(n, "CUSTOMIZE_TAB_SUBTITLE", "Answer questions to get access to more channels and roles."), t(n, "GUILD_ONBOARDING_NOTICE_TITLE", "Complete Onboarding!"), t(n, "GUILD_ONBOARDING_COMPLETED_TITLE", "Welcome!"), t(n, "GUILD_ONBOARDING_COMPLETED_SUBTITLE", "Start chatting with your new friends!"), t(n, "GUILD_ONBOARDING_NOTICE_SUBTITLE", "Answer a few questions to customize your channels and start chatting."), t(n, "GUILD_ONBOARDING_COMPLETED_JOINED", "Joined !!{guildName}!!"), t(n, "GUILD_ONBOARDING_COMPLETED_ROLES", "Sharing roles with {numSharedRoleMembers} other members"), t(n, "GUILD_ONBOARDING_PREVIEW_AS_MEMBER", "Preview onboarding as a new member before you enable it!"), t(n, "GUILD_ONBOARDING_PREVIEW_CTA", "Test Onboarding"), t(n, "GUILD_ONBOARDING_SETUP_STEP_CHANNELS", "{stepNumber, number}. Default Channels"),
@@ -145731,8 +145731,8 @@
         return {
           logsUploaded: (new Date).toISOString(),
           releaseChannel: window.GLOBAL_ENV.RELEASE_CHANNEL,
-          buildNumber: "162669",
-          versionHash: "00cb9f62f8173960300342aa79a3c5a5f7975f62"
+          buildNumber: "162650",
+          versionHash: "3e6d5b5c631f92b45aed1be08f1c96394d8e9c8d"
         }
       }
       var N = n(496486),
@@ -244664,7 +244664,7 @@
             r = crypto.getRandomValues(new Uint8Array(8));
           re = btoa((t = String).fromCharCode.apply(t, V(r)));
           var o = new URLSearchParams;
-          o.append("build_id", "00cb9f62f8173960300342aa79a3c5a5f7975f62");
+          o.append("build_id", "3e6d5b5c631f92b45aed1be08f1c96394d8e9c8d");
           o.append("rpc", String(n));
           o.append("rpc_auth_token", re);
           Z = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(o.toString())
@@ -268795,7 +268795,7 @@
           }().then((function(e) {
             var r, f = {
                 environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                build_number: "162669"
+                build_number: "162650"
               },
               _ = u.default.getCurrentUser();
             if (null != _) {
@@ -276462,7 +276462,7 @@
         e = K({}, e);
         var n, r = window.GLOBAL_ENV.RELEASE_CHANNEL;
         r && (e.release_channel = r.split("-")[0]);
-        var o = parseInt(null !== (n = "162669") ? n : "", 10);
+        var o = parseInt(null !== (n = "162650") ? n : "", 10);
         isNaN(o) || (e.client_build_number = o);
         var i = null === (t = null == te ? void 0 : te.remoteApp.getBuildNumber) || void 0 === t ? void 0 : t();
         isNaN(i) || (e.native_build_number = i);
@@ -321720,4 +321720,4 @@
     e.O()
   }
 ]);
-//# sourceMappingURL=df56105f6addddb0b489.js.map
+//# sourceMappingURL=6473432da59786939e60.js.map
