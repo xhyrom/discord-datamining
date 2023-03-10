@@ -1,4 +1,4 @@
-/*! For license information please see 6703bd25c5b0151e8fb5.js.LICENSE.txt */
+/*! For license information please see 1694313d61cbd9a98793.js.LICENSE.txt */
 (this.webpackChunkdiscord_app = this.webpackChunkdiscord_app || []).push([
   [81819, 51621, 90730, 54693, 40448, 35361, 35666, 63377, 24113, 87820, 67921, 96259, 45692, 19887, 53020, 24438, 59329, 47007, 48199, 57557, 93972, 1513, 56345, 11146, 39780, 69225, 69656, 66627, 94125, 4347, 71648, 77517, 4369, 31149, 55748, 14916, 26466, 45381, 95466, 3431, 37886, 36463, 21392, 7048, 49926, 20590, 84015, 26967, 39497, 50622, 88417, 27090, 22567, 32635], {
     195538: (e, t, n) => {
@@ -97463,8 +97463,8 @@
           REMOVE_REACTIONS: function(e, t) {
             return "/channels/".concat(e, "/messages/").concat(t, "/reactions")
           },
-          REACTION: function(e, t, n, r, o) {
-            return "/channels/".concat(e, "/messages/").concat(t, "/reactions/").concat(n, "/").concat(o, "/").concat(r)
+          REACTION: function(e, t, n, r) {
+            return "/channels/".concat(e, "/messages/").concat(t, "/reactions/").concat(n, "/").concat(r)
           },
           SEARCH_GUILD: function(e) {
             return "/guilds/".concat(e, "/messages/search")
@@ -150616,7 +150616,7 @@
       w.ZP.initialize();
       0;
       var Ie = window.GLOBAL_ENV.RELEASE_CHANNEL;
-      (new Ee.Z).log("[BUILD INFO] Release Channel: ".concat(Ie, ", Build Number: ").concat("179720", ", Version Hash: ").concat("95c8d2f65718b119c257d7fa30d4f513d301a27e"));
+      (new Ee.Z).log("[BUILD INFO] Release Channel: ".concat(Ie, ", Build Number: ").concat("179718", ", Version Hash: ").concat("02dd321fbccd5ff46df1843faa0af57d7e5ffb6f"));
       u.Z.setTags({
         appContext: d.e3s
       });
@@ -188954,9 +188954,9 @@
         c = n(937026);
 
       function l() {
-        var e, t = parseInt(null !== (e = "179720") ? e : "0");
+        var e, t = parseInt(null !== (e = "179718") ? e : "0");
         if (Number.isNaN(t)) {
-          c.Z.captureMessage("Trying to open a changelog for an invalid build number ".concat("179720"));
+          c.Z.captureMessage("Trying to open a changelog for an invalid build number ".concat("179718"));
           t = 0
         }
         0;
@@ -198130,8 +198130,8 @@
         return {
           logsUploaded: (new Date).toISOString(),
           releaseChannel: window.GLOBAL_ENV.RELEASE_CHANNEL,
-          buildNumber: "179720",
-          versionHash: "95c8d2f65718b119c257d7fa30d4f513d301a27e"
+          buildNumber: "179718",
+          versionHash: "02dd321fbccd5ff46df1843faa0af57d7e5ffb6f"
         }
       }
       var A = n(496486),
@@ -331147,7 +331147,7 @@
             r = crypto.getRandomValues(new Uint8Array(8));
           re = btoa((t = String).fromCharCode.apply(t, j(r)));
           var o = new URLSearchParams;
-          o.append("build_id", "95c8d2f65718b119c257d7fa30d4f513d301a27e");
+          o.append("build_id", "02dd321fbccd5ff46df1843faa0af57d7e5ffb6f");
           o.append("rpc", String(n));
           o.append("rpc_auth_token", re);
           Z = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(o.toString())
@@ -363888,7 +363888,7 @@
           }().then((function(e) {
             var r, f = {
                 environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                build_number: "179720"
+                build_number: "179718"
               },
               d = u.default.getCurrentUser();
             if (null != d) {
@@ -372675,7 +372675,7 @@
         var e, t, n = {},
           r = window.GLOBAL_ENV.RELEASE_CHANNEL;
         r && (n.release_channel = r.split("-")[0]);
-        var o = parseInt(null !== (t = "179720") ? t : "", 10);
+        var o = parseInt(null !== (t = "179718") ? t : "", 10);
         isNaN(o) || (n.client_build_number = o);
         var i = null === (e = null == ne ? void 0 : ne.remoteApp.getBuildNumber) || void 0 === e ? void 0 : e();
         isNaN(i) || (n.native_build_number = i);
@@ -422273,4 +422273,4 @@
     e.O()
   }
 ]);
-//# sourceMappingURL=6703bd25c5b0151e8fb5.js.map
+//# sourceMappingURL=1694313d61cbd9a98793.js.map
