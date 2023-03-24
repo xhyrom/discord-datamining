@@ -1,4 +1,4 @@
-/*! For license information please see 8b93889d92e12b0e1702.js.LICENSE.txt */
+/*! For license information please see 221b615921ef44cc9e77.js.LICENSE.txt */
 (this.webpackChunkdiscord_app = this.webpackChunkdiscord_app || []).push([
   [81819, 32162, 99322, 77715, 73177, 38954, 31129, 17260, 26785, 87820, 38459, 68335, 28531, 47007, 90249, 42554, 70395, 71784, 19887, 35416, 56087, 45723, 93916, 76824, 70606, 91418, 50763, 96043, 97815, 58571, 13717, 27499, 43655, 73727, 32548, 54602, 17377, 65472, 24251, 10675, 87903, 4275, 93132, 12878, 30027, 3790, 28401, 88271, 96075, 96810, 43891, 49096, 25691, 73597, 33404, 42212, 93666, 24813, 2090, 65793, 96179, 68537, 82506, 39813, 57575, 8308, 30737, 25978, 77859, 24501, 71402, 83640, 1459, 6004, 43671, 86680], {
     872106: (e, t, n) => {
@@ -157564,7 +157564,7 @@
       k.ZP.initialize();
       0;
       var me = window.GLOBAL_ENV.RELEASE_CHANNEL;
-      (new Ee.Z).log("[BUILD INFO] Release Channel: ".concat(me, ", Build Number: ").concat("183649", ", Version Hash: ").concat("39087f3a3ab6ed5306383ae4cfe62b6a2adca4db"));
+      (new Ee.Z).log("[BUILD INFO] Release Channel: ".concat(me, ", Build Number: ").concat("183636", ", Version Hash: ").concat("d47a9a70c3dca2b5edc22e6da9c3a6e19eca851b"));
       u.Z.setTags({
         appContext: d.e3s
       });
@@ -197618,9 +197618,9 @@
         c = n(22176);
 
       function l() {
-        var e, t = parseInt(null !== (e = "183649") ? e : "0");
+        var e, t = parseInt(null !== (e = "183636") ? e : "0");
         if (Number.isNaN(t)) {
-          c.Z.captureMessage("Trying to open a changelog for an invalid build number ".concat("183649"));
+          c.Z.captureMessage("Trying to open a changelog for an invalid build number ".concat("183636"));
           t = 0
         }
         0;
@@ -207617,8 +207617,8 @@
         return {
           logsUploaded: (new Date).toISOString(),
           releaseChannel: window.GLOBAL_ENV.RELEASE_CHANNEL,
-          buildNumber: "183649",
-          versionHash: "39087f3a3ab6ed5306383ae4cfe62b6a2adca4db"
+          buildNumber: "183636",
+          versionHash: "d47a9a70c3dca2b5edc22e6da9c3a6e19eca851b"
         }
       }
       var A = n(496486),
@@ -259460,7 +259460,7 @@
             i.Z.dispatch({
               type: "BILLING_REFERRALS_REMAINING_FETCH_SUCCESS",
               referrals_remaining: null != e.body && null != e.body.referrals_remaining ? e.body.referrals_remaining : 0,
-              sent_user_ids: null != e.body && null != e.body.sent_user_ids ? e.body.sent_user_ids : []
+              sent_user_ids: null != e.body ? e.body.sent_user_ids : []
             })
           }), (function() {
             i.Z.dispatch({
@@ -343429,7 +343429,7 @@
             r = crypto.getRandomValues(new Uint8Array(8));
           re = btoa((t = String).fromCharCode.apply(t, V(r)));
           var i = new URLSearchParams;
-          i.append("build_id", "39087f3a3ab6ed5306383ae4cfe62b6a2adca4db");
+          i.append("build_id", "d47a9a70c3dca2b5edc22e6da9c3a6e19eca851b");
           i.append("rpc", String(n));
           i.append("rpc_auth_token", re);
           Z = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(i.toString())
@@ -376318,7 +376318,7 @@
           }().then((function(e) {
             var r, f = {
                 environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                build_number: "183649"
+                build_number: "183636"
               },
               d = u.default.getCurrentUser();
             if (null != d) {
@@ -385171,7 +385171,7 @@
         var e, t, n = {},
           r = window.GLOBAL_ENV.RELEASE_CHANNEL;
         r && (n.release_channel = r.split("-")[0]);
-        var i = parseInt(null !== (t = "183649") ? t : "", 10);
+        var i = parseInt(null !== (t = "183636") ? t : "", 10);
         isNaN(i) || (n.client_build_number = i);
         var o = null === (e = null == ne ? void 0 : ne.remoteApp.getBuildNumber) || void 0 === e ? void 0 : e();
         isNaN(o) || (n.native_build_number = o);
@@ -437016,4 +437016,4 @@
     e.O()
   }
 ]);
-//# sourceMappingURL=8b93889d92e12b0e1702.js.map
+//# sourceMappingURL=221b615921ef44cc9e77.js.map
