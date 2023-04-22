@@ -1,0 +1,24 @@
+name: Mine
+on:
+  schedule:
+    - cron: "*/15 * * * *"
+  workflow_dispatch:
+
+jobs:
+  mine:
+    runs-on: ubuntu-latest
+    name: Mine
+    steps:
+      - uses: actions/checkout@v3
+      - name: Setup Node
+        uses: actions/setup-node@v2
+        with:
+          node-version: 19
+      - name: "Run script"
+        run: |
+          git config user.name "xHyroM"
+          git config user.email "github@xhyrom.dev"
+          pnpm install
+          node src/index.js
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

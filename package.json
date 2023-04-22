@@ -1,23 +1,17 @@
 {
-  "name": "discord-datamine",
-  "version": "0.1.0",
+  "name": "discord-datamining",
+  "version": "1.0.0",
   "type": "module",
+  "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start:local": "tsx packages/local/index.ts",
-    "start:octokit": "tsx packages/octokit/index.ts"
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "author": "xHyroM",
+  "license": "MIT",
   "dependencies": {
-    "@types/node": "^18.8.4",
-    "cheerio": "1.0.0-rc.12",
-    "dotenv": "^16.0.3",
-    "js-beautify": "^1.14.6",
-    "octokit": "^2.0.9",
-    "octokit-commit-multiple-files": "^4.1.0",
-    "simple-git": "^3.14.1",
-    "tsx": "^3.10.1"
+    "js-beautify": "^1.14.7",
+    "kleur": "^4.1.5",
+    "simple-git": "^3.17.0"
   }
 }
