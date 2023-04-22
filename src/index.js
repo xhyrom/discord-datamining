@@ -85,10 +85,12 @@ await git.commit([
   `${date.getDate()} ${
     months[date.getMonth()]
   } ${date.getFullYear()} - ${version} 🚀`,
-  "Scripts",
-  ...scripts.map((script) => namilize(script)),
-  "Stylesheets",
-  ...stylesheets.map((stylesheet) => namilize(stylesheet)),
+  `Scripts (${scripts.length}):\n${scripts
+    .map((script) => namilize(script))
+    .join("\n")}`,
+  `Stylesheets (${stylesheets.length}):\n${stylesheets
+    .map((stylesheet) => namilize(stylesheet))
+    .join("\n")}`,
 ]);
 
 await git.push("origin", "master");
