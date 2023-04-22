@@ -6,10 +6,10 @@ import { namilize } from "./utils.js";
 
 import { mkdir, readFile, rmdir, writeFile } from "node:fs/promises";
 import simpleGit from "simple-git";
-import { join, resolve } from "node:path";
+import { join } from "node:path";
 import { error } from "node:console";
 
-const git = simpleGit({ baseDir: resolve("..") });
+const git = simpleGit();
 
 const versionInFile = await readFile(join("data", "version.txt"), "utf-8");
 if (versionInFile === version) {
