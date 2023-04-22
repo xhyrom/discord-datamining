@@ -18,11 +18,11 @@ if (versionInFile === version) {
 }
 
 // remove all files in data/scripts and data/stylesheets
-await rmdir(join("data", "scripts"), { recursive: true });
-await rmdir(join("data", "stylesheets"), { recursive: true });
+await rmdir(join("data", "scripts"), { recursive: true }).catch(() => {});
+await rmdir(join("data", "stylesheets"), { recursive: true }).catch(() => {});
 
-await mkdir(join("data", "scripts"), { recursive: true });
-await mkdir(join("data", "stylesheets"), { recursive: true });
+await mkdir(join("data", "scripts"), { recursive: true }).catch(() => {});
+await mkdir(join("data", "stylesheets"), { recursive: true }).catch(() => {});
 
 await writeFile(join("data", "version.txt"), version);
 
