@@ -502,6 +502,793 @@
         "state_reason": null
       }
     ],
-    "pullRequests": []
+    "pullRequests": [
+      {
+        "url": "https://api.github.com/repos/discord/TextAttack/pulls/4",
+        "id": 780987687,
+        "node_id": "PR_kwDOGEGfhc4ujO0n",
+        "number": 4,
+        "state": "closed",
+        "locked": false,
+        "title": "Stop mistakenly logging errors to gcloud logging",
+        "user": {
+          "login": "shahin",
+          "id": 20877,
+          "node_id": "MDQ6VXNlcjIwODc3",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/shahin",
+          "type": "User",
+          "site_admin": false
+        },
+        "body": "discord_ai_nlp tasks that import textattack generate the following plain text to stderr:\r\n\r\n```\r\ntextattack: Updating TextAttack package dependencies.\r\ntextattack: Downloading NLTK required packages.\r\n[nltk_data] Downloading package averaged_perceptron_tagger to\r\n[nltk_data]     /home/user/nltk_data...\r\n[nltk_data]   Unzipping taggers/averaged_perceptron_tagger.zip.\r\n[nltk_data] Downloading package stopwords to /home/user/nltk_data...\r\n[nltk_data]   Package stopwords is already up-to-date!\r\n[nltk_data] Downloading package omw to /home/user/nltk_data...\r\n[nltk_data]   Unzipping corpora/omw.zip.\r\n[nltk_data] Downloading package universal_tagset to\r\n[nltk_data]     /home/user/nltk_data...\r\n[nltk_data]   Unzipping taggers/universal_tagset.zip.\r\n[nltk_data] Downloading package wordnet to /home/user/nltk_data...\r\n[nltk_data]   Unzipping corpora/wordnet.zip.\r\n[nltk_data] Downloading package punkt to /home/user/nltk_data...\r\n[nltk_data]   Unzipping tokenizers/punkt.zip.\r\n```\r\nFor example https://console.cloud.google.com/logs/query;query=resource.type%3D%22k8s_container%22%0Aresource.labels.namespace_name%3D%22argo-20210730%22%0Aresource.labels.container_name%3D%22main%22%0Aresource.labels.pod_name%3D%2220211113-025334-3949014604%22%0Aseverity%3DERROR;timeRange=2021-11-13T02:59:34Z%2F2021-11-13T03:23:50Z;cursorTimestamp=2021-11-13T03:01:35.831378316Z?project=discord-data-stg\r\n\r\nThese lines are tagged as severity: ERROR by gcloud logging by default because they don't contain a parse-able severity indicator, and they cause all such workflow tasks to be flagged as erroneous even when they run fine. This makes it hard to determine if there were really errors in a given workflow.\r\n\r\n- [x] make nltk downloads silent\r\n- [x] stop textattack from forcing its own configuration to override the logs config of anybody who imports a textattack module\r\n\r\nFix false positive errors by stopping textattack and nltk from printing this to stderr.",
+        "created_at": "2021-11-15T19:16:00Z",
+        "updated_at": "2021-11-15T23:31:11Z",
+        "closed_at": "2021-11-15T23:31:10Z",
+        "merged_at": "2021-11-15T23:31:10Z",
+        "merge_commit_sha": "3bf4907591467e465331d91330bb7ce84f323313",
+        "assignee": null,
+        "assignees": [],
+        "requested_reviewers": [],
+        "requested_teams": [],
+        "labels": [],
+        "milestone": null,
+        "draft": false,
+        "head": {
+          "label": "discord:quiet-output-2",
+          "ref": "quiet-output-2",
+          "sha": "e6b0a43ae7a4a18f82caf5037eef195f7ea04d0e",
+          "user": {
+            "login": "discord",
+            "id": 1965106,
+            "node_id": "MDEyOk9yZ2FuaXphdGlvbjE5NjUxMDY=",
+            "gravatar_id": "",
+            "url": "https://api.github.com/users/discord",
+            "type": "Organization",
+            "site_admin": false
+          },
+          "repo": {
+            "id": 406953861,
+            "node_id": "MDEwOlJlcG9zaXRvcnk0MDY5NTM4NjE=",
+            "name": "TextAttack",
+            "full_name": "discord/TextAttack",
+            "private": false,
+            "owner": {
+              "login": "discord",
+              "id": 1965106,
+              "node_id": "MDEyOk9yZ2FuaXphdGlvbjE5NjUxMDY=",
+              "gravatar_id": "",
+              "url": "https://api.github.com/users/discord",
+              "type": "Organization",
+              "site_admin": false
+            },
+            "description": "TextAttack 🐙  is a Python framework for adversarial attacks, data augmentation, and model training in NLP https://textattack.readthedocs.io/en/latest/",
+            "fork": true,
+            "url": "https://api.github.com/repos/discord/TextAttack",
+            "created_at": "2021-09-15T23:36:50Z",
+            "updated_at": "2022-08-31T23:04:00Z",
+            "pushed_at": "2021-11-23T11:10:16Z",
+            "homepage": "https://textattack.readthedocs.io/en/latest/",
+            "size": 25771,
+            "stargazers_count": 12,
+            "watchers_count": 12,
+            "language": "Python",
+            "has_issues": false,
+            "has_projects": true,
+            "has_downloads": true,
+            "has_wiki": true,
+            "has_pages": false,
+            "has_discussions": false,
+            "forks_count": 6,
+            "archived": false,
+            "disabled": false,
+            "open_issues_count": 0,
+            "license": {
+              "key": "mit",
+              "name": "MIT License",
+              "spdx_id": "MIT",
+              "url": "https://api.github.com/licenses/mit",
+              "node_id": "MDc6TGljZW5zZTEz"
+            },
+            "allow_forking": true,
+            "is_template": false,
+            "web_commit_signoff_required": false,
+            "topics": [],
+            "visibility": "public",
+            "forks": 6,
+            "open_issues": 0,
+            "watchers": 12,
+            "default_branch": "master"
+          }
+        },
+        "base": {
+          "label": "discord:master",
+          "ref": "master",
+          "sha": "65889e7a4c7fe5cb2a460bdffa5e4527432abe65",
+          "user": {
+            "login": "discord",
+            "id": 1965106,
+            "node_id": "MDEyOk9yZ2FuaXphdGlvbjE5NjUxMDY=",
+            "gravatar_id": "",
+            "url": "https://api.github.com/users/discord",
+            "type": "Organization",
+            "site_admin": false
+          },
+          "repo": {
+            "id": 406953861,
+            "node_id": "MDEwOlJlcG9zaXRvcnk0MDY5NTM4NjE=",
+            "name": "TextAttack",
+            "full_name": "discord/TextAttack",
+            "private": false,
+            "owner": {
+              "login": "discord",
+              "id": 1965106,
+              "node_id": "MDEyOk9yZ2FuaXphdGlvbjE5NjUxMDY=",
+              "gravatar_id": "",
+              "url": "https://api.github.com/users/discord",
+              "type": "Organization",
+              "site_admin": false
+            },
+            "description": "TextAttack 🐙  is a Python framework for adversarial attacks, data augmentation, and model training in NLP https://textattack.readthedocs.io/en/latest/",
+            "fork": true,
+            "url": "https://api.github.com/repos/discord/TextAttack",
+            "created_at": "2021-09-15T23:36:50Z",
+            "updated_at": "2022-08-31T23:04:00Z",
+            "pushed_at": "2021-11-23T11:10:16Z",
+            "homepage": "https://textattack.readthedocs.io/en/latest/",
+            "size": 25771,
+            "stargazers_count": 12,
+            "watchers_count": 12,
+            "language": "Python",
+            "has_issues": false,
+            "has_projects": true,
+            "has_downloads": true,
+            "has_wiki": true,
+            "has_pages": false,
+            "has_discussions": false,
+            "forks_count": 6,
+            "archived": false,
+            "disabled": false,
+            "open_issues_count": 0,
+            "license": {
+              "key": "mit",
+              "name": "MIT License",
+              "spdx_id": "MIT",
+              "url": "https://api.github.com/licenses/mit",
+              "node_id": "MDc6TGljZW5zZTEz"
+            },
+            "allow_forking": true,
+            "is_template": false,
+            "web_commit_signoff_required": false,
+            "topics": [],
+            "visibility": "public",
+            "forks": 6,
+            "open_issues": 0,
+            "watchers": 12,
+            "default_branch": "master"
+          }
+        },
+        "_links": {
+          "self": {
+            "href": "https://api.github.com/repos/discord/TextAttack/pulls/4"
+          },
+          "html": {
+            "href": "https://github.com/discord/TextAttack/pull/4"
+          },
+          "issue": {
+            "href": "https://api.github.com/repos/discord/TextAttack/issues/4"
+          },
+          "comments": {
+            "href": "https://api.github.com/repos/discord/TextAttack/issues/4/comments"
+          },
+          "review_comments": {
+            "href": "https://api.github.com/repos/discord/TextAttack/pulls/4/comments"
+          },
+          "review_comment": {
+            "href": "https://api.github.com/repos/discord/TextAttack/pulls/comments{/number}"
+          },
+          "commits": {
+            "href": "https://api.github.com/repos/discord/TextAttack/pulls/4/commits"
+          },
+          "statuses": {
+            "href": "https://api.github.com/repos/discord/TextAttack/statuses/e6b0a43ae7a4a18f82caf5037eef195f7ea04d0e"
+          }
+        },
+        "author_association": "NONE",
+        "auto_merge": null,
+        "active_lock_reason": null
+      },
+      {
+        "url": "https://api.github.com/repos/discord/TextAttack/pulls/3",
+        "id": 780966839,
+        "node_id": "PR_kwDOGEGfhc4ujJu3",
+        "number": 3,
+        "state": "closed",
+        "locked": false,
+        "title": "WIP: Stop mistakenly logging errors to gcloud logging",
+        "user": {
+          "login": "shahin",
+          "id": 20877,
+          "node_id": "MDQ6VXNlcjIwODc3",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/shahin",
+          "type": "User",
+          "site_admin": false
+        },
+        "body": "discord_ai_nlp tasks that import textattack generate the following plain text to stderr:\r\n\r\n```\r\ntextattack: Updating TextAttack package dependencies.\r\ntextattack: Downloading NLTK required packages.\r\n[nltk_data] Downloading package averaged_perceptron_tagger to\r\n[nltk_data]     /home/user/nltk_data...\r\n[nltk_data]   Unzipping taggers/averaged_perceptron_tagger.zip.\r\n[nltk_data] Downloading package stopwords to /home/user/nltk_data...\r\n[nltk_data]   Package stopwords is already up-to-date!\r\n[nltk_data] Downloading package omw to /home/user/nltk_data...\r\n[nltk_data]   Unzipping corpora/omw.zip.\r\n[nltk_data] Downloading package universal_tagset to\r\n[nltk_data]     /home/user/nltk_data...\r\n[nltk_data]   Unzipping taggers/universal_tagset.zip.\r\n[nltk_data] Downloading package wordnet to /home/user/nltk_data...\r\n[nltk_data]   Unzipping corpora/wordnet.zip.\r\n[nltk_data] Downloading package punkt to /home/user/nltk_data...\r\n[nltk_data]   Unzipping tokenizers/punkt.zip.\r\n```\r\nFor example https://console.cloud.google.com/logs/query;query=resource.type%3D%22k8s_container%22%0Aresource.labels.namespace_name%3D%22argo-20210730%22%0Aresource.labels.container_name%3D%22main%22%0Aresource.labels.pod_name%3D%2220211113-025334-3949014604%22%0Aseverity%3DERROR;timeRange=2021-11-13T02:59:34Z%2F2021-11-13T03:23:50Z;cursorTimestamp=2021-11-13T03:01:35.831378316Z?project=discord-data-stg\r\n\r\nThese lines are tagged as severity: ERROR by gcloud logging by default because they don't contain a parse-able severity indicator, and they cause all such workflow tasks to be flagged as erroneous even when they run fine. This makes it hard to determine if there were really errors in a given workflow.\r\n\r\nFix false positive errors by stopping textattack and nltk from printing this to stderr.",
+        "created_at": "2021-11-15T18:45:22Z",
+        "updated_at": "2021-11-15T19:13:41Z",
+        "closed_at": "2021-11-15T19:13:41Z",
+        "merged_at": null,
+        "merge_commit_sha": "9004a81137a78261ac83ec881b4a76b371512173",
+        "assignee": null,
+        "assignees": [],
+        "requested_reviewers": [],
+        "requested_teams": [],
+        "labels": [],
+        "milestone": null,
+        "draft": false,
+        "head": {
+          "label": "discord:quiet-output",
+          "ref": "quiet-output",
+          "sha": "c5fa619b464501e3ad9eb0953667e8028a35e79b",
+          "user": {
+            "login": "discord",
+            "id": 1965106,
+            "node_id": "MDEyOk9yZ2FuaXphdGlvbjE5NjUxMDY=",
+            "gravatar_id": "",
+            "url": "https://api.github.com/users/discord",
+            "type": "Organization",
+            "site_admin": false
+          },
+          "repo": {
+            "id": 406953861,
+            "node_id": "MDEwOlJlcG9zaXRvcnk0MDY5NTM4NjE=",
+            "name": "TextAttack",
+            "full_name": "discord/TextAttack",
+            "private": false,
+            "owner": {
+              "login": "discord",
+              "id": 1965106,
+              "node_id": "MDEyOk9yZ2FuaXphdGlvbjE5NjUxMDY=",
+              "gravatar_id": "",
+              "url": "https://api.github.com/users/discord",
+              "type": "Organization",
+              "site_admin": false
+            },
+            "description": "TextAttack 🐙  is a Python framework for adversarial attacks, data augmentation, and model training in NLP https://textattack.readthedocs.io/en/latest/",
+            "fork": true,
+            "url": "https://api.github.com/repos/discord/TextAttack",
+            "created_at": "2021-09-15T23:36:50Z",
+            "updated_at": "2022-08-31T23:04:00Z",
+            "pushed_at": "2021-11-23T11:10:16Z",
+            "homepage": "https://textattack.readthedocs.io/en/latest/",
+            "size": 25771,
+            "stargazers_count": 12,
+            "watchers_count": 12,
+            "language": "Python",
+            "has_issues": false,
+            "has_projects": true,
+            "has_downloads": true,
+            "has_wiki": true,
+            "has_pages": false,
+            "has_discussions": false,
+            "forks_count": 6,
+            "archived": false,
+            "disabled": false,
+            "open_issues_count": 0,
+            "license": {
+              "key": "mit",
+              "name": "MIT License",
+              "spdx_id": "MIT",
+              "url": "https://api.github.com/licenses/mit",
+              "node_id": "MDc6TGljZW5zZTEz"
+            },
+            "allow_forking": true,
+            "is_template": false,
+            "web_commit_signoff_required": false,
+            "topics": [],
+            "visibility": "public",
+            "forks": 6,
+            "open_issues": 0,
+            "watchers": 12,
+            "default_branch": "master"
+          }
+        },
+        "base": {
+          "label": "discord:master",
+          "ref": "master",
+          "sha": "65889e7a4c7fe5cb2a460bdffa5e4527432abe65",
+          "user": {
+            "login": "discord",
+            "id": 1965106,
+            "node_id": "MDEyOk9yZ2FuaXphdGlvbjE5NjUxMDY=",
+            "gravatar_id": "",
+            "url": "https://api.github.com/users/discord",
+            "type": "Organization",
+            "site_admin": false
+          },
+          "repo": {
+            "id": 406953861,
+            "node_id": "MDEwOlJlcG9zaXRvcnk0MDY5NTM4NjE=",
+            "name": "TextAttack",
+            "full_name": "discord/TextAttack",
+            "private": false,
+            "owner": {
+              "login": "discord",
+              "id": 1965106,
+              "node_id": "MDEyOk9yZ2FuaXphdGlvbjE5NjUxMDY=",
+              "gravatar_id": "",
+              "url": "https://api.github.com/users/discord",
+              "type": "Organization",
+              "site_admin": false
+            },
+            "description": "TextAttack 🐙  is a Python framework for adversarial attacks, data augmentation, and model training in NLP https://textattack.readthedocs.io/en/latest/",
+            "fork": true,
+            "url": "https://api.github.com/repos/discord/TextAttack",
+            "created_at": "2021-09-15T23:36:50Z",
+            "updated_at": "2022-08-31T23:04:00Z",
+            "pushed_at": "2021-11-23T11:10:16Z",
+            "homepage": "https://textattack.readthedocs.io/en/latest/",
+            "size": 25771,
+            "stargazers_count": 12,
+            "watchers_count": 12,
+            "language": "Python",
+            "has_issues": false,
+            "has_projects": true,
+            "has_downloads": true,
+            "has_wiki": true,
+            "has_pages": false,
+            "has_discussions": false,
+            "forks_count": 6,
+            "archived": false,
+            "disabled": false,
+            "open_issues_count": 0,
+            "license": {
+              "key": "mit",
+              "name": "MIT License",
+              "spdx_id": "MIT",
+              "url": "https://api.github.com/licenses/mit",
+              "node_id": "MDc6TGljZW5zZTEz"
+            },
+            "allow_forking": true,
+            "is_template": false,
+            "web_commit_signoff_required": false,
+            "topics": [],
+            "visibility": "public",
+            "forks": 6,
+            "open_issues": 0,
+            "watchers": 12,
+            "default_branch": "master"
+          }
+        },
+        "_links": {
+          "self": {
+            "href": "https://api.github.com/repos/discord/TextAttack/pulls/3"
+          },
+          "html": {
+            "href": "https://github.com/discord/TextAttack/pull/3"
+          },
+          "issue": {
+            "href": "https://api.github.com/repos/discord/TextAttack/issues/3"
+          },
+          "comments": {
+            "href": "https://api.github.com/repos/discord/TextAttack/issues/3/comments"
+          },
+          "review_comments": {
+            "href": "https://api.github.com/repos/discord/TextAttack/pulls/3/comments"
+          },
+          "review_comment": {
+            "href": "https://api.github.com/repos/discord/TextAttack/pulls/comments{/number}"
+          },
+          "commits": {
+            "href": "https://api.github.com/repos/discord/TextAttack/pulls/3/commits"
+          },
+          "statuses": {
+            "href": "https://api.github.com/repos/discord/TextAttack/statuses/c5fa619b464501e3ad9eb0953667e8028a35e79b"
+          }
+        },
+        "author_association": "NONE",
+        "auto_merge": null,
+        "active_lock_reason": null
+      },
+      {
+        "url": "https://api.github.com/repos/discord/TextAttack/pulls/2",
+        "id": 736698291,
+        "node_id": "PR_kwDOGEGfhc4r6R-z",
+        "number": 2,
+        "state": "closed",
+        "locked": false,
+        "title": "Avoid downloading word embeddings at class init time",
+        "user": {
+          "login": "EmmaBYPeng",
+          "id": 7233743,
+          "node_id": "MDQ6VXNlcjcyMzM3NDM=",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/EmmaBYPeng",
+          "type": "User",
+          "site_admin": false
+        },
+        "body": "The previous behavior (i.e. downloading embeddings at init time) causes pods to OOM with our current memory config",
+        "created_at": "2021-09-17T22:00:51Z",
+        "updated_at": "2021-09-20T17:24:24Z",
+        "closed_at": "2021-09-20T17:24:24Z",
+        "merged_at": "2021-09-20T17:24:24Z",
+        "merge_commit_sha": "65889e7a4c7fe5cb2a460bdffa5e4527432abe65",
+        "assignee": null,
+        "assignees": [],
+        "requested_reviewers": [
+          {
+            "login": "shahin",
+            "id": 20877,
+            "node_id": "MDQ6VXNlcjIwODc3",
+            "gravatar_id": "",
+            "url": "https://api.github.com/users/shahin",
+            "type": "User",
+            "site_admin": false
+          }
+        ],
+        "requested_teams": [],
+        "labels": [],
+        "milestone": null,
+        "draft": false,
+        "head": {
+          "label": "discord:fix-embedding-download",
+          "ref": "fix-embedding-download",
+          "sha": "1521fd1e38fb227c35e399cfa28ced6bc46ab113",
+          "user": {
+            "login": "discord",
+            "id": 1965106,
+            "node_id": "MDEyOk9yZ2FuaXphdGlvbjE5NjUxMDY=",
+            "gravatar_id": "",
+            "url": "https://api.github.com/users/discord",
+            "type": "Organization",
+            "site_admin": false
+          },
+          "repo": {
+            "id": 406953861,
+            "node_id": "MDEwOlJlcG9zaXRvcnk0MDY5NTM4NjE=",
+            "name": "TextAttack",
+            "full_name": "discord/TextAttack",
+            "private": false,
+            "owner": {
+              "login": "discord",
+              "id": 1965106,
+              "node_id": "MDEyOk9yZ2FuaXphdGlvbjE5NjUxMDY=",
+              "gravatar_id": "",
+              "url": "https://api.github.com/users/discord",
+              "type": "Organization",
+              "site_admin": false
+            },
+            "description": "TextAttack 🐙  is a Python framework for adversarial attacks, data augmentation, and model training in NLP https://textattack.readthedocs.io/en/latest/",
+            "fork": true,
+            "url": "https://api.github.com/repos/discord/TextAttack",
+            "created_at": "2021-09-15T23:36:50Z",
+            "updated_at": "2022-08-31T23:04:00Z",
+            "pushed_at": "2021-11-23T11:10:16Z",
+            "homepage": "https://textattack.readthedocs.io/en/latest/",
+            "size": 25771,
+            "stargazers_count": 12,
+            "watchers_count": 12,
+            "language": "Python",
+            "has_issues": false,
+            "has_projects": true,
+            "has_downloads": true,
+            "has_wiki": true,
+            "has_pages": false,
+            "has_discussions": false,
+            "forks_count": 6,
+            "archived": false,
+            "disabled": false,
+            "open_issues_count": 0,
+            "license": {
+              "key": "mit",
+              "name": "MIT License",
+              "spdx_id": "MIT",
+              "url": "https://api.github.com/licenses/mit",
+              "node_id": "MDc6TGljZW5zZTEz"
+            },
+            "allow_forking": true,
+            "is_template": false,
+            "web_commit_signoff_required": false,
+            "topics": [],
+            "visibility": "public",
+            "forks": 6,
+            "open_issues": 0,
+            "watchers": 12,
+            "default_branch": "master"
+          }
+        },
+        "base": {
+          "label": "discord:master",
+          "ref": "master",
+          "sha": "401e0f6a899d24d316bbc3d3bbc2ac0f5c675863",
+          "user": {
+            "login": "discord",
+            "id": 1965106,
+            "node_id": "MDEyOk9yZ2FuaXphdGlvbjE5NjUxMDY=",
+            "gravatar_id": "",
+            "url": "https://api.github.com/users/discord",
+            "type": "Organization",
+            "site_admin": false
+          },
+          "repo": {
+            "id": 406953861,
+            "node_id": "MDEwOlJlcG9zaXRvcnk0MDY5NTM4NjE=",
+            "name": "TextAttack",
+            "full_name": "discord/TextAttack",
+            "private": false,
+            "owner": {
+              "login": "discord",
+              "id": 1965106,
+              "node_id": "MDEyOk9yZ2FuaXphdGlvbjE5NjUxMDY=",
+              "gravatar_id": "",
+              "url": "https://api.github.com/users/discord",
+              "type": "Organization",
+              "site_admin": false
+            },
+            "description": "TextAttack 🐙  is a Python framework for adversarial attacks, data augmentation, and model training in NLP https://textattack.readthedocs.io/en/latest/",
+            "fork": true,
+            "url": "https://api.github.com/repos/discord/TextAttack",
+            "created_at": "2021-09-15T23:36:50Z",
+            "updated_at": "2022-08-31T23:04:00Z",
+            "pushed_at": "2021-11-23T11:10:16Z",
+            "homepage": "https://textattack.readthedocs.io/en/latest/",
+            "size": 25771,
+            "stargazers_count": 12,
+            "watchers_count": 12,
+            "language": "Python",
+            "has_issues": false,
+            "has_projects": true,
+            "has_downloads": true,
+            "has_wiki": true,
+            "has_pages": false,
+            "has_discussions": false,
+            "forks_count": 6,
+            "archived": false,
+            "disabled": false,
+            "open_issues_count": 0,
+            "license": {
+              "key": "mit",
+              "name": "MIT License",
+              "spdx_id": "MIT",
+              "url": "https://api.github.com/licenses/mit",
+              "node_id": "MDc6TGljZW5zZTEz"
+            },
+            "allow_forking": true,
+            "is_template": false,
+            "web_commit_signoff_required": false,
+            "topics": [],
+            "visibility": "public",
+            "forks": 6,
+            "open_issues": 0,
+            "watchers": 12,
+            "default_branch": "master"
+          }
+        },
+        "_links": {
+          "self": {
+            "href": "https://api.github.com/repos/discord/TextAttack/pulls/2"
+          },
+          "html": {
+            "href": "https://github.com/discord/TextAttack/pull/2"
+          },
+          "issue": {
+            "href": "https://api.github.com/repos/discord/TextAttack/issues/2"
+          },
+          "comments": {
+            "href": "https://api.github.com/repos/discord/TextAttack/issues/2/comments"
+          },
+          "review_comments": {
+            "href": "https://api.github.com/repos/discord/TextAttack/pulls/2/comments"
+          },
+          "review_comment": {
+            "href": "https://api.github.com/repos/discord/TextAttack/pulls/comments{/number}"
+          },
+          "commits": {
+            "href": "https://api.github.com/repos/discord/TextAttack/pulls/2/commits"
+          },
+          "statuses": {
+            "href": "https://api.github.com/repos/discord/TextAttack/statuses/1521fd1e38fb227c35e399cfa28ced6bc46ab113"
+          }
+        },
+        "author_association": "COLLABORATOR",
+        "auto_merge": null,
+        "active_lock_reason": null
+      },
+      {
+        "url": "https://api.github.com/repos/discord/TextAttack/pulls/1",
+        "id": 734997026,
+        "node_id": "PR_kwDOGEGfhc4rzyoi",
+        "number": 1,
+        "state": "closed",
+        "locked": false,
+        "title": "Fix package versions",
+        "user": {
+          "login": "EmmaBYPeng",
+          "id": 7233743,
+          "node_id": "MDQ6VXNlcjcyMzM3NDM=",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/EmmaBYPeng",
+          "type": "User",
+          "site_admin": false
+        },
+        "body": "Fix package versions so that `textattack` can be `pip-compile`'d\r\n\r\nPR that depends on this: https://github.com/discord/discord/pull/50859",
+        "created_at": "2021-09-15T23:47:47Z",
+        "updated_at": "2021-09-16T20:10:44Z",
+        "closed_at": "2021-09-16T20:10:44Z",
+        "merged_at": "2021-09-16T20:10:44Z",
+        "merge_commit_sha": "401e0f6a899d24d316bbc3d3bbc2ac0f5c675863",
+        "assignee": null,
+        "assignees": [],
+        "requested_reviewers": [],
+        "requested_teams": [],
+        "labels": [],
+        "milestone": null,
+        "draft": false,
+        "head": {
+          "label": "discord:fix-dep-conflicts",
+          "ref": "fix-dep-conflicts",
+          "sha": "9bbe75d3342a35351fe0d2d8ca694027fe4e0590",
+          "user": {
+            "login": "discord",
+            "id": 1965106,
+            "node_id": "MDEyOk9yZ2FuaXphdGlvbjE5NjUxMDY=",
+            "gravatar_id": "",
+            "url": "https://api.github.com/users/discord",
+            "type": "Organization",
+            "site_admin": false
+          },
+          "repo": {
+            "id": 406953861,
+            "node_id": "MDEwOlJlcG9zaXRvcnk0MDY5NTM4NjE=",
+            "name": "TextAttack",
+            "full_name": "discord/TextAttack",
+            "private": false,
+            "owner": {
+              "login": "discord",
+              "id": 1965106,
+              "node_id": "MDEyOk9yZ2FuaXphdGlvbjE5NjUxMDY=",
+              "gravatar_id": "",
+              "url": "https://api.github.com/users/discord",
+              "type": "Organization",
+              "site_admin": false
+            },
+            "description": "TextAttack 🐙  is a Python framework for adversarial attacks, data augmentation, and model training in NLP https://textattack.readthedocs.io/en/latest/",
+            "fork": true,
+            "url": "https://api.github.com/repos/discord/TextAttack",
+            "created_at": "2021-09-15T23:36:50Z",
+            "updated_at": "2022-08-31T23:04:00Z",
+            "pushed_at": "2021-11-23T11:10:16Z",
+            "homepage": "https://textattack.readthedocs.io/en/latest/",
+            "size": 25771,
+            "stargazers_count": 12,
+            "watchers_count": 12,
+            "language": "Python",
+            "has_issues": false,
+            "has_projects": true,
+            "has_downloads": true,
+            "has_wiki": true,
+            "has_pages": false,
+            "has_discussions": false,
+            "forks_count": 6,
+            "archived": false,
+            "disabled": false,
+            "open_issues_count": 0,
+            "license": {
+              "key": "mit",
+              "name": "MIT License",
+              "spdx_id": "MIT",
+              "url": "https://api.github.com/licenses/mit",
+              "node_id": "MDc6TGljZW5zZTEz"
+            },
+            "allow_forking": true,
+            "is_template": false,
+            "web_commit_signoff_required": false,
+            "topics": [],
+            "visibility": "public",
+            "forks": 6,
+            "open_issues": 0,
+            "watchers": 12,
+            "default_branch": "master"
+          }
+        },
+        "base": {
+          "label": "discord:master",
+          "ref": "master",
+          "sha": "983769d2ea232cb49aecea0a79515b2972f7ea76",
+          "user": {
+            "login": "discord",
+            "id": 1965106,
+            "node_id": "MDEyOk9yZ2FuaXphdGlvbjE5NjUxMDY=",
+            "gravatar_id": "",
+            "url": "https://api.github.com/users/discord",
+            "type": "Organization",
+            "site_admin": false
+          },
+          "repo": {
+            "id": 406953861,
+            "node_id": "MDEwOlJlcG9zaXRvcnk0MDY5NTM4NjE=",
+            "name": "TextAttack",
+            "full_name": "discord/TextAttack",
+            "private": false,
+            "owner": {
+              "login": "discord",
+              "id": 1965106,
+              "node_id": "MDEyOk9yZ2FuaXphdGlvbjE5NjUxMDY=",
+              "gravatar_id": "",
+              "url": "https://api.github.com/users/discord",
+              "type": "Organization",
+              "site_admin": false
+            },
+            "description": "TextAttack 🐙  is a Python framework for adversarial attacks, data augmentation, and model training in NLP https://textattack.readthedocs.io/en/latest/",
+            "fork": true,
+            "url": "https://api.github.com/repos/discord/TextAttack",
+            "created_at": "2021-09-15T23:36:50Z",
+            "updated_at": "2022-08-31T23:04:00Z",
+            "pushed_at": "2021-11-23T11:10:16Z",
+            "homepage": "https://textattack.readthedocs.io/en/latest/",
+            "size": 25771,
+            "stargazers_count": 12,
+            "watchers_count": 12,
+            "language": "Python",
+            "has_issues": false,
+            "has_projects": true,
+            "has_downloads": true,
+            "has_wiki": true,
+            "has_pages": false,
+            "has_discussions": false,
+            "forks_count": 6,
+            "archived": false,
+            "disabled": false,
+            "open_issues_count": 0,
+            "license": {
+              "key": "mit",
+              "name": "MIT License",
+              "spdx_id": "MIT",
+              "url": "https://api.github.com/licenses/mit",
+              "node_id": "MDc6TGljZW5zZTEz"
+            },
+            "allow_forking": true,
+            "is_template": false,
+            "web_commit_signoff_required": false,
+            "topics": [],
+            "visibility": "public",
+            "forks": 6,
+            "open_issues": 0,
+            "watchers": 12,
+            "default_branch": "master"
+          }
+        },
+        "_links": {
+          "self": {
+            "href": "https://api.github.com/repos/discord/TextAttack/pulls/1"
+          },
+          "html": {
+            "href": "https://github.com/discord/TextAttack/pull/1"
+          },
+          "issue": {
+            "href": "https://api.github.com/repos/discord/TextAttack/issues/1"
+          },
+          "comments": {
+            "href": "https://api.github.com/repos/discord/TextAttack/issues/1/comments"
+          },
+          "review_comments": {
+            "href": "https://api.github.com/repos/discord/TextAttack/pulls/1/comments"
+          },
+          "review_comment": {
+            "href": "https://api.github.com/repos/discord/TextAttack/pulls/comments{/number}"
+          },
+          "commits": {
+            "href": "https://api.github.com/repos/discord/TextAttack/pulls/1/commits"
+          },
+          "statuses": {
+            "href": "https://api.github.com/repos/discord/TextAttack/statuses/9bbe75d3342a35351fe0d2d8ca694027fe4e0590"
+          }
+        },
+        "author_association": "COLLABORATOR",
+        "auto_merge": null,
+        "active_lock_reason": null
+      }
+    ]
   }
 }
