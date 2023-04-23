@@ -57,32 +57,7 @@
     "triage": false,
     "pull": false
   },
-  "branches": [
-    {
-      "name": "master",
-      "commit": {
-        "sha": "53486afcc945c698165a447c9fce0b1c9d08badf",
-        "url": "https://api.github.com/repos/discord/envoy/commits/53486afcc945c698165a447c9fce0b1c9d08badf"
-      },
-      "protected": false
-    },
-    {
-      "name": "release/v1.12",
-      "commit": {
-        "sha": "b5144d4e603866dfc470ab23867598fded2fed9c",
-        "url": "https://api.github.com/repos/discord/envoy/commits/b5144d4e603866dfc470ab23867598fded2fed9c"
-      },
-      "protected": false
-    },
-    {
-      "name": "release/v1.13",
-      "commit": {
-        "sha": "b67c14052c49890a7e3afe614d50979c346c024b",
-        "url": "https://api.github.com/repos/discord/envoy/commits/b67c14052c49890a7e3afe614d50979c346c024b"
-      },
-      "protected": false
-    }
-  ],
+  "branches": [],
   "last5": {
     "commits": [
       {
