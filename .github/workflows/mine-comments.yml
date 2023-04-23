@@ -1,0 +1,14 @@
+name: Mine Comments
+on:
+  push:
+    branches:
+      - master
+
+jobs:
+  comments:
+    name: Add comments
+    runs-on: ubuntu-latest
+    steps:
+      - uses: Discord-Datamining/comments-action@main
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

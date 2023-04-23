@@ -6,8 +6,8 @@ on:
 
 jobs:
   mine:
-    runs-on: ubuntu-latest
     name: Mine
+    runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
       - uses: actions/setup-node@v2
