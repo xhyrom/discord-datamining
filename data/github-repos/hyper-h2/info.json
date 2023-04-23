@@ -57,7 +57,72 @@
     "triage": false,
     "pull": false
   },
-  "branches": [],
+  "branches": [
+    {
+      "name": "2.1.X",
+      "commit": {
+        "sha": "a48bdc9615896f0e4b6aca689891b9841d2daaad",
+        "url": "https://api.github.com/repos/discord/hyper-h2/commits/a48bdc9615896f0e4b6aca689891b9841d2daaad"
+      },
+      "protected": false
+    },
+    {
+      "name": "2.2.X",
+      "commit": {
+        "sha": "85aa2efc33cfb2f0f7954cb1622fed1f6a0fa9fe",
+        "url": "https://api.github.com/repos/discord/hyper-h2/commits/85aa2efc33cfb2f0f7954cb1622fed1f6a0fa9fe"
+      },
+      "protected": false
+    },
+    {
+      "name": "2.3.X",
+      "commit": {
+        "sha": "c747bb18392caa2b2203b8badc9756471a28ea98",
+        "url": "https://api.github.com/repos/discord/hyper-h2/commits/c747bb18392caa2b2203b8badc9756471a28ea98"
+      },
+      "protected": false
+    },
+    {
+      "name": "2.4.X",
+      "commit": {
+        "sha": "60064aab9dd5f6add5b711f86024cd430fae27a9",
+        "url": "https://api.github.com/repos/discord/hyper-h2/commits/60064aab9dd5f6add5b711f86024cd430fae27a9"
+      },
+      "protected": false
+    },
+    {
+      "name": "2.5.X",
+      "commit": {
+        "sha": "4595a5f453a5ddbabc55f1fda628fd372e11b2ae",
+        "url": "https://api.github.com/repos/discord/hyper-h2/commits/4595a5f453a5ddbabc55f1fda628fd372e11b2ae"
+      },
+      "protected": false
+    },
+    {
+      "name": "awlc/clients-dont-push",
+      "commit": {
+        "sha": "3bd24b8ff7a8326d27486687f1656539781485bb",
+        "url": "https://api.github.com/repos/discord/hyper-h2/commits/3bd24b8ff7a8326d27486687f1656539781485bb"
+      },
+      "protected": false
+    },
+    {
+      "name": "awlc/connect-header",
+      "commit": {
+        "sha": "de6c8dd7cd7a40d4d55c07976aa7150e0f1c18f4",
+        "url": "https://api.github.com/repos/discord/hyper-h2/commits/de6c8dd7cd7a40d4d55c07976aa7150e0f1c18f4"
+      },
+      "protected": false
+    },
+    {
+      "name": "master",
+      "commit": {
+        "sha": "7dfab8f8e0e8605c4a2a90706b217d0a0a0c45b7",
+        "url": "https://api.github.com/repos/discord/hyper-h2/commits/7dfab8f8e0e8605c4a2a90706b217d0a0a0c45b7"
+      },
+      "protected": false
+    }
+  ],
   "last5": {
     "commits": [
       {
