@@ -1,6 +1,6 @@
 import files from "./files.js";
 import jsbeautifypkg from "js-beautify";
-import { info } from "./logger.mjs";
+import { info } from ".../logger.js";
 const { js: jsBeautify, css: cssBeautify } = jsbeautifypkg;
 
 export const scripts = await files.scripts.reduce(

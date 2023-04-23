@@ -10,6 +10,9 @@
   "author": "xHyroM",
   "license": "MIT",
   "dependencies": {
+    "@octokit/rest": "^19.0.7",
+    "dotenv": "^16.0.3",
+    "filenamify": "^5.1.1",
     "js-beautify": "^1.14.7",
     "kleur": "^4.1.5",
     "simple-git": "^3.17.0"

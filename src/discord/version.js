@@ -1,4 +1,4 @@
-import { info } from "./logger.mjs";
+import { info } from "../logger.js";
 import { scripts } from "./files.js";
 import { beautifiedScripts } from "./contents.js";
 import { namilize } from "./utils.js";

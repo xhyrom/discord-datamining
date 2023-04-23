@@ -1,8 +1,10 @@
+import "dotenv/config";
 import { hash, buildNumber } from "./version.js";
 import { scripts, stylesheets } from "./files.js";
 import { beautifiedScripts, beautifiedStylesheets } from "./contents.js";
-import { info, success } from "./logger.mjs";
+import { info, success } from ".../logger.js";
 import { namilize } from "./utils.js";
+import months from "../months.js";
 
 import { mkdir, readFile, rmdir, writeFile } from "node:fs/promises";
 import simpleGit from "simple-git";
@@ -68,20 +70,6 @@ await git.pull();
 await git.add(["data/."]);
 
 const date = new Date();
-const months = [
-  "January",
-  "February",
-  "March",
-  "April",
-  "May",
-  "June",
-  "July",
-  "August",
-  "September",
-  "October",
-  "November",
-  "December",
-];
 
 await git.commit([
   `${date.getDate()} ${

@@ -1,7 +1,7 @@
-name: Mine
+name: Mine GitHub
 on:
   schedule:
-    - cron: "*/15 * * * *"
+    - cron: "0 * * * *"
   workflow_dispatch:
 
 jobs:
@@ -21,6 +21,6 @@ jobs:
           git config user.name "xHyroM"
           git config user.email "github@xhyrom.dev"
           pnpm install
-          node src/discord/index.js
+          node src/github/index.js
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

@@ -1,4 +1,4 @@
-import { info } from "./logger.mjs";
+import { info } from "../logger.js";
 
 info("Scripts and stylesheets are being fetched...");
 const text = await (await fetch("https://canary.discord.com/login")).text();
