@@ -62,32 +62,7 @@
     "triage": false,
     "pull": false
   },
-  "branches": [
-    {
-      "name": "bugfix/handle-non-positive-replicas",
-      "commit": {
-        "sha": "7acb8736bdfe4dd6c8d8fb5a27926345247fdf44",
-        "url": "https://api.github.com/repos/discord/ex_hash_ring/commits/7acb8736bdfe4dd6c8d8fb5a27926345247fdf44"
-      },
-      "protected": false
-    },
-    {
-      "name": "bugfix/raise-on-negative-replicas",
-      "commit": {
-        "sha": "c45b7e16fb709c246907aa123f7a4f659c9a1dcd",
-        "url": "https://api.github.com/repos/discord/ex_hash_ring/commits/c45b7e16fb709c246907aa123f7a4f659c9a1dcd"
-      },
-      "protected": false
-    },
-    {
-      "name": "master",
-      "commit": {
-        "sha": "fd72e463bb913743ccfd24415357c8e598101f32",
-        "url": "https://api.github.com/repos/discord/ex_hash_ring/commits/fd72e463bb913743ccfd24415357c8e598101f32"
-      },
-      "protected": false
-    }
-  ],
+  "branches": [],
   "last5": {
     "commits": [
       {
