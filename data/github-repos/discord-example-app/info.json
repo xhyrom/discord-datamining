@@ -59,9 +59,519 @@
   },
   "branches": [],
   "last5": {
-    "commits": [],
+    "commits": [
+      {
+        "sha": "df0fee33af30aa763ae53db664dd958d1aeb12b2",
+        "node_id": "C_kwDOHJUbBdoAKGRmMGZlZTMzYWYzMGFhNzYzYWU1M2RiNjY0ZGQ5NThkMWFlYjEyYjI",
+        "commit": {
+          "author": {
+            "name": "Shay",
+            "email": "shay.dewael@discordapp.com",
+            "date": "2023-04-03T19:30:42Z"
+          },
+          "committer": {
+            "name": "Shay",
+            "email": "shay.dewael@discordapp.com",
+            "date": "2023-04-03T19:30:42Z"
+          },
+          "message": "add engines to package.json",
+          "tree": {
+            "sha": "bc1fc4aa524ff51ea864af82256a65ccfb18afde",
+            "url": "https://api.github.com/repos/discord/discord-example-app/git/trees/bc1fc4aa524ff51ea864af82256a65ccfb18afde"
+          },
+          "url": "https://api.github.com/repos/discord/discord-example-app/git/commits/df0fee33af30aa763ae53db664dd958d1aeb12b2",
+          "comment_count": 0,
+          "verification": {
+            "verified": false,
+            "reason": "unsigned",
+            "signature": null,
+            "payload": null
+          }
+        },
+        "url": "https://api.github.com/repos/discord/discord-example-app/commits/df0fee33af30aa763ae53db664dd958d1aeb12b2",
+        "author": {
+          "login": "shaydewael",
+          "id": 3411005,
+          "node_id": "MDQ6VXNlcjM0MTEwMDU=",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/shaydewael",
+          "type": "User",
+          "site_admin": false
+        },
+        "committer": {
+          "login": "shaydewael",
+          "id": 3411005,
+          "node_id": "MDQ6VXNlcjM0MTEwMDU=",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/shaydewael",
+          "type": "User",
+          "site_admin": false
+        },
+        "parents": [
+          {
+            "sha": "6ec668cc469b46d7cb4252783f00b8723f18a642",
+            "url": "https://api.github.com/repos/discord/discord-example-app/commits/6ec668cc469b46d7cb4252783f00b8723f18a642"
+          }
+        ]
+      },
+      {
+        "sha": "6ec668cc469b46d7cb4252783f00b8723f18a642",
+        "node_id": "C_kwDOHJUbBdoAKDZlYzY2OGNjNDY5YjQ2ZDdjYjQyNTI3ODNmMDBiODcyM2YxOGE2NDI",
+        "commit": {
+          "author": {
+            "name": "shay",
+            "email": "shay.dewael@discordapp.com",
+            "date": "2023-03-20T17:50:11Z"
+          },
+          "committer": {
+            "name": "GitHub",
+            "email": "noreply@github.com",
+            "date": "2023-03-20T17:50:11Z"
+          },
+          "message": "Merge pull request #22 from shaydewael/update-command-registration\n\nUpdate command registration",
+          "tree": {
+            "sha": "0d6dac35d7c4437cb8f72ac27d063b4ffe992021",
+            "url": "https://api.github.com/repos/discord/discord-example-app/git/trees/0d6dac35d7c4437cb8f72ac27d063b4ffe992021"
+          },
+          "url": "https://api.github.com/repos/discord/discord-example-app/git/commits/6ec668cc469b46d7cb4252783f00b8723f18a642",
+          "comment_count": 0,
+          "verification": {
+            "verified": true,
+            "reason": "valid",
+            "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsBcBAABCAAQBQJkGJzTCRBK7hj4Ov3rIwAAG0QIAHMWOOYYVLVQ9ZI5ksyaEBge\nyTn/wj5WethbL1jQSR8DNoLfW4vpSV5iLsSIQmu37T4F349H3+Vp4tF1ALKfcAXq\nHKSbk87tQ6I3oFBW/5O8vAfLjge8H6vk3r9COM4twQnSAAwoB7ab4fRVNVKSgyrp\nYZ8xsFBhcNkgrEt7zzLYnHzpIDjVi9Bx+c2pmyhZTt6mNdwBfgNLNXBjXi+G8Cq6\ndy7PiJop8sGJ6vZUDi7iQ6WVHXnUqyMPTUPNdYjsKIZyE4lcycbT7uvo1Lt4/KJo\nMRaGTYUqCXi6Wk0WJmeKlXq7HzW47gAbp28FRkBLvSWUEip9f08LoyHoCHu8VI8=\n=yGgY\n-----END PGP SIGNATURE-----\n",
+            "payload": "tree 0d6dac35d7c4437cb8f72ac27d063b4ffe992021\nparent bbe1a594a25cf5a1d6edb9504ef7189cc5fe40ad\nparent aa26d1d283b5287a6d861b4d3b347efaba471c4a\nauthor shay <shay.dewael@discordapp.com> 1679334611 -0700\ncommitter GitHub <noreply@github.com> 1679334611 -0700\n\nMerge pull request #22 from shaydewael/update-command-registration\n\nUpdate command registration"
+          }
+        },
+        "url": "https://api.github.com/repos/discord/discord-example-app/commits/6ec668cc469b46d7cb4252783f00b8723f18a642",
+        "author": {
+          "login": "shaydewael",
+          "id": 3411005,
+          "node_id": "MDQ6VXNlcjM0MTEwMDU=",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/shaydewael",
+          "type": "User",
+          "site_admin": false
+        },
+        "committer": {
+          "login": "web-flow",
+          "id": 19864447,
+          "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/web-flow",
+          "type": "User",
+          "site_admin": false
+        },
+        "parents": [
+          {
+            "sha": "bbe1a594a25cf5a1d6edb9504ef7189cc5fe40ad",
+            "url": "https://api.github.com/repos/discord/discord-example-app/commits/bbe1a594a25cf5a1d6edb9504ef7189cc5fe40ad"
+          },
+          {
+            "sha": "aa26d1d283b5287a6d861b4d3b347efaba471c4a",
+            "url": "https://api.github.com/repos/discord/discord-example-app/commits/aa26d1d283b5287a6d861b4d3b347efaba471c4a"
+          }
+        ]
+      },
+      {
+        "sha": "aa26d1d283b5287a6d861b4d3b347efaba471c4a",
+        "node_id": "C_kwDOHJUbBdoAKGFhMjZkMWQyODNiNTI4N2E2ZDg2MWI0ZDNiMzQ3ZWZhYmE0NzFjNGE",
+        "commit": {
+          "author": {
+            "name": "Shay",
+            "email": "shay.dewael@discordapp.com",
+            "date": "2023-03-18T23:14:33Z"
+          },
+          "committer": {
+            "name": "Shay",
+            "email": "shay.dewael@discordapp.com",
+            "date": "2023-03-18T23:14:33Z"
+          },
+          "message": "more",
+          "tree": {
+            "sha": "0d6dac35d7c4437cb8f72ac27d063b4ffe992021",
+            "url": "https://api.github.com/repos/discord/discord-example-app/git/trees/0d6dac35d7c4437cb8f72ac27d063b4ffe992021"
+          },
+          "url": "https://api.github.com/repos/discord/discord-example-app/git/commits/aa26d1d283b5287a6d861b4d3b347efaba471c4a",
+          "comment_count": 0,
+          "verification": {
+            "verified": false,
+            "reason": "unsigned",
+            "signature": null,
+            "payload": null
+          }
+        },
+        "url": "https://api.github.com/repos/discord/discord-example-app/commits/aa26d1d283b5287a6d861b4d3b347efaba471c4a",
+        "author": {
+          "login": "shaydewael",
+          "id": 3411005,
+          "node_id": "MDQ6VXNlcjM0MTEwMDU=",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/shaydewael",
+          "type": "User",
+          "site_admin": false
+        },
+        "committer": {
+          "login": "shaydewael",
+          "id": 3411005,
+          "node_id": "MDQ6VXNlcjM0MTEwMDU=",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/shaydewael",
+          "type": "User",
+          "site_admin": false
+        },
+        "parents": [
+          {
+            "sha": "767394582c660e992f3697651288bab7e021bc31",
+            "url": "https://api.github.com/repos/discord/discord-example-app/commits/767394582c660e992f3697651288bab7e021bc31"
+          }
+        ]
+      },
+      {
+        "sha": "767394582c660e992f3697651288bab7e021bc31",
+        "node_id": "C_kwDOHJUbBdoAKDc2NzM5NDU4MmM2NjBlOTkyZjM2OTc2NTEyODhiYWI3ZTAyMWJjMzE",
+        "commit": {
+          "author": {
+            "name": "Shay",
+            "email": "shay.dewael@discordapp.com",
+            "date": "2023-03-18T23:05:36Z"
+          },
+          "committer": {
+            "name": "Shay",
+            "email": "shay.dewael@discordapp.com",
+            "date": "2023-03-18T23:05:36Z"
+          },
+          "message": "update command registration to npm",
+          "tree": {
+            "sha": "23bce64a8363711435ad382f9c5f2db19d8b25d8",
+            "url": "https://api.github.com/repos/discord/discord-example-app/git/trees/23bce64a8363711435ad382f9c5f2db19d8b25d8"
+          },
+          "url": "https://api.github.com/repos/discord/discord-example-app/git/commits/767394582c660e992f3697651288bab7e021bc31",
+          "comment_count": 0,
+          "verification": {
+            "verified": false,
+            "reason": "unsigned",
+            "signature": null,
+            "payload": null
+          }
+        },
+        "url": "https://api.github.com/repos/discord/discord-example-app/commits/767394582c660e992f3697651288bab7e021bc31",
+        "author": {
+          "login": "shaydewael",
+          "id": 3411005,
+          "node_id": "MDQ6VXNlcjM0MTEwMDU=",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/shaydewael",
+          "type": "User",
+          "site_admin": false
+        },
+        "committer": {
+          "login": "shaydewael",
+          "id": 3411005,
+          "node_id": "MDQ6VXNlcjM0MTEwMDU=",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/shaydewael",
+          "type": "User",
+          "site_admin": false
+        },
+        "parents": [
+          {
+            "sha": "bbe1a594a25cf5a1d6edb9504ef7189cc5fe40ad",
+            "url": "https://api.github.com/repos/discord/discord-example-app/commits/bbe1a594a25cf5a1d6edb9504ef7189cc5fe40ad"
+          }
+        ]
+      },
+      {
+        "sha": "bbe1a594a25cf5a1d6edb9504ef7189cc5fe40ad",
+        "node_id": "C_kwDOHJUbBdoAKGJiZTFhNTk0YTI1Y2Y1YTFkNmVkYjk1MDRlZjcxODljYzVmZTQwYWQ",
+        "commit": {
+          "author": {
+            "name": "shay",
+            "email": "shay.dewael@discordapp.com",
+            "date": "2023-01-25T17:39:28Z"
+          },
+          "committer": {
+            "name": "GitHub",
+            "email": "noreply@github.com",
+            "date": "2023-01-25T17:39:28Z"
+          },
+          "message": "Merge pull request #17 from ilyigna/main\n\nsmall changes",
+          "tree": {
+            "sha": "ea01ff9506484828d348db6476fc83ac783e8568",
+            "url": "https://api.github.com/repos/discord/discord-example-app/git/trees/ea01ff9506484828d348db6476fc83ac783e8568"
+          },
+          "url": "https://api.github.com/repos/discord/discord-example-app/git/commits/bbe1a594a25cf5a1d6edb9504ef7189cc5fe40ad",
+          "comment_count": 0,
+          "verification": {
+            "verified": true,
+            "reason": "valid",
+            "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsBcBAABCAAQBQJj0WlQCRBK7hj4Ov3rIwAAM8wIADXxWAaS2OiXkLm4z2hNa5t1\nDNAopPr7RzFG2mX05yOu1l3Qca30nnQzg1AzvG+InpR4y5/0wZQbyUXARb8TrMy3\ny7mTXvYNZDc6UI8wKPdrfGsjY80epbE3mBtjSiaYuK2AE2wat7DX1ygmZZIHxXjC\nYyGnLKtlge2OBjsV9Ah90FnnklYpUnNSPVoKkjMcgafkBp9BP2oqmextd7Ytvdj0\nzrI/rokFGI0SIeqP8nHzURTA8fTwselT391PiUAB/BNc32HIxrUwNtNA1IKk2Fjh\nmSNbsMYHyjFM82G6/7oz0xrTnHPr8oVQZKwHgAsJkf+NrIC00gZfHFWhT7UaAN0=\n=u7Ny\n-----END PGP SIGNATURE-----\n",
+            "payload": "tree ea01ff9506484828d348db6476fc83ac783e8568\nparent 976cf99e580409be9be1b40ff19d980485aeb0e2\nparent 813b1a2add6e28070fabe734886b6b82144a6f5d\nauthor shay <shay.dewael@discordapp.com> 1674668368 -0800\ncommitter GitHub <noreply@github.com> 1674668368 -0800\n\nMerge pull request #17 from ilyigna/main\n\nsmall changes"
+          }
+        },
+        "url": "https://api.github.com/repos/discord/discord-example-app/commits/bbe1a594a25cf5a1d6edb9504ef7189cc5fe40ad",
+        "author": {
+          "login": "shaydewael",
+          "id": 3411005,
+          "node_id": "MDQ6VXNlcjM0MTEwMDU=",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/shaydewael",
+          "type": "User",
+          "site_admin": false
+        },
+        "committer": {
+          "login": "web-flow",
+          "id": 19864447,
+          "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/web-flow",
+          "type": "User",
+          "site_admin": false
+        },
+        "parents": [
+          {
+            "sha": "976cf99e580409be9be1b40ff19d980485aeb0e2",
+            "url": "https://api.github.com/repos/discord/discord-example-app/commits/976cf99e580409be9be1b40ff19d980485aeb0e2"
+          },
+          {
+            "sha": "813b1a2add6e28070fabe734886b6b82144a6f5d",
+            "url": "https://api.github.com/repos/discord/discord-example-app/commits/813b1a2add6e28070fabe734886b6b82144a6f5d"
+          }
+        ]
+      }
+    ],
     "releases": [],
-    "issues": [],
+    "issues": [
+      {
+        "url": "https://api.github.com/repos/discord/discord-example-app/issues/24",
+        "id": 1679312773,
+        "node_id": "PR_kwDOHJUbBc5O52fC",
+        "number": 24,
+        "title": "fix: APPLICATION_MODAL type doesn't exist upon the discord-interactions",
+        "user": {
+          "login": "JayyDoesDev",
+          "id": 69683068,
+          "node_id": "MDQ6VXNlcjY5NjgzMDY4",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/JayyDoesDev",
+          "type": "User",
+          "site_admin": false
+        },
+        "labels": [],
+        "state": "open",
+        "locked": false,
+        "assignee": null,
+        "assignees": [],
+        "milestone": null,
+        "comments": 0,
+        "created_at": "2023-04-22T03:53:53Z",
+        "updated_at": "2023-04-22T04:16:48Z",
+        "closed_at": null,
+        "author_association": "NONE",
+        "active_lock_reason": null,
+        "draft": false,
+        "pull_request": {
+          "url": "https://api.github.com/repos/discord/discord-example-app/pulls/24",
+          "merged_at": null
+        },
+        "body": "As of https://github.com/discord/discord-interactions-js/blob/main/src/index.ts the type should be MODAL, not APPLICATION_MODAL. Discovered from https://github.com/discord/discord-example-app/issues/21",
+        "reactions": {
+          "url": "https://api.github.com/repos/discord/discord-example-app/issues/24/reactions",
+          "total_count": 0,
+          "+1": 0,
+          "-1": 0,
+          "laugh": 0,
+          "hooray": 0,
+          "confused": 0,
+          "heart": 0,
+          "rocket": 0,
+          "eyes": 0
+        },
+        "performed_via_github_app": null,
+        "state_reason": null
+      },
+      {
+        "url": "https://api.github.com/repos/discord/discord-example-app/issues/23",
+        "id": 1669634362,
+        "node_id": "PR_kwDOHJUbBc5OZd1g",
+        "number": 23,
+        "title": "Events",
+        "user": {
+          "login": "ljtijhuis",
+          "id": 922323,
+          "node_id": "MDQ6VXNlcjkyMjMyMw==",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/ljtijhuis",
+          "type": "User",
+          "site_admin": false
+        },
+        "labels": [],
+        "state": "closed",
+        "locked": false,
+        "assignee": null,
+        "assignees": [],
+        "milestone": null,
+        "comments": 0,
+        "created_at": "2023-04-16T01:50:36Z",
+        "updated_at": "2023-04-16T01:51:35Z",
+        "closed_at": "2023-04-16T01:50:42Z",
+        "author_association": "NONE",
+        "active_lock_reason": null,
+        "draft": false,
+        "pull_request": {
+          "url": "https://api.github.com/repos/discord/discord-example-app/pulls/23",
+          "merged_at": null
+        },
+        "body": null,
+        "reactions": {
+          "url": "https://api.github.com/repos/discord/discord-example-app/issues/23/reactions",
+          "total_count": 0,
+          "+1": 0,
+          "-1": 0,
+          "laugh": 0,
+          "hooray": 0,
+          "confused": 0,
+          "heart": 0,
+          "rocket": 0,
+          "eyes": 0
+        },
+        "performed_via_github_app": null,
+        "state_reason": null
+      },
+      {
+        "url": "https://api.github.com/repos/discord/discord-example-app/issues/22",
+        "id": 1631067559,
+        "node_id": "PR_kwDOHJUbBc5MZYTg",
+        "number": 22,
+        "title": "Update command registration",
+        "user": {
+          "login": "shaydewael",
+          "id": 3411005,
+          "node_id": "MDQ6VXNlcjM0MTEwMDU=",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/shaydewael",
+          "type": "User",
+          "site_admin": false
+        },
+        "labels": [],
+        "state": "closed",
+        "locked": false,
+        "assignee": null,
+        "assignees": [],
+        "milestone": null,
+        "comments": 0,
+        "created_at": "2023-03-19T18:40:44Z",
+        "updated_at": "2023-03-20T17:50:12Z",
+        "closed_at": "2023-03-20T17:50:12Z",
+        "author_association": "CONTRIBUTOR",
+        "active_lock_reason": null,
+        "draft": false,
+        "pull_request": {
+          "url": "https://api.github.com/repos/discord/discord-example-app/pulls/22",
+          "merged_at": "2023-03-20T17:50:12Z"
+        },
+        "body": "- Update command registration to use `npm run register` instead of just checking for commands every time server is started\r\n- Change to use bulk overwrite method and global commands (they don't have the same propagation times anymore)\r\n- Update docs\r\n- Update `app.js` to be template for tutorial, move full `app.js` into `examples/app.js`",
+        "reactions": {
+          "url": "https://api.github.com/repos/discord/discord-example-app/issues/22/reactions",
+          "total_count": 0,
+          "+1": 0,
+          "-1": 0,
+          "laugh": 0,
+          "hooray": 0,
+          "confused": 0,
+          "heart": 0,
+          "rocket": 0,
+          "eyes": 0
+        },
+        "performed_via_github_app": null,
+        "state_reason": null
+      },
+      {
+        "url": "https://api.github.com/repos/discord/discord-example-app/issues/21",
+        "id": 1613709744,
+        "node_id": "I_kwDOHJUbBc5gL0Gw",
+        "number": 21,
+        "title": "Examples : InteractionResponseType.MODAL instead of InterationResponseType.APPLICATION_MODAL",
+        "user": {
+          "login": "yannisroy",
+          "id": 200157,
+          "node_id": "MDQ6VXNlcjIwMDE1Nw==",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/yannisroy",
+          "type": "User",
+          "site_admin": false
+        },
+        "labels": [],
+        "state": "open",
+        "locked": false,
+        "assignee": null,
+        "assignees": [],
+        "milestone": null,
+        "comments": 0,
+        "created_at": "2023-03-07T15:40:05Z",
+        "updated_at": "2023-03-07T15:40:05Z",
+        "closed_at": null,
+        "author_association": "NONE",
+        "active_lock_reason": null,
+        "body": "I was struggling using modal interactions and getting \"Interaction failed\" errors.\r\n\r\nExemple here does not match correct response type : \r\nhttps://github.com/discord/discord-example-app/blob/main/examples/modal.js#L25\r\n\r\nSolved when using `InteractionResponseType.MODAL`",
+        "reactions": {
+          "url": "https://api.github.com/repos/discord/discord-example-app/issues/21/reactions",
+          "total_count": 0,
+          "+1": 0,
+          "-1": 0,
+          "laugh": 0,
+          "hooray": 0,
+          "confused": 0,
+          "heart": 0,
+          "rocket": 0,
+          "eyes": 0
+        },
+        "performed_via_github_app": null,
+        "state_reason": null
+      },
+      {
+        "url": "https://api.github.com/repos/discord/discord-example-app/issues/20",
+        "id": 1571519818,
+        "node_id": "I_kwDOHJUbBc5dq31K",
+        "number": 20,
+        "title": "Getting \"Bad request signature\" error while setting up interations endpoint URL",
+        "user": {
+          "login": "Arjun021",
+          "id": 90953201,
+          "node_id": "MDQ6VXNlcjkwOTUzMjAx",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/Arjun021",
+          "type": "User",
+          "site_admin": false
+        },
+        "labels": [],
+        "state": "open",
+        "locked": false,
+        "assignee": null,
+        "assignees": [],
+        "milestone": null,
+        "comments": 3,
+        "created_at": "2023-02-05T16:51:23Z",
+        "updated_at": "2023-02-18T02:37:08Z",
+        "closed_at": null,
+        "author_association": "NONE",
+        "active_lock_reason": null,
+        "body": "After running the example and running local server with **ngrok** . I set the URL in discord settings according to the doc but after that I am getting **Bad request signature** error. \r\n\r\n<img width=\"876\" alt=\"image\" src=\"https://user-images.githubusercontent.com/90953201/216832674-22db23a0-6a9f-4d8d-8bef-7b90d074d11b.png\">\r\n\r\n\r\nIt's coming from the utils.js file `VerifyDiscordRequest` function. How can we resolve this issue ?",
+        "reactions": {
+          "url": "https://api.github.com/repos/discord/discord-example-app/issues/20/reactions",
+          "total_count": 0,
+          "+1": 0,
+          "-1": 0,
+          "laugh": 0,
+          "hooray": 0,
+          "confused": 0,
+          "heart": 0,
+          "rocket": 0,
+          "eyes": 0
+        },
+        "performed_via_github_app": null,
+        "state_reason": null
+      }
+    ],
     "pullRequests": []
   }
 }
