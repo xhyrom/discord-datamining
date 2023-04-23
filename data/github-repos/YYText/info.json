@@ -57,24 +57,7 @@
     "triage": false,
     "pull": false
   },
-  "branches": [
-    {
-      "name": "lsdimagine/support_accessibility_label",
-      "commit": {
-        "sha": "a63ab95abb0e2542c42db934d39b3d95a4a552b5",
-        "url": "https://api.github.com/repos/discord/YYText/commits/a63ab95abb0e2542c42db934d39b3d95a4a552b5"
-      },
-      "protected": false
-    },
-    {
-      "name": "master",
-      "commit": {
-        "sha": "e93695409ef1b0976c8681c0e8a6b3ae543db6c1",
-        "url": "https://api.github.com/repos/discord/YYText/commits/e93695409ef1b0976c8681c0e8a6b3ae543db6c1"
-      },
-      "protected": false
-    }
-  ],
+  "branches": [],
   "last5": {
     "commits": [
       {

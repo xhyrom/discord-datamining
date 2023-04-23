@@ -574,6 +574,977 @@
         "state_reason": null
       }
     ],
-    "pullRequests": []
+    "pullRequests": [
+      {
+        "url": "https://api.github.com/repos/discord/instruments/pulls/29",
+        "id": 1014114137,
+        "node_id": "PR_kwDOBo7u0M48cidZ",
+        "number": 29,
+        "state": "closed",
+        "locked": false,
+        "title": "Use compile_time_purge_matching, print error logs in tests",
+        "user": {
+          "login": "mezz",
+          "id": 916092,
+          "node_id": "MDQ6VXNlcjkxNjA5Mg==",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/mezz",
+          "type": "User",
+          "site_admin": false
+        },
+        "body": null,
+        "created_at": "2022-08-01T16:56:42Z",
+        "updated_at": "2022-08-01T17:03:48Z",
+        "closed_at": "2022-08-01T17:03:45Z",
+        "merged_at": "2022-08-01T17:03:45Z",
+        "merge_commit_sha": "f3a51142e171a7001172680b9ce9f79af133f981",
+        "assignee": null,
+        "assignees": [],
+        "requested_reviewers": [],
+        "requested_teams": [],
+        "labels": [],
+        "milestone": null,
+        "draft": false,
+        "head": {
+          "label": "discord:compile_time_purge_matching",
+          "ref": "compile_time_purge_matching",
+          "sha": "ce62685454b216b691201c55903bd8e5e4864cbe",
+          "user": {
+            "login": "discord",
+            "id": 1965106,
+            "node_id": "MDEyOk9yZ2FuaXphdGlvbjE5NjUxMDY=",
+            "gravatar_id": "",
+            "url": "https://api.github.com/users/discord",
+            "type": "Organization",
+            "site_admin": false
+          },
+          "repo": {
+            "id": 110030544,
+            "node_id": "MDEwOlJlcG9zaXRvcnkxMTAwMzA1NDQ=",
+            "name": "instruments",
+            "full_name": "discord/instruments",
+            "private": false,
+            "owner": {
+              "login": "discord",
+              "id": 1965106,
+              "node_id": "MDEyOk9yZ2FuaXphdGlvbjE5NjUxMDY=",
+              "gravatar_id": "",
+              "url": "https://api.github.com/users/discord",
+              "type": "Organization",
+              "site_admin": false
+            },
+            "description": "Simple and Fast metrics for Elixir",
+            "fork": false,
+            "url": "https://api.github.com/repos/discord/instruments",
+            "created_at": "2017-11-08T21:07:11Z",
+            "updated_at": "2023-04-13T01:32:26Z",
+            "pushed_at": "2022-08-01T20:10:05Z",
+            "homepage": null,
+            "size": 75,
+            "stargazers_count": 284,
+            "watchers_count": 284,
+            "language": "Elixir",
+            "has_issues": true,
+            "has_projects": true,
+            "has_downloads": true,
+            "has_wiki": true,
+            "has_pages": false,
+            "has_discussions": false,
+            "forks_count": 35,
+            "archived": false,
+            "disabled": false,
+            "open_issues_count": 0,
+            "license": {
+              "key": "mit",
+              "name": "MIT License",
+              "spdx_id": "MIT",
+              "url": "https://api.github.com/licenses/mit",
+              "node_id": "MDc6TGljZW5zZTEz"
+            },
+            "allow_forking": true,
+            "is_template": false,
+            "web_commit_signoff_required": false,
+            "topics": [],
+            "visibility": "public",
+            "forks": 35,
+            "open_issues": 0,
+            "watchers": 284,
+            "default_branch": "master"
+          }
+        },
+        "base": {
+          "label": "discord:master",
+          "ref": "master",
+          "sha": "bd9753b0876df8fc54cbacf27f663d2b98015b6f",
+          "user": {
+            "login": "discord",
+            "id": 1965106,
+            "node_id": "MDEyOk9yZ2FuaXphdGlvbjE5NjUxMDY=",
+            "gravatar_id": "",
+            "url": "https://api.github.com/users/discord",
+            "type": "Organization",
+            "site_admin": false
+          },
+          "repo": {
+            "id": 110030544,
+            "node_id": "MDEwOlJlcG9zaXRvcnkxMTAwMzA1NDQ=",
+            "name": "instruments",
+            "full_name": "discord/instruments",
+            "private": false,
+            "owner": {
+              "login": "discord",
+              "id": 1965106,
+              "node_id": "MDEyOk9yZ2FuaXphdGlvbjE5NjUxMDY=",
+              "gravatar_id": "",
+              "url": "https://api.github.com/users/discord",
+              "type": "Organization",
+              "site_admin": false
+            },
+            "description": "Simple and Fast metrics for Elixir",
+            "fork": false,
+            "url": "https://api.github.com/repos/discord/instruments",
+            "created_at": "2017-11-08T21:07:11Z",
+            "updated_at": "2023-04-13T01:32:26Z",
+            "pushed_at": "2022-08-01T20:10:05Z",
+            "homepage": null,
+            "size": 75,
+            "stargazers_count": 284,
+            "watchers_count": 284,
+            "language": "Elixir",
+            "has_issues": true,
+            "has_projects": true,
+            "has_downloads": true,
+            "has_wiki": true,
+            "has_pages": false,
+            "has_discussions": false,
+            "forks_count": 35,
+            "archived": false,
+            "disabled": false,
+            "open_issues_count": 0,
+            "license": {
+              "key": "mit",
+              "name": "MIT License",
+              "spdx_id": "MIT",
+              "url": "https://api.github.com/licenses/mit",
+              "node_id": "MDc6TGljZW5zZTEz"
+            },
+            "allow_forking": true,
+            "is_template": false,
+            "web_commit_signoff_required": false,
+            "topics": [],
+            "visibility": "public",
+            "forks": 35,
+            "open_issues": 0,
+            "watchers": 284,
+            "default_branch": "master"
+          }
+        },
+        "_links": {
+          "self": {
+            "href": "https://api.github.com/repos/discord/instruments/pulls/29"
+          },
+          "html": {
+            "href": "https://github.com/discord/instruments/pull/29"
+          },
+          "issue": {
+            "href": "https://api.github.com/repos/discord/instruments/issues/29"
+          },
+          "comments": {
+            "href": "https://api.github.com/repos/discord/instruments/issues/29/comments"
+          },
+          "review_comments": {
+            "href": "https://api.github.com/repos/discord/instruments/pulls/29/comments"
+          },
+          "review_comment": {
+            "href": "https://api.github.com/repos/discord/instruments/pulls/comments{/number}"
+          },
+          "commits": {
+            "href": "https://api.github.com/repos/discord/instruments/pulls/29/commits"
+          },
+          "statuses": {
+            "href": "https://api.github.com/repos/discord/instruments/statuses/ce62685454b216b691201c55903bd8e5e4864cbe"
+          }
+        },
+        "author_association": "MEMBER",
+        "auto_merge": null,
+        "active_lock_reason": null
+      },
+      {
+        "url": "https://api.github.com/repos/discord/instruments/pulls/28",
+        "id": 1012257919,
+        "node_id": "PR_kwDOBo7u0M48VdR_",
+        "number": 28,
+        "state": "closed",
+        "locked": false,
+        "title": "Add a randomized jitter to FastCounter reporting.",
+        "user": {
+          "login": "mezz",
+          "id": 916092,
+          "node_id": "MDQ6VXNlcjkxNjA5Mg==",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/mezz",
+          "type": "User",
+          "site_admin": false
+        },
+        "body": "Various situations can cause many scheduled reports from different counters to all send at once.\r\nThis randomized jitter will spread out report intervals from different counters so that they are never correlated together.",
+        "created_at": "2022-07-29T18:42:20Z",
+        "updated_at": "2022-08-01T16:48:58Z",
+        "closed_at": "2022-08-01T16:48:54Z",
+        "merged_at": "2022-08-01T16:48:54Z",
+        "merge_commit_sha": "bd9753b0876df8fc54cbacf27f663d2b98015b6f",
+        "assignee": null,
+        "assignees": [],
+        "requested_reviewers": [],
+        "requested_teams": [],
+        "labels": [],
+        "milestone": null,
+        "draft": false,
+        "head": {
+          "label": "discord:fast-counter-report-jitter",
+          "ref": "fast-counter-report-jitter",
+          "sha": "18ada21bf40188f4e610e7ea4916e458a606d679",
+          "user": {
+            "login": "discord",
+            "id": 1965106,
+            "node_id": "MDEyOk9yZ2FuaXphdGlvbjE5NjUxMDY=",
+            "gravatar_id": "",
+            "url": "https://api.github.com/users/discord",
+            "type": "Organization",
+            "site_admin": false
+          },
+          "repo": {
+            "id": 110030544,
+            "node_id": "MDEwOlJlcG9zaXRvcnkxMTAwMzA1NDQ=",
+            "name": "instruments",
+            "full_name": "discord/instruments",
+            "private": false,
+            "owner": {
+              "login": "discord",
+              "id": 1965106,
+              "node_id": "MDEyOk9yZ2FuaXphdGlvbjE5NjUxMDY=",
+              "gravatar_id": "",
+              "url": "https://api.github.com/users/discord",
+              "type": "Organization",
+              "site_admin": false
+            },
+            "description": "Simple and Fast metrics for Elixir",
+            "fork": false,
+            "url": "https://api.github.com/repos/discord/instruments",
+            "created_at": "2017-11-08T21:07:11Z",
+            "updated_at": "2023-04-13T01:32:26Z",
+            "pushed_at": "2022-08-01T20:10:05Z",
+            "homepage": null,
+            "size": 75,
+            "stargazers_count": 284,
+            "watchers_count": 284,
+            "language": "Elixir",
+            "has_issues": true,
+            "has_projects": true,
+            "has_downloads": true,
+            "has_wiki": true,
+            "has_pages": false,
+            "has_discussions": false,
+            "forks_count": 35,
+            "archived": false,
+            "disabled": false,
+            "open_issues_count": 0,
+            "license": {
+              "key": "mit",
+              "name": "MIT License",
+              "spdx_id": "MIT",
+              "url": "https://api.github.com/licenses/mit",
+              "node_id": "MDc6TGljZW5zZTEz"
+            },
+            "allow_forking": true,
+            "is_template": false,
+            "web_commit_signoff_required": false,
+            "topics": [],
+            "visibility": "public",
+            "forks": 35,
+            "open_issues": 0,
+            "watchers": 284,
+            "default_branch": "master"
+          }
+        },
+        "base": {
+          "label": "discord:master",
+          "ref": "master",
+          "sha": "3b0513dc2dcaff7f9ec4aa41685c6c586bad9606",
+          "user": {
+            "login": "discord",
+            "id": 1965106,
+            "node_id": "MDEyOk9yZ2FuaXphdGlvbjE5NjUxMDY=",
+            "gravatar_id": "",
+            "url": "https://api.github.com/users/discord",
+            "type": "Organization",
+            "site_admin": false
+          },
+          "repo": {
+            "id": 110030544,
+            "node_id": "MDEwOlJlcG9zaXRvcnkxMTAwMzA1NDQ=",
+            "name": "instruments",
+            "full_name": "discord/instruments",
+            "private": false,
+            "owner": {
+              "login": "discord",
+              "id": 1965106,
+              "node_id": "MDEyOk9yZ2FuaXphdGlvbjE5NjUxMDY=",
+              "gravatar_id": "",
+              "url": "https://api.github.com/users/discord",
+              "type": "Organization",
+              "site_admin": false
+            },
+            "description": "Simple and Fast metrics for Elixir",
+            "fork": false,
+            "url": "https://api.github.com/repos/discord/instruments",
+            "created_at": "2017-11-08T21:07:11Z",
+            "updated_at": "2023-04-13T01:32:26Z",
+            "pushed_at": "2022-08-01T20:10:05Z",
+            "homepage": null,
+            "size": 75,
+            "stargazers_count": 284,
+            "watchers_count": 284,
+            "language": "Elixir",
+            "has_issues": true,
+            "has_projects": true,
+            "has_downloads": true,
+            "has_wiki": true,
+            "has_pages": false,
+            "has_discussions": false,
+            "forks_count": 35,
+            "archived": false,
+            "disabled": false,
+            "open_issues_count": 0,
+            "license": {
+              "key": "mit",
+              "name": "MIT License",
+              "spdx_id": "MIT",
+              "url": "https://api.github.com/licenses/mit",
+              "node_id": "MDc6TGljZW5zZTEz"
+            },
+            "allow_forking": true,
+            "is_template": false,
+            "web_commit_signoff_required": false,
+            "topics": [],
+            "visibility": "public",
+            "forks": 35,
+            "open_issues": 0,
+            "watchers": 284,
+            "default_branch": "master"
+          }
+        },
+        "_links": {
+          "self": {
+            "href": "https://api.github.com/repos/discord/instruments/pulls/28"
+          },
+          "html": {
+            "href": "https://github.com/discord/instruments/pull/28"
+          },
+          "issue": {
+            "href": "https://api.github.com/repos/discord/instruments/issues/28"
+          },
+          "comments": {
+            "href": "https://api.github.com/repos/discord/instruments/issues/28/comments"
+          },
+          "review_comments": {
+            "href": "https://api.github.com/repos/discord/instruments/pulls/28/comments"
+          },
+          "review_comment": {
+            "href": "https://api.github.com/repos/discord/instruments/pulls/comments{/number}"
+          },
+          "commits": {
+            "href": "https://api.github.com/repos/discord/instruments/pulls/28/commits"
+          },
+          "statuses": {
+            "href": "https://api.github.com/repos/discord/instruments/statuses/18ada21bf40188f4e610e7ea4916e458a606d679"
+          }
+        },
+        "author_association": "MEMBER",
+        "auto_merge": null,
+        "active_lock_reason": null
+      },
+      {
+        "url": "https://api.github.com/repos/discord/instruments/pulls/27",
+        "id": 896186040,
+        "node_id": "PR_kwDOBo7u0M41ara4",
+        "number": 27,
+        "state": "closed",
+        "locked": false,
+        "title": "Provide better output on broken probes",
+        "user": {
+          "login": "ihumanable",
+          "id": 122636,
+          "node_id": "MDQ6VXNlcjEyMjYzNg==",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/ihumanable",
+          "type": "User",
+          "site_admin": false
+        },
+        "body": "Right now the probe will just crash and exit if the probe module returns\r\nan invalid value.  With many probes this can make it difficult to find\r\nand correct misbehaving probes.\r\n\r\nInstead of crashing, log a warning with the probe name and the invalid\r\nvalue so the probe can be corrected",
+        "created_at": "2022-03-31T17:50:32Z",
+        "updated_at": "2022-03-31T18:04:03Z",
+        "closed_at": "2022-03-31T18:03:59Z",
+        "merged_at": "2022-03-31T18:03:59Z",
+        "merge_commit_sha": "5bad8ee017290718fb37319bb4330f8d6b971995",
+        "assignee": null,
+        "assignees": [],
+        "requested_reviewers": [],
+        "requested_teams": [],
+        "labels": [],
+        "milestone": null,
+        "draft": false,
+        "head": {
+          "label": "discord:graceful-runner",
+          "ref": "graceful-runner",
+          "sha": "b0b16f0ce052ff701f0640c1f8881db4c9849c96",
+          "user": {
+            "login": "discord",
+            "id": 1965106,
+            "node_id": "MDEyOk9yZ2FuaXphdGlvbjE5NjUxMDY=",
+            "gravatar_id": "",
+            "url": "https://api.github.com/users/discord",
+            "type": "Organization",
+            "site_admin": false
+          },
+          "repo": {
+            "id": 110030544,
+            "node_id": "MDEwOlJlcG9zaXRvcnkxMTAwMzA1NDQ=",
+            "name": "instruments",
+            "full_name": "discord/instruments",
+            "private": false,
+            "owner": {
+              "login": "discord",
+              "id": 1965106,
+              "node_id": "MDEyOk9yZ2FuaXphdGlvbjE5NjUxMDY=",
+              "gravatar_id": "",
+              "url": "https://api.github.com/users/discord",
+              "type": "Organization",
+              "site_admin": false
+            },
+            "description": "Simple and Fast metrics for Elixir",
+            "fork": false,
+            "url": "https://api.github.com/repos/discord/instruments",
+            "created_at": "2017-11-08T21:07:11Z",
+            "updated_at": "2023-04-13T01:32:26Z",
+            "pushed_at": "2022-08-01T20:10:05Z",
+            "homepage": null,
+            "size": 75,
+            "stargazers_count": 284,
+            "watchers_count": 284,
+            "language": "Elixir",
+            "has_issues": true,
+            "has_projects": true,
+            "has_downloads": true,
+            "has_wiki": true,
+            "has_pages": false,
+            "has_discussions": false,
+            "forks_count": 35,
+            "archived": false,
+            "disabled": false,
+            "open_issues_count": 0,
+            "license": {
+              "key": "mit",
+              "name": "MIT License",
+              "spdx_id": "MIT",
+              "url": "https://api.github.com/licenses/mit",
+              "node_id": "MDc6TGljZW5zZTEz"
+            },
+            "allow_forking": true,
+            "is_template": false,
+            "web_commit_signoff_required": false,
+            "topics": [],
+            "visibility": "public",
+            "forks": 35,
+            "open_issues": 0,
+            "watchers": 284,
+            "default_branch": "master"
+          }
+        },
+        "base": {
+          "label": "discord:master",
+          "ref": "master",
+          "sha": "6162bd3280795b544d052fce871acd9975aee542",
+          "user": {
+            "login": "discord",
+            "id": 1965106,
+            "node_id": "MDEyOk9yZ2FuaXphdGlvbjE5NjUxMDY=",
+            "gravatar_id": "",
+            "url": "https://api.github.com/users/discord",
+            "type": "Organization",
+            "site_admin": false
+          },
+          "repo": {
+            "id": 110030544,
+            "node_id": "MDEwOlJlcG9zaXRvcnkxMTAwMzA1NDQ=",
+            "name": "instruments",
+            "full_name": "discord/instruments",
+            "private": false,
+            "owner": {
+              "login": "discord",
+              "id": 1965106,
+              "node_id": "MDEyOk9yZ2FuaXphdGlvbjE5NjUxMDY=",
+              "gravatar_id": "",
+              "url": "https://api.github.com/users/discord",
+              "type": "Organization",
+              "site_admin": false
+            },
+            "description": "Simple and Fast metrics for Elixir",
+            "fork": false,
+            "url": "https://api.github.com/repos/discord/instruments",
+            "created_at": "2017-11-08T21:07:11Z",
+            "updated_at": "2023-04-13T01:32:26Z",
+            "pushed_at": "2022-08-01T20:10:05Z",
+            "homepage": null,
+            "size": 75,
+            "stargazers_count": 284,
+            "watchers_count": 284,
+            "language": "Elixir",
+            "has_issues": true,
+            "has_projects": true,
+            "has_downloads": true,
+            "has_wiki": true,
+            "has_pages": false,
+            "has_discussions": false,
+            "forks_count": 35,
+            "archived": false,
+            "disabled": false,
+            "open_issues_count": 0,
+            "license": {
+              "key": "mit",
+              "name": "MIT License",
+              "spdx_id": "MIT",
+              "url": "https://api.github.com/licenses/mit",
+              "node_id": "MDc6TGljZW5zZTEz"
+            },
+            "allow_forking": true,
+            "is_template": false,
+            "web_commit_signoff_required": false,
+            "topics": [],
+            "visibility": "public",
+            "forks": 35,
+            "open_issues": 0,
+            "watchers": 284,
+            "default_branch": "master"
+          }
+        },
+        "_links": {
+          "self": {
+            "href": "https://api.github.com/repos/discord/instruments/pulls/27"
+          },
+          "html": {
+            "href": "https://github.com/discord/instruments/pull/27"
+          },
+          "issue": {
+            "href": "https://api.github.com/repos/discord/instruments/issues/27"
+          },
+          "comments": {
+            "href": "https://api.github.com/repos/discord/instruments/issues/27/comments"
+          },
+          "review_comments": {
+            "href": "https://api.github.com/repos/discord/instruments/pulls/27/comments"
+          },
+          "review_comment": {
+            "href": "https://api.github.com/repos/discord/instruments/pulls/comments{/number}"
+          },
+          "commits": {
+            "href": "https://api.github.com/repos/discord/instruments/pulls/27/commits"
+          },
+          "statuses": {
+            "href": "https://api.github.com/repos/discord/instruments/statuses/b0b16f0ce052ff701f0640c1f8881db4c9849c96"
+          }
+        },
+        "author_association": "CONTRIBUTOR",
+        "auto_merge": null,
+        "active_lock_reason": null
+      },
+      {
+        "url": "https://api.github.com/repos/discord/instruments/pulls/26",
+        "id": 870141210,
+        "node_id": "PR_kwDOBo7u0M4z3U0a",
+        "number": 26,
+        "state": "closed",
+        "locked": false,
+        "title": "The measure function needs to time the passed-in function",
+        "user": {
+          "login": "scohen",
+          "id": 55809,
+          "node_id": "MDQ6VXNlcjU1ODA5",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/scohen",
+          "type": "User",
+          "site_admin": false
+        },
+        "body": "In order to match Statix's API, the measure function needs to call\r\n`:timer.tc` and actually measure the timing of the passed in\r\nfunction. The current implementation didn't do that and would fail the\r\npattern match.",
+        "created_at": "2022-03-03T02:05:47Z",
+        "updated_at": "2022-03-31T18:04:21Z",
+        "closed_at": "2022-03-31T18:04:21Z",
+        "merged_at": "2022-03-31T18:04:21Z",
+        "merge_commit_sha": "aab9bed8f3a5d025ef581fea51f04d77a62470a9",
+        "assignee": null,
+        "assignees": [],
+        "requested_reviewers": [],
+        "requested_teams": [],
+        "labels": [],
+        "milestone": null,
+        "draft": false,
+        "head": {
+          "label": "scohen:fix-logger-stats-reporter",
+          "ref": "fix-logger-stats-reporter",
+          "sha": "0a912e0ec745d31d2a4017dbec7e443017ac62c9",
+          "user": {
+            "login": "scohen",
+            "id": 55809,
+            "node_id": "MDQ6VXNlcjU1ODA5",
+            "gravatar_id": "",
+            "url": "https://api.github.com/users/scohen",
+            "type": "User",
+            "site_admin": false
+          },
+          "repo": {
+            "id": 465533011,
+            "node_id": "R_kgDOG794Uw",
+            "name": "instruments",
+            "full_name": "scohen/instruments",
+            "private": false,
+            "owner": {
+              "login": "scohen",
+              "id": 55809,
+              "node_id": "MDQ6VXNlcjU1ODA5",
+              "gravatar_id": "",
+              "url": "https://api.github.com/users/scohen",
+              "type": "User",
+              "site_admin": false
+            },
+            "description": "Simple and Fast metrics for Elixir",
+            "fork": true,
+            "url": "https://api.github.com/repos/scohen/instruments",
+            "created_at": "2022-03-03T01:59:27Z",
+            "updated_at": "2022-03-03T01:39:46Z",
+            "pushed_at": "2022-03-03T02:05:26Z",
+            "homepage": null,
+            "size": 81,
+            "stargazers_count": 0,
+            "watchers_count": 0,
+            "language": null,
+            "has_issues": false,
+            "has_projects": true,
+            "has_downloads": true,
+            "has_wiki": true,
+            "has_pages": false,
+            "has_discussions": false,
+            "forks_count": 0,
+            "archived": false,
+            "disabled": false,
+            "open_issues_count": 0,
+            "license": {
+              "key": "mit",
+              "name": "MIT License",
+              "spdx_id": "MIT",
+              "url": "https://api.github.com/licenses/mit",
+              "node_id": "MDc6TGljZW5zZTEz"
+            },
+            "allow_forking": true,
+            "is_template": false,
+            "web_commit_signoff_required": false,
+            "topics": [],
+            "visibility": "public",
+            "forks": 0,
+            "open_issues": 0,
+            "watchers": 0,
+            "default_branch": "master"
+          }
+        },
+        "base": {
+          "label": "discord:master",
+          "ref": "master",
+          "sha": "6162bd3280795b544d052fce871acd9975aee542",
+          "user": {
+            "login": "discord",
+            "id": 1965106,
+            "node_id": "MDEyOk9yZ2FuaXphdGlvbjE5NjUxMDY=",
+            "gravatar_id": "",
+            "url": "https://api.github.com/users/discord",
+            "type": "Organization",
+            "site_admin": false
+          },
+          "repo": {
+            "id": 110030544,
+            "node_id": "MDEwOlJlcG9zaXRvcnkxMTAwMzA1NDQ=",
+            "name": "instruments",
+            "full_name": "discord/instruments",
+            "private": false,
+            "owner": {
+              "login": "discord",
+              "id": 1965106,
+              "node_id": "MDEyOk9yZ2FuaXphdGlvbjE5NjUxMDY=",
+              "gravatar_id": "",
+              "url": "https://api.github.com/users/discord",
+              "type": "Organization",
+              "site_admin": false
+            },
+            "description": "Simple and Fast metrics for Elixir",
+            "fork": false,
+            "url": "https://api.github.com/repos/discord/instruments",
+            "created_at": "2017-11-08T21:07:11Z",
+            "updated_at": "2023-04-13T01:32:26Z",
+            "pushed_at": "2022-08-01T20:10:05Z",
+            "homepage": null,
+            "size": 75,
+            "stargazers_count": 284,
+            "watchers_count": 284,
+            "language": "Elixir",
+            "has_issues": true,
+            "has_projects": true,
+            "has_downloads": true,
+            "has_wiki": true,
+            "has_pages": false,
+            "has_discussions": false,
+            "forks_count": 35,
+            "archived": false,
+            "disabled": false,
+            "open_issues_count": 0,
+            "license": {
+              "key": "mit",
+              "name": "MIT License",
+              "spdx_id": "MIT",
+              "url": "https://api.github.com/licenses/mit",
+              "node_id": "MDc6TGljZW5zZTEz"
+            },
+            "allow_forking": true,
+            "is_template": false,
+            "web_commit_signoff_required": false,
+            "topics": [],
+            "visibility": "public",
+            "forks": 35,
+            "open_issues": 0,
+            "watchers": 284,
+            "default_branch": "master"
+          }
+        },
+        "_links": {
+          "self": {
+            "href": "https://api.github.com/repos/discord/instruments/pulls/26"
+          },
+          "html": {
+            "href": "https://github.com/discord/instruments/pull/26"
+          },
+          "issue": {
+            "href": "https://api.github.com/repos/discord/instruments/issues/26"
+          },
+          "comments": {
+            "href": "https://api.github.com/repos/discord/instruments/issues/26/comments"
+          },
+          "review_comments": {
+            "href": "https://api.github.com/repos/discord/instruments/pulls/26/comments"
+          },
+          "review_comment": {
+            "href": "https://api.github.com/repos/discord/instruments/pulls/comments{/number}"
+          },
+          "commits": {
+            "href": "https://api.github.com/repos/discord/instruments/pulls/26/commits"
+          },
+          "statuses": {
+            "href": "https://api.github.com/repos/discord/instruments/statuses/0a912e0ec745d31d2a4017dbec7e443017ac62c9"
+          }
+        },
+        "author_association": "CONTRIBUTOR",
+        "auto_merge": null,
+        "active_lock_reason": null
+      },
+      {
+        "url": "https://api.github.com/repos/discord/instruments/pulls/24",
+        "id": 786498444,
+        "node_id": "PR_kwDOBo7u0M4u4QOM",
+        "number": 24,
+        "state": "closed",
+        "locked": false,
+        "title": "Moduledoc improvement ",
+        "user": {
+          "login": "osjessicaju",
+          "id": 93222656,
+          "node_id": "U_kgDOBY53AA",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/osjessicaju",
+          "type": "User",
+          "site_admin": false
+        },
+        "body": "I was getting the following error: \r\n\r\n`function Instruments.Probe.define!/4 is undefined or private` with the code sample `Probe.define!(\"erlang.scheduler_utilization\", :gauge, Probes.Schedulers, keys: ~w(weighted total))` \r\n\r\nPassing a keyword list fixed it ",
+        "created_at": "2021-11-22T23:18:55Z",
+        "updated_at": "2022-03-03T01:39:56Z",
+        "closed_at": "2022-03-03T01:39:43Z",
+        "merged_at": "2022-03-03T01:39:42Z",
+        "merge_commit_sha": "6162bd3280795b544d052fce871acd9975aee542",
+        "assignee": null,
+        "assignees": [],
+        "requested_reviewers": [],
+        "requested_teams": [],
+        "labels": [],
+        "milestone": null,
+        "draft": false,
+        "head": {
+          "label": "osjessicaju:update_moduledoc",
+          "ref": "update_moduledoc",
+          "sha": "b8db1b4848f386da5c20e568e8acfd7686fcc77a",
+          "user": {
+            "login": "osjessicaju",
+            "id": 93222656,
+            "node_id": "U_kgDOBY53AA",
+            "gravatar_id": "",
+            "url": "https://api.github.com/users/osjessicaju",
+            "type": "User",
+            "site_admin": false
+          },
+          "repo": {
+            "id": 430892318,
+            "node_id": "R_kgDOGa7lHg",
+            "name": "instruments",
+            "full_name": "osjessicaju/instruments",
+            "private": false,
+            "owner": {
+              "login": "osjessicaju",
+              "id": 93222656,
+              "node_id": "U_kgDOBY53AA",
+              "gravatar_id": "",
+              "url": "https://api.github.com/users/osjessicaju",
+              "type": "User",
+              "site_admin": false
+            },
+            "description": "Simple and Fast metrics for Elixir",
+            "fork": true,
+            "url": "https://api.github.com/repos/osjessicaju/instruments",
+            "created_at": "2021-11-22T23:07:29Z",
+            "updated_at": "2021-11-22T23:07:30Z",
+            "pushed_at": "2021-11-22T23:13:48Z",
+            "homepage": null,
+            "size": 83,
+            "stargazers_count": 0,
+            "watchers_count": 0,
+            "language": null,
+            "has_issues": false,
+            "has_projects": true,
+            "has_downloads": true,
+            "has_wiki": true,
+            "has_pages": false,
+            "has_discussions": false,
+            "forks_count": 0,
+            "archived": false,
+            "disabled": false,
+            "open_issues_count": 0,
+            "license": {
+              "key": "mit",
+              "name": "MIT License",
+              "spdx_id": "MIT",
+              "url": "https://api.github.com/licenses/mit",
+              "node_id": "MDc6TGljZW5zZTEz"
+            },
+            "allow_forking": true,
+            "is_template": false,
+            "web_commit_signoff_required": false,
+            "topics": [],
+            "visibility": "public",
+            "forks": 0,
+            "open_issues": 0,
+            "watchers": 0,
+            "default_branch": "master"
+          }
+        },
+        "base": {
+          "label": "discord:master",
+          "ref": "master",
+          "sha": "4e8a34655d5b469567be69ccf3cf2dcdeba798f6",
+          "user": {
+            "login": "discord",
+            "id": 1965106,
+            "node_id": "MDEyOk9yZ2FuaXphdGlvbjE5NjUxMDY=",
+            "gravatar_id": "",
+            "url": "https://api.github.com/users/discord",
+            "type": "Organization",
+            "site_admin": false
+          },
+          "repo": {
+            "id": 110030544,
+            "node_id": "MDEwOlJlcG9zaXRvcnkxMTAwMzA1NDQ=",
+            "name": "instruments",
+            "full_name": "discord/instruments",
+            "private": false,
+            "owner": {
+              "login": "discord",
+              "id": 1965106,
+              "node_id": "MDEyOk9yZ2FuaXphdGlvbjE5NjUxMDY=",
+              "gravatar_id": "",
+              "url": "https://api.github.com/users/discord",
+              "type": "Organization",
+              "site_admin": false
+            },
+            "description": "Simple and Fast metrics for Elixir",
+            "fork": false,
+            "url": "https://api.github.com/repos/discord/instruments",
+            "created_at": "2017-11-08T21:07:11Z",
+            "updated_at": "2023-04-13T01:32:26Z",
+            "pushed_at": "2022-08-01T20:10:05Z",
+            "homepage": null,
+            "size": 75,
+            "stargazers_count": 284,
+            "watchers_count": 284,
+            "language": "Elixir",
+            "has_issues": true,
+            "has_projects": true,
+            "has_downloads": true,
+            "has_wiki": true,
+            "has_pages": false,
+            "has_discussions": false,
+            "forks_count": 35,
+            "archived": false,
+            "disabled": false,
+            "open_issues_count": 0,
+            "license": {
+              "key": "mit",
+              "name": "MIT License",
+              "spdx_id": "MIT",
+              "url": "https://api.github.com/licenses/mit",
+              "node_id": "MDc6TGljZW5zZTEz"
+            },
+            "allow_forking": true,
+            "is_template": false,
+            "web_commit_signoff_required": false,
+            "topics": [],
+            "visibility": "public",
+            "forks": 35,
+            "open_issues": 0,
+            "watchers": 284,
+            "default_branch": "master"
+          }
+        },
+        "_links": {
+          "self": {
+            "href": "https://api.github.com/repos/discord/instruments/pulls/24"
+          },
+          "html": {
+            "href": "https://github.com/discord/instruments/pull/24"
+          },
+          "issue": {
+            "href": "https://api.github.com/repos/discord/instruments/issues/24"
+          },
+          "comments": {
+            "href": "https://api.github.com/repos/discord/instruments/issues/24/comments"
+          },
+          "review_comments": {
+            "href": "https://api.github.com/repos/discord/instruments/pulls/24/comments"
+          },
+          "review_comment": {
+            "href": "https://api.github.com/repos/discord/instruments/pulls/comments{/number}"
+          },
+          "commits": {
+            "href": "https://api.github.com/repos/discord/instruments/pulls/24/commits"
+          },
+          "statuses": {
+            "href": "https://api.github.com/repos/discord/instruments/statuses/b8db1b4848f386da5c20e568e8acfd7686fcc77a"
+          }
+        },
+        "author_association": "CONTRIBUTOR",
+        "auto_merge": null,
+        "active_lock_reason": null
+      }
+    ]
   }
 }
