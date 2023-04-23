@@ -2,7 +2,7 @@ import "dotenv/config";
 import { hash, buildNumber } from "./version.js";
 import { scripts, stylesheets } from "./files.js";
 import { beautifiedScripts, beautifiedStylesheets } from "./contents.js";
-import { info, success } from ".../logger.js";
+import { info, success } from "../logger.js";
 import { namilize } from "./utils.js";
 import months from "../months.js";
 
