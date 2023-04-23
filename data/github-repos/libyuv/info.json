@@ -292,51 +292,7 @@
       }
     ],
     "releases": [],
-    "issues": [
-      {
-        "url": "https://api.github.com/repos/discord/libyuv/issues/1",
-        "id": 797235176,
-        "node_id": "MDU6SXNzdWU3OTcyMzUxNzY=",
-        "number": 1,
-        "title": "Youpull#6629",
-        "user": {
-          "login": "ghost",
-          "id": 10137,
-          "node_id": "MDQ6VXNlcjEwMTM3",
-          "gravatar_id": "",
-          "url": "https://api.github.com/users/ghost",
-          "type": "User",
-          "site_admin": false
-        },
-        "labels": [],
-        "state": "closed",
-        "locked": false,
-        "assignee": null,
-        "assignees": [],
-        "milestone": null,
-        "comments": 0,
-        "created_at": "2021-01-29T22:02:13Z",
-        "updated_at": "2021-02-04T07:14:05Z",
-        "closed_at": "2021-02-04T07:14:05Z",
-        "author_association": "NONE",
-        "active_lock_reason": null,
-        "body": "- [ ] ",
-        "reactions": {
-          "url": "https://api.github.com/repos/discord/libyuv/issues/1/reactions",
-          "total_count": 0,
-          "+1": 0,
-          "-1": 0,
-          "laugh": 0,
-          "hooray": 0,
-          "confused": 0,
-          "heart": 0,
-          "rocket": 0,
-          "eyes": 0
-        },
-        "performed_via_github_app": null,
-        "state_reason": "completed"
-      }
-    ],
+    "issues": [],
     "pullRequests": []
   }
 }
