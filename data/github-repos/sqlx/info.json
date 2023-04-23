@@ -1,0 +1,338 @@
+{
+  "id": 276698357,
+  "node_id": "MDEwOlJlcG9zaXRvcnkyNzY2OTgzNTc=",
+  "name": "sqlx",
+  "full_name": "discord/sqlx",
+  "private": false,
+  "owner": {
+    "login": "discord",
+    "id": 1965106,
+    "node_id": "MDEyOk9yZ2FuaXphdGlvbjE5NjUxMDY=",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/discord",
+    "type": "Organization",
+    "site_admin": false
+  },
+  "description": "🧰 The Rust SQL Toolkit. An async, pure Rust SQL crate featuring compile-time checked queries without a DSL. Supports PostgreSQL, MySQL, and SQLite.",
+  "fork": true,
+  "url": "https://api.github.com/repos/discord/sqlx",
+  "created_at": "2020-07-02T16:42:51Z",
+  "updated_at": "2023-03-07T14:25:49Z",
+  "pushed_at": "2020-07-27T18:36:24Z",
+  "homepage": "",
+  "size": 3595,
+  "stargazers_count": 5,
+  "watchers_count": 5,
+  "language": "Rust",
+  "has_issues": false,
+  "has_projects": true,
+  "has_downloads": true,
+  "has_wiki": true,
+  "has_pages": false,
+  "has_discussions": false,
+  "forks_count": 3,
+  "archived": false,
+  "disabled": false,
+  "open_issues_count": 0,
+  "license": {
+    "key": "apache-2.0",
+    "name": "Apache License 2.0",
+    "spdx_id": "Apache-2.0",
+    "url": "https://api.github.com/licenses/apache-2.0",
+    "node_id": "MDc6TGljZW5zZTI="
+  },
+  "allow_forking": true,
+  "is_template": false,
+  "web_commit_signoff_required": false,
+  "topics": [],
+  "visibility": "public",
+  "forks": 3,
+  "open_issues": 0,
+  "watchers": 5,
+  "default_branch": "master",
+  "permissions": {
+    "admin": false,
+    "maintain": false,
+    "push": false,
+    "triage": false,
+    "pull": false
+  },
+  "branches": [],
+  "last5": {
+    "commits": [
+      {
+        "sha": "92cddc76c886285f95f18bfcb41e12626b4d236f",
+        "node_id": "MDY6Q29tbWl0Mjc2Njk4MzU3OjkyY2RkYzc2Yzg4NjI4NWY5NWYxOGJmY2I0MWUxMjYyNmI0ZDIzNmY=",
+        "commit": {
+          "author": {
+            "name": "Julius de Bruijn",
+            "email": "julius+github@nauk.io",
+            "date": "2020-07-15T10:18:12Z"
+          },
+          "committer": {
+            "name": "Ryan Leckey",
+            "email": "leckey.ryan@gmail.com",
+            "date": "2020-07-15T10:19:23Z"
+          },
+          "message": "Remove faulty Json declaration from macros",
+          "tree": {
+            "sha": "aa8835b861ae9925dc6d2d517714c31826e54531",
+            "url": "https://api.github.com/repos/discord/sqlx/git/trees/aa8835b861ae9925dc6d2d517714c31826e54531"
+          },
+          "url": "https://api.github.com/repos/discord/sqlx/git/commits/92cddc76c886285f95f18bfcb41e12626b4d236f",
+          "comment_count": 0,
+          "verification": {
+            "verified": false,
+            "reason": "unsigned",
+            "signature": null,
+            "payload": null
+          }
+        },
+        "url": "https://api.github.com/repos/discord/sqlx/commits/92cddc76c886285f95f18bfcb41e12626b4d236f",
+        "author": {
+          "login": "pimeys",
+          "id": 34967,
+          "node_id": "MDQ6VXNlcjM0OTY3",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/pimeys",
+          "type": "User",
+          "site_admin": false
+        },
+        "committer": {
+          "login": "mehcode",
+          "id": 753919,
+          "node_id": "MDQ6VXNlcjc1MzkxOQ==",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/mehcode",
+          "type": "User",
+          "site_admin": false
+        },
+        "parents": [
+          {
+            "sha": "6949b84e8c577a7df4f55963e3d79f91ac8d45bd",
+            "url": "https://api.github.com/repos/discord/sqlx/commits/6949b84e8c577a7df4f55963e3d79f91ac8d45bd"
+          }
+        ]
+      },
+      {
+        "sha": "6949b84e8c577a7df4f55963e3d79f91ac8d45bd",
+        "node_id": "MDY6Q29tbWl0Mjc2Njk4MzU3OjY5NDliODRlOGM1NzdhN2RmNGY1NTk2M2UzZDc5ZjkxYWM4ZDQ1YmQ=",
+        "commit": {
+          "author": {
+            "name": "Ryan Leckey",
+            "email": "ryan@launchbadge.com",
+            "date": "2020-07-15T09:31:57Z"
+          },
+          "committer": {
+            "name": "Ryan Leckey",
+            "email": "ryan@launchbadge.com",
+            "date": "2020-07-15T09:31:57Z"
+          },
+          "message": "style: rustfmt",
+          "tree": {
+            "sha": "489887c592b779062d334955c147597c32c9abc0",
+            "url": "https://api.github.com/repos/discord/sqlx/git/trees/489887c592b779062d334955c147597c32c9abc0"
+          },
+          "url": "https://api.github.com/repos/discord/sqlx/git/commits/6949b84e8c577a7df4f55963e3d79f91ac8d45bd",
+          "comment_count": 0,
+          "verification": {
+            "verified": false,
+            "reason": "unsigned",
+            "signature": null,
+            "payload": null
+          }
+        },
+        "url": "https://api.github.com/repos/discord/sqlx/commits/6949b84e8c577a7df4f55963e3d79f91ac8d45bd",
+        "author": {
+          "login": "mehcode",
+          "id": 753919,
+          "node_id": "MDQ6VXNlcjc1MzkxOQ==",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/mehcode",
+          "type": "User",
+          "site_admin": false
+        },
+        "committer": {
+          "login": "mehcode",
+          "id": 753919,
+          "node_id": "MDQ6VXNlcjc1MzkxOQ==",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/mehcode",
+          "type": "User",
+          "site_admin": false
+        },
+        "parents": [
+          {
+            "sha": "b2ba00f4be27687873d9a722a805a69ff6949d3c",
+            "url": "https://api.github.com/repos/discord/sqlx/commits/b2ba00f4be27687873d9a722a805a69ff6949d3c"
+          }
+        ]
+      },
+      {
+        "sha": "b2ba00f4be27687873d9a722a805a69ff6949d3c",
+        "node_id": "MDY6Q29tbWl0Mjc2Njk4MzU3OmIyYmEwMGY0YmUyNzY4Nzg3M2Q5YTcyMmE4MDVhNjlmZjY5NDlkM2M=",
+        "commit": {
+          "author": {
+            "name": "Ryan Leckey",
+            "email": "ryan@launchbadge.com",
+            "date": "2020-07-15T09:31:44Z"
+          },
+          "committer": {
+            "name": "Ryan Leckey",
+            "email": "ryan@launchbadge.com",
+            "date": "2020-07-15T09:31:44Z"
+          },
+          "message": "feat(macros): turn on support for JSON in mysql and arrays of JSON in postgres",
+          "tree": {
+            "sha": "0cec1113bc8d599b9dfe5b8d89d0eed874aaba63",
+            "url": "https://api.github.com/repos/discord/sqlx/git/trees/0cec1113bc8d599b9dfe5b8d89d0eed874aaba63"
+          },
+          "url": "https://api.github.com/repos/discord/sqlx/git/commits/b2ba00f4be27687873d9a722a805a69ff6949d3c",
+          "comment_count": 0,
+          "verification": {
+            "verified": false,
+            "reason": "unsigned",
+            "signature": null,
+            "payload": null
+          }
+        },
+        "url": "https://api.github.com/repos/discord/sqlx/commits/b2ba00f4be27687873d9a722a805a69ff6949d3c",
+        "author": {
+          "login": "mehcode",
+          "id": 753919,
+          "node_id": "MDQ6VXNlcjc1MzkxOQ==",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/mehcode",
+          "type": "User",
+          "site_admin": false
+        },
+        "committer": {
+          "login": "mehcode",
+          "id": 753919,
+          "node_id": "MDQ6VXNlcjc1MzkxOQ==",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/mehcode",
+          "type": "User",
+          "site_admin": false
+        },
+        "parents": [
+          {
+            "sha": "9b956c0d2cd5c2ad8fd7f8d951e109d8b770069e",
+            "url": "https://api.github.com/repos/discord/sqlx/commits/9b956c0d2cd5c2ad8fd7f8d951e109d8b770069e"
+          }
+        ]
+      },
+      {
+        "sha": "9b956c0d2cd5c2ad8fd7f8d951e109d8b770069e",
+        "node_id": "MDY6Q29tbWl0Mjc2Njk4MzU3OjliOTU2YzBkMmNkNWMyYWQ4ZmQ3ZjhkOTUxZTEwOWQ4Yjc3MDA2OWU=",
+        "commit": {
+          "author": {
+            "name": "Ryan Leckey",
+            "email": "ryan@launchbadge.com",
+            "date": "2020-07-15T09:16:08Z"
+          },
+          "committer": {
+            "name": "Ryan Leckey",
+            "email": "ryan@launchbadge.com",
+            "date": "2020-07-15T09:16:08Z"
+          },
+          "message": "fix(postgres): support the VOID type, as ()",
+          "tree": {
+            "sha": "6cfb407be00bcd01607d14114d8d9f11f3bf5e02",
+            "url": "https://api.github.com/repos/discord/sqlx/git/trees/6cfb407be00bcd01607d14114d8d9f11f3bf5e02"
+          },
+          "url": "https://api.github.com/repos/discord/sqlx/git/commits/9b956c0d2cd5c2ad8fd7f8d951e109d8b770069e",
+          "comment_count": 0,
+          "verification": {
+            "verified": false,
+            "reason": "unsigned",
+            "signature": null,
+            "payload": null
+          }
+        },
+        "url": "https://api.github.com/repos/discord/sqlx/commits/9b956c0d2cd5c2ad8fd7f8d951e109d8b770069e",
+        "author": {
+          "login": "mehcode",
+          "id": 753919,
+          "node_id": "MDQ6VXNlcjc1MzkxOQ==",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/mehcode",
+          "type": "User",
+          "site_admin": false
+        },
+        "committer": {
+          "login": "mehcode",
+          "id": 753919,
+          "node_id": "MDQ6VXNlcjc1MzkxOQ==",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/mehcode",
+          "type": "User",
+          "site_admin": false
+        },
+        "parents": [
+          {
+            "sha": "3884bf272dc0b944218fbfa7e6f779d3e2817e9d",
+            "url": "https://api.github.com/repos/discord/sqlx/commits/3884bf272dc0b944218fbfa7e6f779d3e2817e9d"
+          }
+        ]
+      },
+      {
+        "sha": "3884bf272dc0b944218fbfa7e6f779d3e2817e9d",
+        "node_id": "MDY6Q29tbWl0Mjc2Njk4MzU3OjM4ODRiZjI3MmRjMGI5NDQyMThmYmZhN2U2Zjc3OWQzZTI4MTdlOWQ=",
+        "commit": {
+          "author": {
+            "name": "Ryan Leckey",
+            "email": "ryan@launchbadge.com",
+            "date": "2020-07-15T09:05:13Z"
+          },
+          "committer": {
+            "name": "Ryan Leckey",
+            "email": "ryan@launchbadge.com",
+            "date": "2020-07-15T09:05:13Z"
+          },
+          "message": "refactor: expose Encode/Decode from crate root",
+          "tree": {
+            "sha": "6f46805238f4deea4acadd6f60f77264b1ff3baa",
+            "url": "https://api.github.com/repos/discord/sqlx/git/trees/6f46805238f4deea4acadd6f60f77264b1ff3baa"
+          },
+          "url": "https://api.github.com/repos/discord/sqlx/git/commits/3884bf272dc0b944218fbfa7e6f779d3e2817e9d",
+          "comment_count": 0,
+          "verification": {
+            "verified": false,
+            "reason": "unsigned",
+            "signature": null,
+            "payload": null
+          }
+        },
+        "url": "https://api.github.com/repos/discord/sqlx/commits/3884bf272dc0b944218fbfa7e6f779d3e2817e9d",
+        "author": {
+          "login": "mehcode",
+          "id": 753919,
+          "node_id": "MDQ6VXNlcjc1MzkxOQ==",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/mehcode",
+          "type": "User",
+          "site_admin": false
+        },
+        "committer": {
+          "login": "mehcode",
+          "id": 753919,
+          "node_id": "MDQ6VXNlcjc1MzkxOQ==",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/mehcode",
+          "type": "User",
+          "site_admin": false
+        },
+        "parents": [
+          {
+            "sha": "25b8fc7c04134f09ce4f68cf3c39e2ce9bd97705",
+            "url": "https://api.github.com/repos/discord/sqlx/commits/25b8fc7c04134f09ce4f68cf3c39e2ce9bd97705"
+          }
+        ]
+      }
+    ],
+    "releases": [],
+    "issues": [],
+    "pullRequests": []
+  }
+}

@@ -1,0 +1,507 @@
+{
+  "id": 406953861,
+  "node_id": "MDEwOlJlcG9zaXRvcnk0MDY5NTM4NjE=",
+  "name": "TextAttack",
+  "full_name": "discord/TextAttack",
+  "private": false,
+  "owner": {
+    "login": "discord",
+    "id": 1965106,
+    "node_id": "MDEyOk9yZ2FuaXphdGlvbjE5NjUxMDY=",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/discord",
+    "type": "Organization",
+    "site_admin": false
+  },
+  "description": "TextAttack 🐙  is a Python framework for adversarial attacks, data augmentation, and model training in NLP https://textattack.readthedocs.io/en/latest/",
+  "fork": true,
+  "url": "https://api.github.com/repos/discord/TextAttack",
+  "created_at": "2021-09-15T23:36:50Z",
+  "updated_at": "2022-08-31T23:04:00Z",
+  "pushed_at": "2021-11-23T11:10:16Z",
+  "homepage": "https://textattack.readthedocs.io/en/latest/",
+  "size": 25771,
+  "stargazers_count": 12,
+  "watchers_count": 12,
+  "language": "Python",
+  "has_issues": false,
+  "has_projects": true,
+  "has_downloads": true,
+  "has_wiki": true,
+  "has_pages": false,
+  "has_discussions": false,
+  "forks_count": 6,
+  "archived": false,
+  "disabled": false,
+  "open_issues_count": 0,
+  "license": {
+    "key": "mit",
+    "name": "MIT License",
+    "spdx_id": "MIT",
+    "url": "https://api.github.com/licenses/mit",
+    "node_id": "MDc6TGljZW5zZTEz"
+  },
+  "allow_forking": true,
+  "is_template": false,
+  "web_commit_signoff_required": false,
+  "topics": [],
+  "visibility": "public",
+  "forks": 6,
+  "open_issues": 0,
+  "watchers": 12,
+  "default_branch": "master",
+  "permissions": {
+    "admin": false,
+    "maintain": false,
+    "push": false,
+    "triage": false,
+    "pull": false
+  },
+  "branches": [],
+  "last5": {
+    "commits": [
+      {
+        "sha": "3bf4907591467e465331d91330bb7ce84f323313",
+        "node_id": "C_kwDOGEGfhdoAKDNiZjQ5MDc1OTE0NjdlNDY1MzMxZDkxMzMwYmI3Y2U4NGYzMjMzMTM",
+        "commit": {
+          "author": {
+            "name": "shahin",
+            "email": "shahin@users.noreply.github.com",
+            "date": "2021-11-15T23:31:10Z"
+          },
+          "committer": {
+            "name": "GitHub",
+            "email": "noreply@github.com",
+            "date": "2021-11-15T23:31:10Z"
+          },
+          "message": "Merge pull request #4 from discord/quiet-output-2\n\nStop mistakenly logging errors to gcloud logging",
+          "tree": {
+            "sha": "b5ddd298348fc9d2b68a10556189df226c930f9b",
+            "url": "https://api.github.com/repos/discord/TextAttack/git/trees/b5ddd298348fc9d2b68a10556189df226c930f9b"
+          },
+          "url": "https://api.github.com/repos/discord/TextAttack/git/commits/3bf4907591467e465331d91330bb7ce84f323313",
+          "comment_count": 0,
+          "verification": {
+            "verified": true,
+            "reason": "valid",
+            "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsBcBAABCAAQBQJhku2+CRBK7hj4Ov3rIwAA2TAIAE9w/1EhBt8rtIQoP6feFGFd\n8sPODGZuOs/Z6buRmxtfAaoL33sO63MOY3PpVOGqw/TW70Cb/Gk7MyE+TzKqIsuA\nvFC9wp66+yLS9nbPhrzmJmGUDr7TbiOCaJIRxRZ7tWKUGvHJniREi/KiluMPYpkE\n86hKOmlAl7iTDlRq5z7o5X9IdYoTqQ8XvWe52JjrlMlSK+WvUfNZT7MMXWTPsrAl\nisJ8ImqOcjeiEC/IGn0AsU5S2269L4zOytcw6VesYVzKc0jzxTtMxuul+oJFAhLw\nz/9f9ZiJCRun2l07Gwq1TAKHWLhiBd0JggMENGm05+Iq05ZnSD1QzriI2hzWvTI=\n=5Ktw\n-----END PGP SIGNATURE-----\n",
+            "payload": "tree b5ddd298348fc9d2b68a10556189df226c930f9b\nparent 65889e7a4c7fe5cb2a460bdffa5e4527432abe65\nparent e6b0a43ae7a4a18f82caf5037eef195f7ea04d0e\nauthor shahin <shahin@users.noreply.github.com> 1637019070 -0500\ncommitter GitHub <noreply@github.com> 1637019070 -0500\n\nMerge pull request #4 from discord/quiet-output-2\n\nStop mistakenly logging errors to gcloud logging"
+          }
+        },
+        "url": "https://api.github.com/repos/discord/TextAttack/commits/3bf4907591467e465331d91330bb7ce84f323313",
+        "author": {
+          "login": "shahin",
+          "id": 20877,
+          "node_id": "MDQ6VXNlcjIwODc3",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/shahin",
+          "type": "User",
+          "site_admin": false
+        },
+        "committer": {
+          "login": "web-flow",
+          "id": 19864447,
+          "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/web-flow",
+          "type": "User",
+          "site_admin": false
+        },
+        "parents": [
+          {
+            "sha": "65889e7a4c7fe5cb2a460bdffa5e4527432abe65",
+            "url": "https://api.github.com/repos/discord/TextAttack/commits/65889e7a4c7fe5cb2a460bdffa5e4527432abe65"
+          },
+          {
+            "sha": "e6b0a43ae7a4a18f82caf5037eef195f7ea04d0e",
+            "url": "https://api.github.com/repos/discord/TextAttack/commits/e6b0a43ae7a4a18f82caf5037eef195f7ea04d0e"
+          }
+        ]
+      },
+      {
+        "sha": "e6b0a43ae7a4a18f82caf5037eef195f7ea04d0e",
+        "node_id": "C_kwDOGEGfhdoAKGU2YjBhNDNhZTdhNGExOGY4MmNhZjUwMzdlZWYxOTVmN2VhMDRkMGU",
+        "commit": {
+          "author": {
+            "name": "Shahin Saneinejad",
+            "email": "shahin.saneinejad@discordapp.com",
+            "date": "2021-11-15T23:19:13Z"
+          },
+          "committer": {
+            "name": "Shahin Saneinejad",
+            "email": "shahin.saneinejad@discordapp.com",
+            "date": "2021-11-15T23:19:13Z"
+          },
+          "message": "Fix hard-configured logger that forces bad formats into our logs",
+          "tree": {
+            "sha": "b5ddd298348fc9d2b68a10556189df226c930f9b",
+            "url": "https://api.github.com/repos/discord/TextAttack/git/trees/b5ddd298348fc9d2b68a10556189df226c930f9b"
+          },
+          "url": "https://api.github.com/repos/discord/TextAttack/git/commits/e6b0a43ae7a4a18f82caf5037eef195f7ea04d0e",
+          "comment_count": 0,
+          "verification": {
+            "verified": false,
+            "reason": "unsigned",
+            "signature": null,
+            "payload": null
+          }
+        },
+        "url": "https://api.github.com/repos/discord/TextAttack/commits/e6b0a43ae7a4a18f82caf5037eef195f7ea04d0e",
+        "author": null,
+        "committer": null,
+        "parents": [
+          {
+            "sha": "c5fa619b464501e3ad9eb0953667e8028a35e79b",
+            "url": "https://api.github.com/repos/discord/TextAttack/commits/c5fa619b464501e3ad9eb0953667e8028a35e79b"
+          }
+        ]
+      },
+      {
+        "sha": "c5fa619b464501e3ad9eb0953667e8028a35e79b",
+        "node_id": "C_kwDOGEGfhdoAKGM1ZmE2MTliNDY0NTAxZTNhZDllYjA5NTM2NjdlODAyOGEzNWU3OWI",
+        "commit": {
+          "author": {
+            "name": "Shahin Saneinejad",
+            "email": "shahin.saneinejad@discordapp.com",
+            "date": "2021-11-15T18:15:48Z"
+          },
+          "committer": {
+            "name": "Shahin Saneinejad",
+            "email": "shahin.saneinejad@discordapp.com",
+            "date": "2021-11-15T18:15:48Z"
+          },
+          "message": "Stop mistakenly logging errors to gcloud logging",
+          "tree": {
+            "sha": "0cdc8216957c958b3f299c04cf51241432a2928c",
+            "url": "https://api.github.com/repos/discord/TextAttack/git/trees/0cdc8216957c958b3f299c04cf51241432a2928c"
+          },
+          "url": "https://api.github.com/repos/discord/TextAttack/git/commits/c5fa619b464501e3ad9eb0953667e8028a35e79b",
+          "comment_count": 0,
+          "verification": {
+            "verified": false,
+            "reason": "unsigned",
+            "signature": null,
+            "payload": null
+          }
+        },
+        "url": "https://api.github.com/repos/discord/TextAttack/commits/c5fa619b464501e3ad9eb0953667e8028a35e79b",
+        "author": null,
+        "committer": null,
+        "parents": [
+          {
+            "sha": "65889e7a4c7fe5cb2a460bdffa5e4527432abe65",
+            "url": "https://api.github.com/repos/discord/TextAttack/commits/65889e7a4c7fe5cb2a460bdffa5e4527432abe65"
+          }
+        ]
+      },
+      {
+        "sha": "65889e7a4c7fe5cb2a460bdffa5e4527432abe65",
+        "node_id": "MDY6Q29tbWl0NDA2OTUzODYxOjY1ODg5ZTdhNGM3ZmU1Y2IyYTQ2MGJkZmZhNWU0NTI3NDMyYWJlNjU=",
+        "commit": {
+          "author": {
+            "name": "Emma Peng",
+            "email": "emmabypeng@gmail.com",
+            "date": "2021-09-20T17:24:24Z"
+          },
+          "committer": {
+            "name": "GitHub",
+            "email": "noreply@github.com",
+            "date": "2021-09-20T17:24:24Z"
+          },
+          "message": "Merge pull request #2 from discord/fix-embedding-download\n\nAvoid downloading word embeddings at class init time",
+          "tree": {
+            "sha": "010b5566238aa23d51f1e626dc3749318ce36e6c",
+            "url": "https://api.github.com/repos/discord/TextAttack/git/trees/010b5566238aa23d51f1e626dc3749318ce36e6c"
+          },
+          "url": "https://api.github.com/repos/discord/TextAttack/git/commits/65889e7a4c7fe5cb2a460bdffa5e4527432abe65",
+          "comment_count": 0,
+          "verification": {
+            "verified": true,
+            "reason": "valid",
+            "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsBcBAABCAAQBQJhSMPICRBK7hj4Ov3rIwAAXAgIAG2g6Qd/xrHsLMEfBWdKNOln\n+bUvxozfUPql6+M43zPjNRhW2fZiLar2eXTGqWS2vND0oivxdjJ4VpACiVV7kFHv\nC1NpI4nuJ2ONmzeM2Re8y5YvEUgTwZ4i/HCkwmQxLrPIjePzUQ1ktsU/GS4glXwr\nVIOET9ScVxkgf5D5MR79uiD4eK8AsLzqCU5cbHfotOC5powCVo6a8cruJikFJCoo\nY8JyvPPY8Hm5GRrKaeJ8+mT4MN/vJf0S6OQG0rhOPtA1pR9F3iSge0KjB5DVeQfj\n8H0y7zZFXqSjxQieiRsLgh3BM/uweT4ibw1+9X3i3MPWykhTEaL4/oFGBNtpIQQ=\n=H3QN\n-----END PGP SIGNATURE-----\n",
+            "payload": "tree 010b5566238aa23d51f1e626dc3749318ce36e6c\nparent 401e0f6a899d24d316bbc3d3bbc2ac0f5c675863\nparent 1521fd1e38fb227c35e399cfa28ced6bc46ab113\nauthor Emma Peng <emmabypeng@gmail.com> 1632158664 -0700\ncommitter GitHub <noreply@github.com> 1632158664 -0700\n\nMerge pull request #2 from discord/fix-embedding-download\n\nAvoid downloading word embeddings at class init time"
+          }
+        },
+        "url": "https://api.github.com/repos/discord/TextAttack/commits/65889e7a4c7fe5cb2a460bdffa5e4527432abe65",
+        "author": {
+          "login": "EmmaBYPeng",
+          "id": 7233743,
+          "node_id": "MDQ6VXNlcjcyMzM3NDM=",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/EmmaBYPeng",
+          "type": "User",
+          "site_admin": false
+        },
+        "committer": {
+          "login": "web-flow",
+          "id": 19864447,
+          "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/web-flow",
+          "type": "User",
+          "site_admin": false
+        },
+        "parents": [
+          {
+            "sha": "401e0f6a899d24d316bbc3d3bbc2ac0f5c675863",
+            "url": "https://api.github.com/repos/discord/TextAttack/commits/401e0f6a899d24d316bbc3d3bbc2ac0f5c675863"
+          },
+          {
+            "sha": "1521fd1e38fb227c35e399cfa28ced6bc46ab113",
+            "url": "https://api.github.com/repos/discord/TextAttack/commits/1521fd1e38fb227c35e399cfa28ced6bc46ab113"
+          }
+        ]
+      },
+      {
+        "sha": "1521fd1e38fb227c35e399cfa28ced6bc46ab113",
+        "node_id": "MDY6Q29tbWl0NDA2OTUzODYxOjE1MjFmZDFlMzhmYjIyN2MzNWUzOTljZmEyOGNlZDZiYzQ2YWIxMTM=",
+        "commit": {
+          "author": {
+            "name": "EmmaBYPeng",
+            "email": "boya.peng@discordapp.com",
+            "date": "2021-09-17T22:51:59Z"
+          },
+          "committer": {
+            "name": "EmmaBYPeng",
+            "email": "boya.peng@discordapp.com",
+            "date": "2021-09-17T22:51:59Z"
+          },
+          "message": "more embedding stuff",
+          "tree": {
+            "sha": "010b5566238aa23d51f1e626dc3749318ce36e6c",
+            "url": "https://api.github.com/repos/discord/TextAttack/git/trees/010b5566238aa23d51f1e626dc3749318ce36e6c"
+          },
+          "url": "https://api.github.com/repos/discord/TextAttack/git/commits/1521fd1e38fb227c35e399cfa28ced6bc46ab113",
+          "comment_count": 0,
+          "verification": {
+            "verified": false,
+            "reason": "unsigned",
+            "signature": null,
+            "payload": null
+          }
+        },
+        "url": "https://api.github.com/repos/discord/TextAttack/commits/1521fd1e38fb227c35e399cfa28ced6bc46ab113",
+        "author": {
+          "login": "EmmaBYPeng",
+          "id": 7233743,
+          "node_id": "MDQ6VXNlcjcyMzM3NDM=",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/EmmaBYPeng",
+          "type": "User",
+          "site_admin": false
+        },
+        "committer": {
+          "login": "EmmaBYPeng",
+          "id": 7233743,
+          "node_id": "MDQ6VXNlcjcyMzM3NDM=",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/EmmaBYPeng",
+          "type": "User",
+          "site_admin": false
+        },
+        "parents": [
+          {
+            "sha": "fc61d8771b7e68d8fc93577c19387d8e73ee05c6",
+            "url": "https://api.github.com/repos/discord/TextAttack/commits/fc61d8771b7e68d8fc93577c19387d8e73ee05c6"
+          }
+        ]
+      }
+    ],
+    "releases": [],
+    "issues": [
+      {
+        "url": "https://api.github.com/repos/discord/TextAttack/issues/4",
+        "id": 1054014300,
+        "node_id": "PR_kwDOGEGfhc4ujO0n",
+        "number": 4,
+        "title": "Stop mistakenly logging errors to gcloud logging",
+        "user": {
+          "login": "shahin",
+          "id": 20877,
+          "node_id": "MDQ6VXNlcjIwODc3",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/shahin",
+          "type": "User",
+          "site_admin": false
+        },
+        "labels": [],
+        "state": "closed",
+        "locked": false,
+        "assignee": null,
+        "assignees": [],
+        "milestone": null,
+        "comments": 0,
+        "created_at": "2021-11-15T19:16:00Z",
+        "updated_at": "2021-11-15T23:31:11Z",
+        "closed_at": "2021-11-15T23:31:10Z",
+        "author_association": "NONE",
+        "active_lock_reason": null,
+        "draft": false,
+        "pull_request": {
+          "url": "https://api.github.com/repos/discord/TextAttack/pulls/4",
+          "merged_at": "2021-11-15T23:31:10Z"
+        },
+        "body": "discord_ai_nlp tasks that import textattack generate the following plain text to stderr:\r\n\r\n```\r\ntextattack: Updating TextAttack package dependencies.\r\ntextattack: Downloading NLTK required packages.\r\n[nltk_data] Downloading package averaged_perceptron_tagger to\r\n[nltk_data]     /home/user/nltk_data...\r\n[nltk_data]   Unzipping taggers/averaged_perceptron_tagger.zip.\r\n[nltk_data] Downloading package stopwords to /home/user/nltk_data...\r\n[nltk_data]   Package stopwords is already up-to-date!\r\n[nltk_data] Downloading package omw to /home/user/nltk_data...\r\n[nltk_data]   Unzipping corpora/omw.zip.\r\n[nltk_data] Downloading package universal_tagset to\r\n[nltk_data]     /home/user/nltk_data...\r\n[nltk_data]   Unzipping taggers/universal_tagset.zip.\r\n[nltk_data] Downloading package wordnet to /home/user/nltk_data...\r\n[nltk_data]   Unzipping corpora/wordnet.zip.\r\n[nltk_data] Downloading package punkt to /home/user/nltk_data...\r\n[nltk_data]   Unzipping tokenizers/punkt.zip.\r\n```\r\nFor example https://console.cloud.google.com/logs/query;query=resource.type%3D%22k8s_container%22%0Aresource.labels.namespace_name%3D%22argo-20210730%22%0Aresource.labels.container_name%3D%22main%22%0Aresource.labels.pod_name%3D%2220211113-025334-3949014604%22%0Aseverity%3DERROR;timeRange=2021-11-13T02:59:34Z%2F2021-11-13T03:23:50Z;cursorTimestamp=2021-11-13T03:01:35.831378316Z?project=discord-data-stg\r\n\r\nThese lines are tagged as severity: ERROR by gcloud logging by default because they don't contain a parse-able severity indicator, and they cause all such workflow tasks to be flagged as erroneous even when they run fine. This makes it hard to determine if there were really errors in a given workflow.\r\n\r\n- [x] make nltk downloads silent\r\n- [x] stop textattack from forcing its own configuration to override the logs config of anybody who imports a textattack module\r\n\r\nFix false positive errors by stopping textattack and nltk from printing this to stderr.",
+        "reactions": {
+          "url": "https://api.github.com/repos/discord/TextAttack/issues/4/reactions",
+          "total_count": 0,
+          "+1": 0,
+          "-1": 0,
+          "laugh": 0,
+          "hooray": 0,
+          "confused": 0,
+          "heart": 0,
+          "rocket": 0,
+          "eyes": 0
+        },
+        "performed_via_github_app": null,
+        "state_reason": null
+      },
+      {
+        "url": "https://api.github.com/repos/discord/TextAttack/issues/3",
+        "id": 1053989452,
+        "node_id": "PR_kwDOGEGfhc4ujJu3",
+        "number": 3,
+        "title": "WIP: Stop mistakenly logging errors to gcloud logging",
+        "user": {
+          "login": "shahin",
+          "id": 20877,
+          "node_id": "MDQ6VXNlcjIwODc3",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/shahin",
+          "type": "User",
+          "site_admin": false
+        },
+        "labels": [],
+        "state": "closed",
+        "locked": false,
+        "assignee": null,
+        "assignees": [],
+        "milestone": null,
+        "comments": 0,
+        "created_at": "2021-11-15T18:45:22Z",
+        "updated_at": "2021-11-15T19:13:41Z",
+        "closed_at": "2021-11-15T19:13:41Z",
+        "author_association": "NONE",
+        "active_lock_reason": null,
+        "draft": false,
+        "pull_request": {
+          "url": "https://api.github.com/repos/discord/TextAttack/pulls/3",
+          "merged_at": null
+        },
+        "body": "discord_ai_nlp tasks that import textattack generate the following plain text to stderr:\r\n\r\n```\r\ntextattack: Updating TextAttack package dependencies.\r\ntextattack: Downloading NLTK required packages.\r\n[nltk_data] Downloading package averaged_perceptron_tagger to\r\n[nltk_data]     /home/user/nltk_data...\r\n[nltk_data]   Unzipping taggers/averaged_perceptron_tagger.zip.\r\n[nltk_data] Downloading package stopwords to /home/user/nltk_data...\r\n[nltk_data]   Package stopwords is already up-to-date!\r\n[nltk_data] Downloading package omw to /home/user/nltk_data...\r\n[nltk_data]   Unzipping corpora/omw.zip.\r\n[nltk_data] Downloading package universal_tagset to\r\n[nltk_data]     /home/user/nltk_data...\r\n[nltk_data]   Unzipping taggers/universal_tagset.zip.\r\n[nltk_data] Downloading package wordnet to /home/user/nltk_data...\r\n[nltk_data]   Unzipping corpora/wordnet.zip.\r\n[nltk_data] Downloading package punkt to /home/user/nltk_data...\r\n[nltk_data]   Unzipping tokenizers/punkt.zip.\r\n```\r\nFor example https://console.cloud.google.com/logs/query;query=resource.type%3D%22k8s_container%22%0Aresource.labels.namespace_name%3D%22argo-20210730%22%0Aresource.labels.container_name%3D%22main%22%0Aresource.labels.pod_name%3D%2220211113-025334-3949014604%22%0Aseverity%3DERROR;timeRange=2021-11-13T02:59:34Z%2F2021-11-13T03:23:50Z;cursorTimestamp=2021-11-13T03:01:35.831378316Z?project=discord-data-stg\r\n\r\nThese lines are tagged as severity: ERROR by gcloud logging by default because they don't contain a parse-able severity indicator, and they cause all such workflow tasks to be flagged as erroneous even when they run fine. This makes it hard to determine if there were really errors in a given workflow.\r\n\r\nFix false positive errors by stopping textattack and nltk from printing this to stderr.",
+        "reactions": {
+          "url": "https://api.github.com/repos/discord/TextAttack/issues/3/reactions",
+          "total_count": 0,
+          "+1": 0,
+          "-1": 0,
+          "laugh": 0,
+          "hooray": 0,
+          "confused": 0,
+          "heart": 0,
+          "rocket": 0,
+          "eyes": 0
+        },
+        "performed_via_github_app": null,
+        "state_reason": null
+      },
+      {
+        "url": "https://api.github.com/repos/discord/TextAttack/issues/2",
+        "id": 999749876,
+        "node_id": "PR_kwDOGEGfhc4r6R-z",
+        "number": 2,
+        "title": "Avoid downloading word embeddings at class init time",
+        "user": {
+          "login": "EmmaBYPeng",
+          "id": 7233743,
+          "node_id": "MDQ6VXNlcjcyMzM3NDM=",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/EmmaBYPeng",
+          "type": "User",
+          "site_admin": false
+        },
+        "labels": [],
+        "state": "closed",
+        "locked": false,
+        "assignee": null,
+        "assignees": [],
+        "milestone": null,
+        "comments": 0,
+        "created_at": "2021-09-17T22:00:51Z",
+        "updated_at": "2021-09-20T17:24:24Z",
+        "closed_at": "2021-09-20T17:24:24Z",
+        "author_association": "COLLABORATOR",
+        "active_lock_reason": null,
+        "draft": false,
+        "pull_request": {
+          "url": "https://api.github.com/repos/discord/TextAttack/pulls/2",
+          "merged_at": "2021-09-20T17:24:24Z"
+        },
+        "body": "The previous behavior (i.e. downloading embeddings at init time) causes pods to OOM with our current memory config",
+        "reactions": {
+          "url": "https://api.github.com/repos/discord/TextAttack/issues/2/reactions",
+          "total_count": 0,
+          "+1": 0,
+          "-1": 0,
+          "laugh": 0,
+          "hooray": 0,
+          "confused": 0,
+          "heart": 0,
+          "rocket": 0,
+          "eyes": 0
+        },
+        "performed_via_github_app": null,
+        "state_reason": null
+      },
+      {
+        "url": "https://api.github.com/repos/discord/TextAttack/issues/1",
+        "id": 997611141,
+        "node_id": "PR_kwDOGEGfhc4rzyoi",
+        "number": 1,
+        "title": "Fix package versions",
+        "user": {
+          "login": "EmmaBYPeng",
+          "id": 7233743,
+          "node_id": "MDQ6VXNlcjcyMzM3NDM=",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/EmmaBYPeng",
+          "type": "User",
+          "site_admin": false
+        },
+        "labels": [],
+        "state": "closed",
+        "locked": false,
+        "assignee": null,
+        "assignees": [],
+        "milestone": null,
+        "comments": 0,
+        "created_at": "2021-09-15T23:47:47Z",
+        "updated_at": "2021-09-16T20:10:44Z",
+        "closed_at": "2021-09-16T20:10:44Z",
+        "author_association": "COLLABORATOR",
+        "active_lock_reason": null,
+        "draft": false,
+        "pull_request": {
+          "url": "https://api.github.com/repos/discord/TextAttack/pulls/1",
+          "merged_at": "2021-09-16T20:10:44Z"
+        },
+        "body": "Fix package versions so that `textattack` can be `pip-compile`'d\r\n\r\nPR that depends on this: https://github.com/discord/discord/pull/50859",
+        "reactions": {
+          "url": "https://api.github.com/repos/discord/TextAttack/issues/1/reactions",
+          "total_count": 0,
+          "+1": 0,
+          "-1": 0,
+          "laugh": 0,
+          "hooray": 0,
+          "confused": 0,
+          "heart": 0,
+          "rocket": 0,
+          "eyes": 0
+        },
+        "performed_via_github_app": null,
+        "state_reason": null
+      }
+    ],
+    "pullRequests": []
+  }
+}

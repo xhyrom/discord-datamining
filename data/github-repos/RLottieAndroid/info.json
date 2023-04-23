@@ -1,0 +1,338 @@
+{
+  "id": 412142887,
+  "node_id": "R_kgDOGJDNJw",
+  "name": "RLottieAndroid",
+  "full_name": "discord/RLottieAndroid",
+  "private": false,
+  "owner": {
+    "login": "discord",
+    "id": 1965106,
+    "node_id": "MDEyOk9yZ2FuaXphdGlvbjE5NjUxMDY=",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/discord",
+    "type": "Organization",
+    "site_admin": false
+  },
+  "description": null,
+  "fork": false,
+  "url": "https://api.github.com/repos/discord/RLottieAndroid",
+  "created_at": "2021-09-30T16:37:02Z",
+  "updated_at": "2023-01-10T20:01:09Z",
+  "pushed_at": "2021-10-05T02:54:16Z",
+  "homepage": null,
+  "size": 713,
+  "stargazers_count": 5,
+  "watchers_count": 5,
+  "language": "C++",
+  "has_issues": true,
+  "has_projects": true,
+  "has_downloads": true,
+  "has_wiki": true,
+  "has_pages": false,
+  "has_discussions": false,
+  "forks_count": 4,
+  "archived": false,
+  "disabled": false,
+  "open_issues_count": 0,
+  "license": {
+    "key": "apache-2.0",
+    "name": "Apache License 2.0",
+    "spdx_id": "Apache-2.0",
+    "url": "https://api.github.com/licenses/apache-2.0",
+    "node_id": "MDc6TGljZW5zZTI="
+  },
+  "allow_forking": true,
+  "is_template": false,
+  "web_commit_signoff_required": false,
+  "topics": [],
+  "visibility": "public",
+  "forks": 4,
+  "open_issues": 0,
+  "watchers": 5,
+  "default_branch": "main",
+  "permissions": {
+    "admin": false,
+    "maintain": false,
+    "push": false,
+    "triage": false,
+    "pull": false
+  },
+  "branches": [],
+  "last5": {
+    "commits": [
+      {
+        "sha": "811ba50dafaea2c49e08993e66222789971cfbce",
+        "node_id": "C_kwDOGJDNJ9oAKDgxMWJhNTBkYWZhZWEyYzQ5ZTA4OTkzZTY2MjIyNzg5OTcxY2ZiY2U",
+        "commit": {
+          "author": {
+            "name": "mrkcsc",
+            "email": "miguel@miguelgaeta.com",
+            "date": "2021-10-05T02:54:11Z"
+          },
+          "committer": {
+            "name": "mrkcsc",
+            "email": "miguel@miguelgaeta.com",
+            "date": "2021-10-05T02:54:11Z"
+          },
+          "message": "Revert \"Don't include sample project.\"\n\nThis reverts commit bb56b842a80d40d5a7f22eb90b8d9ef3fb12afd5.",
+          "tree": {
+            "sha": "db8f7ed3abd14eb0df71129817fc44d0e562fc9d",
+            "url": "https://api.github.com/repos/discord/RLottieAndroid/git/trees/db8f7ed3abd14eb0df71129817fc44d0e562fc9d"
+          },
+          "url": "https://api.github.com/repos/discord/RLottieAndroid/git/commits/811ba50dafaea2c49e08993e66222789971cfbce",
+          "comment_count": 0,
+          "verification": {
+            "verified": false,
+            "reason": "unsigned",
+            "signature": null,
+            "payload": null
+          }
+        },
+        "url": "https://api.github.com/repos/discord/RLottieAndroid/commits/811ba50dafaea2c49e08993e66222789971cfbce",
+        "author": {
+          "login": "mrkcsc",
+          "id": 658964,
+          "node_id": "MDQ6VXNlcjY1ODk2NA==",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/mrkcsc",
+          "type": "User",
+          "site_admin": false
+        },
+        "committer": {
+          "login": "mrkcsc",
+          "id": 658964,
+          "node_id": "MDQ6VXNlcjY1ODk2NA==",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/mrkcsc",
+          "type": "User",
+          "site_admin": false
+        },
+        "parents": [
+          {
+            "sha": "bb56b842a80d40d5a7f22eb90b8d9ef3fb12afd5",
+            "url": "https://api.github.com/repos/discord/RLottieAndroid/commits/bb56b842a80d40d5a7f22eb90b8d9ef3fb12afd5"
+          }
+        ]
+      },
+      {
+        "sha": "bb56b842a80d40d5a7f22eb90b8d9ef3fb12afd5",
+        "node_id": "C_kwDOGJDNJ9oAKGJiNTZiODQyYTgwZDQwZDVhN2YyMmViOTBiOGQ5ZWYzZmIxMmFmZDU",
+        "commit": {
+          "author": {
+            "name": "mrkcsc",
+            "email": "miguel@miguelgaeta.com",
+            "date": "2021-10-05T02:38:51Z"
+          },
+          "committer": {
+            "name": "mrkcsc",
+            "email": "miguel@miguelgaeta.com",
+            "date": "2021-10-05T02:38:51Z"
+          },
+          "message": "Don't include sample project.",
+          "tree": {
+            "sha": "0c62fc22a6b043b5cc3c47c99de3d27774ab7b50",
+            "url": "https://api.github.com/repos/discord/RLottieAndroid/git/trees/0c62fc22a6b043b5cc3c47c99de3d27774ab7b50"
+          },
+          "url": "https://api.github.com/repos/discord/RLottieAndroid/git/commits/bb56b842a80d40d5a7f22eb90b8d9ef3fb12afd5",
+          "comment_count": 0,
+          "verification": {
+            "verified": false,
+            "reason": "unsigned",
+            "signature": null,
+            "payload": null
+          }
+        },
+        "url": "https://api.github.com/repos/discord/RLottieAndroid/commits/bb56b842a80d40d5a7f22eb90b8d9ef3fb12afd5",
+        "author": {
+          "login": "mrkcsc",
+          "id": 658964,
+          "node_id": "MDQ6VXNlcjY1ODk2NA==",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/mrkcsc",
+          "type": "User",
+          "site_admin": false
+        },
+        "committer": {
+          "login": "mrkcsc",
+          "id": 658964,
+          "node_id": "MDQ6VXNlcjY1ODk2NA==",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/mrkcsc",
+          "type": "User",
+          "site_admin": false
+        },
+        "parents": [
+          {
+            "sha": "cecd3f72f8fa4ecea9d05daca32dc0580bb28cd4",
+            "url": "https://api.github.com/repos/discord/RLottieAndroid/commits/cecd3f72f8fa4ecea9d05daca32dc0580bb28cd4"
+          }
+        ]
+      },
+      {
+        "sha": "cecd3f72f8fa4ecea9d05daca32dc0580bb28cd4",
+        "node_id": "C_kwDOGJDNJ9oAKGNlY2QzZjcyZjhmYTRlY2VhOWQwNWRhY2EzMmRjMDU4MGJiMjhjZDQ",
+        "commit": {
+          "author": {
+            "name": "Jeff Cailteux",
+            "email": "jeff@discordapp.com",
+            "date": "2021-10-04T22:27:44Z"
+          },
+          "committer": {
+            "name": "Jeff Cailteux",
+            "email": "jeff@discordapp.com",
+            "date": "2021-10-04T22:27:44Z"
+          },
+          "message": "update",
+          "tree": {
+            "sha": "db8f7ed3abd14eb0df71129817fc44d0e562fc9d",
+            "url": "https://api.github.com/repos/discord/RLottieAndroid/git/trees/db8f7ed3abd14eb0df71129817fc44d0e562fc9d"
+          },
+          "url": "https://api.github.com/repos/discord/RLottieAndroid/git/commits/cecd3f72f8fa4ecea9d05daca32dc0580bb28cd4",
+          "comment_count": 0,
+          "verification": {
+            "verified": false,
+            "reason": "unsigned",
+            "signature": null,
+            "payload": null
+          }
+        },
+        "url": "https://api.github.com/repos/discord/RLottieAndroid/commits/cecd3f72f8fa4ecea9d05daca32dc0580bb28cd4",
+        "author": {
+          "login": "jkcailteux",
+          "id": 2236167,
+          "node_id": "MDQ6VXNlcjIyMzYxNjc=",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/jkcailteux",
+          "type": "User",
+          "site_admin": false
+        },
+        "committer": {
+          "login": "jkcailteux",
+          "id": 2236167,
+          "node_id": "MDQ6VXNlcjIyMzYxNjc=",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/jkcailteux",
+          "type": "User",
+          "site_admin": false
+        },
+        "parents": [
+          {
+            "sha": "8367038411c4d496804d03ae4c8f5ece2e86b334",
+            "url": "https://api.github.com/repos/discord/RLottieAndroid/commits/8367038411c4d496804d03ae4c8f5ece2e86b334"
+          }
+        ]
+      },
+      {
+        "sha": "8367038411c4d496804d03ae4c8f5ece2e86b334",
+        "node_id": "C_kwDOGJDNJ9oAKDgzNjcwMzg0MTFjNGQ0OTY4MDRkMDNhZTRjOGY1ZWNlMmU4NmIzMzQ",
+        "commit": {
+          "author": {
+            "name": "Jeff Cailteux",
+            "email": "jeff@discordapp.com",
+            "date": "2021-10-01T22:16:53Z"
+          },
+          "committer": {
+            "name": "Jeff Cailteux",
+            "email": "jeff@discordapp.com",
+            "date": "2021-10-01T22:16:53Z"
+          },
+          "message": "init methods",
+          "tree": {
+            "sha": "58be9db9dc318b81201bc33900726d9134c79dc7",
+            "url": "https://api.github.com/repos/discord/RLottieAndroid/git/trees/58be9db9dc318b81201bc33900726d9134c79dc7"
+          },
+          "url": "https://api.github.com/repos/discord/RLottieAndroid/git/commits/8367038411c4d496804d03ae4c8f5ece2e86b334",
+          "comment_count": 0,
+          "verification": {
+            "verified": false,
+            "reason": "unsigned",
+            "signature": null,
+            "payload": null
+          }
+        },
+        "url": "https://api.github.com/repos/discord/RLottieAndroid/commits/8367038411c4d496804d03ae4c8f5ece2e86b334",
+        "author": {
+          "login": "jkcailteux",
+          "id": 2236167,
+          "node_id": "MDQ6VXNlcjIyMzYxNjc=",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/jkcailteux",
+          "type": "User",
+          "site_admin": false
+        },
+        "committer": {
+          "login": "jkcailteux",
+          "id": 2236167,
+          "node_id": "MDQ6VXNlcjIyMzYxNjc=",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/jkcailteux",
+          "type": "User",
+          "site_admin": false
+        },
+        "parents": [
+          {
+            "sha": "515b47b37dc047d4f0b00f2f157bbb4abfd183b4",
+            "url": "https://api.github.com/repos/discord/RLottieAndroid/commits/515b47b37dc047d4f0b00f2f157bbb4abfd183b4"
+          }
+        ]
+      },
+      {
+        "sha": "515b47b37dc047d4f0b00f2f157bbb4abfd183b4",
+        "node_id": "C_kwDOGJDNJ9oAKDUxNWI0N2IzN2RjMDQ3ZDRmMGIwMGYyZjE1N2JiYjRhYmZkMTgzYjQ",
+        "commit": {
+          "author": {
+            "name": "Jeff Cailteux",
+            "email": "jeff@discordapp.com",
+            "date": "2021-10-01T16:30:09Z"
+          },
+          "committer": {
+            "name": "Jeff Cailteux",
+            "email": "jeff@discordapp.com",
+            "date": "2021-10-01T16:30:09Z"
+          },
+          "message": "Allow classes to be extended",
+          "tree": {
+            "sha": "ea6351bf8c37e0d925b21461169fca1f6ab64b98",
+            "url": "https://api.github.com/repos/discord/RLottieAndroid/git/trees/ea6351bf8c37e0d925b21461169fca1f6ab64b98"
+          },
+          "url": "https://api.github.com/repos/discord/RLottieAndroid/git/commits/515b47b37dc047d4f0b00f2f157bbb4abfd183b4",
+          "comment_count": 0,
+          "verification": {
+            "verified": false,
+            "reason": "unsigned",
+            "signature": null,
+            "payload": null
+          }
+        },
+        "url": "https://api.github.com/repos/discord/RLottieAndroid/commits/515b47b37dc047d4f0b00f2f157bbb4abfd183b4",
+        "author": {
+          "login": "jkcailteux",
+          "id": 2236167,
+          "node_id": "MDQ6VXNlcjIyMzYxNjc=",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/jkcailteux",
+          "type": "User",
+          "site_admin": false
+        },
+        "committer": {
+          "login": "jkcailteux",
+          "id": 2236167,
+          "node_id": "MDQ6VXNlcjIyMzYxNjc=",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/jkcailteux",
+          "type": "User",
+          "site_admin": false
+        },
+        "parents": [
+          {
+            "sha": "f23e3aaad1776190e6aabc052f2b2c8c696bdcd0",
+            "url": "https://api.github.com/repos/discord/RLottieAndroid/commits/f23e3aaad1776190e6aabc052f2b2c8c696bdcd0"
+          }
+        ]
+      }
+    ],
+    "releases": [],
+    "issues": [],
+    "pullRequests": []
+  }
+}

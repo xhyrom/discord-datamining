@@ -1,0 +1,346 @@
+{
+  "id": 187679697,
+  "node_id": "MDEwOlJlcG9zaXRvcnkxODc2Nzk2OTc=",
+  "name": "rules_swift",
+  "full_name": "discord/rules_swift",
+  "private": false,
+  "owner": {
+    "login": "discord",
+    "id": 1965106,
+    "node_id": "MDEyOk9yZ2FuaXphdGlvbjE5NjUxMDY=",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/discord",
+    "type": "Organization",
+    "site_admin": false
+  },
+  "description": "Bazel rules to build Swift on Apple and Linux platforms",
+  "fork": true,
+  "url": "https://api.github.com/repos/discord/rules_swift",
+  "created_at": "2019-05-20T16:48:32Z",
+  "updated_at": "2021-04-28T21:28:50Z",
+  "pushed_at": "2019-05-20T20:27:21Z",
+  "homepage": "",
+  "size": 641,
+  "stargazers_count": 3,
+  "watchers_count": 3,
+  "language": "Python",
+  "has_issues": false,
+  "has_projects": true,
+  "has_downloads": true,
+  "has_wiki": false,
+  "has_pages": false,
+  "has_discussions": false,
+  "forks_count": 3,
+  "archived": false,
+  "disabled": false,
+  "open_issues_count": 0,
+  "license": {
+    "key": "apache-2.0",
+    "name": "Apache License 2.0",
+    "spdx_id": "Apache-2.0",
+    "url": "https://api.github.com/licenses/apache-2.0",
+    "node_id": "MDc6TGljZW5zZTI="
+  },
+  "allow_forking": true,
+  "is_template": false,
+  "web_commit_signoff_required": false,
+  "topics": [],
+  "visibility": "public",
+  "forks": 3,
+  "open_issues": 0,
+  "watchers": 3,
+  "default_branch": "master",
+  "permissions": {
+    "admin": false,
+    "maintain": false,
+    "push": false,
+    "triage": false,
+    "pull": false
+  },
+  "branches": [],
+  "last5": {
+    "commits": [
+      {
+        "sha": "f7c05b638f861f7a01c705c2c83e40c776543611",
+        "node_id": "MDY6Q29tbWl0MTg3Njc5Njk3OmY3YzA1YjYzOGY4NjFmN2EwMWM3MDVjMmM4M2U0MGM3NzY1NDM2MTE=",
+        "commit": {
+          "author": {
+            "name": "Swift/Apple Rules Gardener",
+            "email": "swiple-rules-gardener@google.com",
+            "date": "2019-05-20T17:30:16Z"
+          },
+          "committer": {
+            "name": "Swift/Apple Rules Gardener",
+            "email": "swiple-rules-gardener@google.com",
+            "date": "2019-05-20T17:30:16Z"
+          },
+          "message": "Merge pull request #235 from discordapp:swiftc_inputs_fix\n\nPiperOrigin-RevId: 249076109",
+          "tree": {
+            "sha": "01c5d8503113ea349211f59fcb2395fd9d3bc02d",
+            "url": "https://api.github.com/repos/discord/rules_swift/git/trees/01c5d8503113ea349211f59fcb2395fd9d3bc02d"
+          },
+          "url": "https://api.github.com/repos/discord/rules_swift/git/commits/f7c05b638f861f7a01c705c2c83e40c776543611",
+          "comment_count": 0,
+          "verification": {
+            "verified": false,
+            "reason": "unsigned",
+            "signature": null,
+            "payload": null
+          }
+        },
+        "url": "https://api.github.com/repos/discord/rules_swift/commits/f7c05b638f861f7a01c705c2c83e40c776543611",
+        "author": {
+          "login": "swiple-rules-gardener",
+          "id": 48771045,
+          "node_id": "MDQ6VXNlcjQ4NzcxMDQ1",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/swiple-rules-gardener",
+          "type": "User",
+          "site_admin": false
+        },
+        "committer": {
+          "login": "swiple-rules-gardener",
+          "id": 48771045,
+          "node_id": "MDQ6VXNlcjQ4NzcxMDQ1",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/swiple-rules-gardener",
+          "type": "User",
+          "site_admin": false
+        },
+        "parents": [
+          {
+            "sha": "8fbdee0c300867b935112232420aa095c1a178ae",
+            "url": "https://api.github.com/repos/discord/rules_swift/commits/8fbdee0c300867b935112232420aa095c1a178ae"
+          },
+          {
+            "sha": "53cf295e7d9f9c5fcd48bd4eb09ccfea07d5a2eb",
+            "url": "https://api.github.com/repos/discord/rules_swift/commits/53cf295e7d9f9c5fcd48bd4eb09ccfea07d5a2eb"
+          }
+        ]
+      },
+      {
+        "sha": "53cf295e7d9f9c5fcd48bd4eb09ccfea07d5a2eb",
+        "node_id": "MDY6Q29tbWl0MTg3Njc5Njk3OjUzY2YyOTVlN2Q5ZjljNWZjZDQ4YmQ0ZWIwOWNjZmVhMDdkNWEyZWI=",
+        "commit": {
+          "author": {
+            "name": "Danny Weinberg",
+            "email": "danny.weinberg@discordapp.com",
+            "date": "2019-05-20T16:57:36Z"
+          },
+          "committer": {
+            "name": "Danny Weinberg",
+            "email": "danny.weinberg@discordapp.com",
+            "date": "2019-05-20T16:57:36Z"
+          },
+          "message": "Fix copts and linkopts relying on input files\n\nIn https://github.com/discordapp/rules_swift/commit/32275ca0536eca5610a915f7b26cb841ca0031a3 when the additional_input local variable was introduced, this went from passing `ctx.attr.swiftc_inputs` to passing `ctx.files.swiftc_inputs` into `expand_locations`. This breaks, since the underlying `expand_location` only allows `Target` types, resulting in the following error when passing any file-like target to `swiftc_inputs`:\n\n```\nexpected type 'Target' for 'targets' element but got type 'File' instead\n```\n\nThis switches the two `expand_locations` calls back to using `ctx.attr.swiftc_inputs`.",
+          "tree": {
+            "sha": "01c5d8503113ea349211f59fcb2395fd9d3bc02d",
+            "url": "https://api.github.com/repos/discord/rules_swift/git/trees/01c5d8503113ea349211f59fcb2395fd9d3bc02d"
+          },
+          "url": "https://api.github.com/repos/discord/rules_swift/git/commits/53cf295e7d9f9c5fcd48bd4eb09ccfea07d5a2eb",
+          "comment_count": 0,
+          "verification": {
+            "verified": false,
+            "reason": "unsigned",
+            "signature": null,
+            "payload": null
+          }
+        },
+        "url": "https://api.github.com/repos/discord/rules_swift/commits/53cf295e7d9f9c5fcd48bd4eb09ccfea07d5a2eb",
+        "author": {
+          "login": "FuegoFro",
+          "id": 463696,
+          "node_id": "MDQ6VXNlcjQ2MzY5Ng==",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/FuegoFro",
+          "type": "User",
+          "site_admin": false
+        },
+        "committer": {
+          "login": "FuegoFro",
+          "id": 463696,
+          "node_id": "MDQ6VXNlcjQ2MzY5Ng==",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/FuegoFro",
+          "type": "User",
+          "site_admin": false
+        },
+        "parents": [
+          {
+            "sha": "8fbdee0c300867b935112232420aa095c1a178ae",
+            "url": "https://api.github.com/repos/discord/rules_swift/commits/8fbdee0c300867b935112232420aa095c1a178ae"
+          }
+        ]
+      },
+      {
+        "sha": "8fbdee0c300867b935112232420aa095c1a178ae",
+        "node_id": "MDY6Q29tbWl0MTg3Njc5Njk3OjhmYmRlZTBjMzAwODY3YjkzNTExMjIzMjQyMGFhMDk1YzFhMTc4YWU=",
+        "commit": {
+          "author": {
+            "name": "Tony Allevato",
+            "email": "allevato@google.com",
+            "date": "2019-05-20T16:13:30Z"
+          },
+          "committer": {
+            "name": "Swift/Apple Rules Gardener",
+            "email": "swiple-rules-gardener@google.com",
+            "date": "2019-05-20T16:13:55Z"
+          },
+          "message": "Avoid accidentally pulling in CcInfo providers from proto_library dependencies by not calling new_objc_provider in compiling.bzl.\n\nRELNOTES: None.\nPiperOrigin-RevId: 249061662",
+          "tree": {
+            "sha": "aff197b7e6e1e2cf27a892d797c36930bb1ac05a",
+            "url": "https://api.github.com/repos/discord/rules_swift/git/trees/aff197b7e6e1e2cf27a892d797c36930bb1ac05a"
+          },
+          "url": "https://api.github.com/repos/discord/rules_swift/git/commits/8fbdee0c300867b935112232420aa095c1a178ae",
+          "comment_count": 0,
+          "verification": {
+            "verified": false,
+            "reason": "unsigned",
+            "signature": null,
+            "payload": null
+          }
+        },
+        "url": "https://api.github.com/repos/discord/rules_swift/commits/8fbdee0c300867b935112232420aa095c1a178ae",
+        "author": {
+          "login": "allevato",
+          "id": 1062427,
+          "node_id": "MDQ6VXNlcjEwNjI0Mjc=",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/allevato",
+          "type": "User",
+          "site_admin": false
+        },
+        "committer": {
+          "login": "swiple-rules-gardener",
+          "id": 48771045,
+          "node_id": "MDQ6VXNlcjQ4NzcxMDQ1",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/swiple-rules-gardener",
+          "type": "User",
+          "site_admin": false
+        },
+        "parents": [
+          {
+            "sha": "bbd636aa93a08000425670367db77d85d6e1aa1b",
+            "url": "https://api.github.com/repos/discord/rules_swift/commits/bbd636aa93a08000425670367db77d85d6e1aa1b"
+          }
+        ]
+      },
+      {
+        "sha": "bbd636aa93a08000425670367db77d85d6e1aa1b",
+        "node_id": "MDY6Q29tbWl0MTg3Njc5Njk3OmJiZDYzNmFhOTNhMDgwMDA0MjU2NzAzNjdkYjc3ZDg1ZDZlMWFhMWI=",
+        "commit": {
+          "author": {
+            "name": "Swift/Apple Rules Gardener",
+            "email": "swiple-rules-gardener@google.com",
+            "date": "2019-05-16T20:27:58Z"
+          },
+          "committer": {
+            "name": "Swift/Apple Rules Gardener",
+            "email": "swiple-rules-gardener@google.com",
+            "date": "2019-05-16T20:27:58Z"
+          },
+          "message": "Merge pull request #232 from kastiglione:dl/request-cloning-using-copyfile_clone\n\nPiperOrigin-RevId: 248588535",
+          "tree": {
+            "sha": "b4c87bf465ee1e41f59cfb1e75230ef9180af0f0",
+            "url": "https://api.github.com/repos/discord/rules_swift/git/trees/b4c87bf465ee1e41f59cfb1e75230ef9180af0f0"
+          },
+          "url": "https://api.github.com/repos/discord/rules_swift/git/commits/bbd636aa93a08000425670367db77d85d6e1aa1b",
+          "comment_count": 0,
+          "verification": {
+            "verified": false,
+            "reason": "unsigned",
+            "signature": null,
+            "payload": null
+          }
+        },
+        "url": "https://api.github.com/repos/discord/rules_swift/commits/bbd636aa93a08000425670367db77d85d6e1aa1b",
+        "author": {
+          "login": "swiple-rules-gardener",
+          "id": 48771045,
+          "node_id": "MDQ6VXNlcjQ4NzcxMDQ1",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/swiple-rules-gardener",
+          "type": "User",
+          "site_admin": false
+        },
+        "committer": {
+          "login": "swiple-rules-gardener",
+          "id": 48771045,
+          "node_id": "MDQ6VXNlcjQ4NzcxMDQ1",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/swiple-rules-gardener",
+          "type": "User",
+          "site_admin": false
+        },
+        "parents": [
+          {
+            "sha": "ee11d3f74c85cb9d6b8883f78d3c33ad6b448d48",
+            "url": "https://api.github.com/repos/discord/rules_swift/commits/ee11d3f74c85cb9d6b8883f78d3c33ad6b448d48"
+          },
+          {
+            "sha": "cf07fdd6f6d2c8e0de34ec8f95093297c881b281",
+            "url": "https://api.github.com/repos/discord/rules_swift/commits/cf07fdd6f6d2c8e0de34ec8f95093297c881b281"
+          }
+        ]
+      },
+      {
+        "sha": "cf07fdd6f6d2c8e0de34ec8f95093297c881b281",
+        "node_id": "MDY6Q29tbWl0MTg3Njc5Njk3OmNmMDdmZGQ2ZjZkMmM4ZTBkZTM0ZWM4Zjk1MDkzMjk3Yzg4MWIyODE=",
+        "commit": {
+          "author": {
+            "name": "Dave Lee",
+            "email": "davelee.com@gmail.com",
+            "date": "2019-05-16T18:58:20Z"
+          },
+          "committer": {
+            "name": "Dave Lee",
+            "email": "davelee.com@gmail.com",
+            "date": "2019-05-16T19:02:29Z"
+          },
+          "message": "Request cloning using COPYFILE_CLONE",
+          "tree": {
+            "sha": "b4c87bf465ee1e41f59cfb1e75230ef9180af0f0",
+            "url": "https://api.github.com/repos/discord/rules_swift/git/trees/b4c87bf465ee1e41f59cfb1e75230ef9180af0f0"
+          },
+          "url": "https://api.github.com/repos/discord/rules_swift/git/commits/cf07fdd6f6d2c8e0de34ec8f95093297c881b281",
+          "comment_count": 0,
+          "verification": {
+            "verified": false,
+            "reason": "unsigned",
+            "signature": null,
+            "payload": null
+          }
+        },
+        "url": "https://api.github.com/repos/discord/rules_swift/commits/cf07fdd6f6d2c8e0de34ec8f95093297c881b281",
+        "author": {
+          "login": "kastiglione",
+          "id": 43429,
+          "node_id": "MDQ6VXNlcjQzNDI5",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/kastiglione",
+          "type": "User",
+          "site_admin": false
+        },
+        "committer": {
+          "login": "kastiglione",
+          "id": 43429,
+          "node_id": "MDQ6VXNlcjQzNDI5",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/kastiglione",
+          "type": "User",
+          "site_admin": false
+        },
+        "parents": [
+          {
+            "sha": "ee11d3f74c85cb9d6b8883f78d3c33ad6b448d48",
+            "url": "https://api.github.com/repos/discord/rules_swift/commits/ee11d3f74c85cb9d6b8883f78d3c33ad6b448d48"
+          }
+        ]
+      }
+    ],
+    "releases": [],
+    "issues": [],
+    "pullRequests": []
+  }
+}

@@ -1,0 +1,351 @@
+{
+  "id": 104243876,
+  "node_id": "MDEwOlJlcG9zaXRvcnkxMDQyNDM4NzY=",
+  "name": "react-router-to-array",
+  "full_name": "discord/react-router-to-array",
+  "private": false,
+  "owner": {
+    "login": "discord",
+    "id": 1965106,
+    "node_id": "MDEyOk9yZ2FuaXphdGlvbjE5NjUxMDY=",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/discord",
+    "type": "Organization",
+    "site_admin": false
+  },
+  "description": "Convert your react router component to an array with all static routes",
+  "fork": true,
+  "url": "https://api.github.com/repos/discord/react-router-to-array",
+  "created_at": "2017-09-20T17:01:20Z",
+  "updated_at": "2021-04-28T21:28:49Z",
+  "pushed_at": "2017-11-15T17:33:26Z",
+  "homepage": null,
+  "size": 11,
+  "stargazers_count": 5,
+  "watchers_count": 5,
+  "language": "JavaScript",
+  "has_issues": false,
+  "has_projects": true,
+  "has_downloads": true,
+  "has_wiki": true,
+  "has_pages": false,
+  "has_discussions": false,
+  "forks_count": 6,
+  "archived": false,
+  "disabled": false,
+  "open_issues_count": 0,
+  "license": {
+    "key": "apache-2.0",
+    "name": "Apache License 2.0",
+    "spdx_id": "Apache-2.0",
+    "url": "https://api.github.com/licenses/apache-2.0",
+    "node_id": "MDc6TGljZW5zZTI="
+  },
+  "allow_forking": true,
+  "is_template": false,
+  "web_commit_signoff_required": false,
+  "topics": [],
+  "visibility": "public",
+  "forks": 6,
+  "open_issues": 0,
+  "watchers": 5,
+  "default_branch": "master",
+  "permissions": {
+    "admin": false,
+    "maintain": false,
+    "push": false,
+    "triage": false,
+    "pull": false
+  },
+  "branches": [
+    {
+      "name": "master",
+      "commit": {
+        "sha": "4fbdcaa76b76c877ac02b073e8995cb3631bba4c",
+        "url": "https://api.github.com/repos/discord/react-router-to-array/commits/4fbdcaa76b76c877ac02b073e8995cb3631bba4c"
+      },
+      "protected": false
+    }
+  ],
+  "last5": {
+    "commits": [
+      {
+        "sha": "4fbdcaa76b76c877ac02b073e8995cb3631bba4c",
+        "node_id": "MDY6Q29tbWl0MTA0MjQzODc2OjRmYmRjYWE3NmI3NmM4NzdhYzAyYjA3M2U4OTk1Y2IzNjMxYmJhNGM=",
+        "commit": {
+          "author": {
+            "name": "Alan Souza",
+            "email": "alansouzati@gmail.com",
+            "date": "2016-08-18T21:40:53Z"
+          },
+          "committer": {
+            "name": "Alan Souza",
+            "email": "alansouzati@gmail.com",
+            "date": "2016-08-18T21:40:53Z"
+          },
+          "message": "v0.1.2",
+          "tree": {
+            "sha": "2421c31e7c309d0148c5f875560d15a53f9ca19d",
+            "url": "https://api.github.com/repos/discord/react-router-to-array/git/trees/2421c31e7c309d0148c5f875560d15a53f9ca19d"
+          },
+          "url": "https://api.github.com/repos/discord/react-router-to-array/git/commits/4fbdcaa76b76c877ac02b073e8995cb3631bba4c",
+          "comment_count": 0,
+          "verification": {
+            "verified": false,
+            "reason": "unsigned",
+            "signature": null,
+            "payload": null
+          }
+        },
+        "url": "https://api.github.com/repos/discord/react-router-to-array/commits/4fbdcaa76b76c877ac02b073e8995cb3631bba4c",
+        "author": {
+          "login": "alansouzati",
+          "id": 1207250,
+          "node_id": "MDQ6VXNlcjEyMDcyNTA=",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/alansouzati",
+          "type": "User",
+          "site_admin": false
+        },
+        "committer": {
+          "login": "alansouzati",
+          "id": 1207250,
+          "node_id": "MDQ6VXNlcjEyMDcyNTA=",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/alansouzati",
+          "type": "User",
+          "site_admin": false
+        },
+        "parents": [
+          {
+            "sha": "d750d7d18852060e8caa56acd919850a84973b72",
+            "url": "https://api.github.com/repos/discord/react-router-to-array/commits/d750d7d18852060e8caa56acd919850a84973b72"
+          }
+        ]
+      },
+      {
+        "sha": "d750d7d18852060e8caa56acd919850a84973b72",
+        "node_id": "MDY6Q29tbWl0MTA0MjQzODc2OmQ3NTBkN2QxODg1MjA2MGU4Y2FhNTZhY2Q5MTk4NTBhODQ5NzNiNzI=",
+        "commit": {
+          "author": {
+            "name": "Alan Souza",
+            "email": "alansouzati@gmail.com",
+            "date": "2016-08-18T21:39:50Z"
+          },
+          "committer": {
+            "name": "GitHub",
+            "email": "noreply@github.com",
+            "date": "2016-08-18T21:39:50Z"
+          },
+          "message": "Merge pull request #2 from lettertwo/undefined-routes\n\nContinue matching paths on children of 'undefined' routes",
+          "tree": {
+            "sha": "004a034e8204de7a47f1ce8e0275ec475d914459",
+            "url": "https://api.github.com/repos/discord/react-router-to-array/git/trees/004a034e8204de7a47f1ce8e0275ec475d914459"
+          },
+          "url": "https://api.github.com/repos/discord/react-router-to-array/git/commits/d750d7d18852060e8caa56acd919850a84973b72",
+          "comment_count": 0,
+          "verification": {
+            "verified": false,
+            "reason": "unsigned",
+            "signature": null,
+            "payload": null
+          }
+        },
+        "url": "https://api.github.com/repos/discord/react-router-to-array/commits/d750d7d18852060e8caa56acd919850a84973b72",
+        "author": {
+          "login": "alansouzati",
+          "id": 1207250,
+          "node_id": "MDQ6VXNlcjEyMDcyNTA=",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/alansouzati",
+          "type": "User",
+          "site_admin": false
+        },
+        "committer": {
+          "login": "web-flow",
+          "id": 19864447,
+          "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/web-flow",
+          "type": "User",
+          "site_admin": false
+        },
+        "parents": [
+          {
+            "sha": "f6f1520a414351d25310b1cf4d50a8eebefecf88",
+            "url": "https://api.github.com/repos/discord/react-router-to-array/commits/f6f1520a414351d25310b1cf4d50a8eebefecf88"
+          },
+          {
+            "sha": "1c91c9726dfd5e28689bcbbd5e209d5746defaef",
+            "url": "https://api.github.com/repos/discord/react-router-to-array/commits/1c91c9726dfd5e28689bcbbd5e209d5746defaef"
+          }
+        ]
+      },
+      {
+        "sha": "1c91c9726dfd5e28689bcbbd5e209d5746defaef",
+        "node_id": "MDY6Q29tbWl0MTA0MjQzODc2OjFjOTFjOTcyNmRmZDVlMjg2ODliY2JiZDVlMjA5ZDU3NDZkZWZhZWY=",
+        "commit": {
+          "author": {
+            "name": "Eric Eldredge",
+            "email": "lettertwo@gmail.com",
+            "date": "2016-08-18T20:09:25Z"
+          },
+          "committer": {
+            "name": "Eric Eldredge",
+            "email": "lettertwo@gmail.com",
+            "date": "2016-08-18T20:09:25Z"
+          },
+          "message": "Refactor child route extraction; extract from undefined routes\n\nIn the case that a route’s `path` prop is undefined, RR will fall\nthrough to matching on the child routes. This adds the same\nfall-through behavior to the path extraction.",
+          "tree": {
+            "sha": "004a034e8204de7a47f1ce8e0275ec475d914459",
+            "url": "https://api.github.com/repos/discord/react-router-to-array/git/trees/004a034e8204de7a47f1ce8e0275ec475d914459"
+          },
+          "url": "https://api.github.com/repos/discord/react-router-to-array/git/commits/1c91c9726dfd5e28689bcbbd5e209d5746defaef",
+          "comment_count": 0,
+          "verification": {
+            "verified": false,
+            "reason": "unsigned",
+            "signature": null,
+            "payload": null
+          }
+        },
+        "url": "https://api.github.com/repos/discord/react-router-to-array/commits/1c91c9726dfd5e28689bcbbd5e209d5746defaef",
+        "author": {
+          "login": "lettertwo",
+          "id": 210630,
+          "node_id": "MDQ6VXNlcjIxMDYzMA==",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/lettertwo",
+          "type": "User",
+          "site_admin": false
+        },
+        "committer": {
+          "login": "lettertwo",
+          "id": 210630,
+          "node_id": "MDQ6VXNlcjIxMDYzMA==",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/lettertwo",
+          "type": "User",
+          "site_admin": false
+        },
+        "parents": [
+          {
+            "sha": "88e388dbd2ca6cf37753d43446246f1deca1bac6",
+            "url": "https://api.github.com/repos/discord/react-router-to-array/commits/88e388dbd2ca6cf37753d43446246f1deca1bac6"
+          }
+        ]
+      },
+      {
+        "sha": "88e388dbd2ca6cf37753d43446246f1deca1bac6",
+        "node_id": "MDY6Q29tbWl0MTA0MjQzODc2Ojg4ZTM4OGRiZDJjYTZjZjM3NzUzZDQzNDQ2MjQ2ZjFkZWNhMWJhYzY=",
+        "commit": {
+          "author": {
+            "name": "Eric Eldredge",
+            "email": "lettertwo@gmail.com",
+            "date": "2016-08-18T19:57:48Z"
+          },
+          "committer": {
+            "name": "Eric Eldredge",
+            "email": "lettertwo@gmail.com",
+            "date": "2016-08-18T19:57:48Z"
+          },
+          "message": "Add (failing) test cases for undefined routes",
+          "tree": {
+            "sha": "d04aabff8fbbe90b1aa61c991b5a386434884d57",
+            "url": "https://api.github.com/repos/discord/react-router-to-array/git/trees/d04aabff8fbbe90b1aa61c991b5a386434884d57"
+          },
+          "url": "https://api.github.com/repos/discord/react-router-to-array/git/commits/88e388dbd2ca6cf37753d43446246f1deca1bac6",
+          "comment_count": 0,
+          "verification": {
+            "verified": false,
+            "reason": "unsigned",
+            "signature": null,
+            "payload": null
+          }
+        },
+        "url": "https://api.github.com/repos/discord/react-router-to-array/commits/88e388dbd2ca6cf37753d43446246f1deca1bac6",
+        "author": {
+          "login": "lettertwo",
+          "id": 210630,
+          "node_id": "MDQ6VXNlcjIxMDYzMA==",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/lettertwo",
+          "type": "User",
+          "site_admin": false
+        },
+        "committer": {
+          "login": "lettertwo",
+          "id": 210630,
+          "node_id": "MDQ6VXNlcjIxMDYzMA==",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/lettertwo",
+          "type": "User",
+          "site_admin": false
+        },
+        "parents": [
+          {
+            "sha": "f6f1520a414351d25310b1cf4d50a8eebefecf88",
+            "url": "https://api.github.com/repos/discord/react-router-to-array/commits/f6f1520a414351d25310b1cf4d50a8eebefecf88"
+          }
+        ]
+      },
+      {
+        "sha": "f6f1520a414351d25310b1cf4d50a8eebefecf88",
+        "node_id": "MDY6Q29tbWl0MTA0MjQzODc2OmY2ZjE1MjBhNDE0MzUxZDI1MzEwYjFjZjRkNTBhOGVlYmVmZWNmODg=",
+        "commit": {
+          "author": {
+            "name": "Alan Souza",
+            "email": "alansouzati@gmail.com",
+            "date": "2016-06-14T21:28:22Z"
+          },
+          "committer": {
+            "name": "GitHub",
+            "email": "noreply@github.com",
+            "date": "2016-06-14T21:28:22Z"
+          },
+          "message": "Update README.md",
+          "tree": {
+            "sha": "45461cd911b6850a8b0415a88ede0e6c8f4a5fcc",
+            "url": "https://api.github.com/repos/discord/react-router-to-array/git/trees/45461cd911b6850a8b0415a88ede0e6c8f4a5fcc"
+          },
+          "url": "https://api.github.com/repos/discord/react-router-to-array/git/commits/f6f1520a414351d25310b1cf4d50a8eebefecf88",
+          "comment_count": 0,
+          "verification": {
+            "verified": false,
+            "reason": "unsigned",
+            "signature": null,
+            "payload": null
+          }
+        },
+        "url": "https://api.github.com/repos/discord/react-router-to-array/commits/f6f1520a414351d25310b1cf4d50a8eebefecf88",
+        "author": {
+          "login": "alansouzati",
+          "id": 1207250,
+          "node_id": "MDQ6VXNlcjEyMDcyNTA=",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/alansouzati",
+          "type": "User",
+          "site_admin": false
+        },
+        "committer": {
+          "login": "web-flow",
+          "id": 19864447,
+          "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/web-flow",
+          "type": "User",
+          "site_admin": false
+        },
+        "parents": [
+          {
+            "sha": "832c84e88a2ae42823b48fb3aa9aef2cae8c4dc8",
+            "url": "https://api.github.com/repos/discord/react-router-to-array/commits/832c84e88a2ae42823b48fb3aa9aef2cae8c4dc8"
+          }
+        ]
+      }
+    ],
+    "releases": [],
+    "issues": [],
+    "pullRequests": []
+  }
+}

@@ -1,0 +1,338 @@
+{
+  "id": 337840781,
+  "node_id": "MDEwOlJlcG9zaXRvcnkzMzc4NDA3ODE=",
+  "name": "rust-core-video-sys",
+  "full_name": "discord/rust-core-video-sys",
+  "private": false,
+  "owner": {
+    "login": "discord",
+    "id": 1965106,
+    "node_id": "MDEyOk9yZ2FuaXphdGlvbjE5NjUxMDY=",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/discord",
+    "type": "Organization",
+    "site_admin": false
+  },
+  "description": " Bindings to CoreVideo.framework for macOS and iOS ",
+  "fork": true,
+  "url": "https://api.github.com/repos/discord/rust-core-video-sys",
+  "created_at": "2021-02-10T20:09:28Z",
+  "updated_at": "2021-05-19T03:11:51Z",
+  "pushed_at": "2021-01-27T10:27:34Z",
+  "homepage": "",
+  "size": 46,
+  "stargazers_count": 2,
+  "watchers_count": 2,
+  "language": null,
+  "has_issues": false,
+  "has_projects": true,
+  "has_downloads": true,
+  "has_wiki": true,
+  "has_pages": false,
+  "has_discussions": false,
+  "forks_count": 3,
+  "archived": false,
+  "disabled": false,
+  "open_issues_count": 0,
+  "license": {
+    "key": "mit",
+    "name": "MIT License",
+    "spdx_id": "MIT",
+    "url": "https://api.github.com/licenses/mit",
+    "node_id": "MDc6TGljZW5zZTEz"
+  },
+  "allow_forking": true,
+  "is_template": false,
+  "web_commit_signoff_required": false,
+  "topics": [],
+  "visibility": "public",
+  "forks": 3,
+  "open_issues": 0,
+  "watchers": 2,
+  "default_branch": "master",
+  "permissions": {
+    "admin": false,
+    "maintain": false,
+    "push": false,
+    "triage": false,
+    "pull": false
+  },
+  "branches": [],
+  "last5": {
+    "commits": [
+      {
+        "sha": "a4d8dc9b759eeae8fe0fda3e1834897305b4a57b",
+        "node_id": "MDY6Q29tbWl0MzM3ODQwNzgxOmE0ZDhkYzliNzU5ZWVhZThmZTBmZGEzZTE4MzQ4OTczMDViNGE1N2I=",
+        "commit": {
+          "author": {
+            "name": "Mack Straight",
+            "email": "mack@discordapp.com",
+            "date": "2021-01-27T10:19:58Z"
+          },
+          "committer": {
+            "name": "Mack Straight",
+            "email": "mack@discordapp.com",
+            "date": "2021-01-27T10:27:27Z"
+          },
+          "message": "CVMetalTextureGetTexture doesn't returned an owned object.",
+          "tree": {
+            "sha": "8e9ca5ee4dce72c6ae15a1a6e2c249d1e43c7555",
+            "url": "https://api.github.com/repos/discord/rust-core-video-sys/git/trees/8e9ca5ee4dce72c6ae15a1a6e2c249d1e43c7555"
+          },
+          "url": "https://api.github.com/repos/discord/rust-core-video-sys/git/commits/a4d8dc9b759eeae8fe0fda3e1834897305b4a57b",
+          "comment_count": 0,
+          "verification": {
+            "verified": false,
+            "reason": "unsigned",
+            "signature": null,
+            "payload": null
+          }
+        },
+        "url": "https://api.github.com/repos/discord/rust-core-video-sys/commits/a4d8dc9b759eeae8fe0fda3e1834897305b4a57b",
+        "author": {
+          "login": "eiz",
+          "id": 405658,
+          "node_id": "MDQ6VXNlcjQwNTY1OA==",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/eiz",
+          "type": "User",
+          "site_admin": false
+        },
+        "committer": {
+          "login": "eiz",
+          "id": 405658,
+          "node_id": "MDQ6VXNlcjQwNTY1OA==",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/eiz",
+          "type": "User",
+          "site_admin": false
+        },
+        "parents": [
+          {
+            "sha": "90cf63de31f994bbf97c572fb8d595b57978a455",
+            "url": "https://api.github.com/repos/discord/rust-core-video-sys/commits/90cf63de31f994bbf97c572fb8d595b57978a455"
+          }
+        ]
+      },
+      {
+        "sha": "90cf63de31f994bbf97c572fb8d595b57978a455",
+        "node_id": "MDY6Q29tbWl0MzM3ODQwNzgxOjkwY2Y2M2RlMzFmOTk0YmJmOTdjNTcyZmI4ZDU5NWI1Nzk3OGE0NTU=",
+        "commit": {
+          "author": {
+            "name": "Mack Straight",
+            "email": "mack@discordapp.com",
+            "date": "2021-01-27T08:04:32Z"
+          },
+          "committer": {
+            "name": "Mack Straight",
+            "email": "mack@discordapp.com",
+            "date": "2021-01-27T08:04:32Z"
+          },
+          "message": "bump metal dependency",
+          "tree": {
+            "sha": "fe62452e62eb141752998d6f902090073d88ddd9",
+            "url": "https://api.github.com/repos/discord/rust-core-video-sys/git/trees/fe62452e62eb141752998d6f902090073d88ddd9"
+          },
+          "url": "https://api.github.com/repos/discord/rust-core-video-sys/git/commits/90cf63de31f994bbf97c572fb8d595b57978a455",
+          "comment_count": 0,
+          "verification": {
+            "verified": false,
+            "reason": "unsigned",
+            "signature": null,
+            "payload": null
+          }
+        },
+        "url": "https://api.github.com/repos/discord/rust-core-video-sys/commits/90cf63de31f994bbf97c572fb8d595b57978a455",
+        "author": {
+          "login": "eiz",
+          "id": 405658,
+          "node_id": "MDQ6VXNlcjQwNTY1OA==",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/eiz",
+          "type": "User",
+          "site_admin": false
+        },
+        "committer": {
+          "login": "eiz",
+          "id": 405658,
+          "node_id": "MDQ6VXNlcjQwNTY1OA==",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/eiz",
+          "type": "User",
+          "site_admin": false
+        },
+        "parents": [
+          {
+            "sha": "93e57b39cdf755718c0e3181b591a41ae02d1a25",
+            "url": "https://api.github.com/repos/discord/rust-core-video-sys/commits/93e57b39cdf755718c0e3181b591a41ae02d1a25"
+          }
+        ]
+      },
+      {
+        "sha": "93e57b39cdf755718c0e3181b591a41ae02d1a25",
+        "node_id": "MDY6Q29tbWl0MzM3ODQwNzgxOjkzZTU3YjM5Y2RmNzU1NzE4YzBlMzE4MWI1OTFhNDFhZTAyZDFhMjU=",
+        "commit": {
+          "author": {
+            "name": "寧靜",
+            "email": "luozijun.assistant@gmail.com",
+            "date": "2020-12-07T12:31:43Z"
+          },
+          "committer": {
+            "name": "GitHub",
+            "email": "noreply@github.com",
+            "date": "2020-12-07T12:31:43Z"
+          },
+          "message": "Merge pull request #15 from LuoZijun/dependabot/cargo/cfg-if-1.0\n\nUpdate cfg-if requirement from 0.1 to 1.0",
+          "tree": {
+            "sha": "01aceb7083dab28dd6b0eb10ed487f7d34bc164a",
+            "url": "https://api.github.com/repos/discord/rust-core-video-sys/git/trees/01aceb7083dab28dd6b0eb10ed487f7d34bc164a"
+          },
+          "url": "https://api.github.com/repos/discord/rust-core-video-sys/git/commits/93e57b39cdf755718c0e3181b591a41ae02d1a25",
+          "comment_count": 0,
+          "verification": {
+            "verified": true,
+            "reason": "valid",
+            "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsBcBAABCAAQBQJfziCvCRBK7hj4Ov3rIwAAdHIIAGfrpw9yrBO+Iuq4ziwoxYUx\nnXfHICd70JLpORzB9tdX0h/6GIrKvdg/47kdO89bGBtMZ3yHgpBdibN3x4Be07Zq\nj7s2APk1Hn/2Y0lHOjRsriipYLBYfnuczf2KBljtj9s7H+qVMkSH44M7G5B9N6lq\nefnxMGO7gaHtA557wgCvYHWc4tZhDs9kWYIwf1iUL2kHc8+RTx48SUtE8dp7Y/vF\nWNummBpTvBYfSzSesrEvxggSWm5XJIbG/gSVJxTo2U5vXZR+U/aS8kO9Mag7Jppk\ndCkr+U41ck5aWcIyc28MjZq/MMEoc4WT0MgJ8Hg2EmNR3iMcKug8o86n088RlXc=\n=oovA\n-----END PGP SIGNATURE-----\n",
+            "payload": "tree 01aceb7083dab28dd6b0eb10ed487f7d34bc164a\nparent 87a2b35dcf4b2becb98f5fd0d3440810964f7351\nparent 2301c59ba18e570a0970cb82820f12e771b60398\nauthor 寧靜 <luozijun.assistant@gmail.com> 1607344303 +0800\ncommitter GitHub <noreply@github.com> 1607344303 +0800\n\nMerge pull request #15 from LuoZijun/dependabot/cargo/cfg-if-1.0\n\nUpdate cfg-if requirement from 0.1 to 1.0"
+          }
+        },
+        "url": "https://api.github.com/repos/discord/rust-core-video-sys/commits/93e57b39cdf755718c0e3181b591a41ae02d1a25",
+        "author": {
+          "login": "LuoZijun",
+          "id": 717717,
+          "node_id": "MDQ6VXNlcjcxNzcxNw==",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/LuoZijun",
+          "type": "User",
+          "site_admin": false
+        },
+        "committer": {
+          "login": "web-flow",
+          "id": 19864447,
+          "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/web-flow",
+          "type": "User",
+          "site_admin": false
+        },
+        "parents": [
+          {
+            "sha": "87a2b35dcf4b2becb98f5fd0d3440810964f7351",
+            "url": "https://api.github.com/repos/discord/rust-core-video-sys/commits/87a2b35dcf4b2becb98f5fd0d3440810964f7351"
+          },
+          {
+            "sha": "2301c59ba18e570a0970cb82820f12e771b60398",
+            "url": "https://api.github.com/repos/discord/rust-core-video-sys/commits/2301c59ba18e570a0970cb82820f12e771b60398"
+          }
+        ]
+      },
+      {
+        "sha": "2301c59ba18e570a0970cb82820f12e771b60398",
+        "node_id": "MDY6Q29tbWl0MzM3ODQwNzgxOjIzMDFjNTliYTE4ZTU3MGEwOTcwY2I4MjgyMGYxMmU3NzFiNjAzOTg=",
+        "commit": {
+          "author": {
+            "name": "dependabot-preview[bot]",
+            "email": "27856297+dependabot-preview[bot]@users.noreply.github.com",
+            "date": "2020-10-07T05:31:16Z"
+          },
+          "committer": {
+            "name": "GitHub",
+            "email": "noreply@github.com",
+            "date": "2020-10-07T05:31:16Z"
+          },
+          "message": "Update cfg-if requirement from 0.1 to 1.0\n\nUpdates the requirements on [cfg-if](https://github.com/alexcrichton/cfg-if) to permit the latest version.\n- [Release notes](https://github.com/alexcrichton/cfg-if/releases)\n- [Commits](https://github.com/alexcrichton/cfg-if/compare/0.1.1...1.0.0)\n\nSigned-off-by: dependabot-preview[bot] <support@dependabot.com>",
+          "tree": {
+            "sha": "01aceb7083dab28dd6b0eb10ed487f7d34bc164a",
+            "url": "https://api.github.com/repos/discord/rust-core-video-sys/git/trees/01aceb7083dab28dd6b0eb10ed487f7d34bc164a"
+          },
+          "url": "https://api.github.com/repos/discord/rust-core-video-sys/git/commits/2301c59ba18e570a0970cb82820f12e771b60398",
+          "comment_count": 0,
+          "verification": {
+            "verified": true,
+            "reason": "valid",
+            "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsBcBAABCAAQBQJffVKkCRBK7hj4Ov3rIwAAdHIIAG4J3df7WrvaK6UvoMolzF5k\n3Yu6QF/P9oGOyo6z0rgHScGbucnKZm5RQTo7Q94q/SllvsPiz0f1pjLo0ENoyeFW\nMGp0asJDB7t0gFCXyJ3cql9IZpiPZfDb54DZ4rUr86wBsa23sWQ+E+nTJPrB1rxz\nZ7wvlaEE0Y8kOFOkNTJCecD3TR9TbpqtHf9dHJnDGzSEPDLLUyhKw/qqarDGxSUn\n8qqGQuL0apMa/AGp/0lSfrDb5dOGJViCiNgDTg7eBHmerT6zWUAuiMfahZs3NcM2\n0cE0V7q8Ied9xUv/UoB/4QM0go+Z0uElqzI6S8Pxvnl4qFjM2js653JjuovCpuc=\n=2XTw\n-----END PGP SIGNATURE-----\n",
+            "payload": "tree 01aceb7083dab28dd6b0eb10ed487f7d34bc164a\nparent 87a2b35dcf4b2becb98f5fd0d3440810964f7351\nauthor dependabot-preview[bot] <27856297+dependabot-preview[bot]@users.noreply.github.com> 1602048676 +0000\ncommitter GitHub <noreply@github.com> 1602048676 +0000\n\nUpdate cfg-if requirement from 0.1 to 1.0\n\nUpdates the requirements on [cfg-if](https://github.com/alexcrichton/cfg-if) to permit the latest version.\n- [Release notes](https://github.com/alexcrichton/cfg-if/releases)\n- [Commits](https://github.com/alexcrichton/cfg-if/compare/0.1.1...1.0.0)\n\nSigned-off-by: dependabot-preview[bot] <support@dependabot.com>"
+          }
+        },
+        "url": "https://api.github.com/repos/discord/rust-core-video-sys/commits/2301c59ba18e570a0970cb82820f12e771b60398",
+        "author": {
+          "login": "dependabot-preview[bot]",
+          "id": 27856297,
+          "node_id": "MDM6Qm90Mjc4NTYyOTc=",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/dependabot-preview%5Bbot%5D",
+          "type": "Bot",
+          "site_admin": false
+        },
+        "committer": {
+          "login": "web-flow",
+          "id": 19864447,
+          "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/web-flow",
+          "type": "User",
+          "site_admin": false
+        },
+        "parents": [
+          {
+            "sha": "87a2b35dcf4b2becb98f5fd0d3440810964f7351",
+            "url": "https://api.github.com/repos/discord/rust-core-video-sys/commits/87a2b35dcf4b2becb98f5fd0d3440810964f7351"
+          }
+        ]
+      },
+      {
+        "sha": "87a2b35dcf4b2becb98f5fd0d3440810964f7351",
+        "node_id": "MDY6Q29tbWl0MzM3ODQwNzgxOjg3YTJiMzVkY2Y0YjJiZWNiOThmNWZkMGQzNDQwODEwOTY0ZjczNTE=",
+        "commit": {
+          "author": {
+            "name": "寧靜",
+            "email": "luozijun.assistant@protonmail.com",
+            "date": "2020-07-21T23:57:42Z"
+          },
+          "committer": {
+            "name": "GitHub",
+            "email": "noreply@github.com",
+            "date": "2020-07-21T23:57:42Z"
+          },
+          "message": "Merge pull request #13 from LuoZijun/dependabot/cargo/metal-0.20\n\nUpdate metal requirement from 0.18 to 0.20",
+          "tree": {
+            "sha": "98309eb7f3d3ad5fe4e53dbd9576fdfb5d10e324",
+            "url": "https://api.github.com/repos/discord/rust-core-video-sys/git/trees/98309eb7f3d3ad5fe4e53dbd9576fdfb5d10e324"
+          },
+          "url": "https://api.github.com/repos/discord/rust-core-video-sys/git/commits/87a2b35dcf4b2becb98f5fd0d3440810964f7351",
+          "comment_count": 0,
+          "verification": {
+            "verified": true,
+            "reason": "valid",
+            "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsBcBAABCAAQBQJfF4D2CRBK7hj4Ov3rIwAAdHIIAGshir9rEFjNYlg5recJyLQ2\neScFDHkxUcH8kcXBJFtRmib8Cr8SZEmNO4dSiug317Rp2TJnmo02JzuA2FjF4J3T\nXkJeFbS6WHND0Oq8CKvo+h4FZw1fGYPdiJduKoCJJP8+SC//gGl/w5LP5wiatGgq\nbZifOSkDlSB6twL/C8Hi7Ny5nwemA0hR6vKNUF8sUH2RqDBkLbwjcrYfSBd5Xmj5\n9oomgFdb6aV4336ihN2xENf+GOE2UL1O0aCahmuGuuTPVjCpKZU9zXuOSL3jfVUY\n55j9uSQGqGxgc6Wemr00co+oX7fHLx4SG8ksHgqQjAGgrcHz7Yr77khMKCVduJA=\n=RoxH\n-----END PGP SIGNATURE-----\n",
+            "payload": "tree 98309eb7f3d3ad5fe4e53dbd9576fdfb5d10e324\nparent 0dc23290044ede397596861979b884b735fc17af\nparent 27f54a5a6a753c9292fc90098957398e861ded10\nauthor 寧靜 <luozijun.assistant@protonmail.com> 1595375862 +0800\ncommitter GitHub <noreply@github.com> 1595375862 +0800\n\nMerge pull request #13 from LuoZijun/dependabot/cargo/metal-0.20\n\nUpdate metal requirement from 0.18 to 0.20"
+          }
+        },
+        "url": "https://api.github.com/repos/discord/rust-core-video-sys/commits/87a2b35dcf4b2becb98f5fd0d3440810964f7351",
+        "author": null,
+        "committer": {
+          "login": "web-flow",
+          "id": 19864447,
+          "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/web-flow",
+          "type": "User",
+          "site_admin": false
+        },
+        "parents": [
+          {
+            "sha": "0dc23290044ede397596861979b884b735fc17af",
+            "url": "https://api.github.com/repos/discord/rust-core-video-sys/commits/0dc23290044ede397596861979b884b735fc17af"
+          },
+          {
+            "sha": "27f54a5a6a753c9292fc90098957398e861ded10",
+            "url": "https://api.github.com/repos/discord/rust-core-video-sys/commits/27f54a5a6a753c9292fc90098957398e861ded10"
+          }
+        ]
+      }
+    ],
+    "releases": [],
+    "issues": [],
+    "pullRequests": []
+  }
+}

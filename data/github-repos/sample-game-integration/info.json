@@ -1,0 +1,517 @@
+{
+  "id": 66603900,
+  "node_id": "MDEwOlJlcG9zaXRvcnk2NjYwMzkwMA==",
+  "name": "sample-game-integration",
+  "full_name": "discord/sample-game-integration",
+  "private": false,
+  "owner": {
+    "login": "discord",
+    "id": 1965106,
+    "node_id": "MDEyOk9yZ2FuaXphdGlvbjE5NjUxMDY=",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/discord",
+    "type": "Organization",
+    "site_admin": false
+  },
+  "description": "An example using Discord's API and local RPC socket to add Voice and Text chat to an instance or match based multiplayer game.",
+  "fork": false,
+  "url": "https://api.github.com/repos/discord/sample-game-integration",
+  "created_at": "2016-08-26T00:50:12Z",
+  "updated_at": "2023-04-23T10:55:00Z",
+  "pushed_at": "2020-10-18T05:28:52Z",
+  "homepage": null,
+  "size": 54,
+  "stargazers_count": 93,
+  "watchers_count": 93,
+  "language": "JavaScript",
+  "has_issues": false,
+  "has_projects": false,
+  "has_downloads": true,
+  "has_wiki": false,
+  "has_pages": false,
+  "has_discussions": false,
+  "forks_count": 27,
+  "archived": false,
+  "disabled": false,
+  "open_issues_count": 0,
+  "license": null,
+  "allow_forking": true,
+  "is_template": false,
+  "web_commit_signoff_required": false,
+  "topics": [],
+  "visibility": "public",
+  "forks": 27,
+  "open_issues": 0,
+  "watchers": 93,
+  "default_branch": "master",
+  "permissions": {
+    "admin": false,
+    "maintain": false,
+    "push": false,
+    "triage": false,
+    "pull": false
+  },
+  "branches": [],
+  "last5": {
+    "commits": [
+      {
+        "sha": "a471bcc02463804d0119399feea299241a5b2e6a",
+        "node_id": "MDY6Q29tbWl0NjY2MDM5MDA6YTQ3MWJjYzAyNDYzODA0ZDAxMTkzOTlmZWVhMjk5MjQxYTViMmU2YQ==",
+        "commit": {
+          "author": {
+            "name": "Gus Caplan",
+            "email": "me@gus.host",
+            "date": "2017-09-08T18:01:58Z"
+          },
+          "committer": {
+            "name": "Zack",
+            "email": "night@users.noreply.github.com",
+            "date": "2017-09-08T18:01:58Z"
+          },
+          "message": "discordapp.io died 😭 (#3)",
+          "tree": {
+            "sha": "019a1389e9b6caec37768189bbae311e34de848d",
+            "url": "https://api.github.com/repos/discord/sample-game-integration/git/trees/019a1389e9b6caec37768189bbae311e34de848d"
+          },
+          "url": "https://api.github.com/repos/discord/sample-game-integration/git/commits/a471bcc02463804d0119399feea299241a5b2e6a",
+          "comment_count": 1,
+          "verification": {
+            "verified": false,
+            "reason": "unsigned",
+            "signature": null,
+            "payload": null
+          }
+        },
+        "url": "https://api.github.com/repos/discord/sample-game-integration/commits/a471bcc02463804d0119399feea299241a5b2e6a",
+        "author": {
+          "login": "devsnek",
+          "id": 5952481,
+          "node_id": "MDQ6VXNlcjU5NTI0ODE=",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/devsnek",
+          "type": "User",
+          "site_admin": false
+        },
+        "committer": {
+          "login": "night",
+          "id": 2942184,
+          "node_id": "MDQ6VXNlcjI5NDIxODQ=",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/night",
+          "type": "User",
+          "site_admin": false
+        },
+        "parents": [
+          {
+            "sha": "f7b7354d08e73f011cc798149e65b1b2ff6f7a95",
+            "url": "https://api.github.com/repos/discord/sample-game-integration/commits/f7b7354d08e73f011cc798149e65b1b2ff6f7a95"
+          }
+        ]
+      },
+      {
+        "sha": "f7b7354d08e73f011cc798149e65b1b2ff6f7a95",
+        "node_id": "MDY6Q29tbWl0NjY2MDM5MDA6ZjdiNzM1NGQwOGU3M2YwMTFjYzc5ODE0OWU2NWIxYjJmZjZmN2E5NQ==",
+        "commit": {
+          "author": {
+            "name": "Gus Caplan",
+            "email": "me@gus.host",
+            "date": "2017-09-08T17:15:09Z"
+          },
+          "committer": {
+            "name": "Zack",
+            "email": "night@users.noreply.github.com",
+            "date": "2017-09-08T17:15:09Z"
+          },
+          "message": "fixes onclose error message (#2)",
+          "tree": {
+            "sha": "15721546d34448d18de8ef62a939149f45f8b4e4",
+            "url": "https://api.github.com/repos/discord/sample-game-integration/git/trees/15721546d34448d18de8ef62a939149f45f8b4e4"
+          },
+          "url": "https://api.github.com/repos/discord/sample-game-integration/git/commits/f7b7354d08e73f011cc798149e65b1b2ff6f7a95",
+          "comment_count": 0,
+          "verification": {
+            "verified": false,
+            "reason": "unsigned",
+            "signature": null,
+            "payload": null
+          }
+        },
+        "url": "https://api.github.com/repos/discord/sample-game-integration/commits/f7b7354d08e73f011cc798149e65b1b2ff6f7a95",
+        "author": {
+          "login": "devsnek",
+          "id": 5952481,
+          "node_id": "MDQ6VXNlcjU5NTI0ODE=",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/devsnek",
+          "type": "User",
+          "site_admin": false
+        },
+        "committer": {
+          "login": "night",
+          "id": 2942184,
+          "node_id": "MDQ6VXNlcjI5NDIxODQ=",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/night",
+          "type": "User",
+          "site_admin": false
+        },
+        "parents": [
+          {
+            "sha": "da05b49d9116193aaf08bb9aa5b304b6b402f7c3",
+            "url": "https://api.github.com/repos/discord/sample-game-integration/commits/da05b49d9116193aaf08bb9aa5b304b6b402f7c3"
+          }
+        ]
+      },
+      {
+        "sha": "da05b49d9116193aaf08bb9aa5b304b6b402f7c3",
+        "node_id": "MDY6Q29tbWl0NjY2MDM5MDA6ZGEwNWI0OWQ5MTE2MTkzYWFmMDhiYjlhYTViMzA0YjZiNDAyZjdjMw==",
+        "commit": {
+          "author": {
+            "name": "Andy Dill",
+            "email": "andy@discordapp.com",
+            "date": "2017-05-06T17:42:33Z"
+          },
+          "committer": {
+            "name": "Zack",
+            "email": "night@users.noreply.github.com",
+            "date": "2017-05-06T17:42:33Z"
+          },
+          "message": "corrected redirect uri in README; added dep on create-react-class (#1)",
+          "tree": {
+            "sha": "ffd4777bdd5cdddcb41fa68a58922cdb524b1fec",
+            "url": "https://api.github.com/repos/discord/sample-game-integration/git/trees/ffd4777bdd5cdddcb41fa68a58922cdb524b1fec"
+          },
+          "url": "https://api.github.com/repos/discord/sample-game-integration/git/commits/da05b49d9116193aaf08bb9aa5b304b6b402f7c3",
+          "comment_count": 0,
+          "verification": {
+            "verified": false,
+            "reason": "unsigned",
+            "signature": null,
+            "payload": null
+          }
+        },
+        "url": "https://api.github.com/repos/discord/sample-game-integration/commits/da05b49d9116193aaf08bb9aa5b304b6b402f7c3",
+        "author": {
+          "login": "adill",
+          "id": 144914,
+          "node_id": "MDQ6VXNlcjE0NDkxNA==",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/adill",
+          "type": "User",
+          "site_admin": false
+        },
+        "committer": {
+          "login": "night",
+          "id": 2942184,
+          "node_id": "MDQ6VXNlcjI5NDIxODQ=",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/night",
+          "type": "User",
+          "site_admin": false
+        },
+        "parents": [
+          {
+            "sha": "4ad9bc0695b55a3010e04dee8ab43b10e18e2694",
+            "url": "https://api.github.com/repos/discord/sample-game-integration/commits/4ad9bc0695b55a3010e04dee8ab43b10e18e2694"
+          }
+        ]
+      },
+      {
+        "sha": "4ad9bc0695b55a3010e04dee8ab43b10e18e2694",
+        "node_id": "MDY6Q29tbWl0NjY2MDM5MDA6NGFkOWJjMDY5NWI1NWEzMDEwZTA0ZGVlOGFiNDNiMTBlMThlMjY5NA==",
+        "commit": {
+          "author": {
+            "name": "Zack",
+            "email": "zack@discordapp.com",
+            "date": "2017-02-06T07:45:45Z"
+          },
+          "committer": {
+            "name": "Zack",
+            "email": "zack@discordapp.com",
+            "date": "2017-02-06T07:45:45Z"
+          },
+          "message": "token exchange requires client_secret",
+          "tree": {
+            "sha": "4c68aa389b1f0dc7bc2d8dec8a0b158765d37366",
+            "url": "https://api.github.com/repos/discord/sample-game-integration/git/trees/4c68aa389b1f0dc7bc2d8dec8a0b158765d37366"
+          },
+          "url": "https://api.github.com/repos/discord/sample-game-integration/git/commits/4ad9bc0695b55a3010e04dee8ab43b10e18e2694",
+          "comment_count": 0,
+          "verification": {
+            "verified": false,
+            "reason": "unsigned",
+            "signature": null,
+            "payload": null
+          }
+        },
+        "url": "https://api.github.com/repos/discord/sample-game-integration/commits/4ad9bc0695b55a3010e04dee8ab43b10e18e2694",
+        "author": {
+          "login": "night",
+          "id": 2942184,
+          "node_id": "MDQ6VXNlcjI5NDIxODQ=",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/night",
+          "type": "User",
+          "site_admin": false
+        },
+        "committer": {
+          "login": "night",
+          "id": 2942184,
+          "node_id": "MDQ6VXNlcjI5NDIxODQ=",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/night",
+          "type": "User",
+          "site_admin": false
+        },
+        "parents": [
+          {
+            "sha": "e7ed2fb6b9c2da39d7b6a5412c78c760f7ccbe00",
+            "url": "https://api.github.com/repos/discord/sample-game-integration/commits/e7ed2fb6b9c2da39d7b6a5412c78c760f7ccbe00"
+          }
+        ]
+      },
+      {
+        "sha": "e7ed2fb6b9c2da39d7b6a5412c78c760f7ccbe00",
+        "node_id": "MDY6Q29tbWl0NjY2MDM5MDA6ZTdlZDJmYjZiOWMyZGEzOWQ3YjZhNTQxMmM3OGM3NjBmN2NjYmUwMA==",
+        "commit": {
+          "author": {
+            "name": "Jason Citron",
+            "email": "jasoncitron@Jasons-MacBook-Pro.local",
+            "date": "2017-01-14T01:09:14Z"
+          },
+          "committer": {
+            "name": "Jason Citron",
+            "email": "jason.citron@gmail.com",
+            "date": "2017-01-14T01:21:30Z"
+          },
+          "message": "Convert servers to use Group DMs",
+          "tree": {
+            "sha": "1d8d527864981dda68b4a8ea7bf9e20177b1b510",
+            "url": "https://api.github.com/repos/discord/sample-game-integration/git/trees/1d8d527864981dda68b4a8ea7bf9e20177b1b510"
+          },
+          "url": "https://api.github.com/repos/discord/sample-game-integration/git/commits/e7ed2fb6b9c2da39d7b6a5412c78c760f7ccbe00",
+          "comment_count": 0,
+          "verification": {
+            "verified": false,
+            "reason": "unsigned",
+            "signature": null,
+            "payload": null
+          }
+        },
+        "url": "https://api.github.com/repos/discord/sample-game-integration/commits/e7ed2fb6b9c2da39d7b6a5412c78c760f7ccbe00",
+        "author": null,
+        "committer": {
+          "login": "jasoncitron",
+          "id": 90868,
+          "node_id": "MDQ6VXNlcjkwODY4",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/jasoncitron",
+          "type": "User",
+          "site_admin": false
+        },
+        "parents": [
+          {
+            "sha": "892738368e43e4e447df80e35c783722247fad6e",
+            "url": "https://api.github.com/repos/discord/sample-game-integration/commits/892738368e43e4e447df80e35c783722247fad6e"
+          }
+        ]
+      }
+    ],
+    "releases": [],
+    "issues": [
+      {
+        "url": "https://api.github.com/repos/discord/sample-game-integration/issues/4",
+        "id": 723909590,
+        "node_id": "MDExOlB1bGxSZXF1ZXN0NTA1MzkzOTM3",
+        "number": 4,
+        "title": "Update README.md",
+        "user": {
+          "login": "billyeatcookies",
+          "id": 70792552,
+          "node_id": "MDQ6VXNlcjcwNzkyNTUy",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/billyeatcookies",
+          "type": "User",
+          "site_admin": false
+        },
+        "labels": [],
+        "state": "closed",
+        "locked": false,
+        "assignee": null,
+        "assignees": [],
+        "milestone": null,
+        "comments": 0,
+        "created_at": "2020-10-18T05:28:51Z",
+        "updated_at": "2023-02-17T14:21:41Z",
+        "closed_at": "2023-02-17T14:21:41Z",
+        "author_association": "NONE",
+        "active_lock_reason": null,
+        "draft": false,
+        "pull_request": {
+          "url": "https://api.github.com/repos/discord/sample-game-integration/pulls/4",
+          "merged_at": null
+        },
+        "body": null,
+        "reactions": {
+          "url": "https://api.github.com/repos/discord/sample-game-integration/issues/4/reactions",
+          "total_count": 0,
+          "+1": 0,
+          "-1": 0,
+          "laugh": 0,
+          "hooray": 0,
+          "confused": 0,
+          "heart": 0,
+          "rocket": 0,
+          "eyes": 0
+        },
+        "performed_via_github_app": null,
+        "state_reason": null
+      },
+      {
+        "url": "https://api.github.com/repos/discord/sample-game-integration/issues/3",
+        "id": 256329074,
+        "node_id": "MDExOlB1bGxSZXF1ZXN0MTQwMDkzNjQy",
+        "number": 3,
+        "title": "discordapp.io is no longer used",
+        "user": {
+          "login": "devsnek",
+          "id": 5952481,
+          "node_id": "MDQ6VXNlcjU5NTI0ODE=",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/devsnek",
+          "type": "User",
+          "site_admin": false
+        },
+        "labels": [],
+        "state": "closed",
+        "locked": false,
+        "assignee": null,
+        "assignees": [],
+        "milestone": null,
+        "comments": 0,
+        "created_at": "2017-09-08T18:01:18Z",
+        "updated_at": "2017-09-08T18:02:26Z",
+        "closed_at": "2017-09-08T18:01:59Z",
+        "author_association": "MEMBER",
+        "active_lock_reason": null,
+        "draft": false,
+        "pull_request": {
+          "url": "https://api.github.com/repos/discord/sample-game-integration/pulls/3",
+          "merged_at": "2017-09-08T18:01:59Z"
+        },
+        "body": "",
+        "reactions": {
+          "url": "https://api.github.com/repos/discord/sample-game-integration/issues/3/reactions",
+          "total_count": 0,
+          "+1": 0,
+          "-1": 0,
+          "laugh": 0,
+          "hooray": 0,
+          "confused": 0,
+          "heart": 0,
+          "rocket": 0,
+          "eyes": 0
+        },
+        "performed_via_github_app": null,
+        "state_reason": null
+      },
+      {
+        "url": "https://api.github.com/repos/discord/sample-game-integration/issues/2",
+        "id": 254835021,
+        "node_id": "MDExOlB1bGxSZXF1ZXN0MTM5MDI1ODY5",
+        "number": 2,
+        "title": "fix state message for example",
+        "user": {
+          "login": "devsnek",
+          "id": 5952481,
+          "node_id": "MDQ6VXNlcjU5NTI0ODE=",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/devsnek",
+          "type": "User",
+          "site_admin": false
+        },
+        "labels": [],
+        "state": "closed",
+        "locked": false,
+        "assignee": null,
+        "assignees": [],
+        "milestone": null,
+        "comments": 0,
+        "created_at": "2017-09-02T20:47:00Z",
+        "updated_at": "2017-09-08T17:57:36Z",
+        "closed_at": "2017-09-08T17:15:10Z",
+        "author_association": "MEMBER",
+        "active_lock_reason": null,
+        "draft": false,
+        "pull_request": {
+          "url": "https://api.github.com/repos/discord/sample-game-integration/pulls/2",
+          "merged_at": "2017-09-08T17:15:10Z"
+        },
+        "body": "Object.prototype.toString returns `[object Object]`, so you should explicitly use the code and reason props from the close event",
+        "reactions": {
+          "url": "https://api.github.com/repos/discord/sample-game-integration/issues/2/reactions",
+          "total_count": 0,
+          "+1": 0,
+          "-1": 0,
+          "laugh": 0,
+          "hooray": 0,
+          "confused": 0,
+          "heart": 0,
+          "rocket": 0,
+          "eyes": 0
+        },
+        "performed_via_github_app": null,
+        "state_reason": null
+      },
+      {
+        "url": "https://api.github.com/repos/discord/sample-game-integration/issues/1",
+        "id": 226739168,
+        "node_id": "MDExOlB1bGxSZXF1ZXN0MTE5Mjg3MTkz",
+        "number": 1,
+        "title": "corrected redirect uri in README; added dep on create-react-class",
+        "user": {
+          "login": "adill",
+          "id": 144914,
+          "node_id": "MDQ6VXNlcjE0NDkxNA==",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/adill",
+          "type": "User",
+          "site_admin": false
+        },
+        "labels": [],
+        "state": "closed",
+        "locked": false,
+        "assignee": null,
+        "assignees": [],
+        "milestone": null,
+        "comments": 0,
+        "created_at": "2017-05-06T04:57:10Z",
+        "updated_at": "2017-05-06T17:42:36Z",
+        "closed_at": "2017-05-06T17:42:34Z",
+        "author_association": "MEMBER",
+        "active_lock_reason": null,
+        "draft": false,
+        "pull_request": {
+          "url": "https://api.github.com/repos/discord/sample-game-integration/pulls/1",
+          "merged_at": "2017-05-06T17:42:34Z"
+        },
+        "body": "@night sane?",
+        "reactions": {
+          "url": "https://api.github.com/repos/discord/sample-game-integration/issues/1/reactions",
+          "total_count": 0,
+          "+1": 0,
+          "-1": 0,
+          "laugh": 0,
+          "hooray": 0,
+          "confused": 0,
+          "heart": 0,
+          "rocket": 0,
+          "eyes": 0
+        },
+        "performed_via_github_app": null,
+        "state_reason": null
+      }
+    ],
+    "pullRequests": []
+  }
+}

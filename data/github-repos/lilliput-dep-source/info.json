@@ -1,0 +1,332 @@
+{
+  "id": 108476076,
+  "node_id": "MDEwOlJlcG9zaXRvcnkxMDg0NzYwNzY=",
+  "name": "lilliput-dep-source",
+  "full_name": "discord/lilliput-dep-source",
+  "private": false,
+  "owner": {
+    "login": "discord",
+    "id": 1965106,
+    "node_id": "MDEyOk9yZ2FuaXphdGlvbjE5NjUxMDY=",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/discord",
+    "type": "Organization",
+    "site_admin": false
+  },
+  "description": "Convenient source repo for Lilliput's dependencies",
+  "fork": false,
+  "url": "https://api.github.com/repos/discord/lilliput-dep-source",
+  "created_at": "2017-10-26T23:26:03Z",
+  "updated_at": "2022-12-06T18:36:03Z",
+  "pushed_at": "2022-09-20T01:57:57Z",
+  "homepage": null,
+  "size": 113271,
+  "stargazers_count": 3,
+  "watchers_count": 3,
+  "language": null,
+  "has_issues": true,
+  "has_projects": true,
+  "has_downloads": true,
+  "has_wiki": true,
+  "has_pages": false,
+  "has_discussions": false,
+  "forks_count": 5,
+  "archived": false,
+  "disabled": false,
+  "open_issues_count": 0,
+  "license": null,
+  "allow_forking": true,
+  "is_template": false,
+  "web_commit_signoff_required": false,
+  "topics": [],
+  "visibility": "public",
+  "forks": 5,
+  "open_issues": 0,
+  "watchers": 3,
+  "default_branch": "master",
+  "permissions": {
+    "admin": false,
+    "maintain": false,
+    "push": false,
+    "triage": false,
+    "pull": false
+  },
+  "branches": [],
+  "last5": {
+    "commits": [
+      {
+        "sha": "0c6b005b495d7acdfdd4e615eae26820f17b7c34",
+        "node_id": "C_kwDOBnc2rNoAKDBjNmIwMDViNDk1ZDdhY2RmZGQ0ZTYxNWVhZTI2ODIwZjE3YjdjMzQ",
+        "commit": {
+          "author": {
+            "name": "Brian Armstrong",
+            "email": "brian.armstrong@discordapp.com",
+            "date": "2022-09-20T01:57:45Z"
+          },
+          "committer": {
+            "name": "Brian Armstrong",
+            "email": "brian.armstrong@discordapp.com",
+            "date": "2022-09-20T01:57:45Z"
+          },
+          "message": "reject webp with animation",
+          "tree": {
+            "sha": "252b5aa4c650cf95edd253e06c28930d4ba0c5cd",
+            "url": "https://api.github.com/repos/discord/lilliput-dep-source/git/trees/252b5aa4c650cf95edd253e06c28930d4ba0c5cd"
+          },
+          "url": "https://api.github.com/repos/discord/lilliput-dep-source/git/commits/0c6b005b495d7acdfdd4e615eae26820f17b7c34",
+          "comment_count": 0,
+          "verification": {
+            "verified": false,
+            "reason": "unsigned",
+            "signature": null,
+            "payload": null
+          }
+        },
+        "url": "https://api.github.com/repos/discord/lilliput-dep-source/commits/0c6b005b495d7acdfdd4e615eae26820f17b7c34",
+        "author": {
+          "login": "brian-armstrong-discord",
+          "id": 25939803,
+          "node_id": "MDQ6VXNlcjI1OTM5ODAz",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/brian-armstrong-discord",
+          "type": "User",
+          "site_admin": false
+        },
+        "committer": {
+          "login": "brian-armstrong-discord",
+          "id": 25939803,
+          "node_id": "MDQ6VXNlcjI1OTM5ODAz",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/brian-armstrong-discord",
+          "type": "User",
+          "site_admin": false
+        },
+        "parents": [
+          {
+            "sha": "e33b2fb25ad70e3c52f49a37aa0597588cd17acc",
+            "url": "https://api.github.com/repos/discord/lilliput-dep-source/commits/e33b2fb25ad70e3c52f49a37aa0597588cd17acc"
+          }
+        ]
+      },
+      {
+        "sha": "e33b2fb25ad70e3c52f49a37aa0597588cd17acc",
+        "node_id": "C_kwDOBnc2rNoAKGUzM2IyZmIyNWFkNzBlM2M1MmY0OWEzN2FhMDU5NzU4OGNkMTdhY2M",
+        "commit": {
+          "author": {
+            "name": "Brian Armstrong",
+            "email": "brian.armstrong@discordapp.com",
+            "date": "2022-09-16T20:43:47Z"
+          },
+          "committer": {
+            "name": "Brian Armstrong",
+            "email": "brian.armstrong@discordapp.com",
+            "date": "2022-09-16T20:43:47Z"
+          },
+          "message": "update giflib to 5.2.1",
+          "tree": {
+            "sha": "e66e4f3bb0d56e41feb7929849c26f31ec597016",
+            "url": "https://api.github.com/repos/discord/lilliput-dep-source/git/trees/e66e4f3bb0d56e41feb7929849c26f31ec597016"
+          },
+          "url": "https://api.github.com/repos/discord/lilliput-dep-source/git/commits/e33b2fb25ad70e3c52f49a37aa0597588cd17acc",
+          "comment_count": 0,
+          "verification": {
+            "verified": false,
+            "reason": "unsigned",
+            "signature": null,
+            "payload": null
+          }
+        },
+        "url": "https://api.github.com/repos/discord/lilliput-dep-source/commits/e33b2fb25ad70e3c52f49a37aa0597588cd17acc",
+        "author": {
+          "login": "brian-armstrong-discord",
+          "id": 25939803,
+          "node_id": "MDQ6VXNlcjI1OTM5ODAz",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/brian-armstrong-discord",
+          "type": "User",
+          "site_admin": false
+        },
+        "committer": {
+          "login": "brian-armstrong-discord",
+          "id": 25939803,
+          "node_id": "MDQ6VXNlcjI1OTM5ODAz",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/brian-armstrong-discord",
+          "type": "User",
+          "site_admin": false
+        },
+        "parents": [
+          {
+            "sha": "cc28151d853e7e53ae14fe2fef6e2c688e42b631",
+            "url": "https://api.github.com/repos/discord/lilliput-dep-source/commits/cc28151d853e7e53ae14fe2fef6e2c688e42b631"
+          }
+        ]
+      },
+      {
+        "sha": "cc28151d853e7e53ae14fe2fef6e2c688e42b631",
+        "node_id": "C_kwDOBnc2rNoAKGNjMjgxNTFkODUzZTdlNTNhZTE0ZmUyZmVmNmUyYzY4OGU0MmI2MzE",
+        "commit": {
+          "author": {
+            "name": "Brian Armstrong",
+            "email": "brian.armstrong@discordapp.com",
+            "date": "2022-09-16T20:33:43Z"
+          },
+          "committer": {
+            "name": "Brian Armstrong",
+            "email": "brian.armstrong@discordapp.com",
+            "date": "2022-09-16T20:33:43Z"
+          },
+          "message": "update bzip2 to 1.0.8",
+          "tree": {
+            "sha": "f70e2e4aea83266d893c8cb0c55943ea836bf693",
+            "url": "https://api.github.com/repos/discord/lilliput-dep-source/git/trees/f70e2e4aea83266d893c8cb0c55943ea836bf693"
+          },
+          "url": "https://api.github.com/repos/discord/lilliput-dep-source/git/commits/cc28151d853e7e53ae14fe2fef6e2c688e42b631",
+          "comment_count": 0,
+          "verification": {
+            "verified": false,
+            "reason": "unsigned",
+            "signature": null,
+            "payload": null
+          }
+        },
+        "url": "https://api.github.com/repos/discord/lilliput-dep-source/commits/cc28151d853e7e53ae14fe2fef6e2c688e42b631",
+        "author": {
+          "login": "brian-armstrong-discord",
+          "id": 25939803,
+          "node_id": "MDQ6VXNlcjI1OTM5ODAz",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/brian-armstrong-discord",
+          "type": "User",
+          "site_admin": false
+        },
+        "committer": {
+          "login": "brian-armstrong-discord",
+          "id": 25939803,
+          "node_id": "MDQ6VXNlcjI1OTM5ODAz",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/brian-armstrong-discord",
+          "type": "User",
+          "site_admin": false
+        },
+        "parents": [
+          {
+            "sha": "bb633c0e3ed852b66b2ff2982d0b93f06ed1824f",
+            "url": "https://api.github.com/repos/discord/lilliput-dep-source/commits/bb633c0e3ed852b66b2ff2982d0b93f06ed1824f"
+          }
+        ]
+      },
+      {
+        "sha": "bb633c0e3ed852b66b2ff2982d0b93f06ed1824f",
+        "node_id": "C_kwDOBnc2rNoAKGJiNjMzYzBlM2VkODUyYjY2YjJmZjI5ODJkMGI5M2YwNmVkMTgyNGY",
+        "commit": {
+          "author": {
+            "name": "Brian Armstrong",
+            "email": "brian.armstrong@discordapp.com",
+            "date": "2022-09-15T20:28:04Z"
+          },
+          "committer": {
+            "name": "Brian Armstrong",
+            "email": "brian.armstrong@discordapp.com",
+            "date": "2022-09-15T20:28:04Z"
+          },
+          "message": "update ffmpeg to 5.1.1",
+          "tree": {
+            "sha": "896071791a1ff79be330f843101406e04e8817ee",
+            "url": "https://api.github.com/repos/discord/lilliput-dep-source/git/trees/896071791a1ff79be330f843101406e04e8817ee"
+          },
+          "url": "https://api.github.com/repos/discord/lilliput-dep-source/git/commits/bb633c0e3ed852b66b2ff2982d0b93f06ed1824f",
+          "comment_count": 0,
+          "verification": {
+            "verified": false,
+            "reason": "unsigned",
+            "signature": null,
+            "payload": null
+          }
+        },
+        "url": "https://api.github.com/repos/discord/lilliput-dep-source/commits/bb633c0e3ed852b66b2ff2982d0b93f06ed1824f",
+        "author": {
+          "login": "brian-armstrong-discord",
+          "id": 25939803,
+          "node_id": "MDQ6VXNlcjI1OTM5ODAz",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/brian-armstrong-discord",
+          "type": "User",
+          "site_admin": false
+        },
+        "committer": {
+          "login": "brian-armstrong-discord",
+          "id": 25939803,
+          "node_id": "MDQ6VXNlcjI1OTM5ODAz",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/brian-armstrong-discord",
+          "type": "User",
+          "site_admin": false
+        },
+        "parents": [
+          {
+            "sha": "6ed7a39d1b7b9c1e3734307c243237cc5b7c2830",
+            "url": "https://api.github.com/repos/discord/lilliput-dep-source/commits/6ed7a39d1b7b9c1e3734307c243237cc5b7c2830"
+          }
+        ]
+      },
+      {
+        "sha": "6ed7a39d1b7b9c1e3734307c243237cc5b7c2830",
+        "node_id": "C_kwDOBnc2rNoAKDZlZDdhMzlkMWI3YjljMWUzNzM0MzA3YzI0MzIzN2NjNWI3YzI4MzA",
+        "commit": {
+          "author": {
+            "name": "Brian Armstrong",
+            "email": "brian.armstrong@discordapp.com",
+            "date": "2022-09-15T18:47:20Z"
+          },
+          "committer": {
+            "name": "Brian Armstrong",
+            "email": "brian.armstrong@discordapp.com",
+            "date": "2022-09-15T18:47:20Z"
+          },
+          "message": "update libpng to 1.6.38",
+          "tree": {
+            "sha": "dae18e6dd27dba8e7af012103985eeda641cbc08",
+            "url": "https://api.github.com/repos/discord/lilliput-dep-source/git/trees/dae18e6dd27dba8e7af012103985eeda641cbc08"
+          },
+          "url": "https://api.github.com/repos/discord/lilliput-dep-source/git/commits/6ed7a39d1b7b9c1e3734307c243237cc5b7c2830",
+          "comment_count": 0,
+          "verification": {
+            "verified": false,
+            "reason": "unsigned",
+            "signature": null,
+            "payload": null
+          }
+        },
+        "url": "https://api.github.com/repos/discord/lilliput-dep-source/commits/6ed7a39d1b7b9c1e3734307c243237cc5b7c2830",
+        "author": {
+          "login": "brian-armstrong-discord",
+          "id": 25939803,
+          "node_id": "MDQ6VXNlcjI1OTM5ODAz",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/brian-armstrong-discord",
+          "type": "User",
+          "site_admin": false
+        },
+        "committer": {
+          "login": "brian-armstrong-discord",
+          "id": 25939803,
+          "node_id": "MDQ6VXNlcjI1OTM5ODAz",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/brian-armstrong-discord",
+          "type": "User",
+          "site_admin": false
+        },
+        "parents": [
+          {
+            "sha": "898ab4fc25dd50f11911757058428cb661cc3ded",
+            "url": "https://api.github.com/repos/discord/lilliput-dep-source/commits/898ab4fc25dd50f11911757058428cb661cc3ded"
+          }
+        ]
+      }
+    ],
+    "releases": [],
+    "issues": [],
+    "pullRequests": []
+  }
+}

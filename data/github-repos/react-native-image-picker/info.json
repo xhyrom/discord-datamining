@@ -1,0 +1,579 @@
+{
+  "id": 405283930,
+  "node_id": "MDEwOlJlcG9zaXRvcnk0MDUyODM5MzA=",
+  "name": "react-native-image-picker",
+  "full_name": "discord/react-native-image-picker",
+  "private": false,
+  "owner": {
+    "login": "discord",
+    "id": 1965106,
+    "node_id": "MDEyOk9yZ2FuaXphdGlvbjE5NjUxMDY=",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/discord",
+    "type": "Organization",
+    "site_admin": false
+  },
+  "description": ":sunrise_over_mountains: A React Native module that allows you to use native UI to select media from the device library or directly from the camera.",
+  "fork": true,
+  "url": "https://api.github.com/repos/discord/react-native-image-picker",
+  "created_at": "2021-09-11T04:36:51Z",
+  "updated_at": "2023-04-18T02:13:18Z",
+  "pushed_at": "2023-04-07T15:38:25Z",
+  "homepage": "",
+  "size": 2270,
+  "stargazers_count": 4,
+  "watchers_count": 4,
+  "language": "Java",
+  "has_issues": false,
+  "has_projects": true,
+  "has_downloads": true,
+  "has_wiki": false,
+  "has_pages": false,
+  "has_discussions": false,
+  "forks_count": 4,
+  "archived": false,
+  "disabled": false,
+  "open_issues_count": 0,
+  "license": {
+    "key": "mit",
+    "name": "MIT License",
+    "spdx_id": "MIT",
+    "url": "https://api.github.com/licenses/mit",
+    "node_id": "MDc6TGljZW5zZTEz"
+  },
+  "allow_forking": true,
+  "is_template": false,
+  "web_commit_signoff_required": false,
+  "topics": [],
+  "visibility": "public",
+  "forks": 4,
+  "open_issues": 0,
+  "watchers": 4,
+  "default_branch": "main",
+  "permissions": {
+    "admin": false,
+    "maintain": false,
+    "push": false,
+    "triage": false,
+    "pull": false
+  },
+  "branches": [],
+  "last5": {
+    "commits": [
+      {
+        "sha": "feafc8810420e08af41fe898d9a2372e835185e0",
+        "node_id": "C_kwDOGCgkWtoAKGZlYWZjODgxMDQyMGUwOGFmNDFmZTg5OGQ5YTIzNzJlODM1MTg1ZTA",
+        "commit": {
+          "author": {
+            "name": "semantic-release-bot",
+            "email": "semantic-release-bot@martynus.net",
+            "date": "2022-01-17T15:41:54Z"
+          },
+          "committer": {
+            "name": "semantic-release-bot",
+            "email": "semantic-release-bot@martynus.net",
+            "date": "2022-01-17T15:41:54Z"
+          },
+          "message": "chore(release): 4.7.1 [skip ci]\n\n## [4.7.1](https://github.com/react-native-image-picker/react-native-image-picker/compare/v4.7.0...v4.7.1) (2022-01-17)\n\n### Bug Fixes\n\n* **timezone:** mismatch in date from photo in system vs date returned by library ([#1920](https://github.com/react-native-image-picker/react-native-image-picker/issues/1920)) ([e0933b3](https://github.com/react-native-image-picker/react-native-image-picker/commit/e0933b3b218f13b67c6877215e57e9d09cc8c844))",
+          "tree": {
+            "sha": "64af50040f0f19667ea55a7a0d77d95cb2f1ca72",
+            "url": "https://api.github.com/repos/discord/react-native-image-picker/git/trees/64af50040f0f19667ea55a7a0d77d95cb2f1ca72"
+          },
+          "url": "https://api.github.com/repos/discord/react-native-image-picker/git/commits/feafc8810420e08af41fe898d9a2372e835185e0",
+          "comment_count": 0,
+          "verification": {
+            "verified": false,
+            "reason": "unsigned",
+            "signature": null,
+            "payload": null
+          }
+        },
+        "url": "https://api.github.com/repos/discord/react-native-image-picker/commits/feafc8810420e08af41fe898d9a2372e835185e0",
+        "author": {
+          "login": "semantic-release-bot",
+          "id": 32174276,
+          "node_id": "MDQ6VXNlcjMyMTc0Mjc2",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/semantic-release-bot",
+          "type": "User",
+          "site_admin": false
+        },
+        "committer": {
+          "login": "semantic-release-bot",
+          "id": 32174276,
+          "node_id": "MDQ6VXNlcjMyMTc0Mjc2",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/semantic-release-bot",
+          "type": "User",
+          "site_admin": false
+        },
+        "parents": [
+          {
+            "sha": "e0933b3b218f13b67c6877215e57e9d09cc8c844",
+            "url": "https://api.github.com/repos/discord/react-native-image-picker/commits/e0933b3b218f13b67c6877215e57e9d09cc8c844"
+          }
+        ]
+      },
+      {
+        "sha": "e0933b3b218f13b67c6877215e57e9d09cc8c844",
+        "node_id": "C_kwDOGCgkWtoAKGUwOTMzYjNiMjE4ZjEzYjY3YzY4NzcyMTVlNTdlOWQwOWNjOGM4NDQ",
+        "commit": {
+          "author": {
+            "name": "Luke Brandon Farrell",
+            "email": "lukebrandonfarrell@gmail.com",
+            "date": "2022-01-17T15:40:51Z"
+          },
+          "committer": {
+            "name": "GitHub",
+            "email": "noreply@github.com",
+            "date": "2022-01-17T15:40:51Z"
+          },
+          "message": "fix(timezone): mismatch in date from photo in system vs date returned by library (#1920)",
+          "tree": {
+            "sha": "20bdd51c43fc79bc6364ff49f8406f11aea1a658",
+            "url": "https://api.github.com/repos/discord/react-native-image-picker/git/trees/20bdd51c43fc79bc6364ff49f8406f11aea1a658"
+          },
+          "url": "https://api.github.com/repos/discord/react-native-image-picker/git/commits/e0933b3b218f13b67c6877215e57e9d09cc8c844",
+          "comment_count": 0,
+          "verification": {
+            "verified": true,
+            "reason": "valid",
+            "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsBcBAABCAAQBQJh5Y4DCRBK7hj4Ov3rIwAAlwIIAI9ZrZAR0rvvJvdtNPRBZPDp\nH7KXWypZGCL8gu2Rgklu02y4d4k38kyr/Jfd7XM1Ri8A+COi3TgPPuM8oHeS/P8e\nwbAG5/tHSPu8y0CZ8RaW1Wf/J9SYaWTRLsi6nXMKH7ZpB+7BcgVZrno+X3+KfeyE\nOHodIdLSOskuABUzvcMpLDYDiEYziS44GZDSj9908hLBItoBWogEoYHCg5QhvJ+l\nsqMQmoWiD2DaLdUHwILk93/pIIIDsDK82NSnCPR+GOQvtNRkIoMUlNZMrroz3WT8\nmOo/g1P4jcKfjQ+QreQYIPejZxHSDm56wgr/TPOYP58CLPutfdlI9Je9g3ZOZZg=\n=NxNT\n-----END PGP SIGNATURE-----\n",
+            "payload": "tree 20bdd51c43fc79bc6364ff49f8406f11aea1a658\nparent 478a897004e5f161bc8fdb2cac6686c3e7b044b1\nauthor Luke Brandon Farrell <lukebrandonfarrell@gmail.com> 1642434051 +0100\ncommitter GitHub <noreply@github.com> 1642434051 +0000\n\nfix(timezone): mismatch in date from photo in system vs date returned by library (#1920)\n\n"
+          }
+        },
+        "url": "https://api.github.com/repos/discord/react-native-image-picker/commits/e0933b3b218f13b67c6877215e57e9d09cc8c844",
+        "author": {
+          "login": "lukebrandonfarrell",
+          "id": 18139277,
+          "node_id": "MDQ6VXNlcjE4MTM5Mjc3",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/lukebrandonfarrell",
+          "type": "User",
+          "site_admin": false
+        },
+        "committer": {
+          "login": "web-flow",
+          "id": 19864447,
+          "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/web-flow",
+          "type": "User",
+          "site_admin": false
+        },
+        "parents": [
+          {
+            "sha": "478a897004e5f161bc8fdb2cac6686c3e7b044b1",
+            "url": "https://api.github.com/repos/discord/react-native-image-picker/commits/478a897004e5f161bc8fdb2cac6686c3e7b044b1"
+          }
+        ]
+      },
+      {
+        "sha": "478a897004e5f161bc8fdb2cac6686c3e7b044b1",
+        "node_id": "C_kwDOGCgkWtoAKDQ3OGE4OTcwMDRlNWYxNjFiYzhmZGIyY2FjNjY4NmMzZTdiMDQ0YjE",
+        "commit": {
+          "author": {
+            "name": "semantic-release-bot",
+            "email": "semantic-release-bot@martynus.net",
+            "date": "2022-01-04T13:28:29Z"
+          },
+          "committer": {
+            "name": "semantic-release-bot",
+            "email": "semantic-release-bot@martynus.net",
+            "date": "2022-01-04T13:28:29Z"
+          },
+          "message": "chore(release): 4.7.0 [skip ci]\n\n# [4.7.0](https://github.com/react-native-image-picker/react-native-image-picker/compare/v4.6.1...v4.7.0) (2022-01-04)\n\n### Features\n\n* **metadata:** added width, height and datetime to video for iOS and Android ([#1891](https://github.com/react-native-image-picker/react-native-image-picker/issues/1891)) ([1394c23](https://github.com/react-native-image-picker/react-native-image-picker/commit/1394c2385718588610531561ebac2b407862bfe7))",
+          "tree": {
+            "sha": "05d04a67b9249d409dfda681a7172020ee3284d4",
+            "url": "https://api.github.com/repos/discord/react-native-image-picker/git/trees/05d04a67b9249d409dfda681a7172020ee3284d4"
+          },
+          "url": "https://api.github.com/repos/discord/react-native-image-picker/git/commits/478a897004e5f161bc8fdb2cac6686c3e7b044b1",
+          "comment_count": 0,
+          "verification": {
+            "verified": false,
+            "reason": "unsigned",
+            "signature": null,
+            "payload": null
+          }
+        },
+        "url": "https://api.github.com/repos/discord/react-native-image-picker/commits/478a897004e5f161bc8fdb2cac6686c3e7b044b1",
+        "author": {
+          "login": "semantic-release-bot",
+          "id": 32174276,
+          "node_id": "MDQ6VXNlcjMyMTc0Mjc2",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/semantic-release-bot",
+          "type": "User",
+          "site_admin": false
+        },
+        "committer": {
+          "login": "semantic-release-bot",
+          "id": 32174276,
+          "node_id": "MDQ6VXNlcjMyMTc0Mjc2",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/semantic-release-bot",
+          "type": "User",
+          "site_admin": false
+        },
+        "parents": [
+          {
+            "sha": "1394c2385718588610531561ebac2b407862bfe7",
+            "url": "https://api.github.com/repos/discord/react-native-image-picker/commits/1394c2385718588610531561ebac2b407862bfe7"
+          }
+        ]
+      },
+      {
+        "sha": "1394c2385718588610531561ebac2b407862bfe7",
+        "node_id": "C_kwDOGCgkWtoAKDEzOTRjMjM4NTcxODU4ODYxMDUzMTU2MWViYWMyYjQwNzg2MmJmZTc",
+        "commit": {
+          "author": {
+            "name": "Luke Brandon Farrell",
+            "email": "lukebrandonfarrell@gmail.com",
+            "date": "2022-01-04T13:26:52Z"
+          },
+          "committer": {
+            "name": "GitHub",
+            "email": "noreply@github.com",
+            "date": "2022-01-04T13:26:52Z"
+          },
+          "message": "feat(metadata): added width, height and datetime to video for iOS and Android (#1891)\n\n* feat(metadata): added width, height and datetime to video for iOS and Android\r\n\r\n* feat(metadata): fixed up metadata for timestamp, width and height on Android\r\n\r\n* feat(metadata): added abstract methods to Metadata class",
+          "tree": {
+            "sha": "c195d0404ec76192c9647eb8abf8016ffb781e80",
+            "url": "https://api.github.com/repos/discord/react-native-image-picker/git/trees/c195d0404ec76192c9647eb8abf8016ffb781e80"
+          },
+          "url": "https://api.github.com/repos/discord/react-native-image-picker/git/commits/1394c2385718588610531561ebac2b407862bfe7",
+          "comment_count": 0,
+          "verification": {
+            "verified": true,
+            "reason": "valid",
+            "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsBcBAABCAAQBQJh1EscCRBK7hj4Ov3rIwAA96wIAKGOg0u//fNM7V95oiEHoEOX\nXUYyh3CN4JZ+U4ZWiII8fzTN5xhuTwaGeUImqIBvNUr8qqifggfShZryWHM5o84d\nE0I5yi4CRrpycFYLt6vxtE4PtAwUjQDnGVFR9RX0DG52sGERhSLXzp3ptFNVxCKk\nMr4d3vRv6l0PC8A6LAS3MLRdtLzpBwpyC9ydLtxG6BM57tvMtGIEoE0zff7m1j/D\no2j9hWTxjC0QG2ZgZscZzIqNbyBfnUpnceuvE+/sXioI+eRDksumb5A/uYMQBXeG\nkYEU6geJFNhOZDJ2lMWD+xNElaX2eZ3McluHpsyww5MxLDMOet81eSMa0dwbdA0=\n=mYBS\n-----END PGP SIGNATURE-----\n",
+            "payload": "tree c195d0404ec76192c9647eb8abf8016ffb781e80\nparent 9a1479d9974079d0d4a21502d6caca5b9a2c90ce\nauthor Luke Brandon Farrell <lukebrandonfarrell@gmail.com> 1641302812 +0000\ncommitter GitHub <noreply@github.com> 1641302812 +0000\n\nfeat(metadata): added width, height and datetime to video for iOS and Android (#1891)\n\n* feat(metadata): added width, height and datetime to video for iOS and Android\r\n\r\n* feat(metadata): fixed up metadata for timestamp, width and height on Android\r\n\r\n* feat(metadata): added abstract methods to Metadata class"
+          }
+        },
+        "url": "https://api.github.com/repos/discord/react-native-image-picker/commits/1394c2385718588610531561ebac2b407862bfe7",
+        "author": {
+          "login": "lukebrandonfarrell",
+          "id": 18139277,
+          "node_id": "MDQ6VXNlcjE4MTM5Mjc3",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/lukebrandonfarrell",
+          "type": "User",
+          "site_admin": false
+        },
+        "committer": {
+          "login": "web-flow",
+          "id": 19864447,
+          "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/web-flow",
+          "type": "User",
+          "site_admin": false
+        },
+        "parents": [
+          {
+            "sha": "9a1479d9974079d0d4a21502d6caca5b9a2c90ce",
+            "url": "https://api.github.com/repos/discord/react-native-image-picker/commits/9a1479d9974079d0d4a21502d6caca5b9a2c90ce"
+          }
+        ]
+      },
+      {
+        "sha": "9a1479d9974079d0d4a21502d6caca5b9a2c90ce",
+        "node_id": "C_kwDOGCgkWtoAKDlhMTQ3OWQ5OTc0MDc5ZDBkNGEyMTUwMmQ2Y2FjYTViOWEyYzkwY2U",
+        "commit": {
+          "author": {
+            "name": "semantic-release-bot",
+            "email": "semantic-release-bot@martynus.net",
+            "date": "2021-12-28T18:40:31Z"
+          },
+          "committer": {
+            "name": "semantic-release-bot",
+            "email": "semantic-release-bot@martynus.net",
+            "date": "2021-12-28T18:40:31Z"
+          },
+          "message": "chore(release): 4.6.1 [skip ci]\n\n## [4.6.1](https://github.com/react-native-image-picker/react-native-image-picker/compare/v4.6.0...v4.6.1) (2021-12-28)\n\n### Bug Fixes\n\n* **videos:** videos not working on iOS 13 and throwing a fatal crash when selected ([#1904](https://github.com/react-native-image-picker/react-native-image-picker/issues/1904)) ([e45c862](https://github.com/react-native-image-picker/react-native-image-picker/commit/e45c8620253da08c6f147ab9b8c11673e4c63778)), closes [#1742](https://github.com/react-native-image-picker/react-native-image-picker/issues/1742) [#1742](https://github.com/react-native-image-picker/react-native-image-picker/issues/1742)",
+          "tree": {
+            "sha": "92abbfd8516bfb3654f9f326de007544817f2e72",
+            "url": "https://api.github.com/repos/discord/react-native-image-picker/git/trees/92abbfd8516bfb3654f9f326de007544817f2e72"
+          },
+          "url": "https://api.github.com/repos/discord/react-native-image-picker/git/commits/9a1479d9974079d0d4a21502d6caca5b9a2c90ce",
+          "comment_count": 0,
+          "verification": {
+            "verified": false,
+            "reason": "unsigned",
+            "signature": null,
+            "payload": null
+          }
+        },
+        "url": "https://api.github.com/repos/discord/react-native-image-picker/commits/9a1479d9974079d0d4a21502d6caca5b9a2c90ce",
+        "author": {
+          "login": "semantic-release-bot",
+          "id": 32174276,
+          "node_id": "MDQ6VXNlcjMyMTc0Mjc2",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/semantic-release-bot",
+          "type": "User",
+          "site_admin": false
+        },
+        "committer": {
+          "login": "semantic-release-bot",
+          "id": 32174276,
+          "node_id": "MDQ6VXNlcjMyMTc0Mjc2",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/semantic-release-bot",
+          "type": "User",
+          "site_admin": false
+        },
+        "parents": [
+          {
+            "sha": "e45c8620253da08c6f147ab9b8c11673e4c63778",
+            "url": "https://api.github.com/repos/discord/react-native-image-picker/commits/e45c8620253da08c6f147ab9b8c11673e4c63778"
+          }
+        ]
+      }
+    ],
+    "releases": [],
+    "issues": [
+      {
+        "url": "https://api.github.com/repos/discord/react-native-image-picker/issues/5",
+        "id": 1629958569,
+        "node_id": "PR_kwDOGCgkWs5MVysd",
+        "number": 5,
+        "title": "[ios] Upgrade to more recent lib code, and enable multi- and pre-selection",
+        "user": {
+          "login": "huderlem",
+          "id": 2229288,
+          "node_id": "MDQ6VXNlcjIyMjkyODg=",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/huderlem",
+          "type": "User",
+          "site_admin": false
+        },
+        "labels": [],
+        "state": "closed",
+        "locked": false,
+        "assignee": null,
+        "assignees": [],
+        "milestone": null,
+        "comments": 0,
+        "created_at": "2023-03-17T21:47:15Z",
+        "updated_at": "2023-03-21T21:57:17Z",
+        "closed_at": "2023-03-21T21:57:17Z",
+        "author_association": "NONE",
+        "active_lock_reason": null,
+        "draft": false,
+        "pull_request": {
+          "url": "https://api.github.com/repos/discord/react-native-image-picker/pulls/5",
+          "merged_at": "2023-03-21T21:57:17Z"
+        },
+        "body": "This PR does a few things:\r\n1. Brings the iOS code closer to the latest version of the `react-native-image-picker`, which has a couple bug fixes and image-data improvements.\r\n2. Enables use of iOS 14+'s `PHPickerViewController`, along with its preselection capabilities.\r\n3. Thoroughly includes `id` as the \"asset local identifier\" in the response's assets.",
+        "reactions": {
+          "url": "https://api.github.com/repos/discord/react-native-image-picker/issues/5/reactions",
+          "total_count": 0,
+          "+1": 0,
+          "-1": 0,
+          "laugh": 0,
+          "hooray": 0,
+          "confused": 0,
+          "heart": 0,
+          "rocket": 0,
+          "eyes": 0
+        },
+        "performed_via_github_app": null,
+        "state_reason": null
+      },
+      {
+        "url": "https://api.github.com/repos/discord/react-native-image-picker/issues/4",
+        "id": 1624269544,
+        "node_id": "PR_kwDOGCgkWs5MClef",
+        "number": 4,
+        "title": "[ios] Fix photo-taking flow on iOS",
+        "user": {
+          "login": "huderlem",
+          "id": 2229288,
+          "node_id": "MDQ6VXNlcjIyMjkyODg=",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/huderlem",
+          "type": "User",
+          "site_admin": false
+        },
+        "labels": [],
+        "state": "closed",
+        "locked": false,
+        "assignee": null,
+        "assignees": [],
+        "milestone": null,
+        "comments": 0,
+        "created_at": "2023-03-14T20:42:04Z",
+        "updated_at": "2023-03-15T20:19:29Z",
+        "closed_at": "2023-03-15T20:19:29Z",
+        "author_association": "NONE",
+        "active_lock_reason": null,
+        "draft": false,
+        "pull_request": {
+          "url": "https://api.github.com/repos/discord/react-native-image-picker/pulls/4",
+          "merged_at": "2023-03-15T20:19:29Z"
+        },
+        "body": "https://app.asana.com/0/1203476622224742/1203406560911150\r\n\r\nThis PR has the same motivation as this previous Android fix: https://github.com/discord/react-native-image-picker/pull/3\r\n\r\nFor iOS, we take a different strategy which exposes the created asset's PhotoKit `localIdentifier` in the response.  This allow JavaScript to match the `localIdentifier` with results form the photo roll.  Note, in the future, we probably want to just match the url itself, but we can't do that until we replace the photo roll code which currently uses the deprecated `ALAssetsLibrary`.\r\n\r\nVideo showing how the taken photo/video will be auto-selected (with an accompanying Discord JavaScript change):\r\n\r\nhttps://user-images.githubusercontent.com/2229288/225131139-17b5b60b-9860-422f-a5cb-a606eb42e069.mov\r\n\r\n",
+        "reactions": {
+          "url": "https://api.github.com/repos/discord/react-native-image-picker/issues/4/reactions",
+          "total_count": 0,
+          "+1": 0,
+          "-1": 0,
+          "laugh": 0,
+          "hooray": 0,
+          "confused": 0,
+          "heart": 0,
+          "rocket": 0,
+          "eyes": 0
+        },
+        "performed_via_github_app": null,
+        "state_reason": null
+      },
+      {
+        "url": "https://api.github.com/repos/discord/react-native-image-picker/issues/3",
+        "id": 1567799717,
+        "node_id": "PR_kwDOGCgkWs5JGMAu",
+        "number": 3,
+        "title": "[RNA][Photo] Fixing taking photo flow",
+        "user": {
+          "login": "charlesx2013",
+          "id": 5563367,
+          "node_id": "MDQ6VXNlcjU1NjMzNjc=",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/charlesx2013",
+          "type": "User",
+          "site_admin": false
+        },
+        "labels": [],
+        "state": "closed",
+        "locked": false,
+        "assignee": null,
+        "assignees": [],
+        "milestone": null,
+        "comments": 0,
+        "created_at": "2023-02-02T10:47:30Z",
+        "updated_at": "2023-02-03T22:56:36Z",
+        "closed_at": "2023-02-03T22:56:36Z",
+        "author_association": "NONE",
+        "active_lock_reason": null,
+        "draft": false,
+        "pull_request": {
+          "url": "https://api.github.com/repos/discord/react-native-image-picker/pulls/3",
+          "merged_at": "2023-02-03T22:56:36Z"
+        },
+        "body": "Problem:\r\n\r\nHere's the current photo taking pipline:\r\n\r\n1. Get photo from camera\r\n2. Save a copy of the photo to a public directory\r\n3. Compress image \r\n4. Save compressed image to temp file\r\n5. Pass compressed image to RN\r\n\r\nThe problem with this is that the compressed image and the copy of the photo saved to the public directory invokes the `createFile` method, which generates a new file name (with a unique uuid) every time it gets called. This means that it's impossible for us to know in the media picker (which fetches from the public directory) if its been selected in the image carousel, since the filenames are different. \r\n\r\nI attempt to amend this by generating a unique uuid that's used to generate all the filenames used to save the images in its various places.\r\n\r\nBefore:\r\n\r\n![image](https://user-images.githubusercontent.com/5563367/216464810-2f34acb4-6ea9-4b54-92bc-dd008643ef78.png)\r\n\r\n\r\n\r\nAfter:\r\n\r\n![image](https://user-images.githubusercontent.com/5563367/216464434-022607bb-98ed-49d9-92ff-5643ea9f42b7.png)\r\n",
+        "reactions": {
+          "url": "https://api.github.com/repos/discord/react-native-image-picker/issues/3/reactions",
+          "total_count": 0,
+          "+1": 0,
+          "-1": 0,
+          "laugh": 0,
+          "hooray": 0,
+          "confused": 0,
+          "heart": 0,
+          "rocket": 0,
+          "eyes": 0
+        },
+        "performed_via_github_app": null,
+        "state_reason": null
+      },
+      {
+        "url": "https://api.github.com/repos/discord/react-native-image-picker/issues/2",
+        "id": 1006785254,
+        "node_id": "PR_kwDOGCgkWs4sQUXI",
+        "number": 2,
+        "title": "4.1.1 - Discord Patches",
+        "user": {
+          "login": "mrkcsc",
+          "id": 658964,
+          "node_id": "MDQ6VXNlcjY1ODk2NA==",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/mrkcsc",
+          "type": "User",
+          "site_admin": false
+        },
+        "labels": [],
+        "state": "closed",
+        "locked": false,
+        "assignee": null,
+        "assignees": [],
+        "milestone": null,
+        "comments": 0,
+        "created_at": "2021-09-24T20:01:18Z",
+        "updated_at": "2022-04-19T22:35:48Z",
+        "closed_at": "2022-04-19T22:35:48Z",
+        "author_association": "NONE",
+        "active_lock_reason": null,
+        "draft": false,
+        "pull_request": {
+          "url": "https://api.github.com/repos/discord/react-native-image-picker/pulls/2",
+          "merged_at": null
+        },
+        "body": "* Discord fork of `4.1.1` with patches from https://github.com/discord/react-native-image-picker/pull/1",
+        "reactions": {
+          "url": "https://api.github.com/repos/discord/react-native-image-picker/issues/2/reactions",
+          "total_count": 0,
+          "+1": 0,
+          "-1": 0,
+          "laugh": 0,
+          "hooray": 0,
+          "confused": 0,
+          "heart": 0,
+          "rocket": 0,
+          "eyes": 0
+        },
+        "performed_via_github_app": null,
+        "state_reason": null
+      },
+      {
+        "url": "https://api.github.com/repos/discord/react-native-image-picker/issues/1",
+        "id": 993771762,
+        "node_id": "MDExOlB1bGxSZXF1ZXN0NzMxODg3OTQx",
+        "number": 1,
+        "title": "4.0.6 - Remove API 14 PHPicker due to incompatibility with our image cropper.",
+        "user": {
+          "login": "mrkcsc",
+          "id": 658964,
+          "node_id": "MDQ6VXNlcjY1ODk2NA==",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/mrkcsc",
+          "type": "User",
+          "site_admin": false
+        },
+        "labels": [],
+        "state": "closed",
+        "locked": false,
+        "assignee": null,
+        "assignees": [],
+        "milestone": null,
+        "comments": 0,
+        "created_at": "2021-09-11T07:14:36Z",
+        "updated_at": "2022-04-19T22:35:53Z",
+        "closed_at": "2022-04-19T22:35:53Z",
+        "author_association": "NONE",
+        "active_lock_reason": null,
+        "draft": false,
+        "pull_request": {
+          "url": "https://api.github.com/repos/discord/react-native-image-picker/pulls/1",
+          "merged_at": null
+        },
+        "body": "* Removes a recent addition of API 14 support for this library as it does not play well with our cropping library (semi-related is this removal of the field we used to use) https://github.com/react-native-image-picker/react-native-image-picker/issues/1536\r\n\r\n* We would normally just want to use a single library but currently we have some bugs  https://github.com/discord/discord/pull/48038 that prevent us from consolidating.\r\n\r\n* We had to bump this library to get support for RN Android https://github.com/discord/discord/pull/50489 - overall though we still have bumped to a much more recent version of this library and are just missing this iOS 14 functionality now.\r\n\r\n---\r\n\r\nThis PR is not meant to merge and is something I'd like us to revisit in the future when our cropping library is updated.",
+        "reactions": {
+          "url": "https://api.github.com/repos/discord/react-native-image-picker/issues/1/reactions",
+          "total_count": 0,
+          "+1": 0,
+          "-1": 0,
+          "laugh": 0,
+          "hooray": 0,
+          "confused": 0,
+          "heart": 0,
+          "rocket": 0,
+          "eyes": 0
+        },
+        "performed_via_github_app": null,
+        "state_reason": null
+      }
+    ],
+    "pullRequests": []
+  }
+}

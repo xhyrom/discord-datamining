@@ -1,0 +1,338 @@
+{
+  "id": 626116398,
+  "node_id": "R_kgDOJVHHLg",
+  "name": "elasticsearch-dsl-rs",
+  "full_name": "discord/elasticsearch-dsl-rs",
+  "private": false,
+  "owner": {
+    "login": "discord",
+    "id": 1965106,
+    "node_id": "MDEyOk9yZ2FuaXphdGlvbjE5NjUxMDY=",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/discord",
+    "type": "Organization",
+    "site_admin": false
+  },
+  "description": "Strongly typed Elasticsearch DSL written in Rust",
+  "fork": true,
+  "url": "https://api.github.com/repos/discord/elasticsearch-dsl-rs",
+  "created_at": "2023-04-10T20:42:14Z",
+  "updated_at": "2023-03-21T22:15:54Z",
+  "pushed_at": "2023-04-10T20:55:00Z",
+  "homepage": "",
+  "size": 623,
+  "stargazers_count": 0,
+  "watchers_count": 0,
+  "language": null,
+  "has_issues": false,
+  "has_projects": true,
+  "has_downloads": true,
+  "has_wiki": true,
+  "has_pages": false,
+  "has_discussions": false,
+  "forks_count": 1,
+  "archived": false,
+  "disabled": false,
+  "open_issues_count": 0,
+  "license": {
+    "key": "apache-2.0",
+    "name": "Apache License 2.0",
+    "spdx_id": "Apache-2.0",
+    "url": "https://api.github.com/licenses/apache-2.0",
+    "node_id": "MDc6TGljZW5zZTI="
+  },
+  "allow_forking": true,
+  "is_template": false,
+  "web_commit_signoff_required": false,
+  "topics": [],
+  "visibility": "public",
+  "forks": 1,
+  "open_issues": 0,
+  "watchers": 0,
+  "default_branch": "master",
+  "permissions": {
+    "admin": false,
+    "maintain": false,
+    "push": false,
+    "triage": false,
+    "pull": false
+  },
+  "branches": [],
+  "last5": {
+    "commits": [
+      {
+        "sha": "653e66f2b1c46fd2bc7d48fce8b2b92a35ea78de",
+        "node_id": "C_kwDOJVHHLtoAKDY1M2U2NmYyYjFjNDZmZDJiYzdkNDhmY2U4YjJiOTJhMzVlYTc4ZGU",
+        "commit": {
+          "author": {
+            "name": "Evaldas Buinauskas",
+            "email": "7301441+buinauskas@users.noreply.github.com",
+            "date": "2023-02-08T13:04:35Z"
+          },
+          "committer": {
+            "name": "GitHub",
+            "email": "noreply@github.com",
+            "date": "2023-02-08T13:04:35Z"
+          },
+          "message": "Fix clippy rules (#211)",
+          "tree": {
+            "sha": "cc116f1eda5a268faf7b925bb30161739ba99160",
+            "url": "https://api.github.com/repos/discord/elasticsearch-dsl-rs/git/trees/cc116f1eda5a268faf7b925bb30161739ba99160"
+          },
+          "url": "https://api.github.com/repos/discord/elasticsearch-dsl-rs/git/commits/653e66f2b1c46fd2bc7d48fce8b2b92a35ea78de",
+          "comment_count": 0,
+          "verification": {
+            "verified": true,
+            "reason": "valid",
+            "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsBcBAABCAAQBQJj453jCRBK7hj4Ov3rIwAAW6YIAGU8Fa6ubHwSYHC+k1qKBFfX\nlZCH7MprQbG3Q2ZP0V2+XXmHc0cXJHA3qbIi7yw2ljXQLfsRcGHIhuPeqLqsc4sf\n8v+6Io6zBxjp044oZto4EtE+n3plbcu/4ioRjxEnlxlqzoSQhQ7Jkkot4OLbHO8R\nab+I7U7SwnT55rYiW1RWM8p4he7eYHxyUYuiRsJ9afs7nV+yZtrII9VST33glJBN\noZDDfPwYmX8vdDinB1s8vHs0nvQAVti/lsMk/KmwuDhjOPJO6U2mgeTFnqxkeagQ\nYgHI6iA77yHss7myVbZaAdee3FknmscmJKSik/zthy0ygE2EapHvGWlA+IBgtEs=\n=925q\n-----END PGP SIGNATURE-----\n",
+            "payload": "tree cc116f1eda5a268faf7b925bb30161739ba99160\nparent 5cfb07719235e2c571665d07b24e6b8985c5f19f\nauthor Evaldas Buinauskas <7301441+buinauskas@users.noreply.github.com> 1675861475 +0200\ncommitter GitHub <noreply@github.com> 1675861475 +0200\n\nFix clippy rules (#211)\n\n"
+          }
+        },
+        "url": "https://api.github.com/repos/discord/elasticsearch-dsl-rs/commits/653e66f2b1c46fd2bc7d48fce8b2b92a35ea78de",
+        "author": {
+          "login": "buinauskas",
+          "id": 7301441,
+          "node_id": "MDQ6VXNlcjczMDE0NDE=",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/buinauskas",
+          "type": "User",
+          "site_admin": false
+        },
+        "committer": {
+          "login": "web-flow",
+          "id": 19864447,
+          "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/web-flow",
+          "type": "User",
+          "site_admin": false
+        },
+        "parents": [
+          {
+            "sha": "5cfb07719235e2c571665d07b24e6b8985c5f19f",
+            "url": "https://api.github.com/repos/discord/elasticsearch-dsl-rs/commits/5cfb07719235e2c571665d07b24e6b8985c5f19f"
+          }
+        ]
+      },
+      {
+        "sha": "5cfb07719235e2c571665d07b24e6b8985c5f19f",
+        "node_id": "C_kwDOJVHHLtoAKDVjZmIwNzcxOTIzNWUyYzU3MTY2NWQwN2IyNGU2Yjg5ODVjNWYxOWY",
+        "commit": {
+          "author": {
+            "name": "github-actions[bot]",
+            "email": "41898282+github-actions[bot]@users.noreply.github.com",
+            "date": "2023-02-01T06:47:00Z"
+          },
+          "committer": {
+            "name": "GitHub",
+            "email": "noreply@github.com",
+            "date": "2023-02-01T06:47:00Z"
+          },
+          "message": "Update Contributors (#210)\n\nCo-authored-by: buinauskas <buinauskas@users.noreply.github.com>",
+          "tree": {
+            "sha": "85bb4f78d52f1f2a9a1ddce2c65be1ae88483536",
+            "url": "https://api.github.com/repos/discord/elasticsearch-dsl-rs/git/trees/85bb4f78d52f1f2a9a1ddce2c65be1ae88483536"
+          },
+          "url": "https://api.github.com/repos/discord/elasticsearch-dsl-rs/git/commits/5cfb07719235e2c571665d07b24e6b8985c5f19f",
+          "comment_count": 0,
+          "verification": {
+            "verified": true,
+            "reason": "valid",
+            "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsBcBAABCAAQBQJj2grkCRBK7hj4Ov3rIwAAorwIAJoAOA9PuZrHDc1b/lm/KUb1\ntM0gGJLyirIJFOBi+DxT/6klsBJikMTX0sNM+Bi5+n3Yx7MK8h9KHKQPJ3J6aznZ\niRiKhFNUqZfefWJ7HXb5SiUNQEBDerleRzWTBWQV7W3Rt9Qyfx8BKD2+qi+q10gr\nAZeODwyAYJpoTMGNdGwM/u2YGgSRXUxNicrZrmydFbr9P0ehZGpGwzc68gAUXhWn\nt+QZ9KAO2RvvcmpgVj3VZGGrFqsWYXxpIBCXi5tMEKSmRbCvc0ffZMmEzOSeF/Yb\nxFJVEabBX6c6K0oJT07rH9x3Za52rSFwQpRW3y1N7J9xIab42woVY70cs1c7Q3g=\n=uNGr\n-----END PGP SIGNATURE-----\n",
+            "payload": "tree 85bb4f78d52f1f2a9a1ddce2c65be1ae88483536\nparent 26a1fb17a2c85380c118db59e8915d0ea23005a7\nauthor github-actions[bot] <41898282+github-actions[bot]@users.noreply.github.com> 1675234020 +0200\ncommitter GitHub <noreply@github.com> 1675234020 +0200\n\nUpdate Contributors (#210)\n\nCo-authored-by: buinauskas <buinauskas@users.noreply.github.com>"
+          }
+        },
+        "url": "https://api.github.com/repos/discord/elasticsearch-dsl-rs/commits/5cfb07719235e2c571665d07b24e6b8985c5f19f",
+        "author": {
+          "login": "github-actions[bot]",
+          "id": 41898282,
+          "node_id": "MDM6Qm90NDE4OTgyODI=",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/github-actions%5Bbot%5D",
+          "type": "Bot",
+          "site_admin": false
+        },
+        "committer": {
+          "login": "web-flow",
+          "id": 19864447,
+          "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/web-flow",
+          "type": "User",
+          "site_admin": false
+        },
+        "parents": [
+          {
+            "sha": "26a1fb17a2c85380c118db59e8915d0ea23005a7",
+            "url": "https://api.github.com/repos/discord/elasticsearch-dsl-rs/commits/26a1fb17a2c85380c118db59e8915d0ea23005a7"
+          }
+        ]
+      },
+      {
+        "sha": "26a1fb17a2c85380c118db59e8915d0ea23005a7",
+        "node_id": "C_kwDOJVHHLtoAKDI2YTFmYjE3YTJjODUzODBjMTE4ZGI1OWU4OTE1ZDBlYTIzMDA1YTc",
+        "commit": {
+          "author": {
+            "name": "Joseph Crail",
+            "email": "jbcrail@gmail.com",
+            "date": "2023-01-26T06:46:51Z"
+          },
+          "committer": {
+            "name": "GitHub",
+            "email": "noreply@github.com",
+            "date": "2023-01-26T06:46:51Z"
+          },
+          "message": "Update docs for ExecutionHint enum (#209)\n\nI swapped the comments for two variants to correctly match the official\r\nElasticsearch documentation.",
+          "tree": {
+            "sha": "22619fb5dc6d6bf04b1c746f0ffb97dcb6d0d0e2",
+            "url": "https://api.github.com/repos/discord/elasticsearch-dsl-rs/git/trees/22619fb5dc6d6bf04b1c746f0ffb97dcb6d0d0e2"
+          },
+          "url": "https://api.github.com/repos/discord/elasticsearch-dsl-rs/git/commits/26a1fb17a2c85380c118db59e8915d0ea23005a7",
+          "comment_count": 0,
+          "verification": {
+            "verified": true,
+            "reason": "valid",
+            "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsBcBAABCAAQBQJj0iHbCRBK7hj4Ov3rIwAAFrgIAIudBUVx5OdBoKwKnBqtHqf/\nQpFfp4HJFVgccgQpEsQjkRP26gDR0BzTgUXg6NjNRnNoFMr4VLVzjVlTy4SUL3De\nDaPWrzLbzVnMmmH/GghP2TKiuu1NqpQHJ838AR/gYgN8i2MwwkAlJkfsZvIzBL1q\nuw95MXslF2THszqgL54nFWyeuhyKCGFWTrAXR3hXXYEvsiQ0PfSISQA0oOUo/Msd\n6YoxQ7JtLoDdxHWPcg69CbzefJ/g3An/Gl7jK5e5+ZG1rK9zjGIgEmXjGLfd5rXt\nrGzO6+5DRDg7stsGZIH0zjMLZ9IDIn9k0Bje3r/8X3wP7rOex7TELRE6WnH+Trw=\n=nddi\n-----END PGP SIGNATURE-----\n",
+            "payload": "tree 22619fb5dc6d6bf04b1c746f0ffb97dcb6d0d0e2\nparent 60c14c732704f1200c5ed89297b6397abedb6485\nauthor Joseph Crail <jbcrail@gmail.com> 1674715611 -0800\ncommitter GitHub <noreply@github.com> 1674715611 +0200\n\nUpdate docs for ExecutionHint enum (#209)\n\nI swapped the comments for two variants to correctly match the official\r\nElasticsearch documentation."
+          }
+        },
+        "url": "https://api.github.com/repos/discord/elasticsearch-dsl-rs/commits/26a1fb17a2c85380c118db59e8915d0ea23005a7",
+        "author": {
+          "login": "jbcrail",
+          "id": 6038,
+          "node_id": "MDQ6VXNlcjYwMzg=",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/jbcrail",
+          "type": "User",
+          "site_admin": false
+        },
+        "committer": {
+          "login": "web-flow",
+          "id": 19864447,
+          "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/web-flow",
+          "type": "User",
+          "site_admin": false
+        },
+        "parents": [
+          {
+            "sha": "60c14c732704f1200c5ed89297b6397abedb6485",
+            "url": "https://api.github.com/repos/discord/elasticsearch-dsl-rs/commits/60c14c732704f1200c5ed89297b6397abedb6485"
+          }
+        ]
+      },
+      {
+        "sha": "60c14c732704f1200c5ed89297b6397abedb6485",
+        "node_id": "C_kwDOJVHHLtoAKDYwYzE0YzczMjcwNGYxMjAwYzVlZDg5Mjk3YjYzOTdhYmVkYjY0ODU",
+        "commit": {
+          "author": {
+            "name": "Evaldas Buinauskas",
+            "email": "7301441+buinauskas@users.noreply.github.com",
+            "date": "2023-01-03T09:42:58Z"
+          },
+          "committer": {
+            "name": "GitHub",
+            "email": "noreply@github.com",
+            "date": "2023-01-03T09:42:58Z"
+          },
+          "message": "Make map/set type aliases internal (#208)",
+          "tree": {
+            "sha": "ce1cee3f723eb987ee1e362e6d807d79f5a334cc",
+            "url": "https://api.github.com/repos/discord/elasticsearch-dsl-rs/git/trees/ce1cee3f723eb987ee1e362e6d807d79f5a334cc"
+          },
+          "url": "https://api.github.com/repos/discord/elasticsearch-dsl-rs/git/commits/60c14c732704f1200c5ed89297b6397abedb6485",
+          "comment_count": 0,
+          "verification": {
+            "verified": true,
+            "reason": "valid",
+            "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsBcBAABCAAQBQJjs/iiCRBK7hj4Ov3rIwAAHQsIABxafVw0QFMY3KD66dJ+vygV\nkp1CdsK0kWdJerCMZSF+eguup3kELfJO7C5DJrpxmiEBEl+CE1lYtOwh50pxpxi5\neBX8jTusiyqii9+sKjKRz33BHaT9e1JC/GedKY2Y/el2SVZ3bQmMylCPAVMBqD/i\n0Aj2fQj9Y4eYsw96CiA+vz7Vrfy7ZhnwCn+wE8H10jLLliVbtcZ4NacIJ0a7UvWB\n/rE6vLKT9wR8yq+MBS37F7bSz7PASRqjQ27Tu+ZxThJxFv/AK/TC7TyTIeGScqol\nG4E14nHaEYyYIR+1366YG6bOu3r7y6dToy8OMeJw+6Dnb/Fh8b9YOGRIDqsvD2Y=\n=lCGR\n-----END PGP SIGNATURE-----\n",
+            "payload": "tree ce1cee3f723eb987ee1e362e6d807d79f5a334cc\nparent 7196176cbc7fde77cd7516099107f1ec2923f21d\nauthor Evaldas Buinauskas <7301441+buinauskas@users.noreply.github.com> 1672738978 +0200\ncommitter GitHub <noreply@github.com> 1672738978 +0200\n\nMake map/set type aliases internal (#208)\n\n"
+          }
+        },
+        "url": "https://api.github.com/repos/discord/elasticsearch-dsl-rs/commits/60c14c732704f1200c5ed89297b6397abedb6485",
+        "author": {
+          "login": "buinauskas",
+          "id": 7301441,
+          "node_id": "MDQ6VXNlcjczMDE0NDE=",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/buinauskas",
+          "type": "User",
+          "site_admin": false
+        },
+        "committer": {
+          "login": "web-flow",
+          "id": 19864447,
+          "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/web-flow",
+          "type": "User",
+          "site_admin": false
+        },
+        "parents": [
+          {
+            "sha": "7196176cbc7fde77cd7516099107f1ec2923f21d",
+            "url": "https://api.github.com/repos/discord/elasticsearch-dsl-rs/commits/7196176cbc7fde77cd7516099107f1ec2923f21d"
+          }
+        ]
+      },
+      {
+        "sha": "7196176cbc7fde77cd7516099107f1ec2923f21d",
+        "node_id": "C_kwDOJVHHLtoAKDcxOTYxNzZjYmM3ZmRlNzdjZDc1MTYwOTkxMDdmMWVjMjkyM2YyMWQ",
+        "commit": {
+          "author": {
+            "name": "Evaldas Buinauskas",
+            "email": "7301441+buinauskas@users.noreply.github.com",
+            "date": "2022-12-03T16:36:10Z"
+          },
+          "committer": {
+            "name": "GitHub",
+            "email": "noreply@github.com",
+            "date": "2022-12-03T16:36:10Z"
+          },
+          "message": "Implement span queries (#207)\n\n* Initial span query implementation\r\n\r\n* Add documentation\r\n\r\n* Bump package version\r\n\r\n* Fix cargo docs",
+          "tree": {
+            "sha": "2d0895c9c199deed14ce23398d507ef2f35db732",
+            "url": "https://api.github.com/repos/discord/elasticsearch-dsl-rs/git/trees/2d0895c9c199deed14ce23398d507ef2f35db732"
+          },
+          "url": "https://api.github.com/repos/discord/elasticsearch-dsl-rs/git/commits/7196176cbc7fde77cd7516099107f1ec2923f21d",
+          "comment_count": 0,
+          "verification": {
+            "verified": true,
+            "reason": "valid",
+            "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsBcBAABCAAQBQJji3r6CRBK7hj4Ov3rIwAAZ9wIAJXXLInHpIorTQycnJCu6ovj\n7XEIwTedL9HI4vruFXn1c1OOqkNpA+9Xt/J8iu6d+7uDs9QNMq2hyACrTJXQnuws\n3QYi1FzgYenJtXfdjvCcKM15tym1xey5vyVQSZ+Wpw/6WrXC+G1dlW9srbIQt9wQ\nxCX3QeooskytjOrEHWqsXdhveTW24ph5nuN1rvNz8V/uCGTua3NPtPl9yuu1zOGJ\nR07iDEt9QZbqcHM1lPiAHQKCl5ZDVSAhFIWqAJpuPKG0G6XUxEuE1WuY43qa99B/\nh3CGVrvMkczJG51WNuvcQTbVsOf/gLdIoi1sAQiS75z18ASLIljk/F1W53DwNQs=\n=eZbY\n-----END PGP SIGNATURE-----\n",
+            "payload": "tree 2d0895c9c199deed14ce23398d507ef2f35db732\nparent 289be448c414394b770687bd59b169d486bd1a63\nauthor Evaldas Buinauskas <7301441+buinauskas@users.noreply.github.com> 1670085370 +0200\ncommitter GitHub <noreply@github.com> 1670085370 +0200\n\nImplement span queries (#207)\n\n* Initial span query implementation\r\n\r\n* Add documentation\r\n\r\n* Bump package version\r\n\r\n* Fix cargo docs"
+          }
+        },
+        "url": "https://api.github.com/repos/discord/elasticsearch-dsl-rs/commits/7196176cbc7fde77cd7516099107f1ec2923f21d",
+        "author": {
+          "login": "buinauskas",
+          "id": 7301441,
+          "node_id": "MDQ6VXNlcjczMDE0NDE=",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/buinauskas",
+          "type": "User",
+          "site_admin": false
+        },
+        "committer": {
+          "login": "web-flow",
+          "id": 19864447,
+          "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/web-flow",
+          "type": "User",
+          "site_admin": false
+        },
+        "parents": [
+          {
+            "sha": "289be448c414394b770687bd59b169d486bd1a63",
+            "url": "https://api.github.com/repos/discord/elasticsearch-dsl-rs/commits/289be448c414394b770687bd59b169d486bd1a63"
+          }
+        ]
+      }
+    ],
+    "releases": [],
+    "issues": [],
+    "pullRequests": []
+  }
+}

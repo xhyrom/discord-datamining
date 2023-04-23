@@ -1,0 +1,338 @@
+{
+  "id": 39040235,
+  "node_id": "MDEwOlJlcG9zaXRvcnkzOTA0MDIzNQ==",
+  "name": "react-native-webpack-server",
+  "full_name": "discord/react-native-webpack-server",
+  "private": false,
+  "owner": {
+    "login": "discord",
+    "id": 1965106,
+    "node_id": "MDEyOk9yZ2FuaXphdGlvbjE5NjUxMDY=",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/discord",
+    "type": "Organization",
+    "site_admin": false
+  },
+  "description": "Build React Native apps with Webpack",
+  "fork": true,
+  "url": "https://api.github.com/repos/discord/react-native-webpack-server",
+  "created_at": "2015-07-13T22:16:12Z",
+  "updated_at": "2023-03-18T04:15:23Z",
+  "pushed_at": "2017-03-22T00:39:57Z",
+  "homepage": null,
+  "size": 291,
+  "stargazers_count": 7,
+  "watchers_count": 7,
+  "language": "JavaScript",
+  "has_issues": false,
+  "has_projects": true,
+  "has_downloads": true,
+  "has_wiki": true,
+  "has_pages": false,
+  "has_discussions": false,
+  "forks_count": 4,
+  "archived": false,
+  "disabled": false,
+  "open_issues_count": 0,
+  "license": {
+    "key": "mit",
+    "name": "MIT License",
+    "spdx_id": "MIT",
+    "url": "https://api.github.com/licenses/mit",
+    "node_id": "MDc6TGljZW5zZTEz"
+  },
+  "allow_forking": true,
+  "is_template": false,
+  "web_commit_signoff_required": false,
+  "topics": [],
+  "visibility": "public",
+  "forks": 4,
+  "open_issues": 0,
+  "watchers": 7,
+  "default_branch": "master",
+  "permissions": {
+    "admin": false,
+    "maintain": false,
+    "push": false,
+    "triage": false,
+    "pull": false
+  },
+  "branches": [],
+  "last5": {
+    "commits": [
+      {
+        "sha": "21d4676745d3f07b092cfd087709214afcfac907",
+        "node_id": "MDY6Q29tbWl0MzkwNDAyMzU6MjFkNDY3Njc0NWQzZjA3YjA5MmNmZDA4NzcwOTIxNGFmY2ZhYzkwNw==",
+        "commit": {
+          "author": {
+            "name": "Philipp von Weitershausen",
+            "email": "philikon@silklabs.com",
+            "date": "2016-05-05T19:15:42Z"
+          },
+          "committer": {
+            "name": "Philipp von Weitershausen",
+            "email": "philikon@silklabs.com",
+            "date": "2016-05-05T19:15:42Z"
+          },
+          "message": "Fix Travis syntax error",
+          "tree": {
+            "sha": "9b0bdec5c4fa2fb07a14fa9c2149da0d263a9e39",
+            "url": "https://api.github.com/repos/discord/react-native-webpack-server/git/trees/9b0bdec5c4fa2fb07a14fa9c2149da0d263a9e39"
+          },
+          "url": "https://api.github.com/repos/discord/react-native-webpack-server/git/commits/21d4676745d3f07b092cfd087709214afcfac907",
+          "comment_count": 0,
+          "verification": {
+            "verified": false,
+            "reason": "unsigned",
+            "signature": null,
+            "payload": null
+          }
+        },
+        "url": "https://api.github.com/repos/discord/react-native-webpack-server/commits/21d4676745d3f07b092cfd087709214afcfac907",
+        "author": {
+          "login": "philikon",
+          "id": 54918,
+          "node_id": "MDQ6VXNlcjU0OTE4",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/philikon",
+          "type": "User",
+          "site_admin": false
+        },
+        "committer": {
+          "login": "philikon",
+          "id": 54918,
+          "node_id": "MDQ6VXNlcjU0OTE4",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/philikon",
+          "type": "User",
+          "site_admin": false
+        },
+        "parents": [
+          {
+            "sha": "a3f38eaf3285c8bc12764ae3e751ff585f185422",
+            "url": "https://api.github.com/repos/discord/react-native-webpack-server/commits/a3f38eaf3285c8bc12764ae3e751ff585f185422"
+          }
+        ]
+      },
+      {
+        "sha": "a3f38eaf3285c8bc12764ae3e751ff585f185422",
+        "node_id": "MDY6Q29tbWl0MzkwNDAyMzU6YTNmMzhlYWYzMjg1YzhiYzEyNzY0YWUzZTc1MWZmNTg1ZjE4NTQyMg==",
+        "commit": {
+          "author": {
+            "name": "Philipp von Weitershausen",
+            "email": "philikon@silklabs.com",
+            "date": "2016-05-05T19:09:48Z"
+          },
+          "committer": {
+            "name": "Philipp von Weitershausen",
+            "email": "philikon@silklabs.com",
+            "date": "2016-05-05T19:09:48Z"
+          },
+          "message": "Don't automatically 'npm install' on Travis",
+          "tree": {
+            "sha": "5e045d7e807936fcb8528d0b9bae8c46e4e3516b",
+            "url": "https://api.github.com/repos/discord/react-native-webpack-server/git/trees/5e045d7e807936fcb8528d0b9bae8c46e4e3516b"
+          },
+          "url": "https://api.github.com/repos/discord/react-native-webpack-server/git/commits/a3f38eaf3285c8bc12764ae3e751ff585f185422",
+          "comment_count": 0,
+          "verification": {
+            "verified": false,
+            "reason": "unsigned",
+            "signature": null,
+            "payload": null
+          }
+        },
+        "url": "https://api.github.com/repos/discord/react-native-webpack-server/commits/a3f38eaf3285c8bc12764ae3e751ff585f185422",
+        "author": {
+          "login": "philikon",
+          "id": 54918,
+          "node_id": "MDQ6VXNlcjU0OTE4",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/philikon",
+          "type": "User",
+          "site_admin": false
+        },
+        "committer": {
+          "login": "philikon",
+          "id": 54918,
+          "node_id": "MDQ6VXNlcjU0OTE4",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/philikon",
+          "type": "User",
+          "site_admin": false
+        },
+        "parents": [
+          {
+            "sha": "fb5ca577f0580a85abc65e3e2da16e52d3a98960",
+            "url": "https://api.github.com/repos/discord/react-native-webpack-server/commits/fb5ca577f0580a85abc65e3e2da16e52d3a98960"
+          }
+        ]
+      },
+      {
+        "sha": "fb5ca577f0580a85abc65e3e2da16e52d3a98960",
+        "node_id": "MDY6Q29tbWl0MzkwNDAyMzU6ZmI1Y2E1NzdmMDU4MGE4NWFiYzY1ZTNlMmRhMTZlNTJkM2E5ODk2MA==",
+        "commit": {
+          "author": {
+            "name": "Philipp von Weitershausen",
+            "email": "philikon@silklabs.com",
+            "date": "2016-05-05T18:50:05Z"
+          },
+          "committer": {
+            "name": "Philipp von Weitershausen",
+            "email": "philikon@silklabs.com",
+            "date": "2016-05-05T18:50:05Z"
+          },
+          "message": "Get rid of outdated and unmaintained CoffeeScript example",
+          "tree": {
+            "sha": "ddd5bd9d46985f9d2cd4cd81f8b6b902a96370fa",
+            "url": "https://api.github.com/repos/discord/react-native-webpack-server/git/trees/ddd5bd9d46985f9d2cd4cd81f8b6b902a96370fa"
+          },
+          "url": "https://api.github.com/repos/discord/react-native-webpack-server/git/commits/fb5ca577f0580a85abc65e3e2da16e52d3a98960",
+          "comment_count": 0,
+          "verification": {
+            "verified": false,
+            "reason": "unsigned",
+            "signature": null,
+            "payload": null
+          }
+        },
+        "url": "https://api.github.com/repos/discord/react-native-webpack-server/commits/fb5ca577f0580a85abc65e3e2da16e52d3a98960",
+        "author": {
+          "login": "philikon",
+          "id": 54918,
+          "node_id": "MDQ6VXNlcjU0OTE4",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/philikon",
+          "type": "User",
+          "site_admin": false
+        },
+        "committer": {
+          "login": "philikon",
+          "id": 54918,
+          "node_id": "MDQ6VXNlcjU0OTE4",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/philikon",
+          "type": "User",
+          "site_admin": false
+        },
+        "parents": [
+          {
+            "sha": "495fbc0a8f54e3065232ddf5e405396573390bbf",
+            "url": "https://api.github.com/repos/discord/react-native-webpack-server/commits/495fbc0a8f54e3065232ddf5e405396573390bbf"
+          }
+        ]
+      },
+      {
+        "sha": "495fbc0a8f54e3065232ddf5e405396573390bbf",
+        "node_id": "MDY6Q29tbWl0MzkwNDAyMzU6NDk1ZmJjMGE4ZjU0ZTMwNjUyMzJkZGY1ZTQwNTM5NjU3MzM5MGJiZg==",
+        "commit": {
+          "author": {
+            "name": "Philipp von Weitershausen",
+            "email": "philikon@silklabs.com",
+            "date": "2016-05-05T18:45:18Z"
+          },
+          "committer": {
+            "name": "Philipp von Weitershausen",
+            "email": "philikon@silklabs.com",
+            "date": "2016-05-05T18:45:18Z"
+          },
+          "message": "react is a peerDepencency now",
+          "tree": {
+            "sha": "1dbf823ec7bee01b131549da8bcde7803da7e4f3",
+            "url": "https://api.github.com/repos/discord/react-native-webpack-server/git/trees/1dbf823ec7bee01b131549da8bcde7803da7e4f3"
+          },
+          "url": "https://api.github.com/repos/discord/react-native-webpack-server/git/commits/495fbc0a8f54e3065232ddf5e405396573390bbf",
+          "comment_count": 0,
+          "verification": {
+            "verified": false,
+            "reason": "unsigned",
+            "signature": null,
+            "payload": null
+          }
+        },
+        "url": "https://api.github.com/repos/discord/react-native-webpack-server/commits/495fbc0a8f54e3065232ddf5e405396573390bbf",
+        "author": {
+          "login": "philikon",
+          "id": 54918,
+          "node_id": "MDQ6VXNlcjU0OTE4",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/philikon",
+          "type": "User",
+          "site_admin": false
+        },
+        "committer": {
+          "login": "philikon",
+          "id": 54918,
+          "node_id": "MDQ6VXNlcjU0OTE4",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/philikon",
+          "type": "User",
+          "site_admin": false
+        },
+        "parents": [
+          {
+            "sha": "2766c1d6324c73ad2f4c5c9c4f6f2b442f357c35",
+            "url": "https://api.github.com/repos/discord/react-native-webpack-server/commits/2766c1d6324c73ad2f4c5c9c4f6f2b442f357c35"
+          }
+        ]
+      },
+      {
+        "sha": "2766c1d6324c73ad2f4c5c9c4f6f2b442f357c35",
+        "node_id": "MDY6Q29tbWl0MzkwNDAyMzU6Mjc2NmMxZDYzMjRjNzNhZDJmNGM1YzljNGY2ZjJiNDQyZjM1N2MzNQ==",
+        "commit": {
+          "author": {
+            "name": "Philipp von Weitershausen",
+            "email": "philikon@silklabs.com",
+            "date": "2016-05-05T18:34:22Z"
+          },
+          "committer": {
+            "name": "Philipp von Weitershausen",
+            "email": "philikon@silklabs.com",
+            "date": "2016-05-05T18:34:22Z"
+          },
+          "message": "Bump version and require at least react-native 0.21",
+          "tree": {
+            "sha": "d3d3de50e1d759668f61268f4c547cfd0818f1ef",
+            "url": "https://api.github.com/repos/discord/react-native-webpack-server/git/trees/d3d3de50e1d759668f61268f4c547cfd0818f1ef"
+          },
+          "url": "https://api.github.com/repos/discord/react-native-webpack-server/git/commits/2766c1d6324c73ad2f4c5c9c4f6f2b442f357c35",
+          "comment_count": 0,
+          "verification": {
+            "verified": false,
+            "reason": "unsigned",
+            "signature": null,
+            "payload": null
+          }
+        },
+        "url": "https://api.github.com/repos/discord/react-native-webpack-server/commits/2766c1d6324c73ad2f4c5c9c4f6f2b442f357c35",
+        "author": {
+          "login": "philikon",
+          "id": 54918,
+          "node_id": "MDQ6VXNlcjU0OTE4",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/philikon",
+          "type": "User",
+          "site_admin": false
+        },
+        "committer": {
+          "login": "philikon",
+          "id": 54918,
+          "node_id": "MDQ6VXNlcjU0OTE4",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/philikon",
+          "type": "User",
+          "site_admin": false
+        },
+        "parents": [
+          {
+            "sha": "52f7ab070e7cfcf1e1596375952c18730eb55f1c",
+            "url": "https://api.github.com/repos/discord/react-native-webpack-server/commits/52f7ab070e7cfcf1e1596375952c18730eb55f1c"
+          }
+        ]
+      }
+    ],
+    "releases": [],
+    "issues": [],
+    "pullRequests": []
+  }
+}

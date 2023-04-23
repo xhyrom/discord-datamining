@@ -1,0 +1,338 @@
+{
+  "id": 395722511,
+  "node_id": "MDEwOlJlcG9zaXRvcnkzOTU3MjI1MTE=",
+  "name": "mypy",
+  "full_name": "discord/mypy",
+  "private": false,
+  "owner": {
+    "login": "discord",
+    "id": 1965106,
+    "node_id": "MDEyOk9yZ2FuaXphdGlvbjE5NjUxMDY=",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/discord",
+    "type": "Organization",
+    "site_admin": false
+  },
+  "description": "Optional static typing for Python 3 and 2 (PEP 484)",
+  "fork": true,
+  "url": "https://api.github.com/repos/discord/mypy",
+  "created_at": "2021-08-13T16:34:07Z",
+  "updated_at": "2021-09-25T16:12:01Z",
+  "pushed_at": "2022-01-07T22:26:32Z",
+  "homepage": "http://www.mypy-lang.org/",
+  "size": 49575,
+  "stargazers_count": 1,
+  "watchers_count": 1,
+  "language": null,
+  "has_issues": false,
+  "has_projects": true,
+  "has_downloads": true,
+  "has_wiki": true,
+  "has_pages": false,
+  "has_discussions": false,
+  "forks_count": 1,
+  "archived": false,
+  "disabled": false,
+  "open_issues_count": 0,
+  "license": {
+    "key": "other",
+    "name": "Other",
+    "spdx_id": "NOASSERTION",
+    "url": null,
+    "node_id": "MDc6TGljZW5zZTA="
+  },
+  "allow_forking": true,
+  "is_template": false,
+  "web_commit_signoff_required": false,
+  "topics": [],
+  "visibility": "public",
+  "forks": 1,
+  "open_issues": 0,
+  "watchers": 1,
+  "default_branch": "master",
+  "permissions": {
+    "admin": false,
+    "maintain": false,
+    "push": false,
+    "triage": false,
+    "pull": false
+  },
+  "branches": [],
+  "last5": {
+    "commits": [
+      {
+        "sha": "644496828841035d097d7afd80b96081e0ea5c7f",
+        "node_id": "MDY6Q29tbWl0Mzk1NzIyNTExOjY0NDQ5NjgyODg0MTAzNWQwOTdkN2FmZDgwYjk2MDgxZTBlYTVjN2Y=",
+        "commit": {
+          "author": {
+            "name": "97littleleaf11",
+            "email": "97littleleaf11@users.noreply.github.com",
+            "date": "2021-08-12T11:28:31Z"
+          },
+          "committer": {
+            "name": "GitHub",
+            "email": "noreply@github.com",
+            "date": "2021-08-12T11:28:31Z"
+          },
+          "message": "[mypyc] Add primitive for bytes slicing (#10966)\n\nAdd a C helper function for bytes and bytearray slicing.",
+          "tree": {
+            "sha": "602f83525aad336b6a0db678f0fe09ad2174062e",
+            "url": "https://api.github.com/repos/discord/mypy/git/trees/602f83525aad336b6a0db678f0fe09ad2174062e"
+          },
+          "url": "https://api.github.com/repos/discord/mypy/git/commits/644496828841035d097d7afd80b96081e0ea5c7f",
+          "comment_count": 0,
+          "verification": {
+            "verified": true,
+            "reason": "valid",
+            "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsBcBAABCAAQBQJhFQXgCRBK7hj4Ov3rIwAA5UIIAHc2jV7qt2UMgpyjF5piTsuY\ngHn+2oisnp3jBptYlmsL2jHXU0yawTJNBkn0reE2BZjsIFRD3gCS1HTntRXSWc/D\nBLEZujE6kzYQQIwWvKVVYpaB7hpYtWqzXvQd86q0tkNNihlPTbO1SNOdGWrWMsVA\nTylRZEd26hzLMfLNlDak/TohKO9mFnJbF64oYFvg+PIwSEiDh0XSWJZSSbnHVdVK\n912UBxaoAwQ2vJ5NpMQkgt20BAa7FjQ2EEnGEMjhhWh+t1rEwbIVh8xSvJ73CllZ\nY1oXVGA1v8u9Mc+ak1CYPevopfkFvLzQYlCdlOF7QixTzxR5kvsSkTsTHvEzdn0=\n=Qwm5\n-----END PGP SIGNATURE-----\n",
+            "payload": "tree 602f83525aad336b6a0db678f0fe09ad2174062e\nparent 3970cc3baf98dd456927accb550659beb14ea0bd\nauthor 97littleleaf11 <97littleleaf11@users.noreply.github.com> 1628767711 +0800\ncommitter GitHub <noreply@github.com> 1628767711 +0100\n\n[mypyc] Add primitive for bytes slicing (#10966)\n\nAdd a C helper function for bytes and bytearray slicing."
+          }
+        },
+        "url": "https://api.github.com/repos/discord/mypy/commits/644496828841035d097d7afd80b96081e0ea5c7f",
+        "author": {
+          "login": "97littleleaf11",
+          "id": 11172084,
+          "node_id": "MDQ6VXNlcjExMTcyMDg0",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/97littleleaf11",
+          "type": "User",
+          "site_admin": false
+        },
+        "committer": {
+          "login": "web-flow",
+          "id": 19864447,
+          "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/web-flow",
+          "type": "User",
+          "site_admin": false
+        },
+        "parents": [
+          {
+            "sha": "3970cc3baf98dd456927accb550659beb14ea0bd",
+            "url": "https://api.github.com/repos/discord/mypy/commits/3970cc3baf98dd456927accb550659beb14ea0bd"
+          }
+        ]
+      },
+      {
+        "sha": "3970cc3baf98dd456927accb550659beb14ea0bd",
+        "node_id": "MDY6Q29tbWl0Mzk1NzIyNTExOjM5NzBjYzNiYWY5OGRkNDU2OTI3YWNjYjU1MDY1OWJlYjE0ZWEwYmQ=",
+        "commit": {
+          "author": {
+            "name": "97littleleaf11",
+            "email": "97littleleaf11@users.noreply.github.com",
+            "date": "2021-08-12T10:31:32Z"
+          },
+          "committer": {
+            "name": "GitHub",
+            "email": "noreply@github.com",
+            "date": "2021-08-12T10:31:32Z"
+          },
+          "message": "Add primitives for str.encode() (#10974)",
+          "tree": {
+            "sha": "cf33d7935e4f71a779feda469e1970ffe246c878",
+            "url": "https://api.github.com/repos/discord/mypy/git/trees/cf33d7935e4f71a779feda469e1970ffe246c878"
+          },
+          "url": "https://api.github.com/repos/discord/mypy/git/commits/3970cc3baf98dd456927accb550659beb14ea0bd",
+          "comment_count": 0,
+          "verification": {
+            "verified": true,
+            "reason": "valid",
+            "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsBcBAABCAAQBQJhFPiECRBK7hj4Ov3rIwAAbkgIAJVtGfdYT/73qsDRrXV6WGlZ\nDk+TRb2ACjLtkWqTumXMokigYwV0qo8xr/RkdW9N+9SZxuwhqi4O01PzACiOVU5g\n71R3VHsOPF7xEAxul0SmHK7iR43eiPddipCKLWW0m2Z4RYg13l7iPcW2hUjSTTKA\n7v/TfGOPFuEIR4Efj+uSsYmomLtCWTg/hXF6XCkjkjypkzRQc5ib29xfLmehzKHV\n2JaVW+X228qGl2E+yfHsG53atWvslwXpO7uSWoSlcUsOmoeAwK/zROwL/AQaKCgp\nJn8jEoal+hhHgvQA9c/yrNlpl+OEfUOscImN09KK0MVexpmzANu70XGSSrciUNQ=\n=JoYf\n-----END PGP SIGNATURE-----\n",
+            "payload": "tree cf33d7935e4f71a779feda469e1970ffe246c878\nparent 5adb0a05c157d9f5afbdb048a6d06a3234586ab6\nauthor 97littleleaf11 <97littleleaf11@users.noreply.github.com> 1628764292 +0800\ncommitter GitHub <noreply@github.com> 1628764292 +0100\n\nAdd primitives for str.encode() (#10974)\n\n"
+          }
+        },
+        "url": "https://api.github.com/repos/discord/mypy/commits/3970cc3baf98dd456927accb550659beb14ea0bd",
+        "author": {
+          "login": "97littleleaf11",
+          "id": 11172084,
+          "node_id": "MDQ6VXNlcjExMTcyMDg0",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/97littleleaf11",
+          "type": "User",
+          "site_admin": false
+        },
+        "committer": {
+          "login": "web-flow",
+          "id": 19864447,
+          "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/web-flow",
+          "type": "User",
+          "site_admin": false
+        },
+        "parents": [
+          {
+            "sha": "5adb0a05c157d9f5afbdb048a6d06a3234586ab6",
+            "url": "https://api.github.com/repos/discord/mypy/commits/5adb0a05c157d9f5afbdb048a6d06a3234586ab6"
+          }
+        ]
+      },
+      {
+        "sha": "5adb0a05c157d9f5afbdb048a6d06a3234586ab6",
+        "node_id": "MDY6Q29tbWl0Mzk1NzIyNTExOjVhZGIwYTA1YzE1N2Q5ZjVhZmJkYjA0OGE2ZDA2YTMyMzQ1ODZhYjY=",
+        "commit": {
+          "author": {
+            "name": "97littleleaf11",
+            "email": "97littleleaf11@users.noreply.github.com",
+            "date": "2021-08-11T10:29:54Z"
+          },
+          "committer": {
+            "name": "GitHub",
+            "email": "noreply@github.com",
+            "date": "2021-08-11T10:29:54Z"
+          },
+          "message": "[mypyc] Add primitive for bytes.decode (#10951)\n\nImplements part of mypyc/mypyc#880.",
+          "tree": {
+            "sha": "723a8885902b0b0e315e635979dab77580ba9a3e",
+            "url": "https://api.github.com/repos/discord/mypy/git/trees/723a8885902b0b0e315e635979dab77580ba9a3e"
+          },
+          "url": "https://api.github.com/repos/discord/mypy/git/commits/5adb0a05c157d9f5afbdb048a6d06a3234586ab6",
+          "comment_count": 0,
+          "verification": {
+            "verified": true,
+            "reason": "valid",
+            "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsBcBAABCAAQBQJhE6aiCRBK7hj4Ov3rIwAAfzcIAHXHy39qNq6resi13EcIuj4l\n66l6V7fBluxE8hFCzA4QeweTioI8+npLTBUAyIMnIMvKEaeNynMD3nkPZv2yjSXI\ng7YJ75pDcEIwOVdH+X0Jod4B0ModzhiO0JZ8GcBrU9lLZHOFrgIMtA9U/LaBwVLq\nfsMv/4pf/yxiVUz7ZGTQ5N56P8iImKk+lu9tuPRbeAOBZqFx3ezidxhzvZa/sFZ5\n1O5YS/6cUfdV697GL7tV0Mp4rxGOndQrS4l4Mx6Ajm30k5q7I87dBru/UMDAd2NM\n76+dsz3N0NhMC5sA0o6DSkk0bgf8zEm9PvU/OsTdNXIL8WarkAjpxEwYqJhMKJI=\n=81W5\n-----END PGP SIGNATURE-----\n",
+            "payload": "tree 723a8885902b0b0e315e635979dab77580ba9a3e\nparent ba7b50c07886f744268d664adb5a6f026ce7be37\nauthor 97littleleaf11 <97littleleaf11@users.noreply.github.com> 1628677794 +0800\ncommitter GitHub <noreply@github.com> 1628677794 +0100\n\n[mypyc] Add primitive for bytes.decode (#10951)\n\nImplements part of mypyc/mypyc#880."
+          }
+        },
+        "url": "https://api.github.com/repos/discord/mypy/commits/5adb0a05c157d9f5afbdb048a6d06a3234586ab6",
+        "author": {
+          "login": "97littleleaf11",
+          "id": 11172084,
+          "node_id": "MDQ6VXNlcjExMTcyMDg0",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/97littleleaf11",
+          "type": "User",
+          "site_admin": false
+        },
+        "committer": {
+          "login": "web-flow",
+          "id": 19864447,
+          "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/web-flow",
+          "type": "User",
+          "site_admin": false
+        },
+        "parents": [
+          {
+            "sha": "ba7b50c07886f744268d664adb5a6f026ce7be37",
+            "url": "https://api.github.com/repos/discord/mypy/commits/ba7b50c07886f744268d664adb5a6f026ce7be37"
+          }
+        ]
+      },
+      {
+        "sha": "ba7b50c07886f744268d664adb5a6f026ce7be37",
+        "node_id": "MDY6Q29tbWl0Mzk1NzIyNTExOmJhN2I1MGMwNzg4NmY3NDQyNjhkNjY0YWRiNWE2ZjAyNmNlN2JlMzc=",
+        "commit": {
+          "author": {
+            "name": "97littleleaf11",
+            "email": "97littleleaf11@users.noreply.github.com",
+            "date": "2021-08-11T09:34:52Z"
+          },
+          "committer": {
+            "name": "GitHub",
+            "email": "noreply@github.com",
+            "date": "2021-08-11T09:34:52Z"
+          },
+          "message": "[mypyc] Add bytes index primitive (#10950)\n\nImplements part of mypyc/mypyc#880.",
+          "tree": {
+            "sha": "04f76f1a6937e56fce680b40ccf1778de94f6a89",
+            "url": "https://api.github.com/repos/discord/mypy/git/trees/04f76f1a6937e56fce680b40ccf1778de94f6a89"
+          },
+          "url": "https://api.github.com/repos/discord/mypy/git/commits/ba7b50c07886f744268d664adb5a6f026ce7be37",
+          "comment_count": 0,
+          "verification": {
+            "verified": true,
+            "reason": "valid",
+            "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsBcBAABCAAQBQJhE5m8CRBK7hj4Ov3rIwAAgRsIAGseAC7Y44G9trdfo6Mb+09V\nshihh4DfdjS7QYP4LXpuQQH2kfFKXA/1jWaQ8cFKt5adG5jdGM78Wz2tUCzzs4i/\nwSf31toA4hTuNDKCjQuaGXhch9055DKkpwSIU+YBsnGObLSCk+66AezrlOnIhhDS\nO2bUQr72QUGe1P5X0i65i1nOPQd+UuL/KycN1iDK+KyvO7B129yxVBcCMXp7reyG\n+r1jiO2E38cRdPaZcSyIMVzTY0IDRKG2ZcWdGnlQbGZgEIMm39WzwNDYk0npq1oZ\nBQzz1HhhqodP/CCym7/IJitIC2ouGWXiaTwfe8nASfWZd6qjVOcag0cTwqjX1X8=\n=Ps9V\n-----END PGP SIGNATURE-----\n",
+            "payload": "tree 04f76f1a6937e56fce680b40ccf1778de94f6a89\nparent 0dcd2c636e28d27473c084e5148e7dfb86886831\nauthor 97littleleaf11 <97littleleaf11@users.noreply.github.com> 1628674492 +0800\ncommitter GitHub <noreply@github.com> 1628674492 +0100\n\n[mypyc] Add bytes index primitive (#10950)\n\nImplements part of mypyc/mypyc#880."
+          }
+        },
+        "url": "https://api.github.com/repos/discord/mypy/commits/ba7b50c07886f744268d664adb5a6f026ce7be37",
+        "author": {
+          "login": "97littleleaf11",
+          "id": 11172084,
+          "node_id": "MDQ6VXNlcjExMTcyMDg0",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/97littleleaf11",
+          "type": "User",
+          "site_admin": false
+        },
+        "committer": {
+          "login": "web-flow",
+          "id": 19864447,
+          "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/web-flow",
+          "type": "User",
+          "site_admin": false
+        },
+        "parents": [
+          {
+            "sha": "0dcd2c636e28d27473c084e5148e7dfb86886831",
+            "url": "https://api.github.com/repos/discord/mypy/commits/0dcd2c636e28d27473c084e5148e7dfb86886831"
+          }
+        ]
+      },
+      {
+        "sha": "0dcd2c636e28d27473c084e5148e7dfb86886831",
+        "node_id": "MDY6Q29tbWl0Mzk1NzIyNTExOjBkY2QyYzYzNmUyOGQyNzQ3M2MwODRlNTE0OGU3ZGZiODY4ODY4MzE=",
+        "commit": {
+          "author": {
+            "name": "pranavrajpal",
+            "email": "78008260+pranavrajpal@users.noreply.github.com",
+            "date": "2021-08-11T03:01:03Z"
+          },
+          "committer": {
+            "name": "GitHub",
+            "email": "noreply@github.com",
+            "date": "2021-08-11T03:01:03Z"
+          },
+          "message": "[mypyc] Add support for dynamically registering singledispatch functions (#10968)\n\nInstead of generating a regular native function for singledispatch\r\nfunctions, generate a callable class. That gives us a place to put the\r\nregistry dict (instead of storing the registry dict in a static\r\nvariable) and also will allow us to support dynamically registering\r\nfunctions by adding a register method to that callable class.",
+          "tree": {
+            "sha": "f380f0fb4b4c4a36ebb384327c18b4b0b87bcb4c",
+            "url": "https://api.github.com/repos/discord/mypy/git/trees/f380f0fb4b4c4a36ebb384327c18b4b0b87bcb4c"
+          },
+          "url": "https://api.github.com/repos/discord/mypy/git/commits/0dcd2c636e28d27473c084e5148e7dfb86886831",
+          "comment_count": 0,
+          "verification": {
+            "verified": true,
+            "reason": "valid",
+            "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsBcBAABCAAQBQJhEz1vCRBK7hj4Ov3rIwAAQVUIAKNWiTfYQdekEN0VR8HK4Rg3\nLl6ncXaCTQUjoF0A5k7zf5Ju02QM6y3+j7YbSdO6Shc5LORIwZvKD5mvyPrFNNOj\nCb8cCrAHEF2z5vznjkr/RcvvSl855Hz5uwDKhzuh0exqT58K9/Of3J56WKqF5AdO\n1f/B/yCX7Gh0v00fJ7R6rWefFNqK159gicPBH3W/IZuPX8upYOn17zcmsfZ5YVmN\nevyn5xdCuROku27l0bQ9g4a/bOg1gU0r8vZL2Gyun2o11NqgD5X056oLZaoH3oYV\nI4AKw7NZ6EV3fg7Lh0XRuCGnxIB2f0IS3YEslIAe52qsFV9EOuYT1PNmULiS+pA=\n=9VX2\n-----END PGP SIGNATURE-----\n",
+            "payload": "tree f380f0fb4b4c4a36ebb384327c18b4b0b87bcb4c\nparent 0bde4b9e82e337f1b63d1e7dcc6922ed648e86f7\nauthor pranavrajpal <78008260+pranavrajpal@users.noreply.github.com> 1628650863 -0700\ncommitter GitHub <noreply@github.com> 1628650863 -0700\n\n[mypyc] Add support for dynamically registering singledispatch functions (#10968)\n\nInstead of generating a regular native function for singledispatch\r\nfunctions, generate a callable class. That gives us a place to put the\r\nregistry dict (instead of storing the registry dict in a static\r\nvariable) and also will allow us to support dynamically registering\r\nfunctions by adding a register method to that callable class."
+          }
+        },
+        "url": "https://api.github.com/repos/discord/mypy/commits/0dcd2c636e28d27473c084e5148e7dfb86886831",
+        "author": {
+          "login": "pranavrajpal",
+          "id": 78008260,
+          "node_id": "MDQ6VXNlcjc4MDA4MjYw",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/pranavrajpal",
+          "type": "User",
+          "site_admin": false
+        },
+        "committer": {
+          "login": "web-flow",
+          "id": 19864447,
+          "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/web-flow",
+          "type": "User",
+          "site_admin": false
+        },
+        "parents": [
+          {
+            "sha": "0bde4b9e82e337f1b63d1e7dcc6922ed648e86f7",
+            "url": "https://api.github.com/repos/discord/mypy/commits/0bde4b9e82e337f1b63d1e7dcc6922ed648e86f7"
+          }
+        ]
+      }
+    ],
+    "releases": [],
+    "issues": [],
+    "pullRequests": []
+  }
+}

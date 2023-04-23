@@ -1,0 +1,395 @@
+{
+  "id": 83489068,
+  "node_id": "MDEwOlJlcG9zaXRvcnk4MzQ4OTA2OA==",
+  "name": "rebar3_proper",
+  "full_name": "discord/rebar3_proper",
+  "private": false,
+  "owner": {
+    "login": "discord",
+    "id": 1965106,
+    "node_id": "MDEyOk9yZ2FuaXphdGlvbjE5NjUxMDY=",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/discord",
+    "type": "Organization",
+    "site_admin": false
+  },
+  "description": "Run PropEr test suites with rebar3",
+  "fork": true,
+  "url": "https://api.github.com/repos/discord/rebar3_proper",
+  "created_at": "2017-02-28T23:17:32Z",
+  "updated_at": "2021-04-28T21:28:49Z",
+  "pushed_at": "2017-02-28T23:38:10Z",
+  "homepage": null,
+  "size": 45,
+  "stargazers_count": 3,
+  "watchers_count": 3,
+  "language": "Erlang",
+  "has_issues": false,
+  "has_projects": true,
+  "has_downloads": true,
+  "has_wiki": true,
+  "has_pages": false,
+  "has_discussions": false,
+  "forks_count": 4,
+  "archived": false,
+  "disabled": false,
+  "open_issues_count": 1,
+  "license": {
+    "key": "bsd-3-clause",
+    "name": "BSD 3-Clause \"New\" or \"Revised\" License",
+    "spdx_id": "BSD-3-Clause",
+    "url": "https://api.github.com/licenses/bsd-3-clause",
+    "node_id": "MDc6TGljZW5zZTU="
+  },
+  "allow_forking": true,
+  "is_template": false,
+  "web_commit_signoff_required": false,
+  "topics": [],
+  "visibility": "public",
+  "forks": 4,
+  "open_issues": 1,
+  "watchers": 3,
+  "default_branch": "master",
+  "permissions": {
+    "admin": false,
+    "maintain": false,
+    "push": false,
+    "triage": false,
+    "pull": false
+  },
+  "branches": [],
+  "last5": {
+    "commits": [
+      {
+        "sha": "1960bee7a60b4086dd219aefe2bd14dffc943649",
+        "node_id": "MDY6Q29tbWl0ODM0ODkwNjg6MTk2MGJlZTdhNjBiNDA4NmRkMjE5YWVmZTJiZDE0ZGZmYzk0MzY0OQ==",
+        "commit": {
+          "author": {
+            "name": "Fred Hebert",
+            "email": "mononcqc@ferd.ca",
+            "date": "2016-12-08T15:54:44Z"
+          },
+          "committer": {
+            "name": "GitHub",
+            "email": "noreply@github.com",
+            "date": "2016-12-08T15:54:44Z"
+          },
+          "message": "Merge pull request #13 from ferd/fix-app-paths\n\nUsing set path fixes weird priv_dir issues.",
+          "tree": {
+            "sha": "de159cb84c3787fb073f52a3e6a9270ce46f2491",
+            "url": "https://api.github.com/repos/discord/rebar3_proper/git/trees/de159cb84c3787fb073f52a3e6a9270ce46f2491"
+          },
+          "url": "https://api.github.com/repos/discord/rebar3_proper/git/commits/1960bee7a60b4086dd219aefe2bd14dffc943649",
+          "comment_count": 0,
+          "verification": {
+            "verified": false,
+            "reason": "unsigned",
+            "signature": null,
+            "payload": null
+          }
+        },
+        "url": "https://api.github.com/repos/discord/rebar3_proper/commits/1960bee7a60b4086dd219aefe2bd14dffc943649",
+        "author": {
+          "login": "ferd",
+          "id": 111141,
+          "node_id": "MDQ6VXNlcjExMTE0MQ==",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/ferd",
+          "type": "User",
+          "site_admin": false
+        },
+        "committer": {
+          "login": "web-flow",
+          "id": 19864447,
+          "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/web-flow",
+          "type": "User",
+          "site_admin": false
+        },
+        "parents": [
+          {
+            "sha": "de1796c5d307f8b50c57c11a2cb4ec49aa236592",
+            "url": "https://api.github.com/repos/discord/rebar3_proper/commits/de1796c5d307f8b50c57c11a2cb4ec49aa236592"
+          },
+          {
+            "sha": "8004045251384848570420b1446b811ca5694530",
+            "url": "https://api.github.com/repos/discord/rebar3_proper/commits/8004045251384848570420b1446b811ca5694530"
+          }
+        ]
+      },
+      {
+        "sha": "8004045251384848570420b1446b811ca5694530",
+        "node_id": "MDY6Q29tbWl0ODM0ODkwNjg6ODAwNDA0NTI1MTM4NDg0ODU3MDQyMGIxNDQ2YjgxMWNhNTY5NDUzMA==",
+        "commit": {
+          "author": {
+            "name": "Fred Hebert",
+            "email": "mononcqc@ferd.ca",
+            "date": "2016-12-08T12:27:04Z"
+          },
+          "committer": {
+            "name": "Fred Hebert",
+            "email": "mononcqc@ferd.ca",
+            "date": "2016-12-08T12:29:05Z"
+          },
+          "message": "Using set path fixes weird priv_dir issues.\n\nI'm not 100% sure how, but it seems that using `set_path` instead of\njust `add_path` changes how libraries are looked into by the Erlang VM\nwhen it comes to priv dirs and lib dirs.\n\nThis commit forces the addition of apps' paths through this function\nrather than just adding the paths, which appears to fix some subtle bugs\nin umbrella apps with private tests requiring access to priv and lib\ndirs for the app they're part of.",
+          "tree": {
+            "sha": "de159cb84c3787fb073f52a3e6a9270ce46f2491",
+            "url": "https://api.github.com/repos/discord/rebar3_proper/git/trees/de159cb84c3787fb073f52a3e6a9270ce46f2491"
+          },
+          "url": "https://api.github.com/repos/discord/rebar3_proper/git/commits/8004045251384848570420b1446b811ca5694530",
+          "comment_count": 0,
+          "verification": {
+            "verified": false,
+            "reason": "unsigned",
+            "signature": null,
+            "payload": null
+          }
+        },
+        "url": "https://api.github.com/repos/discord/rebar3_proper/commits/8004045251384848570420b1446b811ca5694530",
+        "author": {
+          "login": "ferd",
+          "id": 111141,
+          "node_id": "MDQ6VXNlcjExMTE0MQ==",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/ferd",
+          "type": "User",
+          "site_admin": false
+        },
+        "committer": {
+          "login": "ferd",
+          "id": 111141,
+          "node_id": "MDQ6VXNlcjExMTE0MQ==",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/ferd",
+          "type": "User",
+          "site_admin": false
+        },
+        "parents": [
+          {
+            "sha": "de1796c5d307f8b50c57c11a2cb4ec49aa236592",
+            "url": "https://api.github.com/repos/discord/rebar3_proper/commits/de1796c5d307f8b50c57c11a2cb4ec49aa236592"
+          }
+        ]
+      },
+      {
+        "sha": "de1796c5d307f8b50c57c11a2cb4ec49aa236592",
+        "node_id": "MDY6Q29tbWl0ODM0ODkwNjg6ZGUxNzk2YzVkMzA3ZjhiNTBjNTdjMTFhMmNiNGVjNDlhYTIzNjU5Mg==",
+        "commit": {
+          "author": {
+            "name": "Fred Hebert",
+            "email": "mononcqc@ferd.ca",
+            "date": "2016-10-03T11:25:22Z"
+          },
+          "committer": {
+            "name": "Fred Hebert",
+            "email": "mononcqc@ferd.ca",
+            "date": "2016-10-03T11:25:22Z"
+          },
+          "message": "Bump to 0.7.0",
+          "tree": {
+            "sha": "4c7929b841cb46858aa558ebcca707b5eb5f1e0b",
+            "url": "https://api.github.com/repos/discord/rebar3_proper/git/trees/4c7929b841cb46858aa558ebcca707b5eb5f1e0b"
+          },
+          "url": "https://api.github.com/repos/discord/rebar3_proper/git/commits/de1796c5d307f8b50c57c11a2cb4ec49aa236592",
+          "comment_count": 0,
+          "verification": {
+            "verified": false,
+            "reason": "unsigned",
+            "signature": null,
+            "payload": null
+          }
+        },
+        "url": "https://api.github.com/repos/discord/rebar3_proper/commits/de1796c5d307f8b50c57c11a2cb4ec49aa236592",
+        "author": {
+          "login": "ferd",
+          "id": 111141,
+          "node_id": "MDQ6VXNlcjExMTE0MQ==",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/ferd",
+          "type": "User",
+          "site_admin": false
+        },
+        "committer": {
+          "login": "ferd",
+          "id": 111141,
+          "node_id": "MDQ6VXNlcjExMTE0MQ==",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/ferd",
+          "type": "User",
+          "site_admin": false
+        },
+        "parents": [
+          {
+            "sha": "352fa3229557ee7b5067900bb277dfa43b212c5a",
+            "url": "https://api.github.com/repos/discord/rebar3_proper/commits/352fa3229557ee7b5067900bb277dfa43b212c5a"
+          }
+        ]
+      },
+      {
+        "sha": "352fa3229557ee7b5067900bb277dfa43b212c5a",
+        "node_id": "MDY6Q29tbWl0ODM0ODkwNjg6MzUyZmEzMjI5NTU3ZWU3YjUwNjc5MDBiYjI3N2RmYTQzYjIxMmM1YQ==",
+        "commit": {
+          "author": {
+            "name": "Fred Hebert",
+            "email": "mononcqc@ferd.ca",
+            "date": "2016-10-03T11:20:05Z"
+          },
+          "committer": {
+            "name": "GitHub",
+            "email": "noreply@github.com",
+            "date": "2016-10-03T11:20:05Z"
+          },
+          "message": "Merge pull request #11 from ferd/counterexample-support\n\nAdd support for counterexamples",
+          "tree": {
+            "sha": "fac970a901cda6a3619bc84e18b2312a76af1f0e",
+            "url": "https://api.github.com/repos/discord/rebar3_proper/git/trees/fac970a901cda6a3619bc84e18b2312a76af1f0e"
+          },
+          "url": "https://api.github.com/repos/discord/rebar3_proper/git/commits/352fa3229557ee7b5067900bb277dfa43b212c5a",
+          "comment_count": 0,
+          "verification": {
+            "verified": false,
+            "reason": "unsigned",
+            "signature": null,
+            "payload": null
+          }
+        },
+        "url": "https://api.github.com/repos/discord/rebar3_proper/commits/352fa3229557ee7b5067900bb277dfa43b212c5a",
+        "author": {
+          "login": "ferd",
+          "id": 111141,
+          "node_id": "MDQ6VXNlcjExMTE0MQ==",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/ferd",
+          "type": "User",
+          "site_admin": false
+        },
+        "committer": {
+          "login": "web-flow",
+          "id": 19864447,
+          "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/web-flow",
+          "type": "User",
+          "site_admin": false
+        },
+        "parents": [
+          {
+            "sha": "f51013ddcc34b0d470bc7783cd94b74a82a0eab2",
+            "url": "https://api.github.com/repos/discord/rebar3_proper/commits/f51013ddcc34b0d470bc7783cd94b74a82a0eab2"
+          },
+          {
+            "sha": "f85d908487e4a3a697b26934afd59bbd2bd7b965",
+            "url": "https://api.github.com/repos/discord/rebar3_proper/commits/f85d908487e4a3a697b26934afd59bbd2bd7b965"
+          }
+        ]
+      },
+      {
+        "sha": "f85d908487e4a3a697b26934afd59bbd2bd7b965",
+        "node_id": "MDY6Q29tbWl0ODM0ODkwNjg6Zjg1ZDkwODQ4N2U0YTNhNjk3YjI2OTM0YWZkNTliYmQyYmQ3Yjk2NQ==",
+        "commit": {
+          "author": {
+            "name": "Fred Hebert",
+            "email": "mononcqc@ferd.ca",
+            "date": "2016-10-03T10:24:52Z"
+          },
+          "committer": {
+            "name": "Fred Hebert",
+            "email": "mononcqc@ferd.ca",
+            "date": "2016-10-03T10:24:52Z"
+          },
+          "message": "Add support for counterexamples\n\nAll failing properties of a recent run will be stored on disk for that\nrun in a single batch. By calling `rebar3 proper --retry`, they will be\nretrieved and run against the current system to see if they still work.\n\nThe execution model should otherwise remain unchanged.",
+          "tree": {
+            "sha": "fac970a901cda6a3619bc84e18b2312a76af1f0e",
+            "url": "https://api.github.com/repos/discord/rebar3_proper/git/trees/fac970a901cda6a3619bc84e18b2312a76af1f0e"
+          },
+          "url": "https://api.github.com/repos/discord/rebar3_proper/git/commits/f85d908487e4a3a697b26934afd59bbd2bd7b965",
+          "comment_count": 0,
+          "verification": {
+            "verified": false,
+            "reason": "unsigned",
+            "signature": null,
+            "payload": null
+          }
+        },
+        "url": "https://api.github.com/repos/discord/rebar3_proper/commits/f85d908487e4a3a697b26934afd59bbd2bd7b965",
+        "author": {
+          "login": "ferd",
+          "id": 111141,
+          "node_id": "MDQ6VXNlcjExMTE0MQ==",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/ferd",
+          "type": "User",
+          "site_admin": false
+        },
+        "committer": {
+          "login": "ferd",
+          "id": 111141,
+          "node_id": "MDQ6VXNlcjExMTE0MQ==",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/ferd",
+          "type": "User",
+          "site_admin": false
+        },
+        "parents": [
+          {
+            "sha": "f51013ddcc34b0d470bc7783cd94b74a82a0eab2",
+            "url": "https://api.github.com/repos/discord/rebar3_proper/commits/f51013ddcc34b0d470bc7783cd94b74a82a0eab2"
+          }
+        ]
+      }
+    ],
+    "releases": [],
+    "issues": [
+      {
+        "url": "https://api.github.com/repos/discord/rebar3_proper/issues/1",
+        "id": 210936137,
+        "node_id": "MDExOlB1bGxSZXF1ZXN0MTA4NDM2NjU0",
+        "number": 1,
+        "title": "upgrade to proper 1.2",
+        "user": {
+          "login": "brian-armstrong-discord",
+          "id": 25939803,
+          "node_id": "MDQ6VXNlcjI1OTM5ODAz",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/brian-armstrong-discord",
+          "type": "User",
+          "site_admin": false
+        },
+        "labels": [],
+        "state": "open",
+        "locked": false,
+        "assignee": null,
+        "assignees": [],
+        "milestone": null,
+        "comments": 0,
+        "created_at": "2017-02-28T23:38:10Z",
+        "updated_at": "2017-02-28T23:38:10Z",
+        "closed_at": null,
+        "author_association": "COLLABORATOR",
+        "active_lock_reason": null,
+        "draft": false,
+        "pull_request": {
+          "url": "https://api.github.com/repos/discord/rebar3_proper/pulls/1",
+          "merged_at": null
+        },
+        "body": "for now this is a github ref since the hex.pm repo doesnt have 1.2 yet",
+        "reactions": {
+          "url": "https://api.github.com/repos/discord/rebar3_proper/issues/1/reactions",
+          "total_count": 0,
+          "+1": 0,
+          "-1": 0,
+          "laugh": 0,
+          "hooray": 0,
+          "confused": 0,
+          "heart": 0,
+          "rocket": 0,
+          "eyes": 0
+        },
+        "performed_via_github_app": null,
+        "state_reason": null
+      }
+    ],
+    "pullRequests": []
+  }
+}

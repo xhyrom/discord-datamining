@@ -1,0 +1,218 @@
+{
+  "id": 109873697,
+  "node_id": "MDEwOlJlcG9zaXRvcnkxMDk4NzM2OTc=",
+  "name": "react-dom-animated",
+  "full_name": "discord/react-dom-animated",
+  "private": false,
+  "owner": {
+    "login": "discord",
+    "id": 1965106,
+    "node_id": "MDEyOk9yZ2FuaXphdGlvbjE5NjUxMDY=",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/discord",
+    "type": "Organization",
+    "site_admin": false
+  },
+  "description": "Animated wrapper for ReactDOM that works with React 16",
+  "fork": true,
+  "url": "https://api.github.com/repos/discord/react-dom-animated",
+  "created_at": "2017-11-07T18:20:32Z",
+  "updated_at": "2021-04-28T21:28:49Z",
+  "pushed_at": "2017-08-29T18:46:33Z",
+  "homepage": null,
+  "size": 3,
+  "stargazers_count": 4,
+  "watchers_count": 4,
+  "language": "JavaScript",
+  "has_issues": false,
+  "has_projects": true,
+  "has_downloads": true,
+  "has_wiki": true,
+  "has_pages": false,
+  "has_discussions": false,
+  "forks_count": 5,
+  "archived": false,
+  "disabled": false,
+  "open_issues_count": 0,
+  "license": null,
+  "allow_forking": true,
+  "is_template": false,
+  "web_commit_signoff_required": false,
+  "topics": [],
+  "visibility": "public",
+  "forks": 5,
+  "open_issues": 0,
+  "watchers": 4,
+  "default_branch": "master",
+  "permissions": {
+    "admin": false,
+    "maintain": false,
+    "push": false,
+    "triage": false,
+    "pull": false
+  },
+  "branches": [
+    {
+      "name": "master",
+      "commit": {
+        "sha": "8eb1ac6cab42ac081a1d208b5f23f9948da9f0f4",
+        "url": "https://api.github.com/repos/discord/react-dom-animated/commits/8eb1ac6cab42ac081a1d208b5f23f9948da9f0f4"
+      },
+      "protected": false
+    }
+  ],
+  "last5": {
+    "commits": [
+      {
+        "sha": "8eb1ac6cab42ac081a1d208b5f23f9948da9f0f4",
+        "node_id": "MDY6Q29tbWl0MTA5ODczNjk3OjhlYjFhYzZjYWI0MmFjMDgxYTFkMjA4YjVmMjNmOTk0OGRhOWYwZjQ=",
+        "commit": {
+          "author": {
+            "name": "Darío Javier Cravero",
+            "email": "dario@uxtemple.com",
+            "date": "2017-08-29T18:46:17Z"
+          },
+          "committer": {
+            "name": "Darío Javier Cravero",
+            "email": "dario@uxtemple.com",
+            "date": "2017-08-29T18:46:17Z"
+          },
+          "message": "feat: units for transform values",
+          "tree": {
+            "sha": "d07e1526209d980c9be64169d15da0193f290ca8",
+            "url": "https://api.github.com/repos/discord/react-dom-animated/git/trees/d07e1526209d980c9be64169d15da0193f290ca8"
+          },
+          "url": "https://api.github.com/repos/discord/react-dom-animated/git/commits/8eb1ac6cab42ac081a1d208b5f23f9948da9f0f4",
+          "comment_count": 0,
+          "verification": {
+            "verified": false,
+            "reason": "unsigned",
+            "signature": null,
+            "payload": null
+          }
+        },
+        "url": "https://api.github.com/repos/discord/react-dom-animated/commits/8eb1ac6cab42ac081a1d208b5f23f9948da9f0f4",
+        "author": null,
+        "committer": null,
+        "parents": [
+          {
+            "sha": "957a212ee19904420a7a2839c3a47f8beb9bcd66",
+            "url": "https://api.github.com/repos/discord/react-dom-animated/commits/957a212ee19904420a7a2839c3a47f8beb9bcd66"
+          }
+        ]
+      },
+      {
+        "sha": "957a212ee19904420a7a2839c3a47f8beb9bcd66",
+        "node_id": "MDY6Q29tbWl0MTA5ODczNjk3Ojk1N2EyMTJlZTE5OTA0NDIwYTdhMjgzOWMzYTQ3ZjhiZWI5YmNkNjY=",
+        "commit": {
+          "author": {
+            "name": "Darío Javier Cravero",
+            "email": "dario@uxtemple.com",
+            "date": "2017-08-02T11:30:43Z"
+          },
+          "committer": {
+            "name": "Darío Javier Cravero",
+            "email": "dario@uxtemple.com",
+            "date": "2017-08-02T11:30:43Z"
+          },
+          "message": "fix: remove template string",
+          "tree": {
+            "sha": "040c3d92cd6135e37fcad41b4555be767926b6dc",
+            "url": "https://api.github.com/repos/discord/react-dom-animated/git/trees/040c3d92cd6135e37fcad41b4555be767926b6dc"
+          },
+          "url": "https://api.github.com/repos/discord/react-dom-animated/git/commits/957a212ee19904420a7a2839c3a47f8beb9bcd66",
+          "comment_count": 0,
+          "verification": {
+            "verified": false,
+            "reason": "unsigned",
+            "signature": null,
+            "payload": null
+          }
+        },
+        "url": "https://api.github.com/repos/discord/react-dom-animated/commits/957a212ee19904420a7a2839c3a47f8beb9bcd66",
+        "author": null,
+        "committer": null,
+        "parents": [
+          {
+            "sha": "9d90c6676220256e7e93af730315f8b9430ed57d",
+            "url": "https://api.github.com/repos/discord/react-dom-animated/commits/9d90c6676220256e7e93af730315f8b9430ed57d"
+          }
+        ]
+      },
+      {
+        "sha": "9d90c6676220256e7e93af730315f8b9430ed57d",
+        "node_id": "MDY6Q29tbWl0MTA5ODczNjk3OjlkOTBjNjY3NjIyMDI1NmU3ZTkzYWY3MzAzMTVmOGI5NDMwZWQ1N2Q=",
+        "commit": {
+          "author": {
+            "name": "Darío Javier Cravero",
+            "email": "dario@uxtemple.com",
+            "date": "2017-07-31T14:53:52Z"
+          },
+          "committer": {
+            "name": "Darío Javier Cravero",
+            "email": "dario@uxtemple.com",
+            "date": "2017-07-31T14:53:52Z"
+          },
+          "message": "fix: use smaller version of CSSPropertyOperations",
+          "tree": {
+            "sha": "6b3b2159088652727db30da2fae792034e95b3b5",
+            "url": "https://api.github.com/repos/discord/react-dom-animated/git/trees/6b3b2159088652727db30da2fae792034e95b3b5"
+          },
+          "url": "https://api.github.com/repos/discord/react-dom-animated/git/commits/9d90c6676220256e7e93af730315f8b9430ed57d",
+          "comment_count": 0,
+          "verification": {
+            "verified": false,
+            "reason": "unsigned",
+            "signature": null,
+            "payload": null
+          }
+        },
+        "url": "https://api.github.com/repos/discord/react-dom-animated/commits/9d90c6676220256e7e93af730315f8b9430ed57d",
+        "author": null,
+        "committer": null,
+        "parents": [
+          {
+            "sha": "f0cea9990f3bec4221cf146ffdaad138eeb7b2d6",
+            "url": "https://api.github.com/repos/discord/react-dom-animated/commits/f0cea9990f3bec4221cf146ffdaad138eeb7b2d6"
+          }
+        ]
+      },
+      {
+        "sha": "f0cea9990f3bec4221cf146ffdaad138eeb7b2d6",
+        "node_id": "MDY6Q29tbWl0MTA5ODczNjk3OmYwY2VhOTk5MGYzYmVjNDIyMWNmMTQ2ZmZkYWFkMTM4ZWViN2IyZDY=",
+        "commit": {
+          "author": {
+            "name": "Darío Javier Cravero",
+            "email": "dario@uxtemple.com",
+            "date": "2017-07-31T13:31:57Z"
+          },
+          "committer": {
+            "name": "Darío Javier Cravero",
+            "email": "dario@uxtemple.com",
+            "date": "2017-07-31T13:31:57Z"
+          },
+          "message": "initial commit",
+          "tree": {
+            "sha": "7afcba0ca4b4490579bfdbe35c597d63fc40e092",
+            "url": "https://api.github.com/repos/discord/react-dom-animated/git/trees/7afcba0ca4b4490579bfdbe35c597d63fc40e092"
+          },
+          "url": "https://api.github.com/repos/discord/react-dom-animated/git/commits/f0cea9990f3bec4221cf146ffdaad138eeb7b2d6",
+          "comment_count": 0,
+          "verification": {
+            "verified": false,
+            "reason": "unsigned",
+            "signature": null,
+            "payload": null
+          }
+        },
+        "url": "https://api.github.com/repos/discord/react-dom-animated/commits/f0cea9990f3bec4221cf146ffdaad138eeb7b2d6",
+        "author": null,
+        "committer": null,
+        "parents": []
+      }
+    ],
+    "releases": [],
+    "issues": [],
+    "pullRequests": []
+  }
+}

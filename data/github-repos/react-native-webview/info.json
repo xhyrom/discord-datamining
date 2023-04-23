@@ -1,0 +1,579 @@
+{
+  "id": 484590894,
+  "node_id": "R_kgDOHOJFLg",
+  "name": "react-native-webview",
+  "full_name": "discord/react-native-webview",
+  "private": false,
+  "owner": {
+    "login": "discord",
+    "id": 1965106,
+    "node_id": "MDEyOk9yZ2FuaXphdGlvbjE5NjUxMDY=",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/discord",
+    "type": "Organization",
+    "site_admin": false
+  },
+  "description": "React Native Cross-Platform WebView",
+  "fork": true,
+  "url": "https://api.github.com/repos/discord/react-native-webview",
+  "created_at": "2022-04-22T22:43:48Z",
+  "updated_at": "2023-03-05T02:32:39Z",
+  "pushed_at": "2023-03-29T16:25:04Z",
+  "homepage": "https://github.com/react-native-community/discussions-and-proposals/pull/3",
+  "size": 5657,
+  "stargazers_count": 12,
+  "watchers_count": 12,
+  "language": "TypeScript",
+  "has_issues": false,
+  "has_projects": true,
+  "has_downloads": true,
+  "has_wiki": false,
+  "has_pages": false,
+  "has_discussions": false,
+  "forks_count": 6,
+  "archived": false,
+  "disabled": false,
+  "open_issues_count": 2,
+  "license": {
+    "key": "mit",
+    "name": "MIT License",
+    "spdx_id": "MIT",
+    "url": "https://api.github.com/licenses/mit",
+    "node_id": "MDc6TGljZW5zZTEz"
+  },
+  "allow_forking": true,
+  "is_template": false,
+  "web_commit_signoff_required": false,
+  "topics": [],
+  "visibility": "public",
+  "forks": 6,
+  "open_issues": 2,
+  "watchers": 12,
+  "default_branch": "master",
+  "permissions": {
+    "admin": false,
+    "maintain": false,
+    "push": false,
+    "triage": false,
+    "pull": false
+  },
+  "branches": [],
+  "last5": {
+    "commits": [
+      {
+        "sha": "1707328bda42bd24bfd0a3d01d79c816b20948a5",
+        "node_id": "C_kwDOHOJFLtoAKDE3MDczMjhiZGE0MmJkMjRiZmQwYTNkMDFkNzljODE2YjIwOTQ4YTU",
+        "commit": {
+          "author": {
+            "name": "Jamon Holmgren",
+            "email": "jamonholmgren@gmail.com",
+            "date": "2023-03-03T19:20:23Z"
+          },
+          "committer": {
+            "name": "GitHub",
+            "email": "noreply@github.com",
+            "date": "2023-03-03T19:20:23Z"
+          },
+          "message": "chore(docs): README fixes: badge, minor wording tweaks (#2880)",
+          "tree": {
+            "sha": "b986e691ee3c47a5566f336e87aa96ded0a16abe",
+            "url": "https://api.github.com/repos/discord/react-native-webview/git/trees/b986e691ee3c47a5566f336e87aa96ded0a16abe"
+          },
+          "url": "https://api.github.com/repos/discord/react-native-webview/git/commits/1707328bda42bd24bfd0a3d01d79c816b20948a5",
+          "comment_count": 0,
+          "verification": {
+            "verified": true,
+            "reason": "valid",
+            "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsBcBAABCAAQBQJkAkh3CRBK7hj4Ov3rIwAAZBwIAFmEZMcX7h0PNdthUvwfehPO\nbvvhy2KE/lcep3HwWbAyxMYD1OBwVh37iy0XTXOcEftmN9Yo0n/exoiVbP+xkhab\nluRbho+RnqOI7xEMH/2wRfnZ924Bt/twQxZAoojvv7BREJI0RG93SirTl6uWr5fp\nOIVVuwZHeMmsGJ3thUFt2oEx16ptOQIY9gGJGUd9L0y3XU9pAEW+5DcH0vF6gIF9\nwUZ/iMNpERf+T1p77RGEBJtWxJ9Mi4QTFC8oX1ipxtLn95HiQpiG/BK/jC+Gh9Ck\nMI7EkKktTTB6iy4D6mQqlpJtucZigbFQJUcbFauVQqgjYjP4hTJNVhzjIuWGFR8=\n=5zqz\n-----END PGP SIGNATURE-----\n",
+            "payload": "tree b986e691ee3c47a5566f336e87aa96ded0a16abe\nparent f0aa7b9efb30fe03563e0d39c0570e89fdbbb157\nauthor Jamon Holmgren <jamonholmgren@gmail.com> 1677871223 -0800\ncommitter GitHub <noreply@github.com> 1677871223 -0800\n\nchore(docs): README fixes: badge, minor wording tweaks (#2880)\n\n"
+          }
+        },
+        "url": "https://api.github.com/repos/discord/react-native-webview/commits/1707328bda42bd24bfd0a3d01d79c816b20948a5",
+        "author": {
+          "login": "jamonholmgren",
+          "id": 1479215,
+          "node_id": "MDQ6VXNlcjE0NzkyMTU=",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/jamonholmgren",
+          "type": "User",
+          "site_admin": false
+        },
+        "committer": {
+          "login": "web-flow",
+          "id": 19864447,
+          "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/web-flow",
+          "type": "User",
+          "site_admin": false
+        },
+        "parents": [
+          {
+            "sha": "f0aa7b9efb30fe03563e0d39c0570e89fdbbb157",
+            "url": "https://api.github.com/repos/discord/react-native-webview/commits/f0aa7b9efb30fe03563e0d39c0570e89fdbbb157"
+          }
+        ]
+      },
+      {
+        "sha": "f0aa7b9efb30fe03563e0d39c0570e89fdbbb157",
+        "node_id": "C_kwDOHOJFLtoAKGYwYWE3YjllZmIzMGZlMDM1NjNlMGQzOWMwNTcwZTg5ZmRiYmIxNTc",
+        "commit": {
+          "author": {
+            "name": "Richard",
+            "email": "9120292+Reisclef@users.noreply.github.com",
+            "date": "2023-01-27T23:16:34Z"
+          },
+          "committer": {
+            "name": "GitHub",
+            "email": "noreply@github.com",
+            "date": "2023-01-27T23:16:34Z"
+          },
+          "message": "chore(docs): Fix clearCache link in index (#2814)",
+          "tree": {
+            "sha": "0449dea3344f59604a5f1bc159d6aefeb8283939",
+            "url": "https://api.github.com/repos/discord/react-native-webview/git/trees/0449dea3344f59604a5f1bc159d6aefeb8283939"
+          },
+          "url": "https://api.github.com/repos/discord/react-native-webview/git/commits/f0aa7b9efb30fe03563e0d39c0570e89fdbbb157",
+          "comment_count": 0,
+          "verification": {
+            "verified": true,
+            "reason": "valid",
+            "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsBcBAABCAAQBQJj1FtSCRBK7hj4Ov3rIwAAvZAIAJsSfjUJ0tcipH4gfTzPgIlT\nVFXDy2IYJi1LRT0bXX3R6clTntnMBuxnLDHbSHsK/2OSqGaE5kuyFCvajSOvaB45\n3Rds2LWYo5LdgdEYfGdEa2OBtejL/V2ydzsLqRK5JUfbaT8FBBhaBPn4brZ4gO+I\nwxMGJJmjfIoPs0cXVT09WxC052Zyh3Ka27qKvU8idU7t1vOkrBiXRZdxtvttTwE8\n3kNB94d3K5nqoFsPLcWGd/+0VAS4utAbLrhKIrAFM+LevDoG4ndtbMQ3fnIdf8kC\nMnaEKZzZR5ZrcvH6QTp5KXmmTygZPlHtwRnAYDAmnCeX+V6nc2/g17OFlGSyrro=\n=Fp24\n-----END PGP SIGNATURE-----\n",
+            "payload": "tree 0449dea3344f59604a5f1bc159d6aefeb8283939\nparent 9051762cc4b906d957d6297b217bf67c6f12ed8e\nauthor Richard <9120292+Reisclef@users.noreply.github.com> 1674861394 +0000\ncommitter GitHub <noreply@github.com> 1674861394 -0800\n\nchore(docs): Fix clearCache link in index (#2814)\n\n"
+          }
+        },
+        "url": "https://api.github.com/repos/discord/react-native-webview/commits/f0aa7b9efb30fe03563e0d39c0570e89fdbbb157",
+        "author": {
+          "login": "Reisclef",
+          "id": 9120292,
+          "node_id": "MDQ6VXNlcjkxMjAyOTI=",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/Reisclef",
+          "type": "User",
+          "site_admin": false
+        },
+        "committer": {
+          "login": "web-flow",
+          "id": 19864447,
+          "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/web-flow",
+          "type": "User",
+          "site_admin": false
+        },
+        "parents": [
+          {
+            "sha": "9051762cc4b906d957d6297b217bf67c6f12ed8e",
+            "url": "https://api.github.com/repos/discord/react-native-webview/commits/9051762cc4b906d957d6297b217bf67c6f12ed8e"
+          }
+        ]
+      },
+      {
+        "sha": "9051762cc4b906d957d6297b217bf67c6f12ed8e",
+        "node_id": "C_kwDOHOJFLtoAKDkwNTE3NjJjYzRiOTA2ZDk1N2Q2Mjk3YjIxN2JmNjdjNmYxMmVkOGU",
+        "commit": {
+          "author": {
+            "name": "semantic-release-bot",
+            "email": "semantic-release-bot@martynus.net",
+            "date": "2023-01-27T17:39:53Z"
+          },
+          "committer": {
+            "name": "semantic-release-bot",
+            "email": "semantic-release-bot@martynus.net",
+            "date": "2023-01-27T17:39:53Z"
+          },
+          "message": "chore(release): 11.26.1 [skip ci]\n\n## [11.26.1](https://github.com/react-native-webview/react-native-webview/compare/v11.26.0...v11.26.1) (2023-01-27)\n\n### Bug Fixes\n\n* **js:** messagingEnabled prop ([#2666](https://github.com/react-native-webview/react-native-webview/issues/2666)) ([f74ee7a](https://github.com/react-native-webview/react-native-webview/commit/f74ee7a88adf6d645f2ef80da6657b68f5d6959d))",
+          "tree": {
+            "sha": "b86d88e756bf821a0d97379752fa7e8b16e30a97",
+            "url": "https://api.github.com/repos/discord/react-native-webview/git/trees/b86d88e756bf821a0d97379752fa7e8b16e30a97"
+          },
+          "url": "https://api.github.com/repos/discord/react-native-webview/git/commits/9051762cc4b906d957d6297b217bf67c6f12ed8e",
+          "comment_count": 0,
+          "verification": {
+            "verified": false,
+            "reason": "unsigned",
+            "signature": null,
+            "payload": null
+          }
+        },
+        "url": "https://api.github.com/repos/discord/react-native-webview/commits/9051762cc4b906d957d6297b217bf67c6f12ed8e",
+        "author": {
+          "login": "semantic-release-bot",
+          "id": 32174276,
+          "node_id": "MDQ6VXNlcjMyMTc0Mjc2",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/semantic-release-bot",
+          "type": "User",
+          "site_admin": false
+        },
+        "committer": {
+          "login": "semantic-release-bot",
+          "id": 32174276,
+          "node_id": "MDQ6VXNlcjMyMTc0Mjc2",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/semantic-release-bot",
+          "type": "User",
+          "site_admin": false
+        },
+        "parents": [
+          {
+            "sha": "7d605d39474ca5b30f34903306e453f90d5e8756",
+            "url": "https://api.github.com/repos/discord/react-native-webview/commits/7d605d39474ca5b30f34903306e453f90d5e8756"
+          }
+        ]
+      },
+      {
+        "sha": "7d605d39474ca5b30f34903306e453f90d5e8756",
+        "node_id": "C_kwDOHOJFLtoAKDdkNjA1ZDM5NDc0Y2E1YjMwZjM0OTAzMzA2ZTQ1M2Y5MGQ1ZTg3NTY",
+        "commit": {
+          "author": {
+            "name": "Tommy Nguyen",
+            "email": "4123478+tido64@users.noreply.github.com",
+            "date": "2023-01-27T17:37:31Z"
+          },
+          "committer": {
+            "name": "GitHub",
+            "email": "noreply@github.com",
+            "date": "2023-01-27T17:37:31Z"
+          },
+          "message": "chore: bump react-native-macos to 0.68 (#2828)",
+          "tree": {
+            "sha": "6dada573b18e35c56a77e930ff3dabb42c1de5de",
+            "url": "https://api.github.com/repos/discord/react-native-webview/git/trees/6dada573b18e35c56a77e930ff3dabb42c1de5de"
+          },
+          "url": "https://api.github.com/repos/discord/react-native-webview/git/commits/7d605d39474ca5b30f34903306e453f90d5e8756",
+          "comment_count": 0,
+          "verification": {
+            "verified": true,
+            "reason": "valid",
+            "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsBcBAABCAAQBQJj1AvbCRBK7hj4Ov3rIwAAnJUIAFovACzOJ1K/4ykld9//mIfR\nSUtcZvM+NEflqqKOAi0ExUwI/ZY/1bMJKpHUEL3ESj2ZOEUOQBvxPQ4iddnlvxH6\nNJfKKr9DvUOJc28VBik1IktcEtFGsf0MUKYB4wPQAzBIMjdZjG8OhmzJD+U2llbV\ni2RPxdciMsIJre0i6jNdN6T8Eaz3EpCYxHevNv8J879niMTh9YXjv8w15MSviPqS\n7IGFKS6Zwp2oJNqPXy3daGiGkzH1q7Sssvccp7Pu+oJLuaeCX5z99kdVJ2qvkefB\nD9Z9v8kIw1h9ggMZDAgPjq/Wlb30/VX4Xqnz4IVfe/DSM53pc7ofYQTgz6RDxgc=\n=gdcw\n-----END PGP SIGNATURE-----\n",
+            "payload": "tree 6dada573b18e35c56a77e930ff3dabb42c1de5de\nparent 130d64f13f2e148bc3143720bf123586d5d7a71b\nauthor Tommy Nguyen <4123478+tido64@users.noreply.github.com> 1674841051 +0100\ncommitter GitHub <noreply@github.com> 1674841051 -0800\n\nchore: bump react-native-macos to 0.68 (#2828)\n\n"
+          }
+        },
+        "url": "https://api.github.com/repos/discord/react-native-webview/commits/7d605d39474ca5b30f34903306e453f90d5e8756",
+        "author": {
+          "login": "tido64",
+          "id": 4123478,
+          "node_id": "MDQ6VXNlcjQxMjM0Nzg=",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/tido64",
+          "type": "User",
+          "site_admin": false
+        },
+        "committer": {
+          "login": "web-flow",
+          "id": 19864447,
+          "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/web-flow",
+          "type": "User",
+          "site_admin": false
+        },
+        "parents": [
+          {
+            "sha": "130d64f13f2e148bc3143720bf123586d5d7a71b",
+            "url": "https://api.github.com/repos/discord/react-native-webview/commits/130d64f13f2e148bc3143720bf123586d5d7a71b"
+          }
+        ]
+      },
+      {
+        "sha": "130d64f13f2e148bc3143720bf123586d5d7a71b",
+        "node_id": "C_kwDOHOJFLtoAKDEzMGQ2NGYxM2YyZTE0OGJjMzE0MzcyMGJmMTIzNTg2ZDVkN2E3MWI",
+        "commit": {
+          "author": {
+            "name": "Caleb Clarke",
+            "email": "TheAlmightyBob@users.noreply.github.com",
+            "date": "2023-01-16T16:04:41Z"
+          },
+          "committer": {
+            "name": "GitHub",
+            "email": "noreply@github.com",
+            "date": "2023-01-16T16:04:41Z"
+          },
+          "message": "chore(docs): Add info/warning about injectedJavaScriptBeforeContentLoaded for Android (#2746)\n\n* Add acknowledgement that injectedJavaScriptBeforeContentLoaded is implemented for Android, but warning that it may be unreliable\r\n\r\n* Linkify?",
+          "tree": {
+            "sha": "34828351da350b5dadde691716944842d35de103",
+            "url": "https://api.github.com/repos/discord/react-native-webview/git/trees/34828351da350b5dadde691716944842d35de103"
+          },
+          "url": "https://api.github.com/repos/discord/react-native-webview/git/commits/130d64f13f2e148bc3143720bf123586d5d7a71b",
+          "comment_count": 0,
+          "verification": {
+            "verified": true,
+            "reason": "valid",
+            "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsBcBAABCAAQBQJjxXWZCRBK7hj4Ov3rIwAAghYIAHRqLzF92xC8QhF7qEAuC3Ag\nM8EnNyRtBs+phIt3g7IusXBgvZYnq+mRMnU6YgBDz27Pm4hPc9e8rHOp5e/Gk9Vv\ni9SuNnhFMENWuhgQ5m2hxsCUTLV16llXgOTsMsiEmQZMCR5nDuEz7rrj/RNQWxfg\n39tY+6XLjW+n/uH3VYRaOvB61Zc2Z4wRwiikKfa7Y0oYbSaMzdqoTRKk+uMxuwoE\n030BxO8DZ/jUIGqIhGB7Tg3n4zGbIx4yWmD8F0xcbcoG4KQUdq4/X9UCOkREJBVU\nLhnLsJS09ULYUFIeH5Ml/hKgOMUVLJVixQ2zfh8xA7dsA3alaMzJ4b5aXGMU7PY=\n=gw3Q\n-----END PGP SIGNATURE-----\n",
+            "payload": "tree 34828351da350b5dadde691716944842d35de103\nparent f74ee7a88adf6d645f2ef80da6657b68f5d6959d\nauthor Caleb Clarke <TheAlmightyBob@users.noreply.github.com> 1673885081 -0800\ncommitter GitHub <noreply@github.com> 1673885081 +0100\n\nchore(docs): Add info/warning about injectedJavaScriptBeforeContentLoaded for Android (#2746)\n\n* Add acknowledgement that injectedJavaScriptBeforeContentLoaded is implemented for Android, but warning that it may be unreliable\r\n\r\n* Linkify?"
+          }
+        },
+        "url": "https://api.github.com/repos/discord/react-native-webview/commits/130d64f13f2e148bc3143720bf123586d5d7a71b",
+        "author": {
+          "login": "TheAlmightyBob",
+          "id": 7707864,
+          "node_id": "MDQ6VXNlcjc3MDc4NjQ=",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/TheAlmightyBob",
+          "type": "User",
+          "site_admin": false
+        },
+        "committer": {
+          "login": "web-flow",
+          "id": 19864447,
+          "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/web-flow",
+          "type": "User",
+          "site_admin": false
+        },
+        "parents": [
+          {
+            "sha": "f74ee7a88adf6d645f2ef80da6657b68f5d6959d",
+            "url": "https://api.github.com/repos/discord/react-native-webview/commits/f74ee7a88adf6d645f2ef80da6657b68f5d6959d"
+          }
+        ]
+      }
+    ],
+    "releases": [],
+    "issues": [
+      {
+        "url": "https://api.github.com/repos/discord/react-native-webview/issues/24",
+        "id": 1526107739,
+        "node_id": "PR_kwDOHOJFLs5HARAk",
+        "number": 24,
+        "title": "Support re-attaching webviews to a dummy parent when detached",
+        "user": {
+          "login": "apkumar",
+          "id": 3982090,
+          "node_id": "MDQ6VXNlcjM5ODIwOTA=",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/apkumar",
+          "type": "User",
+          "site_admin": false
+        },
+        "labels": [],
+        "state": "closed",
+        "locked": false,
+        "assignee": null,
+        "assignees": [],
+        "milestone": null,
+        "comments": 0,
+        "created_at": "2023-01-09T18:34:11Z",
+        "updated_at": "2023-01-13T20:29:08Z",
+        "closed_at": "2023-01-13T20:29:08Z",
+        "author_association": "NONE",
+        "active_lock_reason": null,
+        "draft": false,
+        "pull_request": {
+          "url": "https://api.github.com/repos/discord/react-native-webview/pulls/24",
+          "merged_at": "2023-01-13T20:29:08Z"
+        },
+        "body": "In order to keep the webview attached all time, a new prop `temporaryParentNodeTag` is introduced. When the webview is unmounted, the internal webview is remounted under the temporary parent.\r\n\r\nTested on iOS and Android\r\n\r\nhttps://user-images.githubusercontent.com/1707258/212413190-48a2599b-048a-4877-bae2-537d13b64bea.mp4\r\n\r\n",
+        "reactions": {
+          "url": "https://api.github.com/repos/discord/react-native-webview/issues/24/reactions",
+          "total_count": 0,
+          "+1": 0,
+          "-1": 0,
+          "laugh": 0,
+          "hooray": 0,
+          "confused": 0,
+          "heart": 0,
+          "rocket": 0,
+          "eyes": 0
+        },
+        "performed_via_github_app": null,
+        "state_reason": null
+      },
+      {
+        "url": "https://api.github.com/repos/discord/react-native-webview/issues/23",
+        "id": 1503217724,
+        "node_id": "PR_kwDOHOJFLs5FzA9Y",
+        "number": 23,
+        "title": "[ios] do not loop inaudible audio for silent switch hack",
+        "user": {
+          "login": "nealmanaktola",
+          "id": 1707258,
+          "node_id": "MDQ6VXNlcjE3MDcyNTg=",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/nealmanaktola",
+          "type": "User",
+          "site_admin": false
+        },
+        "labels": [],
+        "state": "closed",
+        "locked": false,
+        "assignee": null,
+        "assignees": [],
+        "milestone": null,
+        "comments": 0,
+        "created_at": "2022-12-19T16:17:15Z",
+        "updated_at": "2022-12-20T20:19:11Z",
+        "closed_at": "2022-12-20T20:19:11Z",
+        "author_association": "NONE",
+        "active_lock_reason": null,
+        "draft": false,
+        "pull_request": {
+          "url": "https://api.github.com/repos/discord/react-native-webview/pulls/23",
+          "merged_at": "2022-12-20T20:19:11Z"
+        },
+        "body": "~~it seems like looping audio doesn't seem to be necessary~~\r\n\r\n~~when the audio track is not looped, I don't see a bunch of worker threads being spawned to play the audio~~\r\n\r\nInstead of looping the inaudible audio, the audio is played every 2 seconds and when the app is foregrounded. I couldn't find a way to know when the WkWebView audio session category changes, as it would be better to play the audio element only when needed.\r\n\r\n",
+        "reactions": {
+          "url": "https://api.github.com/repos/discord/react-native-webview/issues/23/reactions",
+          "total_count": 0,
+          "+1": 0,
+          "-1": 0,
+          "laugh": 0,
+          "hooray": 0,
+          "confused": 0,
+          "heart": 0,
+          "rocket": 0,
+          "eyes": 0
+        },
+        "performed_via_github_app": null,
+        "state_reason": null
+      },
+      {
+        "url": "https://api.github.com/repos/discord/react-native-webview/issues/22",
+        "id": 1487082441,
+        "node_id": "PR_kwDOHOJFLs5E7Hgu",
+        "number": 22,
+        "title": "[android] Add rebind method",
+        "user": {
+          "login": "matthova",
+          "id": 4811753,
+          "node_id": "MDQ6VXNlcjQ4MTE3NTM=",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/matthova",
+          "type": "User",
+          "site_admin": false
+        },
+        "labels": [],
+        "state": "open",
+        "locked": false,
+        "assignee": null,
+        "assignees": [],
+        "milestone": null,
+        "comments": 1,
+        "created_at": "2022-12-09T16:58:39Z",
+        "updated_at": "2023-02-01T17:27:40Z",
+        "closed_at": null,
+        "author_association": "NONE",
+        "active_lock_reason": null,
+        "draft": false,
+        "pull_request": {
+          "url": "https://api.github.com/repos/discord/react-native-webview/pulls/22",
+          "merged_at": null
+        },
+        "body": "The goal is to add an imperative method for immediately swapping the webview to a different parent. This is helpful for race conditions where it's necessary to prevent the webview's document visibility to stay 'visible'.\r\n\r\nThere are some changes in this PR to enable this functionality:\r\n\r\n1) adds a `rebind` method to re-attach the internal webview to the parent\r\n2) instead of attaching the webview on setWebViewKey, we attach the webview when the window is attached\r\n3) the view layout is not correct when it's rebound to a different view. we remeasure the view when the hierarchy changes\r\n\r\nWe'll do the iOS pr right after. The changes are just split out for ease of review. Apologies for the changes on the native side, I think there are some existing formatting issues",
+        "reactions": {
+          "url": "https://api.github.com/repos/discord/react-native-webview/issues/22/reactions",
+          "total_count": 0,
+          "+1": 0,
+          "-1": 0,
+          "laugh": 0,
+          "hooray": 0,
+          "confused": 0,
+          "heart": 0,
+          "rocket": 0,
+          "eyes": 0
+        },
+        "performed_via_github_app": null,
+        "state_reason": null
+      },
+      {
+        "url": "https://api.github.com/repos/discord/react-native-webview/issues/21",
+        "id": 1455971860,
+        "node_id": "PR_kwDOHOJFLs5DQTna",
+        "number": 21,
+        "title": "fix bug where navigation delegate stops working after reusing WKWebView",
+        "user": {
+          "login": "donaldchen",
+          "id": 3821698,
+          "node_id": "MDQ6VXNlcjM4MjE2OTg=",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/donaldchen",
+          "type": "User",
+          "site_admin": false
+        },
+        "labels": [],
+        "state": "closed",
+        "locked": false,
+        "assignee": null,
+        "assignees": [],
+        "milestone": null,
+        "comments": 2,
+        "created_at": "2022-11-18T23:25:01Z",
+        "updated_at": "2022-11-21T17:05:36Z",
+        "closed_at": "2022-11-21T17:05:36Z",
+        "author_association": "NONE",
+        "active_lock_reason": null,
+        "draft": false,
+        "pull_request": {
+          "url": "https://api.github.com/repos/discord/react-native-webview/pulls/21",
+          "merged_at": "2022-11-21T17:05:36Z"
+        },
+        "body": "I was trying to make a button-click in the web page in the WebView conditionally load an iframe. Loading the iframe successfully depends on the navigation delegate as I learned from https://stackoverflow.com/questions/41250162/wkwebview-not-loading-content-from-iframe-on-a-webpage , and I realized the navigation delegate wasn't getting reconnected properly when attaching the WKWebView to a new RNCWebView. See additional context in https://github.com/react-native-webview/react-native-webview/pull/2469/files#r1026979105 .",
+        "reactions": {
+          "url": "https://api.github.com/repos/discord/react-native-webview/issues/21/reactions",
+          "total_count": 0,
+          "+1": 0,
+          "-1": 0,
+          "laugh": 0,
+          "hooray": 0,
+          "confused": 0,
+          "heart": 0,
+          "rocket": 0,
+          "eyes": 0
+        },
+        "performed_via_github_app": null,
+        "state_reason": null
+      },
+      {
+        "url": "https://api.github.com/repos/discord/react-native-webview/issues/20",
+        "id": 1452283960,
+        "node_id": "PR_kwDOHOJFLs5DD3QG",
+        "number": 20,
+        "title": "remove white background color flash on WebView",
+        "user": {
+          "login": "donaldchen",
+          "id": 3821698,
+          "node_id": "MDQ6VXNlcjM4MjE2OTg=",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/donaldchen",
+          "type": "User",
+          "site_admin": false
+        },
+        "labels": [],
+        "state": "closed",
+        "locked": false,
+        "assignee": null,
+        "assignees": [],
+        "milestone": null,
+        "comments": 0,
+        "created_at": "2022-11-16T21:16:21Z",
+        "updated_at": "2022-11-17T19:24:38Z",
+        "closed_at": "2022-11-17T19:07:07Z",
+        "author_association": "NONE",
+        "active_lock_reason": null,
+        "draft": false,
+        "pull_request": {
+          "url": "https://api.github.com/repos/discord/react-native-webview/pulls/20",
+          "merged_at": "2022-11-17T19:07:07Z"
+        },
+        "body": "The background style on the `WebView` react component wasn't propagating to the internal WebView, so this PR\r\n- applies the RNCWebView background color (which should be the same as the CSS background color in React) to the InternalWebView\r\nand\r\n- defaults the InternalWebView background color to transparent",
+        "reactions": {
+          "url": "https://api.github.com/repos/discord/react-native-webview/issues/20/reactions",
+          "total_count": 0,
+          "+1": 0,
+          "-1": 0,
+          "laugh": 0,
+          "hooray": 0,
+          "confused": 0,
+          "heart": 0,
+          "rocket": 0,
+          "eyes": 0
+        },
+        "performed_via_github_app": null,
+        "state_reason": null
+      }
+    ],
+    "pullRequests": []
+  }
+}

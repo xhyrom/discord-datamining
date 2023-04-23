@@ -1,0 +1,346 @@
+{
+  "id": 221080645,
+  "node_id": "MDEwOlJlcG9zaXRvcnkyMjEwODA2NDU=",
+  "name": "rust-bitcode",
+  "full_name": "discord/rust-bitcode",
+  "private": false,
+  "owner": {
+    "login": "discord",
+    "id": 1965106,
+    "node_id": "MDEyOk9yZ2FuaXphdGlvbjE5NjUxMDY=",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/discord",
+    "type": "Organization",
+    "site_admin": false
+  },
+  "description": "Rust toolchain for Xcode-compatible iOS bitcode",
+  "fork": true,
+  "url": "https://api.github.com/repos/discord/rust-bitcode",
+  "created_at": "2019-11-11T22:20:53Z",
+  "updated_at": "2021-05-19T03:11:02Z",
+  "pushed_at": "2021-02-01T21:29:40Z",
+  "homepage": "",
+  "size": 34,
+  "stargazers_count": 4,
+  "watchers_count": 4,
+  "language": "Shell",
+  "has_issues": false,
+  "has_projects": true,
+  "has_downloads": true,
+  "has_wiki": true,
+  "has_pages": false,
+  "has_discussions": false,
+  "forks_count": 3,
+  "archived": false,
+  "disabled": false,
+  "open_issues_count": 0,
+  "license": {
+    "key": "apache-2.0",
+    "name": "Apache License 2.0",
+    "spdx_id": "Apache-2.0",
+    "url": "https://api.github.com/licenses/apache-2.0",
+    "node_id": "MDc6TGljZW5zZTI="
+  },
+  "allow_forking": true,
+  "is_template": false,
+  "web_commit_signoff_required": false,
+  "topics": [],
+  "visibility": "public",
+  "forks": 3,
+  "open_issues": 0,
+  "watchers": 4,
+  "default_branch": "master",
+  "permissions": {
+    "admin": false,
+    "maintain": false,
+    "push": false,
+    "triage": false,
+    "pull": false
+  },
+  "branches": [],
+  "last5": {
+    "commits": [
+      {
+        "sha": "a963d4a35f4ca33781c9f54dc5823d001c86862a",
+        "node_id": "MDY6Q29tbWl0MjIxMDgwNjQ1OmE5NjNkNGEzNWY0Y2EzMzc4MWM5ZjU0ZGM1ODIzZDAwMWM4Njg2MmE=",
+        "commit": {
+          "author": {
+            "name": "Sam Schlegel",
+            "email": "git@lutin.us",
+            "date": "2021-02-01T20:37:09Z"
+          },
+          "committer": {
+            "name": "Sam Schlegel",
+            "email": "git@lutin.us",
+            "date": "2021-02-01T20:37:09Z"
+          },
+          "message": "Merge remote-tracking branch 'upstream/master'",
+          "tree": {
+            "sha": "8110bca1e05afaa300ac6ca1c2372ae99f2f115c",
+            "url": "https://api.github.com/repos/discord/rust-bitcode/git/trees/8110bca1e05afaa300ac6ca1c2372ae99f2f115c"
+          },
+          "url": "https://api.github.com/repos/discord/rust-bitcode/git/commits/a963d4a35f4ca33781c9f54dc5823d001c86862a",
+          "comment_count": 0,
+          "verification": {
+            "verified": false,
+            "reason": "unsigned",
+            "signature": null,
+            "payload": null
+          }
+        },
+        "url": "https://api.github.com/repos/discord/rust-bitcode/commits/a963d4a35f4ca33781c9f54dc5823d001c86862a",
+        "author": {
+          "login": "samschlegel",
+          "id": 5514447,
+          "node_id": "MDQ6VXNlcjU1MTQ0NDc=",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/samschlegel",
+          "type": "User",
+          "site_admin": false
+        },
+        "committer": {
+          "login": "samschlegel",
+          "id": 5514447,
+          "node_id": "MDQ6VXNlcjU1MTQ0NDc=",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/samschlegel",
+          "type": "User",
+          "site_admin": false
+        },
+        "parents": [
+          {
+            "sha": "5dd5f3f9abfc7064cde7aed77ce6bf0d7f593e2a",
+            "url": "https://api.github.com/repos/discord/rust-bitcode/commits/5dd5f3f9abfc7064cde7aed77ce6bf0d7f593e2a"
+          },
+          {
+            "sha": "89a7c5764bd037652ae442a3e3aa81ba0fb606a8",
+            "url": "https://api.github.com/repos/discord/rust-bitcode/commits/89a7c5764bd037652ae442a3e3aa81ba0fb606a8"
+          }
+        ]
+      },
+      {
+        "sha": "89a7c5764bd037652ae442a3e3aa81ba0fb606a8",
+        "node_id": "MDY6Q29tbWl0MjIxMDgwNjQ1Ojg5YTdjNTc2NGJkMDM3NjUyYWU0NDJhM2UzYWE4MWJhMGZiNjA2YTg=",
+        "commit": {
+          "author": {
+            "name": "Søren Mortensen",
+            "email": "soren@neros.dev",
+            "date": "2021-01-28T00:29:23Z"
+          },
+          "committer": {
+            "name": "Søren Mortensen",
+            "email": "soren@neros.dev",
+            "date": "2021-01-28T16:55:59Z"
+          },
+          "message": "Update from Rust 1.46 to nightly-2021-01-25",
+          "tree": {
+            "sha": "d9e0f620d84c3bfdab167efa3c74a99c598719ca",
+            "url": "https://api.github.com/repos/discord/rust-bitcode/git/trees/d9e0f620d84c3bfdab167efa3c74a99c598719ca"
+          },
+          "url": "https://api.github.com/repos/discord/rust-bitcode/git/commits/89a7c5764bd037652ae442a3e3aa81ba0fb606a8",
+          "comment_count": 0,
+          "verification": {
+            "verified": false,
+            "reason": "unknown_key",
+            "signature": "-----BEGIN PGP SIGNATURE-----\n\niHUEABYIAB0WIQSZZJI9wgHl3ob0cK+A9irGgdRRtgUCYBLsogAKCRCA9irGgdRR\nthwMAQDiF/whlnrlR5BI+dkmw36YUScJPS4ham1mZpNFSqYe2wEAsaUxIbfCw+u8\nbjPX9hdC8g89f1zS5Hp2hk++lEMyfQo=\n=2xFO\n-----END PGP SIGNATURE-----",
+            "payload": "tree d9e0f620d84c3bfdab167efa3c74a99c598719ca\nparent 50b040336e8bf5d7068b01b7eda247cbc95e23f9\nauthor Søren Mortensen <soren@neros.dev> 1611793763 +0000\ncommitter Søren Mortensen <soren@neros.dev> 1611852959 +0000\n\nUpdate from Rust 1.46 to nightly-2021-01-25\n"
+          }
+        },
+        "url": "https://api.github.com/repos/discord/rust-bitcode/commits/89a7c5764bd037652ae442a3e3aa81ba0fb606a8",
+        "author": {
+          "login": "nerosnm",
+          "id": 13041332,
+          "node_id": "MDQ6VXNlcjEzMDQxMzMy",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/nerosnm",
+          "type": "User",
+          "site_admin": false
+        },
+        "committer": {
+          "login": "nerosnm",
+          "id": 13041332,
+          "node_id": "MDQ6VXNlcjEzMDQxMzMy",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/nerosnm",
+          "type": "User",
+          "site_admin": false
+        },
+        "parents": [
+          {
+            "sha": "50b040336e8bf5d7068b01b7eda247cbc95e23f9",
+            "url": "https://api.github.com/repos/discord/rust-bitcode/commits/50b040336e8bf5d7068b01b7eda247cbc95e23f9"
+          }
+        ]
+      },
+      {
+        "sha": "50b040336e8bf5d7068b01b7eda247cbc95e23f9",
+        "node_id": "MDY6Q29tbWl0MjIxMDgwNjQ1OjUwYjA0MDMzNmU4YmY1ZDcwNjhiMDFiN2VkYTI0N2NiYzk1ZTIzZjk=",
+        "commit": {
+          "author": {
+            "name": "Thomas Karpiniec",
+            "email": "tom@ditto.live",
+            "date": "2020-10-13T23:03:07Z"
+          },
+          "committer": {
+            "name": "GitHub",
+            "email": "noreply@github.com",
+            "date": "2020-10-13T23:03:07Z"
+          },
+          "message": "Merge pull request #12 from getditto/tk/1.46\n\nUpdate from Rust 1.43 to 1.46 and improve packaging in minor ways",
+          "tree": {
+            "sha": "71d576c8b3f3281a00552840940ef5e664290e23",
+            "url": "https://api.github.com/repos/discord/rust-bitcode/git/trees/71d576c8b3f3281a00552840940ef5e664290e23"
+          },
+          "url": "https://api.github.com/repos/discord/rust-bitcode/git/commits/50b040336e8bf5d7068b01b7eda247cbc95e23f9",
+          "comment_count": 0,
+          "verification": {
+            "verified": true,
+            "reason": "valid",
+            "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsBcBAABCAAQBQJfhjIrCRBK7hj4Ov3rIwAAdHIIAEUWvty5sILA8QSr4EtLq6sg\nOtnLuKYPXoq6uHylAOmHPF813ZZLBOt4b2ZMAt04uhhIXfYgQy2DuAo0KTFCaExn\nVXaibZgG36AIScjwUEsWcu9K1SkSb4atsYjPqmJg49rLZSa1flGDDFadxKZFKHUQ\nXu4mwv2mlQxn5hcgF2W49GebNCq+arIbc5/wmIKUnMPHzuZScJNZD9oIVD5hCAcJ\nqizGvcqQhBy8LjfCOcQijATC5dmIpFPg1E+UVlJds32VHaYupS2rHS2lmTxKsiqu\nWSoS3AjPFMXPwsXjxxxN3caEObTE08q3UlUPFiNYtYsi2Z6v8GTmL8yIWH2ZAck=\n=eZ06\n-----END PGP SIGNATURE-----\n",
+            "payload": "tree 71d576c8b3f3281a00552840940ef5e664290e23\nparent 21ad1291bd7da4ad1b31785fbdfbf29fcaff7c7a\nparent 6135d82647107d578e16657d671422e6824f6317\nauthor Thomas Karpiniec <tom@ditto.live> 1602630187 +1100\ncommitter GitHub <noreply@github.com> 1602630187 +1100\n\nMerge pull request #12 from getditto/tk/1.46\n\nUpdate from Rust 1.43 to 1.46 and improve packaging in minor ways"
+          }
+        },
+        "url": "https://api.github.com/repos/discord/rust-bitcode/commits/50b040336e8bf5d7068b01b7eda247cbc95e23f9",
+        "author": {
+          "login": "thombles",
+          "id": 5511175,
+          "node_id": "MDQ6VXNlcjU1MTExNzU=",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/thombles",
+          "type": "User",
+          "site_admin": false
+        },
+        "committer": {
+          "login": "web-flow",
+          "id": 19864447,
+          "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/web-flow",
+          "type": "User",
+          "site_admin": false
+        },
+        "parents": [
+          {
+            "sha": "21ad1291bd7da4ad1b31785fbdfbf29fcaff7c7a",
+            "url": "https://api.github.com/repos/discord/rust-bitcode/commits/21ad1291bd7da4ad1b31785fbdfbf29fcaff7c7a"
+          },
+          {
+            "sha": "6135d82647107d578e16657d671422e6824f6317",
+            "url": "https://api.github.com/repos/discord/rust-bitcode/commits/6135d82647107d578e16657d671422e6824f6317"
+          }
+        ]
+      },
+      {
+        "sha": "6135d82647107d578e16657d671422e6824f6317",
+        "node_id": "MDY6Q29tbWl0MjIxMDgwNjQ1OjYxMzVkODI2NDcxMDdkNTc4ZTE2NjU3ZDY3MTQyMmU2ODI0ZjYzMTc=",
+        "commit": {
+          "author": {
+            "name": "Tom Karpiniec",
+            "email": "tom@ditto.live",
+            "date": "2020-10-13T23:01:34Z"
+          },
+          "committer": {
+            "name": "Tom Karpiniec",
+            "email": "tom@ditto.live",
+            "date": "2020-10-13T23:01:34Z"
+          },
+          "message": "Fix out-of-date remarks and typos in comments",
+          "tree": {
+            "sha": "71d576c8b3f3281a00552840940ef5e664290e23",
+            "url": "https://api.github.com/repos/discord/rust-bitcode/git/trees/71d576c8b3f3281a00552840940ef5e664290e23"
+          },
+          "url": "https://api.github.com/repos/discord/rust-bitcode/git/commits/6135d82647107d578e16657d671422e6824f6317",
+          "comment_count": 0,
+          "verification": {
+            "verified": false,
+            "reason": "unsigned",
+            "signature": null,
+            "payload": null
+          }
+        },
+        "url": "https://api.github.com/repos/discord/rust-bitcode/commits/6135d82647107d578e16657d671422e6824f6317",
+        "author": {
+          "login": "thombles",
+          "id": 5511175,
+          "node_id": "MDQ6VXNlcjU1MTExNzU=",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/thombles",
+          "type": "User",
+          "site_admin": false
+        },
+        "committer": {
+          "login": "thombles",
+          "id": 5511175,
+          "node_id": "MDQ6VXNlcjU1MTExNzU=",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/thombles",
+          "type": "User",
+          "site_admin": false
+        },
+        "parents": [
+          {
+            "sha": "3842dcd96d3ac06d6505a8e4d2da281d4cb1a6f5",
+            "url": "https://api.github.com/repos/discord/rust-bitcode/commits/3842dcd96d3ac06d6505a8e4d2da281d4cb1a6f5"
+          }
+        ]
+      },
+      {
+        "sha": "3842dcd96d3ac06d6505a8e4d2da281d4cb1a6f5",
+        "node_id": "MDY6Q29tbWl0MjIxMDgwNjQ1OjM4NDJkY2Q5NmQzYWMwNmQ2NTA1YThlNGQyZGEyODFkNGNiMWE2ZjU=",
+        "commit": {
+          "author": {
+            "name": "Tom Karpiniec",
+            "email": "tom@ditto.live",
+            "date": "2020-10-13T06:50:50Z"
+          },
+          "committer": {
+            "name": "Tom Karpiniec",
+            "email": "tom@ditto.live",
+            "date": "2020-10-13T06:50:50Z"
+          },
+          "message": "Update README",
+          "tree": {
+            "sha": "0dc2cfbfc14093988887629be633335e7d34270a",
+            "url": "https://api.github.com/repos/discord/rust-bitcode/git/trees/0dc2cfbfc14093988887629be633335e7d34270a"
+          },
+          "url": "https://api.github.com/repos/discord/rust-bitcode/git/commits/3842dcd96d3ac06d6505a8e4d2da281d4cb1a6f5",
+          "comment_count": 0,
+          "verification": {
+            "verified": false,
+            "reason": "unsigned",
+            "signature": null,
+            "payload": null
+          }
+        },
+        "url": "https://api.github.com/repos/discord/rust-bitcode/commits/3842dcd96d3ac06d6505a8e4d2da281d4cb1a6f5",
+        "author": {
+          "login": "thombles",
+          "id": 5511175,
+          "node_id": "MDQ6VXNlcjU1MTExNzU=",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/thombles",
+          "type": "User",
+          "site_admin": false
+        },
+        "committer": {
+          "login": "thombles",
+          "id": 5511175,
+          "node_id": "MDQ6VXNlcjU1MTExNzU=",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/thombles",
+          "type": "User",
+          "site_admin": false
+        },
+        "parents": [
+          {
+            "sha": "94414aef0750d235c58bca7926f0baaba56b6598",
+            "url": "https://api.github.com/repos/discord/rust-bitcode/commits/94414aef0750d235c58bca7926f0baaba56b6598"
+          }
+        ]
+      }
+    ],
+    "releases": [],
+    "issues": [],
+    "pullRequests": []
+  }
+}

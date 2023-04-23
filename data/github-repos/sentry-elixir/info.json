@@ -1,0 +1,346 @@
+{
+  "id": 203218922,
+  "node_id": "MDEwOlJlcG9zaXRvcnkyMDMyMTg5MjI=",
+  "name": "sentry-elixir",
+  "full_name": "discord/sentry-elixir",
+  "private": false,
+  "owner": {
+    "login": "discord",
+    "id": 1965106,
+    "node_id": "MDEyOk9yZ2FuaXphdGlvbjE5NjUxMDY=",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/discord",
+    "type": "Organization",
+    "site_admin": false
+  },
+  "description": "The official Elixir SDK for Sentry (sentry.io)",
+  "fork": true,
+  "url": "https://api.github.com/repos/discord/sentry-elixir",
+  "created_at": "2019-08-19T17:28:50Z",
+  "updated_at": "2021-04-28T21:28:50Z",
+  "pushed_at": "2019-08-19T17:31:56Z",
+  "homepage": "https://sentry.io",
+  "size": 696,
+  "stargazers_count": 4,
+  "watchers_count": 4,
+  "language": "Elixir",
+  "has_issues": false,
+  "has_projects": true,
+  "has_downloads": true,
+  "has_wiki": false,
+  "has_pages": false,
+  "has_discussions": false,
+  "forks_count": 3,
+  "archived": false,
+  "disabled": false,
+  "open_issues_count": 0,
+  "license": {
+    "key": "mit",
+    "name": "MIT License",
+    "spdx_id": "MIT",
+    "url": "https://api.github.com/licenses/mit",
+    "node_id": "MDc6TGljZW5zZTEz"
+  },
+  "allow_forking": true,
+  "is_template": false,
+  "web_commit_signoff_required": false,
+  "topics": [],
+  "visibility": "public",
+  "forks": 3,
+  "open_issues": 0,
+  "watchers": 4,
+  "default_branch": "master",
+  "permissions": {
+    "admin": false,
+    "maintain": false,
+    "push": false,
+    "triage": false,
+    "pull": false
+  },
+  "branches": [],
+  "last5": {
+    "commits": [
+      {
+        "sha": "dfcbf2349cd839f29b55cf231ba63e7cdef08655",
+        "node_id": "MDY6Q29tbWl0MjAzMjE4OTIyOmRmY2JmMjM0OWNkODM5ZjI5YjU1Y2YyMzFiYTYzZTdjZGVmMDg2NTU=",
+        "commit": {
+          "author": {
+            "name": "Mitchell Henke",
+            "email": "mitchell@mitchellhenke.com",
+            "date": "2019-07-23T15:19:55Z"
+          },
+          "committer": {
+            "name": "GitHub",
+            "email": "noreply@github.com",
+            "date": "2019-07-23T15:19:55Z"
+          },
+          "message": "Merge pull request #357 from getsentry/force-sentry-recompile-docs\n\nupdate docs to correct order of compilation and prevent compilation issues",
+          "tree": {
+            "sha": "8ab09bdfa29841b18de4e9543d6467de9b7b94f7",
+            "url": "https://api.github.com/repos/discord/sentry-elixir/git/trees/8ab09bdfa29841b18de4e9543d6467de9b7b94f7"
+          },
+          "url": "https://api.github.com/repos/discord/sentry-elixir/git/commits/dfcbf2349cd839f29b55cf231ba63e7cdef08655",
+          "comment_count": 0,
+          "verification": {
+            "verified": true,
+            "reason": "valid",
+            "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsBcBAABCAAQBQJdNyWbCRBK7hj4Ov3rIwAAdHIIAHQU6Hp8YJmLn5mUT27lMd2F\nUvOiEW0fC2JSYdL9OaS8Y6vajXbNh44mI0uWp7vXNsQmK23p+sa/LnVsoZW/4rhv\nqErb8VXFj/MX0J85vCkgeGyf1yoXNOpiEBmQnt6V8n4LpwhUAbe4MUmzcuht7Ajn\nIDRY2XQI0rd5DeZSLG5zhsLwAjQ0gb0h/4YfjGDuzBheytMe6kR5Zj7xy09XL6QS\npHlh3qghiJ6iyFUFKj8xRFXQ9VsAvMDWcYEG0D0IymhEiWfPDBwqLKCF57ZOeYEN\nVdVQzKveMUmrTu8IhQ5hmgifYA2OzOb1jmOQLnampf/CZyqEdk9iaGBmhe1I1VU=\n=ElyD\n-----END PGP SIGNATURE-----\n",
+            "payload": "tree 8ab09bdfa29841b18de4e9543d6467de9b7b94f7\nparent 7b4b4ebf1119e8fcf0ae6fe309ae9534158cb926\nparent c11e617721337f2328658260211c2fc169721f25\nauthor Mitchell Henke <mitchell@mitchellhenke.com> 1563895195 -0500\ncommitter GitHub <noreply@github.com> 1563895195 -0500\n\nMerge pull request #357 from getsentry/force-sentry-recompile-docs\n\nupdate docs to correct order of compilation and prevent compilation issues"
+          }
+        },
+        "url": "https://api.github.com/repos/discord/sentry-elixir/commits/dfcbf2349cd839f29b55cf231ba63e7cdef08655",
+        "author": {
+          "login": "mitchellhenke",
+          "id": 1430443,
+          "node_id": "MDQ6VXNlcjE0MzA0NDM=",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/mitchellhenke",
+          "type": "User",
+          "site_admin": false
+        },
+        "committer": {
+          "login": "web-flow",
+          "id": 19864447,
+          "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/web-flow",
+          "type": "User",
+          "site_admin": false
+        },
+        "parents": [
+          {
+            "sha": "7b4b4ebf1119e8fcf0ae6fe309ae9534158cb926",
+            "url": "https://api.github.com/repos/discord/sentry-elixir/commits/7b4b4ebf1119e8fcf0ae6fe309ae9534158cb926"
+          },
+          {
+            "sha": "c11e617721337f2328658260211c2fc169721f25",
+            "url": "https://api.github.com/repos/discord/sentry-elixir/commits/c11e617721337f2328658260211c2fc169721f25"
+          }
+        ]
+      },
+      {
+        "sha": "c11e617721337f2328658260211c2fc169721f25",
+        "node_id": "MDY6Q29tbWl0MjAzMjE4OTIyOmMxMWU2MTc3MjEzMzdmMjMyODY1ODI2MDIxMWMyZmMxNjk3MjFmMjU=",
+        "commit": {
+          "author": {
+            "name": "Mitchell Henke",
+            "email": "mitchell@mitchellhenke.com",
+            "date": "2019-07-22T20:31:45Z"
+          },
+          "committer": {
+            "name": "Mitchell Henke",
+            "email": "mitchell@mitchellhenke.com",
+            "date": "2019-07-22T20:33:17Z"
+          },
+          "message": "update docs to prevent compilation issues",
+          "tree": {
+            "sha": "8ab09bdfa29841b18de4e9543d6467de9b7b94f7",
+            "url": "https://api.github.com/repos/discord/sentry-elixir/git/trees/8ab09bdfa29841b18de4e9543d6467de9b7b94f7"
+          },
+          "url": "https://api.github.com/repos/discord/sentry-elixir/git/commits/c11e617721337f2328658260211c2fc169721f25",
+          "comment_count": 0,
+          "verification": {
+            "verified": true,
+            "reason": "valid",
+            "signature": "-----BEGIN PGP SIGNATURE-----\n\niQEzBAABCAAdFiEErw7QeuvPHBDjIh0i6LSV7rl5UJ8FAl02HbAACgkQ6LSV7rl5\nUJ8oiggA4X6lsVNE1ZudsD3sVKKxNUtH6ZlPCA/H8aFkG39IFtQmRzSEzanJkhTH\n4fn3uDkBhwY2gSkIF1TpU/QV/nbfzj9DNd3UPRuRBUJ2/E2BEUcGlYt3oTJD5gXb\nxayjEh2qkeFdfAZWzycfBKeQz5n3NBNGyb/k7ADs8U2d96e+9rOg2pdb6Smd2Vq3\nXIcw+D8KjUem3quSa9HhZwqjZWGvYoGDoDI1BZNafABLjXOlx8bOhACtc8eDJPC1\nQbnOnIawHARj8nbcGGZ6VuGpDNjVAh4AOfXaM08o+p4usSISK81wurQQI3nbtLwy\nycE5xj+XcStz7RTZx1ifCmCmOGsN+Q==\n=mlhd\n-----END PGP SIGNATURE-----",
+            "payload": "tree 8ab09bdfa29841b18de4e9543d6467de9b7b94f7\nparent 7b4b4ebf1119e8fcf0ae6fe309ae9534158cb926\nauthor Mitchell Henke <mitchell@mitchellhenke.com> 1563827505 -0500\ncommitter Mitchell Henke <mitchell@mitchellhenke.com> 1563827597 -0500\n\nupdate docs to prevent compilation issues\n"
+          }
+        },
+        "url": "https://api.github.com/repos/discord/sentry-elixir/commits/c11e617721337f2328658260211c2fc169721f25",
+        "author": {
+          "login": "mitchellhenke",
+          "id": 1430443,
+          "node_id": "MDQ6VXNlcjE0MzA0NDM=",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/mitchellhenke",
+          "type": "User",
+          "site_admin": false
+        },
+        "committer": {
+          "login": "mitchellhenke",
+          "id": 1430443,
+          "node_id": "MDQ6VXNlcjE0MzA0NDM=",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/mitchellhenke",
+          "type": "User",
+          "site_admin": false
+        },
+        "parents": [
+          {
+            "sha": "7b4b4ebf1119e8fcf0ae6fe309ae9534158cb926",
+            "url": "https://api.github.com/repos/discord/sentry-elixir/commits/7b4b4ebf1119e8fcf0ae6fe309ae9534158cb926"
+          }
+        ]
+      },
+      {
+        "sha": "7b4b4ebf1119e8fcf0ae6fe309ae9534158cb926",
+        "node_id": "MDY6Q29tbWl0MjAzMjE4OTIyOjdiNGI0ZWJmMTExOWU4ZmNmMGFlNmZlMzA5YWU5NTM0MTU4Y2I5MjY=",
+        "commit": {
+          "author": {
+            "name": "Mitchell Henke",
+            "email": "mitchell@mitchellhenke.com",
+            "date": "2019-07-10T21:10:20Z"
+          },
+          "committer": {
+            "name": "Mitchell Henke",
+            "email": "mitchell@mitchellhenke.com",
+            "date": "2019-07-10T21:10:31Z"
+          },
+          "message": "more travis",
+          "tree": {
+            "sha": "06fda42c253d7f0cec3b46a72cb4223009c71820",
+            "url": "https://api.github.com/repos/discord/sentry-elixir/git/trees/06fda42c253d7f0cec3b46a72cb4223009c71820"
+          },
+          "url": "https://api.github.com/repos/discord/sentry-elixir/git/commits/7b4b4ebf1119e8fcf0ae6fe309ae9534158cb926",
+          "comment_count": 0,
+          "verification": {
+            "verified": true,
+            "reason": "valid",
+            "signature": "-----BEGIN PGP SIGNATURE-----\n\niQEzBAABCAAdFiEErw7QeuvPHBDjIh0i6LSV7rl5UJ8FAl0mVEcACgkQ6LSV7rl5\nUJ+pEwf/WTHKcDS5gacvbcX32GhVCCFKvFVj4LAmeukU0Xm7wlVJZBZjC8y+6jCI\nDSeeY1HapTpLdxgBpDVnkIOO8Ld/h24noj4XptLm5Pha33zoSojLuh/lzrJKaFRq\n2vND6500RyYS1nnmFljQ0shDVv/PtGczxL2r4UzSrk+tr1xpN0SM94VuNmtt4MyD\nLwDHgADMHPPop6csrmSWjZSEOlT9S0s2/GHyC7Bfk9IS/NyD2bsDESLiFkntVfrP\n1Cu+KYcTgOygLyvpRl3munSgFRNZQQDjc2+X80vsI9m8wjXceCmm6pWcjEaMmq0l\nmuSPsG0sS54tKJhw0DWIE3Rz43zNdA==\n=uVvP\n-----END PGP SIGNATURE-----",
+            "payload": "tree 06fda42c253d7f0cec3b46a72cb4223009c71820\nparent 9c417d8ee4f88df667846ab4d7d79837350c5399\nauthor Mitchell Henke <mitchell@mitchellhenke.com> 1562793020 -0500\ncommitter Mitchell Henke <mitchell@mitchellhenke.com> 1562793031 -0500\n\nmore travis\n"
+          }
+        },
+        "url": "https://api.github.com/repos/discord/sentry-elixir/commits/7b4b4ebf1119e8fcf0ae6fe309ae9534158cb926",
+        "author": {
+          "login": "mitchellhenke",
+          "id": 1430443,
+          "node_id": "MDQ6VXNlcjE0MzA0NDM=",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/mitchellhenke",
+          "type": "User",
+          "site_admin": false
+        },
+        "committer": {
+          "login": "mitchellhenke",
+          "id": 1430443,
+          "node_id": "MDQ6VXNlcjE0MzA0NDM=",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/mitchellhenke",
+          "type": "User",
+          "site_admin": false
+        },
+        "parents": [
+          {
+            "sha": "9c417d8ee4f88df667846ab4d7d79837350c5399",
+            "url": "https://api.github.com/repos/discord/sentry-elixir/commits/9c417d8ee4f88df667846ab4d7d79837350c5399"
+          }
+        ]
+      },
+      {
+        "sha": "9c417d8ee4f88df667846ab4d7d79837350c5399",
+        "node_id": "MDY6Q29tbWl0MjAzMjE4OTIyOjljNDE3ZDhlZTRmODhkZjY2Nzg0NmFiNGQ3ZDc5ODM3MzUwYzUzOTk=",
+        "commit": {
+          "author": {
+            "name": "Mitchell Henke",
+            "email": "mitchell@mitchellhenke.com",
+            "date": "2019-07-08T15:04:15Z"
+          },
+          "committer": {
+            "name": "GitHub",
+            "email": "noreply@github.com",
+            "date": "2019-07-08T15:04:15Z"
+          },
+          "message": "Merge pull request #352 from mbramson/add-sentry-context-docs\n\nAdd docs for Sentry.Context",
+          "tree": {
+            "sha": "0209acdc205e708abff3d0fb1a529c9b5e9c46a2",
+            "url": "https://api.github.com/repos/discord/sentry-elixir/git/trees/0209acdc205e708abff3d0fb1a529c9b5e9c46a2"
+          },
+          "url": "https://api.github.com/repos/discord/sentry-elixir/git/commits/9c417d8ee4f88df667846ab4d7d79837350c5399",
+          "comment_count": 0,
+          "verification": {
+            "verified": true,
+            "reason": "valid",
+            "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsBcBAABCAAQBQJdI1tvCRBK7hj4Ov3rIwAAdHIIADEgVwjUVJSmCUd/DfqrAKU/\nBMQ1oCZnrbilyll2ifeVWm3Z5fPVytNLb19qzMJQBWMxaOok9ji4A73IDL+I6Tlu\nD5g9hpOpFgeH7UOQtY6boiNs1VQP37mhqP5CcqDErysrWQd3rJlGFwxsxgQ/JUVw\nrglRIKpayggRmycYVwISd6uYNlfrSkhb1vdjUniecn00+Ejz/PlwkQY/J3jQVAbf\nHmy1N34S4MJtaqWQzv2398l6cXiclXgQlMj9dFiktS19sbUybFRk/8TrHo0GX0GV\njl4G4vxGFsgA5T49WUzq1/jqT2DMtvhK5Xk+7JRle26HlXIa5zf0avKkKjy1jNk=\n=ze6X\n-----END PGP SIGNATURE-----\n",
+            "payload": "tree 0209acdc205e708abff3d0fb1a529c9b5e9c46a2\nparent 28f8971ccd59a90d9b290bfdd09baab285798a8d\nparent b181e98fef3a3b2eec9038389a8936ffadeaf23f\nauthor Mitchell Henke <mitchell@mitchellhenke.com> 1562598255 -0500\ncommitter GitHub <noreply@github.com> 1562598255 -0500\n\nMerge pull request #352 from mbramson/add-sentry-context-docs\n\nAdd docs for Sentry.Context"
+          }
+        },
+        "url": "https://api.github.com/repos/discord/sentry-elixir/commits/9c417d8ee4f88df667846ab4d7d79837350c5399",
+        "author": {
+          "login": "mitchellhenke",
+          "id": 1430443,
+          "node_id": "MDQ6VXNlcjE0MzA0NDM=",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/mitchellhenke",
+          "type": "User",
+          "site_admin": false
+        },
+        "committer": {
+          "login": "web-flow",
+          "id": 19864447,
+          "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/web-flow",
+          "type": "User",
+          "site_admin": false
+        },
+        "parents": [
+          {
+            "sha": "28f8971ccd59a90d9b290bfdd09baab285798a8d",
+            "url": "https://api.github.com/repos/discord/sentry-elixir/commits/28f8971ccd59a90d9b290bfdd09baab285798a8d"
+          },
+          {
+            "sha": "b181e98fef3a3b2eec9038389a8936ffadeaf23f",
+            "url": "https://api.github.com/repos/discord/sentry-elixir/commits/b181e98fef3a3b2eec9038389a8936ffadeaf23f"
+          }
+        ]
+      },
+      {
+        "sha": "b181e98fef3a3b2eec9038389a8936ffadeaf23f",
+        "node_id": "MDY6Q29tbWl0MjAzMjE4OTIyOmIxODFlOThmZWYzYTNiMmVlYzkwMzgzODlhODkzNmZmYWRlYWYyM2Y=",
+        "commit": {
+          "author": {
+            "name": "Mathew Bramson",
+            "email": "mathewbramson@gmail.com",
+            "date": "2019-07-01T19:06:59Z"
+          },
+          "committer": {
+            "name": "Mathew Bramson",
+            "email": "mathewbramson@gmail.com",
+            "date": "2019-07-05T17:04:35Z"
+          },
+          "message": "Add docs for Sentry.Context\n\nOutput a more straightforward ArgumentError when\nSentry.Context.add_breadcrumb/1 receives a list which is not a keyword\nlist.",
+          "tree": {
+            "sha": "0209acdc205e708abff3d0fb1a529c9b5e9c46a2",
+            "url": "https://api.github.com/repos/discord/sentry-elixir/git/trees/0209acdc205e708abff3d0fb1a529c9b5e9c46a2"
+          },
+          "url": "https://api.github.com/repos/discord/sentry-elixir/git/commits/b181e98fef3a3b2eec9038389a8936ffadeaf23f",
+          "comment_count": 0,
+          "verification": {
+            "verified": false,
+            "reason": "unsigned",
+            "signature": null,
+            "payload": null
+          }
+        },
+        "url": "https://api.github.com/repos/discord/sentry-elixir/commits/b181e98fef3a3b2eec9038389a8936ffadeaf23f",
+        "author": {
+          "login": "mbramson",
+          "id": 6462927,
+          "node_id": "MDQ6VXNlcjY0NjI5Mjc=",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/mbramson",
+          "type": "User",
+          "site_admin": false
+        },
+        "committer": {
+          "login": "mbramson",
+          "id": 6462927,
+          "node_id": "MDQ6VXNlcjY0NjI5Mjc=",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/mbramson",
+          "type": "User",
+          "site_admin": false
+        },
+        "parents": [
+          {
+            "sha": "28f8971ccd59a90d9b290bfdd09baab285798a8d",
+            "url": "https://api.github.com/repos/discord/sentry-elixir/commits/28f8971ccd59a90d9b290bfdd09baab285798a8d"
+          }
+        ]
+      }
+    ],
+    "releases": [],
+    "issues": [],
+    "pullRequests": []
+  }
+}

@@ -1,0 +1,491 @@
+{
+  "id": 157461782,
+  "node_id": "MDEwOlJlcG9zaXRvcnkxNTc0NjE3ODI=",
+  "name": "rules_k8s",
+  "full_name": "discord/rules_k8s",
+  "private": false,
+  "owner": {
+    "login": "discord",
+    "id": 1965106,
+    "node_id": "MDEyOk9yZ2FuaXphdGlvbjE5NjUxMDY=",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/discord",
+    "type": "Organization",
+    "site_admin": false
+  },
+  "description": "This repository contains rules for interacting with Kubernetes configurations / clusters.",
+  "fork": true,
+  "url": "https://api.github.com/repos/discord/rules_k8s",
+  "created_at": "2018-11-13T23:38:16Z",
+  "updated_at": "2022-03-04T12:53:48Z",
+  "pushed_at": "2023-02-04T00:58:26Z",
+  "homepage": "",
+  "size": 724,
+  "stargazers_count": 4,
+  "watchers_count": 4,
+  "language": "Starlark",
+  "has_issues": false,
+  "has_projects": true,
+  "has_downloads": false,
+  "has_wiki": false,
+  "has_pages": false,
+  "has_discussions": false,
+  "forks_count": 5,
+  "archived": false,
+  "disabled": false,
+  "open_issues_count": 1,
+  "license": {
+    "key": "apache-2.0",
+    "name": "Apache License 2.0",
+    "spdx_id": "Apache-2.0",
+    "url": "https://api.github.com/licenses/apache-2.0",
+    "node_id": "MDc6TGljZW5zZTI="
+  },
+  "allow_forking": true,
+  "is_template": false,
+  "web_commit_signoff_required": false,
+  "topics": [],
+  "visibility": "public",
+  "forks": 5,
+  "open_issues": 1,
+  "watchers": 4,
+  "default_branch": "master",
+  "permissions": {
+    "admin": false,
+    "maintain": false,
+    "push": false,
+    "triage": false,
+    "pull": false
+  },
+  "branches": [],
+  "last5": {
+    "commits": [
+      {
+        "sha": "f1c6399cdd691b7aca90073398e8f690ec8992c6",
+        "node_id": "MDY6Q29tbWl0MTU3NDYxNzgyOmYxYzYzOTljZGQ2OTFiN2FjYTkwMDczMzk4ZThmNjkwZWM4OTkyYzY=",
+        "commit": {
+          "author": {
+            "name": "Josh Wilson",
+            "email": "person142@users.noreply.github.com",
+            "date": "2021-01-06T16:51:42Z"
+          },
+          "committer": {
+            "name": "GitHub",
+            "email": "noreply@github.com",
+            "date": "2021-01-06T16:51:42Z"
+          },
+          "message": "Make the kubectl toolchain type public (#624)",
+          "tree": {
+            "sha": "329ea64253559381adeb0d6bfeb4b5791fc5a555",
+            "url": "https://api.github.com/repos/discord/rules_k8s/git/trees/329ea64253559381adeb0d6bfeb4b5791fc5a555"
+          },
+          "url": "https://api.github.com/repos/discord/rules_k8s/git/commits/f1c6399cdd691b7aca90073398e8f690ec8992c6",
+          "comment_count": 0,
+          "verification": {
+            "verified": true,
+            "reason": "valid",
+            "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsBcBAABCAAQBQJf9eqeCRBK7hj4Ov3rIwAAdHIIAI1juS+2X52s4zWHD9kXZ8kv\nbJTjmp/+rwkvzVw3Bzqxrk0d5gznJZ1DhsiT0cNQHTDbf3tHynQoVIC3agMkLSsZ\nKU8Ih9FonimkOl0bAJAT02uNW+DQ1XT725xHmMFZfASD8v5Rbw/cwFpsWCQ4Avqs\ntd65tufPc/twLwHyjmBj8ZUFYjxRiWKxzwl6mjHB+74myTxaW5u+KN8S03pfAteH\n+93lu/bcusoyFrk6COF2YVFbtmKB+HRnqs9AWG3jW8Dg/MoUtR9quoPbJe+7t2/O\ntPWv2dQqbJO9Txxqpc6ohcOxs0r/wzvRFU6ejFXOhwEQH5dtOuxVkzzRA7z/mQ4=\n=w05O\n-----END PGP SIGNATURE-----\n",
+            "payload": "tree 329ea64253559381adeb0d6bfeb4b5791fc5a555\nparent 89ce5528b3c133f4a37f5ca843a3b76eb9769346\nauthor Josh Wilson <person142@users.noreply.github.com> 1609951902 -0800\ncommitter GitHub <noreply@github.com> 1609951902 -0800\n\nMake the kubectl toolchain type public (#624)\n\n"
+          }
+        },
+        "url": "https://api.github.com/repos/discord/rules_k8s/commits/f1c6399cdd691b7aca90073398e8f690ec8992c6",
+        "author": {
+          "login": "person142",
+          "id": 15134881,
+          "node_id": "MDQ6VXNlcjE1MTM0ODgx",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/person142",
+          "type": "User",
+          "site_admin": false
+        },
+        "committer": {
+          "login": "web-flow",
+          "id": 19864447,
+          "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/web-flow",
+          "type": "User",
+          "site_admin": false
+        },
+        "parents": [
+          {
+            "sha": "89ce5528b3c133f4a37f5ca843a3b76eb9769346",
+            "url": "https://api.github.com/repos/discord/rules_k8s/commits/89ce5528b3c133f4a37f5ca843a3b76eb9769346"
+          }
+        ]
+      },
+      {
+        "sha": "89ce5528b3c133f4a37f5ca843a3b76eb9769346",
+        "node_id": "MDY6Q29tbWl0MTU3NDYxNzgyOjg5Y2U1NTI4YjNjMTMzZjRhMzdmNWNhODQzYTNiNzZlYjk3NjkzNDY=",
+        "commit": {
+          "author": {
+            "name": "Sean Chase",
+            "email": "slchase@google.com",
+            "date": "2020-11-11T18:07:45Z"
+          },
+          "committer": {
+            "name": "GitHub",
+            "email": "noreply@github.com",
+            "date": "2020-11-11T18:07:45Z"
+          },
+          "message": "Merge pull request #616 from renovate-bot/renovate/build_bazel_rules_nodejs-2.x\n\nUpdate dependency build_bazel_rules_nodejs to v2.3.0",
+          "tree": {
+            "sha": "e5796863696055e16722adcfb4e9b0f8aee1ca70",
+            "url": "https://api.github.com/repos/discord/rules_k8s/git/trees/e5796863696055e16722adcfb4e9b0f8aee1ca70"
+          },
+          "url": "https://api.github.com/repos/discord/rules_k8s/git/commits/89ce5528b3c133f4a37f5ca843a3b76eb9769346",
+          "comment_count": 0,
+          "verification": {
+            "verified": true,
+            "reason": "valid",
+            "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsBcBAABCAAQBQJfrChxCRBK7hj4Ov3rIwAAdHIIAHWWunXwBBR5/z68G9Jq1Wih\n1rSdbTKkFpdtIIFZORiEqj+UXE63Jp4/HsTCWgJhH1qftVZWtvD2jrD/q3IbGCD2\nk87wcBx/J1at2Aia5I9gQCYBK49rU30UCnnvYXzGxN61AcQKOGgLI84T3XEJ03Mu\nmMsV/ytWKGi7oW9B8mXHtT0yaoFD8KTJoi7KtvbDshwxNUgL843MaPKQuDN8ome7\nsfb2PkW+5T9+4PqNN63iMi+V+HfUkVeX1GZ+xfmi9VqMJK7hTEYa87G8nx8CkZHC\nbTlIpe+kyApE7aJvY0XtrZ1kbLdw1sG1xeSwMv60jHUGvi8u9ncsrONQ3ZqF1Y4=\n=RdKm\n-----END PGP SIGNATURE-----\n",
+            "payload": "tree e5796863696055e16722adcfb4e9b0f8aee1ca70\nparent e002f810e20e2dc459216960624c47532af5d958\nparent 63dace6eed35180d863fa74f64b049b2a7a33ad9\nauthor Sean Chase <slchase@google.com> 1605118065 -0800\ncommitter GitHub <noreply@github.com> 1605118065 -0800\n\nMerge pull request #616 from renovate-bot/renovate/build_bazel_rules_nodejs-2.x\n\nUpdate dependency build_bazel_rules_nodejs to v2.3.0"
+          }
+        },
+        "url": "https://api.github.com/repos/discord/rules_k8s/commits/89ce5528b3c133f4a37f5ca843a3b76eb9769346",
+        "author": {
+          "login": "chases2",
+          "id": 1386266,
+          "node_id": "MDQ6VXNlcjEzODYyNjY=",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/chases2",
+          "type": "User",
+          "site_admin": false
+        },
+        "committer": {
+          "login": "web-flow",
+          "id": 19864447,
+          "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/web-flow",
+          "type": "User",
+          "site_admin": false
+        },
+        "parents": [
+          {
+            "sha": "e002f810e20e2dc459216960624c47532af5d958",
+            "url": "https://api.github.com/repos/discord/rules_k8s/commits/e002f810e20e2dc459216960624c47532af5d958"
+          },
+          {
+            "sha": "63dace6eed35180d863fa74f64b049b2a7a33ad9",
+            "url": "https://api.github.com/repos/discord/rules_k8s/commits/63dace6eed35180d863fa74f64b049b2a7a33ad9"
+          }
+        ]
+      },
+      {
+        "sha": "63dace6eed35180d863fa74f64b049b2a7a33ad9",
+        "node_id": "MDY6Q29tbWl0MTU3NDYxNzgyOjYzZGFjZTZlZWQzNTE4MGQ4NjNmYTc0ZjY0YjA0OWIyYTdhMzNhZDk=",
+        "commit": {
+          "author": {
+            "name": "Renovate Bot",
+            "email": "bot@renovateapp.com",
+            "date": "2020-11-10T22:07:25Z"
+          },
+          "committer": {
+            "name": "Renovate Bot",
+            "email": "bot@renovateapp.com",
+            "date": "2020-11-10T22:07:25Z"
+          },
+          "message": "Update dependency build_bazel_rules_nodejs to v2.3.0",
+          "tree": {
+            "sha": "e5796863696055e16722adcfb4e9b0f8aee1ca70",
+            "url": "https://api.github.com/repos/discord/rules_k8s/git/trees/e5796863696055e16722adcfb4e9b0f8aee1ca70"
+          },
+          "url": "https://api.github.com/repos/discord/rules_k8s/git/commits/63dace6eed35180d863fa74f64b049b2a7a33ad9",
+          "comment_count": 0,
+          "verification": {
+            "verified": true,
+            "reason": "valid",
+            "signature": "-----BEGIN PGP SIGNATURE-----\n\niQEzBAABCgAdFiEEu7cj+31L3YlH69lbgcY64cIkGCsFAl+rDx0ACgkQgcY64cIk\nGCst3Af/eDTqTVZ+lkl7kGL25+57MKkcZzu6hzpvdR43T5bdf8/Jky4yamuYDz0a\nKaP93triCGoVuuY+66z0yuqz6HHR3YnrIOR52yjPY7XFAjVmYNhDF6h7woHJJrj5\nAgsLoHDiqUfralzAYejNXHt4jzfxQdGkHT3pYmSHx5ackCZF7UwERvC+4KtxqKyv\nTwSGgy2zvkNxMJSCuPAJNHNlcITbl/rQvjmzPqGMybV9P3meTPOMpFH+LqOH58Cl\nAnG37EqnGkNfC4LbX0ZEUCzYqc/SRygJ6yU4fgljK+VKs0wQQ5vXWduWdPF/pnjk\n8hJhvFe01vVkawNDT3rpe9pP0cevZg==\n=8KAw\n-----END PGP SIGNATURE-----",
+            "payload": "tree e5796863696055e16722adcfb4e9b0f8aee1ca70\nparent e002f810e20e2dc459216960624c47532af5d958\nauthor Renovate Bot <bot@renovateapp.com> 1605046045 +0000\ncommitter Renovate Bot <bot@renovateapp.com> 1605046045 +0000\n\nUpdate dependency build_bazel_rules_nodejs to v2.3.0\n"
+          }
+        },
+        "url": "https://api.github.com/repos/discord/rules_k8s/commits/63dace6eed35180d863fa74f64b049b2a7a33ad9",
+        "author": {
+          "login": "renovate-bot",
+          "id": 25180681,
+          "node_id": "MDQ6VXNlcjI1MTgwNjgx",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/renovate-bot",
+          "type": "User",
+          "site_admin": false
+        },
+        "committer": {
+          "login": "renovate-bot",
+          "id": 25180681,
+          "node_id": "MDQ6VXNlcjI1MTgwNjgx",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/renovate-bot",
+          "type": "User",
+          "site_admin": false
+        },
+        "parents": [
+          {
+            "sha": "e002f810e20e2dc459216960624c47532af5d958",
+            "url": "https://api.github.com/repos/discord/rules_k8s/commits/e002f810e20e2dc459216960624c47532af5d958"
+          }
+        ]
+      },
+      {
+        "sha": "e002f810e20e2dc459216960624c47532af5d958",
+        "node_id": "MDY6Q29tbWl0MTU3NDYxNzgyOmUwMDJmODEwZTIwZTJkYzQ1OTIxNjk2MDYyNGM0NzUzMmFmNWQ5NTg=",
+        "commit": {
+          "author": {
+            "name": "Michelle",
+            "email": "michelle192837@users.noreply.github.com",
+            "date": "2020-10-22T17:17:15Z"
+          },
+          "committer": {
+            "name": "GitHub",
+            "email": "noreply@github.com",
+            "date": "2020-10-22T17:17:15Z"
+          },
+          "message": "Merge pull request #615 from linux-on-ibm-z/s390x\n\nAdd s390x support",
+          "tree": {
+            "sha": "97a0c8cd42f5c21a7f34ad4137a797a2e16138bd",
+            "url": "https://api.github.com/repos/discord/rules_k8s/git/trees/97a0c8cd42f5c21a7f34ad4137a797a2e16138bd"
+          },
+          "url": "https://api.github.com/repos/discord/rules_k8s/git/commits/e002f810e20e2dc459216960624c47532af5d958",
+          "comment_count": 0,
+          "verification": {
+            "verified": true,
+            "reason": "valid",
+            "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsBcBAABCAAQBQJfkb6bCRBK7hj4Ov3rIwAAdHIIAGYtRrSD9ZJZWzPha44WQIy6\nRiMuQHKszb9NF+DgY/ikkwl/6D+cKy3aUIG5IPaMGa7bXSLfUV4PZRdJnCk98IQy\n1Il4KnMgTtAhbNFDcAbHA4zJ4OYeduG03Zj7q4LGgCPoZ1ANOeDk3Y6QVRJPTVzD\nZKoaUeDCMTybzihsCAx1C7Benjtxg6JMb+tO+1gVsPMraeNLAPH+I55q10HnSJuf\ntH+eVR3jDYLImLi3XSIsu/Rh80mURYyoKVhWREHUl4ckfBVVuCDaB79J61Ym6/Su\nbZ+zrkJBfLdZXaQ3u4TmiqIzRJ9/YpeYJGb0Q4BHoNSb1US+5rk/RA/lWpt9zJE=\n=13Qd\n-----END PGP SIGNATURE-----\n",
+            "payload": "tree 97a0c8cd42f5c21a7f34ad4137a797a2e16138bd\nparent e6ea6606ef7de9efee778d0297ef214f48605daf\nparent 07063a03c08b6bcb0f3256ee7f75f43055f1e3c6\nauthor Michelle <michelle192837@users.noreply.github.com> 1603387035 -0700\ncommitter GitHub <noreply@github.com> 1603387035 -0700\n\nMerge pull request #615 from linux-on-ibm-z/s390x\n\nAdd s390x support"
+          }
+        },
+        "url": "https://api.github.com/repos/discord/rules_k8s/commits/e002f810e20e2dc459216960624c47532af5d958",
+        "author": {
+          "login": "michelle192837",
+          "id": 652853,
+          "node_id": "MDQ6VXNlcjY1Mjg1Mw==",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/michelle192837",
+          "type": "User",
+          "site_admin": false
+        },
+        "committer": {
+          "login": "web-flow",
+          "id": 19864447,
+          "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/web-flow",
+          "type": "User",
+          "site_admin": false
+        },
+        "parents": [
+          {
+            "sha": "e6ea6606ef7de9efee778d0297ef214f48605daf",
+            "url": "https://api.github.com/repos/discord/rules_k8s/commits/e6ea6606ef7de9efee778d0297ef214f48605daf"
+          },
+          {
+            "sha": "07063a03c08b6bcb0f3256ee7f75f43055f1e3c6",
+            "url": "https://api.github.com/repos/discord/rules_k8s/commits/07063a03c08b6bcb0f3256ee7f75f43055f1e3c6"
+          }
+        ]
+      },
+      {
+        "sha": "e6ea6606ef7de9efee778d0297ef214f48605daf",
+        "node_id": "MDY6Q29tbWl0MTU3NDYxNzgyOmU2ZWE2NjA2ZWY3ZGU5ZWZlZTc3OGQwMjk3ZWYyMTRmNDg2MDVkYWY=",
+        "commit": {
+          "author": {
+            "name": "WhiteSource Renovate",
+            "email": "bot@renovateapp.com",
+            "date": "2020-10-21T21:08:27Z"
+          },
+          "committer": {
+            "name": "GitHub",
+            "email": "noreply@github.com",
+            "date": "2020-10-21T21:08:27Z"
+          },
+          "message": "Update dependency rules_python to v0.1.0 (#618)",
+          "tree": {
+            "sha": "17b9c7bb315f22b06917a08ff27e4497e706c8c4",
+            "url": "https://api.github.com/repos/discord/rules_k8s/git/trees/17b9c7bb315f22b06917a08ff27e4497e706c8c4"
+          },
+          "url": "https://api.github.com/repos/discord/rules_k8s/git/commits/e6ea6606ef7de9efee778d0297ef214f48605daf",
+          "comment_count": 0,
+          "verification": {
+            "verified": true,
+            "reason": "valid",
+            "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsBcBAABCAAQBQJfkKNLCRBK7hj4Ov3rIwAAdHIIADcL+RKRQYzM+jukEdPWeYso\nkTO6XYIEW0LJ+nfxaIahwQuACZiQQQk+q0eaf5ZVN/P80pF61+m+MhMUT5mk1PaD\nhLbiSvAigxa+6tiI4Qi24bF0pGpoSbcUeoeDdqnlkvBdb2ucEbqIDE9NqM0ZJwxW\n1fSK8JpAIbk1/xeZ51l0cBNNYPKOi3GD+fW4MOHE3lxh0FntCHx8S2D4jzUKB8hz\nBukx1dopkYtqgcw8DmJOsn6WRpspSULOnq5VCD+WMo7VivELOcAxvFM/ayOvvl20\nj8Kxtt2SRjBvQN9cINbuc0kGVn05hNVlZdkvB5RqQzBFGcP+pg7oCrbtBwaP1vY=\n=UkFZ\n-----END PGP SIGNATURE-----\n",
+            "payload": "tree 17b9c7bb315f22b06917a08ff27e4497e706c8c4\nparent 2472f5ce0b970c2e7899807509f45deabd06800f\nauthor WhiteSource Renovate <bot@renovateapp.com> 1603314507 +0200\ncommitter GitHub <noreply@github.com> 1603314507 -0700\n\nUpdate dependency rules_python to v0.1.0 (#618)\n\n"
+          }
+        },
+        "url": "https://api.github.com/repos/discord/rules_k8s/commits/e6ea6606ef7de9efee778d0297ef214f48605daf",
+        "author": {
+          "login": "renovate-bot",
+          "id": 25180681,
+          "node_id": "MDQ6VXNlcjI1MTgwNjgx",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/renovate-bot",
+          "type": "User",
+          "site_admin": false
+        },
+        "committer": {
+          "login": "web-flow",
+          "id": 19864447,
+          "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/web-flow",
+          "type": "User",
+          "site_admin": false
+        },
+        "parents": [
+          {
+            "sha": "2472f5ce0b970c2e7899807509f45deabd06800f",
+            "url": "https://api.github.com/repos/discord/rules_k8s/commits/2472f5ce0b970c2e7899807509f45deabd06800f"
+          }
+        ]
+      }
+    ],
+    "releases": [],
+    "issues": [
+      {
+        "url": "https://api.github.com/repos/discord/rules_k8s/issues/3",
+        "id": 1197822569,
+        "node_id": "PR_kwDOCWKtFs415UW0",
+        "number": 3,
+        "title": "cherry-pick m1 update",
+        "user": {
+          "login": "AugustKarlstedt",
+          "id": 9087849,
+          "node_id": "MDQ6VXNlcjkwODc4NDk=",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/AugustKarlstedt",
+          "type": "User",
+          "site_admin": false
+        },
+        "labels": [],
+        "state": "open",
+        "locked": false,
+        "assignee": null,
+        "assignees": [],
+        "milestone": null,
+        "comments": 0,
+        "created_at": "2022-04-08T20:58:29Z",
+        "updated_at": "2022-04-12T19:48:51Z",
+        "closed_at": null,
+        "author_association": "MEMBER",
+        "active_lock_reason": null,
+        "draft": false,
+        "pull_request": {
+          "url": "https://api.github.com/repos/discord/rules_k8s/pulls/3",
+          "merged_at": null
+        },
+        "body": "from https://github.com/bazelbuild/rules_k8s/pull/683",
+        "reactions": {
+          "url": "https://api.github.com/repos/discord/rules_k8s/issues/3/reactions",
+          "total_count": 0,
+          "+1": 0,
+          "-1": 0,
+          "laugh": 0,
+          "hooray": 0,
+          "confused": 0,
+          "heart": 0,
+          "rocket": 0,
+          "eyes": 0
+        },
+        "performed_via_github_app": null,
+        "state_reason": null
+      },
+      {
+        "url": "https://api.github.com/repos/discord/rules_k8s/issues/2",
+        "id": 854856136,
+        "node_id": "MDExOlB1bGxSZXF1ZXN0NjEyNzMwOTEx",
+        "number": 2,
+        "title": "Support k8s_release in kubectl_configure",
+        "user": {
+          "login": "samschlegel",
+          "id": 5514447,
+          "node_id": "MDQ6VXNlcjU1MTQ0NDc=",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/samschlegel",
+          "type": "User",
+          "site_admin": false
+        },
+        "labels": [],
+        "state": "closed",
+        "locked": false,
+        "assignee": null,
+        "assignees": [],
+        "milestone": null,
+        "comments": 0,
+        "created_at": "2021-04-09T21:10:41Z",
+        "updated_at": "2021-04-09T21:10:46Z",
+        "closed_at": "2021-04-09T21:10:46Z",
+        "author_association": "MEMBER",
+        "active_lock_reason": null,
+        "draft": false,
+        "pull_request": {
+          "url": "https://api.github.com/repos/discord/rules_k8s/pulls/2",
+          "merged_at": "2021-04-09T21:10:46Z"
+        },
+        "body": "See https://github.com/bazelbuild/rules_k8s/pull/648\r\n\r\nAlso default to using k8s_release to avoid issues with github archives potentially changing",
+        "reactions": {
+          "url": "https://api.github.com/repos/discord/rules_k8s/issues/2/reactions",
+          "total_count": 0,
+          "+1": 0,
+          "-1": 0,
+          "laugh": 0,
+          "hooray": 0,
+          "confused": 0,
+          "heart": 0,
+          "rocket": 0,
+          "eyes": 0
+        },
+        "performed_via_github_app": null,
+        "state_reason": null
+      },
+      {
+        "url": "https://api.github.com/repos/discord/rules_k8s/issues/1",
+        "id": 854855097,
+        "node_id": "MDExOlB1bGxSZXF1ZXN0NjEyNzMwMDQw",
+        "number": 1,
+        "title": "Handle kubectl diff exit code when diffs are found",
+        "user": {
+          "login": "samschlegel",
+          "id": 5514447,
+          "node_id": "MDQ6VXNlcjU1MTQ0NDc=",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/samschlegel",
+          "type": "User",
+          "site_admin": false
+        },
+        "labels": [],
+        "state": "closed",
+        "locked": false,
+        "assignee": null,
+        "assignees": [],
+        "milestone": null,
+        "comments": 0,
+        "created_at": "2021-04-09T21:08:30Z",
+        "updated_at": "2021-04-09T21:08:48Z",
+        "closed_at": "2021-04-09T21:08:48Z",
+        "author_association": "MEMBER",
+        "active_lock_reason": null,
+        "draft": false,
+        "pull_request": {
+          "url": "https://api.github.com/repos/discord/rules_k8s/pulls/1",
+          "merged_at": "2021-04-09T21:08:48Z"
+        },
+        "body": "(merging into discord-main until it's upstreamed)\r\n\r\nkubectl diff exits with code 1 if a diff is found. Because of the exit flag, this causes the bazel kubectl diff action to exit early. So this attempts to handle that without losing general script-level exit code handling.",
+        "reactions": {
+          "url": "https://api.github.com/repos/discord/rules_k8s/issues/1/reactions",
+          "total_count": 0,
+          "+1": 0,
+          "-1": 0,
+          "laugh": 0,
+          "hooray": 0,
+          "confused": 0,
+          "heart": 0,
+          "rocket": 0,
+          "eyes": 0
+        },
+        "performed_via_github_app": null,
+        "state_reason": null
+      }
+    ],
+    "pullRequests": []
+  }
+}

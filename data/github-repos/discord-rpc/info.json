@@ -1,0 +1,801 @@
+{
+  "id": 97152773,
+  "node_id": "MDEwOlJlcG9zaXRvcnk5NzE1Mjc3Mw==",
+  "name": "discord-rpc",
+  "full_name": "discord/discord-rpc",
+  "private": false,
+  "owner": {
+    "login": "discord",
+    "id": 1965106,
+    "node_id": "MDEyOk9yZ2FuaXphdGlvbjE5NjUxMDY=",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/discord",
+    "type": "Organization",
+    "site_admin": false
+  },
+  "description": null,
+  "fork": false,
+  "url": "https://api.github.com/repos/discord/discord-rpc",
+  "created_at": "2017-07-13T18:20:34Z",
+  "updated_at": "2023-04-23T10:04:31Z",
+  "pushed_at": "2022-06-20T12:18:50Z",
+  "homepage": "https://discordapp.com/developers",
+  "size": 2810,
+  "stargazers_count": 955,
+  "watchers_count": 955,
+  "language": "C++",
+  "has_issues": true,
+  "has_projects": false,
+  "has_downloads": true,
+  "has_wiki": false,
+  "has_pages": false,
+  "has_discussions": false,
+  "forks_count": 279,
+  "archived": false,
+  "disabled": false,
+  "open_issues_count": 57,
+  "license": {
+    "key": "mit",
+    "name": "MIT License",
+    "spdx_id": "MIT",
+    "url": "https://api.github.com/licenses/mit",
+    "node_id": "MDc6TGljZW5zZTEz"
+  },
+  "allow_forking": true,
+  "is_template": false,
+  "web_commit_signoff_required": false,
+  "topics": [],
+  "visibility": "public",
+  "forks": 279,
+  "open_issues": 57,
+  "watchers": 955,
+  "default_branch": "master",
+  "permissions": {
+    "admin": false,
+    "maintain": false,
+    "push": false,
+    "triage": false,
+    "pull": false
+  },
+  "branches": [],
+  "last5": {
+    "commits": [
+      {
+        "sha": "963aa9f3e5ce81a4682c6ca3d136cddda614db33",
+        "node_id": "MDY6Q29tbWl0OTcxNTI3NzM6OTYzYWE5ZjNlNWNlODFhNDY4MmM2Y2EzZDEzNmNkZGRhNjE0ZGIzMw==",
+        "commit": {
+          "author": {
+            "name": "Mason Sciotti",
+            "email": "mason.sciotti@gmail.com",
+            "date": "2020-09-21T21:51:48Z"
+          },
+          "committer": {
+            "name": "GitHub",
+            "email": "noreply@github.com",
+            "date": "2020-09-21T21:51:48Z"
+          },
+          "message": "[Maintenance PR for Legacy Gamedevs] Add party privacy enum (#306)\n\n* Add party privacy enum\r\n\r\n* Add party privacy enum\r\n\r\n* Possible unreal working\r\n\r\n* Cast to int",
+          "tree": {
+            "sha": "85aac7652923a8fc0a0d2ac43ecdd62f1caa8106",
+            "url": "https://api.github.com/repos/discord/discord-rpc/git/trees/85aac7652923a8fc0a0d2ac43ecdd62f1caa8106"
+          },
+          "url": "https://api.github.com/repos/discord/discord-rpc/git/commits/963aa9f3e5ce81a4682c6ca3d136cddda614db33",
+          "comment_count": 0,
+          "verification": {
+            "verified": true,
+            "reason": "valid",
+            "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsBcBAABCAAQBQJfaSB0CRBK7hj4Ov3rIwAAdHIIAHuiVBv5NH7vddf/cxn1cRBC\nR/2vPVcFGpYEC0skj/RORdEiWk3IMPbkKBMh6MnF+5cd+gN5VTApc1wLUrLKoY5D\n22/tP0NybjHnilPJDL+ns5XH2pebgJSnSqi+Z6QBNCflWfoYRle5rCnYvBWJSzoj\n4rqnxF+6wXpDEgdfcpEXXvqNi4PyF+EZjxd7jLQebJMoi8T37rZJ20uQMFvB3iG8\njRtt+q2MddGpyiEjq83xl7YE8g5bKHI3638VRPXxZWbInTfU8uANkTnxS+Q6Uuo7\naCCK0dd9wEGg26QLX1XjvcDzwmPuf3MJ0eGE+TNc3XEybYa8/vl2UMrMPnKMjt4=\n=Mclu\n-----END PGP SIGNATURE-----\n",
+            "payload": "tree 85aac7652923a8fc0a0d2ac43ecdd62f1caa8106\nparent e4c0c569eca9b888010ad904d3633e782f5cd680\nauthor Mason Sciotti <mason.sciotti@gmail.com> 1600725108 -0700\ncommitter GitHub <noreply@github.com> 1600725108 -0700\n\n[Maintenance PR for Legacy Gamedevs] Add party privacy enum (#306)\n\n* Add party privacy enum\r\n\r\n* Add party privacy enum\r\n\r\n* Possible unreal working\r\n\r\n* Cast to int"
+          }
+        },
+        "url": "https://api.github.com/repos/discord/discord-rpc/commits/963aa9f3e5ce81a4682c6ca3d136cddda614db33",
+        "author": {
+          "login": "msciotti",
+          "id": 4193854,
+          "node_id": "MDQ6VXNlcjQxOTM4NTQ=",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/msciotti",
+          "type": "User",
+          "site_admin": false
+        },
+        "committer": {
+          "login": "web-flow",
+          "id": 19864447,
+          "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/web-flow",
+          "type": "User",
+          "site_admin": false
+        },
+        "parents": [
+          {
+            "sha": "e4c0c569eca9b888010ad904d3633e782f5cd680",
+            "url": "https://api.github.com/repos/discord/discord-rpc/commits/e4c0c569eca9b888010ad904d3633e782f5cd680"
+          }
+        ]
+      },
+      {
+        "sha": "e4c0c569eca9b888010ad904d3633e782f5cd680",
+        "node_id": "MDY6Q29tbWl0OTcxNTI3NzM6ZTRjMGM1NjllY2E5Yjg4ODAxMGFkOTA0ZDM2MzNlNzgyZjVjZDY4MA==",
+        "commit": {
+          "author": {
+            "name": "msciotti",
+            "email": "mason.sciotti@gmail.com",
+            "date": "2019-11-27T19:26:13Z"
+          },
+          "committer": {
+            "name": "msciotti",
+            "email": "mason.sciotti@gmail.com",
+            "date": "2019-11-27T19:26:13Z"
+          },
+          "message": "Clarify deprecation",
+          "tree": {
+            "sha": "5e3cc9fd3b0100728501965f28369e6454bdf159",
+            "url": "https://api.github.com/repos/discord/discord-rpc/git/trees/5e3cc9fd3b0100728501965f28369e6454bdf159"
+          },
+          "url": "https://api.github.com/repos/discord/discord-rpc/git/commits/e4c0c569eca9b888010ad904d3633e782f5cd680",
+          "comment_count": 0,
+          "verification": {
+            "verified": true,
+            "reason": "valid",
+            "signature": "-----BEGIN PGP SIGNATURE-----\n\niQIzBAABCAAdFiEEBCKtRK431GFng2lrQPraJc8OrYQFAl3ezdUACgkQQPraJc8O\nrYT6kxAAq+kmh8djkGnbNp7iG9t5G4no5EiDXhLpyRAofwe+/pZz2WO37HL/SpnE\nn7vlPnlNN+PDZQhdT9W+GdXflwY30Ps1aD79jWiEJPjXEOA1v0a9ilpw6pKBSs09\nHI7VG60aqfSi/vofxTijCbwhD+zug+ySzrsLo6YifGOFFECXZisP4G71E/tg1Us4\n6wZkJxqumxCrzREfbrDJ3VxplPrfMLyrDEutOn839DQ9ALgzfHQLGl+t5/6rg1Q+\nhKEdYWg4mFjWA2Yybvvhx0Eoh3LfLCbmcyJwvOycCkFvGwVxEg03MSMd0cqqiDqC\nxuQys0Jd7N47B7MJ4vhIfkVRvzemxN9SSmoQyo72QTLfqA7iGfd2c672yz/jBLQc\nHU/oBFHwROC2IT3/UT8YVAv08UDGYh6V1bi+lIlqZo1s1GHlKnAXYWYnZU2oVv8L\nH8DkzL02LLFfS8ec37a2g0dYZJrR9g9zaS4ddF6SiHo9ZSohSENdLMUvxP3OnXIK\nb5UbGCNs5fA3mgbIB+ZrfwBwPpunmby8lyVP8wAOfYV+O++VAmM7GfPDIXjMj5Ni\nwA71/Xv/uCEFv+cURXN2sIIVIhZuKoLqOI33G6H/E1EgrRfFWFPxRNFQRt9C+4bM\nIxuOEGLOHKYN2DVCvLgZCcQ9ajSt9+1iZXbIpx+CQhi+oRcmRx0=\n=FQpx\n-----END PGP SIGNATURE-----",
+            "payload": "tree 5e3cc9fd3b0100728501965f28369e6454bdf159\nparent b6d0a9cdbd58308a8200bbc519cbccf646828211\nauthor msciotti <mason.sciotti@gmail.com> 1574882773 -0800\ncommitter msciotti <mason.sciotti@gmail.com> 1574882773 -0800\n\nClarify deprecation\n"
+          }
+        },
+        "url": "https://api.github.com/repos/discord/discord-rpc/commits/e4c0c569eca9b888010ad904d3633e782f5cd680",
+        "author": {
+          "login": "msciotti",
+          "id": 4193854,
+          "node_id": "MDQ6VXNlcjQxOTM4NTQ=",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/msciotti",
+          "type": "User",
+          "site_admin": false
+        },
+        "committer": {
+          "login": "msciotti",
+          "id": 4193854,
+          "node_id": "MDQ6VXNlcjQxOTM4NTQ=",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/msciotti",
+          "type": "User",
+          "site_admin": false
+        },
+        "parents": [
+          {
+            "sha": "b6d0a9cdbd58308a8200bbc519cbccf646828211",
+            "url": "https://api.github.com/repos/discord/discord-rpc/commits/b6d0a9cdbd58308a8200bbc519cbccf646828211"
+          }
+        ]
+      },
+      {
+        "sha": "b6d0a9cdbd58308a8200bbc519cbccf646828211",
+        "node_id": "MDY6Q29tbWl0OTcxNTI3NzM6YjZkMGE5Y2RiZDU4MzA4YTgyMDBiYmM1MTljYmNjZjY0NjgyODIxMQ==",
+        "commit": {
+          "author": {
+            "name": "IceNinjaman",
+            "email": "IceNinjaman@users.noreply.github.com",
+            "date": "2019-11-27T19:24:32Z"
+          },
+          "committer": {
+            "name": "Mason Sciotti",
+            "email": "mason.sciotti@gmail.com",
+            "date": "2019-11-27T19:24:32Z"
+          },
+          "message": "wchar.h instead cwchar when compiler is MinGW to prevent weird behavior with vsnwprintf (#277)",
+          "tree": {
+            "sha": "22346d06dd19673ec0277d8508093767a492e33d",
+            "url": "https://api.github.com/repos/discord/discord-rpc/git/trees/22346d06dd19673ec0277d8508093767a492e33d"
+          },
+          "url": "https://api.github.com/repos/discord/discord-rpc/git/commits/b6d0a9cdbd58308a8200bbc519cbccf646828211",
+          "comment_count": 0,
+          "verification": {
+            "verified": false,
+            "reason": "unsigned",
+            "signature": null,
+            "payload": null
+          }
+        },
+        "url": "https://api.github.com/repos/discord/discord-rpc/commits/b6d0a9cdbd58308a8200bbc519cbccf646828211",
+        "author": {
+          "login": "IceNinjaman",
+          "id": 5165613,
+          "node_id": "MDQ6VXNlcjUxNjU2MTM=",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/IceNinjaman",
+          "type": "User",
+          "site_admin": false
+        },
+        "committer": {
+          "login": "msciotti",
+          "id": 4193854,
+          "node_id": "MDQ6VXNlcjQxOTM4NTQ=",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/msciotti",
+          "type": "User",
+          "site_admin": false
+        },
+        "parents": [
+          {
+            "sha": "eff23a770a07c3574cb48f299736c461c576286b",
+            "url": "https://api.github.com/repos/discord/discord-rpc/commits/eff23a770a07c3574cb48f299736c461c576286b"
+          }
+        ]
+      },
+      {
+        "sha": "eff23a770a07c3574cb48f299736c461c576286b",
+        "node_id": "MDY6Q29tbWl0OTcxNTI3NzM6ZWZmMjNhNzcwYTA3YzM1NzRjYjQ4ZjI5OTczNmM0NjFjNTc2Mjg2Yg==",
+        "commit": {
+          "author": {
+            "name": "msciotti",
+            "email": "mason.sciotti@gmail.com",
+            "date": "2019-07-10T21:39:38Z"
+          },
+          "committer": {
+            "name": "msciotti",
+            "email": "mason.sciotti@gmail.com",
+            "date": "2019-07-10T21:39:38Z"
+          },
+          "message": "add deprecation note to readme",
+          "tree": {
+            "sha": "5162fd6483a9c7e265524344c83ca8bbaf401a55",
+            "url": "https://api.github.com/repos/discord/discord-rpc/git/trees/5162fd6483a9c7e265524344c83ca8bbaf401a55"
+          },
+          "url": "https://api.github.com/repos/discord/discord-rpc/git/commits/eff23a770a07c3574cb48f299736c461c576286b",
+          "comment_count": 1,
+          "verification": {
+            "verified": true,
+            "reason": "valid",
+            "signature": "-----BEGIN PGP SIGNATURE-----\n\niQIzBAABCAAdFiEEBCKtRK431GFng2lrQPraJc8OrYQFAl0mWxoACgkQQPraJc8O\nrYQ/FBAAmx9tT7K4oo2+RAE0KvZFchBvE+zQthv8TmlZjHk6OR5vFioG99yNLZxm\nfZDKddkvVJuiNu8iWP+zz4FO8dKrTCztBLyYhg/wk357yUMdWBvcxzA9POGgyKpK\nBjoOgoZNg410h1XJVjn+ADmxOBEhB3wq7CvH24ERMKLez9BrXTsMy30qmcvVVeDp\nywDoFYb4eZiCopD1ldNC7vpFNhf5ILfzGYecKg8v9iJqK/W2r8sTWd8+8aWZllf+\n3C4VNXbf0V2Nfv0Qf/C2guEcdEnSupMgiPSAiRS3seMSrkXZzCglPFi9qUkOO2MY\nDXpETcC1Hngdw6uBwasTpVcF4sT94oUqbtfnMmjSt6UH33iWqm7z+HEhZv3j6sEL\nP4wfhfwda2507NOPWmW9QbFFiqHRc03E7Llbs/oMLo1r1G+sbNw5+/91egTOKByv\nQUFeArWb31ExZRbzc+si9pGoW+vj1TsJBa22BjgS/z7kXMuIPAbAXq8iKry6opV2\nzPW83nJw5kKxCns/dVu2YD0JPzJtX9fHW08aKoIqqwW8DYzNWzvI5mdjBRgGuG/k\npP5TSKtCDzJIE+sCCF8knADf0WTuc78ZMH79w9knUzPU7/Nf78HmqVSi9KYI74Wc\n7sFbugvGNrFfUiga99GYcHDqLviSgvuddB8joMJrHiHtlQRyOJ0=\n=Rti3\n-----END PGP SIGNATURE-----",
+            "payload": "tree 5162fd6483a9c7e265524344c83ca8bbaf401a55\nparent 34ce3ac80306f8d3cb56d3efdcd4725288742db9\nauthor msciotti <mason.sciotti@gmail.com> 1562794778 -0700\ncommitter msciotti <mason.sciotti@gmail.com> 1562794778 -0700\n\nadd deprecation note to readme\n"
+          }
+        },
+        "url": "https://api.github.com/repos/discord/discord-rpc/commits/eff23a770a07c3574cb48f299736c461c576286b",
+        "author": {
+          "login": "msciotti",
+          "id": 4193854,
+          "node_id": "MDQ6VXNlcjQxOTM4NTQ=",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/msciotti",
+          "type": "User",
+          "site_admin": false
+        },
+        "committer": {
+          "login": "msciotti",
+          "id": 4193854,
+          "node_id": "MDQ6VXNlcjQxOTM4NTQ=",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/msciotti",
+          "type": "User",
+          "site_admin": false
+        },
+        "parents": [
+          {
+            "sha": "34ce3ac80306f8d3cb56d3efdcd4725288742db9",
+            "url": "https://api.github.com/repos/discord/discord-rpc/commits/34ce3ac80306f8d3cb56d3efdcd4725288742db9"
+          }
+        ]
+      },
+      {
+        "sha": "34ce3ac80306f8d3cb56d3efdcd4725288742db9",
+        "node_id": "MDY6Q29tbWl0OTcxNTI3NzM6MzRjZTNhYzgwMzA2ZjhkM2NiNTZkM2VmZGNkNDcyNTI4ODc0MmRiOQ==",
+        "commit": {
+          "author": {
+            "name": "Kenny McCormick",
+            "email": "kennyrkun@users.noreply.github.com",
+            "date": "2019-04-30T18:39:14Z"
+          },
+          "committer": {
+            "name": "Mason Sciotti",
+            "email": "mason.sciotti@gmail.com",
+            "date": "2019-04-30T18:39:14Z"
+          },
+          "message": "fix \"destopFileFormat\" typo (#283)\n\nresolution for #282",
+          "tree": {
+            "sha": "7948b868c167c3da36eab0e1b4c30f1f773ae1a4",
+            "url": "https://api.github.com/repos/discord/discord-rpc/git/trees/7948b868c167c3da36eab0e1b4c30f1f773ae1a4"
+          },
+          "url": "https://api.github.com/repos/discord/discord-rpc/git/commits/34ce3ac80306f8d3cb56d3efdcd4725288742db9",
+          "comment_count": 0,
+          "verification": {
+            "verified": false,
+            "reason": "unsigned",
+            "signature": null,
+            "payload": null
+          }
+        },
+        "url": "https://api.github.com/repos/discord/discord-rpc/commits/34ce3ac80306f8d3cb56d3efdcd4725288742db9",
+        "author": {
+          "login": "kennyrkun",
+          "id": 13459291,
+          "node_id": "MDQ6VXNlcjEzNDU5Mjkx",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/kennyrkun",
+          "type": "User",
+          "site_admin": false
+        },
+        "committer": {
+          "login": "msciotti",
+          "id": 4193854,
+          "node_id": "MDQ6VXNlcjQxOTM4NTQ=",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/msciotti",
+          "type": "User",
+          "site_admin": false
+        },
+        "parents": [
+          {
+            "sha": "c59fd6df20c6904ab39f026e87af1dd90fcac7ff",
+            "url": "https://api.github.com/repos/discord/discord-rpc/commits/c59fd6df20c6904ab39f026e87af1dd90fcac7ff"
+          }
+        ]
+      }
+    ],
+    "releases": [
+      {
+        "url": "https://api.github.com/repos/discord/discord-rpc/releases/14213626",
+        "id": 14213626,
+        "author": {
+          "login": "msciotti",
+          "id": 4193854,
+          "node_id": "MDQ6VXNlcjQxOTM4NTQ=",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/msciotti",
+          "type": "User",
+          "site_admin": false
+        },
+        "node_id": "MDc6UmVsZWFzZTE0MjEzNjI2",
+        "tag_name": "v3.4.0",
+        "target_commitish": "master",
+        "name": "Unity il2cpp support and callback bugfixes",
+        "draft": false,
+        "prerelease": false,
+        "created_at": "2018-11-27T17:19:14Z",
+        "published_at": "2018-11-27T17:47:27Z",
+        "assets": [
+          {
+            "url": "https://api.github.com/repos/discord/discord-rpc/releases/assets/9881532",
+            "id": 9881532,
+            "node_id": "MDEyOlJlbGVhc2VBc3NldDk4ODE1MzI=",
+            "name": "discord-rpc-linux.zip",
+            "label": null,
+            "uploader": {
+              "login": "msciotti",
+              "id": 4193854,
+              "node_id": "MDQ6VXNlcjQxOTM4NTQ=",
+              "gravatar_id": "",
+              "url": "https://api.github.com/users/msciotti",
+              "type": "User",
+              "site_admin": false
+            },
+            "content_type": "application/zip",
+            "state": "uploaded",
+            "size": 412013,
+            "download_count": 9048,
+            "created_at": "2018-11-27T17:47:21Z",
+            "updated_at": "2018-11-27T17:47:22Z"
+          },
+          {
+            "url": "https://api.github.com/repos/discord/discord-rpc/releases/assets/9881533",
+            "id": 9881533,
+            "node_id": "MDEyOlJlbGVhc2VBc3NldDk4ODE1MzM=",
+            "name": "discord-rpc-osx.zip",
+            "label": null,
+            "uploader": {
+              "login": "msciotti",
+              "id": 4193854,
+              "node_id": "MDQ6VXNlcjQxOTM4NTQ=",
+              "gravatar_id": "",
+              "url": "https://api.github.com/users/msciotti",
+              "type": "User",
+              "site_admin": false
+            },
+            "content_type": "application/zip",
+            "state": "uploaded",
+            "size": 275602,
+            "download_count": 5065,
+            "created_at": "2018-11-27T17:47:21Z",
+            "updated_at": "2018-11-27T17:47:22Z"
+          },
+          {
+            "url": "https://api.github.com/repos/discord/discord-rpc/releases/assets/9881534",
+            "id": 9881534,
+            "node_id": "MDEyOlJlbGVhc2VBc3NldDk4ODE1MzQ=",
+            "name": "discord-rpc-win.zip",
+            "label": null,
+            "uploader": {
+              "login": "msciotti",
+              "id": 4193854,
+              "node_id": "MDQ6VXNlcjQxOTM4NTQ=",
+              "gravatar_id": "",
+              "url": "https://api.github.com/users/msciotti",
+              "type": "User",
+              "site_admin": false
+            },
+            "content_type": "application/zip",
+            "state": "uploaded",
+            "size": 539931,
+            "download_count": 499039,
+            "created_at": "2018-11-27T17:47:21Z",
+            "updated_at": "2018-11-27T17:47:23Z"
+          }
+        ],
+        "body": "This release includes support for il2cpp compiling in Unity. It is backwards compatible with Mono. It also contains a number of bug fixes, including:\r\n\r\n- Fixed strings getting cut off prematurely in C#\r\n- The IO thread is now dynamically created to help with the race condition between a final `SendPresence()` and `Shutdown()`\r\n- Fixed the `disconnected()` callback not being fired",
+        "reactions": {
+          "url": "https://api.github.com/repos/discord/discord-rpc/releases/14213626/reactions",
+          "total_count": 22,
+          "+1": 15,
+          "-1": 0,
+          "laugh": 0,
+          "hooray": 0,
+          "confused": 0,
+          "heart": 2,
+          "rocket": 0,
+          "eyes": 5
+        }
+      },
+      {
+        "url": "https://api.github.com/repos/discord/discord-rpc/releases/10703849",
+        "id": 10703849,
+        "author": {
+          "login": "msciotti",
+          "id": 4193854,
+          "node_id": "MDQ6VXNlcjQxOTM4NTQ=",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/msciotti",
+          "type": "User",
+          "site_admin": false
+        },
+        "node_id": "MDc6UmVsZWFzZTEwNzAzODQ5",
+        "tag_name": "v3.3.0",
+        "target_commitish": "master",
+        "name": "Add User Object to Ready Event Payload",
+        "draft": false,
+        "prerelease": false,
+        "created_at": "2018-04-16T17:25:44Z",
+        "published_at": "2018-04-24T22:04:44Z",
+        "assets": [
+          {
+            "url": "https://api.github.com/repos/discord/discord-rpc/releases/assets/6962461",
+            "id": 6962461,
+            "node_id": "MDEyOlJlbGVhc2VBc3NldDY5NjI0NjE=",
+            "name": "discord-rpc-linux.zip",
+            "label": null,
+            "uploader": {
+              "login": "msciotti",
+              "id": 4193854,
+              "node_id": "MDQ6VXNlcjQxOTM4NTQ=",
+              "gravatar_id": "",
+              "url": "https://api.github.com/users/msciotti",
+              "type": "User",
+              "site_admin": false
+            },
+            "content_type": "application/zip",
+            "state": "uploaded",
+            "size": 411061,
+            "download_count": 1253,
+            "created_at": "2018-04-24T22:03:59Z",
+            "updated_at": "2018-04-24T22:04:01Z"
+          },
+          {
+            "url": "https://api.github.com/repos/discord/discord-rpc/releases/assets/6962462",
+            "id": 6962462,
+            "node_id": "MDEyOlJlbGVhc2VBc3NldDY5NjI0NjI=",
+            "name": "discord-rpc-osx.zip",
+            "label": null,
+            "uploader": {
+              "login": "msciotti",
+              "id": 4193854,
+              "node_id": "MDQ6VXNlcjQxOTM4NTQ=",
+              "gravatar_id": "",
+              "url": "https://api.github.com/users/msciotti",
+              "type": "User",
+              "site_admin": false
+            },
+            "content_type": "application/zip",
+            "state": "uploaded",
+            "size": 276216,
+            "download_count": 1090,
+            "created_at": "2018-04-24T22:03:59Z",
+            "updated_at": "2018-04-24T22:04:01Z"
+          },
+          {
+            "url": "https://api.github.com/repos/discord/discord-rpc/releases/assets/6962463",
+            "id": 6962463,
+            "node_id": "MDEyOlJlbGVhc2VBc3NldDY5NjI0NjM=",
+            "name": "discord-rpc-win.zip",
+            "label": null,
+            "uploader": {
+              "login": "msciotti",
+              "id": 4193854,
+              "node_id": "MDQ6VXNlcjQxOTM4NTQ=",
+              "gravatar_id": "",
+              "url": "https://api.github.com/users/msciotti",
+              "type": "User",
+              "site_admin": false
+            },
+            "content_type": "application/zip",
+            "state": "uploaded",
+            "size": 540964,
+            "download_count": 5285,
+            "created_at": "2018-04-24T22:04:00Z",
+            "updated_at": "2018-04-24T22:04:01Z"
+          }
+        ],
+        "body": "The `ready()` callback event will now return basic user information:\r\n\r\n- username\r\n- user id\r\n- avatar\r\n- discriminator\r\n\r\nFor the user to which your application is connected. This release also changes the `struct` name from `DiscordJoinRequest` to `DiscordUser`, to better reflect its purpose in the `ready()` and `joinRequest()` callbacks."
+      },
+      {
+        "url": "https://api.github.com/repos/discord/discord-rpc/releases/10325933",
+        "id": 10325933,
+        "author": {
+          "login": "msciotti",
+          "id": 4193854,
+          "node_id": "MDQ6VXNlcjQxOTM4NTQ=",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/msciotti",
+          "type": "User",
+          "site_admin": false
+        },
+        "node_id": "MDc6UmVsZWFzZTEwMzI1OTMz",
+        "tag_name": "v3.2.0",
+        "target_commitish": "master",
+        "name": "[Bug Fix] Dynamic Handler Registration",
+        "draft": false,
+        "prerelease": false,
+        "created_at": "2018-03-29T21:33:46Z",
+        "published_at": "2018-03-29T21:39:23Z",
+        "assets": [
+          {
+            "url": "https://api.github.com/repos/discord/discord-rpc/releases/assets/6679267",
+            "id": 6679267,
+            "node_id": "MDEyOlJlbGVhc2VBc3NldDY2NzkyNjc=",
+            "name": "discord-rpc-linux.zip",
+            "label": null,
+            "uploader": {
+              "login": "msciotti",
+              "id": 4193854,
+              "node_id": "MDQ6VXNlcjQxOTM4NTQ=",
+              "gravatar_id": "",
+              "url": "https://api.github.com/users/msciotti",
+              "type": "User",
+              "site_admin": false
+            },
+            "content_type": "application/zip",
+            "state": "uploaded",
+            "size": 410123,
+            "download_count": 100,
+            "created_at": "2018-03-29T21:39:16Z",
+            "updated_at": "2018-03-29T21:39:17Z"
+          },
+          {
+            "url": "https://api.github.com/repos/discord/discord-rpc/releases/assets/6679268",
+            "id": 6679268,
+            "node_id": "MDEyOlJlbGVhc2VBc3NldDY2NzkyNjg=",
+            "name": "discord-rpc-osx.zip",
+            "label": null,
+            "uploader": {
+              "login": "msciotti",
+              "id": 4193854,
+              "node_id": "MDQ6VXNlcjQxOTM4NTQ=",
+              "gravatar_id": "",
+              "url": "https://api.github.com/users/msciotti",
+              "type": "User",
+              "site_admin": false
+            },
+            "content_type": "application/zip",
+            "state": "uploaded",
+            "size": 275406,
+            "download_count": 72,
+            "created_at": "2018-03-29T21:39:16Z",
+            "updated_at": "2018-03-29T21:39:17Z"
+          },
+          {
+            "url": "https://api.github.com/repos/discord/discord-rpc/releases/assets/6679269",
+            "id": 6679269,
+            "node_id": "MDEyOlJlbGVhc2VBc3NldDY2NzkyNjk=",
+            "name": "discord-rpc-win.zip",
+            "label": null,
+            "uploader": {
+              "login": "msciotti",
+              "id": 4193854,
+              "node_id": "MDQ6VXNlcjQxOTM4NTQ=",
+              "gravatar_id": "",
+              "url": "https://api.github.com/users/msciotti",
+              "type": "User",
+              "site_admin": false
+            },
+            "content_type": "application/zip",
+            "state": "uploaded",
+            "size": 538973,
+            "download_count": 480,
+            "created_at": "2018-03-29T21:39:16Z",
+            "updated_at": "2018-03-29T21:39:18Z"
+          }
+        ],
+        "body": "The previous release did not properly subscribe to events on `Discord_Initialize()` when passing registered event handlers. This release fixes that bug."
+      },
+      {
+        "url": "https://api.github.com/repos/discord/discord-rpc/releases/10235755",
+        "id": 10235755,
+        "author": {
+          "login": "msciotti",
+          "id": 4193854,
+          "node_id": "MDQ6VXNlcjQxOTM4NTQ=",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/msciotti",
+          "type": "User",
+          "site_admin": false
+        },
+        "node_id": "MDc6UmVsZWFzZTEwMjM1NzU1",
+        "tag_name": "v3.1.0",
+        "target_commitish": "master",
+        "name": "Dynamic Handler Registration",
+        "draft": false,
+        "prerelease": false,
+        "created_at": "2018-03-23T17:30:50Z",
+        "published_at": "2018-03-23T17:34:46Z",
+        "assets": [
+          {
+            "url": "https://api.github.com/repos/discord/discord-rpc/releases/assets/6613657",
+            "id": 6613657,
+            "node_id": "MDEyOlJlbGVhc2VBc3NldDY2MTM2NTc=",
+            "name": "discord-rpc-linux.zip",
+            "label": null,
+            "uploader": {
+              "login": "msciotti",
+              "id": 4193854,
+              "node_id": "MDQ6VXNlcjQxOTM4NTQ=",
+              "gravatar_id": "",
+              "url": "https://api.github.com/users/msciotti",
+              "type": "User",
+              "site_admin": false
+            },
+            "content_type": "application/zip",
+            "state": "uploaded",
+            "size": 409638,
+            "download_count": 36,
+            "created_at": "2018-03-23T17:34:24Z",
+            "updated_at": "2018-03-23T17:34:25Z"
+          },
+          {
+            "url": "https://api.github.com/repos/discord/discord-rpc/releases/assets/6613658",
+            "id": 6613658,
+            "node_id": "MDEyOlJlbGVhc2VBc3NldDY2MTM2NTg=",
+            "name": "discord-rpc-osx.zip",
+            "label": null,
+            "uploader": {
+              "login": "msciotti",
+              "id": 4193854,
+              "node_id": "MDQ6VXNlcjQxOTM4NTQ=",
+              "gravatar_id": "",
+              "url": "https://api.github.com/users/msciotti",
+              "type": "User",
+              "site_admin": false
+            },
+            "content_type": "application/zip",
+            "state": "uploaded",
+            "size": 274944,
+            "download_count": 38,
+            "created_at": "2018-03-23T17:34:24Z",
+            "updated_at": "2018-03-23T17:34:25Z"
+          },
+          {
+            "url": "https://api.github.com/repos/discord/discord-rpc/releases/assets/6613659",
+            "id": 6613659,
+            "node_id": "MDEyOlJlbGVhc2VBc3NldDY2MTM2NTk=",
+            "name": "discord-rpc-win.zip",
+            "label": null,
+            "uploader": {
+              "login": "msciotti",
+              "id": 4193854,
+              "node_id": "MDQ6VXNlcjQxOTM4NTQ=",
+              "gravatar_id": "",
+              "url": "https://api.github.com/users/msciotti",
+              "type": "User",
+              "site_admin": false
+            },
+            "content_type": "application/zip",
+            "state": "uploaded",
+            "size": 538026,
+            "download_count": 112,
+            "created_at": "2018-03-23T17:34:24Z",
+            "updated_at": "2018-03-23T17:34:25Z"
+          }
+        ],
+        "body": "This release exports the `Discord_UpdateHandlers()` function, which allows you to dynamically register and unregister event handlers outside of the initial `Discord_Initialize()` function. It also includes an updated certificate name for signing purposes, as well as some minor bug fixes.\r\n\r\n\r\n"
+      },
+      {
+        "url": "https://api.github.com/repos/discord/discord-rpc/releases/9863031",
+        "id": 9863031,
+        "author": {
+          "login": "msciotti",
+          "id": 4193854,
+          "node_id": "MDQ6VXNlcjQxOTM4NTQ=",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/msciotti",
+          "type": "User",
+          "site_admin": false
+        },
+        "node_id": "MDc6UmVsZWFzZTk4NjMwMzE=",
+        "tag_name": "v3.0.0",
+        "target_commitish": "master",
+        "name": "Bug Fixes, API Changes, Example Updates",
+        "draft": false,
+        "prerelease": false,
+        "created_at": "2018-02-27T21:34:12Z",
+        "published_at": "2018-02-27T21:49:53Z",
+        "assets": [
+          {
+            "url": "https://api.github.com/repos/discord/discord-rpc/releases/assets/6346513",
+            "id": 6346513,
+            "node_id": "MDEyOlJlbGVhc2VBc3NldDYzNDY1MTM=",
+            "name": "discord-rpc-linux.zip",
+            "label": null,
+            "uploader": {
+              "login": "msciotti",
+              "id": 4193854,
+              "node_id": "MDQ6VXNlcjQxOTM4NTQ=",
+              "gravatar_id": "",
+              "url": "https://api.github.com/users/msciotti",
+              "type": "User",
+              "site_admin": false
+            },
+            "content_type": "application/zip",
+            "state": "uploaded",
+            "size": 404976,
+            "download_count": 124,
+            "created_at": "2018-02-27T21:42:49Z",
+            "updated_at": "2018-02-27T21:42:50Z"
+          },
+          {
+            "url": "https://api.github.com/repos/discord/discord-rpc/releases/assets/6346514",
+            "id": 6346514,
+            "node_id": "MDEyOlJlbGVhc2VBc3NldDYzNDY1MTQ=",
+            "name": "discord-rpc-osx.zip",
+            "label": null,
+            "uploader": {
+              "login": "msciotti",
+              "id": 4193854,
+              "node_id": "MDQ6VXNlcjQxOTM4NTQ=",
+              "gravatar_id": "",
+              "url": "https://api.github.com/users/msciotti",
+              "type": "User",
+              "site_admin": false
+            },
+            "content_type": "application/zip",
+            "state": "uploaded",
+            "size": 268198,
+            "download_count": 456,
+            "created_at": "2018-02-27T21:42:49Z",
+            "updated_at": "2018-02-27T21:42:50Z"
+          },
+          {
+            "url": "https://api.github.com/repos/discord/discord-rpc/releases/assets/6346515",
+            "id": 6346515,
+            "node_id": "MDEyOlJlbGVhc2VBc3NldDYzNDY1MTU=",
+            "name": "discord-rpc-win.zip",
+            "label": null,
+            "uploader": {
+              "login": "msciotti",
+              "id": 4193854,
+              "node_id": "MDQ6VXNlcjQxOTM4NTQ=",
+              "gravatar_id": "",
+              "url": "https://api.github.com/users/msciotti",
+              "type": "User",
+              "site_admin": false
+            },
+            "content_type": "application/zip",
+            "state": "uploaded",
+            "size": 532741,
+            "download_count": 456,
+            "created_at": "2018-02-27T21:42:49Z",
+            "updated_at": "2018-02-27T21:42:50Z"
+          }
+        ],
+        "body": "**API Changes**\r\n\r\n- `Discord_Register` and `Discord_RegisterSteam` have been exported into their own header file `discord_register.h`\r\n\r\n- `partyMax` is now a mandatory field if you send `partySize` and will error otherwise\r\n\r\n**Bug Fixes**\r\n\r\n- Ongoing MinGW build support (fixes for segfaults, missing declarations)\r\n\r\n**Example Updates**\r\n\r\n- C# wrapper found in `examples/button-clicker/Assets` now includes custom serializer to properly handle unicode characters\r\n\r\n- `build.py` is now smarter about putting DLLs in the right places. Run `python build.py unity` or `python build.py unreal` for your project if you use those engines\r\n\r\n- UE4 example has been updated to include Ask to Join"
+      }
+    ],
+    "issues": [],
+    "pullRequests": []
+  }
+}

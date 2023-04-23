@@ -1,0 +1,587 @@
+{
+  "id": 51033256,
+  "node_id": "MDEwOlJlcG9zaXRvcnk1MTAzMzI1Ng==",
+  "name": "jiffy",
+  "full_name": "discord/jiffy",
+  "private": false,
+  "owner": {
+    "login": "discord",
+    "id": 1965106,
+    "node_id": "MDEyOk9yZ2FuaXphdGlvbjE5NjUxMDY=",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/discord",
+    "type": "Organization",
+    "site_admin": false
+  },
+  "description": "JSON NIFs for Erlang",
+  "fork": true,
+  "url": "https://api.github.com/repos/discord/jiffy",
+  "created_at": "2016-02-03T21:52:05Z",
+  "updated_at": "2022-05-17T20:03:15Z",
+  "pushed_at": "2022-05-17T21:43:26Z",
+  "homepage": "",
+  "size": 3781,
+  "stargazers_count": 6,
+  "watchers_count": 6,
+  "language": "C++",
+  "has_issues": false,
+  "has_projects": true,
+  "has_downloads": true,
+  "has_wiki": true,
+  "has_pages": false,
+  "has_discussions": false,
+  "forks_count": 4,
+  "archived": false,
+  "disabled": false,
+  "open_issues_count": 2,
+  "license": {
+    "key": "other",
+    "name": "Other",
+    "spdx_id": "NOASSERTION",
+    "url": null,
+    "node_id": "MDc6TGljZW5zZTA="
+  },
+  "allow_forking": true,
+  "is_template": false,
+  "web_commit_signoff_required": false,
+  "topics": [],
+  "visibility": "public",
+  "forks": 4,
+  "open_issues": 2,
+  "watchers": 6,
+  "default_branch": "master",
+  "permissions": {
+    "admin": false,
+    "maintain": false,
+    "push": false,
+    "triage": false,
+    "pull": false
+  },
+  "branches": [],
+  "last5": {
+    "commits": [
+      {
+        "sha": "8bd5d14c11bc13a049143f9314f128fb4ef3d246",
+        "node_id": "C_kwDOAwq0qNoAKDhiZDVkMTRjMTFiYzEzYTA0OTE0M2Y5MzE0ZjEyOGZiNGVmM2QyNDY",
+        "commit": {
+          "author": {
+            "name": "Brian Armstrong",
+            "email": "brian.armstrong@discordapp.com",
+            "date": "2022-05-17T21:43:13Z"
+          },
+          "committer": {
+            "name": "Brian Armstrong",
+            "email": "brian.armstrong@discordapp.com",
+            "date": "2022-05-17T21:43:13Z"
+          },
+          "message": "enc on R15b",
+          "tree": {
+            "sha": "abcbbb83635e38cc1b70340e48c68eef8f9bd7a1",
+            "url": "https://api.github.com/repos/discord/jiffy/git/trees/abcbbb83635e38cc1b70340e48c68eef8f9bd7a1"
+          },
+          "url": "https://api.github.com/repos/discord/jiffy/git/commits/8bd5d14c11bc13a049143f9314f128fb4ef3d246",
+          "comment_count": 0,
+          "verification": {
+            "verified": false,
+            "reason": "unsigned",
+            "signature": null,
+            "payload": null
+          }
+        },
+        "url": "https://api.github.com/repos/discord/jiffy/commits/8bd5d14c11bc13a049143f9314f128fb4ef3d246",
+        "author": {
+          "login": "brian-armstrong-discord",
+          "id": 25939803,
+          "node_id": "MDQ6VXNlcjI1OTM5ODAz",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/brian-armstrong-discord",
+          "type": "User",
+          "site_admin": false
+        },
+        "committer": {
+          "login": "brian-armstrong-discord",
+          "id": 25939803,
+          "node_id": "MDQ6VXNlcjI1OTM5ODAz",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/brian-armstrong-discord",
+          "type": "User",
+          "site_admin": false
+        },
+        "parents": [
+          {
+            "sha": "268cd79133170fa606ae75c502a2fd9d14227c31",
+            "url": "https://api.github.com/repos/discord/jiffy/commits/268cd79133170fa606ae75c502a2fd9d14227c31"
+          }
+        ]
+      },
+      {
+        "sha": "268cd79133170fa606ae75c502a2fd9d14227c31",
+        "node_id": "C_kwDOAwq0qNoAKDI2OGNkNzkxMzMxNzBmYTYwNmFlNzVjNTAyYTJmZDlkMTQyMjdjMzE",
+        "commit": {
+          "author": {
+            "name": "Brian Armstrong",
+            "email": "brian.armstrong@discordapp.com",
+            "date": "2022-05-17T20:03:00Z"
+          },
+          "committer": {
+            "name": "Brian Armstrong",
+            "email": "brian.armstrong@discordapp.com",
+            "date": "2022-05-17T20:03:00Z"
+          },
+          "message": "update enc",
+          "tree": {
+            "sha": "cc7a4edae936bce2ed70a6426c1aa57269d877d4",
+            "url": "https://api.github.com/repos/discord/jiffy/git/trees/cc7a4edae936bce2ed70a6426c1aa57269d877d4"
+          },
+          "url": "https://api.github.com/repos/discord/jiffy/git/commits/268cd79133170fa606ae75c502a2fd9d14227c31",
+          "comment_count": 0,
+          "verification": {
+            "verified": false,
+            "reason": "unsigned",
+            "signature": null,
+            "payload": null
+          }
+        },
+        "url": "https://api.github.com/repos/discord/jiffy/commits/268cd79133170fa606ae75c502a2fd9d14227c31",
+        "author": {
+          "login": "brian-armstrong-discord",
+          "id": 25939803,
+          "node_id": "MDQ6VXNlcjI1OTM5ODAz",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/brian-armstrong-discord",
+          "type": "User",
+          "site_admin": false
+        },
+        "committer": {
+          "login": "brian-armstrong-discord",
+          "id": 25939803,
+          "node_id": "MDQ6VXNlcjI1OTM5ODAz",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/brian-armstrong-discord",
+          "type": "User",
+          "site_admin": false
+        },
+        "parents": [
+          {
+            "sha": "39d3207f1c1d65b594c2c3188e99ea10f9029667",
+            "url": "https://api.github.com/repos/discord/jiffy/commits/39d3207f1c1d65b594c2c3188e99ea10f9029667"
+          }
+        ]
+      },
+      {
+        "sha": "39d3207f1c1d65b594c2c3188e99ea10f9029667",
+        "node_id": "MDY6Q29tbWl0NTEwMzMyNTY6MzlkMzIwN2YxYzFkNjViNTk0YzJjMzE4OGU5OWVhMTBmOTAyOTY2Nw==",
+        "commit": {
+          "author": {
+            "name": "ypisetsky",
+            "email": "yuliy.pisetsky@discordapp.com",
+            "date": "2021-06-15T21:10:49Z"
+          },
+          "committer": {
+            "name": "GitHub",
+            "email": "noreply@github.com",
+            "date": "2021-06-15T21:10:49Z"
+          },
+          "message": "Merge pull request #8 from discord/no_lto\n\ndont try to enable lto at all",
+          "tree": {
+            "sha": "7e4ea1e63c12f29e9ee2e98ce8c4e1dbda36a28a",
+            "url": "https://api.github.com/repos/discord/jiffy/git/trees/7e4ea1e63c12f29e9ee2e98ce8c4e1dbda36a28a"
+          },
+          "url": "https://api.github.com/repos/discord/jiffy/git/commits/39d3207f1c1d65b594c2c3188e99ea10f9029667",
+          "comment_count": 0,
+          "verification": {
+            "verified": true,
+            "reason": "valid",
+            "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsBcBAABCAAQBQJgyRdZCRBK7hj4Ov3rIwAAwlYIAAfod/HxRUeVtiZ/80/dkqu0\ndRBXBvRCk+Wdpktz2DMsv8mTGJPIfLw8rqKjj0yeF1vtOyMWp64tvE1XLcDVzmVP\nlHTX9fn21v5gq8cW3+9mNMMKOoLc8HRhHxg/4FYkIBeYb9d8ZhbAM9ET+znBGpDt\nzlp5UbMQv3GEk5zrlQ1UCLNGdXF+lk2kOMYrTL6PmZeD+IE5k89nbQ09MJJEHS80\nExSrebwTlM9ENA9Vnbkqg6tp+8S9ihKuOLTcR4HqSetGwCQkUQZBA/ohVAkyMRZm\nsLSYv+0VmvnyatAfa8Slx3w+xmOtLjIU+0CkIsTwCDXx5aXFoeapeQ4vWa9j3og=\n=L9mj\n-----END PGP SIGNATURE-----\n",
+            "payload": "tree 7e4ea1e63c12f29e9ee2e98ce8c4e1dbda36a28a\nparent a71845ce42f5e4f4609a019979919a0b3a7674f9\nparent 0b2f2e5db61cf4e5d7d7073fb610b52a96f4485b\nauthor ypisetsky <yuliy.pisetsky@discordapp.com> 1623791449 -0700\ncommitter GitHub <noreply@github.com> 1623791449 -0700\n\nMerge pull request #8 from discord/no_lto\n\ndont try to enable lto at all"
+          }
+        },
+        "url": "https://api.github.com/repos/discord/jiffy/commits/39d3207f1c1d65b594c2c3188e99ea10f9029667",
+        "author": {
+          "login": "ypisetsky",
+          "id": 287854,
+          "node_id": "MDQ6VXNlcjI4Nzg1NA==",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/ypisetsky",
+          "type": "User",
+          "site_admin": false
+        },
+        "committer": {
+          "login": "web-flow",
+          "id": 19864447,
+          "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/web-flow",
+          "type": "User",
+          "site_admin": false
+        },
+        "parents": [
+          {
+            "sha": "a71845ce42f5e4f4609a019979919a0b3a7674f9",
+            "url": "https://api.github.com/repos/discord/jiffy/commits/a71845ce42f5e4f4609a019979919a0b3a7674f9"
+          },
+          {
+            "sha": "0b2f2e5db61cf4e5d7d7073fb610b52a96f4485b",
+            "url": "https://api.github.com/repos/discord/jiffy/commits/0b2f2e5db61cf4e5d7d7073fb610b52a96f4485b"
+          }
+        ]
+      },
+      {
+        "sha": "0b2f2e5db61cf4e5d7d7073fb610b52a96f4485b",
+        "node_id": "MDY6Q29tbWl0NTEwMzMyNTY6MGIyZjJlNWRiNjFjZjRlNWQ3ZDcwNzNmYjYxMGI1MmE5NmY0NDg1Yg==",
+        "commit": {
+          "author": {
+            "name": "ypisetsky",
+            "email": "yuliy.pisetsky@discordapp.com",
+            "date": "2021-06-15T15:23:35Z"
+          },
+          "committer": {
+            "name": "ypisetsky",
+            "email": "yuliy.pisetsky@discordapp.com",
+            "date": "2021-06-15T17:05:50Z"
+          },
+          "message": "dont try to enable lto at all\n\nThis is causing some issues for some developers where they can compile files\nwith LTO, but linking fails. Our usage of JSON is small enough tha the small\noptimization loss isn't a big deal.",
+          "tree": {
+            "sha": "7e4ea1e63c12f29e9ee2e98ce8c4e1dbda36a28a",
+            "url": "https://api.github.com/repos/discord/jiffy/git/trees/7e4ea1e63c12f29e9ee2e98ce8c4e1dbda36a28a"
+          },
+          "url": "https://api.github.com/repos/discord/jiffy/git/commits/0b2f2e5db61cf4e5d7d7073fb610b52a96f4485b",
+          "comment_count": 0,
+          "verification": {
+            "verified": false,
+            "reason": "unsigned",
+            "signature": null,
+            "payload": null
+          }
+        },
+        "url": "https://api.github.com/repos/discord/jiffy/commits/0b2f2e5db61cf4e5d7d7073fb610b52a96f4485b",
+        "author": {
+          "login": "ypisetsky",
+          "id": 287854,
+          "node_id": "MDQ6VXNlcjI4Nzg1NA==",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/ypisetsky",
+          "type": "User",
+          "site_admin": false
+        },
+        "committer": {
+          "login": "ypisetsky",
+          "id": 287854,
+          "node_id": "MDQ6VXNlcjI4Nzg1NA==",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/ypisetsky",
+          "type": "User",
+          "site_admin": false
+        },
+        "parents": [
+          {
+            "sha": "a71845ce42f5e4f4609a019979919a0b3a7674f9",
+            "url": "https://api.github.com/repos/discord/jiffy/commits/a71845ce42f5e4f4609a019979919a0b3a7674f9"
+          }
+        ]
+      },
+      {
+        "sha": "a71845ce42f5e4f4609a019979919a0b3a7674f9",
+        "node_id": "MDY6Q29tbWl0NTEwMzMyNTY6YTcxODQ1Y2U0MmY1ZTRmNDYwOWEwMTk5Nzk5MTlhMGIzYTc2NzRmOQ==",
+        "commit": {
+          "author": {
+            "name": "brian-armstrong-discord",
+            "email": "brian.armstrong@discordapp.com",
+            "date": "2021-06-14T18:49:35Z"
+          },
+          "committer": {
+            "name": "GitHub",
+            "email": "noreply@github.com",
+            "date": "2021-06-14T18:49:35Z"
+          },
+          "message": "Merge pull request #7 from discord/bugfix/jiffy_encode_option_typespec\n\nmore options for encode()",
+          "tree": {
+            "sha": "54b033c4fefb07c47ea686319264e6111de5b425",
+            "url": "https://api.github.com/repos/discord/jiffy/git/trees/54b033c4fefb07c47ea686319264e6111de5b425"
+          },
+          "url": "https://api.github.com/repos/discord/jiffy/git/commits/a71845ce42f5e4f4609a019979919a0b3a7674f9",
+          "comment_count": 0,
+          "verification": {
+            "verified": true,
+            "reason": "valid",
+            "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsBcBAABCAAQBQJgx6S/CRBK7hj4Ov3rIwAARzwIAFIBsqpeYGZuUfWnleyeKNwj\nyH25ohtLpV2Aa5rSvmTH0Tr3xG5m8YxTGOtRHZvM0QIHvZh+5luLQsLf5eMVB0nx\nfByUZd9gSvzfh9WW4/T4fMktRrv9QAHhDwcSZGVT0hGCceXHpPLVh8X53eAu00Zz\nF53u2ntwmFDCgYSkb/LAiixGMRj3aOJ5heAoU45BggGnMoCZoH18KSchmw871TW8\n5yK0HVGA3XagKzmI1Y05fR5Rg8q5jaGjj5+1FlcTk6goa2aivkZeCuoi6EYNA1iT\nDHB/s5LMG/Osx4fRdMGo1Qramty0fftd74qccFm9T7ZQRaqnmi2Lij4VJFxPsjM=\n=oIy5\n-----END PGP SIGNATURE-----\n",
+            "payload": "tree 54b033c4fefb07c47ea686319264e6111de5b425\nparent 310585da0e6a2cf1f5faf42753ee598f8e28cfad\nparent f31f2866a63bcac643e23ab30d3dfa8b388dacb2\nauthor brian-armstrong-discord <brian.armstrong@discordapp.com> 1623696575 -0700\ncommitter GitHub <noreply@github.com> 1623696575 -0700\n\nMerge pull request #7 from discord/bugfix/jiffy_encode_option_typespec\n\nmore options for encode()"
+          }
+        },
+        "url": "https://api.github.com/repos/discord/jiffy/commits/a71845ce42f5e4f4609a019979919a0b3a7674f9",
+        "author": {
+          "login": "brian-armstrong-discord",
+          "id": 25939803,
+          "node_id": "MDQ6VXNlcjI1OTM5ODAz",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/brian-armstrong-discord",
+          "type": "User",
+          "site_admin": false
+        },
+        "committer": {
+          "login": "web-flow",
+          "id": 19864447,
+          "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/web-flow",
+          "type": "User",
+          "site_admin": false
+        },
+        "parents": [
+          {
+            "sha": "310585da0e6a2cf1f5faf42753ee598f8e28cfad",
+            "url": "https://api.github.com/repos/discord/jiffy/commits/310585da0e6a2cf1f5faf42753ee598f8e28cfad"
+          },
+          {
+            "sha": "f31f2866a63bcac643e23ab30d3dfa8b388dacb2",
+            "url": "https://api.github.com/repos/discord/jiffy/commits/f31f2866a63bcac643e23ab30d3dfa8b388dacb2"
+          }
+        ]
+      }
+    ],
+    "releases": [],
+    "issues": [
+      {
+        "url": "https://api.github.com/repos/discord/jiffy/issues/9",
+        "id": 956918044,
+        "node_id": "MDExOlB1bGxSZXF1ZXN0NzAwNDQxODEy",
+        "number": 9,
+        "title": "Nawrassedahman",
+        "user": {
+          "login": "NawrasseDahman",
+          "id": 83258662,
+          "node_id": "MDQ6VXNlcjgzMjU4NjYy",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/NawrasseDahman",
+          "type": "User",
+          "site_admin": false
+        },
+        "labels": [],
+        "state": "closed",
+        "locked": false,
+        "assignee": null,
+        "assignees": [],
+        "milestone": null,
+        "comments": 0,
+        "created_at": "2021-07-30T16:52:37Z",
+        "updated_at": "2021-08-03T22:56:34Z",
+        "closed_at": "2021-08-03T22:56:34Z",
+        "author_association": "NONE",
+        "active_lock_reason": null,
+        "draft": false,
+        "pull_request": {
+          "url": "https://api.github.com/repos/discord/jiffy/pulls/9",
+          "merged_at": null
+        },
+        "body": "Read My Pull Request It Very Important Because I Fixed Your Git ignore Tab",
+        "reactions": {
+          "url": "https://api.github.com/repos/discord/jiffy/issues/9/reactions",
+          "total_count": 0,
+          "+1": 0,
+          "-1": 0,
+          "laugh": 0,
+          "hooray": 0,
+          "confused": 0,
+          "heart": 0,
+          "rocket": 0,
+          "eyes": 0
+        },
+        "performed_via_github_app": null,
+        "state_reason": null
+      },
+      {
+        "url": "https://api.github.com/repos/discord/jiffy/issues/8",
+        "id": 921617347,
+        "node_id": "MDExOlB1bGxSZXF1ZXN0NjcwNTk0NTYw",
+        "number": 8,
+        "title": "dont try to enable lto at all",
+        "user": {
+          "login": "ypisetsky",
+          "id": 287854,
+          "node_id": "MDQ6VXNlcjI4Nzg1NA==",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/ypisetsky",
+          "type": "User",
+          "site_admin": false
+        },
+        "labels": [],
+        "state": "closed",
+        "locked": false,
+        "assignee": null,
+        "assignees": [],
+        "milestone": null,
+        "comments": 0,
+        "created_at": "2021-06-15T17:08:13Z",
+        "updated_at": "2022-04-08T20:17:51Z",
+        "closed_at": "2021-06-15T21:10:49Z",
+        "author_association": "NONE",
+        "active_lock_reason": null,
+        "draft": false,
+        "pull_request": {
+          "url": "https://api.github.com/repos/discord/jiffy/pulls/8",
+          "merged_at": "2021-06-15T21:10:49Z"
+        },
+        "body": "This is causing some issues for some developers where they can compile files\r\nwith LTO, but linking fails. Our usage of JSON is small enough that the small\r\noptimization loss isn't a big deal.",
+        "reactions": {
+          "url": "https://api.github.com/repos/discord/jiffy/issues/8/reactions",
+          "total_count": 0,
+          "+1": 0,
+          "-1": 0,
+          "laugh": 0,
+          "hooray": 0,
+          "confused": 0,
+          "heart": 0,
+          "rocket": 0,
+          "eyes": 0
+        },
+        "performed_via_github_app": null,
+        "state_reason": null
+      },
+      {
+        "url": "https://api.github.com/repos/discord/jiffy/issues/7",
+        "id": 919348236,
+        "node_id": "MDExOlB1bGxSZXF1ZXN0NjY4NjgzNjc5",
+        "number": 7,
+        "title": "more options for encode()",
+        "user": {
+          "login": "brian-armstrong-discord",
+          "id": 25939803,
+          "node_id": "MDQ6VXNlcjI1OTM5ODAz",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/brian-armstrong-discord",
+          "type": "User",
+          "site_admin": false
+        },
+        "labels": [],
+        "state": "closed",
+        "locked": false,
+        "assignee": null,
+        "assignees": [],
+        "milestone": null,
+        "comments": 0,
+        "created_at": "2021-06-12T01:09:36Z",
+        "updated_at": "2021-06-14T18:49:46Z",
+        "closed_at": "2021-06-14T18:49:35Z",
+        "author_association": "NONE",
+        "active_lock_reason": null,
+        "draft": false,
+        "pull_request": {
+          "url": "https://api.github.com/repos/discord/jiffy/pulls/7",
+          "merged_at": "2021-06-14T18:49:35Z"
+        },
+        "body": "",
+        "reactions": {
+          "url": "https://api.github.com/repos/discord/jiffy/issues/7/reactions",
+          "total_count": 0,
+          "+1": 0,
+          "-1": 0,
+          "laugh": 0,
+          "hooray": 0,
+          "confused": 0,
+          "heart": 0,
+          "rocket": 0,
+          "eyes": 0
+        },
+        "performed_via_github_app": null,
+        "state_reason": null
+      },
+      {
+        "url": "https://api.github.com/repos/discord/jiffy/issues/6",
+        "id": 897594906,
+        "node_id": "MDExOlB1bGxSZXF1ZXN0NjQ5NTg0OTgy",
+        "number": 6,
+        "title": "Merge 1.0.8",
+        "user": {
+          "login": "ypisetsky",
+          "id": 287854,
+          "node_id": "MDQ6VXNlcjI4Nzg1NA==",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/ypisetsky",
+          "type": "User",
+          "site_admin": false
+        },
+        "labels": [],
+        "state": "closed",
+        "locked": false,
+        "assignee": null,
+        "assignees": [],
+        "milestone": null,
+        "comments": 0,
+        "created_at": "2021-05-21T01:20:13Z",
+        "updated_at": "2021-05-22T00:40:37Z",
+        "closed_at": "2021-05-22T00:40:37Z",
+        "author_association": "NONE",
+        "active_lock_reason": null,
+        "draft": false,
+        "pull_request": {
+          "url": "https://api.github.com/repos/discord/jiffy/pulls/6",
+          "merged_at": "2021-05-22T00:40:37Z"
+        },
+        "body": "This is https://github.com/discord/jiffy/pull/5 just in the other direction. I had a few manual merge bits (enc_long is the most interesting of those).",
+        "reactions": {
+          "url": "https://api.github.com/repos/discord/jiffy/issues/6/reactions",
+          "total_count": 0,
+          "+1": 0,
+          "-1": 0,
+          "laugh": 0,
+          "hooray": 0,
+          "confused": 0,
+          "heart": 0,
+          "rocket": 0,
+          "eyes": 0
+        },
+        "performed_via_github_app": null,
+        "state_reason": null
+      },
+      {
+        "url": "https://api.github.com/repos/discord/jiffy/issues/5",
+        "id": 897574811,
+        "node_id": "MDExOlB1bGxSZXF1ZXN0NjQ5NTY4MDU2",
+        "number": 5,
+        "title": "Merge davisp/1.0.8",
+        "user": {
+          "login": "ypisetsky",
+          "id": 287854,
+          "node_id": "MDQ6VXNlcjI4Nzg1NA==",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/ypisetsky",
+          "type": "User",
+          "site_admin": false
+        },
+        "labels": [],
+        "state": "closed",
+        "locked": false,
+        "assignee": null,
+        "assignees": [],
+        "milestone": null,
+        "comments": 4,
+        "created_at": "2021-05-21T00:35:02Z",
+        "updated_at": "2021-05-29T00:10:05Z",
+        "closed_at": "2021-05-29T00:10:05Z",
+        "author_association": "NONE",
+        "active_lock_reason": null,
+        "draft": false,
+        "pull_request": {
+          "url": "https://api.github.com/repos/discord/jiffy/pulls/5",
+          "merged_at": null
+        },
+        "body": "This catches this repo up to upstream's 1.0.8 tag (around 4 years worth of changes/fixes). It maintains the patches that existed from before. I'm not convinced a merge commit is the best way to do this, but open to ideas.",
+        "reactions": {
+          "url": "https://api.github.com/repos/discord/jiffy/issues/5/reactions",
+          "total_count": 0,
+          "+1": 0,
+          "-1": 0,
+          "laugh": 0,
+          "hooray": 0,
+          "confused": 0,
+          "heart": 0,
+          "rocket": 0,
+          "eyes": 0
+        },
+        "performed_via_github_app": null,
+        "state_reason": null
+      }
+    ],
+    "pullRequests": []
+  }
+}

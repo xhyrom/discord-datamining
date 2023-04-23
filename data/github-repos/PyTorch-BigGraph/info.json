@@ -1,0 +1,419 @@
+{
+  "id": 294812860,
+  "node_id": "MDEwOlJlcG9zaXRvcnkyOTQ4MTI4NjA=",
+  "name": "PyTorch-BigGraph",
+  "full_name": "discord/PyTorch-BigGraph",
+  "private": false,
+  "owner": {
+    "login": "discord",
+    "id": 1965106,
+    "node_id": "MDEyOk9yZ2FuaXphdGlvbjE5NjUxMDY=",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/discord",
+    "type": "Organization",
+    "site_admin": false
+  },
+  "description": "Generate embeddings from large-scale graph-structured data.",
+  "fork": true,
+  "url": "https://api.github.com/repos/discord/PyTorch-BigGraph",
+  "created_at": "2020-09-11T21:10:18Z",
+  "updated_at": "2022-08-07T03:38:58Z",
+  "pushed_at": "2021-03-10T20:40:58Z",
+  "homepage": "https://torchbiggraph.readthedocs.io/",
+  "size": 555,
+  "stargazers_count": 5,
+  "watchers_count": 5,
+  "language": "Python",
+  "has_issues": false,
+  "has_projects": true,
+  "has_downloads": true,
+  "has_wiki": false,
+  "has_pages": false,
+  "has_discussions": false,
+  "forks_count": 5,
+  "archived": false,
+  "disabled": false,
+  "open_issues_count": 0,
+  "license": {
+    "key": "other",
+    "name": "Other",
+    "spdx_id": "NOASSERTION",
+    "url": null,
+    "node_id": "MDc6TGljZW5zZTA="
+  },
+  "allow_forking": true,
+  "is_template": false,
+  "web_commit_signoff_required": false,
+  "topics": [],
+  "visibility": "public",
+  "forks": 5,
+  "open_issues": 0,
+  "watchers": 5,
+  "default_branch": "master",
+  "permissions": {
+    "admin": false,
+    "maintain": false,
+    "push": false,
+    "triage": false,
+    "pull": false
+  },
+  "branches": [],
+  "last5": {
+    "commits": [
+      {
+        "sha": "b6ae9b1beab909183e9246a6d1a0a569669770e6",
+        "node_id": "MDY6Q29tbWl0Mjk0ODEyODYwOmI2YWU5YjFiZWFiOTA5MTgzZTkyNDZhNmQxYTBhNTY5NjY5NzcwZTY=",
+        "commit": {
+          "author": {
+            "name": "e-bartsch",
+            "email": "elliottbartsch@gmail.com",
+            "date": "2020-09-11T21:17:11Z"
+          },
+          "committer": {
+            "name": "e-bartsch",
+            "email": "elliottbartsch@gmail.com",
+            "date": "2021-03-10T20:37:26Z"
+          },
+          "message": "fix setup.py",
+          "tree": {
+            "sha": "7c40e56ff4297aa08d94f3911eed587ca67cd254",
+            "url": "https://api.github.com/repos/discord/PyTorch-BigGraph/git/trees/7c40e56ff4297aa08d94f3911eed587ca67cd254"
+          },
+          "url": "https://api.github.com/repos/discord/PyTorch-BigGraph/git/commits/b6ae9b1beab909183e9246a6d1a0a569669770e6",
+          "comment_count": 0,
+          "verification": {
+            "verified": false,
+            "reason": "unsigned",
+            "signature": null,
+            "payload": null
+          }
+        },
+        "url": "https://api.github.com/repos/discord/PyTorch-BigGraph/commits/b6ae9b1beab909183e9246a6d1a0a569669770e6",
+        "author": {
+          "login": "e-bartsch",
+          "id": 5252400,
+          "node_id": "MDQ6VXNlcjUyNTI0MDA=",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/e-bartsch",
+          "type": "User",
+          "site_admin": false
+        },
+        "committer": {
+          "login": "e-bartsch",
+          "id": 5252400,
+          "node_id": "MDQ6VXNlcjUyNTI0MDA=",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/e-bartsch",
+          "type": "User",
+          "site_admin": false
+        },
+        "parents": [
+          {
+            "sha": "4571deee78d0fff974a81312c0c3231d7dc96a69",
+            "url": "https://api.github.com/repos/discord/PyTorch-BigGraph/commits/4571deee78d0fff974a81312c0c3231d7dc96a69"
+          }
+        ]
+      },
+      {
+        "sha": "4571deee78d0fff974a81312c0c3231d7dc96a69",
+        "node_id": "MDY6Q29tbWl0Mjk0ODEyODYwOjQ1NzFkZWVlNzhkMGZmZjk3NGE4MTMxMmMwYzMyMzFkN2RjOTZhNjk=",
+        "commit": {
+          "author": {
+            "name": "Adam Lerer",
+            "email": "alerer@fb.com",
+            "date": "2021-01-19T22:26:00Z"
+          },
+          "committer": {
+            "name": "Facebook GitHub Bot",
+            "email": "facebook-github-bot@users.noreply.github.com",
+            "date": "2021-01-19T22:30:34Z"
+          },
+          "message": "Fix regularizers on GPU, fix test (#182)\n\nSummary:\nFix regularizers on GPU.\n\n- [ ] Docs change / refactoring / dependency upgrade\n- [x] Bug fix (non-breaking change which fixes an issue)\n- [ ] New feature (non-breaking change which adds functionality)\n- [ ] Breaking change (fix or feature that would cause existing functionality to change)\n\n## Motivation and Context / Related issue\n\nhttps://github.com/facebookresearch/PyTorch-BigGraph/issues/178\n\n## How Has This Been Tested (if it applies)\n\nFixed integration tests to catch the error. The GPU test was already running with regularization, but there were no operators so it wasn't getting caught.\n\n## Checklist\n\n- [x] The documentation is up-to-date with the changes I made.\n- [x] I have read the **CONTRIBUTING** document and completed the CLA (see **CONTRIBUTING**).\n- [x] All tests passed, and additional code has been covered with new tests.\n\nPull Request resolved: https://github.com/facebookresearch/PyTorch-BigGraph/pull/182\n\nReviewed By: lw\n\nDifferential Revision: D25930089\n\nPulled By: adamlerer\n\nfbshipit-source-id: 76e4138b6a84021f87bb0afc5d3303ff0cabe9cf",
+          "tree": {
+            "sha": "233de1e1e656738ef975b3cb7f44af3536aa7fc1",
+            "url": "https://api.github.com/repos/discord/PyTorch-BigGraph/git/trees/233de1e1e656738ef975b3cb7f44af3536aa7fc1"
+          },
+          "url": "https://api.github.com/repos/discord/PyTorch-BigGraph/git/commits/4571deee78d0fff974a81312c0c3231d7dc96a69",
+          "comment_count": 0,
+          "verification": {
+            "verified": false,
+            "reason": "unsigned",
+            "signature": null,
+            "payload": null
+          }
+        },
+        "url": "https://api.github.com/repos/discord/PyTorch-BigGraph/commits/4571deee78d0fff974a81312c0c3231d7dc96a69",
+        "author": {
+          "login": "adamlerer",
+          "id": 5702157,
+          "node_id": "MDQ6VXNlcjU3MDIxNTc=",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/adamlerer",
+          "type": "User",
+          "site_admin": false
+        },
+        "committer": {
+          "login": "facebook-github-bot",
+          "id": 6422482,
+          "node_id": "MDQ6VXNlcjY0MjI0ODI=",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/facebook-github-bot",
+          "type": "User",
+          "site_admin": false
+        },
+        "parents": [
+          {
+            "sha": "dfd307bbcff19b5ac11125aa4a7ee23caa394c8d",
+            "url": "https://api.github.com/repos/discord/PyTorch-BigGraph/commits/dfd307bbcff19b5ac11125aa4a7ee23caa394c8d"
+          }
+        ]
+      },
+      {
+        "sha": "dfd307bbcff19b5ac11125aa4a7ee23caa394c8d",
+        "node_id": "MDY6Q29tbWl0Mjk0ODEyODYwOmRmZDMwN2JiY2ZmMTliNWFjMTExMjVhYTRhN2VlMjNjYWEzOTRjOGQ=",
+        "commit": {
+          "author": {
+            "name": "Adam Lerer",
+            "email": "alerer@fb.com",
+            "date": "2020-12-18T18:06:12Z"
+          },
+          "committer": {
+            "name": "Facebook GitHub Bot",
+            "email": "facebook-github-bot@users.noreply.github.com",
+            "date": "2020-12-18T18:07:13Z"
+          },
+          "message": "Generate edge path files fast (#176)\n\nSummary:\n## Types of changes\n\nThis speeds up graph import by 5-20x (dataset dependent) by amortizing the cost of constructing an EntityList and calling `append` across multiple edges.\n\n- [ ] Docs change / refactoring / dependency upgrade\n- [x] Bug fix (non-breaking change which fixes an issue)\n- [ ] New feature (non-breaking change which adds functionality)\n- [ ] Breaking change (fix or feature that would cause existing functionality to change)\n\n## Motivation and Context / Related issue\n\nCurrently, graph importing is ~10k edges/sec, this speeds it up to ~100k edges/sec . This makes it possible to import reasonably sized graphs (10^7 - 10^8 edges) in <1h.\n\n## How Has This Been Tested (if it applies)\n\n$ python torchbiggraph/examples/livejournal.py\n\n## Checklist\n\n- [x] The documentation is up-to-date with the changes I made.\n- [x] I have read the **CONTRIBUTING** document and completed the CLA (see **CONTRIBUTING**).\n- [x] All tests passed, and additional code has been covered with new tests.\n\nPull Request resolved: https://github.com/facebookresearch/PyTorch-BigGraph/pull/176\n\nReviewed By: lw\n\nDifferential Revision: D25640046\n\nPulled By: adamlerer\n\nfbshipit-source-id: 022c4de1004b1218843acf79bf5bacb07811ed4c",
+          "tree": {
+            "sha": "bcbe6dcdfba8baaa7e1b067567a0a0ef23cbaabe",
+            "url": "https://api.github.com/repos/discord/PyTorch-BigGraph/git/trees/bcbe6dcdfba8baaa7e1b067567a0a0ef23cbaabe"
+          },
+          "url": "https://api.github.com/repos/discord/PyTorch-BigGraph/git/commits/dfd307bbcff19b5ac11125aa4a7ee23caa394c8d",
+          "comment_count": 0,
+          "verification": {
+            "verified": false,
+            "reason": "unsigned",
+            "signature": null,
+            "payload": null
+          }
+        },
+        "url": "https://api.github.com/repos/discord/PyTorch-BigGraph/commits/dfd307bbcff19b5ac11125aa4a7ee23caa394c8d",
+        "author": {
+          "login": "adamlerer",
+          "id": 5702157,
+          "node_id": "MDQ6VXNlcjU3MDIxNTc=",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/adamlerer",
+          "type": "User",
+          "site_admin": false
+        },
+        "committer": {
+          "login": "facebook-github-bot",
+          "id": 6422482,
+          "node_id": "MDQ6VXNlcjY0MjI0ODI=",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/facebook-github-bot",
+          "type": "User",
+          "site_admin": false
+        },
+        "parents": [
+          {
+            "sha": "3c57f3d1578e0db4d5229e62a948e774ddc1310a",
+            "url": "https://api.github.com/repos/discord/PyTorch-BigGraph/commits/3c57f3d1578e0db4d5229e62a948e774ddc1310a"
+          }
+        ]
+      },
+      {
+        "sha": "3c57f3d1578e0db4d5229e62a948e774ddc1310a",
+        "node_id": "MDY6Q29tbWl0Mjk0ODEyODYwOjNjNTdmM2QxNTc4ZTBkYjRkNTIyOWU2MmE5NDhlNzc0ZGRjMTMxMGE=",
+        "commit": {
+          "author": {
+            "name": "Guanghua Chi",
+            "email": "gchi@fb.com",
+            "date": "2020-12-02T18:05:15Z"
+          },
+          "committer": {
+            "name": "Facebook GitHub Bot",
+            "email": "facebook-github-bot@users.noreply.github.com",
+            "date": "2020-12-02T18:06:46Z"
+          },
+          "message": "fix the number of embedding_storage for unpartitioned entities that exist in both lhs and rhs\n\nSummary: Allocating shared memory is expensive. We do this once at the beginning and then cache these storages and re-use them repeatedly during training. hence we need to estimate how many storages we need and the case of 1x1 partitions is handled poorly (because, it's rather rare) and the code decides it needs two storages for the those entities that appear on both sides but are alwasys the same partition on both sides. So only one storage is needed.\n\nReviewed By: lw\n\nDifferential Revision: D25179561\n\nfbshipit-source-id: 1b3f9b896efb6127bcf03e8154bc26e8875e8553",
+          "tree": {
+            "sha": "6280a74a5902e16fce9d6049cb24aea9e3ba54f4",
+            "url": "https://api.github.com/repos/discord/PyTorch-BigGraph/git/trees/6280a74a5902e16fce9d6049cb24aea9e3ba54f4"
+          },
+          "url": "https://api.github.com/repos/discord/PyTorch-BigGraph/git/commits/3c57f3d1578e0db4d5229e62a948e774ddc1310a",
+          "comment_count": 0,
+          "verification": {
+            "verified": false,
+            "reason": "unsigned",
+            "signature": null,
+            "payload": null
+          }
+        },
+        "url": "https://api.github.com/repos/discord/PyTorch-BigGraph/commits/3c57f3d1578e0db4d5229e62a948e774ddc1310a",
+        "author": null,
+        "committer": {
+          "login": "facebook-github-bot",
+          "id": 6422482,
+          "node_id": "MDQ6VXNlcjY0MjI0ODI=",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/facebook-github-bot",
+          "type": "User",
+          "site_admin": false
+        },
+        "parents": [
+          {
+            "sha": "1518b072d5d22080951b991f468ab13944107fa1",
+            "url": "https://api.github.com/repos/discord/PyTorch-BigGraph/commits/1518b072d5d22080951b991f468ab13944107fa1"
+          }
+        ]
+      },
+      {
+        "sha": "1518b072d5d22080951b991f468ab13944107fa1",
+        "node_id": "MDY6Q29tbWl0Mjk0ODEyODYwOjE1MThiMDcyZDVkMjIwODA5NTFiOTkxZjQ2OGFiMTM5NDQxMDdmYTE=",
+        "commit": {
+          "author": {
+            "name": "Erik Brinkman",
+            "email": "erk@fb.com",
+            "date": "2020-11-30T22:23:53Z"
+          },
+          "committer": {
+            "name": "Facebook GitHub Bot",
+            "email": "facebook-github-bot@users.noreply.github.com",
+            "date": "2020-11-30T22:25:41Z"
+          },
+          "message": "Add shared to load_chunk_of_edges interface\n\nSummary: this appears to be part of the actual interface, and is expected to be had, but isn't mandated by the interface, this corrects the interface\n\nReviewed By: lw\n\nDifferential Revision: D25137228\n\nfbshipit-source-id: 689fb37bf4304174de80e3c3555b8171e263040e",
+          "tree": {
+            "sha": "b00829c898187b35681c5870448b595da2c7bcc6",
+            "url": "https://api.github.com/repos/discord/PyTorch-BigGraph/git/trees/b00829c898187b35681c5870448b595da2c7bcc6"
+          },
+          "url": "https://api.github.com/repos/discord/PyTorch-BigGraph/git/commits/1518b072d5d22080951b991f468ab13944107fa1",
+          "comment_count": 0,
+          "verification": {
+            "verified": false,
+            "reason": "unsigned",
+            "signature": null,
+            "payload": null
+          }
+        },
+        "url": "https://api.github.com/repos/discord/PyTorch-BigGraph/commits/1518b072d5d22080951b991f468ab13944107fa1",
+        "author": null,
+        "committer": {
+          "login": "facebook-github-bot",
+          "id": 6422482,
+          "node_id": "MDQ6VXNlcjY0MjI0ODI=",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/facebook-github-bot",
+          "type": "User",
+          "site_admin": false
+        },
+        "parents": [
+          {
+            "sha": "76fce83ee776b87a6896b572fcdd3dd6023a097a",
+            "url": "https://api.github.com/repos/discord/PyTorch-BigGraph/commits/76fce83ee776b87a6896b572fcdd3dd6023a097a"
+          }
+        ]
+      }
+    ],
+    "releases": [],
+    "issues": [
+      {
+        "url": "https://api.github.com/repos/discord/PyTorch-BigGraph/issues/2",
+        "id": 703059283,
+        "node_id": "MDExOlB1bGxSZXF1ZXN0NDg4MjMzMTgy",
+        "number": 2,
+        "title": "remove unnecessary data check",
+        "user": {
+          "login": "e-bartsch",
+          "id": 5252400,
+          "node_id": "MDQ6VXNlcjUyNTI0MDA=",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/e-bartsch",
+          "type": "User",
+          "site_admin": false
+        },
+        "labels": [],
+        "state": "closed",
+        "locked": false,
+        "assignee": null,
+        "assignees": [],
+        "milestone": null,
+        "comments": 0,
+        "created_at": "2020-09-16T20:40:02Z",
+        "updated_at": "2022-01-06T18:01:58Z",
+        "closed_at": "2022-01-06T18:01:58Z",
+        "author_association": "COLLABORATOR",
+        "active_lock_reason": null,
+        "draft": false,
+        "pull_request": {
+          "url": "https://api.github.com/repos/discord/PyTorch-BigGraph/pulls/2",
+          "merged_at": null
+        },
+        "body": "",
+        "reactions": {
+          "url": "https://api.github.com/repos/discord/PyTorch-BigGraph/issues/2/reactions",
+          "total_count": 0,
+          "+1": 0,
+          "-1": 0,
+          "laugh": 0,
+          "hooray": 0,
+          "confused": 0,
+          "heart": 0,
+          "rocket": 0,
+          "eyes": 0
+        },
+        "performed_via_github_app": null,
+        "state_reason": null
+      },
+      {
+        "url": "https://api.github.com/repos/discord/PyTorch-BigGraph/issues/1",
+        "id": 699760123,
+        "node_id": "MDExOlB1bGxSZXF1ZXN0NDg1NDY5MjM3",
+        "number": 1,
+        "title": "fix setup.py",
+        "user": {
+          "login": "e-bartsch",
+          "id": 5252400,
+          "node_id": "MDQ6VXNlcjUyNTI0MDA=",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/e-bartsch",
+          "type": "User",
+          "site_admin": false
+        },
+        "labels": [],
+        "state": "closed",
+        "locked": false,
+        "assignee": null,
+        "assignees": [],
+        "milestone": null,
+        "comments": 0,
+        "created_at": "2020-09-11T21:19:55Z",
+        "updated_at": "2020-09-11T21:20:13Z",
+        "closed_at": "2020-09-11T21:20:13Z",
+        "author_association": "COLLABORATOR",
+        "active_lock_reason": null,
+        "draft": false,
+        "pull_request": {
+          "url": "https://api.github.com/repos/discord/PyTorch-BigGraph/pulls/1",
+          "merged_at": "2020-09-11T21:20:12Z"
+        },
+        "body": "",
+        "reactions": {
+          "url": "https://api.github.com/repos/discord/PyTorch-BigGraph/issues/1/reactions",
+          "total_count": 0,
+          "+1": 0,
+          "-1": 0,
+          "laugh": 0,
+          "hooray": 0,
+          "confused": 0,
+          "heart": 0,
+          "rocket": 0,
+          "eyes": 0
+        },
+        "performed_via_github_app": null,
+        "state_reason": null
+      }
+    ],
+    "pullRequests": []
+  }
+}

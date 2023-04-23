@@ -1,0 +1,338 @@
+{
+  "id": 105593857,
+  "node_id": "MDEwOlJlcG9zaXRvcnkxMDU1OTM4NTc=",
+  "name": "react-dnd",
+  "full_name": "discord/react-dnd",
+  "private": false,
+  "owner": {
+    "login": "discord",
+    "id": 1965106,
+    "node_id": "MDEyOk9yZ2FuaXphdGlvbjE5NjUxMDY=",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/discord",
+    "type": "Organization",
+    "site_admin": false
+  },
+  "description": "Drag and Drop for React",
+  "fork": true,
+  "url": "https://api.github.com/repos/discord/react-dnd",
+  "created_at": "2017-10-02T23:02:09Z",
+  "updated_at": "2022-12-13T11:29:44Z",
+  "pushed_at": "2019-06-07T05:14:11Z",
+  "homepage": "http://react-dnd.github.io/react-dnd",
+  "size": 30698,
+  "stargazers_count": 7,
+  "watchers_count": 7,
+  "language": "JavaScript",
+  "has_issues": false,
+  "has_projects": true,
+  "has_downloads": true,
+  "has_wiki": true,
+  "has_pages": false,
+  "has_discussions": false,
+  "forks_count": 3,
+  "archived": false,
+  "disabled": false,
+  "open_issues_count": 0,
+  "license": {
+    "key": "other",
+    "name": "Other",
+    "spdx_id": "NOASSERTION",
+    "url": null,
+    "node_id": "MDc6TGljZW5zZTA="
+  },
+  "allow_forking": true,
+  "is_template": false,
+  "web_commit_signoff_required": false,
+  "topics": [],
+  "visibility": "public",
+  "forks": 3,
+  "open_issues": 0,
+  "watchers": 7,
+  "default_branch": "master",
+  "permissions": {
+    "admin": false,
+    "maintain": false,
+    "push": false,
+    "triage": false,
+    "pull": false
+  },
+  "branches": [],
+  "last5": {
+    "commits": [
+      {
+        "sha": "52633a2b0ef36bc7d90f25fdd977025138cefcd5",
+        "node_id": "MDY6Q29tbWl0MTA1NTkzODU3OjUyNjMzYTJiMGVmMzZiYzdkOTBmMjVmZGQ5NzcwMjUxMzhjZWZjZDU=",
+        "commit": {
+          "author": {
+            "name": "Chris Trevino",
+            "email": "darthtrevino@gmail.com",
+            "date": "2017-09-27T02:04:54Z"
+          },
+          "committer": {
+            "name": "Chris Trevino",
+            "email": "darthtrevino@gmail.com",
+            "date": "2017-09-27T02:04:54Z"
+          },
+          "message": "v2.5.3",
+          "tree": {
+            "sha": "5f53540ee2188d1b3545ee4dd4f10d3eb8445bf1",
+            "url": "https://api.github.com/repos/discord/react-dnd/git/trees/5f53540ee2188d1b3545ee4dd4f10d3eb8445bf1"
+          },
+          "url": "https://api.github.com/repos/discord/react-dnd/git/commits/52633a2b0ef36bc7d90f25fdd977025138cefcd5",
+          "comment_count": 0,
+          "verification": {
+            "verified": false,
+            "reason": "unsigned",
+            "signature": null,
+            "payload": null
+          }
+        },
+        "url": "https://api.github.com/repos/discord/react-dnd/commits/52633a2b0ef36bc7d90f25fdd977025138cefcd5",
+        "author": {
+          "login": "darthtrevino",
+          "id": 113544,
+          "node_id": "MDQ6VXNlcjExMzU0NA==",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/darthtrevino",
+          "type": "User",
+          "site_admin": false
+        },
+        "committer": {
+          "login": "darthtrevino",
+          "id": 113544,
+          "node_id": "MDQ6VXNlcjExMzU0NA==",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/darthtrevino",
+          "type": "User",
+          "site_admin": false
+        },
+        "parents": [
+          {
+            "sha": "3be2d950a1189d93101febcd78f93f1c8a0ee257",
+            "url": "https://api.github.com/repos/discord/react-dnd/commits/3be2d950a1189d93101febcd78f93f1c8a0ee257"
+          }
+        ]
+      },
+      {
+        "sha": "3be2d950a1189d93101febcd78f93f1c8a0ee257",
+        "node_id": "MDY6Q29tbWl0MTA1NTkzODU3OjNiZTJkOTUwYTExODlkOTMxMDFmZWJjZDc4ZjkzZjFjOGEwZWUyNTc=",
+        "commit": {
+          "author": {
+            "name": "Chris Trevino",
+            "email": "darthtrevino@users.noreply.github.com",
+            "date": "2017-09-27T02:02:59Z"
+          },
+          "committer": {
+            "name": "GitHub",
+            "email": "noreply@github.com",
+            "date": "2017-09-27T02:02:59Z"
+          },
+          "message": "Update some deprecated references (#892)\n\n* Update some deprecated references\r\n\r\n* There were some react/lib/x imports in the examples, replacing those with the recommended 'immutability-helper'.\r\n* Updating react-hot-loader\r\n* Adding a LICENSE file to the top-level project. Correcting SPDX license fields across the packages.\r\n\r\n* Update SPDX field\r\n\r\n* Remove commented-out lines",
+          "tree": {
+            "sha": "1c7271f46b36b4ff0a4ee65b438aba134a341aa5",
+            "url": "https://api.github.com/repos/discord/react-dnd/git/trees/1c7271f46b36b4ff0a4ee65b438aba134a341aa5"
+          },
+          "url": "https://api.github.com/repos/discord/react-dnd/git/commits/3be2d950a1189d93101febcd78f93f1c8a0ee257",
+          "comment_count": 0,
+          "verification": {
+            "verified": false,
+            "reason": "unsigned",
+            "signature": null,
+            "payload": null
+          }
+        },
+        "url": "https://api.github.com/repos/discord/react-dnd/commits/3be2d950a1189d93101febcd78f93f1c8a0ee257",
+        "author": {
+          "login": "darthtrevino",
+          "id": 113544,
+          "node_id": "MDQ6VXNlcjExMzU0NA==",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/darthtrevino",
+          "type": "User",
+          "site_admin": false
+        },
+        "committer": {
+          "login": "web-flow",
+          "id": 19864447,
+          "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/web-flow",
+          "type": "User",
+          "site_admin": false
+        },
+        "parents": [
+          {
+            "sha": "12a1d6978055550661e693e551866c45cfa51f0a",
+            "url": "https://api.github.com/repos/discord/react-dnd/commits/12a1d6978055550661e693e551866c45cfa51f0a"
+          }
+        ]
+      },
+      {
+        "sha": "12a1d6978055550661e693e551866c45cfa51f0a",
+        "node_id": "MDY6Q29tbWl0MTA1NTkzODU3OjEyYTFkNjk3ODA1NTU1MDY2MWU2OTNlNTUxODY2YzQ1Y2ZhNTFmMGE=",
+        "commit": {
+          "author": {
+            "name": "Chris Trevino",
+            "email": "darthtrevino@gmail.com",
+            "date": "2017-09-27T01:33:08Z"
+          },
+          "committer": {
+            "name": "Chris Trevino",
+            "email": "darthtrevino@gmail.com",
+            "date": "2017-09-27T01:33:08Z"
+          },
+          "message": "v2.5.2",
+          "tree": {
+            "sha": "f2a5e4716e048cce11611c1eb39cf58416e40015",
+            "url": "https://api.github.com/repos/discord/react-dnd/git/trees/f2a5e4716e048cce11611c1eb39cf58416e40015"
+          },
+          "url": "https://api.github.com/repos/discord/react-dnd/git/commits/12a1d6978055550661e693e551866c45cfa51f0a",
+          "comment_count": 0,
+          "verification": {
+            "verified": false,
+            "reason": "unsigned",
+            "signature": null,
+            "payload": null
+          }
+        },
+        "url": "https://api.github.com/repos/discord/react-dnd/commits/12a1d6978055550661e693e551866c45cfa51f0a",
+        "author": {
+          "login": "darthtrevino",
+          "id": 113544,
+          "node_id": "MDQ6VXNlcjExMzU0NA==",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/darthtrevino",
+          "type": "User",
+          "site_admin": false
+        },
+        "committer": {
+          "login": "darthtrevino",
+          "id": 113544,
+          "node_id": "MDQ6VXNlcjExMzU0NA==",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/darthtrevino",
+          "type": "User",
+          "site_admin": false
+        },
+        "parents": [
+          {
+            "sha": "2dbac3a0a5f22a07d7f0b5fe2af4c21320dd4f3d",
+            "url": "https://api.github.com/repos/discord/react-dnd/commits/2dbac3a0a5f22a07d7f0b5fe2af4c21320dd4f3d"
+          }
+        ]
+      },
+      {
+        "sha": "2dbac3a0a5f22a07d7f0b5fe2af4c21320dd4f3d",
+        "node_id": "MDY6Q29tbWl0MTA1NTkzODU3OjJkYmFjM2EwYTVmMjJhMDdkN2YwYjVmZTJhZjRjMjEzMjBkZDRmM2Q=",
+        "commit": {
+          "author": {
+            "name": "Peter Lenahan",
+            "email": "Krirken@gmail.com",
+            "date": "2017-09-25T18:16:34Z"
+          },
+          "committer": {
+            "name": "Chris Trevino",
+            "email": "darthtrevino@users.noreply.github.com",
+            "date": "2017-09-25T18:16:34Z"
+          },
+          "message": "Remove peerDependency in `react-dnd-html5-backend` depending on `react-dnd` in order to use with `preact-dnd`. (#884)",
+          "tree": {
+            "sha": "b3d44c976c55b789442d817da1e4fd109f5a4456",
+            "url": "https://api.github.com/repos/discord/react-dnd/git/trees/b3d44c976c55b789442d817da1e4fd109f5a4456"
+          },
+          "url": "https://api.github.com/repos/discord/react-dnd/git/commits/2dbac3a0a5f22a07d7f0b5fe2af4c21320dd4f3d",
+          "comment_count": 0,
+          "verification": {
+            "verified": false,
+            "reason": "unsigned",
+            "signature": null,
+            "payload": null
+          }
+        },
+        "url": "https://api.github.com/repos/discord/react-dnd/commits/2dbac3a0a5f22a07d7f0b5fe2af4c21320dd4f3d",
+        "author": {
+          "login": "pl12133",
+          "id": 12724311,
+          "node_id": "MDQ6VXNlcjEyNzI0MzEx",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/pl12133",
+          "type": "User",
+          "site_admin": false
+        },
+        "committer": {
+          "login": "darthtrevino",
+          "id": 113544,
+          "node_id": "MDQ6VXNlcjExMzU0NA==",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/darthtrevino",
+          "type": "User",
+          "site_admin": false
+        },
+        "parents": [
+          {
+            "sha": "c6123fad317c95589b980d1b41a9eb4efa40ab08",
+            "url": "https://api.github.com/repos/discord/react-dnd/commits/c6123fad317c95589b980d1b41a9eb4efa40ab08"
+          }
+        ]
+      },
+      {
+        "sha": "c6123fad317c95589b980d1b41a9eb4efa40ab08",
+        "node_id": "MDY6Q29tbWl0MTA1NTkzODU3OmM2MTIzZmFkMzE3Yzk1NTg5Yjk4MGQxYjQxYTllYjRlZmE0MGFiMDg=",
+        "commit": {
+          "author": {
+            "name": "Renaud Chaput",
+            "email": "renchap@gmail.com",
+            "date": "2017-09-25T18:13:39Z"
+          },
+          "committer": {
+            "name": "Chris Trevino",
+            "email": "darthtrevino@users.noreply.github.com",
+            "date": "2017-09-25T18:13:39Z"
+          },
+          "message": "Add React 16 to peer dependencies (#860)\n\n* Add React 16 to peer dependencies\r\n\r\n* Update `react` and `react-dom` to React 16 in dev dependencies",
+          "tree": {
+            "sha": "34a181cfcec79d8b0ea5caf482762f41cf08c042",
+            "url": "https://api.github.com/repos/discord/react-dnd/git/trees/34a181cfcec79d8b0ea5caf482762f41cf08c042"
+          },
+          "url": "https://api.github.com/repos/discord/react-dnd/git/commits/c6123fad317c95589b980d1b41a9eb4efa40ab08",
+          "comment_count": 0,
+          "verification": {
+            "verified": false,
+            "reason": "unsigned",
+            "signature": null,
+            "payload": null
+          }
+        },
+        "url": "https://api.github.com/repos/discord/react-dnd/commits/c6123fad317c95589b980d1b41a9eb4efa40ab08",
+        "author": {
+          "login": "renchap",
+          "id": 42070,
+          "node_id": "MDQ6VXNlcjQyMDcw",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/renchap",
+          "type": "User",
+          "site_admin": false
+        },
+        "committer": {
+          "login": "darthtrevino",
+          "id": 113544,
+          "node_id": "MDQ6VXNlcjExMzU0NA==",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/darthtrevino",
+          "type": "User",
+          "site_admin": false
+        },
+        "parents": [
+          {
+            "sha": "05d98000b7574bf3b2a1eb40e10a57681f6b0909",
+            "url": "https://api.github.com/repos/discord/react-dnd/commits/05d98000b7574bf3b2a1eb40e10a57681f6b0909"
+          }
+        ]
+      }
+    ],
+    "releases": [],
+    "issues": [],
+    "pullRequests": []
+  }
+}
