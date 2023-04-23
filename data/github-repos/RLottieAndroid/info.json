@@ -331,7 +331,123 @@
         ]
       }
     ],
-    "releases": [],
+    "releases": [
+      {
+        "url": "https://api.github.com/repos/discord/RLottieAndroid/releases/50784092",
+        "id": 50784092,
+        "author": {
+          "login": "mrkcsc",
+          "id": 658964,
+          "node_id": "MDQ6VXNlcjY1ODk2NA==",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/mrkcsc",
+          "type": "User",
+          "site_admin": false
+        },
+        "node_id": "RE_kwDOGJDNJ84DBudc",
+        "tag_name": "v1.0.6",
+        "target_commitish": "main",
+        "name": "v1.0.6",
+        "draft": false,
+        "prerelease": false,
+        "created_at": "2021-10-05T02:38:51Z",
+        "published_at": "2021-10-05T02:41:05Z",
+        "assets": [],
+        "body": "Drop inclusion of the sample project since it will cause duplicate resource pro guard errors."
+      },
+      {
+        "url": "https://api.github.com/repos/discord/RLottieAndroid/releases/50776632",
+        "id": 50776632,
+        "author": {
+          "login": "jkcailteux",
+          "id": 2236167,
+          "node_id": "MDQ6VXNlcjIyMzYxNjc=",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/jkcailteux",
+          "type": "User",
+          "site_admin": false
+        },
+        "node_id": "RE_kwDOGJDNJ84DBso4",
+        "tag_name": "v1.0.5",
+        "target_commitish": "main",
+        "name": "v1.0.5 Downgrade Deps for Lint",
+        "draft": false,
+        "prerelease": false,
+        "created_at": "2021-10-04T22:27:44Z",
+        "published_at": "2021-10-04T22:28:55Z",
+        "assets": [],
+        "body": ""
+      },
+      {
+        "url": "https://api.github.com/repos/discord/RLottieAndroid/releases/50664365",
+        "id": 50664365,
+        "author": {
+          "login": "jkcailteux",
+          "id": 2236167,
+          "node_id": "MDQ6VXNlcjIyMzYxNjc=",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/jkcailteux",
+          "type": "User",
+          "site_admin": false
+        },
+        "node_id": "RE_kwDOGJDNJ84DBROt",
+        "tag_name": "v1.0.4",
+        "target_commitish": "main",
+        "name": "1.0.4 Init Method",
+        "draft": false,
+        "prerelease": false,
+        "created_at": "2021-10-01T22:16:53Z",
+        "published_at": "2021-10-01T22:17:51Z",
+        "assets": [],
+        "body": "Adds init method"
+      },
+      {
+        "url": "https://api.github.com/repos/discord/RLottieAndroid/releases/50647638",
+        "id": 50647638,
+        "author": {
+          "login": "jkcailteux",
+          "id": 2236167,
+          "node_id": "MDQ6VXNlcjIyMzYxNjc=",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/jkcailteux",
+          "type": "User",
+          "site_admin": false
+        },
+        "node_id": "RE_kwDOGJDNJ84DBNJW",
+        "tag_name": "v1.0.3",
+        "target_commitish": "main",
+        "name": "v1.0.3 Release (Open Classes)",
+        "draft": false,
+        "prerelease": false,
+        "created_at": "2021-10-01T16:30:09Z",
+        "published_at": "2021-10-01T16:31:15Z",
+        "assets": [],
+        "body": "Allows for Rlottie classes to be extended"
+      },
+      {
+        "url": "https://api.github.com/repos/discord/RLottieAndroid/releases/50573550",
+        "id": 50573550,
+        "author": {
+          "login": "jkcailteux",
+          "id": 2236167,
+          "node_id": "MDQ6VXNlcjIyMzYxNjc=",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/jkcailteux",
+          "type": "User",
+          "site_admin": false
+        },
+        "node_id": "RE_kwDOGJDNJ84DA7Du",
+        "tag_name": "v1.0.2",
+        "target_commitish": "main",
+        "name": "v1.0.2 Release",
+        "draft": false,
+        "prerelease": false,
+        "created_at": "2021-09-30T18:19:09Z",
+        "published_at": "2021-09-30T18:19:59Z",
+        "assets": [],
+        "body": "Uses NDK that matches jitpack's internal NDK"
+      }
+    ],
     "issues": [],
     "pullRequests": []
   }
