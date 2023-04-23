@@ -1,7 +1,7 @@
-import version from "./version.js";
+import { hash, buildNumber } from "./version.js";
 import { scripts, stylesheets } from "./files.js";
 import { beautifiedScripts, beautifiedStylesheets } from "./contents.js";
-import { info } from "./logger.mjs";
+import { info, success } from "./logger.mjs";
 import { namilize } from "./utils.js";
 
 import { mkdir, readFile, rmdir, writeFile } from "node:fs/promises";
@@ -11,11 +11,13 @@ import { error } from "node:console";
 
 const git = simpleGit();
 
-const versionInFile = await readFile(join("data", "version.txt"), "utf-8");
-if (versionInFile === version) {
+const hashInFile = await readFile(join("data", "hash.txt"), "utf-8");
+if (hashInFile === hash) {
   info("No changes");
   process.exit(0);
 }
+
+info(`New build ${buildNumber} (${hash}) 🚀`);
 
 // remove all files in data/scripts and data/stylesheets
 await rmdir(join("data", "scripts"), { recursive: true }).catch(() => {});
@@ -24,7 +26,7 @@ await rmdir(join("data", "stylesheets"), { recursive: true }).catch(() => {});
 await mkdir(join("data", "scripts"), { recursive: true }).catch(() => {});
 await mkdir(join("data", "stylesheets"), { recursive: true }).catch(() => {});
 
-await writeFile(join("data", "version.txt"), version);
+await writeFile(join("data", "hash.txt"), hash);
 
 for (const script of scripts) {
   const name = namilize(script);
@@ -84,13 +86,15 @@ const months = [
 await git.commit([
   `${date.getDate()} ${
     months[date.getMonth()]
-  } ${date.getFullYear()} - ${version} 🚀`,
+  } ${date.getFullYear()} - Build ${buildNumber} (${hash}) 🚀`,
   `Scripts (${scripts.length}):\n${scripts
     .map((script) => namilize(script))
     .join("\n")}`,
   `Stylesheets (${stylesheets.length}):\n${stylesheets
     .map((stylesheet) => namilize(stylesheet))
     .join("\n")}`,
+  `Build Number: ${buildNumber}\nHash: ${hash}`,
 ]);
 
 await git.push("origin", "master");
+success(`Successfully pushed a new build ${buildNumber} (${hash}) 🚀`);
