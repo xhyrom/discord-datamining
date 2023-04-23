@@ -57,7 +57,32 @@
     "triage": false,
     "pull": false
   },
-  "branches": [],
+  "branches": [
+    {
+      "name": "gh-pages",
+      "commit": {
+        "sha": "5e0f490c138f301a408da95d6d5590319ddcc29b",
+        "url": "https://api.github.com/repos/discord/stderrlog-rs/commits/5e0f490c138f301a408da95d6d5590319ddcc29b"
+      },
+      "protected": false
+    },
+    {
+      "name": "master",
+      "commit": {
+        "sha": "8dcb34682b73b2f1ae575530e14ccf83a40b1b81",
+        "url": "https://api.github.com/repos/discord/stderrlog-rs/commits/8dcb34682b73b2f1ae575530e14ccf83a40b1b81"
+      },
+      "protected": false
+    },
+    {
+      "name": "v0.2.x",
+      "commit": {
+        "sha": "ff9e6e10cd2db1be4fbaeccbb56f2704f3902eae",
+        "url": "https://api.github.com/repos/discord/stderrlog-rs/commits/ff9e6e10cd2db1be4fbaeccbb56f2704f3902eae"
+      },
+      "protected": false
+    }
+  ],
   "last5": {
     "commits": [
       {

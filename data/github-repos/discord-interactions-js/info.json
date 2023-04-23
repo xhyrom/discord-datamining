@@ -558,6 +558,987 @@
         "state_reason": null
       }
     ],
-    "pullRequests": []
+    "pullRequests": [
+      {
+        "url": "https://api.github.com/repos/discord/discord-interactions-js/pulls/35",
+        "id": 1086688988,
+        "node_id": "PR_kwDOEwqdus5AxY7c",
+        "number": 35,
+        "state": "closed",
+        "locked": false,
+        "title": "Add new select menu components",
+        "user": {
+          "login": "shaydewael",
+          "id": 3411005,
+          "node_id": "MDQ6VXNlcjM0MTEwMDU=",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/shaydewael",
+          "type": "User",
+          "site_admin": false
+        },
+        "body": "I used a parent type for selects and `Omit`s (rather than an intersection) so that the type hints could be flat, rather than have the properties spread across two distinct types. Open to changing or finding another approach",
+        "created_at": "2022-10-13T22:00:44Z",
+        "updated_at": "2023-01-26T17:08:33Z",
+        "closed_at": "2023-01-26T17:08:33Z",
+        "merged_at": "2023-01-26T17:08:33Z",
+        "merge_commit_sha": "b5aef3599b2f3ed2400cf20f4b39d19bf192978c",
+        "assignee": null,
+        "assignees": [],
+        "requested_reviewers": [
+          {
+            "login": "typpo",
+            "id": 310310,
+            "node_id": "MDQ6VXNlcjMxMDMxMA==",
+            "gravatar_id": "",
+            "url": "https://api.github.com/users/typpo",
+            "type": "User",
+            "site_admin": false
+          }
+        ],
+        "requested_teams": [],
+        "labels": [],
+        "milestone": null,
+        "draft": false,
+        "head": {
+          "label": "shaydewael:add-new-select-menu-components",
+          "ref": "add-new-select-menu-components",
+          "sha": "25100071dce12a004d7b837beb5706e008dab52d",
+          "user": {
+            "login": "shaydewael",
+            "id": 3411005,
+            "node_id": "MDQ6VXNlcjM0MTEwMDU=",
+            "gravatar_id": "",
+            "url": "https://api.github.com/users/shaydewael",
+            "type": "User",
+            "site_admin": false
+          },
+          "repo": {
+            "id": 465515235,
+            "node_id": "R_kgDOG78y4w",
+            "name": "discord-interactions-js",
+            "full_name": "shaydewael/discord-interactions-js",
+            "private": false,
+            "owner": {
+              "login": "shaydewael",
+              "id": 3411005,
+              "node_id": "MDQ6VXNlcjM0MTEwMDU=",
+              "gravatar_id": "",
+              "url": "https://api.github.com/users/shaydewael",
+              "type": "User",
+              "site_admin": false
+            },
+            "description": "JS/Node helpers for Discord Interactions ",
+            "fork": true,
+            "url": "https://api.github.com/repos/shaydewael/discord-interactions-js",
+            "created_at": "2022-03-03T00:36:52Z",
+            "updated_at": "2023-01-25T17:48:31Z",
+            "pushed_at": "2023-01-26T01:16:21Z",
+            "homepage": "",
+            "size": 159,
+            "stargazers_count": 1,
+            "watchers_count": 1,
+            "language": "TypeScript",
+            "has_issues": false,
+            "has_projects": true,
+            "has_downloads": true,
+            "has_wiki": true,
+            "has_pages": false,
+            "has_discussions": false,
+            "forks_count": 0,
+            "archived": false,
+            "disabled": false,
+            "open_issues_count": 0,
+            "license": {
+              "key": "mit",
+              "name": "MIT License",
+              "spdx_id": "MIT",
+              "url": "https://api.github.com/licenses/mit",
+              "node_id": "MDc6TGljZW5zZTEz"
+            },
+            "allow_forking": true,
+            "is_template": false,
+            "web_commit_signoff_required": false,
+            "topics": [],
+            "visibility": "public",
+            "forks": 0,
+            "open_issues": 0,
+            "watchers": 1,
+            "default_branch": "main"
+          }
+        },
+        "base": {
+          "label": "discord:main",
+          "ref": "main",
+          "sha": "c86bf337a0589ec5d91ea58b33e4036baf89b7d5",
+          "user": {
+            "login": "discord",
+            "id": 1965106,
+            "node_id": "MDEyOk9yZ2FuaXphdGlvbjE5NjUxMDY=",
+            "gravatar_id": "",
+            "url": "https://api.github.com/users/discord",
+            "type": "Organization",
+            "site_admin": false
+          },
+          "repo": {
+            "id": 319462842,
+            "node_id": "MDEwOlJlcG9zaXRvcnkzMTk0NjI4NDI=",
+            "name": "discord-interactions-js",
+            "full_name": "discord/discord-interactions-js",
+            "private": false,
+            "owner": {
+              "login": "discord",
+              "id": 1965106,
+              "node_id": "MDEyOk9yZ2FuaXphdGlvbjE5NjUxMDY=",
+              "gravatar_id": "",
+              "url": "https://api.github.com/users/discord",
+              "type": "Organization",
+              "site_admin": false
+            },
+            "description": "JS/Node helpers for Discord Interactions ",
+            "fork": false,
+            "url": "https://api.github.com/repos/discord/discord-interactions-js",
+            "created_at": "2020-12-07T22:40:30Z",
+            "updated_at": "2023-04-23T13:20:02Z",
+            "pushed_at": "2023-01-27T17:13:35Z",
+            "homepage": "",
+            "size": 158,
+            "stargazers_count": 258,
+            "watchers_count": 258,
+            "language": "TypeScript",
+            "has_issues": true,
+            "has_projects": true,
+            "has_downloads": true,
+            "has_wiki": true,
+            "has_pages": false,
+            "has_discussions": false,
+            "forks_count": 70,
+            "archived": false,
+            "disabled": false,
+            "open_issues_count": 8,
+            "license": {
+              "key": "mit",
+              "name": "MIT License",
+              "spdx_id": "MIT",
+              "url": "https://api.github.com/licenses/mit",
+              "node_id": "MDc6TGljZW5zZTEz"
+            },
+            "allow_forking": true,
+            "is_template": false,
+            "web_commit_signoff_required": false,
+            "topics": [],
+            "visibility": "public",
+            "forks": 70,
+            "open_issues": 8,
+            "watchers": 258,
+            "default_branch": "main"
+          }
+        },
+        "_links": {
+          "self": {
+            "href": "https://api.github.com/repos/discord/discord-interactions-js/pulls/35"
+          },
+          "html": {
+            "href": "https://github.com/discord/discord-interactions-js/pull/35"
+          },
+          "issue": {
+            "href": "https://api.github.com/repos/discord/discord-interactions-js/issues/35"
+          },
+          "comments": {
+            "href": "https://api.github.com/repos/discord/discord-interactions-js/issues/35/comments"
+          },
+          "review_comments": {
+            "href": "https://api.github.com/repos/discord/discord-interactions-js/pulls/35/comments"
+          },
+          "review_comment": {
+            "href": "https://api.github.com/repos/discord/discord-interactions-js/pulls/comments{/number}"
+          },
+          "commits": {
+            "href": "https://api.github.com/repos/discord/discord-interactions-js/pulls/35/commits"
+          },
+          "statuses": {
+            "href": "https://api.github.com/repos/discord/discord-interactions-js/statuses/25100071dce12a004d7b837beb5706e008dab52d"
+          }
+        },
+        "author_association": "CONTRIBUTOR",
+        "auto_merge": null,
+        "active_lock_reason": null
+      },
+      {
+        "url": "https://api.github.com/repos/discord/discord-interactions-js/pulls/34",
+        "id": 1002697132,
+        "node_id": "PR_kwDOEwqdus47w_Gs",
+        "number": 34,
+        "state": "closed",
+        "locked": false,
+        "title": "matching JSDoc with options in verifyKey",
+        "user": {
+          "login": "TigerbyteDev",
+          "id": 69903408,
+          "node_id": "MDQ6VXNlcjY5OTAzNDA4",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/TigerbyteDev",
+          "type": "User",
+          "site_admin": false
+        },
+        "body": "In JSDoc it's called rawBody, but in the options just body. Now both are named the same, which improves code-analysis in some IDEs.",
+        "created_at": "2022-07-20T18:13:30Z",
+        "updated_at": "2022-07-20T18:41:39Z",
+        "closed_at": "2022-07-20T18:41:38Z",
+        "merged_at": "2022-07-20T18:41:38Z",
+        "merge_commit_sha": "c86bf337a0589ec5d91ea58b33e4036baf89b7d5",
+        "assignee": null,
+        "assignees": [],
+        "requested_reviewers": [],
+        "requested_teams": [],
+        "labels": [],
+        "milestone": null,
+        "draft": false,
+        "head": {
+          "label": "TigerbyteDev:patch-1",
+          "ref": "patch-1",
+          "sha": "9ae7dcb3a73e5e942780bfccba7f52145b43968b",
+          "user": {
+            "login": "TigerbyteDev",
+            "id": 69903408,
+            "node_id": "MDQ6VXNlcjY5OTAzNDA4",
+            "gravatar_id": "",
+            "url": "https://api.github.com/users/TigerbyteDev",
+            "type": "User",
+            "site_admin": false
+          },
+          "repo": {
+            "id": 516088382,
+            "node_id": "R_kgDOHsLiPg",
+            "name": "discord-interactions-js",
+            "full_name": "TigerbyteDev/discord-interactions-js",
+            "private": false,
+            "owner": {
+              "login": "TigerbyteDev",
+              "id": 69903408,
+              "node_id": "MDQ6VXNlcjY5OTAzNDA4",
+              "gravatar_id": "",
+              "url": "https://api.github.com/users/TigerbyteDev",
+              "type": "User",
+              "site_admin": false
+            },
+            "description": "JS/Node helpers for Discord Interactions ",
+            "fork": true,
+            "url": "https://api.github.com/repos/TigerbyteDev/discord-interactions-js",
+            "created_at": "2022-07-20T18:11:24Z",
+            "updated_at": "2022-07-19T20:41:03Z",
+            "pushed_at": "2022-07-20T18:12:22Z",
+            "homepage": "",
+            "size": 157,
+            "stargazers_count": 0,
+            "watchers_count": 0,
+            "language": null,
+            "has_issues": false,
+            "has_projects": true,
+            "has_downloads": true,
+            "has_wiki": true,
+            "has_pages": false,
+            "has_discussions": false,
+            "forks_count": 0,
+            "archived": false,
+            "disabled": false,
+            "open_issues_count": 0,
+            "license": {
+              "key": "mit",
+              "name": "MIT License",
+              "spdx_id": "MIT",
+              "url": "https://api.github.com/licenses/mit",
+              "node_id": "MDc6TGljZW5zZTEz"
+            },
+            "allow_forking": true,
+            "is_template": false,
+            "web_commit_signoff_required": false,
+            "topics": [],
+            "visibility": "public",
+            "forks": 0,
+            "open_issues": 0,
+            "watchers": 0,
+            "default_branch": "main"
+          }
+        },
+        "base": {
+          "label": "discord:main",
+          "ref": "main",
+          "sha": "052dafce3fc621627e656a32cd8917fc0d504500",
+          "user": {
+            "login": "discord",
+            "id": 1965106,
+            "node_id": "MDEyOk9yZ2FuaXphdGlvbjE5NjUxMDY=",
+            "gravatar_id": "",
+            "url": "https://api.github.com/users/discord",
+            "type": "Organization",
+            "site_admin": false
+          },
+          "repo": {
+            "id": 319462842,
+            "node_id": "MDEwOlJlcG9zaXRvcnkzMTk0NjI4NDI=",
+            "name": "discord-interactions-js",
+            "full_name": "discord/discord-interactions-js",
+            "private": false,
+            "owner": {
+              "login": "discord",
+              "id": 1965106,
+              "node_id": "MDEyOk9yZ2FuaXphdGlvbjE5NjUxMDY=",
+              "gravatar_id": "",
+              "url": "https://api.github.com/users/discord",
+              "type": "Organization",
+              "site_admin": false
+            },
+            "description": "JS/Node helpers for Discord Interactions ",
+            "fork": false,
+            "url": "https://api.github.com/repos/discord/discord-interactions-js",
+            "created_at": "2020-12-07T22:40:30Z",
+            "updated_at": "2023-04-23T13:20:02Z",
+            "pushed_at": "2023-01-27T17:13:35Z",
+            "homepage": "",
+            "size": 158,
+            "stargazers_count": 258,
+            "watchers_count": 258,
+            "language": "TypeScript",
+            "has_issues": true,
+            "has_projects": true,
+            "has_downloads": true,
+            "has_wiki": true,
+            "has_pages": false,
+            "has_discussions": false,
+            "forks_count": 70,
+            "archived": false,
+            "disabled": false,
+            "open_issues_count": 8,
+            "license": {
+              "key": "mit",
+              "name": "MIT License",
+              "spdx_id": "MIT",
+              "url": "https://api.github.com/licenses/mit",
+              "node_id": "MDc6TGljZW5zZTEz"
+            },
+            "allow_forking": true,
+            "is_template": false,
+            "web_commit_signoff_required": false,
+            "topics": [],
+            "visibility": "public",
+            "forks": 70,
+            "open_issues": 8,
+            "watchers": 258,
+            "default_branch": "main"
+          }
+        },
+        "_links": {
+          "self": {
+            "href": "https://api.github.com/repos/discord/discord-interactions-js/pulls/34"
+          },
+          "html": {
+            "href": "https://github.com/discord/discord-interactions-js/pull/34"
+          },
+          "issue": {
+            "href": "https://api.github.com/repos/discord/discord-interactions-js/issues/34"
+          },
+          "comments": {
+            "href": "https://api.github.com/repos/discord/discord-interactions-js/issues/34/comments"
+          },
+          "review_comments": {
+            "href": "https://api.github.com/repos/discord/discord-interactions-js/pulls/34/comments"
+          },
+          "review_comment": {
+            "href": "https://api.github.com/repos/discord/discord-interactions-js/pulls/comments{/number}"
+          },
+          "commits": {
+            "href": "https://api.github.com/repos/discord/discord-interactions-js/pulls/34/commits"
+          },
+          "statuses": {
+            "href": "https://api.github.com/repos/discord/discord-interactions-js/statuses/9ae7dcb3a73e5e942780bfccba7f52145b43968b"
+          }
+        },
+        "author_association": "CONTRIBUTOR",
+        "auto_merge": null,
+        "active_lock_reason": null
+      },
+      {
+        "url": "https://api.github.com/repos/discord/discord-interactions-js/pulls/33",
+        "id": 998374310,
+        "node_id": "PR_kwDOEwqdus47gfum",
+        "number": 33,
+        "state": "closed",
+        "locked": false,
+        "title": "Fix modal enum member names",
+        "user": {
+          "login": "advaith1",
+          "id": 11778454,
+          "node_id": "MDQ6VXNlcjExNzc4NDU0",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/advaith1",
+          "type": "User",
+          "site_admin": false
+        },
+        "body": "The interaction type is `MODAL_SUBMIT` and the interaction response type is `MODAL`",
+        "created_at": "2022-07-16T07:41:44Z",
+        "updated_at": "2022-07-18T23:45:48Z",
+        "closed_at": "2022-07-18T23:44:43Z",
+        "merged_at": "2022-07-18T23:44:43Z",
+        "merge_commit_sha": "052dafce3fc621627e656a32cd8917fc0d504500",
+        "assignee": null,
+        "assignees": [],
+        "requested_reviewers": [],
+        "requested_teams": [],
+        "labels": [],
+        "milestone": null,
+        "draft": false,
+        "head": {
+          "label": "advaith1:patch-1",
+          "ref": "patch-1",
+          "sha": "c51e4d4d0c45a157f2b5e61e6a7764b8dd04d92a",
+          "user": {
+            "login": "advaith1",
+            "id": 11778454,
+            "node_id": "MDQ6VXNlcjExNzc4NDU0",
+            "gravatar_id": "",
+            "url": "https://api.github.com/users/advaith1",
+            "type": "User",
+            "site_admin": false
+          },
+          "repo": {
+            "id": 514511945,
+            "node_id": "R_kgDOHqrUSQ",
+            "name": "discord-interactions-js",
+            "full_name": "advaith1/discord-interactions-js",
+            "private": false,
+            "owner": {
+              "login": "advaith1",
+              "id": 11778454,
+              "node_id": "MDQ6VXNlcjExNzc4NDU0",
+              "gravatar_id": "",
+              "url": "https://api.github.com/users/advaith1",
+              "type": "User",
+              "site_admin": false
+            },
+            "description": "JS/Node helpers for Discord Interactions ",
+            "fork": true,
+            "url": "https://api.github.com/repos/advaith1/discord-interactions-js",
+            "created_at": "2022-07-16T07:39:24Z",
+            "updated_at": "2022-07-13T11:04:15Z",
+            "pushed_at": "2022-07-18T23:45:47Z",
+            "homepage": "",
+            "size": 150,
+            "stargazers_count": 0,
+            "watchers_count": 0,
+            "language": null,
+            "has_issues": false,
+            "has_projects": true,
+            "has_downloads": true,
+            "has_wiki": true,
+            "has_pages": false,
+            "has_discussions": false,
+            "forks_count": 0,
+            "archived": false,
+            "disabled": false,
+            "open_issues_count": 0,
+            "license": {
+              "key": "mit",
+              "name": "MIT License",
+              "spdx_id": "MIT",
+              "url": "https://api.github.com/licenses/mit",
+              "node_id": "MDc6TGljZW5zZTEz"
+            },
+            "allow_forking": true,
+            "is_template": false,
+            "web_commit_signoff_required": false,
+            "topics": [],
+            "visibility": "public",
+            "forks": 0,
+            "open_issues": 0,
+            "watchers": 0,
+            "default_branch": "main"
+          }
+        },
+        "base": {
+          "label": "discord:main",
+          "ref": "main",
+          "sha": "4c34efc599b12da4a522882eccb2ec6dbbff6bcf",
+          "user": {
+            "login": "discord",
+            "id": 1965106,
+            "node_id": "MDEyOk9yZ2FuaXphdGlvbjE5NjUxMDY=",
+            "gravatar_id": "",
+            "url": "https://api.github.com/users/discord",
+            "type": "Organization",
+            "site_admin": false
+          },
+          "repo": {
+            "id": 319462842,
+            "node_id": "MDEwOlJlcG9zaXRvcnkzMTk0NjI4NDI=",
+            "name": "discord-interactions-js",
+            "full_name": "discord/discord-interactions-js",
+            "private": false,
+            "owner": {
+              "login": "discord",
+              "id": 1965106,
+              "node_id": "MDEyOk9yZ2FuaXphdGlvbjE5NjUxMDY=",
+              "gravatar_id": "",
+              "url": "https://api.github.com/users/discord",
+              "type": "Organization",
+              "site_admin": false
+            },
+            "description": "JS/Node helpers for Discord Interactions ",
+            "fork": false,
+            "url": "https://api.github.com/repos/discord/discord-interactions-js",
+            "created_at": "2020-12-07T22:40:30Z",
+            "updated_at": "2023-04-23T13:20:02Z",
+            "pushed_at": "2023-01-27T17:13:35Z",
+            "homepage": "",
+            "size": 158,
+            "stargazers_count": 258,
+            "watchers_count": 258,
+            "language": "TypeScript",
+            "has_issues": true,
+            "has_projects": true,
+            "has_downloads": true,
+            "has_wiki": true,
+            "has_pages": false,
+            "has_discussions": false,
+            "forks_count": 70,
+            "archived": false,
+            "disabled": false,
+            "open_issues_count": 8,
+            "license": {
+              "key": "mit",
+              "name": "MIT License",
+              "spdx_id": "MIT",
+              "url": "https://api.github.com/licenses/mit",
+              "node_id": "MDc6TGljZW5zZTEz"
+            },
+            "allow_forking": true,
+            "is_template": false,
+            "web_commit_signoff_required": false,
+            "topics": [],
+            "visibility": "public",
+            "forks": 70,
+            "open_issues": 8,
+            "watchers": 258,
+            "default_branch": "main"
+          }
+        },
+        "_links": {
+          "self": {
+            "href": "https://api.github.com/repos/discord/discord-interactions-js/pulls/33"
+          },
+          "html": {
+            "href": "https://github.com/discord/discord-interactions-js/pull/33"
+          },
+          "issue": {
+            "href": "https://api.github.com/repos/discord/discord-interactions-js/issues/33"
+          },
+          "comments": {
+            "href": "https://api.github.com/repos/discord/discord-interactions-js/issues/33/comments"
+          },
+          "review_comments": {
+            "href": "https://api.github.com/repos/discord/discord-interactions-js/pulls/33/comments"
+          },
+          "review_comment": {
+            "href": "https://api.github.com/repos/discord/discord-interactions-js/pulls/comments{/number}"
+          },
+          "commits": {
+            "href": "https://api.github.com/repos/discord/discord-interactions-js/pulls/33/commits"
+          },
+          "statuses": {
+            "href": "https://api.github.com/repos/discord/discord-interactions-js/statuses/c51e4d4d0c45a157f2b5e61e6a7764b8dd04d92a"
+          }
+        },
+        "author_association": "CONTRIBUTOR",
+        "auto_merge": null,
+        "active_lock_reason": null
+      },
+      {
+        "url": "https://api.github.com/repos/discord/discord-interactions-js/pulls/32",
+        "id": 903059754,
+        "node_id": "PR_kwDOEwqdus4105kq",
+        "number": 32,
+        "state": "closed",
+        "locked": false,
+        "title": "Adds component types",
+        "user": {
+          "login": "shaydewael",
+          "id": 3411005,
+          "node_id": "MDQ6VXNlcjM0MTEwMDU=",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/shaydewael",
+          "type": "User",
+          "site_admin": false
+        },
+        "body": "Add message component types to make it easier to construct responses to interactions",
+        "created_at": "2022-04-07T18:10:59Z",
+        "updated_at": "2022-04-07T23:01:21Z",
+        "closed_at": "2022-04-07T23:01:17Z",
+        "merged_at": "2022-04-07T23:01:17Z",
+        "merge_commit_sha": "430c72d61d377ae936b213ffd45d60f58c92e99b",
+        "assignee": null,
+        "assignees": [],
+        "requested_reviewers": [],
+        "requested_teams": [],
+        "labels": [],
+        "milestone": null,
+        "draft": false,
+        "head": {
+          "label": "shaydewael:add-message-component-types",
+          "ref": "add-message-component-types",
+          "sha": "9dbee656e71bf233311ab065fdd11240712213a8",
+          "user": {
+            "login": "shaydewael",
+            "id": 3411005,
+            "node_id": "MDQ6VXNlcjM0MTEwMDU=",
+            "gravatar_id": "",
+            "url": "https://api.github.com/users/shaydewael",
+            "type": "User",
+            "site_admin": false
+          },
+          "repo": {
+            "id": 465515235,
+            "node_id": "R_kgDOG78y4w",
+            "name": "discord-interactions-js",
+            "full_name": "shaydewael/discord-interactions-js",
+            "private": false,
+            "owner": {
+              "login": "shaydewael",
+              "id": 3411005,
+              "node_id": "MDQ6VXNlcjM0MTEwMDU=",
+              "gravatar_id": "",
+              "url": "https://api.github.com/users/shaydewael",
+              "type": "User",
+              "site_admin": false
+            },
+            "description": "JS/Node helpers for Discord Interactions ",
+            "fork": true,
+            "url": "https://api.github.com/repos/shaydewael/discord-interactions-js",
+            "created_at": "2022-03-03T00:36:52Z",
+            "updated_at": "2023-01-25T17:48:31Z",
+            "pushed_at": "2023-01-26T01:16:21Z",
+            "homepage": "",
+            "size": 159,
+            "stargazers_count": 1,
+            "watchers_count": 1,
+            "language": "TypeScript",
+            "has_issues": false,
+            "has_projects": true,
+            "has_downloads": true,
+            "has_wiki": true,
+            "has_pages": false,
+            "has_discussions": false,
+            "forks_count": 0,
+            "archived": false,
+            "disabled": false,
+            "open_issues_count": 0,
+            "license": {
+              "key": "mit",
+              "name": "MIT License",
+              "spdx_id": "MIT",
+              "url": "https://api.github.com/licenses/mit",
+              "node_id": "MDc6TGljZW5zZTEz"
+            },
+            "allow_forking": true,
+            "is_template": false,
+            "web_commit_signoff_required": false,
+            "topics": [],
+            "visibility": "public",
+            "forks": 0,
+            "open_issues": 0,
+            "watchers": 1,
+            "default_branch": "main"
+          }
+        },
+        "base": {
+          "label": "discord:main",
+          "ref": "main",
+          "sha": "2f593ba4342e54c06a20f7821dc081bb2138b73b",
+          "user": {
+            "login": "discord",
+            "id": 1965106,
+            "node_id": "MDEyOk9yZ2FuaXphdGlvbjE5NjUxMDY=",
+            "gravatar_id": "",
+            "url": "https://api.github.com/users/discord",
+            "type": "Organization",
+            "site_admin": false
+          },
+          "repo": {
+            "id": 319462842,
+            "node_id": "MDEwOlJlcG9zaXRvcnkzMTk0NjI4NDI=",
+            "name": "discord-interactions-js",
+            "full_name": "discord/discord-interactions-js",
+            "private": false,
+            "owner": {
+              "login": "discord",
+              "id": 1965106,
+              "node_id": "MDEyOk9yZ2FuaXphdGlvbjE5NjUxMDY=",
+              "gravatar_id": "",
+              "url": "https://api.github.com/users/discord",
+              "type": "Organization",
+              "site_admin": false
+            },
+            "description": "JS/Node helpers for Discord Interactions ",
+            "fork": false,
+            "url": "https://api.github.com/repos/discord/discord-interactions-js",
+            "created_at": "2020-12-07T22:40:30Z",
+            "updated_at": "2023-04-23T13:20:02Z",
+            "pushed_at": "2023-01-27T17:13:35Z",
+            "homepage": "",
+            "size": 158,
+            "stargazers_count": 258,
+            "watchers_count": 258,
+            "language": "TypeScript",
+            "has_issues": true,
+            "has_projects": true,
+            "has_downloads": true,
+            "has_wiki": true,
+            "has_pages": false,
+            "has_discussions": false,
+            "forks_count": 70,
+            "archived": false,
+            "disabled": false,
+            "open_issues_count": 8,
+            "license": {
+              "key": "mit",
+              "name": "MIT License",
+              "spdx_id": "MIT",
+              "url": "https://api.github.com/licenses/mit",
+              "node_id": "MDc6TGljZW5zZTEz"
+            },
+            "allow_forking": true,
+            "is_template": false,
+            "web_commit_signoff_required": false,
+            "topics": [],
+            "visibility": "public",
+            "forks": 70,
+            "open_issues": 8,
+            "watchers": 258,
+            "default_branch": "main"
+          }
+        },
+        "_links": {
+          "self": {
+            "href": "https://api.github.com/repos/discord/discord-interactions-js/pulls/32"
+          },
+          "html": {
+            "href": "https://github.com/discord/discord-interactions-js/pull/32"
+          },
+          "issue": {
+            "href": "https://api.github.com/repos/discord/discord-interactions-js/issues/32"
+          },
+          "comments": {
+            "href": "https://api.github.com/repos/discord/discord-interactions-js/issues/32/comments"
+          },
+          "review_comments": {
+            "href": "https://api.github.com/repos/discord/discord-interactions-js/pulls/32/comments"
+          },
+          "review_comment": {
+            "href": "https://api.github.com/repos/discord/discord-interactions-js/pulls/comments{/number}"
+          },
+          "commits": {
+            "href": "https://api.github.com/repos/discord/discord-interactions-js/pulls/32/commits"
+          },
+          "statuses": {
+            "href": "https://api.github.com/repos/discord/discord-interactions-js/statuses/9dbee656e71bf233311ab065fdd11240712213a8"
+          }
+        },
+        "author_association": "CONTRIBUTOR",
+        "auto_merge": null,
+        "active_lock_reason": null
+      },
+      {
+        "url": "https://api.github.com/repos/discord/discord-interactions-js/pulls/31",
+        "id": 885365723,
+        "node_id": "PR_kwDOEwqdus40xZvb",
+        "number": 31,
+        "state": "closed",
+        "locked": false,
+        "title": "build: migrate to eslint",
+        "user": {
+          "login": "JustinBeckwith",
+          "id": 534619,
+          "node_id": "MDQ6VXNlcjUzNDYxOQ==",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/JustinBeckwith",
+          "type": "User",
+          "site_admin": false
+        },
+        "body": "`tslint` is way deprecated:  https://palantir.github.io/tslint/\r\n",
+        "created_at": "2022-03-21T22:04:06Z",
+        "updated_at": "2022-03-22T17:25:36Z",
+        "closed_at": "2022-03-22T17:25:36Z",
+        "merged_at": "2022-03-22T17:25:36Z",
+        "merge_commit_sha": "2f593ba4342e54c06a20f7821dc081bb2138b73b",
+        "assignee": null,
+        "assignees": [],
+        "requested_reviewers": [],
+        "requested_teams": [],
+        "labels": [],
+        "milestone": null,
+        "draft": false,
+        "head": {
+          "label": "discord:eslinty",
+          "ref": "eslinty",
+          "sha": "87a11fe3c528edc713a0680960ace3443c6b9687",
+          "user": {
+            "login": "discord",
+            "id": 1965106,
+            "node_id": "MDEyOk9yZ2FuaXphdGlvbjE5NjUxMDY=",
+            "gravatar_id": "",
+            "url": "https://api.github.com/users/discord",
+            "type": "Organization",
+            "site_admin": false
+          },
+          "repo": {
+            "id": 319462842,
+            "node_id": "MDEwOlJlcG9zaXRvcnkzMTk0NjI4NDI=",
+            "name": "discord-interactions-js",
+            "full_name": "discord/discord-interactions-js",
+            "private": false,
+            "owner": {
+              "login": "discord",
+              "id": 1965106,
+              "node_id": "MDEyOk9yZ2FuaXphdGlvbjE5NjUxMDY=",
+              "gravatar_id": "",
+              "url": "https://api.github.com/users/discord",
+              "type": "Organization",
+              "site_admin": false
+            },
+            "description": "JS/Node helpers for Discord Interactions ",
+            "fork": false,
+            "url": "https://api.github.com/repos/discord/discord-interactions-js",
+            "created_at": "2020-12-07T22:40:30Z",
+            "updated_at": "2023-04-23T13:20:02Z",
+            "pushed_at": "2023-01-27T17:13:35Z",
+            "homepage": "",
+            "size": 158,
+            "stargazers_count": 258,
+            "watchers_count": 258,
+            "language": "TypeScript",
+            "has_issues": true,
+            "has_projects": true,
+            "has_downloads": true,
+            "has_wiki": true,
+            "has_pages": false,
+            "has_discussions": false,
+            "forks_count": 70,
+            "archived": false,
+            "disabled": false,
+            "open_issues_count": 8,
+            "license": {
+              "key": "mit",
+              "name": "MIT License",
+              "spdx_id": "MIT",
+              "url": "https://api.github.com/licenses/mit",
+              "node_id": "MDc6TGljZW5zZTEz"
+            },
+            "allow_forking": true,
+            "is_template": false,
+            "web_commit_signoff_required": false,
+            "topics": [],
+            "visibility": "public",
+            "forks": 70,
+            "open_issues": 8,
+            "watchers": 258,
+            "default_branch": "main"
+          }
+        },
+        "base": {
+          "label": "discord:main",
+          "ref": "main",
+          "sha": "bc78d94076954fdda7840a40e40c5c2a5034e3fd",
+          "user": {
+            "login": "discord",
+            "id": 1965106,
+            "node_id": "MDEyOk9yZ2FuaXphdGlvbjE5NjUxMDY=",
+            "gravatar_id": "",
+            "url": "https://api.github.com/users/discord",
+            "type": "Organization",
+            "site_admin": false
+          },
+          "repo": {
+            "id": 319462842,
+            "node_id": "MDEwOlJlcG9zaXRvcnkzMTk0NjI4NDI=",
+            "name": "discord-interactions-js",
+            "full_name": "discord/discord-interactions-js",
+            "private": false,
+            "owner": {
+              "login": "discord",
+              "id": 1965106,
+              "node_id": "MDEyOk9yZ2FuaXphdGlvbjE5NjUxMDY=",
+              "gravatar_id": "",
+              "url": "https://api.github.com/users/discord",
+              "type": "Organization",
+              "site_admin": false
+            },
+            "description": "JS/Node helpers for Discord Interactions ",
+            "fork": false,
+            "url": "https://api.github.com/repos/discord/discord-interactions-js",
+            "created_at": "2020-12-07T22:40:30Z",
+            "updated_at": "2023-04-23T13:20:02Z",
+            "pushed_at": "2023-01-27T17:13:35Z",
+            "homepage": "",
+            "size": 158,
+            "stargazers_count": 258,
+            "watchers_count": 258,
+            "language": "TypeScript",
+            "has_issues": true,
+            "has_projects": true,
+            "has_downloads": true,
+            "has_wiki": true,
+            "has_pages": false,
+            "has_discussions": false,
+            "forks_count": 70,
+            "archived": false,
+            "disabled": false,
+            "open_issues_count": 8,
+            "license": {
+              "key": "mit",
+              "name": "MIT License",
+              "spdx_id": "MIT",
+              "url": "https://api.github.com/licenses/mit",
+              "node_id": "MDc6TGljZW5zZTEz"
+            },
+            "allow_forking": true,
+            "is_template": false,
+            "web_commit_signoff_required": false,
+            "topics": [],
+            "visibility": "public",
+            "forks": 70,
+            "open_issues": 8,
+            "watchers": 258,
+            "default_branch": "main"
+          }
+        },
+        "_links": {
+          "self": {
+            "href": "https://api.github.com/repos/discord/discord-interactions-js/pulls/31"
+          },
+          "html": {
+            "href": "https://github.com/discord/discord-interactions-js/pull/31"
+          },
+          "issue": {
+            "href": "https://api.github.com/repos/discord/discord-interactions-js/issues/31"
+          },
+          "comments": {
+            "href": "https://api.github.com/repos/discord/discord-interactions-js/issues/31/comments"
+          },
+          "review_comments": {
+            "href": "https://api.github.com/repos/discord/discord-interactions-js/pulls/31/comments"
+          },
+          "review_comment": {
+            "href": "https://api.github.com/repos/discord/discord-interactions-js/pulls/comments{/number}"
+          },
+          "commits": {
+            "href": "https://api.github.com/repos/discord/discord-interactions-js/pulls/31/commits"
+          },
+          "statuses": {
+            "href": "https://api.github.com/repos/discord/discord-interactions-js/statuses/87a11fe3c528edc713a0680960ace3443c6b9687"
+          }
+        },
+        "author_association": "CONTRIBUTOR",
+        "auto_merge": null,
+        "active_lock_reason": null
+      }
+    ]
   }
 }
