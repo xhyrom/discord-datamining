@@ -325,7 +325,31 @@
         ]
       }
     ],
-    "releases": [],
+    "releases": [
+      {
+        "url": "https://api.github.com/repos/discord/eslint-plugin-discord/releases/11061088",
+        "id": 11061088,
+        "author": {
+          "login": "TheSisb",
+          "id": 1592327,
+          "node_id": "MDQ6VXNlcjE1OTIzMjc=",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/TheSisb",
+          "type": "User",
+          "site_admin": false
+        },
+        "node_id": "MDc6UmVsZWFzZTExMDYxMDg4",
+        "tag_name": "v0.0.2",
+        "target_commitish": "master",
+        "name": "First",
+        "draft": false,
+        "prerelease": false,
+        "created_at": "2018-05-18T05:54:24Z",
+        "published_at": "2018-05-18T05:56:57Z",
+        "assets": [],
+        "body": "frist"
+      }
+    ],
     "issues": [
       {
         "url": "https://api.github.com/repos/discord/eslint-plugin-discord/issues/9",
