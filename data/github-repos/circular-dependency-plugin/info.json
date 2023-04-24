@@ -57,32 +57,7 @@
     "triage": false,
     "pull": false
   },
-  "branches": [
-    {
-      "name": "ignore-in-cycles",
-      "commit": {
-        "sha": "a2f27976a8f650632e90aca66f68f9269f8be9fb",
-        "url": "https://api.github.com/repos/discord/circular-dependency-plugin/commits/a2f27976a8f650632e90aca66f68f9269f8be9fb"
-      },
-      "protected": false
-    },
-    {
-      "name": "master",
-      "commit": {
-        "sha": "9e04e807a8f9cbc717471ac9beba808d756ccae2",
-        "url": "https://api.github.com/repos/discord/circular-dependency-plugin/commits/9e04e807a8f9cbc717471ac9beba808d756ccae2"
-      },
-      "protected": false
-    },
-    {
-      "name": "webpack-five-compat",
-      "commit": {
-        "sha": "3c90b7eb75599743f1e200468ca7f424d9350e06",
-        "url": "https://api.github.com/repos/discord/circular-dependency-plugin/commits/3c90b7eb75599743f1e200468ca7f424d9350e06"
-      },
-      "protected": false
-    }
-  ],
+  "branches": [],
   "last5": {
     "commits": [
       {
