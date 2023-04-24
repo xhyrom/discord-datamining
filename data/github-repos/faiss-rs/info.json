@@ -57,7 +57,32 @@
     "triage": false,
     "pull": false
   },
-  "branches": [],
+  "branches": [
+    {
+      "name": "ci-gh-actions",
+      "commit": {
+        "sha": "73adb32f44ba962701b3148e1a211474b24ba60a",
+        "url": "https://api.github.com/repos/discord/faiss-rs/commits/73adb32f44ba962701b3148e1a211474b24ba60a"
+      },
+      "protected": false
+    },
+    {
+      "name": "master",
+      "commit": {
+        "sha": "09aed049b79d8f15140caeeda683106257ba89c4",
+        "url": "https://api.github.com/repos/discord/faiss-rs/commits/09aed049b79d8f15140caeeda683106257ba89c4"
+      },
+      "protected": false
+    },
+    {
+      "name": "upstream",
+      "commit": {
+        "sha": "09aed049b79d8f15140caeeda683106257ba89c4",
+        "url": "https://api.github.com/repos/discord/faiss-rs/commits/09aed049b79d8f15140caeeda683106257ba89c4"
+      },
+      "protected": false
+    }
+  ],
   "last5": {
     "commits": [
       {
