@@ -57,24 +57,7 @@
     "triage": false,
     "pull": false
   },
-  "branches": [
-    {
-      "name": "master",
-      "commit": {
-        "sha": "d08d5143df570737184b62231de9d25721989606",
-        "url": "https://api.github.com/repos/discord/Squirrel.Windows/commits/d08d5143df570737184b62231de9d25721989606"
-      },
-      "protected": false
-    },
-    {
-      "name": "omaha",
-      "commit": {
-        "sha": "a8081900d8a994d6effc70bf09c2274c5bdcaf7a",
-        "url": "https://api.github.com/repos/discord/Squirrel.Windows/commits/a8081900d8a994d6effc70bf09c2274c5bdcaf7a"
-      },
-      "protected": false
-    }
-  ],
+  "branches": [],
   "last5": {
     "commits": [
       {

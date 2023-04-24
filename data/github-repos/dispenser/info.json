@@ -57,16 +57,7 @@
     "triage": false,
     "pull": false
   },
-  "branches": [
-    {
-      "name": "master",
-      "commit": {
-        "sha": "4ebadc36e4f54dc16135076d810778ba403670af",
-        "url": "https://api.github.com/repos/discord/dispenser/commits/4ebadc36e4f54dc16135076d810778ba403670af"
-      },
-      "protected": false
-    }
-  ],
+  "branches": [],
   "last5": {
     "commits": [
       {

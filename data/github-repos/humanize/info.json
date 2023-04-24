@@ -57,16 +57,7 @@
     "triage": false,
     "pull": false
   },
-  "branches": [
-    {
-      "name": "master",
-      "commit": {
-        "sha": "88bf2fe30a4399425647282635ebcecb7134a200",
-        "url": "https://api.github.com/repos/discord/humanize/commits/88bf2fe30a4399425647282635ebcecb7134a200"
-      },
-      "protected": false
-    }
-  ],
+  "branches": [],
   "last5": {
     "commits": [
       {

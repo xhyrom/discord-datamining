@@ -57,48 +57,7 @@
     "triage": false,
     "pull": false
   },
-  "branches": [
-    {
-      "name": "dialyzer-clean",
-      "commit": {
-        "sha": "94e1c1b2e9db538818c724279375b3002f24daaf",
-        "url": "https://api.github.com/repos/discord/zen_monitor/commits/94e1c1b2e9db538818c724279375b3002f24daaf"
-      },
-      "protected": false
-    },
-    {
-      "name": "master",
-      "commit": {
-        "sha": "86914e7de18ea53b36f70ee7885d02ededa84920",
-        "url": "https://api.github.com/repos/discord/zen_monitor/commits/86914e7de18ea53b36f70ee7885d02ededa84920"
-      },
-      "protected": false
-    },
-    {
-      "name": "pre-1.2",
-      "commit": {
-        "sha": "27bd60b101037d8ed0b0314966ca3db228e6a2b3",
-        "url": "https://api.github.com/repos/discord/zen_monitor/commits/27bd60b101037d8ed0b0314966ca3db228e6a2b3"
-      },
-      "protected": false
-    },
-    {
-      "name": "remove-race-conditions-from-test",
-      "commit": {
-        "sha": "eecd819663ae3967b0299ca6cd85b9b0651da577",
-        "url": "https://api.github.com/repos/discord/zen_monitor/commits/eecd819663ae3967b0299ca6cd85b9b0651da577"
-      },
-      "protected": false
-    },
-    {
-      "name": "yuliy/off_heap_local_dispatcher",
-      "commit": {
-        "sha": "3f508c36fb79a10594fcfcaedfa50ac4f52c72f7",
-        "url": "https://api.github.com/repos/discord/zen_monitor/commits/3f508c36fb79a10594fcfcaedfa50ac4f52c72f7"
-      },
-      "protected": false
-    }
-  ],
+  "branches": [],
   "last5": {
     "commits": [
       {

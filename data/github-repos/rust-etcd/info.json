@@ -57,48 +57,7 @@
     "triage": false,
     "pull": false
   },
-  "branches": [
-    {
-      "name": "feat/kv-refresh",
-      "commit": {
-        "sha": "4f790fea92fb5b971e5f9f9185b0830a11a5ccf9",
-        "url": "https://api.github.com/repos/discord/rust-etcd/commits/4f790fea92fb5b971e5f9f9185b0830a11a5ccf9"
-      },
-      "protected": false
-    },
-    {
-      "name": "feat/tokio-02",
-      "commit": {
-        "sha": "9c58d6b340e094baccb0316fb7cb18a92c16d8f9",
-        "url": "https://api.github.com/repos/discord/rust-etcd/commits/9c58d6b340e094baccb0316fb7cb18a92c16d8f9"
-      },
-      "protected": false
-    },
-    {
-      "name": "gh-pages",
-      "commit": {
-        "sha": "920ec1c3c308800902d56238f65fc11ef3dd1194",
-        "url": "https://api.github.com/repos/discord/rust-etcd/commits/920ec1c3c308800902d56238f65fc11ef3dd1194"
-      },
-      "protected": false
-    },
-    {
-      "name": "master",
-      "commit": {
-        "sha": "8241115a0b005aab1b599eddcdef57d2c119a2e2",
-        "url": "https://api.github.com/repos/discord/rust-etcd/commits/8241115a0b005aab1b599eddcdef57d2c119a2e2"
-      },
-      "protected": false
-    },
-    {
-      "name": "tokio-1.0",
-      "commit": {
-        "sha": "09037a7663175dc00d23988ce2b5cbbc08bbcd4b",
-        "url": "https://api.github.com/repos/discord/rust-etcd/commits/09037a7663175dc00d23988ce2b5cbbc08bbcd4b"
-      },
-      "protected": false
-    }
-  ],
+  "branches": [],
   "last5": {
     "commits": [
       {

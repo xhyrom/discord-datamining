@@ -57,112 +57,7 @@
     "triage": false,
     "pull": false
   },
-  "branches": [
-    {
-      "name": "1-6-x",
-      "commit": {
-        "sha": "655e17fce69cef0daa110404058882fe9ecc974f",
-        "url": "https://api.github.com/repos/discord/electron/commits/655e17fce69cef0daa110404058882fe9ecc974f"
-      },
-      "protected": false
-    },
-    {
-      "name": "4-0-x",
-      "commit": {
-        "sha": "c19a43e8b661d567ee3f64ea3f6046543e133473",
-        "url": "https://api.github.com/repos/discord/electron/commits/c19a43e8b661d567ee3f64ea3f6046543e133473"
-      },
-      "protected": false
-    },
-    {
-      "name": "7-1-x",
-      "commit": {
-        "sha": "8fb1861686e0487be74466a4a0693e5ab696668b",
-        "url": "https://api.github.com/repos/discord/electron/commits/8fb1861686e0487be74466a4a0693e5ab696668b"
-      },
-      "protected": false
-    },
-    {
-      "name": "7-3-x",
-      "commit": {
-        "sha": "c468a1c73684947642de18ab33a2d55653b0c880",
-        "url": "https://api.github.com/repos/discord/electron/commits/c468a1c73684947642de18ab33a2d55653b0c880"
-      },
-      "protected": false
-    },
-    {
-      "name": "9-x-y",
-      "commit": {
-        "sha": "b89558b7f91e18c5900b1370c044152bb992eaf4",
-        "url": "https://api.github.com/repos/discord/electron/commits/b89558b7f91e18c5900b1370c044152bb992eaf4"
-      },
-      "protected": false
-    },
-    {
-      "name": "13-x-y",
-      "commit": {
-        "sha": "6527e34b04c1b6a6e0be87a3244ec1d75e4dc32f",
-        "url": "https://api.github.com/repos/discord/electron/commits/6527e34b04c1b6a6e0be87a3244ec1d75e4dc32f"
-      },
-      "protected": false
-    },
-    {
-      "name": "17-x-y",
-      "commit": {
-        "sha": "204927383a714ee0b3f4502767d6c691beaf07b6",
-        "url": "https://api.github.com/repos/discord/electron/commits/204927383a714ee0b3f4502767d6c691beaf07b6"
-      },
-      "protected": false
-    },
-    {
-      "name": "22-x-y",
-      "commit": {
-        "sha": "448588479c131a6326dd1620e8c5ba25c68c5089",
-        "url": "https://api.github.com/repos/discord/electron/commits/448588479c131a6326dd1620e8c5ba25c68c5089"
-      },
-      "protected": false
-    },
-    {
-      "name": "dyc/offscreen-capture-mac",
-      "commit": {
-        "sha": "5be563c95ff2574d2c808f4c1afbea519f022b8a",
-        "url": "https://api.github.com/repos/discord/electron/commits/5be563c95ff2574d2c808f4c1afbea519f022b8a"
-      },
-      "protected": false
-    },
-    {
-      "name": "mack/skid-proof-2",
-      "commit": {
-        "sha": "06d6edba8ba17d764e7fa17e7d04925609c74489",
-        "url": "https://api.github.com/repos/discord/electron/commits/06d6edba8ba17d764e7fa17e7d04925609c74489"
-      },
-      "protected": false
-    },
-    {
-      "name": "main",
-      "commit": {
-        "sha": "362870f614b613bc08f722a0ac8b9e71345e7eba",
-        "url": "https://api.github.com/repos/discord/electron/commits/362870f614b613bc08f722a0ac8b9e71345e7eba"
-      },
-      "protected": false
-    },
-    {
-      "name": "nealm/pointer-lock",
-      "commit": {
-        "sha": "e05a54a6f838fdd8d5bf79b04618b1deb984c6ca",
-        "url": "https://api.github.com/repos/discord/electron/commits/e05a54a6f838fdd8d5bf79b04618b1deb984c6ca"
-      },
-      "protected": false
-    },
-    {
-      "name": "safe-storage",
-      "commit": {
-        "sha": "4b08608341b3a27e20040640b851193275fdc063",
-        "url": "https://api.github.com/repos/discord/electron/commits/4b08608341b3a27e20040640b851193275fdc063"
-      },
-      "protected": false
-    }
-  ],
+  "branches": [],
   "last5": {
     "commits": [
       {
@@ -743,9 +638,9 @@
             "url": "https://api.github.com/repos/electron/electron",
             "created_at": "2013-04-12T01:47:36Z",
             "updated_at": "2023-04-24T20:05:50Z",
-            "pushed_at": "2023-04-24T21:18:06Z",
+            "pushed_at": "2023-04-24T22:02:02Z",
             "homepage": "https://electronjs.org",
-            "size": 136683,
+            "size": 136696,
             "stargazers_count": 107000,
             "watchers_count": 107000,
             "language": "C++",
@@ -755,7 +650,7 @@
             "has_wiki": false,
             "has_pages": false,
             "has_discussions": false,
-            "forks_count": 14578,
+            "forks_count": 14579,
             "archived": false,
             "disabled": false,
             "open_issues_count": 922,
@@ -781,7 +676,7 @@
               "works-with-codespaces"
             ],
             "visibility": "public",
-            "forks": 14578,
+            "forks": 14579,
             "open_issues": 922,
             "watchers": 107000,
             "default_branch": "main"

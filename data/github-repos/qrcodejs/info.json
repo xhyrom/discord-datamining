@@ -57,32 +57,7 @@
     "triage": false,
     "pull": false
   },
-  "branches": [
-    {
-      "name": "gh-pages",
-      "commit": {
-        "sha": "44a3e33a9e4b9881dfc42aab13da2d468727560f",
-        "url": "https://api.github.com/repos/discord/qrcodejs/commits/44a3e33a9e4b9881dfc42aab13da2d468727560f"
-      },
-      "protected": false
-    },
-    {
-      "name": "master",
-      "commit": {
-        "sha": "b30bb6e792461ab3ed3d529273fa00aa60f77b05",
-        "url": "https://api.github.com/repos/discord/qrcodejs/commits/b30bb6e792461ab3ed3d529273fa00aa60f77b05"
-      },
-      "protected": false
-    },
-    {
-      "name": "refactoring",
-      "commit": {
-        "sha": "2737cbd17a554f22cbd53fa9ebdcf330d6d5aabb",
-        "url": "https://api.github.com/repos/discord/qrcodejs/commits/2737cbd17a554f22cbd53fa9ebdcf330d6d5aabb"
-      },
-      "protected": false
-    }
-  ],
+  "branches": [],
   "last5": {
     "commits": [
       {

@@ -53,32 +53,7 @@
     "triage": false,
     "pull": false
   },
-  "branches": [
-    {
-      "name": "frontend",
-      "commit": {
-        "sha": "adb4f9cc4e742afe0e613353d10ae21e754052ac",
-        "url": "https://api.github.com/repos/discord/airhornbot/commits/adb4f9cc4e742afe0e613353d10ae21e754052ac"
-      },
-      "protected": false
-    },
-    {
-      "name": "golang",
-      "commit": {
-        "sha": "a00b3eae926dccfce92591393083606121a855a9",
-        "url": "https://api.github.com/repos/discord/airhornbot/commits/a00b3eae926dccfce92591393083606121a855a9"
-      },
-      "protected": false
-    },
-    {
-      "name": "main",
-      "commit": {
-        "sha": "fd8d69de5d9e9d1f99a7f375489b9b68d1b5f36d",
-        "url": "https://api.github.com/repos/discord/airhornbot/commits/fd8d69de5d9e9d1f99a7f375489b9b68d1b5f36d"
-      },
-      "protected": true
-    }
-  ],
+  "branches": [],
   "last5": {
     "commits": [
       {

@@ -59,9 +59,1500 @@
   },
   "branches": [],
   "last5": {
-    "commits": [],
+    "commits": [
+      {
+        "sha": "dcb7d4fe0b5bc2c7ac35bb8c1f0dca11fad17a38",
+        "node_id": "C_kwDOBVyJ3NoAKGRjYjdkNGZlMGI1YmMyYzdhYzM1YmI4YzFmMGRjYTExZmFkMTdhMzg",
+        "commit": {
+          "author": {
+            "name": "brian-armstrong-discord",
+            "email": "brian.armstrong@discordapp.com",
+            "date": "2022-03-23T21:45:13Z"
+          },
+          "committer": {
+            "name": "GitHub",
+            "email": "noreply@github.com",
+            "date": "2022-03-23T21:45:13Z"
+          },
+          "message": "Merge pull request #7 from discord/feature/follow_308_redirect\n\nfollow 308s on redirect",
+          "tree": {
+            "sha": "4e6775d42c9725ec9fef8f769714dbe4ff810736",
+            "url": "https://api.github.com/repos/discord/fasthttp/git/trees/4e6775d42c9725ec9fef8f769714dbe4ff810736"
+          },
+          "url": "https://api.github.com/repos/discord/fasthttp/git/commits/dcb7d4fe0b5bc2c7ac35bb8c1f0dca11fad17a38",
+          "comment_count": 0,
+          "verification": {
+            "verified": true,
+            "reason": "valid",
+            "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsBcBAABCAAQBQJiO5TpCRBK7hj4Ov3rIwAAcHYIAH5MfEZBKU8iVhgw5neWy/at\nkKIqJE7ueiBjPTeUAoGpyFMr5zMhFCuB2s/BkNb0DYVPSYH2NsfofsQkV3fimab8\nsufyCJMu0Q3l7ShcBQG+e1CNg+cQO/EHzWF4eE3z1iw9h6rXQcsr2wnqIV1iTBfi\nHZdZI6RDj8vKBZ8bNQkYZfESgaRUDCTvGSEShbEqa7Co2x8aIf0eFL7NTjmFVgv1\nOrOBaS+NWEiSPxaQlnPwFlhqN4qUow+H82Zk3xUpbDVwBg18HkUOPdA6/VlUeqSW\nDoOftzA4HDU9ckzRCXkAEwQagGBQ+Nh2znXq+R4groduxbBSFjggmCVJI5l92gM=\n=N4Dy\n-----END PGP SIGNATURE-----\n",
+            "payload": "tree 4e6775d42c9725ec9fef8f769714dbe4ff810736\nparent 3835af86d5f748fb21d25ffadd6fecb90640496b\nparent 41304ccec5f21b2b5b3f3c9496a583a9b83fd40c\nauthor brian-armstrong-discord <brian.armstrong@discordapp.com> 1648071913 -0700\ncommitter GitHub <noreply@github.com> 1648071913 -0700\n\nMerge pull request #7 from discord/feature/follow_308_redirect\n\nfollow 308s on redirect"
+          }
+        },
+        "url": "https://api.github.com/repos/discord/fasthttp/commits/dcb7d4fe0b5bc2c7ac35bb8c1f0dca11fad17a38",
+        "author": {
+          "login": "brian-armstrong-discord",
+          "id": 25939803,
+          "node_id": "MDQ6VXNlcjI1OTM5ODAz",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/brian-armstrong-discord",
+          "type": "User",
+          "site_admin": false
+        },
+        "committer": {
+          "login": "web-flow",
+          "id": 19864447,
+          "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/web-flow",
+          "type": "User",
+          "site_admin": false
+        },
+        "parents": [
+          {
+            "sha": "3835af86d5f748fb21d25ffadd6fecb90640496b",
+            "url": "https://api.github.com/repos/discord/fasthttp/commits/3835af86d5f748fb21d25ffadd6fecb90640496b"
+          },
+          {
+            "sha": "41304ccec5f21b2b5b3f3c9496a583a9b83fd40c",
+            "url": "https://api.github.com/repos/discord/fasthttp/commits/41304ccec5f21b2b5b3f3c9496a583a9b83fd40c"
+          }
+        ]
+      },
+      {
+        "sha": "41304ccec5f21b2b5b3f3c9496a583a9b83fd40c",
+        "node_id": "C_kwDOBVyJ3NoAKDQxMzA0Y2NlYzVmMjFiMmI1YjNmM2M5NDk2YTU4M2E5YjgzZmQ0MGM",
+        "commit": {
+          "author": {
+            "name": "Brian Armstrong",
+            "email": "brian.armstrong@discordapp.com",
+            "date": "2022-03-23T21:43:36Z"
+          },
+          "committer": {
+            "name": "Brian Armstrong",
+            "email": "brian.armstrong@discordapp.com",
+            "date": "2022-03-23T21:43:36Z"
+          },
+          "message": "follow 308s on redirect",
+          "tree": {
+            "sha": "4e6775d42c9725ec9fef8f769714dbe4ff810736",
+            "url": "https://api.github.com/repos/discord/fasthttp/git/trees/4e6775d42c9725ec9fef8f769714dbe4ff810736"
+          },
+          "url": "https://api.github.com/repos/discord/fasthttp/git/commits/41304ccec5f21b2b5b3f3c9496a583a9b83fd40c",
+          "comment_count": 0,
+          "verification": {
+            "verified": false,
+            "reason": "unsigned",
+            "signature": null,
+            "payload": null
+          }
+        },
+        "url": "https://api.github.com/repos/discord/fasthttp/commits/41304ccec5f21b2b5b3f3c9496a583a9b83fd40c",
+        "author": {
+          "login": "brian-armstrong-discord",
+          "id": 25939803,
+          "node_id": "MDQ6VXNlcjI1OTM5ODAz",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/brian-armstrong-discord",
+          "type": "User",
+          "site_admin": false
+        },
+        "committer": {
+          "login": "brian-armstrong-discord",
+          "id": 25939803,
+          "node_id": "MDQ6VXNlcjI1OTM5ODAz",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/brian-armstrong-discord",
+          "type": "User",
+          "site_admin": false
+        },
+        "parents": [
+          {
+            "sha": "3835af86d5f748fb21d25ffadd6fecb90640496b",
+            "url": "https://api.github.com/repos/discord/fasthttp/commits/3835af86d5f748fb21d25ffadd6fecb90640496b"
+          }
+        ]
+      },
+      {
+        "sha": "3835af86d5f748fb21d25ffadd6fecb90640496b",
+        "node_id": "MDY6Q29tbWl0ODk5NTA2ODQ6MzgzNWFmODZkNWY3NDhmYjIxZDI1ZmZhZGQ2ZmVjYjkwNjQwNDk2Yg==",
+        "commit": {
+          "author": {
+            "name": "Zack",
+            "email": "zack@discordapp.com",
+            "date": "2018-09-19T03:58:36Z"
+          },
+          "committer": {
+            "name": "Zack",
+            "email": "zack@discordapp.com",
+            "date": "2018-09-19T03:58:36Z"
+          },
+          "message": "return original path in requesturi\nallows path arguments which should remain encoded to remain encoded",
+          "tree": {
+            "sha": "41247917029b31d3397d6373352bb0464c0c32ff",
+            "url": "https://api.github.com/repos/discord/fasthttp/git/trees/41247917029b31d3397d6373352bb0464c0c32ff"
+          },
+          "url": "https://api.github.com/repos/discord/fasthttp/git/commits/3835af86d5f748fb21d25ffadd6fecb90640496b",
+          "comment_count": 0,
+          "verification": {
+            "verified": false,
+            "reason": "unsigned",
+            "signature": null,
+            "payload": null
+          }
+        },
+        "url": "https://api.github.com/repos/discord/fasthttp/commits/3835af86d5f748fb21d25ffadd6fecb90640496b",
+        "author": {
+          "login": "night",
+          "id": 2942184,
+          "node_id": "MDQ6VXNlcjI5NDIxODQ=",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/night",
+          "type": "User",
+          "site_admin": false
+        },
+        "committer": {
+          "login": "night",
+          "id": 2942184,
+          "node_id": "MDQ6VXNlcjI5NDIxODQ=",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/night",
+          "type": "User",
+          "site_admin": false
+        },
+        "parents": [
+          {
+            "sha": "4db5d78b7442afc22322993bf3fbdcc01982ddad",
+            "url": "https://api.github.com/repos/discord/fasthttp/commits/4db5d78b7442afc22322993bf3fbdcc01982ddad"
+          }
+        ]
+      },
+      {
+        "sha": "4db5d78b7442afc22322993bf3fbdcc01982ddad",
+        "node_id": "MDY6Q29tbWl0ODk5NTA2ODQ6NGRiNWQ3OGI3NDQyYWZjMjIzMjI5OTNiZjNmYmRjYzAxOTgyZGRhZA==",
+        "commit": {
+          "author": {
+            "name": "Zack",
+            "email": "zack@discordapp.com",
+            "date": "2018-09-19T00:57:44Z"
+          },
+          "committer": {
+            "name": "Zack",
+            "email": "zack@discordapp.com",
+            "date": "2018-09-19T00:57:44Z"
+          },
+          "message": "Merge in upstream changes\n\n# Conflicts:\n#\tclient.go\n#\turi.go",
+          "tree": {
+            "sha": "2cc8f75f85a3a7551c8a937e0a0f4acbb5446218",
+            "url": "https://api.github.com/repos/discord/fasthttp/git/trees/2cc8f75f85a3a7551c8a937e0a0f4acbb5446218"
+          },
+          "url": "https://api.github.com/repos/discord/fasthttp/git/commits/4db5d78b7442afc22322993bf3fbdcc01982ddad",
+          "comment_count": 0,
+          "verification": {
+            "verified": false,
+            "reason": "unsigned",
+            "signature": null,
+            "payload": null
+          }
+        },
+        "url": "https://api.github.com/repos/discord/fasthttp/commits/4db5d78b7442afc22322993bf3fbdcc01982ddad",
+        "author": {
+          "login": "night",
+          "id": 2942184,
+          "node_id": "MDQ6VXNlcjI5NDIxODQ=",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/night",
+          "type": "User",
+          "site_admin": false
+        },
+        "committer": {
+          "login": "night",
+          "id": 2942184,
+          "node_id": "MDQ6VXNlcjI5NDIxODQ=",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/night",
+          "type": "User",
+          "site_admin": false
+        },
+        "parents": [
+          {
+            "sha": "b30508c0757782851dfe44f12b2ed4f849349cb7",
+            "url": "https://api.github.com/repos/discord/fasthttp/commits/b30508c0757782851dfe44f12b2ed4f849349cb7"
+          },
+          {
+            "sha": "da9ba61e3b95cf6e0b066e43daa9585e5708a0a7",
+            "url": "https://api.github.com/repos/discord/fasthttp/commits/da9ba61e3b95cf6e0b066e43daa9585e5708a0a7"
+          }
+        ]
+      },
+      {
+        "sha": "da9ba61e3b95cf6e0b066e43daa9585e5708a0a7",
+        "node_id": "MDY6Q29tbWl0ODk5NTA2ODQ6ZGE5YmE2MWUzYjk1Y2Y2ZTBiMDY2ZTQzZGFhOTU4NWU1NzA4YTBhNw==",
+        "commit": {
+          "author": {
+            "name": "David Byttow",
+            "email": "david.byttow@gmail.com",
+            "date": "2018-09-07T02:33:43Z"
+          },
+          "committer": {
+            "name": "Kirill Danshin",
+            "email": "kirill@danshin.pro",
+            "date": "2018-09-18T22:28:32Z"
+          },
+          "message": "Allows for empty content type by default. Fixes #214",
+          "tree": {
+            "sha": "ee58cbd0fa937ad91ff24d1da9bf3e455aa29fa7",
+            "url": "https://api.github.com/repos/discord/fasthttp/git/trees/ee58cbd0fa937ad91ff24d1da9bf3e455aa29fa7"
+          },
+          "url": "https://api.github.com/repos/discord/fasthttp/git/commits/da9ba61e3b95cf6e0b066e43daa9585e5708a0a7",
+          "comment_count": 0,
+          "verification": {
+            "verified": false,
+            "reason": "unsigned",
+            "signature": null,
+            "payload": null
+          }
+        },
+        "url": "https://api.github.com/repos/discord/fasthttp/commits/da9ba61e3b95cf6e0b066e43daa9585e5708a0a7",
+        "author": {
+          "login": "davidbyttow",
+          "id": 1735553,
+          "node_id": "MDQ6VXNlcjE3MzU1NTM=",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/davidbyttow",
+          "type": "User",
+          "site_admin": false
+        },
+        "committer": {
+          "login": "kirillDanshin",
+          "id": 9026581,
+          "node_id": "MDQ6VXNlcjkwMjY1ODE=",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/kirillDanshin",
+          "type": "User",
+          "site_admin": false
+        },
+        "parents": [
+          {
+            "sha": "351f874e5e3d561139589f77d0be6f181d1972bd",
+            "url": "https://api.github.com/repos/discord/fasthttp/commits/351f874e5e3d561139589f77d0be6f181d1972bd"
+          }
+        ]
+      }
+    ],
     "releases": [],
-    "issues": [],
-    "pullRequests": []
+    "issues": [
+      {
+        "url": "https://api.github.com/repos/discord/fasthttp/issues/7",
+        "id": 1178702121,
+        "node_id": "PR_kwDOBVyJ3M406Z33",
+        "number": 7,
+        "title": "follow 308s on redirect",
+        "user": {
+          "login": "brian-armstrong-discord",
+          "id": 25939803,
+          "node_id": "MDQ6VXNlcjI1OTM5ODAz",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/brian-armstrong-discord",
+          "type": "User",
+          "site_admin": false
+        },
+        "labels": [],
+        "state": "closed",
+        "locked": false,
+        "assignee": null,
+        "assignees": [],
+        "milestone": null,
+        "comments": 0,
+        "created_at": "2022-03-23T21:44:06Z",
+        "updated_at": "2022-03-23T21:45:16Z",
+        "closed_at": "2022-03-23T21:45:13Z",
+        "author_association": "COLLABORATOR",
+        "active_lock_reason": null,
+        "draft": false,
+        "pull_request": {
+          "url": "https://api.github.com/repos/discord/fasthttp/pulls/7",
+          "merged_at": "2022-03-23T21:45:13Z"
+        },
+        "body": null,
+        "reactions": {
+          "url": "https://api.github.com/repos/discord/fasthttp/issues/7/reactions",
+          "total_count": 0,
+          "+1": 0,
+          "-1": 0,
+          "laugh": 0,
+          "hooray": 0,
+          "confused": 0,
+          "heart": 0,
+          "rocket": 0,
+          "eyes": 0
+        },
+        "performed_via_github_app": null,
+        "state_reason": null
+      },
+      {
+        "url": "https://api.github.com/repos/discord/fasthttp/issues/6",
+        "id": 237693274,
+        "node_id": "MDExOlB1bGxSZXF1ZXN0MTI2ODgyNDc1",
+        "number": 6,
+        "title": "make MaxFollowRedirects part of Client, not Request",
+        "user": {
+          "login": "brian-armstrong-discord",
+          "id": 25939803,
+          "node_id": "MDQ6VXNlcjI1OTM5ODAz",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/brian-armstrong-discord",
+          "type": "User",
+          "site_admin": false
+        },
+        "labels": [],
+        "state": "closed",
+        "locked": false,
+        "assignee": null,
+        "assignees": [],
+        "milestone": null,
+        "comments": 0,
+        "created_at": "2017-06-21T23:34:18Z",
+        "updated_at": "2017-06-21T23:35:28Z",
+        "closed_at": "2017-06-21T23:35:28Z",
+        "author_association": "COLLABORATOR",
+        "active_lock_reason": null,
+        "draft": false,
+        "pull_request": {
+          "url": "https://api.github.com/repos/discord/fasthttp/pulls/6",
+          "merged_at": "2017-06-21T23:35:28Z"
+        },
+        "body": "this is a more sensible place for it. also request gets reset in the\r\nmiddle of the fetch cycle so it isn't stable",
+        "reactions": {
+          "url": "https://api.github.com/repos/discord/fasthttp/issues/6/reactions",
+          "total_count": 0,
+          "+1": 0,
+          "-1": 0,
+          "laugh": 0,
+          "hooray": 0,
+          "confused": 0,
+          "heart": 0,
+          "rocket": 0,
+          "eyes": 0
+        },
+        "performed_via_github_app": null,
+        "state_reason": null
+      },
+      {
+        "url": "https://api.github.com/repos/discord/fasthttp/issues/5",
+        "id": 237684347,
+        "node_id": "MDExOlB1bGxSZXF1ZXN0MTI2ODc1ODEz",
+        "number": 5,
+        "title": "make it so .Do() can also follow redirects",
+        "user": {
+          "login": "brian-armstrong-discord",
+          "id": 25939803,
+          "node_id": "MDQ6VXNlcjI1OTM5ODAz",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/brian-armstrong-discord",
+          "type": "User",
+          "site_admin": false
+        },
+        "labels": [],
+        "state": "closed",
+        "locked": false,
+        "assignee": null,
+        "assignees": [],
+        "milestone": null,
+        "comments": 0,
+        "created_at": "2017-06-21T22:38:09Z",
+        "updated_at": "2017-06-21T23:09:52Z",
+        "closed_at": "2017-06-21T23:09:52Z",
+        "author_association": "COLLABORATOR",
+        "active_lock_reason": null,
+        "draft": false,
+        "pull_request": {
+          "url": "https://api.github.com/repos/discord/fasthttp/pulls/5",
+          "merged_at": "2017-06-21T23:09:52Z"
+        },
+        "body": "this passes tests so i believe it is still working with the .Get()\r\nfamily of functions. which leads me to believe it also will now work\r\nwith .Do(), given that they share a code path",
+        "reactions": {
+          "url": "https://api.github.com/repos/discord/fasthttp/issues/5/reactions",
+          "total_count": 0,
+          "+1": 0,
+          "-1": 0,
+          "laugh": 0,
+          "hooray": 0,
+          "confused": 0,
+          "heart": 0,
+          "rocket": 0,
+          "eyes": 0
+        },
+        "performed_via_github_app": null,
+        "state_reason": null
+      },
+      {
+        "url": "https://api.github.com/repos/discord/fasthttp/issues/4",
+        "id": 237683422,
+        "node_id": "MDExOlB1bGxSZXF1ZXN0MTI2ODc1MTM4",
+        "number": 4,
+        "title": "fix up uri encoding tests",
+        "user": {
+          "login": "brian-armstrong-discord",
+          "id": 25939803,
+          "node_id": "MDQ6VXNlcjI1OTM5ODAz",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/brian-armstrong-discord",
+          "type": "User",
+          "site_admin": false
+        },
+        "labels": [],
+        "state": "open",
+        "locked": false,
+        "assignee": null,
+        "assignees": [],
+        "milestone": null,
+        "comments": 3,
+        "created_at": "2017-06-21T22:33:07Z",
+        "updated_at": "2021-05-23T10:11:34Z",
+        "closed_at": null,
+        "author_association": "COLLABORATOR",
+        "active_lock_reason": null,
+        "draft": false,
+        "pull_request": {
+          "url": "https://api.github.com/repos/discord/fasthttp/pulls/4",
+          "merged_at": null
+        },
+        "body": "i noticed these were broken when i attempted to run tests. we should\r\nmake sure that nothing in these changes looks too troublesome",
+        "reactions": {
+          "url": "https://api.github.com/repos/discord/fasthttp/issues/4/reactions",
+          "total_count": 0,
+          "+1": 0,
+          "-1": 0,
+          "laugh": 0,
+          "hooray": 0,
+          "confused": 0,
+          "heart": 0,
+          "rocket": 0,
+          "eyes": 0
+        },
+        "performed_via_github_app": null,
+        "state_reason": null
+      },
+      {
+        "url": "https://api.github.com/repos/discord/fasthttp/issues/3",
+        "id": 237649382,
+        "node_id": "MDExOlB1bGxSZXF1ZXN0MTI2ODQ5Mjg4",
+        "number": 3,
+        "title": "BodyDecompressed() method for req and resp",
+        "user": {
+          "login": "brian-armstrong-discord",
+          "id": 25939803,
+          "node_id": "MDQ6VXNlcjI1OTM5ODAz",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/brian-armstrong-discord",
+          "type": "User",
+          "site_admin": false
+        },
+        "labels": [],
+        "state": "closed",
+        "locked": false,
+        "assignee": null,
+        "assignees": [],
+        "milestone": null,
+        "comments": 0,
+        "created_at": "2017-06-21T20:06:30Z",
+        "updated_at": "2017-06-21T20:18:09Z",
+        "closed_at": "2017-06-21T20:18:09Z",
+        "author_association": "COLLABORATOR",
+        "active_lock_reason": null,
+        "draft": false,
+        "pull_request": {
+          "url": "https://api.github.com/repos/discord/fasthttp/pulls/3",
+          "merged_at": "2017-06-21T20:18:09Z"
+        },
+        "body": "",
+        "reactions": {
+          "url": "https://api.github.com/repos/discord/fasthttp/issues/3/reactions",
+          "total_count": 0,
+          "+1": 0,
+          "-1": 0,
+          "laugh": 0,
+          "hooray": 0,
+          "confused": 0,
+          "heart": 0,
+          "rocket": 0,
+          "eyes": 0
+        },
+        "performed_via_github_app": null,
+        "state_reason": null
+      }
+    ],
+    "pullRequests": [
+      {
+        "url": "https://api.github.com/repos/discord/fasthttp/pulls/7",
+        "id": 887725559,
+        "node_id": "PR_kwDOBVyJ3M406Z33",
+        "number": 7,
+        "state": "closed",
+        "locked": false,
+        "title": "follow 308s on redirect",
+        "user": {
+          "login": "brian-armstrong-discord",
+          "id": 25939803,
+          "node_id": "MDQ6VXNlcjI1OTM5ODAz",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/brian-armstrong-discord",
+          "type": "User",
+          "site_admin": false
+        },
+        "body": null,
+        "created_at": "2022-03-23T21:44:06Z",
+        "updated_at": "2022-03-23T21:45:16Z",
+        "closed_at": "2022-03-23T21:45:13Z",
+        "merged_at": "2022-03-23T21:45:13Z",
+        "merge_commit_sha": "dcb7d4fe0b5bc2c7ac35bb8c1f0dca11fad17a38",
+        "assignee": null,
+        "assignees": [],
+        "requested_reviewers": [],
+        "requested_teams": [],
+        "labels": [],
+        "milestone": null,
+        "draft": false,
+        "head": {
+          "label": "discord:feature/follow_308_redirect",
+          "ref": "feature/follow_308_redirect",
+          "sha": "41304ccec5f21b2b5b3f3c9496a583a9b83fd40c",
+          "user": {
+            "login": "discord",
+            "id": 1965106,
+            "node_id": "MDEyOk9yZ2FuaXphdGlvbjE5NjUxMDY=",
+            "gravatar_id": "",
+            "url": "https://api.github.com/users/discord",
+            "type": "Organization",
+            "site_admin": false
+          },
+          "repo": {
+            "id": 89950684,
+            "node_id": "MDEwOlJlcG9zaXRvcnk4OTk1MDY4NA==",
+            "name": "fasthttp",
+            "full_name": "discord/fasthttp",
+            "private": false,
+            "owner": {
+              "login": "discord",
+              "id": 1965106,
+              "node_id": "MDEyOk9yZ2FuaXphdGlvbjE5NjUxMDY=",
+              "gravatar_id": "",
+              "url": "https://api.github.com/users/discord",
+              "type": "Organization",
+              "site_admin": false
+            },
+            "description": "Fast HTTP package for Go. Tuned for high performance. Zero memory allocations in hot paths. Up to 10x faster than net/http",
+            "fork": true,
+            "url": "https://api.github.com/repos/discord/fasthttp",
+            "created_at": "2017-05-01T18:28:48Z",
+            "updated_at": "2022-06-23T07:44:41Z",
+            "pushed_at": "2022-11-03T04:28:13Z",
+            "homepage": "",
+            "size": 3001,
+            "stargazers_count": 15,
+            "watchers_count": 15,
+            "language": "Go",
+            "has_issues": false,
+            "has_projects": true,
+            "has_downloads": true,
+            "has_wiki": true,
+            "has_pages": false,
+            "has_discussions": false,
+            "forks_count": 4,
+            "archived": false,
+            "disabled": false,
+            "open_issues_count": 2,
+            "license": {
+              "key": "mit",
+              "name": "MIT License",
+              "spdx_id": "MIT",
+              "url": "https://api.github.com/licenses/mit",
+              "node_id": "MDc6TGljZW5zZTEz"
+            },
+            "allow_forking": true,
+            "is_template": false,
+            "web_commit_signoff_required": false,
+            "topics": [],
+            "visibility": "public",
+            "forks": 4,
+            "open_issues": 2,
+            "watchers": 15,
+            "default_branch": "master"
+          }
+        },
+        "base": {
+          "label": "discord:master",
+          "ref": "master",
+          "sha": "3835af86d5f748fb21d25ffadd6fecb90640496b",
+          "user": {
+            "login": "discord",
+            "id": 1965106,
+            "node_id": "MDEyOk9yZ2FuaXphdGlvbjE5NjUxMDY=",
+            "gravatar_id": "",
+            "url": "https://api.github.com/users/discord",
+            "type": "Organization",
+            "site_admin": false
+          },
+          "repo": {
+            "id": 89950684,
+            "node_id": "MDEwOlJlcG9zaXRvcnk4OTk1MDY4NA==",
+            "name": "fasthttp",
+            "full_name": "discord/fasthttp",
+            "private": false,
+            "owner": {
+              "login": "discord",
+              "id": 1965106,
+              "node_id": "MDEyOk9yZ2FuaXphdGlvbjE5NjUxMDY=",
+              "gravatar_id": "",
+              "url": "https://api.github.com/users/discord",
+              "type": "Organization",
+              "site_admin": false
+            },
+            "description": "Fast HTTP package for Go. Tuned for high performance. Zero memory allocations in hot paths. Up to 10x faster than net/http",
+            "fork": true,
+            "url": "https://api.github.com/repos/discord/fasthttp",
+            "created_at": "2017-05-01T18:28:48Z",
+            "updated_at": "2022-06-23T07:44:41Z",
+            "pushed_at": "2022-11-03T04:28:13Z",
+            "homepage": "",
+            "size": 3001,
+            "stargazers_count": 15,
+            "watchers_count": 15,
+            "language": "Go",
+            "has_issues": false,
+            "has_projects": true,
+            "has_downloads": true,
+            "has_wiki": true,
+            "has_pages": false,
+            "has_discussions": false,
+            "forks_count": 4,
+            "archived": false,
+            "disabled": false,
+            "open_issues_count": 2,
+            "license": {
+              "key": "mit",
+              "name": "MIT License",
+              "spdx_id": "MIT",
+              "url": "https://api.github.com/licenses/mit",
+              "node_id": "MDc6TGljZW5zZTEz"
+            },
+            "allow_forking": true,
+            "is_template": false,
+            "web_commit_signoff_required": false,
+            "topics": [],
+            "visibility": "public",
+            "forks": 4,
+            "open_issues": 2,
+            "watchers": 15,
+            "default_branch": "master"
+          }
+        },
+        "_links": {
+          "self": {
+            "href": "https://api.github.com/repos/discord/fasthttp/pulls/7"
+          },
+          "html": {
+            "href": "https://github.com/discord/fasthttp/pull/7"
+          },
+          "issue": {
+            "href": "https://api.github.com/repos/discord/fasthttp/issues/7"
+          },
+          "comments": {
+            "href": "https://api.github.com/repos/discord/fasthttp/issues/7/comments"
+          },
+          "review_comments": {
+            "href": "https://api.github.com/repos/discord/fasthttp/pulls/7/comments"
+          },
+          "review_comment": {
+            "href": "https://api.github.com/repos/discord/fasthttp/pulls/comments{/number}"
+          },
+          "commits": {
+            "href": "https://api.github.com/repos/discord/fasthttp/pulls/7/commits"
+          },
+          "statuses": {
+            "href": "https://api.github.com/repos/discord/fasthttp/statuses/41304ccec5f21b2b5b3f3c9496a583a9b83fd40c"
+          }
+        },
+        "author_association": "COLLABORATOR",
+        "auto_merge": null,
+        "active_lock_reason": null
+      },
+      {
+        "url": "https://api.github.com/repos/discord/fasthttp/pulls/6",
+        "id": 126882475,
+        "node_id": "MDExOlB1bGxSZXF1ZXN0MTI2ODgyNDc1",
+        "number": 6,
+        "state": "closed",
+        "locked": false,
+        "title": "make MaxFollowRedirects part of Client, not Request",
+        "user": {
+          "login": "brian-armstrong-discord",
+          "id": 25939803,
+          "node_id": "MDQ6VXNlcjI1OTM5ODAz",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/brian-armstrong-discord",
+          "type": "User",
+          "site_admin": false
+        },
+        "body": "this is a more sensible place for it. also request gets reset in the\r\nmiddle of the fetch cycle so it isn't stable",
+        "created_at": "2017-06-21T23:34:18Z",
+        "updated_at": "2017-06-21T23:35:28Z",
+        "closed_at": "2017-06-21T23:35:28Z",
+        "merged_at": "2017-06-21T23:35:28Z",
+        "merge_commit_sha": "041328ab74cc8328a63660a0322e4e3f1dd1ea28",
+        "assignee": null,
+        "assignees": [],
+        "requested_reviewers": [],
+        "requested_teams": [],
+        "labels": [],
+        "milestone": null,
+        "draft": false,
+        "head": {
+          "label": "discord:bugfix/redirects_client_attribute",
+          "ref": "bugfix/redirects_client_attribute",
+          "sha": "bf475bd4eff2b66304194bffc2603d691fd3bcc9",
+          "user": {
+            "login": "discord",
+            "id": 1965106,
+            "node_id": "MDEyOk9yZ2FuaXphdGlvbjE5NjUxMDY=",
+            "gravatar_id": "",
+            "url": "https://api.github.com/users/discord",
+            "type": "Organization",
+            "site_admin": false
+          },
+          "repo": {
+            "id": 89950684,
+            "node_id": "MDEwOlJlcG9zaXRvcnk4OTk1MDY4NA==",
+            "name": "fasthttp",
+            "full_name": "discord/fasthttp",
+            "private": false,
+            "owner": {
+              "login": "discord",
+              "id": 1965106,
+              "node_id": "MDEyOk9yZ2FuaXphdGlvbjE5NjUxMDY=",
+              "gravatar_id": "",
+              "url": "https://api.github.com/users/discord",
+              "type": "Organization",
+              "site_admin": false
+            },
+            "description": "Fast HTTP package for Go. Tuned for high performance. Zero memory allocations in hot paths. Up to 10x faster than net/http",
+            "fork": true,
+            "url": "https://api.github.com/repos/discord/fasthttp",
+            "created_at": "2017-05-01T18:28:48Z",
+            "updated_at": "2022-06-23T07:44:41Z",
+            "pushed_at": "2022-11-03T04:28:13Z",
+            "homepage": "",
+            "size": 3001,
+            "stargazers_count": 15,
+            "watchers_count": 15,
+            "language": "Go",
+            "has_issues": false,
+            "has_projects": true,
+            "has_downloads": true,
+            "has_wiki": true,
+            "has_pages": false,
+            "has_discussions": false,
+            "forks_count": 4,
+            "archived": false,
+            "disabled": false,
+            "open_issues_count": 2,
+            "license": {
+              "key": "mit",
+              "name": "MIT License",
+              "spdx_id": "MIT",
+              "url": "https://api.github.com/licenses/mit",
+              "node_id": "MDc6TGljZW5zZTEz"
+            },
+            "allow_forking": true,
+            "is_template": false,
+            "web_commit_signoff_required": false,
+            "topics": [],
+            "visibility": "public",
+            "forks": 4,
+            "open_issues": 2,
+            "watchers": 15,
+            "default_branch": "master"
+          }
+        },
+        "base": {
+          "label": "discord:master",
+          "ref": "master",
+          "sha": "09ba6ad25da826cb60988eeb32dffdd9ec673781",
+          "user": {
+            "login": "discord",
+            "id": 1965106,
+            "node_id": "MDEyOk9yZ2FuaXphdGlvbjE5NjUxMDY=",
+            "gravatar_id": "",
+            "url": "https://api.github.com/users/discord",
+            "type": "Organization",
+            "site_admin": false
+          },
+          "repo": {
+            "id": 89950684,
+            "node_id": "MDEwOlJlcG9zaXRvcnk4OTk1MDY4NA==",
+            "name": "fasthttp",
+            "full_name": "discord/fasthttp",
+            "private": false,
+            "owner": {
+              "login": "discord",
+              "id": 1965106,
+              "node_id": "MDEyOk9yZ2FuaXphdGlvbjE5NjUxMDY=",
+              "gravatar_id": "",
+              "url": "https://api.github.com/users/discord",
+              "type": "Organization",
+              "site_admin": false
+            },
+            "description": "Fast HTTP package for Go. Tuned for high performance. Zero memory allocations in hot paths. Up to 10x faster than net/http",
+            "fork": true,
+            "url": "https://api.github.com/repos/discord/fasthttp",
+            "created_at": "2017-05-01T18:28:48Z",
+            "updated_at": "2022-06-23T07:44:41Z",
+            "pushed_at": "2022-11-03T04:28:13Z",
+            "homepage": "",
+            "size": 3001,
+            "stargazers_count": 15,
+            "watchers_count": 15,
+            "language": "Go",
+            "has_issues": false,
+            "has_projects": true,
+            "has_downloads": true,
+            "has_wiki": true,
+            "has_pages": false,
+            "has_discussions": false,
+            "forks_count": 4,
+            "archived": false,
+            "disabled": false,
+            "open_issues_count": 2,
+            "license": {
+              "key": "mit",
+              "name": "MIT License",
+              "spdx_id": "MIT",
+              "url": "https://api.github.com/licenses/mit",
+              "node_id": "MDc6TGljZW5zZTEz"
+            },
+            "allow_forking": true,
+            "is_template": false,
+            "web_commit_signoff_required": false,
+            "topics": [],
+            "visibility": "public",
+            "forks": 4,
+            "open_issues": 2,
+            "watchers": 15,
+            "default_branch": "master"
+          }
+        },
+        "_links": {
+          "self": {
+            "href": "https://api.github.com/repos/discord/fasthttp/pulls/6"
+          },
+          "html": {
+            "href": "https://github.com/discord/fasthttp/pull/6"
+          },
+          "issue": {
+            "href": "https://api.github.com/repos/discord/fasthttp/issues/6"
+          },
+          "comments": {
+            "href": "https://api.github.com/repos/discord/fasthttp/issues/6/comments"
+          },
+          "review_comments": {
+            "href": "https://api.github.com/repos/discord/fasthttp/pulls/6/comments"
+          },
+          "review_comment": {
+            "href": "https://api.github.com/repos/discord/fasthttp/pulls/comments{/number}"
+          },
+          "commits": {
+            "href": "https://api.github.com/repos/discord/fasthttp/pulls/6/commits"
+          },
+          "statuses": {
+            "href": "https://api.github.com/repos/discord/fasthttp/statuses/bf475bd4eff2b66304194bffc2603d691fd3bcc9"
+          }
+        },
+        "author_association": "COLLABORATOR",
+        "auto_merge": null,
+        "active_lock_reason": null
+      },
+      {
+        "url": "https://api.github.com/repos/discord/fasthttp/pulls/5",
+        "id": 126875813,
+        "node_id": "MDExOlB1bGxSZXF1ZXN0MTI2ODc1ODEz",
+        "number": 5,
+        "state": "closed",
+        "locked": false,
+        "title": "make it so .Do() can also follow redirects",
+        "user": {
+          "login": "brian-armstrong-discord",
+          "id": 25939803,
+          "node_id": "MDQ6VXNlcjI1OTM5ODAz",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/brian-armstrong-discord",
+          "type": "User",
+          "site_admin": false
+        },
+        "body": "this passes tests so i believe it is still working with the .Get()\r\nfamily of functions. which leads me to believe it also will now work\r\nwith .Do(), given that they share a code path",
+        "created_at": "2017-06-21T22:38:09Z",
+        "updated_at": "2017-06-21T23:09:52Z",
+        "closed_at": "2017-06-21T23:09:52Z",
+        "merged_at": "2017-06-21T23:09:52Z",
+        "merge_commit_sha": "09ba6ad25da826cb60988eeb32dffdd9ec673781",
+        "assignee": null,
+        "assignees": [],
+        "requested_reviewers": [],
+        "requested_teams": [],
+        "labels": [],
+        "milestone": null,
+        "draft": false,
+        "head": {
+          "label": "discord:feature/client_do_redirects",
+          "ref": "feature/client_do_redirects",
+          "sha": "a3f17b89ef62049ddb2889bf1744a4abebe1ba31",
+          "user": {
+            "login": "discord",
+            "id": 1965106,
+            "node_id": "MDEyOk9yZ2FuaXphdGlvbjE5NjUxMDY=",
+            "gravatar_id": "",
+            "url": "https://api.github.com/users/discord",
+            "type": "Organization",
+            "site_admin": false
+          },
+          "repo": {
+            "id": 89950684,
+            "node_id": "MDEwOlJlcG9zaXRvcnk4OTk1MDY4NA==",
+            "name": "fasthttp",
+            "full_name": "discord/fasthttp",
+            "private": false,
+            "owner": {
+              "login": "discord",
+              "id": 1965106,
+              "node_id": "MDEyOk9yZ2FuaXphdGlvbjE5NjUxMDY=",
+              "gravatar_id": "",
+              "url": "https://api.github.com/users/discord",
+              "type": "Organization",
+              "site_admin": false
+            },
+            "description": "Fast HTTP package for Go. Tuned for high performance. Zero memory allocations in hot paths. Up to 10x faster than net/http",
+            "fork": true,
+            "url": "https://api.github.com/repos/discord/fasthttp",
+            "created_at": "2017-05-01T18:28:48Z",
+            "updated_at": "2022-06-23T07:44:41Z",
+            "pushed_at": "2022-11-03T04:28:13Z",
+            "homepage": "",
+            "size": 3001,
+            "stargazers_count": 15,
+            "watchers_count": 15,
+            "language": "Go",
+            "has_issues": false,
+            "has_projects": true,
+            "has_downloads": true,
+            "has_wiki": true,
+            "has_pages": false,
+            "has_discussions": false,
+            "forks_count": 4,
+            "archived": false,
+            "disabled": false,
+            "open_issues_count": 2,
+            "license": {
+              "key": "mit",
+              "name": "MIT License",
+              "spdx_id": "MIT",
+              "url": "https://api.github.com/licenses/mit",
+              "node_id": "MDc6TGljZW5zZTEz"
+            },
+            "allow_forking": true,
+            "is_template": false,
+            "web_commit_signoff_required": false,
+            "topics": [],
+            "visibility": "public",
+            "forks": 4,
+            "open_issues": 2,
+            "watchers": 15,
+            "default_branch": "master"
+          }
+        },
+        "base": {
+          "label": "discord:master",
+          "ref": "master",
+          "sha": "03b5373acef72eac18f4939720069dc2967cabf6",
+          "user": {
+            "login": "discord",
+            "id": 1965106,
+            "node_id": "MDEyOk9yZ2FuaXphdGlvbjE5NjUxMDY=",
+            "gravatar_id": "",
+            "url": "https://api.github.com/users/discord",
+            "type": "Organization",
+            "site_admin": false
+          },
+          "repo": {
+            "id": 89950684,
+            "node_id": "MDEwOlJlcG9zaXRvcnk4OTk1MDY4NA==",
+            "name": "fasthttp",
+            "full_name": "discord/fasthttp",
+            "private": false,
+            "owner": {
+              "login": "discord",
+              "id": 1965106,
+              "node_id": "MDEyOk9yZ2FuaXphdGlvbjE5NjUxMDY=",
+              "gravatar_id": "",
+              "url": "https://api.github.com/users/discord",
+              "type": "Organization",
+              "site_admin": false
+            },
+            "description": "Fast HTTP package for Go. Tuned for high performance. Zero memory allocations in hot paths. Up to 10x faster than net/http",
+            "fork": true,
+            "url": "https://api.github.com/repos/discord/fasthttp",
+            "created_at": "2017-05-01T18:28:48Z",
+            "updated_at": "2022-06-23T07:44:41Z",
+            "pushed_at": "2022-11-03T04:28:13Z",
+            "homepage": "",
+            "size": 3001,
+            "stargazers_count": 15,
+            "watchers_count": 15,
+            "language": "Go",
+            "has_issues": false,
+            "has_projects": true,
+            "has_downloads": true,
+            "has_wiki": true,
+            "has_pages": false,
+            "has_discussions": false,
+            "forks_count": 4,
+            "archived": false,
+            "disabled": false,
+            "open_issues_count": 2,
+            "license": {
+              "key": "mit",
+              "name": "MIT License",
+              "spdx_id": "MIT",
+              "url": "https://api.github.com/licenses/mit",
+              "node_id": "MDc6TGljZW5zZTEz"
+            },
+            "allow_forking": true,
+            "is_template": false,
+            "web_commit_signoff_required": false,
+            "topics": [],
+            "visibility": "public",
+            "forks": 4,
+            "open_issues": 2,
+            "watchers": 15,
+            "default_branch": "master"
+          }
+        },
+        "_links": {
+          "self": {
+            "href": "https://api.github.com/repos/discord/fasthttp/pulls/5"
+          },
+          "html": {
+            "href": "https://github.com/discord/fasthttp/pull/5"
+          },
+          "issue": {
+            "href": "https://api.github.com/repos/discord/fasthttp/issues/5"
+          },
+          "comments": {
+            "href": "https://api.github.com/repos/discord/fasthttp/issues/5/comments"
+          },
+          "review_comments": {
+            "href": "https://api.github.com/repos/discord/fasthttp/pulls/5/comments"
+          },
+          "review_comment": {
+            "href": "https://api.github.com/repos/discord/fasthttp/pulls/comments{/number}"
+          },
+          "commits": {
+            "href": "https://api.github.com/repos/discord/fasthttp/pulls/5/commits"
+          },
+          "statuses": {
+            "href": "https://api.github.com/repos/discord/fasthttp/statuses/a3f17b89ef62049ddb2889bf1744a4abebe1ba31"
+          }
+        },
+        "author_association": "COLLABORATOR",
+        "auto_merge": null,
+        "active_lock_reason": null
+      },
+      {
+        "url": "https://api.github.com/repos/discord/fasthttp/pulls/4",
+        "id": 126875138,
+        "node_id": "MDExOlB1bGxSZXF1ZXN0MTI2ODc1MTM4",
+        "number": 4,
+        "state": "open",
+        "locked": false,
+        "title": "fix up uri encoding tests",
+        "user": {
+          "login": "brian-armstrong-discord",
+          "id": 25939803,
+          "node_id": "MDQ6VXNlcjI1OTM5ODAz",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/brian-armstrong-discord",
+          "type": "User",
+          "site_admin": false
+        },
+        "body": "i noticed these were broken when i attempted to run tests. we should\r\nmake sure that nothing in these changes looks too troublesome",
+        "created_at": "2017-06-21T22:33:07Z",
+        "updated_at": "2021-05-23T10:11:34Z",
+        "closed_at": null,
+        "merged_at": null,
+        "merge_commit_sha": "07fd41414ded3f77b7a1ac2ddcfb81aec1923981",
+        "assignee": null,
+        "assignees": [],
+        "requested_reviewers": [],
+        "requested_teams": [],
+        "labels": [],
+        "milestone": null,
+        "draft": false,
+        "head": {
+          "label": "discord:bugfix/encoded_uri_tests",
+          "ref": "bugfix/encoded_uri_tests",
+          "sha": "0bd5a9d83aba461d3dc90870f79a90c0f146297f",
+          "user": {
+            "login": "discord",
+            "id": 1965106,
+            "node_id": "MDEyOk9yZ2FuaXphdGlvbjE5NjUxMDY=",
+            "gravatar_id": "",
+            "url": "https://api.github.com/users/discord",
+            "type": "Organization",
+            "site_admin": false
+          },
+          "repo": {
+            "id": 89950684,
+            "node_id": "MDEwOlJlcG9zaXRvcnk4OTk1MDY4NA==",
+            "name": "fasthttp",
+            "full_name": "discord/fasthttp",
+            "private": false,
+            "owner": {
+              "login": "discord",
+              "id": 1965106,
+              "node_id": "MDEyOk9yZ2FuaXphdGlvbjE5NjUxMDY=",
+              "gravatar_id": "",
+              "url": "https://api.github.com/users/discord",
+              "type": "Organization",
+              "site_admin": false
+            },
+            "description": "Fast HTTP package for Go. Tuned for high performance. Zero memory allocations in hot paths. Up to 10x faster than net/http",
+            "fork": true,
+            "url": "https://api.github.com/repos/discord/fasthttp",
+            "created_at": "2017-05-01T18:28:48Z",
+            "updated_at": "2022-06-23T07:44:41Z",
+            "pushed_at": "2022-11-03T04:28:13Z",
+            "homepage": "",
+            "size": 3001,
+            "stargazers_count": 15,
+            "watchers_count": 15,
+            "language": "Go",
+            "has_issues": false,
+            "has_projects": true,
+            "has_downloads": true,
+            "has_wiki": true,
+            "has_pages": false,
+            "has_discussions": false,
+            "forks_count": 4,
+            "archived": false,
+            "disabled": false,
+            "open_issues_count": 2,
+            "license": {
+              "key": "mit",
+              "name": "MIT License",
+              "spdx_id": "MIT",
+              "url": "https://api.github.com/licenses/mit",
+              "node_id": "MDc6TGljZW5zZTEz"
+            },
+            "allow_forking": true,
+            "is_template": false,
+            "web_commit_signoff_required": false,
+            "topics": [],
+            "visibility": "public",
+            "forks": 4,
+            "open_issues": 2,
+            "watchers": 15,
+            "default_branch": "master"
+          }
+        },
+        "base": {
+          "label": "discord:master",
+          "ref": "master",
+          "sha": "b30508c0757782851dfe44f12b2ed4f849349cb7",
+          "user": {
+            "login": "discord",
+            "id": 1965106,
+            "node_id": "MDEyOk9yZ2FuaXphdGlvbjE5NjUxMDY=",
+            "gravatar_id": "",
+            "url": "https://api.github.com/users/discord",
+            "type": "Organization",
+            "site_admin": false
+          },
+          "repo": {
+            "id": 89950684,
+            "node_id": "MDEwOlJlcG9zaXRvcnk4OTk1MDY4NA==",
+            "name": "fasthttp",
+            "full_name": "discord/fasthttp",
+            "private": false,
+            "owner": {
+              "login": "discord",
+              "id": 1965106,
+              "node_id": "MDEyOk9yZ2FuaXphdGlvbjE5NjUxMDY=",
+              "gravatar_id": "",
+              "url": "https://api.github.com/users/discord",
+              "type": "Organization",
+              "site_admin": false
+            },
+            "description": "Fast HTTP package for Go. Tuned for high performance. Zero memory allocations in hot paths. Up to 10x faster than net/http",
+            "fork": true,
+            "url": "https://api.github.com/repos/discord/fasthttp",
+            "created_at": "2017-05-01T18:28:48Z",
+            "updated_at": "2022-06-23T07:44:41Z",
+            "pushed_at": "2022-11-03T04:28:13Z",
+            "homepage": "",
+            "size": 3001,
+            "stargazers_count": 15,
+            "watchers_count": 15,
+            "language": "Go",
+            "has_issues": false,
+            "has_projects": true,
+            "has_downloads": true,
+            "has_wiki": true,
+            "has_pages": false,
+            "has_discussions": false,
+            "forks_count": 4,
+            "archived": false,
+            "disabled": false,
+            "open_issues_count": 2,
+            "license": {
+              "key": "mit",
+              "name": "MIT License",
+              "spdx_id": "MIT",
+              "url": "https://api.github.com/licenses/mit",
+              "node_id": "MDc6TGljZW5zZTEz"
+            },
+            "allow_forking": true,
+            "is_template": false,
+            "web_commit_signoff_required": false,
+            "topics": [],
+            "visibility": "public",
+            "forks": 4,
+            "open_issues": 2,
+            "watchers": 15,
+            "default_branch": "master"
+          }
+        },
+        "_links": {
+          "self": {
+            "href": "https://api.github.com/repos/discord/fasthttp/pulls/4"
+          },
+          "html": {
+            "href": "https://github.com/discord/fasthttp/pull/4"
+          },
+          "issue": {
+            "href": "https://api.github.com/repos/discord/fasthttp/issues/4"
+          },
+          "comments": {
+            "href": "https://api.github.com/repos/discord/fasthttp/issues/4/comments"
+          },
+          "review_comments": {
+            "href": "https://api.github.com/repos/discord/fasthttp/pulls/4/comments"
+          },
+          "review_comment": {
+            "href": "https://api.github.com/repos/discord/fasthttp/pulls/comments{/number}"
+          },
+          "commits": {
+            "href": "https://api.github.com/repos/discord/fasthttp/pulls/4/commits"
+          },
+          "statuses": {
+            "href": "https://api.github.com/repos/discord/fasthttp/statuses/0bd5a9d83aba461d3dc90870f79a90c0f146297f"
+          }
+        },
+        "author_association": "COLLABORATOR",
+        "auto_merge": null,
+        "active_lock_reason": null
+      },
+      {
+        "url": "https://api.github.com/repos/discord/fasthttp/pulls/3",
+        "id": 126849288,
+        "node_id": "MDExOlB1bGxSZXF1ZXN0MTI2ODQ5Mjg4",
+        "number": 3,
+        "state": "closed",
+        "locked": false,
+        "title": "BodyDecompressed() method for req and resp",
+        "user": {
+          "login": "brian-armstrong-discord",
+          "id": 25939803,
+          "node_id": "MDQ6VXNlcjI1OTM5ODAz",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/brian-armstrong-discord",
+          "type": "User",
+          "site_admin": false
+        },
+        "body": "",
+        "created_at": "2017-06-21T20:06:30Z",
+        "updated_at": "2017-06-21T20:18:09Z",
+        "closed_at": "2017-06-21T20:18:09Z",
+        "merged_at": "2017-06-21T20:18:09Z",
+        "merge_commit_sha": "03b5373acef72eac18f4939720069dc2967cabf6",
+        "assignee": null,
+        "assignees": [],
+        "requested_reviewers": [],
+        "requested_teams": [],
+        "labels": [],
+        "milestone": null,
+        "draft": false,
+        "head": {
+          "label": "discord:feature/body_decompressed",
+          "ref": "feature/body_decompressed",
+          "sha": "2b0669266867db096b97b143bdb3b5b4ed954be5",
+          "user": {
+            "login": "discord",
+            "id": 1965106,
+            "node_id": "MDEyOk9yZ2FuaXphdGlvbjE5NjUxMDY=",
+            "gravatar_id": "",
+            "url": "https://api.github.com/users/discord",
+            "type": "Organization",
+            "site_admin": false
+          },
+          "repo": {
+            "id": 89950684,
+            "node_id": "MDEwOlJlcG9zaXRvcnk4OTk1MDY4NA==",
+            "name": "fasthttp",
+            "full_name": "discord/fasthttp",
+            "private": false,
+            "owner": {
+              "login": "discord",
+              "id": 1965106,
+              "node_id": "MDEyOk9yZ2FuaXphdGlvbjE5NjUxMDY=",
+              "gravatar_id": "",
+              "url": "https://api.github.com/users/discord",
+              "type": "Organization",
+              "site_admin": false
+            },
+            "description": "Fast HTTP package for Go. Tuned for high performance. Zero memory allocations in hot paths. Up to 10x faster than net/http",
+            "fork": true,
+            "url": "https://api.github.com/repos/discord/fasthttp",
+            "created_at": "2017-05-01T18:28:48Z",
+            "updated_at": "2022-06-23T07:44:41Z",
+            "pushed_at": "2022-11-03T04:28:13Z",
+            "homepage": "",
+            "size": 3001,
+            "stargazers_count": 15,
+            "watchers_count": 15,
+            "language": "Go",
+            "has_issues": false,
+            "has_projects": true,
+            "has_downloads": true,
+            "has_wiki": true,
+            "has_pages": false,
+            "has_discussions": false,
+            "forks_count": 4,
+            "archived": false,
+            "disabled": false,
+            "open_issues_count": 2,
+            "license": {
+              "key": "mit",
+              "name": "MIT License",
+              "spdx_id": "MIT",
+              "url": "https://api.github.com/licenses/mit",
+              "node_id": "MDc6TGljZW5zZTEz"
+            },
+            "allow_forking": true,
+            "is_template": false,
+            "web_commit_signoff_required": false,
+            "topics": [],
+            "visibility": "public",
+            "forks": 4,
+            "open_issues": 2,
+            "watchers": 15,
+            "default_branch": "master"
+          }
+        },
+        "base": {
+          "label": "discord:master",
+          "ref": "master",
+          "sha": "39cdf076c264945d96edc3a58040c5e7e9c4d0cf",
+          "user": {
+            "login": "discord",
+            "id": 1965106,
+            "node_id": "MDEyOk9yZ2FuaXphdGlvbjE5NjUxMDY=",
+            "gravatar_id": "",
+            "url": "https://api.github.com/users/discord",
+            "type": "Organization",
+            "site_admin": false
+          },
+          "repo": {
+            "id": 89950684,
+            "node_id": "MDEwOlJlcG9zaXRvcnk4OTk1MDY4NA==",
+            "name": "fasthttp",
+            "full_name": "discord/fasthttp",
+            "private": false,
+            "owner": {
+              "login": "discord",
+              "id": 1965106,
+              "node_id": "MDEyOk9yZ2FuaXphdGlvbjE5NjUxMDY=",
+              "gravatar_id": "",
+              "url": "https://api.github.com/users/discord",
+              "type": "Organization",
+              "site_admin": false
+            },
+            "description": "Fast HTTP package for Go. Tuned for high performance. Zero memory allocations in hot paths. Up to 10x faster than net/http",
+            "fork": true,
+            "url": "https://api.github.com/repos/discord/fasthttp",
+            "created_at": "2017-05-01T18:28:48Z",
+            "updated_at": "2022-06-23T07:44:41Z",
+            "pushed_at": "2022-11-03T04:28:13Z",
+            "homepage": "",
+            "size": 3001,
+            "stargazers_count": 15,
+            "watchers_count": 15,
+            "language": "Go",
+            "has_issues": false,
+            "has_projects": true,
+            "has_downloads": true,
+            "has_wiki": true,
+            "has_pages": false,
+            "has_discussions": false,
+            "forks_count": 4,
+            "archived": false,
+            "disabled": false,
+            "open_issues_count": 2,
+            "license": {
+              "key": "mit",
+              "name": "MIT License",
+              "spdx_id": "MIT",
+              "url": "https://api.github.com/licenses/mit",
+              "node_id": "MDc6TGljZW5zZTEz"
+            },
+            "allow_forking": true,
+            "is_template": false,
+            "web_commit_signoff_required": false,
+            "topics": [],
+            "visibility": "public",
+            "forks": 4,
+            "open_issues": 2,
+            "watchers": 15,
+            "default_branch": "master"
+          }
+        },
+        "_links": {
+          "self": {
+            "href": "https://api.github.com/repos/discord/fasthttp/pulls/3"
+          },
+          "html": {
+            "href": "https://github.com/discord/fasthttp/pull/3"
+          },
+          "issue": {
+            "href": "https://api.github.com/repos/discord/fasthttp/issues/3"
+          },
+          "comments": {
+            "href": "https://api.github.com/repos/discord/fasthttp/issues/3/comments"
+          },
+          "review_comments": {
+            "href": "https://api.github.com/repos/discord/fasthttp/pulls/3/comments"
+          },
+          "review_comment": {
+            "href": "https://api.github.com/repos/discord/fasthttp/pulls/comments{/number}"
+          },
+          "commits": {
+            "href": "https://api.github.com/repos/discord/fasthttp/pulls/3/commits"
+          },
+          "statuses": {
+            "href": "https://api.github.com/repos/discord/fasthttp/statuses/2b0669266867db096b97b143bdb3b5b4ed954be5"
+          }
+        },
+        "author_association": "COLLABORATOR",
+        "auto_merge": null,
+        "active_lock_reason": null
+      }
+    ]
   }
 }
