@@ -57,7 +57,32 @@
     "triage": false,
     "pull": false
   },
-  "branches": [],
+  "branches": [
+    {
+      "name": "Tarrasch-patch-1",
+      "commit": {
+        "sha": "f2eeffdf802f721fe64011251b23d9784c65b8d5",
+        "url": "https://api.github.com/repos/discord/luigi/commits/f2eeffdf802f721fe64011251b23d9784c65b8d5"
+      },
+      "protected": false
+    },
+    {
+      "name": "master",
+      "commit": {
+        "sha": "da12e035295b61a87559a1913a85180b57fca3fa",
+        "url": "https://api.github.com/repos/discord/luigi/commits/da12e035295b61a87559a1913a85180b57fca3fa"
+      },
+      "protected": false
+    },
+    {
+      "name": "pr/1888",
+      "commit": {
+        "sha": "f0337205894bf1e1a53645000733f54f4b2fe3b2",
+        "url": "https://api.github.com/repos/discord/luigi/commits/f0337205894bf1e1a53645000733f54f4b2fe3b2"
+      },
+      "protected": false
+    }
+  ],
   "last5": {
     "commits": [
       {
