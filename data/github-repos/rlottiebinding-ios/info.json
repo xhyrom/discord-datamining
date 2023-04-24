@@ -51,7 +51,16 @@
     "triage": false,
     "pull": false
   },
-  "branches": [],
+  "branches": [
+    {
+      "name": "master",
+      "commit": {
+        "sha": "0e872ed9c4f3f0c1c3bb7ec18962b00e196003ef",
+        "url": "https://api.github.com/repos/discord/rlottiebinding-ios/commits/0e872ed9c4f3f0c1c3bb7ec18962b00e196003ef"
+      },
+      "protected": false
+    }
+  ],
   "last5": {
     "commits": [
       {

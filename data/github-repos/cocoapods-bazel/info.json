@@ -530,6 +530,793 @@
         "state_reason": null
       }
     ],
-    "pullRequests": []
+    "pullRequests": [
+      {
+        "url": "https://api.github.com/repos/discord/cocoapods-bazel/pulls/4",
+        "id": 1306082080,
+        "node_id": "PR_kwDOI5jSKM5N2Tsg",
+        "number": 4,
+        "state": "closed",
+        "locked": false,
+        "title": "Add platform_overrides config option.",
+        "user": {
+          "login": "Osmose",
+          "id": 193106,
+          "node_id": "MDQ6VXNlcjE5MzEwNg==",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/Osmose",
+          "type": "User",
+          "site_admin": false
+        },
+        "body": "This will let us avoid a bunch of platform incompatibility problems stemming from our dependency graph failing to pick the correct platform version for a library.",
+        "created_at": "2023-04-07T17:09:33Z",
+        "updated_at": "2023-04-07T17:45:26Z",
+        "closed_at": "2023-04-07T17:45:21Z",
+        "merged_at": "2023-04-07T17:45:21Z",
+        "merge_commit_sha": "f9eb36dd6f4913e760b710da355870d0abaa23a2",
+        "assignee": null,
+        "assignees": [],
+        "requested_reviewers": [],
+        "requested_teams": [],
+        "labels": [],
+        "milestone": null,
+        "draft": false,
+        "head": {
+          "label": "discord:osmose/platform-override",
+          "ref": "osmose/platform-override",
+          "sha": "14816f063776e9b0ca366e57116e7ce27ce55091",
+          "user": {
+            "login": "discord",
+            "id": 1965106,
+            "node_id": "MDEyOk9yZ2FuaXphdGlvbjE5NjUxMDY=",
+            "gravatar_id": "",
+            "url": "https://api.github.com/users/discord",
+            "type": "Organization",
+            "site_admin": false
+          },
+          "repo": {
+            "id": 597217832,
+            "node_id": "R_kgDOI5jSKA",
+            "name": "cocoapods-bazel",
+            "full_name": "discord/cocoapods-bazel",
+            "private": false,
+            "owner": {
+              "login": "discord",
+              "id": 1965106,
+              "node_id": "MDEyOk9yZ2FuaXphdGlvbjE5NjUxMDY=",
+              "gravatar_id": "",
+              "url": "https://api.github.com/users/discord",
+              "type": "Organization",
+              "site_admin": false
+            },
+            "description": "A Cocoapods plugin for automatically generating Bazel BUILD files",
+            "fork": false,
+            "url": "https://api.github.com/repos/discord/cocoapods-bazel",
+            "created_at": "2023-02-03T22:23:54Z",
+            "updated_at": "2023-03-04T01:19:41Z",
+            "pushed_at": "2023-04-07T17:45:26Z",
+            "homepage": "",
+            "size": 7256,
+            "stargazers_count": 0,
+            "watchers_count": 0,
+            "language": "Ruby",
+            "has_issues": false,
+            "has_projects": true,
+            "has_downloads": true,
+            "has_wiki": true,
+            "has_pages": false,
+            "has_discussions": false,
+            "forks_count": 0,
+            "archived": false,
+            "disabled": false,
+            "open_issues_count": 0,
+            "license": {
+              "key": "apache-2.0",
+              "name": "Apache License 2.0",
+              "spdx_id": "Apache-2.0",
+              "url": "https://api.github.com/licenses/apache-2.0",
+              "node_id": "MDc6TGljZW5zZTI="
+            },
+            "allow_forking": true,
+            "is_template": false,
+            "web_commit_signoff_required": false,
+            "topics": [],
+            "visibility": "public",
+            "forks": 0,
+            "open_issues": 0,
+            "watchers": 0,
+            "default_branch": "discord"
+          }
+        },
+        "base": {
+          "label": "discord:discord",
+          "ref": "discord",
+          "sha": "6cb8fd973abe4253132b443e3a0491a100fb0d75",
+          "user": {
+            "login": "discord",
+            "id": 1965106,
+            "node_id": "MDEyOk9yZ2FuaXphdGlvbjE5NjUxMDY=",
+            "gravatar_id": "",
+            "url": "https://api.github.com/users/discord",
+            "type": "Organization",
+            "site_admin": false
+          },
+          "repo": {
+            "id": 597217832,
+            "node_id": "R_kgDOI5jSKA",
+            "name": "cocoapods-bazel",
+            "full_name": "discord/cocoapods-bazel",
+            "private": false,
+            "owner": {
+              "login": "discord",
+              "id": 1965106,
+              "node_id": "MDEyOk9yZ2FuaXphdGlvbjE5NjUxMDY=",
+              "gravatar_id": "",
+              "url": "https://api.github.com/users/discord",
+              "type": "Organization",
+              "site_admin": false
+            },
+            "description": "A Cocoapods plugin for automatically generating Bazel BUILD files",
+            "fork": false,
+            "url": "https://api.github.com/repos/discord/cocoapods-bazel",
+            "created_at": "2023-02-03T22:23:54Z",
+            "updated_at": "2023-03-04T01:19:41Z",
+            "pushed_at": "2023-04-07T17:45:26Z",
+            "homepage": "",
+            "size": 7256,
+            "stargazers_count": 0,
+            "watchers_count": 0,
+            "language": "Ruby",
+            "has_issues": false,
+            "has_projects": true,
+            "has_downloads": true,
+            "has_wiki": true,
+            "has_pages": false,
+            "has_discussions": false,
+            "forks_count": 0,
+            "archived": false,
+            "disabled": false,
+            "open_issues_count": 0,
+            "license": {
+              "key": "apache-2.0",
+              "name": "Apache License 2.0",
+              "spdx_id": "Apache-2.0",
+              "url": "https://api.github.com/licenses/apache-2.0",
+              "node_id": "MDc6TGljZW5zZTI="
+            },
+            "allow_forking": true,
+            "is_template": false,
+            "web_commit_signoff_required": false,
+            "topics": [],
+            "visibility": "public",
+            "forks": 0,
+            "open_issues": 0,
+            "watchers": 0,
+            "default_branch": "discord"
+          }
+        },
+        "_links": {
+          "self": {
+            "href": "https://api.github.com/repos/discord/cocoapods-bazel/pulls/4"
+          },
+          "html": {
+            "href": "https://github.com/discord/cocoapods-bazel/pull/4"
+          },
+          "issue": {
+            "href": "https://api.github.com/repos/discord/cocoapods-bazel/issues/4"
+          },
+          "comments": {
+            "href": "https://api.github.com/repos/discord/cocoapods-bazel/issues/4/comments"
+          },
+          "review_comments": {
+            "href": "https://api.github.com/repos/discord/cocoapods-bazel/pulls/4/comments"
+          },
+          "review_comment": {
+            "href": "https://api.github.com/repos/discord/cocoapods-bazel/pulls/comments{/number}"
+          },
+          "commits": {
+            "href": "https://api.github.com/repos/discord/cocoapods-bazel/pulls/4/commits"
+          },
+          "statuses": {
+            "href": "https://api.github.com/repos/discord/cocoapods-bazel/statuses/14816f063776e9b0ca366e57116e7ce27ce55091"
+          }
+        },
+        "author_association": "CONTRIBUTOR",
+        "auto_merge": null,
+        "active_lock_reason": null
+      },
+      {
+        "url": "https://api.github.com/repos/discord/cocoapods-bazel/pulls/3",
+        "id": 1302411029,
+        "node_id": "PR_kwDOI5jSKM5NoTcV",
+        "number": 3,
+        "state": "closed",
+        "locked": false,
+        "title": "Use dependency labels consistent with PodToBUILD.",
+        "user": {
+          "login": "Osmose",
+          "id": 193106,
+          "node_id": "MDQ6VXNlcjE5MzEwNg==",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/Osmose",
+          "type": "User",
+          "site_admin": false
+        },
+        "body": "- Asana: https://app.asana.com/0/1203960884932166/1204190072048671/f\r\n\r\nRan into this with `node_modules` dependencies that are trying to rely on react-native core libraries and need deps like `@ReactCore//:ReactCore`.",
+        "created_at": "2023-04-04T23:57:34Z",
+        "updated_at": "2023-04-05T17:54:54Z",
+        "closed_at": "2023-04-05T17:54:50Z",
+        "merged_at": "2023-04-05T17:54:50Z",
+        "merge_commit_sha": "6cb8fd973abe4253132b443e3a0491a100fb0d75",
+        "assignee": null,
+        "assignees": [],
+        "requested_reviewers": [
+          {
+            "login": "nataliejameson",
+            "id": 6351854,
+            "node_id": "MDQ6VXNlcjYzNTE4NTQ=",
+            "gravatar_id": "",
+            "url": "https://api.github.com/users/nataliejameson",
+            "type": "User",
+            "site_admin": false
+          }
+        ],
+        "requested_teams": [],
+        "labels": [],
+        "milestone": null,
+        "draft": false,
+        "head": {
+          "label": "discord:osmose/target-labels",
+          "ref": "osmose/target-labels",
+          "sha": "230666c957f6725e8884ae84aa0732a52fc5601f",
+          "user": {
+            "login": "discord",
+            "id": 1965106,
+            "node_id": "MDEyOk9yZ2FuaXphdGlvbjE5NjUxMDY=",
+            "gravatar_id": "",
+            "url": "https://api.github.com/users/discord",
+            "type": "Organization",
+            "site_admin": false
+          },
+          "repo": {
+            "id": 597217832,
+            "node_id": "R_kgDOI5jSKA",
+            "name": "cocoapods-bazel",
+            "full_name": "discord/cocoapods-bazel",
+            "private": false,
+            "owner": {
+              "login": "discord",
+              "id": 1965106,
+              "node_id": "MDEyOk9yZ2FuaXphdGlvbjE5NjUxMDY=",
+              "gravatar_id": "",
+              "url": "https://api.github.com/users/discord",
+              "type": "Organization",
+              "site_admin": false
+            },
+            "description": "A Cocoapods plugin for automatically generating Bazel BUILD files",
+            "fork": false,
+            "url": "https://api.github.com/repos/discord/cocoapods-bazel",
+            "created_at": "2023-02-03T22:23:54Z",
+            "updated_at": "2023-03-04T01:19:41Z",
+            "pushed_at": "2023-04-07T17:45:26Z",
+            "homepage": "",
+            "size": 7256,
+            "stargazers_count": 0,
+            "watchers_count": 0,
+            "language": "Ruby",
+            "has_issues": false,
+            "has_projects": true,
+            "has_downloads": true,
+            "has_wiki": true,
+            "has_pages": false,
+            "has_discussions": false,
+            "forks_count": 0,
+            "archived": false,
+            "disabled": false,
+            "open_issues_count": 0,
+            "license": {
+              "key": "apache-2.0",
+              "name": "Apache License 2.0",
+              "spdx_id": "Apache-2.0",
+              "url": "https://api.github.com/licenses/apache-2.0",
+              "node_id": "MDc6TGljZW5zZTI="
+            },
+            "allow_forking": true,
+            "is_template": false,
+            "web_commit_signoff_required": false,
+            "topics": [],
+            "visibility": "public",
+            "forks": 0,
+            "open_issues": 0,
+            "watchers": 0,
+            "default_branch": "discord"
+          }
+        },
+        "base": {
+          "label": "discord:discord",
+          "ref": "discord",
+          "sha": "b3ca60de2fad3246663f7d9ede59f7155db787ad",
+          "user": {
+            "login": "discord",
+            "id": 1965106,
+            "node_id": "MDEyOk9yZ2FuaXphdGlvbjE5NjUxMDY=",
+            "gravatar_id": "",
+            "url": "https://api.github.com/users/discord",
+            "type": "Organization",
+            "site_admin": false
+          },
+          "repo": {
+            "id": 597217832,
+            "node_id": "R_kgDOI5jSKA",
+            "name": "cocoapods-bazel",
+            "full_name": "discord/cocoapods-bazel",
+            "private": false,
+            "owner": {
+              "login": "discord",
+              "id": 1965106,
+              "node_id": "MDEyOk9yZ2FuaXphdGlvbjE5NjUxMDY=",
+              "gravatar_id": "",
+              "url": "https://api.github.com/users/discord",
+              "type": "Organization",
+              "site_admin": false
+            },
+            "description": "A Cocoapods plugin for automatically generating Bazel BUILD files",
+            "fork": false,
+            "url": "https://api.github.com/repos/discord/cocoapods-bazel",
+            "created_at": "2023-02-03T22:23:54Z",
+            "updated_at": "2023-03-04T01:19:41Z",
+            "pushed_at": "2023-04-07T17:45:26Z",
+            "homepage": "",
+            "size": 7256,
+            "stargazers_count": 0,
+            "watchers_count": 0,
+            "language": "Ruby",
+            "has_issues": false,
+            "has_projects": true,
+            "has_downloads": true,
+            "has_wiki": true,
+            "has_pages": false,
+            "has_discussions": false,
+            "forks_count": 0,
+            "archived": false,
+            "disabled": false,
+            "open_issues_count": 0,
+            "license": {
+              "key": "apache-2.0",
+              "name": "Apache License 2.0",
+              "spdx_id": "Apache-2.0",
+              "url": "https://api.github.com/licenses/apache-2.0",
+              "node_id": "MDc6TGljZW5zZTI="
+            },
+            "allow_forking": true,
+            "is_template": false,
+            "web_commit_signoff_required": false,
+            "topics": [],
+            "visibility": "public",
+            "forks": 0,
+            "open_issues": 0,
+            "watchers": 0,
+            "default_branch": "discord"
+          }
+        },
+        "_links": {
+          "self": {
+            "href": "https://api.github.com/repos/discord/cocoapods-bazel/pulls/3"
+          },
+          "html": {
+            "href": "https://github.com/discord/cocoapods-bazel/pull/3"
+          },
+          "issue": {
+            "href": "https://api.github.com/repos/discord/cocoapods-bazel/issues/3"
+          },
+          "comments": {
+            "href": "https://api.github.com/repos/discord/cocoapods-bazel/issues/3/comments"
+          },
+          "review_comments": {
+            "href": "https://api.github.com/repos/discord/cocoapods-bazel/pulls/3/comments"
+          },
+          "review_comment": {
+            "href": "https://api.github.com/repos/discord/cocoapods-bazel/pulls/comments{/number}"
+          },
+          "commits": {
+            "href": "https://api.github.com/repos/discord/cocoapods-bazel/pulls/3/commits"
+          },
+          "statuses": {
+            "href": "https://api.github.com/repos/discord/cocoapods-bazel/statuses/230666c957f6725e8884ae84aa0732a52fc5601f"
+          }
+        },
+        "author_association": "CONTRIBUTOR",
+        "auto_merge": null,
+        "active_lock_reason": null
+      },
+      {
+        "url": "https://api.github.com/repos/discord/cocoapods-bazel/pulls/2",
+        "id": 1279370550,
+        "node_id": "PR_kwDOI5jSKM5MQaU2",
+        "number": 2,
+        "state": "closed",
+        "locked": false,
+        "title": "[cocoapods-bazel] Make targets use external repository names",
+        "user": {
+          "login": "nataliejameson",
+          "id": 6351854,
+          "node_id": "MDQ6VXNlcjYzNTE4NTQ=",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/nataliejameson",
+          "type": "User",
+          "site_admin": false
+        },
+        "body": "Instead of using `//<pod dir>` for dependencies, use `@<pod\nname>//:<label>`. This makes deps work properly in our repository.\n\nTest Plan: Regenerated PINCache (deps on PINOperation) with `clyde ios\nsync-pods` and `clyde ios build` passed.\n",
+        "created_at": "2023-03-16T21:52:55Z",
+        "updated_at": "2023-03-16T22:34:43Z",
+        "closed_at": "2023-03-16T22:34:43Z",
+        "merged_at": "2023-03-16T22:34:43Z",
+        "merge_commit_sha": "b3ca60de2fad3246663f7d9ede59f7155db787ad",
+        "assignee": null,
+        "assignees": [],
+        "requested_reviewers": [],
+        "requested_teams": [],
+        "labels": [],
+        "milestone": null,
+        "draft": false,
+        "head": {
+          "label": "discord:nmj/change-labels",
+          "ref": "nmj/change-labels",
+          "sha": "0cd1277802d1d631546004f50d20b0d46bd61565",
+          "user": {
+            "login": "discord",
+            "id": 1965106,
+            "node_id": "MDEyOk9yZ2FuaXphdGlvbjE5NjUxMDY=",
+            "gravatar_id": "",
+            "url": "https://api.github.com/users/discord",
+            "type": "Organization",
+            "site_admin": false
+          },
+          "repo": {
+            "id": 597217832,
+            "node_id": "R_kgDOI5jSKA",
+            "name": "cocoapods-bazel",
+            "full_name": "discord/cocoapods-bazel",
+            "private": false,
+            "owner": {
+              "login": "discord",
+              "id": 1965106,
+              "node_id": "MDEyOk9yZ2FuaXphdGlvbjE5NjUxMDY=",
+              "gravatar_id": "",
+              "url": "https://api.github.com/users/discord",
+              "type": "Organization",
+              "site_admin": false
+            },
+            "description": "A Cocoapods plugin for automatically generating Bazel BUILD files",
+            "fork": false,
+            "url": "https://api.github.com/repos/discord/cocoapods-bazel",
+            "created_at": "2023-02-03T22:23:54Z",
+            "updated_at": "2023-03-04T01:19:41Z",
+            "pushed_at": "2023-04-07T17:45:26Z",
+            "homepage": "",
+            "size": 7256,
+            "stargazers_count": 0,
+            "watchers_count": 0,
+            "language": "Ruby",
+            "has_issues": false,
+            "has_projects": true,
+            "has_downloads": true,
+            "has_wiki": true,
+            "has_pages": false,
+            "has_discussions": false,
+            "forks_count": 0,
+            "archived": false,
+            "disabled": false,
+            "open_issues_count": 0,
+            "license": {
+              "key": "apache-2.0",
+              "name": "Apache License 2.0",
+              "spdx_id": "Apache-2.0",
+              "url": "https://api.github.com/licenses/apache-2.0",
+              "node_id": "MDc6TGljZW5zZTI="
+            },
+            "allow_forking": true,
+            "is_template": false,
+            "web_commit_signoff_required": false,
+            "topics": [],
+            "visibility": "public",
+            "forks": 0,
+            "open_issues": 0,
+            "watchers": 0,
+            "default_branch": "discord"
+          }
+        },
+        "base": {
+          "label": "discord:discord",
+          "ref": "discord",
+          "sha": "722c9398ac628943e4084eaebfcec0e85f536663",
+          "user": {
+            "login": "discord",
+            "id": 1965106,
+            "node_id": "MDEyOk9yZ2FuaXphdGlvbjE5NjUxMDY=",
+            "gravatar_id": "",
+            "url": "https://api.github.com/users/discord",
+            "type": "Organization",
+            "site_admin": false
+          },
+          "repo": {
+            "id": 597217832,
+            "node_id": "R_kgDOI5jSKA",
+            "name": "cocoapods-bazel",
+            "full_name": "discord/cocoapods-bazel",
+            "private": false,
+            "owner": {
+              "login": "discord",
+              "id": 1965106,
+              "node_id": "MDEyOk9yZ2FuaXphdGlvbjE5NjUxMDY=",
+              "gravatar_id": "",
+              "url": "https://api.github.com/users/discord",
+              "type": "Organization",
+              "site_admin": false
+            },
+            "description": "A Cocoapods plugin for automatically generating Bazel BUILD files",
+            "fork": false,
+            "url": "https://api.github.com/repos/discord/cocoapods-bazel",
+            "created_at": "2023-02-03T22:23:54Z",
+            "updated_at": "2023-03-04T01:19:41Z",
+            "pushed_at": "2023-04-07T17:45:26Z",
+            "homepage": "",
+            "size": 7256,
+            "stargazers_count": 0,
+            "watchers_count": 0,
+            "language": "Ruby",
+            "has_issues": false,
+            "has_projects": true,
+            "has_downloads": true,
+            "has_wiki": true,
+            "has_pages": false,
+            "has_discussions": false,
+            "forks_count": 0,
+            "archived": false,
+            "disabled": false,
+            "open_issues_count": 0,
+            "license": {
+              "key": "apache-2.0",
+              "name": "Apache License 2.0",
+              "spdx_id": "Apache-2.0",
+              "url": "https://api.github.com/licenses/apache-2.0",
+              "node_id": "MDc6TGljZW5zZTI="
+            },
+            "allow_forking": true,
+            "is_template": false,
+            "web_commit_signoff_required": false,
+            "topics": [],
+            "visibility": "public",
+            "forks": 0,
+            "open_issues": 0,
+            "watchers": 0,
+            "default_branch": "discord"
+          }
+        },
+        "_links": {
+          "self": {
+            "href": "https://api.github.com/repos/discord/cocoapods-bazel/pulls/2"
+          },
+          "html": {
+            "href": "https://github.com/discord/cocoapods-bazel/pull/2"
+          },
+          "issue": {
+            "href": "https://api.github.com/repos/discord/cocoapods-bazel/issues/2"
+          },
+          "comments": {
+            "href": "https://api.github.com/repos/discord/cocoapods-bazel/issues/2/comments"
+          },
+          "review_comments": {
+            "href": "https://api.github.com/repos/discord/cocoapods-bazel/pulls/2/comments"
+          },
+          "review_comment": {
+            "href": "https://api.github.com/repos/discord/cocoapods-bazel/pulls/comments{/number}"
+          },
+          "commits": {
+            "href": "https://api.github.com/repos/discord/cocoapods-bazel/pulls/2/commits"
+          },
+          "statuses": {
+            "href": "https://api.github.com/repos/discord/cocoapods-bazel/statuses/0cd1277802d1d631546004f50d20b0d46bd61565"
+          }
+        },
+        "author_association": "CONTRIBUTOR",
+        "auto_merge": null,
+        "active_lock_reason": null
+      },
+      {
+        "url": "https://api.github.com/repos/discord/cocoapods-bazel/pulls/1",
+        "id": 1259311636,
+        "node_id": "PR_kwDOI5jSKM5LD5IU",
+        "number": 1,
+        "state": "closed",
+        "locked": false,
+        "title": "Add workspace configuration option.",
+        "user": {
+          "login": "Osmose",
+          "id": 193106,
+          "node_id": "MDQ6VXNlcjE5MzEwNg==",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/Osmose",
+          "type": "User",
+          "site_admin": false
+        },
+        "body": "- Asana: https://app.asana.com/0/1203960884932166/1203960894292059/f\r\n\r\n`workspace` allows you to specify the path to the Bazel workspace you're using, where previously it was assumed that the Podfile's directory was the same as your workspace, which may not be the case in monorepos.",
+        "created_at": "2023-03-01T19:10:58Z",
+        "updated_at": "2023-03-01T22:08:18Z",
+        "closed_at": "2023-03-01T22:08:11Z",
+        "merged_at": "2023-03-01T22:08:11Z",
+        "merge_commit_sha": "722c9398ac628943e4084eaebfcec0e85f536663",
+        "assignee": null,
+        "assignees": [],
+        "requested_reviewers": [],
+        "requested_teams": [],
+        "labels": [],
+        "milestone": null,
+        "draft": false,
+        "head": {
+          "label": "discord:workspace-directory",
+          "ref": "workspace-directory",
+          "sha": "dadc4698b028e7dad8ca1bb42fc6ec1fe57819e4",
+          "user": {
+            "login": "discord",
+            "id": 1965106,
+            "node_id": "MDEyOk9yZ2FuaXphdGlvbjE5NjUxMDY=",
+            "gravatar_id": "",
+            "url": "https://api.github.com/users/discord",
+            "type": "Organization",
+            "site_admin": false
+          },
+          "repo": {
+            "id": 597217832,
+            "node_id": "R_kgDOI5jSKA",
+            "name": "cocoapods-bazel",
+            "full_name": "discord/cocoapods-bazel",
+            "private": false,
+            "owner": {
+              "login": "discord",
+              "id": 1965106,
+              "node_id": "MDEyOk9yZ2FuaXphdGlvbjE5NjUxMDY=",
+              "gravatar_id": "",
+              "url": "https://api.github.com/users/discord",
+              "type": "Organization",
+              "site_admin": false
+            },
+            "description": "A Cocoapods plugin for automatically generating Bazel BUILD files",
+            "fork": false,
+            "url": "https://api.github.com/repos/discord/cocoapods-bazel",
+            "created_at": "2023-02-03T22:23:54Z",
+            "updated_at": "2023-03-04T01:19:41Z",
+            "pushed_at": "2023-04-07T17:45:26Z",
+            "homepage": "",
+            "size": 7256,
+            "stargazers_count": 0,
+            "watchers_count": 0,
+            "language": "Ruby",
+            "has_issues": false,
+            "has_projects": true,
+            "has_downloads": true,
+            "has_wiki": true,
+            "has_pages": false,
+            "has_discussions": false,
+            "forks_count": 0,
+            "archived": false,
+            "disabled": false,
+            "open_issues_count": 0,
+            "license": {
+              "key": "apache-2.0",
+              "name": "Apache License 2.0",
+              "spdx_id": "Apache-2.0",
+              "url": "https://api.github.com/licenses/apache-2.0",
+              "node_id": "MDc6TGljZW5zZTI="
+            },
+            "allow_forking": true,
+            "is_template": false,
+            "web_commit_signoff_required": false,
+            "topics": [],
+            "visibility": "public",
+            "forks": 0,
+            "open_issues": 0,
+            "watchers": 0,
+            "default_branch": "discord"
+          }
+        },
+        "base": {
+          "label": "discord:discord",
+          "ref": "discord",
+          "sha": "137e9d39c5420e5fe30643754fee3854c2b40489",
+          "user": {
+            "login": "discord",
+            "id": 1965106,
+            "node_id": "MDEyOk9yZ2FuaXphdGlvbjE5NjUxMDY=",
+            "gravatar_id": "",
+            "url": "https://api.github.com/users/discord",
+            "type": "Organization",
+            "site_admin": false
+          },
+          "repo": {
+            "id": 597217832,
+            "node_id": "R_kgDOI5jSKA",
+            "name": "cocoapods-bazel",
+            "full_name": "discord/cocoapods-bazel",
+            "private": false,
+            "owner": {
+              "login": "discord",
+              "id": 1965106,
+              "node_id": "MDEyOk9yZ2FuaXphdGlvbjE5NjUxMDY=",
+              "gravatar_id": "",
+              "url": "https://api.github.com/users/discord",
+              "type": "Organization",
+              "site_admin": false
+            },
+            "description": "A Cocoapods plugin for automatically generating Bazel BUILD files",
+            "fork": false,
+            "url": "https://api.github.com/repos/discord/cocoapods-bazel",
+            "created_at": "2023-02-03T22:23:54Z",
+            "updated_at": "2023-03-04T01:19:41Z",
+            "pushed_at": "2023-04-07T17:45:26Z",
+            "homepage": "",
+            "size": 7256,
+            "stargazers_count": 0,
+            "watchers_count": 0,
+            "language": "Ruby",
+            "has_issues": false,
+            "has_projects": true,
+            "has_downloads": true,
+            "has_wiki": true,
+            "has_pages": false,
+            "has_discussions": false,
+            "forks_count": 0,
+            "archived": false,
+            "disabled": false,
+            "open_issues_count": 0,
+            "license": {
+              "key": "apache-2.0",
+              "name": "Apache License 2.0",
+              "spdx_id": "Apache-2.0",
+              "url": "https://api.github.com/licenses/apache-2.0",
+              "node_id": "MDc6TGljZW5zZTI="
+            },
+            "allow_forking": true,
+            "is_template": false,
+            "web_commit_signoff_required": false,
+            "topics": [],
+            "visibility": "public",
+            "forks": 0,
+            "open_issues": 0,
+            "watchers": 0,
+            "default_branch": "discord"
+          }
+        },
+        "_links": {
+          "self": {
+            "href": "https://api.github.com/repos/discord/cocoapods-bazel/pulls/1"
+          },
+          "html": {
+            "href": "https://github.com/discord/cocoapods-bazel/pull/1"
+          },
+          "issue": {
+            "href": "https://api.github.com/repos/discord/cocoapods-bazel/issues/1"
+          },
+          "comments": {
+            "href": "https://api.github.com/repos/discord/cocoapods-bazel/issues/1/comments"
+          },
+          "review_comments": {
+            "href": "https://api.github.com/repos/discord/cocoapods-bazel/pulls/1/comments"
+          },
+          "review_comment": {
+            "href": "https://api.github.com/repos/discord/cocoapods-bazel/pulls/comments{/number}"
+          },
+          "commits": {
+            "href": "https://api.github.com/repos/discord/cocoapods-bazel/pulls/1/commits"
+          },
+          "statuses": {
+            "href": "https://api.github.com/repos/discord/cocoapods-bazel/statuses/dadc4698b028e7dad8ca1bb42fc6ec1fe57819e4"
+          }
+        },
+        "author_association": "CONTRIBUTOR",
+        "auto_merge": null,
+        "active_lock_reason": null
+      }
+    ]
   }
 }
