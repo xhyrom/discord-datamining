@@ -82,8 +82,8 @@
           "url": "https://api.github.com/repos/discord/elasticsearch-dsl-rs/git/commits/653e66f2b1c46fd2bc7d48fce8b2b92a35ea78de",
           "comment_count": 0,
           "verification": {
-            "verified": true,
-            "reason": "valid",
+            "verified": false,
+            "reason": "gpgverify_unavailable",
             "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsBcBAABCAAQBQJj453jCRBK7hj4Ov3rIwAAW6YIAGU8Fa6ubHwSYHC+k1qKBFfX\nlZCH7MprQbG3Q2ZP0V2+XXmHc0cXJHA3qbIi7yw2ljXQLfsRcGHIhuPeqLqsc4sf\n8v+6Io6zBxjp044oZto4EtE+n3plbcu/4ioRjxEnlxlqzoSQhQ7Jkkot4OLbHO8R\nab+I7U7SwnT55rYiW1RWM8p4he7eYHxyUYuiRsJ9afs7nV+yZtrII9VST33glJBN\noZDDfPwYmX8vdDinB1s8vHs0nvQAVti/lsMk/KmwuDhjOPJO6U2mgeTFnqxkeagQ\nYgHI6iA77yHss7myVbZaAdee3FknmscmJKSik/zthy0ygE2EapHvGWlA+IBgtEs=\n=925q\n-----END PGP SIGNATURE-----\n",
             "payload": "tree cc116f1eda5a268faf7b925bb30161739ba99160\nparent 5cfb07719235e2c571665d07b24e6b8985c5f19f\nauthor Evaldas Buinauskas <7301441+buinauskas@users.noreply.github.com> 1675861475 +0200\ncommitter GitHub <noreply@github.com> 1675861475 +0200\n\nFix clippy rules (#211)\n\n"
           }
@@ -136,8 +136,8 @@
           "url": "https://api.github.com/repos/discord/elasticsearch-dsl-rs/git/commits/5cfb07719235e2c571665d07b24e6b8985c5f19f",
           "comment_count": 0,
           "verification": {
-            "verified": true,
-            "reason": "valid",
+            "verified": false,
+            "reason": "gpgverify_unavailable",
             "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsBcBAABCAAQBQJj2grkCRBK7hj4Ov3rIwAAorwIAJoAOA9PuZrHDc1b/lm/KUb1\ntM0gGJLyirIJFOBi+DxT/6klsBJikMTX0sNM+Bi5+n3Yx7MK8h9KHKQPJ3J6aznZ\niRiKhFNUqZfefWJ7HXb5SiUNQEBDerleRzWTBWQV7W3Rt9Qyfx8BKD2+qi+q10gr\nAZeODwyAYJpoTMGNdGwM/u2YGgSRXUxNicrZrmydFbr9P0ehZGpGwzc68gAUXhWn\nt+QZ9KAO2RvvcmpgVj3VZGGrFqsWYXxpIBCXi5tMEKSmRbCvc0ffZMmEzOSeF/Yb\nxFJVEabBX6c6K0oJT07rH9x3Za52rSFwQpRW3y1N7J9xIab42woVY70cs1c7Q3g=\n=uNGr\n-----END PGP SIGNATURE-----\n",
             "payload": "tree 85bb4f78d52f1f2a9a1ddce2c65be1ae88483536\nparent 26a1fb17a2c85380c118db59e8915d0ea23005a7\nauthor github-actions[bot] <41898282+github-actions[bot]@users.noreply.github.com> 1675234020 +0200\ncommitter GitHub <noreply@github.com> 1675234020 +0200\n\nUpdate Contributors (#210)\n\nCo-authored-by: buinauskas <buinauskas@users.noreply.github.com>"
           }
@@ -190,8 +190,8 @@
           "url": "https://api.github.com/repos/discord/elasticsearch-dsl-rs/git/commits/26a1fb17a2c85380c118db59e8915d0ea23005a7",
           "comment_count": 0,
           "verification": {
-            "verified": true,
-            "reason": "valid",
+            "verified": false,
+            "reason": "gpgverify_unavailable",
             "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsBcBAABCAAQBQJj0iHbCRBK7hj4Ov3rIwAAFrgIAIudBUVx5OdBoKwKnBqtHqf/\nQpFfp4HJFVgccgQpEsQjkRP26gDR0BzTgUXg6NjNRnNoFMr4VLVzjVlTy4SUL3De\nDaPWrzLbzVnMmmH/GghP2TKiuu1NqpQHJ838AR/gYgN8i2MwwkAlJkfsZvIzBL1q\nuw95MXslF2THszqgL54nFWyeuhyKCGFWTrAXR3hXXYEvsiQ0PfSISQA0oOUo/Msd\n6YoxQ7JtLoDdxHWPcg69CbzefJ/g3An/Gl7jK5e5+ZG1rK9zjGIgEmXjGLfd5rXt\nrGzO6+5DRDg7stsGZIH0zjMLZ9IDIn9k0Bje3r/8X3wP7rOex7TELRE6WnH+Trw=\n=nddi\n-----END PGP SIGNATURE-----\n",
             "payload": "tree 22619fb5dc6d6bf04b1c746f0ffb97dcb6d0d0e2\nparent 60c14c732704f1200c5ed89297b6397abedb6485\nauthor Joseph Crail <jbcrail@gmail.com> 1674715611 -0800\ncommitter GitHub <noreply@github.com> 1674715611 +0200\n\nUpdate docs for ExecutionHint enum (#209)\n\nI swapped the comments for two variants to correctly match the official\r\nElasticsearch documentation."
           }
@@ -244,8 +244,8 @@
           "url": "https://api.github.com/repos/discord/elasticsearch-dsl-rs/git/commits/60c14c732704f1200c5ed89297b6397abedb6485",
           "comment_count": 0,
           "verification": {
-            "verified": true,
-            "reason": "valid",
+            "verified": false,
+            "reason": "gpgverify_unavailable",
             "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsBcBAABCAAQBQJjs/iiCRBK7hj4Ov3rIwAAHQsIABxafVw0QFMY3KD66dJ+vygV\nkp1CdsK0kWdJerCMZSF+eguup3kELfJO7C5DJrpxmiEBEl+CE1lYtOwh50pxpxi5\neBX8jTusiyqii9+sKjKRz33BHaT9e1JC/GedKY2Y/el2SVZ3bQmMylCPAVMBqD/i\n0Aj2fQj9Y4eYsw96CiA+vz7Vrfy7ZhnwCn+wE8H10jLLliVbtcZ4NacIJ0a7UvWB\n/rE6vLKT9wR8yq+MBS37F7bSz7PASRqjQ27Tu+ZxThJxFv/AK/TC7TyTIeGScqol\nG4E14nHaEYyYIR+1366YG6bOu3r7y6dToy8OMeJw+6Dnb/Fh8b9YOGRIDqsvD2Y=\n=lCGR\n-----END PGP SIGNATURE-----\n",
             "payload": "tree ce1cee3f723eb987ee1e362e6d807d79f5a334cc\nparent 7196176cbc7fde77cd7516099107f1ec2923f21d\nauthor Evaldas Buinauskas <7301441+buinauskas@users.noreply.github.com> 1672738978 +0200\ncommitter GitHub <noreply@github.com> 1672738978 +0200\n\nMake map/set type aliases internal (#208)\n\n"
           }
@@ -298,8 +298,8 @@
           "url": "https://api.github.com/repos/discord/elasticsearch-dsl-rs/git/commits/7196176cbc7fde77cd7516099107f1ec2923f21d",
           "comment_count": 0,
           "verification": {
-            "verified": true,
-            "reason": "valid",
+            "verified": false,
+            "reason": "gpgverify_unavailable",
             "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsBcBAABCAAQBQJji3r6CRBK7hj4Ov3rIwAAZ9wIAJXXLInHpIorTQycnJCu6ovj\n7XEIwTedL9HI4vruFXn1c1OOqkNpA+9Xt/J8iu6d+7uDs9QNMq2hyACrTJXQnuws\n3QYi1FzgYenJtXfdjvCcKM15tym1xey5vyVQSZ+Wpw/6WrXC+G1dlW9srbIQt9wQ\nxCX3QeooskytjOrEHWqsXdhveTW24ph5nuN1rvNz8V/uCGTua3NPtPl9yuu1zOGJ\nR07iDEt9QZbqcHM1lPiAHQKCl5ZDVSAhFIWqAJpuPKG0G6XUxEuE1WuY43qa99B/\nh3CGVrvMkczJG51WNuvcQTbVsOf/gLdIoi1sAQiS75z18ASLIljk/F1W53DwNQs=\n=eZbY\n-----END PGP SIGNATURE-----\n",
             "payload": "tree 2d0895c9c199deed14ce23398d507ef2f35db732\nparent 289be448c414394b770687bd59b169d486bd1a63\nauthor Evaldas Buinauskas <7301441+buinauskas@users.noreply.github.com> 1670085370 +0200\ncommitter GitHub <noreply@github.com> 1670085370 +0200\n\nImplement span queries (#207)\n\n* Initial span query implementation\r\n\r\n* Add documentation\r\n\r\n* Bump package version\r\n\r\n* Fix cargo docs"
           }
