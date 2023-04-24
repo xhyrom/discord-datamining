@@ -57,16 +57,7 @@
     "triage": false,
     "pull": false
   },
-  "branches": [
-    {
-      "name": "master",
-      "commit": {
-        "sha": "121ab223b05cccf39942d617a377bb1aa4102fa8",
-        "url": "https://api.github.com/repos/discord/postcss-theme-shorthand/commits/121ab223b05cccf39942d617a377bb1aa4102fa8"
-      },
-      "protected": false
-    }
-  ],
+  "branches": [],
   "last5": {
     "commits": [
       {
