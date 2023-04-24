@@ -344,7 +344,56 @@
       }
     ],
     "releases": [],
-    "issues": [],
+    "issues": [
+      {
+        "url": "https://api.github.com/repos/discord/TOCropViewController/issues/1",
+        "id": 962994163,
+        "node_id": "MDExOlB1bGxSZXF1ZXN0NzA1NzAyNjA5",
+        "number": 1,
+        "title": "[discord] add gif cropping support",
+        "user": {
+          "login": "nealmanaktola",
+          "id": 1707258,
+          "node_id": "MDQ6VXNlcjE3MDcyNTg=",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/nealmanaktola",
+          "type": "User",
+          "site_admin": false
+        },
+        "labels": [],
+        "state": "closed",
+        "locked": false,
+        "assignee": null,
+        "assignees": [],
+        "milestone": null,
+        "comments": 0,
+        "created_at": "2021-08-06T19:31:36Z",
+        "updated_at": "2021-10-29T14:29:01Z",
+        "closed_at": "2021-10-29T14:29:01Z",
+        "author_association": "COLLABORATOR",
+        "active_lock_reason": null,
+        "draft": false,
+        "pull_request": {
+          "url": "https://api.github.com/repos/discord/TOCropViewController/pulls/1",
+          "merged_at": "2021-10-29T14:29:01Z"
+        },
+        "body": "This adds GIF cropping support to the crop controller.\r\n\r\nThe main change here is that when an image is cropped, all frames are expanded and cropped, and then combined together.\r\nA good portion of the code inside UIImage+Animated.m was taken from SDWebImage which handles the encoding/decoding of gifs",
+        "reactions": {
+          "url": "https://api.github.com/repos/discord/TOCropViewController/issues/1/reactions",
+          "total_count": 0,
+          "+1": 0,
+          "-1": 0,
+          "laugh": 0,
+          "hooray": 0,
+          "confused": 0,
+          "heart": 0,
+          "rocket": 0,
+          "eyes": 0
+        },
+        "performed_via_github_app": null,
+        "state_reason": null
+      }
+    ],
     "pullRequests": []
   }
 }
