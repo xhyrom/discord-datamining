@@ -59,9 +59,381 @@
   },
   "branches": [],
   "last5": {
-    "commits": [],
+    "commits": [
+      {
+        "sha": "88bf2fe30a4399425647282635ebcecb7134a200",
+        "node_id": "MDY6Q29tbWl0NjU4NTQ5NTk6ODhiZjJmZTMwYTQzOTk0MjU2NDcyODI2MzVlYmNlY2I3MTM0YTIwMA==",
+        "commit": {
+          "author": {
+            "name": "Danny Weinberg",
+            "email": "danny.weinberg@discordapp.com",
+            "date": "2019-04-30T00:47:40Z"
+          },
+          "committer": {
+            "name": "GitHub",
+            "email": "noreply@github.com",
+            "date": "2019-04-30T00:47:40Z"
+          },
+          "message": "Add -discord to disambiguate version (#1)",
+          "tree": {
+            "sha": "0303f66bfa67137802ff0606f779fda5974a419f",
+            "url": "https://api.github.com/repos/discord/humanize/git/trees/0303f66bfa67137802ff0606f779fda5974a419f"
+          },
+          "url": "https://api.github.com/repos/discord/humanize/git/commits/88bf2fe30a4399425647282635ebcecb7134a200",
+          "comment_count": 0,
+          "verification": {
+            "verified": true,
+            "reason": "valid",
+            "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsBcBAABCAAQBQJcx5ssCRBK7hj4Ov3rIwAAdHIIAHXfd/SeDLPkRFt762tt17eM\nud3VULqCLSq5yGtbScmk9j3lOH6Kjk7xNMnPVMbIeSL/vrbApPRMiSwIBPB1s687\nj9T7BPxP9huJqIhBdD7bv/ufoCKLLKcK69P0Uip1gkaGZ2rWHkz+QQbBx6V51g6J\nGvzOvnDmIPg0q620lICJXxzvUGd1ZasY6n/dA9xu76+ex9apSJXFDljbn5uAVIaZ\nFU3dEET0nQ+P48aW22cumV3mxi8IOpNq71jjHfro7IS27rjadLZA66Zs7ft6antc\nlylrn6ICR6kUtnwRHmDTgdkMXAQNvz7RhyGc3cUFuVzT5WYTuCnmirYpAfecvUU=\n=g3AE\n-----END PGP SIGNATURE-----\n",
+            "payload": "tree 0303f66bfa67137802ff0606f779fda5974a419f\nparent 5ed9b04636f5592540832335fb21acba8ce7e16c\nauthor Danny Weinberg <danny.weinberg@discordapp.com> 1556585260 -0700\ncommitter GitHub <noreply@github.com> 1556585260 -0700\n\nAdd -discord to disambiguate version (#1)\n\n"
+          }
+        },
+        "url": "https://api.github.com/repos/discord/humanize/commits/88bf2fe30a4399425647282635ebcecb7134a200",
+        "author": {
+          "login": "FuegoFro",
+          "id": 463696,
+          "node_id": "MDQ6VXNlcjQ2MzY5Ng==",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/FuegoFro",
+          "type": "User",
+          "site_admin": false
+        },
+        "committer": {
+          "login": "web-flow",
+          "id": 19864447,
+          "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/web-flow",
+          "type": "User",
+          "site_admin": false
+        },
+        "parents": [
+          {
+            "sha": "5ed9b04636f5592540832335fb21acba8ce7e16c",
+            "url": "https://api.github.com/repos/discord/humanize/commits/5ed9b04636f5592540832335fb21acba8ce7e16c"
+          }
+        ]
+      },
+      {
+        "sha": "5ed9b04636f5592540832335fb21acba8ce7e16c",
+        "node_id": "MDY6Q29tbWl0NjU4NTQ5NTk6NWVkOWIwNDYzNmY1NTkyNTQwODMyMzM1ZmIyMWFjYmE4Y2U3ZTE2Yw==",
+        "commit": {
+          "author": {
+            "name": "Michael Peterson",
+            "email": "peterson@discordapp.com",
+            "date": "2016-08-16T21:30:58Z"
+          },
+          "committer": {
+            "name": "Michael Peterson",
+            "email": "peterson@discordapp.com",
+            "date": "2016-08-16T21:30:58Z"
+          },
+          "message": "Removed a bad link in the license",
+          "tree": {
+            "sha": "a09790223a022be967324b08693aa83e5c0b14c4",
+            "url": "https://api.github.com/repos/discord/humanize/git/trees/a09790223a022be967324b08693aa83e5c0b14c4"
+          },
+          "url": "https://api.github.com/repos/discord/humanize/git/commits/5ed9b04636f5592540832335fb21acba8ce7e16c",
+          "comment_count": 0,
+          "verification": {
+            "verified": false,
+            "reason": "unsigned",
+            "signature": null,
+            "payload": null
+          }
+        },
+        "url": "https://api.github.com/repos/discord/humanize/commits/5ed9b04636f5592540832335fb21acba8ce7e16c",
+        "author": {
+          "login": "mpeterson2",
+          "id": 3723316,
+          "node_id": "MDQ6VXNlcjM3MjMzMTY=",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/mpeterson2",
+          "type": "User",
+          "site_admin": false
+        },
+        "committer": {
+          "login": "mpeterson2",
+          "id": 3723316,
+          "node_id": "MDQ6VXNlcjM3MjMzMTY=",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/mpeterson2",
+          "type": "User",
+          "site_admin": false
+        },
+        "parents": [
+          {
+            "sha": "2b088754676d280a291c25f0b210e895b40dc9e7",
+            "url": "https://api.github.com/repos/discord/humanize/commits/2b088754676d280a291c25f0b210e895b40dc9e7"
+          }
+        ]
+      },
+      {
+        "sha": "2b088754676d280a291c25f0b210e895b40dc9e7",
+        "node_id": "MDY6Q29tbWl0NjU4NTQ5NTk6MmIwODg3NTQ2NzZkMjgwYTI5MWMyNWYwYjIxMGU4OTViNDBkYzllNw==",
+        "commit": {
+          "author": {
+            "name": "Tai-Jin Lee",
+            "email": "taijin@gmail.com",
+            "date": "2013-10-24T17:07:28Z"
+          },
+          "committer": {
+            "name": "Tai-Jin Lee",
+            "email": "taijin@gmail.com",
+            "date": "2013-10-24T17:07:28Z"
+          },
+          "message": "Merge pull request #12 from p-j/patch-1\n\nFix typo",
+          "tree": {
+            "sha": "0de1d4d3dee057330039309671b8a2fffc2e166e",
+            "url": "https://api.github.com/repos/discord/humanize/git/trees/0de1d4d3dee057330039309671b8a2fffc2e166e"
+          },
+          "url": "https://api.github.com/repos/discord/humanize/git/commits/2b088754676d280a291c25f0b210e895b40dc9e7",
+          "comment_count": 0,
+          "verification": {
+            "verified": false,
+            "reason": "unsigned",
+            "signature": null,
+            "payload": null
+          }
+        },
+        "url": "https://api.github.com/repos/discord/humanize/commits/2b088754676d280a291c25f0b210e895b40dc9e7",
+        "author": {
+          "login": "taijinlee",
+          "id": 971101,
+          "node_id": "MDQ6VXNlcjk3MTEwMQ==",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/taijinlee",
+          "type": "User",
+          "site_admin": false
+        },
+        "committer": {
+          "login": "taijinlee",
+          "id": 971101,
+          "node_id": "MDQ6VXNlcjk3MTEwMQ==",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/taijinlee",
+          "type": "User",
+          "site_admin": false
+        },
+        "parents": [
+          {
+            "sha": "81eac6c53289951a084001674e8bedebdafcc474",
+            "url": "https://api.github.com/repos/discord/humanize/commits/81eac6c53289951a084001674e8bedebdafcc474"
+          },
+          {
+            "sha": "42455256d6e1c8351e6fff540628a9c0d157cfe4",
+            "url": "https://api.github.com/repos/discord/humanize/commits/42455256d6e1c8351e6fff540628a9c0d157cfe4"
+          }
+        ]
+      },
+      {
+        "sha": "42455256d6e1c8351e6fff540628a9c0d157cfe4",
+        "node_id": "MDY6Q29tbWl0NjU4NTQ5NTk6NDI0NTUyNTZkNmUxYzgzNTFlNmZmZjU0MDYyOGE5YzBkMTU3Y2ZlNA==",
+        "commit": {
+          "author": {
+            "name": "Jeremie Parker",
+            "email": "github@jeremie-parker.com",
+            "date": "2013-10-24T07:56:55Z"
+          },
+          "committer": {
+            "name": "Jeremie Parker",
+            "email": "github@jeremie-parker.com",
+            "date": "2013-10-24T07:56:55Z"
+          },
+          "message": "Fix typo\n\nfixed a typo in the readme file.",
+          "tree": {
+            "sha": "0de1d4d3dee057330039309671b8a2fffc2e166e",
+            "url": "https://api.github.com/repos/discord/humanize/git/trees/0de1d4d3dee057330039309671b8a2fffc2e166e"
+          },
+          "url": "https://api.github.com/repos/discord/humanize/git/commits/42455256d6e1c8351e6fff540628a9c0d157cfe4",
+          "comment_count": 0,
+          "verification": {
+            "verified": false,
+            "reason": "unsigned",
+            "signature": null,
+            "payload": null
+          }
+        },
+        "url": "https://api.github.com/repos/discord/humanize/commits/42455256d6e1c8351e6fff540628a9c0d157cfe4",
+        "author": {
+          "login": "p-j",
+          "id": 1537324,
+          "node_id": "MDQ6VXNlcjE1MzczMjQ=",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/p-j",
+          "type": "User",
+          "site_admin": false
+        },
+        "committer": {
+          "login": "p-j",
+          "id": 1537324,
+          "node_id": "MDQ6VXNlcjE1MzczMjQ=",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/p-j",
+          "type": "User",
+          "site_admin": false
+        },
+        "parents": [
+          {
+            "sha": "81eac6c53289951a084001674e8bedebdafcc474",
+            "url": "https://api.github.com/repos/discord/humanize/commits/81eac6c53289951a084001674e8bedebdafcc474"
+          }
+        ]
+      },
+      {
+        "sha": "81eac6c53289951a084001674e8bedebdafcc474",
+        "node_id": "MDY6Q29tbWl0NjU4NTQ5NTk6ODFlYWM2YzUzMjg5OTUxYTA4NDAwMTY3NGU4YmVkZWJkYWZjYzQ3NA==",
+        "commit": {
+          "author": {
+            "name": "Tai-Jin Lee",
+            "email": "taijin@gmail.com",
+            "date": "2013-09-19T23:33:07Z"
+          },
+          "committer": {
+            "name": "Tai-Jin Lee",
+            "email": "taijin@gmail.com",
+            "date": "2013-09-19T23:33:07Z"
+          },
+          "message": "forgot bower version bump",
+          "tree": {
+            "sha": "4a5898e25a085722ec6633ca772af54c83bed214",
+            "url": "https://api.github.com/repos/discord/humanize/git/trees/4a5898e25a085722ec6633ca772af54c83bed214"
+          },
+          "url": "https://api.github.com/repos/discord/humanize/git/commits/81eac6c53289951a084001674e8bedebdafcc474",
+          "comment_count": 0,
+          "verification": {
+            "verified": false,
+            "reason": "unsigned",
+            "signature": null,
+            "payload": null
+          }
+        },
+        "url": "https://api.github.com/repos/discord/humanize/commits/81eac6c53289951a084001674e8bedebdafcc474",
+        "author": {
+          "login": "taijinlee",
+          "id": 971101,
+          "node_id": "MDQ6VXNlcjk3MTEwMQ==",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/taijinlee",
+          "type": "User",
+          "site_admin": false
+        },
+        "committer": {
+          "login": "taijinlee",
+          "id": 971101,
+          "node_id": "MDQ6VXNlcjk3MTEwMQ==",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/taijinlee",
+          "type": "User",
+          "site_admin": false
+        },
+        "parents": [
+          {
+            "sha": "bfdf829c54cefbfad08f3b19daf56a8a318edac1",
+            "url": "https://api.github.com/repos/discord/humanize/commits/bfdf829c54cefbfad08f3b19daf56a8a318edac1"
+          }
+        ]
+      }
+    ],
     "releases": [],
-    "issues": [],
+    "issues": [
+      {
+        "url": "https://api.github.com/repos/discord/humanize/issues/2",
+        "id": 952051493,
+        "node_id": "MDExOlB1bGxSZXF1ZXN0Njk2MzMyOTcz",
+        "number": 2,
+        "title": "Fixed some README.md missformats",
+        "user": {
+          "login": "Ru-Pirie",
+          "id": 67950865,
+          "node_id": "MDQ6VXNlcjY3OTUwODY1",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/Ru-Pirie",
+          "type": "User",
+          "site_admin": false
+        },
+        "labels": [],
+        "state": "open",
+        "locked": false,
+        "assignee": null,
+        "assignees": [],
+        "milestone": null,
+        "comments": 0,
+        "created_at": "2021-07-24T10:56:54Z",
+        "updated_at": "2021-07-24T10:57:00Z",
+        "closed_at": null,
+        "author_association": "NONE",
+        "active_lock_reason": null,
+        "draft": false,
+        "pull_request": {
+          "url": "https://api.github.com/repos/discord/humanize/pulls/2",
+          "merged_at": null
+        },
+        "body": "There where missing spaces in your readme titles for the different functions. I fixed them :)",
+        "reactions": {
+          "url": "https://api.github.com/repos/discord/humanize/issues/2/reactions",
+          "total_count": 0,
+          "+1": 0,
+          "-1": 0,
+          "laugh": 0,
+          "hooray": 0,
+          "confused": 0,
+          "heart": 0,
+          "rocket": 0,
+          "eyes": 0
+        },
+        "performed_via_github_app": null,
+        "state_reason": null
+      },
+      {
+        "url": "https://api.github.com/repos/discord/humanize/issues/1",
+        "id": 438500640,
+        "node_id": "MDExOlB1bGxSZXF1ZXN0Mjc0NTE4MTkx",
+        "number": 1,
+        "title": "Add -discord to disambiguate version",
+        "user": {
+          "login": "FuegoFro",
+          "id": 463696,
+          "node_id": "MDQ6VXNlcjQ2MzY5Ng==",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/FuegoFro",
+          "type": "User",
+          "site_admin": false
+        },
+        "labels": [],
+        "state": "closed",
+        "locked": false,
+        "assignee": null,
+        "assignees": [],
+        "milestone": null,
+        "comments": 0,
+        "created_at": "2019-04-29T20:46:36Z",
+        "updated_at": "2019-04-30T00:47:41Z",
+        "closed_at": "2019-04-30T00:47:40Z",
+        "author_association": "NONE",
+        "active_lock_reason": null,
+        "draft": false,
+        "pull_request": {
+          "url": "https://api.github.com/repos/discord/humanize/pulls/1",
+          "merged_at": "2019-04-30T00:47:40Z"
+        },
+        "body": "",
+        "reactions": {
+          "url": "https://api.github.com/repos/discord/humanize/issues/1/reactions",
+          "total_count": 0,
+          "+1": 0,
+          "-1": 0,
+          "laugh": 0,
+          "hooray": 0,
+          "confused": 0,
+          "heart": 0,
+          "rocket": 0,
+          "eyes": 0
+        },
+        "performed_via_github_app": null,
+        "state_reason": null
+      }
+    ],
     "pullRequests": []
   }
 }

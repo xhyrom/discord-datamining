@@ -59,9 +59,622 @@
   },
   "branches": [],
   "last5": {
-    "commits": [],
-    "releases": [],
-    "issues": [],
+    "commits": [
+      {
+        "sha": "567b61c51056cbdec39e839100690c576c26a4c6",
+        "node_id": "C_kwDOB3oeTdoAKDU2N2I2MWM1MTA1NmNiZGVjMzllODM5MTAwNjkwYzU3NmMyNmE0YzY",
+        "commit": {
+          "author": {
+            "name": "Mohammed Keyvanzadeh",
+            "email": "mohammadkeyvanzade94@gmail.com",
+            "date": "2022-02-24T21:02:53Z"
+          },
+          "committer": {
+            "name": "GitHub",
+            "email": "noreply@github.com",
+            "date": "2022-02-24T21:02:53Z"
+          },
+          "message": "feat(code): add syntax highlighting for Diff (#38)",
+          "tree": {
+            "sha": "56a40eaf263c58c32841907a2ae71479633ef725",
+            "url": "https://api.github.com/repos/discord/SimpleAST/git/trees/56a40eaf263c58c32841907a2ae71479633ef725"
+          },
+          "url": "https://api.github.com/repos/discord/SimpleAST/git/commits/567b61c51056cbdec39e839100690c576c26a4c6",
+          "comment_count": 0,
+          "verification": {
+            "verified": true,
+            "reason": "valid",
+            "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsBcBAABCAAQBQJiF/J9CRBK7hj4Ov3rIwAAovMIAI+aFKfgQhwV4bEu/cihb/Mu\nBsTd4D9lINepkF2nzZQodTkj6G/ZWYoAQZaG28d9R/sVrbEw232/L9GPDOsWCCoW\nsJTn+DAPPZU2IM28OWkThrYBlpFg1OB8XWiqF4G9K7RtNwCo3M7AQbkzEIxiZYGo\nXocw48ZQ6tSp8pYfsIhPNX1fec++He6kCju7cgzBSMXflBWR3a1AWfiI3DDJ4S0W\nM4v6UP3y8niDHViPH+y2rouKsRIcr3//UJ0kiNDAo4jlttuvOcErwb+O1cqVVsRf\nS2UbcWnxzZg6qpMrFOv3s63AsAYt/QaPcnX3Vs1WRlFSxAz2CUSgd8V2W9XmAsU=\n=bv3W\n-----END PGP SIGNATURE-----\n",
+            "payload": "tree 56a40eaf263c58c32841907a2ae71479633ef725\nparent d8987f0fede109936c429f5001817f58b827ba0f\nauthor Mohammed Keyvanzadeh <mohammadkeyvanzade94@gmail.com> 1645736573 +0330\ncommitter GitHub <noreply@github.com> 1645736573 -0800\n\nfeat(code): add syntax highlighting for Diff (#38)\n\n"
+          }
+        },
+        "url": "https://api.github.com/repos/discord/SimpleAST/commits/567b61c51056cbdec39e839100690c576c26a4c6",
+        "author": {
+          "login": "VoltrexKeyva",
+          "id": 62040526,
+          "node_id": "MDQ6VXNlcjYyMDQwNTI2",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/VoltrexKeyva",
+          "type": "User",
+          "site_admin": false
+        },
+        "committer": {
+          "login": "web-flow",
+          "id": 19864447,
+          "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/web-flow",
+          "type": "User",
+          "site_admin": false
+        },
+        "parents": [
+          {
+            "sha": "d8987f0fede109936c429f5001817f58b827ba0f",
+            "url": "https://api.github.com/repos/discord/SimpleAST/commits/d8987f0fede109936c429f5001817f58b827ba0f"
+          }
+        ]
+      },
+      {
+        "sha": "d8987f0fede109936c429f5001817f58b827ba0f",
+        "node_id": "C_kwDOB3oeTdoAKGQ4OTg3ZjBmZWRlMTA5OTM2YzQyOWY1MDAxODE3ZjU4YjgyN2JhMGY",
+        "commit": {
+          "author": {
+            "name": "Voltrex",
+            "email": "mohammadkeyvanzade94@gmail.com",
+            "date": "2021-11-04T19:36:29Z"
+          },
+          "committer": {
+            "name": "GitHub",
+            "email": "noreply@github.com",
+            "date": "2021-11-04T19:36:29Z"
+          },
+          "message": "feat(code): add syntax highlighting for TypeScript (#37)",
+          "tree": {
+            "sha": "e5e247832bfcd449a3f8dafdc3eafd38fd3ae63c",
+            "url": "https://api.github.com/repos/discord/SimpleAST/git/trees/e5e247832bfcd449a3f8dafdc3eafd38fd3ae63c"
+          },
+          "url": "https://api.github.com/repos/discord/SimpleAST/git/commits/d8987f0fede109936c429f5001817f58b827ba0f",
+          "comment_count": 0,
+          "verification": {
+            "verified": true,
+            "reason": "valid",
+            "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsBcBAABCAAQBQJhhDY9CRBK7hj4Ov3rIwAAXPwIAEWQRsS71mK7WRsLc3n2PHkD\nuVZaRFL0XHSreir5xHOaCZn/2QOt72YVMZC8BZPrP5kc78ZdBw/ll1AXGyPN5Vpr\njRsZqI5XGhhGCXkJ4DCHTAcQCCLzYou/53OHA7cTc0WW7o4dybdM8TTH1AZYlD1L\npAQt2TK6N7n//rM74o1AUkLTqZUeJKc7h7CRteNZD1u+Qp3RlWKLrS8+ilFylnrj\nLpDx1i2MEAn65MFy0dW86DtkcxxDoOJXYtpQvqgbwhmV+LpSDxII9G6kI+rnvs1m\n4NFpDMWtDcCVculamH4W4qylN298z9A0SMJlKlZ07y3n4UjQlL3X7c4ieFoLWP8=\n=vgku\n-----END PGP SIGNATURE-----\n",
+            "payload": "tree e5e247832bfcd449a3f8dafdc3eafd38fd3ae63c\nparent c1062fa1f22265cb56a7fef16ce2d41aec0ee68a\nauthor Voltrex <mohammadkeyvanzade94@gmail.com> 1636054589 +0330\ncommitter GitHub <noreply@github.com> 1636054589 -0700\n\nfeat(code): add syntax highlighting for TypeScript (#37)\n\n"
+          }
+        },
+        "url": "https://api.github.com/repos/discord/SimpleAST/commits/d8987f0fede109936c429f5001817f58b827ba0f",
+        "author": {
+          "login": "VoltrexKeyva",
+          "id": 62040526,
+          "node_id": "MDQ6VXNlcjYyMDQwNTI2",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/VoltrexKeyva",
+          "type": "User",
+          "site_admin": false
+        },
+        "committer": {
+          "login": "web-flow",
+          "id": 19864447,
+          "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/web-flow",
+          "type": "User",
+          "site_admin": false
+        },
+        "parents": [
+          {
+            "sha": "c1062fa1f22265cb56a7fef16ce2d41aec0ee68a",
+            "url": "https://api.github.com/repos/discord/SimpleAST/commits/c1062fa1f22265cb56a7fef16ce2d41aec0ee68a"
+          }
+        ]
+      },
+      {
+        "sha": "c1062fa1f22265cb56a7fef16ce2d41aec0ee68a",
+        "node_id": "MDY6Q29tbWl0MTI1NDQzNjYxOmMxMDYyZmExZjIyMjY1Y2I1NmE3ZmVmMTZjZTJkNDFhZWMwZWU2OGE=",
+        "commit": {
+          "author": {
+            "name": "Voltrex",
+            "email": "mohammadkeyvanzade94@gmail.com",
+            "date": "2021-09-08T17:36:52Z"
+          },
+          "committer": {
+            "name": "GitHub",
+            "email": "noreply@github.com",
+            "date": "2021-09-08T17:36:52Z"
+          },
+          "message": "fix(code): fix rules (#35)",
+          "tree": {
+            "sha": "0c6f3ebf2ab57305a5a311bae319f2e60427c2c5",
+            "url": "https://api.github.com/repos/discord/SimpleAST/git/trees/0c6f3ebf2ab57305a5a311bae319f2e60427c2c5"
+          },
+          "url": "https://api.github.com/repos/discord/SimpleAST/git/commits/c1062fa1f22265cb56a7fef16ce2d41aec0ee68a",
+          "comment_count": 0,
+          "verification": {
+            "verified": true,
+            "reason": "valid",
+            "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsBcBAABCAAQBQJhOPS0CRBK7hj4Ov3rIwAAw24IADupW50QUgpBs5vWmFvR9qtX\npVpaaSlOZRMiYBcZoBHqOaviSX0jt8KioXFSP9dHgdtZCUSMjvF/Xi+dyrsak4MT\ndlKzTwhQ4bgu+fWb8HxSI/L7pGnRrcWrlFEybJoivUAVDsQyiGavqyKUR1R8hj46\nYs2kFcKUC1CQDlIcw2dUTlNyP3nSt8uL+wruhQOr5VKsO3PE9yE0YosD4bcYFGuV\ni1+7krDxZPFJR4SSwxTzv7fX+9z5klqoSqrbLhj2EGs1U5W6oZmwOEVzCQ9jVbye\niIO8WOTRyvM/UccVE8pw2EVDE0qggt/SW+P67GQulO2VghmaAid4rQZ1J5QqWi4=\n=K0gl\n-----END PGP SIGNATURE-----\n",
+            "payload": "tree 0c6f3ebf2ab57305a5a311bae319f2e60427c2c5\nparent 7c7b4101df81976ce99f55d2007ab59ada53426b\nauthor Voltrex <mohammadkeyvanzade94@gmail.com> 1631122612 +0430\ncommitter GitHub <noreply@github.com> 1631122612 -0700\n\nfix(code): fix rules (#35)\n\n"
+          }
+        },
+        "url": "https://api.github.com/repos/discord/SimpleAST/commits/c1062fa1f22265cb56a7fef16ce2d41aec0ee68a",
+        "author": {
+          "login": "VoltrexKeyva",
+          "id": 62040526,
+          "node_id": "MDQ6VXNlcjYyMDQwNTI2",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/VoltrexKeyva",
+          "type": "User",
+          "site_admin": false
+        },
+        "committer": {
+          "login": "web-flow",
+          "id": 19864447,
+          "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/web-flow",
+          "type": "User",
+          "site_admin": false
+        },
+        "parents": [
+          {
+            "sha": "7c7b4101df81976ce99f55d2007ab59ada53426b",
+            "url": "https://api.github.com/repos/discord/SimpleAST/commits/7c7b4101df81976ce99f55d2007ab59ada53426b"
+          }
+        ]
+      },
+      {
+        "sha": "7c7b4101df81976ce99f55d2007ab59ada53426b",
+        "node_id": "MDY6Q29tbWl0MTI1NDQzNjYxOjdjN2I0MTAxZGY4MTk3NmNlOTlmNTVkMjAwN2FiNTlhZGE1MzQyNmI=",
+        "commit": {
+          "author": {
+            "name": "Voltrex",
+            "email": "mohammadkeyvanzade94@gmail.com",
+            "date": "2021-08-02T18:18:22Z"
+          },
+          "committer": {
+            "name": "GitHub",
+            "email": "noreply@github.com",
+            "date": "2021-08-02T18:18:22Z"
+          },
+          "message": "code: fix JavaScript rules (#34)",
+          "tree": {
+            "sha": "66c0c3f38b8b3b1291e90c897818c972c2b7c64c",
+            "url": "https://api.github.com/repos/discord/SimpleAST/git/trees/66c0c3f38b8b3b1291e90c897818c972c2b7c64c"
+          },
+          "url": "https://api.github.com/repos/discord/SimpleAST/git/commits/7c7b4101df81976ce99f55d2007ab59ada53426b",
+          "comment_count": 0,
+          "verification": {
+            "verified": true,
+            "reason": "valid",
+            "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsBcBAABCAAQBQJhCDbuCRBK7hj4Ov3rIwAASR4IAISgR+AzdA5CAAEphKX/wOhE\nyrIxleTMsjlDL2qCS2PqXLolyKDymGTghdOH+htYOZSH8R9f3o9mD0BqB3ovlq+Q\nhCpXc8/btHf5YfYpRpW3/5D7ZTMhIHC7mQU2JFUd2PifcJIDX1AiJBNCTE2Wb2HA\nLg9yar7BdYE2gaFOnWIvaRqLmV814bDQf2eFqUDi1BkMa0P6eSO6kjTADlBVwq8T\nUyyYF/40KT+OTDIgPfqz53uT+SfSIAKez9q2HlNtOrojnNM3zPlkKRPfmAHg8U8i\nnR0NK83mMzc+QDoIYQPIw+5P5LFD7xn0E56HAHaiiq/afGU3C030hqt+GaRWie4=\n=OcIz\n-----END PGP SIGNATURE-----\n",
+            "payload": "tree 66c0c3f38b8b3b1291e90c897818c972c2b7c64c\nparent da5620adde837a7b2bad8b4fa528e1609c2c1d8d\nauthor Voltrex <mohammadkeyvanzade94@gmail.com> 1627928302 +0430\ncommitter GitHub <noreply@github.com> 1627928302 -0700\n\ncode: fix JavaScript rules (#34)\n\n"
+          }
+        },
+        "url": "https://api.github.com/repos/discord/SimpleAST/commits/7c7b4101df81976ce99f55d2007ab59ada53426b",
+        "author": {
+          "login": "VoltrexKeyva",
+          "id": 62040526,
+          "node_id": "MDQ6VXNlcjYyMDQwNTI2",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/VoltrexKeyva",
+          "type": "User",
+          "site_admin": false
+        },
+        "committer": {
+          "login": "web-flow",
+          "id": 19864447,
+          "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/web-flow",
+          "type": "User",
+          "site_admin": false
+        },
+        "parents": [
+          {
+            "sha": "da5620adde837a7b2bad8b4fa528e1609c2c1d8d",
+            "url": "https://api.github.com/repos/discord/SimpleAST/commits/da5620adde837a7b2bad8b4fa528e1609c2c1d8d"
+          }
+        ]
+      },
+      {
+        "sha": "da5620adde837a7b2bad8b4fa528e1609c2c1d8d",
+        "node_id": "MDY6Q29tbWl0MTI1NDQzNjYxOmRhNTYyMGFkZGU4MzdhN2IyYmFkOGI0ZmE1MjhlMTYwOWMyYzFkOGQ=",
+        "commit": {
+          "author": {
+            "name": "Andy Garron",
+            "email": "anderson.garron@gmail.com",
+            "date": "2021-07-29T20:39:28Z"
+          },
+          "committer": {
+            "name": "GitHub",
+            "email": "noreply@github.com",
+            "date": "2021-07-29T20:39:28Z"
+          },
+          "message": "Bump to 2.4.1",
+          "tree": {
+            "sha": "3812ca23efddca424ee6dcc0edc795b4850d230c",
+            "url": "https://api.github.com/repos/discord/SimpleAST/git/trees/3812ca23efddca424ee6dcc0edc795b4850d230c"
+          },
+          "url": "https://api.github.com/repos/discord/SimpleAST/git/commits/da5620adde837a7b2bad8b4fa528e1609c2c1d8d",
+          "comment_count": 0,
+          "verification": {
+            "verified": true,
+            "reason": "valid",
+            "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsBcBAABCAAQBQJhAxIACRBK7hj4Ov3rIwAAFb8IAB6+VbPETDPclhbfLG6/bDBp\nC/XDZB2CtO60V4mgOLPcdqXOad5Fu2khcNKexT/AAlzi8FQy3YQBVr4K7LvxshZJ\nXPVDdFOfOX0WyauEJP0Nvg0aMDykGzmpJBdZxzieKCALz8pgkegtzvdNFVWXgZa1\nGrFYlssw83OCvvj2r2/pCzxHCZxYDFt/rQLdS6IjXfDbC/+fQKdm/Kaa0AXWLKXE\n2llBLhAHx/lUwOBqSaWHEM3v2fFJHgR7v/osiBmW28g6q6Ay6t0MM8dPJqEv9Obv\nFdm/lT+xRUMDKoIike8Rp5F+VTg1N7aVOuZovZxnrQSIWYqtOSTsfBW1OdUI4jY=\n=8qFH\n-----END PGP SIGNATURE-----\n",
+            "payload": "tree 3812ca23efddca424ee6dcc0edc795b4850d230c\nparent 5a14d145e3092e9d9b7ca79dfbdd92c44ca2ce82\nauthor Andy Garron <anderson.garron@gmail.com> 1627591168 -0700\ncommitter GitHub <noreply@github.com> 1627591168 -0700\n\nBump to 2.4.1"
+          }
+        },
+        "url": "https://api.github.com/repos/discord/SimpleAST/commits/da5620adde837a7b2bad8b4fa528e1609c2c1d8d",
+        "author": {
+          "login": "AndyG",
+          "id": 8857134,
+          "node_id": "MDQ6VXNlcjg4NTcxMzQ=",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/AndyG",
+          "type": "User",
+          "site_admin": false
+        },
+        "committer": {
+          "login": "web-flow",
+          "id": 19864447,
+          "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/web-flow",
+          "type": "User",
+          "site_admin": false
+        },
+        "parents": [
+          {
+            "sha": "5a14d145e3092e9d9b7ca79dfbdd92c44ca2ce82",
+            "url": "https://api.github.com/repos/discord/SimpleAST/commits/5a14d145e3092e9d9b7ca79dfbdd92c44ca2ce82"
+          }
+        ]
+      }
+    ],
+    "releases": [
+      {
+        "url": "https://api.github.com/repos/discord/SimpleAST/releases/60421510",
+        "id": 60421510,
+        "author": {
+          "login": "AndyG",
+          "id": 8857134,
+          "node_id": "MDQ6VXNlcjg4NTcxMzQ=",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/AndyG",
+          "type": "User",
+          "site_admin": false
+        },
+        "node_id": "RE_kwDOB3oeTc4DmfWG",
+        "tag_name": "2.7.0",
+        "target_commitish": "master",
+        "name": "2.7.0",
+        "draft": false,
+        "prerelease": false,
+        "created_at": "2022-02-24T21:02:53Z",
+        "published_at": "2022-02-24T21:03:25Z",
+        "assets": [],
+        "body": "adds diff highlight support"
+      },
+      {
+        "url": "https://api.github.com/repos/discord/SimpleAST/releases/52727618",
+        "id": 52727618,
+        "author": {
+          "login": "AndyG",
+          "id": 8857134,
+          "node_id": "MDQ6VXNlcjg4NTcxMzQ=",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/AndyG",
+          "type": "User",
+          "site_admin": false
+        },
+        "node_id": "RE_kwDOB3oeTc4DJI9C",
+        "tag_name": "2.6.0",
+        "target_commitish": "master",
+        "name": "2.6.0",
+        "draft": false,
+        "prerelease": false,
+        "created_at": "2021-11-04T19:36:29Z",
+        "published_at": "2021-11-04T19:37:10Z",
+        "assets": [],
+        "body": "adds typescript highlighting support"
+      },
+      {
+        "url": "https://api.github.com/repos/discord/SimpleAST/releases/50347808",
+        "id": 50347808,
+        "author": {
+          "login": "AndyG",
+          "id": 8857134,
+          "node_id": "MDQ6VXNlcjg4NTcxMzQ=",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/AndyG",
+          "type": "User",
+          "site_admin": false
+        },
+        "node_id": "RE_kwDOB3oeTc4DAD8g",
+        "tag_name": "2.5.0",
+        "target_commitish": "master",
+        "name": "2.5.0",
+        "draft": false,
+        "prerelease": false,
+        "created_at": "2021-09-08T17:36:52Z",
+        "published_at": "2021-09-27T19:57:15Z",
+        "assets": [],
+        "body": ""
+      },
+      {
+        "url": "https://api.github.com/repos/discord/SimpleAST/releases/47176481",
+        "id": 47176481,
+        "author": {
+          "login": "AndyG",
+          "id": 8857134,
+          "node_id": "MDQ6VXNlcjg4NTcxMzQ=",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/AndyG",
+          "type": "User",
+          "site_admin": false
+        },
+        "node_id": "MDc6UmVsZWFzZTQ3MTc2NDgx",
+        "tag_name": "2.4.2",
+        "target_commitish": "master",
+        "name": "2.4.2",
+        "draft": false,
+        "prerelease": false,
+        "created_at": "2021-08-02T18:18:22Z",
+        "published_at": "2021-08-02T18:21:37Z",
+        "assets": [],
+        "body": ""
+      },
+      {
+        "url": "https://api.github.com/repos/discord/SimpleAST/releases/47005139",
+        "id": 47005139,
+        "author": {
+          "login": "AndyG",
+          "id": 8857134,
+          "node_id": "MDQ6VXNlcjg4NTcxMzQ=",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/AndyG",
+          "type": "User",
+          "site_admin": false
+        },
+        "node_id": "MDc6UmVsZWFzZTQ3MDA1MTM5",
+        "tag_name": "2.4.1",
+        "target_commitish": "master",
+        "name": "Bump to 2.4.1",
+        "draft": false,
+        "prerelease": false,
+        "created_at": "2021-07-29T20:39:28Z",
+        "published_at": "2021-07-29T20:40:07Z",
+        "assets": [],
+        "body": ""
+      }
+    ],
+    "issues": [
+      {
+        "url": "https://api.github.com/repos/discord/SimpleAST/issues/42",
+        "id": 1548825472,
+        "node_id": "I_kwDOB3oeTc5cUTOA",
+        "number": 42,
+        "title": "Markdown code block rendering problem on Android",
+        "user": {
+          "login": "bitmand",
+          "id": 344214,
+          "node_id": "MDQ6VXNlcjM0NDIxNA==",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/bitmand",
+          "type": "User",
+          "site_admin": false
+        },
+        "labels": [],
+        "state": "open",
+        "locked": false,
+        "assignee": null,
+        "assignees": [],
+        "milestone": null,
+        "comments": 0,
+        "created_at": "2023-01-19T09:49:40Z",
+        "updated_at": "2023-01-19T09:50:16Z",
+        "closed_at": null,
+        "author_association": "NONE",
+        "active_lock_reason": null,
+        "body": "## Problem\r\n\r\nWhen I send a message where the first characters, in the first line, in a code block, is whitespaces, like this:\r\n\r\n    ```\r\n              Some Text\r\n              More Test\r\n    ```\r\n\r\nThen the prepended whitespaces is removed from the first line, when displayed on Android and message looks like this:\r\n\r\n    Some Text\r\n              More Test\r\n\r\nOn Discord Desktop and iOS app, the same message is rendered the way I would expect it:\r\n\r\n              Some Text\r\n              More Test\r\n\r\n## A Wild Guess Appears\r\n\r\nI tested this [markdown code block regex](https://github.com/discord/SimpleAST/blob/master/simpleast-core/src/main/java/com/discord/simpleast/code/CodeRules.kt#L41), but the matching seems to work correctly:\r\n\r\n* The first group (optionally) matches the language ( line 298 `val language = ...` )\r\n* The second group has all the lines in the code block, **including** all the prepended whitespaces ( line 299 `val codeBody = ...` )\r\n\r\nSo my suspicion is that `codeBody` is trimmed (removing all prepending- and appending whitespaces, newlines etc.) later on. That would explain why it only happens on the first line of the code block.\r\n\r\nBut the only use of `trim()` I can find is [in MarkdownRules.kt](https://github.com/discord/SimpleAST/blob/master/simpleast-core/src/main/java/com/discord/simpleast/markdown/MarkdownRules.kt#L146) in a `override fun parse()` function:\r\n\r\n    val classes = matcher.group(2)?.trim()?.split(' ')\r\n\r\n..and I have zero idea if it's related in any way.\r\n\r\nThere is also the possibility that this bug is outside of SimpleAST .. ?",
+        "reactions": {
+          "url": "https://api.github.com/repos/discord/SimpleAST/issues/42/reactions",
+          "total_count": 0,
+          "+1": 0,
+          "-1": 0,
+          "laugh": 0,
+          "hooray": 0,
+          "confused": 0,
+          "heart": 0,
+          "rocket": 0,
+          "eyes": 0
+        },
+        "performed_via_github_app": null,
+        "state_reason": null
+      },
+      {
+        "url": "https://api.github.com/repos/discord/SimpleAST/issues/41",
+        "id": 1336677546,
+        "node_id": "I_kwDOB3oeTc5PrBSq",
+        "number": 41,
+        "title": "[Feature] Add support for ANSI colors",
+        "user": {
+          "login": "drewhoener",
+          "id": 6218989,
+          "node_id": "MDQ6VXNlcjYyMTg5ODk=",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/drewhoener",
+          "type": "User",
+          "site_admin": false
+        },
+        "labels": [],
+        "state": "open",
+        "locked": false,
+        "assignee": null,
+        "assignees": [],
+        "milestone": null,
+        "comments": 1,
+        "created_at": "2022-08-12T02:24:50Z",
+        "updated_at": "2022-08-12T12:30:01Z",
+        "closed_at": null,
+        "author_association": "NONE",
+        "active_lock_reason": null,
+        "body": "Desktop supports Code block highlighting for ANSI colors, which is great for formatting large blocks, especially for spicing up embed fields\r\n![image](https://user-images.githubusercontent.com/6218989/184273353-c41c10ce-e2d4-4a48-a47e-852240344c88.png)\r\nBut the same stuff isn't available on iOS/Android\r\n![image](https://user-images.githubusercontent.com/6218989/184273255-3e65c576-f4e5-408b-a75b-096d54b69aa8.png)\r\n\r\nAny way this could be added?",
+        "reactions": {
+          "url": "https://api.github.com/repos/discord/SimpleAST/issues/41/reactions",
+          "total_count": 0,
+          "+1": 0,
+          "-1": 0,
+          "laugh": 0,
+          "hooray": 0,
+          "confused": 0,
+          "heart": 0,
+          "rocket": 0,
+          "eyes": 0
+        },
+        "performed_via_github_app": null,
+        "state_reason": null
+      },
+      {
+        "url": "https://api.github.com/repos/discord/SimpleAST/issues/40",
+        "id": 1289557737,
+        "node_id": "PR_kwDOB3oeTc46nH9y",
+        "number": 40,
+        "title": "fix: outdated link",
+        "user": {
+          "login": "twisttaan",
+          "id": 69066026,
+          "node_id": "MDQ6VXNlcjY5MDY2MDI2",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/twisttaan",
+          "type": "User",
+          "site_admin": false
+        },
+        "labels": [],
+        "state": "open",
+        "locked": false,
+        "assignee": null,
+        "assignees": [],
+        "milestone": null,
+        "comments": 0,
+        "created_at": "2022-06-30T04:15:55Z",
+        "updated_at": "2022-06-30T04:15:55Z",
+        "closed_at": null,
+        "author_association": "NONE",
+        "active_lock_reason": null,
+        "draft": false,
+        "pull_request": {
+          "url": "https://api.github.com/repos/discord/SimpleAST/pulls/40",
+          "merged_at": null
+        },
+        "body": null,
+        "reactions": {
+          "url": "https://api.github.com/repos/discord/SimpleAST/issues/40/reactions",
+          "total_count": 0,
+          "+1": 0,
+          "-1": 0,
+          "laugh": 0,
+          "hooray": 0,
+          "confused": 0,
+          "heart": 0,
+          "rocket": 0,
+          "eyes": 0
+        },
+        "performed_via_github_app": null,
+        "state_reason": null
+      },
+      {
+        "url": "https://api.github.com/repos/discord/SimpleAST/issues/39",
+        "id": 1167536690,
+        "node_id": "I_kwDOB3oeTc5FlzIy",
+        "number": 39,
+        "title": "Regex patterns",
+        "user": {
+          "login": "WitherredAway",
+          "id": 81734495,
+          "node_id": "MDQ6VXNlcjgxNzM0NDk1",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/WitherredAway",
+          "type": "User",
+          "site_admin": false
+        },
+        "labels": [],
+        "state": "closed",
+        "locked": false,
+        "assignee": null,
+        "assignees": [],
+        "milestone": null,
+        "comments": 1,
+        "created_at": "2022-03-13T10:08:18Z",
+        "updated_at": "2022-03-13T10:12:09Z",
+        "closed_at": "2022-03-13T10:12:09Z",
+        "author_association": "NONE",
+        "active_lock_reason": null,
+        "body": "I apologize if this isn't the place to ask for this, but where can i find all the regex patterns discord uses to detect bold, italics, etc? ",
+        "reactions": {
+          "url": "https://api.github.com/repos/discord/SimpleAST/issues/39/reactions",
+          "total_count": 0,
+          "+1": 0,
+          "-1": 0,
+          "laugh": 0,
+          "hooray": 0,
+          "confused": 0,
+          "heart": 0,
+          "rocket": 0,
+          "eyes": 0
+        },
+        "performed_via_github_app": null,
+        "state_reason": "completed"
+      },
+      {
+        "url": "https://api.github.com/repos/discord/SimpleAST/issues/38",
+        "id": 1134186036,
+        "node_id": "PR_kwDOB3oeTc4ynF86",
+        "number": 38,
+        "title": "feat(code): add syntax highlighting for Diff",
+        "user": {
+          "login": "VoltrexKeyva",
+          "id": 62040526,
+          "node_id": "MDQ6VXNlcjYyMDQwNTI2",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/VoltrexKeyva",
+          "type": "User",
+          "site_admin": false
+        },
+        "labels": [],
+        "state": "closed",
+        "locked": false,
+        "assignee": null,
+        "assignees": [],
+        "milestone": null,
+        "comments": 1,
+        "created_at": "2022-02-12T15:31:28Z",
+        "updated_at": "2022-02-24T21:03:17Z",
+        "closed_at": "2022-02-24T21:02:53Z",
+        "author_association": "CONTRIBUTOR",
+        "active_lock_reason": null,
+        "draft": false,
+        "pull_request": {
+          "url": "https://api.github.com/repos/discord/SimpleAST/pulls/38",
+          "merged_at": "2022-02-24T21:02:53Z"
+        },
+        "body": "Added syntax highlighting support for Diff (`diff`).\r\n\r\n![Screenshot_20220212-183057_Quickstep](https://user-images.githubusercontent.com/62040526/155607107-41558244-66c6-4137-bdd2-bafd5c61994d.png)",
+        "reactions": {
+          "url": "https://api.github.com/repos/discord/SimpleAST/issues/38/reactions",
+          "total_count": 0,
+          "+1": 0,
+          "-1": 0,
+          "laugh": 0,
+          "hooray": 0,
+          "confused": 0,
+          "heart": 0,
+          "rocket": 0,
+          "eyes": 0
+        },
+        "performed_via_github_app": null,
+        "state_reason": null
+      }
+    ],
     "pullRequests": []
   }
 }
