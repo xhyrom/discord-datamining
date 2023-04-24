@@ -358,7 +358,77 @@
         ]
       }
     ],
-    "releases": [],
+    "releases": [
+      {
+        "url": "https://api.github.com/repos/discord/lilliput/releases/11249937",
+        "id": 11249937,
+        "author": {
+          "login": "brian-armstrong-discord",
+          "id": 25939803,
+          "node_id": "MDQ6VXNlcjI1OTM5ODAz",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/brian-armstrong-discord",
+          "type": "User",
+          "site_admin": false
+        },
+        "node_id": "MDc6UmVsZWFzZTExMjQ5OTM3",
+        "tag_name": "v1.2",
+        "target_commitish": "master",
+        "name": "Audio",
+        "draft": false,
+        "prerelease": false,
+        "created_at": "2018-05-21T17:57:49Z",
+        "published_at": "2018-05-30T21:23:50Z",
+        "assets": [],
+        "body": "lilliput now supports Audio. Also, enable -fPIC in builds for greater compatibility."
+      },
+      {
+        "url": "https://api.github.com/repos/discord/lilliput/releases/9619853",
+        "id": 9619853,
+        "author": {
+          "login": "brian-armstrong-discord",
+          "id": 25939803,
+          "node_id": "MDQ6VXNlcjI1OTM5ODAz",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/brian-armstrong-discord",
+          "type": "User",
+          "site_admin": false
+        },
+        "node_id": "MDc6UmVsZWFzZTk2MTk4NTM=",
+        "tag_name": "v1.1",
+        "target_commitish": "master",
+        "name": "Fixes for outstanding bugs",
+        "draft": false,
+        "prerelease": false,
+        "created_at": "2018-02-10T01:23:49Z",
+        "published_at": "2018-02-10T01:25:18Z",
+        "assets": [],
+        "body": "This change forces lilliput's output to never exceed 8 bits per channel, which isn't supported by many image containers. Also, it includes some tweaks to the libavcodec wrapper to support more videos."
+      },
+      {
+        "url": "https://api.github.com/repos/discord/lilliput/releases/9618124",
+        "id": 9618124,
+        "author": {
+          "login": "brian-armstrong-discord",
+          "id": 25939803,
+          "node_id": "MDQ6VXNlcjI1OTM5ODAz",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/brian-armstrong-discord",
+          "type": "User",
+          "site_admin": false
+        },
+        "node_id": "MDc6UmVsZWFzZTk2MTgxMjQ=",
+        "tag_name": "v1.0",
+        "target_commitish": "master",
+        "name": "Lilliput 1.0",
+        "draft": false,
+        "prerelease": false,
+        "created_at": "2018-02-09T21:58:14Z",
+        "published_at": "2018-02-09T21:59:32Z",
+        "assets": [],
+        "body": "Lilliput is cool and you should use it."
+      }
+    ],
     "issues": [
       {
         "url": "https://api.github.com/repos/discord/lilliput/issues/126",
