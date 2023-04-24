@@ -51109,6 +51109,11 @@ input[type=checked]:focus-visible+.label-3TDpbn {
     margin-bottom: 32px
 }
 
+.subtitleInfo-p9Mu07 {
+    text-align: center;
+    margin-bottom: 12px
+}
+
 .prompt-2Vs-nz {
     text-align: center;
     margin-bottom: 27px
@@ -51116,7 +51121,7 @@ input[type=checked]:focus-visible+.label-3TDpbn {
 
 .promptFinish-2Zu2Vg {
     text-align: center;
-    margin-bottom: 32px
+    margin-bottom: 36px
 }
 
 .finishTitle-zpRnWF {
@@ -51280,7 +51285,11 @@ input[type=checked]:focus-visible+.label-3TDpbn {
 }
 
 .textPadding-SvhCwp {
-    padding-bottom: 2px
+    padding-bottom: 4px
+}
+
+.memberText-34-NmW {
+    padding-top: 8px
 }
 
 .footer-1O3hHf {
@@ -152312,4 +152321,4 @@ html .invoiceCancelRow-dVOR64 {
     flex-direction: column
 }
 
-/*# sourceMappingURL=40532.2e3c72109ff052200d0f.css.map*/
+/*# sourceMappingURL=40532.3f4433efd227e472d003.css.map*/
