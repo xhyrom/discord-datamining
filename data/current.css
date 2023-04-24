@@ -9463,10 +9463,15 @@ html.decorate-links .lowSaturationUnderline-Z6CW6z {
     padding: 16px;
     display: -webkit-box;
     display: -ms-flexbox;
-    display: flex
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center
 }
 
 .icon-1gCBMK {
+    width: 24px;
+    height: 24px;
     margin-right: 8px;
     margin-top: -2px
 }
@@ -152309,4 +152314,4 @@ html .invoiceCancelRow-dVOR64 {
     flex-direction: column
 }
 
-/*# sourceMappingURL=40532.7125a72fe3e4c786a8b6.css.map*/
+/*# sourceMappingURL=40532.3a84222ee59a1621c8fa.css.map*/
