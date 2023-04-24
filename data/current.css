@@ -16560,7 +16560,7 @@ html.disable-forced-colors * {
     font-family: var(--font-display);
     font-weight: 700;
     color: var(--header-primary);
-    line-height: 1.5rem;
+    line-height: 1.375em;
     margin: 16px 0 4px
 }
 
@@ -16571,11 +16571,11 @@ html.disable-forced-colors * {
 .markup-eYLPri h5.inlineFormat-27RIC2,
 .markup-eYLPri h6.inlineFormat-27RIC2 {
     font-weight: 600;
-    font-size: 1rem;
+    font-size: inherit;
     white-space: normal;
     margin: 0;
     padding-right: 16px;
-    line-height: 1rem;
+    line-height: 1.25em;
     color: inherit;
     display: inline
 }
@@ -152312,4 +152312,4 @@ html .invoiceCancelRow-dVOR64 {
     flex-direction: column
 }
 
-/*# sourceMappingURL=40532.3f95fcf43a1eb10b55c1.css.map*/
+/*# sourceMappingURL=40532.2e3c72109ff052200d0f.css.map*/
