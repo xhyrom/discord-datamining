@@ -22699,7 +22699,14 @@ html.disable-forced-colors * {
     --spacing-64: 64px;
     --spacing-72: 72px;
     --spacing-80: 80px;
-    --spacing-96: 96px
+    --spacing-96: 96px;
+    --radius-xs: 4px;
+    --radius-sm: 8px;
+    --radius-md: 12px;
+    --radius-lg: 16px;
+    --radius-xl: 24px;
+    --radius-xxl: 32px;
+    --radius-round: 2147483647px
 }
 
 .theme-dark {
@@ -47035,18 +47042,18 @@ input[type=checked]:focus-visible+.label-3TDpbn {
     }
 
     10% {
-        -webkit-transform: translate(-1px, -2px) rotate(-1deg);
-        transform: translate(-1px, -2px) rotate(-1deg)
+        -webkit-transform: translate(-1px, -1px) rotate(-1deg);
+        transform: translate(-1px, -1px) rotate(-1deg)
     }
 
     20% {
-        -webkit-transform: translate(-3px) rotate(1deg);
-        transform: translate(-3px) rotate(1deg)
+        -webkit-transform: translate(-2px) rotate(1deg);
+        transform: translate(-2px) rotate(1deg)
     }
 
     30% {
-        -webkit-transform: translate(3px, 2px) rotate(0deg);
-        transform: translate(3px, 2px) rotate(0deg)
+        -webkit-transform: translate(2px, 1px) rotate(0deg);
+        transform: translate(2px, 1px) rotate(0deg)
     }
 
     40% {
@@ -47055,18 +47062,18 @@ input[type=checked]:focus-visible+.label-3TDpbn {
     }
 
     50% {
-        -webkit-transform: translate(-1px, 2px) rotate(-1deg);
-        transform: translate(-1px, 2px) rotate(-1deg)
+        -webkit-transform: translate(-1px, 1px) rotate(-1deg);
+        transform: translate(-1px, 1px) rotate(-1deg)
     }
 
     60% {
-        -webkit-transform: translate(-3px, 1px) rotate(0deg);
-        transform: translate(-3px, 1px) rotate(0deg)
+        -webkit-transform: translate(-2px, 1px) rotate(0deg);
+        transform: translate(-2px, 1px) rotate(0deg)
     }
 
     70% {
-        -webkit-transform: translate(3px, 1px) rotate(-1deg);
-        transform: translate(3px, 1px) rotate(-1deg)
+        -webkit-transform: translate(2px, 1px) rotate(-1deg);
+        transform: translate(2px, 1px) rotate(-1deg)
     }
 
     80% {
@@ -47075,13 +47082,13 @@ input[type=checked]:focus-visible+.label-3TDpbn {
     }
 
     90% {
-        -webkit-transform: translate(1px, 2px) rotate(0deg);
-        transform: translate(1px, 2px) rotate(0deg)
+        -webkit-transform: translate(1px, 1px) rotate(0deg);
+        transform: translate(1px, 1px) rotate(0deg)
     }
 
     to {
-        -webkit-transform: translate(1px, -2px) rotate(-1deg);
-        transform: translate(1px, -2px) rotate(-1deg)
+        -webkit-transform: translate(1px, -1px) rotate(-1deg);
+        transform: translate(1px, -1px) rotate(-1deg)
     }
 }
 
@@ -47092,18 +47099,18 @@ input[type=checked]:focus-visible+.label-3TDpbn {
     }
 
     10% {
-        -webkit-transform: translate(-1px, -2px) rotate(-1deg);
-        transform: translate(-1px, -2px) rotate(-1deg)
+        -webkit-transform: translate(-1px, -1px) rotate(-1deg);
+        transform: translate(-1px, -1px) rotate(-1deg)
     }
 
     20% {
-        -webkit-transform: translate(-3px) rotate(1deg);
-        transform: translate(-3px) rotate(1deg)
+        -webkit-transform: translate(-2px) rotate(1deg);
+        transform: translate(-2px) rotate(1deg)
     }
 
     30% {
-        -webkit-transform: translate(3px, 2px) rotate(0deg);
-        transform: translate(3px, 2px) rotate(0deg)
+        -webkit-transform: translate(2px, 1px) rotate(0deg);
+        transform: translate(2px, 1px) rotate(0deg)
     }
 
     40% {
@@ -47112,18 +47119,18 @@ input[type=checked]:focus-visible+.label-3TDpbn {
     }
 
     50% {
-        -webkit-transform: translate(-1px, 2px) rotate(-1deg);
-        transform: translate(-1px, 2px) rotate(-1deg)
+        -webkit-transform: translate(-1px, 1px) rotate(-1deg);
+        transform: translate(-1px, 1px) rotate(-1deg)
     }
 
     60% {
-        -webkit-transform: translate(-3px, 1px) rotate(0deg);
-        transform: translate(-3px, 1px) rotate(0deg)
+        -webkit-transform: translate(-2px, 1px) rotate(0deg);
+        transform: translate(-2px, 1px) rotate(0deg)
     }
 
     70% {
-        -webkit-transform: translate(3px, 1px) rotate(-1deg);
-        transform: translate(3px, 1px) rotate(-1deg)
+        -webkit-transform: translate(2px, 1px) rotate(-1deg);
+        transform: translate(2px, 1px) rotate(-1deg)
     }
 
     80% {
@@ -47132,13 +47139,13 @@ input[type=checked]:focus-visible+.label-3TDpbn {
     }
 
     90% {
-        -webkit-transform: translate(1px, 2px) rotate(0deg);
-        transform: translate(1px, 2px) rotate(0deg)
+        -webkit-transform: translate(1px, 1px) rotate(0deg);
+        transform: translate(1px, 1px) rotate(0deg)
     }
 
     to {
-        -webkit-transform: translate(1px, -2px) rotate(-1deg);
-        transform: translate(1px, -2px) rotate(-1deg)
+        -webkit-transform: translate(1px, -1px) rotate(-1deg);
+        transform: translate(1px, -1px) rotate(-1deg)
     }
 }
 
@@ -47516,18 +47523,18 @@ input[type=checked]:focus-visible+.label-3TDpbn {
     }
 
     10% {
-        -webkit-transform: translate(-1px, -2px) rotate(-1deg);
-        transform: translate(-1px, -2px) rotate(-1deg)
+        -webkit-transform: translate(-1px, -1px) rotate(-1deg);
+        transform: translate(-1px, -1px) rotate(-1deg)
     }
 
     20% {
-        -webkit-transform: translate(-3px) rotate(1deg);
-        transform: translate(-3px) rotate(1deg)
+        -webkit-transform: translate(-2px) rotate(1deg);
+        transform: translate(-2px) rotate(1deg)
     }
 
     30% {
-        -webkit-transform: translate(3px, 2px) rotate(0deg);
-        transform: translate(3px, 2px) rotate(0deg)
+        -webkit-transform: translate(2px, 1px) rotate(0deg);
+        transform: translate(2px, 1px) rotate(0deg)
     }
 
     40% {
@@ -47536,18 +47543,18 @@ input[type=checked]:focus-visible+.label-3TDpbn {
     }
 
     50% {
-        -webkit-transform: translate(-1px, 2px) rotate(-1deg);
-        transform: translate(-1px, 2px) rotate(-1deg)
+        -webkit-transform: translate(-1px, 1px) rotate(-1deg);
+        transform: translate(-1px, 1px) rotate(-1deg)
     }
 
     60% {
-        -webkit-transform: translate(-3px, 1px) rotate(0deg);
-        transform: translate(-3px, 1px) rotate(0deg)
+        -webkit-transform: translate(-2px, 1px) rotate(0deg);
+        transform: translate(-2px, 1px) rotate(0deg)
     }
 
     70% {
-        -webkit-transform: translate(3px, 1px) rotate(-1deg);
-        transform: translate(3px, 1px) rotate(-1deg)
+        -webkit-transform: translate(2px, 1px) rotate(-1deg);
+        transform: translate(2px, 1px) rotate(-1deg)
     }
 
     80% {
@@ -47556,13 +47563,13 @@ input[type=checked]:focus-visible+.label-3TDpbn {
     }
 
     90% {
-        -webkit-transform: translate(1px, 2px) rotate(0deg);
-        transform: translate(1px, 2px) rotate(0deg)
+        -webkit-transform: translate(1px, 1px) rotate(0deg);
+        transform: translate(1px, 1px) rotate(0deg)
     }
 
     to {
-        -webkit-transform: translate(1px, -2px) rotate(-1deg);
-        transform: translate(1px, -2px) rotate(-1deg)
+        -webkit-transform: translate(1px, -1px) rotate(-1deg);
+        transform: translate(1px, -1px) rotate(-1deg)
     }
 }
 
@@ -47573,18 +47580,18 @@ input[type=checked]:focus-visible+.label-3TDpbn {
     }
 
     10% {
-        -webkit-transform: translate(-1px, -2px) rotate(-1deg);
-        transform: translate(-1px, -2px) rotate(-1deg)
+        -webkit-transform: translate(-1px, -1px) rotate(-1deg);
+        transform: translate(-1px, -1px) rotate(-1deg)
     }
 
     20% {
-        -webkit-transform: translate(-3px) rotate(1deg);
-        transform: translate(-3px) rotate(1deg)
+        -webkit-transform: translate(-2px) rotate(1deg);
+        transform: translate(-2px) rotate(1deg)
     }
 
     30% {
-        -webkit-transform: translate(3px, 2px) rotate(0deg);
-        transform: translate(3px, 2px) rotate(0deg)
+        -webkit-transform: translate(2px, 1px) rotate(0deg);
+        transform: translate(2px, 1px) rotate(0deg)
     }
 
     40% {
@@ -47593,18 +47600,18 @@ input[type=checked]:focus-visible+.label-3TDpbn {
     }
 
     50% {
-        -webkit-transform: translate(-1px, 2px) rotate(-1deg);
-        transform: translate(-1px, 2px) rotate(-1deg)
+        -webkit-transform: translate(-1px, 1px) rotate(-1deg);
+        transform: translate(-1px, 1px) rotate(-1deg)
     }
 
     60% {
-        -webkit-transform: translate(-3px, 1px) rotate(0deg);
-        transform: translate(-3px, 1px) rotate(0deg)
+        -webkit-transform: translate(-2px, 1px) rotate(0deg);
+        transform: translate(-2px, 1px) rotate(0deg)
     }
 
     70% {
-        -webkit-transform: translate(3px, 1px) rotate(-1deg);
-        transform: translate(3px, 1px) rotate(-1deg)
+        -webkit-transform: translate(2px, 1px) rotate(-1deg);
+        transform: translate(2px, 1px) rotate(-1deg)
     }
 
     80% {
@@ -47613,13 +47620,13 @@ input[type=checked]:focus-visible+.label-3TDpbn {
     }
 
     90% {
-        -webkit-transform: translate(1px, 2px) rotate(0deg);
-        transform: translate(1px, 2px) rotate(0deg)
+        -webkit-transform: translate(1px, 1px) rotate(0deg);
+        transform: translate(1px, 1px) rotate(0deg)
     }
 
     to {
-        -webkit-transform: translate(1px, -2px) rotate(-1deg);
-        transform: translate(1px, -2px) rotate(-1deg)
+        -webkit-transform: translate(1px, -1px) rotate(-1deg);
+        transform: translate(1px, -1px) rotate(-1deg)
     }
 }
 
@@ -152445,4 +152452,4 @@ html .invoiceCancelRow-dVOR64 {
     flex-direction: column
 }
 
-/*# sourceMappingURL=40532.67038fe0adbaad341f9a.css.map*/
+/*# sourceMappingURL=40532.1cb531be03b32263782f.css.map*/
