@@ -57,7 +57,72 @@
     "triage": false,
     "pull": false
   },
-  "branches": [],
+  "branches": [
+    {
+      "name": "feature/custom-names",
+      "commit": {
+        "sha": "46c0fcc06d0abbbaa835ce016892a5a40f1f1e78",
+        "url": "https://api.github.com/repos/discord/gen_registry/commits/46c0fcc06d0abbbaa835ce016892a5a40f1f1e78"
+      },
+      "protected": false
+    },
+    {
+      "name": "feature/smart-client-side-lookup-or-start",
+      "commit": {
+        "sha": "4ad4c6223ba4f27601d176684043b1a01ca7217b",
+        "url": "https://api.github.com/repos/discord/gen_registry/commits/4ad4c6223ba4f27601d176684043b1a01ca7217b"
+      },
+      "protected": false
+    },
+    {
+      "name": "features/convenience-functions",
+      "commit": {
+        "sha": "9851b7a740a3f7bcb9c0f46d7b68534be7e20549",
+        "url": "https://api.github.com/repos/discord/gen_registry/commits/9851b7a740a3f7bcb9c0f46d7b68534be7e20549"
+      },
+      "protected": false
+    },
+    {
+      "name": "fix-behaviour-spec",
+      "commit": {
+        "sha": "7fbdaea8e37be45292cf3d189d2a96bb04e19a48",
+        "url": "https://api.github.com/repos/discord/gen_registry/commits/7fbdaea8e37be45292cf3d189d2a96bb04e19a48"
+      },
+      "protected": false
+    },
+    {
+      "name": "master",
+      "commit": {
+        "sha": "c14d3503efa1e2c9b4aaee55a23b1afa909b0f41",
+        "url": "https://api.github.com/repos/discord/gen_registry/commits/c14d3503efa1e2c9b4aaee55a23b1afa909b0f41"
+      },
+      "protected": false
+    },
+    {
+      "name": "release/v1.1.0",
+      "commit": {
+        "sha": "9001d46ece8ed261a1a055d895d2095928692daf",
+        "url": "https://api.github.com/repos/discord/gen_registry/commits/9001d46ece8ed261a1a055d895d2095928692daf"
+      },
+      "protected": false
+    },
+    {
+      "name": "release/1.3.0",
+      "commit": {
+        "sha": "91cf5db1cc664fdf1863c47666181129287d3a25",
+        "url": "https://api.github.com/repos/discord/gen_registry/commits/91cf5db1cc664fdf1863c47666181129287d3a25"
+      },
+      "protected": false
+    },
+    {
+      "name": "release-1.0.2",
+      "commit": {
+        "sha": "cb8e7beafeea016fa81fc574d1b6e28de5220c74",
+        "url": "https://api.github.com/repos/discord/gen_registry/commits/cb8e7beafeea016fa81fc574d1b6e28de5220c74"
+      },
+      "protected": false
+    }
+  ],
   "last5": {
     "commits": [
       {

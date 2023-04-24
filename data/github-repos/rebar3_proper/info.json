@@ -57,7 +57,64 @@
     "triage": false,
     "pull": false
   },
-  "branches": [],
+  "branches": [
+    {
+      "name": "counterexample-support",
+      "commit": {
+        "sha": "f85d908487e4a3a697b26934afd59bbd2bd7b965",
+        "url": "https://api.github.com/repos/discord/rebar3_proper/commits/f85d908487e4a3a697b26934afd59bbd2bd7b965"
+      },
+      "protected": false
+    },
+    {
+      "name": "feature/upgrade_proper_12",
+      "commit": {
+        "sha": "e0115e673378ead7adcb85c59a272837fcc9027d",
+        "url": "https://api.github.com/repos/discord/rebar3_proper/commits/e0115e673378ead7adcb85c59a272837fcc9027d"
+      },
+      "protected": false
+    },
+    {
+      "name": "fix-app-paths",
+      "commit": {
+        "sha": "8004045251384848570420b1446b811ca5694530",
+        "url": "https://api.github.com/repos/discord/rebar3_proper/commits/8004045251384848570420b1446b811ca5694530"
+      },
+      "protected": false
+    },
+    {
+      "name": "fix-include-paths",
+      "commit": {
+        "sha": "eac47bb5e646e4c00dd5dc679a9cdcc6eaac44de",
+        "url": "https://api.github.com/repos/discord/rebar3_proper/commits/eac47bb5e646e4c00dd5dc679a9cdcc6eaac44de"
+      },
+      "protected": false
+    },
+    {
+      "name": "fix-opts-parse",
+      "commit": {
+        "sha": "806bc7a70077ee52d08c42e241720d60220608a1",
+        "url": "https://api.github.com/repos/discord/rebar3_proper/commits/806bc7a70077ee52d08c42e241720d60220608a1"
+      },
+      "protected": false
+    },
+    {
+      "name": "master",
+      "commit": {
+        "sha": "1960bee7a60b4086dd219aefe2bd14dffc943649",
+        "url": "https://api.github.com/repos/discord/rebar3_proper/commits/1960bee7a60b4086dd219aefe2bd14dffc943649"
+      },
+      "protected": false
+    },
+    {
+      "name": "pkgs",
+      "commit": {
+        "sha": "1bcc22d3a7f6ddea097319cc193efd562bb35833",
+        "url": "https://api.github.com/repos/discord/rebar3_proper/commits/1bcc22d3a7f6ddea097319cc193efd562bb35833"
+      },
+      "protected": false
+    }
+  ],
   "last5": {
     "commits": [
       {

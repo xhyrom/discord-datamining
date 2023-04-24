@@ -57,7 +57,40 @@
     "triage": false,
     "pull": false
   },
-  "branches": [],
+  "branches": [
+    {
+      "name": "1.5.x",
+      "commit": {
+        "sha": "690b9e5972c05e8af8968f6dea487ac17ff16e84",
+        "url": "https://api.github.com/repos/discord/distillery/commits/690b9e5972c05e8af8968f6dea487ac17ff16e84"
+      },
+      "protected": false
+    },
+    {
+      "name": "2.x",
+      "commit": {
+        "sha": "2ab6d6d1670ce22f7ff29365ff83c3dedea4546f",
+        "url": "https://api.github.com/repos/discord/distillery/commits/2ab6d6d1670ce22f7ff29365ff83c3dedea4546f"
+      },
+      "protected": false
+    },
+    {
+      "name": "bugfix/parens",
+      "commit": {
+        "sha": "0911c0c7763b99a2ff27679be21a62b095b8f720",
+        "url": "https://api.github.com/repos/discord/distillery/commits/0911c0c7763b99a2ff27679be21a62b095b8f720"
+      },
+      "protected": false
+    },
+    {
+      "name": "master",
+      "commit": {
+        "sha": "bbf7f1871553465eb21ef8ed5e2ace3308d79683",
+        "url": "https://api.github.com/repos/discord/distillery/commits/bbf7f1871553465eb21ef8ed5e2ace3308d79683"
+      },
+      "protected": false
+    }
+  ],
   "last5": {
     "commits": [
       {

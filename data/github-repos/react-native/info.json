@@ -566,6 +566,987 @@
         "state_reason": null
       }
     ],
-    "pullRequests": []
+    "pullRequests": [
+      {
+        "url": "https://api.github.com/repos/discord/react-native/pulls/36",
+        "id": 1277552295,
+        "node_id": "PR_kwDOAiW9rc5MJean",
+        "number": 36,
+        "state": "closed",
+        "locked": false,
+        "title": "explicitly set ndkVersion",
+        "user": {
+          "login": "Flewp",
+          "id": 1063664,
+          "node_id": "MDQ6VXNlcjEwNjM2NjQ=",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/Flewp",
+          "type": "User",
+          "site_admin": false
+        },
+        "body": null,
+        "created_at": "2023-03-15T21:26:01Z",
+        "updated_at": "2023-03-15T22:32:44Z",
+        "closed_at": "2023-03-15T22:32:44Z",
+        "merged_at": null,
+        "merge_commit_sha": "94981efff0f8a6c6ae4633d4c37211128adfdb21",
+        "assignee": null,
+        "assignees": [],
+        "requested_reviewers": [],
+        "requested_teams": [],
+        "labels": [],
+        "milestone": null,
+        "draft": false,
+        "head": {
+          "label": "discord:flewp/ndkversion-set",
+          "ref": "flewp/ndkversion-set",
+          "sha": "243e87efa4808ab0f47ef9cb00842db59eacd67b",
+          "user": {
+            "login": "discord",
+            "id": 1965106,
+            "node_id": "MDEyOk9yZ2FuaXphdGlvbjE5NjUxMDY=",
+            "gravatar_id": "",
+            "url": "https://api.github.com/users/discord",
+            "type": "Organization",
+            "site_admin": false
+          },
+          "repo": {
+            "id": 36027821,
+            "node_id": "MDEwOlJlcG9zaXRvcnkzNjAyNzgyMQ==",
+            "name": "react-native",
+            "full_name": "discord/react-native",
+            "private": false,
+            "owner": {
+              "login": "discord",
+              "id": 1965106,
+              "node_id": "MDEyOk9yZ2FuaXphdGlvbjE5NjUxMDY=",
+              "gravatar_id": "",
+              "url": "https://api.github.com/users/discord",
+              "type": "Organization",
+              "site_admin": false
+            },
+            "description": "A framework for building native apps with React.",
+            "fork": true,
+            "url": "https://api.github.com/repos/discord/react-native",
+            "created_at": "2015-05-21T17:40:16Z",
+            "updated_at": "2023-04-24T06:26:57Z",
+            "pushed_at": "2023-04-22T18:36:56Z",
+            "homepage": "http://facebook.github.io/react-native/",
+            "size": 368868,
+            "stargazers_count": 40,
+            "watchers_count": 40,
+            "language": "JavaScript",
+            "has_issues": false,
+            "has_projects": true,
+            "has_downloads": true,
+            "has_wiki": true,
+            "has_pages": false,
+            "has_discussions": false,
+            "forks_count": 14,
+            "archived": false,
+            "disabled": false,
+            "open_issues_count": 2,
+            "license": {
+              "key": "mit",
+              "name": "MIT License",
+              "spdx_id": "MIT",
+              "url": "https://api.github.com/licenses/mit",
+              "node_id": "MDc6TGljZW5zZTEz"
+            },
+            "allow_forking": true,
+            "is_template": false,
+            "web_commit_signoff_required": false,
+            "topics": [],
+            "visibility": "public",
+            "forks": 14,
+            "open_issues": 2,
+            "watchers": 40,
+            "default_branch": "master"
+          }
+        },
+        "base": {
+          "label": "discord:0.70.6-discord-1",
+          "ref": "0.70.6-discord-1",
+          "sha": "dcd813228ab2240cc92dc6077f36829ad1debfd0",
+          "user": {
+            "login": "discord",
+            "id": 1965106,
+            "node_id": "MDEyOk9yZ2FuaXphdGlvbjE5NjUxMDY=",
+            "gravatar_id": "",
+            "url": "https://api.github.com/users/discord",
+            "type": "Organization",
+            "site_admin": false
+          },
+          "repo": {
+            "id": 36027821,
+            "node_id": "MDEwOlJlcG9zaXRvcnkzNjAyNzgyMQ==",
+            "name": "react-native",
+            "full_name": "discord/react-native",
+            "private": false,
+            "owner": {
+              "login": "discord",
+              "id": 1965106,
+              "node_id": "MDEyOk9yZ2FuaXphdGlvbjE5NjUxMDY=",
+              "gravatar_id": "",
+              "url": "https://api.github.com/users/discord",
+              "type": "Organization",
+              "site_admin": false
+            },
+            "description": "A framework for building native apps with React.",
+            "fork": true,
+            "url": "https://api.github.com/repos/discord/react-native",
+            "created_at": "2015-05-21T17:40:16Z",
+            "updated_at": "2023-04-24T06:26:57Z",
+            "pushed_at": "2023-04-22T18:36:56Z",
+            "homepage": "http://facebook.github.io/react-native/",
+            "size": 368868,
+            "stargazers_count": 40,
+            "watchers_count": 40,
+            "language": "JavaScript",
+            "has_issues": false,
+            "has_projects": true,
+            "has_downloads": true,
+            "has_wiki": true,
+            "has_pages": false,
+            "has_discussions": false,
+            "forks_count": 14,
+            "archived": false,
+            "disabled": false,
+            "open_issues_count": 2,
+            "license": {
+              "key": "mit",
+              "name": "MIT License",
+              "spdx_id": "MIT",
+              "url": "https://api.github.com/licenses/mit",
+              "node_id": "MDc6TGljZW5zZTEz"
+            },
+            "allow_forking": true,
+            "is_template": false,
+            "web_commit_signoff_required": false,
+            "topics": [],
+            "visibility": "public",
+            "forks": 14,
+            "open_issues": 2,
+            "watchers": 40,
+            "default_branch": "master"
+          }
+        },
+        "_links": {
+          "self": {
+            "href": "https://api.github.com/repos/discord/react-native/pulls/36"
+          },
+          "html": {
+            "href": "https://github.com/discord/react-native/pull/36"
+          },
+          "issue": {
+            "href": "https://api.github.com/repos/discord/react-native/issues/36"
+          },
+          "comments": {
+            "href": "https://api.github.com/repos/discord/react-native/issues/36/comments"
+          },
+          "review_comments": {
+            "href": "https://api.github.com/repos/discord/react-native/pulls/36/comments"
+          },
+          "review_comment": {
+            "href": "https://api.github.com/repos/discord/react-native/pulls/comments{/number}"
+          },
+          "commits": {
+            "href": "https://api.github.com/repos/discord/react-native/pulls/36/commits"
+          },
+          "statuses": {
+            "href": "https://api.github.com/repos/discord/react-native/statuses/243e87efa4808ab0f47ef9cb00842db59eacd67b"
+          }
+        },
+        "author_association": "NONE",
+        "auto_merge": null,
+        "active_lock_reason": null
+      },
+      {
+        "url": "https://api.github.com/repos/discord/react-native/pulls/35",
+        "id": 1266866397,
+        "node_id": "PR_kwDOAiW9rc5Lgtjd",
+        "number": 35,
+        "state": "closed",
+        "locked": false,
+        "title": "[android] make promiseimpl's reject method thread safe",
+        "user": {
+          "login": "shangtee",
+          "id": 6252300,
+          "node_id": "MDQ6VXNlcjYyNTIzMDA=",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/shangtee",
+          "type": "User",
+          "site_admin": false
+        },
+        "body": "<!-- Thanks for submitting a pull request! We appreciate you spending the time to work on these changes. Please provide enough information so that others can review your pull request. The three fields below are mandatory. -->\r\n\r\n## Summary\r\n\r\n<!-- Explain the **motivation** for making this change. What existing problem does the pull request solve? -->\r\n\r\n`PromiseImpl` is not thread-safe, causing crashes on accessing a variable that can become null on a different thread. This has been causing Discord's `BillingManagerModule` to throw `NullPointerException`s about 800-1k times each day (estimated with sentry sampling). \r\n\r\nAlso see:\r\nhttps://github.com/facebook/react-native/issues/35068 \r\nhttps://app.asana.com/0/1202593986197760/1203652454773960\r\nhttps://discord.sentry.io/issues/3504368273/?project=5992375\r\n\r\n## Changelog\r\n\r\n<!-- Help reviewers and the release process by writing your own changelog entry.\r\n\r\nPick one each for the category and type tags:\r\n\r\n[ANDROID|GENERAL|IOS|INTERNAL] [BREAKING|ADDED|CHANGED|DEPRECATED|REMOVED|FIXED|SECURITY] - Message\r\n\r\nFor more details, see:\r\nhttps://reactnative.dev/contributing/changelogs-in-pull-requests\r\n-->\r\n\r\n[Android] [Fixed] - Fixed PromiseImpl's reject not thread-safe\r\n\r\n## Test Plan\r\n\r\n<!-- Demonstrate the code is solid. Example: The exact commands you ran and their output, screenshots / videos if the pull request changes the user interface. -->\r\n",
+        "created_at": "2023-03-07T20:03:12Z",
+        "updated_at": "2023-04-04T22:59:19Z",
+        "closed_at": "2023-04-04T22:59:19Z",
+        "merged_at": null,
+        "merge_commit_sha": "39a8b7f994ecc2af5b3f030f7881707b2dee2df8",
+        "assignee": null,
+        "assignees": [],
+        "requested_reviewers": [],
+        "requested_teams": [],
+        "labels": [],
+        "milestone": null,
+        "draft": false,
+        "head": {
+          "label": "discord:shangtee/android-promiseimpl-thread-safe",
+          "ref": "shangtee/android-promiseimpl-thread-safe",
+          "sha": "79abd85b58030eaee807059c0e4a27f036d4b569",
+          "user": {
+            "login": "discord",
+            "id": 1965106,
+            "node_id": "MDEyOk9yZ2FuaXphdGlvbjE5NjUxMDY=",
+            "gravatar_id": "",
+            "url": "https://api.github.com/users/discord",
+            "type": "Organization",
+            "site_admin": false
+          },
+          "repo": {
+            "id": 36027821,
+            "node_id": "MDEwOlJlcG9zaXRvcnkzNjAyNzgyMQ==",
+            "name": "react-native",
+            "full_name": "discord/react-native",
+            "private": false,
+            "owner": {
+              "login": "discord",
+              "id": 1965106,
+              "node_id": "MDEyOk9yZ2FuaXphdGlvbjE5NjUxMDY=",
+              "gravatar_id": "",
+              "url": "https://api.github.com/users/discord",
+              "type": "Organization",
+              "site_admin": false
+            },
+            "description": "A framework for building native apps with React.",
+            "fork": true,
+            "url": "https://api.github.com/repos/discord/react-native",
+            "created_at": "2015-05-21T17:40:16Z",
+            "updated_at": "2023-04-24T06:26:57Z",
+            "pushed_at": "2023-04-22T18:36:56Z",
+            "homepage": "http://facebook.github.io/react-native/",
+            "size": 368868,
+            "stargazers_count": 40,
+            "watchers_count": 40,
+            "language": "JavaScript",
+            "has_issues": false,
+            "has_projects": true,
+            "has_downloads": true,
+            "has_wiki": true,
+            "has_pages": false,
+            "has_discussions": false,
+            "forks_count": 14,
+            "archived": false,
+            "disabled": false,
+            "open_issues_count": 2,
+            "license": {
+              "key": "mit",
+              "name": "MIT License",
+              "spdx_id": "MIT",
+              "url": "https://api.github.com/licenses/mit",
+              "node_id": "MDc6TGljZW5zZTEz"
+            },
+            "allow_forking": true,
+            "is_template": false,
+            "web_commit_signoff_required": false,
+            "topics": [],
+            "visibility": "public",
+            "forks": 14,
+            "open_issues": 2,
+            "watchers": 40,
+            "default_branch": "master"
+          }
+        },
+        "base": {
+          "label": "discord:main",
+          "ref": "main",
+          "sha": "ad1b01e71966c97d4384686ac08136039b009a9e",
+          "user": {
+            "login": "discord",
+            "id": 1965106,
+            "node_id": "MDEyOk9yZ2FuaXphdGlvbjE5NjUxMDY=",
+            "gravatar_id": "",
+            "url": "https://api.github.com/users/discord",
+            "type": "Organization",
+            "site_admin": false
+          },
+          "repo": {
+            "id": 36027821,
+            "node_id": "MDEwOlJlcG9zaXRvcnkzNjAyNzgyMQ==",
+            "name": "react-native",
+            "full_name": "discord/react-native",
+            "private": false,
+            "owner": {
+              "login": "discord",
+              "id": 1965106,
+              "node_id": "MDEyOk9yZ2FuaXphdGlvbjE5NjUxMDY=",
+              "gravatar_id": "",
+              "url": "https://api.github.com/users/discord",
+              "type": "Organization",
+              "site_admin": false
+            },
+            "description": "A framework for building native apps with React.",
+            "fork": true,
+            "url": "https://api.github.com/repos/discord/react-native",
+            "created_at": "2015-05-21T17:40:16Z",
+            "updated_at": "2023-04-24T06:26:57Z",
+            "pushed_at": "2023-04-22T18:36:56Z",
+            "homepage": "http://facebook.github.io/react-native/",
+            "size": 368868,
+            "stargazers_count": 40,
+            "watchers_count": 40,
+            "language": "JavaScript",
+            "has_issues": false,
+            "has_projects": true,
+            "has_downloads": true,
+            "has_wiki": true,
+            "has_pages": false,
+            "has_discussions": false,
+            "forks_count": 14,
+            "archived": false,
+            "disabled": false,
+            "open_issues_count": 2,
+            "license": {
+              "key": "mit",
+              "name": "MIT License",
+              "spdx_id": "MIT",
+              "url": "https://api.github.com/licenses/mit",
+              "node_id": "MDc6TGljZW5zZTEz"
+            },
+            "allow_forking": true,
+            "is_template": false,
+            "web_commit_signoff_required": false,
+            "topics": [],
+            "visibility": "public",
+            "forks": 14,
+            "open_issues": 2,
+            "watchers": 40,
+            "default_branch": "master"
+          }
+        },
+        "_links": {
+          "self": {
+            "href": "https://api.github.com/repos/discord/react-native/pulls/35"
+          },
+          "html": {
+            "href": "https://github.com/discord/react-native/pull/35"
+          },
+          "issue": {
+            "href": "https://api.github.com/repos/discord/react-native/issues/35"
+          },
+          "comments": {
+            "href": "https://api.github.com/repos/discord/react-native/issues/35/comments"
+          },
+          "review_comments": {
+            "href": "https://api.github.com/repos/discord/react-native/pulls/35/comments"
+          },
+          "review_comment": {
+            "href": "https://api.github.com/repos/discord/react-native/pulls/comments{/number}"
+          },
+          "commits": {
+            "href": "https://api.github.com/repos/discord/react-native/pulls/35/commits"
+          },
+          "statuses": {
+            "href": "https://api.github.com/repos/discord/react-native/statuses/79abd85b58030eaee807059c0e4a27f036d4b569"
+          }
+        },
+        "author_association": "NONE",
+        "auto_merge": null,
+        "active_lock_reason": null
+      },
+      {
+        "url": "https://api.github.com/repos/discord/react-native/pulls/34",
+        "id": 1233886643,
+        "node_id": "PR_kwDOAiW9rc5Ji52z",
+        "number": 34,
+        "state": "closed",
+        "locked": false,
+        "title": "Adding Discord-only TurboModule support",
+        "user": {
+          "login": "Flewp",
+          "id": 1063664,
+          "node_id": "MDQ6VXNlcjEwNjM2NjQ=",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/Flewp",
+          "type": "User",
+          "site_admin": false
+        },
+        "body": "**In This PR..**\r\n\r\nAdding Support for building only Discord TurboModules.\r\n\r\n### How It's Done\r\n\r\nWe accomplish in two parts (TL;DRs in bold)\r\n\r\n1. **Adding an option in `ReactPlugin.kt` to codegen only modules with a package name starting with `com.discord`.** Codegen is the \"third pillar\" of \"The New Architecture\". It allows us to define the schema of what's communicated through the JSI, and have the Makefiles/Java/etc. generated for us, to the point where all we need to do is include and implement their generated interface on the native side, and call the generated interface from the JS side. The vanilla way to codegen is by running the `generateCodegenArtifactsFromSchema` gradle task with `newArchEnabled=true`, normally this task is added as part of the build when `newArchEnabled=true`, so it's not normally run standalone, though it can be. This task is problematic because some of our third party dependencies, like `react-native-reanimated` or `react-native-gesture-handler` have codegen support, and this task will codegen every module that has codegen support. If we run codegen, then run a build with `newArchEnabled=false`, it creates build issues with these third party dependencies because their generated schemas share the same class name as their legacy-module-schema equivalents, thus we get class name duplicate errors. The fix for this is to add in a new project level gradle option: `onlyDiscordTurboModulesEnabled`. This creates an extra condition during the codegen process to only codegen modules that begin with `com.discord`, we can then run (at the `react-native/ReactAndroid` level)\r\n```\r\nORG_GRADLE_PROJECT_newArchEnabled=true ORG_GRADLE_PROJECT_onlyDiscordTurboModulesEnabled=true ./gradlew generateCodegenArtifactsFromSchema\r\n```\r\nThis runs the task with both `newArchEnabled` and `onlyDiscordTurboModulesEnabled` set to `true`, codegen-ing only Discord TurboModules.\r\n\r\n2. **Adding extra options to the generated CMakeLists.txt to support libraries/headers needed to compile generated code with the JSI.** The JSI (javascript interface) is React Native's \"new way\" of communicating between javascript and native code synchronously, it's written in C++. The JSI is the alternative method of the \"old way\" of communicating between JS/native, via the JSON bridge asynchronously. When a module is codegen'd, it generates a `CMakeLists.txt` describing how to compile the generated `.h` and `.cpp` files, which are the JSI layer of the TurboModule. In order to compile against the JSI layer, we need a handful of libraries (`*.so`) and their associated headers. These resources are assumed to be available, but they aren't when compiling with `newArchEnabled=false`. These new options allow us to pass in a couple extra CMake options: `PREBUILT_CMAKE`, which is a `.cmake` file that includes library definitions for the needed JSI `*.so`s. `EXTRA_INCLUDE_DIRECTORIES`, which allows us to define an extra set of header directories, so the compiled source knows where `<fbjni/fbjni.h>` and all of the other includes are.\r\n\r\n### Assumptions\r\n\r\n**For the moment, we must build React Native from source if we're building out these Discord-only-TurboModules**. We can fix this in the future, but there's two versions of `react-native-codegen` in this repository. One in `packages/` for when building React Native from source, and one provided via yarn, which'll eventually end up in `node_modules`, for when providing a pre-built React Native artifact. This PR only includes the impl for the build-from-source approach while we stand up the initial Discord TurboModules. A future PR will provide the impl for the prebuilt approach.",
+        "created_at": "2023-02-08T17:09:11Z",
+        "updated_at": "2023-02-09T20:41:24Z",
+        "closed_at": "2023-02-08T17:18:26Z",
+        "merged_at": "2023-02-08T17:18:26Z",
+        "merge_commit_sha": "fb12cf347e94b560a767d932f1efbe89e5e53bfc",
+        "assignee": null,
+        "assignees": [],
+        "requested_reviewers": [
+          {
+            "login": "seato",
+            "id": 581155,
+            "node_id": "MDQ6VXNlcjU4MTE1NQ==",
+            "gravatar_id": "",
+            "url": "https://api.github.com/users/seato",
+            "type": "User",
+            "site_admin": false
+          }
+        ],
+        "requested_teams": [],
+        "labels": [],
+        "milestone": null,
+        "draft": false,
+        "head": {
+          "label": "discord:flewp/turbomodule-support",
+          "ref": "flewp/turbomodule-support",
+          "sha": "648b4d59d82dae26d2c5b024b3747b6279ff816b",
+          "user": {
+            "login": "discord",
+            "id": 1965106,
+            "node_id": "MDEyOk9yZ2FuaXphdGlvbjE5NjUxMDY=",
+            "gravatar_id": "",
+            "url": "https://api.github.com/users/discord",
+            "type": "Organization",
+            "site_admin": false
+          },
+          "repo": {
+            "id": 36027821,
+            "node_id": "MDEwOlJlcG9zaXRvcnkzNjAyNzgyMQ==",
+            "name": "react-native",
+            "full_name": "discord/react-native",
+            "private": false,
+            "owner": {
+              "login": "discord",
+              "id": 1965106,
+              "node_id": "MDEyOk9yZ2FuaXphdGlvbjE5NjUxMDY=",
+              "gravatar_id": "",
+              "url": "https://api.github.com/users/discord",
+              "type": "Organization",
+              "site_admin": false
+            },
+            "description": "A framework for building native apps with React.",
+            "fork": true,
+            "url": "https://api.github.com/repos/discord/react-native",
+            "created_at": "2015-05-21T17:40:16Z",
+            "updated_at": "2023-04-24T06:26:57Z",
+            "pushed_at": "2023-04-22T18:36:56Z",
+            "homepage": "http://facebook.github.io/react-native/",
+            "size": 368868,
+            "stargazers_count": 40,
+            "watchers_count": 40,
+            "language": "JavaScript",
+            "has_issues": false,
+            "has_projects": true,
+            "has_downloads": true,
+            "has_wiki": true,
+            "has_pages": false,
+            "has_discussions": false,
+            "forks_count": 14,
+            "archived": false,
+            "disabled": false,
+            "open_issues_count": 2,
+            "license": {
+              "key": "mit",
+              "name": "MIT License",
+              "spdx_id": "MIT",
+              "url": "https://api.github.com/licenses/mit",
+              "node_id": "MDc6TGljZW5zZTEz"
+            },
+            "allow_forking": true,
+            "is_template": false,
+            "web_commit_signoff_required": false,
+            "topics": [],
+            "visibility": "public",
+            "forks": 14,
+            "open_issues": 2,
+            "watchers": 40,
+            "default_branch": "master"
+          }
+        },
+        "base": {
+          "label": "discord:0.70.6-discord-1",
+          "ref": "0.70.6-discord-1",
+          "sha": "d72bb2914842b3d8bfbf3cf0d79ddbacefe5238e",
+          "user": {
+            "login": "discord",
+            "id": 1965106,
+            "node_id": "MDEyOk9yZ2FuaXphdGlvbjE5NjUxMDY=",
+            "gravatar_id": "",
+            "url": "https://api.github.com/users/discord",
+            "type": "Organization",
+            "site_admin": false
+          },
+          "repo": {
+            "id": 36027821,
+            "node_id": "MDEwOlJlcG9zaXRvcnkzNjAyNzgyMQ==",
+            "name": "react-native",
+            "full_name": "discord/react-native",
+            "private": false,
+            "owner": {
+              "login": "discord",
+              "id": 1965106,
+              "node_id": "MDEyOk9yZ2FuaXphdGlvbjE5NjUxMDY=",
+              "gravatar_id": "",
+              "url": "https://api.github.com/users/discord",
+              "type": "Organization",
+              "site_admin": false
+            },
+            "description": "A framework for building native apps with React.",
+            "fork": true,
+            "url": "https://api.github.com/repos/discord/react-native",
+            "created_at": "2015-05-21T17:40:16Z",
+            "updated_at": "2023-04-24T06:26:57Z",
+            "pushed_at": "2023-04-22T18:36:56Z",
+            "homepage": "http://facebook.github.io/react-native/",
+            "size": 368868,
+            "stargazers_count": 40,
+            "watchers_count": 40,
+            "language": "JavaScript",
+            "has_issues": false,
+            "has_projects": true,
+            "has_downloads": true,
+            "has_wiki": true,
+            "has_pages": false,
+            "has_discussions": false,
+            "forks_count": 14,
+            "archived": false,
+            "disabled": false,
+            "open_issues_count": 2,
+            "license": {
+              "key": "mit",
+              "name": "MIT License",
+              "spdx_id": "MIT",
+              "url": "https://api.github.com/licenses/mit",
+              "node_id": "MDc6TGljZW5zZTEz"
+            },
+            "allow_forking": true,
+            "is_template": false,
+            "web_commit_signoff_required": false,
+            "topics": [],
+            "visibility": "public",
+            "forks": 14,
+            "open_issues": 2,
+            "watchers": 40,
+            "default_branch": "master"
+          }
+        },
+        "_links": {
+          "self": {
+            "href": "https://api.github.com/repos/discord/react-native/pulls/34"
+          },
+          "html": {
+            "href": "https://github.com/discord/react-native/pull/34"
+          },
+          "issue": {
+            "href": "https://api.github.com/repos/discord/react-native/issues/34"
+          },
+          "comments": {
+            "href": "https://api.github.com/repos/discord/react-native/issues/34/comments"
+          },
+          "review_comments": {
+            "href": "https://api.github.com/repos/discord/react-native/pulls/34/comments"
+          },
+          "review_comment": {
+            "href": "https://api.github.com/repos/discord/react-native/pulls/comments{/number}"
+          },
+          "commits": {
+            "href": "https://api.github.com/repos/discord/react-native/pulls/34/commits"
+          },
+          "statuses": {
+            "href": "https://api.github.com/repos/discord/react-native/statuses/648b4d59d82dae26d2c5b024b3747b6279ff816b"
+          }
+        },
+        "author_association": "NONE",
+        "auto_merge": null,
+        "active_lock_reason": null
+      },
+      {
+        "url": "https://api.github.com/repos/discord/react-native/pulls/33",
+        "id": 1220039659,
+        "node_id": "PR_kwDOAiW9rc5IuFPr",
+        "number": 33,
+        "state": "closed",
+        "locked": false,
+        "title": "Added more markers for package module initialization",
+        "user": {
+          "login": "RhysDavis",
+          "id": 683108,
+          "node_id": "MDQ6VXNlcjY4MzEwOA==",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/RhysDavis",
+          "type": "User",
+          "site_admin": false
+        },
+        "body": "## Summary\r\nAdded PROCESS_PACKAGE_MODULE to our markers to see how long each one takes\r\n\r\n## Test Plan\r\nTested markers with React Marker listener\r\n\r\n## Changelog\r\n[Android][Added] - More React Markers for package module initialization",
+        "created_at": "2023-01-27T23:47:36Z",
+        "updated_at": "2023-02-09T17:55:15Z",
+        "closed_at": "2023-02-09T17:55:15Z",
+        "merged_at": "2023-02-09T17:55:15Z",
+        "merge_commit_sha": "ad1b01e71966c97d4384686ac08136039b009a9e",
+        "assignee": null,
+        "assignees": [],
+        "requested_reviewers": [],
+        "requested_teams": [],
+        "labels": [],
+        "milestone": null,
+        "draft": false,
+        "head": {
+          "label": "discord:rhysd/more_startup_markers",
+          "ref": "rhysd/more_startup_markers",
+          "sha": "3f4a5282193f5f0e91ef426c9a2e2523a92944c1",
+          "user": {
+            "login": "discord",
+            "id": 1965106,
+            "node_id": "MDEyOk9yZ2FuaXphdGlvbjE5NjUxMDY=",
+            "gravatar_id": "",
+            "url": "https://api.github.com/users/discord",
+            "type": "Organization",
+            "site_admin": false
+          },
+          "repo": {
+            "id": 36027821,
+            "node_id": "MDEwOlJlcG9zaXRvcnkzNjAyNzgyMQ==",
+            "name": "react-native",
+            "full_name": "discord/react-native",
+            "private": false,
+            "owner": {
+              "login": "discord",
+              "id": 1965106,
+              "node_id": "MDEyOk9yZ2FuaXphdGlvbjE5NjUxMDY=",
+              "gravatar_id": "",
+              "url": "https://api.github.com/users/discord",
+              "type": "Organization",
+              "site_admin": false
+            },
+            "description": "A framework for building native apps with React.",
+            "fork": true,
+            "url": "https://api.github.com/repos/discord/react-native",
+            "created_at": "2015-05-21T17:40:16Z",
+            "updated_at": "2023-04-24T06:26:57Z",
+            "pushed_at": "2023-04-22T18:36:56Z",
+            "homepage": "http://facebook.github.io/react-native/",
+            "size": 368868,
+            "stargazers_count": 40,
+            "watchers_count": 40,
+            "language": "JavaScript",
+            "has_issues": false,
+            "has_projects": true,
+            "has_downloads": true,
+            "has_wiki": true,
+            "has_pages": false,
+            "has_discussions": false,
+            "forks_count": 14,
+            "archived": false,
+            "disabled": false,
+            "open_issues_count": 2,
+            "license": {
+              "key": "mit",
+              "name": "MIT License",
+              "spdx_id": "MIT",
+              "url": "https://api.github.com/licenses/mit",
+              "node_id": "MDc6TGljZW5zZTEz"
+            },
+            "allow_forking": true,
+            "is_template": false,
+            "web_commit_signoff_required": false,
+            "topics": [],
+            "visibility": "public",
+            "forks": 14,
+            "open_issues": 2,
+            "watchers": 40,
+            "default_branch": "master"
+          }
+        },
+        "base": {
+          "label": "discord:main",
+          "ref": "main",
+          "sha": "8ea1cba06a78fba023e5a441ad5c4755d0d504ac",
+          "user": {
+            "login": "discord",
+            "id": 1965106,
+            "node_id": "MDEyOk9yZ2FuaXphdGlvbjE5NjUxMDY=",
+            "gravatar_id": "",
+            "url": "https://api.github.com/users/discord",
+            "type": "Organization",
+            "site_admin": false
+          },
+          "repo": {
+            "id": 36027821,
+            "node_id": "MDEwOlJlcG9zaXRvcnkzNjAyNzgyMQ==",
+            "name": "react-native",
+            "full_name": "discord/react-native",
+            "private": false,
+            "owner": {
+              "login": "discord",
+              "id": 1965106,
+              "node_id": "MDEyOk9yZ2FuaXphdGlvbjE5NjUxMDY=",
+              "gravatar_id": "",
+              "url": "https://api.github.com/users/discord",
+              "type": "Organization",
+              "site_admin": false
+            },
+            "description": "A framework for building native apps with React.",
+            "fork": true,
+            "url": "https://api.github.com/repos/discord/react-native",
+            "created_at": "2015-05-21T17:40:16Z",
+            "updated_at": "2023-04-24T06:26:57Z",
+            "pushed_at": "2023-04-22T18:36:56Z",
+            "homepage": "http://facebook.github.io/react-native/",
+            "size": 368868,
+            "stargazers_count": 40,
+            "watchers_count": 40,
+            "language": "JavaScript",
+            "has_issues": false,
+            "has_projects": true,
+            "has_downloads": true,
+            "has_wiki": true,
+            "has_pages": false,
+            "has_discussions": false,
+            "forks_count": 14,
+            "archived": false,
+            "disabled": false,
+            "open_issues_count": 2,
+            "license": {
+              "key": "mit",
+              "name": "MIT License",
+              "spdx_id": "MIT",
+              "url": "https://api.github.com/licenses/mit",
+              "node_id": "MDc6TGljZW5zZTEz"
+            },
+            "allow_forking": true,
+            "is_template": false,
+            "web_commit_signoff_required": false,
+            "topics": [],
+            "visibility": "public",
+            "forks": 14,
+            "open_issues": 2,
+            "watchers": 40,
+            "default_branch": "master"
+          }
+        },
+        "_links": {
+          "self": {
+            "href": "https://api.github.com/repos/discord/react-native/pulls/33"
+          },
+          "html": {
+            "href": "https://github.com/discord/react-native/pull/33"
+          },
+          "issue": {
+            "href": "https://api.github.com/repos/discord/react-native/issues/33"
+          },
+          "comments": {
+            "href": "https://api.github.com/repos/discord/react-native/issues/33/comments"
+          },
+          "review_comments": {
+            "href": "https://api.github.com/repos/discord/react-native/pulls/33/comments"
+          },
+          "review_comment": {
+            "href": "https://api.github.com/repos/discord/react-native/pulls/comments{/number}"
+          },
+          "commits": {
+            "href": "https://api.github.com/repos/discord/react-native/pulls/33/commits"
+          },
+          "statuses": {
+            "href": "https://api.github.com/repos/discord/react-native/statuses/3f4a5282193f5f0e91ef426c9a2e2523a92944c1"
+          }
+        },
+        "author_association": "NONE",
+        "auto_merge": null,
+        "active_lock_reason": null
+      },
+      {
+        "url": "https://api.github.com/repos/discord/react-native/pulls/32",
+        "id": 1130593705,
+        "node_id": "PR_kwDOAiW9rc5DY32p",
+        "number": 32,
+        "state": "closed",
+        "locked": false,
+        "title": "Remove RN Android's bizarre font weight extension pattern",
+        "user": {
+          "login": "stevenpetryk",
+          "id": 1724000,
+          "node_id": "MDQ6VXNlcjE3MjQwMDA=",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/stevenpetryk",
+          "type": "User",
+          "site_admin": false
+        },
+        "body": "This is a simple change to ignore the way that RN's Android code searches for fonts with a `_bold`, `_italic`, or `_bold_italic` suffix in their filename. In Discord's codebase we just declare the font family, but some of our libraries don't do that (namely react-navigation), so this change should help an issue where some headings are using Roboto because this is trying to find a font matching `fontWeight: 700`.\r\n\r\nWe'll need to revert this change once we rework how we do fonts on RN (since currently we're a bit off-book).",
+        "created_at": "2022-11-21T20:48:14Z",
+        "updated_at": "2022-11-21T20:53:16Z",
+        "closed_at": "2022-11-21T20:51:52Z",
+        "merged_at": "2022-11-21T20:51:52Z",
+        "merge_commit_sha": "e79fc6d4eea474e0a6fd8aea96b14b04dd084a55",
+        "assignee": null,
+        "assignees": [],
+        "requested_reviewers": [],
+        "requested_teams": [],
+        "labels": [],
+        "milestone": null,
+        "draft": false,
+        "head": {
+          "label": "discord:fonts/ignore-weight-extension",
+          "ref": "fonts/ignore-weight-extension",
+          "sha": "ce20ba58bcdbc558e7905c11ba6d55497db71f40",
+          "user": {
+            "login": "discord",
+            "id": 1965106,
+            "node_id": "MDEyOk9yZ2FuaXphdGlvbjE5NjUxMDY=",
+            "gravatar_id": "",
+            "url": "https://api.github.com/users/discord",
+            "type": "Organization",
+            "site_admin": false
+          },
+          "repo": {
+            "id": 36027821,
+            "node_id": "MDEwOlJlcG9zaXRvcnkzNjAyNzgyMQ==",
+            "name": "react-native",
+            "full_name": "discord/react-native",
+            "private": false,
+            "owner": {
+              "login": "discord",
+              "id": 1965106,
+              "node_id": "MDEyOk9yZ2FuaXphdGlvbjE5NjUxMDY=",
+              "gravatar_id": "",
+              "url": "https://api.github.com/users/discord",
+              "type": "Organization",
+              "site_admin": false
+            },
+            "description": "A framework for building native apps with React.",
+            "fork": true,
+            "url": "https://api.github.com/repos/discord/react-native",
+            "created_at": "2015-05-21T17:40:16Z",
+            "updated_at": "2023-04-24T06:26:57Z",
+            "pushed_at": "2023-04-22T18:36:56Z",
+            "homepage": "http://facebook.github.io/react-native/",
+            "size": 368868,
+            "stargazers_count": 40,
+            "watchers_count": 40,
+            "language": "JavaScript",
+            "has_issues": false,
+            "has_projects": true,
+            "has_downloads": true,
+            "has_wiki": true,
+            "has_pages": false,
+            "has_discussions": false,
+            "forks_count": 14,
+            "archived": false,
+            "disabled": false,
+            "open_issues_count": 2,
+            "license": {
+              "key": "mit",
+              "name": "MIT License",
+              "spdx_id": "MIT",
+              "url": "https://api.github.com/licenses/mit",
+              "node_id": "MDc6TGljZW5zZTEz"
+            },
+            "allow_forking": true,
+            "is_template": false,
+            "web_commit_signoff_required": false,
+            "topics": [],
+            "visibility": "public",
+            "forks": 14,
+            "open_issues": 2,
+            "watchers": 40,
+            "default_branch": "master"
+          }
+        },
+        "base": {
+          "label": "discord:0.68-discord-1",
+          "ref": "0.68-discord-1",
+          "sha": "2160436fb768e04490abde4d09336e3e9277f667",
+          "user": {
+            "login": "discord",
+            "id": 1965106,
+            "node_id": "MDEyOk9yZ2FuaXphdGlvbjE5NjUxMDY=",
+            "gravatar_id": "",
+            "url": "https://api.github.com/users/discord",
+            "type": "Organization",
+            "site_admin": false
+          },
+          "repo": {
+            "id": 36027821,
+            "node_id": "MDEwOlJlcG9zaXRvcnkzNjAyNzgyMQ==",
+            "name": "react-native",
+            "full_name": "discord/react-native",
+            "private": false,
+            "owner": {
+              "login": "discord",
+              "id": 1965106,
+              "node_id": "MDEyOk9yZ2FuaXphdGlvbjE5NjUxMDY=",
+              "gravatar_id": "",
+              "url": "https://api.github.com/users/discord",
+              "type": "Organization",
+              "site_admin": false
+            },
+            "description": "A framework for building native apps with React.",
+            "fork": true,
+            "url": "https://api.github.com/repos/discord/react-native",
+            "created_at": "2015-05-21T17:40:16Z",
+            "updated_at": "2023-04-24T06:26:57Z",
+            "pushed_at": "2023-04-22T18:36:56Z",
+            "homepage": "http://facebook.github.io/react-native/",
+            "size": 368868,
+            "stargazers_count": 40,
+            "watchers_count": 40,
+            "language": "JavaScript",
+            "has_issues": false,
+            "has_projects": true,
+            "has_downloads": true,
+            "has_wiki": true,
+            "has_pages": false,
+            "has_discussions": false,
+            "forks_count": 14,
+            "archived": false,
+            "disabled": false,
+            "open_issues_count": 2,
+            "license": {
+              "key": "mit",
+              "name": "MIT License",
+              "spdx_id": "MIT",
+              "url": "https://api.github.com/licenses/mit",
+              "node_id": "MDc6TGljZW5zZTEz"
+            },
+            "allow_forking": true,
+            "is_template": false,
+            "web_commit_signoff_required": false,
+            "topics": [],
+            "visibility": "public",
+            "forks": 14,
+            "open_issues": 2,
+            "watchers": 40,
+            "default_branch": "master"
+          }
+        },
+        "_links": {
+          "self": {
+            "href": "https://api.github.com/repos/discord/react-native/pulls/32"
+          },
+          "html": {
+            "href": "https://github.com/discord/react-native/pull/32"
+          },
+          "issue": {
+            "href": "https://api.github.com/repos/discord/react-native/issues/32"
+          },
+          "comments": {
+            "href": "https://api.github.com/repos/discord/react-native/issues/32/comments"
+          },
+          "review_comments": {
+            "href": "https://api.github.com/repos/discord/react-native/pulls/32/comments"
+          },
+          "review_comment": {
+            "href": "https://api.github.com/repos/discord/react-native/pulls/comments{/number}"
+          },
+          "commits": {
+            "href": "https://api.github.com/repos/discord/react-native/pulls/32/commits"
+          },
+          "statuses": {
+            "href": "https://api.github.com/repos/discord/react-native/statuses/ce20ba58bcdbc558e7905c11ba6d55497db71f40"
+          }
+        },
+        "author_association": "NONE",
+        "auto_merge": null,
+        "active_lock_reason": null
+      }
+    ]
   }
 }

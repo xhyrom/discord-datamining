@@ -415,7 +415,7 @@
             "content_type": "application/zip",
             "state": "uploaded",
             "size": 539931,
-            "download_count": 499845,
+            "download_count": 499861,
             "created_at": "2018-11-27T17:47:21Z",
             "updated_at": "2018-11-27T17:47:23Z"
           }
@@ -1012,6 +1012,977 @@
         "state_reason": null
       }
     ],
-    "pullRequests": []
+    "pullRequests": [
+      {
+        "url": "https://api.github.com/repos/discord/discord-rpc/pulls/367",
+        "id": 972157339,
+        "node_id": "PR_kwDOBcpvBc458fGb",
+        "number": 367,
+        "state": "open",
+        "locked": false,
+        "title": "Add some library versioning",
+        "user": {
+          "login": "jengelh",
+          "id": 8861948,
+          "node_id": "MDQ6VXNlcjg4NjE5NDg=",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/jengelh",
+          "type": "User",
+          "site_admin": false
+        },
+        "body": "discord-rpc silently changed ABI between v3.0.0 and v3.4.0.\r\nThis requires DT_SONAME changes. Implement something that fulfills the tagging requirements for distributions.",
+        "created_at": "2022-06-20T12:18:49Z",
+        "updated_at": "2022-06-20T12:22:27Z",
+        "closed_at": null,
+        "merged_at": null,
+        "merge_commit_sha": "842e9e3ba4bcbb9290de135eeb63de0e019be481",
+        "assignee": null,
+        "assignees": [],
+        "requested_reviewers": [],
+        "requested_teams": [],
+        "labels": [],
+        "milestone": null,
+        "draft": false,
+        "head": {
+          "label": "jengelh:master",
+          "ref": "master",
+          "sha": "b512cd3cfdc47a9684ea3cf1208a0c7ac921d0dc",
+          "user": {
+            "login": "jengelh",
+            "id": 8861948,
+            "node_id": "MDQ6VXNlcjg4NjE5NDg=",
+            "gravatar_id": "",
+            "url": "https://api.github.com/users/jengelh",
+            "type": "User",
+            "site_admin": false
+          },
+          "repo": {
+            "id": 505429050,
+            "node_id": "R_kgDOHiA8Og",
+            "name": "discord-rpc",
+            "full_name": "jengelh/discord-rpc",
+            "private": false,
+            "owner": {
+              "login": "jengelh",
+              "id": 8861948,
+              "node_id": "MDQ6VXNlcjg4NjE5NDg=",
+              "gravatar_id": "",
+              "url": "https://api.github.com/users/jengelh",
+              "type": "User",
+              "site_admin": false
+            },
+            "description": null,
+            "fork": true,
+            "url": "https://api.github.com/repos/jengelh/discord-rpc",
+            "created_at": "2022-06-20T12:18:29Z",
+            "updated_at": "2022-06-20T12:18:40Z",
+            "pushed_at": "2022-06-20T12:18:37Z",
+            "homepage": "https://discordapp.com/developers",
+            "size": 2813,
+            "stargazers_count": 0,
+            "watchers_count": 0,
+            "language": "C++",
+            "has_issues": false,
+            "has_projects": true,
+            "has_downloads": true,
+            "has_wiki": false,
+            "has_pages": false,
+            "has_discussions": false,
+            "forks_count": 0,
+            "archived": false,
+            "disabled": false,
+            "open_issues_count": 0,
+            "license": {
+              "key": "mit",
+              "name": "MIT License",
+              "spdx_id": "MIT",
+              "url": "https://api.github.com/licenses/mit",
+              "node_id": "MDc6TGljZW5zZTEz"
+            },
+            "allow_forking": true,
+            "is_template": false,
+            "web_commit_signoff_required": false,
+            "topics": [],
+            "visibility": "public",
+            "forks": 0,
+            "open_issues": 0,
+            "watchers": 0,
+            "default_branch": "master"
+          }
+        },
+        "base": {
+          "label": "discord:master",
+          "ref": "master",
+          "sha": "963aa9f3e5ce81a4682c6ca3d136cddda614db33",
+          "user": {
+            "login": "discord",
+            "id": 1965106,
+            "node_id": "MDEyOk9yZ2FuaXphdGlvbjE5NjUxMDY=",
+            "gravatar_id": "",
+            "url": "https://api.github.com/users/discord",
+            "type": "Organization",
+            "site_admin": false
+          },
+          "repo": {
+            "id": 97152773,
+            "node_id": "MDEwOlJlcG9zaXRvcnk5NzE1Mjc3Mw==",
+            "name": "discord-rpc",
+            "full_name": "discord/discord-rpc",
+            "private": false,
+            "owner": {
+              "login": "discord",
+              "id": 1965106,
+              "node_id": "MDEyOk9yZ2FuaXphdGlvbjE5NjUxMDY=",
+              "gravatar_id": "",
+              "url": "https://api.github.com/users/discord",
+              "type": "Organization",
+              "site_admin": false
+            },
+            "description": null,
+            "fork": false,
+            "url": "https://api.github.com/repos/discord/discord-rpc",
+            "created_at": "2017-07-13T18:20:34Z",
+            "updated_at": "2023-04-23T10:04:31Z",
+            "pushed_at": "2022-06-20T12:18:50Z",
+            "homepage": "https://discordapp.com/developers",
+            "size": 2810,
+            "stargazers_count": 955,
+            "watchers_count": 955,
+            "language": "C++",
+            "has_issues": true,
+            "has_projects": false,
+            "has_downloads": true,
+            "has_wiki": false,
+            "has_pages": false,
+            "has_discussions": false,
+            "forks_count": 280,
+            "archived": false,
+            "disabled": false,
+            "open_issues_count": 57,
+            "license": {
+              "key": "mit",
+              "name": "MIT License",
+              "spdx_id": "MIT",
+              "url": "https://api.github.com/licenses/mit",
+              "node_id": "MDc6TGljZW5zZTEz"
+            },
+            "allow_forking": true,
+            "is_template": false,
+            "web_commit_signoff_required": false,
+            "topics": [],
+            "visibility": "public",
+            "forks": 280,
+            "open_issues": 57,
+            "watchers": 955,
+            "default_branch": "master"
+          }
+        },
+        "_links": {
+          "self": {
+            "href": "https://api.github.com/repos/discord/discord-rpc/pulls/367"
+          },
+          "html": {
+            "href": "https://github.com/discord/discord-rpc/pull/367"
+          },
+          "issue": {
+            "href": "https://api.github.com/repos/discord/discord-rpc/issues/367"
+          },
+          "comments": {
+            "href": "https://api.github.com/repos/discord/discord-rpc/issues/367/comments"
+          },
+          "review_comments": {
+            "href": "https://api.github.com/repos/discord/discord-rpc/pulls/367/comments"
+          },
+          "review_comment": {
+            "href": "https://api.github.com/repos/discord/discord-rpc/pulls/comments{/number}"
+          },
+          "commits": {
+            "href": "https://api.github.com/repos/discord/discord-rpc/pulls/367/commits"
+          },
+          "statuses": {
+            "href": "https://api.github.com/repos/discord/discord-rpc/statuses/b512cd3cfdc47a9684ea3cf1208a0c7ac921d0dc"
+          }
+        },
+        "author_association": "NONE",
+        "auto_merge": null,
+        "active_lock_reason": null
+      },
+      {
+        "url": "https://api.github.com/repos/discord/discord-rpc/pulls/357",
+        "id": 855453740,
+        "node_id": "PR_kwDOBcpvBc4y_TAs",
+        "number": 357,
+        "state": "open",
+        "locked": false,
+        "title": "Update LICENSE",
+        "user": {
+          "login": "Nightmaregodss",
+          "id": 81895400,
+          "node_id": "MDQ6VXNlcjgxODk1NDAw",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/Nightmaregodss",
+          "type": "User",
+          "site_admin": false
+        },
+        "body": null,
+        "created_at": "2022-02-17T13:04:04Z",
+        "updated_at": "2022-02-17T13:04:04Z",
+        "closed_at": null,
+        "merged_at": null,
+        "merge_commit_sha": "9c4ad28f32680c2d3be61ee4fe1c9bbcb5a31c98",
+        "assignee": null,
+        "assignees": [],
+        "requested_reviewers": [],
+        "requested_teams": [],
+        "labels": [],
+        "milestone": null,
+        "draft": false,
+        "head": {
+          "label": "Nightmaregodss:patch-1",
+          "ref": "patch-1",
+          "sha": "7beec19b959d588352944b4618c66cdc7ab57b51",
+          "user": {
+            "login": "Nightmaregodss",
+            "id": 81895400,
+            "node_id": "MDQ6VXNlcjgxODk1NDAw",
+            "gravatar_id": "",
+            "url": "https://api.github.com/users/Nightmaregodss",
+            "type": "User",
+            "site_admin": false
+          },
+          "repo": {
+            "id": 460438324,
+            "node_id": "R_kgDOG3G7NA",
+            "name": "discord-rpc",
+            "full_name": "Nightmaregodss/discord-rpc",
+            "private": false,
+            "owner": {
+              "login": "Nightmaregodss",
+              "id": 81895400,
+              "node_id": "MDQ6VXNlcjgxODk1NDAw",
+              "gravatar_id": "",
+              "url": "https://api.github.com/users/Nightmaregodss",
+              "type": "User",
+              "site_admin": false
+            },
+            "description": null,
+            "fork": true,
+            "url": "https://api.github.com/repos/Nightmaregodss/discord-rpc",
+            "created_at": "2022-02-17T13:03:41Z",
+            "updated_at": "2022-02-17T01:12:44Z",
+            "pushed_at": "2022-02-17T13:03:55Z",
+            "homepage": "https://discordapp.com/developers",
+            "size": 2811,
+            "stargazers_count": 0,
+            "watchers_count": 0,
+            "language": null,
+            "has_issues": false,
+            "has_projects": true,
+            "has_downloads": true,
+            "has_wiki": false,
+            "has_pages": false,
+            "has_discussions": false,
+            "forks_count": 0,
+            "archived": false,
+            "disabled": false,
+            "open_issues_count": 0,
+            "license": {
+              "key": "mit",
+              "name": "MIT License",
+              "spdx_id": "MIT",
+              "url": "https://api.github.com/licenses/mit",
+              "node_id": "MDc6TGljZW5zZTEz"
+            },
+            "allow_forking": true,
+            "is_template": false,
+            "web_commit_signoff_required": false,
+            "topics": [],
+            "visibility": "public",
+            "forks": 0,
+            "open_issues": 0,
+            "watchers": 0,
+            "default_branch": "master"
+          }
+        },
+        "base": {
+          "label": "discord:master",
+          "ref": "master",
+          "sha": "963aa9f3e5ce81a4682c6ca3d136cddda614db33",
+          "user": {
+            "login": "discord",
+            "id": 1965106,
+            "node_id": "MDEyOk9yZ2FuaXphdGlvbjE5NjUxMDY=",
+            "gravatar_id": "",
+            "url": "https://api.github.com/users/discord",
+            "type": "Organization",
+            "site_admin": false
+          },
+          "repo": {
+            "id": 97152773,
+            "node_id": "MDEwOlJlcG9zaXRvcnk5NzE1Mjc3Mw==",
+            "name": "discord-rpc",
+            "full_name": "discord/discord-rpc",
+            "private": false,
+            "owner": {
+              "login": "discord",
+              "id": 1965106,
+              "node_id": "MDEyOk9yZ2FuaXphdGlvbjE5NjUxMDY=",
+              "gravatar_id": "",
+              "url": "https://api.github.com/users/discord",
+              "type": "Organization",
+              "site_admin": false
+            },
+            "description": null,
+            "fork": false,
+            "url": "https://api.github.com/repos/discord/discord-rpc",
+            "created_at": "2017-07-13T18:20:34Z",
+            "updated_at": "2023-04-23T10:04:31Z",
+            "pushed_at": "2022-06-20T12:18:50Z",
+            "homepage": "https://discordapp.com/developers",
+            "size": 2810,
+            "stargazers_count": 955,
+            "watchers_count": 955,
+            "language": "C++",
+            "has_issues": true,
+            "has_projects": false,
+            "has_downloads": true,
+            "has_wiki": false,
+            "has_pages": false,
+            "has_discussions": false,
+            "forks_count": 280,
+            "archived": false,
+            "disabled": false,
+            "open_issues_count": 57,
+            "license": {
+              "key": "mit",
+              "name": "MIT License",
+              "spdx_id": "MIT",
+              "url": "https://api.github.com/licenses/mit",
+              "node_id": "MDc6TGljZW5zZTEz"
+            },
+            "allow_forking": true,
+            "is_template": false,
+            "web_commit_signoff_required": false,
+            "topics": [],
+            "visibility": "public",
+            "forks": 280,
+            "open_issues": 57,
+            "watchers": 955,
+            "default_branch": "master"
+          }
+        },
+        "_links": {
+          "self": {
+            "href": "https://api.github.com/repos/discord/discord-rpc/pulls/357"
+          },
+          "html": {
+            "href": "https://github.com/discord/discord-rpc/pull/357"
+          },
+          "issue": {
+            "href": "https://api.github.com/repos/discord/discord-rpc/issues/357"
+          },
+          "comments": {
+            "href": "https://api.github.com/repos/discord/discord-rpc/issues/357/comments"
+          },
+          "review_comments": {
+            "href": "https://api.github.com/repos/discord/discord-rpc/pulls/357/comments"
+          },
+          "review_comment": {
+            "href": "https://api.github.com/repos/discord/discord-rpc/pulls/comments{/number}"
+          },
+          "commits": {
+            "href": "https://api.github.com/repos/discord/discord-rpc/pulls/357/commits"
+          },
+          "statuses": {
+            "href": "https://api.github.com/repos/discord/discord-rpc/statuses/7beec19b959d588352944b4618c66cdc7ab57b51"
+          }
+        },
+        "author_association": "NONE",
+        "auto_merge": null,
+        "active_lock_reason": null
+      },
+      {
+        "url": "https://api.github.com/repos/discord/discord-rpc/pulls/345",
+        "id": 711337354,
+        "node_id": "MDExOlB1bGxSZXF1ZXN0NzExMzM3MzU0",
+        "number": 345,
+        "state": "open",
+        "locked": false,
+        "title": "Add cmake config files",
+        "user": {
+          "login": "abouvier",
+          "id": 6044259,
+          "node_id": "MDQ6VXNlcjYwNDQyNTk=",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/abouvier",
+          "type": "User",
+          "site_admin": false
+        },
+        "body": "This will allow other projects to do:\r\n\r\n```\r\nfind_package(DiscordRPC REQUIRED)\r\ntarget_link_libraries(project PRIVATE DiscordRPC::discord-rpc)\r\n```",
+        "created_at": "2021-08-12T17:53:23Z",
+        "updated_at": "2021-08-12T17:53:23Z",
+        "closed_at": null,
+        "merged_at": null,
+        "merge_commit_sha": "899fab841694e70728da2f9b9668a6b3199a0b37",
+        "assignee": null,
+        "assignees": [],
+        "requested_reviewers": [],
+        "requested_teams": [],
+        "labels": [],
+        "milestone": null,
+        "draft": false,
+        "head": {
+          "label": "abouvier:cmake",
+          "ref": "cmake",
+          "sha": "9bae4e0043217cb0031769601f6b990533d47782",
+          "user": {
+            "login": "abouvier",
+            "id": 6044259,
+            "node_id": "MDQ6VXNlcjYwNDQyNTk=",
+            "gravatar_id": "",
+            "url": "https://api.github.com/users/abouvier",
+            "type": "User",
+            "site_admin": false
+          },
+          "repo": {
+            "id": 395393587,
+            "node_id": "MDEwOlJlcG9zaXRvcnkzOTUzOTM1ODc=",
+            "name": "discord-rpc",
+            "full_name": "abouvier/discord-rpc",
+            "private": false,
+            "owner": {
+              "login": "abouvier",
+              "id": 6044259,
+              "node_id": "MDQ6VXNlcjYwNDQyNTk=",
+              "gravatar_id": "",
+              "url": "https://api.github.com/users/abouvier",
+              "type": "User",
+              "site_admin": false
+            },
+            "description": null,
+            "fork": true,
+            "url": "https://api.github.com/repos/abouvier/discord-rpc",
+            "created_at": "2021-08-12T17:18:01Z",
+            "updated_at": "2021-08-12T17:18:02Z",
+            "pushed_at": "2021-08-12T17:46:21Z",
+            "homepage": "https://discordapp.com/developers",
+            "size": 2811,
+            "stargazers_count": 0,
+            "watchers_count": 0,
+            "language": null,
+            "has_issues": false,
+            "has_projects": true,
+            "has_downloads": true,
+            "has_wiki": false,
+            "has_pages": false,
+            "has_discussions": false,
+            "forks_count": 0,
+            "archived": false,
+            "disabled": false,
+            "open_issues_count": 0,
+            "license": {
+              "key": "mit",
+              "name": "MIT License",
+              "spdx_id": "MIT",
+              "url": "https://api.github.com/licenses/mit",
+              "node_id": "MDc6TGljZW5zZTEz"
+            },
+            "allow_forking": true,
+            "is_template": false,
+            "web_commit_signoff_required": false,
+            "topics": [],
+            "visibility": "public",
+            "forks": 0,
+            "open_issues": 0,
+            "watchers": 0,
+            "default_branch": "master"
+          }
+        },
+        "base": {
+          "label": "discord:master",
+          "ref": "master",
+          "sha": "963aa9f3e5ce81a4682c6ca3d136cddda614db33",
+          "user": {
+            "login": "discord",
+            "id": 1965106,
+            "node_id": "MDEyOk9yZ2FuaXphdGlvbjE5NjUxMDY=",
+            "gravatar_id": "",
+            "url": "https://api.github.com/users/discord",
+            "type": "Organization",
+            "site_admin": false
+          },
+          "repo": {
+            "id": 97152773,
+            "node_id": "MDEwOlJlcG9zaXRvcnk5NzE1Mjc3Mw==",
+            "name": "discord-rpc",
+            "full_name": "discord/discord-rpc",
+            "private": false,
+            "owner": {
+              "login": "discord",
+              "id": 1965106,
+              "node_id": "MDEyOk9yZ2FuaXphdGlvbjE5NjUxMDY=",
+              "gravatar_id": "",
+              "url": "https://api.github.com/users/discord",
+              "type": "Organization",
+              "site_admin": false
+            },
+            "description": null,
+            "fork": false,
+            "url": "https://api.github.com/repos/discord/discord-rpc",
+            "created_at": "2017-07-13T18:20:34Z",
+            "updated_at": "2023-04-23T10:04:31Z",
+            "pushed_at": "2022-06-20T12:18:50Z",
+            "homepage": "https://discordapp.com/developers",
+            "size": 2810,
+            "stargazers_count": 955,
+            "watchers_count": 955,
+            "language": "C++",
+            "has_issues": true,
+            "has_projects": false,
+            "has_downloads": true,
+            "has_wiki": false,
+            "has_pages": false,
+            "has_discussions": false,
+            "forks_count": 280,
+            "archived": false,
+            "disabled": false,
+            "open_issues_count": 57,
+            "license": {
+              "key": "mit",
+              "name": "MIT License",
+              "spdx_id": "MIT",
+              "url": "https://api.github.com/licenses/mit",
+              "node_id": "MDc6TGljZW5zZTEz"
+            },
+            "allow_forking": true,
+            "is_template": false,
+            "web_commit_signoff_required": false,
+            "topics": [],
+            "visibility": "public",
+            "forks": 280,
+            "open_issues": 57,
+            "watchers": 955,
+            "default_branch": "master"
+          }
+        },
+        "_links": {
+          "self": {
+            "href": "https://api.github.com/repos/discord/discord-rpc/pulls/345"
+          },
+          "html": {
+            "href": "https://github.com/discord/discord-rpc/pull/345"
+          },
+          "issue": {
+            "href": "https://api.github.com/repos/discord/discord-rpc/issues/345"
+          },
+          "comments": {
+            "href": "https://api.github.com/repos/discord/discord-rpc/issues/345/comments"
+          },
+          "review_comments": {
+            "href": "https://api.github.com/repos/discord/discord-rpc/pulls/345/comments"
+          },
+          "review_comment": {
+            "href": "https://api.github.com/repos/discord/discord-rpc/pulls/comments{/number}"
+          },
+          "commits": {
+            "href": "https://api.github.com/repos/discord/discord-rpc/pulls/345/commits"
+          },
+          "statuses": {
+            "href": "https://api.github.com/repos/discord/discord-rpc/statuses/9bae4e0043217cb0031769601f6b990533d47782"
+          }
+        },
+        "author_association": "NONE",
+        "auto_merge": null,
+        "active_lock_reason": null
+      },
+      {
+        "url": "https://api.github.com/repos/discord/discord-rpc/pulls/329",
+        "id": 614043433,
+        "node_id": "MDExOlB1bGxSZXF1ZXN0NjE0MDQzNDMz",
+        "number": 329,
+        "state": "open",
+        "locked": false,
+        "title": "Fix evil allocations, marshaling overhead",
+        "user": {
+          "login": "Kein",
+          "id": 623756,
+          "node_id": "MDQ6VXNlcjYyMzc1Ng==",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/Kein",
+          "type": "User",
+          "site_admin": false
+        },
+        "body": "StrToPtr() had at least 4 extra allocations of byte[] and char[] arrays that will make Unity's GC and frametime stability sad, taking into account you can updated 5 times per 20 seconds, which is few frames apart.\r\nAlso, there was 0 reason to have that marshaling invoke overhead where it zeroes byte by byte in a loop. There is no point, we already overwrite whole memory via .Copy() and we only allocate as much as needed for the string bytes, no extra. No security concerns here.\r\n\r\nThe only question that eludes me is the limitation of 128 bytes. It was not enforced on managed side in old code, and I could not find anything in native library. So I assume it is enforced on RPC server side then? Either way since limit is 128 bytes aka 128 ASCII characters at min, it makes sense to limit allocated data to 128 chars max to avoid sending perhaps megabytes of mistakenly generated by user string (I assume it will throw in pipe/socket).\r\n",
+        "created_at": "2021-04-13T00:55:17Z",
+        "updated_at": "2021-04-13T13:55:36Z",
+        "closed_at": null,
+        "merged_at": null,
+        "merge_commit_sha": "e4fa361a2988a5a826f5e91e19dd521926872f02",
+        "assignee": null,
+        "assignees": [],
+        "requested_reviewers": [],
+        "requested_teams": [],
+        "labels": [],
+        "milestone": null,
+        "draft": false,
+        "head": {
+          "label": "Kein:patch-1",
+          "ref": "patch-1",
+          "sha": "a88cabd41747ab13e61f33b463f570bd931b4983",
+          "user": {
+            "login": "Kein",
+            "id": 623756,
+            "node_id": "MDQ6VXNlcjYyMzc1Ng==",
+            "gravatar_id": "",
+            "url": "https://api.github.com/users/Kein",
+            "type": "User",
+            "site_admin": false
+          },
+          "repo": {
+            "id": 357375737,
+            "node_id": "MDEwOlJlcG9zaXRvcnkzNTczNzU3Mzc=",
+            "name": "discord-rpc",
+            "full_name": "Kein/discord-rpc",
+            "private": false,
+            "owner": {
+              "login": "Kein",
+              "id": 623756,
+              "node_id": "MDQ6VXNlcjYyMzc1Ng==",
+              "gravatar_id": "",
+              "url": "https://api.github.com/users/Kein",
+              "type": "User",
+              "site_admin": false
+            },
+            "description": null,
+            "fork": true,
+            "url": "https://api.github.com/repos/Kein/discord-rpc",
+            "created_at": "2021-04-13T00:21:31Z",
+            "updated_at": "2021-11-15T08:35:40Z",
+            "pushed_at": "2021-04-13T13:55:35Z",
+            "homepage": "https://discordapp.com/developers",
+            "size": 2817,
+            "stargazers_count": 0,
+            "watchers_count": 0,
+            "language": null,
+            "has_issues": false,
+            "has_projects": true,
+            "has_downloads": true,
+            "has_wiki": false,
+            "has_pages": false,
+            "has_discussions": false,
+            "forks_count": 0,
+            "archived": false,
+            "disabled": false,
+            "open_issues_count": 0,
+            "license": {
+              "key": "mit",
+              "name": "MIT License",
+              "spdx_id": "MIT",
+              "url": "https://api.github.com/licenses/mit",
+              "node_id": "MDc6TGljZW5zZTEz"
+            },
+            "allow_forking": true,
+            "is_template": false,
+            "web_commit_signoff_required": false,
+            "topics": [],
+            "visibility": "public",
+            "forks": 0,
+            "open_issues": 0,
+            "watchers": 0,
+            "default_branch": "master"
+          }
+        },
+        "base": {
+          "label": "discord:master",
+          "ref": "master",
+          "sha": "963aa9f3e5ce81a4682c6ca3d136cddda614db33",
+          "user": {
+            "login": "discord",
+            "id": 1965106,
+            "node_id": "MDEyOk9yZ2FuaXphdGlvbjE5NjUxMDY=",
+            "gravatar_id": "",
+            "url": "https://api.github.com/users/discord",
+            "type": "Organization",
+            "site_admin": false
+          },
+          "repo": {
+            "id": 97152773,
+            "node_id": "MDEwOlJlcG9zaXRvcnk5NzE1Mjc3Mw==",
+            "name": "discord-rpc",
+            "full_name": "discord/discord-rpc",
+            "private": false,
+            "owner": {
+              "login": "discord",
+              "id": 1965106,
+              "node_id": "MDEyOk9yZ2FuaXphdGlvbjE5NjUxMDY=",
+              "gravatar_id": "",
+              "url": "https://api.github.com/users/discord",
+              "type": "Organization",
+              "site_admin": false
+            },
+            "description": null,
+            "fork": false,
+            "url": "https://api.github.com/repos/discord/discord-rpc",
+            "created_at": "2017-07-13T18:20:34Z",
+            "updated_at": "2023-04-23T10:04:31Z",
+            "pushed_at": "2022-06-20T12:18:50Z",
+            "homepage": "https://discordapp.com/developers",
+            "size": 2810,
+            "stargazers_count": 955,
+            "watchers_count": 955,
+            "language": "C++",
+            "has_issues": true,
+            "has_projects": false,
+            "has_downloads": true,
+            "has_wiki": false,
+            "has_pages": false,
+            "has_discussions": false,
+            "forks_count": 280,
+            "archived": false,
+            "disabled": false,
+            "open_issues_count": 57,
+            "license": {
+              "key": "mit",
+              "name": "MIT License",
+              "spdx_id": "MIT",
+              "url": "https://api.github.com/licenses/mit",
+              "node_id": "MDc6TGljZW5zZTEz"
+            },
+            "allow_forking": true,
+            "is_template": false,
+            "web_commit_signoff_required": false,
+            "topics": [],
+            "visibility": "public",
+            "forks": 280,
+            "open_issues": 57,
+            "watchers": 955,
+            "default_branch": "master"
+          }
+        },
+        "_links": {
+          "self": {
+            "href": "https://api.github.com/repos/discord/discord-rpc/pulls/329"
+          },
+          "html": {
+            "href": "https://github.com/discord/discord-rpc/pull/329"
+          },
+          "issue": {
+            "href": "https://api.github.com/repos/discord/discord-rpc/issues/329"
+          },
+          "comments": {
+            "href": "https://api.github.com/repos/discord/discord-rpc/issues/329/comments"
+          },
+          "review_comments": {
+            "href": "https://api.github.com/repos/discord/discord-rpc/pulls/329/comments"
+          },
+          "review_comment": {
+            "href": "https://api.github.com/repos/discord/discord-rpc/pulls/comments{/number}"
+          },
+          "commits": {
+            "href": "https://api.github.com/repos/discord/discord-rpc/pulls/329/commits"
+          },
+          "statuses": {
+            "href": "https://api.github.com/repos/discord/discord-rpc/statuses/a88cabd41747ab13e61f33b463f570bd931b4983"
+          }
+        },
+        "author_association": "NONE",
+        "auto_merge": null,
+        "active_lock_reason": null
+      },
+      {
+        "url": "https://api.github.com/repos/discord/discord-rpc/pulls/315",
+        "id": 564363263,
+        "node_id": "MDExOlB1bGxSZXF1ZXN0NTY0MzYzMjYz",
+        "number": 315,
+        "state": "closed",
+        "locked": false,
+        "title": "Add RPCord wrapper (TypeScript)",
+        "user": {
+          "login": "DjDeveloperr",
+          "id": 43033058,
+          "node_id": "MDQ6VXNlcjQzMDMzMDU4",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/DjDeveloperr",
+          "type": "User",
+          "site_admin": false
+        },
+        "body": "I've made a [RPC wrapper](https://github.com/DjDeveloperr/RPCord) which supports all of documented features (and a bit more :p).",
+        "created_at": "2021-01-30T05:14:55Z",
+        "updated_at": "2021-11-21T03:13:18Z",
+        "closed_at": "2021-11-21T03:13:18Z",
+        "merged_at": null,
+        "merge_commit_sha": "1616c6f872f27f32ae479c6dfa53b803cd35e2a3",
+        "assignee": null,
+        "assignees": [],
+        "requested_reviewers": [],
+        "requested_teams": [],
+        "labels": [],
+        "milestone": null,
+        "draft": false,
+        "head": {
+          "label": "DjDeveloperr:patch-1",
+          "ref": "patch-1",
+          "sha": "fe747e96d76dc89c8cdb732b990564fdbb2fe204",
+          "user": {
+            "login": "DjDeveloperr",
+            "id": 43033058,
+            "node_id": "MDQ6VXNlcjQzMDMzMDU4",
+            "gravatar_id": "",
+            "url": "https://api.github.com/users/DjDeveloperr",
+            "type": "User",
+            "site_admin": false
+          },
+          "repo": {
+            "id": 334332667,
+            "node_id": "MDEwOlJlcG9zaXRvcnkzMzQzMzI2Njc=",
+            "name": "discord-rpc",
+            "full_name": "DjDeveloperr/discord-rpc",
+            "private": false,
+            "owner": {
+              "login": "DjDeveloperr",
+              "id": 43033058,
+              "node_id": "MDQ6VXNlcjQzMDMzMDU4",
+              "gravatar_id": "",
+              "url": "https://api.github.com/users/DjDeveloperr",
+              "type": "User",
+              "site_admin": false
+            },
+            "description": null,
+            "fork": true,
+            "url": "https://api.github.com/repos/DjDeveloperr/discord-rpc",
+            "created_at": "2021-01-30T05:06:47Z",
+            "updated_at": "2021-01-30T05:06:48Z",
+            "pushed_at": "2021-01-31T06:28:36Z",
+            "homepage": "https://discordapp.com/developers",
+            "size": 2819,
+            "stargazers_count": 0,
+            "watchers_count": 0,
+            "language": null,
+            "has_issues": false,
+            "has_projects": true,
+            "has_downloads": true,
+            "has_wiki": false,
+            "has_pages": false,
+            "has_discussions": false,
+            "forks_count": 0,
+            "archived": false,
+            "disabled": false,
+            "open_issues_count": 0,
+            "license": {
+              "key": "mit",
+              "name": "MIT License",
+              "spdx_id": "MIT",
+              "url": "https://api.github.com/licenses/mit",
+              "node_id": "MDc6TGljZW5zZTEz"
+            },
+            "allow_forking": true,
+            "is_template": false,
+            "web_commit_signoff_required": false,
+            "topics": [],
+            "visibility": "public",
+            "forks": 0,
+            "open_issues": 0,
+            "watchers": 0,
+            "default_branch": "master"
+          }
+        },
+        "base": {
+          "label": "discord:master",
+          "ref": "master",
+          "sha": "963aa9f3e5ce81a4682c6ca3d136cddda614db33",
+          "user": {
+            "login": "discord",
+            "id": 1965106,
+            "node_id": "MDEyOk9yZ2FuaXphdGlvbjE5NjUxMDY=",
+            "gravatar_id": "",
+            "url": "https://api.github.com/users/discord",
+            "type": "Organization",
+            "site_admin": false
+          },
+          "repo": {
+            "id": 97152773,
+            "node_id": "MDEwOlJlcG9zaXRvcnk5NzE1Mjc3Mw==",
+            "name": "discord-rpc",
+            "full_name": "discord/discord-rpc",
+            "private": false,
+            "owner": {
+              "login": "discord",
+              "id": 1965106,
+              "node_id": "MDEyOk9yZ2FuaXphdGlvbjE5NjUxMDY=",
+              "gravatar_id": "",
+              "url": "https://api.github.com/users/discord",
+              "type": "Organization",
+              "site_admin": false
+            },
+            "description": null,
+            "fork": false,
+            "url": "https://api.github.com/repos/discord/discord-rpc",
+            "created_at": "2017-07-13T18:20:34Z",
+            "updated_at": "2023-04-23T10:04:31Z",
+            "pushed_at": "2022-06-20T12:18:50Z",
+            "homepage": "https://discordapp.com/developers",
+            "size": 2810,
+            "stargazers_count": 955,
+            "watchers_count": 955,
+            "language": "C++",
+            "has_issues": true,
+            "has_projects": false,
+            "has_downloads": true,
+            "has_wiki": false,
+            "has_pages": false,
+            "has_discussions": false,
+            "forks_count": 280,
+            "archived": false,
+            "disabled": false,
+            "open_issues_count": 57,
+            "license": {
+              "key": "mit",
+              "name": "MIT License",
+              "spdx_id": "MIT",
+              "url": "https://api.github.com/licenses/mit",
+              "node_id": "MDc6TGljZW5zZTEz"
+            },
+            "allow_forking": true,
+            "is_template": false,
+            "web_commit_signoff_required": false,
+            "topics": [],
+            "visibility": "public",
+            "forks": 280,
+            "open_issues": 57,
+            "watchers": 955,
+            "default_branch": "master"
+          }
+        },
+        "_links": {
+          "self": {
+            "href": "https://api.github.com/repos/discord/discord-rpc/pulls/315"
+          },
+          "html": {
+            "href": "https://github.com/discord/discord-rpc/pull/315"
+          },
+          "issue": {
+            "href": "https://api.github.com/repos/discord/discord-rpc/issues/315"
+          },
+          "comments": {
+            "href": "https://api.github.com/repos/discord/discord-rpc/issues/315/comments"
+          },
+          "review_comments": {
+            "href": "https://api.github.com/repos/discord/discord-rpc/pulls/315/comments"
+          },
+          "review_comment": {
+            "href": "https://api.github.com/repos/discord/discord-rpc/pulls/comments{/number}"
+          },
+          "commits": {
+            "href": "https://api.github.com/repos/discord/discord-rpc/pulls/315/commits"
+          },
+          "statuses": {
+            "href": "https://api.github.com/repos/discord/discord-rpc/statuses/fe747e96d76dc89c8cdb732b990564fdbb2fe204"
+          }
+        },
+        "author_association": "NONE",
+        "auto_merge": null,
+        "active_lock_reason": null
+      }
+    ]
   }
 }

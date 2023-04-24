@@ -57,7 +57,40 @@
     "triage": false,
     "pull": false
   },
-  "branches": [],
+  "branches": [
+    {
+      "name": "0.9.x",
+      "commit": {
+        "sha": "e991ddfea8ef9172dd1e33a3a2cf7f4958f8d8b4",
+        "url": "https://api.github.com/repos/discord/gen_rpc/commits/e991ddfea8ef9172dd1e33a3a2cf7f4958f8d8b4"
+      },
+      "protected": false
+    },
+    {
+      "name": "develop",
+      "commit": {
+        "sha": "6e17cac4e886f36ecb35bbda91e6bb3293aaa723",
+        "url": "https://api.github.com/repos/discord/gen_rpc/commits/6e17cac4e886f36ecb35bbda91e6bb3293aaa723"
+      },
+      "protected": false
+    },
+    {
+      "name": "feature/monitor_nodes",
+      "commit": {
+        "sha": "d8be6285b18aa5d18be89bad63dd74accd531611",
+        "url": "https://api.github.com/repos/discord/gen_rpc/commits/d8be6285b18aa5d18be89bad63dd74accd531611"
+      },
+      "protected": false
+    },
+    {
+      "name": "master",
+      "commit": {
+        "sha": "d1f778516d5dcdee46383772da3f7446e5447680",
+        "url": "https://api.github.com/repos/discord/gen_rpc/commits/d1f778516d5dcdee46383772da3f7446e5447680"
+      },
+      "protected": false
+    }
+  ],
   "last5": {
     "commits": [
       {

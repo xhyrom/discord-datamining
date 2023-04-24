@@ -57,7 +57,24 @@
     "triage": false,
     "pull": false
   },
-  "branches": [],
+  "branches": [
+    {
+      "name": "feature/upgrade_proper_1.2",
+      "commit": {
+        "sha": "c096c86ba751fc53f74410e7ed6478dab4722234",
+        "url": "https://api.github.com/repos/discord/backoff/commits/c096c86ba751fc53f74410e7ed6478dab4722234"
+      },
+      "protected": false
+    },
+    {
+      "name": "master",
+      "commit": {
+        "sha": "cc6160ba8f15204db4c23618dfc93932535f1d64",
+        "url": "https://api.github.com/repos/discord/backoff/commits/cc6160ba8f15204db4c23618dfc93932535f1d64"
+      },
+      "protected": false
+    }
+  ],
   "last5": {
     "commits": [
       {
