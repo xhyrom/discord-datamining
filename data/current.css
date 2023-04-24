@@ -144693,13 +144693,40 @@ html .invoiceCancelRow-3s2UuC {
     color: var(--header-primary)
 }
 
-.container-8Zvl-z {
-    gap: 10px;
+.imageWrapper-24KyrQ {
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    background-color: var(--white-500);
+    border-radius: 60px;
+    -webkit-box-shadow: var(--elevation-medium);
+    box-shadow: var(--elevation-medium);
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    overflow: hidden;
+    position: relative;
+    height: 60px;
+    width: 60px;
+    z-index: 1
+}
+
+.image-_yKj7B {
+    height: 80%;
+    z-index: 1;
+    width: 80%
+}
+
+.container-Mz8hva {
+    gap: 12px;
     margin-bottom: 30px
 }
 
-.appliedBoostContainer-1L4g2e,
-.container-8Zvl-z {
+.appliedBoostContainer-1b4KCm,
+.container-Mz8hva {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -144709,31 +144736,31 @@ html .invoiceCancelRow-3s2UuC {
     flex-direction: column
 }
 
-.appliedBoostContainer-1L4g2e {
+.appliedBoostContainer-1b4KCm {
     border-radius: 8px;
     overflow: hidden;
     background-color: var(--background-secondary-alt)
 }
 
-.guildContainer-r3kBMm {
+.guildContainer-uf1uYk {
     -webkit-box-orient: horizontal;
     -ms-flex-direction: row;
     flex-direction: row;
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
-    padding: 30px 20px 21px
+    padding: 18px
 }
 
-.guildContainer-r3kBMm,
-.guildInfoContainer-KwNK8j {
+.guildContainer-uf1uYk,
+.guildInfoContainer-1p5D7y {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     -webkit-box-direction: normal
 }
 
-.guildInfoContainer-KwNK8j {
+.guildInfoContainer-1p5D7y {
     -webkit-box-orient: vertical;
     -ms-flex-direction: column;
     flex-direction: column;
@@ -144743,7 +144770,7 @@ html .invoiceCancelRow-3s2UuC {
     flex: 1
 }
 
-.guildBoostStatsContainer-rk3vs2 {
+.guildBoostStatsContainer-37jvZA {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -144757,23 +144784,18 @@ html .invoiceCancelRow-3s2UuC {
     margin-top: 6px
 }
 
-.separator-1FkISV {
+.separator-2N5BoH {
     height: 18px;
     border-right: 1px solid var(--text-muted);
     margin: 0 10px
 }
 
-.guildBoostBadge-Oq8URR {
+.guildBoostBadge-18OeMb {
     color: var(--guild-boosting-pink);
     margin-right: 6px
 }
 
-.goToServerCta-3-E_SP {
-    background-color: var(--primary-530);
-    color: var(--white-500)
-}
-
-.boostContainer-DtU7S0 {
+.boostContainer-RzXAwu {
     -webkit-box-orient: vertical;
     -ms-flex-direction: column;
     flex-direction: column;
@@ -144781,15 +144803,15 @@ html .invoiceCancelRow-3s2UuC {
     padding: 0 20px
 }
 
-.boostContainer-DtU7S0,
-.boostInnerContainer-VWw38m {
+.boostContainer-RzXAwu,
+.boostInnerContainer-_uKq_V {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     -webkit-box-direction: normal
 }
 
-.boostInnerContainer-VWw38m {
+.boostInnerContainer-_uKq_V {
     -webkit-box-orient: horizontal;
     -ms-flex-direction: row;
     flex-direction: row;
@@ -144799,43 +144821,35 @@ html .invoiceCancelRow-3s2UuC {
     padding: 6px 0
 }
 
-.boostContainerSeparator-2DvYTW {
+.boostContainerSeparator-1-tpZX {
     height: 1px;
     background-color: var(--primary-500);
     opacity: .48
 }
 
-.boostIconContainer-lXHneJ {
-    height: 35px;
-    width: 35px;
-    border-radius: 100%;
-    position: relative;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    justify-content: center;
-    background-color: var(--white-500);
-    overflow: hidden
+.boostIconContainer-2G2oAl {
+    position: relative
 }
 
-.boostIcon-1cWdO9 {
+.boostGemImage-2FHSIS {
+    height: 36px;
+    width: 36px
+}
+
+.boostIcon-3NM5I0 {
     height: 30px
 }
 
-.boostIconSheen-3R02jD {
-    height: 35px;
-    width: 35px;
+.boostIconSheen-2OK1pC {
+    height: 36px;
+    width: 36px;
     position: absolute;
+    z-index: 1;
     top: 0;
     left: 0
 }
 
-.boostDescriptionContainer-8v2jyC {
+.boostDescriptionContainer-36Fp6P {
     -webkit-box-flex: 1;
     -ms-flex: 1;
     flex: 1;
@@ -144843,14 +144857,14 @@ html .invoiceCancelRow-3s2UuC {
     margin: 0 10px
 }
 
-.boostDescriptionInnerContainer-RAsqNE {
+.boostDescriptionInnerContainer-3OKNYT {
     position: absolute;
     width: 100%;
     -webkit-transform: translateY(-50%);
     transform: translateY(-50%)
 }
 
-.boostSlotMenuIcon-19-8hG {
+.boostSlotMenuIcon-dSP4KK {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -144890,7 +144904,7 @@ html .invoiceCancelRow-3s2UuC {
 }
 
 .guildBoostGem-2INlxj {
-    height: 48px;
+    height: 60px;
     position: absolute;
     top: 50%;
     left: 50%;
@@ -145001,7 +145015,7 @@ html .invoiceCancelRow-3s2UuC {
     margin: 0
 }
 
-.gemAnimations-bjY1Ol {
+.boostGems-2UrTAA {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -145012,33 +145026,7 @@ html .invoiceCancelRow-3s2UuC {
     isolation: isolate
 }
 
-.gemAnimation-210IOU {
-    height: 48px;
-    z-index: 1;
-    width: 48px
-}
-
-.gemAnimationWrapper-2B6lSH {
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
-    background-color: var(--white-500);
-    border-radius: 60px;
-    -webkit-box-shadow: var(--elevation-medium);
-    box-shadow: var(--elevation-medium);
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    justify-content: center;
-    position: relative;
-    height: 60px;
-    width: 60px;
-    z-index: 1
-}
-
-.gemAnimationWrapper-2B6lSH+.gemAnimationWrapper-2B6lSH {
+.boostGem-2xxrp0+.boostGem-2xxrp0 {
     margin-left: -30px
 }
 
@@ -152321,4 +152309,4 @@ html .invoiceCancelRow-dVOR64 {
     flex-direction: column
 }
 
-/*# sourceMappingURL=40532.3f4433efd227e472d003.css.map*/
+/*# sourceMappingURL=40532.7125a72fe3e4c786a8b6.css.map*/
