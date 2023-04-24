@@ -59,9 +59,401 @@
   },
   "branches": [],
   "last5": {
-    "commits": [],
+    "commits": [
+      {
+        "sha": "262ff7ad2c4a018de9992731fcf8a8f9c91083d8",
+        "node_id": "MDY6Q29tbWl0MTcwNDY0NjEwOjI2MmZmN2FkMmM0YTAxOGRlOTk5MjczMWZjZjhhOGY5YzkxMDgzZDg=",
+        "commit": {
+          "author": {
+            "name": "Andrew Clark",
+            "email": "git@andrewclark.io",
+            "date": "2021-07-16T22:58:11Z"
+          },
+          "committer": {
+            "name": "GitHub",
+            "email": "noreply@github.com",
+            "date": "2021-07-16T22:58:11Z"
+          },
+          "message": "Refactor \"disappear\" logic into its own traversal (#21901)\n\nSimilar to #21898, but for \"disappear\" logic. Previously this lived\r\ninside `hideOrUnhideAllChildren`, the function that mutates the nearest\r\nDOM nodes to override their `display` style.\r\n\r\nThis makes the feature work in persistent mode (Fabric); it didn't\r\nbefore because `hideOrUnhideAllChildren` only runs in mutation mode.",
+          "tree": {
+            "sha": "953eaad0c4ec7bd5f642d89d801e29b578187d68",
+            "url": "https://api.github.com/repos/discord/react/git/trees/953eaad0c4ec7bd5f642d89d801e29b578187d68"
+          },
+          "url": "https://api.github.com/repos/discord/react/git/commits/262ff7ad2c4a018de9992731fcf8a8f9c91083d8",
+          "comment_count": 0,
+          "verification": {
+            "verified": true,
+            "reason": "valid",
+            "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsBcBAABCAAQBQJg8g8DCRBK7hj4Ov3rIwAAod8IAJf6CKBoGHDl1v6xj3WdiW1R\nZjwoeDFvfGEHrPbsmGNSYeRN2r91+RKbFfZTbhXe0EXPuO6egt5Btishdgz6sLxT\niMrPWLcHgcCyWtyaqlvQ3hS3VKUYPzUewZe5UcVo1jUDgPmoks//m7hDIUiOhlg2\nGdqGLqgVd5Jq50ZpWrx0Ut3GGbTpIa0X1RL2u+er73cTIy6xK7KpwlsmbDiYGo7U\nCe66+9PafkZ3aeqR09ZG1XsafOiRqN4SOi7Iz+aWWI2UYKobEc9V5vBTHYhv25F5\nzf7ZZorv85Bi7hrtJ0uP4wzCrgpejer1WPgAMmEa5CPwYJoKrNDtGBh9ElmTqNY=\n=9CHc\n-----END PGP SIGNATURE-----\n",
+            "payload": "tree 953eaad0c4ec7bd5f642d89d801e29b578187d68\nparent 34600f4fadf526028a21c94030510fbed20e4665\nauthor Andrew Clark <git@andrewclark.io> 1626476291 -0400\ncommitter GitHub <noreply@github.com> 1626476291 -0700\n\nRefactor \"disappear\" logic into its own traversal (#21901)\n\nSimilar to #21898, but for \"disappear\" logic. Previously this lived\r\ninside `hideOrUnhideAllChildren`, the function that mutates the nearest\r\nDOM nodes to override their `display` style.\r\n\r\nThis makes the feature work in persistent mode (Fabric); it didn't\r\nbefore because `hideOrUnhideAllChildren` only runs in mutation mode."
+          }
+        },
+        "url": "https://api.github.com/repos/discord/react/commits/262ff7ad2c4a018de9992731fcf8a8f9c91083d8",
+        "author": {
+          "login": "acdlite",
+          "id": 3624098,
+          "node_id": "MDQ6VXNlcjM2MjQwOTg=",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/acdlite",
+          "type": "User",
+          "site_admin": false
+        },
+        "committer": {
+          "login": "web-flow",
+          "id": 19864447,
+          "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/web-flow",
+          "type": "User",
+          "site_admin": false
+        },
+        "parents": [
+          {
+            "sha": "34600f4fadf526028a21c94030510fbed20e4665",
+            "url": "https://api.github.com/repos/discord/react/commits/34600f4fadf526028a21c94030510fbed20e4665"
+          }
+        ]
+      },
+      {
+        "sha": "34600f4fadf526028a21c94030510fbed20e4665",
+        "node_id": "MDY6Q29tbWl0MTcwNDY0NjEwOjM0NjAwZjRmYWRmNTI2MDI4YTIxYzk0MDMwNTEwZmJlZDIwZTQ2NjU=",
+        "commit": {
+          "author": {
+            "name": "Andrew Clark",
+            "email": "git@andrewclark.io",
+            "date": "2021-07-16T22:05:39Z"
+          },
+          "committer": {
+            "name": "GitHub",
+            "email": "noreply@github.com",
+            "date": "2021-07-16T22:05:39Z"
+          },
+          "message": "Refactor \"reappear\" logic into its own traversal (#21898)\n\nWhen a Suspense boundary switches to its fallback state — or similarly,\r\nwhen an Offscreen boundary switches from visible to hidden — we unmount\r\nall its layout effects. When it resolves — or when Offscreen switches\r\nback to visible — we mount them again. This \"reappearing\" logic\r\ncurrently happens in the same commit phase traversal where we perform\r\nnormal layout effects.\r\n\r\nI've changed it so that the \"reappear\" logic happens in its own\r\nrecurisve traversal that is separate from the commit phase one.\r\n\r\nIn the next step, I will do the same for the \"disappear\" logic that\r\ncurrently lives in the `hideOrUnhideAllChildren` function.\r\n\r\nThere are a few reasons to model it this way, related to future\r\nOffscreen features that we have planned. For example, we intend to\r\nprovide an imperative API to \"appear\" and \"reappear\" all the effects\r\nwithin an Offscreen boundary. This API would be called from outside the\r\ncommit phase, during an arbitrary event. Which means it can't rely on\r\nthe regular commit phase — it's not part of a commit. This isn't the\r\nonly motivation but it illustrates why the separation makes sense.",
+          "tree": {
+            "sha": "301b8a7c0910e143bc3d6e270190f7e3b9229b37",
+            "url": "https://api.github.com/repos/discord/react/git/trees/301b8a7c0910e143bc3d6e270190f7e3b9229b37"
+          },
+          "url": "https://api.github.com/repos/discord/react/git/commits/34600f4fadf526028a21c94030510fbed20e4665",
+          "comment_count": 0,
+          "verification": {
+            "verified": true,
+            "reason": "valid",
+            "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsBcBAABCAAQBQJg8gKzCRBK7hj4Ov3rIwAA4EoIADjvZWUU0kALRLMJKWniQnfM\nHJd9Xz34AxeYey8RtF3yPfNFwLgVDNZy1LtwcluLcf0qGX0+oDHsYzLdbMYQqVRI\nbES+9fWd1XZIbuTNtTxbAVgpK1RYFlF3P5/E5fxwkuwm/+PJ2RHbUa3fqkYDQPLv\nm72JP0CbyfrUqV/KeEeAHJvaRbOGnx8QENeNNE5gmTMJOFUNvoV+UdE8F7VUxufb\no92U77KAIMReJgRnsl3L0mUgWqyv3p0R8fu9JQRs16ShPWDlyllJx0UuNI/xPUxn\nABIKUAjyQr2yW0xqUC1VPzz1EnFLLhdos8gsZw8EIwCLt4wr9gYaQyFpCUj8o8M=\n=ojU4\n-----END PGP SIGNATURE-----\n",
+            "payload": "tree 301b8a7c0910e143bc3d6e270190f7e3b9229b37\nparent 310187264d01a31bc3079358f13662d31a079d9e\nauthor Andrew Clark <git@andrewclark.io> 1626473139 -0400\ncommitter GitHub <noreply@github.com> 1626473139 -0700\n\nRefactor \"reappear\" logic into its own traversal (#21898)\n\nWhen a Suspense boundary switches to its fallback state — or similarly,\r\nwhen an Offscreen boundary switches from visible to hidden — we unmount\r\nall its layout effects. When it resolves — or when Offscreen switches\r\nback to visible — we mount them again. This \"reappearing\" logic\r\ncurrently happens in the same commit phase traversal where we perform\r\nnormal layout effects.\r\n\r\nI've changed it so that the \"reappear\" logic happens in its own\r\nrecurisve traversal that is separate from the commit phase one.\r\n\r\nIn the next step, I will do the same for the \"disappear\" logic that\r\ncurrently lives in the `hideOrUnhideAllChildren` function.\r\n\r\nThere are a few reasons to model it this way, related to future\r\nOffscreen features that we have planned. For example, we intend to\r\nprovide an imperative API to \"appear\" and \"reappear\" all the effects\r\nwithin an Offscreen boundary. This API would be called from outside the\r\ncommit phase, during an arbitrary event. Which means it can't rely on\r\nthe regular commit phase — it's not part of a commit. This isn't the\r\nonly motivation but it illustrates why the separation makes sense."
+          }
+        },
+        "url": "https://api.github.com/repos/discord/react/commits/34600f4fadf526028a21c94030510fbed20e4665",
+        "author": {
+          "login": "acdlite",
+          "id": 3624098,
+          "node_id": "MDQ6VXNlcjM2MjQwOTg=",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/acdlite",
+          "type": "User",
+          "site_admin": false
+        },
+        "committer": {
+          "login": "web-flow",
+          "id": 19864447,
+          "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/web-flow",
+          "type": "User",
+          "site_admin": false
+        },
+        "parents": [
+          {
+            "sha": "310187264d01a31bc3079358f13662d31a079d9e",
+            "url": "https://api.github.com/repos/discord/react/commits/310187264d01a31bc3079358f13662d31a079d9e"
+          }
+        ]
+      },
+      {
+        "sha": "310187264d01a31bc3079358f13662d31a079d9e",
+        "node_id": "MDY6Q29tbWl0MTcwNDY0NjEwOjMxMDE4NzI2NGQwMWEzMWJjMzA3OTM1OGYxMzY2MmQzMWEwNzlkOWU=",
+        "commit": {
+          "author": {
+            "name": "Ricky",
+            "email": "rickhanlonii@gmail.com",
+            "date": "2021-07-16T14:37:57Z"
+          },
+          "committer": {
+            "name": "GitHub",
+            "email": "noreply@github.com",
+            "date": "2021-07-16T14:37:57Z"
+          },
+          "message": "Clean up flushSync flow types (#21887)",
+          "tree": {
+            "sha": "4b561e6dd34761d421f79765b60b8a80921e8cc6",
+            "url": "https://api.github.com/repos/discord/react/git/trees/4b561e6dd34761d421f79765b60b8a80921e8cc6"
+          },
+          "url": "https://api.github.com/repos/discord/react/git/commits/310187264d01a31bc3079358f13662d31a079d9e",
+          "comment_count": 0,
+          "verification": {
+            "verified": true,
+            "reason": "valid",
+            "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsBcBAABCAAQBQJg8ZnFCRBK7hj4Ov3rIwAA6msIAKBgNQetve54mB100IeMV7LX\n+V7UhFRmIQfh+HGNX9XExqTOnXXltYpx3b1Ta8vViOsLsbi/YfNzqDKZ4AoZAarB\nSuUcpnIMPxHMUr3P49YhkBxEpQzp/wRgqyBMy23ee6N8Iqec3n9dL+nKgEoQZEp1\nOsDfLwiK0sMJ+0eNWbCo4lRrjmH5W6zm8jVBm3oveiOW/T6AEmKwMSthbEpz2l1x\nHQyKvwb/UgtRILDzaF/m0fxzA5zXDPp11fYlD0z4TpHU8BmF1qa0MZmPfxT9zmwj\nGrL+X/CObq9zOISIsD1kOhcv/j4rM50mhyNqxvaWPiu6d7btbkwQwDT5qlEZhkQ=\n=wyNa\n-----END PGP SIGNATURE-----\n",
+            "payload": "tree 4b561e6dd34761d421f79765b60b8a80921e8cc6\nparent d0ec283819113d27f7c5e5022de6ccc36d4e502d\nauthor Ricky <rickhanlonii@gmail.com> 1626446277 -0400\ncommitter GitHub <noreply@github.com> 1626446277 -0400\n\nClean up flushSync flow types (#21887)\n\n"
+          }
+        },
+        "url": "https://api.github.com/repos/discord/react/commits/310187264d01a31bc3079358f13662d31a079d9e",
+        "author": {
+          "login": "rickhanlonii",
+          "id": 2440089,
+          "node_id": "MDQ6VXNlcjI0NDAwODk=",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/rickhanlonii",
+          "type": "User",
+          "site_admin": false
+        },
+        "committer": {
+          "login": "web-flow",
+          "id": 19864447,
+          "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/web-flow",
+          "type": "User",
+          "site_admin": false
+        },
+        "parents": [
+          {
+            "sha": "d0ec283819113d27f7c5e5022de6ccc36d4e502d",
+            "url": "https://api.github.com/repos/discord/react/commits/d0ec283819113d27f7c5e5022de6ccc36d4e502d"
+          }
+        ]
+      },
+      {
+        "sha": "d0ec283819113d27f7c5e5022de6ccc36d4e502d",
+        "node_id": "MDY6Q29tbWl0MTcwNDY0NjEwOmQwZWMyODM4MTkxMTNkMjdmN2M1ZTUwMjJkZTZjY2MzNmQ0ZTUwMmQ=",
+        "commit": {
+          "author": {
+            "name": "Brian Vaughn",
+            "email": "bvaughn@fb.com",
+            "date": "2021-07-16T04:25:01Z"
+          },
+          "committer": {
+            "name": "Brian Vaughn",
+            "email": "bvaughn@fb.com",
+            "date": "2021-07-16T04:25:01Z"
+          },
+          "message": "DevTools 4.13.5 -> 4.14.0",
+          "tree": {
+            "sha": "2a907c7672f5e318784d2b4531f8c259b10fdb00",
+            "url": "https://api.github.com/repos/discord/react/git/trees/2a907c7672f5e318784d2b4531f8c259b10fdb00"
+          },
+          "url": "https://api.github.com/repos/discord/react/git/commits/d0ec283819113d27f7c5e5022de6ccc36d4e502d",
+          "comment_count": 0,
+          "verification": {
+            "verified": false,
+            "reason": "unsigned",
+            "signature": null,
+            "payload": null
+          }
+        },
+        "url": "https://api.github.com/repos/discord/react/commits/d0ec283819113d27f7c5e5022de6ccc36d4e502d",
+        "author": null,
+        "committer": null,
+        "parents": [
+          {
+            "sha": "6840c98c3246b749549beae2a62150f509ba4111",
+            "url": "https://api.github.com/repos/discord/react/commits/6840c98c3246b749549beae2a62150f509ba4111"
+          }
+        ]
+      },
+      {
+        "sha": "6840c98c3246b749549beae2a62150f509ba4111",
+        "node_id": "MDY6Q29tbWl0MTcwNDY0NjEwOjY4NDBjOThjMzI0NmI3NDk1NDliZWFlMmE2MjE1MGY1MDliYTQxMTE=",
+        "commit": {
+          "author": {
+            "name": "Brian Vaughn",
+            "email": "bvaughn@fb.com",
+            "date": "2021-07-16T04:14:20Z"
+          },
+          "committer": {
+            "name": "GitHub",
+            "email": "noreply@github.com",
+            "date": "2021-07-16T04:14:20Z"
+          },
+          "message": "Remove named hooks feature flag (#21894)",
+          "tree": {
+            "sha": "75ae54d9bca0fe97535eb3489dc2f83e3e9358b3",
+            "url": "https://api.github.com/repos/discord/react/git/trees/75ae54d9bca0fe97535eb3489dc2f83e3e9358b3"
+          },
+          "url": "https://api.github.com/repos/discord/react/git/commits/6840c98c3246b749549beae2a62150f509ba4111",
+          "comment_count": 0,
+          "verification": {
+            "verified": true,
+            "reason": "valid",
+            "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsBcBAABCAAQBQJg8QecCRBK7hj4Ov3rIwAAOfsIAGRzpYlJv/YA26XQQStl3CxV\nBeXkp9ALnWBwYunzIUFpq5xfTMr2UBktn3p8piexFR5bNd/4PQ2t7y/7c/aSQ0Ow\nDt7Zehzg+p27Ogis5cdop3Rm5G+WuIFXbA9QJKXEaUP5zx1EdcGk9Ut4m9sMvlw8\nDl1TuCi4nbV+05bo8OGKO4YDywjPHXk8OhrCIu3kA9aplO+959q3tpdRBuFahMIC\nswIXPM1dddOBCd9x/TyBoU0rD8Ng6ufJb0dO0esb1dCYgJYpNPDwps6NxK9yfHIf\nBTkqBRz8Nw+9R2sthMWN3KqCcxXqOvHnYSvZEzmnOR3za2ELXYZQsNp5MC/9bss=\n=Zwqw\n-----END PGP SIGNATURE-----\n",
+            "payload": "tree 75ae54d9bca0fe97535eb3489dc2f83e3e9358b3\nparent e26cb8f86db0936e14682c39e2d26373fa6f433d\nauthor Brian Vaughn <bvaughn@fb.com> 1626408860 -0400\ncommitter GitHub <noreply@github.com> 1626408860 -0400\n\nRemove named hooks feature flag (#21894)\n\n"
+          }
+        },
+        "url": "https://api.github.com/repos/discord/react/commits/6840c98c3246b749549beae2a62150f509ba4111",
+        "author": null,
+        "committer": {
+          "login": "web-flow",
+          "id": 19864447,
+          "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/web-flow",
+          "type": "User",
+          "site_admin": false
+        },
+        "parents": [
+          {
+            "sha": "e26cb8f86db0936e14682c39e2d26373fa6f433d",
+            "url": "https://api.github.com/repos/discord/react/commits/e26cb8f86db0936e14682c39e2d26373fa6f433d"
+          }
+        ]
+      }
+    ],
     "releases": [],
-    "issues": [],
+    "issues": [
+      {
+        "url": "https://api.github.com/repos/discord/react/issues/3",
+        "id": 976075373,
+        "node_id": "MDExOlB1bGxSZXF1ZXN0NzE3MTEyODg1",
+        "number": 3,
+        "title": "settings.yml",
+        "user": {
+          "login": "classicvalues",
+          "id": 71681815,
+          "node_id": "MDQ6VXNlcjcxNjgxODE1",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/classicvalues",
+          "type": "User",
+          "site_admin": false
+        },
+        "labels": [],
+        "state": "closed",
+        "locked": false,
+        "assignee": null,
+        "assignees": [],
+        "milestone": null,
+        "comments": 0,
+        "created_at": "2021-08-21T07:54:25Z",
+        "updated_at": "2022-10-17T17:42:14Z",
+        "closed_at": "2022-10-17T17:42:14Z",
+        "author_association": "NONE",
+        "active_lock_reason": null,
+        "draft": false,
+        "pull_request": {
+          "url": "https://api.github.com/repos/discord/react/pulls/3",
+          "merged_at": null
+        },
+        "body": "<!--\r\n  Thanks for submitting a pull request!\r\n  We appreciate you spending the time to work on these changes. Please provide enough information so that others can review your pull request. The three fields below are mandatory.\r\n\r\n  Before submitting a pull request, please make sure the following is done:\r\n\r\n  1. Fork [the repository](https://github.com/facebook/react) and create your branch from `main`.\r\n  2. Run `yarn` in the repository root.\r\n  3. If you've fixed a bug or added code that should be tested, add tests!\r\n  4. Ensure the test suite passes (`yarn test`). Tip: `yarn test --watch TestName` is helpful in development.\r\n  5. Run `yarn test --prod` to test in the production environment. It supports the same options as `yarn test`.\r\n  6. If you need a debugger, run `yarn debug-test --watch TestName`, open `chrome://inspect`, and press \"Inspect\".\r\n  7. Format your code with [prettier](https://github.com/prettier/prettier) (`yarn prettier`).\r\n  8. Make sure your code lints (`yarn lint`). Tip: `yarn linc` to only check changed files.\r\n  9. Run the [Flow](https://flowtype.org/) type checks (`yarn flow`).\r\n  10. If you haven't already, complete the CLA.\r\n\r\n  Learn more about contributing: https://reactjs.org/docs/how-to-contribute.html\r\n-->\r\n\r\n## Summary\r\n\r\n<!-- Explain the **motivation** for making this change. What existing problem does the pull request solve? -->\r\n\r\n## Test Plan\r\n\r\n<!-- Demonstrate the code is solid. Example: The exact commands you ran and their output, screenshots / videos if the pull request changes the user interface. -->\r\n",
+        "reactions": {
+          "url": "https://api.github.com/repos/discord/react/issues/3/reactions",
+          "total_count": 0,
+          "+1": 0,
+          "-1": 0,
+          "laugh": 0,
+          "hooray": 0,
+          "confused": 0,
+          "heart": 0,
+          "rocket": 0,
+          "eyes": 0
+        },
+        "performed_via_github_app": null,
+        "state_reason": null
+      },
+      {
+        "url": "https://api.github.com/repos/discord/react/issues/2",
+        "id": 959371624,
+        "node_id": "MDExOlB1bGxSZXF1ZXN0NzAyNDk1Nzgw",
+        "number": 2,
+        "title": "[17.0.2] Aggressive cleanup to assist garbage collection",
+        "user": {
+          "login": "amadeus",
+          "id": 83376,
+          "node_id": "MDQ6VXNlcjgzMzc2",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/amadeus",
+          "type": "User",
+          "site_admin": false
+        },
+        "labels": [],
+        "state": "open",
+        "locked": false,
+        "assignee": null,
+        "assignees": [],
+        "milestone": null,
+        "comments": 1,
+        "created_at": "2021-08-03T18:17:26Z",
+        "updated_at": "2021-10-08T19:51:57Z",
+        "closed_at": null,
+        "author_association": "MEMBER",
+        "active_lock_reason": null,
+        "draft": false,
+        "pull_request": {
+          "url": "https://api.github.com/repos/discord/react/pulls/2",
+          "merged_at": null
+        },
+        "body": "Re-applying the fixes from react 16 onto 17, courtesy of https://github.com/paulshen/react/pull/2\r\n\r\nIf you'd like to use this in your code, simply set `react-dom` version to: `discord/react#e208b3186d89b0d8394cc23f09ea6b95de84affd` in your package.json",
+        "reactions": {
+          "url": "https://api.github.com/repos/discord/react/issues/2/reactions",
+          "total_count": 8,
+          "+1": 2,
+          "-1": 0,
+          "laugh": 0,
+          "hooray": 2,
+          "confused": 0,
+          "heart": 2,
+          "rocket": 2,
+          "eyes": 0
+        },
+        "performed_via_github_app": null,
+        "state_reason": null
+      },
+      {
+        "url": "https://api.github.com/repos/discord/react/issues/1",
+        "id": 458161685,
+        "node_id": "MDExOlB1bGxSZXF1ZXN0Mjg5ODI1Nzk5",
+        "number": 1,
+        "title": "[16.8.6] Aggressive cleanup to assist garbage collection",
+        "user": {
+          "login": "paulshen",
+          "id": 2266187,
+          "node_id": "MDQ6VXNlcjIyNjYxODc=",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/paulshen",
+          "type": "User",
+          "site_admin": false
+        },
+        "labels": [],
+        "state": "open",
+        "locked": false,
+        "assignee": null,
+        "assignees": [],
+        "milestone": null,
+        "comments": 1,
+        "created_at": "2019-06-19T18:29:55Z",
+        "updated_at": "2019-07-17T20:18:37Z",
+        "closed_at": null,
+        "author_association": "NONE",
+        "active_lock_reason": null,
+        "draft": false,
+        "pull_request": {
+          "url": "https://api.github.com/repos/discord/react/pulls/1",
+          "merged_at": null
+        },
+        "body": "At Discord, we were experiencing serious memory leaks when upgrading to React with Fiber internals. We spent a lot of time investigating but ultimately ended on this fork to unblock us. These changes are made on top of the tagged 16.8.6 release.\r\n\r\nIf you want to try this build, you can use use `\"react-dom\": \"discordapp/react#cfda84f6b3c49a1398709cf43b3b959366f7e01a\"` to your `package.json`.\r\n\r\nI still don't know whether the root cause of the memory leak is in userland or framework design. I do know the node-to-node pointers and fiber <-> host pointers make big memory leaks possible. See associated discussion in https://github.com/facebook/react/pull/15157.\r\n\r\n## Changes\r\n\r\nb0194a0\r\nClear the Fiber node's `nextEffect` pointers when finishing effect processing. This helps alleviate the long fiber chains that we saw in the profiler.\r\n\r\nd28ee48\r\nThis clears the stateNode (pointer to DOM node and class instances) described above when unmounting. It appears it's easy to keep references to detached DOM nodes from leaking fiber nodes.\r\n\r\n2e5ee2f and c31cc03\r\nAt this point, we're desperate. On unmount, I clear the host node's pointer to the Fiber node. This is most definitely a hack but with this change, we are no longer seeing memory leaks.",
+        "reactions": {
+          "url": "https://api.github.com/repos/discord/react/issues/1/reactions",
+          "total_count": 0,
+          "+1": 0,
+          "-1": 0,
+          "laugh": 0,
+          "hooray": 0,
+          "confused": 0,
+          "heart": 0,
+          "rocket": 0,
+          "eyes": 0
+        },
+        "performed_via_github_app": null,
+        "state_reason": null
+      }
+    ],
     "pullRequests": []
   }
 }

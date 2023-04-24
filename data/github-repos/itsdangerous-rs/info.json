@@ -59,9 +59,548 @@
   },
   "branches": [],
   "last5": {
-    "commits": [],
+    "commits": [
+      {
+        "sha": "43b5469d8400562810c6ad86b8d3cc66e61d0612",
+        "node_id": "C_kwDOC2m4gNoAKDQzYjU0NjlkODQwMDU2MjgxMGM2YWQ4NmI4ZDNjYzY2ZTYxZDA2MTI",
+        "commit": {
+          "author": {
+            "name": "Jake Heinz",
+            "email": "jh@discordapp.com",
+            "date": "2022-03-11T23:25:06Z"
+          },
+          "committer": {
+            "name": "Jake Heinz",
+            "email": "jh@discordapp.com",
+            "date": "2022-03-11T23:25:06Z"
+          },
+          "message": "chore: release v0.4.1, bugfix for panic",
+          "tree": {
+            "sha": "fd5902272c8663a08b14838948e52537d2ad047a",
+            "url": "https://api.github.com/repos/discord/itsdangerous-rs/git/trees/fd5902272c8663a08b14838948e52537d2ad047a"
+          },
+          "url": "https://api.github.com/repos/discord/itsdangerous-rs/git/commits/43b5469d8400562810c6ad86b8d3cc66e61d0612",
+          "comment_count": 0,
+          "verification": {
+            "verified": false,
+            "reason": "unsigned",
+            "signature": null,
+            "payload": null
+          }
+        },
+        "url": "https://api.github.com/repos/discord/itsdangerous-rs/commits/43b5469d8400562810c6ad86b8d3cc66e61d0612",
+        "author": {
+          "login": "jhgg",
+          "id": 5489149,
+          "node_id": "MDQ6VXNlcjU0ODkxNDk=",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/jhgg",
+          "type": "User",
+          "site_admin": false
+        },
+        "committer": {
+          "login": "jhgg",
+          "id": 5489149,
+          "node_id": "MDQ6VXNlcjU0ODkxNDk=",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/jhgg",
+          "type": "User",
+          "site_admin": false
+        },
+        "parents": [
+          {
+            "sha": "4411831822b2523d18ef6815fed26f5b7a26ad30",
+            "url": "https://api.github.com/repos/discord/itsdangerous-rs/commits/4411831822b2523d18ef6815fed26f5b7a26ad30"
+          }
+        ]
+      },
+      {
+        "sha": "4411831822b2523d18ef6815fed26f5b7a26ad30",
+        "node_id": "MDY6Q29tbWl0MTkxNDc3ODg4OjQ0MTE4MzE4MjJiMjUyM2QxOGVmNjgxNWZlZDI2ZjViN2EyNmFkMzA=",
+        "commit": {
+          "author": {
+            "name": "jake",
+            "email": "jh@discordapp.com",
+            "date": "2021-05-19T04:00:33Z"
+          },
+          "committer": {
+            "name": "jake",
+            "email": "jh@discordapp.com",
+            "date": "2021-05-19T04:00:33Z"
+          },
+          "message": "fix base64::decode panic if input too big",
+          "tree": {
+            "sha": "0990bf2ed7a2565df0aabfb52b6a190c522d0e58",
+            "url": "https://api.github.com/repos/discord/itsdangerous-rs/git/trees/0990bf2ed7a2565df0aabfb52b6a190c522d0e58"
+          },
+          "url": "https://api.github.com/repos/discord/itsdangerous-rs/git/commits/4411831822b2523d18ef6815fed26f5b7a26ad30",
+          "comment_count": 0,
+          "verification": {
+            "verified": false,
+            "reason": "unsigned",
+            "signature": null,
+            "payload": null
+          }
+        },
+        "url": "https://api.github.com/repos/discord/itsdangerous-rs/commits/4411831822b2523d18ef6815fed26f5b7a26ad30",
+        "author": {
+          "login": "jhgg",
+          "id": 5489149,
+          "node_id": "MDQ6VXNlcjU0ODkxNDk=",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/jhgg",
+          "type": "User",
+          "site_admin": false
+        },
+        "committer": {
+          "login": "jhgg",
+          "id": 5489149,
+          "node_id": "MDQ6VXNlcjU0ODkxNDk=",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/jhgg",
+          "type": "User",
+          "site_admin": false
+        },
+        "parents": [
+          {
+            "sha": "152c1e7ad5e6b764a66d86cfa900b510992bc760",
+            "url": "https://api.github.com/repos/discord/itsdangerous-rs/commits/152c1e7ad5e6b764a66d86cfa900b510992bc760"
+          }
+        ]
+      },
+      {
+        "sha": "152c1e7ad5e6b764a66d86cfa900b510992bc760",
+        "node_id": "MDY6Q29tbWl0MTkxNDc3ODg4OjE1MmMxZTdhZDVlNmI3NjRhNjZkODZjZmE5MDBiNTEwOTkyYmM3NjA=",
+        "commit": {
+          "author": {
+            "name": "Kyle Travis",
+            "email": "kylemtravis@gmail.com",
+            "date": "2021-04-20T19:32:07Z"
+          },
+          "committer": {
+            "name": "GitHub",
+            "email": "noreply@github.com",
+            "date": "2021-04-20T19:32:07Z"
+          },
+          "message": "Merge pull request #7 from discord/remove-legacy-epoch\n\nv0.4.0 - remove legacy timestamp epoch offset",
+          "tree": {
+            "sha": "17809204b45c005db171cdb3d8fba399a501bf29",
+            "url": "https://api.github.com/repos/discord/itsdangerous-rs/git/trees/17809204b45c005db171cdb3d8fba399a501bf29"
+          },
+          "url": "https://api.github.com/repos/discord/itsdangerous-rs/git/commits/152c1e7ad5e6b764a66d86cfa900b510992bc760",
+          "comment_count": 0,
+          "verification": {
+            "verified": true,
+            "reason": "valid",
+            "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsBcBAABCAAQBQJgfyw3CRBK7hj4Ov3rIwAAP70IAJIXYBsFKYU0ZJcw/vOAr6K1\n8LFxUm4Fi/+YCg1+ExkUpEupa3mCYWWAF7K2t3ZZO40kN3JrREfckD9MBUwnJ7vA\nYQ7O0GfPNEiZ0HLlsPFyli10ZHsMXGTaxkjhQaJjA2rE5CJxg9k9AWBZQvRYZaHC\no7P1IwkYF3oxGQBVu1GGFSmtRVcAku5H6sybwChclCz72Ue4xWgtgW675FfCuptP\n2IFrGhLwmB4/zm2w24vewupqz+LaXUbaglIoxri/eS/pKazsC8MMlFI39RmPeGLJ\n+SPTQpVPEqiMuT/oI2SFBUdNLaolVkqFoWUtU6ZG9i8y+dIEHf5m6xa+WBnRcSY=\n=UaBB\n-----END PGP SIGNATURE-----\n",
+            "payload": "tree 17809204b45c005db171cdb3d8fba399a501bf29\nparent fde4767f500dbe8e58266091e31e800b2223315b\nparent 4d5459c63e93560d6607753718b21a7ea08f724e\nauthor Kyle Travis <kylemtravis@gmail.com> 1618947127 -0400\ncommitter GitHub <noreply@github.com> 1618947127 -0400\n\nMerge pull request #7 from discord/remove-legacy-epoch\n\nv0.4.0 - remove legacy timestamp epoch offset"
+          }
+        },
+        "url": "https://api.github.com/repos/discord/itsdangerous-rs/commits/152c1e7ad5e6b764a66d86cfa900b510992bc760",
+        "author": {
+          "login": "ktravis",
+          "id": 1472316,
+          "node_id": "MDQ6VXNlcjE0NzIzMTY=",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/ktravis",
+          "type": "User",
+          "site_admin": false
+        },
+        "committer": {
+          "login": "web-flow",
+          "id": 19864447,
+          "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/web-flow",
+          "type": "User",
+          "site_admin": false
+        },
+        "parents": [
+          {
+            "sha": "fde4767f500dbe8e58266091e31e800b2223315b",
+            "url": "https://api.github.com/repos/discord/itsdangerous-rs/commits/fde4767f500dbe8e58266091e31e800b2223315b"
+          },
+          {
+            "sha": "4d5459c63e93560d6607753718b21a7ea08f724e",
+            "url": "https://api.github.com/repos/discord/itsdangerous-rs/commits/4d5459c63e93560d6607753718b21a7ea08f724e"
+          }
+        ]
+      },
+      {
+        "sha": "4d5459c63e93560d6607753718b21a7ea08f724e",
+        "node_id": "MDY6Q29tbWl0MTkxNDc3ODg4OjRkNTQ1OWM2M2U5MzU2MGQ2NjA3NzUzNzE4YjIxYTdlYTA4ZjcyNGU=",
+        "commit": {
+          "author": {
+            "name": "ktravis",
+            "email": "kyle.travis@discordapp.com",
+            "date": "2021-04-20T19:19:10Z"
+          },
+          "committer": {
+            "name": "ktravis",
+            "email": "kyle.travis@discordapp.com",
+            "date": "2021-04-20T19:31:03Z"
+          },
+          "message": "v0.4.0 - remove legacy timestamp epoch offset",
+          "tree": {
+            "sha": "17809204b45c005db171cdb3d8fba399a501bf29",
+            "url": "https://api.github.com/repos/discord/itsdangerous-rs/git/trees/17809204b45c005db171cdb3d8fba399a501bf29"
+          },
+          "url": "https://api.github.com/repos/discord/itsdangerous-rs/git/commits/4d5459c63e93560d6607753718b21a7ea08f724e",
+          "comment_count": 0,
+          "verification": {
+            "verified": false,
+            "reason": "unsigned",
+            "signature": null,
+            "payload": null
+          }
+        },
+        "url": "https://api.github.com/repos/discord/itsdangerous-rs/commits/4d5459c63e93560d6607753718b21a7ea08f724e",
+        "author": {
+          "login": "ktravis",
+          "id": 1472316,
+          "node_id": "MDQ6VXNlcjE0NzIzMTY=",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/ktravis",
+          "type": "User",
+          "site_admin": false
+        },
+        "committer": {
+          "login": "ktravis",
+          "id": 1472316,
+          "node_id": "MDQ6VXNlcjE0NzIzMTY=",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/ktravis",
+          "type": "User",
+          "site_admin": false
+        },
+        "parents": [
+          {
+            "sha": "fde4767f500dbe8e58266091e31e800b2223315b",
+            "url": "https://api.github.com/repos/discord/itsdangerous-rs/commits/fde4767f500dbe8e58266091e31e800b2223315b"
+          }
+        ]
+      },
+      {
+        "sha": "fde4767f500dbe8e58266091e31e800b2223315b",
+        "node_id": "MDY6Q29tbWl0MTkxNDc3ODg4OmZkZTQ3NjdmNTAwZGJlOGU1ODI2NjA5MWUzMWU4MDBiMjIyMzMxNWI=",
+        "commit": {
+          "author": {
+            "name": "jake",
+            "email": "jh@discordapp.com",
+            "date": "2021-03-24T22:13:17Z"
+          },
+          "committer": {
+            "name": "jake",
+            "email": "jh@discordapp.com",
+            "date": "2021-03-24T22:13:17Z"
+          },
+          "message": "chore: release v0.3.2",
+          "tree": {
+            "sha": "fb4ed4710e7070c730e0d74f6e2a824946dbfbb3",
+            "url": "https://api.github.com/repos/discord/itsdangerous-rs/git/trees/fb4ed4710e7070c730e0d74f6e2a824946dbfbb3"
+          },
+          "url": "https://api.github.com/repos/discord/itsdangerous-rs/git/commits/fde4767f500dbe8e58266091e31e800b2223315b",
+          "comment_count": 0,
+          "verification": {
+            "verified": false,
+            "reason": "unsigned",
+            "signature": null,
+            "payload": null
+          }
+        },
+        "url": "https://api.github.com/repos/discord/itsdangerous-rs/commits/fde4767f500dbe8e58266091e31e800b2223315b",
+        "author": {
+          "login": "jhgg",
+          "id": 5489149,
+          "node_id": "MDQ6VXNlcjU0ODkxNDk=",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/jhgg",
+          "type": "User",
+          "site_admin": false
+        },
+        "committer": {
+          "login": "jhgg",
+          "id": 5489149,
+          "node_id": "MDQ6VXNlcjU0ODkxNDk=",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/jhgg",
+          "type": "User",
+          "site_admin": false
+        },
+        "parents": [
+          {
+            "sha": "1ee398a28e1c70f604876103ad507666ad18505f",
+            "url": "https://api.github.com/repos/discord/itsdangerous-rs/commits/1ee398a28e1c70f604876103ad507666ad18505f"
+          }
+        ]
+      }
+    ],
     "releases": [],
-    "issues": [],
+    "issues": [
+      {
+        "url": "https://api.github.com/repos/discord/itsdangerous-rs/issues/9",
+        "id": 1177386712,
+        "node_id": "PR_kwDOC2m4gM402Cf_",
+        "number": 9,
+        "title": "Add const Separator::default() fn",
+        "user": {
+          "login": "nharper",
+          "id": 653608,
+          "node_id": "MDQ6VXNlcjY1MzYwOA==",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/nharper",
+          "type": "User",
+          "site_admin": false
+        },
+        "labels": [],
+        "state": "open",
+        "locked": false,
+        "assignee": null,
+        "assignees": [],
+        "milestone": null,
+        "comments": 0,
+        "created_at": "2022-03-22T22:49:36Z",
+        "updated_at": "2022-03-22T22:59:15Z",
+        "closed_at": null,
+        "author_association": "NONE",
+        "active_lock_reason": null,
+        "draft": false,
+        "pull_request": {
+          "url": "https://api.github.com/repos/discord/itsdangerous-rs/pulls/9",
+          "merged_at": null
+        },
+        "body": null,
+        "reactions": {
+          "url": "https://api.github.com/repos/discord/itsdangerous-rs/issues/9/reactions",
+          "total_count": 0,
+          "+1": 0,
+          "-1": 0,
+          "laugh": 0,
+          "hooray": 0,
+          "confused": 0,
+          "heart": 0,
+          "rocket": 0,
+          "eyes": 0
+        },
+        "performed_via_github_app": null,
+        "state_reason": null
+      },
+      {
+        "url": "https://api.github.com/repos/discord/itsdangerous-rs/issues/8",
+        "id": 894955471,
+        "node_id": "MDExOlB1bGxSZXF1ZXN0NjQ3MjQxODc0",
+        "number": 8,
+        "title": "Add type aliases for the default signers",
+        "user": {
+          "login": "Rapptz",
+          "id": 1695103,
+          "node_id": "MDQ6VXNlcjE2OTUxMDM=",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/Rapptz",
+          "type": "User",
+          "site_admin": false
+        },
+        "labels": [],
+        "state": "open",
+        "locked": false,
+        "assignee": null,
+        "assignees": [],
+        "milestone": null,
+        "comments": 0,
+        "created_at": "2021-05-19T03:34:06Z",
+        "updated_at": "2021-05-19T04:02:28Z",
+        "closed_at": null,
+        "author_association": "NONE",
+        "active_lock_reason": null,
+        "draft": false,
+        "pull_request": {
+          "url": "https://api.github.com/repos/discord/itsdangerous-rs/pulls/8",
+          "merged_at": null
+        },
+        "body": "Should make using these as struct members a little more bearable in the typing department.",
+        "reactions": {
+          "url": "https://api.github.com/repos/discord/itsdangerous-rs/issues/8/reactions",
+          "total_count": 0,
+          "+1": 0,
+          "-1": 0,
+          "laugh": 0,
+          "hooray": 0,
+          "confused": 0,
+          "heart": 0,
+          "rocket": 0,
+          "eyes": 0
+        },
+        "performed_via_github_app": null,
+        "state_reason": null
+      },
+      {
+        "url": "https://api.github.com/repos/discord/itsdangerous-rs/issues/7",
+        "id": 863154590,
+        "node_id": "MDExOlB1bGxSZXF1ZXN0NjE5NjExMDA2",
+        "number": 7,
+        "title": "v0.4.0 - remove legacy timestamp epoch offset",
+        "user": {
+          "login": "ktravis",
+          "id": 1472316,
+          "node_id": "MDQ6VXNlcjE0NzIzMTY=",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/ktravis",
+          "type": "User",
+          "site_admin": false
+        },
+        "labels": [],
+        "state": "closed",
+        "locked": false,
+        "assignee": null,
+        "assignees": [],
+        "milestone": null,
+        "comments": 0,
+        "created_at": "2021-04-20T19:21:11Z",
+        "updated_at": "2021-04-20T19:32:12Z",
+        "closed_at": "2021-04-20T19:32:08Z",
+        "author_association": "COLLABORATOR",
+        "active_lock_reason": null,
+        "draft": false,
+        "pull_request": {
+          "url": "https://api.github.com/repos/discord/itsdangerous-rs/pulls/7",
+          "merged_at": "2021-04-20T19:32:08Z"
+        },
+        "body": "As advertised, remove the epoch offset used for compatibility with itsdangerous 0.x. Update test case golden values to reflect new timestamp.\r\n\r\nAlso fix a warning related to an ambiguous `into_iter()` call.",
+        "reactions": {
+          "url": "https://api.github.com/repos/discord/itsdangerous-rs/issues/7/reactions",
+          "total_count": 0,
+          "+1": 0,
+          "-1": 0,
+          "laugh": 0,
+          "hooray": 0,
+          "confused": 0,
+          "heart": 0,
+          "rocket": 0,
+          "eyes": 0
+        },
+        "performed_via_github_app": null,
+        "state_reason": null
+      },
+      {
+        "url": "https://api.github.com/repos/discord/itsdangerous-rs/issues/6",
+        "id": 838203698,
+        "node_id": "MDExOlB1bGxSZXF1ZXN0NTk4NDIxMDg1",
+        "number": 6,
+        "title": "Fix typo",
+        "user": {
+          "login": "jhowarth",
+          "id": 70012,
+          "node_id": "MDQ6VXNlcjcwMDEy",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/jhowarth",
+          "type": "User",
+          "site_admin": false
+        },
+        "labels": [],
+        "state": "closed",
+        "locked": false,
+        "assignee": null,
+        "assignees": [],
+        "milestone": null,
+        "comments": 0,
+        "created_at": "2021-03-23T00:04:48Z",
+        "updated_at": "2021-03-24T17:19:56Z",
+        "closed_at": "2021-03-24T17:19:56Z",
+        "author_association": "NONE",
+        "active_lock_reason": null,
+        "draft": false,
+        "pull_request": {
+          "url": "https://api.github.com/repos/discord/itsdangerous-rs/pulls/6",
+          "merged_at": null
+        },
+        "body": "",
+        "reactions": {
+          "url": "https://api.github.com/repos/discord/itsdangerous-rs/issues/6/reactions",
+          "total_count": 0,
+          "+1": 0,
+          "-1": 0,
+          "laugh": 0,
+          "hooray": 0,
+          "confused": 0,
+          "heart": 0,
+          "rocket": 0,
+          "eyes": 0
+        },
+        "performed_via_github_app": null,
+        "state_reason": null
+      },
+      {
+        "url": "https://api.github.com/repos/discord/itsdangerous-rs/issues/5",
+        "id": 459554236,
+        "node_id": "MDExOlB1bGxSZXF1ZXN0MjkwODc1Mzkw",
+        "number": 5,
+        "title": "[wip] doc coverage for 0.4.0",
+        "user": {
+          "login": "jhgg",
+          "id": 5489149,
+          "node_id": "MDQ6VXNlcjU0ODkxNDk=",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/jhgg",
+          "type": "User",
+          "site_admin": false
+        },
+        "labels": [],
+        "state": "open",
+        "locked": false,
+        "assignee": null,
+        "assignees": [],
+        "milestone": {
+          "url": "https://api.github.com/repos/discord/itsdangerous-rs/milestones/1",
+          "id": 4433174,
+          "node_id": "MDk6TWlsZXN0b25lNDQzMzE3NA==",
+          "number": 1,
+          "title": "v0.4.0",
+          "description": "Prerequisites to releasing v0.4.0",
+          "creator": {
+            "login": "jhgg",
+            "id": 5489149,
+            "node_id": "MDQ6VXNlcjU0ODkxNDk=",
+            "gravatar_id": "",
+            "url": "https://api.github.com/users/jhgg",
+            "type": "User",
+            "site_admin": false
+          },
+          "open_issues": 1,
+          "closed_issues": 1,
+          "state": "open",
+          "created_at": "2019-06-23T09:08:20Z",
+          "updated_at": "2019-06-23T09:17:03Z",
+          "due_on": null,
+          "closed_at": null
+        },
+        "comments": 0,
+        "created_at": "2019-06-23T09:16:52Z",
+        "updated_at": "2019-06-23T09:17:03Z",
+        "closed_at": null,
+        "author_association": "MEMBER",
+        "active_lock_reason": null,
+        "draft": true,
+        "pull_request": {
+          "url": "https://api.github.com/repos/discord/itsdangerous-rs/pulls/5",
+          "merged_at": null
+        },
+        "body": "- [ ] `serializer_traits::Encoding`\r\n- [ ] `serializer_traits::Serializer`\r\n- [ ] `serializer_traits::TimedSerializer`\r\n- [ ] `UnverifiedValue::from_str`\r\n- [ ] `UnverifiedValue::unverified_value`\r\n- [ ] `UnverifiedValue::verify`\r\n- [ ] `UnverifiedTimedValue`\r\n- [ ] `UnverifiedTimedValue::from_str`\r\n- [ ] `UnverifiedTimedValue::unverified_value`\r\n- [ ] `UnverifiedTimedValue::unverified_timestamp`\r\n- [ ] `UnverifiedTimedValue::verify`\r\n- [ ] `serializer_with_signer`\r\n- [ ] `timed_serializer_with_signer`\r\n- [ ] `SignerBuilder`\r\n- [ ] `NullEncoding`\r\n- [ ] `TimestampExpired`\r\n- [ ] `URLSafeEncoding`\r\n- [ ] `PayloadError`\r\n- [ ] `AsSigner`\r\n- [ ] `Encoding`\r\n- [ ] `IntoTimestampSigner`\r\n- [ ] `Serializer`\r\n- [ ] `TimedSerializer`\r\n\r\n\r\n\r\n",
+        "reactions": {
+          "url": "https://api.github.com/repos/discord/itsdangerous-rs/issues/5/reactions",
+          "total_count": 0,
+          "+1": 0,
+          "-1": 0,
+          "laugh": 0,
+          "hooray": 0,
+          "confused": 0,
+          "heart": 0,
+          "rocket": 0,
+          "eyes": 0
+        },
+        "performed_via_github_app": null,
+        "state_reason": null
+      }
+    ],
     "pullRequests": []
   }
 }

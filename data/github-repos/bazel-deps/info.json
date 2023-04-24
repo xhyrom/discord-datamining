@@ -59,7 +59,274 @@
   },
   "branches": [],
   "last5": {
-    "commits": [],
+    "commits": [
+      {
+        "sha": "8c929d411f1434c835cd9801977a4ab396c3f1fc",
+        "node_id": "MDY6Q29tbWl0MTU5NzIyMTc0OjhjOTI5ZDQxMWYxNDM0YzgzNWNkOTgwMTk3N2E0YWIzOTZjM2YxZmM=",
+        "commit": {
+          "author": {
+            "name": "Jonathon Belotti",
+            "email": "jonathon@canva.com",
+            "date": "2019-09-10T16:31:02Z"
+          },
+          "committer": {
+            "name": "P. Oscar Boykin",
+            "email": "johnynek@users.noreply.github.com",
+            "date": "2019-09-10T16:31:02Z"
+          },
+          "message": "Extra conditional to fix bug intro'd by https://github.com/johnynek/bazel-deps/pull/251 (#267)",
+          "tree": {
+            "sha": "de5ef448ac34930c27b983b8e7595070e2cd7583",
+            "url": "https://api.github.com/repos/discord/bazel-deps/git/trees/de5ef448ac34930c27b983b8e7595070e2cd7583"
+          },
+          "url": "https://api.github.com/repos/discord/bazel-deps/git/commits/8c929d411f1434c835cd9801977a4ab396c3f1fc",
+          "comment_count": 0,
+          "verification": {
+            "verified": false,
+            "reason": "unsigned",
+            "signature": null,
+            "payload": null
+          }
+        },
+        "url": "https://api.github.com/repos/discord/bazel-deps/commits/8c929d411f1434c835cd9801977a4ab396c3f1fc",
+        "author": null,
+        "committer": {
+          "login": "johnynek",
+          "id": 67958,
+          "node_id": "MDQ6VXNlcjY3OTU4",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/johnynek",
+          "type": "User",
+          "site_admin": false
+        },
+        "parents": [
+          {
+            "sha": "48fdf7f8bcf3aadfa07f9f7e6f0c9f4247cb0f58",
+            "url": "https://api.github.com/repos/discord/bazel-deps/commits/48fdf7f8bcf3aadfa07f9f7e6f0c9f4247cb0f58"
+          }
+        ]
+      },
+      {
+        "sha": "48fdf7f8bcf3aadfa07f9f7e6f0c9f4247cb0f58",
+        "node_id": "MDY6Q29tbWl0MTU5NzIyMTc0OjQ4ZmRmN2Y4YmNmM2FhZGZhMDdmOWY3ZTZmMGM5ZjQyNDdjYjBmNTg=",
+        "commit": {
+          "author": {
+            "name": "ianoc-stripe",
+            "email": "ianoc@stripe.com",
+            "date": "2019-07-11T02:40:34Z"
+          },
+          "committer": {
+            "name": "P. Oscar Boykin",
+            "email": "johnynek@users.noreply.github.com",
+            "date": "2019-07-11T02:40:34Z"
+          },
+          "message": "Add in the ability to do the outputs from bazel-deps as an external repo (#264)\n\n* cp\r\n\r\n* cp\r\n\r\n* cp\r\n\r\n* cp\r\n\r\n* cp\r\n\r\n* cp\r\n\r\n* cp\r\n\r\n* cp\r\n\r\n* Add error handling\r\n\r\n* Add comment\r\n\r\n* cp\r\n\r\n* cp and updates\r\n\r\n* Re-run with the extra import\r\n\r\n* Cleanup\r\n\r\n* cp\r\n\r\n* Increase test coverage\r\n\r\n* Update for new coding of scala lang info\r\n\r\n* Remove incorrect comment\r\ngs\r\n\r\n* Include the backend builder as a template\r\n\r\n* Update readme\r\n\r\n* Add missing runtime deps\r\n\r\n* Update the template output\r\n\r\n* Review comments\r\n\r\n* Fix round trip",
+          "tree": {
+            "sha": "f44847650877b02a01df999853f802097743ebe5",
+            "url": "https://api.github.com/repos/discord/bazel-deps/git/trees/f44847650877b02a01df999853f802097743ebe5"
+          },
+          "url": "https://api.github.com/repos/discord/bazel-deps/git/commits/48fdf7f8bcf3aadfa07f9f7e6f0c9f4247cb0f58",
+          "comment_count": 0,
+          "verification": {
+            "verified": false,
+            "reason": "unsigned",
+            "signature": null,
+            "payload": null
+          }
+        },
+        "url": "https://api.github.com/repos/discord/bazel-deps/commits/48fdf7f8bcf3aadfa07f9f7e6f0c9f4247cb0f58",
+        "author": {
+          "login": "ianoc-stripe",
+          "id": 23110726,
+          "node_id": "MDQ6VXNlcjIzMTEwNzI2",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/ianoc-stripe",
+          "type": "User",
+          "site_admin": false
+        },
+        "committer": {
+          "login": "johnynek",
+          "id": 67958,
+          "node_id": "MDQ6VXNlcjY3OTU4",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/johnynek",
+          "type": "User",
+          "site_admin": false
+        },
+        "parents": [
+          {
+            "sha": "11035a564ff3d535d2d667e6c6fecaeacb252080",
+            "url": "https://api.github.com/repos/discord/bazel-deps/commits/11035a564ff3d535d2d667e6c6fecaeacb252080"
+          }
+        ]
+      },
+      {
+        "sha": "11035a564ff3d535d2d667e6c6fecaeacb252080",
+        "node_id": "MDY6Q29tbWl0MTU5NzIyMTc0OjExMDM1YTU2NGZmM2Q1MzVkMmQ2NjdlNmM2ZmVjYWVhY2IyNTIwODA=",
+        "commit": {
+          "author": {
+            "name": "ianoc-stripe",
+            "email": "ianoc@stripe.com",
+            "date": "2019-06-29T01:01:52Z"
+          },
+          "committer": {
+            "name": "GitHub",
+            "email": "noreply@github.com",
+            "date": "2019-06-29T01:01:52Z"
+          },
+          "message": "Merge pull request #261 from ianoc-stripe/master\n\nUpgrade to bazel 0.27",
+          "tree": {
+            "sha": "d9d52f4b63363b703c24c4f913817ac985007778",
+            "url": "https://api.github.com/repos/discord/bazel-deps/git/trees/d9d52f4b63363b703c24c4f913817ac985007778"
+          },
+          "url": "https://api.github.com/repos/discord/bazel-deps/git/commits/11035a564ff3d535d2d667e6c6fecaeacb252080",
+          "comment_count": 0,
+          "verification": {
+            "verified": true,
+            "reason": "valid",
+            "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsBcBAABCAAQBQJdFriBCRBK7hj4Ov3rIwAAdHIIALGdbKbzYhrzwubw75D0kMxE\np9+xRjHYIEwVUMyTyz5VOWEmK10Z4lcDP7/2JUXiBvfayL8wEZwOEdI0vhRZRd7l\nNbPbS3Pg9Y8ETqsTl/sqrCUOlbF4N8A2CbD87zYKlt5COSyykPTHsI7Y0xBwZfKz\nL5yRv3kQ7GXl7ZcfFpk0MtizlDRTwDQALfxT/bKh+5PtBnvHCnPyRKg+zL9W+hUs\nEPwzqLfF8BkrnXh5A0lVzLG0FFZm3UVE2s2KSmWbwqub8ZujP9ifmsT/BdrIrKYT\nPyAsLu8WahUxTCKADtG9c6rKnyKAMUO3fyjDwPh7eM3RymwHDRDMfOvZbTTc9xg=\n=YtwT\n-----END PGP SIGNATURE-----\n",
+            "payload": "tree d9d52f4b63363b703c24c4f913817ac985007778\nparent 16387cd1ec56dae519007c955643ac4e365ea996\nparent ea26911543dfe6a6a8a196986cdd53bf3d473144\nauthor ianoc-stripe <ianoc@stripe.com> 1561770112 -0600\ncommitter GitHub <noreply@github.com> 1561770112 -0600\n\nMerge pull request #261 from ianoc-stripe/master\n\nUpgrade to bazel 0.27"
+          }
+        },
+        "url": "https://api.github.com/repos/discord/bazel-deps/commits/11035a564ff3d535d2d667e6c6fecaeacb252080",
+        "author": {
+          "login": "ianoc-stripe",
+          "id": 23110726,
+          "node_id": "MDQ6VXNlcjIzMTEwNzI2",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/ianoc-stripe",
+          "type": "User",
+          "site_admin": false
+        },
+        "committer": {
+          "login": "web-flow",
+          "id": 19864447,
+          "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/web-flow",
+          "type": "User",
+          "site_admin": false
+        },
+        "parents": [
+          {
+            "sha": "16387cd1ec56dae519007c955643ac4e365ea996",
+            "url": "https://api.github.com/repos/discord/bazel-deps/commits/16387cd1ec56dae519007c955643ac4e365ea996"
+          },
+          {
+            "sha": "ea26911543dfe6a6a8a196986cdd53bf3d473144",
+            "url": "https://api.github.com/repos/discord/bazel-deps/commits/ea26911543dfe6a6a8a196986cdd53bf3d473144"
+          }
+        ]
+      },
+      {
+        "sha": "ea26911543dfe6a6a8a196986cdd53bf3d473144",
+        "node_id": "MDY6Q29tbWl0MTU5NzIyMTc0OmVhMjY5MTE1NDNkZmU2YTZhOGExOTY5ODZjZGQ1M2JmM2Q0NzMxNDQ=",
+        "commit": {
+          "author": {
+            "name": "Ian O'Connell",
+            "email": "ianoc@stripe.com",
+            "date": "2019-06-29T00:45:59Z"
+          },
+          "committer": {
+            "name": "Ian O'Connell",
+            "email": "ianoc@stripe.com",
+            "date": "2019-06-29T00:45:59Z"
+          },
+          "message": "Upgrade to bazel 0.27",
+          "tree": {
+            "sha": "d9d52f4b63363b703c24c4f913817ac985007778",
+            "url": "https://api.github.com/repos/discord/bazel-deps/git/trees/d9d52f4b63363b703c24c4f913817ac985007778"
+          },
+          "url": "https://api.github.com/repos/discord/bazel-deps/git/commits/ea26911543dfe6a6a8a196986cdd53bf3d473144",
+          "comment_count": 0,
+          "verification": {
+            "verified": false,
+            "reason": "unsigned",
+            "signature": null,
+            "payload": null
+          }
+        },
+        "url": "https://api.github.com/repos/discord/bazel-deps/commits/ea26911543dfe6a6a8a196986cdd53bf3d473144",
+        "author": {
+          "login": "ianoc-stripe",
+          "id": 23110726,
+          "node_id": "MDQ6VXNlcjIzMTEwNzI2",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/ianoc-stripe",
+          "type": "User",
+          "site_admin": false
+        },
+        "committer": {
+          "login": "ianoc-stripe",
+          "id": 23110726,
+          "node_id": "MDQ6VXNlcjIzMTEwNzI2",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/ianoc-stripe",
+          "type": "User",
+          "site_admin": false
+        },
+        "parents": [
+          {
+            "sha": "16387cd1ec56dae519007c955643ac4e365ea996",
+            "url": "https://api.github.com/repos/discord/bazel-deps/commits/16387cd1ec56dae519007c955643ac4e365ea996"
+          }
+        ]
+      },
+      {
+        "sha": "16387cd1ec56dae519007c955643ac4e365ea996",
+        "node_id": "MDY6Q29tbWl0MTU5NzIyMTc0OjE2Mzg3Y2QxZWM1NmRhZTUxOTAwN2M5NTU2NDNhYzRlMzY1ZWE5OTY=",
+        "commit": {
+          "author": {
+            "name": "Artem Sholokhov",
+            "email": "sholokhov.aa@gmail.com",
+            "date": "2019-05-13T17:25:22Z"
+          },
+          "committer": {
+            "name": "P. Oscar Boykin",
+            "email": "johnynek@users.noreply.github.com",
+            "date": "2019-05-13T17:25:22Z"
+          },
+          "message": "Bazel 0.25.x compatibility (#253) (#254)\n\n* Bazel 0.25.x compatibility (#253)\r\n\r\n* Update ci config (#253)\r\n\r\n* Fix sha sum for bazel installer (#253)",
+          "tree": {
+            "sha": "ab2af19943867c43f01b2e154e81d64f2a05a62f",
+            "url": "https://api.github.com/repos/discord/bazel-deps/git/trees/ab2af19943867c43f01b2e154e81d64f2a05a62f"
+          },
+          "url": "https://api.github.com/repos/discord/bazel-deps/git/commits/16387cd1ec56dae519007c955643ac4e365ea996",
+          "comment_count": 0,
+          "verification": {
+            "verified": false,
+            "reason": "unsigned",
+            "signature": null,
+            "payload": null
+          }
+        },
+        "url": "https://api.github.com/repos/discord/bazel-deps/commits/16387cd1ec56dae519007c955643ac4e365ea996",
+        "author": {
+          "login": "sholokhov",
+          "id": 2879049,
+          "node_id": "MDQ6VXNlcjI4NzkwNDk=",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/sholokhov",
+          "type": "User",
+          "site_admin": false
+        },
+        "committer": {
+          "login": "johnynek",
+          "id": 67958,
+          "node_id": "MDQ6VXNlcjY3OTU4",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/johnynek",
+          "type": "User",
+          "site_admin": false
+        },
+        "parents": [
+          {
+            "sha": "482f5eaf244ee941dcf0f3136ca77bc2f6156bd3",
+            "url": "https://api.github.com/repos/discord/bazel-deps/commits/482f5eaf244ee941dcf0f3136ca77bc2f6156bd3"
+          }
+        ]
+      }
+    ],
     "releases": [],
     "issues": [],
     "pullRequests": []
