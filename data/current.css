@@ -147984,7 +147984,7 @@ html .invoiceCancelRow-3s2UuC {
     align-items: center;
     padding: 4px;
     border-radius: 4px;
-    border: 1px solid #fff
+    border: 1px solid var(--interactive-active)
 }
 
 .roleColor-3olhwJ {
@@ -152764,4 +152764,4 @@ html .invoiceCancelRow-dVOR64 {
     flex-direction: column
 }
 
-/*# sourceMappingURL=40532.5d037124e8e595aac77a.css.map*/
+/*# sourceMappingURL=40532.94b1b0cc6e16d6e6a3f0.css.map*/
