@@ -57,7 +57,32 @@
     "triage": false,
     "pull": false
   },
-  "branches": [],
+  "branches": [
+    {
+      "name": "handroll-node-env",
+      "commit": {
+        "sha": "c85f08bcb5d5e928e495b5c470a2756120e38c25",
+        "url": "https://api.github.com/repos/discord/pre-commit/commits/c85f08bcb5d5e928e495b5c470a2756120e38c25"
+      },
+      "protected": true
+    },
+    {
+      "name": "master",
+      "commit": {
+        "sha": "b8384b591d95089b56dca754afb56e718077eae0",
+        "url": "https://api.github.com/repos/discord/pre-commit/commits/b8384b591d95089b56dca754afb56e718077eae0"
+      },
+      "protected": true
+    },
+    {
+      "name": "wip_progress_dots",
+      "commit": {
+        "sha": "f21257cdbaa959b36116301a540a62a8b29f97c8",
+        "url": "https://api.github.com/repos/discord/pre-commit/commits/f21257cdbaa959b36116301a540a62a8b29f97c8"
+      },
+      "protected": true
+    }
+  ],
   "last5": {
     "commits": [
       {

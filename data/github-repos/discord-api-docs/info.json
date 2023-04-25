@@ -33,7 +33,7 @@
   "forks_count": 1261,
   "archived": false,
   "disabled": false,
-  "open_issues_count": 173,
+  "open_issues_count": 174,
   "license": {
     "key": "other",
     "name": "Other",
@@ -52,7 +52,7 @@
   ],
   "visibility": "public",
   "forks": 1261,
-  "open_issues": 173,
+  "open_issues": 174,
   "watchers": 5346,
   "default_branch": "main",
   "permissions": {
@@ -339,6 +339,59 @@
     "releases": [],
     "issues": [
       {
+        "url": "https://api.github.com/repos/discord/discord-api-docs/issues/6111",
+        "id": 1682756807,
+        "node_id": "I_kwDOA0coRs5kTNTH",
+        "number": 6111,
+        "title": "<3 instead a word",
+        "user": {
+          "login": "ghost",
+          "id": 10137,
+          "node_id": "MDQ6VXNlcjEwMTM3",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/ghost",
+          "type": "User",
+          "site_admin": false
+        },
+        "labels": [
+          {
+            "id": 3139104261,
+            "node_id": "MDU6TGFiZWwzMTM5MTA0MjYx",
+            "url": "https://api.github.com/repos/discord/discord-api-docs/labels/message%20components",
+            "name": "message components",
+            "color": "5319E7",
+            "default": false,
+            "description": "click click click click click click click"
+          }
+        ],
+        "state": "open",
+        "locked": false,
+        "assignee": null,
+        "assignees": [],
+        "milestone": null,
+        "comments": 1,
+        "created_at": "2023-04-25T09:11:17Z",
+        "updated_at": "2023-04-25T09:12:59Z",
+        "closed_at": null,
+        "author_association": "NONE",
+        "active_lock_reason": null,
+        "body": "### Description\n\nen en apartado de introducción de la API de Discord, en las últimas líneas hay un <3 en vez de un \"have\".\n\n### Steps to Reproduce\n\nIn Discord mobile.\r\n1. click in your profile\r\n2. Advanced\r\n3. API of Discord\n\n### Expected Behavior\n\nque ponga \"have\"\n\n### Current Behavior\n\nque hay un <3 en vez de una palabra. \n\n### Screenshots/Videos\n\n_No response_\n\n### Client and System Information\n\nSamsung A71 versión de UI 5.1",
+        "reactions": {
+          "url": "https://api.github.com/repos/discord/discord-api-docs/issues/6111/reactions",
+          "total_count": 1,
+          "+1": 0,
+          "-1": 0,
+          "laugh": 0,
+          "hooray": 0,
+          "confused": 1,
+          "heart": 0,
+          "rocket": 0,
+          "eyes": 0
+        },
+        "performed_via_github_app": null,
+        "state_reason": null
+      },
+      {
         "url": "https://api.github.com/repos/discord/discord-api-docs/issues/6109",
         "id": 1680037975,
         "node_id": "I_kwDOA0coRs5kI1hX",
@@ -369,9 +422,9 @@
         "assignee": null,
         "assignees": [],
         "milestone": null,
-        "comments": 3,
+        "comments": 4,
         "created_at": "2023-04-23T14:00:17Z",
-        "updated_at": "2023-04-25T05:13:57Z",
+        "updated_at": "2023-04-25T08:37:37Z",
         "closed_at": null,
         "author_association": "CONTRIBUTOR",
         "active_lock_reason": null,
@@ -558,54 +611,6 @@
         },
         "performed_via_github_app": null,
         "state_reason": "completed"
-      },
-      {
-        "url": "https://api.github.com/repos/discord/discord-api-docs/issues/6105",
-        "id": 1678465535,
-        "node_id": "PR_kwDOA0coRs5O3ABO",
-        "number": 6105,
-        "title": "Add Id Message Format",
-        "user": {
-          "login": "Mysterious-Dev",
-          "id": 40738104,
-          "node_id": "MDQ6VXNlcjQwNzM4MTA0",
-          "gravatar_id": "",
-          "url": "https://api.github.com/users/Mysterious-Dev",
-          "type": "User",
-          "site_admin": false
-        },
-        "labels": [],
-        "state": "open",
-        "locked": false,
-        "assignee": null,
-        "assignees": [],
-        "milestone": null,
-        "comments": 0,
-        "created_at": "2023-04-21T12:45:16Z",
-        "updated_at": "2023-04-21T17:48:27Z",
-        "closed_at": null,
-        "author_association": "NONE",
-        "active_lock_reason": null,
-        "draft": false,
-        "pull_request": {
-          "url": "https://api.github.com/repos/discord/discord-api-docs/pulls/6105",
-          "merged_at": null
-        },
-        "body": "With the addition of Onboarding feature, a new message format has been added, `<id:type>` ^^.\r\n\r\nSo this PR completes the documentation for this (there might be some changes on the structure of the changes to make 😊) ^^.",
-        "reactions": {
-          "url": "https://api.github.com/repos/discord/discord-api-docs/issues/6105/reactions",
-          "total_count": 2,
-          "+1": 1,
-          "-1": 0,
-          "laugh": 0,
-          "hooray": 0,
-          "confused": 1,
-          "heart": 0,
-          "rocket": 0,
-          "eyes": 0
-        },
-        "performed_via_github_app": null,
-        "state_reason": null
       }
     ],
     "pullRequests": []
