@@ -51559,13 +51559,19 @@ input[type=checked]:focus-visible+.label-3TDpbn {
 
 .subtitle-fLv5gs,
 .title-2vxWg5 {
-    text-align: center
+    text-align: center;
+    padding: 0 48px
 }
 
 .subtitle-fLv5gs {
     margin-bottom: 32px
 }
 
+.subtitleFinish-3vMGN5 {
+    padding: 0 12px
+}
+
+.subtitleFinish-3vMGN5,
 .subtitleInfo-p9Mu07 {
     text-align: center;
     margin-bottom: 12px
@@ -51578,17 +51584,17 @@ input[type=checked]:focus-visible+.label-3TDpbn {
 
 .promptFinish-2Zu2Vg {
     text-align: center;
-    margin-bottom: 36px
+    margin-bottom: 32px
 }
 
 .finishTitle-zpRnWF {
     text-align: center;
     margin-bottom: 24px;
-    margin-top: 71px
+    margin-top: 66px
 }
 
 .button-2cTK9h {
-    margin-bottom: 47px
+    margin-bottom: 42px
 }
 
 .infoContainer-iZdN3P {
@@ -51639,12 +51645,18 @@ input[type=checked]:focus-visible+.label-3TDpbn {
     padding-bottom: 24px;
     border-radius: 16px;
     -webkit-box-shadow: rgba(0, 0, 0, .16) 0 8px 40px;
-    box-shadow: 0 8px 40px rgba(0, 0, 0, .16)
+    box-shadow: 0 8px 40px rgba(0, 0, 0, .16);
+    overflow: hidden;
+    position: relative
 }
 
 .userCard-3EOCxg {
     padding-left: 24px;
     word-break: break-all
+}
+
+.userCardAvatar-1KIahb {
+    margin-top: 12px
 }
 
 .userCardHeight-tY9cp0 {
@@ -51726,7 +51738,7 @@ input[type=checked]:focus-visible+.label-3TDpbn {
     align-items: center;
     min-height: 36px;
     max-width: 350px;
-    margin-top: 16px
+    margin-top: 8px
 }
 
 .shiny-20A_ST {
@@ -51747,6 +51759,74 @@ input[type=checked]:focus-visible+.label-3TDpbn {
 
 .memberText-34-NmW {
     padding-top: 8px
+}
+
+@-webkit-keyframes reflect-2rY-SF {
+    0% {
+        -webkit-transform: scale(0) rotate(45deg);
+        transform: scale(0) rotate(45deg);
+        opacity: 0
+    }
+
+    80% {
+        -webkit-transform: scale(0) rotate(45deg);
+        transform: scale(0) rotate(45deg);
+        opacity: .25
+    }
+
+    81% {
+        -webkit-transform: scale(4) rotate(45deg);
+        transform: scale(4) rotate(45deg);
+        opacity: .5
+    }
+
+    to {
+        -webkit-transform: scale(50) rotate(45deg);
+        transform: scale(50) rotate(45deg);
+        opacity: 0
+    }
+}
+
+@keyframes reflect-2rY-SF {
+    0% {
+        -webkit-transform: scale(0) rotate(45deg);
+        transform: scale(0) rotate(45deg);
+        opacity: 0
+    }
+
+    80% {
+        -webkit-transform: scale(0) rotate(45deg);
+        transform: scale(0) rotate(45deg);
+        opacity: .25
+    }
+
+    81% {
+        -webkit-transform: scale(4) rotate(45deg);
+        transform: scale(4) rotate(45deg);
+        opacity: .5
+    }
+
+    to {
+        -webkit-transform: scale(50) rotate(45deg);
+        transform: scale(50) rotate(45deg);
+        opacity: 0
+    }
+}
+
+.shinyCard-hwIYd6:after {
+    content: "";
+    display: block;
+    width: 30px;
+    height: 100%;
+    position: absolute;
+    top: -180px;
+    left: 0;
+    background-color: #fff;
+    opacity: 0;
+    -webkit-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+    -webkit-animation: reflect-2rY-SF 4s ease-in-out infinite;
+    animation: reflect-2rY-SF 4s ease-in-out infinite
 }
 
 .footer-1O3hHf {
@@ -152764,4 +152844,4 @@ html .invoiceCancelRow-dVOR64 {
     flex-direction: column
 }
 
-/*# sourceMappingURL=40532.94b1b0cc6e16d6e6a3f0.css.map*/
+/*# sourceMappingURL=40532.e9a95b81d02ba3d5ddca.css.map*/
