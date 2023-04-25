@@ -47000,6 +47000,10 @@ input[type=checked]:focus-visible+.label-3TDpbn {
     border: 1px solid transparent
 }
 
+.reaction-102jx9.reactionWithUpgrade-3IEWzB {
+    margin-bottom: 0
+}
+
 .reaction-102jx9.shakeReaction-w8qvL2 {
     -webkit-animation: shake-3U59Se .5s;
     animation: shake-3U59Se .5s;
@@ -47236,6 +47240,44 @@ input[type=checked]:focus-visible+.label-3TDpbn {
     border-radius: 4px
 }
 
+.upgradeReactionContainer-2kRSFV {
+    margin-top: -4px;
+    padding: 4px;
+    background: var(--interactive-muted);
+    border-radius: 12px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex
+}
+
+.upgradeToSuperReactionButton-1yIBjP {
+    border-radius: 8px;
+    padding: 0 8px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: end;
+    -ms-flex-pack: end;
+    justify-content: flex-end;
+    position: relative;
+    left: 0;
+    min-height: 26px;
+    height: 26px
+}
+
+.upgradeToSuperReactionButton-1yIBjP svg {
+    vertical-align: text-top
+}
+
+.upgradeToSuperReactionButton-1yIBjP span {
+    line-height: 18;
+    font-size: 14px;
+    padding: 4px 0
+}
+
 .premiumIcon-e-K62h {
     margin-right: 4px
 }
@@ -47461,6 +47503,10 @@ input[type=checked]:focus-visible+.label-3TDpbn {
     transition-property: background-color, border-color;
     background: var(--background-secondary);
     border: 1px solid transparent
+}
+
+.reaction-3vwAF2.reactionWithUpgrade-a4vXZv {
+    margin-bottom: 0
 }
 
 .reaction-3vwAF2.shakeReaction-h226gy {
@@ -47701,6 +47747,44 @@ input[type=checked]:focus-visible+.label-3TDpbn {
     background: -webkit-gradient(linear, right top, left top, from(var(--premium-tier-2-pink-for-gradients)), color-stop(33.63%, var(--premium-tier-2-pink-for-gradients-2)), to(var(--premium-tier-2-purple-for-gradients)));
     background: linear-gradient(270deg, var(--premium-tier-2-pink-for-gradients), var(--premium-tier-2-pink-for-gradients-2) 33.63%, var(--premium-tier-2-purple-for-gradients));
     border-radius: 4px
+}
+
+.upgradeReactionContainer--AiVjD {
+    margin-top: -.25rem;
+    padding: .25rem;
+    background: var(--interactive-muted);
+    border-radius: .75rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex
+}
+
+.upgradeToSuperReactionButton-1TeI2p {
+    border-radius: .5rem;
+    padding: 0 .5rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: end;
+    -ms-flex-pack: end;
+    justify-content: flex-end;
+    position: relative;
+    left: 0;
+    min-height: 26px;
+    height: 26px
+}
+
+.upgradeToSuperReactionButton-1TeI2p svg {
+    vertical-align: text-top
+}
+
+.upgradeToSuperReactionButton-1TeI2p span {
+    line-height: 18;
+    font-size: 0.875rem;
+    padding: 4px 0
 }
 
 .premiumIcon-xSTd_o {
@@ -152677,4 +152761,4 @@ html .invoiceCancelRow-dVOR64 {
     flex-direction: column
 }
 
-/*# sourceMappingURL=40532.a7e95e5f122a26cf8647.css.map*/
+/*# sourceMappingURL=40532.7aa8ba7811050d85dd05.css.map*/
