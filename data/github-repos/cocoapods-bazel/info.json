@@ -59,7 +59,282 @@
   },
   "branches": [],
   "last5": {
-    "commits": [],
+    "commits": [
+      {
+        "sha": "f9eb36dd6f4913e760b710da355870d0abaa23a2",
+        "node_id": "C_kwDOI5jSKNoAKGY5ZWIzNmRkNmY0OTEzZTc2MGI3MTBkYTM1NTg3MGQwYWJhYTIzYTI",
+        "commit": {
+          "author": {
+            "name": "Osmose",
+            "email": "me@mkelly.me",
+            "date": "2023-04-07T17:45:20Z"
+          },
+          "committer": {
+            "name": "GitHub",
+            "email": "noreply@github.com",
+            "date": "2023-04-07T17:45:20Z"
+          },
+          "message": "Add platform_overrides config option. (#4)\n\nThis will let us avoid a bunch of platform incompatibility problems\r\nstemming from our dependency graph failing to pick the correct platform\r\nversion for a library.",
+          "tree": {
+            "sha": "9d452b7a3f249be52260e92e273759901b8b80b7",
+            "url": "https://api.github.com/repos/discord/cocoapods-bazel/git/trees/9d452b7a3f249be52260e92e273759901b8b80b7"
+          },
+          "url": "https://api.github.com/repos/discord/cocoapods-bazel/git/commits/f9eb36dd6f4913e760b710da355870d0abaa23a2",
+          "comment_count": 0,
+          "verification": {
+            "verified": true,
+            "reason": "valid",
+            "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsBcBAABCAAQBQJkMFawCRBK7hj4Ov3rIwAA4qQIAAtKaQOraHAFmcAHw37pBaIi\n5M/jbwSRKZPClNMMzVPv4kyNXDDbGAKWbeZNC5VL7ZzC5FHTuUF77SSFnXI9fF1Y\nniFce37fIKGNy6K1LLvuk0FsrQoU7xXVyvY4MKNDO438QqV4EXgUAgBinz1v/9w2\nNi/V4cz6VVAm7jXJORGnWy1NmM8168uMwPgOr4jBAsDsPG5ommfbnTicJ5NofBzL\ngax66lDmQ72rZSgKsDvM7K3PCLos57l+sBCfrBlD23gLTiCO+h/Wrw9nlsiI10o6\n23ZafxOae5EqioX7WJkc8btYBlOtRWFjeIHIKGMBtEu4WSnF+aK1xkEiAg0YR/8=\n=Ypdg\n-----END PGP SIGNATURE-----\n",
+            "payload": "tree 9d452b7a3f249be52260e92e273759901b8b80b7\nparent 6cb8fd973abe4253132b443e3a0491a100fb0d75\nauthor Osmose <me@mkelly.me> 1680889520 -0700\ncommitter GitHub <noreply@github.com> 1680889520 -0700\n\nAdd platform_overrides config option. (#4)\n\nThis will let us avoid a bunch of platform incompatibility problems\r\nstemming from our dependency graph failing to pick the correct platform\r\nversion for a library."
+          }
+        },
+        "url": "https://api.github.com/repos/discord/cocoapods-bazel/commits/f9eb36dd6f4913e760b710da355870d0abaa23a2",
+        "author": {
+          "login": "Osmose",
+          "id": 193106,
+          "node_id": "MDQ6VXNlcjE5MzEwNg==",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/Osmose",
+          "type": "User",
+          "site_admin": false
+        },
+        "committer": {
+          "login": "web-flow",
+          "id": 19864447,
+          "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/web-flow",
+          "type": "User",
+          "site_admin": false
+        },
+        "parents": [
+          {
+            "sha": "6cb8fd973abe4253132b443e3a0491a100fb0d75",
+            "url": "https://api.github.com/repos/discord/cocoapods-bazel/commits/6cb8fd973abe4253132b443e3a0491a100fb0d75"
+          }
+        ]
+      },
+      {
+        "sha": "6cb8fd973abe4253132b443e3a0491a100fb0d75",
+        "node_id": "C_kwDOI5jSKNoAKDZjYjhmZDk3M2FiZTQyNTMxMzJiNDQzZTNhMDQ5MWExMDBmYjBkNzU",
+        "commit": {
+          "author": {
+            "name": "Osmose",
+            "email": "me@mkelly.me",
+            "date": "2023-04-05T17:54:49Z"
+          },
+          "committer": {
+            "name": "GitHub",
+            "email": "noreply@github.com",
+            "date": "2023-04-05T17:54:49Z"
+          },
+          "message": "Use dependency labels consistent with PodToBUILD. (#3)\n\n- Asana: https://app.asana.com/0/1203960884932166/1204190072048671/f\r\n\r\nRan into this with `node_modules` dependencies that are trying to rely\r\non react-native core libraries and need deps like\r\n`@ReactCore//:ReactCore`.",
+          "tree": {
+            "sha": "3947eefe562a47098f5c86f05159953906e2827f",
+            "url": "https://api.github.com/repos/discord/cocoapods-bazel/git/trees/3947eefe562a47098f5c86f05159953906e2827f"
+          },
+          "url": "https://api.github.com/repos/discord/cocoapods-bazel/git/commits/6cb8fd973abe4253132b443e3a0491a100fb0d75",
+          "comment_count": 0,
+          "verification": {
+            "verified": true,
+            "reason": "valid",
+            "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsBcBAABCAAQBQJkLbXpCRBK7hj4Ov3rIwAAJD4IAEUQBurUQLr2K/2gcOPvYAaK\nW+zftO/aPhZcGot3ZLu9ylG1dmDEf/NESu/fwzw47I1I/HzNlLfbNf5DC4edGEpU\niF9W6hxAlLoyOOMhmQoisg0BR2exAauQ3Z3WKmaVePp5WpQ2QzlZ2/oK0/Diu0AE\ncAq7+DJMiWk8Dfo2E1PHesbiHYaILu3YTCdGwJ43HKtW3BPnqWozCWF2VsULXH1G\nuMnUf1/nO6CUy1jlVR7BP6rEDmP4z/8pw+36qvYqSaOfmqUSFzZ9EeDD44CVObVm\nveq+FUfJWrml3SHC3A83RWRTI6d08dR83UJhE+AOh66rZfFutw3PsjOM5UDgwHY=\n=9r2Y\n-----END PGP SIGNATURE-----\n",
+            "payload": "tree 3947eefe562a47098f5c86f05159953906e2827f\nparent b3ca60de2fad3246663f7d9ede59f7155db787ad\nauthor Osmose <me@mkelly.me> 1680717289 -0700\ncommitter GitHub <noreply@github.com> 1680717289 -0700\n\nUse dependency labels consistent with PodToBUILD. (#3)\n\n- Asana: https://app.asana.com/0/1203960884932166/1204190072048671/f\r\n\r\nRan into this with `node_modules` dependencies that are trying to rely\r\non react-native core libraries and need deps like\r\n`@ReactCore//:ReactCore`."
+          }
+        },
+        "url": "https://api.github.com/repos/discord/cocoapods-bazel/commits/6cb8fd973abe4253132b443e3a0491a100fb0d75",
+        "author": {
+          "login": "Osmose",
+          "id": 193106,
+          "node_id": "MDQ6VXNlcjE5MzEwNg==",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/Osmose",
+          "type": "User",
+          "site_admin": false
+        },
+        "committer": {
+          "login": "web-flow",
+          "id": 19864447,
+          "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/web-flow",
+          "type": "User",
+          "site_admin": false
+        },
+        "parents": [
+          {
+            "sha": "b3ca60de2fad3246663f7d9ede59f7155db787ad",
+            "url": "https://api.github.com/repos/discord/cocoapods-bazel/commits/b3ca60de2fad3246663f7d9ede59f7155db787ad"
+          }
+        ]
+      },
+      {
+        "sha": "b3ca60de2fad3246663f7d9ede59f7155db787ad",
+        "node_id": "C_kwDOI5jSKNoAKGIzY2E2MGRlMmZhZDMyNDY2NjNmN2Q5ZWRlNTlmNzE1NWRiNzg3YWQ",
+        "commit": {
+          "author": {
+            "name": "Natalie Jameson",
+            "email": "natalie@natalie.wtf",
+            "date": "2023-03-16T22:34:43Z"
+          },
+          "committer": {
+            "name": "GitHub",
+            "email": "noreply@github.com",
+            "date": "2023-03-16T22:34:43Z"
+          },
+          "message": "Merge pull request #2 from discord/nmj/change-labels\n\n[cocoapods-bazel] Make targets use external repository names",
+          "tree": {
+            "sha": "6e5dda3f29e6b65917a53ef73f0b0a08ae9d9d4d",
+            "url": "https://api.github.com/repos/discord/cocoapods-bazel/git/trees/6e5dda3f29e6b65917a53ef73f0b0a08ae9d9d4d"
+          },
+          "url": "https://api.github.com/repos/discord/cocoapods-bazel/git/commits/b3ca60de2fad3246663f7d9ede59f7155db787ad",
+          "comment_count": 0,
+          "verification": {
+            "verified": true,
+            "reason": "valid",
+            "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsBcBAABCAAQBQJkE5mDCRBK7hj4Ov3rIwAA5c8IAHzjUlD3NkfE6H2DKRyNk+fm\no2XnXkirysFTUDJCxyXfhepm8X1f1YXsYwadqTHQtQTv0ELLlRZWNbI2YYcwrOn4\naBJK2YhBFkjKrU0RmKVc5azEXXr4ve1+SWKFjkV86HkXUInPRUl9r0QzGfohOBNj\ng9geDCeh4qsmti5K2JuRrqd94xgsHxpCfLobUrO89mXAktqoeoQ0sGJjef8dphi6\niB/1Ou3iQCxw+X56tqTnZKF8mOeEv0Lx8dTshKTdguVJwpvQDmaeLU63EUe9TRer\ne0za4zX7Sicevr2ShqeyFpG96YpiQzTQr27o9XU3McJXLiQnuwMq8m99ve20DnM=\n=65rf\n-----END PGP SIGNATURE-----\n",
+            "payload": "tree 6e5dda3f29e6b65917a53ef73f0b0a08ae9d9d4d\nparent 722c9398ac628943e4084eaebfcec0e85f536663\nparent 0cd1277802d1d631546004f50d20b0d46bd61565\nauthor Natalie Jameson <natalie@natalie.wtf> 1679006083 -0700\ncommitter GitHub <noreply@github.com> 1679006083 -0700\n\nMerge pull request #2 from discord/nmj/change-labels\n\n[cocoapods-bazel] Make targets use external repository names"
+          }
+        },
+        "url": "https://api.github.com/repos/discord/cocoapods-bazel/commits/b3ca60de2fad3246663f7d9ede59f7155db787ad",
+        "author": {
+          "login": "nataliejameson",
+          "id": 6351854,
+          "node_id": "MDQ6VXNlcjYzNTE4NTQ=",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/nataliejameson",
+          "type": "User",
+          "site_admin": false
+        },
+        "committer": {
+          "login": "web-flow",
+          "id": 19864447,
+          "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/web-flow",
+          "type": "User",
+          "site_admin": false
+        },
+        "parents": [
+          {
+            "sha": "722c9398ac628943e4084eaebfcec0e85f536663",
+            "url": "https://api.github.com/repos/discord/cocoapods-bazel/commits/722c9398ac628943e4084eaebfcec0e85f536663"
+          },
+          {
+            "sha": "0cd1277802d1d631546004f50d20b0d46bd61565",
+            "url": "https://api.github.com/repos/discord/cocoapods-bazel/commits/0cd1277802d1d631546004f50d20b0d46bd61565"
+          }
+        ]
+      },
+      {
+        "sha": "0cd1277802d1d631546004f50d20b0d46bd61565",
+        "node_id": "C_kwDOI5jSKNoAKDBjZDEyNzc4MDJkMWQ2MzE1NDYwMDRmNTBkMjBiMGQ0NmJkNjE1NjU",
+        "commit": {
+          "author": {
+            "name": "Natalie Jameson",
+            "email": "natalie.jameson@discordapp.com",
+            "date": "2023-03-16T21:49:29Z"
+          },
+          "committer": {
+            "name": "Natalie Jameson",
+            "email": "natalie.jameson@discordapp.com",
+            "date": "2023-03-16T22:33:59Z"
+          },
+          "message": "[cocoapods-bazel] Make targets use external repository names\n\nInstead of using `//<pod dir>` for dependencies, use `@<pod\nname>//:<label>`. This makes deps work properly in our repository.\n\nTest Plan: Regenerated PINCache (deps on PINOperation) with `clyde ios\nsync-pods` and `clyde ios build` passed.",
+          "tree": {
+            "sha": "6e5dda3f29e6b65917a53ef73f0b0a08ae9d9d4d",
+            "url": "https://api.github.com/repos/discord/cocoapods-bazel/git/trees/6e5dda3f29e6b65917a53ef73f0b0a08ae9d9d4d"
+          },
+          "url": "https://api.github.com/repos/discord/cocoapods-bazel/git/commits/0cd1277802d1d631546004f50d20b0d46bd61565",
+          "comment_count": 0,
+          "verification": {
+            "verified": false,
+            "reason": "unsigned",
+            "signature": null,
+            "payload": null
+          }
+        },
+        "url": "https://api.github.com/repos/discord/cocoapods-bazel/commits/0cd1277802d1d631546004f50d20b0d46bd61565",
+        "author": {
+          "login": "nataliejameson",
+          "id": 6351854,
+          "node_id": "MDQ6VXNlcjYzNTE4NTQ=",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/nataliejameson",
+          "type": "User",
+          "site_admin": false
+        },
+        "committer": {
+          "login": "nataliejameson",
+          "id": 6351854,
+          "node_id": "MDQ6VXNlcjYzNTE4NTQ=",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/nataliejameson",
+          "type": "User",
+          "site_admin": false
+        },
+        "parents": [
+          {
+            "sha": "722c9398ac628943e4084eaebfcec0e85f536663",
+            "url": "https://api.github.com/repos/discord/cocoapods-bazel/commits/722c9398ac628943e4084eaebfcec0e85f536663"
+          }
+        ]
+      },
+      {
+        "sha": "722c9398ac628943e4084eaebfcec0e85f536663",
+        "node_id": "C_kwDOI5jSKNoAKDcyMmM5Mzk4YWM2Mjg5NDNlNDA4NGVhZWJmY2VjMGU4NWY1MzY2NjM",
+        "commit": {
+          "author": {
+            "name": "Osmose",
+            "email": "me@mkelly.me",
+            "date": "2023-03-01T22:08:10Z"
+          },
+          "committer": {
+            "name": "GitHub",
+            "email": "noreply@github.com",
+            "date": "2023-03-01T22:08:10Z"
+          },
+          "message": "Add workspace configuration option. (#1)\n\n`workspace` allows you to specify the path to the Bazel workspace you're using,\r\nwhere previously it was assumed that the Podfile's directory was the same as\r\nyour workspace, which may not be the case in monorepos.",
+          "tree": {
+            "sha": "1e20a949f0fbecd4731f20e86aead8385098ca6e",
+            "url": "https://api.github.com/repos/discord/cocoapods-bazel/git/trees/1e20a949f0fbecd4731f20e86aead8385098ca6e"
+          },
+          "url": "https://api.github.com/repos/discord/cocoapods-bazel/git/commits/722c9398ac628943e4084eaebfcec0e85f536663",
+          "comment_count": 0,
+          "verification": {
+            "verified": true,
+            "reason": "valid",
+            "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsBcBAABCAAQBQJj/8zKCRBK7hj4Ov3rIwAAJaoIAFdg62pjN3tzu2ShDxkz90Fb\n+LGHNQVD72tBDyRf5x0Lr4gnVO7efzI9GXKjoDEdc6waCWEjHoio/VKFTGxj2Pf5\nbOdcCb90O2h9Rs7OxQNymmpgO6CnR/PgPT/m57zBY+1lkeH9XvUZf3dbg6FT3/IL\nGFS5g+eFnHBJYIMh+aF1Eh4+NZZQq/9MxdeE6S9FDL9q0Dlv0prr+FLQuy8Opz4F\nAE8geuslIX7CumzwCd7wgJfRW2Q8odCOLv/KL+fhfdkrI+qW2tFG5NDZ9xciKhAW\nouYqqtlJj5BVJsJb/AR0l+yJQ3LNlt1dsbXrnaadCIZpFeHobGWn+lz1omxKMHE=\n=pgHM\n-----END PGP SIGNATURE-----\n",
+            "payload": "tree 1e20a949f0fbecd4731f20e86aead8385098ca6e\nparent 223c4c6ddbcfa2c9a83225df2fee464c78cdb594\nauthor Osmose <me@mkelly.me> 1677708490 -0800\ncommitter GitHub <noreply@github.com> 1677708490 -0800\n\nAdd workspace configuration option. (#1)\n\n`workspace` allows you to specify the path to the Bazel workspace you're using,\r\nwhere previously it was assumed that the Podfile's directory was the same as\r\nyour workspace, which may not be the case in monorepos."
+          }
+        },
+        "url": "https://api.github.com/repos/discord/cocoapods-bazel/commits/722c9398ac628943e4084eaebfcec0e85f536663",
+        "author": {
+          "login": "Osmose",
+          "id": 193106,
+          "node_id": "MDQ6VXNlcjE5MzEwNg==",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/Osmose",
+          "type": "User",
+          "site_admin": false
+        },
+        "committer": {
+          "login": "web-flow",
+          "id": 19864447,
+          "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/web-flow",
+          "type": "User",
+          "site_admin": false
+        },
+        "parents": [
+          {
+            "sha": "223c4c6ddbcfa2c9a83225df2fee464c78cdb594",
+            "url": "https://api.github.com/repos/discord/cocoapods-bazel/commits/223c4c6ddbcfa2c9a83225df2fee464c78cdb594"
+          }
+        ]
+      }
+    ],
     "releases": [],
     "issues": [],
     "pullRequests": []

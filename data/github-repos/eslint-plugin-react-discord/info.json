@@ -59,7 +59,270 @@
   },
   "branches": [],
   "last5": {
-    "commits": [],
+    "commits": [
+      {
+        "sha": "cff320e9e790d97092ac6b7e98f401dc5b31de26",
+        "node_id": "C_kwDOGnqujNoAKGNmZjMyMGU5ZTc5MGQ5NzA5MmFjNmI3ZTk4ZjQwMWRjNWIzMWRlMjY",
+        "commit": {
+          "author": {
+            "name": "AJ Palkovic",
+            "email": "aj@discordapp.com",
+            "date": "2022-01-04T01:51:55Z"
+          },
+          "committer": {
+            "name": "AJ Palkovic",
+            "email": "aj@discordapp.com",
+            "date": "2022-01-04T01:51:55Z"
+          },
+          "message": "Disable react/display-name for arrow functions that only have a single expression in the body, to cut down on false positives.",
+          "tree": {
+            "sha": "e4240a036b9b50d5a2fb79a680151b87acca082a",
+            "url": "https://api.github.com/repos/discord/eslint-plugin-react-discord/git/trees/e4240a036b9b50d5a2fb79a680151b87acca082a"
+          },
+          "url": "https://api.github.com/repos/discord/eslint-plugin-react-discord/git/commits/cff320e9e790d97092ac6b7e98f401dc5b31de26",
+          "comment_count": 0,
+          "verification": {
+            "verified": false,
+            "reason": "unsigned",
+            "signature": null,
+            "payload": null
+          }
+        },
+        "url": "https://api.github.com/repos/discord/eslint-plugin-react-discord/commits/cff320e9e790d97092ac6b7e98f401dc5b31de26",
+        "author": {
+          "login": "ajpalkovic",
+          "id": 126578,
+          "node_id": "MDQ6VXNlcjEyNjU3OA==",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/ajpalkovic",
+          "type": "User",
+          "site_admin": false
+        },
+        "committer": {
+          "login": "ajpalkovic",
+          "id": 126578,
+          "node_id": "MDQ6VXNlcjEyNjU3OA==",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/ajpalkovic",
+          "type": "User",
+          "site_admin": false
+        },
+        "parents": [
+          {
+            "sha": "9be55ed7f2417104ecaae9771fa9e603f847706e",
+            "url": "https://api.github.com/repos/discord/eslint-plugin-react-discord/commits/9be55ed7f2417104ecaae9771fa9e603f847706e"
+          }
+        ]
+      },
+      {
+        "sha": "9be55ed7f2417104ecaae9771fa9e603f847706e",
+        "node_id": "C_kwDOGnqujNoAKDliZTU1ZWQ3ZjI0MTcxMDRlY2FhZTk3NzFmYTllNjAzZjg0NzcwNmU",
+        "commit": {
+          "author": {
+            "name": "Jordan Harband",
+            "email": "ljharb@gmail.com",
+            "date": "2021-12-22T23:00:54Z"
+          },
+          "committer": {
+            "name": "Jordan Harband",
+            "email": "ljharb@gmail.com",
+            "date": "2021-12-22T23:00:54Z"
+          },
+          "message": "Update CHANGELOG and bump version",
+          "tree": {
+            "sha": "79deb34a9d5c1d426114c4cbff86f3a2d3a8dc97",
+            "url": "https://api.github.com/repos/discord/eslint-plugin-react-discord/git/trees/79deb34a9d5c1d426114c4cbff86f3a2d3a8dc97"
+          },
+          "url": "https://api.github.com/repos/discord/eslint-plugin-react-discord/git/commits/9be55ed7f2417104ecaae9771fa9e603f847706e",
+          "comment_count": 0,
+          "verification": {
+            "verified": true,
+            "reason": "valid",
+            "signature": "-----BEGIN PGP SIGNATURE-----\nComment: GPGTools - https://gpgtools.org\n\niQIcBAABCgAGBQJhw64mAAoJEJ9qaB4174tWe9gQAI90M8Ham+Rc4cGCn4H4OG9v\nlAouVCG3D1f3/GVxB76yA5IBqMZELnQNdkcWuZqet/2tWx0ONKVpIOVwowuaB0/X\ntL8tpx/LlW4Vj/1k00jCliBTHq0OBvEobvP+erwLELbLpCleljcTpL+Gy5mqgcmu\nD9TPj1eYDLVcaccPo+8TQCmSOZZemZS9e6gErHRwyyzBkqrzat7B7ffkXAOgpvMk\nRdl5oEtjCh/DZ2CAOPudjgLx4zftHtCCNnYrNAOBMudKo9EiFLPP6+xyTu24DeDH\nSxAwXnzLEdQzOwL5llPEMB3mX32mJji97g0AZF5jjan1pKewrkgKDQu8tBJEGBeT\neNBoIE6BIzw0r9H3XlNdVmHicmHKBspRcLnuf8VFHcNnHFzINpOLYOhF70madWPT\n5vU8LPNJ7hvaaHMSRxIxCUP5LNXDvaRHeROlMnofkSq92wp18Ydc//DyHBZPaGj7\n4EqH/UBsz1iK5IumOowLpuJDrAQPZQnndL1NbzydSHNnjdvQmK/l1PnvdBmOgrc8\nROTPwFO1KhPjGWV8JGswMi/n8+R9uynxxBpkncv3m5D8AijoKATN3mt/Qmy7nXI+\nQD5TZ2vzdHpYq+GBKe5EehzVqIO9UZIDsxccn8/FwGgoV5ary1g1NJfnHg8F8BGU\nNz7vrjLLftN0UAphCWSX\n=wAbx\n-----END PGP SIGNATURE-----",
+            "payload": "tree 79deb34a9d5c1d426114c4cbff86f3a2d3a8dc97\nparent 5a253803c2b91d1ddcfe4a07c30f0a3a8ba26ded\nauthor Jordan Harband <ljharb@gmail.com> 1640214054 -0800\ncommitter Jordan Harband <ljharb@gmail.com> 1640214054 -0800\n\nUpdate CHANGELOG and bump version\n"
+          }
+        },
+        "url": "https://api.github.com/repos/discord/eslint-plugin-react-discord/commits/9be55ed7f2417104ecaae9771fa9e603f847706e",
+        "author": {
+          "login": "ljharb",
+          "id": 45469,
+          "node_id": "MDQ6VXNlcjQ1NDY5",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/ljharb",
+          "type": "User",
+          "site_admin": false
+        },
+        "committer": {
+          "login": "ljharb",
+          "id": 45469,
+          "node_id": "MDQ6VXNlcjQ1NDY5",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/ljharb",
+          "type": "User",
+          "site_admin": false
+        },
+        "parents": [
+          {
+            "sha": "5a253803c2b91d1ddcfe4a07c30f0a3a8ba26ded",
+            "url": "https://api.github.com/repos/discord/eslint-plugin-react-discord/commits/5a253803c2b91d1ddcfe4a07c30f0a3a8ba26ded"
+          }
+        ]
+      },
+      {
+        "sha": "5a253803c2b91d1ddcfe4a07c30f0a3a8ba26ded",
+        "node_id": "C_kwDOGnqujNoAKDVhMjUzODAzYzJiOTFkMWRkY2ZlNGEwN2MzMGYwYTNhOGJhMjZkZWQ",
+        "commit": {
+          "author": {
+            "name": "Duncan Beevers",
+            "email": "duncan@dweebd.com",
+            "date": "2021-12-13T12:57:42Z"
+          },
+          "committer": {
+            "name": "Jordan Harband",
+            "email": "ljharb@gmail.com",
+            "date": "2021-12-13T12:57:42Z"
+          },
+          "message": "[New] component detection: add `util.isReactHookCall`\n\nRename Components test suite filename to match sibling lib/util/Components filename.\nExtend Components testComponentsDetect function to accept custom instructions, and to accumulate the results of processing those instructions.\nAdd utility to check whether a CallExpression is a React hook call.",
+          "tree": {
+            "sha": "0c8dcbe837b6869eac664b5fd06000b38b111bce",
+            "url": "https://api.github.com/repos/discord/eslint-plugin-react-discord/git/trees/0c8dcbe837b6869eac664b5fd06000b38b111bce"
+          },
+          "url": "https://api.github.com/repos/discord/eslint-plugin-react-discord/git/commits/5a253803c2b91d1ddcfe4a07c30f0a3a8ba26ded",
+          "comment_count": 0,
+          "verification": {
+            "verified": true,
+            "reason": "valid",
+            "signature": "-----BEGIN PGP SIGNATURE-----\nComment: GPGTools - https://gpgtools.org\n\niQIcBAABCgAGBQJhw6inAAoJEJ9qaB4174tWfRQP/2qc800APvt4cYfWLOfMcSvT\nbZ8KRlfQM6WizJHIUKFlKRz1rctfZv0It7NN0A31LXenm9ZwKBm/YhD8cYpm1jkp\nPZFdQgZKgUKjHJ9DDCEEK30hhfCcHeNWIRAagFUtWHz6Ro2G9nRcYE6TxQfjPzkx\nTPV+oqu+i12fD9K5uHbGMYGOlCCsjQtlnX/bMBsG/OUIMLJGYh8D4h/6l2onCn1W\nAJ9dMyVZte4IlUcW4OnwYQiJZgPu/yFcQkiItqpvRHlVmdXhyyeuzwdqn5qMQIv/\n3KkszP16w8ONVxdBqBOAwPUtOhIhXnG3t+ANdejTvT2wWvRc6D1A6MrRL+CBKZxY\nr5KT4F85GJxDADekdQjGnqImCOmvXDqRar5+N+zJdb0y5oX5Gs3/C/B8q/F7Y/Yd\nReF5ygjQ8dIVWdh1kxgpOo44SPFu0AO0yl+hvFHIVVCyp7KZ3PBcfYxk/eXNQJc2\nARHj4+d2hg//KaBJurJD/Y1+H5fi2LYIYLwaffYVyixODYlutMDByUTtODEjLK4F\nujaMN4OdPGioyZmADV6r4xsbJJsxvcULjT64mxjUcGLR89rfWxYX5l0nX0Y654cz\n00NDD0VUx3f7PmM40wpHtMC6IFKa7u4ijAgzTjsXQAfjoK/XKcCq6zp307jKbFMx\n2tKePh53/Qg1W7CQ2DMI\n=Jzsv\n-----END PGP SIGNATURE-----",
+            "payload": "tree 0c8dcbe837b6869eac664b5fd06000b38b111bce\nparent 3db52859132d1477f3ad38dc915a9b4870356890\nauthor Duncan Beevers <duncan@dweebd.com> 1639400262 -0800\ncommitter Jordan Harband <ljharb@gmail.com> 1639400262 -0800\n\n[New] component detection: add `util.isReactHookCall`\n\nRename Components test suite filename to match sibling lib/util/Components filename.\nExtend Components testComponentsDetect function to accept custom instructions, and to accumulate the results of processing those instructions.\nAdd utility to check whether a CallExpression is a React hook call.\n"
+          }
+        },
+        "url": "https://api.github.com/repos/discord/eslint-plugin-react-discord/commits/5a253803c2b91d1ddcfe4a07c30f0a3a8ba26ded",
+        "author": {
+          "login": "duncanbeevers",
+          "id": 7367,
+          "node_id": "MDQ6VXNlcjczNjc=",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/duncanbeevers",
+          "type": "User",
+          "site_admin": false
+        },
+        "committer": {
+          "login": "ljharb",
+          "id": 45469,
+          "node_id": "MDQ6VXNlcjQ1NDY5",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/ljharb",
+          "type": "User",
+          "site_admin": false
+        },
+        "parents": [
+          {
+            "sha": "3db52859132d1477f3ad38dc915a9b4870356890",
+            "url": "https://api.github.com/repos/discord/eslint-plugin-react-discord/commits/3db52859132d1477f3ad38dc915a9b4870356890"
+          }
+        ]
+      },
+      {
+        "sha": "3db52859132d1477f3ad38dc915a9b4870356890",
+        "node_id": "C_kwDOGnqujNoAKDNkYjUyODU5MTMyZDE0NzdmM2FkMzhkYzkxNWE5YjQ4NzAzNTY4OTA",
+        "commit": {
+          "author": {
+            "name": "Tobias Waltl",
+            "email": "tobias.waltl@mobilexag.de",
+            "date": "2021-12-14T08:51:53Z"
+          },
+          "committer": {
+            "name": "Jordan Harband",
+            "email": "ljharb@gmail.com",
+            "date": "2021-12-14T08:51:53Z"
+          },
+          "message": "[Fix] `jsx-indent-props`: Reset `line.isUsingOperator` correctly after ternary",
+          "tree": {
+            "sha": "90dfda3d717f070f78ef64d02e56e423aa631899",
+            "url": "https://api.github.com/repos/discord/eslint-plugin-react-discord/git/trees/90dfda3d717f070f78ef64d02e56e423aa631899"
+          },
+          "url": "https://api.github.com/repos/discord/eslint-plugin-react-discord/git/commits/3db52859132d1477f3ad38dc915a9b4870356890",
+          "comment_count": 0,
+          "verification": {
+            "verified": true,
+            "reason": "valid",
+            "signature": "-----BEGIN PGP SIGNATURE-----\nComment: GPGTools - https://gpgtools.org\n\niQIcBAABCgAGBQJhw1PJAAoJEJ9qaB4174tW8u8P/iqKpTj2axPiGeBhgzecDNb6\n0N69+xaRJwML2rCxQiUYywHLbIandfRAhGlHn8dXoW3qi9VRr29bkiCakzJK5XZH\n1y5eDf+GummXPczxb6GbLeHgT2FslCQtTzZgX1Y1wq0NhPbZSJPLZI3QwfViVLCF\nGNN9OM06xhX+DfWqTHfq0/zkcYYkZoEVXfBzNNl+fay+tC7ShOi8KThya2uFsfTV\nrnjBjzUOF7edh+vP++ePamhtzyRK8HXQZ1xcTSKN9orDCvc+W9xwRESgkg6p0pnI\nwjqSeuNAUWFYn1aBX5XkHdFy21MaX6WFT/JpubVS1OzbcOWwAmE5AZv6PdkYYiA7\ntXFlK44dfe5UuyE5fk9e4HskILBg04p7y5LV+Zl/oPVsd3qMPcTtL1LIWrglzwEe\n1vHdZbXwhWblp8CbsLFRGlM+I6i0Y0mYYd0AYbh+DgC1pQ7yUuCvasNIaHmBnfb2\n5fyekkVVDGuAe33cZ5VBQ0n/JzaA8oRGnWNTVqGAaA0H0+6WHiALHUow2DFQPw8c\njdPMOVdBET4JaKfIlsrfnJ7M9xnDn/nVct52W/wYVT6GxSUYbHIlM8wXQjWDZwRo\ny9uOEukxMSCsD1jT4acktLHFefJ/RYeqLcD6O22Jjugs72cGcB8DR4DuclTl7JQO\nk4u0SOmeLAUbvNteMBOA\n=ftpn\n-----END PGP SIGNATURE-----",
+            "payload": "tree 90dfda3d717f070f78ef64d02e56e423aa631899\nparent d56fdb8054103ce4f02e14d5df2fd83d9b4e180a\nauthor Tobias Waltl <tobias.waltl@mobilexag.de> 1639471913 +0100\ncommitter Jordan Harband <ljharb@gmail.com> 1639471913 +0100\n\n[Fix] `jsx-indent-props`: Reset `line.isUsingOperator` correctly after ternary\n"
+          }
+        },
+        "url": "https://api.github.com/repos/discord/eslint-plugin-react-discord/commits/3db52859132d1477f3ad38dc915a9b4870356890",
+        "author": null,
+        "committer": {
+          "login": "ljharb",
+          "id": 45469,
+          "node_id": "MDQ6VXNlcjQ1NDY5",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/ljharb",
+          "type": "User",
+          "site_admin": false
+        },
+        "parents": [
+          {
+            "sha": "d56fdb8054103ce4f02e14d5df2fd83d9b4e180a",
+            "url": "https://api.github.com/repos/discord/eslint-plugin-react-discord/commits/d56fdb8054103ce4f02e14d5df2fd83d9b4e180a"
+          }
+        ]
+      },
+      {
+        "sha": "d56fdb8054103ce4f02e14d5df2fd83d9b4e180a",
+        "node_id": "C_kwDOGnqujNoAKGQ1NmZkYjgwNTQxMDNjZTRmMDJlMTRkNWRmMmZkODNkOWI0ZTE4MGE",
+        "commit": {
+          "author": {
+            "name": "Jordan Harband",
+            "email": "ljharb@gmail.com",
+            "date": "2021-12-13T17:25:58Z"
+          },
+          "committer": {
+            "name": "Jordan Harband",
+            "email": "ljharb@gmail.com",
+            "date": "2021-12-13T17:25:58Z"
+          },
+          "message": "[Tests] rename test file to match production file",
+          "tree": {
+            "sha": "6b4f6b3934cd0048b16afeb1b6b1a9637370f96d",
+            "url": "https://api.github.com/repos/discord/eslint-plugin-react-discord/git/trees/6b4f6b3934cd0048b16afeb1b6b1a9637370f96d"
+          },
+          "url": "https://api.github.com/repos/discord/eslint-plugin-react-discord/git/commits/d56fdb8054103ce4f02e14d5df2fd83d9b4e180a",
+          "comment_count": 0,
+          "verification": {
+            "verified": true,
+            "reason": "valid",
+            "signature": "-----BEGIN PGP SIGNATURE-----\nComment: GPGTools - https://gpgtools.org\n\niQIcBAABCgAGBQJht4ImAAoJEJ9qaB4174tWCLoP/2pc7w1owDcCwofyNjdRcNcW\nAk+mhFuXSyoorJxwQaDMgJMaZHDyGYs1Q8qOmD7I6eXpxhtnAo/kNWu4fpb/+0ED\nj/RGsEpjEolDwNF8xciI0oKnZy8UAMF0QQBnq3w4OrStNpXOM1KmgmwNJoTl4qlQ\nlu7CyXGRmN/5pT5RPVF+03HzJq8igDEXPSFZgcHXR/eGAxPSTEOZK4HSjDjUGgPk\n7SdJMaKbyP4+pbMU1fDR6l9XVOnVvcqcOI/xU8OC8lX9Os080Yno4Im3RPCZB8NO\nMbKnAxxxZYfH47ggTc3l1XyU5wEO6761HAATJ7Qa7DqrgDi8hVB6ysLhg8TrVe63\ntC+6it424bm8CzuOEgw5TN7KzqKGsz8LfFOa+Yfe27vUj0MT15G6Zd3BNSOVAo9s\nwqBue4R5+5F+4znWMDXzCFRs21TkU9auZCpW93rwhuifrpJoYwUtzZcnRWH6ywmt\n/J8PVfzPd8z3RNUKAZIjot3gQk6PKYtMdgKiKekmJssKAvdpGrzERCPTxIE3jpBD\nJJYPBQya+vHjyBsva0FaH6e03fkSb6XYYhvQRW45jktMy65AOOJr8L+b9H/gRRLl\nMz0reLSpua1GNh7BPRyGcfHU6Yxvw+YEHCwu7qp70GHdnfNFUHcw/m4ed14JsZb7\nPsInKvRS3uWJ0yf6NrsT\n=FiFg\n-----END PGP SIGNATURE-----",
+            "payload": "tree 6b4f6b3934cd0048b16afeb1b6b1a9637370f96d\nparent ac4e311f07413f87163b352ad96fadb2b0be7902\nauthor Jordan Harband <ljharb@gmail.com> 1639416358 -0800\ncommitter Jordan Harband <ljharb@gmail.com> 1639416358 -0800\n\n[Tests] rename test file to match production file\n"
+          }
+        },
+        "url": "https://api.github.com/repos/discord/eslint-plugin-react-discord/commits/d56fdb8054103ce4f02e14d5df2fd83d9b4e180a",
+        "author": {
+          "login": "ljharb",
+          "id": 45469,
+          "node_id": "MDQ6VXNlcjQ1NDY5",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/ljharb",
+          "type": "User",
+          "site_admin": false
+        },
+        "committer": {
+          "login": "ljharb",
+          "id": 45469,
+          "node_id": "MDQ6VXNlcjQ1NDY5",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/ljharb",
+          "type": "User",
+          "site_admin": false
+        },
+        "parents": [
+          {
+            "sha": "ac4e311f07413f87163b352ad96fadb2b0be7902",
+            "url": "https://api.github.com/repos/discord/eslint-plugin-react-discord/commits/ac4e311f07413f87163b352ad96fadb2b0be7902"
+          }
+        ]
+      }
+    ],
     "releases": [],
     "issues": [],
     "pullRequests": []
