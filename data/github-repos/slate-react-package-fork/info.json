@@ -51,16 +51,7 @@
     "triage": false,
     "pull": false
   },
-  "branches": [
-    {
-      "name": "master",
-      "commit": {
-        "sha": "c4544096612d4e1af3aebfa304035773d0838772",
-        "url": "https://api.github.com/repos/discord/slate-react-package-fork/commits/c4544096612d4e1af3aebfa304035773d0838772"
-      },
-      "protected": false
-    }
-  ],
+  "branches": [],
   "last5": {
     "commits": [
       {
