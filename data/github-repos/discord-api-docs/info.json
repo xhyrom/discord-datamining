@@ -378,12 +378,12 @@
         "body": "### Description\n\nen en apartado de introducción de la API de Discord, en las últimas líneas hay un <3 en vez de un \"have\".\n\n### Steps to Reproduce\n\nIn Discord mobile.\r\n1. click in your profile\r\n2. Advanced\r\n3. API of Discord\n\n### Expected Behavior\n\nque ponga \"have\"\n\n### Current Behavior\n\nque hay un <3 en vez de una palabra. \n\n### Screenshots/Videos\n\n_No response_\n\n### Client and System Information\n\nSamsung A71 versión de UI 5.1",
         "reactions": {
           "url": "https://api.github.com/repos/discord/discord-api-docs/issues/6111/reactions",
-          "total_count": 1,
+          "total_count": 0,
           "+1": 0,
           "-1": 0,
           "laugh": 0,
           "hooray": 0,
-          "confused": 1,
+          "confused": 0,
           "heart": 0,
           "rocket": 0,
           "eyes": 0

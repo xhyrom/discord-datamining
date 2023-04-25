@@ -57,7 +57,16 @@
     "triage": false,
     "pull": false
   },
-  "branches": [],
+  "branches": [
+    {
+      "name": "main",
+      "commit": {
+        "sha": "3e7f4705782ef5ba205ef1e125c3334b3e3d744d",
+        "url": "https://api.github.com/repos/discord/terraform-google-gcr-cleaner/commits/3e7f4705782ef5ba205ef1e125c3334b3e3d744d"
+      },
+      "protected": false
+    }
+  ],
   "last5": {
     "commits": [
       {
