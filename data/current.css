@@ -14580,6 +14580,7 @@ html.disable-forced-colors * {
 }
 
 .subtitle-2fkDgR {
+    text-transform: none;
     padding-bottom: 12px
 }
 
@@ -152640,4 +152641,4 @@ html .invoiceCancelRow-dVOR64 {
     flex-direction: column
 }
 
-/*# sourceMappingURL=40532.a16f1389675223471541.css.map*/
+/*# sourceMappingURL=40532.2fa30ea44baa0ea23c74.css.map*/
