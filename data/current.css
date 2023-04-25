@@ -126912,6 +126912,66 @@ html .invoiceCancelRow-3s2UuC {
     margin-bottom: 24px
 }
 
+.confirmModal-3FWl5p {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    padding-top: 10px
+}
+
+.discordTag-WQlrhG {
+    display: inline-grid;
+    grid-auto-flow: column
+}
+
+.avatarIcon-2hi7AM {
+    margin-right: 3px
+}
+
+.username-rg1Awi {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    color: var(--header-primary)
+}
+
+.discriminator-1LUjFl {
+    color: var(--header-secondary)
+}
+
+.fromToWrapper-3xx0lv {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    margin-bottom: 20px;
+    background: no-repeat 50% 0
+}
+
+.from-2xygmH,
+.to-3qgRdt {
+    border-radius: 50%
+}
+
+.from-2xygmH {
+    margin-right: -27px;
+    opacity: .3
+}
+
+.to-3qgRdt {
+    position: relative;
+    z-index: 1
+}
+
 .wrapper-2YQzXK {
     padding-top: 32px
 }
@@ -127255,66 +127315,6 @@ html .invoiceCancelRow-3s2UuC {
     flex-direction: column;
     gap: 8px;
     margin-bottom: 24px
-}
-
-.confirmModal-3FWl5p {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: column;
-    flex-direction: column;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
-    padding-top: 10px
-}
-
-.discordTag-WQlrhG {
-    display: inline-grid;
-    grid-auto-flow: column
-}
-
-.avatarIcon-2hi7AM {
-    margin-right: 3px
-}
-
-.username-rg1Awi {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    color: var(--header-primary)
-}
-
-.discriminator-1LUjFl {
-    color: var(--header-secondary)
-}
-
-.fromToWrapper-3xx0lv {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    justify-content: center;
-    margin-bottom: 20px;
-    background: no-repeat 50% 0
-}
-
-.from-2xygmH,
-.to-3qgRdt {
-    border-radius: 50%
-}
-
-.from-2xygmH {
-    margin-right: -27px;
-    opacity: .3
-}
-
-.to-3qgRdt {
-    position: relative;
-    z-index: 1
 }
 
 .modal-ZdazA8 {
@@ -152668,4 +152668,4 @@ html .invoiceCancelRow-dVOR64 {
     flex-direction: column
 }
 
-/*# sourceMappingURL=40532.9f1d528f9b838d760c13.css.map*/
+/*# sourceMappingURL=40532.a2a5d33dbc0f7c6fe6e6.css.map*/
