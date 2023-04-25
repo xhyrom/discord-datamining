@@ -57,24 +57,7 @@
     "triage": false,
     "pull": false
   },
-  "branches": [
-    {
-      "name": "master",
-      "commit": {
-        "sha": "b01265230dec54b1608e6277d7be4b1a1957a11b",
-        "url": "https://api.github.com/repos/discord/ari/commits/b01265230dec54b1608e6277d7be4b1a1957a11b"
-      },
-      "protected": false
-    },
-    {
-      "name": "remove-nightly-features",
-      "commit": {
-        "sha": "be60f32a9979db32f9e7450301e3bf6792a89e84",
-        "url": "https://api.github.com/repos/discord/ari/commits/be60f32a9979db32f9e7450301e3bf6792a89e84"
-      },
-      "protected": false
-    }
-  ],
+  "branches": [],
   "last5": {
     "commits": [
       {
