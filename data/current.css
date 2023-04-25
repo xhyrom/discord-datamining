@@ -7161,7 +7161,10 @@ html.decorate-links .lowSaturationUnderline-Z6CW6z {
     position: absolute;
     opacity: 0;
     width: 100%;
-    height: 100%
+    height: 100%;
+    top: 0;
+    left: 0;
+    margin: 0
 }
 
 .input-125oad[disabled] {
@@ -152644,4 +152647,4 @@ html .invoiceCancelRow-dVOR64 {
     flex-direction: column
 }
 
-/*# sourceMappingURL=40532.db678663728c00618c43.css.map*/
+/*# sourceMappingURL=40532.7f709e293f94ad9c45cb.css.map*/
