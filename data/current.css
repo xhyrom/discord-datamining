@@ -15955,6 +15955,7 @@ html.disable-forced-colors * {
 }
 
 .topicsPillTextUnselected-3c2gbi {
+    padding-left: 2px;
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
@@ -145214,26 +145215,138 @@ html .invoiceCancelRow-3s2UuC {
     width: 80%
 }
 
-.container-Mz8hva {
-    gap: 12px;
-    margin-bottom: 30px
+.guildContainer-o60hpj {
+    -webkit-box-orient: horizontal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    padding: 30px 18px;
+    background-color: var(--background-secondary-alt);
+    position: relative
 }
 
-.appliedBoostContainer-1b4KCm,
-.container-Mz8hva {
+.guildContainer-o60hpj,
+.guildInfoContainer-13BvOb {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-direction: normal
+}
+
+.guildInfoContainer-13BvOb {
+    -webkit-box-orient: vertical;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    margin: 0 16px;
+    -webkit-box-flex: 1;
+    -ms-flex: 1;
+    flex: 1
+}
+
+.guildBoostStatsContainer-2pp500 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    margin-top: 6px
+}
+
+.separator-3ej3jr {
+    height: 18px;
+    border-right: 1px solid var(--text-muted);
+    margin: 0 10px;
+    opacity: .5
+}
+
+.guildBoostBadge-3pGGb7 {
+    color: var(--guild-boosting-pink);
+    margin-right: 6px
+}
+
+.sparkle-uDaMpl {
+    position: absolute;
+    color: var(--white-500);
+    z-index: 1
+}
+
+.theme-light .sparkle-uDaMpl {
+    color: var(--guild-boosting-pink)
+}
+
+.sparkle1-_LuE0R {
+    left: 0;
+    bottom: 9px
+}
+
+.sparkle2-19QDc2 {
+    right: 9px;
+    top: -15px
+}
+
+.sparkle3-2PXHQL {
+    right: 0;
+    top: 24px
+}
+
+.sparkle4-tYsfaV {
+    right: -22px;
+    top: 28px
+}
+
+.sideSparkleContainer-LIfGBb {
+    position: absolute;
+    width: 1px;
+    background-image: radial-gradient(100% 100% at center, #fff 0, hsla(0, 0%, 100%, 0) 50%);
+    z-index: 1
+}
+
+.theme-light .sideSparkleContainer-LIfGBb {
+    background-image: radial-gradient(100% 100% at center, hsl(var(--guild-boosting-pink-hsl)/1) 0, hsl(var(--guild-boosting-pink-hsl)/0) 50%)
+}
+
+.sideSparkle-3MprGX {
+    left: -8px
+}
+
+.container-Mz8hva,
+.wrapper-3QvHlz {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
     -ms-flex-direction: column;
-    flex-direction: column
+    flex-direction: column;
+    margin-bottom: 30px
+}
+
+.container-Mz8hva {
+    gap: 12px
 }
 
 .appliedBoostContainer-1b4KCm {
+    -webkit-box-orient: vertical;
+    -ms-flex-direction: column;
+    flex-direction: column;
     border-radius: 8px;
     overflow: hidden;
     background-color: var(--background-secondary-alt)
+}
+
+.appliedBoostContainer-1b4KCm,
+.guildContainer-uf1uYk {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-direction: normal
 }
 
 .guildContainer-uf1uYk {
@@ -145246,14 +145359,6 @@ html .invoiceCancelRow-3s2UuC {
     padding: 18px
 }
 
-.guildContainer-uf1uYk,
-.guildInfoContainer-1p5D7y {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-direction: normal
-}
-
 .guildInfoContainer-1p5D7y {
     -webkit-box-orient: vertical;
     -ms-flex-direction: column;
@@ -145264,12 +145369,16 @@ html .invoiceCancelRow-3s2UuC {
     flex: 1
 }
 
-.guildBoostStatsContainer-37jvZA {
+.guildBoostStatsContainer-37jvZA,
+.guildInfoContainer-1p5D7y {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    -webkit-box-direction: normal
+}
+
+.guildBoostStatsContainer-37jvZA {
     -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
     -ms-flex-direction: row;
     flex-direction: row;
     -webkit-box-align: center;
@@ -145366,6 +145475,12 @@ html .invoiceCancelRow-3s2UuC {
     cursor: pointer
 }
 
+.mainSeparator-h7MEes {
+    height: 1px;
+    background-color: var(--primary-500);
+    opacity: .48
+}
+
 .wrapper-3H7s3n {
     isolation: isolate;
     position: relative
@@ -145423,6 +145538,52 @@ html .invoiceCancelRow-3s2UuC {
     position: absolute;
     width: 100%;
     z-index: 1
+}
+
+.wrapper-3ypI92 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    margin-bottom: 50px;
+    gap: 10px
+}
+
+.header-1vhkj5 {
+    margin-bottom: 20px
+}
+
+.recommendedServerCard-3f-92z {
+    border-radius: 8px;
+    position: relative
+}
+
+.recommendedServerCard-3f-92z:after,
+.recommendedServerCard-3f-92z:before {
+    border: 1px solid transparent;
+    border-radius: inherit;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    content: "";
+    height: 100%;
+    pointer-events: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%
+}
+
+.recommendedServerCard-3f-92z:after {
+    border-color: var(--guild-boosting-blue);
+    -webkit-mask: linear-gradient(45deg, #000, transparent);
+    mask: linear-gradient(45deg, #000, transparent)
+}
+
+.recommendedServerCard-3f-92z:before {
+    border-color: var(--guild-boosting-purple)
 }
 
 .wrapper-32LHXp {
@@ -152844,4 +153005,4 @@ html .invoiceCancelRow-dVOR64 {
     flex-direction: column
 }
 
-/*# sourceMappingURL=40532.e9a95b81d02ba3d5ddca.css.map*/
+/*# sourceMappingURL=40532.5e957027b3eff99ae81d.css.map*/
