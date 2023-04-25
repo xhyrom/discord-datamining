@@ -79242,34 +79242,6 @@ strong {
     background-color: var(--brand-experiment-500)
 }
 
-.tooltipContainer-1qv8Ab {
-    max-width: 272px;
-    text-align: center
-}
-
-.tooltipHeaderContainer-2rG6lv {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: row;
-    flex-direction: row;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    justify-content: center;
-    margin-top: 12px
-}
-
-.tooltipVideo-3w_Bzi {
-    border-radius: 8px
-}
-
-.betaTag-1PPrwb {
-    color: var(--brand-experiment)
-}
-
-.betaTag-1PPrwb,
 .botTag-1Z92pz {
     margin-left: 4px;
     -ms-flex-item-align: center;
@@ -152668,4 +152640,4 @@ html .invoiceCancelRow-dVOR64 {
     flex-direction: column
 }
 
-/*# sourceMappingURL=40532.a2a5d33dbc0f7c6fe6e6.css.map*/
+/*# sourceMappingURL=40532.a16f1389675223471541.css.map*/
