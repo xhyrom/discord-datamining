@@ -57,7 +57,40 @@
     "triage": false,
     "pull": false
   },
-  "branches": [],
+  "branches": [
+    {
+      "name": "1.0.x",
+      "commit": {
+        "sha": "d08c2ab39d38c181abda279d5c2cadfac33a50c1",
+        "url": "https://api.github.com/repos/discord/cowboy/commits/d08c2ab39d38c181abda279d5c2cadfac33a50c1"
+      },
+      "protected": false
+    },
+    {
+      "name": "1.1.x",
+      "commit": {
+        "sha": "0c15b9216b7467390623db84e169b32c68e85bcb",
+        "url": "https://api.github.com/repos/discord/cowboy/commits/0c15b9216b7467390623db84e169b32c68e85bcb"
+      },
+      "protected": false
+    },
+    {
+      "name": "feature/upgrade_proper_v1.2",
+      "commit": {
+        "sha": "ad4ec7cfa76abe054c24e64b61d8e9632a782810",
+        "url": "https://api.github.com/repos/discord/cowboy/commits/ad4ec7cfa76abe054c24e64b61d8e9632a782810"
+      },
+      "protected": false
+    },
+    {
+      "name": "master",
+      "commit": {
+        "sha": "bb83a6ce33288c04250497318565ac499282c720",
+        "url": "https://api.github.com/repos/discord/cowboy/commits/bb83a6ce33288c04250497318565ac499282c720"
+      },
+      "protected": false
+    }
+  ],
   "last5": {
     "commits": [
       {
