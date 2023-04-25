@@ -51797,6 +51797,10 @@ input[type=checked]:focus-visible+.label-3TDpbn {
     margin-top: 3px
 }
 
+.remindMeLater-3OGIxS {
+    color: var(--text-normal)
+}
+
 :root {
     --dark-elevation-low: 0 1px 5px 0 hsl(var(--black-500-hsl)/0.3);
     --dark-elevation-high: 0 2px 10px 0 hsl(var(--black-500-hsl)/0.2);
@@ -152640,4 +152644,4 @@ html .invoiceCancelRow-dVOR64 {
     flex-direction: column
 }
 
-/*# sourceMappingURL=40532.d54a05472f561977f598.css.map*/
+/*# sourceMappingURL=40532.db678663728c00618c43.css.map*/
