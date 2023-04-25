@@ -16103,8 +16103,7 @@ html.disable-forced-colors * {
     align-items: center;
     pointer-events: none;
     padding-top: 6px;
-    padding-right: 16px;
-    border-right: 1px solid var(--background-modifier-accent)
+    padding-right: 16px
 }
 
 .topicsPillHeadingIcon-1KXJEr {
@@ -152689,4 +152688,4 @@ html .invoiceCancelRow-dVOR64 {
     flex-direction: column
 }
 
-/*# sourceMappingURL=40532.2e8a849ecd160a0e5627.css.map*/
+/*# sourceMappingURL=40532.66f89858030136c615e3.css.map*/
