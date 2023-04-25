@@ -18,7 +18,7 @@
   "url": "https://api.github.com/repos/discord/rules_ios",
   "created_at": "2023-02-03T22:24:12Z",
   "updated_at": "2023-03-21T21:44:48Z",
-  "pushed_at": "2023-04-20T23:35:12Z",
+  "pushed_at": "2023-04-25T17:03:06Z",
   "homepage": null,
   "size": 49222,
   "stargazers_count": 2,
@@ -33,7 +33,7 @@
   "forks_count": 1,
   "archived": false,
   "disabled": false,
-  "open_issues_count": 2,
+  "open_issues_count": 0,
   "license": {
     "key": "apache-2.0",
     "name": "Apache License 2.0",
@@ -47,7 +47,7 @@
   "topics": [],
   "visibility": "public",
   "forks": 1,
-  "open_issues": 2,
+  "open_issues": 0,
   "watchers": 2,
   "default_branch": "discord",
   "permissions": {
@@ -60,6 +60,114 @@
   "branches": [],
   "last5": {
     "commits": [
+      {
+        "sha": "1fc624aeee5e4ec1554ce3a0a6c64b332864a8bd",
+        "node_id": "C_kwDOI5jSX9oAKDFmYzYyNGFlZWU1ZTRlYzE1NTRjZTNhMGE2YzY0YjMzMjg2NGE4YmQ",
+        "commit": {
+          "author": {
+            "name": "Natalie Jameson",
+            "email": "natalie.jameson@discordapp.com",
+            "date": "2023-04-25T17:03:06Z"
+          },
+          "committer": {
+            "name": "GitHub",
+            "email": "noreply@github.com",
+            "date": "2023-04-25T17:03:06Z"
+          },
+          "message": "[rules_ios] Use -idirafter instead of -I (#4)\n\nNOTE: that this may cause issues for libraries that anticipate the `-I.` behavior and do something like `#include \"Foo.h\"` when there are multiple \"Foo.h\" in libs in its dependencies. In those cases, `-I.` can be added to its copts explicitly.\r\n\r\nThere are some places where using -I can actually cause problems with\r\nsystem header collisions. Notably, fmt has a \"locale.h\" file. Without\r\nthis change, you can end up with a chain that is:\r\n\r\n\"fmt/locale.h\" -> <locale> -> <clocale> -> <locale.h> -> failure,\r\nbecause -I causes fmt/locale.h to be searched (I believe due to the\r\nentries in the headermap being -I) before system paths.\r\n\r\nSee https://gcc.gnu.org/onlinedocs/gcc/Directory-Options.html for\r\nresolution order",
+          "tree": {
+            "sha": "9b7dd9a32ac895279ca64460a3134099f52a0fb4",
+            "url": "https://api.github.com/repos/discord/rules_ios/git/trees/9b7dd9a32ac895279ca64460a3134099f52a0fb4"
+          },
+          "url": "https://api.github.com/repos/discord/rules_ios/git/commits/1fc624aeee5e4ec1554ce3a0a6c64b332864a8bd",
+          "comment_count": 0,
+          "verification": {
+            "verified": true,
+            "reason": "valid",
+            "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsBcBAABCAAQBQJkSAfKCRBK7hj4Ov3rIwAAIScIAKQoI7+0sua3+VmaRLrt0mj5\nqo+P8F1qj+K9LtgRmfPMsaBzR6MtzQ2tnayBq0tucV47oac7pEzwwOiG3apwgtzV\nEvQiciYpHKgGMa/SrPumR7FfCwyS2BZL99sJRFbk8LHJYtXyLhQEAbnLzIgxYlWH\nd/iZH8HcARCfkUjCF6/K5DCwBtSJwt5g6ty4ph9VMzHD4Zz8iexiMSIk+FBwnhOj\nHa09Ta+knj7jur2pGxtrAzFJhNM7H8LXpyLUl0jwY8Tv9aobNOBghitJoFLPcZiB\nEtjW0K7XumysAUuK0EOwafNJn5ElQJ596NKkzfCofGsThHCckRSEzzxZm8p9lS0=\n=G7RQ\n-----END PGP SIGNATURE-----\n",
+            "payload": "tree 9b7dd9a32ac895279ca64460a3134099f52a0fb4\nparent 01a939dc53ad34926ba94e4296abfb5c09db83be\nauthor Natalie Jameson <natalie.jameson@discordapp.com> 1682442186 -0700\ncommitter GitHub <noreply@github.com> 1682442186 -0700\n\n[rules_ios] Use -idirafter instead of -I (#4)\n\nNOTE: that this may cause issues for libraries that anticipate the `-I.` behavior and do something like `#include \"Foo.h\"` when there are multiple \"Foo.h\" in libs in its dependencies. In those cases, `-I.` can be added to its copts explicitly.\r\n\r\nThere are some places where using -I can actually cause problems with\r\nsystem header collisions. Notably, fmt has a \"locale.h\" file. Without\r\nthis change, you can end up with a chain that is:\r\n\r\n\"fmt/locale.h\" -> <locale> -> <clocale> -> <locale.h> -> failure,\r\nbecause -I causes fmt/locale.h to be searched (I believe due to the\r\nentries in the headermap being -I) before system paths.\r\n\r\nSee https://gcc.gnu.org/onlinedocs/gcc/Directory-Options.html for\r\nresolution order"
+          }
+        },
+        "url": "https://api.github.com/repos/discord/rules_ios/commits/1fc624aeee5e4ec1554ce3a0a6c64b332864a8bd",
+        "author": {
+          "login": "nataliejameson",
+          "id": 6351854,
+          "node_id": "MDQ6VXNlcjYzNTE4NTQ=",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/nataliejameson",
+          "type": "User",
+          "site_admin": false
+        },
+        "committer": {
+          "login": "web-flow",
+          "id": 19864447,
+          "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/web-flow",
+          "type": "User",
+          "site_admin": false
+        },
+        "parents": [
+          {
+            "sha": "01a939dc53ad34926ba94e4296abfb5c09db83be",
+            "url": "https://api.github.com/repos/discord/rules_ios/commits/01a939dc53ad34926ba94e4296abfb5c09db83be"
+          }
+        ]
+      },
+      {
+        "sha": "01a939dc53ad34926ba94e4296abfb5c09db83be",
+        "node_id": "C_kwDOI5jSX9oAKDAxYTkzOWRjNTNhZDM0OTI2YmE5NGU0Mjk2YWJmYjVjMDlkYjgzYmU",
+        "commit": {
+          "author": {
+            "name": "Natalie Jameson",
+            "email": "natalie.jameson@discordapp.com",
+            "date": "2023-04-25T17:00:08Z"
+          },
+          "committer": {
+            "name": "GitHub",
+            "email": "noreply@github.com",
+            "date": "2023-04-25T17:00:08Z"
+          },
+          "message": "[rules_ios] Re-enable cpp rules (#3)\n\nThis was accidentally disabled. It is required for glog, so turn this\r\nback on so that .cc/.cpp sources and their .a files are properly\r\npropagated.\r\n\r\nTested by doing a build with this change off of main",
+          "tree": {
+            "sha": "88e2af3629d5ab43a19e1213cf7c5f44d9a8de5d",
+            "url": "https://api.github.com/repos/discord/rules_ios/git/trees/88e2af3629d5ab43a19e1213cf7c5f44d9a8de5d"
+          },
+          "url": "https://api.github.com/repos/discord/rules_ios/git/commits/01a939dc53ad34926ba94e4296abfb5c09db83be",
+          "comment_count": 0,
+          "verification": {
+            "verified": true,
+            "reason": "valid",
+            "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsBcBAABCAAQBQJkSAcYCRBK7hj4Ov3rIwAAX1wIABRpeKIiOFihbEKd5782F9RD\nm5zqjZtxxm+gRL1snrMNdvmxlYnKtHs9w6e45axCXpiBoY9Sxeg7lLTJDDeDVJIC\naaeAn1UzZM89EfMF3X51RzJ5exQwIDeiptOsnDDcGxBqlWF9R/ozJKRtTUhyefwh\ng+Lxs7XsCae+8M8jcd2k7Zeo7Wj29zDc42WX/Ufopy1myaQPPMy7zBGh75vHKE3M\nhlfcr2nawbNzl6aJMzequFKVXRqlkLf75svJyVe5K8VG63BXG9yo2/o2e1rfbVfi\nCelW76WD8FbKGPDjJmEWFGfUxJsVKqZ9KGMwV1jCP/lPeuzbW5o84N+5A65azhc=\n=b1M7\n-----END PGP SIGNATURE-----\n",
+            "payload": "tree 88e2af3629d5ab43a19e1213cf7c5f44d9a8de5d\nparent 238256aa05912d714c22f00515995aff8c707552\nauthor Natalie Jameson <natalie.jameson@discordapp.com> 1682442008 -0700\ncommitter GitHub <noreply@github.com> 1682442008 -0700\n\n[rules_ios] Re-enable cpp rules (#3)\n\nThis was accidentally disabled. It is required for glog, so turn this\r\nback on so that .cc/.cpp sources and their .a files are properly\r\npropagated.\r\n\r\nTested by doing a build with this change off of main"
+          }
+        },
+        "url": "https://api.github.com/repos/discord/rules_ios/commits/01a939dc53ad34926ba94e4296abfb5c09db83be",
+        "author": {
+          "login": "nataliejameson",
+          "id": 6351854,
+          "node_id": "MDQ6VXNlcjYzNTE4NTQ=",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/nataliejameson",
+          "type": "User",
+          "site_admin": false
+        },
+        "committer": {
+          "login": "web-flow",
+          "id": 19864447,
+          "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/web-flow",
+          "type": "User",
+          "site_admin": false
+        },
+        "parents": [
+          {
+            "sha": "238256aa05912d714c22f00515995aff8c707552",
+            "url": "https://api.github.com/repos/discord/rules_ios/commits/238256aa05912d714c22f00515995aff8c707552"
+          }
+        ]
+      },
       {
         "sha": "238256aa05912d714c22f00515995aff8c707552",
         "node_id": "C_kwDOI5jSX9oAKDIzODI1NmFhMDU5MTJkNzE0YzIyZjAwNTE1OTk1YWZmOGM3MDc1NTI",
@@ -221,118 +329,203 @@
             "url": "https://api.github.com/repos/discord/rules_ios/commits/dfb604dceacb18ff4e240b89300257c06711b3a5"
           }
         ]
-      },
-      {
-        "sha": "dfb604dceacb18ff4e240b89300257c06711b3a5",
-        "node_id": "C_kwDOI5jSX9oAKGRmYjYwNGRjZWFjYjE4ZmY0ZTI0MGI4OTMwMDI1N2MwNjcxMWIzYTU",
-        "commit": {
-          "author": {
-            "name": "Matt Robinson",
-            "email": "matt_rob@me.com",
-            "date": "2022-12-19T20:28:53Z"
-          },
-          "committer": {
-            "name": "GitHub",
-            "email": "noreply@github.com",
-            "date": "2022-12-19T20:28:53Z"
-          },
-          "message": "[Bazel6] Upgrade to Bazel 6.0.0 (#616)",
-          "tree": {
-            "sha": "a4e056d8da5c84b7b7b51230b9d910b2df156e24",
-            "url": "https://api.github.com/repos/discord/rules_ios/git/trees/a4e056d8da5c84b7b7b51230b9d910b2df156e24"
-          },
-          "url": "https://api.github.com/repos/discord/rules_ios/git/commits/dfb604dceacb18ff4e240b89300257c06711b3a5",
-          "comment_count": 0,
-          "verification": {
-            "verified": true,
-            "reason": "valid",
-            "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsBcBAABCAAQBQJjoMmFCRBK7hj4Ov3rIwAApjUIAJjjuPrhmUDlHUW+5HMMnb9Z\nuWUPLmwJ0wahNuCICGtzZg00agB7rpkWcihEjEDYxz3MZdRyxDz/LyksgUvSiGlx\nc6zCvgYMf8So/M5e26yuOZp/AbtyC2FO31pWkqJm1czI8o93L9Qh0VHDDq6PdX2l\nfMyyh7m0v1JqUCNO/QoY7M2pcylVD9clZX0dnQ2S4XIPoNu+O8vIODnbGSmvreEb\nQkTpmxf+KJvB0C200m0rLON3jaqZEXoEraPsIsvBo0O8Xss6T6g2qrcPKMW2ucyc\nNQ2Rpmz+e6k45TDTd/fyGKdyKCKyQgwxwd5YyING92IN4FSUpsyzTOSme43O0j4=\n=TQAY\n-----END PGP SIGNATURE-----\n",
-            "payload": "tree a4e056d8da5c84b7b7b51230b9d910b2df156e24\nparent f7dcd0c4f90985495bba517dc8cc7d86ce7f7632\nauthor Matt Robinson <matt_rob@me.com> 1671481733 -0600\ncommitter GitHub <noreply@github.com> 1671481733 -0600\n\n[Bazel6] Upgrade to Bazel 6.0.0 (#616)\n\n"
-          }
-        },
-        "url": "https://api.github.com/repos/discord/rules_ios/commits/dfb604dceacb18ff4e240b89300257c06711b3a5",
-        "author": {
-          "login": "mattrobmattrob",
-          "id": 5728070,
-          "node_id": "MDQ6VXNlcjU3MjgwNzA=",
-          "gravatar_id": "",
-          "url": "https://api.github.com/users/mattrobmattrob",
-          "type": "User",
-          "site_admin": false
-        },
-        "committer": {
-          "login": "web-flow",
-          "id": 19864447,
-          "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
-          "gravatar_id": "",
-          "url": "https://api.github.com/users/web-flow",
-          "type": "User",
-          "site_admin": false
-        },
-        "parents": [
-          {
-            "sha": "f7dcd0c4f90985495bba517dc8cc7d86ce7f7632",
-            "url": "https://api.github.com/repos/discord/rules_ios/commits/f7dcd0c4f90985495bba517dc8cc7d86ce7f7632"
-          }
-        ]
-      },
-      {
-        "sha": "f7dcd0c4f90985495bba517dc8cc7d86ce7f7632",
-        "node_id": "C_kwDOI5jSX9oAKGY3ZGNkMGM0ZjkwOTg1NDk1YmJhNTE3ZGM4Y2M3ZDg2Y2U3Zjc2MzI",
-        "commit": {
-          "author": {
-            "name": "mccorkill1",
-            "email": "69316216+mccorkill1@users.noreply.github.com",
-            "date": "2022-12-16T20:08:50Z"
-          },
-          "committer": {
-            "name": "GitHub",
-            "email": "noreply@github.com",
-            "date": "2022-12-16T20:08:50Z"
-          },
-          "message": "Adding plist to the bundled outputs on static frameworks (#607)\n\n* Adding infoplist to the bundled outputs on static frameworks if it is included in the build file\r\n* Moving _merge_root_infoplists to inside if statement for not virtualize_frameworks",
-          "tree": {
-            "sha": "496505ab830a5f227baef705602ff13da931cdcf",
-            "url": "https://api.github.com/repos/discord/rules_ios/git/trees/496505ab830a5f227baef705602ff13da931cdcf"
-          },
-          "url": "https://api.github.com/repos/discord/rules_ios/git/commits/f7dcd0c4f90985495bba517dc8cc7d86ce7f7632",
-          "comment_count": 0,
-          "verification": {
-            "verified": true,
-            "reason": "valid",
-            "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsBcBAABCAAQBQJjnNBSCRBK7hj4Ov3rIwAAGZ4IABkgdHfAwX5SC4qhh4glBzDf\ncKl7XdtIdDsiEAbdghz+biEkvc/mny4lC4ZEyaixKxcyKrDQ49vcgLhEYRw0Isqs\nLzVw1R1+FKCTeEm1qMA18PH1XZidiKW1JerOjazFV4XAJ+kulRjUFS2/EgojWEH+\nBYIFurSQpF4VkHlnRHmPYLbcdaep4CbeTHmdmIiOehJ8EYfQiAogngk4iTl6v0yx\nYGBtNJfVENWTcWWkL6U4lvdUz4ItN2z3+edjKQpMDHCTvr3+8HoMUgeY8mBGNlI/\nxLpfEdSR1VTDdcmo0mlyKLImHHTzZlybs68WWEVcBAzYGtBKNG8wqxRQS3kMtCA=\n=woF2\n-----END PGP SIGNATURE-----\n",
-            "payload": "tree 496505ab830a5f227baef705602ff13da931cdcf\nparent f59bfc2c2f17117b949e2b39d695e26247f97898\nauthor mccorkill1 <69316216+mccorkill1@users.noreply.github.com> 1671221330 -0500\ncommitter GitHub <noreply@github.com> 1671221330 -0800\n\nAdding plist to the bundled outputs on static frameworks (#607)\n\n* Adding infoplist to the bundled outputs on static frameworks if it is included in the build file\r\n* Moving _merge_root_infoplists to inside if statement for not virtualize_frameworks"
-          }
-        },
-        "url": "https://api.github.com/repos/discord/rules_ios/commits/f7dcd0c4f90985495bba517dc8cc7d86ce7f7632",
-        "author": {
-          "login": "mccorkill1",
-          "id": 69316216,
-          "node_id": "MDQ6VXNlcjY5MzE2MjE2",
-          "gravatar_id": "",
-          "url": "https://api.github.com/users/mccorkill1",
-          "type": "User",
-          "site_admin": false
-        },
-        "committer": {
-          "login": "web-flow",
-          "id": 19864447,
-          "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
-          "gravatar_id": "",
-          "url": "https://api.github.com/users/web-flow",
-          "type": "User",
-          "site_admin": false
-        },
-        "parents": [
-          {
-            "sha": "f59bfc2c2f17117b949e2b39d695e26247f97898",
-            "url": "https://api.github.com/repos/discord/rules_ios/commits/f59bfc2c2f17117b949e2b39d695e26247f97898"
-          }
-        ]
       }
     ],
     "releases": [],
-    "issues": [],
+    "issues": [
+      {
+        "url": "https://api.github.com/repos/discord/rules_ios/issues/4",
+        "id": 1677553849,
+        "node_id": "PR_kwDOI5jSX85Oz8aq",
+        "number": 4,
+        "title": "[rules_ios] Use -idirafter instead of -I",
+        "user": {
+          "login": "nataliejameson",
+          "id": 6351854,
+          "node_id": "MDQ6VXNlcjYzNTE4NTQ=",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/nataliejameson",
+          "type": "User",
+          "site_admin": false
+        },
+        "labels": [],
+        "state": "closed",
+        "locked": false,
+        "assignee": null,
+        "assignees": [],
+        "milestone": null,
+        "comments": 0,
+        "created_at": "2023-04-20T23:35:12Z",
+        "updated_at": "2023-04-25T17:03:06Z",
+        "closed_at": "2023-04-25T17:03:06Z",
+        "author_association": "CONTRIBUTOR",
+        "active_lock_reason": null,
+        "draft": false,
+        "pull_request": {
+          "url": "https://api.github.com/repos/discord/rules_ios/pulls/4",
+          "merged_at": "2023-04-25T17:03:06Z"
+        },
+        "body": "There are some places where using -I can actually cause problems with\r\nsystem header collisions. Notably, fmt has a \"locale.h\" file. Without\r\nthis change, you can end up with a chain that is:\r\n\r\n\"fmt/locale.h\" -> <locale> -> <clocale> -> <locale.h> -> failure,\r\nbecause -I causes fmt/locale.h to be searched (I believe due to the\r\nentries in the headermap being -I) before system paths.\r\n\r\nSee https://gcc.gnu.org/onlinedocs/gcc/Directory-Options.html for\r\nresolution order",
+        "reactions": {
+          "url": "https://api.github.com/repos/discord/rules_ios/issues/4/reactions",
+          "total_count": 0,
+          "+1": 0,
+          "-1": 0,
+          "laugh": 0,
+          "hooray": 0,
+          "confused": 0,
+          "heart": 0,
+          "rocket": 0,
+          "eyes": 0
+        },
+        "performed_via_github_app": null,
+        "state_reason": null
+      },
+      {
+        "url": "https://api.github.com/repos/discord/rules_ios/issues/3",
+        "id": 1673585861,
+        "node_id": "PR_kwDOI5jSX85Omonp",
+        "number": 3,
+        "title": "[rules_ios] Re-enable cpp rules",
+        "user": {
+          "login": "nataliejameson",
+          "id": 6351854,
+          "node_id": "MDQ6VXNlcjYzNTE4NTQ=",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/nataliejameson",
+          "type": "User",
+          "site_admin": false
+        },
+        "labels": [],
+        "state": "closed",
+        "locked": false,
+        "assignee": null,
+        "assignees": [],
+        "milestone": null,
+        "comments": 0,
+        "created_at": "2023-04-18T17:51:35Z",
+        "updated_at": "2023-04-25T17:00:08Z",
+        "closed_at": "2023-04-25T17:00:08Z",
+        "author_association": "CONTRIBUTOR",
+        "active_lock_reason": null,
+        "draft": false,
+        "pull_request": {
+          "url": "https://api.github.com/repos/discord/rules_ios/pulls/3",
+          "merged_at": "2023-04-25T17:00:08Z"
+        },
+        "body": "This was accidentally disabled. It is required for glog, so turn this\nback on so that .cc/.cpp sources and their .a files are properly\npropagated.\n\nTested by doing a build with this change off of main\n",
+        "reactions": {
+          "url": "https://api.github.com/repos/discord/rules_ios/issues/3/reactions",
+          "total_count": 0,
+          "+1": 0,
+          "-1": 0,
+          "laugh": 0,
+          "hooray": 0,
+          "confused": 0,
+          "heart": 0,
+          "rocket": 0,
+          "eyes": 0
+        },
+        "performed_via_github_app": null,
+        "state_reason": null
+      },
+      {
+        "url": "https://api.github.com/repos/discord/rules_ios/issues/2",
+        "id": 1668570817,
+        "node_id": "PR_kwDOI5jSX85OV_WP",
+        "number": 2,
+        "title": "[transitions] Do not remove cpus from configured target graph",
+        "user": {
+          "login": "nataliejameson",
+          "id": 6351854,
+          "node_id": "MDQ6VXNlcjYzNTE4NTQ=",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/nataliejameson",
+          "type": "User",
+          "site_admin": false
+        },
+        "labels": [],
+        "state": "closed",
+        "locked": false,
+        "assignee": null,
+        "assignees": [],
+        "milestone": null,
+        "comments": 0,
+        "created_at": "2023-04-14T16:36:52Z",
+        "updated_at": "2023-04-14T17:09:29Z",
+        "closed_at": "2023-04-14T17:09:28Z",
+        "author_association": "CONTRIBUTOR",
+        "active_lock_reason": null,
+        "draft": false,
+        "pull_request": {
+          "url": "https://api.github.com/repos/discord/rules_ios/pulls/2",
+          "merged_at": "2023-04-14T17:09:28Z"
+        },
+        "body": "Upstream converts ios_multi_cpus to a single value. rules_pods does\nnot. So when rules_pods objc_library rules depend on rules_ios rules,\nthey are considered different configurations, and we end up splitting\nthe configured target graph into two configurations. When swift, objc,\netc try to link in all objc_libraries later in the build, they then\ntry to link the same library twice, because the configured nodes are\nduplicated, and we run into duplicate symbol, module redefinition, etc\nerrors.\n\nIn theory, this could be reverted once the rules_ios migration is\ncomplete, but for our use case, it should not hurt anything being\npresent. This logic, also, only affects our opt builds that build\nfor multiple cpus. The development builds are unaffected.\n",
+        "reactions": {
+          "url": "https://api.github.com/repos/discord/rules_ios/issues/2/reactions",
+          "total_count": 0,
+          "+1": 0,
+          "-1": 0,
+          "laugh": 0,
+          "hooray": 0,
+          "confused": 0,
+          "heart": 0,
+          "rocket": 0,
+          "eyes": 0
+        },
+        "performed_via_github_app": null,
+        "state_reason": null
+      },
+      {
+        "url": "https://api.github.com/repos/discord/rules_ios/issues/1",
+        "id": 1642796088,
+        "node_id": "PR_kwDOI5jSX85NAhqL",
+        "number": 1,
+        "title": "[rules_ios] Add static library variant to allow rewriting headers",
+        "user": {
+          "login": "nataliejameson",
+          "id": 6351854,
+          "node_id": "MDQ6VXNlcjYzNTE4NTQ=",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/nataliejameson",
+          "type": "User",
+          "site_admin": false
+        },
+        "labels": [],
+        "state": "closed",
+        "locked": false,
+        "assignee": null,
+        "assignees": [],
+        "milestone": null,
+        "comments": 1,
+        "created_at": "2023-03-27T20:54:32Z",
+        "updated_at": "2023-03-28T19:21:17Z",
+        "closed_at": "2023-03-28T19:21:17Z",
+        "author_association": "CONTRIBUTOR",
+        "active_lock_reason": null,
+        "draft": false,
+        "pull_request": {
+          "url": "https://api.github.com/repos/discord/rules_ios/pulls/1",
+          "merged_at": "2023-03-28T19:21:17Z"
+        },
+        "body": "Add an `apple_static_library` that lets us map source files to arbitrary relative include paths by creating a link tree, and adding that link tree to the deps of a main library.\r\n\r\nThis also uses apple_library instead of apple_framework as the framework is frankly unnecessary for what we're trying to build for third party deps.\r\n\r\nTest Plan: Ported fmt locally to use this, and ran `clyde ios build`\r\n\r\nTasks:\r\n\r\nhttps://app.asana.com/0/1203960884932166/1204190072048691 \r\nhttps://app.asana.com/0/1203960884932166/1204190072362093",
+        "reactions": {
+          "url": "https://api.github.com/repos/discord/rules_ios/issues/1/reactions",
+          "total_count": 0,
+          "+1": 0,
+          "-1": 0,
+          "laugh": 0,
+          "hooray": 0,
+          "confused": 0,
+          "heart": 0,
+          "rocket": 0,
+          "eyes": 0
+        },
+        "performed_via_github_app": null,
+        "state_reason": null
+      }
+    ],
     "pullRequests": []
   }
 }
