@@ -17,12 +17,12 @@
   "fork": false,
   "url": "https://api.github.com/repos/discord/discord-api-docs",
   "created_at": "2016-03-29T17:11:53Z",
-  "updated_at": "2023-04-24T22:59:57Z",
+  "updated_at": "2023-04-25T17:52:49Z",
   "pushed_at": "2023-04-24T19:32:24Z",
   "homepage": "https://discord.com/developers/docs/intro",
   "size": 59767,
-  "stargazers_count": 5346,
-  "watchers_count": 5346,
+  "stargazers_count": 5347,
+  "watchers_count": 5347,
   "language": "Markdown",
   "has_issues": true,
   "has_projects": false,
@@ -33,7 +33,7 @@
   "forks_count": 1261,
   "archived": false,
   "disabled": false,
-  "open_issues_count": 174,
+  "open_issues_count": 173,
   "license": {
     "key": "other",
     "name": "Other",
@@ -52,8 +52,8 @@
   ],
   "visibility": "public",
   "forks": 1261,
-  "open_issues": 174,
-  "watchers": 5346,
+  "open_issues": 173,
+  "watchers": 5347,
   "default_branch": "main",
   "permissions": {
     "admin": false,
@@ -364,15 +364,15 @@
             "description": "click click click click click click click"
           }
         ],
-        "state": "open",
+        "state": "closed",
         "locked": false,
         "assignee": null,
         "assignees": [],
         "milestone": null,
-        "comments": 1,
+        "comments": 2,
         "created_at": "2023-04-25T09:11:17Z",
-        "updated_at": "2023-04-25T09:12:59Z",
-        "closed_at": null,
+        "updated_at": "2023-04-25T18:09:59Z",
+        "closed_at": "2023-04-25T18:09:59Z",
         "author_association": "NONE",
         "active_lock_reason": null,
         "body": "### Description\n\nen en apartado de introducción de la API de Discord, en las últimas líneas hay un <3 en vez de un \"have\".\n\n### Steps to Reproduce\n\nIn Discord mobile.\r\n1. click in your profile\r\n2. Advanced\r\n3. API of Discord\n\n### Expected Behavior\n\nque ponga \"have\"\n\n### Current Behavior\n\nque hay un <3 en vez de una palabra. \n\n### Screenshots/Videos\n\n_No response_\n\n### Client and System Information\n\nSamsung A71 versión de UI 5.1",
@@ -389,7 +389,7 @@
           "eyes": 0
         },
         "performed_via_github_app": null,
-        "state_reason": null
+        "state_reason": "completed"
       },
       {
         "url": "https://api.github.com/repos/discord/discord-api-docs/issues/6109",
