@@ -57,7 +57,16 @@
     "triage": false,
     "pull": false
   },
-  "branches": [],
+  "branches": [
+    {
+      "name": "master",
+      "commit": {
+        "sha": "2ae4b2888165a393dfb6382168825fddf00c27b9",
+        "url": "https://api.github.com/repos/discord/rapidxml/commits/2ae4b2888165a393dfb6382168825fddf00c27b9"
+      },
+      "protected": false
+    }
+  ],
   "last5": {
     "commits": [
       {
