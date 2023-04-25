@@ -57,56 +57,7 @@
     "triage": false,
     "pull": false
   },
-  "branches": [
-    {
-      "name": "0.1.x",
-      "commit": {
-        "sha": "6ce3e7904080c60cc6e12dba39b163f7a2f127c8",
-        "url": "https://api.github.com/repos/discord/react-native-webpack-server/commits/6ce3e7904080c60cc6e12dba39b163f7a2f127c8"
-      },
-      "protected": false
-    },
-    {
-      "name": "0.4-rc",
-      "commit": {
-        "sha": "097099cc4ffbd0108c549419a7b279c152471385",
-        "url": "https://api.github.com/repos/discord/react-native-webpack-server/commits/097099cc4ffbd0108c549419a7b279c152471385"
-      },
-      "protected": false
-    },
-    {
-      "name": "0.8.4-rc",
-      "commit": {
-        "sha": "1d3a7371cc0eb5c7ab8d3d2067e08082895d667e",
-        "url": "https://api.github.com/repos/discord/react-native-webpack-server/commits/1d3a7371cc0eb5c7ab8d3d2067e08082895d667e"
-      },
-      "protected": false
-    },
-    {
-      "name": "for-react-native-0.8",
-      "commit": {
-        "sha": "3ec41eca21bc0f013389073853414b7472646819",
-        "url": "https://api.github.com/repos/discord/react-native-webpack-server/commits/3ec41eca21bc0f013389073853414b7472646819"
-      },
-      "protected": false
-    },
-    {
-      "name": "master",
-      "commit": {
-        "sha": "21d4676745d3f07b092cfd087709214afcfac907",
-        "url": "https://api.github.com/repos/discord/react-native-webpack-server/commits/21d4676745d3f07b092cfd087709214afcfac907"
-      },
-      "protected": false
-    },
-    {
-      "name": "our-changes",
-      "commit": {
-        "sha": "62a318a25c28d06428a437cb27ebac80ac74068e",
-        "url": "https://api.github.com/repos/discord/react-native-webpack-server/commits/62a318a25c28d06428a437cb27ebac80ac74068e"
-      },
-      "protected": false
-    }
-  ],
+  "branches": [],
   "last5": {
     "commits": [
       {
