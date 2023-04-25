@@ -15290,6 +15290,7 @@ html.disable-forced-colors * {
 }
 
 .newMessagesBar-1hF-9G {
+    height: 32px;
     top: 0;
     border-radius: 0 0 8px 8px;
     background-color: var(--brand-experiment);
@@ -15805,7 +15806,7 @@ html.disable-forced-colors * {
 }
 
 .newTopicsBarContainer-MYPq92 {
-    max-height: 26px;
+    height: 32px;
     top: 0;
     border-radius: 0 0 8px 8px;
     background-color: var(--brand-experiment);
@@ -15953,6 +15954,15 @@ html.disable-forced-colors * {
     color: var(--interactive-active)
 }
 
+.topicsPillTextUnselected-3c2gbi {
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap
+}
+
 .topicsPillTextSelected-1WEvgM,
 .topicsPillTextUnselected-3c2gbi {
     display: -webkit-box;
@@ -15962,9 +15972,6 @@ html.disable-forced-colors * {
 
 .topicsPillTextSelected-1WEvgM {
     height: 26px;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
     border-radius: 16px;
     background-color: rgba(0, 0, 0, .1)
 }
@@ -16051,10 +16058,6 @@ html.disable-forced-colors * {
 
 .topicsDropdown-m34Uwy {
     top: 40px
-}
-
-.newTopicsBarDropdown-1W9Jra {
-    top: 28px
 }
 
 .topicsDropdownHeading-3qEbg4 {
@@ -152761,4 +152764,4 @@ html .invoiceCancelRow-dVOR64 {
     flex-direction: column
 }
 
-/*# sourceMappingURL=40532.7aa8ba7811050d85dd05.css.map*/
+/*# sourceMappingURL=40532.5d037124e8e595aac77a.css.map*/
