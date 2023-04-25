@@ -15809,6 +15809,20 @@ html.disable-forced-colors * {
     box-shadow: 0 0 0 hsl(var(--black-500-hsl)/0)
 }
 
+@media (max-width:914px) {
+    .newTopicsBarCompact-3DH2dp {
+        display: none
+    }
+
+    .newTopicsBarInitial-13a821 .newTopicsBarCenter-3nD0Ig {
+        left: 33%
+    }
+
+    .newTopicsBarText-3wNj93 .topicsPillDropdownCaret-2s6TcO {
+        padding-left: 0
+    }
+}
+
 .newTopicsBarTopicSection-QcIQlL {
     margin-left: 12px;
     display: -webkit-box;
@@ -15817,7 +15831,17 @@ html.disable-forced-colors * {
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
-    z-index: 2
+    z-index: 2;
+    max-width: 33%
+}
+
+.newTopicsBarTextClickable-2kEHkr {
+    overflow: hidden;
+    white-space: nowrap
+}
+
+.newTopicsBarTextClickable-2kEHkr:hover .topicsPillDropdownCaret-2s6TcO {
+    color: var(--interactive-active)
 }
 
 .newTopicsBarText-3wNj93 {
@@ -15826,12 +15850,8 @@ html.disable-forced-colors * {
     text-overflow: ellipsis
 }
 
-.newTopicsBarIcon-2wXHrU,
-.newTopicsBarText-3wNj93:hover .topicsPillDropdownCaret-2s6TcO {
-    color: var(--interactive-active)
-}
-
 .newTopicsBarIcon-2wXHrU {
+    color: var(--interactive-active);
     min-width: 16px;
     min-height: 16px;
     margin-right: 4px;
@@ -15865,10 +15885,6 @@ html.disable-forced-colors * {
 
 .newTopicsBarTextSelected-tFgvIG .topicsPillDropdownCaret-2s6TcO {
     color: var(--interactive-active)
-}
-
-.width40-3cBNC8 {
-    max-width: 40%
 }
 
 .flexEnd-3jCkt2 {
@@ -152570,4 +152586,4 @@ html .invoiceCancelRow-dVOR64 {
     flex-direction: column
 }
 
-/*# sourceMappingURL=40532.dd6129baa79fe43d4b27.css.map*/
+/*# sourceMappingURL=40532.8ac63cfdbf2d047b8239.css.map*/
