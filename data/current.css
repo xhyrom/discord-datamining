@@ -82062,7 +82062,13 @@ strong {
 }
 
 .max-width-30Gozx {
-    max-width: 660px
+    max-width: auto
+}
+
+@media (min-width:900px) {
+    .max-width-30Gozx {
+        max-width: 660px
+    }
 }
 
 .container-1iKw09 {
@@ -82098,7 +82104,10 @@ strong {
         flex-direction: row;
         -webkit-box-pack: justify;
         -ms-flex-pack: justify;
-        justify-content: space-between
+        justify-content: space-between;
+        -webkit-box-align: start;
+        -ms-flex-align: start;
+        align-items: flex-start
     }
 }
 
@@ -82107,12 +82116,24 @@ strong {
 }
 
 .description-n4JMli {
-    margin-bottom: 30px;
-    max-width: 343px
+    margin-bottom: 30px
+}
+
+@media (min-width:900px) {
+    .description-n4JMli {
+        max-width: 343px
+    }
 }
 
 .artContainer-1bqVms {
-    margin-left: 30px
+    margin-left: 32px;
+    margin-top: 32px
+}
+
+@media (min-width:900px) {
+    .artContainer-1bqVms {
+        margin-top: 0
+    }
 }
 
 .imageContainer-3-Ku7z {
@@ -152647,4 +152668,4 @@ html .invoiceCancelRow-dVOR64 {
     flex-direction: column
 }
 
-/*# sourceMappingURL=40532.7f709e293f94ad9c45cb.css.map*/
+/*# sourceMappingURL=40532.9f1d528f9b838d760c13.css.map*/
