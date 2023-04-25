@@ -358,7 +358,77 @@
         ]
       }
     ],
-    "releases": [],
+    "releases": [
+      {
+        "url": "https://api.github.com/repos/discord/lilliput/releases/11249937",
+        "id": 11249937,
+        "author": {
+          "login": "brian-armstrong-discord",
+          "id": 25939803,
+          "node_id": "MDQ6VXNlcjI1OTM5ODAz",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/brian-armstrong-discord",
+          "type": "User",
+          "site_admin": false
+        },
+        "node_id": "MDc6UmVsZWFzZTExMjQ5OTM3",
+        "tag_name": "v1.2",
+        "target_commitish": "master",
+        "name": "Audio",
+        "draft": false,
+        "prerelease": false,
+        "created_at": "2018-05-21T17:57:49Z",
+        "published_at": "2018-05-30T21:23:50Z",
+        "assets": [],
+        "body": "lilliput now supports Audio. Also, enable -fPIC in builds for greater compatibility."
+      },
+      {
+        "url": "https://api.github.com/repos/discord/lilliput/releases/9619853",
+        "id": 9619853,
+        "author": {
+          "login": "brian-armstrong-discord",
+          "id": 25939803,
+          "node_id": "MDQ6VXNlcjI1OTM5ODAz",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/brian-armstrong-discord",
+          "type": "User",
+          "site_admin": false
+        },
+        "node_id": "MDc6UmVsZWFzZTk2MTk4NTM=",
+        "tag_name": "v1.1",
+        "target_commitish": "master",
+        "name": "Fixes for outstanding bugs",
+        "draft": false,
+        "prerelease": false,
+        "created_at": "2018-02-10T01:23:49Z",
+        "published_at": "2018-02-10T01:25:18Z",
+        "assets": [],
+        "body": "This change forces lilliput's output to never exceed 8 bits per channel, which isn't supported by many image containers. Also, it includes some tweaks to the libavcodec wrapper to support more videos."
+      },
+      {
+        "url": "https://api.github.com/repos/discord/lilliput/releases/9618124",
+        "id": 9618124,
+        "author": {
+          "login": "brian-armstrong-discord",
+          "id": 25939803,
+          "node_id": "MDQ6VXNlcjI1OTM5ODAz",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/brian-armstrong-discord",
+          "type": "User",
+          "site_admin": false
+        },
+        "node_id": "MDc6UmVsZWFzZTk2MTgxMjQ=",
+        "tag_name": "v1.0",
+        "target_commitish": "master",
+        "name": "Lilliput 1.0",
+        "draft": false,
+        "prerelease": false,
+        "created_at": "2018-02-09T21:58:14Z",
+        "published_at": "2018-02-09T21:59:32Z",
+        "assets": [],
+        "body": "Lilliput is cool and you should use it."
+      }
+    ],
     "issues": [
       {
         "url": "https://api.github.com/repos/discord/lilliput/issues/126",
@@ -601,6 +671,1092 @@
         "state_reason": null
       }
     ],
-    "pullRequests": []
+    "pullRequests": [
+      {
+        "url": "https://api.github.com/repos/discord/lilliput/pulls/126",
+        "id": 1317126140,
+        "node_id": "PR_kwDOBSIeiM5Ogb_8",
+        "number": 126,
+        "state": "closed",
+        "locked": false,
+        "title": "Set contentLength field in all ImageHeaders",
+        "user": {
+          "login": "walruscow",
+          "id": 4916482,
+          "node_id": "MDQ6VXNlcjQ5MTY0ODI=",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/walruscow",
+          "type": "User",
+          "site_admin": false
+        },
+        "body": "Didn't notice these others existed and would default to 0. Let's set real values.",
+        "created_at": "2023-04-17T18:21:51Z",
+        "updated_at": "2023-04-17T18:40:18Z",
+        "closed_at": "2023-04-17T18:40:18Z",
+        "merged_at": "2023-04-17T18:40:18Z",
+        "merge_commit_sha": "5787bc9f933d0e6b3b1401c1b850eac9a5956e35",
+        "assignee": null,
+        "assignees": [],
+        "requested_reviewers": [],
+        "requested_teams": [],
+        "labels": [],
+        "milestone": null,
+        "draft": false,
+        "head": {
+          "label": "discord:wmcd/length",
+          "ref": "wmcd/length",
+          "sha": "d8d3ecc34e13fc31c71a7eaa3064f281232e6eff",
+          "user": {
+            "login": "discord",
+            "id": 1965106,
+            "node_id": "MDEyOk9yZ2FuaXphdGlvbjE5NjUxMDY=",
+            "gravatar_id": "",
+            "url": "https://api.github.com/users/discord",
+            "type": "Organization",
+            "site_admin": false
+          },
+          "repo": {
+            "id": 86122120,
+            "node_id": "MDEwOlJlcG9zaXRvcnk4NjEyMjEyMA==",
+            "name": "lilliput",
+            "full_name": "discord/lilliput",
+            "private": false,
+            "owner": {
+              "login": "discord",
+              "id": 1965106,
+              "node_id": "MDEyOk9yZ2FuaXphdGlvbjE5NjUxMDY=",
+              "gravatar_id": "",
+              "url": "https://api.github.com/users/discord",
+              "type": "Organization",
+              "site_admin": false
+            },
+            "description": "Resize images and animated GIFs in Go",
+            "fork": false,
+            "url": "https://api.github.com/repos/discord/lilliput",
+            "created_at": "2017-03-25T00:46:39Z",
+            "updated_at": "2023-04-25T05:12:36Z",
+            "pushed_at": "2023-04-17T18:40:18Z",
+            "homepage": "https://blog.discordapp.com/how-discord-resizes-150-million-images-every-day-with-go-and-c-c9e98731c65d",
+            "size": 194487,
+            "stargazers_count": 1838,
+            "watchers_count": 1838,
+            "language": "C++",
+            "has_issues": true,
+            "has_projects": false,
+            "has_downloads": true,
+            "has_wiki": false,
+            "has_pages": false,
+            "has_discussions": false,
+            "forks_count": 116,
+            "archived": false,
+            "disabled": false,
+            "open_issues_count": 35,
+            "license": {
+              "key": "other",
+              "name": "Other",
+              "spdx_id": "NOASSERTION",
+              "url": null,
+              "node_id": "MDc6TGljZW5zZTA="
+            },
+            "allow_forking": true,
+            "is_template": false,
+            "web_commit_signoff_required": false,
+            "topics": [
+              "cgo",
+              "crop",
+              "gif",
+              "golang",
+              "image",
+              "image-resizer",
+              "imageops",
+              "images",
+              "jpeg",
+              "png",
+              "resize-images",
+              "resized-images",
+              "thumbnail",
+              "webp"
+            ],
+            "visibility": "public",
+            "forks": 116,
+            "open_issues": 35,
+            "watchers": 1838,
+            "default_branch": "master"
+          }
+        },
+        "base": {
+          "label": "discord:master",
+          "ref": "master",
+          "sha": "b084235d2abb83198a68daea2c2153921aaff7e1",
+          "user": {
+            "login": "discord",
+            "id": 1965106,
+            "node_id": "MDEyOk9yZ2FuaXphdGlvbjE5NjUxMDY=",
+            "gravatar_id": "",
+            "url": "https://api.github.com/users/discord",
+            "type": "Organization",
+            "site_admin": false
+          },
+          "repo": {
+            "id": 86122120,
+            "node_id": "MDEwOlJlcG9zaXRvcnk4NjEyMjEyMA==",
+            "name": "lilliput",
+            "full_name": "discord/lilliput",
+            "private": false,
+            "owner": {
+              "login": "discord",
+              "id": 1965106,
+              "node_id": "MDEyOk9yZ2FuaXphdGlvbjE5NjUxMDY=",
+              "gravatar_id": "",
+              "url": "https://api.github.com/users/discord",
+              "type": "Organization",
+              "site_admin": false
+            },
+            "description": "Resize images and animated GIFs in Go",
+            "fork": false,
+            "url": "https://api.github.com/repos/discord/lilliput",
+            "created_at": "2017-03-25T00:46:39Z",
+            "updated_at": "2023-04-25T05:12:36Z",
+            "pushed_at": "2023-04-17T18:40:18Z",
+            "homepage": "https://blog.discordapp.com/how-discord-resizes-150-million-images-every-day-with-go-and-c-c9e98731c65d",
+            "size": 194487,
+            "stargazers_count": 1838,
+            "watchers_count": 1838,
+            "language": "C++",
+            "has_issues": true,
+            "has_projects": false,
+            "has_downloads": true,
+            "has_wiki": false,
+            "has_pages": false,
+            "has_discussions": false,
+            "forks_count": 116,
+            "archived": false,
+            "disabled": false,
+            "open_issues_count": 35,
+            "license": {
+              "key": "other",
+              "name": "Other",
+              "spdx_id": "NOASSERTION",
+              "url": null,
+              "node_id": "MDc6TGljZW5zZTA="
+            },
+            "allow_forking": true,
+            "is_template": false,
+            "web_commit_signoff_required": false,
+            "topics": [
+              "cgo",
+              "crop",
+              "gif",
+              "golang",
+              "image",
+              "image-resizer",
+              "imageops",
+              "images",
+              "jpeg",
+              "png",
+              "resize-images",
+              "resized-images",
+              "thumbnail",
+              "webp"
+            ],
+            "visibility": "public",
+            "forks": 116,
+            "open_issues": 35,
+            "watchers": 1838,
+            "default_branch": "master"
+          }
+        },
+        "_links": {
+          "self": {
+            "href": "https://api.github.com/repos/discord/lilliput/pulls/126"
+          },
+          "html": {
+            "href": "https://github.com/discord/lilliput/pull/126"
+          },
+          "issue": {
+            "href": "https://api.github.com/repos/discord/lilliput/issues/126"
+          },
+          "comments": {
+            "href": "https://api.github.com/repos/discord/lilliput/issues/126/comments"
+          },
+          "review_comments": {
+            "href": "https://api.github.com/repos/discord/lilliput/pulls/126/comments"
+          },
+          "review_comment": {
+            "href": "https://api.github.com/repos/discord/lilliput/pulls/comments{/number}"
+          },
+          "commits": {
+            "href": "https://api.github.com/repos/discord/lilliput/pulls/126/commits"
+          },
+          "statuses": {
+            "href": "https://api.github.com/repos/discord/lilliput/statuses/d8d3ecc34e13fc31c71a7eaa3064f281232e6eff"
+          }
+        },
+        "author_association": "COLLABORATOR",
+        "auto_merge": null,
+        "active_lock_reason": null
+      },
+      {
+        "url": "https://api.github.com/repos/discord/lilliput/pulls/125",
+        "id": 1311210121,
+        "node_id": "PR_kwDOBSIeiM5OJ3qJ",
+        "number": 125,
+        "state": "closed",
+        "locked": false,
+        "title": "[lilliput] Add jpeg content length detection",
+        "user": {
+          "login": "walruscow",
+          "id": 4916482,
+          "node_id": "MDQ6VXNlcjQ5MTY0ODI=",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/walruscow",
+          "type": "User",
+          "site_admin": false
+        },
+        "body": "Walk jpeg segments to find EOI and report content length accurately Sadly this seems to require a linear scan of most of the content\r\n\r\na jpeg file consists of a sequence of segments\r\n- segments are delimited by 0xFF, then a single non-zero byte for type. but ECS segment is not delimited by 0xFF\r\n- EOI segment type is is 0xD9 while SOI is 0xD8\r\n- most segments have 2 bytes for size following the type, but not the actual image data in entropy coded segments (ECS)\r\n- in ECS, 0xFF may occur naturally and is marked as data instead of a new segment by adding 0x00 immediately after the 0xFF\r\n\r\nAdd a couple unit tests for jpeg data\r\n\r\n- https://github.com/corkami/formats/blob/master/image/jpeg.md\r\n- https://en.wikipedia.org/wiki/JPEG#Syntax_and_structure",
+        "created_at": "2023-04-12T17:17:26Z",
+        "updated_at": "2023-04-13T19:01:54Z",
+        "closed_at": "2023-04-12T21:37:40Z",
+        "merged_at": "2023-04-12T21:37:40Z",
+        "merge_commit_sha": "b084235d2abb83198a68daea2c2153921aaff7e1",
+        "assignee": null,
+        "assignees": [],
+        "requested_reviewers": [
+          {
+            "login": "slam",
+            "id": 50348,
+            "node_id": "MDQ6VXNlcjUwMzQ4",
+            "gravatar_id": "",
+            "url": "https://api.github.com/users/slam",
+            "type": "User",
+            "site_admin": false
+          }
+        ],
+        "requested_teams": [],
+        "labels": [],
+        "milestone": null,
+        "draft": false,
+        "head": {
+          "label": "discord:wmcd/jpeg-eoi",
+          "ref": "wmcd/jpeg-eoi",
+          "sha": "6ad985f1e58e5d6d281c80c962e96200dcac25c6",
+          "user": {
+            "login": "discord",
+            "id": 1965106,
+            "node_id": "MDEyOk9yZ2FuaXphdGlvbjE5NjUxMDY=",
+            "gravatar_id": "",
+            "url": "https://api.github.com/users/discord",
+            "type": "Organization",
+            "site_admin": false
+          },
+          "repo": {
+            "id": 86122120,
+            "node_id": "MDEwOlJlcG9zaXRvcnk4NjEyMjEyMA==",
+            "name": "lilliput",
+            "full_name": "discord/lilliput",
+            "private": false,
+            "owner": {
+              "login": "discord",
+              "id": 1965106,
+              "node_id": "MDEyOk9yZ2FuaXphdGlvbjE5NjUxMDY=",
+              "gravatar_id": "",
+              "url": "https://api.github.com/users/discord",
+              "type": "Organization",
+              "site_admin": false
+            },
+            "description": "Resize images and animated GIFs in Go",
+            "fork": false,
+            "url": "https://api.github.com/repos/discord/lilliput",
+            "created_at": "2017-03-25T00:46:39Z",
+            "updated_at": "2023-04-25T05:12:36Z",
+            "pushed_at": "2023-04-17T18:40:18Z",
+            "homepage": "https://blog.discordapp.com/how-discord-resizes-150-million-images-every-day-with-go-and-c-c9e98731c65d",
+            "size": 194487,
+            "stargazers_count": 1838,
+            "watchers_count": 1838,
+            "language": "C++",
+            "has_issues": true,
+            "has_projects": false,
+            "has_downloads": true,
+            "has_wiki": false,
+            "has_pages": false,
+            "has_discussions": false,
+            "forks_count": 116,
+            "archived": false,
+            "disabled": false,
+            "open_issues_count": 35,
+            "license": {
+              "key": "other",
+              "name": "Other",
+              "spdx_id": "NOASSERTION",
+              "url": null,
+              "node_id": "MDc6TGljZW5zZTA="
+            },
+            "allow_forking": true,
+            "is_template": false,
+            "web_commit_signoff_required": false,
+            "topics": [
+              "cgo",
+              "crop",
+              "gif",
+              "golang",
+              "image",
+              "image-resizer",
+              "imageops",
+              "images",
+              "jpeg",
+              "png",
+              "resize-images",
+              "resized-images",
+              "thumbnail",
+              "webp"
+            ],
+            "visibility": "public",
+            "forks": 116,
+            "open_issues": 35,
+            "watchers": 1838,
+            "default_branch": "master"
+          }
+        },
+        "base": {
+          "label": "discord:master",
+          "ref": "master",
+          "sha": "66d9d09f35929e2d542e8a3269820ce0666968ab",
+          "user": {
+            "login": "discord",
+            "id": 1965106,
+            "node_id": "MDEyOk9yZ2FuaXphdGlvbjE5NjUxMDY=",
+            "gravatar_id": "",
+            "url": "https://api.github.com/users/discord",
+            "type": "Organization",
+            "site_admin": false
+          },
+          "repo": {
+            "id": 86122120,
+            "node_id": "MDEwOlJlcG9zaXRvcnk4NjEyMjEyMA==",
+            "name": "lilliput",
+            "full_name": "discord/lilliput",
+            "private": false,
+            "owner": {
+              "login": "discord",
+              "id": 1965106,
+              "node_id": "MDEyOk9yZ2FuaXphdGlvbjE5NjUxMDY=",
+              "gravatar_id": "",
+              "url": "https://api.github.com/users/discord",
+              "type": "Organization",
+              "site_admin": false
+            },
+            "description": "Resize images and animated GIFs in Go",
+            "fork": false,
+            "url": "https://api.github.com/repos/discord/lilliput",
+            "created_at": "2017-03-25T00:46:39Z",
+            "updated_at": "2023-04-25T05:12:36Z",
+            "pushed_at": "2023-04-17T18:40:18Z",
+            "homepage": "https://blog.discordapp.com/how-discord-resizes-150-million-images-every-day-with-go-and-c-c9e98731c65d",
+            "size": 194487,
+            "stargazers_count": 1838,
+            "watchers_count": 1838,
+            "language": "C++",
+            "has_issues": true,
+            "has_projects": false,
+            "has_downloads": true,
+            "has_wiki": false,
+            "has_pages": false,
+            "has_discussions": false,
+            "forks_count": 116,
+            "archived": false,
+            "disabled": false,
+            "open_issues_count": 35,
+            "license": {
+              "key": "other",
+              "name": "Other",
+              "spdx_id": "NOASSERTION",
+              "url": null,
+              "node_id": "MDc6TGljZW5zZTA="
+            },
+            "allow_forking": true,
+            "is_template": false,
+            "web_commit_signoff_required": false,
+            "topics": [
+              "cgo",
+              "crop",
+              "gif",
+              "golang",
+              "image",
+              "image-resizer",
+              "imageops",
+              "images",
+              "jpeg",
+              "png",
+              "resize-images",
+              "resized-images",
+              "thumbnail",
+              "webp"
+            ],
+            "visibility": "public",
+            "forks": 116,
+            "open_issues": 35,
+            "watchers": 1838,
+            "default_branch": "master"
+          }
+        },
+        "_links": {
+          "self": {
+            "href": "https://api.github.com/repos/discord/lilliput/pulls/125"
+          },
+          "html": {
+            "href": "https://github.com/discord/lilliput/pull/125"
+          },
+          "issue": {
+            "href": "https://api.github.com/repos/discord/lilliput/issues/125"
+          },
+          "comments": {
+            "href": "https://api.github.com/repos/discord/lilliput/issues/125/comments"
+          },
+          "review_comments": {
+            "href": "https://api.github.com/repos/discord/lilliput/pulls/125/comments"
+          },
+          "review_comment": {
+            "href": "https://api.github.com/repos/discord/lilliput/pulls/comments{/number}"
+          },
+          "commits": {
+            "href": "https://api.github.com/repos/discord/lilliput/pulls/125/commits"
+          },
+          "statuses": {
+            "href": "https://api.github.com/repos/discord/lilliput/statuses/6ad985f1e58e5d6d281c80c962e96200dcac25c6"
+          }
+        },
+        "author_association": "COLLABORATOR",
+        "auto_merge": null,
+        "active_lock_reason": null
+      },
+      {
+        "url": "https://api.github.com/repos/discord/lilliput/pulls/124",
+        "id": 1309698979,
+        "node_id": "PR_kwDOBSIeiM5OEGuj",
+        "number": 124,
+        "state": "closed",
+        "locked": false,
+        "title": "[lilliput] Support detecting early IEND in PNG files",
+        "user": {
+          "login": "walruscow",
+          "id": 4916482,
+          "node_id": "MDQ6VXNlcjQ5MTY0ODI=",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/walruscow",
+          "type": "User",
+          "site_admin": false
+        },
+        "body": "- Add unit test for APNG detection\r\n- Split out utility for walking PNG chunks as some kind of \"iterator\"\r\n- Add unit tests for that and for detecting the content length of PNG\r\n\r\nTest with `go test`\r\n\r\nNext, will add similar thing for jpeg EOI",
+        "created_at": "2023-04-11T21:35:29Z",
+        "updated_at": "2023-04-11T21:52:40Z",
+        "closed_at": "2023-04-11T21:52:33Z",
+        "merged_at": "2023-04-11T21:52:33Z",
+        "merge_commit_sha": "66d9d09f35929e2d542e8a3269820ce0666968ab",
+        "assignee": null,
+        "assignees": [],
+        "requested_reviewers": [],
+        "requested_teams": [],
+        "labels": [],
+        "milestone": null,
+        "draft": false,
+        "head": {
+          "label": "walruscow:wmcd/png-iend",
+          "ref": "wmcd/png-iend",
+          "sha": "48ef3a3e85280910b148b0c48953ed9daaeb9876",
+          "user": {
+            "login": "walruscow",
+            "id": 4916482,
+            "node_id": "MDQ6VXNlcjQ5MTY0ODI=",
+            "gravatar_id": "",
+            "url": "https://api.github.com/users/walruscow",
+            "type": "User",
+            "site_admin": false
+          },
+          "repo": {
+            "id": 626634279,
+            "node_id": "R_kgDOJVmuJw",
+            "name": "lilliput",
+            "full_name": "walruscow/lilliput",
+            "private": false,
+            "owner": {
+              "login": "walruscow",
+              "id": 4916482,
+              "node_id": "MDQ6VXNlcjQ5MTY0ODI=",
+              "gravatar_id": "",
+              "url": "https://api.github.com/users/walruscow",
+              "type": "User",
+              "site_admin": false
+            },
+            "description": "Resize images and animated GIFs in Go",
+            "fork": true,
+            "url": "https://api.github.com/repos/walruscow/lilliput",
+            "created_at": "2023-04-11T21:32:42Z",
+            "updated_at": "2023-04-06T09:19:46Z",
+            "pushed_at": "2023-04-11T21:52:40Z",
+            "homepage": "https://blog.discordapp.com/how-discord-resizes-150-million-images-every-day-with-go-and-c-c9e98731c65d",
+            "size": 176682,
+            "stargazers_count": 0,
+            "watchers_count": 0,
+            "language": null,
+            "has_issues": false,
+            "has_projects": true,
+            "has_downloads": true,
+            "has_wiki": false,
+            "has_pages": false,
+            "has_discussions": false,
+            "forks_count": 0,
+            "archived": false,
+            "disabled": false,
+            "open_issues_count": 0,
+            "license": {
+              "key": "other",
+              "name": "Other",
+              "spdx_id": "NOASSERTION",
+              "url": null,
+              "node_id": "MDc6TGljZW5zZTA="
+            },
+            "allow_forking": true,
+            "is_template": false,
+            "web_commit_signoff_required": false,
+            "topics": [],
+            "visibility": "public",
+            "forks": 0,
+            "open_issues": 0,
+            "watchers": 0,
+            "default_branch": "master"
+          }
+        },
+        "base": {
+          "label": "discord:master",
+          "ref": "master",
+          "sha": "2097b05c3fb84236eecd093456ddfb1b3a043630",
+          "user": {
+            "login": "discord",
+            "id": 1965106,
+            "node_id": "MDEyOk9yZ2FuaXphdGlvbjE5NjUxMDY=",
+            "gravatar_id": "",
+            "url": "https://api.github.com/users/discord",
+            "type": "Organization",
+            "site_admin": false
+          },
+          "repo": {
+            "id": 86122120,
+            "node_id": "MDEwOlJlcG9zaXRvcnk4NjEyMjEyMA==",
+            "name": "lilliput",
+            "full_name": "discord/lilliput",
+            "private": false,
+            "owner": {
+              "login": "discord",
+              "id": 1965106,
+              "node_id": "MDEyOk9yZ2FuaXphdGlvbjE5NjUxMDY=",
+              "gravatar_id": "",
+              "url": "https://api.github.com/users/discord",
+              "type": "Organization",
+              "site_admin": false
+            },
+            "description": "Resize images and animated GIFs in Go",
+            "fork": false,
+            "url": "https://api.github.com/repos/discord/lilliput",
+            "created_at": "2017-03-25T00:46:39Z",
+            "updated_at": "2023-04-25T05:12:36Z",
+            "pushed_at": "2023-04-17T18:40:18Z",
+            "homepage": "https://blog.discordapp.com/how-discord-resizes-150-million-images-every-day-with-go-and-c-c9e98731c65d",
+            "size": 194487,
+            "stargazers_count": 1838,
+            "watchers_count": 1838,
+            "language": "C++",
+            "has_issues": true,
+            "has_projects": false,
+            "has_downloads": true,
+            "has_wiki": false,
+            "has_pages": false,
+            "has_discussions": false,
+            "forks_count": 116,
+            "archived": false,
+            "disabled": false,
+            "open_issues_count": 35,
+            "license": {
+              "key": "other",
+              "name": "Other",
+              "spdx_id": "NOASSERTION",
+              "url": null,
+              "node_id": "MDc6TGljZW5zZTA="
+            },
+            "allow_forking": true,
+            "is_template": false,
+            "web_commit_signoff_required": false,
+            "topics": [
+              "cgo",
+              "crop",
+              "gif",
+              "golang",
+              "image",
+              "image-resizer",
+              "imageops",
+              "images",
+              "jpeg",
+              "png",
+              "resize-images",
+              "resized-images",
+              "thumbnail",
+              "webp"
+            ],
+            "visibility": "public",
+            "forks": 116,
+            "open_issues": 35,
+            "watchers": 1838,
+            "default_branch": "master"
+          }
+        },
+        "_links": {
+          "self": {
+            "href": "https://api.github.com/repos/discord/lilliput/pulls/124"
+          },
+          "html": {
+            "href": "https://github.com/discord/lilliput/pull/124"
+          },
+          "issue": {
+            "href": "https://api.github.com/repos/discord/lilliput/issues/124"
+          },
+          "comments": {
+            "href": "https://api.github.com/repos/discord/lilliput/issues/124/comments"
+          },
+          "review_comments": {
+            "href": "https://api.github.com/repos/discord/lilliput/pulls/124/comments"
+          },
+          "review_comment": {
+            "href": "https://api.github.com/repos/discord/lilliput/pulls/comments{/number}"
+          },
+          "commits": {
+            "href": "https://api.github.com/repos/discord/lilliput/pulls/124/commits"
+          },
+          "statuses": {
+            "href": "https://api.github.com/repos/discord/lilliput/statuses/48ef3a3e85280910b148b0c48953ed9daaeb9876"
+          }
+        },
+        "author_association": "COLLABORATOR",
+        "auto_merge": null,
+        "active_lock_reason": null
+      },
+      {
+        "url": "https://api.github.com/repos/discord/lilliput/pulls/123",
+        "id": 1224008974,
+        "node_id": "PR_kwDOBSIeiM5I9OUO",
+        "number": 123,
+        "state": "open",
+        "locked": false,
+        "title": "Deps Update: 2023-01-31 23:06:43+00:00",
+        "user": {
+          "login": "discord-automation",
+          "id": 28119480,
+          "node_id": "MDQ6VXNlcjI4MTE5NDgw",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/discord-automation",
+          "type": "User",
+          "site_admin": false
+        },
+        "body": "CI automated dependency update",
+        "created_at": "2023-01-31T23:06:56Z",
+        "updated_at": "2023-01-31T23:06:56Z",
+        "closed_at": null,
+        "merged_at": null,
+        "merge_commit_sha": "11ba3cb84a00b28e3a3c3a3119df9b33fdc6d5e2",
+        "assignee": null,
+        "assignees": [],
+        "requested_reviewers": [],
+        "requested_teams": [],
+        "labels": [],
+        "milestone": null,
+        "draft": false,
+        "head": {
+          "label": "discord-automation:build/deps-update-20230131_2306",
+          "ref": "build/deps-update-20230131_2306",
+          "sha": "a1d95e1d586b04b6ad58319e4a600d7b7ac1a921",
+          "user": {
+            "login": "discord-automation",
+            "id": 28119480,
+            "node_id": "MDQ6VXNlcjI4MTE5NDgw",
+            "gravatar_id": "",
+            "url": "https://api.github.com/users/discord-automation",
+            "type": "User",
+            "site_admin": false
+          },
+          "repo": {
+            "id": 220111140,
+            "node_id": "MDEwOlJlcG9zaXRvcnkyMjAxMTExNDA=",
+            "name": "lilliput",
+            "full_name": "discord-automation/lilliput",
+            "private": false,
+            "owner": {
+              "login": "discord-automation",
+              "id": 28119480,
+              "node_id": "MDQ6VXNlcjI4MTE5NDgw",
+              "gravatar_id": "",
+              "url": "https://api.github.com/users/discord-automation",
+              "type": "User",
+              "site_admin": false
+            },
+            "description": "Resize images and animated GIFs in Go",
+            "fork": true,
+            "url": "https://api.github.com/repos/discord-automation/lilliput",
+            "created_at": "2019-11-06T23:39:41Z",
+            "updated_at": "2022-08-19T20:03:54Z",
+            "pushed_at": "2023-01-31T23:06:55Z",
+            "homepage": "https://blog.discordapp.com/how-discord-resizes-150-million-images-every-day-with-go-and-c-c9e98731c65d",
+            "size": 197481,
+            "stargazers_count": 0,
+            "watchers_count": 0,
+            "language": "C++",
+            "has_issues": false,
+            "has_projects": true,
+            "has_downloads": true,
+            "has_wiki": false,
+            "has_pages": false,
+            "has_discussions": false,
+            "forks_count": 0,
+            "archived": false,
+            "disabled": false,
+            "open_issues_count": 0,
+            "license": {
+              "key": "other",
+              "name": "Other",
+              "spdx_id": "NOASSERTION",
+              "url": null,
+              "node_id": "MDc6TGljZW5zZTA="
+            },
+            "allow_forking": true,
+            "is_template": false,
+            "web_commit_signoff_required": false,
+            "topics": [],
+            "visibility": "public",
+            "forks": 0,
+            "open_issues": 0,
+            "watchers": 0,
+            "default_branch": "master"
+          }
+        },
+        "base": {
+          "label": "discord:master",
+          "ref": "master",
+          "sha": "2097b05c3fb84236eecd093456ddfb1b3a043630",
+          "user": {
+            "login": "discord",
+            "id": 1965106,
+            "node_id": "MDEyOk9yZ2FuaXphdGlvbjE5NjUxMDY=",
+            "gravatar_id": "",
+            "url": "https://api.github.com/users/discord",
+            "type": "Organization",
+            "site_admin": false
+          },
+          "repo": {
+            "id": 86122120,
+            "node_id": "MDEwOlJlcG9zaXRvcnk4NjEyMjEyMA==",
+            "name": "lilliput",
+            "full_name": "discord/lilliput",
+            "private": false,
+            "owner": {
+              "login": "discord",
+              "id": 1965106,
+              "node_id": "MDEyOk9yZ2FuaXphdGlvbjE5NjUxMDY=",
+              "gravatar_id": "",
+              "url": "https://api.github.com/users/discord",
+              "type": "Organization",
+              "site_admin": false
+            },
+            "description": "Resize images and animated GIFs in Go",
+            "fork": false,
+            "url": "https://api.github.com/repos/discord/lilliput",
+            "created_at": "2017-03-25T00:46:39Z",
+            "updated_at": "2023-04-25T05:12:36Z",
+            "pushed_at": "2023-04-17T18:40:18Z",
+            "homepage": "https://blog.discordapp.com/how-discord-resizes-150-million-images-every-day-with-go-and-c-c9e98731c65d",
+            "size": 194487,
+            "stargazers_count": 1838,
+            "watchers_count": 1838,
+            "language": "C++",
+            "has_issues": true,
+            "has_projects": false,
+            "has_downloads": true,
+            "has_wiki": false,
+            "has_pages": false,
+            "has_discussions": false,
+            "forks_count": 116,
+            "archived": false,
+            "disabled": false,
+            "open_issues_count": 35,
+            "license": {
+              "key": "other",
+              "name": "Other",
+              "spdx_id": "NOASSERTION",
+              "url": null,
+              "node_id": "MDc6TGljZW5zZTA="
+            },
+            "allow_forking": true,
+            "is_template": false,
+            "web_commit_signoff_required": false,
+            "topics": [
+              "cgo",
+              "crop",
+              "gif",
+              "golang",
+              "image",
+              "image-resizer",
+              "imageops",
+              "images",
+              "jpeg",
+              "png",
+              "resize-images",
+              "resized-images",
+              "thumbnail",
+              "webp"
+            ],
+            "visibility": "public",
+            "forks": 116,
+            "open_issues": 35,
+            "watchers": 1838,
+            "default_branch": "master"
+          }
+        },
+        "_links": {
+          "self": {
+            "href": "https://api.github.com/repos/discord/lilliput/pulls/123"
+          },
+          "html": {
+            "href": "https://github.com/discord/lilliput/pull/123"
+          },
+          "issue": {
+            "href": "https://api.github.com/repos/discord/lilliput/issues/123"
+          },
+          "comments": {
+            "href": "https://api.github.com/repos/discord/lilliput/issues/123/comments"
+          },
+          "review_comments": {
+            "href": "https://api.github.com/repos/discord/lilliput/pulls/123/comments"
+          },
+          "review_comment": {
+            "href": "https://api.github.com/repos/discord/lilliput/pulls/comments{/number}"
+          },
+          "commits": {
+            "href": "https://api.github.com/repos/discord/lilliput/pulls/123/commits"
+          },
+          "statuses": {
+            "href": "https://api.github.com/repos/discord/lilliput/statuses/a1d95e1d586b04b6ad58319e4a600d7b7ac1a921"
+          }
+        },
+        "author_association": "CONTRIBUTOR",
+        "auto_merge": null,
+        "active_lock_reason": null
+      },
+      {
+        "url": "https://api.github.com/repos/discord/lilliput/pulls/122",
+        "id": 1222598287,
+        "node_id": "PR_kwDOBSIeiM5I316P",
+        "number": 122,
+        "state": "closed",
+        "locked": false,
+        "title": "Build with Opus support.",
+        "user": {
+          "login": "tpcstld",
+          "id": 5456182,
+          "node_id": "MDQ6VXNlcjU0NTYxODI=",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/tpcstld",
+          "type": "User",
+          "site_admin": false
+        },
+        "body": "# Summary\r\n\r\nThis is essentially https://github.com/discord/lilliput/pull/104 but for Opus. Is there anything additional that I need to do lemme know.",
+        "created_at": "2023-01-31T02:45:11Z",
+        "updated_at": "2023-01-31T03:14:38Z",
+        "closed_at": "2023-01-31T03:14:33Z",
+        "merged_at": "2023-01-31T03:14:33Z",
+        "merge_commit_sha": "2097b05c3fb84236eecd093456ddfb1b3a043630",
+        "assignee": null,
+        "assignees": [],
+        "requested_reviewers": [],
+        "requested_teams": [],
+        "labels": [],
+        "milestone": null,
+        "draft": false,
+        "head": {
+          "label": "tpcstld:tpcstld/opus",
+          "ref": "tpcstld/opus",
+          "sha": "d9864bd1fce9f028a3c14fa05f84f1881303a9b0",
+          "user": {
+            "login": "tpcstld",
+            "id": 5456182,
+            "node_id": "MDQ6VXNlcjU0NTYxODI=",
+            "gravatar_id": "",
+            "url": "https://api.github.com/users/tpcstld",
+            "type": "User",
+            "site_admin": false
+          },
+          "repo": {
+            "id": 595409880,
+            "node_id": "R_kgDOI3072A",
+            "name": "lilliput",
+            "full_name": "tpcstld/lilliput",
+            "private": false,
+            "owner": {
+              "login": "tpcstld",
+              "id": 5456182,
+              "node_id": "MDQ6VXNlcjU0NTYxODI=",
+              "gravatar_id": "",
+              "url": "https://api.github.com/users/tpcstld",
+              "type": "User",
+              "site_admin": false
+            },
+            "description": "Resize images and animated GIFs in Go",
+            "fork": true,
+            "url": "https://api.github.com/repos/tpcstld/lilliput",
+            "created_at": "2023-01-31T02:32:01Z",
+            "updated_at": "2023-01-28T02:05:10Z",
+            "pushed_at": "2023-01-31T03:14:38Z",
+            "homepage": "https://blog.discordapp.com/how-discord-resizes-150-million-images-every-day-with-go-and-c-c9e98731c65d",
+            "size": 174495,
+            "stargazers_count": 0,
+            "watchers_count": 0,
+            "language": null,
+            "has_issues": false,
+            "has_projects": true,
+            "has_downloads": true,
+            "has_wiki": false,
+            "has_pages": false,
+            "has_discussions": false,
+            "forks_count": 0,
+            "archived": false,
+            "disabled": false,
+            "open_issues_count": 0,
+            "license": {
+              "key": "other",
+              "name": "Other",
+              "spdx_id": "NOASSERTION",
+              "url": null,
+              "node_id": "MDc6TGljZW5zZTA="
+            },
+            "allow_forking": true,
+            "is_template": false,
+            "web_commit_signoff_required": false,
+            "topics": [],
+            "visibility": "public",
+            "forks": 0,
+            "open_issues": 0,
+            "watchers": 0,
+            "default_branch": "master"
+          }
+        },
+        "base": {
+          "label": "discord:master",
+          "ref": "master",
+          "sha": "1ef1bb44bb7e73f54021ead32de99ae7dbe42b0f",
+          "user": {
+            "login": "discord",
+            "id": 1965106,
+            "node_id": "MDEyOk9yZ2FuaXphdGlvbjE5NjUxMDY=",
+            "gravatar_id": "",
+            "url": "https://api.github.com/users/discord",
+            "type": "Organization",
+            "site_admin": false
+          },
+          "repo": {
+            "id": 86122120,
+            "node_id": "MDEwOlJlcG9zaXRvcnk4NjEyMjEyMA==",
+            "name": "lilliput",
+            "full_name": "discord/lilliput",
+            "private": false,
+            "owner": {
+              "login": "discord",
+              "id": 1965106,
+              "node_id": "MDEyOk9yZ2FuaXphdGlvbjE5NjUxMDY=",
+              "gravatar_id": "",
+              "url": "https://api.github.com/users/discord",
+              "type": "Organization",
+              "site_admin": false
+            },
+            "description": "Resize images and animated GIFs in Go",
+            "fork": false,
+            "url": "https://api.github.com/repos/discord/lilliput",
+            "created_at": "2017-03-25T00:46:39Z",
+            "updated_at": "2023-04-25T05:12:36Z",
+            "pushed_at": "2023-04-17T18:40:18Z",
+            "homepage": "https://blog.discordapp.com/how-discord-resizes-150-million-images-every-day-with-go-and-c-c9e98731c65d",
+            "size": 194487,
+            "stargazers_count": 1838,
+            "watchers_count": 1838,
+            "language": "C++",
+            "has_issues": true,
+            "has_projects": false,
+            "has_downloads": true,
+            "has_wiki": false,
+            "has_pages": false,
+            "has_discussions": false,
+            "forks_count": 116,
+            "archived": false,
+            "disabled": false,
+            "open_issues_count": 35,
+            "license": {
+              "key": "other",
+              "name": "Other",
+              "spdx_id": "NOASSERTION",
+              "url": null,
+              "node_id": "MDc6TGljZW5zZTA="
+            },
+            "allow_forking": true,
+            "is_template": false,
+            "web_commit_signoff_required": false,
+            "topics": [
+              "cgo",
+              "crop",
+              "gif",
+              "golang",
+              "image",
+              "image-resizer",
+              "imageops",
+              "images",
+              "jpeg",
+              "png",
+              "resize-images",
+              "resized-images",
+              "thumbnail",
+              "webp"
+            ],
+            "visibility": "public",
+            "forks": 116,
+            "open_issues": 35,
+            "watchers": 1838,
+            "default_branch": "master"
+          }
+        },
+        "_links": {
+          "self": {
+            "href": "https://api.github.com/repos/discord/lilliput/pulls/122"
+          },
+          "html": {
+            "href": "https://github.com/discord/lilliput/pull/122"
+          },
+          "issue": {
+            "href": "https://api.github.com/repos/discord/lilliput/issues/122"
+          },
+          "comments": {
+            "href": "https://api.github.com/repos/discord/lilliput/issues/122/comments"
+          },
+          "review_comments": {
+            "href": "https://api.github.com/repos/discord/lilliput/pulls/122/comments"
+          },
+          "review_comment": {
+            "href": "https://api.github.com/repos/discord/lilliput/pulls/comments{/number}"
+          },
+          "commits": {
+            "href": "https://api.github.com/repos/discord/lilliput/pulls/122/commits"
+          },
+          "statuses": {
+            "href": "https://api.github.com/repos/discord/lilliput/statuses/d9864bd1fce9f028a3c14fa05f84f1881303a9b0"
+          }
+        },
+        "author_association": "CONTRIBUTOR",
+        "auto_merge": null,
+        "active_lock_reason": null
+      }
+    ]
   }
 }

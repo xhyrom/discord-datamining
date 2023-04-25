@@ -57,7 +57,24 @@
     "triage": false,
     "pull": false
   },
-  "branches": [],
+  "branches": [
+    {
+      "name": "master",
+      "commit": {
+        "sha": "b01265230dec54b1608e6277d7be4b1a1957a11b",
+        "url": "https://api.github.com/repos/discord/ari/commits/b01265230dec54b1608e6277d7be4b1a1957a11b"
+      },
+      "protected": false
+    },
+    {
+      "name": "remove-nightly-features",
+      "commit": {
+        "sha": "be60f32a9979db32f9e7450301e3bf6792a89e84",
+        "url": "https://api.github.com/repos/discord/ari/commits/be60f32a9979db32f9e7450301e3bf6792a89e84"
+      },
+      "protected": false
+    }
+  ],
   "last5": {
     "commits": [
       {
@@ -332,7 +349,56 @@
       }
     ],
     "releases": [],
-    "issues": [],
+    "issues": [
+      {
+        "url": "https://api.github.com/repos/discord/ari/issues/1",
+        "id": 797188652,
+        "node_id": "MDExOlB1bGxSZXF1ZXN0NTY0MjQwMzU2",
+        "number": 1,
+        "title": "remove nightly features and update to 1.49.0",
+        "user": {
+          "login": "samschlegel",
+          "id": 5514447,
+          "node_id": "MDQ6VXNlcjU1MTQ0NDc=",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/samschlegel",
+          "type": "User",
+          "site_admin": false
+        },
+        "labels": [],
+        "state": "open",
+        "locked": false,
+        "assignee": null,
+        "assignees": [],
+        "milestone": null,
+        "comments": 0,
+        "created_at": "2021-01-29T20:45:21Z",
+        "updated_at": "2021-02-02T21:03:30Z",
+        "closed_at": null,
+        "author_association": "MEMBER",
+        "active_lock_reason": null,
+        "draft": false,
+        "pull_request": {
+          "url": "https://api.github.com/repos/discord/ari/pulls/1",
+          "merged_at": null
+        },
+        "body": "",
+        "reactions": {
+          "url": "https://api.github.com/repos/discord/ari/issues/1/reactions",
+          "total_count": 0,
+          "+1": 0,
+          "-1": 0,
+          "laugh": 0,
+          "hooray": 0,
+          "confused": 0,
+          "heart": 0,
+          "rocket": 0,
+          "eyes": 0
+        },
+        "performed_via_github_app": null,
+        "state_reason": null
+      }
+    ],
     "pullRequests": [
       {
         "url": "https://api.github.com/repos/discord/ari/pulls/1",

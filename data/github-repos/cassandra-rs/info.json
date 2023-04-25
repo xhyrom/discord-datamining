@@ -348,7 +348,493 @@
       }
     ],
     "releases": [],
-    "issues": [],
-    "pullRequests": []
+    "issues": [
+      {
+        "url": "https://api.github.com/repos/discord/cassandra-rs/issues/2",
+        "id": 1271002324,
+        "node_id": "PR_kwDODR5Oas45pNe5",
+        "number": 2,
+        "title": "initial materialized views support",
+        "user": {
+          "login": "ktravis",
+          "id": 1472316,
+          "node_id": "MDQ6VXNlcjE0NzIzMTY=",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/ktravis",
+          "type": "User",
+          "site_admin": false
+        },
+        "labels": [],
+        "state": "closed",
+        "locked": false,
+        "assignee": null,
+        "assignees": [],
+        "milestone": null,
+        "comments": 0,
+        "created_at": "2022-06-14T15:42:14Z",
+        "updated_at": "2022-06-17T12:01:44Z",
+        "closed_at": "2022-06-17T07:40:35Z",
+        "author_association": "COLLABORATOR",
+        "active_lock_reason": null,
+        "draft": false,
+        "pull_request": {
+          "url": "https://api.github.com/repos/discord/cassandra-rs/pulls/2",
+          "merged_at": "2022-06-17T07:40:35Z"
+        },
+        "body": null,
+        "reactions": {
+          "url": "https://api.github.com/repos/discord/cassandra-rs/issues/2/reactions",
+          "total_count": 0,
+          "+1": 0,
+          "-1": 0,
+          "laugh": 0,
+          "hooray": 0,
+          "confused": 0,
+          "heart": 0,
+          "rocket": 0,
+          "eyes": 0
+        },
+        "performed_via_github_app": null,
+        "state_reason": null
+      },
+      {
+        "url": "https://api.github.com/repos/discord/cassandra-rs/issues/1",
+        "id": 1064861919,
+        "node_id": "PR_kwDODR5Oas4vFAu3",
+        "number": 1,
+        "title": "[0.16] discord: keyspace aware session",
+        "user": {
+          "login": "jhgg",
+          "id": 5489149,
+          "node_id": "MDQ6VXNlcjU0ODkxNDk=",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/jhgg",
+          "type": "User",
+          "site_admin": false
+        },
+        "labels": [],
+        "state": "closed",
+        "locked": false,
+        "assignee": null,
+        "assignees": [],
+        "milestone": null,
+        "comments": 0,
+        "created_at": "2021-11-27T00:10:19Z",
+        "updated_at": "2021-11-27T05:32:44Z",
+        "closed_at": "2021-11-27T05:32:38Z",
+        "author_association": "MEMBER",
+        "active_lock_reason": null,
+        "draft": false,
+        "pull_request": {
+          "url": "https://api.github.com/repos/discord/cassandra-rs/pulls/1",
+          "merged_at": "2021-11-27T05:32:38Z"
+        },
+        "body": "Makes cassandra-rs's session keyspace aware, such that for a \"Bound\" session, it can spit out it's keyspace name.\r\n\r\nIt accomplishes this by introducing the concept of a `SessionScope` which can be either `Bound` or `Unbound`, of which represent whether or not the session is connected to a keyspace. We encode these in types to optionally expose the `Session.keyspace()` function, and make it so that if you require a keyspace connected session (as Discord does internally w/ the `CassandraUdt` derive macro). ",
+        "reactions": {
+          "url": "https://api.github.com/repos/discord/cassandra-rs/issues/1/reactions",
+          "total_count": 0,
+          "+1": 0,
+          "-1": 0,
+          "laugh": 0,
+          "hooray": 0,
+          "confused": 0,
+          "heart": 0,
+          "rocket": 0,
+          "eyes": 0
+        },
+        "performed_via_github_app": null,
+        "state_reason": null
+      }
+    ],
+    "pullRequests": [
+      {
+        "url": "https://api.github.com/repos/discord/cassandra-rs/pulls/2",
+        "id": 967104441,
+        "node_id": "PR_kwDODR5Oas45pNe5",
+        "number": 2,
+        "state": "closed",
+        "locked": false,
+        "title": "initial materialized views support",
+        "user": {
+          "login": "ktravis",
+          "id": 1472316,
+          "node_id": "MDQ6VXNlcjE0NzIzMTY=",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/ktravis",
+          "type": "User",
+          "site_admin": false
+        },
+        "body": null,
+        "created_at": "2022-06-14T15:42:14Z",
+        "updated_at": "2022-06-17T12:01:44Z",
+        "closed_at": "2022-06-17T07:40:35Z",
+        "merged_at": "2022-06-17T07:40:35Z",
+        "merge_commit_sha": "b74f038f25cf12c2fc397a96db94cdbfc5787087",
+        "assignee": null,
+        "assignees": [],
+        "requested_reviewers": [],
+        "requested_teams": [],
+        "labels": [],
+        "milestone": null,
+        "draft": false,
+        "head": {
+          "label": "discord:ktravis/materialized-views-support",
+          "ref": "ktravis/materialized-views-support",
+          "sha": "76d483c19c0715cabf3dc164ae8f80fa0ce66c8a",
+          "user": {
+            "login": "discord",
+            "id": 1965106,
+            "node_id": "MDEyOk9yZ2FuaXphdGlvbjE5NjUxMDY=",
+            "gravatar_id": "",
+            "url": "https://api.github.com/users/discord",
+            "type": "Organization",
+            "site_admin": false
+          },
+          "repo": {
+            "id": 220089962,
+            "node_id": "MDEwOlJlcG9zaXRvcnkyMjAwODk5NjI=",
+            "name": "cassandra-rs",
+            "full_name": "discord/cassandra-rs",
+            "private": false,
+            "owner": {
+              "login": "discord",
+              "id": 1965106,
+              "node_id": "MDEyOk9yZ2FuaXphdGlvbjE5NjUxMDY=",
+              "gravatar_id": "",
+              "url": "https://api.github.com/users/discord",
+              "type": "Organization",
+              "site_admin": false
+            },
+            "description": "Cassandra (CQL) driver for Rust, using the DataStax C/C++ driver under the covers.",
+            "fork": true,
+            "url": "https://api.github.com/repos/discord/cassandra-rs",
+            "created_at": "2019-11-06T21:06:16Z",
+            "updated_at": "2022-04-16T11:37:31Z",
+            "pushed_at": "2022-06-17T12:01:44Z",
+            "homepage": "",
+            "size": 16061,
+            "stargazers_count": 12,
+            "watchers_count": 12,
+            "language": "Rust",
+            "has_issues": false,
+            "has_projects": true,
+            "has_downloads": true,
+            "has_wiki": false,
+            "has_pages": false,
+            "has_discussions": false,
+            "forks_count": 6,
+            "archived": false,
+            "disabled": false,
+            "open_issues_count": 0,
+            "license": {
+              "key": "apache-2.0",
+              "name": "Apache License 2.0",
+              "spdx_id": "Apache-2.0",
+              "url": "https://api.github.com/licenses/apache-2.0",
+              "node_id": "MDc6TGljZW5zZTI="
+            },
+            "allow_forking": true,
+            "is_template": false,
+            "web_commit_signoff_required": false,
+            "topics": [],
+            "visibility": "public",
+            "forks": 6,
+            "open_issues": 0,
+            "watchers": 12,
+            "default_branch": "master"
+          }
+        },
+        "base": {
+          "label": "discord:discord-0.16-rc",
+          "ref": "discord-0.16-rc",
+          "sha": "30312827ed56f221534c2ec8849146a54c9c1711",
+          "user": {
+            "login": "discord",
+            "id": 1965106,
+            "node_id": "MDEyOk9yZ2FuaXphdGlvbjE5NjUxMDY=",
+            "gravatar_id": "",
+            "url": "https://api.github.com/users/discord",
+            "type": "Organization",
+            "site_admin": false
+          },
+          "repo": {
+            "id": 220089962,
+            "node_id": "MDEwOlJlcG9zaXRvcnkyMjAwODk5NjI=",
+            "name": "cassandra-rs",
+            "full_name": "discord/cassandra-rs",
+            "private": false,
+            "owner": {
+              "login": "discord",
+              "id": 1965106,
+              "node_id": "MDEyOk9yZ2FuaXphdGlvbjE5NjUxMDY=",
+              "gravatar_id": "",
+              "url": "https://api.github.com/users/discord",
+              "type": "Organization",
+              "site_admin": false
+            },
+            "description": "Cassandra (CQL) driver for Rust, using the DataStax C/C++ driver under the covers.",
+            "fork": true,
+            "url": "https://api.github.com/repos/discord/cassandra-rs",
+            "created_at": "2019-11-06T21:06:16Z",
+            "updated_at": "2022-04-16T11:37:31Z",
+            "pushed_at": "2022-06-17T12:01:44Z",
+            "homepage": "",
+            "size": 16061,
+            "stargazers_count": 12,
+            "watchers_count": 12,
+            "language": "Rust",
+            "has_issues": false,
+            "has_projects": true,
+            "has_downloads": true,
+            "has_wiki": false,
+            "has_pages": false,
+            "has_discussions": false,
+            "forks_count": 6,
+            "archived": false,
+            "disabled": false,
+            "open_issues_count": 0,
+            "license": {
+              "key": "apache-2.0",
+              "name": "Apache License 2.0",
+              "spdx_id": "Apache-2.0",
+              "url": "https://api.github.com/licenses/apache-2.0",
+              "node_id": "MDc6TGljZW5zZTI="
+            },
+            "allow_forking": true,
+            "is_template": false,
+            "web_commit_signoff_required": false,
+            "topics": [],
+            "visibility": "public",
+            "forks": 6,
+            "open_issues": 0,
+            "watchers": 12,
+            "default_branch": "master"
+          }
+        },
+        "_links": {
+          "self": {
+            "href": "https://api.github.com/repos/discord/cassandra-rs/pulls/2"
+          },
+          "html": {
+            "href": "https://github.com/discord/cassandra-rs/pull/2"
+          },
+          "issue": {
+            "href": "https://api.github.com/repos/discord/cassandra-rs/issues/2"
+          },
+          "comments": {
+            "href": "https://api.github.com/repos/discord/cassandra-rs/issues/2/comments"
+          },
+          "review_comments": {
+            "href": "https://api.github.com/repos/discord/cassandra-rs/pulls/2/comments"
+          },
+          "review_comment": {
+            "href": "https://api.github.com/repos/discord/cassandra-rs/pulls/comments{/number}"
+          },
+          "commits": {
+            "href": "https://api.github.com/repos/discord/cassandra-rs/pulls/2/commits"
+          },
+          "statuses": {
+            "href": "https://api.github.com/repos/discord/cassandra-rs/statuses/76d483c19c0715cabf3dc164ae8f80fa0ce66c8a"
+          }
+        },
+        "author_association": "COLLABORATOR",
+        "auto_merge": null,
+        "active_lock_reason": null
+      },
+      {
+        "url": "https://api.github.com/repos/discord/cassandra-rs/pulls/1",
+        "id": 789842871,
+        "node_id": "PR_kwDODR5Oas4vFAu3",
+        "number": 1,
+        "state": "closed",
+        "locked": false,
+        "title": "[0.16] discord: keyspace aware session",
+        "user": {
+          "login": "jhgg",
+          "id": 5489149,
+          "node_id": "MDQ6VXNlcjU0ODkxNDk=",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/jhgg",
+          "type": "User",
+          "site_admin": false
+        },
+        "body": "Makes cassandra-rs's session keyspace aware, such that for a \"Bound\" session, it can spit out it's keyspace name.\r\n\r\nIt accomplishes this by introducing the concept of a `SessionScope` which can be either `Bound` or `Unbound`, of which represent whether or not the session is connected to a keyspace. We encode these in types to optionally expose the `Session.keyspace()` function, and make it so that if you require a keyspace connected session (as Discord does internally w/ the `CassandraUdt` derive macro). ",
+        "created_at": "2021-11-27T00:10:19Z",
+        "updated_at": "2021-11-27T05:32:44Z",
+        "closed_at": "2021-11-27T05:32:38Z",
+        "merged_at": "2021-11-27T05:32:38Z",
+        "merge_commit_sha": "228184744ac9a63f3caac551ecbd3422ae4401cc",
+        "assignee": null,
+        "assignees": [],
+        "requested_reviewers": [],
+        "requested_teams": [],
+        "labels": [],
+        "milestone": null,
+        "draft": false,
+        "head": {
+          "label": "discord:discord-0.16-session-keyspace-aware",
+          "ref": "discord-0.16-session-keyspace-aware",
+          "sha": "96bfcdeed6012960028cbf36d7591d61641878da",
+          "user": {
+            "login": "discord",
+            "id": 1965106,
+            "node_id": "MDEyOk9yZ2FuaXphdGlvbjE5NjUxMDY=",
+            "gravatar_id": "",
+            "url": "https://api.github.com/users/discord",
+            "type": "Organization",
+            "site_admin": false
+          },
+          "repo": {
+            "id": 220089962,
+            "node_id": "MDEwOlJlcG9zaXRvcnkyMjAwODk5NjI=",
+            "name": "cassandra-rs",
+            "full_name": "discord/cassandra-rs",
+            "private": false,
+            "owner": {
+              "login": "discord",
+              "id": 1965106,
+              "node_id": "MDEyOk9yZ2FuaXphdGlvbjE5NjUxMDY=",
+              "gravatar_id": "",
+              "url": "https://api.github.com/users/discord",
+              "type": "Organization",
+              "site_admin": false
+            },
+            "description": "Cassandra (CQL) driver for Rust, using the DataStax C/C++ driver under the covers.",
+            "fork": true,
+            "url": "https://api.github.com/repos/discord/cassandra-rs",
+            "created_at": "2019-11-06T21:06:16Z",
+            "updated_at": "2022-04-16T11:37:31Z",
+            "pushed_at": "2022-06-17T12:01:44Z",
+            "homepage": "",
+            "size": 16061,
+            "stargazers_count": 12,
+            "watchers_count": 12,
+            "language": "Rust",
+            "has_issues": false,
+            "has_projects": true,
+            "has_downloads": true,
+            "has_wiki": false,
+            "has_pages": false,
+            "has_discussions": false,
+            "forks_count": 6,
+            "archived": false,
+            "disabled": false,
+            "open_issues_count": 0,
+            "license": {
+              "key": "apache-2.0",
+              "name": "Apache License 2.0",
+              "spdx_id": "Apache-2.0",
+              "url": "https://api.github.com/licenses/apache-2.0",
+              "node_id": "MDc6TGljZW5zZTI="
+            },
+            "allow_forking": true,
+            "is_template": false,
+            "web_commit_signoff_required": false,
+            "topics": [],
+            "visibility": "public",
+            "forks": 6,
+            "open_issues": 0,
+            "watchers": 12,
+            "default_branch": "master"
+          }
+        },
+        "base": {
+          "label": "discord:discord-0.16-rc",
+          "ref": "discord-0.16-rc",
+          "sha": "4704947b660dc536c4dcc67731f15e8ad11134e6",
+          "user": {
+            "login": "discord",
+            "id": 1965106,
+            "node_id": "MDEyOk9yZ2FuaXphdGlvbjE5NjUxMDY=",
+            "gravatar_id": "",
+            "url": "https://api.github.com/users/discord",
+            "type": "Organization",
+            "site_admin": false
+          },
+          "repo": {
+            "id": 220089962,
+            "node_id": "MDEwOlJlcG9zaXRvcnkyMjAwODk5NjI=",
+            "name": "cassandra-rs",
+            "full_name": "discord/cassandra-rs",
+            "private": false,
+            "owner": {
+              "login": "discord",
+              "id": 1965106,
+              "node_id": "MDEyOk9yZ2FuaXphdGlvbjE5NjUxMDY=",
+              "gravatar_id": "",
+              "url": "https://api.github.com/users/discord",
+              "type": "Organization",
+              "site_admin": false
+            },
+            "description": "Cassandra (CQL) driver for Rust, using the DataStax C/C++ driver under the covers.",
+            "fork": true,
+            "url": "https://api.github.com/repos/discord/cassandra-rs",
+            "created_at": "2019-11-06T21:06:16Z",
+            "updated_at": "2022-04-16T11:37:31Z",
+            "pushed_at": "2022-06-17T12:01:44Z",
+            "homepage": "",
+            "size": 16061,
+            "stargazers_count": 12,
+            "watchers_count": 12,
+            "language": "Rust",
+            "has_issues": false,
+            "has_projects": true,
+            "has_downloads": true,
+            "has_wiki": false,
+            "has_pages": false,
+            "has_discussions": false,
+            "forks_count": 6,
+            "archived": false,
+            "disabled": false,
+            "open_issues_count": 0,
+            "license": {
+              "key": "apache-2.0",
+              "name": "Apache License 2.0",
+              "spdx_id": "Apache-2.0",
+              "url": "https://api.github.com/licenses/apache-2.0",
+              "node_id": "MDc6TGljZW5zZTI="
+            },
+            "allow_forking": true,
+            "is_template": false,
+            "web_commit_signoff_required": false,
+            "topics": [],
+            "visibility": "public",
+            "forks": 6,
+            "open_issues": 0,
+            "watchers": 12,
+            "default_branch": "master"
+          }
+        },
+        "_links": {
+          "self": {
+            "href": "https://api.github.com/repos/discord/cassandra-rs/pulls/1"
+          },
+          "html": {
+            "href": "https://github.com/discord/cassandra-rs/pull/1"
+          },
+          "issue": {
+            "href": "https://api.github.com/repos/discord/cassandra-rs/issues/1"
+          },
+          "comments": {
+            "href": "https://api.github.com/repos/discord/cassandra-rs/issues/1/comments"
+          },
+          "review_comments": {
+            "href": "https://api.github.com/repos/discord/cassandra-rs/pulls/1/comments"
+          },
+          "review_comment": {
+            "href": "https://api.github.com/repos/discord/cassandra-rs/pulls/comments{/number}"
+          },
+          "commits": {
+            "href": "https://api.github.com/repos/discord/cassandra-rs/pulls/1/commits"
+          },
+          "statuses": {
+            "href": "https://api.github.com/repos/discord/cassandra-rs/statuses/96bfcdeed6012960028cbf36d7591d61641878da"
+          }
+        },
+        "author_association": "MEMBER",
+        "auto_merge": null,
+        "active_lock_reason": null
+      }
+    ]
   }
 }

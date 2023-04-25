@@ -332,7 +332,1255 @@
       }
     ],
     "releases": [],
-    "issues": [],
-    "pullRequests": []
+    "issues": [
+      {
+        "url": "https://api.github.com/repos/discord/jemalloc_info/issues/7",
+        "id": 1318921442,
+        "node_id": "PR_kwDOFyQDJM48JcjJ",
+        "number": 7,
+        "title": "Bump jemalloc to 0.5.0",
+        "user": {
+          "login": "lytefast",
+          "id": 5618601,
+          "node_id": "MDQ6VXNlcjU2MTg2MDE=",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/lytefast",
+          "type": "User",
+          "site_admin": false
+        },
+        "labels": [],
+        "state": "closed",
+        "locked": false,
+        "assignee": {
+          "login": "lytefast",
+          "id": 5618601,
+          "node_id": "MDQ6VXNlcjU2MTg2MDE=",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/lytefast",
+          "type": "User",
+          "site_admin": false
+        },
+        "assignees": [
+          {
+            "login": "lytefast",
+            "id": 5618601,
+            "node_id": "MDQ6VXNlcjU2MTg2MDE=",
+            "gravatar_id": "",
+            "url": "https://api.github.com/users/lytefast",
+            "type": "User",
+            "site_admin": false
+          }
+        ],
+        "milestone": null,
+        "comments": 0,
+        "created_at": "2022-07-27T01:50:01Z",
+        "updated_at": "2022-07-27T18:39:24Z",
+        "closed_at": "2022-07-27T18:39:16Z",
+        "author_association": "CONTRIBUTOR",
+        "active_lock_reason": null,
+        "draft": false,
+        "pull_request": {
+          "url": "https://api.github.com/repos/discord/jemalloc_info/pulls/7",
+          "merged_at": "2022-07-27T18:39:16Z"
+        },
+        "body": null,
+        "reactions": {
+          "url": "https://api.github.com/repos/discord/jemalloc_info/issues/7/reactions",
+          "total_count": 0,
+          "+1": 0,
+          "-1": 0,
+          "laugh": 0,
+          "hooray": 0,
+          "confused": 0,
+          "heart": 0,
+          "rocket": 0,
+          "eyes": 0
+        },
+        "performed_via_github_app": null,
+        "state_reason": null
+      },
+      {
+        "url": "https://api.github.com/repos/discord/jemalloc_info/issues/6",
+        "id": 954168714,
+        "node_id": "MDExOlB1bGxSZXF1ZXN0Njk4MTA1Nzg3",
+        "number": 6,
+        "title": "Release v0.3.0",
+        "user": {
+          "login": "iredelmeier",
+          "id": 3298606,
+          "node_id": "MDQ6VXNlcjMyOTg2MDY=",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/iredelmeier",
+          "type": "User",
+          "site_admin": false
+        },
+        "labels": [],
+        "state": "closed",
+        "locked": false,
+        "assignee": null,
+        "assignees": [],
+        "milestone": null,
+        "comments": 0,
+        "created_at": "2021-07-27T18:43:28Z",
+        "updated_at": "2021-07-27T18:43:32Z",
+        "closed_at": "2021-07-27T18:43:32Z",
+        "author_association": "COLLABORATOR",
+        "active_lock_reason": null,
+        "draft": false,
+        "pull_request": {
+          "url": "https://api.github.com/repos/discord/jemalloc_info/pulls/6",
+          "merged_at": "2021-07-27T18:43:32Z"
+        },
+        "body": "",
+        "reactions": {
+          "url": "https://api.github.com/repos/discord/jemalloc_info/issues/6/reactions",
+          "total_count": 0,
+          "+1": 0,
+          "-1": 0,
+          "laugh": 0,
+          "hooray": 0,
+          "confused": 0,
+          "heart": 0,
+          "rocket": 0,
+          "eyes": 0
+        },
+        "performed_via_github_app": null,
+        "state_reason": null
+      },
+      {
+        "url": "https://api.github.com/repos/discord/jemalloc_info/issues/5",
+        "id": 954164683,
+        "node_id": "MDExOlB1bGxSZXF1ZXN0Njk4MTAyMjc3",
+        "number": 5,
+        "title": "Rename allocation info function for consistency",
+        "user": {
+          "login": "iredelmeier",
+          "id": 3298606,
+          "node_id": "MDQ6VXNlcjMyOTg2MDY=",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/iredelmeier",
+          "type": "User",
+          "site_admin": false
+        },
+        "labels": [],
+        "state": "closed",
+        "locked": false,
+        "assignee": null,
+        "assignees": [],
+        "milestone": null,
+        "comments": 0,
+        "created_at": "2021-07-27T18:37:58Z",
+        "updated_at": "2021-07-27T18:40:53Z",
+        "closed_at": "2021-07-27T18:40:53Z",
+        "author_association": "COLLABORATOR",
+        "active_lock_reason": null,
+        "draft": false,
+        "pull_request": {
+          "url": "https://api.github.com/repos/discord/jemalloc_info/pulls/5",
+          "merged_at": "2021-07-27T18:40:53Z"
+        },
+        "body": "Making the function name consistency across rust and elixir makes usage\r\nfrom other libraries or services much easier after the rustler 0.22\r\nupgrade, which makes it harder to re-export other rust nifs under\r\ndifferent names (i.e., it's easier to export\r\n`jemalloc_info::jemalloc_allocation_info` in the rustler init than\r\n`jemalloc_info::allocation_info as foo`).",
+        "reactions": {
+          "url": "https://api.github.com/repos/discord/jemalloc_info/issues/5/reactions",
+          "total_count": 0,
+          "+1": 0,
+          "-1": 0,
+          "laugh": 0,
+          "hooray": 0,
+          "confused": 0,
+          "heart": 0,
+          "rocket": 0,
+          "eyes": 0
+        },
+        "performed_via_github_app": null,
+        "state_reason": null
+      },
+      {
+        "url": "https://api.github.com/repos/discord/jemalloc_info/issues/4",
+        "id": 953392107,
+        "node_id": "MDExOlB1bGxSZXF1ZXN0Njk3NDQxNjM4",
+        "number": 4,
+        "title": "Release v0.2.1",
+        "user": {
+          "login": "iredelmeier",
+          "id": 3298606,
+          "node_id": "MDQ6VXNlcjMyOTg2MDY=",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/iredelmeier",
+          "type": "User",
+          "site_admin": false
+        },
+        "labels": [],
+        "state": "closed",
+        "locked": false,
+        "assignee": null,
+        "assignees": [],
+        "milestone": null,
+        "comments": 0,
+        "created_at": "2021-07-27T00:28:46Z",
+        "updated_at": "2021-07-27T00:28:51Z",
+        "closed_at": "2021-07-27T00:28:51Z",
+        "author_association": "COLLABORATOR",
+        "active_lock_reason": null,
+        "draft": false,
+        "pull_request": {
+          "url": "https://api.github.com/repos/discord/jemalloc_info/pulls/4",
+          "merged_at": "2021-07-27T00:28:51Z"
+        },
+        "body": "",
+        "reactions": {
+          "url": "https://api.github.com/repos/discord/jemalloc_info/issues/4/reactions",
+          "total_count": 0,
+          "+1": 0,
+          "-1": 0,
+          "laugh": 0,
+          "hooray": 0,
+          "confused": 0,
+          "heart": 0,
+          "rocket": 0,
+          "eyes": 0
+        },
+        "performed_via_github_app": null,
+        "state_reason": null
+      },
+      {
+        "url": "https://api.github.com/repos/discord/jemalloc_info/issues/3",
+        "id": 953389779,
+        "node_id": "MDExOlB1bGxSZXF1ZXN0Njk3NDM5NjEx",
+        "number": 3,
+        "title": "Export `allocation_info`",
+        "user": {
+          "login": "iredelmeier",
+          "id": 3298606,
+          "node_id": "MDQ6VXNlcjMyOTg2MDY=",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/iredelmeier",
+          "type": "User",
+          "site_admin": false
+        },
+        "labels": [],
+        "state": "closed",
+        "locked": false,
+        "assignee": null,
+        "assignees": [],
+        "milestone": null,
+        "comments": 0,
+        "created_at": "2021-07-27T00:23:26Z",
+        "updated_at": "2021-07-27T00:28:22Z",
+        "closed_at": "2021-07-27T00:28:22Z",
+        "author_association": "COLLABORATOR",
+        "active_lock_reason": null,
+        "draft": false,
+        "pull_request": {
+          "url": "https://api.github.com/repos/discord/jemalloc_info/pulls/3",
+          "merged_at": "2021-07-27T00:28:22Z"
+        },
+        "body": "",
+        "reactions": {
+          "url": "https://api.github.com/repos/discord/jemalloc_info/issues/3/reactions",
+          "total_count": 0,
+          "+1": 0,
+          "-1": 0,
+          "laugh": 0,
+          "hooray": 0,
+          "confused": 0,
+          "heart": 0,
+          "rocket": 0,
+          "eyes": 0
+        },
+        "performed_via_github_app": null,
+        "state_reason": null
+      }
+    ],
+    "pullRequests": [
+      {
+        "url": "https://api.github.com/repos/discord/jemalloc_info/pulls/7",
+        "id": 1009109193,
+        "node_id": "PR_kwDOFyQDJM48JcjJ",
+        "number": 7,
+        "state": "closed",
+        "locked": false,
+        "title": "Bump jemalloc to 0.5.0",
+        "user": {
+          "login": "lytefast",
+          "id": 5618601,
+          "node_id": "MDQ6VXNlcjU2MTg2MDE=",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/lytefast",
+          "type": "User",
+          "site_admin": false
+        },
+        "body": null,
+        "created_at": "2022-07-27T01:50:01Z",
+        "updated_at": "2022-07-27T18:39:24Z",
+        "closed_at": "2022-07-27T18:39:16Z",
+        "merged_at": "2022-07-27T18:39:16Z",
+        "merge_commit_sha": "114a9c07539d05fca60e8b8ea8deae3cf7949a48",
+        "assignee": {
+          "login": "lytefast",
+          "id": 5618601,
+          "node_id": "MDQ6VXNlcjU2MTg2MDE=",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/lytefast",
+          "type": "User",
+          "site_admin": false
+        },
+        "assignees": [
+          {
+            "login": "lytefast",
+            "id": 5618601,
+            "node_id": "MDQ6VXNlcjU2MTg2MDE=",
+            "gravatar_id": "",
+            "url": "https://api.github.com/users/lytefast",
+            "type": "User",
+            "site_admin": false
+          }
+        ],
+        "requested_reviewers": [],
+        "requested_teams": [],
+        "labels": [],
+        "milestone": null,
+        "draft": false,
+        "head": {
+          "label": "lytefast:rust/jemalloc-0.5",
+          "ref": "rust/jemalloc-0.5",
+          "sha": "a343037a7dc09b8bffbc0880d928b0f63a343701",
+          "user": {
+            "login": "lytefast",
+            "id": 5618601,
+            "node_id": "MDQ6VXNlcjU2MTg2MDE=",
+            "gravatar_id": "",
+            "url": "https://api.github.com/users/lytefast",
+            "type": "User",
+            "site_admin": false
+          },
+          "repo": {
+            "id": 518272857,
+            "node_id": "R_kgDOHuQ3WQ",
+            "name": "jemalloc_info",
+            "full_name": "lytefast/jemalloc_info",
+            "private": false,
+            "owner": {
+              "login": "lytefast",
+              "id": 5618601,
+              "node_id": "MDQ6VXNlcjU2MTg2MDE=",
+              "gravatar_id": "",
+              "url": "https://api.github.com/users/lytefast",
+              "type": "User",
+              "site_admin": false
+            },
+            "description": "A small library for exporting jemalloc allocation data in Elixir",
+            "fork": true,
+            "url": "https://api.github.com/repos/lytefast/jemalloc_info",
+            "created_at": "2022-07-27T01:46:59Z",
+            "updated_at": "2022-06-20T14:55:20Z",
+            "pushed_at": "2022-07-27T18:39:22Z",
+            "homepage": "",
+            "size": 18,
+            "stargazers_count": 0,
+            "watchers_count": 0,
+            "language": null,
+            "has_issues": false,
+            "has_projects": true,
+            "has_downloads": true,
+            "has_wiki": true,
+            "has_pages": false,
+            "has_discussions": false,
+            "forks_count": 0,
+            "archived": false,
+            "disabled": false,
+            "open_issues_count": 0,
+            "license": {
+              "key": "mit",
+              "name": "MIT License",
+              "spdx_id": "MIT",
+              "url": "https://api.github.com/licenses/mit",
+              "node_id": "MDc6TGljZW5zZTEz"
+            },
+            "allow_forking": true,
+            "is_template": false,
+            "web_commit_signoff_required": false,
+            "topics": [],
+            "visibility": "public",
+            "forks": 0,
+            "open_issues": 0,
+            "watchers": 0,
+            "default_branch": "main"
+          }
+        },
+        "base": {
+          "label": "discord:main",
+          "ref": "main",
+          "sha": "6d64be835206567cab26d0e243a47abda7e837e5",
+          "user": {
+            "login": "discord",
+            "id": 1965106,
+            "node_id": "MDEyOk9yZ2FuaXphdGlvbjE5NjUxMDY=",
+            "gravatar_id": "",
+            "url": "https://api.github.com/users/discord",
+            "type": "Organization",
+            "site_admin": false
+          },
+          "repo": {
+            "id": 388236068,
+            "node_id": "MDEwOlJlcG9zaXRvcnkzODgyMzYwNjg=",
+            "name": "jemalloc_info",
+            "full_name": "discord/jemalloc_info",
+            "private": false,
+            "owner": {
+              "login": "discord",
+              "id": 1965106,
+              "node_id": "MDEyOk9yZ2FuaXphdGlvbjE5NjUxMDY=",
+              "gravatar_id": "",
+              "url": "https://api.github.com/users/discord",
+              "type": "Organization",
+              "site_admin": false
+            },
+            "description": "A small library for exporting jemalloc allocation data in Elixir",
+            "fork": false,
+            "url": "https://api.github.com/repos/discord/jemalloc_info",
+            "created_at": "2021-07-21T20:19:09Z",
+            "updated_at": "2022-12-07T20:49:35Z",
+            "pushed_at": "2022-07-27T18:39:16Z",
+            "homepage": "",
+            "size": 19,
+            "stargazers_count": 3,
+            "watchers_count": 3,
+            "language": "Elixir",
+            "has_issues": true,
+            "has_projects": true,
+            "has_downloads": true,
+            "has_wiki": true,
+            "has_pages": false,
+            "has_discussions": false,
+            "forks_count": 5,
+            "archived": false,
+            "disabled": false,
+            "open_issues_count": 0,
+            "license": {
+              "key": "mit",
+              "name": "MIT License",
+              "spdx_id": "MIT",
+              "url": "https://api.github.com/licenses/mit",
+              "node_id": "MDc6TGljZW5zZTEz"
+            },
+            "allow_forking": true,
+            "is_template": false,
+            "web_commit_signoff_required": false,
+            "topics": [],
+            "visibility": "public",
+            "forks": 5,
+            "open_issues": 0,
+            "watchers": 3,
+            "default_branch": "main"
+          }
+        },
+        "_links": {
+          "self": {
+            "href": "https://api.github.com/repos/discord/jemalloc_info/pulls/7"
+          },
+          "html": {
+            "href": "https://github.com/discord/jemalloc_info/pull/7"
+          },
+          "issue": {
+            "href": "https://api.github.com/repos/discord/jemalloc_info/issues/7"
+          },
+          "comments": {
+            "href": "https://api.github.com/repos/discord/jemalloc_info/issues/7/comments"
+          },
+          "review_comments": {
+            "href": "https://api.github.com/repos/discord/jemalloc_info/pulls/7/comments"
+          },
+          "review_comment": {
+            "href": "https://api.github.com/repos/discord/jemalloc_info/pulls/comments{/number}"
+          },
+          "commits": {
+            "href": "https://api.github.com/repos/discord/jemalloc_info/pulls/7/commits"
+          },
+          "statuses": {
+            "href": "https://api.github.com/repos/discord/jemalloc_info/statuses/a343037a7dc09b8bffbc0880d928b0f63a343701"
+          }
+        },
+        "author_association": "CONTRIBUTOR",
+        "auto_merge": null,
+        "active_lock_reason": null
+      },
+      {
+        "url": "https://api.github.com/repos/discord/jemalloc_info/pulls/6",
+        "id": 698105787,
+        "node_id": "MDExOlB1bGxSZXF1ZXN0Njk4MTA1Nzg3",
+        "number": 6,
+        "state": "closed",
+        "locked": false,
+        "title": "Release v0.3.0",
+        "user": {
+          "login": "iredelmeier",
+          "id": 3298606,
+          "node_id": "MDQ6VXNlcjMyOTg2MDY=",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/iredelmeier",
+          "type": "User",
+          "site_admin": false
+        },
+        "body": "",
+        "created_at": "2021-07-27T18:43:28Z",
+        "updated_at": "2021-07-27T18:43:32Z",
+        "closed_at": "2021-07-27T18:43:32Z",
+        "merged_at": "2021-07-27T18:43:32Z",
+        "merge_commit_sha": "6d64be835206567cab26d0e243a47abda7e837e5",
+        "assignee": null,
+        "assignees": [],
+        "requested_reviewers": [],
+        "requested_teams": [],
+        "labels": [],
+        "milestone": null,
+        "draft": false,
+        "head": {
+          "label": "discord:release-v0.3.0",
+          "ref": "release-v0.3.0",
+          "sha": "b3aedfcbaa90506b7f78dd01e0f279ab7b62761a",
+          "user": {
+            "login": "discord",
+            "id": 1965106,
+            "node_id": "MDEyOk9yZ2FuaXphdGlvbjE5NjUxMDY=",
+            "gravatar_id": "",
+            "url": "https://api.github.com/users/discord",
+            "type": "Organization",
+            "site_admin": false
+          },
+          "repo": {
+            "id": 388236068,
+            "node_id": "MDEwOlJlcG9zaXRvcnkzODgyMzYwNjg=",
+            "name": "jemalloc_info",
+            "full_name": "discord/jemalloc_info",
+            "private": false,
+            "owner": {
+              "login": "discord",
+              "id": 1965106,
+              "node_id": "MDEyOk9yZ2FuaXphdGlvbjE5NjUxMDY=",
+              "gravatar_id": "",
+              "url": "https://api.github.com/users/discord",
+              "type": "Organization",
+              "site_admin": false
+            },
+            "description": "A small library for exporting jemalloc allocation data in Elixir",
+            "fork": false,
+            "url": "https://api.github.com/repos/discord/jemalloc_info",
+            "created_at": "2021-07-21T20:19:09Z",
+            "updated_at": "2022-12-07T20:49:35Z",
+            "pushed_at": "2022-07-27T18:39:16Z",
+            "homepage": "",
+            "size": 19,
+            "stargazers_count": 3,
+            "watchers_count": 3,
+            "language": "Elixir",
+            "has_issues": true,
+            "has_projects": true,
+            "has_downloads": true,
+            "has_wiki": true,
+            "has_pages": false,
+            "has_discussions": false,
+            "forks_count": 5,
+            "archived": false,
+            "disabled": false,
+            "open_issues_count": 0,
+            "license": {
+              "key": "mit",
+              "name": "MIT License",
+              "spdx_id": "MIT",
+              "url": "https://api.github.com/licenses/mit",
+              "node_id": "MDc6TGljZW5zZTEz"
+            },
+            "allow_forking": true,
+            "is_template": false,
+            "web_commit_signoff_required": false,
+            "topics": [],
+            "visibility": "public",
+            "forks": 5,
+            "open_issues": 0,
+            "watchers": 3,
+            "default_branch": "main"
+          }
+        },
+        "base": {
+          "label": "discord:main",
+          "ref": "main",
+          "sha": "9c7d68de2014e9948a3344087f3421a33e78916f",
+          "user": {
+            "login": "discord",
+            "id": 1965106,
+            "node_id": "MDEyOk9yZ2FuaXphdGlvbjE5NjUxMDY=",
+            "gravatar_id": "",
+            "url": "https://api.github.com/users/discord",
+            "type": "Organization",
+            "site_admin": false
+          },
+          "repo": {
+            "id": 388236068,
+            "node_id": "MDEwOlJlcG9zaXRvcnkzODgyMzYwNjg=",
+            "name": "jemalloc_info",
+            "full_name": "discord/jemalloc_info",
+            "private": false,
+            "owner": {
+              "login": "discord",
+              "id": 1965106,
+              "node_id": "MDEyOk9yZ2FuaXphdGlvbjE5NjUxMDY=",
+              "gravatar_id": "",
+              "url": "https://api.github.com/users/discord",
+              "type": "Organization",
+              "site_admin": false
+            },
+            "description": "A small library for exporting jemalloc allocation data in Elixir",
+            "fork": false,
+            "url": "https://api.github.com/repos/discord/jemalloc_info",
+            "created_at": "2021-07-21T20:19:09Z",
+            "updated_at": "2022-12-07T20:49:35Z",
+            "pushed_at": "2022-07-27T18:39:16Z",
+            "homepage": "",
+            "size": 19,
+            "stargazers_count": 3,
+            "watchers_count": 3,
+            "language": "Elixir",
+            "has_issues": true,
+            "has_projects": true,
+            "has_downloads": true,
+            "has_wiki": true,
+            "has_pages": false,
+            "has_discussions": false,
+            "forks_count": 5,
+            "archived": false,
+            "disabled": false,
+            "open_issues_count": 0,
+            "license": {
+              "key": "mit",
+              "name": "MIT License",
+              "spdx_id": "MIT",
+              "url": "https://api.github.com/licenses/mit",
+              "node_id": "MDc6TGljZW5zZTEz"
+            },
+            "allow_forking": true,
+            "is_template": false,
+            "web_commit_signoff_required": false,
+            "topics": [],
+            "visibility": "public",
+            "forks": 5,
+            "open_issues": 0,
+            "watchers": 3,
+            "default_branch": "main"
+          }
+        },
+        "_links": {
+          "self": {
+            "href": "https://api.github.com/repos/discord/jemalloc_info/pulls/6"
+          },
+          "html": {
+            "href": "https://github.com/discord/jemalloc_info/pull/6"
+          },
+          "issue": {
+            "href": "https://api.github.com/repos/discord/jemalloc_info/issues/6"
+          },
+          "comments": {
+            "href": "https://api.github.com/repos/discord/jemalloc_info/issues/6/comments"
+          },
+          "review_comments": {
+            "href": "https://api.github.com/repos/discord/jemalloc_info/pulls/6/comments"
+          },
+          "review_comment": {
+            "href": "https://api.github.com/repos/discord/jemalloc_info/pulls/comments{/number}"
+          },
+          "commits": {
+            "href": "https://api.github.com/repos/discord/jemalloc_info/pulls/6/commits"
+          },
+          "statuses": {
+            "href": "https://api.github.com/repos/discord/jemalloc_info/statuses/b3aedfcbaa90506b7f78dd01e0f279ab7b62761a"
+          }
+        },
+        "author_association": "COLLABORATOR",
+        "auto_merge": null,
+        "active_lock_reason": null
+      },
+      {
+        "url": "https://api.github.com/repos/discord/jemalloc_info/pulls/5",
+        "id": 698102277,
+        "node_id": "MDExOlB1bGxSZXF1ZXN0Njk4MTAyMjc3",
+        "number": 5,
+        "state": "closed",
+        "locked": false,
+        "title": "Rename allocation info function for consistency",
+        "user": {
+          "login": "iredelmeier",
+          "id": 3298606,
+          "node_id": "MDQ6VXNlcjMyOTg2MDY=",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/iredelmeier",
+          "type": "User",
+          "site_admin": false
+        },
+        "body": "Making the function name consistency across rust and elixir makes usage\r\nfrom other libraries or services much easier after the rustler 0.22\r\nupgrade, which makes it harder to re-export other rust nifs under\r\ndifferent names (i.e., it's easier to export\r\n`jemalloc_info::jemalloc_allocation_info` in the rustler init than\r\n`jemalloc_info::allocation_info as foo`).",
+        "created_at": "2021-07-27T18:37:58Z",
+        "updated_at": "2021-07-27T18:40:53Z",
+        "closed_at": "2021-07-27T18:40:53Z",
+        "merged_at": "2021-07-27T18:40:53Z",
+        "merge_commit_sha": "9c7d68de2014e9948a3344087f3421a33e78916f",
+        "assignee": null,
+        "assignees": [],
+        "requested_reviewers": [],
+        "requested_teams": [],
+        "labels": [],
+        "milestone": null,
+        "draft": false,
+        "head": {
+          "label": "discord:make-fn-name-consistent",
+          "ref": "make-fn-name-consistent",
+          "sha": "1c66ac348f600914543d286a9cc3139cd836382c",
+          "user": {
+            "login": "discord",
+            "id": 1965106,
+            "node_id": "MDEyOk9yZ2FuaXphdGlvbjE5NjUxMDY=",
+            "gravatar_id": "",
+            "url": "https://api.github.com/users/discord",
+            "type": "Organization",
+            "site_admin": false
+          },
+          "repo": {
+            "id": 388236068,
+            "node_id": "MDEwOlJlcG9zaXRvcnkzODgyMzYwNjg=",
+            "name": "jemalloc_info",
+            "full_name": "discord/jemalloc_info",
+            "private": false,
+            "owner": {
+              "login": "discord",
+              "id": 1965106,
+              "node_id": "MDEyOk9yZ2FuaXphdGlvbjE5NjUxMDY=",
+              "gravatar_id": "",
+              "url": "https://api.github.com/users/discord",
+              "type": "Organization",
+              "site_admin": false
+            },
+            "description": "A small library for exporting jemalloc allocation data in Elixir",
+            "fork": false,
+            "url": "https://api.github.com/repos/discord/jemalloc_info",
+            "created_at": "2021-07-21T20:19:09Z",
+            "updated_at": "2022-12-07T20:49:35Z",
+            "pushed_at": "2022-07-27T18:39:16Z",
+            "homepage": "",
+            "size": 19,
+            "stargazers_count": 3,
+            "watchers_count": 3,
+            "language": "Elixir",
+            "has_issues": true,
+            "has_projects": true,
+            "has_downloads": true,
+            "has_wiki": true,
+            "has_pages": false,
+            "has_discussions": false,
+            "forks_count": 5,
+            "archived": false,
+            "disabled": false,
+            "open_issues_count": 0,
+            "license": {
+              "key": "mit",
+              "name": "MIT License",
+              "spdx_id": "MIT",
+              "url": "https://api.github.com/licenses/mit",
+              "node_id": "MDc6TGljZW5zZTEz"
+            },
+            "allow_forking": true,
+            "is_template": false,
+            "web_commit_signoff_required": false,
+            "topics": [],
+            "visibility": "public",
+            "forks": 5,
+            "open_issues": 0,
+            "watchers": 3,
+            "default_branch": "main"
+          }
+        },
+        "base": {
+          "label": "discord:main",
+          "ref": "main",
+          "sha": "c9cc7fec0e90f2eed082d84e0e138f07d10fa762",
+          "user": {
+            "login": "discord",
+            "id": 1965106,
+            "node_id": "MDEyOk9yZ2FuaXphdGlvbjE5NjUxMDY=",
+            "gravatar_id": "",
+            "url": "https://api.github.com/users/discord",
+            "type": "Organization",
+            "site_admin": false
+          },
+          "repo": {
+            "id": 388236068,
+            "node_id": "MDEwOlJlcG9zaXRvcnkzODgyMzYwNjg=",
+            "name": "jemalloc_info",
+            "full_name": "discord/jemalloc_info",
+            "private": false,
+            "owner": {
+              "login": "discord",
+              "id": 1965106,
+              "node_id": "MDEyOk9yZ2FuaXphdGlvbjE5NjUxMDY=",
+              "gravatar_id": "",
+              "url": "https://api.github.com/users/discord",
+              "type": "Organization",
+              "site_admin": false
+            },
+            "description": "A small library for exporting jemalloc allocation data in Elixir",
+            "fork": false,
+            "url": "https://api.github.com/repos/discord/jemalloc_info",
+            "created_at": "2021-07-21T20:19:09Z",
+            "updated_at": "2022-12-07T20:49:35Z",
+            "pushed_at": "2022-07-27T18:39:16Z",
+            "homepage": "",
+            "size": 19,
+            "stargazers_count": 3,
+            "watchers_count": 3,
+            "language": "Elixir",
+            "has_issues": true,
+            "has_projects": true,
+            "has_downloads": true,
+            "has_wiki": true,
+            "has_pages": false,
+            "has_discussions": false,
+            "forks_count": 5,
+            "archived": false,
+            "disabled": false,
+            "open_issues_count": 0,
+            "license": {
+              "key": "mit",
+              "name": "MIT License",
+              "spdx_id": "MIT",
+              "url": "https://api.github.com/licenses/mit",
+              "node_id": "MDc6TGljZW5zZTEz"
+            },
+            "allow_forking": true,
+            "is_template": false,
+            "web_commit_signoff_required": false,
+            "topics": [],
+            "visibility": "public",
+            "forks": 5,
+            "open_issues": 0,
+            "watchers": 3,
+            "default_branch": "main"
+          }
+        },
+        "_links": {
+          "self": {
+            "href": "https://api.github.com/repos/discord/jemalloc_info/pulls/5"
+          },
+          "html": {
+            "href": "https://github.com/discord/jemalloc_info/pull/5"
+          },
+          "issue": {
+            "href": "https://api.github.com/repos/discord/jemalloc_info/issues/5"
+          },
+          "comments": {
+            "href": "https://api.github.com/repos/discord/jemalloc_info/issues/5/comments"
+          },
+          "review_comments": {
+            "href": "https://api.github.com/repos/discord/jemalloc_info/pulls/5/comments"
+          },
+          "review_comment": {
+            "href": "https://api.github.com/repos/discord/jemalloc_info/pulls/comments{/number}"
+          },
+          "commits": {
+            "href": "https://api.github.com/repos/discord/jemalloc_info/pulls/5/commits"
+          },
+          "statuses": {
+            "href": "https://api.github.com/repos/discord/jemalloc_info/statuses/1c66ac348f600914543d286a9cc3139cd836382c"
+          }
+        },
+        "author_association": "COLLABORATOR",
+        "auto_merge": null,
+        "active_lock_reason": null
+      },
+      {
+        "url": "https://api.github.com/repos/discord/jemalloc_info/pulls/4",
+        "id": 697441638,
+        "node_id": "MDExOlB1bGxSZXF1ZXN0Njk3NDQxNjM4",
+        "number": 4,
+        "state": "closed",
+        "locked": false,
+        "title": "Release v0.2.1",
+        "user": {
+          "login": "iredelmeier",
+          "id": 3298606,
+          "node_id": "MDQ6VXNlcjMyOTg2MDY=",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/iredelmeier",
+          "type": "User",
+          "site_admin": false
+        },
+        "body": "",
+        "created_at": "2021-07-27T00:28:46Z",
+        "updated_at": "2021-07-27T00:28:51Z",
+        "closed_at": "2021-07-27T00:28:51Z",
+        "merged_at": "2021-07-27T00:28:51Z",
+        "merge_commit_sha": "c9cc7fec0e90f2eed082d84e0e138f07d10fa762",
+        "assignee": null,
+        "assignees": [],
+        "requested_reviewers": [],
+        "requested_teams": [],
+        "labels": [],
+        "milestone": null,
+        "draft": false,
+        "head": {
+          "label": "discord:release-v0.2.1",
+          "ref": "release-v0.2.1",
+          "sha": "ce1b1353776ae217f0fb49f906df3db0aab9297b",
+          "user": {
+            "login": "discord",
+            "id": 1965106,
+            "node_id": "MDEyOk9yZ2FuaXphdGlvbjE5NjUxMDY=",
+            "gravatar_id": "",
+            "url": "https://api.github.com/users/discord",
+            "type": "Organization",
+            "site_admin": false
+          },
+          "repo": {
+            "id": 388236068,
+            "node_id": "MDEwOlJlcG9zaXRvcnkzODgyMzYwNjg=",
+            "name": "jemalloc_info",
+            "full_name": "discord/jemalloc_info",
+            "private": false,
+            "owner": {
+              "login": "discord",
+              "id": 1965106,
+              "node_id": "MDEyOk9yZ2FuaXphdGlvbjE5NjUxMDY=",
+              "gravatar_id": "",
+              "url": "https://api.github.com/users/discord",
+              "type": "Organization",
+              "site_admin": false
+            },
+            "description": "A small library for exporting jemalloc allocation data in Elixir",
+            "fork": false,
+            "url": "https://api.github.com/repos/discord/jemalloc_info",
+            "created_at": "2021-07-21T20:19:09Z",
+            "updated_at": "2022-12-07T20:49:35Z",
+            "pushed_at": "2022-07-27T18:39:16Z",
+            "homepage": "",
+            "size": 19,
+            "stargazers_count": 3,
+            "watchers_count": 3,
+            "language": "Elixir",
+            "has_issues": true,
+            "has_projects": true,
+            "has_downloads": true,
+            "has_wiki": true,
+            "has_pages": false,
+            "has_discussions": false,
+            "forks_count": 5,
+            "archived": false,
+            "disabled": false,
+            "open_issues_count": 0,
+            "license": {
+              "key": "mit",
+              "name": "MIT License",
+              "spdx_id": "MIT",
+              "url": "https://api.github.com/licenses/mit",
+              "node_id": "MDc6TGljZW5zZTEz"
+            },
+            "allow_forking": true,
+            "is_template": false,
+            "web_commit_signoff_required": false,
+            "topics": [],
+            "visibility": "public",
+            "forks": 5,
+            "open_issues": 0,
+            "watchers": 3,
+            "default_branch": "main"
+          }
+        },
+        "base": {
+          "label": "discord:main",
+          "ref": "main",
+          "sha": "3d18c3a12d72c13a52d71284f3b929cb76595826",
+          "user": {
+            "login": "discord",
+            "id": 1965106,
+            "node_id": "MDEyOk9yZ2FuaXphdGlvbjE5NjUxMDY=",
+            "gravatar_id": "",
+            "url": "https://api.github.com/users/discord",
+            "type": "Organization",
+            "site_admin": false
+          },
+          "repo": {
+            "id": 388236068,
+            "node_id": "MDEwOlJlcG9zaXRvcnkzODgyMzYwNjg=",
+            "name": "jemalloc_info",
+            "full_name": "discord/jemalloc_info",
+            "private": false,
+            "owner": {
+              "login": "discord",
+              "id": 1965106,
+              "node_id": "MDEyOk9yZ2FuaXphdGlvbjE5NjUxMDY=",
+              "gravatar_id": "",
+              "url": "https://api.github.com/users/discord",
+              "type": "Organization",
+              "site_admin": false
+            },
+            "description": "A small library for exporting jemalloc allocation data in Elixir",
+            "fork": false,
+            "url": "https://api.github.com/repos/discord/jemalloc_info",
+            "created_at": "2021-07-21T20:19:09Z",
+            "updated_at": "2022-12-07T20:49:35Z",
+            "pushed_at": "2022-07-27T18:39:16Z",
+            "homepage": "",
+            "size": 19,
+            "stargazers_count": 3,
+            "watchers_count": 3,
+            "language": "Elixir",
+            "has_issues": true,
+            "has_projects": true,
+            "has_downloads": true,
+            "has_wiki": true,
+            "has_pages": false,
+            "has_discussions": false,
+            "forks_count": 5,
+            "archived": false,
+            "disabled": false,
+            "open_issues_count": 0,
+            "license": {
+              "key": "mit",
+              "name": "MIT License",
+              "spdx_id": "MIT",
+              "url": "https://api.github.com/licenses/mit",
+              "node_id": "MDc6TGljZW5zZTEz"
+            },
+            "allow_forking": true,
+            "is_template": false,
+            "web_commit_signoff_required": false,
+            "topics": [],
+            "visibility": "public",
+            "forks": 5,
+            "open_issues": 0,
+            "watchers": 3,
+            "default_branch": "main"
+          }
+        },
+        "_links": {
+          "self": {
+            "href": "https://api.github.com/repos/discord/jemalloc_info/pulls/4"
+          },
+          "html": {
+            "href": "https://github.com/discord/jemalloc_info/pull/4"
+          },
+          "issue": {
+            "href": "https://api.github.com/repos/discord/jemalloc_info/issues/4"
+          },
+          "comments": {
+            "href": "https://api.github.com/repos/discord/jemalloc_info/issues/4/comments"
+          },
+          "review_comments": {
+            "href": "https://api.github.com/repos/discord/jemalloc_info/pulls/4/comments"
+          },
+          "review_comment": {
+            "href": "https://api.github.com/repos/discord/jemalloc_info/pulls/comments{/number}"
+          },
+          "commits": {
+            "href": "https://api.github.com/repos/discord/jemalloc_info/pulls/4/commits"
+          },
+          "statuses": {
+            "href": "https://api.github.com/repos/discord/jemalloc_info/statuses/ce1b1353776ae217f0fb49f906df3db0aab9297b"
+          }
+        },
+        "author_association": "COLLABORATOR",
+        "auto_merge": null,
+        "active_lock_reason": null
+      },
+      {
+        "url": "https://api.github.com/repos/discord/jemalloc_info/pulls/3",
+        "id": 697439611,
+        "node_id": "MDExOlB1bGxSZXF1ZXN0Njk3NDM5NjEx",
+        "number": 3,
+        "state": "closed",
+        "locked": false,
+        "title": "Export `allocation_info`",
+        "user": {
+          "login": "iredelmeier",
+          "id": 3298606,
+          "node_id": "MDQ6VXNlcjMyOTg2MDY=",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/iredelmeier",
+          "type": "User",
+          "site_admin": false
+        },
+        "body": "",
+        "created_at": "2021-07-27T00:23:26Z",
+        "updated_at": "2021-07-27T00:28:22Z",
+        "closed_at": "2021-07-27T00:28:22Z",
+        "merged_at": "2021-07-27T00:28:22Z",
+        "merge_commit_sha": "3d18c3a12d72c13a52d71284f3b929cb76595826",
+        "assignee": null,
+        "assignees": [],
+        "requested_reviewers": [],
+        "requested_teams": [],
+        "labels": [],
+        "milestone": null,
+        "draft": false,
+        "head": {
+          "label": "discord:export-allocation_info",
+          "ref": "export-allocation_info",
+          "sha": "49bb7e8c92b1920ebe7c61ae7e07084be4caef64",
+          "user": {
+            "login": "discord",
+            "id": 1965106,
+            "node_id": "MDEyOk9yZ2FuaXphdGlvbjE5NjUxMDY=",
+            "gravatar_id": "",
+            "url": "https://api.github.com/users/discord",
+            "type": "Organization",
+            "site_admin": false
+          },
+          "repo": {
+            "id": 388236068,
+            "node_id": "MDEwOlJlcG9zaXRvcnkzODgyMzYwNjg=",
+            "name": "jemalloc_info",
+            "full_name": "discord/jemalloc_info",
+            "private": false,
+            "owner": {
+              "login": "discord",
+              "id": 1965106,
+              "node_id": "MDEyOk9yZ2FuaXphdGlvbjE5NjUxMDY=",
+              "gravatar_id": "",
+              "url": "https://api.github.com/users/discord",
+              "type": "Organization",
+              "site_admin": false
+            },
+            "description": "A small library for exporting jemalloc allocation data in Elixir",
+            "fork": false,
+            "url": "https://api.github.com/repos/discord/jemalloc_info",
+            "created_at": "2021-07-21T20:19:09Z",
+            "updated_at": "2022-12-07T20:49:35Z",
+            "pushed_at": "2022-07-27T18:39:16Z",
+            "homepage": "",
+            "size": 19,
+            "stargazers_count": 3,
+            "watchers_count": 3,
+            "language": "Elixir",
+            "has_issues": true,
+            "has_projects": true,
+            "has_downloads": true,
+            "has_wiki": true,
+            "has_pages": false,
+            "has_discussions": false,
+            "forks_count": 5,
+            "archived": false,
+            "disabled": false,
+            "open_issues_count": 0,
+            "license": {
+              "key": "mit",
+              "name": "MIT License",
+              "spdx_id": "MIT",
+              "url": "https://api.github.com/licenses/mit",
+              "node_id": "MDc6TGljZW5zZTEz"
+            },
+            "allow_forking": true,
+            "is_template": false,
+            "web_commit_signoff_required": false,
+            "topics": [],
+            "visibility": "public",
+            "forks": 5,
+            "open_issues": 0,
+            "watchers": 3,
+            "default_branch": "main"
+          }
+        },
+        "base": {
+          "label": "discord:main",
+          "ref": "main",
+          "sha": "03cf63a71b222fd8d53778d319211960211e9a19",
+          "user": {
+            "login": "discord",
+            "id": 1965106,
+            "node_id": "MDEyOk9yZ2FuaXphdGlvbjE5NjUxMDY=",
+            "gravatar_id": "",
+            "url": "https://api.github.com/users/discord",
+            "type": "Organization",
+            "site_admin": false
+          },
+          "repo": {
+            "id": 388236068,
+            "node_id": "MDEwOlJlcG9zaXRvcnkzODgyMzYwNjg=",
+            "name": "jemalloc_info",
+            "full_name": "discord/jemalloc_info",
+            "private": false,
+            "owner": {
+              "login": "discord",
+              "id": 1965106,
+              "node_id": "MDEyOk9yZ2FuaXphdGlvbjE5NjUxMDY=",
+              "gravatar_id": "",
+              "url": "https://api.github.com/users/discord",
+              "type": "Organization",
+              "site_admin": false
+            },
+            "description": "A small library for exporting jemalloc allocation data in Elixir",
+            "fork": false,
+            "url": "https://api.github.com/repos/discord/jemalloc_info",
+            "created_at": "2021-07-21T20:19:09Z",
+            "updated_at": "2022-12-07T20:49:35Z",
+            "pushed_at": "2022-07-27T18:39:16Z",
+            "homepage": "",
+            "size": 19,
+            "stargazers_count": 3,
+            "watchers_count": 3,
+            "language": "Elixir",
+            "has_issues": true,
+            "has_projects": true,
+            "has_downloads": true,
+            "has_wiki": true,
+            "has_pages": false,
+            "has_discussions": false,
+            "forks_count": 5,
+            "archived": false,
+            "disabled": false,
+            "open_issues_count": 0,
+            "license": {
+              "key": "mit",
+              "name": "MIT License",
+              "spdx_id": "MIT",
+              "url": "https://api.github.com/licenses/mit",
+              "node_id": "MDc6TGljZW5zZTEz"
+            },
+            "allow_forking": true,
+            "is_template": false,
+            "web_commit_signoff_required": false,
+            "topics": [],
+            "visibility": "public",
+            "forks": 5,
+            "open_issues": 0,
+            "watchers": 3,
+            "default_branch": "main"
+          }
+        },
+        "_links": {
+          "self": {
+            "href": "https://api.github.com/repos/discord/jemalloc_info/pulls/3"
+          },
+          "html": {
+            "href": "https://github.com/discord/jemalloc_info/pull/3"
+          },
+          "issue": {
+            "href": "https://api.github.com/repos/discord/jemalloc_info/issues/3"
+          },
+          "comments": {
+            "href": "https://api.github.com/repos/discord/jemalloc_info/issues/3/comments"
+          },
+          "review_comments": {
+            "href": "https://api.github.com/repos/discord/jemalloc_info/pulls/3/comments"
+          },
+          "review_comment": {
+            "href": "https://api.github.com/repos/discord/jemalloc_info/pulls/comments{/number}"
+          },
+          "commits": {
+            "href": "https://api.github.com/repos/discord/jemalloc_info/pulls/3/commits"
+          },
+          "statuses": {
+            "href": "https://api.github.com/repos/discord/jemalloc_info/statuses/49bb7e8c92b1920ebe7c61ae7e07084be4caef64"
+          }
+        },
+        "author_association": "COLLABORATOR",
+        "auto_merge": null,
+        "active_lock_reason": null
+      }
+    ]
   }
 }

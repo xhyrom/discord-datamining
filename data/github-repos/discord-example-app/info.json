@@ -340,7 +340,1213 @@
       }
     ],
     "releases": [],
-    "issues": [],
-    "pullRequests": []
+    "issues": [
+      {
+        "url": "https://api.github.com/repos/discord/discord-example-app/issues/25",
+        "id": 1683145441,
+        "node_id": "I_kwDOHJUbBc5kUsLh",
+        "number": 25,
+        "title": "Unauthorized issue",
+        "user": {
+          "login": "LightC0d3r",
+          "id": 99517300,
+          "node_id": "U_kgDOBe6DdA",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/LightC0d3r",
+          "type": "User",
+          "site_admin": false
+        },
+        "labels": [],
+        "state": "open",
+        "locked": false,
+        "assignee": null,
+        "assignees": [],
+        "milestone": null,
+        "comments": 1,
+        "created_at": "2023-04-25T13:08:49Z",
+        "updated_at": "2023-04-25T18:50:50Z",
+        "closed_at": null,
+        "author_association": "NONE",
+        "active_lock_reason": null,
+        "body": "When I ran npm run register it said 401\r\nError: {\"message\":\"401: Unauthorized\",\"code\":0}\r\n    at DiscordRequest (file:///C:/Users/kbrow/Downloads/discord-example-app/utils.js:36:11)\r\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)\r\n    at async InstallGlobalCommands (file:///C:/Users/kbrow/Downloads/discord-example-app/utils.js:48:5) \r\nwhen I put everything in correctly in the .env file",
+        "reactions": {
+          "url": "https://api.github.com/repos/discord/discord-example-app/issues/25/reactions",
+          "total_count": 0,
+          "+1": 0,
+          "-1": 0,
+          "laugh": 0,
+          "hooray": 0,
+          "confused": 0,
+          "heart": 0,
+          "rocket": 0,
+          "eyes": 0
+        },
+        "performed_via_github_app": null,
+        "state_reason": null
+      },
+      {
+        "url": "https://api.github.com/repos/discord/discord-example-app/issues/24",
+        "id": 1679312773,
+        "node_id": "PR_kwDOHJUbBc5O52fC",
+        "number": 24,
+        "title": "fix: APPLICATION_MODAL type doesn't exist upon the discord-interactions",
+        "user": {
+          "login": "JayyDoesDev",
+          "id": 69683068,
+          "node_id": "MDQ6VXNlcjY5NjgzMDY4",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/JayyDoesDev",
+          "type": "User",
+          "site_admin": false
+        },
+        "labels": [],
+        "state": "open",
+        "locked": false,
+        "assignee": null,
+        "assignees": [],
+        "milestone": null,
+        "comments": 0,
+        "created_at": "2023-04-22T03:53:53Z",
+        "updated_at": "2023-04-25T11:29:07Z",
+        "closed_at": null,
+        "author_association": "NONE",
+        "active_lock_reason": null,
+        "draft": false,
+        "pull_request": {
+          "url": "https://api.github.com/repos/discord/discord-example-app/pulls/24",
+          "merged_at": null
+        },
+        "body": "As of https://github.com/discord/discord-interactions-js/blob/main/src/index.ts the type should be MODAL, not APPLICATION_MODAL. Discovered from https://github.com/discord/discord-example-app/issues/21",
+        "reactions": {
+          "url": "https://api.github.com/repos/discord/discord-example-app/issues/24/reactions",
+          "total_count": 0,
+          "+1": 0,
+          "-1": 0,
+          "laugh": 0,
+          "hooray": 0,
+          "confused": 0,
+          "heart": 0,
+          "rocket": 0,
+          "eyes": 0
+        },
+        "performed_via_github_app": null,
+        "state_reason": null
+      },
+      {
+        "url": "https://api.github.com/repos/discord/discord-example-app/issues/23",
+        "id": 1669634362,
+        "node_id": "PR_kwDOHJUbBc5OZd1g",
+        "number": 23,
+        "title": "Events",
+        "user": {
+          "login": "ljtijhuis",
+          "id": 922323,
+          "node_id": "MDQ6VXNlcjkyMjMyMw==",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/ljtijhuis",
+          "type": "User",
+          "site_admin": false
+        },
+        "labels": [],
+        "state": "closed",
+        "locked": false,
+        "assignee": null,
+        "assignees": [],
+        "milestone": null,
+        "comments": 0,
+        "created_at": "2023-04-16T01:50:36Z",
+        "updated_at": "2023-04-16T01:51:35Z",
+        "closed_at": "2023-04-16T01:50:42Z",
+        "author_association": "NONE",
+        "active_lock_reason": null,
+        "draft": false,
+        "pull_request": {
+          "url": "https://api.github.com/repos/discord/discord-example-app/pulls/23",
+          "merged_at": null
+        },
+        "body": null,
+        "reactions": {
+          "url": "https://api.github.com/repos/discord/discord-example-app/issues/23/reactions",
+          "total_count": 0,
+          "+1": 0,
+          "-1": 0,
+          "laugh": 0,
+          "hooray": 0,
+          "confused": 0,
+          "heart": 0,
+          "rocket": 0,
+          "eyes": 0
+        },
+        "performed_via_github_app": null,
+        "state_reason": null
+      },
+      {
+        "url": "https://api.github.com/repos/discord/discord-example-app/issues/22",
+        "id": 1631067559,
+        "node_id": "PR_kwDOHJUbBc5MZYTg",
+        "number": 22,
+        "title": "Update command registration",
+        "user": {
+          "login": "shaydewael",
+          "id": 3411005,
+          "node_id": "MDQ6VXNlcjM0MTEwMDU=",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/shaydewael",
+          "type": "User",
+          "site_admin": false
+        },
+        "labels": [],
+        "state": "closed",
+        "locked": false,
+        "assignee": null,
+        "assignees": [],
+        "milestone": null,
+        "comments": 0,
+        "created_at": "2023-03-19T18:40:44Z",
+        "updated_at": "2023-03-20T17:50:12Z",
+        "closed_at": "2023-03-20T17:50:12Z",
+        "author_association": "CONTRIBUTOR",
+        "active_lock_reason": null,
+        "draft": false,
+        "pull_request": {
+          "url": "https://api.github.com/repos/discord/discord-example-app/pulls/22",
+          "merged_at": "2023-03-20T17:50:12Z"
+        },
+        "body": "- Update command registration to use `npm run register` instead of just checking for commands every time server is started\r\n- Change to use bulk overwrite method and global commands (they don't have the same propagation times anymore)\r\n- Update docs\r\n- Update `app.js` to be template for tutorial, move full `app.js` into `examples/app.js`",
+        "reactions": {
+          "url": "https://api.github.com/repos/discord/discord-example-app/issues/22/reactions",
+          "total_count": 0,
+          "+1": 0,
+          "-1": 0,
+          "laugh": 0,
+          "hooray": 0,
+          "confused": 0,
+          "heart": 0,
+          "rocket": 0,
+          "eyes": 0
+        },
+        "performed_via_github_app": null,
+        "state_reason": null
+      },
+      {
+        "url": "https://api.github.com/repos/discord/discord-example-app/issues/21",
+        "id": 1613709744,
+        "node_id": "I_kwDOHJUbBc5gL0Gw",
+        "number": 21,
+        "title": "Examples : InteractionResponseType.MODAL instead of InterationResponseType.APPLICATION_MODAL",
+        "user": {
+          "login": "yannisroy",
+          "id": 200157,
+          "node_id": "MDQ6VXNlcjIwMDE1Nw==",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/yannisroy",
+          "type": "User",
+          "site_admin": false
+        },
+        "labels": [],
+        "state": "open",
+        "locked": false,
+        "assignee": null,
+        "assignees": [],
+        "milestone": null,
+        "comments": 0,
+        "created_at": "2023-03-07T15:40:05Z",
+        "updated_at": "2023-03-07T15:40:05Z",
+        "closed_at": null,
+        "author_association": "NONE",
+        "active_lock_reason": null,
+        "body": "I was struggling using modal interactions and getting \"Interaction failed\" errors.\r\n\r\nExemple here does not match correct response type : \r\nhttps://github.com/discord/discord-example-app/blob/main/examples/modal.js#L25\r\n\r\nSolved when using `InteractionResponseType.MODAL`",
+        "reactions": {
+          "url": "https://api.github.com/repos/discord/discord-example-app/issues/21/reactions",
+          "total_count": 0,
+          "+1": 0,
+          "-1": 0,
+          "laugh": 0,
+          "hooray": 0,
+          "confused": 0,
+          "heart": 0,
+          "rocket": 0,
+          "eyes": 0
+        },
+        "performed_via_github_app": null,
+        "state_reason": null
+      }
+    ],
+    "pullRequests": [
+      {
+        "url": "https://api.github.com/repos/discord/discord-example-app/pulls/24",
+        "id": 1323788226,
+        "node_id": "PR_kwDOHJUbBc5O52fC",
+        "number": 24,
+        "state": "open",
+        "locked": false,
+        "title": "fix: APPLICATION_MODAL type doesn't exist upon the discord-interactions",
+        "user": {
+          "login": "JayyDoesDev",
+          "id": 69683068,
+          "node_id": "MDQ6VXNlcjY5NjgzMDY4",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/JayyDoesDev",
+          "type": "User",
+          "site_admin": false
+        },
+        "body": "As of https://github.com/discord/discord-interactions-js/blob/main/src/index.ts the type should be MODAL, not APPLICATION_MODAL. Discovered from https://github.com/discord/discord-example-app/issues/21",
+        "created_at": "2023-04-22T03:53:53Z",
+        "updated_at": "2023-04-25T11:29:07Z",
+        "closed_at": null,
+        "merged_at": null,
+        "merge_commit_sha": "f8e9c054e6e11db4187058853dce2817ca8abf30",
+        "assignee": null,
+        "assignees": [],
+        "requested_reviewers": [],
+        "requested_teams": [],
+        "labels": [],
+        "milestone": null,
+        "draft": false,
+        "head": {
+          "label": "JayyDoesDev:main",
+          "ref": "main",
+          "sha": "407867b9056208eb954bf6ae0d0a6184450f253d",
+          "user": {
+            "login": "JayyDoesDev",
+            "id": 69683068,
+            "node_id": "MDQ6VXNlcjY5NjgzMDY4",
+            "gravatar_id": "",
+            "url": "https://api.github.com/users/JayyDoesDev",
+            "type": "User",
+            "site_admin": false
+          },
+          "repo": {
+            "id": 631138105,
+            "node_id": "R_kgDOJZ5nOQ",
+            "name": "discord-example-app",
+            "full_name": "JayyDoesDev/discord-example-app",
+            "private": false,
+            "owner": {
+              "login": "JayyDoesDev",
+              "id": 69683068,
+              "node_id": "MDQ6VXNlcjY5NjgzMDY4",
+              "gravatar_id": "",
+              "url": "https://api.github.com/users/JayyDoesDev",
+              "type": "User",
+              "site_admin": false
+            },
+            "description": "Basic Discord app with examples",
+            "fork": true,
+            "url": "https://api.github.com/repos/JayyDoesDev/discord-example-app",
+            "created_at": "2023-04-22T03:48:30Z",
+            "updated_at": "2023-04-22T03:50:27Z",
+            "pushed_at": "2023-04-22T04:16:47Z",
+            "homepage": "",
+            "size": 1167,
+            "stargazers_count": 0,
+            "watchers_count": 0,
+            "language": "JavaScript",
+            "has_issues": false,
+            "has_projects": true,
+            "has_downloads": true,
+            "has_wiki": true,
+            "has_pages": false,
+            "has_discussions": false,
+            "forks_count": 0,
+            "archived": false,
+            "disabled": false,
+            "open_issues_count": 0,
+            "license": {
+              "key": "mit",
+              "name": "MIT License",
+              "spdx_id": "MIT",
+              "url": "https://api.github.com/licenses/mit",
+              "node_id": "MDc6TGljZW5zZTEz"
+            },
+            "allow_forking": true,
+            "is_template": false,
+            "web_commit_signoff_required": false,
+            "topics": [],
+            "visibility": "public",
+            "forks": 0,
+            "open_issues": 0,
+            "watchers": 0,
+            "default_branch": "main"
+          }
+        },
+        "base": {
+          "label": "discord:main",
+          "ref": "main",
+          "sha": "df0fee33af30aa763ae53db664dd958d1aeb12b2",
+          "user": {
+            "login": "discord",
+            "id": 1965106,
+            "node_id": "MDEyOk9yZ2FuaXphdGlvbjE5NjUxMDY=",
+            "gravatar_id": "",
+            "url": "https://api.github.com/users/discord",
+            "type": "Organization",
+            "site_admin": false
+          },
+          "repo": {
+            "id": 479533829,
+            "node_id": "R_kgDOHJUbBQ",
+            "name": "discord-example-app",
+            "full_name": "discord/discord-example-app",
+            "private": false,
+            "owner": {
+              "login": "discord",
+              "id": 1965106,
+              "node_id": "MDEyOk9yZ2FuaXphdGlvbjE5NjUxMDY=",
+              "gravatar_id": "",
+              "url": "https://api.github.com/users/discord",
+              "type": "Organization",
+              "site_admin": false
+            },
+            "description": "Basic Discord app with examples",
+            "fork": false,
+            "url": "https://api.github.com/repos/discord/discord-example-app",
+            "created_at": "2022-04-08T20:46:13Z",
+            "updated_at": "2023-04-25T15:31:11Z",
+            "pushed_at": "2023-04-22T04:16:49Z",
+            "homepage": "",
+            "size": 1159,
+            "stargazers_count": 267,
+            "watchers_count": 267,
+            "language": "JavaScript",
+            "has_issues": true,
+            "has_projects": true,
+            "has_downloads": true,
+            "has_wiki": true,
+            "has_pages": false,
+            "has_discussions": false,
+            "forks_count": 242,
+            "archived": false,
+            "disabled": false,
+            "open_issues_count": 6,
+            "license": {
+              "key": "mit",
+              "name": "MIT License",
+              "spdx_id": "MIT",
+              "url": "https://api.github.com/licenses/mit",
+              "node_id": "MDc6TGljZW5zZTEz"
+            },
+            "allow_forking": true,
+            "is_template": false,
+            "web_commit_signoff_required": false,
+            "topics": [],
+            "visibility": "public",
+            "forks": 242,
+            "open_issues": 6,
+            "watchers": 267,
+            "default_branch": "main"
+          }
+        },
+        "_links": {
+          "self": {
+            "href": "https://api.github.com/repos/discord/discord-example-app/pulls/24"
+          },
+          "html": {
+            "href": "https://github.com/discord/discord-example-app/pull/24"
+          },
+          "issue": {
+            "href": "https://api.github.com/repos/discord/discord-example-app/issues/24"
+          },
+          "comments": {
+            "href": "https://api.github.com/repos/discord/discord-example-app/issues/24/comments"
+          },
+          "review_comments": {
+            "href": "https://api.github.com/repos/discord/discord-example-app/pulls/24/comments"
+          },
+          "review_comment": {
+            "href": "https://api.github.com/repos/discord/discord-example-app/pulls/comments{/number}"
+          },
+          "commits": {
+            "href": "https://api.github.com/repos/discord/discord-example-app/pulls/24/commits"
+          },
+          "statuses": {
+            "href": "https://api.github.com/repos/discord/discord-example-app/statuses/407867b9056208eb954bf6ae0d0a6184450f253d"
+          }
+        },
+        "author_association": "NONE",
+        "auto_merge": null,
+        "active_lock_reason": null
+      },
+      {
+        "url": "https://api.github.com/repos/discord/discord-example-app/pulls/23",
+        "id": 1315298656,
+        "node_id": "PR_kwDOHJUbBc5OZd1g",
+        "number": 23,
+        "state": "closed",
+        "locked": false,
+        "title": "Events",
+        "user": {
+          "login": "ljtijhuis",
+          "id": 922323,
+          "node_id": "MDQ6VXNlcjkyMjMyMw==",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/ljtijhuis",
+          "type": "User",
+          "site_admin": false
+        },
+        "body": null,
+        "created_at": "2023-04-16T01:50:36Z",
+        "updated_at": "2023-04-16T01:51:35Z",
+        "closed_at": "2023-04-16T01:50:42Z",
+        "merged_at": null,
+        "merge_commit_sha": "4d25fdc0a6a7e8f500890dc6f2e5298868080194",
+        "assignee": null,
+        "assignees": [],
+        "requested_reviewers": [],
+        "requested_teams": [],
+        "labels": [],
+        "milestone": null,
+        "draft": false,
+        "head": {
+          "label": "ljtijhuis:events",
+          "ref": "events",
+          "sha": "622b2f7c96dab7830d51f16abe55af7bf3d7682c",
+          "user": {
+            "login": "ljtijhuis",
+            "id": 922323,
+            "node_id": "MDQ6VXNlcjkyMjMyMw==",
+            "gravatar_id": "",
+            "url": "https://api.github.com/users/ljtijhuis",
+            "type": "User",
+            "site_admin": false
+          },
+          "repo": {
+            "id": 623775780,
+            "node_id": "R_kgDOJS4QJA",
+            "name": "discord-book-club-bot",
+            "full_name": "ljtijhuis/discord-book-club-bot",
+            "private": false,
+            "owner": {
+              "login": "ljtijhuis",
+              "id": 922323,
+              "node_id": "MDQ6VXNlcjkyMjMyMw==",
+              "gravatar_id": "",
+              "url": "https://api.github.com/users/ljtijhuis",
+              "type": "User",
+              "site_admin": false
+            },
+            "description": "Discord app that allows management of your Book Club reads!",
+            "fork": true,
+            "url": "https://api.github.com/repos/ljtijhuis/discord-book-club-bot",
+            "created_at": "2023-04-05T04:07:57Z",
+            "updated_at": "2023-04-16T04:41:02Z",
+            "pushed_at": "2023-04-24T20:10:52Z",
+            "homepage": "",
+            "size": 1274,
+            "stargazers_count": 0,
+            "watchers_count": 0,
+            "language": "TypeScript",
+            "has_issues": false,
+            "has_projects": true,
+            "has_downloads": true,
+            "has_wiki": true,
+            "has_pages": false,
+            "has_discussions": false,
+            "forks_count": 0,
+            "archived": false,
+            "disabled": false,
+            "open_issues_count": 0,
+            "license": {
+              "key": "mit",
+              "name": "MIT License",
+              "spdx_id": "MIT",
+              "url": "https://api.github.com/licenses/mit",
+              "node_id": "MDc6TGljZW5zZTEz"
+            },
+            "allow_forking": true,
+            "is_template": false,
+            "web_commit_signoff_required": false,
+            "topics": [
+              "bookclub",
+              "books",
+              "club"
+            ],
+            "visibility": "public",
+            "forks": 0,
+            "open_issues": 0,
+            "watchers": 0,
+            "default_branch": "main"
+          }
+        },
+        "base": {
+          "label": "discord:main",
+          "ref": "main",
+          "sha": "df0fee33af30aa763ae53db664dd958d1aeb12b2",
+          "user": {
+            "login": "discord",
+            "id": 1965106,
+            "node_id": "MDEyOk9yZ2FuaXphdGlvbjE5NjUxMDY=",
+            "gravatar_id": "",
+            "url": "https://api.github.com/users/discord",
+            "type": "Organization",
+            "site_admin": false
+          },
+          "repo": {
+            "id": 479533829,
+            "node_id": "R_kgDOHJUbBQ",
+            "name": "discord-example-app",
+            "full_name": "discord/discord-example-app",
+            "private": false,
+            "owner": {
+              "login": "discord",
+              "id": 1965106,
+              "node_id": "MDEyOk9yZ2FuaXphdGlvbjE5NjUxMDY=",
+              "gravatar_id": "",
+              "url": "https://api.github.com/users/discord",
+              "type": "Organization",
+              "site_admin": false
+            },
+            "description": "Basic Discord app with examples",
+            "fork": false,
+            "url": "https://api.github.com/repos/discord/discord-example-app",
+            "created_at": "2022-04-08T20:46:13Z",
+            "updated_at": "2023-04-25T15:31:11Z",
+            "pushed_at": "2023-04-22T04:16:49Z",
+            "homepage": "",
+            "size": 1159,
+            "stargazers_count": 267,
+            "watchers_count": 267,
+            "language": "JavaScript",
+            "has_issues": true,
+            "has_projects": true,
+            "has_downloads": true,
+            "has_wiki": true,
+            "has_pages": false,
+            "has_discussions": false,
+            "forks_count": 242,
+            "archived": false,
+            "disabled": false,
+            "open_issues_count": 6,
+            "license": {
+              "key": "mit",
+              "name": "MIT License",
+              "spdx_id": "MIT",
+              "url": "https://api.github.com/licenses/mit",
+              "node_id": "MDc6TGljZW5zZTEz"
+            },
+            "allow_forking": true,
+            "is_template": false,
+            "web_commit_signoff_required": false,
+            "topics": [],
+            "visibility": "public",
+            "forks": 242,
+            "open_issues": 6,
+            "watchers": 267,
+            "default_branch": "main"
+          }
+        },
+        "_links": {
+          "self": {
+            "href": "https://api.github.com/repos/discord/discord-example-app/pulls/23"
+          },
+          "html": {
+            "href": "https://github.com/discord/discord-example-app/pull/23"
+          },
+          "issue": {
+            "href": "https://api.github.com/repos/discord/discord-example-app/issues/23"
+          },
+          "comments": {
+            "href": "https://api.github.com/repos/discord/discord-example-app/issues/23/comments"
+          },
+          "review_comments": {
+            "href": "https://api.github.com/repos/discord/discord-example-app/pulls/23/comments"
+          },
+          "review_comment": {
+            "href": "https://api.github.com/repos/discord/discord-example-app/pulls/comments{/number}"
+          },
+          "commits": {
+            "href": "https://api.github.com/repos/discord/discord-example-app/pulls/23/commits"
+          },
+          "statuses": {
+            "href": "https://api.github.com/repos/discord/discord-example-app/statuses/622b2f7c96dab7830d51f16abe55af7bf3d7682c"
+          }
+        },
+        "author_association": "NONE",
+        "auto_merge": null,
+        "active_lock_reason": null
+      },
+      {
+        "url": "https://api.github.com/repos/discord/discord-example-app/pulls/22",
+        "id": 1281721568,
+        "node_id": "PR_kwDOHJUbBc5MZYTg",
+        "number": 22,
+        "state": "closed",
+        "locked": false,
+        "title": "Update command registration",
+        "user": {
+          "login": "shaydewael",
+          "id": 3411005,
+          "node_id": "MDQ6VXNlcjM0MTEwMDU=",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/shaydewael",
+          "type": "User",
+          "site_admin": false
+        },
+        "body": "- Update command registration to use `npm run register` instead of just checking for commands every time server is started\r\n- Change to use bulk overwrite method and global commands (they don't have the same propagation times anymore)\r\n- Update docs\r\n- Update `app.js` to be template for tutorial, move full `app.js` into `examples/app.js`",
+        "created_at": "2023-03-19T18:40:44Z",
+        "updated_at": "2023-03-20T17:50:12Z",
+        "closed_at": "2023-03-20T17:50:12Z",
+        "merged_at": "2023-03-20T17:50:12Z",
+        "merge_commit_sha": "6ec668cc469b46d7cb4252783f00b8723f18a642",
+        "assignee": null,
+        "assignees": [],
+        "requested_reviewers": [],
+        "requested_teams": [],
+        "labels": [],
+        "milestone": null,
+        "draft": false,
+        "head": {
+          "label": "shaydewael:update-command-registration",
+          "ref": "update-command-registration",
+          "sha": "aa26d1d283b5287a6d861b4d3b347efaba471c4a",
+          "user": {
+            "login": "shaydewael",
+            "id": 3411005,
+            "node_id": "MDQ6VXNlcjM0MTEwMDU=",
+            "gravatar_id": "",
+            "url": "https://api.github.com/users/shaydewael",
+            "type": "User",
+            "site_admin": false
+          },
+          "repo": {
+            "id": 616147097,
+            "node_id": "R_kgDOJLmomQ",
+            "name": "discord-example-app",
+            "full_name": "shaydewael/discord-example-app",
+            "private": false,
+            "owner": {
+              "login": "shaydewael",
+              "id": 3411005,
+              "node_id": "MDQ6VXNlcjM0MTEwMDU=",
+              "gravatar_id": "",
+              "url": "https://api.github.com/users/shaydewael",
+              "type": "User",
+              "site_admin": false
+            },
+            "description": "Basic Discord app with examples",
+            "fork": true,
+            "url": "https://api.github.com/repos/shaydewael/discord-example-app",
+            "created_at": "2023-03-19T18:37:48Z",
+            "updated_at": "2023-03-19T08:06:58Z",
+            "pushed_at": "2023-03-19T18:39:02Z",
+            "homepage": "",
+            "size": 1158,
+            "stargazers_count": 0,
+            "watchers_count": 0,
+            "language": null,
+            "has_issues": false,
+            "has_projects": true,
+            "has_downloads": true,
+            "has_wiki": true,
+            "has_pages": false,
+            "has_discussions": false,
+            "forks_count": 0,
+            "archived": false,
+            "disabled": false,
+            "open_issues_count": 0,
+            "license": {
+              "key": "mit",
+              "name": "MIT License",
+              "spdx_id": "MIT",
+              "url": "https://api.github.com/licenses/mit",
+              "node_id": "MDc6TGljZW5zZTEz"
+            },
+            "allow_forking": true,
+            "is_template": false,
+            "web_commit_signoff_required": false,
+            "topics": [],
+            "visibility": "public",
+            "forks": 0,
+            "open_issues": 0,
+            "watchers": 0,
+            "default_branch": "main"
+          }
+        },
+        "base": {
+          "label": "discord:main",
+          "ref": "main",
+          "sha": "bbe1a594a25cf5a1d6edb9504ef7189cc5fe40ad",
+          "user": {
+            "login": "discord",
+            "id": 1965106,
+            "node_id": "MDEyOk9yZ2FuaXphdGlvbjE5NjUxMDY=",
+            "gravatar_id": "",
+            "url": "https://api.github.com/users/discord",
+            "type": "Organization",
+            "site_admin": false
+          },
+          "repo": {
+            "id": 479533829,
+            "node_id": "R_kgDOHJUbBQ",
+            "name": "discord-example-app",
+            "full_name": "discord/discord-example-app",
+            "private": false,
+            "owner": {
+              "login": "discord",
+              "id": 1965106,
+              "node_id": "MDEyOk9yZ2FuaXphdGlvbjE5NjUxMDY=",
+              "gravatar_id": "",
+              "url": "https://api.github.com/users/discord",
+              "type": "Organization",
+              "site_admin": false
+            },
+            "description": "Basic Discord app with examples",
+            "fork": false,
+            "url": "https://api.github.com/repos/discord/discord-example-app",
+            "created_at": "2022-04-08T20:46:13Z",
+            "updated_at": "2023-04-25T15:31:11Z",
+            "pushed_at": "2023-04-22T04:16:49Z",
+            "homepage": "",
+            "size": 1159,
+            "stargazers_count": 267,
+            "watchers_count": 267,
+            "language": "JavaScript",
+            "has_issues": true,
+            "has_projects": true,
+            "has_downloads": true,
+            "has_wiki": true,
+            "has_pages": false,
+            "has_discussions": false,
+            "forks_count": 242,
+            "archived": false,
+            "disabled": false,
+            "open_issues_count": 6,
+            "license": {
+              "key": "mit",
+              "name": "MIT License",
+              "spdx_id": "MIT",
+              "url": "https://api.github.com/licenses/mit",
+              "node_id": "MDc6TGljZW5zZTEz"
+            },
+            "allow_forking": true,
+            "is_template": false,
+            "web_commit_signoff_required": false,
+            "topics": [],
+            "visibility": "public",
+            "forks": 242,
+            "open_issues": 6,
+            "watchers": 267,
+            "default_branch": "main"
+          }
+        },
+        "_links": {
+          "self": {
+            "href": "https://api.github.com/repos/discord/discord-example-app/pulls/22"
+          },
+          "html": {
+            "href": "https://github.com/discord/discord-example-app/pull/22"
+          },
+          "issue": {
+            "href": "https://api.github.com/repos/discord/discord-example-app/issues/22"
+          },
+          "comments": {
+            "href": "https://api.github.com/repos/discord/discord-example-app/issues/22/comments"
+          },
+          "review_comments": {
+            "href": "https://api.github.com/repos/discord/discord-example-app/pulls/22/comments"
+          },
+          "review_comment": {
+            "href": "https://api.github.com/repos/discord/discord-example-app/pulls/comments{/number}"
+          },
+          "commits": {
+            "href": "https://api.github.com/repos/discord/discord-example-app/pulls/22/commits"
+          },
+          "statuses": {
+            "href": "https://api.github.com/repos/discord/discord-example-app/statuses/aa26d1d283b5287a6d861b4d3b347efaba471c4a"
+          }
+        },
+        "author_association": "CONTRIBUTOR",
+        "auto_merge": null,
+        "active_lock_reason": null
+      },
+      {
+        "url": "https://api.github.com/repos/discord/discord-example-app/pulls/17",
+        "id": 1130729629,
+        "node_id": "PR_kwDOHJUbBc5DZZCd",
+        "number": 17,
+        "state": "closed",
+        "locked": false,
+        "title": "small changes",
+        "user": {
+          "login": "obstructive",
+          "id": 97577933,
+          "node_id": "U_kgDOBdDrzQ",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/obstructive",
+          "type": "User",
+          "site_admin": false
+        },
+        "body": "- remove `package-lock.json` from `.gitignore` (this is required for dependabot and maybe other stuff)\r\n- change [replit](https://replit.com) fork to a github import (avoids people from scraping forks for any leaked tokens)\r\n- bump depedencies",
+        "created_at": "2022-11-21T22:46:53Z",
+        "updated_at": "2023-01-25T17:39:29Z",
+        "closed_at": "2023-01-25T17:39:29Z",
+        "merged_at": "2023-01-25T17:39:29Z",
+        "merge_commit_sha": "bbe1a594a25cf5a1d6edb9504ef7189cc5fe40ad",
+        "assignee": null,
+        "assignees": [],
+        "requested_reviewers": [],
+        "requested_teams": [],
+        "labels": [],
+        "milestone": null,
+        "draft": false,
+        "head": {
+          "label": "obstructive:main",
+          "ref": "main",
+          "sha": "813b1a2add6e28070fabe734886b6b82144a6f5d",
+          "user": {
+            "login": "obstructive",
+            "id": 97577933,
+            "node_id": "U_kgDOBdDrzQ",
+            "gravatar_id": "",
+            "url": "https://api.github.com/users/obstructive",
+            "type": "User",
+            "site_admin": false
+          },
+          "repo": {
+            "id": 569014937,
+            "node_id": "R_kgDOIep6mQ",
+            "name": "discord-example-app",
+            "full_name": "ilyigna/discord-example-app",
+            "private": false,
+            "owner": {
+              "login": "obstructive",
+              "id": 97577933,
+              "node_id": "U_kgDOBdDrzQ",
+              "gravatar_id": "",
+              "url": "https://api.github.com/users/obstructive",
+              "type": "User",
+              "site_admin": false
+            },
+            "description": "Basic Discord app with examples",
+            "fork": true,
+            "url": "https://api.github.com/repos/ilyigna/discord-example-app",
+            "created_at": "2022-11-21T22:32:26Z",
+            "updated_at": "2023-01-25T18:07:34Z",
+            "pushed_at": "2022-11-21T22:45:12Z",
+            "homepage": "",
+            "size": 1163,
+            "stargazers_count": 0,
+            "watchers_count": 0,
+            "language": "JavaScript",
+            "has_issues": false,
+            "has_projects": true,
+            "has_downloads": true,
+            "has_wiki": true,
+            "has_pages": false,
+            "has_discussions": false,
+            "forks_count": 0,
+            "archived": false,
+            "disabled": true,
+            "open_issues_count": 0,
+            "license": {
+              "key": "mit",
+              "name": "MIT License",
+              "spdx_id": "MIT",
+              "url": "https://api.github.com/licenses/mit",
+              "node_id": "MDc6TGljZW5zZTEz"
+            },
+            "allow_forking": true,
+            "is_template": false,
+            "web_commit_signoff_required": false,
+            "topics": [],
+            "visibility": "public",
+            "forks": 0,
+            "open_issues": 0,
+            "watchers": 0,
+            "default_branch": "main"
+          }
+        },
+        "base": {
+          "label": "discord:main",
+          "ref": "main",
+          "sha": "976cf99e580409be9be1b40ff19d980485aeb0e2",
+          "user": {
+            "login": "discord",
+            "id": 1965106,
+            "node_id": "MDEyOk9yZ2FuaXphdGlvbjE5NjUxMDY=",
+            "gravatar_id": "",
+            "url": "https://api.github.com/users/discord",
+            "type": "Organization",
+            "site_admin": false
+          },
+          "repo": {
+            "id": 479533829,
+            "node_id": "R_kgDOHJUbBQ",
+            "name": "discord-example-app",
+            "full_name": "discord/discord-example-app",
+            "private": false,
+            "owner": {
+              "login": "discord",
+              "id": 1965106,
+              "node_id": "MDEyOk9yZ2FuaXphdGlvbjE5NjUxMDY=",
+              "gravatar_id": "",
+              "url": "https://api.github.com/users/discord",
+              "type": "Organization",
+              "site_admin": false
+            },
+            "description": "Basic Discord app with examples",
+            "fork": false,
+            "url": "https://api.github.com/repos/discord/discord-example-app",
+            "created_at": "2022-04-08T20:46:13Z",
+            "updated_at": "2023-04-25T15:31:11Z",
+            "pushed_at": "2023-04-22T04:16:49Z",
+            "homepage": "",
+            "size": 1159,
+            "stargazers_count": 267,
+            "watchers_count": 267,
+            "language": "JavaScript",
+            "has_issues": true,
+            "has_projects": true,
+            "has_downloads": true,
+            "has_wiki": true,
+            "has_pages": false,
+            "has_discussions": false,
+            "forks_count": 242,
+            "archived": false,
+            "disabled": false,
+            "open_issues_count": 6,
+            "license": {
+              "key": "mit",
+              "name": "MIT License",
+              "spdx_id": "MIT",
+              "url": "https://api.github.com/licenses/mit",
+              "node_id": "MDc6TGljZW5zZTEz"
+            },
+            "allow_forking": true,
+            "is_template": false,
+            "web_commit_signoff_required": false,
+            "topics": [],
+            "visibility": "public",
+            "forks": 242,
+            "open_issues": 6,
+            "watchers": 267,
+            "default_branch": "main"
+          }
+        },
+        "_links": {
+          "self": {
+            "href": "https://api.github.com/repos/discord/discord-example-app/pulls/17"
+          },
+          "html": {
+            "href": "https://github.com/discord/discord-example-app/pull/17"
+          },
+          "issue": {
+            "href": "https://api.github.com/repos/discord/discord-example-app/issues/17"
+          },
+          "comments": {
+            "href": "https://api.github.com/repos/discord/discord-example-app/issues/17/comments"
+          },
+          "review_comments": {
+            "href": "https://api.github.com/repos/discord/discord-example-app/pulls/17/comments"
+          },
+          "review_comment": {
+            "href": "https://api.github.com/repos/discord/discord-example-app/pulls/comments{/number}"
+          },
+          "commits": {
+            "href": "https://api.github.com/repos/discord/discord-example-app/pulls/17/commits"
+          },
+          "statuses": {
+            "href": "https://api.github.com/repos/discord/discord-example-app/statuses/813b1a2add6e28070fabe734886b6b82144a6f5d"
+          }
+        },
+        "author_association": "CONTRIBUTOR",
+        "auto_merge": null,
+        "active_lock_reason": null
+      },
+      {
+        "url": "https://api.github.com/repos/discord/discord-example-app/pulls/15",
+        "id": 1103878540,
+        "node_id": "PR_kwDOHJUbBc5By9mM",
+        "number": 15,
+        "state": "closed",
+        "locked": false,
+        "title": "Actually await HasGuildCommand",
+        "user": {
+          "login": "erikras",
+          "id": 4396759,
+          "node_id": "MDQ6VXNlcjQzOTY3NTk=",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/erikras",
+          "type": "User",
+          "site_admin": false
+        },
+        "body": "We've got these two async functions, but they are just being called in a `forEach()`.\r\n\r\nSince these commands are parallelizable, we should await them with a `Promise.all()`.",
+        "created_at": "2022-10-29T08:15:03Z",
+        "updated_at": "2023-03-24T08:02:38Z",
+        "closed_at": "2023-03-24T08:02:38Z",
+        "merged_at": null,
+        "merge_commit_sha": "e8525da09579a3a01d46a586b136388d87aa60c6",
+        "assignee": null,
+        "assignees": [],
+        "requested_reviewers": [],
+        "requested_teams": [],
+        "labels": [],
+        "milestone": null,
+        "draft": false,
+        "head": {
+          "label": "erikras:patch-1",
+          "ref": "patch-1",
+          "sha": "1ae620f1fcdb4bbb2d580217bfe34e9675c3b5e4",
+          "user": {
+            "login": "erikras",
+            "id": 4396759,
+            "node_id": "MDQ6VXNlcjQzOTY3NTk=",
+            "gravatar_id": "",
+            "url": "https://api.github.com/users/erikras",
+            "type": "User",
+            "site_admin": false
+          },
+          "repo": {
+            "id": 559152926,
+            "node_id": "R_kgDOIVP_Hg",
+            "name": "discord-example-app",
+            "full_name": "erikras/discord-example-app",
+            "private": false,
+            "owner": {
+              "login": "erikras",
+              "id": 4396759,
+              "node_id": "MDQ6VXNlcjQzOTY3NTk=",
+              "gravatar_id": "",
+              "url": "https://api.github.com/users/erikras",
+              "type": "User",
+              "site_admin": false
+            },
+            "description": "Basic Discord app with examples",
+            "fork": true,
+            "url": "https://api.github.com/repos/erikras/discord-example-app",
+            "created_at": "2022-10-29T08:12:21Z",
+            "updated_at": "2022-10-29T02:39:44Z",
+            "pushed_at": "2022-10-29T08:13:37Z",
+            "homepage": "",
+            "size": 1157,
+            "stargazers_count": 0,
+            "watchers_count": 0,
+            "language": null,
+            "has_issues": false,
+            "has_projects": true,
+            "has_downloads": true,
+            "has_wiki": true,
+            "has_pages": false,
+            "has_discussions": false,
+            "forks_count": 0,
+            "archived": false,
+            "disabled": false,
+            "open_issues_count": 0,
+            "license": {
+              "key": "mit",
+              "name": "MIT License",
+              "spdx_id": "MIT",
+              "url": "https://api.github.com/licenses/mit",
+              "node_id": "MDc6TGljZW5zZTEz"
+            },
+            "allow_forking": true,
+            "is_template": false,
+            "web_commit_signoff_required": false,
+            "topics": [],
+            "visibility": "public",
+            "forks": 0,
+            "open_issues": 0,
+            "watchers": 0,
+            "default_branch": "main"
+          }
+        },
+        "base": {
+          "label": "discord:main",
+          "ref": "main",
+          "sha": "976cf99e580409be9be1b40ff19d980485aeb0e2",
+          "user": {
+            "login": "discord",
+            "id": 1965106,
+            "node_id": "MDEyOk9yZ2FuaXphdGlvbjE5NjUxMDY=",
+            "gravatar_id": "",
+            "url": "https://api.github.com/users/discord",
+            "type": "Organization",
+            "site_admin": false
+          },
+          "repo": {
+            "id": 479533829,
+            "node_id": "R_kgDOHJUbBQ",
+            "name": "discord-example-app",
+            "full_name": "discord/discord-example-app",
+            "private": false,
+            "owner": {
+              "login": "discord",
+              "id": 1965106,
+              "node_id": "MDEyOk9yZ2FuaXphdGlvbjE5NjUxMDY=",
+              "gravatar_id": "",
+              "url": "https://api.github.com/users/discord",
+              "type": "Organization",
+              "site_admin": false
+            },
+            "description": "Basic Discord app with examples",
+            "fork": false,
+            "url": "https://api.github.com/repos/discord/discord-example-app",
+            "created_at": "2022-04-08T20:46:13Z",
+            "updated_at": "2023-04-25T15:31:11Z",
+            "pushed_at": "2023-04-22T04:16:49Z",
+            "homepage": "",
+            "size": 1159,
+            "stargazers_count": 267,
+            "watchers_count": 267,
+            "language": "JavaScript",
+            "has_issues": true,
+            "has_projects": true,
+            "has_downloads": true,
+            "has_wiki": true,
+            "has_pages": false,
+            "has_discussions": false,
+            "forks_count": 242,
+            "archived": false,
+            "disabled": false,
+            "open_issues_count": 6,
+            "license": {
+              "key": "mit",
+              "name": "MIT License",
+              "spdx_id": "MIT",
+              "url": "https://api.github.com/licenses/mit",
+              "node_id": "MDc6TGljZW5zZTEz"
+            },
+            "allow_forking": true,
+            "is_template": false,
+            "web_commit_signoff_required": false,
+            "topics": [],
+            "visibility": "public",
+            "forks": 242,
+            "open_issues": 6,
+            "watchers": 267,
+            "default_branch": "main"
+          }
+        },
+        "_links": {
+          "self": {
+            "href": "https://api.github.com/repos/discord/discord-example-app/pulls/15"
+          },
+          "html": {
+            "href": "https://github.com/discord/discord-example-app/pull/15"
+          },
+          "issue": {
+            "href": "https://api.github.com/repos/discord/discord-example-app/issues/15"
+          },
+          "comments": {
+            "href": "https://api.github.com/repos/discord/discord-example-app/issues/15/comments"
+          },
+          "review_comments": {
+            "href": "https://api.github.com/repos/discord/discord-example-app/pulls/15/comments"
+          },
+          "review_comment": {
+            "href": "https://api.github.com/repos/discord/discord-example-app/pulls/comments{/number}"
+          },
+          "commits": {
+            "href": "https://api.github.com/repos/discord/discord-example-app/pulls/15/commits"
+          },
+          "statuses": {
+            "href": "https://api.github.com/repos/discord/discord-example-app/statuses/1ae620f1fcdb4bbb2d580217bfe34e9675c3b5e4"
+          }
+        },
+        "author_association": "NONE",
+        "auto_merge": null,
+        "active_lock_reason": null
+      }
+    ]
   }
 }
