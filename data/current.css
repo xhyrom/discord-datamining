@@ -31059,14 +31059,6 @@ img[alt] {
     }
 }
 
-.paymentDropdownFinePrint-4J0PFB {
-    font-size: 12px;
-    line-height: 16px;
-    font-weight: 500;
-    color: var(--text-muted);
-    margin-top: 4px
-}
-
 .paymentDropdown-1q1lBC {
     max-width: 400px
 }
@@ -61398,7 +61390,8 @@ strong {
     right: auto
 }
 
-.unreadPill-3nEWYM {
+.endCap-2wHt31 {
+    position: absolute;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -61409,6 +61402,7 @@ strong {
     -ms-flex-pack: center;
     justify-content: center;
     top: -7px;
+    height: 13px;
     right: 0;
     font-size: 10px;
     line-height: 9px;
@@ -61417,22 +61411,21 @@ strong {
     border-radius: 0 4px 4px 0;
     text-transform: uppercase;
     color: var(--white-500);
-    background-color: var(--divider-color);
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
     border-left: none
 }
 
-.unreadPill-3nEWYM,
-.unreadPillCap-2-iI4h {
-    position: absolute;
-    height: 13px
+.unreadPill-3nEWYM {
+    background-color: var(--divider-color)
 }
 
 .unreadPillCap-2-iI4h {
     display: block;
+    position: absolute;
     left: -8px;
-    top: 0
+    top: 0;
+    height: 13px
 }
 
 .unreadPillCapStroke-1nE1Q8 {
@@ -61457,6 +61450,44 @@ strong {
 
 .isUnread-3Lojb- .content-3spvdd {
     color: var(--divider-color)
+}
+
+.divider-2rZFJK.hasContent-31hcsn.isSummaryDivider-2Hzy_S,
+.divider-2rZFJK.noContent-1w8Nj5.isSummaryDivider-2Hzy_S {
+    -webkit-box-pack: start;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    top: 0
+}
+
+.summaryContent-2L3IwT {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    color: var(--interactive-active);
+    line-height: 18px;
+    font-size: 14px;
+    padding-right: 14px;
+    text-transform: capitalize;
+    padding-left: 20px;
+    font-weight: 500
+}
+
+.summaryStartIcon-1Tz8Yc {
+    padding-right: 4px
+}
+
+.summaryEndContainer-2_5xXM {
+    padding-left: 14px
+}
+
+.summaryIcon-3d1Q_g {
+    color: var(--interactive-active)
 }
 
 .stickerPreviews-8XjlHb {
@@ -85372,7 +85403,10 @@ strong {
 }
 
 .activityItemButtonInnerClass-23Wx8I {
-    width: 100%
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex
 }
 
 .activityItem-3WU8KI {
@@ -85704,12 +85738,6 @@ strong {
 
 .gameNightRocket-2sDJBG {
     margin-right: 8px
-}
-
-.sparkles-2G5lq5 {
-    position: absolute;
-    pointer-events: none;
-    padding: 8px
 }
 
 .container-mIFk1E {
@@ -152662,4 +152690,4 @@ html .invoiceCancelRow-dVOR64 {
     flex-direction: column
 }
 
-/*# sourceMappingURL=40532.b3f2ade6e2b8e66ae93a.css.map*/
+/*# sourceMappingURL=40532.e90dd44a206772c112a8.css.map*/
