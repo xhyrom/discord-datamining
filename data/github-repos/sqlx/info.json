@@ -57,7 +57,160 @@
     "triage": false,
     "pull": false
   },
-  "branches": [],
+  "branches": [
+    {
+      "name": "ab/offline-macros",
+      "commit": {
+        "sha": "0b919dba83af2b7a74c7ee144008c287c6050d61",
+        "url": "https://api.github.com/repos/discord/sqlx/commits/0b919dba83af2b7a74c7ee144008c287c6050d61"
+      },
+      "protected": false
+    },
+    {
+      "name": "ab/pool-fair",
+      "commit": {
+        "sha": "900da99336be88ef4f64273291d067695ef406a6",
+        "url": "https://api.github.com/repos/discord/sqlx/commits/900da99336be88ef4f64273291d067695ef406a6"
+      },
+      "protected": false
+    },
+    {
+      "name": "ab/scalar-macro",
+      "commit": {
+        "sha": "7d9ab81c951c86a530b656fe3988e0f54b9a14df",
+        "url": "https://api.github.com/repos/discord/sqlx/commits/7d9ab81c951c86a530b656fe3988e0f54b9a14df"
+      },
+      "protected": false
+    },
+    {
+      "name": "ab/statement-fix",
+      "commit": {
+        "sha": "e6566f09de299a64adf5f64524f4859c657c5968",
+        "url": "https://api.github.com/repos/discord/sqlx/commits/e6566f09de299a64adf5f64524f4859c657c5968"
+      },
+      "protected": false
+    },
+    {
+      "name": "add_screaming_snake_case",
+      "commit": {
+        "sha": "f42b65c9726790e17e19e31b892480b0c28abd75",
+        "url": "https://api.github.com/repos/discord/sqlx/commits/f42b65c9726790e17e19e31b892480b0c28abd75"
+      },
+      "protected": false
+    },
+    {
+      "name": "circleci-project-setup",
+      "commit": {
+        "sha": "df43326f313e57ed355f2724f649267028755d55",
+        "url": "https://api.github.com/repos/discord/sqlx/commits/df43326f313e57ed355f2724f649267028755d55"
+      },
+      "protected": false
+    },
+    {
+      "name": "cr/log-execution",
+      "commit": {
+        "sha": "67ab9eee745b8691e60b08aaa5f14cac613dc45a",
+        "url": "https://api.github.com/repos/discord/sqlx/commits/67ab9eee745b8691e60b08aaa5f14cac613dc45a"
+      },
+      "protected": false
+    },
+    {
+      "name": "develop",
+      "commit": {
+        "sha": "187f6f21a5ad2b9fc480ba09b11a39d39631755d",
+        "url": "https://api.github.com/repos/discord/sqlx/commits/187f6f21a5ad2b9fc480ba09b11a39d39631755d"
+      },
+      "protected": false
+    },
+    {
+      "name": "feature/binxml",
+      "commit": {
+        "sha": "b381e69034985eed23e920365bc81d5acaad5e74",
+        "url": "https://api.github.com/repos/discord/sqlx/commits/b381e69034985eed23e920365bc81d5acaad5e74"
+      },
+      "protected": false
+    },
+    {
+      "name": "feature/cargo-sqlx",
+      "commit": {
+        "sha": "fe16c83b0fb91af4643e0fb6892039ad0e456cdc",
+        "url": "https://api.github.com/repos/discord/sqlx/commits/fe16c83b0fb91af4643e0fb6892039ad0e456cdc"
+      },
+      "protected": false
+    },
+    {
+      "name": "feature/mssql",
+      "commit": {
+        "sha": "169aefc4e8116a620a34360dbf4bdf3a9cfc9f4d",
+        "url": "https://api.github.com/repos/discord/sqlx/commits/169aefc4e8116a620a34360dbf4bdf3a9cfc9f4d"
+      },
+      "protected": false
+    },
+    {
+      "name": "feature/saslprep",
+      "commit": {
+        "sha": "2d4b55c4ba4e3146917e12b2b676023199e93e3b",
+        "url": "https://api.github.com/repos/discord/sqlx/commits/2d4b55c4ba4e3146917e12b2b676023199e93e3b"
+      },
+      "protected": false
+    },
+    {
+      "name": "master",
+      "commit": {
+        "sha": "92cddc76c886285f95f18bfcb41e12626b4d236f",
+        "url": "https://api.github.com/repos/discord/sqlx/commits/92cddc76c886285f95f18bfcb41e12626b4d236f"
+      },
+      "protected": false
+    },
+    {
+      "name": "mssql",
+      "commit": {
+        "sha": "c5f95bf48009ae113fcc3919d4b93150cbaa81ad",
+        "url": "https://api.github.com/repos/discord/sqlx/commits/c5f95bf48009ae113fcc3919d4b93150cbaa81ad"
+      },
+      "protected": false
+    },
+    {
+      "name": "postgres-geometric-types",
+      "commit": {
+        "sha": "d5d60fb78bd65bbd377cb506757a0280f666eb23",
+        "url": "https://api.github.com/repos/discord/sqlx/commits/d5d60fb78bd65bbd377cb506757a0280f666eb23"
+      },
+      "protected": false
+    },
+    {
+      "name": "query-scalar-columns",
+      "commit": {
+        "sha": "42519e61fd71b46f50ea15dbf9d2f84a1a60e6b1",
+        "url": "https://api.github.com/repos/discord/sqlx/commits/42519e61fd71b46f50ea15dbf9d2f84a1a60e6b1"
+      },
+      "protected": false
+    },
+    {
+      "name": "rl-clippy",
+      "commit": {
+        "sha": "e2b10f6afde51abea61c421f904d4f60f97e10cd",
+        "url": "https://api.github.com/repos/discord/sqlx/commits/e2b10f6afde51abea61c421f904d4f60f97e10cd"
+      },
+      "protected": false
+    },
+    {
+      "name": "rl-docs",
+      "commit": {
+        "sha": "d933c63ffccb1c202165d9c025f3dabf52f908de",
+        "url": "https://api.github.com/repos/discord/sqlx/commits/d933c63ffccb1c202165d9c025f3dabf52f908de"
+      },
+      "protected": false
+    },
+    {
+      "name": "rl-inner-borrow-pg",
+      "commit": {
+        "sha": "0971ef9484da98d9d8acb39327eebf978343fddf",
+        "url": "https://api.github.com/repos/discord/sqlx/commits/0971ef9484da98d9d8acb39327eebf978343fddf"
+      },
+      "protected": false
+    }
+  ],
   "last5": {
     "commits": [
       {
