@@ -16744,12 +16744,6 @@ html.disable-forced-colors * {
     line-height: 1rem
 }
 
-.markup-eYLPri.inlineFormat-27RIC2 .mention,
-.markup-eYLPri .inlineFormat-27RIC2 .mention {
-    background-color: inherit;
-    color: inherit
-}
-
 .markup-eYLPri li {
     white-space: break-spaces;
     margin-bottom: 4px
@@ -16827,10 +16821,6 @@ html.disable-forced-colors * {
 .markup-eYLPri h1 {
     font-size: 1.5rem;
     margin: 16px 0 8px
-}
-
-.markup-eYLPri h1.inlineFormat-27RIC2 {
-    font-size: inherit
 }
 
 .markup-eYLPri h2 {
@@ -153005,4 +152995,4 @@ html .invoiceCancelRow-dVOR64 {
     flex-direction: column
 }
 
-/*# sourceMappingURL=40532.5e957027b3eff99ae81d.css.map*/
+/*# sourceMappingURL=40532.a2a8f6c2e75b52c99b95.css.map*/
