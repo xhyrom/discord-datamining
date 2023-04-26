@@ -64,7 +64,64 @@
     "triage": false,
     "pull": false
   },
-  "branches": [],
+  "branches": [
+    {
+      "name": "ban_encoder_reentrancy",
+      "commit": {
+        "sha": "46ad370a7d488ae9c335de28b06c04b4d813a9c9",
+        "url": "https://api.github.com/repos/discord/erlpack/commits/46ad370a7d488ae9c335de28b06c04b4d813a9c9"
+      },
+      "protected": false
+    },
+    {
+      "name": "feature/java",
+      "commit": {
+        "sha": "2f446be1ac63ccf32e32fa73e8be679221111053",
+        "url": "https://api.github.com/repos/discord/erlpack/commits/2f446be1ac63ccf32e32fa73e8be679221111053"
+      },
+      "protected": false
+    },
+    {
+      "name": "feature/utf8-atoms",
+      "commit": {
+        "sha": "3d4091818da6adc6d0605762008110b200f4bbe8",
+        "url": "https://api.github.com/repos/discord/erlpack/commits/3d4091818da6adc6d0605762008110b200f4bbe8"
+      },
+      "protected": false
+    },
+    {
+      "name": "manylinux-wheel-action",
+      "commit": {
+        "sha": "7dfd01a73709af99897332082f76c8437d2ddd95",
+        "url": "https://api.github.com/repos/discord/erlpack/commits/7dfd01a73709af99897332082f76c8437d2ddd95"
+      },
+      "protected": false
+    },
+    {
+      "name": "master",
+      "commit": {
+        "sha": "cbe76be04c2210fc9cb6ff95910f0937c1011d04",
+        "url": "https://api.github.com/repos/discord/erlpack/commits/cbe76be04c2210fc9cb6ff95910f0937c1011d04"
+      },
+      "protected": false
+    },
+    {
+      "name": "python3",
+      "commit": {
+        "sha": "b7bf5228485e8f52951eda9ef5333440d8b073a6",
+        "url": "https://api.github.com/repos/discord/erlpack/commits/b7bf5228485e8f52951eda9ef5333440d8b073a6"
+      },
+      "protected": false
+    },
+    {
+      "name": "trying-things",
+      "commit": {
+        "sha": "30dc1295064bc460733158f6af552e633078e995",
+        "url": "https://api.github.com/repos/discord/erlpack/commits/30dc1295064bc460733158f6af552e633078e995"
+      },
+      "protected": false
+    }
+  ],
   "last5": {
     "commits": [
       {
@@ -351,233 +408,7 @@
       }
     ],
     "releases": [],
-    "issues": [
-      {
-        "url": "https://api.github.com/repos/discord/erlpack/issues/59",
-        "id": 1571433867,
-        "node_id": "I_kwDOAt2oTc5dqi2L",
-        "number": 59,
-        "title": "Rust support",
-        "user": {
-          "login": "AngeloCore",
-          "id": 62988428,
-          "node_id": "MDQ6VXNlcjYyOTg4NDI4",
-          "gravatar_id": "",
-          "url": "https://api.github.com/users/AngeloCore",
-          "type": "User",
-          "site_admin": false
-        },
-        "labels": [],
-        "state": "open",
-        "locked": false,
-        "assignee": null,
-        "assignees": [],
-        "milestone": null,
-        "comments": 0,
-        "created_at": "2023-02-05T13:39:08Z",
-        "updated_at": "2023-02-05T13:39:08Z",
-        "closed_at": null,
-        "author_association": "NONE",
-        "active_lock_reason": null,
-        "body": "Please make a rust crate for `erlpack`",
-        "reactions": {
-          "url": "https://api.github.com/repos/discord/erlpack/issues/59/reactions",
-          "total_count": 0,
-          "+1": 0,
-          "-1": 0,
-          "laugh": 0,
-          "hooray": 0,
-          "confused": 0,
-          "heart": 0,
-          "rocket": 0,
-          "eyes": 0
-        },
-        "performed_via_github_app": null,
-        "state_reason": null
-      },
-      {
-        "url": "https://api.github.com/repos/discord/erlpack/issues/58",
-        "id": 1514552569,
-        "node_id": "PR_kwDOAt2oTc5GZA-Q",
-        "number": 58,
-        "title": "Update nan package to fix build issue",
-        "user": {
-          "login": "JMTK",
-          "id": 877114,
-          "node_id": "MDQ6VXNlcjg3NzExNA==",
-          "gravatar_id": "",
-          "url": "https://api.github.com/users/JMTK",
-          "type": "User",
-          "site_admin": false
-        },
-        "labels": [],
-        "state": "open",
-        "locked": false,
-        "assignee": null,
-        "assignees": [],
-        "milestone": null,
-        "comments": 0,
-        "created_at": "2022-12-30T14:14:03Z",
-        "updated_at": "2023-01-14T02:07:36Z",
-        "closed_at": null,
-        "author_association": "NONE",
-        "active_lock_reason": null,
-        "draft": false,
-        "pull_request": {
-          "url": "https://api.github.com/repos/discord/erlpack/pulls/58",
-          "merged_at": null
-        },
-        "body": "The postbuild script to rebuild those packages when installing discord.js (on Node 19 for me) with:\r\n\r\n```\r\n../../nan/nan_callbacks.h:55:23: error: ‘AccessorSignature’ is not a member of ‘v8’\r\n   55 | typedef v8::Local<v8::AccessorSignature> Sig;\r\n      |                       ^~~~~~~~~~~~~~~~~\r\n../../nan/nan_callbacks.h:55:40: error: template argument 1 is invalid\r\n   55 | typedef v8::Local<v8::AccessorSignature> Sig;\r\n      | \r\n```\r\n\r\nChangelog: https://github.com/nodejs/nan/compare/v2.16.0...v2.17.0\r\n\r\n`yarn why nan` showed that those packages prefer the older versions, simply adding to my package.json\r\n```json\r\n\"resolutions\": {\r\n    \"nan\": \"2.17.0\"\r\n},\r\n```\r\n\r\nfixes the issue. Not sure if there's anything better I could do",
-        "reactions": {
-          "url": "https://api.github.com/repos/discord/erlpack/issues/58/reactions",
-          "total_count": 0,
-          "+1": 0,
-          "-1": 0,
-          "laugh": 0,
-          "hooray": 0,
-          "confused": 0,
-          "heart": 0,
-          "rocket": 0,
-          "eyes": 0
-        },
-        "performed_via_github_app": null,
-        "state_reason": null
-      },
-      {
-        "url": "https://api.github.com/repos/discord/erlpack/issues/57",
-        "id": 1428779554,
-        "node_id": "I_kwDOAt2oTc5VKXIi",
-        "number": 57,
-        "title": "Update nan to 2.17.0",
-        "user": {
-          "login": "VlaDexa",
-          "id": 52157081,
-          "node_id": "MDQ6VXNlcjUyMTU3MDgx",
-          "gravatar_id": "",
-          "url": "https://api.github.com/users/VlaDexa",
-          "type": "User",
-          "site_admin": false
-        },
-        "labels": [],
-        "state": "open",
-        "locked": false,
-        "assignee": null,
-        "assignees": [],
-        "milestone": null,
-        "comments": 0,
-        "created_at": "2022-10-30T13:02:30Z",
-        "updated_at": "2022-10-30T13:02:30Z",
-        "closed_at": null,
-        "author_association": "NONE",
-        "active_lock_reason": null,
-        "body": "Due to update of v8, you can't build erlpack on nodejs 19, because they removed v8::AccessorSignature, used by nan pre 2.17 version",
-        "reactions": {
-          "url": "https://api.github.com/repos/discord/erlpack/issues/57/reactions",
-          "total_count": 0,
-          "+1": 0,
-          "-1": 0,
-          "laugh": 0,
-          "hooray": 0,
-          "confused": 0,
-          "heart": 0,
-          "rocket": 0,
-          "eyes": 0
-        },
-        "performed_via_github_app": null,
-        "state_reason": null
-      },
-      {
-        "url": "https://api.github.com/repos/discord/erlpack/issues/56",
-        "id": 1398316530,
-        "node_id": "PR_kwDOAt2oTc5APff0",
-        "number": 56,
-        "title": "[erlpack] Ban same-encoder reentrancy",
-        "user": {
-          "login": "ypisetsky",
-          "id": 287854,
-          "node_id": "MDQ6VXNlcjI4Nzg1NA==",
-          "gravatar_id": "",
-          "url": "https://api.github.com/users/ypisetsky",
-          "type": "User",
-          "site_admin": false
-        },
-        "labels": [],
-        "state": "closed",
-        "locked": false,
-        "assignee": null,
-        "assignees": [],
-        "milestone": null,
-        "comments": 0,
-        "created_at": "2022-10-05T20:06:42Z",
-        "updated_at": "2022-10-14T17:06:39Z",
-        "closed_at": "2022-10-14T17:06:39Z",
-        "author_association": "CONTRIBUTOR",
-        "active_lock_reason": null,
-        "draft": false,
-        "pull_request": {
-          "url": "https://api.github.com/repos/discord/erlpack/pulls/56",
-          "merged_at": "2022-10-14T17:06:39Z"
-        },
-        "body": "The encoder_hook feature allows for arbitrary python code to be called while an ErlangTermEncoder assumes that it is able to muck with its memory at will. This is usually fine, but if someone were to attempt to pack something with the same encoder instance, it would clobber the previous encoding attempt. We track this situation with a flag and bail out loudly in this situation.",
-        "reactions": {
-          "url": "https://api.github.com/repos/discord/erlpack/issues/56/reactions",
-          "total_count": 0,
-          "+1": 0,
-          "-1": 0,
-          "laugh": 0,
-          "hooray": 0,
-          "confused": 0,
-          "heart": 0,
-          "rocket": 0,
-          "eyes": 0
-        },
-        "performed_via_github_app": null,
-        "state_reason": null
-      },
-      {
-        "url": "https://api.github.com/repos/discord/erlpack/issues/55",
-        "id": 1376230451,
-        "node_id": "I_kwDOAt2oTc5SB5wz",
-        "number": 55,
-        "title": "Bad version number. Expected 131 found 120",
-        "user": {
-          "login": "MahdiAw",
-          "id": 82984120,
-          "node_id": "MDQ6VXNlcjgyOTg0MTIw",
-          "gravatar_id": "",
-          "url": "https://api.github.com/users/MahdiAw",
-          "type": "User",
-          "site_admin": false
-        },
-        "labels": [],
-        "state": "open",
-        "locked": false,
-        "assignee": null,
-        "assignees": [],
-        "milestone": null,
-        "comments": 0,
-        "created_at": "2022-09-16T17:39:33Z",
-        "updated_at": "2022-09-16T17:39:33Z",
-        "closed_at": null,
-        "author_association": "NONE",
-        "active_lock_reason": null,
-        "body": ">>> from websocket import create_connection\r\n>>> from erlpack import pack\r\n>>> from erlpack import unpack\r\n>>> ws = create_connection(\"wss://gateway.discord.gg/?encoding=json&v=9&compress=zlib-stream\")\r\n>>> response = ws.recv()\r\n>>> response\r\nb'x\\x9c4\\xc9A\\n\\xc20\\x10\\x05\\xd0\\xbb\\xfcu\"\\xa9(\\xc8\\\\\\xa5)elG\\r\\xa4i\\x99\\x8e\\x8a\\x84\\xdc]7\\xee\\x1e\\xbc\\n\\x03\\x95g\\xce\\x0e\\xfb\\x1f\\xeb\\x06\\xea\\x82\\xc3\\x0c\\xaax\\x08\\xab]\\x85mL\\xc5D_\\x9cA\\xa7\\xeex\\xfe\\xfdh\\xca\\x93\\x80z\\xf4\\x11w6y\\xf3\\xc7o:\\xfb\\x85S\\xf1v)\\xb7\\x08W#\\x964\\xe9\\xbaGP8\\x846`h\\xed\\x0b\\x00\\x00\\xff\\xff'\r\n>>> unpack(response)\r\nTraceback (most recent call last):\r\n  File \"<stdin>\", line 1, in <module>\r\n  File \"py/erlpack/_unpacker.pyx\", line 29, in erlpack._unpacker.ErlangTermDecoder.loads\r\nerlpack._unpacker.ErlangTermDecodeError: Bad version number. Expected 131 found 120\r\n\r\n",
-        "reactions": {
-          "url": "https://api.github.com/repos/discord/erlpack/issues/55/reactions",
-          "total_count": 0,
-          "+1": 0,
-          "-1": 0,
-          "laugh": 0,
-          "hooray": 0,
-          "confused": 0,
-          "heart": 0,
-          "rocket": 0,
-          "eyes": 0
-        },
-        "performed_via_github_app": null,
-        "state_reason": null
-      }
-    ],
+    "issues": [],
     "pullRequests": []
   }
 }
