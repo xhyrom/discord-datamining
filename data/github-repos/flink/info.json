@@ -57,40 +57,7 @@
     "triage": false,
     "pull": false
   },
-  "branches": [
-    {
-      "name": "dchristle/FLINK-20625-pubsub-refactor",
-      "commit": {
-        "sha": "3795c5512e4192374ee9b6da1240c3e821da2630",
-        "url": "https://api.github.com/repos/discord/flink/commits/3795c5512e4192374ee9b6da1240c3e821da2630"
-      },
-      "protected": false
-    },
-    {
-      "name": "dchristle/background_async",
-      "commit": {
-        "sha": "e55afa0c0f91b3be78dfe504c160a598fb443285",
-        "url": "https://api.github.com/repos/discord/flink/commits/e55afa0c0f91b3be78dfe504c160a598fb443285"
-      },
-      "protected": false
-    },
-    {
-      "name": "dchristle/parallel_pull",
-      "commit": {
-        "sha": "fb3c6495ee44b34a5398bec624c7b529672683a0",
-        "url": "https://api.github.com/repos/discord/flink/commits/fb3c6495ee44b34a5398bec624c7b529672683a0"
-      },
-      "protected": false
-    },
-    {
-      "name": "master",
-      "commit": {
-        "sha": "d4e3b6646f389eeb395a4dbb951d13bab02cb8db",
-        "url": "https://api.github.com/repos/discord/flink/commits/d4e3b6646f389eeb395a4dbb951d13bab02cb8db"
-      },
-      "protected": false
-    }
-  ],
+  "branches": [],
   "last5": {
     "commits": [
       {
