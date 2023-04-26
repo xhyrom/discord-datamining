@@ -332,56 +332,7 @@
       }
     ],
     "releases": [],
-    "issues": [
-      {
-        "url": "https://api.github.com/repos/discord/haul/issues/1",
-        "id": 429476170,
-        "node_id": "MDExOlB1bGxSZXF1ZXN0MjY3NjA2NDQ1",
-        "number": 1,
-        "title": "Adjust where metro plugin is referenced",
-        "user": {
-          "login": "adgarcia",
-          "id": 1191944,
-          "node_id": "MDQ6VXNlcjExOTE5NDQ=",
-          "gravatar_id": "",
-          "url": "https://api.github.com/users/adgarcia",
-          "type": "User",
-          "site_admin": false
-        },
-        "labels": [],
-        "state": "open",
-        "locked": false,
-        "assignee": null,
-        "assignees": [],
-        "milestone": null,
-        "comments": 2,
-        "created_at": "2019-04-04T20:47:39Z",
-        "updated_at": "2019-04-04T21:45:30Z",
-        "closed_at": null,
-        "author_association": "NONE",
-        "active_lock_reason": null,
-        "draft": false,
-        "pull_request": {
-          "url": "https://api.github.com/repos/discord/haul/pulls/1",
-          "merged_at": null
-        },
-        "body": "we don't need the plugin, but Haul will crash without it >.<",
-        "reactions": {
-          "url": "https://api.github.com/repos/discord/haul/issues/1/reactions",
-          "total_count": 0,
-          "+1": 0,
-          "-1": 0,
-          "laugh": 0,
-          "hooray": 0,
-          "confused": 0,
-          "heart": 0,
-          "rocket": 0,
-          "eyes": 0
-        },
-        "performed_via_github_app": null,
-        "state_reason": null
-      }
-    ],
+    "issues": [],
     "pullRequests": []
   }
 }
