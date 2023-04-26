@@ -30,10 +30,10 @@
   "has_wiki": true,
   "has_pages": false,
   "has_discussions": false,
-  "forks_count": 242,
+  "forks_count": 241,
   "archived": false,
   "disabled": false,
-  "open_issues_count": 6,
+  "open_issues_count": 5,
   "license": {
     "key": "mit",
     "name": "MIT License",
@@ -46,8 +46,8 @@
   "web_commit_signoff_required": false,
   "topics": [],
   "visibility": "public",
-  "forks": 242,
-  "open_issues": 6,
+  "forks": 241,
+  "open_issues": 5,
   "watchers": 267,
   "default_branch": "main",
   "permissions": {
@@ -357,15 +357,15 @@
           "site_admin": false
         },
         "labels": [],
-        "state": "open",
+        "state": "closed",
         "locked": false,
         "assignee": null,
         "assignees": [],
         "milestone": null,
-        "comments": 1,
+        "comments": 2,
         "created_at": "2023-04-25T13:08:49Z",
-        "updated_at": "2023-04-25T18:50:50Z",
-        "closed_at": null,
+        "updated_at": "2023-04-26T00:27:56Z",
+        "closed_at": "2023-04-26T00:27:56Z",
         "author_association": "NONE",
         "active_lock_reason": null,
         "body": "When I ran npm run register it said 401\r\nError: {\"message\":\"401: Unauthorized\",\"code\":0}\r\n    at DiscordRequest (file:///C:/Users/kbrow/Downloads/discord-example-app/utils.js:36:11)\r\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)\r\n    at async InstallGlobalCommands (file:///C:/Users/kbrow/Downloads/discord-example-app/utils.js:48:5) \r\nwhen I put everything in correctly in the .env file",
@@ -382,7 +382,7 @@
           "eyes": 0
         },
         "performed_via_github_app": null,
-        "state_reason": null
+        "state_reason": "completed"
       },
       {
         "url": "https://api.github.com/repos/discord/discord-example-app/issues/24",
