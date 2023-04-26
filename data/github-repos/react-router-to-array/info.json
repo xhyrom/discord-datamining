@@ -57,7 +57,16 @@
     "triage": false,
     "pull": false
   },
-  "branches": [],
+  "branches": [
+    {
+      "name": "master",
+      "commit": {
+        "sha": "4fbdcaa76b76c877ac02b073e8995cb3631bba4c",
+        "url": "https://api.github.com/repos/discord/react-router-to-array/commits/4fbdcaa76b76c877ac02b073e8995cb3631bba4c"
+      },
+      "protected": false
+    }
+  ],
   "last5": {
     "commits": [
       {
