@@ -57,9 +57,449 @@
     "triage": false,
     "pull": false
   },
-  "branches": [],
+  "branches": [
+    {
+      "name": "6.x",
+      "commit": {
+        "sha": "5dbe745672f19c1582ff55bf97ddde8381d051f9",
+        "url": "https://api.github.com/repos/discord/react-spring/commits/5dbe745672f19c1582ff55bf97ddde8381d051f9"
+      },
+      "protected": false
+    },
+    {
+      "name": "6.x-experimental",
+      "commit": {
+        "sha": "8c5da412a75252ee9abecf12746456288dd7cc5f",
+        "url": "https://api.github.com/repos/discord/react-spring/commits/8c5da412a75252ee9abecf12746456288dd7cc5f"
+      },
+      "protected": false
+    },
+    {
+      "name": "asnyc-hell",
+      "commit": {
+        "sha": "c93fb59203e2c40242e01ecc7c9a797c54267528",
+        "url": "https://api.github.com/repos/discord/react-spring/commits/c93fb59203e2c40242e01ecc7c9a797c54267528"
+      },
+      "protected": false
+    },
+    {
+      "name": "classes+hooks",
+      "commit": {
+        "sha": "c7e924b0b39d5f6fb3274f3e4b529852db86f5ff",
+        "url": "https://api.github.com/repos/discord/react-spring/commits/c7e924b0b39d5f6fb3274f3e4b529852db86f5ff"
+      },
+      "protected": false
+    },
+    {
+      "name": "dead-1",
+      "commit": {
+        "sha": "f9a30be3cfb24e4ab7463b41dba7280e4bc17ad3",
+        "url": "https://api.github.com/repos/discord/react-spring/commits/f9a30be3cfb24e4ab7463b41dba7280e4bc17ad3"
+      },
+      "protected": false
+    },
+    {
+      "name": "debug",
+      "commit": {
+        "sha": "f52fad2d9ae1d5085aa83acc09a37e8f0a38c3e0",
+        "url": "https://api.github.com/repos/discord/react-spring/commits/f52fad2d9ae1d5085aa83acc09a37e8f0a38c3e0"
+      },
+      "protected": false
+    },
+    {
+      "name": "dependabot/npm_and_yarn/ini-1.3.7",
+      "commit": {
+        "sha": "d4fc224555e33f1a1a4c30635672ff162ed2c20f",
+        "url": "https://api.github.com/repos/discord/react-spring/commits/d4fc224555e33f1a1a4c30635672ff162ed2c20f"
+      },
+      "protected": false
+    },
+    {
+      "name": "experimental-chanining",
+      "commit": {
+        "sha": "929e5ab0228b8c6f3fecb000100c1371833470c3",
+        "url": "https://api.github.com/repos/discord/react-spring/commits/929e5ab0228b8c6f3fecb000100c1371833470c3"
+      },
+      "protected": false
+    },
+    {
+      "name": "feat/analytical",
+      "commit": {
+        "sha": "987e5dd9a5e53c6a130fe244b5bc00bb1ff72e95",
+        "url": "https://api.github.com/repos/discord/react-spring/commits/987e5dd9a5e53c6a130fe244b5bc00bb1ff72e95"
+      },
+      "protected": false
+    },
+    {
+      "name": "feat/spring-class",
+      "commit": {
+        "sha": "efd9253f164f5a6aed820062336e50a05bf92bfe",
+        "url": "https://api.github.com/repos/discord/react-spring/commits/efd9253f164f5a6aed820062336e50a05bf92bfe"
+      },
+      "protected": false
+    },
+    {
+      "name": "feat/use-transition-rework",
+      "commit": {
+        "sha": "652955e67f56595176e70c08a2d777eaccd35be6",
+        "url": "https://api.github.com/repos/discord/react-spring/commits/652955e67f56595176e70c08a2d777eaccd35be6"
+      },
+      "protected": false
+    },
+    {
+      "name": "hooks-8.x",
+      "commit": {
+        "sha": "2866b12c5840de4fbef2332c22276c73ea7b3ac9",
+        "url": "https://api.github.com/repos/discord/react-spring/commits/2866b12c5840de4fbef2332c22276c73ea7b3ac9"
+      },
+      "protected": false
+    },
+    {
+      "name": "i887",
+      "commit": {
+        "sha": "c26c8c03e87bf0b06083ed3998a6b5c44c169026",
+        "url": "https://api.github.com/repos/discord/react-spring/commits/c26c8c03e87bf0b06083ed3998a6b5c44c169026"
+      },
+      "protected": false
+    },
+    {
+      "name": "inject",
+      "commit": {
+        "sha": "4023434a74de6415b5672fcf703fbd8fd23becf0",
+        "url": "https://api.github.com/repos/discord/react-spring/commits/4023434a74de6415b5672fcf703fbd8fd23becf0"
+      },
+      "protected": false
+    },
+    {
+      "name": "master",
+      "commit": {
+        "sha": "d9787ac621b8b83553bdd119268a6cc8f40378e0",
+        "url": "https://api.github.com/repos/discord/react-spring/commits/d9787ac621b8b83553bdd119268a6cc8f40378e0"
+      },
+      "protected": false
+    },
+    {
+      "name": "mono",
+      "commit": {
+        "sha": "d67bbb05f5c7d305d3cc6c7cf55e5a99c4719485",
+        "url": "https://api.github.com/repos/discord/react-spring/commits/d67bbb05f5c7d305d3cc6c7cf55e5a99c4719485"
+      },
+      "protected": false
+    },
+    {
+      "name": "react-16",
+      "commit": {
+        "sha": "e6af72a37f7c9267a13781370836833d6f39f56a",
+        "url": "https://api.github.com/repos/discord/react-spring/commits/e6af72a37f7c9267a13781370836833d6f39f56a"
+      },
+      "protected": false
+    },
+    {
+      "name": "springvalue-interface",
+      "commit": {
+        "sha": "23766c214dd4f0e5dc8251c20e83e41aaca8dafb",
+        "url": "https://api.github.com/repos/discord/react-spring/commits/23766c214dd4f0e5dc8251c20e83e41aaca8dafb"
+      },
+      "protected": false
+    },
+    {
+      "name": "step-prop",
+      "commit": {
+        "sha": "f3b56aed48ad3fe9618e38823f2d6d95eb1ab14e",
+        "url": "https://api.github.com/repos/discord/react-spring/commits/f3b56aed48ad3fe9618e38823f2d6d95eb1ab14e"
+      },
+      "protected": false
+    },
+    {
+      "name": "v9-api",
+      "commit": {
+        "sha": "da5e9af09859be74b59d28453ba293edcf0861a8",
+        "url": "https://api.github.com/repos/discord/react-spring/commits/da5e9af09859be74b59d28453ba293edcf0861a8"
+      },
+      "protected": false
+    },
+    {
+      "name": "v9-rc.1",
+      "commit": {
+        "sha": "ebe23b646d756aafcfaebb75a67ea87e4ec0859b",
+        "url": "https://api.github.com/repos/discord/react-spring/commits/ebe23b646d756aafcfaebb75a67ea87e4ec0859b"
+      },
+      "protected": false
+    },
+    {
+      "name": "v9",
+      "commit": {
+        "sha": "b5aa42c8d4be14beede76893147500da611c43e6",
+        "url": "https://api.github.com/repos/discord/react-spring/commits/b5aa42c8d4be14beede76893147500da611c43e6"
+      },
+      "protected": false
+    }
+  ],
   "last5": {
-    "commits": [],
+    "commits": [
+      {
+        "sha": "b5aa42c8d4be14beede76893147500da611c43e6",
+        "node_id": "MDY6Q29tbWl0MzI0MjM3MjM4OmI1YWE0MmM4ZDRiZTE0YmVlZGU3Njg5MzE0NzUwMGRhNjExYzQzZTY=",
+        "commit": {
+          "author": {
+            "name": "Alec Larson",
+            "email": "1925840+aleclarson@users.noreply.github.com",
+            "date": "2020-12-22T14:38:45Z"
+          },
+          "committer": {
+            "name": "Alec Larson",
+            "email": "1925840+aleclarson@users.noreply.github.com",
+            "date": "2020-12-22T14:38:51Z"
+          },
+          "message": "test: ensure `onChange` is called for animated arrays\n\nSee #1238",
+          "tree": {
+            "sha": "44fc0c296d1ec2025c24e7a3b3e52613f3241844",
+            "url": "https://api.github.com/repos/discord/react-spring/git/trees/44fc0c296d1ec2025c24e7a3b3e52613f3241844"
+          },
+          "url": "https://api.github.com/repos/discord/react-spring/git/commits/b5aa42c8d4be14beede76893147500da611c43e6",
+          "comment_count": 0,
+          "verification": {
+            "verified": false,
+            "reason": "unsigned",
+            "signature": null,
+            "payload": null
+          }
+        },
+        "url": "https://api.github.com/repos/discord/react-spring/commits/b5aa42c8d4be14beede76893147500da611c43e6",
+        "author": {
+          "login": "aleclarson",
+          "id": 1925840,
+          "node_id": "MDQ6VXNlcjE5MjU4NDA=",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/aleclarson",
+          "type": "User",
+          "site_admin": false
+        },
+        "committer": {
+          "login": "aleclarson",
+          "id": 1925840,
+          "node_id": "MDQ6VXNlcjE5MjU4NDA=",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/aleclarson",
+          "type": "User",
+          "site_admin": false
+        },
+        "parents": [
+          {
+            "sha": "f0d3599e4dbf3fdc1c9605fcb4dffc48c879f928",
+            "url": "https://api.github.com/repos/discord/react-spring/commits/f0d3599e4dbf3fdc1c9605fcb4dffc48c879f928"
+          }
+        ]
+      },
+      {
+        "sha": "f0d3599e4dbf3fdc1c9605fcb4dffc48c879f928",
+        "node_id": "MDY6Q29tbWl0MzI0MjM3MjM4OmYwZDM1OTllNGRiZjNmZGMxYzk2MDVmY2I0ZGZmYzQ4Yzg3OWY5Mjg=",
+        "commit": {
+          "author": {
+            "name": "Alec Larson",
+            "email": "1925840+aleclarson@users.noreply.github.com",
+            "date": "2020-12-20T00:11:16Z"
+          },
+          "committer": {
+            "name": "Alec Larson",
+            "email": "1925840+aleclarson@users.noreply.github.com",
+            "date": "2020-12-20T00:11:16Z"
+          },
+          "message": "test: fix `getFluidObservers` usage",
+          "tree": {
+            "sha": "2e24d3c4fdf0eb6d3db9e4295f0ce8bfe2719197",
+            "url": "https://api.github.com/repos/discord/react-spring/git/trees/2e24d3c4fdf0eb6d3db9e4295f0ce8bfe2719197"
+          },
+          "url": "https://api.github.com/repos/discord/react-spring/git/commits/f0d3599e4dbf3fdc1c9605fcb4dffc48c879f928",
+          "comment_count": 0,
+          "verification": {
+            "verified": false,
+            "reason": "unsigned",
+            "signature": null,
+            "payload": null
+          }
+        },
+        "url": "https://api.github.com/repos/discord/react-spring/commits/f0d3599e4dbf3fdc1c9605fcb4dffc48c879f928",
+        "author": {
+          "login": "aleclarson",
+          "id": 1925840,
+          "node_id": "MDQ6VXNlcjE5MjU4NDA=",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/aleclarson",
+          "type": "User",
+          "site_admin": false
+        },
+        "committer": {
+          "login": "aleclarson",
+          "id": 1925840,
+          "node_id": "MDQ6VXNlcjE5MjU4NDA=",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/aleclarson",
+          "type": "User",
+          "site_admin": false
+        },
+        "parents": [
+          {
+            "sha": "338cc2d10d7e18c54edffa593f4a353fb3d9ebf2",
+            "url": "https://api.github.com/repos/discord/react-spring/commits/338cc2d10d7e18c54edffa593f4a353fb3d9ebf2"
+          }
+        ]
+      },
+      {
+        "sha": "338cc2d10d7e18c54edffa593f4a353fb3d9ebf2",
+        "node_id": "MDY6Q29tbWl0MzI0MjM3MjM4OjMzOGNjMmQxMGQ3ZTE4YzU0ZWRmZmE1OTNmNGEzNTNmYjNkOWViZjI=",
+        "commit": {
+          "author": {
+            "name": "Alec Larson",
+            "email": "1925840+aleclarson@users.noreply.github.com",
+            "date": "2020-12-20T00:10:45Z"
+          },
+          "committer": {
+            "name": "Alec Larson",
+            "email": "1925840+aleclarson@users.noreply.github.com",
+            "date": "2020-12-20T00:10:45Z"
+          },
+          "message": "fix: reset to default velocity when goal values are defined",
+          "tree": {
+            "sha": "73bc614c2fc125aada9e248cb6d94eb6c3ff9387",
+            "url": "https://api.github.com/repos/discord/react-spring/git/trees/73bc614c2fc125aada9e248cb6d94eb6c3ff9387"
+          },
+          "url": "https://api.github.com/repos/discord/react-spring/git/commits/338cc2d10d7e18c54edffa593f4a353fb3d9ebf2",
+          "comment_count": 0,
+          "verification": {
+            "verified": false,
+            "reason": "unsigned",
+            "signature": null,
+            "payload": null
+          }
+        },
+        "url": "https://api.github.com/repos/discord/react-spring/commits/338cc2d10d7e18c54edffa593f4a353fb3d9ebf2",
+        "author": {
+          "login": "aleclarson",
+          "id": 1925840,
+          "node_id": "MDQ6VXNlcjE5MjU4NDA=",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/aleclarson",
+          "type": "User",
+          "site_admin": false
+        },
+        "committer": {
+          "login": "aleclarson",
+          "id": 1925840,
+          "node_id": "MDQ6VXNlcjE5MjU4NDA=",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/aleclarson",
+          "type": "User",
+          "site_admin": false
+        },
+        "parents": [
+          {
+            "sha": "0045333bc1a70a348d2ed015336a5382cfaf7be4",
+            "url": "https://api.github.com/repos/discord/react-spring/commits/0045333bc1a70a348d2ed015336a5382cfaf7be4"
+          }
+        ]
+      },
+      {
+        "sha": "0045333bc1a70a348d2ed015336a5382cfaf7be4",
+        "node_id": "MDY6Q29tbWl0MzI0MjM3MjM4OjAwNDUzMzNiYzFhNzBhMzQ4ZDJlZDAxNTMzNmE1MzgyY2ZhZjdiZTQ=",
+        "commit": {
+          "author": {
+            "name": "Yarn",
+            "email": "https://yarnpkg.com",
+            "date": "2020-12-20T00:10:21Z"
+          },
+          "committer": {
+            "name": "Alec Larson",
+            "email": "1925840+aleclarson@users.noreply.github.com",
+            "date": "2020-12-20T00:10:21Z"
+          },
+          "message": "chore: update lockfile",
+          "tree": {
+            "sha": "aedc84662f16153284a2d8ba7ac65d08184939ba",
+            "url": "https://api.github.com/repos/discord/react-spring/git/trees/aedc84662f16153284a2d8ba7ac65d08184939ba"
+          },
+          "url": "https://api.github.com/repos/discord/react-spring/git/commits/0045333bc1a70a348d2ed015336a5382cfaf7be4",
+          "comment_count": 0,
+          "verification": {
+            "verified": false,
+            "reason": "unsigned",
+            "signature": null,
+            "payload": null
+          }
+        },
+        "url": "https://api.github.com/repos/discord/react-spring/commits/0045333bc1a70a348d2ed015336a5382cfaf7be4",
+        "author": null,
+        "committer": {
+          "login": "aleclarson",
+          "id": 1925840,
+          "node_id": "MDQ6VXNlcjE5MjU4NDA=",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/aleclarson",
+          "type": "User",
+          "site_admin": false
+        },
+        "parents": [
+          {
+            "sha": "6e1abeb43b48b005765adc2d481ba53ea05ed6c6",
+            "url": "https://api.github.com/repos/discord/react-spring/commits/6e1abeb43b48b005765adc2d481ba53ea05ed6c6"
+          }
+        ]
+      },
+      {
+        "sha": "6e1abeb43b48b005765adc2d481ba53ea05ed6c6",
+        "node_id": "MDY6Q29tbWl0MzI0MjM3MjM4OjZlMWFiZWI0M2I0OGIwMDU3NjVhZGMyZDQ4MWJhNTNlYTA1ZWQ2YzY=",
+        "commit": {
+          "author": {
+            "name": "Alec Larson",
+            "email": "1925840+aleclarson@users.noreply.github.com",
+            "date": "2020-12-19T23:32:34Z"
+          },
+          "committer": {
+            "name": "Alec Larson",
+            "email": "1925840+aleclarson@users.noreply.github.com",
+            "date": "2020-12-19T23:32:34Z"
+          },
+          "message": "chore: fix typescript issues",
+          "tree": {
+            "sha": "735ec9ff91a3ef5845c45f056c4ee34f75f1bc08",
+            "url": "https://api.github.com/repos/discord/react-spring/git/trees/735ec9ff91a3ef5845c45f056c4ee34f75f1bc08"
+          },
+          "url": "https://api.github.com/repos/discord/react-spring/git/commits/6e1abeb43b48b005765adc2d481ba53ea05ed6c6",
+          "comment_count": 0,
+          "verification": {
+            "verified": false,
+            "reason": "unsigned",
+            "signature": null,
+            "payload": null
+          }
+        },
+        "url": "https://api.github.com/repos/discord/react-spring/commits/6e1abeb43b48b005765adc2d481ba53ea05ed6c6",
+        "author": {
+          "login": "aleclarson",
+          "id": 1925840,
+          "node_id": "MDQ6VXNlcjE5MjU4NDA=",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/aleclarson",
+          "type": "User",
+          "site_admin": false
+        },
+        "committer": {
+          "login": "aleclarson",
+          "id": 1925840,
+          "node_id": "MDQ6VXNlcjE5MjU4NDA=",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/aleclarson",
+          "type": "User",
+          "site_admin": false
+        },
+        "parents": [
+          {
+            "sha": "3a87dda541d7dbdbfff9f2dc8decf7142e143bd1",
+            "url": "https://api.github.com/repos/discord/react-spring/commits/3a87dda541d7dbdbfff9f2dc8decf7142e143bd1"
+          }
+        ]
+      }
+    ],
     "releases": [],
     "issues": [],
     "pullRequests": []

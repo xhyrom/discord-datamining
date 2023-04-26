@@ -57,9 +57,305 @@
     "triage": false,
     "pull": false
   },
-  "branches": [],
+  "branches": [
+    {
+      "name": "master",
+      "commit": {
+        "sha": "5268d0476f9edf098552fa1d03d229264daea8b0",
+        "url": "https://api.github.com/repos/discord/clipboard/commits/5268d0476f9edf098552fa1d03d229264daea8b0"
+      },
+      "protected": false
+    },
+    {
+      "name": "v1.10.0-discord",
+      "commit": {
+        "sha": "87aefd89441a94677db877768485a654fc1e81e0",
+        "url": "https://api.github.com/repos/discord/clipboard/commits/87aefd89441a94677db877768485a654fc1e81e0"
+      },
+      "protected": false
+    },
+    {
+      "name": "v1.10.0-discord-dist",
+      "commit": {
+        "sha": "5bef8d5cb5939099f51db09c4bac0b5e982578b1",
+        "url": "https://api.github.com/repos/discord/clipboard/commits/5bef8d5cb5939099f51db09c4bac0b5e982578b1"
+      },
+      "protected": false
+    }
+  ],
   "last5": {
-    "commits": [],
+    "commits": [
+      {
+        "sha": "5268d0476f9edf098552fa1d03d229264daea8b0",
+        "node_id": "C_kwDOHxjLndoAKDUyNjhkMDQ3NmY5ZWRmMDk4NTUyZmExZDAzZDIyOTI2NGRhZWE4YjA",
+        "commit": {
+          "author": {
+            "name": "dependabot[bot]",
+            "email": "49699333+dependabot[bot]@users.noreply.github.com",
+            "date": "2022-06-15T05:48:36Z"
+          },
+          "committer": {
+            "name": "GitHub",
+            "email": "noreply@github.com",
+            "date": "2022-06-15T05:48:36Z"
+          },
+          "message": "chore(deps): bump simple-plist from 1.1.0 to 1.3.1 (#142)\n\nCo-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>",
+          "tree": {
+            "sha": "aa662ccd305ebe1f7c6562c78336ed307a9805f2",
+            "url": "https://api.github.com/repos/discord/clipboard/git/trees/aa662ccd305ebe1f7c6562c78336ed307a9805f2"
+          },
+          "url": "https://api.github.com/repos/discord/clipboard/git/commits/5268d0476f9edf098552fa1d03d229264daea8b0",
+          "comment_count": 0,
+          "verification": {
+            "verified": true,
+            "reason": "valid",
+            "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsBcBAABCAAQBQJiqXK0CRBK7hj4Ov3rIwAAPGUIAFfAwVcS2r4b/kyczbWuYDTb\n7RT7k8wgOWw7+aNimD7l3QTdSyECyYH873P/lkssCApp4f7Tysy3C4rkhsJRYXCW\nPqiXiko2vKGS4jbA39MWieeThjnNjDugauv/CTUpPE02nKe1QPTBABscIOWskc3/\nojFB7X4yrVXfSz/ub3nFxDNdxoCdKz7G8kOtLRAyiRVUKNOG+0K7EeAqsRr1wC9d\nETnXG8Hb005yxelFkBHzIHIQmUOZagyI/PfNyqzC+44tBstIbYfbT6Z9d+2Zh5KY\n4vnY4EJeSR1yzF+aQ/qoREQM6dfv3Zadarwqm3bxxJCrJcISewGQH5GXymjAXbI=\n=FYRX\n-----END PGP SIGNATURE-----\n",
+            "payload": "tree aa662ccd305ebe1f7c6562c78336ed307a9805f2\nparent 2f336aaf9c09f83e698d3143abc9db3cc4e10f83\nauthor dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com> 1655272116 +0900\ncommitter GitHub <noreply@github.com> 1655272116 +0900\n\nchore(deps): bump simple-plist from 1.1.0 to 1.3.1 (#142)\n\nCo-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>"
+          }
+        },
+        "url": "https://api.github.com/repos/discord/clipboard/commits/5268d0476f9edf098552fa1d03d229264daea8b0",
+        "author": {
+          "login": "dependabot[bot]",
+          "id": 49699333,
+          "node_id": "MDM6Qm90NDk2OTkzMzM=",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/dependabot%5Bbot%5D",
+          "type": "Bot",
+          "site_admin": false
+        },
+        "committer": {
+          "login": "web-flow",
+          "id": 19864447,
+          "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/web-flow",
+          "type": "User",
+          "site_admin": false
+        },
+        "parents": [
+          {
+            "sha": "2f336aaf9c09f83e698d3143abc9db3cc4e10f83",
+            "url": "https://api.github.com/repos/discord/clipboard/commits/2f336aaf9c09f83e698d3143abc9db3cc4e10f83"
+          }
+        ]
+      },
+      {
+        "sha": "2f336aaf9c09f83e698d3143abc9db3cc4e10f83",
+        "node_id": "C_kwDOHxjLndoAKDJmMzM2YWFmOWMwOWY4M2U2OThkMzE0M2FiYzlkYjNjYzRlMTBmODM",
+        "commit": {
+          "author": {
+            "name": "Jesse Katsumata",
+            "email": "jesse.katsumata@gmail.com",
+            "date": "2022-04-26T03:41:52Z"
+          },
+          "committer": {
+            "name": "Jesse Katsumata",
+            "email": "jesse.katsumata@gmail.com",
+            "date": "2022-04-26T03:41:52Z"
+          },
+          "message": "1.10.0",
+          "tree": {
+            "sha": "24df6e3f4a82473e9837474ffa77ec1d066f812c",
+            "url": "https://api.github.com/repos/discord/clipboard/git/trees/24df6e3f4a82473e9837474ffa77ec1d066f812c"
+          },
+          "url": "https://api.github.com/repos/discord/clipboard/git/commits/2f336aaf9c09f83e698d3143abc9db3cc4e10f83",
+          "comment_count": 0,
+          "verification": {
+            "verified": false,
+            "reason": "unsigned",
+            "signature": null,
+            "payload": null
+          }
+        },
+        "url": "https://api.github.com/repos/discord/clipboard/commits/2f336aaf9c09f83e698d3143abc9db3cc4e10f83",
+        "author": {
+          "login": "Naturalclar",
+          "id": 6936373,
+          "node_id": "MDQ6VXNlcjY5MzYzNzM=",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/Naturalclar",
+          "type": "User",
+          "site_admin": false
+        },
+        "committer": {
+          "login": "Naturalclar",
+          "id": 6936373,
+          "node_id": "MDQ6VXNlcjY5MzYzNzM=",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/Naturalclar",
+          "type": "User",
+          "site_admin": false
+        },
+        "parents": [
+          {
+            "sha": "bd34c1d2aad85fe8af2492dc6bd72751f5e4d631",
+            "url": "https://api.github.com/repos/discord/clipboard/commits/bd34c1d2aad85fe8af2492dc6bd72751f5e4d631"
+          }
+        ]
+      },
+      {
+        "sha": "bd34c1d2aad85fe8af2492dc6bd72751f5e4d631",
+        "node_id": "C_kwDOHxjLndoAKGJkMzRjMWQyYWFkODVmZThhZjI0OTJkYzZiZDcyNzUxZjVlNGQ2MzE",
+        "commit": {
+          "author": {
+            "name": "dependabot[bot]",
+            "email": "49699333+dependabot[bot]@users.noreply.github.com",
+            "date": "2022-04-26T03:35:09Z"
+          },
+          "committer": {
+            "name": "GitHub",
+            "email": "noreply@github.com",
+            "date": "2022-04-26T03:35:09Z"
+          },
+          "message": "chore(deps): bump ansi-regex from 3.0.0 to 3.0.1 (#140)\n\nCo-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>",
+          "tree": {
+            "sha": "06c3b39aba376a14073d399c194002e0798c8ac9",
+            "url": "https://api.github.com/repos/discord/clipboard/git/trees/06c3b39aba376a14073d399c194002e0798c8ac9"
+          },
+          "url": "https://api.github.com/repos/discord/clipboard/git/commits/bd34c1d2aad85fe8af2492dc6bd72751f5e4d631",
+          "comment_count": 0,
+          "verification": {
+            "verified": true,
+            "reason": "valid",
+            "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsBcBAABCAAQBQJiZ2htCRBK7hj4Ov3rIwAA1+IIAFYtNSobI8m4KAoYqyj2OhUy\nWz4YIU+f3o8GB5Xsd/MKHatmupHoRuCZXj5EoAHvuw1U9PeRNx2s5lAVrv95cRgY\n9N41VjKjBD31RbPTIjsTdyBarQv6iSpTL6ur+JPn0h+gk4VYIieBbDY4oBDI5o5d\nkwZsa+z9NrBNldWVjfmBfSEIs4uJgQSIUzemKmbydhhBXnBh1rKxz2+yz/I3cxWa\nEv1faIww63C1sfuwdCkscSZyI6qbYXmrk1W1yzFueLl17YOCuu6UwVp3LeIVB7dP\no8nzNBiIATNlHCcQIsK3LsH7G7iOS9KeOpSsFwkULB0TimXGb4+9HHbdUultxgE=\n=C6OR\n-----END PGP SIGNATURE-----\n",
+            "payload": "tree 06c3b39aba376a14073d399c194002e0798c8ac9\nparent 72cb83ff2a7aeeacc400347f7d93dd3a9dfb8b9f\nauthor dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com> 1650944109 +0900\ncommitter GitHub <noreply@github.com> 1650944109 +0900\n\nchore(deps): bump ansi-regex from 3.0.0 to 3.0.1 (#140)\n\nCo-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>"
+          }
+        },
+        "url": "https://api.github.com/repos/discord/clipboard/commits/bd34c1d2aad85fe8af2492dc6bd72751f5e4d631",
+        "author": {
+          "login": "dependabot[bot]",
+          "id": 49699333,
+          "node_id": "MDM6Qm90NDk2OTkzMzM=",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/dependabot%5Bbot%5D",
+          "type": "Bot",
+          "site_admin": false
+        },
+        "committer": {
+          "login": "web-flow",
+          "id": 19864447,
+          "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/web-flow",
+          "type": "User",
+          "site_admin": false
+        },
+        "parents": [
+          {
+            "sha": "72cb83ff2a7aeeacc400347f7d93dd3a9dfb8b9f",
+            "url": "https://api.github.com/repos/discord/clipboard/commits/72cb83ff2a7aeeacc400347f7d93dd3a9dfb8b9f"
+          }
+        ]
+      },
+      {
+        "sha": "72cb83ff2a7aeeacc400347f7d93dd3a9dfb8b9f",
+        "node_id": "C_kwDOHxjLndoAKDcyY2I4M2ZmMmE3YWVlYWNjNDAwMzQ3ZjdkOTNkZDNhOWRmYjhiOWY",
+        "commit": {
+          "author": {
+            "name": "dependabot[bot]",
+            "email": "49699333+dependabot[bot]@users.noreply.github.com",
+            "date": "2022-04-26T03:34:49Z"
+          },
+          "committer": {
+            "name": "GitHub",
+            "email": "noreply@github.com",
+            "date": "2022-04-26T03:34:49Z"
+          },
+          "message": "chore(deps): bump async from 2.6.3 to 2.6.4 (#139)\n\nCo-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>",
+          "tree": {
+            "sha": "9af17ab67aa7684b0e4e4c546188d01cd657536c",
+            "url": "https://api.github.com/repos/discord/clipboard/git/trees/9af17ab67aa7684b0e4e4c546188d01cd657536c"
+          },
+          "url": "https://api.github.com/repos/discord/clipboard/git/commits/72cb83ff2a7aeeacc400347f7d93dd3a9dfb8b9f",
+          "comment_count": 0,
+          "verification": {
+            "verified": true,
+            "reason": "valid",
+            "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsBcBAABCAAQBQJiZ2hZCRBK7hj4Ov3rIwAAX8UIAEe6KpycDKdmW2P1Ll0FTnwg\nKe14jGn9YhWLHQV6NO6FkmFpeJlx0ENmb792WD+g+9byyoKCOuaB1OSBX5m7Ql1a\nP8hER2jUKKwy/WmCgOuWq1xOlzemYFcYhLfbMLaTbg4/yNmGn5ue0hZINUs1cPne\nmKOvIUZvF5VkuVMbMM97CTWZUu+ncOVJKIFBW3rgrJ4fMRGzFZoVlAelFisHkIyA\nX6QRQHhATyg2OSCrQnBoZmhO2GpQ/yEh6gIiVXHaonJuHxi/F4nrVdULUF5EXPTG\nb1+Pbv4Puasss7l0G8UkIGOZQDUkoN1qhQAfQ7zeOjy6CeqaMNgQMaIgSHZhXlI=\n=73Vw\n-----END PGP SIGNATURE-----\n",
+            "payload": "tree 9af17ab67aa7684b0e4e4c546188d01cd657536c\nparent 9064f151fba829c349fa53ee24941f09c8e644c2\nauthor dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com> 1650944089 +0900\ncommitter GitHub <noreply@github.com> 1650944089 +0900\n\nchore(deps): bump async from 2.6.3 to 2.6.4 (#139)\n\nCo-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>"
+          }
+        },
+        "url": "https://api.github.com/repos/discord/clipboard/commits/72cb83ff2a7aeeacc400347f7d93dd3a9dfb8b9f",
+        "author": {
+          "login": "dependabot[bot]",
+          "id": 49699333,
+          "node_id": "MDM6Qm90NDk2OTkzMzM=",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/dependabot%5Bbot%5D",
+          "type": "Bot",
+          "site_admin": false
+        },
+        "committer": {
+          "login": "web-flow",
+          "id": 19864447,
+          "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/web-flow",
+          "type": "User",
+          "site_admin": false
+        },
+        "parents": [
+          {
+            "sha": "9064f151fba829c349fa53ee24941f09c8e644c2",
+            "url": "https://api.github.com/repos/discord/clipboard/commits/9064f151fba829c349fa53ee24941f09c8e644c2"
+          }
+        ]
+      },
+      {
+        "sha": "9064f151fba829c349fa53ee24941f09c8e644c2",
+        "node_id": "C_kwDOHxjLndoAKDkwNjRmMTUxZmJhODI5YzM0OWZhNTNlZTI0OTQxZjA5YzhlNjQ0YzI",
+        "commit": {
+          "author": {
+            "name": "dependabot[bot]",
+            "email": "49699333+dependabot[bot]@users.noreply.github.com",
+            "date": "2022-04-26T03:34:29Z"
+          },
+          "committer": {
+            "name": "GitHub",
+            "email": "noreply@github.com",
+            "date": "2022-04-26T03:34:29Z"
+          },
+          "message": "chore(deps): bump plist from 3.0.4 to 3.0.5 (#138)\n\nCo-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>",
+          "tree": {
+            "sha": "f660a9617f582bfe136d619bfc944000b86e3b3d",
+            "url": "https://api.github.com/repos/discord/clipboard/git/trees/f660a9617f582bfe136d619bfc944000b86e3b3d"
+          },
+          "url": "https://api.github.com/repos/discord/clipboard/git/commits/9064f151fba829c349fa53ee24941f09c8e644c2",
+          "comment_count": 0,
+          "verification": {
+            "verified": true,
+            "reason": "valid",
+            "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsBcBAABCAAQBQJiZ2hFCRBK7hj4Ov3rIwAAVZcIAAZpanpv77kywvEZIt2bYOMo\n3NrasCLTRRaUlj5oi/IHmx7mgJI25dJ0lN2bDKCUbH6qHbmfrg7q4/ryfbgMQxVa\nsfEAnI6T0H8vuBQtX7hHIRWYXp6EaDJKar/Y3e+kObjZnAgFRseBc6G2lW6Ara48\nqJw8fBbCw4Eya6B8YAkpwA0ioolhcAioULNSO7fCCDVeAIxFd7BgBo0+zbB5cwa3\nIGMDGy7++ks/wybLw1VAa3FLsNL8FxgOhBDMEVSeODvbIyQ8eu1tVoavGo8mViSq\nrC701jtru1WyKiRBPVhjZmrDWsri1tQhuyCbnNCZcffth+hcjEwpfsEU1INSQmQ=\n=yhSK\n-----END PGP SIGNATURE-----\n",
+            "payload": "tree f660a9617f582bfe136d619bfc944000b86e3b3d\nparent c384235ccf5d2c12bfb36a3f050e15f40596b529\nauthor dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com> 1650944069 +0900\ncommitter GitHub <noreply@github.com> 1650944069 +0900\n\nchore(deps): bump plist from 3.0.4 to 3.0.5 (#138)\n\nCo-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>"
+          }
+        },
+        "url": "https://api.github.com/repos/discord/clipboard/commits/9064f151fba829c349fa53ee24941f09c8e644c2",
+        "author": {
+          "login": "dependabot[bot]",
+          "id": 49699333,
+          "node_id": "MDM6Qm90NDk2OTkzMzM=",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/dependabot%5Bbot%5D",
+          "type": "Bot",
+          "site_admin": false
+        },
+        "committer": {
+          "login": "web-flow",
+          "id": 19864447,
+          "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/web-flow",
+          "type": "User",
+          "site_admin": false
+        },
+        "parents": [
+          {
+            "sha": "c384235ccf5d2c12bfb36a3f050e15f40596b529",
+            "url": "https://api.github.com/repos/discord/clipboard/commits/c384235ccf5d2c12bfb36a3f050e15f40596b529"
+          }
+        ]
+      }
+    ],
     "releases": [],
     "issues": [],
     "pullRequests": []

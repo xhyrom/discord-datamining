@@ -59,9 +59,543 @@
   },
   "branches": [],
   "last5": {
-    "commits": [],
+    "commits": [
+      {
+        "sha": "d4a85643a465f5fae2113d07d22d021d4af4795a",
+        "node_id": "C_kwDOD0NB1NoAKGQ0YTg1NjQzYTQ2NWY1ZmFlMjExM2QwN2QyMmQwMjFkNGFmNDc5NWE",
+        "commit": {
+          "author": {
+            "name": "dependabot[bot]",
+            "email": "49699333+dependabot[bot]@users.noreply.github.com",
+            "date": "2022-11-21T16:24:46Z"
+          },
+          "committer": {
+            "name": "GitHub",
+            "email": "noreply@github.com",
+            "date": "2022-11-21T16:24:46Z"
+          },
+          "message": "Bump sphinx-copybutton from 0.5.0 to 0.5.1 in /docs (#3390)\n\nBumps [sphinx-copybutton](https://github.com/executablebooks/sphinx-copybutton) from 0.5.0 to 0.5.1.\r\n- [Release notes](https://github.com/executablebooks/sphinx-copybutton/releases)\r\n- [Changelog](https://github.com/executablebooks/sphinx-copybutton/blob/master/CHANGELOG.md)\r\n- [Commits](https://github.com/executablebooks/sphinx-copybutton/compare/v0.5.0...v0.5.1)\r\n\r\n---\r\nupdated-dependencies:\r\n- dependency-name: sphinx-copybutton\r\n  dependency-type: direct:production\r\n  update-type: version-update:semver-patch\r\n...\r\n\r\nSigned-off-by: dependabot[bot] <support@github.com>\r\n\r\nSigned-off-by: dependabot[bot] <support@github.com>\r\nCo-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>",
+          "tree": {
+            "sha": "f7f42b4af5e7f1dfb4a1b1c5145349a22eefe2f8",
+            "url": "https://api.github.com/repos/discord/black/git/trees/f7f42b4af5e7f1dfb4a1b1c5145349a22eefe2f8"
+          },
+          "url": "https://api.github.com/repos/discord/black/git/commits/d4a85643a465f5fae2113d07d22d021d4af4795a",
+          "comment_count": 0,
+          "verification": {
+            "verified": true,
+            "reason": "valid",
+            "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsBcBAABCAAQBQJje6ZOCRBK7hj4Ov3rIwAA5p4IAEeydDvcEWQzmLyQ+/4rpBka\nykxXUeaEo1qbnovDOVWjnpOsyzfkTp2Xl0Gcov0ym6UySgxbxB6ZCXWJFqtbCaZT\nFK564BsWLkjzyQEZ4EsQG0ZT8t29NhCofgQgaB+nlTS1gVPAAMK/G4ePwJVzTyTC\nRmKk8m57PbbhmLE6p0fG1HB81okijkv6b8WUthCL+itTn7y95IXrgOYxjE18BXvR\neoV2IUyx+uqpigpj19xlQSigsPi+iF+qBaFSWTzXnntY2tg/Zx2aYjgyW6rpJJ00\niXx01CEH1C9b4gcTXQDSBxofucyJRePQOILfrIY8Eb+x+FVHg2JOFJirxGWbtcQ=\n=IlR1\n-----END PGP SIGNATURE-----\n",
+            "payload": "tree f7f42b4af5e7f1dfb4a1b1c5145349a22eefe2f8\nparent 27932494bcefac03497dd92dcf0c59a04c10d757\nauthor dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com> 1669047886 -0800\ncommitter GitHub <noreply@github.com> 1669047886 -0800\n\nBump sphinx-copybutton from 0.5.0 to 0.5.1 in /docs (#3390)\n\nBumps [sphinx-copybutton](https://github.com/executablebooks/sphinx-copybutton) from 0.5.0 to 0.5.1.\r\n- [Release notes](https://github.com/executablebooks/sphinx-copybutton/releases)\r\n- [Changelog](https://github.com/executablebooks/sphinx-copybutton/blob/master/CHANGELOG.md)\r\n- [Commits](https://github.com/executablebooks/sphinx-copybutton/compare/v0.5.0...v0.5.1)\r\n\r\n---\r\nupdated-dependencies:\r\n- dependency-name: sphinx-copybutton\r\n  dependency-type: direct:production\r\n  update-type: version-update:semver-patch\r\n...\r\n\r\nSigned-off-by: dependabot[bot] <support@github.com>\r\n\r\nSigned-off-by: dependabot[bot] <support@github.com>\r\nCo-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>"
+          }
+        },
+        "url": "https://api.github.com/repos/discord/black/commits/d4a85643a465f5fae2113d07d22d021d4af4795a",
+        "author": {
+          "login": "dependabot[bot]",
+          "id": 49699333,
+          "node_id": "MDM6Qm90NDk2OTkzMzM=",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/dependabot%5Bbot%5D",
+          "type": "Bot",
+          "site_admin": false
+        },
+        "committer": {
+          "login": "web-flow",
+          "id": 19864447,
+          "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/web-flow",
+          "type": "User",
+          "site_admin": false
+        },
+        "parents": [
+          {
+            "sha": "27932494bcefac03497dd92dcf0c59a04c10d757",
+            "url": "https://api.github.com/repos/discord/black/commits/27932494bcefac03497dd92dcf0c59a04c10d757"
+          }
+        ]
+      },
+      {
+        "sha": "27932494bcefac03497dd92dcf0c59a04c10d757",
+        "node_id": "C_kwDOD0NB1NoAKDI3OTMyNDk0YmNlZmFjMDM0OTdkZDkyZGNmMGM1OWEwNGMxMGQ3NTc",
+        "commit": {
+          "author": {
+            "name": "sckarlin",
+            "email": "github@karlin-online.com",
+            "date": "2022-11-14T15:31:43Z"
+          },
+          "committer": {
+            "name": "GitHub",
+            "email": "noreply@github.com",
+            "date": "2022-11-14T15:31:43Z"
+          },
+          "message": "Wordsmith current_style.md (#3383)\n\n\"realtime\" doesn't make sense in this context.",
+          "tree": {
+            "sha": "5d142cb4adf6e998b74146f1ddbf5c93d31a7bd5",
+            "url": "https://api.github.com/repos/discord/black/git/trees/5d142cb4adf6e998b74146f1ddbf5c93d31a7bd5"
+          },
+          "url": "https://api.github.com/repos/discord/black/git/commits/27932494bcefac03497dd92dcf0c59a04c10d757",
+          "comment_count": 0,
+          "verification": {
+            "verified": true,
+            "reason": "valid",
+            "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsBcBAABCAAQBQJjcl9fCRBK7hj4Ov3rIwAAq04IAIK6S3u51oHtDdvjMLojRSoC\nN6/njDRJltEA0Axm2LJBBifnnrZrHQn1591EL8ESNG54kh+dG0B1LxCCTGXxF+y7\nsnMkeNncai5CQ3pLTtqivwMV/O53w5ej7kaR3hGoewzXgnZ0hXFmnnAyaP/CskjP\nyhlWVhsiKDN/5lHV3JKrFZITubrwmduhfuHAdD5w0BJPYYS3ATPFlCPnUbKTHdWh\nQyY3sLY0JqPKqTKGk4uBIY6BAH/b/yvZK/xOIr8xfUX1pgmLZYY3F8PegZv0NLoS\n9MZmmCGATAZyKE+vNPQFoik9Cv8B6sV/l0G8r1Wcpib/LQRiEteGvb6lEtWkyDI=\n=rziZ\n-----END PGP SIGNATURE-----\n",
+            "payload": "tree 5d142cb4adf6e998b74146f1ddbf5c93d31a7bd5\nparent d97b7898b34b67eb3c6839998920e17ac8c77908\nauthor sckarlin <github@karlin-online.com> 1668439903 -0500\ncommitter GitHub <noreply@github.com> 1668439903 -0800\n\nWordsmith current_style.md (#3383)\n\n\"realtime\" doesn't make sense in this context."
+          }
+        },
+        "url": "https://api.github.com/repos/discord/black/commits/27932494bcefac03497dd92dcf0c59a04c10d757",
+        "author": {
+          "login": "sckarlin",
+          "id": 4126099,
+          "node_id": "MDQ6VXNlcjQxMjYwOTk=",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/sckarlin",
+          "type": "User",
+          "site_admin": false
+        },
+        "committer": {
+          "login": "web-flow",
+          "id": 19864447,
+          "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/web-flow",
+          "type": "User",
+          "site_admin": false
+        },
+        "parents": [
+          {
+            "sha": "d97b7898b34b67eb3c6839998920e17ac8c77908",
+            "url": "https://api.github.com/repos/discord/black/commits/d97b7898b34b67eb3c6839998920e17ac8c77908"
+          }
+        ]
+      },
+      {
+        "sha": "d97b7898b34b67eb3c6839998920e17ac8c77908",
+        "node_id": "C_kwDOD0NB1NoAKGQ5N2I3ODk4YjM0YjY3ZWIzYzY4Mzk5OTg5MjBlMTdhYzhjNzc5MDg",
+        "commit": {
+          "author": {
+            "name": "Antonio Ossa-Guerra",
+            "email": "aaossa@uc.cl",
+            "date": "2022-11-12T01:05:36Z"
+          },
+          "committer": {
+            "name": "GitHub",
+            "email": "noreply@github.com",
+            "date": "2022-11-12T01:05:36Z"
+          },
+          "message": "Remove whitespaces of whitespace-only files (#3348)\n\nCurrently, empty and whitespace-only (with or without newlines) are\r\nnot modified. In some discussions (issues and pull requests) consensus\r\nwas to reformat whitespace-only files to empty or single-character\r\nfiles, preserving line endings when possible. With that said, this\r\ncommit introduces the following behaviors:\r\n\r\n* Empty files are left as is\r\n* Whitespace-only files (no newline) reformat into empty files\r\n* Whitespace-only files (1 or more newlines) reformat into a single\r\nnewline character\r\n\r\nTo implement these changes, we moved the initial check at\r\n`format_file_contents` that raises `NothingChanged` if the source\r\n(with no whitespaces) is an empty string. In the case of *.ipynb\r\nfiles, `format_ipynb_string` checks a similar condition and removed\r\nwhitespaces. In the case of Python files, `format_str_once` includes a\r\ncheck on the output that returns the correct newline character if\r\npossible or an empty string otherwise.\r\n\r\nSigned-off-by: Antonio Ossa Guerra <aaossa@uc.cl>",
+          "tree": {
+            "sha": "b4c81c9475219fff2056e1f7278b7e667e1542b9",
+            "url": "https://api.github.com/repos/discord/black/git/trees/b4c81c9475219fff2056e1f7278b7e667e1542b9"
+          },
+          "url": "https://api.github.com/repos/discord/black/git/commits/d97b7898b34b67eb3c6839998920e17ac8c77908",
+          "comment_count": 0,
+          "verification": {
+            "verified": true,
+            "reason": "valid",
+            "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsBcBAABCAAQBQJjbvFgCRBK7hj4Ov3rIwAActYIAIJsNlfANqTBUTeEkFNl2he4\ngbBo8jUZHlcZnM3IXwgXCyW80XwLhG7qekhH8TOeZfhJydwMWYd/zUG1dvJRgxbL\nSnNnn/zbv/NjMOUNE89GyrISQfZfkh3EEkxrEVsiygDZcwO23sjXEWf0MvZ4zEke\ncMS8QLHbeqFag/j8KRPsRwrEHx31ZpiYm0IUWByfh6otUIsBo6Vtd839sUuYuFuI\ndd+91+vNyDTsTWuzyZt6ctg7ZvgMqN+AIAFXJh/OApY7O7S/s8+C/WR+WaIV2Rq0\n6AylE32QT1uTCf5GgFMVc9DwLr2Ror0DqSlUGdPPeHWdbQpnh8a4ZObQHwGeGPY=\n=Hjjx\n-----END PGP SIGNATURE-----\n",
+            "payload": "tree b4c81c9475219fff2056e1f7278b7e667e1542b9\nparent c23a5c15aac963b460fdb1327ae875aafafafd41\nauthor Antonio Ossa-Guerra <aaossa@uc.cl> 1668215136 -0300\ncommitter GitHub <noreply@github.com> 1668215136 -0500\n\nRemove whitespaces of whitespace-only files (#3348)\n\nCurrently, empty and whitespace-only (with or without newlines) are\r\nnot modified. In some discussions (issues and pull requests) consensus\r\nwas to reformat whitespace-only files to empty or single-character\r\nfiles, preserving line endings when possible. With that said, this\r\ncommit introduces the following behaviors:\r\n\r\n* Empty files are left as is\r\n* Whitespace-only files (no newline) reformat into empty files\r\n* Whitespace-only files (1 or more newlines) reformat into a single\r\nnewline character\r\n\r\nTo implement these changes, we moved the initial check at\r\n`format_file_contents` that raises `NothingChanged` if the source\r\n(with no whitespaces) is an empty string. In the case of *.ipynb\r\nfiles, `format_ipynb_string` checks a similar condition and removed\r\nwhitespaces. In the case of Python files, `format_str_once` includes a\r\ncheck on the output that returns the correct newline character if\r\npossible or an empty string otherwise.\r\n\r\nSigned-off-by: Antonio Ossa Guerra <aaossa@uc.cl>"
+          }
+        },
+        "url": "https://api.github.com/repos/discord/black/commits/d97b7898b34b67eb3c6839998920e17ac8c77908",
+        "author": {
+          "login": "aaossa",
+          "id": 10425834,
+          "node_id": "MDQ6VXNlcjEwNDI1ODM0",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/aaossa",
+          "type": "User",
+          "site_admin": false
+        },
+        "committer": {
+          "login": "web-flow",
+          "id": 19864447,
+          "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/web-flow",
+          "type": "User",
+          "site_admin": false
+        },
+        "parents": [
+          {
+            "sha": "c23a5c15aac963b460fdb1327ae875aafafafd41",
+            "url": "https://api.github.com/repos/discord/black/commits/c23a5c15aac963b460fdb1327ae875aafafafd41"
+          }
+        ]
+      },
+      {
+        "sha": "c23a5c15aac963b460fdb1327ae875aafafafd41",
+        "node_id": "C_kwDOD0NB1NoAKGMyM2E1YzE1YWFjOTYzYjQ2MGZkYjEzMjdhZTg3NWFhZmFmYWZkNDE",
+        "commit": {
+          "author": {
+            "name": "Maximilian Cosmo Sitter",
+            "email": "48606431+mcsitter@users.noreply.github.com",
+            "date": "2022-11-10T15:03:19Z"
+          },
+          "committer": {
+            "name": "Richard Si",
+            "email": "63936253+ichard26@users.noreply.github.com",
+            "date": "2022-11-10T15:14:48Z"
+          },
+          "message": "Clarify that Black runs with --safe by default (#3378)",
+          "tree": {
+            "sha": "341c4a434ae763c2bb4eb17c5456a581ab1a863a",
+            "url": "https://api.github.com/repos/discord/black/git/trees/341c4a434ae763c2bb4eb17c5456a581ab1a863a"
+          },
+          "url": "https://api.github.com/repos/discord/black/git/commits/c23a5c15aac963b460fdb1327ae875aafafafd41",
+          "comment_count": 0,
+          "verification": {
+            "verified": true,
+            "reason": "valid",
+            "signature": "-----BEGIN PGP SIGNATURE-----\n\niQIzBAABCgAdFiEE1Zfb9hQT48ks7vg3M/c3oAXt8t8FAmNtFWgACgkQM/c3oAXt\n8t/E+hAAp1jftZeKKGf6/18ZHF/ajp1fHBeUQXeP7GB83zJ8GQhfO/t1Y29AsU5E\nZPdktged0S5Wy/gNZ0mYHAPvWxZwezuZYUb59jlTLnaZSyINaaGJKMQR4o3FXYMD\nTX4FHM3GR54/yUsQ77/lrHjHWdDfVKbrYC4HpOgRpMr535WYdw9VkFbgmec+0WPa\nz8LsMOrpQGmnfYcoYkPLqZM17sDyBO3Kg/KGCyEivSmn/6+Rj6ykbvZKbHABfrzr\nfOdvf7TR88zPnqvU5GDxW6PnBKfk16S6jRqQTtoe0G3TQdZnUcxppUO8uBrcxde8\nk/Ed/K8pI2r5OzUZ1lP10xrsOTS96KiyCgWjzMyXaW1+opjmveEOTkuvYK75pK1P\npLxp8yJYfyb0dtC1nQw3NKbnoUXzLTbpQalLy03FcClfIgtruMzF41kuYSZ3RgMH\nh2xks1ryfCHaL5ayfr0Qt0shNJt9fbw9x6dWVDhWwTIkLPF22ROGcR9Nof/edWxS\nI/dQ/x24e8TbfjNY3An/+/MkOVO3diaEovD/sR3CvC64vRZQmy+bVqn6BYu4VEPh\nav7JMJuwsdEDdZuL6+uyXGumaZcDM+/RDNilo6fJ/zTs62VngLOhXVBWi1lBrisl\nvMsk1sPS+tz3dd1Cupx44ZIsUzwlxM/2VaUCNxFB/QwwHvzGI54=\n=JhK0\n-----END PGP SIGNATURE-----",
+            "payload": "tree 341c4a434ae763c2bb4eb17c5456a581ab1a863a\nparent 8091b2503d12dd0110e0f1a9ed1e6b830aa668ed\nauthor Maximilian Cosmo Sitter <48606431+mcsitter@users.noreply.github.com> 1668092599 +0100\ncommitter Richard Si <63936253+ichard26@users.noreply.github.com> 1668093288 -0500\n\nClarify that Black runs with --safe by default (#3378)\n\n"
+          }
+        },
+        "url": "https://api.github.com/repos/discord/black/commits/c23a5c15aac963b460fdb1327ae875aafafafd41",
+        "author": {
+          "login": "mcsitter",
+          "id": 48606431,
+          "node_id": "MDQ6VXNlcjQ4NjA2NDMx",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/mcsitter",
+          "type": "User",
+          "site_admin": false
+        },
+        "committer": {
+          "login": "ichard26",
+          "id": 63936253,
+          "node_id": "MDQ6VXNlcjYzOTM2MjUz",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/ichard26",
+          "type": "User",
+          "site_admin": false
+        },
+        "parents": [
+          {
+            "sha": "8091b2503d12dd0110e0f1a9ed1e6b830aa668ed",
+            "url": "https://api.github.com/repos/discord/black/commits/8091b2503d12dd0110e0f1a9ed1e6b830aa668ed"
+          }
+        ]
+      },
+      {
+        "sha": "8091b2503d12dd0110e0f1a9ed1e6b830aa668ed",
+        "node_id": "C_kwDOD0NB1NoAKDgwOTFiMjUwM2QxMmRkMDExMGUwZjFhOWVkMWU2YjgzMGFhNjY4ZWQ",
+        "commit": {
+          "author": {
+            "name": "Yilei \"Dolee\" Yang",
+            "email": "yileiyang@google.com",
+            "date": "2022-11-09T23:08:51Z"
+          },
+          "committer": {
+            "name": "GitHub",
+            "email": "noreply@github.com",
+            "date": "2022-11-09T23:08:51Z"
+          },
+          "message": "Correctly handle trailing commas that are inside a line's leading non-nested parens (#3370)\n\n- Fixes #1671\r\n- Fixes #3229",
+          "tree": {
+            "sha": "2fbd1d5e51cb03a24f0ade6226ccfaeb6ce9369a",
+            "url": "https://api.github.com/repos/discord/black/git/trees/2fbd1d5e51cb03a24f0ade6226ccfaeb6ce9369a"
+          },
+          "url": "https://api.github.com/repos/discord/black/git/commits/8091b2503d12dd0110e0f1a9ed1e6b830aa668ed",
+          "comment_count": 0,
+          "verification": {
+            "verified": true,
+            "reason": "valid",
+            "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsBcBAABCAAQBQJjbDMDCRBK7hj4Ov3rIwAAoloIAI52yzIOVhlmnjDEKUFa3Ei6\nrJufgKzQhjeAJNLR+PsIcyXvZrdzRYR7cpo7klpx3HDslS03dLfYlMKYObiUrHJW\nvk6pBbYZorC0qAyMcrrAehkwbxZDPyuikBdf67wmTMNBaiMkFmRRo5hVzPxGcCvL\nNIYZIHhShEjVt+6wmj6iaK2lmedqBQA8hBva8I1nbhHVnAwB2z2B12qx8hfRx+Qb\n+jxNNboLGO+YseedN4b4RJmLnfUHaabxOzoetLt0bVNB15czIDPhavnnw7ZiTTgv\n2VXeXh77tiACGn5da2lAonEbPStMlvswCK5SQspyYOSM706/nxchRwdjxIsZyB4=\n=sXNA\n-----END PGP SIGNATURE-----\n",
+            "payload": "tree 2fbd1d5e51cb03a24f0ade6226ccfaeb6ce9369a\nparent ffaaf4838228c922b586a87f717ed402031fcc0a\nauthor Yilei \"Dolee\" Yang <yileiyang@google.com> 1668035331 -0800\ncommitter GitHub <noreply@github.com> 1668035331 -0800\n\nCorrectly handle trailing commas that are inside a line's leading non-nested parens (#3370)\n\n- Fixes #1671\r\n- Fixes #3229\r\n"
+          }
+        },
+        "url": "https://api.github.com/repos/discord/black/commits/8091b2503d12dd0110e0f1a9ed1e6b830aa668ed",
+        "author": {
+          "login": "yilei",
+          "id": 581947,
+          "node_id": "MDQ6VXNlcjU4MTk0Nw==",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/yilei",
+          "type": "User",
+          "site_admin": false
+        },
+        "committer": {
+          "login": "web-flow",
+          "id": 19864447,
+          "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/web-flow",
+          "type": "User",
+          "site_admin": false
+        },
+        "parents": [
+          {
+            "sha": "ffaaf4838228c922b586a87f717ed402031fcc0a",
+            "url": "https://api.github.com/repos/discord/black/commits/ffaaf4838228c922b586a87f717ed402031fcc0a"
+          }
+        ]
+      }
+    ],
     "releases": [],
-    "issues": [],
-    "pullRequests": []
+    "issues": [
+      {
+        "url": "https://api.github.com/repos/discord/black/issues/1",
+        "id": 1205930173,
+        "node_id": "PR_kwDOD0NB1M42TuNN",
+        "number": 1,
+        "title": "Range limit click",
+        "user": {
+          "login": "goodspark",
+          "id": 29210237,
+          "node_id": "MDQ6VXNlcjI5MjEwMjM3",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/goodspark",
+          "type": "User",
+          "site_admin": false
+        },
+        "labels": [],
+        "state": "closed",
+        "locked": false,
+        "assignee": null,
+        "assignees": [],
+        "milestone": null,
+        "comments": 0,
+        "created_at": "2022-04-15T22:39:37Z",
+        "updated_at": "2022-04-18T17:33:56Z",
+        "closed_at": "2022-04-18T17:33:53Z",
+        "author_association": "NONE",
+        "active_lock_reason": null,
+        "draft": false,
+        "pull_request": {
+          "url": "https://api.github.com/repos/discord/black/pulls/1",
+          "merged_at": "2022-04-18T17:33:53Z"
+        },
+        "body": "Ref: https://github.com/psf/black/issues/2976\r\n\r\nBlack was importing something incorrectly. Upgrading to the version with the fix also means dropping Python 2.7 support.",
+        "reactions": {
+          "url": "https://api.github.com/repos/discord/black/issues/1/reactions",
+          "total_count": 0,
+          "+1": 0,
+          "-1": 0,
+          "laugh": 0,
+          "hooray": 0,
+          "confused": 0,
+          "heart": 0,
+          "rocket": 0,
+          "eyes": 0
+        },
+        "performed_via_github_app": null,
+        "state_reason": null
+      }
+    ],
+    "pullRequests": [
+      {
+        "url": "https://api.github.com/repos/discord/black/pulls/1",
+        "id": 911139661,
+        "node_id": "PR_kwDOD0NB1M42TuNN",
+        "number": 1,
+        "state": "closed",
+        "locked": false,
+        "title": "Range limit click",
+        "user": {
+          "login": "goodspark",
+          "id": 29210237,
+          "node_id": "MDQ6VXNlcjI5MjEwMjM3",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/goodspark",
+          "type": "User",
+          "site_admin": false
+        },
+        "body": "Ref: https://github.com/psf/black/issues/2976\r\n\r\nBlack was importing something incorrectly. Upgrading to the version with the fix also means dropping Python 2.7 support.",
+        "created_at": "2022-04-15T22:39:37Z",
+        "updated_at": "2022-04-18T17:33:56Z",
+        "closed_at": "2022-04-18T17:33:53Z",
+        "merged_at": "2022-04-18T17:33:53Z",
+        "merge_commit_sha": "6788d2af9bebbe95e4720a5d86ce9082094f9cd4",
+        "assignee": null,
+        "assignees": [],
+        "requested_reviewers": [
+          {
+            "login": "FuegoFro",
+            "id": 463696,
+            "node_id": "MDQ6VXNlcjQ2MzY5Ng==",
+            "gravatar_id": "",
+            "url": "https://api.github.com/users/FuegoFro",
+            "type": "User",
+            "site_admin": false
+          },
+          {
+            "login": "jdost",
+            "id": 882537,
+            "node_id": "MDQ6VXNlcjg4MjUzNw==",
+            "gravatar_id": "",
+            "url": "https://api.github.com/users/jdost",
+            "type": "User",
+            "site_admin": false
+          }
+        ],
+        "requested_teams": [],
+        "labels": [],
+        "milestone": null,
+        "draft": false,
+        "head": {
+          "label": "discord:goodspark-patch-1",
+          "ref": "goodspark-patch-1",
+          "sha": "45f4a56fa18a8da1bcb34cf6edd069df22def164",
+          "user": {
+            "login": "discord",
+            "id": 1965106,
+            "node_id": "MDEyOk9yZ2FuaXphdGlvbjE5NjUxMDY=",
+            "gravatar_id": "",
+            "url": "https://api.github.com/users/discord",
+            "type": "Organization",
+            "site_admin": false
+          },
+          "repo": {
+            "id": 256066004,
+            "node_id": "MDEwOlJlcG9zaXRvcnkyNTYwNjYwMDQ=",
+            "name": "black",
+            "full_name": "discord/black",
+            "private": false,
+            "owner": {
+              "login": "discord",
+              "id": 1965106,
+              "node_id": "MDEyOk9yZ2FuaXphdGlvbjE5NjUxMDY=",
+              "gravatar_id": "",
+              "url": "https://api.github.com/users/discord",
+              "type": "Organization",
+              "site_admin": false
+            },
+            "description": "The uncompromising Python code formatter",
+            "fork": true,
+            "url": "https://api.github.com/repos/discord/black",
+            "created_at": "2020-04-16T00:09:17Z",
+            "updated_at": "2022-11-24T00:13:08Z",
+            "pushed_at": "2022-11-28T23:02:44Z",
+            "homepage": "https://black.readthedocs.io/en/stable/",
+            "size": 6576,
+            "stargazers_count": 4,
+            "watchers_count": 4,
+            "language": "Python",
+            "has_issues": false,
+            "has_projects": true,
+            "has_downloads": true,
+            "has_wiki": true,
+            "has_pages": false,
+            "has_discussions": false,
+            "forks_count": 2,
+            "archived": false,
+            "disabled": false,
+            "open_issues_count": 0,
+            "license": {
+              "key": "mit",
+              "name": "MIT License",
+              "spdx_id": "MIT",
+              "url": "https://api.github.com/licenses/mit",
+              "node_id": "MDc6TGljZW5zZTEz"
+            },
+            "allow_forking": true,
+            "is_template": false,
+            "web_commit_signoff_required": false,
+            "topics": [],
+            "visibility": "public",
+            "forks": 2,
+            "open_issues": 0,
+            "watchers": 4,
+            "default_branch": "main"
+          }
+        },
+        "base": {
+          "label": "discord:discord",
+          "ref": "discord",
+          "sha": "8e2ffad2c0291341761ed0331c872ac428527d77",
+          "user": {
+            "login": "discord",
+            "id": 1965106,
+            "node_id": "MDEyOk9yZ2FuaXphdGlvbjE5NjUxMDY=",
+            "gravatar_id": "",
+            "url": "https://api.github.com/users/discord",
+            "type": "Organization",
+            "site_admin": false
+          },
+          "repo": {
+            "id": 256066004,
+            "node_id": "MDEwOlJlcG9zaXRvcnkyNTYwNjYwMDQ=",
+            "name": "black",
+            "full_name": "discord/black",
+            "private": false,
+            "owner": {
+              "login": "discord",
+              "id": 1965106,
+              "node_id": "MDEyOk9yZ2FuaXphdGlvbjE5NjUxMDY=",
+              "gravatar_id": "",
+              "url": "https://api.github.com/users/discord",
+              "type": "Organization",
+              "site_admin": false
+            },
+            "description": "The uncompromising Python code formatter",
+            "fork": true,
+            "url": "https://api.github.com/repos/discord/black",
+            "created_at": "2020-04-16T00:09:17Z",
+            "updated_at": "2022-11-24T00:13:08Z",
+            "pushed_at": "2022-11-28T23:02:44Z",
+            "homepage": "https://black.readthedocs.io/en/stable/",
+            "size": 6576,
+            "stargazers_count": 4,
+            "watchers_count": 4,
+            "language": "Python",
+            "has_issues": false,
+            "has_projects": true,
+            "has_downloads": true,
+            "has_wiki": true,
+            "has_pages": false,
+            "has_discussions": false,
+            "forks_count": 2,
+            "archived": false,
+            "disabled": false,
+            "open_issues_count": 0,
+            "license": {
+              "key": "mit",
+              "name": "MIT License",
+              "spdx_id": "MIT",
+              "url": "https://api.github.com/licenses/mit",
+              "node_id": "MDc6TGljZW5zZTEz"
+            },
+            "allow_forking": true,
+            "is_template": false,
+            "web_commit_signoff_required": false,
+            "topics": [],
+            "visibility": "public",
+            "forks": 2,
+            "open_issues": 0,
+            "watchers": 4,
+            "default_branch": "main"
+          }
+        },
+        "_links": {
+          "self": {
+            "href": "https://api.github.com/repos/discord/black/pulls/1"
+          },
+          "html": {
+            "href": "https://github.com/discord/black/pull/1"
+          },
+          "issue": {
+            "href": "https://api.github.com/repos/discord/black/issues/1"
+          },
+          "comments": {
+            "href": "https://api.github.com/repos/discord/black/issues/1/comments"
+          },
+          "review_comments": {
+            "href": "https://api.github.com/repos/discord/black/pulls/1/comments"
+          },
+          "review_comment": {
+            "href": "https://api.github.com/repos/discord/black/pulls/comments{/number}"
+          },
+          "commits": {
+            "href": "https://api.github.com/repos/discord/black/pulls/1/commits"
+          },
+          "statuses": {
+            "href": "https://api.github.com/repos/discord/black/statuses/45f4a56fa18a8da1bcb34cf6edd069df22def164"
+          }
+        },
+        "author_association": "NONE",
+        "auto_merge": null,
+        "active_lock_reason": null
+      }
+    ]
   }
 }

@@ -59,9 +59,457 @@
   },
   "branches": [],
   "last5": {
-    "commits": [],
-    "releases": [],
-    "issues": [],
+    "commits": [
+      {
+        "sha": "dca85fe26ced70f0123f9a5a9104c7e19e029215",
+        "node_id": "C_kwDOH1NZFtoAKGRjYTg1ZmUyNmNlZDcwZjAxMjNmOWE1YTkxMDRjN2UxOWUwMjkyMTU",
+        "commit": {
+          "author": {
+            "name": "Tony De La Nuez",
+            "email": "tony.delanuez@discordapp.com",
+            "date": "2022-08-19T16:10:16Z"
+          },
+          "committer": {
+            "name": "GitHub",
+            "email": "noreply@github.com",
+            "date": "2022-08-19T16:10:16Z"
+          },
+          "message": "Merge pull request #2 from discord/tdelanuez/init-container-indices\n\nCheck init container indices for 'bootstrap' name",
+          "tree": {
+            "sha": "fd58261b7e17f10dce52e3b71604ea1132e341dc",
+            "url": "https://api.github.com/repos/discord/k8s-buildkite-plugin-public/git/trees/fd58261b7e17f10dce52e3b71604ea1132e341dc"
+          },
+          "url": "https://api.github.com/repos/discord/k8s-buildkite-plugin-public/git/commits/dca85fe26ced70f0123f9a5a9104c7e19e029215",
+          "comment_count": 0,
+          "verification": {
+            "verified": true,
+            "reason": "valid",
+            "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsBcBAABCAAQBQJi/7XoCRBK7hj4Ov3rIwAAyZ0IAKiqz3/G5Zc1iCBUeXEAPzoB\nS9CJkLq3Js6cYOLe3AVT0xB/GDpOW1AmVhpflL4Swx+pmUv4E0Dxb2d6f8rlxgsV\nsiGJ8M802tkglWMWPMoaOK9jBooPuKGRJLK04Tzta+QELpTYf/26lM4VWq2FDoU+\n/L7qhp+zA1Tdf4PzAm6x0OPf1McBtS1OetIxRdbErossDR1S3CgPFfzUndaSpVzx\nLcjS4akcMuDJkj7x3qDDAKnA9SDvwLO/f/zJiMNOYvkBlBrxgkadWId+jnMtShSF\nKjxZS2e6CV6YRQEZ3mYdo9ArvWGidtd/k3Nx/5P3AXZqZC4lEHrbTViES24tLk4=\n=gc4z\n-----END PGP SIGNATURE-----\n",
+            "payload": "tree fd58261b7e17f10dce52e3b71604ea1132e341dc\nparent e37d34b22de259ff92fd60b26d0eba7ed7722188\nparent 3dc4c5bbd30bcba1cbf3e76e3b1dc004f3dcb49e\nauthor Tony De La Nuez <tony.delanuez@discordapp.com> 1660925416 -0500\ncommitter GitHub <noreply@github.com> 1660925416 -0500\n\nMerge pull request #2 from discord/tdelanuez/init-container-indices\n\nCheck init container indices for 'bootstrap' name"
+          }
+        },
+        "url": "https://api.github.com/repos/discord/k8s-buildkite-plugin-public/commits/dca85fe26ced70f0123f9a5a9104c7e19e029215",
+        "author": {
+          "login": "tonydelanuez",
+          "id": 17029312,
+          "node_id": "MDQ6VXNlcjE3MDI5MzEy",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/tonydelanuez",
+          "type": "User",
+          "site_admin": false
+        },
+        "committer": {
+          "login": "web-flow",
+          "id": 19864447,
+          "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/web-flow",
+          "type": "User",
+          "site_admin": false
+        },
+        "parents": [
+          {
+            "sha": "e37d34b22de259ff92fd60b26d0eba7ed7722188",
+            "url": "https://api.github.com/repos/discord/k8s-buildkite-plugin-public/commits/e37d34b22de259ff92fd60b26d0eba7ed7722188"
+          },
+          {
+            "sha": "3dc4c5bbd30bcba1cbf3e76e3b1dc004f3dcb49e",
+            "url": "https://api.github.com/repos/discord/k8s-buildkite-plugin-public/commits/3dc4c5bbd30bcba1cbf3e76e3b1dc004f3dcb49e"
+          }
+        ]
+      },
+      {
+        "sha": "3dc4c5bbd30bcba1cbf3e76e3b1dc004f3dcb49e",
+        "node_id": "C_kwDOH1NZFtoAKDNkYzRjNWJiZDMwYmNiYTFjYmYzZTc2ZTNiMWRjMDA0ZjNkY2I0OWU",
+        "commit": {
+          "author": {
+            "name": "Tony De La Nuez",
+            "email": "tony.delanuez@discordapp.com",
+            "date": "2022-08-17T21:25:19Z"
+          },
+          "committer": {
+            "name": "Tony De La Nuez",
+            "email": "tony.delanuez@discordapp.com",
+            "date": "2022-08-17T21:25:19Z"
+          },
+          "message": "Check init container indices for 'bootstrap' name",
+          "tree": {
+            "sha": "fd58261b7e17f10dce52e3b71604ea1132e341dc",
+            "url": "https://api.github.com/repos/discord/k8s-buildkite-plugin-public/git/trees/fd58261b7e17f10dce52e3b71604ea1132e341dc"
+          },
+          "url": "https://api.github.com/repos/discord/k8s-buildkite-plugin-public/git/commits/3dc4c5bbd30bcba1cbf3e76e3b1dc004f3dcb49e",
+          "comment_count": 0,
+          "verification": {
+            "verified": false,
+            "reason": "unsigned",
+            "signature": null,
+            "payload": null
+          }
+        },
+        "url": "https://api.github.com/repos/discord/k8s-buildkite-plugin-public/commits/3dc4c5bbd30bcba1cbf3e76e3b1dc004f3dcb49e",
+        "author": {
+          "login": "tonydelanuez",
+          "id": 17029312,
+          "node_id": "MDQ6VXNlcjE3MDI5MzEy",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/tonydelanuez",
+          "type": "User",
+          "site_admin": false
+        },
+        "committer": {
+          "login": "tonydelanuez",
+          "id": 17029312,
+          "node_id": "MDQ6VXNlcjE3MDI5MzEy",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/tonydelanuez",
+          "type": "User",
+          "site_admin": false
+        },
+        "parents": [
+          {
+            "sha": "e37d34b22de259ff92fd60b26d0eba7ed7722188",
+            "url": "https://api.github.com/repos/discord/k8s-buildkite-plugin-public/commits/e37d34b22de259ff92fd60b26d0eba7ed7722188"
+          }
+        ]
+      },
+      {
+        "sha": "e37d34b22de259ff92fd60b26d0eba7ed7722188",
+        "node_id": "C_kwDOH1NZFtoAKGUzN2QzNGIyMmRlMjU5ZmY5MmZkNjBiMjZkMGViYTdlZDc3MjIxODg",
+        "commit": {
+          "author": {
+            "name": "Tony De La Nuez",
+            "email": "tony.delanuez@discordapp.com",
+            "date": "2022-08-17T16:39:18Z"
+          },
+          "committer": {
+            "name": "GitHub",
+            "email": "noreply@github.com",
+            "date": "2022-08-17T16:39:18Z"
+          },
+          "message": "Merge pull request #1 from discord/tdelanuez/fix-container-status-indices\n\nFix container status indices",
+          "tree": {
+            "sha": "fb755d5b644d65c1db6b9dce1ca6b43923bbd3b3",
+            "url": "https://api.github.com/repos/discord/k8s-buildkite-plugin-public/git/trees/fb755d5b644d65c1db6b9dce1ca6b43923bbd3b3"
+          },
+          "url": "https://api.github.com/repos/discord/k8s-buildkite-plugin-public/git/commits/e37d34b22de259ff92fd60b26d0eba7ed7722188",
+          "comment_count": 0,
+          "verification": {
+            "verified": true,
+            "reason": "valid",
+            "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsBcBAABCAAQBQJi/Rm2CRBK7hj4Ov3rIwAA4ggIAIiL6BnWJ+GQO5bYGYr8J/w3\nmylpGIZhNXdXqfCPAs1wZljrYmUTP0lA6sLWrwfRZ+FWgoUZ4jDfhqKSPf9xIHEh\nXhpQRvvt4qvK+WIm5B2bi2YGf2+H1KIrjFld95k54PWFoQhDIlhUZ6A4YbiP9pnw\n/HUnFTkWQaYp1+2ppVxBecWWLC6AcNsmIlksDSWtYG+WTSo6jYJp7lRLptivoBA4\nzubpxo5pxFiuLRsv0pWm7mXkhqSMQfVr+KL/Ke3oEx1UnrGyJoFwIL0ph0wLkE+Z\nRcYBFs0WRmK3iDbcxbg/GNsNWMdLgkq8nQPUzWMOYkT/yAqRAkCddOVY9VRVNx0=\n=jTnC\n-----END PGP SIGNATURE-----\n",
+            "payload": "tree fb755d5b644d65c1db6b9dce1ca6b43923bbd3b3\nparent 0e13cac380ab4a5eb0736bf1b67866f2588146c9\nparent dc9dda2f6855f100985dd309843d8da1f5e0cbf2\nauthor Tony De La Nuez <tony.delanuez@discordapp.com> 1660754358 -0500\ncommitter GitHub <noreply@github.com> 1660754358 -0500\n\nMerge pull request #1 from discord/tdelanuez/fix-container-status-indices\n\nFix container status indices"
+          }
+        },
+        "url": "https://api.github.com/repos/discord/k8s-buildkite-plugin-public/commits/e37d34b22de259ff92fd60b26d0eba7ed7722188",
+        "author": {
+          "login": "tonydelanuez",
+          "id": 17029312,
+          "node_id": "MDQ6VXNlcjE3MDI5MzEy",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/tonydelanuez",
+          "type": "User",
+          "site_admin": false
+        },
+        "committer": {
+          "login": "web-flow",
+          "id": 19864447,
+          "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/web-flow",
+          "type": "User",
+          "site_admin": false
+        },
+        "parents": [
+          {
+            "sha": "0e13cac380ab4a5eb0736bf1b67866f2588146c9",
+            "url": "https://api.github.com/repos/discord/k8s-buildkite-plugin-public/commits/0e13cac380ab4a5eb0736bf1b67866f2588146c9"
+          },
+          {
+            "sha": "dc9dda2f6855f100985dd309843d8da1f5e0cbf2",
+            "url": "https://api.github.com/repos/discord/k8s-buildkite-plugin-public/commits/dc9dda2f6855f100985dd309843d8da1f5e0cbf2"
+          }
+        ]
+      },
+      {
+        "sha": "dc9dda2f6855f100985dd309843d8da1f5e0cbf2",
+        "node_id": "C_kwDOH1NZFtoAKGRjOWRkYTJmNjg1NWYxMDA5ODVkZDMwOTg0M2Q4ZGExZjVlMGNiZjI",
+        "commit": {
+          "author": {
+            "name": "Tony De La Nuez",
+            "email": "tony.delanuez@discordapp.com",
+            "date": "2022-08-17T15:47:16Z"
+          },
+          "committer": {
+            "name": "Tony De La Nuez",
+            "email": "tony.delanuez@discordapp.com",
+            "date": "2022-08-17T15:47:16Z"
+          },
+          "message": "Properly track step container index in case of patch adding new containers",
+          "tree": {
+            "sha": "fb755d5b644d65c1db6b9dce1ca6b43923bbd3b3",
+            "url": "https://api.github.com/repos/discord/k8s-buildkite-plugin-public/git/trees/fb755d5b644d65c1db6b9dce1ca6b43923bbd3b3"
+          },
+          "url": "https://api.github.com/repos/discord/k8s-buildkite-plugin-public/git/commits/dc9dda2f6855f100985dd309843d8da1f5e0cbf2",
+          "comment_count": 0,
+          "verification": {
+            "verified": false,
+            "reason": "unsigned",
+            "signature": null,
+            "payload": null
+          }
+        },
+        "url": "https://api.github.com/repos/discord/k8s-buildkite-plugin-public/commits/dc9dda2f6855f100985dd309843d8da1f5e0cbf2",
+        "author": {
+          "login": "tonydelanuez",
+          "id": 17029312,
+          "node_id": "MDQ6VXNlcjE3MDI5MzEy",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/tonydelanuez",
+          "type": "User",
+          "site_admin": false
+        },
+        "committer": {
+          "login": "tonydelanuez",
+          "id": 17029312,
+          "node_id": "MDQ6VXNlcjE3MDI5MzEy",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/tonydelanuez",
+          "type": "User",
+          "site_admin": false
+        },
+        "parents": [
+          {
+            "sha": "f38df25642fe26c4c3a60a829699f72bd701f1e9",
+            "url": "https://api.github.com/repos/discord/k8s-buildkite-plugin-public/commits/f38df25642fe26c4c3a60a829699f72bd701f1e9"
+          }
+        ]
+      },
+      {
+        "sha": "f38df25642fe26c4c3a60a829699f72bd701f1e9",
+        "node_id": "C_kwDOH1NZFtoAKGYzOGRmMjU2NDJmZTI2YzRjM2E2MGE4Mjk2OTlmNzJiZDcwMWYxZTk",
+        "commit": {
+          "author": {
+            "name": "Tony De La Nuez",
+            "email": "tony.delanuez@discordapp.com",
+            "date": "2022-08-17T15:30:19Z"
+          },
+          "committer": {
+            "name": "Tony De La Nuez",
+            "email": "tony.delanuez@discordapp.com",
+            "date": "2022-08-17T15:30:19Z"
+          },
+          "message": "Add default container annotation for log collection",
+          "tree": {
+            "sha": "37cb9b883564f4976249dfdb5089873df278f7a1",
+            "url": "https://api.github.com/repos/discord/k8s-buildkite-plugin-public/git/trees/37cb9b883564f4976249dfdb5089873df278f7a1"
+          },
+          "url": "https://api.github.com/repos/discord/k8s-buildkite-plugin-public/git/commits/f38df25642fe26c4c3a60a829699f72bd701f1e9",
+          "comment_count": 0,
+          "verification": {
+            "verified": false,
+            "reason": "unsigned",
+            "signature": null,
+            "payload": null
+          }
+        },
+        "url": "https://api.github.com/repos/discord/k8s-buildkite-plugin-public/commits/f38df25642fe26c4c3a60a829699f72bd701f1e9",
+        "author": {
+          "login": "tonydelanuez",
+          "id": 17029312,
+          "node_id": "MDQ6VXNlcjE3MDI5MzEy",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/tonydelanuez",
+          "type": "User",
+          "site_admin": false
+        },
+        "committer": {
+          "login": "tonydelanuez",
+          "id": 17029312,
+          "node_id": "MDQ6VXNlcjE3MDI5MzEy",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/tonydelanuez",
+          "type": "User",
+          "site_admin": false
+        },
+        "parents": [
+          {
+            "sha": "0e13cac380ab4a5eb0736bf1b67866f2588146c9",
+            "url": "https://api.github.com/repos/discord/k8s-buildkite-plugin-public/commits/0e13cac380ab4a5eb0736bf1b67866f2588146c9"
+          }
+        ]
+      }
+    ],
+    "releases": [
+      {
+        "url": "https://api.github.com/repos/discord/k8s-buildkite-plugin-public/releases/74644857",
+        "id": 74644857,
+        "author": {
+          "login": "tonydelanuez",
+          "id": 17029312,
+          "node_id": "MDQ6VXNlcjE3MDI5MzEy",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/tonydelanuez",
+          "type": "User",
+          "site_admin": false
+        },
+        "node_id": "RE_kwDOH1NZFs4Ecv15",
+        "tag_name": "v1.2.5+0.1",
+        "target_commitish": "main",
+        "name": "Track step container index",
+        "draft": false,
+        "prerelease": false,
+        "created_at": "2022-08-17T16:39:18Z",
+        "published_at": "2022-08-17T16:43:17Z",
+        "assets": [],
+        "body": "Matches version 1.2.5 of the EmbarkStudios/k8s-buildkite-plugin release with additional features: \r\n\r\n1. Tracking proper index of the step container\r\n2. Making the step container the default log source"
+      }
+    ],
+    "issues": [
+      {
+        "url": "https://api.github.com/repos/discord/k8s-buildkite-plugin-public/issues/3",
+        "id": 1365199667,
+        "node_id": "PR_kwDOH1NZFs4-igrP",
+        "number": 3,
+        "title": "Support passing an agent type argument to jsonnet",
+        "user": {
+          "login": "tonydelanuez",
+          "id": 17029312,
+          "node_id": "MDQ6VXNlcjE3MDI5MzEy",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/tonydelanuez",
+          "type": "User",
+          "site_admin": false
+        },
+        "labels": [],
+        "state": "closed",
+        "locked": false,
+        "assignee": null,
+        "assignees": [],
+        "milestone": null,
+        "comments": 0,
+        "created_at": "2022-09-07T21:20:06Z",
+        "updated_at": "2022-09-13T16:19:43Z",
+        "closed_at": "2022-09-13T16:19:43Z",
+        "author_association": "COLLABORATOR",
+        "active_lock_reason": null,
+        "draft": false,
+        "pull_request": {
+          "url": "https://api.github.com/repos/discord/k8s-buildkite-plugin-public/pulls/3",
+          "merged_at": null
+        },
+        "body": null,
+        "reactions": {
+          "url": "https://api.github.com/repos/discord/k8s-buildkite-plugin-public/issues/3/reactions",
+          "total_count": 0,
+          "+1": 0,
+          "-1": 0,
+          "laugh": 0,
+          "hooray": 0,
+          "confused": 0,
+          "heart": 0,
+          "rocket": 0,
+          "eyes": 0
+        },
+        "performed_via_github_app": null,
+        "state_reason": null
+      },
+      {
+        "url": "https://api.github.com/repos/discord/k8s-buildkite-plugin-public/issues/2",
+        "id": 1344636490,
+        "node_id": "PR_kwDOH1NZFs49ePoP",
+        "number": 2,
+        "title": "Check init container indices for 'bootstrap' name",
+        "user": {
+          "login": "tonydelanuez",
+          "id": 17029312,
+          "node_id": "MDQ6VXNlcjE3MDI5MzEy",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/tonydelanuez",
+          "type": "User",
+          "site_admin": false
+        },
+        "labels": [],
+        "state": "closed",
+        "locked": false,
+        "assignee": null,
+        "assignees": [],
+        "milestone": null,
+        "comments": 0,
+        "created_at": "2022-08-19T16:10:06Z",
+        "updated_at": "2022-08-19T16:10:16Z",
+        "closed_at": "2022-08-19T16:10:16Z",
+        "author_association": "COLLABORATOR",
+        "active_lock_reason": null,
+        "draft": false,
+        "pull_request": {
+          "url": "https://api.github.com/repos/discord/k8s-buildkite-plugin-public/pulls/2",
+          "merged_at": "2022-08-19T16:10:16Z"
+        },
+        "body": "Moving the `step_index` export after the exit code status check on `get_pod_status` and doing the same index tracking for the bootstrap initContainer. ",
+        "reactions": {
+          "url": "https://api.github.com/repos/discord/k8s-buildkite-plugin-public/issues/2/reactions",
+          "total_count": 0,
+          "+1": 0,
+          "-1": 0,
+          "laugh": 0,
+          "hooray": 0,
+          "confused": 0,
+          "heart": 0,
+          "rocket": 0,
+          "eyes": 0
+        },
+        "performed_via_github_app": null,
+        "state_reason": null
+      },
+      {
+        "url": "https://api.github.com/repos/discord/k8s-buildkite-plugin-public/issues/1",
+        "id": 1342025433,
+        "node_id": "PR_kwDOH1NZFs49Vl5A",
+        "number": 1,
+        "title": "Fix container status indices",
+        "user": {
+          "login": "tonydelanuez",
+          "id": 17029312,
+          "node_id": "MDQ6VXNlcjE3MDI5MzEy",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/tonydelanuez",
+          "type": "User",
+          "site_admin": false
+        },
+        "labels": [],
+        "state": "closed",
+        "locked": false,
+        "assignee": null,
+        "assignees": [],
+        "milestone": null,
+        "comments": 0,
+        "created_at": "2022-08-17T16:38:53Z",
+        "updated_at": "2022-08-17T16:39:18Z",
+        "closed_at": "2022-08-17T16:39:18Z",
+        "author_association": "COLLABORATOR",
+        "active_lock_reason": null,
+        "draft": false,
+        "pull_request": {
+          "url": "https://api.github.com/repos/discord/k8s-buildkite-plugin-public/pulls/1",
+          "merged_at": "2022-08-17T16:39:18Z"
+        },
+        "body": "The plugin assumes the step container is always index 0 of the container array for the statuses/spec. This may not be true with sidecar deployments. Fetch the index of the step container and use it when checking container statuses.\r\n\r\nAdditionally, declare the step container to be the default logging/exec source.  ",
+        "reactions": {
+          "url": "https://api.github.com/repos/discord/k8s-buildkite-plugin-public/issues/1/reactions",
+          "total_count": 0,
+          "+1": 0,
+          "-1": 0,
+          "laugh": 0,
+          "hooray": 0,
+          "confused": 0,
+          "heart": 0,
+          "rocket": 0,
+          "eyes": 0
+        },
+        "performed_via_github_app": null,
+        "state_reason": null
+      }
+    ],
     "pullRequests": []
   }
 }
