@@ -82,8 +82,8 @@
           "url": "https://api.github.com/repos/discord/zorkian-kafka/git/commits/6f3576b56d06e90e32f8c50dbc4b0be18a3f66e8",
           "comment_count": 0,
           "verification": {
-            "verified": true,
-            "reason": "valid",
+            "verified": false,
+            "reason": "gpgverify_unavailable",
             "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsBcBAABCAAQBQJgeIW6CRBK7hj4Ov3rIwAAdHIIACxy4LRE0FYeRQMOXKQ9wRbG\nmSmtDlEtcedNkpL+AHV2orb25EZWOxJPpHhMEguetS2IYTOEpBaKmsL1lo0orqU5\nDSKzX4CHoiXOJzqaUVDZba8C9XPelPOmUz/DB2Nd5rzNs+QouODmSZ+P/R5EGO6u\nso7IVsG5GQ75PiI1Pfz0Ou1Aja5us8zYQjAkIcGFByW3dpzdta5mKsdClZF8oEJm\nX6Jf7Z7UT7mzErGzBcyG0C4yNGIWzL9b0o3w0erGNTbOWzNe0/+eSeJzgmLTl6aS\ncbE4LbmBGSA7dDTZJCsa8N0O3sKKlJXmsfYrU2arc2547dWK2uUUyUdRgTCJutw=\n=I6TN\n-----END PGP SIGNATURE-----\n",
             "payload": "tree 28e9fecf99ac97522586c28b1240640875c1b031\nparent 34d4c248f8d90bd4078aea82595876b69b584f5c\nparent b7dc88fd54820b2873b59b7a7f2163729eeb7ed8\nauthor Will <will.roberts@discordapp.com> 1618511290 -0400\ncommitter GitHub <noreply@github.com> 1618511290 -0400\n\nMerge pull request #1 from discord/updates-logging-levels-and-tests\n\nUpdates logging levels and tests"
           }
