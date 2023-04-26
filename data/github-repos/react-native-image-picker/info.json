@@ -332,12 +332,15 @@
       }
     ],
     "releases": [],
-    "issues": [
+    "issues": [],
+    "pullRequests": [
       {
-        "url": "https://api.github.com/repos/discord/react-native-image-picker/issues/5",
-        "id": 1629958569,
+        "url": "https://api.github.com/repos/discord/react-native-image-picker/pulls/5",
+        "id": 1280781085,
         "node_id": "PR_kwDOGCgkWs5MVysd",
         "number": 5,
+        "state": "closed",
+        "locked": false,
         "title": "[ios] Upgrade to more recent lib code, and enable multi- and pre-selection",
         "user": {
           "login": "huderlem",
@@ -348,44 +351,200 @@
           "type": "User",
           "site_admin": false
         },
-        "labels": [],
-        "state": "closed",
-        "locked": false,
-        "assignee": null,
-        "assignees": [],
-        "milestone": null,
-        "comments": 0,
+        "body": "This PR does a few things:\r\n1. Brings the iOS code closer to the latest version of the `react-native-image-picker`, which has a couple bug fixes and image-data improvements.\r\n2. Enables use of iOS 14+'s `PHPickerViewController`, along with its preselection capabilities.\r\n3. Thoroughly includes `id` as the \"asset local identifier\" in the response's assets.",
         "created_at": "2023-03-17T21:47:15Z",
         "updated_at": "2023-03-21T21:57:17Z",
         "closed_at": "2023-03-21T21:57:17Z",
-        "author_association": "NONE",
-        "active_lock_reason": null,
+        "merged_at": "2023-03-21T21:57:17Z",
+        "merge_commit_sha": "1fb3c9f54b23346d51613932da3badd4e4cebc27",
+        "assignee": null,
+        "assignees": [],
+        "requested_reviewers": [
+          {
+            "login": "charlesx2013",
+            "id": 5563367,
+            "node_id": "MDQ6VXNlcjU1NjMzNjc=",
+            "gravatar_id": "",
+            "url": "https://api.github.com/users/charlesx2013",
+            "type": "User",
+            "site_admin": false
+          }
+        ],
+        "requested_teams": [],
+        "labels": [],
+        "milestone": null,
         "draft": false,
-        "pull_request": {
-          "url": "https://api.github.com/repos/discord/react-native-image-picker/pulls/5",
-          "merged_at": "2023-03-21T21:57:17Z"
+        "head": {
+          "label": "discord:multiselect",
+          "ref": "multiselect",
+          "sha": "ee7b78ec3ce4a36cca48856876275ab3d1725b75",
+          "user": {
+            "login": "discord",
+            "id": 1965106,
+            "node_id": "MDEyOk9yZ2FuaXphdGlvbjE5NjUxMDY=",
+            "gravatar_id": "",
+            "url": "https://api.github.com/users/discord",
+            "type": "Organization",
+            "site_admin": false
+          },
+          "repo": {
+            "id": 405283930,
+            "node_id": "MDEwOlJlcG9zaXRvcnk0MDUyODM5MzA=",
+            "name": "react-native-image-picker",
+            "full_name": "discord/react-native-image-picker",
+            "private": false,
+            "owner": {
+              "login": "discord",
+              "id": 1965106,
+              "node_id": "MDEyOk9yZ2FuaXphdGlvbjE5NjUxMDY=",
+              "gravatar_id": "",
+              "url": "https://api.github.com/users/discord",
+              "type": "Organization",
+              "site_admin": false
+            },
+            "description": ":sunrise_over_mountains: A React Native module that allows you to use native UI to select media from the device library or directly from the camera.",
+            "fork": true,
+            "url": "https://api.github.com/repos/discord/react-native-image-picker",
+            "created_at": "2021-09-11T04:36:51Z",
+            "updated_at": "2023-04-18T02:13:18Z",
+            "pushed_at": "2023-04-07T15:38:25Z",
+            "homepage": "",
+            "size": 2270,
+            "stargazers_count": 4,
+            "watchers_count": 4,
+            "language": "Java",
+            "has_issues": false,
+            "has_projects": true,
+            "has_downloads": true,
+            "has_wiki": false,
+            "has_pages": false,
+            "has_discussions": false,
+            "forks_count": 4,
+            "archived": false,
+            "disabled": false,
+            "open_issues_count": 0,
+            "license": {
+              "key": "mit",
+              "name": "MIT License",
+              "spdx_id": "MIT",
+              "url": "https://api.github.com/licenses/mit",
+              "node_id": "MDc6TGljZW5zZTEz"
+            },
+            "allow_forking": true,
+            "is_template": false,
+            "web_commit_signoff_required": false,
+            "topics": [],
+            "visibility": "public",
+            "forks": 4,
+            "open_issues": 0,
+            "watchers": 4,
+            "default_branch": "main"
+          }
         },
-        "body": "This PR does a few things:\r\n1. Brings the iOS code closer to the latest version of the `react-native-image-picker`, which has a couple bug fixes and image-data improvements.\r\n2. Enables use of iOS 14+'s `PHPickerViewController`, along with its preselection capabilities.\r\n3. Thoroughly includes `id` as the \"asset local identifier\" in the response's assets.",
-        "reactions": {
-          "url": "https://api.github.com/repos/discord/react-native-image-picker/issues/5/reactions",
-          "total_count": 0,
-          "+1": 0,
-          "-1": 0,
-          "laugh": 0,
-          "hooray": 0,
-          "confused": 0,
-          "heart": 0,
-          "rocket": 0,
-          "eyes": 0
+        "base": {
+          "label": "discord:4.7.1-discord-1",
+          "ref": "4.7.1-discord-1",
+          "sha": "65e1a045af383f0cecef979ad1edefd29783c7bb",
+          "user": {
+            "login": "discord",
+            "id": 1965106,
+            "node_id": "MDEyOk9yZ2FuaXphdGlvbjE5NjUxMDY=",
+            "gravatar_id": "",
+            "url": "https://api.github.com/users/discord",
+            "type": "Organization",
+            "site_admin": false
+          },
+          "repo": {
+            "id": 405283930,
+            "node_id": "MDEwOlJlcG9zaXRvcnk0MDUyODM5MzA=",
+            "name": "react-native-image-picker",
+            "full_name": "discord/react-native-image-picker",
+            "private": false,
+            "owner": {
+              "login": "discord",
+              "id": 1965106,
+              "node_id": "MDEyOk9yZ2FuaXphdGlvbjE5NjUxMDY=",
+              "gravatar_id": "",
+              "url": "https://api.github.com/users/discord",
+              "type": "Organization",
+              "site_admin": false
+            },
+            "description": ":sunrise_over_mountains: A React Native module that allows you to use native UI to select media from the device library or directly from the camera.",
+            "fork": true,
+            "url": "https://api.github.com/repos/discord/react-native-image-picker",
+            "created_at": "2021-09-11T04:36:51Z",
+            "updated_at": "2023-04-18T02:13:18Z",
+            "pushed_at": "2023-04-07T15:38:25Z",
+            "homepage": "",
+            "size": 2270,
+            "stargazers_count": 4,
+            "watchers_count": 4,
+            "language": "Java",
+            "has_issues": false,
+            "has_projects": true,
+            "has_downloads": true,
+            "has_wiki": false,
+            "has_pages": false,
+            "has_discussions": false,
+            "forks_count": 4,
+            "archived": false,
+            "disabled": false,
+            "open_issues_count": 0,
+            "license": {
+              "key": "mit",
+              "name": "MIT License",
+              "spdx_id": "MIT",
+              "url": "https://api.github.com/licenses/mit",
+              "node_id": "MDc6TGljZW5zZTEz"
+            },
+            "allow_forking": true,
+            "is_template": false,
+            "web_commit_signoff_required": false,
+            "topics": [],
+            "visibility": "public",
+            "forks": 4,
+            "open_issues": 0,
+            "watchers": 4,
+            "default_branch": "main"
+          }
         },
-        "performed_via_github_app": null,
-        "state_reason": null
+        "_links": {
+          "self": {
+            "href": "https://api.github.com/repos/discord/react-native-image-picker/pulls/5"
+          },
+          "html": {
+            "href": "https://github.com/discord/react-native-image-picker/pull/5"
+          },
+          "issue": {
+            "href": "https://api.github.com/repos/discord/react-native-image-picker/issues/5"
+          },
+          "comments": {
+            "href": "https://api.github.com/repos/discord/react-native-image-picker/issues/5/comments"
+          },
+          "review_comments": {
+            "href": "https://api.github.com/repos/discord/react-native-image-picker/pulls/5/comments"
+          },
+          "review_comment": {
+            "href": "https://api.github.com/repos/discord/react-native-image-picker/pulls/comments{/number}"
+          },
+          "commits": {
+            "href": "https://api.github.com/repos/discord/react-native-image-picker/pulls/5/commits"
+          },
+          "statuses": {
+            "href": "https://api.github.com/repos/discord/react-native-image-picker/statuses/ee7b78ec3ce4a36cca48856876275ab3d1725b75"
+          }
+        },
+        "author_association": "NONE",
+        "auto_merge": null,
+        "active_lock_reason": null
       },
       {
-        "url": "https://api.github.com/repos/discord/react-native-image-picker/issues/4",
-        "id": 1624269544,
+        "url": "https://api.github.com/repos/discord/react-native-image-picker/pulls/4",
+        "id": 1275746207,
         "node_id": "PR_kwDOGCgkWs5MClef",
         "number": 4,
+        "state": "closed",
+        "locked": false,
         "title": "[ios] Fix photo-taking flow on iOS",
         "user": {
           "login": "huderlem",
@@ -396,44 +555,209 @@
           "type": "User",
           "site_admin": false
         },
-        "labels": [],
-        "state": "closed",
-        "locked": false,
-        "assignee": null,
-        "assignees": [],
-        "milestone": null,
-        "comments": 0,
+        "body": "https://app.asana.com/0/1203476622224742/1203406560911150\r\n\r\nThis PR has the same motivation as this previous Android fix: https://github.com/discord/react-native-image-picker/pull/3\r\n\r\nFor iOS, we take a different strategy which exposes the created asset's PhotoKit `localIdentifier` in the response.  This allow JavaScript to match the `localIdentifier` with results form the photo roll.  Note, in the future, we probably want to just match the url itself, but we can't do that until we replace the photo roll code which currently uses the deprecated `ALAssetsLibrary`.\r\n\r\nVideo showing how the taken photo/video will be auto-selected (with an accompanying Discord JavaScript change):\r\n\r\nhttps://user-images.githubusercontent.com/2229288/225131139-17b5b60b-9860-422f-a5cb-a606eb42e069.mov\r\n\r\n",
         "created_at": "2023-03-14T20:42:04Z",
         "updated_at": "2023-03-15T20:19:29Z",
         "closed_at": "2023-03-15T20:19:29Z",
-        "author_association": "NONE",
-        "active_lock_reason": null,
+        "merged_at": "2023-03-15T20:19:29Z",
+        "merge_commit_sha": "8048740a8fb8d93a1431af26df88685bdea16f07",
+        "assignee": null,
+        "assignees": [],
+        "requested_reviewers": [
+          {
+            "login": "charlesx2013",
+            "id": 5563367,
+            "node_id": "MDQ6VXNlcjU1NjMzNjc=",
+            "gravatar_id": "",
+            "url": "https://api.github.com/users/charlesx2013",
+            "type": "User",
+            "site_admin": false
+          },
+          {
+            "login": "aweary",
+            "id": 6886061,
+            "node_id": "MDQ6VXNlcjY4ODYwNjE=",
+            "gravatar_id": "",
+            "url": "https://api.github.com/users/aweary",
+            "type": "User",
+            "site_admin": false
+          }
+        ],
+        "requested_teams": [],
+        "labels": [],
+        "milestone": null,
         "draft": false,
-        "pull_request": {
-          "url": "https://api.github.com/repos/discord/react-native-image-picker/pulls/4",
-          "merged_at": "2023-03-15T20:19:29Z"
+        "head": {
+          "label": "discord:huderlem/ios-localidentifier",
+          "ref": "huderlem/ios-localidentifier",
+          "sha": "d9afbf9a213c0b5b8b64f60befacd5d3734a83a5",
+          "user": {
+            "login": "discord",
+            "id": 1965106,
+            "node_id": "MDEyOk9yZ2FuaXphdGlvbjE5NjUxMDY=",
+            "gravatar_id": "",
+            "url": "https://api.github.com/users/discord",
+            "type": "Organization",
+            "site_admin": false
+          },
+          "repo": {
+            "id": 405283930,
+            "node_id": "MDEwOlJlcG9zaXRvcnk0MDUyODM5MzA=",
+            "name": "react-native-image-picker",
+            "full_name": "discord/react-native-image-picker",
+            "private": false,
+            "owner": {
+              "login": "discord",
+              "id": 1965106,
+              "node_id": "MDEyOk9yZ2FuaXphdGlvbjE5NjUxMDY=",
+              "gravatar_id": "",
+              "url": "https://api.github.com/users/discord",
+              "type": "Organization",
+              "site_admin": false
+            },
+            "description": ":sunrise_over_mountains: A React Native module that allows you to use native UI to select media from the device library or directly from the camera.",
+            "fork": true,
+            "url": "https://api.github.com/repos/discord/react-native-image-picker",
+            "created_at": "2021-09-11T04:36:51Z",
+            "updated_at": "2023-04-18T02:13:18Z",
+            "pushed_at": "2023-04-07T15:38:25Z",
+            "homepage": "",
+            "size": 2270,
+            "stargazers_count": 4,
+            "watchers_count": 4,
+            "language": "Java",
+            "has_issues": false,
+            "has_projects": true,
+            "has_downloads": true,
+            "has_wiki": false,
+            "has_pages": false,
+            "has_discussions": false,
+            "forks_count": 4,
+            "archived": false,
+            "disabled": false,
+            "open_issues_count": 0,
+            "license": {
+              "key": "mit",
+              "name": "MIT License",
+              "spdx_id": "MIT",
+              "url": "https://api.github.com/licenses/mit",
+              "node_id": "MDc6TGljZW5zZTEz"
+            },
+            "allow_forking": true,
+            "is_template": false,
+            "web_commit_signoff_required": false,
+            "topics": [],
+            "visibility": "public",
+            "forks": 4,
+            "open_issues": 0,
+            "watchers": 4,
+            "default_branch": "main"
+          }
         },
-        "body": "https://app.asana.com/0/1203476622224742/1203406560911150\r\n\r\nThis PR has the same motivation as this previous Android fix: https://github.com/discord/react-native-image-picker/pull/3\r\n\r\nFor iOS, we take a different strategy which exposes the created asset's PhotoKit `localIdentifier` in the response.  This allow JavaScript to match the `localIdentifier` with results form the photo roll.  Note, in the future, we probably want to just match the url itself, but we can't do that until we replace the photo roll code which currently uses the deprecated `ALAssetsLibrary`.\r\n\r\nVideo showing how the taken photo/video will be auto-selected (with an accompanying Discord JavaScript change):\r\n\r\nhttps://user-images.githubusercontent.com/2229288/225131139-17b5b60b-9860-422f-a5cb-a606eb42e069.mov\r\n\r\n",
-        "reactions": {
-          "url": "https://api.github.com/repos/discord/react-native-image-picker/issues/4/reactions",
-          "total_count": 0,
-          "+1": 0,
-          "-1": 0,
-          "laugh": 0,
-          "hooray": 0,
-          "confused": 0,
-          "heart": 0,
-          "rocket": 0,
-          "eyes": 0
+        "base": {
+          "label": "discord:4.7.1-discord-1",
+          "ref": "4.7.1-discord-1",
+          "sha": "b0479f11538be95aa7dcbe784b8d2c996c60afac",
+          "user": {
+            "login": "discord",
+            "id": 1965106,
+            "node_id": "MDEyOk9yZ2FuaXphdGlvbjE5NjUxMDY=",
+            "gravatar_id": "",
+            "url": "https://api.github.com/users/discord",
+            "type": "Organization",
+            "site_admin": false
+          },
+          "repo": {
+            "id": 405283930,
+            "node_id": "MDEwOlJlcG9zaXRvcnk0MDUyODM5MzA=",
+            "name": "react-native-image-picker",
+            "full_name": "discord/react-native-image-picker",
+            "private": false,
+            "owner": {
+              "login": "discord",
+              "id": 1965106,
+              "node_id": "MDEyOk9yZ2FuaXphdGlvbjE5NjUxMDY=",
+              "gravatar_id": "",
+              "url": "https://api.github.com/users/discord",
+              "type": "Organization",
+              "site_admin": false
+            },
+            "description": ":sunrise_over_mountains: A React Native module that allows you to use native UI to select media from the device library or directly from the camera.",
+            "fork": true,
+            "url": "https://api.github.com/repos/discord/react-native-image-picker",
+            "created_at": "2021-09-11T04:36:51Z",
+            "updated_at": "2023-04-18T02:13:18Z",
+            "pushed_at": "2023-04-07T15:38:25Z",
+            "homepage": "",
+            "size": 2270,
+            "stargazers_count": 4,
+            "watchers_count": 4,
+            "language": "Java",
+            "has_issues": false,
+            "has_projects": true,
+            "has_downloads": true,
+            "has_wiki": false,
+            "has_pages": false,
+            "has_discussions": false,
+            "forks_count": 4,
+            "archived": false,
+            "disabled": false,
+            "open_issues_count": 0,
+            "license": {
+              "key": "mit",
+              "name": "MIT License",
+              "spdx_id": "MIT",
+              "url": "https://api.github.com/licenses/mit",
+              "node_id": "MDc6TGljZW5zZTEz"
+            },
+            "allow_forking": true,
+            "is_template": false,
+            "web_commit_signoff_required": false,
+            "topics": [],
+            "visibility": "public",
+            "forks": 4,
+            "open_issues": 0,
+            "watchers": 4,
+            "default_branch": "main"
+          }
         },
-        "performed_via_github_app": null,
-        "state_reason": null
+        "_links": {
+          "self": {
+            "href": "https://api.github.com/repos/discord/react-native-image-picker/pulls/4"
+          },
+          "html": {
+            "href": "https://github.com/discord/react-native-image-picker/pull/4"
+          },
+          "issue": {
+            "href": "https://api.github.com/repos/discord/react-native-image-picker/issues/4"
+          },
+          "comments": {
+            "href": "https://api.github.com/repos/discord/react-native-image-picker/issues/4/comments"
+          },
+          "review_comments": {
+            "href": "https://api.github.com/repos/discord/react-native-image-picker/pulls/4/comments"
+          },
+          "review_comment": {
+            "href": "https://api.github.com/repos/discord/react-native-image-picker/pulls/comments{/number}"
+          },
+          "commits": {
+            "href": "https://api.github.com/repos/discord/react-native-image-picker/pulls/4/commits"
+          },
+          "statuses": {
+            "href": "https://api.github.com/repos/discord/react-native-image-picker/statuses/d9afbf9a213c0b5b8b64f60befacd5d3734a83a5"
+          }
+        },
+        "author_association": "NONE",
+        "auto_merge": null,
+        "active_lock_reason": null
       },
       {
-        "url": "https://api.github.com/repos/discord/react-native-image-picker/issues/3",
-        "id": 1567799717,
+        "url": "https://api.github.com/repos/discord/react-native-image-picker/pulls/3",
+        "id": 1226358830,
         "node_id": "PR_kwDOGCgkWs5JGMAu",
         "number": 3,
+        "state": "closed",
+        "locked": false,
         "title": "[RNA][Photo] Fixing taking photo flow",
         "user": {
           "login": "charlesx2013",
@@ -444,44 +768,190 @@
           "type": "User",
           "site_admin": false
         },
-        "labels": [],
-        "state": "closed",
-        "locked": false,
-        "assignee": null,
-        "assignees": [],
-        "milestone": null,
-        "comments": 0,
+        "body": "Problem:\r\n\r\nHere's the current photo taking pipline:\r\n\r\n1. Get photo from camera\r\n2. Save a copy of the photo to a public directory\r\n3. Compress image \r\n4. Save compressed image to temp file\r\n5. Pass compressed image to RN\r\n\r\nThe problem with this is that the compressed image and the copy of the photo saved to the public directory invokes the `createFile` method, which generates a new file name (with a unique uuid) every time it gets called. This means that it's impossible for us to know in the media picker (which fetches from the public directory) if its been selected in the image carousel, since the filenames are different. \r\n\r\nI attempt to amend this by generating a unique uuid that's used to generate all the filenames used to save the images in its various places.\r\n\r\nBefore:\r\n\r\n![image](https://user-images.githubusercontent.com/5563367/216464810-2f34acb4-6ea9-4b54-92bc-dd008643ef78.png)\r\n\r\n\r\n\r\nAfter:\r\n\r\n![image](https://user-images.githubusercontent.com/5563367/216464434-022607bb-98ed-49d9-92ff-5643ea9f42b7.png)\r\n",
         "created_at": "2023-02-02T10:47:30Z",
         "updated_at": "2023-02-03T22:56:36Z",
         "closed_at": "2023-02-03T22:56:36Z",
-        "author_association": "NONE",
-        "active_lock_reason": null,
+        "merged_at": "2023-02-03T22:56:36Z",
+        "merge_commit_sha": "b0479f11538be95aa7dcbe784b8d2c996c60afac",
+        "assignee": null,
+        "assignees": [],
+        "requested_reviewers": [],
+        "requested_teams": [],
+        "labels": [],
+        "milestone": null,
         "draft": false,
-        "pull_request": {
-          "url": "https://api.github.com/repos/discord/react-native-image-picker/pulls/3",
-          "merged_at": "2023-02-03T22:56:36Z"
+        "head": {
+          "label": "discord:charles/rna-picker",
+          "ref": "charles/rna-picker",
+          "sha": "2efad1dcdfede25663f56849d2b2b714e9476aad",
+          "user": {
+            "login": "discord",
+            "id": 1965106,
+            "node_id": "MDEyOk9yZ2FuaXphdGlvbjE5NjUxMDY=",
+            "gravatar_id": "",
+            "url": "https://api.github.com/users/discord",
+            "type": "Organization",
+            "site_admin": false
+          },
+          "repo": {
+            "id": 405283930,
+            "node_id": "MDEwOlJlcG9zaXRvcnk0MDUyODM5MzA=",
+            "name": "react-native-image-picker",
+            "full_name": "discord/react-native-image-picker",
+            "private": false,
+            "owner": {
+              "login": "discord",
+              "id": 1965106,
+              "node_id": "MDEyOk9yZ2FuaXphdGlvbjE5NjUxMDY=",
+              "gravatar_id": "",
+              "url": "https://api.github.com/users/discord",
+              "type": "Organization",
+              "site_admin": false
+            },
+            "description": ":sunrise_over_mountains: A React Native module that allows you to use native UI to select media from the device library or directly from the camera.",
+            "fork": true,
+            "url": "https://api.github.com/repos/discord/react-native-image-picker",
+            "created_at": "2021-09-11T04:36:51Z",
+            "updated_at": "2023-04-18T02:13:18Z",
+            "pushed_at": "2023-04-07T15:38:25Z",
+            "homepage": "",
+            "size": 2270,
+            "stargazers_count": 4,
+            "watchers_count": 4,
+            "language": "Java",
+            "has_issues": false,
+            "has_projects": true,
+            "has_downloads": true,
+            "has_wiki": false,
+            "has_pages": false,
+            "has_discussions": false,
+            "forks_count": 4,
+            "archived": false,
+            "disabled": false,
+            "open_issues_count": 0,
+            "license": {
+              "key": "mit",
+              "name": "MIT License",
+              "spdx_id": "MIT",
+              "url": "https://api.github.com/licenses/mit",
+              "node_id": "MDc6TGljZW5zZTEz"
+            },
+            "allow_forking": true,
+            "is_template": false,
+            "web_commit_signoff_required": false,
+            "topics": [],
+            "visibility": "public",
+            "forks": 4,
+            "open_issues": 0,
+            "watchers": 4,
+            "default_branch": "main"
+          }
         },
-        "body": "Problem:\r\n\r\nHere's the current photo taking pipline:\r\n\r\n1. Get photo from camera\r\n2. Save a copy of the photo to a public directory\r\n3. Compress image \r\n4. Save compressed image to temp file\r\n5. Pass compressed image to RN\r\n\r\nThe problem with this is that the compressed image and the copy of the photo saved to the public directory invokes the `createFile` method, which generates a new file name (with a unique uuid) every time it gets called. This means that it's impossible for us to know in the media picker (which fetches from the public directory) if its been selected in the image carousel, since the filenames are different. \r\n\r\nI attempt to amend this by generating a unique uuid that's used to generate all the filenames used to save the images in its various places.\r\n\r\nBefore:\r\n\r\n![image](https://user-images.githubusercontent.com/5563367/216464810-2f34acb4-6ea9-4b54-92bc-dd008643ef78.png)\r\n\r\n\r\n\r\nAfter:\r\n\r\n![image](https://user-images.githubusercontent.com/5563367/216464434-022607bb-98ed-49d9-92ff-5643ea9f42b7.png)\r\n",
-        "reactions": {
-          "url": "https://api.github.com/repos/discord/react-native-image-picker/issues/3/reactions",
-          "total_count": 0,
-          "+1": 0,
-          "-1": 0,
-          "laugh": 0,
-          "hooray": 0,
-          "confused": 0,
-          "heart": 0,
-          "rocket": 0,
-          "eyes": 0
+        "base": {
+          "label": "discord:4.7.1-discord-1",
+          "ref": "4.7.1-discord-1",
+          "sha": "419f1787728256ce1f3e27c385b15c05692be5ee",
+          "user": {
+            "login": "discord",
+            "id": 1965106,
+            "node_id": "MDEyOk9yZ2FuaXphdGlvbjE5NjUxMDY=",
+            "gravatar_id": "",
+            "url": "https://api.github.com/users/discord",
+            "type": "Organization",
+            "site_admin": false
+          },
+          "repo": {
+            "id": 405283930,
+            "node_id": "MDEwOlJlcG9zaXRvcnk0MDUyODM5MzA=",
+            "name": "react-native-image-picker",
+            "full_name": "discord/react-native-image-picker",
+            "private": false,
+            "owner": {
+              "login": "discord",
+              "id": 1965106,
+              "node_id": "MDEyOk9yZ2FuaXphdGlvbjE5NjUxMDY=",
+              "gravatar_id": "",
+              "url": "https://api.github.com/users/discord",
+              "type": "Organization",
+              "site_admin": false
+            },
+            "description": ":sunrise_over_mountains: A React Native module that allows you to use native UI to select media from the device library or directly from the camera.",
+            "fork": true,
+            "url": "https://api.github.com/repos/discord/react-native-image-picker",
+            "created_at": "2021-09-11T04:36:51Z",
+            "updated_at": "2023-04-18T02:13:18Z",
+            "pushed_at": "2023-04-07T15:38:25Z",
+            "homepage": "",
+            "size": 2270,
+            "stargazers_count": 4,
+            "watchers_count": 4,
+            "language": "Java",
+            "has_issues": false,
+            "has_projects": true,
+            "has_downloads": true,
+            "has_wiki": false,
+            "has_pages": false,
+            "has_discussions": false,
+            "forks_count": 4,
+            "archived": false,
+            "disabled": false,
+            "open_issues_count": 0,
+            "license": {
+              "key": "mit",
+              "name": "MIT License",
+              "spdx_id": "MIT",
+              "url": "https://api.github.com/licenses/mit",
+              "node_id": "MDc6TGljZW5zZTEz"
+            },
+            "allow_forking": true,
+            "is_template": false,
+            "web_commit_signoff_required": false,
+            "topics": [],
+            "visibility": "public",
+            "forks": 4,
+            "open_issues": 0,
+            "watchers": 4,
+            "default_branch": "main"
+          }
         },
-        "performed_via_github_app": null,
-        "state_reason": null
+        "_links": {
+          "self": {
+            "href": "https://api.github.com/repos/discord/react-native-image-picker/pulls/3"
+          },
+          "html": {
+            "href": "https://github.com/discord/react-native-image-picker/pull/3"
+          },
+          "issue": {
+            "href": "https://api.github.com/repos/discord/react-native-image-picker/issues/3"
+          },
+          "comments": {
+            "href": "https://api.github.com/repos/discord/react-native-image-picker/issues/3/comments"
+          },
+          "review_comments": {
+            "href": "https://api.github.com/repos/discord/react-native-image-picker/pulls/3/comments"
+          },
+          "review_comment": {
+            "href": "https://api.github.com/repos/discord/react-native-image-picker/pulls/comments{/number}"
+          },
+          "commits": {
+            "href": "https://api.github.com/repos/discord/react-native-image-picker/pulls/3/commits"
+          },
+          "statuses": {
+            "href": "https://api.github.com/repos/discord/react-native-image-picker/statuses/2efad1dcdfede25663f56849d2b2b714e9476aad"
+          }
+        },
+        "author_association": "NONE",
+        "auto_merge": null,
+        "active_lock_reason": null
       },
       {
-        "url": "https://api.github.com/repos/discord/react-native-image-picker/issues/2",
-        "id": 1006785254,
+        "url": "https://api.github.com/repos/discord/react-native-image-picker/pulls/2",
+        "id": 742475208,
         "node_id": "PR_kwDOGCgkWs4sQUXI",
         "number": 2,
+        "state": "closed",
+        "locked": false,
         "title": "4.1.1 - Discord Patches",
         "user": {
           "login": "mrkcsc",
@@ -492,44 +962,190 @@
           "type": "User",
           "site_admin": false
         },
-        "labels": [],
-        "state": "closed",
-        "locked": false,
-        "assignee": null,
-        "assignees": [],
-        "milestone": null,
-        "comments": 0,
+        "body": "* Discord fork of `4.1.1` with patches from https://github.com/discord/react-native-image-picker/pull/1",
         "created_at": "2021-09-24T20:01:18Z",
         "updated_at": "2022-04-19T22:35:48Z",
         "closed_at": "2022-04-19T22:35:48Z",
-        "author_association": "NONE",
-        "active_lock_reason": null,
+        "merged_at": null,
+        "merge_commit_sha": "172715809fd6ffe8647fb74d7dfe43537413b952",
+        "assignee": null,
+        "assignees": [],
+        "requested_reviewers": [],
+        "requested_teams": [],
+        "labels": [],
+        "milestone": null,
         "draft": false,
-        "pull_request": {
-          "url": "https://api.github.com/repos/discord/react-native-image-picker/pulls/2",
-          "merged_at": null
+        "head": {
+          "label": "discord:4.1.1-discord-1",
+          "ref": "4.1.1-discord-1",
+          "sha": "16125120e15dde56494f75311504eea20ec4ff88",
+          "user": {
+            "login": "discord",
+            "id": 1965106,
+            "node_id": "MDEyOk9yZ2FuaXphdGlvbjE5NjUxMDY=",
+            "gravatar_id": "",
+            "url": "https://api.github.com/users/discord",
+            "type": "Organization",
+            "site_admin": false
+          },
+          "repo": {
+            "id": 405283930,
+            "node_id": "MDEwOlJlcG9zaXRvcnk0MDUyODM5MzA=",
+            "name": "react-native-image-picker",
+            "full_name": "discord/react-native-image-picker",
+            "private": false,
+            "owner": {
+              "login": "discord",
+              "id": 1965106,
+              "node_id": "MDEyOk9yZ2FuaXphdGlvbjE5NjUxMDY=",
+              "gravatar_id": "",
+              "url": "https://api.github.com/users/discord",
+              "type": "Organization",
+              "site_admin": false
+            },
+            "description": ":sunrise_over_mountains: A React Native module that allows you to use native UI to select media from the device library or directly from the camera.",
+            "fork": true,
+            "url": "https://api.github.com/repos/discord/react-native-image-picker",
+            "created_at": "2021-09-11T04:36:51Z",
+            "updated_at": "2023-04-18T02:13:18Z",
+            "pushed_at": "2023-04-07T15:38:25Z",
+            "homepage": "",
+            "size": 2270,
+            "stargazers_count": 4,
+            "watchers_count": 4,
+            "language": "Java",
+            "has_issues": false,
+            "has_projects": true,
+            "has_downloads": true,
+            "has_wiki": false,
+            "has_pages": false,
+            "has_discussions": false,
+            "forks_count": 4,
+            "archived": false,
+            "disabled": false,
+            "open_issues_count": 0,
+            "license": {
+              "key": "mit",
+              "name": "MIT License",
+              "spdx_id": "MIT",
+              "url": "https://api.github.com/licenses/mit",
+              "node_id": "MDc6TGljZW5zZTEz"
+            },
+            "allow_forking": true,
+            "is_template": false,
+            "web_commit_signoff_required": false,
+            "topics": [],
+            "visibility": "public",
+            "forks": 4,
+            "open_issues": 0,
+            "watchers": 4,
+            "default_branch": "main"
+          }
         },
-        "body": "* Discord fork of `4.1.1` with patches from https://github.com/discord/react-native-image-picker/pull/1",
-        "reactions": {
-          "url": "https://api.github.com/repos/discord/react-native-image-picker/issues/2/reactions",
-          "total_count": 0,
-          "+1": 0,
-          "-1": 0,
-          "laugh": 0,
-          "hooray": 0,
-          "confused": 0,
-          "heart": 0,
-          "rocket": 0,
-          "eyes": 0
+        "base": {
+          "label": "discord:main",
+          "ref": "main",
+          "sha": "24d9cf82c6d66e1670b8c8253c4240a2e16fed42",
+          "user": {
+            "login": "discord",
+            "id": 1965106,
+            "node_id": "MDEyOk9yZ2FuaXphdGlvbjE5NjUxMDY=",
+            "gravatar_id": "",
+            "url": "https://api.github.com/users/discord",
+            "type": "Organization",
+            "site_admin": false
+          },
+          "repo": {
+            "id": 405283930,
+            "node_id": "MDEwOlJlcG9zaXRvcnk0MDUyODM5MzA=",
+            "name": "react-native-image-picker",
+            "full_name": "discord/react-native-image-picker",
+            "private": false,
+            "owner": {
+              "login": "discord",
+              "id": 1965106,
+              "node_id": "MDEyOk9yZ2FuaXphdGlvbjE5NjUxMDY=",
+              "gravatar_id": "",
+              "url": "https://api.github.com/users/discord",
+              "type": "Organization",
+              "site_admin": false
+            },
+            "description": ":sunrise_over_mountains: A React Native module that allows you to use native UI to select media from the device library or directly from the camera.",
+            "fork": true,
+            "url": "https://api.github.com/repos/discord/react-native-image-picker",
+            "created_at": "2021-09-11T04:36:51Z",
+            "updated_at": "2023-04-18T02:13:18Z",
+            "pushed_at": "2023-04-07T15:38:25Z",
+            "homepage": "",
+            "size": 2270,
+            "stargazers_count": 4,
+            "watchers_count": 4,
+            "language": "Java",
+            "has_issues": false,
+            "has_projects": true,
+            "has_downloads": true,
+            "has_wiki": false,
+            "has_pages": false,
+            "has_discussions": false,
+            "forks_count": 4,
+            "archived": false,
+            "disabled": false,
+            "open_issues_count": 0,
+            "license": {
+              "key": "mit",
+              "name": "MIT License",
+              "spdx_id": "MIT",
+              "url": "https://api.github.com/licenses/mit",
+              "node_id": "MDc6TGljZW5zZTEz"
+            },
+            "allow_forking": true,
+            "is_template": false,
+            "web_commit_signoff_required": false,
+            "topics": [],
+            "visibility": "public",
+            "forks": 4,
+            "open_issues": 0,
+            "watchers": 4,
+            "default_branch": "main"
+          }
         },
-        "performed_via_github_app": null,
-        "state_reason": null
+        "_links": {
+          "self": {
+            "href": "https://api.github.com/repos/discord/react-native-image-picker/pulls/2"
+          },
+          "html": {
+            "href": "https://github.com/discord/react-native-image-picker/pull/2"
+          },
+          "issue": {
+            "href": "https://api.github.com/repos/discord/react-native-image-picker/issues/2"
+          },
+          "comments": {
+            "href": "https://api.github.com/repos/discord/react-native-image-picker/issues/2/comments"
+          },
+          "review_comments": {
+            "href": "https://api.github.com/repos/discord/react-native-image-picker/pulls/2/comments"
+          },
+          "review_comment": {
+            "href": "https://api.github.com/repos/discord/react-native-image-picker/pulls/comments{/number}"
+          },
+          "commits": {
+            "href": "https://api.github.com/repos/discord/react-native-image-picker/pulls/2/commits"
+          },
+          "statuses": {
+            "href": "https://api.github.com/repos/discord/react-native-image-picker/statuses/16125120e15dde56494f75311504eea20ec4ff88"
+          }
+        },
+        "author_association": "NONE",
+        "auto_merge": null,
+        "active_lock_reason": null
       },
       {
-        "url": "https://api.github.com/repos/discord/react-native-image-picker/issues/1",
-        "id": 993771762,
+        "url": "https://api.github.com/repos/discord/react-native-image-picker/pulls/1",
+        "id": 731887941,
         "node_id": "MDExOlB1bGxSZXF1ZXN0NzMxODg3OTQx",
         "number": 1,
+        "state": "closed",
+        "locked": false,
         "title": "4.0.6 - Remove API 14 PHPicker due to incompatibility with our image cropper.",
         "user": {
           "login": "mrkcsc",
@@ -540,40 +1156,183 @@
           "type": "User",
           "site_admin": false
         },
-        "labels": [],
-        "state": "closed",
-        "locked": false,
-        "assignee": null,
-        "assignees": [],
-        "milestone": null,
-        "comments": 0,
+        "body": "* Removes a recent addition of API 14 support for this library as it does not play well with our cropping library (semi-related is this removal of the field we used to use) https://github.com/react-native-image-picker/react-native-image-picker/issues/1536\r\n\r\n* We would normally just want to use a single library but currently we have some bugs  https://github.com/discord/discord/pull/48038 that prevent us from consolidating.\r\n\r\n* We had to bump this library to get support for RN Android https://github.com/discord/discord/pull/50489 - overall though we still have bumped to a much more recent version of this library and are just missing this iOS 14 functionality now.\r\n\r\n---\r\n\r\nThis PR is not meant to merge and is something I'd like us to revisit in the future when our cropping library is updated.",
         "created_at": "2021-09-11T07:14:36Z",
         "updated_at": "2022-04-19T22:35:53Z",
         "closed_at": "2022-04-19T22:35:53Z",
-        "author_association": "NONE",
-        "active_lock_reason": null,
+        "merged_at": null,
+        "merge_commit_sha": "ae355ba4ff074596791785c0d8a40b4302651954",
+        "assignee": null,
+        "assignees": [],
+        "requested_reviewers": [],
+        "requested_teams": [],
+        "labels": [],
+        "milestone": null,
         "draft": false,
-        "pull_request": {
-          "url": "https://api.github.com/repos/discord/react-native-image-picker/pulls/1",
-          "merged_at": null
+        "head": {
+          "label": "discord:4.0.6-discord-1",
+          "ref": "4.0.6-discord-1",
+          "sha": "713b25500e90c9702fb710aff07107ff615df1df",
+          "user": {
+            "login": "discord",
+            "id": 1965106,
+            "node_id": "MDEyOk9yZ2FuaXphdGlvbjE5NjUxMDY=",
+            "gravatar_id": "",
+            "url": "https://api.github.com/users/discord",
+            "type": "Organization",
+            "site_admin": false
+          },
+          "repo": {
+            "id": 405283930,
+            "node_id": "MDEwOlJlcG9zaXRvcnk0MDUyODM5MzA=",
+            "name": "react-native-image-picker",
+            "full_name": "discord/react-native-image-picker",
+            "private": false,
+            "owner": {
+              "login": "discord",
+              "id": 1965106,
+              "node_id": "MDEyOk9yZ2FuaXphdGlvbjE5NjUxMDY=",
+              "gravatar_id": "",
+              "url": "https://api.github.com/users/discord",
+              "type": "Organization",
+              "site_admin": false
+            },
+            "description": ":sunrise_over_mountains: A React Native module that allows you to use native UI to select media from the device library or directly from the camera.",
+            "fork": true,
+            "url": "https://api.github.com/repos/discord/react-native-image-picker",
+            "created_at": "2021-09-11T04:36:51Z",
+            "updated_at": "2023-04-18T02:13:18Z",
+            "pushed_at": "2023-04-07T15:38:25Z",
+            "homepage": "",
+            "size": 2270,
+            "stargazers_count": 4,
+            "watchers_count": 4,
+            "language": "Java",
+            "has_issues": false,
+            "has_projects": true,
+            "has_downloads": true,
+            "has_wiki": false,
+            "has_pages": false,
+            "has_discussions": false,
+            "forks_count": 4,
+            "archived": false,
+            "disabled": false,
+            "open_issues_count": 0,
+            "license": {
+              "key": "mit",
+              "name": "MIT License",
+              "spdx_id": "MIT",
+              "url": "https://api.github.com/licenses/mit",
+              "node_id": "MDc6TGljZW5zZTEz"
+            },
+            "allow_forking": true,
+            "is_template": false,
+            "web_commit_signoff_required": false,
+            "topics": [],
+            "visibility": "public",
+            "forks": 4,
+            "open_issues": 0,
+            "watchers": 4,
+            "default_branch": "main"
+          }
         },
-        "body": "* Removes a recent addition of API 14 support for this library as it does not play well with our cropping library (semi-related is this removal of the field we used to use) https://github.com/react-native-image-picker/react-native-image-picker/issues/1536\r\n\r\n* We would normally just want to use a single library but currently we have some bugs  https://github.com/discord/discord/pull/48038 that prevent us from consolidating.\r\n\r\n* We had to bump this library to get support for RN Android https://github.com/discord/discord/pull/50489 - overall though we still have bumped to a much more recent version of this library and are just missing this iOS 14 functionality now.\r\n\r\n---\r\n\r\nThis PR is not meant to merge and is something I'd like us to revisit in the future when our cropping library is updated.",
-        "reactions": {
-          "url": "https://api.github.com/repos/discord/react-native-image-picker/issues/1/reactions",
-          "total_count": 0,
-          "+1": 0,
-          "-1": 0,
-          "laugh": 0,
-          "hooray": 0,
-          "confused": 0,
-          "heart": 0,
-          "rocket": 0,
-          "eyes": 0
+        "base": {
+          "label": "discord:main",
+          "ref": "main",
+          "sha": "c4b462f1cf62ef2c08d6af30364d302645b4c28a",
+          "user": {
+            "login": "discord",
+            "id": 1965106,
+            "node_id": "MDEyOk9yZ2FuaXphdGlvbjE5NjUxMDY=",
+            "gravatar_id": "",
+            "url": "https://api.github.com/users/discord",
+            "type": "Organization",
+            "site_admin": false
+          },
+          "repo": {
+            "id": 405283930,
+            "node_id": "MDEwOlJlcG9zaXRvcnk0MDUyODM5MzA=",
+            "name": "react-native-image-picker",
+            "full_name": "discord/react-native-image-picker",
+            "private": false,
+            "owner": {
+              "login": "discord",
+              "id": 1965106,
+              "node_id": "MDEyOk9yZ2FuaXphdGlvbjE5NjUxMDY=",
+              "gravatar_id": "",
+              "url": "https://api.github.com/users/discord",
+              "type": "Organization",
+              "site_admin": false
+            },
+            "description": ":sunrise_over_mountains: A React Native module that allows you to use native UI to select media from the device library or directly from the camera.",
+            "fork": true,
+            "url": "https://api.github.com/repos/discord/react-native-image-picker",
+            "created_at": "2021-09-11T04:36:51Z",
+            "updated_at": "2023-04-18T02:13:18Z",
+            "pushed_at": "2023-04-07T15:38:25Z",
+            "homepage": "",
+            "size": 2270,
+            "stargazers_count": 4,
+            "watchers_count": 4,
+            "language": "Java",
+            "has_issues": false,
+            "has_projects": true,
+            "has_downloads": true,
+            "has_wiki": false,
+            "has_pages": false,
+            "has_discussions": false,
+            "forks_count": 4,
+            "archived": false,
+            "disabled": false,
+            "open_issues_count": 0,
+            "license": {
+              "key": "mit",
+              "name": "MIT License",
+              "spdx_id": "MIT",
+              "url": "https://api.github.com/licenses/mit",
+              "node_id": "MDc6TGljZW5zZTEz"
+            },
+            "allow_forking": true,
+            "is_template": false,
+            "web_commit_signoff_required": false,
+            "topics": [],
+            "visibility": "public",
+            "forks": 4,
+            "open_issues": 0,
+            "watchers": 4,
+            "default_branch": "main"
+          }
         },
-        "performed_via_github_app": null,
-        "state_reason": null
+        "_links": {
+          "self": {
+            "href": "https://api.github.com/repos/discord/react-native-image-picker/pulls/1"
+          },
+          "html": {
+            "href": "https://github.com/discord/react-native-image-picker/pull/1"
+          },
+          "issue": {
+            "href": "https://api.github.com/repos/discord/react-native-image-picker/issues/1"
+          },
+          "comments": {
+            "href": "https://api.github.com/repos/discord/react-native-image-picker/issues/1/comments"
+          },
+          "review_comments": {
+            "href": "https://api.github.com/repos/discord/react-native-image-picker/pulls/1/comments"
+          },
+          "review_comment": {
+            "href": "https://api.github.com/repos/discord/react-native-image-picker/pulls/comments{/number}"
+          },
+          "commits": {
+            "href": "https://api.github.com/repos/discord/react-native-image-picker/pulls/1/commits"
+          },
+          "statuses": {
+            "href": "https://api.github.com/repos/discord/react-native-image-picker/statuses/713b25500e90c9702fb710aff07107ff615df1df"
+          }
+        },
+        "author_association": "NONE",
+        "auto_merge": null,
+        "active_lock_reason": null
       }
-    ],
-    "pullRequests": []
+    ]
   }
 }
