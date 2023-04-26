@@ -57,16 +57,7 @@
     "triage": false,
     "pull": false
   },
-  "branches": [
-    {
-      "name": "master",
-      "commit": {
-        "sha": "68d84351a7ae724995038a0485a3fee50dce8539",
-        "url": "https://api.github.com/repos/discord/limited_queue/commits/68d84351a7ae724995038a0485a3fee50dce8539"
-      },
-      "protected": false
-    }
-  ],
+  "branches": [],
   "last5": {
     "commits": [
       {

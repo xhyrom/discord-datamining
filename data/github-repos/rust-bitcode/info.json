@@ -57,24 +57,7 @@
     "triage": false,
     "pull": false
   },
-  "branches": [
-    {
-      "name": "master",
-      "commit": {
-        "sha": "a963d4a35f4ca33781c9f54dc5823d001c86862a",
-        "url": "https://api.github.com/repos/discord/rust-bitcode/commits/a963d4a35f4ca33781c9f54dc5823d001c86862a"
-      },
-      "protected": false
-    },
-    {
-      "name": "update-from-upstream",
-      "commit": {
-        "sha": "ff08b4235ffebef33b81e17ba3381d67a6928a96",
-        "url": "https://api.github.com/repos/discord/rust-bitcode/commits/ff08b4235ffebef33b81e17ba3381d67a6928a96"
-      },
-      "protected": false
-    }
-  ],
+  "branches": [],
   "last5": {
     "commits": [
       {

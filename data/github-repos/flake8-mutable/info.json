@@ -57,16 +57,7 @@
     "triage": false,
     "pull": false
   },
-  "branches": [
-    {
-      "name": "master",
-      "commit": {
-        "sha": "3a9db096ab40824d43e4e7fa07fa5de890ff829b",
-        "url": "https://api.github.com/repos/discord/flake8-mutable/commits/3a9db096ab40824d43e4e7fa07fa5de890ff829b"
-      },
-      "protected": false
-    }
-  ],
+  "branches": [],
   "last5": {
     "commits": [
       {
