@@ -104411,7 +104411,7 @@ html .tabBadge-h4HGed {
 
 .chipletContainer-fGNv4_ {
     background-color: var(--background-modifier-accent);
-    border-radius: 4px;
+    border-radius: var(--radius-sm);
     border: 2px solid transparent;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -104420,9 +104420,9 @@ html .tabBadge-h4HGed {
     -webkit-box-direction: normal;
     -ms-flex-direction: row;
     flex-direction: row;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    justify-content: center;
+    -webkit-box-pack: start;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
@@ -104431,8 +104431,12 @@ html .tabBadge-h4HGed {
     flex: 0 0 0;
     cursor: pointer;
     position: relative;
-    -webkit-transition: background-color .25s ease-in-out, border-color .25s ease-in-out;
-    transition: background-color .25s ease-in-out, border-color .25s ease-in-out
+    -ms-flex-wrap: nowrap;
+    flex-wrap: nowrap;
+    max-width: 520px;
+    text-overflow: ellipsis;
+    -webkit-transition: background-color .1s ease-in-out, border-color .1s ease-in-out;
+    transition: background-color .1s ease-in-out, border-color .1s ease-in-out
 }
 
 .chipletContainer-fGNv4_.smallBlink-8bUf58 {
@@ -104452,14 +104456,42 @@ html .tabBadge-h4HGed {
     background-color: var(--background-accent)
 }
 
+.chipletContainer-fGNv4_.isSelecting-255lTA {
+    cursor: pointer
+}
+
 .chipletContainer-fGNv4_.isEditing-3_4l8W {
-    background-color: transparent
+    background-color: transparent;
+    text-overflow: unset
 }
 
 .chipletContainer-fGNv4_.isError-1gLlmi {
     background-color: var(--background-floating);
-    border-radius: 4px;
+    border-radius: var(--radius-sm);
     border-color: var(--status-danger-background)
+}
+
+.chipletContainer-fGNv4_.isError-1gLlmi.isSelected-1XBUTd {
+    background-color: var(--background-modifier-selected);
+    border-color: var(--text-danger)
+}
+
+.chipletContainerInner-2fGah6 {
+    position: relative;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    -webkit-box-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+    padding: 4px
+}
+
+.chipletContainerInner-2fGah6.isSelecting-255lTA {
+    cursor: pointer
+}
+
+.chipletContainerInner-2fGah6.isEditing-3_4l8W {
+    text-overflow: unset
 }
 
 .chipletValue-l76Xy3 {
@@ -104467,23 +104499,41 @@ html .tabBadge-h4HGed {
     font-size: 12px;
     line-height: 16px;
     font-family: var(--font-code);
-    padding: 3px 0 3px 3px;
+    padding: 0;
     margin: 0;
     border: 0;
     outline: none;
     opacity: 1;
-    word-wrap: none;
     pointer-events: none;
     white-space: nowrap;
-    background-color: transparent
+    background-color: transparent;
+    text-overflow: ellipsis;
+    display: inline;
+    -webkit-transition: background-color .1s ease-in-out, color .1s ease-in-out;
+    transition: background-color .1s ease-in-out, color .1s ease-in-out
 }
 
 .chipletValue-l76Xy3.isEditing-3_4l8W {
-    opacity: 0
+    opacity: 0;
+    text-overflow: unset
+}
+
+.chipletValue-l76Xy3.isSelected-1XBUTd {
+    color: var(--interactive-active);
+    background-color: var(--background-modifier-selected)
+}
+
+.chipletValue-l76Xy3.isSelecting-255lTA {
+    cursor: pointer
 }
 
 .chipletValue-l76Xy3.isError-1gLlmi {
-    color: var(--white-500)
+    color: var(--interactive-active)
+}
+
+.chipletValue-l76Xy3.isOverflowing-Zh9Xjh {
+    width: 500px;
+    overflow: hidden
 }
 
 .chipletInput-3rdfBq {
@@ -104491,22 +104541,38 @@ html .tabBadge-h4HGed {
     font-size: 12px;
     line-height: 16px;
     font-family: var(--font-code);
-    padding: 3px 0 3px 3px;
+    padding: 0;
     margin: 0;
     border: none;
     outline: none;
     background: transparent;
     position: absolute;
     opacity: 0;
-    left: 0
+    left: 4px
 }
 
 .chipletInput-3rdfBq.isEditing-3_4l8W {
     opacity: 1
 }
 
+.chipletInput-3rdfBq.isSelecting-255lTA {
+    cursor: pointer
+}
+
 .errorValue-3PZV9j {
     background-color: var(--status-danger-background)
+}
+
+.errorTooltip-7DGmVH {
+    background-color: var(--background-floating) !important;
+    border: 2px solid var(--status-danger-background)
+}
+
+.errorOverflowValue-44lFK2 {
+    padding: 2px;
+    background-color: var(--status-danger-background);
+    font-family: var(--font-code);
+    font-size: 11px
 }
 
 .closeIconContainer-3ZBJwz {
@@ -104520,9 +104586,9 @@ html .tabBadge-h4HGed {
     -ms-flex-align: center;
     align-items: center;
     vertical-align: middle;
-    -webkit-box-flex: 1;
-    -ms-flex: 1;
-    flex: 1;
+    -webkit-box-flex: 0;
+    -ms-flex: 0;
+    flex: 0;
     padding: 0 3px;
     cursor: pointer;
     position: relative
@@ -153061,4 +153127,4 @@ html .invoiceCancelRow-dVOR64 {
     flex-direction: column
 }
 
-/*# sourceMappingURL=40532.a68427d54f45d5cb6091.css.map*/
+/*# sourceMappingURL=40532.f83c7cd79ebd74c21a8a.css.map*/
