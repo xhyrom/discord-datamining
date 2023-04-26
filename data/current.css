@@ -118739,7 +118739,8 @@ input::-webkit-outer-spin-button {
     grid-template-columns: 60px auto 200px 24px;
     padding: 4px 0;
     gap: 8px;
-    border-bottom: 1px solid var(--background-modifier-accent)
+    border-bottom: 1px solid var(--background-modifier-accent);
+    min-height: 60px
 }
 
 .row-1lgfJq.active-3SCabj .soundPreviewIcon-1Oa5YE,
@@ -153060,4 +153061,4 @@ html .invoiceCancelRow-dVOR64 {
     flex-direction: column
 }
 
-/*# sourceMappingURL=40532.e01ec9731364acbd50e9.css.map*/
+/*# sourceMappingURL=40532.a68427d54f45d5cb6091.css.map*/
