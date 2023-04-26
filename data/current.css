@@ -43807,16 +43807,14 @@ h6.title-1p9WyQ {
     -webkit-box-direction: normal;
     -ms-flex-direction: row;
     flex-direction: row;
-    min-width: 504px;
-    width: 504px;
+    min-width: 576px;
+    width: 576px;
     max-height: 130px;
     height: 130px;
     border-radius: 0 8px 8px 0
 }
 
 .content-3AQbF3.large-37VENB {
-    width: 576px;
-    max-width: 576px;
     max-height: 288px
 }
 
@@ -43985,6 +43983,73 @@ h6.title-1p9WyQ {
     width: 32px;
     padding: 16px;
     border-radius: 4px
+}
+
+.statusCounts-1n2a-6 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-flow: row wrap;
+    flex-flow: row wrap;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-column-gap: 8px;
+    -moz-column-gap: 8px;
+    column-gap: 8px;
+    padding-right: 16px;
+    max-width: 160px
+}
+
+.statusCounts-1n2a-6.large-37VENB {
+    max-width: 304px
+}
+
+.status-2PwGSv {
+    display: block;
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 auto;
+    flex: 0 0 auto;
+    margin-right: 4px;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%
+}
+
+.statusWrapper-2xQtOn {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-flex: 0;
+    -ms-flex: 0 1 auto;
+    flex: 0 1 auto;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -ms-flex-flow: nowrap;
+    flex-flow: nowrap;
+    min-width: 0
+}
+
+.statusOnline-3Yt171 {
+    background-color: var(--green-360)
+}
+
+.statusOffline-3gYT3w {
+    background-color: var(--primary-400)
+}
+
+.count-2tgYHo {
+    -webkit-box-flex: 0;
+    -ms-flex: 0 1 auto;
+    flex: 0 1 auto;
+    margin-right: 8px;
+    color: var(--interactive-normal);
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden
 }
 
 .downloadApps-14IgKV {
@@ -152995,4 +153060,4 @@ html .invoiceCancelRow-dVOR64 {
     flex-direction: column
 }
 
-/*# sourceMappingURL=40532.a2a8f6c2e75b52c99b95.css.map*/
+/*# sourceMappingURL=40532.e01ec9731364acbd50e9.css.map*/
