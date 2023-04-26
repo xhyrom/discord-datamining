@@ -57,9 +57,285 @@
     "triage": false,
     "pull": false
   },
-  "branches": [],
+  "branches": [
+    {
+      "name": "master",
+      "commit": {
+        "sha": "1942a39afefdf24a99d5ec6850ed0f805ab62a8a",
+        "url": "https://api.github.com/repos/discord/rlottie/commits/1942a39afefdf24a99d5ec6850ed0f805ab62a8a"
+      },
+      "protected": false
+    },
+    {
+      "name": "rlottie-test",
+      "commit": {
+        "sha": "ee851526a6d67b7dc14d07bbab6be1ded19f972b",
+        "url": "https://api.github.com/repos/discord/rlottie/commits/ee851526a6d67b7dc14d07bbab6be1ded19f972b"
+      },
+      "protected": false
+    }
+  ],
   "last5": {
-    "commits": [],
+    "commits": [
+      {
+        "sha": "1942a39afefdf24a99d5ec6850ed0f805ab62a8a",
+        "node_id": "MDY6Q29tbWl0MjU3NzI5NzY0OjE5NDJhMzlhZmVmZGYyNGE5OWQ1ZWM2ODUwZWQwZjgwNWFiNjJhOGE=",
+        "commit": {
+          "author": {
+            "name": "Jeff Cailteux",
+            "email": "jeff@discordapp.com",
+            "date": "2020-10-07T23:06:11Z"
+          },
+          "committer": {
+            "name": "Jeff Cailteux",
+            "email": "jeff@discordapp.com",
+            "date": "2020-10-07T23:06:11Z"
+          },
+          "message": "Update .clang-format",
+          "tree": {
+            "sha": "af31597dd7d3962a6a94631339a1931f4509eacb",
+            "url": "https://api.github.com/repos/discord/rlottie/git/trees/af31597dd7d3962a6a94631339a1931f4509eacb"
+          },
+          "url": "https://api.github.com/repos/discord/rlottie/git/commits/1942a39afefdf24a99d5ec6850ed0f805ab62a8a",
+          "comment_count": 0,
+          "verification": {
+            "verified": false,
+            "reason": "unsigned",
+            "signature": null,
+            "payload": null
+          }
+        },
+        "url": "https://api.github.com/repos/discord/rlottie/commits/1942a39afefdf24a99d5ec6850ed0f805ab62a8a",
+        "author": {
+          "login": "jkcailteux",
+          "id": 2236167,
+          "node_id": "MDQ6VXNlcjIyMzYxNjc=",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/jkcailteux",
+          "type": "User",
+          "site_admin": false
+        },
+        "committer": {
+          "login": "jkcailteux",
+          "id": 2236167,
+          "node_id": "MDQ6VXNlcjIyMzYxNjc=",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/jkcailteux",
+          "type": "User",
+          "site_admin": false
+        },
+        "parents": [
+          {
+            "sha": "ec463deee737f2c0752927bba8d75965465fe46b",
+            "url": "https://api.github.com/repos/discord/rlottie/commits/ec463deee737f2c0752927bba8d75965465fe46b"
+          }
+        ]
+      },
+      {
+        "sha": "ec463deee737f2c0752927bba8d75965465fe46b",
+        "node_id": "MDY6Q29tbWl0MjU3NzI5NzY0OmVjNDYzZGVlZTczN2YyYzA3NTI5MjdiYmE4ZDc1OTY1NDY1ZmU0NmI=",
+        "commit": {
+          "author": {
+            "name": "Jeff Cailteux",
+            "email": "jeff@discordapp.com",
+            "date": "2020-10-07T22:51:47Z"
+          },
+          "committer": {
+            "name": "Jeff Cailteux",
+            "email": "jeff@discordapp.com",
+            "date": "2020-10-07T22:51:47Z"
+          },
+          "message": "Update .clang-format",
+          "tree": {
+            "sha": "682d70737ced5bf04b0f7b1bef802040faa00ebe",
+            "url": "https://api.github.com/repos/discord/rlottie/git/trees/682d70737ced5bf04b0f7b1bef802040faa00ebe"
+          },
+          "url": "https://api.github.com/repos/discord/rlottie/git/commits/ec463deee737f2c0752927bba8d75965465fe46b",
+          "comment_count": 0,
+          "verification": {
+            "verified": false,
+            "reason": "unsigned",
+            "signature": null,
+            "payload": null
+          }
+        },
+        "url": "https://api.github.com/repos/discord/rlottie/commits/ec463deee737f2c0752927bba8d75965465fe46b",
+        "author": {
+          "login": "jkcailteux",
+          "id": 2236167,
+          "node_id": "MDQ6VXNlcjIyMzYxNjc=",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/jkcailteux",
+          "type": "User",
+          "site_admin": false
+        },
+        "committer": {
+          "login": "jkcailteux",
+          "id": 2236167,
+          "node_id": "MDQ6VXNlcjIyMzYxNjc=",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/jkcailteux",
+          "type": "User",
+          "site_admin": false
+        },
+        "parents": [
+          {
+            "sha": "970fa3ae9f2f567ca260981e2f4304d6abfd88b7",
+            "url": "https://api.github.com/repos/discord/rlottie/commits/970fa3ae9f2f567ca260981e2f4304d6abfd88b7"
+          }
+        ]
+      },
+      {
+        "sha": "970fa3ae9f2f567ca260981e2f4304d6abfd88b7",
+        "node_id": "MDY6Q29tbWl0MjU3NzI5NzY0Ojk3MGZhM2FlOWYyZjU2N2NhMjYwOTgxZTJmNDMwNGQ2YWJmZDg4Yjc=",
+        "commit": {
+          "author": {
+            "name": "Ali",
+            "email": "",
+            "date": "2020-05-14T14:43:20Z"
+          },
+          "committer": {
+            "name": "Ali",
+            "email": "",
+            "date": "2020-05-14T14:43:20Z"
+          },
+          "message": "Merge commit 'e0ea6af518345c4a46195c4951e023e621a9eb8f'",
+          "tree": {
+            "sha": "467162fcbf450ddd3432f5791c651597d6328753",
+            "url": "https://api.github.com/repos/discord/rlottie/git/trees/467162fcbf450ddd3432f5791c651597d6328753"
+          },
+          "url": "https://api.github.com/repos/discord/rlottie/git/commits/970fa3ae9f2f567ca260981e2f4304d6abfd88b7",
+          "comment_count": 0,
+          "verification": {
+            "verified": false,
+            "reason": "unsigned",
+            "signature": null,
+            "payload": null
+          }
+        },
+        "url": "https://api.github.com/repos/discord/rlottie/commits/970fa3ae9f2f567ca260981e2f4304d6abfd88b7",
+        "author": {},
+        "committer": {},
+        "parents": [
+          {
+            "sha": "d513b026d8d4b0472ffca3b494300a26f10f5b38",
+            "url": "https://api.github.com/repos/discord/rlottie/commits/d513b026d8d4b0472ffca3b494300a26f10f5b38"
+          },
+          {
+            "sha": "e0ea6af518345c4a46195c4951e023e621a9eb8f",
+            "url": "https://api.github.com/repos/discord/rlottie/commits/e0ea6af518345c4a46195c4951e023e621a9eb8f"
+          }
+        ]
+      },
+      {
+        "sha": "e0ea6af518345c4a46195c4951e023e621a9eb8f",
+        "node_id": "MDY6Q29tbWl0MjU3NzI5NzY0OmUwZWE2YWY1MTgzNDVjNGE0NjE5NWM0OTUxZTAyM2U2MjFhOWViOGY=",
+        "commit": {
+          "author": {
+            "name": "John Preston",
+            "email": "johnprestonmail@gmail.com",
+            "date": "2020-05-11T07:43:41Z"
+          },
+          "committer": {
+            "name": "John Preston",
+            "email": "johnprestonmail@gmail.com",
+            "date": "2020-05-11T07:43:41Z"
+          },
+          "message": "Fix some crashes on invalid data.",
+          "tree": {
+            "sha": "1fc6b31f82307739e32ffa5a2899367726960e29",
+            "url": "https://api.github.com/repos/discord/rlottie/git/trees/1fc6b31f82307739e32ffa5a2899367726960e29"
+          },
+          "url": "https://api.github.com/repos/discord/rlottie/git/commits/e0ea6af518345c4a46195c4951e023e621a9eb8f",
+          "comment_count": 0,
+          "verification": {
+            "verified": false,
+            "reason": "unsigned",
+            "signature": null,
+            "payload": null
+          }
+        },
+        "url": "https://api.github.com/repos/discord/rlottie/commits/e0ea6af518345c4a46195c4951e023e621a9eb8f",
+        "author": {
+          "login": "john-preston",
+          "id": 17900494,
+          "node_id": "MDQ6VXNlcjE3OTAwNDk0",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/john-preston",
+          "type": "User",
+          "site_admin": false
+        },
+        "committer": {
+          "login": "john-preston",
+          "id": 17900494,
+          "node_id": "MDQ6VXNlcjE3OTAwNDk0",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/john-preston",
+          "type": "User",
+          "site_admin": false
+        },
+        "parents": [
+          {
+            "sha": "3c280ce86f649c1ea07c7ace5ed58162607c0edd",
+            "url": "https://api.github.com/repos/discord/rlottie/commits/3c280ce86f649c1ea07c7ace5ed58162607c0edd"
+          }
+        ]
+      },
+      {
+        "sha": "3c280ce86f649c1ea07c7ace5ed58162607c0edd",
+        "node_id": "MDY6Q29tbWl0MjU3NzI5NzY0OjNjMjgwY2U4NmY2NDljMWVhMDdjN2FjZTVlZDU4MTYyNjA3YzBlZGQ=",
+        "commit": {
+          "author": {
+            "name": "John Preston",
+            "email": "johnprestonmail@gmail.com",
+            "date": "2020-05-01T13:14:53Z"
+          },
+          "committer": {
+            "name": "John Preston",
+            "email": "johnprestonmail@gmail.com",
+            "date": "2020-05-01T13:14:53Z"
+          },
+          "message": "Fix crash in malformed lottie animations.",
+          "tree": {
+            "sha": "de7a1b954a26df439c4e31fe22f6c1db7610646b",
+            "url": "https://api.github.com/repos/discord/rlottie/git/trees/de7a1b954a26df439c4e31fe22f6c1db7610646b"
+          },
+          "url": "https://api.github.com/repos/discord/rlottie/git/commits/3c280ce86f649c1ea07c7ace5ed58162607c0edd",
+          "comment_count": 0,
+          "verification": {
+            "verified": false,
+            "reason": "unsigned",
+            "signature": null,
+            "payload": null
+          }
+        },
+        "url": "https://api.github.com/repos/discord/rlottie/commits/3c280ce86f649c1ea07c7ace5ed58162607c0edd",
+        "author": {
+          "login": "john-preston",
+          "id": 17900494,
+          "node_id": "MDQ6VXNlcjE3OTAwNDk0",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/john-preston",
+          "type": "User",
+          "site_admin": false
+        },
+        "committer": {
+          "login": "john-preston",
+          "id": 17900494,
+          "node_id": "MDQ6VXNlcjE3OTAwNDk0",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/john-preston",
+          "type": "User",
+          "site_admin": false
+        },
+        "parents": [
+          {
+            "sha": "75b31e49b3c69355c4971ee2029eff23a22fcb75",
+            "url": "https://api.github.com/repos/discord/rlottie/commits/75b31e49b3c69355c4971ee2029eff23a22fcb75"
+          }
+        ]
+      }
+    ],
     "releases": [],
     "issues": [],
     "pullRequests": []

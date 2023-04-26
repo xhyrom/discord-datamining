@@ -59,7 +59,278 @@
   },
   "branches": [],
   "last5": {
-    "commits": [],
+    "commits": [
+      {
+        "sha": "8dcb34682b73b2f1ae575530e14ccf83a40b1b81",
+        "node_id": "MDY6Q29tbWl0MjQ2MTU1OTIwOjhkY2IzNDY4MmI3M2IyZjFhZTU3NTUzMGUxNGNjZjgzYTQwYjFiODE=",
+        "commit": {
+          "author": {
+            "name": "oceans",
+            "email": "sea@likeanocean.com",
+            "date": "2020-03-09T22:37:27Z"
+          },
+          "committer": {
+            "name": "oceans",
+            "email": "sea@likeanocean.com",
+            "date": "2020-03-09T22:37:27Z"
+          },
+          "message": "don't constrain atty and thread_local to max versions.",
+          "tree": {
+            "sha": "3329cc008c4f761f4941c9a3ac0d2bca4736aebc",
+            "url": "https://api.github.com/repos/discord/stderrlog-rs/git/trees/3329cc008c4f761f4941c9a3ac0d2bca4736aebc"
+          },
+          "url": "https://api.github.com/repos/discord/stderrlog-rs/git/commits/8dcb34682b73b2f1ae575530e14ccf83a40b1b81",
+          "comment_count": 0,
+          "verification": {
+            "verified": false,
+            "reason": "unsigned",
+            "signature": null,
+            "payload": null
+          }
+        },
+        "url": "https://api.github.com/repos/discord/stderrlog-rs/commits/8dcb34682b73b2f1ae575530e14ccf83a40b1b81",
+        "author": {
+          "login": "likeanocean",
+          "id": 53934150,
+          "node_id": "MDQ6VXNlcjUzOTM0MTUw",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/likeanocean",
+          "type": "User",
+          "site_admin": false
+        },
+        "committer": {
+          "login": "likeanocean",
+          "id": 53934150,
+          "node_id": "MDQ6VXNlcjUzOTM0MTUw",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/likeanocean",
+          "type": "User",
+          "site_admin": false
+        },
+        "parents": [
+          {
+            "sha": "678f929c28ec170fe4597de798a9664839fb385f",
+            "url": "https://api.github.com/repos/discord/stderrlog-rs/commits/678f929c28ec170fe4597de798a9664839fb385f"
+          }
+        ]
+      },
+      {
+        "sha": "678f929c28ec170fe4597de798a9664839fb385f",
+        "node_id": "MDY6Q29tbWl0MjQ2MTU1OTIwOjY3OGY5MjljMjhlYzE3MGZlNDU5N2RlNzk4YTk2NjQ4MzlmYjM4NWY=",
+        "commit": {
+          "author": {
+            "name": "Doug Goldstein",
+            "email": "cardoe@cardoe.com",
+            "date": "2019-11-17T15:37:11Z"
+          },
+          "committer": {
+            "name": "Doug Goldstein",
+            "email": "cardoe@cardoe.com",
+            "date": "2019-11-17T15:37:11Z"
+          },
+          "message": "(cargo-release) start next development iteration 0.4.4-alpha.0",
+          "tree": {
+            "sha": "7482629fa6668ec2018a3c2f7b6ac3bd30e625fe",
+            "url": "https://api.github.com/repos/discord/stderrlog-rs/git/trees/7482629fa6668ec2018a3c2f7b6ac3bd30e625fe"
+          },
+          "url": "https://api.github.com/repos/discord/stderrlog-rs/git/commits/678f929c28ec170fe4597de798a9664839fb385f",
+          "comment_count": 0,
+          "verification": {
+            "verified": true,
+            "reason": "valid",
+            "signature": "-----BEGIN PGP SIGNATURE-----\n\niQKmBAABCgCQFiEE9hYXBLEKE2oJfXLwyIzUxt8kNl0FAl3RaSdfFIAAAAAALgAo\naXNzdWVyLWZwckBub3RhdGlvbnMub3BlbnBncC5maWZ0aGhvcnNlbWFuLm5ldEY2\nMTYxNzA0QjEwQTEzNkEwOTdENzJGMEM4OENENEM2REYyNDM2NUQSHGNhcmRvZUBj\nYXJkb2UuY29tAAoJEMiM1MbfJDZde3cQAMccSeRw1Si4Z+9X6IO+wi1+L07rqkaS\nS7+FNJtTRfBUApFXUY3yHb+CYTtU8LRh6mRkNO4P7R/vb358koI5NFZCyf5yTmuL\nkk+iNEtE/oGIDzKQhDGmMpFG44Th+mQpPy/d+XkUwd8yCxi9K9O7Qi2ELOEnZKgV\n+fAOYMlTEQ/iE/01XI1Rv95E2PutAzmWH4xXJVMoeZluYzpeYDKEjmelf9uIEfuw\nVJvVdFsyJOfBvPJaoW1BjTVySI4t1D0l6YWPFnsFH79oC0qDRA4IEyyrxYOtD0GD\nLE5trxwRP20ssfQSYRnuX/eQIJyEu4ilPkWBtQ1r9F8TfPht/HfsAfSXiF6JsMxf\nlrykQXZbJh1KmuyWEBFoPVYJm/XcVtGyQOhbag/PZeXo7vjvSme9ky+N80WoVSk0\n2HEby4Jz8K95vNe1k7XV1o3I9ZPhoNgoyB57q9tI73Gr2XRtKClAyrpnbQzWf3uy\nfWq8kxP6AgHsSAfbwDCaNDLc8YoOiyNd/g/wLnYMGxJikccm5oWe0TvCGtXq7OJ3\nfxY0t7/ZhW0w0xEb57/KYvNk97hcPVDa/09w1MNknSCBjBJTb4LeVO2PXlDYa1OC\n/1Zgja26+pVT5MatjnkqKIF0s+qpPgOiVv2W4n2yrYK4MIcNa5DsQSoDoMxt2bEa\nANCTcXs/RDTg\n=52sN\n-----END PGP SIGNATURE-----",
+            "payload": "tree 7482629fa6668ec2018a3c2f7b6ac3bd30e625fe\nparent da9ff65f5ed663cd5c7f9b1c45ba83613f1c7a2f\nauthor Doug Goldstein <cardoe@cardoe.com> 1574005031 -0600\ncommitter Doug Goldstein <cardoe@cardoe.com> 1574005031 -0600\n\n(cargo-release) start next development iteration 0.4.4-alpha.0\n"
+          }
+        },
+        "url": "https://api.github.com/repos/discord/stderrlog-rs/commits/678f929c28ec170fe4597de798a9664839fb385f",
+        "author": {
+          "login": "cardoe",
+          "id": 8839,
+          "node_id": "MDQ6VXNlcjg4Mzk=",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/cardoe",
+          "type": "User",
+          "site_admin": false
+        },
+        "committer": {
+          "login": "cardoe",
+          "id": 8839,
+          "node_id": "MDQ6VXNlcjg4Mzk=",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/cardoe",
+          "type": "User",
+          "site_admin": false
+        },
+        "parents": [
+          {
+            "sha": "da9ff65f5ed663cd5c7f9b1c45ba83613f1c7a2f",
+            "url": "https://api.github.com/repos/discord/stderrlog-rs/commits/da9ff65f5ed663cd5c7f9b1c45ba83613f1c7a2f"
+          }
+        ]
+      },
+      {
+        "sha": "da9ff65f5ed663cd5c7f9b1c45ba83613f1c7a2f",
+        "node_id": "MDY6Q29tbWl0MjQ2MTU1OTIwOmRhOWZmNjVmNWVkNjYzY2Q1YzdmOWIxYzQ1YmE4MzYxM2YxYzdhMmY=",
+        "commit": {
+          "author": {
+            "name": "Doug Goldstein",
+            "email": "cardoe@cardoe.com",
+            "date": "2019-11-17T15:36:56Z"
+          },
+          "committer": {
+            "name": "Doug Goldstein",
+            "email": "cardoe@cardoe.com",
+            "date": "2019-11-17T15:36:56Z"
+          },
+          "message": "(cargo-release) version 0.4.3",
+          "tree": {
+            "sha": "bbcd7b946d8e17442f435036734ad70ec32f27f1",
+            "url": "https://api.github.com/repos/discord/stderrlog-rs/git/trees/bbcd7b946d8e17442f435036734ad70ec32f27f1"
+          },
+          "url": "https://api.github.com/repos/discord/stderrlog-rs/git/commits/da9ff65f5ed663cd5c7f9b1c45ba83613f1c7a2f",
+          "comment_count": 0,
+          "verification": {
+            "verified": true,
+            "reason": "valid",
+            "signature": "-----BEGIN PGP SIGNATURE-----\n\niQKmBAABCgCQFiEE9hYXBLEKE2oJfXLwyIzUxt8kNl0FAl3RaRhfFIAAAAAALgAo\naXNzdWVyLWZwckBub3RhdGlvbnMub3BlbnBncC5maWZ0aGhvcnNlbWFuLm5ldEY2\nMTYxNzA0QjEwQTEzNkEwOTdENzJGMEM4OENENEM2REYyNDM2NUQSHGNhcmRvZUBj\nYXJkb2UuY29tAAoJEMiM1MbfJDZdy9wQAITYy2auNDnOfqn9p/BGczErUvtKqACK\nSoBRrdwR1kRv1GIXQ0gyusYs3gK6kiWVs+lM0KubSOV8l6XzyviOhEjUJptdT3Nz\nHB7o1wTGzg/SOWaP6pVjRrexSvPCI8gbUxRlJjHgCHYWehwY+F6cGCmrxz/bQ7Xy\nbrvF2TH+lcFOozjHlavQo/X82AQ1BGJW+J97XylMFcTY8Cwx7dFaK2n7q1k1qBWi\nsGJ+FXSTnHM0sg6TXpnGBwrRtEIi29uJvspbtBM+Sg5aCRY88Gvbd96PUjqUpVRk\nvSQsI1C/PEb3CZwi0oJI+mlPKaZeC3qhHMFfKtcd4yggjbPEmB74vP7F+cJbCqRX\nf7CN8A4liLotWp1NOVMWHPQtUasTtHe1GVrpZXcDOIUe6cbuQc4S8RIiK9WzzrbM\n1yq7QQXr/y5CMMd+5PbGjvCbdi8JexUUDpslck0OgpdMKe6GYbYfoTyl2ocRFqUp\nqVOrLU0VMV886LQvRHPQtlWDIPzNZ11TjdKhm1gryE+Kf7wFRt+BtqU+sy7ZMrHw\no7DTRTdJkwbYi2KqhWhtk/S/RrUBfoPVMS5F2iIjoiClXRCoRWPImZ4R71PO9csb\nvypOx2dkHK1w43g72VSqSW2Q7GdALd3lIlVt/piuZfUW+Ga+ETVk7O+tYry/xc54\nFhs7FgVnCSd2\n=xWy3\n-----END PGP SIGNATURE-----",
+            "payload": "tree bbcd7b946d8e17442f435036734ad70ec32f27f1\nparent 2b7c4ac711616e21273895eedce904c897232902\nauthor Doug Goldstein <cardoe@cardoe.com> 1574005016 -0600\ncommitter Doug Goldstein <cardoe@cardoe.com> 1574005016 -0600\n\n(cargo-release) version 0.4.3\n"
+          }
+        },
+        "url": "https://api.github.com/repos/discord/stderrlog-rs/commits/da9ff65f5ed663cd5c7f9b1c45ba83613f1c7a2f",
+        "author": {
+          "login": "cardoe",
+          "id": 8839,
+          "node_id": "MDQ6VXNlcjg4Mzk=",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/cardoe",
+          "type": "User",
+          "site_admin": false
+        },
+        "committer": {
+          "login": "cardoe",
+          "id": 8839,
+          "node_id": "MDQ6VXNlcjg4Mzk=",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/cardoe",
+          "type": "User",
+          "site_admin": false
+        },
+        "parents": [
+          {
+            "sha": "2b7c4ac711616e21273895eedce904c897232902",
+            "url": "https://api.github.com/repos/discord/stderrlog-rs/commits/2b7c4ac711616e21273895eedce904c897232902"
+          }
+        ]
+      },
+      {
+        "sha": "2b7c4ac711616e21273895eedce904c897232902",
+        "node_id": "MDY6Q29tbWl0MjQ2MTU1OTIwOjJiN2M0YWM3MTE2MTZlMjEyNzM4OTVlZWRjZTkwNGM4OTcyMzI5MDI=",
+        "commit": {
+          "author": {
+            "name": "Doug Goldstein",
+            "email": "cardoe@cardoe.com",
+            "date": "2019-11-17T15:35:29Z"
+          },
+          "committer": {
+            "name": "Doug Goldstein",
+            "email": "cardoe@cardoe.com",
+            "date": "2019-11-17T15:35:59Z"
+          },
+          "message": "update changelog for 0.4.3",
+          "tree": {
+            "sha": "a03c663a5f9179fcd71c26e2cd5cf5b907725222",
+            "url": "https://api.github.com/repos/discord/stderrlog-rs/git/trees/a03c663a5f9179fcd71c26e2cd5cf5b907725222"
+          },
+          "url": "https://api.github.com/repos/discord/stderrlog-rs/git/commits/2b7c4ac711616e21273895eedce904c897232902",
+          "comment_count": 0,
+          "verification": {
+            "verified": true,
+            "reason": "valid",
+            "signature": "-----BEGIN PGP SIGNATURE-----\n\niQKmBAABCgCQFiEE9hYXBLEKE2oJfXLwyIzUxt8kNl0FAl3RaN9fFIAAAAAALgAo\naXNzdWVyLWZwckBub3RhdGlvbnMub3BlbnBncC5maWZ0aGhvcnNlbWFuLm5ldEY2\nMTYxNzA0QjEwQTEzNkEwOTdENzJGMEM4OENENEM2REYyNDM2NUQSHGNhcmRvZUBj\nYXJkb2UuY29tAAoJEMiM1MbfJDZd8rUP/RsTbbrNCNrLRetfe/iD/xnCUV3FemWd\n8wDkm1MPpxIrtPTZxeMts3Yxq+mgI7bf7zeJK/uOLYexbtVgbIuKXP2ptbUoFQax\n+eQkdynUM37a3OTJoRzqitCx2gHzWhbPMMVsRxmx+qnaEd+24RPvq++/9j6RK/mp\n1EYSZfWyGWfLUoZDw/MnynxXlD8UvERrXi37fwDSXZxpHFKE43bSqQ5m3wu+pSF/\ng6+2V3HH6qTCHVuvqUWAwEegKg0MbXqjnaTfl3RIRnvROpsixg5z8Am9v+wmhBWm\nZ3HhEXzh/FrOXReSJusHrxgCM5PSbni2fLvFGEy8O7TCYP9hlu0KU33/lkzp4qTN\n+l5juxUo/JQN+gzXvvAmihTuYPjQTjWoFp7iTCOvR0TFylrk63bvUdLZ6zNHuvux\nwb8LsJGPxpMRkxud8y0unUnwUGJivELpecd67CxXnLaGQWo1WpA1qyjeyYVHgAUT\nzOJUKJHNZkqE15sisC3aNHe6rVUGSqAB6c46npse1pGOg/z/76mSXLajMemc/0Af\n2Ov6oLUYKRoTuVjQGxNOSrkO5Xcm9rjygFti4aNybPsEwWODaJtMjcZQhqzRTDQq\n9P6o2xi68vwsWQDzAKtsA8r0AP1qv5b3GwmTRBCwqoLX3z82boRJudJjUE92bbBY\nHjj3Iefl9AbK\n=IpRM\n-----END PGP SIGNATURE-----",
+            "payload": "tree a03c663a5f9179fcd71c26e2cd5cf5b907725222\nparent 3e5a28f4c86730602cdd7be2edf884ef55262a6e\nauthor Doug Goldstein <cardoe@cardoe.com> 1574004929 -0600\ncommitter Doug Goldstein <cardoe@cardoe.com> 1574004959 -0600\n\nupdate changelog for 0.4.3\n"
+          }
+        },
+        "url": "https://api.github.com/repos/discord/stderrlog-rs/commits/2b7c4ac711616e21273895eedce904c897232902",
+        "author": {
+          "login": "cardoe",
+          "id": 8839,
+          "node_id": "MDQ6VXNlcjg4Mzk=",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/cardoe",
+          "type": "User",
+          "site_admin": false
+        },
+        "committer": {
+          "login": "cardoe",
+          "id": 8839,
+          "node_id": "MDQ6VXNlcjg4Mzk=",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/cardoe",
+          "type": "User",
+          "site_admin": false
+        },
+        "parents": [
+          {
+            "sha": "3e5a28f4c86730602cdd7be2edf884ef55262a6e",
+            "url": "https://api.github.com/repos/discord/stderrlog-rs/commits/3e5a28f4c86730602cdd7be2edf884ef55262a6e"
+          }
+        ]
+      },
+      {
+        "sha": "3e5a28f4c86730602cdd7be2edf884ef55262a6e",
+        "node_id": "MDY6Q29tbWl0MjQ2MTU1OTIwOjNlNWEyOGY0Yzg2NzMwNjAyY2RkN2JlMmVkZjg4NGVmNTUyNjJhNmU=",
+        "commit": {
+          "author": {
+            "name": "Doug Goldstein",
+            "email": "cardoe@cardoe.com",
+            "date": "2019-11-17T15:27:57Z"
+          },
+          "committer": {
+            "name": "Doug Goldstein",
+            "email": "cardoe@cardoe.com",
+            "date": "2019-11-17T15:27:57Z"
+          },
+          "message": "point html_root_url to 0.4.3",
+          "tree": {
+            "sha": "3e1224e156634b80d36adc9b674e635cee5e0f42",
+            "url": "https://api.github.com/repos/discord/stderrlog-rs/git/trees/3e1224e156634b80d36adc9b674e635cee5e0f42"
+          },
+          "url": "https://api.github.com/repos/discord/stderrlog-rs/git/commits/3e5a28f4c86730602cdd7be2edf884ef55262a6e",
+          "comment_count": 0,
+          "verification": {
+            "verified": true,
+            "reason": "valid",
+            "signature": "-----BEGIN PGP SIGNATURE-----\n\niQKmBAABCgCQFiEE9hYXBLEKE2oJfXLwyIzUxt8kNl0FAl3RZv1fFIAAAAAALgAo\naXNzdWVyLWZwckBub3RhdGlvbnMub3BlbnBncC5maWZ0aGhvcnNlbWFuLm5ldEY2\nMTYxNzA0QjEwQTEzNkEwOTdENzJGMEM4OENENEM2REYyNDM2NUQSHGNhcmRvZUBj\nYXJkb2UuY29tAAoJEMiM1MbfJDZdX+oP/2CTOT2bY2LIdyru6D4GgazmNkqmzTYt\nEiyM7dkdF0+juDDFlbuCSylZy/asJx3n62etnFS6k1jW+PPeP5qa5Lsgwut+nuzW\nS0wr5ef1M4a/qOAUHb12sOWvJytMNWUC4y1L7s/Xi9NQ5UU9v8Oxg+VDZm1iQZUe\n9NmIS3VZc1CrfLeB1VPStJ47tYgkCOoXo8+zCXeATUFWvRuguopnmessJcytg0xm\nASM+6gSNW13NF/S78iKWnp9sWoCxWqxdbEfbImSs0NeZpi2LJM4Oh7SStJa7ZJib\nWZrjsu6Z1jX5yEfgXDKcF+iKwXEv9FjuTFqnWae7yUoBPyR0OjnPfo62US+3/Bbz\nSVptlLJ1qUJXxk8on9n9cafyC496vtyYGpye3KVY3K2jQQ6YAqJX3Km6rKmJmfSs\nSdy+LzSri2A7n4/4Wob4fzCEgI/S4Gu9d0mE+VF+kutM05oXNltSA6hyMLQ6hPKx\npTU/IfWF3do99oQ8lVPAS2okLO4maAUtrycKvUFVudy8+xm0TjIUJKOU1KdCrjj8\nPHeC3xPwGAwu3/k1MT8R4y8XjzLGsGZcHu+7Pt8zqeyJv9dem7GKk+rr1v+ojG7T\n//lzkHn+H+kCDhR0t0hgr3FWjcRni41ofV/ipg4sC1sAhIjfyvi2JCkZgvnT0UIh\nDQ+vBlIenKRK\n=yyRM\n-----END PGP SIGNATURE-----",
+            "payload": "tree 3e1224e156634b80d36adc9b674e635cee5e0f42\nparent 25ccc4e23b313c51dc936f75a198b0aa9f351e76\nauthor Doug Goldstein <cardoe@cardoe.com> 1574004477 -0600\ncommitter Doug Goldstein <cardoe@cardoe.com> 1574004477 -0600\n\npoint html_root_url to 0.4.3\n"
+          }
+        },
+        "url": "https://api.github.com/repos/discord/stderrlog-rs/commits/3e5a28f4c86730602cdd7be2edf884ef55262a6e",
+        "author": {
+          "login": "cardoe",
+          "id": 8839,
+          "node_id": "MDQ6VXNlcjg4Mzk=",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/cardoe",
+          "type": "User",
+          "site_admin": false
+        },
+        "committer": {
+          "login": "cardoe",
+          "id": 8839,
+          "node_id": "MDQ6VXNlcjg4Mzk=",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/cardoe",
+          "type": "User",
+          "site_admin": false
+        },
+        "parents": [
+          {
+            "sha": "25ccc4e23b313c51dc936f75a198b0aa9f351e76",
+            "url": "https://api.github.com/repos/discord/stderrlog-rs/commits/25ccc4e23b313c51dc936f75a198b0aa9f351e76"
+          }
+        ]
+      }
+    ],
     "releases": [],
     "issues": [],
     "pullRequests": []

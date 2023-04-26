@@ -57,9 +57,521 @@
     "triage": false,
     "pull": false
   },
-  "branches": [],
+  "branches": [
+    {
+      "name": "day/rebase-upstream",
+      "commit": {
+        "sha": "4381dedd6349e3b64d4059075a9a0a212c3213be",
+        "url": "https://api.github.com/repos/discord/mypy/commits/4381dedd6349e3b64d4059075a9a0a212c3213be"
+      },
+      "protected": false
+    },
+    {
+      "name": "denbeigh/patch",
+      "commit": {
+        "sha": "708f66219854b5da1ec9a61a3b18e09cd4d21856",
+        "url": "https://api.github.com/repos/discord/mypy/commits/708f66219854b5da1ec9a61a3b18e09cd4d21856"
+      },
+      "protected": false
+    },
+    {
+      "name": "experiment",
+      "commit": {
+        "sha": "fe547de2e878d3a81f47c464c35fc051160de8c3",
+        "url": "https://api.github.com/repos/discord/mypy/commits/fe547de2e878d3a81f47c464c35fc051160de8c3"
+      },
+      "protected": false
+    },
+    {
+      "name": "fix-warnings",
+      "commit": {
+        "sha": "883f7b95dff2aea6c3f1016207723398c70c5651",
+        "url": "https://api.github.com/repos/discord/mypy/commits/883f7b95dff2aea6c3f1016207723398c70c5651"
+      },
+      "protected": false
+    },
+    {
+      "name": "incremental-debug",
+      "commit": {
+        "sha": "a28745254c9c707a8c54625077d2aeded30c528f",
+        "url": "https://api.github.com/repos/discord/mypy/commits/a28745254c9c707a8c54625077d2aeded30c528f"
+      },
+      "protected": false
+    },
+    {
+      "name": "local-partial",
+      "commit": {
+        "sha": "8ba4a9aeaf44daf897ebd5cd798e55d36dd61b1d",
+        "url": "https://api.github.com/repos/discord/mypy/commits/8ba4a9aeaf44daf897ebd5cd798e55d36dd61b1d"
+      },
+      "protected": false
+    },
+    {
+      "name": "log-search-path",
+      "commit": {
+        "sha": "50bcf5957615527d38a67e0456c79c59bd057677",
+        "url": "https://api.github.com/repos/discord/mypy/commits/50bcf5957615527d38a67e0456c79c59bd057677"
+      },
+      "protected": false
+    },
+    {
+      "name": "master",
+      "commit": {
+        "sha": "644496828841035d097d7afd80b96081e0ea5c7f",
+        "url": "https://api.github.com/repos/discord/mypy/commits/644496828841035d097d7afd80b96081e0ea5c7f"
+      },
+      "protected": false
+    },
+    {
+      "name": "mypy-extensions",
+      "commit": {
+        "sha": "29e08742e2044d1ddc2d2f7435dee8149c052f1a",
+        "url": "https://api.github.com/repos/discord/mypy/commits/29e08742e2044d1ddc2d2f7435dee8149c052f1a"
+      },
+      "protected": false
+    },
+    {
+      "name": "mypyc-bytes",
+      "commit": {
+        "sha": "6ca62a1db3e60a5e7ecc2ba6a9b79932fea1e607",
+        "url": "https://api.github.com/repos/discord/mypy/commits/6ca62a1db3e60a5e7ecc2ba6a9b79932fea1e607"
+      },
+      "protected": false
+    },
+    {
+      "name": "release-0.700",
+      "commit": {
+        "sha": "d40990f5b91b1f06918222d1041441b7ff63f79a",
+        "url": "https://api.github.com/repos/discord/mypy/commits/d40990f5b91b1f06918222d1041441b7ff63f79a"
+      },
+      "protected": false
+    },
+    {
+      "name": "release-0.710",
+      "commit": {
+        "sha": "81e8940c7b9ba5996a41d66ee0066eee06842490",
+        "url": "https://api.github.com/repos/discord/mypy/commits/81e8940c7b9ba5996a41d66ee0066eee06842490"
+      },
+      "protected": false
+    },
+    {
+      "name": "release-0.711",
+      "commit": {
+        "sha": "f62c69eba41bd1b8b018cc41af96c526262189ab",
+        "url": "https://api.github.com/repos/discord/mypy/commits/f62c69eba41bd1b8b018cc41af96c526262189ab"
+      },
+      "protected": false
+    },
+    {
+      "name": "release-0.720",
+      "commit": {
+        "sha": "36aecdae92d050f626ea9029ad08f0c8382c47e7",
+        "url": "https://api.github.com/repos/discord/mypy/commits/36aecdae92d050f626ea9029ad08f0c8382c47e7"
+      },
+      "protected": false
+    },
+    {
+      "name": "release-0.730",
+      "commit": {
+        "sha": "7ad7f8bbe61e5e67aa7fd6f2efe280931dd2f620",
+        "url": "https://api.github.com/repos/discord/mypy/commits/7ad7f8bbe61e5e67aa7fd6f2efe280931dd2f620"
+      },
+      "protected": false
+    },
+    {
+      "name": "release-0.740",
+      "commit": {
+        "sha": "0662772b5a6b9029da0cf4aec857b9b1e34057a9",
+        "url": "https://api.github.com/repos/discord/mypy/commits/0662772b5a6b9029da0cf4aec857b9b1e34057a9"
+      },
+      "protected": false
+    },
+    {
+      "name": "release-0.750",
+      "commit": {
+        "sha": "d8aa68576dda9940aedd0f861f7789d7e679c292",
+        "url": "https://api.github.com/repos/discord/mypy/commits/d8aa68576dda9940aedd0f861f7789d7e679c292"
+      },
+      "protected": false
+    },
+    {
+      "name": "release-0.760",
+      "commit": {
+        "sha": "54447c6068f13326ec18dd4efb81ae3ab83b5ab4",
+        "url": "https://api.github.com/repos/discord/mypy/commits/54447c6068f13326ec18dd4efb81ae3ab83b5ab4"
+      },
+      "protected": false
+    },
+    {
+      "name": "release-0.761",
+      "commit": {
+        "sha": "f53b718bdf5935443332a43d8c1b448af8b80b57",
+        "url": "https://api.github.com/repos/discord/mypy/commits/f53b718bdf5935443332a43d8c1b448af8b80b57"
+      },
+      "protected": false
+    },
+    {
+      "name": "release-0.770",
+      "commit": {
+        "sha": "92e3f396b03c69c1d8abc249632bfd2db02350d0",
+        "url": "https://api.github.com/repos/discord/mypy/commits/92e3f396b03c69c1d8abc249632bfd2db02350d0"
+      },
+      "protected": false
+    },
+    {
+      "name": "release-0.780",
+      "commit": {
+        "sha": "39b6bc47b9f7e7d72778886419d07eb4acf3c50a",
+        "url": "https://api.github.com/repos/discord/mypy/commits/39b6bc47b9f7e7d72778886419d07eb4acf3c50a"
+      },
+      "protected": false
+    },
+    {
+      "name": "release-0.790",
+      "commit": {
+        "sha": "69a055a7632e2444fcb2bfb022d04f4546358d50",
+        "url": "https://api.github.com/repos/discord/mypy/commits/69a055a7632e2444fcb2bfb022d04f4546358d50"
+      },
+      "protected": false
+    },
+    {
+      "name": "release-0.800",
+      "commit": {
+        "sha": "4c3ea8285a685fbc3934a8a1e3b37beea10f587e",
+        "url": "https://api.github.com/repos/discord/mypy/commits/4c3ea8285a685fbc3934a8a1e3b37beea10f587e"
+      },
+      "protected": false
+    },
+    {
+      "name": "release-0.810",
+      "commit": {
+        "sha": "d089891198ef470c8bec9bd7d7b50a02757c5b68",
+        "url": "https://api.github.com/repos/discord/mypy/commits/d089891198ef470c8bec9bd7d7b50a02757c5b68"
+      },
+      "protected": false
+    },
+    {
+      "name": "release-0.900",
+      "commit": {
+        "sha": "defe53ff8002766b51eb9c87e90289d4dd8a48a2",
+        "url": "https://api.github.com/repos/discord/mypy/commits/defe53ff8002766b51eb9c87e90289d4dd8a48a2"
+      },
+      "protected": false
+    },
+    {
+      "name": "release-0.910",
+      "commit": {
+        "sha": "f5fc579cf07f2078c9312044f6bcb132f891d746",
+        "url": "https://api.github.com/repos/discord/mypy/commits/f5fc579cf07f2078c9312044f6bcb132f891d746"
+      },
+      "protected": false
+    },
+    {
+      "name": "release-shantanu-test",
+      "commit": {
+        "sha": "a8513e673151b967a5ffc7c03985d9bab9a0d54b",
+        "url": "https://api.github.com/repos/discord/mypy/commits/a8513e673151b967a5ffc7c03985d9bab9a0d54b"
+      },
+      "protected": false
+    },
+    {
+      "name": "revert",
+      "commit": {
+        "sha": "46c09780e13b308080ee1b2ae471a51610fa3b45",
+        "url": "https://api.github.com/repos/discord/mypy/commits/46c09780e13b308080ee1b2ae471a51610fa3b45"
+      },
+      "protected": false
+    },
+    {
+      "name": "revert-9415-pow-2",
+      "commit": {
+        "sha": "abb09aea28cd692810cdd8dc458ee707fcd36aad",
+        "url": "https://api.github.com/repos/discord/mypy/commits/abb09aea28cd692810cdd8dc458ee707fcd36aad"
+      },
+      "protected": false
+    },
+    {
+      "name": "stubgen-fixes",
+      "commit": {
+        "sha": "232bfbc281b276b33468a3c171cf48fc78f2d0da",
+        "url": "https://api.github.com/repos/discord/mypy/commits/232bfbc281b276b33468a3c171cf48fc78f2d0da"
+      },
+      "protected": false
+    }
+  ],
   "last5": {
-    "commits": [],
+    "commits": [
+      {
+        "sha": "644496828841035d097d7afd80b96081e0ea5c7f",
+        "node_id": "MDY6Q29tbWl0Mzk1NzIyNTExOjY0NDQ5NjgyODg0MTAzNWQwOTdkN2FmZDgwYjk2MDgxZTBlYTVjN2Y=",
+        "commit": {
+          "author": {
+            "name": "97littleleaf11",
+            "email": "97littleleaf11@users.noreply.github.com",
+            "date": "2021-08-12T11:28:31Z"
+          },
+          "committer": {
+            "name": "GitHub",
+            "email": "noreply@github.com",
+            "date": "2021-08-12T11:28:31Z"
+          },
+          "message": "[mypyc] Add primitive for bytes slicing (#10966)\n\nAdd a C helper function for bytes and bytearray slicing.",
+          "tree": {
+            "sha": "602f83525aad336b6a0db678f0fe09ad2174062e",
+            "url": "https://api.github.com/repos/discord/mypy/git/trees/602f83525aad336b6a0db678f0fe09ad2174062e"
+          },
+          "url": "https://api.github.com/repos/discord/mypy/git/commits/644496828841035d097d7afd80b96081e0ea5c7f",
+          "comment_count": 0,
+          "verification": {
+            "verified": true,
+            "reason": "valid",
+            "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsBcBAABCAAQBQJhFQXgCRBK7hj4Ov3rIwAA5UIIAHc2jV7qt2UMgpyjF5piTsuY\ngHn+2oisnp3jBptYlmsL2jHXU0yawTJNBkn0reE2BZjsIFRD3gCS1HTntRXSWc/D\nBLEZujE6kzYQQIwWvKVVYpaB7hpYtWqzXvQd86q0tkNNihlPTbO1SNOdGWrWMsVA\nTylRZEd26hzLMfLNlDak/TohKO9mFnJbF64oYFvg+PIwSEiDh0XSWJZSSbnHVdVK\n912UBxaoAwQ2vJ5NpMQkgt20BAa7FjQ2EEnGEMjhhWh+t1rEwbIVh8xSvJ73CllZ\nY1oXVGA1v8u9Mc+ak1CYPevopfkFvLzQYlCdlOF7QixTzxR5kvsSkTsTHvEzdn0=\n=Qwm5\n-----END PGP SIGNATURE-----\n",
+            "payload": "tree 602f83525aad336b6a0db678f0fe09ad2174062e\nparent 3970cc3baf98dd456927accb550659beb14ea0bd\nauthor 97littleleaf11 <97littleleaf11@users.noreply.github.com> 1628767711 +0800\ncommitter GitHub <noreply@github.com> 1628767711 +0100\n\n[mypyc] Add primitive for bytes slicing (#10966)\n\nAdd a C helper function for bytes and bytearray slicing."
+          }
+        },
+        "url": "https://api.github.com/repos/discord/mypy/commits/644496828841035d097d7afd80b96081e0ea5c7f",
+        "author": {
+          "login": "97littleleaf11",
+          "id": 11172084,
+          "node_id": "MDQ6VXNlcjExMTcyMDg0",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/97littleleaf11",
+          "type": "User",
+          "site_admin": false
+        },
+        "committer": {
+          "login": "web-flow",
+          "id": 19864447,
+          "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/web-flow",
+          "type": "User",
+          "site_admin": false
+        },
+        "parents": [
+          {
+            "sha": "3970cc3baf98dd456927accb550659beb14ea0bd",
+            "url": "https://api.github.com/repos/discord/mypy/commits/3970cc3baf98dd456927accb550659beb14ea0bd"
+          }
+        ]
+      },
+      {
+        "sha": "3970cc3baf98dd456927accb550659beb14ea0bd",
+        "node_id": "MDY6Q29tbWl0Mzk1NzIyNTExOjM5NzBjYzNiYWY5OGRkNDU2OTI3YWNjYjU1MDY1OWJlYjE0ZWEwYmQ=",
+        "commit": {
+          "author": {
+            "name": "97littleleaf11",
+            "email": "97littleleaf11@users.noreply.github.com",
+            "date": "2021-08-12T10:31:32Z"
+          },
+          "committer": {
+            "name": "GitHub",
+            "email": "noreply@github.com",
+            "date": "2021-08-12T10:31:32Z"
+          },
+          "message": "Add primitives for str.encode() (#10974)",
+          "tree": {
+            "sha": "cf33d7935e4f71a779feda469e1970ffe246c878",
+            "url": "https://api.github.com/repos/discord/mypy/git/trees/cf33d7935e4f71a779feda469e1970ffe246c878"
+          },
+          "url": "https://api.github.com/repos/discord/mypy/git/commits/3970cc3baf98dd456927accb550659beb14ea0bd",
+          "comment_count": 0,
+          "verification": {
+            "verified": true,
+            "reason": "valid",
+            "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsBcBAABCAAQBQJhFPiECRBK7hj4Ov3rIwAAbkgIAJVtGfdYT/73qsDRrXV6WGlZ\nDk+TRb2ACjLtkWqTumXMokigYwV0qo8xr/RkdW9N+9SZxuwhqi4O01PzACiOVU5g\n71R3VHsOPF7xEAxul0SmHK7iR43eiPddipCKLWW0m2Z4RYg13l7iPcW2hUjSTTKA\n7v/TfGOPFuEIR4Efj+uSsYmomLtCWTg/hXF6XCkjkjypkzRQc5ib29xfLmehzKHV\n2JaVW+X228qGl2E+yfHsG53atWvslwXpO7uSWoSlcUsOmoeAwK/zROwL/AQaKCgp\nJn8jEoal+hhHgvQA9c/yrNlpl+OEfUOscImN09KK0MVexpmzANu70XGSSrciUNQ=\n=JoYf\n-----END PGP SIGNATURE-----\n",
+            "payload": "tree cf33d7935e4f71a779feda469e1970ffe246c878\nparent 5adb0a05c157d9f5afbdb048a6d06a3234586ab6\nauthor 97littleleaf11 <97littleleaf11@users.noreply.github.com> 1628764292 +0800\ncommitter GitHub <noreply@github.com> 1628764292 +0100\n\nAdd primitives for str.encode() (#10974)\n\n"
+          }
+        },
+        "url": "https://api.github.com/repos/discord/mypy/commits/3970cc3baf98dd456927accb550659beb14ea0bd",
+        "author": {
+          "login": "97littleleaf11",
+          "id": 11172084,
+          "node_id": "MDQ6VXNlcjExMTcyMDg0",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/97littleleaf11",
+          "type": "User",
+          "site_admin": false
+        },
+        "committer": {
+          "login": "web-flow",
+          "id": 19864447,
+          "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/web-flow",
+          "type": "User",
+          "site_admin": false
+        },
+        "parents": [
+          {
+            "sha": "5adb0a05c157d9f5afbdb048a6d06a3234586ab6",
+            "url": "https://api.github.com/repos/discord/mypy/commits/5adb0a05c157d9f5afbdb048a6d06a3234586ab6"
+          }
+        ]
+      },
+      {
+        "sha": "5adb0a05c157d9f5afbdb048a6d06a3234586ab6",
+        "node_id": "MDY6Q29tbWl0Mzk1NzIyNTExOjVhZGIwYTA1YzE1N2Q5ZjVhZmJkYjA0OGE2ZDA2YTMyMzQ1ODZhYjY=",
+        "commit": {
+          "author": {
+            "name": "97littleleaf11",
+            "email": "97littleleaf11@users.noreply.github.com",
+            "date": "2021-08-11T10:29:54Z"
+          },
+          "committer": {
+            "name": "GitHub",
+            "email": "noreply@github.com",
+            "date": "2021-08-11T10:29:54Z"
+          },
+          "message": "[mypyc] Add primitive for bytes.decode (#10951)\n\nImplements part of mypyc/mypyc#880.",
+          "tree": {
+            "sha": "723a8885902b0b0e315e635979dab77580ba9a3e",
+            "url": "https://api.github.com/repos/discord/mypy/git/trees/723a8885902b0b0e315e635979dab77580ba9a3e"
+          },
+          "url": "https://api.github.com/repos/discord/mypy/git/commits/5adb0a05c157d9f5afbdb048a6d06a3234586ab6",
+          "comment_count": 0,
+          "verification": {
+            "verified": true,
+            "reason": "valid",
+            "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsBcBAABCAAQBQJhE6aiCRBK7hj4Ov3rIwAAfzcIAHXHy39qNq6resi13EcIuj4l\n66l6V7fBluxE8hFCzA4QeweTioI8+npLTBUAyIMnIMvKEaeNynMD3nkPZv2yjSXI\ng7YJ75pDcEIwOVdH+X0Jod4B0ModzhiO0JZ8GcBrU9lLZHOFrgIMtA9U/LaBwVLq\nfsMv/4pf/yxiVUz7ZGTQ5N56P8iImKk+lu9tuPRbeAOBZqFx3ezidxhzvZa/sFZ5\n1O5YS/6cUfdV697GL7tV0Mp4rxGOndQrS4l4Mx6Ajm30k5q7I87dBru/UMDAd2NM\n76+dsz3N0NhMC5sA0o6DSkk0bgf8zEm9PvU/OsTdNXIL8WarkAjpxEwYqJhMKJI=\n=81W5\n-----END PGP SIGNATURE-----\n",
+            "payload": "tree 723a8885902b0b0e315e635979dab77580ba9a3e\nparent ba7b50c07886f744268d664adb5a6f026ce7be37\nauthor 97littleleaf11 <97littleleaf11@users.noreply.github.com> 1628677794 +0800\ncommitter GitHub <noreply@github.com> 1628677794 +0100\n\n[mypyc] Add primitive for bytes.decode (#10951)\n\nImplements part of mypyc/mypyc#880."
+          }
+        },
+        "url": "https://api.github.com/repos/discord/mypy/commits/5adb0a05c157d9f5afbdb048a6d06a3234586ab6",
+        "author": {
+          "login": "97littleleaf11",
+          "id": 11172084,
+          "node_id": "MDQ6VXNlcjExMTcyMDg0",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/97littleleaf11",
+          "type": "User",
+          "site_admin": false
+        },
+        "committer": {
+          "login": "web-flow",
+          "id": 19864447,
+          "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/web-flow",
+          "type": "User",
+          "site_admin": false
+        },
+        "parents": [
+          {
+            "sha": "ba7b50c07886f744268d664adb5a6f026ce7be37",
+            "url": "https://api.github.com/repos/discord/mypy/commits/ba7b50c07886f744268d664adb5a6f026ce7be37"
+          }
+        ]
+      },
+      {
+        "sha": "ba7b50c07886f744268d664adb5a6f026ce7be37",
+        "node_id": "MDY6Q29tbWl0Mzk1NzIyNTExOmJhN2I1MGMwNzg4NmY3NDQyNjhkNjY0YWRiNWE2ZjAyNmNlN2JlMzc=",
+        "commit": {
+          "author": {
+            "name": "97littleleaf11",
+            "email": "97littleleaf11@users.noreply.github.com",
+            "date": "2021-08-11T09:34:52Z"
+          },
+          "committer": {
+            "name": "GitHub",
+            "email": "noreply@github.com",
+            "date": "2021-08-11T09:34:52Z"
+          },
+          "message": "[mypyc] Add bytes index primitive (#10950)\n\nImplements part of mypyc/mypyc#880.",
+          "tree": {
+            "sha": "04f76f1a6937e56fce680b40ccf1778de94f6a89",
+            "url": "https://api.github.com/repos/discord/mypy/git/trees/04f76f1a6937e56fce680b40ccf1778de94f6a89"
+          },
+          "url": "https://api.github.com/repos/discord/mypy/git/commits/ba7b50c07886f744268d664adb5a6f026ce7be37",
+          "comment_count": 0,
+          "verification": {
+            "verified": true,
+            "reason": "valid",
+            "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsBcBAABCAAQBQJhE5m8CRBK7hj4Ov3rIwAAgRsIAGseAC7Y44G9trdfo6Mb+09V\nshihh4DfdjS7QYP4LXpuQQH2kfFKXA/1jWaQ8cFKt5adG5jdGM78Wz2tUCzzs4i/\nwSf31toA4hTuNDKCjQuaGXhch9055DKkpwSIU+YBsnGObLSCk+66AezrlOnIhhDS\nO2bUQr72QUGe1P5X0i65i1nOPQd+UuL/KycN1iDK+KyvO7B129yxVBcCMXp7reyG\n+r1jiO2E38cRdPaZcSyIMVzTY0IDRKG2ZcWdGnlQbGZgEIMm39WzwNDYk0npq1oZ\nBQzz1HhhqodP/CCym7/IJitIC2ouGWXiaTwfe8nASfWZd6qjVOcag0cTwqjX1X8=\n=Ps9V\n-----END PGP SIGNATURE-----\n",
+            "payload": "tree 04f76f1a6937e56fce680b40ccf1778de94f6a89\nparent 0dcd2c636e28d27473c084e5148e7dfb86886831\nauthor 97littleleaf11 <97littleleaf11@users.noreply.github.com> 1628674492 +0800\ncommitter GitHub <noreply@github.com> 1628674492 +0100\n\n[mypyc] Add bytes index primitive (#10950)\n\nImplements part of mypyc/mypyc#880."
+          }
+        },
+        "url": "https://api.github.com/repos/discord/mypy/commits/ba7b50c07886f744268d664adb5a6f026ce7be37",
+        "author": {
+          "login": "97littleleaf11",
+          "id": 11172084,
+          "node_id": "MDQ6VXNlcjExMTcyMDg0",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/97littleleaf11",
+          "type": "User",
+          "site_admin": false
+        },
+        "committer": {
+          "login": "web-flow",
+          "id": 19864447,
+          "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/web-flow",
+          "type": "User",
+          "site_admin": false
+        },
+        "parents": [
+          {
+            "sha": "0dcd2c636e28d27473c084e5148e7dfb86886831",
+            "url": "https://api.github.com/repos/discord/mypy/commits/0dcd2c636e28d27473c084e5148e7dfb86886831"
+          }
+        ]
+      },
+      {
+        "sha": "0dcd2c636e28d27473c084e5148e7dfb86886831",
+        "node_id": "MDY6Q29tbWl0Mzk1NzIyNTExOjBkY2QyYzYzNmUyOGQyNzQ3M2MwODRlNTE0OGU3ZGZiODY4ODY4MzE=",
+        "commit": {
+          "author": {
+            "name": "pranavrajpal",
+            "email": "78008260+pranavrajpal@users.noreply.github.com",
+            "date": "2021-08-11T03:01:03Z"
+          },
+          "committer": {
+            "name": "GitHub",
+            "email": "noreply@github.com",
+            "date": "2021-08-11T03:01:03Z"
+          },
+          "message": "[mypyc] Add support for dynamically registering singledispatch functions (#10968)\n\nInstead of generating a regular native function for singledispatch\r\nfunctions, generate a callable class. That gives us a place to put the\r\nregistry dict (instead of storing the registry dict in a static\r\nvariable) and also will allow us to support dynamically registering\r\nfunctions by adding a register method to that callable class.",
+          "tree": {
+            "sha": "f380f0fb4b4c4a36ebb384327c18b4b0b87bcb4c",
+            "url": "https://api.github.com/repos/discord/mypy/git/trees/f380f0fb4b4c4a36ebb384327c18b4b0b87bcb4c"
+          },
+          "url": "https://api.github.com/repos/discord/mypy/git/commits/0dcd2c636e28d27473c084e5148e7dfb86886831",
+          "comment_count": 0,
+          "verification": {
+            "verified": true,
+            "reason": "valid",
+            "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsBcBAABCAAQBQJhEz1vCRBK7hj4Ov3rIwAAQVUIAKNWiTfYQdekEN0VR8HK4Rg3\nLl6ncXaCTQUjoF0A5k7zf5Ju02QM6y3+j7YbSdO6Shc5LORIwZvKD5mvyPrFNNOj\nCb8cCrAHEF2z5vznjkr/RcvvSl855Hz5uwDKhzuh0exqT58K9/Of3J56WKqF5AdO\n1f/B/yCX7Gh0v00fJ7R6rWefFNqK159gicPBH3W/IZuPX8upYOn17zcmsfZ5YVmN\nevyn5xdCuROku27l0bQ9g4a/bOg1gU0r8vZL2Gyun2o11NqgD5X056oLZaoH3oYV\nI4AKw7NZ6EV3fg7Lh0XRuCGnxIB2f0IS3YEslIAe52qsFV9EOuYT1PNmULiS+pA=\n=9VX2\n-----END PGP SIGNATURE-----\n",
+            "payload": "tree f380f0fb4b4c4a36ebb384327c18b4b0b87bcb4c\nparent 0bde4b9e82e337f1b63d1e7dcc6922ed648e86f7\nauthor pranavrajpal <78008260+pranavrajpal@users.noreply.github.com> 1628650863 -0700\ncommitter GitHub <noreply@github.com> 1628650863 -0700\n\n[mypyc] Add support for dynamically registering singledispatch functions (#10968)\n\nInstead of generating a regular native function for singledispatch\r\nfunctions, generate a callable class. That gives us a place to put the\r\nregistry dict (instead of storing the registry dict in a static\r\nvariable) and also will allow us to support dynamically registering\r\nfunctions by adding a register method to that callable class."
+          }
+        },
+        "url": "https://api.github.com/repos/discord/mypy/commits/0dcd2c636e28d27473c084e5148e7dfb86886831",
+        "author": {
+          "login": "pranavrajpal",
+          "id": 78008260,
+          "node_id": "MDQ6VXNlcjc4MDA4MjYw",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/pranavrajpal",
+          "type": "User",
+          "site_admin": false
+        },
+        "committer": {
+          "login": "web-flow",
+          "id": 19864447,
+          "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/web-flow",
+          "type": "User",
+          "site_admin": false
+        },
+        "parents": [
+          {
+            "sha": "0bde4b9e82e337f1b63d1e7dcc6922ed648e86f7",
+            "url": "https://api.github.com/repos/discord/mypy/commits/0bde4b9e82e337f1b63d1e7dcc6922ed648e86f7"
+          }
+        ]
+      }
+    ],
     "releases": [],
     "issues": [],
     "pullRequests": []
