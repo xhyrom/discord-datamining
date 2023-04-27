@@ -57,7 +57,24 @@
     "triage": false,
     "pull": false
   },
-  "branches": [],
+  "branches": [
+    {
+      "name": "master",
+      "commit": {
+        "sha": "1942a39afefdf24a99d5ec6850ed0f805ab62a8a",
+        "url": "https://api.github.com/repos/discord/rlottie/commits/1942a39afefdf24a99d5ec6850ed0f805ab62a8a"
+      },
+      "protected": false
+    },
+    {
+      "name": "rlottie-test",
+      "commit": {
+        "sha": "ee851526a6d67b7dc14d07bbab6be1ded19f972b",
+        "url": "https://api.github.com/repos/discord/rlottie/commits/ee851526a6d67b7dc14d07bbab6be1ded19f972b"
+      },
+      "protected": false
+    }
+  ],
   "last5": {
     "commits": [
       {
