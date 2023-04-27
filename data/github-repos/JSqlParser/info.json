@@ -57,7 +57,48 @@
     "triage": false,
     "pull": false
   },
-  "branches": [],
+  "branches": [
+    {
+      "name": "change-license-header",
+      "commit": {
+        "sha": "b90234f0fc39d3405f35a4c3e4f1a745e6c532c4",
+        "url": "https://api.github.com/repos/discord/JSqlParser/commits/b90234f0fc39d3405f35a4c3e4f1a745e6c532c4"
+      },
+      "protected": false
+    },
+    {
+      "name": "introducing-template-modern",
+      "commit": {
+        "sha": "10b04f4ec31853111ca15bf9846dfaba338ac623",
+        "url": "https://api.github.com/repos/discord/JSqlParser/commits/10b04f4ec31853111ca15bf9846dfaba338ac623"
+      },
+      "protected": false
+    },
+    {
+      "name": "jjtree-start",
+      "commit": {
+        "sha": "edd0c765ea34898ce14b265d0353de4da0a26cab",
+        "url": "https://api.github.com/repos/discord/JSqlParser/commits/edd0c765ea34898ce14b265d0353de4da0a26cab"
+      },
+      "protected": false
+    },
+    {
+      "name": "master",
+      "commit": {
+        "sha": "8ddf8f68d82ac0c9ef50c5015b92131c4541736d",
+        "url": "https://api.github.com/repos/discord/JSqlParser/commits/8ddf8f68d82ac0c9ef50c5015b92131c4541736d"
+      },
+      "protected": false
+    },
+    {
+      "name": "merge-impl",
+      "commit": {
+        "sha": "af5a09078134f6cd6242b78e02b7e6f033d3e0db",
+        "url": "https://api.github.com/repos/discord/JSqlParser/commits/af5a09078134f6cd6242b78e02b7e6f033d3e0db"
+      },
+      "protected": false
+    }
+  ],
   "last5": {
     "commits": [
       {
