@@ -335,7 +335,100 @@
         ]
       }
     ],
-    "releases": [],
+    "releases": [
+      {
+        "url": "https://api.github.com/repos/discord/Squirrel.Windows/releases/1288510",
+        "id": 1288510,
+        "author": {
+          "login": "jasoncitron",
+          "id": 90868,
+          "node_id": "MDQ6VXNlcjkwODY4",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/jasoncitron",
+          "type": "User",
+          "site_admin": false
+        },
+        "node_id": "MDc6UmVsZWFzZTEyODg1MTA=",
+        "tag_name": "0.9.4.2",
+        "target_commitish": "master",
+        "name": "Squirrel 0.9.4.2 for Windows",
+        "draft": false,
+        "prerelease": false,
+        "created_at": "2015-05-12T02:33:15Z",
+        "published_at": "2015-05-12T18:34:55Z",
+        "assets": [
+          {
+            "url": "https://api.github.com/repos/discord/Squirrel.Windows/releases/assets/578893",
+            "id": 578893,
+            "node_id": "MDEyOlJlbGVhc2VBc3NldDU3ODg5Mw==",
+            "name": "Squirrel-0.9.4.2.zip",
+            "label": null,
+            "uploader": {
+              "login": "jasoncitron",
+              "id": 90868,
+              "node_id": "MDQ6VXNlcjkwODY4",
+              "gravatar_id": "",
+              "url": "https://api.github.com/users/jasoncitron",
+              "type": "User",
+              "site_admin": false
+            },
+            "content_type": "application/zip",
+            "state": "uploaded",
+            "size": 1448180,
+            "download_count": 32,
+            "created_at": "2015-05-13T04:17:38Z",
+            "updated_at": "2015-05-13T04:17:42Z"
+          }
+        ],
+        "body": "Includes fixes to uninstaller and updater that makes it more resilient.\n"
+      },
+      {
+        "url": "https://api.github.com/repos/discord/Squirrel.Windows/releases/1235581",
+        "id": 1235581,
+        "author": {
+          "login": "jasoncitron",
+          "id": 90868,
+          "node_id": "MDQ6VXNlcjkwODY4",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/jasoncitron",
+          "type": "User",
+          "site_admin": false
+        },
+        "node_id": "MDc6UmVsZWFzZTEyMzU1ODE=",
+        "tag_name": "0.9.4.1",
+        "target_commitish": "master",
+        "name": "Squirrel 0.9.4.1 for Windows",
+        "draft": false,
+        "prerelease": false,
+        "created_at": "2015-04-29T22:33:49Z",
+        "published_at": "2015-04-29T22:37:58Z",
+        "assets": [
+          {
+            "url": "https://api.github.com/repos/discord/Squirrel.Windows/releases/assets/562162",
+            "id": 562162,
+            "node_id": "MDEyOlJlbGVhc2VBc3NldDU2MjE2Mg==",
+            "name": "Squirrel-0.9.4.1.zip",
+            "label": null,
+            "uploader": {
+              "login": "jasoncitron",
+              "id": 90868,
+              "node_id": "MDQ6VXNlcjkwODY4",
+              "gravatar_id": "",
+              "url": "https://api.github.com/users/jasoncitron",
+              "type": "User",
+              "site_admin": false
+            },
+            "content_type": "application/zip",
+            "state": "uploaded",
+            "size": 1448032,
+            "download_count": 8,
+            "created_at": "2015-05-04T21:48:41Z",
+            "updated_at": "2015-05-04T21:48:47Z"
+          }
+        ],
+        "body": "Adds the --check command line option, so we can just pull the RELEASES file without actually downloading.\n"
+      }
+    ],
     "issues": [
       {
         "url": "https://api.github.com/repos/discord/Squirrel.Windows/issues/2",
