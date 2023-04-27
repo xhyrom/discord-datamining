@@ -148321,9 +148321,9 @@ html .invoiceCancelRow-3s2UuC {
     -webkit-box-direction: normal;
     -ms-flex-direction: row;
     flex-direction: row;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
+    -webkit-box-align: start;
+    -ms-flex-align: start;
+    align-items: start;
     gap: 16px;
     margin-bottom: 16px
 }
@@ -148332,6 +148332,10 @@ html .invoiceCancelRow-3s2UuC {
     width: 44px;
     height: 44px;
     border-radius: 2px
+}
+
+.tierName-1ciTC3 {
+    margin-bottom: 2px
 }
 
 .listingRoleRow-33l09A {
@@ -148575,7 +148579,8 @@ html .invoiceCancelRow-3s2UuC {
 
 .templateCard-2DsDC9 {
     border-radius: 8px;
-    overflow: hidden
+    overflow: hidden;
+    line-height: 0
 }
 
 .templateNameRow-CmwnoB {
@@ -153127,4 +153132,4 @@ html .invoiceCancelRow-dVOR64 {
     flex-direction: column
 }
 
-/*# sourceMappingURL=40532.f83c7cd79ebd74c21a8a.css.map*/
+/*# sourceMappingURL=40532.0ebc9cacc71a2d77245a.css.map*/
