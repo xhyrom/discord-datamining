@@ -132255,17 +132255,19 @@ html .invoiceCancelRow-3s2UuC {
 }
 
 .detailsInnerContainer-2pazjp {
-    display: grid;
-    grid-template-columns: 1fr 248px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
     position: absolute;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    justify-content: center;
+    -ms-flex-wrap: wrap-reverse;
+    flex-wrap: wrap-reverse;
     top: -64px;
     left: 0;
-    width: 100%;
+    width: calc(100% - 32px);
+    margin: 0 16px;
     -ms-flex-line-pack: start;
     align-content: flex-start;
+    gap: 16px;
     padding-bottom: 64px
 }
 
@@ -132276,7 +132278,10 @@ html .invoiceCancelRow-3s2UuC {
 }
 
 .activityDetailsContainer-2xgfpn {
-    margin: 0 16px 16px;
+    -webkit-box-flex: 1;
+    -ms-flex: 1 1 600px;
+    flex: 1 1 600px;
+    min-width: 0;
     border-radius: 12px;
     background-color: var(--background-secondary-alt);
     padding: 24px;
@@ -132342,20 +132347,36 @@ html .invoiceCancelRow-3s2UuC {
 .imagesContainer-2LQ220 {
     padding-top: 24px;
     width: 100%;
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    grid-gap: 16px
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-box-align: start;
+    -ms-flex-align: start;
+    align-items: flex-start;
+    gap: 16px
 }
 
 .activityImage-21gMrZ {
+    -webkit-box-flex: 1;
+    -ms-flex: 1 1 409px;
+    flex: 1 1 409px;
+    min-width: 0;
     aspect-ratio: 16/9;
-    width: 100%;
     border-radius: 4px
 }
 
+.launcherOuterContainer--GY4D- {
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 248px;
+    flex: 0 0 248px
+}
+
 .launcherInnerContainer-1yaOMQ {
+    position: sticky;
+    top: 16px;
     max-width: 248px;
-    margin: 0 16px 16px;
     padding: 16px;
     background-color: var(--background-secondary-alt);
     border-radius: 12px;
@@ -153371,4 +153392,4 @@ html .invoiceCancelRow-dVOR64 {
     flex-direction: column
 }
 
-/*# sourceMappingURL=40532.c2df83fe5b324f863df1.css.map*/
+/*# sourceMappingURL=40532.6e05999bb10e20dfa801.css.map*/
