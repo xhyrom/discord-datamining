@@ -57,7 +57,16 @@
     "triage": false,
     "pull": false
   },
-  "branches": [],
+  "branches": [
+    {
+      "name": "master",
+      "commit": {
+        "sha": "f7c05b638f861f7a01c705c2c83e40c776543611",
+        "url": "https://api.github.com/repos/discord/rules_swift/commits/f7c05b638f861f7a01c705c2c83e40c776543611"
+      },
+      "protected": false
+    }
+  ],
   "last5": {
     "commits": [
       {
