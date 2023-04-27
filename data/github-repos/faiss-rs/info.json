@@ -18,7 +18,7 @@
   "url": "https://api.github.com/repos/discord/faiss-rs",
   "created_at": "2022-03-23T00:09:33Z",
   "updated_at": "2022-04-16T11:37:26Z",
-  "pushed_at": "2022-03-23T19:07:49Z",
+  "pushed_at": "2023-04-27T17:33:24Z",
   "homepage": "",
   "size": 382,
   "stargazers_count": 1,
@@ -57,29 +57,54 @@
     "triage": false,
     "pull": false
   },
-  "branches": [],
+  "branches": [
+    {
+      "name": "ci-gh-actions",
+      "commit": {
+        "sha": "73adb32f44ba962701b3148e1a211474b24ba60a",
+        "url": "https://api.github.com/repos/discord/faiss-rs/commits/73adb32f44ba962701b3148e1a211474b24ba60a"
+      },
+      "protected": false
+    },
+    {
+      "name": "master",
+      "commit": {
+        "sha": "a5a64ec4b69887de162856f9c7fd591d24de49aa",
+        "url": "https://api.github.com/repos/discord/faiss-rs/commits/a5a64ec4b69887de162856f9c7fd591d24de49aa"
+      },
+      "protected": false
+    },
+    {
+      "name": "upstream",
+      "commit": {
+        "sha": "09aed049b79d8f15140caeeda683106257ba89c4",
+        "url": "https://api.github.com/repos/discord/faiss-rs/commits/09aed049b79d8f15140caeeda683106257ba89c4"
+      },
+      "protected": false
+    }
+  ],
   "last5": {
     "commits": [
       {
-        "sha": "09aed049b79d8f15140caeeda683106257ba89c4",
-        "node_id": "C_kwDOHDEVWNoAKDA5YWVkMDQ5Yjc5ZDhmMTUxNDBjYWVlZGE2ODMxMDYyNTdiYTg5YzQ",
+        "sha": "a5a64ec4b69887de162856f9c7fd591d24de49aa",
+        "node_id": "C_kwDOHDEVWNoAKGE1YTY0ZWM0YjY5ODg3ZGUxNjI4NTZmOWM3ZmQ1OTFkMjRkZTQ5YWE",
         "commit": {
           "author": {
             "name": "Jonas Bengtson",
             "email": "jonas.bengtson@discordapp.com",
-            "date": "2022-03-23T19:06:17Z"
+            "date": "2023-04-27T17:33:22Z"
           },
           "committer": {
             "name": "Jonas Bengtson",
             "email": "jonas.bengtson@discordapp.com",
-            "date": "2022-03-23T19:06:17Z"
+            "date": "2023-04-27T17:33:22Z"
           },
-          "message": "change upstream faiss repo",
+          "message": "version bump",
           "tree": {
-            "sha": "5525f69f24d0ba9609dddda9485ed1bba01864f5",
-            "url": "https://api.github.com/repos/discord/faiss-rs/git/trees/5525f69f24d0ba9609dddda9485ed1bba01864f5"
+            "sha": "4fdb80a413a3cc16682976ab0fd790aff20b82df",
+            "url": "https://api.github.com/repos/discord/faiss-rs/git/trees/4fdb80a413a3cc16682976ab0fd790aff20b82df"
           },
-          "url": "https://api.github.com/repos/discord/faiss-rs/git/commits/09aed049b79d8f15140caeeda683106257ba89c4",
+          "url": "https://api.github.com/repos/discord/faiss-rs/git/commits/a5a64ec4b69887de162856f9c7fd591d24de49aa",
           "comment_count": 0,
           "verification": {
             "verified": false,
@@ -88,7 +113,7 @@
             "payload": null
           }
         },
-        "url": "https://api.github.com/repos/discord/faiss-rs/commits/09aed049b79d8f15140caeeda683106257ba89c4",
+        "url": "https://api.github.com/repos/discord/faiss-rs/commits/a5a64ec4b69887de162856f9c7fd591d24de49aa",
         "author": {
           "login": "coral-discord",
           "id": 93292817,
@@ -109,201 +134,31 @@
         },
         "parents": [
           {
-            "sha": "7ca221a37d30b3fbf093ff89e29d5f1ffdf8197c",
-            "url": "https://api.github.com/repos/discord/faiss-rs/commits/7ca221a37d30b3fbf093ff89e29d5f1ffdf8197c"
+            "sha": "e0687f8fc01654d1a568b603d7fcc4486a751c9e",
+            "url": "https://api.github.com/repos/discord/faiss-rs/commits/e0687f8fc01654d1a568b603d7fcc4486a751c9e"
           }
         ]
       },
       {
-        "sha": "7ca221a37d30b3fbf093ff89e29d5f1ffdf8197c",
-        "node_id": "C_kwDOHDEVWNoAKDdjYTIyMWEzN2QzMGIzZmJmMDkzZmY4OWUyOWQ1ZjFmZmRmODE5N2M",
+        "sha": "e0687f8fc01654d1a568b603d7fcc4486a751c9e",
+        "node_id": "C_kwDOHDEVWNoAKGUwNjg3ZjhmYzAxNjU0ZDFhNTY4YjYwM2Q3ZmNjNDQ4NmE3NTFjOWU",
         "commit": {
           "author": {
-            "name": "Eduardo Pinho",
-            "email": "enet4mikeenet@gmail.com",
-            "date": "2021-12-19T13:28:24Z"
+            "name": "Jonas Bengtson",
+            "email": "jonas.bengtson@discordapp.com",
+            "date": "2023-04-27T17:33:06Z"
           },
           "committer": {
-            "name": "GitHub",
-            "email": "noreply@github.com",
-            "date": "2021-12-19T13:28:24Z"
+            "name": "Jonas Bengtson",
+            "email": "jonas.bengtson@discordapp.com",
+            "date": "2023-04-27T17:33:06Z"
           },
-          "message": "Merge pull request #44 from ava57r/index-clone\n\nAdd TryClone trait",
+          "message": "pull in upstream",
           "tree": {
-            "sha": "b2bc4cf5e66989e960de76bf503bd8260e9058dd",
-            "url": "https://api.github.com/repos/discord/faiss-rs/git/trees/b2bc4cf5e66989e960de76bf503bd8260e9058dd"
+            "sha": "be913685932ac112d1df9d6e79a059e082c31fe0",
+            "url": "https://api.github.com/repos/discord/faiss-rs/git/trees/be913685932ac112d1df9d6e79a059e082c31fe0"
           },
-          "url": "https://api.github.com/repos/discord/faiss-rs/git/commits/7ca221a37d30b3fbf093ff89e29d5f1ffdf8197c",
-          "comment_count": 0,
-          "verification": {
-            "verified": true,
-            "reason": "valid",
-            "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsBcBAABCAAQBQJhvzN4CRBK7hj4Ov3rIwAAo0sIAK/J8ucrtP2li62llIO2JSfW\nRI91I1ArD5AFRcn+RdH1hb5UcJuZo6Ee6g6TcjQIzIQc4wLAvOqV0hEhodQZMRRZ\nvyz/67sLccQpnqOG0Mwgqyt68bciOlHO0IP1j2ysyH3kPkfTKLM7/EEYRCang4Gx\nFd6RBc/4suJLZsj9i3p+ASBVKDFg8T46ofE2LAMKldixSEOdUTB7A6yjX7gf/aL7\nMniNfH64odOjCqR1KqgHCaom+HxvHZkWncscjcmYOYAKcmp+u2351usrw5Wn4n6X\nBPq/xh2wuntuWBwmrsZkR1MDCexudZ10W/HUIDpwSjMafyWqOJFoMjN1b/G1NMk=\n=H5Zx\n-----END PGP SIGNATURE-----\n",
-            "payload": "tree b2bc4cf5e66989e960de76bf503bd8260e9058dd\nparent 05d548718d03729fa3c67207e2d51a206dad8519\nparent 36260a55befb291e6cc90ab89328c8001b4cb62f\nauthor Eduardo Pinho <enet4mikeenet@gmail.com> 1639920504 +0000\ncommitter GitHub <noreply@github.com> 1639920504 +0000\n\nMerge pull request #44 from ava57r/index-clone\n\nAdd TryClone trait"
-          }
-        },
-        "url": "https://api.github.com/repos/discord/faiss-rs/commits/7ca221a37d30b3fbf093ff89e29d5f1ffdf8197c",
-        "author": {
-          "login": "Enet4",
-          "id": 4738426,
-          "node_id": "MDQ6VXNlcjQ3Mzg0MjY=",
-          "gravatar_id": "",
-          "url": "https://api.github.com/users/Enet4",
-          "type": "User",
-          "site_admin": false
-        },
-        "committer": {
-          "login": "web-flow",
-          "id": 19864447,
-          "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
-          "gravatar_id": "",
-          "url": "https://api.github.com/users/web-flow",
-          "type": "User",
-          "site_admin": false
-        },
-        "parents": [
-          {
-            "sha": "05d548718d03729fa3c67207e2d51a206dad8519",
-            "url": "https://api.github.com/repos/discord/faiss-rs/commits/05d548718d03729fa3c67207e2d51a206dad8519"
-          },
-          {
-            "sha": "36260a55befb291e6cc90ab89328c8001b4cb62f",
-            "url": "https://api.github.com/repos/discord/faiss-rs/commits/36260a55befb291e6cc90ab89328c8001b4cb62f"
-          }
-        ]
-      },
-      {
-        "sha": "36260a55befb291e6cc90ab89328c8001b4cb62f",
-        "node_id": "C_kwDOHDEVWNoAKDM2MjYwYTU1YmVmYjI5MWU2Y2M5MGFiODkzMjhjODAwMWI0Y2I2MmY",
-        "commit": {
-          "author": {
-            "name": "Alexander Andreev",
-            "email": "andreevlex.as@gmail.com",
-            "date": "2021-12-19T09:44:10Z"
-          },
-          "committer": {
-            "name": "GitHub",
-            "email": "noreply@github.com",
-            "date": "2021-12-19T09:44:10Z"
-          },
-          "message": "Fixed doc strings\n\nCo-authored-by: Eduardo Pinho <enet4mikeenet@gmail.com>",
-          "tree": {
-            "sha": "34d7371b43bae80f5b3b8c5343b52dfa1072da66",
-            "url": "https://api.github.com/repos/discord/faiss-rs/git/trees/34d7371b43bae80f5b3b8c5343b52dfa1072da66"
-          },
-          "url": "https://api.github.com/repos/discord/faiss-rs/git/commits/36260a55befb291e6cc90ab89328c8001b4cb62f",
-          "comment_count": 0,
-          "verification": {
-            "verified": true,
-            "reason": "valid",
-            "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsBcBAABCAAQBQJhvv7qCRBK7hj4Ov3rIwAAoacIAHcPgIorjhxhKI+zAz9g3k9O\nludDfyNqtcdRxDeA3VYHteMU+N9RQb7UX1YaVwkmS41ZP8d1MFUzQpwt+Pc0VBp1\n2J6vV6gYRHOJoPRfA85e40+L7n3d1agjlOqLSduJn+Jw8sKPiNr12VevPTzgYHT3\nxcPGrx9eP7u0dbNz8syYHSFOF2OS4BjzqzKfVGwbjvTJ2kPdQyRju95lknheeE7X\nfydHBfMnjLIzFnO1HmqZzDUgnqZ3EmztQPrNp9nd9LnIsDGsGisCeqlOMcjnVdwy\nFtFGIIgKArkBzwhjguDWi84Do9hd0ckzCoAmCUfHoM3McndCCVjhT9q4yUjGJVI=\n=W7Ke\n-----END PGP SIGNATURE-----\n",
-            "payload": "tree 34d7371b43bae80f5b3b8c5343b52dfa1072da66\nparent aa80bd95e2a7aa7fbe905ad899b005c246c32cc7\nauthor Alexander Andreev <andreevlex.as@gmail.com> 1639907050 +0300\ncommitter GitHub <noreply@github.com> 1639907050 +0300\n\nFixed doc strings\n\nCo-authored-by: Eduardo Pinho <enet4mikeenet@gmail.com>"
-          }
-        },
-        "url": "https://api.github.com/repos/discord/faiss-rs/commits/36260a55befb291e6cc90ab89328c8001b4cb62f",
-        "author": {
-          "login": "ava57r",
-          "id": 20382553,
-          "node_id": "MDQ6VXNlcjIwMzgyNTUz",
-          "gravatar_id": "",
-          "url": "https://api.github.com/users/ava57r",
-          "type": "User",
-          "site_admin": false
-        },
-        "committer": {
-          "login": "web-flow",
-          "id": 19864447,
-          "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
-          "gravatar_id": "",
-          "url": "https://api.github.com/users/web-flow",
-          "type": "User",
-          "site_admin": false
-        },
-        "parents": [
-          {
-            "sha": "aa80bd95e2a7aa7fbe905ad899b005c246c32cc7",
-            "url": "https://api.github.com/repos/discord/faiss-rs/commits/aa80bd95e2a7aa7fbe905ad899b005c246c32cc7"
-          }
-        ]
-      },
-      {
-        "sha": "05d548718d03729fa3c67207e2d51a206dad8519",
-        "node_id": "C_kwDOHDEVWNoAKDA1ZDU0ODcxOGQwMzcyOWZhM2M2NzIwN2UyZDUxYTIwNmRhZDg1MTk",
-        "commit": {
-          "author": {
-            "name": "Eduardo Pinho",
-            "email": "enet4mikeenet@gmail.com",
-            "date": "2021-12-18T10:44:36Z"
-          },
-          "committer": {
-            "name": "GitHub",
-            "email": "noreply@github.com",
-            "date": "2021-12-18T10:44:36Z"
-          },
-          "message": "Merge pull request #39 from ava57r/sq-gpu\n\nImpl to_gpu for new index types",
-          "tree": {
-            "sha": "d6ba27213a5ad34bafe57a7b893951e798621a9f",
-            "url": "https://api.github.com/repos/discord/faiss-rs/git/trees/d6ba27213a5ad34bafe57a7b893951e798621a9f"
-          },
-          "url": "https://api.github.com/repos/discord/faiss-rs/git/commits/05d548718d03729fa3c67207e2d51a206dad8519",
-          "comment_count": 0,
-          "verification": {
-            "verified": true,
-            "reason": "valid",
-            "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsBcBAABCAAQBQJhvbuUCRBK7hj4Ov3rIwAAlDIIAGJgHAXd4r09UT9NyzEEsEdr\n4p+MxGfRWMoAl4ouY/Sgxa69DWv3/REkLYK0tVVcxFqyEGyoDeLwRaUMY6BxJG30\n+BPYvGr2uZcbe9m1eWxcO8FJ+A/4b6plDPsa2ZY1wBkv0J3ehI21fE3QfbObG7Df\ntyjRHceXKejYQSEWIL8B0nggZSQAbxb8wVqhpwxWxJhozOLkjGj21U2MMabfD75g\no6NX+jmtGGWky8MzkPfQO02nKvvZHPtJvcgD2B4/qpFU3Q4/aEgo/mu0+hpC+mBU\nOJWrSmZPGwQGL6cqA5LD0yQuxNck/qr9/huu1MGaW+SLo9nxEe9bYGgOlW5tA84=\n=F6qZ\n-----END PGP SIGNATURE-----\n",
-            "payload": "tree d6ba27213a5ad34bafe57a7b893951e798621a9f\nparent 97753a9e64c9103a7305d32c99c5b5b7c77fecad\nparent 5744129b0e65fe502305472e653940e1333e9db3\nauthor Eduardo Pinho <enet4mikeenet@gmail.com> 1639824276 +0000\ncommitter GitHub <noreply@github.com> 1639824276 +0000\n\nMerge pull request #39 from ava57r/sq-gpu\n\nImpl to_gpu for new index types"
-          }
-        },
-        "url": "https://api.github.com/repos/discord/faiss-rs/commits/05d548718d03729fa3c67207e2d51a206dad8519",
-        "author": {
-          "login": "Enet4",
-          "id": 4738426,
-          "node_id": "MDQ6VXNlcjQ3Mzg0MjY=",
-          "gravatar_id": "",
-          "url": "https://api.github.com/users/Enet4",
-          "type": "User",
-          "site_admin": false
-        },
-        "committer": {
-          "login": "web-flow",
-          "id": 19864447,
-          "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
-          "gravatar_id": "",
-          "url": "https://api.github.com/users/web-flow",
-          "type": "User",
-          "site_admin": false
-        },
-        "parents": [
-          {
-            "sha": "97753a9e64c9103a7305d32c99c5b5b7c77fecad",
-            "url": "https://api.github.com/repos/discord/faiss-rs/commits/97753a9e64c9103a7305d32c99c5b5b7c77fecad"
-          },
-          {
-            "sha": "5744129b0e65fe502305472e653940e1333e9db3",
-            "url": "https://api.github.com/repos/discord/faiss-rs/commits/5744129b0e65fe502305472e653940e1333e9db3"
-          }
-        ]
-      },
-      {
-        "sha": "aa80bd95e2a7aa7fbe905ad899b005c246c32cc7",
-        "node_id": "MDY6Q29tbWl0NDcyOTc4Nzc2OmFhODBiZDk1ZTJhN2FhN2ZiZTkwNWFkODk5YjAwNWMyNDZjMzJjYzc=",
-        "commit": {
-          "author": {
-            "name": "Alexander Andreev",
-            "email": "andreevlex.as@gmail.com",
-            "date": "2021-07-29T09:31:32Z"
-          },
-          "committer": {
-            "name": "Alexander Andreev",
-            "email": "andreevlex.as@gmail.com",
-            "date": "2021-07-29T09:31:32Z"
-          },
-          "message": "Add TryClone trait\n\nDrop macro `impl_native_index_clone`",
-          "tree": {
-            "sha": "904ef8a14fdd5cd3d73cf8a927f03e6c1205d8b7",
-            "url": "https://api.github.com/repos/discord/faiss-rs/git/trees/904ef8a14fdd5cd3d73cf8a927f03e6c1205d8b7"
-          },
-          "url": "https://api.github.com/repos/discord/faiss-rs/git/commits/aa80bd95e2a7aa7fbe905ad899b005c246c32cc7",
+          "url": "https://api.github.com/repos/discord/faiss-rs/git/commits/e0687f8fc01654d1a568b603d7fcc4486a751c9e",
           "comment_count": 0,
           "verification": {
             "verified": false,
@@ -312,7 +167,123 @@
             "payload": null
           }
         },
-        "url": "https://api.github.com/repos/discord/faiss-rs/commits/aa80bd95e2a7aa7fbe905ad899b005c246c32cc7",
+        "url": "https://api.github.com/repos/discord/faiss-rs/commits/e0687f8fc01654d1a568b603d7fcc4486a751c9e",
+        "author": {
+          "login": "coral-discord",
+          "id": 93292817,
+          "node_id": "U_kgDOBY-JEQ",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/coral-discord",
+          "type": "User",
+          "site_admin": false
+        },
+        "committer": {
+          "login": "coral-discord",
+          "id": 93292817,
+          "node_id": "U_kgDOBY-JEQ",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/coral-discord",
+          "type": "User",
+          "site_admin": false
+        },
+        "parents": [
+          {
+            "sha": "09aed049b79d8f15140caeeda683106257ba89c4",
+            "url": "https://api.github.com/repos/discord/faiss-rs/commits/09aed049b79d8f15140caeeda683106257ba89c4"
+          },
+          {
+            "sha": "9ce7106180d462b88e8809d38666b317fa5a1fdb",
+            "url": "https://api.github.com/repos/discord/faiss-rs/commits/9ce7106180d462b88e8809d38666b317fa5a1fdb"
+          }
+        ]
+      },
+      {
+        "sha": "9ce7106180d462b88e8809d38666b317fa5a1fdb",
+        "node_id": "C_kwDOHDEVWNoAKDljZTcxMDYxODBkNDYyYjg4ZTg4MDlkMzg2NjZiMzE3ZmE1YTFmZGI",
+        "commit": {
+          "author": {
+            "name": "Eduardo Pinho",
+            "email": "enet4mikeenet@gmail.com",
+            "date": "2023-02-28T13:44:36Z"
+          },
+          "committer": {
+            "name": "GitHub",
+            "email": "noreply@github.com",
+            "date": "2023-02-28T13:44:36Z"
+          },
+          "message": "Merge pull request #64 from Enet4/patch-20230228\n\nupdate doc strings",
+          "tree": {
+            "sha": "091b91f35b20899e8a09beaafd88e8a3f8b0251b",
+            "url": "https://api.github.com/repos/discord/faiss-rs/git/trees/091b91f35b20899e8a09beaafd88e8a3f8b0251b"
+          },
+          "url": "https://api.github.com/repos/discord/faiss-rs/git/commits/9ce7106180d462b88e8809d38666b317fa5a1fdb",
+          "comment_count": 0,
+          "verification": {
+            "verified": true,
+            "reason": "valid",
+            "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsBcBAABCAAQBQJj/gVECRBK7hj4Ov3rIwAAwNMIAJZBxkydQ4gbFPgaeaNx2bzW\n/vYpkiLtI2erRQyJUovHYHkgfkEpH8+WIWhPjeVI3e4iz2lTLfZgPrYkgMOt6bqw\nr0xi4dMY+gLmpJaLAkehFq9UAp/z+F3iQSbf0+pGVRJ2HbDQF7KFKwb7EPyuLo2w\nvZPuuAbGnQ9gRyp89MP5QkPDkjUSMmhVwPOXbTVbpjBhID2KmG1RSiOJ55cmPmdY\n1tztRcL8pLvR3AUXB9rJlQ3FVOnPEtBkX1dljC8uG97FB9v0uxuc2t/7g0+pnc3A\n8itXcfkdszKv9/grINJmDfAkOAMR+LOFz3wamBnf70VEvYwTMa/U+YQOZMNzsT0=\n=kzho\n-----END PGP SIGNATURE-----\n",
+            "payload": "tree 091b91f35b20899e8a09beaafd88e8a3f8b0251b\nparent 156ec557462cd52c973ca7715262733e4d5dcba5\nparent b8e3abfd0fd60a809a9cb317aa28913b0e8d16d8\nauthor Eduardo Pinho <enet4mikeenet@gmail.com> 1677591876 +0000\ncommitter GitHub <noreply@github.com> 1677591876 +0000\n\nMerge pull request #64 from Enet4/patch-20230228\n\nupdate doc strings"
+          }
+        },
+        "url": "https://api.github.com/repos/discord/faiss-rs/commits/9ce7106180d462b88e8809d38666b317fa5a1fdb",
+        "author": {
+          "login": "Enet4",
+          "id": 4738426,
+          "node_id": "MDQ6VXNlcjQ3Mzg0MjY=",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/Enet4",
+          "type": "User",
+          "site_admin": false
+        },
+        "committer": {
+          "login": "web-flow",
+          "id": 19864447,
+          "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/web-flow",
+          "type": "User",
+          "site_admin": false
+        },
+        "parents": [
+          {
+            "sha": "156ec557462cd52c973ca7715262733e4d5dcba5",
+            "url": "https://api.github.com/repos/discord/faiss-rs/commits/156ec557462cd52c973ca7715262733e4d5dcba5"
+          },
+          {
+            "sha": "b8e3abfd0fd60a809a9cb317aa28913b0e8d16d8",
+            "url": "https://api.github.com/repos/discord/faiss-rs/commits/b8e3abfd0fd60a809a9cb317aa28913b0e8d16d8"
+          }
+        ]
+      },
+      {
+        "sha": "b8e3abfd0fd60a809a9cb317aa28913b0e8d16d8",
+        "node_id": "C_kwDOHDEVWNoAKGI4ZTNhYmZkMGZkNjBhODA5YTljYjMxN2FhMjg5MTNiMGU4ZDE2ZDg",
+        "commit": {
+          "author": {
+            "name": "Alexander A",
+            "email": "andreevlex.as@gmail.com",
+            "date": "2023-02-28T13:00:56Z"
+          },
+          "committer": {
+            "name": "GitHub",
+            "email": "noreply@github.com",
+            "date": "2023-02-28T13:00:56Z"
+          },
+          "message": "update doc strings",
+          "tree": {
+            "sha": "091b91f35b20899e8a09beaafd88e8a3f8b0251b",
+            "url": "https://api.github.com/repos/discord/faiss-rs/git/trees/091b91f35b20899e8a09beaafd88e8a3f8b0251b"
+          },
+          "url": "https://api.github.com/repos/discord/faiss-rs/git/commits/b8e3abfd0fd60a809a9cb317aa28913b0e8d16d8",
+          "comment_count": 0,
+          "verification": {
+            "verified": true,
+            "reason": "valid",
+            "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsBcBAABCAAQBQJj/fsICRBK7hj4Ov3rIwAAQ2sIACh1kuwAUGBESIMIb9gmHXCU\nV0juPp4I/AdBfD9IlUe2TMrJoHmn76ROog3RH2O7x1ywcbuTAUWGIGE6yVBLcbf4\nNbe6oTTluXC9LGJNXaC308ITnEikDjqVtq57WNldsLWVmG3z+cQgqzJGmkFUl1cm\nBcoI7dC7hMTq3qu5p64JdrKli6C9wVkLu2pEuGTQ9EwVIk29gRNpW6hv0HSM3kgx\ndNzvyUkzPlFHVh613M8mgPSJyLzwYHUzKO6tnzeTuCN9/xSaMiRppl0PdozTEFZM\nCh/EBSc+lBZLC+9mjKppoNXvJS+8Lp3iE+gsUMYtfkK5KyK8oaWyiu6u3MoAQ/0=\n=0vGK\n-----END PGP SIGNATURE-----\n",
+            "payload": "tree 091b91f35b20899e8a09beaafd88e8a3f8b0251b\nparent 156ec557462cd52c973ca7715262733e4d5dcba5\nauthor Alexander A <andreevlex.as@gmail.com> 1677589256 +0300\ncommitter GitHub <noreply@github.com> 1677589256 +0300\n\nupdate doc strings"
+          }
+        },
+        "url": "https://api.github.com/repos/discord/faiss-rs/commits/b8e3abfd0fd60a809a9cb317aa28913b0e8d16d8",
         "author": {
           "login": "ava57r",
           "id": 20382553,
@@ -323,18 +294,72 @@
           "site_admin": false
         },
         "committer": {
-          "login": "ava57r",
-          "id": 20382553,
-          "node_id": "MDQ6VXNlcjIwMzgyNTUz",
+          "login": "web-flow",
+          "id": 19864447,
+          "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
           "gravatar_id": "",
-          "url": "https://api.github.com/users/ava57r",
+          "url": "https://api.github.com/users/web-flow",
           "type": "User",
           "site_admin": false
         },
         "parents": [
           {
-            "sha": "97753a9e64c9103a7305d32c99c5b5b7c77fecad",
-            "url": "https://api.github.com/repos/discord/faiss-rs/commits/97753a9e64c9103a7305d32c99c5b5b7c77fecad"
+            "sha": "156ec557462cd52c973ca7715262733e4d5dcba5",
+            "url": "https://api.github.com/repos/discord/faiss-rs/commits/156ec557462cd52c973ca7715262733e4d5dcba5"
+          }
+        ]
+      },
+      {
+        "sha": "156ec557462cd52c973ca7715262733e4d5dcba5",
+        "node_id": "C_kwDOHDEVWNoAKDE1NmVjNTU3NDYyY2Q1MmM5NzNjYTc3MTUyNjI3MzNlNGQ1ZGNiYTU",
+        "commit": {
+          "author": {
+            "name": "Eduardo Pinho",
+            "email": "enet4mikeenet@gmail.com",
+            "date": "2023-01-29T13:29:40Z"
+          },
+          "committer": {
+            "name": "Eduardo Pinho",
+            "email": "enet4mikeenet@gmail.com",
+            "date": "2023-01-29T13:29:40Z"
+          },
+          "message": "(cargo-release) start next development iteration 0.12.1-alpha.0",
+          "tree": {
+            "sha": "f7fdfe24d26a6daff17ad1be721d31dd3a7453bc",
+            "url": "https://api.github.com/repos/discord/faiss-rs/git/trees/f7fdfe24d26a6daff17ad1be721d31dd3a7453bc"
+          },
+          "url": "https://api.github.com/repos/discord/faiss-rs/git/commits/156ec557462cd52c973ca7715262733e4d5dcba5",
+          "comment_count": 0,
+          "verification": {
+            "verified": false,
+            "reason": "unsigned",
+            "signature": null,
+            "payload": null
+          }
+        },
+        "url": "https://api.github.com/repos/discord/faiss-rs/commits/156ec557462cd52c973ca7715262733e4d5dcba5",
+        "author": {
+          "login": "Enet4",
+          "id": 4738426,
+          "node_id": "MDQ6VXNlcjQ3Mzg0MjY=",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/Enet4",
+          "type": "User",
+          "site_admin": false
+        },
+        "committer": {
+          "login": "Enet4",
+          "id": 4738426,
+          "node_id": "MDQ6VXNlcjQ3Mzg0MjY=",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/Enet4",
+          "type": "User",
+          "site_admin": false
+        },
+        "parents": [
+          {
+            "sha": "c981cd15534e98320c6e29bbac7938cac78389c4",
+            "url": "https://api.github.com/repos/discord/faiss-rs/commits/c981cd15534e98320c6e29bbac7938cac78389c4"
           }
         ]
       }

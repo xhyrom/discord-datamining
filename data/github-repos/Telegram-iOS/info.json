@@ -51,7 +51,40 @@
     "triage": false,
     "pull": false
   },
-  "branches": [],
+  "branches": [
+    {
+      "name": "beta",
+      "commit": {
+        "sha": "ef2b2b59a47392a3efbc57e82f5994b46bc74be6",
+        "url": "https://api.github.com/repos/discord/Telegram-iOS/commits/ef2b2b59a47392a3efbc57e82f5994b46bc74be6"
+      },
+      "protected": false
+    },
+    {
+      "name": "discord_test",
+      "commit": {
+        "sha": "d1f65f0c4d0a0773c23deda6d98fee0d9178303c",
+        "url": "https://api.github.com/repos/discord/Telegram-iOS/commits/d1f65f0c4d0a0773c23deda6d98fee0d9178303c"
+      },
+      "protected": false
+    },
+    {
+      "name": "discord",
+      "commit": {
+        "sha": "978a14f118fcd48273090841b280574af7cdc890",
+        "url": "https://api.github.com/repos/discord/Telegram-iOS/commits/978a14f118fcd48273090841b280574af7cdc890"
+      },
+      "protected": false
+    },
+    {
+      "name": "master",
+      "commit": {
+        "sha": "adc95cec3df0cc75d8aac3e238d1ab85d572c2de",
+        "url": "https://api.github.com/repos/discord/Telegram-iOS/commits/adc95cec3df0cc75d8aac3e238d1ab85d572c2de"
+      },
+      "protected": false
+    }
+  ],
   "last5": {
     "commits": [
       {

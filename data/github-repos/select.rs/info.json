@@ -51,7 +51,32 @@
     "triage": false,
     "pull": false
   },
-  "branches": [],
+  "branches": [
+    {
+      "name": "master",
+      "commit": {
+        "sha": "4bf091499f9de522b048eff64f132a33e37bee35",
+        "url": "https://api.github.com/repos/discord/select.rs/commits/4bf091499f9de522b048eff64f132a33e37bee35"
+      },
+      "protected": false
+    },
+    {
+      "name": "speculate-0.1.0",
+      "commit": {
+        "sha": "3cef10fcb411bf522e00a2edf687b24b5eaba93c",
+        "url": "https://api.github.com/repos/discord/select.rs/commits/3cef10fcb411bf522e00a2edf687b24b5eaba93c"
+      },
+      "protected": false
+    },
+    {
+      "name": "tmp",
+      "commit": {
+        "sha": "97ddc651978390fde8c0c21a678373702d9fbfd8",
+        "url": "https://api.github.com/repos/discord/select.rs/commits/97ddc651978390fde8c0c21a678373702d9fbfd8"
+      },
+      "protected": false
+    }
+  ],
   "last5": {
     "commits": [
       {
