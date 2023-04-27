@@ -21837,6 +21837,10 @@ html.disable-forced-colors * {
     --creator-revenue-start-hsl: 160 calc(var(--saturation-factor, 1)*81.3%) 35.7%;
     --crunchyroll: hsl(var(--crunchyroll-hsl)/1);
     --crunchyroll-hsl: 29 calc(var(--saturation-factor, 1)*93%) 55.5%;
+    --discord-8th-bday-pink: hsl(var(--discord-8th-bday-pink-hsl)/1);
+    --discord-8th-bday-pink-hsl: 60 calc(var(--saturation-factor, 1)*100%) 50%;
+    --discord-8th-bday-yellow: hsl(var(--discord-8th-bday-yellow-hsl)/1);
+    --discord-8th-bday-yellow-hsl: 316 calc(var(--saturation-factor, 1)*100%) 66.1%;
     --ebay: hsl(var(--ebay-hsl)/1);
     --ebay-hsl: 211 calc(var(--saturation-factor, 1)*100%) 41.2%;
     --epic-games: hsl(var(--epic-games-hsl)/1);
@@ -75530,6 +75534,36 @@ strong {
     color: inherit
 }
 
+.container-2bFGt3 {
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    width: 100%
+}
+
+.container-2bFGt3,
+.explainerContainer-3ookP7 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center
+}
+
+.explainerContainer-3ookP7 {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    gap: 24px;
+    padding: 32px;
+    margin: 32px;
+    border-radius: 8px;
+    max-width: 500px;
+    background-color: var(--background-primary)
+}
+
 .prompt-R8SyL4 {
     width: 800px;
     height: 640px;
@@ -98110,6 +98144,13 @@ html .tabBadge-h4HGed {
 
 .attachButton-1bbKvV:hover .attachButtonPlus-1r3hPD {
     fill: var(--interactive-hover)
+}
+
+.activitiesBirthdayIcon-1Ou-De {
+    color: var(--discord-8th-bday-yellow);
+    background-color: var(--discord-8th-bday-pink);
+    border-radius: 8px;
+    padding: 2px
 }
 
 .enable-forced-colors .searchBar-3TnChZ {
@@ -131802,13 +131843,46 @@ html .invoiceCancelRow-3s2UuC {
     margin-bottom: 16px
 }
 
-.titleWumpusRocket-inoBZT {
-    width: 68px;
-    height: auto
+.titleIcon-aV15s- {
+    background-color: var(--discord-8th-bday-pink);
+    color: var(--discord-8th-bday-yellow);
+    border-radius: 8px;
+    margin-right: 8px;
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 auto;
+    flex: 0 0 auto
+}
+
+.heroWrapper-20MPew {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap-reverse;
+    flex-wrap: wrap-reverse;
+    gap: 16px
 }
 
 .hero-1Du2Gn {
-    width: 100%
+    -ms-flex: 1 1 768px;
+    flex: 1 1 768px;
+    -ms-flex-item-align: start;
+    align-self: flex-start
+}
+
+.hero-1Du2Gn,
+.heroInfo-3NFzSx {
+    -webkit-box-flex: 1;
+    min-width: 0
+}
+
+.heroInfo-3NFzSx {
+    -ms-flex: 1 1 256px;
+    flex: 1 1 256px
+}
+
+.heroDescription-2hfmwI {
+    color: var(--header-secondary)
 }
 
 .whatsNew-2Pwedg {
@@ -131830,7 +131904,7 @@ html .invoiceCancelRow-3s2UuC {
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
     width: 464px;
-    background-color: var(--background-primary);
+    background-color: var(--background-secondary);
     border-radius: 16px;
     padding: 16px;
     position: relative;
@@ -131920,7 +131994,7 @@ html .invoiceCancelRow-3s2UuC {
 
 .activityCardDetails-F6IN_s {
     padding: 8px;
-    min-height: 108px;
+    min-height: 72px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -131971,7 +132045,7 @@ html .invoiceCancelRow-3s2UuC {
 .celebrateCardContainer-MAdnBa {
     padding: 24px;
     border-radius: 8px;
-    background-color: var(--background-secondary-alt);
+    background-color: var(--background-secondary);
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -153154,4 +153228,4 @@ html .invoiceCancelRow-dVOR64 {
     flex-direction: column
 }
 
-/*# sourceMappingURL=40532.024e5ae48b539292219e.css.map*/
+/*# sourceMappingURL=40532.990c1c5863a7f9353f70.css.map*/
