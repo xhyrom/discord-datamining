@@ -110568,7 +110568,8 @@ html .tabBadge-h4HGed {
     top: 0
 }
 
-.container-3cFp_V:hover .dragContainer-1aSF4W {
+.container-3cFp_V:hover .dragContainer-1aSF4W,
+.containerFocused-1XbEvQ .dragContainer-1aSF4W {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex
@@ -110724,13 +110725,34 @@ html .tabBadge-h4HGed {
 .removeButton-PAhi8c {
     position: absolute;
     top: 12px;
-    right: 12px;
+    right: 36px;
     color: var(--interactive-normal)
+}
+
+.removeButton-PAhi8c .closeIcon-1KDbEy {
+    visibility: hidden
 }
 
 .removeButton-PAhi8c:hover {
     cursor: pointer;
     color: var(--interactive-active)
+}
+
+.closeIcon-1KDbEy {
+    visibility: hidden
+}
+
+.containerFocused-1XbEvQ .closeIcon-1KDbEy,
+.removeButton-PAhi8c:hover .closeIcon-1KDbEy {
+    visibility: visible
+}
+
+.collapseButton-wV6wm1 {
+    color: var(--interactive-normal);
+    cursor: pointer;
+    position: absolute;
+    top: 12px;
+    right: 12px
 }
 
 .header-32Eo_z {
@@ -153132,4 +153154,4 @@ html .invoiceCancelRow-dVOR64 {
     flex-direction: column
 }
 
-/*# sourceMappingURL=40532.0ebc9cacc71a2d77245a.css.map*/
+/*# sourceMappingURL=40532.024e5ae48b539292219e.css.map*/
