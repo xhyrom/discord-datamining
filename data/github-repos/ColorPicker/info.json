@@ -568,6 +568,432 @@
         "state_reason": null
       }
     ],
-    "pullRequests": []
+    "pullRequests": [
+      {
+        "url": "https://api.github.com/repos/discord/ColorPicker/pulls/2",
+        "id": 691047090,
+        "node_id": "MDExOlB1bGxSZXF1ZXN0NjkxMDQ3MDkw",
+        "number": 2,
+        "state": "closed",
+        "locked": false,
+        "title": "remove color panel border, and remove extra spacing",
+        "user": {
+          "login": "donaldchen",
+          "id": 3821698,
+          "node_id": "MDQ6VXNlcjM4MjE2OTg=",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/donaldchen",
+          "type": "User",
+          "site_admin": false
+        },
+        "body": "**Figma**: https://www.figma.com/file/lmWjzOAMnEhQS6iVqDmlGV/%E2%9C%85-Custom-Profiles-All-Platforms?node-id=2260%3A105463\r\n\r\nTo match our designs in Figma, this PR is\r\n1) removing the border around the color panel (the color circle)\r\n2) removing 16dp of extra padding between the color-hex input and the \"select\" button. There's already a 16dp margin above the \"select\" button, so if we were to keep this padding, it'd make the total spacing 32dp which doesn't match our designs.\r\n\r\nI confirmed with product design that we want to remove the color panel border for the role color picker as well.\r\n\r\n| Before | After |\r\n| -- | -- |\r\n| ![before](https://user-images.githubusercontent.com/3821698/125860170-174677ce-a035-4f4d-9429-b2358b81b977.png) | ![after](https://user-images.githubusercontent.com/3821698/125860214-db373f88-9b22-41cf-b0d4-ec4ce4db573f.png) |\r\n\r\n",
+        "created_at": "2021-07-15T21:28:38Z",
+        "updated_at": "2021-07-16T17:00:23Z",
+        "closed_at": "2021-07-16T17:00:23Z",
+        "merged_at": "2021-07-16T17:00:23Z",
+        "merge_commit_sha": "05f363dcc5608b57c49da74c0d1ba66db06498f6",
+        "assignee": null,
+        "assignees": [],
+        "requested_reviewers": [
+          {
+            "login": "mrkcsc",
+            "id": 658964,
+            "node_id": "MDQ6VXNlcjY1ODk2NA==",
+            "gravatar_id": "",
+            "url": "https://api.github.com/users/mrkcsc",
+            "type": "User",
+            "site_admin": false
+          },
+          {
+            "login": "nealmanaktola",
+            "id": 1707258,
+            "node_id": "MDQ6VXNlcjE3MDcyNTg=",
+            "gravatar_id": "",
+            "url": "https://api.github.com/users/nealmanaktola",
+            "type": "User",
+            "site_admin": false
+          }
+        ],
+        "requested_teams": [],
+        "labels": [],
+        "milestone": null,
+        "draft": false,
+        "head": {
+          "label": "discord:update-color-border-and-spacing",
+          "ref": "update-color-border-and-spacing",
+          "sha": "29e19f9102718bacee12da9dd5deb16f555b3c78",
+          "user": {
+            "login": "discord",
+            "id": 1965106,
+            "node_id": "MDEyOk9yZ2FuaXphdGlvbjE5NjUxMDY=",
+            "gravatar_id": "",
+            "url": "https://api.github.com/users/discord",
+            "type": "Organization",
+            "site_admin": false
+          },
+          "repo": {
+            "id": 265131676,
+            "node_id": "MDEwOlJlcG9zaXRvcnkyNjUxMzE2NzY=",
+            "name": "ColorPicker",
+            "full_name": "discord/ColorPicker",
+            "private": false,
+            "owner": {
+              "login": "discord",
+              "id": 1965106,
+              "node_id": "MDEyOk9yZ2FuaXphdGlvbjE5NjUxMDY=",
+              "gravatar_id": "",
+              "url": "https://api.github.com/users/discord",
+              "type": "Organization",
+              "site_admin": false
+            },
+            "description": "A highly customizable color picker for Android",
+            "fork": true,
+            "url": "https://api.github.com/repos/discord/ColorPicker",
+            "created_at": "2020-05-19T03:22:18Z",
+            "updated_at": "2022-04-01T14:15:10Z",
+            "pushed_at": "2021-07-16T17:02:24Z",
+            "homepage": "",
+            "size": 3337,
+            "stargazers_count": 8,
+            "watchers_count": 8,
+            "language": "Java",
+            "has_issues": false,
+            "has_projects": true,
+            "has_downloads": true,
+            "has_wiki": true,
+            "has_pages": false,
+            "has_discussions": false,
+            "forks_count": 3,
+            "archived": false,
+            "disabled": false,
+            "open_issues_count": 0,
+            "license": {
+              "key": "apache-2.0",
+              "name": "Apache License 2.0",
+              "spdx_id": "Apache-2.0",
+              "url": "https://api.github.com/licenses/apache-2.0",
+              "node_id": "MDc6TGljZW5zZTI="
+            },
+            "allow_forking": true,
+            "is_template": false,
+            "web_commit_signoff_required": false,
+            "topics": [],
+            "visibility": "public",
+            "forks": 3,
+            "open_issues": 0,
+            "watchers": 8,
+            "default_branch": "master"
+          }
+        },
+        "base": {
+          "label": "discord:master",
+          "ref": "master",
+          "sha": "c6a1977994bd816b09fb35dd024731fd59734c68",
+          "user": {
+            "login": "discord",
+            "id": 1965106,
+            "node_id": "MDEyOk9yZ2FuaXphdGlvbjE5NjUxMDY=",
+            "gravatar_id": "",
+            "url": "https://api.github.com/users/discord",
+            "type": "Organization",
+            "site_admin": false
+          },
+          "repo": {
+            "id": 265131676,
+            "node_id": "MDEwOlJlcG9zaXRvcnkyNjUxMzE2NzY=",
+            "name": "ColorPicker",
+            "full_name": "discord/ColorPicker",
+            "private": false,
+            "owner": {
+              "login": "discord",
+              "id": 1965106,
+              "node_id": "MDEyOk9yZ2FuaXphdGlvbjE5NjUxMDY=",
+              "gravatar_id": "",
+              "url": "https://api.github.com/users/discord",
+              "type": "Organization",
+              "site_admin": false
+            },
+            "description": "A highly customizable color picker for Android",
+            "fork": true,
+            "url": "https://api.github.com/repos/discord/ColorPicker",
+            "created_at": "2020-05-19T03:22:18Z",
+            "updated_at": "2022-04-01T14:15:10Z",
+            "pushed_at": "2021-07-16T17:02:24Z",
+            "homepage": "",
+            "size": 3337,
+            "stargazers_count": 8,
+            "watchers_count": 8,
+            "language": "Java",
+            "has_issues": false,
+            "has_projects": true,
+            "has_downloads": true,
+            "has_wiki": true,
+            "has_pages": false,
+            "has_discussions": false,
+            "forks_count": 3,
+            "archived": false,
+            "disabled": false,
+            "open_issues_count": 0,
+            "license": {
+              "key": "apache-2.0",
+              "name": "Apache License 2.0",
+              "spdx_id": "Apache-2.0",
+              "url": "https://api.github.com/licenses/apache-2.0",
+              "node_id": "MDc6TGljZW5zZTI="
+            },
+            "allow_forking": true,
+            "is_template": false,
+            "web_commit_signoff_required": false,
+            "topics": [],
+            "visibility": "public",
+            "forks": 3,
+            "open_issues": 0,
+            "watchers": 8,
+            "default_branch": "master"
+          }
+        },
+        "_links": {
+          "self": {
+            "href": "https://api.github.com/repos/discord/ColorPicker/pulls/2"
+          },
+          "html": {
+            "href": "https://github.com/discord/ColorPicker/pull/2"
+          },
+          "issue": {
+            "href": "https://api.github.com/repos/discord/ColorPicker/issues/2"
+          },
+          "comments": {
+            "href": "https://api.github.com/repos/discord/ColorPicker/issues/2/comments"
+          },
+          "review_comments": {
+            "href": "https://api.github.com/repos/discord/ColorPicker/pulls/2/comments"
+          },
+          "review_comment": {
+            "href": "https://api.github.com/repos/discord/ColorPicker/pulls/comments{/number}"
+          },
+          "commits": {
+            "href": "https://api.github.com/repos/discord/ColorPicker/pulls/2/commits"
+          },
+          "statuses": {
+            "href": "https://api.github.com/repos/discord/ColorPicker/statuses/29e19f9102718bacee12da9dd5deb16f555b3c78"
+          }
+        },
+        "author_association": "NONE",
+        "auto_merge": null,
+        "active_lock_reason": null
+      },
+      {
+        "url": "https://api.github.com/repos/discord/ColorPicker/pulls/1",
+        "id": 421628803,
+        "node_id": "MDExOlB1bGxSZXF1ZXN0NDIxNjI4ODAz",
+        "number": 1,
+        "state": "closed",
+        "locked": false,
+        "title": "Update UI, provide more customizable colors and fonts",
+        "user": {
+          "login": "jkcailteux",
+          "id": 2236167,
+          "node_id": "MDQ6VXNlcjIyMzYxNjc=",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/jkcailteux",
+          "type": "User",
+          "site_admin": false
+        },
+        "body": "",
+        "created_at": "2020-05-21T22:59:00Z",
+        "updated_at": "2020-05-21T22:59:13Z",
+        "closed_at": "2020-05-21T22:59:12Z",
+        "merged_at": "2020-05-21T22:59:12Z",
+        "merge_commit_sha": "3cc3893062c18e849c11a392a95b21824cef22e2",
+        "assignee": {
+          "login": "jkcailteux",
+          "id": 2236167,
+          "node_id": "MDQ6VXNlcjIyMzYxNjc=",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/jkcailteux",
+          "type": "User",
+          "site_admin": false
+        },
+        "assignees": [
+          {
+            "login": "jkcailteux",
+            "id": 2236167,
+            "node_id": "MDQ6VXNlcjIyMzYxNjc=",
+            "gravatar_id": "",
+            "url": "https://api.github.com/users/jkcailteux",
+            "type": "User",
+            "site_admin": false
+          }
+        ],
+        "requested_reviewers": [],
+        "requested_teams": [],
+        "labels": [],
+        "milestone": null,
+        "draft": false,
+        "head": {
+          "label": "discord:develop",
+          "ref": "develop",
+          "sha": "24c6732968b130d5ac004e094edcc4d9460cc1bd",
+          "user": {
+            "login": "discord",
+            "id": 1965106,
+            "node_id": "MDEyOk9yZ2FuaXphdGlvbjE5NjUxMDY=",
+            "gravatar_id": "",
+            "url": "https://api.github.com/users/discord",
+            "type": "Organization",
+            "site_admin": false
+          },
+          "repo": {
+            "id": 265131676,
+            "node_id": "MDEwOlJlcG9zaXRvcnkyNjUxMzE2NzY=",
+            "name": "ColorPicker",
+            "full_name": "discord/ColorPicker",
+            "private": false,
+            "owner": {
+              "login": "discord",
+              "id": 1965106,
+              "node_id": "MDEyOk9yZ2FuaXphdGlvbjE5NjUxMDY=",
+              "gravatar_id": "",
+              "url": "https://api.github.com/users/discord",
+              "type": "Organization",
+              "site_admin": false
+            },
+            "description": "A highly customizable color picker for Android",
+            "fork": true,
+            "url": "https://api.github.com/repos/discord/ColorPicker",
+            "created_at": "2020-05-19T03:22:18Z",
+            "updated_at": "2022-04-01T14:15:10Z",
+            "pushed_at": "2021-07-16T17:02:24Z",
+            "homepage": "",
+            "size": 3337,
+            "stargazers_count": 8,
+            "watchers_count": 8,
+            "language": "Java",
+            "has_issues": false,
+            "has_projects": true,
+            "has_downloads": true,
+            "has_wiki": true,
+            "has_pages": false,
+            "has_discussions": false,
+            "forks_count": 3,
+            "archived": false,
+            "disabled": false,
+            "open_issues_count": 0,
+            "license": {
+              "key": "apache-2.0",
+              "name": "Apache License 2.0",
+              "spdx_id": "Apache-2.0",
+              "url": "https://api.github.com/licenses/apache-2.0",
+              "node_id": "MDc6TGljZW5zZTI="
+            },
+            "allow_forking": true,
+            "is_template": false,
+            "web_commit_signoff_required": false,
+            "topics": [],
+            "visibility": "public",
+            "forks": 3,
+            "open_issues": 0,
+            "watchers": 8,
+            "default_branch": "master"
+          }
+        },
+        "base": {
+          "label": "discord:master",
+          "ref": "master",
+          "sha": "ab06208ddcfbd7ab1b1fde140f10b3ca06d8175a",
+          "user": {
+            "login": "discord",
+            "id": 1965106,
+            "node_id": "MDEyOk9yZ2FuaXphdGlvbjE5NjUxMDY=",
+            "gravatar_id": "",
+            "url": "https://api.github.com/users/discord",
+            "type": "Organization",
+            "site_admin": false
+          },
+          "repo": {
+            "id": 265131676,
+            "node_id": "MDEwOlJlcG9zaXRvcnkyNjUxMzE2NzY=",
+            "name": "ColorPicker",
+            "full_name": "discord/ColorPicker",
+            "private": false,
+            "owner": {
+              "login": "discord",
+              "id": 1965106,
+              "node_id": "MDEyOk9yZ2FuaXphdGlvbjE5NjUxMDY=",
+              "gravatar_id": "",
+              "url": "https://api.github.com/users/discord",
+              "type": "Organization",
+              "site_admin": false
+            },
+            "description": "A highly customizable color picker for Android",
+            "fork": true,
+            "url": "https://api.github.com/repos/discord/ColorPicker",
+            "created_at": "2020-05-19T03:22:18Z",
+            "updated_at": "2022-04-01T14:15:10Z",
+            "pushed_at": "2021-07-16T17:02:24Z",
+            "homepage": "",
+            "size": 3337,
+            "stargazers_count": 8,
+            "watchers_count": 8,
+            "language": "Java",
+            "has_issues": false,
+            "has_projects": true,
+            "has_downloads": true,
+            "has_wiki": true,
+            "has_pages": false,
+            "has_discussions": false,
+            "forks_count": 3,
+            "archived": false,
+            "disabled": false,
+            "open_issues_count": 0,
+            "license": {
+              "key": "apache-2.0",
+              "name": "Apache License 2.0",
+              "spdx_id": "Apache-2.0",
+              "url": "https://api.github.com/licenses/apache-2.0",
+              "node_id": "MDc6TGljZW5zZTI="
+            },
+            "allow_forking": true,
+            "is_template": false,
+            "web_commit_signoff_required": false,
+            "topics": [],
+            "visibility": "public",
+            "forks": 3,
+            "open_issues": 0,
+            "watchers": 8,
+            "default_branch": "master"
+          }
+        },
+        "_links": {
+          "self": {
+            "href": "https://api.github.com/repos/discord/ColorPicker/pulls/1"
+          },
+          "html": {
+            "href": "https://github.com/discord/ColorPicker/pull/1"
+          },
+          "issue": {
+            "href": "https://api.github.com/repos/discord/ColorPicker/issues/1"
+          },
+          "comments": {
+            "href": "https://api.github.com/repos/discord/ColorPicker/issues/1/comments"
+          },
+          "review_comments": {
+            "href": "https://api.github.com/repos/discord/ColorPicker/pulls/1/comments"
+          },
+          "review_comment": {
+            "href": "https://api.github.com/repos/discord/ColorPicker/pulls/comments{/number}"
+          },
+          "commits": {
+            "href": "https://api.github.com/repos/discord/ColorPicker/pulls/1/commits"
+          },
+          "statuses": {
+            "href": "https://api.github.com/repos/discord/ColorPicker/statuses/24c6732968b130d5ac004e094edcc4d9460cc1bd"
+          }
+        },
+        "author_association": "COLLABORATOR",
+        "auto_merge": null,
+        "active_lock_reason": null
+      }
+    ]
   }
 }
