@@ -124185,10 +124185,27 @@ input::-webkit-outer-spin-button {
     margin-bottom: 8px
 }
 
+.activityName-16mAQo {
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between
+}
+
+.activityName-16mAQo,
 .activityTag-3C3YK5 {
     display: -webkit-box;
     display: -ms-flexbox;
-    display: flex;
+    display: flex
+}
+
+.activityTag-3C3YK5 {
     padding: 2px 4px;
     background-color: var(--background-tertiary);
     border-radius: 4px;
@@ -124203,6 +124220,11 @@ input::-webkit-outer-spin-button {
     margin-right: 2px;
     -ms-flex-item-align: center;
     align-self: center
+}
+
+.staffBadge-upGCGA {
+    width: 20px;
+    height: 20px
 }
 
 .scrollContainer-1C3AzW {
@@ -153228,4 +153250,4 @@ html .invoiceCancelRow-dVOR64 {
     flex-direction: column
 }
 
-/*# sourceMappingURL=40532.990c1c5863a7f9353f70.css.map*/
+/*# sourceMappingURL=40532.8b75a74f06028b535666.css.map*/
