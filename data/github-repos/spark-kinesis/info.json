@@ -57,7 +57,16 @@
     "triage": false,
     "pull": false
   },
-  "branches": [],
+  "branches": [
+    {
+      "name": "master",
+      "commit": {
+        "sha": "868638b1086edf3abc08ed46f7b53c210743d77f",
+        "url": "https://api.github.com/repos/discord/spark-kinesis/commits/868638b1086edf3abc08ed46f7b53c210743d77f"
+      },
+      "protected": false
+    }
+  ],
   "last5": {
     "commits": [
       {

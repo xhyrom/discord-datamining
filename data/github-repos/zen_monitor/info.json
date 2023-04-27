@@ -336,7 +336,977 @@
       }
     ],
     "releases": [],
-    "issues": [],
-    "pullRequests": []
+    "issues": [
+      {
+        "url": "https://api.github.com/repos/discord/zen_monitor/issues/4",
+        "id": 1499053668,
+        "node_id": "PR_kwDOCZwG9M5FlD2N",
+        "number": 4,
+        "title": "1.2, Try to fix CI",
+        "user": {
+          "login": "ypisetsky",
+          "id": 287854,
+          "node_id": "MDQ6VXNlcjI4Nzg1NA==",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/ypisetsky",
+          "type": "User",
+          "site_admin": false
+        },
+        "labels": [],
+        "state": "closed",
+        "locked": false,
+        "assignee": null,
+        "assignees": [],
+        "milestone": null,
+        "comments": 0,
+        "created_at": "2022-12-15T20:38:09Z",
+        "updated_at": "2022-12-15T22:51:50Z",
+        "closed_at": "2022-12-15T22:51:50Z",
+        "author_association": "CONTRIBUTOR",
+        "active_lock_reason": null,
+        "draft": false,
+        "pull_request": {
+          "url": "https://api.github.com/repos/discord/zen_monitor/pulls/4",
+          "merged_at": "2022-12-15T22:51:50Z"
+        },
+        "body": null,
+        "reactions": {
+          "url": "https://api.github.com/repos/discord/zen_monitor/issues/4/reactions",
+          "total_count": 0,
+          "+1": 0,
+          "-1": 0,
+          "laugh": 0,
+          "hooray": 0,
+          "confused": 0,
+          "heart": 0,
+          "rocket": 0,
+          "eyes": 0
+        },
+        "performed_via_github_app": null,
+        "state_reason": null
+      },
+      {
+        "url": "https://api.github.com/repos/discord/zen_monitor/issues/3",
+        "id": 928737488,
+        "node_id": "MDExOlB1bGxSZXF1ZXN0Njc2Njk5Mzg4",
+        "number": 3,
+        "title": "off_heap message queue for Local.Dispatcher",
+        "user": {
+          "login": "ypisetsky",
+          "id": 287854,
+          "node_id": "MDQ6VXNlcjI4Nzg1NA==",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/ypisetsky",
+          "type": "User",
+          "site_admin": false
+        },
+        "labels": [],
+        "state": "closed",
+        "locked": false,
+        "assignee": null,
+        "assignees": [],
+        "milestone": null,
+        "comments": 0,
+        "created_at": "2021-06-24T00:16:35Z",
+        "updated_at": "2021-06-29T17:50:42Z",
+        "closed_at": "2021-06-29T17:50:42Z",
+        "author_association": "CONTRIBUTOR",
+        "active_lock_reason": null,
+        "draft": false,
+        "pull_request": {
+          "url": "https://api.github.com/repos/discord/zen_monitor/pulls/3",
+          "merged_at": "2021-06-29T17:50:42Z"
+        },
+        "body": "This matches the behavior of ZenMonitor.Local and ZenMonitor.Proxy, which are the other two singletons that all of the down notices / certificates pass through.",
+        "reactions": {
+          "url": "https://api.github.com/repos/discord/zen_monitor/issues/3/reactions",
+          "total_count": 0,
+          "+1": 0,
+          "-1": 0,
+          "laugh": 0,
+          "hooray": 0,
+          "confused": 0,
+          "heart": 0,
+          "rocket": 0,
+          "eyes": 0
+        },
+        "performed_via_github_app": null,
+        "state_reason": null
+      },
+      {
+        "url": "https://api.github.com/repos/discord/zen_monitor/issues/2",
+        "id": 779888915,
+        "node_id": "MDExOlB1bGxSZXF1ZXN0NTQ5ODIzNjk1",
+        "number": 2,
+        "title": "Remove race conditions from the black box tests",
+        "user": {
+          "login": "ihumanable",
+          "id": 122636,
+          "node_id": "MDQ6VXNlcjEyMjYzNg==",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/ihumanable",
+          "type": "User",
+          "site_admin": false
+        },
+        "labels": [],
+        "state": "closed",
+        "locked": false,
+        "assignee": null,
+        "assignees": [],
+        "milestone": null,
+        "comments": 0,
+        "created_at": "2021-01-06T02:21:59Z",
+        "updated_at": "2021-01-22T22:51:42Z",
+        "closed_at": "2021-01-22T22:51:42Z",
+        "author_association": "CONTRIBUTOR",
+        "active_lock_reason": null,
+        "draft": false,
+        "pull_request": {
+          "url": "https://api.github.com/repos/discord/zen_monitor/pulls/2",
+          "merged_at": "2021-01-22T22:51:42Z"
+        },
+        "body": "GH Actions CI has revealed the reliance on pretty flakey sleeps and race conditions in the black box tests, this PR reduces this as much as possible.",
+        "reactions": {
+          "url": "https://api.github.com/repos/discord/zen_monitor/issues/2/reactions",
+          "total_count": 0,
+          "+1": 0,
+          "-1": 0,
+          "laugh": 0,
+          "hooray": 0,
+          "confused": 0,
+          "heart": 0,
+          "rocket": 0,
+          "eyes": 0
+        },
+        "performed_via_github_app": null,
+        "state_reason": null
+      },
+      {
+        "url": "https://api.github.com/repos/discord/zen_monitor/issues/1",
+        "id": 779665823,
+        "node_id": "MDExOlB1bGxSZXF1ZXN0NTQ5NjE2NTI4",
+        "number": 1,
+        "title": "Get dialyzer running clean",
+        "user": {
+          "login": "ihumanable",
+          "id": 122636,
+          "node_id": "MDQ6VXNlcjEyMjYzNg==",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/ihumanable",
+          "type": "User",
+          "site_admin": false
+        },
+        "labels": [],
+        "state": "closed",
+        "locked": false,
+        "assignee": null,
+        "assignees": [],
+        "milestone": null,
+        "comments": 0,
+        "created_at": "2021-01-05T22:29:42Z",
+        "updated_at": "2021-01-05T22:30:00Z",
+        "closed_at": "2021-01-05T22:30:00Z",
+        "author_association": "CONTRIBUTOR",
+        "active_lock_reason": null,
+        "draft": false,
+        "pull_request": {
+          "url": "https://api.github.com/repos/discord/zen_monitor/pulls/1",
+          "merged_at": "2021-01-05T22:30:00Z"
+        },
+        "body": "",
+        "reactions": {
+          "url": "https://api.github.com/repos/discord/zen_monitor/issues/1/reactions",
+          "total_count": 0,
+          "+1": 0,
+          "-1": 0,
+          "laugh": 0,
+          "hooray": 0,
+          "confused": 0,
+          "heart": 0,
+          "rocket": 0,
+          "eyes": 0
+        },
+        "performed_via_github_app": null,
+        "state_reason": null
+      }
+    ],
+    "pullRequests": [
+      {
+        "url": "https://api.github.com/repos/discord/zen_monitor/pulls/4",
+        "id": 1167342989,
+        "node_id": "PR_kwDOCZwG9M5FlD2N",
+        "number": 4,
+        "state": "closed",
+        "locked": false,
+        "title": "1.2, Try to fix CI",
+        "user": {
+          "login": "ypisetsky",
+          "id": 287854,
+          "node_id": "MDQ6VXNlcjI4Nzg1NA==",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/ypisetsky",
+          "type": "User",
+          "site_admin": false
+        },
+        "body": null,
+        "created_at": "2022-12-15T20:38:08Z",
+        "updated_at": "2022-12-15T22:51:50Z",
+        "closed_at": "2022-12-15T22:51:50Z",
+        "merged_at": "2022-12-15T22:51:50Z",
+        "merge_commit_sha": "2c832199702d9898db03a445c1b6e86902412b30",
+        "assignee": null,
+        "assignees": [],
+        "requested_reviewers": [],
+        "requested_teams": [],
+        "labels": [],
+        "milestone": null,
+        "draft": false,
+        "head": {
+          "label": "discord:pre-1.2",
+          "ref": "pre-1.2",
+          "sha": "27bd60b101037d8ed0b0314966ca3db228e6a2b3",
+          "user": {
+            "login": "discord",
+            "id": 1965106,
+            "node_id": "MDEyOk9yZ2FuaXphdGlvbjE5NjUxMDY=",
+            "gravatar_id": "",
+            "url": "https://api.github.com/users/discord",
+            "type": "Organization",
+            "site_admin": false
+          },
+          "repo": {
+            "id": 161220340,
+            "node_id": "MDEwOlJlcG9zaXRvcnkxNjEyMjAzNDA=",
+            "name": "zen_monitor",
+            "full_name": "discord/zen_monitor",
+            "private": false,
+            "owner": {
+              "login": "discord",
+              "id": 1965106,
+              "node_id": "MDEyOk9yZ2FuaXphdGlvbjE5NjUxMDY=",
+              "gravatar_id": "",
+              "url": "https://api.github.com/users/discord",
+              "type": "Organization",
+              "site_admin": false
+            },
+            "description": "Efficient Process.monitor replacement",
+            "fork": false,
+            "url": "https://api.github.com/repos/discord/zen_monitor",
+            "created_at": "2018-12-10T18:42:09Z",
+            "updated_at": "2023-04-03T19:17:02Z",
+            "pushed_at": "2022-12-16T02:25:32Z",
+            "homepage": null,
+            "size": 84,
+            "stargazers_count": 158,
+            "watchers_count": 158,
+            "language": "Elixir",
+            "has_issues": true,
+            "has_projects": true,
+            "has_downloads": true,
+            "has_wiki": true,
+            "has_pages": false,
+            "has_discussions": false,
+            "forks_count": 11,
+            "archived": false,
+            "disabled": false,
+            "open_issues_count": 0,
+            "license": {
+              "key": "mit",
+              "name": "MIT License",
+              "spdx_id": "MIT",
+              "url": "https://api.github.com/licenses/mit",
+              "node_id": "MDc6TGljZW5zZTEz"
+            },
+            "allow_forking": true,
+            "is_template": false,
+            "web_commit_signoff_required": false,
+            "topics": [],
+            "visibility": "public",
+            "forks": 11,
+            "open_issues": 0,
+            "watchers": 158,
+            "default_branch": "master"
+          }
+        },
+        "base": {
+          "label": "discord:master",
+          "ref": "master",
+          "sha": "6142ce1a5a28dff67b011939b10c4bf91e59311f",
+          "user": {
+            "login": "discord",
+            "id": 1965106,
+            "node_id": "MDEyOk9yZ2FuaXphdGlvbjE5NjUxMDY=",
+            "gravatar_id": "",
+            "url": "https://api.github.com/users/discord",
+            "type": "Organization",
+            "site_admin": false
+          },
+          "repo": {
+            "id": 161220340,
+            "node_id": "MDEwOlJlcG9zaXRvcnkxNjEyMjAzNDA=",
+            "name": "zen_monitor",
+            "full_name": "discord/zen_monitor",
+            "private": false,
+            "owner": {
+              "login": "discord",
+              "id": 1965106,
+              "node_id": "MDEyOk9yZ2FuaXphdGlvbjE5NjUxMDY=",
+              "gravatar_id": "",
+              "url": "https://api.github.com/users/discord",
+              "type": "Organization",
+              "site_admin": false
+            },
+            "description": "Efficient Process.monitor replacement",
+            "fork": false,
+            "url": "https://api.github.com/repos/discord/zen_monitor",
+            "created_at": "2018-12-10T18:42:09Z",
+            "updated_at": "2023-04-03T19:17:02Z",
+            "pushed_at": "2022-12-16T02:25:32Z",
+            "homepage": null,
+            "size": 84,
+            "stargazers_count": 158,
+            "watchers_count": 158,
+            "language": "Elixir",
+            "has_issues": true,
+            "has_projects": true,
+            "has_downloads": true,
+            "has_wiki": true,
+            "has_pages": false,
+            "has_discussions": false,
+            "forks_count": 11,
+            "archived": false,
+            "disabled": false,
+            "open_issues_count": 0,
+            "license": {
+              "key": "mit",
+              "name": "MIT License",
+              "spdx_id": "MIT",
+              "url": "https://api.github.com/licenses/mit",
+              "node_id": "MDc6TGljZW5zZTEz"
+            },
+            "allow_forking": true,
+            "is_template": false,
+            "web_commit_signoff_required": false,
+            "topics": [],
+            "visibility": "public",
+            "forks": 11,
+            "open_issues": 0,
+            "watchers": 158,
+            "default_branch": "master"
+          }
+        },
+        "_links": {
+          "self": {
+            "href": "https://api.github.com/repos/discord/zen_monitor/pulls/4"
+          },
+          "html": {
+            "href": "https://github.com/discord/zen_monitor/pull/4"
+          },
+          "issue": {
+            "href": "https://api.github.com/repos/discord/zen_monitor/issues/4"
+          },
+          "comments": {
+            "href": "https://api.github.com/repos/discord/zen_monitor/issues/4/comments"
+          },
+          "review_comments": {
+            "href": "https://api.github.com/repos/discord/zen_monitor/pulls/4/comments"
+          },
+          "review_comment": {
+            "href": "https://api.github.com/repos/discord/zen_monitor/pulls/comments{/number}"
+          },
+          "commits": {
+            "href": "https://api.github.com/repos/discord/zen_monitor/pulls/4/commits"
+          },
+          "statuses": {
+            "href": "https://api.github.com/repos/discord/zen_monitor/statuses/27bd60b101037d8ed0b0314966ca3db228e6a2b3"
+          }
+        },
+        "author_association": "CONTRIBUTOR",
+        "auto_merge": null,
+        "active_lock_reason": null
+      },
+      {
+        "url": "https://api.github.com/repos/discord/zen_monitor/pulls/3",
+        "id": 676699388,
+        "node_id": "MDExOlB1bGxSZXF1ZXN0Njc2Njk5Mzg4",
+        "number": 3,
+        "state": "closed",
+        "locked": false,
+        "title": "off_heap message queue for Local.Dispatcher",
+        "user": {
+          "login": "ypisetsky",
+          "id": 287854,
+          "node_id": "MDQ6VXNlcjI4Nzg1NA==",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/ypisetsky",
+          "type": "User",
+          "site_admin": false
+        },
+        "body": "This matches the behavior of ZenMonitor.Local and ZenMonitor.Proxy, which are the other two singletons that all of the down notices / certificates pass through.",
+        "created_at": "2021-06-24T00:16:35Z",
+        "updated_at": "2021-06-29T17:50:42Z",
+        "closed_at": "2021-06-29T17:50:42Z",
+        "merged_at": "2021-06-29T17:50:42Z",
+        "merge_commit_sha": "a01589e2df68ad643974b79a05fc3212587eca53",
+        "assignee": null,
+        "assignees": [],
+        "requested_reviewers": [],
+        "requested_teams": [],
+        "labels": [],
+        "milestone": null,
+        "draft": false,
+        "head": {
+          "label": "discord:yuliy/off_heap_local_dispatcher",
+          "ref": "yuliy/off_heap_local_dispatcher",
+          "sha": "3f508c36fb79a10594fcfcaedfa50ac4f52c72f7",
+          "user": {
+            "login": "discord",
+            "id": 1965106,
+            "node_id": "MDEyOk9yZ2FuaXphdGlvbjE5NjUxMDY=",
+            "gravatar_id": "",
+            "url": "https://api.github.com/users/discord",
+            "type": "Organization",
+            "site_admin": false
+          },
+          "repo": {
+            "id": 161220340,
+            "node_id": "MDEwOlJlcG9zaXRvcnkxNjEyMjAzNDA=",
+            "name": "zen_monitor",
+            "full_name": "discord/zen_monitor",
+            "private": false,
+            "owner": {
+              "login": "discord",
+              "id": 1965106,
+              "node_id": "MDEyOk9yZ2FuaXphdGlvbjE5NjUxMDY=",
+              "gravatar_id": "",
+              "url": "https://api.github.com/users/discord",
+              "type": "Organization",
+              "site_admin": false
+            },
+            "description": "Efficient Process.monitor replacement",
+            "fork": false,
+            "url": "https://api.github.com/repos/discord/zen_monitor",
+            "created_at": "2018-12-10T18:42:09Z",
+            "updated_at": "2023-04-03T19:17:02Z",
+            "pushed_at": "2022-12-16T02:25:32Z",
+            "homepage": null,
+            "size": 84,
+            "stargazers_count": 158,
+            "watchers_count": 158,
+            "language": "Elixir",
+            "has_issues": true,
+            "has_projects": true,
+            "has_downloads": true,
+            "has_wiki": true,
+            "has_pages": false,
+            "has_discussions": false,
+            "forks_count": 11,
+            "archived": false,
+            "disabled": false,
+            "open_issues_count": 0,
+            "license": {
+              "key": "mit",
+              "name": "MIT License",
+              "spdx_id": "MIT",
+              "url": "https://api.github.com/licenses/mit",
+              "node_id": "MDc6TGljZW5zZTEz"
+            },
+            "allow_forking": true,
+            "is_template": false,
+            "web_commit_signoff_required": false,
+            "topics": [],
+            "visibility": "public",
+            "forks": 11,
+            "open_issues": 0,
+            "watchers": 158,
+            "default_branch": "master"
+          }
+        },
+        "base": {
+          "label": "discord:master",
+          "ref": "master",
+          "sha": "b17a806c1047ea574b4c75df7053c51d62ae15b1",
+          "user": {
+            "login": "discord",
+            "id": 1965106,
+            "node_id": "MDEyOk9yZ2FuaXphdGlvbjE5NjUxMDY=",
+            "gravatar_id": "",
+            "url": "https://api.github.com/users/discord",
+            "type": "Organization",
+            "site_admin": false
+          },
+          "repo": {
+            "id": 161220340,
+            "node_id": "MDEwOlJlcG9zaXRvcnkxNjEyMjAzNDA=",
+            "name": "zen_monitor",
+            "full_name": "discord/zen_monitor",
+            "private": false,
+            "owner": {
+              "login": "discord",
+              "id": 1965106,
+              "node_id": "MDEyOk9yZ2FuaXphdGlvbjE5NjUxMDY=",
+              "gravatar_id": "",
+              "url": "https://api.github.com/users/discord",
+              "type": "Organization",
+              "site_admin": false
+            },
+            "description": "Efficient Process.monitor replacement",
+            "fork": false,
+            "url": "https://api.github.com/repos/discord/zen_monitor",
+            "created_at": "2018-12-10T18:42:09Z",
+            "updated_at": "2023-04-03T19:17:02Z",
+            "pushed_at": "2022-12-16T02:25:32Z",
+            "homepage": null,
+            "size": 84,
+            "stargazers_count": 158,
+            "watchers_count": 158,
+            "language": "Elixir",
+            "has_issues": true,
+            "has_projects": true,
+            "has_downloads": true,
+            "has_wiki": true,
+            "has_pages": false,
+            "has_discussions": false,
+            "forks_count": 11,
+            "archived": false,
+            "disabled": false,
+            "open_issues_count": 0,
+            "license": {
+              "key": "mit",
+              "name": "MIT License",
+              "spdx_id": "MIT",
+              "url": "https://api.github.com/licenses/mit",
+              "node_id": "MDc6TGljZW5zZTEz"
+            },
+            "allow_forking": true,
+            "is_template": false,
+            "web_commit_signoff_required": false,
+            "topics": [],
+            "visibility": "public",
+            "forks": 11,
+            "open_issues": 0,
+            "watchers": 158,
+            "default_branch": "master"
+          }
+        },
+        "_links": {
+          "self": {
+            "href": "https://api.github.com/repos/discord/zen_monitor/pulls/3"
+          },
+          "html": {
+            "href": "https://github.com/discord/zen_monitor/pull/3"
+          },
+          "issue": {
+            "href": "https://api.github.com/repos/discord/zen_monitor/issues/3"
+          },
+          "comments": {
+            "href": "https://api.github.com/repos/discord/zen_monitor/issues/3/comments"
+          },
+          "review_comments": {
+            "href": "https://api.github.com/repos/discord/zen_monitor/pulls/3/comments"
+          },
+          "review_comment": {
+            "href": "https://api.github.com/repos/discord/zen_monitor/pulls/comments{/number}"
+          },
+          "commits": {
+            "href": "https://api.github.com/repos/discord/zen_monitor/pulls/3/commits"
+          },
+          "statuses": {
+            "href": "https://api.github.com/repos/discord/zen_monitor/statuses/3f508c36fb79a10594fcfcaedfa50ac4f52c72f7"
+          }
+        },
+        "author_association": "CONTRIBUTOR",
+        "auto_merge": null,
+        "active_lock_reason": null
+      },
+      {
+        "url": "https://api.github.com/repos/discord/zen_monitor/pulls/2",
+        "id": 549823695,
+        "node_id": "MDExOlB1bGxSZXF1ZXN0NTQ5ODIzNjk1",
+        "number": 2,
+        "state": "closed",
+        "locked": false,
+        "title": "Remove race conditions from the black box tests",
+        "user": {
+          "login": "ihumanable",
+          "id": 122636,
+          "node_id": "MDQ6VXNlcjEyMjYzNg==",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/ihumanable",
+          "type": "User",
+          "site_admin": false
+        },
+        "body": "GH Actions CI has revealed the reliance on pretty flakey sleeps and race conditions in the black box tests, this PR reduces this as much as possible.",
+        "created_at": "2021-01-06T02:21:59Z",
+        "updated_at": "2021-01-22T22:51:42Z",
+        "closed_at": "2021-01-22T22:51:42Z",
+        "merged_at": "2021-01-22T22:51:42Z",
+        "merge_commit_sha": "530da15d7cd9fc44d86e2a2977327994c5497384",
+        "assignee": null,
+        "assignees": [],
+        "requested_reviewers": [],
+        "requested_teams": [],
+        "labels": [],
+        "milestone": null,
+        "draft": false,
+        "head": {
+          "label": "discord:remove-race-conditions-from-test",
+          "ref": "remove-race-conditions-from-test",
+          "sha": "eecd819663ae3967b0299ca6cd85b9b0651da577",
+          "user": {
+            "login": "discord",
+            "id": 1965106,
+            "node_id": "MDEyOk9yZ2FuaXphdGlvbjE5NjUxMDY=",
+            "gravatar_id": "",
+            "url": "https://api.github.com/users/discord",
+            "type": "Organization",
+            "site_admin": false
+          },
+          "repo": {
+            "id": 161220340,
+            "node_id": "MDEwOlJlcG9zaXRvcnkxNjEyMjAzNDA=",
+            "name": "zen_monitor",
+            "full_name": "discord/zen_monitor",
+            "private": false,
+            "owner": {
+              "login": "discord",
+              "id": 1965106,
+              "node_id": "MDEyOk9yZ2FuaXphdGlvbjE5NjUxMDY=",
+              "gravatar_id": "",
+              "url": "https://api.github.com/users/discord",
+              "type": "Organization",
+              "site_admin": false
+            },
+            "description": "Efficient Process.monitor replacement",
+            "fork": false,
+            "url": "https://api.github.com/repos/discord/zen_monitor",
+            "created_at": "2018-12-10T18:42:09Z",
+            "updated_at": "2023-04-03T19:17:02Z",
+            "pushed_at": "2022-12-16T02:25:32Z",
+            "homepage": null,
+            "size": 84,
+            "stargazers_count": 158,
+            "watchers_count": 158,
+            "language": "Elixir",
+            "has_issues": true,
+            "has_projects": true,
+            "has_downloads": true,
+            "has_wiki": true,
+            "has_pages": false,
+            "has_discussions": false,
+            "forks_count": 11,
+            "archived": false,
+            "disabled": false,
+            "open_issues_count": 0,
+            "license": {
+              "key": "mit",
+              "name": "MIT License",
+              "spdx_id": "MIT",
+              "url": "https://api.github.com/licenses/mit",
+              "node_id": "MDc6TGljZW5zZTEz"
+            },
+            "allow_forking": true,
+            "is_template": false,
+            "web_commit_signoff_required": false,
+            "topics": [],
+            "visibility": "public",
+            "forks": 11,
+            "open_issues": 0,
+            "watchers": 158,
+            "default_branch": "master"
+          }
+        },
+        "base": {
+          "label": "discord:master",
+          "ref": "master",
+          "sha": "14898b9751cd283dfaecfa00cf5daced1b9fa036",
+          "user": {
+            "login": "discord",
+            "id": 1965106,
+            "node_id": "MDEyOk9yZ2FuaXphdGlvbjE5NjUxMDY=",
+            "gravatar_id": "",
+            "url": "https://api.github.com/users/discord",
+            "type": "Organization",
+            "site_admin": false
+          },
+          "repo": {
+            "id": 161220340,
+            "node_id": "MDEwOlJlcG9zaXRvcnkxNjEyMjAzNDA=",
+            "name": "zen_monitor",
+            "full_name": "discord/zen_monitor",
+            "private": false,
+            "owner": {
+              "login": "discord",
+              "id": 1965106,
+              "node_id": "MDEyOk9yZ2FuaXphdGlvbjE5NjUxMDY=",
+              "gravatar_id": "",
+              "url": "https://api.github.com/users/discord",
+              "type": "Organization",
+              "site_admin": false
+            },
+            "description": "Efficient Process.monitor replacement",
+            "fork": false,
+            "url": "https://api.github.com/repos/discord/zen_monitor",
+            "created_at": "2018-12-10T18:42:09Z",
+            "updated_at": "2023-04-03T19:17:02Z",
+            "pushed_at": "2022-12-16T02:25:32Z",
+            "homepage": null,
+            "size": 84,
+            "stargazers_count": 158,
+            "watchers_count": 158,
+            "language": "Elixir",
+            "has_issues": true,
+            "has_projects": true,
+            "has_downloads": true,
+            "has_wiki": true,
+            "has_pages": false,
+            "has_discussions": false,
+            "forks_count": 11,
+            "archived": false,
+            "disabled": false,
+            "open_issues_count": 0,
+            "license": {
+              "key": "mit",
+              "name": "MIT License",
+              "spdx_id": "MIT",
+              "url": "https://api.github.com/licenses/mit",
+              "node_id": "MDc6TGljZW5zZTEz"
+            },
+            "allow_forking": true,
+            "is_template": false,
+            "web_commit_signoff_required": false,
+            "topics": [],
+            "visibility": "public",
+            "forks": 11,
+            "open_issues": 0,
+            "watchers": 158,
+            "default_branch": "master"
+          }
+        },
+        "_links": {
+          "self": {
+            "href": "https://api.github.com/repos/discord/zen_monitor/pulls/2"
+          },
+          "html": {
+            "href": "https://github.com/discord/zen_monitor/pull/2"
+          },
+          "issue": {
+            "href": "https://api.github.com/repos/discord/zen_monitor/issues/2"
+          },
+          "comments": {
+            "href": "https://api.github.com/repos/discord/zen_monitor/issues/2/comments"
+          },
+          "review_comments": {
+            "href": "https://api.github.com/repos/discord/zen_monitor/pulls/2/comments"
+          },
+          "review_comment": {
+            "href": "https://api.github.com/repos/discord/zen_monitor/pulls/comments{/number}"
+          },
+          "commits": {
+            "href": "https://api.github.com/repos/discord/zen_monitor/pulls/2/commits"
+          },
+          "statuses": {
+            "href": "https://api.github.com/repos/discord/zen_monitor/statuses/eecd819663ae3967b0299ca6cd85b9b0651da577"
+          }
+        },
+        "author_association": "CONTRIBUTOR",
+        "auto_merge": null,
+        "active_lock_reason": null
+      },
+      {
+        "url": "https://api.github.com/repos/discord/zen_monitor/pulls/1",
+        "id": 549616528,
+        "node_id": "MDExOlB1bGxSZXF1ZXN0NTQ5NjE2NTI4",
+        "number": 1,
+        "state": "closed",
+        "locked": false,
+        "title": "Get dialyzer running clean",
+        "user": {
+          "login": "ihumanable",
+          "id": 122636,
+          "node_id": "MDQ6VXNlcjEyMjYzNg==",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/ihumanable",
+          "type": "User",
+          "site_admin": false
+        },
+        "body": "",
+        "created_at": "2021-01-05T22:29:42Z",
+        "updated_at": "2021-01-05T22:30:00Z",
+        "closed_at": "2021-01-05T22:30:00Z",
+        "merged_at": "2021-01-05T22:30:00Z",
+        "merge_commit_sha": "8aeacc1b3cf9c33c94501381046577baf9144ef3",
+        "assignee": null,
+        "assignees": [],
+        "requested_reviewers": [],
+        "requested_teams": [],
+        "labels": [],
+        "milestone": null,
+        "draft": false,
+        "head": {
+          "label": "discord:dialyzer-clean",
+          "ref": "dialyzer-clean",
+          "sha": "94e1c1b2e9db538818c724279375b3002f24daaf",
+          "user": {
+            "login": "discord",
+            "id": 1965106,
+            "node_id": "MDEyOk9yZ2FuaXphdGlvbjE5NjUxMDY=",
+            "gravatar_id": "",
+            "url": "https://api.github.com/users/discord",
+            "type": "Organization",
+            "site_admin": false
+          },
+          "repo": {
+            "id": 161220340,
+            "node_id": "MDEwOlJlcG9zaXRvcnkxNjEyMjAzNDA=",
+            "name": "zen_monitor",
+            "full_name": "discord/zen_monitor",
+            "private": false,
+            "owner": {
+              "login": "discord",
+              "id": 1965106,
+              "node_id": "MDEyOk9yZ2FuaXphdGlvbjE5NjUxMDY=",
+              "gravatar_id": "",
+              "url": "https://api.github.com/users/discord",
+              "type": "Organization",
+              "site_admin": false
+            },
+            "description": "Efficient Process.monitor replacement",
+            "fork": false,
+            "url": "https://api.github.com/repos/discord/zen_monitor",
+            "created_at": "2018-12-10T18:42:09Z",
+            "updated_at": "2023-04-03T19:17:02Z",
+            "pushed_at": "2022-12-16T02:25:32Z",
+            "homepage": null,
+            "size": 84,
+            "stargazers_count": 158,
+            "watchers_count": 158,
+            "language": "Elixir",
+            "has_issues": true,
+            "has_projects": true,
+            "has_downloads": true,
+            "has_wiki": true,
+            "has_pages": false,
+            "has_discussions": false,
+            "forks_count": 11,
+            "archived": false,
+            "disabled": false,
+            "open_issues_count": 0,
+            "license": {
+              "key": "mit",
+              "name": "MIT License",
+              "spdx_id": "MIT",
+              "url": "https://api.github.com/licenses/mit",
+              "node_id": "MDc6TGljZW5zZTEz"
+            },
+            "allow_forking": true,
+            "is_template": false,
+            "web_commit_signoff_required": false,
+            "topics": [],
+            "visibility": "public",
+            "forks": 11,
+            "open_issues": 0,
+            "watchers": 158,
+            "default_branch": "master"
+          }
+        },
+        "base": {
+          "label": "discord:master",
+          "ref": "master",
+          "sha": "7d3ba47a0176cab4e39e21858e3d4be3eb36d2ad",
+          "user": {
+            "login": "discord",
+            "id": 1965106,
+            "node_id": "MDEyOk9yZ2FuaXphdGlvbjE5NjUxMDY=",
+            "gravatar_id": "",
+            "url": "https://api.github.com/users/discord",
+            "type": "Organization",
+            "site_admin": false
+          },
+          "repo": {
+            "id": 161220340,
+            "node_id": "MDEwOlJlcG9zaXRvcnkxNjEyMjAzNDA=",
+            "name": "zen_monitor",
+            "full_name": "discord/zen_monitor",
+            "private": false,
+            "owner": {
+              "login": "discord",
+              "id": 1965106,
+              "node_id": "MDEyOk9yZ2FuaXphdGlvbjE5NjUxMDY=",
+              "gravatar_id": "",
+              "url": "https://api.github.com/users/discord",
+              "type": "Organization",
+              "site_admin": false
+            },
+            "description": "Efficient Process.monitor replacement",
+            "fork": false,
+            "url": "https://api.github.com/repos/discord/zen_monitor",
+            "created_at": "2018-12-10T18:42:09Z",
+            "updated_at": "2023-04-03T19:17:02Z",
+            "pushed_at": "2022-12-16T02:25:32Z",
+            "homepage": null,
+            "size": 84,
+            "stargazers_count": 158,
+            "watchers_count": 158,
+            "language": "Elixir",
+            "has_issues": true,
+            "has_projects": true,
+            "has_downloads": true,
+            "has_wiki": true,
+            "has_pages": false,
+            "has_discussions": false,
+            "forks_count": 11,
+            "archived": false,
+            "disabled": false,
+            "open_issues_count": 0,
+            "license": {
+              "key": "mit",
+              "name": "MIT License",
+              "spdx_id": "MIT",
+              "url": "https://api.github.com/licenses/mit",
+              "node_id": "MDc6TGljZW5zZTEz"
+            },
+            "allow_forking": true,
+            "is_template": false,
+            "web_commit_signoff_required": false,
+            "topics": [],
+            "visibility": "public",
+            "forks": 11,
+            "open_issues": 0,
+            "watchers": 158,
+            "default_branch": "master"
+          }
+        },
+        "_links": {
+          "self": {
+            "href": "https://api.github.com/repos/discord/zen_monitor/pulls/1"
+          },
+          "html": {
+            "href": "https://github.com/discord/zen_monitor/pull/1"
+          },
+          "issue": {
+            "href": "https://api.github.com/repos/discord/zen_monitor/issues/1"
+          },
+          "comments": {
+            "href": "https://api.github.com/repos/discord/zen_monitor/issues/1/comments"
+          },
+          "review_comments": {
+            "href": "https://api.github.com/repos/discord/zen_monitor/pulls/1/comments"
+          },
+          "review_comment": {
+            "href": "https://api.github.com/repos/discord/zen_monitor/pulls/comments{/number}"
+          },
+          "commits": {
+            "href": "https://api.github.com/repos/discord/zen_monitor/pulls/1/commits"
+          },
+          "statuses": {
+            "href": "https://api.github.com/repos/discord/zen_monitor/statuses/94e1c1b2e9db538818c724279375b3002f24daaf"
+          }
+        },
+        "author_association": "CONTRIBUTOR",
+        "auto_merge": null,
+        "active_lock_reason": null
+      }
+    ]
   }
 }
