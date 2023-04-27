@@ -57,7 +57,24 @@
     "triage": false,
     "pull": false
   },
-  "branches": [],
+  "branches": [
+    {
+      "name": "fix_deprecations",
+      "commit": {
+        "sha": "32e6f1c19bf329f2638cfdf00f75a83c9c5eeda7",
+        "url": "https://api.github.com/repos/discord/statix/commits/32e6f1c19bf329f2638cfdf00f75a83c9c5eeda7"
+      },
+      "protected": false
+    },
+    {
+      "name": "master",
+      "commit": {
+        "sha": "e075715d7f05bdf684442ff57638c4e2ab150b05",
+        "url": "https://api.github.com/repos/discord/statix/commits/e075715d7f05bdf684442ff57638c4e2ab150b05"
+      },
+      "protected": false
+    }
+  ],
   "last5": {
     "commits": [
       {
