@@ -145611,23 +145611,27 @@ html .invoiceCancelRow-3s2UuC {
 }
 
 .boostContainer-RzXAwu {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
     -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
     -ms-flex-direction: column;
     flex-direction: column;
     background-color: var(--primary-800);
     padding: 0 20px
 }
 
-.boostContainer-RzXAwu,
+.theme-light .boostContainer-RzXAwu {
+    background-color: var(--primary-200)
+}
+
 .boostInnerContainer-_uKq_V {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-direction: normal
-}
-
-.boostInnerContainer-_uKq_V {
     -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
     -ms-flex-direction: row;
     flex-direction: row;
     -webkit-box-align: center;
@@ -145640,6 +145644,10 @@ html .invoiceCancelRow-3s2UuC {
     height: 1px;
     background-color: var(--primary-500);
     opacity: .48
+}
+
+.theme-light .boostContainerSeparator-1-tpZX {
+    opacity: .2
 }
 
 .boostIconContainer-2G2oAl {
@@ -145691,6 +145699,10 @@ html .invoiceCancelRow-3s2UuC {
     height: 1px;
     background-color: var(--primary-500);
     opacity: .48
+}
+
+.theme-light .mainSeparator-h7MEes {
+    opacity: .3
 }
 
 .wrapper-3H7s3n {
@@ -153230,4 +153242,4 @@ html .invoiceCancelRow-dVOR64 {
     flex-direction: column
 }
 
-/*# sourceMappingURL=40532.0a1b1c3f90ca0966cdbd.css.map*/
+/*# sourceMappingURL=40532.33542fee9c1ab047700a.css.map*/
