@@ -57,7 +57,48 @@
     "triage": false,
     "pull": false
   },
-  "branches": [],
+  "branches": [
+    {
+      "name": "discord",
+      "commit": {
+        "sha": "f9eb36dd6f4913e760b710da355870d0abaa23a2",
+        "url": "https://api.github.com/repos/discord/cocoapods-bazel/commits/f9eb36dd6f4913e760b710da355870d0abaa23a2"
+      },
+      "protected": true
+    },
+    {
+      "name": "docs",
+      "commit": {
+        "sha": "797c765476cd3a9f95c874f08823f7ca574f3746",
+        "url": "https://api.github.com/repos/discord/cocoapods-bazel/commits/797c765476cd3a9f95c874f08823f7ca574f3746"
+      },
+      "protected": false
+    },
+    {
+      "name": "master",
+      "commit": {
+        "sha": "137e9d39c5420e5fe30643754fee3854c2b40489",
+        "url": "https://api.github.com/repos/discord/cocoapods-bazel/commits/137e9d39c5420e5fe30643754fee3854c2b40489"
+      },
+      "protected": false
+    },
+    {
+      "name": "nmj/change-labels",
+      "commit": {
+        "sha": "0cd1277802d1d631546004f50d20b0d46bd61565",
+        "url": "https://api.github.com/repos/discord/cocoapods-bazel/commits/0cd1277802d1d631546004f50d20b0d46bd61565"
+      },
+      "protected": false
+    },
+    {
+      "name": "rn_compile_spike",
+      "commit": {
+        "sha": "c138075adeb5c0ee0d24beb10a8c1f6aafb3318b",
+        "url": "https://api.github.com/repos/discord/cocoapods-bazel/commits/c138075adeb5c0ee0d24beb10a8c1f6aafb3318b"
+      },
+      "protected": false
+    }
+  ],
   "last5": {
     "commits": [
       {
@@ -336,7 +377,200 @@
       }
     ],
     "releases": [],
-    "issues": [],
+    "issues": [
+      {
+        "url": "https://api.github.com/repos/discord/cocoapods-bazel/issues/4",
+        "id": 1659013912,
+        "node_id": "PR_kwDOI5jSKM5N2Tsg",
+        "number": 4,
+        "title": "Add platform_overrides config option.",
+        "user": {
+          "login": "Osmose",
+          "id": 193106,
+          "node_id": "MDQ6VXNlcjE5MzEwNg==",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/Osmose",
+          "type": "User",
+          "site_admin": false
+        },
+        "labels": [],
+        "state": "closed",
+        "locked": false,
+        "assignee": null,
+        "assignees": [],
+        "milestone": null,
+        "comments": 0,
+        "created_at": "2023-04-07T17:09:33Z",
+        "updated_at": "2023-04-07T17:45:26Z",
+        "closed_at": "2023-04-07T17:45:21Z",
+        "author_association": "CONTRIBUTOR",
+        "active_lock_reason": null,
+        "draft": false,
+        "pull_request": {
+          "url": "https://api.github.com/repos/discord/cocoapods-bazel/pulls/4",
+          "merged_at": "2023-04-07T17:45:21Z"
+        },
+        "body": "This will let us avoid a bunch of platform incompatibility problems stemming from our dependency graph failing to pick the correct platform version for a library.",
+        "reactions": {
+          "url": "https://api.github.com/repos/discord/cocoapods-bazel/issues/4/reactions",
+          "total_count": 0,
+          "+1": 0,
+          "-1": 0,
+          "laugh": 0,
+          "hooray": 0,
+          "confused": 0,
+          "heart": 0,
+          "rocket": 0,
+          "eyes": 0
+        },
+        "performed_via_github_app": null,
+        "state_reason": null
+      },
+      {
+        "url": "https://api.github.com/repos/discord/cocoapods-bazel/issues/3",
+        "id": 1654723037,
+        "node_id": "PR_kwDOI5jSKM5NoTcV",
+        "number": 3,
+        "title": "Use dependency labels consistent with PodToBUILD.",
+        "user": {
+          "login": "Osmose",
+          "id": 193106,
+          "node_id": "MDQ6VXNlcjE5MzEwNg==",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/Osmose",
+          "type": "User",
+          "site_admin": false
+        },
+        "labels": [],
+        "state": "closed",
+        "locked": false,
+        "assignee": null,
+        "assignees": [],
+        "milestone": null,
+        "comments": 2,
+        "created_at": "2023-04-04T23:57:34Z",
+        "updated_at": "2023-04-05T17:54:54Z",
+        "closed_at": "2023-04-05T17:54:50Z",
+        "author_association": "CONTRIBUTOR",
+        "active_lock_reason": null,
+        "draft": false,
+        "pull_request": {
+          "url": "https://api.github.com/repos/discord/cocoapods-bazel/pulls/3",
+          "merged_at": "2023-04-05T17:54:50Z"
+        },
+        "body": "- Asana: https://app.asana.com/0/1203960884932166/1204190072048671/f\r\n\r\nRan into this with `node_modules` dependencies that are trying to rely on react-native core libraries and need deps like `@ReactCore//:ReactCore`.",
+        "reactions": {
+          "url": "https://api.github.com/repos/discord/cocoapods-bazel/issues/3/reactions",
+          "total_count": 0,
+          "+1": 0,
+          "-1": 0,
+          "laugh": 0,
+          "hooray": 0,
+          "confused": 0,
+          "heart": 0,
+          "rocket": 0,
+          "eyes": 0
+        },
+        "performed_via_github_app": null,
+        "state_reason": null
+      },
+      {
+        "url": "https://api.github.com/repos/discord/cocoapods-bazel/issues/2",
+        "id": 1628349769,
+        "node_id": "PR_kwDOI5jSKM5MQaU2",
+        "number": 2,
+        "title": "[cocoapods-bazel] Make targets use external repository names",
+        "user": {
+          "login": "nataliejameson",
+          "id": 6351854,
+          "node_id": "MDQ6VXNlcjYzNTE4NTQ=",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/nataliejameson",
+          "type": "User",
+          "site_admin": false
+        },
+        "labels": [],
+        "state": "closed",
+        "locked": false,
+        "assignee": null,
+        "assignees": [],
+        "milestone": null,
+        "comments": 1,
+        "created_at": "2023-03-16T21:52:55Z",
+        "updated_at": "2023-03-16T22:34:43Z",
+        "closed_at": "2023-03-16T22:34:43Z",
+        "author_association": "CONTRIBUTOR",
+        "active_lock_reason": null,
+        "draft": false,
+        "pull_request": {
+          "url": "https://api.github.com/repos/discord/cocoapods-bazel/pulls/2",
+          "merged_at": "2023-03-16T22:34:43Z"
+        },
+        "body": "Instead of using `//<pod dir>` for dependencies, use `@<pod\nname>//:<label>`. This makes deps work properly in our repository.\n\nTest Plan: Regenerated PINCache (deps on PINOperation) with `clyde ios\nsync-pods` and `clyde ios build` passed.\n",
+        "reactions": {
+          "url": "https://api.github.com/repos/discord/cocoapods-bazel/issues/2/reactions",
+          "total_count": 0,
+          "+1": 0,
+          "-1": 0,
+          "laugh": 0,
+          "hooray": 0,
+          "confused": 0,
+          "heart": 0,
+          "rocket": 0,
+          "eyes": 0
+        },
+        "performed_via_github_app": null,
+        "state_reason": null
+      },
+      {
+        "url": "https://api.github.com/repos/discord/cocoapods-bazel/issues/1",
+        "id": 1605520131,
+        "node_id": "PR_kwDOI5jSKM5LD5IU",
+        "number": 1,
+        "title": "Add workspace configuration option.",
+        "user": {
+          "login": "Osmose",
+          "id": 193106,
+          "node_id": "MDQ6VXNlcjE5MzEwNg==",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/Osmose",
+          "type": "User",
+          "site_admin": false
+        },
+        "labels": [],
+        "state": "closed",
+        "locked": false,
+        "assignee": null,
+        "assignees": [],
+        "milestone": null,
+        "comments": 0,
+        "created_at": "2023-03-01T19:10:58Z",
+        "updated_at": "2023-03-01T22:08:18Z",
+        "closed_at": "2023-03-01T22:08:11Z",
+        "author_association": "CONTRIBUTOR",
+        "active_lock_reason": null,
+        "draft": false,
+        "pull_request": {
+          "url": "https://api.github.com/repos/discord/cocoapods-bazel/pulls/1",
+          "merged_at": "2023-03-01T22:08:11Z"
+        },
+        "body": "- Asana: https://app.asana.com/0/1203960884932166/1203960894292059/f\r\n\r\n`workspace` allows you to specify the path to the Bazel workspace you're using, where previously it was assumed that the Podfile's directory was the same as your workspace, which may not be the case in monorepos.",
+        "reactions": {
+          "url": "https://api.github.com/repos/discord/cocoapods-bazel/issues/1/reactions",
+          "total_count": 0,
+          "+1": 0,
+          "-1": 0,
+          "laugh": 0,
+          "hooray": 0,
+          "confused": 0,
+          "heart": 0,
+          "rocket": 0,
+          "eyes": 0
+        },
+        "performed_via_github_app": null,
+        "state_reason": null
+      }
+    ],
     "pullRequests": []
   }
 }
