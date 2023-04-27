@@ -148737,6 +148737,10 @@ html .invoiceCancelRow-3s2UuC {
     height: 24px
 }
 
+.unselectedTemplateName-32RHpO {
+    color: var(--text-muted)
+}
+
 .templateCardImage-1dgl6D {
     max-width: 100%
 }
@@ -153267,4 +153271,4 @@ html .invoiceCancelRow-dVOR64 {
     flex-direction: column
 }
 
-/*# sourceMappingURL=40532.e4c63f988a57304834f3.css.map*/
+/*# sourceMappingURL=40532.808a9a167fcf95e98c2f.css.map*/
