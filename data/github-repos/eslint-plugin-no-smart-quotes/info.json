@@ -57,24 +57,7 @@
     "triage": false,
     "pull": false
   },
-  "branches": [
-    {
-      "name": "fixable",
-      "commit": {
-        "sha": "e8610971e832c3d73ef1c7ebc462bdbe5a66148b",
-        "url": "https://api.github.com/repos/discord/eslint-plugin-no-smart-quotes/commits/e8610971e832c3d73ef1c7ebc462bdbe5a66148b"
-      },
-      "protected": false
-    },
-    {
-      "name": "master",
-      "commit": {
-        "sha": "1c1fd469e339234117817f1d1ac854854e137779",
-        "url": "https://api.github.com/repos/discord/eslint-plugin-no-smart-quotes/commits/1c1fd469e339234117817f1d1ac854854e137779"
-      },
-      "protected": false
-    }
-  ],
+  "branches": [],
   "last5": {
     "commits": [
       {
