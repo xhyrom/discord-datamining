@@ -348,7 +348,104 @@
       }
     ],
     "releases": [],
-    "issues": [],
+    "issues": [
+      {
+        "url": "https://api.github.com/repos/discord/cassandra-rs/issues/2",
+        "id": 1271002324,
+        "node_id": "PR_kwDODR5Oas45pNe5",
+        "number": 2,
+        "title": "initial materialized views support",
+        "user": {
+          "login": "ktravis",
+          "id": 1472316,
+          "node_id": "MDQ6VXNlcjE0NzIzMTY=",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/ktravis",
+          "type": "User",
+          "site_admin": false
+        },
+        "labels": [],
+        "state": "closed",
+        "locked": false,
+        "assignee": null,
+        "assignees": [],
+        "milestone": null,
+        "comments": 0,
+        "created_at": "2022-06-14T15:42:14Z",
+        "updated_at": "2022-06-17T12:01:44Z",
+        "closed_at": "2022-06-17T07:40:35Z",
+        "author_association": "COLLABORATOR",
+        "active_lock_reason": null,
+        "draft": false,
+        "pull_request": {
+          "url": "https://api.github.com/repos/discord/cassandra-rs/pulls/2",
+          "merged_at": "2022-06-17T07:40:35Z"
+        },
+        "body": null,
+        "reactions": {
+          "url": "https://api.github.com/repos/discord/cassandra-rs/issues/2/reactions",
+          "total_count": 0,
+          "+1": 0,
+          "-1": 0,
+          "laugh": 0,
+          "hooray": 0,
+          "confused": 0,
+          "heart": 0,
+          "rocket": 0,
+          "eyes": 0
+        },
+        "performed_via_github_app": null,
+        "state_reason": null
+      },
+      {
+        "url": "https://api.github.com/repos/discord/cassandra-rs/issues/1",
+        "id": 1064861919,
+        "node_id": "PR_kwDODR5Oas4vFAu3",
+        "number": 1,
+        "title": "[0.16] discord: keyspace aware session",
+        "user": {
+          "login": "jhgg",
+          "id": 5489149,
+          "node_id": "MDQ6VXNlcjU0ODkxNDk=",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/jhgg",
+          "type": "User",
+          "site_admin": false
+        },
+        "labels": [],
+        "state": "closed",
+        "locked": false,
+        "assignee": null,
+        "assignees": [],
+        "milestone": null,
+        "comments": 0,
+        "created_at": "2021-11-27T00:10:19Z",
+        "updated_at": "2021-11-27T05:32:44Z",
+        "closed_at": "2021-11-27T05:32:38Z",
+        "author_association": "MEMBER",
+        "active_lock_reason": null,
+        "draft": false,
+        "pull_request": {
+          "url": "https://api.github.com/repos/discord/cassandra-rs/pulls/1",
+          "merged_at": "2021-11-27T05:32:38Z"
+        },
+        "body": "Makes cassandra-rs's session keyspace aware, such that for a \"Bound\" session, it can spit out it's keyspace name.\r\n\r\nIt accomplishes this by introducing the concept of a `SessionScope` which can be either `Bound` or `Unbound`, of which represent whether or not the session is connected to a keyspace. We encode these in types to optionally expose the `Session.keyspace()` function, and make it so that if you require a keyspace connected session (as Discord does internally w/ the `CassandraUdt` derive macro). ",
+        "reactions": {
+          "url": "https://api.github.com/repos/discord/cassandra-rs/issues/1/reactions",
+          "total_count": 0,
+          "+1": 0,
+          "-1": 0,
+          "laugh": 0,
+          "hooray": 0,
+          "confused": 0,
+          "heart": 0,
+          "rocket": 0,
+          "eyes": 0
+        },
+        "performed_via_github_app": null,
+        "state_reason": null
+      }
+    ],
     "pullRequests": []
   }
 }

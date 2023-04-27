@@ -330,7 +330,104 @@
       }
     ],
     "releases": [],
-    "issues": [],
+    "issues": [
+      {
+        "url": "https://api.github.com/repos/discord/python-betterproto/issues/2",
+        "id": 631101271,
+        "node_id": "MDExOlB1bGxSZXF1ZXN0NDI4MDUxODkx",
+        "number": 2,
+        "title": "Set serialized_on_wire when parsing",
+        "user": {
+          "login": "FuegoFro",
+          "id": 463696,
+          "node_id": "MDQ6VXNlcjQ2MzY5Ng==",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/FuegoFro",
+          "type": "User",
+          "site_admin": false
+        },
+        "labels": [],
+        "state": "closed",
+        "locked": false,
+        "assignee": null,
+        "assignees": [],
+        "milestone": null,
+        "comments": 0,
+        "created_at": "2020-06-04T19:47:58Z",
+        "updated_at": "2020-06-04T19:51:51Z",
+        "closed_at": "2020-06-04T19:51:46Z",
+        "author_association": "NONE",
+        "active_lock_reason": null,
+        "draft": false,
+        "pull_request": {
+          "url": "https://api.github.com/repos/discord/python-betterproto/pulls/2",
+          "merged_at": "2020-06-04T19:51:46Z"
+        },
+        "body": "This is similar to the fix at https://github.com/danielgtaylor/python-betterproto/pull/81, but that doesn't merge into our branch because our branch is too old. So this just pulls in the relevant fix part.",
+        "reactions": {
+          "url": "https://api.github.com/repos/discord/python-betterproto/issues/2/reactions",
+          "total_count": 0,
+          "+1": 0,
+          "-1": 0,
+          "laugh": 0,
+          "hooray": 0,
+          "confused": 0,
+          "heart": 0,
+          "rocket": 0,
+          "eyes": 0
+        },
+        "performed_via_github_app": null,
+        "state_reason": null
+      },
+      {
+        "url": "https://api.github.com/repos/discord/python-betterproto/issues/1",
+        "id": 626712232,
+        "node_id": "MDExOlB1bGxSZXF1ZXN0NDI0NjUxMjU3",
+        "number": 1,
+        "title": "Add a type for the `channel` argument to service stub constructor",
+        "user": {
+          "login": "FuegoFro",
+          "id": 463696,
+          "node_id": "MDQ6VXNlcjQ2MzY5Ng==",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/FuegoFro",
+          "type": "User",
+          "site_admin": false
+        },
+        "labels": [],
+        "state": "closed",
+        "locked": false,
+        "assignee": null,
+        "assignees": [],
+        "milestone": null,
+        "comments": 0,
+        "created_at": "2020-05-28T18:13:42Z",
+        "updated_at": "2020-05-28T18:50:31Z",
+        "closed_at": "2020-05-28T18:50:28Z",
+        "author_association": "NONE",
+        "active_lock_reason": null,
+        "draft": false,
+        "pull_request": {
+          "url": "https://api.github.com/repos/discord/python-betterproto/pulls/1",
+          "merged_at": "2020-05-28T18:50:28Z"
+        },
+        "body": "This ensures that the generated file is strongly/strictly mypy typed.",
+        "reactions": {
+          "url": "https://api.github.com/repos/discord/python-betterproto/issues/1/reactions",
+          "total_count": 0,
+          "+1": 0,
+          "-1": 0,
+          "laugh": 0,
+          "hooray": 0,
+          "confused": 0,
+          "heart": 0,
+          "rocket": 0,
+          "eyes": 0
+        },
+        "performed_via_github_app": null,
+        "state_reason": null
+      }
+    ],
     "pullRequests": []
   }
 }
