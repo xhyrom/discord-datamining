@@ -20298,6 +20298,11 @@ html.disable-forced-colors * {
     left: 18px
 }
 
+.avatarPositionPomelo-1FNpU4 {
+    top: 45px;
+    left: 25px
+}
+
 .avatarHoverTarget-1zzfRL {
     border-radius: 50%
 }
@@ -51738,7 +51743,8 @@ input[type=checked]:focus-visible+.label-3TDpbn {
 }
 
 .profileCard-1WeJDY {
-    min-height: 120px
+    min-height: 120px;
+    padding-bottom: 25px
 }
 
 .accountProfileCard-2Y4M8W,
@@ -51885,8 +51891,8 @@ input[type=checked]:focus-visible+.label-3TDpbn {
     opacity: 0;
     -webkit-transform: rotate(-45deg);
     transform: rotate(-45deg);
-    -webkit-animation: reflect-2rY-SF 4s ease-in-out infinite;
-    animation: reflect-2rY-SF 4s ease-in-out infinite
+    -webkit-animation: reflect-2rY-SF 2.5s ease-in-out infinite;
+    animation: reflect-2rY-SF 2.5s ease-in-out infinite
 }
 
 .footer-1O3hHf {
@@ -51903,6 +51909,11 @@ input[type=checked]:focus-visible+.label-3TDpbn {
     top: 5px;
     right: 5px;
     z-index: 10
+}
+
+.contentContainer-12PyHy {
+    padding-left: 0;
+    padding-right: 0
 }
 
 .close-2Vhpnc {
@@ -51934,6 +51945,8 @@ input[type=checked]:focus-visible+.label-3TDpbn {
 }
 
 .modalRoot-2tJ1WA {
+    height: auto;
+    min-height: 0;
     width: 480px;
     position: relative
 }
@@ -153250,4 +153263,4 @@ html .invoiceCancelRow-dVOR64 {
     flex-direction: column
 }
 
-/*# sourceMappingURL=40532.8b75a74f06028b535666.css.map*/
+/*# sourceMappingURL=40532.08fb12e1c50c6fbac1ad.css.map*/
