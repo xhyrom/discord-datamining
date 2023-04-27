@@ -57,7 +57,40 @@
     "triage": false,
     "pull": false
   },
-  "branches": [],
+  "branches": [
+    {
+      "name": "add-status-url",
+      "commit": {
+        "sha": "38d0f6d6c6ca72d1fd80a5c44a5bdbf6088d19f7",
+        "url": "https://api.github.com/repos/discord/octocrab/commits/38d0f6d6c6ca72d1fd80a5c44a5bdbf6088d19f7"
+      },
+      "protected": false
+    },
+    {
+      "name": "fork",
+      "commit": {
+        "sha": "3fddace1bbb5216216b95db32d42ba1459ef0656",
+        "url": "https://api.github.com/repos/discord/octocrab/commits/3fddace1bbb5216216b95db32d42ba1459ef0656"
+      },
+      "protected": false
+    },
+    {
+      "name": "master",
+      "commit": {
+        "sha": "a2e79b850fa5f4d083466ba2ccefdc979c72ceb5",
+        "url": "https://api.github.com/repos/discord/octocrab/commits/a2e79b850fa5f4d083466ba2ccefdc979c72ceb5"
+      },
+      "protected": false
+    },
+    {
+      "name": "retry-delays",
+      "commit": {
+        "sha": "ecc7063bab7d1531564c403ddc9a284691e1837b",
+        "url": "https://api.github.com/repos/discord/octocrab/commits/ecc7063bab7d1531564c403ddc9a284691e1837b"
+      },
+      "protected": false
+    }
+  ],
   "last5": {
     "commits": [
       {
