@@ -91426,6 +91426,199 @@ strong {
     border: 2px solid CanvasText
 }
 
+.appText-3s1de- {
+    text-align: left
+}
+
+.switchContainer-2II_Xm {
+    -ms-flex-negative: 0;
+    flex-shrink: 0;
+    margin-left: 8px
+}
+
+.toggleContainer-3Cpmim {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    padding: 16;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center
+}
+
+.icon--8wfnj {
+    border-radius: 100%;
+    margin-right: 16px
+}
+
+.headerContainer-1UzS17 {
+    -webkit-box-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center
+}
+
+.separator-2TJzL9 {
+    margin-bottom: 16px;
+    margin-top: 16px;
+    border-bottom: 1px solid var(--background-modifier-accent);
+    width: 100%
+}
+
+.modalHeader-1V_jCD {
+    padding-bottom: 8px
+}
+
+.modalContent-1ZUD1n,
+.modalHeader-1V_jCD {
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center
+}
+
+.modalContent-1ZUD1n {
+    margin: 24px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    text-align: center
+}
+
+.modalError-3fbeTx {
+    padding-bottom: 8px
+}
+
+.modalFooter-ZEdrhz {
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between
+}
+
+.divider-3wTkAL {
+    background-color: var(--background-modifier-accent);
+    opacity: .5
+}
+
+.textRow-V2bTnr {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    text-align: left;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    margin: 8px;
+    -webkit-box-pack: left;
+    -ms-flex-pack: left;
+    justify-content: left
+}
+
+.detailsContainer-XGhH8q {
+    margin-top: 20px;
+    border-radius: 8px;
+    background-color: var(--background-secondary);
+    padding: 16px;
+    width: 100%
+}
+
+.animation-2OIbqh {
+    height: 200px;
+    margin-top: 24px;
+    margin-bottom: 24px
+}
+
+.icon-_zlJeq {
+    color: var(--header-secondary);
+    margin: 8px
+}
+
+.appIconWrapper-3AcCye {
+    width: 40px;
+    height: 40px;
+    border-radius: 20px;
+    background-color: var(--background-secondary-alt);
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    margin-right: 20px
+}
+
+.separator-NoZXD0 {
+    margin-top: 16px;
+    margin-bottom: 16px;
+    border-bottom: 1px solid var(--background-modifier-accent)
+}
+
+.spinner-2h6onV {
+    -ms-flex-item-align: center;
+    align-self: center;
+    margin-top: 64px
+}
+
+.appText-EOcyAZ {
+    text-align: left
+}
+
+.toggleContainer-1PwUNd {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    padding-left: 12px;
+    padding-right: 4px;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center
+}
+
+.icon-_OZ-gp {
+    border-radius: 100%;
+    margin-right: 16px
+}
+
+.headerContainer-2MBVfa {
+    -webkit-box-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center
+}
+
+.separator-2i-1ZB {
+    margin-top: 12px
+}
+
 .connectionList-3wSnMU {
     margin-bottom: 12px;
     margin-right: 8px
@@ -91715,6 +91908,35 @@ strong {
     border-top: 1px solid var(--profile-body-divider-color)
 }
 
+.appButtonColor-10Y5jE {
+    background-color: var(--profile-gradient-button-color);
+    color: var(--white-500);
+    -webkit-transition: opacity .2s ease-in-out;
+    transition: opacity .2s ease-in-out
+}
+
+.appButtonColor-10Y5jE:hover {
+    opacity: .8
+}
+
+.appButtonColor-10Y5jE:active {
+    opacity: .9
+}
+
+.appButton-1Gq9ka {
+    margin-top: 12px;
+    padding: 0
+}
+
+.appButtonContainer-duT6Z2 {
+    padding-left: 12px;
+    padding-right: 4px
+}
+
+.appListThemedContainer-G_kh8Q {
+    margin-top: 12px
+}
+
 @-webkit-keyframes placeholderPulse-3fdRIz {
     0% {
         opacity: .5
@@ -91902,155 +92124,6 @@ strong {
 .splashText-Oy0xry {
     width: 580px;
     text-align: center
-}
-
-.appText-3s1de- {
-    text-align: left
-}
-
-.switchContainer-2II_Xm {
-    -ms-flex-negative: 0;
-    flex-shrink: 0;
-    margin-left: 8px
-}
-
-.toggleContainer-3Cpmim {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: row;
-    flex-direction: row;
-    padding: 16;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center
-}
-
-.icon--8wfnj {
-    border-radius: 100%;
-    margin-right: 16px
-}
-
-.headerContainer-1UzS17 {
-    -webkit-box-flex: 1;
-    -ms-flex: 1;
-    flex: 1;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: column;
-    flex-direction: column;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    justify-content: center
-}
-
-.separator-2TJzL9 {
-    margin-bottom: 16px;
-    margin-top: 16px;
-    border-bottom: 1px solid var(--background-modifier-accent);
-    width: 100%
-}
-
-.modalHeader-1V_jCD {
-    padding-bottom: 8px
-}
-
-.modalContent-1ZUD1n,
-.modalHeader-1V_jCD {
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center
-}
-
-.modalContent-1ZUD1n {
-    margin: 24px;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: column;
-    flex-direction: column;
-    text-align: center
-}
-
-.modalError-3fbeTx {
-    padding-bottom: 8px
-}
-
-.modalFooter-ZEdrhz {
-    -webkit-box-pack: justify;
-    -ms-flex-pack: justify;
-    justify-content: space-between
-}
-
-.divider-3wTkAL {
-    background-color: var(--background-modifier-accent);
-    opacity: .5
-}
-
-.textRow-V2bTnr {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    text-align: left;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
-    margin: 8px;
-    -webkit-box-pack: left;
-    -ms-flex-pack: left;
-    justify-content: left
-}
-
-.detailsContainer-XGhH8q {
-    margin-top: 20px;
-    border-radius: 8px;
-    background-color: var(--background-secondary);
-    padding: 16px;
-    width: 100%
-}
-
-.animation-2OIbqh {
-    height: 200px;
-    margin-top: 24px;
-    margin-bottom: 24px
-}
-
-.icon-_zlJeq {
-    color: var(--header-secondary);
-    margin: 8px
-}
-
-.appIconWrapper-3AcCye {
-    width: 40px;
-    height: 40px;
-    border-radius: 20px;
-    background-color: var(--background-secondary-alt);
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    justify-content: center;
-    margin-right: 20px
-}
-
-.separator-NoZXD0 {
-    margin-top: 16px;
-    margin-bottom: 16px;
-    border-bottom: 1px solid var(--background-modifier-accent)
-}
-
-.spinner-2h6onV {
-    -ms-flex-item-align: center;
-    align-self: center;
-    margin-top: 64px
 }
 
 .divider-2e_YUL {
@@ -153242,4 +153315,4 @@ html .invoiceCancelRow-dVOR64 {
     flex-direction: column
 }
 
-/*# sourceMappingURL=40532.33542fee9c1ab047700a.css.map*/
+/*# sourceMappingURL=40532.75665eb9cb19831f49c0.css.map*/
