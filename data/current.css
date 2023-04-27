@@ -15244,51 +15244,6 @@ html.disable-forced-colors * {
     background-color: var(--white-500)
 }
 
-@-webkit-keyframes fadeIn-3NGlau {
-    0% {
-        opacity: 0
-    }
-
-    to {
-        opacity: 1
-    }
-}
-
-@keyframes fadeIn-3NGlau {
-    0% {
-        opacity: 0
-    }
-
-    to {
-        opacity: 1
-    }
-}
-
-@-webkit-keyframes slideIn-Yp0yBa {
-    0% {
-        margin-top: -40px
-    }
-
-    to {
-        margin-top: 0
-    }
-}
-
-@keyframes slideIn-Yp0yBa {
-    0% {
-        margin-top: -40px
-    }
-
-    to {
-        margin-top: 0
-    }
-}
-
-.animatedBar-2xsz-8 {
-    -webkit-animation: fadeIn-3NGlau .4s, slideIn-Yp0yBa .4s;
-    animation: fadeIn-3NGlau .4s, slideIn-Yp0yBa .4s
-}
-
 .newMessagesBar-1hF-9G {
     height: 32px;
     top: 0;
@@ -153271,4 +153226,4 @@ html .invoiceCancelRow-dVOR64 {
     flex-direction: column
 }
 
-/*# sourceMappingURL=40532.808a9a167fcf95e98c2f.css.map*/
+/*# sourceMappingURL=40532.eead88483950d456769f.css.map*/
