@@ -51120,7 +51120,7 @@ input[type=checked]:focus-visible+.label-3TDpbn {
 }
 
 .root-doEkFK {
-    width: 440px
+    width: 480px
 }
 
 .header-5ig3MO {
@@ -51135,8 +51135,15 @@ input[type=checked]:focus-visible+.label-3TDpbn {
     padding-top: 48px
 }
 
+.heroContainer-1a0uBW {
+    background-color: var(--background-secondary);
+    padding: 16px;
+    border-radius: 4px;
+    width: 85%
+}
+
 .hero-1xn1QT {
-    margin-bottom: 8px
+    width: 100%
 }
 
 .paragraph-2s_2oS {
@@ -153392,4 +153399,4 @@ html .invoiceCancelRow-dVOR64 {
     flex-direction: column
 }
 
-/*# sourceMappingURL=40532.6e05999bb10e20dfa801.css.map*/
+/*# sourceMappingURL=40532.b54b4d90b61c141e47f4.css.map*/
