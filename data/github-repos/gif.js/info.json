@@ -57,32 +57,7 @@
     "triage": false,
     "pull": false
   },
-  "branches": [
-    {
-      "name": "gh-pages",
-      "commit": {
-        "sha": "5deda626af3449d16a23cdb38c3907d76e433f7d",
-        "url": "https://api.github.com/repos/discord/gif.js/commits/5deda626af3449d16a23cdb38c3907d76e433f7d"
-      },
-      "protected": false
-    },
-    {
-      "name": "master",
-      "commit": {
-        "sha": "08b36487921a36716eb81f39a96ae997aed6991e",
-        "url": "https://api.github.com/repos/discord/gif.js/commits/08b36487921a36716eb81f39a96ae997aed6991e"
-      },
-      "protected": false
-    },
-    {
-      "name": "wasm",
-      "commit": {
-        "sha": "f536b98c851c7eb30699ae6599cc49c6b6c6d5ae",
-        "url": "https://api.github.com/repos/discord/gif.js/commits/f536b98c851c7eb30699ae6599cc49c6b6c6d5ae"
-      },
-      "protected": false
-    }
-  ],
+  "branches": [],
   "last5": {
     "commits": [
       {

@@ -51,16 +51,7 @@
     "triage": false,
     "pull": false
   },
-  "branches": [
-    {
-      "name": "master",
-      "commit": {
-        "sha": "8407a1ed57b3a9bfc700fb169a7436a42e3fe537",
-        "url": "https://api.github.com/repos/discord/unsplit/commits/8407a1ed57b3a9bfc700fb169a7436a42e3fe537"
-      },
-      "protected": false
-    }
-  ],
+  "branches": [],
   "last5": {
     "commits": [
       {

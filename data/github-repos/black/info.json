@@ -57,7 +57,72 @@
     "triage": false,
     "pull": false
   },
-  "branches": [],
+  "branches": [
+    {
+      "name": "break-on-delimiters",
+      "commit": {
+        "sha": "9d9da76fedbd4eb7e1d639817692fdf3c4314549",
+        "url": "https://api.github.com/repos/discord/black/commits/9d9da76fedbd4eb7e1d639817692fdf3c4314549"
+      },
+      "protected": false
+    },
+    {
+      "name": "dependabot/pip/bleach-3.1.4",
+      "commit": {
+        "sha": "5943401bea701838b3297d844e4f4f10899905f3",
+        "url": "https://api.github.com/repos/discord/black/commits/5943401bea701838b3297d844e4f4f10899905f3"
+      },
+      "protected": false
+    },
+    {
+      "name": "dirty-docs",
+      "commit": {
+        "sha": "8d862ab2e8ac3a14da6585f0ae081914bd81588d",
+        "url": "https://api.github.com/repos/discord/black/commits/8d862ab2e8ac3a14da6585f0ae081914bd81588d"
+      },
+      "protected": false
+    },
+    {
+      "name": "discord",
+      "commit": {
+        "sha": "1924f4627a126514563773ddb5cb3e0cae8a8d91",
+        "url": "https://api.github.com/repos/discord/black/commits/1924f4627a126514563773ddb5cb3e0cae8a8d91"
+      },
+      "protected": false
+    },
+    {
+      "name": "main",
+      "commit": {
+        "sha": "d4a85643a465f5fae2113d07d22d021d4af4795a",
+        "url": "https://api.github.com/repos/discord/black/commits/d4a85643a465f5fae2113d07d22d021d4af4795a"
+      },
+      "protected": false
+    },
+    {
+      "name": "poetry",
+      "commit": {
+        "sha": "870ff7a793617cc81bd65408438e7779cd202120",
+        "url": "https://api.github.com/repos/discord/black/commits/870ff7a793617cc81bd65408438e7779cd202120"
+      },
+      "protected": false
+    },
+    {
+      "name": "stable",
+      "commit": {
+        "sha": "6bedb5c58a7d8c25aa9509f8217bc24e9797e90d",
+        "url": "https://api.github.com/repos/discord/black/commits/6bedb5c58a7d8c25aa9509f8217bc24e9797e90d"
+      },
+      "protected": false
+    },
+    {
+      "name": "stdout_stderr",
+      "commit": {
+        "sha": "b3e5ea576a5b725731f0c6eb69be5534795fffbd",
+        "url": "https://api.github.com/repos/discord/black/commits/b3e5ea576a5b725731f0c6eb69be5534795fffbd"
+      },
+      "protected": false
+    }
+  ],
   "last5": {
     "commits": [
       {

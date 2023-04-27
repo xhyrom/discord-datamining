@@ -20,7 +20,7 @@
   "updated_at": "2022-04-16T11:37:26Z",
   "pushed_at": "2023-04-27T17:33:24Z",
   "homepage": "",
-  "size": 382,
+  "size": 297,
   "stargazers_count": 1,
   "watchers_count": 1,
   "language": "Rust",
@@ -57,32 +57,7 @@
     "triage": false,
     "pull": false
   },
-  "branches": [
-    {
-      "name": "ci-gh-actions",
-      "commit": {
-        "sha": "73adb32f44ba962701b3148e1a211474b24ba60a",
-        "url": "https://api.github.com/repos/discord/faiss-rs/commits/73adb32f44ba962701b3148e1a211474b24ba60a"
-      },
-      "protected": false
-    },
-    {
-      "name": "master",
-      "commit": {
-        "sha": "a5a64ec4b69887de162856f9c7fd591d24de49aa",
-        "url": "https://api.github.com/repos/discord/faiss-rs/commits/a5a64ec4b69887de162856f9c7fd591d24de49aa"
-      },
-      "protected": false
-    },
-    {
-      "name": "upstream",
-      "commit": {
-        "sha": "09aed049b79d8f15140caeeda683106257ba89c4",
-        "url": "https://api.github.com/repos/discord/faiss-rs/commits/09aed049b79d8f15140caeeda683106257ba89c4"
-      },
-      "protected": false
-    }
-  ],
+  "branches": [],
   "last5": {
     "commits": [
       {

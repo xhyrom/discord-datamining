@@ -57,24 +57,7 @@
     "triage": false,
     "pull": false
   },
-  "branches": [
-    {
-      "name": "discord",
-      "commit": {
-        "sha": "112585437a89a29ea48d0c3c30da406667d7704f",
-        "url": "https://api.github.com/repos/discord/go-jsonnet/commits/112585437a89a29ea48d0c3c30da406667d7704f"
-      },
-      "protected": false
-    },
-    {
-      "name": "main",
-      "commit": {
-        "sha": "ec039600bc7c7669dfdc91de2b4e446485591b4d",
-        "url": "https://api.github.com/repos/discord/go-jsonnet/commits/ec039600bc7c7669dfdc91de2b4e446485591b4d"
-      },
-      "protected": false
-    }
-  ],
+  "branches": [],
   "last5": {
     "commits": [
       {
