@@ -332,7 +332,278 @@
       }
     ],
     "releases": [],
-    "issues": [],
+    "issues": [
+      {
+        "url": "https://api.github.com/repos/discord/pre-commit/issues/13",
+        "id": 1371786500,
+        "node_id": "PR_kwDOFwiOVM4-4e_U",
+        "number": 13,
+        "title": "Normalize Metrics command",
+        "user": {
+          "login": "chrisharris-discord",
+          "id": 109116615,
+          "node_id": "U_kgDOBoD8xw",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/chrisharris-discord",
+          "type": "User",
+          "site_admin": false
+        },
+        "labels": [
+          {
+            "id": 3891242116,
+            "node_id": "LA_kwDOFwiOVM7n76SE",
+            "url": "https://api.github.com/repos/discord/pre-commit/labels/python",
+            "name": "python",
+            "color": "ededed",
+            "default": false,
+            "description": null
+          }
+        ],
+        "state": "closed",
+        "locked": false,
+        "assignee": null,
+        "assignees": [],
+        "milestone": null,
+        "comments": 0,
+        "created_at": "2022-09-13T17:36:19Z",
+        "updated_at": "2022-09-13T17:37:38Z",
+        "closed_at": "2022-09-13T17:37:37Z",
+        "author_association": "NONE",
+        "active_lock_reason": null,
+        "draft": false,
+        "pull_request": {
+          "url": "https://api.github.com/repos/discord/pre-commit/pulls/13",
+          "merged_at": "2022-09-13T17:37:37Z"
+        },
+        "body": "The hook commands get normalized, meaning they work on Windows machines.  The metrics command doesn't, resulting in pre-commit failure on Windows when given the same path to clyde as the hooks.\r\n\r\nThis normalizes that command so we can report metrics and thus pass pre-commit.  Tested locally on my Windows machine.",
+        "reactions": {
+          "url": "https://api.github.com/repos/discord/pre-commit/issues/13/reactions",
+          "total_count": 0,
+          "+1": 0,
+          "-1": 0,
+          "laugh": 0,
+          "hooray": 0,
+          "confused": 0,
+          "heart": 0,
+          "rocket": 0,
+          "eyes": 0
+        },
+        "performed_via_github_app": null,
+        "state_reason": null
+      },
+      {
+        "url": "https://api.github.com/repos/discord/pre-commit/issues/12",
+        "id": 1158653450,
+        "node_id": "PR_kwDOFwiOVM4z52SJ",
+        "number": 12,
+        "title": "Fix file computation when pushing a new branch",
+        "user": {
+          "login": "zombiezen",
+          "id": 181535,
+          "node_id": "MDQ6VXNlcjE4MTUzNQ==",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/zombiezen",
+          "type": "User",
+          "site_admin": false
+        },
+        "labels": [
+          {
+            "id": 3891242116,
+            "node_id": "LA_kwDOFwiOVM7n76SE",
+            "url": "https://api.github.com/repos/discord/pre-commit/labels/python",
+            "name": "python",
+            "color": "ededed",
+            "default": false,
+            "description": null
+          }
+        ],
+        "state": "closed",
+        "locked": false,
+        "assignee": null,
+        "assignees": [],
+        "milestone": null,
+        "comments": 0,
+        "created_at": "2022-03-03T16:53:13Z",
+        "updated_at": "2022-03-04T16:10:56Z",
+        "closed_at": "2022-03-04T16:10:56Z",
+        "author_association": "MEMBER",
+        "active_lock_reason": null,
+        "draft": false,
+        "pull_request": {
+          "url": "https://api.github.com/repos/discord/pre-commit/pulls/12",
+          "merged_at": "2022-03-04T16:10:56Z"
+        },
+        "body": "I missed this in #11",
+        "reactions": {
+          "url": "https://api.github.com/repos/discord/pre-commit/issues/12/reactions",
+          "total_count": 0,
+          "+1": 0,
+          "-1": 0,
+          "laugh": 0,
+          "hooray": 0,
+          "confused": 0,
+          "heart": 0,
+          "rocket": 0,
+          "eyes": 0
+        },
+        "performed_via_github_app": null,
+        "state_reason": null
+      },
+      {
+        "url": "https://api.github.com/repos/discord/pre-commit/issues/11",
+        "id": 1132957336,
+        "node_id": "PR_kwDOFwiOVM4yircG",
+        "number": 11,
+        "title": "Always run the pre-push hook",
+        "user": {
+          "login": "zombiezen",
+          "id": 181535,
+          "node_id": "MDQ6VXNlcjE4MTUzNQ==",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/zombiezen",
+          "type": "User",
+          "site_admin": false
+        },
+        "labels": [
+          {
+            "id": 3891242116,
+            "node_id": "LA_kwDOFwiOVM7n76SE",
+            "url": "https://api.github.com/repos/discord/pre-commit/labels/python",
+            "name": "python",
+            "color": "ededed",
+            "default": false,
+            "description": null
+          }
+        ],
+        "state": "closed",
+        "locked": false,
+        "assignee": null,
+        "assignees": [],
+        "milestone": null,
+        "comments": 0,
+        "created_at": "2022-02-11T18:38:23Z",
+        "updated_at": "2022-03-03T16:31:28Z",
+        "closed_at": "2022-03-03T16:31:26Z",
+        "author_association": "MEMBER",
+        "active_lock_reason": null,
+        "draft": false,
+        "pull_request": {
+          "url": "https://api.github.com/repos/discord/pre-commit/pulls/11",
+          "merged_at": "2022-03-03T16:31:26Z"
+        },
+        "body": "Part of https://app.asana.com/0/846159912427140/1201790261042857/f",
+        "reactions": {
+          "url": "https://api.github.com/repos/discord/pre-commit/issues/11/reactions",
+          "total_count": 0,
+          "+1": 0,
+          "-1": 0,
+          "laugh": 0,
+          "hooray": 0,
+          "confused": 0,
+          "heart": 0,
+          "rocket": 0,
+          "eyes": 0
+        },
+        "performed_via_github_app": null,
+        "state_reason": null
+      },
+      {
+        "url": "https://api.github.com/repos/discord/pre-commit/issues/10",
+        "id": 1086095776,
+        "node_id": "PR_kwDOFwiOVM4wJYvj",
+        "number": 10,
+        "title": "Silence the pushd/popd output in the editor hook script",
+        "user": {
+          "login": "zombiezen",
+          "id": 181535,
+          "node_id": "MDQ6VXNlcjE4MTUzNQ==",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/zombiezen",
+          "type": "User",
+          "site_admin": false
+        },
+        "labels": [],
+        "state": "closed",
+        "locked": false,
+        "assignee": null,
+        "assignees": [],
+        "milestone": null,
+        "comments": 1,
+        "created_at": "2021-12-21T18:19:30Z",
+        "updated_at": "2021-12-21T23:06:07Z",
+        "closed_at": "2021-12-21T23:06:06Z",
+        "author_association": "MEMBER",
+        "active_lock_reason": null,
+        "draft": false,
+        "pull_request": {
+          "url": "https://api.github.com/repos/discord/pre-commit/pulls/10",
+          "merged_at": "2021-12-21T23:06:06Z"
+        },
+        "body": null,
+        "reactions": {
+          "url": "https://api.github.com/repos/discord/pre-commit/issues/10/reactions",
+          "total_count": 0,
+          "+1": 0,
+          "-1": 0,
+          "laugh": 0,
+          "hooray": 0,
+          "confused": 0,
+          "heart": 0,
+          "rocket": 0,
+          "eyes": 0
+        },
+        "performed_via_github_app": null,
+        "state_reason": null
+      },
+      {
+        "url": "https://api.github.com/repos/discord/pre-commit/issues/9",
+        "id": 1079093444,
+        "node_id": "PR_kwDOFwiOVM4vyfwu",
+        "number": 9,
+        "title": "Be more robust to different git binary names",
+        "user": {
+          "login": "ddfisher",
+          "id": 245905,
+          "node_id": "MDQ6VXNlcjI0NTkwNQ==",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/ddfisher",
+          "type": "User",
+          "site_admin": false
+        },
+        "labels": [],
+        "state": "closed",
+        "locked": false,
+        "assignee": null,
+        "assignees": [],
+        "milestone": null,
+        "comments": 0,
+        "created_at": "2021-12-13T22:25:44Z",
+        "updated_at": "2021-12-13T22:28:28Z",
+        "closed_at": "2021-12-13T22:28:28Z",
+        "author_association": "NONE",
+        "active_lock_reason": null,
+        "draft": false,
+        "pull_request": {
+          "url": "https://api.github.com/repos/discord/pre-commit/pulls/9",
+          "merged_at": "2021-12-13T22:28:28Z"
+        },
+        "body": "This wasn't working properly on my M1 mac, because the git command was called `/Library/Developer/CommandLineTools/usr/bin/git` -- this fixes that and makes the whole thing slightly more robust.\r\n\r\nAlso has minor bugfix for platform name. >_>",
+        "reactions": {
+          "url": "https://api.github.com/repos/discord/pre-commit/issues/9/reactions",
+          "total_count": 0,
+          "+1": 0,
+          "-1": 0,
+          "laugh": 0,
+          "hooray": 0,
+          "confused": 0,
+          "heart": 0,
+          "rocket": 0,
+          "eyes": 0
+        },
+        "performed_via_github_app": null,
+        "state_reason": null
+      }
+    ],
     "pullRequests": []
   }
 }
