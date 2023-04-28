@@ -148823,7 +148823,8 @@ html .invoiceCancelRow-3s2UuC {
     top: 24px;
     right: 24px;
     color: var(--interactive-normal);
-    z-index: 1
+    z-index: 1;
+    cursor: pointer
 }
 
 .modalContent-GdtQ2b {
@@ -153451,4 +153452,4 @@ html .invoiceCancelRow-dVOR64 {
     flex-direction: column
 }
 
-/*# sourceMappingURL=40532.7a8b35687207d4306283.css.map*/
+/*# sourceMappingURL=40532.641b18220bbde3e185e4.css.map*/
