@@ -51,7 +51,16 @@
     "triage": false,
     "pull": false
   },
-  "branches": [],
+  "branches": [
+    {
+      "name": "master",
+      "commit": {
+        "sha": "e3c86e07015d2c4d4a2b663093875c071da55be4",
+        "url": "https://api.github.com/repos/discord/parse_trans/commits/e3c86e07015d2c4d4a2b663093875c071da55be4"
+      },
+      "protected": false
+    }
+  ],
   "last5": {
     "commits": [
       {

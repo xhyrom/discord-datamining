@@ -57,7 +57,32 @@
     "triage": false,
     "pull": false
   },
-  "branches": [],
+  "branches": [
+    {
+      "name": "fix-missing-error-message",
+      "commit": {
+        "sha": "29cbc759ae9f48837e3219357e7737d5aa684c58",
+        "url": "https://api.github.com/repos/discord/bugsnag-react-native/commits/29cbc759ae9f48837e3219357e7737d5aa684c58"
+      },
+      "protected": false
+    },
+    {
+      "name": "kattrali/handle-unhandled-promise-rejections",
+      "commit": {
+        "sha": "bb22cdfc5b8cbaa13fee2096a22130c47bfcb5e4",
+        "url": "https://api.github.com/repos/discord/bugsnag-react-native/commits/bb22cdfc5b8cbaa13fee2096a22130c47bfcb5e4"
+      },
+      "protected": false
+    },
+    {
+      "name": "master",
+      "commit": {
+        "sha": "4cb6eee3b4c140e458dc9c02c704a3beea57811c",
+        "url": "https://api.github.com/repos/discord/bugsnag-react-native/commits/4cb6eee3b4c140e458dc9c02c704a3beea57811c"
+      },
+      "protected": false
+    }
+  ],
   "last5": {
     "commits": [
       {

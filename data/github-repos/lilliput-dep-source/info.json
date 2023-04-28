@@ -51,7 +51,16 @@
     "triage": false,
     "pull": false
   },
-  "branches": [],
+  "branches": [
+    {
+      "name": "master",
+      "commit": {
+        "sha": "0c6b005b495d7acdfdd4e615eae26820f17b7c34",
+        "url": "https://api.github.com/repos/discord/lilliput-dep-source/commits/0c6b005b495d7acdfdd4e615eae26820f17b7c34"
+      },
+      "protected": false
+    }
+  ],
   "last5": {
     "commits": [
       {
