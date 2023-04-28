@@ -14354,6 +14354,36 @@ html.disable-forced-colors * {
     }
 }
 
+.wrapper-z5ab_q {
+    position: relative;
+    overflow: hidden;
+    width: 8px;
+    height: 48px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: start;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+    contain: layout size
+}
+
+.item-2LIpTv {
+    position: absolute;
+    display: block;
+    width: 8px;
+    border-radius: 0 4px 4px 0;
+    margin-left: -4px;
+    background-color: var(--header-primary)
+}
+
+.enable-forced-colors .item-2LIpTv {
+    background-color: CanvasText
+}
+
 .wrapper-7TYpwX {
     -webkit-box-pack: end;
     -ms-flex-pack: end;
@@ -14491,7 +14521,8 @@ html.disable-forced-colors * {
     padding-right: 8px;
     padding-bottom: 4px;
     cursor: pointer;
-    border-radius: 8px
+    border-radius: 8px;
+    position: relative
 }
 
 .container-3jhHBq:hover {
@@ -14579,6 +14610,12 @@ html.disable-forced-colors * {
     -webkit-transform: translateY(.5px);
     transform: translateY(.5px);
     color: var(--interactive-active)
+}
+
+.unreadPill-yJwpi6 {
+    position: absolute;
+    top: 24px;
+    left: -8px
 }
 
 .backupContainer-2nBut3 {
@@ -15819,8 +15856,7 @@ html.disable-forced-colors * {
     color: var(--interactive-active);
     min-width: 16px;
     min-height: 16px;
-    margin-right: 4px;
-    margin-left: 8px
+    margin-right: 4px
 }
 
 .newTopicsBarInitial-13a821 {
@@ -15939,8 +15975,7 @@ html.disable-forced-colors * {
 .topicsPillSummaryIcon-1PEtjR {
     min-width: 16px;
     min-height: 16px;
-    margin-right: 4px;
-    margin-left: 8px
+    margin-right: 4px
 }
 
 .topicsPillTextTitle-1hyJ9a {
@@ -64933,7 +64968,8 @@ strong {
     -webkit-box-pack: start;
     -ms-flex-pack: start;
     justify-content: flex-start;
-    pointer-events: auto
+    pointer-events: auto;
+    border-top: thin solid var(--text-brand)
 }
 
 .summaryDividerStart-1_zCue {
@@ -64950,13 +64986,13 @@ strong {
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
-    color: var(--interactive-active);
+    color: var(--text-brand);
     line-height: 18px;
     font-size: 14px;
     padding-right: 14px;
     text-transform: capitalize;
-    margin-left: 14px;
-    padding-left: 6px;
+    margin-left: 8px;
+    padding-left: 4px;
     font-weight: 500
 }
 
@@ -64979,10 +65015,12 @@ strong {
 }
 
 .summaryStartIcon-hGe2q_ {
+    color: var(--text-brand);
     padding-right: 4px
 }
 
 .summaryEndIcon-eZuYUJ {
+    color: var(--text-brand);
     -ms-flex-item-align: end;
     align-self: flex-end;
     padding-left: 26px;
@@ -65015,7 +65053,8 @@ strong {
     cursor: pointer;
     padding: 8px;
     border-radius: 16px;
-    background: var(--background-accent)
+    color: var(--interactive-normal);
+    background: var(--background-secondary-alt)
 }
 
 .thumbIcon-3EW1GB:active,
@@ -80022,36 +80061,6 @@ strong {
 
 .channelName-2Lr3Jq {
     border-radius: 8px
-}
-
-.wrapper-z5ab_q {
-    position: relative;
-    overflow: hidden;
-    width: 8px;
-    height: 48px;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
-    -webkit-box-pack: start;
-    -ms-flex-pack: start;
-    justify-content: flex-start;
-    contain: layout size
-}
-
-.item-2LIpTv {
-    position: absolute;
-    display: block;
-    width: 8px;
-    border-radius: 0 4px 4px 0;
-    margin-left: -4px;
-    background-color: var(--header-primary)
-}
-
-.enable-forced-colors .item-2LIpTv {
-    background-color: CanvasText
 }
 
 .wrapper-3kah-n {
@@ -133080,6 +133089,47 @@ html .invoiceCancelRow-3s2UuC {
     opacity: .5
 }
 
+.ratingsSelector-1wzr0Z {
+    width: auto;
+    gap: 8px
+}
+
+.emoji--4NH5B {
+    background-position: 50%;
+    background-repeat: no-repeat;
+    padding: 12px 32px;
+    width: 90px;
+    height: 64px;
+    border: 2px solid var(--brand-500);
+    border-radius: 20px;
+    cursor: pointer;
+    -webkit-filter: grayscale(100%);
+    filter: grayscale(100%);
+    -webkit-transition: all .2s ease;
+    transition: all .2s ease;
+    -webkit-transition-property: -webkit-transform opacity filter;
+    transition-property: -webkit-transform opacity filter;
+    transition-property: transform opacity filter;
+    transition-property: transform opacity filter, -webkit-transform opacity filter
+}
+
+.emoji--4NH5B.selected-rn_0yd {
+    -webkit-filter: none;
+    filter: none
+}
+
+.emoji--4NH5B:hover {
+    background-color: var(--background-modifier-hover)
+}
+
+.emojiThumbsDown-1NKEjd {
+    background-image: url(/assets/24632aeaea78f1e93941b4c149a8bf9f.svg)
+}
+
+.emojiThumbsUp-3xnCbT {
+    background-image: url(/assets/642eef73cf98bf9e089be73eeab55a95.svg)
+}
+
 .bottomMargin-LcI_r3 {
     margin-bottom: 16px
 }
@@ -151406,47 +151456,6 @@ html .invoiceCancelRow-3s2UuC {
     margin-top: 16px
 }
 
-.ratingsSelector-1wzr0Z {
-    width: auto;
-    gap: 8px
-}
-
-.emoji--4NH5B {
-    background-position: 50%;
-    background-repeat: no-repeat;
-    padding: 12px 32px;
-    width: 90px;
-    height: 64px;
-    border: 2px solid var(--brand-500);
-    border-radius: 20px;
-    cursor: pointer;
-    -webkit-filter: grayscale(100%);
-    filter: grayscale(100%);
-    -webkit-transition: all .2s ease;
-    transition: all .2s ease;
-    -webkit-transition-property: -webkit-transform opacity filter;
-    transition-property: -webkit-transform opacity filter;
-    transition-property: transform opacity filter;
-    transition-property: transform opacity filter, -webkit-transform opacity filter
-}
-
-.emoji--4NH5B.selected-rn_0yd {
-    -webkit-filter: none;
-    filter: none
-}
-
-.emoji--4NH5B:hover {
-    background-color: var(--background-modifier-hover)
-}
-
-.emojiThumbsDown-1NKEjd {
-    background-image: url(/assets/24632aeaea78f1e93941b4c149a8bf9f.svg)
-}
-
-.emojiThumbsUp-3xnCbT {
-    background-image: url(/assets/642eef73cf98bf9e089be73eeab55a95.svg)
-}
-
 .gifPicker-3ATLsE {
     padding-top: 16px;
     max-height: 560px;
@@ -153584,4 +153593,4 @@ html .invoiceCancelRow-dVOR64 {
     flex-direction: column
 }
 
-/*# sourceMappingURL=40532.1fe997cca0f3140eafcb.css.map*/
+/*# sourceMappingURL=40532.1300ed0504d20d763dc5.css.map*/
