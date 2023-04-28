@@ -111220,7 +111220,16 @@ html .tabBadge-h4HGed {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
     -ms-flex-direction: column;
-    flex-direction: column
+    flex-direction: column;
+    position: relative
+}
+
+.collapseButton-3Glo20 {
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    color: var(--interactive-normal);
+    cursor: pointer
 }
 
 .channelBrowserOuter-1WBNF7 {
@@ -111228,23 +111237,30 @@ html .tabBadge-h4HGed {
 }
 
 .advancedModeQuestions-B0ISXW {
-    gap: 8px
-}
-
-.advancedModeQuestions-B0ISXW,
-.channelInfo-WolMkm {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
     -ms-flex-direction: column;
-    flex-direction: column
+    flex-direction: column;
+    gap: 8px
+}
+
+.advancedModeSingleColumn-3fwVM5 {
+    margin-bottom: 16px
 }
 
 .channelInfo-WolMkm {
     -ms-flex-negative: 1;
     flex-shrink: 1;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
     gap: 4px;
     overflow: hidden
 }
@@ -111289,7 +111305,12 @@ html .tabBadge-h4HGed {
 }
 
 .advancedModeToggle-129hme {
-    margin-top: 8px
+    margin-top: 8px;
+    margin-bottom: 16px
+}
+
+.prejoinHeader-1Uv0NR {
+    margin-top: 16px
 }
 
 .availabilityIndicator-KldT0d {
@@ -153452,4 +153473,4 @@ html .invoiceCancelRow-dVOR64 {
     flex-direction: column
 }
 
-/*# sourceMappingURL=40532.641b18220bbde3e185e4.css.map*/
+/*# sourceMappingURL=40532.b5bbab320fce1468ea22.css.map*/
