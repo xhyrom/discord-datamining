@@ -324,56 +324,7 @@
       }
     ],
     "releases": [],
-    "issues": [
-      {
-        "url": "https://api.github.com/repos/discord/exometer_core/issues/1",
-        "id": 210924770,
-        "node_id": "MDExOlB1bGxSZXF1ZXN0MTA4NDI4NDU3",
-        "number": 1,
-        "title": "Feature/merge 09c2a93",
-        "user": {
-          "login": "brian-armstrong-discord",
-          "id": 25939803,
-          "node_id": "MDQ6VXNlcjI1OTM5ODAz",
-          "gravatar_id": "",
-          "url": "https://api.github.com/users/brian-armstrong-discord",
-          "type": "User",
-          "site_admin": false
-        },
-        "labels": [],
-        "state": "open",
-        "locked": false,
-        "assignee": null,
-        "assignees": [],
-        "milestone": null,
-        "comments": 0,
-        "created_at": "2017-02-28T22:44:56Z",
-        "updated_at": "2017-02-28T22:44:56Z",
-        "closed_at": null,
-        "author_association": "NONE",
-        "active_lock_reason": null,
-        "draft": false,
-        "pull_request": {
-          "url": "https://api.github.com/repos/discord/exometer_core/pulls/1",
-          "merged_at": null
-        },
-        "body": "update this, get rid of a bunch of warnings",
-        "reactions": {
-          "url": "https://api.github.com/repos/discord/exometer_core/issues/1/reactions",
-          "total_count": 0,
-          "+1": 0,
-          "-1": 0,
-          "laugh": 0,
-          "hooray": 0,
-          "confused": 0,
-          "heart": 0,
-          "rocket": 0,
-          "eyes": 0
-        },
-        "performed_via_github_app": null,
-        "state_reason": null
-      }
-    ],
+    "issues": [],
     "pullRequests": []
   }
 }
