@@ -57,7 +57,72 @@
     "triage": false,
     "pull": false
   },
-  "branches": [],
+  "branches": [
+    {
+      "name": "add-datadog-propagator",
+      "commit": {
+        "sha": "242bd4479321d2afbbc669e744d417d5ea20d84c",
+        "url": "https://api.github.com/repos/discord/opentelemetry-rust/commits/242bd4479321d2afbbc669e744d417d5ea20d84c"
+      },
+      "protected": false
+    },
+    {
+      "name": "datadog/group-traces-before-export",
+      "commit": {
+        "sha": "4dc3fad8b3460a47e62fe5c6f1693a31c0bb5b48",
+        "url": "https://api.github.com/repos/discord/opentelemetry-rust/commits/4dc3fad8b3460a47e62fe5c6f1693a31c0bb5b48"
+      },
+      "protected": false
+    },
+    {
+      "name": "export-on-full-batch",
+      "commit": {
+        "sha": "f67c61255df91fb03b4ea0b28ad789a2cd4815b3",
+        "url": "https://api.github.com/repos/discord/opentelemetry-rust/commits/f67c61255df91fb03b4ea0b28ad789a2cd4815b3"
+      },
+      "protected": false
+    },
+    {
+      "name": "export-on-old-batch-opentracing-0-4",
+      "commit": {
+        "sha": "5edc454892a81b8f4f89e86df91472392303c5f0",
+        "url": "https://api.github.com/repos/discord/opentelemetry-rust/commits/5edc454892a81b8f4f89e86df91472392303c5f0"
+      },
+      "protected": false
+    },
+    {
+      "name": "main",
+      "commit": {
+        "sha": "f06f38b5c33ed28c5eda1459b3efa0ff8c67e961",
+        "url": "https://api.github.com/repos/discord/opentelemetry-rust/commits/f06f38b5c33ed28c5eda1459b3efa0ff8c67e961"
+      },
+      "protected": false
+    },
+    {
+      "name": "master",
+      "commit": {
+        "sha": "d44777bf85f3996e8745a988704a4fda3b81d88a",
+        "url": "https://api.github.com/repos/discord/opentelemetry-rust/commits/d44777bf85f3996e8745a988704a4fda3b81d88a"
+      },
+      "protected": false
+    },
+    {
+      "name": "tracer-provider/create-batchspanprocessor-from-env",
+      "commit": {
+        "sha": "34a4ba4998dd0afce6a4aa690c13003e8180ded1",
+        "url": "https://api.github.com/repos/discord/opentelemetry-rust/commits/34a4ba4998dd0afce6a4aa690c13003e8180ded1"
+      },
+      "protected": false
+    },
+    {
+      "name": "tracerprovider-create-bsp-from-env",
+      "commit": {
+        "sha": "0ff3ed5a324c94d9454b68ebd67c40372c490eab",
+        "url": "https://api.github.com/repos/discord/opentelemetry-rust/commits/0ff3ed5a324c94d9454b68ebd67c40372c490eab"
+      },
+      "protected": false
+    }
+  ],
   "last5": {
     "commits": [
       {
@@ -382,6 +447,209 @@
         "state_reason": null
       }
     ],
-    "pullRequests": []
+    "pullRequests": [
+      {
+        "url": "https://api.github.com/repos/discord/opentelemetry-rust/pulls/1",
+        "id": 542836179,
+        "node_id": "MDExOlB1bGxSZXF1ZXN0NTQyODM2MTc5",
+        "number": 1,
+        "state": "closed",
+        "locked": false,
+        "title": "Updates our fork of OpenTelemetry",
+        "user": {
+          "login": "willroberts",
+          "id": 2236656,
+          "node_id": "MDQ6VXNlcjIyMzY2NTY=",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/willroberts",
+          "type": "User",
+          "site_admin": false
+        },
+        "body": "",
+        "created_at": "2020-12-18T23:54:25Z",
+        "updated_at": "2020-12-19T00:10:28Z",
+        "closed_at": "2020-12-19T00:10:28Z",
+        "merged_at": null,
+        "merge_commit_sha": "a1eb707ee1052aac9575d86041f2c536f2659b95",
+        "assignee": null,
+        "assignees": [],
+        "requested_reviewers": [],
+        "requested_teams": [],
+        "labels": [],
+        "milestone": null,
+        "draft": false,
+        "head": {
+          "label": "open-telemetry:master",
+          "ref": "master",
+          "sha": "47b54eed99d9b32381193b15729be233934c08f2",
+          "user": {
+            "login": "open-telemetry",
+            "id": 49998002,
+            "node_id": "MDEyOk9yZ2FuaXphdGlvbjQ5OTk4MDAy",
+            "gravatar_id": "",
+            "url": "https://api.github.com/users/open-telemetry",
+            "type": "Organization",
+            "site_admin": false
+          },
+          "repo": {
+            "id": 221058575,
+            "node_id": "MDEwOlJlcG9zaXRvcnkyMjEwNTg1NzU=",
+            "name": "opentelemetry-rust",
+            "full_name": "open-telemetry/opentelemetry-rust",
+            "private": false,
+            "owner": {
+              "login": "open-telemetry",
+              "id": 49998002,
+              "node_id": "MDEyOk9yZ2FuaXphdGlvbjQ5OTk4MDAy",
+              "gravatar_id": "",
+              "url": "https://api.github.com/users/open-telemetry",
+              "type": "Organization",
+              "site_admin": false
+            },
+            "description": "OpenTelemetry API and SDK for Rust",
+            "fork": false,
+            "url": "https://api.github.com/repos/open-telemetry/opentelemetry-rust",
+            "created_at": "2019-11-11T19:53:32Z",
+            "updated_at": "2023-04-28T04:35:14Z",
+            "pushed_at": "2023-04-28T17:41:09Z",
+            "homepage": "https://opentelemetry.io/docs/instrumentation/rust/",
+            "size": 3866,
+            "stargazers_count": 1081,
+            "watchers_count": 1081,
+            "language": "Rust",
+            "has_issues": true,
+            "has_projects": true,
+            "has_downloads": true,
+            "has_wiki": true,
+            "has_pages": false,
+            "has_discussions": true,
+            "forks_count": 261,
+            "archived": false,
+            "disabled": false,
+            "open_issues_count": 94,
+            "license": {
+              "key": "apache-2.0",
+              "name": "Apache License 2.0",
+              "spdx_id": "Apache-2.0",
+              "url": "https://api.github.com/licenses/apache-2.0",
+              "node_id": "MDc6TGljZW5zZTI="
+            },
+            "allow_forking": true,
+            "is_template": false,
+            "web_commit_signoff_required": false,
+            "topics": [
+              "jaeger",
+              "logging",
+              "metrics",
+              "opentelemetry",
+              "prometheus",
+              "tracing",
+              "zipkin"
+            ],
+            "visibility": "public",
+            "forks": 261,
+            "open_issues": 94,
+            "watchers": 1081,
+            "default_branch": "main"
+          }
+        },
+        "base": {
+          "label": "discord:master",
+          "ref": "master",
+          "sha": "5c64f663b751f7863f7beed6a8c1e29647fdb1a0",
+          "user": {
+            "login": "discord",
+            "id": 1965106,
+            "node_id": "MDEyOk9yZ2FuaXphdGlvbjE5NjUxMDY=",
+            "gravatar_id": "",
+            "url": "https://api.github.com/users/discord",
+            "type": "Organization",
+            "site_admin": false
+          },
+          "repo": {
+            "id": 259428530,
+            "node_id": "MDEwOlJlcG9zaXRvcnkyNTk0Mjg1MzA=",
+            "name": "opentelemetry-rust",
+            "full_name": "discord/opentelemetry-rust",
+            "private": false,
+            "owner": {
+              "login": "discord",
+              "id": 1965106,
+              "node_id": "MDEyOk9yZ2FuaXphdGlvbjE5NjUxMDY=",
+              "gravatar_id": "",
+              "url": "https://api.github.com/users/discord",
+              "type": "Organization",
+              "site_admin": false
+            },
+            "description": "OpenTelemetry API and SDK for Rust",
+            "fork": true,
+            "url": "https://api.github.com/repos/discord/opentelemetry-rust",
+            "created_at": "2020-04-27T19:15:25Z",
+            "updated_at": "2021-05-19T03:11:24Z",
+            "pushed_at": "2021-01-29T00:31:36Z",
+            "homepage": "https://docs.rs/opentelemetry",
+            "size": 2057,
+            "stargazers_count": 5,
+            "watchers_count": 5,
+            "language": "Rust",
+            "has_issues": false,
+            "has_projects": true,
+            "has_downloads": true,
+            "has_wiki": true,
+            "has_pages": false,
+            "has_discussions": false,
+            "forks_count": 3,
+            "archived": false,
+            "disabled": false,
+            "open_issues_count": 0,
+            "license": {
+              "key": "apache-2.0",
+              "name": "Apache License 2.0",
+              "spdx_id": "Apache-2.0",
+              "url": "https://api.github.com/licenses/apache-2.0",
+              "node_id": "MDc6TGljZW5zZTI="
+            },
+            "allow_forking": true,
+            "is_template": false,
+            "web_commit_signoff_required": false,
+            "topics": [],
+            "visibility": "public",
+            "forks": 3,
+            "open_issues": 0,
+            "watchers": 5,
+            "default_branch": "main"
+          }
+        },
+        "_links": {
+          "self": {
+            "href": "https://api.github.com/repos/discord/opentelemetry-rust/pulls/1"
+          },
+          "html": {
+            "href": "https://github.com/discord/opentelemetry-rust/pull/1"
+          },
+          "issue": {
+            "href": "https://api.github.com/repos/discord/opentelemetry-rust/issues/1"
+          },
+          "comments": {
+            "href": "https://api.github.com/repos/discord/opentelemetry-rust/issues/1/comments"
+          },
+          "review_comments": {
+            "href": "https://api.github.com/repos/discord/opentelemetry-rust/pulls/1/comments"
+          },
+          "review_comment": {
+            "href": "https://api.github.com/repos/discord/opentelemetry-rust/pulls/comments{/number}"
+          },
+          "commits": {
+            "href": "https://api.github.com/repos/discord/opentelemetry-rust/pulls/1/commits"
+          },
+          "statuses": {
+            "href": "https://api.github.com/repos/discord/opentelemetry-rust/statuses/47b54eed99d9b32381193b15729be233934c08f2"
+          }
+        },
+        "author_association": "NONE",
+        "auto_merge": null,
+        "active_lock_reason": null
+      }
+    ]
   }
 }

@@ -51,7 +51,16 @@
     "triage": false,
     "pull": false
   },
-  "branches": [],
+  "branches": [
+    {
+      "name": "master",
+      "commit": {
+        "sha": "bdf7556d856afb58bca75461b8d5664e30e34b96",
+        "url": "https://api.github.com/repos/discord/lilliput-bench/commits/bdf7556d856afb58bca75461b8d5664e30e34b96"
+      },
+      "protected": false
+    }
+  ],
   "last5": {
     "commits": [
       {
@@ -509,6 +518,917 @@
         "state_reason": null
       }
     ],
-    "pullRequests": []
+    "pullRequests": [
+      {
+        "url": "https://api.github.com/repos/discord/lilliput-bench/pulls/5",
+        "id": 222738015,
+        "node_id": "MDExOlB1bGxSZXF1ZXN0MjIyNzM4MDE1",
+        "number": 5,
+        "state": "open",
+        "locked": false,
+        "title": "Add info how to run both tests",
+        "user": {
+          "login": "homm",
+          "id": 128982,
+          "node_id": "MDQ6VXNlcjEyODk4Mg==",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/homm",
+          "type": "User",
+          "site_admin": false
+        },
+        "body": "",
+        "created_at": "2018-10-14T19:38:43Z",
+        "updated_at": "2018-10-14T19:38:43Z",
+        "closed_at": null,
+        "merged_at": null,
+        "merge_commit_sha": "8abf494b23d24efe4c2149aa53d62cc03169e045",
+        "assignee": null,
+        "assignees": [],
+        "requested_reviewers": [],
+        "requested_teams": [],
+        "labels": [],
+        "milestone": null,
+        "draft": false,
+        "head": {
+          "label": "homm:installation-and-versions",
+          "ref": "installation-and-versions",
+          "sha": "9c559da5093720a6cdd34ce36305dd96e9d62c60",
+          "user": {
+            "login": "homm",
+            "id": 128982,
+            "node_id": "MDQ6VXNlcjEyODk4Mg==",
+            "gravatar_id": "",
+            "url": "https://api.github.com/users/homm",
+            "type": "User",
+            "site_admin": false
+          },
+          "repo": {
+            "id": 152667201,
+            "node_id": "MDEwOlJlcG9zaXRvcnkxNTI2NjcyMDE=",
+            "name": "lilliput-bench",
+            "full_name": "homm/lilliput-bench",
+            "private": false,
+            "owner": {
+              "login": "homm",
+              "id": 128982,
+              "node_id": "MDQ6VXNlcjEyODk4Mg==",
+              "gravatar_id": "",
+              "url": "https://api.github.com/users/homm",
+              "type": "User",
+              "site_admin": false
+            },
+            "description": "Benchmarker for lilliput",
+            "fork": true,
+            "url": "https://api.github.com/repos/homm/lilliput-bench",
+            "created_at": "2018-10-11T23:21:29Z",
+            "updated_at": "2019-07-31T14:09:08Z",
+            "pushed_at": "2018-10-15T21:16:12Z",
+            "homepage": null,
+            "size": 5532,
+            "stargazers_count": 1,
+            "watchers_count": 1,
+            "language": "Python",
+            "has_issues": false,
+            "has_projects": true,
+            "has_downloads": true,
+            "has_wiki": true,
+            "has_pages": false,
+            "has_discussions": false,
+            "forks_count": 0,
+            "archived": false,
+            "disabled": false,
+            "open_issues_count": 0,
+            "license": null,
+            "allow_forking": true,
+            "is_template": false,
+            "web_commit_signoff_required": false,
+            "topics": [],
+            "visibility": "public",
+            "forks": 0,
+            "open_issues": 0,
+            "watchers": 1,
+            "default_branch": "master"
+          }
+        },
+        "base": {
+          "label": "discord:master",
+          "ref": "master",
+          "sha": "bdf7556d856afb58bca75461b8d5664e30e34b96",
+          "user": {
+            "login": "discord",
+            "id": 1965106,
+            "node_id": "MDEyOk9yZ2FuaXphdGlvbjE5NjUxMDY=",
+            "gravatar_id": "",
+            "url": "https://api.github.com/users/discord",
+            "type": "Organization",
+            "site_admin": false
+          },
+          "repo": {
+            "id": 109883595,
+            "node_id": "MDEwOlJlcG9zaXRvcnkxMDk4ODM1OTU=",
+            "name": "lilliput-bench",
+            "full_name": "discord/lilliput-bench",
+            "private": false,
+            "owner": {
+              "login": "discord",
+              "id": 1965106,
+              "node_id": "MDEyOk9yZ2FuaXphdGlvbjE5NjUxMDY=",
+              "gravatar_id": "",
+              "url": "https://api.github.com/users/discord",
+              "type": "Organization",
+              "site_admin": false
+            },
+            "description": "Benchmarker for lilliput",
+            "fork": false,
+            "url": "https://api.github.com/repos/discord/lilliput-bench",
+            "created_at": "2017-11-07T19:52:23Z",
+            "updated_at": "2022-12-10T00:08:04Z",
+            "pushed_at": "2018-10-14T21:42:32Z",
+            "homepage": null,
+            "size": 3,
+            "stargazers_count": 8,
+            "watchers_count": 8,
+            "language": "Python",
+            "has_issues": true,
+            "has_projects": true,
+            "has_downloads": true,
+            "has_wiki": true,
+            "has_pages": false,
+            "has_discussions": false,
+            "forks_count": 8,
+            "archived": false,
+            "disabled": false,
+            "open_issues_count": 5,
+            "license": null,
+            "allow_forking": true,
+            "is_template": false,
+            "web_commit_signoff_required": false,
+            "topics": [],
+            "visibility": "public",
+            "forks": 8,
+            "open_issues": 5,
+            "watchers": 8,
+            "default_branch": "master"
+          }
+        },
+        "_links": {
+          "self": {
+            "href": "https://api.github.com/repos/discord/lilliput-bench/pulls/5"
+          },
+          "html": {
+            "href": "https://github.com/discord/lilliput-bench/pull/5"
+          },
+          "issue": {
+            "href": "https://api.github.com/repos/discord/lilliput-bench/issues/5"
+          },
+          "comments": {
+            "href": "https://api.github.com/repos/discord/lilliput-bench/issues/5/comments"
+          },
+          "review_comments": {
+            "href": "https://api.github.com/repos/discord/lilliput-bench/pulls/5/comments"
+          },
+          "review_comment": {
+            "href": "https://api.github.com/repos/discord/lilliput-bench/pulls/comments{/number}"
+          },
+          "commits": {
+            "href": "https://api.github.com/repos/discord/lilliput-bench/pulls/5/commits"
+          },
+          "statuses": {
+            "href": "https://api.github.com/repos/discord/lilliput-bench/statuses/9c559da5093720a6cdd34ce36305dd96e9d62c60"
+          }
+        },
+        "author_association": "NONE",
+        "auto_merge": null,
+        "active_lock_reason": null
+      },
+      {
+        "url": "https://api.github.com/repos/discord/lilliput-bench/pulls/4",
+        "id": 222704450,
+        "node_id": "MDExOlB1bGxSZXF1ZXN0MjIyNzA0NDUw",
+        "number": 4,
+        "state": "open",
+        "locked": false,
+        "title": "Fair competition",
+        "user": {
+          "login": "homm",
+          "id": 128982,
+          "node_id": "MDQ6VXNlcjEyODk4Mg==",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/homm",
+          "type": "User",
+          "site_admin": false
+        },
+        "body": "This makes the comparison a bit more fair.\r\n\r\n1. Pillow loads image codecs lazily. This heavily affects max time of `header` tests and slightly affects avg time. `Image.init()` call at start of the script fixes this.\r\n\r\nBefore:\r\n  \r\n ```\r\nJPEG 1920x1080 header read:\t1920x1080,\tavg: 0.053078 ms\tmin: 0.038862 ms\tmax: 95.713854 ms\r\nPNG 1920x1080 header read:\t1920x1080,\tavg: 0.050190 ms\tmin: 0.043869 ms\tmax: 0.578165 ms\r\nWEBP 1920x1080 header read:\t1920x1080,\tavg: 3.311477 ms\tmin: 0.232935 ms\tmax: 248.356104 ms\r\nGIF 1920x1080 header read:\t1920x1080,\tavg: 0.033193 ms\tmin: 0.028849 ms\tmax: 5.729914 ms\r\n```\r\n\r\nAfter:\r\n\r\n```\r\nJPEG 1920x1080 header read:\t1920x1080,\tavg: 0.078423 ms\tmin: 0.073910 ms\tmax: 0.518084 ms\r\nPNG 1920x1080 header read:\t1920x1080,\tavg: 0.053475 ms\tmin: 0.049829 ms\tmax: 0.409842 ms\r\nWEBP 1920x1080 header read:\t1920x1080,\tavg: 0.961201 ms\tmin: 0.244856 ms\tmax: 8.344889 ms\r\nGIF 1920x1080 header read:\t1920x1080,\tavg: 0.044504 ms\tmin: 0.036955 ms\tmax: 9.562016 ms\r\n```\r\n\r\n2. Lilliput uses `INTER_AREA` interpolation for OpenCV's resize function. Pillow uses a very flexible and high-quality resize based on convolutions. It allows to choose exact quality pf resizing and also affects performance. `LANCZOS` produces very harp images which looks much better than `INTER_AREA` interpolation. This affects not only the resize speed itself, but also speed of compression and the result size of coded images. `BICUBIC` filter a bit cheaper and its result is much closer to `INTER_AREA`, while still slightly better and shaper.\r\n\r\nBefore:\r\n\r\n```\r\nJPEG 1920x1080 => 800x600:\t112307 Bytes,\tavg: 32.13 ms\tmin: 30.00 ms\tmax: 41.77 ms\r\nPNG 1920x1080 => 800x600:\t846202 Bytes,\tavg: 267.92 ms\tmin: 263.95 ms\tmax: 328.71 ms\r\nWEBP 1920x1080 => 800x600:\t92466 Bytes,\tavg: 134.70 ms\tmin: 131.66 ms\tmax: 180.58 ms\r\nGIF 1920x1080 => 800x600:\t411470 Bytes,\tavg: 102.21 ms\tmin: 98.08 ms\tmax: 129.57 ms\r\n```\r\n\r\nAfter:\r\n\r\n```\r\nJPEG 1920x1080 => 800x600:\t107480 Bytes,\tavg: 29.71 ms\tmin: 28.45 ms\tmax: 37.43 ms\r\nPNG 1920x1080 => 800x600:\t810489 Bytes,\tavg: 278.79 ms\tmin: 270.78 ms\tmax: 336.85 ms\r\nWEBP 1920x1080 => 800x600:\t84690 Bytes,\tavg: 132.98 ms\tmin: 128.04 ms\tmax: 304.28 ms\r\nGIF 1920x1080 => 800x600:\t411470 Bytes,\tavg: 100.53 ms\tmin: 96.06 ms\tmax: 145.06 ms\r\n```\r\n\r\n3. There is an absolutely unnecessary conversion of color mode for Pillow. It adds some overheads and also converts PNG and WEBP images to RGBA mode. As a result, the size is bigger and compression is slower.",
+        "created_at": "2018-10-14T09:51:01Z",
+        "updated_at": "2020-11-17T02:22:07Z",
+        "closed_at": null,
+        "merged_at": null,
+        "merge_commit_sha": "425ad6388ae4c356dcaa242c2d70d1a4e8f2f84c",
+        "assignee": null,
+        "assignees": [],
+        "requested_reviewers": [],
+        "requested_teams": [],
+        "labels": [],
+        "milestone": null,
+        "draft": false,
+        "head": {
+          "label": "homm:fair-competition",
+          "ref": "fair-competition",
+          "sha": "d57fd77fddc10c59bd02cb414a6e202876f7f341",
+          "user": {
+            "login": "homm",
+            "id": 128982,
+            "node_id": "MDQ6VXNlcjEyODk4Mg==",
+            "gravatar_id": "",
+            "url": "https://api.github.com/users/homm",
+            "type": "User",
+            "site_admin": false
+          },
+          "repo": {
+            "id": 152667201,
+            "node_id": "MDEwOlJlcG9zaXRvcnkxNTI2NjcyMDE=",
+            "name": "lilliput-bench",
+            "full_name": "homm/lilliput-bench",
+            "private": false,
+            "owner": {
+              "login": "homm",
+              "id": 128982,
+              "node_id": "MDQ6VXNlcjEyODk4Mg==",
+              "gravatar_id": "",
+              "url": "https://api.github.com/users/homm",
+              "type": "User",
+              "site_admin": false
+            },
+            "description": "Benchmarker for lilliput",
+            "fork": true,
+            "url": "https://api.github.com/repos/homm/lilliput-bench",
+            "created_at": "2018-10-11T23:21:29Z",
+            "updated_at": "2019-07-31T14:09:08Z",
+            "pushed_at": "2018-10-15T21:16:12Z",
+            "homepage": null,
+            "size": 5532,
+            "stargazers_count": 1,
+            "watchers_count": 1,
+            "language": "Python",
+            "has_issues": false,
+            "has_projects": true,
+            "has_downloads": true,
+            "has_wiki": true,
+            "has_pages": false,
+            "has_discussions": false,
+            "forks_count": 0,
+            "archived": false,
+            "disabled": false,
+            "open_issues_count": 0,
+            "license": null,
+            "allow_forking": true,
+            "is_template": false,
+            "web_commit_signoff_required": false,
+            "topics": [],
+            "visibility": "public",
+            "forks": 0,
+            "open_issues": 0,
+            "watchers": 1,
+            "default_branch": "master"
+          }
+        },
+        "base": {
+          "label": "discord:master",
+          "ref": "master",
+          "sha": "bdf7556d856afb58bca75461b8d5664e30e34b96",
+          "user": {
+            "login": "discord",
+            "id": 1965106,
+            "node_id": "MDEyOk9yZ2FuaXphdGlvbjE5NjUxMDY=",
+            "gravatar_id": "",
+            "url": "https://api.github.com/users/discord",
+            "type": "Organization",
+            "site_admin": false
+          },
+          "repo": {
+            "id": 109883595,
+            "node_id": "MDEwOlJlcG9zaXRvcnkxMDk4ODM1OTU=",
+            "name": "lilliput-bench",
+            "full_name": "discord/lilliput-bench",
+            "private": false,
+            "owner": {
+              "login": "discord",
+              "id": 1965106,
+              "node_id": "MDEyOk9yZ2FuaXphdGlvbjE5NjUxMDY=",
+              "gravatar_id": "",
+              "url": "https://api.github.com/users/discord",
+              "type": "Organization",
+              "site_admin": false
+            },
+            "description": "Benchmarker for lilliput",
+            "fork": false,
+            "url": "https://api.github.com/repos/discord/lilliput-bench",
+            "created_at": "2017-11-07T19:52:23Z",
+            "updated_at": "2022-12-10T00:08:04Z",
+            "pushed_at": "2018-10-14T21:42:32Z",
+            "homepage": null,
+            "size": 3,
+            "stargazers_count": 8,
+            "watchers_count": 8,
+            "language": "Python",
+            "has_issues": true,
+            "has_projects": true,
+            "has_downloads": true,
+            "has_wiki": true,
+            "has_pages": false,
+            "has_discussions": false,
+            "forks_count": 8,
+            "archived": false,
+            "disabled": false,
+            "open_issues_count": 5,
+            "license": null,
+            "allow_forking": true,
+            "is_template": false,
+            "web_commit_signoff_required": false,
+            "topics": [],
+            "visibility": "public",
+            "forks": 8,
+            "open_issues": 5,
+            "watchers": 8,
+            "default_branch": "master"
+          }
+        },
+        "_links": {
+          "self": {
+            "href": "https://api.github.com/repos/discord/lilliput-bench/pulls/4"
+          },
+          "html": {
+            "href": "https://github.com/discord/lilliput-bench/pull/4"
+          },
+          "issue": {
+            "href": "https://api.github.com/repos/discord/lilliput-bench/issues/4"
+          },
+          "comments": {
+            "href": "https://api.github.com/repos/discord/lilliput-bench/issues/4/comments"
+          },
+          "review_comments": {
+            "href": "https://api.github.com/repos/discord/lilliput-bench/pulls/4/comments"
+          },
+          "review_comment": {
+            "href": "https://api.github.com/repos/discord/lilliput-bench/pulls/comments{/number}"
+          },
+          "commits": {
+            "href": "https://api.github.com/repos/discord/lilliput-bench/pulls/4/commits"
+          },
+          "statuses": {
+            "href": "https://api.github.com/repos/discord/lilliput-bench/statuses/d57fd77fddc10c59bd02cb414a6e202876f7f341"
+          }
+        },
+        "author_association": "NONE",
+        "auto_merge": null,
+        "active_lock_reason": null
+      },
+      {
+        "url": "https://api.github.com/repos/discord/lilliput-bench/pulls/3",
+        "id": 222703462,
+        "node_id": "MDExOlB1bGxSZXF1ZXN0MjIyNzAzNDYy",
+        "number": 3,
+        "state": "open",
+        "locked": false,
+        "title": "Add source images",
+        "user": {
+          "login": "homm",
+          "id": 128982,
+          "node_id": "MDQ6VXNlcjEyODk4Mg==",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/homm",
+          "type": "User",
+          "site_admin": false
+        },
+        "body": "It is impossible to reproduce any results without input data. Especially, for images. Each format could hold images in different color modes with different number of frames. This can heavily affect performance.",
+        "created_at": "2018-10-14T09:28:17Z",
+        "updated_at": "2018-10-14T09:28:17Z",
+        "closed_at": null,
+        "merged_at": null,
+        "merge_commit_sha": "80f7fbcad983828f3671f7e2cc8b99135256a9c1",
+        "assignee": null,
+        "assignees": [],
+        "requested_reviewers": [],
+        "requested_teams": [],
+        "labels": [],
+        "milestone": null,
+        "draft": false,
+        "head": {
+          "label": "homm:source-images",
+          "ref": "source-images",
+          "sha": "1adbd4950137cf3204afb11f7f5a072ddb16c140",
+          "user": {
+            "login": "homm",
+            "id": 128982,
+            "node_id": "MDQ6VXNlcjEyODk4Mg==",
+            "gravatar_id": "",
+            "url": "https://api.github.com/users/homm",
+            "type": "User",
+            "site_admin": false
+          },
+          "repo": {
+            "id": 152667201,
+            "node_id": "MDEwOlJlcG9zaXRvcnkxNTI2NjcyMDE=",
+            "name": "lilliput-bench",
+            "full_name": "homm/lilliput-bench",
+            "private": false,
+            "owner": {
+              "login": "homm",
+              "id": 128982,
+              "node_id": "MDQ6VXNlcjEyODk4Mg==",
+              "gravatar_id": "",
+              "url": "https://api.github.com/users/homm",
+              "type": "User",
+              "site_admin": false
+            },
+            "description": "Benchmarker for lilliput",
+            "fork": true,
+            "url": "https://api.github.com/repos/homm/lilliput-bench",
+            "created_at": "2018-10-11T23:21:29Z",
+            "updated_at": "2019-07-31T14:09:08Z",
+            "pushed_at": "2018-10-15T21:16:12Z",
+            "homepage": null,
+            "size": 5532,
+            "stargazers_count": 1,
+            "watchers_count": 1,
+            "language": "Python",
+            "has_issues": false,
+            "has_projects": true,
+            "has_downloads": true,
+            "has_wiki": true,
+            "has_pages": false,
+            "has_discussions": false,
+            "forks_count": 0,
+            "archived": false,
+            "disabled": false,
+            "open_issues_count": 0,
+            "license": null,
+            "allow_forking": true,
+            "is_template": false,
+            "web_commit_signoff_required": false,
+            "topics": [],
+            "visibility": "public",
+            "forks": 0,
+            "open_issues": 0,
+            "watchers": 1,
+            "default_branch": "master"
+          }
+        },
+        "base": {
+          "label": "discord:master",
+          "ref": "master",
+          "sha": "bdf7556d856afb58bca75461b8d5664e30e34b96",
+          "user": {
+            "login": "discord",
+            "id": 1965106,
+            "node_id": "MDEyOk9yZ2FuaXphdGlvbjE5NjUxMDY=",
+            "gravatar_id": "",
+            "url": "https://api.github.com/users/discord",
+            "type": "Organization",
+            "site_admin": false
+          },
+          "repo": {
+            "id": 109883595,
+            "node_id": "MDEwOlJlcG9zaXRvcnkxMDk4ODM1OTU=",
+            "name": "lilliput-bench",
+            "full_name": "discord/lilliput-bench",
+            "private": false,
+            "owner": {
+              "login": "discord",
+              "id": 1965106,
+              "node_id": "MDEyOk9yZ2FuaXphdGlvbjE5NjUxMDY=",
+              "gravatar_id": "",
+              "url": "https://api.github.com/users/discord",
+              "type": "Organization",
+              "site_admin": false
+            },
+            "description": "Benchmarker for lilliput",
+            "fork": false,
+            "url": "https://api.github.com/repos/discord/lilliput-bench",
+            "created_at": "2017-11-07T19:52:23Z",
+            "updated_at": "2022-12-10T00:08:04Z",
+            "pushed_at": "2018-10-14T21:42:32Z",
+            "homepage": null,
+            "size": 3,
+            "stargazers_count": 8,
+            "watchers_count": 8,
+            "language": "Python",
+            "has_issues": true,
+            "has_projects": true,
+            "has_downloads": true,
+            "has_wiki": true,
+            "has_pages": false,
+            "has_discussions": false,
+            "forks_count": 8,
+            "archived": false,
+            "disabled": false,
+            "open_issues_count": 5,
+            "license": null,
+            "allow_forking": true,
+            "is_template": false,
+            "web_commit_signoff_required": false,
+            "topics": [],
+            "visibility": "public",
+            "forks": 8,
+            "open_issues": 5,
+            "watchers": 8,
+            "default_branch": "master"
+          }
+        },
+        "_links": {
+          "self": {
+            "href": "https://api.github.com/repos/discord/lilliput-bench/pulls/3"
+          },
+          "html": {
+            "href": "https://github.com/discord/lilliput-bench/pull/3"
+          },
+          "issue": {
+            "href": "https://api.github.com/repos/discord/lilliput-bench/issues/3"
+          },
+          "comments": {
+            "href": "https://api.github.com/repos/discord/lilliput-bench/issues/3/comments"
+          },
+          "review_comments": {
+            "href": "https://api.github.com/repos/discord/lilliput-bench/pulls/3/comments"
+          },
+          "review_comment": {
+            "href": "https://api.github.com/repos/discord/lilliput-bench/pulls/comments{/number}"
+          },
+          "commits": {
+            "href": "https://api.github.com/repos/discord/lilliput-bench/pulls/3/commits"
+          },
+          "statuses": {
+            "href": "https://api.github.com/repos/discord/lilliput-bench/statuses/1adbd4950137cf3204afb11f7f5a072ddb16c140"
+          }
+        },
+        "author_association": "NONE",
+        "auto_merge": null,
+        "active_lock_reason": null
+      },
+      {
+        "url": "https://api.github.com/repos/discord/lilliput-bench/pulls/2",
+        "id": 222703330,
+        "node_id": "MDExOlB1bGxSZXF1ZXN0MjIyNzAzMzMw",
+        "number": 2,
+        "state": "open",
+        "locked": false,
+        "title": "Run all tests the same number of times",
+        "user": {
+          "login": "homm",
+          "id": 128982,
+          "node_id": "MDQ6VXNlcjEyODk4Mg==",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/homm",
+          "type": "User",
+          "site_admin": false
+        },
+        "body": "There was s problem in previous versions of Pillow: webp images are fully loaded on opening. That was fixed in more recent versions. For example, this is the results for Pillow-SIMD 5.2.0.post0:\r\n\r\n```\r\nJPEG 1920x1080 header read:\t1920x1080,\tavg: 0.076556 ms\tmin: 0.072956 ms\tmax: 0.571966 ms\r\nPNG 1920x1080 header read:\t1920x1080,\tavg: 0.052778 ms\tmin: 0.049829 ms\tmax: 0.294924 ms\r\nWEBP 1920x1080 header read:\t1920x1080,\tavg: 0.731373 ms\tmin: 0.219107 ms\tmax: 150.552034 ms\r\nGIF 1920x1080 header read:\t1920x1080,\tavg: 0.039907 ms\tmin: 0.035763 ms\tmax: 6.623030 ms\r\n```\r\n\r\nAll other values are changed to match across libraries.",
+        "created_at": "2018-10-14T09:25:28Z",
+        "updated_at": "2018-10-14T09:25:28Z",
+        "closed_at": null,
+        "merged_at": null,
+        "merge_commit_sha": "caa5c0300be333a1d858956c0d0836388942b7ab",
+        "assignee": null,
+        "assignees": [],
+        "requested_reviewers": [],
+        "requested_teams": [],
+        "labels": [],
+        "milestone": null,
+        "draft": false,
+        "head": {
+          "label": "homm:iterations-count",
+          "ref": "iterations-count",
+          "sha": "a0b8ecc155c2964b085d4975b385ff773868ed9c",
+          "user": {
+            "login": "homm",
+            "id": 128982,
+            "node_id": "MDQ6VXNlcjEyODk4Mg==",
+            "gravatar_id": "",
+            "url": "https://api.github.com/users/homm",
+            "type": "User",
+            "site_admin": false
+          },
+          "repo": {
+            "id": 152667201,
+            "node_id": "MDEwOlJlcG9zaXRvcnkxNTI2NjcyMDE=",
+            "name": "lilliput-bench",
+            "full_name": "homm/lilliput-bench",
+            "private": false,
+            "owner": {
+              "login": "homm",
+              "id": 128982,
+              "node_id": "MDQ6VXNlcjEyODk4Mg==",
+              "gravatar_id": "",
+              "url": "https://api.github.com/users/homm",
+              "type": "User",
+              "site_admin": false
+            },
+            "description": "Benchmarker for lilliput",
+            "fork": true,
+            "url": "https://api.github.com/repos/homm/lilliput-bench",
+            "created_at": "2018-10-11T23:21:29Z",
+            "updated_at": "2019-07-31T14:09:08Z",
+            "pushed_at": "2018-10-15T21:16:12Z",
+            "homepage": null,
+            "size": 5532,
+            "stargazers_count": 1,
+            "watchers_count": 1,
+            "language": "Python",
+            "has_issues": false,
+            "has_projects": true,
+            "has_downloads": true,
+            "has_wiki": true,
+            "has_pages": false,
+            "has_discussions": false,
+            "forks_count": 0,
+            "archived": false,
+            "disabled": false,
+            "open_issues_count": 0,
+            "license": null,
+            "allow_forking": true,
+            "is_template": false,
+            "web_commit_signoff_required": false,
+            "topics": [],
+            "visibility": "public",
+            "forks": 0,
+            "open_issues": 0,
+            "watchers": 1,
+            "default_branch": "master"
+          }
+        },
+        "base": {
+          "label": "discord:master",
+          "ref": "master",
+          "sha": "bdf7556d856afb58bca75461b8d5664e30e34b96",
+          "user": {
+            "login": "discord",
+            "id": 1965106,
+            "node_id": "MDEyOk9yZ2FuaXphdGlvbjE5NjUxMDY=",
+            "gravatar_id": "",
+            "url": "https://api.github.com/users/discord",
+            "type": "Organization",
+            "site_admin": false
+          },
+          "repo": {
+            "id": 109883595,
+            "node_id": "MDEwOlJlcG9zaXRvcnkxMDk4ODM1OTU=",
+            "name": "lilliput-bench",
+            "full_name": "discord/lilliput-bench",
+            "private": false,
+            "owner": {
+              "login": "discord",
+              "id": 1965106,
+              "node_id": "MDEyOk9yZ2FuaXphdGlvbjE5NjUxMDY=",
+              "gravatar_id": "",
+              "url": "https://api.github.com/users/discord",
+              "type": "Organization",
+              "site_admin": false
+            },
+            "description": "Benchmarker for lilliput",
+            "fork": false,
+            "url": "https://api.github.com/repos/discord/lilliput-bench",
+            "created_at": "2017-11-07T19:52:23Z",
+            "updated_at": "2022-12-10T00:08:04Z",
+            "pushed_at": "2018-10-14T21:42:32Z",
+            "homepage": null,
+            "size": 3,
+            "stargazers_count": 8,
+            "watchers_count": 8,
+            "language": "Python",
+            "has_issues": true,
+            "has_projects": true,
+            "has_downloads": true,
+            "has_wiki": true,
+            "has_pages": false,
+            "has_discussions": false,
+            "forks_count": 8,
+            "archived": false,
+            "disabled": false,
+            "open_issues_count": 5,
+            "license": null,
+            "allow_forking": true,
+            "is_template": false,
+            "web_commit_signoff_required": false,
+            "topics": [],
+            "visibility": "public",
+            "forks": 8,
+            "open_issues": 5,
+            "watchers": 8,
+            "default_branch": "master"
+          }
+        },
+        "_links": {
+          "self": {
+            "href": "https://api.github.com/repos/discord/lilliput-bench/pulls/2"
+          },
+          "html": {
+            "href": "https://github.com/discord/lilliput-bench/pull/2"
+          },
+          "issue": {
+            "href": "https://api.github.com/repos/discord/lilliput-bench/issues/2"
+          },
+          "comments": {
+            "href": "https://api.github.com/repos/discord/lilliput-bench/issues/2/comments"
+          },
+          "review_comments": {
+            "href": "https://api.github.com/repos/discord/lilliput-bench/pulls/2/comments"
+          },
+          "review_comment": {
+            "href": "https://api.github.com/repos/discord/lilliput-bench/pulls/comments{/number}"
+          },
+          "commits": {
+            "href": "https://api.github.com/repos/discord/lilliput-bench/pulls/2/commits"
+          },
+          "statuses": {
+            "href": "https://api.github.com/repos/discord/lilliput-bench/statuses/a0b8ecc155c2964b085d4975b385ff773868ed9c"
+          }
+        },
+        "author_association": "NONE",
+        "auto_merge": null,
+        "active_lock_reason": null
+      },
+      {
+        "url": "https://api.github.com/repos/discord/lilliput-bench/pulls/1",
+        "id": 222703158,
+        "node_id": "MDExOlB1bGxSZXF1ZXN0MjIyNzAzMTU4",
+        "number": 1,
+        "state": "open",
+        "locked": false,
+        "title": "Update syntax for third Python support (with python 2 compatibility)",
+        "user": {
+          "login": "homm",
+          "id": 128982,
+          "node_id": "MDQ6VXNlcjEyODk4Mg==",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/homm",
+          "type": "User",
+          "site_admin": false
+        },
+        "body": "",
+        "created_at": "2018-10-14T09:21:25Z",
+        "updated_at": "2018-10-14T21:42:31Z",
+        "closed_at": null,
+        "merged_at": null,
+        "merge_commit_sha": "de7d1b1e05ee884d894a6b0a1287a7f5147fcf77",
+        "assignee": null,
+        "assignees": [],
+        "requested_reviewers": [],
+        "requested_teams": [],
+        "labels": [],
+        "milestone": null,
+        "draft": false,
+        "head": {
+          "label": "homm:python3",
+          "ref": "python3",
+          "sha": "f65a82a06187a0bf9841f99b3bb97f48df624d0e",
+          "user": {
+            "login": "homm",
+            "id": 128982,
+            "node_id": "MDQ6VXNlcjEyODk4Mg==",
+            "gravatar_id": "",
+            "url": "https://api.github.com/users/homm",
+            "type": "User",
+            "site_admin": false
+          },
+          "repo": {
+            "id": 152667201,
+            "node_id": "MDEwOlJlcG9zaXRvcnkxNTI2NjcyMDE=",
+            "name": "lilliput-bench",
+            "full_name": "homm/lilliput-bench",
+            "private": false,
+            "owner": {
+              "login": "homm",
+              "id": 128982,
+              "node_id": "MDQ6VXNlcjEyODk4Mg==",
+              "gravatar_id": "",
+              "url": "https://api.github.com/users/homm",
+              "type": "User",
+              "site_admin": false
+            },
+            "description": "Benchmarker for lilliput",
+            "fork": true,
+            "url": "https://api.github.com/repos/homm/lilliput-bench",
+            "created_at": "2018-10-11T23:21:29Z",
+            "updated_at": "2019-07-31T14:09:08Z",
+            "pushed_at": "2018-10-15T21:16:12Z",
+            "homepage": null,
+            "size": 5532,
+            "stargazers_count": 1,
+            "watchers_count": 1,
+            "language": "Python",
+            "has_issues": false,
+            "has_projects": true,
+            "has_downloads": true,
+            "has_wiki": true,
+            "has_pages": false,
+            "has_discussions": false,
+            "forks_count": 0,
+            "archived": false,
+            "disabled": false,
+            "open_issues_count": 0,
+            "license": null,
+            "allow_forking": true,
+            "is_template": false,
+            "web_commit_signoff_required": false,
+            "topics": [],
+            "visibility": "public",
+            "forks": 0,
+            "open_issues": 0,
+            "watchers": 1,
+            "default_branch": "master"
+          }
+        },
+        "base": {
+          "label": "discord:master",
+          "ref": "master",
+          "sha": "bdf7556d856afb58bca75461b8d5664e30e34b96",
+          "user": {
+            "login": "discord",
+            "id": 1965106,
+            "node_id": "MDEyOk9yZ2FuaXphdGlvbjE5NjUxMDY=",
+            "gravatar_id": "",
+            "url": "https://api.github.com/users/discord",
+            "type": "Organization",
+            "site_admin": false
+          },
+          "repo": {
+            "id": 109883595,
+            "node_id": "MDEwOlJlcG9zaXRvcnkxMDk4ODM1OTU=",
+            "name": "lilliput-bench",
+            "full_name": "discord/lilliput-bench",
+            "private": false,
+            "owner": {
+              "login": "discord",
+              "id": 1965106,
+              "node_id": "MDEyOk9yZ2FuaXphdGlvbjE5NjUxMDY=",
+              "gravatar_id": "",
+              "url": "https://api.github.com/users/discord",
+              "type": "Organization",
+              "site_admin": false
+            },
+            "description": "Benchmarker for lilliput",
+            "fork": false,
+            "url": "https://api.github.com/repos/discord/lilliput-bench",
+            "created_at": "2017-11-07T19:52:23Z",
+            "updated_at": "2022-12-10T00:08:04Z",
+            "pushed_at": "2018-10-14T21:42:32Z",
+            "homepage": null,
+            "size": 3,
+            "stargazers_count": 8,
+            "watchers_count": 8,
+            "language": "Python",
+            "has_issues": true,
+            "has_projects": true,
+            "has_downloads": true,
+            "has_wiki": true,
+            "has_pages": false,
+            "has_discussions": false,
+            "forks_count": 8,
+            "archived": false,
+            "disabled": false,
+            "open_issues_count": 5,
+            "license": null,
+            "allow_forking": true,
+            "is_template": false,
+            "web_commit_signoff_required": false,
+            "topics": [],
+            "visibility": "public",
+            "forks": 8,
+            "open_issues": 5,
+            "watchers": 8,
+            "default_branch": "master"
+          }
+        },
+        "_links": {
+          "self": {
+            "href": "https://api.github.com/repos/discord/lilliput-bench/pulls/1"
+          },
+          "html": {
+            "href": "https://github.com/discord/lilliput-bench/pull/1"
+          },
+          "issue": {
+            "href": "https://api.github.com/repos/discord/lilliput-bench/issues/1"
+          },
+          "comments": {
+            "href": "https://api.github.com/repos/discord/lilliput-bench/issues/1/comments"
+          },
+          "review_comments": {
+            "href": "https://api.github.com/repos/discord/lilliput-bench/pulls/1/comments"
+          },
+          "review_comment": {
+            "href": "https://api.github.com/repos/discord/lilliput-bench/pulls/comments{/number}"
+          },
+          "commits": {
+            "href": "https://api.github.com/repos/discord/lilliput-bench/pulls/1/commits"
+          },
+          "statuses": {
+            "href": "https://api.github.com/repos/discord/lilliput-bench/statuses/f65a82a06187a0bf9841f99b3bb97f48df624d0e"
+          }
+        },
+        "author_association": "NONE",
+        "auto_merge": null,
+        "active_lock_reason": null
+      }
+    ]
   }
 }

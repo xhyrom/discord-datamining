@@ -57,7 +57,64 @@
     "triage": false,
     "pull": false
   },
-  "branches": [],
+  "branches": [
+    {
+      "name": "counterexample-support",
+      "commit": {
+        "sha": "f85d908487e4a3a697b26934afd59bbd2bd7b965",
+        "url": "https://api.github.com/repos/discord/rebar3_proper/commits/f85d908487e4a3a697b26934afd59bbd2bd7b965"
+      },
+      "protected": false
+    },
+    {
+      "name": "feature/upgrade_proper_12",
+      "commit": {
+        "sha": "e0115e673378ead7adcb85c59a272837fcc9027d",
+        "url": "https://api.github.com/repos/discord/rebar3_proper/commits/e0115e673378ead7adcb85c59a272837fcc9027d"
+      },
+      "protected": false
+    },
+    {
+      "name": "fix-app-paths",
+      "commit": {
+        "sha": "8004045251384848570420b1446b811ca5694530",
+        "url": "https://api.github.com/repos/discord/rebar3_proper/commits/8004045251384848570420b1446b811ca5694530"
+      },
+      "protected": false
+    },
+    {
+      "name": "fix-include-paths",
+      "commit": {
+        "sha": "eac47bb5e646e4c00dd5dc679a9cdcc6eaac44de",
+        "url": "https://api.github.com/repos/discord/rebar3_proper/commits/eac47bb5e646e4c00dd5dc679a9cdcc6eaac44de"
+      },
+      "protected": false
+    },
+    {
+      "name": "fix-opts-parse",
+      "commit": {
+        "sha": "806bc7a70077ee52d08c42e241720d60220608a1",
+        "url": "https://api.github.com/repos/discord/rebar3_proper/commits/806bc7a70077ee52d08c42e241720d60220608a1"
+      },
+      "protected": false
+    },
+    {
+      "name": "master",
+      "commit": {
+        "sha": "1960bee7a60b4086dd219aefe2bd14dffc943649",
+        "url": "https://api.github.com/repos/discord/rebar3_proper/commits/1960bee7a60b4086dd219aefe2bd14dffc943649"
+      },
+      "protected": false
+    },
+    {
+      "name": "pkgs",
+      "commit": {
+        "sha": "1bcc22d3a7f6ddea097319cc193efd562bb35833",
+        "url": "https://api.github.com/repos/discord/rebar3_proper/commits/1bcc22d3a7f6ddea097319cc193efd562bb35833"
+      },
+      "protected": false
+    }
+  ],
   "last5": {
     "commits": [
       {
@@ -390,6 +447,201 @@
         "state_reason": null
       }
     ],
-    "pullRequests": []
+    "pullRequests": [
+      {
+        "url": "https://api.github.com/repos/discord/rebar3_proper/pulls/1",
+        "id": 108436654,
+        "node_id": "MDExOlB1bGxSZXF1ZXN0MTA4NDM2NjU0",
+        "number": 1,
+        "state": "open",
+        "locked": false,
+        "title": "upgrade to proper 1.2",
+        "user": {
+          "login": "brian-armstrong-discord",
+          "id": 25939803,
+          "node_id": "MDQ6VXNlcjI1OTM5ODAz",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/brian-armstrong-discord",
+          "type": "User",
+          "site_admin": false
+        },
+        "body": "for now this is a github ref since the hex.pm repo doesnt have 1.2 yet",
+        "created_at": "2017-02-28T23:38:10Z",
+        "updated_at": "2017-02-28T23:38:10Z",
+        "closed_at": null,
+        "merged_at": null,
+        "merge_commit_sha": "591f470c2b2ede262406d8c995d29e65d9b3da06",
+        "assignee": null,
+        "assignees": [],
+        "requested_reviewers": [],
+        "requested_teams": [],
+        "labels": [],
+        "milestone": null,
+        "draft": false,
+        "head": {
+          "label": "discord:feature/upgrade_proper_12",
+          "ref": "feature/upgrade_proper_12",
+          "sha": "e0115e673378ead7adcb85c59a272837fcc9027d",
+          "user": {
+            "login": "discord",
+            "id": 1965106,
+            "node_id": "MDEyOk9yZ2FuaXphdGlvbjE5NjUxMDY=",
+            "gravatar_id": "",
+            "url": "https://api.github.com/users/discord",
+            "type": "Organization",
+            "site_admin": false
+          },
+          "repo": {
+            "id": 83489068,
+            "node_id": "MDEwOlJlcG9zaXRvcnk4MzQ4OTA2OA==",
+            "name": "rebar3_proper",
+            "full_name": "discord/rebar3_proper",
+            "private": false,
+            "owner": {
+              "login": "discord",
+              "id": 1965106,
+              "node_id": "MDEyOk9yZ2FuaXphdGlvbjE5NjUxMDY=",
+              "gravatar_id": "",
+              "url": "https://api.github.com/users/discord",
+              "type": "Organization",
+              "site_admin": false
+            },
+            "description": "Run PropEr test suites with rebar3",
+            "fork": true,
+            "url": "https://api.github.com/repos/discord/rebar3_proper",
+            "created_at": "2017-02-28T23:17:32Z",
+            "updated_at": "2021-04-28T21:28:49Z",
+            "pushed_at": "2017-02-28T23:38:10Z",
+            "homepage": null,
+            "size": 45,
+            "stargazers_count": 3,
+            "watchers_count": 3,
+            "language": "Erlang",
+            "has_issues": false,
+            "has_projects": true,
+            "has_downloads": true,
+            "has_wiki": true,
+            "has_pages": false,
+            "has_discussions": false,
+            "forks_count": 4,
+            "archived": false,
+            "disabled": false,
+            "open_issues_count": 1,
+            "license": {
+              "key": "bsd-3-clause",
+              "name": "BSD 3-Clause \"New\" or \"Revised\" License",
+              "spdx_id": "BSD-3-Clause",
+              "url": "https://api.github.com/licenses/bsd-3-clause",
+              "node_id": "MDc6TGljZW5zZTU="
+            },
+            "allow_forking": true,
+            "is_template": false,
+            "web_commit_signoff_required": false,
+            "topics": [],
+            "visibility": "public",
+            "forks": 4,
+            "open_issues": 1,
+            "watchers": 3,
+            "default_branch": "master"
+          }
+        },
+        "base": {
+          "label": "discord:master",
+          "ref": "master",
+          "sha": "1960bee7a60b4086dd219aefe2bd14dffc943649",
+          "user": {
+            "login": "discord",
+            "id": 1965106,
+            "node_id": "MDEyOk9yZ2FuaXphdGlvbjE5NjUxMDY=",
+            "gravatar_id": "",
+            "url": "https://api.github.com/users/discord",
+            "type": "Organization",
+            "site_admin": false
+          },
+          "repo": {
+            "id": 83489068,
+            "node_id": "MDEwOlJlcG9zaXRvcnk4MzQ4OTA2OA==",
+            "name": "rebar3_proper",
+            "full_name": "discord/rebar3_proper",
+            "private": false,
+            "owner": {
+              "login": "discord",
+              "id": 1965106,
+              "node_id": "MDEyOk9yZ2FuaXphdGlvbjE5NjUxMDY=",
+              "gravatar_id": "",
+              "url": "https://api.github.com/users/discord",
+              "type": "Organization",
+              "site_admin": false
+            },
+            "description": "Run PropEr test suites with rebar3",
+            "fork": true,
+            "url": "https://api.github.com/repos/discord/rebar3_proper",
+            "created_at": "2017-02-28T23:17:32Z",
+            "updated_at": "2021-04-28T21:28:49Z",
+            "pushed_at": "2017-02-28T23:38:10Z",
+            "homepage": null,
+            "size": 45,
+            "stargazers_count": 3,
+            "watchers_count": 3,
+            "language": "Erlang",
+            "has_issues": false,
+            "has_projects": true,
+            "has_downloads": true,
+            "has_wiki": true,
+            "has_pages": false,
+            "has_discussions": false,
+            "forks_count": 4,
+            "archived": false,
+            "disabled": false,
+            "open_issues_count": 1,
+            "license": {
+              "key": "bsd-3-clause",
+              "name": "BSD 3-Clause \"New\" or \"Revised\" License",
+              "spdx_id": "BSD-3-Clause",
+              "url": "https://api.github.com/licenses/bsd-3-clause",
+              "node_id": "MDc6TGljZW5zZTU="
+            },
+            "allow_forking": true,
+            "is_template": false,
+            "web_commit_signoff_required": false,
+            "topics": [],
+            "visibility": "public",
+            "forks": 4,
+            "open_issues": 1,
+            "watchers": 3,
+            "default_branch": "master"
+          }
+        },
+        "_links": {
+          "self": {
+            "href": "https://api.github.com/repos/discord/rebar3_proper/pulls/1"
+          },
+          "html": {
+            "href": "https://github.com/discord/rebar3_proper/pull/1"
+          },
+          "issue": {
+            "href": "https://api.github.com/repos/discord/rebar3_proper/issues/1"
+          },
+          "comments": {
+            "href": "https://api.github.com/repos/discord/rebar3_proper/issues/1/comments"
+          },
+          "review_comments": {
+            "href": "https://api.github.com/repos/discord/rebar3_proper/pulls/1/comments"
+          },
+          "review_comment": {
+            "href": "https://api.github.com/repos/discord/rebar3_proper/pulls/comments{/number}"
+          },
+          "commits": {
+            "href": "https://api.github.com/repos/discord/rebar3_proper/pulls/1/commits"
+          },
+          "statuses": {
+            "href": "https://api.github.com/repos/discord/rebar3_proper/statuses/e0115e673378ead7adcb85c59a272837fcc9027d"
+          }
+        },
+        "author_association": "COLLABORATOR",
+        "auto_merge": null,
+        "active_lock_reason": null
+      }
+    ]
   }
 }

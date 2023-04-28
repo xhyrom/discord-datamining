@@ -57,7 +57,248 @@
     "triage": false,
     "pull": false
   },
-  "branches": [],
+  "branches": [
+    {
+      "name": "actions",
+      "commit": {
+        "sha": "0aaf3964ea96fee96e4c19cf12fb945a9f2ea13c",
+        "url": "https://api.github.com/repos/discord/rules_k8s/commits/0aaf3964ea96fee96e4c19cf12fb945a9f2ea13c"
+      },
+      "protected": false
+    },
+    {
+      "name": "add-aliasing",
+      "commit": {
+        "sha": "45ed75df2933084e61d20fc888c3c2fa4deee3d3",
+        "url": "https://api.github.com/repos/discord/rules_k8s/commits/45ed75df2933084e61d20fc888c3c2fa4deee3d3"
+      },
+      "protected": false
+    },
+    {
+      "name": "add-ci",
+      "commit": {
+        "sha": "ca0153192cca95798ed51d4387798933434244e7",
+        "url": "https://api.github.com/repos/discord/rules_k8s/commits/ca0153192cca95798ed51d4387798933434244e7"
+      },
+      "protected": false
+    },
+    {
+      "name": "add-diff-command",
+      "commit": {
+        "sha": "3c22ae5c502277ab022422f609ed1c7968d488a4",
+        "url": "https://api.github.com/repos/discord/rules_k8s/commits/3c22ae5c502277ab022422f609ed1c7968d488a4"
+      },
+      "protected": false
+    },
+    {
+      "name": "add-diff-command-go",
+      "commit": {
+        "sha": "b32207ba74188537ce32a7aff359c517a279417d",
+        "url": "https://api.github.com/repos/discord/rules_k8s/commits/b32207ba74188537ce32a7aff359c517a279417d"
+      },
+      "protected": false
+    },
+    {
+      "name": "apply",
+      "commit": {
+        "sha": "3275b822fdc776be92846e72f01ea110fd5d32e4",
+        "url": "https://api.github.com/repos/discord/rules_k8s/commits/3275b822fdc776be92846e72f01ea110fd5d32e4"
+      },
+      "protected": false
+    },
+    {
+      "name": "arbitrary-args-for-k8s-objects",
+      "commit": {
+        "sha": "ce06604ccbe6455ae721c60d0269a9529200f42f",
+        "url": "https://api.github.com/repos/discord/rules_k8s/commits/ce06604ccbe6455ae721c60d0269a9529200f42f"
+      },
+      "protected": false
+    },
+    {
+      "name": "bazel-ci",
+      "commit": {
+        "sha": "373aec1112ab7365c59021cef1f14b0f6d3bb1b5",
+        "url": "https://api.github.com/repos/discord/rules_k8s/commits/373aec1112ab7365c59021cef1f14b0f6d3bb1b5"
+      },
+      "protected": false
+    },
+    {
+      "name": "better-publish-errors",
+      "commit": {
+        "sha": "3844256714b75ae3a26c1cd4eeffa10b51bcd1f4",
+        "url": "https://api.github.com/repos/discord/rules_k8s/commits/3844256714b75ae3a26c1cd4eeffa10b51bcd1f4"
+      },
+      "protected": false
+    },
+    {
+      "name": "chroot",
+      "commit": {
+        "sha": "df80d4d4148b5eb057f7a806d9b6d0c2fb9fc99a",
+        "url": "https://api.github.com/repos/discord/rules_k8s/commits/df80d4d4148b5eb057f7a806d9b6d0c2fb9fc99a"
+      },
+      "protected": false
+    },
+    {
+      "name": "cluster-name-help",
+      "commit": {
+        "sha": "3a8321522a7d97970443cf6745ea104757ba5076",
+        "url": "https://api.github.com/repos/discord/rules_k8s/commits/3a8321522a7d97970443cf6745ea104757ba5076"
+      },
+      "protected": false
+    },
+    {
+      "name": "controller",
+      "commit": {
+        "sha": "ffba7c9c0105178e3f5ac2c05b972997a44361c1",
+        "url": "https://api.github.com/repos/discord/rules_k8s/commits/ffba7c9c0105178e3f5ac2c05b972997a44361c1"
+      },
+      "protected": false
+    },
+    {
+      "name": "delete-reverse",
+      "commit": {
+        "sha": "a69f33edfa0b67c29924dd07a10be7b6df7a0ea7",
+        "url": "https://api.github.com/repos/discord/rules_k8s/commits/a69f33edfa0b67c29924dd07a10be7b6df7a0ea7"
+      },
+      "protected": false
+    },
+    {
+      "name": "disable-osx",
+      "commit": {
+        "sha": "133355744e1c467229233a21823f08e37039480b",
+        "url": "https://api.github.com/repos/discord/rules_k8s/commits/133355744e1c467229233a21823f08e37039480b"
+      },
+      "protected": false
+    },
+    {
+      "name": "discord-main",
+      "commit": {
+        "sha": "1b9765aa411900b0b429c8a78b9f4ed138086e0a",
+        "url": "https://api.github.com/repos/discord/rules_k8s/commits/1b9765aa411900b0b429c8a78b9f4ed138086e0a"
+      },
+      "protected": false
+    },
+    {
+      "name": "drop-todo",
+      "commit": {
+        "sha": "9b1b00f9cdcd15ca895e71e51aade2064af4d453",
+        "url": "https://api.github.com/repos/discord/rules_k8s/commits/9b1b00f9cdcd15ca895e71e51aade2064af4d453"
+      },
+      "protected": false
+    },
+    {
+      "name": "enable-osx",
+      "commit": {
+        "sha": "4fbc7a53eda3a733cb52941e53d56c7be13f6971",
+        "url": "https://api.github.com/repos/discord/rules_k8s/commits/4fbc7a53eda3a733cb52941e53d56c7be13f6971"
+      },
+      "protected": false
+    },
+    {
+      "name": "error-if-not-replaced",
+      "commit": {
+        "sha": "0c51c9969a552b17426c0a299af519eb5abd2c1a",
+        "url": "https://api.github.com/repos/discord/rules_k8s/commits/0c51c9969a552b17426c0a299af519eb5abd2c1a"
+      },
+      "protected": false
+    },
+    {
+      "name": "example-branch",
+      "commit": {
+        "sha": "8537afcc8728e5ebfafa9b68462e54a98935d06b",
+        "url": "https://api.github.com/repos/discord/rules_k8s/commits/8537afcc8728e5ebfafa9b68462e54a98935d06b"
+      },
+      "protected": false
+    },
+    {
+      "name": "fix-buildifier",
+      "commit": {
+        "sha": "c631f1fbdb9cd565089758a07bfedca8884e22e4",
+        "url": "https://api.github.com/repos/discord/rules_k8s/commits/c631f1fbdb9cd565089758a07bfedca8884e22e4"
+      },
+      "protected": false
+    },
+    {
+      "name": "fix-config",
+      "commit": {
+        "sha": "f5dc1f815a73f4e96bfdf6fe65f953c4a607ee67",
+        "url": "https://api.github.com/repos/discord/rules_k8s/commits/f5dc1f815a73f4e96bfdf6fe65f953c4a607ee67"
+      },
+      "protected": false
+    },
+    {
+      "name": "fix-diff",
+      "commit": {
+        "sha": "1b9765aa411900b0b429c8a78b9f4ed138086e0a",
+        "url": "https://api.github.com/repos/discord/rules_k8s/commits/1b9765aa411900b0b429c8a78b9f4ed138086e0a"
+      },
+      "protected": false
+    },
+    {
+      "name": "fix-embedding",
+      "commit": {
+        "sha": "c958caa15efa1d009ae24f616ff35591dc3a5a05",
+        "url": "https://api.github.com/repos/discord/rules_k8s/commits/c958caa15efa1d009ae24f616ff35591dc3a5a05"
+      },
+      "protected": false
+    },
+    {
+      "name": "fix-resolver",
+      "commit": {
+        "sha": "4c044db6fbd955d802b8f0e7a91f409f3b300e72",
+        "url": "https://api.github.com/repos/discord/rules_k8s/commits/4c044db6fbd955d802b8f0e7a91f409f3b300e72"
+      },
+      "protected": false
+    },
+    {
+      "name": "go-sample",
+      "commit": {
+        "sha": "34fabcf6b2e9c04f47ffb8d8f753f9c10974dfa0",
+        "url": "https://api.github.com/repos/discord/rules_k8s/commits/34fabcf6b2e9c04f47ffb8d8f753f9c10974dfa0"
+      },
+      "protected": false
+    },
+    {
+      "name": "hello-http",
+      "commit": {
+        "sha": "948c68e42c0de8142b98195c71c3c192204b67d2",
+        "url": "https://api.github.com/repos/discord/rules_k8s/commits/948c68e42c0de8142b98195c71c3c192204b67d2"
+      },
+      "protected": false
+    },
+    {
+      "name": "ignore-delete-not-found",
+      "commit": {
+        "sha": "1b1ebeadfc348acd1d35032f26dee940540d85a6",
+        "url": "https://api.github.com/repos/discord/rules_k8s/commits/1b1ebeadfc348acd1d35032f26dee940540d85a6"
+      },
+      "protected": false
+    },
+    {
+      "name": "improve-errors",
+      "commit": {
+        "sha": "03a073fd76f367ea54e09abf4313b153685be961",
+        "url": "https://api.github.com/repos/discord/rules_k8s/commits/03a073fd76f367ea54e09abf4313b153685be961"
+      },
+      "protected": false
+    },
+    {
+      "name": "include-init-py",
+      "commit": {
+        "sha": "e297f0b18a2c0dde47b42bcca15942d18c584d2a",
+        "url": "https://api.github.com/repos/discord/rules_k8s/commits/e297f0b18a2c0dde47b42bcca15942d18c584d2a"
+      },
+      "protected": false
+    },
+    {
+      "name": "java-sample",
+      "commit": {
+        "sha": "a7c34dcd1e133d9364d1ce683d580350146292cb",
+        "url": "https://api.github.com/repos/discord/rules_k8s/commits/a7c34dcd1e133d9364d1ce683d580350146292cb"
+      },
+      "protected": false
+    }
+  ],
   "last5": {
     "commits": [
       {
@@ -486,6 +727,589 @@
         "state_reason": null
       }
     ],
-    "pullRequests": []
+    "pullRequests": [
+      {
+        "url": "https://api.github.com/repos/discord/rules_k8s/pulls/3",
+        "id": 904218036,
+        "node_id": "PR_kwDOCWKtFs415UW0",
+        "number": 3,
+        "state": "open",
+        "locked": false,
+        "title": "cherry-pick m1 update",
+        "user": {
+          "login": "AugustKarlstedt",
+          "id": 9087849,
+          "node_id": "MDQ6VXNlcjkwODc4NDk=",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/AugustKarlstedt",
+          "type": "User",
+          "site_admin": false
+        },
+        "body": "from https://github.com/bazelbuild/rules_k8s/pull/683",
+        "created_at": "2022-04-08T20:58:29Z",
+        "updated_at": "2022-04-12T19:48:51Z",
+        "closed_at": null,
+        "merged_at": null,
+        "merge_commit_sha": "b0d43696ac6d5317aed8539fa8ed6a555b9f3222",
+        "assignee": null,
+        "assignees": [],
+        "requested_reviewers": [],
+        "requested_teams": [],
+        "labels": [],
+        "milestone": null,
+        "draft": false,
+        "head": {
+          "label": "discord:support-m1",
+          "ref": "support-m1",
+          "sha": "a38cedd3494cbc0238d71c223ee535098e0ad2c0",
+          "user": {
+            "login": "discord",
+            "id": 1965106,
+            "node_id": "MDEyOk9yZ2FuaXphdGlvbjE5NjUxMDY=",
+            "gravatar_id": "",
+            "url": "https://api.github.com/users/discord",
+            "type": "Organization",
+            "site_admin": false
+          },
+          "repo": {
+            "id": 157461782,
+            "node_id": "MDEwOlJlcG9zaXRvcnkxNTc0NjE3ODI=",
+            "name": "rules_k8s",
+            "full_name": "discord/rules_k8s",
+            "private": false,
+            "owner": {
+              "login": "discord",
+              "id": 1965106,
+              "node_id": "MDEyOk9yZ2FuaXphdGlvbjE5NjUxMDY=",
+              "gravatar_id": "",
+              "url": "https://api.github.com/users/discord",
+              "type": "Organization",
+              "site_admin": false
+            },
+            "description": "This repository contains rules for interacting with Kubernetes configurations / clusters.",
+            "fork": true,
+            "url": "https://api.github.com/repos/discord/rules_k8s",
+            "created_at": "2018-11-13T23:38:16Z",
+            "updated_at": "2022-03-04T12:53:48Z",
+            "pushed_at": "2023-02-04T00:58:26Z",
+            "homepage": "",
+            "size": 724,
+            "stargazers_count": 4,
+            "watchers_count": 4,
+            "language": "Starlark",
+            "has_issues": false,
+            "has_projects": true,
+            "has_downloads": false,
+            "has_wiki": false,
+            "has_pages": false,
+            "has_discussions": false,
+            "forks_count": 5,
+            "archived": false,
+            "disabled": false,
+            "open_issues_count": 1,
+            "license": {
+              "key": "apache-2.0",
+              "name": "Apache License 2.0",
+              "spdx_id": "Apache-2.0",
+              "url": "https://api.github.com/licenses/apache-2.0",
+              "node_id": "MDc6TGljZW5zZTI="
+            },
+            "allow_forking": true,
+            "is_template": false,
+            "web_commit_signoff_required": false,
+            "topics": [],
+            "visibility": "public",
+            "forks": 5,
+            "open_issues": 1,
+            "watchers": 4,
+            "default_branch": "master"
+          }
+        },
+        "base": {
+          "label": "discord:master",
+          "ref": "master",
+          "sha": "f1c6399cdd691b7aca90073398e8f690ec8992c6",
+          "user": {
+            "login": "discord",
+            "id": 1965106,
+            "node_id": "MDEyOk9yZ2FuaXphdGlvbjE5NjUxMDY=",
+            "gravatar_id": "",
+            "url": "https://api.github.com/users/discord",
+            "type": "Organization",
+            "site_admin": false
+          },
+          "repo": {
+            "id": 157461782,
+            "node_id": "MDEwOlJlcG9zaXRvcnkxNTc0NjE3ODI=",
+            "name": "rules_k8s",
+            "full_name": "discord/rules_k8s",
+            "private": false,
+            "owner": {
+              "login": "discord",
+              "id": 1965106,
+              "node_id": "MDEyOk9yZ2FuaXphdGlvbjE5NjUxMDY=",
+              "gravatar_id": "",
+              "url": "https://api.github.com/users/discord",
+              "type": "Organization",
+              "site_admin": false
+            },
+            "description": "This repository contains rules for interacting with Kubernetes configurations / clusters.",
+            "fork": true,
+            "url": "https://api.github.com/repos/discord/rules_k8s",
+            "created_at": "2018-11-13T23:38:16Z",
+            "updated_at": "2022-03-04T12:53:48Z",
+            "pushed_at": "2023-02-04T00:58:26Z",
+            "homepage": "",
+            "size": 724,
+            "stargazers_count": 4,
+            "watchers_count": 4,
+            "language": "Starlark",
+            "has_issues": false,
+            "has_projects": true,
+            "has_downloads": false,
+            "has_wiki": false,
+            "has_pages": false,
+            "has_discussions": false,
+            "forks_count": 5,
+            "archived": false,
+            "disabled": false,
+            "open_issues_count": 1,
+            "license": {
+              "key": "apache-2.0",
+              "name": "Apache License 2.0",
+              "spdx_id": "Apache-2.0",
+              "url": "https://api.github.com/licenses/apache-2.0",
+              "node_id": "MDc6TGljZW5zZTI="
+            },
+            "allow_forking": true,
+            "is_template": false,
+            "web_commit_signoff_required": false,
+            "topics": [],
+            "visibility": "public",
+            "forks": 5,
+            "open_issues": 1,
+            "watchers": 4,
+            "default_branch": "master"
+          }
+        },
+        "_links": {
+          "self": {
+            "href": "https://api.github.com/repos/discord/rules_k8s/pulls/3"
+          },
+          "html": {
+            "href": "https://github.com/discord/rules_k8s/pull/3"
+          },
+          "issue": {
+            "href": "https://api.github.com/repos/discord/rules_k8s/issues/3"
+          },
+          "comments": {
+            "href": "https://api.github.com/repos/discord/rules_k8s/issues/3/comments"
+          },
+          "review_comments": {
+            "href": "https://api.github.com/repos/discord/rules_k8s/pulls/3/comments"
+          },
+          "review_comment": {
+            "href": "https://api.github.com/repos/discord/rules_k8s/pulls/comments{/number}"
+          },
+          "commits": {
+            "href": "https://api.github.com/repos/discord/rules_k8s/pulls/3/commits"
+          },
+          "statuses": {
+            "href": "https://api.github.com/repos/discord/rules_k8s/statuses/a38cedd3494cbc0238d71c223ee535098e0ad2c0"
+          }
+        },
+        "author_association": "MEMBER",
+        "auto_merge": null,
+        "active_lock_reason": null
+      },
+      {
+        "url": "https://api.github.com/repos/discord/rules_k8s/pulls/2",
+        "id": 612730911,
+        "node_id": "MDExOlB1bGxSZXF1ZXN0NjEyNzMwOTEx",
+        "number": 2,
+        "state": "closed",
+        "locked": false,
+        "title": "Support k8s_release in kubectl_configure",
+        "user": {
+          "login": "samschlegel",
+          "id": 5514447,
+          "node_id": "MDQ6VXNlcjU1MTQ0NDc=",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/samschlegel",
+          "type": "User",
+          "site_admin": false
+        },
+        "body": "See https://github.com/bazelbuild/rules_k8s/pull/648\r\n\r\nAlso default to using k8s_release to avoid issues with github archives potentially changing",
+        "created_at": "2021-04-09T21:10:41Z",
+        "updated_at": "2021-04-09T21:10:46Z",
+        "closed_at": "2021-04-09T21:10:46Z",
+        "merged_at": "2021-04-09T21:10:46Z",
+        "merge_commit_sha": "0a791e01a123bca23c2389667f65d1ba1bd63dee",
+        "assignee": null,
+        "assignees": [],
+        "requested_reviewers": [],
+        "requested_teams": [],
+        "labels": [],
+        "milestone": null,
+        "draft": false,
+        "head": {
+          "label": "discord:support-kubectl-toolchain-release",
+          "ref": "support-kubectl-toolchain-release",
+          "sha": "41460719881241d4ac32d32c3ae347e9d01bd597",
+          "user": {
+            "login": "discord",
+            "id": 1965106,
+            "node_id": "MDEyOk9yZ2FuaXphdGlvbjE5NjUxMDY=",
+            "gravatar_id": "",
+            "url": "https://api.github.com/users/discord",
+            "type": "Organization",
+            "site_admin": false
+          },
+          "repo": {
+            "id": 157461782,
+            "node_id": "MDEwOlJlcG9zaXRvcnkxNTc0NjE3ODI=",
+            "name": "rules_k8s",
+            "full_name": "discord/rules_k8s",
+            "private": false,
+            "owner": {
+              "login": "discord",
+              "id": 1965106,
+              "node_id": "MDEyOk9yZ2FuaXphdGlvbjE5NjUxMDY=",
+              "gravatar_id": "",
+              "url": "https://api.github.com/users/discord",
+              "type": "Organization",
+              "site_admin": false
+            },
+            "description": "This repository contains rules for interacting with Kubernetes configurations / clusters.",
+            "fork": true,
+            "url": "https://api.github.com/repos/discord/rules_k8s",
+            "created_at": "2018-11-13T23:38:16Z",
+            "updated_at": "2022-03-04T12:53:48Z",
+            "pushed_at": "2023-02-04T00:58:26Z",
+            "homepage": "",
+            "size": 724,
+            "stargazers_count": 4,
+            "watchers_count": 4,
+            "language": "Starlark",
+            "has_issues": false,
+            "has_projects": true,
+            "has_downloads": false,
+            "has_wiki": false,
+            "has_pages": false,
+            "has_discussions": false,
+            "forks_count": 5,
+            "archived": false,
+            "disabled": false,
+            "open_issues_count": 1,
+            "license": {
+              "key": "apache-2.0",
+              "name": "Apache License 2.0",
+              "spdx_id": "Apache-2.0",
+              "url": "https://api.github.com/licenses/apache-2.0",
+              "node_id": "MDc6TGljZW5zZTI="
+            },
+            "allow_forking": true,
+            "is_template": false,
+            "web_commit_signoff_required": false,
+            "topics": [],
+            "visibility": "public",
+            "forks": 5,
+            "open_issues": 1,
+            "watchers": 4,
+            "default_branch": "master"
+          }
+        },
+        "base": {
+          "label": "discord:discord-main",
+          "ref": "discord-main",
+          "sha": "bf9b6af400ca75db58f811ea09ca03bf248734cc",
+          "user": {
+            "login": "discord",
+            "id": 1965106,
+            "node_id": "MDEyOk9yZ2FuaXphdGlvbjE5NjUxMDY=",
+            "gravatar_id": "",
+            "url": "https://api.github.com/users/discord",
+            "type": "Organization",
+            "site_admin": false
+          },
+          "repo": {
+            "id": 157461782,
+            "node_id": "MDEwOlJlcG9zaXRvcnkxNTc0NjE3ODI=",
+            "name": "rules_k8s",
+            "full_name": "discord/rules_k8s",
+            "private": false,
+            "owner": {
+              "login": "discord",
+              "id": 1965106,
+              "node_id": "MDEyOk9yZ2FuaXphdGlvbjE5NjUxMDY=",
+              "gravatar_id": "",
+              "url": "https://api.github.com/users/discord",
+              "type": "Organization",
+              "site_admin": false
+            },
+            "description": "This repository contains rules for interacting with Kubernetes configurations / clusters.",
+            "fork": true,
+            "url": "https://api.github.com/repos/discord/rules_k8s",
+            "created_at": "2018-11-13T23:38:16Z",
+            "updated_at": "2022-03-04T12:53:48Z",
+            "pushed_at": "2023-02-04T00:58:26Z",
+            "homepage": "",
+            "size": 724,
+            "stargazers_count": 4,
+            "watchers_count": 4,
+            "language": "Starlark",
+            "has_issues": false,
+            "has_projects": true,
+            "has_downloads": false,
+            "has_wiki": false,
+            "has_pages": false,
+            "has_discussions": false,
+            "forks_count": 5,
+            "archived": false,
+            "disabled": false,
+            "open_issues_count": 1,
+            "license": {
+              "key": "apache-2.0",
+              "name": "Apache License 2.0",
+              "spdx_id": "Apache-2.0",
+              "url": "https://api.github.com/licenses/apache-2.0",
+              "node_id": "MDc6TGljZW5zZTI="
+            },
+            "allow_forking": true,
+            "is_template": false,
+            "web_commit_signoff_required": false,
+            "topics": [],
+            "visibility": "public",
+            "forks": 5,
+            "open_issues": 1,
+            "watchers": 4,
+            "default_branch": "master"
+          }
+        },
+        "_links": {
+          "self": {
+            "href": "https://api.github.com/repos/discord/rules_k8s/pulls/2"
+          },
+          "html": {
+            "href": "https://github.com/discord/rules_k8s/pull/2"
+          },
+          "issue": {
+            "href": "https://api.github.com/repos/discord/rules_k8s/issues/2"
+          },
+          "comments": {
+            "href": "https://api.github.com/repos/discord/rules_k8s/issues/2/comments"
+          },
+          "review_comments": {
+            "href": "https://api.github.com/repos/discord/rules_k8s/pulls/2/comments"
+          },
+          "review_comment": {
+            "href": "https://api.github.com/repos/discord/rules_k8s/pulls/comments{/number}"
+          },
+          "commits": {
+            "href": "https://api.github.com/repos/discord/rules_k8s/pulls/2/commits"
+          },
+          "statuses": {
+            "href": "https://api.github.com/repos/discord/rules_k8s/statuses/41460719881241d4ac32d32c3ae347e9d01bd597"
+          }
+        },
+        "author_association": "MEMBER",
+        "auto_merge": null,
+        "active_lock_reason": null
+      },
+      {
+        "url": "https://api.github.com/repos/discord/rules_k8s/pulls/1",
+        "id": 612730040,
+        "node_id": "MDExOlB1bGxSZXF1ZXN0NjEyNzMwMDQw",
+        "number": 1,
+        "state": "closed",
+        "locked": false,
+        "title": "Handle kubectl diff exit code when diffs are found",
+        "user": {
+          "login": "samschlegel",
+          "id": 5514447,
+          "node_id": "MDQ6VXNlcjU1MTQ0NDc=",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/samschlegel",
+          "type": "User",
+          "site_admin": false
+        },
+        "body": "(merging into discord-main until it's upstreamed)\r\n\r\nkubectl diff exits with code 1 if a diff is found. Because of the exit flag, this causes the bazel kubectl diff action to exit early. So this attempts to handle that without losing general script-level exit code handling.",
+        "created_at": "2021-04-09T21:08:30Z",
+        "updated_at": "2021-04-09T21:08:48Z",
+        "closed_at": "2021-04-09T21:08:48Z",
+        "merged_at": "2021-04-09T21:08:48Z",
+        "merge_commit_sha": "bf9b6af400ca75db58f811ea09ca03bf248734cc",
+        "assignee": null,
+        "assignees": [],
+        "requested_reviewers": [],
+        "requested_teams": [],
+        "labels": [],
+        "milestone": null,
+        "draft": false,
+        "head": {
+          "label": "discord:fix-diff",
+          "ref": "fix-diff",
+          "sha": "1b9765aa411900b0b429c8a78b9f4ed138086e0a",
+          "user": {
+            "login": "discord",
+            "id": 1965106,
+            "node_id": "MDEyOk9yZ2FuaXphdGlvbjE5NjUxMDY=",
+            "gravatar_id": "",
+            "url": "https://api.github.com/users/discord",
+            "type": "Organization",
+            "site_admin": false
+          },
+          "repo": {
+            "id": 157461782,
+            "node_id": "MDEwOlJlcG9zaXRvcnkxNTc0NjE3ODI=",
+            "name": "rules_k8s",
+            "full_name": "discord/rules_k8s",
+            "private": false,
+            "owner": {
+              "login": "discord",
+              "id": 1965106,
+              "node_id": "MDEyOk9yZ2FuaXphdGlvbjE5NjUxMDY=",
+              "gravatar_id": "",
+              "url": "https://api.github.com/users/discord",
+              "type": "Organization",
+              "site_admin": false
+            },
+            "description": "This repository contains rules for interacting with Kubernetes configurations / clusters.",
+            "fork": true,
+            "url": "https://api.github.com/repos/discord/rules_k8s",
+            "created_at": "2018-11-13T23:38:16Z",
+            "updated_at": "2022-03-04T12:53:48Z",
+            "pushed_at": "2023-02-04T00:58:26Z",
+            "homepage": "",
+            "size": 724,
+            "stargazers_count": 4,
+            "watchers_count": 4,
+            "language": "Starlark",
+            "has_issues": false,
+            "has_projects": true,
+            "has_downloads": false,
+            "has_wiki": false,
+            "has_pages": false,
+            "has_discussions": false,
+            "forks_count": 5,
+            "archived": false,
+            "disabled": false,
+            "open_issues_count": 1,
+            "license": {
+              "key": "apache-2.0",
+              "name": "Apache License 2.0",
+              "spdx_id": "Apache-2.0",
+              "url": "https://api.github.com/licenses/apache-2.0",
+              "node_id": "MDc6TGljZW5zZTI="
+            },
+            "allow_forking": true,
+            "is_template": false,
+            "web_commit_signoff_required": false,
+            "topics": [],
+            "visibility": "public",
+            "forks": 5,
+            "open_issues": 1,
+            "watchers": 4,
+            "default_branch": "master"
+          }
+        },
+        "base": {
+          "label": "discord:discord-main",
+          "ref": "discord-main",
+          "sha": "f1c6399cdd691b7aca90073398e8f690ec8992c6",
+          "user": {
+            "login": "discord",
+            "id": 1965106,
+            "node_id": "MDEyOk9yZ2FuaXphdGlvbjE5NjUxMDY=",
+            "gravatar_id": "",
+            "url": "https://api.github.com/users/discord",
+            "type": "Organization",
+            "site_admin": false
+          },
+          "repo": {
+            "id": 157461782,
+            "node_id": "MDEwOlJlcG9zaXRvcnkxNTc0NjE3ODI=",
+            "name": "rules_k8s",
+            "full_name": "discord/rules_k8s",
+            "private": false,
+            "owner": {
+              "login": "discord",
+              "id": 1965106,
+              "node_id": "MDEyOk9yZ2FuaXphdGlvbjE5NjUxMDY=",
+              "gravatar_id": "",
+              "url": "https://api.github.com/users/discord",
+              "type": "Organization",
+              "site_admin": false
+            },
+            "description": "This repository contains rules for interacting with Kubernetes configurations / clusters.",
+            "fork": true,
+            "url": "https://api.github.com/repos/discord/rules_k8s",
+            "created_at": "2018-11-13T23:38:16Z",
+            "updated_at": "2022-03-04T12:53:48Z",
+            "pushed_at": "2023-02-04T00:58:26Z",
+            "homepage": "",
+            "size": 724,
+            "stargazers_count": 4,
+            "watchers_count": 4,
+            "language": "Starlark",
+            "has_issues": false,
+            "has_projects": true,
+            "has_downloads": false,
+            "has_wiki": false,
+            "has_pages": false,
+            "has_discussions": false,
+            "forks_count": 5,
+            "archived": false,
+            "disabled": false,
+            "open_issues_count": 1,
+            "license": {
+              "key": "apache-2.0",
+              "name": "Apache License 2.0",
+              "spdx_id": "Apache-2.0",
+              "url": "https://api.github.com/licenses/apache-2.0",
+              "node_id": "MDc6TGljZW5zZTI="
+            },
+            "allow_forking": true,
+            "is_template": false,
+            "web_commit_signoff_required": false,
+            "topics": [],
+            "visibility": "public",
+            "forks": 5,
+            "open_issues": 1,
+            "watchers": 4,
+            "default_branch": "master"
+          }
+        },
+        "_links": {
+          "self": {
+            "href": "https://api.github.com/repos/discord/rules_k8s/pulls/1"
+          },
+          "html": {
+            "href": "https://github.com/discord/rules_k8s/pull/1"
+          },
+          "issue": {
+            "href": "https://api.github.com/repos/discord/rules_k8s/issues/1"
+          },
+          "comments": {
+            "href": "https://api.github.com/repos/discord/rules_k8s/issues/1/comments"
+          },
+          "review_comments": {
+            "href": "https://api.github.com/repos/discord/rules_k8s/pulls/1/comments"
+          },
+          "review_comment": {
+            "href": "https://api.github.com/repos/discord/rules_k8s/pulls/comments{/number}"
+          },
+          "commits": {
+            "href": "https://api.github.com/repos/discord/rules_k8s/pulls/1/commits"
+          },
+          "statuses": {
+            "href": "https://api.github.com/repos/discord/rules_k8s/statuses/1b9765aa411900b0b429c8a78b9f4ed138086e0a"
+          }
+        },
+        "author_association": "MEMBER",
+        "auto_merge": null,
+        "active_lock_reason": null
+      }
+    ]
   }
 }

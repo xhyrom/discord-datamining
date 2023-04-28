@@ -57,7 +57,40 @@
     "triage": false,
     "pull": false
   },
-  "branches": [],
+  "branches": [
+    {
+      "name": "1.0.x",
+      "commit": {
+        "sha": "d08c2ab39d38c181abda279d5c2cadfac33a50c1",
+        "url": "https://api.github.com/repos/discord/cowboy/commits/d08c2ab39d38c181abda279d5c2cadfac33a50c1"
+      },
+      "protected": false
+    },
+    {
+      "name": "1.1.x",
+      "commit": {
+        "sha": "0c15b9216b7467390623db84e169b32c68e85bcb",
+        "url": "https://api.github.com/repos/discord/cowboy/commits/0c15b9216b7467390623db84e169b32c68e85bcb"
+      },
+      "protected": false
+    },
+    {
+      "name": "feature/upgrade_proper_v1.2",
+      "commit": {
+        "sha": "ad4ec7cfa76abe054c24e64b61d8e9632a782810",
+        "url": "https://api.github.com/repos/discord/cowboy/commits/ad4ec7cfa76abe054c24e64b61d8e9632a782810"
+      },
+      "protected": false
+    },
+    {
+      "name": "master",
+      "commit": {
+        "sha": "bb83a6ce33288c04250497318565ac499282c720",
+        "url": "https://api.github.com/repos/discord/cowboy/commits/bb83a6ce33288c04250497318565ac499282c720"
+      },
+      "protected": false
+    }
+  ],
   "last5": {
     "commits": [
       {
@@ -382,6 +415,201 @@
         "state_reason": null
       }
     ],
-    "pullRequests": []
+    "pullRequests": [
+      {
+        "url": "https://api.github.com/repos/discord/cowboy/pulls/1",
+        "id": 108439156,
+        "node_id": "MDExOlB1bGxSZXF1ZXN0MTA4NDM5MTU2",
+        "number": 1,
+        "state": "open",
+        "locked": false,
+        "title": "upgrade to proper v1.2",
+        "user": {
+          "login": "brian-armstrong-discord",
+          "id": 25939803,
+          "node_id": "MDQ6VXNlcjI1OTM5ODAz",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/brian-armstrong-discord",
+          "type": "User",
+          "site_admin": false
+        },
+        "body": "again, we use a local fork until upstreams get the right dependencies",
+        "created_at": "2017-02-28T23:57:11Z",
+        "updated_at": "2017-03-04T02:59:39Z",
+        "closed_at": null,
+        "merged_at": null,
+        "merge_commit_sha": "e6a9dd339ed9f8525abb1cdf12d1156c42191193",
+        "assignee": null,
+        "assignees": [],
+        "requested_reviewers": [],
+        "requested_teams": [],
+        "labels": [],
+        "milestone": null,
+        "draft": false,
+        "head": {
+          "label": "discord:feature/upgrade_proper_v1.2",
+          "ref": "feature/upgrade_proper_v1.2",
+          "sha": "ad4ec7cfa76abe054c24e64b61d8e9632a782810",
+          "user": {
+            "login": "discord",
+            "id": 1965106,
+            "node_id": "MDEyOk9yZ2FuaXphdGlvbjE5NjUxMDY=",
+            "gravatar_id": "",
+            "url": "https://api.github.com/users/discord",
+            "type": "Organization",
+            "site_admin": false
+          },
+          "repo": {
+            "id": 83491061,
+            "node_id": "MDEwOlJlcG9zaXRvcnk4MzQ5MTA2MQ==",
+            "name": "cowboy",
+            "full_name": "discord/cowboy",
+            "private": false,
+            "owner": {
+              "login": "discord",
+              "id": 1965106,
+              "node_id": "MDEyOk9yZ2FuaXphdGlvbjE5NjUxMDY=",
+              "gravatar_id": "",
+              "url": "https://api.github.com/users/discord",
+              "type": "Organization",
+              "site_admin": false
+            },
+            "description": "Small, fast, modern HTTP server for Erlang/OTP.",
+            "fork": true,
+            "url": "https://api.github.com/repos/discord/cowboy",
+            "created_at": "2017-02-28T23:51:41Z",
+            "updated_at": "2021-04-28T21:28:47Z",
+            "pushed_at": "2017-03-04T02:59:39Z",
+            "homepage": "https://ninenines.eu",
+            "size": 5511,
+            "stargazers_count": 5,
+            "watchers_count": 5,
+            "language": "Erlang",
+            "has_issues": false,
+            "has_projects": true,
+            "has_downloads": true,
+            "has_wiki": false,
+            "has_pages": false,
+            "has_discussions": false,
+            "forks_count": 3,
+            "archived": false,
+            "disabled": false,
+            "open_issues_count": 1,
+            "license": {
+              "key": "isc",
+              "name": "ISC License",
+              "spdx_id": "ISC",
+              "url": "https://api.github.com/licenses/isc",
+              "node_id": "MDc6TGljZW5zZTEw"
+            },
+            "allow_forking": true,
+            "is_template": false,
+            "web_commit_signoff_required": false,
+            "topics": [],
+            "visibility": "public",
+            "forks": 3,
+            "open_issues": 1,
+            "watchers": 5,
+            "default_branch": "master"
+          }
+        },
+        "base": {
+          "label": "discord:master",
+          "ref": "master",
+          "sha": "bb83a6ce33288c04250497318565ac499282c720",
+          "user": {
+            "login": "discord",
+            "id": 1965106,
+            "node_id": "MDEyOk9yZ2FuaXphdGlvbjE5NjUxMDY=",
+            "gravatar_id": "",
+            "url": "https://api.github.com/users/discord",
+            "type": "Organization",
+            "site_admin": false
+          },
+          "repo": {
+            "id": 83491061,
+            "node_id": "MDEwOlJlcG9zaXRvcnk4MzQ5MTA2MQ==",
+            "name": "cowboy",
+            "full_name": "discord/cowboy",
+            "private": false,
+            "owner": {
+              "login": "discord",
+              "id": 1965106,
+              "node_id": "MDEyOk9yZ2FuaXphdGlvbjE5NjUxMDY=",
+              "gravatar_id": "",
+              "url": "https://api.github.com/users/discord",
+              "type": "Organization",
+              "site_admin": false
+            },
+            "description": "Small, fast, modern HTTP server for Erlang/OTP.",
+            "fork": true,
+            "url": "https://api.github.com/repos/discord/cowboy",
+            "created_at": "2017-02-28T23:51:41Z",
+            "updated_at": "2021-04-28T21:28:47Z",
+            "pushed_at": "2017-03-04T02:59:39Z",
+            "homepage": "https://ninenines.eu",
+            "size": 5511,
+            "stargazers_count": 5,
+            "watchers_count": 5,
+            "language": "Erlang",
+            "has_issues": false,
+            "has_projects": true,
+            "has_downloads": true,
+            "has_wiki": false,
+            "has_pages": false,
+            "has_discussions": false,
+            "forks_count": 3,
+            "archived": false,
+            "disabled": false,
+            "open_issues_count": 1,
+            "license": {
+              "key": "isc",
+              "name": "ISC License",
+              "spdx_id": "ISC",
+              "url": "https://api.github.com/licenses/isc",
+              "node_id": "MDc6TGljZW5zZTEw"
+            },
+            "allow_forking": true,
+            "is_template": false,
+            "web_commit_signoff_required": false,
+            "topics": [],
+            "visibility": "public",
+            "forks": 3,
+            "open_issues": 1,
+            "watchers": 5,
+            "default_branch": "master"
+          }
+        },
+        "_links": {
+          "self": {
+            "href": "https://api.github.com/repos/discord/cowboy/pulls/1"
+          },
+          "html": {
+            "href": "https://github.com/discord/cowboy/pull/1"
+          },
+          "issue": {
+            "href": "https://api.github.com/repos/discord/cowboy/issues/1"
+          },
+          "comments": {
+            "href": "https://api.github.com/repos/discord/cowboy/issues/1/comments"
+          },
+          "review_comments": {
+            "href": "https://api.github.com/repos/discord/cowboy/pulls/1/comments"
+          },
+          "review_comment": {
+            "href": "https://api.github.com/repos/discord/cowboy/pulls/comments{/number}"
+          },
+          "commits": {
+            "href": "https://api.github.com/repos/discord/cowboy/pulls/1/commits"
+          },
+          "statuses": {
+            "href": "https://api.github.com/repos/discord/cowboy/statuses/ad4ec7cfa76abe054c24e64b61d8e9632a782810"
+          }
+        },
+        "author_association": "COLLABORATOR",
+        "auto_merge": null,
+        "active_lock_reason": null
+      }
+    ]
   }
 }

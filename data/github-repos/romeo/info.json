@@ -57,7 +57,80 @@
     "triage": false,
     "pull": false
   },
-  "branches": [],
+  "branches": [
+    {
+      "name": "bugfix/monitor-owner-process",
+      "commit": {
+        "sha": "cfab4ced844552de1f91b66105b4553c7de8dbe4",
+        "url": "https://api.github.com/repos/discord/romeo/commits/cfab4ced844552de1f91b66105b4553c7de8dbe4"
+      },
+      "protected": false
+    },
+    {
+      "name": "bugfix/monitor-owner-process-rebase",
+      "commit": {
+        "sha": "2ec65865da40784e981183d80d0dc0304284cde4",
+        "url": "https://api.github.com/repos/discord/romeo/commits/2ec65865da40784e981183d80d0dc0304284cde4"
+      },
+      "protected": false
+    },
+    {
+      "name": "close",
+      "commit": {
+        "sha": "6bca1a28404c2ac12b59c95ff79cbdfa3556d470",
+        "url": "https://api.github.com/repos/discord/romeo/commits/6bca1a28404c2ac12b59c95ff79cbdfa3556d470"
+      },
+      "protected": false
+    },
+    {
+      "name": "fast_xml",
+      "commit": {
+        "sha": "5fc3dcdb4822b3c18577ba4b45a49cd537d7d7db",
+        "url": "https://api.github.com/repos/discord/romeo/commits/5fc3dcdb4822b3c18577ba4b45a49cd537d7d7db"
+      },
+      "protected": false
+    },
+    {
+      "name": "feature/update-upstream",
+      "commit": {
+        "sha": "c12eaa3233c1a48b05fcace9021b5e81439824f9",
+        "url": "https://api.github.com/repos/discord/romeo/commits/c12eaa3233c1a48b05fcace9021b5e81439824f9"
+      },
+      "protected": false
+    },
+    {
+      "name": "fix_travis",
+      "commit": {
+        "sha": "1eeb419a59da47f41557b690831408428f140acc",
+        "url": "https://api.github.com/repos/discord/romeo/commits/1eeb419a59da47f41557b690831408428f140acc"
+      },
+      "protected": false
+    },
+    {
+      "name": "master",
+      "commit": {
+        "sha": "22a7280d0908107ebffefd25d7e051fdb9fab0b2",
+        "url": "https://api.github.com/repos/discord/romeo/commits/22a7280d0908107ebffefd25d7e051fdb9fab0b2"
+      },
+      "protected": false
+    },
+    {
+      "name": "revert-3-bugfix/monitor-owner-process",
+      "commit": {
+        "sha": "039e10f298a1f47a109afb5a19bf5d1a58623f46",
+        "url": "https://api.github.com/repos/discord/romeo/commits/039e10f298a1f47a109afb5a19bf5d1a58623f46"
+      },
+      "protected": false
+    },
+    {
+      "name": "update/rebase-against-upstream",
+      "commit": {
+        "sha": "0222209c7955e3267c38ddcf7755248069b6707b",
+        "url": "https://api.github.com/repos/discord/romeo/commits/0222209c7955e3267c38ddcf7755248069b6707b"
+      },
+      "protected": false
+    }
+  ],
   "last5": {
     "commits": [
       {
@@ -332,7 +405,1229 @@
       }
     ],
     "releases": [],
-    "issues": [],
-    "pullRequests": []
+    "issues": [
+      {
+        "url": "https://api.github.com/repos/discord/romeo/issues/5",
+        "id": 423500624,
+        "node_id": "MDExOlB1bGxSZXF1ZXN0MjYzMDYwNTQ3",
+        "number": 5,
+        "title": "Bugfix/monitor owner process",
+        "user": {
+          "login": "ihumanable",
+          "id": 122636,
+          "node_id": "MDQ6VXNlcjEyMjYzNg==",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/ihumanable",
+          "type": "User",
+          "site_admin": false
+        },
+        "labels": [],
+        "state": "closed",
+        "locked": false,
+        "assignee": null,
+        "assignees": [],
+        "milestone": null,
+        "comments": 0,
+        "created_at": "2019-03-20T22:28:25Z",
+        "updated_at": "2019-03-20T22:29:12Z",
+        "closed_at": "2019-03-20T22:29:11Z",
+        "author_association": "NONE",
+        "active_lock_reason": null,
+        "draft": false,
+        "pull_request": {
+          "url": "https://api.github.com/repos/discord/romeo/pulls/5",
+          "merged_at": "2019-03-20T22:29:11Z"
+        },
+        "body": "This is the same in substance as https://github.com/discordapp/romeo/pull/3 just played ontop of the correct git history",
+        "reactions": {
+          "url": "https://api.github.com/repos/discord/romeo/issues/5/reactions",
+          "total_count": 0,
+          "+1": 0,
+          "-1": 0,
+          "laugh": 0,
+          "hooray": 0,
+          "confused": 0,
+          "heart": 0,
+          "rocket": 0,
+          "eyes": 0
+        },
+        "performed_via_github_app": null,
+        "state_reason": null
+      },
+      {
+        "url": "https://api.github.com/repos/discord/romeo/issues/4",
+        "id": 423498088,
+        "node_id": "MDExOlB1bGxSZXF1ZXN0MjYzMDU4NDk4",
+        "number": 4,
+        "title": "Revert \"Bugfix/monitor owner process\"",
+        "user": {
+          "login": "ihumanable",
+          "id": 122636,
+          "node_id": "MDQ6VXNlcjEyMjYzNg==",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/ihumanable",
+          "type": "User",
+          "site_admin": false
+        },
+        "labels": [],
+        "state": "closed",
+        "locked": false,
+        "assignee": null,
+        "assignees": [],
+        "milestone": null,
+        "comments": 0,
+        "created_at": "2019-03-20T22:19:38Z",
+        "updated_at": "2019-03-20T22:19:45Z",
+        "closed_at": "2019-03-20T22:19:45Z",
+        "author_association": "NONE",
+        "active_lock_reason": null,
+        "draft": false,
+        "pull_request": {
+          "url": "https://api.github.com/repos/discord/romeo/pulls/4",
+          "merged_at": "2019-03-20T22:19:45Z"
+        },
+        "body": "Reverts discordapp/romeo#3",
+        "reactions": {
+          "url": "https://api.github.com/repos/discord/romeo/issues/4/reactions",
+          "total_count": 0,
+          "+1": 0,
+          "-1": 0,
+          "laugh": 0,
+          "hooray": 0,
+          "confused": 0,
+          "heart": 0,
+          "rocket": 0,
+          "eyes": 0
+        },
+        "performed_via_github_app": null,
+        "state_reason": null
+      },
+      {
+        "url": "https://api.github.com/repos/discord/romeo/issues/3",
+        "id": 421175647,
+        "node_id": "MDExOlB1bGxSZXF1ZXN0MjYxMjg2MzA0",
+        "number": 3,
+        "title": "Bugfix/monitor owner process",
+        "user": {
+          "login": "ihumanable",
+          "id": 122636,
+          "node_id": "MDQ6VXNlcjEyMjYzNg==",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/ihumanable",
+          "type": "User",
+          "site_admin": false
+        },
+        "labels": [],
+        "state": "closed",
+        "locked": false,
+        "assignee": null,
+        "assignees": [],
+        "milestone": null,
+        "comments": 0,
+        "created_at": "2019-03-14T18:20:34Z",
+        "updated_at": "2019-03-20T22:19:02Z",
+        "closed_at": "2019-03-14T23:56:12Z",
+        "author_association": "NONE",
+        "active_lock_reason": null,
+        "draft": false,
+        "pull_request": {
+          "url": "https://api.github.com/repos/discord/romeo/pulls/3",
+          "merged_at": "2019-03-14T23:56:12Z"
+        },
+        "body": "This fixes a bug when the caller is not the owner.\r\n\r\nRomeo Connections link to the calling process so that if the caller exits the Romeo Connection exits.  \r\n\r\nWhen Connections are managed by a supervisor (like in GCM) the Supervisor is the caller but the Pusher is the owner, the Connection was unaware of the owner process and the exit of that process did nothing to clean up the Connection.\r\n\r\nThis changes that behavior by monitoring the owner if it is different than the caller and implements some disconnect and cleanup logic on owner down.",
+        "reactions": {
+          "url": "https://api.github.com/repos/discord/romeo/issues/3/reactions",
+          "total_count": 0,
+          "+1": 0,
+          "-1": 0,
+          "laugh": 0,
+          "hooray": 0,
+          "confused": 0,
+          "heart": 0,
+          "rocket": 0,
+          "eyes": 0
+        },
+        "performed_via_github_app": null,
+        "state_reason": null
+      },
+      {
+        "url": "https://api.github.com/repos/discord/romeo/issues/2",
+        "id": 210927510,
+        "node_id": "MDExOlB1bGxSZXF1ZXN0MTA4NDMwNTIy",
+        "number": 2,
+        "title": "bring romeo up to date",
+        "user": {
+          "login": "brian-armstrong-discord",
+          "id": 25939803,
+          "node_id": "MDQ6VXNlcjI1OTM5ODAz",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/brian-armstrong-discord",
+          "type": "User",
+          "site_admin": false
+        },
+        "labels": [],
+        "state": "closed",
+        "locked": false,
+        "assignee": null,
+        "assignees": [],
+        "milestone": null,
+        "comments": 0,
+        "created_at": "2017-02-28T22:56:27Z",
+        "updated_at": "2019-03-20T22:24:38Z",
+        "closed_at": "2019-03-20T22:20:13Z",
+        "author_association": "NONE",
+        "active_lock_reason": null,
+        "draft": false,
+        "pull_request": {
+          "url": "https://api.github.com/repos/discord/romeo/pulls/2",
+          "merged_at": "2019-03-20T22:20:13Z"
+        },
+        "body": "the upstream master has all the warning fixes we need, so this is just bringing our fork up to date",
+        "reactions": {
+          "url": "https://api.github.com/repos/discord/romeo/issues/2/reactions",
+          "total_count": 0,
+          "+1": 0,
+          "-1": 0,
+          "laugh": 0,
+          "hooray": 0,
+          "confused": 0,
+          "heart": 0,
+          "rocket": 0,
+          "eyes": 0
+        },
+        "performed_via_github_app": null,
+        "state_reason": null
+      },
+      {
+        "url": "https://api.github.com/repos/discord/romeo/issues/1",
+        "id": 169705859,
+        "node_id": "MDExOlB1bGxSZXF1ZXN0ODAzMTQxMDQ=",
+        "number": 1,
+        "title": "Close and shutdown",
+        "user": {
+          "login": "jhowarth",
+          "id": 70012,
+          "node_id": "MDQ6VXNlcjcwMDEy",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/jhowarth",
+          "type": "User",
+          "site_admin": false
+        },
+        "labels": [],
+        "state": "closed",
+        "locked": false,
+        "assignee": null,
+        "assignees": [],
+        "milestone": null,
+        "comments": 1,
+        "created_at": "2016-08-05T22:09:24Z",
+        "updated_at": "2016-08-11T18:58:06Z",
+        "closed_at": "2016-08-11T18:58:06Z",
+        "author_association": "NONE",
+        "active_lock_reason": null,
+        "draft": false,
+        "pull_request": {
+          "url": "https://api.github.com/repos/discord/romeo/pulls/1",
+          "merged_at": "2016-08-11T18:58:06Z"
+        },
+        "body": "This will change the `Connection.close()` method to actually close and shutdown as describe in the docs. Without this, the connection will try to reconnect.\n",
+        "reactions": {
+          "url": "https://api.github.com/repos/discord/romeo/issues/1/reactions",
+          "total_count": 0,
+          "+1": 0,
+          "-1": 0,
+          "laugh": 0,
+          "hooray": 0,
+          "confused": 0,
+          "heart": 0,
+          "rocket": 0,
+          "eyes": 0
+        },
+        "performed_via_github_app": null,
+        "state_reason": null
+      }
+    ],
+    "pullRequests": [
+      {
+        "url": "https://api.github.com/repos/discord/romeo/pulls/5",
+        "id": 263060547,
+        "node_id": "MDExOlB1bGxSZXF1ZXN0MjYzMDYwNTQ3",
+        "number": 5,
+        "state": "closed",
+        "locked": false,
+        "title": "Bugfix/monitor owner process",
+        "user": {
+          "login": "ihumanable",
+          "id": 122636,
+          "node_id": "MDQ6VXNlcjEyMjYzNg==",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/ihumanable",
+          "type": "User",
+          "site_admin": false
+        },
+        "body": "This is the same in substance as https://github.com/discordapp/romeo/pull/3 just played ontop of the correct git history",
+        "created_at": "2019-03-20T22:28:25Z",
+        "updated_at": "2019-03-20T22:29:12Z",
+        "closed_at": "2019-03-20T22:29:11Z",
+        "merged_at": "2019-03-20T22:29:11Z",
+        "merge_commit_sha": "b25d84bd2346df8b12458d80406adca0ca136eae",
+        "assignee": null,
+        "assignees": [],
+        "requested_reviewers": [],
+        "requested_teams": [],
+        "labels": [],
+        "milestone": null,
+        "draft": false,
+        "head": {
+          "label": "discord:bugfix/monitor-owner-process",
+          "ref": "bugfix/monitor-owner-process",
+          "sha": "cfab4ced844552de1f91b66105b4553c7de8dbe4",
+          "user": {
+            "login": "discord",
+            "id": 1965106,
+            "node_id": "MDEyOk9yZ2FuaXphdGlvbjE5NjUxMDY=",
+            "gravatar_id": "",
+            "url": "https://api.github.com/users/discord",
+            "type": "Organization",
+            "site_admin": false
+          },
+          "repo": {
+            "id": 64970839,
+            "node_id": "MDEwOlJlcG9zaXRvcnk2NDk3MDgzOQ==",
+            "name": "romeo",
+            "full_name": "discord/romeo",
+            "private": false,
+            "owner": {
+              "login": "discord",
+              "id": 1965106,
+              "node_id": "MDEyOk9yZ2FuaXphdGlvbjE5NjUxMDY=",
+              "gravatar_id": "",
+              "url": "https://api.github.com/users/discord",
+              "type": "Organization",
+              "site_admin": false
+            },
+            "description": "An XMPP Client for Elixir",
+            "fork": true,
+            "url": "https://api.github.com/repos/discord/romeo",
+            "created_at": "2016-08-04T22:16:46Z",
+            "updated_at": "2022-12-23T13:47:17Z",
+            "pushed_at": "2020-07-14T22:01:52Z",
+            "homepage": "",
+            "size": 157,
+            "stargazers_count": 12,
+            "watchers_count": 12,
+            "language": "Elixir",
+            "has_issues": false,
+            "has_projects": true,
+            "has_downloads": true,
+            "has_wiki": true,
+            "has_pages": false,
+            "has_discussions": false,
+            "forks_count": 8,
+            "archived": false,
+            "disabled": false,
+            "open_issues_count": 0,
+            "license": {
+              "key": "mit",
+              "name": "MIT License",
+              "spdx_id": "MIT",
+              "url": "https://api.github.com/licenses/mit",
+              "node_id": "MDc6TGljZW5zZTEz"
+            },
+            "allow_forking": true,
+            "is_template": false,
+            "web_commit_signoff_required": false,
+            "topics": [],
+            "visibility": "public",
+            "forks": 8,
+            "open_issues": 0,
+            "watchers": 12,
+            "default_branch": "master"
+          }
+        },
+        "base": {
+          "label": "discord:master",
+          "ref": "master",
+          "sha": "602d7e2aabaca515f2ced947429b35d4ef34a8e2",
+          "user": {
+            "login": "discord",
+            "id": 1965106,
+            "node_id": "MDEyOk9yZ2FuaXphdGlvbjE5NjUxMDY=",
+            "gravatar_id": "",
+            "url": "https://api.github.com/users/discord",
+            "type": "Organization",
+            "site_admin": false
+          },
+          "repo": {
+            "id": 64970839,
+            "node_id": "MDEwOlJlcG9zaXRvcnk2NDk3MDgzOQ==",
+            "name": "romeo",
+            "full_name": "discord/romeo",
+            "private": false,
+            "owner": {
+              "login": "discord",
+              "id": 1965106,
+              "node_id": "MDEyOk9yZ2FuaXphdGlvbjE5NjUxMDY=",
+              "gravatar_id": "",
+              "url": "https://api.github.com/users/discord",
+              "type": "Organization",
+              "site_admin": false
+            },
+            "description": "An XMPP Client for Elixir",
+            "fork": true,
+            "url": "https://api.github.com/repos/discord/romeo",
+            "created_at": "2016-08-04T22:16:46Z",
+            "updated_at": "2022-12-23T13:47:17Z",
+            "pushed_at": "2020-07-14T22:01:52Z",
+            "homepage": "",
+            "size": 157,
+            "stargazers_count": 12,
+            "watchers_count": 12,
+            "language": "Elixir",
+            "has_issues": false,
+            "has_projects": true,
+            "has_downloads": true,
+            "has_wiki": true,
+            "has_pages": false,
+            "has_discussions": false,
+            "forks_count": 8,
+            "archived": false,
+            "disabled": false,
+            "open_issues_count": 0,
+            "license": {
+              "key": "mit",
+              "name": "MIT License",
+              "spdx_id": "MIT",
+              "url": "https://api.github.com/licenses/mit",
+              "node_id": "MDc6TGljZW5zZTEz"
+            },
+            "allow_forking": true,
+            "is_template": false,
+            "web_commit_signoff_required": false,
+            "topics": [],
+            "visibility": "public",
+            "forks": 8,
+            "open_issues": 0,
+            "watchers": 12,
+            "default_branch": "master"
+          }
+        },
+        "_links": {
+          "self": {
+            "href": "https://api.github.com/repos/discord/romeo/pulls/5"
+          },
+          "html": {
+            "href": "https://github.com/discord/romeo/pull/5"
+          },
+          "issue": {
+            "href": "https://api.github.com/repos/discord/romeo/issues/5"
+          },
+          "comments": {
+            "href": "https://api.github.com/repos/discord/romeo/issues/5/comments"
+          },
+          "review_comments": {
+            "href": "https://api.github.com/repos/discord/romeo/pulls/5/comments"
+          },
+          "review_comment": {
+            "href": "https://api.github.com/repos/discord/romeo/pulls/comments{/number}"
+          },
+          "commits": {
+            "href": "https://api.github.com/repos/discord/romeo/pulls/5/commits"
+          },
+          "statuses": {
+            "href": "https://api.github.com/repos/discord/romeo/statuses/cfab4ced844552de1f91b66105b4553c7de8dbe4"
+          }
+        },
+        "author_association": "NONE",
+        "auto_merge": null,
+        "active_lock_reason": null
+      },
+      {
+        "url": "https://api.github.com/repos/discord/romeo/pulls/4",
+        "id": 263058498,
+        "node_id": "MDExOlB1bGxSZXF1ZXN0MjYzMDU4NDk4",
+        "number": 4,
+        "state": "closed",
+        "locked": false,
+        "title": "Revert \"Bugfix/monitor owner process\"",
+        "user": {
+          "login": "ihumanable",
+          "id": 122636,
+          "node_id": "MDQ6VXNlcjEyMjYzNg==",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/ihumanable",
+          "type": "User",
+          "site_admin": false
+        },
+        "body": "Reverts discordapp/romeo#3",
+        "created_at": "2019-03-20T22:19:38Z",
+        "updated_at": "2019-03-20T22:19:45Z",
+        "closed_at": "2019-03-20T22:19:45Z",
+        "merged_at": "2019-03-20T22:19:45Z",
+        "merge_commit_sha": "3969aa570106810c8dbbdb71927df979c6b7a7cc",
+        "assignee": null,
+        "assignees": [],
+        "requested_reviewers": [],
+        "requested_teams": [],
+        "labels": [],
+        "milestone": null,
+        "draft": false,
+        "head": {
+          "label": "discord:revert-3-bugfix/monitor-owner-process",
+          "ref": "revert-3-bugfix/monitor-owner-process",
+          "sha": "039e10f298a1f47a109afb5a19bf5d1a58623f46",
+          "user": {
+            "login": "discord",
+            "id": 1965106,
+            "node_id": "MDEyOk9yZ2FuaXphdGlvbjE5NjUxMDY=",
+            "gravatar_id": "",
+            "url": "https://api.github.com/users/discord",
+            "type": "Organization",
+            "site_admin": false
+          },
+          "repo": {
+            "id": 64970839,
+            "node_id": "MDEwOlJlcG9zaXRvcnk2NDk3MDgzOQ==",
+            "name": "romeo",
+            "full_name": "discord/romeo",
+            "private": false,
+            "owner": {
+              "login": "discord",
+              "id": 1965106,
+              "node_id": "MDEyOk9yZ2FuaXphdGlvbjE5NjUxMDY=",
+              "gravatar_id": "",
+              "url": "https://api.github.com/users/discord",
+              "type": "Organization",
+              "site_admin": false
+            },
+            "description": "An XMPP Client for Elixir",
+            "fork": true,
+            "url": "https://api.github.com/repos/discord/romeo",
+            "created_at": "2016-08-04T22:16:46Z",
+            "updated_at": "2022-12-23T13:47:17Z",
+            "pushed_at": "2020-07-14T22:01:52Z",
+            "homepage": "",
+            "size": 157,
+            "stargazers_count": 12,
+            "watchers_count": 12,
+            "language": "Elixir",
+            "has_issues": false,
+            "has_projects": true,
+            "has_downloads": true,
+            "has_wiki": true,
+            "has_pages": false,
+            "has_discussions": false,
+            "forks_count": 8,
+            "archived": false,
+            "disabled": false,
+            "open_issues_count": 0,
+            "license": {
+              "key": "mit",
+              "name": "MIT License",
+              "spdx_id": "MIT",
+              "url": "https://api.github.com/licenses/mit",
+              "node_id": "MDc6TGljZW5zZTEz"
+            },
+            "allow_forking": true,
+            "is_template": false,
+            "web_commit_signoff_required": false,
+            "topics": [],
+            "visibility": "public",
+            "forks": 8,
+            "open_issues": 0,
+            "watchers": 12,
+            "default_branch": "master"
+          }
+        },
+        "base": {
+          "label": "discord:master",
+          "ref": "master",
+          "sha": "11a180ca57191017225f31f131f6c54a4a43b3a2",
+          "user": {
+            "login": "discord",
+            "id": 1965106,
+            "node_id": "MDEyOk9yZ2FuaXphdGlvbjE5NjUxMDY=",
+            "gravatar_id": "",
+            "url": "https://api.github.com/users/discord",
+            "type": "Organization",
+            "site_admin": false
+          },
+          "repo": {
+            "id": 64970839,
+            "node_id": "MDEwOlJlcG9zaXRvcnk2NDk3MDgzOQ==",
+            "name": "romeo",
+            "full_name": "discord/romeo",
+            "private": false,
+            "owner": {
+              "login": "discord",
+              "id": 1965106,
+              "node_id": "MDEyOk9yZ2FuaXphdGlvbjE5NjUxMDY=",
+              "gravatar_id": "",
+              "url": "https://api.github.com/users/discord",
+              "type": "Organization",
+              "site_admin": false
+            },
+            "description": "An XMPP Client for Elixir",
+            "fork": true,
+            "url": "https://api.github.com/repos/discord/romeo",
+            "created_at": "2016-08-04T22:16:46Z",
+            "updated_at": "2022-12-23T13:47:17Z",
+            "pushed_at": "2020-07-14T22:01:52Z",
+            "homepage": "",
+            "size": 157,
+            "stargazers_count": 12,
+            "watchers_count": 12,
+            "language": "Elixir",
+            "has_issues": false,
+            "has_projects": true,
+            "has_downloads": true,
+            "has_wiki": true,
+            "has_pages": false,
+            "has_discussions": false,
+            "forks_count": 8,
+            "archived": false,
+            "disabled": false,
+            "open_issues_count": 0,
+            "license": {
+              "key": "mit",
+              "name": "MIT License",
+              "spdx_id": "MIT",
+              "url": "https://api.github.com/licenses/mit",
+              "node_id": "MDc6TGljZW5zZTEz"
+            },
+            "allow_forking": true,
+            "is_template": false,
+            "web_commit_signoff_required": false,
+            "topics": [],
+            "visibility": "public",
+            "forks": 8,
+            "open_issues": 0,
+            "watchers": 12,
+            "default_branch": "master"
+          }
+        },
+        "_links": {
+          "self": {
+            "href": "https://api.github.com/repos/discord/romeo/pulls/4"
+          },
+          "html": {
+            "href": "https://github.com/discord/romeo/pull/4"
+          },
+          "issue": {
+            "href": "https://api.github.com/repos/discord/romeo/issues/4"
+          },
+          "comments": {
+            "href": "https://api.github.com/repos/discord/romeo/issues/4/comments"
+          },
+          "review_comments": {
+            "href": "https://api.github.com/repos/discord/romeo/pulls/4/comments"
+          },
+          "review_comment": {
+            "href": "https://api.github.com/repos/discord/romeo/pulls/comments{/number}"
+          },
+          "commits": {
+            "href": "https://api.github.com/repos/discord/romeo/pulls/4/commits"
+          },
+          "statuses": {
+            "href": "https://api.github.com/repos/discord/romeo/statuses/039e10f298a1f47a109afb5a19bf5d1a58623f46"
+          }
+        },
+        "author_association": "NONE",
+        "auto_merge": null,
+        "active_lock_reason": null
+      },
+      {
+        "url": "https://api.github.com/repos/discord/romeo/pulls/3",
+        "id": 261286304,
+        "node_id": "MDExOlB1bGxSZXF1ZXN0MjYxMjg2MzA0",
+        "number": 3,
+        "state": "closed",
+        "locked": false,
+        "title": "Bugfix/monitor owner process",
+        "user": {
+          "login": "ihumanable",
+          "id": 122636,
+          "node_id": "MDQ6VXNlcjEyMjYzNg==",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/ihumanable",
+          "type": "User",
+          "site_admin": false
+        },
+        "body": "This fixes a bug when the caller is not the owner.\r\n\r\nRomeo Connections link to the calling process so that if the caller exits the Romeo Connection exits.  \r\n\r\nWhen Connections are managed by a supervisor (like in GCM) the Supervisor is the caller but the Pusher is the owner, the Connection was unaware of the owner process and the exit of that process did nothing to clean up the Connection.\r\n\r\nThis changes that behavior by monitoring the owner if it is different than the caller and implements some disconnect and cleanup logic on owner down.",
+        "created_at": "2019-03-14T18:20:34Z",
+        "updated_at": "2019-03-20T22:19:02Z",
+        "closed_at": "2019-03-14T23:56:12Z",
+        "merged_at": "2019-03-14T23:56:12Z",
+        "merge_commit_sha": "11a180ca57191017225f31f131f6c54a4a43b3a2",
+        "assignee": null,
+        "assignees": [],
+        "requested_reviewers": [
+          {
+            "login": "brian-armstrong-discord",
+            "id": 25939803,
+            "node_id": "MDQ6VXNlcjI1OTM5ODAz",
+            "gravatar_id": "",
+            "url": "https://api.github.com/users/brian-armstrong-discord",
+            "type": "User",
+            "site_admin": false
+          }
+        ],
+        "requested_teams": [],
+        "labels": [],
+        "milestone": null,
+        "draft": false,
+        "head": {
+          "label": "discord:bugfix/monitor-owner-process",
+          "ref": "bugfix/monitor-owner-process",
+          "sha": "795a8f314b4e66c26d16745caaadb1efc127c6f4",
+          "user": {
+            "login": "discord",
+            "id": 1965106,
+            "node_id": "MDEyOk9yZ2FuaXphdGlvbjE5NjUxMDY=",
+            "gravatar_id": "",
+            "url": "https://api.github.com/users/discord",
+            "type": "Organization",
+            "site_admin": false
+          },
+          "repo": {
+            "id": 64970839,
+            "node_id": "MDEwOlJlcG9zaXRvcnk2NDk3MDgzOQ==",
+            "name": "romeo",
+            "full_name": "discord/romeo",
+            "private": false,
+            "owner": {
+              "login": "discord",
+              "id": 1965106,
+              "node_id": "MDEyOk9yZ2FuaXphdGlvbjE5NjUxMDY=",
+              "gravatar_id": "",
+              "url": "https://api.github.com/users/discord",
+              "type": "Organization",
+              "site_admin": false
+            },
+            "description": "An XMPP Client for Elixir",
+            "fork": true,
+            "url": "https://api.github.com/repos/discord/romeo",
+            "created_at": "2016-08-04T22:16:46Z",
+            "updated_at": "2022-12-23T13:47:17Z",
+            "pushed_at": "2020-07-14T22:01:52Z",
+            "homepage": "",
+            "size": 157,
+            "stargazers_count": 12,
+            "watchers_count": 12,
+            "language": "Elixir",
+            "has_issues": false,
+            "has_projects": true,
+            "has_downloads": true,
+            "has_wiki": true,
+            "has_pages": false,
+            "has_discussions": false,
+            "forks_count": 8,
+            "archived": false,
+            "disabled": false,
+            "open_issues_count": 0,
+            "license": {
+              "key": "mit",
+              "name": "MIT License",
+              "spdx_id": "MIT",
+              "url": "https://api.github.com/licenses/mit",
+              "node_id": "MDc6TGljZW5zZTEz"
+            },
+            "allow_forking": true,
+            "is_template": false,
+            "web_commit_signoff_required": false,
+            "topics": [],
+            "visibility": "public",
+            "forks": 8,
+            "open_issues": 0,
+            "watchers": 12,
+            "default_branch": "master"
+          }
+        },
+        "base": {
+          "label": "discord:master",
+          "ref": "master",
+          "sha": "d533e2967cce0c5bd0969193404c90f3ef7a5ad5",
+          "user": {
+            "login": "discord",
+            "id": 1965106,
+            "node_id": "MDEyOk9yZ2FuaXphdGlvbjE5NjUxMDY=",
+            "gravatar_id": "",
+            "url": "https://api.github.com/users/discord",
+            "type": "Organization",
+            "site_admin": false
+          },
+          "repo": {
+            "id": 64970839,
+            "node_id": "MDEwOlJlcG9zaXRvcnk2NDk3MDgzOQ==",
+            "name": "romeo",
+            "full_name": "discord/romeo",
+            "private": false,
+            "owner": {
+              "login": "discord",
+              "id": 1965106,
+              "node_id": "MDEyOk9yZ2FuaXphdGlvbjE5NjUxMDY=",
+              "gravatar_id": "",
+              "url": "https://api.github.com/users/discord",
+              "type": "Organization",
+              "site_admin": false
+            },
+            "description": "An XMPP Client for Elixir",
+            "fork": true,
+            "url": "https://api.github.com/repos/discord/romeo",
+            "created_at": "2016-08-04T22:16:46Z",
+            "updated_at": "2022-12-23T13:47:17Z",
+            "pushed_at": "2020-07-14T22:01:52Z",
+            "homepage": "",
+            "size": 157,
+            "stargazers_count": 12,
+            "watchers_count": 12,
+            "language": "Elixir",
+            "has_issues": false,
+            "has_projects": true,
+            "has_downloads": true,
+            "has_wiki": true,
+            "has_pages": false,
+            "has_discussions": false,
+            "forks_count": 8,
+            "archived": false,
+            "disabled": false,
+            "open_issues_count": 0,
+            "license": {
+              "key": "mit",
+              "name": "MIT License",
+              "spdx_id": "MIT",
+              "url": "https://api.github.com/licenses/mit",
+              "node_id": "MDc6TGljZW5zZTEz"
+            },
+            "allow_forking": true,
+            "is_template": false,
+            "web_commit_signoff_required": false,
+            "topics": [],
+            "visibility": "public",
+            "forks": 8,
+            "open_issues": 0,
+            "watchers": 12,
+            "default_branch": "master"
+          }
+        },
+        "_links": {
+          "self": {
+            "href": "https://api.github.com/repos/discord/romeo/pulls/3"
+          },
+          "html": {
+            "href": "https://github.com/discord/romeo/pull/3"
+          },
+          "issue": {
+            "href": "https://api.github.com/repos/discord/romeo/issues/3"
+          },
+          "comments": {
+            "href": "https://api.github.com/repos/discord/romeo/issues/3/comments"
+          },
+          "review_comments": {
+            "href": "https://api.github.com/repos/discord/romeo/pulls/3/comments"
+          },
+          "review_comment": {
+            "href": "https://api.github.com/repos/discord/romeo/pulls/comments{/number}"
+          },
+          "commits": {
+            "href": "https://api.github.com/repos/discord/romeo/pulls/3/commits"
+          },
+          "statuses": {
+            "href": "https://api.github.com/repos/discord/romeo/statuses/795a8f314b4e66c26d16745caaadb1efc127c6f4"
+          }
+        },
+        "author_association": "NONE",
+        "auto_merge": null,
+        "active_lock_reason": null
+      },
+      {
+        "url": "https://api.github.com/repos/discord/romeo/pulls/2",
+        "id": 108430522,
+        "node_id": "MDExOlB1bGxSZXF1ZXN0MTA4NDMwNTIy",
+        "number": 2,
+        "state": "closed",
+        "locked": false,
+        "title": "bring romeo up to date",
+        "user": {
+          "login": "brian-armstrong-discord",
+          "id": 25939803,
+          "node_id": "MDQ6VXNlcjI1OTM5ODAz",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/brian-armstrong-discord",
+          "type": "User",
+          "site_admin": false
+        },
+        "body": "the upstream master has all the warning fixes we need, so this is just bringing our fork up to date",
+        "created_at": "2017-02-28T22:56:27Z",
+        "updated_at": "2019-03-20T22:24:38Z",
+        "closed_at": "2019-03-20T22:20:13Z",
+        "merged_at": "2019-03-20T22:20:13Z",
+        "merge_commit_sha": "602d7e2aabaca515f2ced947429b35d4ef34a8e2",
+        "assignee": null,
+        "assignees": [],
+        "requested_reviewers": [],
+        "requested_teams": [],
+        "labels": [],
+        "milestone": null,
+        "draft": false,
+        "head": {
+          "label": "discord:feature/update-upstream",
+          "ref": "feature/update-upstream",
+          "sha": "c12eaa3233c1a48b05fcace9021b5e81439824f9",
+          "user": {
+            "login": "discord",
+            "id": 1965106,
+            "node_id": "MDEyOk9yZ2FuaXphdGlvbjE5NjUxMDY=",
+            "gravatar_id": "",
+            "url": "https://api.github.com/users/discord",
+            "type": "Organization",
+            "site_admin": false
+          },
+          "repo": {
+            "id": 64970839,
+            "node_id": "MDEwOlJlcG9zaXRvcnk2NDk3MDgzOQ==",
+            "name": "romeo",
+            "full_name": "discord/romeo",
+            "private": false,
+            "owner": {
+              "login": "discord",
+              "id": 1965106,
+              "node_id": "MDEyOk9yZ2FuaXphdGlvbjE5NjUxMDY=",
+              "gravatar_id": "",
+              "url": "https://api.github.com/users/discord",
+              "type": "Organization",
+              "site_admin": false
+            },
+            "description": "An XMPP Client for Elixir",
+            "fork": true,
+            "url": "https://api.github.com/repos/discord/romeo",
+            "created_at": "2016-08-04T22:16:46Z",
+            "updated_at": "2022-12-23T13:47:17Z",
+            "pushed_at": "2020-07-14T22:01:52Z",
+            "homepage": "",
+            "size": 157,
+            "stargazers_count": 12,
+            "watchers_count": 12,
+            "language": "Elixir",
+            "has_issues": false,
+            "has_projects": true,
+            "has_downloads": true,
+            "has_wiki": true,
+            "has_pages": false,
+            "has_discussions": false,
+            "forks_count": 8,
+            "archived": false,
+            "disabled": false,
+            "open_issues_count": 0,
+            "license": {
+              "key": "mit",
+              "name": "MIT License",
+              "spdx_id": "MIT",
+              "url": "https://api.github.com/licenses/mit",
+              "node_id": "MDc6TGljZW5zZTEz"
+            },
+            "allow_forking": true,
+            "is_template": false,
+            "web_commit_signoff_required": false,
+            "topics": [],
+            "visibility": "public",
+            "forks": 8,
+            "open_issues": 0,
+            "watchers": 12,
+            "default_branch": "master"
+          }
+        },
+        "base": {
+          "label": "discord:master",
+          "ref": "master",
+          "sha": "d533e2967cce0c5bd0969193404c90f3ef7a5ad5",
+          "user": {
+            "login": "discord",
+            "id": 1965106,
+            "node_id": "MDEyOk9yZ2FuaXphdGlvbjE5NjUxMDY=",
+            "gravatar_id": "",
+            "url": "https://api.github.com/users/discord",
+            "type": "Organization",
+            "site_admin": false
+          },
+          "repo": {
+            "id": 64970839,
+            "node_id": "MDEwOlJlcG9zaXRvcnk2NDk3MDgzOQ==",
+            "name": "romeo",
+            "full_name": "discord/romeo",
+            "private": false,
+            "owner": {
+              "login": "discord",
+              "id": 1965106,
+              "node_id": "MDEyOk9yZ2FuaXphdGlvbjE5NjUxMDY=",
+              "gravatar_id": "",
+              "url": "https://api.github.com/users/discord",
+              "type": "Organization",
+              "site_admin": false
+            },
+            "description": "An XMPP Client for Elixir",
+            "fork": true,
+            "url": "https://api.github.com/repos/discord/romeo",
+            "created_at": "2016-08-04T22:16:46Z",
+            "updated_at": "2022-12-23T13:47:17Z",
+            "pushed_at": "2020-07-14T22:01:52Z",
+            "homepage": "",
+            "size": 157,
+            "stargazers_count": 12,
+            "watchers_count": 12,
+            "language": "Elixir",
+            "has_issues": false,
+            "has_projects": true,
+            "has_downloads": true,
+            "has_wiki": true,
+            "has_pages": false,
+            "has_discussions": false,
+            "forks_count": 8,
+            "archived": false,
+            "disabled": false,
+            "open_issues_count": 0,
+            "license": {
+              "key": "mit",
+              "name": "MIT License",
+              "spdx_id": "MIT",
+              "url": "https://api.github.com/licenses/mit",
+              "node_id": "MDc6TGljZW5zZTEz"
+            },
+            "allow_forking": true,
+            "is_template": false,
+            "web_commit_signoff_required": false,
+            "topics": [],
+            "visibility": "public",
+            "forks": 8,
+            "open_issues": 0,
+            "watchers": 12,
+            "default_branch": "master"
+          }
+        },
+        "_links": {
+          "self": {
+            "href": "https://api.github.com/repos/discord/romeo/pulls/2"
+          },
+          "html": {
+            "href": "https://github.com/discord/romeo/pull/2"
+          },
+          "issue": {
+            "href": "https://api.github.com/repos/discord/romeo/issues/2"
+          },
+          "comments": {
+            "href": "https://api.github.com/repos/discord/romeo/issues/2/comments"
+          },
+          "review_comments": {
+            "href": "https://api.github.com/repos/discord/romeo/pulls/2/comments"
+          },
+          "review_comment": {
+            "href": "https://api.github.com/repos/discord/romeo/pulls/comments{/number}"
+          },
+          "commits": {
+            "href": "https://api.github.com/repos/discord/romeo/pulls/2/commits"
+          },
+          "statuses": {
+            "href": "https://api.github.com/repos/discord/romeo/statuses/c12eaa3233c1a48b05fcace9021b5e81439824f9"
+          }
+        },
+        "author_association": "NONE",
+        "auto_merge": null,
+        "active_lock_reason": null
+      },
+      {
+        "url": "https://api.github.com/repos/discord/romeo/pulls/1",
+        "id": 80314104,
+        "node_id": "MDExOlB1bGxSZXF1ZXN0ODAzMTQxMDQ=",
+        "number": 1,
+        "state": "closed",
+        "locked": false,
+        "title": "Close and shutdown",
+        "user": {
+          "login": "jhowarth",
+          "id": 70012,
+          "node_id": "MDQ6VXNlcjcwMDEy",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/jhowarth",
+          "type": "User",
+          "site_admin": false
+        },
+        "body": "This will change the `Connection.close()` method to actually close and shutdown as describe in the docs. Without this, the connection will try to reconnect.\n",
+        "created_at": "2016-08-05T22:09:24Z",
+        "updated_at": "2016-08-11T18:58:06Z",
+        "closed_at": "2016-08-11T18:58:06Z",
+        "merged_at": "2016-08-11T18:58:06Z",
+        "merge_commit_sha": "d533e2967cce0c5bd0969193404c90f3ef7a5ad5",
+        "assignee": null,
+        "assignees": [],
+        "requested_reviewers": [],
+        "requested_teams": [],
+        "labels": [],
+        "milestone": null,
+        "draft": false,
+        "head": {
+          "label": "discord:close",
+          "ref": "close",
+          "sha": "6bca1a28404c2ac12b59c95ff79cbdfa3556d470",
+          "user": {
+            "login": "discord",
+            "id": 1965106,
+            "node_id": "MDEyOk9yZ2FuaXphdGlvbjE5NjUxMDY=",
+            "gravatar_id": "",
+            "url": "https://api.github.com/users/discord",
+            "type": "Organization",
+            "site_admin": false
+          },
+          "repo": {
+            "id": 64970839,
+            "node_id": "MDEwOlJlcG9zaXRvcnk2NDk3MDgzOQ==",
+            "name": "romeo",
+            "full_name": "discord/romeo",
+            "private": false,
+            "owner": {
+              "login": "discord",
+              "id": 1965106,
+              "node_id": "MDEyOk9yZ2FuaXphdGlvbjE5NjUxMDY=",
+              "gravatar_id": "",
+              "url": "https://api.github.com/users/discord",
+              "type": "Organization",
+              "site_admin": false
+            },
+            "description": "An XMPP Client for Elixir",
+            "fork": true,
+            "url": "https://api.github.com/repos/discord/romeo",
+            "created_at": "2016-08-04T22:16:46Z",
+            "updated_at": "2022-12-23T13:47:17Z",
+            "pushed_at": "2020-07-14T22:01:52Z",
+            "homepage": "",
+            "size": 157,
+            "stargazers_count": 12,
+            "watchers_count": 12,
+            "language": "Elixir",
+            "has_issues": false,
+            "has_projects": true,
+            "has_downloads": true,
+            "has_wiki": true,
+            "has_pages": false,
+            "has_discussions": false,
+            "forks_count": 8,
+            "archived": false,
+            "disabled": false,
+            "open_issues_count": 0,
+            "license": {
+              "key": "mit",
+              "name": "MIT License",
+              "spdx_id": "MIT",
+              "url": "https://api.github.com/licenses/mit",
+              "node_id": "MDc6TGljZW5zZTEz"
+            },
+            "allow_forking": true,
+            "is_template": false,
+            "web_commit_signoff_required": false,
+            "topics": [],
+            "visibility": "public",
+            "forks": 8,
+            "open_issues": 0,
+            "watchers": 12,
+            "default_branch": "master"
+          }
+        },
+        "base": {
+          "label": "discord:master",
+          "ref": "master",
+          "sha": "c2bb4b328d7478e55fcc09941c04db5c7b0b9cd3",
+          "user": {
+            "login": "discord",
+            "id": 1965106,
+            "node_id": "MDEyOk9yZ2FuaXphdGlvbjE5NjUxMDY=",
+            "gravatar_id": "",
+            "url": "https://api.github.com/users/discord",
+            "type": "Organization",
+            "site_admin": false
+          },
+          "repo": {
+            "id": 64970839,
+            "node_id": "MDEwOlJlcG9zaXRvcnk2NDk3MDgzOQ==",
+            "name": "romeo",
+            "full_name": "discord/romeo",
+            "private": false,
+            "owner": {
+              "login": "discord",
+              "id": 1965106,
+              "node_id": "MDEyOk9yZ2FuaXphdGlvbjE5NjUxMDY=",
+              "gravatar_id": "",
+              "url": "https://api.github.com/users/discord",
+              "type": "Organization",
+              "site_admin": false
+            },
+            "description": "An XMPP Client for Elixir",
+            "fork": true,
+            "url": "https://api.github.com/repos/discord/romeo",
+            "created_at": "2016-08-04T22:16:46Z",
+            "updated_at": "2022-12-23T13:47:17Z",
+            "pushed_at": "2020-07-14T22:01:52Z",
+            "homepage": "",
+            "size": 157,
+            "stargazers_count": 12,
+            "watchers_count": 12,
+            "language": "Elixir",
+            "has_issues": false,
+            "has_projects": true,
+            "has_downloads": true,
+            "has_wiki": true,
+            "has_pages": false,
+            "has_discussions": false,
+            "forks_count": 8,
+            "archived": false,
+            "disabled": false,
+            "open_issues_count": 0,
+            "license": {
+              "key": "mit",
+              "name": "MIT License",
+              "spdx_id": "MIT",
+              "url": "https://api.github.com/licenses/mit",
+              "node_id": "MDc6TGljZW5zZTEz"
+            },
+            "allow_forking": true,
+            "is_template": false,
+            "web_commit_signoff_required": false,
+            "topics": [],
+            "visibility": "public",
+            "forks": 8,
+            "open_issues": 0,
+            "watchers": 12,
+            "default_branch": "master"
+          }
+        },
+        "_links": {
+          "self": {
+            "href": "https://api.github.com/repos/discord/romeo/pulls/1"
+          },
+          "html": {
+            "href": "https://github.com/discord/romeo/pull/1"
+          },
+          "issue": {
+            "href": "https://api.github.com/repos/discord/romeo/issues/1"
+          },
+          "comments": {
+            "href": "https://api.github.com/repos/discord/romeo/issues/1/comments"
+          },
+          "review_comments": {
+            "href": "https://api.github.com/repos/discord/romeo/pulls/1/comments"
+          },
+          "review_comment": {
+            "href": "https://api.github.com/repos/discord/romeo/pulls/comments{/number}"
+          },
+          "commits": {
+            "href": "https://api.github.com/repos/discord/romeo/pulls/1/commits"
+          },
+          "statuses": {
+            "href": "https://api.github.com/repos/discord/romeo/statuses/6bca1a28404c2ac12b59c95ff79cbdfa3556d470"
+          }
+        },
+        "author_association": "NONE",
+        "auto_merge": null,
+        "active_lock_reason": null
+      }
+    ]
   }
 }

@@ -57,7 +57,200 @@
     "triage": false,
     "pull": false
   },
-  "branches": [],
+  "branches": [
+    {
+      "name": "2.2-archived",
+      "commit": {
+        "sha": "362ac964dff0daf34f18cc6dd7e7abaca630d1e2",
+        "url": "https://api.github.com/repos/discord/kombu/commits/362ac964dff0daf34f18cc6dd7e7abaca630d1e2"
+      },
+      "protected": false
+    },
+    {
+      "name": "2.3-archived",
+      "commit": {
+        "sha": "db1af567b26399c849dfa77be1d3917ebdca1455",
+        "url": "https://api.github.com/repos/discord/kombu/commits/db1af567b26399c849dfa77be1d3917ebdca1455"
+      },
+      "protected": false
+    },
+    {
+      "name": "2.4-archived",
+      "commit": {
+        "sha": "775643bfc0e70db43b3852f001c994acfe440479",
+        "url": "https://api.github.com/repos/discord/kombu/commits/775643bfc0e70db43b3852f001c994acfe440479"
+      },
+      "protected": false
+    },
+    {
+      "name": "2.5-archived",
+      "commit": {
+        "sha": "9a33208df99731d1ec9e40d4f7fd4b9746650949",
+        "url": "https://api.github.com/repos/discord/kombu/commits/9a33208df99731d1ec9e40d4f7fd4b9746650949"
+      },
+      "protected": false
+    },
+    {
+      "name": "3.0",
+      "commit": {
+        "sha": "249e56525c17ece5791ebb283fa2679d6155986f",
+        "url": "https://api.github.com/repos/discord/kombu/commits/249e56525c17ece5791ebb283fa2679d6155986f"
+      },
+      "protected": false
+    },
+    {
+      "name": "4.0",
+      "commit": {
+        "sha": "342de298ffd24c12ca389b07fe53853371b868a2",
+        "url": "https://api.github.com/repos/discord/kombu/commits/342de298ffd24c12ca389b07fe53853371b868a2"
+      },
+      "protected": false
+    },
+    {
+      "name": "4.2",
+      "commit": {
+        "sha": "06ee7855814f66280b1b3277b0ac7ff4d8f3e76d",
+        "url": "https://api.github.com/repos/discord/kombu/commits/06ee7855814f66280b1b3277b0ac7ff4d8f3e76d"
+      },
+      "protected": false
+    },
+    {
+      "name": "5.0-devel",
+      "commit": {
+        "sha": "e6fab2f68b562cf1400bd8167e9b755f0482aafe",
+        "url": "https://api.github.com/repos/discord/kombu/commits/e6fab2f68b562cf1400bd8167e9b755f0482aafe"
+      },
+      "protected": false
+    },
+    {
+      "name": "asynchronous-broadcasts",
+      "commit": {
+        "sha": "f1fe4e6881916e6993d7aa548f9d8601562a225e",
+        "url": "https://api.github.com/repos/discord/kombu/commits/f1fe4e6881916e6993d7aa548f9d8601562a225e"
+      },
+      "protected": false
+    },
+    {
+      "name": "asyncmove",
+      "commit": {
+        "sha": "b0234bf8402d7474bf478e74ffe7aeb227606615",
+        "url": "https://api.github.com/repos/discord/kombu/commits/b0234bf8402d7474bf478e74ffe7aeb227606615"
+      },
+      "protected": false
+    },
+    {
+      "name": "broadcast-queues",
+      "commit": {
+        "sha": "4fd3ccc875d703a24d3e74b47d1f6b6cde8a3b16",
+        "url": "https://api.github.com/repos/discord/kombu/commits/4fd3ccc875d703a24d3e74b47d1f6b6cde8a3b16"
+      },
+      "protected": false
+    },
+    {
+      "name": "callbacks",
+      "commit": {
+        "sha": "48c5f38aad069174f629c5b9fa56fe2de56ec334",
+        "url": "https://api.github.com/repos/discord/kombu/commits/48c5f38aad069174f629c5b9fa56fe2de56ec334"
+      },
+      "protected": false
+    },
+    {
+      "name": "curlclient",
+      "commit": {
+        "sha": "6524bd293ab580eaa1ac239de38e99856d07c282",
+        "url": "https://api.github.com/repos/discord/kombu/commits/6524bd293ab580eaa1ac239de38e99856d07c282"
+      },
+      "protected": false
+    },
+    {
+      "name": "discord-v3.0.37",
+      "commit": {
+        "sha": "b16571993aa198b02aa9cf13b58a5712e2cc97a3",
+        "url": "https://api.github.com/repos/discord/kombu/commits/b16571993aa198b02aa9cf13b58a5712e2cc97a3"
+      },
+      "protected": false
+    },
+    {
+      "name": "feature/coll_queue",
+      "commit": {
+        "sha": "a8f740cd7de9c7a3e719863907d3a51c2b5c6e94",
+        "url": "https://api.github.com/repos/discord/kombu/commits/a8f740cd7de9c7a3e719863907d3a51c2b5c6e94"
+      },
+      "protected": false
+    },
+    {
+      "name": "gh-pages",
+      "commit": {
+        "sha": "0b7736c3bc313c03dca5b04f1df35b68c699a90b",
+        "url": "https://api.github.com/repos/discord/kombu/commits/0b7736c3bc313c03dca5b04f1df35b68c699a90b"
+      },
+      "protected": false
+    },
+    {
+      "name": "isort",
+      "commit": {
+        "sha": "ab1dd4e00916a1fa38ce1b5ebd43ebc59340b204",
+        "url": "https://api.github.com/repos/discord/kombu/commits/ab1dd4e00916a1fa38ce1b5ebd43ebc59340b204"
+      },
+      "protected": false
+    },
+    {
+      "name": "master",
+      "commit": {
+        "sha": "0ad7d08c4cb4abce32e9d765d0bb16b92830451f",
+        "url": "https://api.github.com/repos/discord/kombu/commits/0ad7d08c4cb4abce32e9d765d0bb16b92830451f"
+      },
+      "protected": false
+    },
+    {
+      "name": "nsq",
+      "commit": {
+        "sha": "5cc20d8c04e3d5718024a7cefc75d2242a512f48",
+        "url": "https://api.github.com/repos/discord/kombu/commits/5cc20d8c04e3d5718024a7cefc75d2242a512f48"
+      },
+      "protected": false
+    },
+    {
+      "name": "override-empty-transport-options",
+      "commit": {
+        "sha": "af57b050038979bdb1fb96e6c66d8f900888833a",
+        "url": "https://api.github.com/repos/discord/kombu/commits/af57b050038979bdb1fb96e6c66d8f900888833a"
+      },
+      "protected": false
+    },
+    {
+      "name": "refactor-connection-init",
+      "commit": {
+        "sha": "662b11624042665cc5d7ef29c5946ea79d45f917",
+        "url": "https://api.github.com/repos/discord/kombu/commits/662b11624042665cc5d7ef29c5946ea79d45f917"
+      },
+      "protected": false
+    },
+    {
+      "name": "remove-py3",
+      "commit": {
+        "sha": "a8f88814523471de9a7f3ef7186e4dddd2724f50",
+        "url": "https://api.github.com/repos/discord/kombu/commits/a8f88814523471de9a7f3ef7186e4dddd2724f50"
+      },
+      "protected": false
+    },
+    {
+      "name": "sqsopts",
+      "commit": {
+        "sha": "49bf684f710984911d0d59c8702acc46014ae12a",
+        "url": "https://api.github.com/repos/discord/kombu/commits/49bf684f710984911d0d59c8702acc46014ae12a"
+      },
+      "protected": false
+    },
+    {
+      "name": "xdist",
+      "commit": {
+        "sha": "35c8bb067b24dbde0efff1e7f4643df7798c136a",
+        "url": "https://api.github.com/repos/discord/kombu/commits/35c8bb067b24dbde0efff1e7f4643df7798c136a"
+      },
+      "protected": false
+    }
+  ],
   "last5": {
     "commits": [
       {
@@ -518,6 +711,812 @@
         "state_reason": null
       }
     ],
-    "pullRequests": []
+    "pullRequests": [
+      {
+        "url": "https://api.github.com/repos/discord/kombu/pulls/4",
+        "id": 379119235,
+        "node_id": "MDExOlB1bGxSZXF1ZXN0Mzc5MTE5MjM1",
+        "number": 4,
+        "state": "closed",
+        "locked": false,
+        "title": "Add option to use redis BlockingConnectionPool",
+        "user": {
+          "login": "goakley",
+          "id": 1375517,
+          "node_id": "MDQ6VXNlcjEzNzU1MTc=",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/goakley",
+          "type": "User",
+          "site_admin": false
+        },
+        "body": "",
+        "created_at": "2020-02-24T17:42:24Z",
+        "updated_at": "2020-03-02T21:13:37Z",
+        "closed_at": "2020-03-02T21:13:32Z",
+        "merged_at": "2020-03-02T21:13:32Z",
+        "merge_commit_sha": "b16571993aa198b02aa9cf13b58a5712e2cc97a3",
+        "assignee": null,
+        "assignees": [],
+        "requested_reviewers": [],
+        "requested_teams": [],
+        "labels": [],
+        "milestone": null,
+        "draft": false,
+        "head": {
+          "label": "discord:feature/optimise-redis-connection",
+          "ref": "feature/optimise-redis-connection",
+          "sha": "35dd622a580c4ab53bd7f24fe87160f726b15bd7",
+          "user": {
+            "login": "discord",
+            "id": 1965106,
+            "node_id": "MDEyOk9yZ2FuaXphdGlvbjE5NjUxMDY=",
+            "gravatar_id": "",
+            "url": "https://api.github.com/users/discord",
+            "type": "Organization",
+            "site_admin": false
+          },
+          "repo": {
+            "id": 202016393,
+            "node_id": "MDEwOlJlcG9zaXRvcnkyMDIwMTYzOTM=",
+            "name": "kombu",
+            "full_name": "discord/kombu",
+            "private": false,
+            "owner": {
+              "login": "discord",
+              "id": 1965106,
+              "node_id": "MDEyOk9yZ2FuaXphdGlvbjE5NjUxMDY=",
+              "gravatar_id": "",
+              "url": "https://api.github.com/users/discord",
+              "type": "Organization",
+              "site_admin": false
+            },
+            "description": "Messaging library for Python.",
+            "fork": true,
+            "url": "https://api.github.com/repos/discord/kombu",
+            "created_at": "2019-08-12T22:08:30Z",
+            "updated_at": "2021-04-28T21:28:48Z",
+            "pushed_at": "2020-03-02T21:13:37Z",
+            "homepage": "http://kombu.readthedocs.org/",
+            "size": 7522,
+            "stargazers_count": 3,
+            "watchers_count": 3,
+            "language": "Python",
+            "has_issues": false,
+            "has_projects": true,
+            "has_downloads": true,
+            "has_wiki": true,
+            "has_pages": false,
+            "has_discussions": false,
+            "forks_count": 4,
+            "archived": false,
+            "disabled": false,
+            "open_issues_count": 0,
+            "license": {
+              "key": "bsd-3-clause",
+              "name": "BSD 3-Clause \"New\" or \"Revised\" License",
+              "spdx_id": "BSD-3-Clause",
+              "url": "https://api.github.com/licenses/bsd-3-clause",
+              "node_id": "MDc6TGljZW5zZTU="
+            },
+            "allow_forking": true,
+            "is_template": false,
+            "web_commit_signoff_required": false,
+            "topics": [],
+            "visibility": "public",
+            "forks": 4,
+            "open_issues": 0,
+            "watchers": 3,
+            "default_branch": "master"
+          }
+        },
+        "base": {
+          "label": "discord:discord-v3.0.37",
+          "ref": "discord-v3.0.37",
+          "sha": "8bbe3a63feee2d11225437607825ecca30391a16",
+          "user": {
+            "login": "discord",
+            "id": 1965106,
+            "node_id": "MDEyOk9yZ2FuaXphdGlvbjE5NjUxMDY=",
+            "gravatar_id": "",
+            "url": "https://api.github.com/users/discord",
+            "type": "Organization",
+            "site_admin": false
+          },
+          "repo": {
+            "id": 202016393,
+            "node_id": "MDEwOlJlcG9zaXRvcnkyMDIwMTYzOTM=",
+            "name": "kombu",
+            "full_name": "discord/kombu",
+            "private": false,
+            "owner": {
+              "login": "discord",
+              "id": 1965106,
+              "node_id": "MDEyOk9yZ2FuaXphdGlvbjE5NjUxMDY=",
+              "gravatar_id": "",
+              "url": "https://api.github.com/users/discord",
+              "type": "Organization",
+              "site_admin": false
+            },
+            "description": "Messaging library for Python.",
+            "fork": true,
+            "url": "https://api.github.com/repos/discord/kombu",
+            "created_at": "2019-08-12T22:08:30Z",
+            "updated_at": "2021-04-28T21:28:48Z",
+            "pushed_at": "2020-03-02T21:13:37Z",
+            "homepage": "http://kombu.readthedocs.org/",
+            "size": 7522,
+            "stargazers_count": 3,
+            "watchers_count": 3,
+            "language": "Python",
+            "has_issues": false,
+            "has_projects": true,
+            "has_downloads": true,
+            "has_wiki": true,
+            "has_pages": false,
+            "has_discussions": false,
+            "forks_count": 4,
+            "archived": false,
+            "disabled": false,
+            "open_issues_count": 0,
+            "license": {
+              "key": "bsd-3-clause",
+              "name": "BSD 3-Clause \"New\" or \"Revised\" License",
+              "spdx_id": "BSD-3-Clause",
+              "url": "https://api.github.com/licenses/bsd-3-clause",
+              "node_id": "MDc6TGljZW5zZTU="
+            },
+            "allow_forking": true,
+            "is_template": false,
+            "web_commit_signoff_required": false,
+            "topics": [],
+            "visibility": "public",
+            "forks": 4,
+            "open_issues": 0,
+            "watchers": 3,
+            "default_branch": "master"
+          }
+        },
+        "_links": {
+          "self": {
+            "href": "https://api.github.com/repos/discord/kombu/pulls/4"
+          },
+          "html": {
+            "href": "https://github.com/discord/kombu/pull/4"
+          },
+          "issue": {
+            "href": "https://api.github.com/repos/discord/kombu/issues/4"
+          },
+          "comments": {
+            "href": "https://api.github.com/repos/discord/kombu/issues/4/comments"
+          },
+          "review_comments": {
+            "href": "https://api.github.com/repos/discord/kombu/pulls/4/comments"
+          },
+          "review_comment": {
+            "href": "https://api.github.com/repos/discord/kombu/pulls/comments{/number}"
+          },
+          "commits": {
+            "href": "https://api.github.com/repos/discord/kombu/pulls/4/commits"
+          },
+          "statuses": {
+            "href": "https://api.github.com/repos/discord/kombu/statuses/35dd622a580c4ab53bd7f24fe87160f726b15bd7"
+          }
+        },
+        "author_association": "NONE",
+        "auto_merge": null,
+        "active_lock_reason": null
+      },
+      {
+        "url": "https://api.github.com/repos/discord/kombu/pulls/3",
+        "id": 378535232,
+        "node_id": "MDExOlB1bGxSZXF1ZXN0Mzc4NTM1MjMy",
+        "number": 3,
+        "state": "closed",
+        "locked": false,
+        "title": "backport _poll",
+        "user": {
+          "login": "brian-armstrong-discord",
+          "id": 25939803,
+          "node_id": "MDQ6VXNlcjI1OTM5ODAz",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/brian-armstrong-discord",
+          "type": "User",
+          "site_admin": false
+        },
+        "body": "",
+        "created_at": "2020-02-22T01:34:59Z",
+        "updated_at": "2020-03-02T19:29:40Z",
+        "closed_at": "2020-02-24T19:17:40Z",
+        "merged_at": "2020-02-24T19:17:40Z",
+        "merge_commit_sha": "db569cfe725d98700c61d9b238f54275e2267501",
+        "assignee": null,
+        "assignees": [],
+        "requested_reviewers": [
+          {
+            "login": "goakley",
+            "id": 1375517,
+            "node_id": "MDQ6VXNlcjEzNzU1MTc=",
+            "gravatar_id": "",
+            "url": "https://api.github.com/users/goakley",
+            "type": "User",
+            "site_admin": false
+          },
+          {
+            "login": "jhgg",
+            "id": 5489149,
+            "node_id": "MDQ6VXNlcjU0ODkxNDk=",
+            "gravatar_id": "",
+            "url": "https://api.github.com/users/jhgg",
+            "type": "User",
+            "site_admin": false
+          }
+        ],
+        "requested_teams": [],
+        "labels": [],
+        "milestone": null,
+        "draft": false,
+        "head": {
+          "label": "discord:backport_poll",
+          "ref": "backport_poll",
+          "sha": "d1aa70cde0a1e496b44a105c7b3bbf55e2fc9244",
+          "user": {
+            "login": "discord",
+            "id": 1965106,
+            "node_id": "MDEyOk9yZ2FuaXphdGlvbjE5NjUxMDY=",
+            "gravatar_id": "",
+            "url": "https://api.github.com/users/discord",
+            "type": "Organization",
+            "site_admin": false
+          },
+          "repo": {
+            "id": 202016393,
+            "node_id": "MDEwOlJlcG9zaXRvcnkyMDIwMTYzOTM=",
+            "name": "kombu",
+            "full_name": "discord/kombu",
+            "private": false,
+            "owner": {
+              "login": "discord",
+              "id": 1965106,
+              "node_id": "MDEyOk9yZ2FuaXphdGlvbjE5NjUxMDY=",
+              "gravatar_id": "",
+              "url": "https://api.github.com/users/discord",
+              "type": "Organization",
+              "site_admin": false
+            },
+            "description": "Messaging library for Python.",
+            "fork": true,
+            "url": "https://api.github.com/repos/discord/kombu",
+            "created_at": "2019-08-12T22:08:30Z",
+            "updated_at": "2021-04-28T21:28:48Z",
+            "pushed_at": "2020-03-02T21:13:37Z",
+            "homepage": "http://kombu.readthedocs.org/",
+            "size": 7522,
+            "stargazers_count": 3,
+            "watchers_count": 3,
+            "language": "Python",
+            "has_issues": false,
+            "has_projects": true,
+            "has_downloads": true,
+            "has_wiki": true,
+            "has_pages": false,
+            "has_discussions": false,
+            "forks_count": 4,
+            "archived": false,
+            "disabled": false,
+            "open_issues_count": 0,
+            "license": {
+              "key": "bsd-3-clause",
+              "name": "BSD 3-Clause \"New\" or \"Revised\" License",
+              "spdx_id": "BSD-3-Clause",
+              "url": "https://api.github.com/licenses/bsd-3-clause",
+              "node_id": "MDc6TGljZW5zZTU="
+            },
+            "allow_forking": true,
+            "is_template": false,
+            "web_commit_signoff_required": false,
+            "topics": [],
+            "visibility": "public",
+            "forks": 4,
+            "open_issues": 0,
+            "watchers": 3,
+            "default_branch": "master"
+          }
+        },
+        "base": {
+          "label": "discord:discord-v3.0.37",
+          "ref": "discord-v3.0.37",
+          "sha": "8bbe3a63feee2d11225437607825ecca30391a16",
+          "user": {
+            "login": "discord",
+            "id": 1965106,
+            "node_id": "MDEyOk9yZ2FuaXphdGlvbjE5NjUxMDY=",
+            "gravatar_id": "",
+            "url": "https://api.github.com/users/discord",
+            "type": "Organization",
+            "site_admin": false
+          },
+          "repo": {
+            "id": 202016393,
+            "node_id": "MDEwOlJlcG9zaXRvcnkyMDIwMTYzOTM=",
+            "name": "kombu",
+            "full_name": "discord/kombu",
+            "private": false,
+            "owner": {
+              "login": "discord",
+              "id": 1965106,
+              "node_id": "MDEyOk9yZ2FuaXphdGlvbjE5NjUxMDY=",
+              "gravatar_id": "",
+              "url": "https://api.github.com/users/discord",
+              "type": "Organization",
+              "site_admin": false
+            },
+            "description": "Messaging library for Python.",
+            "fork": true,
+            "url": "https://api.github.com/repos/discord/kombu",
+            "created_at": "2019-08-12T22:08:30Z",
+            "updated_at": "2021-04-28T21:28:48Z",
+            "pushed_at": "2020-03-02T21:13:37Z",
+            "homepage": "http://kombu.readthedocs.org/",
+            "size": 7522,
+            "stargazers_count": 3,
+            "watchers_count": 3,
+            "language": "Python",
+            "has_issues": false,
+            "has_projects": true,
+            "has_downloads": true,
+            "has_wiki": true,
+            "has_pages": false,
+            "has_discussions": false,
+            "forks_count": 4,
+            "archived": false,
+            "disabled": false,
+            "open_issues_count": 0,
+            "license": {
+              "key": "bsd-3-clause",
+              "name": "BSD 3-Clause \"New\" or \"Revised\" License",
+              "spdx_id": "BSD-3-Clause",
+              "url": "https://api.github.com/licenses/bsd-3-clause",
+              "node_id": "MDc6TGljZW5zZTU="
+            },
+            "allow_forking": true,
+            "is_template": false,
+            "web_commit_signoff_required": false,
+            "topics": [],
+            "visibility": "public",
+            "forks": 4,
+            "open_issues": 0,
+            "watchers": 3,
+            "default_branch": "master"
+          }
+        },
+        "_links": {
+          "self": {
+            "href": "https://api.github.com/repos/discord/kombu/pulls/3"
+          },
+          "html": {
+            "href": "https://github.com/discord/kombu/pull/3"
+          },
+          "issue": {
+            "href": "https://api.github.com/repos/discord/kombu/issues/3"
+          },
+          "comments": {
+            "href": "https://api.github.com/repos/discord/kombu/issues/3/comments"
+          },
+          "review_comments": {
+            "href": "https://api.github.com/repos/discord/kombu/pulls/3/comments"
+          },
+          "review_comment": {
+            "href": "https://api.github.com/repos/discord/kombu/pulls/comments{/number}"
+          },
+          "commits": {
+            "href": "https://api.github.com/repos/discord/kombu/pulls/3/commits"
+          },
+          "statuses": {
+            "href": "https://api.github.com/repos/discord/kombu/statuses/d1aa70cde0a1e496b44a105c7b3bbf55e2fc9244"
+          }
+        },
+        "author_association": "NONE",
+        "auto_merge": null,
+        "active_lock_reason": null
+      },
+      {
+        "url": "https://api.github.com/repos/discord/kombu/pulls/2",
+        "id": 377380333,
+        "node_id": "MDExOlB1bGxSZXF1ZXN0Mzc3MzgwMzMz",
+        "number": 2,
+        "state": "closed",
+        "locked": false,
+        "title": "Add option to use redis BlockingConnectionPool",
+        "user": {
+          "login": "goakley",
+          "id": 1375517,
+          "node_id": "MDQ6VXNlcjEzNzU1MTc=",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/goakley",
+          "type": "User",
+          "site_admin": false
+        },
+        "body": "",
+        "created_at": "2020-02-19T20:30:21Z",
+        "updated_at": "2020-02-24T17:41:26Z",
+        "closed_at": "2020-02-24T17:41:23Z",
+        "merged_at": null,
+        "merge_commit_sha": "85a7b051a7d8b0d335c292e6d00a2e15e3322768",
+        "assignee": null,
+        "assignees": [],
+        "requested_reviewers": [
+          {
+            "login": "jhgg",
+            "id": 5489149,
+            "node_id": "MDQ6VXNlcjU0ODkxNDk=",
+            "gravatar_id": "",
+            "url": "https://api.github.com/users/jhgg",
+            "type": "User",
+            "site_admin": false
+          }
+        ],
+        "requested_teams": [],
+        "labels": [],
+        "milestone": null,
+        "draft": false,
+        "head": {
+          "label": "discord:feature/optimise-redis-connection",
+          "ref": "feature/optimise-redis-connection",
+          "sha": "5076f2c51134a75a93860d2c31554b9b1e8595ef",
+          "user": {
+            "login": "discord",
+            "id": 1965106,
+            "node_id": "MDEyOk9yZ2FuaXphdGlvbjE5NjUxMDY=",
+            "gravatar_id": "",
+            "url": "https://api.github.com/users/discord",
+            "type": "Organization",
+            "site_admin": false
+          },
+          "repo": {
+            "id": 202016393,
+            "node_id": "MDEwOlJlcG9zaXRvcnkyMDIwMTYzOTM=",
+            "name": "kombu",
+            "full_name": "discord/kombu",
+            "private": false,
+            "owner": {
+              "login": "discord",
+              "id": 1965106,
+              "node_id": "MDEyOk9yZ2FuaXphdGlvbjE5NjUxMDY=",
+              "gravatar_id": "",
+              "url": "https://api.github.com/users/discord",
+              "type": "Organization",
+              "site_admin": false
+            },
+            "description": "Messaging library for Python.",
+            "fork": true,
+            "url": "https://api.github.com/repos/discord/kombu",
+            "created_at": "2019-08-12T22:08:30Z",
+            "updated_at": "2021-04-28T21:28:48Z",
+            "pushed_at": "2020-03-02T21:13:37Z",
+            "homepage": "http://kombu.readthedocs.org/",
+            "size": 7522,
+            "stargazers_count": 3,
+            "watchers_count": 3,
+            "language": "Python",
+            "has_issues": false,
+            "has_projects": true,
+            "has_downloads": true,
+            "has_wiki": true,
+            "has_pages": false,
+            "has_discussions": false,
+            "forks_count": 4,
+            "archived": false,
+            "disabled": false,
+            "open_issues_count": 0,
+            "license": {
+              "key": "bsd-3-clause",
+              "name": "BSD 3-Clause \"New\" or \"Revised\" License",
+              "spdx_id": "BSD-3-Clause",
+              "url": "https://api.github.com/licenses/bsd-3-clause",
+              "node_id": "MDc6TGljZW5zZTU="
+            },
+            "allow_forking": true,
+            "is_template": false,
+            "web_commit_signoff_required": false,
+            "topics": [],
+            "visibility": "public",
+            "forks": 4,
+            "open_issues": 0,
+            "watchers": 3,
+            "default_branch": "master"
+          }
+        },
+        "base": {
+          "label": "discord:master",
+          "ref": "master",
+          "sha": "0ad7d08c4cb4abce32e9d765d0bb16b92830451f",
+          "user": {
+            "login": "discord",
+            "id": 1965106,
+            "node_id": "MDEyOk9yZ2FuaXphdGlvbjE5NjUxMDY=",
+            "gravatar_id": "",
+            "url": "https://api.github.com/users/discord",
+            "type": "Organization",
+            "site_admin": false
+          },
+          "repo": {
+            "id": 202016393,
+            "node_id": "MDEwOlJlcG9zaXRvcnkyMDIwMTYzOTM=",
+            "name": "kombu",
+            "full_name": "discord/kombu",
+            "private": false,
+            "owner": {
+              "login": "discord",
+              "id": 1965106,
+              "node_id": "MDEyOk9yZ2FuaXphdGlvbjE5NjUxMDY=",
+              "gravatar_id": "",
+              "url": "https://api.github.com/users/discord",
+              "type": "Organization",
+              "site_admin": false
+            },
+            "description": "Messaging library for Python.",
+            "fork": true,
+            "url": "https://api.github.com/repos/discord/kombu",
+            "created_at": "2019-08-12T22:08:30Z",
+            "updated_at": "2021-04-28T21:28:48Z",
+            "pushed_at": "2020-03-02T21:13:37Z",
+            "homepage": "http://kombu.readthedocs.org/",
+            "size": 7522,
+            "stargazers_count": 3,
+            "watchers_count": 3,
+            "language": "Python",
+            "has_issues": false,
+            "has_projects": true,
+            "has_downloads": true,
+            "has_wiki": true,
+            "has_pages": false,
+            "has_discussions": false,
+            "forks_count": 4,
+            "archived": false,
+            "disabled": false,
+            "open_issues_count": 0,
+            "license": {
+              "key": "bsd-3-clause",
+              "name": "BSD 3-Clause \"New\" or \"Revised\" License",
+              "spdx_id": "BSD-3-Clause",
+              "url": "https://api.github.com/licenses/bsd-3-clause",
+              "node_id": "MDc6TGljZW5zZTU="
+            },
+            "allow_forking": true,
+            "is_template": false,
+            "web_commit_signoff_required": false,
+            "topics": [],
+            "visibility": "public",
+            "forks": 4,
+            "open_issues": 0,
+            "watchers": 3,
+            "default_branch": "master"
+          }
+        },
+        "_links": {
+          "self": {
+            "href": "https://api.github.com/repos/discord/kombu/pulls/2"
+          },
+          "html": {
+            "href": "https://github.com/discord/kombu/pull/2"
+          },
+          "issue": {
+            "href": "https://api.github.com/repos/discord/kombu/issues/2"
+          },
+          "comments": {
+            "href": "https://api.github.com/repos/discord/kombu/issues/2/comments"
+          },
+          "review_comments": {
+            "href": "https://api.github.com/repos/discord/kombu/pulls/2/comments"
+          },
+          "review_comment": {
+            "href": "https://api.github.com/repos/discord/kombu/pulls/comments{/number}"
+          },
+          "commits": {
+            "href": "https://api.github.com/repos/discord/kombu/pulls/2/commits"
+          },
+          "statuses": {
+            "href": "https://api.github.com/repos/discord/kombu/statuses/5076f2c51134a75a93860d2c31554b9b1e8595ef"
+          }
+        },
+        "author_association": "NONE",
+        "auto_merge": null,
+        "active_lock_reason": null
+      },
+      {
+        "url": "https://api.github.com/repos/discord/kombu/pulls/1",
+        "id": 355454968,
+        "node_id": "MDExOlB1bGxSZXF1ZXN0MzU1NDU0OTY4",
+        "number": 1,
+        "state": "closed",
+        "locked": false,
+        "title": "[py3] Add loading support for py2 and py3 interop",
+        "user": {
+          "login": "jdost",
+          "id": 882537,
+          "node_id": "MDQ6VXNlcjg4MjUzNw==",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/jdost",
+          "type": "User",
+          "site_admin": false
+        },
+        "body": "The payloads that come in should normally be from the same runtime as\r\nthe source, but in the transition phase that is not true.  This adds an\r\nexception handling section that will use a fallback loader (using a\r\nbytes encoder) and then a normalization function to convert any\r\nbytestrings into native strings.  Again, this should only be a path\r\nreached during the initial transition phase and then the except clause\r\nshould go dark...",
+        "created_at": "2019-12-20T01:03:54Z",
+        "updated_at": "2019-12-20T18:40:23Z",
+        "closed_at": "2019-12-20T18:40:17Z",
+        "merged_at": "2019-12-20T18:40:17Z",
+        "merge_commit_sha": "8bbe3a63feee2d11225437607825ecca30391a16",
+        "assignee": null,
+        "assignees": [],
+        "requested_reviewers": [],
+        "requested_teams": [],
+        "labels": [],
+        "milestone": null,
+        "draft": false,
+        "head": {
+          "label": "jdost:jdost/py2-py3-interop",
+          "ref": "jdost/py2-py3-interop",
+          "sha": "9c8b7be2ec8e8a9eb32ec9ead2a8407011e05253",
+          "user": {
+            "login": "jdost",
+            "id": 882537,
+            "node_id": "MDQ6VXNlcjg4MjUzNw==",
+            "gravatar_id": "",
+            "url": "https://api.github.com/users/jdost",
+            "type": "User",
+            "site_admin": false
+          },
+          "repo": {
+            "id": 229164146,
+            "node_id": "MDEwOlJlcG9zaXRvcnkyMjkxNjQxNDY=",
+            "name": "kombu",
+            "full_name": "jdost/kombu",
+            "private": false,
+            "owner": {
+              "login": "jdost",
+              "id": 882537,
+              "node_id": "MDQ6VXNlcjg4MjUzNw==",
+              "gravatar_id": "",
+              "url": "https://api.github.com/users/jdost",
+              "type": "User",
+              "site_admin": false
+            },
+            "description": "Messaging library for Python.",
+            "fork": true,
+            "url": "https://api.github.com/repos/jdost/kombu",
+            "created_at": "2019-12-20T01:02:24Z",
+            "updated_at": "2019-12-20T01:02:26Z",
+            "pushed_at": "2019-12-20T18:40:23Z",
+            "homepage": "http://kombu.readthedocs.org/",
+            "size": 7493,
+            "stargazers_count": 0,
+            "watchers_count": 0,
+            "language": null,
+            "has_issues": false,
+            "has_projects": true,
+            "has_downloads": true,
+            "has_wiki": true,
+            "has_pages": false,
+            "has_discussions": false,
+            "forks_count": 0,
+            "archived": false,
+            "disabled": false,
+            "open_issues_count": 0,
+            "license": {
+              "key": "bsd-3-clause",
+              "name": "BSD 3-Clause \"New\" or \"Revised\" License",
+              "spdx_id": "BSD-3-Clause",
+              "url": "https://api.github.com/licenses/bsd-3-clause",
+              "node_id": "MDc6TGljZW5zZTU="
+            },
+            "allow_forking": true,
+            "is_template": false,
+            "web_commit_signoff_required": false,
+            "topics": [],
+            "visibility": "public",
+            "forks": 0,
+            "open_issues": 0,
+            "watchers": 0,
+            "default_branch": "master"
+          }
+        },
+        "base": {
+          "label": "discord:discord-v3.0.37",
+          "ref": "discord-v3.0.37",
+          "sha": "08d0f44dc9747f77922f9d592f51d21f4daf1371",
+          "user": {
+            "login": "discord",
+            "id": 1965106,
+            "node_id": "MDEyOk9yZ2FuaXphdGlvbjE5NjUxMDY=",
+            "gravatar_id": "",
+            "url": "https://api.github.com/users/discord",
+            "type": "Organization",
+            "site_admin": false
+          },
+          "repo": {
+            "id": 202016393,
+            "node_id": "MDEwOlJlcG9zaXRvcnkyMDIwMTYzOTM=",
+            "name": "kombu",
+            "full_name": "discord/kombu",
+            "private": false,
+            "owner": {
+              "login": "discord",
+              "id": 1965106,
+              "node_id": "MDEyOk9yZ2FuaXphdGlvbjE5NjUxMDY=",
+              "gravatar_id": "",
+              "url": "https://api.github.com/users/discord",
+              "type": "Organization",
+              "site_admin": false
+            },
+            "description": "Messaging library for Python.",
+            "fork": true,
+            "url": "https://api.github.com/repos/discord/kombu",
+            "created_at": "2019-08-12T22:08:30Z",
+            "updated_at": "2021-04-28T21:28:48Z",
+            "pushed_at": "2020-03-02T21:13:37Z",
+            "homepage": "http://kombu.readthedocs.org/",
+            "size": 7522,
+            "stargazers_count": 3,
+            "watchers_count": 3,
+            "language": "Python",
+            "has_issues": false,
+            "has_projects": true,
+            "has_downloads": true,
+            "has_wiki": true,
+            "has_pages": false,
+            "has_discussions": false,
+            "forks_count": 4,
+            "archived": false,
+            "disabled": false,
+            "open_issues_count": 0,
+            "license": {
+              "key": "bsd-3-clause",
+              "name": "BSD 3-Clause \"New\" or \"Revised\" License",
+              "spdx_id": "BSD-3-Clause",
+              "url": "https://api.github.com/licenses/bsd-3-clause",
+              "node_id": "MDc6TGljZW5zZTU="
+            },
+            "allow_forking": true,
+            "is_template": false,
+            "web_commit_signoff_required": false,
+            "topics": [],
+            "visibility": "public",
+            "forks": 4,
+            "open_issues": 0,
+            "watchers": 3,
+            "default_branch": "master"
+          }
+        },
+        "_links": {
+          "self": {
+            "href": "https://api.github.com/repos/discord/kombu/pulls/1"
+          },
+          "html": {
+            "href": "https://github.com/discord/kombu/pull/1"
+          },
+          "issue": {
+            "href": "https://api.github.com/repos/discord/kombu/issues/1"
+          },
+          "comments": {
+            "href": "https://api.github.com/repos/discord/kombu/issues/1/comments"
+          },
+          "review_comments": {
+            "href": "https://api.github.com/repos/discord/kombu/pulls/1/comments"
+          },
+          "review_comment": {
+            "href": "https://api.github.com/repos/discord/kombu/pulls/comments{/number}"
+          },
+          "commits": {
+            "href": "https://api.github.com/repos/discord/kombu/pulls/1/commits"
+          },
+          "statuses": {
+            "href": "https://api.github.com/repos/discord/kombu/statuses/9c8b7be2ec8e8a9eb32ec9ead2a8407011e05253"
+          }
+        },
+        "author_association": "NONE",
+        "auto_merge": null,
+        "active_lock_reason": null
+      }
+    ]
   }
 }

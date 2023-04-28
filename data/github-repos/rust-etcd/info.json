@@ -57,7 +57,48 @@
     "triage": false,
     "pull": false
   },
-  "branches": [],
+  "branches": [
+    {
+      "name": "feat/kv-refresh",
+      "commit": {
+        "sha": "4f790fea92fb5b971e5f9f9185b0830a11a5ccf9",
+        "url": "https://api.github.com/repos/discord/rust-etcd/commits/4f790fea92fb5b971e5f9f9185b0830a11a5ccf9"
+      },
+      "protected": false
+    },
+    {
+      "name": "feat/tokio-02",
+      "commit": {
+        "sha": "9c58d6b340e094baccb0316fb7cb18a92c16d8f9",
+        "url": "https://api.github.com/repos/discord/rust-etcd/commits/9c58d6b340e094baccb0316fb7cb18a92c16d8f9"
+      },
+      "protected": false
+    },
+    {
+      "name": "gh-pages",
+      "commit": {
+        "sha": "920ec1c3c308800902d56238f65fc11ef3dd1194",
+        "url": "https://api.github.com/repos/discord/rust-etcd/commits/920ec1c3c308800902d56238f65fc11ef3dd1194"
+      },
+      "protected": false
+    },
+    {
+      "name": "master",
+      "commit": {
+        "sha": "8241115a0b005aab1b599eddcdef57d2c119a2e2",
+        "url": "https://api.github.com/repos/discord/rust-etcd/commits/8241115a0b005aab1b599eddcdef57d2c119a2e2"
+      },
+      "protected": false
+    },
+    {
+      "name": "tokio-1.0",
+      "commit": {
+        "sha": "09037a7663175dc00d23988ce2b5cbbc08bbcd4b",
+        "url": "https://api.github.com/repos/discord/rust-etcd/commits/09037a7663175dc00d23988ce2b5cbbc08bbcd4b"
+      },
+      "protected": false
+    }
+  ],
   "last5": {
     "commits": [
       {
@@ -482,6 +523,589 @@
         "state_reason": null
       }
     ],
-    "pullRequests": []
+    "pullRequests": [
+      {
+        "url": "https://api.github.com/repos/discord/rust-etcd/pulls/3",
+        "id": 610261620,
+        "node_id": "MDExOlB1bGxSZXF1ZXN0NjEwMjYxNjIw",
+        "number": 3,
+        "state": "closed",
+        "locked": false,
+        "title": "tokio 1.0 upgrade",
+        "user": {
+          "login": "jhgg",
+          "id": 5489149,
+          "node_id": "MDQ6VXNlcjU0ODkxNDk=",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/jhgg",
+          "type": "User",
+          "site_admin": false
+        },
+        "body": "This PR upgrades this dependency to use tokio 1.0.\r\n\r\nAdditionally, we use the more higher-level reqwest http client instead of hyper to talk to the servers. \r\n\r\nA lot of code has been rewritten/refactored, and futures have been modernized to use async fn's where possible.",
+        "created_at": "2021-04-07T01:24:25Z",
+        "updated_at": "2021-04-08T01:44:33Z",
+        "closed_at": "2021-04-08T01:44:33Z",
+        "merged_at": "2021-04-08T01:44:33Z",
+        "merge_commit_sha": "0f873051ff7f180519be70b7b44c32caefd70df2",
+        "assignee": null,
+        "assignees": [],
+        "requested_reviewers": [],
+        "requested_teams": [],
+        "labels": [],
+        "milestone": null,
+        "draft": false,
+        "head": {
+          "label": "discord:tokio-1.0",
+          "ref": "tokio-1.0",
+          "sha": "09037a7663175dc00d23988ce2b5cbbc08bbcd4b",
+          "user": {
+            "login": "discord",
+            "id": 1965106,
+            "node_id": "MDEyOk9yZ2FuaXphdGlvbjE5NjUxMDY=",
+            "gravatar_id": "",
+            "url": "https://api.github.com/users/discord",
+            "type": "Organization",
+            "site_admin": false
+          },
+          "repo": {
+            "id": 215853824,
+            "node_id": "MDEwOlJlcG9zaXRvcnkyMTU4NTM4MjQ=",
+            "name": "rust-etcd",
+            "full_name": "discord/rust-etcd",
+            "private": false,
+            "owner": {
+              "login": "discord",
+              "id": 1965106,
+              "node_id": "MDEyOk9yZ2FuaXphdGlvbjE5NjUxMDY=",
+              "gravatar_id": "",
+              "url": "https://api.github.com/users/discord",
+              "type": "Organization",
+              "site_admin": false
+            },
+            "description": "An etcd client library for Rust.",
+            "fork": true,
+            "url": "https://api.github.com/repos/discord/rust-etcd",
+            "created_at": "2019-10-17T17:56:01Z",
+            "updated_at": "2022-04-16T11:37:37Z",
+            "pushed_at": "2021-05-28T06:25:09Z",
+            "homepage": "https://docs.rs/etcd",
+            "size": 5210,
+            "stargazers_count": 11,
+            "watchers_count": 11,
+            "language": "Rust",
+            "has_issues": false,
+            "has_projects": true,
+            "has_downloads": true,
+            "has_wiki": false,
+            "has_pages": false,
+            "has_discussions": false,
+            "forks_count": 6,
+            "archived": false,
+            "disabled": false,
+            "open_issues_count": 0,
+            "license": {
+              "key": "mit",
+              "name": "MIT License",
+              "spdx_id": "MIT",
+              "url": "https://api.github.com/licenses/mit",
+              "node_id": "MDc6TGljZW5zZTEz"
+            },
+            "allow_forking": true,
+            "is_template": false,
+            "web_commit_signoff_required": false,
+            "topics": [],
+            "visibility": "public",
+            "forks": 6,
+            "open_issues": 0,
+            "watchers": 11,
+            "default_branch": "master"
+          }
+        },
+        "base": {
+          "label": "discord:master",
+          "ref": "master",
+          "sha": "e95a3be071e73615f11620c3e39deee81beff7ae",
+          "user": {
+            "login": "discord",
+            "id": 1965106,
+            "node_id": "MDEyOk9yZ2FuaXphdGlvbjE5NjUxMDY=",
+            "gravatar_id": "",
+            "url": "https://api.github.com/users/discord",
+            "type": "Organization",
+            "site_admin": false
+          },
+          "repo": {
+            "id": 215853824,
+            "node_id": "MDEwOlJlcG9zaXRvcnkyMTU4NTM4MjQ=",
+            "name": "rust-etcd",
+            "full_name": "discord/rust-etcd",
+            "private": false,
+            "owner": {
+              "login": "discord",
+              "id": 1965106,
+              "node_id": "MDEyOk9yZ2FuaXphdGlvbjE5NjUxMDY=",
+              "gravatar_id": "",
+              "url": "https://api.github.com/users/discord",
+              "type": "Organization",
+              "site_admin": false
+            },
+            "description": "An etcd client library for Rust.",
+            "fork": true,
+            "url": "https://api.github.com/repos/discord/rust-etcd",
+            "created_at": "2019-10-17T17:56:01Z",
+            "updated_at": "2022-04-16T11:37:37Z",
+            "pushed_at": "2021-05-28T06:25:09Z",
+            "homepage": "https://docs.rs/etcd",
+            "size": 5210,
+            "stargazers_count": 11,
+            "watchers_count": 11,
+            "language": "Rust",
+            "has_issues": false,
+            "has_projects": true,
+            "has_downloads": true,
+            "has_wiki": false,
+            "has_pages": false,
+            "has_discussions": false,
+            "forks_count": 6,
+            "archived": false,
+            "disabled": false,
+            "open_issues_count": 0,
+            "license": {
+              "key": "mit",
+              "name": "MIT License",
+              "spdx_id": "MIT",
+              "url": "https://api.github.com/licenses/mit",
+              "node_id": "MDc6TGljZW5zZTEz"
+            },
+            "allow_forking": true,
+            "is_template": false,
+            "web_commit_signoff_required": false,
+            "topics": [],
+            "visibility": "public",
+            "forks": 6,
+            "open_issues": 0,
+            "watchers": 11,
+            "default_branch": "master"
+          }
+        },
+        "_links": {
+          "self": {
+            "href": "https://api.github.com/repos/discord/rust-etcd/pulls/3"
+          },
+          "html": {
+            "href": "https://github.com/discord/rust-etcd/pull/3"
+          },
+          "issue": {
+            "href": "https://api.github.com/repos/discord/rust-etcd/issues/3"
+          },
+          "comments": {
+            "href": "https://api.github.com/repos/discord/rust-etcd/issues/3/comments"
+          },
+          "review_comments": {
+            "href": "https://api.github.com/repos/discord/rust-etcd/pulls/3/comments"
+          },
+          "review_comment": {
+            "href": "https://api.github.com/repos/discord/rust-etcd/pulls/comments{/number}"
+          },
+          "commits": {
+            "href": "https://api.github.com/repos/discord/rust-etcd/pulls/3/commits"
+          },
+          "statuses": {
+            "href": "https://api.github.com/repos/discord/rust-etcd/statuses/09037a7663175dc00d23988ce2b5cbbc08bbcd4b"
+          }
+        },
+        "author_association": "MEMBER",
+        "auto_merge": null,
+        "active_lock_reason": null
+      },
+      {
+        "url": "https://api.github.com/repos/discord/rust-etcd/pulls/2",
+        "id": 366187684,
+        "node_id": "MDExOlB1bGxSZXF1ZXN0MzY2MTg3Njg0",
+        "number": 2,
+        "state": "closed",
+        "locked": false,
+        "title": "tokio 0.2 + std::future support",
+        "user": {
+          "login": "jhgg",
+          "id": 5489149,
+          "node_id": "MDQ6VXNlcjU0ODkxNDk=",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/jhgg",
+          "type": "User",
+          "site_admin": false
+        },
+        "body": "update for tokio 0.2 and std::future",
+        "created_at": "2020-01-23T05:28:30Z",
+        "updated_at": "2020-01-23T10:16:41Z",
+        "closed_at": "2020-01-23T10:16:41Z",
+        "merged_at": "2020-01-23T10:16:41Z",
+        "merge_commit_sha": "e95a3be071e73615f11620c3e39deee81beff7ae",
+        "assignee": null,
+        "assignees": [],
+        "requested_reviewers": [],
+        "requested_teams": [],
+        "labels": [],
+        "milestone": null,
+        "draft": false,
+        "head": {
+          "label": "discord:feat/tokio-02",
+          "ref": "feat/tokio-02",
+          "sha": "9c58d6b340e094baccb0316fb7cb18a92c16d8f9",
+          "user": {
+            "login": "discord",
+            "id": 1965106,
+            "node_id": "MDEyOk9yZ2FuaXphdGlvbjE5NjUxMDY=",
+            "gravatar_id": "",
+            "url": "https://api.github.com/users/discord",
+            "type": "Organization",
+            "site_admin": false
+          },
+          "repo": {
+            "id": 215853824,
+            "node_id": "MDEwOlJlcG9zaXRvcnkyMTU4NTM4MjQ=",
+            "name": "rust-etcd",
+            "full_name": "discord/rust-etcd",
+            "private": false,
+            "owner": {
+              "login": "discord",
+              "id": 1965106,
+              "node_id": "MDEyOk9yZ2FuaXphdGlvbjE5NjUxMDY=",
+              "gravatar_id": "",
+              "url": "https://api.github.com/users/discord",
+              "type": "Organization",
+              "site_admin": false
+            },
+            "description": "An etcd client library for Rust.",
+            "fork": true,
+            "url": "https://api.github.com/repos/discord/rust-etcd",
+            "created_at": "2019-10-17T17:56:01Z",
+            "updated_at": "2022-04-16T11:37:37Z",
+            "pushed_at": "2021-05-28T06:25:09Z",
+            "homepage": "https://docs.rs/etcd",
+            "size": 5210,
+            "stargazers_count": 11,
+            "watchers_count": 11,
+            "language": "Rust",
+            "has_issues": false,
+            "has_projects": true,
+            "has_downloads": true,
+            "has_wiki": false,
+            "has_pages": false,
+            "has_discussions": false,
+            "forks_count": 6,
+            "archived": false,
+            "disabled": false,
+            "open_issues_count": 0,
+            "license": {
+              "key": "mit",
+              "name": "MIT License",
+              "spdx_id": "MIT",
+              "url": "https://api.github.com/licenses/mit",
+              "node_id": "MDc6TGljZW5zZTEz"
+            },
+            "allow_forking": true,
+            "is_template": false,
+            "web_commit_signoff_required": false,
+            "topics": [],
+            "visibility": "public",
+            "forks": 6,
+            "open_issues": 0,
+            "watchers": 11,
+            "default_branch": "master"
+          }
+        },
+        "base": {
+          "label": "discord:master",
+          "ref": "master",
+          "sha": "c4c17719acf26041f97afc25a7f6e343ad7d955c",
+          "user": {
+            "login": "discord",
+            "id": 1965106,
+            "node_id": "MDEyOk9yZ2FuaXphdGlvbjE5NjUxMDY=",
+            "gravatar_id": "",
+            "url": "https://api.github.com/users/discord",
+            "type": "Organization",
+            "site_admin": false
+          },
+          "repo": {
+            "id": 215853824,
+            "node_id": "MDEwOlJlcG9zaXRvcnkyMTU4NTM4MjQ=",
+            "name": "rust-etcd",
+            "full_name": "discord/rust-etcd",
+            "private": false,
+            "owner": {
+              "login": "discord",
+              "id": 1965106,
+              "node_id": "MDEyOk9yZ2FuaXphdGlvbjE5NjUxMDY=",
+              "gravatar_id": "",
+              "url": "https://api.github.com/users/discord",
+              "type": "Organization",
+              "site_admin": false
+            },
+            "description": "An etcd client library for Rust.",
+            "fork": true,
+            "url": "https://api.github.com/repos/discord/rust-etcd",
+            "created_at": "2019-10-17T17:56:01Z",
+            "updated_at": "2022-04-16T11:37:37Z",
+            "pushed_at": "2021-05-28T06:25:09Z",
+            "homepage": "https://docs.rs/etcd",
+            "size": 5210,
+            "stargazers_count": 11,
+            "watchers_count": 11,
+            "language": "Rust",
+            "has_issues": false,
+            "has_projects": true,
+            "has_downloads": true,
+            "has_wiki": false,
+            "has_pages": false,
+            "has_discussions": false,
+            "forks_count": 6,
+            "archived": false,
+            "disabled": false,
+            "open_issues_count": 0,
+            "license": {
+              "key": "mit",
+              "name": "MIT License",
+              "spdx_id": "MIT",
+              "url": "https://api.github.com/licenses/mit",
+              "node_id": "MDc6TGljZW5zZTEz"
+            },
+            "allow_forking": true,
+            "is_template": false,
+            "web_commit_signoff_required": false,
+            "topics": [],
+            "visibility": "public",
+            "forks": 6,
+            "open_issues": 0,
+            "watchers": 11,
+            "default_branch": "master"
+          }
+        },
+        "_links": {
+          "self": {
+            "href": "https://api.github.com/repos/discord/rust-etcd/pulls/2"
+          },
+          "html": {
+            "href": "https://github.com/discord/rust-etcd/pull/2"
+          },
+          "issue": {
+            "href": "https://api.github.com/repos/discord/rust-etcd/issues/2"
+          },
+          "comments": {
+            "href": "https://api.github.com/repos/discord/rust-etcd/issues/2/comments"
+          },
+          "review_comments": {
+            "href": "https://api.github.com/repos/discord/rust-etcd/pulls/2/comments"
+          },
+          "review_comment": {
+            "href": "https://api.github.com/repos/discord/rust-etcd/pulls/comments{/number}"
+          },
+          "commits": {
+            "href": "https://api.github.com/repos/discord/rust-etcd/pulls/2/commits"
+          },
+          "statuses": {
+            "href": "https://api.github.com/repos/discord/rust-etcd/statuses/9c58d6b340e094baccb0316fb7cb18a92c16d8f9"
+          }
+        },
+        "author_association": "MEMBER",
+        "auto_merge": null,
+        "active_lock_reason": null
+      },
+      {
+        "url": "https://api.github.com/repos/discord/rust-etcd/pulls/1",
+        "id": 329393400,
+        "node_id": "MDExOlB1bGxSZXF1ZXN0MzI5MzkzNDAw",
+        "number": 1,
+        "state": "closed",
+        "locked": false,
+        "title": "[etcd/kv] implement refresh",
+        "user": {
+          "login": "jhgg",
+          "id": 5489149,
+          "node_id": "MDQ6VXNlcjU0ODkxNDk=",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/jhgg",
+          "type": "User",
+          "site_admin": false
+        },
+        "body": "",
+        "created_at": "2019-10-17T18:09:33Z",
+        "updated_at": "2019-10-17T18:21:19Z",
+        "closed_at": "2019-10-17T18:21:19Z",
+        "merged_at": "2019-10-17T18:21:19Z",
+        "merge_commit_sha": "c4c17719acf26041f97afc25a7f6e343ad7d955c",
+        "assignee": null,
+        "assignees": [],
+        "requested_reviewers": [],
+        "requested_teams": [],
+        "labels": [],
+        "milestone": null,
+        "draft": false,
+        "head": {
+          "label": "discord:feat/kv-refresh",
+          "ref": "feat/kv-refresh",
+          "sha": "4f790fea92fb5b971e5f9f9185b0830a11a5ccf9",
+          "user": {
+            "login": "discord",
+            "id": 1965106,
+            "node_id": "MDEyOk9yZ2FuaXphdGlvbjE5NjUxMDY=",
+            "gravatar_id": "",
+            "url": "https://api.github.com/users/discord",
+            "type": "Organization",
+            "site_admin": false
+          },
+          "repo": {
+            "id": 215853824,
+            "node_id": "MDEwOlJlcG9zaXRvcnkyMTU4NTM4MjQ=",
+            "name": "rust-etcd",
+            "full_name": "discord/rust-etcd",
+            "private": false,
+            "owner": {
+              "login": "discord",
+              "id": 1965106,
+              "node_id": "MDEyOk9yZ2FuaXphdGlvbjE5NjUxMDY=",
+              "gravatar_id": "",
+              "url": "https://api.github.com/users/discord",
+              "type": "Organization",
+              "site_admin": false
+            },
+            "description": "An etcd client library for Rust.",
+            "fork": true,
+            "url": "https://api.github.com/repos/discord/rust-etcd",
+            "created_at": "2019-10-17T17:56:01Z",
+            "updated_at": "2022-04-16T11:37:37Z",
+            "pushed_at": "2021-05-28T06:25:09Z",
+            "homepage": "https://docs.rs/etcd",
+            "size": 5210,
+            "stargazers_count": 11,
+            "watchers_count": 11,
+            "language": "Rust",
+            "has_issues": false,
+            "has_projects": true,
+            "has_downloads": true,
+            "has_wiki": false,
+            "has_pages": false,
+            "has_discussions": false,
+            "forks_count": 6,
+            "archived": false,
+            "disabled": false,
+            "open_issues_count": 0,
+            "license": {
+              "key": "mit",
+              "name": "MIT License",
+              "spdx_id": "MIT",
+              "url": "https://api.github.com/licenses/mit",
+              "node_id": "MDc6TGljZW5zZTEz"
+            },
+            "allow_forking": true,
+            "is_template": false,
+            "web_commit_signoff_required": false,
+            "topics": [],
+            "visibility": "public",
+            "forks": 6,
+            "open_issues": 0,
+            "watchers": 11,
+            "default_branch": "master"
+          }
+        },
+        "base": {
+          "label": "discord:master",
+          "ref": "master",
+          "sha": "c1e51b3dff285ab62fd4424b3d4607b33721f774",
+          "user": {
+            "login": "discord",
+            "id": 1965106,
+            "node_id": "MDEyOk9yZ2FuaXphdGlvbjE5NjUxMDY=",
+            "gravatar_id": "",
+            "url": "https://api.github.com/users/discord",
+            "type": "Organization",
+            "site_admin": false
+          },
+          "repo": {
+            "id": 215853824,
+            "node_id": "MDEwOlJlcG9zaXRvcnkyMTU4NTM4MjQ=",
+            "name": "rust-etcd",
+            "full_name": "discord/rust-etcd",
+            "private": false,
+            "owner": {
+              "login": "discord",
+              "id": 1965106,
+              "node_id": "MDEyOk9yZ2FuaXphdGlvbjE5NjUxMDY=",
+              "gravatar_id": "",
+              "url": "https://api.github.com/users/discord",
+              "type": "Organization",
+              "site_admin": false
+            },
+            "description": "An etcd client library for Rust.",
+            "fork": true,
+            "url": "https://api.github.com/repos/discord/rust-etcd",
+            "created_at": "2019-10-17T17:56:01Z",
+            "updated_at": "2022-04-16T11:37:37Z",
+            "pushed_at": "2021-05-28T06:25:09Z",
+            "homepage": "https://docs.rs/etcd",
+            "size": 5210,
+            "stargazers_count": 11,
+            "watchers_count": 11,
+            "language": "Rust",
+            "has_issues": false,
+            "has_projects": true,
+            "has_downloads": true,
+            "has_wiki": false,
+            "has_pages": false,
+            "has_discussions": false,
+            "forks_count": 6,
+            "archived": false,
+            "disabled": false,
+            "open_issues_count": 0,
+            "license": {
+              "key": "mit",
+              "name": "MIT License",
+              "spdx_id": "MIT",
+              "url": "https://api.github.com/licenses/mit",
+              "node_id": "MDc6TGljZW5zZTEz"
+            },
+            "allow_forking": true,
+            "is_template": false,
+            "web_commit_signoff_required": false,
+            "topics": [],
+            "visibility": "public",
+            "forks": 6,
+            "open_issues": 0,
+            "watchers": 11,
+            "default_branch": "master"
+          }
+        },
+        "_links": {
+          "self": {
+            "href": "https://api.github.com/repos/discord/rust-etcd/pulls/1"
+          },
+          "html": {
+            "href": "https://github.com/discord/rust-etcd/pull/1"
+          },
+          "issue": {
+            "href": "https://api.github.com/repos/discord/rust-etcd/issues/1"
+          },
+          "comments": {
+            "href": "https://api.github.com/repos/discord/rust-etcd/issues/1/comments"
+          },
+          "review_comments": {
+            "href": "https://api.github.com/repos/discord/rust-etcd/pulls/1/comments"
+          },
+          "review_comment": {
+            "href": "https://api.github.com/repos/discord/rust-etcd/pulls/comments{/number}"
+          },
+          "commits": {
+            "href": "https://api.github.com/repos/discord/rust-etcd/pulls/1/commits"
+          },
+          "statuses": {
+            "href": "https://api.github.com/repos/discord/rust-etcd/statuses/4f790fea92fb5b971e5f9f9185b0830a11a5ccf9"
+          }
+        },
+        "author_association": "MEMBER",
+        "auto_merge": null,
+        "active_lock_reason": null
+      }
+    ]
   }
 }

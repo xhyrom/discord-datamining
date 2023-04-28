@@ -57,7 +57,96 @@
     "triage": false,
     "pull": false
   },
-  "branches": [],
+  "branches": [
+    {
+      "name": "1.0.0-rc.10",
+      "commit": {
+        "sha": "ab256106d46e1f3505ddb1a169f98b2f50c1f0b2",
+        "url": "https://api.github.com/repos/discord/haul/commits/ab256106d46e1f3505ddb1a169f98b2f50c1f0b2"
+      },
+      "protected": false
+    },
+    {
+      "name": "1.0.0-rc.13",
+      "commit": {
+        "sha": "d590e77db392d6098f2e8ce315dfee9fd8dffb78",
+        "url": "https://api.github.com/repos/discord/haul/commits/d590e77db392d6098f2e8ce315dfee9fd8dffb78"
+      },
+      "protected": false
+    },
+    {
+      "name": "beta",
+      "commit": {
+        "sha": "55a2565e32002892b29933bdaeacff67ce07c867",
+        "url": "https://api.github.com/repos/discord/haul/commits/55a2565e32002892b29933bdaeacff67ce07c867"
+      },
+      "protected": false
+    },
+    {
+      "name": "experimental",
+      "commit": {
+        "sha": "ca5626040a373a3b6ecbf449efcb664a9e5f2158",
+        "url": "https://api.github.com/repos/discord/haul/commits/ca5626040a373a3b6ecbf449efcb664a9e5f2158"
+      },
+      "protected": false
+    },
+    {
+      "name": "gh-pages",
+      "commit": {
+        "sha": "eedaec06aefe65e8f104141700ac2609cc6a6a7c",
+        "url": "https://api.github.com/repos/discord/haul/commits/eedaec06aefe65e8f104141700ac2609cc6a6a7c"
+      },
+      "protected": false
+    },
+    {
+      "name": "jukben/better-polyfill",
+      "commit": {
+        "sha": "cf354b007c8888c6c9b5e762c1eb785969866489",
+        "url": "https://api.github.com/repos/discord/haul/commits/cf354b007c8888c6c9b5e762c1eb785969866489"
+      },
+      "protected": false
+    },
+    {
+      "name": "jukben/ws-upgrade",
+      "commit": {
+        "sha": "6d9ea2191f5beac05476f8d686e5fed31d04bfc4",
+        "url": "https://api.github.com/repos/discord/haul/commits/6d9ea2191f5beac05476f8d686e5fed31d04bfc4"
+      },
+      "protected": false
+    },
+    {
+      "name": "krizzu/webpack_node_workers",
+      "commit": {
+        "sha": "f1ebb5a7028e1829f1f0a26dcdf6fe34f2e101c5",
+        "url": "https://api.github.com/repos/discord/haul/commits/f1ebb5a7028e1829f1f0a26dcdf6fe34f2e101c5"
+      },
+      "protected": false
+    },
+    {
+      "name": "master",
+      "commit": {
+        "sha": "ce72843f6957d881bdb4277ab570480fc0128101",
+        "url": "https://api.github.com/repos/discord/haul/commits/ce72843f6957d881bdb4277ab570480fc0128101"
+      },
+      "protected": false
+    },
+    {
+      "name": "next",
+      "commit": {
+        "sha": "bfc5578b541d935ebc58356ae20e15a726c5284d",
+        "url": "https://api.github.com/repos/discord/haul/commits/bfc5578b541d935ebc58356ae20e15a726c5284d"
+      },
+      "protected": false
+    },
+    {
+      "name": "webpack-4.0",
+      "commit": {
+        "sha": "ebc282c2352a3cad249308ea88d0d13b4bc4ce0e",
+        "url": "https://api.github.com/repos/discord/haul/commits/ebc282c2352a3cad249308ea88d0d13b4bc4ce0e"
+      },
+      "protected": false
+    }
+  ],
   "last5": {
     "commits": [
       {
@@ -382,6 +471,201 @@
         "state_reason": null
       }
     ],
-    "pullRequests": []
+    "pullRequests": [
+      {
+        "url": "https://api.github.com/repos/discord/haul/pulls/1",
+        "id": 267606445,
+        "node_id": "MDExOlB1bGxSZXF1ZXN0MjY3NjA2NDQ1",
+        "number": 1,
+        "state": "open",
+        "locked": false,
+        "title": "Adjust where metro plugin is referenced",
+        "user": {
+          "login": "adgarcia",
+          "id": 1191944,
+          "node_id": "MDQ6VXNlcjExOTE5NDQ=",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/adgarcia",
+          "type": "User",
+          "site_admin": false
+        },
+        "body": "we don't need the plugin, but Haul will crash without it >.<",
+        "created_at": "2019-04-04T20:47:39Z",
+        "updated_at": "2019-04-04T21:45:30Z",
+        "closed_at": null,
+        "merged_at": null,
+        "merge_commit_sha": "5b061b449d4889c54c5b9e22ba67f7697941504b",
+        "assignee": null,
+        "assignees": [],
+        "requested_reviewers": [],
+        "requested_teams": [],
+        "labels": [],
+        "milestone": null,
+        "draft": false,
+        "head": {
+          "label": "adgarcia:patch-1",
+          "ref": "patch-1",
+          "sha": "ed01c8df41bb280fb34ba072b9af3ce8877d8403",
+          "user": {
+            "login": "adgarcia",
+            "id": 1191944,
+            "node_id": "MDQ6VXNlcjExOTE5NDQ=",
+            "gravatar_id": "",
+            "url": "https://api.github.com/users/adgarcia",
+            "type": "User",
+            "site_admin": false
+          },
+          "repo": {
+            "id": 179574364,
+            "node_id": "MDEwOlJlcG9zaXRvcnkxNzk1NzQzNjQ=",
+            "name": "haul",
+            "full_name": "adgarcia/haul",
+            "private": false,
+            "owner": {
+              "login": "adgarcia",
+              "id": 1191944,
+              "node_id": "MDQ6VXNlcjExOTE5NDQ=",
+              "gravatar_id": "",
+              "url": "https://api.github.com/users/adgarcia",
+              "type": "User",
+              "site_admin": false
+            },
+            "description": "Haul is a command line tool for developing React Native apps, powered by Webpack",
+            "fork": true,
+            "url": "https://api.github.com/repos/adgarcia/haul",
+            "created_at": "2019-04-04T20:44:33Z",
+            "updated_at": "2019-04-04T20:44:35Z",
+            "pushed_at": "2019-04-04T21:45:30Z",
+            "homepage": "https://callstack.github.io/haul/",
+            "size": 2004,
+            "stargazers_count": 0,
+            "watchers_count": 0,
+            "language": "JavaScript",
+            "has_issues": false,
+            "has_projects": true,
+            "has_downloads": true,
+            "has_wiki": true,
+            "has_pages": false,
+            "has_discussions": false,
+            "forks_count": 0,
+            "archived": false,
+            "disabled": false,
+            "open_issues_count": 0,
+            "license": {
+              "key": "mit",
+              "name": "MIT License",
+              "spdx_id": "MIT",
+              "url": "https://api.github.com/licenses/mit",
+              "node_id": "MDc6TGljZW5zZTEz"
+            },
+            "allow_forking": true,
+            "is_template": false,
+            "web_commit_signoff_required": false,
+            "topics": [],
+            "visibility": "public",
+            "forks": 0,
+            "open_issues": 0,
+            "watchers": 0,
+            "default_branch": "next"
+          }
+        },
+        "base": {
+          "label": "discord:1.0.0-rc.10",
+          "ref": "1.0.0-rc.10",
+          "sha": "ab256106d46e1f3505ddb1a169f98b2f50c1f0b2",
+          "user": {
+            "login": "discord",
+            "id": 1965106,
+            "node_id": "MDEyOk9yZ2FuaXphdGlvbjE5NjUxMDY=",
+            "gravatar_id": "",
+            "url": "https://api.github.com/users/discord",
+            "type": "Organization",
+            "site_admin": false
+          },
+          "repo": {
+            "id": 165759923,
+            "node_id": "MDEwOlJlcG9zaXRvcnkxNjU3NTk5MjM=",
+            "name": "haul",
+            "full_name": "discord/haul",
+            "private": false,
+            "owner": {
+              "login": "discord",
+              "id": 1965106,
+              "node_id": "MDEyOk9yZ2FuaXphdGlvbjE5NjUxMDY=",
+              "gravatar_id": "",
+              "url": "https://api.github.com/users/discord",
+              "type": "Organization",
+              "site_admin": false
+            },
+            "description": "Haul is a command line tool for developing React Native apps, powered by Webpack",
+            "fork": true,
+            "url": "https://api.github.com/repos/discord/haul",
+            "created_at": "2019-01-15T00:59:42Z",
+            "updated_at": "2021-04-28T21:28:48Z",
+            "pushed_at": "2019-08-09T18:40:20Z",
+            "homepage": "https://callstack.github.io/haul/",
+            "size": 2004,
+            "stargazers_count": 4,
+            "watchers_count": 4,
+            "language": "JavaScript",
+            "has_issues": false,
+            "has_projects": true,
+            "has_downloads": true,
+            "has_wiki": true,
+            "has_pages": false,
+            "has_discussions": false,
+            "forks_count": 5,
+            "archived": false,
+            "disabled": false,
+            "open_issues_count": 1,
+            "license": {
+              "key": "mit",
+              "name": "MIT License",
+              "spdx_id": "MIT",
+              "url": "https://api.github.com/licenses/mit",
+              "node_id": "MDc6TGljZW5zZTEz"
+            },
+            "allow_forking": true,
+            "is_template": false,
+            "web_commit_signoff_required": false,
+            "topics": [],
+            "visibility": "public",
+            "forks": 5,
+            "open_issues": 1,
+            "watchers": 4,
+            "default_branch": "next"
+          }
+        },
+        "_links": {
+          "self": {
+            "href": "https://api.github.com/repos/discord/haul/pulls/1"
+          },
+          "html": {
+            "href": "https://github.com/discord/haul/pull/1"
+          },
+          "issue": {
+            "href": "https://api.github.com/repos/discord/haul/issues/1"
+          },
+          "comments": {
+            "href": "https://api.github.com/repos/discord/haul/issues/1/comments"
+          },
+          "review_comments": {
+            "href": "https://api.github.com/repos/discord/haul/pulls/1/comments"
+          },
+          "review_comment": {
+            "href": "https://api.github.com/repos/discord/haul/pulls/comments{/number}"
+          },
+          "commits": {
+            "href": "https://api.github.com/repos/discord/haul/pulls/1/commits"
+          },
+          "statuses": {
+            "href": "https://api.github.com/repos/discord/haul/statuses/ed01c8df41bb280fb34ba072b9af3ce8877d8403"
+          }
+        },
+        "author_association": "NONE",
+        "auto_merge": null,
+        "active_lock_reason": null
+      }
+    ]
   }
 }
