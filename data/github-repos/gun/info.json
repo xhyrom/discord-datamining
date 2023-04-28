@@ -57,24 +57,7 @@
     "triage": false,
     "pull": false
   },
-  "branches": [
-    {
-      "name": "holster_gun",
-      "commit": {
-        "sha": "da4fb20c67d77ecb2307faf06cf69a80dbeaf029",
-        "url": "https://api.github.com/repos/discord/gun/commits/da4fb20c67d77ecb2307faf06cf69a80dbeaf029"
-      },
-      "protected": false
-    },
-    {
-      "name": "master",
-      "commit": {
-        "sha": "59cf6850769733a8aefde8a8c3a90955b8f802e1",
-        "url": "https://api.github.com/repos/discord/gun/commits/59cf6850769733a8aefde8a8c3a90955b8f802e1"
-      },
-      "protected": false
-    }
-  ],
+  "branches": [],
   "last5": {
     "commits": [
       {
