@@ -33,7 +33,7 @@
   "forks_count": 1260,
   "archived": false,
   "disabled": false,
-  "open_issues_count": 174,
+  "open_issues_count": 175,
   "license": {
     "key": "other",
     "name": "Other",
@@ -52,7 +52,7 @@
   ],
   "visibility": "public",
   "forks": 1260,
-  "open_issues": 174,
+  "open_issues": 175,
   "watchers": 5360,
   "default_branch": "main",
   "permissions": {
@@ -337,7 +337,273 @@
       }
     ],
     "releases": [],
-    "issues": [],
+    "issues": [
+      {
+        "url": "https://api.github.com/repos/discord/discord-api-docs/issues/6117",
+        "id": 1688723634,
+        "node_id": "I_kwDOA0coRs5kp-Cy",
+        "number": 6117,
+        "title": "Missing fields for Guild Member / User object",
+        "user": {
+          "login": "mobolo723",
+          "id": 18317905,
+          "node_id": "MDQ6VXNlcjE4MzE3OTA1",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/mobolo723",
+          "type": "User",
+          "site_admin": false
+        },
+        "labels": [
+          {
+            "id": 349418148,
+            "node_id": "MDU6TGFiZWwzNDk0MTgxNDg=",
+            "url": "https://api.github.com/repos/discord/discord-api-docs/labels/bug",
+            "name": "bug",
+            "color": "ee0701",
+            "default": true,
+            "description": null
+          }
+        ],
+        "state": "open",
+        "locked": false,
+        "assignee": null,
+        "assignees": [],
+        "milestone": null,
+        "comments": 0,
+        "created_at": "2023-04-28T15:07:52Z",
+        "updated_at": "2023-04-28T15:07:52Z",
+        "closed_at": null,
+        "author_association": "NONE",
+        "active_lock_reason": null,
+        "body": "### Description\n\nWhile using the API to retrieve user and member from a guild, i saw that some fields in the online documentation are missing.\r\n\r\npath : `docs/resources/user#user-object-user-structure`\r\nmissing : `avatar_decoration`, `display_name`, `global_name`\r\n\r\npath : `docs/resources/guild#guild-member-object-guild-member-structure`\r\nmissing : `is_pending`\n\n### Steps to Reproduce\n\n- HTTP GET on `/guilds/{guild.id}/members/{user.id}`\r\n- Parse JSON response\r\n- Missing fields on `Member`\r\n- Access `user` field in JSON\r\n- Missing fields on `User`\n\n### Expected Behavior\n\nDocumentation may have deprecated or future fields mentioned as it is easier to construct classes of data and see which field is optional or nullable\n\n### Current Behavior\n\nMissing fields making parsing data harder\n\n### Screenshots/Videos\n\n_No response_\n\n### Client and System Information\n\nAPI version : 10",
+        "reactions": {
+          "url": "https://api.github.com/repos/discord/discord-api-docs/issues/6117/reactions",
+          "total_count": 0,
+          "+1": 0,
+          "-1": 0,
+          "laugh": 0,
+          "hooray": 0,
+          "confused": 0,
+          "heart": 0,
+          "rocket": 0,
+          "eyes": 0
+        },
+        "performed_via_github_app": null,
+        "state_reason": null
+      },
+      {
+        "url": "https://api.github.com/repos/discord/discord-api-docs/issues/6116",
+        "id": 1688621974,
+        "node_id": "I_kwDOA0coRs5kplOW",
+        "number": 6116,
+        "title": "Can no longer wrap a masked link around emojis",
+        "user": {
+          "login": "apeck14",
+          "id": 23341953,
+          "node_id": "MDQ6VXNlcjIzMzQxOTUz",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/apeck14",
+          "type": "User",
+          "site_admin": false
+        },
+        "labels": [
+          {
+            "id": 349418148,
+            "node_id": "MDU6TGFiZWwzNDk0MTgxNDg=",
+            "url": "https://api.github.com/repos/discord/discord-api-docs/labels/bug",
+            "name": "bug",
+            "color": "ee0701",
+            "default": true,
+            "description": null
+          }
+        ],
+        "state": "open",
+        "locked": false,
+        "assignee": null,
+        "assignees": [],
+        "milestone": null,
+        "comments": 1,
+        "created_at": "2023-04-28T14:04:30Z",
+        "updated_at": "2023-04-28T14:11:32Z",
+        "closed_at": null,
+        "author_association": "NONE",
+        "active_lock_reason": null,
+        "body": "### Description\n\nPrior to the recent update you could wrap a masked link around a string containing emojis. However, as of late, this is no longer the case. None of the code has changed from the bot. Please investigate, or let me know if this is a \"feature\". Thanks!\n\n### Steps to Reproduce\n\nCreate a masked link with an emoji inside the string.\n\n### Expected Behavior\n\nThe masked link not break entirely when an emoji is present.\n\n### Current Behavior\n\nEmoji breaks the masked link.\n\n### Screenshots/Videos\n\n![image](https://user-images.githubusercontent.com/23341953/235169133-87269c8b-4019-4399-9a41-16ea0bdaf756.png)\r\n\n\n### Client and System Information\n\nHappens on all browsers and devices. ",
+        "reactions": {
+          "url": "https://api.github.com/repos/discord/discord-api-docs/issues/6116/reactions",
+          "total_count": 0,
+          "+1": 0,
+          "-1": 0,
+          "laugh": 0,
+          "hooray": 0,
+          "confused": 0,
+          "heart": 0,
+          "rocket": 0,
+          "eyes": 0
+        },
+        "performed_via_github_app": null,
+        "state_reason": null
+      },
+      {
+        "url": "https://api.github.com/repos/discord/discord-api-docs/issues/6111",
+        "id": 1682756807,
+        "node_id": "I_kwDOA0coRs5kTNTH",
+        "number": 6111,
+        "title": "<3 instead a word",
+        "user": {
+          "login": "ghost",
+          "id": 10137,
+          "node_id": "MDQ6VXNlcjEwMTM3",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/ghost",
+          "type": "User",
+          "site_admin": false
+        },
+        "labels": [
+          {
+            "id": 3139104261,
+            "node_id": "MDU6TGFiZWwzMTM5MTA0MjYx",
+            "url": "https://api.github.com/repos/discord/discord-api-docs/labels/message%20components",
+            "name": "message components",
+            "color": "5319E7",
+            "default": false,
+            "description": "click click click click click click click"
+          }
+        ],
+        "state": "closed",
+        "locked": false,
+        "assignee": null,
+        "assignees": [],
+        "milestone": null,
+        "comments": 2,
+        "created_at": "2023-04-25T09:11:17Z",
+        "updated_at": "2023-04-25T18:09:59Z",
+        "closed_at": "2023-04-25T18:09:59Z",
+        "author_association": "NONE",
+        "active_lock_reason": null,
+        "body": "### Description\n\nen en apartado de introducción de la API de Discord, en las últimas líneas hay un <3 en vez de un \"have\".\n\n### Steps to Reproduce\n\nIn Discord mobile.\r\n1. click in your profile\r\n2. Advanced\r\n3. API of Discord\n\n### Expected Behavior\n\nque ponga \"have\"\n\n### Current Behavior\n\nque hay un <3 en vez de una palabra. \n\n### Screenshots/Videos\n\n_No response_\n\n### Client and System Information\n\nSamsung A71 versión de UI 5.1",
+        "reactions": {
+          "url": "https://api.github.com/repos/discord/discord-api-docs/issues/6111/reactions",
+          "total_count": 0,
+          "+1": 0,
+          "-1": 0,
+          "laugh": 0,
+          "hooray": 0,
+          "confused": 0,
+          "heart": 0,
+          "rocket": 0,
+          "eyes": 0
+        },
+        "performed_via_github_app": null,
+        "state_reason": "completed"
+      },
+      {
+        "url": "https://api.github.com/repos/discord/discord-api-docs/issues/6109",
+        "id": 1680037975,
+        "node_id": "I_kwDOA0coRs5kI1hX",
+        "number": 6109,
+        "title": "Incorrect retry-after on crosspost message edit",
+        "user": {
+          "login": "MinnDevelopment",
+          "id": 18090140,
+          "node_id": "MDQ6VXNlcjE4MDkwMTQw",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/MinnDevelopment",
+          "type": "User",
+          "site_admin": false
+        },
+        "labels": [
+          {
+            "id": 349418148,
+            "node_id": "MDU6TGFiZWwzNDk0MTgxNDg=",
+            "url": "https://api.github.com/repos/discord/discord-api-docs/labels/bug",
+            "name": "bug",
+            "color": "ee0701",
+            "default": true,
+            "description": null
+          }
+        ],
+        "state": "open",
+        "locked": false,
+        "assignee": null,
+        "assignees": [],
+        "milestone": null,
+        "comments": 4,
+        "created_at": "2023-04-23T14:00:17Z",
+        "updated_at": "2023-04-25T08:37:37Z",
+        "closed_at": null,
+        "author_association": "CONTRIBUTOR",
+        "active_lock_reason": null,
+        "body": "### Description\n\nThe PATCH endpoint for messages reports incorrect Retry-After if a message is crossposted.\r\n\r\nThe response is a code 429 with the headers:\r\n\r\n```\r\n< retry-after: 1\r\n< x-ratelimit-scope: shared\r\n< x-ratelimit-bucket: 1d3c67957bcdccc6709861c232df8529\r\n< x-ratelimit-limit: 5\r\n< x-ratelimit-remaining: 4\r\n< x-ratelimit-reset: 1682258040.904\r\n< x-ratelimit-reset-after: 0.999\r\n```\r\n\r\nThe response body has the correct limit:\r\n\r\n```\r\n{\r\n  \"code\": 20028,\r\n  \"global\": false,\r\n  \"message\": \"The write action you are performing on the channel has hit the write rate limit.\",\r\n  \"retry_after\": 1163.097\r\n}\r\n```\r\n\r\nThis issue seems to be limited to crossposted messages. Some more detailed logs:\r\n\r\n```\r\nEncountered 429 on route PATCH/channels/{channel_id}/messages/{message_id} with bucket 1d3c67957bcdccc6709861c232df8529:channel_id=702491600693231687 Retry-After: 4000 ms Scope: shared\r\nBacking off 3999 ms for bucket 1d3c67957bcdccc6709861c232df8529:channel_id=702491600693231687 on route PATCH/channels/{channel_id}/messages/{message_id}\r\nEncountered 429 on route PATCH/channels/{channel_id}/messages/{message_id} with bucket 1d3c67957bcdccc6709861c232df8529:channel_id=702491600693231687 Retry-After: 1000 ms Scope: shared\r\nBacking off 1000 ms for bucket 1d3c67957bcdccc6709861c232df8529:channel_id=702491600693231687 on route PATCH/channels/{channel_id}/messages/{message_id}\r\nEncountered 429 on route PATCH/channels/{channel_id}/messages/{message_id} with bucket 1d3c67957bcdccc6709861c232df8529:channel_id=702491600693231687 Retry-After: 1000 ms Scope: shared\r\nBacking off 1000 ms for bucket 1d3c67957bcdccc6709861c232df8529:channel_id=702491600693231687 on route PATCH/channels/{channel_id}/messages/{message_id}\r\n```\r\n\r\nThis retry-loop results in a quick cloudflare API ban.\n\n### Steps to Reproduce\n\n1. Send a message to an announcement channel\r\n2. Crosspost the message\r\n3. Edit it 3 times\r\n\r\nTested using this curl command:\r\n\r\n```\r\ncurl -v \\\r\n-H \"Content-Type: application/json\" \\\r\n-H \"Authorization: Bot $TOKEN\" \\\r\n-d '{\"content\": \"test edit 4\"}' \\\r\n-X PATCH https://discord.com/api/v10/channels/$channel_id/messages/$message_id\r\n```\n\n### Expected Behavior\n\nThe headers should report the correct rate-limit.\n\n### Current Behavior\n\nThe rate-limit is wrong in the headers.\n\n### Screenshots/Videos\n\n_No response_\n\n### Client and System Information\n\nAPI v10",
+        "reactions": {
+          "url": "https://api.github.com/repos/discord/discord-api-docs/issues/6109/reactions",
+          "total_count": 4,
+          "+1": 4,
+          "-1": 0,
+          "laugh": 0,
+          "hooray": 0,
+          "confused": 0,
+          "heart": 0,
+          "rocket": 0,
+          "eyes": 0
+        },
+        "performed_via_github_app": null,
+        "state_reason": null
+      },
+      {
+        "url": "https://api.github.com/repos/discord/discord-api-docs/issues/6108",
+        "id": 1679883453,
+        "node_id": "I_kwDOA0coRs5kIPy9",
+        "number": 6108,
+        "title": "System messages can't be removed from threads",
+        "user": {
+          "login": "psketi",
+          "id": 114151698,
+          "node_id": "U_kgDOBs3REg",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/psketi",
+          "type": "User",
+          "site_admin": false
+        },
+        "labels": [
+          {
+            "id": 349418148,
+            "node_id": "MDU6TGFiZWwzNDk0MTgxNDg=",
+            "url": "https://api.github.com/repos/discord/discord-api-docs/labels/bug",
+            "name": "bug",
+            "color": "ee0701",
+            "default": true,
+            "description": null
+          }
+        ],
+        "state": "closed",
+        "locked": false,
+        "assignee": null,
+        "assignees": [],
+        "milestone": null,
+        "comments": 5,
+        "created_at": "2023-04-23T06:32:24Z",
+        "updated_at": "2023-04-24T22:12:02Z",
+        "closed_at": "2023-04-24T22:12:02Z",
+        "author_association": "NONE",
+        "active_lock_reason": null,
+        "body": "### Description\n\nSystem messages in threads cannot be deleted at all, even by bots. Very disruptive to conversation flow or threads intended to be read-only archives. Users can stop following a thread and it will not produce a message, but if a moderator removes them it will leave a system message that cannot be removed. This also happens when the thread is renamed. Attempting to use a bot to remove these messages gives a permissions error.\n\n### Steps to Reproduce\n\n1. Create a new public thread\r\n2. Rename the thread, or remove a user from the thread\r\n3. Attempt to remove the system message\n\n### Expected Behavior\n\nSystem messages in threads can be deleted same as everywhere else.\n\n### Current Behavior\n\nSystem messages in threads cannot be deleted.\n\n### Screenshots/Videos\n\n**Neither of these messages can be deleted or hidden in any way.**\r\n\r\n![Untitled](https://user-images.githubusercontent.com/114151698/233823583-6789cb78-5c7e-486f-ac20-8fcba0845c64.png)\r\n\n\n### Client and System Information\n\nWin10 Stable 191743",
+        "reactions": {
+          "url": "https://api.github.com/repos/discord/discord-api-docs/issues/6108/reactions",
+          "total_count": 0,
+          "+1": 0,
+          "-1": 0,
+          "laugh": 0,
+          "hooray": 0,
+          "confused": 0,
+          "heart": 0,
+          "rocket": 0,
+          "eyes": 0
+        },
+        "performed_via_github_app": null,
+        "state_reason": "completed"
+      }
+    ],
     "pullRequests": []
   }
 }

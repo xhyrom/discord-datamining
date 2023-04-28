@@ -327,7 +327,100 @@
         ]
       }
     ],
-    "releases": [],
+    "releases": [
+      {
+        "url": "https://api.github.com/repos/discord/bazel-deps/releases/15364703",
+        "id": 15364703,
+        "author": {
+          "login": "samschlegel",
+          "id": 5514447,
+          "node_id": "MDQ6VXNlcjU1MTQ0NDc=",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/samschlegel",
+          "type": "User",
+          "site_admin": false
+        },
+        "node_id": "MDc6UmVsZWFzZTE1MzY0NzAz",
+        "tag_name": "v0.0.2",
+        "target_commitish": "master",
+        "name": "",
+        "draft": false,
+        "prerelease": false,
+        "created_at": "2019-02-01T04:21:18Z",
+        "published_at": "2019-02-05T03:18:42Z",
+        "assets": [
+          {
+            "url": "https://api.github.com/repos/discord/bazel-deps/releases/assets/10932487",
+            "id": 10932487,
+            "node_id": "MDEyOlJlbGVhc2VBc3NldDEwOTMyNDg3",
+            "name": "parseproject_deploy.jar",
+            "label": null,
+            "uploader": {
+              "login": "samschlegel",
+              "id": 5514447,
+              "node_id": "MDQ6VXNlcjU1MTQ0NDc=",
+              "gravatar_id": "",
+              "url": "https://api.github.com/users/samschlegel",
+              "type": "User",
+              "site_admin": false
+            },
+            "content_type": "application/x-java-archive",
+            "state": "uploaded",
+            "size": 99172203,
+            "download_count": 62117,
+            "created_at": "2019-02-05T03:18:35Z",
+            "updated_at": "2019-02-05T03:18:39Z"
+          }
+        ],
+        "body": ""
+      },
+      {
+        "url": "https://api.github.com/repos/discord/bazel-deps/releases/14266806",
+        "id": 14266806,
+        "author": {
+          "login": "samschlegel",
+          "id": 5514447,
+          "node_id": "MDQ6VXNlcjU1MTQ0NDc=",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/samschlegel",
+          "type": "User",
+          "site_admin": false
+        },
+        "node_id": "MDc6UmVsZWFzZTE0MjY2ODA2",
+        "tag_name": "v0.0.1",
+        "target_commitish": "master",
+        "name": "aca1848",
+        "draft": false,
+        "prerelease": false,
+        "created_at": "2018-11-22T19:50:20Z",
+        "published_at": "2018-11-29T20:20:35Z",
+        "assets": [
+          {
+            "url": "https://api.github.com/repos/discord/bazel-deps/releases/assets/9918544",
+            "id": 9918544,
+            "node_id": "MDEyOlJlbGVhc2VBc3NldDk5MTg1NDQ=",
+            "name": "parseproject_deploy.jar",
+            "label": null,
+            "uploader": {
+              "login": "samschlegel",
+              "id": 5514447,
+              "node_id": "MDQ6VXNlcjU1MTQ0NDc=",
+              "gravatar_id": "",
+              "url": "https://api.github.com/users/samschlegel",
+              "type": "User",
+              "site_admin": false
+            },
+            "content_type": "application/x-java-archive",
+            "state": "uploaded",
+            "size": 99049263,
+            "download_count": 91639,
+            "created_at": "2018-11-29T20:19:18Z",
+            "updated_at": "2018-11-29T20:19:22Z"
+          }
+        ],
+        "body": ""
+      }
+    ],
     "issues": [],
     "pullRequests": []
   }
