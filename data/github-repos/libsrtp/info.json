@@ -57,7 +57,24 @@
     "triage": false,
     "pull": false
   },
-  "branches": [],
+  "branches": [
+    {
+      "name": "2.4.2",
+      "commit": {
+        "sha": "e00be1304bf9ebacf0326dc1974c230e79a7595a",
+        "url": "https://api.github.com/repos/discord/libsrtp/commits/e00be1304bf9ebacf0326dc1974c230e79a7595a"
+      },
+      "protected": false
+    },
+    {
+      "name": "discord",
+      "commit": {
+        "sha": "8c31c8e14265fe76e362867782f37e28bb5a2912",
+        "url": "https://api.github.com/repos/discord/libsrtp/commits/8c31c8e14265fe76e362867782f37e28bb5a2912"
+      },
+      "protected": false
+    }
+  ],
   "last5": {
     "commits": [
       {
@@ -332,7 +349,290 @@
       }
     ],
     "releases": [],
-    "issues": [],
-    "pullRequests": []
+    "issues": [
+      {
+        "url": "https://api.github.com/repos/discord/libsrtp/issues/1",
+        "id": 1207503145,
+        "node_id": "PR_kwDOBN0BFM42YqMN",
+        "number": 1,
+        "title": "libsrtp upgrade",
+        "user": {
+          "login": "asmishra",
+          "id": 5945478,
+          "node_id": "MDQ6VXNlcjU5NDU0Nzg=",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/asmishra",
+          "type": "User",
+          "site_admin": false
+        },
+        "labels": [
+          {
+            "id": 536826946,
+            "node_id": "MDU6TGFiZWw1MzY4MjY5NDY=",
+            "url": "https://api.github.com/repos/discord/libsrtp/labels/enhancement",
+            "name": "enhancement",
+            "color": "84b6eb",
+            "default": true,
+            "description": null
+          }
+        ],
+        "state": "closed",
+        "locked": false,
+        "assignee": null,
+        "assignees": [],
+        "milestone": null,
+        "comments": 1,
+        "created_at": "2022-04-18T22:15:03Z",
+        "updated_at": "2022-04-19T20:38:41Z",
+        "closed_at": "2022-04-19T20:38:41Z",
+        "author_association": "NONE",
+        "active_lock_reason": null,
+        "draft": false,
+        "pull_request": {
+          "url": "https://api.github.com/repos/discord/libsrtp/pulls/1",
+          "merged_at": null
+        },
+        "body": "From: https://app.asana.com/0/1202065585293144/1174130609535780\r\n\r\nUpgrade libsrtp to latest (last synced in 2017). (Testing pending)",
+        "reactions": {
+          "url": "https://api.github.com/repos/discord/libsrtp/issues/1/reactions",
+          "total_count": 0,
+          "+1": 0,
+          "-1": 0,
+          "laugh": 0,
+          "hooray": 0,
+          "confused": 0,
+          "heart": 0,
+          "rocket": 0,
+          "eyes": 0
+        },
+        "performed_via_github_app": null,
+        "state_reason": null
+      }
+    ],
+    "pullRequests": [
+      {
+        "url": "https://api.github.com/repos/discord/libsrtp/pulls/1",
+        "id": 912433933,
+        "node_id": "PR_kwDOBN0BFM42YqMN",
+        "number": 1,
+        "state": "closed",
+        "locked": false,
+        "title": "libsrtp upgrade",
+        "user": {
+          "login": "asmishra",
+          "id": 5945478,
+          "node_id": "MDQ6VXNlcjU5NDU0Nzg=",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/asmishra",
+          "type": "User",
+          "site_admin": false
+        },
+        "body": "From: https://app.asana.com/0/1202065585293144/1174130609535780\r\n\r\nUpgrade libsrtp to latest (last synced in 2017). (Testing pending)",
+        "created_at": "2022-04-18T22:15:03Z",
+        "updated_at": "2022-04-19T20:38:41Z",
+        "closed_at": "2022-04-19T20:38:41Z",
+        "merged_at": null,
+        "merge_commit_sha": "d378e635f5cf1511b1ec353cd2436e0879727cb5",
+        "assignee": null,
+        "assignees": [],
+        "requested_reviewers": [
+          {
+            "login": "adill",
+            "id": 144914,
+            "node_id": "MDQ6VXNlcjE0NDkxNA==",
+            "gravatar_id": "",
+            "url": "https://api.github.com/users/adill",
+            "type": "User",
+            "site_admin": false
+          },
+          {
+            "login": "vassjozsef",
+            "id": 5341134,
+            "node_id": "MDQ6VXNlcjUzNDExMzQ=",
+            "gravatar_id": "",
+            "url": "https://api.github.com/users/vassjozsef",
+            "type": "User",
+            "site_admin": false
+          }
+        ],
+        "requested_teams": [],
+        "labels": [
+          {
+            "id": 536826946,
+            "node_id": "MDU6TGFiZWw1MzY4MjY5NDY=",
+            "url": "https://api.github.com/repos/discord/libsrtp/labels/enhancement",
+            "name": "enhancement",
+            "color": "84b6eb",
+            "default": true,
+            "description": null
+          }
+        ],
+        "milestone": null,
+        "draft": false,
+        "head": {
+          "label": "discord:libsrtp_upgrade",
+          "ref": "libsrtp_upgrade",
+          "sha": "d73d250999edf44eed205ff28c4e4f89f8b03c25",
+          "user": {
+            "login": "discord",
+            "id": 1965106,
+            "node_id": "MDEyOk9yZ2FuaXphdGlvbjE5NjUxMDY=",
+            "gravatar_id": "",
+            "url": "https://api.github.com/users/discord",
+            "type": "Organization",
+            "site_admin": false
+          },
+          "repo": {
+            "id": 81592596,
+            "node_id": "MDEwOlJlcG9zaXRvcnk4MTU5MjU5Ng==",
+            "name": "libsrtp",
+            "full_name": "discord/libsrtp",
+            "private": false,
+            "owner": {
+              "login": "discord",
+              "id": 1965106,
+              "node_id": "MDEyOk9yZ2FuaXphdGlvbjE5NjUxMDY=",
+              "gravatar_id": "",
+              "url": "https://api.github.com/users/discord",
+              "type": "Organization",
+              "site_admin": false
+            },
+            "description": "Fork of libsrtp",
+            "fork": false,
+            "url": "https://api.github.com/repos/discord/libsrtp",
+            "created_at": "2017-02-10T18:11:49Z",
+            "updated_at": "2022-12-07T20:56:20Z",
+            "pushed_at": "2022-04-26T19:09:51Z",
+            "homepage": null,
+            "size": 5348,
+            "stargazers_count": 4,
+            "watchers_count": 4,
+            "language": "C",
+            "has_issues": true,
+            "has_projects": true,
+            "has_downloads": true,
+            "has_wiki": true,
+            "has_pages": false,
+            "has_discussions": false,
+            "forks_count": 6,
+            "archived": false,
+            "disabled": false,
+            "open_issues_count": 0,
+            "license": {
+              "key": "other",
+              "name": "Other",
+              "spdx_id": "NOASSERTION",
+              "url": null,
+              "node_id": "MDc6TGljZW5zZTA="
+            },
+            "allow_forking": true,
+            "is_template": false,
+            "web_commit_signoff_required": false,
+            "topics": [],
+            "visibility": "public",
+            "forks": 6,
+            "open_issues": 0,
+            "watchers": 4,
+            "default_branch": "discord"
+          }
+        },
+        "base": {
+          "label": "discord:discord",
+          "ref": "discord",
+          "sha": "8c31c8e14265fe76e362867782f37e28bb5a2912",
+          "user": {
+            "login": "discord",
+            "id": 1965106,
+            "node_id": "MDEyOk9yZ2FuaXphdGlvbjE5NjUxMDY=",
+            "gravatar_id": "",
+            "url": "https://api.github.com/users/discord",
+            "type": "Organization",
+            "site_admin": false
+          },
+          "repo": {
+            "id": 81592596,
+            "node_id": "MDEwOlJlcG9zaXRvcnk4MTU5MjU5Ng==",
+            "name": "libsrtp",
+            "full_name": "discord/libsrtp",
+            "private": false,
+            "owner": {
+              "login": "discord",
+              "id": 1965106,
+              "node_id": "MDEyOk9yZ2FuaXphdGlvbjE5NjUxMDY=",
+              "gravatar_id": "",
+              "url": "https://api.github.com/users/discord",
+              "type": "Organization",
+              "site_admin": false
+            },
+            "description": "Fork of libsrtp",
+            "fork": false,
+            "url": "https://api.github.com/repos/discord/libsrtp",
+            "created_at": "2017-02-10T18:11:49Z",
+            "updated_at": "2022-12-07T20:56:20Z",
+            "pushed_at": "2022-04-26T19:09:51Z",
+            "homepage": null,
+            "size": 5348,
+            "stargazers_count": 4,
+            "watchers_count": 4,
+            "language": "C",
+            "has_issues": true,
+            "has_projects": true,
+            "has_downloads": true,
+            "has_wiki": true,
+            "has_pages": false,
+            "has_discussions": false,
+            "forks_count": 6,
+            "archived": false,
+            "disabled": false,
+            "open_issues_count": 0,
+            "license": {
+              "key": "other",
+              "name": "Other",
+              "spdx_id": "NOASSERTION",
+              "url": null,
+              "node_id": "MDc6TGljZW5zZTA="
+            },
+            "allow_forking": true,
+            "is_template": false,
+            "web_commit_signoff_required": false,
+            "topics": [],
+            "visibility": "public",
+            "forks": 6,
+            "open_issues": 0,
+            "watchers": 4,
+            "default_branch": "discord"
+          }
+        },
+        "_links": {
+          "self": {
+            "href": "https://api.github.com/repos/discord/libsrtp/pulls/1"
+          },
+          "html": {
+            "href": "https://github.com/discord/libsrtp/pull/1"
+          },
+          "issue": {
+            "href": "https://api.github.com/repos/discord/libsrtp/issues/1"
+          },
+          "comments": {
+            "href": "https://api.github.com/repos/discord/libsrtp/issues/1/comments"
+          },
+          "review_comments": {
+            "href": "https://api.github.com/repos/discord/libsrtp/pulls/1/comments"
+          },
+          "review_comment": {
+            "href": "https://api.github.com/repos/discord/libsrtp/pulls/comments{/number}"
+          },
+          "commits": {
+            "href": "https://api.github.com/repos/discord/libsrtp/pulls/1/commits"
+          },
+          "statuses": {
+            "href": "https://api.github.com/repos/discord/libsrtp/statuses/d73d250999edf44eed205ff28c4e4f89f8b03c25"
+          }
+        },
+        "author_association": "NONE",
+        "auto_merge": null,
+        "active_lock_reason": null
+      }
+    ]
   }
 }

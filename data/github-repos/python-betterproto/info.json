@@ -51,32 +51,7 @@
     "triage": false,
     "pull": false
   },
-  "branches": [
-    {
-      "name": "grpio-support",
-      "commit": {
-        "sha": "8814b91e72df44059dadaf93247b10bc9eb7b72c",
-        "url": "https://api.github.com/repos/discord/python-betterproto/commits/8814b91e72df44059dadaf93247b10bc9eb7b72c"
-      },
-      "protected": false
-    },
-    {
-      "name": "master",
-      "commit": {
-        "sha": "ce9f492f506af347e2e4f54c33077b3f579d19bb",
-        "url": "https://api.github.com/repos/discord/python-betterproto/commits/ce9f492f506af347e2e4f54c33077b3f579d19bb"
-      },
-      "protected": false
-    },
-    {
-      "name": "serialized_on_wire_repeated",
-      "commit": {
-        "sha": "28a288924f4f714d5543f20b6d2e8f5e6c8dcf7f",
-        "url": "https://api.github.com/repos/discord/python-betterproto/commits/28a288924f4f714d5543f20b6d2e8f5e6c8dcf7f"
-      },
-      "protected": false
-    }
-  ],
+  "branches": [],
   "last5": {
     "commits": [
       {
