@@ -51,7 +51,16 @@
     "triage": false,
     "pull": false
   },
-  "branches": [],
+  "branches": [
+    {
+      "name": "master",
+      "commit": {
+        "sha": "a471bcc02463804d0119399feea299241a5b2e6a",
+        "url": "https://api.github.com/repos/discord/sample-game-integration/commits/a471bcc02463804d0119399feea299241a5b2e6a"
+      },
+      "protected": false
+    }
+  ],
   "last5": {
     "commits": [
       {

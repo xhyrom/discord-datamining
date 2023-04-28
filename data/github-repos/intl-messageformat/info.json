@@ -57,40 +57,7 @@
     "triage": false,
     "pull": false
   },
-  "branches": [
-    {
-      "name": "empty-pluralization-part",
-      "commit": {
-        "sha": "04b9dd21b982c608883d7508503cee2632569178",
-        "url": "https://api.github.com/repos/discord/intl-messageformat/commits/04b9dd21b982c608883d7508503cee2632569178"
-      },
-      "protected": false
-    },
-    {
-      "name": "master",
-      "commit": {
-        "sha": "54254dff7d50ec068419eddf9041519858b8c089",
-        "url": "https://api.github.com/repos/discord/intl-messageformat/commits/54254dff7d50ec068419eddf9041519858b8c089"
-      },
-      "protected": false
-    },
-    {
-      "name": "v1.3",
-      "commit": {
-        "sha": "54254dff7d50ec068419eddf9041519858b8c089",
-        "url": "https://api.github.com/repos/discord/intl-messageformat/commits/54254dff7d50ec068419eddf9041519858b8c089"
-      },
-      "protected": false
-    },
-    {
-      "name": "v1.3.0-with-unknown-timezone-patch",
-      "commit": {
-        "sha": "10aacd311c38cf34c7f71cf912d24bdfdd4db07f",
-        "url": "https://api.github.com/repos/discord/intl-messageformat/commits/10aacd311c38cf34c7f71cf912d24bdfdd4db07f"
-      },
-      "protected": false
-    }
-  ],
+  "branches": [],
   "last5": {
     "commits": [
       {
