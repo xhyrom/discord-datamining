@@ -15911,7 +15911,8 @@ html.disable-forced-colors * {
     height: 32px;
     background: var(--bg-overlay-2, var(--background-secondary));
     -webkit-box-shadow: 0 1px 0 rgba(4, 4, 5, .2), 0 1.5px 0 rgba(6, 6, 7, .05), 0 2px 0 rgba(4, 4, 5, .05);
-    box-shadow: 0 1px 0 rgba(4, 4, 5, .2), 0 1.5px 0 rgba(6, 6, 7, .05), 0 2px 0 rgba(4, 4, 5, .05)
+    box-shadow: 0 1px 0 rgba(4, 4, 5, .2), 0 1.5px 0 rgba(6, 6, 7, .05), 0 2px 0 rgba(4, 4, 5, .05);
+    z-index: 3
 }
 
 .topicsPillPadForumPostActions-31TaC6 {
@@ -153592,4 +153593,4 @@ html .invoiceCancelRow-dVOR64 {
     flex-direction: column
 }
 
-/*# sourceMappingURL=40532.f4d584ac418fe8cd8919.css.map*/
+/*# sourceMappingURL=40532.906b20e3e408eb292a5b.css.map*/
