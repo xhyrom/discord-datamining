@@ -76102,7 +76102,7 @@ strong {
     -ms-flex-pack: center;
     justify-content: center;
     position: relative;
-    margin-top: -10px;
+    margin-top: -20px;
     padding: 2px;
     background-color: var(--background-tertiary);
     z-index: 1;
@@ -153441,4 +153441,4 @@ html .invoiceCancelRow-dVOR64 {
     flex-direction: column
 }
 
-/*# sourceMappingURL=40532.7f212f3cb8b2765bba02.css.map*/
+/*# sourceMappingURL=40532.3c67994fa33db411ecce.css.map*/
