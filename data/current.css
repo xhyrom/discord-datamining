@@ -16083,7 +16083,8 @@ html.disable-forced-colors * {
     flex-direction: column;
     border-bottom-right-radius: 8px;
     border-bottom-left-radius: 8px;
-    padding-top: 4px
+    padding-top: 4px;
+    padding-bottom: 4px
 }
 
 .topicsDotSpacer-2MpHp6,
@@ -153450,4 +153451,4 @@ html .invoiceCancelRow-dVOR64 {
     flex-direction: column
 }
 
-/*# sourceMappingURL=40532.0e5a6a0a77725813739b.css.map*/
+/*# sourceMappingURL=40532.7a8b35687207d4306283.css.map*/
