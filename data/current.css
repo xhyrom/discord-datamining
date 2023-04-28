@@ -148604,14 +148604,14 @@ html .invoiceCancelRow-3s2UuC {
     -webkit-box-direction: normal;
     -ms-flex-direction: column;
     flex-direction: column;
-    max-width: 279px
+    width: 279px
 }
 
 .content-2xd_Bl {
     -webkit-box-flex: 1;
     -ms-flex: 1;
     flex: 1;
-    margin-bottom: 16px
+    margin-bottom: 24px
 }
 
 .listingInfoRow-p2kKs_ {
@@ -148848,22 +148848,26 @@ html .invoiceCancelRow-3s2UuC {
     align-items: start;
     padding: 40px 124px 24px 40px;
     max-width: 508px;
-    max-height: 787px;
-    min-height: 700px;
     position: relative
 }
 
-.templatesContentContainer-2OhwBc {
+.templatesContainerBody-1xi_41 {
+    margin-bottom: 24px;
+    height: 640px;
+    -ms-flex-negative: 1;
+    flex-shrink: 1;
     -webkit-box-flex: 1;
-    -ms-flex: 1;
-    flex: 1;
+    -ms-flex-positive: 1;
+    flex-grow: 1
+}
+
+.templatesContentContainer-2OhwBc {
     -webkit-box-pack: center;
     -ms-flex-pack: center;
     justify-content: center;
     -ms-flex-item-align: stretch;
     align-self: stretch;
-    padding-top: 24px;
-    padding-bottom: 108px
+    padding-top: 24px
 }
 
 .modalBodyText-3AKtoe {
@@ -153437,4 +153441,4 @@ html .invoiceCancelRow-dVOR64 {
     flex-direction: column
 }
 
-/*# sourceMappingURL=40532.f05d838ef7b7322cc228.css.map*/
+/*# sourceMappingURL=40532.7f212f3cb8b2765bba02.css.map*/
