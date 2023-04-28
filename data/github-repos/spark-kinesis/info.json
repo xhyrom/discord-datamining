@@ -59,7 +59,278 @@
   },
   "branches": [],
   "last5": {
-    "commits": [],
+    "commits": [
+      {
+        "sha": "868638b1086edf3abc08ed46f7b53c210743d77f",
+        "node_id": "C_kwDOG6N3edoAKDg2ODYzOGIxMDg2ZWRmM2FiYzA4ZWQ0NmY3YjUzYzIxMDc0M2Q3N2Y",
+        "commit": {
+          "author": {
+            "name": "Sining (Stephen) Ma",
+            "email": "stephen.ma@discordapp.com",
+            "date": "2022-02-28T23:04:49Z"
+          },
+          "committer": {
+            "name": "Sining (Stephen) Ma",
+            "email": "stephen.ma@discordapp.com",
+            "date": "2022-02-28T23:04:49Z"
+          },
+          "message": "Set scala build version to 2.12.15",
+          "tree": {
+            "sha": "6fb0e9cfeb6e1549318713b85d020b9610e3c377",
+            "url": "https://api.github.com/repos/discord/spark-kinesis/git/trees/6fb0e9cfeb6e1549318713b85d020b9610e3c377"
+          },
+          "url": "https://api.github.com/repos/discord/spark-kinesis/git/commits/868638b1086edf3abc08ed46f7b53c210743d77f",
+          "comment_count": 0,
+          "verification": {
+            "verified": false,
+            "reason": "unsigned",
+            "signature": null,
+            "payload": null
+          }
+        },
+        "url": "https://api.github.com/repos/discord/spark-kinesis/commits/868638b1086edf3abc08ed46f7b53c210743d77f",
+        "author": {
+          "login": "siningma",
+          "id": 2812144,
+          "node_id": "MDQ6VXNlcjI4MTIxNDQ=",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/siningma",
+          "type": "User",
+          "site_admin": false
+        },
+        "committer": {
+          "login": "siningma",
+          "id": 2812144,
+          "node_id": "MDQ6VXNlcjI4MTIxNDQ=",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/siningma",
+          "type": "User",
+          "site_admin": false
+        },
+        "parents": [
+          {
+            "sha": "d7ba51cc670b0e323017694804fab5f9e528b4c9",
+            "url": "https://api.github.com/repos/discord/spark-kinesis/commits/d7ba51cc670b0e323017694804fab5f9e528b4c9"
+          }
+        ]
+      },
+      {
+        "sha": "d7ba51cc670b0e323017694804fab5f9e528b4c9",
+        "node_id": "MDY6Q29tbWl0NDYzNjk3Nzg1OmQ3YmE1MWNjNjcwYjBlMzIzMDE3Njk0ODA0ZmFiNWY5ZTUyOGI0Yzk=",
+        "commit": {
+          "author": {
+            "name": "Itamar Ravid",
+            "email": "iravid@iravid.com",
+            "date": "2020-08-11T09:44:18Z"
+          },
+          "committer": {
+            "name": "Itamar Ravid",
+            "email": "iravid@iravid.com",
+            "date": "2020-08-11T09:44:18Z"
+          },
+          "message": "Fix botched dependency coordinates",
+          "tree": {
+            "sha": "2b1ceb3a42c6e3279abea307e3ca9d734a3a6c00",
+            "url": "https://api.github.com/repos/discord/spark-kinesis/git/trees/2b1ceb3a42c6e3279abea307e3ca9d734a3a6c00"
+          },
+          "url": "https://api.github.com/repos/discord/spark-kinesis/git/commits/d7ba51cc670b0e323017694804fab5f9e528b4c9",
+          "comment_count": 0,
+          "verification": {
+            "verified": true,
+            "reason": "valid",
+            "signature": "-----BEGIN PGP SIGNATURE-----\n\niQIzBAABCgAdFiEEr4fwyqx+3wJ1ynfYp1OAE0Dmu/EFAl8yaHIACgkQp1OAE0Dm\nu/EdHg//bvJcV6YTDiHn7OY7NG6Ur7chA2/xjQKwmqK2BXgP4UxeR5Klt0PFn0ma\ni78RBtO63yJfqihbw1Q3o9tLgEoGc+tgLr3Ep0S1LZXKa5+s7nM4a3tkwtmiW6SY\nhZmXFRT9cI+D9o9LcrdVz6hIC0yOIjjZXhkuGRiBz1WyEEwrn2x7+ZnKZ5WXBpLP\nMbC0lo7y04zFyc6IkOr15/p5Zs/J/K61/WtPsP6NzoZa8E0dhkiLdW9/8FMdq6Nl\nFtQQoddpxBWQj/OVLiCLxKx8vlsMq2MPfjq4dOlQvaBBQOWs/dgU4rWLLWZHABG6\nTEvU5auIU3r535F3dIubo+FzrOkWYsFKCkJ8uV2EI1tHqNTt4T7feeYvLod8yEbV\nmiQGvQhJ7bYtQscsiUugMajOl/RHQKdy3lvfA4C7v1pjurNUEANSafudIvfvBMxB\n/KXsOUdrP9ntNdHEct4Apvyyp0Au24U59P0LAUVucE+SATNFeKpFulc7bdihTe/J\nJ09THEIahgiOk4gVl+K5jqlwsY2ZiybtVIbNLbrg3XBVXFKt3Deb5j0b12IdjZRS\naKcXaEfAvH+0g9fen+wiRu4Boc2t8VcMJGFRCJBStD3CdUqWCuDkjUlLM/8w+jjr\ney1/BHAhMHSGpsUIv5sYD87HVUo7FNVKFypWwpQvH+a1qicjfE0=\n=Wcpy\n-----END PGP SIGNATURE-----",
+            "payload": "tree 2b1ceb3a42c6e3279abea307e3ca9d734a3a6c00\nparent 46a57369e3ee3f49960cf4e07fdc4d2585e80e4b\nauthor Itamar Ravid <iravid@iravid.com> 1597139058 +0300\ncommitter Itamar Ravid <iravid@iravid.com> 1597139058 +0300\n\nFix botched dependency coordinates\n"
+          }
+        },
+        "url": "https://api.github.com/repos/discord/spark-kinesis/commits/d7ba51cc670b0e323017694804fab5f9e528b4c9",
+        "author": {
+          "login": "iravid",
+          "id": 283332,
+          "node_id": "MDQ6VXNlcjI4MzMzMg==",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/iravid",
+          "type": "User",
+          "site_admin": false
+        },
+        "committer": {
+          "login": "iravid",
+          "id": 283332,
+          "node_id": "MDQ6VXNlcjI4MzMzMg==",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/iravid",
+          "type": "User",
+          "site_admin": false
+        },
+        "parents": [
+          {
+            "sha": "46a57369e3ee3f49960cf4e07fdc4d2585e80e4b",
+            "url": "https://api.github.com/repos/discord/spark-kinesis/commits/46a57369e3ee3f49960cf4e07fdc4d2585e80e4b"
+          }
+        ]
+      },
+      {
+        "sha": "46a57369e3ee3f49960cf4e07fdc4d2585e80e4b",
+        "node_id": "MDY6Q29tbWl0NDYzNjk3Nzg1OjQ2YTU3MzY5ZTNlZTNmNDk5NjBjZjRlMDdmZGM0ZDI1ODVlODBlNGI=",
+        "commit": {
+          "author": {
+            "name": "Itamar Ravid",
+            "email": "iravid@iravid.com",
+            "date": "2020-08-11T08:55:13Z"
+          },
+          "committer": {
+            "name": "Itamar Ravid",
+            "email": "iravid@iravid.com",
+            "date": "2020-08-11T08:55:13Z"
+          },
+          "message": "Apply settings from the old Dynamo replication utility",
+          "tree": {
+            "sha": "cf6ec92026afb207ceebe3ba02d3cb8867107255",
+            "url": "https://api.github.com/repos/discord/spark-kinesis/git/trees/cf6ec92026afb207ceebe3ba02d3cb8867107255"
+          },
+          "url": "https://api.github.com/repos/discord/spark-kinesis/git/commits/46a57369e3ee3f49960cf4e07fdc4d2585e80e4b",
+          "comment_count": 0,
+          "verification": {
+            "verified": true,
+            "reason": "valid",
+            "signature": "-----BEGIN PGP SIGNATURE-----\n\niQIzBAABCgAdFiEEr4fwyqx+3wJ1ynfYp1OAE0Dmu/EFAl8yXP4ACgkQp1OAE0Dm\nu/FeuBAAjdE6qSfK2iZimV+SKmdDrnOmqOKs2AlEADXkg6ecHUm+k5Oy+4/uScX7\nZS4CSzQXoBRq2R0sdwvJlynbDSCgea9slKwEZakH8LXLQZpF3DAbU1i9f48dJ2uB\noYa3wQaIl1IXqv13zmr/0fXOeCVvcLyHBGCUi5Tn31qKmI8QD7Ad2wW1XRNM8ujB\n34+pxc3NBzDuVGWU9oJayOffH79A1qHtHPqCPdlpD9o+F0X4uWy6RTq3f7Kh5F9r\npWsWmLJG1y/GGB799c4m522fssHmsVSxE9t0o0zyBA6unCDirmzChB+tBTcmL6d/\n05Vt3yCovGj7aAqP5xgMQMH+jsyENlz2gCbnrC2cV9FXsQ008mhckmvpINbiCEnq\nEoELAx+bFoR93/VSs8YhKYXmff5aYEtoD6Abd6fr2JwnL9QF48x1/n3lRSIqblW/\nfDvbUygupsJxAA7Wp0xT7IW0raBazS6EuvjPBhPEbW5Vxy+WiMYXaErl9qII59Oy\nJvcRQe+DH68ywvlU1VIuaukrnutK/H7G42hGJi/oYA0gqewHvzRADlfgKUxdSdIb\nLWPIyuaR24DHUVUQDJyr3wAQnj+i5TV25OKhtrBhCaC6rBzoPkHuPArSyx7fgSl+\nUsmXWwPNYVBOqBPFfpbxH5OYcLZPWJcjY44OqCrAk+f7fYg/GFw=\n=1811\n-----END PGP SIGNATURE-----",
+            "payload": "tree cf6ec92026afb207ceebe3ba02d3cb8867107255\nparent 7bb57294f24f6f7851702b3839927aa72a4476a5\nauthor Itamar Ravid <iravid@iravid.com> 1597136113 +0300\ncommitter Itamar Ravid <iravid@iravid.com> 1597136113 +0300\n\nApply settings from the old Dynamo replication utility\n"
+          }
+        },
+        "url": "https://api.github.com/repos/discord/spark-kinesis/commits/46a57369e3ee3f49960cf4e07fdc4d2585e80e4b",
+        "author": {
+          "login": "iravid",
+          "id": 283332,
+          "node_id": "MDQ6VXNlcjI4MzMzMg==",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/iravid",
+          "type": "User",
+          "site_admin": false
+        },
+        "committer": {
+          "login": "iravid",
+          "id": 283332,
+          "node_id": "MDQ6VXNlcjI4MzMzMg==",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/iravid",
+          "type": "User",
+          "site_admin": false
+        },
+        "parents": [
+          {
+            "sha": "7bb57294f24f6f7851702b3839927aa72a4476a5",
+            "url": "https://api.github.com/repos/discord/spark-kinesis/commits/7bb57294f24f6f7851702b3839927aa72a4476a5"
+          }
+        ]
+      },
+      {
+        "sha": "7bb57294f24f6f7851702b3839927aa72a4476a5",
+        "node_id": "MDY6Q29tbWl0NDYzNjk3Nzg1OjdiYjU3Mjk0ZjI0ZjZmNzg1MTcwMmIzODM5OTI3YWE3MmE0NDc2YTU=",
+        "commit": {
+          "author": {
+            "name": "Itamar Ravid",
+            "email": "iravid@iravid.com",
+            "date": "2020-08-07T20:33:49Z"
+          },
+          "committer": {
+            "name": "Itamar Ravid",
+            "email": "iravid@iravid.com",
+            "date": "2020-08-07T20:33:49Z"
+          },
+          "message": "Fix initialization of Dynamo Streams adapter",
+          "tree": {
+            "sha": "c9cd326b010d48b6018a40cc296b9841a925826f",
+            "url": "https://api.github.com/repos/discord/spark-kinesis/git/trees/c9cd326b010d48b6018a40cc296b9841a925826f"
+          },
+          "url": "https://api.github.com/repos/discord/spark-kinesis/git/commits/7bb57294f24f6f7851702b3839927aa72a4476a5",
+          "comment_count": 0,
+          "verification": {
+            "verified": true,
+            "reason": "valid",
+            "signature": "-----BEGIN PGP SIGNATURE-----\n\niQIzBAABCgAdFiEEJIQcp996OpN+Ek5GqpcuB/YYW1EFAl8turUACgkQqpcuB/YY\nW1GPxxAAmubR52XCppamRSliHGIp8R0B9rKxXhP1iVFkSHqQrGYuct278CHcFcbY\nHxigr3CEDwiUZYYB4UB03MZL8ELpgcdXyebyM90ZKjooNdax6ic7E4C7eyPS5eKC\nrgPYyIl7RROodMEvF5CqqvvBxVrZE9h6FPVVKR3PVgzw9R1mau2Ynji6Eec2qvym\nA1c4a15nQPFIg/Sq7NbCRcDDtTa+MaUNZ3+dXOGRNf4Tv1it0g4d/n1OUMtxFuOm\nkmYxm2oDDXS6YsJ2LPieNKGz0eUn4Ktl/kvelS6YAq22wxAbCERVrWooqzK7NRKS\nRuUscLtpNLaiyztjR1BQave+Vj5kGQ3Xtk0lGb+7DVlC0LkyBl42GDjo8BUJnCpn\nwQMJTZOekHyrvwKbw0JX/az79R2LfR/hXsCl7wa7E4Ickor1mHVZfZviYDR071l0\nRcUfnXCRRdT4A3ecWis9h/zr949dgLjMbS7tUJ4j8OFiN0nDhBhfZM+Hyujjet1X\nxY3VjsXnRy1cafF/oyjjk+wuKywcMZ5tHLEaufb/GA5FPy3SrYubVopZYBQw0G08\n2ahkT4fuOX4XJ4aSgwiSPFAd3sEnBk3GdBatC/VecVvTCd1yHedyPoWPCBVQwGXp\n+zOpMsog+DbOcRibb7c8Iuibh6DeYGCL281Djf1RKGzSG25NTyc=\n=peVM\n-----END PGP SIGNATURE-----",
+            "payload": "tree c9cd326b010d48b6018a40cc296b9841a925826f\nparent 18f72a4982a7468505ce624abcce3eb042c2d2e0\nauthor Itamar Ravid <iravid@iravid.com> 1596832429 +0300\ncommitter Itamar Ravid <iravid@iravid.com> 1596832429 +0300\n\nFix initialization of Dynamo Streams adapter\n"
+          }
+        },
+        "url": "https://api.github.com/repos/discord/spark-kinesis/commits/7bb57294f24f6f7851702b3839927aa72a4476a5",
+        "author": {
+          "login": "iravid",
+          "id": 283332,
+          "node_id": "MDQ6VXNlcjI4MzMzMg==",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/iravid",
+          "type": "User",
+          "site_admin": false
+        },
+        "committer": {
+          "login": "iravid",
+          "id": 283332,
+          "node_id": "MDQ6VXNlcjI4MzMzMg==",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/iravid",
+          "type": "User",
+          "site_admin": false
+        },
+        "parents": [
+          {
+            "sha": "18f72a4982a7468505ce624abcce3eb042c2d2e0",
+            "url": "https://api.github.com/repos/discord/spark-kinesis/commits/18f72a4982a7468505ce624abcce3eb042c2d2e0"
+          }
+        ]
+      },
+      {
+        "sha": "18f72a4982a7468505ce624abcce3eb042c2d2e0",
+        "node_id": "MDY6Q29tbWl0NDYzNjk3Nzg1OjE4ZjcyYTQ5ODJhNzQ2ODUwNWNlNjI0YWJjY2UzZWIwNDJjMmQyZTA=",
+        "commit": {
+          "author": {
+            "name": "Itamar Ravid",
+            "email": "iravid@iravid.com",
+            "date": "2020-08-07T20:33:37Z"
+          },
+          "committer": {
+            "name": "Itamar Ravid",
+            "email": "iravid@iravid.com",
+            "date": "2020-08-07T20:33:37Z"
+          },
+          "message": "Make dependencies provided",
+          "tree": {
+            "sha": "9b6adb146fad3dcdd7e77aef5a6eac70275fd382",
+            "url": "https://api.github.com/repos/discord/spark-kinesis/git/trees/9b6adb146fad3dcdd7e77aef5a6eac70275fd382"
+          },
+          "url": "https://api.github.com/repos/discord/spark-kinesis/git/commits/18f72a4982a7468505ce624abcce3eb042c2d2e0",
+          "comment_count": 0,
+          "verification": {
+            "verified": true,
+            "reason": "valid",
+            "signature": "-----BEGIN PGP SIGNATURE-----\n\niQIzBAABCgAdFiEEJIQcp996OpN+Ek5GqpcuB/YYW1EFAl8tuqUACgkQqpcuB/YY\nW1FSJRAApiZ6vzckEf4p9p7WJENVhXE49CEOJddMHsqjVmUHplwBmWG+zVrKTA8k\nMeGzUZSg9s2r5LZGAsFSRCVQgNjgvWyY7kLUVmPCI4M5dqnSuT59gQHB4wZe2WDZ\nBgzxJQf3yZFIa6pRoNc/5HdINzjbzJvJZpccTpb0chq/aRT7Fm2b64aUQxBWgRYT\n7MIUOBuIHYZUCjVzO8K/1gfwh+62RWvelpSkloC2v6IViEDJWESNHl9dGhOYx41T\nnDfts8nw7mZAWJ8dX80K/J0aRV1ZJvQrjxo49k6SyLLX/ZMuXgr0QV309R9BvAyj\nfv8HLMgm9lVo0RC6vnRjhx9bGjwdRFBjsErku+RnM8TEDlvvK4nW8Fi4qRrlg5RC\nnDR7cE6yK/QcvHbvdnvt/mSRxj6+6W+RCwT6tD6QMO2uHUV/BFyqvLKkIZId1aLk\nxS4QZlCPGschOHeRiQ1YcQUarNUGfXSiYQOl5x+REGvFfYf2O7tBKF9I2meAKRia\ngI97RbzSw84oJ7fp+dt4LRY3t+A/4MtaiMVHii7hKzkfMBR/MQh+zFH1hlRc6RcS\nf6lrL3mHAalNwRcKE/aTmUG42r8vSCwo3ISBYTdvq5IJvNPaS8b0Z0A8TUpTcm38\nozyQp2dLYmbCQkILFOYWT2WpaLJBJWTlZBulFYLHZ/R8MLIBywY=\n=uAHn\n-----END PGP SIGNATURE-----",
+            "payload": "tree 9b6adb146fad3dcdd7e77aef5a6eac70275fd382\nparent 43bd612e958511c9acef9b440f0431b923808ca2\nauthor Itamar Ravid <iravid@iravid.com> 1596832417 +0300\ncommitter Itamar Ravid <iravid@iravid.com> 1596832417 +0300\n\nMake dependencies provided\n"
+          }
+        },
+        "url": "https://api.github.com/repos/discord/spark-kinesis/commits/18f72a4982a7468505ce624abcce3eb042c2d2e0",
+        "author": {
+          "login": "iravid",
+          "id": 283332,
+          "node_id": "MDQ6VXNlcjI4MzMzMg==",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/iravid",
+          "type": "User",
+          "site_admin": false
+        },
+        "committer": {
+          "login": "iravid",
+          "id": 283332,
+          "node_id": "MDQ6VXNlcjI4MzMzMg==",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/iravid",
+          "type": "User",
+          "site_admin": false
+        },
+        "parents": [
+          {
+            "sha": "43bd612e958511c9acef9b440f0431b923808ca2",
+            "url": "https://api.github.com/repos/discord/spark-kinesis/commits/43bd612e958511c9acef9b440f0431b923808ca2"
+          }
+        ]
+      }
+    ],
     "releases": [],
     "issues": [],
     "pullRequests": []

@@ -57,7 +57,88 @@
     "triage": false,
     "pull": false
   },
-  "branches": [],
+  "branches": [
+    {
+      "name": "2.4",
+      "commit": {
+        "sha": "bd4b3e6ee514da4496c1ddf39c4e0a151836d776",
+        "url": "https://api.github.com/repos/discord/redis-py/commits/bd4b3e6ee514da4496c1ddf39c4e0a151836d776"
+      },
+      "protected": false
+    },
+    {
+      "name": "bugfix/blocking-connection-pool",
+      "commit": {
+        "sha": "bef423f7d5f2077d218be2eca66b52b67c985ea1",
+        "url": "https://api.github.com/repos/discord/redis-py/commits/bef423f7d5f2077d218be2eca66b52b67c985ea1"
+      },
+      "protected": false
+    },
+    {
+      "name": "bugfix/only-enter-on-successful-acquire",
+      "commit": {
+        "sha": "76ce3f3fefb387c1ade56238abf6cac5c15877c0",
+        "url": "https://api.github.com/repos/discord/redis-py/commits/76ce3f3fefb387c1ade56238abf6cac5c15877c0"
+      },
+      "protected": false
+    },
+    {
+      "name": "logging",
+      "commit": {
+        "sha": "b25b205f8e4ac612613be9f4a3d97f9353fd242d",
+        "url": "https://api.github.com/repos/discord/redis-py/commits/b25b205f8e4ac612613be9f4a3d97f9353fd242d"
+      },
+      "protected": false
+    },
+    {
+      "name": "master",
+      "commit": {
+        "sha": "4baedf5fef9ad8de4d32035e472b27b91d0913e3",
+        "url": "https://api.github.com/repos/discord/redis-py/commits/4baedf5fef9ad8de4d32035e472b27b91d0913e3"
+      },
+      "protected": false
+    },
+    {
+      "name": "mp/lock-acquire-update",
+      "commit": {
+        "sha": "df3d0e73484fe08557d3cb8613a56e67b73ce503",
+        "url": "https://api.github.com/repos/discord/redis-py/commits/df3d0e73484fe08557d3cb8613a56e67b73ce503"
+      },
+      "protected": false
+    },
+    {
+      "name": "pubsub",
+      "commit": {
+        "sha": "30a5af9e96d913e348acec591f78bd41ef5a9574",
+        "url": "https://api.github.com/repos/discord/redis-py/commits/30a5af9e96d913e348acec591f78bd41ef5a9574"
+      },
+      "protected": false
+    },
+    {
+      "name": "pytest",
+      "commit": {
+        "sha": "fb61631253644a8b3394748bb9f4ade9cbdbf08e",
+        "url": "https://api.github.com/repos/discord/redis-py/commits/fb61631253644a8b3394748bb9f4ade9cbdbf08e"
+      },
+      "protected": false
+    },
+    {
+      "name": "python3ify",
+      "commit": {
+        "sha": "4f557bf6e164eeff521807c2046b7305a586cf53",
+        "url": "https://api.github.com/repos/discord/redis-py/commits/4f557bf6e164eeff521807c2046b7305a586cf53"
+      },
+      "protected": false
+    },
+    {
+      "name": "watch",
+      "commit": {
+        "sha": "5c68cabecba2a2c2c02a7689def0f5cb9a11e6af",
+        "url": "https://api.github.com/repos/discord/redis-py/commits/5c68cabecba2a2c2c02a7689def0f5cb9a11e6af"
+      },
+      "protected": false
+    }
+  ],
   "last5": {
     "commits": [
       {
@@ -340,7 +421,248 @@
       }
     ],
     "releases": [],
-    "issues": [],
+    "issues": [
+      {
+        "url": "https://api.github.com/repos/discord/redis-py/issues/6",
+        "id": 1505482284,
+        "node_id": "PR_kwDOBOTLYc5F6iYV",
+        "number": 6,
+        "title": "Achieve parity in do_acquire with upstream redis-py repo",
+        "user": {
+          "login": "mwpark2014-d",
+          "id": 105746684,
+          "node_id": "U_kgDOBk2Q_A",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/mwpark2014-d",
+          "type": "User",
+          "site_admin": false
+        },
+        "labels": [],
+        "state": "open",
+        "locked": false,
+        "assignee": null,
+        "assignees": [],
+        "milestone": null,
+        "comments": 0,
+        "created_at": "2022-12-20T23:55:28Z",
+        "updated_at": "2022-12-22T18:36:37Z",
+        "closed_at": null,
+        "author_association": "COLLABORATOR",
+        "active_lock_reason": null,
+        "draft": false,
+        "pull_request": {
+          "url": "https://api.github.com/repos/discord/redis-py/pulls/6",
+          "merged_at": null
+        },
+        "body": "Achieve parity with the current version of redis-py, which fixes a possible bug that results in locks being acquired without expirations being set\r\nDiscovered through the investigation of https://app.asana.com/0/1202371958531131/1203556149319920/f\r\nRelevant: (https://github.com/redis/redis-py/issues/554)\r\n\r\nRisk: Breaks Redis servers with version < 2.6.12\r\n\r\nCode change itself seems relatively low risk, but I'm not sure about how to best test the changes thoroughly before merging\r\n\r\nMight be unnecessary if @jdunck plans to do work on catching our redis-py fork up to the upstream repo",
+        "reactions": {
+          "url": "https://api.github.com/repos/discord/redis-py/issues/6/reactions",
+          "total_count": 0,
+          "+1": 0,
+          "-1": 0,
+          "laugh": 0,
+          "hooray": 0,
+          "confused": 0,
+          "heart": 0,
+          "rocket": 0,
+          "eyes": 0
+        },
+        "performed_via_github_app": null,
+        "state_reason": null
+      },
+      {
+        "url": "https://api.github.com/repos/discord/redis-py/issues/5",
+        "id": 967964592,
+        "node_id": "MDExOlB1bGxSZXF1ZXN0NzEwMTEwMDYx",
+        "number": 5,
+        "title": "Upgrade Redis-py to 2.10.6",
+        "user": {
+          "login": "willhug",
+          "id": 613317,
+          "node_id": "MDQ6VXNlcjYxMzMxNw==",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/willhug",
+          "type": "User",
+          "site_admin": false
+        },
+        "labels": [],
+        "state": "closed",
+        "locked": false,
+        "assignee": null,
+        "assignees": [],
+        "milestone": null,
+        "comments": 1,
+        "created_at": "2021-08-12T03:46:09Z",
+        "updated_at": "2021-08-13T01:42:57Z",
+        "closed_at": "2021-08-13T01:42:46Z",
+        "author_association": "NONE",
+        "active_lock_reason": null,
+        "draft": false,
+        "pull_request": {
+          "url": "https://api.github.com/repos/discord/redis-py/pulls/5",
+          "merged_at": "2021-08-13T01:42:46Z"
+        },
+        "body": "Summary: Pulls the code up to 2.10.6 from `andymccurdy/redis-py`.  I also included one commit to pin pytest to <4.0.0 (otherwise my tests would fail with fixture errors, there was a backwards incompatible change in 4.0.0).",
+        "reactions": {
+          "url": "https://api.github.com/repos/discord/redis-py/issues/5/reactions",
+          "total_count": 0,
+          "+1": 0,
+          "-1": 0,
+          "laugh": 0,
+          "hooray": 0,
+          "confused": 0,
+          "heart": 0,
+          "rocket": 0,
+          "eyes": 0
+        },
+        "performed_via_github_app": null,
+        "state_reason": null
+      },
+      {
+        "url": "https://api.github.com/repos/discord/redis-py/issues/4",
+        "id": 956844774,
+        "node_id": "MDExOlB1bGxSZXF1ZXN0NzAwMzc4NTQw",
+        "number": 4,
+        "title": "Fetch upstream",
+        "user": {
+          "login": "willroberts",
+          "id": 2236656,
+          "node_id": "MDQ6VXNlcjIyMzY2NTY=",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/willroberts",
+          "type": "User",
+          "site_admin": false
+        },
+        "labels": [],
+        "state": "closed",
+        "locked": false,
+        "assignee": null,
+        "assignees": [],
+        "milestone": null,
+        "comments": 0,
+        "created_at": "2021-07-30T15:22:44Z",
+        "updated_at": "2021-07-30T17:18:59Z",
+        "closed_at": "2021-07-30T17:18:59Z",
+        "author_association": "NONE",
+        "active_lock_reason": null,
+        "draft": false,
+        "pull_request": {
+          "url": "https://api.github.com/repos/discord/redis-py/pulls/4",
+          "merged_at": null
+        },
+        "body": "",
+        "reactions": {
+          "url": "https://api.github.com/repos/discord/redis-py/issues/4/reactions",
+          "total_count": 0,
+          "+1": 0,
+          "-1": 0,
+          "laugh": 0,
+          "hooray": 0,
+          "confused": 0,
+          "heart": 0,
+          "rocket": 0,
+          "eyes": 0
+        },
+        "performed_via_github_app": null,
+        "state_reason": null
+      },
+      {
+        "url": "https://api.github.com/repos/discord/redis-py/issues/3",
+        "id": 781591557,
+        "node_id": "MDExOlB1bGxSZXF1ZXN0NTUxMjg3ODI3",
+        "number": 3,
+        "title": "Locks should only enter if acquired",
+        "user": {
+          "login": "ihumanable",
+          "id": 122636,
+          "node_id": "MDQ6VXNlcjEyMjYzNg==",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/ihumanable",
+          "type": "User",
+          "site_admin": false
+        },
+        "labels": [],
+        "state": "closed",
+        "locked": false,
+        "assignee": null,
+        "assignees": [],
+        "milestone": null,
+        "comments": 0,
+        "created_at": "2021-01-07T20:33:45Z",
+        "updated_at": "2021-01-08T17:52:10Z",
+        "closed_at": "2021-01-08T17:52:10Z",
+        "author_association": "NONE",
+        "active_lock_reason": null,
+        "draft": false,
+        "pull_request": {
+          "url": "https://api.github.com/repos/discord/redis-py/pulls/3",
+          "merged_at": "2021-01-08T17:52:10Z"
+        },
+        "body": "Backports a fix from upstream\r\n\r\nhttps://github.com/andymccurdy/redis-py/commit/c99d2b98ff928a0709ee0453b60002e3e1254674",
+        "reactions": {
+          "url": "https://api.github.com/repos/discord/redis-py/issues/3/reactions",
+          "total_count": 0,
+          "+1": 0,
+          "-1": 0,
+          "laugh": 0,
+          "hooray": 0,
+          "confused": 0,
+          "heart": 0,
+          "rocket": 0,
+          "eyes": 0
+        },
+        "performed_via_github_app": null,
+        "state_reason": null
+      },
+      {
+        "url": "https://api.github.com/repos/discord/redis-py/issues/2",
+        "id": 461201773,
+        "node_id": "MDExOlB1bGxSZXF1ZXN0MjkyMTc2MzY0",
+        "number": 2,
+        "title": "Rebase onto upstream and Python3ify",
+        "user": {
+          "login": "mfield",
+          "id": 229650,
+          "node_id": "MDQ6VXNlcjIyOTY1MA==",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/mfield",
+          "type": "User",
+          "site_admin": false
+        },
+        "labels": [],
+        "state": "closed",
+        "locked": false,
+        "assignee": null,
+        "assignees": [],
+        "milestone": null,
+        "comments": 0,
+        "created_at": "2019-06-26T22:02:46Z",
+        "updated_at": "2019-07-03T21:12:55Z",
+        "closed_at": "2019-06-27T02:28:50Z",
+        "author_association": "NONE",
+        "active_lock_reason": null,
+        "draft": false,
+        "pull_request": {
+          "url": "https://api.github.com/repos/discord/redis-py/pulls/2",
+          "merged_at": null
+        },
+        "body": "",
+        "reactions": {
+          "url": "https://api.github.com/repos/discord/redis-py/issues/2/reactions",
+          "total_count": 0,
+          "+1": 0,
+          "-1": 0,
+          "laugh": 0,
+          "hooray": 0,
+          "confused": 0,
+          "heart": 0,
+          "rocket": 0,
+          "eyes": 0
+        },
+        "performed_via_github_app": null,
+        "state_reason": null
+      }
+    ],
     "pullRequests": []
   }
 }
