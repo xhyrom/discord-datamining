@@ -91542,18 +91542,18 @@ strong {
 }
 
 .modalHeader-1V_jCD {
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
     padding-bottom: 8px
 }
 
-.modalContent-1ZUD1n,
-.modalHeader-1V_jCD {
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center
+.headingContainer--XdXtV {
+    padding-top: 8px;
+    padding-bottom: 16px
 }
 
 .modalContent-1ZUD1n {
-    margin: 24px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -91561,7 +91561,11 @@ strong {
     -webkit-box-direction: normal;
     -ms-flex-direction: column;
     flex-direction: column;
-    text-align: center
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    text-align: center;
+    padding: 16px
 }
 
 .modalError-3fbeTx {
@@ -91571,7 +91575,8 @@ strong {
 .modalFooter-ZEdrhz {
     -webkit-box-pack: justify;
     -ms-flex-pack: justify;
-    justify-content: space-between
+    justify-content: space-between;
+    padding-left: 0
 }
 
 .divider-3wTkAL {
@@ -91587,24 +91592,27 @@ strong {
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
-    margin: 8px;
+    margin-top: 8px;
+    margin-bottom: 8px;
+    margin-left: 16px;
     -webkit-box-pack: left;
     -ms-flex-pack: left;
     justify-content: left
 }
 
 .detailsContainer-XGhH8q {
-    margin-top: 20px;
+    margin-top: 24px;
     border-radius: 8px;
     background-color: var(--background-secondary);
-    padding: 16px;
-    width: 100%
+    width: 100%;
+    padding-top: 8px;
+    padding-bottom: 8px
 }
 
 .animation-2OIbqh {
-    height: 200px;
-    margin-top: 24px;
-    margin-bottom: 24px
+    height: 160px;
+    margin-top: 16px;
+    margin-bottom: 16px
 }
 
 .icon-_zlJeq {
@@ -91623,7 +91631,10 @@ strong {
     -webkit-box-pack: center;
     -ms-flex-pack: center;
     justify-content: center;
-    margin-right: 20px
+    margin-right: 20px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex
 }
 
 .separator-NoZXD0 {
@@ -91636,6 +91647,15 @@ strong {
     -ms-flex-item-align: center;
     align-self: center;
     margin-top: 64px
+}
+
+.learnMore-3QIOHy {
+    text-align: center;
+    margin-top: 16px
+}
+
+.modal-1oA8C9 {
+    max-height: 508px
 }
 
 .appText-EOcyAZ {
@@ -92117,6 +92137,22 @@ strong {
 
 .fullWidth-2KuAiS {
     width: 100vw
+}
+
+.appIconWrapper-1jWBMP {
+    width: 32px;
+    height: 32px;
+    border-radius: 16px;
+    background-color: var(--background-secondary-alt);
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex
 }
 
 .enable-forced-colors .container-2o3qEW,
@@ -98232,33 +98268,6 @@ html .tabBadge-h4HGed {
 
 .premiumTier0Badge-1-GBZW {
     margin-right: 12px
-}
-
-.attachButtonIcon-2unxpH {
-    fill: var(--background-primary)
-}
-
-.attachButtonInner-2p1slq {
-    color: var(--white-500)
-}
-
-.attachButtonPlus-1r3hPD {
-    -webkit-transform-origin: 50% 50%;
-    transform-origin: 50% 50%;
-    width: 24px;
-    height: 24px;
-    fill: var(--interactive-normal)
-}
-
-.attachButton-1bbKvV:hover .attachButtonPlus-1r3hPD {
-    fill: var(--interactive-hover)
-}
-
-.activitiesBirthdayIcon-1Ou-De {
-    color: var(--discord-8th-bday-yellow);
-    background-color: var(--discord-8th-bday-pink);
-    border-radius: 8px;
-    padding: 2px
 }
 
 .enable-forced-colors .searchBar-3TnChZ {
@@ -153441,4 +153450,4 @@ html .invoiceCancelRow-dVOR64 {
     flex-direction: column
 }
 
-/*# sourceMappingURL=40532.3c67994fa33db411ecce.css.map*/
+/*# sourceMappingURL=40532.0e5a6a0a77725813739b.css.map*/
