@@ -61,16 +61,7 @@
     "triage": false,
     "pull": false
   },
-  "branches": [
-    {
-      "name": "master",
-      "commit": {
-        "sha": "275569454462312fc3f5214275fe7e739b5b2d25",
-        "url": "https://api.github.com/repos/discord/fastglobal/commits/275569454462312fc3f5214275fe7e739b5b2d25"
-      },
-      "protected": false
-    }
-  ],
+  "branches": [],
   "last5": {
     "commits": [
       {
