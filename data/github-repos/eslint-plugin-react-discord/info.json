@@ -57,7 +57,16 @@
     "triage": false,
     "pull": false
   },
-  "branches": [],
+  "branches": [
+    {
+      "name": "master",
+      "commit": {
+        "sha": "cff320e9e790d97092ac6b7e98f401dc5b31de26",
+        "url": "https://api.github.com/repos/discord/eslint-plugin-react-discord/commits/cff320e9e790d97092ac6b7e98f401dc5b31de26"
+      },
+      "protected": false
+    }
+  ],
   "last5": {
     "commits": [
       {
