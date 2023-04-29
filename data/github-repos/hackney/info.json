@@ -57,7 +57,144 @@
     "triage": false,
     "pull": false
   },
-  "branches": [],
+  "branches": [
+    {
+      "name": "1.0.x",
+      "commit": {
+        "sha": "2a788a056006fca6483165274ddc75e6440a2598",
+        "url": "https://api.github.com/repos/discord/hackney/commits/2a788a056006fca6483165274ddc75e6440a2598"
+      },
+      "protected": false
+    },
+    {
+      "name": "1.1.x",
+      "commit": {
+        "sha": "40214befcd05263824c339059bb3cb0414c152e0",
+        "url": "https://api.github.com/repos/discord/hackney/commits/40214befcd05263824c339059bb3cb0414c152e0"
+      },
+      "protected": false
+    },
+    {
+      "name": "1.2.x",
+      "commit": {
+        "sha": "e8d3b09ac5e74c414b696639d8b966f621a89855",
+        "url": "https://api.github.com/repos/discord/hackney/commits/e8d3b09ac5e74c414b696639d8b966f621a89855"
+      },
+      "protected": false
+    },
+    {
+      "name": "1.3.x",
+      "commit": {
+        "sha": "c2f2b8115d380e63c7177c026009ca05fc5bc7dd",
+        "url": "https://api.github.com/repos/discord/hackney/commits/c2f2b8115d380e63c7177c026009ca05fc5bc7dd"
+      },
+      "protected": false
+    },
+    {
+      "name": "1.4.x",
+      "commit": {
+        "sha": "631be9bc9315ef8dcc9967609b00b802e02b06b3",
+        "url": "https://api.github.com/repos/discord/hackney/commits/631be9bc9315ef8dcc9967609b00b802e02b06b3"
+      },
+      "protected": false
+    },
+    {
+      "name": "1.5.x",
+      "commit": {
+        "sha": "156aa00e17d1ed48b31693f2845aa9139c54ef52",
+        "url": "https://api.github.com/repos/discord/hackney/commits/156aa00e17d1ed48b31693f2845aa9139c54ef52"
+      },
+      "protected": false
+    },
+    {
+      "name": "1.6.X",
+      "commit": {
+        "sha": "a5fda93480d3a18d42e84956e3f39238cc12cf2a",
+        "url": "https://api.github.com/repos/discord/hackney/commits/a5fda93480d3a18d42e84956e3f39238cc12cf2a"
+      },
+      "protected": false
+    },
+    {
+      "name": "1.6.x",
+      "commit": {
+        "sha": "d80d4d919acadbddea171fab31e040773c99ad49",
+        "url": "https://api.github.com/repos/discord/hackney/commits/d80d4d919acadbddea171fab31e040773c99ad49"
+      },
+      "protected": false
+    },
+    {
+      "name": "fix/maybe-reorder",
+      "commit": {
+        "sha": "736d8d93c6402a941e284873308281781636b5ea",
+        "url": "https://api.github.com/repos/discord/hackney/commits/736d8d93c6402a941e284873308281781636b5ea"
+      },
+      "protected": false
+    },
+    {
+      "name": "hackney-2.0",
+      "commit": {
+        "sha": "8b91175daf2c56f708131044f2fc23ad6667bf91",
+        "url": "https://api.github.com/repos/discord/hackney/commits/8b91175daf2c56f708131044f2fc23ad6667bf91"
+      },
+      "protected": false
+    },
+    {
+      "name": "hackney-v2",
+      "commit": {
+        "sha": "197f2853456f266531b355f455bf60f5274e44c0",
+        "url": "https://api.github.com/repos/discord/hackney/commits/197f2853456f266531b355f455bf60f5274e44c0"
+      },
+      "protected": false
+    },
+    {
+      "name": "issue-388",
+      "commit": {
+        "sha": "f35f98293e44f3af6248b72345b0994c19b78e7d",
+        "url": "https://api.github.com/repos/discord/hackney/commits/f35f98293e44f3af6248b72345b0994c19b78e7d"
+      },
+      "protected": false
+    },
+    {
+      "name": "master",
+      "commit": {
+        "sha": "98f5ac60b1e67a5fbbb3fa9b002ff699ca429c97",
+        "url": "https://api.github.com/repos/discord/hackney/commits/98f5ac60b1e67a5fbbb3fa9b002ff699ca429c97"
+      },
+      "protected": false
+    },
+    {
+      "name": "new_pool",
+      "commit": {
+        "sha": "3ae43e869e518f856e75dcec8b63005d38fe6dd7",
+        "url": "https://api.github.com/repos/discord/hackney/commits/3ae43e869e518f856e75dcec8b63005d38fe6dd7"
+      },
+      "protected": false
+    },
+    {
+      "name": "refactor",
+      "commit": {
+        "sha": "28ef563f2d1ac8b27b218f5577ca4d3cc92a0955",
+        "url": "https://api.github.com/repos/discord/hackney/commits/28ef563f2d1ac8b27b218f5577ca4d3cc92a0955"
+      },
+      "protected": false
+    },
+    {
+      "name": "test-proxy-redirects",
+      "commit": {
+        "sha": "745d276abb4ad4f7fc2834c7c239c7475d1839d8",
+        "url": "https://api.github.com/repos/discord/hackney/commits/745d276abb4ad4f7fc2834c7c239c7475d1839d8"
+      },
+      "protected": false
+    },
+    {
+      "name": "v2",
+      "commit": {
+        "sha": "6be39b1b4216a868566991225e61a285917ec584",
+        "url": "https://api.github.com/repos/discord/hackney/commits/6be39b1b4216a868566991225e61a285917ec584"
+      },
+      "protected": false
+    }
+  ],
   "last5": {
     "commits": [
       {
@@ -414,6 +551,395 @@
         "state_reason": null
       }
     ],
-    "pullRequests": []
+    "pullRequests": [
+      {
+        "url": "https://api.github.com/repos/discord/hackney/pulls/2",
+        "id": 153427880,
+        "node_id": "MDExOlB1bGxSZXF1ZXN0MTUzNDI3ODgw",
+        "number": 2,
+        "state": "closed",
+        "locked": false,
+        "title": "Changed where hackney compiles its metrics module",
+        "user": {
+          "login": "scohen",
+          "id": 55809,
+          "node_id": "MDQ6VXNlcjU1ODA5",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/scohen",
+          "type": "User",
+          "site_admin": false
+        },
+        "body": "Under erlang 20, compilation is slower, and compiling the metrics\r\nmodule when a connection is created doesn't make sense, as this can\r\ncause the whole code server to become buried under recompilation\r\nrequests. This moves compilation to the application's start.",
+        "created_at": "2017-11-18T01:37:27Z",
+        "updated_at": "2017-11-18T20:23:44Z",
+        "closed_at": "2017-11-18T20:23:41Z",
+        "merged_at": "2017-11-18T20:23:41Z",
+        "merge_commit_sha": "98f5ac60b1e67a5fbbb3fa9b002ff699ca429c97",
+        "assignee": null,
+        "assignees": [],
+        "requested_reviewers": [],
+        "requested_teams": [],
+        "labels": [],
+        "milestone": null,
+        "draft": false,
+        "head": {
+          "label": "discord:move_metrics_recompile",
+          "ref": "move_metrics_recompile",
+          "sha": "632fb71b606e78d37e83ff38733429dcb9525e38",
+          "user": {
+            "login": "discord",
+            "id": 1965106,
+            "node_id": "MDEyOk9yZ2FuaXphdGlvbjE5NjUxMDY=",
+            "gravatar_id": "",
+            "url": "https://api.github.com/users/discord",
+            "type": "Organization",
+            "site_admin": false
+          },
+          "repo": {
+            "id": 107165531,
+            "node_id": "MDEwOlJlcG9zaXRvcnkxMDcxNjU1MzE=",
+            "name": "hackney",
+            "full_name": "discord/hackney",
+            "private": false,
+            "owner": {
+              "login": "discord",
+              "id": 1965106,
+              "node_id": "MDEyOk9yZ2FuaXphdGlvbjE5NjUxMDY=",
+              "gravatar_id": "",
+              "url": "https://api.github.com/users/discord",
+              "type": "Organization",
+              "site_admin": false
+            },
+            "description": "simple HTTP client in Erlang",
+            "fork": true,
+            "url": "https://api.github.com/repos/discord/hackney",
+            "created_at": "2017-10-16T18:13:34Z",
+            "updated_at": "2021-04-28T21:28:48Z",
+            "pushed_at": "2017-11-18T20:29:43Z",
+            "homepage": "",
+            "size": 6147,
+            "stargazers_count": 3,
+            "watchers_count": 3,
+            "language": "Erlang",
+            "has_issues": false,
+            "has_projects": true,
+            "has_downloads": true,
+            "has_wiki": true,
+            "has_pages": false,
+            "has_discussions": false,
+            "forks_count": 3,
+            "archived": false,
+            "disabled": false,
+            "open_issues_count": 0,
+            "license": {
+              "key": "other",
+              "name": "Other",
+              "spdx_id": "NOASSERTION",
+              "url": null,
+              "node_id": "MDc6TGljZW5zZTA="
+            },
+            "allow_forking": true,
+            "is_template": false,
+            "web_commit_signoff_required": false,
+            "topics": [],
+            "visibility": "public",
+            "forks": 3,
+            "open_issues": 0,
+            "watchers": 3,
+            "default_branch": "master"
+          }
+        },
+        "base": {
+          "label": "discord:master",
+          "ref": "master",
+          "sha": "107f2424bb4076b054773048a658e1e2ae76e92d",
+          "user": {
+            "login": "discord",
+            "id": 1965106,
+            "node_id": "MDEyOk9yZ2FuaXphdGlvbjE5NjUxMDY=",
+            "gravatar_id": "",
+            "url": "https://api.github.com/users/discord",
+            "type": "Organization",
+            "site_admin": false
+          },
+          "repo": {
+            "id": 107165531,
+            "node_id": "MDEwOlJlcG9zaXRvcnkxMDcxNjU1MzE=",
+            "name": "hackney",
+            "full_name": "discord/hackney",
+            "private": false,
+            "owner": {
+              "login": "discord",
+              "id": 1965106,
+              "node_id": "MDEyOk9yZ2FuaXphdGlvbjE5NjUxMDY=",
+              "gravatar_id": "",
+              "url": "https://api.github.com/users/discord",
+              "type": "Organization",
+              "site_admin": false
+            },
+            "description": "simple HTTP client in Erlang",
+            "fork": true,
+            "url": "https://api.github.com/repos/discord/hackney",
+            "created_at": "2017-10-16T18:13:34Z",
+            "updated_at": "2021-04-28T21:28:48Z",
+            "pushed_at": "2017-11-18T20:29:43Z",
+            "homepage": "",
+            "size": 6147,
+            "stargazers_count": 3,
+            "watchers_count": 3,
+            "language": "Erlang",
+            "has_issues": false,
+            "has_projects": true,
+            "has_downloads": true,
+            "has_wiki": true,
+            "has_pages": false,
+            "has_discussions": false,
+            "forks_count": 3,
+            "archived": false,
+            "disabled": false,
+            "open_issues_count": 0,
+            "license": {
+              "key": "other",
+              "name": "Other",
+              "spdx_id": "NOASSERTION",
+              "url": null,
+              "node_id": "MDc6TGljZW5zZTA="
+            },
+            "allow_forking": true,
+            "is_template": false,
+            "web_commit_signoff_required": false,
+            "topics": [],
+            "visibility": "public",
+            "forks": 3,
+            "open_issues": 0,
+            "watchers": 3,
+            "default_branch": "master"
+          }
+        },
+        "_links": {
+          "self": {
+            "href": "https://api.github.com/repos/discord/hackney/pulls/2"
+          },
+          "html": {
+            "href": "https://github.com/discord/hackney/pull/2"
+          },
+          "issue": {
+            "href": "https://api.github.com/repos/discord/hackney/issues/2"
+          },
+          "comments": {
+            "href": "https://api.github.com/repos/discord/hackney/issues/2/comments"
+          },
+          "review_comments": {
+            "href": "https://api.github.com/repos/discord/hackney/pulls/2/comments"
+          },
+          "review_comment": {
+            "href": "https://api.github.com/repos/discord/hackney/pulls/comments{/number}"
+          },
+          "commits": {
+            "href": "https://api.github.com/repos/discord/hackney/pulls/2/commits"
+          },
+          "statuses": {
+            "href": "https://api.github.com/repos/discord/hackney/statuses/632fb71b606e78d37e83ff38733429dcb9525e38"
+          }
+        },
+        "author_association": "NONE",
+        "auto_merge": null,
+        "active_lock_reason": null
+      },
+      {
+        "url": "https://api.github.com/repos/discord/hackney/pulls/1",
+        "id": 153422515,
+        "node_id": "MDExOlB1bGxSZXF1ZXN0MTUzNDIyNTE1",
+        "number": 1,
+        "state": "closed",
+        "locked": false,
+        "title": "fix a case clause issue",
+        "user": {
+          "login": "jhowarth",
+          "id": 70012,
+          "node_id": "MDQ6VXNlcjcwMDEy",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/jhowarth",
+          "type": "User",
+          "site_admin": false
+        },
+        "body": "",
+        "created_at": "2017-11-18T00:25:56Z",
+        "updated_at": "2017-11-18T00:27:21Z",
+        "closed_at": "2017-11-18T00:27:18Z",
+        "merged_at": "2017-11-18T00:27:18Z",
+        "merge_commit_sha": "107f2424bb4076b054773048a658e1e2ae76e92d",
+        "assignee": null,
+        "assignees": [],
+        "requested_reviewers": [],
+        "requested_teams": [],
+        "labels": [],
+        "milestone": null,
+        "draft": false,
+        "head": {
+          "label": "discord:bugfix/case-clause-match",
+          "ref": "bugfix/case-clause-match",
+          "sha": "e42939e23d38ad70b49e19418694888eaf9a912e",
+          "user": {
+            "login": "discord",
+            "id": 1965106,
+            "node_id": "MDEyOk9yZ2FuaXphdGlvbjE5NjUxMDY=",
+            "gravatar_id": "",
+            "url": "https://api.github.com/users/discord",
+            "type": "Organization",
+            "site_admin": false
+          },
+          "repo": {
+            "id": 107165531,
+            "node_id": "MDEwOlJlcG9zaXRvcnkxMDcxNjU1MzE=",
+            "name": "hackney",
+            "full_name": "discord/hackney",
+            "private": false,
+            "owner": {
+              "login": "discord",
+              "id": 1965106,
+              "node_id": "MDEyOk9yZ2FuaXphdGlvbjE5NjUxMDY=",
+              "gravatar_id": "",
+              "url": "https://api.github.com/users/discord",
+              "type": "Organization",
+              "site_admin": false
+            },
+            "description": "simple HTTP client in Erlang",
+            "fork": true,
+            "url": "https://api.github.com/repos/discord/hackney",
+            "created_at": "2017-10-16T18:13:34Z",
+            "updated_at": "2021-04-28T21:28:48Z",
+            "pushed_at": "2017-11-18T20:29:43Z",
+            "homepage": "",
+            "size": 6147,
+            "stargazers_count": 3,
+            "watchers_count": 3,
+            "language": "Erlang",
+            "has_issues": false,
+            "has_projects": true,
+            "has_downloads": true,
+            "has_wiki": true,
+            "has_pages": false,
+            "has_discussions": false,
+            "forks_count": 3,
+            "archived": false,
+            "disabled": false,
+            "open_issues_count": 0,
+            "license": {
+              "key": "other",
+              "name": "Other",
+              "spdx_id": "NOASSERTION",
+              "url": null,
+              "node_id": "MDc6TGljZW5zZTA="
+            },
+            "allow_forking": true,
+            "is_template": false,
+            "web_commit_signoff_required": false,
+            "topics": [],
+            "visibility": "public",
+            "forks": 3,
+            "open_issues": 0,
+            "watchers": 3,
+            "default_branch": "master"
+          }
+        },
+        "base": {
+          "label": "discord:master",
+          "ref": "master",
+          "sha": "85cb4c567f4f4fa1bb5ea41389129bbd99010f97",
+          "user": {
+            "login": "discord",
+            "id": 1965106,
+            "node_id": "MDEyOk9yZ2FuaXphdGlvbjE5NjUxMDY=",
+            "gravatar_id": "",
+            "url": "https://api.github.com/users/discord",
+            "type": "Organization",
+            "site_admin": false
+          },
+          "repo": {
+            "id": 107165531,
+            "node_id": "MDEwOlJlcG9zaXRvcnkxMDcxNjU1MzE=",
+            "name": "hackney",
+            "full_name": "discord/hackney",
+            "private": false,
+            "owner": {
+              "login": "discord",
+              "id": 1965106,
+              "node_id": "MDEyOk9yZ2FuaXphdGlvbjE5NjUxMDY=",
+              "gravatar_id": "",
+              "url": "https://api.github.com/users/discord",
+              "type": "Organization",
+              "site_admin": false
+            },
+            "description": "simple HTTP client in Erlang",
+            "fork": true,
+            "url": "https://api.github.com/repos/discord/hackney",
+            "created_at": "2017-10-16T18:13:34Z",
+            "updated_at": "2021-04-28T21:28:48Z",
+            "pushed_at": "2017-11-18T20:29:43Z",
+            "homepage": "",
+            "size": 6147,
+            "stargazers_count": 3,
+            "watchers_count": 3,
+            "language": "Erlang",
+            "has_issues": false,
+            "has_projects": true,
+            "has_downloads": true,
+            "has_wiki": true,
+            "has_pages": false,
+            "has_discussions": false,
+            "forks_count": 3,
+            "archived": false,
+            "disabled": false,
+            "open_issues_count": 0,
+            "license": {
+              "key": "other",
+              "name": "Other",
+              "spdx_id": "NOASSERTION",
+              "url": null,
+              "node_id": "MDc6TGljZW5zZTA="
+            },
+            "allow_forking": true,
+            "is_template": false,
+            "web_commit_signoff_required": false,
+            "topics": [],
+            "visibility": "public",
+            "forks": 3,
+            "open_issues": 0,
+            "watchers": 3,
+            "default_branch": "master"
+          }
+        },
+        "_links": {
+          "self": {
+            "href": "https://api.github.com/repos/discord/hackney/pulls/1"
+          },
+          "html": {
+            "href": "https://github.com/discord/hackney/pull/1"
+          },
+          "issue": {
+            "href": "https://api.github.com/repos/discord/hackney/issues/1"
+          },
+          "comments": {
+            "href": "https://api.github.com/repos/discord/hackney/issues/1/comments"
+          },
+          "review_comments": {
+            "href": "https://api.github.com/repos/discord/hackney/pulls/1/comments"
+          },
+          "review_comment": {
+            "href": "https://api.github.com/repos/discord/hackney/pulls/comments{/number}"
+          },
+          "commits": {
+            "href": "https://api.github.com/repos/discord/hackney/pulls/1/commits"
+          },
+          "statuses": {
+            "href": "https://api.github.com/repos/discord/hackney/statuses/e42939e23d38ad70b49e19418694888eaf9a912e"
+          }
+        },
+        "author_association": "NONE",
+        "auto_merge": null,
+        "active_lock_reason": null
+      }
+    ]
   }
 }

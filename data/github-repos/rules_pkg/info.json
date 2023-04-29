@@ -57,7 +57,16 @@
     "triage": false,
     "pull": false
   },
-  "branches": [],
+  "branches": [
+    {
+      "name": "main",
+      "commit": {
+        "sha": "914b0e5ef85bef5d464707a95f88f384570b2456",
+        "url": "https://api.github.com/repos/discord/rules_pkg/commits/914b0e5ef85bef5d464707a95f88f384570b2456"
+      },
+      "protected": false
+    }
+  ],
   "last5": {
     "commits": [
       {
