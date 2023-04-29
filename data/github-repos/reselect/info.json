@@ -57,32 +57,7 @@
     "triage": false,
     "pull": false
   },
-  "branches": [
-    {
-      "name": "3.0.0",
-      "commit": {
-        "sha": "2abc7d032f89e7d04afabf7b4c7dfad26939e965",
-        "url": "https://api.github.com/repos/discord/reselect/commits/2abc7d032f89e7d04afabf7b4c7dfad26939e965"
-      },
-      "protected": false
-    },
-    {
-      "name": "expose-memoized-func",
-      "commit": {
-        "sha": "4979313e9ff8f21de9ab66d45b15da70d5a8e462",
-        "url": "https://api.github.com/repos/discord/reselect/commits/4979313e9ff8f21de9ab66d45b15da70d5a8e462"
-      },
-      "protected": false
-    },
-    {
-      "name": "master",
-      "commit": {
-        "sha": "ac77610bbb0a3cab9b280ea5ea379c2387017446",
-        "url": "https://api.github.com/repos/discord/reselect/commits/ac77610bbb0a3cab9b280ea5ea379c2387017446"
-      },
-      "protected": false
-    }
-  ],
+  "branches": [],
   "last5": {
     "commits": [
       {
