@@ -57,48 +57,7 @@
     "triage": false,
     "pull": false
   },
-  "branches": [
-    {
-      "name": "electron-6.0.0",
-      "commit": {
-        "sha": "6b1396d4516800c3e59e26cac6bd9bc8fa4def9a",
-        "url": "https://api.github.com/repos/discord/node-spellchecker/commits/6b1396d4516800c3e59e26cac6bd9bc8fa4def9a"
-      },
-      "protected": false
-    },
-    {
-      "name": "electron-7.0.0",
-      "commit": {
-        "sha": "67df94fe9c75b3fa436d232b877e2392606f2584",
-        "url": "https://api.github.com/repos/discord/node-spellchecker/commits/67df94fe9c75b3fa436d232b877e2392606f2584"
-      },
-      "protected": false
-    },
-    {
-      "name": "gh-pages",
-      "commit": {
-        "sha": "8dd8b5fcd766ddd025d4830fb2e5eeb2e8d10dce",
-        "url": "https://api.github.com/repos/discord/node-spellchecker/commits/8dd8b5fcd766ddd025d4830fb2e5eeb2e8d10dce"
-      },
-      "protected": false
-    },
-    {
-      "name": "master",
-      "commit": {
-        "sha": "6b1396d4516800c3e59e26cac6bd9bc8fa4def9a",
-        "url": "https://api.github.com/repos/discord/node-spellchecker/commits/6b1396d4516800c3e59e26cac6bd9bc8fa4def9a"
-      },
-      "protected": false
-    },
-    {
-      "name": "node-12-fixes",
-      "commit": {
-        "sha": "a10e264036e55388f0fa733ae2728cabe518f940",
-        "url": "https://api.github.com/repos/discord/node-spellchecker/commits/a10e264036e55388f0fa733ae2728cabe518f940"
-      },
-      "protected": false
-    }
-  ],
+  "branches": [],
   "last5": {
     "commits": [
       {
