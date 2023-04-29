@@ -57,16 +57,7 @@
     "triage": false,
     "pull": false
   },
-  "branches": [
-    {
-      "name": "master",
-      "commit": {
-        "sha": "6619242adab1b196256cdc5d9e17ebdce819825a",
-        "url": "https://api.github.com/repos/discord/dynamic-pool/commits/6619242adab1b196256cdc5d9e17ebdce819825a"
-      },
-      "protected": false
-    }
-  ],
+  "branches": [],
   "last5": {
     "commits": [
       {
@@ -568,6 +559,343 @@
         "state_reason": "completed"
       }
     ],
-    "pullRequests": []
+    "pullRequests": [
+      {
+        "url": "https://api.github.com/repos/discord/dynamic-pool/pulls/5",
+        "id": 1065294840,
+        "node_id": "PR_kwDODoKSZM4_fxv4",
+        "number": 5,
+        "state": "closed",
+        "locked": false,
+        "title": "add benchmark and macros",
+        "user": {
+          "login": "goldwind-ting",
+          "id": 63939636,
+          "node_id": "MDQ6VXNlcjYzOTM5NjM2",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/goldwind-ting",
+          "type": "User",
+          "site_admin": false
+        },
+        "body": null,
+        "created_at": "2022-09-23T12:54:40Z",
+        "updated_at": "2022-10-08T11:33:45Z",
+        "closed_at": "2022-10-08T11:33:45Z",
+        "merged_at": null,
+        "merge_commit_sha": "71d66a8497d3ffc59b076bae62ef81ea05bb08b4",
+        "assignee": null,
+        "assignees": [],
+        "requested_reviewers": [],
+        "requested_teams": [],
+        "labels": [],
+        "milestone": null,
+        "draft": false,
+        "head": {
+          "label": "goldwind-ting:feat-macros",
+          "ref": "feat-macros",
+          "sha": "c21f79af0a56cd0fa05cd2847dc8446d4fc3c6f3",
+          "user": {
+            "login": "goldwind-ting",
+            "id": 63939636,
+            "node_id": "MDQ6VXNlcjYzOTM5NjM2",
+            "gravatar_id": "",
+            "url": "https://api.github.com/users/goldwind-ting",
+            "type": "User",
+            "site_admin": false
+          },
+          "repo": null
+        },
+        "base": {
+          "label": "discord:master",
+          "ref": "master",
+          "sha": "6619242adab1b196256cdc5d9e17ebdce819825a",
+          "user": {
+            "login": "discord",
+            "id": 1965106,
+            "node_id": "MDEyOk9yZ2FuaXphdGlvbjE5NjUxMDY=",
+            "gravatar_id": "",
+            "url": "https://api.github.com/users/discord",
+            "type": "Organization",
+            "site_admin": false
+          },
+          "repo": {
+            "id": 243438180,
+            "node_id": "MDEwOlJlcG9zaXRvcnkyNDM0MzgxODA=",
+            "name": "dynamic-pool",
+            "full_name": "discord/dynamic-pool",
+            "private": false,
+            "owner": {
+              "login": "discord",
+              "id": 1965106,
+              "node_id": "MDEyOk9yZ2FuaXphdGlvbjE5NjUxMDY=",
+              "gravatar_id": "",
+              "url": "https://api.github.com/users/discord",
+              "type": "Organization",
+              "site_admin": false
+            },
+            "description": "a lock-free, thread-safe, dynamically-sized object pool.",
+            "fork": false,
+            "url": "https://api.github.com/repos/discord/dynamic-pool",
+            "created_at": "2020-02-27T05:24:46Z",
+            "updated_at": "2023-03-19T10:50:35Z",
+            "pushed_at": "2022-09-23T12:54:40Z",
+            "homepage": null,
+            "size": 11,
+            "stargazers_count": 72,
+            "watchers_count": 72,
+            "language": "Rust",
+            "has_issues": true,
+            "has_projects": true,
+            "has_downloads": true,
+            "has_wiki": true,
+            "has_pages": false,
+            "has_discussions": false,
+            "forks_count": 12,
+            "archived": false,
+            "disabled": false,
+            "open_issues_count": 3,
+            "license": {
+              "key": "mit",
+              "name": "MIT License",
+              "spdx_id": "MIT",
+              "url": "https://api.github.com/licenses/mit",
+              "node_id": "MDc6TGljZW5zZTEz"
+            },
+            "allow_forking": true,
+            "is_template": false,
+            "web_commit_signoff_required": false,
+            "topics": [],
+            "visibility": "public",
+            "forks": 12,
+            "open_issues": 3,
+            "watchers": 72,
+            "default_branch": "master"
+          }
+        },
+        "_links": {
+          "self": {
+            "href": "https://api.github.com/repos/discord/dynamic-pool/pulls/5"
+          },
+          "html": {
+            "href": "https://github.com/discord/dynamic-pool/pull/5"
+          },
+          "issue": {
+            "href": "https://api.github.com/repos/discord/dynamic-pool/issues/5"
+          },
+          "comments": {
+            "href": "https://api.github.com/repos/discord/dynamic-pool/issues/5/comments"
+          },
+          "review_comments": {
+            "href": "https://api.github.com/repos/discord/dynamic-pool/pulls/5/comments"
+          },
+          "review_comment": {
+            "href": "https://api.github.com/repos/discord/dynamic-pool/pulls/comments{/number}"
+          },
+          "commits": {
+            "href": "https://api.github.com/repos/discord/dynamic-pool/pulls/5/commits"
+          },
+          "statuses": {
+            "href": "https://api.github.com/repos/discord/dynamic-pool/statuses/c21f79af0a56cd0fa05cd2847dc8446d4fc3c6f3"
+          }
+        },
+        "author_association": "NONE",
+        "auto_merge": null,
+        "active_lock_reason": null
+      },
+      {
+        "url": "https://api.github.com/repos/discord/dynamic-pool/pulls/3",
+        "id": 828261625,
+        "node_id": "PR_kwDODoKSZM4xXkT5",
+        "number": 3,
+        "state": "open",
+        "locked": false,
+        "title": "Update crossbeam-queue 0.2 -> 0.3",
+        "user": {
+          "login": "ilammy",
+          "id": 1256587,
+          "node_id": "MDQ6VXNlcjEyNTY1ODc=",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/ilammy",
+          "type": "User",
+          "site_admin": false
+        },
+        "body": "This allows users of newer versions of crossbeam to avoid duplicate versions of dependencies, not much else.\r\n\r\nThis update bumps minimum required Rust version to 1.36.\r\n\r\nThere are some API changes in crossbeam-queue, mostly massing the returned Results into Options.",
+        "created_at": "2022-01-21T07:52:42Z",
+        "updated_at": "2022-01-21T07:52:42Z",
+        "closed_at": null,
+        "merged_at": null,
+        "merge_commit_sha": "ae938eb2cee37d2e50cd8f1f63336a5723ba6c8d",
+        "assignee": null,
+        "assignees": [],
+        "requested_reviewers": [],
+        "requested_teams": [],
+        "labels": [],
+        "milestone": null,
+        "draft": false,
+        "head": {
+          "label": "ilammy:master",
+          "ref": "master",
+          "sha": "6237462e096814d2f9aa7977097433d3199018e3",
+          "user": {
+            "login": "ilammy",
+            "id": 1256587,
+            "node_id": "MDQ6VXNlcjEyNTY1ODc=",
+            "gravatar_id": "",
+            "url": "https://api.github.com/users/ilammy",
+            "type": "User",
+            "site_admin": false
+          },
+          "repo": {
+            "id": 450400342,
+            "node_id": "R_kgDOGtiQVg",
+            "name": "dynamic-pool",
+            "full_name": "ilammy/dynamic-pool",
+            "private": false,
+            "owner": {
+              "login": "ilammy",
+              "id": 1256587,
+              "node_id": "MDQ6VXNlcjEyNTY1ODc=",
+              "gravatar_id": "",
+              "url": "https://api.github.com/users/ilammy",
+              "type": "User",
+              "site_admin": false
+            },
+            "description": "a lock-free, thread-safe, dynamically-sized object pool.",
+            "fork": true,
+            "url": "https://api.github.com/repos/ilammy/dynamic-pool",
+            "created_at": "2022-01-21T07:48:54Z",
+            "updated_at": "2022-01-21T07:50:57Z",
+            "pushed_at": "2022-01-21T07:51:52Z",
+            "homepage": null,
+            "size": 13,
+            "stargazers_count": 0,
+            "watchers_count": 0,
+            "language": "Rust",
+            "has_issues": false,
+            "has_projects": true,
+            "has_downloads": true,
+            "has_wiki": true,
+            "has_pages": false,
+            "has_discussions": false,
+            "forks_count": 0,
+            "archived": false,
+            "disabled": false,
+            "open_issues_count": 0,
+            "license": {
+              "key": "mit",
+              "name": "MIT License",
+              "spdx_id": "MIT",
+              "url": "https://api.github.com/licenses/mit",
+              "node_id": "MDc6TGljZW5zZTEz"
+            },
+            "allow_forking": true,
+            "is_template": false,
+            "web_commit_signoff_required": false,
+            "topics": [],
+            "visibility": "public",
+            "forks": 0,
+            "open_issues": 0,
+            "watchers": 0,
+            "default_branch": "master"
+          }
+        },
+        "base": {
+          "label": "discord:master",
+          "ref": "master",
+          "sha": "6619242adab1b196256cdc5d9e17ebdce819825a",
+          "user": {
+            "login": "discord",
+            "id": 1965106,
+            "node_id": "MDEyOk9yZ2FuaXphdGlvbjE5NjUxMDY=",
+            "gravatar_id": "",
+            "url": "https://api.github.com/users/discord",
+            "type": "Organization",
+            "site_admin": false
+          },
+          "repo": {
+            "id": 243438180,
+            "node_id": "MDEwOlJlcG9zaXRvcnkyNDM0MzgxODA=",
+            "name": "dynamic-pool",
+            "full_name": "discord/dynamic-pool",
+            "private": false,
+            "owner": {
+              "login": "discord",
+              "id": 1965106,
+              "node_id": "MDEyOk9yZ2FuaXphdGlvbjE5NjUxMDY=",
+              "gravatar_id": "",
+              "url": "https://api.github.com/users/discord",
+              "type": "Organization",
+              "site_admin": false
+            },
+            "description": "a lock-free, thread-safe, dynamically-sized object pool.",
+            "fork": false,
+            "url": "https://api.github.com/repos/discord/dynamic-pool",
+            "created_at": "2020-02-27T05:24:46Z",
+            "updated_at": "2023-03-19T10:50:35Z",
+            "pushed_at": "2022-09-23T12:54:40Z",
+            "homepage": null,
+            "size": 11,
+            "stargazers_count": 72,
+            "watchers_count": 72,
+            "language": "Rust",
+            "has_issues": true,
+            "has_projects": true,
+            "has_downloads": true,
+            "has_wiki": true,
+            "has_pages": false,
+            "has_discussions": false,
+            "forks_count": 12,
+            "archived": false,
+            "disabled": false,
+            "open_issues_count": 3,
+            "license": {
+              "key": "mit",
+              "name": "MIT License",
+              "spdx_id": "MIT",
+              "url": "https://api.github.com/licenses/mit",
+              "node_id": "MDc6TGljZW5zZTEz"
+            },
+            "allow_forking": true,
+            "is_template": false,
+            "web_commit_signoff_required": false,
+            "topics": [],
+            "visibility": "public",
+            "forks": 12,
+            "open_issues": 3,
+            "watchers": 72,
+            "default_branch": "master"
+          }
+        },
+        "_links": {
+          "self": {
+            "href": "https://api.github.com/repos/discord/dynamic-pool/pulls/3"
+          },
+          "html": {
+            "href": "https://github.com/discord/dynamic-pool/pull/3"
+          },
+          "issue": {
+            "href": "https://api.github.com/repos/discord/dynamic-pool/issues/3"
+          },
+          "comments": {
+            "href": "https://api.github.com/repos/discord/dynamic-pool/issues/3/comments"
+          },
+          "review_comments": {
+            "href": "https://api.github.com/repos/discord/dynamic-pool/pulls/3/comments"
+          },
+          "review_comment": {
+            "href": "https://api.github.com/repos/discord/dynamic-pool/pulls/comments{/number}"
+          },
+          "commits": {
+            "href": "https://api.github.com/repos/discord/dynamic-pool/pulls/3/commits"
+          },
+          "statuses": {
+            "href": "https://api.github.com/repos/discord/dynamic-pool/statuses/6237462e096814d2f9aa7977097433d3199018e3"
+          }
+        },
+        "author_association": "NONE",
+        "auto_merge": null,
+        "active_lock_reason": null
+      }
+    ]
   }
 }
