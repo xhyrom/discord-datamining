@@ -116516,7 +116516,8 @@ input::-webkit-outer-spin-button {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
     -ms-flex-direction: row;
-    flex-direction: row
+    flex-direction: row;
+    min-width: 0
 }
 
 .image-1Ku6D3 {
@@ -116546,7 +116547,9 @@ input::-webkit-outer-spin-button {
     -moz-user-select: text;
     -ms-user-select: text;
     user-select: text;
-    color: var(--text-muted)
+    color: var(--text-muted);
+    -ms-flex-negative: 0;
+    flex-shrink: 0
 }
 
 .group-1-kPpw {
@@ -116644,7 +116647,8 @@ input::-webkit-outer-spin-button {
     align-items: center;
     -webkit-box-flex: 1;
     -ms-flex: 1;
-    flex: 1
+    flex: 1;
+    min-width: 0
 }
 
 .entryName-2uBBS_,
@@ -153593,4 +153597,4 @@ html .invoiceCancelRow-dVOR64 {
     flex-direction: column
 }
 
-/*# sourceMappingURL=40532.906b20e3e408eb292a5b.css.map*/
+/*# sourceMappingURL=40532.3dc3b02f6f247ed246f1.css.map*/
