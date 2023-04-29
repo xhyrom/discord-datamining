@@ -332,56 +332,7 @@
       }
     ],
     "releases": [],
-    "issues": [
-      {
-        "url": "https://api.github.com/repos/discord/cowboy/issues/1",
-        "id": 210939449,
-        "node_id": "MDExOlB1bGxSZXF1ZXN0MTA4NDM5MTU2",
-        "number": 1,
-        "title": "upgrade to proper v1.2",
-        "user": {
-          "login": "brian-armstrong-discord",
-          "id": 25939803,
-          "node_id": "MDQ6VXNlcjI1OTM5ODAz",
-          "gravatar_id": "",
-          "url": "https://api.github.com/users/brian-armstrong-discord",
-          "type": "User",
-          "site_admin": false
-        },
-        "labels": [],
-        "state": "open",
-        "locked": false,
-        "assignee": null,
-        "assignees": [],
-        "milestone": null,
-        "comments": 0,
-        "created_at": "2017-02-28T23:57:11Z",
-        "updated_at": "2017-03-04T02:59:39Z",
-        "closed_at": null,
-        "author_association": "COLLABORATOR",
-        "active_lock_reason": null,
-        "draft": false,
-        "pull_request": {
-          "url": "https://api.github.com/repos/discord/cowboy/pulls/1",
-          "merged_at": null
-        },
-        "body": "again, we use a local fork until upstreams get the right dependencies",
-        "reactions": {
-          "url": "https://api.github.com/repos/discord/cowboy/issues/1/reactions",
-          "total_count": 0,
-          "+1": 0,
-          "-1": 0,
-          "laugh": 0,
-          "hooray": 0,
-          "confused": 0,
-          "heart": 0,
-          "rocket": 0,
-          "eyes": 0
-        },
-        "performed_via_github_app": null,
-        "state_reason": null
-      }
-    ],
+    "issues": [],
     "pullRequests": []
   }
 }
