@@ -57,7 +57,32 @@
     "triage": false,
     "pull": false
   },
-  "branches": [],
+  "branches": [
+    {
+      "name": "archive-pdbs-win",
+      "commit": {
+        "sha": "bcbb2f3699917646092b9bf4e45835158ba12650",
+        "url": "https://api.github.com/repos/discord/discord-rpc/commits/bcbb2f3699917646092b9bf4e45835158ba12650"
+      },
+      "protected": false
+    },
+    {
+      "name": "choose-pipe",
+      "commit": {
+        "sha": "8bb85f0545aa083e5dffaa65b607f6c945877a7e",
+        "url": "https://api.github.com/repos/discord/discord-rpc/commits/8bb85f0545aa083e5dffaa65b607f6c945877a7e"
+      },
+      "protected": false
+    },
+    {
+      "name": "master",
+      "commit": {
+        "sha": "963aa9f3e5ce81a4682c6ca3d136cddda614db33",
+        "url": "https://api.github.com/repos/discord/discord-rpc/commits/963aa9f3e5ce81a4682c6ca3d136cddda614db33"
+      },
+      "protected": false
+    }
+  ],
   "last5": {
     "commits": [
       {
@@ -415,7 +440,7 @@
             "content_type": "application/zip",
             "state": "uploaded",
             "size": 539931,
-            "download_count": 502368,
+            "download_count": 502392,
             "created_at": "2018-11-27T17:47:21Z",
             "updated_at": "2018-11-27T17:47:23Z"
           }
