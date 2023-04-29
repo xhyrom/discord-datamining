@@ -450,7 +450,7 @@
             "has_wiki": true,
             "has_pages": false,
             "has_discussions": false,
-            "forks_count": 3472,
+            "forks_count": 3473,
             "archived": false,
             "disabled": false,
             "open_issues_count": 94,
@@ -473,7 +473,7 @@
               "syntax-highlighting"
             ],
             "visibility": "public",
-            "forks": 3472,
+            "forks": 3473,
             "open_issues": 94,
             "watchers": 21431,
             "default_branch": "main"
