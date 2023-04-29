@@ -59,9 +59,329 @@
   },
   "branches": [],
   "last5": {
-    "commits": [],
+    "commits": [
+      {
+        "sha": "f06f38b5c33ed28c5eda1459b3efa0ff8c67e961",
+        "node_id": "MDY6Q29tbWl0MjU5NDI4NTMwOmYwNmYzOGI1YzMzZWQyOGM1ZWRhMTQ1OWIzZWZhMGZmOGM2N2U5NjE=",
+        "commit": {
+          "author": {
+            "name": "Bogdan Drutu",
+            "email": "bogdandrutu@gmail.com",
+            "date": "2021-01-27T22:06:36Z"
+          },
+          "committer": {
+            "name": "GitHub",
+            "email": "noreply@github.com",
+            "date": "2021-01-27T22:06:36Z"
+          },
+          "message": "Update github actions to trigger on main branch (#442)",
+          "tree": {
+            "sha": "f7850e069719e60e0631f3b6bdb7f4e55fbbda59",
+            "url": "https://api.github.com/repos/discord/opentelemetry-rust/git/trees/f7850e069719e60e0631f3b6bdb7f4e55fbbda59"
+          },
+          "url": "https://api.github.com/repos/discord/opentelemetry-rust/git/commits/f06f38b5c33ed28c5eda1459b3efa0ff8c67e961",
+          "comment_count": 0,
+          "verification": {
+            "verified": true,
+            "reason": "valid",
+            "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsBcBAABCAAQBQJgEePsCRBK7hj4Ov3rIwAAdHIIAEyVS2AO7LhWFudzaaXpbGvx\nEARkRwvvkLFL5EE/FX31yhv6GLmwJupQZAnScZEdb9r5zHXpLcGb76cFh9mymQuv\nZw7E56o1vbFKp/CDlI98T7e6ttU6kagaYhNwuHBMSBGVixENqxNAcLjf1aVECo9n\nHSB8hAgjymx+/RdRKNQcm8qO7oA673vrYvtAObYXDsWttd5HIsMAttjSOC1hlcuM\nFxR4tMGB/A57QAWvWU14SRoGnASITYbBEWONG2+HYz3vPy1pcdNnVc29qtmtOQ8x\n1Eqdq0snJtu2LUAu57Gz0PRNTBoPYztau0MnuKDmejEVZ0F8dw6tU9M5o+TUXS0=\n=wMA2\n-----END PGP SIGNATURE-----\n",
+            "payload": "tree f7850e069719e60e0631f3b6bdb7f4e55fbbda59\nparent 18679f484aa118870e3fba9934787a811cd663da\nauthor Bogdan Drutu <bogdandrutu@gmail.com> 1611785196 -0800\ncommitter GitHub <noreply@github.com> 1611785196 -0800\n\nUpdate github actions to trigger on main branch (#442)\n\n"
+          }
+        },
+        "url": "https://api.github.com/repos/discord/opentelemetry-rust/commits/f06f38b5c33ed28c5eda1459b3efa0ff8c67e961",
+        "author": {
+          "login": "bogdandrutu",
+          "id": 1373887,
+          "node_id": "MDQ6VXNlcjEzNzM4ODc=",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/bogdandrutu",
+          "type": "User",
+          "site_admin": false
+        },
+        "committer": {
+          "login": "web-flow",
+          "id": 19864447,
+          "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/web-flow",
+          "type": "User",
+          "site_admin": false
+        },
+        "parents": [
+          {
+            "sha": "18679f484aa118870e3fba9934787a811cd663da",
+            "url": "https://api.github.com/repos/discord/opentelemetry-rust/commits/18679f484aa118870e3fba9934787a811cd663da"
+          }
+        ]
+      },
+      {
+        "sha": "18679f484aa118870e3fba9934787a811cd663da",
+        "node_id": "MDY6Q29tbWl0MjU5NDI4NTMwOjE4Njc5ZjQ4NGFhMTE4ODcwZTNmYmE5OTM0Nzg3YTgxMWNkNjYzZGE=",
+        "commit": {
+          "author": {
+            "name": "Julian Tescher",
+            "email": "jatescher@gmail.com",
+            "date": "2021-01-25T18:36:59Z"
+          },
+          "committer": {
+            "name": "GitHub",
+            "email": "noreply@github.com",
+            "date": "2021-01-25T18:36:59Z"
+          },
+          "message": "Update doc links to point at main branch (#439)",
+          "tree": {
+            "sha": "db03e2f52d12d7c3e4ef1731d549c236634a7662",
+            "url": "https://api.github.com/repos/discord/opentelemetry-rust/git/trees/db03e2f52d12d7c3e4ef1731d549c236634a7662"
+          },
+          "url": "https://api.github.com/repos/discord/opentelemetry-rust/git/commits/18679f484aa118870e3fba9934787a811cd663da",
+          "comment_count": 0,
+          "verification": {
+            "verified": true,
+            "reason": "valid",
+            "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsBcBAABCAAQBQJgDw/LCRBK7hj4Ov3rIwAAdHIIAJ1N6Iz56IbMDo3BRUSNU3h5\nuOlpvHl2+eQNBkze8iaweoYvdOMXczN+KcAy5pdNl3x8ifsmIlqjYEy1+ooQjgh8\nW8KxplHWRNwxfrUSu0f/u/lILtajM80sd8SM5OTLunwhBBTW23dl6u3t+G+0VrLG\nC8xWn0m3QHiUHdNxan6iiiVPF6jsLch5J1VZt4yBI4z+3XyUBM5AB1oVS4HWBhjj\ns3bCzcxZATl6W1LwVaLhPIPmazknwsPRtZnsg89lUxv2krR5UNXI7BTUdOsX4Lvg\ncbdI/Rw1b0j9DjsQde79akO2w2ktGBryp4lcfSris6YuhIm2Ub5kWh2iqe3VvbU=\n=+6KK\n-----END PGP SIGNATURE-----\n",
+            "payload": "tree db03e2f52d12d7c3e4ef1731d549c236634a7662\nparent 22f365f0e58631ffc899f1993cf34aec9d068581\nauthor Julian Tescher <jatescher@gmail.com> 1611599819 -0800\ncommitter GitHub <noreply@github.com> 1611599819 -0800\n\nUpdate doc links to point at main branch (#439)\n\n"
+          }
+        },
+        "url": "https://api.github.com/repos/discord/opentelemetry-rust/commits/18679f484aa118870e3fba9934787a811cd663da",
+        "author": {
+          "login": "jtescher",
+          "id": 175237,
+          "node_id": "MDQ6VXNlcjE3NTIzNw==",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/jtescher",
+          "type": "User",
+          "site_admin": false
+        },
+        "committer": {
+          "login": "web-flow",
+          "id": 19864447,
+          "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/web-flow",
+          "type": "User",
+          "site_admin": false
+        },
+        "parents": [
+          {
+            "sha": "22f365f0e58631ffc899f1993cf34aec9d068581",
+            "url": "https://api.github.com/repos/discord/opentelemetry-rust/commits/22f365f0e58631ffc899f1993cf34aec9d068581"
+          }
+        ]
+      },
+      {
+        "sha": "22f365f0e58631ffc899f1993cf34aec9d068581",
+        "node_id": "MDY6Q29tbWl0MjU5NDI4NTMwOjIyZjM2NWYwZTU4NjMxZmZjODk5ZjE5OTNjZjM0YWVjOWQwNjg1ODE=",
+        "commit": {
+          "author": {
+            "name": "Zhongyang Wu",
+            "email": "zhongyang.wu@outlook.com",
+            "date": "2021-01-24T21:02:22Z"
+          },
+          "committer": {
+            "name": "GitHub",
+            "email": "noreply@github.com",
+            "date": "2021-01-24T21:02:22Z"
+          },
+          "message": "fix: basic_otlp example. (#438)\n\nWithout http:// prefix, tonic will throw a panic. This commit fix it by use http://localhost as default endpoint. Also set it in example explicitly.",
+          "tree": {
+            "sha": "8a5acd152e8861f04110be1ff00d60dfbea02e9a",
+            "url": "https://api.github.com/repos/discord/opentelemetry-rust/git/trees/8a5acd152e8861f04110be1ff00d60dfbea02e9a"
+          },
+          "url": "https://api.github.com/repos/discord/opentelemetry-rust/git/commits/22f365f0e58631ffc899f1993cf34aec9d068581",
+          "comment_count": 0,
+          "verification": {
+            "verified": true,
+            "reason": "valid",
+            "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsBcBAABCAAQBQJgDeBeCRBK7hj4Ov3rIwAAdHIIAAZKY1JRlOD/WHKq5bCcIAye\n0QaaLJ+Ifage4fjrlmmAZnV74UZgm/W8Mp3guozN5B4Ys5Vo7ilhSnjIueIdaO42\nHWi+Rp24DJTgLjb0CDN1adxcJM63UzjXieLw70f+phj4q1Fk3e5nPRG01+Au7XN+\n+6dBFPfOJYzyXqpHXytQurWptRnD7V4U/+BvGPND1QZH5U9Zyo96sFgtZsFCkw5m\nxH27+359fVBlvBjvrPdVTpc8ptV2QeVRE94BWJVT9asOrpm1L/lgqRMgjSPJZ7Mg\nfGPZ42JjNLl1gvf+NlKWWiES6bsyuHvyMuHJfXWc3lQl/+PX7mtmoRKauZzp4Oo=\n=Liuk\n-----END PGP SIGNATURE-----\n",
+            "payload": "tree 8a5acd152e8861f04110be1ff00d60dfbea02e9a\nparent 45da275bd4d66cf8816eb9f3c7c15961ae2595f0\nauthor Zhongyang Wu <zhongyang.wu@outlook.com> 1611522142 -0500\ncommitter GitHub <noreply@github.com> 1611522142 -0800\n\nfix: basic_otlp example. (#438)\n\nWithout http:// prefix, tonic will throw a panic. This commit fix it by use http://localhost as default endpoint. Also set it in example explicitly."
+          }
+        },
+        "url": "https://api.github.com/repos/discord/opentelemetry-rust/commits/22f365f0e58631ffc899f1993cf34aec9d068581",
+        "author": {
+          "login": "TommyCpp",
+          "id": 12531298,
+          "node_id": "MDQ6VXNlcjEyNTMxMjk4",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/TommyCpp",
+          "type": "User",
+          "site_admin": false
+        },
+        "committer": {
+          "login": "web-flow",
+          "id": 19864447,
+          "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/web-flow",
+          "type": "User",
+          "site_admin": false
+        },
+        "parents": [
+          {
+            "sha": "45da275bd4d66cf8816eb9f3c7c15961ae2595f0",
+            "url": "https://api.github.com/repos/discord/opentelemetry-rust/commits/45da275bd4d66cf8816eb9f3c7c15961ae2595f0"
+          }
+        ]
+      },
+      {
+        "sha": "45da275bd4d66cf8816eb9f3c7c15961ae2595f0",
+        "node_id": "MDY6Q29tbWl0MjU5NDI4NTMwOjQ1ZGEyNzViZDRkNjZjZjg4MTZlYjlmM2M3YzE1OTYxYWUyNTk1ZjA=",
+        "commit": {
+          "author": {
+            "name": "Dirkjan Ochtman",
+            "email": "dirkjan@ochtman.nl",
+            "date": "2021-01-22T17:50:55Z"
+          },
+          "committer": {
+            "name": "GitHub",
+            "email": "noreply@github.com",
+            "date": "2021-01-22T17:50:55Z"
+          },
+          "message": "opentelemetry: improve the 0.12 changelog (#436)\n\nThe api module (not a crate) was already private, so that entry doesn't seem to be useful\r\nfor most users. Additionally, this missed the removal of the http-related types and\r\nimplementations, which probably is relevant to a larger audience.",
+          "tree": {
+            "sha": "b6115596510f3a302c6d29082aa4e81b7d727cef",
+            "url": "https://api.github.com/repos/discord/opentelemetry-rust/git/trees/b6115596510f3a302c6d29082aa4e81b7d727cef"
+          },
+          "url": "https://api.github.com/repos/discord/opentelemetry-rust/git/commits/45da275bd4d66cf8816eb9f3c7c15961ae2595f0",
+          "comment_count": 0,
+          "verification": {
+            "verified": true,
+            "reason": "valid",
+            "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsBcBAABCAAQBQJgCxB/CRBK7hj4Ov3rIwAAdHIIAHt0Prbi4A6hwcnoOz+Yk9fo\nyjxSprzpLemVYM9+jlmq9p/wxYB4VuCmes45G65CHZquSeqpUUw8bFp/oZ9CbyEz\nqxJiO+8AYP95wpLpXTU0FD+cQlbP4cK2Qmrdu/D9wmGxbojCAP891JRYOWbCAfC5\nF0FrTdzBVmSDJw24tYvMPjM1XapwAJAsSHf+TtZjqf8Qmgezx/k6KuDh1YQBSiDX\n+FmGfOUtl4PBbFsIaVA4rsYx3J59j+QArng9PTkYEpHCZ9ePEiFwW5CiOhH/58cX\n2p/F8Dx++Cc2dwpSc56fIKxCS9y4x7/rYLZchDNqJdG8U0rmk+1XdTBMgvhPv3g=\n=LZVS\n-----END PGP SIGNATURE-----\n",
+            "payload": "tree b6115596510f3a302c6d29082aa4e81b7d727cef\nparent f0bdd11405d510ea6d477f7d7a01bea2beccab57\nauthor Dirkjan Ochtman <dirkjan@ochtman.nl> 1611337855 +0100\ncommitter GitHub <noreply@github.com> 1611337855 -0800\n\nopentelemetry: improve the 0.12 changelog (#436)\n\nThe api module (not a crate) was already private, so that entry doesn't seem to be useful\r\nfor most users. Additionally, this missed the removal of the http-related types and\r\nimplementations, which probably is relevant to a larger audience."
+          }
+        },
+        "url": "https://api.github.com/repos/discord/opentelemetry-rust/commits/45da275bd4d66cf8816eb9f3c7c15961ae2595f0",
+        "author": {
+          "login": "djc",
+          "id": 158471,
+          "node_id": "MDQ6VXNlcjE1ODQ3MQ==",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/djc",
+          "type": "User",
+          "site_admin": false
+        },
+        "committer": {
+          "login": "web-flow",
+          "id": 19864447,
+          "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/web-flow",
+          "type": "User",
+          "site_admin": false
+        },
+        "parents": [
+          {
+            "sha": "f0bdd11405d510ea6d477f7d7a01bea2beccab57",
+            "url": "https://api.github.com/repos/discord/opentelemetry-rust/commits/f0bdd11405d510ea6d477f7d7a01bea2beccab57"
+          }
+        ]
+      },
+      {
+        "sha": "f0bdd11405d510ea6d477f7d7a01bea2beccab57",
+        "node_id": "MDY6Q29tbWl0MjU5NDI4NTMwOmYwYmRkMTE0MDVkNTEwZWE2ZDQ3N2Y3ZDdhMDFiZWEyYmVjY2FiNTc=",
+        "commit": {
+          "author": {
+            "name": "Zhongyang Wu",
+            "email": "zhongyang.wu@outlook.com",
+            "date": "2021-01-22T01:45:28Z"
+          },
+          "committer": {
+            "name": "GitHub",
+            "email": "noreply@github.com",
+            "date": "2021-01-22T01:45:28Z"
+          },
+          "message": "Prepare for v0.12.0 release (#433)",
+          "tree": {
+            "sha": "85417d735b6bd1d2956628bd67eff2d7ec3cdce6",
+            "url": "https://api.github.com/repos/discord/opentelemetry-rust/git/trees/85417d735b6bd1d2956628bd67eff2d7ec3cdce6"
+          },
+          "url": "https://api.github.com/repos/discord/opentelemetry-rust/git/commits/f0bdd11405d510ea6d477f7d7a01bea2beccab57",
+          "comment_count": 0,
+          "verification": {
+            "verified": true,
+            "reason": "valid",
+            "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsBcBAABCAAQBQJgCi45CRBK7hj4Ov3rIwAAdHIIAHrRehhpKr88t+OE+sOGXQnF\naJ83RUSDmXCg/P9k+DkKBhzKiVnOV5SRL9F1irHoB+bBixk+0xfHWv4eFXZnQLzJ\nyzrkNQNvmhNlf4Y4gmrk1Yk76+YfHfxX26IYa+GAJyv5ZcVQP1lBRnzMkSX42bJc\nWQ0TtLqGovDeqXBWKqCT+m4zleUxgnkwTCe+B8dR54KcXwqnnWIjHqji95A/qdB6\nVN4sdQyyCe1rJ5woAQQrDvXApsAqFRqBvV7IetkSEJkQl5qXcAvvobTAP4NfT/cR\nUY/PEKHyts7ZAh9WX0ZGQwkIQvH1DHCXsOIO3yWjFXAqLW4K2FnDJHQw+BDV+1s=\n=bmqw\n-----END PGP SIGNATURE-----\n",
+            "payload": "tree 85417d735b6bd1d2956628bd67eff2d7ec3cdce6\nparent af93ee1df813e93020c898320e11528b61bb0d7a\nauthor Zhongyang Wu <zhongyang.wu@outlook.com> 1611279928 -0500\ncommitter GitHub <noreply@github.com> 1611279928 -0800\n\nPrepare for v0.12.0 release (#433)\n\n"
+          }
+        },
+        "url": "https://api.github.com/repos/discord/opentelemetry-rust/commits/f0bdd11405d510ea6d477f7d7a01bea2beccab57",
+        "author": {
+          "login": "TommyCpp",
+          "id": 12531298,
+          "node_id": "MDQ6VXNlcjEyNTMxMjk4",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/TommyCpp",
+          "type": "User",
+          "site_admin": false
+        },
+        "committer": {
+          "login": "web-flow",
+          "id": 19864447,
+          "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/web-flow",
+          "type": "User",
+          "site_admin": false
+        },
+        "parents": [
+          {
+            "sha": "af93ee1df813e93020c898320e11528b61bb0d7a",
+            "url": "https://api.github.com/repos/discord/opentelemetry-rust/commits/af93ee1df813e93020c898320e11528b61bb0d7a"
+          }
+        ]
+      }
+    ],
     "releases": [],
-    "issues": [],
+    "issues": [
+      {
+        "url": "https://api.github.com/repos/discord/opentelemetry-rust/issues/1",
+        "id": 771245314,
+        "node_id": "MDExOlB1bGxSZXF1ZXN0NTQyODM2MTc5",
+        "number": 1,
+        "title": "Updates our fork of OpenTelemetry",
+        "user": {
+          "login": "willroberts",
+          "id": 2236656,
+          "node_id": "MDQ6VXNlcjIyMzY2NTY=",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/willroberts",
+          "type": "User",
+          "site_admin": false
+        },
+        "labels": [],
+        "state": "closed",
+        "locked": false,
+        "assignee": null,
+        "assignees": [],
+        "milestone": null,
+        "comments": 2,
+        "created_at": "2020-12-18T23:54:25Z",
+        "updated_at": "2020-12-19T00:10:28Z",
+        "closed_at": "2020-12-19T00:10:28Z",
+        "author_association": "NONE",
+        "active_lock_reason": null,
+        "draft": false,
+        "pull_request": {
+          "url": "https://api.github.com/repos/discord/opentelemetry-rust/pulls/1",
+          "merged_at": null
+        },
+        "body": "",
+        "reactions": {
+          "url": "https://api.github.com/repos/discord/opentelemetry-rust/issues/1/reactions",
+          "total_count": 0,
+          "+1": 0,
+          "-1": 0,
+          "laugh": 0,
+          "hooray": 0,
+          "confused": 0,
+          "heart": 0,
+          "rocket": 0,
+          "eyes": 0
+        },
+        "performed_via_github_app": null,
+        "state_reason": null
+      }
+    ],
     "pullRequests": []
   }
 }
