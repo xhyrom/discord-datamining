@@ -339,11 +339,15 @@
         ]
       }
     ],
-    "releases": [
+    "releases": [],
+    "issues": [
       {
-        "url": "https://api.github.com/repos/discord/k8s-buildkite-plugin-public/releases/74644857",
-        "id": 74644857,
-        "author": {
+        "url": "https://api.github.com/repos/discord/k8s-buildkite-plugin-public/issues/3",
+        "id": 1365199667,
+        "node_id": "PR_kwDOH1NZFs4-igrP",
+        "number": 3,
+        "title": "Support passing an agent type argument to jsonnet",
+        "user": {
           "login": "tonydelanuez",
           "id": 17029312,
           "node_id": "MDQ6VXNlcjE3MDI5MzEy",
@@ -352,19 +356,136 @@
           "type": "User",
           "site_admin": false
         },
-        "node_id": "RE_kwDOH1NZFs4Ecv15",
-        "tag_name": "v1.2.5+0.1",
-        "target_commitish": "main",
-        "name": "Track step container index",
+        "labels": [],
+        "state": "closed",
+        "locked": false,
+        "assignee": null,
+        "assignees": [],
+        "milestone": null,
+        "comments": 0,
+        "created_at": "2022-09-07T21:20:06Z",
+        "updated_at": "2022-09-13T16:19:43Z",
+        "closed_at": "2022-09-13T16:19:43Z",
+        "author_association": "COLLABORATOR",
+        "active_lock_reason": null,
         "draft": false,
-        "prerelease": false,
-        "created_at": "2022-08-17T16:39:18Z",
-        "published_at": "2022-08-17T16:43:17Z",
-        "assets": [],
-        "body": "Matches version 1.2.5 of the EmbarkStudios/k8s-buildkite-plugin release with additional features: \r\n\r\n1. Tracking proper index of the step container\r\n2. Making the step container the default log source"
+        "pull_request": {
+          "url": "https://api.github.com/repos/discord/k8s-buildkite-plugin-public/pulls/3",
+          "merged_at": null
+        },
+        "body": null,
+        "reactions": {
+          "url": "https://api.github.com/repos/discord/k8s-buildkite-plugin-public/issues/3/reactions",
+          "total_count": 0,
+          "+1": 0,
+          "-1": 0,
+          "laugh": 0,
+          "hooray": 0,
+          "confused": 0,
+          "heart": 0,
+          "rocket": 0,
+          "eyes": 0
+        },
+        "performed_via_github_app": null,
+        "state_reason": null
+      },
+      {
+        "url": "https://api.github.com/repos/discord/k8s-buildkite-plugin-public/issues/2",
+        "id": 1344636490,
+        "node_id": "PR_kwDOH1NZFs49ePoP",
+        "number": 2,
+        "title": "Check init container indices for 'bootstrap' name",
+        "user": {
+          "login": "tonydelanuez",
+          "id": 17029312,
+          "node_id": "MDQ6VXNlcjE3MDI5MzEy",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/tonydelanuez",
+          "type": "User",
+          "site_admin": false
+        },
+        "labels": [],
+        "state": "closed",
+        "locked": false,
+        "assignee": null,
+        "assignees": [],
+        "milestone": null,
+        "comments": 0,
+        "created_at": "2022-08-19T16:10:06Z",
+        "updated_at": "2022-08-19T16:10:16Z",
+        "closed_at": "2022-08-19T16:10:16Z",
+        "author_association": "COLLABORATOR",
+        "active_lock_reason": null,
+        "draft": false,
+        "pull_request": {
+          "url": "https://api.github.com/repos/discord/k8s-buildkite-plugin-public/pulls/2",
+          "merged_at": "2022-08-19T16:10:16Z"
+        },
+        "body": "Moving the `step_index` export after the exit code status check on `get_pod_status` and doing the same index tracking for the bootstrap initContainer. ",
+        "reactions": {
+          "url": "https://api.github.com/repos/discord/k8s-buildkite-plugin-public/issues/2/reactions",
+          "total_count": 0,
+          "+1": 0,
+          "-1": 0,
+          "laugh": 0,
+          "hooray": 0,
+          "confused": 0,
+          "heart": 0,
+          "rocket": 0,
+          "eyes": 0
+        },
+        "performed_via_github_app": null,
+        "state_reason": null
+      },
+      {
+        "url": "https://api.github.com/repos/discord/k8s-buildkite-plugin-public/issues/1",
+        "id": 1342025433,
+        "node_id": "PR_kwDOH1NZFs49Vl5A",
+        "number": 1,
+        "title": "Fix container status indices",
+        "user": {
+          "login": "tonydelanuez",
+          "id": 17029312,
+          "node_id": "MDQ6VXNlcjE3MDI5MzEy",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/tonydelanuez",
+          "type": "User",
+          "site_admin": false
+        },
+        "labels": [],
+        "state": "closed",
+        "locked": false,
+        "assignee": null,
+        "assignees": [],
+        "milestone": null,
+        "comments": 0,
+        "created_at": "2022-08-17T16:38:53Z",
+        "updated_at": "2022-08-17T16:39:18Z",
+        "closed_at": "2022-08-17T16:39:18Z",
+        "author_association": "COLLABORATOR",
+        "active_lock_reason": null,
+        "draft": false,
+        "pull_request": {
+          "url": "https://api.github.com/repos/discord/k8s-buildkite-plugin-public/pulls/1",
+          "merged_at": "2022-08-17T16:39:18Z"
+        },
+        "body": "The plugin assumes the step container is always index 0 of the container array for the statuses/spec. This may not be true with sidecar deployments. Fetch the index of the step container and use it when checking container statuses.\r\n\r\nAdditionally, declare the step container to be the default logging/exec source.  ",
+        "reactions": {
+          "url": "https://api.github.com/repos/discord/k8s-buildkite-plugin-public/issues/1/reactions",
+          "total_count": 0,
+          "+1": 0,
+          "-1": 0,
+          "laugh": 0,
+          "hooray": 0,
+          "confused": 0,
+          "heart": 0,
+          "rocket": 0,
+          "eyes": 0
+        },
+        "performed_via_github_app": null,
+        "state_reason": null
       }
     ],
-    "issues": [],
     "pullRequests": []
   }
 }

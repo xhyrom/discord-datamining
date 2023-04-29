@@ -332,7 +332,674 @@
       }
     ],
     "releases": [],
-    "issues": [],
-    "pullRequests": []
+    "issues": [
+      {
+        "url": "https://api.github.com/repos/discord/heroku-sample-app/issues/4",
+        "id": 1445708149,
+        "node_id": "I_kwDOHeMy385WK8F1",
+        "number": 4,
+        "title": "Link is now delete",
+        "user": {
+          "login": "Snipeur060",
+          "id": 61784407,
+          "node_id": "MDQ6VXNlcjYxNzg0NDA3",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/Snipeur060",
+          "type": "User",
+          "site_admin": false
+        },
+        "labels": [],
+        "state": "open",
+        "locked": false,
+        "assignee": null,
+        "assignees": [],
+        "milestone": null,
+        "comments": 0,
+        "created_at": "2022-11-11T16:20:46Z",
+        "updated_at": "2022-11-11T16:20:46Z",
+        "closed_at": null,
+        "author_association": "NONE",
+        "active_lock_reason": null,
+        "body": "https://discord.com/developers/docs/tutorials/hosting-on-heroku#hosting-on-heroku\r\nIs delete 404 :-(",
+        "reactions": {
+          "url": "https://api.github.com/repos/discord/heroku-sample-app/issues/4/reactions",
+          "total_count": 0,
+          "+1": 0,
+          "-1": 0,
+          "laugh": 0,
+          "hooray": 0,
+          "confused": 0,
+          "heart": 0,
+          "rocket": 0,
+          "eyes": 0
+        },
+        "performed_via_github_app": null,
+        "state_reason": null
+      },
+      {
+        "url": "https://api.github.com/repos/discord/heroku-sample-app/issues/3",
+        "id": 1334126440,
+        "node_id": "PR_kwDOHeMy38487qep",
+        "number": 3,
+        "title": "discord.js v14 support",
+        "user": {
+          "login": "gx1285",
+          "id": 78240988,
+          "node_id": "MDQ6VXNlcjc4MjQwOTg4",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/gx1285",
+          "type": "User",
+          "site_admin": false
+        },
+        "labels": [],
+        "state": "open",
+        "locked": false,
+        "assignee": null,
+        "assignees": [],
+        "milestone": null,
+        "comments": 0,
+        "created_at": "2022-08-10T06:11:05Z",
+        "updated_at": "2022-08-10T06:11:05Z",
+        "closed_at": null,
+        "author_association": "NONE",
+        "active_lock_reason": null,
+        "draft": false,
+        "pull_request": {
+          "url": "https://api.github.com/repos/discord/heroku-sample-app/pulls/3",
+          "merged_at": null
+        },
+        "body": null,
+        "reactions": {
+          "url": "https://api.github.com/repos/discord/heroku-sample-app/issues/3/reactions",
+          "total_count": 0,
+          "+1": 0,
+          "-1": 0,
+          "laugh": 0,
+          "hooray": 0,
+          "confused": 0,
+          "heart": 0,
+          "rocket": 0,
+          "eyes": 0
+        },
+        "performed_via_github_app": null,
+        "state_reason": null
+      },
+      {
+        "url": "https://api.github.com/repos/discord/heroku-sample-app/issues/2",
+        "id": 1268258774,
+        "node_id": "PR_kwDOHeMy3845gO_f",
+        "number": 2,
+        "title": "Update README.md",
+        "user": {
+          "login": "OnlyTrueStar",
+          "id": 68421054,
+          "node_id": "MDQ6VXNlcjY4NDIxMDU0",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/OnlyTrueStar",
+          "type": "User",
+          "site_admin": false
+        },
+        "labels": [],
+        "state": "closed",
+        "locked": false,
+        "assignee": null,
+        "assignees": [],
+        "milestone": null,
+        "comments": 0,
+        "created_at": "2022-06-11T12:17:29Z",
+        "updated_at": "2022-06-12T15:08:51Z",
+        "closed_at": "2022-06-12T15:08:51Z",
+        "author_association": "NONE",
+        "active_lock_reason": null,
+        "draft": false,
+        "pull_request": {
+          "url": "https://api.github.com/repos/discord/heroku-sample-app/pulls/2",
+          "merged_at": null
+        },
+        "body": null,
+        "reactions": {
+          "url": "https://api.github.com/repos/discord/heroku-sample-app/issues/2/reactions",
+          "total_count": 0,
+          "+1": 0,
+          "-1": 0,
+          "laugh": 0,
+          "hooray": 0,
+          "confused": 0,
+          "heart": 0,
+          "rocket": 0,
+          "eyes": 0
+        },
+        "performed_via_github_app": null,
+        "state_reason": null
+      },
+      {
+        "url": "https://api.github.com/repos/discord/heroku-sample-app/issues/1",
+        "id": 1268255236,
+        "node_id": "PR_kwDOHeMy3845gOPu",
+        "number": 1,
+        "title": "How Procfile Works",
+        "user": {
+          "login": "OnlyTrueStar",
+          "id": 68421054,
+          "node_id": "MDQ6VXNlcjY4NDIxMDU0",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/OnlyTrueStar",
+          "type": "User",
+          "site_admin": false
+        },
+        "labels": [],
+        "state": "closed",
+        "locked": false,
+        "assignee": null,
+        "assignees": [],
+        "milestone": null,
+        "comments": 0,
+        "created_at": "2022-06-11T12:10:00Z",
+        "updated_at": "2022-06-12T15:08:51Z",
+        "closed_at": "2022-06-12T15:08:51Z",
+        "author_association": "NONE",
+        "active_lock_reason": null,
+        "draft": false,
+        "pull_request": {
+          "url": "https://api.github.com/repos/discord/heroku-sample-app/pulls/1",
+          "merged_at": null
+        },
+        "body": null,
+        "reactions": {
+          "url": "https://api.github.com/repos/discord/heroku-sample-app/issues/1/reactions",
+          "total_count": 0,
+          "+1": 0,
+          "-1": 0,
+          "laugh": 0,
+          "hooray": 0,
+          "confused": 0,
+          "heart": 0,
+          "rocket": 0,
+          "eyes": 0
+        },
+        "performed_via_github_app": null,
+        "state_reason": null
+      }
+    ],
+    "pullRequests": [
+      {
+        "url": "https://api.github.com/repos/discord/heroku-sample-app/pulls/3",
+        "id": 1022273449,
+        "node_id": "PR_kwDOHeMy38487qep",
+        "number": 3,
+        "state": "open",
+        "locked": false,
+        "title": "discord.js v14 support",
+        "user": {
+          "login": "gx1285",
+          "id": 78240988,
+          "node_id": "MDQ6VXNlcjc4MjQwOTg4",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/gx1285",
+          "type": "User",
+          "site_admin": false
+        },
+        "body": null,
+        "created_at": "2022-08-10T06:11:05Z",
+        "updated_at": "2022-08-10T06:11:05Z",
+        "closed_at": null,
+        "merged_at": null,
+        "merge_commit_sha": "03263ea224547ffeb45753c720cdea601448e137",
+        "assignee": null,
+        "assignees": [],
+        "requested_reviewers": [],
+        "requested_teams": [],
+        "labels": [],
+        "milestone": null,
+        "draft": false,
+        "head": {
+          "label": "gx1285:main",
+          "ref": "main",
+          "sha": "6ea1c0fc641ab7b1f9e3f930d7f5011c94771ff6",
+          "user": {
+            "login": "gx1285",
+            "id": 78240988,
+            "node_id": "MDQ6VXNlcjc4MjQwOTg4",
+            "gravatar_id": "",
+            "url": "https://api.github.com/users/gx1285",
+            "type": "User",
+            "site_admin": false
+          },
+          "repo": {
+            "id": 523212900,
+            "node_id": "R_kgDOHy-YZA",
+            "name": "heroku-sample-app",
+            "full_name": "gx1285/heroku-sample-app",
+            "private": false,
+            "owner": {
+              "login": "gx1285",
+              "id": 78240988,
+              "node_id": "MDQ6VXNlcjc4MjQwOTg4",
+              "gravatar_id": "",
+              "url": "https://api.github.com/users/gx1285",
+              "type": "User",
+              "site_admin": false
+            },
+            "description": "Example discord bot using Heroku",
+            "fork": true,
+            "url": "https://api.github.com/repos/gx1285/heroku-sample-app",
+            "created_at": "2022-08-10T05:29:34Z",
+            "updated_at": "2022-08-10T06:02:53Z",
+            "pushed_at": "2022-08-10T06:02:50Z",
+            "homepage": null,
+            "size": 2011,
+            "stargazers_count": 0,
+            "watchers_count": 0,
+            "language": "JavaScript",
+            "has_issues": false,
+            "has_projects": true,
+            "has_downloads": true,
+            "has_wiki": true,
+            "has_pages": false,
+            "has_discussions": false,
+            "forks_count": 0,
+            "archived": false,
+            "disabled": false,
+            "open_issues_count": 0,
+            "license": {
+              "key": "mit",
+              "name": "MIT License",
+              "spdx_id": "MIT",
+              "url": "https://api.github.com/licenses/mit",
+              "node_id": "MDc6TGljZW5zZTEz"
+            },
+            "allow_forking": true,
+            "is_template": false,
+            "web_commit_signoff_required": false,
+            "topics": [],
+            "visibility": "public",
+            "forks": 0,
+            "open_issues": 0,
+            "watchers": 0,
+            "default_branch": "main"
+          }
+        },
+        "base": {
+          "label": "discord:main",
+          "ref": "main",
+          "sha": "f57bfd578caa8a166f9436087baf5e448cbd91e2",
+          "user": {
+            "login": "discord",
+            "id": 1965106,
+            "node_id": "MDEyOk9yZ2FuaXphdGlvbjE5NjUxMDY=",
+            "gravatar_id": "",
+            "url": "https://api.github.com/users/discord",
+            "type": "Organization",
+            "site_admin": false
+          },
+          "repo": {
+            "id": 501428959,
+            "node_id": "R_kgDOHeMy3w",
+            "name": "heroku-sample-app",
+            "full_name": "discord/heroku-sample-app",
+            "private": false,
+            "owner": {
+              "login": "discord",
+              "id": 1965106,
+              "node_id": "MDEyOk9yZ2FuaXphdGlvbjE5NjUxMDY=",
+              "gravatar_id": "",
+              "url": "https://api.github.com/users/discord",
+              "type": "Organization",
+              "site_admin": false
+            },
+            "description": "Example discord bot using Heroku",
+            "fork": false,
+            "url": "https://api.github.com/repos/discord/heroku-sample-app",
+            "created_at": "2022-06-08T22:26:08Z",
+            "updated_at": "2023-02-23T00:00:12Z",
+            "pushed_at": "2022-08-10T06:11:06Z",
+            "homepage": null,
+            "size": 1998,
+            "stargazers_count": 10,
+            "watchers_count": 10,
+            "language": "JavaScript",
+            "has_issues": true,
+            "has_projects": true,
+            "has_downloads": true,
+            "has_wiki": true,
+            "has_pages": false,
+            "has_discussions": false,
+            "forks_count": 13,
+            "archived": false,
+            "disabled": false,
+            "open_issues_count": 2,
+            "license": {
+              "key": "mit",
+              "name": "MIT License",
+              "spdx_id": "MIT",
+              "url": "https://api.github.com/licenses/mit",
+              "node_id": "MDc6TGljZW5zZTEz"
+            },
+            "allow_forking": true,
+            "is_template": false,
+            "web_commit_signoff_required": false,
+            "topics": [],
+            "visibility": "public",
+            "forks": 13,
+            "open_issues": 2,
+            "watchers": 10,
+            "default_branch": "main"
+          }
+        },
+        "_links": {
+          "self": {
+            "href": "https://api.github.com/repos/discord/heroku-sample-app/pulls/3"
+          },
+          "html": {
+            "href": "https://github.com/discord/heroku-sample-app/pull/3"
+          },
+          "issue": {
+            "href": "https://api.github.com/repos/discord/heroku-sample-app/issues/3"
+          },
+          "comments": {
+            "href": "https://api.github.com/repos/discord/heroku-sample-app/issues/3/comments"
+          },
+          "review_comments": {
+            "href": "https://api.github.com/repos/discord/heroku-sample-app/pulls/3/comments"
+          },
+          "review_comment": {
+            "href": "https://api.github.com/repos/discord/heroku-sample-app/pulls/comments{/number}"
+          },
+          "commits": {
+            "href": "https://api.github.com/repos/discord/heroku-sample-app/pulls/3/commits"
+          },
+          "statuses": {
+            "href": "https://api.github.com/repos/discord/heroku-sample-app/statuses/6ea1c0fc641ab7b1f9e3f930d7f5011c94771ff6"
+          }
+        },
+        "author_association": "NONE",
+        "auto_merge": null,
+        "active_lock_reason": null
+      },
+      {
+        "url": "https://api.github.com/repos/discord/heroku-sample-app/pulls/2",
+        "id": 964751327,
+        "node_id": "PR_kwDOHeMy3845gO_f",
+        "number": 2,
+        "state": "closed",
+        "locked": false,
+        "title": "Update README.md",
+        "user": {
+          "login": "OnlyTrueStar",
+          "id": 68421054,
+          "node_id": "MDQ6VXNlcjY4NDIxMDU0",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/OnlyTrueStar",
+          "type": "User",
+          "site_admin": false
+        },
+        "body": null,
+        "created_at": "2022-06-11T12:17:29Z",
+        "updated_at": "2022-06-12T15:08:51Z",
+        "closed_at": "2022-06-12T15:08:51Z",
+        "merged_at": null,
+        "merge_commit_sha": "bf237675ba8ce197d07a53a80d978075718eb0cf",
+        "assignee": null,
+        "assignees": [],
+        "requested_reviewers": [],
+        "requested_teams": [],
+        "labels": [],
+        "milestone": null,
+        "draft": false,
+        "head": {
+          "label": "OnlyTrueStar:Update",
+          "ref": "Update",
+          "sha": "384bffa0bad58a7ca606c3417ad376c96ad3e59e",
+          "user": {
+            "login": "OnlyTrueStar",
+            "id": 68421054,
+            "node_id": "MDQ6VXNlcjY4NDIxMDU0",
+            "gravatar_id": "",
+            "url": "https://api.github.com/users/OnlyTrueStar",
+            "type": "User",
+            "site_admin": false
+          },
+          "repo": null
+        },
+        "base": {
+          "label": "discord:main",
+          "ref": "main",
+          "sha": "f57bfd578caa8a166f9436087baf5e448cbd91e2",
+          "user": {
+            "login": "discord",
+            "id": 1965106,
+            "node_id": "MDEyOk9yZ2FuaXphdGlvbjE5NjUxMDY=",
+            "gravatar_id": "",
+            "url": "https://api.github.com/users/discord",
+            "type": "Organization",
+            "site_admin": false
+          },
+          "repo": {
+            "id": 501428959,
+            "node_id": "R_kgDOHeMy3w",
+            "name": "heroku-sample-app",
+            "full_name": "discord/heroku-sample-app",
+            "private": false,
+            "owner": {
+              "login": "discord",
+              "id": 1965106,
+              "node_id": "MDEyOk9yZ2FuaXphdGlvbjE5NjUxMDY=",
+              "gravatar_id": "",
+              "url": "https://api.github.com/users/discord",
+              "type": "Organization",
+              "site_admin": false
+            },
+            "description": "Example discord bot using Heroku",
+            "fork": false,
+            "url": "https://api.github.com/repos/discord/heroku-sample-app",
+            "created_at": "2022-06-08T22:26:08Z",
+            "updated_at": "2023-02-23T00:00:12Z",
+            "pushed_at": "2022-08-10T06:11:06Z",
+            "homepage": null,
+            "size": 1998,
+            "stargazers_count": 10,
+            "watchers_count": 10,
+            "language": "JavaScript",
+            "has_issues": true,
+            "has_projects": true,
+            "has_downloads": true,
+            "has_wiki": true,
+            "has_pages": false,
+            "has_discussions": false,
+            "forks_count": 13,
+            "archived": false,
+            "disabled": false,
+            "open_issues_count": 2,
+            "license": {
+              "key": "mit",
+              "name": "MIT License",
+              "spdx_id": "MIT",
+              "url": "https://api.github.com/licenses/mit",
+              "node_id": "MDc6TGljZW5zZTEz"
+            },
+            "allow_forking": true,
+            "is_template": false,
+            "web_commit_signoff_required": false,
+            "topics": [],
+            "visibility": "public",
+            "forks": 13,
+            "open_issues": 2,
+            "watchers": 10,
+            "default_branch": "main"
+          }
+        },
+        "_links": {
+          "self": {
+            "href": "https://api.github.com/repos/discord/heroku-sample-app/pulls/2"
+          },
+          "html": {
+            "href": "https://github.com/discord/heroku-sample-app/pull/2"
+          },
+          "issue": {
+            "href": "https://api.github.com/repos/discord/heroku-sample-app/issues/2"
+          },
+          "comments": {
+            "href": "https://api.github.com/repos/discord/heroku-sample-app/issues/2/comments"
+          },
+          "review_comments": {
+            "href": "https://api.github.com/repos/discord/heroku-sample-app/pulls/2/comments"
+          },
+          "review_comment": {
+            "href": "https://api.github.com/repos/discord/heroku-sample-app/pulls/comments{/number}"
+          },
+          "commits": {
+            "href": "https://api.github.com/repos/discord/heroku-sample-app/pulls/2/commits"
+          },
+          "statuses": {
+            "href": "https://api.github.com/repos/discord/heroku-sample-app/statuses/384bffa0bad58a7ca606c3417ad376c96ad3e59e"
+          }
+        },
+        "author_association": "NONE",
+        "auto_merge": null,
+        "active_lock_reason": null
+      },
+      {
+        "url": "https://api.github.com/repos/discord/heroku-sample-app/pulls/1",
+        "id": 964748270,
+        "node_id": "PR_kwDOHeMy3845gOPu",
+        "number": 1,
+        "state": "closed",
+        "locked": false,
+        "title": "How Procfile Works",
+        "user": {
+          "login": "OnlyTrueStar",
+          "id": 68421054,
+          "node_id": "MDQ6VXNlcjY4NDIxMDU0",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/OnlyTrueStar",
+          "type": "User",
+          "site_admin": false
+        },
+        "body": null,
+        "created_at": "2022-06-11T12:10:00Z",
+        "updated_at": "2022-06-12T15:08:51Z",
+        "closed_at": "2022-06-12T15:08:51Z",
+        "merged_at": null,
+        "merge_commit_sha": "7bb9bd1d11626fedb9878297b5a3d6cb47f3efc0",
+        "assignee": null,
+        "assignees": [],
+        "requested_reviewers": [],
+        "requested_teams": [],
+        "labels": [],
+        "milestone": null,
+        "draft": false,
+        "head": {
+          "label": "OnlyTrueStar:fix-readme-typo",
+          "ref": "fix-readme-typo",
+          "sha": "5e13266d145f5f15066cf1d4fd0aa520d7ddda2e",
+          "user": {
+            "login": "OnlyTrueStar",
+            "id": 68421054,
+            "node_id": "MDQ6VXNlcjY4NDIxMDU0",
+            "gravatar_id": "",
+            "url": "https://api.github.com/users/OnlyTrueStar",
+            "type": "User",
+            "site_admin": false
+          },
+          "repo": null
+        },
+        "base": {
+          "label": "discord:main",
+          "ref": "main",
+          "sha": "f57bfd578caa8a166f9436087baf5e448cbd91e2",
+          "user": {
+            "login": "discord",
+            "id": 1965106,
+            "node_id": "MDEyOk9yZ2FuaXphdGlvbjE5NjUxMDY=",
+            "gravatar_id": "",
+            "url": "https://api.github.com/users/discord",
+            "type": "Organization",
+            "site_admin": false
+          },
+          "repo": {
+            "id": 501428959,
+            "node_id": "R_kgDOHeMy3w",
+            "name": "heroku-sample-app",
+            "full_name": "discord/heroku-sample-app",
+            "private": false,
+            "owner": {
+              "login": "discord",
+              "id": 1965106,
+              "node_id": "MDEyOk9yZ2FuaXphdGlvbjE5NjUxMDY=",
+              "gravatar_id": "",
+              "url": "https://api.github.com/users/discord",
+              "type": "Organization",
+              "site_admin": false
+            },
+            "description": "Example discord bot using Heroku",
+            "fork": false,
+            "url": "https://api.github.com/repos/discord/heroku-sample-app",
+            "created_at": "2022-06-08T22:26:08Z",
+            "updated_at": "2023-02-23T00:00:12Z",
+            "pushed_at": "2022-08-10T06:11:06Z",
+            "homepage": null,
+            "size": 1998,
+            "stargazers_count": 10,
+            "watchers_count": 10,
+            "language": "JavaScript",
+            "has_issues": true,
+            "has_projects": true,
+            "has_downloads": true,
+            "has_wiki": true,
+            "has_pages": false,
+            "has_discussions": false,
+            "forks_count": 13,
+            "archived": false,
+            "disabled": false,
+            "open_issues_count": 2,
+            "license": {
+              "key": "mit",
+              "name": "MIT License",
+              "spdx_id": "MIT",
+              "url": "https://api.github.com/licenses/mit",
+              "node_id": "MDc6TGljZW5zZTEz"
+            },
+            "allow_forking": true,
+            "is_template": false,
+            "web_commit_signoff_required": false,
+            "topics": [],
+            "visibility": "public",
+            "forks": 13,
+            "open_issues": 2,
+            "watchers": 10,
+            "default_branch": "main"
+          }
+        },
+        "_links": {
+          "self": {
+            "href": "https://api.github.com/repos/discord/heroku-sample-app/pulls/1"
+          },
+          "html": {
+            "href": "https://github.com/discord/heroku-sample-app/pull/1"
+          },
+          "issue": {
+            "href": "https://api.github.com/repos/discord/heroku-sample-app/issues/1"
+          },
+          "comments": {
+            "href": "https://api.github.com/repos/discord/heroku-sample-app/issues/1/comments"
+          },
+          "review_comments": {
+            "href": "https://api.github.com/repos/discord/heroku-sample-app/pulls/1/comments"
+          },
+          "review_comment": {
+            "href": "https://api.github.com/repos/discord/heroku-sample-app/pulls/comments{/number}"
+          },
+          "commits": {
+            "href": "https://api.github.com/repos/discord/heroku-sample-app/pulls/1/commits"
+          },
+          "statuses": {
+            "href": "https://api.github.com/repos/discord/heroku-sample-app/statuses/5e13266d145f5f15066cf1d4fd0aa520d7ddda2e"
+          }
+        },
+        "author_association": "NONE",
+        "auto_merge": null,
+        "active_lock_reason": null
+      }
+    ]
   }
 }

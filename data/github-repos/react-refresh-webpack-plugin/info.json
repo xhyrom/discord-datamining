@@ -57,32 +57,7 @@
     "triage": false,
     "pull": false
   },
-  "branches": [
-    {
-      "name": "disable-source-map",
-      "commit": {
-        "sha": "f8492d975d8a3dec3a3bbb1862a043798827bf92",
-        "url": "https://api.github.com/repos/discord/react-refresh-webpack-plugin/commits/f8492d975d8a3dec3a3bbb1862a043798827bf92"
-      },
-      "protected": false
-    },
-    {
-      "name": "master",
-      "commit": {
-        "sha": "a220083e479fbbe801e904c6322215e49b38c535",
-        "url": "https://api.github.com/repos/discord/react-refresh-webpack-plugin/commits/a220083e479fbbe801e904c6322215e49b38c535"
-      },
-      "protected": false
-    },
-    {
-      "name": "worker-hotfix",
-      "commit": {
-        "sha": "27e4d369abcfc9f2383896905a204b7061a83fc4",
-        "url": "https://api.github.com/repos/discord/react-refresh-webpack-plugin/commits/27e4d369abcfc9f2383896905a204b7061a83fc4"
-      },
-      "protected": false
-    }
-  ],
+  "branches": [],
   "last5": {
     "commits": [
       {
