@@ -57,9 +57,405 @@
     "triage": false,
     "pull": false
   },
-  "branches": [],
+  "branches": [
+    {
+      "name": "ObjectTypeIndexer",
+      "commit": {
+        "sha": "82c87c46cb543d9186c2524252ebfd43ab2f76b6",
+        "url": "https://api.github.com/repos/discord/eslint-plugin-flowtype/commits/82c87c46cb543d9186c2524252ebfd43ab2f76b6"
+      },
+      "protected": false
+    },
+    {
+      "name": "aaron-harvey-feature/no-primitive-constructor-types",
+      "commit": {
+        "sha": "ceea11c48f65f9d16032e4a673ae010736a56aec",
+        "url": "https://api.github.com/repos/discord/eslint-plugin-flowtype/commits/ceea11c48f65f9d16032e4a673ae010736a56aec"
+      },
+      "protected": false
+    },
+    {
+      "name": "amilajack-patch-1",
+      "commit": {
+        "sha": "b8f8412e2ed7b785f38692a18c5392ecf57e6319",
+        "url": "https://api.github.com/repos/discord/eslint-plugin-flowtype/commits/b8f8412e2ed7b785f38692a18c5392ecf57e6319"
+      },
+      "protected": false
+    },
+    {
+      "name": "deprecateValidSyntax",
+      "commit": {
+        "sha": "ed24796a4de8cf551961b0ffb3b71f7a4c6668e0",
+        "url": "https://api.github.com/repos/discord/eslint-plugin-flowtype/commits/ed24796a4de8cf551961b0ffb3b71f7a4c6668e0"
+      },
+      "protected": false
+    },
+    {
+      "name": "discord",
+      "commit": {
+        "sha": "712d840e0e72396a12a3e44021227f555306b75c",
+        "url": "https://api.github.com/repos/discord/eslint-plugin-flowtype/commits/712d840e0e72396a12a3e44021227f555306b75c"
+      },
+      "protected": false
+    },
+    {
+      "name": "feat/issue-236-prefer-read-only-array",
+      "commit": {
+        "sha": "fe5df9f25888f3e83fae9a4cec40467335a92320",
+        "url": "https://api.github.com/repos/discord/eslint-plugin-flowtype/commits/fe5df9f25888f3e83fae9a4cec40467335a92320"
+      },
+      "protected": false
+    },
+    {
+      "name": "feature/add-commit-linting",
+      "commit": {
+        "sha": "55c362301af8065edef65c64cb9fc878e0a42361",
+        "url": "https://api.github.com/repos/discord/eslint-plugin-flowtype/commits/55c362301af8065edef65c64cb9fc878e0a42361"
+      },
+      "protected": false
+    },
+    {
+      "name": "feature/add-jsonlint",
+      "commit": {
+        "sha": "8838dd71b1529c2eafc51d925e7cda1fdfb153f5",
+        "url": "https://api.github.com/repos/discord/eslint-plugin-flowtype/commits/8838dd71b1529c2eafc51d925e7cda1fdfb153f5"
+      },
+      "protected": false
+    },
+    {
+      "name": "feature/add-recommended-rules-preset",
+      "commit": {
+        "sha": "3684a1940f8a531cbf33dbe755f3b33367fa25cb",
+        "url": "https://api.github.com/repos/discord/eslint-plugin-flowtype/commits/3684a1940f8a531cbf33dbe755f3b33367fa25cb"
+      },
+      "protected": false
+    },
+    {
+      "name": "feature/sort-keys",
+      "commit": {
+        "sha": "f6b8deb187decfd0dc91262961444052c848a6a1",
+        "url": "https://api.github.com/repos/discord/eslint-plugin-flowtype/commits/f6b8deb187decfd0dc91262961444052c848a6a1"
+      },
+      "protected": false
+    },
+    {
+      "name": "fix-qualified-typeof",
+      "commit": {
+        "sha": "dc80c18a7480cf547c81114508f314c5d19ead3d",
+        "url": "https://api.github.com/repos/discord/eslint-plugin-flowtype/commits/dc80c18a7480cf547c81114508f314c5d19ead3d"
+      },
+      "protected": false
+    },
+    {
+      "name": "master",
+      "commit": {
+        "sha": "712d840e0e72396a12a3e44021227f555306b75c",
+        "url": "https://api.github.com/repos/discord/eslint-plugin-flowtype/commits/712d840e0e72396a12a3e44021227f555306b75c"
+      },
+      "protected": false
+    },
+    {
+      "name": "objectTypeDelimiter",
+      "commit": {
+        "sha": "a99721bddb005569d56f1459409aac54d4606102",
+        "url": "https://api.github.com/repos/discord/eslint-plugin-flowtype/commits/a99721bddb005569d56f1459409aac54d4606102"
+      },
+      "protected": false
+    },
+    {
+      "name": "typeCastColonSpacing",
+      "commit": {
+        "sha": "0e0081f2a031a46fb180a40a2f0562d7767b679a",
+        "url": "https://api.github.com/repos/discord/eslint-plugin-flowtype/commits/0e0081f2a031a46fb180a40a2f0562d7767b679a"
+      },
+      "protected": false
+    },
+    {
+      "name": "zertosh-port-flow-vars",
+      "commit": {
+        "sha": "abbc994189781c6aa1eda22422915d4eb6823ca3",
+        "url": "https://api.github.com/repos/discord/eslint-plugin-flowtype/commits/abbc994189781c6aa1eda22422915d4eb6823ca3"
+      },
+      "protected": false
+    }
+  ],
   "last5": {
-    "commits": [],
+    "commits": [
+      {
+        "sha": "712d840e0e72396a12a3e44021227f555306b75c",
+        "node_id": "MDY6Q29tbWl0MTkwNDgzNjAyOjcxMmQ4NDBlMGU3MjM5NmExMmEzZTQ0MDIxMjI3ZjU1NTMwNmI3NWM=",
+        "commit": {
+          "author": {
+            "name": "Juriy Zaytsev",
+            "email": "kangax@gmail.com",
+            "date": "2019-05-23T06:59:33Z"
+          },
+          "committer": {
+            "name": "Gajus Kuizinas",
+            "email": "gajus@gajus.com",
+            "date": "2019-05-23T06:59:33Z"
+          },
+          "message": "fix: requireReadOnlyReactProps (#406)\n\n* docs: add GitSpo mentions badge\r\n\r\n* docs: generate docs\r\n\r\n* fix: update GitSpo badge URL\r\n\r\n* docs: generate docs\r\n\r\n* Make  be treated as\r\n\r\n* Add tests\r\n\r\n* Fix remaining tests\r\n\r\n* Fix whitespace",
+          "tree": {
+            "sha": "0acd27578bc2870d7c6e67c454ff980491573169",
+            "url": "https://api.github.com/repos/discord/eslint-plugin-flowtype/git/trees/0acd27578bc2870d7c6e67c454ff980491573169"
+          },
+          "url": "https://api.github.com/repos/discord/eslint-plugin-flowtype/git/commits/712d840e0e72396a12a3e44021227f555306b75c",
+          "comment_count": 0,
+          "verification": {
+            "verified": false,
+            "reason": "unsigned",
+            "signature": null,
+            "payload": null
+          }
+        },
+        "url": "https://api.github.com/repos/discord/eslint-plugin-flowtype/commits/712d840e0e72396a12a3e44021227f555306b75c",
+        "author": {
+          "login": "kangax",
+          "id": 383,
+          "node_id": "MDQ6VXNlcjM4Mw==",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/kangax",
+          "type": "User",
+          "site_admin": false
+        },
+        "committer": {
+          "login": "gajus",
+          "id": 973543,
+          "node_id": "MDQ6VXNlcjk3MzU0Mw==",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/gajus",
+          "type": "User",
+          "site_admin": false
+        },
+        "parents": [
+          {
+            "sha": "22dad373610fb468ca31e7759b6c815a7e812c72",
+            "url": "https://api.github.com/repos/discord/eslint-plugin-flowtype/commits/22dad373610fb468ca31e7759b6c815a7e812c72"
+          }
+        ]
+      },
+      {
+        "sha": "22dad373610fb468ca31e7759b6c815a7e812c72",
+        "node_id": "MDY6Q29tbWl0MTkwNDgzNjAyOjIyZGFkMzczNjEwZmI0NjhjYTMxZTc3NTliNmM4MTVhN2U4MTJjNzI=",
+        "commit": {
+          "author": {
+            "name": "Juriy Zaytsev",
+            "email": "kangax@gmail.com",
+            "date": "2019-05-15T18:30:28Z"
+          },
+          "committer": {
+            "name": "Gajus Kuizinas",
+            "email": "gajus@gajus.com",
+            "date": "2019-05-15T18:30:28Z"
+          },
+          "message": "feat: add require-readonly-react-props rule (#400)\n\n* Add requireReadOnlyReactProps rule\r\n\r\n* Update messages\r\n\r\n* Change naming\r\n\r\n* Fix imports\r\n\r\n* Fix linter\r\n\r\n* Fix some edge cases\r\n\r\n* Fix few more edge cases\r\n\r\n* Make covariant notation work\r\n\r\n* Update docs",
+          "tree": {
+            "sha": "bcef32d0a7235b85b56abe6de90bfd4e0381db45",
+            "url": "https://api.github.com/repos/discord/eslint-plugin-flowtype/git/trees/bcef32d0a7235b85b56abe6de90bfd4e0381db45"
+          },
+          "url": "https://api.github.com/repos/discord/eslint-plugin-flowtype/git/commits/22dad373610fb468ca31e7759b6c815a7e812c72",
+          "comment_count": 0,
+          "verification": {
+            "verified": false,
+            "reason": "unsigned",
+            "signature": null,
+            "payload": null
+          }
+        },
+        "url": "https://api.github.com/repos/discord/eslint-plugin-flowtype/commits/22dad373610fb468ca31e7759b6c815a7e812c72",
+        "author": {
+          "login": "kangax",
+          "id": 383,
+          "node_id": "MDQ6VXNlcjM4Mw==",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/kangax",
+          "type": "User",
+          "site_admin": false
+        },
+        "committer": {
+          "login": "gajus",
+          "id": 973543,
+          "node_id": "MDQ6VXNlcjk3MzU0Mw==",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/gajus",
+          "type": "User",
+          "site_admin": false
+        },
+        "parents": [
+          {
+            "sha": "138c2883fc0aa09f9cde14faeadb5b170ab7103f",
+            "url": "https://api.github.com/repos/discord/eslint-plugin-flowtype/commits/138c2883fc0aa09f9cde14faeadb5b170ab7103f"
+          }
+        ]
+      },
+      {
+        "sha": "138c2883fc0aa09f9cde14faeadb5b170ab7103f",
+        "node_id": "MDY6Q29tbWl0MTkwNDgzNjAyOjEzOGMyODgzZmMwYWEwOWY5Y2RlMTRmYWVhZGI1YjE3MGFiNzEwM2Y=",
+        "commit": {
+          "author": {
+            "name": "Gajus Kuizinas",
+            "email": "gajus@gajus.com",
+            "date": "2019-05-11T08:27:05Z"
+          },
+          "committer": {
+            "name": "Gajus Kuizinas",
+            "email": "gajus@gajus.com",
+            "date": "2019-05-11T08:27:09Z"
+          },
+          "message": "docs: generate docs",
+          "tree": {
+            "sha": "e17a0f64633907920078562ed0cc13b1727496b1",
+            "url": "https://api.github.com/repos/discord/eslint-plugin-flowtype/git/trees/e17a0f64633907920078562ed0cc13b1727496b1"
+          },
+          "url": "https://api.github.com/repos/discord/eslint-plugin-flowtype/git/commits/138c2883fc0aa09f9cde14faeadb5b170ab7103f",
+          "comment_count": 0,
+          "verification": {
+            "verified": false,
+            "reason": "unsigned",
+            "signature": null,
+            "payload": null
+          }
+        },
+        "url": "https://api.github.com/repos/discord/eslint-plugin-flowtype/commits/138c2883fc0aa09f9cde14faeadb5b170ab7103f",
+        "author": {
+          "login": "gajus",
+          "id": 973543,
+          "node_id": "MDQ6VXNlcjk3MzU0Mw==",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/gajus",
+          "type": "User",
+          "site_admin": false
+        },
+        "committer": {
+          "login": "gajus",
+          "id": 973543,
+          "node_id": "MDQ6VXNlcjk3MzU0Mw==",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/gajus",
+          "type": "User",
+          "site_admin": false
+        },
+        "parents": [
+          {
+            "sha": "fdf79455d8c20269162194a4757e1d0879efa52e",
+            "url": "https://api.github.com/repos/discord/eslint-plugin-flowtype/commits/fdf79455d8c20269162194a4757e1d0879efa52e"
+          }
+        ]
+      },
+      {
+        "sha": "fdf79455d8c20269162194a4757e1d0879efa52e",
+        "node_id": "MDY6Q29tbWl0MTkwNDgzNjAyOmZkZjc5NDU1ZDhjMjAyNjkxNjIxOTRhNDc1N2UxZDA4NzllZmE1MmU=",
+        "commit": {
+          "author": {
+            "name": "Gajus Kuizinas",
+            "email": "gajus@gajus.com",
+            "date": "2019-05-11T08:27:05Z"
+          },
+          "committer": {
+            "name": "Gajus Kuizinas",
+            "email": "gajus@gajus.com",
+            "date": "2019-05-11T08:27:05Z"
+          },
+          "message": "fix: update GitSpo badge URL",
+          "tree": {
+            "sha": "0801dce10fbba09d71cef4aaf114ae4243ea4d81",
+            "url": "https://api.github.com/repos/discord/eslint-plugin-flowtype/git/trees/0801dce10fbba09d71cef4aaf114ae4243ea4d81"
+          },
+          "url": "https://api.github.com/repos/discord/eslint-plugin-flowtype/git/commits/fdf79455d8c20269162194a4757e1d0879efa52e",
+          "comment_count": 0,
+          "verification": {
+            "verified": false,
+            "reason": "unsigned",
+            "signature": null,
+            "payload": null
+          }
+        },
+        "url": "https://api.github.com/repos/discord/eslint-plugin-flowtype/commits/fdf79455d8c20269162194a4757e1d0879efa52e",
+        "author": {
+          "login": "gajus",
+          "id": 973543,
+          "node_id": "MDQ6VXNlcjk3MzU0Mw==",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/gajus",
+          "type": "User",
+          "site_admin": false
+        },
+        "committer": {
+          "login": "gajus",
+          "id": 973543,
+          "node_id": "MDQ6VXNlcjk3MzU0Mw==",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/gajus",
+          "type": "User",
+          "site_admin": false
+        },
+        "parents": [
+          {
+            "sha": "aa3b54caf61ee9c22a4a65b2ae58c7739826c96e",
+            "url": "https://api.github.com/repos/discord/eslint-plugin-flowtype/commits/aa3b54caf61ee9c22a4a65b2ae58c7739826c96e"
+          }
+        ]
+      },
+      {
+        "sha": "aa3b54caf61ee9c22a4a65b2ae58c7739826c96e",
+        "node_id": "MDY6Q29tbWl0MTkwNDgzNjAyOmFhM2I1NGNhZjYxZWU5YzIyYTRhNjViMmFlNThjNzczOTgyNmM5NmU=",
+        "commit": {
+          "author": {
+            "name": "Gajus Kuizinas",
+            "email": "gajus@gajus.com",
+            "date": "2019-05-09T17:01:25Z"
+          },
+          "committer": {
+            "name": "Gajus Kuizinas",
+            "email": "gajus@gajus.com",
+            "date": "2019-05-09T17:01:25Z"
+          },
+          "message": "Merge branch 'master' of github.com:gajus/eslint-plugin-flowtype",
+          "tree": {
+            "sha": "26e26d2e592c4c2ef6e0891318454da80ccc561f",
+            "url": "https://api.github.com/repos/discord/eslint-plugin-flowtype/git/trees/26e26d2e592c4c2ef6e0891318454da80ccc561f"
+          },
+          "url": "https://api.github.com/repos/discord/eslint-plugin-flowtype/git/commits/aa3b54caf61ee9c22a4a65b2ae58c7739826c96e",
+          "comment_count": 0,
+          "verification": {
+            "verified": false,
+            "reason": "unsigned",
+            "signature": null,
+            "payload": null
+          }
+        },
+        "url": "https://api.github.com/repos/discord/eslint-plugin-flowtype/commits/aa3b54caf61ee9c22a4a65b2ae58c7739826c96e",
+        "author": {
+          "login": "gajus",
+          "id": 973543,
+          "node_id": "MDQ6VXNlcjk3MzU0Mw==",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/gajus",
+          "type": "User",
+          "site_admin": false
+        },
+        "committer": {
+          "login": "gajus",
+          "id": 973543,
+          "node_id": "MDQ6VXNlcjk3MzU0Mw==",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/gajus",
+          "type": "User",
+          "site_admin": false
+        },
+        "parents": [
+          {
+            "sha": "2c190f2222385f1366262d1b768535e2590f96f1",
+            "url": "https://api.github.com/repos/discord/eslint-plugin-flowtype/commits/2c190f2222385f1366262d1b768535e2590f96f1"
+          },
+          {
+            "sha": "05a7281a40d742d873dcbeefa1fa3d1baaab4d63",
+            "url": "https://api.github.com/repos/discord/eslint-plugin-flowtype/commits/05a7281a40d742d873dcbeefa1fa3d1baaab4d63"
+          }
+        ]
+      }
+    ],
     "releases": [],
     "issues": [],
     "pullRequests": []

@@ -59,7 +59,278 @@
   },
   "branches": [],
   "last5": {
-    "commits": [],
+    "commits": [
+      {
+        "sha": "ec039600bc7c7669dfdc91de2b4e446485591b4d",
+        "node_id": "C_kwDOIUNyyNoAKGVjMDM5NjAwYmM3Yzc2NjlkZmRjOTFkZTJiNGU0NDY0ODU1OTFiNGQ",
+        "commit": {
+          "author": {
+            "name": "Dave Cunningham",
+            "email": "sparkprime@gmail.com",
+            "date": "2022-10-26T19:43:24Z"
+          },
+          "committer": {
+            "name": "Dave Cunningham",
+            "email": "sparkprime@gmail.com",
+            "date": "2022-10-26T19:56:31Z"
+          },
+          "message": "Update version to v0.19.0",
+          "tree": {
+            "sha": "cc84eed7e630e6005531b13fae42a2380544b051",
+            "url": "https://api.github.com/repos/discord/go-jsonnet/git/trees/cc84eed7e630e6005531b13fae42a2380544b051"
+          },
+          "url": "https://api.github.com/repos/discord/go-jsonnet/git/commits/ec039600bc7c7669dfdc91de2b4e446485591b4d",
+          "comment_count": 0,
+          "verification": {
+            "verified": false,
+            "reason": "unsigned",
+            "signature": null,
+            "payload": null
+          }
+        },
+        "url": "https://api.github.com/repos/discord/go-jsonnet/commits/ec039600bc7c7669dfdc91de2b4e446485591b4d",
+        "author": {
+          "login": "sparkprime",
+          "id": 168158,
+          "node_id": "MDQ6VXNlcjE2ODE1OA==",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/sparkprime",
+          "type": "User",
+          "site_admin": false
+        },
+        "committer": {
+          "login": "sparkprime",
+          "id": 168158,
+          "node_id": "MDQ6VXNlcjE2ODE1OA==",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/sparkprime",
+          "type": "User",
+          "site_admin": false
+        },
+        "parents": [
+          {
+            "sha": "c1825dc54dc4b3570843e2f6f92cd396753192dd",
+            "url": "https://api.github.com/repos/discord/go-jsonnet/commits/c1825dc54dc4b3570843e2f6f92cd396753192dd"
+          }
+        ]
+      },
+      {
+        "sha": "c1825dc54dc4b3570843e2f6f92cd396753192dd",
+        "node_id": "C_kwDOIUNyyNoAKGMxODI1ZGM1NGRjNGIzNTcwODQzZTJmNmY5MmNkMzk2NzUzMTkyZGQ",
+        "commit": {
+          "author": {
+            "name": "Dave Cunningham",
+            "email": "sparkprime@gmail.com",
+            "date": "2022-10-25T19:17:23Z"
+          },
+          "committer": {
+            "name": "Dave Cunningham",
+            "email": "sparkprime@gmail.com",
+            "date": "2022-10-26T15:13:21Z"
+          },
+          "message": "Update to latest CPP version",
+          "tree": {
+            "sha": "cb49645f01c5fb9a18db440d68423b9b0749853f",
+            "url": "https://api.github.com/repos/discord/go-jsonnet/git/trees/cb49645f01c5fb9a18db440d68423b9b0749853f"
+          },
+          "url": "https://api.github.com/repos/discord/go-jsonnet/git/commits/c1825dc54dc4b3570843e2f6f92cd396753192dd",
+          "comment_count": 0,
+          "verification": {
+            "verified": false,
+            "reason": "unsigned",
+            "signature": null,
+            "payload": null
+          }
+        },
+        "url": "https://api.github.com/repos/discord/go-jsonnet/commits/c1825dc54dc4b3570843e2f6f92cd396753192dd",
+        "author": {
+          "login": "sparkprime",
+          "id": 168158,
+          "node_id": "MDQ6VXNlcjE2ODE1OA==",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/sparkprime",
+          "type": "User",
+          "site_admin": false
+        },
+        "committer": {
+          "login": "sparkprime",
+          "id": 168158,
+          "node_id": "MDQ6VXNlcjE2ODE1OA==",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/sparkprime",
+          "type": "User",
+          "site_admin": false
+        },
+        "parents": [
+          {
+            "sha": "3f664d81b3dcb7d76ee5b271f0341827c4228333",
+            "url": "https://api.github.com/repos/discord/go-jsonnet/commits/3f664d81b3dcb7d76ee5b271f0341827c4228333"
+          }
+        ]
+      },
+      {
+        "sha": "3f664d81b3dcb7d76ee5b271f0341827c4228333",
+        "node_id": "C_kwDOIUNyyNoAKDNmNjY0ZDgxYjNkY2I3ZDc2ZWU1YjI3MWYwMzQxODI3YzQyMjgzMzM",
+        "commit": {
+          "author": {
+            "name": "Angus Lees",
+            "email": "gus@inodes.org",
+            "date": "2022-10-26T05:25:07Z"
+          },
+          "committer": {
+            "name": "Dave Cunningham",
+            "email": "sparkprime@gmail.com",
+            "date": "2022-10-26T12:51:42Z"
+          },
+          "message": "Add a CI test that exercises bazel builds\n\nIf it's not tested, then it doesn't work.  Add a CI test that\nexecutes `bazel build //...` and `bazel test //...`, in addition to\nthe non-bazel build system.",
+          "tree": {
+            "sha": "cc4ccfb486896cada23d647c5e128683cd6598a2",
+            "url": "https://api.github.com/repos/discord/go-jsonnet/git/trees/cc4ccfb486896cada23d647c5e128683cd6598a2"
+          },
+          "url": "https://api.github.com/repos/discord/go-jsonnet/git/commits/3f664d81b3dcb7d76ee5b271f0341827c4228333",
+          "comment_count": 0,
+          "verification": {
+            "verified": false,
+            "reason": "unsigned",
+            "signature": null,
+            "payload": null
+          }
+        },
+        "url": "https://api.github.com/repos/discord/go-jsonnet/commits/3f664d81b3dcb7d76ee5b271f0341827c4228333",
+        "author": {
+          "login": "anguslees",
+          "id": 224224,
+          "node_id": "MDQ6VXNlcjIyNDIyNA==",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/anguslees",
+          "type": "User",
+          "site_admin": false
+        },
+        "committer": {
+          "login": "sparkprime",
+          "id": 168158,
+          "node_id": "MDQ6VXNlcjE2ODE1OA==",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/sparkprime",
+          "type": "User",
+          "site_admin": false
+        },
+        "parents": [
+          {
+            "sha": "0a32b8c3273df9ecbab8be4f1717eb53d011dfe0",
+            "url": "https://api.github.com/repos/discord/go-jsonnet/commits/0a32b8c3273df9ecbab8be4f1717eb53d011dfe0"
+          }
+        ]
+      },
+      {
+        "sha": "0a32b8c3273df9ecbab8be4f1717eb53d011dfe0",
+        "node_id": "C_kwDOIUNyyNoAKDBhMzJiOGMzMjczZGY5ZWNiYWI4YmU0ZjE3MTdlYjUzZDAxMWRmZTA",
+        "commit": {
+          "author": {
+            "name": "Angus Lees",
+            "email": "gus@inodes.org",
+            "date": "2022-10-26T03:35:40Z"
+          },
+          "committer": {
+            "name": "Dave Cunningham",
+            "email": "sparkprime@gmail.com",
+            "date": "2022-10-26T12:03:12Z"
+          },
+          "message": "Fix //c-bindings bazel build\n\nAdd missing bazel dependency so `bazel build //c-bindings` works again.",
+          "tree": {
+            "sha": "97ef5c369ee7aea67a80656d708611988e388451",
+            "url": "https://api.github.com/repos/discord/go-jsonnet/git/trees/97ef5c369ee7aea67a80656d708611988e388451"
+          },
+          "url": "https://api.github.com/repos/discord/go-jsonnet/git/commits/0a32b8c3273df9ecbab8be4f1717eb53d011dfe0",
+          "comment_count": 0,
+          "verification": {
+            "verified": false,
+            "reason": "unsigned",
+            "signature": null,
+            "payload": null
+          }
+        },
+        "url": "https://api.github.com/repos/discord/go-jsonnet/commits/0a32b8c3273df9ecbab8be4f1717eb53d011dfe0",
+        "author": {
+          "login": "anguslees",
+          "id": 224224,
+          "node_id": "MDQ6VXNlcjIyNDIyNA==",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/anguslees",
+          "type": "User",
+          "site_admin": false
+        },
+        "committer": {
+          "login": "sparkprime",
+          "id": 168158,
+          "node_id": "MDQ6VXNlcjE2ODE1OA==",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/sparkprime",
+          "type": "User",
+          "site_admin": false
+        },
+        "parents": [
+          {
+            "sha": "e33730a31e06a41440be0bfd6b850ce07c417b9f",
+            "url": "https://api.github.com/repos/discord/go-jsonnet/commits/e33730a31e06a41440be0bfd6b850ce07c417b9f"
+          }
+        ]
+      },
+      {
+        "sha": "e33730a31e06a41440be0bfd6b850ce07c417b9f",
+        "node_id": "C_kwDOIUNyyNoAKGUzMzczMGEzMWUwNmE0MTQ0MGJlMGJmZDZiODUwY2UwN2M0MTdiOWY",
+        "commit": {
+          "author": {
+            "name": "Angus Lees",
+            "email": "gus@inodes.org",
+            "date": "2022-10-26T03:22:23Z"
+          },
+          "committer": {
+            "name": "Dave Cunningham",
+            "email": "sparkprime@gmail.com",
+            "date": "2022-10-26T12:02:57Z"
+          },
+          "message": "Fix jsonnet-lint bazel build\n\nUpdate BUILD.bazel files so `bazel build //cmd/jsonnet-lint` works\nagain.",
+          "tree": {
+            "sha": "027982ebc35708dab211ff7de03c47f6b6fd73ee",
+            "url": "https://api.github.com/repos/discord/go-jsonnet/git/trees/027982ebc35708dab211ff7de03c47f6b6fd73ee"
+          },
+          "url": "https://api.github.com/repos/discord/go-jsonnet/git/commits/e33730a31e06a41440be0bfd6b850ce07c417b9f",
+          "comment_count": 0,
+          "verification": {
+            "verified": false,
+            "reason": "unsigned",
+            "signature": null,
+            "payload": null
+          }
+        },
+        "url": "https://api.github.com/repos/discord/go-jsonnet/commits/e33730a31e06a41440be0bfd6b850ce07c417b9f",
+        "author": {
+          "login": "anguslees",
+          "id": 224224,
+          "node_id": "MDQ6VXNlcjIyNDIyNA==",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/anguslees",
+          "type": "User",
+          "site_admin": false
+        },
+        "committer": {
+          "login": "sparkprime",
+          "id": 168158,
+          "node_id": "MDQ6VXNlcjE2ODE1OA==",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/sparkprime",
+          "type": "User",
+          "site_admin": false
+        },
+        "parents": [
+          {
+            "sha": "aa9d35a814bf2e34c04893b166de49ee5b739aec",
+            "url": "https://api.github.com/repos/discord/go-jsonnet/commits/aa9d35a814bf2e34c04893b166de49ee5b739aec"
+          }
+        ]
+      }
+    ],
     "releases": [],
     "issues": [],
     "pullRequests": []

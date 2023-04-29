@@ -57,9 +57,313 @@
     "triage": false,
     "pull": false
   },
-  "branches": [],
+  "branches": [
+    {
+      "name": "clarify-readme",
+      "commit": {
+        "sha": "bc9c5d42ee5495a705e66f4233b50f2ce833bad5",
+        "url": "https://api.github.com/repos/discord/electron-build-tools/commits/bc9c5d42ee5495a705e66f4233b50f2ce833bad5"
+      },
+      "protected": false
+    },
+    {
+      "name": "inherit-evm_current_file",
+      "commit": {
+        "sha": "0692a4c579f9a64417baec5ca9fee0001e5a3893",
+        "url": "https://api.github.com/repos/discord/electron-build-tools/commits/0692a4c579f9a64417baec5ca9fee0001e5a3893"
+      },
+      "protected": false
+    },
+    {
+      "name": "master",
+      "commit": {
+        "sha": "a0f7528f0acb51c2e5268ef982372d003194beea",
+        "url": "https://api.github.com/repos/discord/electron-build-tools/commits/a0f7528f0acb51c2e5268ef982372d003194beea"
+      },
+      "protected": false
+    },
+    {
+      "name": "next",
+      "commit": {
+        "sha": "fb96cff3923fc68e0d7a1fc9714d746522ea4669",
+        "url": "https://api.github.com/repos/discord/electron-build-tools/commits/fb96cff3923fc68e0d7a1fc9714d746522ea4669"
+      },
+      "protected": false
+    }
+  ],
   "last5": {
-    "commits": [],
+    "commits": [
+      {
+        "sha": "a0f7528f0acb51c2e5268ef982372d003194beea",
+        "node_id": "MDY6Q29tbWl0MjU1NDk0OTkwOmEwZjc1MjhmMGFjYjUxYzJlNTI2OGVmOTgyMzcyZDAwMzE5NGJlZWE=",
+        "commit": {
+          "author": {
+            "name": "Shelley Vohr",
+            "email": "shelley.vohr@gmail.com",
+            "date": "2020-04-13T15:48:50Z"
+          },
+          "committer": {
+            "name": "GitHub",
+            "email": "noreply@github.com",
+            "date": "2020-04-13T15:48:50Z"
+          },
+          "message": "docs: update installation instructions (#127)",
+          "tree": {
+            "sha": "0886608da3c8145f1f1ab78c55e8c4ab3a1ca431",
+            "url": "https://api.github.com/repos/discord/electron-build-tools/git/trees/0886608da3c8145f1f1ab78c55e8c4ab3a1ca431"
+          },
+          "url": "https://api.github.com/repos/discord/electron-build-tools/git/commits/a0f7528f0acb51c2e5268ef982372d003194beea",
+          "comment_count": 0,
+          "verification": {
+            "verified": true,
+            "reason": "valid",
+            "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsBcBAABCAAQBQJelIniCRBK7hj4Ov3rIwAAdHIIAAHg0dcEvhh6C07sPc7mQ7q0\nRNsMVYMngMk7xg+GDqO2WwRVQDvtTN7CngtCi6GTImPG5cNzz6QsvdGla37xTVaI\nNqFgme7IKOFttATQndLiBmrcVxM0vIEBlfT743T+3XpzImw1N3ZOgKcyuqrInfjs\n9CxTbtN918vQzooQguJv0/xGDtxwU4LyvP25ZTs4g2Xlh//EGzC4DTGUPJTHSB/d\nDFyWnVcgKBNwEUfhLdKcE49yWxmRyX6izCetK8haV8Hpji16QP7979CdXKIfwdH+\ntn0U5+KyzFoSNGgDS38nnLD/aOWxMd3B3Racb9503uxY1ODNvIr/aSI9xkQbtUA=\n=A+Ap\n-----END PGP SIGNATURE-----\n",
+            "payload": "tree 0886608da3c8145f1f1ab78c55e8c4ab3a1ca431\nparent 3b8c44c74e822c60cdd4772d3b8fdb27555eab9a\nauthor Shelley Vohr <shelley.vohr@gmail.com> 1586792930 -0700\ncommitter GitHub <noreply@github.com> 1586792930 -0700\n\ndocs: update installation instructions (#127)\n\n"
+          }
+        },
+        "url": "https://api.github.com/repos/discord/electron-build-tools/commits/a0f7528f0acb51c2e5268ef982372d003194beea",
+        "author": {
+          "login": "codebytere",
+          "id": 2036040,
+          "node_id": "MDQ6VXNlcjIwMzYwNDA=",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/codebytere",
+          "type": "User",
+          "site_admin": false
+        },
+        "committer": {
+          "login": "web-flow",
+          "id": 19864447,
+          "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/web-flow",
+          "type": "User",
+          "site_admin": false
+        },
+        "parents": [
+          {
+            "sha": "3b8c44c74e822c60cdd4772d3b8fdb27555eab9a",
+            "url": "https://api.github.com/repos/discord/electron-build-tools/commits/3b8c44c74e822c60cdd4772d3b8fdb27555eab9a"
+          }
+        ]
+      },
+      {
+        "sha": "3b8c44c74e822c60cdd4772d3b8fdb27555eab9a",
+        "node_id": "MDY6Q29tbWl0MjU1NDk0OTkwOjNiOGM0NGM3NGU4MjJjNjBjZGQ0NzcyZDNiOGZkYjI3NTU1ZWFiOWE=",
+        "commit": {
+          "author": {
+            "name": "Samuel Attard",
+            "email": "sattard@slack-corp.com",
+            "date": "2020-03-31T21:56:22Z"
+          },
+          "committer": {
+            "name": "GitHub",
+            "email": "noreply@github.com",
+            "date": "2020-03-31T21:56:22Z"
+          },
+          "message": "fix: use process.execPath instead of looking up node on the PATH (#132)",
+          "tree": {
+            "sha": "5fd0b9c982f5aaff0c07305da3b081efa9ffd680",
+            "url": "https://api.github.com/repos/discord/electron-build-tools/git/trees/5fd0b9c982f5aaff0c07305da3b081efa9ffd680"
+          },
+          "url": "https://api.github.com/repos/discord/electron-build-tools/git/commits/3b8c44c74e822c60cdd4772d3b8fdb27555eab9a",
+          "comment_count": 0,
+          "verification": {
+            "verified": true,
+            "reason": "valid",
+            "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsBcBAABCAAQBQJeg7yGCRBK7hj4Ov3rIwAAdHIIAK4s2hz2SCBE+8wOujNEcWP9\nU7Pj3lq5/OKUw9OdORo1veulxIKt6MEba1BB1l8yDR/6cANeHAEpvaWcrcX75U9b\nSxB5/p/m7eG7R+a0794IJqPIdbeNAETDpa8vhh7fdtLVewx9XRLepMGe2ZhZM8hi\nLyeNG7hov/M6ULWBiPYf/hC2usxGrF1mfjn387+Ue1z+0ahsBkTvsXler9suECNF\nWGpd+Bw7Jx7Uo/PdRMTkaI2UI/fFwHiCJhMGr/Nn0jc66+4lR1ftuNx/dip0lVwV\nwHtdOBjZkg1tvAQeeAyeTDzrFBrOri0TJ2NZm4XD9HrDK9c0h4F7OvIl7SfzhXE=\n=4KCY\n-----END PGP SIGNATURE-----\n",
+            "payload": "tree 5fd0b9c982f5aaff0c07305da3b081efa9ffd680\nparent 882f7228509d809b891e7c8c845587166659e086\nauthor Samuel Attard <sattard@slack-corp.com> 1585691782 -0700\ncommitter GitHub <noreply@github.com> 1585691782 -0700\n\nfix: use process.execPath instead of looking up node on the PATH (#132)\n\n"
+          }
+        },
+        "url": "https://api.github.com/repos/discord/electron-build-tools/commits/3b8c44c74e822c60cdd4772d3b8fdb27555eab9a",
+        "author": {
+          "login": "MarshallOfSound",
+          "id": 6634592,
+          "node_id": "MDQ6VXNlcjY2MzQ1OTI=",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/MarshallOfSound",
+          "type": "User",
+          "site_admin": false
+        },
+        "committer": {
+          "login": "web-flow",
+          "id": 19864447,
+          "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/web-flow",
+          "type": "User",
+          "site_admin": false
+        },
+        "parents": [
+          {
+            "sha": "882f7228509d809b891e7c8c845587166659e086",
+            "url": "https://api.github.com/repos/discord/electron-build-tools/commits/882f7228509d809b891e7c8c845587166659e086"
+          }
+        ]
+      },
+      {
+        "sha": "882f7228509d809b891e7c8c845587166659e086",
+        "node_id": "MDY6Q29tbWl0MjU1NDk0OTkwOjg4MmY3MjI4NTA5ZDgwOWI4OTFlN2M4Yzg0NTU4NzE2NjY1OWUwODY=",
+        "commit": {
+          "author": {
+            "name": "dependabot[bot]",
+            "email": "49699333+dependabot[bot]@users.noreply.github.com",
+            "date": "2020-03-27T20:25:19Z"
+          },
+          "committer": {
+            "name": "GitHub",
+            "email": "noreply@github.com",
+            "date": "2020-03-27T20:25:19Z"
+          },
+          "message": "build(deps): bump acorn from 5.7.3 to 5.7.4 (#130)\n\nBumps [acorn](https://github.com/acornjs/acorn) from 5.7.3 to 5.7.4.\r\n- [Release notes](https://github.com/acornjs/acorn/releases)\r\n- [Commits](https://github.com/acornjs/acorn/compare/5.7.3...5.7.4)\r\n\r\nSigned-off-by: dependabot[bot] <support@github.com>\r\n\r\nCo-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>",
+          "tree": {
+            "sha": "a29af507beb789a4b5a239b18a59338d71fc125e",
+            "url": "https://api.github.com/repos/discord/electron-build-tools/git/trees/a29af507beb789a4b5a239b18a59338d71fc125e"
+          },
+          "url": "https://api.github.com/repos/discord/electron-build-tools/git/commits/882f7228509d809b891e7c8c845587166659e086",
+          "comment_count": 0,
+          "verification": {
+            "verified": true,
+            "reason": "valid",
+            "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsBcBAABCAAQBQJefmEvCRBK7hj4Ov3rIwAAdHIIAHrFokYxNKvdZnstadLew4ce\nRg8s+l5RdEkSk7lV4ArXa1xT1SN5S8Jkq4rbTbkDRJi6N9v7k2Hgvi+kobec8+th\npZOZedLgQ5ra83Fx1XFaZ4La7RBEA2O0glC7UNhLgVc18pLTRcISn2iLtfqOgIM2\nN9ky2MJD6XH60M4HNjj4OISf7W5b4E4dy+V9nBG+zT/elGnJYYK2IOeU1dXd+R7o\nl0YOmyR3+i4vwqAKdM1U7YN+CZ0HHNQlBTVpjM2pnXFPI7OxPeKOee56RdTr2Dtt\nwvXsNQVFdZl4naktt4A/qUvsd+NizN/TocfDRdLJnbmvlQ1qbz9r8LrBVVhwbP0=\n=RhJ8\n-----END PGP SIGNATURE-----\n",
+            "payload": "tree a29af507beb789a4b5a239b18a59338d71fc125e\nparent 3448263947d9cc782003858bb008df84d20847d4\nauthor dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com> 1585340719 -0700\ncommitter GitHub <noreply@github.com> 1585340719 -0700\n\nbuild(deps): bump acorn from 5.7.3 to 5.7.4 (#130)\n\nBumps [acorn](https://github.com/acornjs/acorn) from 5.7.3 to 5.7.4.\r\n- [Release notes](https://github.com/acornjs/acorn/releases)\r\n- [Commits](https://github.com/acornjs/acorn/compare/5.7.3...5.7.4)\r\n\r\nSigned-off-by: dependabot[bot] <support@github.com>\r\n\r\nCo-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>"
+          }
+        },
+        "url": "https://api.github.com/repos/discord/electron-build-tools/commits/882f7228509d809b891e7c8c845587166659e086",
+        "author": {
+          "login": "dependabot[bot]",
+          "id": 49699333,
+          "node_id": "MDM6Qm90NDk2OTkzMzM=",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/dependabot%5Bbot%5D",
+          "type": "Bot",
+          "site_admin": false
+        },
+        "committer": {
+          "login": "web-flow",
+          "id": 19864447,
+          "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/web-flow",
+          "type": "User",
+          "site_admin": false
+        },
+        "parents": [
+          {
+            "sha": "3448263947d9cc782003858bb008df84d20847d4",
+            "url": "https://api.github.com/repos/discord/electron-build-tools/commits/3448263947d9cc782003858bb008df84d20847d4"
+          }
+        ]
+      },
+      {
+        "sha": "3448263947d9cc782003858bb008df84d20847d4",
+        "node_id": "MDY6Q29tbWl0MjU1NDk0OTkwOjM0NDgyNjM5NDdkOWNjNzgyMDAzODU4YmIwMDhkZjg0ZDIwODQ3ZDQ=",
+        "commit": {
+          "author": {
+            "name": "Charles Kerr",
+            "email": "ckerr@github.com",
+            "date": "2020-03-27T20:11:35Z"
+          },
+          "committer": {
+            "name": "GitHub",
+            "email": "noreply@github.com",
+            "date": "2020-03-27T20:11:35Z"
+          },
+          "message": "feat: add goma hooks that can be invoked by CI (#129)\n\n* feat: add goma hooks that can be invoked by CI\r\n\r\nFollows up https://github.com/electron/electron/pull/22784 discussion:\r\nwe want CI to be able to use build-tools' goma utils in a way that\r\nwon't break if `utils/goma.js` ever gets refactored. So three new\r\ncommands have been added for CI to use:\r\n\r\n* `e show gomadir` (prints goma.dir)\r\n* `e show goma-gn-file` (prints goma.gnFilePath)\r\n* `e update-goma` (runs goma.downloadAndPrepare())\r\n\r\nIn addition, goma.downloadAndPrepare() now returns a checksum on\r\nsuccess so that `e update-goma` has something  to log on success.\r\nThis isn't essential (the exit code already shows success/failure)\r\nbut is visually nice.\r\n\r\n* refactor: consistency tweaks.\r\n\r\nRename `e show goma-gn-file` to `e show gomagn`",
+          "tree": {
+            "sha": "3b62f95accdf45fd740a74b65e0e19778a638b67",
+            "url": "https://api.github.com/repos/discord/electron-build-tools/git/trees/3b62f95accdf45fd740a74b65e0e19778a638b67"
+          },
+          "url": "https://api.github.com/repos/discord/electron-build-tools/git/commits/3448263947d9cc782003858bb008df84d20847d4",
+          "comment_count": 0,
+          "verification": {
+            "verified": true,
+            "reason": "valid",
+            "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsBcBAABCAAQBQJefl33CRBK7hj4Ov3rIwAAdHIIAAWaeDu/mUu3NE7RePEucvx2\ny3PmgxhFIWFcAboWW8NF4MGasaXiWeYl+GHcdCo5BeuCUAMXN09VMR9RNbwagQ6Z\nTAqlRerjXM1X2dSWpydzV2/9GNZVe+ZTnjNbCXOfAz22S/M+MYfv6XqUKUdvimW4\no/lqb5wgzIv0gQZwJAI96p40OlfnWWNDycUDv3emNY+/xWeInPAhC6KO4FJtNVGt\npVVSOmwHJzfXp2s5a68aw6ypMjWieTpW1jAcIodp8g1jR8Ll1H5OSGEYG4bRkreJ\njNcxLdvu5/7WHWVGGVPJFlj/7WZCNJmoJlBrqldTbb06tc/SettXNz81634/tEI=\n=iRBv\n-----END PGP SIGNATURE-----\n",
+            "payload": "tree 3b62f95accdf45fd740a74b65e0e19778a638b67\nparent 1f72aa002c6e40277985f1aa92018b126c11c8f4\nauthor Charles Kerr <ckerr@github.com> 1585339895 -0500\ncommitter GitHub <noreply@github.com> 1585339895 -0700\n\nfeat: add goma hooks that can be invoked by CI (#129)\n\n* feat: add goma hooks that can be invoked by CI\r\n\r\nFollows up https://github.com/electron/electron/pull/22784 discussion:\r\nwe want CI to be able to use build-tools' goma utils in a way that\r\nwon't break if `utils/goma.js` ever gets refactored. So three new\r\ncommands have been added for CI to use:\r\n\r\n* `e show gomadir` (prints goma.dir)\r\n* `e show goma-gn-file` (prints goma.gnFilePath)\r\n* `e update-goma` (runs goma.downloadAndPrepare())\r\n\r\nIn addition, goma.downloadAndPrepare() now returns a checksum on\r\nsuccess so that `e update-goma` has something  to log on success.\r\nThis isn't essential (the exit code already shows success/failure)\r\nbut is visually nice.\r\n\r\n* refactor: consistency tweaks.\r\n\r\nRename `e show goma-gn-file` to `e show gomagn`"
+          }
+        },
+        "url": "https://api.github.com/repos/discord/electron-build-tools/commits/3448263947d9cc782003858bb008df84d20847d4",
+        "author": {
+          "login": "ckerr",
+          "id": 70381,
+          "node_id": "MDQ6VXNlcjcwMzgx",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/ckerr",
+          "type": "User",
+          "site_admin": false
+        },
+        "committer": {
+          "login": "web-flow",
+          "id": 19864447,
+          "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/web-flow",
+          "type": "User",
+          "site_admin": false
+        },
+        "parents": [
+          {
+            "sha": "1f72aa002c6e40277985f1aa92018b126c11c8f4",
+            "url": "https://api.github.com/repos/discord/electron-build-tools/commits/1f72aa002c6e40277985f1aa92018b126c11c8f4"
+          }
+        ]
+      },
+      {
+        "sha": "1f72aa002c6e40277985f1aa92018b126c11c8f4",
+        "node_id": "MDY6Q29tbWl0MjU1NDk0OTkwOjFmNzJhYTAwMmM2ZTQwMjc3OTg1ZjFhYTkyMDE4YjEyNmMxMWM4ZjQ=",
+        "commit": {
+          "author": {
+            "name": "Charles Kerr",
+            "email": "ckerr@github.com",
+            "date": "2020-03-19T13:30:20Z"
+          },
+          "committer": {
+            "name": "GitHub",
+            "email": "noreply@github.com",
+            "date": "2020-03-19T13:30:20Z"
+          },
+          "message": "fix: don't pollute stdout with passive update logs (#128)\n\nBug description: scripts that rely on build-tools will fail occasionally\r\nif build-tools hasn't had a recent update check. For example some of my\r\nshell scripts have calls along the lines of `FOO=\"$(e show exec)\"` and\r\nfail when FOO has \"Checking for build-tools updates\" instead of a path.\r\n\r\nWhen the update script is run passively, its stdout is redirected to\r\nstderr: it's still useful there as a user-visible message, but doesn't\r\ninterfere with expected values in stdout.",
+          "tree": {
+            "sha": "9531e9da96ca7362ea7968e7140b1824a831c8c0",
+            "url": "https://api.github.com/repos/discord/electron-build-tools/git/trees/9531e9da96ca7362ea7968e7140b1824a831c8c0"
+          },
+          "url": "https://api.github.com/repos/discord/electron-build-tools/git/commits/1f72aa002c6e40277985f1aa92018b126c11c8f4",
+          "comment_count": 0,
+          "verification": {
+            "verified": true,
+            "reason": "valid",
+            "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsBcBAABCAAQBQJec3PsCRBK7hj4Ov3rIwAAdHIIAHhtA48/eYQRFpPEE5I8yKAi\nCvTiComyOj7rnoPfdl/IGOGqJgBzynlV9sjnwGk/mMYyzQ36rYFsYkDyamHffJc9\nBQ8sNhTup+aRVFgiDBImC8bYGVAIw8HQIQFS/cgu/DGNpBFDaztsBx73n3vj364i\nVp8nUfKdLSk+aGmzwGHoFMt129JIPTVhnE89e6zia+rAPLA4UNkSVAeh9elG0Bda\n8LyQg75RG5keQARfG2y7fiOxtlSSzoN0kO9pW7Om2SfvECJLwC7sveu7kXHtR/tS\nvohF0krneoetqUR9l/0iLyjfMcjXj1yLftAwSGyVOpSvNTjU715x3/ZcdufZaW0=\n=5lXA\n-----END PGP SIGNATURE-----\n",
+            "payload": "tree 9531e9da96ca7362ea7968e7140b1824a831c8c0\nparent 5512f22264bc274afe7581a2ea5af72e12056989\nauthor Charles Kerr <ckerr@github.com> 1584624620 -0500\ncommitter GitHub <noreply@github.com> 1584624620 -0500\n\nfix: don't pollute stdout with passive update logs (#128)\n\nBug description: scripts that rely on build-tools will fail occasionally\r\nif build-tools hasn't had a recent update check. For example some of my\r\nshell scripts have calls along the lines of `FOO=\"$(e show exec)\"` and\r\nfail when FOO has \"Checking for build-tools updates\" instead of a path.\r\n\r\nWhen the update script is run passively, its stdout is redirected to\r\nstderr: it's still useful there as a user-visible message, but doesn't\r\ninterfere with expected values in stdout."
+          }
+        },
+        "url": "https://api.github.com/repos/discord/electron-build-tools/commits/1f72aa002c6e40277985f1aa92018b126c11c8f4",
+        "author": {
+          "login": "ckerr",
+          "id": 70381,
+          "node_id": "MDQ6VXNlcjcwMzgx",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/ckerr",
+          "type": "User",
+          "site_admin": false
+        },
+        "committer": {
+          "login": "web-flow",
+          "id": 19864447,
+          "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/web-flow",
+          "type": "User",
+          "site_admin": false
+        },
+        "parents": [
+          {
+            "sha": "5512f22264bc274afe7581a2ea5af72e12056989",
+            "url": "https://api.github.com/repos/discord/electron-build-tools/commits/5512f22264bc274afe7581a2ea5af72e12056989"
+          }
+        ]
+      }
+    ],
     "releases": [],
     "issues": [],
     "pullRequests": []

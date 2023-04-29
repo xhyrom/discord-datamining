@@ -33,7 +33,7 @@
   "forks_count": 1260,
   "archived": false,
   "disabled": false,
-  "open_issues_count": 173,
+  "open_issues_count": 172,
   "license": {
     "key": "other",
     "name": "Other",
@@ -52,7 +52,7 @@
   ],
   "visibility": "public",
   "forks": 1260,
-  "open_issues": 173,
+  "open_issues": 172,
   "watchers": 5360,
   "default_branch": "main",
   "permissions": {
@@ -337,7 +337,268 @@
       }
     ],
     "releases": [],
-    "issues": [],
+    "issues": [
+      {
+        "url": "https://api.github.com/repos/discord/discord-api-docs/issues/6120",
+        "id": 1689174527,
+        "node_id": "PR_kwDOA0coRs5Pa1HB",
+        "number": 6120,
+        "title": "Add Create Expressions permission",
+        "user": {
+          "login": "Puncher1",
+          "id": 65789180,
+          "node_id": "MDQ6VXNlcjY1Nzg5MTgw",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/Puncher1",
+          "type": "User",
+          "site_admin": false
+        },
+        "labels": [],
+        "state": "open",
+        "locked": false,
+        "assignee": null,
+        "assignees": [],
+        "milestone": null,
+        "comments": 0,
+        "created_at": "2023-04-28T22:00:15Z",
+        "updated_at": "2023-04-28T23:07:42Z",
+        "closed_at": null,
+        "author_association": "CONTRIBUTOR",
+        "active_lock_reason": null,
+        "draft": false,
+        "pull_request": {
+          "url": "https://api.github.com/repos/discord/discord-api-docs/pulls/6120",
+          "merged_at": null
+        },
+        "body": null,
+        "reactions": {
+          "url": "https://api.github.com/repos/discord/discord-api-docs/issues/6120/reactions",
+          "total_count": 0,
+          "+1": 0,
+          "-1": 0,
+          "laugh": 0,
+          "hooray": 0,
+          "confused": 0,
+          "heart": 0,
+          "rocket": 0,
+          "eyes": 0
+        },
+        "performed_via_github_app": null,
+        "state_reason": null
+      },
+      {
+        "url": "https://api.github.com/repos/discord/discord-api-docs/issues/6118",
+        "id": 1688958562,
+        "node_id": "I_kwDOA0coRs5kq3Zi",
+        "number": 6118,
+        "title": "STAR WARS Jedi: Survivor™‎ for 19,456 Days Bug.",
+        "user": {
+          "login": "ghost",
+          "id": 10137,
+          "node_id": "MDQ6VXNlcjEwMTM3",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/ghost",
+          "type": "User",
+          "site_admin": false
+        },
+        "labels": [
+          {
+            "id": 349418148,
+            "node_id": "MDU6TGFiZWwzNDk0MTgxNDg=",
+            "url": "https://api.github.com/repos/discord/discord-api-docs/labels/bug",
+            "name": "bug",
+            "color": "ee0701",
+            "default": true,
+            "description": null
+          }
+        ],
+        "state": "closed",
+        "locked": false,
+        "assignee": null,
+        "assignees": [],
+        "milestone": null,
+        "comments": 0,
+        "created_at": "2023-04-28T18:16:23Z",
+        "updated_at": "2023-04-29T06:58:19Z",
+        "closed_at": "2023-04-29T06:58:19Z",
+        "author_association": "NONE",
+        "active_lock_reason": null,
+        "body": "### Description\n\nThere is a bug in discord that i found looking at other users playing STAR WARS Jedi: Survivor™. There \"Activity\" claims they have played the game for 19,456 days. I'm here because i want to report this to you guys at discord, and looking to get \"Bug Hunter\" badge on discord, since this is a bug and im here to report it. (my discord is \"moris#9999\")\n\n### Steps to Reproduce\n\nI dont have the knowledge of what this is.\n\n### Expected Behavior\n\nI'm expecting the normal play time.\n\n### Current Behavior\n\nIm currently seeing wrong game time on STAR WARS Jedi: Survivor™ on multiple users\n\n### Screenshots/Videos\n\n![image (17)](https://user-images.githubusercontent.com/47461164/235222857-71c6351e-2b52-417c-9986-f2c02b7ce43a.png)\r\n\n\n### Client and System Information\n\nStable 193600 (570418e) Host 1.0.9012 (32020) Windows 10 64-Bit (10.0.19045)",
+        "reactions": {
+          "url": "https://api.github.com/repos/discord/discord-api-docs/issues/6118/reactions",
+          "total_count": 1,
+          "+1": 0,
+          "-1": 0,
+          "laugh": 0,
+          "hooray": 0,
+          "confused": 0,
+          "heart": 0,
+          "rocket": 0,
+          "eyes": 1
+        },
+        "performed_via_github_app": null,
+        "state_reason": "completed"
+      },
+      {
+        "url": "https://api.github.com/repos/discord/discord-api-docs/issues/6117",
+        "id": 1688723634,
+        "node_id": "I_kwDOA0coRs5kp-Cy",
+        "number": 6117,
+        "title": "Missing fields for Guild Member / User object",
+        "user": {
+          "login": "mobolo723",
+          "id": 18317905,
+          "node_id": "MDQ6VXNlcjE4MzE3OTA1",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/mobolo723",
+          "type": "User",
+          "site_admin": false
+        },
+        "labels": [
+          {
+            "id": 349418148,
+            "node_id": "MDU6TGFiZWwzNDk0MTgxNDg=",
+            "url": "https://api.github.com/repos/discord/discord-api-docs/labels/bug",
+            "name": "bug",
+            "color": "ee0701",
+            "default": true,
+            "description": null
+          }
+        ],
+        "state": "closed",
+        "locked": false,
+        "assignee": null,
+        "assignees": [],
+        "milestone": null,
+        "comments": 2,
+        "created_at": "2023-04-28T15:07:52Z",
+        "updated_at": "2023-04-29T06:57:52Z",
+        "closed_at": "2023-04-29T06:57:52Z",
+        "author_association": "NONE",
+        "active_lock_reason": null,
+        "body": "### Description\n\nWhile using the API to retrieve user and member from a guild, i saw that some fields in the online documentation are missing.\r\n\r\npath : `docs/resources/user#user-object-user-structure`\r\nmissing : `avatar_decoration`, `display_name`, `global_name`\r\n\r\npath : `docs/resources/guild#guild-member-object-guild-member-structure`\r\nmissing : `is_pending`\n\n### Steps to Reproduce\n\n- HTTP GET on `/guilds/{guild.id}/members/{user.id}`\r\n- Parse JSON response\r\n- Missing fields on `Member`\r\n- Access `user` field in JSON\r\n- Missing fields on `User`\n\n### Expected Behavior\n\nDocumentation may have deprecated or future fields mentioned as it is easier to construct classes of data and see which field is optional or nullable\n\n### Current Behavior\n\nMissing fields making parsing data harder\n\n### Screenshots/Videos\n\n_No response_\n\n### Client and System Information\n\nAPI version : 10",
+        "reactions": {
+          "url": "https://api.github.com/repos/discord/discord-api-docs/issues/6117/reactions",
+          "total_count": 0,
+          "+1": 0,
+          "-1": 0,
+          "laugh": 0,
+          "hooray": 0,
+          "confused": 0,
+          "heart": 0,
+          "rocket": 0,
+          "eyes": 0
+        },
+        "performed_via_github_app": null,
+        "state_reason": "completed"
+      },
+      {
+        "url": "https://api.github.com/repos/discord/discord-api-docs/issues/6116",
+        "id": 1688621974,
+        "node_id": "I_kwDOA0coRs5kplOW",
+        "number": 6116,
+        "title": "Can no longer wrap a masked link around emojis",
+        "user": {
+          "login": "apeck14",
+          "id": 23341953,
+          "node_id": "MDQ6VXNlcjIzMzQxOTUz",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/apeck14",
+          "type": "User",
+          "site_admin": false
+        },
+        "labels": [
+          {
+            "id": 349418148,
+            "node_id": "MDU6TGFiZWwzNDk0MTgxNDg=",
+            "url": "https://api.github.com/repos/discord/discord-api-docs/labels/bug",
+            "name": "bug",
+            "color": "ee0701",
+            "default": true,
+            "description": null
+          }
+        ],
+        "state": "closed",
+        "locked": false,
+        "assignee": null,
+        "assignees": [],
+        "milestone": null,
+        "comments": 1,
+        "created_at": "2023-04-28T14:04:30Z",
+        "updated_at": "2023-04-29T06:58:46Z",
+        "closed_at": "2023-04-29T06:58:46Z",
+        "author_association": "NONE",
+        "active_lock_reason": null,
+        "body": "### Description\n\nPrior to the recent update you could wrap a masked link around a string containing emojis. However, as of late, this is no longer the case. None of the code has changed from the bot. Please investigate, or let me know if this is a \"feature\". Thanks!\n\n### Steps to Reproduce\n\nCreate a masked link with an emoji inside the string.\n\n### Expected Behavior\n\nThe masked link not break entirely when an emoji is present.\n\n### Current Behavior\n\nEmoji breaks the masked link.\n\n### Screenshots/Videos\n\n![image](https://user-images.githubusercontent.com/23341953/235169133-87269c8b-4019-4399-9a41-16ea0bdaf756.png)\r\n\n\n### Client and System Information\n\nHappens on all browsers and devices. ",
+        "reactions": {
+          "url": "https://api.github.com/repos/discord/discord-api-docs/issues/6116/reactions",
+          "total_count": 0,
+          "+1": 0,
+          "-1": 0,
+          "laugh": 0,
+          "hooray": 0,
+          "confused": 0,
+          "heart": 0,
+          "rocket": 0,
+          "eyes": 0
+        },
+        "performed_via_github_app": null,
+        "state_reason": "completed"
+      },
+      {
+        "url": "https://api.github.com/repos/discord/discord-api-docs/issues/6111",
+        "id": 1682756807,
+        "node_id": "I_kwDOA0coRs5kTNTH",
+        "number": 6111,
+        "title": "<3 instead a word",
+        "user": {
+          "login": "ghost",
+          "id": 10137,
+          "node_id": "MDQ6VXNlcjEwMTM3",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/ghost",
+          "type": "User",
+          "site_admin": false
+        },
+        "labels": [
+          {
+            "id": 3139104261,
+            "node_id": "MDU6TGFiZWwzMTM5MTA0MjYx",
+            "url": "https://api.github.com/repos/discord/discord-api-docs/labels/message%20components",
+            "name": "message components",
+            "color": "5319E7",
+            "default": false,
+            "description": "click click click click click click click"
+          }
+        ],
+        "state": "closed",
+        "locked": false,
+        "assignee": null,
+        "assignees": [],
+        "milestone": null,
+        "comments": 2,
+        "created_at": "2023-04-25T09:11:17Z",
+        "updated_at": "2023-04-25T18:09:59Z",
+        "closed_at": "2023-04-25T18:09:59Z",
+        "author_association": "NONE",
+        "active_lock_reason": null,
+        "body": "### Description\n\nen en apartado de introducción de la API de Discord, en las últimas líneas hay un <3 en vez de un \"have\".\n\n### Steps to Reproduce\n\nIn Discord mobile.\r\n1. click in your profile\r\n2. Advanced\r\n3. API of Discord\n\n### Expected Behavior\n\nque ponga \"have\"\n\n### Current Behavior\n\nque hay un <3 en vez de una palabra. \n\n### Screenshots/Videos\n\n_No response_\n\n### Client and System Information\n\nSamsung A71 versión de UI 5.1",
+        "reactions": {
+          "url": "https://api.github.com/repos/discord/discord-api-docs/issues/6111/reactions",
+          "total_count": 0,
+          "+1": 0,
+          "-1": 0,
+          "laugh": 0,
+          "hooray": 0,
+          "confused": 0,
+          "heart": 0,
+          "rocket": 0,
+          "eyes": 0
+        },
+        "performed_via_github_app": null,
+        "state_reason": "completed"
+      }
+    ],
     "pullRequests": []
   }
 }

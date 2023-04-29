@@ -51,9 +51,305 @@
     "triage": false,
     "pull": false
   },
-  "branches": [],
+  "branches": [
+    {
+      "name": "master",
+      "commit": {
+        "sha": "4bf091499f9de522b048eff64f132a33e37bee35",
+        "url": "https://api.github.com/repos/discord/select.rs/commits/4bf091499f9de522b048eff64f132a33e37bee35"
+      },
+      "protected": false
+    },
+    {
+      "name": "speculate-0.1.0",
+      "commit": {
+        "sha": "3cef10fcb411bf522e00a2edf687b24b5eaba93c",
+        "url": "https://api.github.com/repos/discord/select.rs/commits/3cef10fcb411bf522e00a2edf687b24b5eaba93c"
+      },
+      "protected": false
+    },
+    {
+      "name": "tmp",
+      "commit": {
+        "sha": "97ddc651978390fde8c0c21a678373702d9fbfd8",
+        "url": "https://api.github.com/repos/discord/select.rs/commits/97ddc651978390fde8c0c21a678373702d9fbfd8"
+      },
+      "protected": false
+    }
+  ],
   "last5": {
-    "commits": [],
+    "commits": [
+      {
+        "sha": "4bf091499f9de522b048eff64f132a33e37bee35",
+        "node_id": "MDY6Q29tbWl0MjQwMTk4OTcxOjRiZjA5MTQ5OWY5ZGU1MjJiMDQ4ZWZmNjRmMTMyYTMzZTM3YmVlMzU=",
+        "commit": {
+          "author": {
+            "name": "Stanislav Vishnevskiy",
+            "email": "vishnevskiy@gmail.com",
+            "date": "2020-02-13T07:19:11Z"
+          },
+          "committer": {
+            "name": "Stanislav Vishnevskiy",
+            "email": "vishnevskiy@gmail.com",
+            "date": "2020-02-13T07:19:11Z"
+          },
+          "message": "Rust 2018 & Upgrade html5ever",
+          "tree": {
+            "sha": "66605310493244d8708ebe3a1e80a9b29e2e8a6b",
+            "url": "https://api.github.com/repos/discord/select.rs/git/trees/66605310493244d8708ebe3a1e80a9b29e2e8a6b"
+          },
+          "url": "https://api.github.com/repos/discord/select.rs/git/commits/4bf091499f9de522b048eff64f132a33e37bee35",
+          "comment_count": 0,
+          "verification": {
+            "verified": false,
+            "reason": "unsigned",
+            "signature": null,
+            "payload": null
+          }
+        },
+        "url": "https://api.github.com/repos/discord/select.rs/commits/4bf091499f9de522b048eff64f132a33e37bee35",
+        "author": {
+          "login": "vishnevskiy",
+          "id": 167844,
+          "node_id": "MDQ6VXNlcjE2Nzg0NA==",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/vishnevskiy",
+          "type": "User",
+          "site_admin": false
+        },
+        "committer": {
+          "login": "vishnevskiy",
+          "id": 167844,
+          "node_id": "MDQ6VXNlcjE2Nzg0NA==",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/vishnevskiy",
+          "type": "User",
+          "site_admin": false
+        },
+        "parents": [
+          {
+            "sha": "ab0d84b1af73d9863c07d20a229bf5421990b961",
+            "url": "https://api.github.com/repos/discord/select.rs/commits/ab0d84b1af73d9863c07d20a229bf5421990b961"
+          }
+        ]
+      },
+      {
+        "sha": "ab0d84b1af73d9863c07d20a229bf5421990b961",
+        "node_id": "MDY6Q29tbWl0MjQwMTk4OTcxOmFiMGQ4NGIxYWY3M2Q5ODYzYzA3ZDIwYTIyOWJmNTQyMTk5MGI5NjE=",
+        "commit": {
+          "author": {
+            "name": "Utkarsh Kukreti",
+            "email": "utkarshkukreti@gmail.com",
+            "date": "2019-07-14T04:33:09Z"
+          },
+          "committer": {
+            "name": "Utkarsh Kukreti",
+            "email": "utkarshkukreti@gmail.com",
+            "date": "2019-07-14T04:33:09Z"
+          },
+          "message": "chore(version): bump to 0.4.3",
+          "tree": {
+            "sha": "9ebf4bc0f435104e5bae27e0f16409c3a0dbf5e9",
+            "url": "https://api.github.com/repos/discord/select.rs/git/trees/9ebf4bc0f435104e5bae27e0f16409c3a0dbf5e9"
+          },
+          "url": "https://api.github.com/repos/discord/select.rs/git/commits/ab0d84b1af73d9863c07d20a229bf5421990b961",
+          "comment_count": 0,
+          "verification": {
+            "verified": false,
+            "reason": "unsigned",
+            "signature": null,
+            "payload": null
+          }
+        },
+        "url": "https://api.github.com/repos/discord/select.rs/commits/ab0d84b1af73d9863c07d20a229bf5421990b961",
+        "author": {
+          "login": "utkarshkukreti",
+          "id": 217126,
+          "node_id": "MDQ6VXNlcjIxNzEyNg==",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/utkarshkukreti",
+          "type": "User",
+          "site_admin": false
+        },
+        "committer": {
+          "login": "utkarshkukreti",
+          "id": 217126,
+          "node_id": "MDQ6VXNlcjIxNzEyNg==",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/utkarshkukreti",
+          "type": "User",
+          "site_admin": false
+        },
+        "parents": [
+          {
+            "sha": "7618c9e0b07966469e892bb1b429b1947f010484",
+            "url": "https://api.github.com/repos/discord/select.rs/commits/7618c9e0b07966469e892bb1b429b1947f010484"
+          }
+        ]
+      },
+      {
+        "sha": "7618c9e0b07966469e892bb1b429b1947f010484",
+        "node_id": "MDY6Q29tbWl0MjQwMTk4OTcxOjc2MThjOWUwYjA3OTY2NDY5ZTg5MmJiMWI0MjliMTk0N2YwMTA0ODQ=",
+        "commit": {
+          "author": {
+            "name": "Utkarsh Kukreti",
+            "email": "utkarshkukreti@gmail.com",
+            "date": "2019-07-14T04:29:37Z"
+          },
+          "committer": {
+            "name": "Utkarsh Kukreti",
+            "email": "utkarshkukreti@gmail.com",
+            "date": "2019-07-14T04:29:37Z"
+          },
+          "message": "chore: update .travis.yml to run tests on stable",
+          "tree": {
+            "sha": "32d7e6003c0a70f759735cbd270fa9a0e41dd6ac",
+            "url": "https://api.github.com/repos/discord/select.rs/git/trees/32d7e6003c0a70f759735cbd270fa9a0e41dd6ac"
+          },
+          "url": "https://api.github.com/repos/discord/select.rs/git/commits/7618c9e0b07966469e892bb1b429b1947f010484",
+          "comment_count": 0,
+          "verification": {
+            "verified": false,
+            "reason": "unsigned",
+            "signature": null,
+            "payload": null
+          }
+        },
+        "url": "https://api.github.com/repos/discord/select.rs/commits/7618c9e0b07966469e892bb1b429b1947f010484",
+        "author": {
+          "login": "utkarshkukreti",
+          "id": 217126,
+          "node_id": "MDQ6VXNlcjIxNzEyNg==",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/utkarshkukreti",
+          "type": "User",
+          "site_admin": false
+        },
+        "committer": {
+          "login": "utkarshkukreti",
+          "id": 217126,
+          "node_id": "MDQ6VXNlcjIxNzEyNg==",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/utkarshkukreti",
+          "type": "User",
+          "site_admin": false
+        },
+        "parents": [
+          {
+            "sha": "4e54cbb172c0c00b954611e72681fd9e84b80713",
+            "url": "https://api.github.com/repos/discord/select.rs/commits/4e54cbb172c0c00b954611e72681fd9e84b80713"
+          }
+        ]
+      },
+      {
+        "sha": "4e54cbb172c0c00b954611e72681fd9e84b80713",
+        "node_id": "MDY6Q29tbWl0MjQwMTk4OTcxOjRlNTRjYmIxNzJjMGMwMGI5NTQ2MTFlNzI2ODFmZDllODRiODA3MTM=",
+        "commit": {
+          "author": {
+            "name": "Utkarsh Kukreti",
+            "email": "utkarshkukreti@gmail.com",
+            "date": "2019-07-14T04:27:28Z"
+          },
+          "committer": {
+            "name": "Utkarsh Kukreti",
+            "email": "utkarshkukreti@gmail.com",
+            "date": "2019-07-14T04:27:28Z"
+          },
+          "message": "fix: make tests run on stable",
+          "tree": {
+            "sha": "745638cbe73c85833528e87d7974017a6975b68d",
+            "url": "https://api.github.com/repos/discord/select.rs/git/trees/745638cbe73c85833528e87d7974017a6975b68d"
+          },
+          "url": "https://api.github.com/repos/discord/select.rs/git/commits/4e54cbb172c0c00b954611e72681fd9e84b80713",
+          "comment_count": 0,
+          "verification": {
+            "verified": false,
+            "reason": "unsigned",
+            "signature": null,
+            "payload": null
+          }
+        },
+        "url": "https://api.github.com/repos/discord/select.rs/commits/4e54cbb172c0c00b954611e72681fd9e84b80713",
+        "author": {
+          "login": "utkarshkukreti",
+          "id": 217126,
+          "node_id": "MDQ6VXNlcjIxNzEyNg==",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/utkarshkukreti",
+          "type": "User",
+          "site_admin": false
+        },
+        "committer": {
+          "login": "utkarshkukreti",
+          "id": 217126,
+          "node_id": "MDQ6VXNlcjIxNzEyNg==",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/utkarshkukreti",
+          "type": "User",
+          "site_admin": false
+        },
+        "parents": [
+          {
+            "sha": "1f037599453a9c23c4330f4711be99f0180be51c",
+            "url": "https://api.github.com/repos/discord/select.rs/commits/1f037599453a9c23c4330f4711be99f0180be51c"
+          }
+        ]
+      },
+      {
+        "sha": "1f037599453a9c23c4330f4711be99f0180be51c",
+        "node_id": "MDY6Q29tbWl0MjQwMTk4OTcxOjFmMDM3NTk5NDUzYTljMjNjNDMzMGY0NzExYmU5OWYwMTgwYmU1MWM=",
+        "commit": {
+          "author": {
+            "name": "Utkarsh Kukreti",
+            "email": "utkarshkukreti@gmail.com",
+            "date": "2019-07-14T04:21:40Z"
+          },
+          "committer": {
+            "name": "Utkarsh Kukreti",
+            "email": "utkarshkukreti@gmail.com",
+            "date": "2019-07-14T04:21:40Z"
+          },
+          "message": "style: `cargo fmt`",
+          "tree": {
+            "sha": "be68fe6b26260aa7d6950828b7686c722d1a763c",
+            "url": "https://api.github.com/repos/discord/select.rs/git/trees/be68fe6b26260aa7d6950828b7686c722d1a763c"
+          },
+          "url": "https://api.github.com/repos/discord/select.rs/git/commits/1f037599453a9c23c4330f4711be99f0180be51c",
+          "comment_count": 0,
+          "verification": {
+            "verified": false,
+            "reason": "unsigned",
+            "signature": null,
+            "payload": null
+          }
+        },
+        "url": "https://api.github.com/repos/discord/select.rs/commits/1f037599453a9c23c4330f4711be99f0180be51c",
+        "author": {
+          "login": "utkarshkukreti",
+          "id": 217126,
+          "node_id": "MDQ6VXNlcjIxNzEyNg==",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/utkarshkukreti",
+          "type": "User",
+          "site_admin": false
+        },
+        "committer": {
+          "login": "utkarshkukreti",
+          "id": 217126,
+          "node_id": "MDQ6VXNlcjIxNzEyNg==",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/utkarshkukreti",
+          "type": "User",
+          "site_admin": false
+        },
+        "parents": [
+          {
+            "sha": "009648563ecd62fa2707a15202e0476af4348293",
+            "url": "https://api.github.com/repos/discord/select.rs/commits/009648563ecd62fa2707a15202e0476af4348293"
+          }
+        ]
+      }
+    ],
     "releases": [],
     "issues": [],
     "pullRequests": []

@@ -59,7 +59,278 @@
   },
   "branches": [],
   "last5": {
-    "commits": [],
+    "commits": [
+      {
+        "sha": "6bc1746d7e040245f14feea7dc252783da637388",
+        "node_id": "MDY6Q29tbWl0MzM3ODQwODYzOjZiYzE3NDZkN2UwNDAyNDVmMTRmZWVhN2RjMjUyNzgzZGE2MzczODg=",
+        "commit": {
+          "author": {
+            "name": "Mack Straight",
+            "email": "mack@discordapp.com",
+            "date": "2021-01-27T11:44:23Z"
+          },
+          "committer": {
+            "name": "Mack Straight",
+            "email": "mack@discordapp.com",
+            "date": "2021-01-27T11:44:23Z"
+          },
+          "message": "add addScheduledHandler",
+          "tree": {
+            "sha": "20f53cd251258be2cd27aead247dd544fe0c4db3",
+            "url": "https://api.github.com/repos/discord/metal-rs/git/trees/20f53cd251258be2cd27aead247dd544fe0c4db3"
+          },
+          "url": "https://api.github.com/repos/discord/metal-rs/git/commits/6bc1746d7e040245f14feea7dc252783da637388",
+          "comment_count": 0,
+          "verification": {
+            "verified": false,
+            "reason": "unsigned",
+            "signature": null,
+            "payload": null
+          }
+        },
+        "url": "https://api.github.com/repos/discord/metal-rs/commits/6bc1746d7e040245f14feea7dc252783da637388",
+        "author": {
+          "login": "eiz",
+          "id": 405658,
+          "node_id": "MDQ6VXNlcjQwNTY1OA==",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/eiz",
+          "type": "User",
+          "site_admin": false
+        },
+        "committer": {
+          "login": "eiz",
+          "id": 405658,
+          "node_id": "MDQ6VXNlcjQwNTY1OA==",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/eiz",
+          "type": "User",
+          "site_admin": false
+        },
+        "parents": [
+          {
+            "sha": "439c986eb7a9b91e88b61def2daa66e4043fcbef",
+            "url": "https://api.github.com/repos/discord/metal-rs/commits/439c986eb7a9b91e88b61def2daa66e4043fcbef"
+          }
+        ]
+      },
+      {
+        "sha": "439c986eb7a9b91e88b61def2daa66e4043fcbef",
+        "node_id": "MDY6Q29tbWl0MzM3ODQwODYzOjQzOWM5ODZlYjdhOWI5MWU4OGI2MWRlZjJkYWE2NmU0MDQzZmNiZWY=",
+        "commit": {
+          "author": {
+            "name": "Dzmitry Malyshau",
+            "email": "kvarkus@gmail.com",
+            "date": "2021-01-25T15:38:01Z"
+          },
+          "committer": {
+            "name": "Dzmitry Malyshau",
+            "email": "kvarkus@gmail.com",
+            "date": "2021-01-25T15:39:44Z"
+          },
+          "message": "Bump version to 0.21",
+          "tree": {
+            "sha": "9484d91e3a20a7c3ca93a36f06db31ba7cd19630",
+            "url": "https://api.github.com/repos/discord/metal-rs/git/trees/9484d91e3a20a7c3ca93a36f06db31ba7cd19630"
+          },
+          "url": "https://api.github.com/repos/discord/metal-rs/git/commits/439c986eb7a9b91e88b61def2daa66e4043fcbef",
+          "comment_count": 0,
+          "verification": {
+            "verified": false,
+            "reason": "unsigned",
+            "signature": null,
+            "payload": null
+          }
+        },
+        "url": "https://api.github.com/repos/discord/metal-rs/commits/439c986eb7a9b91e88b61def2daa66e4043fcbef",
+        "author": {
+          "login": "kvark",
+          "id": 107301,
+          "node_id": "MDQ6VXNlcjEwNzMwMQ==",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/kvark",
+          "type": "User",
+          "site_admin": false
+        },
+        "committer": {
+          "login": "kvark",
+          "id": 107301,
+          "node_id": "MDQ6VXNlcjEwNzMwMQ==",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/kvark",
+          "type": "User",
+          "site_admin": false
+        },
+        "parents": [
+          {
+            "sha": "9a12f4e7e7030f41675d1b438c88f9dd75a994cd",
+            "url": "https://api.github.com/repos/discord/metal-rs/commits/9a12f4e7e7030f41675d1b438c88f9dd75a994cd"
+          }
+        ]
+      },
+      {
+        "sha": "9a12f4e7e7030f41675d1b438c88f9dd75a994cd",
+        "node_id": "MDY6Q29tbWl0MzM3ODQwODYzOjlhMTJmNGU3ZTcwMzBmNDE2NzVkMWI0MzhjODhmOWRkNzVhOTk0Y2Q=",
+        "commit": {
+          "author": {
+            "name": "Bart Sekura",
+            "email": "bart.sekura@gmail.com",
+            "date": "2021-01-23T06:42:48Z"
+          },
+          "committer": {
+            "name": "GitHub",
+            "email": "noreply@github.com",
+            "date": "2021-01-23T06:42:48Z"
+          },
+          "message": "Various new features of macOS 11.0 (#197)\n\n* added various missing features, shader dynamic library sample\r\n\r\n* buffer return type fix, os::raw imports cleanup",
+          "tree": {
+            "sha": "fb59d4c93e4119727828736a7d36946a5a5b4e7b",
+            "url": "https://api.github.com/repos/discord/metal-rs/git/trees/fb59d4c93e4119727828736a7d36946a5a5b4e7b"
+          },
+          "url": "https://api.github.com/repos/discord/metal-rs/git/commits/9a12f4e7e7030f41675d1b438c88f9dd75a994cd",
+          "comment_count": 0,
+          "verification": {
+            "verified": true,
+            "reason": "valid",
+            "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsBcBAABCAAQBQJgC8VoCRBK7hj4Ov3rIwAAdHIIAH37L9zqhK78XLvWbppRxnrO\nefWgn+5bNsN8OX+lufStRytQMLvNm8Wq5Cm9C18L551cmvU+XT37NYEaA7mq07wz\n+kXLS38nTxBPzyKm9VzBQQcUYZDVOIJPLGyVf1MzDNjqys9c7I/jh95cO3GQtCYe\nrDV6Jsfdr2ANxkwodbNe9t97c0ESGJoCqat+KrcFji87UTOJOBeJRrLOkJYGS/Tx\nio1Le8hNbJ5++9Dsr3C+LFbpVIE8YX1DHaxNawzCeA71KmTMKJ96nuaFOhcG2xdc\nMo9pvhighF9KgI9nWIKT6VC0Pa9+hLsA7oEchXnv+IhvRoGGq88LXSwakOn41kw=\n=T1z9\n-----END PGP SIGNATURE-----\n",
+            "payload": "tree fb59d4c93e4119727828736a7d36946a5a5b4e7b\nparent 825c76231cc86383ed069b3ec21d5ff822eb4094\nauthor Bart Sekura <bart.sekura@gmail.com> 1611384168 +0900\ncommitter GitHub <noreply@github.com> 1611384168 -0500\n\nVarious new features of macOS 11.0 (#197)\n\n* added various missing features, shader dynamic library sample\r\n\r\n* buffer return type fix, os::raw imports cleanup"
+          }
+        },
+        "url": "https://api.github.com/repos/discord/metal-rs/commits/9a12f4e7e7030f41675d1b438c88f9dd75a994cd",
+        "author": {
+          "login": "bsekura",
+          "id": 7552761,
+          "node_id": "MDQ6VXNlcjc1NTI3NjE=",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/bsekura",
+          "type": "User",
+          "site_admin": false
+        },
+        "committer": {
+          "login": "web-flow",
+          "id": 19864447,
+          "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/web-flow",
+          "type": "User",
+          "site_admin": false
+        },
+        "parents": [
+          {
+            "sha": "825c76231cc86383ed069b3ec21d5ff822eb4094",
+            "url": "https://api.github.com/repos/discord/metal-rs/commits/825c76231cc86383ed069b3ec21d5ff822eb4094"
+          }
+        ]
+      },
+      {
+        "sha": "825c76231cc86383ed069b3ec21d5ff822eb4094",
+        "node_id": "MDY6Q29tbWl0MzM3ODQwODYzOjgyNWM3NjIzMWNjODYzODNlZDA2OWIzZWMyMWQ1ZmY4MjJlYjQwOTQ=",
+        "commit": {
+          "author": {
+            "name": "Philip Degarmo",
+            "email": "aclysma@gmail.com",
+            "date": "2021-01-20T18:26:41Z"
+          },
+          "committer": {
+            "name": "GitHub",
+            "email": "noreply@github.com",
+            "date": "2021-01-20T18:26:41Z"
+          },
+          "message": "Use &FenceRef instead of FenceRef in RenderCommandEncoder (#201)",
+          "tree": {
+            "sha": "eeb88a2387056b97c4d0b67fb9c649d98689259a",
+            "url": "https://api.github.com/repos/discord/metal-rs/git/trees/eeb88a2387056b97c4d0b67fb9c649d98689259a"
+          },
+          "url": "https://api.github.com/repos/discord/metal-rs/git/commits/825c76231cc86383ed069b3ec21d5ff822eb4094",
+          "comment_count": 0,
+          "verification": {
+            "verified": true,
+            "reason": "valid",
+            "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsBcBAABCAAQBQJgCHXhCRBK7hj4Ov3rIwAAdHIIADCvf4Y3i2eq9cn5jr7156+9\nWcTFidxeDs0IFOtHy+HNItbOdcQh8zlnb8je+3hEtdoNAK/5ZCn076km4vcm8smu\npdHk/0sLSKXpmJbtJ1W89cnMbQUsx5mwSiX4BWHn1AWVAC3IgRpuXCP9jB+YeyjS\naCmHyWJZiRvyEz93cBAx+7mgCpWjkguX3rsWax+0csEh/haQ6f6I99VCuk0f/CRF\npjKpRvLzwtqpGfra0PY4zpnXiCiZT97lAFXHxo08SdGb2GkZlV0yK3HCi1OHMh3m\nFUDwZJy8YkcU0KpWMhYB5oidhCrRhMsfDQqurCw3fRG7FQc3903fMYfbIYTsfg4=\n=g+8J\n-----END PGP SIGNATURE-----\n",
+            "payload": "tree eeb88a2387056b97c4d0b67fb9c649d98689259a\nparent e570465f5b3c5df79529b86f16f8914d38ad448b\nauthor Philip Degarmo <aclysma@gmail.com> 1611167201 -0800\ncommitter GitHub <noreply@github.com> 1611167201 -0500\n\nUse &FenceRef instead of FenceRef in RenderCommandEncoder (#201)\n\n"
+          }
+        },
+        "url": "https://api.github.com/repos/discord/metal-rs/commits/825c76231cc86383ed069b3ec21d5ff822eb4094",
+        "author": {
+          "login": "aclysma",
+          "id": 316070,
+          "node_id": "MDQ6VXNlcjMxNjA3MA==",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/aclysma",
+          "type": "User",
+          "site_admin": false
+        },
+        "committer": {
+          "login": "web-flow",
+          "id": 19864447,
+          "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/web-flow",
+          "type": "User",
+          "site_admin": false
+        },
+        "parents": [
+          {
+            "sha": "e570465f5b3c5df79529b86f16f8914d38ad448b",
+            "url": "https://api.github.com/repos/discord/metal-rs/commits/e570465f5b3c5df79529b86f16f8914d38ad448b"
+          }
+        ]
+      },
+      {
+        "sha": "e570465f5b3c5df79529b86f16f8914d38ad448b",
+        "node_id": "MDY6Q29tbWl0MzM3ODQwODYzOmU1NzA0NjVmNWIzYzVkZjc5NTI5Yjg2ZjE2Zjg5MTRkMzhhZDQ0OGI=",
+        "commit": {
+          "author": {
+            "name": "Dzmitry Malyshau",
+            "email": "kvarkus@gmail.com",
+            "date": "2021-01-20T05:03:07Z"
+          },
+          "committer": {
+            "name": "GitHub",
+            "email": "noreply@github.com",
+            "date": "2021-01-20T05:03:07Z"
+          },
+          "message": "Fix MTLArgumentType and MTLArgumentAccess size (#200)",
+          "tree": {
+            "sha": "d1fa4a070cf4379561a90410d98b1079bb52a532",
+            "url": "https://api.github.com/repos/discord/metal-rs/git/trees/d1fa4a070cf4379561a90410d98b1079bb52a532"
+          },
+          "url": "https://api.github.com/repos/discord/metal-rs/git/commits/e570465f5b3c5df79529b86f16f8914d38ad448b",
+          "comment_count": 0,
+          "verification": {
+            "verified": true,
+            "reason": "valid",
+            "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsBcBAABCAAQBQJgB7mLCRBK7hj4Ov3rIwAAdHIIAHn8+OrK/IXDP5UG2Y3GhVkD\nrPGYHqJWB5R4gg7boTCH22CoSdk6Z/luZoKXHNOhhAJ65JK61VKbjZMeLht+aL3V\n15sWeWzrVv9fFJ9SJ18gn+pNKHkq+ALDD4IzTva6SkqfCsf8ENpSMbWqBzV3Ld3H\nuP1RvWst2m9oTq1VIsVqQ0fu8/talliQWZpCx2khd1RDoJVIwYBnw7kpEbMby+/L\nUmsS1vOfCE11QZwAN5VEBIckvoxWDznKdfh3qwBhfP0dGEE8tsRdGFJ83M6u7GZQ\nowUZUsz5jsgcYOUi/9AnsDsfuV0gE2gvvADNgFKPBTzyS2R1r2Hko9EwByqbNq0=\n=47Zf\n-----END PGP SIGNATURE-----\n",
+            "payload": "tree d1fa4a070cf4379561a90410d98b1079bb52a532\nparent e7e9cf25924c3258fd2c53b5c15155502da05ba7\nauthor Dzmitry Malyshau <kvarkus@gmail.com> 1611118987 -0500\ncommitter GitHub <noreply@github.com> 1611118987 -0500\n\nFix MTLArgumentType and MTLArgumentAccess size (#200)\n\n"
+          }
+        },
+        "url": "https://api.github.com/repos/discord/metal-rs/commits/e570465f5b3c5df79529b86f16f8914d38ad448b",
+        "author": {
+          "login": "kvark",
+          "id": 107301,
+          "node_id": "MDQ6VXNlcjEwNzMwMQ==",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/kvark",
+          "type": "User",
+          "site_admin": false
+        },
+        "committer": {
+          "login": "web-flow",
+          "id": 19864447,
+          "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/web-flow",
+          "type": "User",
+          "site_admin": false
+        },
+        "parents": [
+          {
+            "sha": "e7e9cf25924c3258fd2c53b5c15155502da05ba7",
+            "url": "https://api.github.com/repos/discord/metal-rs/commits/e7e9cf25924c3258fd2c53b5c15155502da05ba7"
+          }
+        ]
+      }
+    ],
     "releases": [],
     "issues": [],
     "pullRequests": []

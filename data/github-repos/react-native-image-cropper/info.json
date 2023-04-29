@@ -57,9 +57,377 @@
     "triage": false,
     "pull": false
   },
-  "branches": [],
+  "branches": [
+    {
+      "name": "dependabot/npm_and_yarn/Example/hosted-git-info-2.8.9",
+      "commit": {
+        "sha": "2769409ff6df6208188d37fc2697405c0ae26671",
+        "url": "https://api.github.com/repos/discord/react-native-image-cropper/commits/2769409ff6df6208188d37fc2697405c0ae26671"
+      },
+      "protected": false
+    },
+    {
+      "name": "dependabot/npm_and_yarn/Example/merge-1.2.1",
+      "commit": {
+        "sha": "8e81d01a7d4a80d48a9fae0472523ddabfc731c6",
+        "url": "https://api.github.com/repos/discord/react-native-image-cropper/commits/8e81d01a7d4a80d48a9fae0472523ddabfc731c6"
+      },
+      "protected": false
+    },
+    {
+      "name": "dependabot/npm_and_yarn/Example/ua-parser-js-0.7.28",
+      "commit": {
+        "sha": "b0516106ae0c149ac83df7d1b9d70b009eb617c6",
+        "url": "https://api.github.com/repos/discord/react-native-image-cropper/commits/b0516106ae0c149ac83df7d1b9d70b009eb617c6"
+      },
+      "protected": false
+    },
+    {
+      "name": "dependabot/npm_and_yarn/Example/ws-1.1.5",
+      "commit": {
+        "sha": "648a4dcc0a8e29965bcc3c87ddd8596f9c6dc2db",
+        "url": "https://api.github.com/repos/discord/react-native-image-cropper/commits/648a4dcc0a8e29965bcc3c87ddd8596f9c6dc2db"
+      },
+      "protected": false
+    },
+    {
+      "name": "dependabot/npm_and_yarn/Example/y18n-3.2.2",
+      "commit": {
+        "sha": "f14fc0f60c1223ed73c2560225e8280f433544fa",
+        "url": "https://api.github.com/repos/discord/react-native-image-cropper/commits/f14fc0f60c1223ed73c2560225e8280f433544fa"
+      },
+      "protected": false
+    },
+    {
+      "name": "dependabot/npm_and_yarn/handlebars-4.7.7",
+      "commit": {
+        "sha": "e3af1defbcc06dec5c7cf9649ca10ba7cbcd2b4d",
+        "url": "https://api.github.com/repos/discord/react-native-image-cropper/commits/e3af1defbcc06dec5c7cf9649ca10ba7cbcd2b4d"
+      },
+      "protected": false
+    },
+    {
+      "name": "dependabot/npm_and_yarn/hosted-git-info-2.8.9",
+      "commit": {
+        "sha": "861608bd56ab010dd32a1b7f38cf8269f5f81c8d",
+        "url": "https://api.github.com/repos/discord/react-native-image-cropper/commits/861608bd56ab010dd32a1b7f38cf8269f5f81c8d"
+      },
+      "protected": false
+    },
+    {
+      "name": "dependabot/npm_and_yarn/https-proxy-agent-2.2.4",
+      "commit": {
+        "sha": "6b630f60ed01e86891c3dd602213cf60bdeb8dd3",
+        "url": "https://api.github.com/repos/discord/react-native-image-cropper/commits/6b630f60ed01e86891c3dd602213cf60bdeb8dd3"
+      },
+      "protected": false
+    },
+    {
+      "name": "dependabot/npm_and_yarn/ini-1.3.7",
+      "commit": {
+        "sha": "fce6dd96869090251c39a4ffa9859106b79ebe4d",
+        "url": "https://api.github.com/repos/discord/react-native-image-cropper/commits/fce6dd96869090251c39a4ffa9859106b79ebe4d"
+      },
+      "protected": false
+    },
+    {
+      "name": "dependabot/npm_and_yarn/lodash-4.17.21",
+      "commit": {
+        "sha": "8bcab20c2c51ee86f132925e44c8bb19e168dc1e",
+        "url": "https://api.github.com/repos/discord/react-native-image-cropper/commits/8bcab20c2c51ee86f132925e44c8bb19e168dc1e"
+      },
+      "protected": false
+    },
+    {
+      "name": "dependabot/npm_and_yarn/semantic-release-17.2.3",
+      "commit": {
+        "sha": "a87a4ae40e502bb6a41e408d42fb8b76934e0eb1",
+        "url": "https://api.github.com/repos/discord/react-native-image-cropper/commits/a87a4ae40e502bb6a41e408d42fb8b76934e0eb1"
+      },
+      "protected": false
+    },
+    {
+      "name": "dependabot/npm_and_yarn/ua-parser-js-0.7.28",
+      "commit": {
+        "sha": "a9617ed2b13fe049e40dfa67a090ad1fd69f4a3d",
+        "url": "https://api.github.com/repos/discord/react-native-image-cropper/commits/a9617ed2b13fe049e40dfa67a090ad1fd69f4a3d"
+      },
+      "protected": false
+    },
+    {
+      "name": "master",
+      "commit": {
+        "sha": "569937bfb6b45e9a86c3b331790ad910119ddc82",
+        "url": "https://api.github.com/repos/discord/react-native-image-cropper/commits/569937bfb6b45e9a86c3b331790ad910119ddc82"
+      },
+      "protected": false
+    }
+  ],
   "last5": {
-    "commits": [],
+    "commits": [
+      {
+        "sha": "569937bfb6b45e9a86c3b331790ad910119ddc82",
+        "node_id": "MDY6Q29tbWl0NDA1MzAyODI2OjU2OTkzN2JmYjZiNDVlOWE4NmMzYjMzMTc5MGFkOTEwMTE5ZGRjODI=",
+        "commit": {
+          "author": {
+            "name": "Rajesh Singh",
+            "email": "rajesh@shockdesign.com.au",
+            "date": "2019-07-23T07:17:02Z"
+          },
+          "committer": {
+            "name": "Kristoffer",
+            "email": "kristoffer.klevenberg@gmail.com",
+            "date": "2019-07-23T07:17:02Z"
+          },
+          "message": "Updated dependencies (#74)",
+          "tree": {
+            "sha": "d8001733873f3f22bfb92a384387c4c79cccbaf1",
+            "url": "https://api.github.com/repos/discord/react-native-image-cropper/git/trees/d8001733873f3f22bfb92a384387c4c79cccbaf1"
+          },
+          "url": "https://api.github.com/repos/discord/react-native-image-cropper/git/commits/569937bfb6b45e9a86c3b331790ad910119ddc82",
+          "comment_count": 0,
+          "verification": {
+            "verified": false,
+            "reason": "unsigned",
+            "signature": null,
+            "payload": null
+          }
+        },
+        "url": "https://api.github.com/repos/discord/react-native-image-cropper/commits/569937bfb6b45e9a86c3b331790ad910119ddc82",
+        "author": {
+          "login": "shockdesign",
+          "id": 138965,
+          "node_id": "MDQ6VXNlcjEzODk2NQ==",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/shockdesign",
+          "type": "User",
+          "site_admin": false
+        },
+        "committer": {
+          "login": "st0ffern",
+          "id": 943968,
+          "node_id": "MDQ6VXNlcjk0Mzk2OA==",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/st0ffern",
+          "type": "User",
+          "site_admin": false
+        },
+        "parents": [
+          {
+            "sha": "d79399361ac7a657923f34e2eb69b2a08cb14e9b",
+            "url": "https://api.github.com/repos/discord/react-native-image-cropper/commits/d79399361ac7a657923f34e2eb69b2a08cb14e9b"
+          }
+        ]
+      },
+      {
+        "sha": "d79399361ac7a657923f34e2eb69b2a08cb14e9b",
+        "node_id": "MDY6Q29tbWl0NDA1MzAyODI2OmQ3OTM5OTM2MWFjN2E2NTc5MjNmMzRlMmViNjliMmEwOGNiMTRlOWI=",
+        "commit": {
+          "author": {
+            "name": "Victor Scherba",
+            "email": "aprex.x@gmail.com",
+            "date": "2018-04-26T08:13:23Z"
+          },
+          "committer": {
+            "name": "Kristoffer",
+            "email": "kristoffer.klevenberg@gmail.com",
+            "date": "2018-04-26T08:13:23Z"
+          },
+          "message": "(fix)Source image: Reset image size on source image update\n\n* Update image size on props image update in ImageCrop component\r\n* Fix indenting",
+          "tree": {
+            "sha": "8356c821789f13294b9856f67aa2f1fe10910055",
+            "url": "https://api.github.com/repos/discord/react-native-image-cropper/git/trees/8356c821789f13294b9856f67aa2f1fe10910055"
+          },
+          "url": "https://api.github.com/repos/discord/react-native-image-cropper/git/commits/d79399361ac7a657923f34e2eb69b2a08cb14e9b",
+          "comment_count": 0,
+          "verification": {
+            "verified": false,
+            "reason": "unsigned",
+            "signature": null,
+            "payload": null
+          }
+        },
+        "url": "https://api.github.com/repos/discord/react-native-image-cropper/commits/d79399361ac7a657923f34e2eb69b2a08cb14e9b",
+        "author": {
+          "login": "aprex",
+          "id": 4394331,
+          "node_id": "MDQ6VXNlcjQzOTQzMzE=",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/aprex",
+          "type": "User",
+          "site_admin": false
+        },
+        "committer": {
+          "login": "st0ffern",
+          "id": 943968,
+          "node_id": "MDQ6VXNlcjk0Mzk2OA==",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/st0ffern",
+          "type": "User",
+          "site_admin": false
+        },
+        "parents": [
+          {
+            "sha": "ee53995485ba307352976b59bdd93113e8a6bdaa",
+            "url": "https://api.github.com/repos/discord/react-native-image-cropper/commits/ee53995485ba307352976b59bdd93113e8a6bdaa"
+          }
+        ]
+      },
+      {
+        "sha": "ee53995485ba307352976b59bdd93113e8a6bdaa",
+        "node_id": "MDY6Q29tbWl0NDA1MzAyODI2OmVlNTM5OTU0ODViYTMwNzM1Mjk3NmI1OWJkZDkzMTEzZThhNmJkYWE=",
+        "commit": {
+          "author": {
+            "name": "Amine Mouafik",
+            "email": "amine@mouafik.fr",
+            "date": "2017-12-15T09:55:02Z"
+          },
+          "committer": {
+            "name": "Kristoffer",
+            "email": "kristoffer.klevenberg@gmail.com",
+            "date": "2017-12-15T09:55:02Z"
+          },
+          "message": "docs(readme): clarify image prop as being an uri (#53)",
+          "tree": {
+            "sha": "c527504fc2b8c8d06b40eb942550e12e11e74480",
+            "url": "https://api.github.com/repos/discord/react-native-image-cropper/git/trees/c527504fc2b8c8d06b40eb942550e12e11e74480"
+          },
+          "url": "https://api.github.com/repos/discord/react-native-image-cropper/git/commits/ee53995485ba307352976b59bdd93113e8a6bdaa",
+          "comment_count": 0,
+          "verification": {
+            "verified": false,
+            "reason": "unsigned",
+            "signature": null,
+            "payload": null
+          }
+        },
+        "url": "https://api.github.com/repos/discord/react-native-image-cropper/commits/ee53995485ba307352976b59bdd93113e8a6bdaa",
+        "author": null,
+        "committer": {
+          "login": "st0ffern",
+          "id": 943968,
+          "node_id": "MDQ6VXNlcjk0Mzk2OA==",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/st0ffern",
+          "type": "User",
+          "site_admin": false
+        },
+        "parents": [
+          {
+            "sha": "4b2062205bceac8c7cf8432783604a39082de943",
+            "url": "https://api.github.com/repos/discord/react-native-image-cropper/commits/4b2062205bceac8c7cf8432783604a39082de943"
+          }
+        ]
+      },
+      {
+        "sha": "4b2062205bceac8c7cf8432783604a39082de943",
+        "node_id": "MDY6Q29tbWl0NDA1MzAyODI2OjRiMjA2MjIwNWJjZWFjOGM3Y2Y4NDMyNzgzNjA0YTM5MDgyZGU5NDM=",
+        "commit": {
+          "author": {
+            "name": "stoffern",
+            "email": "kristoffer.klevenberg@gmail.com",
+            "date": "2017-12-15T09:54:30Z"
+          },
+          "committer": {
+            "name": "stoffern",
+            "email": "kristoffer.klevenberg@gmail.com",
+            "date": "2017-12-15T09:54:30Z"
+          },
+          "message": "fix(deps): missing deps",
+          "tree": {
+            "sha": "034af5e1f0c918f710ec44fbf800bc865b908cea",
+            "url": "https://api.github.com/repos/discord/react-native-image-cropper/git/trees/034af5e1f0c918f710ec44fbf800bc865b908cea"
+          },
+          "url": "https://api.github.com/repos/discord/react-native-image-cropper/git/commits/4b2062205bceac8c7cf8432783604a39082de943",
+          "comment_count": 0,
+          "verification": {
+            "verified": false,
+            "reason": "unsigned",
+            "signature": null,
+            "payload": null
+          }
+        },
+        "url": "https://api.github.com/repos/discord/react-native-image-cropper/commits/4b2062205bceac8c7cf8432783604a39082de943",
+        "author": {
+          "login": "st0ffern",
+          "id": 943968,
+          "node_id": "MDQ6VXNlcjk0Mzk2OA==",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/st0ffern",
+          "type": "User",
+          "site_admin": false
+        },
+        "committer": {
+          "login": "st0ffern",
+          "id": 943968,
+          "node_id": "MDQ6VXNlcjk0Mzk2OA==",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/st0ffern",
+          "type": "User",
+          "site_admin": false
+        },
+        "parents": [
+          {
+            "sha": "0ca54371d26fedf4367115486fc990f8825e1fc2",
+            "url": "https://api.github.com/repos/discord/react-native-image-cropper/commits/0ca54371d26fedf4367115486fc990f8825e1fc2"
+          }
+        ]
+      },
+      {
+        "sha": "0ca54371d26fedf4367115486fc990f8825e1fc2",
+        "node_id": "MDY6Q29tbWl0NDA1MzAyODI2OjBjYTU0MzcxZDI2ZmVkZjQzNjcxMTU0ODZmYzk5MGY4ODI1ZTFmYzI=",
+        "commit": {
+          "author": {
+            "name": "stoffern",
+            "email": "kristoffer.klevenberg@gmail.com",
+            "date": "2017-12-15T07:01:39Z"
+          },
+          "committer": {
+            "name": "stoffern",
+            "email": "kristoffer.klevenberg@gmail.com",
+            "date": "2017-12-15T07:01:39Z"
+          },
+          "message": "fix(require): Fix wrong require",
+          "tree": {
+            "sha": "460f71aed2580746f498d11118d43f79508ba0a4",
+            "url": "https://api.github.com/repos/discord/react-native-image-cropper/git/trees/460f71aed2580746f498d11118d43f79508ba0a4"
+          },
+          "url": "https://api.github.com/repos/discord/react-native-image-cropper/git/commits/0ca54371d26fedf4367115486fc990f8825e1fc2",
+          "comment_count": 0,
+          "verification": {
+            "verified": false,
+            "reason": "unsigned",
+            "signature": null,
+            "payload": null
+          }
+        },
+        "url": "https://api.github.com/repos/discord/react-native-image-cropper/commits/0ca54371d26fedf4367115486fc990f8825e1fc2",
+        "author": {
+          "login": "st0ffern",
+          "id": 943968,
+          "node_id": "MDQ6VXNlcjk0Mzk2OA==",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/st0ffern",
+          "type": "User",
+          "site_admin": false
+        },
+        "committer": {
+          "login": "st0ffern",
+          "id": 943968,
+          "node_id": "MDQ6VXNlcjk0Mzk2OA==",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/st0ffern",
+          "type": "User",
+          "site_admin": false
+        },
+        "parents": [
+          {
+            "sha": "f26fb175200fda100c9dc479707f0d846aa76495",
+            "url": "https://api.github.com/repos/discord/react-native-image-cropper/commits/f26fb175200fda100c9dc479707f0d846aa76495"
+          }
+        ]
+      }
+    ],
     "releases": [],
     "issues": [],
     "pullRequests": []

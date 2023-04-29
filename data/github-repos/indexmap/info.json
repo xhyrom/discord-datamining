@@ -57,9 +57,361 @@
     "triage": false,
     "pull": false
   },
-  "branches": [],
+  "branches": [
+    {
+      "name": "branch-0.2",
+      "commit": {
+        "sha": "f36be8d16cda2740688e5974a4990ddc34e91b43",
+        "url": "https://api.github.com/repos/discord/indexmap/commits/f36be8d16cda2740688e5974a4990ddc34e91b43"
+      },
+      "protected": false
+    },
+    {
+      "name": "deprecate-for-rename",
+      "commit": {
+        "sha": "3798cd4c158e67a11958f2a0172aa1915a177331",
+        "url": "https://api.github.com/repos/discord/indexmap/commits/3798cd4c158e67a11958f2a0172aa1915a177331"
+      },
+      "protected": false
+    },
+    {
+      "name": "discord/fork-indexmap-1.4.0",
+      "commit": {
+        "sha": "9dc7d3a5b9f91757eb0d53d067f841e9b2e5f5e8",
+        "url": "https://api.github.com/repos/discord/indexmap/commits/9dc7d3a5b9f91757eb0d53d067f841e9b2e5f5e8"
+      },
+      "protected": false
+    },
+    {
+      "name": "feature/entry-key-methods",
+      "commit": {
+        "sha": "dc2665fe2b8af07fe2a0d0dd9b85a92399bbed98",
+        "url": "https://api.github.com/repos/discord/indexmap/commits/dc2665fe2b8af07fe2a0d0dd9b85a92399bbed98"
+      },
+      "protected": false
+    },
+    {
+      "name": "master",
+      "commit": {
+        "sha": "27f384d560a9bf21001dcfd48205bdc271a6fd6d",
+        "url": "https://api.github.com/repos/discord/indexmap/commits/27f384d560a9bf21001dcfd48205bdc271a6fd6d"
+      },
+      "protected": false
+    },
+    {
+      "name": "ordered-remove",
+      "commit": {
+        "sha": "79c30f518472f5b536c9807d9c223c600b01d2aa",
+        "url": "https://api.github.com/repos/discord/indexmap/commits/79c30f518472f5b536c9807d9c223c600b01d2aa"
+      },
+      "protected": false
+    },
+    {
+      "name": "ordermap-0.4",
+      "commit": {
+        "sha": "4ebaf042d78817ffe7e154c5e5ca29252bf953bb",
+        "url": "https://api.github.com/repos/discord/indexmap/commits/4ebaf042d78817ffe7e154c5e5ca29252bf953bb"
+      },
+      "protected": false
+    },
+    {
+      "name": "simple-insert",
+      "commit": {
+        "sha": "403d187fbc831a3d1e988a98770c546df9037e36",
+        "url": "https://api.github.com/repos/discord/indexmap/commits/403d187fbc831a3d1e988a98770c546df9037e36"
+      },
+      "protected": false
+    },
+    {
+      "name": "sliced-iterators",
+      "commit": {
+        "sha": "c0e87c4f6245757ddde2f7669f15180ed2535245",
+        "url": "https://api.github.com/repos/discord/indexmap/commits/c0e87c4f6245757ddde2f7669f15180ed2535245"
+      },
+      "protected": false
+    }
+  ],
   "last5": {
-    "commits": [],
+    "commits": [
+      {
+        "sha": "27f384d560a9bf21001dcfd48205bdc271a6fd6d",
+        "node_id": "MDY6Q29tbWl0MjUwNDA5MTE5OjI3ZjM4NGQ1NjBhOWJmMjEwMDFkY2ZkNDgyMDViZGMyNzFhNmZkNmQ=",
+        "commit": {
+          "author": {
+            "name": "Josh Stone",
+            "email": "cuviper@gmail.com",
+            "date": "2020-03-22T19:39:47Z"
+          },
+          "committer": {
+            "name": "Josh Stone",
+            "email": "cuviper@gmail.com",
+            "date": "2020-03-22T19:39:47Z"
+          },
+          "message": "Remove unused parens",
+          "tree": {
+            "sha": "d0844c328937822eabb320995550b654b0c9e337",
+            "url": "https://api.github.com/repos/discord/indexmap/git/trees/d0844c328937822eabb320995550b654b0c9e337"
+          },
+          "url": "https://api.github.com/repos/discord/indexmap/git/commits/27f384d560a9bf21001dcfd48205bdc271a6fd6d",
+          "comment_count": 0,
+          "verification": {
+            "verified": false,
+            "reason": "unsigned",
+            "signature": null,
+            "payload": null
+          }
+        },
+        "url": "https://api.github.com/repos/discord/indexmap/commits/27f384d560a9bf21001dcfd48205bdc271a6fd6d",
+        "author": {
+          "login": "cuviper",
+          "id": 36186,
+          "node_id": "MDQ6VXNlcjM2MTg2",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/cuviper",
+          "type": "User",
+          "site_admin": false
+        },
+        "committer": {
+          "login": "cuviper",
+          "id": 36186,
+          "node_id": "MDQ6VXNlcjM2MTg2",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/cuviper",
+          "type": "User",
+          "site_admin": false
+        },
+        "parents": [
+          {
+            "sha": "264f8114187e1b4c1c9e0d24fb26544ed79e6afb",
+            "url": "https://api.github.com/repos/discord/indexmap/commits/264f8114187e1b4c1c9e0d24fb26544ed79e6afb"
+          }
+        ]
+      },
+      {
+        "sha": "264f8114187e1b4c1c9e0d24fb26544ed79e6afb",
+        "node_id": "MDY6Q29tbWl0MjUwNDA5MTE5OjI2NGY4MTE0MTg3ZTFiNGMxYzllMGQyNGZiMjY1NDRlZDc5ZTZhZmI=",
+        "commit": {
+          "author": {
+            "name": "Josh Stone",
+            "email": "cuviper@gmail.com",
+            "date": "2020-02-12T00:30:55Z"
+          },
+          "committer": {
+            "name": "GitHub",
+            "email": "noreply@github.com",
+            "date": "2020-02-12T00:30:55Z"
+          },
+          "message": "Merge pull request #115 from Thermatix/feature/add_get_index\n\nAdds entry_index to map.rs",
+          "tree": {
+            "sha": "8d9bd4f4f11e8a85fb3097a0149d213dfcaa75ff",
+            "url": "https://api.github.com/repos/discord/indexmap/git/trees/8d9bd4f4f11e8a85fb3097a0149d213dfcaa75ff"
+          },
+          "url": "https://api.github.com/repos/discord/indexmap/git/commits/264f8114187e1b4c1c9e0d24fb26544ed79e6afb",
+          "comment_count": 0,
+          "verification": {
+            "verified": true,
+            "reason": "valid",
+            "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsBcBAABCAAQBQJeQ0c/CRBK7hj4Ov3rIwAAdHIIAATv9KUSDNbEzssUF+dbu1Vk\nQO5s/twySkoXSOnc+fQ8lZmFpGwxkG/fvgk8MKMdG/A6n3riJqk25dfuW25xMfNb\nLevVq9XrXQfkPclQBA29VZISrOFwXJNLmYknhMS4XFA2x4pfGki91zB6rGUJrSmP\nmRCVmf2ezjGc3pNZavc9bOMjU7xlkYp3C5CDlaJ/aX8NQrA4xQRxlja169/Y4OSt\nmrAWsbsuhNGLnRgFMzMyeN0jjc4uSMF2sArM2IkwAaxLsYbQ+GtZDGgxMMu+Uy0g\nbMOmLCHYBLJpgbd66yAoLLM/JMcGPSPR2qH5akXFHNxgh+/j9lPwSxAHU6RU8Ls=\n=V8Qd\n-----END PGP SIGNATURE-----\n",
+            "payload": "tree 8d9bd4f4f11e8a85fb3097a0149d213dfcaa75ff\nparent e4762edf7172b55f7ff35b471b5c60488c587658\nparent 7dcdd69be9d1075046179a0b89f960274e1396e2\nauthor Josh Stone <cuviper@gmail.com> 1581467455 -0800\ncommitter GitHub <noreply@github.com> 1581467455 -0800\n\nMerge pull request #115 from Thermatix/feature/add_get_index\n\nAdds entry_index to map.rs"
+          }
+        },
+        "url": "https://api.github.com/repos/discord/indexmap/commits/264f8114187e1b4c1c9e0d24fb26544ed79e6afb",
+        "author": {
+          "login": "cuviper",
+          "id": 36186,
+          "node_id": "MDQ6VXNlcjM2MTg2",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/cuviper",
+          "type": "User",
+          "site_admin": false
+        },
+        "committer": {
+          "login": "web-flow",
+          "id": 19864447,
+          "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/web-flow",
+          "type": "User",
+          "site_admin": false
+        },
+        "parents": [
+          {
+            "sha": "e4762edf7172b55f7ff35b471b5c60488c587658",
+            "url": "https://api.github.com/repos/discord/indexmap/commits/e4762edf7172b55f7ff35b471b5c60488c587658"
+          },
+          {
+            "sha": "7dcdd69be9d1075046179a0b89f960274e1396e2",
+            "url": "https://api.github.com/repos/discord/indexmap/commits/7dcdd69be9d1075046179a0b89f960274e1396e2"
+          }
+        ]
+      },
+      {
+        "sha": "7dcdd69be9d1075046179a0b89f960274e1396e2",
+        "node_id": "MDY6Q29tbWl0MjUwNDA5MTE5OjdkY2RkNjliZTlkMTA3NTA0NjE3OWEwYjg5Zjk2MDI3NGUxMzk2ZTI=",
+        "commit": {
+          "author": {
+            "name": "Martin Becker",
+            "email": "mbeckerwork@gmail.com",
+            "date": "2020-02-10T12:38:25Z"
+          },
+          "committer": {
+            "name": "thermatix",
+            "email": "mbeckerwork@gmail.com",
+            "date": "2020-02-10T12:38:25Z"
+          },
+          "message": "Add entry_insex to set.rs",
+          "tree": {
+            "sha": "d121cf96618069b36a6de4ff604aba3a4a199030",
+            "url": "https://api.github.com/repos/discord/indexmap/git/trees/d121cf96618069b36a6de4ff604aba3a4a199030"
+          },
+          "url": "https://api.github.com/repos/discord/indexmap/git/commits/7dcdd69be9d1075046179a0b89f960274e1396e2",
+          "comment_count": 0,
+          "verification": {
+            "verified": false,
+            "reason": "unsigned",
+            "signature": null,
+            "payload": null
+          }
+        },
+        "url": "https://api.github.com/repos/discord/indexmap/commits/7dcdd69be9d1075046179a0b89f960274e1396e2",
+        "author": {
+          "login": "Thermatix",
+          "id": 5038613,
+          "node_id": "MDQ6VXNlcjUwMzg2MTM=",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/Thermatix",
+          "type": "User",
+          "site_admin": false
+        },
+        "committer": {
+          "login": "Thermatix",
+          "id": 5038613,
+          "node_id": "MDQ6VXNlcjUwMzg2MTM=",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/Thermatix",
+          "type": "User",
+          "site_admin": false
+        },
+        "parents": [
+          {
+            "sha": "29819a2ff42697f3e9804aec3195d3b9ce92791a",
+            "url": "https://api.github.com/repos/discord/indexmap/commits/29819a2ff42697f3e9804aec3195d3b9ce92791a"
+          }
+        ]
+      },
+      {
+        "sha": "29819a2ff42697f3e9804aec3195d3b9ce92791a",
+        "node_id": "MDY6Q29tbWl0MjUwNDA5MTE5OjI5ODE5YTJmZjQyNjk3ZjNlOTgwNGFlYzMxOTVkM2I5Y2U5Mjc5MWE=",
+        "commit": {
+          "author": {
+            "name": "Martin Becker",
+            "email": "mbeckerwork@gmail.com",
+            "date": "2020-02-10T12:37:52Z"
+          },
+          "committer": {
+            "name": "thermatix",
+            "email": "mbeckerwork@gmail.com",
+            "date": "2020-02-10T12:37:52Z"
+          },
+          "message": "Removes superlous variable binding",
+          "tree": {
+            "sha": "2c8b7c8bd5d9df0db836d813f2f9fa86cc0f35ec",
+            "url": "https://api.github.com/repos/discord/indexmap/git/trees/2c8b7c8bd5d9df0db836d813f2f9fa86cc0f35ec"
+          },
+          "url": "https://api.github.com/repos/discord/indexmap/git/commits/29819a2ff42697f3e9804aec3195d3b9ce92791a",
+          "comment_count": 0,
+          "verification": {
+            "verified": false,
+            "reason": "unsigned",
+            "signature": null,
+            "payload": null
+          }
+        },
+        "url": "https://api.github.com/repos/discord/indexmap/commits/29819a2ff42697f3e9804aec3195d3b9ce92791a",
+        "author": {
+          "login": "Thermatix",
+          "id": 5038613,
+          "node_id": "MDQ6VXNlcjUwMzg2MTM=",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/Thermatix",
+          "type": "User",
+          "site_admin": false
+        },
+        "committer": {
+          "login": "Thermatix",
+          "id": 5038613,
+          "node_id": "MDQ6VXNlcjUwMzg2MTM=",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/Thermatix",
+          "type": "User",
+          "site_admin": false
+        },
+        "parents": [
+          {
+            "sha": "22d1c7247fc0146d14263823471879080c21ae45",
+            "url": "https://api.github.com/repos/discord/indexmap/commits/22d1c7247fc0146d14263823471879080c21ae45"
+          }
+        ]
+      },
+      {
+        "sha": "e4762edf7172b55f7ff35b471b5c60488c587658",
+        "node_id": "MDY6Q29tbWl0MjUwNDA5MTE5OmU0NzYyZWRmNzE3MmI1NWY3ZmYzNWI0NzFiNWM2MDQ4OGM1ODc2NTg=",
+        "commit": {
+          "author": {
+            "name": "Josh Stone",
+            "email": "cuviper@gmail.com",
+            "date": "2020-02-05T18:47:00Z"
+          },
+          "committer": {
+            "name": "GitHub",
+            "email": "noreply@github.com",
+            "date": "2020-02-05T18:47:00Z"
+          },
+          "message": "Merge pull request #117 from cuviper/release-1.3.2\n\nRelease 1.3.2",
+          "tree": {
+            "sha": "41deb5284a17024f4a4f711cbc65776e40df6609",
+            "url": "https://api.github.com/repos/discord/indexmap/git/trees/41deb5284a17024f4a4f711cbc65776e40df6609"
+          },
+          "url": "https://api.github.com/repos/discord/indexmap/git/commits/e4762edf7172b55f7ff35b471b5c60488c587658",
+          "comment_count": 0,
+          "verification": {
+            "verified": true,
+            "reason": "valid",
+            "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsBcBAABCAAQBQJeOw2kCRBK7hj4Ov3rIwAAdHIIAC8PC211FIx0Esfr1Sx3K0lo\nreSCcKiEjUIc4xlR6zjJZ/FXz3/PX/Vhyyx20LHHVvRvdGjLxCuxRBvvYIOd9Ftd\n3bk7hNjAfQDZkAVPmVDW/1iqcD9MiMq/ILRIGIzuT+GxGtBZ9yfiBWzsiMgfr1sm\nLnmXSP8v0ZrMBk/ZldYZ2rlSj/KlT2onOgE+H2aOSh+yV46f+MxK9KgIBNMUjt12\nD8WODv4oimKrSRYHKXARwmcIPaCLijYGbdfzXSRgOxx5UZF1w9IzBY+YPvHRIktl\nYmVbxX+u6NjZwQpd1DVIhDvvmeoubiBSCFPJw2k6ugX9Rk08BFNJsAJd/LZj88s=\n=w5NC\n-----END PGP SIGNATURE-----\n",
+            "payload": "tree 41deb5284a17024f4a4f711cbc65776e40df6609\nparent d3eb7cd5074ae26e2d77da433cad673c8a1a50e2\nparent 55c087982717eabaf4cba82e4e4d491432e532f3\nauthor Josh Stone <cuviper@gmail.com> 1580928420 -0800\ncommitter GitHub <noreply@github.com> 1580928420 -0800\n\nMerge pull request #117 from cuviper/release-1.3.2\n\nRelease 1.3.2"
+          }
+        },
+        "url": "https://api.github.com/repos/discord/indexmap/commits/e4762edf7172b55f7ff35b471b5c60488c587658",
+        "author": {
+          "login": "cuviper",
+          "id": 36186,
+          "node_id": "MDQ6VXNlcjM2MTg2",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/cuviper",
+          "type": "User",
+          "site_admin": false
+        },
+        "committer": {
+          "login": "web-flow",
+          "id": 19864447,
+          "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/web-flow",
+          "type": "User",
+          "site_admin": false
+        },
+        "parents": [
+          {
+            "sha": "d3eb7cd5074ae26e2d77da433cad673c8a1a50e2",
+            "url": "https://api.github.com/repos/discord/indexmap/commits/d3eb7cd5074ae26e2d77da433cad673c8a1a50e2"
+          },
+          {
+            "sha": "55c087982717eabaf4cba82e4e4d491432e532f3",
+            "url": "https://api.github.com/repos/discord/indexmap/commits/55c087982717eabaf4cba82e4e4d491432e532f3"
+          }
+        ]
+      }
+    ],
     "releases": [],
     "issues": [],
     "pullRequests": []
