@@ -82,8 +82,8 @@
           "url": "https://api.github.com/repos/discord/gen_registry/git/commits/c14d3503efa1e2c9b4aaee55a23b1afa909b0f41",
           "comment_count": 0,
           "verification": {
-            "verified": true,
-            "reason": "valid",
+            "verified": false,
+            "reason": "gpgverify_unavailable",
             "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsBcBAABCAAQBQJjRbLrCRBK7hj4Ov3rIwAA7xQIACXcZN8nLIJrL00OErN/nzyh\nzftENJdcF/AU3LtIRaBxTnaHkfwtj0/LRP5YfBSkNI74F52zJR5lifpZMQ7cwGMH\nx0rXaijJD6Ca2uRR1D6sCRLAvlnsqhR4UEn1Yb0z/KQ5PRKdEba6dxojkFJr7w7/\nWFcueqpE5eYD4gDSFeeLraWo20MLabZqLr5kxDHy106sB2REfnJTsgaDntlrQ2Cz\nf2F+ScGZUAbVE9VQ+O92t6r8Tad83Ar7N7Nir+sCS+JCbvEBvJXAZBO5FDnvxY7Q\nQK7K1ah0jA5qeknXVTJTZ4pb1LQ0XHvqSFjJoosiFp78/sQVVAgHMjBz3cfqBYs=\n=zvLB\n-----END PGP SIGNATURE-----\n",
             "payload": "tree 7a92690a92049c190db11345576eb1ac11bbea63\nparent 561cf3fa027246008f02fe2150248b38785b15fa\nauthor Matt Nowack <matt@discordapp.com> 1665512171 -0700\ncommitter GitHub <noreply@github.com> 1665512171 -0700\n\nPreparing for v1.3.0 release (#11)\n\n"
           }
@@ -136,8 +136,8 @@
           "url": "https://api.github.com/repos/discord/gen_registry/git/commits/561cf3fa027246008f02fe2150248b38785b15fa",
           "comment_count": 0,
           "verification": {
-            "verified": true,
-            "reason": "valid",
+            "verified": false,
+            "reason": "gpgverify_unavailable",
             "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsBcBAABCAAQBQJjRaJcCRBK7hj4Ov3rIwAAIu0IAF9n1xYo1XgxehtfHCFLxtaF\neV9zgdQZQPpRR/iQqD/jAwkRKdDlP0SMpv8OU2KwKuvQYCxKekt6GdTvwvEgcdL2\nfvqrpjQL/pT+Ia31jLReky9Aw4arY7j+pT/NF7quaQBkcqn6UEPbuP8TvafovSUK\nqhYSaR/CmempEDXwqeMqKpScRb0SVUGFyVM057dqmJJDJQ+o5vOQkfm7aploFuHk\n07OV2e3unDMkwuOwhJJBJSpLieGdaUINdZcGot/8/cEGXARmcRClC+jHvAjWWrfa\npxB3qZYJ8pe0Ix+H6EzDLIsP377vUDOOBCpaZ3SscgMyAyP8T4AprQOyV+FHmsc=\n=8RGF\n-----END PGP SIGNATURE-----\n",
             "payload": "tree 771307b3ad04356a119e811e827c062b71c37ada\nparent 6ee002c2b82f6cf3e73b186bb32ea8b68a3b2316\nauthor Matt Nowack <matt@discordapp.com> 1665507932 -0700\ncommitter GitHub <noreply@github.com> 1665507932 -0700\n\nAdds a start/4 (#10)\n\n* Adds a start/4\r\n\r\nstart/4 allows the caller to know whether or not they started the\r\nworker process.  lookup_or_start/4 is transparent about whether the\r\nworker process was started fresh or already existed. Some use cases\r\nrequire that the caller be able to tell whether or not they started\r\nthe worker process.\r\n\r\nstart/4 will error if the worker process already exists with\r\n`{:error, {:already_started, pid}}` similar to how a Supervisor\r\nbehaves when a child is already running.\r\n\r\n* Update CI to run on all published versions"
           }
@@ -298,8 +298,8 @@
           "url": "https://api.github.com/repos/discord/gen_registry/git/commits/b674af12dc0bb5a98ab733ca0432ae8465ddcf46",
           "comment_count": 0,
           "verification": {
-            "verified": true,
-            "reason": "valid",
+            "verified": false,
+            "reason": "gpgverify_unavailable",
             "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsBcBAABCAAQBQJjMebDCRBK7hj4Ov3rIwAAQ/oIAIid7GVBJOFUAWNElxK7VoLA\n+LblqRRNz7Qkwhv9AadEDNxz0+YBDJgFy8SHM1pWoAh+PVdargVShl4XdU/wkQIu\nsGY6kmXDgZWJ396lUW+TUdrjD/qCymPLroVluB9y6yOR1cTCVEfz55CEZO7cyw7f\nkzAc14QtThDl+SFAf1a+CPb+p0z7uwiSp9OIyQWx2MAXmLpJVcGM+rxwPpmam8MH\nzYZKEzCqAVROli+Oc3Z+iRXO94S8iR4yFgxg4uIKfXfA9vF8VzQmuNJ3SJn6Ya3C\nzA+/TDWU+9B7NN7qd8ykvEK3exln3S5jvmpc5NkBncaOO7cXBZqy5WYZretHBUs=\n=QVsx\n-----END PGP SIGNATURE-----\n",
             "payload": "tree 91e3ebc7314a1a4c4356fb59078259c66921ec8f\nparent 74246ae4e4d9b3c330bacc529c9dd32851378446\nauthor Matt Nowack <matt@discordapp.com> 1664214723 -0700\ncommitter GitHub <noreply@github.com> 1664214723 -0700\n\nGenRegistry convenience functions (#9)\n\n* GenRegistry convenience functions\r\n\r\n- `sample/1` returns a random sample from the GenRegistry.\r\n- `to_list/1` returns the GenRegistry entries as a list.\r\n\r\n* Revert using patch since it doesn't support 1.6\r\n\r\n* Clean up trailing comma"
           }

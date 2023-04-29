@@ -657,6 +657,1061 @@
         "state_reason": null
       }
     ],
-    "pullRequests": []
+    "pullRequests": [
+      {
+        "url": "https://api.github.com/repos/discord/manifold/pulls/14",
+        "id": 1259536512,
+        "node_id": "PR_kwDOBOTWwM5LEwCA",
+        "number": 14,
+        "state": "closed",
+        "locked": false,
+        "title": "Prepare for a 1.6.0 release",
+        "user": {
+          "login": "ihumanable",
+          "id": 122636,
+          "node_id": "MDQ6VXNlcjEyMjYzNg==",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/ihumanable",
+          "type": "User",
+          "site_admin": false
+        },
+        "body": null,
+        "created_at": "2023-03-01T22:37:46Z",
+        "updated_at": "2023-03-01T22:57:13Z",
+        "closed_at": "2023-03-01T22:57:12Z",
+        "merged_at": "2023-03-01T22:57:12Z",
+        "merge_commit_sha": "ca14074ff6fc79adb91345099f2d27cb246e3708",
+        "assignee": null,
+        "assignees": [],
+        "requested_reviewers": [],
+        "requested_teams": [],
+        "labels": [],
+        "milestone": null,
+        "draft": false,
+        "head": {
+          "label": "discord:release/1.6.0",
+          "ref": "release/1.6.0",
+          "sha": "4b2ec51409c9dc894ca4ac23f4b99ee6542573ea",
+          "user": {
+            "login": "discord",
+            "id": 1965106,
+            "node_id": "MDEyOk9yZ2FuaXphdGlvbjE5NjUxMDY=",
+            "gravatar_id": "",
+            "url": "https://api.github.com/users/discord",
+            "type": "Organization",
+            "site_admin": false
+          },
+          "repo": {
+            "id": 82106048,
+            "node_id": "MDEwOlJlcG9zaXRvcnk4MjEwNjA0OA==",
+            "name": "manifold",
+            "full_name": "discord/manifold",
+            "private": false,
+            "owner": {
+              "login": "discord",
+              "id": 1965106,
+              "node_id": "MDEyOk9yZ2FuaXphdGlvbjE5NjUxMDY=",
+              "gravatar_id": "",
+              "url": "https://api.github.com/users/discord",
+              "type": "Organization",
+              "site_admin": false
+            },
+            "description": "Fast batch message passing between nodes for Erlang/Elixir.",
+            "fork": false,
+            "url": "https://api.github.com/repos/discord/manifold",
+            "created_at": "2017-02-15T20:57:49Z",
+            "updated_at": "2023-04-23T20:47:13Z",
+            "pushed_at": "2023-04-11T10:23:38Z",
+            "homepage": "",
+            "size": 87,
+            "stargazers_count": 1578,
+            "watchers_count": 1578,
+            "language": "Elixir",
+            "has_issues": true,
+            "has_projects": true,
+            "has_downloads": true,
+            "has_wiki": true,
+            "has_pages": false,
+            "has_discussions": false,
+            "forks_count": 61,
+            "archived": false,
+            "disabled": false,
+            "open_issues_count": 0,
+            "license": {
+              "key": "mit",
+              "name": "MIT License",
+              "spdx_id": "MIT",
+              "url": "https://api.github.com/licenses/mit",
+              "node_id": "MDc6TGljZW5zZTEz"
+            },
+            "allow_forking": true,
+            "is_template": false,
+            "web_commit_signoff_required": false,
+            "topics": [
+              "elixir",
+              "erlang",
+              "message-passing",
+              "performance"
+            ],
+            "visibility": "public",
+            "forks": 61,
+            "open_issues": 0,
+            "watchers": 1578,
+            "default_branch": "master"
+          }
+        },
+        "base": {
+          "label": "discord:master",
+          "ref": "master",
+          "sha": "828dedd94b851593ef7f23cec615cdcb31af8519",
+          "user": {
+            "login": "discord",
+            "id": 1965106,
+            "node_id": "MDEyOk9yZ2FuaXphdGlvbjE5NjUxMDY=",
+            "gravatar_id": "",
+            "url": "https://api.github.com/users/discord",
+            "type": "Organization",
+            "site_admin": false
+          },
+          "repo": {
+            "id": 82106048,
+            "node_id": "MDEwOlJlcG9zaXRvcnk4MjEwNjA0OA==",
+            "name": "manifold",
+            "full_name": "discord/manifold",
+            "private": false,
+            "owner": {
+              "login": "discord",
+              "id": 1965106,
+              "node_id": "MDEyOk9yZ2FuaXphdGlvbjE5NjUxMDY=",
+              "gravatar_id": "",
+              "url": "https://api.github.com/users/discord",
+              "type": "Organization",
+              "site_admin": false
+            },
+            "description": "Fast batch message passing between nodes for Erlang/Elixir.",
+            "fork": false,
+            "url": "https://api.github.com/repos/discord/manifold",
+            "created_at": "2017-02-15T20:57:49Z",
+            "updated_at": "2023-04-23T20:47:13Z",
+            "pushed_at": "2023-04-11T10:23:38Z",
+            "homepage": "",
+            "size": 87,
+            "stargazers_count": 1578,
+            "watchers_count": 1578,
+            "language": "Elixir",
+            "has_issues": true,
+            "has_projects": true,
+            "has_downloads": true,
+            "has_wiki": true,
+            "has_pages": false,
+            "has_discussions": false,
+            "forks_count": 61,
+            "archived": false,
+            "disabled": false,
+            "open_issues_count": 0,
+            "license": {
+              "key": "mit",
+              "name": "MIT License",
+              "spdx_id": "MIT",
+              "url": "https://api.github.com/licenses/mit",
+              "node_id": "MDc6TGljZW5zZTEz"
+            },
+            "allow_forking": true,
+            "is_template": false,
+            "web_commit_signoff_required": false,
+            "topics": [
+              "elixir",
+              "erlang",
+              "message-passing",
+              "performance"
+            ],
+            "visibility": "public",
+            "forks": 61,
+            "open_issues": 0,
+            "watchers": 1578,
+            "default_branch": "master"
+          }
+        },
+        "_links": {
+          "self": {
+            "href": "https://api.github.com/repos/discord/manifold/pulls/14"
+          },
+          "html": {
+            "href": "https://github.com/discord/manifold/pull/14"
+          },
+          "issue": {
+            "href": "https://api.github.com/repos/discord/manifold/issues/14"
+          },
+          "comments": {
+            "href": "https://api.github.com/repos/discord/manifold/issues/14/comments"
+          },
+          "review_comments": {
+            "href": "https://api.github.com/repos/discord/manifold/pulls/14/comments"
+          },
+          "review_comment": {
+            "href": "https://api.github.com/repos/discord/manifold/pulls/comments{/number}"
+          },
+          "commits": {
+            "href": "https://api.github.com/repos/discord/manifold/pulls/14/commits"
+          },
+          "statuses": {
+            "href": "https://api.github.com/repos/discord/manifold/statuses/4b2ec51409c9dc894ca4ac23f4b99ee6542573ea"
+          }
+        },
+        "author_association": "CONTRIBUTOR",
+        "auto_merge": null,
+        "active_lock_reason": null
+      },
+      {
+        "url": "https://api.github.com/repos/discord/manifold/pulls/13",
+        "id": 1202144881,
+        "node_id": "PR_kwDOBOTWwM5Hp0Zx",
+        "number": 13,
+        "state": "closed",
+        "locked": false,
+        "title": "binary pack option",
+        "user": {
+          "login": "devsnek",
+          "id": 5952481,
+          "node_id": "MDQ6VXNlcjU5NTI0ODE=",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/devsnek",
+          "type": "User",
+          "site_admin": false
+        },
+        "body": null,
+        "created_at": "2023-01-18T18:53:26Z",
+        "updated_at": "2023-02-28T22:15:08Z",
+        "closed_at": "2023-02-28T22:14:58Z",
+        "merged_at": "2023-02-28T22:14:58Z",
+        "merge_commit_sha": "828dedd94b851593ef7f23cec615cdcb31af8519",
+        "assignee": null,
+        "assignees": [],
+        "requested_reviewers": [],
+        "requested_teams": [],
+        "labels": [],
+        "milestone": null,
+        "draft": false,
+        "head": {
+          "label": "discord:x/binary-pack",
+          "ref": "x/binary-pack",
+          "sha": "852d19888e3ee9acf0a88b5ff0a7beb6fe4a6c11",
+          "user": {
+            "login": "discord",
+            "id": 1965106,
+            "node_id": "MDEyOk9yZ2FuaXphdGlvbjE5NjUxMDY=",
+            "gravatar_id": "",
+            "url": "https://api.github.com/users/discord",
+            "type": "Organization",
+            "site_admin": false
+          },
+          "repo": {
+            "id": 82106048,
+            "node_id": "MDEwOlJlcG9zaXRvcnk4MjEwNjA0OA==",
+            "name": "manifold",
+            "full_name": "discord/manifold",
+            "private": false,
+            "owner": {
+              "login": "discord",
+              "id": 1965106,
+              "node_id": "MDEyOk9yZ2FuaXphdGlvbjE5NjUxMDY=",
+              "gravatar_id": "",
+              "url": "https://api.github.com/users/discord",
+              "type": "Organization",
+              "site_admin": false
+            },
+            "description": "Fast batch message passing between nodes for Erlang/Elixir.",
+            "fork": false,
+            "url": "https://api.github.com/repos/discord/manifold",
+            "created_at": "2017-02-15T20:57:49Z",
+            "updated_at": "2023-04-23T20:47:13Z",
+            "pushed_at": "2023-04-11T10:23:38Z",
+            "homepage": "",
+            "size": 87,
+            "stargazers_count": 1578,
+            "watchers_count": 1578,
+            "language": "Elixir",
+            "has_issues": true,
+            "has_projects": true,
+            "has_downloads": true,
+            "has_wiki": true,
+            "has_pages": false,
+            "has_discussions": false,
+            "forks_count": 61,
+            "archived": false,
+            "disabled": false,
+            "open_issues_count": 0,
+            "license": {
+              "key": "mit",
+              "name": "MIT License",
+              "spdx_id": "MIT",
+              "url": "https://api.github.com/licenses/mit",
+              "node_id": "MDc6TGljZW5zZTEz"
+            },
+            "allow_forking": true,
+            "is_template": false,
+            "web_commit_signoff_required": false,
+            "topics": [
+              "elixir",
+              "erlang",
+              "message-passing",
+              "performance"
+            ],
+            "visibility": "public",
+            "forks": 61,
+            "open_issues": 0,
+            "watchers": 1578,
+            "default_branch": "master"
+          }
+        },
+        "base": {
+          "label": "discord:master",
+          "ref": "master",
+          "sha": "1093c5155bbc196b96d52e1934036e0994f5ac81",
+          "user": {
+            "login": "discord",
+            "id": 1965106,
+            "node_id": "MDEyOk9yZ2FuaXphdGlvbjE5NjUxMDY=",
+            "gravatar_id": "",
+            "url": "https://api.github.com/users/discord",
+            "type": "Organization",
+            "site_admin": false
+          },
+          "repo": {
+            "id": 82106048,
+            "node_id": "MDEwOlJlcG9zaXRvcnk4MjEwNjA0OA==",
+            "name": "manifold",
+            "full_name": "discord/manifold",
+            "private": false,
+            "owner": {
+              "login": "discord",
+              "id": 1965106,
+              "node_id": "MDEyOk9yZ2FuaXphdGlvbjE5NjUxMDY=",
+              "gravatar_id": "",
+              "url": "https://api.github.com/users/discord",
+              "type": "Organization",
+              "site_admin": false
+            },
+            "description": "Fast batch message passing between nodes for Erlang/Elixir.",
+            "fork": false,
+            "url": "https://api.github.com/repos/discord/manifold",
+            "created_at": "2017-02-15T20:57:49Z",
+            "updated_at": "2023-04-23T20:47:13Z",
+            "pushed_at": "2023-04-11T10:23:38Z",
+            "homepage": "",
+            "size": 87,
+            "stargazers_count": 1578,
+            "watchers_count": 1578,
+            "language": "Elixir",
+            "has_issues": true,
+            "has_projects": true,
+            "has_downloads": true,
+            "has_wiki": true,
+            "has_pages": false,
+            "has_discussions": false,
+            "forks_count": 61,
+            "archived": false,
+            "disabled": false,
+            "open_issues_count": 0,
+            "license": {
+              "key": "mit",
+              "name": "MIT License",
+              "spdx_id": "MIT",
+              "url": "https://api.github.com/licenses/mit",
+              "node_id": "MDc6TGljZW5zZTEz"
+            },
+            "allow_forking": true,
+            "is_template": false,
+            "web_commit_signoff_required": false,
+            "topics": [
+              "elixir",
+              "erlang",
+              "message-passing",
+              "performance"
+            ],
+            "visibility": "public",
+            "forks": 61,
+            "open_issues": 0,
+            "watchers": 1578,
+            "default_branch": "master"
+          }
+        },
+        "_links": {
+          "self": {
+            "href": "https://api.github.com/repos/discord/manifold/pulls/13"
+          },
+          "html": {
+            "href": "https://github.com/discord/manifold/pull/13"
+          },
+          "issue": {
+            "href": "https://api.github.com/repos/discord/manifold/issues/13"
+          },
+          "comments": {
+            "href": "https://api.github.com/repos/discord/manifold/issues/13/comments"
+          },
+          "review_comments": {
+            "href": "https://api.github.com/repos/discord/manifold/pulls/13/comments"
+          },
+          "review_comment": {
+            "href": "https://api.github.com/repos/discord/manifold/pulls/comments{/number}"
+          },
+          "commits": {
+            "href": "https://api.github.com/repos/discord/manifold/pulls/13/commits"
+          },
+          "statuses": {
+            "href": "https://api.github.com/repos/discord/manifold/statuses/852d19888e3ee9acf0a88b5ff0a7beb6fe4a6c11"
+          }
+        },
+        "author_association": "MEMBER",
+        "auto_merge": null,
+        "active_lock_reason": null
+      },
+      {
+        "url": "https://api.github.com/repos/discord/manifold/pulls/12",
+        "id": 1056863086,
+        "node_id": "PR_kwDOBOTWwM4-_nNu",
+        "number": 12,
+        "state": "closed",
+        "locked": false,
+        "title": "Add valid_send_options/1",
+        "user": {
+          "login": "slam",
+          "id": 50348,
+          "node_id": "MDQ6VXNlcjUwMzQ4",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/slam",
+          "type": "User",
+          "site_admin": false
+        },
+        "body": null,
+        "created_at": "2022-09-15T04:57:06Z",
+        "updated_at": "2022-09-15T17:58:13Z",
+        "closed_at": "2022-09-15T17:58:13Z",
+        "merged_at": "2022-09-15T17:58:12Z",
+        "merge_commit_sha": "1093c5155bbc196b96d52e1934036e0994f5ac81",
+        "assignee": null,
+        "assignees": [],
+        "requested_reviewers": [
+          {
+            "login": "ypisetsky",
+            "id": 287854,
+            "node_id": "MDQ6VXNlcjI4Nzg1NA==",
+            "gravatar_id": "",
+            "url": "https://api.github.com/users/ypisetsky",
+            "type": "User",
+            "site_admin": false
+          }
+        ],
+        "requested_teams": [],
+        "labels": [],
+        "milestone": null,
+        "draft": false,
+        "head": {
+          "label": "discord:slam/validate-sendmode",
+          "ref": "slam/validate-sendmode",
+          "sha": "ec59d69252eb84a90d32b16c8e18d55ddffac2bf",
+          "user": {
+            "login": "discord",
+            "id": 1965106,
+            "node_id": "MDEyOk9yZ2FuaXphdGlvbjE5NjUxMDY=",
+            "gravatar_id": "",
+            "url": "https://api.github.com/users/discord",
+            "type": "Organization",
+            "site_admin": false
+          },
+          "repo": {
+            "id": 82106048,
+            "node_id": "MDEwOlJlcG9zaXRvcnk4MjEwNjA0OA==",
+            "name": "manifold",
+            "full_name": "discord/manifold",
+            "private": false,
+            "owner": {
+              "login": "discord",
+              "id": 1965106,
+              "node_id": "MDEyOk9yZ2FuaXphdGlvbjE5NjUxMDY=",
+              "gravatar_id": "",
+              "url": "https://api.github.com/users/discord",
+              "type": "Organization",
+              "site_admin": false
+            },
+            "description": "Fast batch message passing between nodes for Erlang/Elixir.",
+            "fork": false,
+            "url": "https://api.github.com/repos/discord/manifold",
+            "created_at": "2017-02-15T20:57:49Z",
+            "updated_at": "2023-04-23T20:47:13Z",
+            "pushed_at": "2023-04-11T10:23:38Z",
+            "homepage": "",
+            "size": 87,
+            "stargazers_count": 1578,
+            "watchers_count": 1578,
+            "language": "Elixir",
+            "has_issues": true,
+            "has_projects": true,
+            "has_downloads": true,
+            "has_wiki": true,
+            "has_pages": false,
+            "has_discussions": false,
+            "forks_count": 61,
+            "archived": false,
+            "disabled": false,
+            "open_issues_count": 0,
+            "license": {
+              "key": "mit",
+              "name": "MIT License",
+              "spdx_id": "MIT",
+              "url": "https://api.github.com/licenses/mit",
+              "node_id": "MDc6TGljZW5zZTEz"
+            },
+            "allow_forking": true,
+            "is_template": false,
+            "web_commit_signoff_required": false,
+            "topics": [
+              "elixir",
+              "erlang",
+              "message-passing",
+              "performance"
+            ],
+            "visibility": "public",
+            "forks": 61,
+            "open_issues": 0,
+            "watchers": 1578,
+            "default_branch": "master"
+          }
+        },
+        "base": {
+          "label": "discord:master",
+          "ref": "master",
+          "sha": "7db6d2479c3cb0bc8951cf5e77c0a84cb6840a5e",
+          "user": {
+            "login": "discord",
+            "id": 1965106,
+            "node_id": "MDEyOk9yZ2FuaXphdGlvbjE5NjUxMDY=",
+            "gravatar_id": "",
+            "url": "https://api.github.com/users/discord",
+            "type": "Organization",
+            "site_admin": false
+          },
+          "repo": {
+            "id": 82106048,
+            "node_id": "MDEwOlJlcG9zaXRvcnk4MjEwNjA0OA==",
+            "name": "manifold",
+            "full_name": "discord/manifold",
+            "private": false,
+            "owner": {
+              "login": "discord",
+              "id": 1965106,
+              "node_id": "MDEyOk9yZ2FuaXphdGlvbjE5NjUxMDY=",
+              "gravatar_id": "",
+              "url": "https://api.github.com/users/discord",
+              "type": "Organization",
+              "site_admin": false
+            },
+            "description": "Fast batch message passing between nodes for Erlang/Elixir.",
+            "fork": false,
+            "url": "https://api.github.com/repos/discord/manifold",
+            "created_at": "2017-02-15T20:57:49Z",
+            "updated_at": "2023-04-23T20:47:13Z",
+            "pushed_at": "2023-04-11T10:23:38Z",
+            "homepage": "",
+            "size": 87,
+            "stargazers_count": 1578,
+            "watchers_count": 1578,
+            "language": "Elixir",
+            "has_issues": true,
+            "has_projects": true,
+            "has_downloads": true,
+            "has_wiki": true,
+            "has_pages": false,
+            "has_discussions": false,
+            "forks_count": 61,
+            "archived": false,
+            "disabled": false,
+            "open_issues_count": 0,
+            "license": {
+              "key": "mit",
+              "name": "MIT License",
+              "spdx_id": "MIT",
+              "url": "https://api.github.com/licenses/mit",
+              "node_id": "MDc6TGljZW5zZTEz"
+            },
+            "allow_forking": true,
+            "is_template": false,
+            "web_commit_signoff_required": false,
+            "topics": [
+              "elixir",
+              "erlang",
+              "message-passing",
+              "performance"
+            ],
+            "visibility": "public",
+            "forks": 61,
+            "open_issues": 0,
+            "watchers": 1578,
+            "default_branch": "master"
+          }
+        },
+        "_links": {
+          "self": {
+            "href": "https://api.github.com/repos/discord/manifold/pulls/12"
+          },
+          "html": {
+            "href": "https://github.com/discord/manifold/pull/12"
+          },
+          "issue": {
+            "href": "https://api.github.com/repos/discord/manifold/issues/12"
+          },
+          "comments": {
+            "href": "https://api.github.com/repos/discord/manifold/issues/12/comments"
+          },
+          "review_comments": {
+            "href": "https://api.github.com/repos/discord/manifold/pulls/12/comments"
+          },
+          "review_comment": {
+            "href": "https://api.github.com/repos/discord/manifold/pulls/comments{/number}"
+          },
+          "commits": {
+            "href": "https://api.github.com/repos/discord/manifold/pulls/12/commits"
+          },
+          "statuses": {
+            "href": "https://api.github.com/repos/discord/manifold/statuses/ec59d69252eb84a90d32b16c8e18d55ddffac2bf"
+          }
+        },
+        "author_association": "CONTRIBUTOR",
+        "auto_merge": null,
+        "active_lock_reason": null
+      },
+      {
+        "url": "https://api.github.com/repos/discord/manifold/pulls/11",
+        "id": 1056595348,
+        "node_id": "PR_kwDOBOTWwM4--l2U",
+        "number": 11,
+        "state": "closed",
+        "locked": false,
+        "title": "Relax send_mode validation...",
+        "user": {
+          "login": "slam",
+          "id": 50348,
+          "node_id": "MDQ6VXNlcjUwMzQ4",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/slam",
+          "type": "User",
+          "site_admin": false
+        },
+        "body": "... so an unknown option falls back to the default send behavior",
+        "created_at": "2022-09-14T21:33:39Z",
+        "updated_at": "2022-09-15T03:10:21Z",
+        "closed_at": "2022-09-15T03:10:21Z",
+        "merged_at": null,
+        "merge_commit_sha": "31de3403eb216b51d047260539847c39a8b83c95",
+        "assignee": null,
+        "assignees": [],
+        "requested_reviewers": [
+          {
+            "login": "ihumanable",
+            "id": 122636,
+            "node_id": "MDQ6VXNlcjEyMjYzNg==",
+            "gravatar_id": "",
+            "url": "https://api.github.com/users/ihumanable",
+            "type": "User",
+            "site_admin": false
+          },
+          {
+            "login": "ypisetsky",
+            "id": 287854,
+            "node_id": "MDQ6VXNlcjI4Nzg1NA==",
+            "gravatar_id": "",
+            "url": "https://api.github.com/users/ypisetsky",
+            "type": "User",
+            "site_admin": false
+          }
+        ],
+        "requested_teams": [],
+        "labels": [],
+        "milestone": null,
+        "draft": false,
+        "head": {
+          "label": "discord:slam/fix-sendmode-options",
+          "ref": "slam/fix-sendmode-options",
+          "sha": "26a13fc0134a3faab8a51214652504d1fb16ccd0",
+          "user": {
+            "login": "discord",
+            "id": 1965106,
+            "node_id": "MDEyOk9yZ2FuaXphdGlvbjE5NjUxMDY=",
+            "gravatar_id": "",
+            "url": "https://api.github.com/users/discord",
+            "type": "Organization",
+            "site_admin": false
+          },
+          "repo": {
+            "id": 82106048,
+            "node_id": "MDEwOlJlcG9zaXRvcnk4MjEwNjA0OA==",
+            "name": "manifold",
+            "full_name": "discord/manifold",
+            "private": false,
+            "owner": {
+              "login": "discord",
+              "id": 1965106,
+              "node_id": "MDEyOk9yZ2FuaXphdGlvbjE5NjUxMDY=",
+              "gravatar_id": "",
+              "url": "https://api.github.com/users/discord",
+              "type": "Organization",
+              "site_admin": false
+            },
+            "description": "Fast batch message passing between nodes for Erlang/Elixir.",
+            "fork": false,
+            "url": "https://api.github.com/repos/discord/manifold",
+            "created_at": "2017-02-15T20:57:49Z",
+            "updated_at": "2023-04-23T20:47:13Z",
+            "pushed_at": "2023-04-11T10:23:38Z",
+            "homepage": "",
+            "size": 87,
+            "stargazers_count": 1578,
+            "watchers_count": 1578,
+            "language": "Elixir",
+            "has_issues": true,
+            "has_projects": true,
+            "has_downloads": true,
+            "has_wiki": true,
+            "has_pages": false,
+            "has_discussions": false,
+            "forks_count": 61,
+            "archived": false,
+            "disabled": false,
+            "open_issues_count": 0,
+            "license": {
+              "key": "mit",
+              "name": "MIT License",
+              "spdx_id": "MIT",
+              "url": "https://api.github.com/licenses/mit",
+              "node_id": "MDc6TGljZW5zZTEz"
+            },
+            "allow_forking": true,
+            "is_template": false,
+            "web_commit_signoff_required": false,
+            "topics": [
+              "elixir",
+              "erlang",
+              "message-passing",
+              "performance"
+            ],
+            "visibility": "public",
+            "forks": 61,
+            "open_issues": 0,
+            "watchers": 1578,
+            "default_branch": "master"
+          }
+        },
+        "base": {
+          "label": "discord:master",
+          "ref": "master",
+          "sha": "7db6d2479c3cb0bc8951cf5e77c0a84cb6840a5e",
+          "user": {
+            "login": "discord",
+            "id": 1965106,
+            "node_id": "MDEyOk9yZ2FuaXphdGlvbjE5NjUxMDY=",
+            "gravatar_id": "",
+            "url": "https://api.github.com/users/discord",
+            "type": "Organization",
+            "site_admin": false
+          },
+          "repo": {
+            "id": 82106048,
+            "node_id": "MDEwOlJlcG9zaXRvcnk4MjEwNjA0OA==",
+            "name": "manifold",
+            "full_name": "discord/manifold",
+            "private": false,
+            "owner": {
+              "login": "discord",
+              "id": 1965106,
+              "node_id": "MDEyOk9yZ2FuaXphdGlvbjE5NjUxMDY=",
+              "gravatar_id": "",
+              "url": "https://api.github.com/users/discord",
+              "type": "Organization",
+              "site_admin": false
+            },
+            "description": "Fast batch message passing between nodes for Erlang/Elixir.",
+            "fork": false,
+            "url": "https://api.github.com/repos/discord/manifold",
+            "created_at": "2017-02-15T20:57:49Z",
+            "updated_at": "2023-04-23T20:47:13Z",
+            "pushed_at": "2023-04-11T10:23:38Z",
+            "homepage": "",
+            "size": 87,
+            "stargazers_count": 1578,
+            "watchers_count": 1578,
+            "language": "Elixir",
+            "has_issues": true,
+            "has_projects": true,
+            "has_downloads": true,
+            "has_wiki": true,
+            "has_pages": false,
+            "has_discussions": false,
+            "forks_count": 61,
+            "archived": false,
+            "disabled": false,
+            "open_issues_count": 0,
+            "license": {
+              "key": "mit",
+              "name": "MIT License",
+              "spdx_id": "MIT",
+              "url": "https://api.github.com/licenses/mit",
+              "node_id": "MDc6TGljZW5zZTEz"
+            },
+            "allow_forking": true,
+            "is_template": false,
+            "web_commit_signoff_required": false,
+            "topics": [
+              "elixir",
+              "erlang",
+              "message-passing",
+              "performance"
+            ],
+            "visibility": "public",
+            "forks": 61,
+            "open_issues": 0,
+            "watchers": 1578,
+            "default_branch": "master"
+          }
+        },
+        "_links": {
+          "self": {
+            "href": "https://api.github.com/repos/discord/manifold/pulls/11"
+          },
+          "html": {
+            "href": "https://github.com/discord/manifold/pull/11"
+          },
+          "issue": {
+            "href": "https://api.github.com/repos/discord/manifold/issues/11"
+          },
+          "comments": {
+            "href": "https://api.github.com/repos/discord/manifold/issues/11/comments"
+          },
+          "review_comments": {
+            "href": "https://api.github.com/repos/discord/manifold/pulls/11/comments"
+          },
+          "review_comment": {
+            "href": "https://api.github.com/repos/discord/manifold/pulls/comments{/number}"
+          },
+          "commits": {
+            "href": "https://api.github.com/repos/discord/manifold/pulls/11/commits"
+          },
+          "statuses": {
+            "href": "https://api.github.com/repos/discord/manifold/statuses/26a13fc0134a3faab8a51214652504d1fb16ccd0"
+          }
+        },
+        "author_association": "CONTRIBUTOR",
+        "auto_merge": null,
+        "active_lock_reason": null
+      },
+      {
+        "url": "https://api.github.com/repos/discord/manifold/pulls/10",
+        "id": 1044232072,
+        "node_id": "PR_kwDOBOTWwM4-PbeI",
+        "number": 10,
+        "state": "closed",
+        "locked": false,
+        "title": "Add an optional :offload send mode",
+        "user": {
+          "login": "slam",
+          "id": 50348,
+          "node_id": "MDQ6VXNlcjUwMzQ4",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/slam",
+          "type": "User",
+          "site_admin": false
+        },
+        "body": "This optional mode offloads the send/2 calls to the remote Manifold nodes\r\nto one of the local `Manifold.Sender` processes.\r\n\r\nAdd a new test for the :offload send mode.",
+        "created_at": "2022-09-01T21:06:21Z",
+        "updated_at": "2022-09-07T18:07:14Z",
+        "closed_at": "2022-09-07T18:07:10Z",
+        "merged_at": "2022-09-07T18:07:10Z",
+        "merge_commit_sha": "7db6d2479c3cb0bc8951cf5e77c0a84cb6840a5e",
+        "assignee": null,
+        "assignees": [],
+        "requested_reviewers": [
+          {
+            "login": "ihumanable",
+            "id": 122636,
+            "node_id": "MDQ6VXNlcjEyMjYzNg==",
+            "gravatar_id": "",
+            "url": "https://api.github.com/users/ihumanable",
+            "type": "User",
+            "site_admin": false
+          }
+        ],
+        "requested_teams": [],
+        "labels": [],
+        "milestone": null,
+        "draft": false,
+        "head": {
+          "label": "slam:slam/send-workers",
+          "ref": "slam/send-workers",
+          "sha": "fd785e001c6b1718b799338d0558ead9291c6e74",
+          "user": {
+            "login": "slam",
+            "id": 50348,
+            "node_id": "MDQ6VXNlcjUwMzQ4",
+            "gravatar_id": "",
+            "url": "https://api.github.com/users/slam",
+            "type": "User",
+            "site_admin": false
+          },
+          "repo": {
+            "id": 531221221,
+            "node_id": "R_kgDOH6nK5Q",
+            "name": "manifold",
+            "full_name": "slam/manifold",
+            "private": false,
+            "owner": {
+              "login": "slam",
+              "id": 50348,
+              "node_id": "MDQ6VXNlcjUwMzQ4",
+              "gravatar_id": "",
+              "url": "https://api.github.com/users/slam",
+              "type": "User",
+              "site_admin": false
+            },
+            "description": "Fast batch message passing between nodes for Erlang/Elixir.",
+            "fork": true,
+            "url": "https://api.github.com/repos/slam/manifold",
+            "created_at": "2022-08-31T19:02:59Z",
+            "updated_at": "2022-08-28T14:20:02Z",
+            "pushed_at": "2022-09-07T18:07:14Z",
+            "homepage": "",
+            "size": 57,
+            "stargazers_count": 0,
+            "watchers_count": 0,
+            "language": null,
+            "has_issues": false,
+            "has_projects": true,
+            "has_downloads": true,
+            "has_wiki": true,
+            "has_pages": false,
+            "has_discussions": false,
+            "forks_count": 0,
+            "archived": false,
+            "disabled": false,
+            "open_issues_count": 0,
+            "license": {
+              "key": "mit",
+              "name": "MIT License",
+              "spdx_id": "MIT",
+              "url": "https://api.github.com/licenses/mit",
+              "node_id": "MDc6TGljZW5zZTEz"
+            },
+            "allow_forking": true,
+            "is_template": false,
+            "web_commit_signoff_required": false,
+            "topics": [],
+            "visibility": "public",
+            "forks": 0,
+            "open_issues": 0,
+            "watchers": 0,
+            "default_branch": "master"
+          }
+        },
+        "base": {
+          "label": "discord:master",
+          "ref": "master",
+          "sha": "8fbb5275313e6b8255c32be88561ae9880e15fff",
+          "user": {
+            "login": "discord",
+            "id": 1965106,
+            "node_id": "MDEyOk9yZ2FuaXphdGlvbjE5NjUxMDY=",
+            "gravatar_id": "",
+            "url": "https://api.github.com/users/discord",
+            "type": "Organization",
+            "site_admin": false
+          },
+          "repo": {
+            "id": 82106048,
+            "node_id": "MDEwOlJlcG9zaXRvcnk4MjEwNjA0OA==",
+            "name": "manifold",
+            "full_name": "discord/manifold",
+            "private": false,
+            "owner": {
+              "login": "discord",
+              "id": 1965106,
+              "node_id": "MDEyOk9yZ2FuaXphdGlvbjE5NjUxMDY=",
+              "gravatar_id": "",
+              "url": "https://api.github.com/users/discord",
+              "type": "Organization",
+              "site_admin": false
+            },
+            "description": "Fast batch message passing between nodes for Erlang/Elixir.",
+            "fork": false,
+            "url": "https://api.github.com/repos/discord/manifold",
+            "created_at": "2017-02-15T20:57:49Z",
+            "updated_at": "2023-04-23T20:47:13Z",
+            "pushed_at": "2023-04-11T10:23:38Z",
+            "homepage": "",
+            "size": 87,
+            "stargazers_count": 1578,
+            "watchers_count": 1578,
+            "language": "Elixir",
+            "has_issues": true,
+            "has_projects": true,
+            "has_downloads": true,
+            "has_wiki": true,
+            "has_pages": false,
+            "has_discussions": false,
+            "forks_count": 61,
+            "archived": false,
+            "disabled": false,
+            "open_issues_count": 0,
+            "license": {
+              "key": "mit",
+              "name": "MIT License",
+              "spdx_id": "MIT",
+              "url": "https://api.github.com/licenses/mit",
+              "node_id": "MDc6TGljZW5zZTEz"
+            },
+            "allow_forking": true,
+            "is_template": false,
+            "web_commit_signoff_required": false,
+            "topics": [
+              "elixir",
+              "erlang",
+              "message-passing",
+              "performance"
+            ],
+            "visibility": "public",
+            "forks": 61,
+            "open_issues": 0,
+            "watchers": 1578,
+            "default_branch": "master"
+          }
+        },
+        "_links": {
+          "self": {
+            "href": "https://api.github.com/repos/discord/manifold/pulls/10"
+          },
+          "html": {
+            "href": "https://github.com/discord/manifold/pull/10"
+          },
+          "issue": {
+            "href": "https://api.github.com/repos/discord/manifold/issues/10"
+          },
+          "comments": {
+            "href": "https://api.github.com/repos/discord/manifold/issues/10/comments"
+          },
+          "review_comments": {
+            "href": "https://api.github.com/repos/discord/manifold/pulls/10/comments"
+          },
+          "review_comment": {
+            "href": "https://api.github.com/repos/discord/manifold/pulls/comments{/number}"
+          },
+          "commits": {
+            "href": "https://api.github.com/repos/discord/manifold/pulls/10/commits"
+          },
+          "statuses": {
+            "href": "https://api.github.com/repos/discord/manifold/statuses/fd785e001c6b1718b799338d0558ead9291c6e74"
+          }
+        },
+        "author_association": "CONTRIBUTOR",
+        "auto_merge": null,
+        "active_lock_reason": null
+      }
+    ]
   }
 }
