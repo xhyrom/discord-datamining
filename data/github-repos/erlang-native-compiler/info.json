@@ -390,6 +390,201 @@
         "state_reason": null
       }
     ],
-    "pullRequests": []
+    "pullRequests": [
+      {
+        "url": "https://api.github.com/repos/discord/erlang-native-compiler/pulls/1",
+        "id": 939210170,
+        "node_id": "PR_kwDOHWiGcs43-zW6",
+        "number": 1,
+        "state": "closed",
+        "locked": false,
+        "title": "compile on libei changes",
+        "user": {
+          "login": "brian-armstrong-discord",
+          "id": 25939803,
+          "node_id": "MDQ6VXNlcjI1OTM5ODAz",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/brian-armstrong-discord",
+          "type": "User",
+          "site_admin": false
+        },
+        "body": null,
+        "created_at": "2022-05-17T19:47:08Z",
+        "updated_at": "2022-05-17T20:01:13Z",
+        "closed_at": "2022-05-17T20:01:06Z",
+        "merged_at": "2022-05-17T20:01:06Z",
+        "merge_commit_sha": "902a4c57c38aad3631f0c6133a9a26eeab95c90c",
+        "assignee": null,
+        "assignees": [],
+        "requested_reviewers": [],
+        "requested_teams": [],
+        "labels": [],
+        "milestone": null,
+        "draft": false,
+        "head": {
+          "label": "discord:libei",
+          "ref": "libei",
+          "sha": "ac55429a5f769c40c62a703bf372227ced2bec4a",
+          "user": {
+            "login": "discord",
+            "id": 1965106,
+            "node_id": "MDEyOk9yZ2FuaXphdGlvbjE5NjUxMDY=",
+            "gravatar_id": "",
+            "url": "https://api.github.com/users/discord",
+            "type": "Organization",
+            "site_admin": false
+          },
+          "repo": {
+            "id": 493389426,
+            "node_id": "R_kgDOHWiGcg",
+            "name": "erlang-native-compiler",
+            "full_name": "discord/erlang-native-compiler",
+            "private": false,
+            "owner": {
+              "login": "discord",
+              "id": 1965106,
+              "node_id": "MDEyOk9yZ2FuaXphdGlvbjE5NjUxMDY=",
+              "gravatar_id": "",
+              "url": "https://api.github.com/users/discord",
+              "type": "Organization",
+              "site_admin": false
+            },
+            "description": "A standalone executable for compiling native code for Erlang.",
+            "fork": true,
+            "url": "https://api.github.com/repos/discord/erlang-native-compiler",
+            "created_at": "2022-05-17T19:35:59Z",
+            "updated_at": "2022-05-17T20:01:10Z",
+            "pushed_at": "2022-05-17T20:01:13Z",
+            "homepage": null,
+            "size": 179,
+            "stargazers_count": 0,
+            "watchers_count": 0,
+            "language": "Erlang",
+            "has_issues": false,
+            "has_projects": true,
+            "has_downloads": true,
+            "has_wiki": true,
+            "has_pages": false,
+            "has_discussions": false,
+            "forks_count": 0,
+            "archived": false,
+            "disabled": false,
+            "open_issues_count": 0,
+            "license": {
+              "key": "apache-2.0",
+              "name": "Apache License 2.0",
+              "spdx_id": "Apache-2.0",
+              "url": "https://api.github.com/licenses/apache-2.0",
+              "node_id": "MDc6TGljZW5zZTI="
+            },
+            "allow_forking": true,
+            "is_template": false,
+            "web_commit_signoff_required": false,
+            "topics": [],
+            "visibility": "public",
+            "forks": 0,
+            "open_issues": 0,
+            "watchers": 0,
+            "default_branch": "master"
+          }
+        },
+        "base": {
+          "label": "discord:master",
+          "ref": "master",
+          "sha": "2c92afb0292165edd0e5d66c792ad9fe4bb265eb",
+          "user": {
+            "login": "discord",
+            "id": 1965106,
+            "node_id": "MDEyOk9yZ2FuaXphdGlvbjE5NjUxMDY=",
+            "gravatar_id": "",
+            "url": "https://api.github.com/users/discord",
+            "type": "Organization",
+            "site_admin": false
+          },
+          "repo": {
+            "id": 493389426,
+            "node_id": "R_kgDOHWiGcg",
+            "name": "erlang-native-compiler",
+            "full_name": "discord/erlang-native-compiler",
+            "private": false,
+            "owner": {
+              "login": "discord",
+              "id": 1965106,
+              "node_id": "MDEyOk9yZ2FuaXphdGlvbjE5NjUxMDY=",
+              "gravatar_id": "",
+              "url": "https://api.github.com/users/discord",
+              "type": "Organization",
+              "site_admin": false
+            },
+            "description": "A standalone executable for compiling native code for Erlang.",
+            "fork": true,
+            "url": "https://api.github.com/repos/discord/erlang-native-compiler",
+            "created_at": "2022-05-17T19:35:59Z",
+            "updated_at": "2022-05-17T20:01:10Z",
+            "pushed_at": "2022-05-17T20:01:13Z",
+            "homepage": null,
+            "size": 179,
+            "stargazers_count": 0,
+            "watchers_count": 0,
+            "language": "Erlang",
+            "has_issues": false,
+            "has_projects": true,
+            "has_downloads": true,
+            "has_wiki": true,
+            "has_pages": false,
+            "has_discussions": false,
+            "forks_count": 0,
+            "archived": false,
+            "disabled": false,
+            "open_issues_count": 0,
+            "license": {
+              "key": "apache-2.0",
+              "name": "Apache License 2.0",
+              "spdx_id": "Apache-2.0",
+              "url": "https://api.github.com/licenses/apache-2.0",
+              "node_id": "MDc6TGljZW5zZTI="
+            },
+            "allow_forking": true,
+            "is_template": false,
+            "web_commit_signoff_required": false,
+            "topics": [],
+            "visibility": "public",
+            "forks": 0,
+            "open_issues": 0,
+            "watchers": 0,
+            "default_branch": "master"
+          }
+        },
+        "_links": {
+          "self": {
+            "href": "https://api.github.com/repos/discord/erlang-native-compiler/pulls/1"
+          },
+          "html": {
+            "href": "https://github.com/discord/erlang-native-compiler/pull/1"
+          },
+          "issue": {
+            "href": "https://api.github.com/repos/discord/erlang-native-compiler/issues/1"
+          },
+          "comments": {
+            "href": "https://api.github.com/repos/discord/erlang-native-compiler/issues/1/comments"
+          },
+          "review_comments": {
+            "href": "https://api.github.com/repos/discord/erlang-native-compiler/pulls/1/comments"
+          },
+          "review_comment": {
+            "href": "https://api.github.com/repos/discord/erlang-native-compiler/pulls/comments{/number}"
+          },
+          "commits": {
+            "href": "https://api.github.com/repos/discord/erlang-native-compiler/pulls/1/commits"
+          },
+          "statuses": {
+            "href": "https://api.github.com/repos/discord/erlang-native-compiler/statuses/ac55429a5f769c40c62a703bf372227ced2bec4a"
+          }
+        },
+        "author_association": "COLLABORATOR",
+        "auto_merge": null,
+        "active_lock_reason": null
+      }
+    ]
   }
 }

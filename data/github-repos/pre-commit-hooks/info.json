@@ -57,7 +57,32 @@
     "triage": false,
     "pull": false
   },
-  "branches": [],
+  "branches": [
+    {
+      "name": "denbeigh/version-pinning-sadness",
+      "commit": {
+        "sha": "7ee0c78b514a1f19b649dde0a3513c01b2d33da8",
+        "url": "https://api.github.com/repos/discord/pre-commit-hooks/commits/7ee0c78b514a1f19b649dde0a3513c01b2d33da8"
+      },
+      "protected": false
+    },
+    {
+      "name": "jdost/v2.2.4",
+      "commit": {
+        "sha": "f700d38752917612f303742d2c029e43511029fa",
+        "url": "https://api.github.com/repos/discord/pre-commit-hooks/commits/f700d38752917612f303742d2c029e43511029fa"
+      },
+      "protected": false
+    },
+    {
+      "name": "master",
+      "commit": {
+        "sha": "7282c4b8497610f1622be86493f7b6bf6441bdf9",
+        "url": "https://api.github.com/repos/discord/pre-commit-hooks/commits/7282c4b8497610f1622be86493f7b6bf6441bdf9"
+      },
+      "protected": false
+    }
+  ],
   "last5": {
     "commits": [
       {

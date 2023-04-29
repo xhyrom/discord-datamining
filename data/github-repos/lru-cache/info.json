@@ -57,7 +57,40 @@
     "triage": false,
     "pull": false
   },
-  "branches": [],
+  "branches": [
+    {
+      "name": "evict",
+      "commit": {
+        "sha": "cad0126737f655c0730359c76515a5c55f076738",
+        "url": "https://api.github.com/repos/discord/lru-cache/commits/cad0126737f655c0730359c76515a5c55f076738"
+      },
+      "protected": false
+    },
+    {
+      "name": "evict-handler",
+      "commit": {
+        "sha": "cad0126737f655c0730359c76515a5c55f076738",
+        "url": "https://api.github.com/repos/discord/lru-cache/commits/cad0126737f655c0730359c76515a5c55f076738"
+      },
+      "protected": false
+    },
+    {
+      "name": "gh-pages",
+      "commit": {
+        "sha": "803d99f65a5fa1bfdd85397323181bde9cb8f99f",
+        "url": "https://api.github.com/repos/discord/lru-cache/commits/803d99f65a5fa1bfdd85397323181bde9cb8f99f"
+      },
+      "protected": false
+    },
+    {
+      "name": "master",
+      "commit": {
+        "sha": "3ab6bab8428c661e5dae154742b4afb3074c4346",
+        "url": "https://api.github.com/repos/discord/lru-cache/commits/3ab6bab8428c661e5dae154742b4afb3074c4346"
+      },
+      "protected": false
+    }
+  ],
   "last5": {
     "commits": [
       {
