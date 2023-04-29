@@ -57,7 +57,112 @@
     "triage": false,
     "pull": false
   },
-  "branches": [],
+  "branches": [
+    {
+      "name": "fix/error-handling",
+      "commit": {
+        "sha": "643f1712ffb8bc8b50573e5319438ee1cf96a347",
+        "url": "https://api.github.com/repos/discord/babel-plugin-dynamic-import-webpack/commits/643f1712ffb8bc8b50573e5319438ee1cf96a347"
+      },
+      "protected": false
+    },
+    {
+      "name": "greenkeeper/babel-eslint-8.0.0",
+      "commit": {
+        "sha": "8744642d799763b463f913b83b3304e1f721543f",
+        "url": "https://api.github.com/repos/discord/babel-plugin-dynamic-import-webpack/commits/8744642d799763b463f913b83b3304e1f721543f"
+      },
+      "protected": false
+    },
+    {
+      "name": "greenkeeper/babel-eslint-8.0.1",
+      "commit": {
+        "sha": "da95c0405ddccc8b0c012a40be987bccfe43541a",
+        "url": "https://api.github.com/repos/discord/babel-plugin-dynamic-import-webpack/commits/da95c0405ddccc8b0c012a40be987bccfe43541a"
+      },
+      "protected": false
+    },
+    {
+      "name": "greenkeeper/babel-eslint-8.0.2",
+      "commit": {
+        "sha": "9b8130da421f008602f5b04650f67805d9ec312f",
+        "url": "https://api.github.com/repos/discord/babel-plugin-dynamic-import-webpack/commits/9b8130da421f008602f5b04650f67805d9ec312f"
+      },
+      "protected": false
+    },
+    {
+      "name": "greenkeeper/babel-eslint-8.0.3",
+      "commit": {
+        "sha": "792f48f601402729459d6fce48de7fb2ac2cf801",
+        "url": "https://api.github.com/repos/discord/babel-plugin-dynamic-import-webpack/commits/792f48f601402729459d6fce48de7fb2ac2cf801"
+      },
+      "protected": false
+    },
+    {
+      "name": "greenkeeper/babel-eslint-8.1.0",
+      "commit": {
+        "sha": "50b1c4da414475b5070da5f5960510250215e50e",
+        "url": "https://api.github.com/repos/discord/babel-plugin-dynamic-import-webpack/commits/50b1c4da414475b5070da5f5960510250215e50e"
+      },
+      "protected": false
+    },
+    {
+      "name": "greenkeeper/babel-eslint-8.1.1",
+      "commit": {
+        "sha": "4fbb61c81e4f2fbf8c58c363aeead746c2e02b64",
+        "url": "https://api.github.com/repos/discord/babel-plugin-dynamic-import-webpack/commits/4fbb61c81e4f2fbf8c58c363aeead746c2e02b64"
+      },
+      "protected": false
+    },
+    {
+      "name": "greenkeeper/babel-eslint-8.1.2",
+      "commit": {
+        "sha": "893b39654f40372258faf73ea91bfc28f10490bc",
+        "url": "https://api.github.com/repos/discord/babel-plugin-dynamic-import-webpack/commits/893b39654f40372258faf73ea91bfc28f10490bc"
+      },
+      "protected": false
+    },
+    {
+      "name": "greenkeeper/babel-eslint-8.2.0",
+      "commit": {
+        "sha": "ee71eee94c12f25063db8044738efa30acd320ba",
+        "url": "https://api.github.com/repos/discord/babel-plugin-dynamic-import-webpack/commits/ee71eee94c12f25063db8044738efa30acd320ba"
+      },
+      "protected": false
+    },
+    {
+      "name": "greenkeeper/babel-eslint-8.2.1",
+      "commit": {
+        "sha": "c04cf1325aa4c9c87d3117a8e98176adde696443",
+        "url": "https://api.github.com/repos/discord/babel-plugin-dynamic-import-webpack/commits/c04cf1325aa4c9c87d3117a8e98176adde696443"
+      },
+      "protected": false
+    },
+    {
+      "name": "greenkeeper/mocha-4.0.1",
+      "commit": {
+        "sha": "f27643a1a19a4bc37044dc39a9ce3bd1910040e2",
+        "url": "https://api.github.com/repos/discord/babel-plugin-dynamic-import-webpack/commits/f27643a1a19a4bc37044dc39a9ce3bd1910040e2"
+      },
+      "protected": false
+    },
+    {
+      "name": "greenkeeper/mocha-4.1.0",
+      "commit": {
+        "sha": "f6261e122d3239b408448877f3fdc0a3a9c1a600",
+        "url": "https://api.github.com/repos/discord/babel-plugin-dynamic-import-webpack/commits/f6261e122d3239b408448877f3fdc0a3a9c1a600"
+      },
+      "protected": false
+    },
+    {
+      "name": "master",
+      "commit": {
+        "sha": "41f5b0493b937b9746d8e5557970936c3700527d",
+        "url": "https://api.github.com/repos/discord/babel-plugin-dynamic-import-webpack/commits/41f5b0493b937b9746d8e5557970936c3700527d"
+      },
+      "protected": false
+    }
+  ],
   "last5": {
     "commits": [
       {
