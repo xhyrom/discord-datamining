@@ -429,12 +429,15 @@
         "body": "Adds the --check command line option, so we can just pull the RELEASES file without actually downloading.\n"
       }
     ],
-    "issues": [
+    "issues": [],
+    "pullRequests": [
       {
-        "url": "https://api.github.com/repos/discord/Squirrel.Windows/issues/2",
-        "id": 967424766,
+        "url": "https://api.github.com/repos/discord/Squirrel.Windows/pulls/2",
+        "id": 709599200,
         "node_id": "MDExOlB1bGxSZXF1ZXN0NzA5NTk5MjAw",
         "number": 2,
+        "state": "closed",
+        "locked": false,
         "title": "Make directory deletion more atomic",
         "user": {
           "login": "mikepavone",
@@ -445,44 +448,190 @@
           "type": "User",
           "site_admin": false
         },
-        "labels": [],
-        "state": "closed",
-        "locked": false,
-        "assignee": null,
-        "assignees": [],
-        "milestone": null,
-        "comments": 1,
+        "body": "Currently, if a file is locked in the destination directory (which will be the case if the app is running), it will end up partially deleted and the installation will exit with an error. This leaves the existing install in a corrupted state, which is less than ideal. This PR makes deletes sort-of atomic by first renaming the directory before deleting it. This rename will fail if the app is currently running or if the contents of the directory happen to be locked for some other reason",
         "created_at": "2021-08-11T20:41:17Z",
         "updated_at": "2021-09-14T00:12:26Z",
         "closed_at": "2021-09-14T00:12:12Z",
-        "author_association": "NONE",
-        "active_lock_reason": null,
+        "merged_at": "2021-09-14T00:12:12Z",
+        "merge_commit_sha": "d08d5143df570737184b62231de9d25721989606",
+        "assignee": null,
+        "assignees": [],
+        "requested_reviewers": [],
+        "requested_teams": [],
+        "labels": [],
+        "milestone": null,
         "draft": false,
-        "pull_request": {
-          "url": "https://api.github.com/repos/discord/Squirrel.Windows/pulls/2",
-          "merged_at": "2021-09-14T00:12:12Z"
+        "head": {
+          "label": "discord:bugfix/atomicish_delete",
+          "ref": "bugfix/atomicish_delete",
+          "sha": "1856c80acf6715e5eca38f5529f66b6589480990",
+          "user": {
+            "login": "discord",
+            "id": 1965106,
+            "node_id": "MDEyOk9yZ2FuaXphdGlvbjE5NjUxMDY=",
+            "gravatar_id": "",
+            "url": "https://api.github.com/users/discord",
+            "type": "Organization",
+            "site_admin": false
+          },
+          "repo": {
+            "id": 34812336,
+            "node_id": "MDEwOlJlcG9zaXRvcnkzNDgxMjMzNg==",
+            "name": "Squirrel.Windows",
+            "full_name": "discord/Squirrel.Windows",
+            "private": false,
+            "owner": {
+              "login": "discord",
+              "id": 1965106,
+              "node_id": "MDEyOk9yZ2FuaXphdGlvbjE5NjUxMDY=",
+              "gravatar_id": "",
+              "url": "https://api.github.com/users/discord",
+              "type": "Organization",
+              "site_admin": false
+            },
+            "description": "An installation and update framework for Windows desktop apps",
+            "fork": true,
+            "url": "https://api.github.com/repos/discord/Squirrel.Windows",
+            "created_at": "2015-04-29T18:56:03Z",
+            "updated_at": "2022-04-10T18:37:27Z",
+            "pushed_at": "2021-09-14T00:12:26Z",
+            "homepage": "",
+            "size": 81728,
+            "stargazers_count": 14,
+            "watchers_count": 14,
+            "language": "C++",
+            "has_issues": false,
+            "has_projects": true,
+            "has_downloads": true,
+            "has_wiki": true,
+            "has_pages": false,
+            "has_discussions": false,
+            "forks_count": 7,
+            "archived": false,
+            "disabled": false,
+            "open_issues_count": 0,
+            "license": {
+              "key": "mit",
+              "name": "MIT License",
+              "spdx_id": "MIT",
+              "url": "https://api.github.com/licenses/mit",
+              "node_id": "MDc6TGljZW5zZTEz"
+            },
+            "allow_forking": true,
+            "is_template": false,
+            "web_commit_signoff_required": false,
+            "topics": [],
+            "visibility": "public",
+            "forks": 7,
+            "open_issues": 0,
+            "watchers": 14,
+            "default_branch": "master"
+          }
         },
-        "body": "Currently, if a file is locked in the destination directory (which will be the case if the app is running), it will end up partially deleted and the installation will exit with an error. This leaves the existing install in a corrupted state, which is less than ideal. This PR makes deletes sort-of atomic by first renaming the directory before deleting it. This rename will fail if the app is currently running or if the contents of the directory happen to be locked for some other reason",
-        "reactions": {
-          "url": "https://api.github.com/repos/discord/Squirrel.Windows/issues/2/reactions",
-          "total_count": 0,
-          "+1": 0,
-          "-1": 0,
-          "laugh": 0,
-          "hooray": 0,
-          "confused": 0,
-          "heart": 0,
-          "rocket": 0,
-          "eyes": 0
+        "base": {
+          "label": "discord:master",
+          "ref": "master",
+          "sha": "a43f16afa460a9a36097c5c87912c6f20870b8e0",
+          "user": {
+            "login": "discord",
+            "id": 1965106,
+            "node_id": "MDEyOk9yZ2FuaXphdGlvbjE5NjUxMDY=",
+            "gravatar_id": "",
+            "url": "https://api.github.com/users/discord",
+            "type": "Organization",
+            "site_admin": false
+          },
+          "repo": {
+            "id": 34812336,
+            "node_id": "MDEwOlJlcG9zaXRvcnkzNDgxMjMzNg==",
+            "name": "Squirrel.Windows",
+            "full_name": "discord/Squirrel.Windows",
+            "private": false,
+            "owner": {
+              "login": "discord",
+              "id": 1965106,
+              "node_id": "MDEyOk9yZ2FuaXphdGlvbjE5NjUxMDY=",
+              "gravatar_id": "",
+              "url": "https://api.github.com/users/discord",
+              "type": "Organization",
+              "site_admin": false
+            },
+            "description": "An installation and update framework for Windows desktop apps",
+            "fork": true,
+            "url": "https://api.github.com/repos/discord/Squirrel.Windows",
+            "created_at": "2015-04-29T18:56:03Z",
+            "updated_at": "2022-04-10T18:37:27Z",
+            "pushed_at": "2021-09-14T00:12:26Z",
+            "homepage": "",
+            "size": 81728,
+            "stargazers_count": 14,
+            "watchers_count": 14,
+            "language": "C++",
+            "has_issues": false,
+            "has_projects": true,
+            "has_downloads": true,
+            "has_wiki": true,
+            "has_pages": false,
+            "has_discussions": false,
+            "forks_count": 7,
+            "archived": false,
+            "disabled": false,
+            "open_issues_count": 0,
+            "license": {
+              "key": "mit",
+              "name": "MIT License",
+              "spdx_id": "MIT",
+              "url": "https://api.github.com/licenses/mit",
+              "node_id": "MDc6TGljZW5zZTEz"
+            },
+            "allow_forking": true,
+            "is_template": false,
+            "web_commit_signoff_required": false,
+            "topics": [],
+            "visibility": "public",
+            "forks": 7,
+            "open_issues": 0,
+            "watchers": 14,
+            "default_branch": "master"
+          }
         },
-        "performed_via_github_app": null,
-        "state_reason": null
+        "_links": {
+          "self": {
+            "href": "https://api.github.com/repos/discord/Squirrel.Windows/pulls/2"
+          },
+          "html": {
+            "href": "https://github.com/discord/Squirrel.Windows/pull/2"
+          },
+          "issue": {
+            "href": "https://api.github.com/repos/discord/Squirrel.Windows/issues/2"
+          },
+          "comments": {
+            "href": "https://api.github.com/repos/discord/Squirrel.Windows/issues/2/comments"
+          },
+          "review_comments": {
+            "href": "https://api.github.com/repos/discord/Squirrel.Windows/pulls/2/comments"
+          },
+          "review_comment": {
+            "href": "https://api.github.com/repos/discord/Squirrel.Windows/pulls/comments{/number}"
+          },
+          "commits": {
+            "href": "https://api.github.com/repos/discord/Squirrel.Windows/pulls/2/commits"
+          },
+          "statuses": {
+            "href": "https://api.github.com/repos/discord/Squirrel.Windows/statuses/1856c80acf6715e5eca38f5529f66b6589480990"
+          }
+        },
+        "author_association": "NONE",
+        "auto_merge": null,
+        "active_lock_reason": null
       },
       {
-        "url": "https://api.github.com/repos/discord/Squirrel.Windows/issues/1",
-        "id": 75446352,
+        "url": "https://api.github.com/repos/discord/Squirrel.Windows/pulls/1",
+        "id": 35190840,
         "node_id": "MDExOlB1bGxSZXF1ZXN0MzUxOTA4NDA=",
         "number": 1,
+        "state": "closed",
+        "locked": false,
         "title": "Feature/fixsetup",
         "user": {
           "login": "jasoncitron",
@@ -493,40 +642,183 @@
           "type": "User",
           "site_admin": false
         },
-        "labels": [],
-        "state": "closed",
-        "locked": false,
-        "assignee": null,
-        "assignees": [],
-        "milestone": null,
-        "comments": 2,
+        "body": "Fixes a few high priority UX bugs in the installer.\n- Uninstall now attempts to delete its folder 10 times (with a 1 second sleep between each). This fixes our \"not everything is uninstalled upon uninstall\" issue. Update.exe unfortunately remains.\n- Updating now waits 10 seconds instead of 2 seconds to acquire the global squirrel lock. This fixes the issue where upon the first launch updating would immediately fail, because the installer was still running and had the squirrel lock.\n- Checking no longer attempts to return release notes, since they are guaranteed to not be present. ReleaseNotes come from the nuget, which we are not downloading in Check.\n- Just some extra logging too.\n",
         "created_at": "2015-05-12T03:41:00Z",
         "updated_at": "2015-05-12T18:31:33Z",
         "closed_at": "2015-05-12T18:31:31Z",
-        "author_association": "NONE",
-        "active_lock_reason": null,
+        "merged_at": "2015-05-12T18:31:31Z",
+        "merge_commit_sha": "0bc5c9b72c59cbd02351f90bc42290392a65e19e",
+        "assignee": null,
+        "assignees": [],
+        "requested_reviewers": [],
+        "requested_teams": [],
+        "labels": [],
+        "milestone": null,
         "draft": false,
-        "pull_request": {
-          "url": "https://api.github.com/repos/discord/Squirrel.Windows/pulls/1",
-          "merged_at": "2015-05-12T18:31:31Z"
+        "head": {
+          "label": "discord:feature/fixsetup",
+          "ref": "feature/fixsetup",
+          "sha": "39b0e913d46124f8d256eb19c1139e35ef989cf2",
+          "user": {
+            "login": "discord",
+            "id": 1965106,
+            "node_id": "MDEyOk9yZ2FuaXphdGlvbjE5NjUxMDY=",
+            "gravatar_id": "",
+            "url": "https://api.github.com/users/discord",
+            "type": "Organization",
+            "site_admin": false
+          },
+          "repo": {
+            "id": 34812336,
+            "node_id": "MDEwOlJlcG9zaXRvcnkzNDgxMjMzNg==",
+            "name": "Squirrel.Windows",
+            "full_name": "discord/Squirrel.Windows",
+            "private": false,
+            "owner": {
+              "login": "discord",
+              "id": 1965106,
+              "node_id": "MDEyOk9yZ2FuaXphdGlvbjE5NjUxMDY=",
+              "gravatar_id": "",
+              "url": "https://api.github.com/users/discord",
+              "type": "Organization",
+              "site_admin": false
+            },
+            "description": "An installation and update framework for Windows desktop apps",
+            "fork": true,
+            "url": "https://api.github.com/repos/discord/Squirrel.Windows",
+            "created_at": "2015-04-29T18:56:03Z",
+            "updated_at": "2022-04-10T18:37:27Z",
+            "pushed_at": "2021-09-14T00:12:26Z",
+            "homepage": "",
+            "size": 81728,
+            "stargazers_count": 14,
+            "watchers_count": 14,
+            "language": "C++",
+            "has_issues": false,
+            "has_projects": true,
+            "has_downloads": true,
+            "has_wiki": true,
+            "has_pages": false,
+            "has_discussions": false,
+            "forks_count": 7,
+            "archived": false,
+            "disabled": false,
+            "open_issues_count": 0,
+            "license": {
+              "key": "mit",
+              "name": "MIT License",
+              "spdx_id": "MIT",
+              "url": "https://api.github.com/licenses/mit",
+              "node_id": "MDc6TGljZW5zZTEz"
+            },
+            "allow_forking": true,
+            "is_template": false,
+            "web_commit_signoff_required": false,
+            "topics": [],
+            "visibility": "public",
+            "forks": 7,
+            "open_issues": 0,
+            "watchers": 14,
+            "default_branch": "master"
+          }
         },
-        "body": "Fixes a few high priority UX bugs in the installer.\n- Uninstall now attempts to delete its folder 10 times (with a 1 second sleep between each). This fixes our \"not everything is uninstalled upon uninstall\" issue. Update.exe unfortunately remains.\n- Updating now waits 10 seconds instead of 2 seconds to acquire the global squirrel lock. This fixes the issue where upon the first launch updating would immediately fail, because the installer was still running and had the squirrel lock.\n- Checking no longer attempts to return release notes, since they are guaranteed to not be present. ReleaseNotes come from the nuget, which we are not downloading in Check.\n- Just some extra logging too.\n",
-        "reactions": {
-          "url": "https://api.github.com/repos/discord/Squirrel.Windows/issues/1/reactions",
-          "total_count": 0,
-          "+1": 0,
-          "-1": 0,
-          "laugh": 0,
-          "hooray": 0,
-          "confused": 0,
-          "heart": 0,
-          "rocket": 0,
-          "eyes": 0
+        "base": {
+          "label": "discord:master",
+          "ref": "master",
+          "sha": "40dd9aa07cabb890b90efa5a857442dbdf2517eb",
+          "user": {
+            "login": "discord",
+            "id": 1965106,
+            "node_id": "MDEyOk9yZ2FuaXphdGlvbjE5NjUxMDY=",
+            "gravatar_id": "",
+            "url": "https://api.github.com/users/discord",
+            "type": "Organization",
+            "site_admin": false
+          },
+          "repo": {
+            "id": 34812336,
+            "node_id": "MDEwOlJlcG9zaXRvcnkzNDgxMjMzNg==",
+            "name": "Squirrel.Windows",
+            "full_name": "discord/Squirrel.Windows",
+            "private": false,
+            "owner": {
+              "login": "discord",
+              "id": 1965106,
+              "node_id": "MDEyOk9yZ2FuaXphdGlvbjE5NjUxMDY=",
+              "gravatar_id": "",
+              "url": "https://api.github.com/users/discord",
+              "type": "Organization",
+              "site_admin": false
+            },
+            "description": "An installation and update framework for Windows desktop apps",
+            "fork": true,
+            "url": "https://api.github.com/repos/discord/Squirrel.Windows",
+            "created_at": "2015-04-29T18:56:03Z",
+            "updated_at": "2022-04-10T18:37:27Z",
+            "pushed_at": "2021-09-14T00:12:26Z",
+            "homepage": "",
+            "size": 81728,
+            "stargazers_count": 14,
+            "watchers_count": 14,
+            "language": "C++",
+            "has_issues": false,
+            "has_projects": true,
+            "has_downloads": true,
+            "has_wiki": true,
+            "has_pages": false,
+            "has_discussions": false,
+            "forks_count": 7,
+            "archived": false,
+            "disabled": false,
+            "open_issues_count": 0,
+            "license": {
+              "key": "mit",
+              "name": "MIT License",
+              "spdx_id": "MIT",
+              "url": "https://api.github.com/licenses/mit",
+              "node_id": "MDc6TGljZW5zZTEz"
+            },
+            "allow_forking": true,
+            "is_template": false,
+            "web_commit_signoff_required": false,
+            "topics": [],
+            "visibility": "public",
+            "forks": 7,
+            "open_issues": 0,
+            "watchers": 14,
+            "default_branch": "master"
+          }
         },
-        "performed_via_github_app": null,
-        "state_reason": null
+        "_links": {
+          "self": {
+            "href": "https://api.github.com/repos/discord/Squirrel.Windows/pulls/1"
+          },
+          "html": {
+            "href": "https://github.com/discord/Squirrel.Windows/pull/1"
+          },
+          "issue": {
+            "href": "https://api.github.com/repos/discord/Squirrel.Windows/issues/1"
+          },
+          "comments": {
+            "href": "https://api.github.com/repos/discord/Squirrel.Windows/issues/1/comments"
+          },
+          "review_comments": {
+            "href": "https://api.github.com/repos/discord/Squirrel.Windows/pulls/1/comments"
+          },
+          "review_comment": {
+            "href": "https://api.github.com/repos/discord/Squirrel.Windows/pulls/comments{/number}"
+          },
+          "commits": {
+            "href": "https://api.github.com/repos/discord/Squirrel.Windows/pulls/1/commits"
+          },
+          "statuses": {
+            "href": "https://api.github.com/repos/discord/Squirrel.Windows/statuses/39b0e913d46124f8d256eb19c1139e35ef989cf2"
+          }
+        },
+        "author_association": "NONE",
+        "auto_merge": null,
+        "active_lock_reason": null
       }
-    ],
-    "pullRequests": []
+    ]
   }
 }

@@ -57,32 +57,7 @@
     "triage": false,
     "pull": false
   },
-  "branches": [
-    {
-      "name": "master",
-      "commit": {
-        "sha": "16db447a80545d1ae6236fa436878423e5d2ad9a",
-        "url": "https://api.github.com/repos/discord/dbx_build_tools/commits/16db447a80545d1ae6236fa436878423e5d2ad9a"
-      },
-      "protected": false
-    },
-    {
-      "name": "samschlegel/discord-fixes",
-      "commit": {
-        "sha": "a5bb39d14666366e803f1ee71ca9023162e6c64b",
-        "url": "https://api.github.com/repos/discord/dbx_build_tools/commits/a5bb39d14666366e803f1ee71ca9023162e6c64b"
-      },
-      "protected": false
-    },
-    {
-      "name": "samschlegel/fix-zlib-url",
-      "commit": {
-        "sha": "5f1be2f6da0e1d13d496e82ded59fd54280cb60c",
-        "url": "https://api.github.com/repos/discord/dbx_build_tools/commits/5f1be2f6da0e1d13d496e82ded59fd54280cb60c"
-      },
-      "protected": false
-    }
-  ],
+  "branches": [],
   "last5": {
     "commits": [
       {

@@ -57,24 +57,7 @@
     "triage": false,
     "pull": false
   },
-  "branches": [
-    {
-      "name": "generate-works-on-circleci",
-      "commit": {
-        "sha": "b5cf6db676938b9698a3bd2ea2334ebb613ebf30",
-        "url": "https://api.github.com/repos/discord/rules_pyz/commits/b5cf6db676938b9698a3bd2ea2334ebb613ebf30"
-      },
-      "protected": false
-    },
-    {
-      "name": "master",
-      "commit": {
-        "sha": "c2cc31b2fa749cb81f7e9c57ec6385b25a32cf80",
-        "url": "https://api.github.com/repos/discord/rules_pyz/commits/c2cc31b2fa749cb81f7e9c57ec6385b25a32cf80"
-      },
-      "protected": false
-    }
-  ],
+  "branches": [],
   "last5": {
     "commits": [
       {
