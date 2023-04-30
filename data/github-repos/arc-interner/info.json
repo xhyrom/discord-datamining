@@ -57,24 +57,7 @@
     "triage": false,
     "pull": false
   },
-  "branches": [
-    {
-      "name": "0.1.1",
-      "commit": {
-        "sha": "5a9c3075f51714b328755c020a78bf4672c88fd8",
-        "url": "https://api.github.com/repos/discord/arc-interner/commits/5a9c3075f51714b328755c020a78bf4672c88fd8"
-      },
-      "protected": false
-    },
-    {
-      "name": "master",
-      "commit": {
-        "sha": "d608eb78cc66a25fc3e60b65e5da4cb8fb9aef96",
-        "url": "https://api.github.com/repos/discord/arc-interner/commits/d608eb78cc66a25fc3e60b65e5da4cb8fb9aef96"
-      },
-      "protected": false
-    }
-  ],
+  "branches": [],
   "last5": {
     "commits": [
       {
