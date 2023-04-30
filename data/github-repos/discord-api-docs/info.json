@@ -339,6 +339,59 @@
     "releases": [],
     "issues": [
       {
+        "url": "https://api.github.com/repos/discord/discord-api-docs/issues/6125",
+        "id": 1689903190,
+        "node_id": "I_kwDOA0coRs5kueBW",
+        "number": 6125,
+        "title": "Free private threads",
+        "user": {
+          "login": "Sanek-Discord",
+          "id": 82448302,
+          "node_id": "MDQ6VXNlcjgyNDQ4MzAy",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/Sanek-Discord",
+          "type": "User",
+          "site_admin": false
+        },
+        "labels": [
+          {
+            "id": 349418148,
+            "node_id": "MDU6TGFiZWwzNDk0MTgxNDg=",
+            "url": "https://api.github.com/repos/discord/discord-api-docs/labels/bug",
+            "name": "bug",
+            "color": "ee0701",
+            "default": true,
+            "description": null
+          }
+        ],
+        "state": "closed",
+        "locked": false,
+        "assignee": null,
+        "assignees": [],
+        "milestone": null,
+        "comments": 1,
+        "created_at": "2023-04-30T12:39:32Z",
+        "updated_at": "2023-04-30T12:42:45Z",
+        "closed_at": "2023-04-30T12:42:45Z",
+        "author_association": "NONE",
+        "active_lock_reason": null,
+        "body": "### Description\n\nUsing the */channels/{channel.id}/threads* endpoint, without specifying the thread type, you can create a private thread without boosts on the server\n\n### Steps to Reproduce\n\nMake a POST request to the */channels/{channel.id}/threads* endpoint and specify {\"name\": \"Name\"} in the body\n\n### Expected Behavior\n\nCreated a public thread with my arguments\n\n### Current Behavior\n\nCreated a private thread without specifying a type\n\n### Screenshots/Videos\n\n![Снимок экрана (230)](https://user-images.githubusercontent.com/82448302/235353369-171187f9-d30b-419b-9abf-ea3e0940b89f.png)\n\n### Client and System Information\n\nI am using my own library, windows 11 22H2, google chrome web browser",
+        "reactions": {
+          "url": "https://api.github.com/repos/discord/discord-api-docs/issues/6125/reactions",
+          "total_count": 0,
+          "+1": 0,
+          "-1": 0,
+          "laugh": 0,
+          "hooray": 0,
+          "confused": 0,
+          "heart": 0,
+          "rocket": 0,
+          "eyes": 0
+        },
+        "performed_via_github_app": null,
+        "state_reason": "completed"
+      },
+      {
         "url": "https://api.github.com/repos/discord/discord-api-docs/issues/6122",
         "id": 1689570126,
         "node_id": "I_kwDOA0coRs5ktMtO",
@@ -532,59 +585,6 @@
         "body": "### Description\n\nWhile using the API to retrieve user and member from a guild, i saw that some fields in the online documentation are missing.\r\n\r\npath : `docs/resources/user#user-object-user-structure`\r\nmissing : `avatar_decoration`, `display_name`, `global_name`\r\n\r\npath : `docs/resources/guild#guild-member-object-guild-member-structure`\r\nmissing : `is_pending`\n\n### Steps to Reproduce\n\n- HTTP GET on `/guilds/{guild.id}/members/{user.id}`\r\n- Parse JSON response\r\n- Missing fields on `Member`\r\n- Access `user` field in JSON\r\n- Missing fields on `User`\n\n### Expected Behavior\n\nDocumentation may have deprecated or future fields mentioned as it is easier to construct classes of data and see which field is optional or nullable\n\n### Current Behavior\n\nMissing fields making parsing data harder\n\n### Screenshots/Videos\n\n_No response_\n\n### Client and System Information\n\nAPI version : 10",
         "reactions": {
           "url": "https://api.github.com/repos/discord/discord-api-docs/issues/6117/reactions",
-          "total_count": 0,
-          "+1": 0,
-          "-1": 0,
-          "laugh": 0,
-          "hooray": 0,
-          "confused": 0,
-          "heart": 0,
-          "rocket": 0,
-          "eyes": 0
-        },
-        "performed_via_github_app": null,
-        "state_reason": "completed"
-      },
-      {
-        "url": "https://api.github.com/repos/discord/discord-api-docs/issues/6116",
-        "id": 1688621974,
-        "node_id": "I_kwDOA0coRs5kplOW",
-        "number": 6116,
-        "title": "Can no longer wrap a masked link around emojis",
-        "user": {
-          "login": "apeck14",
-          "id": 23341953,
-          "node_id": "MDQ6VXNlcjIzMzQxOTUz",
-          "gravatar_id": "",
-          "url": "https://api.github.com/users/apeck14",
-          "type": "User",
-          "site_admin": false
-        },
-        "labels": [
-          {
-            "id": 349418148,
-            "node_id": "MDU6TGFiZWwzNDk0MTgxNDg=",
-            "url": "https://api.github.com/repos/discord/discord-api-docs/labels/bug",
-            "name": "bug",
-            "color": "ee0701",
-            "default": true,
-            "description": null
-          }
-        ],
-        "state": "closed",
-        "locked": false,
-        "assignee": null,
-        "assignees": [],
-        "milestone": null,
-        "comments": 1,
-        "created_at": "2023-04-28T14:04:30Z",
-        "updated_at": "2023-04-29T06:58:46Z",
-        "closed_at": "2023-04-29T06:58:46Z",
-        "author_association": "NONE",
-        "active_lock_reason": null,
-        "body": "### Description\n\nPrior to the recent update you could wrap a masked link around a string containing emojis. However, as of late, this is no longer the case. None of the code has changed from the bot. Please investigate, or let me know if this is a \"feature\". Thanks!\n\n### Steps to Reproduce\n\nCreate a masked link with an emoji inside the string.\n\n### Expected Behavior\n\nThe masked link not break entirely when an emoji is present.\n\n### Current Behavior\n\nEmoji breaks the masked link.\n\n### Screenshots/Videos\n\n![image](https://user-images.githubusercontent.com/23341953/235169133-87269c8b-4019-4399-9a41-16ea0bdaf756.png)\r\n\n\n### Client and System Information\n\nHappens on all browsers and devices. ",
-        "reactions": {
-          "url": "https://api.github.com/repos/discord/discord-api-docs/issues/6116/reactions",
           "total_count": 0,
           "+1": 0,
           "-1": 0,
