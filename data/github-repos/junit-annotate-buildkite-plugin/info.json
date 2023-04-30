@@ -331,54 +331,7 @@
         ]
       }
     ],
-    "releases": [
-      {
-        "url": "https://api.github.com/repos/discord/junit-annotate-buildkite-plugin/releases/58474188",
-        "id": 58474188,
-        "author": {
-          "login": "goodspark",
-          "id": 29210237,
-          "node_id": "MDQ6VXNlcjI5MjEwMjM3",
-          "gravatar_id": "",
-          "url": "https://api.github.com/users/goodspark",
-          "type": "User",
-          "site_admin": false
-        },
-        "node_id": "RE_kwDOCyaY8c4DfD7M",
-        "tag_name": "v2.0.1",
-        "target_commitish": "master",
-        "name": "v2.0.1",
-        "draft": false,
-        "prerelease": false,
-        "created_at": "2022-02-01T23:27:16Z",
-        "published_at": "2022-02-01T23:27:57Z",
-        "assets": [],
-        "body": "Annotate with msg if test report is too large."
-      },
-      {
-        "url": "https://api.github.com/repos/discord/junit-annotate-buildkite-plugin/releases/17404289",
-        "id": 17404289,
-        "author": {
-          "login": "SEAPUNK",
-          "id": 4400726,
-          "node_id": "MDQ6VXNlcjQ0MDA3MjY=",
-          "gravatar_id": "",
-          "url": "https://api.github.com/users/SEAPUNK",
-          "type": "User",
-          "site_admin": false
-        },
-        "node_id": "MDc6UmVsZWFzZTE3NDA0Mjg5",
-        "tag_name": "v2.0.0",
-        "target_commitish": "master",
-        "name": "",
-        "draft": false,
-        "prerelease": false,
-        "created_at": "2019-05-16T18:22:39Z",
-        "published_at": "2019-05-16T18:23:59Z",
-        "assets": [],
-        "body": ""
-      }
-    ],
+    "releases": [],
     "issues": [
       {
         "url": "https://api.github.com/repos/discord/junit-annotate-buildkite-plugin/issues/2",
@@ -477,6 +430,405 @@
         "state_reason": null
       }
     ],
-    "pullRequests": []
+    "pullRequests": [
+      {
+        "url": "https://api.github.com/repos/discord/junit-annotate-buildkite-plugin/pulls/2",
+        "id": 837752136,
+        "node_id": "PR_kwDOCyaY8c4x7xVI",
+        "number": 2,
+        "state": "closed",
+        "locked": false,
+        "title": "Fix annotation call",
+        "user": {
+          "login": "goodspark",
+          "id": 29210237,
+          "node_id": "MDQ6VXNlcjI5MjEwMjM3",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/goodspark",
+          "type": "User",
+          "site_admin": false
+        },
+        "body": null,
+        "created_at": "2022-02-01T22:56:29Z",
+        "updated_at": "2022-02-01T23:27:17Z",
+        "closed_at": "2022-02-01T23:27:16Z",
+        "merged_at": "2022-02-01T23:27:16Z",
+        "merge_commit_sha": "b69bb19196da4f85705dc2f4ed3b321fae7ae1d4",
+        "assignee": null,
+        "assignees": [],
+        "requested_reviewers": [],
+        "requested_teams": [],
+        "labels": [],
+        "milestone": null,
+        "draft": false,
+        "head": {
+          "label": "discord:goodspark-patch-1",
+          "ref": "goodspark-patch-1",
+          "sha": "9386f9d1797a5df179f2eec0ecb17d7d55ea4d9d",
+          "user": {
+            "login": "discord",
+            "id": 1965106,
+            "node_id": "MDEyOk9yZ2FuaXphdGlvbjE5NjUxMDY=",
+            "gravatar_id": "",
+            "url": "https://api.github.com/users/discord",
+            "type": "Organization",
+            "site_admin": false
+          },
+          "repo": {
+            "id": 187078897,
+            "node_id": "MDEwOlJlcG9zaXRvcnkxODcwNzg4OTc=",
+            "name": "junit-annotate-buildkite-plugin",
+            "full_name": "discord/junit-annotate-buildkite-plugin",
+            "private": false,
+            "owner": {
+              "login": "discord",
+              "id": 1965106,
+              "node_id": "MDEyOk9yZ2FuaXphdGlvbjE5NjUxMDY=",
+              "gravatar_id": "",
+              "url": "https://api.github.com/users/discord",
+              "type": "Organization",
+              "site_admin": false
+            },
+            "description": "📈 Summarise your test failures as a build annotation",
+            "fork": true,
+            "url": "https://api.github.com/repos/discord/junit-annotate-buildkite-plugin",
+            "created_at": "2019-05-16T18:12:25Z",
+            "updated_at": "2022-02-01T22:53:49Z",
+            "pushed_at": "2022-02-01T23:27:57Z",
+            "homepage": "",
+            "size": 180,
+            "stargazers_count": 3,
+            "watchers_count": 3,
+            "language": "Ruby",
+            "has_issues": false,
+            "has_projects": true,
+            "has_downloads": true,
+            "has_wiki": false,
+            "has_pages": false,
+            "has_discussions": false,
+            "forks_count": 4,
+            "archived": false,
+            "disabled": false,
+            "open_issues_count": 0,
+            "license": {
+              "key": "mit",
+              "name": "MIT License",
+              "spdx_id": "MIT",
+              "url": "https://api.github.com/licenses/mit",
+              "node_id": "MDc6TGljZW5zZTEz"
+            },
+            "allow_forking": true,
+            "is_template": false,
+            "web_commit_signoff_required": false,
+            "topics": [],
+            "visibility": "public",
+            "forks": 4,
+            "open_issues": 0,
+            "watchers": 3,
+            "default_branch": "master"
+          }
+        },
+        "base": {
+          "label": "discord:master",
+          "ref": "master",
+          "sha": "c1dfe7db8e6ddd0b97bfbbf708cb317fd7b45223",
+          "user": {
+            "login": "discord",
+            "id": 1965106,
+            "node_id": "MDEyOk9yZ2FuaXphdGlvbjE5NjUxMDY=",
+            "gravatar_id": "",
+            "url": "https://api.github.com/users/discord",
+            "type": "Organization",
+            "site_admin": false
+          },
+          "repo": {
+            "id": 187078897,
+            "node_id": "MDEwOlJlcG9zaXRvcnkxODcwNzg4OTc=",
+            "name": "junit-annotate-buildkite-plugin",
+            "full_name": "discord/junit-annotate-buildkite-plugin",
+            "private": false,
+            "owner": {
+              "login": "discord",
+              "id": 1965106,
+              "node_id": "MDEyOk9yZ2FuaXphdGlvbjE5NjUxMDY=",
+              "gravatar_id": "",
+              "url": "https://api.github.com/users/discord",
+              "type": "Organization",
+              "site_admin": false
+            },
+            "description": "📈 Summarise your test failures as a build annotation",
+            "fork": true,
+            "url": "https://api.github.com/repos/discord/junit-annotate-buildkite-plugin",
+            "created_at": "2019-05-16T18:12:25Z",
+            "updated_at": "2022-02-01T22:53:49Z",
+            "pushed_at": "2022-02-01T23:27:57Z",
+            "homepage": "",
+            "size": 180,
+            "stargazers_count": 3,
+            "watchers_count": 3,
+            "language": "Ruby",
+            "has_issues": false,
+            "has_projects": true,
+            "has_downloads": true,
+            "has_wiki": false,
+            "has_pages": false,
+            "has_discussions": false,
+            "forks_count": 4,
+            "archived": false,
+            "disabled": false,
+            "open_issues_count": 0,
+            "license": {
+              "key": "mit",
+              "name": "MIT License",
+              "spdx_id": "MIT",
+              "url": "https://api.github.com/licenses/mit",
+              "node_id": "MDc6TGljZW5zZTEz"
+            },
+            "allow_forking": true,
+            "is_template": false,
+            "web_commit_signoff_required": false,
+            "topics": [],
+            "visibility": "public",
+            "forks": 4,
+            "open_issues": 0,
+            "watchers": 3,
+            "default_branch": "master"
+          }
+        },
+        "_links": {
+          "self": {
+            "href": "https://api.github.com/repos/discord/junit-annotate-buildkite-plugin/pulls/2"
+          },
+          "html": {
+            "href": "https://github.com/discord/junit-annotate-buildkite-plugin/pull/2"
+          },
+          "issue": {
+            "href": "https://api.github.com/repos/discord/junit-annotate-buildkite-plugin/issues/2"
+          },
+          "comments": {
+            "href": "https://api.github.com/repos/discord/junit-annotate-buildkite-plugin/issues/2/comments"
+          },
+          "review_comments": {
+            "href": "https://api.github.com/repos/discord/junit-annotate-buildkite-plugin/pulls/2/comments"
+          },
+          "review_comment": {
+            "href": "https://api.github.com/repos/discord/junit-annotate-buildkite-plugin/pulls/comments{/number}"
+          },
+          "commits": {
+            "href": "https://api.github.com/repos/discord/junit-annotate-buildkite-plugin/pulls/2/commits"
+          },
+          "statuses": {
+            "href": "https://api.github.com/repos/discord/junit-annotate-buildkite-plugin/statuses/9386f9d1797a5df179f2eec0ecb17d7d55ea4d9d"
+          }
+        },
+        "author_association": "NONE",
+        "auto_merge": null,
+        "active_lock_reason": null
+      },
+      {
+        "url": "https://api.github.com/repos/discord/junit-annotate-buildkite-plugin/pulls/1",
+        "id": 837627737,
+        "node_id": "PR_kwDOCyaY8c4x7S9Z",
+        "number": 1,
+        "state": "closed",
+        "locked": false,
+        "title": "Annotate when report is too large",
+        "user": {
+          "login": "goodspark",
+          "id": 29210237,
+          "node_id": "MDQ6VXNlcjI5MjEwMjM3",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/goodspark",
+          "type": "User",
+          "site_admin": false
+        },
+        "body": null,
+        "created_at": "2022-02-01T20:02:35Z",
+        "updated_at": "2022-02-01T22:53:54Z",
+        "closed_at": "2022-02-01T22:53:46Z",
+        "merged_at": "2022-02-01T22:53:46Z",
+        "merge_commit_sha": "c1dfe7db8e6ddd0b97bfbbf708cb317fd7b45223",
+        "assignee": null,
+        "assignees": [],
+        "requested_reviewers": [
+          {
+            "login": "yonilerner",
+            "id": 278810,
+            "node_id": "MDQ6VXNlcjI3ODgxMA==",
+            "gravatar_id": "",
+            "url": "https://api.github.com/users/yonilerner",
+            "type": "User",
+            "site_admin": false
+          }
+        ],
+        "requested_teams": [],
+        "labels": [],
+        "milestone": null,
+        "draft": false,
+        "head": {
+          "label": "discord:goodspark-patch-1",
+          "ref": "goodspark-patch-1",
+          "sha": "67f0fc6c89616b6aefd763220c866ec1ad926f07",
+          "user": {
+            "login": "discord",
+            "id": 1965106,
+            "node_id": "MDEyOk9yZ2FuaXphdGlvbjE5NjUxMDY=",
+            "gravatar_id": "",
+            "url": "https://api.github.com/users/discord",
+            "type": "Organization",
+            "site_admin": false
+          },
+          "repo": {
+            "id": 187078897,
+            "node_id": "MDEwOlJlcG9zaXRvcnkxODcwNzg4OTc=",
+            "name": "junit-annotate-buildkite-plugin",
+            "full_name": "discord/junit-annotate-buildkite-plugin",
+            "private": false,
+            "owner": {
+              "login": "discord",
+              "id": 1965106,
+              "node_id": "MDEyOk9yZ2FuaXphdGlvbjE5NjUxMDY=",
+              "gravatar_id": "",
+              "url": "https://api.github.com/users/discord",
+              "type": "Organization",
+              "site_admin": false
+            },
+            "description": "📈 Summarise your test failures as a build annotation",
+            "fork": true,
+            "url": "https://api.github.com/repos/discord/junit-annotate-buildkite-plugin",
+            "created_at": "2019-05-16T18:12:25Z",
+            "updated_at": "2022-02-01T22:53:49Z",
+            "pushed_at": "2022-02-01T23:27:57Z",
+            "homepage": "",
+            "size": 180,
+            "stargazers_count": 3,
+            "watchers_count": 3,
+            "language": "Ruby",
+            "has_issues": false,
+            "has_projects": true,
+            "has_downloads": true,
+            "has_wiki": false,
+            "has_pages": false,
+            "has_discussions": false,
+            "forks_count": 4,
+            "archived": false,
+            "disabled": false,
+            "open_issues_count": 0,
+            "license": {
+              "key": "mit",
+              "name": "MIT License",
+              "spdx_id": "MIT",
+              "url": "https://api.github.com/licenses/mit",
+              "node_id": "MDc6TGljZW5zZTEz"
+            },
+            "allow_forking": true,
+            "is_template": false,
+            "web_commit_signoff_required": false,
+            "topics": [],
+            "visibility": "public",
+            "forks": 4,
+            "open_issues": 0,
+            "watchers": 3,
+            "default_branch": "master"
+          }
+        },
+        "base": {
+          "label": "discord:master",
+          "ref": "master",
+          "sha": "9d30ec0201f498cd5f06778c119ad8f0ee3d2c56",
+          "user": {
+            "login": "discord",
+            "id": 1965106,
+            "node_id": "MDEyOk9yZ2FuaXphdGlvbjE5NjUxMDY=",
+            "gravatar_id": "",
+            "url": "https://api.github.com/users/discord",
+            "type": "Organization",
+            "site_admin": false
+          },
+          "repo": {
+            "id": 187078897,
+            "node_id": "MDEwOlJlcG9zaXRvcnkxODcwNzg4OTc=",
+            "name": "junit-annotate-buildkite-plugin",
+            "full_name": "discord/junit-annotate-buildkite-plugin",
+            "private": false,
+            "owner": {
+              "login": "discord",
+              "id": 1965106,
+              "node_id": "MDEyOk9yZ2FuaXphdGlvbjE5NjUxMDY=",
+              "gravatar_id": "",
+              "url": "https://api.github.com/users/discord",
+              "type": "Organization",
+              "site_admin": false
+            },
+            "description": "📈 Summarise your test failures as a build annotation",
+            "fork": true,
+            "url": "https://api.github.com/repos/discord/junit-annotate-buildkite-plugin",
+            "created_at": "2019-05-16T18:12:25Z",
+            "updated_at": "2022-02-01T22:53:49Z",
+            "pushed_at": "2022-02-01T23:27:57Z",
+            "homepage": "",
+            "size": 180,
+            "stargazers_count": 3,
+            "watchers_count": 3,
+            "language": "Ruby",
+            "has_issues": false,
+            "has_projects": true,
+            "has_downloads": true,
+            "has_wiki": false,
+            "has_pages": false,
+            "has_discussions": false,
+            "forks_count": 4,
+            "archived": false,
+            "disabled": false,
+            "open_issues_count": 0,
+            "license": {
+              "key": "mit",
+              "name": "MIT License",
+              "spdx_id": "MIT",
+              "url": "https://api.github.com/licenses/mit",
+              "node_id": "MDc6TGljZW5zZTEz"
+            },
+            "allow_forking": true,
+            "is_template": false,
+            "web_commit_signoff_required": false,
+            "topics": [],
+            "visibility": "public",
+            "forks": 4,
+            "open_issues": 0,
+            "watchers": 3,
+            "default_branch": "master"
+          }
+        },
+        "_links": {
+          "self": {
+            "href": "https://api.github.com/repos/discord/junit-annotate-buildkite-plugin/pulls/1"
+          },
+          "html": {
+            "href": "https://github.com/discord/junit-annotate-buildkite-plugin/pull/1"
+          },
+          "issue": {
+            "href": "https://api.github.com/repos/discord/junit-annotate-buildkite-plugin/issues/1"
+          },
+          "comments": {
+            "href": "https://api.github.com/repos/discord/junit-annotate-buildkite-plugin/issues/1/comments"
+          },
+          "review_comments": {
+            "href": "https://api.github.com/repos/discord/junit-annotate-buildkite-plugin/pulls/1/comments"
+          },
+          "review_comment": {
+            "href": "https://api.github.com/repos/discord/junit-annotate-buildkite-plugin/pulls/comments{/number}"
+          },
+          "commits": {
+            "href": "https://api.github.com/repos/discord/junit-annotate-buildkite-plugin/pulls/1/commits"
+          },
+          "statuses": {
+            "href": "https://api.github.com/repos/discord/junit-annotate-buildkite-plugin/statuses/67f0fc6c89616b6aefd763220c866ec1ad926f07"
+          }
+        },
+        "author_association": "NONE",
+        "auto_merge": null,
+        "active_lock_reason": null
+      }
+    ]
   }
 }

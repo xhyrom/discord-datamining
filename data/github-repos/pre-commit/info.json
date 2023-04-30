@@ -604,6 +604,1007 @@
         "state_reason": null
       }
     ],
-    "pullRequests": []
+    "pullRequests": [
+      {
+        "url": "https://api.github.com/repos/discord/pre-commit/pulls/13",
+        "id": 1054994388,
+        "node_id": "PR_kwDOFwiOVM4-4e_U",
+        "number": 13,
+        "state": "closed",
+        "locked": false,
+        "title": "Normalize Metrics command",
+        "user": {
+          "login": "chrisharris-discord",
+          "id": 109116615,
+          "node_id": "U_kgDOBoD8xw",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/chrisharris-discord",
+          "type": "User",
+          "site_admin": false
+        },
+        "body": "The hook commands get normalized, meaning they work on Windows machines.  The metrics command doesn't, resulting in pre-commit failure on Windows when given the same path to clyde as the hooks.\r\n\r\nThis normalizes that command so we can report metrics and thus pass pre-commit.  Tested locally on my Windows machine.",
+        "created_at": "2022-09-13T17:36:19Z",
+        "updated_at": "2022-09-13T17:37:38Z",
+        "closed_at": "2022-09-13T17:37:37Z",
+        "merged_at": "2022-09-13T17:37:37Z",
+        "merge_commit_sha": "b8384b591d95089b56dca754afb56e718077eae0",
+        "assignee": null,
+        "assignees": [],
+        "requested_reviewers": [],
+        "requested_teams": [],
+        "labels": [
+          {
+            "id": 3891242116,
+            "node_id": "LA_kwDOFwiOVM7n76SE",
+            "url": "https://api.github.com/repos/discord/pre-commit/labels/python",
+            "name": "python",
+            "color": "ededed",
+            "default": false,
+            "description": null
+          }
+        ],
+        "milestone": null,
+        "draft": false,
+        "head": {
+          "label": "discord:cchharris/reportmetrics_xplat",
+          "ref": "cchharris/reportmetrics_xplat",
+          "sha": "b1e97457bcd4c48036d5c18c526c10beb5c1e67d",
+          "user": {
+            "login": "discord",
+            "id": 1965106,
+            "node_id": "MDEyOk9yZ2FuaXphdGlvbjE5NjUxMDY=",
+            "gravatar_id": "",
+            "url": "https://api.github.com/users/discord",
+            "type": "Organization",
+            "site_admin": false
+          },
+          "repo": {
+            "id": 386436692,
+            "node_id": "MDEwOlJlcG9zaXRvcnkzODY0MzY2OTI=",
+            "name": "pre-commit",
+            "full_name": "discord/pre-commit",
+            "private": false,
+            "owner": {
+              "login": "discord",
+              "id": 1965106,
+              "node_id": "MDEyOk9yZ2FuaXphdGlvbjE5NjUxMDY=",
+              "gravatar_id": "",
+              "url": "https://api.github.com/users/discord",
+              "type": "Organization",
+              "site_admin": false
+            },
+            "description": "A framework for managing and maintaining multi-language pre-commit hooks.",
+            "fork": true,
+            "url": "https://api.github.com/repos/discord/pre-commit",
+            "created_at": "2021-07-15T22:10:21Z",
+            "updated_at": "2021-12-21T23:06:11Z",
+            "pushed_at": "2022-09-13T17:37:38Z",
+            "homepage": "https://pre-commit.com",
+            "size": 3144,
+            "stargazers_count": 2,
+            "watchers_count": 2,
+            "language": "Python",
+            "has_issues": false,
+            "has_projects": true,
+            "has_downloads": true,
+            "has_wiki": false,
+            "has_pages": false,
+            "has_discussions": false,
+            "forks_count": 3,
+            "archived": false,
+            "disabled": false,
+            "open_issues_count": 0,
+            "license": {
+              "key": "mit",
+              "name": "MIT License",
+              "spdx_id": "MIT",
+              "url": "https://api.github.com/licenses/mit",
+              "node_id": "MDc6TGljZW5zZTEz"
+            },
+            "allow_forking": true,
+            "is_template": false,
+            "web_commit_signoff_required": false,
+            "topics": [],
+            "visibility": "public",
+            "forks": 3,
+            "open_issues": 0,
+            "watchers": 2,
+            "default_branch": "master"
+          }
+        },
+        "base": {
+          "label": "discord:master",
+          "ref": "master",
+          "sha": "da11778ac79d47f261ee6f5a0f81d19101ce5c0f",
+          "user": {
+            "login": "discord",
+            "id": 1965106,
+            "node_id": "MDEyOk9yZ2FuaXphdGlvbjE5NjUxMDY=",
+            "gravatar_id": "",
+            "url": "https://api.github.com/users/discord",
+            "type": "Organization",
+            "site_admin": false
+          },
+          "repo": {
+            "id": 386436692,
+            "node_id": "MDEwOlJlcG9zaXRvcnkzODY0MzY2OTI=",
+            "name": "pre-commit",
+            "full_name": "discord/pre-commit",
+            "private": false,
+            "owner": {
+              "login": "discord",
+              "id": 1965106,
+              "node_id": "MDEyOk9yZ2FuaXphdGlvbjE5NjUxMDY=",
+              "gravatar_id": "",
+              "url": "https://api.github.com/users/discord",
+              "type": "Organization",
+              "site_admin": false
+            },
+            "description": "A framework for managing and maintaining multi-language pre-commit hooks.",
+            "fork": true,
+            "url": "https://api.github.com/repos/discord/pre-commit",
+            "created_at": "2021-07-15T22:10:21Z",
+            "updated_at": "2021-12-21T23:06:11Z",
+            "pushed_at": "2022-09-13T17:37:38Z",
+            "homepage": "https://pre-commit.com",
+            "size": 3144,
+            "stargazers_count": 2,
+            "watchers_count": 2,
+            "language": "Python",
+            "has_issues": false,
+            "has_projects": true,
+            "has_downloads": true,
+            "has_wiki": false,
+            "has_pages": false,
+            "has_discussions": false,
+            "forks_count": 3,
+            "archived": false,
+            "disabled": false,
+            "open_issues_count": 0,
+            "license": {
+              "key": "mit",
+              "name": "MIT License",
+              "spdx_id": "MIT",
+              "url": "https://api.github.com/licenses/mit",
+              "node_id": "MDc6TGljZW5zZTEz"
+            },
+            "allow_forking": true,
+            "is_template": false,
+            "web_commit_signoff_required": false,
+            "topics": [],
+            "visibility": "public",
+            "forks": 3,
+            "open_issues": 0,
+            "watchers": 2,
+            "default_branch": "master"
+          }
+        },
+        "_links": {
+          "self": {
+            "href": "https://api.github.com/repos/discord/pre-commit/pulls/13"
+          },
+          "html": {
+            "href": "https://github.com/discord/pre-commit/pull/13"
+          },
+          "issue": {
+            "href": "https://api.github.com/repos/discord/pre-commit/issues/13"
+          },
+          "comments": {
+            "href": "https://api.github.com/repos/discord/pre-commit/issues/13/comments"
+          },
+          "review_comments": {
+            "href": "https://api.github.com/repos/discord/pre-commit/pulls/13/comments"
+          },
+          "review_comment": {
+            "href": "https://api.github.com/repos/discord/pre-commit/pulls/comments{/number}"
+          },
+          "commits": {
+            "href": "https://api.github.com/repos/discord/pre-commit/pulls/13/commits"
+          },
+          "statuses": {
+            "href": "https://api.github.com/repos/discord/pre-commit/statuses/b1e97457bcd4c48036d5c18c526c10beb5c1e67d"
+          }
+        },
+        "author_association": "NONE",
+        "auto_merge": null,
+        "active_lock_reason": null
+      },
+      {
+        "url": "https://api.github.com/repos/discord/pre-commit/pulls/12",
+        "id": 870802569,
+        "node_id": "PR_kwDOFwiOVM4z52SJ",
+        "number": 12,
+        "state": "closed",
+        "locked": false,
+        "title": "Fix file computation when pushing a new branch",
+        "user": {
+          "login": "zombiezen",
+          "id": 181535,
+          "node_id": "MDQ6VXNlcjE4MTUzNQ==",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/zombiezen",
+          "type": "User",
+          "site_admin": false
+        },
+        "body": "I missed this in #11",
+        "created_at": "2022-03-03T16:53:13Z",
+        "updated_at": "2022-03-04T16:10:56Z",
+        "closed_at": "2022-03-04T16:10:56Z",
+        "merged_at": "2022-03-04T16:10:56Z",
+        "merge_commit_sha": "da11778ac79d47f261ee6f5a0f81d19101ce5c0f",
+        "assignee": null,
+        "assignees": [],
+        "requested_reviewers": [],
+        "requested_teams": [],
+        "labels": [
+          {
+            "id": 3891242116,
+            "node_id": "LA_kwDOFwiOVM7n76SE",
+            "url": "https://api.github.com/repos/discord/pre-commit/labels/python",
+            "name": "python",
+            "color": "ededed",
+            "default": false,
+            "description": null
+          }
+        ],
+        "milestone": null,
+        "draft": false,
+        "head": {
+          "label": "discord:zombiezen/fix-run-break",
+          "ref": "zombiezen/fix-run-break",
+          "sha": "1ade00e1594f6a25460996b1b78cd046e07ec3d5",
+          "user": {
+            "login": "discord",
+            "id": 1965106,
+            "node_id": "MDEyOk9yZ2FuaXphdGlvbjE5NjUxMDY=",
+            "gravatar_id": "",
+            "url": "https://api.github.com/users/discord",
+            "type": "Organization",
+            "site_admin": false
+          },
+          "repo": {
+            "id": 386436692,
+            "node_id": "MDEwOlJlcG9zaXRvcnkzODY0MzY2OTI=",
+            "name": "pre-commit",
+            "full_name": "discord/pre-commit",
+            "private": false,
+            "owner": {
+              "login": "discord",
+              "id": 1965106,
+              "node_id": "MDEyOk9yZ2FuaXphdGlvbjE5NjUxMDY=",
+              "gravatar_id": "",
+              "url": "https://api.github.com/users/discord",
+              "type": "Organization",
+              "site_admin": false
+            },
+            "description": "A framework for managing and maintaining multi-language pre-commit hooks.",
+            "fork": true,
+            "url": "https://api.github.com/repos/discord/pre-commit",
+            "created_at": "2021-07-15T22:10:21Z",
+            "updated_at": "2021-12-21T23:06:11Z",
+            "pushed_at": "2022-09-13T17:37:38Z",
+            "homepage": "https://pre-commit.com",
+            "size": 3144,
+            "stargazers_count": 2,
+            "watchers_count": 2,
+            "language": "Python",
+            "has_issues": false,
+            "has_projects": true,
+            "has_downloads": true,
+            "has_wiki": false,
+            "has_pages": false,
+            "has_discussions": false,
+            "forks_count": 3,
+            "archived": false,
+            "disabled": false,
+            "open_issues_count": 0,
+            "license": {
+              "key": "mit",
+              "name": "MIT License",
+              "spdx_id": "MIT",
+              "url": "https://api.github.com/licenses/mit",
+              "node_id": "MDc6TGljZW5zZTEz"
+            },
+            "allow_forking": true,
+            "is_template": false,
+            "web_commit_signoff_required": false,
+            "topics": [],
+            "visibility": "public",
+            "forks": 3,
+            "open_issues": 0,
+            "watchers": 2,
+            "default_branch": "master"
+          }
+        },
+        "base": {
+          "label": "discord:master",
+          "ref": "master",
+          "sha": "83c7dac40f8b02aab2944177060e2d54f91a65e3",
+          "user": {
+            "login": "discord",
+            "id": 1965106,
+            "node_id": "MDEyOk9yZ2FuaXphdGlvbjE5NjUxMDY=",
+            "gravatar_id": "",
+            "url": "https://api.github.com/users/discord",
+            "type": "Organization",
+            "site_admin": false
+          },
+          "repo": {
+            "id": 386436692,
+            "node_id": "MDEwOlJlcG9zaXRvcnkzODY0MzY2OTI=",
+            "name": "pre-commit",
+            "full_name": "discord/pre-commit",
+            "private": false,
+            "owner": {
+              "login": "discord",
+              "id": 1965106,
+              "node_id": "MDEyOk9yZ2FuaXphdGlvbjE5NjUxMDY=",
+              "gravatar_id": "",
+              "url": "https://api.github.com/users/discord",
+              "type": "Organization",
+              "site_admin": false
+            },
+            "description": "A framework for managing and maintaining multi-language pre-commit hooks.",
+            "fork": true,
+            "url": "https://api.github.com/repos/discord/pre-commit",
+            "created_at": "2021-07-15T22:10:21Z",
+            "updated_at": "2021-12-21T23:06:11Z",
+            "pushed_at": "2022-09-13T17:37:38Z",
+            "homepage": "https://pre-commit.com",
+            "size": 3144,
+            "stargazers_count": 2,
+            "watchers_count": 2,
+            "language": "Python",
+            "has_issues": false,
+            "has_projects": true,
+            "has_downloads": true,
+            "has_wiki": false,
+            "has_pages": false,
+            "has_discussions": false,
+            "forks_count": 3,
+            "archived": false,
+            "disabled": false,
+            "open_issues_count": 0,
+            "license": {
+              "key": "mit",
+              "name": "MIT License",
+              "spdx_id": "MIT",
+              "url": "https://api.github.com/licenses/mit",
+              "node_id": "MDc6TGljZW5zZTEz"
+            },
+            "allow_forking": true,
+            "is_template": false,
+            "web_commit_signoff_required": false,
+            "topics": [],
+            "visibility": "public",
+            "forks": 3,
+            "open_issues": 0,
+            "watchers": 2,
+            "default_branch": "master"
+          }
+        },
+        "_links": {
+          "self": {
+            "href": "https://api.github.com/repos/discord/pre-commit/pulls/12"
+          },
+          "html": {
+            "href": "https://github.com/discord/pre-commit/pull/12"
+          },
+          "issue": {
+            "href": "https://api.github.com/repos/discord/pre-commit/issues/12"
+          },
+          "comments": {
+            "href": "https://api.github.com/repos/discord/pre-commit/issues/12/comments"
+          },
+          "review_comments": {
+            "href": "https://api.github.com/repos/discord/pre-commit/pulls/12/comments"
+          },
+          "review_comment": {
+            "href": "https://api.github.com/repos/discord/pre-commit/pulls/comments{/number}"
+          },
+          "commits": {
+            "href": "https://api.github.com/repos/discord/pre-commit/pulls/12/commits"
+          },
+          "statuses": {
+            "href": "https://api.github.com/repos/discord/pre-commit/statuses/1ade00e1594f6a25460996b1b78cd046e07ec3d5"
+          }
+        },
+        "author_association": "MEMBER",
+        "auto_merge": null,
+        "active_lock_reason": null
+      },
+      {
+        "url": "https://api.github.com/repos/discord/pre-commit/pulls/11",
+        "id": 847951622,
+        "node_id": "PR_kwDOFwiOVM4yircG",
+        "number": 11,
+        "state": "closed",
+        "locked": false,
+        "title": "Always run the pre-push hook",
+        "user": {
+          "login": "zombiezen",
+          "id": 181535,
+          "node_id": "MDQ6VXNlcjE4MTUzNQ==",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/zombiezen",
+          "type": "User",
+          "site_admin": false
+        },
+        "body": "Part of https://app.asana.com/0/846159912427140/1201790261042857/f",
+        "created_at": "2022-02-11T18:38:23Z",
+        "updated_at": "2022-03-03T16:31:28Z",
+        "closed_at": "2022-03-03T16:31:26Z",
+        "merged_at": "2022-03-03T16:31:26Z",
+        "merge_commit_sha": "83c7dac40f8b02aab2944177060e2d54f91a65e3",
+        "assignee": null,
+        "assignees": [],
+        "requested_reviewers": [],
+        "requested_teams": [],
+        "labels": [
+          {
+            "id": 3891242116,
+            "node_id": "LA_kwDOFwiOVM7n76SE",
+            "url": "https://api.github.com/repos/discord/pre-commit/labels/python",
+            "name": "python",
+            "color": "ededed",
+            "default": false,
+            "description": null
+          }
+        ],
+        "milestone": null,
+        "draft": false,
+        "head": {
+          "label": "discord:zombiezen/pre-push-always",
+          "ref": "zombiezen/pre-push-always",
+          "sha": "f78915c2c63806d0111ea3fde69289e0414cc9a8",
+          "user": {
+            "login": "discord",
+            "id": 1965106,
+            "node_id": "MDEyOk9yZ2FuaXphdGlvbjE5NjUxMDY=",
+            "gravatar_id": "",
+            "url": "https://api.github.com/users/discord",
+            "type": "Organization",
+            "site_admin": false
+          },
+          "repo": {
+            "id": 386436692,
+            "node_id": "MDEwOlJlcG9zaXRvcnkzODY0MzY2OTI=",
+            "name": "pre-commit",
+            "full_name": "discord/pre-commit",
+            "private": false,
+            "owner": {
+              "login": "discord",
+              "id": 1965106,
+              "node_id": "MDEyOk9yZ2FuaXphdGlvbjE5NjUxMDY=",
+              "gravatar_id": "",
+              "url": "https://api.github.com/users/discord",
+              "type": "Organization",
+              "site_admin": false
+            },
+            "description": "A framework for managing and maintaining multi-language pre-commit hooks.",
+            "fork": true,
+            "url": "https://api.github.com/repos/discord/pre-commit",
+            "created_at": "2021-07-15T22:10:21Z",
+            "updated_at": "2021-12-21T23:06:11Z",
+            "pushed_at": "2022-09-13T17:37:38Z",
+            "homepage": "https://pre-commit.com",
+            "size": 3144,
+            "stargazers_count": 2,
+            "watchers_count": 2,
+            "language": "Python",
+            "has_issues": false,
+            "has_projects": true,
+            "has_downloads": true,
+            "has_wiki": false,
+            "has_pages": false,
+            "has_discussions": false,
+            "forks_count": 3,
+            "archived": false,
+            "disabled": false,
+            "open_issues_count": 0,
+            "license": {
+              "key": "mit",
+              "name": "MIT License",
+              "spdx_id": "MIT",
+              "url": "https://api.github.com/licenses/mit",
+              "node_id": "MDc6TGljZW5zZTEz"
+            },
+            "allow_forking": true,
+            "is_template": false,
+            "web_commit_signoff_required": false,
+            "topics": [],
+            "visibility": "public",
+            "forks": 3,
+            "open_issues": 0,
+            "watchers": 2,
+            "default_branch": "master"
+          }
+        },
+        "base": {
+          "label": "discord:master",
+          "ref": "master",
+          "sha": "f8b29bd9ab19ac697a19c8a8b6baf92e5f97a55a",
+          "user": {
+            "login": "discord",
+            "id": 1965106,
+            "node_id": "MDEyOk9yZ2FuaXphdGlvbjE5NjUxMDY=",
+            "gravatar_id": "",
+            "url": "https://api.github.com/users/discord",
+            "type": "Organization",
+            "site_admin": false
+          },
+          "repo": {
+            "id": 386436692,
+            "node_id": "MDEwOlJlcG9zaXRvcnkzODY0MzY2OTI=",
+            "name": "pre-commit",
+            "full_name": "discord/pre-commit",
+            "private": false,
+            "owner": {
+              "login": "discord",
+              "id": 1965106,
+              "node_id": "MDEyOk9yZ2FuaXphdGlvbjE5NjUxMDY=",
+              "gravatar_id": "",
+              "url": "https://api.github.com/users/discord",
+              "type": "Organization",
+              "site_admin": false
+            },
+            "description": "A framework for managing and maintaining multi-language pre-commit hooks.",
+            "fork": true,
+            "url": "https://api.github.com/repos/discord/pre-commit",
+            "created_at": "2021-07-15T22:10:21Z",
+            "updated_at": "2021-12-21T23:06:11Z",
+            "pushed_at": "2022-09-13T17:37:38Z",
+            "homepage": "https://pre-commit.com",
+            "size": 3144,
+            "stargazers_count": 2,
+            "watchers_count": 2,
+            "language": "Python",
+            "has_issues": false,
+            "has_projects": true,
+            "has_downloads": true,
+            "has_wiki": false,
+            "has_pages": false,
+            "has_discussions": false,
+            "forks_count": 3,
+            "archived": false,
+            "disabled": false,
+            "open_issues_count": 0,
+            "license": {
+              "key": "mit",
+              "name": "MIT License",
+              "spdx_id": "MIT",
+              "url": "https://api.github.com/licenses/mit",
+              "node_id": "MDc6TGljZW5zZTEz"
+            },
+            "allow_forking": true,
+            "is_template": false,
+            "web_commit_signoff_required": false,
+            "topics": [],
+            "visibility": "public",
+            "forks": 3,
+            "open_issues": 0,
+            "watchers": 2,
+            "default_branch": "master"
+          }
+        },
+        "_links": {
+          "self": {
+            "href": "https://api.github.com/repos/discord/pre-commit/pulls/11"
+          },
+          "html": {
+            "href": "https://github.com/discord/pre-commit/pull/11"
+          },
+          "issue": {
+            "href": "https://api.github.com/repos/discord/pre-commit/issues/11"
+          },
+          "comments": {
+            "href": "https://api.github.com/repos/discord/pre-commit/issues/11/comments"
+          },
+          "review_comments": {
+            "href": "https://api.github.com/repos/discord/pre-commit/pulls/11/comments"
+          },
+          "review_comment": {
+            "href": "https://api.github.com/repos/discord/pre-commit/pulls/comments{/number}"
+          },
+          "commits": {
+            "href": "https://api.github.com/repos/discord/pre-commit/pulls/11/commits"
+          },
+          "statuses": {
+            "href": "https://api.github.com/repos/discord/pre-commit/statuses/f78915c2c63806d0111ea3fde69289e0414cc9a8"
+          }
+        },
+        "author_association": "MEMBER",
+        "auto_merge": null,
+        "active_lock_reason": null
+      },
+      {
+        "url": "https://api.github.com/repos/discord/pre-commit/pulls/10",
+        "id": 807767011,
+        "node_id": "PR_kwDOFwiOVM4wJYvj",
+        "number": 10,
+        "state": "closed",
+        "locked": false,
+        "title": "Silence the pushd/popd output in the editor hook script",
+        "user": {
+          "login": "zombiezen",
+          "id": 181535,
+          "node_id": "MDQ6VXNlcjE4MTUzNQ==",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/zombiezen",
+          "type": "User",
+          "site_admin": false
+        },
+        "body": null,
+        "created_at": "2021-12-21T18:19:30Z",
+        "updated_at": "2021-12-21T23:06:07Z",
+        "closed_at": "2021-12-21T23:06:06Z",
+        "merged_at": "2021-12-21T23:06:06Z",
+        "merge_commit_sha": "f8b29bd9ab19ac697a19c8a8b6baf92e5f97a55a",
+        "assignee": null,
+        "assignees": [],
+        "requested_reviewers": [],
+        "requested_teams": [],
+        "labels": [],
+        "milestone": null,
+        "draft": false,
+        "head": {
+          "label": "discord:fix/editor-subdir",
+          "ref": "fix/editor-subdir",
+          "sha": "ef3072493186e3de2accbdf696bdf4023230058a",
+          "user": {
+            "login": "discord",
+            "id": 1965106,
+            "node_id": "MDEyOk9yZ2FuaXphdGlvbjE5NjUxMDY=",
+            "gravatar_id": "",
+            "url": "https://api.github.com/users/discord",
+            "type": "Organization",
+            "site_admin": false
+          },
+          "repo": {
+            "id": 386436692,
+            "node_id": "MDEwOlJlcG9zaXRvcnkzODY0MzY2OTI=",
+            "name": "pre-commit",
+            "full_name": "discord/pre-commit",
+            "private": false,
+            "owner": {
+              "login": "discord",
+              "id": 1965106,
+              "node_id": "MDEyOk9yZ2FuaXphdGlvbjE5NjUxMDY=",
+              "gravatar_id": "",
+              "url": "https://api.github.com/users/discord",
+              "type": "Organization",
+              "site_admin": false
+            },
+            "description": "A framework for managing and maintaining multi-language pre-commit hooks.",
+            "fork": true,
+            "url": "https://api.github.com/repos/discord/pre-commit",
+            "created_at": "2021-07-15T22:10:21Z",
+            "updated_at": "2021-12-21T23:06:11Z",
+            "pushed_at": "2022-09-13T17:37:38Z",
+            "homepage": "https://pre-commit.com",
+            "size": 3144,
+            "stargazers_count": 2,
+            "watchers_count": 2,
+            "language": "Python",
+            "has_issues": false,
+            "has_projects": true,
+            "has_downloads": true,
+            "has_wiki": false,
+            "has_pages": false,
+            "has_discussions": false,
+            "forks_count": 3,
+            "archived": false,
+            "disabled": false,
+            "open_issues_count": 0,
+            "license": {
+              "key": "mit",
+              "name": "MIT License",
+              "spdx_id": "MIT",
+              "url": "https://api.github.com/licenses/mit",
+              "node_id": "MDc6TGljZW5zZTEz"
+            },
+            "allow_forking": true,
+            "is_template": false,
+            "web_commit_signoff_required": false,
+            "topics": [],
+            "visibility": "public",
+            "forks": 3,
+            "open_issues": 0,
+            "watchers": 2,
+            "default_branch": "master"
+          }
+        },
+        "base": {
+          "label": "discord:master",
+          "ref": "master",
+          "sha": "c596e872c30afebaf1c1c53434e9014dae5a6e99",
+          "user": {
+            "login": "discord",
+            "id": 1965106,
+            "node_id": "MDEyOk9yZ2FuaXphdGlvbjE5NjUxMDY=",
+            "gravatar_id": "",
+            "url": "https://api.github.com/users/discord",
+            "type": "Organization",
+            "site_admin": false
+          },
+          "repo": {
+            "id": 386436692,
+            "node_id": "MDEwOlJlcG9zaXRvcnkzODY0MzY2OTI=",
+            "name": "pre-commit",
+            "full_name": "discord/pre-commit",
+            "private": false,
+            "owner": {
+              "login": "discord",
+              "id": 1965106,
+              "node_id": "MDEyOk9yZ2FuaXphdGlvbjE5NjUxMDY=",
+              "gravatar_id": "",
+              "url": "https://api.github.com/users/discord",
+              "type": "Organization",
+              "site_admin": false
+            },
+            "description": "A framework for managing and maintaining multi-language pre-commit hooks.",
+            "fork": true,
+            "url": "https://api.github.com/repos/discord/pre-commit",
+            "created_at": "2021-07-15T22:10:21Z",
+            "updated_at": "2021-12-21T23:06:11Z",
+            "pushed_at": "2022-09-13T17:37:38Z",
+            "homepage": "https://pre-commit.com",
+            "size": 3144,
+            "stargazers_count": 2,
+            "watchers_count": 2,
+            "language": "Python",
+            "has_issues": false,
+            "has_projects": true,
+            "has_downloads": true,
+            "has_wiki": false,
+            "has_pages": false,
+            "has_discussions": false,
+            "forks_count": 3,
+            "archived": false,
+            "disabled": false,
+            "open_issues_count": 0,
+            "license": {
+              "key": "mit",
+              "name": "MIT License",
+              "spdx_id": "MIT",
+              "url": "https://api.github.com/licenses/mit",
+              "node_id": "MDc6TGljZW5zZTEz"
+            },
+            "allow_forking": true,
+            "is_template": false,
+            "web_commit_signoff_required": false,
+            "topics": [],
+            "visibility": "public",
+            "forks": 3,
+            "open_issues": 0,
+            "watchers": 2,
+            "default_branch": "master"
+          }
+        },
+        "_links": {
+          "self": {
+            "href": "https://api.github.com/repos/discord/pre-commit/pulls/10"
+          },
+          "html": {
+            "href": "https://github.com/discord/pre-commit/pull/10"
+          },
+          "issue": {
+            "href": "https://api.github.com/repos/discord/pre-commit/issues/10"
+          },
+          "comments": {
+            "href": "https://api.github.com/repos/discord/pre-commit/issues/10/comments"
+          },
+          "review_comments": {
+            "href": "https://api.github.com/repos/discord/pre-commit/pulls/10/comments"
+          },
+          "review_comment": {
+            "href": "https://api.github.com/repos/discord/pre-commit/pulls/comments{/number}"
+          },
+          "commits": {
+            "href": "https://api.github.com/repos/discord/pre-commit/pulls/10/commits"
+          },
+          "statuses": {
+            "href": "https://api.github.com/repos/discord/pre-commit/statuses/ef3072493186e3de2accbdf696bdf4023230058a"
+          }
+        },
+        "author_association": "MEMBER",
+        "auto_merge": null,
+        "active_lock_reason": null
+      },
+      {
+        "url": "https://api.github.com/repos/discord/pre-commit/pulls/9",
+        "id": 801766446,
+        "node_id": "PR_kwDOFwiOVM4vyfwu",
+        "number": 9,
+        "state": "closed",
+        "locked": false,
+        "title": "Be more robust to different git binary names",
+        "user": {
+          "login": "ddfisher",
+          "id": 245905,
+          "node_id": "MDQ6VXNlcjI0NTkwNQ==",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/ddfisher",
+          "type": "User",
+          "site_admin": false
+        },
+        "body": "This wasn't working properly on my M1 mac, because the git command was called `/Library/Developer/CommandLineTools/usr/bin/git` -- this fixes that and makes the whole thing slightly more robust.\r\n\r\nAlso has minor bugfix for platform name. >_>",
+        "created_at": "2021-12-13T22:25:44Z",
+        "updated_at": "2021-12-13T22:28:28Z",
+        "closed_at": "2021-12-13T22:28:28Z",
+        "merged_at": "2021-12-13T22:28:28Z",
+        "merge_commit_sha": "8960c1107ab93b9760fa5d0124d4f1a6a7ac1281",
+        "assignee": null,
+        "assignees": [],
+        "requested_reviewers": [],
+        "requested_teams": [],
+        "labels": [],
+        "milestone": null,
+        "draft": false,
+        "head": {
+          "label": "discord:day/bugfix",
+          "ref": "day/bugfix",
+          "sha": "1b1647a6dd5c44143e5e82e699193a5e9cb076a6",
+          "user": {
+            "login": "discord",
+            "id": 1965106,
+            "node_id": "MDEyOk9yZ2FuaXphdGlvbjE5NjUxMDY=",
+            "gravatar_id": "",
+            "url": "https://api.github.com/users/discord",
+            "type": "Organization",
+            "site_admin": false
+          },
+          "repo": {
+            "id": 386436692,
+            "node_id": "MDEwOlJlcG9zaXRvcnkzODY0MzY2OTI=",
+            "name": "pre-commit",
+            "full_name": "discord/pre-commit",
+            "private": false,
+            "owner": {
+              "login": "discord",
+              "id": 1965106,
+              "node_id": "MDEyOk9yZ2FuaXphdGlvbjE5NjUxMDY=",
+              "gravatar_id": "",
+              "url": "https://api.github.com/users/discord",
+              "type": "Organization",
+              "site_admin": false
+            },
+            "description": "A framework for managing and maintaining multi-language pre-commit hooks.",
+            "fork": true,
+            "url": "https://api.github.com/repos/discord/pre-commit",
+            "created_at": "2021-07-15T22:10:21Z",
+            "updated_at": "2021-12-21T23:06:11Z",
+            "pushed_at": "2022-09-13T17:37:38Z",
+            "homepage": "https://pre-commit.com",
+            "size": 3144,
+            "stargazers_count": 2,
+            "watchers_count": 2,
+            "language": "Python",
+            "has_issues": false,
+            "has_projects": true,
+            "has_downloads": true,
+            "has_wiki": false,
+            "has_pages": false,
+            "has_discussions": false,
+            "forks_count": 3,
+            "archived": false,
+            "disabled": false,
+            "open_issues_count": 0,
+            "license": {
+              "key": "mit",
+              "name": "MIT License",
+              "spdx_id": "MIT",
+              "url": "https://api.github.com/licenses/mit",
+              "node_id": "MDc6TGljZW5zZTEz"
+            },
+            "allow_forking": true,
+            "is_template": false,
+            "web_commit_signoff_required": false,
+            "topics": [],
+            "visibility": "public",
+            "forks": 3,
+            "open_issues": 0,
+            "watchers": 2,
+            "default_branch": "master"
+          }
+        },
+        "base": {
+          "label": "discord:master",
+          "ref": "master",
+          "sha": "225130bbf8523414ba113b75c98bd1b7b83b479b",
+          "user": {
+            "login": "discord",
+            "id": 1965106,
+            "node_id": "MDEyOk9yZ2FuaXphdGlvbjE5NjUxMDY=",
+            "gravatar_id": "",
+            "url": "https://api.github.com/users/discord",
+            "type": "Organization",
+            "site_admin": false
+          },
+          "repo": {
+            "id": 386436692,
+            "node_id": "MDEwOlJlcG9zaXRvcnkzODY0MzY2OTI=",
+            "name": "pre-commit",
+            "full_name": "discord/pre-commit",
+            "private": false,
+            "owner": {
+              "login": "discord",
+              "id": 1965106,
+              "node_id": "MDEyOk9yZ2FuaXphdGlvbjE5NjUxMDY=",
+              "gravatar_id": "",
+              "url": "https://api.github.com/users/discord",
+              "type": "Organization",
+              "site_admin": false
+            },
+            "description": "A framework for managing and maintaining multi-language pre-commit hooks.",
+            "fork": true,
+            "url": "https://api.github.com/repos/discord/pre-commit",
+            "created_at": "2021-07-15T22:10:21Z",
+            "updated_at": "2021-12-21T23:06:11Z",
+            "pushed_at": "2022-09-13T17:37:38Z",
+            "homepage": "https://pre-commit.com",
+            "size": 3144,
+            "stargazers_count": 2,
+            "watchers_count": 2,
+            "language": "Python",
+            "has_issues": false,
+            "has_projects": true,
+            "has_downloads": true,
+            "has_wiki": false,
+            "has_pages": false,
+            "has_discussions": false,
+            "forks_count": 3,
+            "archived": false,
+            "disabled": false,
+            "open_issues_count": 0,
+            "license": {
+              "key": "mit",
+              "name": "MIT License",
+              "spdx_id": "MIT",
+              "url": "https://api.github.com/licenses/mit",
+              "node_id": "MDc6TGljZW5zZTEz"
+            },
+            "allow_forking": true,
+            "is_template": false,
+            "web_commit_signoff_required": false,
+            "topics": [],
+            "visibility": "public",
+            "forks": 3,
+            "open_issues": 0,
+            "watchers": 2,
+            "default_branch": "master"
+          }
+        },
+        "_links": {
+          "self": {
+            "href": "https://api.github.com/repos/discord/pre-commit/pulls/9"
+          },
+          "html": {
+            "href": "https://github.com/discord/pre-commit/pull/9"
+          },
+          "issue": {
+            "href": "https://api.github.com/repos/discord/pre-commit/issues/9"
+          },
+          "comments": {
+            "href": "https://api.github.com/repos/discord/pre-commit/issues/9/comments"
+          },
+          "review_comments": {
+            "href": "https://api.github.com/repos/discord/pre-commit/pulls/9/comments"
+          },
+          "review_comment": {
+            "href": "https://api.github.com/repos/discord/pre-commit/pulls/comments{/number}"
+          },
+          "commits": {
+            "href": "https://api.github.com/repos/discord/pre-commit/pulls/9/commits"
+          },
+          "statuses": {
+            "href": "https://api.github.com/repos/discord/pre-commit/statuses/1b1647a6dd5c44143e5e82e699193a5e9cb076a6"
+          }
+        },
+        "author_association": "NONE",
+        "auto_merge": null,
+        "active_lock_reason": null
+      }
+    ]
   }
 }
