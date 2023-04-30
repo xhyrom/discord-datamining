@@ -335,238 +335,7 @@
         ]
       }
     ],
-    "releases": [
-      {
-        "url": "https://api.github.com/repos/discord/PodToBUILD/releases/69958936",
-        "id": 69958936,
-        "author": {
-          "login": "FuegoFro",
-          "id": 463696,
-          "node_id": "MDQ6VXNlcjQ2MzY5Ng==",
-          "gravatar_id": "",
-          "url": "https://api.github.com/users/FuegoFro",
-          "type": "User",
-          "site_admin": false
-        },
-        "node_id": "RE_kwDOCyRH8c4EK30Y",
-        "tag_name": "discord_fixes_2022_06_17",
-        "target_commitish": "master",
-        "name": "",
-        "draft": false,
-        "prerelease": false,
-        "created_at": "2022-06-17T23:01:32Z",
-        "published_at": "2022-06-21T17:42:47Z",
-        "assets": [
-          {
-            "url": "https://api.github.com/repos/discord/PodToBUILD/releases/assets/69156809",
-            "id": 69156809,
-            "node_id": "RA_kwDOCyRH8c4EHz_J",
-            "name": "PodToBUILD.zip",
-            "label": null,
-            "uploader": {
-              "login": "FuegoFro",
-              "id": 463696,
-              "node_id": "MDQ6VXNlcjQ2MzY5Ng==",
-              "gravatar_id": "",
-              "url": "https://api.github.com/users/FuegoFro",
-              "type": "User",
-              "site_admin": false
-            },
-            "content_type": "application/zip",
-            "state": "uploaded",
-            "size": 1568407,
-            "download_count": 21595,
-            "created_at": "2022-06-21T17:42:44Z",
-            "updated_at": "2022-06-21T17:42:45Z"
-          }
-        ],
-        "body": ""
-      },
-      {
-        "url": "https://api.github.com/repos/discord/PodToBUILD/releases/69348948",
-        "id": 69348948,
-        "author": {
-          "login": "FuegoFro",
-          "id": 463696,
-          "node_id": "MDQ6VXNlcjQ2MzY5Ng==",
-          "gravatar_id": "",
-          "url": "https://api.github.com/users/FuegoFro",
-          "type": "User",
-          "site_admin": false
-        },
-        "node_id": "RE_kwDOCyRH8c4EIi5U",
-        "tag_name": "discord_fixes_2022_06_13",
-        "target_commitish": "master",
-        "name": "",
-        "draft": false,
-        "prerelease": false,
-        "created_at": "2022-06-09T18:02:34Z",
-        "published_at": "2022-06-14T00:00:19Z",
-        "assets": [
-          {
-            "url": "https://api.github.com/repos/discord/PodToBUILD/releases/assets/68388177",
-            "id": 68388177,
-            "node_id": "RA_kwDOCyRH8c4EE4VR",
-            "name": "PodToBUILD.zip",
-            "label": null,
-            "uploader": {
-              "login": "FuegoFro",
-              "id": 463696,
-              "node_id": "MDQ6VXNlcjQ2MzY5Ng==",
-              "gravatar_id": "",
-              "url": "https://api.github.com/users/FuegoFro",
-              "type": "User",
-              "site_admin": false
-            },
-            "content_type": "application/zip",
-            "state": "uploaded",
-            "size": 1567707,
-            "download_count": 566,
-            "created_at": "2022-06-14T00:00:11Z",
-            "updated_at": "2022-06-14T00:00:13Z"
-          }
-        ],
-        "body": ""
-      },
-      {
-        "url": "https://api.github.com/repos/discord/PodToBUILD/releases/62050036",
-        "id": 62050036,
-        "author": {
-          "login": "FuegoFro",
-          "id": 463696,
-          "node_id": "MDQ6VXNlcjQ2MzY5Ng==",
-          "gravatar_id": "",
-          "url": "https://api.github.com/users/FuegoFro",
-          "type": "User",
-          "site_admin": false
-        },
-        "node_id": "RE_kwDOCyRH8c4Dss70",
-        "tag_name": "discord_fixes_2022_03_16",
-        "target_commitish": "master",
-        "name": "",
-        "draft": false,
-        "prerelease": false,
-        "created_at": "2022-02-11T19:40:46Z",
-        "published_at": "2022-03-16T22:44:02Z",
-        "assets": [
-          {
-            "url": "https://api.github.com/repos/discord/PodToBUILD/releases/assets/59711668",
-            "id": 59711668,
-            "node_id": "RA_kwDOCyRH8c4DjyC0",
-            "name": "PodToBUILD.zip",
-            "label": null,
-            "uploader": {
-              "login": "FuegoFro",
-              "id": 463696,
-              "node_id": "MDQ6VXNlcjQ2MzY5Ng==",
-              "gravatar_id": "",
-              "url": "https://api.github.com/users/FuegoFro",
-              "type": "User",
-              "site_admin": false
-            },
-            "content_type": "application/zip",
-            "state": "uploaded",
-            "size": 1567092,
-            "download_count": 2522,
-            "created_at": "2022-03-16T22:43:58Z",
-            "updated_at": "2022-03-16T22:43:59Z"
-          }
-        ],
-        "body": ""
-      },
-      {
-        "url": "https://api.github.com/repos/discord/PodToBUILD/releases/59362874",
-        "id": 59362874,
-        "author": {
-          "login": "FuegoFro",
-          "id": 463696,
-          "node_id": "MDQ6VXNlcjQ2MzY5Ng==",
-          "gravatar_id": "",
-          "url": "https://api.github.com/users/FuegoFro",
-          "type": "User",
-          "site_admin": false
-        },
-        "node_id": "RE_kwDOCyRH8c4Dic46",
-        "tag_name": "discord_fixes_2022_02_11",
-        "target_commitish": "master",
-        "name": "",
-        "draft": false,
-        "prerelease": false,
-        "created_at": "2022-02-11T19:45:01Z",
-        "published_at": "2022-02-11T19:52:37Z",
-        "assets": [
-          {
-            "url": "https://api.github.com/repos/discord/PodToBUILD/releases/assets/56541458",
-            "id": 56541458,
-            "node_id": "RA_kwDOCyRH8c4DXsES",
-            "name": "PodToBUILD.zip",
-            "label": null,
-            "uploader": {
-              "login": "FuegoFro",
-              "id": 463696,
-              "node_id": "MDQ6VXNlcjQ2MzY5Ng==",
-              "gravatar_id": "",
-              "url": "https://api.github.com/users/FuegoFro",
-              "type": "User",
-              "site_admin": false
-            },
-            "content_type": "application/zip",
-            "state": "uploaded",
-            "size": 1567002,
-            "download_count": 6495,
-            "created_at": "2022-02-11T19:52:22Z",
-            "updated_at": "2022-02-11T19:52:23Z"
-          }
-        ],
-        "body": ""
-      },
-      {
-        "url": "https://api.github.com/repos/discord/PodToBUILD/releases/57626117",
-        "id": 57626117,
-        "author": {
-          "login": "FuegoFro",
-          "id": 463696,
-          "node_id": "MDQ6VXNlcjQ2MzY5Ng==",
-          "gravatar_id": "",
-          "url": "https://api.github.com/users/FuegoFro",
-          "type": "User",
-          "site_admin": false
-        },
-        "node_id": "RE_kwDOCyRH8c4Db04F",
-        "tag_name": "discord_fixes_2022_01_20",
-        "target_commitish": "master",
-        "name": "",
-        "draft": false,
-        "prerelease": false,
-        "created_at": "2022-01-21T00:42:39Z",
-        "published_at": "2022-01-21T00:51:01Z",
-        "assets": [
-          {
-            "url": "https://api.github.com/repos/discord/PodToBUILD/releases/assets/54522855",
-            "id": 54522855,
-            "node_id": "RA_kwDOCyRH8c4DP_Pn",
-            "name": "PodToBUILD.zip",
-            "label": null,
-            "uploader": {
-              "login": "FuegoFro",
-              "id": 463696,
-              "node_id": "MDQ6VXNlcjQ2MzY5Ng==",
-              "gravatar_id": "",
-              "url": "https://api.github.com/users/FuegoFro",
-              "type": "User",
-              "site_admin": false
-            },
-            "content_type": "application/zip",
-            "state": "uploaded",
-            "size": 1698571,
-            "download_count": 50,
-            "created_at": "2022-01-21T00:50:43Z",
-            "updated_at": "2022-01-21T00:50:45Z"
-          }
-        ],
-        "body": ""
-      }
-    ],
+    "releases": [],
     "issues": [
       {
         "url": "https://api.github.com/repos/discord/PodToBUILD/issues/2",
@@ -665,6 +434,395 @@
         "state_reason": null
       }
     ],
-    "pullRequests": []
+    "pullRequests": [
+      {
+        "url": "https://api.github.com/repos/discord/PodToBUILD/pulls/2",
+        "id": 288139980,
+        "node_id": "MDExOlB1bGxSZXF1ZXN0Mjg4MTM5OTgw",
+        "number": 2,
+        "state": "closed",
+        "locked": false,
+        "title": "Add a podspec_file attribute",
+        "user": {
+          "login": "FuegoFro",
+          "id": 463696,
+          "node_id": "MDQ6VXNlcjQ2MzY5Ng==",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/FuegoFro",
+          "type": "User",
+          "site_admin": false
+        },
+        "body": "This allows a podspec to be checked into the repo, rather than only\r\nallowing an external URL as a podspec.\r\n\r\nThis PR is just to get feedback before I send a PR off to upstream and merge it into our `discord_fixes` branch.",
+        "created_at": "2019-06-14T00:19:06Z",
+        "updated_at": "2019-06-14T01:11:28Z",
+        "closed_at": "2019-06-14T01:11:28Z",
+        "merged_at": null,
+        "merge_commit_sha": "e59ab22c2a2854e2c2511ae24e62900981c2ad1f",
+        "assignee": null,
+        "assignees": [],
+        "requested_reviewers": [],
+        "requested_teams": [],
+        "labels": [],
+        "milestone": null,
+        "draft": false,
+        "head": {
+          "label": "discord:podspec_file",
+          "ref": "podspec_file",
+          "sha": "b89cb0d19d20eed0543f94685acba5eb90473521",
+          "user": {
+            "login": "discord",
+            "id": 1965106,
+            "node_id": "MDEyOk9yZ2FuaXphdGlvbjE5NjUxMDY=",
+            "gravatar_id": "",
+            "url": "https://api.github.com/users/discord",
+            "type": "Organization",
+            "site_admin": false
+          },
+          "repo": {
+            "id": 186927089,
+            "node_id": "MDEwOlJlcG9zaXRvcnkxODY5MjcwODk=",
+            "name": "PodToBUILD",
+            "full_name": "discord/PodToBUILD",
+            "private": false,
+            "owner": {
+              "login": "discord",
+              "id": 1965106,
+              "node_id": "MDEyOk9yZ2FuaXphdGlvbjE5NjUxMDY=",
+              "gravatar_id": "",
+              "url": "https://api.github.com/users/discord",
+              "type": "Organization",
+              "site_admin": false
+            },
+            "description": "An easy way to integrate CocoaPods into Bazel",
+            "fork": true,
+            "url": "https://api.github.com/repos/discord/PodToBUILD",
+            "created_at": "2019-05-16T01:21:39Z",
+            "updated_at": "2021-10-30T00:37:21Z",
+            "pushed_at": "2022-06-21T17:41:46Z",
+            "homepage": "",
+            "size": 62115,
+            "stargazers_count": 3,
+            "watchers_count": 3,
+            "language": "Swift",
+            "has_issues": false,
+            "has_projects": true,
+            "has_downloads": true,
+            "has_wiki": true,
+            "has_pages": false,
+            "has_discussions": false,
+            "forks_count": 3,
+            "archived": false,
+            "disabled": false,
+            "open_issues_count": 0,
+            "license": {
+              "key": "apache-2.0",
+              "name": "Apache License 2.0",
+              "spdx_id": "Apache-2.0",
+              "url": "https://api.github.com/licenses/apache-2.0",
+              "node_id": "MDc6TGljZW5zZTI="
+            },
+            "allow_forking": true,
+            "is_template": false,
+            "web_commit_signoff_required": false,
+            "topics": [],
+            "visibility": "public",
+            "forks": 3,
+            "open_issues": 0,
+            "watchers": 3,
+            "default_branch": "master"
+          }
+        },
+        "base": {
+          "label": "discord:master",
+          "ref": "master",
+          "sha": "7ec9922f3233e13fd514f5f7a9dd0a6e3b0250cd",
+          "user": {
+            "login": "discord",
+            "id": 1965106,
+            "node_id": "MDEyOk9yZ2FuaXphdGlvbjE5NjUxMDY=",
+            "gravatar_id": "",
+            "url": "https://api.github.com/users/discord",
+            "type": "Organization",
+            "site_admin": false
+          },
+          "repo": {
+            "id": 186927089,
+            "node_id": "MDEwOlJlcG9zaXRvcnkxODY5MjcwODk=",
+            "name": "PodToBUILD",
+            "full_name": "discord/PodToBUILD",
+            "private": false,
+            "owner": {
+              "login": "discord",
+              "id": 1965106,
+              "node_id": "MDEyOk9yZ2FuaXphdGlvbjE5NjUxMDY=",
+              "gravatar_id": "",
+              "url": "https://api.github.com/users/discord",
+              "type": "Organization",
+              "site_admin": false
+            },
+            "description": "An easy way to integrate CocoaPods into Bazel",
+            "fork": true,
+            "url": "https://api.github.com/repos/discord/PodToBUILD",
+            "created_at": "2019-05-16T01:21:39Z",
+            "updated_at": "2021-10-30T00:37:21Z",
+            "pushed_at": "2022-06-21T17:41:46Z",
+            "homepage": "",
+            "size": 62115,
+            "stargazers_count": 3,
+            "watchers_count": 3,
+            "language": "Swift",
+            "has_issues": false,
+            "has_projects": true,
+            "has_downloads": true,
+            "has_wiki": true,
+            "has_pages": false,
+            "has_discussions": false,
+            "forks_count": 3,
+            "archived": false,
+            "disabled": false,
+            "open_issues_count": 0,
+            "license": {
+              "key": "apache-2.0",
+              "name": "Apache License 2.0",
+              "spdx_id": "Apache-2.0",
+              "url": "https://api.github.com/licenses/apache-2.0",
+              "node_id": "MDc6TGljZW5zZTI="
+            },
+            "allow_forking": true,
+            "is_template": false,
+            "web_commit_signoff_required": false,
+            "topics": [],
+            "visibility": "public",
+            "forks": 3,
+            "open_issues": 0,
+            "watchers": 3,
+            "default_branch": "master"
+          }
+        },
+        "_links": {
+          "self": {
+            "href": "https://api.github.com/repos/discord/PodToBUILD/pulls/2"
+          },
+          "html": {
+            "href": "https://github.com/discord/PodToBUILD/pull/2"
+          },
+          "issue": {
+            "href": "https://api.github.com/repos/discord/PodToBUILD/issues/2"
+          },
+          "comments": {
+            "href": "https://api.github.com/repos/discord/PodToBUILD/issues/2/comments"
+          },
+          "review_comments": {
+            "href": "https://api.github.com/repos/discord/PodToBUILD/pulls/2/comments"
+          },
+          "review_comment": {
+            "href": "https://api.github.com/repos/discord/PodToBUILD/pulls/comments{/number}"
+          },
+          "commits": {
+            "href": "https://api.github.com/repos/discord/PodToBUILD/pulls/2/commits"
+          },
+          "statuses": {
+            "href": "https://api.github.com/repos/discord/PodToBUILD/statuses/b89cb0d19d20eed0543f94685acba5eb90473521"
+          }
+        },
+        "author_association": "NONE",
+        "auto_merge": null,
+        "active_lock_reason": null
+      },
+      {
+        "url": "https://api.github.com/repos/discord/PodToBUILD/pulls/1",
+        "id": 280061096,
+        "node_id": "MDExOlB1bGxSZXF1ZXN0MjgwMDYxMDk2",
+        "number": 1,
+        "state": "closed",
+        "locked": false,
+        "title": "Expand extraction support for remote archive files.",
+        "user": {
+          "login": "jdost",
+          "id": 882537,
+          "node_id": "MDQ6VXNlcjg4MjUzNw==",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/jdost",
+          "type": "User",
+          "site_admin": false
+        },
+        "body": "This allows for better detection support and adds an optional parameter to the repository definition to allow for explicitly overriding the extraction handler.  This is to allow for both `.tgz` files implicitly as well as allow for overriding the detection logic when the full URL doesn't provide an extension by default (like URLs from `codeload.github.com` which end with the commit SHA).",
+        "created_at": "2019-05-17T23:51:19Z",
+        "updated_at": "2019-09-24T00:49:51Z",
+        "closed_at": "2019-09-24T00:49:46Z",
+        "merged_at": null,
+        "merge_commit_sha": "9ea1824b528b9628927b5135ef4dfe4a4dd05ea3",
+        "assignee": null,
+        "assignees": [],
+        "requested_reviewers": [],
+        "requested_teams": [],
+        "labels": [],
+        "milestone": null,
+        "draft": false,
+        "head": {
+          "label": "discord:support_tgz",
+          "ref": "support_tgz",
+          "sha": "071a275c4c839a13c81190cf43fd87e69fb243a6",
+          "user": {
+            "login": "discord",
+            "id": 1965106,
+            "node_id": "MDEyOk9yZ2FuaXphdGlvbjE5NjUxMDY=",
+            "gravatar_id": "",
+            "url": "https://api.github.com/users/discord",
+            "type": "Organization",
+            "site_admin": false
+          },
+          "repo": {
+            "id": 186927089,
+            "node_id": "MDEwOlJlcG9zaXRvcnkxODY5MjcwODk=",
+            "name": "PodToBUILD",
+            "full_name": "discord/PodToBUILD",
+            "private": false,
+            "owner": {
+              "login": "discord",
+              "id": 1965106,
+              "node_id": "MDEyOk9yZ2FuaXphdGlvbjE5NjUxMDY=",
+              "gravatar_id": "",
+              "url": "https://api.github.com/users/discord",
+              "type": "Organization",
+              "site_admin": false
+            },
+            "description": "An easy way to integrate CocoaPods into Bazel",
+            "fork": true,
+            "url": "https://api.github.com/repos/discord/PodToBUILD",
+            "created_at": "2019-05-16T01:21:39Z",
+            "updated_at": "2021-10-30T00:37:21Z",
+            "pushed_at": "2022-06-21T17:41:46Z",
+            "homepage": "",
+            "size": 62115,
+            "stargazers_count": 3,
+            "watchers_count": 3,
+            "language": "Swift",
+            "has_issues": false,
+            "has_projects": true,
+            "has_downloads": true,
+            "has_wiki": true,
+            "has_pages": false,
+            "has_discussions": false,
+            "forks_count": 3,
+            "archived": false,
+            "disabled": false,
+            "open_issues_count": 0,
+            "license": {
+              "key": "apache-2.0",
+              "name": "Apache License 2.0",
+              "spdx_id": "Apache-2.0",
+              "url": "https://api.github.com/licenses/apache-2.0",
+              "node_id": "MDc6TGljZW5zZTI="
+            },
+            "allow_forking": true,
+            "is_template": false,
+            "web_commit_signoff_required": false,
+            "topics": [],
+            "visibility": "public",
+            "forks": 3,
+            "open_issues": 0,
+            "watchers": 3,
+            "default_branch": "master"
+          }
+        },
+        "base": {
+          "label": "discord:master",
+          "ref": "master",
+          "sha": "7ec9922f3233e13fd514f5f7a9dd0a6e3b0250cd",
+          "user": {
+            "login": "discord",
+            "id": 1965106,
+            "node_id": "MDEyOk9yZ2FuaXphdGlvbjE5NjUxMDY=",
+            "gravatar_id": "",
+            "url": "https://api.github.com/users/discord",
+            "type": "Organization",
+            "site_admin": false
+          },
+          "repo": {
+            "id": 186927089,
+            "node_id": "MDEwOlJlcG9zaXRvcnkxODY5MjcwODk=",
+            "name": "PodToBUILD",
+            "full_name": "discord/PodToBUILD",
+            "private": false,
+            "owner": {
+              "login": "discord",
+              "id": 1965106,
+              "node_id": "MDEyOk9yZ2FuaXphdGlvbjE5NjUxMDY=",
+              "gravatar_id": "",
+              "url": "https://api.github.com/users/discord",
+              "type": "Organization",
+              "site_admin": false
+            },
+            "description": "An easy way to integrate CocoaPods into Bazel",
+            "fork": true,
+            "url": "https://api.github.com/repos/discord/PodToBUILD",
+            "created_at": "2019-05-16T01:21:39Z",
+            "updated_at": "2021-10-30T00:37:21Z",
+            "pushed_at": "2022-06-21T17:41:46Z",
+            "homepage": "",
+            "size": 62115,
+            "stargazers_count": 3,
+            "watchers_count": 3,
+            "language": "Swift",
+            "has_issues": false,
+            "has_projects": true,
+            "has_downloads": true,
+            "has_wiki": true,
+            "has_pages": false,
+            "has_discussions": false,
+            "forks_count": 3,
+            "archived": false,
+            "disabled": false,
+            "open_issues_count": 0,
+            "license": {
+              "key": "apache-2.0",
+              "name": "Apache License 2.0",
+              "spdx_id": "Apache-2.0",
+              "url": "https://api.github.com/licenses/apache-2.0",
+              "node_id": "MDc6TGljZW5zZTI="
+            },
+            "allow_forking": true,
+            "is_template": false,
+            "web_commit_signoff_required": false,
+            "topics": [],
+            "visibility": "public",
+            "forks": 3,
+            "open_issues": 0,
+            "watchers": 3,
+            "default_branch": "master"
+          }
+        },
+        "_links": {
+          "self": {
+            "href": "https://api.github.com/repos/discord/PodToBUILD/pulls/1"
+          },
+          "html": {
+            "href": "https://github.com/discord/PodToBUILD/pull/1"
+          },
+          "issue": {
+            "href": "https://api.github.com/repos/discord/PodToBUILD/issues/1"
+          },
+          "comments": {
+            "href": "https://api.github.com/repos/discord/PodToBUILD/issues/1/comments"
+          },
+          "review_comments": {
+            "href": "https://api.github.com/repos/discord/PodToBUILD/pulls/1/comments"
+          },
+          "review_comment": {
+            "href": "https://api.github.com/repos/discord/PodToBUILD/pulls/comments{/number}"
+          },
+          "commits": {
+            "href": "https://api.github.com/repos/discord/PodToBUILD/pulls/1/commits"
+          },
+          "statuses": {
+            "href": "https://api.github.com/repos/discord/PodToBUILD/statuses/071a275c4c839a13c81190cf43fd87e69fb243a6"
+          }
+        },
+        "author_association": "NONE",
+        "auto_merge": null,
+        "active_lock_reason": null
+      }
+    ]
   }
 }

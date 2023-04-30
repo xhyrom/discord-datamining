@@ -325,7 +325,135 @@
         ]
       }
     ],
-    "releases": [],
+    "releases": [
+      {
+        "url": "https://api.github.com/repos/discord/discord-interactions-php/releases/59151630",
+        "id": 59151630,
+        "author": {
+          "login": "typpo",
+          "id": 310310,
+          "node_id": "MDQ6VXNlcjMxMDMxMA==",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/typpo",
+          "type": "User",
+          "site_admin": false
+        },
+        "node_id": "RE_kwDOEx3uE84DhpUO",
+        "tag_name": "2.2.0",
+        "target_commitish": "main",
+        "name": "2.2.0",
+        "draft": false,
+        "prerelease": false,
+        "created_at": "2022-02-09T17:58:51Z",
+        "published_at": "2022-02-09T17:59:50Z",
+        "assets": [],
+        "body": "Interaction modal enums"
+      },
+      {
+        "url": "https://api.github.com/repos/discord/discord-interactions-php/releases/56409131",
+        "id": 56409131,
+        "author": {
+          "login": "typpo",
+          "id": 310310,
+          "node_id": "MDQ6VXNlcjMxMDMxMA==",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/typpo",
+          "type": "User",
+          "site_admin": false
+        },
+        "node_id": "RE_kwDOEx3uE84DXLwr",
+        "tag_name": "2.1.0",
+        "target_commitish": "main",
+        "name": "2.1.0",
+        "draft": false,
+        "prerelease": false,
+        "created_at": "2022-01-04T19:02:07Z",
+        "published_at": "2022-01-04T20:53:23Z",
+        "assets": [],
+        "body": "Add enums for autocomplete"
+      },
+      {
+        "url": "https://api.github.com/repos/discord/discord-interactions-php/releases/45197403",
+        "id": 45197403,
+        "author": {
+          "login": "typpo",
+          "id": 310310,
+          "node_id": "MDQ6VXNlcjMxMDMxMA==",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/typpo",
+          "type": "User",
+          "site_admin": false
+        },
+        "node_id": "MDc6UmVsZWFzZTQ1MTk3NDAz",
+        "tag_name": "2.0.0",
+        "target_commitish": "main",
+        "name": "2.0.0",
+        "draft": false,
+        "prerelease": false,
+        "created_at": "2021-06-23T14:54:24Z",
+        "published_at": "2021-06-24T20:31:04Z",
+        "assets": [],
+        "body": "",
+        "reactions": {
+          "url": "https://api.github.com/repos/discord/discord-interactions-php/releases/45197403/reactions",
+          "total_count": 3,
+          "+1": 0,
+          "-1": 0,
+          "laugh": 0,
+          "hooray": 3,
+          "confused": 0,
+          "heart": 0,
+          "rocket": 0,
+          "eyes": 0
+        }
+      },
+      {
+        "url": "https://api.github.com/repos/discord/discord-interactions-php/releases/43828344",
+        "id": 43828344,
+        "author": {
+          "login": "typpo",
+          "id": 310310,
+          "node_id": "MDQ6VXNlcjMxMDMxMA==",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/typpo",
+          "type": "User",
+          "site_admin": false
+        },
+        "node_id": "MDc6UmVsZWFzZTQzODI4MzQ0",
+        "tag_name": "1.0.8",
+        "target_commitish": "main",
+        "name": "1.0.8",
+        "draft": false,
+        "prerelease": false,
+        "created_at": "2021-05-30T23:53:41Z",
+        "published_at": "2021-05-30T23:54:44Z",
+        "assets": [],
+        "body": ""
+      },
+      {
+        "url": "https://api.github.com/repos/discord/discord-interactions-php/releases/39358986",
+        "id": 39358986,
+        "author": {
+          "login": "typpo",
+          "id": 310310,
+          "node_id": "MDQ6VXNlcjMxMDMxMA==",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/typpo",
+          "type": "User",
+          "site_admin": false
+        },
+        "node_id": "MDc6UmVsZWFzZTM5MzU4OTg2",
+        "tag_name": "1.0.7",
+        "target_commitish": "main",
+        "name": "1.0.7",
+        "draft": false,
+        "prerelease": false,
+        "created_at": "2021-03-05T19:43:12Z",
+        "published_at": "2021-03-05T19:43:57Z",
+        "assets": [],
+        "body": ""
+      }
+    ],
     "issues": [
       {
         "url": "https://api.github.com/repos/discord/discord-interactions-php/issues/7",
