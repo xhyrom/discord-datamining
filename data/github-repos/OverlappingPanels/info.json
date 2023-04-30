@@ -57,7 +57,192 @@
     "triage": false,
     "pull": false
   },
-  "branches": [],
+  "branches": [
+    {
+      "name": "add-build-status",
+      "commit": {
+        "sha": "bbe430d4842d24ec4aafbdbb01a8aa842c6d1627",
+        "url": "https://api.github.com/repos/discord/OverlappingPanels/commits/bbe430d4842d24ec4aafbdbb01a8aa842c6d1627"
+      },
+      "protected": false
+    },
+    {
+      "name": "add-overlapping-panels-example-gifs-to-readme",
+      "commit": {
+        "sha": "70d867cf8e48915ceb642be7e52427dacb1506ac",
+        "url": "https://api.github.com/repos/discord/OverlappingPanels/commits/70d867cf8e48915ceb642be7e52427dacb1506ac"
+      },
+      "protected": false
+    },
+    {
+      "name": "allow-max-side-panel-width-for-tablets",
+      "commit": {
+        "sha": "312efc1408f621d296366e46e8089c39224015d0",
+        "url": "https://api.github.com/repos/discord/OverlappingPanels/commits/312efc1408f621d296366e46e8089c39224015d0"
+      },
+      "protected": false
+    },
+    {
+      "name": "bugfix/android/closed-center-panel-click",
+      "commit": {
+        "sha": "6885d48f615b27060a7282d536f92875ec7fc758",
+        "url": "https://api.github.com/repos/discord/OverlappingPanels/commits/6885d48f615b27060a7282d536f92875ec7fc758"
+      },
+      "protected": false
+    },
+    {
+      "name": "bugfix-registering-same-listener-twice",
+      "commit": {
+        "sha": "3bfd78dfc12525156c9039d7233d3958cb78161e",
+        "url": "https://api.github.com/repos/discord/OverlappingPanels/commits/3bfd78dfc12525156c9039d7233d3958cb78161e"
+      },
+      "protected": false
+    },
+    {
+      "name": "charles/panel-fixes",
+      "commit": {
+        "sha": "5512d763cf66c7a3005b56cff8207fae852600cb",
+        "url": "https://api.github.com/repos/discord/OverlappingPanels/commits/5512d763cf66c7a3005b56cff8207fae852600cb"
+      },
+      "protected": false
+    },
+    {
+      "name": "clean-up-sample-app-gradle",
+      "commit": {
+        "sha": "71c389224e6895431edd873c7ab65da9dd352cbe",
+        "url": "https://api.github.com/repos/discord/OverlappingPanels/commits/71c389224e6895431edd873c7ab65da9dd352cbe"
+      },
+      "protected": false
+    },
+    {
+      "name": "deprecate-legacy-remove-methods",
+      "commit": {
+        "sha": "01f214e23b253fdf46536972c468080791a365d8",
+        "url": "https://api.github.com/repos/discord/OverlappingPanels/commits/01f214e23b253fdf46536972c468080791a365d8"
+      },
+      "protected": false
+    },
+    {
+      "name": "do-not-error-for-available-dependency-upgrade",
+      "commit": {
+        "sha": "0c7afecb95962999322a84ca061035f465ce6fff",
+        "url": "https://api.github.com/repos/discord/OverlappingPanels/commits/0c7afecb95962999322a84ca061035f465ce6fff"
+      },
+      "protected": false
+    },
+    {
+      "name": "documentation",
+      "commit": {
+        "sha": "2ec64f6bd24a321b6a2226b2175bc165c0d12e1a",
+        "url": "https://api.github.com/repos/discord/OverlappingPanels/commits/2ec64f6bd24a321b6a2226b2175bc165c0d12e1a"
+      },
+      "protected": false
+    },
+    {
+      "name": "fix-license",
+      "commit": {
+        "sha": "f0e72b20685f0584f0472878e9300fd64c80d800",
+        "url": "https://api.github.com/repos/discord/OverlappingPanels/commits/f0e72b20685f0584f0472878e9300fd64c80d800"
+      },
+      "protected": false
+    },
+    {
+      "name": "installation",
+      "commit": {
+        "sha": "6722c961981f71b78ba5c3e04206deca0b8917b2",
+        "url": "https://api.github.com/repos/discord/OverlappingPanels/commits/6722c961981f71b78ba5c3e04206deca0b8917b2"
+      },
+      "protected": false
+    },
+    {
+      "name": "lint-ci-integration",
+      "commit": {
+        "sha": "0ac2a6081b26576f910334868eb16d76ab984abf",
+        "url": "https://api.github.com/repos/discord/OverlappingPanels/commits/0ac2a6081b26576f910334868eb16d76ab984abf"
+      },
+      "protected": false
+    },
+    {
+      "name": "master",
+      "commit": {
+        "sha": "70b4a7cf43c6771873b1e091029d332896d41a1a",
+        "url": "https://api.github.com/repos/discord/OverlappingPanels/commits/70b4a7cf43c6771873b1e091029d332896d41a1a"
+      },
+      "protected": false
+    },
+    {
+      "name": "overlapping-panels-icon",
+      "commit": {
+        "sha": "459b14be2c1f9538755e880021d863b3915bf6f4",
+        "url": "https://api.github.com/repos/discord/OverlappingPanels/commits/459b14be2c1f9538755e880021d863b3915bf6f4"
+      },
+      "protected": false
+    },
+    {
+      "name": "overlapping-panels-tests",
+      "commit": {
+        "sha": "cc649f08c1514ccd52ce19dfa69e7c016f535b69",
+        "url": "https://api.github.com/repos/discord/OverlappingPanels/commits/cc649f08c1514ccd52ce19dfa69e7c016f535b69"
+      },
+      "protected": false
+    },
+    {
+      "name": "recrop-title",
+      "commit": {
+        "sha": "25901d9c3ae4ba2482a0f813d024939a25e1f5e9",
+        "url": "https://api.github.com/repos/discord/OverlappingPanels/commits/25901d9c3ae4ba2482a0f813d024939a25e1f5e9"
+      },
+      "protected": false
+    },
+    {
+      "name": "reformat-license-in-readme",
+      "commit": {
+        "sha": "ffc961e9c6560073f83b352e16cc0eb956fd7815",
+        "url": "https://api.github.com/repos/discord/OverlappingPanels/commits/ffc961e9c6560073f83b352e16cc0eb956fd7815"
+      },
+      "protected": false
+    },
+    {
+      "name": "remove-is-locked-from-panel-state",
+      "commit": {
+        "sha": "0bbca9e69f59dd9ff81818dc7f3526cfc44943a3",
+        "url": "https://api.github.com/repos/discord/OverlappingPanels/commits/0bbca9e69f59dd9ff81818dc7f3526cfc44943a3"
+      },
+      "protected": false
+    },
+    {
+      "name": "sample-app",
+      "commit": {
+        "sha": "ae361392c3a5801259e28e9dc316ff38f166796d",
+        "url": "https://api.github.com/repos/discord/OverlappingPanels/commits/ae361392c3a5801259e28e9dc316ff38f166796d"
+      },
+      "protected": false
+    },
+    {
+      "name": "setup-jitpack",
+      "commit": {
+        "sha": "76f31afbb4e0961b98b6035111c8b58e9f57fc64",
+        "url": "https://api.github.com/repos/discord/OverlappingPanels/commits/76f31afbb4e0961b98b6035111c8b58e9f57fc64"
+      },
+      "protected": false
+    },
+    {
+      "name": "use-redesigned-icon-with-title",
+      "commit": {
+        "sha": "7a8089bab66bb0c2cd7287a6caeb114373045a4d",
+        "url": "https://api.github.com/repos/discord/OverlappingPanels/commits/7a8089bab66bb0c2cd7287a6caeb114373045a4d"
+      },
+      "protected": false
+    },
+    {
+      "name": "use-travis-ci-com",
+      "commit": {
+        "sha": "a60ec01911340fabdb8ce00a4721b07376aac9da",
+        "url": "https://api.github.com/repos/discord/OverlappingPanels/commits/a60ec01911340fabdb8ce00a4721b07376aac9da"
+      },
+      "protected": false
+    }
+  ],
   "last5": {
     "commits": [
       {

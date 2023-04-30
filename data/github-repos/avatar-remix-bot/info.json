@@ -59,7 +59,40 @@
     "triage": false,
     "pull": false
   },
-  "branches": [],
+  "branches": [
+    {
+      "name": "beckwithy",
+      "commit": {
+        "sha": "eafc4aca7873a9811b5d6e6a3f00bc95e928b01b",
+        "url": "https://api.github.com/repos/discord/avatar-remix-bot/commits/eafc4aca7873a9811b5d6e6a3f00bc95e928b01b"
+      },
+      "protected": false
+    },
+    {
+      "name": "main",
+      "commit": {
+        "sha": "edf19a43ff35c916200af29d116e672cea0814ba",
+        "url": "https://api.github.com/repos/discord/avatar-remix-bot/commits/edf19a43ff35c916200af29d116e672cea0814ba"
+      },
+      "protected": false
+    },
+    {
+      "name": "project",
+      "commit": {
+        "sha": "34facbb89c711788b4e58eff5613b8938c3a4287",
+        "url": "https://api.github.com/repos/discord/avatar-remix-bot/commits/34facbb89c711788b4e58eff5613b8938c3a4287"
+      },
+      "protected": false
+    },
+    {
+      "name": "review",
+      "commit": {
+        "sha": "58164f86b87b3d3baa5a634f7e8ef21e94937a93",
+        "url": "https://api.github.com/repos/discord/avatar-remix-bot/commits/58164f86b87b3d3baa5a634f7e8ef21e94937a93"
+      },
+      "protected": false
+    }
+  ],
   "last5": {
     "commits": [
       {
