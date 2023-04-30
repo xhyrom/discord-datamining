@@ -339,7 +339,120 @@
         ]
       }
     ],
-    "releases": [],
+    "releases": [
+      {
+        "url": "https://api.github.com/repos/discord/punt/releases/9086788",
+        "id": 9086788,
+        "author": {
+          "login": "b1naryth1ef",
+          "id": 599433,
+          "node_id": "MDQ6VXNlcjU5OTQzMw==",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/b1naryth1ef",
+          "type": "User",
+          "site_admin": false
+        },
+        "node_id": "MDc6UmVsZWFzZTkwODY3ODg=",
+        "tag_name": "v0.2.5",
+        "target_commitish": "master",
+        "name": null,
+        "draft": false,
+        "prerelease": false,
+        "created_at": "2018-01-02T23:43:51Z",
+        "published_at": "2018-01-03T00:04:28Z",
+        "assets": [
+          {
+            "url": "https://api.github.com/repos/discord/punt/releases/assets/5766674",
+            "id": 5766674,
+            "node_id": "MDEyOlJlbGVhc2VBc3NldDU3NjY2NzQ=",
+            "name": "punt-cli-darwin-amd64",
+            "label": "",
+            "uploader": {
+              "login": "b1naryth1ef",
+              "id": 599433,
+              "node_id": "MDQ6VXNlcjU5OTQzMw==",
+              "gravatar_id": "",
+              "url": "https://api.github.com/users/b1naryth1ef",
+              "type": "User",
+              "site_admin": false
+            },
+            "content_type": "application/octet-stream",
+            "state": "uploaded",
+            "size": 7077488,
+            "download_count": 24,
+            "created_at": "2018-01-03T00:04:27Z",
+            "updated_at": "2018-01-03T00:04:28Z"
+          },
+          {
+            "url": "https://api.github.com/repos/discord/punt/releases/assets/5766671",
+            "id": 5766671,
+            "node_id": "MDEyOlJlbGVhc2VBc3NldDU3NjY2NzE=",
+            "name": "punt-cli-linux-amd64",
+            "label": "",
+            "uploader": {
+              "login": "b1naryth1ef",
+              "id": 599433,
+              "node_id": "MDQ6VXNlcjU5OTQzMw==",
+              "gravatar_id": "",
+              "url": "https://api.github.com/users/b1naryth1ef",
+              "type": "User",
+              "site_admin": false
+            },
+            "content_type": "application/octet-stream",
+            "state": "uploaded",
+            "size": 7032218,
+            "download_count": 22,
+            "created_at": "2018-01-03T00:04:25Z",
+            "updated_at": "2018-01-03T00:04:26Z"
+          },
+          {
+            "url": "https://api.github.com/repos/discord/punt/releases/assets/5766672",
+            "id": 5766672,
+            "node_id": "MDEyOlJlbGVhc2VBc3NldDU3NjY2NzI=",
+            "name": "puntd-darwin-amd64",
+            "label": "",
+            "uploader": {
+              "login": "b1naryth1ef",
+              "id": 599433,
+              "node_id": "MDQ6VXNlcjU5OTQzMw==",
+              "gravatar_id": "",
+              "url": "https://api.github.com/users/b1naryth1ef",
+              "type": "User",
+              "site_admin": false
+            },
+            "content_type": "application/octet-stream",
+            "state": "uploaded",
+            "size": 11514752,
+            "download_count": 21,
+            "created_at": "2018-01-03T00:04:26Z",
+            "updated_at": "2018-01-03T00:04:27Z"
+          },
+          {
+            "url": "https://api.github.com/repos/discord/punt/releases/assets/5766670",
+            "id": 5766670,
+            "node_id": "MDEyOlJlbGVhc2VBc3NldDU3NjY2NzA=",
+            "name": "puntd-linux-amd64",
+            "label": "",
+            "uploader": {
+              "login": "b1naryth1ef",
+              "id": 599433,
+              "node_id": "MDQ6VXNlcjU5OTQzMw==",
+              "gravatar_id": "",
+              "url": "https://api.github.com/users/b1naryth1ef",
+              "type": "User",
+              "site_admin": false
+            },
+            "content_type": "application/octet-stream",
+            "state": "uploaded",
+            "size": 11506073,
+            "download_count": 22,
+            "created_at": "2018-01-03T00:04:24Z",
+            "updated_at": "2018-01-03T00:04:24Z"
+          }
+        ],
+        "body": null
+      }
+    ],
     "issues": [
       {
         "url": "https://api.github.com/repos/discord/punt/issues/11",

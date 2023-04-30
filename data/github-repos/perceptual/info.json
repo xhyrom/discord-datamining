@@ -57,24 +57,7 @@
     "triage": false,
     "pull": false
   },
-  "branches": [
-    {
-      "name": "gh-pages",
-      "commit": {
-        "sha": "f084e31d28496a6e51d8dd3981b28b939f148378",
-        "url": "https://api.github.com/repos/discord/perceptual/commits/f084e31d28496a6e51d8dd3981b28b939f148378"
-      },
-      "protected": false
-    },
-    {
-      "name": "master",
-      "commit": {
-        "sha": "b797bf0e1ea018396bca743a950b0272ee2c6794",
-        "url": "https://api.github.com/repos/discord/perceptual/commits/b797bf0e1ea018396bca743a950b0272ee2c6794"
-      },
-      "protected": false
-    }
-  ],
+  "branches": [],
   "last5": {
     "commits": [
       {
