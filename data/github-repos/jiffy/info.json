@@ -582,6 +582,954 @@
         "state_reason": null
       }
     ],
-    "pullRequests": []
+    "pullRequests": [
+      {
+        "url": "https://api.github.com/repos/discord/jiffy/pulls/9",
+        "id": 700441812,
+        "node_id": "MDExOlB1bGxSZXF1ZXN0NzAwNDQxODEy",
+        "number": 9,
+        "state": "closed",
+        "locked": false,
+        "title": "Nawrassedahman",
+        "user": {
+          "login": "NawrasseDahman",
+          "id": 83258662,
+          "node_id": "MDQ6VXNlcjgzMjU4NjYy",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/NawrasseDahman",
+          "type": "User",
+          "site_admin": false
+        },
+        "body": "Read My Pull Request It Very Important Because I Fixed Your Git ignore Tab",
+        "created_at": "2021-07-30T16:52:37Z",
+        "updated_at": "2021-08-03T22:56:34Z",
+        "closed_at": "2021-08-03T22:56:34Z",
+        "merged_at": null,
+        "merge_commit_sha": "4f53c5448ae606d98c18c220258a138f8a5652ae",
+        "assignee": null,
+        "assignees": [],
+        "requested_reviewers": [],
+        "requested_teams": [],
+        "labels": [],
+        "milestone": null,
+        "draft": false,
+        "head": {
+          "label": "NawrasseDahman:nawrassedahman",
+          "ref": "nawrassedahman",
+          "sha": "4fbeb51298a34ef4f204678aeeafee3884c13e64",
+          "user": {
+            "login": "NawrasseDahman",
+            "id": 83258662,
+            "node_id": "MDQ6VXNlcjgzMjU4NjYy",
+            "gravatar_id": "",
+            "url": "https://api.github.com/users/NawrasseDahman",
+            "type": "User",
+            "site_admin": false
+          },
+          "repo": null
+        },
+        "base": {
+          "label": "discord:master",
+          "ref": "master",
+          "sha": "39d3207f1c1d65b594c2c3188e99ea10f9029667",
+          "user": {
+            "login": "discord",
+            "id": 1965106,
+            "node_id": "MDEyOk9yZ2FuaXphdGlvbjE5NjUxMDY=",
+            "gravatar_id": "",
+            "url": "https://api.github.com/users/discord",
+            "type": "Organization",
+            "site_admin": false
+          },
+          "repo": {
+            "id": 51033256,
+            "node_id": "MDEwOlJlcG9zaXRvcnk1MTAzMzI1Ng==",
+            "name": "jiffy",
+            "full_name": "discord/jiffy",
+            "private": false,
+            "owner": {
+              "login": "discord",
+              "id": 1965106,
+              "node_id": "MDEyOk9yZ2FuaXphdGlvbjE5NjUxMDY=",
+              "gravatar_id": "",
+              "url": "https://api.github.com/users/discord",
+              "type": "Organization",
+              "site_admin": false
+            },
+            "description": "JSON NIFs for Erlang",
+            "fork": true,
+            "url": "https://api.github.com/repos/discord/jiffy",
+            "created_at": "2016-02-03T21:52:05Z",
+            "updated_at": "2022-05-17T20:03:15Z",
+            "pushed_at": "2023-04-26T20:55:31Z",
+            "homepage": "",
+            "size": 3784,
+            "stargazers_count": 6,
+            "watchers_count": 6,
+            "language": "C++",
+            "has_issues": false,
+            "has_projects": true,
+            "has_downloads": true,
+            "has_wiki": true,
+            "has_pages": false,
+            "has_discussions": false,
+            "forks_count": 4,
+            "archived": false,
+            "disabled": false,
+            "open_issues_count": 2,
+            "license": {
+              "key": "other",
+              "name": "Other",
+              "spdx_id": "NOASSERTION",
+              "url": null,
+              "node_id": "MDc6TGljZW5zZTA="
+            },
+            "allow_forking": true,
+            "is_template": false,
+            "web_commit_signoff_required": false,
+            "topics": [],
+            "visibility": "public",
+            "forks": 4,
+            "open_issues": 2,
+            "watchers": 6,
+            "default_branch": "master"
+          }
+        },
+        "_links": {
+          "self": {
+            "href": "https://api.github.com/repos/discord/jiffy/pulls/9"
+          },
+          "html": {
+            "href": "https://github.com/discord/jiffy/pull/9"
+          },
+          "issue": {
+            "href": "https://api.github.com/repos/discord/jiffy/issues/9"
+          },
+          "comments": {
+            "href": "https://api.github.com/repos/discord/jiffy/issues/9/comments"
+          },
+          "review_comments": {
+            "href": "https://api.github.com/repos/discord/jiffy/pulls/9/comments"
+          },
+          "review_comment": {
+            "href": "https://api.github.com/repos/discord/jiffy/pulls/comments{/number}"
+          },
+          "commits": {
+            "href": "https://api.github.com/repos/discord/jiffy/pulls/9/commits"
+          },
+          "statuses": {
+            "href": "https://api.github.com/repos/discord/jiffy/statuses/4fbeb51298a34ef4f204678aeeafee3884c13e64"
+          }
+        },
+        "author_association": "NONE",
+        "auto_merge": null,
+        "active_lock_reason": null
+      },
+      {
+        "url": "https://api.github.com/repos/discord/jiffy/pulls/8",
+        "id": 670594560,
+        "node_id": "MDExOlB1bGxSZXF1ZXN0NjcwNTk0NTYw",
+        "number": 8,
+        "state": "closed",
+        "locked": false,
+        "title": "dont try to enable lto at all",
+        "user": {
+          "login": "ypisetsky",
+          "id": 287854,
+          "node_id": "MDQ6VXNlcjI4Nzg1NA==",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/ypisetsky",
+          "type": "User",
+          "site_admin": false
+        },
+        "body": "This is causing some issues for some developers where they can compile files\r\nwith LTO, but linking fails. Our usage of JSON is small enough that the small\r\noptimization loss isn't a big deal.",
+        "created_at": "2021-06-15T17:08:13Z",
+        "updated_at": "2022-04-08T20:17:51Z",
+        "closed_at": "2021-06-15T21:10:49Z",
+        "merged_at": "2021-06-15T21:10:49Z",
+        "merge_commit_sha": "39d3207f1c1d65b594c2c3188e99ea10f9029667",
+        "assignee": null,
+        "assignees": [],
+        "requested_reviewers": [
+          {
+            "login": "NorthIsUp",
+            "id": 122612,
+            "node_id": "MDQ6VXNlcjEyMjYxMg==",
+            "gravatar_id": "",
+            "url": "https://api.github.com/users/NorthIsUp",
+            "type": "User",
+            "site_admin": false
+          }
+        ],
+        "requested_teams": [],
+        "labels": [],
+        "milestone": null,
+        "draft": false,
+        "head": {
+          "label": "discord:no_lto",
+          "ref": "no_lto",
+          "sha": "0b2f2e5db61cf4e5d7d7073fb610b52a96f4485b",
+          "user": {
+            "login": "discord",
+            "id": 1965106,
+            "node_id": "MDEyOk9yZ2FuaXphdGlvbjE5NjUxMDY=",
+            "gravatar_id": "",
+            "url": "https://api.github.com/users/discord",
+            "type": "Organization",
+            "site_admin": false
+          },
+          "repo": {
+            "id": 51033256,
+            "node_id": "MDEwOlJlcG9zaXRvcnk1MTAzMzI1Ng==",
+            "name": "jiffy",
+            "full_name": "discord/jiffy",
+            "private": false,
+            "owner": {
+              "login": "discord",
+              "id": 1965106,
+              "node_id": "MDEyOk9yZ2FuaXphdGlvbjE5NjUxMDY=",
+              "gravatar_id": "",
+              "url": "https://api.github.com/users/discord",
+              "type": "Organization",
+              "site_admin": false
+            },
+            "description": "JSON NIFs for Erlang",
+            "fork": true,
+            "url": "https://api.github.com/repos/discord/jiffy",
+            "created_at": "2016-02-03T21:52:05Z",
+            "updated_at": "2022-05-17T20:03:15Z",
+            "pushed_at": "2023-04-26T20:55:31Z",
+            "homepage": "",
+            "size": 3784,
+            "stargazers_count": 6,
+            "watchers_count": 6,
+            "language": "C++",
+            "has_issues": false,
+            "has_projects": true,
+            "has_downloads": true,
+            "has_wiki": true,
+            "has_pages": false,
+            "has_discussions": false,
+            "forks_count": 4,
+            "archived": false,
+            "disabled": false,
+            "open_issues_count": 2,
+            "license": {
+              "key": "other",
+              "name": "Other",
+              "spdx_id": "NOASSERTION",
+              "url": null,
+              "node_id": "MDc6TGljZW5zZTA="
+            },
+            "allow_forking": true,
+            "is_template": false,
+            "web_commit_signoff_required": false,
+            "topics": [],
+            "visibility": "public",
+            "forks": 4,
+            "open_issues": 2,
+            "watchers": 6,
+            "default_branch": "master"
+          }
+        },
+        "base": {
+          "label": "discord:master",
+          "ref": "master",
+          "sha": "a71845ce42f5e4f4609a019979919a0b3a7674f9",
+          "user": {
+            "login": "discord",
+            "id": 1965106,
+            "node_id": "MDEyOk9yZ2FuaXphdGlvbjE5NjUxMDY=",
+            "gravatar_id": "",
+            "url": "https://api.github.com/users/discord",
+            "type": "Organization",
+            "site_admin": false
+          },
+          "repo": {
+            "id": 51033256,
+            "node_id": "MDEwOlJlcG9zaXRvcnk1MTAzMzI1Ng==",
+            "name": "jiffy",
+            "full_name": "discord/jiffy",
+            "private": false,
+            "owner": {
+              "login": "discord",
+              "id": 1965106,
+              "node_id": "MDEyOk9yZ2FuaXphdGlvbjE5NjUxMDY=",
+              "gravatar_id": "",
+              "url": "https://api.github.com/users/discord",
+              "type": "Organization",
+              "site_admin": false
+            },
+            "description": "JSON NIFs for Erlang",
+            "fork": true,
+            "url": "https://api.github.com/repos/discord/jiffy",
+            "created_at": "2016-02-03T21:52:05Z",
+            "updated_at": "2022-05-17T20:03:15Z",
+            "pushed_at": "2023-04-26T20:55:31Z",
+            "homepage": "",
+            "size": 3784,
+            "stargazers_count": 6,
+            "watchers_count": 6,
+            "language": "C++",
+            "has_issues": false,
+            "has_projects": true,
+            "has_downloads": true,
+            "has_wiki": true,
+            "has_pages": false,
+            "has_discussions": false,
+            "forks_count": 4,
+            "archived": false,
+            "disabled": false,
+            "open_issues_count": 2,
+            "license": {
+              "key": "other",
+              "name": "Other",
+              "spdx_id": "NOASSERTION",
+              "url": null,
+              "node_id": "MDc6TGljZW5zZTA="
+            },
+            "allow_forking": true,
+            "is_template": false,
+            "web_commit_signoff_required": false,
+            "topics": [],
+            "visibility": "public",
+            "forks": 4,
+            "open_issues": 2,
+            "watchers": 6,
+            "default_branch": "master"
+          }
+        },
+        "_links": {
+          "self": {
+            "href": "https://api.github.com/repos/discord/jiffy/pulls/8"
+          },
+          "html": {
+            "href": "https://github.com/discord/jiffy/pull/8"
+          },
+          "issue": {
+            "href": "https://api.github.com/repos/discord/jiffy/issues/8"
+          },
+          "comments": {
+            "href": "https://api.github.com/repos/discord/jiffy/issues/8/comments"
+          },
+          "review_comments": {
+            "href": "https://api.github.com/repos/discord/jiffy/pulls/8/comments"
+          },
+          "review_comment": {
+            "href": "https://api.github.com/repos/discord/jiffy/pulls/comments{/number}"
+          },
+          "commits": {
+            "href": "https://api.github.com/repos/discord/jiffy/pulls/8/commits"
+          },
+          "statuses": {
+            "href": "https://api.github.com/repos/discord/jiffy/statuses/0b2f2e5db61cf4e5d7d7073fb610b52a96f4485b"
+          }
+        },
+        "author_association": "NONE",
+        "auto_merge": null,
+        "active_lock_reason": null
+      },
+      {
+        "url": "https://api.github.com/repos/discord/jiffy/pulls/7",
+        "id": 668683679,
+        "node_id": "MDExOlB1bGxSZXF1ZXN0NjY4NjgzNjc5",
+        "number": 7,
+        "state": "closed",
+        "locked": false,
+        "title": "more options for encode()",
+        "user": {
+          "login": "brian-armstrong-discord",
+          "id": 25939803,
+          "node_id": "MDQ6VXNlcjI1OTM5ODAz",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/brian-armstrong-discord",
+          "type": "User",
+          "site_admin": false
+        },
+        "body": "",
+        "created_at": "2021-06-12T01:09:36Z",
+        "updated_at": "2021-06-14T18:49:46Z",
+        "closed_at": "2021-06-14T18:49:35Z",
+        "merged_at": "2021-06-14T18:49:35Z",
+        "merge_commit_sha": "a71845ce42f5e4f4609a019979919a0b3a7674f9",
+        "assignee": null,
+        "assignees": [],
+        "requested_reviewers": [],
+        "requested_teams": [],
+        "labels": [],
+        "milestone": null,
+        "draft": false,
+        "head": {
+          "label": "discord:bugfix/jiffy_encode_option_typespec",
+          "ref": "bugfix/jiffy_encode_option_typespec",
+          "sha": "f31f2866a63bcac643e23ab30d3dfa8b388dacb2",
+          "user": {
+            "login": "discord",
+            "id": 1965106,
+            "node_id": "MDEyOk9yZ2FuaXphdGlvbjE5NjUxMDY=",
+            "gravatar_id": "",
+            "url": "https://api.github.com/users/discord",
+            "type": "Organization",
+            "site_admin": false
+          },
+          "repo": {
+            "id": 51033256,
+            "node_id": "MDEwOlJlcG9zaXRvcnk1MTAzMzI1Ng==",
+            "name": "jiffy",
+            "full_name": "discord/jiffy",
+            "private": false,
+            "owner": {
+              "login": "discord",
+              "id": 1965106,
+              "node_id": "MDEyOk9yZ2FuaXphdGlvbjE5NjUxMDY=",
+              "gravatar_id": "",
+              "url": "https://api.github.com/users/discord",
+              "type": "Organization",
+              "site_admin": false
+            },
+            "description": "JSON NIFs for Erlang",
+            "fork": true,
+            "url": "https://api.github.com/repos/discord/jiffy",
+            "created_at": "2016-02-03T21:52:05Z",
+            "updated_at": "2022-05-17T20:03:15Z",
+            "pushed_at": "2023-04-26T20:55:31Z",
+            "homepage": "",
+            "size": 3784,
+            "stargazers_count": 6,
+            "watchers_count": 6,
+            "language": "C++",
+            "has_issues": false,
+            "has_projects": true,
+            "has_downloads": true,
+            "has_wiki": true,
+            "has_pages": false,
+            "has_discussions": false,
+            "forks_count": 4,
+            "archived": false,
+            "disabled": false,
+            "open_issues_count": 2,
+            "license": {
+              "key": "other",
+              "name": "Other",
+              "spdx_id": "NOASSERTION",
+              "url": null,
+              "node_id": "MDc6TGljZW5zZTA="
+            },
+            "allow_forking": true,
+            "is_template": false,
+            "web_commit_signoff_required": false,
+            "topics": [],
+            "visibility": "public",
+            "forks": 4,
+            "open_issues": 2,
+            "watchers": 6,
+            "default_branch": "master"
+          }
+        },
+        "base": {
+          "label": "discord:master",
+          "ref": "master",
+          "sha": "310585da0e6a2cf1f5faf42753ee598f8e28cfad",
+          "user": {
+            "login": "discord",
+            "id": 1965106,
+            "node_id": "MDEyOk9yZ2FuaXphdGlvbjE5NjUxMDY=",
+            "gravatar_id": "",
+            "url": "https://api.github.com/users/discord",
+            "type": "Organization",
+            "site_admin": false
+          },
+          "repo": {
+            "id": 51033256,
+            "node_id": "MDEwOlJlcG9zaXRvcnk1MTAzMzI1Ng==",
+            "name": "jiffy",
+            "full_name": "discord/jiffy",
+            "private": false,
+            "owner": {
+              "login": "discord",
+              "id": 1965106,
+              "node_id": "MDEyOk9yZ2FuaXphdGlvbjE5NjUxMDY=",
+              "gravatar_id": "",
+              "url": "https://api.github.com/users/discord",
+              "type": "Organization",
+              "site_admin": false
+            },
+            "description": "JSON NIFs for Erlang",
+            "fork": true,
+            "url": "https://api.github.com/repos/discord/jiffy",
+            "created_at": "2016-02-03T21:52:05Z",
+            "updated_at": "2022-05-17T20:03:15Z",
+            "pushed_at": "2023-04-26T20:55:31Z",
+            "homepage": "",
+            "size": 3784,
+            "stargazers_count": 6,
+            "watchers_count": 6,
+            "language": "C++",
+            "has_issues": false,
+            "has_projects": true,
+            "has_downloads": true,
+            "has_wiki": true,
+            "has_pages": false,
+            "has_discussions": false,
+            "forks_count": 4,
+            "archived": false,
+            "disabled": false,
+            "open_issues_count": 2,
+            "license": {
+              "key": "other",
+              "name": "Other",
+              "spdx_id": "NOASSERTION",
+              "url": null,
+              "node_id": "MDc6TGljZW5zZTA="
+            },
+            "allow_forking": true,
+            "is_template": false,
+            "web_commit_signoff_required": false,
+            "topics": [],
+            "visibility": "public",
+            "forks": 4,
+            "open_issues": 2,
+            "watchers": 6,
+            "default_branch": "master"
+          }
+        },
+        "_links": {
+          "self": {
+            "href": "https://api.github.com/repos/discord/jiffy/pulls/7"
+          },
+          "html": {
+            "href": "https://github.com/discord/jiffy/pull/7"
+          },
+          "issue": {
+            "href": "https://api.github.com/repos/discord/jiffy/issues/7"
+          },
+          "comments": {
+            "href": "https://api.github.com/repos/discord/jiffy/issues/7/comments"
+          },
+          "review_comments": {
+            "href": "https://api.github.com/repos/discord/jiffy/pulls/7/comments"
+          },
+          "review_comment": {
+            "href": "https://api.github.com/repos/discord/jiffy/pulls/comments{/number}"
+          },
+          "commits": {
+            "href": "https://api.github.com/repos/discord/jiffy/pulls/7/commits"
+          },
+          "statuses": {
+            "href": "https://api.github.com/repos/discord/jiffy/statuses/f31f2866a63bcac643e23ab30d3dfa8b388dacb2"
+          }
+        },
+        "author_association": "NONE",
+        "auto_merge": null,
+        "active_lock_reason": null
+      },
+      {
+        "url": "https://api.github.com/repos/discord/jiffy/pulls/6",
+        "id": 649584982,
+        "node_id": "MDExOlB1bGxSZXF1ZXN0NjQ5NTg0OTgy",
+        "number": 6,
+        "state": "closed",
+        "locked": false,
+        "title": "Merge 1.0.8",
+        "user": {
+          "login": "ypisetsky",
+          "id": 287854,
+          "node_id": "MDQ6VXNlcjI4Nzg1NA==",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/ypisetsky",
+          "type": "User",
+          "site_admin": false
+        },
+        "body": "This is https://github.com/discord/jiffy/pull/5 just in the other direction. I had a few manual merge bits (enc_long is the most interesting of those).",
+        "created_at": "2021-05-21T01:20:13Z",
+        "updated_at": "2021-05-22T00:40:37Z",
+        "closed_at": "2021-05-22T00:40:37Z",
+        "merged_at": "2021-05-22T00:40:37Z",
+        "merge_commit_sha": "4c2009a54e840eeac823eecf902e52bf38bd0ec4",
+        "assignee": null,
+        "assignees": [],
+        "requested_reviewers": [],
+        "requested_teams": [],
+        "labels": [],
+        "milestone": null,
+        "draft": false,
+        "head": {
+          "label": "discord:merge-1.0.8",
+          "ref": "merge-1.0.8",
+          "sha": "a08c584f84303d4d72a61e4bac5e58fb5cd645b8",
+          "user": {
+            "login": "discord",
+            "id": 1965106,
+            "node_id": "MDEyOk9yZ2FuaXphdGlvbjE5NjUxMDY=",
+            "gravatar_id": "",
+            "url": "https://api.github.com/users/discord",
+            "type": "Organization",
+            "site_admin": false
+          },
+          "repo": {
+            "id": 51033256,
+            "node_id": "MDEwOlJlcG9zaXRvcnk1MTAzMzI1Ng==",
+            "name": "jiffy",
+            "full_name": "discord/jiffy",
+            "private": false,
+            "owner": {
+              "login": "discord",
+              "id": 1965106,
+              "node_id": "MDEyOk9yZ2FuaXphdGlvbjE5NjUxMDY=",
+              "gravatar_id": "",
+              "url": "https://api.github.com/users/discord",
+              "type": "Organization",
+              "site_admin": false
+            },
+            "description": "JSON NIFs for Erlang",
+            "fork": true,
+            "url": "https://api.github.com/repos/discord/jiffy",
+            "created_at": "2016-02-03T21:52:05Z",
+            "updated_at": "2022-05-17T20:03:15Z",
+            "pushed_at": "2023-04-26T20:55:31Z",
+            "homepage": "",
+            "size": 3784,
+            "stargazers_count": 6,
+            "watchers_count": 6,
+            "language": "C++",
+            "has_issues": false,
+            "has_projects": true,
+            "has_downloads": true,
+            "has_wiki": true,
+            "has_pages": false,
+            "has_discussions": false,
+            "forks_count": 4,
+            "archived": false,
+            "disabled": false,
+            "open_issues_count": 2,
+            "license": {
+              "key": "other",
+              "name": "Other",
+              "spdx_id": "NOASSERTION",
+              "url": null,
+              "node_id": "MDc6TGljZW5zZTA="
+            },
+            "allow_forking": true,
+            "is_template": false,
+            "web_commit_signoff_required": false,
+            "topics": [],
+            "visibility": "public",
+            "forks": 4,
+            "open_issues": 2,
+            "watchers": 6,
+            "default_branch": "master"
+          }
+        },
+        "base": {
+          "label": "discord:upstream-1.0.8",
+          "ref": "upstream-1.0.8",
+          "sha": "effc3c9a68478b692523e61b308ad9257c1ddeca",
+          "user": {
+            "login": "discord",
+            "id": 1965106,
+            "node_id": "MDEyOk9yZ2FuaXphdGlvbjE5NjUxMDY=",
+            "gravatar_id": "",
+            "url": "https://api.github.com/users/discord",
+            "type": "Organization",
+            "site_admin": false
+          },
+          "repo": {
+            "id": 51033256,
+            "node_id": "MDEwOlJlcG9zaXRvcnk1MTAzMzI1Ng==",
+            "name": "jiffy",
+            "full_name": "discord/jiffy",
+            "private": false,
+            "owner": {
+              "login": "discord",
+              "id": 1965106,
+              "node_id": "MDEyOk9yZ2FuaXphdGlvbjE5NjUxMDY=",
+              "gravatar_id": "",
+              "url": "https://api.github.com/users/discord",
+              "type": "Organization",
+              "site_admin": false
+            },
+            "description": "JSON NIFs for Erlang",
+            "fork": true,
+            "url": "https://api.github.com/repos/discord/jiffy",
+            "created_at": "2016-02-03T21:52:05Z",
+            "updated_at": "2022-05-17T20:03:15Z",
+            "pushed_at": "2023-04-26T20:55:31Z",
+            "homepage": "",
+            "size": 3784,
+            "stargazers_count": 6,
+            "watchers_count": 6,
+            "language": "C++",
+            "has_issues": false,
+            "has_projects": true,
+            "has_downloads": true,
+            "has_wiki": true,
+            "has_pages": false,
+            "has_discussions": false,
+            "forks_count": 4,
+            "archived": false,
+            "disabled": false,
+            "open_issues_count": 2,
+            "license": {
+              "key": "other",
+              "name": "Other",
+              "spdx_id": "NOASSERTION",
+              "url": null,
+              "node_id": "MDc6TGljZW5zZTA="
+            },
+            "allow_forking": true,
+            "is_template": false,
+            "web_commit_signoff_required": false,
+            "topics": [],
+            "visibility": "public",
+            "forks": 4,
+            "open_issues": 2,
+            "watchers": 6,
+            "default_branch": "master"
+          }
+        },
+        "_links": {
+          "self": {
+            "href": "https://api.github.com/repos/discord/jiffy/pulls/6"
+          },
+          "html": {
+            "href": "https://github.com/discord/jiffy/pull/6"
+          },
+          "issue": {
+            "href": "https://api.github.com/repos/discord/jiffy/issues/6"
+          },
+          "comments": {
+            "href": "https://api.github.com/repos/discord/jiffy/issues/6/comments"
+          },
+          "review_comments": {
+            "href": "https://api.github.com/repos/discord/jiffy/pulls/6/comments"
+          },
+          "review_comment": {
+            "href": "https://api.github.com/repos/discord/jiffy/pulls/comments{/number}"
+          },
+          "commits": {
+            "href": "https://api.github.com/repos/discord/jiffy/pulls/6/commits"
+          },
+          "statuses": {
+            "href": "https://api.github.com/repos/discord/jiffy/statuses/a08c584f84303d4d72a61e4bac5e58fb5cd645b8"
+          }
+        },
+        "author_association": "NONE",
+        "auto_merge": null,
+        "active_lock_reason": null
+      },
+      {
+        "url": "https://api.github.com/repos/discord/jiffy/pulls/5",
+        "id": 649568056,
+        "node_id": "MDExOlB1bGxSZXF1ZXN0NjQ5NTY4MDU2",
+        "number": 5,
+        "state": "closed",
+        "locked": false,
+        "title": "Merge davisp/1.0.8",
+        "user": {
+          "login": "ypisetsky",
+          "id": 287854,
+          "node_id": "MDQ6VXNlcjI4Nzg1NA==",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/ypisetsky",
+          "type": "User",
+          "site_admin": false
+        },
+        "body": "This catches this repo up to upstream's 1.0.8 tag (around 4 years worth of changes/fixes). It maintains the patches that existed from before. I'm not convinced a merge commit is the best way to do this, but open to ideas.",
+        "created_at": "2021-05-21T00:35:02Z",
+        "updated_at": "2021-05-29T00:10:05Z",
+        "closed_at": "2021-05-29T00:10:05Z",
+        "merged_at": null,
+        "merge_commit_sha": "4a96162c0c7bc8dff02b780f75494885ebc92a63",
+        "assignee": null,
+        "assignees": [],
+        "requested_reviewers": [
+          {
+            "login": "mezz",
+            "id": 916092,
+            "node_id": "MDQ6VXNlcjkxNjA5Mg==",
+            "gravatar_id": "",
+            "url": "https://api.github.com/users/mezz",
+            "type": "User",
+            "site_admin": false
+          },
+          {
+            "login": "iredelmeier",
+            "id": 3298606,
+            "node_id": "MDQ6VXNlcjMyOTg2MDY=",
+            "gravatar_id": "",
+            "url": "https://api.github.com/users/iredelmeier",
+            "type": "User",
+            "site_admin": false
+          }
+        ],
+        "requested_teams": [],
+        "labels": [],
+        "milestone": null,
+        "draft": false,
+        "head": {
+          "label": "discord:merge-1.0.8",
+          "ref": "merge-1.0.8",
+          "sha": "a08c584f84303d4d72a61e4bac5e58fb5cd645b8",
+          "user": {
+            "login": "discord",
+            "id": 1965106,
+            "node_id": "MDEyOk9yZ2FuaXphdGlvbjE5NjUxMDY=",
+            "gravatar_id": "",
+            "url": "https://api.github.com/users/discord",
+            "type": "Organization",
+            "site_admin": false
+          },
+          "repo": {
+            "id": 51033256,
+            "node_id": "MDEwOlJlcG9zaXRvcnk1MTAzMzI1Ng==",
+            "name": "jiffy",
+            "full_name": "discord/jiffy",
+            "private": false,
+            "owner": {
+              "login": "discord",
+              "id": 1965106,
+              "node_id": "MDEyOk9yZ2FuaXphdGlvbjE5NjUxMDY=",
+              "gravatar_id": "",
+              "url": "https://api.github.com/users/discord",
+              "type": "Organization",
+              "site_admin": false
+            },
+            "description": "JSON NIFs for Erlang",
+            "fork": true,
+            "url": "https://api.github.com/repos/discord/jiffy",
+            "created_at": "2016-02-03T21:52:05Z",
+            "updated_at": "2022-05-17T20:03:15Z",
+            "pushed_at": "2023-04-26T20:55:31Z",
+            "homepage": "",
+            "size": 3784,
+            "stargazers_count": 6,
+            "watchers_count": 6,
+            "language": "C++",
+            "has_issues": false,
+            "has_projects": true,
+            "has_downloads": true,
+            "has_wiki": true,
+            "has_pages": false,
+            "has_discussions": false,
+            "forks_count": 4,
+            "archived": false,
+            "disabled": false,
+            "open_issues_count": 2,
+            "license": {
+              "key": "other",
+              "name": "Other",
+              "spdx_id": "NOASSERTION",
+              "url": null,
+              "node_id": "MDc6TGljZW5zZTA="
+            },
+            "allow_forking": true,
+            "is_template": false,
+            "web_commit_signoff_required": false,
+            "topics": [],
+            "visibility": "public",
+            "forks": 4,
+            "open_issues": 2,
+            "watchers": 6,
+            "default_branch": "master"
+          }
+        },
+        "base": {
+          "label": "discord:master",
+          "ref": "master",
+          "sha": "310585da0e6a2cf1f5faf42753ee598f8e28cfad",
+          "user": {
+            "login": "discord",
+            "id": 1965106,
+            "node_id": "MDEyOk9yZ2FuaXphdGlvbjE5NjUxMDY=",
+            "gravatar_id": "",
+            "url": "https://api.github.com/users/discord",
+            "type": "Organization",
+            "site_admin": false
+          },
+          "repo": {
+            "id": 51033256,
+            "node_id": "MDEwOlJlcG9zaXRvcnk1MTAzMzI1Ng==",
+            "name": "jiffy",
+            "full_name": "discord/jiffy",
+            "private": false,
+            "owner": {
+              "login": "discord",
+              "id": 1965106,
+              "node_id": "MDEyOk9yZ2FuaXphdGlvbjE5NjUxMDY=",
+              "gravatar_id": "",
+              "url": "https://api.github.com/users/discord",
+              "type": "Organization",
+              "site_admin": false
+            },
+            "description": "JSON NIFs for Erlang",
+            "fork": true,
+            "url": "https://api.github.com/repos/discord/jiffy",
+            "created_at": "2016-02-03T21:52:05Z",
+            "updated_at": "2022-05-17T20:03:15Z",
+            "pushed_at": "2023-04-26T20:55:31Z",
+            "homepage": "",
+            "size": 3784,
+            "stargazers_count": 6,
+            "watchers_count": 6,
+            "language": "C++",
+            "has_issues": false,
+            "has_projects": true,
+            "has_downloads": true,
+            "has_wiki": true,
+            "has_pages": false,
+            "has_discussions": false,
+            "forks_count": 4,
+            "archived": false,
+            "disabled": false,
+            "open_issues_count": 2,
+            "license": {
+              "key": "other",
+              "name": "Other",
+              "spdx_id": "NOASSERTION",
+              "url": null,
+              "node_id": "MDc6TGljZW5zZTA="
+            },
+            "allow_forking": true,
+            "is_template": false,
+            "web_commit_signoff_required": false,
+            "topics": [],
+            "visibility": "public",
+            "forks": 4,
+            "open_issues": 2,
+            "watchers": 6,
+            "default_branch": "master"
+          }
+        },
+        "_links": {
+          "self": {
+            "href": "https://api.github.com/repos/discord/jiffy/pulls/5"
+          },
+          "html": {
+            "href": "https://github.com/discord/jiffy/pull/5"
+          },
+          "issue": {
+            "href": "https://api.github.com/repos/discord/jiffy/issues/5"
+          },
+          "comments": {
+            "href": "https://api.github.com/repos/discord/jiffy/issues/5/comments"
+          },
+          "review_comments": {
+            "href": "https://api.github.com/repos/discord/jiffy/pulls/5/comments"
+          },
+          "review_comment": {
+            "href": "https://api.github.com/repos/discord/jiffy/pulls/comments{/number}"
+          },
+          "commits": {
+            "href": "https://api.github.com/repos/discord/jiffy/pulls/5/commits"
+          },
+          "statuses": {
+            "href": "https://api.github.com/repos/discord/jiffy/statuses/a08c584f84303d4d72a61e4bac5e58fb5cd645b8"
+          }
+        },
+        "author_association": "NONE",
+        "auto_merge": null,
+        "active_lock_reason": null
+      }
+    ]
   }
 }
