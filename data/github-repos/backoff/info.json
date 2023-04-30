@@ -57,24 +57,7 @@
     "triage": false,
     "pull": false
   },
-  "branches": [
-    {
-      "name": "feature/upgrade_proper_1.2",
-      "commit": {
-        "sha": "c096c86ba751fc53f74410e7ed6478dab4722234",
-        "url": "https://api.github.com/repos/discord/backoff/commits/c096c86ba751fc53f74410e7ed6478dab4722234"
-      },
-      "protected": false
-    },
-    {
-      "name": "master",
-      "commit": {
-        "sha": "cc6160ba8f15204db4c23618dfc93932535f1d64",
-        "url": "https://api.github.com/repos/discord/backoff/commits/cc6160ba8f15204db4c23618dfc93932535f1d64"
-      },
-      "protected": false
-    }
-  ],
+  "branches": [],
   "last5": {
     "commits": [
       {
@@ -403,6 +386,201 @@
         "state_reason": null
       }
     ],
-    "pullRequests": []
+    "pullRequests": [
+      {
+        "url": "https://api.github.com/repos/discord/backoff/pulls/1",
+        "id": 108437159,
+        "node_id": "MDExOlB1bGxSZXF1ZXN0MTA4NDM3MTU5",
+        "number": 1,
+        "state": "open",
+        "locked": false,
+        "title": "upgrade to proper v1.2",
+        "user": {
+          "login": "brian-armstrong-discord",
+          "id": 25939803,
+          "node_id": "MDQ6VXNlcjI1OTM5ODAz",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/brian-armstrong-discord",
+          "type": "User",
+          "site_admin": false
+        },
+        "body": "this has github refs for now since hex.pm doesn't have the relevant\r\nversions yet",
+        "created_at": "2017-02-28T23:41:32Z",
+        "updated_at": "2017-02-28T23:41:32Z",
+        "closed_at": null,
+        "merged_at": null,
+        "merge_commit_sha": "248384de2c710f2d4d1962e75d743712a7c92ea4",
+        "assignee": null,
+        "assignees": [],
+        "requested_reviewers": [],
+        "requested_teams": [],
+        "labels": [],
+        "milestone": null,
+        "draft": false,
+        "head": {
+          "label": "discord:feature/upgrade_proper_1.2",
+          "ref": "feature/upgrade_proper_1.2",
+          "sha": "c096c86ba751fc53f74410e7ed6478dab4722234",
+          "user": {
+            "login": "discord",
+            "id": 1965106,
+            "node_id": "MDEyOk9yZ2FuaXphdGlvbjE5NjUxMDY=",
+            "gravatar_id": "",
+            "url": "https://api.github.com/users/discord",
+            "type": "Organization",
+            "site_admin": false
+          },
+          "repo": {
+            "id": 83488698,
+            "node_id": "MDEwOlJlcG9zaXRvcnk4MzQ4ODY5OA==",
+            "name": "backoff",
+            "full_name": "discord/backoff",
+            "private": false,
+            "owner": {
+              "login": "discord",
+              "id": 1965106,
+              "node_id": "MDEyOk9yZ2FuaXphdGlvbjE5NjUxMDY=",
+              "gravatar_id": "",
+              "url": "https://api.github.com/users/discord",
+              "type": "Organization",
+              "site_admin": false
+            },
+            "description": "Simple exponential backoffs in Erlang",
+            "fork": true,
+            "url": "https://api.github.com/repos/discord/backoff",
+            "created_at": "2017-02-28T23:10:43Z",
+            "updated_at": "2021-10-17T10:51:46Z",
+            "pushed_at": "2017-02-28T23:41:33Z",
+            "homepage": null,
+            "size": 171,
+            "stargazers_count": 6,
+            "watchers_count": 6,
+            "language": "Erlang",
+            "has_issues": false,
+            "has_projects": true,
+            "has_downloads": true,
+            "has_wiki": true,
+            "has_pages": false,
+            "has_discussions": false,
+            "forks_count": 4,
+            "archived": false,
+            "disabled": false,
+            "open_issues_count": 1,
+            "license": {
+              "key": "mit",
+              "name": "MIT License",
+              "spdx_id": "MIT",
+              "url": "https://api.github.com/licenses/mit",
+              "node_id": "MDc6TGljZW5zZTEz"
+            },
+            "allow_forking": true,
+            "is_template": false,
+            "web_commit_signoff_required": false,
+            "topics": [],
+            "visibility": "public",
+            "forks": 4,
+            "open_issues": 1,
+            "watchers": 6,
+            "default_branch": "master"
+          }
+        },
+        "base": {
+          "label": "discord:master",
+          "ref": "master",
+          "sha": "cc6160ba8f15204db4c23618dfc93932535f1d64",
+          "user": {
+            "login": "discord",
+            "id": 1965106,
+            "node_id": "MDEyOk9yZ2FuaXphdGlvbjE5NjUxMDY=",
+            "gravatar_id": "",
+            "url": "https://api.github.com/users/discord",
+            "type": "Organization",
+            "site_admin": false
+          },
+          "repo": {
+            "id": 83488698,
+            "node_id": "MDEwOlJlcG9zaXRvcnk4MzQ4ODY5OA==",
+            "name": "backoff",
+            "full_name": "discord/backoff",
+            "private": false,
+            "owner": {
+              "login": "discord",
+              "id": 1965106,
+              "node_id": "MDEyOk9yZ2FuaXphdGlvbjE5NjUxMDY=",
+              "gravatar_id": "",
+              "url": "https://api.github.com/users/discord",
+              "type": "Organization",
+              "site_admin": false
+            },
+            "description": "Simple exponential backoffs in Erlang",
+            "fork": true,
+            "url": "https://api.github.com/repos/discord/backoff",
+            "created_at": "2017-02-28T23:10:43Z",
+            "updated_at": "2021-10-17T10:51:46Z",
+            "pushed_at": "2017-02-28T23:41:33Z",
+            "homepage": null,
+            "size": 171,
+            "stargazers_count": 6,
+            "watchers_count": 6,
+            "language": "Erlang",
+            "has_issues": false,
+            "has_projects": true,
+            "has_downloads": true,
+            "has_wiki": true,
+            "has_pages": false,
+            "has_discussions": false,
+            "forks_count": 4,
+            "archived": false,
+            "disabled": false,
+            "open_issues_count": 1,
+            "license": {
+              "key": "mit",
+              "name": "MIT License",
+              "spdx_id": "MIT",
+              "url": "https://api.github.com/licenses/mit",
+              "node_id": "MDc6TGljZW5zZTEz"
+            },
+            "allow_forking": true,
+            "is_template": false,
+            "web_commit_signoff_required": false,
+            "topics": [],
+            "visibility": "public",
+            "forks": 4,
+            "open_issues": 1,
+            "watchers": 6,
+            "default_branch": "master"
+          }
+        },
+        "_links": {
+          "self": {
+            "href": "https://api.github.com/repos/discord/backoff/pulls/1"
+          },
+          "html": {
+            "href": "https://github.com/discord/backoff/pull/1"
+          },
+          "issue": {
+            "href": "https://api.github.com/repos/discord/backoff/issues/1"
+          },
+          "comments": {
+            "href": "https://api.github.com/repos/discord/backoff/issues/1/comments"
+          },
+          "review_comments": {
+            "href": "https://api.github.com/repos/discord/backoff/pulls/1/comments"
+          },
+          "review_comment": {
+            "href": "https://api.github.com/repos/discord/backoff/pulls/comments{/number}"
+          },
+          "commits": {
+            "href": "https://api.github.com/repos/discord/backoff/pulls/1/commits"
+          },
+          "statuses": {
+            "href": "https://api.github.com/repos/discord/backoff/statuses/c096c86ba751fc53f74410e7ed6478dab4722234"
+          }
+        },
+        "author_association": "COLLABORATOR",
+        "auto_merge": null,
+        "active_lock_reason": null
+      }
+    ]
   }
 }

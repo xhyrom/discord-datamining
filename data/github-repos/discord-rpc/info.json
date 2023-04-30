@@ -371,7 +371,7 @@
             "content_type": "application/zip",
             "state": "uploaded",
             "size": 412013,
-            "download_count": 9069,
+            "download_count": 9071,
             "created_at": "2018-11-27T17:47:21Z",
             "updated_at": "2018-11-27T17:47:22Z"
           },
@@ -393,7 +393,7 @@
             "content_type": "application/zip",
             "state": "uploaded",
             "size": 275602,
-            "download_count": 5077,
+            "download_count": 5078,
             "created_at": "2018-11-27T17:47:21Z",
             "updated_at": "2018-11-27T17:47:22Z"
           },
@@ -415,7 +415,7 @@
             "content_type": "application/zip",
             "state": "uploaded",
             "size": 539931,
-            "download_count": 503758,
+            "download_count": 503782,
             "created_at": "2018-11-27T17:47:21Z",
             "updated_at": "2018-11-27T17:47:23Z"
           }
