@@ -415,7 +415,7 @@
             "content_type": "application/zip",
             "state": "uploaded",
             "size": 539931,
-            "download_count": 503140,
+            "download_count": 503166,
             "created_at": "2018-11-27T17:47:21Z",
             "updated_at": "2018-11-27T17:47:23Z"
           }
@@ -585,7 +585,7 @@
             "content_type": "application/zip",
             "state": "uploaded",
             "size": 275406,
-            "download_count": 72,
+            "download_count": 73,
             "created_at": "2018-03-29T21:39:16Z",
             "updated_at": "2018-03-29T21:39:17Z"
           },
