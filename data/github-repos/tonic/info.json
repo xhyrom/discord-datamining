@@ -57,32 +57,7 @@
     "triage": false,
     "pull": false
   },
-  "branches": [
-    {
-      "name": "develop",
-      "commit": {
-        "sha": "420c40f84f202b3f4162b49ce2b16f2708f1f706",
-        "url": "https://api.github.com/repos/discord/tonic/commits/420c40f84f202b3f4162b49ce2b16f2708f1f706"
-      },
-      "protected": false
-    },
-    {
-      "name": "jen20/tonic-reflection",
-      "commit": {
-        "sha": "83b245491707f5074c9c5a87456f26c8addd995a",
-        "url": "https://api.github.com/repos/discord/tonic/commits/83b245491707f5074c9c5a87456f26c8addd995a"
-      },
-      "protected": false
-    },
-    {
-      "name": "master",
-      "commit": {
-        "sha": "73938e1e0ade5826ffbcf873d7e3e4ee96b7e13a",
-        "url": "https://api.github.com/repos/discord/tonic/commits/73938e1e0ade5826ffbcf873d7e3e4ee96b7e13a"
-      },
-      "protected": false
-    }
-  ],
+  "branches": [],
   "last5": {
     "commits": [
       {
