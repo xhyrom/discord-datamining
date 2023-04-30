@@ -329,7 +329,77 @@
         ]
       }
     ],
-    "releases": [],
+    "releases": [
+      {
+        "url": "https://api.github.com/repos/discord/hash_ring/releases/9494552",
+        "id": 9494552,
+        "author": {
+          "login": "jhgg",
+          "id": 5489149,
+          "node_id": "MDQ6VXNlcjU0ODkxNDk=",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/jhgg",
+          "type": "User",
+          "site_admin": false
+        },
+        "node_id": "MDc6UmVsZWFzZTk0OTQ1NTI=",
+        "tag_name": "v0.0.4",
+        "target_commitish": "master",
+        "name": "hotfix - pytest in setup.py",
+        "draft": false,
+        "prerelease": false,
+        "created_at": "2018-02-01T19:24:51Z",
+        "published_at": "2018-02-01T19:25:24Z",
+        "assets": [],
+        "body": "Removes that for now, so it can install."
+      },
+      {
+        "url": "https://api.github.com/repos/discord/hash_ring/releases/9476775",
+        "id": 9476775,
+        "author": {
+          "login": "jhgg",
+          "id": 5489149,
+          "node_id": "MDQ6VXNlcjU0ODkxNDk=",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/jhgg",
+          "type": "User",
+          "site_admin": false
+        },
+        "node_id": "MDc6UmVsZWFzZTk0NzY3NzU=",
+        "tag_name": "v0.0.3",
+        "target_commitish": "master",
+        "name": "HashRing.add_nodes",
+        "draft": false,
+        "prerelease": false,
+        "created_at": "2018-01-31T22:08:35Z",
+        "published_at": "2018-01-31T22:09:39Z",
+        "assets": [],
+        "body": "Merge #2 \r\nRebuilding the ring each time the ring changes turns out to be a really slow operation. This hopes to address this by creating an `add_nodes` operation that can be performed on an empty ring that is faster than individually calling `add_node` for each node in the ring. So far, the benchmarks are promising, the `add_nodes` operation taking 2% the wall time of calling `add_node` individually for larger ring sizes. Right now, this operation will run in the event loop of our API servers, so making it go faster is a good way to reduce the impact of re-building the ring.\r\n\r\nHere is a result of the benches of adding nodes in the slow (add_node) vs fast (add_nodes) path, for 512 replicas per node:\r\n\r\n![image](https://user-images.githubusercontent.com/5489149/35601571-a3f5e65c-05e8-11e8-8b31-caceb908f56d.png)\r\n\r\n\r\n - [x] add `HashRing.add_nodes(nodes)` method.\r\n - [x] add `HashRing.get_num_items()` method for debugging.\r\n - [x] add `HashRing.get_node(node_name)` method for debugging. \r\n - [x] add `hash_ring_sort` method that will sort the ring items array after we're done adding stuff to \r\nit.\r\n - [x] add `hash_ring_ensure_items_size` which will allow us to pre-allocate the `items` array, so we do not need to needlessly realloc it to grow, if we can compute the target size before hand.\r\n - [x] mod `hash_ring_add_node` to take a `doSort` param, to defer sorting of the items array. \r\n - [x] formalize benchmarks with pytest-bench\r\n - [x] test coverage around this."
+      },
+      {
+        "url": "https://api.github.com/repos/discord/hash_ring/releases/9459185",
+        "id": 9459185,
+        "author": {
+          "login": "jhgg",
+          "id": 5489149,
+          "node_id": "MDQ6VXNlcjU0ODkxNDk=",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/jhgg",
+          "type": "User",
+          "site_admin": false
+        },
+        "node_id": "MDc6UmVsZWFzZTk0NTkxODU=",
+        "tag_name": "v0.0.2",
+        "target_commitish": "master",
+        "name": "v0.0.2",
+        "draft": false,
+        "prerelease": false,
+        "created_at": "2018-01-30T22:10:51Z",
+        "published_at": "2018-01-31T01:11:15Z",
+        "assets": [],
+        "body": "Add support for dynamic replicas. See #1 for more details."
+      }
+    ],
     "issues": [
       {
         "url": "https://api.github.com/repos/discord/hash_ring/issues/7",
