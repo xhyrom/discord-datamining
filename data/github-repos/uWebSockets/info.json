@@ -57,7 +57,48 @@
     "triage": false,
     "pull": false
   },
-  "branches": [],
+  "branches": [
+    {
+      "name": "10.12",
+      "commit": {
+        "sha": "31616bf4e2991ec1c01b3d8f1b76f90d7cdc8ce6",
+        "url": "https://api.github.com/repos/discord/uWebSockets/commits/31616bf4e2991ec1c01b3d8f1b76f90d7cdc8ce6"
+      },
+      "protected": false
+    },
+    {
+      "name": "client_refactor",
+      "commit": {
+        "sha": "49a0c1dec44d20ee1c407861a67dcf1cf8eff42e",
+        "url": "https://api.github.com/repos/discord/uWebSockets/commits/49a0c1dec44d20ee1c407861a67dcf1cf8eff42e"
+      },
+      "protected": false
+    },
+    {
+      "name": "client",
+      "commit": {
+        "sha": "96057caae8e9adada2cafc83467d963618fbfb3b",
+        "url": "https://api.github.com/repos/discord/uWebSockets/commits/96057caae8e9adada2cafc83467d963618fbfb3b"
+      },
+      "protected": false
+    },
+    {
+      "name": "debug",
+      "commit": {
+        "sha": "b1aa32c41fa6f69a5f0cf0768c957bcee50e1e4a",
+        "url": "https://api.github.com/repos/discord/uWebSockets/commits/b1aa32c41fa6f69a5f0cf0768c957bcee50e1e4a"
+      },
+      "protected": false
+    },
+    {
+      "name": "master",
+      "commit": {
+        "sha": "219d00654c9ecbfa5dd0feb5a000ec26e2cdce4f",
+        "url": "https://api.github.com/repos/discord/uWebSockets/commits/219d00654c9ecbfa5dd0feb5a000ec26e2cdce4f"
+      },
+      "protected": false
+    }
+  ],
   "last5": {
     "commits": [
       {
