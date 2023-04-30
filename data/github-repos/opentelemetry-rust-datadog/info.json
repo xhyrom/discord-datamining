@@ -57,16 +57,7 @@
     "triage": false,
     "pull": false
   },
-  "branches": [
-    {
-      "name": "master",
-      "commit": {
-        "sha": "a58c82356fbab6ccd6820ecd21c242ad79e2e379",
-        "url": "https://api.github.com/repos/discord/opentelemetry-rust-datadog/commits/a58c82356fbab6ccd6820ecd21c242ad79e2e379"
-      },
-      "protected": false
-    }
-  ],
+  "branches": [],
   "last5": {
     "commits": [
       {
