@@ -57,7 +57,24 @@
     "triage": false,
     "pull": false
   },
-  "branches": [],
+  "branches": [
+    {
+      "name": "master",
+      "commit": {
+        "sha": "653e66f2b1c46fd2bc7d48fce8b2b92a35ea78de",
+        "url": "https://api.github.com/repos/discord/elasticsearch-dsl-rs/commits/653e66f2b1c46fd2bc7d48fce8b2b92a35ea78de"
+      },
+      "protected": false
+    },
+    {
+      "name": "search-after",
+      "commit": {
+        "sha": "056c5c577812b383c3fa280526161e45aa5efa54",
+        "url": "https://api.github.com/repos/discord/elasticsearch-dsl-rs/commits/056c5c577812b383c3fa280526161e45aa5efa54"
+      },
+      "protected": false
+    }
+  ],
   "last5": {
     "commits": [
       {
