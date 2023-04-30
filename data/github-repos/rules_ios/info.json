@@ -332,12 +332,15 @@
       }
     ],
     "releases": [],
-    "issues": [
+    "issues": [],
+    "pullRequests": [
       {
-        "url": "https://api.github.com/repos/discord/rules_ios/issues/4",
-        "id": 1677553849,
+        "url": "https://api.github.com/repos/discord/rules_ios/pulls/4",
+        "id": 1322239658,
         "node_id": "PR_kwDOI5jSX85Oz8aq",
         "number": 4,
+        "state": "closed",
+        "locked": false,
         "title": "[rules_ios] Use -idirafter instead of -I",
         "user": {
           "login": "nataliejameson",
@@ -348,44 +351,209 @@
           "type": "User",
           "site_admin": false
         },
-        "labels": [],
-        "state": "closed",
-        "locked": false,
-        "assignee": null,
-        "assignees": [],
-        "milestone": null,
-        "comments": 0,
+        "body": "There are some places where using -I can actually cause problems with\r\nsystem header collisions. Notably, fmt has a \"locale.h\" file. Without\r\nthis change, you can end up with a chain that is:\r\n\r\n\"fmt/locale.h\" -> <locale> -> <clocale> -> <locale.h> -> failure,\r\nbecause -I causes fmt/locale.h to be searched (I believe due to the\r\nentries in the headermap being -I) before system paths.\r\n\r\nSee https://gcc.gnu.org/onlinedocs/gcc/Directory-Options.html for\r\nresolution order",
         "created_at": "2023-04-20T23:35:12Z",
         "updated_at": "2023-04-25T17:03:06Z",
         "closed_at": "2023-04-25T17:03:06Z",
-        "author_association": "CONTRIBUTOR",
-        "active_lock_reason": null,
+        "merged_at": "2023-04-25T17:03:06Z",
+        "merge_commit_sha": "1fc624aeee5e4ec1554ce3a0a6c64b332864a8bd",
+        "assignee": null,
+        "assignees": [],
+        "requested_reviewers": [
+          {
+            "login": "Osmose",
+            "id": 193106,
+            "node_id": "MDQ6VXNlcjE5MzEwNg==",
+            "gravatar_id": "",
+            "url": "https://api.github.com/users/Osmose",
+            "type": "User",
+            "site_admin": false
+          },
+          {
+            "login": "stevenpetryk",
+            "id": 1724000,
+            "node_id": "MDQ6VXNlcjE3MjQwMDA=",
+            "gravatar_id": "",
+            "url": "https://api.github.com/users/stevenpetryk",
+            "type": "User",
+            "site_admin": false
+          }
+        ],
+        "requested_teams": [],
+        "labels": [],
+        "milestone": null,
         "draft": false,
-        "pull_request": {
-          "url": "https://api.github.com/repos/discord/rules_ios/pulls/4",
-          "merged_at": "2023-04-25T17:03:06Z"
+        "head": {
+          "label": "discord:nmj/change_to_dirafter",
+          "ref": "nmj/change_to_dirafter",
+          "sha": "f116329a7017c43289a7f22424477f756d8187d5",
+          "user": {
+            "login": "discord",
+            "id": 1965106,
+            "node_id": "MDEyOk9yZ2FuaXphdGlvbjE5NjUxMDY=",
+            "gravatar_id": "",
+            "url": "https://api.github.com/users/discord",
+            "type": "Organization",
+            "site_admin": false
+          },
+          "repo": {
+            "id": 597217887,
+            "node_id": "R_kgDOI5jSXw",
+            "name": "rules_ios",
+            "full_name": "discord/rules_ios",
+            "private": false,
+            "owner": {
+              "login": "discord",
+              "id": 1965106,
+              "node_id": "MDEyOk9yZ2FuaXphdGlvbjE5NjUxMDY=",
+              "gravatar_id": "",
+              "url": "https://api.github.com/users/discord",
+              "type": "Organization",
+              "site_admin": false
+            },
+            "description": "Bazel rules for building iOS applications and frameworks",
+            "fork": false,
+            "url": "https://api.github.com/repos/discord/rules_ios",
+            "created_at": "2023-02-03T22:24:12Z",
+            "updated_at": "2023-03-21T21:44:48Z",
+            "pushed_at": "2023-04-25T17:03:06Z",
+            "homepage": null,
+            "size": 49223,
+            "stargazers_count": 2,
+            "watchers_count": 2,
+            "language": "Starlark",
+            "has_issues": false,
+            "has_projects": true,
+            "has_downloads": true,
+            "has_wiki": true,
+            "has_pages": false,
+            "has_discussions": false,
+            "forks_count": 1,
+            "archived": false,
+            "disabled": false,
+            "open_issues_count": 0,
+            "license": {
+              "key": "apache-2.0",
+              "name": "Apache License 2.0",
+              "spdx_id": "Apache-2.0",
+              "url": "https://api.github.com/licenses/apache-2.0",
+              "node_id": "MDc6TGljZW5zZTI="
+            },
+            "allow_forking": true,
+            "is_template": false,
+            "web_commit_signoff_required": false,
+            "topics": [],
+            "visibility": "public",
+            "forks": 1,
+            "open_issues": 0,
+            "watchers": 2,
+            "default_branch": "discord"
+          }
         },
-        "body": "There are some places where using -I can actually cause problems with\r\nsystem header collisions. Notably, fmt has a \"locale.h\" file. Without\r\nthis change, you can end up with a chain that is:\r\n\r\n\"fmt/locale.h\" -> <locale> -> <clocale> -> <locale.h> -> failure,\r\nbecause -I causes fmt/locale.h to be searched (I believe due to the\r\nentries in the headermap being -I) before system paths.\r\n\r\nSee https://gcc.gnu.org/onlinedocs/gcc/Directory-Options.html for\r\nresolution order",
-        "reactions": {
-          "url": "https://api.github.com/repos/discord/rules_ios/issues/4/reactions",
-          "total_count": 0,
-          "+1": 0,
-          "-1": 0,
-          "laugh": 0,
-          "hooray": 0,
-          "confused": 0,
-          "heart": 0,
-          "rocket": 0,
-          "eyes": 0
+        "base": {
+          "label": "discord:discord",
+          "ref": "discord",
+          "sha": "01a939dc53ad34926ba94e4296abfb5c09db83be",
+          "user": {
+            "login": "discord",
+            "id": 1965106,
+            "node_id": "MDEyOk9yZ2FuaXphdGlvbjE5NjUxMDY=",
+            "gravatar_id": "",
+            "url": "https://api.github.com/users/discord",
+            "type": "Organization",
+            "site_admin": false
+          },
+          "repo": {
+            "id": 597217887,
+            "node_id": "R_kgDOI5jSXw",
+            "name": "rules_ios",
+            "full_name": "discord/rules_ios",
+            "private": false,
+            "owner": {
+              "login": "discord",
+              "id": 1965106,
+              "node_id": "MDEyOk9yZ2FuaXphdGlvbjE5NjUxMDY=",
+              "gravatar_id": "",
+              "url": "https://api.github.com/users/discord",
+              "type": "Organization",
+              "site_admin": false
+            },
+            "description": "Bazel rules for building iOS applications and frameworks",
+            "fork": false,
+            "url": "https://api.github.com/repos/discord/rules_ios",
+            "created_at": "2023-02-03T22:24:12Z",
+            "updated_at": "2023-03-21T21:44:48Z",
+            "pushed_at": "2023-04-25T17:03:06Z",
+            "homepage": null,
+            "size": 49223,
+            "stargazers_count": 2,
+            "watchers_count": 2,
+            "language": "Starlark",
+            "has_issues": false,
+            "has_projects": true,
+            "has_downloads": true,
+            "has_wiki": true,
+            "has_pages": false,
+            "has_discussions": false,
+            "forks_count": 1,
+            "archived": false,
+            "disabled": false,
+            "open_issues_count": 0,
+            "license": {
+              "key": "apache-2.0",
+              "name": "Apache License 2.0",
+              "spdx_id": "Apache-2.0",
+              "url": "https://api.github.com/licenses/apache-2.0",
+              "node_id": "MDc6TGljZW5zZTI="
+            },
+            "allow_forking": true,
+            "is_template": false,
+            "web_commit_signoff_required": false,
+            "topics": [],
+            "visibility": "public",
+            "forks": 1,
+            "open_issues": 0,
+            "watchers": 2,
+            "default_branch": "discord"
+          }
         },
-        "performed_via_github_app": null,
-        "state_reason": null
+        "_links": {
+          "self": {
+            "href": "https://api.github.com/repos/discord/rules_ios/pulls/4"
+          },
+          "html": {
+            "href": "https://github.com/discord/rules_ios/pull/4"
+          },
+          "issue": {
+            "href": "https://api.github.com/repos/discord/rules_ios/issues/4"
+          },
+          "comments": {
+            "href": "https://api.github.com/repos/discord/rules_ios/issues/4/comments"
+          },
+          "review_comments": {
+            "href": "https://api.github.com/repos/discord/rules_ios/pulls/4/comments"
+          },
+          "review_comment": {
+            "href": "https://api.github.com/repos/discord/rules_ios/pulls/comments{/number}"
+          },
+          "commits": {
+            "href": "https://api.github.com/repos/discord/rules_ios/pulls/4/commits"
+          },
+          "statuses": {
+            "href": "https://api.github.com/repos/discord/rules_ios/statuses/f116329a7017c43289a7f22424477f756d8187d5"
+          }
+        },
+        "author_association": "CONTRIBUTOR",
+        "auto_merge": null,
+        "active_lock_reason": null
       },
       {
-        "url": "https://api.github.com/repos/discord/rules_ios/issues/3",
-        "id": 1673585861,
+        "url": "https://api.github.com/repos/discord/rules_ios/pulls/3",
+        "id": 1318750697,
         "node_id": "PR_kwDOI5jSX85Omonp",
         "number": 3,
+        "state": "closed",
+        "locked": false,
         "title": "[rules_ios] Re-enable cpp rules",
         "user": {
           "login": "nataliejameson",
@@ -396,44 +564,222 @@
           "type": "User",
           "site_admin": false
         },
-        "labels": [],
-        "state": "closed",
-        "locked": false,
-        "assignee": null,
-        "assignees": [],
-        "milestone": null,
-        "comments": 0,
+        "body": "This was accidentally disabled. It is required for glog, so turn this\nback on so that .cc/.cpp sources and their .a files are properly\npropagated.\n\nTested by doing a build with this change off of main\n",
         "created_at": "2023-04-18T17:51:35Z",
         "updated_at": "2023-04-25T17:00:08Z",
         "closed_at": "2023-04-25T17:00:08Z",
-        "author_association": "CONTRIBUTOR",
-        "active_lock_reason": null,
+        "merged_at": "2023-04-25T17:00:08Z",
+        "merge_commit_sha": "01a939dc53ad34926ba94e4296abfb5c09db83be",
+        "assignee": null,
+        "assignees": [],
+        "requested_reviewers": [
+          {
+            "login": "Osmose",
+            "id": 193106,
+            "node_id": "MDQ6VXNlcjE5MzEwNg==",
+            "gravatar_id": "",
+            "url": "https://api.github.com/users/Osmose",
+            "type": "User",
+            "site_admin": false
+          },
+          {
+            "login": "stevenpetryk",
+            "id": 1724000,
+            "node_id": "MDQ6VXNlcjE3MjQwMDA=",
+            "gravatar_id": "",
+            "url": "https://api.github.com/users/stevenpetryk",
+            "type": "User",
+            "site_admin": false
+          }
+        ],
+        "requested_teams": [
+          {
+            "name": "Client Developer Experience",
+            "id": 7129999,
+            "node_id": "T_kwDOAB38Ms4AbMuP",
+            "slug": "client-developer-experience",
+            "description": "",
+            "privacy": "closed",
+            "notification_setting": "notifications_enabled",
+            "url": "https://api.github.com/organizations/1965106/team/7129999",
+            "permission": "pull",
+            "parent": null
+          }
+        ],
+        "labels": [],
+        "milestone": null,
         "draft": false,
-        "pull_request": {
-          "url": "https://api.github.com/repos/discord/rules_ios/pulls/3",
-          "merged_at": "2023-04-25T17:00:08Z"
+        "head": {
+          "label": "discord:nmj/fix_cpp_libraries",
+          "ref": "nmj/fix_cpp_libraries",
+          "sha": "3ee1e486ee22fa0a7f6c3100b938e01cff28efe2",
+          "user": {
+            "login": "discord",
+            "id": 1965106,
+            "node_id": "MDEyOk9yZ2FuaXphdGlvbjE5NjUxMDY=",
+            "gravatar_id": "",
+            "url": "https://api.github.com/users/discord",
+            "type": "Organization",
+            "site_admin": false
+          },
+          "repo": {
+            "id": 597217887,
+            "node_id": "R_kgDOI5jSXw",
+            "name": "rules_ios",
+            "full_name": "discord/rules_ios",
+            "private": false,
+            "owner": {
+              "login": "discord",
+              "id": 1965106,
+              "node_id": "MDEyOk9yZ2FuaXphdGlvbjE5NjUxMDY=",
+              "gravatar_id": "",
+              "url": "https://api.github.com/users/discord",
+              "type": "Organization",
+              "site_admin": false
+            },
+            "description": "Bazel rules for building iOS applications and frameworks",
+            "fork": false,
+            "url": "https://api.github.com/repos/discord/rules_ios",
+            "created_at": "2023-02-03T22:24:12Z",
+            "updated_at": "2023-03-21T21:44:48Z",
+            "pushed_at": "2023-04-25T17:03:06Z",
+            "homepage": null,
+            "size": 49223,
+            "stargazers_count": 2,
+            "watchers_count": 2,
+            "language": "Starlark",
+            "has_issues": false,
+            "has_projects": true,
+            "has_downloads": true,
+            "has_wiki": true,
+            "has_pages": false,
+            "has_discussions": false,
+            "forks_count": 1,
+            "archived": false,
+            "disabled": false,
+            "open_issues_count": 0,
+            "license": {
+              "key": "apache-2.0",
+              "name": "Apache License 2.0",
+              "spdx_id": "Apache-2.0",
+              "url": "https://api.github.com/licenses/apache-2.0",
+              "node_id": "MDc6TGljZW5zZTI="
+            },
+            "allow_forking": true,
+            "is_template": false,
+            "web_commit_signoff_required": false,
+            "topics": [],
+            "visibility": "public",
+            "forks": 1,
+            "open_issues": 0,
+            "watchers": 2,
+            "default_branch": "discord"
+          }
         },
-        "body": "This was accidentally disabled. It is required for glog, so turn this\nback on so that .cc/.cpp sources and their .a files are properly\npropagated.\n\nTested by doing a build with this change off of main\n",
-        "reactions": {
-          "url": "https://api.github.com/repos/discord/rules_ios/issues/3/reactions",
-          "total_count": 0,
-          "+1": 0,
-          "-1": 0,
-          "laugh": 0,
-          "hooray": 0,
-          "confused": 0,
-          "heart": 0,
-          "rocket": 0,
-          "eyes": 0
+        "base": {
+          "label": "discord:discord",
+          "ref": "discord",
+          "sha": "238256aa05912d714c22f00515995aff8c707552",
+          "user": {
+            "login": "discord",
+            "id": 1965106,
+            "node_id": "MDEyOk9yZ2FuaXphdGlvbjE5NjUxMDY=",
+            "gravatar_id": "",
+            "url": "https://api.github.com/users/discord",
+            "type": "Organization",
+            "site_admin": false
+          },
+          "repo": {
+            "id": 597217887,
+            "node_id": "R_kgDOI5jSXw",
+            "name": "rules_ios",
+            "full_name": "discord/rules_ios",
+            "private": false,
+            "owner": {
+              "login": "discord",
+              "id": 1965106,
+              "node_id": "MDEyOk9yZ2FuaXphdGlvbjE5NjUxMDY=",
+              "gravatar_id": "",
+              "url": "https://api.github.com/users/discord",
+              "type": "Organization",
+              "site_admin": false
+            },
+            "description": "Bazel rules for building iOS applications and frameworks",
+            "fork": false,
+            "url": "https://api.github.com/repos/discord/rules_ios",
+            "created_at": "2023-02-03T22:24:12Z",
+            "updated_at": "2023-03-21T21:44:48Z",
+            "pushed_at": "2023-04-25T17:03:06Z",
+            "homepage": null,
+            "size": 49223,
+            "stargazers_count": 2,
+            "watchers_count": 2,
+            "language": "Starlark",
+            "has_issues": false,
+            "has_projects": true,
+            "has_downloads": true,
+            "has_wiki": true,
+            "has_pages": false,
+            "has_discussions": false,
+            "forks_count": 1,
+            "archived": false,
+            "disabled": false,
+            "open_issues_count": 0,
+            "license": {
+              "key": "apache-2.0",
+              "name": "Apache License 2.0",
+              "spdx_id": "Apache-2.0",
+              "url": "https://api.github.com/licenses/apache-2.0",
+              "node_id": "MDc6TGljZW5zZTI="
+            },
+            "allow_forking": true,
+            "is_template": false,
+            "web_commit_signoff_required": false,
+            "topics": [],
+            "visibility": "public",
+            "forks": 1,
+            "open_issues": 0,
+            "watchers": 2,
+            "default_branch": "discord"
+          }
         },
-        "performed_via_github_app": null,
-        "state_reason": null
+        "_links": {
+          "self": {
+            "href": "https://api.github.com/repos/discord/rules_ios/pulls/3"
+          },
+          "html": {
+            "href": "https://github.com/discord/rules_ios/pull/3"
+          },
+          "issue": {
+            "href": "https://api.github.com/repos/discord/rules_ios/issues/3"
+          },
+          "comments": {
+            "href": "https://api.github.com/repos/discord/rules_ios/issues/3/comments"
+          },
+          "review_comments": {
+            "href": "https://api.github.com/repos/discord/rules_ios/pulls/3/comments"
+          },
+          "review_comment": {
+            "href": "https://api.github.com/repos/discord/rules_ios/pulls/comments{/number}"
+          },
+          "commits": {
+            "href": "https://api.github.com/repos/discord/rules_ios/pulls/3/commits"
+          },
+          "statuses": {
+            "href": "https://api.github.com/repos/discord/rules_ios/statuses/3ee1e486ee22fa0a7f6c3100b938e01cff28efe2"
+          }
+        },
+        "author_association": "CONTRIBUTOR",
+        "auto_merge": null,
+        "active_lock_reason": null
       },
       {
-        "url": "https://api.github.com/repos/discord/rules_ios/issues/2",
-        "id": 1668570817,
+        "url": "https://api.github.com/repos/discord/rules_ios/pulls/2",
+        "id": 1314387343,
         "node_id": "PR_kwDOI5jSX85OV_WP",
         "number": 2,
+        "state": "closed",
+        "locked": false,
         "title": "[transitions] Do not remove cpus from configured target graph",
         "user": {
           "login": "nataliejameson",
@@ -444,44 +790,200 @@
           "type": "User",
           "site_admin": false
         },
-        "labels": [],
-        "state": "closed",
-        "locked": false,
-        "assignee": null,
-        "assignees": [],
-        "milestone": null,
-        "comments": 0,
+        "body": "Upstream converts ios_multi_cpus to a single value. rules_pods does\nnot. So when rules_pods objc_library rules depend on rules_ios rules,\nthey are considered different configurations, and we end up splitting\nthe configured target graph into two configurations. When swift, objc,\netc try to link in all objc_libraries later in the build, they then\ntry to link the same library twice, because the configured nodes are\nduplicated, and we run into duplicate symbol, module redefinition, etc\nerrors.\n\nIn theory, this could be reverted once the rules_ios migration is\ncomplete, but for our use case, it should not hurt anything being\npresent. This logic, also, only affects our opt builds that build\nfor multiple cpus. The development builds are unaffected.\n",
         "created_at": "2023-04-14T16:36:52Z",
         "updated_at": "2023-04-14T17:09:29Z",
         "closed_at": "2023-04-14T17:09:28Z",
-        "author_association": "CONTRIBUTOR",
-        "active_lock_reason": null,
+        "merged_at": "2023-04-14T17:09:28Z",
+        "merge_commit_sha": "238256aa05912d714c22f00515995aff8c707552",
+        "assignee": null,
+        "assignees": [],
+        "requested_reviewers": [
+          {
+            "login": "stevenpetryk",
+            "id": 1724000,
+            "node_id": "MDQ6VXNlcjE3MjQwMDA=",
+            "gravatar_id": "",
+            "url": "https://api.github.com/users/stevenpetryk",
+            "type": "User",
+            "site_admin": false
+          }
+        ],
+        "requested_teams": [],
+        "labels": [],
+        "milestone": null,
         "draft": false,
-        "pull_request": {
-          "url": "https://api.github.com/repos/discord/rules_ios/pulls/2",
-          "merged_at": "2023-04-14T17:09:28Z"
+        "head": {
+          "label": "discord:nmj/fix_multi_cpu",
+          "ref": "nmj/fix_multi_cpu",
+          "sha": "5b1db9755832e300396ea3c6025ec57198812016",
+          "user": {
+            "login": "discord",
+            "id": 1965106,
+            "node_id": "MDEyOk9yZ2FuaXphdGlvbjE5NjUxMDY=",
+            "gravatar_id": "",
+            "url": "https://api.github.com/users/discord",
+            "type": "Organization",
+            "site_admin": false
+          },
+          "repo": {
+            "id": 597217887,
+            "node_id": "R_kgDOI5jSXw",
+            "name": "rules_ios",
+            "full_name": "discord/rules_ios",
+            "private": false,
+            "owner": {
+              "login": "discord",
+              "id": 1965106,
+              "node_id": "MDEyOk9yZ2FuaXphdGlvbjE5NjUxMDY=",
+              "gravatar_id": "",
+              "url": "https://api.github.com/users/discord",
+              "type": "Organization",
+              "site_admin": false
+            },
+            "description": "Bazel rules for building iOS applications and frameworks",
+            "fork": false,
+            "url": "https://api.github.com/repos/discord/rules_ios",
+            "created_at": "2023-02-03T22:24:12Z",
+            "updated_at": "2023-03-21T21:44:48Z",
+            "pushed_at": "2023-04-25T17:03:06Z",
+            "homepage": null,
+            "size": 49223,
+            "stargazers_count": 2,
+            "watchers_count": 2,
+            "language": "Starlark",
+            "has_issues": false,
+            "has_projects": true,
+            "has_downloads": true,
+            "has_wiki": true,
+            "has_pages": false,
+            "has_discussions": false,
+            "forks_count": 1,
+            "archived": false,
+            "disabled": false,
+            "open_issues_count": 0,
+            "license": {
+              "key": "apache-2.0",
+              "name": "Apache License 2.0",
+              "spdx_id": "Apache-2.0",
+              "url": "https://api.github.com/licenses/apache-2.0",
+              "node_id": "MDc6TGljZW5zZTI="
+            },
+            "allow_forking": true,
+            "is_template": false,
+            "web_commit_signoff_required": false,
+            "topics": [],
+            "visibility": "public",
+            "forks": 1,
+            "open_issues": 0,
+            "watchers": 2,
+            "default_branch": "discord"
+          }
         },
-        "body": "Upstream converts ios_multi_cpus to a single value. rules_pods does\nnot. So when rules_pods objc_library rules depend on rules_ios rules,\nthey are considered different configurations, and we end up splitting\nthe configured target graph into two configurations. When swift, objc,\netc try to link in all objc_libraries later in the build, they then\ntry to link the same library twice, because the configured nodes are\nduplicated, and we run into duplicate symbol, module redefinition, etc\nerrors.\n\nIn theory, this could be reverted once the rules_ios migration is\ncomplete, but for our use case, it should not hurt anything being\npresent. This logic, also, only affects our opt builds that build\nfor multiple cpus. The development builds are unaffected.\n",
-        "reactions": {
-          "url": "https://api.github.com/repos/discord/rules_ios/issues/2/reactions",
-          "total_count": 0,
-          "+1": 0,
-          "-1": 0,
-          "laugh": 0,
-          "hooray": 0,
-          "confused": 0,
-          "heart": 0,
-          "rocket": 0,
-          "eyes": 0
+        "base": {
+          "label": "discord:discord",
+          "ref": "discord",
+          "sha": "429e3f0cf19b5ea51aada9f42211651615b13733",
+          "user": {
+            "login": "discord",
+            "id": 1965106,
+            "node_id": "MDEyOk9yZ2FuaXphdGlvbjE5NjUxMDY=",
+            "gravatar_id": "",
+            "url": "https://api.github.com/users/discord",
+            "type": "Organization",
+            "site_admin": false
+          },
+          "repo": {
+            "id": 597217887,
+            "node_id": "R_kgDOI5jSXw",
+            "name": "rules_ios",
+            "full_name": "discord/rules_ios",
+            "private": false,
+            "owner": {
+              "login": "discord",
+              "id": 1965106,
+              "node_id": "MDEyOk9yZ2FuaXphdGlvbjE5NjUxMDY=",
+              "gravatar_id": "",
+              "url": "https://api.github.com/users/discord",
+              "type": "Organization",
+              "site_admin": false
+            },
+            "description": "Bazel rules for building iOS applications and frameworks",
+            "fork": false,
+            "url": "https://api.github.com/repos/discord/rules_ios",
+            "created_at": "2023-02-03T22:24:12Z",
+            "updated_at": "2023-03-21T21:44:48Z",
+            "pushed_at": "2023-04-25T17:03:06Z",
+            "homepage": null,
+            "size": 49223,
+            "stargazers_count": 2,
+            "watchers_count": 2,
+            "language": "Starlark",
+            "has_issues": false,
+            "has_projects": true,
+            "has_downloads": true,
+            "has_wiki": true,
+            "has_pages": false,
+            "has_discussions": false,
+            "forks_count": 1,
+            "archived": false,
+            "disabled": false,
+            "open_issues_count": 0,
+            "license": {
+              "key": "apache-2.0",
+              "name": "Apache License 2.0",
+              "spdx_id": "Apache-2.0",
+              "url": "https://api.github.com/licenses/apache-2.0",
+              "node_id": "MDc6TGljZW5zZTI="
+            },
+            "allow_forking": true,
+            "is_template": false,
+            "web_commit_signoff_required": false,
+            "topics": [],
+            "visibility": "public",
+            "forks": 1,
+            "open_issues": 0,
+            "watchers": 2,
+            "default_branch": "discord"
+          }
         },
-        "performed_via_github_app": null,
-        "state_reason": null
+        "_links": {
+          "self": {
+            "href": "https://api.github.com/repos/discord/rules_ios/pulls/2"
+          },
+          "html": {
+            "href": "https://github.com/discord/rules_ios/pull/2"
+          },
+          "issue": {
+            "href": "https://api.github.com/repos/discord/rules_ios/issues/2"
+          },
+          "comments": {
+            "href": "https://api.github.com/repos/discord/rules_ios/issues/2/comments"
+          },
+          "review_comments": {
+            "href": "https://api.github.com/repos/discord/rules_ios/pulls/2/comments"
+          },
+          "review_comment": {
+            "href": "https://api.github.com/repos/discord/rules_ios/pulls/comments{/number}"
+          },
+          "commits": {
+            "href": "https://api.github.com/repos/discord/rules_ios/pulls/2/commits"
+          },
+          "statuses": {
+            "href": "https://api.github.com/repos/discord/rules_ios/statuses/5b1db9755832e300396ea3c6025ec57198812016"
+          }
+        },
+        "author_association": "CONTRIBUTOR",
+        "auto_merge": null,
+        "active_lock_reason": null
       },
       {
-        "url": "https://api.github.com/repos/discord/rules_ios/issues/1",
-        "id": 1642796088,
+        "url": "https://api.github.com/repos/discord/rules_ios/pulls/1",
+        "id": 1291983499,
         "node_id": "PR_kwDOI5jSX85NAhqL",
         "number": 1,
+        "state": "closed",
+        "locked": false,
         "title": "[rules_ios] Add static library variant to allow rewriting headers",
         "user": {
           "login": "nataliejameson",
@@ -492,40 +994,183 @@
           "type": "User",
           "site_admin": false
         },
-        "labels": [],
-        "state": "closed",
-        "locked": false,
-        "assignee": null,
-        "assignees": [],
-        "milestone": null,
-        "comments": 1,
+        "body": "Add an `apple_static_library` that lets us map source files to arbitrary relative include paths by creating a link tree, and adding that link tree to the deps of a main library.\r\n\r\nThis also uses apple_library instead of apple_framework as the framework is frankly unnecessary for what we're trying to build for third party deps.\r\n\r\nTest Plan: Ported fmt locally to use this, and ran `clyde ios build`\r\n\r\nTasks:\r\n\r\nhttps://app.asana.com/0/1203960884932166/1204190072048691 \r\nhttps://app.asana.com/0/1203960884932166/1204190072362093",
         "created_at": "2023-03-27T20:54:32Z",
         "updated_at": "2023-03-28T19:21:17Z",
         "closed_at": "2023-03-28T19:21:17Z",
-        "author_association": "CONTRIBUTOR",
-        "active_lock_reason": null,
+        "merged_at": "2023-03-28T19:21:17Z",
+        "merge_commit_sha": "429e3f0cf19b5ea51aada9f42211651615b13733",
+        "assignee": null,
+        "assignees": [],
+        "requested_reviewers": [],
+        "requested_teams": [],
+        "labels": [],
+        "milestone": null,
         "draft": false,
-        "pull_request": {
-          "url": "https://api.github.com/repos/discord/rules_ios/pulls/1",
-          "merged_at": "2023-03-28T19:21:17Z"
+        "head": {
+          "label": "discord:nmj/add_static_library",
+          "ref": "nmj/add_static_library",
+          "sha": "64ce828b557ea8c2c3394c15a278198ae8f2c1a3",
+          "user": {
+            "login": "discord",
+            "id": 1965106,
+            "node_id": "MDEyOk9yZ2FuaXphdGlvbjE5NjUxMDY=",
+            "gravatar_id": "",
+            "url": "https://api.github.com/users/discord",
+            "type": "Organization",
+            "site_admin": false
+          },
+          "repo": {
+            "id": 597217887,
+            "node_id": "R_kgDOI5jSXw",
+            "name": "rules_ios",
+            "full_name": "discord/rules_ios",
+            "private": false,
+            "owner": {
+              "login": "discord",
+              "id": 1965106,
+              "node_id": "MDEyOk9yZ2FuaXphdGlvbjE5NjUxMDY=",
+              "gravatar_id": "",
+              "url": "https://api.github.com/users/discord",
+              "type": "Organization",
+              "site_admin": false
+            },
+            "description": "Bazel rules for building iOS applications and frameworks",
+            "fork": false,
+            "url": "https://api.github.com/repos/discord/rules_ios",
+            "created_at": "2023-02-03T22:24:12Z",
+            "updated_at": "2023-03-21T21:44:48Z",
+            "pushed_at": "2023-04-25T17:03:06Z",
+            "homepage": null,
+            "size": 49223,
+            "stargazers_count": 2,
+            "watchers_count": 2,
+            "language": "Starlark",
+            "has_issues": false,
+            "has_projects": true,
+            "has_downloads": true,
+            "has_wiki": true,
+            "has_pages": false,
+            "has_discussions": false,
+            "forks_count": 1,
+            "archived": false,
+            "disabled": false,
+            "open_issues_count": 0,
+            "license": {
+              "key": "apache-2.0",
+              "name": "Apache License 2.0",
+              "spdx_id": "Apache-2.0",
+              "url": "https://api.github.com/licenses/apache-2.0",
+              "node_id": "MDc6TGljZW5zZTI="
+            },
+            "allow_forking": true,
+            "is_template": false,
+            "web_commit_signoff_required": false,
+            "topics": [],
+            "visibility": "public",
+            "forks": 1,
+            "open_issues": 0,
+            "watchers": 2,
+            "default_branch": "discord"
+          }
         },
-        "body": "Add an `apple_static_library` that lets us map source files to arbitrary relative include paths by creating a link tree, and adding that link tree to the deps of a main library.\r\n\r\nThis also uses apple_library instead of apple_framework as the framework is frankly unnecessary for what we're trying to build for third party deps.\r\n\r\nTest Plan: Ported fmt locally to use this, and ran `clyde ios build`\r\n\r\nTasks:\r\n\r\nhttps://app.asana.com/0/1203960884932166/1204190072048691 \r\nhttps://app.asana.com/0/1203960884932166/1204190072362093",
-        "reactions": {
-          "url": "https://api.github.com/repos/discord/rules_ios/issues/1/reactions",
-          "total_count": 0,
-          "+1": 0,
-          "-1": 0,
-          "laugh": 0,
-          "hooray": 0,
-          "confused": 0,
-          "heart": 0,
-          "rocket": 0,
-          "eyes": 0
+        "base": {
+          "label": "discord:discord",
+          "ref": "discord",
+          "sha": "22c619b2fcc6040d4adff671bb92051dac6ac65d",
+          "user": {
+            "login": "discord",
+            "id": 1965106,
+            "node_id": "MDEyOk9yZ2FuaXphdGlvbjE5NjUxMDY=",
+            "gravatar_id": "",
+            "url": "https://api.github.com/users/discord",
+            "type": "Organization",
+            "site_admin": false
+          },
+          "repo": {
+            "id": 597217887,
+            "node_id": "R_kgDOI5jSXw",
+            "name": "rules_ios",
+            "full_name": "discord/rules_ios",
+            "private": false,
+            "owner": {
+              "login": "discord",
+              "id": 1965106,
+              "node_id": "MDEyOk9yZ2FuaXphdGlvbjE5NjUxMDY=",
+              "gravatar_id": "",
+              "url": "https://api.github.com/users/discord",
+              "type": "Organization",
+              "site_admin": false
+            },
+            "description": "Bazel rules for building iOS applications and frameworks",
+            "fork": false,
+            "url": "https://api.github.com/repos/discord/rules_ios",
+            "created_at": "2023-02-03T22:24:12Z",
+            "updated_at": "2023-03-21T21:44:48Z",
+            "pushed_at": "2023-04-25T17:03:06Z",
+            "homepage": null,
+            "size": 49223,
+            "stargazers_count": 2,
+            "watchers_count": 2,
+            "language": "Starlark",
+            "has_issues": false,
+            "has_projects": true,
+            "has_downloads": true,
+            "has_wiki": true,
+            "has_pages": false,
+            "has_discussions": false,
+            "forks_count": 1,
+            "archived": false,
+            "disabled": false,
+            "open_issues_count": 0,
+            "license": {
+              "key": "apache-2.0",
+              "name": "Apache License 2.0",
+              "spdx_id": "Apache-2.0",
+              "url": "https://api.github.com/licenses/apache-2.0",
+              "node_id": "MDc6TGljZW5zZTI="
+            },
+            "allow_forking": true,
+            "is_template": false,
+            "web_commit_signoff_required": false,
+            "topics": [],
+            "visibility": "public",
+            "forks": 1,
+            "open_issues": 0,
+            "watchers": 2,
+            "default_branch": "discord"
+          }
         },
-        "performed_via_github_app": null,
-        "state_reason": null
+        "_links": {
+          "self": {
+            "href": "https://api.github.com/repos/discord/rules_ios/pulls/1"
+          },
+          "html": {
+            "href": "https://github.com/discord/rules_ios/pull/1"
+          },
+          "issue": {
+            "href": "https://api.github.com/repos/discord/rules_ios/issues/1"
+          },
+          "comments": {
+            "href": "https://api.github.com/repos/discord/rules_ios/issues/1/comments"
+          },
+          "review_comments": {
+            "href": "https://api.github.com/repos/discord/rules_ios/pulls/1/comments"
+          },
+          "review_comment": {
+            "href": "https://api.github.com/repos/discord/rules_ios/pulls/comments{/number}"
+          },
+          "commits": {
+            "href": "https://api.github.com/repos/discord/rules_ios/pulls/1/commits"
+          },
+          "statuses": {
+            "href": "https://api.github.com/repos/discord/rules_ios/statuses/64ce828b557ea8c2c3394c15a278198ae8f2c1a3"
+          }
+        },
+        "author_association": "CONTRIBUTOR",
+        "auto_merge": null,
+        "active_lock_reason": null
       }
-    ],
-    "pullRequests": []
+    ]
   }
 }

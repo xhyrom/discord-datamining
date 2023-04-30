@@ -57,56 +57,7 @@
     "triage": false,
     "pull": false
   },
-  "branches": [
-    {
-      "name": "dgreiman/parectomy",
-      "commit": {
-        "sha": "5417fbf42b4df92d6408038a4db1fa693893e908",
-        "url": "https://api.github.com/repos/discord/rules_python/commits/5417fbf42b4df92d6408038a4db1fa693893e908"
-      },
-      "protected": false
-    },
-    {
-      "name": "dslomov-update-repo-rules",
-      "commit": {
-        "sha": "dbc8d1bbec2eda3d19077123fae26498eb27f797",
-        "url": "https://api.github.com/repos/discord/rules_python/commits/dbc8d1bbec2eda3d19077123fae26498eb27f797"
-      },
-      "protected": false
-    },
-    {
-      "name": "just-par",
-      "commit": {
-        "sha": "2b6c185cbb32dc49b78a50b25c594726aaf699b9",
-        "url": "https://api.github.com/repos/discord/rules_python/commits/2b6c185cbb32dc49b78a50b25c594726aaf699b9"
-      },
-      "protected": false
-    },
-    {
-      "name": "master",
-      "commit": {
-        "sha": "94677401bc56ed5d756f50b441a6a5c7f735a6d4",
-        "url": "https://api.github.com/repos/discord/rules_python/commits/94677401bc56ed5d756f50b441a6a5c7f735a6d4"
-      },
-      "protected": false
-    },
-    {
-      "name": "proposal-2-3-support",
-      "commit": {
-        "sha": "bc02cfba2f3aab5ebb12ca1ae944083bf52888ca",
-        "url": "https://api.github.com/repos/discord/rules_python/commits/bc02cfba2f3aab5ebb12ca1ae944083bf52888ca"
-      },
-      "protected": false
-    },
-    {
-      "name": "update-to-pip-19-3-1",
-      "commit": {
-        "sha": "7ed84581df654573993668fabf476ddca1b224de",
-        "url": "https://api.github.com/repos/discord/rules_python/commits/7ed84581df654573993668fabf476ddca1b224de"
-      },
-      "protected": false
-    }
-  ],
+  "branches": [],
   "last5": {
     "commits": [
       {
