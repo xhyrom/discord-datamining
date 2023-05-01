@@ -57,9 +57,505 @@
     "triage": false,
     "pull": false
   },
-  "branches": [],
+  "branches": [
+    {
+      "name": "auto",
+      "commit": {
+        "sha": "48dd601e3c74bab0522a76ec462f6eb70779062b",
+        "url": "https://api.github.com/repos/discord/core-foundation-rs/commits/48dd601e3c74bab0522a76ec462f6eb70779062b"
+      },
+      "protected": false
+    },
+    {
+      "name": "cargo-workspace",
+      "commit": {
+        "sha": "f0a2ed3edb193eccab5f75462834951a469f7ff5",
+        "url": "https://api.github.com/repos/discord/core-foundation-rs/commits/f0a2ed3edb193eccab5f75462834951a469f7ff5"
+      },
+      "protected": false
+    },
+    {
+      "name": "cocoa-0.18",
+      "commit": {
+        "sha": "d1b81762dbb2fa6e5490a9e807d6267f6527e042",
+        "url": "https://api.github.com/repos/discord/core-foundation-rs/commits/d1b81762dbb2fa6e5490a9e807d6267f6527e042"
+      },
+      "protected": false
+    },
+    {
+      "name": "constmut",
+      "commit": {
+        "sha": "53609f26ac87e7f5e9ad5c6aec50c507566a3bd6",
+        "url": "https://api.github.com/repos/discord/core-foundation-rs/commits/53609f26ac87e7f5e9ad5c6aec50c507566a3bd6"
+      },
+      "protected": false
+    },
+    {
+      "name": "core-text-v13",
+      "commit": {
+        "sha": "b2b92f8bce2a88f7f049fc8fdbe9442ce101339c",
+        "url": "https://api.github.com/repos/discord/core-foundation-rs/commits/b2b92f8bce2a88f7f049fc8fdbe9442ce101339c"
+      },
+      "protected": false
+    },
+    {
+      "name": "gleam",
+      "commit": {
+        "sha": "bec66aa8f87aa00f006c8f9c93e23ac8b1d16cc5",
+        "url": "https://api.github.com/repos/discord/core-foundation-rs/commits/bec66aa8f87aa00f006c8f9c93e23ac8b1d16cc5"
+      },
+      "protected": false
+    },
+    {
+      "name": "graphicsbump",
+      "commit": {
+        "sha": "5ad827808801441914e77ebbabe47b5eef8ef4ef",
+        "url": "https://api.github.com/repos/discord/core-foundation-rs/commits/5ad827808801441914e77ebbabe47b5eef8ef4ef"
+      },
+      "protected": false
+    },
+    {
+      "name": "jdm-patch-1",
+      "commit": {
+        "sha": "7ec88453f512ee4ba5c2dc3f37c272b8a9741072",
+        "url": "https://api.github.com/repos/discord/core-foundation-rs/commits/7ec88453f512ee4ba5c2dc3f37c272b8a9741072"
+      },
+      "protected": false
+    },
+    {
+      "name": "jdm-patch-2",
+      "commit": {
+        "sha": "1a76949f1377f08e9d872e9d2b6c3d0163f4baea",
+        "url": "https://api.github.com/repos/discord/core-foundation-rs/commits/1a76949f1377f08e9d872e9d2b6c3d0163f4baea"
+      },
+      "protected": false
+    },
+    {
+      "name": "jdm-patch-3",
+      "commit": {
+        "sha": "70275f5af1ac72e1ad22c672198126cf9fde3165",
+        "url": "https://api.github.com/repos/discord/core-foundation-rs/commits/70275f5af1ac72e1ad22c672198126cf9fde3165"
+      },
+      "protected": false
+    },
+    {
+      "name": "jdm-patch-4",
+      "commit": {
+        "sha": "c9bcf96e69f37553c95c3399a079ad0fde22a250",
+        "url": "https://api.github.com/repos/discord/core-foundation-rs/commits/c9bcf96e69f37553c95c3399a079ad0fde22a250"
+      },
+      "protected": false
+    },
+    {
+      "name": "jdm-patch-5",
+      "commit": {
+        "sha": "23afe7d78e9d7512b31f233569618c368611d391",
+        "url": "https://api.github.com/repos/discord/core-foundation-rs/commits/23afe7d78e9d7512b31f233569618c368611d391"
+      },
+      "protected": false
+    },
+    {
+      "name": "jdm-patch-6",
+      "commit": {
+        "sha": "0dec27a0fad405f085b945672ebf6b9513e052c3",
+        "url": "https://api.github.com/repos/discord/core-foundation-rs/commits/0dec27a0fad405f085b945672ebf6b9513e052c3"
+      },
+      "protected": false
+    },
+    {
+      "name": "jrmuizel-patch-1",
+      "commit": {
+        "sha": "0ab07de566eeb2946f1980635267ae28018f5253",
+        "url": "https://api.github.com/repos/discord/core-foundation-rs/commits/0ab07de566eeb2946f1980635267ae28018f5253"
+      },
+      "protected": false
+    },
+    {
+      "name": "jrmuizel-patch-2",
+      "commit": {
+        "sha": "3ea06fb10ac436c7b31dea3f050e6726380fa1ca",
+        "url": "https://api.github.com/repos/discord/core-foundation-rs/commits/3ea06fb10ac436c7b31dea3f050e6726380fa1ca"
+      },
+      "protected": false
+    },
+    {
+      "name": "mac-font",
+      "commit": {
+        "sha": "17da0010b3b7fcea880ff088ad43399901f5d05b",
+        "url": "https://api.github.com/repos/discord/core-foundation-rs/commits/17da0010b3b7fcea880ff088ad43399901f5d05b"
+      },
+      "protected": false
+    },
+    {
+      "name": "major-bump",
+      "commit": {
+        "sha": "56d8b6c161ad3db0adc59853951163658b3e97b1",
+        "url": "https://api.github.com/repos/discord/core-foundation-rs/commits/56d8b6c161ad3db0adc59853951163658b3e97b1"
+      },
+      "protected": false
+    },
+    {
+      "name": "master",
+      "commit": {
+        "sha": "d4b17634e5d94e521ac00b7ed9fb8532a672c78f",
+        "url": "https://api.github.com/repos/discord/core-foundation-rs/commits/d4b17634e5d94e521ac00b7ed9fb8532a672c78f"
+      },
+      "protected": false
+    },
+    {
+      "name": "merge-it-all",
+      "commit": {
+        "sha": "0a120dff5c4832c10b71130ba31f426f4d1797e9",
+        "url": "https://api.github.com/repos/discord/core-foundation-rs/commits/0a120dff5c4832c10b71130ba31f426f4d1797e9"
+      },
+      "protected": false
+    },
+    {
+      "name": "more-osx",
+      "commit": {
+        "sha": "9d0a2ac217f90d8d959d4097262f22bf5e56e622",
+        "url": "https://api.github.com/repos/discord/core-foundation-rs/commits/9d0a2ac217f90d8d959d4097262f22bf5e56e622"
+      },
+      "protected": false
+    },
+    {
+      "name": "no-gleam-iosurface",
+      "commit": {
+        "sha": "68ddb7e51d6ec15de2c9d608dff6735a3ce68f41",
+        "url": "https://api.github.com/repos/discord/core-foundation-rs/commits/68ddb7e51d6ec15de2c9d608dff6735a3ce68f41"
+      },
+      "protected": false
+    },
+    {
+      "name": "os-features",
+      "commit": {
+        "sha": "3255c5602647a60d98f2a62701458c57ea6125c0",
+        "url": "https://api.github.com/repos/discord/core-foundation-rs/commits/3255c5602647a60d98f2a62701458c57ea6125c0"
+      },
+      "protected": false
+    },
+    {
+      "name": "publish",
+      "commit": {
+        "sha": "239333395789280214f371287dcd6ee04d3b6f88",
+        "url": "https://api.github.com/repos/discord/core-foundation-rs/commits/239333395789280214f371287dcd6ee04d3b6f88"
+      },
+      "protected": false
+    },
+    {
+      "name": "scrollhide",
+      "commit": {
+        "sha": "a5935351b51c142072eb23f1faa9b1c4a08e7ad5",
+        "url": "https://api.github.com/repos/discord/core-foundation-rs/commits/a5935351b51c142072eb23f1faa9b1c4a08e7ad5"
+      },
+      "protected": false
+    },
+    {
+      "name": "threadsafe-fonts",
+      "commit": {
+        "sha": "24d9ccc2c36a68a3e0eff675122de808cf3e808f",
+        "url": "https://api.github.com/repos/discord/core-foundation-rs/commits/24d9ccc2c36a68a3e0eff675122de808cf3e808f"
+      },
+      "protected": false
+    },
+    {
+      "name": "typed-variations",
+      "commit": {
+        "sha": "e614c2df260f778596b1cbf6c5ffd15b3c22be18",
+        "url": "https://api.github.com/repos/discord/core-foundation-rs/commits/e614c2df260f778596b1cbf6c5ffd15b3c22be18"
+      },
+      "protected": false
+    },
+    {
+      "name": "updateversion",
+      "commit": {
+        "sha": "5d7753a78a9f7fea54c7e2c40641702f037e3089",
+        "url": "https://api.github.com/repos/discord/core-foundation-rs/commits/5d7753a78a9f7fea54c7e2c40641702f037e3089"
+      },
+      "protected": false
+    },
+    {
+      "name": "v0.8.3",
+      "commit": {
+        "sha": "d55eaf77ee1e49ce1925daeab0e8ebe16cc00652",
+        "url": "https://api.github.com/repos/discord/core-foundation-rs/commits/d55eaf77ee1e49ce1925daeab0e8ebe16cc00652"
+      },
+      "protected": false
+    }
+  ],
   "last5": {
-    "commits": [],
+    "commits": [
+      {
+        "sha": "d4b17634e5d94e521ac00b7ed9fb8532a672c78f",
+        "node_id": "MDY6Q29tbWl0MzM3ODQwNjIxOmQ0YjE3NjM0ZTVkOTRlNTIxYWMwMGI3ZWQ5ZmI4NTMyYTY3MmM3OGY=",
+        "commit": {
+          "author": {
+            "name": "Mack Straight",
+            "email": "mack@discordapp.com",
+            "date": "2021-02-03T08:00:29Z"
+          },
+          "committer": {
+            "name": "Mack Straight",
+            "email": "mack@discordapp.com",
+            "date": "2021-02-03T08:00:29Z"
+          },
+          "message": "mistakes were made",
+          "tree": {
+            "sha": "ecf55c04e0a66d53a3b3ef1d14ce479bd2d7cba1",
+            "url": "https://api.github.com/repos/discord/core-foundation-rs/git/trees/ecf55c04e0a66d53a3b3ef1d14ce479bd2d7cba1"
+          },
+          "url": "https://api.github.com/repos/discord/core-foundation-rs/git/commits/d4b17634e5d94e521ac00b7ed9fb8532a672c78f",
+          "comment_count": 0,
+          "verification": {
+            "verified": false,
+            "reason": "unsigned",
+            "signature": null,
+            "payload": null
+          }
+        },
+        "url": "https://api.github.com/repos/discord/core-foundation-rs/commits/d4b17634e5d94e521ac00b7ed9fb8532a672c78f",
+        "author": {
+          "login": "eiz",
+          "id": 405658,
+          "node_id": "MDQ6VXNlcjQwNTY1OA==",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/eiz",
+          "type": "User",
+          "site_admin": false
+        },
+        "committer": {
+          "login": "eiz",
+          "id": 405658,
+          "node_id": "MDQ6VXNlcjQwNTY1OA==",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/eiz",
+          "type": "User",
+          "site_admin": false
+        },
+        "parents": [
+          {
+            "sha": "d03cecb05cf6036102e40719b888fbed3366735f",
+            "url": "https://api.github.com/repos/discord/core-foundation-rs/commits/d03cecb05cf6036102e40719b888fbed3366735f"
+          }
+        ]
+      },
+      {
+        "sha": "d03cecb05cf6036102e40719b888fbed3366735f",
+        "node_id": "MDY6Q29tbWl0MzM3ODQwNjIxOmQwM2NlY2IwNWNmNjAzNjEwMmU0MDcxOWI4ODhmYmVkMzM2NjczNWY=",
+        "commit": {
+          "author": {
+            "name": "Mack Straight",
+            "email": "mack@discordapp.com",
+            "date": "2021-02-03T07:03:42Z"
+          },
+          "committer": {
+            "name": "Mack Straight",
+            "email": "mack@discordapp.com",
+            "date": "2021-02-03T07:03:42Z"
+          },
+          "message": "add IOSurface-backed CGContext support",
+          "tree": {
+            "sha": "0b6c289c898c314db86619b9ff101c48223115b9",
+            "url": "https://api.github.com/repos/discord/core-foundation-rs/git/trees/0b6c289c898c314db86619b9ff101c48223115b9"
+          },
+          "url": "https://api.github.com/repos/discord/core-foundation-rs/git/commits/d03cecb05cf6036102e40719b888fbed3366735f",
+          "comment_count": 0,
+          "verification": {
+            "verified": false,
+            "reason": "unsigned",
+            "signature": null,
+            "payload": null
+          }
+        },
+        "url": "https://api.github.com/repos/discord/core-foundation-rs/commits/d03cecb05cf6036102e40719b888fbed3366735f",
+        "author": {
+          "login": "eiz",
+          "id": 405658,
+          "node_id": "MDQ6VXNlcjQwNTY1OA==",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/eiz",
+          "type": "User",
+          "site_admin": false
+        },
+        "committer": {
+          "login": "eiz",
+          "id": 405658,
+          "node_id": "MDQ6VXNlcjQwNTY1OA==",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/eiz",
+          "type": "User",
+          "site_admin": false
+        },
+        "parents": [
+          {
+            "sha": "1bde11fdd822251ca1d4e19e81d6da6a9eaa8e49",
+            "url": "https://api.github.com/repos/discord/core-foundation-rs/commits/1bde11fdd822251ca1d4e19e81d6da6a9eaa8e49"
+          }
+        ]
+      },
+      {
+        "sha": "1bde11fdd822251ca1d4e19e81d6da6a9eaa8e49",
+        "node_id": "MDY6Q29tbWl0MzM3ODQwNjIxOjFiZGUxMWZkZDgyMjI1MWNhMWQ0ZTE5ZTgxZDZkYTZhOWVhYThlNDk=",
+        "commit": {
+          "author": {
+            "name": "Mack Straight",
+            "email": "mack@discordapp.com",
+            "date": "2021-01-30T10:19:58Z"
+          },
+          "committer": {
+            "name": "Mack Straight",
+            "email": "mack@discordapp.com",
+            "date": "2021-01-30T10:19:58Z"
+          },
+          "message": "small cleanup",
+          "tree": {
+            "sha": "e7af7b4582b57478e641535d6802f437af3ed6ec",
+            "url": "https://api.github.com/repos/discord/core-foundation-rs/git/trees/e7af7b4582b57478e641535d6802f437af3ed6ec"
+          },
+          "url": "https://api.github.com/repos/discord/core-foundation-rs/git/commits/1bde11fdd822251ca1d4e19e81d6da6a9eaa8e49",
+          "comment_count": 0,
+          "verification": {
+            "verified": false,
+            "reason": "unsigned",
+            "signature": null,
+            "payload": null
+          }
+        },
+        "url": "https://api.github.com/repos/discord/core-foundation-rs/commits/1bde11fdd822251ca1d4e19e81d6da6a9eaa8e49",
+        "author": {
+          "login": "eiz",
+          "id": 405658,
+          "node_id": "MDQ6VXNlcjQwNTY1OA==",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/eiz",
+          "type": "User",
+          "site_admin": false
+        },
+        "committer": {
+          "login": "eiz",
+          "id": 405658,
+          "node_id": "MDQ6VXNlcjQwNTY1OA==",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/eiz",
+          "type": "User",
+          "site_admin": false
+        },
+        "parents": [
+          {
+            "sha": "d7476ff32d375fb9cb43c34c0359ffd7029a11ff",
+            "url": "https://api.github.com/repos/discord/core-foundation-rs/commits/d7476ff32d375fb9cb43c34c0359ffd7029a11ff"
+          }
+        ]
+      },
+      {
+        "sha": "d7476ff32d375fb9cb43c34c0359ffd7029a11ff",
+        "node_id": "MDY6Q29tbWl0MzM3ODQwNjIxOmQ3NDc2ZmYzMmQzNzVmYjljYjQzYzM0YzAzNTlmZmQ3MDI5YTExZmY=",
+        "commit": {
+          "author": {
+            "name": "Mack Straight",
+            "email": "mack@discordapp.com",
+            "date": "2021-01-28T06:04:33Z"
+          },
+          "committer": {
+            "name": "Mack Straight",
+            "email": "mack@discordapp.com",
+            "date": "2021-01-28T06:04:33Z"
+          },
+          "message": "fix window list option constants",
+          "tree": {
+            "sha": "c62c563fd20950c7b8f143f407efb5829ec1ba6c",
+            "url": "https://api.github.com/repos/discord/core-foundation-rs/git/trees/c62c563fd20950c7b8f143f407efb5829ec1ba6c"
+          },
+          "url": "https://api.github.com/repos/discord/core-foundation-rs/git/commits/d7476ff32d375fb9cb43c34c0359ffd7029a11ff",
+          "comment_count": 0,
+          "verification": {
+            "verified": false,
+            "reason": "unsigned",
+            "signature": null,
+            "payload": null
+          }
+        },
+        "url": "https://api.github.com/repos/discord/core-foundation-rs/commits/d7476ff32d375fb9cb43c34c0359ffd7029a11ff",
+        "author": {
+          "login": "eiz",
+          "id": 405658,
+          "node_id": "MDQ6VXNlcjQwNTY1OA==",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/eiz",
+          "type": "User",
+          "site_admin": false
+        },
+        "committer": {
+          "login": "eiz",
+          "id": 405658,
+          "node_id": "MDQ6VXNlcjQwNTY1OA==",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/eiz",
+          "type": "User",
+          "site_admin": false
+        },
+        "parents": [
+          {
+            "sha": "43d085285728239c1e313ce044674c8e1584e7af",
+            "url": "https://api.github.com/repos/discord/core-foundation-rs/commits/43d085285728239c1e313ce044674c8e1584e7af"
+          }
+        ]
+      },
+      {
+        "sha": "43d085285728239c1e313ce044674c8e1584e7af",
+        "node_id": "MDY6Q29tbWl0MzM3ODQwNjIxOjQzZDA4NTI4NTcyODIzOWMxZTMxM2NlMDQ0Njc0YzhlMTU4NGU3YWY=",
+        "commit": {
+          "author": {
+            "name": "Mack Straight",
+            "email": "mack@discordapp.com",
+            "date": "2021-01-27T18:21:17Z"
+          },
+          "committer": {
+            "name": "Mack Straight",
+            "email": "mack@discordapp.com",
+            "date": "2021-01-27T18:21:17Z"
+          },
+          "message": "display stream constants",
+          "tree": {
+            "sha": "98cab445dcf50ebb852696d5728a159d1c2305e1",
+            "url": "https://api.github.com/repos/discord/core-foundation-rs/git/trees/98cab445dcf50ebb852696d5728a159d1c2305e1"
+          },
+          "url": "https://api.github.com/repos/discord/core-foundation-rs/git/commits/43d085285728239c1e313ce044674c8e1584e7af",
+          "comment_count": 0,
+          "verification": {
+            "verified": false,
+            "reason": "unsigned",
+            "signature": null,
+            "payload": null
+          }
+        },
+        "url": "https://api.github.com/repos/discord/core-foundation-rs/commits/43d085285728239c1e313ce044674c8e1584e7af",
+        "author": {
+          "login": "eiz",
+          "id": 405658,
+          "node_id": "MDQ6VXNlcjQwNTY1OA==",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/eiz",
+          "type": "User",
+          "site_admin": false
+        },
+        "committer": {
+          "login": "eiz",
+          "id": 405658,
+          "node_id": "MDQ6VXNlcjQwNTY1OA==",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/eiz",
+          "type": "User",
+          "site_admin": false
+        },
+        "parents": [
+          {
+            "sha": "eb8270289f39628d716a8ba21348bac830315fa7",
+            "url": "https://api.github.com/repos/discord/core-foundation-rs/commits/eb8270289f39628d716a8ba21348bac830315fa7"
+          }
+        ]
+      }
+    ],
     "releases": [],
     "issues": [],
     "pullRequests": []

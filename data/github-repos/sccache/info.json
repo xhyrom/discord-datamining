@@ -59,8 +59,340 @@
   },
   "branches": [],
   "last5": {
-    "commits": [],
-    "releases": [],
+    "commits": [
+      {
+        "sha": "6628e1f70db3d583cb5e79210603ad878de3d315",
+        "node_id": "MDY6Q29tbWl0MzA4NTIzMzQ1OjY2MjhlMWY3MGRiM2Q1ODNjYjVlNzkyMTA2MDNhZDg3OGRlM2QzMTU=",
+        "commit": {
+          "author": {
+            "name": "Sumit",
+            "email": "sum12@users.noreply.github.com",
+            "date": "2020-09-28T20:44:15Z"
+          },
+          "committer": {
+            "name": "GitHub",
+            "email": "noreply@github.com",
+            "date": "2020-09-28T20:44:15Z"
+          },
+          "message": "New entry in ServerStartup enum to indicate AddrInUse Error (#840)\n\nwhen cargo fires of parallel build jobs, we encounter a race to start\r\nthe server if the server is not already running to start the server\r\n\r\nThis is an AddrInUse error causing atleast one of the parallel build\r\njobs fail.\r\n\r\nThis patch adds a new entry to ServerStartup enum to clearly communicate\r\nthe AddrInUse error from the server to the client that requested the\r\nserver start. Using this information the client can retry connecting\r\ninstead of failing.",
+          "tree": {
+            "sha": "da398656f6761d1bcae21b9d0b92576abb39a6ea",
+            "url": "https://api.github.com/repos/discord/sccache/git/trees/da398656f6761d1bcae21b9d0b92576abb39a6ea"
+          },
+          "url": "https://api.github.com/repos/discord/sccache/git/commits/6628e1f70db3d583cb5e79210603ad878de3d315",
+          "comment_count": 0,
+          "verification": {
+            "verified": true,
+            "reason": "valid",
+            "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsBcBAABCAAQBQJfcksfCRBK7hj4Ov3rIwAAdHIIAA65h9KTHPlt+syYJTT5NBrR\n7zQLxLUwNuEUxfbZ2oZWE9Z5/VYiuQsyLYWUTwE+nqJMFHkljOoGENOyJXEPCywe\nmVQ980hqZjCm94Mrut4SYwsDRxjcsL0VafCAbdexWrfaM6diTOescSCHt39dFaYF\nQqxD0/3lQ2YoNAhtSFSGpzjoi130cHZILYWg5ryeIvOAEIi4KplQAbMifymJa8hC\nyp+6j4Cfabl1WuYQeyP6o4LGcrBFsUeI+a6TMtGPRcHUV2F7qjXcSLUZ1cRerhYQ\n/d98x7neKw+B4xbmUYfaQ6Szpv+gFj918r2Jp3WwmllzKnKZFSVoz6uu+p8EJuE=\n=GwD/\n-----END PGP SIGNATURE-----\n",
+            "payload": "tree da398656f6761d1bcae21b9d0b92576abb39a6ea\nparent ea4d1464625e507a287be913697494a37fe7343c\nauthor Sumit <sum12@users.noreply.github.com> 1601325855 +0200\ncommitter GitHub <noreply@github.com> 1601325855 -0500\n\nNew entry in ServerStartup enum to indicate AddrInUse Error (#840)\n\nwhen cargo fires of parallel build jobs, we encounter a race to start\r\nthe server if the server is not already running to start the server\r\n\r\nThis is an AddrInUse error causing atleast one of the parallel build\r\njobs fail.\r\n\r\nThis patch adds a new entry to ServerStartup enum to clearly communicate\r\nthe AddrInUse error from the server to the client that requested the\r\nserver start. Using this information the client can retry connecting\r\ninstead of failing."
+          }
+        },
+        "url": "https://api.github.com/repos/discord/sccache/commits/6628e1f70db3d583cb5e79210603ad878de3d315",
+        "author": {
+          "login": "sum12",
+          "id": 3285267,
+          "node_id": "MDQ6VXNlcjMyODUyNjc=",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/sum12",
+          "type": "User",
+          "site_admin": false
+        },
+        "committer": {
+          "login": "web-flow",
+          "id": 19864447,
+          "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/web-flow",
+          "type": "User",
+          "site_admin": false
+        },
+        "parents": [
+          {
+            "sha": "ea4d1464625e507a287be913697494a37fe7343c",
+            "url": "https://api.github.com/repos/discord/sccache/commits/ea4d1464625e507a287be913697494a37fe7343c"
+          }
+        ]
+      },
+      {
+        "sha": "ea4d1464625e507a287be913697494a37fe7343c",
+        "node_id": "MDY6Q29tbWl0MzA4NTIzMzQ1OmVhNGQxNDY0NjI1ZTUwN2EyODdiZTkxMzY5NzQ5NGEzN2ZlNzM0M2M=",
+        "commit": {
+          "author": {
+            "name": "Daniel Holbert",
+            "email": "dholbert@cs.stanford.edu",
+            "date": "2020-09-17T00:51:29Z"
+          },
+          "committer": {
+            "name": "Mike Hommey",
+            "email": "mh-github@glandium.org",
+            "date": "2020-09-17T01:38:46Z"
+          },
+          "message": "Revert \"Bump to tiny-http 0.7.0 (#830)\" because it caused a regression, #846.\n\nThis reverts commit bdaa65aead6053ff707b1c20320e213d29d4bb55.",
+          "tree": {
+            "sha": "18218f6390a9ba19ee9c223e15cd9d762517dcd2",
+            "url": "https://api.github.com/repos/discord/sccache/git/trees/18218f6390a9ba19ee9c223e15cd9d762517dcd2"
+          },
+          "url": "https://api.github.com/repos/discord/sccache/git/commits/ea4d1464625e507a287be913697494a37fe7343c",
+          "comment_count": 0,
+          "verification": {
+            "verified": false,
+            "reason": "unsigned",
+            "signature": null,
+            "payload": null
+          }
+        },
+        "url": "https://api.github.com/repos/discord/sccache/commits/ea4d1464625e507a287be913697494a37fe7343c",
+        "author": {
+          "login": "dholbert",
+          "id": 426803,
+          "node_id": "MDQ6VXNlcjQyNjgwMw==",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/dholbert",
+          "type": "User",
+          "site_admin": false
+        },
+        "committer": {
+          "login": "glandium",
+          "id": 1038527,
+          "node_id": "MDQ6VXNlcjEwMzg1Mjc=",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/glandium",
+          "type": "User",
+          "site_admin": false
+        },
+        "parents": [
+          {
+            "sha": "5197fbbca5b6a07bcec7e91df8b0ca8d0f32e8da",
+            "url": "https://api.github.com/repos/discord/sccache/commits/5197fbbca5b6a07bcec7e91df8b0ca8d0f32e8da"
+          }
+        ]
+      },
+      {
+        "sha": "5197fbbca5b6a07bcec7e91df8b0ca8d0f32e8da",
+        "node_id": "MDY6Q29tbWl0MzA4NTIzMzQ1OjUxOTdmYmJjYTViNmEwN2JjZWM3ZTkxZGY4YjBjYThkMGYzMmU4ZGE=",
+        "commit": {
+          "author": {
+            "name": "Doug Thayer",
+            "email": "dougathayer@gmail.com",
+            "date": "2020-09-10T01:10:12Z"
+          },
+          "committer": {
+            "name": "Nathan Froyd",
+            "email": "froydnj@gmail.com",
+            "date": "2020-09-10T19:26:38Z"
+          },
+          "message": "Include -fsanitizer-blacklist in common_args",
+          "tree": {
+            "sha": "03705ba91b91f91f321bc158d0393753557ad2bd",
+            "url": "https://api.github.com/repos/discord/sccache/git/trees/03705ba91b91f91f321bc158d0393753557ad2bd"
+          },
+          "url": "https://api.github.com/repos/discord/sccache/git/commits/5197fbbca5b6a07bcec7e91df8b0ca8d0f32e8da",
+          "comment_count": 0,
+          "verification": {
+            "verified": false,
+            "reason": "unsigned",
+            "signature": null,
+            "payload": null
+          }
+        },
+        "url": "https://api.github.com/repos/discord/sccache/commits/5197fbbca5b6a07bcec7e91df8b0ca8d0f32e8da",
+        "author": {
+          "login": "squarewave",
+          "id": 4060604,
+          "node_id": "MDQ6VXNlcjQwNjA2MDQ=",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/squarewave",
+          "type": "User",
+          "site_admin": false
+        },
+        "committer": {
+          "login": "froydnj",
+          "id": 151096,
+          "node_id": "MDQ6VXNlcjE1MTA5Ng==",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/froydnj",
+          "type": "User",
+          "site_admin": false
+        },
+        "parents": [
+          {
+            "sha": "60573ac837ab41ee9e8cb7394712e1ce3f49c70d",
+            "url": "https://api.github.com/repos/discord/sccache/commits/60573ac837ab41ee9e8cb7394712e1ce3f49c70d"
+          }
+        ]
+      },
+      {
+        "sha": "60573ac837ab41ee9e8cb7394712e1ce3f49c70d",
+        "node_id": "MDY6Q29tbWl0MzA4NTIzMzQ1OjYwNTczYWM4MzdhYjQxZWU5ZThjYjczOTQ3MTJlMWNlM2Y0OWM3MGQ=",
+        "commit": {
+          "author": {
+            "name": "Doug Thayer",
+            "email": "dougathayer@gmail.com",
+            "date": "2020-09-09T20:39:48Z"
+          },
+          "committer": {
+            "name": "GitHub",
+            "email": "noreply@github.com",
+            "date": "2020-09-09T20:39:48Z"
+          },
+          "message": "Consume sanitizer blacklist as extra hash in msvc (#842)",
+          "tree": {
+            "sha": "3501048bb674b8e7b22197c717e7c3254836b56d",
+            "url": "https://api.github.com/repos/discord/sccache/git/trees/3501048bb674b8e7b22197c717e7c3254836b56d"
+          },
+          "url": "https://api.github.com/repos/discord/sccache/git/commits/60573ac837ab41ee9e8cb7394712e1ce3f49c70d",
+          "comment_count": 0,
+          "verification": {
+            "verified": true,
+            "reason": "valid",
+            "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsBcBAABCAAQBQJfWT2UCRBK7hj4Ov3rIwAAdHIIAKLB404UCJP5uRpgM4IEemjM\n32wgIU74QGRhMoZP6waV+jm7i8TU4hpkA1H/pEY0PZmjlAoExnJjoqGVmp64+JWe\nK++fJf+tRTVj6I8kFwjCO+vvMzYNNxXMP1WD4OvPeq1FPyZKfT45CDF+Eta8JBZF\nxgtHfz2Ac0f4Qb9mfdroX0/wQZd1eAgu4GynB0vPPlP58ouRUj30pki0+MiePhcQ\nwiFsMZiHx1BDb6bvw5ER2BxwwsjEOYQB+XU4ohZ7JvdMqqvaDgnz7RFcyl7IRXbt\nvW+7IQAd1M0dYQNuECTFv9EqvGK5PQBAJ4Yc6u2rG5CASzy5LT07Gm3N93RBDoU=\n=jy7e\n-----END PGP SIGNATURE-----\n",
+            "payload": "tree 3501048bb674b8e7b22197c717e7c3254836b56d\nparent 030c80a15e0b1aba0e61df264b320a21bb21fb15\nauthor Doug Thayer <dougathayer@gmail.com> 1599683988 -0500\ncommitter GitHub <noreply@github.com> 1599683988 -0400\n\nConsume sanitizer blacklist as extra hash in msvc (#842)\n\n"
+          }
+        },
+        "url": "https://api.github.com/repos/discord/sccache/commits/60573ac837ab41ee9e8cb7394712e1ce3f49c70d",
+        "author": {
+          "login": "squarewave",
+          "id": 4060604,
+          "node_id": "MDQ6VXNlcjQwNjA2MDQ=",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/squarewave",
+          "type": "User",
+          "site_admin": false
+        },
+        "committer": {
+          "login": "web-flow",
+          "id": 19864447,
+          "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/web-flow",
+          "type": "User",
+          "site_admin": false
+        },
+        "parents": [
+          {
+            "sha": "030c80a15e0b1aba0e61df264b320a21bb21fb15",
+            "url": "https://api.github.com/repos/discord/sccache/commits/030c80a15e0b1aba0e61df264b320a21bb21fb15"
+          }
+        ]
+      },
+      {
+        "sha": "030c80a15e0b1aba0e61df264b320a21bb21fb15",
+        "node_id": "MDY6Q29tbWl0MzA4NTIzMzQ1OjAzMGM4MGExNWUwYjFhYmEwZTYxZGYyNjRiMzIwYTIxYmIyMWZiMTU=",
+        "commit": {
+          "author": {
+            "name": "rickystewart",
+            "email": "rstewart@mozilla.com",
+            "date": "2020-08-25T19:51:47Z"
+          },
+          "committer": {
+            "name": "GitHub",
+            "email": "noreply@github.com",
+            "date": "2020-08-25T19:51:47Z"
+          },
+          "message": "In case we fail to read the compressed content from the cache, treat the failure as a forced recache. This prevents us from failing build jobs unconditionally if cache entries are corrupt (or in case of other sporadic failures), in which case we should continue on with force-recompiling and recaching. (#836)",
+          "tree": {
+            "sha": "c922d83d42769ca787d651f81e90cbe0eeea2bee",
+            "url": "https://api.github.com/repos/discord/sccache/git/trees/c922d83d42769ca787d651f81e90cbe0eeea2bee"
+          },
+          "url": "https://api.github.com/repos/discord/sccache/git/commits/030c80a15e0b1aba0e61df264b320a21bb21fb15",
+          "comment_count": 0,
+          "verification": {
+            "verified": true,
+            "reason": "valid",
+            "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsBcBAABCAAQBQJfRWvTCRBK7hj4Ov3rIwAAdHIIAACxLjlLL6L1c7HyJnmK5lD/\nzcn0js+f5PeYZwJuBNugQ/H87w/jFTQhcBIHQ9lKgrSxQUh4fxHIKNEKBOaV/6oi\nSwhM779cNmkzfSmao+XjxQtI0tDz0qur+ji/UleeC020OrJoaIVMGgM4edMFBInN\nv2Sli3K4fz/gfc6om/+gAOydJuwYlvJXrkAaQlp700JZWt2Ovo2J7sfwRavU84tl\nlJHdMWs5NiHqf58c9B2xnOVyC6e/SscVGmzx/03ZGe7MF7JKyTl2ebgReUAIjskS\nAg+VtnDq0CElxk/+b4xQlSzy+QrPbhLN2dUvzgsVhEGzIeU0ocD5xUdQqtSAzRM=\n=vQ0Z\n-----END PGP SIGNATURE-----\n",
+            "payload": "tree c922d83d42769ca787d651f81e90cbe0eeea2bee\nparent bdaa65aead6053ff707b1c20320e213d29d4bb55\nauthor rickystewart <rstewart@mozilla.com> 1598385107 -0500\ncommitter GitHub <noreply@github.com> 1598385107 -0500\n\nIn case we fail to read the compressed content from the cache, treat the failure as a forced recache. This prevents us from failing build jobs unconditionally if cache entries are corrupt (or in case of other sporadic failures), in which case we should continue on with force-recompiling and recaching. (#836)\n\n"
+          }
+        },
+        "url": "https://api.github.com/repos/discord/sccache/commits/030c80a15e0b1aba0e61df264b320a21bb21fb15",
+        "author": null,
+        "committer": {
+          "login": "web-flow",
+          "id": 19864447,
+          "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/web-flow",
+          "type": "User",
+          "site_admin": false
+        },
+        "parents": [
+          {
+            "sha": "bdaa65aead6053ff707b1c20320e213d29d4bb55",
+            "url": "https://api.github.com/repos/discord/sccache/commits/bdaa65aead6053ff707b1c20320e213d29d4bb55"
+          }
+        ]
+      }
+    ],
+    "releases": [
+      {
+        "url": "https://api.github.com/repos/discord/sccache/releases/55786619",
+        "id": 55786619,
+        "author": {
+          "login": "jdost",
+          "id": 882537,
+          "node_id": "MDQ6VXNlcjg4MjUzNw==",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/jdost",
+          "type": "User",
+          "site_admin": false
+        },
+        "node_id": "MDc6UmVsZWFzZTU1Nzg2NjE5",
+        "tag_name": "v0.2.16-alpha.0",
+        "target_commitish": "oauth_key_format",
+        "name": "0.2.16-alpha.0",
+        "draft": false,
+        "prerelease": true,
+        "created_at": "2021-04-28T15:39:52Z",
+        "published_at": "2021-12-21T23:05:13Z",
+        "assets": [
+          {
+            "url": "https://api.github.com/repos/discord/sccache/releases/assets/52313818",
+            "id": 52313818,
+            "node_id": "RA_kwDOEmOxUc4DHj7a",
+            "name": "sccache-v0.2.16-alpha.0-x86_64-unknown-linux-musl.tar.gz",
+            "label": null,
+            "uploader": {
+              "login": "jdost",
+              "id": 882537,
+              "node_id": "MDQ6VXNlcjg4MjUzNw==",
+              "gravatar_id": "",
+              "url": "https://api.github.com/users/jdost",
+              "type": "User",
+              "site_admin": false
+            },
+            "content_type": "application/gzip",
+            "state": "uploaded",
+            "size": 7610267,
+            "download_count": 8752,
+            "created_at": "2021-12-21T23:04:16Z",
+            "updated_at": "2021-12-21T23:04:20Z"
+          },
+          {
+            "url": "https://api.github.com/repos/discord/sccache/releases/assets/52313819",
+            "id": 52313819,
+            "node_id": "RA_kwDOEmOxUc4DHj7b",
+            "name": "sccache-v0.2.16-alpha.0-x86_64-unknown-linux-musl.tar.gz.sha256",
+            "label": null,
+            "uploader": {
+              "login": "jdost",
+              "id": 882537,
+              "node_id": "MDQ6VXNlcjg4MjUzNw==",
+              "gravatar_id": "",
+              "url": "https://api.github.com/users/jdost",
+              "type": "User",
+              "site_admin": false
+            },
+            "content_type": "application/octet-stream",
+            "state": "uploaded",
+            "size": 64,
+            "download_count": 1,
+            "created_at": "2021-12-21T23:04:20Z",
+            "updated_at": "2021-12-21T23:04:20Z"
+          }
+        ],
+        "body": "Branch including the GCS OAuth fixes pending in #992"
+      }
+    ],
     "issues": [],
     "pullRequests": []
   }
