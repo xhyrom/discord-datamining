@@ -85957,14 +85957,14 @@ strong {
     }
 }
 
-.gameNightPoster-1yQI8o {
+.poster-3eY79J {
     width: 584px;
     height: auto;
     margin: 16px 0;
     border-radius: 12px
 }
 
-.gameNightDivider-1-BRRA {
+.posterDivider-1a_4Ff {
     height: 1px;
     width: 100%;
     background-color: var(--background-modifier-accent)
@@ -124454,19 +124454,19 @@ input::-webkit-outer-spin-button {
     padding: 32px
 }
 
-.gameNightVideo-1zyiR3 {
+.poster-iN2kh_ {
     height: auto;
     margin-top: 16px;
     border-radius: 12px
 }
 
-.gameNightVideo-1zyiR3,
-.gameNightVideoDivider-1nJzoK {
+.poster-iN2kh_,
+.posterDivider-3SKtXO {
     width: calc(100% - 28px);
     margin-left: 16px
 }
 
-.gameNightVideoDivider-1nJzoK {
+.posterDivider-3SKtXO {
     height: 1px;
     margin-top: 15px;
     background-color: var(--background-modifier-accent)
@@ -153597,4 +153597,4 @@ html .invoiceCancelRow-dVOR64 {
     flex-direction: column
 }
 
-/*# sourceMappingURL=40532.3dc3b02f6f247ed246f1.css.map*/
+/*# sourceMappingURL=40532.ef427a9857b82349d2e5.css.map*/
