@@ -57,7 +57,16 @@
     "triage": false,
     "pull": false
   },
-  "branches": [],
+  "branches": [
+    {
+      "name": "main",
+      "commit": {
+        "sha": "ab74daa2b597722a09e314c8987e0f8b34bb86dc",
+        "url": "https://api.github.com/repos/discord/discord-interactions-python/commits/ab74daa2b597722a09e314c8987e0f8b34bb86dc"
+      },
+      "protected": false
+    }
+  ],
   "last5": {
     "commits": [
       {
