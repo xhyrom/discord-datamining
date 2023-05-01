@@ -152465,6 +152465,29 @@ html .invoiceCancelRow-3s2UuC {
     color: var(--text-link)
 }
 
+.acronym-25Rlq_ {
+    width: 40px;
+    height: 40px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    background-color: var(--background-secondary-alt);
+    color: var(--text-normal);
+    font-weight: 500;
+    line-height: 1.2em;
+    white-space: nowrap;
+    -webkit-box-flex: 0;
+    -ms-flex: none;
+    flex: none;
+    border-radius: 20px
+}
+
 .contentPadding-3hHMcr {
     padding-left: 16px;
     padding-right: 16px
@@ -153789,4 +153812,4 @@ html .invoiceCancelRow-dVOR64 {
     flex-direction: column
 }
 
-/*# sourceMappingURL=40532.41a85d9cdcb170a760fb.css.map*/
+/*# sourceMappingURL=40532.3bbd9af8fd11d71cc225.css.map*/
