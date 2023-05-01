@@ -132384,22 +132384,42 @@ html .invoiceCancelRow-3s2UuC {
 
 .detailsOuterContainer-150Qfh {
     position: relative;
-    width: 100%
-}
-
-.detailsInnerContainer-2pazjp {
+    width: 100%;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center
+}
+
+.detailsInnerContainer-2pazjp {
+    position: relative;
+    max-width: 1200px;
+    width: calc(100% - 32px);
+    margin: 0 16px;
+    -ms-flex-line-pack: start
+}
+
+.detailsInnerContainer-2pazjp,
+.detailsInnerInnerContainer-1mOWFu {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    align-content: flex-start
+}
+
+.detailsInnerInnerContainer-1mOWFu {
     position: absolute;
     -ms-flex-wrap: wrap-reverse;
     flex-wrap: wrap-reverse;
-    top: -64px;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    top: max(-7vw, -160px);
     left: 0;
-    width: calc(100% - 32px);
-    margin: 0 16px;
+    width: 100%;
     -ms-flex-line-pack: start;
-    align-content: flex-start;
     gap: 16px;
     padding-bottom: 64px
 }
@@ -132411,23 +132431,15 @@ html .invoiceCancelRow-3s2UuC {
 }
 
 .activityDetailsContainer-2xgfpn {
-    -webkit-box-flex: 1;
-    -ms-flex: 1 1 600px;
-    flex: 1 1 600px;
+    -webkit-box-flex: 5;
+    -ms-flex: 5 1 400px;
+    flex: 5 1 400px;
     min-width: 0;
     border-radius: 12px;
     background-color: var(--background-secondary-alt);
     padding: 24px;
     -webkit-box-shadow: var(--elevation-high);
     box-shadow: var(--elevation-high)
-}
-
-.detailsHeader-OAqvP7 {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-wrap: wrap;
-    flex-wrap: wrap
 }
 
 .detailsTitle-3fOPi7 {
@@ -132439,20 +132451,22 @@ html .invoiceCancelRow-3s2UuC {
 
 .detailsDetails-3X-hF2 {
     color: var(--text-normal);
-    grid-template-columns: auto auto auto;
-    grid-gap: 12px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    gap: 12px;
     margin-top: 8px
 }
 
 .detailItem-10cLxt,
 .detailsDetails-3X-hF2 {
-    display: grid;
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center
 }
 
 .detailItem-10cLxt {
+    display: grid;
     grid-template-columns: 16px 1fr;
     grid-gap: 4px
 }
@@ -132493,23 +132507,22 @@ html .invoiceCancelRow-3s2UuC {
 
 .activityImage-21gMrZ {
     -webkit-box-flex: 1;
-    -ms-flex: 1 1 409px;
-    flex: 1 1 409px;
+    -ms-flex: 1 1 365px;
+    flex: 1 1 365px;
     min-width: 0;
     aspect-ratio: 16/9;
     border-radius: 4px
 }
 
 .launcherOuterContainer--GY4D- {
-    -webkit-box-flex: 0;
-    -ms-flex: 0 0 248px;
-    flex: 0 0 248px
+    -webkit-box-flex: 1;
+    -ms-flex: 1 1 320px;
+    flex: 1 1 320px
 }
 
 .launcherInnerContainer-1yaOMQ {
     position: sticky;
     top: 16px;
-    max-width: 248px;
     padding: 16px;
     background-color: var(--background-secondary-alt);
     border-radius: 12px;
@@ -152273,6 +152286,185 @@ html .invoiceCancelRow-3s2UuC {
     background-color: hsl(var(--primary-500-hsl)/.04)
 }
 
+.modalRoot-1dZzag {
+    background-color: var(--background-secondary);
+    border-radius: 8px;
+    overflow: hidden
+}
+
+.header-3aClmX {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between
+}
+
+.modalContent-1Mosq8 {
+    padding: 16px 0;
+    background-color: var(--background-secondary)
+}
+
+.searchBar-3uKuIR {
+    margin: 0 8px 16px 16px
+}
+
+.rowDivider-1X_kTc {
+    margin-left: 16px;
+    margin-right: 8px;
+    height: 2px;
+    background-color: var(--background-primary)
+}
+
+.rowContainer-30NZrQ {
+    margin-left: 16px;
+    margin-right: 8px;
+    padding: 8px 16px 8px 0;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    cursor: pointer;
+    background-color: var(--background-secondary)
+}
+
+.rowContainer-30NZrQ,
+.rowLeft-3gXgwN {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center
+}
+
+.rowLeft-3gXgwN {
+    -webkit-box-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+    min-width: 0
+}
+
+.rowAvatar-qiTzgc {
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 40px;
+    flex: 0 0 40px;
+    height: 40px
+}
+
+.rowNameContainer-3grAz2 {
+    -webkit-box-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+    min-width: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    margin-left: 12px;
+    margin-right: 8px
+}
+
+.rowName-2tXXXs,
+.rowSubName-tcVN3J {
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden
+}
+
+.rowSubName-tcVN3J {
+    color: var(--header-secondary)
+}
+
+.rowRight-3gMaSi {
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 auto;
+    flex: 0 0 auto
+}
+
+.footer-1OmE1q {
+    display: block;
+    background-color: transparent;
+    padding: 0;
+    margin: 0
+}
+
+.footerDivider-i15PhZ {
+    width: 100%;
+    height: 1px;
+    background-color: var(--background-primary)
+}
+
+.activityInfoOuterContainer-1quueb {
+    padding: 16px;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    background-color: var(--background-secondary-alt)
+}
+
+.activityInfoInnerContainer-3J3X3T {
+    border-radius: 4px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    overflow: hidden
+}
+
+.activityInfoImage-2z3JCW {
+    height: 80px;
+    aspect-ratio: 16/9;
+    -o-object-fit: cover;
+    object-fit: cover
+}
+
+.activityInfoText-2b30zB {
+    margin-left: 8px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    gap: 4px;
+    -webkit-box-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+    min-width: 0
+}
+
+.ellipsis-3J6OWf {
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden
+}
+
+.copySendBar-3X9Ve- {
+    padding: 16px;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    background-color: var(--background-secondary-alt)
+}
+
+.copyButton-7KilwM,
+.copySendBar-3X9Ve- {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center
+}
+
+.copyButton-7KilwM {
+    gap: 4px;
+    color: var(--text-link)
+}
+
 .contentPadding-3hHMcr {
     padding-left: 16px;
     padding-right: 16px
@@ -153597,4 +153789,4 @@ html .invoiceCancelRow-dVOR64 {
     flex-direction: column
 }
 
-/*# sourceMappingURL=40532.ef427a9857b82349d2e5.css.map*/
+/*# sourceMappingURL=40532.41a85d9cdcb170a760fb.css.map*/
