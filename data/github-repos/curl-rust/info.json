@@ -57,7 +57,72 @@
     "triage": false,
     "pull": false
   },
-  "branches": [],
+  "branches": [
+    {
+      "name": "0.4.19-discord",
+      "commit": {
+        "sha": "e646fe1fac71f89710ee3d82fd6782c2f8f29646",
+        "url": "https://api.github.com/repos/discord/curl-rust/commits/e646fe1fac71f89710ee3d82fd6782c2f8f29646"
+      },
+      "protected": false
+    },
+    {
+      "name": "curl-sys-0.3",
+      "commit": {
+        "sha": "8c288ddd76a4e86e47cbc1043e76f94ddebc5587",
+        "url": "https://api.github.com/repos/discord/curl-rust/commits/8c288ddd76a4e86e47cbc1043e76f94ddebc5587"
+      },
+      "protected": false
+    },
+    {
+      "name": "curlform-stream",
+      "commit": {
+        "sha": "0596ebbfd0202f984d2a42bcfd62879c73968d08",
+        "url": "https://api.github.com/repos/discord/curl-rust/commits/0596ebbfd0202f984d2a42bcfd62879c73968d08"
+      },
+      "protected": false
+    },
+    {
+      "name": "dispatch",
+      "commit": {
+        "sha": "33deb02d44e4e0f1ca48e7a2fa66636154bb8312",
+        "url": "https://api.github.com/repos/discord/curl-rust/commits/33deb02d44e4e0f1ca48e7a2fa66636154bb8312"
+      },
+      "protected": false
+    },
+    {
+      "name": "gh-pages",
+      "commit": {
+        "sha": "9be883d82686402866e4b0f86936d1b8f32e64ed",
+        "url": "https://api.github.com/repos/discord/curl-rust/commits/9be883d82686402866e4b0f86936d1b8f32e64ed"
+      },
+      "protected": false
+    },
+    {
+      "name": "master",
+      "commit": {
+        "sha": "e5aecacd4f17cb56f37d0c6bf5af55829f90605f",
+        "url": "https://api.github.com/repos/discord/curl-rust/commits/e5aecacd4f17cb56f37d0c6bf5af55829f90605f"
+      },
+      "protected": false
+    },
+    {
+      "name": "nghttp2",
+      "commit": {
+        "sha": "9193b50c7cd94e050d2b2e3a02179e70ee56b7ec",
+        "url": "https://api.github.com/repos/discord/curl-rust/commits/9193b50c7cd94e050d2b2e3a02179e70ee56b7ec"
+      },
+      "protected": false
+    },
+    {
+      "name": "tmp",
+      "commit": {
+        "sha": "b9ae6f4bc006345de7695c0590720d6d16139353",
+        "url": "https://api.github.com/repos/discord/curl-rust/commits/b9ae6f4bc006345de7695c0590720d6d16139353"
+      },
+      "protected": false
+    }
+  ],
   "last5": {
     "commits": [
       {
