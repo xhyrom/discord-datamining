@@ -57,9 +57,309 @@
     "triage": false,
     "pull": false
   },
-  "branches": [],
+  "branches": [
+    {
+      "name": "disable-source-map",
+      "commit": {
+        "sha": "f8492d975d8a3dec3a3bbb1862a043798827bf92",
+        "url": "https://api.github.com/repos/discord/react-refresh-webpack-plugin/commits/f8492d975d8a3dec3a3bbb1862a043798827bf92"
+      },
+      "protected": false
+    },
+    {
+      "name": "master",
+      "commit": {
+        "sha": "a220083e479fbbe801e904c6322215e49b38c535",
+        "url": "https://api.github.com/repos/discord/react-refresh-webpack-plugin/commits/a220083e479fbbe801e904c6322215e49b38c535"
+      },
+      "protected": false
+    },
+    {
+      "name": "worker-hotfix",
+      "commit": {
+        "sha": "27e4d369abcfc9f2383896905a204b7061a83fc4",
+        "url": "https://api.github.com/repos/discord/react-refresh-webpack-plugin/commits/27e4d369abcfc9f2383896905a204b7061a83fc4"
+      },
+      "protected": false
+    }
+  ],
   "last5": {
-    "commits": [],
+    "commits": [
+      {
+        "sha": "a220083e479fbbe801e904c6322215e49b38c535",
+        "node_id": "MDY6Q29tbWl0MjQzMTM2MTEwOmEyMjAwODNlNDc5ZmJiZTgwMWU5MDRjNjMyMjIxNWU0OWIzOGM1MzU=",
+        "commit": {
+          "author": {
+            "name": "Michael Mok",
+            "email": "pmmmwh@gmail.com",
+            "date": "2019-12-19T04:38:16Z"
+          },
+          "committer": {
+            "name": "Michael Mok",
+            "email": "pmmmwh@gmail.com",
+            "date": "2019-12-19T04:38:16Z"
+          },
+          "message": "chore: make wds-kitchen-sink as private to prevent publishing",
+          "tree": {
+            "sha": "2a016b4eb9acc761dab888f9dc3f06208ea3eea3",
+            "url": "https://api.github.com/repos/discord/react-refresh-webpack-plugin/git/trees/2a016b4eb9acc761dab888f9dc3f06208ea3eea3"
+          },
+          "url": "https://api.github.com/repos/discord/react-refresh-webpack-plugin/git/commits/a220083e479fbbe801e904c6322215e49b38c535",
+          "comment_count": 0,
+          "verification": {
+            "verified": false,
+            "reason": "unsigned",
+            "signature": null,
+            "payload": null
+          }
+        },
+        "url": "https://api.github.com/repos/discord/react-refresh-webpack-plugin/commits/a220083e479fbbe801e904c6322215e49b38c535",
+        "author": {
+          "login": "pmmmwh",
+          "id": 9338255,
+          "node_id": "MDQ6VXNlcjkzMzgyNTU=",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/pmmmwh",
+          "type": "User",
+          "site_admin": false
+        },
+        "committer": {
+          "login": "pmmmwh",
+          "id": 9338255,
+          "node_id": "MDQ6VXNlcjkzMzgyNTU=",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/pmmmwh",
+          "type": "User",
+          "site_admin": false
+        },
+        "parents": [
+          {
+            "sha": "b2d520b7bbe51688302c812850ed0c5bd397afda",
+            "url": "https://api.github.com/repos/discord/react-refresh-webpack-plugin/commits/b2d520b7bbe51688302c812850ed0c5bd397afda"
+          }
+        ]
+      },
+      {
+        "sha": "b2d520b7bbe51688302c812850ed0c5bd397afda",
+        "node_id": "MDY6Q29tbWl0MjQzMTM2MTEwOmIyZDUyMGI3YmJlNTE2ODgzMDJjODEyODUwZWQwYzViZDM5N2FmZGE=",
+        "commit": {
+          "author": {
+            "name": "Michael Mok",
+            "email": "pmmmwh@gmail.com",
+            "date": "2019-12-19T04:35:43Z"
+          },
+          "committer": {
+            "name": "Michael Mok",
+            "email": "pmmmwh@gmail.com",
+            "date": "2019-12-19T04:35:43Z"
+          },
+          "message": "chore: release v0.1.3",
+          "tree": {
+            "sha": "6480d8fc55e41486266f06eb52e5c738abfe1413",
+            "url": "https://api.github.com/repos/discord/react-refresh-webpack-plugin/git/trees/6480d8fc55e41486266f06eb52e5c738abfe1413"
+          },
+          "url": "https://api.github.com/repos/discord/react-refresh-webpack-plugin/git/commits/b2d520b7bbe51688302c812850ed0c5bd397afda",
+          "comment_count": 0,
+          "verification": {
+            "verified": false,
+            "reason": "unsigned",
+            "signature": null,
+            "payload": null
+          }
+        },
+        "url": "https://api.github.com/repos/discord/react-refresh-webpack-plugin/commits/b2d520b7bbe51688302c812850ed0c5bd397afda",
+        "author": {
+          "login": "pmmmwh",
+          "id": 9338255,
+          "node_id": "MDQ6VXNlcjkzMzgyNTU=",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/pmmmwh",
+          "type": "User",
+          "site_admin": false
+        },
+        "committer": {
+          "login": "pmmmwh",
+          "id": 9338255,
+          "node_id": "MDQ6VXNlcjkzMzgyNTU=",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/pmmmwh",
+          "type": "User",
+          "site_admin": false
+        },
+        "parents": [
+          {
+            "sha": "615157e5daadc7d1979e717e3cfb45c7c101a154",
+            "url": "https://api.github.com/repos/discord/react-refresh-webpack-plugin/commits/615157e5daadc7d1979e717e3cfb45c7c101a154"
+          }
+        ]
+      },
+      {
+        "sha": "615157e5daadc7d1979e717e3cfb45c7c101a154",
+        "node_id": "MDY6Q29tbWl0MjQzMTM2MTEwOjYxNTE1N2U1ZGFhZGM3ZDE5NzllNzE3ZTNjZmI0NWM3YzEwMWExNTQ=",
+        "commit": {
+          "author": {
+            "name": "Michael Mok",
+            "email": "pmmmwh@gmail.com",
+            "date": "2019-12-19T04:32:52Z"
+          },
+          "committer": {
+            "name": "GitHub",
+            "email": "noreply@github.com",
+            "date": "2019-12-19T04:32:52Z"
+          },
+          "message": "Merge pull request #26 from pmmmwh/fix/chunking\n\nfix: correctly inspect main templates to apply transform to JS runtime",
+          "tree": {
+            "sha": "e2600da3a3c12352958b76f6e4c61b60acf2690c",
+            "url": "https://api.github.com/repos/discord/react-refresh-webpack-plugin/git/trees/e2600da3a3c12352958b76f6e4c61b60acf2690c"
+          },
+          "url": "https://api.github.com/repos/discord/react-refresh-webpack-plugin/git/commits/615157e5daadc7d1979e717e3cfb45c7c101a154",
+          "comment_count": 0,
+          "verification": {
+            "verified": true,
+            "reason": "valid",
+            "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsBcBAABCAAQBQJd+v10CRBK7hj4Ov3rIwAAdHIIADl22wTLF5SlJk8MQi4yqhHm\n2jwQ8ivWWDd2Wdgm5GVKM2U4Obi/pNXXUiZxGk6rr5EUDAUInmtwrji12yRC0zv4\nBlQ4bnqdbIvXrdp607Df6gDMxv+Tx2SChwKAzO4ZgVL7SRe6hWg94RRQfli/e+M4\n9pJ8wKJakWpW3AB4/7v05ban+cHmiGns48UG4IReKCTc2tTbkKN5AvjE4TH4T6QU\n05haGiSu+V5x64/p/e9sP+Ota6rjg9hF2r/GPM03HNesUz9nsTaAg9uxfHNBE8qS\nLGk0xuQ/3+zc4BvGJvu8uZclUJQHrGnsCFg6+N8gIJRM81YyMBeFV3KTJacSyMY=\n=UA0k\n-----END PGP SIGNATURE-----\n",
+            "payload": "tree e2600da3a3c12352958b76f6e4c61b60acf2690c\nparent 4b6212ffccefa076cda3199a00e65d6c10027ac9\nparent 93173113c475a22e0d09faeffdb12fd3256ed1a5\nauthor Michael Mok <pmmmwh@gmail.com> 1576729972 +0800\ncommitter GitHub <noreply@github.com> 1576729972 +0800\n\nMerge pull request #26 from pmmmwh/fix/chunking\n\nfix: correctly inspect main templates to apply transform to JS runtime"
+          }
+        },
+        "url": "https://api.github.com/repos/discord/react-refresh-webpack-plugin/commits/615157e5daadc7d1979e717e3cfb45c7c101a154",
+        "author": {
+          "login": "pmmmwh",
+          "id": 9338255,
+          "node_id": "MDQ6VXNlcjkzMzgyNTU=",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/pmmmwh",
+          "type": "User",
+          "site_admin": false
+        },
+        "committer": {
+          "login": "web-flow",
+          "id": 19864447,
+          "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/web-flow",
+          "type": "User",
+          "site_admin": false
+        },
+        "parents": [
+          {
+            "sha": "4b6212ffccefa076cda3199a00e65d6c10027ac9",
+            "url": "https://api.github.com/repos/discord/react-refresh-webpack-plugin/commits/4b6212ffccefa076cda3199a00e65d6c10027ac9"
+          },
+          {
+            "sha": "93173113c475a22e0d09faeffdb12fd3256ed1a5",
+            "url": "https://api.github.com/repos/discord/react-refresh-webpack-plugin/commits/93173113c475a22e0d09faeffdb12fd3256ed1a5"
+          }
+        ]
+      },
+      {
+        "sha": "93173113c475a22e0d09faeffdb12fd3256ed1a5",
+        "node_id": "MDY6Q29tbWl0MjQzMTM2MTEwOjkzMTczMTEzYzQ3NWEyMmUwZDA5ZmFlZmZkYjEyZmQzMjU2ZWQxYTU=",
+        "commit": {
+          "author": {
+            "name": "Michael Mok",
+            "email": "pmmmwh@gmail.com",
+            "date": "2019-12-19T04:24:33Z"
+          },
+          "committer": {
+            "name": "Michael Mok",
+            "email": "pmmmwh@gmail.com",
+            "date": "2019-12-19T04:24:33Z"
+          },
+          "message": "fix: correctly inspect main templates to apply transform to JS runtime",
+          "tree": {
+            "sha": "e2600da3a3c12352958b76f6e4c61b60acf2690c",
+            "url": "https://api.github.com/repos/discord/react-refresh-webpack-plugin/git/trees/e2600da3a3c12352958b76f6e4c61b60acf2690c"
+          },
+          "url": "https://api.github.com/repos/discord/react-refresh-webpack-plugin/git/commits/93173113c475a22e0d09faeffdb12fd3256ed1a5",
+          "comment_count": 0,
+          "verification": {
+            "verified": false,
+            "reason": "unsigned",
+            "signature": null,
+            "payload": null
+          }
+        },
+        "url": "https://api.github.com/repos/discord/react-refresh-webpack-plugin/commits/93173113c475a22e0d09faeffdb12fd3256ed1a5",
+        "author": {
+          "login": "pmmmwh",
+          "id": 9338255,
+          "node_id": "MDQ6VXNlcjkzMzgyNTU=",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/pmmmwh",
+          "type": "User",
+          "site_admin": false
+        },
+        "committer": {
+          "login": "pmmmwh",
+          "id": 9338255,
+          "node_id": "MDQ6VXNlcjkzMzgyNTU=",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/pmmmwh",
+          "type": "User",
+          "site_admin": false
+        },
+        "parents": [
+          {
+            "sha": "4b6212ffccefa076cda3199a00e65d6c10027ac9",
+            "url": "https://api.github.com/repos/discord/react-refresh-webpack-plugin/commits/4b6212ffccefa076cda3199a00e65d6c10027ac9"
+          }
+        ]
+      },
+      {
+        "sha": "4b6212ffccefa076cda3199a00e65d6c10027ac9",
+        "node_id": "MDY6Q29tbWl0MjQzMTM2MTEwOjRiNjIxMmZmY2NlZmEwNzZjZGEzMTk5YTAwZTY1ZDZjMTAwMjdhYzk=",
+        "commit": {
+          "author": {
+            "name": "Michael Mok",
+            "email": "pmmmwh@gmail.com",
+            "date": "2019-12-17T18:52:29Z"
+          },
+          "committer": {
+            "name": "Michael Mok",
+            "email": "pmmmwh@gmail.com",
+            "date": "2019-12-17T18:52:29Z"
+          },
+          "message": "chore: update CRA kitchen sink lockfile",
+          "tree": {
+            "sha": "f70521c2f9f6914645624e7086bfaddeef87739c",
+            "url": "https://api.github.com/repos/discord/react-refresh-webpack-plugin/git/trees/f70521c2f9f6914645624e7086bfaddeef87739c"
+          },
+          "url": "https://api.github.com/repos/discord/react-refresh-webpack-plugin/git/commits/4b6212ffccefa076cda3199a00e65d6c10027ac9",
+          "comment_count": 0,
+          "verification": {
+            "verified": false,
+            "reason": "unsigned",
+            "signature": null,
+            "payload": null
+          }
+        },
+        "url": "https://api.github.com/repos/discord/react-refresh-webpack-plugin/commits/4b6212ffccefa076cda3199a00e65d6c10027ac9",
+        "author": {
+          "login": "pmmmwh",
+          "id": 9338255,
+          "node_id": "MDQ6VXNlcjkzMzgyNTU=",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/pmmmwh",
+          "type": "User",
+          "site_admin": false
+        },
+        "committer": {
+          "login": "pmmmwh",
+          "id": 9338255,
+          "node_id": "MDQ6VXNlcjkzMzgyNTU=",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/pmmmwh",
+          "type": "User",
+          "site_admin": false
+        },
+        "parents": [
+          {
+            "sha": "d321ce85b1e20d3c8c1e976378a8d956802d0349",
+            "url": "https://api.github.com/repos/discord/react-refresh-webpack-plugin/commits/d321ce85b1e20d3c8c1e976378a8d956802d0349"
+          }
+        ]
+      }
+    ],
     "releases": [],
     "issues": [],
     "pullRequests": []

@@ -59,9 +59,377 @@
   },
   "branches": [],
   "last5": {
-    "commits": [],
+    "commits": [
+      {
+        "sha": "c9fb242544b5f9068221d3baadb3b5d7ec9727c0",
+        "node_id": "C_kwDODRpOHtoAKGM5ZmIyNDI1NDRiNWY5MDY4MjIxZDNiYWFkYjNiNWQ3ZWM5NzI3YzA",
+        "commit": {
+          "author": {
+            "name": "Stephen Birarda",
+            "email": "commit@birarda.com",
+            "date": "2022-03-16T16:32:59Z"
+          },
+          "committer": {
+            "name": "Stephen Birarda",
+            "email": "commit@birarda.com",
+            "date": "2023-03-28T18:51:19Z"
+          },
+          "message": "remove the gh-pages deploy",
+          "tree": {
+            "sha": "d968d24692de0434e8882995711cec30d0399adf",
+            "url": "https://api.github.com/repos/discord/twemoji/git/trees/d968d24692de0434e8882995711cec30d0399adf"
+          },
+          "url": "https://api.github.com/repos/discord/twemoji/git/commits/c9fb242544b5f9068221d3baadb3b5d7ec9727c0",
+          "comment_count": 0,
+          "verification": {
+            "verified": false,
+            "reason": "unsigned",
+            "signature": null,
+            "payload": null
+          }
+        },
+        "url": "https://api.github.com/repos/discord/twemoji/commits/c9fb242544b5f9068221d3baadb3b5d7ec9727c0",
+        "author": {
+          "login": "birarda",
+          "id": 724069,
+          "node_id": "MDQ6VXNlcjcyNDA2OQ==",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/birarda",
+          "type": "User",
+          "site_admin": false
+        },
+        "committer": {
+          "login": "birarda",
+          "id": 724069,
+          "node_id": "MDQ6VXNlcjcyNDA2OQ==",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/birarda",
+          "type": "User",
+          "site_admin": false
+        },
+        "parents": [
+          {
+            "sha": "bfd76189cb7c6d4dbc6bebf965c4d2b0a67ab120",
+            "url": "https://api.github.com/repos/discord/twemoji/commits/bfd76189cb7c6d4dbc6bebf965c4d2b0a67ab120"
+          }
+        ]
+      },
+      {
+        "sha": "bfd76189cb7c6d4dbc6bebf965c4d2b0a67ab120",
+        "node_id": "C_kwDODRpOHtoAKGJmZDc2MTg5Y2I3YzZkNGRiYzZiZWJmOTY1YzRkMmIwYTY3YWIxMjA",
+        "commit": {
+          "author": {
+            "name": "Stephen Birarda",
+            "email": "commit@birarda.com",
+            "date": "2019-11-14T22:18:08Z"
+          },
+          "committer": {
+            "name": "Stephen Birarda",
+            "email": "commit@birarda.com",
+            "date": "2023-03-28T18:51:17Z"
+          },
+          "message": "update repo urls in package JSON",
+          "tree": {
+            "sha": "0109d532c02cdf7e12ad250ff95f43a271980468",
+            "url": "https://api.github.com/repos/discord/twemoji/git/trees/0109d532c02cdf7e12ad250ff95f43a271980468"
+          },
+          "url": "https://api.github.com/repos/discord/twemoji/git/commits/bfd76189cb7c6d4dbc6bebf965c4d2b0a67ab120",
+          "comment_count": 0,
+          "verification": {
+            "verified": false,
+            "reason": "unsigned",
+            "signature": null,
+            "payload": null
+          }
+        },
+        "url": "https://api.github.com/repos/discord/twemoji/commits/bfd76189cb7c6d4dbc6bebf965c4d2b0a67ab120",
+        "author": {
+          "login": "birarda",
+          "id": 724069,
+          "node_id": "MDQ6VXNlcjcyNDA2OQ==",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/birarda",
+          "type": "User",
+          "site_admin": false
+        },
+        "committer": {
+          "login": "birarda",
+          "id": 724069,
+          "node_id": "MDQ6VXNlcjcyNDA2OQ==",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/birarda",
+          "type": "User",
+          "site_admin": false
+        },
+        "parents": [
+          {
+            "sha": "0775455fd5abf6b7ba698d1f1d0c2580fd9503de",
+            "url": "https://api.github.com/repos/discord/twemoji/commits/0775455fd5abf6b7ba698d1f1d0c2580fd9503de"
+          }
+        ]
+      },
+      {
+        "sha": "0775455fd5abf6b7ba698d1f1d0c2580fd9503de",
+        "node_id": "C_kwDODRpOHtoAKDA3NzU0NTVmZDVhYmY2YjdiYTY5OGQxZjFkMGMyNTgwZmQ5NTAzZGU",
+        "commit": {
+          "author": {
+            "name": "Stephen Birarda",
+            "email": "commit@birarda.com",
+            "date": "2019-11-14T22:02:19Z"
+          },
+          "committer": {
+            "name": "Stephen Birarda",
+            "email": "commit@birarda.com",
+            "date": "2023-03-28T18:51:04Z"
+          },
+          "message": "add org name to package",
+          "tree": {
+            "sha": "b5987a446610874685cb4a4b0e5eef462c1657e3",
+            "url": "https://api.github.com/repos/discord/twemoji/git/trees/b5987a446610874685cb4a4b0e5eef462c1657e3"
+          },
+          "url": "https://api.github.com/repos/discord/twemoji/git/commits/0775455fd5abf6b7ba698d1f1d0c2580fd9503de",
+          "comment_count": 0,
+          "verification": {
+            "verified": false,
+            "reason": "unsigned",
+            "signature": null,
+            "payload": null
+          }
+        },
+        "url": "https://api.github.com/repos/discord/twemoji/commits/0775455fd5abf6b7ba698d1f1d0c2580fd9503de",
+        "author": {
+          "login": "birarda",
+          "id": 724069,
+          "node_id": "MDQ6VXNlcjcyNDA2OQ==",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/birarda",
+          "type": "User",
+          "site_admin": false
+        },
+        "committer": {
+          "login": "birarda",
+          "id": 724069,
+          "node_id": "MDQ6VXNlcjcyNDA2OQ==",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/birarda",
+          "type": "User",
+          "site_admin": false
+        },
+        "parents": [
+          {
+            "sha": "545e9642c0f1601e68fd629a0dfd9fda5119d515",
+            "url": "https://api.github.com/repos/discord/twemoji/commits/545e9642c0f1601e68fd629a0dfd9fda5119d515"
+          }
+        ]
+      },
+      {
+        "sha": "545e9642c0f1601e68fd629a0dfd9fda5119d515",
+        "node_id": "C_kwDODRpOHtoAKDU0NWU5NjQyYzBmMTYwMWU2OGZkNjI5YTBkZmQ5ZmRhNTExOWQ1MTU",
+        "commit": {
+          "author": {
+            "name": "Stephen Birarda",
+            "email": "commit@birarda.com",
+            "date": "2019-11-14T21:56:35Z"
+          },
+          "committer": {
+            "name": "Stephen Birarda",
+            "email": "commit@birarda.com",
+            "date": "2023-03-28T18:50:46Z"
+          },
+          "message": "add back svg files to node_modules",
+          "tree": {
+            "sha": "1941602e573be6456e35f2cdeeb0e280ccfce219",
+            "url": "https://api.github.com/repos/discord/twemoji/git/trees/1941602e573be6456e35f2cdeeb0e280ccfce219"
+          },
+          "url": "https://api.github.com/repos/discord/twemoji/git/commits/545e9642c0f1601e68fd629a0dfd9fda5119d515",
+          "comment_count": 0,
+          "verification": {
+            "verified": false,
+            "reason": "unsigned",
+            "signature": null,
+            "payload": null
+          }
+        },
+        "url": "https://api.github.com/repos/discord/twemoji/commits/545e9642c0f1601e68fd629a0dfd9fda5119d515",
+        "author": {
+          "login": "birarda",
+          "id": 724069,
+          "node_id": "MDQ6VXNlcjcyNDA2OQ==",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/birarda",
+          "type": "User",
+          "site_admin": false
+        },
+        "committer": {
+          "login": "birarda",
+          "id": 724069,
+          "node_id": "MDQ6VXNlcjcyNDA2OQ==",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/birarda",
+          "type": "User",
+          "site_admin": false
+        },
+        "parents": [
+          {
+            "sha": "dbb2a105307932399402c5333001e82ba67af016",
+            "url": "https://api.github.com/repos/discord/twemoji/commits/dbb2a105307932399402c5333001e82ba67af016"
+          }
+        ]
+      },
+      {
+        "sha": "dbb2a105307932399402c5333001e82ba67af016",
+        "node_id": "C_kwDODRpOHtoAKGRiYjJhMTA1MzA3OTMyMzk5NDAyYzUzMzMwMDFlODJiYTY3YWYwMTY",
+        "commit": {
+          "author": {
+            "name": "Justine De Caires",
+            "email": "justine@uni.minerva.edu",
+            "date": "2023-03-22T23:04:12Z"
+          },
+          "committer": {
+            "name": "GitHub",
+            "email": "noreply@github.com",
+            "date": "2023-03-22T23:04:12Z"
+          },
+          "message": "v14.1.2 (#6)\n\n* v14.1.2\r\n\r\n* Optimize 2 SVG(s)\r\n\r\n---------\r\n\r\nCo-authored-by: jdecked <jdecked@users.noreply.github.com>",
+          "tree": {
+            "sha": "057946edb1706bd1ed6b07e677ed55c92fda35e0",
+            "url": "https://api.github.com/repos/discord/twemoji/git/trees/057946edb1706bd1ed6b07e677ed55c92fda35e0"
+          },
+          "url": "https://api.github.com/repos/discord/twemoji/git/commits/dbb2a105307932399402c5333001e82ba67af016",
+          "comment_count": 0,
+          "verification": {
+            "verified": true,
+            "reason": "valid",
+            "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsBcBAABCAAQBQJkG4lsCRBK7hj4Ov3rIwAA0ZsIAB8km3+8DQdX3gkPh4PX0ZHs\ndfLDtpXEoZRaGOmvPfa6yvxHNKOklIkcX7StPIRCrt3wJS5BbVoZGGgjgL05Jy1x\nhpfQJrVzbaNeeao1xzAsjG0IwdLi6HVUNZm8+qwadluHOUTbxAfFyc3u8aCROT23\nQa30xCqHIa/5v8i/F8XUXQ6tJfeTG5jVZyDbPtqFt37D0WmX+NWzmjdDoGcAGrxT\nvPrfqCtnrRbATtcO5EIcGrGuQVmzCvfEejcJ28TAi3XW0M9zEdlWAXuFdzqoQkxW\nZCsGY/C+g0h+Er10ZhUpnUyvIuDnhozrM0AuyTnqS1wTvit6Ri+21e6E68Q8ZkQ=\n=2D0u\n-----END PGP SIGNATURE-----\n",
+            "payload": "tree 057946edb1706bd1ed6b07e677ed55c92fda35e0\nparent 5fe46dac4b84e8f567a66cd12ccdf8b30898163d\nauthor Justine De Caires <justine@uni.minerva.edu> 1679526252 -0700\ncommitter GitHub <noreply@github.com> 1679526252 -0700\n\nv14.1.2 (#6)\n\n* v14.1.2\r\n\r\n* Optimize 2 SVG(s)\r\n\r\n---------\r\n\r\nCo-authored-by: jdecked <jdecked@users.noreply.github.com>"
+          }
+        },
+        "url": "https://api.github.com/repos/discord/twemoji/commits/dbb2a105307932399402c5333001e82ba67af016",
+        "author": {
+          "login": "jdecked",
+          "id": 9261276,
+          "node_id": "MDQ6VXNlcjkyNjEyNzY=",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/jdecked",
+          "type": "User",
+          "site_admin": false
+        },
+        "committer": {
+          "login": "web-flow",
+          "id": 19864447,
+          "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/web-flow",
+          "type": "User",
+          "site_admin": false
+        },
+        "parents": [
+          {
+            "sha": "5fe46dac4b84e8f567a66cd12ccdf8b30898163d",
+            "url": "https://api.github.com/repos/discord/twemoji/commits/5fe46dac4b84e8f567a66cd12ccdf8b30898163d"
+          }
+        ]
+      }
+    ],
     "releases": [],
-    "issues": [],
+    "issues": [
+      {
+        "url": "https://api.github.com/repos/discord/twemoji/issues/2",
+        "id": 1656191160,
+        "node_id": "PR_kwDODRpOHs5NtNnE",
+        "number": 2,
+        "title": "Add old pleading face.",
+        "user": {
+          "login": "lucl0n",
+          "id": 127171031,
+          "node_id": "U_kgDOB5R51w",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/lucl0n",
+          "type": "User",
+          "site_admin": false
+        },
+        "labels": [],
+        "state": "open",
+        "locked": false,
+        "assignee": null,
+        "assignees": [],
+        "milestone": null,
+        "comments": 1,
+        "created_at": "2023-04-05T19:48:04Z",
+        "updated_at": "2023-04-13T02:40:10Z",
+        "closed_at": null,
+        "author_association": "NONE",
+        "active_lock_reason": null,
+        "draft": false,
+        "pull_request": {
+          "url": "https://api.github.com/repos/discord/twemoji/pulls/2",
+          "merged_at": null
+        },
+        "body": "Everyone knows that this new pleading face is horrible, please, add the old pleading face back.",
+        "reactions": {
+          "url": "https://api.github.com/repos/discord/twemoji/issues/2/reactions",
+          "total_count": 1,
+          "+1": 1,
+          "-1": 0,
+          "laugh": 0,
+          "hooray": 0,
+          "confused": 0,
+          "heart": 0,
+          "rocket": 0,
+          "eyes": 0
+        },
+        "performed_via_github_app": null,
+        "state_reason": null
+      },
+      {
+        "url": "https://api.github.com/repos/discord/twemoji/issues/1",
+        "id": 1205967048,
+        "node_id": "PR_kwDODRpOHs42T1Cu",
+        "number": 1,
+        "title": "Merge twemoji 14.0.2",
+        "user": {
+          "login": "rinsuki",
+          "id": 6533808,
+          "node_id": "MDQ6VXNlcjY1MzM4MDg=",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/rinsuki",
+          "type": "User",
+          "site_admin": false
+        },
+        "labels": [],
+        "state": "closed",
+        "locked": false,
+        "assignee": null,
+        "assignees": [],
+        "milestone": null,
+        "comments": 7,
+        "created_at": "2022-04-16T00:42:28Z",
+        "updated_at": "2022-05-12T13:50:02Z",
+        "closed_at": "2022-05-11T16:14:24Z",
+        "author_association": "NONE",
+        "active_lock_reason": null,
+        "draft": false,
+        "pull_request": {
+          "url": "https://api.github.com/repos/discord/twemoji/pulls/1",
+          "merged_at": null
+        },
+        "body": null,
+        "reactions": {
+          "url": "https://api.github.com/repos/discord/twemoji/issues/1/reactions",
+          "total_count": 4,
+          "+1": 4,
+          "-1": 0,
+          "laugh": 0,
+          "hooray": 0,
+          "confused": 0,
+          "heart": 0,
+          "rocket": 0,
+          "eyes": 0
+        },
+        "performed_via_github_app": null,
+        "state_reason": null
+      }
+    ],
     "pullRequests": []
   }
 }

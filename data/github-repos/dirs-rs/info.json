@@ -59,7 +59,278 @@
   },
   "branches": [],
   "last5": {
-    "commits": [],
+    "commits": [
+      {
+        "sha": "22eed86d83499ccf6a4e70cdcb188e36c0346348",
+        "node_id": "MDY6Q29tbWl0MTUwMDY4OTY4OjIyZWVkODZkODM0OTljY2Y2YTRlNzBjZGNiMTg4ZTM2YzAzNDYzNDg=",
+        "commit": {
+          "author": {
+            "name": "Simon Ochsenreither",
+            "email": "simon@ochsenreither.de",
+            "date": "2018-09-23T21:28:41Z"
+          },
+          "committer": {
+            "name": "Simon Ochsenreither",
+            "email": "simon@ochsenreither.de",
+            "date": "2018-09-23T21:28:41Z"
+          },
+          "message": "Release dirs-rs version 1.0.4",
+          "tree": {
+            "sha": "23ad0c086a2488cbb01984d5e58c89d0d303f53e",
+            "url": "https://api.github.com/repos/discord/dirs-rs/git/trees/23ad0c086a2488cbb01984d5e58c89d0d303f53e"
+          },
+          "url": "https://api.github.com/repos/discord/dirs-rs/git/commits/22eed86d83499ccf6a4e70cdcb188e36c0346348",
+          "comment_count": 0,
+          "verification": {
+            "verified": false,
+            "reason": "unsigned",
+            "signature": null,
+            "payload": null
+          }
+        },
+        "url": "https://api.github.com/repos/discord/dirs-rs/commits/22eed86d83499ccf6a4e70cdcb188e36c0346348",
+        "author": {
+          "login": "soc",
+          "id": 42493,
+          "node_id": "MDQ6VXNlcjQyNDkz",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/soc",
+          "type": "User",
+          "site_admin": false
+        },
+        "committer": {
+          "login": "soc",
+          "id": 42493,
+          "node_id": "MDQ6VXNlcjQyNDkz",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/soc",
+          "type": "User",
+          "site_admin": false
+        },
+        "parents": [
+          {
+            "sha": "f11123d59e746a65fe976ecbc12d6165938341c6",
+            "url": "https://api.github.com/repos/discord/dirs-rs/commits/f11123d59e746a65fe976ecbc12d6165938341c6"
+          }
+        ]
+      },
+      {
+        "sha": "f11123d59e746a65fe976ecbc12d6165938341c6",
+        "node_id": "MDY6Q29tbWl0MTUwMDY4OTY4OmYxMTEyM2Q1OWU3NDZhNjVmZTk3NmVjYmMxMmQ2MTY1OTM4MzQxYzY=",
+        "commit": {
+          "author": {
+            "name": "Simon Ochsenreither",
+            "email": "simon@ochsenreither.de",
+            "date": "2018-09-23T19:06:09Z"
+          },
+          "committer": {
+            "name": "Simon Ochsenreither",
+            "email": "simon@ochsenreither.de",
+            "date": "2018-09-23T19:06:09Z"
+          },
+          "message": "Update README to mentioned Redox",
+          "tree": {
+            "sha": "e0a83cdda594456c7579c9924cc30d7ba726928f",
+            "url": "https://api.github.com/repos/discord/dirs-rs/git/trees/e0a83cdda594456c7579c9924cc30d7ba726928f"
+          },
+          "url": "https://api.github.com/repos/discord/dirs-rs/git/commits/f11123d59e746a65fe976ecbc12d6165938341c6",
+          "comment_count": 0,
+          "verification": {
+            "verified": false,
+            "reason": "unsigned",
+            "signature": null,
+            "payload": null
+          }
+        },
+        "url": "https://api.github.com/repos/discord/dirs-rs/commits/f11123d59e746a65fe976ecbc12d6165938341c6",
+        "author": {
+          "login": "soc",
+          "id": 42493,
+          "node_id": "MDQ6VXNlcjQyNDkz",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/soc",
+          "type": "User",
+          "site_admin": false
+        },
+        "committer": {
+          "login": "soc",
+          "id": 42493,
+          "node_id": "MDQ6VXNlcjQyNDkz",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/soc",
+          "type": "User",
+          "site_admin": false
+        },
+        "parents": [
+          {
+            "sha": "402925516f0b7e27b48c26578e77b8557ceea6f0",
+            "url": "https://api.github.com/repos/discord/dirs-rs/commits/402925516f0b7e27b48c26578e77b8557ceea6f0"
+          }
+        ]
+      },
+      {
+        "sha": "402925516f0b7e27b48c26578e77b8557ceea6f0",
+        "node_id": "MDY6Q29tbWl0MTUwMDY4OTY4OjQwMjkyNTUxNmYwYjdlMjdiNDhjMjY1NzhlNzdiODU1N2NlZWE2ZjA=",
+        "commit": {
+          "author": {
+            "name": "jD91mZM2",
+            "email": "me@krake.one",
+            "date": "2018-09-23T18:57:03Z"
+          },
+          "committer": {
+            "name": "soc",
+            "email": "simon@ochsenreither.de",
+            "date": "2018-09-23T18:57:03Z"
+          },
+          "message": "Redox OS support",
+          "tree": {
+            "sha": "d828eb3a2eed03c5b2d1e09849993135b6b962b4",
+            "url": "https://api.github.com/repos/discord/dirs-rs/git/trees/d828eb3a2eed03c5b2d1e09849993135b6b962b4"
+          },
+          "url": "https://api.github.com/repos/discord/dirs-rs/git/commits/402925516f0b7e27b48c26578e77b8557ceea6f0",
+          "comment_count": 0,
+          "verification": {
+            "verified": false,
+            "reason": "unsigned",
+            "signature": null,
+            "payload": null
+          }
+        },
+        "url": "https://api.github.com/repos/discord/dirs-rs/commits/402925516f0b7e27b48c26578e77b8557ceea6f0",
+        "author": {
+          "login": "jD91mZM2",
+          "id": 12830969,
+          "node_id": "MDQ6VXNlcjEyODMwOTY5",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/jD91mZM2",
+          "type": "User",
+          "site_admin": false
+        },
+        "committer": {
+          "login": "soc",
+          "id": 42493,
+          "node_id": "MDQ6VXNlcjQyNDkz",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/soc",
+          "type": "User",
+          "site_admin": false
+        },
+        "parents": [
+          {
+            "sha": "291cbed378dd1aa7c5da557f96092108845ead01",
+            "url": "https://api.github.com/repos/discord/dirs-rs/commits/291cbed378dd1aa7c5da557f96092108845ead01"
+          }
+        ]
+      },
+      {
+        "sha": "291cbed378dd1aa7c5da557f96092108845ead01",
+        "node_id": "MDY6Q29tbWl0MTUwMDY4OTY4OjI5MWNiZWQzNzhkZDFhYTdjNWRhNTU3Zjk2MDkyMTA4ODQ1ZWFkMDE=",
+        "commit": {
+          "author": {
+            "name": "Simon Egersand",
+            "email": "s.egersand@gmail.com",
+            "date": "2018-08-14T12:52:05Z"
+          },
+          "committer": {
+            "name": "soc",
+            "email": "simon@ochsenreither.de",
+            "date": "2018-09-20T21:55:45Z"
+          },
+          "message": "Fix formatting in docs for home_dir function",
+          "tree": {
+            "sha": "19a9b288a0b80100a19e7e0e3ac5ae6bfbd70846",
+            "url": "https://api.github.com/repos/discord/dirs-rs/git/trees/19a9b288a0b80100a19e7e0e3ac5ae6bfbd70846"
+          },
+          "url": "https://api.github.com/repos/discord/dirs-rs/git/commits/291cbed378dd1aa7c5da557f96092108845ead01",
+          "comment_count": 0,
+          "verification": {
+            "verified": false,
+            "reason": "unsigned",
+            "signature": null,
+            "payload": null
+          }
+        },
+        "url": "https://api.github.com/repos/discord/dirs-rs/commits/291cbed378dd1aa7c5da557f96092108845ead01",
+        "author": {
+          "login": "simeg",
+          "id": 8566054,
+          "node_id": "MDQ6VXNlcjg1NjYwNTQ=",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/simeg",
+          "type": "User",
+          "site_admin": false
+        },
+        "committer": {
+          "login": "soc",
+          "id": 42493,
+          "node_id": "MDQ6VXNlcjQyNDkz",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/soc",
+          "type": "User",
+          "site_admin": false
+        },
+        "parents": [
+          {
+            "sha": "f563d5c64d81331a345ff6af90dccf3a705dcd5d",
+            "url": "https://api.github.com/repos/discord/dirs-rs/commits/f563d5c64d81331a345ff6af90dccf3a705dcd5d"
+          }
+        ]
+      },
+      {
+        "sha": "f563d5c64d81331a345ff6af90dccf3a705dcd5d",
+        "node_id": "MDY6Q29tbWl0MTUwMDY4OTY4OmY1NjNkNWM2NGQ4MTMzMWEzNDVmZjZhZjkwZGNjZjNhNzA1ZGNkNWQ=",
+        "commit": {
+          "author": {
+            "name": "Simon Ochsenreither",
+            "email": "simon@ochsenreither.de",
+            "date": "2018-08-10T17:54:30Z"
+          },
+          "committer": {
+            "name": "Simon Ochsenreither",
+            "email": "simon@ochsenreither.de",
+            "date": "2018-08-10T17:54:30Z"
+          },
+          "message": "Add information on other platforms to README",
+          "tree": {
+            "sha": "9506d98d224c4be4b488448f117e9651aa1fcb4b",
+            "url": "https://api.github.com/repos/discord/dirs-rs/git/trees/9506d98d224c4be4b488448f117e9651aa1fcb4b"
+          },
+          "url": "https://api.github.com/repos/discord/dirs-rs/git/commits/f563d5c64d81331a345ff6af90dccf3a705dcd5d",
+          "comment_count": 0,
+          "verification": {
+            "verified": false,
+            "reason": "unsigned",
+            "signature": null,
+            "payload": null
+          }
+        },
+        "url": "https://api.github.com/repos/discord/dirs-rs/commits/f563d5c64d81331a345ff6af90dccf3a705dcd5d",
+        "author": {
+          "login": "soc",
+          "id": 42493,
+          "node_id": "MDQ6VXNlcjQyNDkz",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/soc",
+          "type": "User",
+          "site_admin": false
+        },
+        "committer": {
+          "login": "soc",
+          "id": 42493,
+          "node_id": "MDQ6VXNlcjQyNDkz",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/soc",
+          "type": "User",
+          "site_admin": false
+        },
+        "parents": [
+          {
+            "sha": "1cfba1bdfd458f4c6f9db60eeaec5780f786b481",
+            "url": "https://api.github.com/repos/discord/dirs-rs/commits/1cfba1bdfd458f4c6f9db60eeaec5780f786b481"
+          }
+        ]
+      }
+    ],
     "releases": [],
     "issues": [],
     "pullRequests": []

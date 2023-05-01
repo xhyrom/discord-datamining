@@ -59,7 +59,282 @@
   },
   "branches": [],
   "last5": {
-    "commits": [],
+    "commits": [
+      {
+        "sha": "e5aecacd4f17cb56f37d0c6bf5af55829f90605f",
+        "node_id": "MDY6Q29tbWl0MTY1OTUwNjQ2OmU1YWVjYWNkNGYxN2NiNTZmMzdkMGM2YmY1YWY1NTgyOWY5MDYwNWY=",
+        "commit": {
+          "author": {
+            "name": "Alex Crichton",
+            "email": "alex@alexcrichton.com",
+            "date": "2019-01-08T23:28:42Z"
+          },
+          "committer": {
+            "name": "Alex Crichton",
+            "email": "alex@alexcrichton.com",
+            "date": "2019-01-08T23:28:42Z"
+          },
+          "message": "Bump to 0.4.16",
+          "tree": {
+            "sha": "32365b5361e49be514dbad499daba6d171f343ab",
+            "url": "https://api.github.com/repos/discord/curl-rust/git/trees/32365b5361e49be514dbad499daba6d171f343ab"
+          },
+          "url": "https://api.github.com/repos/discord/curl-rust/git/commits/e5aecacd4f17cb56f37d0c6bf5af55829f90605f",
+          "comment_count": 0,
+          "verification": {
+            "verified": false,
+            "reason": "unsigned",
+            "signature": null,
+            "payload": null
+          }
+        },
+        "url": "https://api.github.com/repos/discord/curl-rust/commits/e5aecacd4f17cb56f37d0c6bf5af55829f90605f",
+        "author": {
+          "login": "alexcrichton",
+          "id": 64996,
+          "node_id": "MDQ6VXNlcjY0OTk2",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/alexcrichton",
+          "type": "User",
+          "site_admin": false
+        },
+        "committer": {
+          "login": "alexcrichton",
+          "id": 64996,
+          "node_id": "MDQ6VXNlcjY0OTk2",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/alexcrichton",
+          "type": "User",
+          "site_admin": false
+        },
+        "parents": [
+          {
+            "sha": "360e6d581bcc40e7e0fbb72737149d14722f3cd9",
+            "url": "https://api.github.com/repos/discord/curl-rust/commits/360e6d581bcc40e7e0fbb72737149d14722f3cd9"
+          }
+        ]
+      },
+      {
+        "sha": "360e6d581bcc40e7e0fbb72737149d14722f3cd9",
+        "node_id": "MDY6Q29tbWl0MTY1OTUwNjQ2OjM2MGU2ZDU4MWJjYzQwZTdlMGZiYjcyNzM3MTQ5ZDE0NzIyZjNjZDk=",
+        "commit": {
+          "author": {
+            "name": "Alex Crichton",
+            "email": "alex@alexcrichton.com",
+            "date": "2019-01-08T23:27:59Z"
+          },
+          "committer": {
+            "name": "GitHub",
+            "email": "noreply@github.com",
+            "date": "2019-01-08T23:27:59Z"
+          },
+          "message": "Merge pull request #242 from aldanor/feature/osx-http2-xcode8\n\nDon’t define HAVE_BUILTIN_AVAILABLE if Xcode <= 8",
+          "tree": {
+            "sha": "103e6665d72e5e0cdbc4e09e7f9a1879e3a8283f",
+            "url": "https://api.github.com/repos/discord/curl-rust/git/trees/103e6665d72e5e0cdbc4e09e7f9a1879e3a8283f"
+          },
+          "url": "https://api.github.com/repos/discord/curl-rust/git/commits/360e6d581bcc40e7e0fbb72737149d14722f3cd9",
+          "comment_count": 0,
+          "verification": {
+            "verified": true,
+            "reason": "valid",
+            "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsBcBAABCAAQBQJcNTH/CRBK7hj4Ov3rIwAAdHIIABD8M+yQFFAV6qAyLQADk8oF\nWaDzn9uI52EubequiT+fJyFLztAD1/5/MKjFWuFRR+h9tIyr8ki1uSM9wxKIYwL9\nhN+Nk3BQRlEWSlASlRvVxRORUkjw7BmFqnU4X+a+c49EaGO3i4AGZ3JoVH2lReiW\nFGwsKbSQ/vwsVmHTIlafjRsGLcDPONW9M5cyR1HoLRz/MDfz13cMjut7taK6KWym\nYDsMJBAgN8AUGXh+n3vMMsnRyknsJdeNadSmX05zpAaSFKkDwVQdzmQZkMukpOuQ\nPXXBl+5oSSpZgTfrwq03QOqDggNzBfTPcRRnTq0Y4WpoNGTGlWOyC5CfoPEyoD0=\n=J0nI\n-----END PGP SIGNATURE-----\n",
+            "payload": "tree 103e6665d72e5e0cdbc4e09e7f9a1879e3a8283f\nparent a060c2da7e9c9d291f38261389e6945a6951366e\nparent 9af2588f3dcf6690c5a559266fc6e606911fd1a2\nauthor Alex Crichton <alex@alexcrichton.com> 1546990079 -0800\ncommitter GitHub <noreply@github.com> 1546990079 -0800\n\nMerge pull request #242 from aldanor/feature/osx-http2-xcode8\n\nDon’t define HAVE_BUILTIN_AVAILABLE if Xcode <= 8"
+          }
+        },
+        "url": "https://api.github.com/repos/discord/curl-rust/commits/360e6d581bcc40e7e0fbb72737149d14722f3cd9",
+        "author": {
+          "login": "alexcrichton",
+          "id": 64996,
+          "node_id": "MDQ6VXNlcjY0OTk2",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/alexcrichton",
+          "type": "User",
+          "site_admin": false
+        },
+        "committer": {
+          "login": "web-flow",
+          "id": 19864447,
+          "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/web-flow",
+          "type": "User",
+          "site_admin": false
+        },
+        "parents": [
+          {
+            "sha": "a060c2da7e9c9d291f38261389e6945a6951366e",
+            "url": "https://api.github.com/repos/discord/curl-rust/commits/a060c2da7e9c9d291f38261389e6945a6951366e"
+          },
+          {
+            "sha": "9af2588f3dcf6690c5a559266fc6e606911fd1a2",
+            "url": "https://api.github.com/repos/discord/curl-rust/commits/9af2588f3dcf6690c5a559266fc6e606911fd1a2"
+          }
+        ]
+      },
+      {
+        "sha": "9af2588f3dcf6690c5a559266fc6e606911fd1a2",
+        "node_id": "MDY6Q29tbWl0MTY1OTUwNjQ2OjlhZjI1ODhmM2RjZjY2OTBjNWE1NTkyNjZmYzZlNjA2OTExZmQxYTI=",
+        "commit": {
+          "author": {
+            "name": "Ivan Smirnov",
+            "email": "i.s.smirnov@gmail.com",
+            "date": "2019-01-08T23:24:27Z"
+          },
+          "committer": {
+            "name": "Ivan Smirnov",
+            "email": "i.s.smirnov@gmail.com",
+            "date": "2019-01-08T23:24:27Z"
+          },
+          "message": "(More question marks)",
+          "tree": {
+            "sha": "103e6665d72e5e0cdbc4e09e7f9a1879e3a8283f",
+            "url": "https://api.github.com/repos/discord/curl-rust/git/trees/103e6665d72e5e0cdbc4e09e7f9a1879e3a8283f"
+          },
+          "url": "https://api.github.com/repos/discord/curl-rust/git/commits/9af2588f3dcf6690c5a559266fc6e606911fd1a2",
+          "comment_count": 0,
+          "verification": {
+            "verified": false,
+            "reason": "unsigned",
+            "signature": null,
+            "payload": null
+          }
+        },
+        "url": "https://api.github.com/repos/discord/curl-rust/commits/9af2588f3dcf6690c5a559266fc6e606911fd1a2",
+        "author": {
+          "login": "aldanor",
+          "id": 2418513,
+          "node_id": "MDQ6VXNlcjI0MTg1MTM=",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/aldanor",
+          "type": "User",
+          "site_admin": false
+        },
+        "committer": {
+          "login": "aldanor",
+          "id": 2418513,
+          "node_id": "MDQ6VXNlcjI0MTg1MTM=",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/aldanor",
+          "type": "User",
+          "site_admin": false
+        },
+        "parents": [
+          {
+            "sha": "a1e2c4aaa736473f9fa4144e5d55b9f031c597f9",
+            "url": "https://api.github.com/repos/discord/curl-rust/commits/a1e2c4aaa736473f9fa4144e5d55b9f031c597f9"
+          }
+        ]
+      },
+      {
+        "sha": "a1e2c4aaa736473f9fa4144e5d55b9f031c597f9",
+        "node_id": "MDY6Q29tbWl0MTY1OTUwNjQ2OmExZTJjNGFhYTczNjQ3M2Y5ZmE0MTQ0ZTVkNTViOWYwMzFjNTk3Zjk=",
+        "commit": {
+          "author": {
+            "name": "Ivan Smirnov",
+            "email": "i.s.smirnov@gmail.com",
+            "date": "2019-01-08T23:22:46Z"
+          },
+          "committer": {
+            "name": "Ivan Smirnov",
+            "email": "i.s.smirnov@gmail.com",
+            "date": "2019-01-08T23:22:46Z"
+          },
+          "message": "Clarify why we check Xcode version",
+          "tree": {
+            "sha": "6487598e4c89ffc790ce43c9f07384e104e4ee57",
+            "url": "https://api.github.com/repos/discord/curl-rust/git/trees/6487598e4c89ffc790ce43c9f07384e104e4ee57"
+          },
+          "url": "https://api.github.com/repos/discord/curl-rust/git/commits/a1e2c4aaa736473f9fa4144e5d55b9f031c597f9",
+          "comment_count": 0,
+          "verification": {
+            "verified": false,
+            "reason": "unsigned",
+            "signature": null,
+            "payload": null
+          }
+        },
+        "url": "https://api.github.com/repos/discord/curl-rust/commits/a1e2c4aaa736473f9fa4144e5d55b9f031c597f9",
+        "author": {
+          "login": "aldanor",
+          "id": 2418513,
+          "node_id": "MDQ6VXNlcjI0MTg1MTM=",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/aldanor",
+          "type": "User",
+          "site_admin": false
+        },
+        "committer": {
+          "login": "aldanor",
+          "id": 2418513,
+          "node_id": "MDQ6VXNlcjI0MTg1MTM=",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/aldanor",
+          "type": "User",
+          "site_admin": false
+        },
+        "parents": [
+          {
+            "sha": "a5fbae05ab9b99ecb0b977cc5824925a199895a4",
+            "url": "https://api.github.com/repos/discord/curl-rust/commits/a5fbae05ab9b99ecb0b977cc5824925a199895a4"
+          }
+        ]
+      },
+      {
+        "sha": "a5fbae05ab9b99ecb0b977cc5824925a199895a4",
+        "node_id": "MDY6Q29tbWl0MTY1OTUwNjQ2OmE1ZmJhZTA1YWI5Yjk5ZWNiMGI5NzdjYzU4MjQ5MjVhMTk5ODk1YTQ=",
+        "commit": {
+          "author": {
+            "name": "Ivan Smirnov",
+            "email": "i.s.smirnov@gmail.com",
+            "date": "2019-01-08T01:01:15Z"
+          },
+          "committer": {
+            "name": "Ivan Smirnov",
+            "email": "i.s.smirnov@gmail.com",
+            "date": "2019-01-08T01:01:15Z"
+          },
+          "message": "Don’t define HAVE_BUILTIN_AVAILABLE if Xcode <= 8",
+          "tree": {
+            "sha": "5f709957d66c06cecfc03baf508c88a952caccff",
+            "url": "https://api.github.com/repos/discord/curl-rust/git/trees/5f709957d66c06cecfc03baf508c88a952caccff"
+          },
+          "url": "https://api.github.com/repos/discord/curl-rust/git/commits/a5fbae05ab9b99ecb0b977cc5824925a199895a4",
+          "comment_count": 0,
+          "verification": {
+            "verified": false,
+            "reason": "unsigned",
+            "signature": null,
+            "payload": null
+          }
+        },
+        "url": "https://api.github.com/repos/discord/curl-rust/commits/a5fbae05ab9b99ecb0b977cc5824925a199895a4",
+        "author": {
+          "login": "aldanor",
+          "id": 2418513,
+          "node_id": "MDQ6VXNlcjI0MTg1MTM=",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/aldanor",
+          "type": "User",
+          "site_admin": false
+        },
+        "committer": {
+          "login": "aldanor",
+          "id": 2418513,
+          "node_id": "MDQ6VXNlcjI0MTg1MTM=",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/aldanor",
+          "type": "User",
+          "site_admin": false
+        },
+        "parents": [
+          {
+            "sha": "a060c2da7e9c9d291f38261389e6945a6951366e",
+            "url": "https://api.github.com/repos/discord/curl-rust/commits/a060c2da7e9c9d291f38261389e6945a6951366e"
+          }
+        ]
+      }
+    ],
     "releases": [],
     "issues": [],
     "pullRequests": []

@@ -57,9 +57,377 @@
     "triage": false,
     "pull": false
   },
-  "branches": [],
+  "branches": [
+    {
+      "name": "develop",
+      "commit": {
+        "sha": "4e9e1703cfce22836b45c13d59c14e0505147958",
+        "url": "https://api.github.com/repos/discord/isort/commits/4e9e1703cfce22836b45c13d59c14e0505147958"
+      },
+      "protected": false
+    },
+    {
+      "name": "feature/fix-issue-312/crash-on-simple-file",
+      "commit": {
+        "sha": "99c4aa9a9d79d375a3a41c5496655d4a3781f2f8",
+        "url": "https://api.github.com/repos/discord/isort/commits/99c4aa9a9d79d375a3a41c5496655d4a3781f2f8"
+      },
+      "protected": false
+    },
+    {
+      "name": "feature/fix-issue-488",
+      "commit": {
+        "sha": "8901170b3dd0de67237cf2cc3559594eed006999",
+        "url": "https://api.github.com/repos/discord/isort/commits/8901170b3dd0de67237cf2cc3559594eed006999"
+      },
+      "protected": false
+    },
+    {
+      "name": "feature/fix-issue-571",
+      "commit": {
+        "sha": "bd93388e73cf09fb272dd40a53e118f055760dbe",
+        "url": "https://api.github.com/repos/discord/isort/commits/bd93388e73cf09fb272dd40a53e118f055760dbe"
+      },
+      "protected": false
+    },
+    {
+      "name": "feature/fix-issue-653",
+      "commit": {
+        "sha": "317bf58eaf8f2f56316b57d35e1cdd7729e2a017",
+        "url": "https://api.github.com/repos/discord/isort/commits/317bf58eaf8f2f56316b57d35e1cdd7729e2a017"
+      },
+      "protected": false
+    },
+    {
+      "name": "feature/fix-issue-890",
+      "commit": {
+        "sha": "fa3421e5f4ff8ede0578708fb89af40bd24e265c",
+        "url": "https://api.github.com/repos/discord/isort/commits/fa3421e5f4ff8ede0578708fb89af40bd24e265c"
+      },
+      "protected": false
+    },
+    {
+      "name": "feature/fix-issue-895",
+      "commit": {
+        "sha": "2408e2ec90d3ba0a4b239ddf901c4febb0800be3",
+        "url": "https://api.github.com/repos/discord/isort/commits/2408e2ec90d3ba0a4b239ddf901c4febb0800be3"
+      },
+      "protected": false
+    },
+    {
+      "name": "feature/magic-import-support",
+      "commit": {
+        "sha": "e74a45c0c4bec1d7b063fa4d39dd973eabc17056",
+        "url": "https://api.github.com/repos/discord/isort/commits/e74a45c0c4bec1d7b063fa4d39dd973eabc17056"
+      },
+      "protected": false
+    },
+    {
+      "name": "gh-pages",
+      "commit": {
+        "sha": "5b2fe6591127c449cf55a9b3e57c50b7aef41221",
+        "url": "https://api.github.com/repos/discord/isort/commits/5b2fe6591127c449cf55a9b3e57c50b7aef41221"
+      },
+      "protected": false
+    },
+    {
+      "name": "issue/942",
+      "commit": {
+        "sha": "36102e5498c06058e8f8c31205f63b5e2f9ec978",
+        "url": "https://api.github.com/repos/discord/isort/commits/36102e5498c06058e8f8c31205f63b5e2f9ec978"
+      },
+      "protected": false
+    },
+    {
+      "name": "master",
+      "commit": {
+        "sha": "36f8c395e5c4a91c07493ed6ffea1baf298f33b3",
+        "url": "https://api.github.com/repos/discord/isort/commits/36f8c395e5c4a91c07493ed6ffea1baf298f33b3"
+      },
+      "protected": false
+    }
+  ],
   "last5": {
-    "commits": [],
+    "commits": [
+      {
+        "sha": "4e9e1703cfce22836b45c13d59c14e0505147958",
+        "node_id": "MDY6Q29tbWl0MjAzMDM3NjM1OjRlOWUxNzAzY2ZjZTIyODM2YjQ1YzEzZDU5YzE0ZTA1MDUxNDc5NTg=",
+        "commit": {
+          "author": {
+            "name": "Timothy Edmund Crosley",
+            "email": "timothy.crosley@gmail.com",
+            "date": "2019-08-17T06:20:37Z"
+          },
+          "committer": {
+            "name": "GitHub",
+            "email": "noreply@github.com",
+            "date": "2019-08-17T06:20:37Z"
+          },
+          "message": "Merge pull request #994 from jdufresne/bug-bear\n\nAdd flake8-bugbear to tox.ini lint target",
+          "tree": {
+            "sha": "210c54d1a41f44c52e9fbb9f9d8ac976f3ba197d",
+            "url": "https://api.github.com/repos/discord/isort/git/trees/210c54d1a41f44c52e9fbb9f9d8ac976f3ba197d"
+          },
+          "url": "https://api.github.com/repos/discord/isort/git/commits/4e9e1703cfce22836b45c13d59c14e0505147958",
+          "comment_count": 0,
+          "verification": {
+            "verified": true,
+            "reason": "valid",
+            "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsBcBAABCAAQBQJdV5y1CRBK7hj4Ov3rIwAAdHIIABn35XBLdo1n0aXpv5QANlSq\nei2zjWZ4i5POQN91nl43nT+8jl+60vh3VTPvEEaf7anBvIvREaMpO9n24x+qndX8\nOfwjMIRn/Sb4f/ToXfn2BhAVKooT6YNYJrkklIoAsyv9W/C+jOzyRPrL0xavE7TI\n7uAS/0FTUiE/9WWYKnxSeFVjM+WXpay/SuWOzYx8OVFH3hMO8UdsPZD2TFf0bRS1\nz72t7wc2Xzy8QMBjY0U//gjmt2zsWGQO14z37FasbqPEBUhytOwp3vwduGAgQdPh\nGD7tYgTHm9UyxLfFYdsq2Jv9fTPfGDhSIjgznEwmUuO2fwRHj/kBc5HuKE80j9k=\n=c9bz\n-----END PGP SIGNATURE-----\n",
+            "payload": "tree 210c54d1a41f44c52e9fbb9f9d8ac976f3ba197d\nparent bb0b2ef13868349a987305787da72ceacda886a5\nparent e5dede347417134cb1cf117083bc20dd9794ba19\nauthor Timothy Edmund Crosley <timothy.crosley@gmail.com> 1566022837 -0700\ncommitter GitHub <noreply@github.com> 1566022837 -0700\n\nMerge pull request #994 from jdufresne/bug-bear\n\nAdd flake8-bugbear to tox.ini lint target"
+          }
+        },
+        "url": "https://api.github.com/repos/discord/isort/commits/4e9e1703cfce22836b45c13d59c14e0505147958",
+        "author": {
+          "login": "timothycrosley",
+          "id": 2090154,
+          "node_id": "MDQ6VXNlcjIwOTAxNTQ=",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/timothycrosley",
+          "type": "User",
+          "site_admin": false
+        },
+        "committer": {
+          "login": "web-flow",
+          "id": 19864447,
+          "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/web-flow",
+          "type": "User",
+          "site_admin": false
+        },
+        "parents": [
+          {
+            "sha": "bb0b2ef13868349a987305787da72ceacda886a5",
+            "url": "https://api.github.com/repos/discord/isort/commits/bb0b2ef13868349a987305787da72ceacda886a5"
+          },
+          {
+            "sha": "e5dede347417134cb1cf117083bc20dd9794ba19",
+            "url": "https://api.github.com/repos/discord/isort/commits/e5dede347417134cb1cf117083bc20dd9794ba19"
+          }
+        ]
+      },
+      {
+        "sha": "bb0b2ef13868349a987305787da72ceacda886a5",
+        "node_id": "MDY6Q29tbWl0MjAzMDM3NjM1OmJiMGIyZWYxMzg2ODM0OWE5ODczMDU3ODdkYTcyY2VhY2RhODg2YTU=",
+        "commit": {
+          "author": {
+            "name": "Timothy Edmund Crosley",
+            "email": "timothy.crosley@gmail.com",
+            "date": "2019-08-17T06:19:25Z"
+          },
+          "committer": {
+            "name": "GitHub",
+            "email": "noreply@github.com",
+            "date": "2019-08-17T06:19:25Z"
+          },
+          "message": "Merge pull request #991 from jdufresne/pyupgrade\n\nRun pyupgrade tool across the project",
+          "tree": {
+            "sha": "3b7c2239c0c79db892ef968c587ce4e013dea9a3",
+            "url": "https://api.github.com/repos/discord/isort/git/trees/3b7c2239c0c79db892ef968c587ce4e013dea9a3"
+          },
+          "url": "https://api.github.com/repos/discord/isort/git/commits/bb0b2ef13868349a987305787da72ceacda886a5",
+          "comment_count": 0,
+          "verification": {
+            "verified": true,
+            "reason": "valid",
+            "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsBcBAABCAAQBQJdV5xtCRBK7hj4Ov3rIwAAdHIIAKqHUphNO52ZAi+pjrY+tneB\n6Pb/UmrMB4ddW8Ljp4Bf6Ji8IvXY7HgJJpaERVcnDaP0uSOYIqZ0aeMWd2bElP+Q\negUhiRV6y2xasYGa97F2TWLiyfYXi8naiPVjFerQYsmPavqdnUauShOOckhPyFy3\nF2tWdUcNZ2YDxEoIzWNBIX9CftiJ77d8TNebh2ruWsw6+/VLxn53ZmDOnMLfmqcP\n6HynRpZf1CwPEa0DfxttUwggIE1RoVfrsKilK0Us0ND+mN4ZREarxSPDgk7QtYu9\nJDuZtmGS/IcthsUDC74yYwnYjRESfB3UKMr1nbmIXp7HrxeoZ32VtkonvAnvsK8=\n=jsJj\n-----END PGP SIGNATURE-----\n",
+            "payload": "tree 3b7c2239c0c79db892ef968c587ce4e013dea9a3\nparent 4ca3bcbab186746bed014fe9764f59734b8eaa37\nparent 55f637caa00fdec2e4b530ff9c0dbf3de22c30f1\nauthor Timothy Edmund Crosley <timothy.crosley@gmail.com> 1566022765 -0700\ncommitter GitHub <noreply@github.com> 1566022765 -0700\n\nMerge pull request #991 from jdufresne/pyupgrade\n\nRun pyupgrade tool across the project"
+          }
+        },
+        "url": "https://api.github.com/repos/discord/isort/commits/bb0b2ef13868349a987305787da72ceacda886a5",
+        "author": {
+          "login": "timothycrosley",
+          "id": 2090154,
+          "node_id": "MDQ6VXNlcjIwOTAxNTQ=",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/timothycrosley",
+          "type": "User",
+          "site_admin": false
+        },
+        "committer": {
+          "login": "web-flow",
+          "id": 19864447,
+          "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/web-flow",
+          "type": "User",
+          "site_admin": false
+        },
+        "parents": [
+          {
+            "sha": "4ca3bcbab186746bed014fe9764f59734b8eaa37",
+            "url": "https://api.github.com/repos/discord/isort/commits/4ca3bcbab186746bed014fe9764f59734b8eaa37"
+          },
+          {
+            "sha": "55f637caa00fdec2e4b530ff9c0dbf3de22c30f1",
+            "url": "https://api.github.com/repos/discord/isort/commits/55f637caa00fdec2e4b530ff9c0dbf3de22c30f1"
+          }
+        ]
+      },
+      {
+        "sha": "e5dede347417134cb1cf117083bc20dd9794ba19",
+        "node_id": "MDY6Q29tbWl0MjAzMDM3NjM1OmU1ZGVkZTM0NzQxNzEzNGNiMWNmMTE3MDgzYmMyMGRkOTc5NGJhMTk=",
+        "commit": {
+          "author": {
+            "name": "Jon Dufresne",
+            "email": "jon.dufresne@gmail.com",
+            "date": "2019-08-15T11:00:33Z"
+          },
+          "committer": {
+            "name": "Jon Dufresne",
+            "email": "jon.dufresne@gmail.com",
+            "date": "2019-08-16T23:39:08Z"
+          },
+          "message": "Add flake8-bugbear to tox.ini lint target\n\nflake8-bugbear is a plugin for flake8 that can find likely bugs and\ndesign problems. It contains warnings that don't belong in pyflakes and\npycodestyle.\n\nIntroduced as this tool is recommended by HOPE-8.",
+          "tree": {
+            "sha": "acebeb93446356cb75acd259d7c5828d1226aec6",
+            "url": "https://api.github.com/repos/discord/isort/git/trees/acebeb93446356cb75acd259d7c5828d1226aec6"
+          },
+          "url": "https://api.github.com/repos/discord/isort/git/commits/e5dede347417134cb1cf117083bc20dd9794ba19",
+          "comment_count": 0,
+          "verification": {
+            "verified": false,
+            "reason": "unsigned",
+            "signature": null,
+            "payload": null
+          }
+        },
+        "url": "https://api.github.com/repos/discord/isort/commits/e5dede347417134cb1cf117083bc20dd9794ba19",
+        "author": {
+          "login": "jdufresne",
+          "id": 347634,
+          "node_id": "MDQ6VXNlcjM0NzYzNA==",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/jdufresne",
+          "type": "User",
+          "site_admin": false
+        },
+        "committer": {
+          "login": "jdufresne",
+          "id": 347634,
+          "node_id": "MDQ6VXNlcjM0NzYzNA==",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/jdufresne",
+          "type": "User",
+          "site_admin": false
+        },
+        "parents": [
+          {
+            "sha": "4ca3bcbab186746bed014fe9764f59734b8eaa37",
+            "url": "https://api.github.com/repos/discord/isort/commits/4ca3bcbab186746bed014fe9764f59734b8eaa37"
+          }
+        ]
+      },
+      {
+        "sha": "55f637caa00fdec2e4b530ff9c0dbf3de22c30f1",
+        "node_id": "MDY6Q29tbWl0MjAzMDM3NjM1OjU1ZjYzN2NhYTAwZmRlYzJlNGI1MzBmZjljMGRiZjNkZTIyYzMwZjE=",
+        "commit": {
+          "author": {
+            "name": "Jon Dufresne",
+            "email": "jon.dufresne@gmail.com",
+            "date": "2019-08-15T12:00:47Z"
+          },
+          "committer": {
+            "name": "Jon Dufresne",
+            "email": "jon.dufresne@gmail.com",
+            "date": "2019-08-16T23:34:29Z"
+          },
+          "message": "Run pyupgrade tool across the project\n\nHelps migrate old Python code to modern standards. Ran with the\n--py3-plus flag for to enable all available upgrade options. For details\non pyupgrade, see:\n\nhttps://github.com/asottile/pyupgrade",
+          "tree": {
+            "sha": "3b7c2239c0c79db892ef968c587ce4e013dea9a3",
+            "url": "https://api.github.com/repos/discord/isort/git/trees/3b7c2239c0c79db892ef968c587ce4e013dea9a3"
+          },
+          "url": "https://api.github.com/repos/discord/isort/git/commits/55f637caa00fdec2e4b530ff9c0dbf3de22c30f1",
+          "comment_count": 0,
+          "verification": {
+            "verified": false,
+            "reason": "unsigned",
+            "signature": null,
+            "payload": null
+          }
+        },
+        "url": "https://api.github.com/repos/discord/isort/commits/55f637caa00fdec2e4b530ff9c0dbf3de22c30f1",
+        "author": {
+          "login": "jdufresne",
+          "id": 347634,
+          "node_id": "MDQ6VXNlcjM0NzYzNA==",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/jdufresne",
+          "type": "User",
+          "site_admin": false
+        },
+        "committer": {
+          "login": "jdufresne",
+          "id": 347634,
+          "node_id": "MDQ6VXNlcjM0NzYzNA==",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/jdufresne",
+          "type": "User",
+          "site_admin": false
+        },
+        "parents": [
+          {
+            "sha": "4ca3bcbab186746bed014fe9764f59734b8eaa37",
+            "url": "https://api.github.com/repos/discord/isort/commits/4ca3bcbab186746bed014fe9764f59734b8eaa37"
+          }
+        ]
+      },
+      {
+        "sha": "4ca3bcbab186746bed014fe9764f59734b8eaa37",
+        "node_id": "MDY6Q29tbWl0MjAzMDM3NjM1OjRjYTNiY2JhYjE4Njc0NmJlZDAxNGZlOTc2NGY1OTczNGI4ZWFhMzc=",
+        "commit": {
+          "author": {
+            "name": "Jon Dufresne",
+            "email": "jon.dufresne@gmail.com",
+            "date": "2019-08-15T11:57:22Z"
+          },
+          "committer": {
+            "name": "Timothy Edmund Crosley",
+            "email": "timothy.crosley@gmail.com",
+            "date": "2019-08-16T05:53:09Z"
+          },
+          "message": "Apply isort test_isort.py",
+          "tree": {
+            "sha": "bcff871ac2714286af6569ce4c837839d3cf2550",
+            "url": "https://api.github.com/repos/discord/isort/git/trees/bcff871ac2714286af6569ce4c837839d3cf2550"
+          },
+          "url": "https://api.github.com/repos/discord/isort/git/commits/4ca3bcbab186746bed014fe9764f59734b8eaa37",
+          "comment_count": 0,
+          "verification": {
+            "verified": false,
+            "reason": "unsigned",
+            "signature": null,
+            "payload": null
+          }
+        },
+        "url": "https://api.github.com/repos/discord/isort/commits/4ca3bcbab186746bed014fe9764f59734b8eaa37",
+        "author": {
+          "login": "jdufresne",
+          "id": 347634,
+          "node_id": "MDQ6VXNlcjM0NzYzNA==",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/jdufresne",
+          "type": "User",
+          "site_admin": false
+        },
+        "committer": {
+          "login": "timothycrosley",
+          "id": 2090154,
+          "node_id": "MDQ6VXNlcjIwOTAxNTQ=",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/timothycrosley",
+          "type": "User",
+          "site_admin": false
+        },
+        "parents": [
+          {
+            "sha": "dca0a3ccad2f96da8b1ddbc72f72cd4da8ce5c17",
+            "url": "https://api.github.com/repos/discord/isort/commits/dca0a3ccad2f96da8b1ddbc72f72cd4da8ce5c17"
+          }
+        ]
+      }
+    ],
     "releases": [],
     "issues": [],
     "pullRequests": []

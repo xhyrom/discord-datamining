@@ -57,9 +57,293 @@
     "triage": false,
     "pull": false
   },
-  "branches": [],
+  "branches": [
+    {
+      "name": "master",
+      "commit": {
+        "sha": "3fa8589a82fd1308550a1902a8e82f468bad8985",
+        "url": "https://api.github.com/repos/discord/node-cld/commits/3fa8589a82fd1308550a1902a8e82f468bad8985"
+      },
+      "protected": false
+    }
+  ],
   "last5": {
-    "commits": [],
+    "commits": [
+      {
+        "sha": "3fa8589a82fd1308550a1902a8e82f468bad8985",
+        "node_id": "MDY6Q29tbWl0MTY4NTczMzY1OjNmYTg1ODlhODJmZDEzMDg1NTBhMTkwMmE4ZTgyZjQ2OGJhZDg5ODU=",
+        "commit": {
+          "author": {
+            "name": "Jeremy Apthorp",
+            "email": "nornagon@nornagon.net",
+            "date": "2019-01-30T00:08:49Z"
+          },
+          "committer": {
+            "name": "Jeremy Apthorp",
+            "email": "nornagon@nornagon.net",
+            "date": "2019-01-30T00:08:49Z"
+          },
+          "message": "fix compilation with node 12 / electron 5",
+          "tree": {
+            "sha": "89ccdc7faa40d9406516b779765190ee27a1dceb",
+            "url": "https://api.github.com/repos/discord/node-cld/git/trees/89ccdc7faa40d9406516b779765190ee27a1dceb"
+          },
+          "url": "https://api.github.com/repos/discord/node-cld/git/commits/3fa8589a82fd1308550a1902a8e82f468bad8985",
+          "comment_count": 0,
+          "verification": {
+            "verified": false,
+            "reason": "unsigned",
+            "signature": null,
+            "payload": null
+          }
+        },
+        "url": "https://api.github.com/repos/discord/node-cld/commits/3fa8589a82fd1308550a1902a8e82f468bad8985",
+        "author": {
+          "login": "nornagon",
+          "id": 172800,
+          "node_id": "MDQ6VXNlcjE3MjgwMA==",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/nornagon",
+          "type": "User",
+          "site_admin": false
+        },
+        "committer": {
+          "login": "nornagon",
+          "id": 172800,
+          "node_id": "MDQ6VXNlcjE3MjgwMA==",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/nornagon",
+          "type": "User",
+          "site_admin": false
+        },
+        "parents": [
+          {
+            "sha": "a7c2fd6c6fa7897f78cf8e688c873d81f263fb75",
+            "url": "https://api.github.com/repos/discord/node-cld/commits/a7c2fd6c6fa7897f78cf8e688c873d81f263fb75"
+          }
+        ]
+      },
+      {
+        "sha": "a7c2fd6c6fa7897f78cf8e688c873d81f263fb75",
+        "node_id": "MDY6Q29tbWl0MTY4NTczMzY1OmE3YzJmZDZjNmZhNzg5N2Y3OGNmOGU2ODhjODczZDgxZjI2M2ZiNzU=",
+        "commit": {
+          "author": {
+            "name": "Blagovest Dachev",
+            "email": "blago@dachev.com",
+            "date": "2018-03-14T07:25:20Z"
+          },
+          "committer": {
+            "name": "Blagovest Dachev",
+            "email": "blago@dachev.com",
+            "date": "2018-03-14T07:25:20Z"
+          },
+          "message": "version++",
+          "tree": {
+            "sha": "b3368a507629eaf3f4db68a0fb0c78658dc91bb3",
+            "url": "https://api.github.com/repos/discord/node-cld/git/trees/b3368a507629eaf3f4db68a0fb0c78658dc91bb3"
+          },
+          "url": "https://api.github.com/repos/discord/node-cld/git/commits/a7c2fd6c6fa7897f78cf8e688c873d81f263fb75",
+          "comment_count": 0,
+          "verification": {
+            "verified": false,
+            "reason": "unsigned",
+            "signature": null,
+            "payload": null
+          }
+        },
+        "url": "https://api.github.com/repos/discord/node-cld/commits/a7c2fd6c6fa7897f78cf8e688c873d81f263fb75",
+        "author": {
+          "login": "dachev",
+          "id": 66780,
+          "node_id": "MDQ6VXNlcjY2Nzgw",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/dachev",
+          "type": "User",
+          "site_admin": false
+        },
+        "committer": {
+          "login": "dachev",
+          "id": 66780,
+          "node_id": "MDQ6VXNlcjY2Nzgw",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/dachev",
+          "type": "User",
+          "site_admin": false
+        },
+        "parents": [
+          {
+            "sha": "a40b57ba7fe5121fc276c12a1ebee4cb26b3af27",
+            "url": "https://api.github.com/repos/discord/node-cld/commits/a40b57ba7fe5121fc276c12a1ebee4cb26b3af27"
+          }
+        ]
+      },
+      {
+        "sha": "a40b57ba7fe5121fc276c12a1ebee4cb26b3af27",
+        "node_id": "MDY6Q29tbWl0MTY4NTczMzY1OmE0MGI1N2JhN2ZlNTEyMWZjMjc2YzEyYTFlYmVlNGNiMjZiM2FmMjc=",
+        "commit": {
+          "author": {
+            "name": "Blagovest Dachev",
+            "email": "blago@dachev.com",
+            "date": "2018-03-14T07:24:07Z"
+          },
+          "committer": {
+            "name": "GitHub",
+            "email": "noreply@github.com",
+            "date": "2018-03-14T07:24:07Z"
+          },
+          "message": "Merge pull request #43 from Nokel81/Nokel81-update-package-json\n\nUpdate package.json",
+          "tree": {
+            "sha": "debecbf622a2569695bd533adc2330e4361c1975",
+            "url": "https://api.github.com/repos/discord/node-cld/git/trees/debecbf622a2569695bd533adc2330e4361c1975"
+          },
+          "url": "https://api.github.com/repos/discord/node-cld/git/commits/a40b57ba7fe5121fc276c12a1ebee4cb26b3af27",
+          "comment_count": 0,
+          "verification": {
+            "verified": true,
+            "reason": "valid",
+            "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsBcBAABCAAQBQJaqM4XCRBK7hj4Ov3rIwAAdHIIABxCAp8MikpGgBg9tHiAgbEA\nFDu6c9V1QDDjGMbjXt9Qy1/0lTi9zuhY/nxjLc0MFnkAPUuLaHo1wADG7+Mg8BEo\n6Hz1qQbno6qjJVvssZ7Qie7aZte0AExWY7dpSqIuUbLuokEM+idcZf5JId0nAB9p\nu6bOIh3ZB4iwb7fb8VCu6YxG+VIvlj9JeS3Th2wm4jw9NS2IpypayK7irYy9wZbD\n52hEvxt9hk49oVAtsJZwk+qLaIjPS4vvJ/shN/PPL3i2zTIXWXOqGW9174skmVz0\nKCY5StecPVFOD8F+vGV0vYt4atSs+JCWWLeSzklA6/tH01cEzNsEQskCvPjYgTo=\n=Bn5y\n-----END PGP SIGNATURE-----\n",
+            "payload": "tree debecbf622a2569695bd533adc2330e4361c1975\nparent e752da8554ea54c26d2feccd9d0d5f2fcb8101d7\nparent 6209f4975e9d2357bd68cbe061e9600ce744c558\nauthor Blagovest Dachev <blago@dachev.com> 1521012247 +0700\ncommitter GitHub <noreply@github.com> 1521012247 +0700\n\nMerge pull request #43 from Nokel81/Nokel81-update-package-json\n\nUpdate package.json"
+          }
+        },
+        "url": "https://api.github.com/repos/discord/node-cld/commits/a40b57ba7fe5121fc276c12a1ebee4cb26b3af27",
+        "author": {
+          "login": "dachev",
+          "id": 66780,
+          "node_id": "MDQ6VXNlcjY2Nzgw",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/dachev",
+          "type": "User",
+          "site_admin": false
+        },
+        "committer": {
+          "login": "web-flow",
+          "id": 19864447,
+          "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/web-flow",
+          "type": "User",
+          "site_admin": false
+        },
+        "parents": [
+          {
+            "sha": "e752da8554ea54c26d2feccd9d0d5f2fcb8101d7",
+            "url": "https://api.github.com/repos/discord/node-cld/commits/e752da8554ea54c26d2feccd9d0d5f2fcb8101d7"
+          },
+          {
+            "sha": "6209f4975e9d2357bd68cbe061e9600ce744c558",
+            "url": "https://api.github.com/repos/discord/node-cld/commits/6209f4975e9d2357bd68cbe061e9600ce744c558"
+          }
+        ]
+      },
+      {
+        "sha": "6209f4975e9d2357bd68cbe061e9600ce744c558",
+        "node_id": "MDY6Q29tbWl0MTY4NTczMzY1OjYyMDlmNDk3NWU5ZDIzNTdiZDY4Y2JlMDYxZTk2MDBjZTc0NGM1NTg=",
+        "commit": {
+          "author": {
+            "name": "Sebastian Malton",
+            "email": "sebastian@malton.name",
+            "date": "2018-03-13T15:16:19Z"
+          },
+          "committer": {
+            "name": "GitHub",
+            "email": "noreply@github.com",
+            "date": "2018-03-13T15:16:19Z"
+          },
+          "message": "Update package.json\n\nThis is required to build cld on ubuntu with node v8.10",
+          "tree": {
+            "sha": "debecbf622a2569695bd533adc2330e4361c1975",
+            "url": "https://api.github.com/repos/discord/node-cld/git/trees/debecbf622a2569695bd533adc2330e4361c1975"
+          },
+          "url": "https://api.github.com/repos/discord/node-cld/git/commits/6209f4975e9d2357bd68cbe061e9600ce744c558",
+          "comment_count": 0,
+          "verification": {
+            "verified": true,
+            "reason": "valid",
+            "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsBcBAABCAAQBQJap+tDCRBK7hj4Ov3rIwAAdHIIAIf20OVvaE5qfZcroj+XXm3Q\neygYBoKNIaYirl7oeJW2BGPGNjuIgdD+DXiqpLQ4cfLKIYDPU9z6P16H47vuqfi4\nlKcyEurcHU8wH2NEa/LCmohkf7z5rBdvgC6LmLAJWT0b/XaiGFFLq5JfeuvextOb\ny/1KdFeOAMVokK1flQHT2fjq6xkcHLL1pP4EwTBg9hJFj9IqXhLDcl+9EBVKCfmI\nik9A2LpvrHV3xBn9OmKPl2V+2ud36yODIjgleMqaR0Z07Cds/iR0UHktXrkGdwPm\nU36p2zD+W2xVMUTBRiNr8CLOYuieeEQsRpsCWanUzqqkIljt6728KNANVtnXBDo=\n=S3ee\n-----END PGP SIGNATURE-----\n",
+            "payload": "tree debecbf622a2569695bd533adc2330e4361c1975\nparent e752da8554ea54c26d2feccd9d0d5f2fcb8101d7\nauthor Sebastian Malton <sebastian@malton.name> 1520954179 -0400\ncommitter GitHub <noreply@github.com> 1520954179 -0400\n\nUpdate package.json\n\nThis is required to build cld on ubuntu with node v8.10"
+          }
+        },
+        "url": "https://api.github.com/repos/discord/node-cld/commits/6209f4975e9d2357bd68cbe061e9600ce744c558",
+        "author": {
+          "login": "Nokel81",
+          "id": 8225332,
+          "node_id": "MDQ6VXNlcjgyMjUzMzI=",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/Nokel81",
+          "type": "User",
+          "site_admin": false
+        },
+        "committer": {
+          "login": "web-flow",
+          "id": 19864447,
+          "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/web-flow",
+          "type": "User",
+          "site_admin": false
+        },
+        "parents": [
+          {
+            "sha": "e752da8554ea54c26d2feccd9d0d5f2fcb8101d7",
+            "url": "https://api.github.com/repos/discord/node-cld/commits/e752da8554ea54c26d2feccd9d0d5f2fcb8101d7"
+          }
+        ]
+      },
+      {
+        "sha": "e752da8554ea54c26d2feccd9d0d5f2fcb8101d7",
+        "node_id": "MDY6Q29tbWl0MTY4NTczMzY1OmU3NTJkYTg1NTRlYTU0YzI2ZDJmZWNjZDlkMGQ1ZjJmY2I4MTAxZDc=",
+        "commit": {
+          "author": {
+            "name": "Blagovest Dachev",
+            "email": "blago@dachev.com",
+            "date": "2016-09-27T19:35:43Z"
+          },
+          "committer": {
+            "name": "Blagovest Dachev",
+            "email": "blago@dachev.com",
+            "date": "2016-09-27T19:35:43Z"
+          },
+          "message": "version++",
+          "tree": {
+            "sha": "fe779c5f9d6445d442c974be729a94a34a7aa269",
+            "url": "https://api.github.com/repos/discord/node-cld/git/trees/fe779c5f9d6445d442c974be729a94a34a7aa269"
+          },
+          "url": "https://api.github.com/repos/discord/node-cld/git/commits/e752da8554ea54c26d2feccd9d0d5f2fcb8101d7",
+          "comment_count": 0,
+          "verification": {
+            "verified": false,
+            "reason": "unsigned",
+            "signature": null,
+            "payload": null
+          }
+        },
+        "url": "https://api.github.com/repos/discord/node-cld/commits/e752da8554ea54c26d2feccd9d0d5f2fcb8101d7",
+        "author": {
+          "login": "dachev",
+          "id": 66780,
+          "node_id": "MDQ6VXNlcjY2Nzgw",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/dachev",
+          "type": "User",
+          "site_admin": false
+        },
+        "committer": {
+          "login": "dachev",
+          "id": 66780,
+          "node_id": "MDQ6VXNlcjY2Nzgw",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/dachev",
+          "type": "User",
+          "site_admin": false
+        },
+        "parents": [
+          {
+            "sha": "3aad4af00c4e5fb84c81eba757bec7ede631e2f7",
+            "url": "https://api.github.com/repos/discord/node-cld/commits/3aad4af00c4e5fb84c81eba757bec7ede631e2f7"
+          }
+        ]
+      }
+    ],
     "releases": [],
     "issues": [],
     "pullRequests": []

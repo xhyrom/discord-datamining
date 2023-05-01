@@ -57,9 +57,505 @@
     "triage": false,
     "pull": false
   },
-  "branches": [],
+  "branches": [
+    {
+      "name": "backport/0.1.2/66",
+      "commit": {
+        "sha": "9853a1ff6d6c5da7d3481b7701a31a5f2da50b35",
+        "url": "https://api.github.com/repos/discord/circe/commits/9853a1ff6d6c5da7d3481b7701a31a5f2da50b35"
+      },
+      "protected": false
+    },
+    {
+      "name": "backport/0.2.1/110",
+      "commit": {
+        "sha": "1d09b8b9ec307ee152326bd6cd671afdf80b05bd",
+        "url": "https://api.github.com/repos/discord/circe/commits/1d09b8b9ec307ee152326bd6cd671afdf80b05bd"
+      },
+      "protected": false
+    },
+    {
+      "name": "backport/0.4.1/273",
+      "commit": {
+        "sha": "e97dce7131be7a42f6603ab44e8d6dd6332539a8",
+        "url": "https://api.github.com/repos/discord/circe/commits/e97dce7131be7a42f6603ab44e8d6dd6332539a8"
+      },
+      "protected": false
+    },
+    {
+      "name": "backport/0.5.2/366",
+      "commit": {
+        "sha": "db2f9f37f949f509110211cb449a2dad5f2ac446",
+        "url": "https://api.github.com/repos/discord/circe/commits/db2f9f37f949f509110211cb449a2dad5f2ac446"
+      },
+      "protected": false
+    },
+    {
+      "name": "backport/0.5.3",
+      "commit": {
+        "sha": "e0d0cae86a49748882f886a702425b7220745fd9",
+        "url": "https://api.github.com/repos/discord/circe/commits/e0d0cae86a49748882f886a702425b7220745fd9"
+      },
+      "protected": false
+    },
+    {
+      "name": "backport/0.5.4",
+      "commit": {
+        "sha": "717e1d7d5d146cbd0455770771261e334f419b14",
+        "url": "https://api.github.com/repos/discord/circe/commits/717e1d7d5d146cbd0455770771261e334f419b14"
+      },
+      "protected": false
+    },
+    {
+      "name": "backport/0.7.1",
+      "commit": {
+        "sha": "d552442b5c373405d1b9afa2bdda0e1655a44fc9",
+        "url": "https://api.github.com/repos/discord/circe/commits/d552442b5c373405d1b9afa2bdda0e1655a44fc9"
+      },
+      "protected": false
+    },
+    {
+      "name": "backport/0.9.2",
+      "commit": {
+        "sha": "65cb6fa3654b1431ae2d1fc34820f1eb5458e776",
+        "url": "https://api.github.com/repos/discord/circe/commits/65cb6fa3654b1431ae2d1fc34820f1eb5458e776"
+      },
+      "protected": false
+    },
+    {
+      "name": "backport/0.9.3",
+      "commit": {
+        "sha": "db7168d2728e9ca0e38b7e96ddcd8c74538429d2",
+        "url": "https://api.github.com/repos/discord/circe/commits/db7168d2728e9ca0e38b7e96ddcd8c74538429d2"
+      },
+      "protected": false
+    },
+    {
+      "name": "downloads/2017-09",
+      "commit": {
+        "sha": "1a9ee0a0b6ec5c9cdf1683787aa23fefe17b49f1",
+        "url": "https://api.github.com/repos/discord/circe/commits/1a9ee0a0b6ec5c9cdf1683787aa23fefe17b49f1"
+      },
+      "protected": false
+    },
+    {
+      "name": "downloads/2017-11",
+      "commit": {
+        "sha": "60d0c2ad2b2e819fd33341fada0d43eabbdbccb3",
+        "url": "https://api.github.com/repos/discord/circe/commits/60d0c2ad2b2e819fd33341fada0d43eabbdbccb3"
+      },
+      "protected": false
+    },
+    {
+      "name": "downloads/2017-12",
+      "commit": {
+        "sha": "12a93ab8209f2c05e28f6903cfa7d4239afeff49",
+        "url": "https://api.github.com/repos/discord/circe/commits/12a93ab8209f2c05e28f6903cfa7d4239afeff49"
+      },
+      "protected": false
+    },
+    {
+      "name": "downloads/2018-01",
+      "commit": {
+        "sha": "688a231dc84786a2da0767a65f09f03df7ad8241",
+        "url": "https://api.github.com/repos/discord/circe/commits/688a231dc84786a2da0767a65f09f03df7ad8241"
+      },
+      "protected": false
+    },
+    {
+      "name": "downloads/2018-02",
+      "commit": {
+        "sha": "2e66e6cf633357fe2075bde63e9effe78ee36a9b",
+        "url": "https://api.github.com/repos/discord/circe/commits/2e66e6cf633357fe2075bde63e9effe78ee36a9b"
+      },
+      "protected": false
+    },
+    {
+      "name": "downloads/2018-04",
+      "commit": {
+        "sha": "18da6c091dda536951af5419cc4de5a17aa7044f",
+        "url": "https://api.github.com/repos/discord/circe/commits/18da6c091dda536951af5419cc4de5a17aa7044f"
+      },
+      "protected": false
+    },
+    {
+      "name": "downloads/2018-05",
+      "commit": {
+        "sha": "a30b440d7edd75c89fc2577ce4a56288c107d2ab",
+        "url": "https://api.github.com/repos/discord/circe/commits/a30b440d7edd75c89fc2577ce4a56288c107d2ab"
+      },
+      "protected": false
+    },
+    {
+      "name": "downloads/2018-06",
+      "commit": {
+        "sha": "73ac0819c3df54082a48c2f6e0c3015311f4ea35",
+        "url": "https://api.github.com/repos/discord/circe/commits/73ac0819c3df54082a48c2f6e0c3015311f4ea35"
+      },
+      "protected": false
+    },
+    {
+      "name": "downloads/2018-07",
+      "commit": {
+        "sha": "c95c2d147fcb3e1ab4057a550921eb49ab32feea",
+        "url": "https://api.github.com/repos/discord/circe/commits/c95c2d147fcb3e1ab4057a550921eb49ab32feea"
+      },
+      "protected": false
+    },
+    {
+      "name": "downloads/2018-08",
+      "commit": {
+        "sha": "3cfcdac4de5e407d2fafca1642a5b8daf7315531",
+        "url": "https://api.github.com/repos/discord/circe/commits/3cfcdac4de5e407d2fafca1642a5b8daf7315531"
+      },
+      "protected": false
+    },
+    {
+      "name": "felixbr/topic-917-better-java8-time-errors",
+      "commit": {
+        "sha": "ae0dc8096c54188d65be859710ed58e5b08fca1a",
+        "url": "https://api.github.com/repos/discord/circe/commits/ae0dc8096c54188d65be859710ed58e5b08fca1a"
+      },
+      "protected": false
+    },
+    {
+      "name": "fix/65",
+      "commit": {
+        "sha": "6fe86c087112899001b4fa5e827405f5ca7fe77b",
+        "url": "https://api.github.com/repos/discord/circe/commits/6fe86c087112899001b4fa5e827405f5ca7fe77b"
+      },
+      "protected": false
+    },
+    {
+      "name": "fix/217",
+      "commit": {
+        "sha": "925435b8c83db72ab062bd7873c955addf622cd8",
+        "url": "https://api.github.com/repos/discord/circe/commits/925435b8c83db72ab062bd7873c955addf622cd8"
+      },
+      "protected": false
+    },
+    {
+      "name": "fix/320",
+      "commit": {
+        "sha": "7fc7e3e6154659bb476dd6077f235dc86ba7e1d4",
+        "url": "https://api.github.com/repos/discord/circe/commits/7fc7e3e6154659bb476dd6077f235dc86ba7e1d4"
+      },
+      "protected": false
+    },
+    {
+      "name": "fix/679",
+      "commit": {
+        "sha": "f3d59eddb46c535eb0624e38f8c848f3d639a21a",
+        "url": "https://api.github.com/repos/discord/circe/commits/f3d59eddb46c535eb0624e38f8c848f3d639a21a"
+      },
+      "protected": false
+    },
+    {
+      "name": "fix/760",
+      "commit": {
+        "sha": "0b5c591e50197ce88d8c7d7f2420407628b6b01c",
+        "url": "https://api.github.com/repos/discord/circe/commits/0b5c591e50197ce88d8c7d7f2420407628b6b01c"
+      },
+      "protected": false
+    },
+    {
+      "name": "fix/816",
+      "commit": {
+        "sha": "f6be5c30ff0e324e316c69dbdede05db069340fc",
+        "url": "https://api.github.com/repos/discord/circe/commits/f6be5c30ff0e324e316c69dbdede05db069340fc"
+      },
+      "protected": false
+    },
+    {
+      "name": "fix/831",
+      "commit": {
+        "sha": "4e490830ae1f21abfa0773d09ea449655721bc6a",
+        "url": "https://api.github.com/repos/discord/circe/commits/4e490830ae1f21abfa0773d09ea449655721bc6a"
+      },
+      "protected": false
+    },
+    {
+      "name": "fix/865",
+      "commit": {
+        "sha": "465f65fb9f44571c9445b85e0eaa85fafdb4b9eb",
+        "url": "https://api.github.com/repos/discord/circe/commits/465f65fb9f44571c9445b85e0eaa85fafdb4b9eb"
+      },
+      "protected": false
+    },
+    {
+      "name": "fix/987",
+      "commit": {
+        "sha": "57c7756401b2897c04e0ccac597a852c99981d02",
+        "url": "https://api.github.com/repos/discord/circe/commits/57c7756401b2897c04e0ccac597a852c99981d02"
+      },
+      "protected": false
+    },
+    {
+      "name": "gh-pages",
+      "commit": {
+        "sha": "a6ed235b9c4c2de19d4e77fe08e5a3a5192679ea",
+        "url": "https://api.github.com/repos/discord/circe/commits/a6ed235b9c4c2de19d4e77fe08e5a3a5192679ea"
+      },
+      "protected": false
+    }
+  ],
   "last5": {
-    "commits": [],
+    "commits": [
+      {
+        "sha": "127057d26d5aaf224eaba1ca07830dd4017ed43f",
+        "node_id": "MDY6Q29tbWl0MTUzMTgxNjg5OjEyNzA1N2QyNmQ1YWFmMjI0ZWFiYTFjYTA3ODMwZGQ0MDE3ZWQ0M2Y=",
+        "commit": {
+          "author": {
+            "name": "Andriy Plokhotnyuk",
+            "email": "plokhotnyuk@gmail.com",
+            "date": "2018-10-05T07:44:30Z"
+          },
+          "committer": {
+            "name": "Travis Brown",
+            "email": "travisrobertbrown@gmail.com",
+            "date": "2018-10-11T09:31:15Z"
+          },
+          "message": "Close #979 by adding encoders and decoders for MonthDay, Year, and ZoneOffset + improve throughput of parsing and serialization of YearMonth values",
+          "tree": {
+            "sha": "5007aea0d7bdc1dbfb34a4d549be5da3585b728d",
+            "url": "https://api.github.com/repos/discord/circe/git/trees/5007aea0d7bdc1dbfb34a4d549be5da3585b728d"
+          },
+          "url": "https://api.github.com/repos/discord/circe/git/commits/127057d26d5aaf224eaba1ca07830dd4017ed43f",
+          "comment_count": 0,
+          "verification": {
+            "verified": false,
+            "reason": "unsigned",
+            "signature": null,
+            "payload": null
+          }
+        },
+        "url": "https://api.github.com/repos/discord/circe/commits/127057d26d5aaf224eaba1ca07830dd4017ed43f",
+        "author": {
+          "login": "plokhotnyuk",
+          "id": 890289,
+          "node_id": "MDQ6VXNlcjg5MDI4OQ==",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/plokhotnyuk",
+          "type": "User",
+          "site_admin": false
+        },
+        "committer": {
+          "login": "travisbrown",
+          "id": 316049,
+          "node_id": "MDQ6VXNlcjMxNjA0OQ==",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/travisbrown",
+          "type": "User",
+          "site_admin": false
+        },
+        "parents": [
+          {
+            "sha": "7765cc4b18d9939696981f5e2f055d58487a9dbd",
+            "url": "https://api.github.com/repos/discord/circe/commits/7765cc4b18d9939696981f5e2f055d58487a9dbd"
+          }
+        ]
+      },
+      {
+        "sha": "7765cc4b18d9939696981f5e2f055d58487a9dbd",
+        "node_id": "MDY6Q29tbWl0MTUzMTgxNjg5Ojc3NjVjYzRiMThkOTkzOTY5Njk4MWY1ZTJmMDU1ZDU4NDg3YTlkYmQ=",
+        "commit": {
+          "author": {
+            "name": "Travis Brown",
+            "email": "travisrobertbrown@gmail.com",
+            "date": "2018-10-10T11:22:50Z"
+          },
+          "committer": {
+            "name": "Travis Brown",
+            "email": "travisrobertbrown@gmail.com",
+            "date": "2018-10-10T17:26:05Z"
+          },
+          "message": "Fixes for microsite after circe-optics move",
+          "tree": {
+            "sha": "e314dcd0932ff959b6035c4f104ac6b3fe7aac20",
+            "url": "https://api.github.com/repos/discord/circe/git/trees/e314dcd0932ff959b6035c4f104ac6b3fe7aac20"
+          },
+          "url": "https://api.github.com/repos/discord/circe/git/commits/7765cc4b18d9939696981f5e2f055d58487a9dbd",
+          "comment_count": 0,
+          "verification": {
+            "verified": false,
+            "reason": "unsigned",
+            "signature": null,
+            "payload": null
+          }
+        },
+        "url": "https://api.github.com/repos/discord/circe/commits/7765cc4b18d9939696981f5e2f055d58487a9dbd",
+        "author": {
+          "login": "travisbrown",
+          "id": 316049,
+          "node_id": "MDQ6VXNlcjMxNjA0OQ==",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/travisbrown",
+          "type": "User",
+          "site_admin": false
+        },
+        "committer": {
+          "login": "travisbrown",
+          "id": 316049,
+          "node_id": "MDQ6VXNlcjMxNjA0OQ==",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/travisbrown",
+          "type": "User",
+          "site_admin": false
+        },
+        "parents": [
+          {
+            "sha": "e73328882f38dd74483f31a6032a4011a5a56f7e",
+            "url": "https://api.github.com/repos/discord/circe/commits/e73328882f38dd74483f31a6032a4011a5a56f7e"
+          }
+        ]
+      },
+      {
+        "sha": "e73328882f38dd74483f31a6032a4011a5a56f7e",
+        "node_id": "MDY6Q29tbWl0MTUzMTgxNjg5OmU3MzMyODg4MmYzOGRkNzQ0ODNmMzFhNjAzMmE0MDExYTVhNTZmN2U=",
+        "commit": {
+          "author": {
+            "name": "Luka Jacobowitz",
+            "email": "luka.jacobowitz@codecentric.de",
+            "date": "2018-09-28T09:37:50Z"
+          },
+          "committer": {
+            "name": "Travis Brown",
+            "email": "travisrobertbrown@gmail.com",
+            "date": "2018-10-10T12:30:24Z"
+          },
+          "message": "Add FiniteDuration codec",
+          "tree": {
+            "sha": "a2963f1353175a278bdc4d8975b2b22b19035e69",
+            "url": "https://api.github.com/repos/discord/circe/git/trees/a2963f1353175a278bdc4d8975b2b22b19035e69"
+          },
+          "url": "https://api.github.com/repos/discord/circe/git/commits/e73328882f38dd74483f31a6032a4011a5a56f7e",
+          "comment_count": 0,
+          "verification": {
+            "verified": false,
+            "reason": "unsigned",
+            "signature": null,
+            "payload": null
+          }
+        },
+        "url": "https://api.github.com/repos/discord/circe/commits/e73328882f38dd74483f31a6032a4011a5a56f7e",
+        "author": null,
+        "committer": {
+          "login": "travisbrown",
+          "id": 316049,
+          "node_id": "MDQ6VXNlcjMxNjA0OQ==",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/travisbrown",
+          "type": "User",
+          "site_admin": false
+        },
+        "parents": [
+          {
+            "sha": "649d3f8f2f3b234297470b62fcf716c580ba0671",
+            "url": "https://api.github.com/repos/discord/circe/commits/649d3f8f2f3b234297470b62fcf716c580ba0671"
+          }
+        ]
+      },
+      {
+        "sha": "649d3f8f2f3b234297470b62fcf716c580ba0671",
+        "node_id": "MDY6Q29tbWl0MTUzMTgxNjg5OjY0OWQzZjhmMmYzYjIzNDI5NzQ3MGI2MmZjZjcxNmM1ODBiYTA2NzE=",
+        "commit": {
+          "author": {
+            "name": "Thuillier Benjamin",
+            "email": "benjaminthuillier@gmail.com",
+            "date": "2018-10-05T08:41:29Z"
+          },
+          "committer": {
+            "name": "Travis Brown",
+            "email": "travisrobertbrown@gmail.com",
+            "date": "2018-10-10T12:28:43Z"
+          },
+          "message": "Bump circe version in the doc the last stable one",
+          "tree": {
+            "sha": "73a125c61bd4a6eb5bcf45b05ad4e2fbb586b619",
+            "url": "https://api.github.com/repos/discord/circe/git/trees/73a125c61bd4a6eb5bcf45b05ad4e2fbb586b619"
+          },
+          "url": "https://api.github.com/repos/discord/circe/git/commits/649d3f8f2f3b234297470b62fcf716c580ba0671",
+          "comment_count": 0,
+          "verification": {
+            "verified": false,
+            "reason": "unsigned",
+            "signature": null,
+            "payload": null
+          }
+        },
+        "url": "https://api.github.com/repos/discord/circe/commits/649d3f8f2f3b234297470b62fcf716c580ba0671",
+        "author": {
+          "login": "bthuillier",
+          "id": 482256,
+          "node_id": "MDQ6VXNlcjQ4MjI1Ng==",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/bthuillier",
+          "type": "User",
+          "site_admin": false
+        },
+        "committer": {
+          "login": "travisbrown",
+          "id": 316049,
+          "node_id": "MDQ6VXNlcjMxNjA0OQ==",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/travisbrown",
+          "type": "User",
+          "site_admin": false
+        },
+        "parents": [
+          {
+            "sha": "6caa097818ee93171478179b542de4e9a71e340f",
+            "url": "https://api.github.com/repos/discord/circe/commits/6caa097818ee93171478179b542de4e9a71e340f"
+          }
+        ]
+      },
+      {
+        "sha": "6caa097818ee93171478179b542de4e9a71e340f",
+        "node_id": "MDY6Q29tbWl0MTUzMTgxNjg5OjZjYWEwOTc4MThlZTkzMTcxNDc4MTc5YjU0MmRlNGU5YTcxZTM0MGY=",
+        "commit": {
+          "author": {
+            "name": "exoego",
+            "email": "mogami@exoego.net",
+            "date": "2018-10-08T11:52:53Z"
+          },
+          "committer": {
+            "name": "Travis Brown",
+            "email": "travisrobertbrown@gmail.com",
+            "date": "2018-10-08T12:12:09Z"
+          },
+          "message": "Fix broken link",
+          "tree": {
+            "sha": "998d73284ac4549bee5e055704006547cd4315e4",
+            "url": "https://api.github.com/repos/discord/circe/git/trees/998d73284ac4549bee5e055704006547cd4315e4"
+          },
+          "url": "https://api.github.com/repos/discord/circe/git/commits/6caa097818ee93171478179b542de4e9a71e340f",
+          "comment_count": 0,
+          "verification": {
+            "verified": false,
+            "reason": "unsigned",
+            "signature": null,
+            "payload": null
+          }
+        },
+        "url": "https://api.github.com/repos/discord/circe/commits/6caa097818ee93171478179b542de4e9a71e340f",
+        "author": null,
+        "committer": {
+          "login": "travisbrown",
+          "id": 316049,
+          "node_id": "MDQ6VXNlcjMxNjA0OQ==",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/travisbrown",
+          "type": "User",
+          "site_admin": false
+        },
+        "parents": [
+          {
+            "sha": "888c5617f0da84ecee74d3b5cd35e8ddfec9517d",
+            "url": "https://api.github.com/repos/discord/circe/commits/888c5617f0da84ecee74d3b5cd35e8ddfec9517d"
+          }
+        ]
+      }
+    ],
     "releases": [],
     "issues": [],
     "pullRequests": []

@@ -53,9 +53,521 @@
   },
   "branches": [],
   "last5": {
-    "commits": [],
+    "commits": [
+      {
+        "sha": "14295e75f2a2084c93e0e972323ca59ead80ea38",
+        "node_id": "C_kwDOBz8KatoAKDE0Mjk1ZTc1ZjJhMjA4NGM5M2UwZTk3MjMyM2NhNTllYWQ4MGVhMzg",
+        "commit": {
+          "author": {
+            "name": "snek",
+            "email": "me@gus.host",
+            "date": "2023-01-02T00:14:27Z"
+          },
+          "committer": {
+            "name": "GitHub",
+            "email": "noreply@github.com",
+            "date": "2023-01-02T00:14:27Z"
+          },
+          "message": "remove myst server",
+          "tree": {
+            "sha": "5dc71c35db627ab7569d6fc3bf2ba02c10e06e55",
+            "url": "https://api.github.com/repos/discord/discord-open-source/git/trees/5dc71c35db627ab7569d6fc3bf2ba02c10e06e55"
+          },
+          "url": "https://api.github.com/repos/discord/discord-open-source/git/commits/14295e75f2a2084c93e0e972323ca59ead80ea38",
+          "comment_count": 0,
+          "verification": {
+            "verified": true,
+            "reason": "valid",
+            "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsBcBAABCAAQBQJjsiHjCRBK7hj4Ov3rIwAAqicIAKKDrbiWe81Po61rJoBBG04o\nH1CcnBZ3I39MfdwiRKUIQgf3OGxp2+LKPeDTz4yjSdn/E1TwnmAS9EZNMWYDQcdz\nUsqleTEyz0dRfVJivbBbQS2s6OESHXb8TB/i+6nQX6tA+tQL08WtnaJREpfrqntT\nvg0Sp0GUqQCScZY7edm9oMvLQ3Xrbx+I/0qvuOKxVQqVDnpsWL9IAf9yf993XmYW\nhwexf+Se8jWerBEYXMOeAlhVM7GODNObjZJ5LrsULMnYVdDMjpmqSMc7yzlGVs12\n9Hpb3houFQ8qE5CjlhNpFvqe/TP3J1rsVNL7EziFFuMBkBJYj4bBJAAUiHJOm6Y=\n=voCW\n-----END PGP SIGNATURE-----\n",
+            "payload": "tree 5dc71c35db627ab7569d6fc3bf2ba02c10e06e55\nparent ad47ebb30334c6e5615ff62685c0347ce509d861\nauthor snek <me@gus.host> 1672618467 -0600\ncommitter GitHub <noreply@github.com> 1672618467 -0600\n\nremove myst server"
+          }
+        },
+        "url": "https://api.github.com/repos/discord/discord-open-source/commits/14295e75f2a2084c93e0e972323ca59ead80ea38",
+        "author": {
+          "login": "devsnek",
+          "id": 5952481,
+          "node_id": "MDQ6VXNlcjU5NTI0ODE=",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/devsnek",
+          "type": "User",
+          "site_admin": false
+        },
+        "committer": {
+          "login": "web-flow",
+          "id": 19864447,
+          "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/web-flow",
+          "type": "User",
+          "site_admin": false
+        },
+        "parents": [
+          {
+            "sha": "ad47ebb30334c6e5615ff62685c0347ce509d861",
+            "url": "https://api.github.com/repos/discord/discord-open-source/commits/ad47ebb30334c6e5615ff62685c0347ce509d861"
+          }
+        ]
+      },
+      {
+        "sha": "ad47ebb30334c6e5615ff62685c0347ce509d861",
+        "node_id": "C_kwDOBz8KatoAKGFkNDdlYmIzMDMzNGM2ZTU2MTVmZjYyNjg1YzAzNDdjZTUwOWQ4NjE",
+        "commit": {
+          "author": {
+            "name": "snek",
+            "email": "me@gus.host",
+            "date": "2022-10-17T01:32:02Z"
+          },
+          "committer": {
+            "name": "GitHub",
+            "email": "noreply@github.com",
+            "date": "2022-10-17T01:32:02Z"
+          },
+          "message": "fix redux invite",
+          "tree": {
+            "sha": "85954f595955761cbd7525cbb18293af93ee204c",
+            "url": "https://api.github.com/repos/discord/discord-open-source/git/trees/85954f595955761cbd7525cbb18293af93ee204c"
+          },
+          "url": "https://api.github.com/repos/discord/discord-open-source/git/commits/ad47ebb30334c6e5615ff62685c0347ce509d861",
+          "comment_count": 0,
+          "verification": {
+            "verified": true,
+            "reason": "valid",
+            "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsBcBAABCAAQBQJjTLCSCRBK7hj4Ov3rIwAAAYEIAA5Xdkna6CTg9YCZKM6Y7P28\n3xBAnnWDNt0AMxEevNh5pLPZbRFEkMW1UlsGVK7snAGfiKYqI3GOd9dpwqVBPek5\n9i5k5rd12AvfHxvyeFtysly8O12pddTvhnaLcXn3S36sCxuJNN1ktKvPlEg93IS7\n3PJ06BBQXXaw3QmCTSR9YfPa3lYrGGzZK2qx8jnQ3tzcq4xgWQ/6WOMSvXVTKYB6\ncJosOeueBELru59kG3M0cYWFohIyrR5OV9mLR3W+DasNhWrnqab6agbtRLrJX1V9\nlyeu9V+8zll/yzxmNSMgi2QJVEtqCxk8OhUqDJ/e5mh1ep+QzIyxskuYyFMpMpA=\n=uyym\n-----END PGP SIGNATURE-----\n",
+            "payload": "tree 85954f595955761cbd7525cbb18293af93ee204c\nparent 281cc20b57ebc5d9aa2d0793cd4d2851d3740e48\nauthor snek <me@gus.host> 1665970322 -0700\ncommitter GitHub <noreply@github.com> 1665970322 -0700\n\nfix redux invite"
+          }
+        },
+        "url": "https://api.github.com/repos/discord/discord-open-source/commits/ad47ebb30334c6e5615ff62685c0347ce509d861",
+        "author": {
+          "login": "devsnek",
+          "id": 5952481,
+          "node_id": "MDQ6VXNlcjU5NTI0ODE=",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/devsnek",
+          "type": "User",
+          "site_admin": false
+        },
+        "committer": {
+          "login": "web-flow",
+          "id": 19864447,
+          "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/web-flow",
+          "type": "User",
+          "site_admin": false
+        },
+        "parents": [
+          {
+            "sha": "281cc20b57ebc5d9aa2d0793cd4d2851d3740e48",
+            "url": "https://api.github.com/repos/discord/discord-open-source/commits/281cc20b57ebc5d9aa2d0793cd4d2851d3740e48"
+          }
+        ]
+      },
+      {
+        "sha": "281cc20b57ebc5d9aa2d0793cd4d2851d3740e48",
+        "node_id": "C_kwDOBz8KatoAKDI4MWNjMjBiNTdlYmM1ZDlhYTJkMDc5M2NkNGQyODUxZDM3NDBlNDg",
+        "commit": {
+          "author": {
+            "name": "snek",
+            "email": "me@gus.host",
+            "date": "2022-10-17T00:46:46Z"
+          },
+          "committer": {
+            "name": "GitHub",
+            "email": "noreply@github.com",
+            "date": "2022-10-17T00:46:46Z"
+          },
+          "message": "remove invalid invite",
+          "tree": {
+            "sha": "59b58d4f761ffc884cc83be8a13e220e656d9a4e",
+            "url": "https://api.github.com/repos/discord/discord-open-source/git/trees/59b58d4f761ffc884cc83be8a13e220e656d9a4e"
+          },
+          "url": "https://api.github.com/repos/discord/discord-open-source/git/commits/281cc20b57ebc5d9aa2d0793cd4d2851d3740e48",
+          "comment_count": 0,
+          "verification": {
+            "verified": true,
+            "reason": "valid",
+            "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsBcBAABCAAQBQJjTKX2CRBK7hj4Ov3rIwAAHSMIADzUxaV6WAcx1HvIF7fSOj7y\nq1zcRnYPmmU92j2zCGPObB61Dtexogjbcsq6tc1TkycMg1aHnXKi7xJBAvrxQKvY\nnkqysAVevyadPr6ZmE4q9ReBbvfIGPZKjuWe9LKjaVjySldtU5hEYFA2ckBuNqWG\nAmVI6Kc7EnfIUdevYEEDznT8PAplhBvGk5427LoHkPrOYp3IgCLFqcg9M6v+9oYI\nFMkHtYV6SdyFc0pEzpes9BLMUIkWA9BAAsVhJYifb7/Nksg/tvSZ2QdY1BiwqjOp\nwZ5Ou8hD4/ZKKnMlgH6i7sQXnXSfZQT+MDdtvluCJ7xMcnviqDgPCBXAGshGVmI=\n=3eyi\n-----END PGP SIGNATURE-----\n",
+            "payload": "tree 59b58d4f761ffc884cc83be8a13e220e656d9a4e\nparent ede56ee4c79351ef2cd1de834801988feac0796f\nauthor snek <me@gus.host> 1665967606 -0700\ncommitter GitHub <noreply@github.com> 1665967606 -0700\n\nremove invalid invite"
+          }
+        },
+        "url": "https://api.github.com/repos/discord/discord-open-source/commits/281cc20b57ebc5d9aa2d0793cd4d2851d3740e48",
+        "author": {
+          "login": "devsnek",
+          "id": 5952481,
+          "node_id": "MDQ6VXNlcjU5NTI0ODE=",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/devsnek",
+          "type": "User",
+          "site_admin": false
+        },
+        "committer": {
+          "login": "web-flow",
+          "id": 19864447,
+          "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/web-flow",
+          "type": "User",
+          "site_admin": false
+        },
+        "parents": [
+          {
+            "sha": "ede56ee4c79351ef2cd1de834801988feac0796f",
+            "url": "https://api.github.com/repos/discord/discord-open-source/commits/ede56ee4c79351ef2cd1de834801988feac0796f"
+          }
+        ]
+      },
+      {
+        "sha": "ede56ee4c79351ef2cd1de834801988feac0796f",
+        "node_id": "C_kwDOBz8KatoAKGVkZTU2ZWU0Yzc5MzUxZWYyY2QxZGU4MzQ4MDE5ODhmZWFjMDc5NmY",
+        "commit": {
+          "author": {
+            "name": "Benjamin Hackl",
+            "email": "devel@benjamin-hackl.at",
+            "date": "2022-01-10T21:03:05Z"
+          },
+          "committer": {
+            "name": "GitHub",
+            "email": "noreply@github.com",
+            "date": "2022-01-10T21:03:05Z"
+          },
+          "message": "Add Manim (#292)",
+          "tree": {
+            "sha": "ca5d65e53b528edc56aad7b9122b2dd1e033e82d",
+            "url": "https://api.github.com/repos/discord/discord-open-source/git/trees/ca5d65e53b528edc56aad7b9122b2dd1e033e82d"
+          },
+          "url": "https://api.github.com/repos/discord/discord-open-source/git/commits/ede56ee4c79351ef2cd1de834801988feac0796f",
+          "comment_count": 0,
+          "verification": {
+            "verified": true,
+            "reason": "valid",
+            "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsBcBAABCAAQBQJh3J8JCRBK7hj4Ov3rIwAAy38IAI8Q9sA79V9Eby0UbsjLjoVh\nfLZoWAjwQwyRYKqvan7wGho5znUsTU8PPSmUjjvyR7syqw2CexhnMuPlfjkZSxQi\niG5RXX7ICc5qAvfQ1Z4O2kUbPLBeyz+aZD+BvXrsCT53DQUED9zPmBtYLu4IhAao\nxFg2GGggW3TEdG6baMI5km8YmFz1J5lhzlU+FxcHTsJERn8mwb5W42DTWCqdR8t9\n3rZH84VFdjd2Z9P2fPK7wYlx20ThzF8T6Oy7pFENCIzGxsZXehCgRbs7IoHaMdg6\nSkmOnBUxLR5OkIBYJ0o6+MJ206ayDBuvoyQ69WeDPbW86tHeUosuP5X6i6VQrKo=\n=s0E9\n-----END PGP SIGNATURE-----\n",
+            "payload": "tree ca5d65e53b528edc56aad7b9122b2dd1e033e82d\nparent 9e8f86ec308246c1375748e481fe6329246fafae\nauthor Benjamin Hackl <devel@benjamin-hackl.at> 1641848585 +0100\ncommitter GitHub <noreply@github.com> 1641848585 -0600\n\nAdd Manim (#292)\n\n"
+          }
+        },
+        "url": "https://api.github.com/repos/discord/discord-open-source/commits/ede56ee4c79351ef2cd1de834801988feac0796f",
+        "author": {
+          "login": "behackl",
+          "id": 11851593,
+          "node_id": "MDQ6VXNlcjExODUxNTkz",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/behackl",
+          "type": "User",
+          "site_admin": false
+        },
+        "committer": {
+          "login": "web-flow",
+          "id": 19864447,
+          "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/web-flow",
+          "type": "User",
+          "site_admin": false
+        },
+        "parents": [
+          {
+            "sha": "9e8f86ec308246c1375748e481fe6329246fafae",
+            "url": "https://api.github.com/repos/discord/discord-open-source/commits/9e8f86ec308246c1375748e481fe6329246fafae"
+          }
+        ]
+      },
+      {
+        "sha": "9e8f86ec308246c1375748e481fe6329246fafae",
+        "node_id": "C_kwDOBz8KatoAKDllOGY4NmVjMzA4MjQ2YzEzNzU3NDhlNDgxZmU2MzI5MjQ2ZmFmYWU",
+        "commit": {
+          "author": {
+            "name": "devsnek",
+            "email": "me@gus.host",
+            "date": "2021-12-01T02:01:38Z"
+          },
+          "committer": {
+            "name": "GitHub",
+            "email": "noreply@github.com",
+            "date": "2021-12-01T02:01:38Z"
+          },
+          "message": "fix electron invite code",
+          "tree": {
+            "sha": "41ea7c7dd3932f9f0f4658bd9d6001cbfaa29885",
+            "url": "https://api.github.com/repos/discord/discord-open-source/git/trees/41ea7c7dd3932f9f0f4658bd9d6001cbfaa29885"
+          },
+          "url": "https://api.github.com/repos/discord/discord-open-source/git/commits/9e8f86ec308246c1375748e481fe6329246fafae",
+          "comment_count": 0,
+          "verification": {
+            "verified": true,
+            "reason": "valid",
+            "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsBcBAABCAAQBQJhpteCCRBK7hj4Ov3rIwAAYJkIAFEwdvtmJp+GsS5Dz8V6b5cg\nybiZwXAyyQGGdAgif28FEkyho0m7rv869mYLYF8ztOV26X5hUpJfsIJ0O+R6zkSX\nYCPvh3PjWQ7VoHpSqCH5/vZPtHjTJ6Aszb25QC7i4GcySxXgiULm25fE6AoGRk3a\nS6oY2gDgI4jImJV0L1F+5dy/zVvv+jlEckAD1EaAK9M1PTaA1MrRGWGQs3P2r0gv\nkKXe9x3PLLLO/n/F5kAEAvVh9pSSQIkW4kpkCjRuUwWMlLPBmDmztHzHlNTBeCrk\nDty8jCNc0ZpSp4//6KR0b+iqtfJUj9+1w+HPKVSEDJURsrAG4Ez85rQBcXnQLLA=\n=Xdq7\n-----END PGP SIGNATURE-----\n",
+            "payload": "tree 41ea7c7dd3932f9f0f4658bd9d6001cbfaa29885\nparent bb21c0b2286b4dff8dc83b2235292d7542959bbb\nauthor devsnek <me@gus.host> 1638324098 -0600\ncommitter GitHub <noreply@github.com> 1638324098 -0600\n\nfix electron invite code"
+          }
+        },
+        "url": "https://api.github.com/repos/discord/discord-open-source/commits/9e8f86ec308246c1375748e481fe6329246fafae",
+        "author": {
+          "login": "devsnek",
+          "id": 5952481,
+          "node_id": "MDQ6VXNlcjU5NTI0ODE=",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/devsnek",
+          "type": "User",
+          "site_admin": false
+        },
+        "committer": {
+          "login": "web-flow",
+          "id": 19864447,
+          "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/web-flow",
+          "type": "User",
+          "site_admin": false
+        },
+        "parents": [
+          {
+            "sha": "bb21c0b2286b4dff8dc83b2235292d7542959bbb",
+            "url": "https://api.github.com/repos/discord/discord-open-source/commits/bb21c0b2286b4dff8dc83b2235292d7542959bbb"
+          }
+        ]
+      }
+    ],
     "releases": [],
-    "issues": [],
+    "issues": [
+      {
+        "url": "https://api.github.com/repos/discord/discord-open-source/issues/475",
+        "id": 1678711590,
+        "node_id": "PR_kwDOBz8Kas5O31Mh",
+        "number": 475,
+        "title": "Add Appsmith to Discord Open-Source List",
+        "user": {
+          "login": "GreenFlux",
+          "id": 24459976,
+          "node_id": "MDQ6VXNlcjI0NDU5OTc2",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/GreenFlux",
+          "type": "User",
+          "site_admin": false
+        },
+        "labels": [],
+        "state": "open",
+        "locked": false,
+        "assignee": null,
+        "assignees": [],
+        "milestone": null,
+        "comments": 0,
+        "created_at": "2023-04-21T15:30:37Z",
+        "updated_at": "2023-04-25T21:52:30Z",
+        "closed_at": null,
+        "author_association": "NONE",
+        "active_lock_reason": null,
+        "draft": false,
+        "pull_request": {
+          "url": "https://api.github.com/repos/discord/discord-open-source/pulls/475",
+          "merged_at": null
+        },
+        "body": "In order to make the review process faster, please take a few minutes to go through this checklist:\r\n\r\n## Acceptance Criteria\r\n\r\n- All of the following criteria must be met:\r\n  - [x] This community is directly tied to an open source project\r\n  - [x] The open source project has an OSI-approved open source license: https://opensource.org/licenses\r\n  - [x] This Discord server is an official channel for the open source project approved by the maintainers of the open source project\r\n  - [x] This Discord server adheres to the [Discord Community Guidelines](https://discord.com/guidelines)\r\n- One of the following criteria must be met:\r\n  - [x] The Discord server has over 1,000 members\r\n  - [x] The open source project has a repository with at least 1,000 GitHub Stars or some equivalent\r\n\r\n## Code Review\r\n\r\n- All of the following criteria must be met:\r\n  - [x] The `\"title\"` field has a commonly identifiable name of the open source project\r\n  - [x] The `\"inviteCode\"` field contains a valid invite code (without the full URL), without an expiration date\r\n  - [x] The `\"githubUrl\"` field is a fully specified and valid URL starting with `https://` and refers to a place where we can easily find your primary open source repositories. GitHub repo or organization URLs (or some equivalent) are acceptable (but not a cloning URL).\r\n  - [x] The `\"logo\"` field refers to the correct logo file (double-check the extension)\r\n  - [x] The `\"quote\"` field (if included, it is optional) is about your usage of Discord (and not about the open source project itself)\r\n  - [x] The `\"quoteSourceUrl\"` field (if included, it is optional) is a fully specified and valid URL starting with `https://`\r\n\r\n## Logo Review\r\n\r\n- All of the following criteria must be met:\r\n  - [x] The logo makes use of transparent elements and does not include its own background\r\n  - [x] The logo will look correct when the non-transparent elements are made solid white\r\n  - [x] The logo is a commonly identifiable logo of the open source project\r\n- One of the following criteria must be met:\r\n  - [x] The logo is an SVG file with 72x72 dimensions and has been optimized with [`svgo`](https://www.npmjs.com/package/svgo) ([Web UI](https://jakearchibald.github.io/svgomg/))\r\n  - [ ] The logo is a PNG file with 144x144 dimensions and has been optimized with [ImageOptim](https://imageoptim.com/) ([Web UI](https://imageoptim.com/online))\r\n",
+        "reactions": {
+          "url": "https://api.github.com/repos/discord/discord-open-source/issues/475/reactions",
+          "total_count": 0,
+          "+1": 0,
+          "-1": 0,
+          "laugh": 0,
+          "hooray": 0,
+          "confused": 0,
+          "heart": 0,
+          "rocket": 0,
+          "eyes": 0
+        },
+        "performed_via_github_app": null,
+        "state_reason": null
+      },
+      {
+        "url": "https://api.github.com/repos/discord/discord-open-source/issues/474",
+        "id": 1669331889,
+        "node_id": "PR_kwDOBz8Kas5OYhwt",
+        "number": 474,
+        "title": "Add Kaspa to Discord Open Source Ecosystem",
+        "user": {
+          "login": "ykris45",
+          "id": 26609573,
+          "node_id": "MDQ6VXNlcjI2NjA5NTcz",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/ykris45",
+          "type": "User",
+          "site_admin": false
+        },
+        "labels": [],
+        "state": "open",
+        "locked": false,
+        "assignee": null,
+        "assignees": [],
+        "milestone": null,
+        "comments": 0,
+        "created_at": "2023-04-15T12:02:44Z",
+        "updated_at": "2023-04-15T12:07:59Z",
+        "closed_at": null,
+        "author_association": "CONTRIBUTOR",
+        "active_lock_reason": null,
+        "draft": false,
+        "pull_request": {
+          "url": "https://api.github.com/repos/discord/discord-open-source/pulls/474",
+          "merged_at": null
+        },
+        "body": "In order to make the review process faster, please take a few minutes to go through this checklist:\r\n\r\n## Acceptance Criteria\r\n\r\n- All of the following criteria must be met:\r\n  - [x] This community is directly tied to an open source project\r\n  - [x] The open source project has an OSI-approved open source license: https://opensource.org/licenses\r\n  - [x] This Discord server is an official channel for the open source project approved by the maintainers of the open source project\r\n  - [x] This Discord server adheres to the [Discord Community Guidelines](https://discord.com/guidelines)\r\n- One of the following criteria must be met:\r\n  - [x] The Discord server has over 1,000 members\r\n  - [ ] The open source project has a repository with at least 1,000 GitHub Stars or some equivalent\r\n\r\n## Code Review\r\n\r\n- All of the following criteria must be met:\r\n  - [x] The `\"title\"` field has a commonly identifiable name of the open source project\r\n  - [x] The `\"inviteCode\"` field contains a valid invite code (without the full URL), without an expiration date\r\n  - [x] The `\"githubUrl\"` field is a fully specified and valid URL starting with `https://` and refers to a place where we can easily find your primary open source repositories. GitHub repo or organization URLs (or some equivalent) are acceptable (but not a cloning URL).\r\n  - [x] The `\"logo\"` field refers to the correct logo file (double-check the extension)\r\n  - [x] The `\"quote\"` field (if included, it is optional) is about your usage of Discord (and not about the open source project itself)\r\n  - [x] The `\"quoteSourceUrl\"` field (if included, it is optional) is a fully specified and valid URL starting with `https://`\r\n\r\n## Logo Review\r\n\r\n- All of the following criteria must be met:\r\n  - [x] The logo makes use of transparent elements and does not include its own background\r\n  - [x] The logo will look correct when the non-transparent elements are made solid white\r\n  - [x] The logo is a commonly identifiable logo of the open source project\r\n- One of the following criteria must be met:\r\n  - [ ] The logo is an SVG file with 72x72 dimensions and has been optimized with [`svgo`](https://www.npmjs.com/package/svgo) ([Web UI](https://jakearchibald.github.io/svgomg/))\r\n  - [x] The logo is a PNG file with 144x144 dimensions and has been optimized with [ImageOptim](https://imageoptim.com/) ([Web UI](https://imageoptim.com/online))\r\n",
+        "reactions": {
+          "url": "https://api.github.com/repos/discord/discord-open-source/issues/474/reactions",
+          "total_count": 0,
+          "+1": 0,
+          "-1": 0,
+          "laugh": 0,
+          "hooray": 0,
+          "confused": 0,
+          "heart": 0,
+          "rocket": 0,
+          "eyes": 0
+        },
+        "performed_via_github_app": null,
+        "state_reason": null
+      },
+      {
+        "url": "https://api.github.com/repos/discord/discord-open-source/issues/473",
+        "id": 1658984113,
+        "node_id": "PR_kwDOBz8Kas5N2Nml",
+        "number": 473,
+        "title": "Kaspa",
+        "user": {
+          "login": "ykris45",
+          "id": 26609573,
+          "node_id": "MDQ6VXNlcjI2NjA5NTcz",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/ykris45",
+          "type": "User",
+          "site_admin": false
+        },
+        "labels": [],
+        "state": "closed",
+        "locked": false,
+        "assignee": null,
+        "assignees": [],
+        "milestone": null,
+        "comments": 0,
+        "created_at": "2023-04-07T16:32:04Z",
+        "updated_at": "2023-04-09T14:50:39Z",
+        "closed_at": "2023-04-09T14:50:34Z",
+        "author_association": "CONTRIBUTOR",
+        "active_lock_reason": null,
+        "draft": false,
+        "pull_request": {
+          "url": "https://api.github.com/repos/discord/discord-open-source/pulls/473",
+          "merged_at": null
+        },
+        "body": "In order to make the review process faster, please take a few minutes to go through this checklist:\r\n\r\n## Acceptance Criteria\r\n\r\n- All of the following criteria must be met:\r\n  - [x] This community is directly tied to an open source project\r\n  - [x] The open source project has an OSI-approved open source license: https://opensource.org/licenses\r\n  - [x] This Discord server is an official channel for the open source project approved by the maintainers of the open source project\r\n  - [x] This Discord server adheres to the [Discord Community Guidelines](https://discord.com/guidelines)\r\n- One of the following criteria must be met:\r\n  - [x] The Discord server has over 1,000 members\r\n  - [ ] The open source project has a repository with at least 1,000 GitHub Stars or some equivalent\r\n\r\n## Code Review\r\n\r\n- All of the following criteria must be met:\r\n  - [x] The `\"title\"` field has a commonly identifiable name of the open source project\r\n  - [x] The `\"inviteCode\"` field contains a valid invite code (without the full URL), without an expiration date\r\n  - [x] The `\"githubUrl\"` field is a fully specified and valid URL starting with `https://` and refers to a place where we can easily find your primary open source repositories. GitHub repo or organization URLs (or some equivalent) are acceptable (but not a cloning URL).\r\n  - [x] The `\"logo\"` field refers to the correct logo file (double-check the extension)\r\n  - [x] The `\"quote\"` field (if included, it is optional) is about your usage of Discord (and not about the open source project itself)\r\n  - [x] The `\"quoteSourceUrl\"` field (if included, it is optional) is a fully specified and valid URL starting with `https://`\r\n\r\n## Logo Review\r\n\r\n- All of the following criteria must be met:\r\n  - [x] The logo makes use of transparent elements and does not include its own background\r\n  - [x] The logo will look correct when the non-transparent elements are made solid white\r\n  - [x] The logo is a commonly identifiable logo of the open source project\r\n- One of the following criteria must be met:\r\n  - [ ] The logo is an SVG file with 72x72 dimensions and has been optimized with [`svgo`](https://www.npmjs.com/package/svgo) ([Web UI](https://jakearchibald.github.io/svgomg/))\r\n  - [x] The logo is a PNG file with 144x144 dimensions and has been optimized with [ImageOptim](https://imageoptim.com/) ([Web UI](https://imageoptim.com/online))\r\n",
+        "reactions": {
+          "url": "https://api.github.com/repos/discord/discord-open-source/issues/473/reactions",
+          "total_count": 0,
+          "+1": 0,
+          "-1": 0,
+          "laugh": 0,
+          "hooray": 0,
+          "confused": 0,
+          "heart": 0,
+          "rocket": 0,
+          "eyes": 0
+        },
+        "performed_via_github_app": null,
+        "state_reason": null
+      },
+      {
+        "url": "https://api.github.com/repos/discord/discord-open-source/issues/472",
+        "id": 1648339662,
+        "node_id": "PR_kwDOBz8Kas5NTLZm",
+        "number": 472,
+        "title": "Add Lawnchair",
+        "user": {
+          "login": "Chefski",
+          "id": 100310118,
+          "node_id": "U_kgDOBfqcZg",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/Chefski",
+          "type": "User",
+          "site_admin": false
+        },
+        "labels": [],
+        "state": "open",
+        "locked": false,
+        "assignee": null,
+        "assignees": [],
+        "milestone": null,
+        "comments": 0,
+        "created_at": "2023-03-30T21:22:24Z",
+        "updated_at": "2023-03-31T04:10:08Z",
+        "closed_at": null,
+        "author_association": "NONE",
+        "active_lock_reason": null,
+        "draft": false,
+        "pull_request": {
+          "url": "https://api.github.com/repos/discord/discord-open-source/pulls/472",
+          "merged_at": null
+        },
+        "body": "In order to make the review process faster, please take a few minutes to go through this checklist:\r\n\r\n## Acceptance Criteria\r\n\r\n- All of the following criteria must be met:\r\n  - [x] This community is directly tied to an open source project\r\n  - [x] The open source project has an OSI-approved open source license: https://opensource.org/licenses\r\n  - [x] This Discord server is an official channel for the open source project approved by the maintainers of the open source project\r\n  - [x] This Discord server adheres to the [Discord Community Guidelines](https://discord.com/guidelines)\r\n- One of the following criteria must be met:\r\n  - [x] The Discord server has over 1,000 members\r\n  - [x] The open source project has a repository with at least 1,000 GitHub Stars or some equivalent\r\n\r\n## Code Review\r\n\r\n- All of the following criteria must be met:\r\n  - [x] The `\"title\"` field has a commonly identifiable name of the open source project\r\n  - [x] The `\"inviteCode\"` field contains a valid invite code (without the full URL), without an expiration date\r\n  - [x] The `\"githubUrl\"` field is a fully specified and valid URL starting with `https://` and refers to a place where we can easily find your primary open source repositories. GitHub repo or organization URLs (or some equivalent) are acceptable (but not a cloning URL).\r\n  - [x] The `\"logo\"` field refers to the correct logo file (double-check the extension)\r\n  - [ ] The `\"quote\"` field (if included, it is optional) is about your usage of Discord (and not about the open source project itself)\r\n  - [ ] The `\"quoteSourceUrl\"` field (if included, it is optional) is a fully specified and valid URL starting with `https://`\r\n\r\n## Logo Review\r\n\r\n- All of the following criteria must be met:\r\n  - [x] The logo makes use of transparent elements and does not include its own background\r\n  - [x] The logo will look correct when the non-transparent elements are made solid white\r\n  - [x] The logo is a commonly identifiable logo of the open source project\r\n- One of the following criteria must be met:\r\n  - [x] The logo is an SVG file with 72x72 dimensions and has been optimized with [`svgo`](https://www.npmjs.com/package/svgo) ([Web UI](https://jakearchibald.github.io/svgomg/))\r\n  - [ ] The logo is a PNG file with 144x144 dimensions and has been optimized with [ImageOptim](https://imageoptim.com/) ([Web UI](https://imageoptim.com/online))\r\n",
+        "reactions": {
+          "url": "https://api.github.com/repos/discord/discord-open-source/issues/472/reactions",
+          "total_count": 0,
+          "+1": 0,
+          "-1": 0,
+          "laugh": 0,
+          "hooray": 0,
+          "confused": 0,
+          "heart": 0,
+          "rocket": 0,
+          "eyes": 0
+        },
+        "performed_via_github_app": null,
+        "state_reason": null
+      },
+      {
+        "url": "https://api.github.com/repos/discord/discord-open-source/issues/471",
+        "id": 1647092607,
+        "node_id": "PR_kwDOBz8Kas5NO-bx",
+        "number": 471,
+        "title": "Added Saikat",
+        "user": {
+          "login": "mirzasaikatahmmed",
+          "id": 30868301,
+          "node_id": "MDQ6VXNlcjMwODY4MzAx",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/mirzasaikatahmmed",
+          "type": "User",
+          "site_admin": false
+        },
+        "labels": [],
+        "state": "open",
+        "locked": false,
+        "assignee": null,
+        "assignees": [],
+        "milestone": null,
+        "comments": 0,
+        "created_at": "2023-03-30T07:47:54Z",
+        "updated_at": "2023-03-30T07:47:54Z",
+        "closed_at": null,
+        "author_association": "NONE",
+        "active_lock_reason": null,
+        "draft": false,
+        "pull_request": {
+          "url": "https://api.github.com/repos/discord/discord-open-source/pulls/471",
+          "merged_at": null
+        },
+        "body": "In order to make the review process faster, please take a few minutes to go through this checklist:\r\n\r\n## Acceptance Criteria\r\n\r\n- All of the following criteria must be met:\r\n  - [x] This community is directly tied to an open source project\r\n  - [ ] The open source project has an OSI-approved open source license: https://opensource.org/licenses\r\n  - [ ] This Discord server is an official channel for the open source project approved by the maintainers of the open source project\r\n  - [x] This Discord server adheres to the [Discord Community Guidelines](https://discord.com/guidelines)\r\n- One of the following criteria must be met:\r\n  - [ ] The Discord server has over 1,000 members\r\n  - [ ] The open source project has a repository with at least 1,000 GitHub Stars or some equivalent\r\n\r\n## Code Review\r\n\r\n- All of the following criteria must be met:\r\n  - [x] The `\"title\"` field has a commonly identifiable name of the open source project\r\n  - [x] The `\"inviteCode\"` field contains a valid invite code (without the full URL), without an expiration date\r\n  - [x] The `\"githubUrl\"` field is a fully specified and valid URL starting with `https://` and refers to a place where we can easily find your primary open source repositories. GitHub repo or organization URLs (or some equivalent) are acceptable (but not a cloning URL).\r\n  - [x] The `\"logo\"` field refers to the correct logo file (double-check the extension)\r\n  - [x] The `\"quote\"` field (if included, it is optional) is about your usage of Discord (and not about the open source project itself)\r\n  - [ ] The `\"quoteSourceUrl\"` field (if included, it is optional) is a fully specified and valid URL starting with `https://`\r\n\r\n## Logo Review\r\n\r\n- All of the following criteria must be met:\r\n  - [x] The logo makes use of transparent elements and does not include its own background\r\n  - [ ] The logo will look correct when the non-transparent elements are made solid white\r\n  - [x] The logo is a commonly identifiable logo of the open source project\r\n- One of the following criteria must be met:\r\n  - [ ] The logo is an SVG file with 72x72 dimensions and has been optimized with [`svgo`](https://www.npmjs.com/package/svgo) ([Web UI](https://jakearchibald.github.io/svgomg/))\r\n  - [x] The logo is a PNG file with 144x144 dimensions and has been optimized with [ImageOptim](https://imageoptim.com/) ([Web UI](https://imageoptim.com/online))\r\n",
+        "reactions": {
+          "url": "https://api.github.com/repos/discord/discord-open-source/issues/471/reactions",
+          "total_count": 0,
+          "+1": 0,
+          "-1": 0,
+          "laugh": 0,
+          "hooray": 0,
+          "confused": 0,
+          "heart": 0,
+          "rocket": 0,
+          "eyes": 0
+        },
+        "performed_via_github_app": null,
+        "state_reason": null
+      }
+    ],
     "pullRequests": []
   }
 }

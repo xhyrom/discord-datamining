@@ -59,9 +59,515 @@
   },
   "branches": [],
   "last5": {
-    "commits": [],
-    "releases": [],
-    "issues": [],
+    "commits": [
+      {
+        "sha": "05f363dcc5608b57c49da74c0d1ba66db06498f6",
+        "node_id": "MDY6Q29tbWl0MjY1MTMxNjc2OjA1ZjM2M2RjYzU2MDhiNTdjNDlkYTc0YzBkMWJhNjZkYjA2NDk4ZjY=",
+        "commit": {
+          "author": {
+            "name": "Donald Chen",
+            "email": "donald.chen@discordapp.com",
+            "date": "2021-07-16T17:00:23Z"
+          },
+          "committer": {
+            "name": "GitHub",
+            "email": "noreply@github.com",
+            "date": "2021-07-16T17:00:23Z"
+          },
+          "message": "Merge pull request #2 from discord/update-color-border-and-spacing\n\nremove color panel border, and remove extra spacing",
+          "tree": {
+            "sha": "7fb8e69d2c58be5d1bec8c8aabbd6203d276794b",
+            "url": "https://api.github.com/repos/discord/ColorPicker/git/trees/7fb8e69d2c58be5d1bec8c8aabbd6203d276794b"
+          },
+          "url": "https://api.github.com/repos/discord/ColorPicker/git/commits/05f363dcc5608b57c49da74c0d1ba66db06498f6",
+          "comment_count": 0,
+          "verification": {
+            "verified": true,
+            "reason": "valid",
+            "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsBcBAABCAAQBQJg8bsnCRBK7hj4Ov3rIwAAK9wIAJ5m3zuwDVJWsBGjsX701e29\nueEcWAIB2EFEfckw7q6wmrjewueePKIcPagAJxSWd3X+EstMBwDoLCTYRJ/Ws36V\nI+ZZDR2hLUMVyumbhD988YY+9NqRAQ0cN9pdVIW/xQZkc3sM1TVp+ewF7GH3nKwf\nzwRos/tPdvqF+AWPATrmLjU/PiuiPfrPknpy9IB1/k+mHDLnCPplon3XKbxHXUu5\nG1rNIxzze6XkGooRdh89yuLXLQ6fmoD0G+dzf5XueyOF5ulsRASMe5BW/9Z94aHF\n5OUU9zauY8LK+d/w2bGWdVq8mQmg8i98yb5ybI39DE1BKEOcJ0GUExvdTbCTm70=\n=8wpG\n-----END PGP SIGNATURE-----\n",
+            "payload": "tree 7fb8e69d2c58be5d1bec8c8aabbd6203d276794b\nparent c6a1977994bd816b09fb35dd024731fd59734c68\nparent 29e19f9102718bacee12da9dd5deb16f555b3c78\nauthor Donald Chen <donald.chen@discordapp.com> 1626454823 -0700\ncommitter GitHub <noreply@github.com> 1626454823 -0700\n\nMerge pull request #2 from discord/update-color-border-and-spacing\n\nremove color panel border, and remove extra spacing"
+          }
+        },
+        "url": "https://api.github.com/repos/discord/ColorPicker/commits/05f363dcc5608b57c49da74c0d1ba66db06498f6",
+        "author": {
+          "login": "donaldchen",
+          "id": 3821698,
+          "node_id": "MDQ6VXNlcjM4MjE2OTg=",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/donaldchen",
+          "type": "User",
+          "site_admin": false
+        },
+        "committer": {
+          "login": "web-flow",
+          "id": 19864447,
+          "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/web-flow",
+          "type": "User",
+          "site_admin": false
+        },
+        "parents": [
+          {
+            "sha": "c6a1977994bd816b09fb35dd024731fd59734c68",
+            "url": "https://api.github.com/repos/discord/ColorPicker/commits/c6a1977994bd816b09fb35dd024731fd59734c68"
+          },
+          {
+            "sha": "29e19f9102718bacee12da9dd5deb16f555b3c78",
+            "url": "https://api.github.com/repos/discord/ColorPicker/commits/29e19f9102718bacee12da9dd5deb16f555b3c78"
+          }
+        ]
+      },
+      {
+        "sha": "29e19f9102718bacee12da9dd5deb16f555b3c78",
+        "node_id": "MDY6Q29tbWl0MjY1MTMxNjc2OjI5ZTE5ZjkxMDI3MThiYWNlZTEyZGE5ZGQ1ZGViMTZmNTU1YjNjNzg=",
+        "commit": {
+          "author": {
+            "name": "Donald Chen",
+            "email": "donald.chen@discordapp.com",
+            "date": "2021-07-15T21:25:43Z"
+          },
+          "committer": {
+            "name": "Donald Chen",
+            "email": "donald.chen@discordapp.com",
+            "date": "2021-07-15T21:25:43Z"
+          },
+          "message": "remove color panel border, and remove extra spacing",
+          "tree": {
+            "sha": "7fb8e69d2c58be5d1bec8c8aabbd6203d276794b",
+            "url": "https://api.github.com/repos/discord/ColorPicker/git/trees/7fb8e69d2c58be5d1bec8c8aabbd6203d276794b"
+          },
+          "url": "https://api.github.com/repos/discord/ColorPicker/git/commits/29e19f9102718bacee12da9dd5deb16f555b3c78",
+          "comment_count": 0,
+          "verification": {
+            "verified": false,
+            "reason": "unsigned",
+            "signature": null,
+            "payload": null
+          }
+        },
+        "url": "https://api.github.com/repos/discord/ColorPicker/commits/29e19f9102718bacee12da9dd5deb16f555b3c78",
+        "author": {
+          "login": "donaldchen",
+          "id": 3821698,
+          "node_id": "MDQ6VXNlcjM4MjE2OTg=",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/donaldchen",
+          "type": "User",
+          "site_admin": false
+        },
+        "committer": {
+          "login": "donaldchen",
+          "id": 3821698,
+          "node_id": "MDQ6VXNlcjM4MjE2OTg=",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/donaldchen",
+          "type": "User",
+          "site_admin": false
+        },
+        "parents": [
+          {
+            "sha": "c6a1977994bd816b09fb35dd024731fd59734c68",
+            "url": "https://api.github.com/repos/discord/ColorPicker/commits/c6a1977994bd816b09fb35dd024731fd59734c68"
+          }
+        ]
+      },
+      {
+        "sha": "c6a1977994bd816b09fb35dd024731fd59734c68",
+        "node_id": "MDY6Q29tbWl0MjY1MTMxNjc2OmM2YTE5Nzc5OTRiZDgxNmIwOWZiMzVkZDAyNDczMWZkNTk3MzRjNjg=",
+        "commit": {
+          "author": {
+            "name": "Jeff Cailteux",
+            "email": "jeff@discordapp.com",
+            "date": "2020-05-27T00:34:46Z"
+          },
+          "committer": {
+            "name": "Jeff Cailteux",
+            "email": "jeff@discordapp.com",
+            "date": "2020-05-27T00:34:46Z"
+          },
+          "message": "Fix text color",
+          "tree": {
+            "sha": "8e3e6e60eae9b6c2fdafa20a1442a35194c26825",
+            "url": "https://api.github.com/repos/discord/ColorPicker/git/trees/8e3e6e60eae9b6c2fdafa20a1442a35194c26825"
+          },
+          "url": "https://api.github.com/repos/discord/ColorPicker/git/commits/c6a1977994bd816b09fb35dd024731fd59734c68",
+          "comment_count": 0,
+          "verification": {
+            "verified": false,
+            "reason": "unsigned",
+            "signature": null,
+            "payload": null
+          }
+        },
+        "url": "https://api.github.com/repos/discord/ColorPicker/commits/c6a1977994bd816b09fb35dd024731fd59734c68",
+        "author": {
+          "login": "jkcailteux",
+          "id": 2236167,
+          "node_id": "MDQ6VXNlcjIyMzYxNjc=",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/jkcailteux",
+          "type": "User",
+          "site_admin": false
+        },
+        "committer": {
+          "login": "jkcailteux",
+          "id": 2236167,
+          "node_id": "MDQ6VXNlcjIyMzYxNjc=",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/jkcailteux",
+          "type": "User",
+          "site_admin": false
+        },
+        "parents": [
+          {
+            "sha": "45237567a1a2bf261de1cbe6714f058583ecd8d0",
+            "url": "https://api.github.com/repos/discord/ColorPicker/commits/45237567a1a2bf261de1cbe6714f058583ecd8d0"
+          }
+        ]
+      },
+      {
+        "sha": "45237567a1a2bf261de1cbe6714f058583ecd8d0",
+        "node_id": "MDY6Q29tbWl0MjY1MTMxNjc2OjQ1MjM3NTY3YTFhMmJmMjYxZGUxY2JlNjcxNGYwNTg1ODNlY2Q4ZDA=",
+        "commit": {
+          "author": {
+            "name": "Jeff Cailteux",
+            "email": "jeff@discordapp.com",
+            "date": "2020-05-26T16:46:08Z"
+          },
+          "committer": {
+            "name": "Jeff Cailteux",
+            "email": "jeff@discordapp.com",
+            "date": "2020-05-26T16:46:08Z"
+          },
+          "message": "fixes",
+          "tree": {
+            "sha": "29927dc5a4b45dff20ec695a18976cb62811b842",
+            "url": "https://api.github.com/repos/discord/ColorPicker/git/trees/29927dc5a4b45dff20ec695a18976cb62811b842"
+          },
+          "url": "https://api.github.com/repos/discord/ColorPicker/git/commits/45237567a1a2bf261de1cbe6714f058583ecd8d0",
+          "comment_count": 0,
+          "verification": {
+            "verified": false,
+            "reason": "unsigned",
+            "signature": null,
+            "payload": null
+          }
+        },
+        "url": "https://api.github.com/repos/discord/ColorPicker/commits/45237567a1a2bf261de1cbe6714f058583ecd8d0",
+        "author": {
+          "login": "jkcailteux",
+          "id": 2236167,
+          "node_id": "MDQ6VXNlcjIyMzYxNjc=",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/jkcailteux",
+          "type": "User",
+          "site_admin": false
+        },
+        "committer": {
+          "login": "jkcailteux",
+          "id": 2236167,
+          "node_id": "MDQ6VXNlcjIyMzYxNjc=",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/jkcailteux",
+          "type": "User",
+          "site_admin": false
+        },
+        "parents": [
+          {
+            "sha": "aee7a54090c802227cd8b1231c3adb9b0736bb5f",
+            "url": "https://api.github.com/repos/discord/ColorPicker/commits/aee7a54090c802227cd8b1231c3adb9b0736bb5f"
+          }
+        ]
+      },
+      {
+        "sha": "aee7a54090c802227cd8b1231c3adb9b0736bb5f",
+        "node_id": "MDY6Q29tbWl0MjY1MTMxNjc2OmFlZTdhNTQwOTBjODAyMjI3Y2Q4YjEyMzFjM2FkYjliMDczNmJiNWY=",
+        "commit": {
+          "author": {
+            "name": "Jeff Cailteux",
+            "email": "jeff@discordapp.com",
+            "date": "2020-05-26T16:28:33Z"
+          },
+          "committer": {
+            "name": "Jeff Cailteux",
+            "email": "jeff@discordapp.com",
+            "date": "2020-05-26T16:28:33Z"
+          },
+          "message": "reset button",
+          "tree": {
+            "sha": "0d002d8c57d4bd0beaea0a3e83d87d53893d4831",
+            "url": "https://api.github.com/repos/discord/ColorPicker/git/trees/0d002d8c57d4bd0beaea0a3e83d87d53893d4831"
+          },
+          "url": "https://api.github.com/repos/discord/ColorPicker/git/commits/aee7a54090c802227cd8b1231c3adb9b0736bb5f",
+          "comment_count": 0,
+          "verification": {
+            "verified": false,
+            "reason": "unsigned",
+            "signature": null,
+            "payload": null
+          }
+        },
+        "url": "https://api.github.com/repos/discord/ColorPicker/commits/aee7a54090c802227cd8b1231c3adb9b0736bb5f",
+        "author": {
+          "login": "jkcailteux",
+          "id": 2236167,
+          "node_id": "MDQ6VXNlcjIyMzYxNjc=",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/jkcailteux",
+          "type": "User",
+          "site_admin": false
+        },
+        "committer": {
+          "login": "jkcailteux",
+          "id": 2236167,
+          "node_id": "MDQ6VXNlcjIyMzYxNjc=",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/jkcailteux",
+          "type": "User",
+          "site_admin": false
+        },
+        "parents": [
+          {
+            "sha": "3fc4c968ee27cfa516e42eccc50ea5d58b2449c2",
+            "url": "https://api.github.com/repos/discord/ColorPicker/commits/3fc4c968ee27cfa516e42eccc50ea5d58b2449c2"
+          }
+        ]
+      }
+    ],
+    "releases": [
+      {
+        "url": "https://api.github.com/repos/discord/ColorPicker/releases/46333913",
+        "id": 46333913,
+        "author": {
+          "login": "donaldchen",
+          "id": 3821698,
+          "node_id": "MDQ6VXNlcjM4MjE2OTg=",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/donaldchen",
+          "type": "User",
+          "site_admin": false
+        },
+        "node_id": "MDc6UmVsZWFzZTQ2MzMzOTEz",
+        "tag_name": "1.1.3",
+        "target_commitish": "master",
+        "name": "1.1.3",
+        "draft": false,
+        "prerelease": false,
+        "created_at": "2021-07-16T17:00:23Z",
+        "published_at": "2021-07-16T17:02:24Z",
+        "assets": [],
+        "body": "Remove border on color panel, and adjust vertical spacing"
+      },
+      {
+        "url": "https://api.github.com/repos/discord/ColorPicker/releases/26923557",
+        "id": 26923557,
+        "author": {
+          "login": "jkcailteux",
+          "id": 2236167,
+          "node_id": "MDQ6VXNlcjIyMzYxNjc=",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/jkcailteux",
+          "type": "User",
+          "site_admin": false
+        },
+        "node_id": "MDc6UmVsZWFzZTI2OTIzNTU3",
+        "tag_name": "1.1.2",
+        "target_commitish": "master",
+        "name": "1.1.2 - Reset Button, Landscape mode (more bug fixes)",
+        "draft": false,
+        "prerelease": false,
+        "created_at": "2020-05-27T00:34:46Z",
+        "published_at": "2020-05-27T00:36:09Z",
+        "assets": [],
+        "body": ""
+      },
+      {
+        "url": "https://api.github.com/repos/discord/ColorPicker/releases/26909003",
+        "id": 26909003,
+        "author": {
+          "login": "jkcailteux",
+          "id": 2236167,
+          "node_id": "MDQ6VXNlcjIyMzYxNjc=",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/jkcailteux",
+          "type": "User",
+          "site_admin": false
+        },
+        "node_id": "MDc6UmVsZWFzZTI2OTA5MDAz",
+        "tag_name": "1.1.1",
+        "target_commitish": "master",
+        "name": "1.1.1 - Reset Button, Landscape mode (bug fixes)",
+        "draft": false,
+        "prerelease": false,
+        "created_at": "2020-05-26T16:46:08Z",
+        "published_at": "2020-05-26T16:46:51Z",
+        "assets": [],
+        "body": ""
+      },
+      {
+        "url": "https://api.github.com/repos/discord/ColorPicker/releases/26908600",
+        "id": 26908600,
+        "author": {
+          "login": "jkcailteux",
+          "id": 2236167,
+          "node_id": "MDQ6VXNlcjIyMzYxNjc=",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/jkcailteux",
+          "type": "User",
+          "site_admin": false
+        },
+        "node_id": "MDc6UmVsZWFzZTI2OTA4NjAw",
+        "tag_name": "1.1",
+        "target_commitish": "master",
+        "name": "1.1 - Reset Button, Landscape mode",
+        "draft": false,
+        "prerelease": false,
+        "created_at": "2020-05-26T16:28:33Z",
+        "published_at": "2020-05-26T16:36:49Z",
+        "assets": [],
+        "body": ""
+      },
+      {
+        "url": "https://api.github.com/repos/discord/ColorPicker/releases/26777162",
+        "id": 26777162,
+        "author": {
+          "login": "jkcailteux",
+          "id": 2236167,
+          "node_id": "MDQ6VXNlcjIyMzYxNjc=",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/jkcailteux",
+          "type": "User",
+          "site_admin": false
+        },
+        "node_id": "MDc6UmVsZWFzZTI2Nzc3MTYy",
+        "tag_name": "1.0",
+        "target_commitish": "master",
+        "name": "",
+        "draft": false,
+        "prerelease": false,
+        "created_at": "2020-05-21T22:59:12Z",
+        "published_at": "2020-05-21T23:00:12Z",
+        "assets": [],
+        "body": ""
+      }
+    ],
+    "issues": [
+      {
+        "url": "https://api.github.com/repos/discord/ColorPicker/issues/2",
+        "id": 945765690,
+        "node_id": "MDExOlB1bGxSZXF1ZXN0NjkxMDQ3MDkw",
+        "number": 2,
+        "title": "remove color panel border, and remove extra spacing",
+        "user": {
+          "login": "donaldchen",
+          "id": 3821698,
+          "node_id": "MDQ6VXNlcjM4MjE2OTg=",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/donaldchen",
+          "type": "User",
+          "site_admin": false
+        },
+        "labels": [],
+        "state": "closed",
+        "locked": false,
+        "assignee": null,
+        "assignees": [],
+        "milestone": null,
+        "comments": 1,
+        "created_at": "2021-07-15T21:28:38Z",
+        "updated_at": "2021-07-16T17:00:23Z",
+        "closed_at": "2021-07-16T17:00:23Z",
+        "author_association": "NONE",
+        "active_lock_reason": null,
+        "draft": false,
+        "pull_request": {
+          "url": "https://api.github.com/repos/discord/ColorPicker/pulls/2",
+          "merged_at": "2021-07-16T17:00:23Z"
+        },
+        "body": "**Figma**: https://www.figma.com/file/lmWjzOAMnEhQS6iVqDmlGV/%E2%9C%85-Custom-Profiles-All-Platforms?node-id=2260%3A105463\r\n\r\nTo match our designs in Figma, this PR is\r\n1) removing the border around the color panel (the color circle)\r\n2) removing 16dp of extra padding between the color-hex input and the \"select\" button. There's already a 16dp margin above the \"select\" button, so if we were to keep this padding, it'd make the total spacing 32dp which doesn't match our designs.\r\n\r\nI confirmed with product design that we want to remove the color panel border for the role color picker as well.\r\n\r\n| Before | After |\r\n| -- | -- |\r\n| ![before](https://user-images.githubusercontent.com/3821698/125860170-174677ce-a035-4f4d-9429-b2358b81b977.png) | ![after](https://user-images.githubusercontent.com/3821698/125860214-db373f88-9b22-41cf-b0d4-ec4ce4db573f.png) |\r\n\r\n",
+        "reactions": {
+          "url": "https://api.github.com/repos/discord/ColorPicker/issues/2/reactions",
+          "total_count": 0,
+          "+1": 0,
+          "-1": 0,
+          "laugh": 0,
+          "hooray": 0,
+          "confused": 0,
+          "heart": 0,
+          "rocket": 0,
+          "eyes": 0
+        },
+        "performed_via_github_app": null,
+        "state_reason": null
+      },
+      {
+        "url": "https://api.github.com/repos/discord/ColorPicker/issues/1",
+        "id": 622839819,
+        "node_id": "MDExOlB1bGxSZXF1ZXN0NDIxNjI4ODAz",
+        "number": 1,
+        "title": "Update UI, provide more customizable colors and fonts",
+        "user": {
+          "login": "jkcailteux",
+          "id": 2236167,
+          "node_id": "MDQ6VXNlcjIyMzYxNjc=",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/jkcailteux",
+          "type": "User",
+          "site_admin": false
+        },
+        "labels": [],
+        "state": "closed",
+        "locked": false,
+        "assignee": {
+          "login": "jkcailteux",
+          "id": 2236167,
+          "node_id": "MDQ6VXNlcjIyMzYxNjc=",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/jkcailteux",
+          "type": "User",
+          "site_admin": false
+        },
+        "assignees": [
+          {
+            "login": "jkcailteux",
+            "id": 2236167,
+            "node_id": "MDQ6VXNlcjIyMzYxNjc=",
+            "gravatar_id": "",
+            "url": "https://api.github.com/users/jkcailteux",
+            "type": "User",
+            "site_admin": false
+          }
+        ],
+        "milestone": null,
+        "comments": 0,
+        "created_at": "2020-05-21T22:59:00Z",
+        "updated_at": "2020-05-21T22:59:13Z",
+        "closed_at": "2020-05-21T22:59:12Z",
+        "author_association": "COLLABORATOR",
+        "active_lock_reason": null,
+        "draft": false,
+        "pull_request": {
+          "url": "https://api.github.com/repos/discord/ColorPicker/pulls/1",
+          "merged_at": "2020-05-21T22:59:12Z"
+        },
+        "body": "",
+        "reactions": {
+          "url": "https://api.github.com/repos/discord/ColorPicker/issues/1/reactions",
+          "total_count": 0,
+          "+1": 0,
+          "-1": 0,
+          "laugh": 0,
+          "hooray": 0,
+          "confused": 0,
+          "heart": 0,
+          "rocket": 0,
+          "eyes": 0
+        },
+        "performed_via_github_app": null,
+        "state_reason": null
+      }
+    ],
     "pullRequests": []
   }
 }

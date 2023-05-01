@@ -59,7 +59,262 @@
   },
   "branches": [],
   "last5": {
-    "commits": [],
+    "commits": [
+      {
+        "sha": "59cf6850769733a8aefde8a8c3a90955b8f802e1",
+        "node_id": "MDY6Q29tbWl0MTE0NzAzMTYwOjU5Y2Y2ODUwNzY5NzMzYThhZWZkZThhOGMzYTkwOTU1YjhmODAyZTE=",
+        "commit": {
+          "author": {
+            "name": "Steve Cohen",
+            "email": "scohen@discordapp.com",
+            "date": "2017-12-19T01:01:49Z"
+          },
+          "committer": {
+            "name": "Steve Cohen",
+            "email": "scohen@discordapp.com",
+            "date": "2017-12-19T01:01:49Z"
+          },
+          "message": "Revert \"Add preliminary support for trailers\"\n\nThis reverts commit cbbb4d5523f8738b237593f9516c3a237d0cc2f4.",
+          "tree": {
+            "sha": "09fda08d66b3191c7cddc354efda38cf8610a6e9",
+            "url": "https://api.github.com/repos/discord/gun/git/trees/09fda08d66b3191c7cddc354efda38cf8610a6e9"
+          },
+          "url": "https://api.github.com/repos/discord/gun/git/commits/59cf6850769733a8aefde8a8c3a90955b8f802e1",
+          "comment_count": 2,
+          "verification": {
+            "verified": false,
+            "reason": "unsigned",
+            "signature": null,
+            "payload": null
+          }
+        },
+        "url": "https://api.github.com/repos/discord/gun/commits/59cf6850769733a8aefde8a8c3a90955b8f802e1",
+        "author": null,
+        "committer": null,
+        "parents": [
+          {
+            "sha": "b297499e13ce24806cc354ea601292b30cbb979f",
+            "url": "https://api.github.com/repos/discord/gun/commits/b297499e13ce24806cc354ea601292b30cbb979f"
+          }
+        ]
+      },
+      {
+        "sha": "b297499e13ce24806cc354ea601292b30cbb979f",
+        "node_id": "MDY6Q29tbWl0MTE0NzAzMTYwOmIyOTc0OTllMTNjZTI0ODA2Y2MzNTRlYTYwMTI5MmIzMGNiYjk3OWY=",
+        "commit": {
+          "author": {
+            "name": "michael-coles",
+            "email": "michael.coles@alertlogic.com",
+            "date": "2017-12-06T14:04:31Z"
+          },
+          "committer": {
+            "name": "Loïc Hoguin",
+            "email": "essen@ninenines.eu",
+            "date": "2017-12-16T15:54:15Z"
+          },
+          "message": "Add support for unix sockets",
+          "tree": {
+            "sha": "48b036f802cf93baaf38af99c555de2aa4fc86e9",
+            "url": "https://api.github.com/repos/discord/gun/git/trees/48b036f802cf93baaf38af99c555de2aa4fc86e9"
+          },
+          "url": "https://api.github.com/repos/discord/gun/git/commits/b297499e13ce24806cc354ea601292b30cbb979f",
+          "comment_count": 0,
+          "verification": {
+            "verified": true,
+            "reason": "valid",
+            "signature": "-----BEGIN PGP SIGNATURE-----\n\niQIzBAABCgAdFiEEsej0trAQjEHF0iDLip33lfb+12QFAlo1QagACgkQip33lfb+\n12SY0w/9HEpa4nKrJD7fAsJ1c5b7jIwIiy7c6bJb53Hk/wV3HvJANydQDezvcWm0\noF452ixaxfLJZmueX+1KGeedDPqiOooblBkJTlAQeQs3JN70L48KAJjlUMdUMpCh\nL+dZgrySeO8FaUYM/x+QjK6oZRMzmD1Ap5GBEfN0B3tkiSDDsei1WIyj1PUnTmiM\nnFfjOUfQ/Bn/2Lrp9puBibO50ydVCOcH9RqEo0/PMlF6foG/xtftwvkeSUx9+Ixs\nL+zPDy0B1JarUX1J4ORUqah/14TdOfHhLw8fj6qo7l7leRjC324llbHu85Q/droW\nUgTqc/gvJmp6GQvcQyquhaJtXjdnWcwoNCRX3rNgdoplP0fVNGWRGWdBuuAVV11q\na/Ga5n+mCe2Fj9aBDnRZOymCwnBVc3sATUiRTEeqjj9iEQJz41qIm2Pa/P1SfNqe\n+fX7zGiGB3JFvCTzD25yvyeTm95oRsodc+DkTGEp9CONnW/lG3r7FHQFxZ19KA8/\nGWiMv+Zx2F1ertbsbQ3eaKUm5wKDlOwhaVzq50KOMNRV/gUsvk43/UWwhBKUj3pc\nm36JEOw6UMX6e822glkVopd9Z5D2X/xesqhAJvWUBtLL1HrSEhOTgsqqlt2T1GTw\nEZU0u4vxsuBluCCN7vFdb6h2ay8hHRj4+GvaLI39LY3HHAQXG9A=\n=gUGO\n-----END PGP SIGNATURE-----",
+            "payload": "tree 48b036f802cf93baaf38af99c555de2aa4fc86e9\nparent bda5630b8770da0f6e99f1617777f3c37fca957c\nauthor michael-coles <michael.coles@alertlogic.com> 1512569071 +0100\ncommitter Loïc Hoguin <essen@ninenines.eu> 1513439655 +0100\n\nAdd support for unix sockets\n"
+          }
+        },
+        "url": "https://api.github.com/repos/discord/gun/commits/b297499e13ce24806cc354ea601292b30cbb979f",
+        "author": {
+          "login": "sanmiguel",
+          "id": 2122822,
+          "node_id": "MDQ6VXNlcjIxMjI4MjI=",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/sanmiguel",
+          "type": "User",
+          "site_admin": false
+        },
+        "committer": {
+          "login": "essen",
+          "id": 141739,
+          "node_id": "MDQ6VXNlcjE0MTczOQ==",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/essen",
+          "type": "User",
+          "site_admin": false
+        },
+        "parents": [
+          {
+            "sha": "bda5630b8770da0f6e99f1617777f3c37fca957c",
+            "url": "https://api.github.com/repos/discord/gun/commits/bda5630b8770da0f6e99f1617777f3c37fca957c"
+          }
+        ]
+      },
+      {
+        "sha": "bda5630b8770da0f6e99f1617777f3c37fca957c",
+        "node_id": "MDY6Q29tbWl0MTE0NzAzMTYwOmJkYTU2MzBiODc3MGRhMGY2ZTk5ZjE2MTc3NzdmM2MzN2ZjYTk1N2M=",
+        "commit": {
+          "author": {
+            "name": "Loïc Hoguin",
+            "email": "essen@ninenines.eu",
+            "date": "2017-12-14T10:23:06Z"
+          },
+          "committer": {
+            "name": "Loïc Hoguin",
+            "email": "essen@ninenines.eu",
+            "date": "2017-12-14T10:23:06Z"
+          },
+          "message": "Silence export_all warnings",
+          "tree": {
+            "sha": "4a4d0ea25b384d635bc637007fe57ddbdcb6bdd2",
+            "url": "https://api.github.com/repos/discord/gun/git/trees/4a4d0ea25b384d635bc637007fe57ddbdcb6bdd2"
+          },
+          "url": "https://api.github.com/repos/discord/gun/git/commits/bda5630b8770da0f6e99f1617777f3c37fca957c",
+          "comment_count": 0,
+          "verification": {
+            "verified": true,
+            "reason": "valid",
+            "signature": "-----BEGIN PGP SIGNATURE-----\n\niQIzBAABCgAdFiEEsej0trAQjEHF0iDLip33lfb+12QFAloyUQ8ACgkQip33lfb+\n12SswRAAnPhSf/8gAWBGCaK7UaUnCXxcTxpejQL92lu9lP18iLnr9sEerpqhm9EQ\nc+nUShI/4XljCBd/6xtTvPMA2XeX/nBA4ADtR81e94Mdvq+4bUibxWNAk7JNfuYE\nkOmvN02OuwV9pvuf0OpIBBuxf0DRmkwwhUNlRrtkcFsUAepK3ogQWBThoJOE5oVj\nUEdc01Bu4/So0M6bWmPSE9QOJ8BZMqDL2+PTSiacGyvc+fXmFdcOEV4UZNvtQzrt\ncx/v2bps8CPSjM0bBnHaci3kGDAh/ddFUOaJMbCjQQjfrUN2zX9RC2l9Zt5eB2u1\nqM7B3wwQjcIj1l5+mTawzR82RK4IajbUy27eAPUtD9SkFpYA1VWTHwMwmDnKc5DI\nx0IZYhBQmJxzzTXI5CoNRbCQtzFiO6ZWwXcpRgJ5oJCQoThcrUkLgbq0Nhb5Fdn9\nlcoYYSqhtyzYzkXgWqk1fBMD133no++h806Ntqlw8t5eQyUI+xKQrm6pF1nG/BKW\nu+nN036CXClCBO1U9sGKbjDDT1BvCaiEnesLyryrAWU+gXXq+0TuwbB2agxu/ciY\n56XWwXXZ6AAXZiOoa59Jee/9XsErORbeihmYWieAS1Wa8AZk4kCPi5A9taoCkhIn\n3eo2U+QBIgPL8AgtqlLNOQDJUXe3EOZdNRAG2jnYH/vM5KIyEOg=\n=zPSS\n-----END PGP SIGNATURE-----",
+            "payload": "tree 4a4d0ea25b384d635bc637007fe57ddbdcb6bdd2\nparent 2dd60838510f834b005c266cab7c657a68239ecf\nauthor Loïc Hoguin <essen@ninenines.eu> 1513246986 +0100\ncommitter Loïc Hoguin <essen@ninenines.eu> 1513246986 +0100\n\nSilence export_all warnings\n"
+          }
+        },
+        "url": "https://api.github.com/repos/discord/gun/commits/bda5630b8770da0f6e99f1617777f3c37fca957c",
+        "author": {
+          "login": "essen",
+          "id": 141739,
+          "node_id": "MDQ6VXNlcjE0MTczOQ==",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/essen",
+          "type": "User",
+          "site_admin": false
+        },
+        "committer": {
+          "login": "essen",
+          "id": 141739,
+          "node_id": "MDQ6VXNlcjE0MTczOQ==",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/essen",
+          "type": "User",
+          "site_admin": false
+        },
+        "parents": [
+          {
+            "sha": "2dd60838510f834b005c266cab7c657a68239ecf",
+            "url": "https://api.github.com/repos/discord/gun/commits/2dd60838510f834b005c266cab7c657a68239ecf"
+          }
+        ]
+      },
+      {
+        "sha": "2dd60838510f834b005c266cab7c657a68239ecf",
+        "node_id": "MDY6Q29tbWl0MTE0NzAzMTYwOjJkZDYwODM4NTEwZjgzNGIwMDVjMjY2Y2FiN2M2NTdhNjgyMzllY2Y=",
+        "commit": {
+          "author": {
+            "name": "Loïc Hoguin",
+            "email": "essen@ninenines.eu",
+            "date": "2017-12-14T10:20:39Z"
+          },
+          "committer": {
+            "name": "Loïc Hoguin",
+            "email": "essen@ninenines.eu",
+            "date": "2017-12-14T10:20:39Z"
+          },
+          "message": "Change the {gone, Reason} to {shutdown, Reason} plus small fixes\n\nThe reason for this change is to avoid annoying supervisor logs\nwhen SASL logging is enabled.",
+          "tree": {
+            "sha": "bf72f0291c912cc602f7d9f3d0f4e67a94dbf170",
+            "url": "https://api.github.com/repos/discord/gun/git/trees/bf72f0291c912cc602f7d9f3d0f4e67a94dbf170"
+          },
+          "url": "https://api.github.com/repos/discord/gun/git/commits/2dd60838510f834b005c266cab7c657a68239ecf",
+          "comment_count": 0,
+          "verification": {
+            "verified": true,
+            "reason": "valid",
+            "signature": "-----BEGIN PGP SIGNATURE-----\n\niQIzBAABCgAdFiEEsej0trAQjEHF0iDLip33lfb+12QFAloyUKoACgkQip33lfb+\n12QqSw//YHeh8G7LtYjKhD5MmIyuk9vDJOP1YpkbkiptMxOfwgFZEbOfGB6plz5b\nVkD+TRO/VHdx0wOLuTXjbpOTjJB9AA+D9DOKe30XvIjnr2QCAlK21VWBC2WeyS9B\nVpIxVzsy2/dmSISFdRPYnPsekgVvYkIhK1B/ggB47SytHiUb/ZFBaoYibHxjQuBA\nntFL1YAYTa9L5N9L9p0pj01lXuvCW9efYfXbX5N9xLDxqLy9UaeSgtXwY7iKq6Gh\n9rCi4nG0kE/2XyWwNwGU5dMjPU0j7mgTwG4s7q8SLAre3co/M6eO7e5VqvLoddlf\nhyzXcKFkCdjwbOo8B3DwyYETmSZpuNwUzVHqfhoYKxajl6N/NfuBf4UjHN6YBfbR\niuxeTJWJkcFJ7+af3HjOQkAMWim4uhUVJH/PkUGfXrrfWX5gx4A2+JDNNKxNnc/l\nT3395Zc1kI0LjrXaAb9SUBzKaHP3hG8v1HWg/4He7A0eLmD+qIQWV4bvCHiqfty2\nl74Sg/i2oOpUcp7ZVhlzU3mqSUVUynQUBgR7N1NhCd7MsBM+FVGWWNH6hgRLeY7r\ntpAGscjapd14XIttSTcyZ2l/cLOIjZxlpWIyOJtUo9za4fwJFeroDNzHwM4CN73e\nhBDo4BWte5VodM+nYEPecAInE0koBhCkUpq/ZFfU1FD4ox//3RY=\n=GqRb\n-----END PGP SIGNATURE-----",
+            "payload": "tree bf72f0291c912cc602f7d9f3d0f4e67a94dbf170\nparent 33cc99ca4947f49c40ec061837cc58c7d7fc1ace\nauthor Loïc Hoguin <essen@ninenines.eu> 1513246839 +0100\ncommitter Loïc Hoguin <essen@ninenines.eu> 1513246839 +0100\n\nChange the {gone, Reason} to {shutdown, Reason} plus small fixes\n\nThe reason for this change is to avoid annoying supervisor logs\nwhen SASL logging is enabled.\n"
+          }
+        },
+        "url": "https://api.github.com/repos/discord/gun/commits/2dd60838510f834b005c266cab7c657a68239ecf",
+        "author": {
+          "login": "essen",
+          "id": 141739,
+          "node_id": "MDQ6VXNlcjE0MTczOQ==",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/essen",
+          "type": "User",
+          "site_admin": false
+        },
+        "committer": {
+          "login": "essen",
+          "id": 141739,
+          "node_id": "MDQ6VXNlcjE0MTczOQ==",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/essen",
+          "type": "User",
+          "site_admin": false
+        },
+        "parents": [
+          {
+            "sha": "33cc99ca4947f49c40ec061837cc58c7d7fc1ace",
+            "url": "https://api.github.com/repos/discord/gun/commits/33cc99ca4947f49c40ec061837cc58c7d7fc1ace"
+          }
+        ]
+      },
+      {
+        "sha": "33cc99ca4947f49c40ec061837cc58c7d7fc1ace",
+        "node_id": "MDY6Q29tbWl0MTE0NzAzMTYwOjMzY2M5OWNhNDk0N2Y0OWM0MGVjMDYxODM3Y2M1OGM3ZDdmYzFhY2U=",
+        "commit": {
+          "author": {
+            "name": "Loïc Hoguin",
+            "email": "essen@ninenines.eu",
+            "date": "2017-12-06T22:40:13Z"
+          },
+          "committer": {
+            "name": "Loïc Hoguin",
+            "email": "essen@ninenines.eu",
+            "date": "2017-12-06T22:40:13Z"
+          },
+          "message": "Don't send transfer-encoding for HTTP/1.0",
+          "tree": {
+            "sha": "9e84fbca560d190b894316f17d5085ef38550fef",
+            "url": "https://api.github.com/repos/discord/gun/git/trees/9e84fbca560d190b894316f17d5085ef38550fef"
+          },
+          "url": "https://api.github.com/repos/discord/gun/git/commits/33cc99ca4947f49c40ec061837cc58c7d7fc1ace",
+          "comment_count": 0,
+          "verification": {
+            "verified": true,
+            "reason": "valid",
+            "signature": "-----BEGIN PGP SIGNATURE-----\n\niQIzBAABCgAdFiEEsej0trAQjEHF0iDLip33lfb+12QFAloocdUACgkQip33lfb+\n12QUnBAAwIrppve15Js5vD07KCUOH4epTy+qayypr4SJfIvfPbN8TgBcWip3WSeO\nlypB9hMfLpbDmv2UppBhTRtKZB8D05u1Rpd+BBUqv8PT1MD1+0XtYCNt9h+sZlVA\nZe/ABX0d0aVrntC0ph+yjhsqrJbPesc1aObxNgzwccRUsKWLlPam3kJcKug1at/P\nDw019jObxgSNhUfdhM+ogfISESANxoT0nXxs+h66ehMstWjob01qGnQ0EcI8pgDx\nDuWm9uJCOj/SV4s1ednf8WWtR/qe577gVAs+K0fVlAH+1U+p4CUfx3uBerzXW8K9\nFAKbtykX0I9pPFGY8UvbYdlBp9iun1qxjH11XozDae850MLhUHDn3tkejyRhkDkG\n0pzQaRkdL8R13muoBumW8dYBm+E0WNoUQS8MLW7gy0fekQ0GhiBouPgfU7X4oZzl\nMPzhXG0KT622k8gz4EpwQizgwxkYV/c5dWiCjHaep1rMxiO3AEHLpgfMhxyV2e2a\noZ/9D9rXLhP7Low/w35beBv/G7bsL6l/hDNbyaxGyo08nYJTlcNvOodnzFJ6KkSw\nlbABMmdl/cguqanv9h6UotAt2fbC7cKuKNn8vyal+weaXjqmJNeuKemNCYYoxIjn\nGbGeiVsTRMXasKQ77AgafEt1eg8kRJCT19whVeI12p2dWwu2vRM=\n=MCP7\n-----END PGP SIGNATURE-----",
+            "payload": "tree 9e84fbca560d190b894316f17d5085ef38550fef\nparent e58460252ef758042b69f87f36e1ce4033463659\nauthor Loïc Hoguin <essen@ninenines.eu> 1512600013 +0100\ncommitter Loïc Hoguin <essen@ninenines.eu> 1512600013 +0100\n\nDon't send transfer-encoding for HTTP/1.0\n"
+          }
+        },
+        "url": "https://api.github.com/repos/discord/gun/commits/33cc99ca4947f49c40ec061837cc58c7d7fc1ace",
+        "author": {
+          "login": "essen",
+          "id": 141739,
+          "node_id": "MDQ6VXNlcjE0MTczOQ==",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/essen",
+          "type": "User",
+          "site_admin": false
+        },
+        "committer": {
+          "login": "essen",
+          "id": 141739,
+          "node_id": "MDQ6VXNlcjE0MTczOQ==",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/essen",
+          "type": "User",
+          "site_admin": false
+        },
+        "parents": [
+          {
+            "sha": "e58460252ef758042b69f87f36e1ce4033463659",
+            "url": "https://api.github.com/repos/discord/gun/commits/e58460252ef758042b69f87f36e1ce4033463659"
+          }
+        ]
+      }
+    ],
     "releases": [],
     "issues": [],
     "pullRequests": []

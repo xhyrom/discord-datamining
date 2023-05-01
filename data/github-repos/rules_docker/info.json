@@ -59,7 +59,278 @@
   },
   "branches": [],
   "last5": {
-    "commits": [],
+    "commits": [
+      {
+        "sha": "08f64170889497ea518731fd26bc8f5c5f1a8b04",
+        "node_id": "MDY6Q29tbWl0MjAxMTMzNzYxOjA4ZjY0MTcwODg5NDk3ZWE1MTg3MzFmZDI2YmM4ZjVjNWYxYThiMDQ=",
+        "commit": {
+          "author": {
+            "name": "Sam Schlegel",
+            "email": "git@lutin.us",
+            "date": "2020-09-01T19:08:29Z"
+          },
+          "committer": {
+            "name": "Sam Schlegel",
+            "email": "git@lutin.us",
+            "date": "2020-12-05T01:10:07Z"
+          },
+          "message": "Fix tests in download_pkg command",
+          "tree": {
+            "sha": "241961c0d8d5cec73dfe42cf6330972fdc8afce1",
+            "url": "https://api.github.com/repos/discord/rules_docker/git/trees/241961c0d8d5cec73dfe42cf6330972fdc8afce1"
+          },
+          "url": "https://api.github.com/repos/discord/rules_docker/git/commits/08f64170889497ea518731fd26bc8f5c5f1a8b04",
+          "comment_count": 0,
+          "verification": {
+            "verified": false,
+            "reason": "unsigned",
+            "signature": null,
+            "payload": null
+          }
+        },
+        "url": "https://api.github.com/repos/discord/rules_docker/commits/08f64170889497ea518731fd26bc8f5c5f1a8b04",
+        "author": {
+          "login": "samschlegel",
+          "id": 5514447,
+          "node_id": "MDQ6VXNlcjU1MTQ0NDc=",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/samschlegel",
+          "type": "User",
+          "site_admin": false
+        },
+        "committer": {
+          "login": "samschlegel",
+          "id": 5514447,
+          "node_id": "MDQ6VXNlcjU1MTQ0NDc=",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/samschlegel",
+          "type": "User",
+          "site_admin": false
+        },
+        "parents": [
+          {
+            "sha": "e97de2d2f5cd8fb07fc33e480a36dea3656a5525",
+            "url": "https://api.github.com/repos/discord/rules_docker/commits/e97de2d2f5cd8fb07fc33e480a36dea3656a5525"
+          }
+        ]
+      },
+      {
+        "sha": "e97de2d2f5cd8fb07fc33e480a36dea3656a5525",
+        "node_id": "MDY6Q29tbWl0MjAxMTMzNzYxOmU5N2RlMmQyZjVjZDhmYjA3ZmMzM2U0ODBhMzZkZWEzNjU2YTU1MjU=",
+        "commit": {
+          "author": {
+            "name": "Sam Schlegel",
+            "email": "git@lutin.us",
+            "date": "2020-09-01T18:32:09Z"
+          },
+          "committer": {
+            "name": "Sam Schlegel",
+            "email": "git@lutin.us",
+            "date": "2020-12-05T01:10:00Z"
+          },
+          "message": "Remove --privileged flag\n\nThis shouldn't be needed, is a security risk, and conflicts with userns remapping",
+          "tree": {
+            "sha": "473a2d1a51d23b6b8717bfa1ffd42df6483fbe6e",
+            "url": "https://api.github.com/repos/discord/rules_docker/git/trees/473a2d1a51d23b6b8717bfa1ffd42df6483fbe6e"
+          },
+          "url": "https://api.github.com/repos/discord/rules_docker/git/commits/e97de2d2f5cd8fb07fc33e480a36dea3656a5525",
+          "comment_count": 0,
+          "verification": {
+            "verified": false,
+            "reason": "unsigned",
+            "signature": null,
+            "payload": null
+          }
+        },
+        "url": "https://api.github.com/repos/discord/rules_docker/commits/e97de2d2f5cd8fb07fc33e480a36dea3656a5525",
+        "author": {
+          "login": "samschlegel",
+          "id": 5514447,
+          "node_id": "MDQ6VXNlcjU1MTQ0NDc=",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/samschlegel",
+          "type": "User",
+          "site_admin": false
+        },
+        "committer": {
+          "login": "samschlegel",
+          "id": 5514447,
+          "node_id": "MDQ6VXNlcjU1MTQ0NDc=",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/samschlegel",
+          "type": "User",
+          "site_admin": false
+        },
+        "parents": [
+          {
+            "sha": "02ad0a48fac9afb644908a634e8b2139c5e84670",
+            "url": "https://api.github.com/repos/discord/rules_docker/commits/02ad0a48fac9afb644908a634e8b2139c5e84670"
+          }
+        ]
+      },
+      {
+        "sha": "02ad0a48fac9afb644908a634e8b2139c5e84670",
+        "node_id": "MDY6Q29tbWl0MjAxMTMzNzYxOjAyYWQwYTQ4ZmFjOWFmYjY0NDkwOGE2MzRlOGIyMTM5YzVlODQ2NzA=",
+        "commit": {
+          "author": {
+            "name": "Miroslav Genov",
+            "email": "mgenov@gmail.com",
+            "date": "2020-12-04T16:52:21Z"
+          },
+          "committer": {
+            "name": "GitHub",
+            "email": "noreply@github.com",
+            "date": "2020-12-04T16:52:21Z"
+          },
+          "message": "Fix Stamp param propagation from base image (#1672)\n\nThe Stamp attribute is now properly prorivded from the base image to the\r\nchild image which ensures that target image will be created with default\r\ntimestamp value.\r\n\r\n```\r\ncontainer_image(\r\n    name = \"with_stamped_creation_time\",\r\n    base = \":base_with_volume\",\r\n    stamp = True,\r\n)\r\n\r\ncontainer_image(\r\n    name = \"with_base_stamped_image\",\r\n    base = \":with_stamped_creation_time\",\r\n)\r\n```\r\n\r\nRelated to #155",
+          "tree": {
+            "sha": "0b7c71b7be9eb8107297473cd6c2ba3d0333bfbd",
+            "url": "https://api.github.com/repos/discord/rules_docker/git/trees/0b7c71b7be9eb8107297473cd6c2ba3d0333bfbd"
+          },
+          "url": "https://api.github.com/repos/discord/rules_docker/git/commits/02ad0a48fac9afb644908a634e8b2139c5e84670",
+          "comment_count": 0,
+          "verification": {
+            "verified": true,
+            "reason": "valid",
+            "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsBcBAABCAAQBQJfymlFCRBK7hj4Ov3rIwAAdHIIAJueu5H0+Gjn1EPeiEI/kgGk\nOxRbQtxisAeAtIO2CW4DG47ZcTQloS4MSWeSqHAfxAM9jgGupt80LU+9JBnc+bwP\nIwQ4NjEdiXOCld20dpSAt/HmjcSyoun8bcuQLe1ww0ErmfX5/SMMjhfvAs1J3+hX\nGNXgdZkzUOWep1XcwU1inlG/gXBkEgGmUCdH5r41jRLCYcrsIOqaEFe03uxQwuSf\n3iX8SvFqJ+Uj0MkRYmeiC9n4T+XyBQu+l/J24ZFow1XLSNSdjuUJZVb3VpHWyg/r\nWpW1QBtk73Zm95jKn+80jyBzNAoJ9KlLwHfvHqR/r1RrgM/a8j+Z8NmsTledLmM=\n=EROg\n-----END PGP SIGNATURE-----\n",
+            "payload": "tree 0b7c71b7be9eb8107297473cd6c2ba3d0333bfbd\nparent c85e7b6cd5f812081bbfe44fb657ce89ffebfcc3\nauthor Miroslav Genov <mgenov@gmail.com> 1607100741 +0200\ncommitter GitHub <noreply@github.com> 1607100741 -0500\n\nFix Stamp param propagation from base image (#1672)\n\nThe Stamp attribute is now properly prorivded from the base image to the\r\nchild image which ensures that target image will be created with default\r\ntimestamp value.\r\n\r\n```\r\ncontainer_image(\r\n    name = \"with_stamped_creation_time\",\r\n    base = \":base_with_volume\",\r\n    stamp = True,\r\n)\r\n\r\ncontainer_image(\r\n    name = \"with_base_stamped_image\",\r\n    base = \":with_stamped_creation_time\",\r\n)\r\n```\r\n\r\nRelated to #155"
+          }
+        },
+        "url": "https://api.github.com/repos/discord/rules_docker/commits/02ad0a48fac9afb644908a634e8b2139c5e84670",
+        "author": {
+          "login": "mgenov",
+          "id": 209223,
+          "node_id": "MDQ6VXNlcjIwOTIyMw==",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/mgenov",
+          "type": "User",
+          "site_admin": false
+        },
+        "committer": {
+          "login": "web-flow",
+          "id": 19864447,
+          "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/web-flow",
+          "type": "User",
+          "site_admin": false
+        },
+        "parents": [
+          {
+            "sha": "c85e7b6cd5f812081bbfe44fb657ce89ffebfcc3",
+            "url": "https://api.github.com/repos/discord/rules_docker/commits/c85e7b6cd5f812081bbfe44fb657ce89ffebfcc3"
+          }
+        ]
+      },
+      {
+        "sha": "c85e7b6cd5f812081bbfe44fb657ce89ffebfcc3",
+        "node_id": "MDY6Q29tbWl0MjAxMTMzNzYxOmM4NWU3YjZjZDVmODEyMDgxYmJmZTQ0ZmI2NTdjZTg5ZmZlYmZjYzM=",
+        "commit": {
+          "author": {
+            "name": "Ivo List",
+            "email": "ilist@google.com",
+            "date": "2020-11-18T18:26:51Z"
+          },
+          "committer": {
+            "name": "GitHub",
+            "email": "noreply@github.com",
+            "date": "2020-11-18T18:26:51Z"
+          },
+          "message": "Fix conditional select on darwin. (#1674)\n\nBazel is changing how @bazel_tools/conditions:darwin is implemented.\r\nWith old implementation based on flags, it was ok to have darwin and\r\ndarwin_x86_64 in a select. This was base on flag --cpu=darwin and\r\n--cpu=dawin_x86_64.\r\n\r\nNew implementation is based on constraints, where \"darwin\" means OS (and\r\nany CPU), while \"darwin_x86_64\" mean only specific CPU. As such they\r\ncannot be used in the same select, because the selection would be\r\nambiguous.",
+          "tree": {
+            "sha": "e7a3285c0716c36ddc605af531dd2a90de9986a6",
+            "url": "https://api.github.com/repos/discord/rules_docker/git/trees/e7a3285c0716c36ddc605af531dd2a90de9986a6"
+          },
+          "url": "https://api.github.com/repos/discord/rules_docker/git/commits/c85e7b6cd5f812081bbfe44fb657ce89ffebfcc3",
+          "comment_count": 0,
+          "verification": {
+            "verified": true,
+            "reason": "valid",
+            "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsBcBAABCAAQBQJftWdrCRBK7hj4Ov3rIwAAdHIIAKHnpbFqF++EX6YwvRXrJpvQ\nsX0VRzpO3l3a0DzKZHfqVYGTNsLWcZLUbFbzvkOXAcwgFGcFqnOis1kCmWVqcpEo\n+tQB6Nh+2RPJQagYp0fjEHtyNXqUUJ3qIlxbWb9wWE7rSKPq1stfgSOx+Sjrp2P+\nL8BAgm2UXUSOYZVK4jusm58Jqyk8dpyWG6AtvhXfKuk+3GwDOA2Sr/hluGfTNtu3\nU+t0zoNNRgT9e4qM60trJB+ffMEJyBFPakaghfM4da56V476UynCcskyw5EWT2mS\nT5hOOyPr1a8yhn3rvHRakXlvMCSmUBf2I4HaBRyh+3E3jz4ZCEVE9UAF9PTyhNc=\n=1o4R\n-----END PGP SIGNATURE-----\n",
+            "payload": "tree e7a3285c0716c36ddc605af531dd2a90de9986a6\nparent 1bdeab8ef67d47db4eeebbe77f732811fac84dcc\nauthor Ivo List <ilist@google.com> 1605724011 +0100\ncommitter GitHub <noreply@github.com> 1605724011 -0500\n\nFix conditional select on darwin. (#1674)\n\nBazel is changing how @bazel_tools/conditions:darwin is implemented.\r\nWith old implementation based on flags, it was ok to have darwin and\r\ndarwin_x86_64 in a select. This was base on flag --cpu=darwin and\r\n--cpu=dawin_x86_64.\r\n\r\nNew implementation is based on constraints, where \"darwin\" means OS (and\r\nany CPU), while \"darwin_x86_64\" mean only specific CPU. As such they\r\ncannot be used in the same select, because the selection would be\r\nambiguous."
+          }
+        },
+        "url": "https://api.github.com/repos/discord/rules_docker/commits/c85e7b6cd5f812081bbfe44fb657ce89ffebfcc3",
+        "author": {
+          "login": "comius",
+          "id": 1796240,
+          "node_id": "MDQ6VXNlcjE3OTYyNDA=",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/comius",
+          "type": "User",
+          "site_admin": false
+        },
+        "committer": {
+          "login": "web-flow",
+          "id": 19864447,
+          "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/web-flow",
+          "type": "User",
+          "site_admin": false
+        },
+        "parents": [
+          {
+            "sha": "1bdeab8ef67d47db4eeebbe77f732811fac84dcc",
+            "url": "https://api.github.com/repos/discord/rules_docker/commits/1bdeab8ef67d47db4eeebbe77f732811fac84dcc"
+          }
+        ]
+      },
+      {
+        "sha": "1bdeab8ef67d47db4eeebbe77f732811fac84dcc",
+        "node_id": "MDY6Q29tbWl0MjAxMTMzNzYxOjFiZGVhYjhlZjY3ZDQ3ZGI0ZWVlYmJlNzdmNzMyODExZmFjODRkY2M=",
+        "commit": {
+          "author": {
+            "name": "jonjohnsonjr",
+            "email": "jonjohnson@google.com",
+            "date": "2020-11-13T13:38:19Z"
+          },
+          "committer": {
+            "name": "GitHub",
+            "email": "noreply@github.com",
+            "date": "2020-11-13T13:38:19Z"
+          },
+          "message": "Relax error string matching (#1677)\n\nIn anticipation of:\r\nhttps://github.com/google/go-containerregistry/pull/827",
+          "tree": {
+            "sha": "93cac985da8b4c323bd908bc372c22d894bdb0a1",
+            "url": "https://api.github.com/repos/discord/rules_docker/git/trees/93cac985da8b4c323bd908bc372c22d894bdb0a1"
+          },
+          "url": "https://api.github.com/repos/discord/rules_docker/git/commits/1bdeab8ef67d47db4eeebbe77f732811fac84dcc",
+          "comment_count": 0,
+          "verification": {
+            "verified": true,
+            "reason": "valid",
+            "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsBcBAABCAAQBQJfroxLCRBK7hj4Ov3rIwAAdHIIAFD/3dmGcsxxsLIwQmQMuh2v\nMNSUcOGBSwDYPjXl1HQwCa7XklOuVQtU+UMg6rxEM8aA3jjpP/zHlHx36Wv5tt5e\nzhOz/4uU5oRpwdxSGmt4idWU7vqMSOXLW4FJEn//r5tU36ySwrWvOs6QidxWJ1LP\nT38nRq+rd/46IzdRIfMlecvSmz2VcY33pwG+V7fENbWZnO6UPkRl7bvS/xkr76+p\nGav9w+px16vojR+y2sHHN07zQWxlB9Kn8mgIft9CzprgfDbxYyKnuT4hS9C5DHmO\nNlxKEUNRhIa0ROGmjXvNY3YW4ezFgwKTzxai4qAqqk74QMVOdRLuX2NJsvn4lNE=\n=59f4\n-----END PGP SIGNATURE-----\n",
+            "payload": "tree 93cac985da8b4c323bd908bc372c22d894bdb0a1\nparent 375038bf9a2cdddc40abd6e058d87994e16d01ee\nauthor jonjohnsonjr <jonjohnson@google.com> 1605274699 -0800\ncommitter GitHub <noreply@github.com> 1605274699 -0500\n\nRelax error string matching (#1677)\n\nIn anticipation of:\r\nhttps://github.com/google/go-containerregistry/pull/827"
+          }
+        },
+        "url": "https://api.github.com/repos/discord/rules_docker/commits/1bdeab8ef67d47db4eeebbe77f732811fac84dcc",
+        "author": {
+          "login": "jonjohnsonjr",
+          "id": 17863526,
+          "node_id": "MDQ6VXNlcjE3ODYzNTI2",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/jonjohnsonjr",
+          "type": "User",
+          "site_admin": false
+        },
+        "committer": {
+          "login": "web-flow",
+          "id": 19864447,
+          "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/web-flow",
+          "type": "User",
+          "site_admin": false
+        },
+        "parents": [
+          {
+            "sha": "375038bf9a2cdddc40abd6e058d87994e16d01ee",
+            "url": "https://api.github.com/repos/discord/rules_docker/commits/375038bf9a2cdddc40abd6e058d87994e16d01ee"
+          }
+        ]
+      }
+    ],
     "releases": [],
     "issues": [],
     "pullRequests": []
