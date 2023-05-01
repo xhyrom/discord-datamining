@@ -51,16 +51,7 @@
     "triage": false,
     "pull": false
   },
-  "branches": [
-    {
-      "name": "master",
-      "commit": {
-        "sha": "4f1b6c1a75fae9ffc1c3a3325b4a6a0a7af0fe86",
-        "url": "https://api.github.com/repos/discord/slate-hotkeys-package-fork/commits/4f1b6c1a75fae9ffc1c3a3325b4a6a0a7af0fe86"
-      },
-      "protected": false
-    }
-  ],
+  "branches": [],
   "last5": {
     "commits": [
       {
