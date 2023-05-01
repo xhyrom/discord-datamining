@@ -601,6 +601,1010 @@
         "state_reason": null
       }
     ],
-    "pullRequests": []
+    "pullRequests": [
+      {
+        "url": "https://api.github.com/repos/discord/itsdangerous-rs/pulls/9",
+        "id": 886581247,
+        "node_id": "PR_kwDOC2m4gM402Cf_",
+        "number": 9,
+        "state": "open",
+        "locked": false,
+        "title": "Add const Separator::default() fn",
+        "user": {
+          "login": "nharper",
+          "id": 653608,
+          "node_id": "MDQ6VXNlcjY1MzYwOA==",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/nharper",
+          "type": "User",
+          "site_admin": false
+        },
+        "body": null,
+        "created_at": "2022-03-22T22:49:36Z",
+        "updated_at": "2022-03-22T22:59:15Z",
+        "closed_at": null,
+        "merged_at": null,
+        "merge_commit_sha": "9ab41641d46be18ba93d5f9f52196e6e8e075591",
+        "assignee": null,
+        "assignees": [],
+        "requested_reviewers": [
+          {
+            "login": "jhgg",
+            "id": 5489149,
+            "node_id": "MDQ6VXNlcjU0ODkxNDk=",
+            "gravatar_id": "",
+            "url": "https://api.github.com/users/jhgg",
+            "type": "User",
+            "site_admin": false
+          }
+        ],
+        "requested_teams": [],
+        "labels": [],
+        "milestone": null,
+        "draft": false,
+        "head": {
+          "label": "discord:nharper/const-separator",
+          "ref": "nharper/const-separator",
+          "sha": "5d43122ab02d5e38be274987cbbbe57c41455b15",
+          "user": {
+            "login": "discord",
+            "id": 1965106,
+            "node_id": "MDEyOk9yZ2FuaXphdGlvbjE5NjUxMDY=",
+            "gravatar_id": "",
+            "url": "https://api.github.com/users/discord",
+            "type": "Organization",
+            "site_admin": false
+          },
+          "repo": {
+            "id": 191477888,
+            "node_id": "MDEwOlJlcG9zaXRvcnkxOTE0Nzc4ODg=",
+            "name": "itsdangerous-rs",
+            "full_name": "discord/itsdangerous-rs",
+            "private": false,
+            "owner": {
+              "login": "discord",
+              "id": 1965106,
+              "node_id": "MDEyOk9yZ2FuaXphdGlvbjE5NjUxMDY=",
+              "gravatar_id": "",
+              "url": "https://api.github.com/users/discord",
+              "type": "Organization",
+              "site_admin": false
+            },
+            "description": "A rust port of itsdangerous! ",
+            "fork": false,
+            "url": "https://api.github.com/repos/discord/itsdangerous-rs",
+            "created_at": "2019-06-12T01:51:15Z",
+            "updated_at": "2023-03-08T09:49:25Z",
+            "pushed_at": "2022-03-22T22:49:36Z",
+            "homepage": null,
+            "size": 50,
+            "stargazers_count": 68,
+            "watchers_count": 68,
+            "language": "Rust",
+            "has_issues": true,
+            "has_projects": true,
+            "has_downloads": true,
+            "has_wiki": true,
+            "has_pages": false,
+            "has_discussions": false,
+            "forks_count": 18,
+            "archived": false,
+            "disabled": false,
+            "open_issues_count": 3,
+            "license": {
+              "key": "mit",
+              "name": "MIT License",
+              "spdx_id": "MIT",
+              "url": "https://api.github.com/licenses/mit",
+              "node_id": "MDc6TGljZW5zZTEz"
+            },
+            "allow_forking": true,
+            "is_template": false,
+            "web_commit_signoff_required": false,
+            "topics": [],
+            "visibility": "public",
+            "forks": 18,
+            "open_issues": 3,
+            "watchers": 68,
+            "default_branch": "master"
+          }
+        },
+        "base": {
+          "label": "discord:master",
+          "ref": "master",
+          "sha": "43b5469d8400562810c6ad86b8d3cc66e61d0612",
+          "user": {
+            "login": "discord",
+            "id": 1965106,
+            "node_id": "MDEyOk9yZ2FuaXphdGlvbjE5NjUxMDY=",
+            "gravatar_id": "",
+            "url": "https://api.github.com/users/discord",
+            "type": "Organization",
+            "site_admin": false
+          },
+          "repo": {
+            "id": 191477888,
+            "node_id": "MDEwOlJlcG9zaXRvcnkxOTE0Nzc4ODg=",
+            "name": "itsdangerous-rs",
+            "full_name": "discord/itsdangerous-rs",
+            "private": false,
+            "owner": {
+              "login": "discord",
+              "id": 1965106,
+              "node_id": "MDEyOk9yZ2FuaXphdGlvbjE5NjUxMDY=",
+              "gravatar_id": "",
+              "url": "https://api.github.com/users/discord",
+              "type": "Organization",
+              "site_admin": false
+            },
+            "description": "A rust port of itsdangerous! ",
+            "fork": false,
+            "url": "https://api.github.com/repos/discord/itsdangerous-rs",
+            "created_at": "2019-06-12T01:51:15Z",
+            "updated_at": "2023-03-08T09:49:25Z",
+            "pushed_at": "2022-03-22T22:49:36Z",
+            "homepage": null,
+            "size": 50,
+            "stargazers_count": 68,
+            "watchers_count": 68,
+            "language": "Rust",
+            "has_issues": true,
+            "has_projects": true,
+            "has_downloads": true,
+            "has_wiki": true,
+            "has_pages": false,
+            "has_discussions": false,
+            "forks_count": 18,
+            "archived": false,
+            "disabled": false,
+            "open_issues_count": 3,
+            "license": {
+              "key": "mit",
+              "name": "MIT License",
+              "spdx_id": "MIT",
+              "url": "https://api.github.com/licenses/mit",
+              "node_id": "MDc6TGljZW5zZTEz"
+            },
+            "allow_forking": true,
+            "is_template": false,
+            "web_commit_signoff_required": false,
+            "topics": [],
+            "visibility": "public",
+            "forks": 18,
+            "open_issues": 3,
+            "watchers": 68,
+            "default_branch": "master"
+          }
+        },
+        "_links": {
+          "self": {
+            "href": "https://api.github.com/repos/discord/itsdangerous-rs/pulls/9"
+          },
+          "html": {
+            "href": "https://github.com/discord/itsdangerous-rs/pull/9"
+          },
+          "issue": {
+            "href": "https://api.github.com/repos/discord/itsdangerous-rs/issues/9"
+          },
+          "comments": {
+            "href": "https://api.github.com/repos/discord/itsdangerous-rs/issues/9/comments"
+          },
+          "review_comments": {
+            "href": "https://api.github.com/repos/discord/itsdangerous-rs/pulls/9/comments"
+          },
+          "review_comment": {
+            "href": "https://api.github.com/repos/discord/itsdangerous-rs/pulls/comments{/number}"
+          },
+          "commits": {
+            "href": "https://api.github.com/repos/discord/itsdangerous-rs/pulls/9/commits"
+          },
+          "statuses": {
+            "href": "https://api.github.com/repos/discord/itsdangerous-rs/statuses/5d43122ab02d5e38be274987cbbbe57c41455b15"
+          }
+        },
+        "author_association": "NONE",
+        "auto_merge": null,
+        "active_lock_reason": null
+      },
+      {
+        "url": "https://api.github.com/repos/discord/itsdangerous-rs/pulls/8",
+        "id": 647241874,
+        "node_id": "MDExOlB1bGxSZXF1ZXN0NjQ3MjQxODc0",
+        "number": 8,
+        "state": "open",
+        "locked": false,
+        "title": "Add type aliases for the default signers",
+        "user": {
+          "login": "Rapptz",
+          "id": 1695103,
+          "node_id": "MDQ6VXNlcjE2OTUxMDM=",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/Rapptz",
+          "type": "User",
+          "site_admin": false
+        },
+        "body": "Should make using these as struct members a little more bearable in the typing department.",
+        "created_at": "2021-05-19T03:34:06Z",
+        "updated_at": "2021-05-19T04:02:28Z",
+        "closed_at": null,
+        "merged_at": null,
+        "merge_commit_sha": "4021862d875784d72c479377d9d326b73dad6128",
+        "assignee": null,
+        "assignees": [],
+        "requested_reviewers": [],
+        "requested_teams": [],
+        "labels": [],
+        "milestone": null,
+        "draft": false,
+        "head": {
+          "label": "Rapptz:default-aliases",
+          "ref": "default-aliases",
+          "sha": "578ba70b16fbc2ba1837ab9dd7453557a865e344",
+          "user": {
+            "login": "Rapptz",
+            "id": 1695103,
+            "node_id": "MDQ6VXNlcjE2OTUxMDM=",
+            "gravatar_id": "",
+            "url": "https://api.github.com/users/Rapptz",
+            "type": "User",
+            "site_admin": false
+          },
+          "repo": {
+            "id": 368729767,
+            "node_id": "MDEwOlJlcG9zaXRvcnkzNjg3Mjk3Njc=",
+            "name": "itsdangerous-rs",
+            "full_name": "Rapptz/itsdangerous-rs",
+            "private": false,
+            "owner": {
+              "login": "Rapptz",
+              "id": 1695103,
+              "node_id": "MDQ6VXNlcjE2OTUxMDM=",
+              "gravatar_id": "",
+              "url": "https://api.github.com/users/Rapptz",
+              "type": "User",
+              "site_admin": false
+            },
+            "description": "A rust port of itsdangerous! ",
+            "fork": true,
+            "url": "https://api.github.com/repos/Rapptz/itsdangerous-rs",
+            "created_at": "2021-05-19T03:08:56Z",
+            "updated_at": "2022-12-13T01:57:54Z",
+            "pushed_at": "2021-05-19T04:02:27Z",
+            "homepage": null,
+            "size": 55,
+            "stargazers_count": 2,
+            "watchers_count": 2,
+            "language": null,
+            "has_issues": false,
+            "has_projects": true,
+            "has_downloads": true,
+            "has_wiki": true,
+            "has_pages": false,
+            "has_discussions": false,
+            "forks_count": 1,
+            "archived": false,
+            "disabled": false,
+            "open_issues_count": 0,
+            "license": {
+              "key": "mit",
+              "name": "MIT License",
+              "spdx_id": "MIT",
+              "url": "https://api.github.com/licenses/mit",
+              "node_id": "MDc6TGljZW5zZTEz"
+            },
+            "allow_forking": true,
+            "is_template": false,
+            "web_commit_signoff_required": false,
+            "topics": [],
+            "visibility": "public",
+            "forks": 1,
+            "open_issues": 0,
+            "watchers": 2,
+            "default_branch": "master"
+          }
+        },
+        "base": {
+          "label": "discord:master",
+          "ref": "master",
+          "sha": "152c1e7ad5e6b764a66d86cfa900b510992bc760",
+          "user": {
+            "login": "discord",
+            "id": 1965106,
+            "node_id": "MDEyOk9yZ2FuaXphdGlvbjE5NjUxMDY=",
+            "gravatar_id": "",
+            "url": "https://api.github.com/users/discord",
+            "type": "Organization",
+            "site_admin": false
+          },
+          "repo": {
+            "id": 191477888,
+            "node_id": "MDEwOlJlcG9zaXRvcnkxOTE0Nzc4ODg=",
+            "name": "itsdangerous-rs",
+            "full_name": "discord/itsdangerous-rs",
+            "private": false,
+            "owner": {
+              "login": "discord",
+              "id": 1965106,
+              "node_id": "MDEyOk9yZ2FuaXphdGlvbjE5NjUxMDY=",
+              "gravatar_id": "",
+              "url": "https://api.github.com/users/discord",
+              "type": "Organization",
+              "site_admin": false
+            },
+            "description": "A rust port of itsdangerous! ",
+            "fork": false,
+            "url": "https://api.github.com/repos/discord/itsdangerous-rs",
+            "created_at": "2019-06-12T01:51:15Z",
+            "updated_at": "2023-03-08T09:49:25Z",
+            "pushed_at": "2022-03-22T22:49:36Z",
+            "homepage": null,
+            "size": 50,
+            "stargazers_count": 68,
+            "watchers_count": 68,
+            "language": "Rust",
+            "has_issues": true,
+            "has_projects": true,
+            "has_downloads": true,
+            "has_wiki": true,
+            "has_pages": false,
+            "has_discussions": false,
+            "forks_count": 18,
+            "archived": false,
+            "disabled": false,
+            "open_issues_count": 3,
+            "license": {
+              "key": "mit",
+              "name": "MIT License",
+              "spdx_id": "MIT",
+              "url": "https://api.github.com/licenses/mit",
+              "node_id": "MDc6TGljZW5zZTEz"
+            },
+            "allow_forking": true,
+            "is_template": false,
+            "web_commit_signoff_required": false,
+            "topics": [],
+            "visibility": "public",
+            "forks": 18,
+            "open_issues": 3,
+            "watchers": 68,
+            "default_branch": "master"
+          }
+        },
+        "_links": {
+          "self": {
+            "href": "https://api.github.com/repos/discord/itsdangerous-rs/pulls/8"
+          },
+          "html": {
+            "href": "https://github.com/discord/itsdangerous-rs/pull/8"
+          },
+          "issue": {
+            "href": "https://api.github.com/repos/discord/itsdangerous-rs/issues/8"
+          },
+          "comments": {
+            "href": "https://api.github.com/repos/discord/itsdangerous-rs/issues/8/comments"
+          },
+          "review_comments": {
+            "href": "https://api.github.com/repos/discord/itsdangerous-rs/pulls/8/comments"
+          },
+          "review_comment": {
+            "href": "https://api.github.com/repos/discord/itsdangerous-rs/pulls/comments{/number}"
+          },
+          "commits": {
+            "href": "https://api.github.com/repos/discord/itsdangerous-rs/pulls/8/commits"
+          },
+          "statuses": {
+            "href": "https://api.github.com/repos/discord/itsdangerous-rs/statuses/578ba70b16fbc2ba1837ab9dd7453557a865e344"
+          }
+        },
+        "author_association": "NONE",
+        "auto_merge": null,
+        "active_lock_reason": null
+      },
+      {
+        "url": "https://api.github.com/repos/discord/itsdangerous-rs/pulls/7",
+        "id": 619611006,
+        "node_id": "MDExOlB1bGxSZXF1ZXN0NjE5NjExMDA2",
+        "number": 7,
+        "state": "closed",
+        "locked": false,
+        "title": "v0.4.0 - remove legacy timestamp epoch offset",
+        "user": {
+          "login": "ktravis",
+          "id": 1472316,
+          "node_id": "MDQ6VXNlcjE0NzIzMTY=",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/ktravis",
+          "type": "User",
+          "site_admin": false
+        },
+        "body": "As advertised, remove the epoch offset used for compatibility with itsdangerous 0.x. Update test case golden values to reflect new timestamp.\r\n\r\nAlso fix a warning related to an ambiguous `into_iter()` call.",
+        "created_at": "2021-04-20T19:21:11Z",
+        "updated_at": "2021-04-20T19:32:12Z",
+        "closed_at": "2021-04-20T19:32:08Z",
+        "merged_at": "2021-04-20T19:32:08Z",
+        "merge_commit_sha": "152c1e7ad5e6b764a66d86cfa900b510992bc760",
+        "assignee": null,
+        "assignees": [],
+        "requested_reviewers": [],
+        "requested_teams": [],
+        "labels": [],
+        "milestone": null,
+        "draft": false,
+        "head": {
+          "label": "discord:remove-legacy-epoch",
+          "ref": "remove-legacy-epoch",
+          "sha": "4d5459c63e93560d6607753718b21a7ea08f724e",
+          "user": {
+            "login": "discord",
+            "id": 1965106,
+            "node_id": "MDEyOk9yZ2FuaXphdGlvbjE5NjUxMDY=",
+            "gravatar_id": "",
+            "url": "https://api.github.com/users/discord",
+            "type": "Organization",
+            "site_admin": false
+          },
+          "repo": {
+            "id": 191477888,
+            "node_id": "MDEwOlJlcG9zaXRvcnkxOTE0Nzc4ODg=",
+            "name": "itsdangerous-rs",
+            "full_name": "discord/itsdangerous-rs",
+            "private": false,
+            "owner": {
+              "login": "discord",
+              "id": 1965106,
+              "node_id": "MDEyOk9yZ2FuaXphdGlvbjE5NjUxMDY=",
+              "gravatar_id": "",
+              "url": "https://api.github.com/users/discord",
+              "type": "Organization",
+              "site_admin": false
+            },
+            "description": "A rust port of itsdangerous! ",
+            "fork": false,
+            "url": "https://api.github.com/repos/discord/itsdangerous-rs",
+            "created_at": "2019-06-12T01:51:15Z",
+            "updated_at": "2023-03-08T09:49:25Z",
+            "pushed_at": "2022-03-22T22:49:36Z",
+            "homepage": null,
+            "size": 50,
+            "stargazers_count": 68,
+            "watchers_count": 68,
+            "language": "Rust",
+            "has_issues": true,
+            "has_projects": true,
+            "has_downloads": true,
+            "has_wiki": true,
+            "has_pages": false,
+            "has_discussions": false,
+            "forks_count": 18,
+            "archived": false,
+            "disabled": false,
+            "open_issues_count": 3,
+            "license": {
+              "key": "mit",
+              "name": "MIT License",
+              "spdx_id": "MIT",
+              "url": "https://api.github.com/licenses/mit",
+              "node_id": "MDc6TGljZW5zZTEz"
+            },
+            "allow_forking": true,
+            "is_template": false,
+            "web_commit_signoff_required": false,
+            "topics": [],
+            "visibility": "public",
+            "forks": 18,
+            "open_issues": 3,
+            "watchers": 68,
+            "default_branch": "master"
+          }
+        },
+        "base": {
+          "label": "discord:master",
+          "ref": "master",
+          "sha": "fde4767f500dbe8e58266091e31e800b2223315b",
+          "user": {
+            "login": "discord",
+            "id": 1965106,
+            "node_id": "MDEyOk9yZ2FuaXphdGlvbjE5NjUxMDY=",
+            "gravatar_id": "",
+            "url": "https://api.github.com/users/discord",
+            "type": "Organization",
+            "site_admin": false
+          },
+          "repo": {
+            "id": 191477888,
+            "node_id": "MDEwOlJlcG9zaXRvcnkxOTE0Nzc4ODg=",
+            "name": "itsdangerous-rs",
+            "full_name": "discord/itsdangerous-rs",
+            "private": false,
+            "owner": {
+              "login": "discord",
+              "id": 1965106,
+              "node_id": "MDEyOk9yZ2FuaXphdGlvbjE5NjUxMDY=",
+              "gravatar_id": "",
+              "url": "https://api.github.com/users/discord",
+              "type": "Organization",
+              "site_admin": false
+            },
+            "description": "A rust port of itsdangerous! ",
+            "fork": false,
+            "url": "https://api.github.com/repos/discord/itsdangerous-rs",
+            "created_at": "2019-06-12T01:51:15Z",
+            "updated_at": "2023-03-08T09:49:25Z",
+            "pushed_at": "2022-03-22T22:49:36Z",
+            "homepage": null,
+            "size": 50,
+            "stargazers_count": 68,
+            "watchers_count": 68,
+            "language": "Rust",
+            "has_issues": true,
+            "has_projects": true,
+            "has_downloads": true,
+            "has_wiki": true,
+            "has_pages": false,
+            "has_discussions": false,
+            "forks_count": 18,
+            "archived": false,
+            "disabled": false,
+            "open_issues_count": 3,
+            "license": {
+              "key": "mit",
+              "name": "MIT License",
+              "spdx_id": "MIT",
+              "url": "https://api.github.com/licenses/mit",
+              "node_id": "MDc6TGljZW5zZTEz"
+            },
+            "allow_forking": true,
+            "is_template": false,
+            "web_commit_signoff_required": false,
+            "topics": [],
+            "visibility": "public",
+            "forks": 18,
+            "open_issues": 3,
+            "watchers": 68,
+            "default_branch": "master"
+          }
+        },
+        "_links": {
+          "self": {
+            "href": "https://api.github.com/repos/discord/itsdangerous-rs/pulls/7"
+          },
+          "html": {
+            "href": "https://github.com/discord/itsdangerous-rs/pull/7"
+          },
+          "issue": {
+            "href": "https://api.github.com/repos/discord/itsdangerous-rs/issues/7"
+          },
+          "comments": {
+            "href": "https://api.github.com/repos/discord/itsdangerous-rs/issues/7/comments"
+          },
+          "review_comments": {
+            "href": "https://api.github.com/repos/discord/itsdangerous-rs/pulls/7/comments"
+          },
+          "review_comment": {
+            "href": "https://api.github.com/repos/discord/itsdangerous-rs/pulls/comments{/number}"
+          },
+          "commits": {
+            "href": "https://api.github.com/repos/discord/itsdangerous-rs/pulls/7/commits"
+          },
+          "statuses": {
+            "href": "https://api.github.com/repos/discord/itsdangerous-rs/statuses/4d5459c63e93560d6607753718b21a7ea08f724e"
+          }
+        },
+        "author_association": "COLLABORATOR",
+        "auto_merge": null,
+        "active_lock_reason": null
+      },
+      {
+        "url": "https://api.github.com/repos/discord/itsdangerous-rs/pulls/6",
+        "id": 598421085,
+        "node_id": "MDExOlB1bGxSZXF1ZXN0NTk4NDIxMDg1",
+        "number": 6,
+        "state": "closed",
+        "locked": false,
+        "title": "Fix typo",
+        "user": {
+          "login": "jhowarth",
+          "id": 70012,
+          "node_id": "MDQ6VXNlcjcwMDEy",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/jhowarth",
+          "type": "User",
+          "site_admin": false
+        },
+        "body": "",
+        "created_at": "2021-03-23T00:04:48Z",
+        "updated_at": "2021-03-24T17:19:56Z",
+        "closed_at": "2021-03-24T17:19:56Z",
+        "merged_at": null,
+        "merge_commit_sha": "0b8aa9a1140c145137414b6b45641dcc620fa5e3",
+        "assignee": null,
+        "assignees": [],
+        "requested_reviewers": [],
+        "requested_teams": [],
+        "labels": [],
+        "milestone": null,
+        "draft": false,
+        "head": {
+          "label": "jhowarth:patch-1",
+          "ref": "patch-1",
+          "sha": "55c4b675e8fb29f9eabc436bf7865c6429cc6a31",
+          "user": {
+            "login": "jhowarth",
+            "id": 70012,
+            "node_id": "MDQ6VXNlcjcwMDEy",
+            "gravatar_id": "",
+            "url": "https://api.github.com/users/jhowarth",
+            "type": "User",
+            "site_admin": false
+          },
+          "repo": {
+            "id": 350525799,
+            "node_id": "MDEwOlJlcG9zaXRvcnkzNTA1MjU3OTk=",
+            "name": "itsdangerous-rs",
+            "full_name": "jhowarth/itsdangerous-rs",
+            "private": false,
+            "owner": {
+              "login": "jhowarth",
+              "id": 70012,
+              "node_id": "MDQ6VXNlcjcwMDEy",
+              "gravatar_id": "",
+              "url": "https://api.github.com/users/jhowarth",
+              "type": "User",
+              "site_admin": false
+            },
+            "description": "A rust port of itsdangerous! ",
+            "fork": true,
+            "url": "https://api.github.com/repos/jhowarth/itsdangerous-rs",
+            "created_at": "2021-03-23T00:04:18Z",
+            "updated_at": "2021-03-23T00:04:19Z",
+            "pushed_at": "2021-03-23T00:04:40Z",
+            "homepage": null,
+            "size": 46,
+            "stargazers_count": 0,
+            "watchers_count": 0,
+            "language": null,
+            "has_issues": false,
+            "has_projects": true,
+            "has_downloads": true,
+            "has_wiki": true,
+            "has_pages": false,
+            "has_discussions": false,
+            "forks_count": 0,
+            "archived": false,
+            "disabled": false,
+            "open_issues_count": 0,
+            "license": {
+              "key": "mit",
+              "name": "MIT License",
+              "spdx_id": "MIT",
+              "url": "https://api.github.com/licenses/mit",
+              "node_id": "MDc6TGljZW5zZTEz"
+            },
+            "allow_forking": true,
+            "is_template": false,
+            "web_commit_signoff_required": false,
+            "topics": [],
+            "visibility": "public",
+            "forks": 0,
+            "open_issues": 0,
+            "watchers": 0,
+            "default_branch": "master"
+          }
+        },
+        "base": {
+          "label": "discord:master",
+          "ref": "master",
+          "sha": "ad8ac6ded7ee297f7d9d3c97449500242e6a97ee",
+          "user": {
+            "login": "discord",
+            "id": 1965106,
+            "node_id": "MDEyOk9yZ2FuaXphdGlvbjE5NjUxMDY=",
+            "gravatar_id": "",
+            "url": "https://api.github.com/users/discord",
+            "type": "Organization",
+            "site_admin": false
+          },
+          "repo": {
+            "id": 191477888,
+            "node_id": "MDEwOlJlcG9zaXRvcnkxOTE0Nzc4ODg=",
+            "name": "itsdangerous-rs",
+            "full_name": "discord/itsdangerous-rs",
+            "private": false,
+            "owner": {
+              "login": "discord",
+              "id": 1965106,
+              "node_id": "MDEyOk9yZ2FuaXphdGlvbjE5NjUxMDY=",
+              "gravatar_id": "",
+              "url": "https://api.github.com/users/discord",
+              "type": "Organization",
+              "site_admin": false
+            },
+            "description": "A rust port of itsdangerous! ",
+            "fork": false,
+            "url": "https://api.github.com/repos/discord/itsdangerous-rs",
+            "created_at": "2019-06-12T01:51:15Z",
+            "updated_at": "2023-03-08T09:49:25Z",
+            "pushed_at": "2022-03-22T22:49:36Z",
+            "homepage": null,
+            "size": 50,
+            "stargazers_count": 68,
+            "watchers_count": 68,
+            "language": "Rust",
+            "has_issues": true,
+            "has_projects": true,
+            "has_downloads": true,
+            "has_wiki": true,
+            "has_pages": false,
+            "has_discussions": false,
+            "forks_count": 18,
+            "archived": false,
+            "disabled": false,
+            "open_issues_count": 3,
+            "license": {
+              "key": "mit",
+              "name": "MIT License",
+              "spdx_id": "MIT",
+              "url": "https://api.github.com/licenses/mit",
+              "node_id": "MDc6TGljZW5zZTEz"
+            },
+            "allow_forking": true,
+            "is_template": false,
+            "web_commit_signoff_required": false,
+            "topics": [],
+            "visibility": "public",
+            "forks": 18,
+            "open_issues": 3,
+            "watchers": 68,
+            "default_branch": "master"
+          }
+        },
+        "_links": {
+          "self": {
+            "href": "https://api.github.com/repos/discord/itsdangerous-rs/pulls/6"
+          },
+          "html": {
+            "href": "https://github.com/discord/itsdangerous-rs/pull/6"
+          },
+          "issue": {
+            "href": "https://api.github.com/repos/discord/itsdangerous-rs/issues/6"
+          },
+          "comments": {
+            "href": "https://api.github.com/repos/discord/itsdangerous-rs/issues/6/comments"
+          },
+          "review_comments": {
+            "href": "https://api.github.com/repos/discord/itsdangerous-rs/pulls/6/comments"
+          },
+          "review_comment": {
+            "href": "https://api.github.com/repos/discord/itsdangerous-rs/pulls/comments{/number}"
+          },
+          "commits": {
+            "href": "https://api.github.com/repos/discord/itsdangerous-rs/pulls/6/commits"
+          },
+          "statuses": {
+            "href": "https://api.github.com/repos/discord/itsdangerous-rs/statuses/55c4b675e8fb29f9eabc436bf7865c6429cc6a31"
+          }
+        },
+        "author_association": "NONE",
+        "auto_merge": null,
+        "active_lock_reason": null
+      },
+      {
+        "url": "https://api.github.com/repos/discord/itsdangerous-rs/pulls/5",
+        "id": 290875390,
+        "node_id": "MDExOlB1bGxSZXF1ZXN0MjkwODc1Mzkw",
+        "number": 5,
+        "state": "open",
+        "locked": false,
+        "title": "[wip] doc coverage for 0.4.0",
+        "user": {
+          "login": "jhgg",
+          "id": 5489149,
+          "node_id": "MDQ6VXNlcjU0ODkxNDk=",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/jhgg",
+          "type": "User",
+          "site_admin": false
+        },
+        "body": "- [ ] `serializer_traits::Encoding`\r\n- [ ] `serializer_traits::Serializer`\r\n- [ ] `serializer_traits::TimedSerializer`\r\n- [ ] `UnverifiedValue::from_str`\r\n- [ ] `UnverifiedValue::unverified_value`\r\n- [ ] `UnverifiedValue::verify`\r\n- [ ] `UnverifiedTimedValue`\r\n- [ ] `UnverifiedTimedValue::from_str`\r\n- [ ] `UnverifiedTimedValue::unverified_value`\r\n- [ ] `UnverifiedTimedValue::unverified_timestamp`\r\n- [ ] `UnverifiedTimedValue::verify`\r\n- [ ] `serializer_with_signer`\r\n- [ ] `timed_serializer_with_signer`\r\n- [ ] `SignerBuilder`\r\n- [ ] `NullEncoding`\r\n- [ ] `TimestampExpired`\r\n- [ ] `URLSafeEncoding`\r\n- [ ] `PayloadError`\r\n- [ ] `AsSigner`\r\n- [ ] `Encoding`\r\n- [ ] `IntoTimestampSigner`\r\n- [ ] `Serializer`\r\n- [ ] `TimedSerializer`\r\n\r\n\r\n\r\n",
+        "created_at": "2019-06-23T09:16:52Z",
+        "updated_at": "2019-06-23T09:17:03Z",
+        "closed_at": null,
+        "merged_at": null,
+        "merge_commit_sha": "b9948e59de4735120dffa957d44a4659c020bfe9",
+        "assignee": null,
+        "assignees": [],
+        "requested_reviewers": [],
+        "requested_teams": [],
+        "labels": [],
+        "milestone": {
+          "url": "https://api.github.com/repos/discord/itsdangerous-rs/milestones/1",
+          "id": 4433174,
+          "node_id": "MDk6TWlsZXN0b25lNDQzMzE3NA==",
+          "number": 1,
+          "title": "v0.4.0",
+          "description": "Prerequisites to releasing v0.4.0",
+          "creator": {
+            "login": "jhgg",
+            "id": 5489149,
+            "node_id": "MDQ6VXNlcjU0ODkxNDk=",
+            "gravatar_id": "",
+            "url": "https://api.github.com/users/jhgg",
+            "type": "User",
+            "site_admin": false
+          },
+          "open_issues": 1,
+          "closed_issues": 1,
+          "state": "open",
+          "created_at": "2019-06-23T09:08:20Z",
+          "updated_at": "2019-06-23T09:17:03Z",
+          "due_on": null,
+          "closed_at": null
+        },
+        "draft": true,
+        "head": {
+          "label": "discord:chore/0.4.0/docs",
+          "ref": "chore/0.4.0/docs",
+          "sha": "4877332cbf33bced278284c9e9b6402dd57745a3",
+          "user": {
+            "login": "discord",
+            "id": 1965106,
+            "node_id": "MDEyOk9yZ2FuaXphdGlvbjE5NjUxMDY=",
+            "gravatar_id": "",
+            "url": "https://api.github.com/users/discord",
+            "type": "Organization",
+            "site_admin": false
+          },
+          "repo": {
+            "id": 191477888,
+            "node_id": "MDEwOlJlcG9zaXRvcnkxOTE0Nzc4ODg=",
+            "name": "itsdangerous-rs",
+            "full_name": "discord/itsdangerous-rs",
+            "private": false,
+            "owner": {
+              "login": "discord",
+              "id": 1965106,
+              "node_id": "MDEyOk9yZ2FuaXphdGlvbjE5NjUxMDY=",
+              "gravatar_id": "",
+              "url": "https://api.github.com/users/discord",
+              "type": "Organization",
+              "site_admin": false
+            },
+            "description": "A rust port of itsdangerous! ",
+            "fork": false,
+            "url": "https://api.github.com/repos/discord/itsdangerous-rs",
+            "created_at": "2019-06-12T01:51:15Z",
+            "updated_at": "2023-03-08T09:49:25Z",
+            "pushed_at": "2022-03-22T22:49:36Z",
+            "homepage": null,
+            "size": 50,
+            "stargazers_count": 68,
+            "watchers_count": 68,
+            "language": "Rust",
+            "has_issues": true,
+            "has_projects": true,
+            "has_downloads": true,
+            "has_wiki": true,
+            "has_pages": false,
+            "has_discussions": false,
+            "forks_count": 18,
+            "archived": false,
+            "disabled": false,
+            "open_issues_count": 3,
+            "license": {
+              "key": "mit",
+              "name": "MIT License",
+              "spdx_id": "MIT",
+              "url": "https://api.github.com/licenses/mit",
+              "node_id": "MDc6TGljZW5zZTEz"
+            },
+            "allow_forking": true,
+            "is_template": false,
+            "web_commit_signoff_required": false,
+            "topics": [],
+            "visibility": "public",
+            "forks": 18,
+            "open_issues": 3,
+            "watchers": 68,
+            "default_branch": "master"
+          }
+        },
+        "base": {
+          "label": "discord:master",
+          "ref": "master",
+          "sha": "cd211186c11a398b23f606b921d87f2aaffe4d77",
+          "user": {
+            "login": "discord",
+            "id": 1965106,
+            "node_id": "MDEyOk9yZ2FuaXphdGlvbjE5NjUxMDY=",
+            "gravatar_id": "",
+            "url": "https://api.github.com/users/discord",
+            "type": "Organization",
+            "site_admin": false
+          },
+          "repo": {
+            "id": 191477888,
+            "node_id": "MDEwOlJlcG9zaXRvcnkxOTE0Nzc4ODg=",
+            "name": "itsdangerous-rs",
+            "full_name": "discord/itsdangerous-rs",
+            "private": false,
+            "owner": {
+              "login": "discord",
+              "id": 1965106,
+              "node_id": "MDEyOk9yZ2FuaXphdGlvbjE5NjUxMDY=",
+              "gravatar_id": "",
+              "url": "https://api.github.com/users/discord",
+              "type": "Organization",
+              "site_admin": false
+            },
+            "description": "A rust port of itsdangerous! ",
+            "fork": false,
+            "url": "https://api.github.com/repos/discord/itsdangerous-rs",
+            "created_at": "2019-06-12T01:51:15Z",
+            "updated_at": "2023-03-08T09:49:25Z",
+            "pushed_at": "2022-03-22T22:49:36Z",
+            "homepage": null,
+            "size": 50,
+            "stargazers_count": 68,
+            "watchers_count": 68,
+            "language": "Rust",
+            "has_issues": true,
+            "has_projects": true,
+            "has_downloads": true,
+            "has_wiki": true,
+            "has_pages": false,
+            "has_discussions": false,
+            "forks_count": 18,
+            "archived": false,
+            "disabled": false,
+            "open_issues_count": 3,
+            "license": {
+              "key": "mit",
+              "name": "MIT License",
+              "spdx_id": "MIT",
+              "url": "https://api.github.com/licenses/mit",
+              "node_id": "MDc6TGljZW5zZTEz"
+            },
+            "allow_forking": true,
+            "is_template": false,
+            "web_commit_signoff_required": false,
+            "topics": [],
+            "visibility": "public",
+            "forks": 18,
+            "open_issues": 3,
+            "watchers": 68,
+            "default_branch": "master"
+          }
+        },
+        "_links": {
+          "self": {
+            "href": "https://api.github.com/repos/discord/itsdangerous-rs/pulls/5"
+          },
+          "html": {
+            "href": "https://github.com/discord/itsdangerous-rs/pull/5"
+          },
+          "issue": {
+            "href": "https://api.github.com/repos/discord/itsdangerous-rs/issues/5"
+          },
+          "comments": {
+            "href": "https://api.github.com/repos/discord/itsdangerous-rs/issues/5/comments"
+          },
+          "review_comments": {
+            "href": "https://api.github.com/repos/discord/itsdangerous-rs/pulls/5/comments"
+          },
+          "review_comment": {
+            "href": "https://api.github.com/repos/discord/itsdangerous-rs/pulls/comments{/number}"
+          },
+          "commits": {
+            "href": "https://api.github.com/repos/discord/itsdangerous-rs/pulls/5/commits"
+          },
+          "statuses": {
+            "href": "https://api.github.com/repos/discord/itsdangerous-rs/statuses/4877332cbf33bced278284c9e9b6402dd57745a3"
+          }
+        },
+        "author_association": "MEMBER",
+        "auto_merge": null,
+        "active_lock_reason": null
+      }
+    ]
   }
 }
