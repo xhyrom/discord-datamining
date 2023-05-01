@@ -331,54 +331,7 @@
         ]
       }
     ],
-    "releases": [
-      {
-        "url": "https://api.github.com/repos/discord/react-native-vision-camera/releases/77823021",
-        "id": 77823021,
-        "author": {
-          "login": "chromakode",
-          "id": 16893,
-          "node_id": "MDQ6VXNlcjE2ODkz",
-          "gravatar_id": "",
-          "url": "https://api.github.com/users/chromakode",
-          "type": "User",
-          "site_admin": false
-        },
-        "node_id": "RE_kwDOIBtGOc4Eo3wt",
-        "tag_name": "2.14.2-pkg",
-        "target_commitish": "main",
-        "name": "2.14.2-discord-pkg",
-        "draft": false,
-        "prerelease": false,
-        "created_at": "2022-09-21T22:39:08Z",
-        "published_at": "2022-09-21T22:39:58Z",
-        "assets": [],
-        "body": "Demo publishing to Github Packages\r\n\r\n"
-      },
-      {
-        "url": "https://api.github.com/repos/discord/react-native-vision-camera/releases/77660833",
-        "id": 77660833,
-        "author": {
-          "login": "Kyle-Mendes",
-          "id": 6400039,
-          "node_id": "MDQ6VXNlcjY0MDAwMzk=",
-          "gravatar_id": "",
-          "url": "https://api.github.com/users/Kyle-Mendes",
-          "type": "User",
-          "site_admin": false
-        },
-        "node_id": "RE_kwDOIBtGOc4EoQKh",
-        "tag_name": "2.14.2",
-        "target_commitish": "main",
-        "name": "2.14.2-discord",
-        "draft": false,
-        "prerelease": false,
-        "created_at": "2022-09-20T13:37:28Z",
-        "published_at": "2022-09-20T13:51:51Z",
-        "assets": [],
-        "body": "Updates the logic for selecting a version number"
-      }
-    ],
+    "releases": [],
     "issues": [
       {
         "url": "https://api.github.com/repos/discord/react-native-vision-camera/issues/2",
