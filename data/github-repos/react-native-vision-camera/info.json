@@ -331,105 +331,55 @@
         ]
       }
     ],
-    "releases": [],
-    "issues": [
+    "releases": [
       {
-        "url": "https://api.github.com/repos/discord/react-native-vision-camera/issues/2",
-        "id": 1635659814,
-        "node_id": "PR_kwDOIBtGOc5Moz4L",
-        "number": 2,
-        "title": "Fix Rails::TZInfo::Timezone.get() relative path traversal vulnerability allows loading of arbitrary files",
-        "user": {
-          "login": "iot-defcon",
-          "id": 118327710,
-          "node_id": "U_kgDOBw2Jng",
+        "url": "https://api.github.com/repos/discord/react-native-vision-camera/releases/77823021",
+        "id": 77823021,
+        "author": {
+          "login": "chromakode",
+          "id": 16893,
+          "node_id": "MDQ6VXNlcjE2ODkz",
           "gravatar_id": "",
-          "url": "https://api.github.com/users/iot-defcon",
+          "url": "https://api.github.com/users/chromakode",
           "type": "User",
           "site_admin": false
         },
-        "labels": [],
-        "state": "open",
-        "locked": false,
-        "assignee": null,
-        "assignees": [],
-        "milestone": null,
-        "comments": 0,
-        "created_at": "2023-03-22T12:16:46Z",
-        "updated_at": "2023-03-22T12:16:46Z",
-        "closed_at": null,
-        "author_association": "NONE",
-        "active_lock_reason": null,
+        "node_id": "RE_kwDOIBtGOc4Eo3wt",
+        "tag_name": "2.14.2-pkg",
+        "target_commitish": "main",
+        "name": "2.14.2-discord-pkg",
         "draft": false,
-        "pull_request": {
-          "url": "https://api.github.com/repos/discord/react-native-vision-camera/pulls/2",
-          "merged_at": null
-        },
-        "body": "<!--\r\n                    ❤️ Thank you for your contribution! ❤️\r\n              Make sure you have read the Contributing Guidelines:\r\n  https://github.com/mrousavy/react-native-vision-camera/blob/main/CONTRIBUTING.md\r\n-->\r\n\r\n## Changes Patches\r\nTZInfo is a Ruby library that provides access to time zone data and allows times to be converted using time zone rules. Versions prior to 0.36.1, as well as those prior to 1.2.10 when used with the Ruby data source tzinfo-data, are vulnerable to relative path traversal. With the Ruby data source, time zones are defined in Ruby files. There is one file per time zone. Time zone files are loaded with require on demand. In the affected versions, TZInfo::Timezone.get fails to validate time zone identifiers correctly, allowing a new line character within the identifier. With Ruby version 1.9.3 and later, TZInfo::Timezone.get can be made to load unintended files with require, executing them within the Ruby process. Versions 0.3.61 and 1.2.10 include fixes to correctly validate time zone identifiers. Versions 2.0.0 and later are not vulnerable. Version 0.3.61 can still load arbitrary files from the Ruby load path if their name follows the rules for a valid time zone identifier and the file has a prefix of tzinfo/definition within a directory in the load path. Applications should ensure that untrusted files are not placed in a directory on the load path. As a workaround, the time zone identifier can be validated before passing to TZInfo::Timezone.get by ensuring it matches the regular expression \\A[A-Za-z0-9+\\-_]+(?:\\/[A-Za-z0-9+\\-_]+)*\\z.\r\n\r\n**Description Overview:**\r\nAffected of this project are vulnerable to Directory Traversal. `TZInfo::Timezone.get` fails to validate time zone identifiers correctly, allowing a new line character within the identifier. With Ruby version 1.9.3 and later, TZInfo::Timezone.get can be made to load unintended files with require, executing them within the Ruby process. This could be exploited in, for example, a Ruby on Rails application using a vulnerable version of tzinfo, that allows file uploads and has a time zone selector that accepts arbitrary time zone identifiers. With the Ruby data source (the tzinfo-data gem for tzinfo version 1.0.0 and later and built-in to earlier versions), time zones are defined in Ruby files. There is one file per time zone. Time zone files are loaded with require on demand. In the affected versions, TZInfo::Timezone.get fails to validate time zone identifiers correctly, allowing a new line character within the identifier. With Ruby version 1.9.3 and later, TZInfo::Timezone.get can be made to load unintended files with require, executing them within the Ruby process.\r\n\r\n**Proof On Concepts:**\r\nvulnerable with version 1.2.9, you can run the following to load a file with path /tmp/payload.rb:\r\n```rb\r\nTZInfo::Timezone.get(\"foo\\n/../../../../../../../../../../../../../../../../tmp/payload\")\r\n```\r\nThe exact number of parent directory traversals needed will vary depending on the location of the tzinfo-data gem. TZInfo versions 1.2.6 to 1.2.9 can be made to load files from outside of the Ruby load path. Versions up to and including 1.2.5 can only be made to load files from directories within the load path. This could be exploited in, for example, a Ruby on Rails application using tzinfo version 1.2.9, that allows file uploads and has a time zone selector that accepts arbitrary time zone identifiers. The CVSS score and severity have been set on this basis.\r\n\r\n## Workarounds\r\nAs a workaround, the time zone identifier can be validated before passing to `TZInfo::Timezone.get` by ensuring it matches the regular expression `\\A[A-Za-z0-9+\\-_]+(?:\\/[A-Za-z0-9+\\-_]+)*\\z`.\r\n```rb\r\nraise InvalidTimezoneIdentifier, 'Invalid identifier' if identifier !~ /^[A-Za-z0-9\\+\\-_]+(\\/[A-Za-z0-9\\+\\-_]+)*$/\r\nassert_raises(InvalidTimezoneIdentifier) { Timezone.get('../Definitions/UTC') }\r\n```\r\n```rb\r\n      raise InvalidTimezoneIdentifier, 'Invalid identifier' if identifier !~ /\\A[A-Za-z0-9\\+\\-_]+(\\/[A-Za-z0-9\\+\\-_]+)*\\z/\r\n def test_load_timezone_info_directory_traversal\r\n    test_data_depth = TZINFO_TEST_DATA_DIR.scan('/').size\r\n    payload_path = File.join(TESTS_DIR, 'assets', 'payload')\r\n    assert_raises(InvalidTimezoneIdentifier) { Timezone.get(\"foo\\n#{'/..' * (test_data_depth + 4)}#{payload_path}\") }\r\n  end\r\n```\r\n\r\n## Impact\r\nA flaw was found in` rubygem-tzinfo`. When using the Timezone.get function, it fails to validate time zone identifiers correctly, allowing a new line character input within the identifier. This flaw allows an attacker to use the new line character and write any code, which will be executed within the Ruby process.\r\n\r\nCVE-2022-31163\r\nCVSS:3.1/AV:N/AC:H/PR:N/UI:R/S:U/C:H/I:H/A:H\r\nCWE-22\r\nCWE-23\r\n",
-        "reactions": {
-          "url": "https://api.github.com/repos/discord/react-native-vision-camera/issues/2/reactions",
-          "total_count": 0,
-          "+1": 0,
-          "-1": 0,
-          "laugh": 0,
-          "hooray": 0,
-          "confused": 0,
-          "heart": 0,
-          "rocket": 0,
-          "eyes": 0
-        },
-        "performed_via_github_app": null,
-        "state_reason": null
+        "prerelease": false,
+        "created_at": "2022-09-21T22:39:08Z",
+        "published_at": "2022-09-21T22:39:58Z",
+        "assets": [],
+        "body": "Demo publishing to Github Packages\r\n\r\n"
       },
       {
-        "url": "https://api.github.com/repos/discord/react-native-vision-camera/issues/1",
-        "id": 1635623572,
-        "node_id": "PR_kwDOIBtGOc5Mor28",
-        "number": 1,
-        "title": "Fix Missing error for XML documents with multiple root element nodes",
-        "user": {
-          "login": "iot-defcon",
-          "id": 118327710,
-          "node_id": "U_kgDOBw2Jng",
+        "url": "https://api.github.com/repos/discord/react-native-vision-camera/releases/77660833",
+        "id": 77660833,
+        "author": {
+          "login": "Kyle-Mendes",
+          "id": 6400039,
+          "node_id": "MDQ6VXNlcjY0MDAwMzk=",
           "gravatar_id": "",
-          "url": "https://api.github.com/users/iot-defcon",
+          "url": "https://api.github.com/users/Kyle-Mendes",
           "type": "User",
           "site_admin": false
         },
-        "labels": [],
-        "state": "open",
-        "locked": false,
-        "assignee": null,
-        "assignees": [],
-        "milestone": null,
-        "comments": 0,
-        "created_at": "2023-03-22T11:57:13Z",
-        "updated_at": "2023-03-22T11:57:13Z",
-        "closed_at": null,
-        "author_association": "NONE",
-        "active_lock_reason": null,
+        "node_id": "RE_kwDOIBtGOc4EoQKh",
+        "tag_name": "2.14.2",
+        "target_commitish": "main",
+        "name": "2.14.2-discord",
         "draft": false,
-        "pull_request": {
-          "url": "https://api.github.com/repos/discord/react-native-vision-camera/pulls/1",
-          "merged_at": null
-        },
-        "body": "<!--\r\n                    ❤️ Thank you for your contribution! ❤️\r\n              Make sure you have read the Contributing Guidelines:\r\n  https://github.com/mrousavy/react-native-vision-camera/blob/main/CONTRIBUTING.md\r\n-->\r\n\r\n\r\n## Changes Patches\r\nUpdate to `@xmldom/xmldom@~0.7.7`, `@xmldom/xmldom@~0.8.4` (dist-tag `latest`) or `@xmldom/xmldom@>=0.9.0-beta.4` (dist-tag `next`).\r\n\r\nxmldom parses XML that is not well-formed because it contains multiple top level elements, and adds all root nodes to the `childNodes` collection of the `Document`, without reporting any error or throwing. The children of a DocumentFragment node are zero or more nodes representing the tops of any sub-trees defining the structure of the document. DocumentFragment nodes do not need to be well-formed XML documents (although they do need to follow the rules imposed upon well-formed XML parsed entities, which can have multiple top nodes). For example, a DocumentFragment might have only one child and that child node could be a Text node. Such a structure model represents neither an HTML document nor a well-formed XML document.\r\n\r\nThe following code:\r\n```js\r\nvar DOMParser = require('xmldom').DOMParser;\r\nvar xmlData = '<?xml version=\"1.0\" encoding=\"UTF-8\"?>\\n' +\r\n'<root>\\n' +\r\n'  <branch girth=\"large\">\\n' +\r\n'    <leaf color=\"green\" />\\n' +\r\n'  </branch>\\n' +\r\n'</root>\\n' +\r\n'<root>\\n' +\r\n'  <branch girth=\"twig\">\\n' +\r\n'    <leaf color=\"gold\" />\\n' +\r\n'  </branch>\\n' +\r\n'</root>\\n';\r\nvar xmlDOM = new DOMParser().parseFromString(xmlData);\r\nconsole.log(xmlDOM.toString());\r\n```\r\nProduces the following output:\r\n```\r\n<?xml version=\"1.0\" encoding=\"UTF-8\"?><root>\r\n  <branch girth=\"large\">\r\n    <leaf color=\"green\"/>\r\n  </branch>\r\n</root>\r\n<root>\r\n  <branch girth=\"twig\">\r\n    <leaf color=\"gold\"/>\r\n  </branch>\r\n</root>\r\n```\r\nIn contrast to this, libxmljs — which relies on libxml2 — refuses to parse such documents, opting to throw an error instead:\r\n```xml\r\nvar xml = require('libxmljs');\r\nvar xmlDoc = xml.parseXmlString(xmlData);\r\nError: Extra content at the end of the document\r\n```\r\nFirefox behaves in a similar way, and refuses to parse the document:\r\n```xml\r\nconsole.log(\r\n  new XMLSerializer().serializeToString(\r\n    new DOMParser().parseFromString(xmlData, 'text/xml')));\r\n```\r\n```\r\n<?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n<?xml-stylesheet href=\"chrome://global/locale/intl.css\" type=\"text/css\"?>\r\n<parsererror xmlns=\"http://www.mozilla.org/newlayout/xml/parsererror.xml\">XML Parsing Error: junk after document element\r\nLocation: about:blank\r\nLine Number 7, Column 1:<sourcetext>&lt;root&gt;\r\n^</sourcetext></parsererror>\r\n```\r\n * I expected the above document to fail to parse in xmldom's DOMParser implementation, but it didn’t. In light of the specs, this seems like it might be a “false-positive” bug. However, I think there is some utility in being able to parse multiple documents in a single stream, if the API can be re-tooled just a bit. More on this below.\r\n * In order to be more compliant with the specs, I think that if more than one root node is present in an XML stream — especially if they appear without corresponding `<?xml?>` declarations — then the DOMParser should, bare-minimum, simply opt to not support such streams, and should raise an error informing the consumer that the given XML stream is invalid.\r\n * Alternatively, if it is desired to keep the ability to parse multiple documents in a single stream — which I think would be useful functionality to retain: the alternative of requiring users to manually split XML documents crammed into a single stream before they can pass them into xmldom seems counter-intuitive to me, as that should be the job of the parser — then perhaps the DOMParser API could be re-tooled to return an array or a list of multiple document objects, each one with a singular root element node (rather than a single document object with multiple root elements, as is the case today), but only in the event that multiple root elements are detected within the input stream. I think that this behavior would help xmldom to be more compliant with the specs, and it would help to prevent consumers from accidentally generating poorly formed XML output from their parsed document objects, since each parsed document object would have only one root node, as the specs indicate ought to be the case.\r\n\r\n## Impact\r\n\r\nCVE-2022-39353\r\nCWE-20\r\nCWE-1288\r\n`CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H`\r\n",
-        "reactions": {
-          "url": "https://api.github.com/repos/discord/react-native-vision-camera/issues/1/reactions",
-          "total_count": 0,
-          "+1": 0,
-          "-1": 0,
-          "laugh": 0,
-          "hooray": 0,
-          "confused": 0,
-          "heart": 0,
-          "rocket": 0,
-          "eyes": 0
-        },
-        "performed_via_github_app": null,
-        "state_reason": null
+        "prerelease": false,
+        "created_at": "2022-09-20T13:37:28Z",
+        "published_at": "2022-09-20T13:51:51Z",
+        "assets": [],
+        "body": "Updates the logic for selecting a version number"
       }
     ],
+    "issues": [],
     "pullRequests": []
   }
 }

@@ -51,32 +51,7 @@
     "triage": false,
     "pull": false
   },
-  "branches": [
-    {
-      "name": "main",
-      "commit": {
-        "sha": "5cfb4cc7db8bb8ebfb2177e6b7a093dd9cb85b06",
-        "url": "https://api.github.com/repos/discord/rabbitmq-amqp1.0-client/commits/5cfb4cc7db8bb8ebfb2177e6b7a093dd9cb85b06"
-      },
-      "protected": false
-    },
-    {
-      "name": "master",
-      "commit": {
-        "sha": "f13e5a067aa4494db16c574dd89f457d76b3a626",
-        "url": "https://api.github.com/repos/discord/rabbitmq-amqp1.0-client/commits/f13e5a067aa4494db16c574dd89f457d76b3a626"
-      },
-      "protected": false
-    },
-    {
-      "name": "v3.7.x",
-      "commit": {
-        "sha": "a0c91229ff3bf2e8c8b77ed14ca3bbf8f80c5dfb",
-        "url": "https://api.github.com/repos/discord/rabbitmq-amqp1.0-client/commits/a0c91229ff3bf2e8c8b77ed14ca3bbf8f80c5dfb"
-      },
-      "protected": false
-    }
-  ],
+  "branches": [],
   "last5": {
     "commits": [
       {
