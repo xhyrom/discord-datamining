@@ -337,7 +337,268 @@
       }
     ],
     "releases": [],
-    "issues": [],
+    "issues": [
+      {
+        "url": "https://api.github.com/repos/discord/discord-api-docs/issues/6126",
+        "id": 1690330698,
+        "node_id": "I_kwDOA0coRs5kwGZK",
+        "number": 6126,
+        "title": "RequestAbortedError [AbortError]: Request aborted",
+        "user": {
+          "login": "qiaokeli111",
+          "id": 39187010,
+          "node_id": "MDQ6VXNlcjM5MTg3MDEw",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/qiaokeli111",
+          "type": "User",
+          "site_admin": false
+        },
+        "labels": [
+          {
+            "id": 349418148,
+            "node_id": "MDU6TGFiZWwzNDk0MTgxNDg=",
+            "url": "https://api.github.com/repos/discord/discord-api-docs/labels/bug",
+            "name": "bug",
+            "color": "ee0701",
+            "default": true,
+            "description": null
+          }
+        ],
+        "state": "closed",
+        "locked": false,
+        "assignee": null,
+        "assignees": [],
+        "milestone": null,
+        "comments": 1,
+        "created_at": "2023-05-01T03:58:39Z",
+        "updated_at": "2023-05-01T03:59:40Z",
+        "closed_at": "2023-05-01T03:59:40Z",
+        "author_association": "NONE",
+        "active_lock_reason": null,
+        "body": "### Description\n\nthis is my code,im sure my token is right,help me plz\r\n\r\nand the error is\r\nD:\\czj\\web3\\learn\\node_modules\\_undici@5.21.2@undici\\lib\\api\\abort-signal.js:10\r\nself.onError(new RequestAbortedError())\r\n^\r\n\r\nRequestAbortedError [AbortError]: Request aborted\r\nat abort (D:\\czj\\web3\\learn\\node_modules\\_undici@5.21.2@undici\\lib\\api\\abort-signal.js:10:18)\r\nat AbortSignal.self.<computed> (D:\\czj\\web3\\learn\\node_modules\\_undici@5.21.2@undici\\lib\\api\\abort-signal.js:29:5)\r\nat AbortSignal.[nodejs.internal.kHybridDispatch] (node:internal/event_target:736:20)\r\nat AbortSignal.dispatchEvent (node:internal/event_target:678:26)\r\nat abortSignal (node:internal/abort_controller:292:10)\r\nat AbortController.abort (node:internal/abort_controller:323:5)\r\nat Timeout.<anonymous> (D:\\czj\\web3\\learn\\node_modules\\_@discordjs_rest@1.7.0@@discordjs\\rest\\dist\\index.js:589:71)\r\nat listOnTimeout (node:internal/timers:559:17)\r\nat processTimers (node:internal/timers:502:7) {\r\ncode: 'UND_ERR_ABORTED'\r\n}\n\n### Steps to Reproduce\n\nconst { Client, Events, GatewayIntentBits,REST, Routes } = require('discord.js');\r\n\r\nconst client = new Client({ intents: [\r\nGatewayIntentBits.Guilds,\r\nGatewayIntentBits.MessageContent,\r\nGatewayIntentBits.GuildMessages\r\n]\r\n});\r\n\r\nclient.on('ready', () => {\r\nconsole.log(`Logged in as ${client.user.tag}!`);\r\n});\r\n\r\nclient.login('MTEwMjE2OTQ4OTI5MTg3MDI0MA.Gs-eiH.Gim7ZM2ConA9q7X-0G6UbwXqtFIFdTszFgYIJY');\n\n### Expected Behavior\n\nit can be right\n\n### Current Behavior\n\nshow error\n\n### Screenshots/Videos\n\n_No response_\n\n### Client and System Information\n\nnode v16.18.0  \"discord.io\": \"^2.5.3\",",
+        "reactions": {
+          "url": "https://api.github.com/repos/discord/discord-api-docs/issues/6126/reactions",
+          "total_count": 0,
+          "+1": 0,
+          "-1": 0,
+          "laugh": 0,
+          "hooray": 0,
+          "confused": 0,
+          "heart": 0,
+          "rocket": 0,
+          "eyes": 0
+        },
+        "performed_via_github_app": null,
+        "state_reason": "completed"
+      },
+      {
+        "url": "https://api.github.com/repos/discord/discord-api-docs/issues/6125",
+        "id": 1689903190,
+        "node_id": "I_kwDOA0coRs5kueBW",
+        "number": 6125,
+        "title": "Free private threads",
+        "user": {
+          "login": "Sanek-Discord",
+          "id": 82448302,
+          "node_id": "MDQ6VXNlcjgyNDQ4MzAy",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/Sanek-Discord",
+          "type": "User",
+          "site_admin": false
+        },
+        "labels": [
+          {
+            "id": 349418148,
+            "node_id": "MDU6TGFiZWwzNDk0MTgxNDg=",
+            "url": "https://api.github.com/repos/discord/discord-api-docs/labels/bug",
+            "name": "bug",
+            "color": "ee0701",
+            "default": true,
+            "description": null
+          }
+        ],
+        "state": "closed",
+        "locked": false,
+        "assignee": null,
+        "assignees": [],
+        "milestone": null,
+        "comments": 1,
+        "created_at": "2023-04-30T12:39:32Z",
+        "updated_at": "2023-04-30T12:42:45Z",
+        "closed_at": "2023-04-30T12:42:45Z",
+        "author_association": "NONE",
+        "active_lock_reason": null,
+        "body": "### Description\n\nUsing the */channels/{channel.id}/threads* endpoint, without specifying the thread type, you can create a private thread without boosts on the server\n\n### Steps to Reproduce\n\nMake a POST request to the */channels/{channel.id}/threads* endpoint and specify {\"name\": \"Name\"} in the body\n\n### Expected Behavior\n\nCreated a public thread with my arguments\n\n### Current Behavior\n\nCreated a private thread without specifying a type\n\n### Screenshots/Videos\n\n![Снимок экрана (230)](https://user-images.githubusercontent.com/82448302/235353369-171187f9-d30b-419b-9abf-ea3e0940b89f.png)\n\n### Client and System Information\n\nI am using my own library, windows 11 22H2, google chrome web browser",
+        "reactions": {
+          "url": "https://api.github.com/repos/discord/discord-api-docs/issues/6125/reactions",
+          "total_count": 0,
+          "+1": 0,
+          "-1": 0,
+          "laugh": 0,
+          "hooray": 0,
+          "confused": 0,
+          "heart": 0,
+          "rocket": 0,
+          "eyes": 0
+        },
+        "performed_via_github_app": null,
+        "state_reason": "completed"
+      },
+      {
+        "url": "https://api.github.com/repos/discord/discord-api-docs/issues/6122",
+        "id": 1689570126,
+        "node_id": "I_kwDOA0coRs5ktMtO",
+        "number": 6122,
+        "title": "Message content is corrupted if the content contains long Devanagari text",
+        "user": {
+          "login": "gouenji-shuuya",
+          "id": 65014251,
+          "node_id": "MDQ6VXNlcjY1MDE0MjUx",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/gouenji-shuuya",
+          "type": "User",
+          "site_admin": false
+        },
+        "labels": [
+          {
+            "id": 349418148,
+            "node_id": "MDU6TGFiZWwzNDk0MTgxNDg=",
+            "url": "https://api.github.com/repos/discord/discord-api-docs/labels/bug",
+            "name": "bug",
+            "color": "ee0701",
+            "default": true,
+            "description": null
+          }
+        ],
+        "state": "open",
+        "locked": false,
+        "assignee": null,
+        "assignees": [],
+        "milestone": null,
+        "comments": 0,
+        "created_at": "2023-04-29T13:59:24Z",
+        "updated_at": "2023-04-29T13:59:24Z",
+        "closed_at": null,
+        "author_association": "NONE",
+        "active_lock_reason": null,
+        "body": "### Description\n\nLong Devanagari text gets corrupted in Discord (all maatraas get clipped off and it renders the text useless). This happens on all clients for all users.\r\n\r\nThe message content (or embed description) sent is not the same as the message content (or embed description) received.\r\n\r\n[Earlier reported in ticket IDs 17294009 (Oct 2021), 28421140 (Sep 2022).]\n\n### Steps to Reproduce\n\nSend the following message:\r\n\r\n<details>\r\n<summary>Example 1</summary>\r\n\r\nअच्युतं केशवं रामनारायणं कृष्णदामोदरं वासुदेवं हरिम् ।\r\nश्रीधरं माधवं गोपिकावल्लभं जानकीनायकं रामचन्द्रं भजे ॥ १॥\r\n\r\nअच्युतं केशवं सत्यभामाधवं माधवं श्रीधरं राधिकाराधितम् ।\r\nइन्दिरामन्दिरं चेतसा सुन्दरं देवकीनन्दनं नन्दनं सन्दधे ॥ २॥\r\n\r\nविष्णवे जिष्णवे शङ्खिने चक्रिणे रुक्मिणिऱागिणे जानकीजानये ।\r\nवल्लवीवल्लभायाऽर्चितायात्मने कंसविध्वंसिने वंशिने ते नमः ॥ ३॥\r\n\r\nकृष्ण गोविन्द हे राम नारायण श्रीपते वासुदेवाजित श्रीनिधे ।\r\nअच्युतानन्त हे माधवाधोक्षज द्वारकानायक द्रौपदीरक्षक ॥ ४॥\r\n\r\nराक्षसक्षोभितः सीतया शोभितो दण्डकारण्यभूपुण्यताकारणः ।\r\nलक्ष्मणेनान्वितो वानरैः सेवितोऽगस्त्यसम्पूजितो राघवः पातु माम् ॥ ५॥\r\n\r\nधेनुकारिष्टकोऽनिष्टकृद्द्वेषिणां केशिहा कंसहृद्वंशिकावादकः ।\r\nपूतनाकोपकः सूरजाखेलनो बालगोपालकः पातु माम् सर्वदा ॥ ६॥\r\n\r\nविद्युदुद्योतवत्प्रस्फुरद्वाससं प्रावृडम्भोदवत्प्रोल्लसद्विग्रहम् ।\r\nवन्यया मालया शोभितोरःस्थलं लोहिताङ्घ्रिद्वयं वारिजाक्षं भजे ॥ ७॥\r\n\r\nकुञ्चितैः कुन्तलैर्भ्राजमानाननं रत्नमौलिं लसत्कुण्डलं गण्डयोः ।\r\nहारकेयूरकं कङ्कणप्रोज्ज्वलं किङ्किणीमञ्जुलं श्यामलं तं भजे ॥ ८॥\r\n\r\nअच्युतस्याष्टकं यः पठेदिष्टदं प्रेमतः प्रत्यहं पूरुषः सस्पृहम् ।\r\nवृत्ततः सुन्दरं कर्तृ विश्वम्भरस्तस्य वश्यो हरिर्जायते सत्वरम् ॥ ९॥\r\n\r\n॥ इति श्रीशङ्कराचार्यविरचितमच्युताष्टकं सम्पूर्णम् ॥\r\n\r\n</details>\r\n\r\n\r\n<details>\r\n<summary>Example 2</summary>\r\n\r\n(This is from the [Wikipedia page of India in Hindi](https://hi.wikipedia.org/wiki/भारत). My bot fetches the first paragraph, which is the following, to display in an embed's description.)\r\n\r\nभारत (आधिकारिक नाम: भारत गणराज्य, अंग्रेज़ी: Republic of India) दक्षिण एशिया में स्थित भारतीय उपमहाद्वीप का सबसे बड़ा देश है। भारत भौगोलिक दृष्टि से विश्व का सातवाँ सबसे बड़ा देश है, जबकि जनसंख्या के दृष्टिकोण से चीन के बाद दूसरा सबसे बड़ा देश है। भारत के पश्चिम में पाकिस्तान, उत्तर-पूर्व में चीन (तिब्बत), नेपाल और भूटान, पूर्व में बांग्लादेश और म्यान्मार स्थित हैं। भारतीय महासागर में इसके दक्षिण पश्चिम में मालदीव, दक्षिण में श्रीलंका और दक्षिण-पूर्व में इंडोनेशिया से भारत की सामुद्रिक सीमा लगती है। इसके उत्तर में हिमालय पर्वत तथा दक्षिण में भारतीय महासागर स्थित है। दक्षिण-पूर्व में बंगाल की खाड़ी तथा पश्चिम में अरब सागर है।\r\n\r\n</details>\n\n### Expected Behavior\n\nThe message content received is the same.\n\n### Current Behavior\n\nThe message content received is corrupted. Checked by fetching the message using ID and seeing the content.\r\n\r\n<details>\r\n<summary>Example 1</summary>\r\n\r\nअच्युतं केशवं रामनारायणं कृष्णदामोदरं वासुदेवं हरिम् ।\r\nश्रीधरं माधवं गोपिकावल्लभं जानकीनायकं रामचन्द्रं भजे ॥ १॥\r\n\r\nअच्युतं केशवं सत्यभामाधवं माधवं श्रीधरं राधिकाराधितम् ।\r\nइन्दिरामन्दिरं चेतसा सुन्दरं देवकीनन्दनं नन्दनं सन्दधे ॥ २॥\r\n\r\nविष्णवे जिष्णवे शङ्खिने चक्रिणे रुक्मिणिऱागिणे जानकीजानये ।\r\nवल्लवीवल्लभायाऽर्चितायात्मने कंसविध्वंसिने वंशिने ते नमः ॥ ३॥\r\n\r\nकृष्ण गोविन्द हे राम नारायण श्रीपते वासुदेवाजित श्रीनिधे ।\r\nअच्युतानन्त हे मधवधकषज दवरकनयक दरपदरकषक ॥ ४॥\r\n\r\nरकषसकषभत सतय शभत दणडकरणयभपणयतकरण ।\r\nलकषमणननवत वनर सवतऽगसतयसमपजत रघव पत मम ॥ ५॥\r\n\r\nधनकरषटकऽनषटकददवषण कशह कसहदवशकवदक ।\r\nपतनकपक सरजखलन बलगपलक पत मम सरवद ॥ ६॥\r\n\r\nवदयददयतवतपरसफरदवसस परवडमभदवतपरललसदवगरहम ।\r\nवनयय मलय शभतरसथल लहतङघरदवय वरजकष भज ॥ ७॥\r\n\r\nकञचत कनतलरभरजमननन रतनमल लसतकणडल गणडय ।\r\nहरकयरक कङकणपरजजवल कङकणमञजल शयमल त भज ॥ ८॥\r\n\r\nअचयतसयषटक य पठदषटद परमत परतयह परष ससपहम ।\r\nवततत सनदर करत वशवमभरसतसय वशय हररजयत सतवरम ॥ ९॥\r\n\r\n॥ इत शरशङकरचरयवरचतमचयतषटक समपरणम ॥\r\n\r\n</details>\r\n\r\n\r\n<details>\r\n<summary>Example 2</summary>\r\n\r\nThe embed's description consists of the following:\r\n\r\nभारत (आधिकारिक नाम: भारत गणराज्य, अंग्रेज़ी: Republic of India) दक्षिण एशिया में स्थित भारतीय उपमहाद्वीप का सबसे बड़ा देश है। भारत भौगोलिक दृष्टि से विश्व का सातवाँ सबसे बड़ा देश है, जबकि जनसंख्या के दृष्टिकोण से चीन के बाद दूसरा सबसे बड़ा देश है। भारत के पश्चिम में पाकिस्तान, उत्तर-पूर्व में चीन (तिब्बत), नेपाल और भूटान, पूर्व में बांग्लादेश और म्यान्मार स्थित हैं। भारतीय महासागर में इसके दक्षिण पश्चिम में मालदीव, दक्षिण में श्रीलंका और दक्षिण-पूर्व में इंडोनेशिया से भारत की सामुदरक सम लगत ह। इसक उततर म हमलय परवत तथ दकषण म भरतय महसगर सथत ह। दकषण-परव म बगल क खड तथ पशचम म अरब सगर ह।\r\n\r\n</details>\n\n### Screenshots/Videos\n\n<details>\r\n<summary>Example 1</summary>\r\n\r\n![image](https://user-images.githubusercontent.com/65014251/235305864-66f1d2e3-1431-4f34-8bf2-a6678c476717.png)\r\n\r\n</details>\r\n\r\n<details>\r\n<summary>Example 2</summary>\r\n\r\n![image](https://user-images.githubusercontent.com/65014251/235305842-4754af28-213f-463e-8855-f67022b91ea0.png)\r\n\r\n(Also, on client side the URL is quoted when the message content is actually `https://hi.wikipedia.org/wiki/भारत`, but that is not an issue with the API.)\r\n\r\n</details>\n\n### Client and System Information\n\nStable 193906 (9a82ecd)\r\nLinux 64-bit ",
+        "reactions": {
+          "url": "https://api.github.com/repos/discord/discord-api-docs/issues/6122/reactions",
+          "total_count": 1,
+          "+1": 0,
+          "-1": 0,
+          "laugh": 0,
+          "hooray": 0,
+          "confused": 0,
+          "heart": 0,
+          "rocket": 0,
+          "eyes": 1
+        },
+        "performed_via_github_app": null,
+        "state_reason": null
+      },
+      {
+        "url": "https://api.github.com/repos/discord/discord-api-docs/issues/6120",
+        "id": 1689174527,
+        "node_id": "PR_kwDOA0coRs5Pa1HB",
+        "number": 6120,
+        "title": "Add Create Expressions permission",
+        "user": {
+          "login": "Puncher1",
+          "id": 65789180,
+          "node_id": "MDQ6VXNlcjY1Nzg5MTgw",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/Puncher1",
+          "type": "User",
+          "site_admin": false
+        },
+        "labels": [],
+        "state": "open",
+        "locked": false,
+        "assignee": null,
+        "assignees": [],
+        "milestone": null,
+        "comments": 0,
+        "created_at": "2023-04-28T22:00:15Z",
+        "updated_at": "2023-04-28T23:07:42Z",
+        "closed_at": null,
+        "author_association": "CONTRIBUTOR",
+        "active_lock_reason": null,
+        "draft": false,
+        "pull_request": {
+          "url": "https://api.github.com/repos/discord/discord-api-docs/pulls/6120",
+          "merged_at": null
+        },
+        "body": null,
+        "reactions": {
+          "url": "https://api.github.com/repos/discord/discord-api-docs/issues/6120/reactions",
+          "total_count": 0,
+          "+1": 0,
+          "-1": 0,
+          "laugh": 0,
+          "hooray": 0,
+          "confused": 0,
+          "heart": 0,
+          "rocket": 0,
+          "eyes": 0
+        },
+        "performed_via_github_app": null,
+        "state_reason": null
+      },
+      {
+        "url": "https://api.github.com/repos/discord/discord-api-docs/issues/6118",
+        "id": 1688958562,
+        "node_id": "I_kwDOA0coRs5kq3Zi",
+        "number": 6118,
+        "title": "STAR WARS Jedi: Survivor™‎ for 19,456 Days Bug.",
+        "user": {
+          "login": "ghost",
+          "id": 10137,
+          "node_id": "MDQ6VXNlcjEwMTM3",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/ghost",
+          "type": "User",
+          "site_admin": false
+        },
+        "labels": [
+          {
+            "id": 349418148,
+            "node_id": "MDU6TGFiZWwzNDk0MTgxNDg=",
+            "url": "https://api.github.com/repos/discord/discord-api-docs/labels/bug",
+            "name": "bug",
+            "color": "ee0701",
+            "default": true,
+            "description": null
+          }
+        ],
+        "state": "closed",
+        "locked": false,
+        "assignee": null,
+        "assignees": [],
+        "milestone": null,
+        "comments": 0,
+        "created_at": "2023-04-28T18:16:23Z",
+        "updated_at": "2023-04-29T06:58:19Z",
+        "closed_at": "2023-04-29T06:58:19Z",
+        "author_association": "NONE",
+        "active_lock_reason": null,
+        "body": "### Description\n\nThere is a bug in discord that i found looking at other users playing STAR WARS Jedi: Survivor™. There \"Activity\" claims they have played the game for 19,456 days. I'm here because i want to report this to you guys at discord, and looking to get \"Bug Hunter\" badge on discord, since this is a bug and im here to report it. (my discord is \"moris#9999\")\n\n### Steps to Reproduce\n\nI dont have the knowledge of what this is.\n\n### Expected Behavior\n\nI'm expecting the normal play time.\n\n### Current Behavior\n\nIm currently seeing wrong game time on STAR WARS Jedi: Survivor™ on multiple users\n\n### Screenshots/Videos\n\n![image (17)](https://user-images.githubusercontent.com/47461164/235222857-71c6351e-2b52-417c-9986-f2c02b7ce43a.png)\r\n\n\n### Client and System Information\n\nStable 193600 (570418e) Host 1.0.9012 (32020) Windows 10 64-Bit (10.0.19045)",
+        "reactions": {
+          "url": "https://api.github.com/repos/discord/discord-api-docs/issues/6118/reactions",
+          "total_count": 3,
+          "+1": 0,
+          "-1": 0,
+          "laugh": 0,
+          "hooray": 0,
+          "confused": 0,
+          "heart": 0,
+          "rocket": 0,
+          "eyes": 3
+        },
+        "performed_via_github_app": null,
+        "state_reason": "completed"
+      }
+    ],
     "pullRequests": []
   }
 }
