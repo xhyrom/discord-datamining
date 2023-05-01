@@ -339,6 +339,59 @@
     "releases": [],
     "issues": [
       {
+        "url": "https://api.github.com/repos/discord/discord-api-docs/issues/6126",
+        "id": 1690330698,
+        "node_id": "I_kwDOA0coRs5kwGZK",
+        "number": 6126,
+        "title": "RequestAbortedError [AbortError]: Request aborted",
+        "user": {
+          "login": "qiaokeli111",
+          "id": 39187010,
+          "node_id": "MDQ6VXNlcjM5MTg3MDEw",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/qiaokeli111",
+          "type": "User",
+          "site_admin": false
+        },
+        "labels": [
+          {
+            "id": 349418148,
+            "node_id": "MDU6TGFiZWwzNDk0MTgxNDg=",
+            "url": "https://api.github.com/repos/discord/discord-api-docs/labels/bug",
+            "name": "bug",
+            "color": "ee0701",
+            "default": true,
+            "description": null
+          }
+        ],
+        "state": "closed",
+        "locked": false,
+        "assignee": null,
+        "assignees": [],
+        "milestone": null,
+        "comments": 1,
+        "created_at": "2023-05-01T03:58:39Z",
+        "updated_at": "2023-05-01T03:59:40Z",
+        "closed_at": "2023-05-01T03:59:40Z",
+        "author_association": "NONE",
+        "active_lock_reason": null,
+        "body": "### Description\n\nthis is my code,im sure my token is right,help me plz\r\n\r\nand the error is\r\nD:\\czj\\web3\\learn\\node_modules\\_undici@5.21.2@undici\\lib\\api\\abort-signal.js:10\r\nself.onError(new RequestAbortedError())\r\n^\r\n\r\nRequestAbortedError [AbortError]: Request aborted\r\nat abort (D:\\czj\\web3\\learn\\node_modules\\_undici@5.21.2@undici\\lib\\api\\abort-signal.js:10:18)\r\nat AbortSignal.self.<computed> (D:\\czj\\web3\\learn\\node_modules\\_undici@5.21.2@undici\\lib\\api\\abort-signal.js:29:5)\r\nat AbortSignal.[nodejs.internal.kHybridDispatch] (node:internal/event_target:736:20)\r\nat AbortSignal.dispatchEvent (node:internal/event_target:678:26)\r\nat abortSignal (node:internal/abort_controller:292:10)\r\nat AbortController.abort (node:internal/abort_controller:323:5)\r\nat Timeout.<anonymous> (D:\\czj\\web3\\learn\\node_modules\\_@discordjs_rest@1.7.0@@discordjs\\rest\\dist\\index.js:589:71)\r\nat listOnTimeout (node:internal/timers:559:17)\r\nat processTimers (node:internal/timers:502:7) {\r\ncode: 'UND_ERR_ABORTED'\r\n}\n\n### Steps to Reproduce\n\nconst { Client, Events, GatewayIntentBits,REST, Routes } = require('discord.js');\r\n\r\nconst client = new Client({ intents: [\r\nGatewayIntentBits.Guilds,\r\nGatewayIntentBits.MessageContent,\r\nGatewayIntentBits.GuildMessages\r\n]\r\n});\r\n\r\nclient.on('ready', () => {\r\nconsole.log(`Logged in as ${client.user.tag}!`);\r\n});\r\n\r\nclient.login('MTEwMjE2OTQ4OTI5MTg3MDI0MA.Gs-eiH.Gim7ZM2ConA9q7X-0G6UbwXqtFIFdTszFgYIJY');\n\n### Expected Behavior\n\nit can be right\n\n### Current Behavior\n\nshow error\n\n### Screenshots/Videos\n\n_No response_\n\n### Client and System Information\n\nnode v16.18.0  \"discord.io\": \"^2.5.3\",",
+        "reactions": {
+          "url": "https://api.github.com/repos/discord/discord-api-docs/issues/6126/reactions",
+          "total_count": 0,
+          "+1": 0,
+          "-1": 0,
+          "laugh": 0,
+          "hooray": 0,
+          "confused": 0,
+          "heart": 0,
+          "rocket": 0,
+          "eyes": 0
+        },
+        "performed_via_github_app": null,
+        "state_reason": "completed"
+      },
+      {
         "url": "https://api.github.com/repos/discord/discord-api-docs/issues/6125",
         "id": 1689903190,
         "node_id": "I_kwDOA0coRs5kueBW",
@@ -541,59 +594,6 @@
           "heart": 0,
           "rocket": 0,
           "eyes": 3
-        },
-        "performed_via_github_app": null,
-        "state_reason": "completed"
-      },
-      {
-        "url": "https://api.github.com/repos/discord/discord-api-docs/issues/6117",
-        "id": 1688723634,
-        "node_id": "I_kwDOA0coRs5kp-Cy",
-        "number": 6117,
-        "title": "Missing fields for Guild Member / User object",
-        "user": {
-          "login": "mobolo723",
-          "id": 18317905,
-          "node_id": "MDQ6VXNlcjE4MzE3OTA1",
-          "gravatar_id": "",
-          "url": "https://api.github.com/users/mobolo723",
-          "type": "User",
-          "site_admin": false
-        },
-        "labels": [
-          {
-            "id": 349418148,
-            "node_id": "MDU6TGFiZWwzNDk0MTgxNDg=",
-            "url": "https://api.github.com/repos/discord/discord-api-docs/labels/bug",
-            "name": "bug",
-            "color": "ee0701",
-            "default": true,
-            "description": null
-          }
-        ],
-        "state": "closed",
-        "locked": false,
-        "assignee": null,
-        "assignees": [],
-        "milestone": null,
-        "comments": 2,
-        "created_at": "2023-04-28T15:07:52Z",
-        "updated_at": "2023-04-29T08:29:00Z",
-        "closed_at": "2023-04-29T06:57:52Z",
-        "author_association": "NONE",
-        "active_lock_reason": null,
-        "body": "### Description\n\nWhile using the API to retrieve user and member from a guild, i saw that some fields in the online documentation are missing.\r\n\r\npath : `docs/resources/user#user-object-user-structure`\r\nmissing : `avatar_decoration`, `display_name`, `global_name`\r\n\r\npath : `docs/resources/guild#guild-member-object-guild-member-structure`\r\nmissing : `is_pending`\n\n### Steps to Reproduce\n\n- HTTP GET on `/guilds/{guild.id}/members/{user.id}`\r\n- Parse JSON response\r\n- Missing fields on `Member`\r\n- Access `user` field in JSON\r\n- Missing fields on `User`\n\n### Expected Behavior\n\nDocumentation may have deprecated or future fields mentioned as it is easier to construct classes of data and see which field is optional or nullable\n\n### Current Behavior\n\nMissing fields making parsing data harder\n\n### Screenshots/Videos\n\n_No response_\n\n### Client and System Information\n\nAPI version : 10",
-        "reactions": {
-          "url": "https://api.github.com/repos/discord/discord-api-docs/issues/6117/reactions",
-          "total_count": 0,
-          "+1": 0,
-          "-1": 0,
-          "laugh": 0,
-          "hooray": 0,
-          "confused": 0,
-          "heart": 0,
-          "rocket": 0,
-          "eyes": 0
         },
         "performed_via_github_app": null,
         "state_reason": "completed"
