@@ -57,40 +57,7 @@
     "triage": false,
     "pull": false
   },
-  "branches": [
-    {
-      "name": "attempt-2",
-      "commit": {
-        "sha": "3d4a0cec41defc7daaec00faf35743a8c3cfbb8d",
-        "url": "https://api.github.com/repos/discord/react-tree-walker/commits/3d4a0cec41defc7daaec00faf35743a8c3cfbb8d"
-      },
-      "protected": false
-    },
-    {
-      "name": "issue9",
-      "commit": {
-        "sha": "44b9fe6c7add731c391a0cfc53cafb0c374ce280",
-        "url": "https://api.github.com/repos/discord/react-tree-walker/commits/44b9fe6c7add731c391a0cfc53cafb0c374ce280"
-      },
-      "protected": false
-    },
-    {
-      "name": "master",
-      "commit": {
-        "sha": "f88922bd35b71e712342cf21bff477a942052fb1",
-        "url": "https://api.github.com/repos/discord/react-tree-walker/commits/f88922bd35b71e712342cf21bff477a942052fb1"
-      },
-      "protected": false
-    },
-    {
-      "name": "next",
-      "commit": {
-        "sha": "08d1dfe652f4ab3e9a43f92795dfc6cabdc1234a",
-        "url": "https://api.github.com/repos/discord/react-tree-walker/commits/08d1dfe652f4ab3e9a43f92795dfc6cabdc1234a"
-      },
-      "protected": false
-    }
-  ],
+  "branches": [],
   "last5": {
     "commits": [
       {
