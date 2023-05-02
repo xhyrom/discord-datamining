@@ -21834,9 +21834,11 @@ html.disable-forced-colors * {
     --crunchyroll: hsl(var(--crunchyroll-hsl)/1);
     --crunchyroll-hsl: 29 calc(var(--saturation-factor, 1)*93%) 55.5%;
     --discord-8th-bday-pink: hsl(var(--discord-8th-bday-pink-hsl)/1);
-    --discord-8th-bday-pink-hsl: 60 calc(var(--saturation-factor, 1)*100%) 50%;
+    --discord-8th-bday-pink-hsl: 316 calc(var(--saturation-factor, 1)*100%) 66.1%;
+    --discord-8th-bday-purple: hsl(var(--discord-8th-bday-purple-hsl)/1);
+    --discord-8th-bday-purple-hsl: 234 calc(var(--saturation-factor, 1)*93.1%) 65.7%;
     --discord-8th-bday-yellow: hsl(var(--discord-8th-bday-yellow-hsl)/1);
-    --discord-8th-bday-yellow-hsl: 316 calc(var(--saturation-factor, 1)*100%) 66.1%;
+    --discord-8th-bday-yellow-hsl: 60 calc(var(--saturation-factor, 1)*100%) 50%;
     --ebay: hsl(var(--ebay-hsl)/1);
     --ebay-hsl: 211 calc(var(--saturation-factor, 1)*100%) 41.2%;
     --epic-games: hsl(var(--epic-games-hsl)/1);
@@ -98306,6 +98308,13 @@ html .tabBadge-h4HGed {
     margin-right: 12px
 }
 
+.activitiesBirthdayIcon-1Ou-De {
+    border-radius: 4px;
+    color: var(--discord-8th-bday-yellow);
+    background: -webkit-gradient(linear, left top, right top, from(var(--discord-8th-bday-purple)), to(var(--discord-8th-bday-pink)));
+    background: linear-gradient(90deg, var(--discord-8th-bday-purple), var(--discord-8th-bday-pink))
+}
+
 .enable-forced-colors .searchBar-3TnChZ {
     border-bottom: 2px solid CanvasText
 }
@@ -132396,30 +132405,21 @@ html .invoiceCancelRow-3s2UuC {
 }
 
 .titleContainer-4uqtZw {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
     margin-bottom: 16px
 }
 
-.titleIcon-aV15s- {
-    background-color: var(--discord-8th-bday-pink);
-    color: var(--discord-8th-bday-yellow);
-    border-radius: 8px;
-    margin-right: 8px;
-    -webkit-box-flex: 0;
-    -ms-flex: 0 0 auto;
-    flex: 0 0 auto
-}
-
-.heroWrapper-20MPew {
-    width: 100%;
+.heroWrapper-20MPew,
+.titleContainer-4uqtZw {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex
+}
+
+.heroWrapper-20MPew {
+    width: 100%
 }
 
 .hero-1Du2Gn {
@@ -154219,4 +154219,4 @@ html .invoiceCancelRow-dVOR64 {
     flex-direction: column
 }
 
-/*# sourceMappingURL=40532.413d66a71ce53cc2ff2c.css.map*/
+/*# sourceMappingURL=40532.6399bd8fd7c28b2a1c66.css.map*/
