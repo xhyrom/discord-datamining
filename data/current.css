@@ -26235,8 +26235,10 @@ img[alt] {
 
 .cardIcon-1rZ5-N {
     position: absolute;
-    top: 12px;
-    left: 10px
+    top: 50%;
+    left: 10px;
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%)
 }
 
 .cardInput-33x7OF {
@@ -153877,4 +153879,4 @@ html .invoiceCancelRow-dVOR64 {
     flex-direction: column
 }
 
-/*# sourceMappingURL=40532.ee0f95bc055265c57835.css.map*/
+/*# sourceMappingURL=40532.26ac8d69fe21be7151b6.css.map*/
