@@ -43027,25 +43027,30 @@ h6.title-1p9WyQ {
     flex: 0 0 278px
 }
 
+.birthdayReferral-2y7WVC,
 .referral-KbkPRW {
     margin: 0;
     overflow: hidden;
     max-height: none;
+    position: relative;
     padding-top: 0;
     height: 100%;
+    -webkit-box-flex: 1;
     -ms-flex: auto;
-    flex: auto;
+    flex: auto
+}
+
+.referral-KbkPRW {
     background: url(/assets/d595b82655bef4950b8b3a828ebcd7f0.svg) 100% no-repeat
 }
 
-.description-DrsMv8,
-.referral-KbkPRW {
-    position: relative;
-    -webkit-box-flex: 1
+.birthdayReferral-2y7WVC {
+    background: url(/assets/7155e094d4f813cd4b712794751ec9a9.svg) 100% no-repeat
 }
 
 .description-DrsMv8 {
     padding: 12px;
+    -webkit-box-flex: 1;
     -ms-flex: 1 1 auto;
     flex: 1 1 auto;
     display: -webkit-box;
@@ -43054,7 +43059,8 @@ h6.title-1p9WyQ {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
     -ms-flex-direction: column;
-    flex-direction: column
+    flex-direction: column;
+    position: relative
 }
 
 .theme-light .description-DrsMv8 {
@@ -62218,12 +62224,34 @@ strong {
     position: relative;
     min-height: 190px;
     background: linear-gradient(100.98deg, var(--premium-tier-2-purple-for-gradients) 25.21%, var(--premium-tier-2-purple-for-gradients-2) 62.43%, var(--premium-tier-2-pink-for-gradients) 95.57%);
-    border-radius: 4px
+    border-radius: 4px;
+    overflow: hidden
+}
+
+.innerContent-2SPKt5 {
+    position: relative;
+    z-index: 1;
+    width: 100%;
+    height: 100%
+}
+
+.birthdayBackgroundImage-3GLYYZ {
+    position: absolute;
+    bottom: -45px;
+    left: -70px
+}
+
+.confirmationBirthdayBody-2z3BzN,
+.confirmationBody-3zwF1w {
+    position: relative
 }
 
 .confirmationBody-3zwF1w {
-    position: relative;
     min-height: 136px
+}
+
+.confirmationBirthdayBody-2z3BzN {
+    min-height: 190px
 }
 
 .confirmationHeading-3N57WK {
@@ -62286,13 +62314,14 @@ strong {
 .generalBodyImage-xA-_3m {
     position: absolute;
     bottom: 0;
-    right: 0
+    right: 0;
+    z-index: 1
 }
 
 .closeButton-3xGz7P {
     position: absolute;
-    right: 12px;
-    top: 20px
+    right: 8px;
+    top: 16px
 }
 
 .closeButton-3xGz7P:hover {
@@ -154219,4 +154248,4 @@ html .invoiceCancelRow-dVOR64 {
     flex-direction: column
 }
 
-/*# sourceMappingURL=40532.6399bd8fd7c28b2a1c66.css.map*/
+/*# sourceMappingURL=40532.ecaa854d5f998b1f370d.css.map*/
