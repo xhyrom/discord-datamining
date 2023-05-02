@@ -149401,7 +149401,7 @@ html .invoiceCancelRow-3s2UuC {
     height: 12px;
     margin-right: 14px;
     border-radius: 50%;
-    background-color: hsl(var(--white-500-hsl)/.2)
+    background-color: var(--background-modifier-selected)
 }
 
 .container-m6s_35 {
@@ -154265,4 +154265,4 @@ html .invoiceCancelRow-dVOR64 {
     flex-direction: column
 }
 
-/*# sourceMappingURL=40532.a74f30bc3039a8d39dbf.css.map*/
+/*# sourceMappingURL=40532.5bbf93f013ed1b95d604.css.map*/
