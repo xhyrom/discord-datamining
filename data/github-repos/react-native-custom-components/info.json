@@ -57,7 +57,16 @@
     "triage": false,
     "pull": false
   },
-  "branches": [],
+  "branches": [
+    {
+      "name": "master",
+      "commit": {
+        "sha": "b51a0d4213f6437bdbee04d4c7b40582e03efd73",
+        "url": "https://api.github.com/repos/discord/react-native-custom-components/commits/b51a0d4213f6437bdbee04d4c7b40582e03efd73"
+      },
+      "protected": false
+    }
+  ],
   "last5": {
     "commits": [
       {

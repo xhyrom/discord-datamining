@@ -57,7 +57,24 @@
     "triage": false,
     "pull": false
   },
-  "branches": [],
+  "branches": [
+    {
+      "name": "master",
+      "commit": {
+        "sha": "22eed86d83499ccf6a4e70cdcb188e36c0346348",
+        "url": "https://api.github.com/repos/discord/dirs-rs/commits/22eed86d83499ccf6a4e70cdcb188e36c0346348"
+      },
+      "protected": false
+    },
+    {
+      "name": "topic/home_dir",
+      "commit": {
+        "sha": "6e477d204e48136016c6b19ea5c0aaad4f7d2a33",
+        "url": "https://api.github.com/repos/discord/dirs-rs/commits/6e477d204e48136016c6b19ea5c0aaad4f7d2a33"
+      },
+      "protected": false
+    }
+  ],
   "last5": {
     "commits": [
       {
