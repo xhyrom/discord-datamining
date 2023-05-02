@@ -57,40 +57,7 @@
     "triage": false,
     "pull": false
   },
-  "branches": [
-    {
-      "name": "clarify-readme",
-      "commit": {
-        "sha": "bc9c5d42ee5495a705e66f4233b50f2ce833bad5",
-        "url": "https://api.github.com/repos/discord/electron-build-tools/commits/bc9c5d42ee5495a705e66f4233b50f2ce833bad5"
-      },
-      "protected": false
-    },
-    {
-      "name": "inherit-evm_current_file",
-      "commit": {
-        "sha": "0692a4c579f9a64417baec5ca9fee0001e5a3893",
-        "url": "https://api.github.com/repos/discord/electron-build-tools/commits/0692a4c579f9a64417baec5ca9fee0001e5a3893"
-      },
-      "protected": false
-    },
-    {
-      "name": "master",
-      "commit": {
-        "sha": "a0f7528f0acb51c2e5268ef982372d003194beea",
-        "url": "https://api.github.com/repos/discord/electron-build-tools/commits/a0f7528f0acb51c2e5268ef982372d003194beea"
-      },
-      "protected": false
-    },
-    {
-      "name": "next",
-      "commit": {
-        "sha": "fb96cff3923fc68e0d7a1fc9714d746522ea4669",
-        "url": "https://api.github.com/repos/discord/electron-build-tools/commits/fb96cff3923fc68e0d7a1fc9714d746522ea4669"
-      },
-      "protected": false
-    }
-  ],
+  "branches": [],
   "last5": {
     "commits": [
       {
