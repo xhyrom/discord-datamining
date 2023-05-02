@@ -132297,9 +132297,15 @@ html .invoiceCancelRow-3s2UuC {
 
 .celebrateCardGrid-ZdgaQv {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-columns: 1fr 1fr;
     grid-gap: 16px;
     margin-top: 16px
+}
+
+@media only screen and (max-width:1024px) {
+    .celebrateCardGrid-ZdgaQv {
+        grid-template-columns: 1fr
+    }
 }
 
 .celebrateCardContainer-MAdnBa {
@@ -132333,8 +132339,10 @@ html .invoiceCancelRow-3s2UuC {
 }
 
 .celebrateCardImage-2XCDEK {
-    aspect-ratio: 259/156;
+    aspect-ratio: 4/3;
     width: 100%;
+    -o-object-fit: cover;
+    object-fit: cover;
     border-radius: 8px;
     margin-top: 16px
 }
@@ -153816,4 +153824,4 @@ html .invoiceCancelRow-dVOR64 {
     flex-direction: column
 }
 
-/*# sourceMappingURL=40532.633141816f64ba4e58ef.css.map*/
+/*# sourceMappingURL=40532.6797f5267749b094b5a4.css.map*/
