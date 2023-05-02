@@ -57,32 +57,7 @@
     "triage": false,
     "pull": false
   },
-  "branches": [
-    {
-      "name": "0.x.x",
-      "commit": {
-        "sha": "e4593049815f46029518629028ea32ee54d20698",
-        "url": "https://api.github.com/repos/discord/react-async-component/commits/e4593049815f46029518629028ea32ee54d20698"
-      },
-      "protected": false
-    },
-    {
-      "name": "master",
-      "commit": {
-        "sha": "0ca498b4a07ce99ad4dfbb44ed16be9333d2f090",
-        "url": "https://api.github.com/repos/discord/react-async-component/commits/0ca498b4a07ce99ad4dfbb44ed16be9333d2f090"
-      },
-      "protected": false
-    },
-    {
-      "name": "next",
-      "commit": {
-        "sha": "9962ee734e5d09c68ed07c3e5a7107a7ff5088b6",
-        "url": "https://api.github.com/repos/discord/react-async-component/commits/9962ee734e5d09c68ed07c3e5a7107a7ff5088b6"
-      },
-      "protected": false
-    }
-  ],
+  "branches": [],
   "last5": {
     "commits": [
       {

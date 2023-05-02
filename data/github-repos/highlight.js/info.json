@@ -324,56 +324,7 @@
       }
     ],
     "releases": [],
-    "issues": [
-      {
-        "url": "https://api.github.com/repos/discord/highlight.js/issues/1",
-        "id": 1027814994,
-        "node_id": "PR_kwDOEMMp7c4tRQzt",
-        "number": 1,
-        "title": "Update highlight.js library with HLSL support and other improvements",
-        "user": {
-          "login": "landonth",
-          "id": 15337230,
-          "node_id": "MDQ6VXNlcjE1MzM3MjMw",
-          "gravatar_id": "",
-          "url": "https://api.github.com/users/landonth",
-          "type": "User",
-          "site_admin": false
-        },
-        "labels": [],
-        "state": "closed",
-        "locked": true,
-        "assignee": null,
-        "assignees": [],
-        "milestone": null,
-        "comments": 1,
-        "created_at": "2021-10-15T21:19:08Z",
-        "updated_at": "2021-12-24T22:34:52Z",
-        "closed_at": "2021-12-24T22:34:52Z",
-        "author_association": "NONE",
-        "active_lock_reason": null,
-        "draft": true,
-        "pull_request": {
-          "url": "https://api.github.com/repos/discord/highlight.js/pulls/1",
-          "merged_at": null
-        },
-        "body": "I am a graphics programmer and use Discord daily for solving problems and sharing code snippets with other developers in professional and educational settings.\r\n\r\nWhile Discord's syntax highlighting is very helpful in this regard, it is lagging behind on highlight.js library's advancements by well over 1 year now. Many improvements, bugfixes and support for a number of new language grammars have been added to highlight.js since the last revision --one of the most important to the game developer industry being HLSL High-level shader language (HLSL.) it is currently the most ubiquitous language that shader code is authored in, in large part by its use in the Unity and Unreal real-time engines.\r\n\r\nHLSL support in particular was added in version 10.7.0, with 10.7.3 being the last version before possible breaking changes arrived in 11.0.0. Or maybe you'll prefer to upgrade to the latest, It's up to you.\r\n\r\nhttps://github.com/highlightjs/highlight.js/pull/3002\r\nhttps://github.com/highlightjs/highlight.js/blob/2dd87a6ef58c8c886dd209076aa6661ffae89577/CHANGES.md\r\nhttps://support.discord.com/hc/en-us/community/posts/1500001411122-Update-highlight-js-library-to-10-7-1-bringing-HLSL-support-to-Game-developers-everywhere\r\n\r\nUpdating highlight.js has a relatively low effort and low risk factor but would benefit so many of us that work on videogames and interactive media using Discord to communicate everyday.\r\n\r\nFeel free to close this draft PR and open up a new one as needed when this work can be done and from the best branch or commit, etc, I'm just making sure this actually is brought to the attention to fellow software developers as there has been no response to this via the support.discord.com and twitter.com/discord so I have no idea if the development team is even aware of these advancements and the difference it would make in the community.\r\n\r\nThank you",
-        "reactions": {
-          "url": "https://api.github.com/repos/discord/highlight.js/issues/1/reactions",
-          "total_count": 2,
-          "+1": 2,
-          "-1": 0,
-          "laugh": 0,
-          "hooray": 0,
-          "confused": 0,
-          "heart": 0,
-          "rocket": 0,
-          "eyes": 0
-        },
-        "performed_via_github_app": null,
-        "state_reason": null
-      }
-    ],
+    "issues": [],
     "pullRequests": []
   }
 }

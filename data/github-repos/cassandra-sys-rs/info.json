@@ -336,56 +336,7 @@
       }
     ],
     "releases": [],
-    "issues": [
-      {
-        "url": "https://api.github.com/repos/discord/cassandra-sys-rs/issues/1",
-        "id": 848787159,
-        "node_id": "MDExOlB1bGxSZXF1ZXN0NjA3NjY5MzUz",
-        "number": 1,
-        "title": "Upgrade bindings for c++ driver 2.16.0",
-        "user": {
-          "login": "iredelmeier",
-          "id": 3298606,
-          "node_id": "MDQ6VXNlcjMyOTg2MDY=",
-          "gravatar_id": "",
-          "url": "https://api.github.com/users/iredelmeier",
-          "type": "User",
-          "site_admin": false
-        },
-        "labels": [],
-        "state": "open",
-        "locked": false,
-        "assignee": null,
-        "assignees": [],
-        "milestone": null,
-        "comments": 0,
-        "created_at": "2021-04-01T21:02:44Z",
-        "updated_at": "2021-04-08T16:53:27Z",
-        "closed_at": null,
-        "author_association": "NONE",
-        "active_lock_reason": null,
-        "draft": false,
-        "pull_request": {
-          "url": "https://api.github.com/repos/discord/cassandra-sys-rs/pulls/1",
-          "merged_at": null
-        },
-        "body": "",
-        "reactions": {
-          "url": "https://api.github.com/repos/discord/cassandra-sys-rs/issues/1/reactions",
-          "total_count": 0,
-          "+1": 0,
-          "-1": 0,
-          "laugh": 0,
-          "hooray": 0,
-          "confused": 0,
-          "heart": 0,
-          "rocket": 0,
-          "eyes": 0
-        },
-        "performed_via_github_app": null,
-        "state_reason": null
-      }
-    ],
+    "issues": [],
     "pullRequests": []
   }
 }
