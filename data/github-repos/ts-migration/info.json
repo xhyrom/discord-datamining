@@ -57,7 +57,48 @@
     "triage": false,
     "pull": false
   },
-  "branches": [],
+  "branches": [
+    {
+      "name": "dev",
+      "commit": {
+        "sha": "f53fef8d9cf3cc0b3ed896a64231bfd71ac11b42",
+        "url": "https://api.github.com/repos/discord/ts-migration/commits/f53fef8d9cf3cc0b3ed896a64231bfd71ac11b42"
+      },
+      "protected": false
+    },
+    {
+      "name": "master",
+      "commit": {
+        "sha": "b475262c72b1dbaff01e1da03788371302f6eb51",
+        "url": "https://api.github.com/repos/discord/ts-migration/commits/b475262c72b1dbaff01e1da03788371302f6eb51"
+      },
+      "protected": false
+    },
+    {
+      "name": "object",
+      "commit": {
+        "sha": "c861406ed16a88c795e01b1f1b5985b12a2a3286",
+        "url": "https://api.github.com/repos/discord/ts-migration/commits/c861406ed16a88c795e01b1f1b5985b12a2a3286"
+      },
+      "protected": false
+    },
+    {
+      "name": "publish",
+      "commit": {
+        "sha": "c044e0537858ef684b93c915992c1783085477a6",
+        "url": "https://api.github.com/repos/discord/ts-migration/commits/c044e0537858ef684b93c915992c1783085477a6"
+      },
+      "protected": false
+    },
+    {
+      "name": "rg-use-package",
+      "commit": {
+        "sha": "e545da71ca5fa3b090fdd97b989e6c39d7749ec5",
+        "url": "https://api.github.com/repos/discord/ts-migration/commits/e545da71ca5fa3b090fdd97b989e6c39d7749ec5"
+      },
+      "protected": false
+    }
+  ],
   "last5": {
     "commits": [
       {

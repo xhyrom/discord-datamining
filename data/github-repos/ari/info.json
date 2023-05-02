@@ -332,12 +332,15 @@
       }
     ],
     "releases": [],
-    "issues": [
+    "issues": [],
+    "pullRequests": [
       {
-        "url": "https://api.github.com/repos/discord/ari/issues/1",
-        "id": 797188652,
+        "url": "https://api.github.com/repos/discord/ari/pulls/1",
+        "id": 564240356,
         "node_id": "MDExOlB1bGxSZXF1ZXN0NTY0MjQwMzU2",
         "number": 1,
+        "state": "open",
+        "locked": false,
         "title": "remove nightly features and update to 1.49.0",
         "user": {
           "login": "samschlegel",
@@ -348,40 +351,183 @@
           "type": "User",
           "site_admin": false
         },
-        "labels": [],
-        "state": "open",
-        "locked": false,
-        "assignee": null,
-        "assignees": [],
-        "milestone": null,
-        "comments": 0,
+        "body": "",
         "created_at": "2021-01-29T20:45:21Z",
         "updated_at": "2021-02-02T21:03:30Z",
         "closed_at": null,
-        "author_association": "MEMBER",
-        "active_lock_reason": null,
+        "merged_at": null,
+        "merge_commit_sha": "9f0647ae8c4800cd892767ab685b7c459d310baa",
+        "assignee": null,
+        "assignees": [],
+        "requested_reviewers": [],
+        "requested_teams": [],
+        "labels": [],
+        "milestone": null,
         "draft": false,
-        "pull_request": {
-          "url": "https://api.github.com/repos/discord/ari/pulls/1",
-          "merged_at": null
+        "head": {
+          "label": "discord:remove-nightly-features",
+          "ref": "remove-nightly-features",
+          "sha": "be60f32a9979db32f9e7450301e3bf6792a89e84",
+          "user": {
+            "login": "discord",
+            "id": 1965106,
+            "node_id": "MDEyOk9yZ2FuaXphdGlvbjE5NjUxMDY=",
+            "gravatar_id": "",
+            "url": "https://api.github.com/users/discord",
+            "type": "Organization",
+            "site_admin": false
+          },
+          "repo": {
+            "id": 285972631,
+            "node_id": "MDEwOlJlcG9zaXRvcnkyODU5NzI2MzE=",
+            "name": "ari",
+            "full_name": "discord/ari",
+            "private": false,
+            "owner": {
+              "login": "discord",
+              "id": 1965106,
+              "node_id": "MDEyOk9yZ2FuaXphdGlvbjE5NjUxMDY=",
+              "gravatar_id": "",
+              "url": "https://api.github.com/users/discord",
+              "type": "Organization",
+              "site_admin": false
+            },
+            "description": null,
+            "fork": true,
+            "url": "https://api.github.com/repos/discord/ari",
+            "created_at": "2020-08-08T04:28:12Z",
+            "updated_at": "2021-05-19T03:10:24Z",
+            "pushed_at": "2021-02-02T21:03:30Z",
+            "homepage": null,
+            "size": 64,
+            "stargazers_count": 2,
+            "watchers_count": 2,
+            "language": "Rust",
+            "has_issues": false,
+            "has_projects": true,
+            "has_downloads": true,
+            "has_wiki": false,
+            "has_pages": false,
+            "has_discussions": false,
+            "forks_count": 4,
+            "archived": false,
+            "disabled": false,
+            "open_issues_count": 1,
+            "license": {
+              "key": "apache-2.0",
+              "name": "Apache License 2.0",
+              "spdx_id": "Apache-2.0",
+              "url": "https://api.github.com/licenses/apache-2.0",
+              "node_id": "MDc6TGljZW5zZTI="
+            },
+            "allow_forking": true,
+            "is_template": false,
+            "web_commit_signoff_required": false,
+            "topics": [],
+            "visibility": "public",
+            "forks": 4,
+            "open_issues": 1,
+            "watchers": 2,
+            "default_branch": "master"
+          }
         },
-        "body": "",
-        "reactions": {
-          "url": "https://api.github.com/repos/discord/ari/issues/1/reactions",
-          "total_count": 0,
-          "+1": 0,
-          "-1": 0,
-          "laugh": 0,
-          "hooray": 0,
-          "confused": 0,
-          "heart": 0,
-          "rocket": 0,
-          "eyes": 0
+        "base": {
+          "label": "discord:master",
+          "ref": "master",
+          "sha": "b01265230dec54b1608e6277d7be4b1a1957a11b",
+          "user": {
+            "login": "discord",
+            "id": 1965106,
+            "node_id": "MDEyOk9yZ2FuaXphdGlvbjE5NjUxMDY=",
+            "gravatar_id": "",
+            "url": "https://api.github.com/users/discord",
+            "type": "Organization",
+            "site_admin": false
+          },
+          "repo": {
+            "id": 285972631,
+            "node_id": "MDEwOlJlcG9zaXRvcnkyODU5NzI2MzE=",
+            "name": "ari",
+            "full_name": "discord/ari",
+            "private": false,
+            "owner": {
+              "login": "discord",
+              "id": 1965106,
+              "node_id": "MDEyOk9yZ2FuaXphdGlvbjE5NjUxMDY=",
+              "gravatar_id": "",
+              "url": "https://api.github.com/users/discord",
+              "type": "Organization",
+              "site_admin": false
+            },
+            "description": null,
+            "fork": true,
+            "url": "https://api.github.com/repos/discord/ari",
+            "created_at": "2020-08-08T04:28:12Z",
+            "updated_at": "2021-05-19T03:10:24Z",
+            "pushed_at": "2021-02-02T21:03:30Z",
+            "homepage": null,
+            "size": 64,
+            "stargazers_count": 2,
+            "watchers_count": 2,
+            "language": "Rust",
+            "has_issues": false,
+            "has_projects": true,
+            "has_downloads": true,
+            "has_wiki": false,
+            "has_pages": false,
+            "has_discussions": false,
+            "forks_count": 4,
+            "archived": false,
+            "disabled": false,
+            "open_issues_count": 1,
+            "license": {
+              "key": "apache-2.0",
+              "name": "Apache License 2.0",
+              "spdx_id": "Apache-2.0",
+              "url": "https://api.github.com/licenses/apache-2.0",
+              "node_id": "MDc6TGljZW5zZTI="
+            },
+            "allow_forking": true,
+            "is_template": false,
+            "web_commit_signoff_required": false,
+            "topics": [],
+            "visibility": "public",
+            "forks": 4,
+            "open_issues": 1,
+            "watchers": 2,
+            "default_branch": "master"
+          }
         },
-        "performed_via_github_app": null,
-        "state_reason": null
+        "_links": {
+          "self": {
+            "href": "https://api.github.com/repos/discord/ari/pulls/1"
+          },
+          "html": {
+            "href": "https://github.com/discord/ari/pull/1"
+          },
+          "issue": {
+            "href": "https://api.github.com/repos/discord/ari/issues/1"
+          },
+          "comments": {
+            "href": "https://api.github.com/repos/discord/ari/issues/1/comments"
+          },
+          "review_comments": {
+            "href": "https://api.github.com/repos/discord/ari/pulls/1/comments"
+          },
+          "review_comment": {
+            "href": "https://api.github.com/repos/discord/ari/pulls/comments{/number}"
+          },
+          "commits": {
+            "href": "https://api.github.com/repos/discord/ari/pulls/1/commits"
+          },
+          "statuses": {
+            "href": "https://api.github.com/repos/discord/ari/statuses/be60f32a9979db32f9e7450301e3bf6792a89e84"
+          }
+        },
+        "author_association": "MEMBER",
+        "auto_merge": null,
+        "active_lock_reason": null
       }
-    ],
-    "pullRequests": []
+    ]
   }
 }

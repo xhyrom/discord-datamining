@@ -57,7 +57,24 @@
     "triage": false,
     "pull": false
   },
-  "branches": [],
+  "branches": [
+    {
+      "name": "master",
+      "commit": {
+        "sha": "bac9e44a8c0c55ff92366de18dea4d6d5017823b",
+        "url": "https://api.github.com/repos/discord/node-gyp/commits/bac9e44a8c0c55ff92366de18dea4d6d5017823b"
+      },
+      "protected": false
+    },
+    {
+      "name": "v3.x",
+      "commit": {
+        "sha": "9a404d6d36dcf9c7be2ae9963019c4d89bbb9155",
+        "url": "https://api.github.com/repos/discord/node-gyp/commits/9a404d6d36dcf9c7be2ae9963019c4d89bbb9155"
+      },
+      "protected": false
+    }
+  ],
   "last5": {
     "commits": [
       {
