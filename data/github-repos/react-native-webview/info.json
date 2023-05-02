@@ -57,7 +57,248 @@
     "triage": false,
     "pull": false
   },
-  "branches": [],
+  "branches": [
+    {
+      "name": "11.18.1-discord-1",
+      "commit": {
+        "sha": "237796aced1f986a5f8c33d5be295c5fbf74e728",
+        "url": "https://api.github.com/repos/discord/react-native-webview/commits/237796aced1f986a5f8c33d5be295c5fbf74e728"
+      },
+      "protected": false
+    },
+    {
+      "name": "11.18.1-discord-2",
+      "commit": {
+        "sha": "829967139d6ee111a8269f0d6e3e7a5fa68b60b6",
+        "url": "https://api.github.com/repos/discord/react-native-webview/commits/829967139d6ee111a8269f0d6e3e7a5fa68b60b6"
+      },
+      "protected": false
+    },
+    {
+      "name": "addressing-open-source-feedback",
+      "commit": {
+        "sha": "fc6bd59678c1297e10f52b66881f75734260cb7d",
+        "url": "https://api.github.com/repos/discord/react-native-webview/commits/fc6bd59678c1297e10f52b66881f75734260cb7d"
+      },
+      "protected": false
+    },
+    {
+      "name": "addressing-open-source-feedback-after-resolving-conflicts",
+      "commit": {
+        "sha": "7b6c1ea01cdb1b84a42baa02cf8d38ad9328e38b",
+        "url": "https://api.github.com/repos/discord/react-native-webview/commits/7b6c1ea01cdb1b84a42baa02cf8d38ad9328e38b"
+      },
+      "protected": false
+    },
+    {
+      "name": "all-contributors/add-CubeSugar",
+      "commit": {
+        "sha": "96f0f28e1df2fb27f4108961dfbed66035667cd6",
+        "url": "https://api.github.com/repos/discord/react-native-webview/commits/96f0f28e1df2fb27f4108961dfbed66035667cd6"
+      },
+      "protected": false
+    },
+    {
+      "name": "all-contributors/add-Momazo7u7",
+      "commit": {
+        "sha": "1eddc225099d83324e1c9dbe1ebb98465a0d610a",
+        "url": "https://api.github.com/repos/discord/react-native-webview/commits/1eddc225099d83324e1c9dbe1ebb98465a0d610a"
+      },
+      "protected": false
+    },
+    {
+      "name": "all-contributors/add-Salakar",
+      "commit": {
+        "sha": "50345ec03472eac693b65b2b622fe7a0a69c5acf",
+        "url": "https://api.github.com/repos/discord/react-native-webview/commits/50345ec03472eac693b65b2b622fe7a0a69c5acf"
+      },
+      "protected": false
+    },
+    {
+      "name": "all-contributors/add-TMomemt",
+      "commit": {
+        "sha": "388a9ef7d3972e4541f88ec716250d38a0a98ac8",
+        "url": "https://api.github.com/repos/discord/react-native-webview/commits/388a9ef7d3972e4541f88ec716250d38a0a98ac8"
+      },
+      "protected": false
+    },
+    {
+      "name": "all-contributors/add-YangXiaomei",
+      "commit": {
+        "sha": "8d604ebe8b06ad4292ee0d94d93349cf03ce090b",
+        "url": "https://api.github.com/repos/discord/react-native-webview/commits/8d604ebe8b06ad4292ee0d94d93349cf03ce090b"
+      },
+      "protected": false
+    },
+    {
+      "name": "all-contributors/add-andreipfeiffer",
+      "commit": {
+        "sha": "c9a7192f8d077de136413b64c353fb6dfd261414",
+        "url": "https://api.github.com/repos/discord/react-native-webview/commits/c9a7192f8d077de136413b64c353fb6dfd261414"
+      },
+      "protected": false
+    },
+    {
+      "name": "all-contributors/add-dvicory",
+      "commit": {
+        "sha": "9d897eafb1530e801b44b7a72788082ffea9841c",
+        "url": "https://api.github.com/repos/discord/react-native-webview/commits/9d897eafb1530e801b44b7a72788082ffea9841c"
+      },
+      "protected": false
+    },
+    {
+      "name": "all-contributors/add-ericlewis",
+      "commit": {
+        "sha": "ee1681ea51873c6bf0947eff509df59c23a0fb56",
+        "url": "https://api.github.com/repos/discord/react-native-webview/commits/ee1681ea51873c6bf0947eff509df59c23a0fb56"
+      },
+      "protected": false
+    },
+    {
+      "name": "all-contributors/add-femiveys",
+      "commit": {
+        "sha": "e346a85dd24141d8f277a029f1ae44824dc4e7f0",
+        "url": "https://api.github.com/repos/discord/react-native-webview/commits/e346a85dd24141d8f277a029f1ae44824dc4e7f0"
+      },
+      "protected": false
+    },
+    {
+      "name": "all-contributors/add-jamonholmgren",
+      "commit": {
+        "sha": "f0aea9d9230ffea719aeb647e7b1c2aefc5ab8c4",
+        "url": "https://api.github.com/repos/discord/react-native-webview/commits/f0aea9d9230ffea719aeb647e7b1c2aefc5ab8c4"
+      },
+      "protected": false
+    },
+    {
+      "name": "all-contributors/add-jeluard",
+      "commit": {
+        "sha": "2cc6d2942d3aaabb374c7109d8a6491e6f23a8bf",
+        "url": "https://api.github.com/repos/discord/react-native-webview/commits/2cc6d2942d3aaabb374c7109d8a6491e6f23a8bf"
+      },
+      "protected": false
+    },
+    {
+      "name": "all-contributors/add-marconett",
+      "commit": {
+        "sha": "4353ab7e50f1815ce261643fa409cb900e613182",
+        "url": "https://api.github.com/repos/discord/react-native-webview/commits/4353ab7e50f1815ce261643fa409cb900e613182"
+      },
+      "protected": false
+    },
+    {
+      "name": "all-contributors/add-smathson",
+      "commit": {
+        "sha": "209e5558973dcea1c299dfdfd873aab90c321700",
+        "url": "https://api.github.com/repos/discord/react-native-webview/commits/209e5558973dcea1c299dfdfd873aab90c321700"
+      },
+      "protected": false
+    },
+    {
+      "name": "all-contributors/add-svbutko",
+      "commit": {
+        "sha": "b361b90cbfd8075a470cb04e091f4557d613c5b0",
+        "url": "https://api.github.com/repos/discord/react-native-webview/commits/b361b90cbfd8075a470cb04e091f4557d613c5b0"
+      },
+      "protected": false
+    },
+    {
+      "name": "all-contributors/add-titozzz",
+      "commit": {
+        "sha": "442dca64ecd8f4524d08207f6e43556ddc40cc2c",
+        "url": "https://api.github.com/repos/discord/react-native-webview/commits/442dca64ecd8f4524d08207f6e43556ddc40cc2c"
+      },
+      "protected": false
+    },
+    {
+      "name": "android-build-adjustments",
+      "commit": {
+        "sha": "184ae0739527ae82297d54b6ce6c993c8402c7de",
+        "url": "https://api.github.com/repos/discord/react-native-webview/commits/184ae0739527ae82297d54b6ce6c993c8402c7de"
+      },
+      "protected": false
+    },
+    {
+      "name": "android-webview-debugging",
+      "commit": {
+        "sha": "7c1d77b4212a5b977f9fefab0c34ba54f9b356dd",
+        "url": "https://api.github.com/repos/discord/react-native-webview/commits/7c1d77b4212a5b977f9fefab0c34ba54f9b356dd"
+      },
+      "protected": false
+    },
+    {
+      "name": "ankit/temp-parent",
+      "commit": {
+        "sha": "29cdcd00a5927dfa91c7fbe732acd5b5b9b4f1b1",
+        "url": "https://api.github.com/repos/discord/react-native-webview/commits/29cdcd00a5927dfa91c7fbe732acd5b5b9b4f1b1"
+      },
+      "protected": false
+    },
+    {
+      "name": "auto-resizing-mask-config",
+      "commit": {
+        "sha": "f97e9eca0542312daef1ea4b4f51de27c88010f4",
+        "url": "https://api.github.com/repos/discord/react-native-webview/commits/f97e9eca0542312daef1ea4b4f51de27c88010f4"
+      },
+      "protected": false
+    },
+    {
+      "name": "ci/detox",
+      "commit": {
+        "sha": "52717b20af9f3d6d628c38f72ac5a15b25042df2",
+        "url": "https://api.github.com/repos/discord/react-native-webview/commits/52717b20af9f3d6d628c38f72ac5a15b25042df2"
+      },
+      "protected": false
+    },
+    {
+      "name": "dependencies-update",
+      "commit": {
+        "sha": "7eb979b69cef9360111ad049d75d6896975d97b7",
+        "url": "https://api.github.com/repos/discord/react-native-webview/commits/7eb979b69cef9360111ad049d75d6896975d97b7"
+      },
+      "protected": false
+    },
+    {
+      "name": "docs/debugging-tweak",
+      "commit": {
+        "sha": "e22e7e2252d211da532dd4293c01a49ad0549836",
+        "url": "https://api.github.com/repos/discord/react-native-webview/commits/e22e7e2252d211da532dd4293c01a49ad0549836"
+      },
+      "protected": false
+    },
+    {
+      "name": "docs/nav-state-changes",
+      "commit": {
+        "sha": "1b54a379788c2c951c98cb6c4c67886e2ac8d218",
+        "url": "https://api.github.com/repos/discord/react-native-webview/commits/1b54a379788c2c951c98cb6c4c67886e2ac8d218"
+      },
+      "protected": false
+    },
+    {
+      "name": "docs/onShouldStartLoadWithRequest",
+      "commit": {
+        "sha": "e543e940d43e2d5f75d8a628f4861caf2b2d2416",
+        "url": "https://api.github.com/repos/discord/react-native-webview/commits/e543e940d43e2d5f75d8a628f4861caf2b2d2416"
+      },
+      "protected": false
+    },
+    {
+      "name": "docs/url-change",
+      "commit": {
+        "sha": "492be021d27c975d1847801de3e58264de68699a",
+        "url": "https://api.github.com/repos/discord/react-native-webview/commits/492be021d27c975d1847801de3e58264de68699a"
+      },
+      "protected": false
+    },
+    {
+      "name": "fix/merge-issue",
+      "commit": {
+        "sha": "6519d98229507ebd64060952be49a9edde49019e",
+        "url": "https://api.github.com/repos/discord/react-native-webview/commits/6519d98229507ebd64060952be49a9edde49019e"
+      },
+      "protected": false
+    }
+  ],
   "last5": {
     "commits": [
       {
