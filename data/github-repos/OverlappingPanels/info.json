@@ -331,7 +331,123 @@
         ]
       }
     ],
-    "releases": [],
+    "releases": [
+      {
+        "url": "https://api.github.com/repos/discord/OverlappingPanels/releases/54283285",
+        "id": 54283285,
+        "author": {
+          "login": "donaldchen",
+          "id": 3821698,
+          "node_id": "MDQ6VXNlcjM4MjE2OTg=",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/donaldchen",
+          "type": "User",
+          "site_admin": false
+        },
+        "node_id": "RE_kwDOD5vQRc4DPEwV",
+        "tag_name": "0.1.5",
+        "target_commitish": "master",
+        "name": "0.1.5",
+        "draft": false,
+        "prerelease": false,
+        "created_at": "2021-11-30T00:50:14Z",
+        "published_at": "2021-11-30T00:51:57Z",
+        "assets": [],
+        "body": "This release deletes the deprecated APIs for adding and removing child gesture regions. Those APIs broke when we fixed a bug in v0.1.4. Moving forward, use the `PanelsChildGestureRegionObserver#register()` and `PanelsChildGestureRegionObserver#unregister()` APIs."
+      },
+      {
+        "url": "https://api.github.com/repos/discord/OverlappingPanels/releases/53756640",
+        "id": 53756640,
+        "author": {
+          "login": "donaldchen",
+          "id": 3821698,
+          "node_id": "MDQ6VXNlcjM4MjE2OTg=",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/donaldchen",
+          "type": "User",
+          "site_admin": false
+        },
+        "node_id": "RE_kwDOD5vQRc4DNELg",
+        "tag_name": "0.1.4",
+        "target_commitish": "master",
+        "name": "0.1.4",
+        "draft": false,
+        "prerelease": false,
+        "created_at": "2021-11-19T23:22:10Z",
+        "published_at": "2021-11-19T23:23:29Z",
+        "assets": [],
+        "body": "This release fixes an issue with `PanelsChildGestureRegionObserver` where registering and unregistering a ViewPager as a child gesture region didn't work properly."
+      },
+      {
+        "url": "https://api.github.com/repos/discord/OverlappingPanels/releases/48080346",
+        "id": 48080346,
+        "author": {
+          "login": "charlesx2013",
+          "id": 5563367,
+          "node_id": "MDQ6VXNlcjU1NjMzNjc=",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/charlesx2013",
+          "type": "User",
+          "site_admin": false
+        },
+        "node_id": "MDc6UmVsZWFzZTQ4MDgwMzQ2",
+        "tag_name": "0.1.3",
+        "target_commitish": "master",
+        "name": "0.1.3",
+        "draft": false,
+        "prerelease": false,
+        "created_at": "2021-08-18T23:15:29Z",
+        "published_at": "2021-08-19T00:23:31Z",
+        "assets": [],
+        "body": "This release fixes an issue with `PanelsChildGestureRegionObserver` where vertically scrolling views (e.g. ViewPagers) were not registering their child gesture regions."
+      },
+      {
+        "url": "https://api.github.com/repos/discord/OverlappingPanels/releases/36999361",
+        "id": 36999361,
+        "author": {
+          "login": "donaldchen",
+          "id": 3821698,
+          "node_id": "MDQ6VXNlcjM4MjE2OTg=",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/donaldchen",
+          "type": "User",
+          "site_admin": false
+        },
+        "node_id": "MDc6UmVsZWFzZTM2OTk5MzYx",
+        "tag_name": "0.1.2",
+        "target_commitish": "master",
+        "name": "0.1.2",
+        "draft": false,
+        "prerelease": false,
+        "created_at": "2021-01-27T22:40:46Z",
+        "published_at": "2021-01-27T22:43:04Z",
+        "assets": [],
+        "body": "Fixes a bug where clicking the right edge of the left panel in landscape mode gets incorrectly handled as clicking the closed center panel."
+      },
+      {
+        "url": "https://api.github.com/repos/discord/OverlappingPanels/releases/29465613",
+        "id": 29465613,
+        "author": {
+          "login": "donaldchen",
+          "id": 3821698,
+          "node_id": "MDQ6VXNlcjM4MjE2OTg=",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/donaldchen",
+          "type": "User",
+          "site_admin": false
+        },
+        "node_id": "MDc6UmVsZWFzZTI5NDY1NjEz",
+        "tag_name": "0.1.1",
+        "target_commitish": "master",
+        "name": "0.1.1",
+        "draft": false,
+        "prerelease": false,
+        "created_at": "2020-08-07T21:07:16Z",
+        "published_at": "2020-08-07T21:10:42Z",
+        "assets": [],
+        "body": "Improves TalkBack support by hiding the center panel from TalkBack when the center panel is closed."
+      }
+    ],
     "issues": [
       {
         "url": "https://api.github.com/repos/discord/OverlappingPanels/issues/38",
@@ -554,6 +670,873 @@
         "state_reason": "completed"
       }
     ],
-    "pullRequests": []
+    "pullRequests": [
+      {
+        "url": "https://api.github.com/repos/discord/OverlappingPanels/pulls/35",
+        "id": 824008943,
+        "node_id": "PR_kwDOD5vQRc4xHWDv",
+        "number": 35,
+        "state": "closed",
+        "locked": false,
+        "title": "Security Check",
+        "user": {
+          "login": "aWJtC",
+          "id": 95445067,
+          "node_id": "U_kgDOBbBgSw",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/aWJtC",
+          "type": "User",
+          "site_admin": false
+        },
+        "body": null,
+        "created_at": "2022-01-16T20:33:01Z",
+        "updated_at": "2022-01-16T20:39:51Z",
+        "closed_at": "2022-01-16T20:39:51Z",
+        "merged_at": null,
+        "merge_commit_sha": "8f240ec6001503752f6d9e9215d038504c02e899",
+        "assignee": null,
+        "assignees": [],
+        "requested_reviewers": [],
+        "requested_teams": [],
+        "labels": [],
+        "milestone": null,
+        "draft": false,
+        "head": {
+          "label": "aWJtC:security-check",
+          "ref": "security-check",
+          "sha": "a056f8077b5f4f243def0f13390780106446c6a4",
+          "user": {
+            "login": "aWJtC",
+            "id": 95445067,
+            "node_id": "U_kgDOBbBgSw",
+            "gravatar_id": "",
+            "url": "https://api.github.com/users/aWJtC",
+            "type": "User",
+            "site_admin": false
+          },
+          "repo": null
+        },
+        "base": {
+          "label": "discord:master",
+          "ref": "master",
+          "sha": "70b4a7cf43c6771873b1e091029d332896d41a1a",
+          "user": {
+            "login": "discord",
+            "id": 1965106,
+            "node_id": "MDEyOk9yZ2FuaXphdGlvbjE5NjUxMDY=",
+            "gravatar_id": "",
+            "url": "https://api.github.com/users/discord",
+            "type": "Organization",
+            "site_admin": false
+          },
+          "repo": {
+            "id": 261869637,
+            "node_id": "MDEwOlJlcG9zaXRvcnkyNjE4Njk2Mzc=",
+            "name": "OverlappingPanels",
+            "full_name": "discord/OverlappingPanels",
+            "private": false,
+            "owner": {
+              "login": "discord",
+              "id": 1965106,
+              "node_id": "MDEyOk9yZ2FuaXphdGlvbjE5NjUxMDY=",
+              "gravatar_id": "",
+              "url": "https://api.github.com/users/discord",
+              "type": "Organization",
+              "site_admin": false
+            },
+            "description": "Overlapping Panels is a gestures-driven navigation UI library for Android",
+            "fork": false,
+            "url": "https://api.github.com/repos/discord/OverlappingPanels",
+            "created_at": "2020-05-06T20:19:55Z",
+            "updated_at": "2023-03-07T18:44:29Z",
+            "pushed_at": "2022-01-16T20:33:01Z",
+            "homepage": "",
+            "size": 13134,
+            "stargazers_count": 401,
+            "watchers_count": 401,
+            "language": "Kotlin",
+            "has_issues": true,
+            "has_projects": true,
+            "has_downloads": true,
+            "has_wiki": true,
+            "has_pages": false,
+            "has_discussions": false,
+            "forks_count": 26,
+            "archived": false,
+            "disabled": false,
+            "open_issues_count": 9,
+            "license": {
+              "key": "apache-2.0",
+              "name": "Apache License 2.0",
+              "spdx_id": "Apache-2.0",
+              "url": "https://api.github.com/licenses/apache-2.0",
+              "node_id": "MDc6TGljZW5zZTI="
+            },
+            "allow_forking": true,
+            "is_template": false,
+            "web_commit_signoff_required": false,
+            "topics": [],
+            "visibility": "public",
+            "forks": 26,
+            "open_issues": 9,
+            "watchers": 401,
+            "default_branch": "master"
+          }
+        },
+        "_links": {
+          "self": {
+            "href": "https://api.github.com/repos/discord/OverlappingPanels/pulls/35"
+          },
+          "html": {
+            "href": "https://github.com/discord/OverlappingPanels/pull/35"
+          },
+          "issue": {
+            "href": "https://api.github.com/repos/discord/OverlappingPanels/issues/35"
+          },
+          "comments": {
+            "href": "https://api.github.com/repos/discord/OverlappingPanels/issues/35/comments"
+          },
+          "review_comments": {
+            "href": "https://api.github.com/repos/discord/OverlappingPanels/pulls/35/comments"
+          },
+          "review_comment": {
+            "href": "https://api.github.com/repos/discord/OverlappingPanels/pulls/comments{/number}"
+          },
+          "commits": {
+            "href": "https://api.github.com/repos/discord/OverlappingPanels/pulls/35/commits"
+          },
+          "statuses": {
+            "href": "https://api.github.com/repos/discord/OverlappingPanels/statuses/a056f8077b5f4f243def0f13390780106446c6a4"
+          }
+        },
+        "author_association": "NONE",
+        "auto_merge": null,
+        "active_lock_reason": null
+      },
+      {
+        "url": "https://api.github.com/repos/discord/OverlappingPanels/pulls/33",
+        "id": 791196198,
+        "node_id": "PR_kwDOD5vQRc4vKLIm",
+        "number": 33,
+        "state": "closed",
+        "locked": false,
+        "title": "delete deprecated child gesture region APIs",
+        "user": {
+          "login": "donaldchen",
+          "id": 3821698,
+          "node_id": "MDQ6VXNlcjM4MjE2OTg=",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/donaldchen",
+          "type": "User",
+          "site_admin": false
+        },
+        "body": "# Description\r\n\r\nOur bug fix in https://github.com/discord/OverlappingPanels/pull/31 broke the deprecated child-gesture-region APIs that required directly calling `View#addOnLayoutChangeListener` and `PanelsChildGestureRegionObserver#remove()`. This PR deletes those deprecated APIs and updates documentation. Moving forward, we should use `PanelsChildGestureRegionObserver#register()` and `PanelsChildGestureRegionObserver#unregister()`.\r\n\r\n\r\n# Test Plan\r\n\r\nRun these changes in the sample app. Confirm that horizontal scrolling in the main center panel works, and confirm that horizontal scrolling in the view pager works.",
+        "created_at": "2021-11-30T00:37:45Z",
+        "updated_at": "2021-11-30T00:50:14Z",
+        "closed_at": "2021-11-30T00:50:14Z",
+        "merged_at": "2021-11-30T00:50:14Z",
+        "merge_commit_sha": "70b4a7cf43c6771873b1e091029d332896d41a1a",
+        "assignee": null,
+        "assignees": [],
+        "requested_reviewers": [],
+        "requested_teams": [],
+        "labels": [],
+        "milestone": null,
+        "draft": false,
+        "head": {
+          "label": "discord:deprecate-legacy-remove-methods",
+          "ref": "deprecate-legacy-remove-methods",
+          "sha": "01f214e23b253fdf46536972c468080791a365d8",
+          "user": {
+            "login": "discord",
+            "id": 1965106,
+            "node_id": "MDEyOk9yZ2FuaXphdGlvbjE5NjUxMDY=",
+            "gravatar_id": "",
+            "url": "https://api.github.com/users/discord",
+            "type": "Organization",
+            "site_admin": false
+          },
+          "repo": {
+            "id": 261869637,
+            "node_id": "MDEwOlJlcG9zaXRvcnkyNjE4Njk2Mzc=",
+            "name": "OverlappingPanels",
+            "full_name": "discord/OverlappingPanels",
+            "private": false,
+            "owner": {
+              "login": "discord",
+              "id": 1965106,
+              "node_id": "MDEyOk9yZ2FuaXphdGlvbjE5NjUxMDY=",
+              "gravatar_id": "",
+              "url": "https://api.github.com/users/discord",
+              "type": "Organization",
+              "site_admin": false
+            },
+            "description": "Overlapping Panels is a gestures-driven navigation UI library for Android",
+            "fork": false,
+            "url": "https://api.github.com/repos/discord/OverlappingPanels",
+            "created_at": "2020-05-06T20:19:55Z",
+            "updated_at": "2023-03-07T18:44:29Z",
+            "pushed_at": "2022-01-16T20:33:01Z",
+            "homepage": "",
+            "size": 13134,
+            "stargazers_count": 401,
+            "watchers_count": 401,
+            "language": "Kotlin",
+            "has_issues": true,
+            "has_projects": true,
+            "has_downloads": true,
+            "has_wiki": true,
+            "has_pages": false,
+            "has_discussions": false,
+            "forks_count": 26,
+            "archived": false,
+            "disabled": false,
+            "open_issues_count": 9,
+            "license": {
+              "key": "apache-2.0",
+              "name": "Apache License 2.0",
+              "spdx_id": "Apache-2.0",
+              "url": "https://api.github.com/licenses/apache-2.0",
+              "node_id": "MDc6TGljZW5zZTI="
+            },
+            "allow_forking": true,
+            "is_template": false,
+            "web_commit_signoff_required": false,
+            "topics": [],
+            "visibility": "public",
+            "forks": 26,
+            "open_issues": 9,
+            "watchers": 401,
+            "default_branch": "master"
+          }
+        },
+        "base": {
+          "label": "discord:master",
+          "ref": "master",
+          "sha": "dd40b46ff25ec5e35d9fa0a2d9600a565980483e",
+          "user": {
+            "login": "discord",
+            "id": 1965106,
+            "node_id": "MDEyOk9yZ2FuaXphdGlvbjE5NjUxMDY=",
+            "gravatar_id": "",
+            "url": "https://api.github.com/users/discord",
+            "type": "Organization",
+            "site_admin": false
+          },
+          "repo": {
+            "id": 261869637,
+            "node_id": "MDEwOlJlcG9zaXRvcnkyNjE4Njk2Mzc=",
+            "name": "OverlappingPanels",
+            "full_name": "discord/OverlappingPanels",
+            "private": false,
+            "owner": {
+              "login": "discord",
+              "id": 1965106,
+              "node_id": "MDEyOk9yZ2FuaXphdGlvbjE5NjUxMDY=",
+              "gravatar_id": "",
+              "url": "https://api.github.com/users/discord",
+              "type": "Organization",
+              "site_admin": false
+            },
+            "description": "Overlapping Panels is a gestures-driven navigation UI library for Android",
+            "fork": false,
+            "url": "https://api.github.com/repos/discord/OverlappingPanels",
+            "created_at": "2020-05-06T20:19:55Z",
+            "updated_at": "2023-03-07T18:44:29Z",
+            "pushed_at": "2022-01-16T20:33:01Z",
+            "homepage": "",
+            "size": 13134,
+            "stargazers_count": 401,
+            "watchers_count": 401,
+            "language": "Kotlin",
+            "has_issues": true,
+            "has_projects": true,
+            "has_downloads": true,
+            "has_wiki": true,
+            "has_pages": false,
+            "has_discussions": false,
+            "forks_count": 26,
+            "archived": false,
+            "disabled": false,
+            "open_issues_count": 9,
+            "license": {
+              "key": "apache-2.0",
+              "name": "Apache License 2.0",
+              "spdx_id": "Apache-2.0",
+              "url": "https://api.github.com/licenses/apache-2.0",
+              "node_id": "MDc6TGljZW5zZTI="
+            },
+            "allow_forking": true,
+            "is_template": false,
+            "web_commit_signoff_required": false,
+            "topics": [],
+            "visibility": "public",
+            "forks": 26,
+            "open_issues": 9,
+            "watchers": 401,
+            "default_branch": "master"
+          }
+        },
+        "_links": {
+          "self": {
+            "href": "https://api.github.com/repos/discord/OverlappingPanels/pulls/33"
+          },
+          "html": {
+            "href": "https://github.com/discord/OverlappingPanels/pull/33"
+          },
+          "issue": {
+            "href": "https://api.github.com/repos/discord/OverlappingPanels/issues/33"
+          },
+          "comments": {
+            "href": "https://api.github.com/repos/discord/OverlappingPanels/issues/33/comments"
+          },
+          "review_comments": {
+            "href": "https://api.github.com/repos/discord/OverlappingPanels/pulls/33/comments"
+          },
+          "review_comment": {
+            "href": "https://api.github.com/repos/discord/OverlappingPanels/pulls/comments{/number}"
+          },
+          "commits": {
+            "href": "https://api.github.com/repos/discord/OverlappingPanels/pulls/33/commits"
+          },
+          "statuses": {
+            "href": "https://api.github.com/repos/discord/OverlappingPanels/statuses/01f214e23b253fdf46536972c468080791a365d8"
+          }
+        },
+        "author_association": "COLLABORATOR",
+        "auto_merge": null,
+        "active_lock_reason": null
+      },
+      {
+        "url": "https://api.github.com/repos/discord/OverlappingPanels/pulls/31",
+        "id": 785056308,
+        "node_id": "PR_kwDOD5vQRc4uywI0",
+        "number": 31,
+        "state": "closed",
+        "locked": false,
+        "title": "fix registering and unregistering ViewPager as child gesture region",
+        "user": {
+          "login": "donaldchen",
+          "id": 3821698,
+          "node_id": "MDQ6VXNlcjM4MjE2OTg=",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/donaldchen",
+          "type": "User",
+          "site_admin": false
+        },
+        "body": "**Steps to Reproduce Bug**\r\n1) Configure the sample app to register the view pager child gesture region when showing the view pager (like in https://github.com/discord/OverlappingPanels/pull/31/commits/0f71d0f34513f37636b85456b080baffb0dc3bf3). Configure it to unregister that region when hiding the view pager to navigate to the main view of the sample app\r\n2) In the sample app, go to the view pager.\r\n3) Confirm that you can scroll the view pager.\r\n4) Go to the main non-view-pager screen, and try to swipe the center panel.\r\n\r\n**Expected Behavior**\r\nThe center panel should move horizontally\r\n\r\n**Buggy Behavior Before This PR**\r\nThe center panel doesn't move.\r\n\r\n\r\nBefore\r\n\r\nhttps://user-images.githubusercontent.com/3821698/142698837-05a3d3c5-64db-4ec5-a708-0992695b3c03.mov\r\n\r\n\r\nAfter\r\n\r\nhttps://user-images.githubusercontent.com/3821698/142698843-96672b14-f86e-47d1-86de-90e7ea1215ad.mov\r\n\r\n\r\n\r\n",
+        "created_at": "2021-11-19T22:01:09Z",
+        "updated_at": "2021-11-19T23:22:10Z",
+        "closed_at": "2021-11-19T23:22:10Z",
+        "merged_at": "2021-11-19T23:22:10Z",
+        "merge_commit_sha": "dd40b46ff25ec5e35d9fa0a2d9600a565980483e",
+        "assignee": null,
+        "assignees": [],
+        "requested_reviewers": [],
+        "requested_teams": [],
+        "labels": [],
+        "milestone": null,
+        "draft": false,
+        "head": {
+          "label": "discord:bugfix-registering-same-listener-twice",
+          "ref": "bugfix-registering-same-listener-twice",
+          "sha": "3bfd78dfc12525156c9039d7233d3958cb78161e",
+          "user": {
+            "login": "discord",
+            "id": 1965106,
+            "node_id": "MDEyOk9yZ2FuaXphdGlvbjE5NjUxMDY=",
+            "gravatar_id": "",
+            "url": "https://api.github.com/users/discord",
+            "type": "Organization",
+            "site_admin": false
+          },
+          "repo": {
+            "id": 261869637,
+            "node_id": "MDEwOlJlcG9zaXRvcnkyNjE4Njk2Mzc=",
+            "name": "OverlappingPanels",
+            "full_name": "discord/OverlappingPanels",
+            "private": false,
+            "owner": {
+              "login": "discord",
+              "id": 1965106,
+              "node_id": "MDEyOk9yZ2FuaXphdGlvbjE5NjUxMDY=",
+              "gravatar_id": "",
+              "url": "https://api.github.com/users/discord",
+              "type": "Organization",
+              "site_admin": false
+            },
+            "description": "Overlapping Panels is a gestures-driven navigation UI library for Android",
+            "fork": false,
+            "url": "https://api.github.com/repos/discord/OverlappingPanels",
+            "created_at": "2020-05-06T20:19:55Z",
+            "updated_at": "2023-03-07T18:44:29Z",
+            "pushed_at": "2022-01-16T20:33:01Z",
+            "homepage": "",
+            "size": 13134,
+            "stargazers_count": 401,
+            "watchers_count": 401,
+            "language": "Kotlin",
+            "has_issues": true,
+            "has_projects": true,
+            "has_downloads": true,
+            "has_wiki": true,
+            "has_pages": false,
+            "has_discussions": false,
+            "forks_count": 26,
+            "archived": false,
+            "disabled": false,
+            "open_issues_count": 9,
+            "license": {
+              "key": "apache-2.0",
+              "name": "Apache License 2.0",
+              "spdx_id": "Apache-2.0",
+              "url": "https://api.github.com/licenses/apache-2.0",
+              "node_id": "MDc6TGljZW5zZTI="
+            },
+            "allow_forking": true,
+            "is_template": false,
+            "web_commit_signoff_required": false,
+            "topics": [],
+            "visibility": "public",
+            "forks": 26,
+            "open_issues": 9,
+            "watchers": 401,
+            "default_branch": "master"
+          }
+        },
+        "base": {
+          "label": "discord:master",
+          "ref": "master",
+          "sha": "2396dc0afd7987ace9cb2fbd4db5ff9d26156c2a",
+          "user": {
+            "login": "discord",
+            "id": 1965106,
+            "node_id": "MDEyOk9yZ2FuaXphdGlvbjE5NjUxMDY=",
+            "gravatar_id": "",
+            "url": "https://api.github.com/users/discord",
+            "type": "Organization",
+            "site_admin": false
+          },
+          "repo": {
+            "id": 261869637,
+            "node_id": "MDEwOlJlcG9zaXRvcnkyNjE4Njk2Mzc=",
+            "name": "OverlappingPanels",
+            "full_name": "discord/OverlappingPanels",
+            "private": false,
+            "owner": {
+              "login": "discord",
+              "id": 1965106,
+              "node_id": "MDEyOk9yZ2FuaXphdGlvbjE5NjUxMDY=",
+              "gravatar_id": "",
+              "url": "https://api.github.com/users/discord",
+              "type": "Organization",
+              "site_admin": false
+            },
+            "description": "Overlapping Panels is a gestures-driven navigation UI library for Android",
+            "fork": false,
+            "url": "https://api.github.com/repos/discord/OverlappingPanels",
+            "created_at": "2020-05-06T20:19:55Z",
+            "updated_at": "2023-03-07T18:44:29Z",
+            "pushed_at": "2022-01-16T20:33:01Z",
+            "homepage": "",
+            "size": 13134,
+            "stargazers_count": 401,
+            "watchers_count": 401,
+            "language": "Kotlin",
+            "has_issues": true,
+            "has_projects": true,
+            "has_downloads": true,
+            "has_wiki": true,
+            "has_pages": false,
+            "has_discussions": false,
+            "forks_count": 26,
+            "archived": false,
+            "disabled": false,
+            "open_issues_count": 9,
+            "license": {
+              "key": "apache-2.0",
+              "name": "Apache License 2.0",
+              "spdx_id": "Apache-2.0",
+              "url": "https://api.github.com/licenses/apache-2.0",
+              "node_id": "MDc6TGljZW5zZTI="
+            },
+            "allow_forking": true,
+            "is_template": false,
+            "web_commit_signoff_required": false,
+            "topics": [],
+            "visibility": "public",
+            "forks": 26,
+            "open_issues": 9,
+            "watchers": 401,
+            "default_branch": "master"
+          }
+        },
+        "_links": {
+          "self": {
+            "href": "https://api.github.com/repos/discord/OverlappingPanels/pulls/31"
+          },
+          "html": {
+            "href": "https://github.com/discord/OverlappingPanels/pull/31"
+          },
+          "issue": {
+            "href": "https://api.github.com/repos/discord/OverlappingPanels/issues/31"
+          },
+          "comments": {
+            "href": "https://api.github.com/repos/discord/OverlappingPanels/issues/31/comments"
+          },
+          "review_comments": {
+            "href": "https://api.github.com/repos/discord/OverlappingPanels/pulls/31/comments"
+          },
+          "review_comment": {
+            "href": "https://api.github.com/repos/discord/OverlappingPanels/pulls/comments{/number}"
+          },
+          "commits": {
+            "href": "https://api.github.com/repos/discord/OverlappingPanels/pulls/31/commits"
+          },
+          "statuses": {
+            "href": "https://api.github.com/repos/discord/OverlappingPanels/statuses/3bfd78dfc12525156c9039d7233d3958cb78161e"
+          }
+        },
+        "author_association": "COLLABORATOR",
+        "auto_merge": null,
+        "active_lock_reason": null
+      },
+      {
+        "url": "https://api.github.com/repos/discord/OverlappingPanels/pulls/30",
+        "id": 732198683,
+        "node_id": "MDExOlB1bGxSZXF1ZXN0NzMyMTk4Njgz",
+        "number": 30,
+        "state": "closed",
+        "locked": false,
+        "title": "OverlappingPanels for Jetpack Compose",
+        "user": {
+          "login": "X1nto",
+          "id": 48173186,
+          "node_id": "MDQ6VXNlcjQ4MTczMTg2",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/X1nto",
+          "type": "User",
+          "site_admin": false
+        },
+        "body": "Add a basic implementation of OverlappingPanels for Jetpack Compose as well as a sample app for it.\r\n\r\nOther changes:\r\n- Updated dependencies\r\n- Updated Gradle and AGP (required for Compose)",
+        "created_at": "2021-09-12T17:31:49Z",
+        "updated_at": "2021-09-26T12:50:31Z",
+        "closed_at": "2021-09-26T12:50:31Z",
+        "merged_at": null,
+        "merge_commit_sha": "81674686cf25d81439d16c5aeb3837218d9fd194",
+        "assignee": null,
+        "assignees": [],
+        "requested_reviewers": [],
+        "requested_teams": [],
+        "labels": [],
+        "milestone": null,
+        "draft": false,
+        "head": {
+          "label": "X1nto:master",
+          "ref": "master",
+          "sha": "0446c86f8ea4b6c358e18fd2e0a026196d49f5fc",
+          "user": {
+            "login": "X1nto",
+            "id": 48173186,
+            "node_id": "MDQ6VXNlcjQ4MTczMTg2",
+            "gravatar_id": "",
+            "url": "https://api.github.com/users/X1nto",
+            "type": "User",
+            "site_admin": false
+          },
+          "repo": null
+        },
+        "base": {
+          "label": "discord:master",
+          "ref": "master",
+          "sha": "2396dc0afd7987ace9cb2fbd4db5ff9d26156c2a",
+          "user": {
+            "login": "discord",
+            "id": 1965106,
+            "node_id": "MDEyOk9yZ2FuaXphdGlvbjE5NjUxMDY=",
+            "gravatar_id": "",
+            "url": "https://api.github.com/users/discord",
+            "type": "Organization",
+            "site_admin": false
+          },
+          "repo": {
+            "id": 261869637,
+            "node_id": "MDEwOlJlcG9zaXRvcnkyNjE4Njk2Mzc=",
+            "name": "OverlappingPanels",
+            "full_name": "discord/OverlappingPanels",
+            "private": false,
+            "owner": {
+              "login": "discord",
+              "id": 1965106,
+              "node_id": "MDEyOk9yZ2FuaXphdGlvbjE5NjUxMDY=",
+              "gravatar_id": "",
+              "url": "https://api.github.com/users/discord",
+              "type": "Organization",
+              "site_admin": false
+            },
+            "description": "Overlapping Panels is a gestures-driven navigation UI library for Android",
+            "fork": false,
+            "url": "https://api.github.com/repos/discord/OverlappingPanels",
+            "created_at": "2020-05-06T20:19:55Z",
+            "updated_at": "2023-03-07T18:44:29Z",
+            "pushed_at": "2022-01-16T20:33:01Z",
+            "homepage": "",
+            "size": 13134,
+            "stargazers_count": 401,
+            "watchers_count": 401,
+            "language": "Kotlin",
+            "has_issues": true,
+            "has_projects": true,
+            "has_downloads": true,
+            "has_wiki": true,
+            "has_pages": false,
+            "has_discussions": false,
+            "forks_count": 26,
+            "archived": false,
+            "disabled": false,
+            "open_issues_count": 9,
+            "license": {
+              "key": "apache-2.0",
+              "name": "Apache License 2.0",
+              "spdx_id": "Apache-2.0",
+              "url": "https://api.github.com/licenses/apache-2.0",
+              "node_id": "MDc6TGljZW5zZTI="
+            },
+            "allow_forking": true,
+            "is_template": false,
+            "web_commit_signoff_required": false,
+            "topics": [],
+            "visibility": "public",
+            "forks": 26,
+            "open_issues": 9,
+            "watchers": 401,
+            "default_branch": "master"
+          }
+        },
+        "_links": {
+          "self": {
+            "href": "https://api.github.com/repos/discord/OverlappingPanels/pulls/30"
+          },
+          "html": {
+            "href": "https://github.com/discord/OverlappingPanels/pull/30"
+          },
+          "issue": {
+            "href": "https://api.github.com/repos/discord/OverlappingPanels/issues/30"
+          },
+          "comments": {
+            "href": "https://api.github.com/repos/discord/OverlappingPanels/issues/30/comments"
+          },
+          "review_comments": {
+            "href": "https://api.github.com/repos/discord/OverlappingPanels/pulls/30/comments"
+          },
+          "review_comment": {
+            "href": "https://api.github.com/repos/discord/OverlappingPanels/pulls/comments{/number}"
+          },
+          "commits": {
+            "href": "https://api.github.com/repos/discord/OverlappingPanels/pulls/30/commits"
+          },
+          "statuses": {
+            "href": "https://api.github.com/repos/discord/OverlappingPanels/statuses/0446c86f8ea4b6c358e18fd2e0a026196d49f5fc"
+          }
+        },
+        "author_association": "NONE",
+        "auto_merge": null,
+        "active_lock_reason": null
+      },
+      {
+        "url": "https://api.github.com/repos/discord/OverlappingPanels/pulls/29",
+        "id": 715367901,
+        "node_id": "MDExOlB1bGxSZXF1ZXN0NzE1MzY3OTAx",
+        "number": 29,
+        "state": "closed",
+        "locked": false,
+        "title": "Tweaking PanelsChildGestureRegionObserver",
+        "user": {
+          "login": "charlesx2013",
+          "id": 5563367,
+          "node_id": "MDQ6VXNlcjU1NjMzNjc=",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/charlesx2013",
+          "type": "User",
+          "site_admin": false
+        },
+        "body": "This PR fixes an issue where the `PanelsChildGestureRegionObserver` wasn't working at all for integrated viewpagers due to the bounds not being updated correctly when it was scrolling up or down.\r\n\r\n\r\nhttps://user-images.githubusercontent.com/5563367/129962435-41ae96e1-ddb8-4a1a-af16-d4fe890ee037.mp4\r\n\r\n\r\n\r\n@donaldchen ",
+        "created_at": "2021-08-18T19:43:53Z",
+        "updated_at": "2021-08-18T23:15:29Z",
+        "closed_at": "2021-08-18T23:15:29Z",
+        "merged_at": "2021-08-18T23:15:29Z",
+        "merge_commit_sha": "2396dc0afd7987ace9cb2fbd4db5ff9d26156c2a",
+        "assignee": null,
+        "assignees": [],
+        "requested_reviewers": [],
+        "requested_teams": [],
+        "labels": [],
+        "milestone": null,
+        "draft": false,
+        "head": {
+          "label": "discord:charles/panel-fixes",
+          "ref": "charles/panel-fixes",
+          "sha": "5512d763cf66c7a3005b56cff8207fae852600cb",
+          "user": {
+            "login": "discord",
+            "id": 1965106,
+            "node_id": "MDEyOk9yZ2FuaXphdGlvbjE5NjUxMDY=",
+            "gravatar_id": "",
+            "url": "https://api.github.com/users/discord",
+            "type": "Organization",
+            "site_admin": false
+          },
+          "repo": {
+            "id": 261869637,
+            "node_id": "MDEwOlJlcG9zaXRvcnkyNjE4Njk2Mzc=",
+            "name": "OverlappingPanels",
+            "full_name": "discord/OverlappingPanels",
+            "private": false,
+            "owner": {
+              "login": "discord",
+              "id": 1965106,
+              "node_id": "MDEyOk9yZ2FuaXphdGlvbjE5NjUxMDY=",
+              "gravatar_id": "",
+              "url": "https://api.github.com/users/discord",
+              "type": "Organization",
+              "site_admin": false
+            },
+            "description": "Overlapping Panels is a gestures-driven navigation UI library for Android",
+            "fork": false,
+            "url": "https://api.github.com/repos/discord/OverlappingPanels",
+            "created_at": "2020-05-06T20:19:55Z",
+            "updated_at": "2023-03-07T18:44:29Z",
+            "pushed_at": "2022-01-16T20:33:01Z",
+            "homepage": "",
+            "size": 13134,
+            "stargazers_count": 401,
+            "watchers_count": 401,
+            "language": "Kotlin",
+            "has_issues": true,
+            "has_projects": true,
+            "has_downloads": true,
+            "has_wiki": true,
+            "has_pages": false,
+            "has_discussions": false,
+            "forks_count": 26,
+            "archived": false,
+            "disabled": false,
+            "open_issues_count": 9,
+            "license": {
+              "key": "apache-2.0",
+              "name": "Apache License 2.0",
+              "spdx_id": "Apache-2.0",
+              "url": "https://api.github.com/licenses/apache-2.0",
+              "node_id": "MDc6TGljZW5zZTI="
+            },
+            "allow_forking": true,
+            "is_template": false,
+            "web_commit_signoff_required": false,
+            "topics": [],
+            "visibility": "public",
+            "forks": 26,
+            "open_issues": 9,
+            "watchers": 401,
+            "default_branch": "master"
+          }
+        },
+        "base": {
+          "label": "discord:master",
+          "ref": "master",
+          "sha": "79590381e738548b82731127b90fa312083aebe0",
+          "user": {
+            "login": "discord",
+            "id": 1965106,
+            "node_id": "MDEyOk9yZ2FuaXphdGlvbjE5NjUxMDY=",
+            "gravatar_id": "",
+            "url": "https://api.github.com/users/discord",
+            "type": "Organization",
+            "site_admin": false
+          },
+          "repo": {
+            "id": 261869637,
+            "node_id": "MDEwOlJlcG9zaXRvcnkyNjE4Njk2Mzc=",
+            "name": "OverlappingPanels",
+            "full_name": "discord/OverlappingPanels",
+            "private": false,
+            "owner": {
+              "login": "discord",
+              "id": 1965106,
+              "node_id": "MDEyOk9yZ2FuaXphdGlvbjE5NjUxMDY=",
+              "gravatar_id": "",
+              "url": "https://api.github.com/users/discord",
+              "type": "Organization",
+              "site_admin": false
+            },
+            "description": "Overlapping Panels is a gestures-driven navigation UI library for Android",
+            "fork": false,
+            "url": "https://api.github.com/repos/discord/OverlappingPanels",
+            "created_at": "2020-05-06T20:19:55Z",
+            "updated_at": "2023-03-07T18:44:29Z",
+            "pushed_at": "2022-01-16T20:33:01Z",
+            "homepage": "",
+            "size": 13134,
+            "stargazers_count": 401,
+            "watchers_count": 401,
+            "language": "Kotlin",
+            "has_issues": true,
+            "has_projects": true,
+            "has_downloads": true,
+            "has_wiki": true,
+            "has_pages": false,
+            "has_discussions": false,
+            "forks_count": 26,
+            "archived": false,
+            "disabled": false,
+            "open_issues_count": 9,
+            "license": {
+              "key": "apache-2.0",
+              "name": "Apache License 2.0",
+              "spdx_id": "Apache-2.0",
+              "url": "https://api.github.com/licenses/apache-2.0",
+              "node_id": "MDc6TGljZW5zZTI="
+            },
+            "allow_forking": true,
+            "is_template": false,
+            "web_commit_signoff_required": false,
+            "topics": [],
+            "visibility": "public",
+            "forks": 26,
+            "open_issues": 9,
+            "watchers": 401,
+            "default_branch": "master"
+          }
+        },
+        "_links": {
+          "self": {
+            "href": "https://api.github.com/repos/discord/OverlappingPanels/pulls/29"
+          },
+          "html": {
+            "href": "https://github.com/discord/OverlappingPanels/pull/29"
+          },
+          "issue": {
+            "href": "https://api.github.com/repos/discord/OverlappingPanels/issues/29"
+          },
+          "comments": {
+            "href": "https://api.github.com/repos/discord/OverlappingPanels/issues/29/comments"
+          },
+          "review_comments": {
+            "href": "https://api.github.com/repos/discord/OverlappingPanels/pulls/29/comments"
+          },
+          "review_comment": {
+            "href": "https://api.github.com/repos/discord/OverlappingPanels/pulls/comments{/number}"
+          },
+          "commits": {
+            "href": "https://api.github.com/repos/discord/OverlappingPanels/pulls/29/commits"
+          },
+          "statuses": {
+            "href": "https://api.github.com/repos/discord/OverlappingPanels/statuses/5512d763cf66c7a3005b56cff8207fae852600cb"
+          }
+        },
+        "author_association": "COLLABORATOR",
+        "auto_merge": null,
+        "active_lock_reason": null
+      }
+    ]
   }
 }

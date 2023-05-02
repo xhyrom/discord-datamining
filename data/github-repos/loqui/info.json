@@ -749,6 +749,1077 @@
         "state_reason": null
       }
     ],
-    "pullRequests": []
+    "pullRequests": [
+      {
+        "url": "https://api.github.com/repos/discord/loqui/pulls/59",
+        "id": 969990599,
+        "node_id": "PR_kwDOBG5OWM450OHH",
+        "number": 59,
+        "state": "open",
+        "locked": true,
+        "title": "Bump futures-task from 0.3.1 to 0.3.21 in /rust",
+        "user": {
+          "login": "dependabot[bot]",
+          "id": 49699333,
+          "node_id": "MDM6Qm90NDk2OTkzMzM=",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/dependabot%5Bbot%5D",
+          "type": "Bot",
+          "site_admin": false
+        },
+        "body": "Bumps [futures-task](https://github.com/rust-lang/futures-rs) from 0.3.1 to 0.3.21.\n<details>\n<summary>Release notes</summary>\n<p><em>Sourced from <a href=\"https://github.com/rust-lang/futures-rs/releases\">futures-task's releases</a>.</em></p>\n<blockquote>\n<h2>0.3.21</h2>\n<ul>\n<li>Fix potential data race in <code>FlattenUnordered</code> that introduced in 0.3.20 (<a href=\"https://github-redirect.dependabot.com/rust-lang/futures-rs/issues/2566\">#2566</a>)</li>\n</ul>\n<h2>0.3.20</h2>\n<ul>\n<li>Fix stacked borrows violations when <code>-Zmiri-tag-raw-pointers</code> is enabled. This raises MSRV of <code>futures-task</code> to 1.45. (<a href=\"https://github-redirect.dependabot.com/rust-lang/futures-rs/issues/2548\">#2548</a>, <a href=\"https://github-redirect.dependabot.com/rust-lang/futures-rs/issues/2550\">#2550</a>)</li>\n<li>Change <code>FuturesUnordered</code> to respect yielding from future (<a href=\"https://github-redirect.dependabot.com/rust-lang/futures-rs/issues/2551\">#2551</a>)</li>\n<li>Add <code>StreamExt::{flatten_unordered, flat_map_unordered}</code> (<a href=\"https://github-redirect.dependabot.com/rust-lang/futures-rs/issues/2083\">#2083</a>)</li>\n</ul>\n<h2>0.3.19</h2>\n<ul>\n<li>Remove unstable <code>read-initializer</code> feature (<a href=\"https://github-redirect.dependabot.com/rust-lang/futures-rs/issues/2534\">#2534</a>)</li>\n<li>Fix panic in <code>FuturesUnordered</code> (<a href=\"https://github-redirect.dependabot.com/rust-lang/futures-rs/issues/2535\">#2535</a>)</li>\n<li>Fix compatibility issue with <code>FuturesUnordered</code> and tokio's cooperative scheduling (<a href=\"https://github-redirect.dependabot.com/rust-lang/futures-rs/issues/2527\">#2527</a>)</li>\n<li>Add <code>StreamExt::count</code> (<a href=\"https://github-redirect.dependabot.com/rust-lang/futures-rs/issues/2495\">#2495</a>)</li>\n</ul>\n<h2>0.3.18</h2>\n<ul>\n<li>Fix unusable <code>Sink</code> implementation on <code>stream::Scan</code> (<a href=\"https://github-redirect.dependabot.com/rust-lang/futures-rs/issues/2499\">#2499</a>)</li>\n<li>Make <code>task::noop_waker_ref</code> available without <code>std</code> feature (<a href=\"https://github-redirect.dependabot.com/rust-lang/futures-rs/issues/2505\">#2505</a>)</li>\n<li>Add async <code>LineWriter</code> (<a href=\"https://github-redirect.dependabot.com/rust-lang/futures-rs/issues/2477\">#2477</a>)</li>\n<li>Remove dependency on <code>proc-macro-hack</code>. This raises MSRV of utility crates to 1.45. (<a href=\"https://github-redirect.dependabot.com/rust-lang/futures-rs/issues/2520\">#2520</a>)</li>\n</ul>\n<h2>0.3.17</h2>\n<ul>\n<li>Use <code>FuturesOrdered</code> in <code>join_all</code> (<a href=\"https://github-redirect.dependabot.com/rust-lang/futures-rs/issues/2412\">#2412</a>)</li>\n<li>Add <code>{future, stream}::poll_immediate</code> (<a href=\"https://github-redirect.dependabot.com/rust-lang/futures-rs/issues/2452\">#2452</a>)</li>\n<li>Add <code>stream_select!</code> macro (<a href=\"https://github-redirect.dependabot.com/rust-lang/futures-rs/issues/2262\">#2262</a>)</li>\n<li>Implement <code>Default</code> for <code>OptionFuture</code> (<a href=\"https://github-redirect.dependabot.com/rust-lang/futures-rs/issues/2471\">#2471</a>)</li>\n<li>Add <code>Peekable::{peek_mut, poll_peek_mut}</code> (<a href=\"https://github-redirect.dependabot.com/rust-lang/futures-rs/issues/2488\">#2488</a>)</li>\n<li>Add <code>BufReader::seek_relative</code> (<a href=\"https://github-redirect.dependabot.com/rust-lang/futures-rs/issues/2489\">#2489</a>)</li>\n</ul>\n<h2>0.3.16</h2>\n<ul>\n<li>Add <code>TryStreamExt::try_chunks</code> (<a href=\"https://github-redirect.dependabot.com/rust-lang/futures-rs/issues/2438\">#2438</a>)</li>\n<li>Add <code>StreamExt::{all, any}</code> (<a href=\"https://github-redirect.dependabot.com/rust-lang/futures-rs/issues/2460\">#2460</a>)</li>\n<li>Add <code>stream::select_with_strategy</code> (<a href=\"https://github-redirect.dependabot.com/rust-lang/futures-rs/issues/2450\">#2450</a>)</li>\n<li>Update to new <code>io_slice_advance</code> interface (<a href=\"https://github-redirect.dependabot.com/rust-lang/futures-rs/issues/2454\">#2454</a>)</li>\n</ul>\n<h2>0.3.15</h2>\n<ul>\n<li>Use <code>#[proc_macro]</code> at Rust 1.45+ to fix an issue where proc macros don't work with rust-analyzer (<a href=\"https://github-redirect.dependabot.com/rust-lang/futures-rs/issues/2407\">#2407</a>)</li>\n<li>Support targets that do not have atomic CAS on stable Rust (<a href=\"https://github-redirect.dependabot.com/rust-lang/futures-rs/issues/2400\">#2400</a>)</li>\n<li>futures-test: Add async <code>#[test]</code> function attribute (<a href=\"https://github-redirect.dependabot.com/rust-lang/futures-rs/issues/2409\">#2409</a>)</li>\n<li>Add <code>stream::abortable</code> (<a href=\"https://github-redirect.dependabot.com/rust-lang/futures-rs/issues/2410\">#2410</a>)</li>\n<li>Add <code>FuturesUnordered::clear</code> (<a href=\"https://github-redirect.dependabot.com/rust-lang/futures-rs/issues/2415\">#2415</a>)</li>\n<li>Implement <code>IntoIterator</code> for <code>FuturesUnordered</code> (<a href=\"https://github-redirect.dependabot.com/rust-lang/futures-rs/issues/2423\">#2423</a>)</li>\n<li>Implement <code>Send</code> and <code>Sync</code> for <code>FuturesUnordered</code> iterators (<a href=\"https://github-redirect.dependabot.com/rust-lang/futures-rs/issues/2416\">#2416</a>)</li>\n<li>Make <code>FuturesUnordered::iter_pin_ref</code> public (<a href=\"https://github-redirect.dependabot.com/rust-lang/futures-rs/issues/2423\">#2423</a>)</li>\n<li>Add <code>SelectAll::clear</code> (<a href=\"https://github-redirect.dependabot.com/rust-lang/futures-rs/issues/2430\">#2430</a>)</li>\n<li>Add <code>SelectAll::{iter, iter_mut}</code> (<a href=\"https://github-redirect.dependabot.com/rust-lang/futures-rs/issues/2428\">#2428</a>)</li>\n<li>Implement <code>IntoIterator</code> for <code>SelectAll</code> (<a href=\"https://github-redirect.dependabot.com/rust-lang/futures-rs/issues/2428\">#2428</a>)</li>\n<li>Implement <code>Clone</code> for <code>WeakShared</code> (<a href=\"https://github-redirect.dependabot.com/rust-lang/futures-rs/issues/2396\">#2396</a>)</li>\n</ul>\n<h2>0.3.14</h2>\n<ul>\n<li>Add <code>future::SelectAll::into_inner</code> (<a href=\"https://github-redirect.dependabot.com/rust-lang/futures-rs/issues/2363\">#2363</a>)</li>\n</ul>\n<!-- raw HTML omitted -->\n</blockquote>\n<p>... (truncated)</p>\n</details>\n<details>\n<summary>Changelog</summary>\n<p><em>Sourced from <a href=\"https://github.com/rust-lang/futures-rs/blob/master/CHANGELOG.md\">futures-task's changelog</a>.</em></p>\n<blockquote>\n<h1>0.3.21 - 2022-02-06</h1>\n<ul>\n<li>Fix potential data race in <code>FlattenUnordered</code> that introduced in 0.3.20 (<a href=\"https://github-redirect.dependabot.com/rust-lang/futures-rs/issues/2566\">#2566</a>)</li>\n</ul>\n<h1>0.3.20 - 2022-02-06</h1>\n<p>NOTE: This release has been yanked due to a bug fixed in 0.3.21.</p>\n<ul>\n<li>Fix stacked borrows violations when <code>-Zmiri-tag-raw-pointers</code> is enabled. This raises MSRV of <code>futures-task</code> to 1.45. (<a href=\"https://github-redirect.dependabot.com/rust-lang/futures-rs/issues/2548\">#2548</a>, <a href=\"https://github-redirect.dependabot.com/rust-lang/futures-rs/issues/2550\">#2550</a>)</li>\n<li>Change <code>FuturesUnordered</code> to respect yielding from future (<a href=\"https://github-redirect.dependabot.com/rust-lang/futures-rs/issues/2551\">#2551</a>)</li>\n<li>Add <code>StreamExt::{flatten_unordered, flat_map_unordered}</code> (<a href=\"https://github-redirect.dependabot.com/rust-lang/futures-rs/issues/2083\">#2083</a>)</li>\n</ul>\n</blockquote>\n</details>\n<details>\n<summary>Commits</summary>\n<ul>\n<li><a href=\"https://github.com/rust-lang/futures-rs/commit/fc1e3250219170e31cddb8857a276cba7dd08d44\"><code>fc1e325</code></a> Release 0.3.21</li>\n<li><a href=\"https://github.com/rust-lang/futures-rs/commit/20279ebbfcd326e83161e44a2cf5afe1bfc3b074\"><code>20279eb</code></a> <code>FlattenUnordered</code>: improve wakers behavior (<a href=\"https://github-redirect.dependabot.com/rust-lang/futures-rs/issues/2566\">#2566</a>)</li>\n<li><a href=\"https://github.com/rust-lang/futures-rs/commit/75dca5ae7fabe6b7073558a8fc6793ee5caa7057\"><code>75dca5a</code></a> Fix MSRV in futures-task readme</li>\n<li><a href=\"https://github.com/rust-lang/futures-rs/commit/55281c8c8de6308ba97ce8b4ffd754ba204409a0\"><code>55281c8</code></a> Release 0.3.20</li>\n<li><a href=\"https://github.com/rust-lang/futures-rs/commit/591b982af835fc5e0ffb5104bbb9e942b2ed0631\"><code>591b982</code></a> Redefine executor and compat modules in futures crate (<a href=\"https://github-redirect.dependabot.com/rust-lang/futures-rs/issues/2564\">#2564</a>)</li>\n<li><a href=\"https://github.com/rust-lang/futures-rs/commit/94b508bfcb1d1f986f34f9b12d799e5a73f65f22\"><code>94b508b</code></a> Basic <code>StreamExt::{flatten_unordered, flat_map_unordered}</code> impls (<a href=\"https://github-redirect.dependabot.com/rust-lang/futures-rs/issues/2083\">#2083</a>)</li>\n<li><a href=\"https://github.com/rust-lang/futures-rs/commit/dca16fafa597d8e0075a7b693904c6f2ce0322a4\"><code>dca16fa</code></a> Do not auto-create PR on fork</li>\n<li><a href=\"https://github.com/rust-lang/futures-rs/commit/a9795a9243b0e6b836f71cbe9661bbb35bb17a7f\"><code>a9795a9</code></a> Automatically creates PR when no_atomic_cas.rs needs to be updated</li>\n<li><a href=\"https://github.com/rust-lang/futures-rs/commit/4841888d68eb8a7796ccd9c9f7a9dc677586e054\"><code>4841888</code></a> Update comments in build scripts</li>\n<li><a href=\"https://github.com/rust-lang/futures-rs/commit/85706b6d67aa30e1f8380f8101c14cf43be7500e\"><code>85706b6</code></a> Clean up ci/no_atomic_cas.sh</li>\n<li>Additional commits viewable in <a href=\"https://github.com/rust-lang/futures-rs/compare/0.3.1...0.3.21\">compare view</a></li>\n</ul>\n</details>\n<br />\n\n\n[![Dependabot compatibility score](https://dependabot-badges.githubapp.com/badges/compatibility_score?dependency-name=futures-task&package-manager=cargo&previous-version=0.3.1&new-version=0.3.21)](https://docs.github.com/en/github/managing-security-vulnerabilities/about-dependabot-security-updates#about-compatibility-scores)\n\nDependabot will resolve any conflicts with this PR as long as you don't alter it yourself. You can also trigger a rebase manually by commenting `@dependabot rebase`.\n\n[//]: # (dependabot-automerge-start)\n[//]: # (dependabot-automerge-end)\n\n---\n\n<details>\n<summary>Dependabot commands and options</summary>\n<br />\n\nYou can trigger Dependabot actions by commenting on this PR:\n- `@dependabot rebase` will rebase this PR\n- `@dependabot recreate` will recreate this PR, overwriting any edits that have been made to it\n- `@dependabot merge` will merge this PR after your CI passes on it\n- `@dependabot squash and merge` will squash and merge this PR after your CI passes on it\n- `@dependabot cancel merge` will cancel a previously requested merge and block automerging\n- `@dependabot reopen` will reopen this PR if it is closed\n- `@dependabot close` will close this PR and stop Dependabot recreating it. You can achieve the same result by closing it manually\n- `@dependabot ignore this major version` will close this PR and stop Dependabot creating any more for this major version (unless you reopen the PR or upgrade to it yourself)\n- `@dependabot ignore this minor version` will close this PR and stop Dependabot creating any more for this minor version (unless you reopen the PR or upgrade to it yourself)\n- `@dependabot ignore this dependency` will close this PR and stop Dependabot creating any more for this dependency (unless you reopen the PR or upgrade to it yourself)\n- `@dependabot use these labels` will set the current labels as the default for future PRs for this repo and language\n- `@dependabot use these reviewers` will set the current reviewers as the default for future PRs for this repo and language\n- `@dependabot use these assignees` will set the current assignees as the default for future PRs for this repo and language\n- `@dependabot use this milestone` will set the current milestone as the default for future PRs for this repo and language\n\nYou can disable automated security fix PRs for this repo from the [Security Alerts page](https://github.com/discord/loqui/network/alerts).\n\n</details>",
+        "created_at": "2022-06-17T01:09:23Z",
+        "updated_at": "2022-06-17T01:09:24Z",
+        "closed_at": null,
+        "merged_at": null,
+        "merge_commit_sha": "94383cd1fa0d69292f4e1fd8bff729a3f6da6668",
+        "assignee": null,
+        "assignees": [],
+        "requested_reviewers": [],
+        "requested_teams": [],
+        "labels": [
+          {
+            "id": 4214061671,
+            "node_id": "LA_kwDOBG5OWM77LXpn",
+            "url": "https://api.github.com/repos/discord/loqui/labels/dependencies",
+            "name": "dependencies",
+            "color": "0366d6",
+            "default": false,
+            "description": "Pull requests that update a dependency file"
+          }
+        ],
+        "milestone": null,
+        "draft": false,
+        "head": {
+          "label": "discord:dependabot/cargo/rust/futures-task-0.3.21",
+          "ref": "dependabot/cargo/rust/futures-task-0.3.21",
+          "sha": "64c259314ecadcc5cf1d3d92a980ad5cbee120f3",
+          "user": {
+            "login": "discord",
+            "id": 1965106,
+            "node_id": "MDEyOk9yZ2FuaXphdGlvbjE5NjUxMDY=",
+            "gravatar_id": "",
+            "url": "https://api.github.com/users/discord",
+            "type": "Organization",
+            "site_admin": false
+          },
+          "repo": {
+            "id": 74337880,
+            "node_id": "MDEwOlJlcG9zaXRvcnk3NDMzNzg4MA==",
+            "name": "loqui",
+            "full_name": "discord/loqui",
+            "private": false,
+            "owner": {
+              "login": "discord",
+              "id": 1965106,
+              "node_id": "MDEyOk9yZ2FuaXphdGlvbjE5NjUxMDY=",
+              "gravatar_id": "",
+              "url": "https://api.github.com/users/discord",
+              "type": "Organization",
+              "site_admin": false
+            },
+            "description": "RPC Transport Layer - with minimal bullshit.",
+            "fork": false,
+            "url": "https://api.github.com/repos/discord/loqui",
+            "created_at": "2016-11-21T07:34:31Z",
+            "updated_at": "2023-03-22T23:07:18Z",
+            "pushed_at": "2022-06-17T01:09:24Z",
+            "homepage": "",
+            "size": 879,
+            "stargazers_count": 217,
+            "watchers_count": 217,
+            "language": "Rust",
+            "has_issues": true,
+            "has_projects": true,
+            "has_downloads": true,
+            "has_wiki": true,
+            "has_pages": false,
+            "has_discussions": false,
+            "forks_count": 31,
+            "archived": true,
+            "disabled": false,
+            "open_issues_count": 16,
+            "license": {
+              "key": "mit",
+              "name": "MIT License",
+              "spdx_id": "MIT",
+              "url": "https://api.github.com/licenses/mit",
+              "node_id": "MDc6TGljZW5zZTEz"
+            },
+            "allow_forking": true,
+            "is_template": false,
+            "web_commit_signoff_required": false,
+            "topics": [
+              "elixir",
+              "golang",
+              "python",
+              "rpc"
+            ],
+            "visibility": "public",
+            "forks": 31,
+            "open_issues": 16,
+            "watchers": 217,
+            "default_branch": "master"
+          }
+        },
+        "base": {
+          "label": "discord:master",
+          "ref": "master",
+          "sha": "8d394a7951fd3a82d109becc1aebbd9e7ccc894a",
+          "user": {
+            "login": "discord",
+            "id": 1965106,
+            "node_id": "MDEyOk9yZ2FuaXphdGlvbjE5NjUxMDY=",
+            "gravatar_id": "",
+            "url": "https://api.github.com/users/discord",
+            "type": "Organization",
+            "site_admin": false
+          },
+          "repo": {
+            "id": 74337880,
+            "node_id": "MDEwOlJlcG9zaXRvcnk3NDMzNzg4MA==",
+            "name": "loqui",
+            "full_name": "discord/loqui",
+            "private": false,
+            "owner": {
+              "login": "discord",
+              "id": 1965106,
+              "node_id": "MDEyOk9yZ2FuaXphdGlvbjE5NjUxMDY=",
+              "gravatar_id": "",
+              "url": "https://api.github.com/users/discord",
+              "type": "Organization",
+              "site_admin": false
+            },
+            "description": "RPC Transport Layer - with minimal bullshit.",
+            "fork": false,
+            "url": "https://api.github.com/repos/discord/loqui",
+            "created_at": "2016-11-21T07:34:31Z",
+            "updated_at": "2023-03-22T23:07:18Z",
+            "pushed_at": "2022-06-17T01:09:24Z",
+            "homepage": "",
+            "size": 879,
+            "stargazers_count": 217,
+            "watchers_count": 217,
+            "language": "Rust",
+            "has_issues": true,
+            "has_projects": true,
+            "has_downloads": true,
+            "has_wiki": true,
+            "has_pages": false,
+            "has_discussions": false,
+            "forks_count": 31,
+            "archived": true,
+            "disabled": false,
+            "open_issues_count": 16,
+            "license": {
+              "key": "mit",
+              "name": "MIT License",
+              "spdx_id": "MIT",
+              "url": "https://api.github.com/licenses/mit",
+              "node_id": "MDc6TGljZW5zZTEz"
+            },
+            "allow_forking": true,
+            "is_template": false,
+            "web_commit_signoff_required": false,
+            "topics": [
+              "elixir",
+              "golang",
+              "python",
+              "rpc"
+            ],
+            "visibility": "public",
+            "forks": 31,
+            "open_issues": 16,
+            "watchers": 217,
+            "default_branch": "master"
+          }
+        },
+        "_links": {
+          "self": {
+            "href": "https://api.github.com/repos/discord/loqui/pulls/59"
+          },
+          "html": {
+            "href": "https://github.com/discord/loqui/pull/59"
+          },
+          "issue": {
+            "href": "https://api.github.com/repos/discord/loqui/issues/59"
+          },
+          "comments": {
+            "href": "https://api.github.com/repos/discord/loqui/issues/59/comments"
+          },
+          "review_comments": {
+            "href": "https://api.github.com/repos/discord/loqui/pulls/59/comments"
+          },
+          "review_comment": {
+            "href": "https://api.github.com/repos/discord/loqui/pulls/comments{/number}"
+          },
+          "commits": {
+            "href": "https://api.github.com/repos/discord/loqui/pulls/59/commits"
+          },
+          "statuses": {
+            "href": "https://api.github.com/repos/discord/loqui/statuses/64c259314ecadcc5cf1d3d92a980ad5cbee120f3"
+          }
+        },
+        "author_association": "NONE",
+        "auto_merge": null,
+        "active_lock_reason": null
+      },
+      {
+        "url": "https://api.github.com/repos/discord/loqui/pulls/58",
+        "id": 969984010,
+        "node_id": "PR_kwDOBG5OWM450MgK",
+        "number": 58,
+        "state": "open",
+        "locked": true,
+        "title": "Bump futures-util from 0.3.1 to 0.3.21 in /rust",
+        "user": {
+          "login": "dependabot[bot]",
+          "id": 49699333,
+          "node_id": "MDM6Qm90NDk2OTkzMzM=",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/dependabot%5Bbot%5D",
+          "type": "Bot",
+          "site_admin": false
+        },
+        "body": "Bumps [futures-util](https://github.com/rust-lang/futures-rs) from 0.3.1 to 0.3.21.\n<details>\n<summary>Release notes</summary>\n<p><em>Sourced from <a href=\"https://github.com/rust-lang/futures-rs/releases\">futures-util's releases</a>.</em></p>\n<blockquote>\n<h2>0.3.21</h2>\n<ul>\n<li>Fix potential data race in <code>FlattenUnordered</code> that introduced in 0.3.20 (<a href=\"https://github-redirect.dependabot.com/rust-lang/futures-rs/issues/2566\">#2566</a>)</li>\n</ul>\n<h2>0.3.20</h2>\n<ul>\n<li>Fix stacked borrows violations when <code>-Zmiri-tag-raw-pointers</code> is enabled. This raises MSRV of <code>futures-task</code> to 1.45. (<a href=\"https://github-redirect.dependabot.com/rust-lang/futures-rs/issues/2548\">#2548</a>, <a href=\"https://github-redirect.dependabot.com/rust-lang/futures-rs/issues/2550\">#2550</a>)</li>\n<li>Change <code>FuturesUnordered</code> to respect yielding from future (<a href=\"https://github-redirect.dependabot.com/rust-lang/futures-rs/issues/2551\">#2551</a>)</li>\n<li>Add <code>StreamExt::{flatten_unordered, flat_map_unordered}</code> (<a href=\"https://github-redirect.dependabot.com/rust-lang/futures-rs/issues/2083\">#2083</a>)</li>\n</ul>\n<h2>0.3.19</h2>\n<ul>\n<li>Remove unstable <code>read-initializer</code> feature (<a href=\"https://github-redirect.dependabot.com/rust-lang/futures-rs/issues/2534\">#2534</a>)</li>\n<li>Fix panic in <code>FuturesUnordered</code> (<a href=\"https://github-redirect.dependabot.com/rust-lang/futures-rs/issues/2535\">#2535</a>)</li>\n<li>Fix compatibility issue with <code>FuturesUnordered</code> and tokio's cooperative scheduling (<a href=\"https://github-redirect.dependabot.com/rust-lang/futures-rs/issues/2527\">#2527</a>)</li>\n<li>Add <code>StreamExt::count</code> (<a href=\"https://github-redirect.dependabot.com/rust-lang/futures-rs/issues/2495\">#2495</a>)</li>\n</ul>\n<h2>0.3.18</h2>\n<ul>\n<li>Fix unusable <code>Sink</code> implementation on <code>stream::Scan</code> (<a href=\"https://github-redirect.dependabot.com/rust-lang/futures-rs/issues/2499\">#2499</a>)</li>\n<li>Make <code>task::noop_waker_ref</code> available without <code>std</code> feature (<a href=\"https://github-redirect.dependabot.com/rust-lang/futures-rs/issues/2505\">#2505</a>)</li>\n<li>Add async <code>LineWriter</code> (<a href=\"https://github-redirect.dependabot.com/rust-lang/futures-rs/issues/2477\">#2477</a>)</li>\n<li>Remove dependency on <code>proc-macro-hack</code>. This raises MSRV of utility crates to 1.45. (<a href=\"https://github-redirect.dependabot.com/rust-lang/futures-rs/issues/2520\">#2520</a>)</li>\n</ul>\n<h2>0.3.17</h2>\n<ul>\n<li>Use <code>FuturesOrdered</code> in <code>join_all</code> (<a href=\"https://github-redirect.dependabot.com/rust-lang/futures-rs/issues/2412\">#2412</a>)</li>\n<li>Add <code>{future, stream}::poll_immediate</code> (<a href=\"https://github-redirect.dependabot.com/rust-lang/futures-rs/issues/2452\">#2452</a>)</li>\n<li>Add <code>stream_select!</code> macro (<a href=\"https://github-redirect.dependabot.com/rust-lang/futures-rs/issues/2262\">#2262</a>)</li>\n<li>Implement <code>Default</code> for <code>OptionFuture</code> (<a href=\"https://github-redirect.dependabot.com/rust-lang/futures-rs/issues/2471\">#2471</a>)</li>\n<li>Add <code>Peekable::{peek_mut, poll_peek_mut}</code> (<a href=\"https://github-redirect.dependabot.com/rust-lang/futures-rs/issues/2488\">#2488</a>)</li>\n<li>Add <code>BufReader::seek_relative</code> (<a href=\"https://github-redirect.dependabot.com/rust-lang/futures-rs/issues/2489\">#2489</a>)</li>\n</ul>\n<h2>0.3.16</h2>\n<ul>\n<li>Add <code>TryStreamExt::try_chunks</code> (<a href=\"https://github-redirect.dependabot.com/rust-lang/futures-rs/issues/2438\">#2438</a>)</li>\n<li>Add <code>StreamExt::{all, any}</code> (<a href=\"https://github-redirect.dependabot.com/rust-lang/futures-rs/issues/2460\">#2460</a>)</li>\n<li>Add <code>stream::select_with_strategy</code> (<a href=\"https://github-redirect.dependabot.com/rust-lang/futures-rs/issues/2450\">#2450</a>)</li>\n<li>Update to new <code>io_slice_advance</code> interface (<a href=\"https://github-redirect.dependabot.com/rust-lang/futures-rs/issues/2454\">#2454</a>)</li>\n</ul>\n<h2>0.3.15</h2>\n<ul>\n<li>Use <code>#[proc_macro]</code> at Rust 1.45+ to fix an issue where proc macros don't work with rust-analyzer (<a href=\"https://github-redirect.dependabot.com/rust-lang/futures-rs/issues/2407\">#2407</a>)</li>\n<li>Support targets that do not have atomic CAS on stable Rust (<a href=\"https://github-redirect.dependabot.com/rust-lang/futures-rs/issues/2400\">#2400</a>)</li>\n<li>futures-test: Add async <code>#[test]</code> function attribute (<a href=\"https://github-redirect.dependabot.com/rust-lang/futures-rs/issues/2409\">#2409</a>)</li>\n<li>Add <code>stream::abortable</code> (<a href=\"https://github-redirect.dependabot.com/rust-lang/futures-rs/issues/2410\">#2410</a>)</li>\n<li>Add <code>FuturesUnordered::clear</code> (<a href=\"https://github-redirect.dependabot.com/rust-lang/futures-rs/issues/2415\">#2415</a>)</li>\n<li>Implement <code>IntoIterator</code> for <code>FuturesUnordered</code> (<a href=\"https://github-redirect.dependabot.com/rust-lang/futures-rs/issues/2423\">#2423</a>)</li>\n<li>Implement <code>Send</code> and <code>Sync</code> for <code>FuturesUnordered</code> iterators (<a href=\"https://github-redirect.dependabot.com/rust-lang/futures-rs/issues/2416\">#2416</a>)</li>\n<li>Make <code>FuturesUnordered::iter_pin_ref</code> public (<a href=\"https://github-redirect.dependabot.com/rust-lang/futures-rs/issues/2423\">#2423</a>)</li>\n<li>Add <code>SelectAll::clear</code> (<a href=\"https://github-redirect.dependabot.com/rust-lang/futures-rs/issues/2430\">#2430</a>)</li>\n<li>Add <code>SelectAll::{iter, iter_mut}</code> (<a href=\"https://github-redirect.dependabot.com/rust-lang/futures-rs/issues/2428\">#2428</a>)</li>\n<li>Implement <code>IntoIterator</code> for <code>SelectAll</code> (<a href=\"https://github-redirect.dependabot.com/rust-lang/futures-rs/issues/2428\">#2428</a>)</li>\n<li>Implement <code>Clone</code> for <code>WeakShared</code> (<a href=\"https://github-redirect.dependabot.com/rust-lang/futures-rs/issues/2396\">#2396</a>)</li>\n</ul>\n<h2>0.3.14</h2>\n<ul>\n<li>Add <code>future::SelectAll::into_inner</code> (<a href=\"https://github-redirect.dependabot.com/rust-lang/futures-rs/issues/2363\">#2363</a>)</li>\n</ul>\n<!-- raw HTML omitted -->\n</blockquote>\n<p>... (truncated)</p>\n</details>\n<details>\n<summary>Changelog</summary>\n<p><em>Sourced from <a href=\"https://github.com/rust-lang/futures-rs/blob/master/CHANGELOG.md\">futures-util's changelog</a>.</em></p>\n<blockquote>\n<h1>0.3.21 - 2022-02-06</h1>\n<ul>\n<li>Fix potential data race in <code>FlattenUnordered</code> that introduced in 0.3.20 (<a href=\"https://github-redirect.dependabot.com/rust-lang/futures-rs/issues/2566\">#2566</a>)</li>\n</ul>\n<h1>0.3.20 - 2022-02-06</h1>\n<p>NOTE: This release has been yanked due to a bug fixed in 0.3.21.</p>\n<ul>\n<li>Fix stacked borrows violations when <code>-Zmiri-tag-raw-pointers</code> is enabled. This raises MSRV of <code>futures-task</code> to 1.45. (<a href=\"https://github-redirect.dependabot.com/rust-lang/futures-rs/issues/2548\">#2548</a>, <a href=\"https://github-redirect.dependabot.com/rust-lang/futures-rs/issues/2550\">#2550</a>)</li>\n<li>Change <code>FuturesUnordered</code> to respect yielding from future (<a href=\"https://github-redirect.dependabot.com/rust-lang/futures-rs/issues/2551\">#2551</a>)</li>\n<li>Add <code>StreamExt::{flatten_unordered, flat_map_unordered}</code> (<a href=\"https://github-redirect.dependabot.com/rust-lang/futures-rs/issues/2083\">#2083</a>)</li>\n</ul>\n</blockquote>\n</details>\n<details>\n<summary>Commits</summary>\n<ul>\n<li><a href=\"https://github.com/rust-lang/futures-rs/commit/fc1e3250219170e31cddb8857a276cba7dd08d44\"><code>fc1e325</code></a> Release 0.3.21</li>\n<li><a href=\"https://github.com/rust-lang/futures-rs/commit/20279ebbfcd326e83161e44a2cf5afe1bfc3b074\"><code>20279eb</code></a> <code>FlattenUnordered</code>: improve wakers behavior (<a href=\"https://github-redirect.dependabot.com/rust-lang/futures-rs/issues/2566\">#2566</a>)</li>\n<li><a href=\"https://github.com/rust-lang/futures-rs/commit/75dca5ae7fabe6b7073558a8fc6793ee5caa7057\"><code>75dca5a</code></a> Fix MSRV in futures-task readme</li>\n<li><a href=\"https://github.com/rust-lang/futures-rs/commit/55281c8c8de6308ba97ce8b4ffd754ba204409a0\"><code>55281c8</code></a> Release 0.3.20</li>\n<li><a href=\"https://github.com/rust-lang/futures-rs/commit/591b982af835fc5e0ffb5104bbb9e942b2ed0631\"><code>591b982</code></a> Redefine executor and compat modules in futures crate (<a href=\"https://github-redirect.dependabot.com/rust-lang/futures-rs/issues/2564\">#2564</a>)</li>\n<li><a href=\"https://github.com/rust-lang/futures-rs/commit/94b508bfcb1d1f986f34f9b12d799e5a73f65f22\"><code>94b508b</code></a> Basic <code>StreamExt::{flatten_unordered, flat_map_unordered}</code> impls (<a href=\"https://github-redirect.dependabot.com/rust-lang/futures-rs/issues/2083\">#2083</a>)</li>\n<li><a href=\"https://github.com/rust-lang/futures-rs/commit/dca16fafa597d8e0075a7b693904c6f2ce0322a4\"><code>dca16fa</code></a> Do not auto-create PR on fork</li>\n<li><a href=\"https://github.com/rust-lang/futures-rs/commit/a9795a9243b0e6b836f71cbe9661bbb35bb17a7f\"><code>a9795a9</code></a> Automatically creates PR when no_atomic_cas.rs needs to be updated</li>\n<li><a href=\"https://github.com/rust-lang/futures-rs/commit/4841888d68eb8a7796ccd9c9f7a9dc677586e054\"><code>4841888</code></a> Update comments in build scripts</li>\n<li><a href=\"https://github.com/rust-lang/futures-rs/commit/85706b6d67aa30e1f8380f8101c14cf43be7500e\"><code>85706b6</code></a> Clean up ci/no_atomic_cas.sh</li>\n<li>Additional commits viewable in <a href=\"https://github.com/rust-lang/futures-rs/compare/0.3.1...0.3.21\">compare view</a></li>\n</ul>\n</details>\n<br />\n\n\n[![Dependabot compatibility score](https://dependabot-badges.githubapp.com/badges/compatibility_score?dependency-name=futures-util&package-manager=cargo&previous-version=0.3.1&new-version=0.3.21)](https://docs.github.com/en/github/managing-security-vulnerabilities/about-dependabot-security-updates#about-compatibility-scores)\n\nDependabot will resolve any conflicts with this PR as long as you don't alter it yourself. You can also trigger a rebase manually by commenting `@dependabot rebase`.\n\n[//]: # (dependabot-automerge-start)\n[//]: # (dependabot-automerge-end)\n\n---\n\n<details>\n<summary>Dependabot commands and options</summary>\n<br />\n\nYou can trigger Dependabot actions by commenting on this PR:\n- `@dependabot rebase` will rebase this PR\n- `@dependabot recreate` will recreate this PR, overwriting any edits that have been made to it\n- `@dependabot merge` will merge this PR after your CI passes on it\n- `@dependabot squash and merge` will squash and merge this PR after your CI passes on it\n- `@dependabot cancel merge` will cancel a previously requested merge and block automerging\n- `@dependabot reopen` will reopen this PR if it is closed\n- `@dependabot close` will close this PR and stop Dependabot recreating it. You can achieve the same result by closing it manually\n- `@dependabot ignore this major version` will close this PR and stop Dependabot creating any more for this major version (unless you reopen the PR or upgrade to it yourself)\n- `@dependabot ignore this minor version` will close this PR and stop Dependabot creating any more for this minor version (unless you reopen the PR or upgrade to it yourself)\n- `@dependabot ignore this dependency` will close this PR and stop Dependabot creating any more for this dependency (unless you reopen the PR or upgrade to it yourself)\n- `@dependabot use these labels` will set the current labels as the default for future PRs for this repo and language\n- `@dependabot use these reviewers` will set the current reviewers as the default for future PRs for this repo and language\n- `@dependabot use these assignees` will set the current assignees as the default for future PRs for this repo and language\n- `@dependabot use this milestone` will set the current milestone as the default for future PRs for this repo and language\n\nYou can disable automated security fix PRs for this repo from the [Security Alerts page](https://github.com/discord/loqui/network/alerts).\n\n</details>",
+        "created_at": "2022-06-17T01:01:38Z",
+        "updated_at": "2022-06-17T01:01:40Z",
+        "closed_at": null,
+        "merged_at": null,
+        "merge_commit_sha": "b468b14a0bfde8d877f768c1649bf57a50d90d6f",
+        "assignee": null,
+        "assignees": [],
+        "requested_reviewers": [],
+        "requested_teams": [],
+        "labels": [
+          {
+            "id": 4214061671,
+            "node_id": "LA_kwDOBG5OWM77LXpn",
+            "url": "https://api.github.com/repos/discord/loqui/labels/dependencies",
+            "name": "dependencies",
+            "color": "0366d6",
+            "default": false,
+            "description": "Pull requests that update a dependency file"
+          }
+        ],
+        "milestone": null,
+        "draft": false,
+        "head": {
+          "label": "discord:dependabot/cargo/rust/futures-util-0.3.21",
+          "ref": "dependabot/cargo/rust/futures-util-0.3.21",
+          "sha": "b9a4f29782c3d5f1c409344ae2c054778ac2f54c",
+          "user": {
+            "login": "discord",
+            "id": 1965106,
+            "node_id": "MDEyOk9yZ2FuaXphdGlvbjE5NjUxMDY=",
+            "gravatar_id": "",
+            "url": "https://api.github.com/users/discord",
+            "type": "Organization",
+            "site_admin": false
+          },
+          "repo": {
+            "id": 74337880,
+            "node_id": "MDEwOlJlcG9zaXRvcnk3NDMzNzg4MA==",
+            "name": "loqui",
+            "full_name": "discord/loqui",
+            "private": false,
+            "owner": {
+              "login": "discord",
+              "id": 1965106,
+              "node_id": "MDEyOk9yZ2FuaXphdGlvbjE5NjUxMDY=",
+              "gravatar_id": "",
+              "url": "https://api.github.com/users/discord",
+              "type": "Organization",
+              "site_admin": false
+            },
+            "description": "RPC Transport Layer - with minimal bullshit.",
+            "fork": false,
+            "url": "https://api.github.com/repos/discord/loqui",
+            "created_at": "2016-11-21T07:34:31Z",
+            "updated_at": "2023-03-22T23:07:18Z",
+            "pushed_at": "2022-06-17T01:09:24Z",
+            "homepage": "",
+            "size": 879,
+            "stargazers_count": 217,
+            "watchers_count": 217,
+            "language": "Rust",
+            "has_issues": true,
+            "has_projects": true,
+            "has_downloads": true,
+            "has_wiki": true,
+            "has_pages": false,
+            "has_discussions": false,
+            "forks_count": 31,
+            "archived": true,
+            "disabled": false,
+            "open_issues_count": 16,
+            "license": {
+              "key": "mit",
+              "name": "MIT License",
+              "spdx_id": "MIT",
+              "url": "https://api.github.com/licenses/mit",
+              "node_id": "MDc6TGljZW5zZTEz"
+            },
+            "allow_forking": true,
+            "is_template": false,
+            "web_commit_signoff_required": false,
+            "topics": [
+              "elixir",
+              "golang",
+              "python",
+              "rpc"
+            ],
+            "visibility": "public",
+            "forks": 31,
+            "open_issues": 16,
+            "watchers": 217,
+            "default_branch": "master"
+          }
+        },
+        "base": {
+          "label": "discord:master",
+          "ref": "master",
+          "sha": "8d394a7951fd3a82d109becc1aebbd9e7ccc894a",
+          "user": {
+            "login": "discord",
+            "id": 1965106,
+            "node_id": "MDEyOk9yZ2FuaXphdGlvbjE5NjUxMDY=",
+            "gravatar_id": "",
+            "url": "https://api.github.com/users/discord",
+            "type": "Organization",
+            "site_admin": false
+          },
+          "repo": {
+            "id": 74337880,
+            "node_id": "MDEwOlJlcG9zaXRvcnk3NDMzNzg4MA==",
+            "name": "loqui",
+            "full_name": "discord/loqui",
+            "private": false,
+            "owner": {
+              "login": "discord",
+              "id": 1965106,
+              "node_id": "MDEyOk9yZ2FuaXphdGlvbjE5NjUxMDY=",
+              "gravatar_id": "",
+              "url": "https://api.github.com/users/discord",
+              "type": "Organization",
+              "site_admin": false
+            },
+            "description": "RPC Transport Layer - with minimal bullshit.",
+            "fork": false,
+            "url": "https://api.github.com/repos/discord/loqui",
+            "created_at": "2016-11-21T07:34:31Z",
+            "updated_at": "2023-03-22T23:07:18Z",
+            "pushed_at": "2022-06-17T01:09:24Z",
+            "homepage": "",
+            "size": 879,
+            "stargazers_count": 217,
+            "watchers_count": 217,
+            "language": "Rust",
+            "has_issues": true,
+            "has_projects": true,
+            "has_downloads": true,
+            "has_wiki": true,
+            "has_pages": false,
+            "has_discussions": false,
+            "forks_count": 31,
+            "archived": true,
+            "disabled": false,
+            "open_issues_count": 16,
+            "license": {
+              "key": "mit",
+              "name": "MIT License",
+              "spdx_id": "MIT",
+              "url": "https://api.github.com/licenses/mit",
+              "node_id": "MDc6TGljZW5zZTEz"
+            },
+            "allow_forking": true,
+            "is_template": false,
+            "web_commit_signoff_required": false,
+            "topics": [
+              "elixir",
+              "golang",
+              "python",
+              "rpc"
+            ],
+            "visibility": "public",
+            "forks": 31,
+            "open_issues": 16,
+            "watchers": 217,
+            "default_branch": "master"
+          }
+        },
+        "_links": {
+          "self": {
+            "href": "https://api.github.com/repos/discord/loqui/pulls/58"
+          },
+          "html": {
+            "href": "https://github.com/discord/loqui/pull/58"
+          },
+          "issue": {
+            "href": "https://api.github.com/repos/discord/loqui/issues/58"
+          },
+          "comments": {
+            "href": "https://api.github.com/repos/discord/loqui/issues/58/comments"
+          },
+          "review_comments": {
+            "href": "https://api.github.com/repos/discord/loqui/pulls/58/comments"
+          },
+          "review_comment": {
+            "href": "https://api.github.com/repos/discord/loqui/pulls/comments{/number}"
+          },
+          "commits": {
+            "href": "https://api.github.com/repos/discord/loqui/pulls/58/commits"
+          },
+          "statuses": {
+            "href": "https://api.github.com/repos/discord/loqui/statuses/b9a4f29782c3d5f1c409344ae2c054778ac2f54c"
+          }
+        },
+        "author_association": "NONE",
+        "auto_merge": null,
+        "active_lock_reason": null
+      },
+      {
+        "url": "https://api.github.com/repos/discord/loqui/pulls/57",
+        "id": 967559876,
+        "node_id": "PR_kwDOBG5OWM45q8rE",
+        "number": 57,
+        "state": "open",
+        "locked": true,
+        "title": "Bump net2 from 0.2.33 to 0.2.37 in /rust/loqui_client",
+        "user": {
+          "login": "dependabot[bot]",
+          "id": 49699333,
+          "node_id": "MDM6Qm90NDk2OTkzMzM=",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/dependabot%5Bbot%5D",
+          "type": "Bot",
+          "site_admin": false
+        },
+        "body": "Bumps [net2](https://github.com/deprecrated/net2-rs) from 0.2.33 to 0.2.37.\n<details>\n<summary>Commits</summary>\n<ul>\n<li><a href=\"https://github.com/deprecrated/net2-rs/commit/a18347549413975fbbeb5567165f163e5f60a627\"><code>a183475</code></a> Release v0.2.37</li>\n<li><a href=\"https://github.com/deprecrated/net2-rs/commit/6081dff94aa3128f0742c24e3925a6f8e7f5de53\"><code>6081dff</code></a> haiku: Fix sockaddr_in/sockaddr_in6; Solves <a href=\"https://github-redirect.dependabot.com/deprecrated/net2-rs/issues/108\">#108</a></li>\n<li><a href=\"https://github.com/deprecrated/net2-rs/commit/71708b75d672f5f2430a1edb326d67ed14d87a51\"><code>71708b7</code></a> Release v0.2.36</li>\n<li><a href=\"https://github.com/deprecrated/net2-rs/commit/49b43f277afb1caf5104fcbe02bef581f7444686\"><code>49b43f2</code></a> Do not assume memory layout of std::net::SocketAddr</li>\n<li><a href=\"https://github.com/deprecrated/net2-rs/commit/77a6eb4d5eb36adc81ee21ab7ffebc62fdf2ab88\"><code>77a6eb4</code></a> Release v0.2.35</li>\n<li><a href=\"https://github.com/deprecrated/net2-rs/commit/eeeab131cb52790df3bedeac46e889feab8f83e3\"><code>eeeab13</code></a> Add support for Haiku</li>\n<li><a href=\"https://github.com/deprecrated/net2-rs/commit/1e915300a495b47f20e93d9b67e1740e84a339a7\"><code>1e91530</code></a> Release v0.2.34</li>\n<li><a href=\"https://github.com/deprecrated/net2-rs/commit/89945ebc27f3dbbc7782269aae40651f143bde55\"><code>89945eb</code></a> Make cargo packaging explicit</li>\n<li><a href=\"https://github.com/deprecrated/net2-rs/commit/fe62962c1b843778887970197779c11498648b7b\"><code>fe62962</code></a> Clean up trailing whitespace</li>\n<li><a href=\"https://github.com/deprecrated/net2-rs/commit/67ec2c12116d71d89f4111730c40e0f0c6e1168c\"><code>67ec2c1</code></a> Update URLs in Cargo.toml</li>\n<li>Additional commits viewable in <a href=\"https://github.com/deprecrated/net2-rs/compare/0.2.33...0.2.37\">compare view</a></li>\n</ul>\n</details>\n<br />\n\n\n[![Dependabot compatibility score](https://dependabot-badges.githubapp.com/badges/compatibility_score?dependency-name=net2&package-manager=cargo&previous-version=0.2.33&new-version=0.2.37)](https://docs.github.com/en/github/managing-security-vulnerabilities/about-dependabot-security-updates#about-compatibility-scores)\n\nDependabot will resolve any conflicts with this PR as long as you don't alter it yourself. You can also trigger a rebase manually by commenting `@dependabot rebase`.\n\n[//]: # (dependabot-automerge-start)\n[//]: # (dependabot-automerge-end)\n\n---\n\n<details>\n<summary>Dependabot commands and options</summary>\n<br />\n\nYou can trigger Dependabot actions by commenting on this PR:\n- `@dependabot rebase` will rebase this PR\n- `@dependabot recreate` will recreate this PR, overwriting any edits that have been made to it\n- `@dependabot merge` will merge this PR after your CI passes on it\n- `@dependabot squash and merge` will squash and merge this PR after your CI passes on it\n- `@dependabot cancel merge` will cancel a previously requested merge and block automerging\n- `@dependabot reopen` will reopen this PR if it is closed\n- `@dependabot close` will close this PR and stop Dependabot recreating it. You can achieve the same result by closing it manually\n- `@dependabot ignore this major version` will close this PR and stop Dependabot creating any more for this major version (unless you reopen the PR or upgrade to it yourself)\n- `@dependabot ignore this minor version` will close this PR and stop Dependabot creating any more for this minor version (unless you reopen the PR or upgrade to it yourself)\n- `@dependabot ignore this dependency` will close this PR and stop Dependabot creating any more for this dependency (unless you reopen the PR or upgrade to it yourself)\n- `@dependabot use these labels` will set the current labels as the default for future PRs for this repo and language\n- `@dependabot use these reviewers` will set the current reviewers as the default for future PRs for this repo and language\n- `@dependabot use these assignees` will set the current assignees as the default for future PRs for this repo and language\n- `@dependabot use this milestone` will set the current milestone as the default for future PRs for this repo and language\n\nYou can disable automated security fix PRs for this repo from the [Security Alerts page](https://github.com/discord/loqui/network/alerts).\n\n</details>",
+        "created_at": "2022-06-15T00:55:05Z",
+        "updated_at": "2022-06-15T00:55:06Z",
+        "closed_at": null,
+        "merged_at": null,
+        "merge_commit_sha": "8f9cdebb5ac0d7f2848b6d430c15b93739e0d7ed",
+        "assignee": null,
+        "assignees": [],
+        "requested_reviewers": [],
+        "requested_teams": [],
+        "labels": [
+          {
+            "id": 4214061671,
+            "node_id": "LA_kwDOBG5OWM77LXpn",
+            "url": "https://api.github.com/repos/discord/loqui/labels/dependencies",
+            "name": "dependencies",
+            "color": "0366d6",
+            "default": false,
+            "description": "Pull requests that update a dependency file"
+          }
+        ],
+        "milestone": null,
+        "draft": false,
+        "head": {
+          "label": "discord:dependabot/cargo/rust/loqui_client/net2-0.2.37",
+          "ref": "dependabot/cargo/rust/loqui_client/net2-0.2.37",
+          "sha": "57218d5c33d25be4e276017a0b686df62084c488",
+          "user": {
+            "login": "discord",
+            "id": 1965106,
+            "node_id": "MDEyOk9yZ2FuaXphdGlvbjE5NjUxMDY=",
+            "gravatar_id": "",
+            "url": "https://api.github.com/users/discord",
+            "type": "Organization",
+            "site_admin": false
+          },
+          "repo": {
+            "id": 74337880,
+            "node_id": "MDEwOlJlcG9zaXRvcnk3NDMzNzg4MA==",
+            "name": "loqui",
+            "full_name": "discord/loqui",
+            "private": false,
+            "owner": {
+              "login": "discord",
+              "id": 1965106,
+              "node_id": "MDEyOk9yZ2FuaXphdGlvbjE5NjUxMDY=",
+              "gravatar_id": "",
+              "url": "https://api.github.com/users/discord",
+              "type": "Organization",
+              "site_admin": false
+            },
+            "description": "RPC Transport Layer - with minimal bullshit.",
+            "fork": false,
+            "url": "https://api.github.com/repos/discord/loqui",
+            "created_at": "2016-11-21T07:34:31Z",
+            "updated_at": "2023-03-22T23:07:18Z",
+            "pushed_at": "2022-06-17T01:09:24Z",
+            "homepage": "",
+            "size": 879,
+            "stargazers_count": 217,
+            "watchers_count": 217,
+            "language": "Rust",
+            "has_issues": true,
+            "has_projects": true,
+            "has_downloads": true,
+            "has_wiki": true,
+            "has_pages": false,
+            "has_discussions": false,
+            "forks_count": 31,
+            "archived": true,
+            "disabled": false,
+            "open_issues_count": 16,
+            "license": {
+              "key": "mit",
+              "name": "MIT License",
+              "spdx_id": "MIT",
+              "url": "https://api.github.com/licenses/mit",
+              "node_id": "MDc6TGljZW5zZTEz"
+            },
+            "allow_forking": true,
+            "is_template": false,
+            "web_commit_signoff_required": false,
+            "topics": [
+              "elixir",
+              "golang",
+              "python",
+              "rpc"
+            ],
+            "visibility": "public",
+            "forks": 31,
+            "open_issues": 16,
+            "watchers": 217,
+            "default_branch": "master"
+          }
+        },
+        "base": {
+          "label": "discord:master",
+          "ref": "master",
+          "sha": "8d394a7951fd3a82d109becc1aebbd9e7ccc894a",
+          "user": {
+            "login": "discord",
+            "id": 1965106,
+            "node_id": "MDEyOk9yZ2FuaXphdGlvbjE5NjUxMDY=",
+            "gravatar_id": "",
+            "url": "https://api.github.com/users/discord",
+            "type": "Organization",
+            "site_admin": false
+          },
+          "repo": {
+            "id": 74337880,
+            "node_id": "MDEwOlJlcG9zaXRvcnk3NDMzNzg4MA==",
+            "name": "loqui",
+            "full_name": "discord/loqui",
+            "private": false,
+            "owner": {
+              "login": "discord",
+              "id": 1965106,
+              "node_id": "MDEyOk9yZ2FuaXphdGlvbjE5NjUxMDY=",
+              "gravatar_id": "",
+              "url": "https://api.github.com/users/discord",
+              "type": "Organization",
+              "site_admin": false
+            },
+            "description": "RPC Transport Layer - with minimal bullshit.",
+            "fork": false,
+            "url": "https://api.github.com/repos/discord/loqui",
+            "created_at": "2016-11-21T07:34:31Z",
+            "updated_at": "2023-03-22T23:07:18Z",
+            "pushed_at": "2022-06-17T01:09:24Z",
+            "homepage": "",
+            "size": 879,
+            "stargazers_count": 217,
+            "watchers_count": 217,
+            "language": "Rust",
+            "has_issues": true,
+            "has_projects": true,
+            "has_downloads": true,
+            "has_wiki": true,
+            "has_pages": false,
+            "has_discussions": false,
+            "forks_count": 31,
+            "archived": true,
+            "disabled": false,
+            "open_issues_count": 16,
+            "license": {
+              "key": "mit",
+              "name": "MIT License",
+              "spdx_id": "MIT",
+              "url": "https://api.github.com/licenses/mit",
+              "node_id": "MDc6TGljZW5zZTEz"
+            },
+            "allow_forking": true,
+            "is_template": false,
+            "web_commit_signoff_required": false,
+            "topics": [
+              "elixir",
+              "golang",
+              "python",
+              "rpc"
+            ],
+            "visibility": "public",
+            "forks": 31,
+            "open_issues": 16,
+            "watchers": 217,
+            "default_branch": "master"
+          }
+        },
+        "_links": {
+          "self": {
+            "href": "https://api.github.com/repos/discord/loqui/pulls/57"
+          },
+          "html": {
+            "href": "https://github.com/discord/loqui/pull/57"
+          },
+          "issue": {
+            "href": "https://api.github.com/repos/discord/loqui/issues/57"
+          },
+          "comments": {
+            "href": "https://api.github.com/repos/discord/loqui/issues/57/comments"
+          },
+          "review_comments": {
+            "href": "https://api.github.com/repos/discord/loqui/pulls/57/comments"
+          },
+          "review_comment": {
+            "href": "https://api.github.com/repos/discord/loqui/pulls/comments{/number}"
+          },
+          "commits": {
+            "href": "https://api.github.com/repos/discord/loqui/pulls/57/commits"
+          },
+          "statuses": {
+            "href": "https://api.github.com/repos/discord/loqui/statuses/57218d5c33d25be4e276017a0b686df62084c488"
+          }
+        },
+        "author_association": "NONE",
+        "auto_merge": null,
+        "active_lock_reason": null
+      },
+      {
+        "url": "https://api.github.com/repos/discord/loqui/pulls/56",
+        "id": 967558116,
+        "node_id": "PR_kwDOBG5OWM45q8Pk",
+        "number": 56,
+        "state": "open",
+        "locked": true,
+        "title": "Bump net2 from 0.2.33 to 0.2.37 in /rust",
+        "user": {
+          "login": "dependabot[bot]",
+          "id": 49699333,
+          "node_id": "MDM6Qm90NDk2OTkzMzM=",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/dependabot%5Bbot%5D",
+          "type": "Bot",
+          "site_admin": false
+        },
+        "body": "Bumps [net2](https://github.com/deprecrated/net2-rs) from 0.2.33 to 0.2.37.\n<details>\n<summary>Commits</summary>\n<ul>\n<li><a href=\"https://github.com/deprecrated/net2-rs/commit/a18347549413975fbbeb5567165f163e5f60a627\"><code>a183475</code></a> Release v0.2.37</li>\n<li><a href=\"https://github.com/deprecrated/net2-rs/commit/6081dff94aa3128f0742c24e3925a6f8e7f5de53\"><code>6081dff</code></a> haiku: Fix sockaddr_in/sockaddr_in6; Solves <a href=\"https://github-redirect.dependabot.com/deprecrated/net2-rs/issues/108\">#108</a></li>\n<li><a href=\"https://github.com/deprecrated/net2-rs/commit/71708b75d672f5f2430a1edb326d67ed14d87a51\"><code>71708b7</code></a> Release v0.2.36</li>\n<li><a href=\"https://github.com/deprecrated/net2-rs/commit/49b43f277afb1caf5104fcbe02bef581f7444686\"><code>49b43f2</code></a> Do not assume memory layout of std::net::SocketAddr</li>\n<li><a href=\"https://github.com/deprecrated/net2-rs/commit/77a6eb4d5eb36adc81ee21ab7ffebc62fdf2ab88\"><code>77a6eb4</code></a> Release v0.2.35</li>\n<li><a href=\"https://github.com/deprecrated/net2-rs/commit/eeeab131cb52790df3bedeac46e889feab8f83e3\"><code>eeeab13</code></a> Add support for Haiku</li>\n<li><a href=\"https://github.com/deprecrated/net2-rs/commit/1e915300a495b47f20e93d9b67e1740e84a339a7\"><code>1e91530</code></a> Release v0.2.34</li>\n<li><a href=\"https://github.com/deprecrated/net2-rs/commit/89945ebc27f3dbbc7782269aae40651f143bde55\"><code>89945eb</code></a> Make cargo packaging explicit</li>\n<li><a href=\"https://github.com/deprecrated/net2-rs/commit/fe62962c1b843778887970197779c11498648b7b\"><code>fe62962</code></a> Clean up trailing whitespace</li>\n<li><a href=\"https://github.com/deprecrated/net2-rs/commit/67ec2c12116d71d89f4111730c40e0f0c6e1168c\"><code>67ec2c1</code></a> Update URLs in Cargo.toml</li>\n<li>Additional commits viewable in <a href=\"https://github.com/deprecrated/net2-rs/compare/0.2.33...0.2.37\">compare view</a></li>\n</ul>\n</details>\n<br />\n\n\n[![Dependabot compatibility score](https://dependabot-badges.githubapp.com/badges/compatibility_score?dependency-name=net2&package-manager=cargo&previous-version=0.2.33&new-version=0.2.37)](https://docs.github.com/en/github/managing-security-vulnerabilities/about-dependabot-security-updates#about-compatibility-scores)\n\nDependabot will resolve any conflicts with this PR as long as you don't alter it yourself. You can also trigger a rebase manually by commenting `@dependabot rebase`.\n\n[//]: # (dependabot-automerge-start)\n[//]: # (dependabot-automerge-end)\n\n---\n\n<details>\n<summary>Dependabot commands and options</summary>\n<br />\n\nYou can trigger Dependabot actions by commenting on this PR:\n- `@dependabot rebase` will rebase this PR\n- `@dependabot recreate` will recreate this PR, overwriting any edits that have been made to it\n- `@dependabot merge` will merge this PR after your CI passes on it\n- `@dependabot squash and merge` will squash and merge this PR after your CI passes on it\n- `@dependabot cancel merge` will cancel a previously requested merge and block automerging\n- `@dependabot reopen` will reopen this PR if it is closed\n- `@dependabot close` will close this PR and stop Dependabot recreating it. You can achieve the same result by closing it manually\n- `@dependabot ignore this major version` will close this PR and stop Dependabot creating any more for this major version (unless you reopen the PR or upgrade to it yourself)\n- `@dependabot ignore this minor version` will close this PR and stop Dependabot creating any more for this minor version (unless you reopen the PR or upgrade to it yourself)\n- `@dependabot ignore this dependency` will close this PR and stop Dependabot creating any more for this dependency (unless you reopen the PR or upgrade to it yourself)\n- `@dependabot use these labels` will set the current labels as the default for future PRs for this repo and language\n- `@dependabot use these reviewers` will set the current reviewers as the default for future PRs for this repo and language\n- `@dependabot use these assignees` will set the current assignees as the default for future PRs for this repo and language\n- `@dependabot use this milestone` will set the current milestone as the default for future PRs for this repo and language\n\nYou can disable automated security fix PRs for this repo from the [Security Alerts page](https://github.com/discord/loqui/network/alerts).\n\n</details>",
+        "created_at": "2022-06-15T00:53:39Z",
+        "updated_at": "2022-06-15T00:53:40Z",
+        "closed_at": null,
+        "merged_at": null,
+        "merge_commit_sha": "61e50795304ff35a30297743b82f2419b2c71ca1",
+        "assignee": null,
+        "assignees": [],
+        "requested_reviewers": [],
+        "requested_teams": [],
+        "labels": [
+          {
+            "id": 4214061671,
+            "node_id": "LA_kwDOBG5OWM77LXpn",
+            "url": "https://api.github.com/repos/discord/loqui/labels/dependencies",
+            "name": "dependencies",
+            "color": "0366d6",
+            "default": false,
+            "description": "Pull requests that update a dependency file"
+          }
+        ],
+        "milestone": null,
+        "draft": false,
+        "head": {
+          "label": "discord:dependabot/cargo/rust/net2-0.2.37",
+          "ref": "dependabot/cargo/rust/net2-0.2.37",
+          "sha": "2c6ae2e5957867ad5f8c55d71e91521de94e89ef",
+          "user": {
+            "login": "discord",
+            "id": 1965106,
+            "node_id": "MDEyOk9yZ2FuaXphdGlvbjE5NjUxMDY=",
+            "gravatar_id": "",
+            "url": "https://api.github.com/users/discord",
+            "type": "Organization",
+            "site_admin": false
+          },
+          "repo": {
+            "id": 74337880,
+            "node_id": "MDEwOlJlcG9zaXRvcnk3NDMzNzg4MA==",
+            "name": "loqui",
+            "full_name": "discord/loqui",
+            "private": false,
+            "owner": {
+              "login": "discord",
+              "id": 1965106,
+              "node_id": "MDEyOk9yZ2FuaXphdGlvbjE5NjUxMDY=",
+              "gravatar_id": "",
+              "url": "https://api.github.com/users/discord",
+              "type": "Organization",
+              "site_admin": false
+            },
+            "description": "RPC Transport Layer - with minimal bullshit.",
+            "fork": false,
+            "url": "https://api.github.com/repos/discord/loqui",
+            "created_at": "2016-11-21T07:34:31Z",
+            "updated_at": "2023-03-22T23:07:18Z",
+            "pushed_at": "2022-06-17T01:09:24Z",
+            "homepage": "",
+            "size": 879,
+            "stargazers_count": 217,
+            "watchers_count": 217,
+            "language": "Rust",
+            "has_issues": true,
+            "has_projects": true,
+            "has_downloads": true,
+            "has_wiki": true,
+            "has_pages": false,
+            "has_discussions": false,
+            "forks_count": 31,
+            "archived": true,
+            "disabled": false,
+            "open_issues_count": 16,
+            "license": {
+              "key": "mit",
+              "name": "MIT License",
+              "spdx_id": "MIT",
+              "url": "https://api.github.com/licenses/mit",
+              "node_id": "MDc6TGljZW5zZTEz"
+            },
+            "allow_forking": true,
+            "is_template": false,
+            "web_commit_signoff_required": false,
+            "topics": [
+              "elixir",
+              "golang",
+              "python",
+              "rpc"
+            ],
+            "visibility": "public",
+            "forks": 31,
+            "open_issues": 16,
+            "watchers": 217,
+            "default_branch": "master"
+          }
+        },
+        "base": {
+          "label": "discord:master",
+          "ref": "master",
+          "sha": "8d394a7951fd3a82d109becc1aebbd9e7ccc894a",
+          "user": {
+            "login": "discord",
+            "id": 1965106,
+            "node_id": "MDEyOk9yZ2FuaXphdGlvbjE5NjUxMDY=",
+            "gravatar_id": "",
+            "url": "https://api.github.com/users/discord",
+            "type": "Organization",
+            "site_admin": false
+          },
+          "repo": {
+            "id": 74337880,
+            "node_id": "MDEwOlJlcG9zaXRvcnk3NDMzNzg4MA==",
+            "name": "loqui",
+            "full_name": "discord/loqui",
+            "private": false,
+            "owner": {
+              "login": "discord",
+              "id": 1965106,
+              "node_id": "MDEyOk9yZ2FuaXphdGlvbjE5NjUxMDY=",
+              "gravatar_id": "",
+              "url": "https://api.github.com/users/discord",
+              "type": "Organization",
+              "site_admin": false
+            },
+            "description": "RPC Transport Layer - with minimal bullshit.",
+            "fork": false,
+            "url": "https://api.github.com/repos/discord/loqui",
+            "created_at": "2016-11-21T07:34:31Z",
+            "updated_at": "2023-03-22T23:07:18Z",
+            "pushed_at": "2022-06-17T01:09:24Z",
+            "homepage": "",
+            "size": 879,
+            "stargazers_count": 217,
+            "watchers_count": 217,
+            "language": "Rust",
+            "has_issues": true,
+            "has_projects": true,
+            "has_downloads": true,
+            "has_wiki": true,
+            "has_pages": false,
+            "has_discussions": false,
+            "forks_count": 31,
+            "archived": true,
+            "disabled": false,
+            "open_issues_count": 16,
+            "license": {
+              "key": "mit",
+              "name": "MIT License",
+              "spdx_id": "MIT",
+              "url": "https://api.github.com/licenses/mit",
+              "node_id": "MDc6TGljZW5zZTEz"
+            },
+            "allow_forking": true,
+            "is_template": false,
+            "web_commit_signoff_required": false,
+            "topics": [
+              "elixir",
+              "golang",
+              "python",
+              "rpc"
+            ],
+            "visibility": "public",
+            "forks": 31,
+            "open_issues": 16,
+            "watchers": 217,
+            "default_branch": "master"
+          }
+        },
+        "_links": {
+          "self": {
+            "href": "https://api.github.com/repos/discord/loqui/pulls/56"
+          },
+          "html": {
+            "href": "https://github.com/discord/loqui/pull/56"
+          },
+          "issue": {
+            "href": "https://api.github.com/repos/discord/loqui/issues/56"
+          },
+          "comments": {
+            "href": "https://api.github.com/repos/discord/loqui/issues/56/comments"
+          },
+          "review_comments": {
+            "href": "https://api.github.com/repos/discord/loqui/pulls/56/comments"
+          },
+          "review_comment": {
+            "href": "https://api.github.com/repos/discord/loqui/pulls/comments{/number}"
+          },
+          "commits": {
+            "href": "https://api.github.com/repos/discord/loqui/pulls/56/commits"
+          },
+          "statuses": {
+            "href": "https://api.github.com/repos/discord/loqui/statuses/2c6ae2e5957867ad5f8c55d71e91521de94e89ef"
+          }
+        },
+        "author_association": "NONE",
+        "auto_merge": null,
+        "active_lock_reason": null
+      },
+      {
+        "url": "https://api.github.com/repos/discord/loqui/pulls/55",
+        "id": 967557991,
+        "node_id": "PR_kwDOBG5OWM45q8Nn",
+        "number": 55,
+        "state": "open",
+        "locked": true,
+        "title": "Bump net2 from 0.2.33 to 0.2.37 in /rust/loqui_server",
+        "user": {
+          "login": "dependabot[bot]",
+          "id": 49699333,
+          "node_id": "MDM6Qm90NDk2OTkzMzM=",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/dependabot%5Bbot%5D",
+          "type": "Bot",
+          "site_admin": false
+        },
+        "body": "Bumps [net2](https://github.com/deprecrated/net2-rs) from 0.2.33 to 0.2.37.\n<details>\n<summary>Commits</summary>\n<ul>\n<li><a href=\"https://github.com/deprecrated/net2-rs/commit/a18347549413975fbbeb5567165f163e5f60a627\"><code>a183475</code></a> Release v0.2.37</li>\n<li><a href=\"https://github.com/deprecrated/net2-rs/commit/6081dff94aa3128f0742c24e3925a6f8e7f5de53\"><code>6081dff</code></a> haiku: Fix sockaddr_in/sockaddr_in6; Solves <a href=\"https://github-redirect.dependabot.com/deprecrated/net2-rs/issues/108\">#108</a></li>\n<li><a href=\"https://github.com/deprecrated/net2-rs/commit/71708b75d672f5f2430a1edb326d67ed14d87a51\"><code>71708b7</code></a> Release v0.2.36</li>\n<li><a href=\"https://github.com/deprecrated/net2-rs/commit/49b43f277afb1caf5104fcbe02bef581f7444686\"><code>49b43f2</code></a> Do not assume memory layout of std::net::SocketAddr</li>\n<li><a href=\"https://github.com/deprecrated/net2-rs/commit/77a6eb4d5eb36adc81ee21ab7ffebc62fdf2ab88\"><code>77a6eb4</code></a> Release v0.2.35</li>\n<li><a href=\"https://github.com/deprecrated/net2-rs/commit/eeeab131cb52790df3bedeac46e889feab8f83e3\"><code>eeeab13</code></a> Add support for Haiku</li>\n<li><a href=\"https://github.com/deprecrated/net2-rs/commit/1e915300a495b47f20e93d9b67e1740e84a339a7\"><code>1e91530</code></a> Release v0.2.34</li>\n<li><a href=\"https://github.com/deprecrated/net2-rs/commit/89945ebc27f3dbbc7782269aae40651f143bde55\"><code>89945eb</code></a> Make cargo packaging explicit</li>\n<li><a href=\"https://github.com/deprecrated/net2-rs/commit/fe62962c1b843778887970197779c11498648b7b\"><code>fe62962</code></a> Clean up trailing whitespace</li>\n<li><a href=\"https://github.com/deprecrated/net2-rs/commit/67ec2c12116d71d89f4111730c40e0f0c6e1168c\"><code>67ec2c1</code></a> Update URLs in Cargo.toml</li>\n<li>Additional commits viewable in <a href=\"https://github.com/deprecrated/net2-rs/compare/0.2.33...0.2.37\">compare view</a></li>\n</ul>\n</details>\n<br />\n\n\n[![Dependabot compatibility score](https://dependabot-badges.githubapp.com/badges/compatibility_score?dependency-name=net2&package-manager=cargo&previous-version=0.2.33&new-version=0.2.37)](https://docs.github.com/en/github/managing-security-vulnerabilities/about-dependabot-security-updates#about-compatibility-scores)\n\nDependabot will resolve any conflicts with this PR as long as you don't alter it yourself. You can also trigger a rebase manually by commenting `@dependabot rebase`.\n\n[//]: # (dependabot-automerge-start)\n[//]: # (dependabot-automerge-end)\n\n---\n\n<details>\n<summary>Dependabot commands and options</summary>\n<br />\n\nYou can trigger Dependabot actions by commenting on this PR:\n- `@dependabot rebase` will rebase this PR\n- `@dependabot recreate` will recreate this PR, overwriting any edits that have been made to it\n- `@dependabot merge` will merge this PR after your CI passes on it\n- `@dependabot squash and merge` will squash and merge this PR after your CI passes on it\n- `@dependabot cancel merge` will cancel a previously requested merge and block automerging\n- `@dependabot reopen` will reopen this PR if it is closed\n- `@dependabot close` will close this PR and stop Dependabot recreating it. You can achieve the same result by closing it manually\n- `@dependabot ignore this major version` will close this PR and stop Dependabot creating any more for this major version (unless you reopen the PR or upgrade to it yourself)\n- `@dependabot ignore this minor version` will close this PR and stop Dependabot creating any more for this minor version (unless you reopen the PR or upgrade to it yourself)\n- `@dependabot ignore this dependency` will close this PR and stop Dependabot creating any more for this dependency (unless you reopen the PR or upgrade to it yourself)\n- `@dependabot use these labels` will set the current labels as the default for future PRs for this repo and language\n- `@dependabot use these reviewers` will set the current reviewers as the default for future PRs for this repo and language\n- `@dependabot use these assignees` will set the current assignees as the default for future PRs for this repo and language\n- `@dependabot use this milestone` will set the current milestone as the default for future PRs for this repo and language\n\nYou can disable automated security fix PRs for this repo from the [Security Alerts page](https://github.com/discord/loqui/network/alerts).\n\n</details>",
+        "created_at": "2022-06-15T00:53:31Z",
+        "updated_at": "2022-06-15T00:53:32Z",
+        "closed_at": null,
+        "merged_at": null,
+        "merge_commit_sha": "b24b766c8cafc5adffe1f919e0865398f7a9a218",
+        "assignee": null,
+        "assignees": [],
+        "requested_reviewers": [],
+        "requested_teams": [],
+        "labels": [
+          {
+            "id": 4214061671,
+            "node_id": "LA_kwDOBG5OWM77LXpn",
+            "url": "https://api.github.com/repos/discord/loqui/labels/dependencies",
+            "name": "dependencies",
+            "color": "0366d6",
+            "default": false,
+            "description": "Pull requests that update a dependency file"
+          }
+        ],
+        "milestone": null,
+        "draft": false,
+        "head": {
+          "label": "discord:dependabot/cargo/rust/loqui_server/net2-0.2.37",
+          "ref": "dependabot/cargo/rust/loqui_server/net2-0.2.37",
+          "sha": "bdb7413e8692671e08f7dee1fe3b2c1769cd2ba1",
+          "user": {
+            "login": "discord",
+            "id": 1965106,
+            "node_id": "MDEyOk9yZ2FuaXphdGlvbjE5NjUxMDY=",
+            "gravatar_id": "",
+            "url": "https://api.github.com/users/discord",
+            "type": "Organization",
+            "site_admin": false
+          },
+          "repo": {
+            "id": 74337880,
+            "node_id": "MDEwOlJlcG9zaXRvcnk3NDMzNzg4MA==",
+            "name": "loqui",
+            "full_name": "discord/loqui",
+            "private": false,
+            "owner": {
+              "login": "discord",
+              "id": 1965106,
+              "node_id": "MDEyOk9yZ2FuaXphdGlvbjE5NjUxMDY=",
+              "gravatar_id": "",
+              "url": "https://api.github.com/users/discord",
+              "type": "Organization",
+              "site_admin": false
+            },
+            "description": "RPC Transport Layer - with minimal bullshit.",
+            "fork": false,
+            "url": "https://api.github.com/repos/discord/loqui",
+            "created_at": "2016-11-21T07:34:31Z",
+            "updated_at": "2023-03-22T23:07:18Z",
+            "pushed_at": "2022-06-17T01:09:24Z",
+            "homepage": "",
+            "size": 879,
+            "stargazers_count": 217,
+            "watchers_count": 217,
+            "language": "Rust",
+            "has_issues": true,
+            "has_projects": true,
+            "has_downloads": true,
+            "has_wiki": true,
+            "has_pages": false,
+            "has_discussions": false,
+            "forks_count": 31,
+            "archived": true,
+            "disabled": false,
+            "open_issues_count": 16,
+            "license": {
+              "key": "mit",
+              "name": "MIT License",
+              "spdx_id": "MIT",
+              "url": "https://api.github.com/licenses/mit",
+              "node_id": "MDc6TGljZW5zZTEz"
+            },
+            "allow_forking": true,
+            "is_template": false,
+            "web_commit_signoff_required": false,
+            "topics": [
+              "elixir",
+              "golang",
+              "python",
+              "rpc"
+            ],
+            "visibility": "public",
+            "forks": 31,
+            "open_issues": 16,
+            "watchers": 217,
+            "default_branch": "master"
+          }
+        },
+        "base": {
+          "label": "discord:master",
+          "ref": "master",
+          "sha": "8d394a7951fd3a82d109becc1aebbd9e7ccc894a",
+          "user": {
+            "login": "discord",
+            "id": 1965106,
+            "node_id": "MDEyOk9yZ2FuaXphdGlvbjE5NjUxMDY=",
+            "gravatar_id": "",
+            "url": "https://api.github.com/users/discord",
+            "type": "Organization",
+            "site_admin": false
+          },
+          "repo": {
+            "id": 74337880,
+            "node_id": "MDEwOlJlcG9zaXRvcnk3NDMzNzg4MA==",
+            "name": "loqui",
+            "full_name": "discord/loqui",
+            "private": false,
+            "owner": {
+              "login": "discord",
+              "id": 1965106,
+              "node_id": "MDEyOk9yZ2FuaXphdGlvbjE5NjUxMDY=",
+              "gravatar_id": "",
+              "url": "https://api.github.com/users/discord",
+              "type": "Organization",
+              "site_admin": false
+            },
+            "description": "RPC Transport Layer - with minimal bullshit.",
+            "fork": false,
+            "url": "https://api.github.com/repos/discord/loqui",
+            "created_at": "2016-11-21T07:34:31Z",
+            "updated_at": "2023-03-22T23:07:18Z",
+            "pushed_at": "2022-06-17T01:09:24Z",
+            "homepage": "",
+            "size": 879,
+            "stargazers_count": 217,
+            "watchers_count": 217,
+            "language": "Rust",
+            "has_issues": true,
+            "has_projects": true,
+            "has_downloads": true,
+            "has_wiki": true,
+            "has_pages": false,
+            "has_discussions": false,
+            "forks_count": 31,
+            "archived": true,
+            "disabled": false,
+            "open_issues_count": 16,
+            "license": {
+              "key": "mit",
+              "name": "MIT License",
+              "spdx_id": "MIT",
+              "url": "https://api.github.com/licenses/mit",
+              "node_id": "MDc6TGljZW5zZTEz"
+            },
+            "allow_forking": true,
+            "is_template": false,
+            "web_commit_signoff_required": false,
+            "topics": [
+              "elixir",
+              "golang",
+              "python",
+              "rpc"
+            ],
+            "visibility": "public",
+            "forks": 31,
+            "open_issues": 16,
+            "watchers": 217,
+            "default_branch": "master"
+          }
+        },
+        "_links": {
+          "self": {
+            "href": "https://api.github.com/repos/discord/loqui/pulls/55"
+          },
+          "html": {
+            "href": "https://github.com/discord/loqui/pull/55"
+          },
+          "issue": {
+            "href": "https://api.github.com/repos/discord/loqui/issues/55"
+          },
+          "comments": {
+            "href": "https://api.github.com/repos/discord/loqui/issues/55/comments"
+          },
+          "review_comments": {
+            "href": "https://api.github.com/repos/discord/loqui/pulls/55/comments"
+          },
+          "review_comment": {
+            "href": "https://api.github.com/repos/discord/loqui/pulls/comments{/number}"
+          },
+          "commits": {
+            "href": "https://api.github.com/repos/discord/loqui/pulls/55/commits"
+          },
+          "statuses": {
+            "href": "https://api.github.com/repos/discord/loqui/statuses/bdb7413e8692671e08f7dee1fe3b2c1769cd2ba1"
+          }
+        },
+        "author_association": "NONE",
+        "auto_merge": null,
+        "active_lock_reason": null
+      }
+    ]
   }
 }
