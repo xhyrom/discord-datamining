@@ -132305,28 +132305,68 @@ html .invoiceCancelRow-3s2UuC {
     width: 100%;
     display: -webkit-box;
     display: -ms-flexbox;
-    display: flex;
-    -ms-flex-wrap: wrap-reverse;
-    flex-wrap: wrap-reverse;
-    gap: 16px
+    display: flex
 }
 
 .hero-1Du2Gn {
-    -ms-flex: 1 1 768px;
-    flex: 1 1 768px;
+    -webkit-box-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+    min-width: 0;
     -ms-flex-item-align: start;
     align-self: flex-start
 }
 
-.hero-1Du2Gn,
-.heroInfo-3NFzSx {
-    -webkit-box-flex: 1;
-    min-width: 0
+.birthdayExplanationWrapper-c5wg5T {
+    margin-top: 16px;
+    padding: 24px;
+    width: calc(100% - 48px);
+    background-color: var(--background-floating);
+    border-radius: 12px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    position: relative;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    text-align: center
 }
 
-.heroInfo-3NFzSx {
-    -ms-flex: 1 1 256px;
-    flex: 1 1 256px
+.birthdayExplanationText-2d4NO7 {
+    -webkit-box-flex: 1;
+    -ms-flex: 1 1 300px;
+    flex: 1 1 300px;
+    padding: 0 16px
+}
+
+.birthdayBalloonsContainer-2_cxx4 {
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 103px;
+    flex: 0 0 103px;
+    height: 40px;
+    position: relative
+}
+
+@media only screen and (max-width:920px) {
+    .birthdayBalloonsContainer-2_cxx4 {
+        display: none
+    }
+}
+
+.birthdayExplanationBalloonsLeft-1SrkR2 {
+    position: absolute;
+    top: -28px;
+    left: 0
+}
+
+.birthdayExplanationBalloonsRight-2ZdK6w {
+    position: absolute;
+    top: -28px;
+    right: 0
 }
 
 .heroDescription-2hfmwI {
@@ -154012,4 +154052,4 @@ html .invoiceCancelRow-dVOR64 {
     flex-direction: column
 }
 
-/*# sourceMappingURL=40532.0f6a457003696df1f6fe.css.map*/
+/*# sourceMappingURL=40532.db3691c66b8b00b80c9a.css.map*/
