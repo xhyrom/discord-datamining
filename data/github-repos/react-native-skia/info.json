@@ -57,16 +57,7 @@
     "triage": false,
     "pull": false
   },
-  "branches": [
-    {
-      "name": "main",
-      "commit": {
-        "sha": "707dc0ee05e17ef533b2fbd810ff87ca431146e3",
-        "url": "https://api.github.com/repos/discord/react-native-skia/commits/707dc0ee05e17ef533b2fbd810ff87ca431146e3"
-      },
-      "protected": false
-    }
-  ],
+  "branches": [],
   "last5": {
     "commits": [
       {

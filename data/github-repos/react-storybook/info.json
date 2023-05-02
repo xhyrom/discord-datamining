@@ -57,64 +57,7 @@
     "triage": false,
     "pull": false
   },
-  "branches": [
-    {
-      "name": "jcarbo-feature/webpack-chunk-hash",
-      "commit": {
-        "sha": "32424cc6167ab45b518027a328d922bdc30cb52e",
-        "url": "https://api.github.com/repos/discord/react-storybook/commits/32424cc6167ab45b518027a328d922bdc30cb52e"
-      },
-      "protected": false
-    },
-    {
-      "name": "master",
-      "commit": {
-        "sha": "5135a465bb424a7e3e6348c3c9a641ef60825641",
-        "url": "https://api.github.com/repos/discord/react-storybook/commits/5135a465bb424a7e3e6348c3c9a641ef60825641"
-      },
-      "protected": false
-    },
-    {
-      "name": "postinstall",
-      "commit": {
-        "sha": "f0908c1d71ede2f62ac0499794e0b73055402e11",
-        "url": "https://api.github.com/repos/discord/react-storybook/commits/f0908c1d71ede2f62ac0499794e0b73055402e11"
-      },
-      "protected": false
-    },
-    {
-      "name": "toby-fix-injected-syntax",
-      "commit": {
-        "sha": "767717fd19b548e6af8a02ed56a889d0c5148ab4",
-        "url": "https://api.github.com/repos/discord/react-storybook/commits/767717fd19b548e6af8a02ed56a889d0c5148ab4"
-      },
-      "protected": false
-    },
-    {
-      "name": "toby-webpack2",
-      "commit": {
-        "sha": "5c5443568f535d7883d2f9ddc1d90163de847ec2",
-        "url": "https://api.github.com/repos/discord/react-storybook/commits/5c5443568f535d7883d2f9ddc1d90163de847ec2"
-      },
-      "protected": false
-    },
-    {
-      "name": "update-file-loader",
-      "commit": {
-        "sha": "6f45dad2568d46706a24e62832a958bf4a04946a",
-        "url": "https://api.github.com/repos/discord/react-storybook/commits/6f45dad2568d46706a24e62832a958bf4a04946a"
-      },
-      "protected": false
-    },
-    {
-      "name": "use-set-preview",
-      "commit": {
-        "sha": "47557af6870638af7b694b542e3ae8c12a083fb6",
-        "url": "https://api.github.com/repos/discord/react-storybook/commits/47557af6870638af7b694b542e3ae8c12a083fb6"
-      },
-      "protected": false
-    }
-  ],
+  "branches": [],
   "last5": {
     "commits": [
       {
