@@ -64,7 +64,286 @@
   },
   "branches": [],
   "last5": {
-    "commits": [],
+    "commits": [
+      {
+        "sha": "fd72e463bb913743ccfd24415357c8e598101f32",
+        "node_id": "C_kwDOBOx6LdoAKGZkNzJlNDYzYmI5MTM3NDNjY2ZkMjQ0MTUzNTdjOGU1OTgxMDFmMzI",
+        "commit": {
+          "author": {
+            "name": "ypisetsky",
+            "email": "yuliy.pisetsky@discordapp.com",
+            "date": "2022-10-19T21:23:10Z"
+          },
+          "committer": {
+            "name": "ypisetsky",
+            "email": "yuliy.pisetsky@discordapp.com",
+            "date": "2022-10-19T21:23:10Z"
+          },
+          "message": "6.0.4",
+          "tree": {
+            "sha": "95c7c5c3855bdb254647c535be8c3ac986bc644c",
+            "url": "https://api.github.com/repos/discord/ex_hash_ring/git/trees/95c7c5c3855bdb254647c535be8c3ac986bc644c"
+          },
+          "url": "https://api.github.com/repos/discord/ex_hash_ring/git/commits/fd72e463bb913743ccfd24415357c8e598101f32",
+          "comment_count": 0,
+          "verification": {
+            "verified": false,
+            "reason": "unsigned",
+            "signature": null,
+            "payload": null
+          }
+        },
+        "url": "https://api.github.com/repos/discord/ex_hash_ring/commits/fd72e463bb913743ccfd24415357c8e598101f32",
+        "author": {
+          "login": "ypisetsky",
+          "id": 287854,
+          "node_id": "MDQ6VXNlcjI4Nzg1NA==",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/ypisetsky",
+          "type": "User",
+          "site_admin": false
+        },
+        "committer": {
+          "login": "ypisetsky",
+          "id": 287854,
+          "node_id": "MDQ6VXNlcjI4Nzg1NA==",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/ypisetsky",
+          "type": "User",
+          "site_admin": false
+        },
+        "parents": [
+          {
+            "sha": "25f89454420638fb3b6da53c7bf2a2fff0172bf3",
+            "url": "https://api.github.com/repos/discord/ex_hash_ring/commits/25f89454420638fb3b6da53c7bf2a2fff0172bf3"
+          }
+        ]
+      },
+      {
+        "sha": "25f89454420638fb3b6da53c7bf2a2fff0172bf3",
+        "node_id": "C_kwDOBOx6LdoAKDI1Zjg5NDU0NDIwNjM4ZmIzYjZkYTUzYzdiZjJhMmZmZjAxNzJiZjM",
+        "commit": {
+          "author": {
+            "name": "Yuliy Pisetsky",
+            "email": "yuliy.pisetsky@discordapp.com",
+            "date": "2022-10-19T21:21:37Z"
+          },
+          "committer": {
+            "name": "GitHub",
+            "email": "noreply@github.com",
+            "date": "2022-10-19T21:21:37Z"
+          },
+          "message": "Merge pull request #13 from discord/fix_infinite_do_find_nodes\n\nFix a couple corner cases when asking for > size of ring",
+          "tree": {
+            "sha": "14ea5e853730423ca8b7f1c8d34f5f8fb896f202",
+            "url": "https://api.github.com/repos/discord/ex_hash_ring/git/trees/14ea5e853730423ca8b7f1c8d34f5f8fb896f202"
+          },
+          "url": "https://api.github.com/repos/discord/ex_hash_ring/git/commits/25f89454420638fb3b6da53c7bf2a2fff0172bf3",
+          "comment_count": 0,
+          "verification": {
+            "verified": true,
+            "reason": "valid",
+            "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsBcBAABCAAQBQJjUGphCRBK7hj4Ov3rIwAAxy0IACuTaQdR8XzXHDKDk+FQNEne\nDQZqj4w1iuacsS6HClh0mpVy/moGjBmDpdct82GpU2SgTKXYyLFAa5O2pYpnbjoB\ny7ZPO+G4246gfYTEV19hxWn73lc+ebmFYb1y/p2C2kOqtPjhFvw1dMCw9l4Xxk83\nr+zZZ5iJpV/3rtwjpZ7h4hcMiWJmsk2SKDcRNVdreEnyS8KjQXpBseQ3KK0Y4QTc\nsXz4MsKCugUmjMmrK5Ij5Ba0nxXSkZ6cX+7eojYTc9fOPqPG/w7NU1J1QZ6fOrXa\nIR7ZdP4D1w7AoJypgDdHZfPqE947y8Z90ljc05Ybwntw3eaNZqKlws9VcnjfUwA=\n=XaGy\n-----END PGP SIGNATURE-----\n",
+            "payload": "tree 14ea5e853730423ca8b7f1c8d34f5f8fb896f202\nparent c86a026a70dbd9b796d58e334c26574284fccbec\nparent 9b530429bcfa1e590d8954dbf339de5d81c18e53\nauthor Yuliy Pisetsky <yuliy.pisetsky@discordapp.com> 1666214497 -0700\ncommitter GitHub <noreply@github.com> 1666214497 -0700\n\nMerge pull request #13 from discord/fix_infinite_do_find_nodes\n\nFix a couple corner cases when asking for > size of ring"
+          }
+        },
+        "url": "https://api.github.com/repos/discord/ex_hash_ring/commits/25f89454420638fb3b6da53c7bf2a2fff0172bf3",
+        "author": {
+          "login": "ypisetsky",
+          "id": 287854,
+          "node_id": "MDQ6VXNlcjI4Nzg1NA==",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/ypisetsky",
+          "type": "User",
+          "site_admin": false
+        },
+        "committer": {
+          "login": "web-flow",
+          "id": 19864447,
+          "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/web-flow",
+          "type": "User",
+          "site_admin": false
+        },
+        "parents": [
+          {
+            "sha": "c86a026a70dbd9b796d58e334c26574284fccbec",
+            "url": "https://api.github.com/repos/discord/ex_hash_ring/commits/c86a026a70dbd9b796d58e334c26574284fccbec"
+          },
+          {
+            "sha": "9b530429bcfa1e590d8954dbf339de5d81c18e53",
+            "url": "https://api.github.com/repos/discord/ex_hash_ring/commits/9b530429bcfa1e590d8954dbf339de5d81c18e53"
+          }
+        ]
+      },
+      {
+        "sha": "c86a026a70dbd9b796d58e334c26574284fccbec",
+        "node_id": "C_kwDOBOx6LdoAKGM4NmEwMjZhNzBkYmQ5Yjc5NmQ1OGUzMzRjMjY1NzQyODRmY2NiZWM",
+        "commit": {
+          "author": {
+            "name": "ypisetsky",
+            "email": "yuliy.pisetsky@discordapp.com",
+            "date": "2022-10-19T20:01:42Z"
+          },
+          "committer": {
+            "name": "ypisetsky",
+            "email": "yuliy.pisetsky@discordapp.com",
+            "date": "2022-10-19T20:01:42Z"
+          },
+          "message": "6.0.3",
+          "tree": {
+            "sha": "d556ff133631ba508f6056a33d18c14007480de2",
+            "url": "https://api.github.com/repos/discord/ex_hash_ring/git/trees/d556ff133631ba508f6056a33d18c14007480de2"
+          },
+          "url": "https://api.github.com/repos/discord/ex_hash_ring/git/commits/c86a026a70dbd9b796d58e334c26574284fccbec",
+          "comment_count": 0,
+          "verification": {
+            "verified": false,
+            "reason": "unsigned",
+            "signature": null,
+            "payload": null
+          }
+        },
+        "url": "https://api.github.com/repos/discord/ex_hash_ring/commits/c86a026a70dbd9b796d58e334c26574284fccbec",
+        "author": {
+          "login": "ypisetsky",
+          "id": 287854,
+          "node_id": "MDQ6VXNlcjI4Nzg1NA==",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/ypisetsky",
+          "type": "User",
+          "site_admin": false
+        },
+        "committer": {
+          "login": "ypisetsky",
+          "id": 287854,
+          "node_id": "MDQ6VXNlcjI4Nzg1NA==",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/ypisetsky",
+          "type": "User",
+          "site_admin": false
+        },
+        "parents": [
+          {
+            "sha": "866eccc7df3c18e420341529f3a45ea495f75ff8",
+            "url": "https://api.github.com/repos/discord/ex_hash_ring/commits/866eccc7df3c18e420341529f3a45ea495f75ff8"
+          }
+        ]
+      },
+      {
+        "sha": "866eccc7df3c18e420341529f3a45ea495f75ff8",
+        "node_id": "C_kwDOBOx6LdoAKDg2NmVjY2M3ZGYzYzE4ZTQyMDM0MTUyOWYzYTQ1ZWE0OTVmNzVmZjg",
+        "commit": {
+          "author": {
+            "name": "Yuliy Pisetsky",
+            "email": "yuliy.pisetsky@discordapp.com",
+            "date": "2022-10-19T20:00:50Z"
+          },
+          "committer": {
+            "name": "GitHub",
+            "email": "noreply@github.com",
+            "date": "2022-10-19T20:00:50Z"
+          },
+          "message": "Merge pull request #14 from discord/update_deps\n\nUpdate deps to support Elixir 1.12",
+          "tree": {
+            "sha": "daa8ba78524b861334be28d946b2146cfc0afa78",
+            "url": "https://api.github.com/repos/discord/ex_hash_ring/git/trees/daa8ba78524b861334be28d946b2146cfc0afa78"
+          },
+          "url": "https://api.github.com/repos/discord/ex_hash_ring/git/commits/866eccc7df3c18e420341529f3a45ea495f75ff8",
+          "comment_count": 0,
+          "verification": {
+            "verified": true,
+            "reason": "valid",
+            "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsBcBAABCAAQBQJjUFdyCRBK7hj4Ov3rIwAAN/wIAHH3FcIu1Vhik3rnJf3Xp6O3\ngwJPCG4EFMuFTnyRZjjqADyv/4ypV9BGdPGKZ9NOPLaWnfzqV6r4VQaGk0E3VPCS\nq8CHb7lbQV6LjrMr2JPpH0Q2HJA7RiwoXFBMj/OZJS2VDWwvfG2XYSja/jonlJve\nY7mLV4YHS3pQaQXfjYuxh0KAdEoul6hDpzH6FNbAQCkgUGZC9Qsd3wcJXKKK1Vzh\n6vthr8c1xHFHxbt0INwECW7/1XIhfpCh9FfGuZN3E6ooMO09cQX3EcDqKSF/3/dr\nLZeVdZNP4HwUQfSZijLNQ4C0z/8t1tcHKlRbrj4kdYJPViEZW/+hYfnmKNHLtVA=\n=SPrw\n-----END PGP SIGNATURE-----\n",
+            "payload": "tree daa8ba78524b861334be28d946b2146cfc0afa78\nparent 3a4456ff1164adb03bd1c294c2d6a12c07517a3a\nparent cc4518041615d0b5d5d51eb1278e14f54e3db27e\nauthor Yuliy Pisetsky <yuliy.pisetsky@discordapp.com> 1666209650 -0700\ncommitter GitHub <noreply@github.com> 1666209650 -0700\n\nMerge pull request #14 from discord/update_deps\n\nUpdate deps to support Elixir 1.12"
+          }
+        },
+        "url": "https://api.github.com/repos/discord/ex_hash_ring/commits/866eccc7df3c18e420341529f3a45ea495f75ff8",
+        "author": {
+          "login": "ypisetsky",
+          "id": 287854,
+          "node_id": "MDQ6VXNlcjI4Nzg1NA==",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/ypisetsky",
+          "type": "User",
+          "site_admin": false
+        },
+        "committer": {
+          "login": "web-flow",
+          "id": 19864447,
+          "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/web-flow",
+          "type": "User",
+          "site_admin": false
+        },
+        "parents": [
+          {
+            "sha": "3a4456ff1164adb03bd1c294c2d6a12c07517a3a",
+            "url": "https://api.github.com/repos/discord/ex_hash_ring/commits/3a4456ff1164adb03bd1c294c2d6a12c07517a3a"
+          },
+          {
+            "sha": "cc4518041615d0b5d5d51eb1278e14f54e3db27e",
+            "url": "https://api.github.com/repos/discord/ex_hash_ring/commits/cc4518041615d0b5d5d51eb1278e14f54e3db27e"
+          }
+        ]
+      },
+      {
+        "sha": "cc4518041615d0b5d5d51eb1278e14f54e3db27e",
+        "node_id": "C_kwDOBOx6LdoAKGNjNDUxODA0MTYxNWQwYjVkNWQ1MWViMTI3OGUxNGY1NGUzZGIyN2U",
+        "commit": {
+          "author": {
+            "name": "ypisetsky",
+            "email": "yuliy.pisetsky@discordapp.com",
+            "date": "2022-10-19T19:57:54Z"
+          },
+          "committer": {
+            "name": "ypisetsky",
+            "email": "yuliy.pisetsky@discordapp.com",
+            "date": "2022-10-19T19:57:54Z"
+          },
+          "message": "Update deps to support Elixir 1.12",
+          "tree": {
+            "sha": "daa8ba78524b861334be28d946b2146cfc0afa78",
+            "url": "https://api.github.com/repos/discord/ex_hash_ring/git/trees/daa8ba78524b861334be28d946b2146cfc0afa78"
+          },
+          "url": "https://api.github.com/repos/discord/ex_hash_ring/git/commits/cc4518041615d0b5d5d51eb1278e14f54e3db27e",
+          "comment_count": 0,
+          "verification": {
+            "verified": false,
+            "reason": "unsigned",
+            "signature": null,
+            "payload": null
+          }
+        },
+        "url": "https://api.github.com/repos/discord/ex_hash_ring/commits/cc4518041615d0b5d5d51eb1278e14f54e3db27e",
+        "author": {
+          "login": "ypisetsky",
+          "id": 287854,
+          "node_id": "MDQ6VXNlcjI4Nzg1NA==",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/ypisetsky",
+          "type": "User",
+          "site_admin": false
+        },
+        "committer": {
+          "login": "ypisetsky",
+          "id": 287854,
+          "node_id": "MDQ6VXNlcjI4Nzg1NA==",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/ypisetsky",
+          "type": "User",
+          "site_admin": false
+        },
+        "parents": [
+          {
+            "sha": "3a4456ff1164adb03bd1c294c2d6a12c07517a3a",
+            "url": "https://api.github.com/repos/discord/ex_hash_ring/commits/3a4456ff1164adb03bd1c294c2d6a12c07517a3a"
+          }
+        ]
+      }
+    ],
     "releases": [],
     "issues": [],
     "pullRequests": []
