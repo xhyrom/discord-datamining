@@ -57,7 +57,24 @@
     "triage": false,
     "pull": false
   },
-  "branches": [],
+  "branches": [
+    {
+      "name": "master",
+      "commit": {
+        "sha": "16e48f319048e090a2fe7fd39a794312d191fc6f",
+        "url": "https://api.github.com/repos/discord/bazel_jar_jar/commits/16e48f319048e090a2fe7fd39a794312d191fc6f"
+      },
+      "protected": false
+    },
+    {
+      "name": "oscar/separate_path",
+      "commit": {
+        "sha": "9d95198433d9dfabc338dca7cfb866e938cd3a78",
+        "url": "https://api.github.com/repos/discord/bazel_jar_jar/commits/9d95198433d9dfabc338dca7cfb866e938cd3a78"
+      },
+      "protected": false
+    }
+  ],
   "last5": {
     "commits": [
       {
