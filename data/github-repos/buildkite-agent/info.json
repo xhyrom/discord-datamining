@@ -335,8 +335,861 @@
         ]
       }
     ],
-    "releases": [],
-    "issues": [],
+    "releases": [
+      {
+        "url": "https://api.github.com/repos/discord/buildkite-agent/releases/95479482",
+        "id": 95479482,
+        "author": {
+          "login": "goodspark",
+          "id": 29210237,
+          "node_id": "MDQ6VXNlcjI5MjEwMjM3",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/goodspark",
+          "type": "User",
+          "site_admin": false
+        },
+        "node_id": "RE_kwDOBoQbUs4FsOa6",
+        "tag_name": "discord-v3.39.0-1",
+        "target_commitish": "discord-3.39.0-fork",
+        "name": "Discord v3.39.0-1",
+        "draft": false,
+        "prerelease": true,
+        "created_at": "2023-03-14T01:39:34Z",
+        "published_at": "2023-03-14T02:03:56Z",
+        "assets": [
+          {
+            "url": "https://api.github.com/repos/discord/buildkite-agent/releases/assets/99365509",
+            "id": 99365509,
+            "node_id": "RA_kwDOBoQbUs4F7DKF",
+            "name": "buildkite-agent-darwin-amd64-3.39.0-1.tar.gz",
+            "label": null,
+            "uploader": {
+              "login": "goodspark",
+              "id": 29210237,
+              "node_id": "MDQ6VXNlcjI5MjEwMjM3",
+              "gravatar_id": "",
+              "url": "https://api.github.com/users/goodspark",
+              "type": "User",
+              "site_admin": false
+            },
+            "content_type": "application/gzip",
+            "state": "uploaded",
+            "size": 13630284,
+            "download_count": 0,
+            "created_at": "2023-03-14T16:09:48Z",
+            "updated_at": "2023-03-14T16:09:55Z"
+          },
+          {
+            "url": "https://api.github.com/repos/discord/buildkite-agent/releases/assets/99272879",
+            "id": 99272879,
+            "node_id": "RA_kwDOBoQbUs4F6siv",
+            "name": "buildkite-agent-linux-amd64-3.39.0-1.tar.gz",
+            "label": null,
+            "uploader": {
+              "login": "goodspark",
+              "id": 29210237,
+              "node_id": "MDQ6VXNlcjI5MjEwMjM3",
+              "gravatar_id": "",
+              "url": "https://api.github.com/users/goodspark",
+              "type": "User",
+              "site_admin": false
+            },
+            "content_type": "application/gzip",
+            "state": "uploaded",
+            "size": 13859784,
+            "download_count": 64,
+            "created_at": "2023-03-14T01:55:31Z",
+            "updated_at": "2023-03-14T01:55:38Z"
+          },
+          {
+            "url": "https://api.github.com/repos/discord/buildkite-agent/releases/assets/99365359",
+            "id": 99365359,
+            "node_id": "RA_kwDOBoQbUs4F7DHv",
+            "name": "buildkite-agent-windows-amd64-3.39.0-1.zip",
+            "label": null,
+            "uploader": {
+              "login": "goodspark",
+              "id": 29210237,
+              "node_id": "MDQ6VXNlcjI5MjEwMjM3",
+              "gravatar_id": "",
+              "url": "https://api.github.com/users/goodspark",
+              "type": "User",
+              "site_admin": false
+            },
+            "content_type": "application/zip",
+            "state": "uploaded",
+            "size": 13963666,
+            "download_count": 4,
+            "created_at": "2023-03-14T16:08:46Z",
+            "updated_at": "2023-03-14T16:08:55Z"
+          }
+        ],
+        "body": "Discord beta release while we wait for these changes to get merged and released:\r\n\r\n- https://github.com/buildkite/agent/pull/1775 Adds a config option that changes the format of the trace propagation header sent to subprocesses run from the agent during CI jobs to JSON instead of Golang-binary, which enables trace propagation and linking across process and language boundaries.\r\n- https://github.com/buildkite/agent/pull/2009 Adds an option to output job's logs in structured format in a non-temporary file for collection.\r\n- https://github.com/buildkite/agent/pull/2007 Fixes a warning from the Datadog tracing library\r\n- https://github.com/buildkite/agent/pull/1779 Allow custom tracing service name\r\n\r\nForked from 3.39.0 bc the fix in 3.39.1 breaks some hooks."
+      },
+      {
+        "url": "https://api.github.com/repos/discord/buildkite-agent/releases/95446670",
+        "id": 95446670,
+        "author": {
+          "login": "goodspark",
+          "id": 29210237,
+          "node_id": "MDQ6VXNlcjI5MjEwMjM3",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/goodspark",
+          "type": "User",
+          "site_admin": false
+        },
+        "node_id": "RE_kwDOBoQbUs4FsGaO",
+        "tag_name": "discord-v3.44.0-2",
+        "target_commitish": "discord-3.44.0-fork",
+        "name": "Discord v3.44.0-2",
+        "draft": false,
+        "prerelease": true,
+        "created_at": "2023-03-13T18:57:43Z",
+        "published_at": "2023-03-13T19:24:57Z",
+        "assets": [
+          {
+            "url": "https://api.github.com/repos/discord/buildkite-agent/releases/assets/99235766",
+            "id": 99235766,
+            "node_id": "RA_kwDOBoQbUs4F6je2",
+            "name": "buildkite-agent-darwin-amd64-3.44.0-2.tar.gz",
+            "label": null,
+            "uploader": {
+              "login": "goodspark",
+              "id": 29210237,
+              "node_id": "MDQ6VXNlcjI5MjEwMjM3",
+              "gravatar_id": "",
+              "url": "https://api.github.com/users/goodspark",
+              "type": "User",
+              "site_admin": false
+            },
+            "content_type": "application/gzip",
+            "state": "uploaded",
+            "size": 14163785,
+            "download_count": 3,
+            "created_at": "2023-03-13T19:08:37Z",
+            "updated_at": "2023-03-13T19:08:43Z"
+          },
+          {
+            "url": "https://api.github.com/repos/discord/buildkite-agent/releases/assets/99235758",
+            "id": 99235758,
+            "node_id": "RA_kwDOBoQbUs4F6jeu",
+            "name": "buildkite-agent-linux-amd64-3.44.0-2.tar.gz",
+            "label": null,
+            "uploader": {
+              "login": "goodspark",
+              "id": 29210237,
+              "node_id": "MDQ6VXNlcjI5MjEwMjM3",
+              "gravatar_id": "",
+              "url": "https://api.github.com/users/goodspark",
+              "type": "User",
+              "site_admin": false
+            },
+            "content_type": "application/gzip",
+            "state": "uploaded",
+            "size": 14403147,
+            "download_count": 12,
+            "created_at": "2023-03-13T19:08:30Z",
+            "updated_at": "2023-03-13T19:08:37Z"
+          },
+          {
+            "url": "https://api.github.com/repos/discord/buildkite-agent/releases/assets/99249013",
+            "id": 99249013,
+            "node_id": "RA_kwDOBoQbUs4F6mt1",
+            "name": "buildkite-agent-windows-amd64-3.44.0-2.zip",
+            "label": null,
+            "uploader": {
+              "login": "goodspark",
+              "id": 29210237,
+              "node_id": "MDQ6VXNlcjI5MjEwMjM3",
+              "gravatar_id": "",
+              "url": "https://api.github.com/users/goodspark",
+              "type": "User",
+              "site_admin": false
+            },
+            "content_type": "application/zip",
+            "state": "uploaded",
+            "size": 14501235,
+            "download_count": 8,
+            "created_at": "2023-03-13T21:34:51Z",
+            "updated_at": "2023-03-13T21:34:59Z"
+          }
+        ],
+        "body": "Discord beta release while we wait for these changes to get merged and released:\r\n\r\n- https://github.com/buildkite/agent/pull/1775 Adds a config option that changes the format of the trace propagation header sent to subprocesses run from the agent during CI jobs to JSON instead of Golang-binary, which enables trace propagation and linking across process and language boundaries.\r\n- https://github.com/buildkite/agent/pull/2009 Adds an option to output job's logs in structured format in a non-temporary file for collection.\r\n- https://github.com/buildkite/agent/pull/2007 Fixes a warning from the Datadog tracing library"
+      },
+      {
+        "url": "https://api.github.com/repos/discord/buildkite-agent/releases/92633908",
+        "id": 92633908,
+        "author": {
+          "login": "goodspark",
+          "id": 29210237,
+          "node_id": "MDQ6VXNlcjI5MjEwMjM3",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/goodspark",
+          "type": "User",
+          "site_admin": false
+        },
+        "node_id": "RE_kwDOBoQbUs4FhXs0",
+        "tag_name": "discord-v3.43.1-1",
+        "target_commitish": "dependabot/docker/packaging/docker/alpine-k8s/alpine-3.17.2",
+        "name": "Discord v3.43.1-1",
+        "draft": false,
+        "prerelease": true,
+        "created_at": "2023-03-07T02:12:57Z",
+        "published_at": "2023-03-06T23:15:38Z",
+        "assets": [
+          {
+            "url": "https://api.github.com/repos/discord/buildkite-agent/releases/assets/98320623",
+            "id": 98320623,
+            "node_id": "RA_kwDOBoQbUs4F3EDv",
+            "name": "buildkite-agent-darwin-amd64-3.43.1-1.tar.gz",
+            "label": null,
+            "uploader": {
+              "login": "goodspark",
+              "id": 29210237,
+              "node_id": "MDQ6VXNlcjI5MjEwMjM3",
+              "gravatar_id": "",
+              "url": "https://api.github.com/users/goodspark",
+              "type": "User",
+              "site_admin": false
+            },
+            "content_type": "application/gzip",
+            "state": "uploaded",
+            "size": 13956864,
+            "download_count": 2,
+            "created_at": "2023-03-07T02:16:02Z",
+            "updated_at": "2023-03-07T02:16:10Z"
+          },
+          {
+            "url": "https://api.github.com/repos/discord/buildkite-agent/releases/assets/98320654",
+            "id": 98320654,
+            "node_id": "RA_kwDOBoQbUs4F3EEO",
+            "name": "buildkite-agent-linux-amd64-3.43.1-1.tar.gz",
+            "label": null,
+            "uploader": {
+              "login": "goodspark",
+              "id": 29210237,
+              "node_id": "MDQ6VXNlcjI5MjEwMjM3",
+              "gravatar_id": "",
+              "url": "https://api.github.com/users/goodspark",
+              "type": "User",
+              "site_admin": false
+            },
+            "content_type": "application/gzip",
+            "state": "uploaded",
+            "size": 14163716,
+            "download_count": 6,
+            "created_at": "2023-03-07T02:16:17Z",
+            "updated_at": "2023-03-07T02:16:24Z"
+          },
+          {
+            "url": "https://api.github.com/repos/discord/buildkite-agent/releases/assets/98320668",
+            "id": 98320668,
+            "node_id": "RA_kwDOBoQbUs4F3EEc",
+            "name": "buildkite-agent-windows-amd64-3.43.1-1.zip",
+            "label": null,
+            "uploader": {
+              "login": "goodspark",
+              "id": 29210237,
+              "node_id": "MDQ6VXNlcjI5MjEwMjM3",
+              "gravatar_id": "",
+              "url": "https://api.github.com/users/goodspark",
+              "type": "User",
+              "site_admin": false
+            },
+            "content_type": "application/zip",
+            "state": "uploaded",
+            "size": 14285862,
+            "download_count": 2,
+            "created_at": "2023-03-07T02:16:30Z",
+            "updated_at": "2023-03-07T02:16:37Z"
+          }
+        ],
+        "body": "Discord beta release while we wait for these changes to get merged and released:\r\n\r\n- https://github.com/buildkite/agent/pull/1775 Adds a config option that changes the format of the trace propagation header sent to subprocesses run from the agent during CI jobs to JSON instead of Golang-binary, which enables trace propagation and linking across process and language boundaries."
+      },
+      {
+        "url": "https://api.github.com/repos/discord/buildkite-agent/releases/31254352",
+        "id": 31254352,
+        "author": {
+          "login": "goodspark",
+          "id": 29210237,
+          "node_id": "MDQ6VXNlcjI5MjEwMjM3",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/goodspark",
+          "type": "User",
+          "site_admin": false
+        },
+        "node_id": "MDc6UmVsZWFzZTMxMjU0MzUy",
+        "tag_name": "discord-v3.24.0-1",
+        "target_commitish": "discord-v3.24.0",
+        "name": "Discord v3.24.0-1",
+        "draft": false,
+        "prerelease": false,
+        "created_at": "2020-09-14T13:02:46Z",
+        "published_at": "2020-09-14T13:09:24Z",
+        "assets": [
+          {
+            "url": "https://api.github.com/repos/discord/buildkite-agent/releases/assets/26613402",
+            "id": 26613402,
+            "node_id": "MDEyOlJlbGVhc2VBc3NldDI2NjEzNDAy",
+            "name": "buildkite-agent-darwin-amd64",
+            "label": null,
+            "uploader": {
+              "login": "goodspark",
+              "id": 29210237,
+              "node_id": "MDQ6VXNlcjI5MjEwMjM3",
+              "gravatar_id": "",
+              "url": "https://api.github.com/users/goodspark",
+              "type": "User",
+              "site_admin": false
+            },
+            "content_type": "application/octet-stream",
+            "state": "uploaded",
+            "size": 37547096,
+            "download_count": 0,
+            "created_at": "2020-10-06T15:01:56Z",
+            "updated_at": "2020-10-06T15:02:24Z"
+          },
+          {
+            "url": "https://api.github.com/repos/discord/buildkite-agent/releases/assets/26613432",
+            "id": 26613432,
+            "node_id": "MDEyOlJlbGVhc2VBc3NldDI2NjEzNDMy",
+            "name": "buildkite-agent-darwin-amd64.sha256",
+            "label": null,
+            "uploader": {
+              "login": "goodspark",
+              "id": 29210237,
+              "node_id": "MDQ6VXNlcjI5MjEwMjM3",
+              "gravatar_id": "",
+              "url": "https://api.github.com/users/goodspark",
+              "type": "User",
+              "site_admin": false
+            },
+            "content_type": "application/octet-stream",
+            "state": "uploaded",
+            "size": 95,
+            "download_count": 1,
+            "created_at": "2020-10-06T15:02:24Z",
+            "updated_at": "2020-10-06T15:02:25Z"
+          },
+          {
+            "url": "https://api.github.com/repos/discord/buildkite-agent/releases/assets/26729782",
+            "id": 26729782,
+            "node_id": "MDEyOlJlbGVhc2VBc3NldDI2NzI5Nzgy",
+            "name": "buildkite-agent-darwin-amd64.tar.gz",
+            "label": null,
+            "uploader": {
+              "login": "goodspark",
+              "id": 29210237,
+              "node_id": "MDQ6VXNlcjI5MjEwMjM3",
+              "gravatar_id": "",
+              "url": "https://api.github.com/users/goodspark",
+              "type": "User",
+              "site_admin": false
+            },
+            "content_type": "application/gzip",
+            "state": "uploaded",
+            "size": 14085737,
+            "download_count": 6,
+            "created_at": "2020-10-08T23:42:19Z",
+            "updated_at": "2020-10-08T23:42:30Z"
+          },
+          {
+            "url": "https://api.github.com/repos/discord/buildkite-agent/releases/assets/26729784",
+            "id": 26729784,
+            "node_id": "MDEyOlJlbGVhc2VBc3NldDI2NzI5Nzg0",
+            "name": "buildkite-agent-darwin-amd64.tar.gz.sha256",
+            "label": null,
+            "uploader": {
+              "login": "goodspark",
+              "id": 29210237,
+              "node_id": "MDQ6VXNlcjI5MjEwMjM3",
+              "gravatar_id": "",
+              "url": "https://api.github.com/users/goodspark",
+              "type": "User",
+              "site_admin": false
+            },
+            "content_type": "application/octet-stream",
+            "state": "uploaded",
+            "size": 102,
+            "download_count": 0,
+            "created_at": "2020-10-08T23:42:30Z",
+            "updated_at": "2020-10-08T23:42:30Z"
+          },
+          {
+            "url": "https://api.github.com/repos/discord/buildkite-agent/releases/assets/25595724",
+            "id": 25595724,
+            "node_id": "MDEyOlJlbGVhc2VBc3NldDI1NTk1NzI0",
+            "name": "buildkite-agent-linux-amd64",
+            "label": null,
+            "uploader": {
+              "login": "goodspark",
+              "id": 29210237,
+              "node_id": "MDQ6VXNlcjI5MjEwMjM3",
+              "gravatar_id": "",
+              "url": "https://api.github.com/users/goodspark",
+              "type": "User",
+              "site_admin": false
+            },
+            "content_type": "application/octet-stream",
+            "state": "uploaded",
+            "size": 37742815,
+            "download_count": 23,
+            "created_at": "2020-09-14T13:04:54Z",
+            "updated_at": "2020-09-14T13:05:24Z"
+          },
+          {
+            "url": "https://api.github.com/repos/discord/buildkite-agent/releases/assets/25595968",
+            "id": 25595968,
+            "node_id": "MDEyOlJlbGVhc2VBc3NldDI1NTk1OTY4",
+            "name": "buildkite-agent-linux-amd64.sha256",
+            "label": null,
+            "uploader": {
+              "login": "goodspark",
+              "id": 29210237,
+              "node_id": "MDQ6VXNlcjI5MjEwMjM3",
+              "gravatar_id": "",
+              "url": "https://api.github.com/users/goodspark",
+              "type": "User",
+              "site_admin": false
+            },
+            "content_type": "application/octet-stream",
+            "state": "uploaded",
+            "size": 94,
+            "download_count": 1,
+            "created_at": "2020-09-14T13:09:07Z",
+            "updated_at": "2020-09-14T13:09:08Z"
+          },
+          {
+            "url": "https://api.github.com/repos/discord/buildkite-agent/releases/assets/26613433",
+            "id": 26613433,
+            "node_id": "MDEyOlJlbGVhc2VBc3NldDI2NjEzNDMz",
+            "name": "buildkite-agent-windows-amd64.exe",
+            "label": null,
+            "uploader": {
+              "login": "goodspark",
+              "id": 29210237,
+              "node_id": "MDQ6VXNlcjI5MjEwMjM3",
+              "gravatar_id": "",
+              "url": "https://api.github.com/users/goodspark",
+              "type": "User",
+              "site_admin": false
+            },
+            "content_type": "application/x-ms-dos-executable",
+            "state": "uploaded",
+            "size": 38389760,
+            "download_count": 7,
+            "created_at": "2020-10-06T15:02:25Z",
+            "updated_at": "2020-10-06T15:03:00Z"
+          },
+          {
+            "url": "https://api.github.com/repos/discord/buildkite-agent/releases/assets/26613453",
+            "id": 26613453,
+            "node_id": "MDEyOlJlbGVhc2VBc3NldDI2NjEzNDUz",
+            "name": "buildkite-agent-windows-amd64.exe.sha256",
+            "label": null,
+            "uploader": {
+              "login": "goodspark",
+              "id": 29210237,
+              "node_id": "MDQ6VXNlcjI5MjEwMjM3",
+              "gravatar_id": "",
+              "url": "https://api.github.com/users/goodspark",
+              "type": "User",
+              "site_admin": false
+            },
+            "content_type": "application/octet-stream",
+            "state": "uploaded",
+            "size": 100,
+            "download_count": 0,
+            "created_at": "2020-10-06T15:03:00Z",
+            "updated_at": "2020-10-06T15:03:00Z"
+          }
+        ],
+        "body": "Discord beta release for testing\r\n\r\n- Adds tracing to agents\r\n- Add agent level shutdown hook"
+      },
+      {
+        "url": "https://api.github.com/repos/discord/buildkite-agent/releases/30355522",
+        "id": 30355522,
+        "author": {
+          "login": "goodspark",
+          "id": 29210237,
+          "node_id": "MDQ6VXNlcjI5MjEwMjM3",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/goodspark",
+          "type": "User",
+          "site_admin": false
+        },
+        "node_id": "MDc6UmVsZWFzZTMwMzU1NTIy",
+        "tag_name": "discord-v3.23.0-6",
+        "target_commitish": "discord-v3.23.0",
+        "name": "Discord v3.23.0-6",
+        "draft": false,
+        "prerelease": false,
+        "created_at": "2020-08-29T01:24:02Z",
+        "published_at": "2020-08-29T01:33:19Z",
+        "assets": [
+          {
+            "url": "https://api.github.com/repos/discord/buildkite-agent/releases/assets/24435251",
+            "id": 24435251,
+            "node_id": "MDEyOlJlbGVhc2VBc3NldDI0NDM1MjUx",
+            "name": "buildkite-agent-linux-amd64",
+            "label": null,
+            "uploader": {
+              "login": "goodspark",
+              "id": 29210237,
+              "node_id": "MDQ6VXNlcjI5MjEwMjM3",
+              "gravatar_id": "",
+              "url": "https://api.github.com/users/goodspark",
+              "type": "User",
+              "site_admin": false
+            },
+            "content_type": "application/octet-stream",
+            "state": "uploaded",
+            "size": 37662536,
+            "download_count": 11,
+            "created_at": "2020-08-29T01:26:16Z",
+            "updated_at": "2020-08-29T01:33:13Z"
+          }
+        ],
+        "body": "Discord beta release for testing\r\n- Adds tracing to agents\r\n- Add agent level shutdown hook"
+      }
+    ],
+    "issues": [
+      {
+        "url": "https://api.github.com/repos/discord/buildkite-agent/issues/40",
+        "id": 1691145597,
+        "node_id": "PR_kwDOBoQbUs5PhN7e",
+        "number": 40,
+        "title": "Bump github.com/urfave/cli from 1.22.10 to 1.22.13",
+        "user": {
+          "login": "dependabot[bot]",
+          "id": 49699333,
+          "node_id": "MDM6Qm90NDk2OTkzMzM=",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/dependabot%5Bbot%5D",
+          "type": "Bot",
+          "site_admin": false
+        },
+        "labels": [
+          {
+            "id": 3369983908,
+            "node_id": "MDU6TGFiZWwzMzY5OTgzOTA4",
+            "url": "https://api.github.com/repos/discord/buildkite-agent/labels/dependencies",
+            "name": "dependencies",
+            "color": "0366d6",
+            "default": false,
+            "description": "Pull requests that update a dependency file"
+          },
+          {
+            "id": 5058870858,
+            "node_id": "LA_kwDOBoQbUs8AAAABLYg-Sg",
+            "url": "https://api.github.com/repos/discord/buildkite-agent/labels/go",
+            "name": "go",
+            "color": "16e2e2",
+            "default": false,
+            "description": "Pull requests that update Go code"
+          }
+        ],
+        "state": "open",
+        "locked": false,
+        "assignee": null,
+        "assignees": [],
+        "milestone": null,
+        "comments": 0,
+        "created_at": "2023-05-01T18:10:52Z",
+        "updated_at": "2023-05-01T18:10:53Z",
+        "closed_at": null,
+        "author_association": "NONE",
+        "active_lock_reason": null,
+        "draft": false,
+        "pull_request": {
+          "url": "https://api.github.com/repos/discord/buildkite-agent/pulls/40",
+          "merged_at": null
+        },
+        "body": "Bumps [github.com/urfave/cli](https://github.com/urfave/cli) from 1.22.10 to 1.22.13.\n<details>\n<summary>Release notes</summary>\n<p><em>Sourced from <a href=\"https://github.com/urfave/cli/releases\">github.com/urfave/cli's releases</a>.</em></p>\n<blockquote>\n<h2>v1.22.13</h2>\n<h2>What's Changed</h2>\n<ul>\n<li>Shift tested Go versions in v1-maint by <a href=\"https://github.com/meatballhat\"><code>@​meatballhat</code></a> in <a href=\"https://redirect.github.com/urfave/cli/pull/1693\">urfave/cli#1693</a></li>\n<li>Update dependencies for <code>v1-maint</code> by <a href=\"https://github.com/meatballhat\"><code>@​meatballhat</code></a> in <a href=\"https://redirect.github.com/urfave/cli/pull/1712\">urfave/cli#1712</a></li>\n</ul>\n<p><strong>Full Changelog</strong>: <a href=\"https://github.com/urfave/cli/compare/v1.22.12...v1.22.13\">https://github.com/urfave/cli/compare/v1.22.12...v1.22.13</a></p>\n<h2>v1.22.12</h2>\n<h2>What's Changed</h2>\n<ul>\n<li>Update many v1 things by <a href=\"https://github.com/meatballhat\"><code>@​meatballhat</code></a> in <a href=\"https://redirect.github.com/urfave/cli/pull/1654\">urfave/cli#1654</a></li>\n</ul>\n<p><strong>Full Changelog</strong>: <a href=\"https://github.com/urfave/cli/compare/v1.22.11...v1.22.12\">https://github.com/urfave/cli/compare/v1.22.11...v1.22.12</a></p>\n<h2>v1.22.11</h2>\n<h2>What's Changed</h2>\n<ul>\n<li>Fix:(issue_1338) Fix behaviour of skip flag parsing if there are subc… by <a href=\"https://github.com/dearchap\"><code>@​dearchap</code></a> in <a href=\"https://redirect.github.com/urfave/cli/pull/1640\">urfave/cli#1640</a></li>\n<li>Doc:(issue_1195) Add integration testing example in docs by <a href=\"https://github.com/dearchap\"><code>@​dearchap</code></a> in <a href=\"https://redirect.github.com/urfave/cli/pull/1641\">urfave/cli#1641</a></li>\n<li>Fix:(issue_1142). Allow comma in altsrc flag names by <a href=\"https://github.com/dearchap\"><code>@​dearchap</code></a> in <a href=\"https://redirect.github.com/urfave/cli/pull/1645\">urfave/cli#1645</a></li>\n<li>Run CI on <code>v1</code> series by <a href=\"https://github.com/meatballhat\"><code>@​meatballhat</code></a> in <a href=\"https://redirect.github.com/urfave/cli/pull/1646\">urfave/cli#1646</a></li>\n</ul>\n<p><strong>Full Changelog</strong>: <a href=\"https://github.com/urfave/cli/compare/v1.22.10...v1.22.11\">https://github.com/urfave/cli/compare/v1.22.10...v1.22.11</a></p>\n</blockquote>\n</details>\n<details>\n<summary>Commits</summary>\n<ul>\n<li><a href=\"https://github.com/urfave/cli/commit/ed683a717c7f2a15b9a631a8f8170b7bfa247708\"><code>ed683a7</code></a> Merge pull request <a href=\"https://redirect.github.com/urfave/cli/issues/1712\">#1712</a> from urfave/v1-update-deps</li>\n<li><a href=\"https://github.com/urfave/cli/commit/3133e8d80b9df4c4ddd9e93f85a1b7db72e34325\"><code>3133e8d</code></a> Update dependencies for <code>v1-maint</code></li>\n<li><a href=\"https://github.com/urfave/cli/commit/f0d71d71b4e8a72595d796c920100742f6998997\"><code>f0d71d7</code></a> Merge pull request <a href=\"https://redirect.github.com/urfave/cli/issues/1693\">#1693</a> from urfave/v1-bump-go-versions</li>\n<li><a href=\"https://github.com/urfave/cli/commit/e44ce3a32a6cf5fcfa371e780757c3e189d0fd7b\"><code>e44ce3a</code></a> Shift tested Go versions in v1-maint</li>\n<li><a href=\"https://github.com/urfave/cli/commit/49f9838d8bf2c455c8102de0cf761314194c2396\"><code>49f9838</code></a> Merge pull request <a href=\"https://redirect.github.com/urfave/cli/issues/1654\">#1654</a> from urfave/v1-ci-updates</li>\n<li><a href=\"https://github.com/urfave/cli/commit/a5c98d3928d402fdfa00821c3289ca8f50a5a80c\"><code>a5c98d3</code></a> Do not run the toc command on windows</li>\n<li><a href=\"https://github.com/urfave/cli/commit/9b65c47ad8ff9c440265ba47557e0e23010ee5d0\"><code>9b65c47</code></a> Update toc command for windows compat</li>\n<li><a href=\"https://github.com/urfave/cli/commit/d391605300039036865b37ecf449620ad19dc1cd\"><code>d391605</code></a> Compare file contents ignoring Windows-specific line endings</li>\n<li><a href=\"https://github.com/urfave/cli/commit/b8a6071100b736fd10837f1144f1ddac7229bb83\"><code>b8a6071</code></a> Update many v1 things</li>\n<li><a href=\"https://github.com/urfave/cli/commit/522b9b801217555c2a4dc4d93ae42ba0d107438e\"><code>522b9b8</code></a> Merge pull request <a href=\"https://redirect.github.com/urfave/cli/issues/1646\">#1646</a> from urfave/v1-ci-update</li>\n<li>Additional commits viewable in <a href=\"https://github.com/urfave/cli/compare/v1.22.10...v1.22.13\">compare view</a></li>\n</ul>\n</details>\n<br />\n\n\n[![Dependabot compatibility score](https://dependabot-badges.githubapp.com/badges/compatibility_score?dependency-name=github.com/urfave/cli&package-manager=go_modules&previous-version=1.22.10&new-version=1.22.13)](https://docs.github.com/en/github/managing-security-vulnerabilities/about-dependabot-security-updates#about-compatibility-scores)\n\nDependabot will resolve any conflicts with this PR as long as you don't alter it yourself. You can also trigger a rebase manually by commenting `@dependabot rebase`.\n\n[//]: # (dependabot-automerge-start)\n[//]: # (dependabot-automerge-end)\n\n---\n\n<details>\n<summary>Dependabot commands and options</summary>\n<br />\n\nYou can trigger Dependabot actions by commenting on this PR:\n- `@dependabot rebase` will rebase this PR\n- `@dependabot recreate` will recreate this PR, overwriting any edits that have been made to it\n- `@dependabot merge` will merge this PR after your CI passes on it\n- `@dependabot squash and merge` will squash and merge this PR after your CI passes on it\n- `@dependabot cancel merge` will cancel a previously requested merge and block automerging\n- `@dependabot reopen` will reopen this PR if it is closed\n- `@dependabot close` will close this PR and stop Dependabot recreating it. You can achieve the same result by closing it manually\n- `@dependabot ignore this major version` will close this PR and stop Dependabot creating any more for this major version (unless you reopen the PR or upgrade to it yourself)\n- `@dependabot ignore this minor version` will close this PR and stop Dependabot creating any more for this minor version (unless you reopen the PR or upgrade to it yourself)\n- `@dependabot ignore this dependency` will close this PR and stop Dependabot creating any more for this dependency (unless you reopen the PR or upgrade to it yourself)\n\n\n</details>",
+        "reactions": {
+          "url": "https://api.github.com/repos/discord/buildkite-agent/issues/40/reactions",
+          "total_count": 0,
+          "+1": 0,
+          "-1": 0,
+          "laugh": 0,
+          "hooray": 0,
+          "confused": 0,
+          "heart": 0,
+          "rocket": 0,
+          "eyes": 0
+        },
+        "performed_via_github_app": null,
+        "state_reason": null
+      },
+      {
+        "url": "https://api.github.com/repos/discord/buildkite-agent/issues/39",
+        "id": 1691139274,
+        "node_id": "PR_kwDOBoQbUs5PhMhT",
+        "number": 39,
+        "title": "Bump go.opentelemetry.io/contrib/propagators/jaeger from 1.12.0 to 1.16.0",
+        "user": {
+          "login": "dependabot[bot]",
+          "id": 49699333,
+          "node_id": "MDM6Qm90NDk2OTkzMzM=",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/dependabot%5Bbot%5D",
+          "type": "Bot",
+          "site_admin": false
+        },
+        "labels": [
+          {
+            "id": 3369983908,
+            "node_id": "MDU6TGFiZWwzMzY5OTgzOTA4",
+            "url": "https://api.github.com/repos/discord/buildkite-agent/labels/dependencies",
+            "name": "dependencies",
+            "color": "0366d6",
+            "default": false,
+            "description": "Pull requests that update a dependency file"
+          },
+          {
+            "id": 5058870858,
+            "node_id": "LA_kwDOBoQbUs8AAAABLYg-Sg",
+            "url": "https://api.github.com/repos/discord/buildkite-agent/labels/go",
+            "name": "go",
+            "color": "16e2e2",
+            "default": false,
+            "description": "Pull requests that update Go code"
+          }
+        ],
+        "state": "open",
+        "locked": false,
+        "assignee": null,
+        "assignees": [],
+        "milestone": null,
+        "comments": 0,
+        "created_at": "2023-05-01T18:05:57Z",
+        "updated_at": "2023-05-01T18:05:58Z",
+        "closed_at": null,
+        "author_association": "NONE",
+        "active_lock_reason": null,
+        "draft": false,
+        "pull_request": {
+          "url": "https://api.github.com/repos/discord/buildkite-agent/pulls/39",
+          "merged_at": null
+        },
+        "body": "Bumps [go.opentelemetry.io/contrib/propagators/jaeger](https://github.com/open-telemetry/opentelemetry-go-contrib) from 1.12.0 to 1.16.0.\n<details>\n<summary>Changelog</summary>\n<p><em>Sourced from <a href=\"https://github.com/open-telemetry/opentelemetry-go-contrib/blob/main/CHANGELOG.md\">go.opentelemetry.io/contrib/propagators/jaeger's changelog</a>.</em></p>\n<blockquote>\n<h2>[1.16.0/0.41.0/0.10.0] - 2023-04-28</h2>\n<h3>Added</h3>\n<ul>\n<li>AWS SDK add <code>rpc.system</code> attribute in <code>go.opentelemetry.io/contrib/instrumentation/github.com/aws/aws-sdk-go-v2/otelaws</code>. (<a href=\"https://redirect.github.com/open-telemetry/opentelemetry-go-contrib/issues/3582\">#3582</a>, <a href=\"https://redirect.github.com/open-telemetry/opentelemetry-go-contrib/issues/3617\">#3617</a>)</li>\n</ul>\n<h3>Changed</h3>\n<ul>\n<li>Update <code>go.opentelemetry.io/contrib/instrumentation/google.golang.org/grpc/otelgrpc</code> to align gRPC server span status with the changes in the OpenTelemetry specification. (<a href=\"https://redirect.github.com/open-telemetry/opentelemetry-go-contrib/issues/3685\">#3685</a>)</li>\n<li>Adding the <code>db.statement</code> tag to spans in <code>go.opentelemetry.io/contrib/instrumentation/go.mongodb.org/mongo-driver/mongo/otelmongo</code> is now disabled by default. (<a href=\"https://redirect.github.com/open-telemetry/opentelemetry-go-contrib/issues/3519\">#3519</a>)</li>\n</ul>\n<h3>Fixed</h3>\n<ul>\n<li>The error received by <code>otelecho</code> middleware is then passed back to upstream middleware instead of being swallowed. (<a href=\"https://redirect.github.com/open-telemetry/opentelemetry-go-contrib/issues/3656\">#3656</a>)</li>\n<li>Prevent taking from reservoir in AWS XRay Remote Sampler when there is zero capacity in <code>go.opentelemetry.io/contrib/samplers/aws/xray</code>. (<a href=\"https://redirect.github.com/open-telemetry/opentelemetry-go-contrib/issues/3684\">#3684</a>)</li>\n<li>Fix <code>otelhttp.Handler</code> in <code>go.opentelemetry.io/contrib/instrumentation/net/http/otelhttp</code> to propagate multiple <code>WriteHeader</code> calls while persisting the initial <code>statusCode</code>. (<a href=\"https://redirect.github.com/open-telemetry/opentelemetry-go-contrib/issues/3580\">#3580</a>)</li>\n</ul>\n<h2>[1.16.0-rc.2/0.41.0-rc.2/0.10.0-rc.2] - 2023-03-23</h2>\n<h3>Added</h3>\n<ul>\n<li>The <code>WithPublicEndpoint</code> and <code>WithPublicEndpointFn</code> options in <code>go.opentelemetry.io/contrib/instrumentation/github.com/emicklei/go-restful/otelrestful</code>. (<a href=\"https://redirect.github.com/open-telemetry/opentelemetry-go-contrib/issues/3563\">#3563</a>)</li>\n</ul>\n<h3>Fixed</h3>\n<ul>\n<li>AWS SDK rename attributes <code>aws.operation</code>, <code>aws.service</code> to <code>rpc.method</code>,<code>rpc.service</code> in <code>go.opentelemetry.io/contrib/instrumentation/github.com/aws/aws-sdk-go-v2/otelaws</code>. (<a href=\"https://redirect.github.com/open-telemetry/opentelemetry-go-contrib/issues/3582\">#3582</a>, <a href=\"https://redirect.github.com/open-telemetry/opentelemetry-go-contrib/issues/3617\">#3617</a>)</li>\n<li>AWS SDK span name to be of the format <code>Service.Operation</code> in <code>go.opentelemetry.io/contrib/instrumentation/github.com/aws/aws-sdk-go-v2/otelaws</code>. (<a href=\"https://redirect.github.com/open-telemetry/opentelemetry-go-contrib/issues/3582\">#3582</a>, <a href=\"https://redirect.github.com/open-telemetry/opentelemetry-go-contrib/issues/3521\">#3521</a>)</li>\n<li>Prevent sampler configuration reset from erroneously sampling first span in <code>go.opentelemetry.io/contrib/samplers/jaegerremote</code>. (<a href=\"https://redirect.github.com/open-telemetry/opentelemetry-go-contrib/issues/3603\">#3603</a>, <a href=\"https://redirect.github.com/open-telemetry/opentelemetry-go-contrib/issues/3604\">#3604</a>)</li>\n</ul>\n<h2>[1.16.0-rc.1/0.41.0-rc.1/0.10.0-rc.1] - 2023-03-02</h2>\n<h3>Changed</h3>\n<ul>\n<li>Dropped compatibility testing for [Go 1.18].\nThe project no longer guarantees support for this version of Go. (<a href=\"https://redirect.github.com/open-telemetry/opentelemetry-go-contrib/issues/3516\">#3516</a>)</li>\n</ul>\n<h2>[1.15.0/0.40.0/0.9.0] - 2023-02-27</h2>\n<p>This release is the last to support [Go 1.18].\nThe next release will require at least [Go 1.19].</p>\n<h3>Added</h3>\n<ul>\n<li>Support [Go 1.20]. (<a href=\"https://redirect.github.com/open-telemetry/opentelemetry-go-contrib/issues/3372\">#3372</a>)</li>\n<li>Add <code>SpanNameFormatter</code> option to package <code>go.opentelemetry.io/contrib/instrumentation/github.com/gin-gonic/gin/otelgin</code>. (<a href=\"https://redirect.github.com/open-telemetry/opentelemetry-go-contrib/issues/3343\">#3343</a>)</li>\n</ul>\n<h3>Changed</h3>\n<ul>\n<li>Change to use protobuf parser instead of encoding/json to accept enums as strings in <code>go.opentelemetry.io/contrib/samplers/jaegerremote</code>. (<a href=\"https://redirect.github.com/open-telemetry/opentelemetry-go-contrib/issues/3183\">#3183</a>)</li>\n</ul>\n<!-- raw HTML omitted -->\n</blockquote>\n<p>... (truncated)</p>\n</details>\n<details>\n<summary>Commits</summary>\n<ul>\n<li><a href=\"https://github.com/open-telemetry/opentelemetry-go-contrib/commit/bcd415ed91e3d03b838c37b080c7a2c0b863112c\"><code>bcd415e</code></a> Release v1.16.0/v0.41.0/v0.10.0 (<a href=\"https://redirect.github.com/open-telemetry/opentelemetry-go-contrib/issues/3745\">#3745</a>)</li>\n<li><a href=\"https://github.com/open-telemetry/opentelemetry-go-contrib/commit/c347e83d692c5fb3946ea166f208f52210d9a0cd\"><code>c347e83</code></a> Update to use HEAD of otel dependencies (<a href=\"https://redirect.github.com/open-telemetry/opentelemetry-go-contrib/issues/3744\">#3744</a>)</li>\n<li><a href=\"https://github.com/open-telemetry/opentelemetry-go-contrib/commit/830138c3d01ecb76a8faf37e758617abc7c15fc2\"><code>830138c</code></a> Allow respWriterWrapper to call ResponseWriter.WriteHeader multiple times (<a href=\"https://redirect.github.com/open-telemetry/opentelemetry-go-contrib/issues/3\">#3</a>...</li>\n<li><a href=\"https://github.com/open-telemetry/opentelemetry-go-contrib/commit/f398558b5392ec1c65171ebf9ee9e64dfb92e0c7\"><code>f398558</code></a> fix: do not ignore the error as it might be useful for upstream middlewares. ...</li>\n<li><a href=\"https://github.com/open-telemetry/opentelemetry-go-contrib/commit/68de2ee02f589e2b2b361cc907f805864c88f92c\"><code>68de2ee</code></a> build(deps): bump codecov/codecov-action from 3.1.2 to 3.1.3 (<a href=\"https://redirect.github.com/open-telemetry/opentelemetry-go-contrib/issues/3734\">#3734</a>)</li>\n<li><a href=\"https://github.com/open-telemetry/opentelemetry-go-contrib/commit/d208339209e84cc231cc2065f0effe14c2d883e3\"><code>d208339</code></a> [otelmongo] Disable adding the mongo 'db.statement' tag by default (<a href=\"https://redirect.github.com/open-telemetry/opentelemetry-go-contrib/issues/3519\">#3519</a>)</li>\n<li><a href=\"https://github.com/open-telemetry/opentelemetry-go-contrib/commit/6682591fcd676a3950ff04358163f672af3284af\"><code>6682591</code></a> dependabot updates Mon Apr 24 14:44:02 UTC 2023 (<a href=\"https://redirect.github.com/open-telemetry/opentelemetry-go-contrib/issues/3742\">#3742</a>)</li>\n<li><a href=\"https://github.com/open-telemetry/opentelemetry-go-contrib/commit/f998e3f7c81927b5e7626551863e8db668b9e591\"><code>f998e3f</code></a> Align gRPC server status code to span status code (<a href=\"https://redirect.github.com/open-telemetry/opentelemetry-go-contrib/issues/3685\">#3685</a>)</li>\n<li><a href=\"https://github.com/open-telemetry/opentelemetry-go-contrib/commit/18700622c877480c48759287eaa1e5aa11bc8d34\"><code>1870062</code></a> dependabot updates Mon Apr 17 14:26:51 UTC 2023 (<a href=\"https://redirect.github.com/open-telemetry/opentelemetry-go-contrib/issues/3729\">#3729</a>)</li>\n<li><a href=\"https://github.com/open-telemetry/opentelemetry-go-contrib/commit/d4d4668bd1b85754c00bdf072b357d09177b1f1d\"><code>d4d4668</code></a> build(deps): bump codecov/codecov-action from 3.1.1 to 3.1.2 (<a href=\"https://redirect.github.com/open-telemetry/opentelemetry-go-contrib/issues/3708\">#3708</a>)</li>\n<li>Additional commits viewable in <a href=\"https://github.com/open-telemetry/opentelemetry-go-contrib/compare/v1.12.0...v1.16.0\">compare view</a></li>\n</ul>\n</details>\n<br />\n\n\n[![Dependabot compatibility score](https://dependabot-badges.githubapp.com/badges/compatibility_score?dependency-name=go.opentelemetry.io/contrib/propagators/jaeger&package-manager=go_modules&previous-version=1.12.0&new-version=1.16.0)](https://docs.github.com/en/github/managing-security-vulnerabilities/about-dependabot-security-updates#about-compatibility-scores)\n\nDependabot will resolve any conflicts with this PR as long as you don't alter it yourself. You can also trigger a rebase manually by commenting `@dependabot rebase`.\n\n[//]: # (dependabot-automerge-start)\n[//]: # (dependabot-automerge-end)\n\n---\n\n<details>\n<summary>Dependabot commands and options</summary>\n<br />\n\nYou can trigger Dependabot actions by commenting on this PR:\n- `@dependabot rebase` will rebase this PR\n- `@dependabot recreate` will recreate this PR, overwriting any edits that have been made to it\n- `@dependabot merge` will merge this PR after your CI passes on it\n- `@dependabot squash and merge` will squash and merge this PR after your CI passes on it\n- `@dependabot cancel merge` will cancel a previously requested merge and block automerging\n- `@dependabot reopen` will reopen this PR if it is closed\n- `@dependabot close` will close this PR and stop Dependabot recreating it. You can achieve the same result by closing it manually\n- `@dependabot ignore this major version` will close this PR and stop Dependabot creating any more for this major version (unless you reopen the PR or upgrade to it yourself)\n- `@dependabot ignore this minor version` will close this PR and stop Dependabot creating any more for this minor version (unless you reopen the PR or upgrade to it yourself)\n- `@dependabot ignore this dependency` will close this PR and stop Dependabot creating any more for this dependency (unless you reopen the PR or upgrade to it yourself)\n\n\n</details>",
+        "reactions": {
+          "url": "https://api.github.com/repos/discord/buildkite-agent/issues/39/reactions",
+          "total_count": 0,
+          "+1": 0,
+          "-1": 0,
+          "laugh": 0,
+          "hooray": 0,
+          "confused": 0,
+          "heart": 0,
+          "rocket": 0,
+          "eyes": 0
+        },
+        "performed_via_github_app": null,
+        "state_reason": null
+      },
+      {
+        "url": "https://api.github.com/repos/discord/buildkite-agent/issues/38",
+        "id": 1691124284,
+        "node_id": "PR_kwDOBoQbUs5PhJIV",
+        "number": 38,
+        "title": "Bump golang from 1.20.1 to 1.20.3 in /.buildkite",
+        "user": {
+          "login": "dependabot[bot]",
+          "id": 49699333,
+          "node_id": "MDM6Qm90NDk2OTkzMzM=",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/dependabot%5Bbot%5D",
+          "type": "Bot",
+          "site_admin": false
+        },
+        "labels": [
+          {
+            "id": 3369983908,
+            "node_id": "MDU6TGFiZWwzMzY5OTgzOTA4",
+            "url": "https://api.github.com/repos/discord/buildkite-agent/labels/dependencies",
+            "name": "dependencies",
+            "color": "0366d6",
+            "default": false,
+            "description": "Pull requests that update a dependency file"
+          },
+          {
+            "id": 5214071524,
+            "node_id": "LA_kwDOBoQbUs8AAAABNshq5A",
+            "url": "https://api.github.com/repos/discord/buildkite-agent/labels/docker",
+            "name": "docker",
+            "color": "21ceff",
+            "default": false,
+            "description": "Pull requests that update Docker code"
+          }
+        ],
+        "state": "open",
+        "locked": false,
+        "assignee": null,
+        "assignees": [],
+        "milestone": null,
+        "comments": 0,
+        "created_at": "2023-05-01T17:57:00Z",
+        "updated_at": "2023-05-01T17:57:02Z",
+        "closed_at": null,
+        "author_association": "NONE",
+        "active_lock_reason": null,
+        "draft": false,
+        "pull_request": {
+          "url": "https://api.github.com/repos/discord/buildkite-agent/pulls/38",
+          "merged_at": null
+        },
+        "body": "Bumps golang from 1.20.1 to 1.20.3.\n\n\n[![Dependabot compatibility score](https://dependabot-badges.githubapp.com/badges/compatibility_score?dependency-name=golang&package-manager=docker&previous-version=1.20.1&new-version=1.20.3)](https://docs.github.com/en/github/managing-security-vulnerabilities/about-dependabot-security-updates#about-compatibility-scores)\n\nDependabot will resolve any conflicts with this PR as long as you don't alter it yourself. You can also trigger a rebase manually by commenting `@dependabot rebase`.\n\n[//]: # (dependabot-automerge-start)\n[//]: # (dependabot-automerge-end)\n\n---\n\n<details>\n<summary>Dependabot commands and options</summary>\n<br />\n\nYou can trigger Dependabot actions by commenting on this PR:\n- `@dependabot rebase` will rebase this PR\n- `@dependabot recreate` will recreate this PR, overwriting any edits that have been made to it\n- `@dependabot merge` will merge this PR after your CI passes on it\n- `@dependabot squash and merge` will squash and merge this PR after your CI passes on it\n- `@dependabot cancel merge` will cancel a previously requested merge and block automerging\n- `@dependabot reopen` will reopen this PR if it is closed\n- `@dependabot close` will close this PR and stop Dependabot recreating it. You can achieve the same result by closing it manually\n- `@dependabot ignore this major version` will close this PR and stop Dependabot creating any more for this major version (unless you reopen the PR or upgrade to it yourself)\n- `@dependabot ignore this minor version` will close this PR and stop Dependabot creating any more for this minor version (unless you reopen the PR or upgrade to it yourself)\n- `@dependabot ignore this dependency` will close this PR and stop Dependabot creating any more for this dependency (unless you reopen the PR or upgrade to it yourself)\n\n\n</details>",
+        "reactions": {
+          "url": "https://api.github.com/repos/discord/buildkite-agent/issues/38/reactions",
+          "total_count": 0,
+          "+1": 0,
+          "-1": 0,
+          "laugh": 0,
+          "hooray": 0,
+          "confused": 0,
+          "heart": 0,
+          "rocket": 0,
+          "eyes": 0
+        },
+        "performed_via_github_app": null,
+        "state_reason": null
+      },
+      {
+        "url": "https://api.github.com/repos/discord/buildkite-agent/issues/37",
+        "id": 1650586518,
+        "node_id": "PR_kwDOBoQbUs5Nah-t",
+        "number": 37,
+        "title": "Bump alpine from 3.17.2 to 3.17.3 in /packaging/docker/alpine-k8s",
+        "user": {
+          "login": "dependabot[bot]",
+          "id": 49699333,
+          "node_id": "MDM6Qm90NDk2OTkzMzM=",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/dependabot%5Bbot%5D",
+          "type": "Bot",
+          "site_admin": false
+        },
+        "labels": [
+          {
+            "id": 3369983908,
+            "node_id": "MDU6TGFiZWwzMzY5OTgzOTA4",
+            "url": "https://api.github.com/repos/discord/buildkite-agent/labels/dependencies",
+            "name": "dependencies",
+            "color": "0366d6",
+            "default": false,
+            "description": "Pull requests that update a dependency file"
+          },
+          {
+            "id": 5214071524,
+            "node_id": "LA_kwDOBoQbUs8AAAABNshq5A",
+            "url": "https://api.github.com/repos/discord/buildkite-agent/labels/docker",
+            "name": "docker",
+            "color": "21ceff",
+            "default": false,
+            "description": "Pull requests that update Docker code"
+          }
+        ],
+        "state": "open",
+        "locked": false,
+        "assignee": null,
+        "assignees": [],
+        "milestone": null,
+        "comments": 0,
+        "created_at": "2023-04-01T18:10:46Z",
+        "updated_at": "2023-04-01T18:10:47Z",
+        "closed_at": null,
+        "author_association": "NONE",
+        "active_lock_reason": null,
+        "draft": false,
+        "pull_request": {
+          "url": "https://api.github.com/repos/discord/buildkite-agent/pulls/37",
+          "merged_at": null
+        },
+        "body": "Bumps alpine from 3.17.2 to 3.17.3.\n\n\n[![Dependabot compatibility score](https://dependabot-badges.githubapp.com/badges/compatibility_score?dependency-name=alpine&package-manager=docker&previous-version=3.17.2&new-version=3.17.3)](https://docs.github.com/en/github/managing-security-vulnerabilities/about-dependabot-security-updates#about-compatibility-scores)\n\nDependabot will resolve any conflicts with this PR as long as you don't alter it yourself. You can also trigger a rebase manually by commenting `@dependabot rebase`.\n\n[//]: # (dependabot-automerge-start)\n[//]: # (dependabot-automerge-end)\n\n---\n\n<details>\n<summary>Dependabot commands and options</summary>\n<br />\n\nYou can trigger Dependabot actions by commenting on this PR:\n- `@dependabot rebase` will rebase this PR\n- `@dependabot recreate` will recreate this PR, overwriting any edits that have been made to it\n- `@dependabot merge` will merge this PR after your CI passes on it\n- `@dependabot squash and merge` will squash and merge this PR after your CI passes on it\n- `@dependabot cancel merge` will cancel a previously requested merge and block automerging\n- `@dependabot reopen` will reopen this PR if it is closed\n- `@dependabot close` will close this PR and stop Dependabot recreating it. You can achieve the same result by closing it manually\n- `@dependabot ignore this major version` will close this PR and stop Dependabot creating any more for this major version (unless you reopen the PR or upgrade to it yourself)\n- `@dependabot ignore this minor version` will close this PR and stop Dependabot creating any more for this minor version (unless you reopen the PR or upgrade to it yourself)\n- `@dependabot ignore this dependency` will close this PR and stop Dependabot creating any more for this dependency (unless you reopen the PR or upgrade to it yourself)\n\n\n</details>",
+        "reactions": {
+          "url": "https://api.github.com/repos/discord/buildkite-agent/issues/37/reactions",
+          "total_count": 0,
+          "+1": 0,
+          "-1": 0,
+          "laugh": 0,
+          "hooray": 0,
+          "confused": 0,
+          "heart": 0,
+          "rocket": 0,
+          "eyes": 0
+        },
+        "performed_via_github_app": null,
+        "state_reason": null
+      },
+      {
+        "url": "https://api.github.com/repos/discord/buildkite-agent/issues/36",
+        "id": 1650581093,
+        "node_id": "PR_kwDOBoQbUs5Nag0a",
+        "number": 36,
+        "title": "Bump alpine from 3.17.2 to 3.17.3 in /packaging/docker/alpine",
+        "user": {
+          "login": "dependabot[bot]",
+          "id": 49699333,
+          "node_id": "MDM6Qm90NDk2OTkzMzM=",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/dependabot%5Bbot%5D",
+          "type": "Bot",
+          "site_admin": false
+        },
+        "labels": [
+          {
+            "id": 3369983908,
+            "node_id": "MDU6TGFiZWwzMzY5OTgzOTA4",
+            "url": "https://api.github.com/repos/discord/buildkite-agent/labels/dependencies",
+            "name": "dependencies",
+            "color": "0366d6",
+            "default": false,
+            "description": "Pull requests that update a dependency file"
+          },
+          {
+            "id": 5214071524,
+            "node_id": "LA_kwDOBoQbUs8AAAABNshq5A",
+            "url": "https://api.github.com/repos/discord/buildkite-agent/labels/docker",
+            "name": "docker",
+            "color": "21ceff",
+            "default": false,
+            "description": "Pull requests that update Docker code"
+          }
+        ],
+        "state": "open",
+        "locked": false,
+        "assignee": null,
+        "assignees": [],
+        "milestone": null,
+        "comments": 0,
+        "created_at": "2023-04-01T18:00:22Z",
+        "updated_at": "2023-04-01T18:00:23Z",
+        "closed_at": null,
+        "author_association": "NONE",
+        "active_lock_reason": null,
+        "draft": false,
+        "pull_request": {
+          "url": "https://api.github.com/repos/discord/buildkite-agent/pulls/36",
+          "merged_at": null
+        },
+        "body": "Bumps alpine from 3.17.2 to 3.17.3.\n\n\n[![Dependabot compatibility score](https://dependabot-badges.githubapp.com/badges/compatibility_score?dependency-name=alpine&package-manager=docker&previous-version=3.17.2&new-version=3.17.3)](https://docs.github.com/en/github/managing-security-vulnerabilities/about-dependabot-security-updates#about-compatibility-scores)\n\nDependabot will resolve any conflicts with this PR as long as you don't alter it yourself. You can also trigger a rebase manually by commenting `@dependabot rebase`.\n\n[//]: # (dependabot-automerge-start)\n[//]: # (dependabot-automerge-end)\n\n---\n\n<details>\n<summary>Dependabot commands and options</summary>\n<br />\n\nYou can trigger Dependabot actions by commenting on this PR:\n- `@dependabot rebase` will rebase this PR\n- `@dependabot recreate` will recreate this PR, overwriting any edits that have been made to it\n- `@dependabot merge` will merge this PR after your CI passes on it\n- `@dependabot squash and merge` will squash and merge this PR after your CI passes on it\n- `@dependabot cancel merge` will cancel a previously requested merge and block automerging\n- `@dependabot reopen` will reopen this PR if it is closed\n- `@dependabot close` will close this PR and stop Dependabot recreating it. You can achieve the same result by closing it manually\n- `@dependabot ignore this major version` will close this PR and stop Dependabot creating any more for this major version (unless you reopen the PR or upgrade to it yourself)\n- `@dependabot ignore this minor version` will close this PR and stop Dependabot creating any more for this minor version (unless you reopen the PR or upgrade to it yourself)\n- `@dependabot ignore this dependency` will close this PR and stop Dependabot creating any more for this dependency (unless you reopen the PR or upgrade to it yourself)\n\n\n</details>",
+        "reactions": {
+          "url": "https://api.github.com/repos/discord/buildkite-agent/issues/36/reactions",
+          "total_count": 0,
+          "+1": 0,
+          "-1": 0,
+          "laugh": 0,
+          "hooray": 0,
+          "confused": 0,
+          "heart": 0,
+          "rocket": 0,
+          "eyes": 0
+        },
+        "performed_via_github_app": null,
+        "state_reason": null
+      }
+    ],
     "pullRequests": []
   }
 }

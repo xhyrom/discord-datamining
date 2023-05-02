@@ -59,9 +59,603 @@
   },
   "branches": [],
   "last5": {
-    "commits": [],
-    "releases": [],
-    "issues": [],
+    "commits": [
+      {
+        "sha": "658793573603cacbf6417e192b283554045ee0c4",
+        "node_id": "C_kwDOIpTCsNoAKDY1ODc5MzU3MzYwM2NhY2JmNjQxN2UxOTJiMjgzNTU0MDQ1ZWUwYzQ",
+        "commit": {
+          "author": {
+            "name": "Marcus Huderle",
+            "email": "huderlem@gmail.com",
+            "date": "2023-04-26T18:08:46Z"
+          },
+          "committer": {
+            "name": "Marcus Huderle",
+            "email": "huderlem@gmail.com",
+            "date": "2023-04-26T20:20:10Z"
+          },
+          "message": "Fix bug where Home gesture on iOS could cause inadvertent scrolling on a BottomSheet scrollable using preserveScrollMomentum",
+          "tree": {
+            "sha": "fa316c85dbdd19bd748a50b210a54b63f50c2317",
+            "url": "https://api.github.com/repos/discord/react-native-bottom-sheet/git/trees/fa316c85dbdd19bd748a50b210a54b63f50c2317"
+          },
+          "url": "https://api.github.com/repos/discord/react-native-bottom-sheet/git/commits/658793573603cacbf6417e192b283554045ee0c4",
+          "comment_count": 0,
+          "verification": {
+            "verified": false,
+            "reason": "unsigned",
+            "signature": null,
+            "payload": null
+          }
+        },
+        "url": "https://api.github.com/repos/discord/react-native-bottom-sheet/commits/658793573603cacbf6417e192b283554045ee0c4",
+        "author": {
+          "login": "huderlem",
+          "id": 2229288,
+          "node_id": "MDQ6VXNlcjIyMjkyODg=",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/huderlem",
+          "type": "User",
+          "site_admin": false
+        },
+        "committer": {
+          "login": "huderlem",
+          "id": 2229288,
+          "node_id": "MDQ6VXNlcjIyMjkyODg=",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/huderlem",
+          "type": "User",
+          "site_admin": false
+        },
+        "parents": [
+          {
+            "sha": "c962c534f966bb142e9181004db79f85762c9865",
+            "url": "https://api.github.com/repos/discord/react-native-bottom-sheet/commits/c962c534f966bb142e9181004db79f85762c9865"
+          }
+        ]
+      },
+      {
+        "sha": "c962c534f966bb142e9181004db79f85762c9865",
+        "node_id": "C_kwDOIpTCsNoAKGM5NjJjNTM0Zjk2NmJiMTQyZTkxODEwMDRkYjc5Zjg1NzYyYzk4NjU",
+        "commit": {
+          "author": {
+            "name": "Marcus Huderle",
+            "email": "huderlem@gmail.com",
+            "date": "2023-04-17T19:27:25Z"
+          },
+          "committer": {
+            "name": "Marcus Huderle",
+            "email": "huderlem@gmail.com",
+            "date": "2023-04-17T20:08:16Z"
+          },
+          "message": "Add new preserveScrollMomentum prop",
+          "tree": {
+            "sha": "8b11a8611ea2ff68e1735c2a12ee4c6674bc2916",
+            "url": "https://api.github.com/repos/discord/react-native-bottom-sheet/git/trees/8b11a8611ea2ff68e1735c2a12ee4c6674bc2916"
+          },
+          "url": "https://api.github.com/repos/discord/react-native-bottom-sheet/git/commits/c962c534f966bb142e9181004db79f85762c9865",
+          "comment_count": 0,
+          "verification": {
+            "verified": false,
+            "reason": "unsigned",
+            "signature": null,
+            "payload": null
+          }
+        },
+        "url": "https://api.github.com/repos/discord/react-native-bottom-sheet/commits/c962c534f966bb142e9181004db79f85762c9865",
+        "author": {
+          "login": "huderlem",
+          "id": 2229288,
+          "node_id": "MDQ6VXNlcjIyMjkyODg=",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/huderlem",
+          "type": "User",
+          "site_admin": false
+        },
+        "committer": {
+          "login": "huderlem",
+          "id": 2229288,
+          "node_id": "MDQ6VXNlcjIyMjkyODg=",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/huderlem",
+          "type": "User",
+          "site_admin": false
+        },
+        "parents": [
+          {
+            "sha": "959bc37db521b92b4cd1f48976b549c7c963198b",
+            "url": "https://api.github.com/repos/discord/react-native-bottom-sheet/commits/959bc37db521b92b4cd1f48976b549c7c963198b"
+          }
+        ]
+      },
+      {
+        "sha": "959bc37db521b92b4cd1f48976b549c7c963198b",
+        "node_id": "C_kwDOIpTCsNoAKDk1OWJjMzdkYjUyMWI5MmI0Y2QxZjQ4OTc2YjU0OWM3Yzk2MzE5OGI",
+        "commit": {
+          "author": {
+            "name": "Marcus Huderle",
+            "email": "huderlem@gmail.com",
+            "date": "2023-03-31T17:41:27Z"
+          },
+          "committer": {
+            "name": "Marcus Huderle",
+            "email": "huderlem@gmail.com",
+            "date": "2023-03-31T17:41:27Z"
+          },
+          "message": "Add initialPosition prop",
+          "tree": {
+            "sha": "9139303aba722db6234c315cf9c9c9d24e80e5ad",
+            "url": "https://api.github.com/repos/discord/react-native-bottom-sheet/git/trees/9139303aba722db6234c315cf9c9c9d24e80e5ad"
+          },
+          "url": "https://api.github.com/repos/discord/react-native-bottom-sheet/git/commits/959bc37db521b92b4cd1f48976b549c7c963198b",
+          "comment_count": 0,
+          "verification": {
+            "verified": false,
+            "reason": "unsigned",
+            "signature": null,
+            "payload": null
+          }
+        },
+        "url": "https://api.github.com/repos/discord/react-native-bottom-sheet/commits/959bc37db521b92b4cd1f48976b549c7c963198b",
+        "author": {
+          "login": "huderlem",
+          "id": 2229288,
+          "node_id": "MDQ6VXNlcjIyMjkyODg=",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/huderlem",
+          "type": "User",
+          "site_admin": false
+        },
+        "committer": {
+          "login": "huderlem",
+          "id": 2229288,
+          "node_id": "MDQ6VXNlcjIyMjkyODg=",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/huderlem",
+          "type": "User",
+          "site_admin": false
+        },
+        "parents": [
+          {
+            "sha": "5746e77bc4f9b4335dc57c668649dbe7e5841875",
+            "url": "https://api.github.com/repos/discord/react-native-bottom-sheet/commits/5746e77bc4f9b4335dc57c668649dbe7e5841875"
+          }
+        ]
+      },
+      {
+        "sha": "5746e77bc4f9b4335dc57c668649dbe7e5841875",
+        "node_id": "C_kwDOIpTCsNoAKDU3NDZlNzdiYzRmOWI0MzM1ZGM1N2M2Njg2NDlkYmU3ZTU4NDE4NzU",
+        "commit": {
+          "author": {
+            "name": "Marcus Huderle",
+            "email": "huderlem@gmail.com",
+            "date": "2023-03-31T17:14:12Z"
+          },
+          "committer": {
+            "name": "Marcus Huderle",
+            "email": "huderlem@gmail.com",
+            "date": "2023-03-31T17:14:12Z"
+          },
+          "message": "Remove problematic opacity style from container animatedStyle.\n\nThis style was originally added to address some lingering-sheet behavior, however, it seems that it also causes some kind of race condition or Reanimated bug. The presence of this opacity rule can cause the container to disappear on occasion. Others independently discovered the same problem here: https://github.com/gorhom/react-native-bottom-sheet/issues/719#issuecomment-1193175586\n\nSince we can't seem to trigger the original problematic behavior, we are reverting this opacity rule.",
+          "tree": {
+            "sha": "923b7200b2777f70b16fff26a97c7c3d34f34a5a",
+            "url": "https://api.github.com/repos/discord/react-native-bottom-sheet/git/trees/923b7200b2777f70b16fff26a97c7c3d34f34a5a"
+          },
+          "url": "https://api.github.com/repos/discord/react-native-bottom-sheet/git/commits/5746e77bc4f9b4335dc57c668649dbe7e5841875",
+          "comment_count": 0,
+          "verification": {
+            "verified": false,
+            "reason": "unsigned",
+            "signature": null,
+            "payload": null
+          }
+        },
+        "url": "https://api.github.com/repos/discord/react-native-bottom-sheet/commits/5746e77bc4f9b4335dc57c668649dbe7e5841875",
+        "author": {
+          "login": "huderlem",
+          "id": 2229288,
+          "node_id": "MDQ6VXNlcjIyMjkyODg=",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/huderlem",
+          "type": "User",
+          "site_admin": false
+        },
+        "committer": {
+          "login": "huderlem",
+          "id": 2229288,
+          "node_id": "MDQ6VXNlcjIyMjkyODg=",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/huderlem",
+          "type": "User",
+          "site_admin": false
+        },
+        "parents": [
+          {
+            "sha": "e875d41d001c7b449c57c5bdebffd79331273e67",
+            "url": "https://api.github.com/repos/discord/react-native-bottom-sheet/commits/e875d41d001c7b449c57c5bdebffd79331273e67"
+          }
+        ]
+      },
+      {
+        "sha": "e875d41d001c7b449c57c5bdebffd79331273e67",
+        "node_id": "C_kwDOIpTCsNoAKGU4NzVkNDFkMDAxYzdiNDQ5YzU3YzViZGViZmZkNzkzMzEyNzNlNjc",
+        "commit": {
+          "author": {
+            "name": "Marcus Huderle",
+            "email": "huderlem@gmail.com",
+            "date": "2023-03-24T21:27:52Z"
+          },
+          "committer": {
+            "name": "GitHub",
+            "email": "noreply@github.com",
+            "date": "2023-03-24T21:27:52Z"
+          },
+          "message": "Add support for an initial scroll buffer for Scrollable components (#7)",
+          "tree": {
+            "sha": "4281e8f1a4d997115e590aa3fd1b3a4ecde727b9",
+            "url": "https://api.github.com/repos/discord/react-native-bottom-sheet/git/trees/4281e8f1a4d997115e590aa3fd1b3a4ecde727b9"
+          },
+          "url": "https://api.github.com/repos/discord/react-native-bottom-sheet/git/commits/e875d41d001c7b449c57c5bdebffd79331273e67",
+          "comment_count": 0,
+          "verification": {
+            "verified": true,
+            "reason": "valid",
+            "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsBcBAABCAAQBQJkHhXZCRBK7hj4Ov3rIwAAMBYIAKiOWesi0PJPoA/EDreJ4a9x\nuVMS323JcumYZspLsbYAqv9CNW1Om+dkwBn0L95oVL+HToZQ1vb96PzCuCZEj7Kq\nbN56NJ0Y73ZtfIgnHzs3sjWS+sSnI2i5qwKThKmI3/JTObbxOXGuO4CK/ubZGuEd\niQtSnQGhAWf7ADEcR/6ws1P+lCzSH5DqFis+hs41Ig8+dC4DVmY4qDdvhhd+SXDR\n9z2ZIkDm+K9Q2MhpqN1s2n/ylZE6jVmub3hONBWgPRAw9G9B7OwTWW9lOuI/mnEQ\nV9uWzL65HNfUOYOUu1ZX0pP8TE1hiSkbOutgmHMs/Qsh9108UIXErtGIv3zyebs=\n=S+i5\n-----END PGP SIGNATURE-----\n",
+            "payload": "tree 4281e8f1a4d997115e590aa3fd1b3a4ecde727b9\nparent cf6c52b6fd18c8fbb7fb791bbb685f122f95fd4e\nauthor Marcus Huderle <huderlem@gmail.com> 1679693272 -0400\ncommitter GitHub <noreply@github.com> 1679693272 -0500\n\nAdd support for an initial scroll buffer for Scrollable components (#7)\n\n"
+          }
+        },
+        "url": "https://api.github.com/repos/discord/react-native-bottom-sheet/commits/e875d41d001c7b449c57c5bdebffd79331273e67",
+        "author": {
+          "login": "huderlem",
+          "id": 2229288,
+          "node_id": "MDQ6VXNlcjIyMjkyODg=",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/huderlem",
+          "type": "User",
+          "site_admin": false
+        },
+        "committer": {
+          "login": "web-flow",
+          "id": 19864447,
+          "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/web-flow",
+          "type": "User",
+          "site_admin": false
+        },
+        "parents": [
+          {
+            "sha": "cf6c52b6fd18c8fbb7fb791bbb685f122f95fd4e",
+            "url": "https://api.github.com/repos/discord/react-native-bottom-sheet/commits/cf6c52b6fd18c8fbb7fb791bbb685f122f95fd4e"
+          }
+        ]
+      }
+    ],
+    "releases": [
+      {
+        "url": "https://api.github.com/repos/discord/react-native-bottom-sheet/releases/88657403",
+        "id": 88657403,
+        "author": {
+          "login": "meishuu",
+          "id": 6532792,
+          "node_id": "MDQ6VXNlcjY1MzI3OTI=",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/meishuu",
+          "type": "User",
+          "site_admin": false
+        },
+        "node_id": "RE_kwDOIpTCsM4FSM37",
+        "tag_name": "4.4.5-discord-v3",
+        "target_commitish": "master",
+        "name": "4.4.5-discord-v3",
+        "draft": false,
+        "prerelease": false,
+        "created_at": "2023-01-11T22:59:21Z",
+        "published_at": "2023-01-11T23:02:26Z",
+        "assets": [],
+        "body": ""
+      },
+      {
+        "url": "https://api.github.com/repos/discord/react-native-bottom-sheet/releases/88657311",
+        "id": 88657311,
+        "author": {
+          "login": "meishuu",
+          "id": 6532792,
+          "node_id": "MDQ6VXNlcjY1MzI3OTI=",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/meishuu",
+          "type": "User",
+          "site_admin": false
+        },
+        "node_id": "RE_kwDOIpTCsM4FSM2f",
+        "tag_name": "4.4.5-discord-v2",
+        "target_commitish": "master",
+        "name": "4.4.5-discord-v2",
+        "draft": false,
+        "prerelease": false,
+        "created_at": "2022-12-21T22:24:48Z",
+        "published_at": "2023-01-11T23:01:05Z",
+        "assets": [],
+        "body": ""
+      },
+      {
+        "url": "https://api.github.com/repos/discord/react-native-bottom-sheet/releases/86807591",
+        "id": 86807591,
+        "author": {
+          "login": "aweary",
+          "id": 6886061,
+          "node_id": "MDQ6VXNlcjY4ODYwNjE=",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/aweary",
+          "type": "User",
+          "site_admin": false
+        },
+        "node_id": "RE_kwDOIpTCsM4FLJQn",
+        "tag_name": "4.4.5-discord-v1",
+        "target_commitish": "master",
+        "name": "4.4.5-discord-v1",
+        "draft": false,
+        "prerelease": false,
+        "created_at": "2022-12-21T15:53:28Z",
+        "published_at": "2022-12-21T15:55:43Z",
+        "assets": [],
+        "body": "",
+        "reactions": {
+          "url": "https://api.github.com/repos/discord/react-native-bottom-sheet/releases/86807591/reactions",
+          "total_count": 1,
+          "+1": 0,
+          "-1": 0,
+          "laugh": 1,
+          "hooray": 0,
+          "confused": 0,
+          "heart": 0,
+          "rocket": 0,
+          "eyes": 0
+        }
+      }
+    ],
+    "issues": [
+      {
+        "url": "https://api.github.com/repos/discord/react-native-bottom-sheet/issues/7",
+        "id": 1639997913,
+        "node_id": "PR_kwDOIpTCsM5M3YU7",
+        "number": 7,
+        "title": "Add support for an initial scroll buffer for Scrollable components",
+        "user": {
+          "login": "huderlem",
+          "id": 2229288,
+          "node_id": "MDQ6VXNlcjIyMjkyODg=",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/huderlem",
+          "type": "User",
+          "site_admin": false
+        },
+        "labels": [],
+        "state": "closed",
+        "locked": false,
+        "assignee": null,
+        "assignees": [],
+        "milestone": null,
+        "comments": 0,
+        "created_at": "2023-03-24T20:34:12Z",
+        "updated_at": "2023-04-25T20:55:05Z",
+        "closed_at": "2023-03-24T21:27:53Z",
+        "author_association": "COLLABORATOR",
+        "active_lock_reason": null,
+        "draft": false,
+        "pull_request": {
+          "url": "https://api.github.com/repos/discord/react-native-bottom-sheet/pulls/7",
+          "merged_at": "2023-03-24T21:27:53Z"
+        },
+        "body": "Adds a new property called `scrollBuffer`, which can be added to the various `bottom-sheet` scrollable views.  It changes functionality so that the bottom sheet doesn't track the user's finger unless the scrollable view's position is past the specified `scrollBuffer`.\r\n",
+        "reactions": {
+          "url": "https://api.github.com/repos/discord/react-native-bottom-sheet/issues/7/reactions",
+          "total_count": 0,
+          "+1": 0,
+          "-1": 0,
+          "laugh": 0,
+          "hooray": 0,
+          "confused": 0,
+          "heart": 0,
+          "rocket": 0,
+          "eyes": 0
+        },
+        "performed_via_github_app": null,
+        "state_reason": null
+      },
+      {
+        "url": "https://api.github.com/repos/discord/react-native-bottom-sheet/issues/6",
+        "id": 1571145222,
+        "node_id": "PR_kwDOIpTCsM5JRUEz",
+        "number": 6,
+        "title": "add source to onAnimate",
+        "user": {
+          "login": "meishuu",
+          "id": 6532792,
+          "node_id": "MDQ6VXNlcjY1MzI3OTI=",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/meishuu",
+          "type": "User",
+          "site_admin": false
+        },
+        "labels": [],
+        "state": "closed",
+        "locked": false,
+        "assignee": null,
+        "assignees": [],
+        "milestone": null,
+        "comments": 0,
+        "created_at": "2023-02-04T22:08:36Z",
+        "updated_at": "2023-02-04T22:08:43Z",
+        "closed_at": "2023-02-04T22:08:43Z",
+        "author_association": "MEMBER",
+        "active_lock_reason": null,
+        "draft": false,
+        "pull_request": {
+          "url": "https://api.github.com/repos/discord/react-native-bottom-sheet/pulls/6",
+          "merged_at": "2023-02-04T22:08:43Z"
+        },
+        "body": "when keyboard height updates, an action sheet will animate to a new position\r\n\r\nif this happens on mount, it's possible for values to race in a way where the new position does not match any of the snap points, so `onAnimate` will interpret it as an animation to snap point index -1\r\n\r\nthis normally wouldn't matter since the `fromIndex` is also -1, but as of #3 we get notified of this\r\n\r\none solution here is to pipe through the source of the animation, so callers can check for and ignore anything occurring due to keyboard height changes",
+        "reactions": {
+          "url": "https://api.github.com/repos/discord/react-native-bottom-sheet/issues/6/reactions",
+          "total_count": 0,
+          "+1": 0,
+          "-1": 0,
+          "laugh": 0,
+          "hooray": 0,
+          "confused": 0,
+          "heart": 0,
+          "rocket": 0,
+          "eyes": 0
+        },
+        "performed_via_github_app": null,
+        "state_reason": null
+      },
+      {
+        "url": "https://api.github.com/repos/discord/react-native-bottom-sheet/issues/5",
+        "id": 1571143754,
+        "node_id": "PR_kwDOIpTCsM5JRTyQ",
+        "number": 5,
+        "title": "fix onAnimate index when close()d on mount",
+        "user": {
+          "login": "meishuu",
+          "id": 6532792,
+          "node_id": "MDQ6VXNlcjY1MzI3OTI=",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/meishuu",
+          "type": "User",
+          "site_admin": false
+        },
+        "labels": [],
+        "state": "closed",
+        "locked": false,
+        "assignee": null,
+        "assignees": [],
+        "milestone": null,
+        "comments": 0,
+        "created_at": "2023-02-04T22:03:36Z",
+        "updated_at": "2023-02-04T22:03:56Z",
+        "closed_at": "2023-02-04T22:03:55Z",
+        "author_association": "MEMBER",
+        "active_lock_reason": null,
+        "draft": false,
+        "pull_request": {
+          "url": "https://api.github.com/repos/discord/react-native-bottom-sheet/pulls/5",
+          "merged_at": "2023-02-04T22:03:55Z"
+        },
+        "body": "when calling `close()`, the action sheet will attempt to animate towards `animatedClosedPosition`:\r\n\r\nhttps://github.com/discord/react-native-bottom-sheet/blob/00309effcc1bed6b4e7f3333e2690d8c1df3c93d/src/components/bottomSheet/BottomSheet.tsx#L857\r\n\r\nand the `onAnimate` handler will try to convert that position to an index:\r\n\r\nhttps://github.com/discord/react-native-bottom-sheet/blob/00309effcc1bed6b4e7f3333e2690d8c1df3c93d/src/components/bottomSheet/BottomSheet.tsx#L604-L606\r\n\r\n*however*, `animatedSnapPoints` is a derived value that is essentially forcibly initializes every single value to `INITIAL_SNAP_POINT` (-999) until `containerHeight` is calculated:\r\n\r\nhttps://github.com/discord/react-native-bottom-sheet/blob/00309effcc1bed6b4e7f3333e2690d8c1df3c93d/src/components/bottomSheet/BottomSheet.tsx#L188-L194\r\n\r\nhttps://github.com/discord/react-native-bottom-sheet/blob/00309effcc1bed6b4e7f3333e2690d8c1df3c93d/src/hooks/useNormalizedSnapPoints.ts#L31-L33\r\n\r\nwhich just so happens to match the `INITIAL_CONTAINER_HEIGHT` of -999 that `animatedClosedPosition` starts at\r\n\r\nso, in summary: on mount, if a `close()` is called *before* the layout is calculated and the animated container height value is updated, `onAnimate` will interpret that position as a snap point `toIndex` of 0 instead of -1\r\n\r\nto fix this, we can just directly compare against `closedPosition` and force an index of -1 if it matches",
+        "reactions": {
+          "url": "https://api.github.com/repos/discord/react-native-bottom-sheet/issues/5/reactions",
+          "total_count": 0,
+          "+1": 0,
+          "-1": 0,
+          "laugh": 0,
+          "hooray": 0,
+          "confused": 0,
+          "heart": 0,
+          "rocket": 0,
+          "eyes": 0
+        },
+        "performed_via_github_app": null,
+        "state_reason": null
+      },
+      {
+        "url": "https://api.github.com/repos/discord/react-native-bottom-sheet/issues/4",
+        "id": 1549489009,
+        "node_id": "PR_kwDOIpTCsM5IJG-H",
+        "number": 4,
+        "title": "convert footer component to render function",
+        "user": {
+          "login": "meishuu",
+          "id": 6532792,
+          "node_id": "MDQ6VXNlcjY1MzI3OTI=",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/meishuu",
+          "type": "User",
+          "site_admin": false
+        },
+        "labels": [],
+        "state": "closed",
+        "locked": false,
+        "assignee": null,
+        "assignees": [],
+        "milestone": null,
+        "comments": 0,
+        "created_at": "2023-01-19T16:17:45Z",
+        "updated_at": "2023-01-19T16:31:22Z",
+        "closed_at": "2023-01-19T16:31:22Z",
+        "author_association": "MEMBER",
+        "active_lock_reason": null,
+        "draft": false,
+        "pull_request": {
+          "url": "https://api.github.com/repos/discord/react-native-bottom-sheet/pulls/4",
+          "merged_at": "2023-01-19T16:31:22Z"
+        },
+        "body": "`BottomSheet` takes a `footerComponent` but if it depends on data from the component rendering it, then the pattern seems to be:\r\nhttps://github.com/discord/react-native-bottom-sheet/blob/f3f9ef4d0739c4f46c8e13526c6b9d8326963769/example/app/src/screens/modal/DetachedExample.tsx#L59-L68\r\n\r\nwe're having issues where the footer will completely unmount and remount if this callback gets updated, which isn't surprising upon discovering that the `footerComponent` is used as a react component:\r\nhttps://github.com/discord/react-native-bottom-sheet/blob/f3f9ef4d0739c4f46c8e13526c6b9d8326963769/src/components/bottomSheetFooterContainer/BottomSheetFooterContainer.tsx#L49\r\n\r\nto fix this remounting problem, we can just switch from a `FooterComponent` to a `renderFooter()` function",
+        "reactions": {
+          "url": "https://api.github.com/repos/discord/react-native-bottom-sheet/issues/4/reactions",
+          "total_count": 0,
+          "+1": 0,
+          "-1": 0,
+          "laugh": 0,
+          "hooray": 0,
+          "confused": 0,
+          "heart": 0,
+          "rocket": 0,
+          "eyes": 0
+        },
+        "performed_via_github_app": null,
+        "state_reason": null
+      },
+      {
+        "url": "https://api.github.com/repos/discord/react-native-bottom-sheet/issues/3",
+        "id": 1506984547,
+        "node_id": "PR_kwDOIpTCsM5F_mWN",
+        "number": 3,
+        "title": "Trigger onAnimate even when animatedCurrentIndex doesn't change",
+        "user": {
+          "login": "meishuu",
+          "id": 6532792,
+          "node_id": "MDQ6VXNlcjY1MzI3OTI=",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/meishuu",
+          "type": "User",
+          "site_admin": false
+        },
+        "labels": [],
+        "state": "closed",
+        "locked": false,
+        "assignee": null,
+        "assignees": [],
+        "milestone": null,
+        "comments": 0,
+        "created_at": "2022-12-21T22:24:40Z",
+        "updated_at": "2022-12-21T22:24:48Z",
+        "closed_at": "2022-12-21T22:24:48Z",
+        "author_association": "MEMBER",
+        "active_lock_reason": null,
+        "draft": false,
+        "pull_request": {
+          "url": "https://api.github.com/repos/discord/react-native-bottom-sheet/pulls/3",
+          "merged_at": "2022-12-21T22:24:48Z"
+        },
+        "body": "fork of gorhom#865\r\n\r\nfor our use case, it's possible to dismiss an action sheet before it finishes its mounting animation, which makes it animate from index -1 to -1\r\n\r\nwith the way we use these action sheets (emulating a modal while using normal non-modal action sheets), this is pretty bad because it never registers an `onChange` to -1, so we don't know to properly dismiss it\r\n\r\nwe can get around this by enabling `onAnimate` to trigger in all situations, and interpreting any animation to -1 as being a dismiss",
+        "reactions": {
+          "url": "https://api.github.com/repos/discord/react-native-bottom-sheet/issues/3/reactions",
+          "total_count": 0,
+          "+1": 0,
+          "-1": 0,
+          "laugh": 0,
+          "hooray": 0,
+          "confused": 0,
+          "heart": 0,
+          "rocket": 0,
+          "eyes": 0
+        },
+        "performed_via_github_app": null,
+        "state_reason": null
+      }
+    ],
     "pullRequests": []
   }
 }

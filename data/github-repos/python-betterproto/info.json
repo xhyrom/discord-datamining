@@ -330,7 +330,469 @@
       }
     ],
     "releases": [],
-    "issues": [],
-    "pullRequests": []
+    "issues": [
+      {
+        "url": "https://api.github.com/repos/discord/python-betterproto/issues/2",
+        "id": 631101271,
+        "node_id": "MDExOlB1bGxSZXF1ZXN0NDI4MDUxODkx",
+        "number": 2,
+        "title": "Set serialized_on_wire when parsing",
+        "user": {
+          "login": "FuegoFro",
+          "id": 463696,
+          "node_id": "MDQ6VXNlcjQ2MzY5Ng==",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/FuegoFro",
+          "type": "User",
+          "site_admin": false
+        },
+        "labels": [],
+        "state": "closed",
+        "locked": false,
+        "assignee": null,
+        "assignees": [],
+        "milestone": null,
+        "comments": 0,
+        "created_at": "2020-06-04T19:47:58Z",
+        "updated_at": "2020-06-04T19:51:51Z",
+        "closed_at": "2020-06-04T19:51:46Z",
+        "author_association": "NONE",
+        "active_lock_reason": null,
+        "draft": false,
+        "pull_request": {
+          "url": "https://api.github.com/repos/discord/python-betterproto/pulls/2",
+          "merged_at": "2020-06-04T19:51:46Z"
+        },
+        "body": "This is similar to the fix at https://github.com/danielgtaylor/python-betterproto/pull/81, but that doesn't merge into our branch because our branch is too old. So this just pulls in the relevant fix part.",
+        "reactions": {
+          "url": "https://api.github.com/repos/discord/python-betterproto/issues/2/reactions",
+          "total_count": 0,
+          "+1": 0,
+          "-1": 0,
+          "laugh": 0,
+          "hooray": 0,
+          "confused": 0,
+          "heart": 0,
+          "rocket": 0,
+          "eyes": 0
+        },
+        "performed_via_github_app": null,
+        "state_reason": null
+      },
+      {
+        "url": "https://api.github.com/repos/discord/python-betterproto/issues/1",
+        "id": 626712232,
+        "node_id": "MDExOlB1bGxSZXF1ZXN0NDI0NjUxMjU3",
+        "number": 1,
+        "title": "Add a type for the `channel` argument to service stub constructor",
+        "user": {
+          "login": "FuegoFro",
+          "id": 463696,
+          "node_id": "MDQ6VXNlcjQ2MzY5Ng==",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/FuegoFro",
+          "type": "User",
+          "site_admin": false
+        },
+        "labels": [],
+        "state": "closed",
+        "locked": false,
+        "assignee": null,
+        "assignees": [],
+        "milestone": null,
+        "comments": 0,
+        "created_at": "2020-05-28T18:13:42Z",
+        "updated_at": "2020-05-28T18:50:31Z",
+        "closed_at": "2020-05-28T18:50:28Z",
+        "author_association": "NONE",
+        "active_lock_reason": null,
+        "draft": false,
+        "pull_request": {
+          "url": "https://api.github.com/repos/discord/python-betterproto/pulls/1",
+          "merged_at": "2020-05-28T18:50:28Z"
+        },
+        "body": "This ensures that the generated file is strongly/strictly mypy typed.",
+        "reactions": {
+          "url": "https://api.github.com/repos/discord/python-betterproto/issues/1/reactions",
+          "total_count": 0,
+          "+1": 0,
+          "-1": 0,
+          "laugh": 0,
+          "hooray": 0,
+          "confused": 0,
+          "heart": 0,
+          "rocket": 0,
+          "eyes": 0
+        },
+        "performed_via_github_app": null,
+        "state_reason": null
+      }
+    ],
+    "pullRequests": [
+      {
+        "url": "https://api.github.com/repos/discord/python-betterproto/pulls/2",
+        "id": 428051891,
+        "node_id": "MDExOlB1bGxSZXF1ZXN0NDI4MDUxODkx",
+        "number": 2,
+        "state": "closed",
+        "locked": false,
+        "title": "Set serialized_on_wire when parsing",
+        "user": {
+          "login": "FuegoFro",
+          "id": 463696,
+          "node_id": "MDQ6VXNlcjQ2MzY5Ng==",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/FuegoFro",
+          "type": "User",
+          "site_admin": false
+        },
+        "body": "This is similar to the fix at https://github.com/danielgtaylor/python-betterproto/pull/81, but that doesn't merge into our branch because our branch is too old. So this just pulls in the relevant fix part.",
+        "created_at": "2020-06-04T19:47:58Z",
+        "updated_at": "2020-06-04T19:51:51Z",
+        "closed_at": "2020-06-04T19:51:46Z",
+        "merged_at": "2020-06-04T19:51:46Z",
+        "merge_commit_sha": "8814b91e72df44059dadaf93247b10bc9eb7b72c",
+        "assignee": null,
+        "assignees": [],
+        "requested_reviewers": [],
+        "requested_teams": [],
+        "labels": [],
+        "milestone": null,
+        "draft": false,
+        "head": {
+          "label": "discord:serialized_on_wire_fork",
+          "ref": "serialized_on_wire_fork",
+          "sha": "3b3cf173cdf7d0d323a7f2316b0e9edf0332d584",
+          "user": {
+            "login": "discord",
+            "id": 1965106,
+            "node_id": "MDEyOk9yZ2FuaXphdGlvbjE5NjUxMDY=",
+            "gravatar_id": "",
+            "url": "https://api.github.com/users/discord",
+            "type": "Organization",
+            "site_admin": false
+          },
+          "repo": {
+            "id": 262384517,
+            "node_id": "MDEwOlJlcG9zaXRvcnkyNjIzODQ1MTc=",
+            "name": "python-betterproto",
+            "full_name": "discord/python-betterproto",
+            "private": false,
+            "owner": {
+              "login": "discord",
+              "id": 1965106,
+              "node_id": "MDEyOk9yZ2FuaXphdGlvbjE5NjUxMDY=",
+              "gravatar_id": "",
+              "url": "https://api.github.com/users/discord",
+              "type": "Organization",
+              "site_admin": false
+            },
+            "description": "Clean, modern, Python 3.7+ code generator & library for Protobuf 3 and async gRPC",
+            "fork": true,
+            "url": "https://api.github.com/repos/discord/python-betterproto",
+            "created_at": "2020-05-08T17:19:44Z",
+            "updated_at": "2021-12-04T00:58:04Z",
+            "pushed_at": "2020-06-04T23:20:46Z",
+            "homepage": "",
+            "size": 236,
+            "stargazers_count": 3,
+            "watchers_count": 3,
+            "language": null,
+            "has_issues": false,
+            "has_projects": true,
+            "has_downloads": true,
+            "has_wiki": false,
+            "has_pages": false,
+            "has_discussions": false,
+            "forks_count": 3,
+            "archived": false,
+            "disabled": false,
+            "open_issues_count": 0,
+            "license": null,
+            "allow_forking": true,
+            "is_template": false,
+            "web_commit_signoff_required": false,
+            "topics": [],
+            "visibility": "public",
+            "forks": 3,
+            "open_issues": 0,
+            "watchers": 3,
+            "default_branch": "master"
+          }
+        },
+        "base": {
+          "label": "discord:grpio-support",
+          "ref": "grpio-support",
+          "sha": "47e107113352ff0fabefbb944c66e4c8e658def0",
+          "user": {
+            "login": "discord",
+            "id": 1965106,
+            "node_id": "MDEyOk9yZ2FuaXphdGlvbjE5NjUxMDY=",
+            "gravatar_id": "",
+            "url": "https://api.github.com/users/discord",
+            "type": "Organization",
+            "site_admin": false
+          },
+          "repo": {
+            "id": 262384517,
+            "node_id": "MDEwOlJlcG9zaXRvcnkyNjIzODQ1MTc=",
+            "name": "python-betterproto",
+            "full_name": "discord/python-betterproto",
+            "private": false,
+            "owner": {
+              "login": "discord",
+              "id": 1965106,
+              "node_id": "MDEyOk9yZ2FuaXphdGlvbjE5NjUxMDY=",
+              "gravatar_id": "",
+              "url": "https://api.github.com/users/discord",
+              "type": "Organization",
+              "site_admin": false
+            },
+            "description": "Clean, modern, Python 3.7+ code generator & library for Protobuf 3 and async gRPC",
+            "fork": true,
+            "url": "https://api.github.com/repos/discord/python-betterproto",
+            "created_at": "2020-05-08T17:19:44Z",
+            "updated_at": "2021-12-04T00:58:04Z",
+            "pushed_at": "2020-06-04T23:20:46Z",
+            "homepage": "",
+            "size": 236,
+            "stargazers_count": 3,
+            "watchers_count": 3,
+            "language": null,
+            "has_issues": false,
+            "has_projects": true,
+            "has_downloads": true,
+            "has_wiki": false,
+            "has_pages": false,
+            "has_discussions": false,
+            "forks_count": 3,
+            "archived": false,
+            "disabled": false,
+            "open_issues_count": 0,
+            "license": null,
+            "allow_forking": true,
+            "is_template": false,
+            "web_commit_signoff_required": false,
+            "topics": [],
+            "visibility": "public",
+            "forks": 3,
+            "open_issues": 0,
+            "watchers": 3,
+            "default_branch": "master"
+          }
+        },
+        "_links": {
+          "self": {
+            "href": "https://api.github.com/repos/discord/python-betterproto/pulls/2"
+          },
+          "html": {
+            "href": "https://github.com/discord/python-betterproto/pull/2"
+          },
+          "issue": {
+            "href": "https://api.github.com/repos/discord/python-betterproto/issues/2"
+          },
+          "comments": {
+            "href": "https://api.github.com/repos/discord/python-betterproto/issues/2/comments"
+          },
+          "review_comments": {
+            "href": "https://api.github.com/repos/discord/python-betterproto/pulls/2/comments"
+          },
+          "review_comment": {
+            "href": "https://api.github.com/repos/discord/python-betterproto/pulls/comments{/number}"
+          },
+          "commits": {
+            "href": "https://api.github.com/repos/discord/python-betterproto/pulls/2/commits"
+          },
+          "statuses": {
+            "href": "https://api.github.com/repos/discord/python-betterproto/statuses/3b3cf173cdf7d0d323a7f2316b0e9edf0332d584"
+          }
+        },
+        "author_association": "NONE",
+        "auto_merge": null,
+        "active_lock_reason": null
+      },
+      {
+        "url": "https://api.github.com/repos/discord/python-betterproto/pulls/1",
+        "id": 424651257,
+        "node_id": "MDExOlB1bGxSZXF1ZXN0NDI0NjUxMjU3",
+        "number": 1,
+        "state": "closed",
+        "locked": false,
+        "title": "Add a type for the `channel` argument to service stub constructor",
+        "user": {
+          "login": "FuegoFro",
+          "id": 463696,
+          "node_id": "MDQ6VXNlcjQ2MzY5Ng==",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/FuegoFro",
+          "type": "User",
+          "site_admin": false
+        },
+        "body": "This ensures that the generated file is strongly/strictly mypy typed.",
+        "created_at": "2020-05-28T18:13:42Z",
+        "updated_at": "2020-05-28T18:50:31Z",
+        "closed_at": "2020-05-28T18:50:28Z",
+        "merged_at": "2020-05-28T18:50:28Z",
+        "merge_commit_sha": "47e107113352ff0fabefbb944c66e4c8e658def0",
+        "assignee": null,
+        "assignees": [],
+        "requested_reviewers": [],
+        "requested_teams": [],
+        "labels": [],
+        "milestone": null,
+        "draft": false,
+        "head": {
+          "label": "discord:fuegofro/type_constructor",
+          "ref": "fuegofro/type_constructor",
+          "sha": "a8001bf0212973aaeb498080df7ab169f05ca6be",
+          "user": {
+            "login": "discord",
+            "id": 1965106,
+            "node_id": "MDEyOk9yZ2FuaXphdGlvbjE5NjUxMDY=",
+            "gravatar_id": "",
+            "url": "https://api.github.com/users/discord",
+            "type": "Organization",
+            "site_admin": false
+          },
+          "repo": {
+            "id": 262384517,
+            "node_id": "MDEwOlJlcG9zaXRvcnkyNjIzODQ1MTc=",
+            "name": "python-betterproto",
+            "full_name": "discord/python-betterproto",
+            "private": false,
+            "owner": {
+              "login": "discord",
+              "id": 1965106,
+              "node_id": "MDEyOk9yZ2FuaXphdGlvbjE5NjUxMDY=",
+              "gravatar_id": "",
+              "url": "https://api.github.com/users/discord",
+              "type": "Organization",
+              "site_admin": false
+            },
+            "description": "Clean, modern, Python 3.7+ code generator & library for Protobuf 3 and async gRPC",
+            "fork": true,
+            "url": "https://api.github.com/repos/discord/python-betterproto",
+            "created_at": "2020-05-08T17:19:44Z",
+            "updated_at": "2021-12-04T00:58:04Z",
+            "pushed_at": "2020-06-04T23:20:46Z",
+            "homepage": "",
+            "size": 236,
+            "stargazers_count": 3,
+            "watchers_count": 3,
+            "language": null,
+            "has_issues": false,
+            "has_projects": true,
+            "has_downloads": true,
+            "has_wiki": false,
+            "has_pages": false,
+            "has_discussions": false,
+            "forks_count": 3,
+            "archived": false,
+            "disabled": false,
+            "open_issues_count": 0,
+            "license": null,
+            "allow_forking": true,
+            "is_template": false,
+            "web_commit_signoff_required": false,
+            "topics": [],
+            "visibility": "public",
+            "forks": 3,
+            "open_issues": 0,
+            "watchers": 3,
+            "default_branch": "master"
+          }
+        },
+        "base": {
+          "label": "discord:grpio-support",
+          "ref": "grpio-support",
+          "sha": "80f2228b90546b8ebc7c916493917d6adc85ba03",
+          "user": {
+            "login": "discord",
+            "id": 1965106,
+            "node_id": "MDEyOk9yZ2FuaXphdGlvbjE5NjUxMDY=",
+            "gravatar_id": "",
+            "url": "https://api.github.com/users/discord",
+            "type": "Organization",
+            "site_admin": false
+          },
+          "repo": {
+            "id": 262384517,
+            "node_id": "MDEwOlJlcG9zaXRvcnkyNjIzODQ1MTc=",
+            "name": "python-betterproto",
+            "full_name": "discord/python-betterproto",
+            "private": false,
+            "owner": {
+              "login": "discord",
+              "id": 1965106,
+              "node_id": "MDEyOk9yZ2FuaXphdGlvbjE5NjUxMDY=",
+              "gravatar_id": "",
+              "url": "https://api.github.com/users/discord",
+              "type": "Organization",
+              "site_admin": false
+            },
+            "description": "Clean, modern, Python 3.7+ code generator & library for Protobuf 3 and async gRPC",
+            "fork": true,
+            "url": "https://api.github.com/repos/discord/python-betterproto",
+            "created_at": "2020-05-08T17:19:44Z",
+            "updated_at": "2021-12-04T00:58:04Z",
+            "pushed_at": "2020-06-04T23:20:46Z",
+            "homepage": "",
+            "size": 236,
+            "stargazers_count": 3,
+            "watchers_count": 3,
+            "language": null,
+            "has_issues": false,
+            "has_projects": true,
+            "has_downloads": true,
+            "has_wiki": false,
+            "has_pages": false,
+            "has_discussions": false,
+            "forks_count": 3,
+            "archived": false,
+            "disabled": false,
+            "open_issues_count": 0,
+            "license": null,
+            "allow_forking": true,
+            "is_template": false,
+            "web_commit_signoff_required": false,
+            "topics": [],
+            "visibility": "public",
+            "forks": 3,
+            "open_issues": 0,
+            "watchers": 3,
+            "default_branch": "master"
+          }
+        },
+        "_links": {
+          "self": {
+            "href": "https://api.github.com/repos/discord/python-betterproto/pulls/1"
+          },
+          "html": {
+            "href": "https://github.com/discord/python-betterproto/pull/1"
+          },
+          "issue": {
+            "href": "https://api.github.com/repos/discord/python-betterproto/issues/1"
+          },
+          "comments": {
+            "href": "https://api.github.com/repos/discord/python-betterproto/issues/1/comments"
+          },
+          "review_comments": {
+            "href": "https://api.github.com/repos/discord/python-betterproto/pulls/1/comments"
+          },
+          "review_comment": {
+            "href": "https://api.github.com/repos/discord/python-betterproto/pulls/comments{/number}"
+          },
+          "commits": {
+            "href": "https://api.github.com/repos/discord/python-betterproto/pulls/1/commits"
+          },
+          "statuses": {
+            "href": "https://api.github.com/repos/discord/python-betterproto/statuses/a8001bf0212973aaeb498080df7ab169f05ca6be"
+          }
+        },
+        "author_association": "NONE",
+        "auto_merge": null,
+        "active_lock_reason": null
+      }
+    ]
   }
 }
