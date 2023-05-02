@@ -57,16 +57,7 @@
     "triage": false,
     "pull": false
   },
-  "branches": [
-    {
-      "name": "master",
-      "commit": {
-        "sha": "3fa8589a82fd1308550a1902a8e82f468bad8985",
-        "url": "https://api.github.com/repos/discord/node-cld/commits/3fa8589a82fd1308550a1902a8e82f468bad8985"
-      },
-      "protected": false
-    }
-  ],
+  "branches": [],
   "last5": {
     "commits": [
       {
