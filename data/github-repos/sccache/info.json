@@ -323,76 +323,7 @@
         ]
       }
     ],
-    "releases": [
-      {
-        "url": "https://api.github.com/repos/discord/sccache/releases/55786619",
-        "id": 55786619,
-        "author": {
-          "login": "jdost",
-          "id": 882537,
-          "node_id": "MDQ6VXNlcjg4MjUzNw==",
-          "gravatar_id": "",
-          "url": "https://api.github.com/users/jdost",
-          "type": "User",
-          "site_admin": false
-        },
-        "node_id": "MDc6UmVsZWFzZTU1Nzg2NjE5",
-        "tag_name": "v0.2.16-alpha.0",
-        "target_commitish": "oauth_key_format",
-        "name": "0.2.16-alpha.0",
-        "draft": false,
-        "prerelease": true,
-        "created_at": "2021-04-28T15:39:52Z",
-        "published_at": "2021-12-21T23:05:13Z",
-        "assets": [
-          {
-            "url": "https://api.github.com/repos/discord/sccache/releases/assets/52313818",
-            "id": 52313818,
-            "node_id": "RA_kwDOEmOxUc4DHj7a",
-            "name": "sccache-v0.2.16-alpha.0-x86_64-unknown-linux-musl.tar.gz",
-            "label": null,
-            "uploader": {
-              "login": "jdost",
-              "id": 882537,
-              "node_id": "MDQ6VXNlcjg4MjUzNw==",
-              "gravatar_id": "",
-              "url": "https://api.github.com/users/jdost",
-              "type": "User",
-              "site_admin": false
-            },
-            "content_type": "application/gzip",
-            "state": "uploaded",
-            "size": 7610267,
-            "download_count": 8753,
-            "created_at": "2021-12-21T23:04:16Z",
-            "updated_at": "2021-12-21T23:04:20Z"
-          },
-          {
-            "url": "https://api.github.com/repos/discord/sccache/releases/assets/52313819",
-            "id": 52313819,
-            "node_id": "RA_kwDOEmOxUc4DHj7b",
-            "name": "sccache-v0.2.16-alpha.0-x86_64-unknown-linux-musl.tar.gz.sha256",
-            "label": null,
-            "uploader": {
-              "login": "jdost",
-              "id": 882537,
-              "node_id": "MDQ6VXNlcjg4MjUzNw==",
-              "gravatar_id": "",
-              "url": "https://api.github.com/users/jdost",
-              "type": "User",
-              "site_admin": false
-            },
-            "content_type": "application/octet-stream",
-            "state": "uploaded",
-            "size": 64,
-            "download_count": 1,
-            "created_at": "2021-12-21T23:04:20Z",
-            "updated_at": "2021-12-21T23:04:20Z"
-          }
-        ],
-        "body": "Branch including the GCS OAuth fixes pending in #992"
-      }
-    ],
+    "releases": [],
     "issues": [],
     "pullRequests": []
   }
