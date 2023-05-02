@@ -146067,6 +146067,14 @@ html .invoiceCancelRow-3s2UuC {
     width: 80%
 }
 
+.cooldown-3QEazP {
+    background-color: var(--blue-200)
+}
+
+.cooldownImage-yqNEBV {
+    height: 26px
+}
+
 .guildContainer-o60hpj {
     -webkit-box-orient: horizontal;
     -ms-flex-direction: row;
@@ -146294,22 +146302,20 @@ html .invoiceCancelRow-3s2UuC {
     position: relative
 }
 
-.boostGemImage-2FHSIS {
+.boostIcon-3NM5I0 {
     height: 36px;
     width: 36px
 }
 
-.boostIcon-3NM5I0 {
-    height: 30px
-}
-
-.boostIconSheen-2OK1pC {
-    height: 36px;
-    width: 36px;
+.snowflake-VwaN6c {
     position: absolute;
     z-index: 1;
-    top: 0;
-    left: 0
+    left: -16px;
+    top: 2px
+}
+
+.cancel-2JJm4M {
+    color: var(--text-warning)
 }
 
 .boostDescriptionContainer-36Fp6P {
@@ -154116,4 +154122,4 @@ html .invoiceCancelRow-dVOR64 {
     flex-direction: column
 }
 
-/*# sourceMappingURL=40532.b3bb4bb7106fa43379fc.css.map*/
+/*# sourceMappingURL=40532.cb123da2850f9df5a67d.css.map*/
