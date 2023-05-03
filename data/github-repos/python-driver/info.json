@@ -57,7 +57,184 @@
     "triage": false,
     "pull": false
   },
-  "branches": [],
+  "branches": [
+    {
+      "name": "3.5-doc",
+      "commit": {
+        "sha": "df55c33e5ac7c4850505431f6a1f6af10aad75fb",
+        "url": "https://api.github.com/repos/discord/python-driver/commits/df55c33e5ac7c4850505431f6a1f6af10aad75fb"
+      },
+      "protected": false
+    },
+    {
+      "name": "3.6-doc",
+      "commit": {
+        "sha": "172480e450ded4ad1004b495ac6072a406b525f2",
+        "url": "https://api.github.com/repos/discord/python-driver/commits/172480e450ded4ad1004b495ac6072a406b525f2"
+      },
+      "protected": false
+    },
+    {
+      "name": "3.7-doc",
+      "commit": {
+        "sha": "a99c4ffc21d961fc6c7c9a73ae2ddc44e6fa3f6a",
+        "url": "https://api.github.com/repos/discord/python-driver/commits/a99c4ffc21d961fc6c7c9a73ae2ddc44e6fa3f6a"
+      },
+      "protected": false
+    },
+    {
+      "name": "3.8-doc",
+      "commit": {
+        "sha": "f2906b822c8b46f97938071069d0079debee0a5e",
+        "url": "https://api.github.com/repos/discord/python-driver/commits/f2906b822c8b46f97938071069d0079debee0a5e"
+      },
+      "protected": false
+    },
+    {
+      "name": "3.9-doc",
+      "commit": {
+        "sha": "88de15a5b82d938d21105c5fc3e5c4528b696b93",
+        "url": "https://api.github.com/repos/discord/python-driver/commits/88de15a5b82d938d21105c5fc3e5c4528b696b93"
+      },
+      "protected": false
+    },
+    {
+      "name": "3.17-release",
+      "commit": {
+        "sha": "66bdb8e5a35f1af9c2966dad6eda6e5f5b7b303f",
+        "url": "https://api.github.com/repos/discord/python-driver/commits/66bdb8e5a35f1af9c2966dad6eda6e5f5b7b303f"
+      },
+      "protected": false
+    },
+    {
+      "name": "3.17.x",
+      "commit": {
+        "sha": "1d33b2f47808098a1ca3fb446a6b80d63aab07a9",
+        "url": "https://api.github.com/repos/discord/python-driver/commits/1d33b2f47808098a1ca3fb446a6b80d63aab07a9"
+      },
+      "protected": false
+    },
+    {
+      "name": "3.20-dev",
+      "commit": {
+        "sha": "628a85aba5d5f911f0e2b25638ac924bde9119ba",
+        "url": "https://api.github.com/repos/discord/python-driver/commits/628a85aba5d5f911f0e2b25638ac924bde9119ba"
+      },
+      "protected": false
+    },
+    {
+      "name": "3.22.x",
+      "commit": {
+        "sha": "1ccd5b99d4b32449e01846c7fe81abddbec165c1",
+        "url": "https://api.github.com/repos/discord/python-driver/commits/1ccd5b99d4b32449e01846c7fe81abddbec165c1"
+      },
+      "protected": false
+    },
+    {
+      "name": "4.x",
+      "commit": {
+        "sha": "b3a45dadadb8807060cdabdf6f52075a7e3958f7",
+        "url": "https://api.github.com/repos/discord/python-driver/commits/b3a45dadadb8807060cdabdf6f52075a7e3958f7"
+      },
+      "protected": false
+    },
+    {
+      "name": "4.x-pluggable",
+      "commit": {
+        "sha": "4409cc3074bcc279acc02feff118840bdcef1aff",
+        "url": "https://api.github.com/repos/discord/python-driver/commits/4409cc3074bcc279acc02feff118840bdcef1aff"
+      },
+      "protected": false
+    },
+    {
+      "name": "cassandra-test",
+      "commit": {
+        "sha": "2508df96053a0f5caf0f8c10e549538084610970",
+        "url": "https://api.github.com/repos/discord/python-driver/commits/2508df96053a0f5caf0f8c10e549538084610970"
+      },
+      "protected": false
+    },
+    {
+      "name": "dev-guide",
+      "commit": {
+        "sha": "cea2bb12a12d7d7b8c2679187e0f3aafba6b40cc",
+        "url": "https://api.github.com/repos/discord/python-driver/commits/cea2bb12a12d7d7b8c2679187e0f3aafba6b40cc"
+      },
+      "protected": false
+    },
+    {
+      "name": "dse-test",
+      "commit": {
+        "sha": "ac8b85f666f6d5ae5edf632a00b3cf649fa11cfa",
+        "url": "https://api.github.com/repos/discord/python-driver/commits/ac8b85f666f6d5ae5edf632a00b3cf649fa11cfa"
+      },
+      "protected": false
+    },
+    {
+      "name": "gh-pages",
+      "commit": {
+        "sha": "b70f69d8849506e10a14fe9502bec9d2f7622421",
+        "url": "https://api.github.com/repos/discord/python-driver/commits/b70f69d8849506e10a14fe9502bec9d2f7622421"
+      },
+      "protected": false
+    },
+    {
+      "name": "master",
+      "commit": {
+        "sha": "1de685b109952f1dc6cb879cbf27be64f81af035",
+        "url": "https://api.github.com/repos/discord/python-driver/commits/1de685b109952f1dc6cb879cbf27be64f81af035"
+      },
+      "protected": false
+    },
+    {
+      "name": "python-738",
+      "commit": {
+        "sha": "f0daa87702c95d7a9aa2fdd3dcbae1f78537b6ef",
+        "url": "https://api.github.com/repos/discord/python-driver/commits/f0daa87702c95d7a9aa2fdd3dcbae1f78537b6ef"
+      },
+      "protected": false
+    },
+    {
+      "name": "python-914_use-datetime.fromtimestamp",
+      "commit": {
+        "sha": "b8301cbe757456034dae62e42bb1d954f0b8bfac",
+        "url": "https://api.github.com/repos/discord/python-driver/commits/b8301cbe757456034dae62e42bb1d954f0b8bfac"
+      },
+      "protected": false
+    },
+    {
+      "name": "python-test-stargate",
+      "commit": {
+        "sha": "f85996e2a5c0d43a83353de521650db3ca281f57",
+        "url": "https://api.github.com/repos/discord/python-driver/commits/f85996e2a5c0d43a83353de521650db3ca281f57"
+      },
+      "protected": false
+    },
+    {
+      "name": "release-3.17",
+      "commit": {
+        "sha": "8b391ed16d8698188aa7fb4009057cd09c13282e",
+        "url": "https://api.github.com/repos/discord/python-driver/commits/8b391ed16d8698188aa7fb4009057cd09c13282e"
+      },
+      "protected": false
+    },
+    {
+      "name": "travis-test",
+      "commit": {
+        "sha": "32b114ce03d3c81e355205986677f46dc1e2693e",
+        "url": "https://api.github.com/repos/discord/python-driver/commits/32b114ce03d3c81e355205986677f46dc1e2693e"
+      },
+      "protected": false
+    },
+    {
+      "name": "windows-test",
+      "commit": {
+        "sha": "00926ec78b961670f81d0d3e4ab18b31aa91eaad",
+        "url": "https://api.github.com/repos/discord/python-driver/commits/00926ec78b961670f81d0d3e4ab18b31aa91eaad"
+      },
+      "protected": false
+    }
+  ],
   "last5": {
     "commits": [
       {

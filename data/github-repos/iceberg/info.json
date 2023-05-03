@@ -57,40 +57,7 @@
     "triage": false,
     "pull": false
   },
-  "branches": [
-    {
-      "name": "EventTimeAlignedAssigner",
-      "commit": {
-        "sha": "366caa5aa42d35036d35afcd08e2e61f39a07c08",
-        "url": "https://api.github.com/repos/discord/iceberg/commits/366caa5aa42d35036d35afcd08e2e61f39a07c08"
-      },
-      "protected": false
-    },
-    {
-      "name": "dchristle/GCSFileIO",
-      "commit": {
-        "sha": "ca972cb7fd6c0d3388373f417eb753220b6e855c",
-        "url": "https://api.github.com/repos/discord/iceberg/commits/ca972cb7fd6c0d3388373f417eb753220b6e855c"
-      },
-      "protected": false
-    },
-    {
-      "name": "dchristle/GCSFileIO_1_17",
-      "commit": {
-        "sha": "b4d755619e16f75f27bc1f56d3e7fa8a8fa079c6",
-        "url": "https://api.github.com/repos/discord/iceberg/commits/b4d755619e16f75f27bc1f56d3e7fa8a8fa079c6"
-      },
-      "protected": false
-    },
-    {
-      "name": "master",
-      "commit": {
-        "sha": "882459d488a3fae73eda5b1f09f18d1af9fe6f51",
-        "url": "https://api.github.com/repos/discord/iceberg/commits/882459d488a3fae73eda5b1f09f18d1af9fe6f51"
-      },
-      "protected": false
-    }
-  ],
+  "branches": [],
   "last5": {
     "commits": [
       {
