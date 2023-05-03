@@ -336,56 +336,7 @@
       }
     ],
     "releases": [],
-    "issues": [
-      {
-        "url": "https://api.github.com/repos/discord/python-holidays/issues/1",
-        "id": 1260902778,
-        "node_id": "PR_kwDOGosurs45HotW",
-        "number": 1,
-        "title": "Potentially better grammar can be used in readme.rst",
-        "user": {
-          "login": "ArjunSharda",
-          "id": 77706434,
-          "node_id": "MDQ6VXNlcjc3NzA2NDM0",
-          "gravatar_id": "",
-          "url": "https://api.github.com/users/ArjunSharda",
-          "type": "User",
-          "site_admin": false
-        },
-        "labels": [],
-        "state": "closed",
-        "locked": false,
-        "assignee": null,
-        "assignees": [],
-        "milestone": null,
-        "comments": 0,
-        "created_at": "2022-06-04T22:13:49Z",
-        "updated_at": "2022-06-04T22:18:26Z",
-        "closed_at": "2022-06-04T22:17:18Z",
-        "author_association": "NONE",
-        "active_lock_reason": null,
-        "draft": false,
-        "pull_request": {
-          "url": "https://api.github.com/repos/discord/python-holidays/pulls/1",
-          "merged_at": null
-        },
-        "body": "EDIT: I don't know about the over 261 commits, those were not mine.. But umm yeah. And a mistake kinda, sorry.",
-        "reactions": {
-          "url": "https://api.github.com/repos/discord/python-holidays/issues/1/reactions",
-          "total_count": 0,
-          "+1": 0,
-          "-1": 0,
-          "laugh": 0,
-          "hooray": 0,
-          "confused": 0,
-          "heart": 0,
-          "rocket": 0,
-          "eyes": 0
-        },
-        "performed_via_github_app": null,
-        "state_reason": null
-      }
-    ],
+    "issues": [],
     "pullRequests": []
   }
 }
