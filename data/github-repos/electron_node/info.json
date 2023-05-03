@@ -51,7 +51,136 @@
     "triage": false,
     "pull": false
   },
-  "branches": [],
+  "branches": [
+    {
+      "name": "build-gn",
+      "commit": {
+        "sha": "e50ae507d74afa687c4699211d21a0f31ebca6e2",
+        "url": "https://api.github.com/repos/discord/electron_node/commits/e50ae507d74afa687c4699211d21a0f31ebca6e2"
+      },
+      "protected": false
+    },
+    {
+      "name": "electron",
+      "commit": {
+        "sha": "dc8fe9d390b1deb32ae2601357a90679cbcc757e",
+        "url": "https://api.github.com/repos/discord/electron_node/commits/dc8fe9d390b1deb32ae2601357a90679cbcc757e"
+      },
+      "protected": false
+    },
+    {
+      "name": "electron-node-v7.9.0",
+      "commit": {
+        "sha": "bf48e2992d5779873002382ca3a68b59f53a2d36",
+        "url": "https://api.github.com/repos/discord/electron_node/commits/bf48e2992d5779873002382ca3a68b59f53a2d36"
+      },
+      "protected": false
+    },
+    {
+      "name": "electron-node-v8.2.1",
+      "commit": {
+        "sha": "882275954c6083aa571c6d0fbfe3d33638ecbb74",
+        "url": "https://api.github.com/repos/discord/electron_node/commits/882275954c6083aa571c6d0fbfe3d33638ecbb74"
+      },
+      "protected": false
+    },
+    {
+      "name": "electron-node-v8.9.3",
+      "commit": {
+        "sha": "51abeb37cad3f2098c0f0fffdff739f4ac2393e8",
+        "url": "https://api.github.com/repos/discord/electron_node/commits/51abeb37cad3f2098c0f0fffdff739f4ac2393e8"
+      },
+      "protected": false
+    },
+    {
+      "name": "electron-node-v10.2.0-3.0.x",
+      "commit": {
+        "sha": "fcaf11a29c421b0e76c9f24f5b155a53eff14e7f",
+        "url": "https://api.github.com/repos/discord/electron_node/commits/fcaf11a29c421b0e76c9f24f5b155a53eff14e7f"
+      },
+      "protected": false
+    },
+    {
+      "name": "electron-node-v10.2.0",
+      "commit": {
+        "sha": "d285abbbfc895fdf6510d8cc881bb2819de7fdf2",
+        "url": "https://api.github.com/repos/discord/electron_node/commits/d285abbbfc895fdf6510d8cc881bb2819de7fdf2"
+      },
+      "protected": false
+    },
+    {
+      "name": "electron-node-v10.6.0",
+      "commit": {
+        "sha": "7295c611497c5e70d292e96e98f1180822b907a6",
+        "url": "https://api.github.com/repos/discord/electron_node/commits/7295c611497c5e70d292e96e98f1180822b907a6"
+      },
+      "protected": false
+    },
+    {
+      "name": "electron-node-v10.10.0",
+      "commit": {
+        "sha": "91d1e250f94dfdae6c4599505b1888dee9465a31",
+        "url": "https://api.github.com/repos/discord/electron_node/commits/91d1e250f94dfdae6c4599505b1888dee9465a31"
+      },
+      "protected": false
+    },
+    {
+      "name": "electron-node-v10.11.0-V8-6.9",
+      "commit": {
+        "sha": "5654c276d0497ff9a0bb0d7550b9073b2e2e7d3f",
+        "url": "https://api.github.com/repos/discord/electron_node/commits/5654c276d0497ff9a0bb0d7550b9073b2e2e7d3f"
+      },
+      "protected": false
+    },
+    {
+      "name": "electron-node-v10.11.0",
+      "commit": {
+        "sha": "18a9880b70039f5d41ee860a95fe84e5ef928973",
+        "url": "https://api.github.com/repos/discord/electron_node/commits/18a9880b70039f5d41ee860a95fe84e5ef928973"
+      },
+      "protected": false
+    },
+    {
+      "name": "libuv-export",
+      "commit": {
+        "sha": "6c8886e3598c495228d768637dcd969a1780f0c0",
+        "url": "https://api.github.com/repos/discord/electron_node/commits/6c8886e3598c495228d768637dcd969a1780f0c0"
+      },
+      "protected": false
+    },
+    {
+      "name": "master",
+      "commit": {
+        "sha": "758cd904f79eb2c90e2512316c9d6f79ebfc3477",
+        "url": "https://api.github.com/repos/discord/electron_node/commits/758cd904f79eb2c90e2512316c9d6f79ebfc3477"
+      },
+      "protected": false
+    },
+    {
+      "name": "more-patches",
+      "commit": {
+        "sha": "5654c276d0497ff9a0bb0d7550b9073b2e2e7d3f",
+        "url": "https://api.github.com/repos/discord/electron_node/commits/5654c276d0497ff9a0bb0d7550b9073b2e2e7d3f"
+      },
+      "protected": false
+    },
+    {
+      "name": "temp/http-crash-fix",
+      "commit": {
+        "sha": "dcf8f58b0a8671e57f31979951dc23d77f931a0e",
+        "url": "https://api.github.com/repos/discord/electron_node/commits/dcf8f58b0a8671e57f31979951dc23d77f931a0e"
+      },
+      "protected": false
+    },
+    {
+      "name": "wincrypt-shim",
+      "commit": {
+        "sha": "e0bd44a569ad5c2e355a8f0bea7fc6a5d1bc127e",
+        "url": "https://api.github.com/repos/discord/electron_node/commits/e0bd44a569ad5c2e355a8f0bea7fc6a5d1bc127e"
+      },
+      "protected": false
+    }
+  ],
   "last5": {
     "commits": [
       {
