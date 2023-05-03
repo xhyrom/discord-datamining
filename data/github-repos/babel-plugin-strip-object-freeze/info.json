@@ -61,7 +61,104 @@
     "triage": false,
     "pull": false
   },
-  "branches": [],
+  "branches": [
+    {
+      "name": "dependabot/npm_and_yarn/cacheable-request-and-ava--removed",
+      "commit": {
+        "sha": "b04753487ca76152604751e50ac3d11b8cdf679d",
+        "url": "https://api.github.com/repos/discord/babel-plugin-strip-object-freeze/commits/b04753487ca76152604751e50ac3d11b8cdf679d"
+      },
+      "protected": false
+    },
+    {
+      "name": "dependabot/npm_and_yarn/glob-parent-5.1.2",
+      "commit": {
+        "sha": "8769cc5f361523f21330d878fada2c2e87535ba1",
+        "url": "https://api.github.com/repos/discord/babel-plugin-strip-object-freeze/commits/8769cc5f361523f21330d878fada2c2e87535ba1"
+      },
+      "protected": false
+    },
+    {
+      "name": "dependabot/npm_and_yarn/hosted-git-info-2.8.9",
+      "commit": {
+        "sha": "dde76124ba92740633d74ee6b68b1c6ebeae4a5f",
+        "url": "https://api.github.com/repos/discord/babel-plugin-strip-object-freeze/commits/dde76124ba92740633d74ee6b68b1c6ebeae4a5f"
+      },
+      "protected": false
+    },
+    {
+      "name": "dependabot/npm_and_yarn/http-cache-semantics-4.1.1",
+      "commit": {
+        "sha": "d3026c4e0b8c7baad149cae90ef0a87239bb035a",
+        "url": "https://api.github.com/repos/discord/babel-plugin-strip-object-freeze/commits/d3026c4e0b8c7baad149cae90ef0a87239bb035a"
+      },
+      "protected": false
+    },
+    {
+      "name": "dependabot/npm_and_yarn/ini-1.3.8",
+      "commit": {
+        "sha": "de7d954ec90eca46c19fd61a4700ecd137f1c469",
+        "url": "https://api.github.com/repos/discord/babel-plugin-strip-object-freeze/commits/de7d954ec90eca46c19fd61a4700ecd137f1c469"
+      },
+      "protected": false
+    },
+    {
+      "name": "dependabot/npm_and_yarn/json5-2.2.3",
+      "commit": {
+        "sha": "8a380cb9ccb4a4878cd22c69e80651e09016169a",
+        "url": "https://api.github.com/repos/discord/babel-plugin-strip-object-freeze/commits/8a380cb9ccb4a4878cd22c69e80651e09016169a"
+      },
+      "protected": false
+    },
+    {
+      "name": "dependabot/npm_and_yarn/lodash-4.17.21",
+      "commit": {
+        "sha": "bb9d289413a6898b269eb2e7f54e0285a6b5eac8",
+        "url": "https://api.github.com/repos/discord/babel-plugin-strip-object-freeze/commits/bb9d289413a6898b269eb2e7f54e0285a6b5eac8"
+      },
+      "protected": false
+    },
+    {
+      "name": "dependabot/npm_and_yarn/minimist-1.2.8",
+      "commit": {
+        "sha": "d9f3037984c94cbd004751cf83e5877b59892e73",
+        "url": "https://api.github.com/repos/discord/babel-plugin-strip-object-freeze/commits/d9f3037984c94cbd004751cf83e5877b59892e73"
+      },
+      "protected": false
+    },
+    {
+      "name": "dependabot/npm_and_yarn/normalize-url-4.5.1",
+      "commit": {
+        "sha": "8f54d5e22eb045096ab6c624baca869d60e41c7d",
+        "url": "https://api.github.com/repos/discord/babel-plugin-strip-object-freeze/commits/8f54d5e22eb045096ab6c624baca869d60e41c7d"
+      },
+      "protected": false
+    },
+    {
+      "name": "dependabot/npm_and_yarn/path-parse-1.0.7",
+      "commit": {
+        "sha": "b1b31329b670daf506dbfb6ec683f0959bed2f5e",
+        "url": "https://api.github.com/repos/discord/babel-plugin-strip-object-freeze/commits/b1b31329b670daf506dbfb6ec683f0959bed2f5e"
+      },
+      "protected": false
+    },
+    {
+      "name": "dependabot/npm_and_yarn/y18n-4.0.1",
+      "commit": {
+        "sha": "2c6208783ad4f8ceaf16b25b3cea08c22ea5f629",
+        "url": "https://api.github.com/repos/discord/babel-plugin-strip-object-freeze/commits/2c6208783ad4f8ceaf16b25b3cea08c22ea5f629"
+      },
+      "protected": false
+    },
+    {
+      "name": "master",
+      "commit": {
+        "sha": "e07ac27a433ab96e22c3de1347b3d30878174fa2",
+        "url": "https://api.github.com/repos/discord/babel-plugin-strip-object-freeze/commits/e07ac27a433ab96e22c3de1347b3d30878174fa2"
+      },
+      "protected": false
+    }
+  ],
   "last5": {
     "commits": [
       {
