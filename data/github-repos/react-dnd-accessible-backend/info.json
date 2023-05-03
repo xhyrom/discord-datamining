@@ -335,43 +335,7 @@
         ]
       }
     ],
-    "releases": [
-      {
-        "url": "https://api.github.com/repos/discord/react-dnd-accessible-backend/releases/51087901",
-        "id": 51087901,
-        "author": {
-          "login": "faultyserver",
-          "id": 783733,
-          "node_id": "MDQ6VXNlcjc4MzczMw==",
-          "gravatar_id": "",
-          "url": "https://api.github.com/users/faultyserver",
-          "type": "User",
-          "site_admin": false
-        },
-        "node_id": "RE_kwDOGJf_zc4DC4od",
-        "tag_name": "v1.0.1",
-        "target_commitish": "main",
-        "name": "v1.0.1 - Drag trigger overrides",
-        "draft": false,
-        "prerelease": false,
-        "created_at": "2021-10-09T22:46:15Z",
-        "published_at": "2021-10-09T22:48:43Z",
-        "assets": [],
-        "body": "This update enables consumers to override the drag trigger condition by providing an alternate function. This lets consumers change the keybind used to start drag operations, and also check other conditions before allowing a trigger to continue through.",
-        "reactions": {
-          "url": "https://api.github.com/repos/discord/react-dnd-accessible-backend/releases/51087901/reactions",
-          "total_count": 10,
-          "+1": 0,
-          "-1": 0,
-          "laugh": 0,
-          "hooray": 0,
-          "confused": 0,
-          "heart": 1,
-          "rocket": 0,
-          "eyes": 9
-        }
-      }
-    ],
+    "releases": [],
     "issues": [],
     "pullRequests": []
   }
