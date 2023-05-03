@@ -57,40 +57,7 @@
     "triage": false,
     "pull": false
   },
-  "branches": [
-    {
-      "name": "add-status-url",
-      "commit": {
-        "sha": "38d0f6d6c6ca72d1fd80a5c44a5bdbf6088d19f7",
-        "url": "https://api.github.com/repos/discord/octocrab/commits/38d0f6d6c6ca72d1fd80a5c44a5bdbf6088d19f7"
-      },
-      "protected": false
-    },
-    {
-      "name": "fork",
-      "commit": {
-        "sha": "3fddace1bbb5216216b95db32d42ba1459ef0656",
-        "url": "https://api.github.com/repos/discord/octocrab/commits/3fddace1bbb5216216b95db32d42ba1459ef0656"
-      },
-      "protected": false
-    },
-    {
-      "name": "master",
-      "commit": {
-        "sha": "56a9694a2908f433b29d383e65ea7cb6609225e7",
-        "url": "https://api.github.com/repos/discord/octocrab/commits/56a9694a2908f433b29d383e65ea7cb6609225e7"
-      },
-      "protected": false
-    },
-    {
-      "name": "retry-delays",
-      "commit": {
-        "sha": "bd9e8ab3495168bc5b46ce701aa7aae529410ad4",
-        "url": "https://api.github.com/repos/discord/octocrab/commits/bd9e8ab3495168bc5b46ce701aa7aae529410ad4"
-      },
-      "protected": false
-    }
-  ],
+  "branches": [],
   "last5": {
     "commits": [
       {
@@ -365,7 +332,56 @@
       }
     ],
     "releases": [],
-    "issues": [],
+    "issues": [
+      {
+        "url": "https://api.github.com/repos/discord/octocrab/issues/1",
+        "id": 1639781430,
+        "node_id": "PR_kwDOIiGeGs5M2p1Z",
+        "number": 1,
+        "title": "update hyperx location",
+        "user": {
+          "login": "pcasdf",
+          "id": 56973807,
+          "node_id": "MDQ6VXNlcjU2OTczODA3",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/pcasdf",
+          "type": "User",
+          "site_admin": false
+        },
+        "labels": [],
+        "state": "closed",
+        "locked": false,
+        "assignee": null,
+        "assignees": [],
+        "milestone": null,
+        "comments": 0,
+        "created_at": "2023-03-24T17:27:14Z",
+        "updated_at": "2023-03-24T17:46:59Z",
+        "closed_at": "2023-03-24T17:46:56Z",
+        "author_association": "NONE",
+        "active_lock_reason": null,
+        "draft": false,
+        "pull_request": {
+          "url": "https://api.github.com/repos/discord/octocrab/pulls/1",
+          "merged_at": null
+        },
+        "body": null,
+        "reactions": {
+          "url": "https://api.github.com/repos/discord/octocrab/issues/1/reactions",
+          "total_count": 0,
+          "+1": 0,
+          "-1": 0,
+          "laugh": 0,
+          "hooray": 0,
+          "confused": 0,
+          "heart": 0,
+          "rocket": 0,
+          "eyes": 0
+        },
+        "performed_via_github_app": null,
+        "state_reason": null
+      }
+    ],
     "pullRequests": []
   }
 }

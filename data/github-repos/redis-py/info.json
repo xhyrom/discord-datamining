@@ -1053,7 +1053,7 @@
             "url": "https://api.github.com/repos/redis/redis-py",
             "created_at": "2009-11-06T10:22:26Z",
             "updated_at": "2023-05-03T12:02:26Z",
-            "pushed_at": "2023-05-03T13:16:13Z",
+            "pushed_at": "2023-05-03T13:58:07Z",
             "homepage": "",
             "size": 7639,
             "stargazers_count": 11429,
@@ -1068,7 +1068,7 @@
             "forks_count": 2364,
             "archived": false,
             "disabled": false,
-            "open_issues_count": 205,
+            "open_issues_count": 204,
             "license": {
               "key": "mit",
               "name": "MIT License",
@@ -1088,7 +1088,7 @@
             ],
             "visibility": "public",
             "forks": 2364,
-            "open_issues": 205,
+            "open_issues": 204,
             "watchers": 11429,
             "default_branch": "master"
           }
