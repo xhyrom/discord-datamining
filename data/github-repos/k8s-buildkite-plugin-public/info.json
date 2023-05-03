@@ -339,13 +339,40 @@
         ]
       }
     ],
-    "releases": [],
-    "issues": [
+    "releases": [
       {
-        "url": "https://api.github.com/repos/discord/k8s-buildkite-plugin-public/issues/3",
-        "id": 1365199667,
+        "url": "https://api.github.com/repos/discord/k8s-buildkite-plugin-public/releases/74644857",
+        "id": 74644857,
+        "author": {
+          "login": "tonydelanuez",
+          "id": 17029312,
+          "node_id": "MDQ6VXNlcjE3MDI5MzEy",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/tonydelanuez",
+          "type": "User",
+          "site_admin": false
+        },
+        "node_id": "RE_kwDOH1NZFs4Ecv15",
+        "tag_name": "v1.2.5+0.1",
+        "target_commitish": "main",
+        "name": "Track step container index",
+        "draft": false,
+        "prerelease": false,
+        "created_at": "2022-08-17T16:39:18Z",
+        "published_at": "2022-08-17T16:43:17Z",
+        "assets": [],
+        "body": "Matches version 1.2.5 of the EmbarkStudios/k8s-buildkite-plugin release with additional features: \r\n\r\n1. Tracking proper index of the step container\r\n2. Making the step container the default log source"
+      }
+    ],
+    "issues": [],
+    "pullRequests": [
+      {
+        "url": "https://api.github.com/repos/discord/k8s-buildkite-plugin-public/pulls/3",
+        "id": 1049234127,
         "node_id": "PR_kwDOH1NZFs4-igrP",
         "number": 3,
+        "state": "closed",
+        "locked": false,
         "title": "Support passing an agent type argument to jsonnet",
         "user": {
           "login": "tonydelanuez",
@@ -356,44 +383,190 @@
           "type": "User",
           "site_admin": false
         },
-        "labels": [],
-        "state": "closed",
-        "locked": false,
-        "assignee": null,
-        "assignees": [],
-        "milestone": null,
-        "comments": 0,
+        "body": null,
         "created_at": "2022-09-07T21:20:06Z",
         "updated_at": "2022-09-13T16:19:43Z",
         "closed_at": "2022-09-13T16:19:43Z",
-        "author_association": "COLLABORATOR",
-        "active_lock_reason": null,
+        "merged_at": null,
+        "merge_commit_sha": "7daf33882f1e9216f78b424f49a667f6072dfc2f",
+        "assignee": null,
+        "assignees": [],
+        "requested_reviewers": [],
+        "requested_teams": [],
+        "labels": [],
+        "milestone": null,
         "draft": false,
-        "pull_request": {
-          "url": "https://api.github.com/repos/discord/k8s-buildkite-plugin-public/pulls/3",
-          "merged_at": null
+        "head": {
+          "label": "discord:tdelanuez/support-agent-type",
+          "ref": "tdelanuez/support-agent-type",
+          "sha": "2cc616cd85bf01958d9726dfceaa193862d3b3b6",
+          "user": {
+            "login": "discord",
+            "id": 1965106,
+            "node_id": "MDEyOk9yZ2FuaXphdGlvbjE5NjUxMDY=",
+            "gravatar_id": "",
+            "url": "https://api.github.com/users/discord",
+            "type": "Organization",
+            "site_admin": false
+          },
+          "repo": {
+            "id": 525555990,
+            "node_id": "R_kgDOH1NZFg",
+            "name": "k8s-buildkite-plugin-public",
+            "full_name": "discord/k8s-buildkite-plugin-public",
+            "private": false,
+            "owner": {
+              "login": "discord",
+              "id": 1965106,
+              "node_id": "MDEyOk9yZ2FuaXphdGlvbjE5NjUxMDY=",
+              "gravatar_id": "",
+              "url": "https://api.github.com/users/discord",
+              "type": "Organization",
+              "site_admin": false
+            },
+            "description": "Run any buildkite build step as a Kubernetes Job",
+            "fork": true,
+            "url": "https://api.github.com/repos/discord/k8s-buildkite-plugin-public",
+            "created_at": "2022-08-16T22:06:34Z",
+            "updated_at": "2022-09-14T20:22:54Z",
+            "pushed_at": "2022-09-07T22:27:21Z",
+            "homepage": "https://embark.dev",
+            "size": 100,
+            "stargazers_count": 0,
+            "watchers_count": 0,
+            "language": "Jsonnet",
+            "has_issues": false,
+            "has_projects": true,
+            "has_downloads": true,
+            "has_wiki": false,
+            "has_pages": false,
+            "has_discussions": false,
+            "forks_count": 1,
+            "archived": false,
+            "disabled": false,
+            "open_issues_count": 0,
+            "license": {
+              "key": "apache-2.0",
+              "name": "Apache License 2.0",
+              "spdx_id": "Apache-2.0",
+              "url": "https://api.github.com/licenses/apache-2.0",
+              "node_id": "MDc6TGljZW5zZTI="
+            },
+            "allow_forking": true,
+            "is_template": false,
+            "web_commit_signoff_required": false,
+            "topics": [],
+            "visibility": "public",
+            "forks": 1,
+            "open_issues": 0,
+            "watchers": 0,
+            "default_branch": "main"
+          }
         },
-        "body": null,
-        "reactions": {
-          "url": "https://api.github.com/repos/discord/k8s-buildkite-plugin-public/issues/3/reactions",
-          "total_count": 0,
-          "+1": 0,
-          "-1": 0,
-          "laugh": 0,
-          "hooray": 0,
-          "confused": 0,
-          "heart": 0,
-          "rocket": 0,
-          "eyes": 0
+        "base": {
+          "label": "discord:main",
+          "ref": "main",
+          "sha": "dca85fe26ced70f0123f9a5a9104c7e19e029215",
+          "user": {
+            "login": "discord",
+            "id": 1965106,
+            "node_id": "MDEyOk9yZ2FuaXphdGlvbjE5NjUxMDY=",
+            "gravatar_id": "",
+            "url": "https://api.github.com/users/discord",
+            "type": "Organization",
+            "site_admin": false
+          },
+          "repo": {
+            "id": 525555990,
+            "node_id": "R_kgDOH1NZFg",
+            "name": "k8s-buildkite-plugin-public",
+            "full_name": "discord/k8s-buildkite-plugin-public",
+            "private": false,
+            "owner": {
+              "login": "discord",
+              "id": 1965106,
+              "node_id": "MDEyOk9yZ2FuaXphdGlvbjE5NjUxMDY=",
+              "gravatar_id": "",
+              "url": "https://api.github.com/users/discord",
+              "type": "Organization",
+              "site_admin": false
+            },
+            "description": "Run any buildkite build step as a Kubernetes Job",
+            "fork": true,
+            "url": "https://api.github.com/repos/discord/k8s-buildkite-plugin-public",
+            "created_at": "2022-08-16T22:06:34Z",
+            "updated_at": "2022-09-14T20:22:54Z",
+            "pushed_at": "2022-09-07T22:27:21Z",
+            "homepage": "https://embark.dev",
+            "size": 100,
+            "stargazers_count": 0,
+            "watchers_count": 0,
+            "language": "Jsonnet",
+            "has_issues": false,
+            "has_projects": true,
+            "has_downloads": true,
+            "has_wiki": false,
+            "has_pages": false,
+            "has_discussions": false,
+            "forks_count": 1,
+            "archived": false,
+            "disabled": false,
+            "open_issues_count": 0,
+            "license": {
+              "key": "apache-2.0",
+              "name": "Apache License 2.0",
+              "spdx_id": "Apache-2.0",
+              "url": "https://api.github.com/licenses/apache-2.0",
+              "node_id": "MDc6TGljZW5zZTI="
+            },
+            "allow_forking": true,
+            "is_template": false,
+            "web_commit_signoff_required": false,
+            "topics": [],
+            "visibility": "public",
+            "forks": 1,
+            "open_issues": 0,
+            "watchers": 0,
+            "default_branch": "main"
+          }
         },
-        "performed_via_github_app": null,
-        "state_reason": null
+        "_links": {
+          "self": {
+            "href": "https://api.github.com/repos/discord/k8s-buildkite-plugin-public/pulls/3"
+          },
+          "html": {
+            "href": "https://github.com/discord/k8s-buildkite-plugin-public/pull/3"
+          },
+          "issue": {
+            "href": "https://api.github.com/repos/discord/k8s-buildkite-plugin-public/issues/3"
+          },
+          "comments": {
+            "href": "https://api.github.com/repos/discord/k8s-buildkite-plugin-public/issues/3/comments"
+          },
+          "review_comments": {
+            "href": "https://api.github.com/repos/discord/k8s-buildkite-plugin-public/pulls/3/comments"
+          },
+          "review_comment": {
+            "href": "https://api.github.com/repos/discord/k8s-buildkite-plugin-public/pulls/comments{/number}"
+          },
+          "commits": {
+            "href": "https://api.github.com/repos/discord/k8s-buildkite-plugin-public/pulls/3/commits"
+          },
+          "statuses": {
+            "href": "https://api.github.com/repos/discord/k8s-buildkite-plugin-public/statuses/2cc616cd85bf01958d9726dfceaa193862d3b3b6"
+          }
+        },
+        "author_association": "COLLABORATOR",
+        "auto_merge": null,
+        "active_lock_reason": null
       },
       {
-        "url": "https://api.github.com/repos/discord/k8s-buildkite-plugin-public/issues/2",
-        "id": 1344636490,
+        "url": "https://api.github.com/repos/discord/k8s-buildkite-plugin-public/pulls/2",
+        "id": 1031338511,
         "node_id": "PR_kwDOH1NZFs49ePoP",
         "number": 2,
+        "state": "closed",
+        "locked": false,
         "title": "Check init container indices for 'bootstrap' name",
         "user": {
           "login": "tonydelanuez",
@@ -404,44 +577,190 @@
           "type": "User",
           "site_admin": false
         },
-        "labels": [],
-        "state": "closed",
-        "locked": false,
-        "assignee": null,
-        "assignees": [],
-        "milestone": null,
-        "comments": 0,
+        "body": "Moving the `step_index` export after the exit code status check on `get_pod_status` and doing the same index tracking for the bootstrap initContainer. ",
         "created_at": "2022-08-19T16:10:06Z",
         "updated_at": "2022-08-19T16:10:16Z",
         "closed_at": "2022-08-19T16:10:16Z",
-        "author_association": "COLLABORATOR",
-        "active_lock_reason": null,
+        "merged_at": "2022-08-19T16:10:16Z",
+        "merge_commit_sha": "dca85fe26ced70f0123f9a5a9104c7e19e029215",
+        "assignee": null,
+        "assignees": [],
+        "requested_reviewers": [],
+        "requested_teams": [],
+        "labels": [],
+        "milestone": null,
         "draft": false,
-        "pull_request": {
-          "url": "https://api.github.com/repos/discord/k8s-buildkite-plugin-public/pulls/2",
-          "merged_at": "2022-08-19T16:10:16Z"
+        "head": {
+          "label": "discord:tdelanuez/init-container-indices",
+          "ref": "tdelanuez/init-container-indices",
+          "sha": "3dc4c5bbd30bcba1cbf3e76e3b1dc004f3dcb49e",
+          "user": {
+            "login": "discord",
+            "id": 1965106,
+            "node_id": "MDEyOk9yZ2FuaXphdGlvbjE5NjUxMDY=",
+            "gravatar_id": "",
+            "url": "https://api.github.com/users/discord",
+            "type": "Organization",
+            "site_admin": false
+          },
+          "repo": {
+            "id": 525555990,
+            "node_id": "R_kgDOH1NZFg",
+            "name": "k8s-buildkite-plugin-public",
+            "full_name": "discord/k8s-buildkite-plugin-public",
+            "private": false,
+            "owner": {
+              "login": "discord",
+              "id": 1965106,
+              "node_id": "MDEyOk9yZ2FuaXphdGlvbjE5NjUxMDY=",
+              "gravatar_id": "",
+              "url": "https://api.github.com/users/discord",
+              "type": "Organization",
+              "site_admin": false
+            },
+            "description": "Run any buildkite build step as a Kubernetes Job",
+            "fork": true,
+            "url": "https://api.github.com/repos/discord/k8s-buildkite-plugin-public",
+            "created_at": "2022-08-16T22:06:34Z",
+            "updated_at": "2022-09-14T20:22:54Z",
+            "pushed_at": "2022-09-07T22:27:21Z",
+            "homepage": "https://embark.dev",
+            "size": 100,
+            "stargazers_count": 0,
+            "watchers_count": 0,
+            "language": "Jsonnet",
+            "has_issues": false,
+            "has_projects": true,
+            "has_downloads": true,
+            "has_wiki": false,
+            "has_pages": false,
+            "has_discussions": false,
+            "forks_count": 1,
+            "archived": false,
+            "disabled": false,
+            "open_issues_count": 0,
+            "license": {
+              "key": "apache-2.0",
+              "name": "Apache License 2.0",
+              "spdx_id": "Apache-2.0",
+              "url": "https://api.github.com/licenses/apache-2.0",
+              "node_id": "MDc6TGljZW5zZTI="
+            },
+            "allow_forking": true,
+            "is_template": false,
+            "web_commit_signoff_required": false,
+            "topics": [],
+            "visibility": "public",
+            "forks": 1,
+            "open_issues": 0,
+            "watchers": 0,
+            "default_branch": "main"
+          }
         },
-        "body": "Moving the `step_index` export after the exit code status check on `get_pod_status` and doing the same index tracking for the bootstrap initContainer. ",
-        "reactions": {
-          "url": "https://api.github.com/repos/discord/k8s-buildkite-plugin-public/issues/2/reactions",
-          "total_count": 0,
-          "+1": 0,
-          "-1": 0,
-          "laugh": 0,
-          "hooray": 0,
-          "confused": 0,
-          "heart": 0,
-          "rocket": 0,
-          "eyes": 0
+        "base": {
+          "label": "discord:main",
+          "ref": "main",
+          "sha": "e37d34b22de259ff92fd60b26d0eba7ed7722188",
+          "user": {
+            "login": "discord",
+            "id": 1965106,
+            "node_id": "MDEyOk9yZ2FuaXphdGlvbjE5NjUxMDY=",
+            "gravatar_id": "",
+            "url": "https://api.github.com/users/discord",
+            "type": "Organization",
+            "site_admin": false
+          },
+          "repo": {
+            "id": 525555990,
+            "node_id": "R_kgDOH1NZFg",
+            "name": "k8s-buildkite-plugin-public",
+            "full_name": "discord/k8s-buildkite-plugin-public",
+            "private": false,
+            "owner": {
+              "login": "discord",
+              "id": 1965106,
+              "node_id": "MDEyOk9yZ2FuaXphdGlvbjE5NjUxMDY=",
+              "gravatar_id": "",
+              "url": "https://api.github.com/users/discord",
+              "type": "Organization",
+              "site_admin": false
+            },
+            "description": "Run any buildkite build step as a Kubernetes Job",
+            "fork": true,
+            "url": "https://api.github.com/repos/discord/k8s-buildkite-plugin-public",
+            "created_at": "2022-08-16T22:06:34Z",
+            "updated_at": "2022-09-14T20:22:54Z",
+            "pushed_at": "2022-09-07T22:27:21Z",
+            "homepage": "https://embark.dev",
+            "size": 100,
+            "stargazers_count": 0,
+            "watchers_count": 0,
+            "language": "Jsonnet",
+            "has_issues": false,
+            "has_projects": true,
+            "has_downloads": true,
+            "has_wiki": false,
+            "has_pages": false,
+            "has_discussions": false,
+            "forks_count": 1,
+            "archived": false,
+            "disabled": false,
+            "open_issues_count": 0,
+            "license": {
+              "key": "apache-2.0",
+              "name": "Apache License 2.0",
+              "spdx_id": "Apache-2.0",
+              "url": "https://api.github.com/licenses/apache-2.0",
+              "node_id": "MDc6TGljZW5zZTI="
+            },
+            "allow_forking": true,
+            "is_template": false,
+            "web_commit_signoff_required": false,
+            "topics": [],
+            "visibility": "public",
+            "forks": 1,
+            "open_issues": 0,
+            "watchers": 0,
+            "default_branch": "main"
+          }
         },
-        "performed_via_github_app": null,
-        "state_reason": null
+        "_links": {
+          "self": {
+            "href": "https://api.github.com/repos/discord/k8s-buildkite-plugin-public/pulls/2"
+          },
+          "html": {
+            "href": "https://github.com/discord/k8s-buildkite-plugin-public/pull/2"
+          },
+          "issue": {
+            "href": "https://api.github.com/repos/discord/k8s-buildkite-plugin-public/issues/2"
+          },
+          "comments": {
+            "href": "https://api.github.com/repos/discord/k8s-buildkite-plugin-public/issues/2/comments"
+          },
+          "review_comments": {
+            "href": "https://api.github.com/repos/discord/k8s-buildkite-plugin-public/pulls/2/comments"
+          },
+          "review_comment": {
+            "href": "https://api.github.com/repos/discord/k8s-buildkite-plugin-public/pulls/comments{/number}"
+          },
+          "commits": {
+            "href": "https://api.github.com/repos/discord/k8s-buildkite-plugin-public/pulls/2/commits"
+          },
+          "statuses": {
+            "href": "https://api.github.com/repos/discord/k8s-buildkite-plugin-public/statuses/3dc4c5bbd30bcba1cbf3e76e3b1dc004f3dcb49e"
+          }
+        },
+        "author_association": "COLLABORATOR",
+        "auto_merge": null,
+        "active_lock_reason": null
       },
       {
-        "url": "https://api.github.com/repos/discord/k8s-buildkite-plugin-public/issues/1",
-        "id": 1342025433,
+        "url": "https://api.github.com/repos/discord/k8s-buildkite-plugin-public/pulls/1",
+        "id": 1029070400,
         "node_id": "PR_kwDOH1NZFs49Vl5A",
         "number": 1,
+        "state": "closed",
+        "locked": false,
         "title": "Fix container status indices",
         "user": {
           "login": "tonydelanuez",
@@ -452,40 +771,183 @@
           "type": "User",
           "site_admin": false
         },
-        "labels": [],
-        "state": "closed",
-        "locked": false,
-        "assignee": null,
-        "assignees": [],
-        "milestone": null,
-        "comments": 0,
+        "body": "The plugin assumes the step container is always index 0 of the container array for the statuses/spec. This may not be true with sidecar deployments. Fetch the index of the step container and use it when checking container statuses.\r\n\r\nAdditionally, declare the step container to be the default logging/exec source.  ",
         "created_at": "2022-08-17T16:38:53Z",
         "updated_at": "2022-08-17T16:39:18Z",
         "closed_at": "2022-08-17T16:39:18Z",
-        "author_association": "COLLABORATOR",
-        "active_lock_reason": null,
+        "merged_at": "2022-08-17T16:39:18Z",
+        "merge_commit_sha": "e37d34b22de259ff92fd60b26d0eba7ed7722188",
+        "assignee": null,
+        "assignees": [],
+        "requested_reviewers": [],
+        "requested_teams": [],
+        "labels": [],
+        "milestone": null,
         "draft": false,
-        "pull_request": {
-          "url": "https://api.github.com/repos/discord/k8s-buildkite-plugin-public/pulls/1",
-          "merged_at": "2022-08-17T16:39:18Z"
+        "head": {
+          "label": "discord:tdelanuez/fix-container-status-indices",
+          "ref": "tdelanuez/fix-container-status-indices",
+          "sha": "dc9dda2f6855f100985dd309843d8da1f5e0cbf2",
+          "user": {
+            "login": "discord",
+            "id": 1965106,
+            "node_id": "MDEyOk9yZ2FuaXphdGlvbjE5NjUxMDY=",
+            "gravatar_id": "",
+            "url": "https://api.github.com/users/discord",
+            "type": "Organization",
+            "site_admin": false
+          },
+          "repo": {
+            "id": 525555990,
+            "node_id": "R_kgDOH1NZFg",
+            "name": "k8s-buildkite-plugin-public",
+            "full_name": "discord/k8s-buildkite-plugin-public",
+            "private": false,
+            "owner": {
+              "login": "discord",
+              "id": 1965106,
+              "node_id": "MDEyOk9yZ2FuaXphdGlvbjE5NjUxMDY=",
+              "gravatar_id": "",
+              "url": "https://api.github.com/users/discord",
+              "type": "Organization",
+              "site_admin": false
+            },
+            "description": "Run any buildkite build step as a Kubernetes Job",
+            "fork": true,
+            "url": "https://api.github.com/repos/discord/k8s-buildkite-plugin-public",
+            "created_at": "2022-08-16T22:06:34Z",
+            "updated_at": "2022-09-14T20:22:54Z",
+            "pushed_at": "2022-09-07T22:27:21Z",
+            "homepage": "https://embark.dev",
+            "size": 100,
+            "stargazers_count": 0,
+            "watchers_count": 0,
+            "language": "Jsonnet",
+            "has_issues": false,
+            "has_projects": true,
+            "has_downloads": true,
+            "has_wiki": false,
+            "has_pages": false,
+            "has_discussions": false,
+            "forks_count": 1,
+            "archived": false,
+            "disabled": false,
+            "open_issues_count": 0,
+            "license": {
+              "key": "apache-2.0",
+              "name": "Apache License 2.0",
+              "spdx_id": "Apache-2.0",
+              "url": "https://api.github.com/licenses/apache-2.0",
+              "node_id": "MDc6TGljZW5zZTI="
+            },
+            "allow_forking": true,
+            "is_template": false,
+            "web_commit_signoff_required": false,
+            "topics": [],
+            "visibility": "public",
+            "forks": 1,
+            "open_issues": 0,
+            "watchers": 0,
+            "default_branch": "main"
+          }
         },
-        "body": "The plugin assumes the step container is always index 0 of the container array for the statuses/spec. This may not be true with sidecar deployments. Fetch the index of the step container and use it when checking container statuses.\r\n\r\nAdditionally, declare the step container to be the default logging/exec source.  ",
-        "reactions": {
-          "url": "https://api.github.com/repos/discord/k8s-buildkite-plugin-public/issues/1/reactions",
-          "total_count": 0,
-          "+1": 0,
-          "-1": 0,
-          "laugh": 0,
-          "hooray": 0,
-          "confused": 0,
-          "heart": 0,
-          "rocket": 0,
-          "eyes": 0
+        "base": {
+          "label": "discord:main",
+          "ref": "main",
+          "sha": "0e13cac380ab4a5eb0736bf1b67866f2588146c9",
+          "user": {
+            "login": "discord",
+            "id": 1965106,
+            "node_id": "MDEyOk9yZ2FuaXphdGlvbjE5NjUxMDY=",
+            "gravatar_id": "",
+            "url": "https://api.github.com/users/discord",
+            "type": "Organization",
+            "site_admin": false
+          },
+          "repo": {
+            "id": 525555990,
+            "node_id": "R_kgDOH1NZFg",
+            "name": "k8s-buildkite-plugin-public",
+            "full_name": "discord/k8s-buildkite-plugin-public",
+            "private": false,
+            "owner": {
+              "login": "discord",
+              "id": 1965106,
+              "node_id": "MDEyOk9yZ2FuaXphdGlvbjE5NjUxMDY=",
+              "gravatar_id": "",
+              "url": "https://api.github.com/users/discord",
+              "type": "Organization",
+              "site_admin": false
+            },
+            "description": "Run any buildkite build step as a Kubernetes Job",
+            "fork": true,
+            "url": "https://api.github.com/repos/discord/k8s-buildkite-plugin-public",
+            "created_at": "2022-08-16T22:06:34Z",
+            "updated_at": "2022-09-14T20:22:54Z",
+            "pushed_at": "2022-09-07T22:27:21Z",
+            "homepage": "https://embark.dev",
+            "size": 100,
+            "stargazers_count": 0,
+            "watchers_count": 0,
+            "language": "Jsonnet",
+            "has_issues": false,
+            "has_projects": true,
+            "has_downloads": true,
+            "has_wiki": false,
+            "has_pages": false,
+            "has_discussions": false,
+            "forks_count": 1,
+            "archived": false,
+            "disabled": false,
+            "open_issues_count": 0,
+            "license": {
+              "key": "apache-2.0",
+              "name": "Apache License 2.0",
+              "spdx_id": "Apache-2.0",
+              "url": "https://api.github.com/licenses/apache-2.0",
+              "node_id": "MDc6TGljZW5zZTI="
+            },
+            "allow_forking": true,
+            "is_template": false,
+            "web_commit_signoff_required": false,
+            "topics": [],
+            "visibility": "public",
+            "forks": 1,
+            "open_issues": 0,
+            "watchers": 0,
+            "default_branch": "main"
+          }
         },
-        "performed_via_github_app": null,
-        "state_reason": null
+        "_links": {
+          "self": {
+            "href": "https://api.github.com/repos/discord/k8s-buildkite-plugin-public/pulls/1"
+          },
+          "html": {
+            "href": "https://github.com/discord/k8s-buildkite-plugin-public/pull/1"
+          },
+          "issue": {
+            "href": "https://api.github.com/repos/discord/k8s-buildkite-plugin-public/issues/1"
+          },
+          "comments": {
+            "href": "https://api.github.com/repos/discord/k8s-buildkite-plugin-public/issues/1/comments"
+          },
+          "review_comments": {
+            "href": "https://api.github.com/repos/discord/k8s-buildkite-plugin-public/pulls/1/comments"
+          },
+          "review_comment": {
+            "href": "https://api.github.com/repos/discord/k8s-buildkite-plugin-public/pulls/comments{/number}"
+          },
+          "commits": {
+            "href": "https://api.github.com/repos/discord/k8s-buildkite-plugin-public/pulls/1/commits"
+          },
+          "statuses": {
+            "href": "https://api.github.com/repos/discord/k8s-buildkite-plugin-public/statuses/dc9dda2f6855f100985dd309843d8da1f5e0cbf2"
+          }
+        },
+        "author_association": "COLLABORATOR",
+        "auto_merge": null,
+        "active_lock_reason": null
       }
-    ],
-    "pullRequests": []
+    ]
   }
 }
