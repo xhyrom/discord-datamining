@@ -18,7 +18,7 @@
   "url": "https://api.github.com/repos/discord/rules_ios",
   "created_at": "2023-02-03T22:24:12Z",
   "updated_at": "2023-03-21T21:44:48Z",
-  "pushed_at": "2023-05-02T18:21:35Z",
+  "pushed_at": "2023-05-03T17:57:01Z",
   "homepage": null,
   "size": 49265,
   "stargazers_count": 2,
@@ -33,7 +33,7 @@
   "forks_count": 1,
   "archived": false,
   "disabled": false,
-  "open_issues_count": 1,
+  "open_issues_count": 0,
   "license": {
     "key": "apache-2.0",
     "name": "Apache License 2.0",
@@ -47,7 +47,7 @@
   "topics": [],
   "visibility": "public",
   "forks": 1,
-  "open_issues": 1,
+  "open_issues": 0,
   "watchers": 2,
   "default_branch": "discord",
   "permissions": {
@@ -60,6 +60,60 @@
   "branches": [],
   "last5": {
     "commits": [
+      {
+        "sha": "4340c91100265f479a6ac4de32b87d58437fb663",
+        "node_id": "C_kwDOI5jSX9oAKDQzNDBjOTExMDAyNjVmNDc5YTZhYzRkZTMyYjg3ZDU4NDM3ZmI2NjM",
+        "commit": {
+          "author": {
+            "name": "Natalie Jameson",
+            "email": "natalie.jameson@discordapp.com",
+            "date": "2023-05-03T17:57:01Z"
+          },
+          "committer": {
+            "name": "GitHub",
+            "email": "noreply@github.com",
+            "date": "2023-05-03T17:57:01Z"
+          },
+          "message": "[rules_ios] Allow rewriting header paths for frameworks and libraries (#5)\n\nThis allows us to pick a different relative include path for header\r\nfiles. This is needed because some third party dependencies have e.g.\r\ncolliding base filenames (folly has multiple Core.h, e.g.), or included\r\nfiles do relative includes (kv-storage includes\r\n\"kv-storage/api/Core.h\"), and with the current approach taken by\r\napple_framework of flattening the headers out, that path doesn't\r\nactually exist in the Headers or PrivateHeaders directories of the\r\n.framework file.\r\n\r\nThis patch does a few things:\r\n- Adds an extra argument \"header_mapping\". This is how users define\r\nwhere public/private headers should be accessible. If not specified, or\r\na header is not in this mapping, then the basename of the header is\r\nused. (e.g. kv-storage.framework/Headers/Core.h)\r\n- Updates the hmapbuild binary so that we can specify these destinations\r\nin the .hmap files\r\n - Updates the umbrella header to use these destinations\r\n- Updates apple_framework/apple_library to thread these mappings\r\nthrough.\r\n\r\nTested on a WIP branch (annie/native-versions-ios), and we seemed to get\r\npast the #include failures, and onto errors in their code itself. Will\r\nalso test this with the flipper-folly migration locally.\r\n\r\nhttps://app.asana.com/0/1203960884932166/1204190072362095\r\nhttps://app.asana.com/0/1203960884932166/1204190072362093",
+          "tree": {
+            "sha": "d3eb6a65ca2ac3ccd20fa93efb8002a35cba9671",
+            "url": "https://api.github.com/repos/discord/rules_ios/git/trees/d3eb6a65ca2ac3ccd20fa93efb8002a35cba9671"
+          },
+          "url": "https://api.github.com/repos/discord/rules_ios/git/commits/4340c91100265f479a6ac4de32b87d58437fb663",
+          "comment_count": 0,
+          "verification": {
+            "verified": true,
+            "reason": "valid",
+            "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsBcBAABCAAQBQJkUqBtCRBK7hj4Ov3rIwAAPrMIABMNz45dgZCRsJBtm1ArAzoZ\nxBx1TVsirETSKPY90bSmwyzxx7itVybfwnNuskPjTg7MGbGKux2k4OtnC2R7lniP\nd54ZKai2+xQ6faFIJwVjlv/9eY1Y7YBn1VRHFtyU1QOKf18rZAEpffK48cE7/M5c\nsBSpSdGzFPqKwCLy6Vr+8u5QeZ6Pl6xH8kkaYD6/nAJdPwaPWpPBBifa/lG5O0lW\n+PlIkuIbrqC2h9eSGZFkNnGDQXonOGlRgSx1qyp4VZkXWaczDznXMApx/JDbxXnE\ncy8S1DfaR0nWgAoUJBHghVXfyxsFLOCvD1RQNYJKLzX6yIZ8LEU50qleDUYZi/c=\n=Q/ag\n-----END PGP SIGNATURE-----\n",
+            "payload": "tree d3eb6a65ca2ac3ccd20fa93efb8002a35cba9671\nparent 1fc624aeee5e4ec1554ce3a0a6c64b332864a8bd\nauthor Natalie Jameson <natalie.jameson@discordapp.com> 1683136621 -0700\ncommitter GitHub <noreply@github.com> 1683136621 -0700\n\n[rules_ios] Allow rewriting header paths for frameworks and libraries (#5)\n\nThis allows us to pick a different relative include path for header\r\nfiles. This is needed because some third party dependencies have e.g.\r\ncolliding base filenames (folly has multiple Core.h, e.g.), or included\r\nfiles do relative includes (kv-storage includes\r\n\"kv-storage/api/Core.h\"), and with the current approach taken by\r\napple_framework of flattening the headers out, that path doesn't\r\nactually exist in the Headers or PrivateHeaders directories of the\r\n.framework file.\r\n\r\nThis patch does a few things:\r\n- Adds an extra argument \"header_mapping\". This is how users define\r\nwhere public/private headers should be accessible. If not specified, or\r\na header is not in this mapping, then the basename of the header is\r\nused. (e.g. kv-storage.framework/Headers/Core.h)\r\n- Updates the hmapbuild binary so that we can specify these destinations\r\nin the .hmap files\r\n - Updates the umbrella header to use these destinations\r\n- Updates apple_framework/apple_library to thread these mappings\r\nthrough.\r\n\r\nTested on a WIP branch (annie/native-versions-ios), and we seemed to get\r\npast the #include failures, and onto errors in their code itself. Will\r\nalso test this with the flipper-folly migration locally.\r\n\r\nhttps://app.asana.com/0/1203960884932166/1204190072362095\r\nhttps://app.asana.com/0/1203960884932166/1204190072362093"
+          }
+        },
+        "url": "https://api.github.com/repos/discord/rules_ios/commits/4340c91100265f479a6ac4de32b87d58437fb663",
+        "author": {
+          "login": "nataliejameson",
+          "id": 6351854,
+          "node_id": "MDQ6VXNlcjYzNTE4NTQ=",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/nataliejameson",
+          "type": "User",
+          "site_admin": false
+        },
+        "committer": {
+          "login": "web-flow",
+          "id": 19864447,
+          "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/web-flow",
+          "type": "User",
+          "site_admin": false
+        },
+        "parents": [
+          {
+            "sha": "1fc624aeee5e4ec1554ce3a0a6c64b332864a8bd",
+            "url": "https://api.github.com/repos/discord/rules_ios/commits/1fc624aeee5e4ec1554ce3a0a6c64b332864a8bd"
+          }
+        ]
+      },
       {
         "sha": "1fc624aeee5e4ec1554ce3a0a6c64b332864a8bd",
         "node_id": "C_kwDOI5jSX9oAKDFmYzYyNGFlZWU1ZTRlYzE1NTRjZTNhMGE2YzY0YjMzMjg2NGE4YmQ",
@@ -273,60 +327,6 @@
           {
             "sha": "22c619b2fcc6040d4adff671bb92051dac6ac65d",
             "url": "https://api.github.com/repos/discord/rules_ios/commits/22c619b2fcc6040d4adff671bb92051dac6ac65d"
-          }
-        ]
-      },
-      {
-        "sha": "22c619b2fcc6040d4adff671bb92051dac6ac65d",
-        "node_id": "C_kwDOI5jSX9oAKDIyYzYxOWIyZmNjNjA0MGQ0YWRmZjY3MWJiOTIwNTFkYWM2YWM2NWQ",
-        "commit": {
-          "author": {
-            "name": "Derek Ostrander (derko)",
-            "email": "derko@squareup.com",
-            "date": "2023-01-10T12:19:05Z"
-          },
-          "committer": {
-            "name": "GitHub",
-            "email": "noreply@github.com",
-            "date": "2023-01-10T12:19:05Z"
-          },
-          "message": "Pass the ios args to the test suite (#635)",
-          "tree": {
-            "sha": "bfa85ed1f28ab719eaf003bc01a5194d96ed067c",
-            "url": "https://api.github.com/repos/discord/rules_ios/git/trees/bfa85ed1f28ab719eaf003bc01a5194d96ed067c"
-          },
-          "url": "https://api.github.com/repos/discord/rules_ios/git/commits/22c619b2fcc6040d4adff671bb92051dac6ac65d",
-          "comment_count": 0,
-          "verification": {
-            "verified": true,
-            "reason": "valid",
-            "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsBcBAABCAAQBQJjvVe5CRBK7hj4Ov3rIwAAQ4gIAEueBtvKXxobAeWiPskOEzi9\nfX1D8VLzqs/OIYirNa8y0HCNWKA3bVY+67IhCKqFEIs/HXfYg9BRDgqSYqnVXIuN\nHzGCQ9xR6lQHR0OGerg4zdgJA97mGQRJssbLAQu1PK3saEdAapdIzBFEeFB2b1JQ\n27RlnPX7Kkva33iAtyUtoPsGbkVTJKJCJ2fcc3kPuaFIJGbKUCuwqab0rxPnD/w8\n+4gPUY/mSjtJ1lrpOuFxk03LUygACWhaWuBw7HQOY7Al7u0MGN/C/hMxLowP/3PO\nAC2g/nYEzCEfmYKrqWQ2l4O8IbhlilrvSz/PowH4XVH8L0trg5fQlWyibwXGos4=\n=E1FA\n-----END PGP SIGNATURE-----\n",
-            "payload": "tree bfa85ed1f28ab719eaf003bc01a5194d96ed067c\nparent dfb604dceacb18ff4e240b89300257c06711b3a5\nauthor Derek Ostrander (derko) <derko@squareup.com> 1673353145 -0500\ncommitter GitHub <noreply@github.com> 1673353145 -0500\n\nPass the ios args to the test suite (#635)\n\n"
-          }
-        },
-        "url": "https://api.github.com/repos/discord/rules_ios/commits/22c619b2fcc6040d4adff671bb92051dac6ac65d",
-        "author": {
-          "login": "dostrander",
-          "id": 823322,
-          "node_id": "MDQ6VXNlcjgyMzMyMg==",
-          "gravatar_id": "",
-          "url": "https://api.github.com/users/dostrander",
-          "type": "User",
-          "site_admin": false
-        },
-        "committer": {
-          "login": "web-flow",
-          "id": 19864447,
-          "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
-          "gravatar_id": "",
-          "url": "https://api.github.com/users/web-flow",
-          "type": "User",
-          "site_admin": false
-        },
-        "parents": [
-          {
-            "sha": "dfb604dceacb18ff4e240b89300257c06711b3a5",
-            "url": "https://api.github.com/repos/discord/rules_ios/commits/dfb604dceacb18ff4e240b89300257c06711b3a5"
           }
         ]
       }
