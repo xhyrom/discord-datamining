@@ -325,7 +325,31 @@
         ]
       }
     ],
-    "releases": [],
+    "releases": [
+      {
+        "url": "https://api.github.com/repos/discord/eslint-plugin-discord/releases/11061088",
+        "id": 11061088,
+        "author": {
+          "login": "TheSisb",
+          "id": 1592327,
+          "node_id": "MDQ6VXNlcjE1OTIzMjc=",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/TheSisb",
+          "type": "User",
+          "site_admin": false
+        },
+        "node_id": "MDc6UmVsZWFzZTExMDYxMDg4",
+        "tag_name": "v0.0.2",
+        "target_commitish": "master",
+        "name": "First",
+        "draft": false,
+        "prerelease": false,
+        "created_at": "2018-05-18T05:54:24Z",
+        "published_at": "2018-05-18T05:56:57Z",
+        "assets": [],
+        "body": "frist"
+      }
+    ],
     "issues": [
       {
         "url": "https://api.github.com/repos/discord/eslint-plugin-discord/issues/11",
@@ -608,6 +632,985 @@
         "state_reason": null
       }
     ],
-    "pullRequests": []
+    "pullRequests": [
+      {
+        "url": "https://api.github.com/repos/discord/eslint-plugin-discord/pulls/11",
+        "id": 1325934216,
+        "node_id": "PR_kwDOB_s3BM5PCCaI",
+        "number": 11,
+        "state": "open",
+        "locked": false,
+        "title": "Bump minimatch from 3.0.4 to 3.1.2",
+        "user": {
+          "login": "dependabot[bot]",
+          "id": 49699333,
+          "node_id": "MDM6Qm90NDk2OTkzMzM=",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/dependabot%5Bbot%5D",
+          "type": "Bot",
+          "site_admin": false
+        },
+        "body": "Bumps [minimatch](https://github.com/isaacs/minimatch) from 3.0.4 to 3.1.2.\n<details>\n<summary>Commits</summary>\n<ul>\n<li><a href=\"https://github.com/isaacs/minimatch/commit/699c459443a6bd98f5b28197978f76e7f71467ac\"><code>699c459</code></a> 3.1.2</li>\n<li><a href=\"https://github.com/isaacs/minimatch/commit/2f2b5ff1bb1b6a01f4404f7e475f0a2cba578ab7\"><code>2f2b5ff</code></a> fix: trim pattern</li>\n<li><a href=\"https://github.com/isaacs/minimatch/commit/25d7c0d09c47063c9b0d2ace17ef8e951d90eccc\"><code>25d7c0d</code></a> 3.1.1</li>\n<li><a href=\"https://github.com/isaacs/minimatch/commit/55dda291dfb595bd11b4edb19b45dd98eda76de0\"><code>55dda29</code></a> fix: treat nocase:true as always having magic</li>\n<li><a href=\"https://github.com/isaacs/minimatch/commit/5e1fb8dd2bb78c0ae22101b9229fac4c76ef039e\"><code>5e1fb8d</code></a> 3.1.0</li>\n<li><a href=\"https://github.com/isaacs/minimatch/commit/f8145c54f34075069f4a23cb214d871da4cd4006\"><code>f8145c5</code></a> Add 'allowWindowsEscape' option</li>\n<li><a href=\"https://github.com/isaacs/minimatch/commit/570e8b1aef6c9e823a824aa0b9be10db43857cd7\"><code>570e8b1</code></a> add publishConfig for v3 publishes</li>\n<li><a href=\"https://github.com/isaacs/minimatch/commit/5b7cd3372be253759fb4d865eb3f38f189a5fcdf\"><code>5b7cd33</code></a> 3.0.6</li>\n<li><a href=\"https://github.com/isaacs/minimatch/commit/20b4b562830680867feb75f9c635aca08e5c86ff\"><code>20b4b56</code></a> [fix] revert all breaking syntax changes</li>\n<li><a href=\"https://github.com/isaacs/minimatch/commit/2ff038852ec03e85e60e0eb333005c680ac8a543\"><code>2ff0388</code></a> document, expose, and test 'partial:true' option</li>\n<li>Additional commits viewable in <a href=\"https://github.com/isaacs/minimatch/compare/v3.0.4...v3.1.2\">compare view</a></li>\n</ul>\n</details>\n<br />\n\n\n[![Dependabot compatibility score](https://dependabot-badges.githubapp.com/badges/compatibility_score?dependency-name=minimatch&package-manager=npm_and_yarn&previous-version=3.0.4&new-version=3.1.2)](https://docs.github.com/en/github/managing-security-vulnerabilities/about-dependabot-security-updates#about-compatibility-scores)\n\nDependabot will resolve any conflicts with this PR as long as you don't alter it yourself. You can also trigger a rebase manually by commenting `@dependabot rebase`.\n\n[//]: # (dependabot-automerge-start)\n[//]: # (dependabot-automerge-end)\n\n---\n\n<details>\n<summary>Dependabot commands and options</summary>\n<br />\n\nYou can trigger Dependabot actions by commenting on this PR:\n- `@dependabot rebase` will rebase this PR\n- `@dependabot recreate` will recreate this PR, overwriting any edits that have been made to it\n- `@dependabot merge` will merge this PR after your CI passes on it\n- `@dependabot squash and merge` will squash and merge this PR after your CI passes on it\n- `@dependabot cancel merge` will cancel a previously requested merge and block automerging\n- `@dependabot reopen` will reopen this PR if it is closed\n- `@dependabot close` will close this PR and stop Dependabot recreating it. You can achieve the same result by closing it manually\n- `@dependabot ignore this major version` will close this PR and stop Dependabot creating any more for this major version (unless you reopen the PR or upgrade to it yourself)\n- `@dependabot ignore this minor version` will close this PR and stop Dependabot creating any more for this minor version (unless you reopen the PR or upgrade to it yourself)\n- `@dependabot ignore this dependency` will close this PR and stop Dependabot creating any more for this dependency (unless you reopen the PR or upgrade to it yourself)\nYou can disable automated security fix PRs for this repo from the [Security Alerts page](https://github.com/discord/eslint-plugin-discord/network/alerts).\n\n</details>",
+        "created_at": "2023-04-24T18:27:48Z",
+        "updated_at": "2023-04-24T18:27:49Z",
+        "closed_at": null,
+        "merged_at": null,
+        "merge_commit_sha": "3d65f62fe7e3288d05eb46e086b4baf1b7a193ff",
+        "assignee": null,
+        "assignees": [],
+        "requested_reviewers": [],
+        "requested_teams": [],
+        "labels": [
+          {
+            "id": 1653488957,
+            "node_id": "MDU6TGFiZWwxNjUzNDg4OTU3",
+            "url": "https://api.github.com/repos/discord/eslint-plugin-discord/labels/dependencies",
+            "name": "dependencies",
+            "color": "0366d6",
+            "default": false,
+            "description": "Pull requests that update a dependency file"
+          }
+        ],
+        "milestone": null,
+        "draft": false,
+        "head": {
+          "label": "discord:dependabot/npm_and_yarn/minimatch-3.1.2",
+          "ref": "dependabot/npm_and_yarn/minimatch-3.1.2",
+          "sha": "68eae207211a122c02208d9b4a92b06ef69b74bf",
+          "user": {
+            "login": "discord",
+            "id": 1965106,
+            "node_id": "MDEyOk9yZ2FuaXphdGlvbjE5NjUxMDY=",
+            "gravatar_id": "",
+            "url": "https://api.github.com/users/discord",
+            "type": "Organization",
+            "site_admin": false
+          },
+          "repo": {
+            "id": 133904132,
+            "node_id": "MDEwOlJlcG9zaXRvcnkxMzM5MDQxMzI=",
+            "name": "eslint-plugin-discord",
+            "full_name": "discord/eslint-plugin-discord",
+            "private": false,
+            "owner": {
+              "login": "discord",
+              "id": 1965106,
+              "node_id": "MDEyOk9yZ2FuaXphdGlvbjE5NjUxMDY=",
+              "gravatar_id": "",
+              "url": "https://api.github.com/users/discord",
+              "type": "Organization",
+              "site_admin": false
+            },
+            "description": "Custom ESLint rules for Discord",
+            "fork": false,
+            "url": "https://api.github.com/repos/discord/eslint-plugin-discord",
+            "created_at": "2018-05-18T04:45:44Z",
+            "updated_at": "2023-04-09T04:24:26Z",
+            "pushed_at": "2023-04-24T18:27:48Z",
+            "homepage": null,
+            "size": 69,
+            "stargazers_count": 15,
+            "watchers_count": 15,
+            "language": "JavaScript",
+            "has_issues": false,
+            "has_projects": false,
+            "has_downloads": true,
+            "has_wiki": false,
+            "has_pages": false,
+            "has_discussions": false,
+            "forks_count": 12,
+            "archived": false,
+            "disabled": false,
+            "open_issues_count": 3,
+            "license": null,
+            "allow_forking": true,
+            "is_template": false,
+            "web_commit_signoff_required": false,
+            "topics": [],
+            "visibility": "public",
+            "forks": 12,
+            "open_issues": 3,
+            "watchers": 15,
+            "default_branch": "master"
+          }
+        },
+        "base": {
+          "label": "discord:master",
+          "ref": "master",
+          "sha": "a8fd1614c74851bc5393ddd876b8cd60941aea34",
+          "user": {
+            "login": "discord",
+            "id": 1965106,
+            "node_id": "MDEyOk9yZ2FuaXphdGlvbjE5NjUxMDY=",
+            "gravatar_id": "",
+            "url": "https://api.github.com/users/discord",
+            "type": "Organization",
+            "site_admin": false
+          },
+          "repo": {
+            "id": 133904132,
+            "node_id": "MDEwOlJlcG9zaXRvcnkxMzM5MDQxMzI=",
+            "name": "eslint-plugin-discord",
+            "full_name": "discord/eslint-plugin-discord",
+            "private": false,
+            "owner": {
+              "login": "discord",
+              "id": 1965106,
+              "node_id": "MDEyOk9yZ2FuaXphdGlvbjE5NjUxMDY=",
+              "gravatar_id": "",
+              "url": "https://api.github.com/users/discord",
+              "type": "Organization",
+              "site_admin": false
+            },
+            "description": "Custom ESLint rules for Discord",
+            "fork": false,
+            "url": "https://api.github.com/repos/discord/eslint-plugin-discord",
+            "created_at": "2018-05-18T04:45:44Z",
+            "updated_at": "2023-04-09T04:24:26Z",
+            "pushed_at": "2023-04-24T18:27:48Z",
+            "homepage": null,
+            "size": 69,
+            "stargazers_count": 15,
+            "watchers_count": 15,
+            "language": "JavaScript",
+            "has_issues": false,
+            "has_projects": false,
+            "has_downloads": true,
+            "has_wiki": false,
+            "has_pages": false,
+            "has_discussions": false,
+            "forks_count": 12,
+            "archived": false,
+            "disabled": false,
+            "open_issues_count": 3,
+            "license": null,
+            "allow_forking": true,
+            "is_template": false,
+            "web_commit_signoff_required": false,
+            "topics": [],
+            "visibility": "public",
+            "forks": 12,
+            "open_issues": 3,
+            "watchers": 15,
+            "default_branch": "master"
+          }
+        },
+        "_links": {
+          "self": {
+            "href": "https://api.github.com/repos/discord/eslint-plugin-discord/pulls/11"
+          },
+          "html": {
+            "href": "https://github.com/discord/eslint-plugin-discord/pull/11"
+          },
+          "issue": {
+            "href": "https://api.github.com/repos/discord/eslint-plugin-discord/issues/11"
+          },
+          "comments": {
+            "href": "https://api.github.com/repos/discord/eslint-plugin-discord/issues/11/comments"
+          },
+          "review_comments": {
+            "href": "https://api.github.com/repos/discord/eslint-plugin-discord/pulls/11/comments"
+          },
+          "review_comment": {
+            "href": "https://api.github.com/repos/discord/eslint-plugin-discord/pulls/comments{/number}"
+          },
+          "commits": {
+            "href": "https://api.github.com/repos/discord/eslint-plugin-discord/pulls/11/commits"
+          },
+          "statuses": {
+            "href": "https://api.github.com/repos/discord/eslint-plugin-discord/statuses/68eae207211a122c02208d9b4a92b06ef69b74bf"
+          }
+        },
+        "author_association": "NONE",
+        "auto_merge": null,
+        "active_lock_reason": null
+      },
+      {
+        "url": "https://api.github.com/repos/discord/eslint-plugin-discord/pulls/10",
+        "id": 1325934192,
+        "node_id": "PR_kwDOB_s3BM5PCCZw",
+        "number": 10,
+        "state": "open",
+        "locked": false,
+        "title": "Bump js-yaml from 3.11.0 to 3.14.1",
+        "user": {
+          "login": "dependabot[bot]",
+          "id": 49699333,
+          "node_id": "MDM6Qm90NDk2OTkzMzM=",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/dependabot%5Bbot%5D",
+          "type": "Bot",
+          "site_admin": false
+        },
+        "body": "Bumps [js-yaml](https://github.com/nodeca/js-yaml) from 3.11.0 to 3.14.1.\n<details>\n<summary>Changelog</summary>\n<p><em>Sourced from <a href=\"https://github.com/nodeca/js-yaml/blob/master/CHANGELOG.md\">js-yaml's changelog</a>.</em></p>\n<blockquote>\n<h2>[3.14.1] - 2020-12-07</h2>\n<h3>Security</h3>\n<ul>\n<li>Fix possible code execution in (already unsafe) <code>.load()</code> (in &amp;anchor).</li>\n</ul>\n<h2>[3.14.0] - 2020-05-22</h2>\n<h3>Changed</h3>\n<ul>\n<li>Support <code>safe/loadAll(input, options)</code> variant of call.</li>\n<li>CI: drop outdated nodejs versions.</li>\n<li>Dev deps bump.</li>\n</ul>\n<h3>Fixed</h3>\n<ul>\n<li>Quote <code>=</code> in plain scalars <a href=\"https://redirect.github.com/nodeca/js-yaml/issues/519\">#519</a>.</li>\n<li>Check the node type for <code>!&lt;?&gt;</code> tag in case user manually specifies it.</li>\n<li>Verify that there are no null-bytes in input.</li>\n<li>Fix wrong quote position when writing condensed flow, <a href=\"https://redirect.github.com/nodeca/js-yaml/issues/526\">#526</a>.</li>\n</ul>\n<h2>[3.13.1] - 2019-04-05</h2>\n<h3>Security</h3>\n<ul>\n<li>Fix possible code execution in (already unsafe) <code>.load()</code>, <a href=\"https://redirect.github.com/nodeca/js-yaml/issues/480\">#480</a>.</li>\n</ul>\n<h2>[3.13.0] - 2019-03-20</h2>\n<h3>Security</h3>\n<ul>\n<li>Security fix: <code>safeLoad()</code> can hang when arrays with nested refs\nused as key. Now throws exception for nested arrays. <a href=\"https://redirect.github.com/nodeca/js-yaml/issues/475\">#475</a>.</li>\n</ul>\n<h2>[3.12.2] - 2019-02-26</h2>\n<h3>Fixed</h3>\n<ul>\n<li>Fix <code>noArrayIndent</code> option for root level, <a href=\"https://redirect.github.com/nodeca/js-yaml/issues/468\">#468</a>.</li>\n</ul>\n<h2>[3.12.1] - 2019-01-05</h2>\n<h3>Added</h3>\n<ul>\n<li>Added <code>noArrayIndent</code> option, <a href=\"https://redirect.github.com/nodeca/js-yaml/issues/432\">#432</a>.</li>\n</ul>\n<h2>[3.12.0] - 2018-06-02</h2>\n<h3>Changed</h3>\n<ul>\n<li>Support arrow functions without a block statement, <a href=\"https://redirect.github.com/nodeca/js-yaml/issues/421\">#421</a>.</li>\n</ul>\n</blockquote>\n</details>\n<details>\n<summary>Commits</summary>\n<ul>\n<li><a href=\"https://github.com/nodeca/js-yaml/commit/37caaad57dc37d350d9a4577a5da53f482bb2983\"><code>37caaad</code></a> 3.14.1 released</li>\n<li><a href=\"https://github.com/nodeca/js-yaml/commit/094c0f7a79e6ff9e2b4d50b22686d2586894b58f\"><code>094c0f7</code></a> dist rebuild</li>\n<li><a href=\"https://github.com/nodeca/js-yaml/commit/9586ebe23298427d26b3479979bd6499bf3a14c2\"><code>9586ebe</code></a> Avoid calling hasOwnProperty of user-controlled objects</li>\n<li><a href=\"https://github.com/nodeca/js-yaml/commit/34e5072f43fd36b08aaaad433da73c10d47c41e5\"><code>34e5072</code></a> 3.14.0 released</li>\n<li><a href=\"https://github.com/nodeca/js-yaml/commit/7b25c83a6dc77097c2bf14bf714e168f60ee199b\"><code>7b25c83</code></a> Browser files rebuild</li>\n<li><a href=\"https://github.com/nodeca/js-yaml/commit/6f7347396867b8dcfc042722c2aae810dfe4caae\"><code>6f73473</code></a> Dev deps bump</li>\n<li><a href=\"https://github.com/nodeca/js-yaml/commit/0c293491d903cddcd41b41c165bc45eeb9a8d720\"><code>0c29349</code></a> Travis-CI: drop old nodejs versions</li>\n<li><a href=\"https://github.com/nodeca/js-yaml/commit/10be97ebbd588e68907e6c67e0b3843a4caab475\"><code>10be97e</code></a> fix(loader): Add support for <code>safe/loadAll(input, options)</code></li>\n<li><a href=\"https://github.com/nodeca/js-yaml/commit/d6983dd4291849b2854e8d26e1beb302edfd4c76\"><code>d6983dd</code></a> Fix issue <a href=\"https://redirect.github.com/nodeca/js-yaml/issues/526\">#526</a>: wrong quote position writing condensed flow (<a href=\"https://redirect.github.com/nodeca/js-yaml/issues/527\">#527</a>)</li>\n<li><a href=\"https://github.com/nodeca/js-yaml/commit/93fbf7d4ddecea60709c8379397247af28f11e10\"><code>93fbf7d</code></a> fix issue 526 (wrong quote position writing condensed flow)</li>\n<li>Additional commits viewable in <a href=\"https://github.com/nodeca/js-yaml/compare/3.11.0...3.14.1\">compare view</a></li>\n</ul>\n</details>\n<br />\n\n\n[![Dependabot compatibility score](https://dependabot-badges.githubapp.com/badges/compatibility_score?dependency-name=js-yaml&package-manager=npm_and_yarn&previous-version=3.11.0&new-version=3.14.1)](https://docs.github.com/en/github/managing-security-vulnerabilities/about-dependabot-security-updates#about-compatibility-scores)\n\nDependabot will resolve any conflicts with this PR as long as you don't alter it yourself. You can also trigger a rebase manually by commenting `@dependabot rebase`.\n\n[//]: # (dependabot-automerge-start)\n[//]: # (dependabot-automerge-end)\n\n---\n\n<details>\n<summary>Dependabot commands and options</summary>\n<br />\n\nYou can trigger Dependabot actions by commenting on this PR:\n- `@dependabot rebase` will rebase this PR\n- `@dependabot recreate` will recreate this PR, overwriting any edits that have been made to it\n- `@dependabot merge` will merge this PR after your CI passes on it\n- `@dependabot squash and merge` will squash and merge this PR after your CI passes on it\n- `@dependabot cancel merge` will cancel a previously requested merge and block automerging\n- `@dependabot reopen` will reopen this PR if it is closed\n- `@dependabot close` will close this PR and stop Dependabot recreating it. You can achieve the same result by closing it manually\n- `@dependabot ignore this major version` will close this PR and stop Dependabot creating any more for this major version (unless you reopen the PR or upgrade to it yourself)\n- `@dependabot ignore this minor version` will close this PR and stop Dependabot creating any more for this minor version (unless you reopen the PR or upgrade to it yourself)\n- `@dependabot ignore this dependency` will close this PR and stop Dependabot creating any more for this dependency (unless you reopen the PR or upgrade to it yourself)\nYou can disable automated security fix PRs for this repo from the [Security Alerts page](https://github.com/discord/eslint-plugin-discord/network/alerts).\n\n</details>",
+        "created_at": "2023-04-24T18:27:46Z",
+        "updated_at": "2023-04-24T18:27:47Z",
+        "closed_at": null,
+        "merged_at": null,
+        "merge_commit_sha": "a23deb67aeb27db1cc11421a14869bcff5ed4d1c",
+        "assignee": null,
+        "assignees": [],
+        "requested_reviewers": [],
+        "requested_teams": [],
+        "labels": [
+          {
+            "id": 1653488957,
+            "node_id": "MDU6TGFiZWwxNjUzNDg4OTU3",
+            "url": "https://api.github.com/repos/discord/eslint-plugin-discord/labels/dependencies",
+            "name": "dependencies",
+            "color": "0366d6",
+            "default": false,
+            "description": "Pull requests that update a dependency file"
+          }
+        ],
+        "milestone": null,
+        "draft": false,
+        "head": {
+          "label": "discord:dependabot/npm_and_yarn/js-yaml-3.14.1",
+          "ref": "dependabot/npm_and_yarn/js-yaml-3.14.1",
+          "sha": "1b4f2cf312949b8f9a174de2c37287f7be49c8d2",
+          "user": {
+            "login": "discord",
+            "id": 1965106,
+            "node_id": "MDEyOk9yZ2FuaXphdGlvbjE5NjUxMDY=",
+            "gravatar_id": "",
+            "url": "https://api.github.com/users/discord",
+            "type": "Organization",
+            "site_admin": false
+          },
+          "repo": {
+            "id": 133904132,
+            "node_id": "MDEwOlJlcG9zaXRvcnkxMzM5MDQxMzI=",
+            "name": "eslint-plugin-discord",
+            "full_name": "discord/eslint-plugin-discord",
+            "private": false,
+            "owner": {
+              "login": "discord",
+              "id": 1965106,
+              "node_id": "MDEyOk9yZ2FuaXphdGlvbjE5NjUxMDY=",
+              "gravatar_id": "",
+              "url": "https://api.github.com/users/discord",
+              "type": "Organization",
+              "site_admin": false
+            },
+            "description": "Custom ESLint rules for Discord",
+            "fork": false,
+            "url": "https://api.github.com/repos/discord/eslint-plugin-discord",
+            "created_at": "2018-05-18T04:45:44Z",
+            "updated_at": "2023-04-09T04:24:26Z",
+            "pushed_at": "2023-04-24T18:27:48Z",
+            "homepage": null,
+            "size": 69,
+            "stargazers_count": 15,
+            "watchers_count": 15,
+            "language": "JavaScript",
+            "has_issues": false,
+            "has_projects": false,
+            "has_downloads": true,
+            "has_wiki": false,
+            "has_pages": false,
+            "has_discussions": false,
+            "forks_count": 12,
+            "archived": false,
+            "disabled": false,
+            "open_issues_count": 3,
+            "license": null,
+            "allow_forking": true,
+            "is_template": false,
+            "web_commit_signoff_required": false,
+            "topics": [],
+            "visibility": "public",
+            "forks": 12,
+            "open_issues": 3,
+            "watchers": 15,
+            "default_branch": "master"
+          }
+        },
+        "base": {
+          "label": "discord:master",
+          "ref": "master",
+          "sha": "a8fd1614c74851bc5393ddd876b8cd60941aea34",
+          "user": {
+            "login": "discord",
+            "id": 1965106,
+            "node_id": "MDEyOk9yZ2FuaXphdGlvbjE5NjUxMDY=",
+            "gravatar_id": "",
+            "url": "https://api.github.com/users/discord",
+            "type": "Organization",
+            "site_admin": false
+          },
+          "repo": {
+            "id": 133904132,
+            "node_id": "MDEwOlJlcG9zaXRvcnkxMzM5MDQxMzI=",
+            "name": "eslint-plugin-discord",
+            "full_name": "discord/eslint-plugin-discord",
+            "private": false,
+            "owner": {
+              "login": "discord",
+              "id": 1965106,
+              "node_id": "MDEyOk9yZ2FuaXphdGlvbjE5NjUxMDY=",
+              "gravatar_id": "",
+              "url": "https://api.github.com/users/discord",
+              "type": "Organization",
+              "site_admin": false
+            },
+            "description": "Custom ESLint rules for Discord",
+            "fork": false,
+            "url": "https://api.github.com/repos/discord/eslint-plugin-discord",
+            "created_at": "2018-05-18T04:45:44Z",
+            "updated_at": "2023-04-09T04:24:26Z",
+            "pushed_at": "2023-04-24T18:27:48Z",
+            "homepage": null,
+            "size": 69,
+            "stargazers_count": 15,
+            "watchers_count": 15,
+            "language": "JavaScript",
+            "has_issues": false,
+            "has_projects": false,
+            "has_downloads": true,
+            "has_wiki": false,
+            "has_pages": false,
+            "has_discussions": false,
+            "forks_count": 12,
+            "archived": false,
+            "disabled": false,
+            "open_issues_count": 3,
+            "license": null,
+            "allow_forking": true,
+            "is_template": false,
+            "web_commit_signoff_required": false,
+            "topics": [],
+            "visibility": "public",
+            "forks": 12,
+            "open_issues": 3,
+            "watchers": 15,
+            "default_branch": "master"
+          }
+        },
+        "_links": {
+          "self": {
+            "href": "https://api.github.com/repos/discord/eslint-plugin-discord/pulls/10"
+          },
+          "html": {
+            "href": "https://github.com/discord/eslint-plugin-discord/pull/10"
+          },
+          "issue": {
+            "href": "https://api.github.com/repos/discord/eslint-plugin-discord/issues/10"
+          },
+          "comments": {
+            "href": "https://api.github.com/repos/discord/eslint-plugin-discord/issues/10/comments"
+          },
+          "review_comments": {
+            "href": "https://api.github.com/repos/discord/eslint-plugin-discord/pulls/10/comments"
+          },
+          "review_comment": {
+            "href": "https://api.github.com/repos/discord/eslint-plugin-discord/pulls/comments{/number}"
+          },
+          "commits": {
+            "href": "https://api.github.com/repos/discord/eslint-plugin-discord/pulls/10/commits"
+          },
+          "statuses": {
+            "href": "https://api.github.com/repos/discord/eslint-plugin-discord/statuses/1b4f2cf312949b8f9a174de2c37287f7be49c8d2"
+          }
+        },
+        "author_association": "NONE",
+        "auto_merge": null,
+        "active_lock_reason": null
+      },
+      {
+        "url": "https://api.github.com/repos/discord/eslint-plugin-discord/pulls/9",
+        "id": 635347211,
+        "node_id": "MDExOlB1bGxSZXF1ZXN0NjM1MzQ3MjEx",
+        "number": 9,
+        "state": "open",
+        "locked": false,
+        "title": "Bump lodash from 4.17.10 to 4.17.21",
+        "user": {
+          "login": "dependabot[bot]",
+          "id": 49699333,
+          "node_id": "MDM6Qm90NDk2OTkzMzM=",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/dependabot%5Bbot%5D",
+          "type": "Bot",
+          "site_admin": false
+        },
+        "body": "Bumps [lodash](https://github.com/lodash/lodash) from 4.17.10 to 4.17.21.\n<details>\n<summary>Commits</summary>\n<ul>\n<li><a href=\"https://github.com/lodash/lodash/commit/f299b52f39486275a9e6483b60a410e06520c538\"><code>f299b52</code></a> Bump to v4.17.21</li>\n<li><a href=\"https://github.com/lodash/lodash/commit/c4847ebe7d14540bb28a8b932a9ce1b9ecbfee1a\"><code>c4847eb</code></a> Improve performance of <code>toNumber</code>, <code>trim</code> and <code>trimEnd</code> on large input strings</li>\n<li><a href=\"https://github.com/lodash/lodash/commit/3469357cff396a26c363f8c1b5a91dde28ba4b1c\"><code>3469357</code></a> Prevent command injection through <code>_.template</code>'s <code>variable</code> option</li>\n<li><a href=\"https://github.com/lodash/lodash/commit/ded9bc66583ed0b4e3b7dc906206d40757b4a90a\"><code>ded9bc6</code></a> Bump to v4.17.20.</li>\n<li><a href=\"https://github.com/lodash/lodash/commit/63150ef7645ac07961b63a86490f419f356429aa\"><code>63150ef</code></a> Documentation fixes.</li>\n<li><a href=\"https://github.com/lodash/lodash/commit/00f0f62a979d2f5fa0287c06eae70cf9a62d8794\"><code>00f0f62</code></a> test.js: Remove trailing comma.</li>\n<li><a href=\"https://github.com/lodash/lodash/commit/846e434c7a5b5692c55ebf5715ed677b70a32389\"><code>846e434</code></a> Temporarily use a custom fork of <code>lodash-cli</code>.</li>\n<li><a href=\"https://github.com/lodash/lodash/commit/5d046f39cbd27f573914768e3b36eeefcc4f1229\"><code>5d046f3</code></a> Re-enable Travis tests on <code>4.17</code> branch.</li>\n<li><a href=\"https://github.com/lodash/lodash/commit/aa816b36d402a1ad9385142ce7188f17dae514fd\"><code>aa816b3</code></a> Remove <code>/npm-package</code>.</li>\n<li><a href=\"https://github.com/lodash/lodash/commit/d7fbc52ee0466a6d248f047b5d5c3e6d1e099056\"><code>d7fbc52</code></a> Bump to v4.17.19</li>\n<li>Additional commits viewable in <a href=\"https://github.com/lodash/lodash/compare/4.17.10...4.17.21\">compare view</a></li>\n</ul>\n</details>\n<details>\n<summary>Maintainer changes</summary>\n<p>This version was pushed to npm by <a href=\"https://www.npmjs.com/~bnjmnt4n\">bnjmnt4n</a>, a new releaser for lodash since your current version.</p>\n</details>\n<br />\n\n\n[![Dependabot compatibility score](https://dependabot-badges.githubapp.com/badges/compatibility_score?dependency-name=lodash&package-manager=npm_and_yarn&previous-version=4.17.10&new-version=4.17.21)](https://docs.github.com/en/github/managing-security-vulnerabilities/about-dependabot-security-updates#about-compatibility-scores)\n\nDependabot will resolve any conflicts with this PR as long as you don't alter it yourself. You can also trigger a rebase manually by commenting `@dependabot rebase`.\n\n[//]: # (dependabot-automerge-start)\n[//]: # (dependabot-automerge-end)\n\n---\n\n<details>\n<summary>Dependabot commands and options</summary>\n<br />\n\nYou can trigger Dependabot actions by commenting on this PR:\n- `@dependabot rebase` will rebase this PR\n- `@dependabot recreate` will recreate this PR, overwriting any edits that have been made to it\n- `@dependabot merge` will merge this PR after your CI passes on it\n- `@dependabot squash and merge` will squash and merge this PR after your CI passes on it\n- `@dependabot cancel merge` will cancel a previously requested merge and block automerging\n- `@dependabot reopen` will reopen this PR if it is closed\n- `@dependabot close` will close this PR and stop Dependabot recreating it. You can achieve the same result by closing it manually\n- `@dependabot ignore this major version` will close this PR and stop Dependabot creating any more for this major version (unless you reopen the PR or upgrade to it yourself)\n- `@dependabot ignore this minor version` will close this PR and stop Dependabot creating any more for this minor version (unless you reopen the PR or upgrade to it yourself)\n- `@dependabot ignore this dependency` will close this PR and stop Dependabot creating any more for this dependency (unless you reopen the PR or upgrade to it yourself)\n- `@dependabot use these labels` will set the current labels as the default for future PRs for this repo and language\n- `@dependabot use these reviewers` will set the current reviewers as the default for future PRs for this repo and language\n- `@dependabot use these assignees` will set the current assignees as the default for future PRs for this repo and language\n- `@dependabot use this milestone` will set the current milestone as the default for future PRs for this repo and language\n\nYou can disable automated security fix PRs for this repo from the [Security Alerts page](https://github.com/discord/eslint-plugin-discord/network/alerts).\n\n</details>",
+        "created_at": "2021-05-09T04:44:10Z",
+        "updated_at": "2021-05-09T04:44:10Z",
+        "closed_at": null,
+        "merged_at": null,
+        "merge_commit_sha": "0e3456a836412f678c36b8ce1aa3a3cf3d514824",
+        "assignee": null,
+        "assignees": [],
+        "requested_reviewers": [],
+        "requested_teams": [],
+        "labels": [
+          {
+            "id": 1653488957,
+            "node_id": "MDU6TGFiZWwxNjUzNDg4OTU3",
+            "url": "https://api.github.com/repos/discord/eslint-plugin-discord/labels/dependencies",
+            "name": "dependencies",
+            "color": "0366d6",
+            "default": false,
+            "description": "Pull requests that update a dependency file"
+          }
+        ],
+        "milestone": null,
+        "draft": false,
+        "head": {
+          "label": "discord:dependabot/npm_and_yarn/lodash-4.17.21",
+          "ref": "dependabot/npm_and_yarn/lodash-4.17.21",
+          "sha": "58a77032bf2ffb0588f2789ca426ca274b249f43",
+          "user": {
+            "login": "discord",
+            "id": 1965106,
+            "node_id": "MDEyOk9yZ2FuaXphdGlvbjE5NjUxMDY=",
+            "gravatar_id": "",
+            "url": "https://api.github.com/users/discord",
+            "type": "Organization",
+            "site_admin": false
+          },
+          "repo": {
+            "id": 133904132,
+            "node_id": "MDEwOlJlcG9zaXRvcnkxMzM5MDQxMzI=",
+            "name": "eslint-plugin-discord",
+            "full_name": "discord/eslint-plugin-discord",
+            "private": false,
+            "owner": {
+              "login": "discord",
+              "id": 1965106,
+              "node_id": "MDEyOk9yZ2FuaXphdGlvbjE5NjUxMDY=",
+              "gravatar_id": "",
+              "url": "https://api.github.com/users/discord",
+              "type": "Organization",
+              "site_admin": false
+            },
+            "description": "Custom ESLint rules for Discord",
+            "fork": false,
+            "url": "https://api.github.com/repos/discord/eslint-plugin-discord",
+            "created_at": "2018-05-18T04:45:44Z",
+            "updated_at": "2023-04-09T04:24:26Z",
+            "pushed_at": "2023-04-24T18:27:48Z",
+            "homepage": null,
+            "size": 69,
+            "stargazers_count": 15,
+            "watchers_count": 15,
+            "language": "JavaScript",
+            "has_issues": false,
+            "has_projects": false,
+            "has_downloads": true,
+            "has_wiki": false,
+            "has_pages": false,
+            "has_discussions": false,
+            "forks_count": 12,
+            "archived": false,
+            "disabled": false,
+            "open_issues_count": 3,
+            "license": null,
+            "allow_forking": true,
+            "is_template": false,
+            "web_commit_signoff_required": false,
+            "topics": [],
+            "visibility": "public",
+            "forks": 12,
+            "open_issues": 3,
+            "watchers": 15,
+            "default_branch": "master"
+          }
+        },
+        "base": {
+          "label": "discord:master",
+          "ref": "master",
+          "sha": "a8fd1614c74851bc5393ddd876b8cd60941aea34",
+          "user": {
+            "login": "discord",
+            "id": 1965106,
+            "node_id": "MDEyOk9yZ2FuaXphdGlvbjE5NjUxMDY=",
+            "gravatar_id": "",
+            "url": "https://api.github.com/users/discord",
+            "type": "Organization",
+            "site_admin": false
+          },
+          "repo": {
+            "id": 133904132,
+            "node_id": "MDEwOlJlcG9zaXRvcnkxMzM5MDQxMzI=",
+            "name": "eslint-plugin-discord",
+            "full_name": "discord/eslint-plugin-discord",
+            "private": false,
+            "owner": {
+              "login": "discord",
+              "id": 1965106,
+              "node_id": "MDEyOk9yZ2FuaXphdGlvbjE5NjUxMDY=",
+              "gravatar_id": "",
+              "url": "https://api.github.com/users/discord",
+              "type": "Organization",
+              "site_admin": false
+            },
+            "description": "Custom ESLint rules for Discord",
+            "fork": false,
+            "url": "https://api.github.com/repos/discord/eslint-plugin-discord",
+            "created_at": "2018-05-18T04:45:44Z",
+            "updated_at": "2023-04-09T04:24:26Z",
+            "pushed_at": "2023-04-24T18:27:48Z",
+            "homepage": null,
+            "size": 69,
+            "stargazers_count": 15,
+            "watchers_count": 15,
+            "language": "JavaScript",
+            "has_issues": false,
+            "has_projects": false,
+            "has_downloads": true,
+            "has_wiki": false,
+            "has_pages": false,
+            "has_discussions": false,
+            "forks_count": 12,
+            "archived": false,
+            "disabled": false,
+            "open_issues_count": 3,
+            "license": null,
+            "allow_forking": true,
+            "is_template": false,
+            "web_commit_signoff_required": false,
+            "topics": [],
+            "visibility": "public",
+            "forks": 12,
+            "open_issues": 3,
+            "watchers": 15,
+            "default_branch": "master"
+          }
+        },
+        "_links": {
+          "self": {
+            "href": "https://api.github.com/repos/discord/eslint-plugin-discord/pulls/9"
+          },
+          "html": {
+            "href": "https://github.com/discord/eslint-plugin-discord/pull/9"
+          },
+          "issue": {
+            "href": "https://api.github.com/repos/discord/eslint-plugin-discord/issues/9"
+          },
+          "comments": {
+            "href": "https://api.github.com/repos/discord/eslint-plugin-discord/issues/9/comments"
+          },
+          "review_comments": {
+            "href": "https://api.github.com/repos/discord/eslint-plugin-discord/pulls/9/comments"
+          },
+          "review_comment": {
+            "href": "https://api.github.com/repos/discord/eslint-plugin-discord/pulls/comments{/number}"
+          },
+          "commits": {
+            "href": "https://api.github.com/repos/discord/eslint-plugin-discord/pulls/9/commits"
+          },
+          "statuses": {
+            "href": "https://api.github.com/repos/discord/eslint-plugin-discord/statuses/58a77032bf2ffb0588f2789ca426ca274b249f43"
+          }
+        },
+        "author_association": "NONE",
+        "auto_merge": null,
+        "active_lock_reason": null
+      },
+      {
+        "url": "https://api.github.com/repos/discord/eslint-plugin-discord/pulls/8",
+        "id": 450877024,
+        "node_id": "MDExOlB1bGxSZXF1ZXN0NDUwODc3MDI0",
+        "number": 8,
+        "state": "closed",
+        "locked": false,
+        "title": "Bump lodash from 4.17.10 to 4.17.19",
+        "user": {
+          "login": "dependabot[bot]",
+          "id": 49699333,
+          "node_id": "MDM6Qm90NDk2OTkzMzM=",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/dependabot%5Bbot%5D",
+          "type": "Bot",
+          "site_admin": false
+        },
+        "body": "Bumps [lodash](https://github.com/lodash/lodash) from 4.17.10 to 4.17.19.\n<details>\n<summary>Release notes</summary>\n<p><em>Sourced from <a href=\"https://github.com/lodash/lodash/releases\">lodash's releases</a>.</em></p>\n<blockquote>\n<h2>4.17.16</h2>\n</blockquote>\n</details>\n<details>\n<summary>Commits</summary>\n<ul>\n<li><a href=\"https://github.com/lodash/lodash/commit/d7fbc52ee0466a6d248f047b5d5c3e6d1e099056\"><code>d7fbc52</code></a> Bump to v4.17.19</li>\n<li><a href=\"https://github.com/lodash/lodash/commit/2e1c0f22f425e9c013815b2cd7c2ebd51f49a8d6\"><code>2e1c0f2</code></a> Add npm-package</li>\n<li><a href=\"https://github.com/lodash/lodash/commit/1b6c282299f4e0271f932b466c67f0f822aa308e\"><code>1b6c282</code></a> Bump to v4.17.18</li>\n<li><a href=\"https://github.com/lodash/lodash/commit/a370ac81408de2da77a82b3c4b61a01a3b9c2fac\"><code>a370ac8</code></a> Bump to v4.17.17</li>\n<li><a href=\"https://github.com/lodash/lodash/commit/1144918f3578a84fcc4986da9b806e63a6175cbb\"><code>1144918</code></a> Rebuild lodash and docs</li>\n<li><a href=\"https://github.com/lodash/lodash/commit/3a3b0fd339c2109563f7e8167dc95265ed82ef3e\"><code>3a3b0fd</code></a> Bump to v4.17.16</li>\n<li><a href=\"https://github.com/lodash/lodash/commit/c84fe82760fb2d3e03a63379b297a1cc1a2fce12\"><code>c84fe82</code></a> fix(zipObjectDeep): prototype pollution (<a href=\"https://github-redirect.dependabot.com/lodash/lodash/issues/4759\">#4759</a>)</li>\n<li><a href=\"https://github.com/lodash/lodash/commit/e7b28ea6cb17b4ca021e7c9d66218c8c89782f32\"><code>e7b28ea</code></a> Sanitize sourceURL so it cannot affect evaled code (<a href=\"https://github-redirect.dependabot.com/lodash/lodash/issues/4518\">#4518</a>)</li>\n<li><a href=\"https://github.com/lodash/lodash/commit/0cec225778d4ac26c2bac95031ecc92a94f08bbb\"><code>0cec225</code></a> Fix lodash.isEqual for circular references (<a href=\"https://github-redirect.dependabot.com/lodash/lodash/issues/4320\">#4320</a>) (<a href=\"https://github-redirect.dependabot.com/lodash/lodash/issues/4515\">#4515</a>)</li>\n<li><a href=\"https://github.com/lodash/lodash/commit/94c3a8133cb4fcdb50db72b4fd14dd884b195cd5\"><code>94c3a81</code></a> Document matches* shorthands for over* methods (<a href=\"https://github-redirect.dependabot.com/lodash/lodash/issues/4510\">#4510</a>) (<a href=\"https://github-redirect.dependabot.com/lodash/lodash/issues/4514\">#4514</a>)</li>\n<li>Additional commits viewable in <a href=\"https://github.com/lodash/lodash/compare/4.17.10...4.17.19\">compare view</a></li>\n</ul>\n</details>\n<details>\n<summary>Maintainer changes</summary>\n<p>This version was pushed to npm by <a href=\"https://www.npmjs.com/~mathias\">mathias</a>, a new releaser for lodash since your current version.</p>\n</details>\n<br />\n\n\n[![Dependabot compatibility score](https://dependabot-badges.githubapp.com/badges/compatibility_score?dependency-name=lodash&package-manager=npm_and_yarn&previous-version=4.17.10&new-version=4.17.19)](https://help.github.com/articles/configuring-automated-security-fixes)\n\nDependabot will resolve any conflicts with this PR as long as you don't alter it yourself. You can also trigger a rebase manually by commenting `@dependabot rebase`.\n\n[//]: # (dependabot-automerge-start)\n[//]: # (dependabot-automerge-end)\n\n---\n\n<details>\n<summary>Dependabot commands and options</summary>\n<br />\n\nYou can trigger Dependabot actions by commenting on this PR:\n- `@dependabot rebase` will rebase this PR\n- `@dependabot recreate` will recreate this PR, overwriting any edits that have been made to it\n- `@dependabot merge` will merge this PR after your CI passes on it\n- `@dependabot squash and merge` will squash and merge this PR after your CI passes on it\n- `@dependabot cancel merge` will cancel a previously requested merge and block automerging\n- `@dependabot reopen` will reopen this PR if it is closed\n- `@dependabot close` will close this PR and stop Dependabot recreating it. You can achieve the same result by closing it manually\n- `@dependabot ignore this major version` will close this PR and stop Dependabot creating any more for this major version (unless you reopen the PR or upgrade to it yourself)\n- `@dependabot ignore this minor version` will close this PR and stop Dependabot creating any more for this minor version (unless you reopen the PR or upgrade to it yourself)\n- `@dependabot ignore this dependency` will close this PR and stop Dependabot creating any more for this dependency (unless you reopen the PR or upgrade to it yourself)\n- `@dependabot use these labels` will set the current labels as the default for future PRs for this repo and language\n- `@dependabot use these reviewers` will set the current reviewers as the default for future PRs for this repo and language\n- `@dependabot use these assignees` will set the current assignees as the default for future PRs for this repo and language\n- `@dependabot use this milestone` will set the current milestone as the default for future PRs for this repo and language\n\nYou can disable automated security fix PRs for this repo from the [Security Alerts page](https://github.com/discord/eslint-plugin-discord/network/alerts).\n\n</details>",
+        "created_at": "2020-07-17T07:45:48Z",
+        "updated_at": "2021-05-09T04:44:12Z",
+        "closed_at": "2021-05-09T04:44:11Z",
+        "merged_at": null,
+        "merge_commit_sha": "703efc27778208abe7acc16f8417dd3d5baec8a9",
+        "assignee": null,
+        "assignees": [],
+        "requested_reviewers": [],
+        "requested_teams": [],
+        "labels": [
+          {
+            "id": 1653488957,
+            "node_id": "MDU6TGFiZWwxNjUzNDg4OTU3",
+            "url": "https://api.github.com/repos/discord/eslint-plugin-discord/labels/dependencies",
+            "name": "dependencies",
+            "color": "0366d6",
+            "default": false,
+            "description": "Pull requests that update a dependency file"
+          }
+        ],
+        "milestone": null,
+        "draft": false,
+        "head": {
+          "label": "discord:dependabot/npm_and_yarn/lodash-4.17.19",
+          "ref": "dependabot/npm_and_yarn/lodash-4.17.19",
+          "sha": "e12208db5a7841ce5df5617556b044dbb2dc4614",
+          "user": {
+            "login": "discord",
+            "id": 1965106,
+            "node_id": "MDEyOk9yZ2FuaXphdGlvbjE5NjUxMDY=",
+            "gravatar_id": "",
+            "url": "https://api.github.com/users/discord",
+            "type": "Organization",
+            "site_admin": false
+          },
+          "repo": {
+            "id": 133904132,
+            "node_id": "MDEwOlJlcG9zaXRvcnkxMzM5MDQxMzI=",
+            "name": "eslint-plugin-discord",
+            "full_name": "discord/eslint-plugin-discord",
+            "private": false,
+            "owner": {
+              "login": "discord",
+              "id": 1965106,
+              "node_id": "MDEyOk9yZ2FuaXphdGlvbjE5NjUxMDY=",
+              "gravatar_id": "",
+              "url": "https://api.github.com/users/discord",
+              "type": "Organization",
+              "site_admin": false
+            },
+            "description": "Custom ESLint rules for Discord",
+            "fork": false,
+            "url": "https://api.github.com/repos/discord/eslint-plugin-discord",
+            "created_at": "2018-05-18T04:45:44Z",
+            "updated_at": "2023-04-09T04:24:26Z",
+            "pushed_at": "2023-04-24T18:27:48Z",
+            "homepage": null,
+            "size": 69,
+            "stargazers_count": 15,
+            "watchers_count": 15,
+            "language": "JavaScript",
+            "has_issues": false,
+            "has_projects": false,
+            "has_downloads": true,
+            "has_wiki": false,
+            "has_pages": false,
+            "has_discussions": false,
+            "forks_count": 12,
+            "archived": false,
+            "disabled": false,
+            "open_issues_count": 3,
+            "license": null,
+            "allow_forking": true,
+            "is_template": false,
+            "web_commit_signoff_required": false,
+            "topics": [],
+            "visibility": "public",
+            "forks": 12,
+            "open_issues": 3,
+            "watchers": 15,
+            "default_branch": "master"
+          }
+        },
+        "base": {
+          "label": "discord:master",
+          "ref": "master",
+          "sha": "a8fd1614c74851bc5393ddd876b8cd60941aea34",
+          "user": {
+            "login": "discord",
+            "id": 1965106,
+            "node_id": "MDEyOk9yZ2FuaXphdGlvbjE5NjUxMDY=",
+            "gravatar_id": "",
+            "url": "https://api.github.com/users/discord",
+            "type": "Organization",
+            "site_admin": false
+          },
+          "repo": {
+            "id": 133904132,
+            "node_id": "MDEwOlJlcG9zaXRvcnkxMzM5MDQxMzI=",
+            "name": "eslint-plugin-discord",
+            "full_name": "discord/eslint-plugin-discord",
+            "private": false,
+            "owner": {
+              "login": "discord",
+              "id": 1965106,
+              "node_id": "MDEyOk9yZ2FuaXphdGlvbjE5NjUxMDY=",
+              "gravatar_id": "",
+              "url": "https://api.github.com/users/discord",
+              "type": "Organization",
+              "site_admin": false
+            },
+            "description": "Custom ESLint rules for Discord",
+            "fork": false,
+            "url": "https://api.github.com/repos/discord/eslint-plugin-discord",
+            "created_at": "2018-05-18T04:45:44Z",
+            "updated_at": "2023-04-09T04:24:26Z",
+            "pushed_at": "2023-04-24T18:27:48Z",
+            "homepage": null,
+            "size": 69,
+            "stargazers_count": 15,
+            "watchers_count": 15,
+            "language": "JavaScript",
+            "has_issues": false,
+            "has_projects": false,
+            "has_downloads": true,
+            "has_wiki": false,
+            "has_pages": false,
+            "has_discussions": false,
+            "forks_count": 12,
+            "archived": false,
+            "disabled": false,
+            "open_issues_count": 3,
+            "license": null,
+            "allow_forking": true,
+            "is_template": false,
+            "web_commit_signoff_required": false,
+            "topics": [],
+            "visibility": "public",
+            "forks": 12,
+            "open_issues": 3,
+            "watchers": 15,
+            "default_branch": "master"
+          }
+        },
+        "_links": {
+          "self": {
+            "href": "https://api.github.com/repos/discord/eslint-plugin-discord/pulls/8"
+          },
+          "html": {
+            "href": "https://github.com/discord/eslint-plugin-discord/pull/8"
+          },
+          "issue": {
+            "href": "https://api.github.com/repos/discord/eslint-plugin-discord/issues/8"
+          },
+          "comments": {
+            "href": "https://api.github.com/repos/discord/eslint-plugin-discord/issues/8/comments"
+          },
+          "review_comments": {
+            "href": "https://api.github.com/repos/discord/eslint-plugin-discord/pulls/8/comments"
+          },
+          "review_comment": {
+            "href": "https://api.github.com/repos/discord/eslint-plugin-discord/pulls/comments{/number}"
+          },
+          "commits": {
+            "href": "https://api.github.com/repos/discord/eslint-plugin-discord/pulls/8/commits"
+          },
+          "statuses": {
+            "href": "https://api.github.com/repos/discord/eslint-plugin-discord/statuses/e12208db5a7841ce5df5617556b044dbb2dc4614"
+          }
+        },
+        "author_association": "NONE",
+        "auto_merge": null,
+        "active_lock_reason": null
+      },
+      {
+        "url": "https://api.github.com/repos/discord/eslint-plugin-discord/pulls/7",
+        "id": 398465376,
+        "node_id": "MDExOlB1bGxSZXF1ZXN0Mzk4NDY1Mzc2",
+        "number": 7,
+        "state": "closed",
+        "locked": false,
+        "title": "add rule for store connections deps",
+        "user": {
+          "login": "jixwanwang",
+          "id": 4108728,
+          "node_id": "MDQ6VXNlcjQxMDg3Mjg=",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/jixwanwang",
+          "type": "User",
+          "site_admin": false
+        },
+        "body": "that was fun! hopefully reasonable code.\r\n\r\ni could use help with descriptions and such, i'm bad at words. I will also write some more test cases on monday.",
+        "created_at": "2020-04-04T04:13:44Z",
+        "updated_at": "2020-04-07T00:30:06Z",
+        "closed_at": "2020-04-07T00:29:52Z",
+        "merged_at": null,
+        "merge_commit_sha": "9ed9df70c2e815477cfa054434380476f75a16e9",
+        "assignee": null,
+        "assignees": [],
+        "requested_reviewers": [
+          {
+            "login": "amadeus",
+            "id": 83376,
+            "node_id": "MDQ6VXNlcjgzMzc2",
+            "gravatar_id": "",
+            "url": "https://api.github.com/users/amadeus",
+            "type": "User",
+            "site_admin": false
+          },
+          {
+            "login": "mgreer",
+            "id": 643930,
+            "node_id": "MDQ6VXNlcjY0MzkzMA==",
+            "gravatar_id": "",
+            "url": "https://api.github.com/users/mgreer",
+            "type": "User",
+            "site_admin": false
+          },
+          {
+            "login": "meishuu",
+            "id": 6532792,
+            "node_id": "MDQ6VXNlcjY1MzI3OTI=",
+            "gravatar_id": "",
+            "url": "https://api.github.com/users/meishuu",
+            "type": "User",
+            "site_admin": false
+          }
+        ],
+        "requested_teams": [],
+        "labels": [],
+        "milestone": null,
+        "draft": false,
+        "head": {
+          "label": "discord:usestatefromstores-deps",
+          "ref": "usestatefromstores-deps",
+          "sha": "c6dc80386d91bac051b1d769960b779b0750e973",
+          "user": {
+            "login": "discord",
+            "id": 1965106,
+            "node_id": "MDEyOk9yZ2FuaXphdGlvbjE5NjUxMDY=",
+            "gravatar_id": "",
+            "url": "https://api.github.com/users/discord",
+            "type": "Organization",
+            "site_admin": false
+          },
+          "repo": {
+            "id": 133904132,
+            "node_id": "MDEwOlJlcG9zaXRvcnkxMzM5MDQxMzI=",
+            "name": "eslint-plugin-discord",
+            "full_name": "discord/eslint-plugin-discord",
+            "private": false,
+            "owner": {
+              "login": "discord",
+              "id": 1965106,
+              "node_id": "MDEyOk9yZ2FuaXphdGlvbjE5NjUxMDY=",
+              "gravatar_id": "",
+              "url": "https://api.github.com/users/discord",
+              "type": "Organization",
+              "site_admin": false
+            },
+            "description": "Custom ESLint rules for Discord",
+            "fork": false,
+            "url": "https://api.github.com/repos/discord/eslint-plugin-discord",
+            "created_at": "2018-05-18T04:45:44Z",
+            "updated_at": "2023-04-09T04:24:26Z",
+            "pushed_at": "2023-04-24T18:27:48Z",
+            "homepage": null,
+            "size": 69,
+            "stargazers_count": 15,
+            "watchers_count": 15,
+            "language": "JavaScript",
+            "has_issues": false,
+            "has_projects": false,
+            "has_downloads": true,
+            "has_wiki": false,
+            "has_pages": false,
+            "has_discussions": false,
+            "forks_count": 12,
+            "archived": false,
+            "disabled": false,
+            "open_issues_count": 3,
+            "license": null,
+            "allow_forking": true,
+            "is_template": false,
+            "web_commit_signoff_required": false,
+            "topics": [],
+            "visibility": "public",
+            "forks": 12,
+            "open_issues": 3,
+            "watchers": 15,
+            "default_branch": "master"
+          }
+        },
+        "base": {
+          "label": "discord:master",
+          "ref": "master",
+          "sha": "a8fd1614c74851bc5393ddd876b8cd60941aea34",
+          "user": {
+            "login": "discord",
+            "id": 1965106,
+            "node_id": "MDEyOk9yZ2FuaXphdGlvbjE5NjUxMDY=",
+            "gravatar_id": "",
+            "url": "https://api.github.com/users/discord",
+            "type": "Organization",
+            "site_admin": false
+          },
+          "repo": {
+            "id": 133904132,
+            "node_id": "MDEwOlJlcG9zaXRvcnkxMzM5MDQxMzI=",
+            "name": "eslint-plugin-discord",
+            "full_name": "discord/eslint-plugin-discord",
+            "private": false,
+            "owner": {
+              "login": "discord",
+              "id": 1965106,
+              "node_id": "MDEyOk9yZ2FuaXphdGlvbjE5NjUxMDY=",
+              "gravatar_id": "",
+              "url": "https://api.github.com/users/discord",
+              "type": "Organization",
+              "site_admin": false
+            },
+            "description": "Custom ESLint rules for Discord",
+            "fork": false,
+            "url": "https://api.github.com/repos/discord/eslint-plugin-discord",
+            "created_at": "2018-05-18T04:45:44Z",
+            "updated_at": "2023-04-09T04:24:26Z",
+            "pushed_at": "2023-04-24T18:27:48Z",
+            "homepage": null,
+            "size": 69,
+            "stargazers_count": 15,
+            "watchers_count": 15,
+            "language": "JavaScript",
+            "has_issues": false,
+            "has_projects": false,
+            "has_downloads": true,
+            "has_wiki": false,
+            "has_pages": false,
+            "has_discussions": false,
+            "forks_count": 12,
+            "archived": false,
+            "disabled": false,
+            "open_issues_count": 3,
+            "license": null,
+            "allow_forking": true,
+            "is_template": false,
+            "web_commit_signoff_required": false,
+            "topics": [],
+            "visibility": "public",
+            "forks": 12,
+            "open_issues": 3,
+            "watchers": 15,
+            "default_branch": "master"
+          }
+        },
+        "_links": {
+          "self": {
+            "href": "https://api.github.com/repos/discord/eslint-plugin-discord/pulls/7"
+          },
+          "html": {
+            "href": "https://github.com/discord/eslint-plugin-discord/pull/7"
+          },
+          "issue": {
+            "href": "https://api.github.com/repos/discord/eslint-plugin-discord/issues/7"
+          },
+          "comments": {
+            "href": "https://api.github.com/repos/discord/eslint-plugin-discord/issues/7/comments"
+          },
+          "review_comments": {
+            "href": "https://api.github.com/repos/discord/eslint-plugin-discord/pulls/7/comments"
+          },
+          "review_comment": {
+            "href": "https://api.github.com/repos/discord/eslint-plugin-discord/pulls/comments{/number}"
+          },
+          "commits": {
+            "href": "https://api.github.com/repos/discord/eslint-plugin-discord/pulls/7/commits"
+          },
+          "statuses": {
+            "href": "https://api.github.com/repos/discord/eslint-plugin-discord/statuses/c6dc80386d91bac051b1d769960b779b0750e973"
+          }
+        },
+        "author_association": "NONE",
+        "auto_merge": null,
+        "active_lock_reason": null
+      }
+    ]
   }
 }
