@@ -57,24 +57,7 @@
     "triage": false,
     "pull": false
   },
-  "branches": [
-    {
-      "name": "ci-dist-focal",
-      "commit": {
-        "sha": "12b9ace0ba85a4249e14d0675e706d1e29f88743",
-        "url": "https://api.github.com/repos/discord/SimpleAST/commits/12b9ace0ba85a4249e14d0675e706d1e29f88743"
-      },
-      "protected": false
-    },
-    {
-      "name": "master",
-      "commit": {
-        "sha": "567b61c51056cbdec39e839100690c576c26a4c6",
-        "url": "https://api.github.com/repos/discord/SimpleAST/commits/567b61c51056cbdec39e839100690c576c26a4c6"
-      },
-      "protected": false
-    }
-  ],
+  "branches": [],
   "last5": {
     "commits": [
       {

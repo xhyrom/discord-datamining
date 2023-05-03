@@ -51,7 +51,16 @@
     "triage": false,
     "pull": false
   },
-  "branches": [],
+  "branches": [
+    {
+      "name": "master",
+      "commit": {
+        "sha": "8eb1ac6cab42ac081a1d208b5f23f9948da9f0f4",
+        "url": "https://api.github.com/repos/discord/react-dom-animated/commits/8eb1ac6cab42ac081a1d208b5f23f9948da9f0f4"
+      },
+      "protected": false
+    }
+  ],
   "last5": {
     "commits": [
       {
