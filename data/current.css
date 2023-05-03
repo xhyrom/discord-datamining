@@ -50594,44 +50594,6 @@ input[type=checked]:focus-visible+.label-3TDpbn {
     color: var(--text-normal)
 }
 
-.header-1hRBe0 {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: start;
-    -ms-flex-align: start;
-    align-items: flex-start;
-    -webkit-box-pack: justify;
-    -ms-flex-pack: justify;
-    justify-content: space-between;
-    padding: 24px 8px 24px 0;
-    margin: auto 16px;
-    border-bottom: 1px solid var(--background-modifier-accent)
-}
-
-.coverPhoto-EFI1sc {
-    margin: 24px auto;
-    width: 100%;
-    height: auto;
-    max-width: 911px
-}
-
-.footer-3w5i41 {
-    -webkit-box-pack: justify;
-    -ms-flex-pack: justify;
-    justify-content: space-between
-}
-
-.buttons-1pQ1nJ {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
-    gap: 8px
-}
-
 .root-cw9rWQ {
     border-radius: 8px;
     background: var(--background-secondary);
@@ -154373,4 +154335,4 @@ html .invoiceCancelRow-dVOR64 {
     flex-direction: column
 }
 
-/*# sourceMappingURL=40532.00b6a414aa2c7931a6b7.css.map*/
+/*# sourceMappingURL=40532.d423d3c061bc12b023cb.css.map*/
