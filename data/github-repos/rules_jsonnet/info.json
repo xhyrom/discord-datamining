@@ -57,72 +57,7 @@
     "triage": false,
     "pull": false
   },
-  "branches": [
-    {
-      "name": "2716253",
-      "commit": {
-        "sha": "2716253528d97cbce867bdb37b46f1244f94b9b8",
-        "url": "https://api.github.com/repos/discord/rules_jsonnet/commits/2716253528d97cbce867bdb37b46f1244f94b9b8"
-      },
-      "protected": false
-    },
-    {
-      "name": "bazelrc",
-      "commit": {
-        "sha": "7ddeb11831eefbd250998a21dfe96f9ea5c8460c",
-        "url": "https://api.github.com/repos/discord/rules_jsonnet/commits/7ddeb11831eefbd250998a21dfe96f9ea5c8460c"
-      },
-      "protected": false
-    },
-    {
-      "name": "feature/cleaner-diffs",
-      "commit": {
-        "sha": "2a0b847766af15bfc47003b9d6e47ce23bb2f61c",
-        "url": "https://api.github.com/repos/discord/rules_jsonnet/commits/2a0b847766af15bfc47003b9d6e47ce23bb2f61c"
-      },
-      "protected": false
-    },
-    {
-      "name": "fix-readme",
-      "commit": {
-        "sha": "0e62ca38a86c50a5c94fa5957b5c1ada34ec2e71",
-        "url": "https://api.github.com/repos/discord/rules_jsonnet/commits/0e62ca38a86c50a5c94fa5957b5c1ada34ec2e71"
-      },
-      "protected": false
-    },
-    {
-      "name": "master",
-      "commit": {
-        "sha": "f0a8f80dac072d67aebccd8ffb34e0d8858c29f0",
-        "url": "https://api.github.com/repos/discord/rules_jsonnet/commits/f0a8f80dac072d67aebccd8ffb34e0d8858c29f0"
-      },
-      "protected": false
-    },
-    {
-      "name": "merge_mistake",
-      "commit": {
-        "sha": "8bef05c85f807337e96d09a91abd2c265beaf0ab",
-        "url": "https://api.github.com/repos/discord/rules_jsonnet/commits/8bef05c85f807337e96d09a91abd2c265beaf0ab"
-      },
-      "protected": false
-    },
-    {
-      "name": "no-golden",
-      "commit": {
-        "sha": "3667dd7de32787230922087fea461f241ff32a2b",
-        "url": "https://api.github.com/repos/discord/rules_jsonnet/commits/3667dd7de32787230922087fea461f241ff32a2b"
-      },
-      "protected": false
-    },
-    {
-      "name": "test/make-file-output-configurable",
-      "commit": {
-        "sha": "7da41d6fd55a36c8f0ebadf3c2399776468995e3",
-        "url": "https://api.github.com/repos/discord/rules_jsonnet/commits/7da41d6fd55a36c8f0ebadf3c2399776468995e3"
-      },
-      "protected": false
-    }
-  ],
+  "branches": [],
   "last5": {
     "commits": [
       {
