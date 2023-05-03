@@ -21833,6 +21833,14 @@ html.disable-forced-colors * {
     --creator-revenue-start-hsl: 160 calc(var(--saturation-factor, 1)*81.3%) 35.7%;
     --crunchyroll: hsl(var(--crunchyroll-hsl)/1);
     --crunchyroll-hsl: 29 calc(var(--saturation-factor, 1)*93%) 55.5%;
+    --discord-8th-bday-blue: hsl(var(--discord-8th-bday-blue-hsl)/1);
+    --discord-8th-bday-blue-hsl: 234 calc(var(--saturation-factor, 1)*93.1%) 65.7%;
+    --discord-8th-bday-dark-blue: hsl(var(--discord-8th-bday-dark-blue-hsl)/1);
+    --discord-8th-bday-dark-blue-hsl: 235 calc(var(--saturation-factor, 1)*73.7%) 53.7%;
+    --discord-8th-bday-green: hsl(var(--discord-8th-bday-green-hsl)/1);
+    --discord-8th-bday-green-hsl: 79 calc(var(--saturation-factor, 1)*100%) 46.9%;
+    --discord-8th-bday-light-blue: hsl(var(--discord-8th-bday-light-blue-hsl)/1);
+    --discord-8th-bday-light-blue-hsl: 222 calc(var(--saturation-factor, 1)*100%) 68.4%;
     --discord-8th-bday-pink: hsl(var(--discord-8th-bday-pink-hsl)/1);
     --discord-8th-bday-pink-hsl: 316 calc(var(--saturation-factor, 1)*100%) 66.1%;
     --discord-8th-bday-purple: hsl(var(--discord-8th-bday-purple-hsl)/1);
@@ -98263,9 +98271,11 @@ html .tabBadge-h4HGed {
 
 .activitiesBirthdayIcon-1Ou-De {
     border-radius: 4px;
-    color: var(--discord-8th-bday-yellow);
-    background: -webkit-gradient(linear, left top, right top, from(var(--discord-8th-bday-purple)), to(var(--discord-8th-bday-pink)));
-    background: linear-gradient(90deg, var(--discord-8th-bday-purple), var(--discord-8th-bday-pink))
+    color: var(--discord-8th-bday-yellow)
+}
+
+.activitiesBirthdayIconLight-1QhKyv {
+    color: var(--discord-8th-bday-dark-blue)
 }
 
 .enable-forced-colors .searchBar-3TnChZ {
@@ -154363,4 +154373,4 @@ html .invoiceCancelRow-dVOR64 {
     flex-direction: column
 }
 
-/*# sourceMappingURL=40532.4bf9c1e848cca6f36b69.css.map*/
+/*# sourceMappingURL=40532.00b6a414aa2c7931a6b7.css.map*/
