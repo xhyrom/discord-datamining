@@ -51,16 +51,7 @@
     "triage": false,
     "pull": false
   },
-  "branches": [
-    {
-      "name": "master",
-      "commit": {
-        "sha": "5a21da8ca6516e747e60e124817ef715d89c6341",
-        "url": "https://api.github.com/repos/discord/slate-package-fork/commits/5a21da8ca6516e747e60e124817ef715d89c6341"
-      },
-      "protected": false
-    }
-  ],
+  "branches": [],
   "last5": {
     "commits": [
       {
