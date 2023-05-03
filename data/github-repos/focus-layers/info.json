@@ -67,8 +67,395 @@
   },
   "branches": [],
   "last5": {
-    "commits": [],
-    "releases": [],
+    "commits": [
+      {
+        "sha": "fbffee80a3daee810f9acc286973d27f00ffff6f",
+        "node_id": "MDY6Q29tbWl0MjU5MTcyNDU5OmZiZmZlZTgwYTNkYWVlODEwZjlhY2MyODY5NzNkMjdmMDBmZmZmNmY=",
+        "commit": {
+          "author": {
+            "name": "Emil Nordling",
+            "email": "ekala001@gmail.com",
+            "date": "2021-06-18T17:56:17Z"
+          },
+          "committer": {
+            "name": "GitHub",
+            "email": "noreply@github.com",
+            "date": "2021-06-18T17:56:17Z"
+          },
+          "message": "adds installation details (#22)",
+          "tree": {
+            "sha": "007dab75b402953f260ba1897f481bf465c832f4",
+            "url": "https://api.github.com/repos/discord/focus-layers/git/trees/007dab75b402953f260ba1897f481bf465c832f4"
+          },
+          "url": "https://api.github.com/repos/discord/focus-layers/git/commits/fbffee80a3daee810f9acc286973d27f00ffff6f",
+          "comment_count": 0,
+          "verification": {
+            "verified": true,
+            "reason": "valid",
+            "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsBcBAABCAAQBQJgzN5BCRBK7hj4Ov3rIwAA+bkIAAqccFsWA7RqBHZnYqzQnF8s\nSxq6tiq1242A574kqKD83aQmgOS9zKeK4IqXWy2ElZOHeCZgrXuzg2B8RaUtbohF\nSfcfRo/Giv134aOAUB/Cbw1SFjr8zpuik0KTxe8tWtsaN7ycd1wAWhj6M111JmxQ\nSCTrkPMWHMF8jlB1PYQHFfyb+3dcDUYeOptgDyUN1abOZN/x+7Ki4D+MYq8TbjAs\nnhoI2cAoi469X0Vv9V4Jk8tzQ4Bdl72Jd6lz2W4AmBPW4iQwMI3iugSShtnOkOJ4\nyJ1WOK7YMamnhWmDunCf5byhqwuVmPmUakd7TdODpLLZXhi2rpbs/qiDKUIce2g=\n=Uhux\n-----END PGP SIGNATURE-----\n",
+            "payload": "tree 007dab75b402953f260ba1897f481bf465c832f4\nparent e36120d7aa1b4a7c9fc79cbbab525a968e08fa42\nauthor Emil Nordling <ekala001@gmail.com> 1624038977 +0200\ncommitter GitHub <noreply@github.com> 1624038977 -0400\n\nadds installation details (#22)\n\n"
+          }
+        },
+        "url": "https://api.github.com/repos/discord/focus-layers/commits/fbffee80a3daee810f9acc286973d27f00ffff6f",
+        "author": {
+          "login": "EmilNordling",
+          "id": 8842821,
+          "node_id": "MDQ6VXNlcjg4NDI4MjE=",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/EmilNordling",
+          "type": "User",
+          "site_admin": false
+        },
+        "committer": {
+          "login": "web-flow",
+          "id": 19864447,
+          "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/web-flow",
+          "type": "User",
+          "site_admin": false
+        },
+        "parents": [
+          {
+            "sha": "e36120d7aa1b4a7c9fc79cbbab525a968e08fa42",
+            "url": "https://api.github.com/repos/discord/focus-layers/commits/e36120d7aa1b4a7c9fc79cbbab525a968e08fa42"
+          }
+        ]
+      },
+      {
+        "sha": "e36120d7aa1b4a7c9fc79cbbab525a968e08fa42",
+        "node_id": "MDY6Q29tbWl0MjU5MTcyNDU5OmUzNjEyMGQ3YWExYjRhN2M5ZmM3OWNiYmFiNTI1YTk2OGUwOGZhNDI=",
+        "commit": {
+          "author": {
+            "name": "dependabot[bot]",
+            "email": "49699333+dependabot[bot]@users.noreply.github.com",
+            "date": "2021-03-10T18:26:55Z"
+          },
+          "committer": {
+            "name": "GitHub",
+            "email": "noreply@github.com",
+            "date": "2021-03-10T18:26:55Z"
+          },
+          "message": "Bump elliptic from 6.5.3 to 6.5.4 (#17)\n\nBumps [elliptic](https://github.com/indutny/elliptic) from 6.5.3 to 6.5.4.\r\n- [Release notes](https://github.com/indutny/elliptic/releases)\r\n- [Commits](https://github.com/indutny/elliptic/compare/v6.5.3...v6.5.4)\r\n\r\nSigned-off-by: dependabot[bot] <support@github.com>\r\n\r\nCo-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>",
+          "tree": {
+            "sha": "d72eb550c6e3594d7f8447dc0208fc176912197f",
+            "url": "https://api.github.com/repos/discord/focus-layers/git/trees/d72eb550c6e3594d7f8447dc0208fc176912197f"
+          },
+          "url": "https://api.github.com/repos/discord/focus-layers/git/commits/e36120d7aa1b4a7c9fc79cbbab525a968e08fa42",
+          "comment_count": 0,
+          "verification": {
+            "verified": true,
+            "reason": "valid",
+            "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsBcBAABCAAQBQJgSQ9vCRBK7hj4Ov3rIwAAdHIIADMZmIJP8eLyrIczA0cOuZeX\nRSf12Rcc1CMgRLsWsn4QaBkelyssXMuGSV1V1RNwvr7QeiLHNVygArt3m/xu1wYK\nT+hwXlRvmyuyD9dM+S0EK7GQ7Ui+6ZEp0lyU1kwgxnmeDH+Ix3aJlsa4i0hWZ1T0\nEZ9okvE7dvpsO7WxuoMrJ4qOlqNM4NyKY82s+sK8qlHcNmlJXseRcM1BnkVEchtB\naDBTeUHTb9A5IUv9ix6goFQYedOSgN7P7DC5YDEH2S45eruy0ebNtMaGwekxqT/h\neK6FQg/YmlB0LGtVCvHnx77IXw1VXyEcQLZnylxecCBgUKnEDdI0jcy2U/YhjIQ=\n=yFbI\n-----END PGP SIGNATURE-----\n",
+            "payload": "tree d72eb550c6e3594d7f8447dc0208fc176912197f\nparent ea91a0f93435033ad6108b174d04e031308fe58e\nauthor dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com> 1615400815 -0500\ncommitter GitHub <noreply@github.com> 1615400815 -0500\n\nBump elliptic from 6.5.3 to 6.5.4 (#17)\n\nBumps [elliptic](https://github.com/indutny/elliptic) from 6.5.3 to 6.5.4.\r\n- [Release notes](https://github.com/indutny/elliptic/releases)\r\n- [Commits](https://github.com/indutny/elliptic/compare/v6.5.3...v6.5.4)\r\n\r\nSigned-off-by: dependabot[bot] <support@github.com>\r\n\r\nCo-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>"
+          }
+        },
+        "url": "https://api.github.com/repos/discord/focus-layers/commits/e36120d7aa1b4a7c9fc79cbbab525a968e08fa42",
+        "author": {
+          "login": "dependabot[bot]",
+          "id": 49699333,
+          "node_id": "MDM6Qm90NDk2OTkzMzM=",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/dependabot%5Bbot%5D",
+          "type": "Bot",
+          "site_admin": false
+        },
+        "committer": {
+          "login": "web-flow",
+          "id": 19864447,
+          "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/web-flow",
+          "type": "User",
+          "site_admin": false
+        },
+        "parents": [
+          {
+            "sha": "ea91a0f93435033ad6108b174d04e031308fe58e",
+            "url": "https://api.github.com/repos/discord/focus-layers/commits/ea91a0f93435033ad6108b174d04e031308fe58e"
+          }
+        ]
+      },
+      {
+        "sha": "ea91a0f93435033ad6108b174d04e031308fe58e",
+        "node_id": "MDY6Q29tbWl0MjU5MTcyNDU5OmVhOTFhMGY5MzQzNTAzM2FkNjEwOGIxNzRkMDRlMDMxMzA4ZmU1OGU=",
+        "commit": {
+          "author": {
+            "name": "faultyserver",
+            "email": "jon.egeland@discordapp.com",
+            "date": "2021-03-07T06:16:33Z"
+          },
+          "committer": {
+            "name": "faultyserver",
+            "email": "jon.egeland@discordapp.com",
+            "date": "2021-03-07T06:16:33Z"
+          },
+          "message": "v0.6.1 version bump",
+          "tree": {
+            "sha": "8bb95ccc0b15459f3f7d3b4ecca9c3cc9a783e7d",
+            "url": "https://api.github.com/repos/discord/focus-layers/git/trees/8bb95ccc0b15459f3f7d3b4ecca9c3cc9a783e7d"
+          },
+          "url": "https://api.github.com/repos/discord/focus-layers/git/commits/ea91a0f93435033ad6108b174d04e031308fe58e",
+          "comment_count": 0,
+          "verification": {
+            "verified": false,
+            "reason": "unsigned",
+            "signature": null,
+            "payload": null
+          }
+        },
+        "url": "https://api.github.com/repos/discord/focus-layers/commits/ea91a0f93435033ad6108b174d04e031308fe58e",
+        "author": {
+          "login": "faultyserver",
+          "id": 783733,
+          "node_id": "MDQ6VXNlcjc4MzczMw==",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/faultyserver",
+          "type": "User",
+          "site_admin": false
+        },
+        "committer": {
+          "login": "faultyserver",
+          "id": 783733,
+          "node_id": "MDQ6VXNlcjc4MzczMw==",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/faultyserver",
+          "type": "User",
+          "site_admin": false
+        },
+        "parents": [
+          {
+            "sha": "37ab5d74bcd243ddff1b15c48e9501ec9ec6e0ca",
+            "url": "https://api.github.com/repos/discord/focus-layers/commits/37ab5d74bcd243ddff1b15c48e9501ec9ec6e0ca"
+          }
+        ]
+      },
+      {
+        "sha": "37ab5d74bcd243ddff1b15c48e9501ec9ec6e0ca",
+        "node_id": "MDY6Q29tbWl0MjU5MTcyNDU5OjM3YWI1ZDc0YmNkMjQzZGRmZjFiMTVjNDhlOTUwMWVjOWVjNmUwY2E=",
+        "commit": {
+          "author": {
+            "name": "Jon",
+            "email": "jon.egeland@discordapp.com",
+            "date": "2021-03-07T06:15:37Z"
+          },
+          "committer": {
+            "name": "GitHub",
+            "email": "noreply@github.com",
+            "date": "2021-03-07T06:15:37Z"
+          },
+          "message": "Try fixing autoFocus again, and remove all rAF usage (#16)\n\nThis attempts to fix the problem with `autoFocus` by breaking out of React's Effect ordering and instead immediately disabling existing layers whenever a new layer is _about_ to be added (i.e., it runs inline with the component code, not in a callback to be run after the tree has been committed). Since `autoFocus` happens when the tree gets committed to the DOM, this should ensure that existing layers will not intercept that focus event.",
+          "tree": {
+            "sha": "4310bf11c407e3c0590c38b2b6122f1774a4881b",
+            "url": "https://api.github.com/repos/discord/focus-layers/git/trees/4310bf11c407e3c0590c38b2b6122f1774a4881b"
+          },
+          "url": "https://api.github.com/repos/discord/focus-layers/git/commits/37ab5d74bcd243ddff1b15c48e9501ec9ec6e0ca",
+          "comment_count": 0,
+          "verification": {
+            "verified": true,
+            "reason": "valid",
+            "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsBcBAABCAAQBQJgRG+JCRBK7hj4Ov3rIwAAdHIIADbNWeS9ukRqrQYmAFge1tV1\nCUk3eD05grZ+Ec0miEtH8SPPJnx5ojFESg+WQC4Xp0dMpQLJGFDxRo3IEGCaY4vg\njhgCC87OFkk4DETysBawJJiNBb9zYqbwv7uAsoJs8VMOUQPZvJvoVyeYfy3HMhMF\nryUi8tahhl7Y0JJLySLSvjMrRydhkw98Ejc0IzURsx1mEbaQIIJsdTpQ1c4NJm4+\n6ht3k1eTKv4OAMzhSIdd5ij1PkOeSGLFnIiayslSbdeGzjWhM/FLmH4iGSTGEjcB\nIsk3xgAs5NFIUy2IS9fAWfwXd9/ioONxwOt/pvUMSnw7sfqnRxs9ouYCWTS158w=\n=62jL\n-----END PGP SIGNATURE-----\n",
+            "payload": "tree 4310bf11c407e3c0590c38b2b6122f1774a4881b\nparent 80241418b86069ee5c6e4e80ae10c7aa80049d52\nauthor Jon <jon.egeland@discordapp.com> 1615097737 -0800\ncommitter GitHub <noreply@github.com> 1615097737 -0800\n\nTry fixing autoFocus again, and remove all rAF usage (#16)\n\nThis attempts to fix the problem with `autoFocus` by breaking out of React's Effect ordering and instead immediately disabling existing layers whenever a new layer is _about_ to be added (i.e., it runs inline with the component code, not in a callback to be run after the tree has been committed). Since `autoFocus` happens when the tree gets committed to the DOM, this should ensure that existing layers will not intercept that focus event."
+          }
+        },
+        "url": "https://api.github.com/repos/discord/focus-layers/commits/37ab5d74bcd243ddff1b15c48e9501ec9ec6e0ca",
+        "author": {
+          "login": "faultyserver",
+          "id": 783733,
+          "node_id": "MDQ6VXNlcjc4MzczMw==",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/faultyserver",
+          "type": "User",
+          "site_admin": false
+        },
+        "committer": {
+          "login": "web-flow",
+          "id": 19864447,
+          "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/web-flow",
+          "type": "User",
+          "site_admin": false
+        },
+        "parents": [
+          {
+            "sha": "80241418b86069ee5c6e4e80ae10c7aa80049d52",
+            "url": "https://api.github.com/repos/discord/focus-layers/commits/80241418b86069ee5c6e4e80ae10c7aa80049d52"
+          }
+        ]
+      },
+      {
+        "sha": "80241418b86069ee5c6e4e80ae10c7aa80049d52",
+        "node_id": "MDY6Q29tbWl0MjU5MTcyNDU5OjgwMjQxNDE4Yjg2MDY5ZWU1YzZlNGU4MGFlMTBjN2FhODAwNDlkNTI=",
+        "commit": {
+          "author": {
+            "name": "faultyserver",
+            "email": "jon.egeland@discordapp.com",
+            "date": "2021-03-04T19:26:25Z"
+          },
+          "committer": {
+            "name": "faultyserver",
+            "email": "jon.egeland@discordapp.com",
+            "date": "2021-03-04T19:26:25Z"
+          },
+          "message": "version bump",
+          "tree": {
+            "sha": "6ff53234d6f16dc32698a3fff9abdc35c1eae8aa",
+            "url": "https://api.github.com/repos/discord/focus-layers/git/trees/6ff53234d6f16dc32698a3fff9abdc35c1eae8aa"
+          },
+          "url": "https://api.github.com/repos/discord/focus-layers/git/commits/80241418b86069ee5c6e4e80ae10c7aa80049d52",
+          "comment_count": 0,
+          "verification": {
+            "verified": false,
+            "reason": "unsigned",
+            "signature": null,
+            "payload": null
+          }
+        },
+        "url": "https://api.github.com/repos/discord/focus-layers/commits/80241418b86069ee5c6e4e80ae10c7aa80049d52",
+        "author": {
+          "login": "faultyserver",
+          "id": 783733,
+          "node_id": "MDQ6VXNlcjc4MzczMw==",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/faultyserver",
+          "type": "User",
+          "site_admin": false
+        },
+        "committer": {
+          "login": "faultyserver",
+          "id": 783733,
+          "node_id": "MDQ6VXNlcjc4MzczMw==",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/faultyserver",
+          "type": "User",
+          "site_admin": false
+        },
+        "parents": [
+          {
+            "sha": "967bfbce6efb76b5b9275cdf1f98bdc713d236ed",
+            "url": "https://api.github.com/repos/discord/focus-layers/commits/967bfbce6efb76b5b9275cdf1f98bdc713d236ed"
+          }
+        ]
+      }
+    ],
+    "releases": [
+      {
+        "url": "https://api.github.com/repos/discord/focus-layers/releases/39390610",
+        "id": 39390610,
+        "author": {
+          "login": "faultyserver",
+          "id": 783733,
+          "node_id": "MDQ6VXNlcjc4MzczMw==",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/faultyserver",
+          "type": "User",
+          "site_admin": false
+        },
+        "node_id": "MDc6UmVsZWFzZTM5MzkwNjEw",
+        "tag_name": "v0.6.1",
+        "target_commitish": "master",
+        "name": "v0.6.1 - More autoFocus fixing and no more rAF",
+        "draft": false,
+        "prerelease": false,
+        "created_at": "2021-03-07T06:16:33Z",
+        "published_at": "2021-03-07T06:19:52Z",
+        "assets": [],
+        "body": "This version (hopefully) actually fixes the autoFocus problem by breaking out of React's `useEffect` callback ordering and updating layer enabled/disabled states immediately (#16)."
+      },
+      {
+        "url": "https://api.github.com/repos/discord/focus-layers/releases/39297920",
+        "id": 39297920,
+        "author": {
+          "login": "faultyserver",
+          "id": 783733,
+          "node_id": "MDQ6VXNlcjc4MzczMw==",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/faultyserver",
+          "type": "User",
+          "site_admin": false
+        },
+        "node_id": "MDc6UmVsZWFzZTM5Mjk3OTIw",
+        "tag_name": "v0.6.0",
+        "target_commitish": "master",
+        "name": "v0.6.0 - Returns, autofocus, and CJS support",
+        "draft": false,
+        "prerelease": false,
+        "created_at": "2021-03-04T19:26:25Z",
+        "published_at": "2021-03-04T19:33:33Z",
+        "assets": [],
+        "body": "- Re-added the ability to specify a different target for returning focus when a layer is popped (#7, #13)\r\n- Fixed issues with `autoFocus` appearing broken when a lock layer is added on top of another (#12, #14)\r\n- Added `useFocusLock` as a named export for better compatibility in CJS modules (#11, #15)\r\n"
+      },
+      {
+        "url": "https://api.github.com/repos/discord/focus-layers/releases/27043535",
+        "id": 27043535,
+        "author": {
+          "login": "faultyserver",
+          "id": 783733,
+          "node_id": "MDQ6VXNlcjc4MzczMw==",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/faultyserver",
+          "type": "User",
+          "site_admin": false
+        },
+        "node_id": "MDc6UmVsZWFzZTI3MDQzNTM1",
+        "tag_name": "v0.5.1",
+        "target_commitish": "master",
+        "name": "v0.5.1 - Allow disabling focus returns",
+        "draft": false,
+        "prerelease": false,
+        "created_at": "2020-05-29T18:29:28Z",
+        "published_at": "2020-05-29T18:30:45Z",
+        "assets": [],
+        "body": ""
+      },
+      {
+        "url": "https://api.github.com/repos/discord/focus-layers/releases/26931243",
+        "id": 26931243,
+        "author": {
+          "login": "faultyserver",
+          "id": 783733,
+          "node_id": "MDQ6VXNlcjc4MzczMw==",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/faultyserver",
+          "type": "User",
+          "site_admin": false
+        },
+        "node_id": "MDc6UmVsZWFzZTI2OTMxMjQz",
+        "tag_name": "v0.5.0",
+        "target_commitish": "master",
+        "name": "v0.5.0 - Documentation and edge cases",
+        "draft": false,
+        "prerelease": false,
+        "created_at": "2020-05-27T07:37:02Z",
+        "published_at": "2020-05-27T07:45:09Z",
+        "assets": [],
+        "body": "All components of the package are now documented with descriptive context. The code has been split up into multiple distinct modules to improve readability with those comments inline. Finally, a number of edge cases have been addressed to improve stability and fix incorrect behavior with various blur and refocus situations."
+      },
+      {
+        "url": "https://api.github.com/repos/discord/focus-layers/releases/26593111",
+        "id": 26593111,
+        "author": {
+          "login": "faultyserver",
+          "id": 783733,
+          "node_id": "MDQ6VXNlcjc4MzczMw==",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/faultyserver",
+          "type": "User",
+          "site_admin": false
+        },
+        "node_id": "MDc6UmVsZWFzZTI2NTkzMTEx",
+        "tag_name": "v0.4.1",
+        "target_commitish": "master",
+        "name": "",
+        "draft": false,
+        "prerelease": false,
+        "created_at": "2020-05-16T22:12:53Z",
+        "published_at": "2020-05-16T22:14:51Z",
+        "assets": [],
+        "body": ""
+      }
+    ],
     "issues": [],
     "pullRequests": []
   }

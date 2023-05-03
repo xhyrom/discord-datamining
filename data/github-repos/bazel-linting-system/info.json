@@ -53,7 +53,258 @@
   },
   "branches": [],
   "last5": {
-    "commits": [],
+    "commits": [
+      {
+        "sha": "5630a25c0ff504dc8fae677963315a495cf2ba2e",
+        "node_id": "MDY6Q29tbWl0Mjg3ODI0MzQ3OjU2MzBhMjVjMGZmNTA0ZGM4ZmFlNjc3OTYzMzE1YTQ5NWNmMmJhMmU=",
+        "commit": {
+          "author": {
+            "name": "Jonathon Belotti",
+            "email": "jonathon@canva.com",
+            "date": "2020-04-18T09:23:17Z"
+          },
+          "committer": {
+            "name": "GitHub",
+            "email": "noreply@github.com",
+            "date": "2020-04-18T09:23:17Z"
+          },
+          "message": "Update README to clarify limits of this project and how it relates to bazel-mypy-integration.",
+          "tree": {
+            "sha": "435ebfe8cb893b9965c09db13ee05939b5659fca",
+            "url": "https://api.github.com/repos/discord/bazel-linting-system/git/trees/435ebfe8cb893b9965c09db13ee05939b5659fca"
+          },
+          "url": "https://api.github.com/repos/discord/bazel-linting-system/git/commits/5630a25c0ff504dc8fae677963315a495cf2ba2e",
+          "comment_count": 0,
+          "verification": {
+            "verified": true,
+            "reason": "valid",
+            "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsBcBAABCAAQBQJemscFCRBK7hj4Ov3rIwAAdHIIAE7gncPH5+AQs18wx5AIkpLM\nZ6W8Ehf/7F1E1DQh3iYXB2iHmuQudY0ZaqGX/3nJ4M9LKBn/eKTtwE22i8YkSd/b\nVxkOzd27V4ovHdYQHOQftFy3FMV+PqHsAL2jaZQvp+e/Jo1S5bndwDja8+Pe+8Nc\nNG+zqFiuamr9hCTKAqJYD50muVklXlNLhPW4HG36uanFDu3XQLYdTCFtmdYA5s0w\nwjVjwm1+xHYP9fACKFuBV9mtHnW83+Tmk1zQ1Q/F7sO68P3gBs2fJVPNWXQfOrAE\nM1572eoRUDaNU4IBIeeU/OTLP+c9Z4xGMsCNWtsMYoV//TlYSUV8aIBO9CYfU2w=\n=BO2N\n-----END PGP SIGNATURE-----\n",
+            "payload": "tree 435ebfe8cb893b9965c09db13ee05939b5659fca\nparent 9359bb6742ae8ceaac31392e13f66382c2fdc6a4\nauthor Jonathon Belotti <jonathon@canva.com> 1587201797 +1000\ncommitter GitHub <noreply@github.com> 1587201797 +1000\n\nUpdate README to clarify limits of this project and how it relates to bazel-mypy-integration."
+          }
+        },
+        "url": "https://api.github.com/repos/discord/bazel-linting-system/commits/5630a25c0ff504dc8fae677963315a495cf2ba2e",
+        "author": null,
+        "committer": {
+          "login": "web-flow",
+          "id": 19864447,
+          "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/web-flow",
+          "type": "User",
+          "site_admin": false
+        },
+        "parents": [
+          {
+            "sha": "9359bb6742ae8ceaac31392e13f66382c2fdc6a4",
+            "url": "https://api.github.com/repos/discord/bazel-linting-system/commits/9359bb6742ae8ceaac31392e13f66382c2fdc6a4"
+          }
+        ]
+      },
+      {
+        "sha": "9359bb6742ae8ceaac31392e13f66382c2fdc6a4",
+        "node_id": "MDY6Q29tbWl0Mjg3ODI0MzQ3OjkzNTliYjY3NDJhZThjZWFhYzMxMzkyZTEzZjY2MzgyYzJmZGM2YTQ=",
+        "commit": {
+          "author": {
+            "name": "Jonathon Belotti",
+            "email": "jonathon@canva.com",
+            "date": "2020-04-12T09:56:39Z"
+          },
+          "committer": {
+            "name": "GitHub",
+            "email": "noreply@github.com",
+            "date": "2020-04-12T09:56:39Z"
+          },
+          "message": "Update README.md",
+          "tree": {
+            "sha": "0892ce3d4fbce50cb2c593409788486a31b731f0",
+            "url": "https://api.github.com/repos/discord/bazel-linting-system/git/trees/0892ce3d4fbce50cb2c593409788486a31b731f0"
+          },
+          "url": "https://api.github.com/repos/discord/bazel-linting-system/git/commits/9359bb6742ae8ceaac31392e13f66382c2fdc6a4",
+          "comment_count": 0,
+          "verification": {
+            "verified": true,
+            "reason": "valid",
+            "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsBcBAABCAAQBQJekuXXCRBK7hj4Ov3rIwAAdHIIABHjY/RGEkqww04EWZWAZFme\nkXXNR5oR/MDN62hXwGH+JBIohgIM9zmo5KX5p7ngQCwDXfnDJRJeiIgpHdOMQ8QT\n+1GT/gowKgZYoTaQxVKJ9GfaxZsP7Hkacg/hIVnLN/bUSu5wz14mCd2u2ip5W/h8\njN6MP/ViFLNgxY1CMd3b8R52z1yfAAHqstkIsDh9A5m0dKvsS+j0+9EcS+mDUFtP\nOjc0mLRS2HloISF1+3qiJJYYCTaCzObRo6SDC/7jFZ47SmpBolJisrC9mNexwti+\n/gtTBgxA1vrId0dqDpRQ3M9pJwxm9BtV3r0zFzflzTu4IiR6j83KMo0yGut1i+c=\n=l9Np\n-----END PGP SIGNATURE-----\n",
+            "payload": "tree 0892ce3d4fbce50cb2c593409788486a31b731f0\nparent a4d5ef89a64536f7f465c0c2bd33152162fb5ae1\nauthor Jonathon Belotti <jonathon@canva.com> 1586685399 +1000\ncommitter GitHub <noreply@github.com> 1586685399 +1000\n\nUpdate README.md"
+          }
+        },
+        "url": "https://api.github.com/repos/discord/bazel-linting-system/commits/9359bb6742ae8ceaac31392e13f66382c2fdc6a4",
+        "author": null,
+        "committer": {
+          "login": "web-flow",
+          "id": 19864447,
+          "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/web-flow",
+          "type": "User",
+          "site_admin": false
+        },
+        "parents": [
+          {
+            "sha": "a4d5ef89a64536f7f465c0c2bd33152162fb5ae1",
+            "url": "https://api.github.com/repos/discord/bazel-linting-system/commits/a4d5ef89a64536f7f465c0c2bd33152162fb5ae1"
+          }
+        ]
+      },
+      {
+        "sha": "a4d5ef89a64536f7f465c0c2bd33152162fb5ae1",
+        "node_id": "MDY6Q29tbWl0Mjg3ODI0MzQ3OmE0ZDVlZjg5YTY0NTM2ZjdmNDY1YzBjMmJkMzMxNTIxNjJmYjVhZTE=",
+        "commit": {
+          "author": {
+            "name": "Jonathon Belotti",
+            "email": "jonathon.bel.melbourne@gmail.com",
+            "date": "2020-04-12T09:51:13Z"
+          },
+          "committer": {
+            "name": "Jonathon Belotti",
+            "email": "jonathon.bel.melbourne@gmail.com",
+            "date": "2020-04-12T09:51:13Z"
+          },
+          "message": "add ability to use a linter for rust",
+          "tree": {
+            "sha": "4c5fa9fad7c4fac9c02b39cb106064b521c83f32",
+            "url": "https://api.github.com/repos/discord/bazel-linting-system/git/trees/4c5fa9fad7c4fac9c02b39cb106064b521c83f32"
+          },
+          "url": "https://api.github.com/repos/discord/bazel-linting-system/git/commits/a4d5ef89a64536f7f465c0c2bd33152162fb5ae1",
+          "comment_count": 0,
+          "verification": {
+            "verified": false,
+            "reason": "unsigned",
+            "signature": null,
+            "payload": null
+          }
+        },
+        "url": "https://api.github.com/repos/discord/bazel-linting-system/commits/a4d5ef89a64536f7f465c0c2bd33152162fb5ae1",
+        "author": {
+          "login": "thundergolfer-two",
+          "id": 82205434,
+          "node_id": "MDQ6VXNlcjgyMjA1NDM0",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/thundergolfer-two",
+          "type": "User",
+          "site_admin": false
+        },
+        "committer": {
+          "login": "thundergolfer-two",
+          "id": 82205434,
+          "node_id": "MDQ6VXNlcjgyMjA1NDM0",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/thundergolfer-two",
+          "type": "User",
+          "site_admin": false
+        },
+        "parents": [
+          {
+            "sha": "f1b8ea37a74aac489c4e391f3f47056a207f66ea",
+            "url": "https://api.github.com/repos/discord/bazel-linting-system/commits/f1b8ea37a74aac489c4e391f3f47056a207f66ea"
+          }
+        ]
+      },
+      {
+        "sha": "f1b8ea37a74aac489c4e391f3f47056a207f66ea",
+        "node_id": "MDY6Q29tbWl0Mjg3ODI0MzQ3OmYxYjhlYTM3YTc0YWFjNDg5YzRlMzkxZjNmNDcwNTZhMjA3ZjY2ZWE=",
+        "commit": {
+          "author": {
+            "name": "Jonathon Belotti",
+            "email": "jonathon@canva.com",
+            "date": "2020-04-12T09:46:33Z"
+          },
+          "committer": {
+            "name": "GitHub",
+            "email": "noreply@github.com",
+            "date": "2020-04-12T09:46:33Z"
+          },
+          "message": "Merge pull request #11 from thundergolfer/jonathon--remove-need-for-bazel-query-in-apply",
+          "tree": {
+            "sha": "77edf55ed6b7b16188ea37095630c1974069704b",
+            "url": "https://api.github.com/repos/discord/bazel-linting-system/git/trees/77edf55ed6b7b16188ea37095630c1974069704b"
+          },
+          "url": "https://api.github.com/repos/discord/bazel-linting-system/git/commits/f1b8ea37a74aac489c4e391f3f47056a207f66ea",
+          "comment_count": 0,
+          "verification": {
+            "verified": true,
+            "reason": "valid",
+            "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsBcBAABCAAQBQJekuN5CRBK7hj4Ov3rIwAAdHIIACPnnY3SR/QtO0MgyII3RY/b\ny8byAhm0MrFUZaYq+QZv1Iie+t2AoVukkOV53nWAw18QnTvah1IbHEN4ab5fEO2b\nKjJWehIqnqDHdj/MG1D6GVDhQSEHk99c+UqZ33TwEqj+C6a9iwd2+QpERn48pakr\n7Vn7aJpKx9vUEyaSvf/X132c1QeuF5xmSgz/aJ8/mDkoRMrUEORQ5VnW8xizLVoy\njqPnJ0G0KFNxb+v+yonJqcZL8C+pRSkvw4OsyGVByTnruOjtkMAyaWGGuUGWK68B\nUJzX9UrwxI1dmOYJpyWl1WktXUgt3Rj798op/gb42wqEj6RF/ngQTuV024thz3Q=\n=+BtQ\n-----END PGP SIGNATURE-----\n",
+            "payload": "tree 77edf55ed6b7b16188ea37095630c1974069704b\nparent 35376af7a1dc21cdf46bee3fc793670a6f7807fe\nparent 7701c83f685c4b96d5835f185095ce976d69801f\nauthor Jonathon Belotti <jonathon@canva.com> 1586684793 +1000\ncommitter GitHub <noreply@github.com> 1586684793 +1000\n\nMerge pull request #11 from thundergolfer/jonathon--remove-need-for-bazel-query-in-apply\n\n"
+          }
+        },
+        "url": "https://api.github.com/repos/discord/bazel-linting-system/commits/f1b8ea37a74aac489c4e391f3f47056a207f66ea",
+        "author": null,
+        "committer": {
+          "login": "web-flow",
+          "id": 19864447,
+          "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/web-flow",
+          "type": "User",
+          "site_admin": false
+        },
+        "parents": [
+          {
+            "sha": "35376af7a1dc21cdf46bee3fc793670a6f7807fe",
+            "url": "https://api.github.com/repos/discord/bazel-linting-system/commits/35376af7a1dc21cdf46bee3fc793670a6f7807fe"
+          },
+          {
+            "sha": "7701c83f685c4b96d5835f185095ce976d69801f",
+            "url": "https://api.github.com/repos/discord/bazel-linting-system/commits/7701c83f685c4b96d5835f185095ce976d69801f"
+          }
+        ]
+      },
+      {
+        "sha": "7701c83f685c4b96d5835f185095ce976d69801f",
+        "node_id": "MDY6Q29tbWl0Mjg3ODI0MzQ3Ojc3MDFjODNmNjg1YzRiOTZkNTgzNWYxODUwOTVjZTk3NmQ2OTgwMWY=",
+        "commit": {
+          "author": {
+            "name": "Jonathon Belotti",
+            "email": "jonathon.bel.melbourne@gmail.com",
+            "date": "2020-04-12T09:41:40Z"
+          },
+          "committer": {
+            "name": "Jonathon Belotti",
+            "email": "jonathon.bel.melbourne@gmail.com",
+            "date": "2020-04-12T09:43:26Z"
+          },
+          "message": "instead of taking in list of bzl labels, just grep for the *unique* '__linting_system' dirs",
+          "tree": {
+            "sha": "77edf55ed6b7b16188ea37095630c1974069704b",
+            "url": "https://api.github.com/repos/discord/bazel-linting-system/git/trees/77edf55ed6b7b16188ea37095630c1974069704b"
+          },
+          "url": "https://api.github.com/repos/discord/bazel-linting-system/git/commits/7701c83f685c4b96d5835f185095ce976d69801f",
+          "comment_count": 0,
+          "verification": {
+            "verified": false,
+            "reason": "unsigned",
+            "signature": null,
+            "payload": null
+          }
+        },
+        "url": "https://api.github.com/repos/discord/bazel-linting-system/commits/7701c83f685c4b96d5835f185095ce976d69801f",
+        "author": {
+          "login": "thundergolfer-two",
+          "id": 82205434,
+          "node_id": "MDQ6VXNlcjgyMjA1NDM0",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/thundergolfer-two",
+          "type": "User",
+          "site_admin": false
+        },
+        "committer": {
+          "login": "thundergolfer-two",
+          "id": 82205434,
+          "node_id": "MDQ6VXNlcjgyMjA1NDM0",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/thundergolfer-two",
+          "type": "User",
+          "site_admin": false
+        },
+        "parents": [
+          {
+            "sha": "35376af7a1dc21cdf46bee3fc793670a6f7807fe",
+            "url": "https://api.github.com/repos/discord/bazel-linting-system/commits/35376af7a1dc21cdf46bee3fc793670a6f7807fe"
+          }
+        ]
+      }
+    ],
     "releases": [],
     "issues": [],
     "pullRequests": []

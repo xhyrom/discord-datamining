@@ -30,7 +30,7 @@
   "has_wiki": true,
   "has_pages": false,
   "has_discussions": false,
-  "forks_count": 36,
+  "forks_count": 37,
   "archived": false,
   "disabled": false,
   "open_issues_count": 0,
@@ -46,7 +46,7 @@
   "web_commit_signoff_required": false,
   "topics": [],
   "visibility": "public",
-  "forks": 36,
+  "forks": 37,
   "open_issues": 0,
   "watchers": 27,
   "default_branch": "master",
@@ -57,7 +57,16 @@
     "triage": false,
     "pull": false
   },
-  "branches": [],
+  "branches": [
+    {
+      "name": "master",
+      "commit": {
+        "sha": "2ae4b2888165a393dfb6382168825fddf00c27b9",
+        "url": "https://api.github.com/repos/discord/rapidxml/commits/2ae4b2888165a393dfb6382168825fddf00c27b9"
+      },
+      "protected": false
+    }
+  ],
   "last5": {
     "commits": [
       {
