@@ -51,7 +51,16 @@
     "triage": false,
     "pull": false
   },
-  "branches": [],
+  "branches": [
+    {
+      "name": "master",
+      "commit": {
+        "sha": "22a459ec207d1500aa9270fcc3fb729cf5cff2ca",
+        "url": "https://api.github.com/repos/discord/lilliput-rs/commits/22a459ec207d1500aa9270fcc3fb729cf5cff2ca"
+      },
+      "protected": false
+    }
+  ],
   "last5": {
     "commits": [
       {

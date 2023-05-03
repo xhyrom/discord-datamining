@@ -574,6 +574,997 @@
         "state_reason": null
       }
     ],
-    "pullRequests": []
+    "pullRequests": [
+      {
+        "url": "https://api.github.com/repos/discord/react-native-orientation/pulls/6",
+        "id": 1156829404,
+        "node_id": "PR_kwDOGGxHvM5E89Dc",
+        "number": 6,
+        "state": "closed",
+        "locked": false,
+        "title": "[android] emit orientation degrees changes to JS",
+        "user": {
+          "login": "donaldchen",
+          "id": 3821698,
+          "node_id": "MDQ6VXNlcjM4MjE2OTg=",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/donaldchen",
+          "type": "User",
+          "site_admin": false
+        },
+        "body": "Emit the orientation degrees changes from Kotlin to JS, so the JS can determine the device orientation (different from the app orientation). That way, the react native app can request changing an orientation without locking it by\r\n- first locking to an orientation\r\n- waiting for the device orientation to match the orientation lock\r\n- then unlocking the orientation\r\n\r\nlike in https://stackoverflow.com/questions/22848222/toggling-fullscreen-orientation-like-youtube/23489227#23489227",
+        "created_at": "2022-12-09T23:13:52Z",
+        "updated_at": "2023-01-11T22:02:17Z",
+        "closed_at": "2023-01-11T22:02:17Z",
+        "merged_at": "2023-01-11T22:02:17Z",
+        "merge_commit_sha": "02916e4ec4fed14fa636c749f1f4acfc68534ede",
+        "assignee": null,
+        "assignees": [],
+        "requested_reviewers": [],
+        "requested_teams": [],
+        "labels": [],
+        "milestone": null,
+        "draft": false,
+        "head": {
+          "label": "discord:donaldchen/orientation-unlock",
+          "ref": "donaldchen/orientation-unlock",
+          "sha": "178d1ab5ff8b61e2003a43ea9625bb724306229b",
+          "user": {
+            "login": "discord",
+            "id": 1965106,
+            "node_id": "MDEyOk9yZ2FuaXphdGlvbjE5NjUxMDY=",
+            "gravatar_id": "",
+            "url": "https://api.github.com/users/discord",
+            "type": "Organization",
+            "site_admin": false
+          },
+          "repo": {
+            "id": 409749436,
+            "node_id": "R_kgDOGGxHvA",
+            "name": "react-native-orientation",
+            "full_name": "discord/react-native-orientation",
+            "private": false,
+            "owner": {
+              "login": "discord",
+              "id": 1965106,
+              "node_id": "MDEyOk9yZ2FuaXphdGlvbjE5NjUxMDY=",
+              "gravatar_id": "",
+              "url": "https://api.github.com/users/discord",
+              "type": "Organization",
+              "site_admin": false
+            },
+            "description": "Listen to device orientation changes in react-native and set preferred orientation on screen to screen basis.",
+            "fork": true,
+            "url": "https://api.github.com/repos/discord/react-native-orientation",
+            "created_at": "2021-09-23T21:32:45Z",
+            "updated_at": "2022-12-28T20:05:26Z",
+            "pushed_at": "2023-02-18T21:37:20Z",
+            "homepage": "https://www.npmjs.com/package/react-native-orientation",
+            "size": 290,
+            "stargazers_count": 1,
+            "watchers_count": 1,
+            "language": null,
+            "has_issues": false,
+            "has_projects": true,
+            "has_downloads": true,
+            "has_wiki": true,
+            "has_pages": false,
+            "has_discussions": false,
+            "forks_count": 8,
+            "archived": false,
+            "disabled": false,
+            "open_issues_count": 1,
+            "license": {
+              "key": "isc",
+              "name": "ISC License",
+              "spdx_id": "ISC",
+              "url": "https://api.github.com/licenses/isc",
+              "node_id": "MDc6TGljZW5zZTEw"
+            },
+            "allow_forking": true,
+            "is_template": false,
+            "web_commit_signoff_required": false,
+            "topics": [],
+            "visibility": "public",
+            "forks": 8,
+            "open_issues": 1,
+            "watchers": 1,
+            "default_branch": "master"
+          }
+        },
+        "base": {
+          "label": "discord:3.1.3-discord-1",
+          "ref": "3.1.3-discord-1",
+          "sha": "6531db3ea5f5768b0155e9598105d79356797462",
+          "user": {
+            "login": "discord",
+            "id": 1965106,
+            "node_id": "MDEyOk9yZ2FuaXphdGlvbjE5NjUxMDY=",
+            "gravatar_id": "",
+            "url": "https://api.github.com/users/discord",
+            "type": "Organization",
+            "site_admin": false
+          },
+          "repo": {
+            "id": 409749436,
+            "node_id": "R_kgDOGGxHvA",
+            "name": "react-native-orientation",
+            "full_name": "discord/react-native-orientation",
+            "private": false,
+            "owner": {
+              "login": "discord",
+              "id": 1965106,
+              "node_id": "MDEyOk9yZ2FuaXphdGlvbjE5NjUxMDY=",
+              "gravatar_id": "",
+              "url": "https://api.github.com/users/discord",
+              "type": "Organization",
+              "site_admin": false
+            },
+            "description": "Listen to device orientation changes in react-native and set preferred orientation on screen to screen basis.",
+            "fork": true,
+            "url": "https://api.github.com/repos/discord/react-native-orientation",
+            "created_at": "2021-09-23T21:32:45Z",
+            "updated_at": "2022-12-28T20:05:26Z",
+            "pushed_at": "2023-02-18T21:37:20Z",
+            "homepage": "https://www.npmjs.com/package/react-native-orientation",
+            "size": 290,
+            "stargazers_count": 1,
+            "watchers_count": 1,
+            "language": null,
+            "has_issues": false,
+            "has_projects": true,
+            "has_downloads": true,
+            "has_wiki": true,
+            "has_pages": false,
+            "has_discussions": false,
+            "forks_count": 8,
+            "archived": false,
+            "disabled": false,
+            "open_issues_count": 1,
+            "license": {
+              "key": "isc",
+              "name": "ISC License",
+              "spdx_id": "ISC",
+              "url": "https://api.github.com/licenses/isc",
+              "node_id": "MDc6TGljZW5zZTEw"
+            },
+            "allow_forking": true,
+            "is_template": false,
+            "web_commit_signoff_required": false,
+            "topics": [],
+            "visibility": "public",
+            "forks": 8,
+            "open_issues": 1,
+            "watchers": 1,
+            "default_branch": "master"
+          }
+        },
+        "_links": {
+          "self": {
+            "href": "https://api.github.com/repos/discord/react-native-orientation/pulls/6"
+          },
+          "html": {
+            "href": "https://github.com/discord/react-native-orientation/pull/6"
+          },
+          "issue": {
+            "href": "https://api.github.com/repos/discord/react-native-orientation/issues/6"
+          },
+          "comments": {
+            "href": "https://api.github.com/repos/discord/react-native-orientation/issues/6/comments"
+          },
+          "review_comments": {
+            "href": "https://api.github.com/repos/discord/react-native-orientation/pulls/6/comments"
+          },
+          "review_comment": {
+            "href": "https://api.github.com/repos/discord/react-native-orientation/pulls/comments{/number}"
+          },
+          "commits": {
+            "href": "https://api.github.com/repos/discord/react-native-orientation/pulls/6/commits"
+          },
+          "statuses": {
+            "href": "https://api.github.com/repos/discord/react-native-orientation/statuses/178d1ab5ff8b61e2003a43ea9625bb724306229b"
+          }
+        },
+        "author_association": "NONE",
+        "auto_merge": null,
+        "active_lock_reason": null
+      },
+      {
+        "url": "https://api.github.com/repos/discord/react-native-orientation/pulls/5",
+        "id": 1137907638,
+        "node_id": "PR_kwDOGGxHvM5D0xe2",
+        "number": 5,
+        "state": "closed",
+        "locked": false,
+        "title": "[android] Send orientation change event on resume",
+        "user": {
+          "login": "huderlem",
+          "id": 2229288,
+          "node_id": "MDQ6VXNlcjIyMjkyODg=",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/huderlem",
+          "type": "User",
+          "site_admin": false
+        },
+        "body": "Android doesn't trigger an orientation-change event when the orientation changed while the activity is backgrounded.  Sending an orientation-change event when resuming the app ensures the latest orientation is emitted to the React context.\r\n\r\nCreated a `util` package to house some orientation-conversion logic.",
+        "created_at": "2022-11-28T17:57:31Z",
+        "updated_at": "2022-11-28T20:28:27Z",
+        "closed_at": "2022-11-28T20:28:27Z",
+        "merged_at": "2022-11-28T20:28:27Z",
+        "merge_commit_sha": "6531db3ea5f5768b0155e9598105d79356797462",
+        "assignee": null,
+        "assignees": [],
+        "requested_reviewers": [
+          {
+            "login": "nealmanaktola",
+            "id": 1707258,
+            "node_id": "MDQ6VXNlcjE3MDcyNTg=",
+            "gravatar_id": "",
+            "url": "https://api.github.com/users/nealmanaktola",
+            "type": "User",
+            "site_admin": false
+          }
+        ],
+        "requested_teams": [],
+        "labels": [],
+        "milestone": null,
+        "draft": false,
+        "head": {
+          "label": "huderlem:huderlem/fix-android-resume",
+          "ref": "huderlem/fix-android-resume",
+          "sha": "d872c5b1f270b3f5d34491920692415642ba18f5",
+          "user": {
+            "login": "huderlem",
+            "id": 2229288,
+            "node_id": "MDQ6VXNlcjIyMjkyODg=",
+            "gravatar_id": "",
+            "url": "https://api.github.com/users/huderlem",
+            "type": "User",
+            "site_admin": false
+          },
+          "repo": {
+            "id": 571703823,
+            "node_id": "R_kgDOIhOCDw",
+            "name": "react-native-orientation",
+            "full_name": "huderlem/react-native-orientation",
+            "private": false,
+            "owner": {
+              "login": "huderlem",
+              "id": 2229288,
+              "node_id": "MDQ6VXNlcjIyMjkyODg=",
+              "gravatar_id": "",
+              "url": "https://api.github.com/users/huderlem",
+              "type": "User",
+              "site_admin": false
+            },
+            "description": "Listen to device orientation changes in react-native and set preferred orientation on screen to screen basis.",
+            "fork": true,
+            "url": "https://api.github.com/repos/huderlem/react-native-orientation",
+            "created_at": "2022-11-28T17:54:00Z",
+            "updated_at": "2021-09-23T21:32:47Z",
+            "pushed_at": "2022-11-28T20:24:38Z",
+            "homepage": "https://www.npmjs.com/package/react-native-orientation",
+            "size": 259,
+            "stargazers_count": 0,
+            "watchers_count": 0,
+            "language": null,
+            "has_issues": false,
+            "has_projects": true,
+            "has_downloads": true,
+            "has_wiki": true,
+            "has_pages": false,
+            "has_discussions": false,
+            "forks_count": 0,
+            "archived": false,
+            "disabled": false,
+            "open_issues_count": 0,
+            "license": {
+              "key": "isc",
+              "name": "ISC License",
+              "spdx_id": "ISC",
+              "url": "https://api.github.com/licenses/isc",
+              "node_id": "MDc6TGljZW5zZTEw"
+            },
+            "allow_forking": true,
+            "is_template": false,
+            "web_commit_signoff_required": false,
+            "topics": [],
+            "visibility": "public",
+            "forks": 0,
+            "open_issues": 0,
+            "watchers": 0,
+            "default_branch": "master"
+          }
+        },
+        "base": {
+          "label": "discord:3.1.3-discord-1",
+          "ref": "3.1.3-discord-1",
+          "sha": "e170a023a88571c06cc0121f2433cb6f66919b6e",
+          "user": {
+            "login": "discord",
+            "id": 1965106,
+            "node_id": "MDEyOk9yZ2FuaXphdGlvbjE5NjUxMDY=",
+            "gravatar_id": "",
+            "url": "https://api.github.com/users/discord",
+            "type": "Organization",
+            "site_admin": false
+          },
+          "repo": {
+            "id": 409749436,
+            "node_id": "R_kgDOGGxHvA",
+            "name": "react-native-orientation",
+            "full_name": "discord/react-native-orientation",
+            "private": false,
+            "owner": {
+              "login": "discord",
+              "id": 1965106,
+              "node_id": "MDEyOk9yZ2FuaXphdGlvbjE5NjUxMDY=",
+              "gravatar_id": "",
+              "url": "https://api.github.com/users/discord",
+              "type": "Organization",
+              "site_admin": false
+            },
+            "description": "Listen to device orientation changes in react-native and set preferred orientation on screen to screen basis.",
+            "fork": true,
+            "url": "https://api.github.com/repos/discord/react-native-orientation",
+            "created_at": "2021-09-23T21:32:45Z",
+            "updated_at": "2022-12-28T20:05:26Z",
+            "pushed_at": "2023-02-18T21:37:20Z",
+            "homepage": "https://www.npmjs.com/package/react-native-orientation",
+            "size": 290,
+            "stargazers_count": 1,
+            "watchers_count": 1,
+            "language": null,
+            "has_issues": false,
+            "has_projects": true,
+            "has_downloads": true,
+            "has_wiki": true,
+            "has_pages": false,
+            "has_discussions": false,
+            "forks_count": 8,
+            "archived": false,
+            "disabled": false,
+            "open_issues_count": 1,
+            "license": {
+              "key": "isc",
+              "name": "ISC License",
+              "spdx_id": "ISC",
+              "url": "https://api.github.com/licenses/isc",
+              "node_id": "MDc6TGljZW5zZTEw"
+            },
+            "allow_forking": true,
+            "is_template": false,
+            "web_commit_signoff_required": false,
+            "topics": [],
+            "visibility": "public",
+            "forks": 8,
+            "open_issues": 1,
+            "watchers": 1,
+            "default_branch": "master"
+          }
+        },
+        "_links": {
+          "self": {
+            "href": "https://api.github.com/repos/discord/react-native-orientation/pulls/5"
+          },
+          "html": {
+            "href": "https://github.com/discord/react-native-orientation/pull/5"
+          },
+          "issue": {
+            "href": "https://api.github.com/repos/discord/react-native-orientation/issues/5"
+          },
+          "comments": {
+            "href": "https://api.github.com/repos/discord/react-native-orientation/issues/5/comments"
+          },
+          "review_comments": {
+            "href": "https://api.github.com/repos/discord/react-native-orientation/pulls/5/comments"
+          },
+          "review_comment": {
+            "href": "https://api.github.com/repos/discord/react-native-orientation/pulls/comments{/number}"
+          },
+          "commits": {
+            "href": "https://api.github.com/repos/discord/react-native-orientation/pulls/5/commits"
+          },
+          "statuses": {
+            "href": "https://api.github.com/repos/discord/react-native-orientation/statuses/d872c5b1f270b3f5d34491920692415642ba18f5"
+          }
+        },
+        "author_association": "NONE",
+        "auto_merge": null,
+        "active_lock_reason": null
+      },
+      {
+        "url": "https://api.github.com/repos/discord/react-native-orientation/pulls/4",
+        "id": 1111381763,
+        "node_id": "PR_kwDOGGxHvM5CPlcD",
+        "number": 4,
+        "state": "closed",
+        "locked": false,
+        "title": "expose ignoreAutoRotate",
+        "user": {
+          "login": "nealmanaktola",
+          "id": 1707258,
+          "node_id": "MDQ6VXNlcjE3MDcyNTg=",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/nealmanaktola",
+          "type": "User",
+          "site_admin": false
+        },
+        "body": "Exposes the native method. It only exists for android thus the platform check",
+        "created_at": "2022-11-04T22:49:10Z",
+        "updated_at": "2022-11-04T23:41:04Z",
+        "closed_at": "2022-11-04T23:38:46Z",
+        "merged_at": "2022-11-04T23:38:46Z",
+        "merge_commit_sha": "e170a023a88571c06cc0121f2433cb6f66919b6e",
+        "assignee": null,
+        "assignees": [],
+        "requested_reviewers": [],
+        "requested_teams": [],
+        "labels": [],
+        "milestone": null,
+        "draft": false,
+        "head": {
+          "label": "discord:nealm/add-ignore-auto-rotate",
+          "ref": "nealm/add-ignore-auto-rotate",
+          "sha": "48b14720d8c891ae821e81831341198337d4f679",
+          "user": {
+            "login": "discord",
+            "id": 1965106,
+            "node_id": "MDEyOk9yZ2FuaXphdGlvbjE5NjUxMDY=",
+            "gravatar_id": "",
+            "url": "https://api.github.com/users/discord",
+            "type": "Organization",
+            "site_admin": false
+          },
+          "repo": {
+            "id": 409749436,
+            "node_id": "R_kgDOGGxHvA",
+            "name": "react-native-orientation",
+            "full_name": "discord/react-native-orientation",
+            "private": false,
+            "owner": {
+              "login": "discord",
+              "id": 1965106,
+              "node_id": "MDEyOk9yZ2FuaXphdGlvbjE5NjUxMDY=",
+              "gravatar_id": "",
+              "url": "https://api.github.com/users/discord",
+              "type": "Organization",
+              "site_admin": false
+            },
+            "description": "Listen to device orientation changes in react-native and set preferred orientation on screen to screen basis.",
+            "fork": true,
+            "url": "https://api.github.com/repos/discord/react-native-orientation",
+            "created_at": "2021-09-23T21:32:45Z",
+            "updated_at": "2022-12-28T20:05:26Z",
+            "pushed_at": "2023-02-18T21:37:20Z",
+            "homepage": "https://www.npmjs.com/package/react-native-orientation",
+            "size": 290,
+            "stargazers_count": 1,
+            "watchers_count": 1,
+            "language": null,
+            "has_issues": false,
+            "has_projects": true,
+            "has_downloads": true,
+            "has_wiki": true,
+            "has_pages": false,
+            "has_discussions": false,
+            "forks_count": 8,
+            "archived": false,
+            "disabled": false,
+            "open_issues_count": 1,
+            "license": {
+              "key": "isc",
+              "name": "ISC License",
+              "spdx_id": "ISC",
+              "url": "https://api.github.com/licenses/isc",
+              "node_id": "MDc6TGljZW5zZTEw"
+            },
+            "allow_forking": true,
+            "is_template": false,
+            "web_commit_signoff_required": false,
+            "topics": [],
+            "visibility": "public",
+            "forks": 8,
+            "open_issues": 1,
+            "watchers": 1,
+            "default_branch": "master"
+          }
+        },
+        "base": {
+          "label": "discord:3.1.3-discord-1",
+          "ref": "3.1.3-discord-1",
+          "sha": "bf1a3f782f4e8e3c8ec887a245b6fa5187640da2",
+          "user": {
+            "login": "discord",
+            "id": 1965106,
+            "node_id": "MDEyOk9yZ2FuaXphdGlvbjE5NjUxMDY=",
+            "gravatar_id": "",
+            "url": "https://api.github.com/users/discord",
+            "type": "Organization",
+            "site_admin": false
+          },
+          "repo": {
+            "id": 409749436,
+            "node_id": "R_kgDOGGxHvA",
+            "name": "react-native-orientation",
+            "full_name": "discord/react-native-orientation",
+            "private": false,
+            "owner": {
+              "login": "discord",
+              "id": 1965106,
+              "node_id": "MDEyOk9yZ2FuaXphdGlvbjE5NjUxMDY=",
+              "gravatar_id": "",
+              "url": "https://api.github.com/users/discord",
+              "type": "Organization",
+              "site_admin": false
+            },
+            "description": "Listen to device orientation changes in react-native and set preferred orientation on screen to screen basis.",
+            "fork": true,
+            "url": "https://api.github.com/repos/discord/react-native-orientation",
+            "created_at": "2021-09-23T21:32:45Z",
+            "updated_at": "2022-12-28T20:05:26Z",
+            "pushed_at": "2023-02-18T21:37:20Z",
+            "homepage": "https://www.npmjs.com/package/react-native-orientation",
+            "size": 290,
+            "stargazers_count": 1,
+            "watchers_count": 1,
+            "language": null,
+            "has_issues": false,
+            "has_projects": true,
+            "has_downloads": true,
+            "has_wiki": true,
+            "has_pages": false,
+            "has_discussions": false,
+            "forks_count": 8,
+            "archived": false,
+            "disabled": false,
+            "open_issues_count": 1,
+            "license": {
+              "key": "isc",
+              "name": "ISC License",
+              "spdx_id": "ISC",
+              "url": "https://api.github.com/licenses/isc",
+              "node_id": "MDc6TGljZW5zZTEw"
+            },
+            "allow_forking": true,
+            "is_template": false,
+            "web_commit_signoff_required": false,
+            "topics": [],
+            "visibility": "public",
+            "forks": 8,
+            "open_issues": 1,
+            "watchers": 1,
+            "default_branch": "master"
+          }
+        },
+        "_links": {
+          "self": {
+            "href": "https://api.github.com/repos/discord/react-native-orientation/pulls/4"
+          },
+          "html": {
+            "href": "https://github.com/discord/react-native-orientation/pull/4"
+          },
+          "issue": {
+            "href": "https://api.github.com/repos/discord/react-native-orientation/issues/4"
+          },
+          "comments": {
+            "href": "https://api.github.com/repos/discord/react-native-orientation/issues/4/comments"
+          },
+          "review_comments": {
+            "href": "https://api.github.com/repos/discord/react-native-orientation/pulls/4/comments"
+          },
+          "review_comment": {
+            "href": "https://api.github.com/repos/discord/react-native-orientation/pulls/comments{/number}"
+          },
+          "commits": {
+            "href": "https://api.github.com/repos/discord/react-native-orientation/pulls/4/commits"
+          },
+          "statuses": {
+            "href": "https://api.github.com/repos/discord/react-native-orientation/statuses/48b14720d8c891ae821e81831341198337d4f679"
+          }
+        },
+        "author_association": "COLLABORATOR",
+        "auto_merge": null,
+        "active_lock_reason": null
+      },
+      {
+        "url": "https://api.github.com/repos/discord/react-native-orientation/pulls/3",
+        "id": 1072009390,
+        "node_id": "PR_kwDOGGxHvM4_5ZCu",
+        "number": 3,
+        "state": "closed",
+        "locked": false,
+        "title": "supporting orientation locking on iOS 16",
+        "user": {
+          "login": "donaldchen",
+          "id": 3821698,
+          "node_id": "MDQ6VXNlcjM4MjE2OTg=",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/donaldchen",
+          "type": "User",
+          "site_admin": false
+        },
+        "body": "Use the new iOS 16 APIs for locking orientation.",
+        "created_at": "2022-09-30T00:07:19Z",
+        "updated_at": "2023-02-18T21:37:20Z",
+        "closed_at": "2022-10-07T16:44:19Z",
+        "merged_at": "2022-10-07T16:44:18Z",
+        "merge_commit_sha": "bf1a3f782f4e8e3c8ec887a245b6fa5187640da2",
+        "assignee": null,
+        "assignees": [],
+        "requested_reviewers": [
+          {
+            "login": "adgarcia",
+            "id": 1191944,
+            "node_id": "MDQ6VXNlcjExOTE5NDQ=",
+            "gravatar_id": "",
+            "url": "https://api.github.com/users/adgarcia",
+            "type": "User",
+            "site_admin": false
+          }
+        ],
+        "requested_teams": [],
+        "labels": [],
+        "milestone": null,
+        "draft": false,
+        "head": {
+          "label": "discord:orientation-ios-16",
+          "ref": "orientation-ios-16",
+          "sha": "3b6d151831310ad6ad5cd11fc8201c31be43b91d",
+          "user": {
+            "login": "discord",
+            "id": 1965106,
+            "node_id": "MDEyOk9yZ2FuaXphdGlvbjE5NjUxMDY=",
+            "gravatar_id": "",
+            "url": "https://api.github.com/users/discord",
+            "type": "Organization",
+            "site_admin": false
+          },
+          "repo": {
+            "id": 409749436,
+            "node_id": "R_kgDOGGxHvA",
+            "name": "react-native-orientation",
+            "full_name": "discord/react-native-orientation",
+            "private": false,
+            "owner": {
+              "login": "discord",
+              "id": 1965106,
+              "node_id": "MDEyOk9yZ2FuaXphdGlvbjE5NjUxMDY=",
+              "gravatar_id": "",
+              "url": "https://api.github.com/users/discord",
+              "type": "Organization",
+              "site_admin": false
+            },
+            "description": "Listen to device orientation changes in react-native and set preferred orientation on screen to screen basis.",
+            "fork": true,
+            "url": "https://api.github.com/repos/discord/react-native-orientation",
+            "created_at": "2021-09-23T21:32:45Z",
+            "updated_at": "2022-12-28T20:05:26Z",
+            "pushed_at": "2023-02-18T21:37:20Z",
+            "homepage": "https://www.npmjs.com/package/react-native-orientation",
+            "size": 290,
+            "stargazers_count": 1,
+            "watchers_count": 1,
+            "language": null,
+            "has_issues": false,
+            "has_projects": true,
+            "has_downloads": true,
+            "has_wiki": true,
+            "has_pages": false,
+            "has_discussions": false,
+            "forks_count": 8,
+            "archived": false,
+            "disabled": false,
+            "open_issues_count": 1,
+            "license": {
+              "key": "isc",
+              "name": "ISC License",
+              "spdx_id": "ISC",
+              "url": "https://api.github.com/licenses/isc",
+              "node_id": "MDc6TGljZW5zZTEw"
+            },
+            "allow_forking": true,
+            "is_template": false,
+            "web_commit_signoff_required": false,
+            "topics": [],
+            "visibility": "public",
+            "forks": 8,
+            "open_issues": 1,
+            "watchers": 1,
+            "default_branch": "master"
+          }
+        },
+        "base": {
+          "label": "discord:3.1.3-discord-1",
+          "ref": "3.1.3-discord-1",
+          "sha": "a5a315acfbdd6cae5afeb41da73cfb3306e480a1",
+          "user": {
+            "login": "discord",
+            "id": 1965106,
+            "node_id": "MDEyOk9yZ2FuaXphdGlvbjE5NjUxMDY=",
+            "gravatar_id": "",
+            "url": "https://api.github.com/users/discord",
+            "type": "Organization",
+            "site_admin": false
+          },
+          "repo": {
+            "id": 409749436,
+            "node_id": "R_kgDOGGxHvA",
+            "name": "react-native-orientation",
+            "full_name": "discord/react-native-orientation",
+            "private": false,
+            "owner": {
+              "login": "discord",
+              "id": 1965106,
+              "node_id": "MDEyOk9yZ2FuaXphdGlvbjE5NjUxMDY=",
+              "gravatar_id": "",
+              "url": "https://api.github.com/users/discord",
+              "type": "Organization",
+              "site_admin": false
+            },
+            "description": "Listen to device orientation changes in react-native and set preferred orientation on screen to screen basis.",
+            "fork": true,
+            "url": "https://api.github.com/repos/discord/react-native-orientation",
+            "created_at": "2021-09-23T21:32:45Z",
+            "updated_at": "2022-12-28T20:05:26Z",
+            "pushed_at": "2023-02-18T21:37:20Z",
+            "homepage": "https://www.npmjs.com/package/react-native-orientation",
+            "size": 290,
+            "stargazers_count": 1,
+            "watchers_count": 1,
+            "language": null,
+            "has_issues": false,
+            "has_projects": true,
+            "has_downloads": true,
+            "has_wiki": true,
+            "has_pages": false,
+            "has_discussions": false,
+            "forks_count": 8,
+            "archived": false,
+            "disabled": false,
+            "open_issues_count": 1,
+            "license": {
+              "key": "isc",
+              "name": "ISC License",
+              "spdx_id": "ISC",
+              "url": "https://api.github.com/licenses/isc",
+              "node_id": "MDc6TGljZW5zZTEw"
+            },
+            "allow_forking": true,
+            "is_template": false,
+            "web_commit_signoff_required": false,
+            "topics": [],
+            "visibility": "public",
+            "forks": 8,
+            "open_issues": 1,
+            "watchers": 1,
+            "default_branch": "master"
+          }
+        },
+        "_links": {
+          "self": {
+            "href": "https://api.github.com/repos/discord/react-native-orientation/pulls/3"
+          },
+          "html": {
+            "href": "https://github.com/discord/react-native-orientation/pull/3"
+          },
+          "issue": {
+            "href": "https://api.github.com/repos/discord/react-native-orientation/issues/3"
+          },
+          "comments": {
+            "href": "https://api.github.com/repos/discord/react-native-orientation/issues/3/comments"
+          },
+          "review_comments": {
+            "href": "https://api.github.com/repos/discord/react-native-orientation/pulls/3/comments"
+          },
+          "review_comment": {
+            "href": "https://api.github.com/repos/discord/react-native-orientation/pulls/comments{/number}"
+          },
+          "commits": {
+            "href": "https://api.github.com/repos/discord/react-native-orientation/pulls/3/commits"
+          },
+          "statuses": {
+            "href": "https://api.github.com/repos/discord/react-native-orientation/statuses/3b6d151831310ad6ad5cd11fc8201c31be43b91d"
+          }
+        },
+        "author_association": "NONE",
+        "auto_merge": null,
+        "active_lock_reason": null
+      },
+      {
+        "url": "https://api.github.com/repos/discord/react-native-orientation/pulls/2",
+        "id": 1062976376,
+        "node_id": "PR_kwDOGGxHvM4_W7t4",
+        "number": 2,
+        "state": "closed",
+        "locked": false,
+        "title": "[ios] switch react native ios landscape-left/landscape-right mappings",
+        "user": {
+          "login": "nealmanaktola",
+          "id": 1707258,
+          "node_id": "MDQ6VXNlcjE3MDcyNTg=",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/nealmanaktola",
+          "type": "User",
+          "site_admin": false
+        },
+        "body": "This PR changes the iOS implementation to lock to device orientation not interface orientation\r\n\r\nhttps://developer.apple.com/documentation/uikit/uiinterfaceorientation\r\n\r\n> Notice that UIDeviceOrientation.landscapeRight is assigned to UIInterfaceOrientation.landscapeLeft and UIDeviceOrientation.landscapeLeft is assigned to UIInterfaceOrientation.landscapeRight. The reason for this is that rotating the device requires rotating the content in the opposite direction.",
+        "created_at": "2022-09-21T14:53:45Z",
+        "updated_at": "2022-09-21T16:07:44Z",
+        "closed_at": "2022-09-21T16:07:44Z",
+        "merged_at": "2022-09-21T16:07:44Z",
+        "merge_commit_sha": "a5a315acfbdd6cae5afeb41da73cfb3306e480a1",
+        "assignee": null,
+        "assignees": [],
+        "requested_reviewers": [],
+        "requested_teams": [],
+        "labels": [],
+        "milestone": null,
+        "draft": false,
+        "head": {
+          "label": "discord:nealm/switch-ios-orientation",
+          "ref": "nealm/switch-ios-orientation",
+          "sha": "ed0ed64b6e083d866d703899103906077ca48d5f",
+          "user": {
+            "login": "discord",
+            "id": 1965106,
+            "node_id": "MDEyOk9yZ2FuaXphdGlvbjE5NjUxMDY=",
+            "gravatar_id": "",
+            "url": "https://api.github.com/users/discord",
+            "type": "Organization",
+            "site_admin": false
+          },
+          "repo": {
+            "id": 409749436,
+            "node_id": "R_kgDOGGxHvA",
+            "name": "react-native-orientation",
+            "full_name": "discord/react-native-orientation",
+            "private": false,
+            "owner": {
+              "login": "discord",
+              "id": 1965106,
+              "node_id": "MDEyOk9yZ2FuaXphdGlvbjE5NjUxMDY=",
+              "gravatar_id": "",
+              "url": "https://api.github.com/users/discord",
+              "type": "Organization",
+              "site_admin": false
+            },
+            "description": "Listen to device orientation changes in react-native and set preferred orientation on screen to screen basis.",
+            "fork": true,
+            "url": "https://api.github.com/repos/discord/react-native-orientation",
+            "created_at": "2021-09-23T21:32:45Z",
+            "updated_at": "2022-12-28T20:05:26Z",
+            "pushed_at": "2023-02-18T21:37:20Z",
+            "homepage": "https://www.npmjs.com/package/react-native-orientation",
+            "size": 290,
+            "stargazers_count": 1,
+            "watchers_count": 1,
+            "language": null,
+            "has_issues": false,
+            "has_projects": true,
+            "has_downloads": true,
+            "has_wiki": true,
+            "has_pages": false,
+            "has_discussions": false,
+            "forks_count": 8,
+            "archived": false,
+            "disabled": false,
+            "open_issues_count": 1,
+            "license": {
+              "key": "isc",
+              "name": "ISC License",
+              "spdx_id": "ISC",
+              "url": "https://api.github.com/licenses/isc",
+              "node_id": "MDc6TGljZW5zZTEw"
+            },
+            "allow_forking": true,
+            "is_template": false,
+            "web_commit_signoff_required": false,
+            "topics": [],
+            "visibility": "public",
+            "forks": 8,
+            "open_issues": 1,
+            "watchers": 1,
+            "default_branch": "master"
+          }
+        },
+        "base": {
+          "label": "discord:3.1.3-discord-1",
+          "ref": "3.1.3-discord-1",
+          "sha": "6f5a1f2ea1e2228ebf0d4406d19cdb6f4b0580e7",
+          "user": {
+            "login": "discord",
+            "id": 1965106,
+            "node_id": "MDEyOk9yZ2FuaXphdGlvbjE5NjUxMDY=",
+            "gravatar_id": "",
+            "url": "https://api.github.com/users/discord",
+            "type": "Organization",
+            "site_admin": false
+          },
+          "repo": {
+            "id": 409749436,
+            "node_id": "R_kgDOGGxHvA",
+            "name": "react-native-orientation",
+            "full_name": "discord/react-native-orientation",
+            "private": false,
+            "owner": {
+              "login": "discord",
+              "id": 1965106,
+              "node_id": "MDEyOk9yZ2FuaXphdGlvbjE5NjUxMDY=",
+              "gravatar_id": "",
+              "url": "https://api.github.com/users/discord",
+              "type": "Organization",
+              "site_admin": false
+            },
+            "description": "Listen to device orientation changes in react-native and set preferred orientation on screen to screen basis.",
+            "fork": true,
+            "url": "https://api.github.com/repos/discord/react-native-orientation",
+            "created_at": "2021-09-23T21:32:45Z",
+            "updated_at": "2022-12-28T20:05:26Z",
+            "pushed_at": "2023-02-18T21:37:20Z",
+            "homepage": "https://www.npmjs.com/package/react-native-orientation",
+            "size": 290,
+            "stargazers_count": 1,
+            "watchers_count": 1,
+            "language": null,
+            "has_issues": false,
+            "has_projects": true,
+            "has_downloads": true,
+            "has_wiki": true,
+            "has_pages": false,
+            "has_discussions": false,
+            "forks_count": 8,
+            "archived": false,
+            "disabled": false,
+            "open_issues_count": 1,
+            "license": {
+              "key": "isc",
+              "name": "ISC License",
+              "spdx_id": "ISC",
+              "url": "https://api.github.com/licenses/isc",
+              "node_id": "MDc6TGljZW5zZTEw"
+            },
+            "allow_forking": true,
+            "is_template": false,
+            "web_commit_signoff_required": false,
+            "topics": [],
+            "visibility": "public",
+            "forks": 8,
+            "open_issues": 1,
+            "watchers": 1,
+            "default_branch": "master"
+          }
+        },
+        "_links": {
+          "self": {
+            "href": "https://api.github.com/repos/discord/react-native-orientation/pulls/2"
+          },
+          "html": {
+            "href": "https://github.com/discord/react-native-orientation/pull/2"
+          },
+          "issue": {
+            "href": "https://api.github.com/repos/discord/react-native-orientation/issues/2"
+          },
+          "comments": {
+            "href": "https://api.github.com/repos/discord/react-native-orientation/issues/2/comments"
+          },
+          "review_comments": {
+            "href": "https://api.github.com/repos/discord/react-native-orientation/pulls/2/comments"
+          },
+          "review_comment": {
+            "href": "https://api.github.com/repos/discord/react-native-orientation/pulls/comments{/number}"
+          },
+          "commits": {
+            "href": "https://api.github.com/repos/discord/react-native-orientation/pulls/2/commits"
+          },
+          "statuses": {
+            "href": "https://api.github.com/repos/discord/react-native-orientation/statuses/ed0ed64b6e083d866d703899103906077ca48d5f"
+          }
+        },
+        "author_association": "COLLABORATOR",
+        "auto_merge": null,
+        "active_lock_reason": null
+      }
+    ]
   }
 }
