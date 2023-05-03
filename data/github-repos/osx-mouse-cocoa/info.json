@@ -51,7 +51,16 @@
     "triage": false,
     "pull": false
   },
-  "branches": [],
+  "branches": [
+    {
+      "name": "master",
+      "commit": {
+        "sha": "18bbc4bdbcadb58aed9fecd5d6a65eb6e0cbc37c",
+        "url": "https://api.github.com/repos/discord/osx-mouse-cocoa/commits/18bbc4bdbcadb58aed9fecd5d6a65eb6e0cbc37c"
+      },
+      "protected": false
+    }
+  ],
   "last5": {
     "commits": [
       {

@@ -57,7 +57,48 @@
     "triage": false,
     "pull": false
   },
-  "branches": [],
+  "branches": [
+    {
+      "name": "add-onanimate-source",
+      "commit": {
+        "sha": "a991be78a3666cefcd165dba957a55549302d156",
+        "url": "https://api.github.com/repos/discord/react-native-bottom-sheet/commits/a991be78a3666cefcd165dba957a55549302d156"
+      },
+      "protected": false
+    },
+    {
+      "name": "discord/main",
+      "commit": {
+        "sha": "df995029c889b7cd7945500fc25911087456dd7e",
+        "url": "https://api.github.com/repos/discord/react-native-bottom-sheet/commits/df995029c889b7cd7945500fc25911087456dd7e"
+      },
+      "protected": false
+    },
+    {
+      "name": "fix-early-close",
+      "commit": {
+        "sha": "d8e8e504ce358fd0e9ce218e1f373f3c58f2a204",
+        "url": "https://api.github.com/repos/discord/react-native-bottom-sheet/commits/d8e8e504ce358fd0e9ce218e1f373f3c58f2a204"
+      },
+      "protected": false
+    },
+    {
+      "name": "footer-render-function",
+      "commit": {
+        "sha": "a1b389c7045966356eb86e9f4652a6f77f38d478",
+        "url": "https://api.github.com/repos/discord/react-native-bottom-sheet/commits/a1b389c7045966356eb86e9f4652a6f77f38d478"
+      },
+      "protected": false
+    },
+    {
+      "name": "master",
+      "commit": {
+        "sha": "658793573603cacbf6417e192b283554045ee0c4",
+        "url": "https://api.github.com/repos/discord/react-native-bottom-sheet/commits/658793573603cacbf6417e192b283554045ee0c4"
+      },
+      "protected": false
+    }
+  ],
   "last5": {
     "commits": [
       {
