@@ -57,7 +57,16 @@
     "triage": false,
     "pull": false
   },
-  "branches": [],
+  "branches": [
+    {
+      "name": "master",
+      "commit": {
+        "sha": "58d4639e521c38348889793951cc39db58f4b549",
+        "url": "https://api.github.com/repos/discord/react-native-sortable-listview/commits/58d4639e521c38348889793951cc39db58f4b549"
+      },
+      "protected": false
+    }
+  ],
   "last5": {
     "commits": [
       {
