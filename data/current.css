@@ -146966,21 +146966,26 @@ html .invoiceCancelRow-3s2UuC {
 }
 
 .wrapper-2waR5y {
+    background-color: var(--background-secondary-alt);
+    border-radius: 8px;
+    padding: 16px 18px
+}
+
+.copy-TehDBX,
+.wrapper-2waR5y {
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
-    background-color: var(--background-secondary-alt);
-    border-radius: 8px;
     display: -webkit-box;
     display: -ms-flexbox;
-    display: flex;
-    padding: 16px 18px
+    display: flex
 }
 
 .cta-15rpbM {
     color: var(--text-link) !important;
     display: inline;
     height: auto;
+    margin-left: 4px;
     min-height: auto;
     min-width: auto;
     padding: 0
@@ -154639,4 +154644,4 @@ html .invoiceCancelRow-dVOR64 {
     flex-direction: column
 }
 
-/*# sourceMappingURL=40532.ed350611735ffafeec8e.css.map*/
+/*# sourceMappingURL=40532.5556fa5fd2993e23ce23.css.map*/
