@@ -19978,6 +19978,10 @@ html.disable-forced-colors * {
     height: 120px
 }
 
+.cancelModalBanner-3sqsYA {
+    height: 42px
+}
+
 .pencilContainer-18TrEJ {
     cursor: pointer;
     position: absolute;
@@ -29639,17 +29643,21 @@ img[alt] {
 }
 
 .profileCard-3LwxP_ {
-    background-color: var(--background-primary);
-    border-radius: 8px;
     position: relative;
     width: 100%;
     overflow: hidden;
     min-height: 96px
 }
 
+.profileCardTier1-2mNP0P {
+    background-color: var(--background-primary);
+    border-radius: 8px
+}
+
 .profileBanner-3TJ9TN {
     height: 42px;
-    overflow: hidden
+    overflow: hidden;
+    border-radius: 4px 4px 0 0
 }
 
 .profileAvatar-25nnes {
@@ -29664,11 +29672,18 @@ img[alt] {
     left: 60px
 }
 
+.profileInner-oJaQGH {
+    background: transparent;
+    margin-top: 26px;
+    margin-bottom: 8px;
+    margin-left: 0
+}
+
 .profileUserInfo-18vwkx {
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
-    padding-top: 36px;
+    padding-top: 8px;
     padding-left: 16px;
     padding-right: 16px
 }
@@ -29690,13 +29705,14 @@ img[alt] {
 
 .profileNameTag-2T5lOU {
     font-weight: 600;
-    font-size: 12px;
-    line-height: 16px;
-    max-width: 118px
+    line-height: 20px;
+    max-width: 118px;
+    color: var(--interactive-active)
 }
 
 .profileNameTagUsername-3uIOrz {
-    text-overflow: ellipsis
+    text-overflow: ellipsis;
+    line-height: 20px
 }
 
 .profilePremiumIcon-3lK-av {
@@ -93370,18 +93386,17 @@ strong {
 }
 
 .featureBadge-1FNGAH .featureImageWrapper-2ndc8N {
-    -ms-flex-item-align: start;
-    align-self: flex-start;
     -webkit-box-align: end;
     -ms-flex-align: end;
     align-items: flex-end;
-    -webkit-box-pack: end;
-    -ms-flex-pack: end;
-    justify-content: flex-end
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    margin: 16px 0
 }
 
 .featureBadge-1FNGAH .featureImage-91H2fC {
-    width: 190px
+    width: 172px
 }
 
 .featureUploadSize-3k1zif .featureTitle-3N9Stg {
@@ -154335,4 +154350,4 @@ html .invoiceCancelRow-dVOR64 {
     flex-direction: column
 }
 
-/*# sourceMappingURL=40532.d423d3c061bc12b023cb.css.map*/
+/*# sourceMappingURL=40532.6259716d8ab6846b2189.css.map*/
