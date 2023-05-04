@@ -57,7 +57,248 @@
     "triage": false,
     "pull": false
   },
-  "branches": [],
+  "branches": [
+    {
+      "name": "2.2-test",
+      "commit": {
+        "sha": "fc0a852c24a9872e6e5c67083781a3fc04a342d3",
+        "url": "https://api.github.com/repos/discord/spark-cassandra-connector/commits/fc0a852c24a9872e6e5c67083781a3fc04a342d3"
+      },
+      "protected": false
+    },
+    {
+      "name": "DSP-12259",
+      "commit": {
+        "sha": "2f6f9c1e51e2fdbc7d52fe2529692a33487b5a11",
+        "url": "https://api.github.com/repos/discord/spark-cassandra-connector/commits/2f6f9c1e51e2fdbc7d52fe2529692a33487b5a11"
+      },
+      "protected": false
+    },
+    {
+      "name": "SPARKC-43-v2",
+      "commit": {
+        "sha": "26bed5b90684e1b8c536f4e11a1ca5d33062b15b",
+        "url": "https://api.github.com/repos/discord/spark-cassandra-connector/commits/26bed5b90684e1b8c536f4e11a1ca5d33062b15b"
+      },
+      "protected": false
+    },
+    {
+      "name": "SPARKC-161",
+      "commit": {
+        "sha": "8b50e6fcba6c5ffac70e90a484356dac467f9bf5",
+        "url": "https://api.github.com/repos/discord/spark-cassandra-connector/commits/8b50e6fcba6c5ffac70e90a484356dac467f9bf5"
+      },
+      "protected": false
+    },
+    {
+      "name": "SPARKC-173",
+      "commit": {
+        "sha": "a6741711b85fd5350748a8362995cf2ce96bd5fb",
+        "url": "https://api.github.com/repos/discord/spark-cassandra-connector/commits/a6741711b85fd5350748a8362995cf2ce96bd5fb"
+      },
+      "protected": false
+    },
+    {
+      "name": "SPARKC-225-b1.3",
+      "commit": {
+        "sha": "2d92f0a9daf5e534f5c32b97b590b166f9b1d8ae",
+        "url": "https://api.github.com/repos/discord/spark-cassandra-connector/commits/2d92f0a9daf5e534f5c32b97b590b166f9b1d8ae"
+      },
+      "protected": false
+    },
+    {
+      "name": "SPARKC-292",
+      "commit": {
+        "sha": "10c98a71d7d0f4b13568a7ef8bd960bd067a0be0",
+        "url": "https://api.github.com/repos/discord/spark-cassandra-connector/commits/10c98a71d7d0f4b13568a7ef8bd960bd067a0be0"
+      },
+      "protected": false
+    },
+    {
+      "name": "SPARKC-299-master",
+      "commit": {
+        "sha": "8312144c17a49d4446e52f5a70d44b32e8c10d6a",
+        "url": "https://api.github.com/repos/discord/spark-cassandra-connector/commits/8312144c17a49d4446e52f5a70d44b32e8c10d6a"
+      },
+      "protected": false
+    },
+    {
+      "name": "SPARKC-299",
+      "commit": {
+        "sha": "8ecaf77dc664eb6a5ef90a59c40457db277a4061",
+        "url": "https://api.github.com/repos/discord/spark-cassandra-connector/commits/8ecaf77dc664eb6a5ef90a59c40457db277a4061"
+      },
+      "protected": false
+    },
+    {
+      "name": "SPARKC-337",
+      "commit": {
+        "sha": "a7068ad0828cc58236ee772a5a5cd28a1889a07c",
+        "url": "https://api.github.com/repos/discord/spark-cassandra-connector/commits/a7068ad0828cc58236ee772a5a5cd28a1889a07c"
+      },
+      "protected": false
+    },
+    {
+      "name": "SPARKC-349-Russ",
+      "commit": {
+        "sha": "944979097eff0e666a46ff68d9fab99390eb3249",
+        "url": "https://api.github.com/repos/discord/spark-cassandra-connector/commits/944979097eff0e666a46ff68d9fab99390eb3249"
+      },
+      "protected": false
+    },
+    {
+      "name": "SPARKC-363-b1.4",
+      "commit": {
+        "sha": "71849ab05e9f602b691f35e748654689bad2cc83",
+        "url": "https://api.github.com/repos/discord/spark-cassandra-connector/commits/71849ab05e9f602b691f35e748654689bad2cc83"
+      },
+      "protected": false
+    },
+    {
+      "name": "SPARKC-363",
+      "commit": {
+        "sha": "d6de4d1b0d9e05d286141a55e05d2a7148a903ed",
+        "url": "https://api.github.com/repos/discord/spark-cassandra-connector/commits/d6de4d1b0d9e05d286141a55e05d2a7148a903ed"
+      },
+      "protected": false
+    },
+    {
+      "name": "SPARKC-370-master",
+      "commit": {
+        "sha": "3488251e6f4ebfeaba813124882ce2938b69f545",
+        "url": "https://api.github.com/repos/discord/spark-cassandra-connector/commits/3488251e6f4ebfeaba813124882ce2938b69f545"
+      },
+      "protected": false
+    },
+    {
+      "name": "SPARKC-373-for-DataFrames",
+      "commit": {
+        "sha": "db9fa17bbb900113d6e8a96fc2abf6042ce261b2",
+        "url": "https://api.github.com/repos/discord/spark-cassandra-connector/commits/db9fa17bbb900113d6e8a96fc2abf6042ce261b2"
+      },
+      "protected": false
+    },
+    {
+      "name": "SPARKC-373-master",
+      "commit": {
+        "sha": "f75c68ec5ac780c8dcc4c8df2ab17f1dd350ac77",
+        "url": "https://api.github.com/repos/discord/spark-cassandra-connector/commits/f75c68ec5ac780c8dcc4c8df2ab17f1dd350ac77"
+      },
+      "protected": false
+    },
+    {
+      "name": "SPARKC-387",
+      "commit": {
+        "sha": "f82b544ada6b5d3c69ce436f11837163dd94b4b9",
+        "url": "https://api.github.com/repos/discord/spark-cassandra-connector/commits/f82b544ada6b5d3c69ce436f11837163dd94b4b9"
+      },
+      "protected": false
+    },
+    {
+      "name": "SPARKC-405",
+      "commit": {
+        "sha": "6d743544296fbcbfb366a301dd5764eb67f31c8e",
+        "url": "https://api.github.com/repos/discord/spark-cassandra-connector/commits/6d743544296fbcbfb366a301dd5764eb67f31c8e"
+      },
+      "protected": false
+    },
+    {
+      "name": "SPARKC-412-master",
+      "commit": {
+        "sha": "73342742c706897b3aaefa00abe40cd889f07411",
+        "url": "https://api.github.com/repos/discord/spark-cassandra-connector/commits/73342742c706897b3aaefa00abe40cd889f07411"
+      },
+      "protected": false
+    },
+    {
+      "name": "SPARKC-435",
+      "commit": {
+        "sha": "501c631f19a406b86a4585729c71c18f353315c5",
+        "url": "https://api.github.com/repos/discord/spark-cassandra-connector/commits/501c631f19a406b86a4585729c71c18f353315c5"
+      },
+      "protected": false
+    },
+    {
+      "name": "SPARKC-441-b1.4",
+      "commit": {
+        "sha": "a33f9712a0d1123c11e58191e1d53951314faa51",
+        "url": "https://api.github.com/repos/discord/spark-cassandra-connector/commits/a33f9712a0d1123c11e58191e1d53951314faa51"
+      },
+      "protected": false
+    },
+    {
+      "name": "SPARKC-441-b1.5",
+      "commit": {
+        "sha": "af412e3120496d2eb0b847d7b03768b77c84961f",
+        "url": "https://api.github.com/repos/discord/spark-cassandra-connector/commits/af412e3120496d2eb0b847d7b03768b77c84961f"
+      },
+      "protected": false
+    },
+    {
+      "name": "SPARKC-441-b1.6",
+      "commit": {
+        "sha": "bb602353a515aff12959b1dfd28f8385ba4f0492",
+        "url": "https://api.github.com/repos/discord/spark-cassandra-connector/commits/bb602353a515aff12959b1dfd28f8385ba4f0492"
+      },
+      "protected": false
+    },
+    {
+      "name": "SPARKC-441",
+      "commit": {
+        "sha": "5727dabd1a21a1b61f56e400db4cfc83c44c266b",
+        "url": "https://api.github.com/repos/discord/spark-cassandra-connector/commits/5727dabd1a21a1b61f56e400db4cfc83c44c266b"
+      },
+      "protected": false
+    },
+    {
+      "name": "SPARKC-457",
+      "commit": {
+        "sha": "fb0b25ba2b0c71746a5f7dd3dac6b3a0dce6f535",
+        "url": "https://api.github.com/repos/discord/spark-cassandra-connector/commits/fb0b25ba2b0c71746a5f7dd3dac6b3a0dce6f535"
+      },
+      "protected": false
+    },
+    {
+      "name": "SPARKC-462",
+      "commit": {
+        "sha": "89bdff2e5bc367e0d29841a5341d8443ee2ceeae",
+        "url": "https://api.github.com/repos/discord/spark-cassandra-connector/commits/89bdff2e5bc367e0d29841a5341d8443ee2ceeae"
+      },
+      "protected": false
+    },
+    {
+      "name": "SPARKC-466",
+      "commit": {
+        "sha": "bdbd6585deba39210356c8f460a5388ad4c5a0af",
+        "url": "https://api.github.com/repos/discord/spark-cassandra-connector/commits/bdbd6585deba39210356c8f460a5388ad4c5a0af"
+      },
+      "protected": false
+    },
+    {
+      "name": "SPARKC-472-b1.6",
+      "commit": {
+        "sha": "fcc582326b9005b949c84168ab108c2cce30c6e1",
+        "url": "https://api.github.com/repos/discord/spark-cassandra-connector/commits/fcc582326b9005b949c84168ab108c2cce30c6e1"
+      },
+      "protected": false
+    },
+    {
+      "name": "SPARKC-472-b-1.6",
+      "commit": {
+        "sha": "b67f9d8e4533b2644f56227a7d265d99048163ab",
+        "url": "https://api.github.com/repos/discord/spark-cassandra-connector/commits/b67f9d8e4533b2644f56227a7d265d99048163ab"
+      },
+      "protected": false
+    },
+    {
+      "name": "SPARKC-472-b-2.0",
+      "commit": {
+        "sha": "9531f962e237abd7dd2e66f052276416aa971276",
+        "url": "https://api.github.com/repos/discord/spark-cassandra-connector/commits/9531f962e237abd7dd2e66f052276416aa971276"
+      },
+      "protected": false
+    }
+  ],
   "last5": {
     "commits": [
       {
@@ -332,56 +573,7 @@
       }
     ],
     "releases": [],
-    "issues": [
-      {
-        "url": "https://api.github.com/repos/discord/spark-cassandra-connector/issues/1",
-        "id": 878974476,
-        "node_id": "MDExOlB1bGxSZXF1ZXN0NjMyNzM1MTkx",
-        "number": 1,
-        "title": "iot",
-        "user": {
-          "login": "nerkoux",
-          "id": 66862500,
-          "node_id": "MDQ6VXNlcjY2ODYyNTAw",
-          "gravatar_id": "",
-          "url": "https://api.github.com/users/nerkoux",
-          "type": "User",
-          "site_admin": false
-        },
-        "labels": [],
-        "state": "open",
-        "locked": false,
-        "assignee": null,
-        "assignees": [],
-        "milestone": null,
-        "comments": 0,
-        "created_at": "2021-05-07T13:08:19Z",
-        "updated_at": "2021-05-07T13:08:19Z",
-        "closed_at": null,
-        "author_association": "NONE",
-        "active_lock_reason": null,
-        "draft": false,
-        "pull_request": {
-          "url": "https://api.github.com/repos/discord/spark-cassandra-connector/pulls/1",
-          "merged_at": null
-        },
-        "body": "discord-spark",
-        "reactions": {
-          "url": "https://api.github.com/repos/discord/spark-cassandra-connector/issues/1/reactions",
-          "total_count": 0,
-          "+1": 0,
-          "-1": 0,
-          "laugh": 0,
-          "hooray": 0,
-          "confused": 0,
-          "heart": 0,
-          "rocket": 0,
-          "eyes": 0
-        },
-        "performed_via_github_app": null,
-        "state_reason": null
-      }
-    ],
+    "issues": [],
     "pullRequests": []
   }
 }
