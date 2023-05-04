@@ -142661,9 +142661,18 @@ html .invoiceCancelRow-3s2UuC {
 }
 
 .limitedFeatureBorder-hpm0GQ {
-    border: 1px solid transparent;
     background: -webkit-gradient(linear, left top, left bottom, from(var(--background-primary)), to(var(--background-primary))) padding-box, -webkit-gradient(linear, left top, left bottom, from(var(--blue-345)), color-stop(var(--blue-345)), to(var(--premium-perk-light-blue))) border-box;
     background: linear-gradient(var(--background-primary), var(--background-primary)) padding-box, linear-gradient(var(--blue-345), var(--blue-345), var(--premium-perk-light-blue)) border-box
+}
+
+.birthdayFeatureBorder-24qmMm,
+.limitedFeatureBorder-hpm0GQ {
+    border: 1px solid transparent
+}
+
+.birthdayFeatureBorder-24qmMm {
+    background: -webkit-gradient(linear, left top, left bottom, from(var(--background-primary)), to(var(--background-primary))) padding-box, -webkit-gradient(linear, left top, right top, from(hsl(234, calc(var(--saturation-factor, 1)*93.1%), 65.7%)), color-stop(hsl(316, calc(var(--saturation-factor, 1)*100%), 66.1%)), to(hsl(79, calc(var(--saturation-factor, 1)*100%), 46.9%))) border-box;
+    background: linear-gradient(var(--background-primary), var(--background-primary)) padding-box, linear-gradient(90deg, hsl(234, calc(var(--saturation-factor, 1)*93.1%), 65.7%), hsl(316, calc(var(--saturation-factor, 1)*100%), 66.1%), hsl(79, calc(var(--saturation-factor, 1)*100%), 46.9%)) border-box
 }
 
 .background-yH6t2p {
@@ -142676,6 +142685,11 @@ html .invoiceCancelRow-3s2UuC {
 
 .limitedBackground-2ogRHb {
     background: linear-gradient(78.43deg, hsl(var(--blue-345-hsl)/.1), hsl(var(--blue-345-hsl)/.1), hsl(var(--premium-perk-light-blue-hsl)/.1)) padding-box
+}
+
+.birthdayBackground-3W7GAK {
+    background: -webkit-gradient(linear, left top, right top, from(hsl(var(--discord-8th-bday-blue-hsl)/.1)), color-stop(hsl(var(--discord-8th-bday-pink-hsl)/.1)), to(hsl(var(--discord-8th-bday-green-hsl)/.1))) padding-box;
+    background: linear-gradient(90deg, hsl(var(--discord-8th-bday-blue-hsl)/.1), hsl(var(--discord-8th-bday-pink-hsl)/.1), hsl(var(--discord-8th-bday-green-hsl)/.1)) padding-box
 }
 
 .title-1HgbhV {
@@ -154350,4 +154364,4 @@ html .invoiceCancelRow-dVOR64 {
     flex-direction: column
 }
 
-/*# sourceMappingURL=40532.6259716d8ab6846b2189.css.map*/
+/*# sourceMappingURL=40532.06b83b7db609aef6f0c6.css.map*/
