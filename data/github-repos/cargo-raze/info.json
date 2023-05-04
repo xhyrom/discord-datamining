@@ -57,7 +57,240 @@
     "triage": false,
     "pull": false
   },
-  "branches": [],
+  "branches": [
+    {
+      "name": "acm-add-missing-tests",
+      "commit": {
+        "sha": "98f5b0562b6a613c2e37b58d08b9eefb8ebf22ff",
+        "url": "https://api.github.com/repos/discord/cargo-raze/commits/98f5b0562b6a613c2e37b58d08b9eefb8ebf22ff"
+      },
+      "protected": false
+    },
+    {
+      "name": "acm-allow-any-alias",
+      "commit": {
+        "sha": "22180f238331fc5ff5973798d7dca6879404e80c",
+        "url": "https://api.github.com/repos/discord/cargo-raze/commits/22180f238331fc5ff5973798d7dca6879404e80c"
+      },
+      "protected": false
+    },
+    {
+      "name": "acm-broken",
+      "commit": {
+        "sha": "41fa02dfc04fff40637e3cae9fdd376a6e982f37",
+        "url": "https://api.github.com/repos/discord/cargo-raze/commits/41fa02dfc04fff40637e3cae9fdd376a6e982f37"
+      },
+      "protected": false
+    },
+    {
+      "name": "acm-crate-root-trimming",
+      "commit": {
+        "sha": "53a5a838319ff42ab411cfc83583f1551383f943",
+        "url": "https://api.github.com/repos/discord/cargo-raze/commits/53a5a838319ff42ab411cfc83583f1551383f943"
+      },
+      "protected": false
+    },
+    {
+      "name": "acm-disable-emitting-target",
+      "commit": {
+        "sha": "c26e735bbc18a00854a03eec3c6250c1e038a2f7",
+        "url": "https://api.github.com/repos/discord/cargo-raze/commits/c26e735bbc18a00854a03eec3c6250c1e038a2f7"
+      },
+      "protected": false
+    },
+    {
+      "name": "acm-fix-bin-planning",
+      "commit": {
+        "sha": "fc61b6d139cbf86b0726706d367d666d6c7e12ed",
+        "url": "https://api.github.com/repos/discord/cargo-raze/commits/fc61b6d139cbf86b0726706d367d666d6c7e12ed"
+      },
+      "protected": false
+    },
+    {
+      "name": "acm-fix-rand",
+      "commit": {
+        "sha": "d9d71118d3ef2aef97a709345bbedd93c63fceb9",
+        "url": "https://api.github.com/repos/discord/cargo-raze/commits/d9d71118d3ef2aef97a709345bbedd93c63fceb9"
+      },
+      "protected": false
+    },
+    {
+      "name": "acm-into-root",
+      "commit": {
+        "sha": "b14fb807082fcce1dd919c88594d622f7577726e",
+        "url": "https://api.github.com/repos/discord/cargo-raze/commits/b14fb807082fcce1dd919c88594d622f7577726e"
+      },
+      "protected": false
+    },
+    {
+      "name": "acm-metadata-bin",
+      "commit": {
+        "sha": "d8f052714160dc773a16d487708456509a592373",
+        "url": "https://api.github.com/repos/discord/cargo-raze/commits/d8f052714160dc773a16d487708456509a592373"
+      },
+      "protected": false
+    },
+    {
+      "name": "acm-metadata-bin-2",
+      "commit": {
+        "sha": "4426cea046546e0f2dd6738d96be8e8d7bf1e561",
+        "url": "https://api.github.com/repos/discord/cargo-raze/commits/4426cea046546e0f2dd6738d96be8e8d7bf1e561"
+      },
+      "protected": false
+    },
+    {
+      "name": "acm-metadata-by-default",
+      "commit": {
+        "sha": "1bbe5ec8f87bc03e138ac6aed5f988f0563bf302",
+        "url": "https://api.github.com/repos/discord/cargo-raze/commits/1bbe5ec8f87bc03e138ac6aed5f988f0563bf302"
+      },
+      "protected": false
+    },
+    {
+      "name": "acm-planning-cleanup",
+      "commit": {
+        "sha": "da51b53d688704097577783ef3ce4b0ed6d3fcda",
+        "url": "https://api.github.com/repos/discord/cargo-raze/commits/da51b53d688704097577783ef3ce4b0ed6d3fcda"
+      },
+      "protected": false
+    },
+    {
+      "name": "acm-refactor-planning",
+      "commit": {
+        "sha": "27e5bc0b454fd45bac4e25db9009e35fbc8ab5c4",
+        "url": "https://api.github.com/repos/discord/cargo-raze/commits/27e5bc0b454fd45bac4e25db9009e35fbc8ab5c4"
+      },
+      "protected": false
+    },
+    {
+      "name": "acm-reject-non-crates-io-sources-remote",
+      "commit": {
+        "sha": "d14249c7307a6c7e0a94b0bfb4ee7937ea636295",
+        "url": "https://api.github.com/repos/discord/cargo-raze/commits/d14249c7307a6c7e0a94b0bfb4ee7937ea636295"
+      },
+      "protected": false
+    },
+    {
+      "name": "acm-speculative-label-fix",
+      "commit": {
+        "sha": "928706f3673d74aa0df2f94af1ac0ed20d8ecafd",
+        "url": "https://api.github.com/repos/discord/cargo-raze/commits/928706f3673d74aa0df2f94af1ac0ed20d8ecafd"
+      },
+      "protected": false
+    },
+    {
+      "name": "acm-support-multi-target",
+      "commit": {
+        "sha": "deaf10f525bc4b3120067684af878ab167f0dbd4",
+        "url": "https://api.github.com/repos/discord/cargo-raze/commits/deaf10f525bc4b3120067684af878ab167f0dbd4"
+      },
+      "protected": false
+    },
+    {
+      "name": "acm-unify-remote-vendor",
+      "commit": {
+        "sha": "f7ef1c8185ad7a82c9fb9ed0a5634ad2359460c8",
+        "url": "https://api.github.com/repos/discord/cargo-raze/commits/f7ef1c8185ad7a82c9fb9ed0a5634ad2359460c8"
+      },
+      "protected": false
+    },
+    {
+      "name": "acmcarther-patch-1",
+      "commit": {
+        "sha": "43cbe28ab6b846358eddfb714df2fe1c7fe3c669",
+        "url": "https://api.github.com/repos/discord/cargo-raze/commits/43cbe28ab6b846358eddfb714df2fe1c7fe3c669"
+      },
+      "protected": false
+    },
+    {
+      "name": "ignore-workspace-crates",
+      "commit": {
+        "sha": "ade02525efafac06bf741ea9121890608a6b7c8e",
+        "url": "https://api.github.com/repos/discord/cargo-raze/commits/ade02525efafac06bf741ea9121890608a6b7c8e"
+      },
+      "protected": false
+    },
+    {
+      "name": "master",
+      "commit": {
+        "sha": "f77ba882ea4a7bd60b8a2761ec23b88bf6753c5f",
+        "url": "https://api.github.com/repos/discord/cargo-raze/commits/f77ba882ea4a7bd60b8a2761ec23b88bf6753c5f"
+      },
+      "protected": false
+    },
+    {
+      "name": "mfarrugi-patch-1",
+      "commit": {
+        "sha": "f9d81b5a84aa1422476c0f71080c9554963dc803",
+        "url": "https://api.github.com/repos/discord/cargo-raze/commits/f9d81b5a84aa1422476c0f71080c9554963dc803"
+      },
+      "protected": false
+    },
+    {
+      "name": "no_silent_conflicts",
+      "commit": {
+        "sha": "968ef57a46fa8b7f6d659dc7dca5b9776b655db4",
+        "url": "https://api.github.com/repos/discord/cargo-raze/commits/968ef57a46fa8b7f6d659dc7dca5b9776b655db4"
+      },
+      "protected": false
+    },
+    {
+      "name": "revert-33-acm-set-rustc",
+      "commit": {
+        "sha": "2705647bf9315bf82f3d188533370cd4b471add9",
+        "url": "https://api.github.com/repos/discord/cargo-raze/commits/2705647bf9315bf82f3d188533370cd4b471add9"
+      },
+      "protected": false
+    },
+    {
+      "name": "revert-84-acm-metadata-bin",
+      "commit": {
+        "sha": "558f7ad1d6b6e177824499670d4a14129845d65f",
+        "url": "https://api.github.com/repos/discord/cargo-raze/commits/558f7ad1d6b6e177824499670d4a14129845d65f"
+      },
+      "protected": false
+    },
+    {
+      "name": "samschlegel/check-that-examples-has-no-changes",
+      "commit": {
+        "sha": "476c585084e93dc99c44b35b2d70333335dcdf90",
+        "url": "https://api.github.com/repos/discord/cargo-raze/commits/476c585084e93dc99c44b35b2d70333335dcdf90"
+      },
+      "protected": false
+    },
+    {
+      "name": "samschlegel/support-workspaces",
+      "commit": {
+        "sha": "812d78a7d6c740e0296caadff4e9e6197747a7d6",
+        "url": "https://api.github.com/repos/discord/cargo-raze/commits/812d78a7d6c740e0296caadff4e9e6197747a7d6"
+      },
+      "protected": false
+    },
+    {
+      "name": "update-cargo-vendor",
+      "commit": {
+        "sha": "1ecafee0df975a8a4e22faed298c9115377a4833",
+        "url": "https://api.github.com/repos/discord/cargo-raze/commits/1ecafee0df975a8a4e22faed298c9115377a4833"
+      },
+      "protected": false
+    },
+    {
+      "name": "use-cargo-metadata",
+      "commit": {
+        "sha": "fa2159a529d50c4a9b70834ec396a052c802dc72",
+        "url": "https://api.github.com/repos/discord/cargo-raze/commits/fa2159a529d50c4a9b70834ec396a052c802dc72"
+      },
+      "protected": false
+    },
+    {
+      "name": "vendor-docs",
+      "commit": {
+        "sha": "c705dbfd16d6d53eefd341d8542cde33ef5243bd",
+        "url": "https://api.github.com/repos/discord/cargo-raze/commits/c705dbfd16d6d53eefd341d8542cde33ef5243bd"
+      },
+      "protected": false
+    }
+  ],
   "last5": {
     "commits": [
       {

@@ -57,7 +57,80 @@
     "triage": false,
     "pull": false
   },
-  "branches": [],
+  "branches": [
+    {
+      "name": "branch-0.2",
+      "commit": {
+        "sha": "f36be8d16cda2740688e5974a4990ddc34e91b43",
+        "url": "https://api.github.com/repos/discord/indexmap/commits/f36be8d16cda2740688e5974a4990ddc34e91b43"
+      },
+      "protected": false
+    },
+    {
+      "name": "deprecate-for-rename",
+      "commit": {
+        "sha": "3798cd4c158e67a11958f2a0172aa1915a177331",
+        "url": "https://api.github.com/repos/discord/indexmap/commits/3798cd4c158e67a11958f2a0172aa1915a177331"
+      },
+      "protected": false
+    },
+    {
+      "name": "discord/fork-indexmap-1.4.0",
+      "commit": {
+        "sha": "9dc7d3a5b9f91757eb0d53d067f841e9b2e5f5e8",
+        "url": "https://api.github.com/repos/discord/indexmap/commits/9dc7d3a5b9f91757eb0d53d067f841e9b2e5f5e8"
+      },
+      "protected": false
+    },
+    {
+      "name": "feature/entry-key-methods",
+      "commit": {
+        "sha": "dc2665fe2b8af07fe2a0d0dd9b85a92399bbed98",
+        "url": "https://api.github.com/repos/discord/indexmap/commits/dc2665fe2b8af07fe2a0d0dd9b85a92399bbed98"
+      },
+      "protected": false
+    },
+    {
+      "name": "master",
+      "commit": {
+        "sha": "27f384d560a9bf21001dcfd48205bdc271a6fd6d",
+        "url": "https://api.github.com/repos/discord/indexmap/commits/27f384d560a9bf21001dcfd48205bdc271a6fd6d"
+      },
+      "protected": false
+    },
+    {
+      "name": "ordered-remove",
+      "commit": {
+        "sha": "79c30f518472f5b536c9807d9c223c600b01d2aa",
+        "url": "https://api.github.com/repos/discord/indexmap/commits/79c30f518472f5b536c9807d9c223c600b01d2aa"
+      },
+      "protected": false
+    },
+    {
+      "name": "ordermap-0.4",
+      "commit": {
+        "sha": "4ebaf042d78817ffe7e154c5e5ca29252bf953bb",
+        "url": "https://api.github.com/repos/discord/indexmap/commits/4ebaf042d78817ffe7e154c5e5ca29252bf953bb"
+      },
+      "protected": false
+    },
+    {
+      "name": "simple-insert",
+      "commit": {
+        "sha": "403d187fbc831a3d1e988a98770c546df9037e36",
+        "url": "https://api.github.com/repos/discord/indexmap/commits/403d187fbc831a3d1e988a98770c546df9037e36"
+      },
+      "protected": false
+    },
+    {
+      "name": "sliced-iterators",
+      "commit": {
+        "sha": "c0e87c4f6245757ddde2f7669f15180ed2535245",
+        "url": "https://api.github.com/repos/discord/indexmap/commits/c0e87c4f6245757ddde2f7669f15180ed2535245"
+      },
+      "protected": false
+    }
+  ],
   "last5": {
     "commits": [
       {

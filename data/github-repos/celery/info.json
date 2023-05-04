@@ -332,7 +332,735 @@
       }
     ],
     "releases": [],
-    "issues": [],
-    "pullRequests": []
+    "issues": [
+      {
+        "url": "https://api.github.com/repos/discord/celery/issues/3",
+        "id": 1113409907,
+        "node_id": "PR_kwDOC5LfZ84xiOhA",
+        "number": 3,
+        "title": "Change kombu dependency to direct ZIP link",
+        "user": {
+          "login": "nwalsh1995",
+          "id": 1879632,
+          "node_id": "MDQ6VXNlcjE4Nzk2MzI=",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/nwalsh1995",
+          "type": "User",
+          "site_admin": false
+        },
+        "labels": [],
+        "state": "closed",
+        "locked": false,
+        "assignee": null,
+        "assignees": [],
+        "milestone": null,
+        "comments": 0,
+        "created_at": "2022-01-25T04:23:29Z",
+        "updated_at": "2023-03-28T04:49:00Z",
+        "closed_at": "2023-03-28T04:49:00Z",
+        "author_association": "NONE",
+        "active_lock_reason": null,
+        "draft": false,
+        "pull_request": {
+          "url": "https://api.github.com/repos/discord/celery/pulls/3",
+          "merged_at": null
+        },
+        "body": "Change kombu dependency to direct HTTPS ZIP to enable dependency hashes.\r\n\r\nThis should solve the `pip-compile` warning:\r\n```\r\n# WARNING: pip install will require the following package to be hashed.\r\n# Consider using a hashable URL like https://github.com/jazzband/pip-tools/archive/SOMECOMMIT.zip\r\nkombu @ git+https://github.com/discord/kombu.git@discord-v3.0.37\r\n```",
+        "reactions": {
+          "url": "https://api.github.com/repos/discord/celery/issues/3/reactions",
+          "total_count": 0,
+          "+1": 0,
+          "-1": 0,
+          "laugh": 0,
+          "hooray": 0,
+          "confused": 0,
+          "heart": 0,
+          "rocket": 0,
+          "eyes": 0
+        },
+        "performed_via_github_app": null,
+        "state_reason": null
+      },
+      {
+        "url": "https://api.github.com/repos/discord/celery/issues/2",
+        "id": 768278231,
+        "node_id": "MDExOlB1bGxSZXF1ZXN0NTQwNzcxMDI2",
+        "number": 2,
+        "title": "discordapp -> discord",
+        "user": {
+          "login": "samschlegel",
+          "id": 5514447,
+          "node_id": "MDQ6VXNlcjU1MTQ0NDc=",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/samschlegel",
+          "type": "User",
+          "site_admin": false
+        },
+        "labels": [],
+        "state": "closed",
+        "locked": false,
+        "assignee": null,
+        "assignees": [],
+        "milestone": null,
+        "comments": 0,
+        "created_at": "2020-12-15T22:57:36Z",
+        "updated_at": "2020-12-15T22:59:25Z",
+        "closed_at": "2020-12-15T22:59:25Z",
+        "author_association": "MEMBER",
+        "active_lock_reason": null,
+        "draft": false,
+        "pull_request": {
+          "url": "https://api.github.com/repos/discord/celery/pulls/2",
+          "merged_at": "2020-12-15T22:59:25Z"
+        },
+        "body": "",
+        "reactions": {
+          "url": "https://api.github.com/repos/discord/celery/issues/2/reactions",
+          "total_count": 0,
+          "+1": 0,
+          "-1": 0,
+          "laugh": 0,
+          "hooray": 0,
+          "confused": 0,
+          "heart": 0,
+          "rocket": 0,
+          "eyes": 0
+        },
+        "performed_via_github_app": null,
+        "state_reason": null
+      },
+      {
+        "url": "https://api.github.com/repos/discord/celery/issues/1",
+        "id": 462934028,
+        "node_id": "MDExOlB1bGxSZXF1ZXN0MjkzNTE2MzM0",
+        "number": 1,
+        "title": "Upgrade kombu to allow py3.7 compatibility",
+        "user": {
+          "login": "jdost",
+          "id": 882537,
+          "node_id": "MDQ6VXNlcjg4MjUzNw==",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/jdost",
+          "type": "User",
+          "site_admin": false
+        },
+        "labels": [],
+        "state": "closed",
+        "locked": false,
+        "assignee": null,
+        "assignees": [],
+        "milestone": null,
+        "comments": 0,
+        "created_at": "2019-07-01T22:13:45Z",
+        "updated_at": "2019-07-02T21:05:25Z",
+        "closed_at": "2019-07-02T21:05:25Z",
+        "author_association": "NONE",
+        "active_lock_reason": null,
+        "draft": false,
+        "pull_request": {
+          "url": "https://api.github.com/repos/discord/celery/pulls/1",
+          "merged_at": "2019-07-02T21:05:25Z"
+        },
+        "body": "* Upgrades kombu to 4.2.0 or greater (due to async keyword conflict for\r\n  python3.7)\r\n* Adds the `3.7` tox env for testing\r\n* Updates imports around kombu upgrade and ports over some removed\r\n  compatibility functions (detect_environment and some test helpers)\r\n",
+        "reactions": {
+          "url": "https://api.github.com/repos/discord/celery/issues/1/reactions",
+          "total_count": 0,
+          "+1": 0,
+          "-1": 0,
+          "laugh": 0,
+          "hooray": 0,
+          "confused": 0,
+          "heart": 0,
+          "rocket": 0,
+          "eyes": 0
+        },
+        "performed_via_github_app": null,
+        "state_reason": null
+      }
+    ],
+    "pullRequests": [
+      {
+        "url": "https://api.github.com/repos/discord/celery/pulls/3",
+        "id": 831055936,
+        "node_id": "PR_kwDOC5LfZ84xiOhA",
+        "number": 3,
+        "state": "closed",
+        "locked": false,
+        "title": "Change kombu dependency to direct ZIP link",
+        "user": {
+          "login": "nwalsh1995",
+          "id": 1879632,
+          "node_id": "MDQ6VXNlcjE4Nzk2MzI=",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/nwalsh1995",
+          "type": "User",
+          "site_admin": false
+        },
+        "body": "Change kombu dependency to direct HTTPS ZIP to enable dependency hashes.\r\n\r\nThis should solve the `pip-compile` warning:\r\n```\r\n# WARNING: pip install will require the following package to be hashed.\r\n# Consider using a hashable URL like https://github.com/jazzband/pip-tools/archive/SOMECOMMIT.zip\r\nkombu @ git+https://github.com/discord/kombu.git@discord-v3.0.37\r\n```",
+        "created_at": "2022-01-25T04:23:29Z",
+        "updated_at": "2023-03-28T04:49:00Z",
+        "closed_at": "2023-03-28T04:49:00Z",
+        "merged_at": null,
+        "merge_commit_sha": "3583cb43d5a40065fe88f37e260404f33abac1b6",
+        "assignee": null,
+        "assignees": [],
+        "requested_reviewers": [],
+        "requested_teams": [],
+        "labels": [],
+        "milestone": null,
+        "draft": false,
+        "head": {
+          "label": "nwalsh1995:kombu-dep-change",
+          "ref": "kombu-dep-change",
+          "sha": "2f2a06b2df0441176a486b4d4fffdc7272d7e17b",
+          "user": {
+            "login": "nwalsh1995",
+            "id": 1879632,
+            "node_id": "MDQ6VXNlcjE4Nzk2MzI=",
+            "gravatar_id": "",
+            "url": "https://api.github.com/users/nwalsh1995",
+            "type": "User",
+            "site_admin": false
+          },
+          "repo": {
+            "id": 451727821,
+            "node_id": "R_kgDOGuzRzQ",
+            "name": "celery",
+            "full_name": "nwalsh1995/celery",
+            "private": false,
+            "owner": {
+              "login": "nwalsh1995",
+              "id": 1879632,
+              "node_id": "MDQ6VXNlcjE4Nzk2MzI=",
+              "gravatar_id": "",
+              "url": "https://api.github.com/users/nwalsh1995",
+              "type": "User",
+              "site_admin": false
+            },
+            "description": "Distributed Task Queue (development branch)",
+            "fork": true,
+            "url": "https://api.github.com/repos/nwalsh1995/celery",
+            "created_at": "2022-01-25T03:56:45Z",
+            "updated_at": "2023-03-28T04:48:58Z",
+            "pushed_at": "2022-01-25T04:37:19Z",
+            "homepage": "http://celeryproject.org",
+            "size": 29831,
+            "stargazers_count": 0,
+            "watchers_count": 0,
+            "language": null,
+            "has_issues": false,
+            "has_projects": true,
+            "has_downloads": true,
+            "has_wiki": true,
+            "has_pages": false,
+            "has_discussions": false,
+            "forks_count": 0,
+            "archived": false,
+            "disabled": true,
+            "open_issues_count": 0,
+            "license": {
+              "key": "other",
+              "name": "Other",
+              "spdx_id": "NOASSERTION",
+              "url": null,
+              "node_id": "MDc6TGljZW5zZTA="
+            },
+            "allow_forking": true,
+            "is_template": false,
+            "web_commit_signoff_required": false,
+            "topics": [],
+            "visibility": "public",
+            "forks": 0,
+            "open_issues": 0,
+            "watchers": 0,
+            "default_branch": "master"
+          }
+        },
+        "base": {
+          "label": "discord:discord-v3.1.26",
+          "ref": "discord-v3.1.26",
+          "sha": "00539ef8939569e9a0aa53b8aec15482f49ffff6",
+          "user": {
+            "login": "discord",
+            "id": 1965106,
+            "node_id": "MDEyOk9yZ2FuaXphdGlvbjE5NjUxMDY=",
+            "gravatar_id": "",
+            "url": "https://api.github.com/users/discord",
+            "type": "Organization",
+            "site_admin": false
+          },
+          "repo": {
+            "id": 194174823,
+            "node_id": "MDEwOlJlcG9zaXRvcnkxOTQxNzQ4MjM=",
+            "name": "celery",
+            "full_name": "discord/celery",
+            "private": false,
+            "owner": {
+              "login": "discord",
+              "id": 1965106,
+              "node_id": "MDEyOk9yZ2FuaXphdGlvbjE5NjUxMDY=",
+              "gravatar_id": "",
+              "url": "https://api.github.com/users/discord",
+              "type": "Organization",
+              "site_admin": false
+            },
+            "description": "Distributed Task Queue (development branch)",
+            "fork": true,
+            "url": "https://api.github.com/repos/discord/celery",
+            "created_at": "2019-06-27T23:16:13Z",
+            "updated_at": "2021-04-28T21:28:47Z",
+            "pushed_at": "2022-09-16T19:17:47Z",
+            "homepage": "http://celeryproject.org",
+            "size": 29833,
+            "stargazers_count": 5,
+            "watchers_count": 5,
+            "language": "Python",
+            "has_issues": false,
+            "has_projects": true,
+            "has_downloads": true,
+            "has_wiki": true,
+            "has_pages": false,
+            "has_discussions": false,
+            "forks_count": 5,
+            "archived": false,
+            "disabled": false,
+            "open_issues_count": 0,
+            "license": {
+              "key": "other",
+              "name": "Other",
+              "spdx_id": "NOASSERTION",
+              "url": null,
+              "node_id": "MDc6TGljZW5zZTA="
+            },
+            "allow_forking": true,
+            "is_template": false,
+            "web_commit_signoff_required": false,
+            "topics": [],
+            "visibility": "public",
+            "forks": 5,
+            "open_issues": 0,
+            "watchers": 5,
+            "default_branch": "master"
+          }
+        },
+        "_links": {
+          "self": {
+            "href": "https://api.github.com/repos/discord/celery/pulls/3"
+          },
+          "html": {
+            "href": "https://github.com/discord/celery/pull/3"
+          },
+          "issue": {
+            "href": "https://api.github.com/repos/discord/celery/issues/3"
+          },
+          "comments": {
+            "href": "https://api.github.com/repos/discord/celery/issues/3/comments"
+          },
+          "review_comments": {
+            "href": "https://api.github.com/repos/discord/celery/pulls/3/comments"
+          },
+          "review_comment": {
+            "href": "https://api.github.com/repos/discord/celery/pulls/comments{/number}"
+          },
+          "commits": {
+            "href": "https://api.github.com/repos/discord/celery/pulls/3/commits"
+          },
+          "statuses": {
+            "href": "https://api.github.com/repos/discord/celery/statuses/2f2a06b2df0441176a486b4d4fffdc7272d7e17b"
+          }
+        },
+        "author_association": "NONE",
+        "auto_merge": null,
+        "active_lock_reason": null
+      },
+      {
+        "url": "https://api.github.com/repos/discord/celery/pulls/2",
+        "id": 540771026,
+        "node_id": "MDExOlB1bGxSZXF1ZXN0NTQwNzcxMDI2",
+        "number": 2,
+        "state": "closed",
+        "locked": false,
+        "title": "discordapp -> discord",
+        "user": {
+          "login": "samschlegel",
+          "id": 5514447,
+          "node_id": "MDQ6VXNlcjU1MTQ0NDc=",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/samschlegel",
+          "type": "User",
+          "site_admin": false
+        },
+        "body": "",
+        "created_at": "2020-12-15T22:57:36Z",
+        "updated_at": "2020-12-15T22:59:25Z",
+        "closed_at": "2020-12-15T22:59:25Z",
+        "merged_at": "2020-12-15T22:59:25Z",
+        "merge_commit_sha": "00539ef8939569e9a0aa53b8aec15482f49ffff6",
+        "assignee": null,
+        "assignees": [],
+        "requested_reviewers": [],
+        "requested_teams": [],
+        "labels": [],
+        "milestone": null,
+        "draft": false,
+        "head": {
+          "label": "discord:discordapp-to-discord",
+          "ref": "discordapp-to-discord",
+          "sha": "5291d4831a815e288ef806571754bcd1f349a91d",
+          "user": {
+            "login": "discord",
+            "id": 1965106,
+            "node_id": "MDEyOk9yZ2FuaXphdGlvbjE5NjUxMDY=",
+            "gravatar_id": "",
+            "url": "https://api.github.com/users/discord",
+            "type": "Organization",
+            "site_admin": false
+          },
+          "repo": {
+            "id": 194174823,
+            "node_id": "MDEwOlJlcG9zaXRvcnkxOTQxNzQ4MjM=",
+            "name": "celery",
+            "full_name": "discord/celery",
+            "private": false,
+            "owner": {
+              "login": "discord",
+              "id": 1965106,
+              "node_id": "MDEyOk9yZ2FuaXphdGlvbjE5NjUxMDY=",
+              "gravatar_id": "",
+              "url": "https://api.github.com/users/discord",
+              "type": "Organization",
+              "site_admin": false
+            },
+            "description": "Distributed Task Queue (development branch)",
+            "fork": true,
+            "url": "https://api.github.com/repos/discord/celery",
+            "created_at": "2019-06-27T23:16:13Z",
+            "updated_at": "2021-04-28T21:28:47Z",
+            "pushed_at": "2022-09-16T19:17:47Z",
+            "homepage": "http://celeryproject.org",
+            "size": 29833,
+            "stargazers_count": 5,
+            "watchers_count": 5,
+            "language": "Python",
+            "has_issues": false,
+            "has_projects": true,
+            "has_downloads": true,
+            "has_wiki": true,
+            "has_pages": false,
+            "has_discussions": false,
+            "forks_count": 5,
+            "archived": false,
+            "disabled": false,
+            "open_issues_count": 0,
+            "license": {
+              "key": "other",
+              "name": "Other",
+              "spdx_id": "NOASSERTION",
+              "url": null,
+              "node_id": "MDc6TGljZW5zZTA="
+            },
+            "allow_forking": true,
+            "is_template": false,
+            "web_commit_signoff_required": false,
+            "topics": [],
+            "visibility": "public",
+            "forks": 5,
+            "open_issues": 0,
+            "watchers": 5,
+            "default_branch": "master"
+          }
+        },
+        "base": {
+          "label": "discord:discord-v3.1.26",
+          "ref": "discord-v3.1.26",
+          "sha": "7d696e1e447e7627009d985b47b04822f71e3013",
+          "user": {
+            "login": "discord",
+            "id": 1965106,
+            "node_id": "MDEyOk9yZ2FuaXphdGlvbjE5NjUxMDY=",
+            "gravatar_id": "",
+            "url": "https://api.github.com/users/discord",
+            "type": "Organization",
+            "site_admin": false
+          },
+          "repo": {
+            "id": 194174823,
+            "node_id": "MDEwOlJlcG9zaXRvcnkxOTQxNzQ4MjM=",
+            "name": "celery",
+            "full_name": "discord/celery",
+            "private": false,
+            "owner": {
+              "login": "discord",
+              "id": 1965106,
+              "node_id": "MDEyOk9yZ2FuaXphdGlvbjE5NjUxMDY=",
+              "gravatar_id": "",
+              "url": "https://api.github.com/users/discord",
+              "type": "Organization",
+              "site_admin": false
+            },
+            "description": "Distributed Task Queue (development branch)",
+            "fork": true,
+            "url": "https://api.github.com/repos/discord/celery",
+            "created_at": "2019-06-27T23:16:13Z",
+            "updated_at": "2021-04-28T21:28:47Z",
+            "pushed_at": "2022-09-16T19:17:47Z",
+            "homepage": "http://celeryproject.org",
+            "size": 29833,
+            "stargazers_count": 5,
+            "watchers_count": 5,
+            "language": "Python",
+            "has_issues": false,
+            "has_projects": true,
+            "has_downloads": true,
+            "has_wiki": true,
+            "has_pages": false,
+            "has_discussions": false,
+            "forks_count": 5,
+            "archived": false,
+            "disabled": false,
+            "open_issues_count": 0,
+            "license": {
+              "key": "other",
+              "name": "Other",
+              "spdx_id": "NOASSERTION",
+              "url": null,
+              "node_id": "MDc6TGljZW5zZTA="
+            },
+            "allow_forking": true,
+            "is_template": false,
+            "web_commit_signoff_required": false,
+            "topics": [],
+            "visibility": "public",
+            "forks": 5,
+            "open_issues": 0,
+            "watchers": 5,
+            "default_branch": "master"
+          }
+        },
+        "_links": {
+          "self": {
+            "href": "https://api.github.com/repos/discord/celery/pulls/2"
+          },
+          "html": {
+            "href": "https://github.com/discord/celery/pull/2"
+          },
+          "issue": {
+            "href": "https://api.github.com/repos/discord/celery/issues/2"
+          },
+          "comments": {
+            "href": "https://api.github.com/repos/discord/celery/issues/2/comments"
+          },
+          "review_comments": {
+            "href": "https://api.github.com/repos/discord/celery/pulls/2/comments"
+          },
+          "review_comment": {
+            "href": "https://api.github.com/repos/discord/celery/pulls/comments{/number}"
+          },
+          "commits": {
+            "href": "https://api.github.com/repos/discord/celery/pulls/2/commits"
+          },
+          "statuses": {
+            "href": "https://api.github.com/repos/discord/celery/statuses/5291d4831a815e288ef806571754bcd1f349a91d"
+          }
+        },
+        "author_association": "MEMBER",
+        "auto_merge": null,
+        "active_lock_reason": null
+      },
+      {
+        "url": "https://api.github.com/repos/discord/celery/pulls/1",
+        "id": 293516334,
+        "node_id": "MDExOlB1bGxSZXF1ZXN0MjkzNTE2MzM0",
+        "number": 1,
+        "state": "closed",
+        "locked": false,
+        "title": "Upgrade kombu to allow py3.7 compatibility",
+        "user": {
+          "login": "jdost",
+          "id": 882537,
+          "node_id": "MDQ6VXNlcjg4MjUzNw==",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/jdost",
+          "type": "User",
+          "site_admin": false
+        },
+        "body": "* Upgrades kombu to 4.2.0 or greater (due to async keyword conflict for\r\n  python3.7)\r\n* Adds the `3.7` tox env for testing\r\n* Updates imports around kombu upgrade and ports over some removed\r\n  compatibility functions (detect_environment and some test helpers)\r\n",
+        "created_at": "2019-07-01T22:13:45Z",
+        "updated_at": "2019-07-02T21:05:25Z",
+        "closed_at": "2019-07-02T21:05:25Z",
+        "merged_at": "2019-07-02T21:05:25Z",
+        "merge_commit_sha": "4251158badb33c6c0bb91e9cbcc7df9a6a1c1f89",
+        "assignee": null,
+        "assignees": [],
+        "requested_reviewers": [],
+        "requested_teams": [],
+        "labels": [],
+        "milestone": null,
+        "draft": false,
+        "head": {
+          "label": "jdost:python37-compat",
+          "ref": "python37-compat",
+          "sha": "d66e4ac4bc43835e2746d36b1529ae55ec6b947e",
+          "user": {
+            "login": "jdost",
+            "id": 882537,
+            "node_id": "MDQ6VXNlcjg4MjUzNw==",
+            "gravatar_id": "",
+            "url": "https://api.github.com/users/jdost",
+            "type": "User",
+            "site_admin": false
+          },
+          "repo": {
+            "id": 194720611,
+            "node_id": "MDEwOlJlcG9zaXRvcnkxOTQ3MjA2MTE=",
+            "name": "celery",
+            "full_name": "jdost/celery",
+            "private": false,
+            "owner": {
+              "login": "jdost",
+              "id": 882537,
+              "node_id": "MDQ6VXNlcjg4MjUzNw==",
+              "gravatar_id": "",
+              "url": "https://api.github.com/users/jdost",
+              "type": "User",
+              "site_admin": false
+            },
+            "description": "Distributed Task Queue (development branch)",
+            "fork": true,
+            "url": "https://api.github.com/repos/jdost/celery",
+            "created_at": "2019-07-01T18:05:09Z",
+            "updated_at": "2019-07-01T18:05:13Z",
+            "pushed_at": "2019-07-01T22:12:29Z",
+            "homepage": "http://celeryproject.org",
+            "size": 28812,
+            "stargazers_count": 0,
+            "watchers_count": 0,
+            "language": "Python",
+            "has_issues": false,
+            "has_projects": true,
+            "has_downloads": true,
+            "has_wiki": true,
+            "has_pages": false,
+            "has_discussions": false,
+            "forks_count": 0,
+            "archived": false,
+            "disabled": false,
+            "open_issues_count": 0,
+            "license": {
+              "key": "other",
+              "name": "Other",
+              "spdx_id": "NOASSERTION",
+              "url": null,
+              "node_id": "MDc6TGljZW5zZTA="
+            },
+            "allow_forking": true,
+            "is_template": false,
+            "web_commit_signoff_required": false,
+            "topics": [],
+            "visibility": "public",
+            "forks": 0,
+            "open_issues": 0,
+            "watchers": 0,
+            "default_branch": "master"
+          }
+        },
+        "base": {
+          "label": "discord:3.1-gevent-fix",
+          "ref": "3.1-gevent-fix",
+          "sha": "a141ccce843f382ab56d9c810c17647afc641905",
+          "user": {
+            "login": "discord",
+            "id": 1965106,
+            "node_id": "MDEyOk9yZ2FuaXphdGlvbjE5NjUxMDY=",
+            "gravatar_id": "",
+            "url": "https://api.github.com/users/discord",
+            "type": "Organization",
+            "site_admin": false
+          },
+          "repo": {
+            "id": 194174823,
+            "node_id": "MDEwOlJlcG9zaXRvcnkxOTQxNzQ4MjM=",
+            "name": "celery",
+            "full_name": "discord/celery",
+            "private": false,
+            "owner": {
+              "login": "discord",
+              "id": 1965106,
+              "node_id": "MDEyOk9yZ2FuaXphdGlvbjE5NjUxMDY=",
+              "gravatar_id": "",
+              "url": "https://api.github.com/users/discord",
+              "type": "Organization",
+              "site_admin": false
+            },
+            "description": "Distributed Task Queue (development branch)",
+            "fork": true,
+            "url": "https://api.github.com/repos/discord/celery",
+            "created_at": "2019-06-27T23:16:13Z",
+            "updated_at": "2021-04-28T21:28:47Z",
+            "pushed_at": "2022-09-16T19:17:47Z",
+            "homepage": "http://celeryproject.org",
+            "size": 29833,
+            "stargazers_count": 5,
+            "watchers_count": 5,
+            "language": "Python",
+            "has_issues": false,
+            "has_projects": true,
+            "has_downloads": true,
+            "has_wiki": true,
+            "has_pages": false,
+            "has_discussions": false,
+            "forks_count": 5,
+            "archived": false,
+            "disabled": false,
+            "open_issues_count": 0,
+            "license": {
+              "key": "other",
+              "name": "Other",
+              "spdx_id": "NOASSERTION",
+              "url": null,
+              "node_id": "MDc6TGljZW5zZTA="
+            },
+            "allow_forking": true,
+            "is_template": false,
+            "web_commit_signoff_required": false,
+            "topics": [],
+            "visibility": "public",
+            "forks": 5,
+            "open_issues": 0,
+            "watchers": 5,
+            "default_branch": "master"
+          }
+        },
+        "_links": {
+          "self": {
+            "href": "https://api.github.com/repos/discord/celery/pulls/1"
+          },
+          "html": {
+            "href": "https://github.com/discord/celery/pull/1"
+          },
+          "issue": {
+            "href": "https://api.github.com/repos/discord/celery/issues/1"
+          },
+          "comments": {
+            "href": "https://api.github.com/repos/discord/celery/issues/1/comments"
+          },
+          "review_comments": {
+            "href": "https://api.github.com/repos/discord/celery/pulls/1/comments"
+          },
+          "review_comment": {
+            "href": "https://api.github.com/repos/discord/celery/pulls/comments{/number}"
+          },
+          "commits": {
+            "href": "https://api.github.com/repos/discord/celery/pulls/1/commits"
+          },
+          "statuses": {
+            "href": "https://api.github.com/repos/discord/celery/statuses/d66e4ac4bc43835e2746d36b1529ae55ec6b947e"
+          }
+        },
+        "author_association": "NONE",
+        "auto_merge": null,
+        "active_lock_reason": null
+      }
+    ]
   }
 }
