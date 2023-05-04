@@ -51,16 +51,7 @@
     "triage": false,
     "pull": false
   },
-  "branches": [
-    {
-      "name": "master",
-      "commit": {
-        "sha": "21aa237ecbfb771a959fbb9149db26e4df4d4b5a",
-        "url": "https://api.github.com/repos/discord/sqlite3/commits/21aa237ecbfb771a959fbb9149db26e4df4d4b5a"
-      },
-      "protected": false
-    }
-  ],
+  "branches": [],
   "last5": {
     "commits": [
       {
