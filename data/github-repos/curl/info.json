@@ -57,7 +57,64 @@
     "triage": false,
     "pull": false
   },
-  "branches": [],
+  "branches": [
+    {
+      "name": "7_42",
+      "commit": {
+        "sha": "26cb9f1646e9b6be7925c18e439a683ca4c31555",
+        "url": "https://api.github.com/repos/discord/curl/commits/26cb9f1646e9b6be7925c18e439a683ca4c31555"
+      },
+      "protected": false
+    },
+    {
+      "name": "discord",
+      "commit": {
+        "sha": "53c718f10ea8bfc475c79cfccb70f2fa9c120f57",
+        "url": "https://api.github.com/repos/discord/curl/commits/53c718f10ea8bfc475c79cfccb70f2fa9c120f57"
+      },
+      "protected": false
+    },
+    {
+      "name": "dispatch",
+      "commit": {
+        "sha": "aeb772f8d783a106fc90e0c41df225114bc3d323",
+        "url": "https://api.github.com/repos/discord/curl/commits/aeb772f8d783a106fc90e0c41df225114bc3d323"
+      },
+      "protected": false
+    },
+    {
+      "name": "http2-push",
+      "commit": {
+        "sha": "f87a3d736f3200029c8bed3ab4dad50f9680be7a",
+        "url": "https://api.github.com/repos/discord/curl/commits/f87a3d736f3200029c8bed3ab4dad50f9680be7a"
+      },
+      "protected": false
+    },
+    {
+      "name": "idn2_utf8",
+      "commit": {
+        "sha": "b135cd255b6aa7d051ea906693bf67580153ed76",
+        "url": "https://api.github.com/repos/discord/curl/commits/b135cd255b6aa7d051ea906693bf67580153ed76"
+      },
+      "protected": false
+    },
+    {
+      "name": "issue-346",
+      "commit": {
+        "sha": "d363db6ee8bd89bdb522bd86fc92bf2e354a32c2",
+        "url": "https://api.github.com/repos/discord/curl/commits/d363db6ee8bd89bdb522bd86fc92bf2e354a32c2"
+      },
+      "protected": false
+    },
+    {
+      "name": "master",
+      "commit": {
+        "sha": "87ba80a6df1dfd7ceaaa52352c9f23afff0ed513",
+        "url": "https://api.github.com/repos/discord/curl/commits/87ba80a6df1dfd7ceaaa52352c9f23afff0ed513"
+      },
+      "protected": false
+    }
+  ],
   "last5": {
     "commits": [
       {
