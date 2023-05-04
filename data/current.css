@@ -93742,6 +93742,100 @@ strong {
     color: var(--header-secondary)
 }
 
+.container-3_nsdX {
+    width: 100%;
+    position: relative;
+    margin-bottom: 24px
+}
+
+.banner-1BN2Ox {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    position: relative;
+    overflow: hidden;
+    padding: 24px;
+    border-radius: 16px
+}
+
+.background-1Nvozn {
+    content: "";
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-repeat: no-repeat
+}
+
+.backgroundImage-2ETsZN {
+    background-position: top;
+    background-size: cover
+}
+
+.backgroundImage-2ETsZN.variant1-3d2v9n {
+    background-image: url(/assets/e0ae4b84cfff7627dca868db582f6649.svg)
+}
+
+.backgroundImage-2ETsZN.variant2-1aQRGQ {
+    background-image: url(/assets/13bff37b621a87b098828471d7266934.svg)
+}
+
+.backgroundRays-CVBd6n {
+    background-size: auto 100%
+}
+
+.backgroundRays-CVBd6n.variant1-3d2v9n {
+    background-image: url(/assets/c1d1bc2224fcdc87be1feaceb41eb02d.svg);
+    background-position: 100%
+}
+
+.backgroundRays-CVBd6n.variant2-1aQRGQ {
+    background-image: url(/assets/266a906d5d618e30acefc5fb9140ec91.svg);
+    background-position: 0
+}
+
+.backgroundAvatars-1Yv3FM {
+    background-size: auto calc(100% - 4px)
+}
+
+.backgroundAvatars-1Yv3FM.variant1-3d2v9n {
+    background-image: url(/assets/30dfc7beae316280ce0923e6a0f2746d.svg);
+    background-position: 100%
+}
+
+.backgroundAvatars-1Yv3FM.variant2-1aQRGQ {
+    background-image: url(/assets/e13bb12b753f43653d9f343eadc1fc84.svg);
+    background-position: 0
+}
+
+.text-3Q_82a {
+    position: relative
+}
+
+.text-3Q_82a.variant1-3d2v9n {
+    margin-right: 182px;
+    padding-right: 12px
+}
+
+.text-3Q_82a.variant2-1aQRGQ {
+    margin-left: 123px;
+    padding-left: 12px
+}
+
+.title-B9eeG7 {
+    margin-bottom: 8px
+}
+
+.title-B9eeG7:not(.fullScreen-1sVR3o) {
+    padding-right: 36px
+}
+
+.description-2yWcHP {}
+
+.description-2yWcHP a {
+    color: var(--white-500)
+}
+
 .buttonWhite-hd8TaT {
     color: hsl(0, calc(var(--saturation-factor, 1)*0%), 100%) !important;
     border-color: hsl(0, calc(var(--saturation-factor, 1)*0%), 100%) !important
@@ -154364,4 +154458,4 @@ html .invoiceCancelRow-dVOR64 {
     flex-direction: column
 }
 
-/*# sourceMappingURL=40532.06b83b7db609aef6f0c6.css.map*/
+/*# sourceMappingURL=40532.20b1f1647c958da42b56.css.map*/
