@@ -57,7 +57,32 @@
     "triage": false,
     "pull": false
   },
-  "branches": [],
+  "branches": [
+    {
+      "name": "master",
+      "commit": {
+        "sha": "5268d0476f9edf098552fa1d03d229264daea8b0",
+        "url": "https://api.github.com/repos/discord/clipboard/commits/5268d0476f9edf098552fa1d03d229264daea8b0"
+      },
+      "protected": false
+    },
+    {
+      "name": "v1.10.0-discord",
+      "commit": {
+        "sha": "87aefd89441a94677db877768485a654fc1e81e0",
+        "url": "https://api.github.com/repos/discord/clipboard/commits/87aefd89441a94677db877768485a654fc1e81e0"
+      },
+      "protected": false
+    },
+    {
+      "name": "v1.10.0-discord-dist",
+      "commit": {
+        "sha": "5bef8d5cb5939099f51db09c4bac0b5e982578b1",
+        "url": "https://api.github.com/repos/discord/clipboard/commits/5bef8d5cb5939099f51db09c4bac0b5e982578b1"
+      },
+      "protected": false
+    }
+  ],
   "last5": {
     "commits": [
       {
