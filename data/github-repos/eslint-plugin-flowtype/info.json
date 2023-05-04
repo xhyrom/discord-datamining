@@ -57,7 +57,128 @@
     "triage": false,
     "pull": false
   },
-  "branches": [],
+  "branches": [
+    {
+      "name": "ObjectTypeIndexer",
+      "commit": {
+        "sha": "82c87c46cb543d9186c2524252ebfd43ab2f76b6",
+        "url": "https://api.github.com/repos/discord/eslint-plugin-flowtype/commits/82c87c46cb543d9186c2524252ebfd43ab2f76b6"
+      },
+      "protected": false
+    },
+    {
+      "name": "aaron-harvey-feature/no-primitive-constructor-types",
+      "commit": {
+        "sha": "ceea11c48f65f9d16032e4a673ae010736a56aec",
+        "url": "https://api.github.com/repos/discord/eslint-plugin-flowtype/commits/ceea11c48f65f9d16032e4a673ae010736a56aec"
+      },
+      "protected": false
+    },
+    {
+      "name": "amilajack-patch-1",
+      "commit": {
+        "sha": "b8f8412e2ed7b785f38692a18c5392ecf57e6319",
+        "url": "https://api.github.com/repos/discord/eslint-plugin-flowtype/commits/b8f8412e2ed7b785f38692a18c5392ecf57e6319"
+      },
+      "protected": false
+    },
+    {
+      "name": "deprecateValidSyntax",
+      "commit": {
+        "sha": "ed24796a4de8cf551961b0ffb3b71f7a4c6668e0",
+        "url": "https://api.github.com/repos/discord/eslint-plugin-flowtype/commits/ed24796a4de8cf551961b0ffb3b71f7a4c6668e0"
+      },
+      "protected": false
+    },
+    {
+      "name": "discord",
+      "commit": {
+        "sha": "712d840e0e72396a12a3e44021227f555306b75c",
+        "url": "https://api.github.com/repos/discord/eslint-plugin-flowtype/commits/712d840e0e72396a12a3e44021227f555306b75c"
+      },
+      "protected": false
+    },
+    {
+      "name": "feat/issue-236-prefer-read-only-array",
+      "commit": {
+        "sha": "fe5df9f25888f3e83fae9a4cec40467335a92320",
+        "url": "https://api.github.com/repos/discord/eslint-plugin-flowtype/commits/fe5df9f25888f3e83fae9a4cec40467335a92320"
+      },
+      "protected": false
+    },
+    {
+      "name": "feature/add-commit-linting",
+      "commit": {
+        "sha": "55c362301af8065edef65c64cb9fc878e0a42361",
+        "url": "https://api.github.com/repos/discord/eslint-plugin-flowtype/commits/55c362301af8065edef65c64cb9fc878e0a42361"
+      },
+      "protected": false
+    },
+    {
+      "name": "feature/add-jsonlint",
+      "commit": {
+        "sha": "8838dd71b1529c2eafc51d925e7cda1fdfb153f5",
+        "url": "https://api.github.com/repos/discord/eslint-plugin-flowtype/commits/8838dd71b1529c2eafc51d925e7cda1fdfb153f5"
+      },
+      "protected": false
+    },
+    {
+      "name": "feature/add-recommended-rules-preset",
+      "commit": {
+        "sha": "3684a1940f8a531cbf33dbe755f3b33367fa25cb",
+        "url": "https://api.github.com/repos/discord/eslint-plugin-flowtype/commits/3684a1940f8a531cbf33dbe755f3b33367fa25cb"
+      },
+      "protected": false
+    },
+    {
+      "name": "feature/sort-keys",
+      "commit": {
+        "sha": "f6b8deb187decfd0dc91262961444052c848a6a1",
+        "url": "https://api.github.com/repos/discord/eslint-plugin-flowtype/commits/f6b8deb187decfd0dc91262961444052c848a6a1"
+      },
+      "protected": false
+    },
+    {
+      "name": "fix-qualified-typeof",
+      "commit": {
+        "sha": "dc80c18a7480cf547c81114508f314c5d19ead3d",
+        "url": "https://api.github.com/repos/discord/eslint-plugin-flowtype/commits/dc80c18a7480cf547c81114508f314c5d19ead3d"
+      },
+      "protected": false
+    },
+    {
+      "name": "master",
+      "commit": {
+        "sha": "712d840e0e72396a12a3e44021227f555306b75c",
+        "url": "https://api.github.com/repos/discord/eslint-plugin-flowtype/commits/712d840e0e72396a12a3e44021227f555306b75c"
+      },
+      "protected": false
+    },
+    {
+      "name": "objectTypeDelimiter",
+      "commit": {
+        "sha": "a99721bddb005569d56f1459409aac54d4606102",
+        "url": "https://api.github.com/repos/discord/eslint-plugin-flowtype/commits/a99721bddb005569d56f1459409aac54d4606102"
+      },
+      "protected": false
+    },
+    {
+      "name": "typeCastColonSpacing",
+      "commit": {
+        "sha": "0e0081f2a031a46fb180a40a2f0562d7767b679a",
+        "url": "https://api.github.com/repos/discord/eslint-plugin-flowtype/commits/0e0081f2a031a46fb180a40a2f0562d7767b679a"
+      },
+      "protected": false
+    },
+    {
+      "name": "zertosh-port-flow-vars",
+      "commit": {
+        "sha": "abbc994189781c6aa1eda22422915d4eb6823ca3",
+        "url": "https://api.github.com/repos/discord/eslint-plugin-flowtype/commits/abbc994189781c6aa1eda22422915d4eb6823ca3"
+      },
+      "protected": false
+    }
+  ],
   "last5": {
     "commits": [
       {
