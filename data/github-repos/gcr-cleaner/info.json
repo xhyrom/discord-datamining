@@ -57,7 +57,16 @@
     "triage": false,
     "pull": false
   },
-  "branches": [],
+  "branches": [
+    {
+      "name": "main",
+      "commit": {
+        "sha": "ba2e32a233b0b4a27833063c52bfdeae7045e720",
+        "url": "https://api.github.com/repos/discord/gcr-cleaner/commits/ba2e32a233b0b4a27833063c52bfdeae7045e720"
+      },
+      "protected": false
+    }
+  ],
   "last5": {
     "commits": [
       {
