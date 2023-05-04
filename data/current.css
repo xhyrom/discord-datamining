@@ -125086,6 +125086,69 @@ input::-webkit-outer-spin-button {
     background-color: var(--background-modifier-accent)
 }
 
+.channelInfo-1XOTfG {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    min-width: 0;
+    -webkit-box-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+    margin-right: 4px
+}
+
+.speakerIcon-1zPEuH {
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 auto;
+    flex: 0 0 auto;
+    margin-right: 4px
+}
+
+.divider-1sptrA {
+    margin-left: 8px;
+    margin-right: 8px;
+    width: 1px;
+    height: 20px;
+    background-color: var(--interactive-muted)
+}
+
+.channelName-2E128x {
+    -webkit-box-flex: 0;
+    -ms-flex: 0 1 auto;
+    flex: 0 1 auto;
+    min-width: 0;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap
+}
+
+.channelItemActivities-1uEcBe {
+    margin-right: 4px
+}
+
+.channelActivitiesText-2e1Xel {}
+
+.voiceUserContainer-31QymL {
+    -webkit-box-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: end;
+    -ms-flex-pack: end;
+    justify-content: flex-end;
+    margin-left: 4px;
+    margin-right: 4px;
+    margin-bottom: 4px
+}
+
 .scroll-3Y3guO {
     height: 100%;
     padding: 16px
@@ -125108,23 +125171,6 @@ input::-webkit-outer-spin-button {
     top: 0
 }
 
-.channelInfo-2MhLoR {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    justify-content: center;
-    min-width: 0;
-    -webkit-box-flex: 1;
-    -ms-flex: 1;
-    flex: 1;
-    margin-right: 4px
-}
-
 .descriptionArea-1fFg2c {
     margin-bottom: 16px
 }
@@ -125133,55 +125179,10 @@ input::-webkit-outer-spin-button {
     margin-top: 8px
 }
 
-.speakerIcon-2JObAT {
-    -webkit-box-flex: 0;
-    -ms-flex: 0 0 auto;
-    flex: 0 0 auto;
-    margin-right: 4px
-}
-
-.divider-3ykJi_ {
-    margin-left: 8px;
-    margin-right: 8px;
-    width: 1px;
-    height: 20px;
-    background-color: var(--interactive-muted)
-}
-
-.channelName-2oq00k {
-    -webkit-box-flex: 0;
-    -ms-flex: 0 1 auto;
-    flex: 0 1 auto;
-    min-width: 0;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    white-space: nowrap
-}
-
-.channelItemActivities-1rwhYb {
-    margin-right: 4px
-}
-
-.channelActivitiesText-1pk1MK {}
-
-.voiceUserContainer-2qYxTd {
-    -webkit-box-flex: 1;
-    -ms-flex: 1;
-    flex: 1;
-    -webkit-box-pack: end;
-    -ms-flex-pack: end;
-    justify-content: flex-end;
-    margin-left: 4px
-}
-
-.checkboxContainer-TRi2t3,
-.voiceUserContainer-2qYxTd {
+.checkboxContainer-TRi2t3 {
     display: -webkit-box;
     display: -ms-flexbox;
-    display: flex
-}
-
-.checkboxContainer-TRi2t3 {
+    display: flex;
     margin-top: 12px;
     -webkit-box-align: center;
     -ms-flex-align: center;
@@ -132980,6 +132981,46 @@ html .invoiceCancelRow-3s2UuC {
     object-fit: cover;
     border-radius: 8px;
     margin-top: 16px
+}
+
+.container-lpf9y1 {
+    display: grid;
+    grid-template-columns: 24px 1fr;
+    grid-gap: 8px
+}
+
+.acronym-3eWTRs,
+.container-lpf9y1 {
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center
+}
+
+.acronym-3eWTRs {
+    width: 24px;
+    height: 24px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    background-color: var(--background-secondary-alt);
+    color: var(--text-normal);
+    -webkit-box-flex: 0;
+    -ms-flex: none;
+    flex: none;
+    border-radius: 12px
+}
+
+.acronym-3eWTRs,
+.text-1Y1fjJ {
+    white-space: nowrap
+}
+
+.text-1Y1fjJ {
+    text-overflow: ellipsis;
+    overflow: hidden
 }
 
 .outerContainer-3t7lrW {
@@ -154651,4 +154692,4 @@ html .invoiceCancelRow-dVOR64 {
     flex-direction: column
 }
 
-/*# sourceMappingURL=40532.45ee3e2bea23cbdbeb67.css.map*/
+/*# sourceMappingURL=40532.75694648815886c0ccef.css.map*/
