@@ -57,7 +57,48 @@
     "triage": false,
     "pull": false
   },
-  "branches": [],
+  "branches": [
+    {
+      "name": "master",
+      "commit": {
+        "sha": "f8b1da53a4b53af9c655a17a4e0cb86959c932d8",
+        "url": "https://api.github.com/repos/discord/rules_apple/commits/f8b1da53a4b53af9c655a17a4e0cb86959c932d8"
+      },
+      "protected": false
+    },
+    {
+      "name": "sergiocampama-patch-1",
+      "commit": {
+        "sha": "b48bd1df6f5998c32c7f074e30720fc4bc25cd5e",
+        "url": "https://api.github.com/repos/discord/rules_apple/commits/b48bd1df6f5998c32c7f074e30720fc4bc25cd5e"
+      },
+      "protected": false
+    },
+    {
+      "name": "test_244914887",
+      "commit": {
+        "sha": "18c25ec2d56dc11379ebc5d944879012dfc6a52c",
+        "url": "https://api.github.com/repos/discord/rules_apple/commits/18c25ec2d56dc11379ebc5d944879012dfc6a52c"
+      },
+      "protected": false
+    },
+    {
+      "name": "test_245259576",
+      "commit": {
+        "sha": "1fc8aa14ea2567622abd7ed7c4fc698c9b5f1e98",
+        "url": "https://api.github.com/repos/discord/rules_apple/commits/1fc8aa14ea2567622abd7ed7c4fc698c9b5f1e98"
+      },
+      "protected": false
+    },
+    {
+      "name": "test_249066748",
+      "commit": {
+        "sha": "7b2d10a1187b0c3f1bacf38cc62a3254b0dfe147",
+        "url": "https://api.github.com/repos/discord/rules_apple/commits/7b2d10a1187b0c3f1bacf38cc62a3254b0dfe147"
+      },
+      "protected": false
+    }
+  ],
   "last5": {
     "commits": [
       {
