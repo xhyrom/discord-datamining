@@ -48204,6 +48204,21 @@ input[type=checked]:focus-visible+.label-3TDpbn {
     margin-bottom: 4px
 }
 
+.emojiContainer-2NXhG5 {
+    position: absolute;
+    isolation: isolate
+}
+
+.emoji-jX0XBO {
+    z-index: 1
+}
+
+.cannon-3ePveM {
+    position: absolute;
+    width: 100%;
+    height: 100%
+}
+
 .container-2dXT_2 {
     background-color: var(--background-floating);
     border-radius: 8px;
@@ -154458,4 +154473,4 @@ html .invoiceCancelRow-dVOR64 {
     flex-direction: column
 }
 
-/*# sourceMappingURL=40532.20b1f1647c958da42b56.css.map*/
+/*# sourceMappingURL=40532.c8c037be6a05acc74b14.css.map*/
