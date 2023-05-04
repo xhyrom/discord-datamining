@@ -335,7 +335,188 @@
         ]
       }
     ],
-    "releases": [],
+    "releases": [
+      {
+        "url": "https://api.github.com/repos/discord/gradle-gcs-build-cache/releases/65020769",
+        "id": 65020769,
+        "author": {
+          "login": "denbeigh2000",
+          "id": 1646744,
+          "node_id": "MDQ6VXNlcjE2NDY3NDQ=",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/denbeigh2000",
+          "type": "User",
+          "site_admin": false
+        },
+        "node_id": "RE_kwDOEiXUNM4D4CNh",
+        "tag_name": "discord_fixes_2022_04_21",
+        "target_commitish": "master",
+        "name": "",
+        "draft": false,
+        "prerelease": false,
+        "created_at": "2022-04-21T23:39:35Z",
+        "published_at": "2022-04-21T23:41:56Z",
+        "assets": [
+          {
+            "url": "https://api.github.com/repos/discord/gradle-gcs-build-cache/releases/assets/63269236",
+            "id": 63269236,
+            "node_id": "RA_kwDOEiXUNM4DxWl0",
+            "name": "gradle-gcs-build-cache-1.0.1-javadoc.jar",
+            "label": null,
+            "uploader": {
+              "login": "denbeigh2000",
+              "id": 1646744,
+              "node_id": "MDQ6VXNlcjE2NDY3NDQ=",
+              "gravatar_id": "",
+              "url": "https://api.github.com/users/denbeigh2000",
+              "type": "User",
+              "site_admin": false
+            },
+            "content_type": "application/x-java-archive",
+            "state": "uploaded",
+            "size": 261,
+            "download_count": 1,
+            "created_at": "2022-04-21T23:41:52Z",
+            "updated_at": "2022-04-21T23:41:52Z"
+          },
+          {
+            "url": "https://api.github.com/repos/discord/gradle-gcs-build-cache/releases/assets/63269237",
+            "id": 63269237,
+            "node_id": "RA_kwDOEiXUNM4DxWl1",
+            "name": "gradle-gcs-build-cache-1.0.1-sources.jar",
+            "label": null,
+            "uploader": {
+              "login": "denbeigh2000",
+              "id": 1646744,
+              "node_id": "MDQ6VXNlcjE2NDY3NDQ=",
+              "gravatar_id": "",
+              "url": "https://api.github.com/users/denbeigh2000",
+              "type": "User",
+              "site_admin": false
+            },
+            "content_type": "application/x-java-archive",
+            "state": "uploaded",
+            "size": 4909,
+            "download_count": 1,
+            "created_at": "2022-04-21T23:41:52Z",
+            "updated_at": "2022-04-21T23:41:53Z"
+          },
+          {
+            "url": "https://api.github.com/repos/discord/gradle-gcs-build-cache/releases/assets/63269235",
+            "id": 63269235,
+            "node_id": "RA_kwDOEiXUNM4DxWlz",
+            "name": "gradle-gcs-build-cache-1.0.1.jar",
+            "label": null,
+            "uploader": {
+              "login": "denbeigh2000",
+              "id": 1646744,
+              "node_id": "MDQ6VXNlcjE2NDY3NDQ=",
+              "gravatar_id": "",
+              "url": "https://api.github.com/users/denbeigh2000",
+              "type": "User",
+              "site_admin": false
+            },
+            "content_type": "application/x-java-archive",
+            "state": "uploaded",
+            "size": 10636,
+            "download_count": 1,
+            "created_at": "2022-04-21T23:41:51Z",
+            "updated_at": "2022-04-21T23:41:52Z"
+          }
+        ],
+        "body": ""
+      },
+      {
+        "url": "https://api.github.com/repos/discord/gradle-gcs-build-cache/releases/32647762",
+        "id": 32647762,
+        "author": {
+          "login": "FuegoFro",
+          "id": 463696,
+          "node_id": "MDQ6VXNlcjQ2MzY5Ng==",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/FuegoFro",
+          "type": "User",
+          "site_admin": false
+        },
+        "node_id": "MDc6UmVsZWFzZTMyNjQ3NzYy",
+        "tag_name": "discord_fixes_2020_10_15",
+        "target_commitish": "master",
+        "name": "",
+        "draft": false,
+        "prerelease": false,
+        "created_at": "2020-10-15T23:28:29Z",
+        "published_at": "2020-10-15T23:33:44Z",
+        "assets": [
+          {
+            "url": "https://api.github.com/repos/discord/gradle-gcs-build-cache/releases/assets/27051784",
+            "id": 27051784,
+            "node_id": "MDEyOlJlbGVhc2VBc3NldDI3MDUxNzg0",
+            "name": "gradle-gcs-build-cache-1.0.1-javadoc.jar",
+            "label": null,
+            "uploader": {
+              "login": "FuegoFro",
+              "id": 463696,
+              "node_id": "MDQ6VXNlcjQ2MzY5Ng==",
+              "gravatar_id": "",
+              "url": "https://api.github.com/users/FuegoFro",
+              "type": "User",
+              "site_admin": false
+            },
+            "content_type": "application/java-archive",
+            "state": "uploaded",
+            "size": 261,
+            "download_count": 3,
+            "created_at": "2020-10-15T23:33:16Z",
+            "updated_at": "2020-10-15T23:33:16Z"
+          },
+          {
+            "url": "https://api.github.com/repos/discord/gradle-gcs-build-cache/releases/assets/27051785",
+            "id": 27051785,
+            "node_id": "MDEyOlJlbGVhc2VBc3NldDI3MDUxNzg1",
+            "name": "gradle-gcs-build-cache-1.0.1-sources.jar",
+            "label": null,
+            "uploader": {
+              "login": "FuegoFro",
+              "id": 463696,
+              "node_id": "MDQ6VXNlcjQ2MzY5Ng==",
+              "gravatar_id": "",
+              "url": "https://api.github.com/users/FuegoFro",
+              "type": "User",
+              "site_admin": false
+            },
+            "content_type": "application/java-archive",
+            "state": "uploaded",
+            "size": 4802,
+            "download_count": 2,
+            "created_at": "2020-10-15T23:33:16Z",
+            "updated_at": "2020-10-15T23:33:17Z"
+          },
+          {
+            "url": "https://api.github.com/repos/discord/gradle-gcs-build-cache/releases/assets/27051786",
+            "id": 27051786,
+            "node_id": "MDEyOlJlbGVhc2VBc3NldDI3MDUxNzg2",
+            "name": "gradle-gcs-build-cache-1.0.1.jar",
+            "label": null,
+            "uploader": {
+              "login": "FuegoFro",
+              "id": 463696,
+              "node_id": "MDQ6VXNlcjQ2MzY5Ng==",
+              "gravatar_id": "",
+              "url": "https://api.github.com/users/FuegoFro",
+              "type": "User",
+              "site_admin": false
+            },
+            "content_type": "application/java-archive",
+            "state": "uploaded",
+            "size": 10419,
+            "download_count": 2,
+            "created_at": "2020-10-15T23:33:17Z",
+            "updated_at": "2020-10-15T23:33:18Z"
+          }
+        ],
+        "body": ""
+      }
+    ],
     "issues": [],
     "pullRequests": []
   }
