@@ -57,7 +57,24 @@
     "triage": false,
     "pull": false
   },
-  "branches": [],
+  "branches": [
+    {
+      "name": "gh-pages",
+      "commit": {
+        "sha": "0b1165a492092c561f6aaabed87d413c42ad0d75",
+        "url": "https://api.github.com/repos/discord/react-plx/commits/0b1165a492092c561f6aaabed87d413c42ad0d75"
+      },
+      "protected": false
+    },
+    {
+      "name": "master",
+      "commit": {
+        "sha": "0bae9d5a665dc65f07a15cbcd9c2b3ca2a5f4fdb",
+        "url": "https://api.github.com/repos/discord/react-plx/commits/0bae9d5a665dc65f07a15cbcd9c2b3ca2a5f4fdb"
+      },
+      "protected": false
+    }
+  ],
   "last5": {
     "commits": [
       {
