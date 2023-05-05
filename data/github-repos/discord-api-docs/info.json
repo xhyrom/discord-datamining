@@ -373,13 +373,13 @@
         "body": "See: https://github.com/discord/discord-api-docs/pull/5778",
         "reactions": {
           "url": "https://api.github.com/repos/discord/discord-api-docs/issues/6133/reactions",
-          "total_count": 1,
+          "total_count": 2,
           "+1": 0,
           "-1": 0,
           "laugh": 0,
           "hooray": 0,
           "confused": 0,
-          "heart": 1,
+          "heart": 2,
           "rocket": 0,
           "eyes": 0
         },

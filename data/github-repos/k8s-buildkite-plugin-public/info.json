@@ -339,7 +339,31 @@
         ]
       }
     ],
-    "releases": [],
+    "releases": [
+      {
+        "url": "https://api.github.com/repos/discord/k8s-buildkite-plugin-public/releases/74644857",
+        "id": 74644857,
+        "author": {
+          "login": "tonydelanuez",
+          "id": 17029312,
+          "node_id": "MDQ6VXNlcjE3MDI5MzEy",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/tonydelanuez",
+          "type": "User",
+          "site_admin": false
+        },
+        "node_id": "RE_kwDOH1NZFs4Ecv15",
+        "tag_name": "v1.2.5+0.1",
+        "target_commitish": "main",
+        "name": "Track step container index",
+        "draft": false,
+        "prerelease": false,
+        "created_at": "2022-08-17T16:39:18Z",
+        "published_at": "2022-08-17T16:43:17Z",
+        "assets": [],
+        "body": "Matches version 1.2.5 of the EmbarkStudios/k8s-buildkite-plugin release with additional features: \r\n\r\n1. Tracking proper index of the step container\r\n2. Making the step container the default log source"
+      }
+    ],
     "issues": [
       {
         "url": "https://api.github.com/repos/discord/k8s-buildkite-plugin-public/issues/3",
