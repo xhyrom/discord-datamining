@@ -132964,7 +132964,7 @@ html .invoiceCancelRow-3s2UuC {
 
 .birthdayExplanationWrapper-c5wg5T {
     margin-top: 16px;
-    padding: 12px 24px;
+    padding: 24px;
     width: calc(100% - 48px);
     background-color: var(--background-floating);
     border-radius: 12px;
@@ -133023,7 +133023,7 @@ html .invoiceCancelRow-3s2UuC {
 }
 
 .whatsNew-2Pwedg {
-    margin-top: 16px
+    margin-top: 24px
 }
 
 .whatsNewItemsContainer-1dyM2M {
@@ -133072,7 +133072,7 @@ html .invoiceCancelRow-3s2UuC {
 }
 
 .activityGridHeader-kurtV_ {
-    margin-top: 16px;
+    margin-top: 24px;
     -webkit-box-pack: justify;
     -ms-flex-pack: justify;
     justify-content: space-between
@@ -155048,4 +155048,4 @@ html .invoiceCancelRow-dVOR64 {
     flex-direction: column
 }
 
-/*# sourceMappingURL=40532.9ae4dcbb4e5c086fe3cf.css.map*/
+/*# sourceMappingURL=40532.eb39b24681e6e930318e.css.map*/
