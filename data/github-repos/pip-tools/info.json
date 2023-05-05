@@ -57,7 +57,24 @@
     "triage": false,
     "pull": false
   },
-  "branches": [],
+  "branches": [
+    {
+      "name": "discord-fixes",
+      "commit": {
+        "sha": "ea5ca4d19f11c8ec60c5f982ad5f9262e57beb70",
+        "url": "https://api.github.com/repos/discord/pip-tools/commits/ea5ca4d19f11c8ec60c5f982ad5f9262e57beb70"
+      },
+      "protected": false
+    },
+    {
+      "name": "main",
+      "commit": {
+        "sha": "bcfd1dc6dde7780a26fe7f9544debf7ea90efeda",
+        "url": "https://api.github.com/repos/discord/pip-tools/commits/bcfd1dc6dde7780a26fe7f9544debf7ea90efeda"
+      },
+      "protected": false
+    }
+  ],
   "last5": {
     "commits": [
       {

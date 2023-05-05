@@ -334,7 +334,1024 @@
       }
     ],
     "releases": [],
-    "issues": [],
-    "pullRequests": []
+    "issues": [
+      {
+        "url": "https://api.github.com/repos/discord/avatar-remix-bot/issues/11",
+        "id": 1656539231,
+        "node_id": "I_kwDOJEj3x85ivMhf",
+        "number": 11,
+        "title": "Hlo",
+        "user": {
+          "login": "tecnopark076",
+          "id": 124364237,
+          "node_id": "U_kgDOB2mlzQ",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/tecnopark076",
+          "type": "User",
+          "site_admin": false
+        },
+        "labels": [],
+        "state": "closed",
+        "locked": false,
+        "assignee": null,
+        "assignees": [],
+        "milestone": null,
+        "comments": 0,
+        "created_at": "2023-04-06T01:42:55Z",
+        "updated_at": "2023-04-06T02:45:03Z",
+        "closed_at": "2023-04-06T02:45:03Z",
+        "author_association": "NONE",
+        "active_lock_reason": null,
+        "body": null,
+        "reactions": {
+          "url": "https://api.github.com/repos/discord/avatar-remix-bot/issues/11/reactions",
+          "total_count": 0,
+          "+1": 0,
+          "-1": 0,
+          "laugh": 0,
+          "hooray": 0,
+          "confused": 0,
+          "heart": 0,
+          "rocket": 0,
+          "eyes": 0
+        },
+        "performed_via_github_app": null,
+        "state_reason": "completed"
+      },
+      {
+        "url": "https://api.github.com/repos/discord/avatar-remix-bot/issues/10",
+        "id": 1656537228,
+        "node_id": "I_kwDOJEj3x85ivMCM",
+        "number": 10,
+        "title": "Hy",
+        "user": {
+          "login": "tecnopark076",
+          "id": 124364237,
+          "node_id": "U_kgDOB2mlzQ",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/tecnopark076",
+          "type": "User",
+          "site_admin": false
+        },
+        "labels": [],
+        "state": "closed",
+        "locked": false,
+        "assignee": null,
+        "assignees": [],
+        "milestone": null,
+        "comments": 0,
+        "created_at": "2023-04-06T01:39:13Z",
+        "updated_at": "2023-04-06T02:45:08Z",
+        "closed_at": "2023-04-06T02:45:08Z",
+        "author_association": "NONE",
+        "active_lock_reason": null,
+        "body": null,
+        "reactions": {
+          "url": "https://api.github.com/repos/discord/avatar-remix-bot/issues/10/reactions",
+          "total_count": 0,
+          "+1": 0,
+          "-1": 0,
+          "laugh": 0,
+          "hooray": 0,
+          "confused": 0,
+          "heart": 0,
+          "rocket": 0,
+          "eyes": 0
+        },
+        "performed_via_github_app": null,
+        "state_reason": "completed"
+      },
+      {
+        "url": "https://api.github.com/repos/discord/avatar-remix-bot/issues/9",
+        "id": 1619456691,
+        "node_id": "I_kwDOJEj3x85ghvKz",
+        "number": 9,
+        "title": "Bot continues to fail",
+        "user": {
+          "login": "Lrive",
+          "id": 57817962,
+          "node_id": "MDQ6VXNlcjU3ODE3OTYy",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/Lrive",
+          "type": "User",
+          "site_admin": false
+        },
+        "labels": [],
+        "state": "closed",
+        "locked": false,
+        "assignee": null,
+        "assignees": [],
+        "milestone": null,
+        "comments": 1,
+        "created_at": "2023-03-10T18:47:03Z",
+        "updated_at": "2023-03-14T00:11:36Z",
+        "closed_at": "2023-03-14T00:11:35Z",
+        "author_association": "NONE",
+        "active_lock_reason": null,
+        "body": "![image](https://user-images.githubusercontent.com/57817962/224400107-989520ca-ac0d-469e-8a69-303cc9186dc8.png)\r\n",
+        "reactions": {
+          "url": "https://api.github.com/repos/discord/avatar-remix-bot/issues/9/reactions",
+          "total_count": 0,
+          "+1": 0,
+          "-1": 0,
+          "laugh": 0,
+          "hooray": 0,
+          "confused": 0,
+          "heart": 0,
+          "rocket": 0,
+          "eyes": 0
+        },
+        "performed_via_github_app": null,
+        "state_reason": "not_planned"
+      },
+      {
+        "url": "https://api.github.com/repos/discord/avatar-remix-bot/issues/8",
+        "id": 1619341543,
+        "node_id": "I_kwDOJEj3x85ghTDn",
+        "number": 8,
+        "title": "API issue?",
+        "user": {
+          "login": "Robskan5300",
+          "id": 100348563,
+          "node_id": "U_kgDOBfsykw",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/Robskan5300",
+          "type": "User",
+          "site_admin": false
+        },
+        "labels": [],
+        "state": "closed",
+        "locked": false,
+        "assignee": null,
+        "assignees": [],
+        "milestone": null,
+        "comments": 3,
+        "created_at": "2023-03-10T17:29:41Z",
+        "updated_at": "2023-03-13T21:37:13Z",
+        "closed_at": "2023-03-11T21:34:52Z",
+        "author_association": "NONE",
+        "active_lock_reason": null,
+        "body": "No idea if this is fixable, but it keeps giving me this when I type \"make it smile\", given as an example in the source.\r\n![Image](https://user-images.githubusercontent.com/100348563/224383023-1c496c72-e553-4b55-83c4-b62133739613.png)\r\n\r\nNot sure, but this may also of course be a problem of workers.dev",
+        "reactions": {
+          "url": "https://api.github.com/repos/discord/avatar-remix-bot/issues/8/reactions",
+          "total_count": 0,
+          "+1": 0,
+          "-1": 0,
+          "laugh": 0,
+          "hooray": 0,
+          "confused": 0,
+          "heart": 0,
+          "rocket": 0,
+          "eyes": 0
+        },
+        "performed_via_github_app": null,
+        "state_reason": "completed"
+      },
+      {
+        "url": "https://api.github.com/repos/discord/avatar-remix-bot/issues/7",
+        "id": 1619324543,
+        "node_id": "I_kwDOJEj3x85ghO5_",
+        "number": 7,
+        "title": "Ignore wrangler.toml in source control",
+        "user": {
+          "login": "zeke",
+          "id": 2289,
+          "node_id": "MDQ6VXNlcjIyODk=",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/zeke",
+          "type": "User",
+          "site_admin": false
+        },
+        "labels": [],
+        "state": "open",
+        "locked": false,
+        "assignee": null,
+        "assignees": [],
+        "milestone": null,
+        "comments": 2,
+        "created_at": "2023-03-10T17:15:07Z",
+        "updated_at": "2023-03-13T21:36:09Z",
+        "closed_at": null,
+        "author_association": "CONTRIBUTOR",
+        "active_lock_reason": null,
+        "body": "@typpo what do you think about renaming `wrangler.toml`  to `wrangler.toml.example` and git-ignoring `wrangler.toml`, so folks can make changes to the file without having to worry about committing secrets?",
+        "reactions": {
+          "url": "https://api.github.com/repos/discord/avatar-remix-bot/issues/7/reactions",
+          "total_count": 0,
+          "+1": 0,
+          "-1": 0,
+          "laugh": 0,
+          "hooray": 0,
+          "confused": 0,
+          "heart": 0,
+          "rocket": 0,
+          "eyes": 0
+        },
+        "performed_via_github_app": null,
+        "state_reason": null
+      }
+    ],
+    "pullRequests": [
+      {
+        "url": "https://api.github.com/repos/discord/avatar-remix-bot/pulls/4",
+        "id": 1270026156,
+        "node_id": "PR_kwDOJEj3x85Lsw-s",
+        "number": 4,
+        "state": "closed",
+        "locked": false,
+        "title": "update README with link to Replicate's hosted bot",
+        "user": {
+          "login": "zeke",
+          "id": 2289,
+          "node_id": "MDQ6VXNlcjIyODk=",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/zeke",
+          "type": "User",
+          "site_admin": false
+        },
+        "body": "This PR adds a link to the hosted bot set up by the Replicate team, so users can take the bot for a spin before they commit to setting it up themselves.\r\n\r\ncc @typpo @bfirsh",
+        "created_at": "2023-03-09T17:29:53Z",
+        "updated_at": "2023-03-13T21:31:58Z",
+        "closed_at": "2023-03-09T18:53:48Z",
+        "merged_at": "2023-03-09T18:53:48Z",
+        "merge_commit_sha": "edf19a43ff35c916200af29d116e672cea0814ba",
+        "assignee": null,
+        "assignees": [],
+        "requested_reviewers": [],
+        "requested_teams": [],
+        "labels": [],
+        "milestone": null,
+        "draft": false,
+        "head": {
+          "label": "replicate:add-link-to-hosted-demo",
+          "ref": "add-link-to-hosted-demo",
+          "sha": "c173ca58b27a64910cd7448b42d7d512416593de",
+          "user": {
+            "login": "replicate",
+            "id": 60410876,
+            "node_id": "MDEyOk9yZ2FuaXphdGlvbjYwNDEwODc2",
+            "gravatar_id": "",
+            "url": "https://api.github.com/users/replicate",
+            "type": "Organization",
+            "site_admin": false
+          },
+          "repo": {
+            "id": 611857342,
+            "node_id": "R_kgDOJHgzvg",
+            "name": "avatar-remix-bot",
+            "full_name": "replicate/avatar-remix-bot",
+            "private": false,
+            "owner": {
+              "login": "replicate",
+              "id": 60410876,
+              "node_id": "MDEyOk9yZ2FuaXphdGlvbjYwNDEwODc2",
+              "gravatar_id": "",
+              "url": "https://api.github.com/users/replicate",
+              "type": "Organization",
+              "site_admin": false
+            },
+            "description": null,
+            "fork": true,
+            "url": "https://api.github.com/repos/replicate/avatar-remix-bot",
+            "created_at": "2023-03-09T17:26:57Z",
+            "updated_at": "2023-03-10T23:16:58Z",
+            "pushed_at": "2023-03-13T21:31:58Z",
+            "homepage": null,
+            "size": 87,
+            "stargazers_count": 2,
+            "watchers_count": 2,
+            "language": null,
+            "has_issues": false,
+            "has_projects": true,
+            "has_downloads": true,
+            "has_wiki": true,
+            "has_pages": false,
+            "has_discussions": false,
+            "forks_count": 0,
+            "archived": false,
+            "disabled": false,
+            "open_issues_count": 0,
+            "license": {
+              "key": "mit",
+              "name": "MIT License",
+              "spdx_id": "MIT",
+              "url": "https://api.github.com/licenses/mit",
+              "node_id": "MDc6TGljZW5zZTEz"
+            },
+            "allow_forking": true,
+            "is_template": false,
+            "web_commit_signoff_required": false,
+            "topics": [],
+            "visibility": "public",
+            "forks": 0,
+            "open_issues": 0,
+            "watchers": 2,
+            "default_branch": "master"
+          }
+        },
+        "base": {
+          "label": "discord:master",
+          "ref": "master",
+          "sha": "3306dfcf477426ac72c610e96e1c305449383678",
+          "user": {
+            "login": "discord",
+            "id": 1965106,
+            "node_id": "MDEyOk9yZ2FuaXphdGlvbjE5NjUxMDY=",
+            "gravatar_id": "",
+            "url": "https://api.github.com/users/discord",
+            "type": "Organization",
+            "site_admin": false
+          },
+          "repo": {
+            "id": 608761799,
+            "node_id": "R_kgDOJEj3xw",
+            "name": "avatar-remix-bot",
+            "full_name": "discord/avatar-remix-bot",
+            "private": false,
+            "owner": {
+              "login": "discord",
+              "id": 1965106,
+              "node_id": "MDEyOk9yZ2FuaXphdGlvbjE5NjUxMDY=",
+              "gravatar_id": "",
+              "url": "https://api.github.com/users/discord",
+              "type": "Organization",
+              "site_admin": false
+            },
+            "description": null,
+            "fork": false,
+            "url": "https://api.github.com/repos/discord/avatar-remix-bot",
+            "created_at": "2023-03-02T17:24:28Z",
+            "updated_at": "2023-05-04T07:19:29Z",
+            "pushed_at": "2023-03-09T19:08:09Z",
+            "homepage": "https://discord.com/blog/ai-on-discord-your-place-for-ai-with-friends",
+            "size": 88,
+            "stargazers_count": 120,
+            "watchers_count": 120,
+            "language": "TypeScript",
+            "has_issues": true,
+            "has_projects": true,
+            "has_downloads": true,
+            "has_wiki": true,
+            "has_pages": false,
+            "has_discussions": false,
+            "forks_count": 6,
+            "archived": false,
+            "disabled": false,
+            "open_issues_count": 1,
+            "license": {
+              "key": "mit",
+              "name": "MIT License",
+              "spdx_id": "MIT",
+              "url": "https://api.github.com/licenses/mit",
+              "node_id": "MDc6TGljZW5zZTEz"
+            },
+            "allow_forking": true,
+            "is_template": false,
+            "web_commit_signoff_required": false,
+            "topics": [
+              "bot"
+            ],
+            "visibility": "public",
+            "forks": 6,
+            "open_issues": 1,
+            "watchers": 120,
+            "default_branch": "main"
+          }
+        },
+        "_links": {
+          "self": {
+            "href": "https://api.github.com/repos/discord/avatar-remix-bot/pulls/4"
+          },
+          "html": {
+            "href": "https://github.com/discord/avatar-remix-bot/pull/4"
+          },
+          "issue": {
+            "href": "https://api.github.com/repos/discord/avatar-remix-bot/issues/4"
+          },
+          "comments": {
+            "href": "https://api.github.com/repos/discord/avatar-remix-bot/issues/4/comments"
+          },
+          "review_comments": {
+            "href": "https://api.github.com/repos/discord/avatar-remix-bot/pulls/4/comments"
+          },
+          "review_comment": {
+            "href": "https://api.github.com/repos/discord/avatar-remix-bot/pulls/comments{/number}"
+          },
+          "commits": {
+            "href": "https://api.github.com/repos/discord/avatar-remix-bot/pulls/4/commits"
+          },
+          "statuses": {
+            "href": "https://api.github.com/repos/discord/avatar-remix-bot/statuses/c173ca58b27a64910cd7448b42d7d512416593de"
+          }
+        },
+        "author_association": "CONTRIBUTOR",
+        "auto_merge": null,
+        "active_lock_reason": null
+      },
+      {
+        "url": "https://api.github.com/repos/discord/avatar-remix-bot/pulls/3",
+        "id": 1269989986,
+        "node_id": "PR_kwDOJEj3x85LsoJi",
+        "number": 3,
+        "state": "closed",
+        "locked": false,
+        "title": "Improve the README",
+        "user": {
+          "login": "zeke",
+          "id": 2289,
+          "node_id": "MDQ6VXNlcjIyODk=",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/zeke",
+          "type": "User",
+          "site_admin": false
+        },
+        "body": "This PR adds a few small tweaks to the README to make it a bit easier to get set up.",
+        "created_at": "2023-03-09T17:02:35Z",
+        "updated_at": "2023-03-09T17:08:59Z",
+        "closed_at": "2023-03-09T17:08:52Z",
+        "merged_at": "2023-03-09T17:08:52Z",
+        "merge_commit_sha": "b2c931dfe177c128b4199e8dffe01950823ddfd0",
+        "assignee": null,
+        "assignees": [],
+        "requested_reviewers": [
+          {
+            "login": "typpo",
+            "id": 310310,
+            "node_id": "MDQ6VXNlcjMxMDMxMA==",
+            "gravatar_id": "",
+            "url": "https://api.github.com/users/typpo",
+            "type": "User",
+            "site_admin": false
+          }
+        ],
+        "requested_teams": [],
+        "labels": [],
+        "milestone": null,
+        "draft": false,
+        "head": {
+          "label": "discord:improve-readme",
+          "ref": "improve-readme",
+          "sha": "529dbd5d3625e58ec84adeb50477432db62f83c4",
+          "user": {
+            "login": "discord",
+            "id": 1965106,
+            "node_id": "MDEyOk9yZ2FuaXphdGlvbjE5NjUxMDY=",
+            "gravatar_id": "",
+            "url": "https://api.github.com/users/discord",
+            "type": "Organization",
+            "site_admin": false
+          },
+          "repo": {
+            "id": 608761799,
+            "node_id": "R_kgDOJEj3xw",
+            "name": "avatar-remix-bot",
+            "full_name": "discord/avatar-remix-bot",
+            "private": false,
+            "owner": {
+              "login": "discord",
+              "id": 1965106,
+              "node_id": "MDEyOk9yZ2FuaXphdGlvbjE5NjUxMDY=",
+              "gravatar_id": "",
+              "url": "https://api.github.com/users/discord",
+              "type": "Organization",
+              "site_admin": false
+            },
+            "description": null,
+            "fork": false,
+            "url": "https://api.github.com/repos/discord/avatar-remix-bot",
+            "created_at": "2023-03-02T17:24:28Z",
+            "updated_at": "2023-05-04T07:19:29Z",
+            "pushed_at": "2023-03-09T19:08:09Z",
+            "homepage": "https://discord.com/blog/ai-on-discord-your-place-for-ai-with-friends",
+            "size": 88,
+            "stargazers_count": 120,
+            "watchers_count": 120,
+            "language": "TypeScript",
+            "has_issues": true,
+            "has_projects": true,
+            "has_downloads": true,
+            "has_wiki": true,
+            "has_pages": false,
+            "has_discussions": false,
+            "forks_count": 6,
+            "archived": false,
+            "disabled": false,
+            "open_issues_count": 1,
+            "license": {
+              "key": "mit",
+              "name": "MIT License",
+              "spdx_id": "MIT",
+              "url": "https://api.github.com/licenses/mit",
+              "node_id": "MDc6TGljZW5zZTEz"
+            },
+            "allow_forking": true,
+            "is_template": false,
+            "web_commit_signoff_required": false,
+            "topics": [
+              "bot"
+            ],
+            "visibility": "public",
+            "forks": 6,
+            "open_issues": 1,
+            "watchers": 120,
+            "default_branch": "main"
+          }
+        },
+        "base": {
+          "label": "discord:master",
+          "ref": "master",
+          "sha": "30617e4a8cb4d452c8ddc82e508c32eedc2f98b6",
+          "user": {
+            "login": "discord",
+            "id": 1965106,
+            "node_id": "MDEyOk9yZ2FuaXphdGlvbjE5NjUxMDY=",
+            "gravatar_id": "",
+            "url": "https://api.github.com/users/discord",
+            "type": "Organization",
+            "site_admin": false
+          },
+          "repo": {
+            "id": 608761799,
+            "node_id": "R_kgDOJEj3xw",
+            "name": "avatar-remix-bot",
+            "full_name": "discord/avatar-remix-bot",
+            "private": false,
+            "owner": {
+              "login": "discord",
+              "id": 1965106,
+              "node_id": "MDEyOk9yZ2FuaXphdGlvbjE5NjUxMDY=",
+              "gravatar_id": "",
+              "url": "https://api.github.com/users/discord",
+              "type": "Organization",
+              "site_admin": false
+            },
+            "description": null,
+            "fork": false,
+            "url": "https://api.github.com/repos/discord/avatar-remix-bot",
+            "created_at": "2023-03-02T17:24:28Z",
+            "updated_at": "2023-05-04T07:19:29Z",
+            "pushed_at": "2023-03-09T19:08:09Z",
+            "homepage": "https://discord.com/blog/ai-on-discord-your-place-for-ai-with-friends",
+            "size": 88,
+            "stargazers_count": 120,
+            "watchers_count": 120,
+            "language": "TypeScript",
+            "has_issues": true,
+            "has_projects": true,
+            "has_downloads": true,
+            "has_wiki": true,
+            "has_pages": false,
+            "has_discussions": false,
+            "forks_count": 6,
+            "archived": false,
+            "disabled": false,
+            "open_issues_count": 1,
+            "license": {
+              "key": "mit",
+              "name": "MIT License",
+              "spdx_id": "MIT",
+              "url": "https://api.github.com/licenses/mit",
+              "node_id": "MDc6TGljZW5zZTEz"
+            },
+            "allow_forking": true,
+            "is_template": false,
+            "web_commit_signoff_required": false,
+            "topics": [
+              "bot"
+            ],
+            "visibility": "public",
+            "forks": 6,
+            "open_issues": 1,
+            "watchers": 120,
+            "default_branch": "main"
+          }
+        },
+        "_links": {
+          "self": {
+            "href": "https://api.github.com/repos/discord/avatar-remix-bot/pulls/3"
+          },
+          "html": {
+            "href": "https://github.com/discord/avatar-remix-bot/pull/3"
+          },
+          "issue": {
+            "href": "https://api.github.com/repos/discord/avatar-remix-bot/issues/3"
+          },
+          "comments": {
+            "href": "https://api.github.com/repos/discord/avatar-remix-bot/issues/3/comments"
+          },
+          "review_comments": {
+            "href": "https://api.github.com/repos/discord/avatar-remix-bot/pulls/3/comments"
+          },
+          "review_comment": {
+            "href": "https://api.github.com/repos/discord/avatar-remix-bot/pulls/comments{/number}"
+          },
+          "commits": {
+            "href": "https://api.github.com/repos/discord/avatar-remix-bot/pulls/3/commits"
+          },
+          "statuses": {
+            "href": "https://api.github.com/repos/discord/avatar-remix-bot/statuses/529dbd5d3625e58ec84adeb50477432db62f83c4"
+          }
+        },
+        "author_association": "CONTRIBUTOR",
+        "auto_merge": null,
+        "active_lock_reason": null
+      },
+      {
+        "url": "https://api.github.com/repos/discord/avatar-remix-bot/pulls/2",
+        "id": 1267219861,
+        "node_id": "PR_kwDOJEj3x85LiD2V",
+        "number": 2,
+        "state": "closed",
+        "locked": false,
+        "title": "DO NOT MERGE feedback",
+        "user": {
+          "login": "JustinBeckwith",
+          "id": 534619,
+          "node_id": "MDQ6VXNlcjUzNDYxOQ==",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/JustinBeckwith",
+          "type": "User",
+          "site_admin": false
+        },
+        "body": null,
+        "created_at": "2023-03-08T02:06:36Z",
+        "updated_at": "2023-03-09T16:06:20Z",
+        "closed_at": "2023-03-09T16:06:19Z",
+        "merged_at": null,
+        "merge_commit_sha": "e729d22015d5f8f55a5ef7b7c2726a88263846ae",
+        "assignee": null,
+        "assignees": [],
+        "requested_reviewers": [],
+        "requested_teams": [],
+        "labels": [],
+        "milestone": null,
+        "draft": false,
+        "head": {
+          "label": "discord:project",
+          "ref": "project",
+          "sha": "34facbb89c711788b4e58eff5613b8938c3a4287",
+          "user": {
+            "login": "discord",
+            "id": 1965106,
+            "node_id": "MDEyOk9yZ2FuaXphdGlvbjE5NjUxMDY=",
+            "gravatar_id": "",
+            "url": "https://api.github.com/users/discord",
+            "type": "Organization",
+            "site_admin": false
+          },
+          "repo": {
+            "id": 608761799,
+            "node_id": "R_kgDOJEj3xw",
+            "name": "avatar-remix-bot",
+            "full_name": "discord/avatar-remix-bot",
+            "private": false,
+            "owner": {
+              "login": "discord",
+              "id": 1965106,
+              "node_id": "MDEyOk9yZ2FuaXphdGlvbjE5NjUxMDY=",
+              "gravatar_id": "",
+              "url": "https://api.github.com/users/discord",
+              "type": "Organization",
+              "site_admin": false
+            },
+            "description": null,
+            "fork": false,
+            "url": "https://api.github.com/repos/discord/avatar-remix-bot",
+            "created_at": "2023-03-02T17:24:28Z",
+            "updated_at": "2023-05-04T07:19:29Z",
+            "pushed_at": "2023-03-09T19:08:09Z",
+            "homepage": "https://discord.com/blog/ai-on-discord-your-place-for-ai-with-friends",
+            "size": 88,
+            "stargazers_count": 120,
+            "watchers_count": 120,
+            "language": "TypeScript",
+            "has_issues": true,
+            "has_projects": true,
+            "has_downloads": true,
+            "has_wiki": true,
+            "has_pages": false,
+            "has_discussions": false,
+            "forks_count": 6,
+            "archived": false,
+            "disabled": false,
+            "open_issues_count": 1,
+            "license": {
+              "key": "mit",
+              "name": "MIT License",
+              "spdx_id": "MIT",
+              "url": "https://api.github.com/licenses/mit",
+              "node_id": "MDc6TGljZW5zZTEz"
+            },
+            "allow_forking": true,
+            "is_template": false,
+            "web_commit_signoff_required": false,
+            "topics": [
+              "bot"
+            ],
+            "visibility": "public",
+            "forks": 6,
+            "open_issues": 1,
+            "watchers": 120,
+            "default_branch": "main"
+          }
+        },
+        "base": {
+          "label": "discord:review",
+          "ref": "review",
+          "sha": "58164f86b87b3d3baa5a634f7e8ef21e94937a93",
+          "user": {
+            "login": "discord",
+            "id": 1965106,
+            "node_id": "MDEyOk9yZ2FuaXphdGlvbjE5NjUxMDY=",
+            "gravatar_id": "",
+            "url": "https://api.github.com/users/discord",
+            "type": "Organization",
+            "site_admin": false
+          },
+          "repo": {
+            "id": 608761799,
+            "node_id": "R_kgDOJEj3xw",
+            "name": "avatar-remix-bot",
+            "full_name": "discord/avatar-remix-bot",
+            "private": false,
+            "owner": {
+              "login": "discord",
+              "id": 1965106,
+              "node_id": "MDEyOk9yZ2FuaXphdGlvbjE5NjUxMDY=",
+              "gravatar_id": "",
+              "url": "https://api.github.com/users/discord",
+              "type": "Organization",
+              "site_admin": false
+            },
+            "description": null,
+            "fork": false,
+            "url": "https://api.github.com/repos/discord/avatar-remix-bot",
+            "created_at": "2023-03-02T17:24:28Z",
+            "updated_at": "2023-05-04T07:19:29Z",
+            "pushed_at": "2023-03-09T19:08:09Z",
+            "homepage": "https://discord.com/blog/ai-on-discord-your-place-for-ai-with-friends",
+            "size": 88,
+            "stargazers_count": 120,
+            "watchers_count": 120,
+            "language": "TypeScript",
+            "has_issues": true,
+            "has_projects": true,
+            "has_downloads": true,
+            "has_wiki": true,
+            "has_pages": false,
+            "has_discussions": false,
+            "forks_count": 6,
+            "archived": false,
+            "disabled": false,
+            "open_issues_count": 1,
+            "license": {
+              "key": "mit",
+              "name": "MIT License",
+              "spdx_id": "MIT",
+              "url": "https://api.github.com/licenses/mit",
+              "node_id": "MDc6TGljZW5zZTEz"
+            },
+            "allow_forking": true,
+            "is_template": false,
+            "web_commit_signoff_required": false,
+            "topics": [
+              "bot"
+            ],
+            "visibility": "public",
+            "forks": 6,
+            "open_issues": 1,
+            "watchers": 120,
+            "default_branch": "main"
+          }
+        },
+        "_links": {
+          "self": {
+            "href": "https://api.github.com/repos/discord/avatar-remix-bot/pulls/2"
+          },
+          "html": {
+            "href": "https://github.com/discord/avatar-remix-bot/pull/2"
+          },
+          "issue": {
+            "href": "https://api.github.com/repos/discord/avatar-remix-bot/issues/2"
+          },
+          "comments": {
+            "href": "https://api.github.com/repos/discord/avatar-remix-bot/issues/2/comments"
+          },
+          "review_comments": {
+            "href": "https://api.github.com/repos/discord/avatar-remix-bot/pulls/2/comments"
+          },
+          "review_comment": {
+            "href": "https://api.github.com/repos/discord/avatar-remix-bot/pulls/comments{/number}"
+          },
+          "commits": {
+            "href": "https://api.github.com/repos/discord/avatar-remix-bot/pulls/2/commits"
+          },
+          "statuses": {
+            "href": "https://api.github.com/repos/discord/avatar-remix-bot/statuses/34facbb89c711788b4e58eff5613b8938c3a4287"
+          }
+        },
+        "author_association": "COLLABORATOR",
+        "auto_merge": null,
+        "active_lock_reason": null
+      },
+      {
+        "url": "https://api.github.com/repos/discord/avatar-remix-bot/pulls/1",
+        "id": 1267209547,
+        "node_id": "PR_kwDOJEj3x85LiBVL",
+        "number": 1,
+        "state": "closed",
+        "locked": false,
+        "title": "create a fake commit",
+        "user": {
+          "login": "JustinBeckwith",
+          "id": 534619,
+          "node_id": "MDQ6VXNlcjUzNDYxOQ==",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/JustinBeckwith",
+          "type": "User",
+          "site_admin": false
+        },
+        "body": null,
+        "created_at": "2023-03-08T01:58:33Z",
+        "updated_at": "2023-03-08T02:29:51Z",
+        "closed_at": "2023-03-08T02:29:51Z",
+        "merged_at": null,
+        "merge_commit_sha": "3b7763963d7d92f7eeafc427c7baa0535dbb63f7",
+        "assignee": null,
+        "assignees": [],
+        "requested_reviewers": [],
+        "requested_teams": [],
+        "labels": [],
+        "milestone": null,
+        "draft": false,
+        "head": {
+          "label": "discord:beckwithy",
+          "ref": "beckwithy",
+          "sha": "eafc4aca7873a9811b5d6e6a3f00bc95e928b01b",
+          "user": {
+            "login": "discord",
+            "id": 1965106,
+            "node_id": "MDEyOk9yZ2FuaXphdGlvbjE5NjUxMDY=",
+            "gravatar_id": "",
+            "url": "https://api.github.com/users/discord",
+            "type": "Organization",
+            "site_admin": false
+          },
+          "repo": {
+            "id": 608761799,
+            "node_id": "R_kgDOJEj3xw",
+            "name": "avatar-remix-bot",
+            "full_name": "discord/avatar-remix-bot",
+            "private": false,
+            "owner": {
+              "login": "discord",
+              "id": 1965106,
+              "node_id": "MDEyOk9yZ2FuaXphdGlvbjE5NjUxMDY=",
+              "gravatar_id": "",
+              "url": "https://api.github.com/users/discord",
+              "type": "Organization",
+              "site_admin": false
+            },
+            "description": null,
+            "fork": false,
+            "url": "https://api.github.com/repos/discord/avatar-remix-bot",
+            "created_at": "2023-03-02T17:24:28Z",
+            "updated_at": "2023-05-04T07:19:29Z",
+            "pushed_at": "2023-03-09T19:08:09Z",
+            "homepage": "https://discord.com/blog/ai-on-discord-your-place-for-ai-with-friends",
+            "size": 88,
+            "stargazers_count": 120,
+            "watchers_count": 120,
+            "language": "TypeScript",
+            "has_issues": true,
+            "has_projects": true,
+            "has_downloads": true,
+            "has_wiki": true,
+            "has_pages": false,
+            "has_discussions": false,
+            "forks_count": 6,
+            "archived": false,
+            "disabled": false,
+            "open_issues_count": 1,
+            "license": {
+              "key": "mit",
+              "name": "MIT License",
+              "spdx_id": "MIT",
+              "url": "https://api.github.com/licenses/mit",
+              "node_id": "MDc6TGljZW5zZTEz"
+            },
+            "allow_forking": true,
+            "is_template": false,
+            "web_commit_signoff_required": false,
+            "topics": [
+              "bot"
+            ],
+            "visibility": "public",
+            "forks": 6,
+            "open_issues": 1,
+            "watchers": 120,
+            "default_branch": "main"
+          }
+        },
+        "base": {
+          "label": "discord:master",
+          "ref": "master",
+          "sha": "494a6c5cb02b508a3e064e7b595d91e05dc537f0",
+          "user": {
+            "login": "discord",
+            "id": 1965106,
+            "node_id": "MDEyOk9yZ2FuaXphdGlvbjE5NjUxMDY=",
+            "gravatar_id": "",
+            "url": "https://api.github.com/users/discord",
+            "type": "Organization",
+            "site_admin": false
+          },
+          "repo": {
+            "id": 608761799,
+            "node_id": "R_kgDOJEj3xw",
+            "name": "avatar-remix-bot",
+            "full_name": "discord/avatar-remix-bot",
+            "private": false,
+            "owner": {
+              "login": "discord",
+              "id": 1965106,
+              "node_id": "MDEyOk9yZ2FuaXphdGlvbjE5NjUxMDY=",
+              "gravatar_id": "",
+              "url": "https://api.github.com/users/discord",
+              "type": "Organization",
+              "site_admin": false
+            },
+            "description": null,
+            "fork": false,
+            "url": "https://api.github.com/repos/discord/avatar-remix-bot",
+            "created_at": "2023-03-02T17:24:28Z",
+            "updated_at": "2023-05-04T07:19:29Z",
+            "pushed_at": "2023-03-09T19:08:09Z",
+            "homepage": "https://discord.com/blog/ai-on-discord-your-place-for-ai-with-friends",
+            "size": 88,
+            "stargazers_count": 120,
+            "watchers_count": 120,
+            "language": "TypeScript",
+            "has_issues": true,
+            "has_projects": true,
+            "has_downloads": true,
+            "has_wiki": true,
+            "has_pages": false,
+            "has_discussions": false,
+            "forks_count": 6,
+            "archived": false,
+            "disabled": false,
+            "open_issues_count": 1,
+            "license": {
+              "key": "mit",
+              "name": "MIT License",
+              "spdx_id": "MIT",
+              "url": "https://api.github.com/licenses/mit",
+              "node_id": "MDc6TGljZW5zZTEz"
+            },
+            "allow_forking": true,
+            "is_template": false,
+            "web_commit_signoff_required": false,
+            "topics": [
+              "bot"
+            ],
+            "visibility": "public",
+            "forks": 6,
+            "open_issues": 1,
+            "watchers": 120,
+            "default_branch": "main"
+          }
+        },
+        "_links": {
+          "self": {
+            "href": "https://api.github.com/repos/discord/avatar-remix-bot/pulls/1"
+          },
+          "html": {
+            "href": "https://github.com/discord/avatar-remix-bot/pull/1"
+          },
+          "issue": {
+            "href": "https://api.github.com/repos/discord/avatar-remix-bot/issues/1"
+          },
+          "comments": {
+            "href": "https://api.github.com/repos/discord/avatar-remix-bot/issues/1/comments"
+          },
+          "review_comments": {
+            "href": "https://api.github.com/repos/discord/avatar-remix-bot/pulls/1/comments"
+          },
+          "review_comment": {
+            "href": "https://api.github.com/repos/discord/avatar-remix-bot/pulls/comments{/number}"
+          },
+          "commits": {
+            "href": "https://api.github.com/repos/discord/avatar-remix-bot/pulls/1/commits"
+          },
+          "statuses": {
+            "href": "https://api.github.com/repos/discord/avatar-remix-bot/statuses/eafc4aca7873a9811b5d6e6a3f00bc95e928b01b"
+          }
+        },
+        "author_association": "COLLABORATOR",
+        "auto_merge": null,
+        "active_lock_reason": null
+      }
+    ]
   }
 }
