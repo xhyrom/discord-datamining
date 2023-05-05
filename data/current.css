@@ -132691,6 +132691,62 @@ html .invoiceCancelRow-3s2UuC {
     background-image: url(/assets/05634c67dd717b851ce0599ac9997812.svg)
 }
 
+.balloonBackground-2kZoSH {
+    pointer-events: auto;
+    cursor: pointer;
+    outline: none
+}
+
+.balloonSpan-2UnSQM {
+    visibility: hidden
+}
+
+.dots-3Adfw2 {
+    pointer-events: none
+}
+
+.greenBalloon-2XYU8h {
+    fill: var(--discord-8th-bday-pink)
+}
+
+.greenBalloon-2XYU8h:focus {
+    stroke: var(--discord-8th-bday-pink);
+    stroke-width: 3px;
+    stroke-linejoin: round
+}
+
+.greenDots-3eGZY8 {
+    fill: var(--discord-8th-bday-green)
+}
+
+.blueBalloon-3l9Fzm {
+    fill: var(--discord-8th-bday-pink)
+}
+
+.blueBalloon-3l9Fzm:focus {
+    stroke: var(--discord-8th-bday-pink);
+    stroke-width: 3px;
+    stroke-linejoin: round
+}
+
+.blueDots-1CJ-qF {
+    fill: var(--discord-8th-bday-blue)
+}
+
+.pinkBalloon-1sjRZy {
+    fill: var(--discord-8th-bday-green)
+}
+
+.pinkBalloon-1sjRZy:focus {
+    stroke: var(--discord-8th-bday-green);
+    stroke-width: 3px;
+    stroke-linejoin: round
+}
+
+.pinkDots-32joAj {
+    fill: var(--discord-8th-bday-pink)
+}
+
 .outerContainer-2qLQSo {
     width: 100%;
     padding: clamp(16px, calc(4vw - 12.48px), 64px);
@@ -132769,6 +132825,10 @@ html .invoiceCancelRow-3s2UuC {
     .birthdayBalloonsContainer-2_cxx4 {
         display: none
     }
+}
+
+.balloon-3A4RJ4 {
+    pointer-events: none
 }
 
 .birthdayExplanationBalloonsLeft-1SrkR2 {
@@ -154692,4 +154752,4 @@ html .invoiceCancelRow-dVOR64 {
     flex-direction: column
 }
 
-/*# sourceMappingURL=40532.75694648815886c0ccef.css.map*/
+/*# sourceMappingURL=40532.a28a0598f64fbdad146b.css.map*/
