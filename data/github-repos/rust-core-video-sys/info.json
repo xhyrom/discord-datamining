@@ -57,7 +57,24 @@
     "triage": false,
     "pull": false
   },
-  "branches": [],
+  "branches": [
+    {
+      "name": "dependabot/cargo/metal-0.21",
+      "commit": {
+        "sha": "160743530ab1631520b855b5ef55f215a8a8ab1e",
+        "url": "https://api.github.com/repos/discord/rust-core-video-sys/commits/160743530ab1631520b855b5ef55f215a8a8ab1e"
+      },
+      "protected": false
+    },
+    {
+      "name": "master",
+      "commit": {
+        "sha": "a4d8dc9b759eeae8fe0fda3e1834897305b4a57b",
+        "url": "https://api.github.com/repos/discord/rust-core-video-sys/commits/a4d8dc9b759eeae8fe0fda3e1834897305b4a57b"
+      },
+      "protected": false
+    }
+  ],
   "last5": {
     "commits": [
       {
