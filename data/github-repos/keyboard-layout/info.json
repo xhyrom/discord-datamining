@@ -57,40 +57,7 @@
     "triage": false,
     "pull": false
   },
-  "branches": [
-    {
-      "name": "foo",
-      "commit": {
-        "sha": "0b5541707b8a5569a2b217b62bb9a11cc59d0d81",
-        "url": "https://api.github.com/repos/discord/keyboard-layout/commits/0b5541707b8a5569a2b217b62bb9a11cc59d0d81"
-      },
-      "protected": false
-    },
-    {
-      "name": "handle-dead-keys-correctly",
-      "commit": {
-        "sha": "b9b9178842824ec10b657553e79bf0d841f7be26",
-        "url": "https://api.github.com/repos/discord/keyboard-layout/commits/b9b9178842824ec10b657553e79bf0d841f7be26"
-      },
-      "protected": false
-    },
-    {
-      "name": "master",
-      "commit": {
-        "sha": "1ff160b257662689a0abc76731ed643bf69fb3cf",
-        "url": "https://api.github.com/repos/discord/keyboard-layout/commits/1ff160b257662689a0abc76731ed643bf69fb3cf"
-      },
-      "protected": false
-    },
-    {
-      "name": "revert-19-skip-dead-keys-on-windows",
-      "commit": {
-        "sha": "788114e569dd8ecc29ed30ca97bde50375603a71",
-        "url": "https://api.github.com/repos/discord/keyboard-layout/commits/788114e569dd8ecc29ed30ca97bde50375603a71"
-      },
-      "protected": false
-    }
-  ],
+  "branches": [],
   "last5": {
     "commits": [
       {
