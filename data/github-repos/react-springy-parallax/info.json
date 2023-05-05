@@ -57,16 +57,7 @@
     "triage": false,
     "pull": false
   },
-  "branches": [
-    {
-      "name": "master",
-      "commit": {
-        "sha": "0266072db7bca09d9d2646971389d76264c716f1",
-        "url": "https://api.github.com/repos/discord/react-springy-parallax/commits/0266072db7bca09d9d2646971389d76264c716f1"
-      },
-      "protected": false
-    }
-  ],
+  "branches": [],
   "last5": {
     "commits": [
       {
