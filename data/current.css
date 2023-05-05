@@ -133009,7 +133009,7 @@ html .invoiceCancelRow-3s2UuC {
 
 .celebrateCardGrid-ZdgaQv {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(288px, 1fr));
     grid-gap: 16px;
     margin-top: 16px
 }
@@ -133024,7 +133024,8 @@ html .invoiceCancelRow-3s2UuC {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
     -ms-flex-direction: column;
-    flex-direction: column
+    flex-direction: column;
+    cursor: pointer
 }
 
 .celebrateCardHeader-d3NG-H {
@@ -154819,4 +154820,4 @@ html .invoiceCancelRow-dVOR64 {
     flex-direction: column
 }
 
-/*# sourceMappingURL=40532.63b57e0d793373e5ad36.css.map*/
+/*# sourceMappingURL=40532.a5cd2b19d54da04c5bfd.css.map*/
