@@ -316,7 +316,251 @@
       }
     ],
     "releases": [],
-    "issues": [],
-    "pullRequests": []
+    "issues": [
+      {
+        "url": "https://api.github.com/repos/discord/rules_scala/issues/1",
+        "id": 441287586,
+        "node_id": "MDExOlB1bGxSZXF1ZXN0Mjc2NjQyNjQx",
+        "number": 1,
+        "title": "Update with upstream",
+        "user": {
+          "login": "dougblack",
+          "id": 942395,
+          "node_id": "MDQ6VXNlcjk0MjM5NQ==",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/dougblack",
+          "type": "User",
+          "site_admin": false
+        },
+        "labels": [],
+        "state": "closed",
+        "locked": false,
+        "assignee": null,
+        "assignees": [],
+        "milestone": null,
+        "comments": 1,
+        "created_at": "2019-05-07T15:10:41Z",
+        "updated_at": "2019-05-15T20:06:41Z",
+        "closed_at": "2019-05-15T20:06:41Z",
+        "author_association": "NONE",
+        "active_lock_reason": null,
+        "draft": false,
+        "pull_request": {
+          "url": "https://api.github.com/repos/discord/rules_scala/pulls/1",
+          "merged_at": "2019-05-15T20:06:41Z"
+        },
+        "body": "",
+        "reactions": {
+          "url": "https://api.github.com/repos/discord/rules_scala/issues/1/reactions",
+          "total_count": 0,
+          "+1": 0,
+          "-1": 0,
+          "laugh": 0,
+          "hooray": 0,
+          "confused": 0,
+          "heart": 0,
+          "rocket": 0,
+          "eyes": 0
+        },
+        "performed_via_github_app": null,
+        "state_reason": null
+      }
+    ],
+    "pullRequests": [
+      {
+        "url": "https://api.github.com/repos/discord/rules_scala/pulls/1",
+        "id": 276642641,
+        "node_id": "MDExOlB1bGxSZXF1ZXN0Mjc2NjQyNjQx",
+        "number": 1,
+        "state": "closed",
+        "locked": false,
+        "title": "Update with upstream",
+        "user": {
+          "login": "dougblack",
+          "id": 942395,
+          "node_id": "MDQ6VXNlcjk0MjM5NQ==",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/dougblack",
+          "type": "User",
+          "site_admin": false
+        },
+        "body": "",
+        "created_at": "2019-05-07T15:10:41Z",
+        "updated_at": "2019-05-15T20:06:41Z",
+        "closed_at": "2019-05-15T20:06:41Z",
+        "merged_at": "2019-05-15T20:06:41Z",
+        "merge_commit_sha": "8f006056990307cbd8320c97a59cd09c821011d8",
+        "assignee": null,
+        "assignees": [],
+        "requested_reviewers": [],
+        "requested_teams": [],
+        "labels": [],
+        "milestone": null,
+        "draft": false,
+        "head": {
+          "label": "discord:discord/update-with-master",
+          "ref": "discord/update-with-master",
+          "sha": "8f006056990307cbd8320c97a59cd09c821011d8",
+          "user": {
+            "login": "discord",
+            "id": 1965106,
+            "node_id": "MDEyOk9yZ2FuaXphdGlvbjE5NjUxMDY=",
+            "gravatar_id": "",
+            "url": "https://api.github.com/users/discord",
+            "type": "Organization",
+            "site_admin": false
+          },
+          "repo": {
+            "id": 165151854,
+            "node_id": "MDEwOlJlcG9zaXRvcnkxNjUxNTE4NTQ=",
+            "name": "rules_scala",
+            "full_name": "discord/rules_scala",
+            "private": false,
+            "owner": {
+              "login": "discord",
+              "id": 1965106,
+              "node_id": "MDEyOk9yZ2FuaXphdGlvbjE5NjUxMDY=",
+              "gravatar_id": "",
+              "url": "https://api.github.com/users/discord",
+              "type": "Organization",
+              "site_admin": false
+            },
+            "description": "Scala rules for Bazel",
+            "fork": true,
+            "url": "https://api.github.com/repos/discord/rules_scala",
+            "created_at": "2019-01-11T00:29:13Z",
+            "updated_at": "2021-04-28T21:28:50Z",
+            "pushed_at": "2019-09-11T19:05:48Z",
+            "homepage": null,
+            "size": 1991,
+            "stargazers_count": 4,
+            "watchers_count": 4,
+            "language": "Python",
+            "has_issues": false,
+            "has_projects": true,
+            "has_downloads": true,
+            "has_wiki": true,
+            "has_pages": false,
+            "has_discussions": false,
+            "forks_count": 3,
+            "archived": false,
+            "disabled": false,
+            "open_issues_count": 0,
+            "license": {
+              "key": "apache-2.0",
+              "name": "Apache License 2.0",
+              "spdx_id": "Apache-2.0",
+              "url": "https://api.github.com/licenses/apache-2.0",
+              "node_id": "MDc6TGljZW5zZTI="
+            },
+            "allow_forking": true,
+            "is_template": false,
+            "web_commit_signoff_required": false,
+            "topics": [],
+            "visibility": "public",
+            "forks": 3,
+            "open_issues": 0,
+            "watchers": 4,
+            "default_branch": "master"
+          }
+        },
+        "base": {
+          "label": "discord:master",
+          "ref": "master",
+          "sha": "b2e12827240fc488bbe5ebbbbcbc7a4f12ca02f2",
+          "user": {
+            "login": "discord",
+            "id": 1965106,
+            "node_id": "MDEyOk9yZ2FuaXphdGlvbjE5NjUxMDY=",
+            "gravatar_id": "",
+            "url": "https://api.github.com/users/discord",
+            "type": "Organization",
+            "site_admin": false
+          },
+          "repo": {
+            "id": 165151854,
+            "node_id": "MDEwOlJlcG9zaXRvcnkxNjUxNTE4NTQ=",
+            "name": "rules_scala",
+            "full_name": "discord/rules_scala",
+            "private": false,
+            "owner": {
+              "login": "discord",
+              "id": 1965106,
+              "node_id": "MDEyOk9yZ2FuaXphdGlvbjE5NjUxMDY=",
+              "gravatar_id": "",
+              "url": "https://api.github.com/users/discord",
+              "type": "Organization",
+              "site_admin": false
+            },
+            "description": "Scala rules for Bazel",
+            "fork": true,
+            "url": "https://api.github.com/repos/discord/rules_scala",
+            "created_at": "2019-01-11T00:29:13Z",
+            "updated_at": "2021-04-28T21:28:50Z",
+            "pushed_at": "2019-09-11T19:05:48Z",
+            "homepage": null,
+            "size": 1991,
+            "stargazers_count": 4,
+            "watchers_count": 4,
+            "language": "Python",
+            "has_issues": false,
+            "has_projects": true,
+            "has_downloads": true,
+            "has_wiki": true,
+            "has_pages": false,
+            "has_discussions": false,
+            "forks_count": 3,
+            "archived": false,
+            "disabled": false,
+            "open_issues_count": 0,
+            "license": {
+              "key": "apache-2.0",
+              "name": "Apache License 2.0",
+              "spdx_id": "Apache-2.0",
+              "url": "https://api.github.com/licenses/apache-2.0",
+              "node_id": "MDc6TGljZW5zZTI="
+            },
+            "allow_forking": true,
+            "is_template": false,
+            "web_commit_signoff_required": false,
+            "topics": [],
+            "visibility": "public",
+            "forks": 3,
+            "open_issues": 0,
+            "watchers": 4,
+            "default_branch": "master"
+          }
+        },
+        "_links": {
+          "self": {
+            "href": "https://api.github.com/repos/discord/rules_scala/pulls/1"
+          },
+          "html": {
+            "href": "https://github.com/discord/rules_scala/pull/1"
+          },
+          "issue": {
+            "href": "https://api.github.com/repos/discord/rules_scala/issues/1"
+          },
+          "comments": {
+            "href": "https://api.github.com/repos/discord/rules_scala/issues/1/comments"
+          },
+          "review_comments": {
+            "href": "https://api.github.com/repos/discord/rules_scala/pulls/1/comments"
+          },
+          "review_comment": {
+            "href": "https://api.github.com/repos/discord/rules_scala/pulls/comments{/number}"
+          },
+          "commits": {
+            "href": "https://api.github.com/repos/discord/rules_scala/pulls/1/commits"
+          },
+          "statuses": {
+            "href": "https://api.github.com/repos/discord/rules_scala/statuses/8f006056990307cbd8320c97a59cd09c821011d8"
+          }
+        },
+        "author_association": "NONE",
+        "auto_merge": null,
+        "active_lock_reason": null
+      }
+    ]
   }
 }

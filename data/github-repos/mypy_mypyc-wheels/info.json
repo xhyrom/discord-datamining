@@ -57,7 +57,96 @@
     "triage": false,
     "pull": false
   },
-  "branches": [],
+  "branches": [
+    {
+      "name": "debug",
+      "commit": {
+        "sha": "19d336faef9289668a9aa2a6862295a5f28c527f",
+        "url": "https://api.github.com/repos/discord/mypy_mypyc-wheels/commits/19d336faef9289668a9aa2a6862295a5f28c527f"
+      },
+      "protected": false
+    },
+    {
+      "name": "fix-build",
+      "commit": {
+        "sha": "bff777ee68902826201c3f50b54d62d3499f0020",
+        "url": "https://api.github.com/repos/discord/mypy_mypyc-wheels/commits/bff777ee68902826201c3f50b54d62d3499f0020"
+      },
+      "protected": false
+    },
+    {
+      "name": "fix-macos",
+      "commit": {
+        "sha": "a1003f6da5bed2ded3ae76f8a38a02c78dad1923",
+        "url": "https://api.github.com/repos/discord/mypy_mypyc-wheels/commits/a1003f6da5bed2ded3ae76f8a38a02c78dad1923"
+      },
+      "protected": false
+    },
+    {
+      "name": "fuegofro-mypy-98edc4148ac9fb3bdb601419ab2bafbac848fc6c",
+      "commit": {
+        "sha": "f36656ce2b3ff4999327833c2bd2ce55ea005aee",
+        "url": "https://api.github.com/repos/discord/mypy_mypyc-wheels/commits/f36656ce2b3ff4999327833c2bd2ce55ea005aee"
+      },
+      "protected": false
+    },
+    {
+      "name": "master",
+      "commit": {
+        "sha": "f4cd24f68d24f9801534c75ee777e1ac359c2423",
+        "url": "https://api.github.com/repos/discord/mypy_mypyc-wheels/commits/f4cd24f68d24f9801534c75ee777e1ac359c2423"
+      },
+      "protected": false
+    },
+    {
+      "name": "more-mac",
+      "commit": {
+        "sha": "136bdfa15d065cc2df34237b476f40b8f4802384",
+        "url": "https://api.github.com/repos/discord/mypy_mypyc-wheels/commits/136bdfa15d065cc2df34237b476f40b8f4802384"
+      },
+      "protected": false
+    },
+    {
+      "name": "more-macos",
+      "commit": {
+        "sha": "d5d8fa1ecfd7faa9dffe37903dff6e829ca17af5",
+        "url": "https://api.github.com/repos/discord/mypy_mypyc-wheels/commits/d5d8fa1ecfd7faa9dffe37903dff6e829ca17af5"
+      },
+      "protected": false
+    },
+    {
+      "name": "refactor-build",
+      "commit": {
+        "sha": "397e631e68209a96407f8d447bc5d0de32676c54",
+        "url": "https://api.github.com/repos/discord/mypy_mypyc-wheels/commits/397e631e68209a96407f8d447bc5d0de32676c54"
+      },
+      "protected": false
+    },
+    {
+      "name": "try-3.8",
+      "commit": {
+        "sha": "839d9b62cd62ed0c47d8bed82d0fd8c58357b702",
+        "url": "https://api.github.com/repos/discord/mypy_mypyc-wheels/commits/839d9b62cd62ed0c47d8bed82d0fd8c58357b702"
+      },
+      "protected": false
+    },
+    {
+      "name": "use-mypys-version",
+      "commit": {
+        "sha": "0f9d4877505575f677a6e9820c4f78c0adbb9ed5",
+        "url": "https://api.github.com/repos/discord/mypy_mypyc-wheels/commits/0f9d4877505575f677a6e9820c4f78c0adbb9ed5"
+      },
+      "protected": false
+    },
+    {
+      "name": "windows",
+      "commit": {
+        "sha": "5c94f199f61955b9046ba112a9742ac53d795be9",
+        "url": "https://api.github.com/repos/discord/mypy_mypyc-wheels/commits/5c94f199f61955b9046ba112a9742ac53d795be9"
+      },
+      "protected": false
+    }
+  ],
   "last5": {
     "commits": [
       {

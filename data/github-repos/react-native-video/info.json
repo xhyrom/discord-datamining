@@ -57,9 +57,337 @@
     "triage": false,
     "pull": false
   },
-  "branches": [],
+  "branches": [
+    {
+      "name": "dev-4.x",
+      "commit": {
+        "sha": "c183668bd1619a4d70fa5522caf661b9aca1d7db",
+        "url": "https://api.github.com/repos/discord/react-native-video/commits/c183668bd1619a4d70fa5522caf661b9aca1d7db"
+      },
+      "protected": false
+    },
+    {
+      "name": "discord-1",
+      "commit": {
+        "sha": "9c05ea18dad3a12eb93b9421fb264b9c12937f94",
+        "url": "https://api.github.com/repos/discord/react-native-video/commits/9c05ea18dad3a12eb93b9421fb264b9c12937f94"
+      },
+      "protected": false
+    },
+    {
+      "name": "feature/audio-interruptions",
+      "commit": {
+        "sha": "3baeaad3591812beb006a39f34d6517018db9943",
+        "url": "https://api.github.com/repos/discord/react-native-video/commits/3baeaad3591812beb006a39f34d6517018db9943"
+      },
+      "protected": false
+    },
+    {
+      "name": "getFrames",
+      "commit": {
+        "sha": "6f32cd6b05fcb04413eb14dc0bf3d7f147b23a19",
+        "url": "https://api.github.com/repos/discord/react-native-video/commits/6f32cd6b05fcb04413eb14dc0bf3d7f147b23a19"
+      },
+      "protected": false
+    },
+    {
+      "name": "master",
+      "commit": {
+        "sha": "81ae785090f5ce3d5e45cc51f68a3360a85be853",
+        "url": "https://api.github.com/repos/discord/react-native-video/commits/81ae785090f5ce3d5e45cc51f68a3360a85be853"
+      },
+      "protected": false
+    },
+    {
+      "name": "revert-1862-ios-landscape",
+      "commit": {
+        "sha": "96146b9261cbd63c7e6b9799521443835bc6a71d",
+        "url": "https://api.github.com/repos/discord/react-native-video/commits/96146b9261cbd63c7e6b9799521443835bc6a71d"
+      },
+      "protected": false
+    }
+  ],
   "last5": {
-    "commits": [],
+    "commits": [
+      {
+        "sha": "81ae785090f5ce3d5e45cc51f68a3360a85be853",
+        "node_id": "C_kwDOGj9EfdoAKDgxYWU3ODUwOTBmNWNlM2Q1ZTQ1Y2M1MWY2OGEzMzYwYTg1YmU4NTM",
+        "commit": {
+          "author": {
+            "name": "Jonas Dalesjö",
+            "email": "jonas.dalesjo@gmail.com",
+            "date": "2021-10-20T13:38:04Z"
+          },
+          "committer": {
+            "name": "Jonas Dalesjö",
+            "email": "jonas.dalesjo@gmail.com",
+            "date": "2021-10-20T13:38:04Z"
+          },
+          "message": "Release 5.2.0",
+          "tree": {
+            "sha": "cafba5b51174fa23f0813d5faee3686dd9370329",
+            "url": "https://api.github.com/repos/discord/react-native-video/git/trees/cafba5b51174fa23f0813d5faee3686dd9370329"
+          },
+          "url": "https://api.github.com/repos/discord/react-native-video/git/commits/81ae785090f5ce3d5e45cc51f68a3360a85be853",
+          "comment_count": 0,
+          "verification": {
+            "verified": false,
+            "reason": "unsigned",
+            "signature": null,
+            "payload": null
+          }
+        },
+        "url": "https://api.github.com/repos/discord/react-native-video/commits/81ae785090f5ce3d5e45cc51f68a3360a85be853",
+        "author": {
+          "login": "zchwyng",
+          "id": 1339994,
+          "node_id": "MDQ6VXNlcjEzMzk5OTQ=",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/zchwyng",
+          "type": "User",
+          "site_admin": false
+        },
+        "committer": {
+          "login": "zchwyng",
+          "id": 1339994,
+          "node_id": "MDQ6VXNlcjEzMzk5OTQ=",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/zchwyng",
+          "type": "User",
+          "site_admin": false
+        },
+        "parents": [
+          {
+            "sha": "d05f3dd5b96eb9f0e5a8cb3eb50d24ad1912d04d",
+            "url": "https://api.github.com/repos/discord/react-native-video/commits/d05f3dd5b96eb9f0e5a8cb3eb50d24ad1912d04d"
+          }
+        ]
+      },
+      {
+        "sha": "d05f3dd5b96eb9f0e5a8cb3eb50d24ad1912d04d",
+        "node_id": "C_kwDOGj9EfdoAKGQwNWYzZGQ1Yjk2ZWI5ZjBlNWE4Y2IzZWI1MGQyNGFkMTkxMmQwNGQ",
+        "commit": {
+          "author": {
+            "name": "Jonas Dalesjö",
+            "email": "jonas.dalesjo@gmail.com",
+            "date": "2021-10-11T08:27:04Z"
+          },
+          "committer": {
+            "name": "Jonas Dalesjö",
+            "email": "jonas.dalesjo@gmail.com",
+            "date": "2021-10-11T08:27:04Z"
+          },
+          "message": "Typo",
+          "tree": {
+            "sha": "6b8d31a011366a069c07a3fd0023c0b165985432",
+            "url": "https://api.github.com/repos/discord/react-native-video/git/trees/6b8d31a011366a069c07a3fd0023c0b165985432"
+          },
+          "url": "https://api.github.com/repos/discord/react-native-video/git/commits/d05f3dd5b96eb9f0e5a8cb3eb50d24ad1912d04d",
+          "comment_count": 0,
+          "verification": {
+            "verified": false,
+            "reason": "unsigned",
+            "signature": null,
+            "payload": null
+          }
+        },
+        "url": "https://api.github.com/repos/discord/react-native-video/commits/d05f3dd5b96eb9f0e5a8cb3eb50d24ad1912d04d",
+        "author": {
+          "login": "zchwyng",
+          "id": 1339994,
+          "node_id": "MDQ6VXNlcjEzMzk5OTQ=",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/zchwyng",
+          "type": "User",
+          "site_admin": false
+        },
+        "committer": {
+          "login": "zchwyng",
+          "id": 1339994,
+          "node_id": "MDQ6VXNlcjEzMzk5OTQ=",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/zchwyng",
+          "type": "User",
+          "site_admin": false
+        },
+        "parents": [
+          {
+            "sha": "31f866cd9f198cf3e1f5045bdf77a5952e62ab19",
+            "url": "https://api.github.com/repos/discord/react-native-video/commits/31f866cd9f198cf3e1f5045bdf77a5952e62ab19"
+          }
+        ]
+      },
+      {
+        "sha": "31f866cd9f198cf3e1f5045bdf77a5952e62ab19",
+        "node_id": "C_kwDOGj9EfdoAKDMxZjg2NmNkOWYxOThjZjNlMWY1MDQ1YmRmNzdhNTk1MmU2MmFiMTk",
+        "commit": {
+          "author": {
+            "name": "Jonas Dalesjö",
+            "email": "jonas.dalesjo@gmail.com",
+            "date": "2021-10-11T08:20:32Z"
+          },
+          "committer": {
+            "name": "Jonas Dalesjö",
+            "email": "jonas.dalesjo@gmail.com",
+            "date": "2021-10-11T08:20:32Z"
+          },
+          "message": "Release 5.2.0-alpha1",
+          "tree": {
+            "sha": "fd27144d51faa14cfbae1105e228c7ccfd317d9f",
+            "url": "https://api.github.com/repos/discord/react-native-video/git/trees/fd27144d51faa14cfbae1105e228c7ccfd317d9f"
+          },
+          "url": "https://api.github.com/repos/discord/react-native-video/git/commits/31f866cd9f198cf3e1f5045bdf77a5952e62ab19",
+          "comment_count": 0,
+          "verification": {
+            "verified": false,
+            "reason": "unsigned",
+            "signature": null,
+            "payload": null
+          }
+        },
+        "url": "https://api.github.com/repos/discord/react-native-video/commits/31f866cd9f198cf3e1f5045bdf77a5952e62ab19",
+        "author": {
+          "login": "zchwyng",
+          "id": 1339994,
+          "node_id": "MDQ6VXNlcjEzMzk5OTQ=",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/zchwyng",
+          "type": "User",
+          "site_admin": false
+        },
+        "committer": {
+          "login": "zchwyng",
+          "id": 1339994,
+          "node_id": "MDQ6VXNlcjEzMzk5OTQ=",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/zchwyng",
+          "type": "User",
+          "site_admin": false
+        },
+        "parents": [
+          {
+            "sha": "bf11502fdb83751ad826f3e4b448732075292805",
+            "url": "https://api.github.com/repos/discord/react-native-video/commits/bf11502fdb83751ad826f3e4b448732075292805"
+          }
+        ]
+      },
+      {
+        "sha": "bf11502fdb83751ad826f3e4b448732075292805",
+        "node_id": "MDY6Q29tbWl0NDQwMzUzOTE3OmJmMTE1MDJmZGI4Mzc1MWFkODI2ZjNlNGI0NDg3MzIwNzUyOTI4MDU=",
+        "commit": {
+          "author": {
+            "name": "Jonas Dalesjö",
+            "email": "jonas.dalesjo@gmail.com",
+            "date": "2021-09-09T19:34:50Z"
+          },
+          "committer": {
+            "name": "GitHub",
+            "email": "noreply@github.com",
+            "date": "2021-09-09T19:34:50Z"
+          },
+          "message": "Merge pull request #2215 from valtech-sd/master\n\nResolved ignored silent switch in iOS when player is set to paused",
+          "tree": {
+            "sha": "4a794319dc0a7b9a6cb9ae307cae6c49c07a8b3f",
+            "url": "https://api.github.com/repos/discord/react-native-video/git/trees/4a794319dc0a7b9a6cb9ae307cae6c49c07a8b3f"
+          },
+          "url": "https://api.github.com/repos/discord/react-native-video/git/commits/bf11502fdb83751ad826f3e4b448732075292805",
+          "comment_count": 0,
+          "verification": {
+            "verified": true,
+            "reason": "valid",
+            "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsBcBAABCAAQBQJhOmHaCRBK7hj4Ov3rIwAA5J0IAHfiZeUNk8F+b/32CN5tbjYa\nEAQeSjohoBzkIwQA5wRC9VL4HO8eYoZuXGstbPnRRYrU0m1lk6x739RYWJ7p9isD\npQTb69KJCXlL6dVHLPA0eivwGC3Z2pFBvXHFIZ3HAzR2/QZrwJQQy6RapaqR70KL\npk18wPuTRyKPr+6sv1ucssMEdjUU3KaIdn1X0sOW1t71iqVZNasB71L8F+hJOOsu\n4DDIlkLzbakZb+z5ua/tVglRK8FjZAta4dtuP5sG0Aa6pQ8l49j9qbx5z026EYM2\nmZXwtchDEGeYhDTn7WYK+kaofQSFvx9hU2BslHGVK8VqWJ8DzRgTDT22Ln+w6Os=\n=AUIN\n-----END PGP SIGNATURE-----\n",
+            "payload": "tree 4a794319dc0a7b9a6cb9ae307cae6c49c07a8b3f\nparent 724b8629f6c7f222c08e60e6948d06fa45a6f4f2\nparent 688650a9db0f026a8183ba7337e307cb386e1b1d\nauthor Jonas Dalesjö <jonas.dalesjo@gmail.com> 1631216090 +0200\ncommitter GitHub <noreply@github.com> 1631216090 +0200\n\nMerge pull request #2215 from valtech-sd/master\n\nResolved ignored silent switch in iOS when player is set to paused"
+          }
+        },
+        "url": "https://api.github.com/repos/discord/react-native-video/commits/bf11502fdb83751ad826f3e4b448732075292805",
+        "author": {
+          "login": "zchwyng",
+          "id": 1339994,
+          "node_id": "MDQ6VXNlcjEzMzk5OTQ=",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/zchwyng",
+          "type": "User",
+          "site_admin": false
+        },
+        "committer": {
+          "login": "web-flow",
+          "id": 19864447,
+          "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/web-flow",
+          "type": "User",
+          "site_admin": false
+        },
+        "parents": [
+          {
+            "sha": "724b8629f6c7f222c08e60e6948d06fa45a6f4f2",
+            "url": "https://api.github.com/repos/discord/react-native-video/commits/724b8629f6c7f222c08e60e6948d06fa45a6f4f2"
+          },
+          {
+            "sha": "688650a9db0f026a8183ba7337e307cb386e1b1d",
+            "url": "https://api.github.com/repos/discord/react-native-video/commits/688650a9db0f026a8183ba7337e307cb386e1b1d"
+          }
+        ]
+      },
+      {
+        "sha": "688650a9db0f026a8183ba7337e307cb386e1b1d",
+        "node_id": "MDY6Q29tbWl0NDQwMzUzOTE3OjY4ODY1MGE5ZGIwZjAyNmE4MTgzYmE3MzM3ZTMwN2NiMzg2ZTFiMWQ=",
+        "commit": {
+          "author": {
+            "name": "Shane Mckenna",
+            "email": "shanemckennadev@gmail.com",
+            "date": "2021-08-26T22:33:10Z"
+          },
+          "committer": {
+            "name": "GitHub",
+            "email": "noreply@github.com",
+            "date": "2021-08-26T22:33:10Z"
+          },
+          "message": "Merge pull request #1 from valtech-sd/bugfix/fix-tvOS-audio-menu\n\nFix for tvOS native audio menu language selector",
+          "tree": {
+            "sha": "3f2d66d0666bb894497fc7869f683bf96e19138c",
+            "url": "https://api.github.com/repos/discord/react-native-video/git/trees/3f2d66d0666bb894497fc7869f683bf96e19138c"
+          },
+          "url": "https://api.github.com/repos/discord/react-native-video/git/commits/688650a9db0f026a8183ba7337e307cb386e1b1d",
+          "comment_count": 0,
+          "verification": {
+            "verified": true,
+            "reason": "valid",
+            "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsBcBAABCAAQBQJhKBamCRBK7hj4Ov3rIwAA6xcIADSn9fJLgTmEaOJ9oo9Fas34\nsw6Xr9MFPccWB9jPqo8eru35bVndNNw3/ycdisS2rlORyMC+ICMMfUZNGJPuLgXd\nbqiRipGYcYJgA8NmHLf+bW2lpS9O2Be6df88PSte8ZS+DS0dHYfwt62W4ngx7uxV\n6u8dPBiZQuFg8UMH/frsysHa1Dkr9zgfqnqoPizDHvo8llACTMRNms1ca+luN/B2\n5zXrtDiMz4nkapMTO4NCrE70GCrpgH5107tbhitvsX88vb+hrmVYpMeDF3qSDrP3\naa6QwiXquBCtVVGre3COhA7f43lnPgXbwZX3+Ta9bvx6wvW+RXDZFgMWscRp1B0=\n=6jRU\n-----END PGP SIGNATURE-----\n",
+            "payload": "tree 3f2d66d0666bb894497fc7869f683bf96e19138c\nparent f79782b4470f74c64926eff80db511596b07a05b\nparent a42240d5543cbc9f7c11a0692c05d625d345457a\nauthor Shane Mckenna <shanemckennadev@gmail.com> 1630017190 -0700\ncommitter GitHub <noreply@github.com> 1630017190 -0700\n\nMerge pull request #1 from valtech-sd/bugfix/fix-tvOS-audio-menu\n\nFix for tvOS native audio menu language selector"
+          }
+        },
+        "url": "https://api.github.com/repos/discord/react-native-video/commits/688650a9db0f026a8183ba7337e307cb386e1b1d",
+        "author": {
+          "login": "ShaneMckenna23",
+          "id": 18077159,
+          "node_id": "MDQ6VXNlcjE4MDc3MTU5",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/ShaneMckenna23",
+          "type": "User",
+          "site_admin": false
+        },
+        "committer": {
+          "login": "web-flow",
+          "id": 19864447,
+          "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/web-flow",
+          "type": "User",
+          "site_admin": false
+        },
+        "parents": [
+          {
+            "sha": "f79782b4470f74c64926eff80db511596b07a05b",
+            "url": "https://api.github.com/repos/discord/react-native-video/commits/f79782b4470f74c64926eff80db511596b07a05b"
+          },
+          {
+            "sha": "a42240d5543cbc9f7c11a0692c05d625d345457a",
+            "url": "https://api.github.com/repos/discord/react-native-video/commits/a42240d5543cbc9f7c11a0692c05d625d345457a"
+          }
+        ]
+      }
+    ],
     "releases": [],
     "issues": [],
     "pullRequests": []

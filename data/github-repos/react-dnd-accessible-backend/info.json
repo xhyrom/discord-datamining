@@ -59,9 +59,551 @@
   },
   "branches": [],
   "last5": {
-    "commits": [],
-    "releases": [],
-    "issues": [],
+    "commits": [
+      {
+        "sha": "8c5c96fa05ce185fe8db3ab3b900ff58891eb6f8",
+        "node_id": "C_kwDOGJf_zdoAKDhjNWM5NmZhMDVjZTE4NWZlOGRiM2FiM2I5MDBmZjU4ODkxZWI2Zjg",
+        "commit": {
+          "author": {
+            "name": "faultyserver",
+            "email": "jon.egeland@discordapp.com",
+            "date": "2021-10-09T22:46:15Z"
+          },
+          "committer": {
+            "name": "faultyserver",
+            "email": "jon.egeland@discordapp.com",
+            "date": "2021-10-09T22:46:15Z"
+          },
+          "message": "Bump to v1.0.1",
+          "tree": {
+            "sha": "00e29c0c43b1186c7137cb29410e9c5f7e7e0f9d",
+            "url": "https://api.github.com/repos/discord/react-dnd-accessible-backend/git/trees/00e29c0c43b1186c7137cb29410e9c5f7e7e0f9d"
+          },
+          "url": "https://api.github.com/repos/discord/react-dnd-accessible-backend/git/commits/8c5c96fa05ce185fe8db3ab3b900ff58891eb6f8",
+          "comment_count": 2,
+          "verification": {
+            "verified": false,
+            "reason": "unsigned",
+            "signature": null,
+            "payload": null
+          }
+        },
+        "url": "https://api.github.com/repos/discord/react-dnd-accessible-backend/commits/8c5c96fa05ce185fe8db3ab3b900ff58891eb6f8",
+        "author": {
+          "login": "faultyserver",
+          "id": 783733,
+          "node_id": "MDQ6VXNlcjc4MzczMw==",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/faultyserver",
+          "type": "User",
+          "site_admin": false
+        },
+        "committer": {
+          "login": "faultyserver",
+          "id": 783733,
+          "node_id": "MDQ6VXNlcjc4MzczMw==",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/faultyserver",
+          "type": "User",
+          "site_admin": false
+        },
+        "parents": [
+          {
+            "sha": "5f4d8f903344db4f2acf8a21234a27a0c6d2f5d1",
+            "url": "https://api.github.com/repos/discord/react-dnd-accessible-backend/commits/5f4d8f903344db4f2acf8a21234a27a0c6d2f5d1"
+          }
+        ]
+      },
+      {
+        "sha": "5f4d8f903344db4f2acf8a21234a27a0c6d2f5d1",
+        "node_id": "C_kwDOGJf_zdoAKDVmNGQ4ZjkwMzM0NGRiNGYyYWNmOGEyMTIzNGEyN2EwYzZkMmY1ZDE",
+        "commit": {
+          "author": {
+            "name": "Jon",
+            "email": "jon.egeland@discordapp.com",
+            "date": "2021-10-09T22:45:26Z"
+          },
+          "committer": {
+            "name": "GitHub",
+            "email": "noreply@github.com",
+            "date": "2021-10-09T22:45:26Z"
+          },
+          "message": "Merge pull request #1 from discord/feature/allow-trigger-override\n\nAllow overriding `isDragTrigger` to change the drag keybind.",
+          "tree": {
+            "sha": "9509a07d6bbdc89e7d7e7a54d7dc59c11c683ddc",
+            "url": "https://api.github.com/repos/discord/react-dnd-accessible-backend/git/trees/9509a07d6bbdc89e7d7e7a54d7dc59c11c683ddc"
+          },
+          "url": "https://api.github.com/repos/discord/react-dnd-accessible-backend/git/commits/5f4d8f903344db4f2acf8a21234a27a0c6d2f5d1",
+          "comment_count": 0,
+          "verification": {
+            "verified": true,
+            "reason": "valid",
+            "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsBcBAABCAAQBQJhYhuGCRBK7hj4Ov3rIwAAqekIAFYeYSA0JoDdkuIS6D1jqHfr\n9A8WyI7zIkJpdt6wLD5M11hZQUu2xIyu202ARcvEKqUr92PQ7YNDrlfRyo+ckxqU\nHIxo/kQsEVGnJCv8uKGPPnRs95v2Pt0W5cRP76jRlC92CepvJjTO50IEuMRyfaT+\n9Ne8p32z6EGfeyrpO7zlZe5YVVmIjfTvI+ITc6BfyqKRxe9V7q6fT+J3zYNF9HX1\n06b8aVcTg3e0SYk9YEab/T/neJSt9Xh9JvQbKxRoi/ygSr5KL9kYqDV+N0k2UAPL\nleo9r6U/r0TQtzDRQV9oQyKI+OSn5bk2DX3m+V62alSRzr5Vda2a9gCe1R3DiI4=\n=npQa\n-----END PGP SIGNATURE-----\n",
+            "payload": "tree 9509a07d6bbdc89e7d7e7a54d7dc59c11c683ddc\nparent 6b7413eed66630b5e8e00864c9a282124a9e484e\nparent c2cb8b86d638cfd70a2fef6afaa61ce532b9cace\nauthor Jon <jon.egeland@discordapp.com> 1633819526 -0700\ncommitter GitHub <noreply@github.com> 1633819526 -0700\n\nMerge pull request #1 from discord/feature/allow-trigger-override\n\nAllow overriding `isDragTrigger` to change the drag keybind."
+          }
+        },
+        "url": "https://api.github.com/repos/discord/react-dnd-accessible-backend/commits/5f4d8f903344db4f2acf8a21234a27a0c6d2f5d1",
+        "author": {
+          "login": "faultyserver",
+          "id": 783733,
+          "node_id": "MDQ6VXNlcjc4MzczMw==",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/faultyserver",
+          "type": "User",
+          "site_admin": false
+        },
+        "committer": {
+          "login": "web-flow",
+          "id": 19864447,
+          "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/web-flow",
+          "type": "User",
+          "site_admin": false
+        },
+        "parents": [
+          {
+            "sha": "6b7413eed66630b5e8e00864c9a282124a9e484e",
+            "url": "https://api.github.com/repos/discord/react-dnd-accessible-backend/commits/6b7413eed66630b5e8e00864c9a282124a9e484e"
+          },
+          {
+            "sha": "c2cb8b86d638cfd70a2fef6afaa61ce532b9cace",
+            "url": "https://api.github.com/repos/discord/react-dnd-accessible-backend/commits/c2cb8b86d638cfd70a2fef6afaa61ce532b9cace"
+          }
+        ]
+      },
+      {
+        "sha": "c2cb8b86d638cfd70a2fef6afaa61ce532b9cace",
+        "node_id": "C_kwDOGJf_zdoAKGMyY2I4Yjg2ZDYzOGNmZDcwYTJmZWY2YWZhYTYxY2U1MzJiOWNhY2U",
+        "commit": {
+          "author": {
+            "name": "faultyserver",
+            "email": "jon.egeland@discordapp.com",
+            "date": "2021-10-09T22:44:47Z"
+          },
+          "committer": {
+            "name": "faultyserver",
+            "email": "jon.egeland@discordapp.com",
+            "date": "2021-10-09T22:44:47Z"
+          },
+          "message": "Fix conditional in README example",
+          "tree": {
+            "sha": "9509a07d6bbdc89e7d7e7a54d7dc59c11c683ddc",
+            "url": "https://api.github.com/repos/discord/react-dnd-accessible-backend/git/trees/9509a07d6bbdc89e7d7e7a54d7dc59c11c683ddc"
+          },
+          "url": "https://api.github.com/repos/discord/react-dnd-accessible-backend/git/commits/c2cb8b86d638cfd70a2fef6afaa61ce532b9cace",
+          "comment_count": 0,
+          "verification": {
+            "verified": false,
+            "reason": "unsigned",
+            "signature": null,
+            "payload": null
+          }
+        },
+        "url": "https://api.github.com/repos/discord/react-dnd-accessible-backend/commits/c2cb8b86d638cfd70a2fef6afaa61ce532b9cace",
+        "author": {
+          "login": "faultyserver",
+          "id": 783733,
+          "node_id": "MDQ6VXNlcjc4MzczMw==",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/faultyserver",
+          "type": "User",
+          "site_admin": false
+        },
+        "committer": {
+          "login": "faultyserver",
+          "id": 783733,
+          "node_id": "MDQ6VXNlcjc4MzczMw==",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/faultyserver",
+          "type": "User",
+          "site_admin": false
+        },
+        "parents": [
+          {
+            "sha": "d7ceaee94c7e217cf23e737e53a89fde627c78ce",
+            "url": "https://api.github.com/repos/discord/react-dnd-accessible-backend/commits/d7ceaee94c7e217cf23e737e53a89fde627c78ce"
+          }
+        ]
+      },
+      {
+        "sha": "d7ceaee94c7e217cf23e737e53a89fde627c78ce",
+        "node_id": "C_kwDOGJf_zdoAKGQ3Y2VhZWU5NGM3ZTIxN2NmMjNlNzM3ZTUzYTg5ZmRlNjI3Yzc4Y2U",
+        "commit": {
+          "author": {
+            "name": "faultyserver",
+            "email": "jon.egeland@discordapp.com",
+            "date": "2021-10-09T22:39:49Z"
+          },
+          "committer": {
+            "name": "faultyserver",
+            "email": "jon.egeland@discordapp.com",
+            "date": "2021-10-09T22:39:49Z"
+          },
+          "message": "Allow overriding `isDragTrigger` to change the drag keybind.",
+          "tree": {
+            "sha": "7251b3b4dbb2ac93b2096d07ab74ea10f1a61e56",
+            "url": "https://api.github.com/repos/discord/react-dnd-accessible-backend/git/trees/7251b3b4dbb2ac93b2096d07ab74ea10f1a61e56"
+          },
+          "url": "https://api.github.com/repos/discord/react-dnd-accessible-backend/git/commits/d7ceaee94c7e217cf23e737e53a89fde627c78ce",
+          "comment_count": 0,
+          "verification": {
+            "verified": false,
+            "reason": "unsigned",
+            "signature": null,
+            "payload": null
+          }
+        },
+        "url": "https://api.github.com/repos/discord/react-dnd-accessible-backend/commits/d7ceaee94c7e217cf23e737e53a89fde627c78ce",
+        "author": {
+          "login": "faultyserver",
+          "id": 783733,
+          "node_id": "MDQ6VXNlcjc4MzczMw==",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/faultyserver",
+          "type": "User",
+          "site_admin": false
+        },
+        "committer": {
+          "login": "faultyserver",
+          "id": 783733,
+          "node_id": "MDQ6VXNlcjc4MzczMw==",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/faultyserver",
+          "type": "User",
+          "site_admin": false
+        },
+        "parents": [
+          {
+            "sha": "6b7413eed66630b5e8e00864c9a282124a9e484e",
+            "url": "https://api.github.com/repos/discord/react-dnd-accessible-backend/commits/6b7413eed66630b5e8e00864c9a282124a9e484e"
+          }
+        ]
+      },
+      {
+        "sha": "6b7413eed66630b5e8e00864c9a282124a9e484e",
+        "node_id": "C_kwDOGJf_zdoAKDZiNzQxM2VlZDY2NjMwYjVlOGUwMDg2NGM5YTI4MjEyNGE5ZTQ4NGU",
+        "commit": {
+          "author": {
+            "name": "Jon",
+            "email": "jon.egeland@discordapp.com",
+            "date": "2021-10-04T16:32:32Z"
+          },
+          "committer": {
+            "name": "GitHub",
+            "email": "noreply@github.com",
+            "date": "2021-10-04T16:32:32Z"
+          },
+          "message": "Update README.md",
+          "tree": {
+            "sha": "7311c14b79606ec3dd1a04d88c8d2c2cb314bd39",
+            "url": "https://api.github.com/repos/discord/react-dnd-accessible-backend/git/trees/7311c14b79606ec3dd1a04d88c8d2c2cb314bd39"
+          },
+          "url": "https://api.github.com/repos/discord/react-dnd-accessible-backend/git/commits/6b7413eed66630b5e8e00864c9a282124a9e484e",
+          "comment_count": 0,
+          "verification": {
+            "verified": true,
+            "reason": "valid",
+            "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsBcBAABCAAQBQJhWyyhCRBK7hj4Ov3rIwAA1zEIAIT485P8fNG5uWnx/D1YlPOD\n9BdCioxFdgSOU7qwOI5Rt/4JsPytz75NyAy1EpmcWNFuvnqzYy8BG6BrZdUCrQOI\nXrC/DTWhDfF8ZDUmVhvdpfxT9M7FpP4Y0Fj/D66ndEgEbq+TBOylqCmR/egrhckv\nrrPK148PXjWTT/gii1aOZ4C8PegeCzwi4lMoCP3F85g9HcqS3yB6+UlSllQ+yBuy\nqIHIQYKQJj/eTiwRmErXj1wQsK/bL3XYGLedHXmxXf2AIBWdsgidcuTtw7jlf7Vb\nY3Ekjo7TCPwLop81xK4GVKFiypQ62WJd7voBfFpWOXMkA0qtiTlzQwJOSR54dyk=\n=xke7\n-----END PGP SIGNATURE-----\n",
+            "payload": "tree 7311c14b79606ec3dd1a04d88c8d2c2cb314bd39\nparent 5524ed6329b5685ca8bf82172bca532b89cbb2e4\nauthor Jon <jon.egeland@discordapp.com> 1633365152 -0400\ncommitter GitHub <noreply@github.com> 1633365152 -0400\n\nUpdate README.md"
+          }
+        },
+        "url": "https://api.github.com/repos/discord/react-dnd-accessible-backend/commits/6b7413eed66630b5e8e00864c9a282124a9e484e",
+        "author": {
+          "login": "faultyserver",
+          "id": 783733,
+          "node_id": "MDQ6VXNlcjc4MzczMw==",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/faultyserver",
+          "type": "User",
+          "site_admin": false
+        },
+        "committer": {
+          "login": "web-flow",
+          "id": 19864447,
+          "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/web-flow",
+          "type": "User",
+          "site_admin": false
+        },
+        "parents": [
+          {
+            "sha": "5524ed6329b5685ca8bf82172bca532b89cbb2e4",
+            "url": "https://api.github.com/repos/discord/react-dnd-accessible-backend/commits/5524ed6329b5685ca8bf82172bca532b89cbb2e4"
+          }
+        ]
+      }
+    ],
+    "releases": [
+      {
+        "url": "https://api.github.com/repos/discord/react-dnd-accessible-backend/releases/51087901",
+        "id": 51087901,
+        "author": {
+          "login": "faultyserver",
+          "id": 783733,
+          "node_id": "MDQ6VXNlcjc4MzczMw==",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/faultyserver",
+          "type": "User",
+          "site_admin": false
+        },
+        "node_id": "RE_kwDOGJf_zc4DC4od",
+        "tag_name": "v1.0.1",
+        "target_commitish": "main",
+        "name": "v1.0.1 - Drag trigger overrides",
+        "draft": false,
+        "prerelease": false,
+        "created_at": "2021-10-09T22:46:15Z",
+        "published_at": "2021-10-09T22:48:43Z",
+        "assets": [],
+        "body": "This update enables consumers to override the drag trigger condition by providing an alternate function. This lets consumers change the keybind used to start drag operations, and also check other conditions before allowing a trigger to continue through.",
+        "reactions": {
+          "url": "https://api.github.com/repos/discord/react-dnd-accessible-backend/releases/51087901/reactions",
+          "total_count": 10,
+          "+1": 0,
+          "-1": 0,
+          "laugh": 0,
+          "hooray": 0,
+          "confused": 0,
+          "heart": 1,
+          "rocket": 0,
+          "eyes": 9
+        }
+      }
+    ],
+    "issues": [
+      {
+        "url": "https://api.github.com/repos/discord/react-dnd-accessible-backend/issues/9",
+        "id": 1603647943,
+        "node_id": "PR_kwDOGJf_zc5K9jlN",
+        "number": 9,
+        "title": "Support monitor.isDragging bool",
+        "user": {
+          "login": "stevenmcountryman",
+          "id": 18268862,
+          "node_id": "MDQ6VXNlcjE4MjY4ODYy",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/stevenmcountryman",
+          "type": "User",
+          "site_admin": false
+        },
+        "labels": [],
+        "state": "open",
+        "locked": false,
+        "assignee": null,
+        "assignees": [],
+        "milestone": null,
+        "comments": 1,
+        "created_at": "2023-02-28T19:04:40Z",
+        "updated_at": "2023-02-28T21:03:00Z",
+        "closed_at": null,
+        "author_association": "NONE",
+        "active_lock_reason": null,
+        "draft": false,
+        "pull_request": {
+          "url": "https://api.github.com/repos/discord/react-dnd-accessible-backend/pulls/9",
+          "merged_at": null
+        },
+        "body": "Fixing a bug where `monitor.isDragging()` is always false for the KeyboardBackend because it doesn't provide the proper options and call to publish the drag source",
+        "reactions": {
+          "url": "https://api.github.com/repos/discord/react-dnd-accessible-backend/issues/9/reactions",
+          "total_count": 1,
+          "+1": 0,
+          "-1": 0,
+          "laugh": 0,
+          "hooray": 0,
+          "confused": 0,
+          "heart": 1,
+          "rocket": 0,
+          "eyes": 0
+        },
+        "performed_via_github_app": null,
+        "state_reason": null
+      },
+      {
+        "url": "https://api.github.com/repos/discord/react-dnd-accessible-backend/issues/8",
+        "id": 1598812008,
+        "node_id": "I_kwDOGJf_zc5fS-9o",
+        "number": 8,
+        "title": "Remove peer dependency requirements",
+        "user": {
+          "login": "atwright147",
+          "id": 986665,
+          "node_id": "MDQ6VXNlcjk4NjY2NQ==",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/atwright147",
+          "type": "User",
+          "site_admin": false
+        },
+        "labels": [],
+        "state": "open",
+        "locked": false,
+        "assignee": null,
+        "assignees": [],
+        "milestone": null,
+        "comments": 0,
+        "created_at": "2023-02-24T15:08:48Z",
+        "updated_at": "2023-02-24T15:08:48Z",
+        "closed_at": null,
+        "author_association": "NONE",
+        "active_lock_reason": null,
+        "body": "Hey,\r\n\r\nThis project has strict peer dep requirements set in the package.json, limiting **React** to a max of **v17** and **React-DnD** **v14** but it seems to work fine in **React `v18.2.0`** with **React-DnD `v16.0.1`**. This suggests that the peer requirements are un-necessary.\r\n\r\nCould they be removed please?\r\n\r\nFor anyone else wanting to use this with newer versions of React and React-DnD add the following to your package.json:\r\n\r\n```json\r\n  \"overrides\": {\r\n    \"react-dnd-accessible-backend\": {\r\n      \"react\": \"$react\",\r\n      \"react-dnd\": \"$react-dnd\"\r\n    }\r\n  }\r\n```\r\n\r\nSource of info about the override functionality in NPM v8+: https://stackoverflow.com/a/74734729/633056",
+        "reactions": {
+          "url": "https://api.github.com/repos/discord/react-dnd-accessible-backend/issues/8/reactions",
+          "total_count": 0,
+          "+1": 0,
+          "-1": 0,
+          "laugh": 0,
+          "hooray": 0,
+          "confused": 0,
+          "heart": 0,
+          "rocket": 0,
+          "eyes": 0
+        },
+        "performed_via_github_app": null,
+        "state_reason": null
+      },
+      {
+        "url": "https://api.github.com/repos/discord/react-dnd-accessible-backend/issues/7",
+        "id": 1590363819,
+        "node_id": "I_kwDOGJf_zc5eywar",
+        "number": 7,
+        "title": "Se",
+        "user": {
+          "login": "jjjhdjokaygh",
+          "id": 107783352,
+          "node_id": "U_kgDOBmykuA",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/jjjhdjokaygh",
+          "type": "User",
+          "site_admin": false
+        },
+        "labels": [],
+        "state": "open",
+        "locked": false,
+        "assignee": null,
+        "assignees": [],
+        "milestone": null,
+        "comments": 0,
+        "created_at": "2023-02-18T14:37:52Z",
+        "updated_at": "2023-02-18T14:37:52Z",
+        "closed_at": null,
+        "author_association": "NONE",
+        "active_lock_reason": null,
+        "body": null,
+        "reactions": {
+          "url": "https://api.github.com/repos/discord/react-dnd-accessible-backend/issues/7/reactions",
+          "total_count": 0,
+          "+1": 0,
+          "-1": 0,
+          "laugh": 0,
+          "hooray": 0,
+          "confused": 0,
+          "heart": 0,
+          "rocket": 0,
+          "eyes": 0
+        },
+        "performed_via_github_app": null,
+        "state_reason": null
+      },
+      {
+        "url": "https://api.github.com/repos/discord/react-dnd-accessible-backend/issues/6",
+        "id": 1360775162,
+        "node_id": "PR_kwDOGJf_zc4-T8G1",
+        "number": 6,
+        "title": "typo in README",
+        "user": {
+          "login": "liquiddevelopmentnet",
+          "id": 76592300,
+          "node_id": "MDQ6VXNlcjc2NTkyMzAw",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/liquiddevelopmentnet",
+          "type": "User",
+          "site_admin": false
+        },
+        "labels": [],
+        "state": "closed",
+        "locked": false,
+        "assignee": null,
+        "assignees": [],
+        "milestone": null,
+        "comments": 0,
+        "created_at": "2022-09-03T06:36:18Z",
+        "updated_at": "2022-11-26T16:04:02Z",
+        "closed_at": "2022-11-26T16:04:02Z",
+        "author_association": "NONE",
+        "active_lock_reason": null,
+        "draft": false,
+        "pull_request": {
+          "url": "https://api.github.com/repos/discord/react-dnd-accessible-backend/pulls/6",
+          "merged_at": null
+        },
+        "body": null,
+        "reactions": {
+          "url": "https://api.github.com/repos/discord/react-dnd-accessible-backend/issues/6/reactions",
+          "total_count": 0,
+          "+1": 0,
+          "-1": 0,
+          "laugh": 0,
+          "hooray": 0,
+          "confused": 0,
+          "heart": 0,
+          "rocket": 0,
+          "eyes": 0
+        },
+        "performed_via_github_app": null,
+        "state_reason": null
+      },
+      {
+        "url": "https://api.github.com/repos/discord/react-dnd-accessible-backend/issues/5",
+        "id": 1356461120,
+        "node_id": "PR_kwDOGJf_zc4-FbCt",
+        "number": 5,
+        "title": "fix: spelling mistake",
+        "user": {
+          "login": "Looskie",
+          "id": 50378828,
+          "node_id": "MDQ6VXNlcjUwMzc4ODI4",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/Looskie",
+          "type": "User",
+          "site_admin": false
+        },
+        "labels": [],
+        "state": "closed",
+        "locked": false,
+        "assignee": null,
+        "assignees": [],
+        "milestone": null,
+        "comments": 2,
+        "created_at": "2022-08-30T23:32:12Z",
+        "updated_at": "2022-10-02T01:32:35Z",
+        "closed_at": "2022-08-30T23:33:29Z",
+        "author_association": "NONE",
+        "active_lock_reason": null,
+        "draft": false,
+        "pull_request": {
+          "url": "https://api.github.com/repos/discord/react-dnd-accessible-backend/pulls/5",
+          "merged_at": null
+        },
+        "body": "hey! was just checking out the repo and found this, sorry in advance for such a simple and relatively useless PR ❤️ ",
+        "reactions": {
+          "url": "https://api.github.com/repos/discord/react-dnd-accessible-backend/issues/5/reactions",
+          "total_count": 0,
+          "+1": 0,
+          "-1": 0,
+          "laugh": 0,
+          "hooray": 0,
+          "confused": 0,
+          "heart": 0,
+          "rocket": 0,
+          "eyes": 0
+        },
+        "performed_via_github_app": null,
+        "state_reason": null
+      }
+    ],
     "pullRequests": []
   }
 }

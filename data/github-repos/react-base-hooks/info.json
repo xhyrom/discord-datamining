@@ -335,7 +335,1349 @@
       }
     ],
     "releases": [],
-    "issues": [],
-    "pullRequests": []
+    "issues": [
+      {
+        "url": "https://api.github.com/repos/discord/react-base-hooks/issues/18",
+        "id": 1518446540,
+        "node_id": "PR_kwDODALpLs5GmOUn",
+        "number": 18,
+        "title": "Bump json5 from 2.1.0 to 2.2.3",
+        "user": {
+          "login": "dependabot[bot]",
+          "id": 49699333,
+          "node_id": "MDM6Qm90NDk2OTkzMzM=",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/dependabot%5Bbot%5D",
+          "type": "Bot",
+          "site_admin": false
+        },
+        "labels": [
+          {
+            "id": 1759215416,
+            "node_id": "MDU6TGFiZWwxNzU5MjE1NDE2",
+            "url": "https://api.github.com/repos/discord/react-base-hooks/labels/dependencies",
+            "name": "dependencies",
+            "color": "0366d6",
+            "default": false,
+            "description": "Pull requests that update a dependency file"
+          }
+        ],
+        "state": "open",
+        "locked": false,
+        "assignee": null,
+        "assignees": [],
+        "milestone": null,
+        "comments": 0,
+        "created_at": "2023-01-04T07:11:57Z",
+        "updated_at": "2023-01-04T07:11:58Z",
+        "closed_at": null,
+        "author_association": "NONE",
+        "active_lock_reason": null,
+        "draft": false,
+        "pull_request": {
+          "url": "https://api.github.com/repos/discord/react-base-hooks/pulls/18",
+          "merged_at": null
+        },
+        "body": "Bumps [json5](https://github.com/json5/json5) from 2.1.0 to 2.2.3.\n<details>\n<summary>Release notes</summary>\n<p><em>Sourced from <a href=\"https://github.com/json5/json5/releases\">json5's releases</a>.</em></p>\n<blockquote>\n<h2>v2.2.3</h2>\n<ul>\n<li>Fix: json5@2.2.3 is now the 'latest' release according to npm instead of v1.0.2. (<a href=\"https://github-redirect.dependabot.com/json5/json5/issues/299\">#299</a>)</li>\n</ul>\n<h2>v2.2.2</h2>\n<ul>\n<li>Fix: Properties with the name <code>__proto__</code> are added to objects and arrays.\n(<a href=\"https://github-redirect.dependabot.com/json5/json5/issues/199\">#199</a>) This also fixes a prototype pollution vulnerability reported by\nJonathan Gregson! (<a href=\"https://github-redirect.dependabot.com/json5/json5/issues/295\">#295</a>).</li>\n</ul>\n<h2>v2.2.1</h2>\n<ul>\n<li>Fix: Removed dependence on minimist to patch CVE-2021-44906. (<a href=\"https://github-redirect.dependabot.com/json5/json5/issues/266\">#266</a>)</li>\n</ul>\n<h2>v2.2.0</h2>\n<ul>\n<li>New: Accurate and documented TypeScript declarations are now included. There is no need to install <code>@types/json5</code>. (<a href=\"https://github-redirect.dependabot.com/json5/json5/issues/236\">#236</a>, <a href=\"https://github-redirect.dependabot.com/json5/json5/issues/244\">#244</a>)</li>\n</ul>\n<h3>v2.1.3 [<a href=\"https://github.com/json5/json5/tree/v2.1.3\">code</a>, <a href=\"https://github.com/json5/json5/compare/v2.1.2...v2.1.3\">diff</a>]</h3>\n<ul>\n<li>Fix: An out of memory bug when parsing numbers has been fixed. (<a href=\"https://github-redirect.dependabot.com/json5/json5/issues/228\">#228</a>, <a href=\"https://github-redirect.dependabot.com/json5/json5/issues/229\">#229</a>)</li>\n</ul>\n<h2>v2.1.2</h2>\n<ul>\n<li>Fix: Bump <code>minimist</code> to <code>v1.2.5</code>. (<a href=\"https://github-redirect.dependabot.com/json5/json5/issues/222\">#222</a>)</li>\n</ul>\n<h2>v2.1.1</h2>\n<ul>\n<li>New: <code>package.json</code> and <code>package.json5</code> include a <code>module</code> property so\nbundlers like webpack, rollup and parcel can take advantage of the ES Module\nbuild. (<a href=\"https://github-redirect.dependabot.com/json5/json5/issues/208\">#208</a>)</li>\n<li>Fix: <code>stringify</code> outputs <code>\\0</code> as <code>\\\\x00</code> when followed by a digit. (<a href=\"https://github-redirect.dependabot.com/json5/json5/issues/210\">#210</a>)</li>\n<li>Fix: Spelling mistakes have been fixed. (<a href=\"https://github-redirect.dependabot.com/json5/json5/issues/196\">#196</a>)</li>\n</ul>\n</blockquote>\n</details>\n<details>\n<summary>Changelog</summary>\n<p><em>Sourced from <a href=\"https://github.com/json5/json5/blob/main/CHANGELOG.md\">json5's changelog</a>.</em></p>\n<blockquote>\n<h3>v2.2.3 [<a href=\"https://github.com/json5/json5/tree/v2.2.3\">code</a>, <a href=\"https://github.com/json5/json5/compare/v2.2.2...v2.2.3\">diff</a>]</h3>\n<ul>\n<li>Fix: json5@2.2.3 is now the 'latest' release according to npm instead of\nv1.0.2. (<a href=\"https://github-redirect.dependabot.com/json5/json5/issues/299\">#299</a>)</li>\n</ul>\n<h3>v2.2.2 [<a href=\"https://github.com/json5/json5/tree/v2.2.2\">code</a>, <a href=\"https://github.com/json5/json5/compare/v2.2.1...v2.2.2\">diff</a>]</h3>\n<ul>\n<li>Fix: Properties with the name <code>__proto__</code> are added to objects and arrays.\n(<a href=\"https://github-redirect.dependabot.com/json5/json5/issues/199\">#199</a>) This also fixes a prototype pollution vulnerability reported by\nJonathan Gregson! (<a href=\"https://github-redirect.dependabot.com/json5/json5/issues/295\">#295</a>).</li>\n</ul>\n<h3>v2.2.1 [<a href=\"https://github.com/json5/json5/tree/v2.2.1\">code</a>, <a href=\"https://github.com/json5/json5/compare/v2.2.0...v2.2.1\">diff</a>]</h3>\n<ul>\n<li>Fix: Removed dependence on minimist to patch CVE-2021-44906. (<a href=\"https://github-redirect.dependabot.com/json5/json5/issues/266\">#266</a>)</li>\n</ul>\n<h3>v2.2.0 [<a href=\"https://github.com/json5/json5/tree/v2.2.0\">code</a>, <a href=\"https://github.com/json5/json5/compare/v2.1.3...v2.2.0\">diff</a>]</h3>\n<ul>\n<li>New: Accurate and documented TypeScript declarations are now included. There\nis no need to install <code>@types/json5</code>. (<a href=\"https://github-redirect.dependabot.com/json5/json5/issues/236\">#236</a>, <a href=\"https://github-redirect.dependabot.com/json5/json5/issues/244\">#244</a>)</li>\n</ul>\n<h3>v2.1.3 [<a href=\"https://github.com/json5/json5/tree/v2.1.3\">code</a>, <a href=\"https://github.com/json5/json5/compare/v2.1.2...v2.1.3\">diff</a>]</h3>\n<ul>\n<li>Fix: An out of memory bug when parsing numbers has been fixed. (<a href=\"https://github-redirect.dependabot.com/json5/json5/issues/228\">#228</a>,\n<a href=\"https://github-redirect.dependabot.com/json5/json5/issues/229\">#229</a>)</li>\n</ul>\n<h3>v2.1.2 [<a href=\"https://github.com/json5/json5/tree/v2.1.2\">code</a>, <a href=\"https://github.com/json5/json5/compare/v2.1.1...v2.1.2\">diff</a>]</h3>\n<ul>\n<li>Fix: Bump <code>minimist</code> to <code>v1.2.5</code>. (<a href=\"https://github-redirect.dependabot.com/json5/json5/issues/222\">#222</a>)</li>\n</ul>\n<h3>v2.1.1 [<a href=\"https://github.com/json5/json5/tree/v2.1.1\">code</a>, [diff][d2.1.1]]</h3>\n<!-- raw HTML omitted -->\n</blockquote>\n<p>... (truncated)</p>\n</details>\n<details>\n<summary>Commits</summary>\n<ul>\n<li><a href=\"https://github.com/json5/json5/commit/c3a75242772a5026a49c4017a16d9b3543b62776\"><code>c3a7524</code></a> 2.2.3</li>\n<li><a href=\"https://github.com/json5/json5/commit/94fd06d82eeed225fa172f6fb2ca27375cbd2e39\"><code>94fd06d</code></a> docs: update CHANGELOG for v2.2.3</li>\n<li><a href=\"https://github.com/json5/json5/commit/3b8cebf0c474a8b20c78bd75c89cca0c4dce84ce\"><code>3b8cebf</code></a> docs(security): use GitHub security advisories</li>\n<li><a href=\"https://github.com/json5/json5/commit/f0fd9e194dde282caff114a110f4fac635f3a62c\"><code>f0fd9e1</code></a> docs: publish a security policy</li>\n<li><a href=\"https://github.com/json5/json5/commit/6a91a05fffeda16ff6b3b5008b6b340d42d31ec0\"><code>6a91a05</code></a> docs(template): bug -&gt; bug report</li>\n<li><a href=\"https://github.com/json5/json5/commit/14f8cb186e8abdfaccf6527171da7b1224374650\"><code>14f8cb1</code></a> 2.2.2</li>\n<li><a href=\"https://github.com/json5/json5/commit/10cc7ca9169b59c5e0f5afc03dbd870cd06bcc46\"><code>10cc7ca</code></a> docs: update CHANGELOG for v2.2.2</li>\n<li><a href=\"https://github.com/json5/json5/commit/7774c1097993bc3ce9f0ac4b722a32bf7d6871c8\"><code>7774c10</code></a> fix: add <strong>proto</strong> to objects and arrays</li>\n<li><a href=\"https://github.com/json5/json5/commit/edde30abd8b22facf2c06c72586b9f6edf12700d\"><code>edde30a</code></a> Readme: slight tweak to intro</li>\n<li><a href=\"https://github.com/json5/json5/commit/97286f8bd542c89dcee096bc05dd28ed2dfc1e16\"><code>97286f8</code></a> Improve example in readme</li>\n<li>Additional commits viewable in <a href=\"https://github.com/json5/json5/compare/v2.1.0...v2.2.3\">compare view</a></li>\n</ul>\n</details>\n<br />\n\n\n[![Dependabot compatibility score](https://dependabot-badges.githubapp.com/badges/compatibility_score?dependency-name=json5&package-manager=npm_and_yarn&previous-version=2.1.0&new-version=2.2.3)](https://docs.github.com/en/github/managing-security-vulnerabilities/about-dependabot-security-updates#about-compatibility-scores)\n\nDependabot will resolve any conflicts with this PR as long as you don't alter it yourself. You can also trigger a rebase manually by commenting `@dependabot rebase`.\n\n[//]: # (dependabot-automerge-start)\n[//]: # (dependabot-automerge-end)\n\n---\n\n<details>\n<summary>Dependabot commands and options</summary>\n<br />\n\nYou can trigger Dependabot actions by commenting on this PR:\n- `@dependabot rebase` will rebase this PR\n- `@dependabot recreate` will recreate this PR, overwriting any edits that have been made to it\n- `@dependabot merge` will merge this PR after your CI passes on it\n- `@dependabot squash and merge` will squash and merge this PR after your CI passes on it\n- `@dependabot cancel merge` will cancel a previously requested merge and block automerging\n- `@dependabot reopen` will reopen this PR if it is closed\n- `@dependabot close` will close this PR and stop Dependabot recreating it. You can achieve the same result by closing it manually\n- `@dependabot ignore this major version` will close this PR and stop Dependabot creating any more for this major version (unless you reopen the PR or upgrade to it yourself)\n- `@dependabot ignore this minor version` will close this PR and stop Dependabot creating any more for this minor version (unless you reopen the PR or upgrade to it yourself)\n- `@dependabot ignore this dependency` will close this PR and stop Dependabot creating any more for this dependency (unless you reopen the PR or upgrade to it yourself)\n- `@dependabot use these labels` will set the current labels as the default for future PRs for this repo and language\n- `@dependabot use these reviewers` will set the current reviewers as the default for future PRs for this repo and language\n- `@dependabot use these assignees` will set the current assignees as the default for future PRs for this repo and language\n- `@dependabot use this milestone` will set the current milestone as the default for future PRs for this repo and language\n\nYou can disable automated security fix PRs for this repo from the [Security Alerts page](https://github.com/discord/react-base-hooks/network/alerts).\n\n</details>",
+        "reactions": {
+          "url": "https://api.github.com/repos/discord/react-base-hooks/issues/18/reactions",
+          "total_count": 0,
+          "+1": 0,
+          "-1": 0,
+          "laugh": 0,
+          "hooray": 0,
+          "confused": 0,
+          "heart": 0,
+          "rocket": 0,
+          "eyes": 0
+        },
+        "performed_via_github_app": null,
+        "state_reason": null
+      },
+      {
+        "url": "https://api.github.com/repos/discord/react-base-hooks/issues/17",
+        "id": 1487555729,
+        "node_id": "PR_kwDODALpLs5E8x5E",
+        "number": 17,
+        "title": "Bump qs from 6.5.2 to 6.5.3",
+        "user": {
+          "login": "dependabot[bot]",
+          "id": 49699333,
+          "node_id": "MDM6Qm90NDk2OTkzMzM=",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/dependabot%5Bbot%5D",
+          "type": "Bot",
+          "site_admin": false
+        },
+        "labels": [
+          {
+            "id": 1759215416,
+            "node_id": "MDU6TGFiZWwxNzU5MjE1NDE2",
+            "url": "https://api.github.com/repos/discord/react-base-hooks/labels/dependencies",
+            "name": "dependencies",
+            "color": "0366d6",
+            "default": false,
+            "description": "Pull requests that update a dependency file"
+          }
+        ],
+        "state": "open",
+        "locked": false,
+        "assignee": null,
+        "assignees": [],
+        "milestone": null,
+        "comments": 0,
+        "created_at": "2022-12-09T22:21:54Z",
+        "updated_at": "2022-12-09T22:21:55Z",
+        "closed_at": null,
+        "author_association": "NONE",
+        "active_lock_reason": null,
+        "draft": false,
+        "pull_request": {
+          "url": "https://api.github.com/repos/discord/react-base-hooks/pulls/17",
+          "merged_at": null
+        },
+        "body": "Bumps [qs](https://github.com/ljharb/qs) from 6.5.2 to 6.5.3.\n<details>\n<summary>Changelog</summary>\n<p><em>Sourced from <a href=\"https://github.com/ljharb/qs/blob/main/CHANGELOG.md\">qs's changelog</a>.</em></p>\n<blockquote>\n<h2><strong>6.5.3</strong></h2>\n<ul>\n<li>[Fix] <code>parse</code>: ignore <code>__proto__</code> keys (<a href=\"https://github-redirect.dependabot.com/ljharb/qs/issues/428\">#428</a>)</li>\n<li>[Fix] <code>utils.merge</code>: avoid a crash with a null target and a truthy non-array source</li>\n<li>[Fix] correctly parse nested arrays</li>\n<li>[Fix] <code>stringify</code>: fix a crash with <code>strictNullHandling</code> and a custom <code>filter</code>/<code>serializeDate</code> (<a href=\"https://github-redirect.dependabot.com/ljharb/qs/issues/279\">#279</a>)</li>\n<li>[Fix] <code>utils</code>: <code>merge</code>: fix crash when <code>source</code> is a truthy primitive &amp; no options are provided</li>\n<li>[Fix] when <code>parseArrays</code> is false, properly handle keys ending in <code>[]</code></li>\n<li>[Fix] fix for an impossible situation: when the formatter is called with a non-string value</li>\n<li>[Fix] <code>utils.merge</code>: avoid a crash with a null target and an array source</li>\n<li>[Refactor] <code>utils</code>: reduce observable [[Get]]s</li>\n<li>[Refactor] use cached <code>Array.isArray</code></li>\n<li>[Refactor] <code>stringify</code>: Avoid arr = arr.concat(...), push to the existing instance (<a href=\"https://github-redirect.dependabot.com/ljharb/qs/issues/269\">#269</a>)</li>\n<li>[Refactor] <code>parse</code>: only need to reassign the var once</li>\n<li>[Robustness] <code>stringify</code>: avoid relying on a global <code>undefined</code> (<a href=\"https://github-redirect.dependabot.com/ljharb/qs/issues/427\">#427</a>)</li>\n<li>[readme] remove travis badge; add github actions/codecov badges; update URLs</li>\n<li>[Docs] Clean up license text so it’s properly detected as BSD-3-Clause</li>\n<li>[Docs] Clarify the need for &quot;arrayLimit&quot; option</li>\n<li>[meta] fix README.md (<a href=\"https://github-redirect.dependabot.com/ljharb/qs/issues/399\">#399</a>)</li>\n<li>[meta] add FUNDING.yml</li>\n<li>[actions] backport actions from main</li>\n<li>[Tests] always use <code>String(x)</code> over <code>x.toString()</code></li>\n<li>[Tests] remove nonexistent tape option</li>\n<li>[Dev Deps] backport from main</li>\n</ul>\n</blockquote>\n</details>\n<details>\n<summary>Commits</summary>\n<ul>\n<li><a href=\"https://github.com/ljharb/qs/commit/298bfa55d6db00ddea78dd0333509aadf9bb3077\"><code>298bfa5</code></a> v6.5.3</li>\n<li><a href=\"https://github.com/ljharb/qs/commit/ed0f5dcbef4b168a8ae299d78b1e4a2e9b1baf1f\"><code>ed0f5dc</code></a> [Fix] <code>parse</code>: ignore <code>__proto__</code> keys (<a href=\"https://github-redirect.dependabot.com/ljharb/qs/issues/428\">#428</a>)</li>\n<li><a href=\"https://github.com/ljharb/qs/commit/691e739cfa40cd42604dc05a54e6154371a429ab\"><code>691e739</code></a> [Robustness] <code>stringify</code>: avoid relying on a global <code>undefined</code> (<a href=\"https://github-redirect.dependabot.com/ljharb/qs/issues/427\">#427</a>)</li>\n<li><a href=\"https://github.com/ljharb/qs/commit/1072d57d38a690e1ad7616dced44390bffedcbb2\"><code>1072d57</code></a> [readme] remove travis badge; add github actions/codecov badges; update URLs</li>\n<li><a href=\"https://github.com/ljharb/qs/commit/12ac1c403aaa04d1a34844f514ed9f9abfb76e64\"><code>12ac1c4</code></a> [meta] fix README.md (<a href=\"https://github-redirect.dependabot.com/ljharb/qs/issues/399\">#399</a>)</li>\n<li><a href=\"https://github.com/ljharb/qs/commit/0338716b09fdbd4711823eeb0a14e556a2498e7a\"><code>0338716</code></a> [actions] backport actions from main</li>\n<li><a href=\"https://github.com/ljharb/qs/commit/5639c20ce0a7c1332200a3181339331483e5a3a1\"><code>5639c20</code></a> Clean up license text so it’s properly detected as BSD-3-Clause</li>\n<li><a href=\"https://github.com/ljharb/qs/commit/51b8a0b1b213596dd1702b837f5e7dec2229793d\"><code>51b8a0b</code></a> add FUNDING.yml</li>\n<li><a href=\"https://github.com/ljharb/qs/commit/45f675936e742d92fac8d4dae5cfc385c576a977\"><code>45f6759</code></a> [Fix] fix for an impossible situation: when the formatter is called with a no...</li>\n<li><a href=\"https://github.com/ljharb/qs/commit/f814a7f8f2af059f8158f7e4b2bf8b46aeb62cd3\"><code>f814a7f</code></a> [Dev Deps] backport from main</li>\n<li>Additional commits viewable in <a href=\"https://github.com/ljharb/qs/compare/v6.5.2...v6.5.3\">compare view</a></li>\n</ul>\n</details>\n<br />\n\n\n[![Dependabot compatibility score](https://dependabot-badges.githubapp.com/badges/compatibility_score?dependency-name=qs&package-manager=npm_and_yarn&previous-version=6.5.2&new-version=6.5.3)](https://docs.github.com/en/github/managing-security-vulnerabilities/about-dependabot-security-updates#about-compatibility-scores)\n\nDependabot will resolve any conflicts with this PR as long as you don't alter it yourself. You can also trigger a rebase manually by commenting `@dependabot rebase`.\n\n[//]: # (dependabot-automerge-start)\n[//]: # (dependabot-automerge-end)\n\n---\n\n<details>\n<summary>Dependabot commands and options</summary>\n<br />\n\nYou can trigger Dependabot actions by commenting on this PR:\n- `@dependabot rebase` will rebase this PR\n- `@dependabot recreate` will recreate this PR, overwriting any edits that have been made to it\n- `@dependabot merge` will merge this PR after your CI passes on it\n- `@dependabot squash and merge` will squash and merge this PR after your CI passes on it\n- `@dependabot cancel merge` will cancel a previously requested merge and block automerging\n- `@dependabot reopen` will reopen this PR if it is closed\n- `@dependabot close` will close this PR and stop Dependabot recreating it. You can achieve the same result by closing it manually\n- `@dependabot ignore this major version` will close this PR and stop Dependabot creating any more for this major version (unless you reopen the PR or upgrade to it yourself)\n- `@dependabot ignore this minor version` will close this PR and stop Dependabot creating any more for this minor version (unless you reopen the PR or upgrade to it yourself)\n- `@dependabot ignore this dependency` will close this PR and stop Dependabot creating any more for this dependency (unless you reopen the PR or upgrade to it yourself)\n- `@dependabot use these labels` will set the current labels as the default for future PRs for this repo and language\n- `@dependabot use these reviewers` will set the current reviewers as the default for future PRs for this repo and language\n- `@dependabot use these assignees` will set the current assignees as the default for future PRs for this repo and language\n- `@dependabot use this milestone` will set the current milestone as the default for future PRs for this repo and language\n\nYou can disable automated security fix PRs for this repo from the [Security Alerts page](https://github.com/discord/react-base-hooks/network/alerts).\n\n</details>",
+        "reactions": {
+          "url": "https://api.github.com/repos/discord/react-base-hooks/issues/17/reactions",
+          "total_count": 0,
+          "+1": 0,
+          "-1": 0,
+          "laugh": 0,
+          "hooray": 0,
+          "confused": 0,
+          "heart": 0,
+          "rocket": 0,
+          "eyes": 0
+        },
+        "performed_via_github_app": null,
+        "state_reason": null
+      },
+      {
+        "url": "https://api.github.com/repos/discord/react-base-hooks/issues/16",
+        "id": 1474552577,
+        "node_id": "PR_kwDODALpLs5EO5VO",
+        "number": 16,
+        "title": "Bump decode-uri-component from 0.2.0 to 0.2.2",
+        "user": {
+          "login": "dependabot[bot]",
+          "id": 49699333,
+          "node_id": "MDM6Qm90NDk2OTkzMzM=",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/dependabot%5Bbot%5D",
+          "type": "Bot",
+          "site_admin": false
+        },
+        "labels": [
+          {
+            "id": 1759215416,
+            "node_id": "MDU6TGFiZWwxNzU5MjE1NDE2",
+            "url": "https://api.github.com/repos/discord/react-base-hooks/labels/dependencies",
+            "name": "dependencies",
+            "color": "0366d6",
+            "default": false,
+            "description": "Pull requests that update a dependency file"
+          }
+        ],
+        "state": "open",
+        "locked": false,
+        "assignee": null,
+        "assignees": [],
+        "milestone": null,
+        "comments": 0,
+        "created_at": "2022-12-04T07:22:11Z",
+        "updated_at": "2022-12-04T07:22:12Z",
+        "closed_at": null,
+        "author_association": "NONE",
+        "active_lock_reason": null,
+        "draft": false,
+        "pull_request": {
+          "url": "https://api.github.com/repos/discord/react-base-hooks/pulls/16",
+          "merged_at": null
+        },
+        "body": "Bumps [decode-uri-component](https://github.com/SamVerschueren/decode-uri-component) from 0.2.0 to 0.2.2.\n<details>\n<summary>Release notes</summary>\n<p><em>Sourced from <a href=\"https://github.com/SamVerschueren/decode-uri-component/releases\">decode-uri-component's releases</a>.</em></p>\n<blockquote>\n<h2>v0.2.2</h2>\n<ul>\n<li>Prevent overwriting previously decoded tokens  980e0bf</li>\n</ul>\n<p><a href=\"https://github.com/SamVerschueren/decode-uri-component/compare/v0.2.1...v0.2.2\">https://github.com/SamVerschueren/decode-uri-component/compare/v0.2.1...v0.2.2</a></p>\n<h2>v0.2.1</h2>\n<ul>\n<li>Switch to GitHub workflows  76abc93</li>\n<li>Fix issue where decode throws - fixes <a href=\"https://github-redirect.dependabot.com/SamVerschueren/decode-uri-component/issues/6\">#6</a>  746ca5d</li>\n<li>Update license (<a href=\"https://github-redirect.dependabot.com/SamVerschueren/decode-uri-component/issues/1\">#1</a>)  486d7e2</li>\n<li>Tidelift tasks  a650457</li>\n<li>Meta tweaks  66e1c28</li>\n</ul>\n<p><a href=\"https://github.com/SamVerschueren/decode-uri-component/compare/v0.2.0...v0.2.1\">https://github.com/SamVerschueren/decode-uri-component/compare/v0.2.0...v0.2.1</a></p>\n</blockquote>\n</details>\n<details>\n<summary>Commits</summary>\n<ul>\n<li><a href=\"https://github.com/SamVerschueren/decode-uri-component/commit/a0eea469d26eb0df668b081672cdb9581feb78eb\"><code>a0eea46</code></a> 0.2.2</li>\n<li><a href=\"https://github.com/SamVerschueren/decode-uri-component/commit/980e0bf09b64d94f1aa79012f895816c30ffd152\"><code>980e0bf</code></a> Prevent overwriting previously decoded tokens</li>\n<li><a href=\"https://github.com/SamVerschueren/decode-uri-component/commit/3c8a373dd4837e89b3f970e01295dd03e1405a33\"><code>3c8a373</code></a> 0.2.1</li>\n<li><a href=\"https://github.com/SamVerschueren/decode-uri-component/commit/76abc939783fe3900fadb7d384a74d324d5557f3\"><code>76abc93</code></a> Switch to GitHub workflows</li>\n<li><a href=\"https://github.com/SamVerschueren/decode-uri-component/commit/746ca5dcb6667c5d364e782d53c542830e4c10b9\"><code>746ca5d</code></a> Fix issue where decode throws - fixes <a href=\"https://github-redirect.dependabot.com/SamVerschueren/decode-uri-component/issues/6\">#6</a></li>\n<li><a href=\"https://github.com/SamVerschueren/decode-uri-component/commit/486d7e26d3a8c0fbe860fb651fe1bc98c2f2be30\"><code>486d7e2</code></a> Update license (<a href=\"https://github-redirect.dependabot.com/SamVerschueren/decode-uri-component/issues/1\">#1</a>)</li>\n<li><a href=\"https://github.com/SamVerschueren/decode-uri-component/commit/a65045724e6234acef87f31da499d4807b20b134\"><code>a650457</code></a> Tidelift tasks</li>\n<li><a href=\"https://github.com/SamVerschueren/decode-uri-component/commit/66e1c2834c0e189201cb65196ec3101372459b02\"><code>66e1c28</code></a> Meta tweaks</li>\n<li>See full diff in <a href=\"https://github.com/SamVerschueren/decode-uri-component/compare/v0.2.0...v0.2.2\">compare view</a></li>\n</ul>\n</details>\n<br />\n\n\n[![Dependabot compatibility score](https://dependabot-badges.githubapp.com/badges/compatibility_score?dependency-name=decode-uri-component&package-manager=npm_and_yarn&previous-version=0.2.0&new-version=0.2.2)](https://docs.github.com/en/github/managing-security-vulnerabilities/about-dependabot-security-updates#about-compatibility-scores)\n\nDependabot will resolve any conflicts with this PR as long as you don't alter it yourself. You can also trigger a rebase manually by commenting `@dependabot rebase`.\n\n[//]: # (dependabot-automerge-start)\n[//]: # (dependabot-automerge-end)\n\n---\n\n<details>\n<summary>Dependabot commands and options</summary>\n<br />\n\nYou can trigger Dependabot actions by commenting on this PR:\n- `@dependabot rebase` will rebase this PR\n- `@dependabot recreate` will recreate this PR, overwriting any edits that have been made to it\n- `@dependabot merge` will merge this PR after your CI passes on it\n- `@dependabot squash and merge` will squash and merge this PR after your CI passes on it\n- `@dependabot cancel merge` will cancel a previously requested merge and block automerging\n- `@dependabot reopen` will reopen this PR if it is closed\n- `@dependabot close` will close this PR and stop Dependabot recreating it. You can achieve the same result by closing it manually\n- `@dependabot ignore this major version` will close this PR and stop Dependabot creating any more for this major version (unless you reopen the PR or upgrade to it yourself)\n- `@dependabot ignore this minor version` will close this PR and stop Dependabot creating any more for this minor version (unless you reopen the PR or upgrade to it yourself)\n- `@dependabot ignore this dependency` will close this PR and stop Dependabot creating any more for this dependency (unless you reopen the PR or upgrade to it yourself)\n- `@dependabot use these labels` will set the current labels as the default for future PRs for this repo and language\n- `@dependabot use these reviewers` will set the current reviewers as the default for future PRs for this repo and language\n- `@dependabot use these assignees` will set the current assignees as the default for future PRs for this repo and language\n- `@dependabot use this milestone` will set the current milestone as the default for future PRs for this repo and language\n\nYou can disable automated security fix PRs for this repo from the [Security Alerts page](https://github.com/discord/react-base-hooks/network/alerts).\n\n</details>",
+        "reactions": {
+          "url": "https://api.github.com/repos/discord/react-base-hooks/issues/16/reactions",
+          "total_count": 0,
+          "+1": 0,
+          "-1": 0,
+          "laugh": 0,
+          "hooray": 0,
+          "confused": 0,
+          "heart": 0,
+          "rocket": 0,
+          "eyes": 0
+        },
+        "performed_via_github_app": null,
+        "state_reason": null
+      },
+      {
+        "url": "https://api.github.com/repos/discord/react-base-hooks/issues/15",
+        "id": 1133953736,
+        "node_id": "PR_kwDODALpLs4ymPzI",
+        "number": 15,
+        "title": "Bump ajv from 6.10.2 to 6.12.6",
+        "user": {
+          "login": "dependabot[bot]",
+          "id": 49699333,
+          "node_id": "MDM6Qm90NDk2OTkzMzM=",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/dependabot%5Bbot%5D",
+          "type": "Bot",
+          "site_admin": false
+        },
+        "labels": [
+          {
+            "id": 1759215416,
+            "node_id": "MDU6TGFiZWwxNzU5MjE1NDE2",
+            "url": "https://api.github.com/repos/discord/react-base-hooks/labels/dependencies",
+            "name": "dependencies",
+            "color": "0366d6",
+            "default": false,
+            "description": "Pull requests that update a dependency file"
+          }
+        ],
+        "state": "open",
+        "locked": false,
+        "assignee": null,
+        "assignees": [],
+        "milestone": null,
+        "comments": 0,
+        "created_at": "2022-02-12T12:04:22Z",
+        "updated_at": "2022-02-12T12:04:23Z",
+        "closed_at": null,
+        "author_association": "NONE",
+        "active_lock_reason": null,
+        "draft": false,
+        "pull_request": {
+          "url": "https://api.github.com/repos/discord/react-base-hooks/pulls/15",
+          "merged_at": null
+        },
+        "body": "Bumps [ajv](https://github.com/ajv-validator/ajv) from 6.10.2 to 6.12.6.\n<details>\n<summary>Release notes</summary>\n<p><em>Sourced from <a href=\"https://github.com/ajv-validator/ajv/releases\">ajv's releases</a>.</em></p>\n<blockquote>\n<h2>v6.12.6</h2>\n<p>Fix performance issue of &quot;url&quot; format.</p>\n<h2>v6.12.5</h2>\n<p>Fix uri scheme validation (<a href=\"https://github.com/ChALkeR\"><code>@​ChALkeR</code></a>).\nFix boolean schemas with strictKeywords option (<a href=\"https://github-redirect.dependabot.com/ajv-validator/ajv/issues/1270\">#1270</a>)</p>\n<h2>v6.12.4</h2>\n<p>Fix: coercion of one-item arrays to scalar that should fail validation (<a href=\"https://runkit.com/esp/5f3672ba2f6642001ae27411\">failing example</a>).</p>\n<h2>v6.12.3</h2>\n<p>Pass schema object to processCode function\nOption for strictNumbers (<a href=\"https://github.com/issacgerges\"><code>@​issacgerges</code></a>, <a href=\"https://github-redirect.dependabot.com/ajv-validator/ajv/issues/1128\">#1128</a>)\nFixed vulnerability related to untrusted schemas (<a href=\"https://cve.mitre.org/cgi-bin/cvekey.cgi?keyword=CVE-2020-15366\">CVE-2020-15366</a>)</p>\n<h2>v6.12.2</h2>\n<p>Removed post-install script</p>\n<h2>v6.12.1</h2>\n<p>Docs and dependency updates</p>\n<h2>v6.12.0</h2>\n<p>Improved hostname validation (<a href=\"https://github.com/sambauers\"><code>@​sambauers</code></a>, <a href=\"https://github-redirect.dependabot.com/ajv-validator/ajv/issues/1143\">#1143</a>)\nOption <code>keywords</code> to add custom keywords (<a href=\"https://github.com/franciscomorais\"><code>@​franciscomorais</code></a>, <a href=\"https://github-redirect.dependabot.com/ajv-validator/ajv/issues/1137\">#1137</a>)\nTypes fixes (<a href=\"https://github.com/boenrobot\"><code>@​boenrobot</code></a>, <a href=\"https://github.com/MattiAstedrone\"><code>@​MattiAstedrone</code></a>)\nDocs:</p>\n<ul>\n<li><a href=\"https://github.com/epoberezkin/ajv#error-logging\">error logging</a> example (<a href=\"https://github.com/RadiationSickness\"><code>@​RadiationSickness</code></a>)</li>\n<li>TypeScript usage notes (<a href=\"https://github.com/thetric\"><code>@​thetric</code></a>)</li>\n</ul>\n<h2>v6.11.0</h2>\n<p>Time formats support two digit and colon-less variants of timezone offset (<a href=\"https://github-redirect.dependabot.com/ajv-validator/ajv/issues/1061\">#1061</a> , <a href=\"https://github.com/cjpillsbury\"><code>@​cjpillsbury</code></a>)\nDocs: RegExp related security considerations\nTests: Disabled failing typescript test</p>\n</blockquote>\n</details>\n<details>\n<summary>Commits</summary>\n<ul>\n<li><a href=\"https://github.com/ajv-validator/ajv/commit/fe591439f34e24030f69df9eb8d91e6d037a3af7\"><code>fe59143</code></a> 6.12.6</li>\n<li><a href=\"https://github.com/ajv-validator/ajv/commit/d580d3e8ac6a467670d68d86e3a39fd661ac8c23\"><code>d580d3e</code></a> Merge pull request <a href=\"https://github-redirect.dependabot.com/ajv-validator/ajv/issues/1298\">#1298</a> from ajv-validator/fix-url</li>\n<li><a href=\"https://github.com/ajv-validator/ajv/commit/fd363896a8d6c5697b5da41f4d9a400a84efaf8e\"><code>fd36389</code></a> fix: regular expression for &quot;url&quot; format</li>\n<li><a href=\"https://github.com/ajv-validator/ajv/commit/490e34c4846064db5c962a77087e17078954c2f6\"><code>490e34c</code></a> docs: link to v7-beta branch</li>\n<li><a href=\"https://github.com/ajv-validator/ajv/commit/9cd93a1bdbdefd5a7ba3db5e123d20c84d1d1d0e\"><code>9cd93a1</code></a> docs: note about v7 in readme</li>\n<li><a href=\"https://github.com/ajv-validator/ajv/commit/877d286e7f145b1b2127da66c6800b071533f28f\"><code>877d286</code></a> Merge pull request <a href=\"https://github-redirect.dependabot.com/ajv-validator/ajv/issues/1262\">#1262</a> from b4h0-c4t/refactor-opt-object-type</li>\n<li><a href=\"https://github.com/ajv-validator/ajv/commit/f1c8e45b9cdff918be28becf03bf0b339321c398\"><code>f1c8e45</code></a> 6.12.5</li>\n<li><a href=\"https://github.com/ajv-validator/ajv/commit/764035e201d7733b8d700d4a04dd079fef9f4d30\"><code>764035e</code></a> Merge branch 'ChALkeR-chalker/fix-comma'</li>\n<li><a href=\"https://github.com/ajv-validator/ajv/commit/37981602ce6d43313ae106644b372b021626a8af\"><code>3798160</code></a> Merge branch 'chalker/fix-comma' of git://github.com/ChALkeR/ajv into ChALkeR...</li>\n<li><a href=\"https://github.com/ajv-validator/ajv/commit/a3c7ebab222e4cce07b5e30ebcbb809da7f934e8\"><code>a3c7eba</code></a> Merge branch 'refactor-opt-object-type' of github.com:b4h0-c4t/ajv into refac...</li>\n<li>Additional commits viewable in <a href=\"https://github.com/ajv-validator/ajv/compare/v6.10.2...v6.12.6\">compare view</a></li>\n</ul>\n</details>\n<br />\n\n\n[![Dependabot compatibility score](https://dependabot-badges.githubapp.com/badges/compatibility_score?dependency-name=ajv&package-manager=npm_and_yarn&previous-version=6.10.2&new-version=6.12.6)](https://docs.github.com/en/github/managing-security-vulnerabilities/about-dependabot-security-updates#about-compatibility-scores)\n\nDependabot will resolve any conflicts with this PR as long as you don't alter it yourself. You can also trigger a rebase manually by commenting `@dependabot rebase`.\n\n[//]: # (dependabot-automerge-start)\n[//]: # (dependabot-automerge-end)\n\n---\n\n<details>\n<summary>Dependabot commands and options</summary>\n<br />\n\nYou can trigger Dependabot actions by commenting on this PR:\n- `@dependabot rebase` will rebase this PR\n- `@dependabot recreate` will recreate this PR, overwriting any edits that have been made to it\n- `@dependabot merge` will merge this PR after your CI passes on it\n- `@dependabot squash and merge` will squash and merge this PR after your CI passes on it\n- `@dependabot cancel merge` will cancel a previously requested merge and block automerging\n- `@dependabot reopen` will reopen this PR if it is closed\n- `@dependabot close` will close this PR and stop Dependabot recreating it. You can achieve the same result by closing it manually\n- `@dependabot ignore this major version` will close this PR and stop Dependabot creating any more for this major version (unless you reopen the PR or upgrade to it yourself)\n- `@dependabot ignore this minor version` will close this PR and stop Dependabot creating any more for this minor version (unless you reopen the PR or upgrade to it yourself)\n- `@dependabot ignore this dependency` will close this PR and stop Dependabot creating any more for this dependency (unless you reopen the PR or upgrade to it yourself)\n- `@dependabot use these labels` will set the current labels as the default for future PRs for this repo and language\n- `@dependabot use these reviewers` will set the current reviewers as the default for future PRs for this repo and language\n- `@dependabot use these assignees` will set the current assignees as the default for future PRs for this repo and language\n- `@dependabot use this milestone` will set the current milestone as the default for future PRs for this repo and language\n\nYou can disable automated security fix PRs for this repo from the [Security Alerts page](https://github.com/discord/react-base-hooks/network/alerts).\n\n</details>",
+        "reactions": {
+          "url": "https://api.github.com/repos/discord/react-base-hooks/issues/15/reactions",
+          "total_count": 0,
+          "+1": 0,
+          "-1": 0,
+          "laugh": 0,
+          "hooray": 0,
+          "confused": 0,
+          "heart": 0,
+          "rocket": 0,
+          "eyes": 0
+        },
+        "performed_via_github_app": null,
+        "state_reason": null
+      },
+      {
+        "url": "https://api.github.com/repos/discord/react-base-hooks/issues/14",
+        "id": 1002323068,
+        "node_id": "PR_kwDODALpLs4sCBXU",
+        "number": 14,
+        "title": "Bump tmpl from 1.0.4 to 1.0.5",
+        "user": {
+          "login": "dependabot[bot]",
+          "id": 49699333,
+          "node_id": "MDM6Qm90NDk2OTkzMzM=",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/dependabot%5Bbot%5D",
+          "type": "Bot",
+          "site_admin": false
+        },
+        "labels": [
+          {
+            "id": 1759215416,
+            "node_id": "MDU6TGFiZWwxNzU5MjE1NDE2",
+            "url": "https://api.github.com/repos/discord/react-base-hooks/labels/dependencies",
+            "name": "dependencies",
+            "color": "0366d6",
+            "default": false,
+            "description": "Pull requests that update a dependency file"
+          }
+        ],
+        "state": "open",
+        "locked": false,
+        "assignee": null,
+        "assignees": [],
+        "milestone": null,
+        "comments": 0,
+        "created_at": "2021-09-21T11:54:51Z",
+        "updated_at": "2021-09-21T11:54:51Z",
+        "closed_at": null,
+        "author_association": "NONE",
+        "active_lock_reason": null,
+        "draft": false,
+        "pull_request": {
+          "url": "https://api.github.com/repos/discord/react-base-hooks/pulls/14",
+          "merged_at": null
+        },
+        "body": "Bumps [tmpl](https://github.com/daaku/nodejs-tmpl) from 1.0.4 to 1.0.5.\n<details>\n<summary>Commits</summary>\n<ul>\n<li>See full diff in <a href=\"https://github.com/daaku/nodejs-tmpl/commits/v1.0.5\">compare view</a></li>\n</ul>\n</details>\n<br />\n\n\n[![Dependabot compatibility score](https://dependabot-badges.githubapp.com/badges/compatibility_score?dependency-name=tmpl&package-manager=npm_and_yarn&previous-version=1.0.4&new-version=1.0.5)](https://docs.github.com/en/github/managing-security-vulnerabilities/about-dependabot-security-updates#about-compatibility-scores)\n\nDependabot will resolve any conflicts with this PR as long as you don't alter it yourself. You can also trigger a rebase manually by commenting `@dependabot rebase`.\n\n[//]: # (dependabot-automerge-start)\n[//]: # (dependabot-automerge-end)\n\n---\n\n<details>\n<summary>Dependabot commands and options</summary>\n<br />\n\nYou can trigger Dependabot actions by commenting on this PR:\n- `@dependabot rebase` will rebase this PR\n- `@dependabot recreate` will recreate this PR, overwriting any edits that have been made to it\n- `@dependabot merge` will merge this PR after your CI passes on it\n- `@dependabot squash and merge` will squash and merge this PR after your CI passes on it\n- `@dependabot cancel merge` will cancel a previously requested merge and block automerging\n- `@dependabot reopen` will reopen this PR if it is closed\n- `@dependabot close` will close this PR and stop Dependabot recreating it. You can achieve the same result by closing it manually\n- `@dependabot ignore this major version` will close this PR and stop Dependabot creating any more for this major version (unless you reopen the PR or upgrade to it yourself)\n- `@dependabot ignore this minor version` will close this PR and stop Dependabot creating any more for this minor version (unless you reopen the PR or upgrade to it yourself)\n- `@dependabot ignore this dependency` will close this PR and stop Dependabot creating any more for this dependency (unless you reopen the PR or upgrade to it yourself)\n- `@dependabot use these labels` will set the current labels as the default for future PRs for this repo and language\n- `@dependabot use these reviewers` will set the current reviewers as the default for future PRs for this repo and language\n- `@dependabot use these assignees` will set the current assignees as the default for future PRs for this repo and language\n- `@dependabot use this milestone` will set the current milestone as the default for future PRs for this repo and language\n\nYou can disable automated security fix PRs for this repo from the [Security Alerts page](https://github.com/discord/react-base-hooks/network/alerts).\n\n</details>",
+        "reactions": {
+          "url": "https://api.github.com/repos/discord/react-base-hooks/issues/14/reactions",
+          "total_count": 0,
+          "+1": 0,
+          "-1": 0,
+          "laugh": 0,
+          "hooray": 0,
+          "confused": 0,
+          "heart": 0,
+          "rocket": 0,
+          "eyes": 0
+        },
+        "performed_via_github_app": null,
+        "state_reason": null
+      }
+    ],
+    "pullRequests": [
+      {
+        "url": "https://api.github.com/repos/discord/react-base-hooks/pulls/18",
+        "id": 1184425255,
+        "node_id": "PR_kwDODALpLs5GmOUn",
+        "number": 18,
+        "state": "open",
+        "locked": false,
+        "title": "Bump json5 from 2.1.0 to 2.2.3",
+        "user": {
+          "login": "dependabot[bot]",
+          "id": 49699333,
+          "node_id": "MDM6Qm90NDk2OTkzMzM=",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/dependabot%5Bbot%5D",
+          "type": "Bot",
+          "site_admin": false
+        },
+        "body": "Bumps [json5](https://github.com/json5/json5) from 2.1.0 to 2.2.3.\n<details>\n<summary>Release notes</summary>\n<p><em>Sourced from <a href=\"https://github.com/json5/json5/releases\">json5's releases</a>.</em></p>\n<blockquote>\n<h2>v2.2.3</h2>\n<ul>\n<li>Fix: json5@2.2.3 is now the 'latest' release according to npm instead of v1.0.2. (<a href=\"https://github-redirect.dependabot.com/json5/json5/issues/299\">#299</a>)</li>\n</ul>\n<h2>v2.2.2</h2>\n<ul>\n<li>Fix: Properties with the name <code>__proto__</code> are added to objects and arrays.\n(<a href=\"https://github-redirect.dependabot.com/json5/json5/issues/199\">#199</a>) This also fixes a prototype pollution vulnerability reported by\nJonathan Gregson! (<a href=\"https://github-redirect.dependabot.com/json5/json5/issues/295\">#295</a>).</li>\n</ul>\n<h2>v2.2.1</h2>\n<ul>\n<li>Fix: Removed dependence on minimist to patch CVE-2021-44906. (<a href=\"https://github-redirect.dependabot.com/json5/json5/issues/266\">#266</a>)</li>\n</ul>\n<h2>v2.2.0</h2>\n<ul>\n<li>New: Accurate and documented TypeScript declarations are now included. There is no need to install <code>@types/json5</code>. (<a href=\"https://github-redirect.dependabot.com/json5/json5/issues/236\">#236</a>, <a href=\"https://github-redirect.dependabot.com/json5/json5/issues/244\">#244</a>)</li>\n</ul>\n<h3>v2.1.3 [<a href=\"https://github.com/json5/json5/tree/v2.1.3\">code</a>, <a href=\"https://github.com/json5/json5/compare/v2.1.2...v2.1.3\">diff</a>]</h3>\n<ul>\n<li>Fix: An out of memory bug when parsing numbers has been fixed. (<a href=\"https://github-redirect.dependabot.com/json5/json5/issues/228\">#228</a>, <a href=\"https://github-redirect.dependabot.com/json5/json5/issues/229\">#229</a>)</li>\n</ul>\n<h2>v2.1.2</h2>\n<ul>\n<li>Fix: Bump <code>minimist</code> to <code>v1.2.5</code>. (<a href=\"https://github-redirect.dependabot.com/json5/json5/issues/222\">#222</a>)</li>\n</ul>\n<h2>v2.1.1</h2>\n<ul>\n<li>New: <code>package.json</code> and <code>package.json5</code> include a <code>module</code> property so\nbundlers like webpack, rollup and parcel can take advantage of the ES Module\nbuild. (<a href=\"https://github-redirect.dependabot.com/json5/json5/issues/208\">#208</a>)</li>\n<li>Fix: <code>stringify</code> outputs <code>\\0</code> as <code>\\\\x00</code> when followed by a digit. (<a href=\"https://github-redirect.dependabot.com/json5/json5/issues/210\">#210</a>)</li>\n<li>Fix: Spelling mistakes have been fixed. (<a href=\"https://github-redirect.dependabot.com/json5/json5/issues/196\">#196</a>)</li>\n</ul>\n</blockquote>\n</details>\n<details>\n<summary>Changelog</summary>\n<p><em>Sourced from <a href=\"https://github.com/json5/json5/blob/main/CHANGELOG.md\">json5's changelog</a>.</em></p>\n<blockquote>\n<h3>v2.2.3 [<a href=\"https://github.com/json5/json5/tree/v2.2.3\">code</a>, <a href=\"https://github.com/json5/json5/compare/v2.2.2...v2.2.3\">diff</a>]</h3>\n<ul>\n<li>Fix: json5@2.2.3 is now the 'latest' release according to npm instead of\nv1.0.2. (<a href=\"https://github-redirect.dependabot.com/json5/json5/issues/299\">#299</a>)</li>\n</ul>\n<h3>v2.2.2 [<a href=\"https://github.com/json5/json5/tree/v2.2.2\">code</a>, <a href=\"https://github.com/json5/json5/compare/v2.2.1...v2.2.2\">diff</a>]</h3>\n<ul>\n<li>Fix: Properties with the name <code>__proto__</code> are added to objects and arrays.\n(<a href=\"https://github-redirect.dependabot.com/json5/json5/issues/199\">#199</a>) This also fixes a prototype pollution vulnerability reported by\nJonathan Gregson! (<a href=\"https://github-redirect.dependabot.com/json5/json5/issues/295\">#295</a>).</li>\n</ul>\n<h3>v2.2.1 [<a href=\"https://github.com/json5/json5/tree/v2.2.1\">code</a>, <a href=\"https://github.com/json5/json5/compare/v2.2.0...v2.2.1\">diff</a>]</h3>\n<ul>\n<li>Fix: Removed dependence on minimist to patch CVE-2021-44906. (<a href=\"https://github-redirect.dependabot.com/json5/json5/issues/266\">#266</a>)</li>\n</ul>\n<h3>v2.2.0 [<a href=\"https://github.com/json5/json5/tree/v2.2.0\">code</a>, <a href=\"https://github.com/json5/json5/compare/v2.1.3...v2.2.0\">diff</a>]</h3>\n<ul>\n<li>New: Accurate and documented TypeScript declarations are now included. There\nis no need to install <code>@types/json5</code>. (<a href=\"https://github-redirect.dependabot.com/json5/json5/issues/236\">#236</a>, <a href=\"https://github-redirect.dependabot.com/json5/json5/issues/244\">#244</a>)</li>\n</ul>\n<h3>v2.1.3 [<a href=\"https://github.com/json5/json5/tree/v2.1.3\">code</a>, <a href=\"https://github.com/json5/json5/compare/v2.1.2...v2.1.3\">diff</a>]</h3>\n<ul>\n<li>Fix: An out of memory bug when parsing numbers has been fixed. (<a href=\"https://github-redirect.dependabot.com/json5/json5/issues/228\">#228</a>,\n<a href=\"https://github-redirect.dependabot.com/json5/json5/issues/229\">#229</a>)</li>\n</ul>\n<h3>v2.1.2 [<a href=\"https://github.com/json5/json5/tree/v2.1.2\">code</a>, <a href=\"https://github.com/json5/json5/compare/v2.1.1...v2.1.2\">diff</a>]</h3>\n<ul>\n<li>Fix: Bump <code>minimist</code> to <code>v1.2.5</code>. (<a href=\"https://github-redirect.dependabot.com/json5/json5/issues/222\">#222</a>)</li>\n</ul>\n<h3>v2.1.1 [<a href=\"https://github.com/json5/json5/tree/v2.1.1\">code</a>, [diff][d2.1.1]]</h3>\n<!-- raw HTML omitted -->\n</blockquote>\n<p>... (truncated)</p>\n</details>\n<details>\n<summary>Commits</summary>\n<ul>\n<li><a href=\"https://github.com/json5/json5/commit/c3a75242772a5026a49c4017a16d9b3543b62776\"><code>c3a7524</code></a> 2.2.3</li>\n<li><a href=\"https://github.com/json5/json5/commit/94fd06d82eeed225fa172f6fb2ca27375cbd2e39\"><code>94fd06d</code></a> docs: update CHANGELOG for v2.2.3</li>\n<li><a href=\"https://github.com/json5/json5/commit/3b8cebf0c474a8b20c78bd75c89cca0c4dce84ce\"><code>3b8cebf</code></a> docs(security): use GitHub security advisories</li>\n<li><a href=\"https://github.com/json5/json5/commit/f0fd9e194dde282caff114a110f4fac635f3a62c\"><code>f0fd9e1</code></a> docs: publish a security policy</li>\n<li><a href=\"https://github.com/json5/json5/commit/6a91a05fffeda16ff6b3b5008b6b340d42d31ec0\"><code>6a91a05</code></a> docs(template): bug -&gt; bug report</li>\n<li><a href=\"https://github.com/json5/json5/commit/14f8cb186e8abdfaccf6527171da7b1224374650\"><code>14f8cb1</code></a> 2.2.2</li>\n<li><a href=\"https://github.com/json5/json5/commit/10cc7ca9169b59c5e0f5afc03dbd870cd06bcc46\"><code>10cc7ca</code></a> docs: update CHANGELOG for v2.2.2</li>\n<li><a href=\"https://github.com/json5/json5/commit/7774c1097993bc3ce9f0ac4b722a32bf7d6871c8\"><code>7774c10</code></a> fix: add <strong>proto</strong> to objects and arrays</li>\n<li><a href=\"https://github.com/json5/json5/commit/edde30abd8b22facf2c06c72586b9f6edf12700d\"><code>edde30a</code></a> Readme: slight tweak to intro</li>\n<li><a href=\"https://github.com/json5/json5/commit/97286f8bd542c89dcee096bc05dd28ed2dfc1e16\"><code>97286f8</code></a> Improve example in readme</li>\n<li>Additional commits viewable in <a href=\"https://github.com/json5/json5/compare/v2.1.0...v2.2.3\">compare view</a></li>\n</ul>\n</details>\n<br />\n\n\n[![Dependabot compatibility score](https://dependabot-badges.githubapp.com/badges/compatibility_score?dependency-name=json5&package-manager=npm_and_yarn&previous-version=2.1.0&new-version=2.2.3)](https://docs.github.com/en/github/managing-security-vulnerabilities/about-dependabot-security-updates#about-compatibility-scores)\n\nDependabot will resolve any conflicts with this PR as long as you don't alter it yourself. You can also trigger a rebase manually by commenting `@dependabot rebase`.\n\n[//]: # (dependabot-automerge-start)\n[//]: # (dependabot-automerge-end)\n\n---\n\n<details>\n<summary>Dependabot commands and options</summary>\n<br />\n\nYou can trigger Dependabot actions by commenting on this PR:\n- `@dependabot rebase` will rebase this PR\n- `@dependabot recreate` will recreate this PR, overwriting any edits that have been made to it\n- `@dependabot merge` will merge this PR after your CI passes on it\n- `@dependabot squash and merge` will squash and merge this PR after your CI passes on it\n- `@dependabot cancel merge` will cancel a previously requested merge and block automerging\n- `@dependabot reopen` will reopen this PR if it is closed\n- `@dependabot close` will close this PR and stop Dependabot recreating it. You can achieve the same result by closing it manually\n- `@dependabot ignore this major version` will close this PR and stop Dependabot creating any more for this major version (unless you reopen the PR or upgrade to it yourself)\n- `@dependabot ignore this minor version` will close this PR and stop Dependabot creating any more for this minor version (unless you reopen the PR or upgrade to it yourself)\n- `@dependabot ignore this dependency` will close this PR and stop Dependabot creating any more for this dependency (unless you reopen the PR or upgrade to it yourself)\n- `@dependabot use these labels` will set the current labels as the default for future PRs for this repo and language\n- `@dependabot use these reviewers` will set the current reviewers as the default for future PRs for this repo and language\n- `@dependabot use these assignees` will set the current assignees as the default for future PRs for this repo and language\n- `@dependabot use this milestone` will set the current milestone as the default for future PRs for this repo and language\n\nYou can disable automated security fix PRs for this repo from the [Security Alerts page](https://github.com/discord/react-base-hooks/network/alerts).\n\n</details>",
+        "created_at": "2023-01-04T07:11:57Z",
+        "updated_at": "2023-01-04T07:11:58Z",
+        "closed_at": null,
+        "merged_at": null,
+        "merge_commit_sha": "9ec77ba827b8105807ab82bc4792d87f9c6ecb8a",
+        "assignee": null,
+        "assignees": [],
+        "requested_reviewers": [],
+        "requested_teams": [],
+        "labels": [
+          {
+            "id": 1759215416,
+            "node_id": "MDU6TGFiZWwxNzU5MjE1NDE2",
+            "url": "https://api.github.com/repos/discord/react-base-hooks/labels/dependencies",
+            "name": "dependencies",
+            "color": "0366d6",
+            "default": false,
+            "description": "Pull requests that update a dependency file"
+          }
+        ],
+        "milestone": null,
+        "draft": false,
+        "head": {
+          "label": "discord:dependabot/npm_and_yarn/json5-2.2.3",
+          "ref": "dependabot/npm_and_yarn/json5-2.2.3",
+          "sha": "114d6036552b33fc1dfee77a2c1308860d492ff2",
+          "user": {
+            "login": "discord",
+            "id": 1965106,
+            "node_id": "MDEyOk9yZ2FuaXphdGlvbjE5NjUxMDY=",
+            "gravatar_id": "",
+            "url": "https://api.github.com/users/discord",
+            "type": "Organization",
+            "site_admin": false
+          },
+          "repo": {
+            "id": 201517358,
+            "node_id": "MDEwOlJlcG9zaXRvcnkyMDE1MTczNTg=",
+            "name": "react-base-hooks",
+            "full_name": "discord/react-base-hooks",
+            "private": false,
+            "owner": {
+              "login": "discord",
+              "id": 1965106,
+              "node_id": "MDEyOk9yZ2FuaXphdGlvbjE5NjUxMDY=",
+              "gravatar_id": "",
+              "url": "https://api.github.com/users/discord",
+              "type": "Organization",
+              "site_admin": false
+            },
+            "description": "Basic utility React hooks",
+            "fork": false,
+            "url": "https://api.github.com/repos/discord/react-base-hooks",
+            "created_at": "2019-08-09T18:01:08Z",
+            "updated_at": "2023-04-18T02:14:47Z",
+            "pushed_at": "2023-01-04T07:11:58Z",
+            "homepage": "",
+            "size": 742,
+            "stargazers_count": 76,
+            "watchers_count": 76,
+            "language": "TypeScript",
+            "has_issues": true,
+            "has_projects": true,
+            "has_downloads": true,
+            "has_wiki": true,
+            "has_pages": false,
+            "has_discussions": false,
+            "forks_count": 11,
+            "archived": false,
+            "disabled": false,
+            "open_issues_count": 13,
+            "license": {
+              "key": "mit",
+              "name": "MIT License",
+              "spdx_id": "MIT",
+              "url": "https://api.github.com/licenses/mit",
+              "node_id": "MDc6TGljZW5zZTEz"
+            },
+            "allow_forking": true,
+            "is_template": false,
+            "web_commit_signoff_required": false,
+            "topics": [
+              "hooks",
+              "react"
+            ],
+            "visibility": "public",
+            "forks": 11,
+            "open_issues": 13,
+            "watchers": 76,
+            "default_branch": "master"
+          }
+        },
+        "base": {
+          "label": "discord:master",
+          "ref": "master",
+          "sha": "7f89d3eaedf724b294005a32a92253c72350e695",
+          "user": {
+            "login": "discord",
+            "id": 1965106,
+            "node_id": "MDEyOk9yZ2FuaXphdGlvbjE5NjUxMDY=",
+            "gravatar_id": "",
+            "url": "https://api.github.com/users/discord",
+            "type": "Organization",
+            "site_admin": false
+          },
+          "repo": {
+            "id": 201517358,
+            "node_id": "MDEwOlJlcG9zaXRvcnkyMDE1MTczNTg=",
+            "name": "react-base-hooks",
+            "full_name": "discord/react-base-hooks",
+            "private": false,
+            "owner": {
+              "login": "discord",
+              "id": 1965106,
+              "node_id": "MDEyOk9yZ2FuaXphdGlvbjE5NjUxMDY=",
+              "gravatar_id": "",
+              "url": "https://api.github.com/users/discord",
+              "type": "Organization",
+              "site_admin": false
+            },
+            "description": "Basic utility React hooks",
+            "fork": false,
+            "url": "https://api.github.com/repos/discord/react-base-hooks",
+            "created_at": "2019-08-09T18:01:08Z",
+            "updated_at": "2023-04-18T02:14:47Z",
+            "pushed_at": "2023-01-04T07:11:58Z",
+            "homepage": "",
+            "size": 742,
+            "stargazers_count": 76,
+            "watchers_count": 76,
+            "language": "TypeScript",
+            "has_issues": true,
+            "has_projects": true,
+            "has_downloads": true,
+            "has_wiki": true,
+            "has_pages": false,
+            "has_discussions": false,
+            "forks_count": 11,
+            "archived": false,
+            "disabled": false,
+            "open_issues_count": 13,
+            "license": {
+              "key": "mit",
+              "name": "MIT License",
+              "spdx_id": "MIT",
+              "url": "https://api.github.com/licenses/mit",
+              "node_id": "MDc6TGljZW5zZTEz"
+            },
+            "allow_forking": true,
+            "is_template": false,
+            "web_commit_signoff_required": false,
+            "topics": [
+              "hooks",
+              "react"
+            ],
+            "visibility": "public",
+            "forks": 11,
+            "open_issues": 13,
+            "watchers": 76,
+            "default_branch": "master"
+          }
+        },
+        "_links": {
+          "self": {
+            "href": "https://api.github.com/repos/discord/react-base-hooks/pulls/18"
+          },
+          "html": {
+            "href": "https://github.com/discord/react-base-hooks/pull/18"
+          },
+          "issue": {
+            "href": "https://api.github.com/repos/discord/react-base-hooks/issues/18"
+          },
+          "comments": {
+            "href": "https://api.github.com/repos/discord/react-base-hooks/issues/18/comments"
+          },
+          "review_comments": {
+            "href": "https://api.github.com/repos/discord/react-base-hooks/pulls/18/comments"
+          },
+          "review_comment": {
+            "href": "https://api.github.com/repos/discord/react-base-hooks/pulls/comments{/number}"
+          },
+          "commits": {
+            "href": "https://api.github.com/repos/discord/react-base-hooks/pulls/18/commits"
+          },
+          "statuses": {
+            "href": "https://api.github.com/repos/discord/react-base-hooks/statuses/114d6036552b33fc1dfee77a2c1308860d492ff2"
+          }
+        },
+        "author_association": "NONE",
+        "auto_merge": null,
+        "active_lock_reason": null
+      },
+      {
+        "url": "https://api.github.com/repos/discord/react-base-hooks/pulls/17",
+        "id": 1156783684,
+        "node_id": "PR_kwDODALpLs5E8x5E",
+        "number": 17,
+        "state": "open",
+        "locked": false,
+        "title": "Bump qs from 6.5.2 to 6.5.3",
+        "user": {
+          "login": "dependabot[bot]",
+          "id": 49699333,
+          "node_id": "MDM6Qm90NDk2OTkzMzM=",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/dependabot%5Bbot%5D",
+          "type": "Bot",
+          "site_admin": false
+        },
+        "body": "Bumps [qs](https://github.com/ljharb/qs) from 6.5.2 to 6.5.3.\n<details>\n<summary>Changelog</summary>\n<p><em>Sourced from <a href=\"https://github.com/ljharb/qs/blob/main/CHANGELOG.md\">qs's changelog</a>.</em></p>\n<blockquote>\n<h2><strong>6.5.3</strong></h2>\n<ul>\n<li>[Fix] <code>parse</code>: ignore <code>__proto__</code> keys (<a href=\"https://github-redirect.dependabot.com/ljharb/qs/issues/428\">#428</a>)</li>\n<li>[Fix] <code>utils.merge</code>: avoid a crash with a null target and a truthy non-array source</li>\n<li>[Fix] correctly parse nested arrays</li>\n<li>[Fix] <code>stringify</code>: fix a crash with <code>strictNullHandling</code> and a custom <code>filter</code>/<code>serializeDate</code> (<a href=\"https://github-redirect.dependabot.com/ljharb/qs/issues/279\">#279</a>)</li>\n<li>[Fix] <code>utils</code>: <code>merge</code>: fix crash when <code>source</code> is a truthy primitive &amp; no options are provided</li>\n<li>[Fix] when <code>parseArrays</code> is false, properly handle keys ending in <code>[]</code></li>\n<li>[Fix] fix for an impossible situation: when the formatter is called with a non-string value</li>\n<li>[Fix] <code>utils.merge</code>: avoid a crash with a null target and an array source</li>\n<li>[Refactor] <code>utils</code>: reduce observable [[Get]]s</li>\n<li>[Refactor] use cached <code>Array.isArray</code></li>\n<li>[Refactor] <code>stringify</code>: Avoid arr = arr.concat(...), push to the existing instance (<a href=\"https://github-redirect.dependabot.com/ljharb/qs/issues/269\">#269</a>)</li>\n<li>[Refactor] <code>parse</code>: only need to reassign the var once</li>\n<li>[Robustness] <code>stringify</code>: avoid relying on a global <code>undefined</code> (<a href=\"https://github-redirect.dependabot.com/ljharb/qs/issues/427\">#427</a>)</li>\n<li>[readme] remove travis badge; add github actions/codecov badges; update URLs</li>\n<li>[Docs] Clean up license text so it’s properly detected as BSD-3-Clause</li>\n<li>[Docs] Clarify the need for &quot;arrayLimit&quot; option</li>\n<li>[meta] fix README.md (<a href=\"https://github-redirect.dependabot.com/ljharb/qs/issues/399\">#399</a>)</li>\n<li>[meta] add FUNDING.yml</li>\n<li>[actions] backport actions from main</li>\n<li>[Tests] always use <code>String(x)</code> over <code>x.toString()</code></li>\n<li>[Tests] remove nonexistent tape option</li>\n<li>[Dev Deps] backport from main</li>\n</ul>\n</blockquote>\n</details>\n<details>\n<summary>Commits</summary>\n<ul>\n<li><a href=\"https://github.com/ljharb/qs/commit/298bfa55d6db00ddea78dd0333509aadf9bb3077\"><code>298bfa5</code></a> v6.5.3</li>\n<li><a href=\"https://github.com/ljharb/qs/commit/ed0f5dcbef4b168a8ae299d78b1e4a2e9b1baf1f\"><code>ed0f5dc</code></a> [Fix] <code>parse</code>: ignore <code>__proto__</code> keys (<a href=\"https://github-redirect.dependabot.com/ljharb/qs/issues/428\">#428</a>)</li>\n<li><a href=\"https://github.com/ljharb/qs/commit/691e739cfa40cd42604dc05a54e6154371a429ab\"><code>691e739</code></a> [Robustness] <code>stringify</code>: avoid relying on a global <code>undefined</code> (<a href=\"https://github-redirect.dependabot.com/ljharb/qs/issues/427\">#427</a>)</li>\n<li><a href=\"https://github.com/ljharb/qs/commit/1072d57d38a690e1ad7616dced44390bffedcbb2\"><code>1072d57</code></a> [readme] remove travis badge; add github actions/codecov badges; update URLs</li>\n<li><a href=\"https://github.com/ljharb/qs/commit/12ac1c403aaa04d1a34844f514ed9f9abfb76e64\"><code>12ac1c4</code></a> [meta] fix README.md (<a href=\"https://github-redirect.dependabot.com/ljharb/qs/issues/399\">#399</a>)</li>\n<li><a href=\"https://github.com/ljharb/qs/commit/0338716b09fdbd4711823eeb0a14e556a2498e7a\"><code>0338716</code></a> [actions] backport actions from main</li>\n<li><a href=\"https://github.com/ljharb/qs/commit/5639c20ce0a7c1332200a3181339331483e5a3a1\"><code>5639c20</code></a> Clean up license text so it’s properly detected as BSD-3-Clause</li>\n<li><a href=\"https://github.com/ljharb/qs/commit/51b8a0b1b213596dd1702b837f5e7dec2229793d\"><code>51b8a0b</code></a> add FUNDING.yml</li>\n<li><a href=\"https://github.com/ljharb/qs/commit/45f675936e742d92fac8d4dae5cfc385c576a977\"><code>45f6759</code></a> [Fix] fix for an impossible situation: when the formatter is called with a no...</li>\n<li><a href=\"https://github.com/ljharb/qs/commit/f814a7f8f2af059f8158f7e4b2bf8b46aeb62cd3\"><code>f814a7f</code></a> [Dev Deps] backport from main</li>\n<li>Additional commits viewable in <a href=\"https://github.com/ljharb/qs/compare/v6.5.2...v6.5.3\">compare view</a></li>\n</ul>\n</details>\n<br />\n\n\n[![Dependabot compatibility score](https://dependabot-badges.githubapp.com/badges/compatibility_score?dependency-name=qs&package-manager=npm_and_yarn&previous-version=6.5.2&new-version=6.5.3)](https://docs.github.com/en/github/managing-security-vulnerabilities/about-dependabot-security-updates#about-compatibility-scores)\n\nDependabot will resolve any conflicts with this PR as long as you don't alter it yourself. You can also trigger a rebase manually by commenting `@dependabot rebase`.\n\n[//]: # (dependabot-automerge-start)\n[//]: # (dependabot-automerge-end)\n\n---\n\n<details>\n<summary>Dependabot commands and options</summary>\n<br />\n\nYou can trigger Dependabot actions by commenting on this PR:\n- `@dependabot rebase` will rebase this PR\n- `@dependabot recreate` will recreate this PR, overwriting any edits that have been made to it\n- `@dependabot merge` will merge this PR after your CI passes on it\n- `@dependabot squash and merge` will squash and merge this PR after your CI passes on it\n- `@dependabot cancel merge` will cancel a previously requested merge and block automerging\n- `@dependabot reopen` will reopen this PR if it is closed\n- `@dependabot close` will close this PR and stop Dependabot recreating it. You can achieve the same result by closing it manually\n- `@dependabot ignore this major version` will close this PR and stop Dependabot creating any more for this major version (unless you reopen the PR or upgrade to it yourself)\n- `@dependabot ignore this minor version` will close this PR and stop Dependabot creating any more for this minor version (unless you reopen the PR or upgrade to it yourself)\n- `@dependabot ignore this dependency` will close this PR and stop Dependabot creating any more for this dependency (unless you reopen the PR or upgrade to it yourself)\n- `@dependabot use these labels` will set the current labels as the default for future PRs for this repo and language\n- `@dependabot use these reviewers` will set the current reviewers as the default for future PRs for this repo and language\n- `@dependabot use these assignees` will set the current assignees as the default for future PRs for this repo and language\n- `@dependabot use this milestone` will set the current milestone as the default for future PRs for this repo and language\n\nYou can disable automated security fix PRs for this repo from the [Security Alerts page](https://github.com/discord/react-base-hooks/network/alerts).\n\n</details>",
+        "created_at": "2022-12-09T22:21:54Z",
+        "updated_at": "2022-12-09T22:21:55Z",
+        "closed_at": null,
+        "merged_at": null,
+        "merge_commit_sha": "3bf304f12b1dbc715aae93022fc9bbcb4cee416a",
+        "assignee": null,
+        "assignees": [],
+        "requested_reviewers": [],
+        "requested_teams": [],
+        "labels": [
+          {
+            "id": 1759215416,
+            "node_id": "MDU6TGFiZWwxNzU5MjE1NDE2",
+            "url": "https://api.github.com/repos/discord/react-base-hooks/labels/dependencies",
+            "name": "dependencies",
+            "color": "0366d6",
+            "default": false,
+            "description": "Pull requests that update a dependency file"
+          }
+        ],
+        "milestone": null,
+        "draft": false,
+        "head": {
+          "label": "discord:dependabot/npm_and_yarn/qs-6.5.3",
+          "ref": "dependabot/npm_and_yarn/qs-6.5.3",
+          "sha": "af25c3cf998c39bca7c7958cf7c32798d013c831",
+          "user": {
+            "login": "discord",
+            "id": 1965106,
+            "node_id": "MDEyOk9yZ2FuaXphdGlvbjE5NjUxMDY=",
+            "gravatar_id": "",
+            "url": "https://api.github.com/users/discord",
+            "type": "Organization",
+            "site_admin": false
+          },
+          "repo": {
+            "id": 201517358,
+            "node_id": "MDEwOlJlcG9zaXRvcnkyMDE1MTczNTg=",
+            "name": "react-base-hooks",
+            "full_name": "discord/react-base-hooks",
+            "private": false,
+            "owner": {
+              "login": "discord",
+              "id": 1965106,
+              "node_id": "MDEyOk9yZ2FuaXphdGlvbjE5NjUxMDY=",
+              "gravatar_id": "",
+              "url": "https://api.github.com/users/discord",
+              "type": "Organization",
+              "site_admin": false
+            },
+            "description": "Basic utility React hooks",
+            "fork": false,
+            "url": "https://api.github.com/repos/discord/react-base-hooks",
+            "created_at": "2019-08-09T18:01:08Z",
+            "updated_at": "2023-04-18T02:14:47Z",
+            "pushed_at": "2023-01-04T07:11:58Z",
+            "homepage": "",
+            "size": 742,
+            "stargazers_count": 76,
+            "watchers_count": 76,
+            "language": "TypeScript",
+            "has_issues": true,
+            "has_projects": true,
+            "has_downloads": true,
+            "has_wiki": true,
+            "has_pages": false,
+            "has_discussions": false,
+            "forks_count": 11,
+            "archived": false,
+            "disabled": false,
+            "open_issues_count": 13,
+            "license": {
+              "key": "mit",
+              "name": "MIT License",
+              "spdx_id": "MIT",
+              "url": "https://api.github.com/licenses/mit",
+              "node_id": "MDc6TGljZW5zZTEz"
+            },
+            "allow_forking": true,
+            "is_template": false,
+            "web_commit_signoff_required": false,
+            "topics": [
+              "hooks",
+              "react"
+            ],
+            "visibility": "public",
+            "forks": 11,
+            "open_issues": 13,
+            "watchers": 76,
+            "default_branch": "master"
+          }
+        },
+        "base": {
+          "label": "discord:master",
+          "ref": "master",
+          "sha": "7f89d3eaedf724b294005a32a92253c72350e695",
+          "user": {
+            "login": "discord",
+            "id": 1965106,
+            "node_id": "MDEyOk9yZ2FuaXphdGlvbjE5NjUxMDY=",
+            "gravatar_id": "",
+            "url": "https://api.github.com/users/discord",
+            "type": "Organization",
+            "site_admin": false
+          },
+          "repo": {
+            "id": 201517358,
+            "node_id": "MDEwOlJlcG9zaXRvcnkyMDE1MTczNTg=",
+            "name": "react-base-hooks",
+            "full_name": "discord/react-base-hooks",
+            "private": false,
+            "owner": {
+              "login": "discord",
+              "id": 1965106,
+              "node_id": "MDEyOk9yZ2FuaXphdGlvbjE5NjUxMDY=",
+              "gravatar_id": "",
+              "url": "https://api.github.com/users/discord",
+              "type": "Organization",
+              "site_admin": false
+            },
+            "description": "Basic utility React hooks",
+            "fork": false,
+            "url": "https://api.github.com/repos/discord/react-base-hooks",
+            "created_at": "2019-08-09T18:01:08Z",
+            "updated_at": "2023-04-18T02:14:47Z",
+            "pushed_at": "2023-01-04T07:11:58Z",
+            "homepage": "",
+            "size": 742,
+            "stargazers_count": 76,
+            "watchers_count": 76,
+            "language": "TypeScript",
+            "has_issues": true,
+            "has_projects": true,
+            "has_downloads": true,
+            "has_wiki": true,
+            "has_pages": false,
+            "has_discussions": false,
+            "forks_count": 11,
+            "archived": false,
+            "disabled": false,
+            "open_issues_count": 13,
+            "license": {
+              "key": "mit",
+              "name": "MIT License",
+              "spdx_id": "MIT",
+              "url": "https://api.github.com/licenses/mit",
+              "node_id": "MDc6TGljZW5zZTEz"
+            },
+            "allow_forking": true,
+            "is_template": false,
+            "web_commit_signoff_required": false,
+            "topics": [
+              "hooks",
+              "react"
+            ],
+            "visibility": "public",
+            "forks": 11,
+            "open_issues": 13,
+            "watchers": 76,
+            "default_branch": "master"
+          }
+        },
+        "_links": {
+          "self": {
+            "href": "https://api.github.com/repos/discord/react-base-hooks/pulls/17"
+          },
+          "html": {
+            "href": "https://github.com/discord/react-base-hooks/pull/17"
+          },
+          "issue": {
+            "href": "https://api.github.com/repos/discord/react-base-hooks/issues/17"
+          },
+          "comments": {
+            "href": "https://api.github.com/repos/discord/react-base-hooks/issues/17/comments"
+          },
+          "review_comments": {
+            "href": "https://api.github.com/repos/discord/react-base-hooks/pulls/17/comments"
+          },
+          "review_comment": {
+            "href": "https://api.github.com/repos/discord/react-base-hooks/pulls/comments{/number}"
+          },
+          "commits": {
+            "href": "https://api.github.com/repos/discord/react-base-hooks/pulls/17/commits"
+          },
+          "statuses": {
+            "href": "https://api.github.com/repos/discord/react-base-hooks/statuses/af25c3cf998c39bca7c7958cf7c32798d013c831"
+          }
+        },
+        "author_association": "NONE",
+        "auto_merge": null,
+        "active_lock_reason": null
+      },
+      {
+        "url": "https://api.github.com/repos/discord/react-base-hooks/pulls/16",
+        "id": 1144755534,
+        "node_id": "PR_kwDODALpLs5EO5VO",
+        "number": 16,
+        "state": "open",
+        "locked": false,
+        "title": "Bump decode-uri-component from 0.2.0 to 0.2.2",
+        "user": {
+          "login": "dependabot[bot]",
+          "id": 49699333,
+          "node_id": "MDM6Qm90NDk2OTkzMzM=",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/dependabot%5Bbot%5D",
+          "type": "Bot",
+          "site_admin": false
+        },
+        "body": "Bumps [decode-uri-component](https://github.com/SamVerschueren/decode-uri-component) from 0.2.0 to 0.2.2.\n<details>\n<summary>Release notes</summary>\n<p><em>Sourced from <a href=\"https://github.com/SamVerschueren/decode-uri-component/releases\">decode-uri-component's releases</a>.</em></p>\n<blockquote>\n<h2>v0.2.2</h2>\n<ul>\n<li>Prevent overwriting previously decoded tokens  980e0bf</li>\n</ul>\n<p><a href=\"https://github.com/SamVerschueren/decode-uri-component/compare/v0.2.1...v0.2.2\">https://github.com/SamVerschueren/decode-uri-component/compare/v0.2.1...v0.2.2</a></p>\n<h2>v0.2.1</h2>\n<ul>\n<li>Switch to GitHub workflows  76abc93</li>\n<li>Fix issue where decode throws - fixes <a href=\"https://github-redirect.dependabot.com/SamVerschueren/decode-uri-component/issues/6\">#6</a>  746ca5d</li>\n<li>Update license (<a href=\"https://github-redirect.dependabot.com/SamVerschueren/decode-uri-component/issues/1\">#1</a>)  486d7e2</li>\n<li>Tidelift tasks  a650457</li>\n<li>Meta tweaks  66e1c28</li>\n</ul>\n<p><a href=\"https://github.com/SamVerschueren/decode-uri-component/compare/v0.2.0...v0.2.1\">https://github.com/SamVerschueren/decode-uri-component/compare/v0.2.0...v0.2.1</a></p>\n</blockquote>\n</details>\n<details>\n<summary>Commits</summary>\n<ul>\n<li><a href=\"https://github.com/SamVerschueren/decode-uri-component/commit/a0eea469d26eb0df668b081672cdb9581feb78eb\"><code>a0eea46</code></a> 0.2.2</li>\n<li><a href=\"https://github.com/SamVerschueren/decode-uri-component/commit/980e0bf09b64d94f1aa79012f895816c30ffd152\"><code>980e0bf</code></a> Prevent overwriting previously decoded tokens</li>\n<li><a href=\"https://github.com/SamVerschueren/decode-uri-component/commit/3c8a373dd4837e89b3f970e01295dd03e1405a33\"><code>3c8a373</code></a> 0.2.1</li>\n<li><a href=\"https://github.com/SamVerschueren/decode-uri-component/commit/76abc939783fe3900fadb7d384a74d324d5557f3\"><code>76abc93</code></a> Switch to GitHub workflows</li>\n<li><a href=\"https://github.com/SamVerschueren/decode-uri-component/commit/746ca5dcb6667c5d364e782d53c542830e4c10b9\"><code>746ca5d</code></a> Fix issue where decode throws - fixes <a href=\"https://github-redirect.dependabot.com/SamVerschueren/decode-uri-component/issues/6\">#6</a></li>\n<li><a href=\"https://github.com/SamVerschueren/decode-uri-component/commit/486d7e26d3a8c0fbe860fb651fe1bc98c2f2be30\"><code>486d7e2</code></a> Update license (<a href=\"https://github-redirect.dependabot.com/SamVerschueren/decode-uri-component/issues/1\">#1</a>)</li>\n<li><a href=\"https://github.com/SamVerschueren/decode-uri-component/commit/a65045724e6234acef87f31da499d4807b20b134\"><code>a650457</code></a> Tidelift tasks</li>\n<li><a href=\"https://github.com/SamVerschueren/decode-uri-component/commit/66e1c2834c0e189201cb65196ec3101372459b02\"><code>66e1c28</code></a> Meta tweaks</li>\n<li>See full diff in <a href=\"https://github.com/SamVerschueren/decode-uri-component/compare/v0.2.0...v0.2.2\">compare view</a></li>\n</ul>\n</details>\n<br />\n\n\n[![Dependabot compatibility score](https://dependabot-badges.githubapp.com/badges/compatibility_score?dependency-name=decode-uri-component&package-manager=npm_and_yarn&previous-version=0.2.0&new-version=0.2.2)](https://docs.github.com/en/github/managing-security-vulnerabilities/about-dependabot-security-updates#about-compatibility-scores)\n\nDependabot will resolve any conflicts with this PR as long as you don't alter it yourself. You can also trigger a rebase manually by commenting `@dependabot rebase`.\n\n[//]: # (dependabot-automerge-start)\n[//]: # (dependabot-automerge-end)\n\n---\n\n<details>\n<summary>Dependabot commands and options</summary>\n<br />\n\nYou can trigger Dependabot actions by commenting on this PR:\n- `@dependabot rebase` will rebase this PR\n- `@dependabot recreate` will recreate this PR, overwriting any edits that have been made to it\n- `@dependabot merge` will merge this PR after your CI passes on it\n- `@dependabot squash and merge` will squash and merge this PR after your CI passes on it\n- `@dependabot cancel merge` will cancel a previously requested merge and block automerging\n- `@dependabot reopen` will reopen this PR if it is closed\n- `@dependabot close` will close this PR and stop Dependabot recreating it. You can achieve the same result by closing it manually\n- `@dependabot ignore this major version` will close this PR and stop Dependabot creating any more for this major version (unless you reopen the PR or upgrade to it yourself)\n- `@dependabot ignore this minor version` will close this PR and stop Dependabot creating any more for this minor version (unless you reopen the PR or upgrade to it yourself)\n- `@dependabot ignore this dependency` will close this PR and stop Dependabot creating any more for this dependency (unless you reopen the PR or upgrade to it yourself)\n- `@dependabot use these labels` will set the current labels as the default for future PRs for this repo and language\n- `@dependabot use these reviewers` will set the current reviewers as the default for future PRs for this repo and language\n- `@dependabot use these assignees` will set the current assignees as the default for future PRs for this repo and language\n- `@dependabot use this milestone` will set the current milestone as the default for future PRs for this repo and language\n\nYou can disable automated security fix PRs for this repo from the [Security Alerts page](https://github.com/discord/react-base-hooks/network/alerts).\n\n</details>",
+        "created_at": "2022-12-04T07:22:11Z",
+        "updated_at": "2022-12-04T07:22:12Z",
+        "closed_at": null,
+        "merged_at": null,
+        "merge_commit_sha": "493ff14fc95bf80339e82e4f2a7615f40cc56576",
+        "assignee": null,
+        "assignees": [],
+        "requested_reviewers": [],
+        "requested_teams": [],
+        "labels": [
+          {
+            "id": 1759215416,
+            "node_id": "MDU6TGFiZWwxNzU5MjE1NDE2",
+            "url": "https://api.github.com/repos/discord/react-base-hooks/labels/dependencies",
+            "name": "dependencies",
+            "color": "0366d6",
+            "default": false,
+            "description": "Pull requests that update a dependency file"
+          }
+        ],
+        "milestone": null,
+        "draft": false,
+        "head": {
+          "label": "discord:dependabot/npm_and_yarn/decode-uri-component-0.2.2",
+          "ref": "dependabot/npm_and_yarn/decode-uri-component-0.2.2",
+          "sha": "2d9aac8b541946ae381900dd65b2a7ea18edad0f",
+          "user": {
+            "login": "discord",
+            "id": 1965106,
+            "node_id": "MDEyOk9yZ2FuaXphdGlvbjE5NjUxMDY=",
+            "gravatar_id": "",
+            "url": "https://api.github.com/users/discord",
+            "type": "Organization",
+            "site_admin": false
+          },
+          "repo": {
+            "id": 201517358,
+            "node_id": "MDEwOlJlcG9zaXRvcnkyMDE1MTczNTg=",
+            "name": "react-base-hooks",
+            "full_name": "discord/react-base-hooks",
+            "private": false,
+            "owner": {
+              "login": "discord",
+              "id": 1965106,
+              "node_id": "MDEyOk9yZ2FuaXphdGlvbjE5NjUxMDY=",
+              "gravatar_id": "",
+              "url": "https://api.github.com/users/discord",
+              "type": "Organization",
+              "site_admin": false
+            },
+            "description": "Basic utility React hooks",
+            "fork": false,
+            "url": "https://api.github.com/repos/discord/react-base-hooks",
+            "created_at": "2019-08-09T18:01:08Z",
+            "updated_at": "2023-04-18T02:14:47Z",
+            "pushed_at": "2023-01-04T07:11:58Z",
+            "homepage": "",
+            "size": 742,
+            "stargazers_count": 76,
+            "watchers_count": 76,
+            "language": "TypeScript",
+            "has_issues": true,
+            "has_projects": true,
+            "has_downloads": true,
+            "has_wiki": true,
+            "has_pages": false,
+            "has_discussions": false,
+            "forks_count": 11,
+            "archived": false,
+            "disabled": false,
+            "open_issues_count": 13,
+            "license": {
+              "key": "mit",
+              "name": "MIT License",
+              "spdx_id": "MIT",
+              "url": "https://api.github.com/licenses/mit",
+              "node_id": "MDc6TGljZW5zZTEz"
+            },
+            "allow_forking": true,
+            "is_template": false,
+            "web_commit_signoff_required": false,
+            "topics": [
+              "hooks",
+              "react"
+            ],
+            "visibility": "public",
+            "forks": 11,
+            "open_issues": 13,
+            "watchers": 76,
+            "default_branch": "master"
+          }
+        },
+        "base": {
+          "label": "discord:master",
+          "ref": "master",
+          "sha": "7f89d3eaedf724b294005a32a92253c72350e695",
+          "user": {
+            "login": "discord",
+            "id": 1965106,
+            "node_id": "MDEyOk9yZ2FuaXphdGlvbjE5NjUxMDY=",
+            "gravatar_id": "",
+            "url": "https://api.github.com/users/discord",
+            "type": "Organization",
+            "site_admin": false
+          },
+          "repo": {
+            "id": 201517358,
+            "node_id": "MDEwOlJlcG9zaXRvcnkyMDE1MTczNTg=",
+            "name": "react-base-hooks",
+            "full_name": "discord/react-base-hooks",
+            "private": false,
+            "owner": {
+              "login": "discord",
+              "id": 1965106,
+              "node_id": "MDEyOk9yZ2FuaXphdGlvbjE5NjUxMDY=",
+              "gravatar_id": "",
+              "url": "https://api.github.com/users/discord",
+              "type": "Organization",
+              "site_admin": false
+            },
+            "description": "Basic utility React hooks",
+            "fork": false,
+            "url": "https://api.github.com/repos/discord/react-base-hooks",
+            "created_at": "2019-08-09T18:01:08Z",
+            "updated_at": "2023-04-18T02:14:47Z",
+            "pushed_at": "2023-01-04T07:11:58Z",
+            "homepage": "",
+            "size": 742,
+            "stargazers_count": 76,
+            "watchers_count": 76,
+            "language": "TypeScript",
+            "has_issues": true,
+            "has_projects": true,
+            "has_downloads": true,
+            "has_wiki": true,
+            "has_pages": false,
+            "has_discussions": false,
+            "forks_count": 11,
+            "archived": false,
+            "disabled": false,
+            "open_issues_count": 13,
+            "license": {
+              "key": "mit",
+              "name": "MIT License",
+              "spdx_id": "MIT",
+              "url": "https://api.github.com/licenses/mit",
+              "node_id": "MDc6TGljZW5zZTEz"
+            },
+            "allow_forking": true,
+            "is_template": false,
+            "web_commit_signoff_required": false,
+            "topics": [
+              "hooks",
+              "react"
+            ],
+            "visibility": "public",
+            "forks": 11,
+            "open_issues": 13,
+            "watchers": 76,
+            "default_branch": "master"
+          }
+        },
+        "_links": {
+          "self": {
+            "href": "https://api.github.com/repos/discord/react-base-hooks/pulls/16"
+          },
+          "html": {
+            "href": "https://github.com/discord/react-base-hooks/pull/16"
+          },
+          "issue": {
+            "href": "https://api.github.com/repos/discord/react-base-hooks/issues/16"
+          },
+          "comments": {
+            "href": "https://api.github.com/repos/discord/react-base-hooks/issues/16/comments"
+          },
+          "review_comments": {
+            "href": "https://api.github.com/repos/discord/react-base-hooks/pulls/16/comments"
+          },
+          "review_comment": {
+            "href": "https://api.github.com/repos/discord/react-base-hooks/pulls/comments{/number}"
+          },
+          "commits": {
+            "href": "https://api.github.com/repos/discord/react-base-hooks/pulls/16/commits"
+          },
+          "statuses": {
+            "href": "https://api.github.com/repos/discord/react-base-hooks/statuses/2d9aac8b541946ae381900dd65b2a7ea18edad0f"
+          }
+        },
+        "author_association": "NONE",
+        "auto_merge": null,
+        "active_lock_reason": null
+      },
+      {
+        "url": "https://api.github.com/repos/discord/react-base-hooks/pulls/15",
+        "id": 848886984,
+        "node_id": "PR_kwDODALpLs4ymPzI",
+        "number": 15,
+        "state": "open",
+        "locked": false,
+        "title": "Bump ajv from 6.10.2 to 6.12.6",
+        "user": {
+          "login": "dependabot[bot]",
+          "id": 49699333,
+          "node_id": "MDM6Qm90NDk2OTkzMzM=",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/dependabot%5Bbot%5D",
+          "type": "Bot",
+          "site_admin": false
+        },
+        "body": "Bumps [ajv](https://github.com/ajv-validator/ajv) from 6.10.2 to 6.12.6.\n<details>\n<summary>Release notes</summary>\n<p><em>Sourced from <a href=\"https://github.com/ajv-validator/ajv/releases\">ajv's releases</a>.</em></p>\n<blockquote>\n<h2>v6.12.6</h2>\n<p>Fix performance issue of &quot;url&quot; format.</p>\n<h2>v6.12.5</h2>\n<p>Fix uri scheme validation (<a href=\"https://github.com/ChALkeR\"><code>@​ChALkeR</code></a>).\nFix boolean schemas with strictKeywords option (<a href=\"https://github-redirect.dependabot.com/ajv-validator/ajv/issues/1270\">#1270</a>)</p>\n<h2>v6.12.4</h2>\n<p>Fix: coercion of one-item arrays to scalar that should fail validation (<a href=\"https://runkit.com/esp/5f3672ba2f6642001ae27411\">failing example</a>).</p>\n<h2>v6.12.3</h2>\n<p>Pass schema object to processCode function\nOption for strictNumbers (<a href=\"https://github.com/issacgerges\"><code>@​issacgerges</code></a>, <a href=\"https://github-redirect.dependabot.com/ajv-validator/ajv/issues/1128\">#1128</a>)\nFixed vulnerability related to untrusted schemas (<a href=\"https://cve.mitre.org/cgi-bin/cvekey.cgi?keyword=CVE-2020-15366\">CVE-2020-15366</a>)</p>\n<h2>v6.12.2</h2>\n<p>Removed post-install script</p>\n<h2>v6.12.1</h2>\n<p>Docs and dependency updates</p>\n<h2>v6.12.0</h2>\n<p>Improved hostname validation (<a href=\"https://github.com/sambauers\"><code>@​sambauers</code></a>, <a href=\"https://github-redirect.dependabot.com/ajv-validator/ajv/issues/1143\">#1143</a>)\nOption <code>keywords</code> to add custom keywords (<a href=\"https://github.com/franciscomorais\"><code>@​franciscomorais</code></a>, <a href=\"https://github-redirect.dependabot.com/ajv-validator/ajv/issues/1137\">#1137</a>)\nTypes fixes (<a href=\"https://github.com/boenrobot\"><code>@​boenrobot</code></a>, <a href=\"https://github.com/MattiAstedrone\"><code>@​MattiAstedrone</code></a>)\nDocs:</p>\n<ul>\n<li><a href=\"https://github.com/epoberezkin/ajv#error-logging\">error logging</a> example (<a href=\"https://github.com/RadiationSickness\"><code>@​RadiationSickness</code></a>)</li>\n<li>TypeScript usage notes (<a href=\"https://github.com/thetric\"><code>@​thetric</code></a>)</li>\n</ul>\n<h2>v6.11.0</h2>\n<p>Time formats support two digit and colon-less variants of timezone offset (<a href=\"https://github-redirect.dependabot.com/ajv-validator/ajv/issues/1061\">#1061</a> , <a href=\"https://github.com/cjpillsbury\"><code>@​cjpillsbury</code></a>)\nDocs: RegExp related security considerations\nTests: Disabled failing typescript test</p>\n</blockquote>\n</details>\n<details>\n<summary>Commits</summary>\n<ul>\n<li><a href=\"https://github.com/ajv-validator/ajv/commit/fe591439f34e24030f69df9eb8d91e6d037a3af7\"><code>fe59143</code></a> 6.12.6</li>\n<li><a href=\"https://github.com/ajv-validator/ajv/commit/d580d3e8ac6a467670d68d86e3a39fd661ac8c23\"><code>d580d3e</code></a> Merge pull request <a href=\"https://github-redirect.dependabot.com/ajv-validator/ajv/issues/1298\">#1298</a> from ajv-validator/fix-url</li>\n<li><a href=\"https://github.com/ajv-validator/ajv/commit/fd363896a8d6c5697b5da41f4d9a400a84efaf8e\"><code>fd36389</code></a> fix: regular expression for &quot;url&quot; format</li>\n<li><a href=\"https://github.com/ajv-validator/ajv/commit/490e34c4846064db5c962a77087e17078954c2f6\"><code>490e34c</code></a> docs: link to v7-beta branch</li>\n<li><a href=\"https://github.com/ajv-validator/ajv/commit/9cd93a1bdbdefd5a7ba3db5e123d20c84d1d1d0e\"><code>9cd93a1</code></a> docs: note about v7 in readme</li>\n<li><a href=\"https://github.com/ajv-validator/ajv/commit/877d286e7f145b1b2127da66c6800b071533f28f\"><code>877d286</code></a> Merge pull request <a href=\"https://github-redirect.dependabot.com/ajv-validator/ajv/issues/1262\">#1262</a> from b4h0-c4t/refactor-opt-object-type</li>\n<li><a href=\"https://github.com/ajv-validator/ajv/commit/f1c8e45b9cdff918be28becf03bf0b339321c398\"><code>f1c8e45</code></a> 6.12.5</li>\n<li><a href=\"https://github.com/ajv-validator/ajv/commit/764035e201d7733b8d700d4a04dd079fef9f4d30\"><code>764035e</code></a> Merge branch 'ChALkeR-chalker/fix-comma'</li>\n<li><a href=\"https://github.com/ajv-validator/ajv/commit/37981602ce6d43313ae106644b372b021626a8af\"><code>3798160</code></a> Merge branch 'chalker/fix-comma' of git://github.com/ChALkeR/ajv into ChALkeR...</li>\n<li><a href=\"https://github.com/ajv-validator/ajv/commit/a3c7ebab222e4cce07b5e30ebcbb809da7f934e8\"><code>a3c7eba</code></a> Merge branch 'refactor-opt-object-type' of github.com:b4h0-c4t/ajv into refac...</li>\n<li>Additional commits viewable in <a href=\"https://github.com/ajv-validator/ajv/compare/v6.10.2...v6.12.6\">compare view</a></li>\n</ul>\n</details>\n<br />\n\n\n[![Dependabot compatibility score](https://dependabot-badges.githubapp.com/badges/compatibility_score?dependency-name=ajv&package-manager=npm_and_yarn&previous-version=6.10.2&new-version=6.12.6)](https://docs.github.com/en/github/managing-security-vulnerabilities/about-dependabot-security-updates#about-compatibility-scores)\n\nDependabot will resolve any conflicts with this PR as long as you don't alter it yourself. You can also trigger a rebase manually by commenting `@dependabot rebase`.\n\n[//]: # (dependabot-automerge-start)\n[//]: # (dependabot-automerge-end)\n\n---\n\n<details>\n<summary>Dependabot commands and options</summary>\n<br />\n\nYou can trigger Dependabot actions by commenting on this PR:\n- `@dependabot rebase` will rebase this PR\n- `@dependabot recreate` will recreate this PR, overwriting any edits that have been made to it\n- `@dependabot merge` will merge this PR after your CI passes on it\n- `@dependabot squash and merge` will squash and merge this PR after your CI passes on it\n- `@dependabot cancel merge` will cancel a previously requested merge and block automerging\n- `@dependabot reopen` will reopen this PR if it is closed\n- `@dependabot close` will close this PR and stop Dependabot recreating it. You can achieve the same result by closing it manually\n- `@dependabot ignore this major version` will close this PR and stop Dependabot creating any more for this major version (unless you reopen the PR or upgrade to it yourself)\n- `@dependabot ignore this minor version` will close this PR and stop Dependabot creating any more for this minor version (unless you reopen the PR or upgrade to it yourself)\n- `@dependabot ignore this dependency` will close this PR and stop Dependabot creating any more for this dependency (unless you reopen the PR or upgrade to it yourself)\n- `@dependabot use these labels` will set the current labels as the default for future PRs for this repo and language\n- `@dependabot use these reviewers` will set the current reviewers as the default for future PRs for this repo and language\n- `@dependabot use these assignees` will set the current assignees as the default for future PRs for this repo and language\n- `@dependabot use this milestone` will set the current milestone as the default for future PRs for this repo and language\n\nYou can disable automated security fix PRs for this repo from the [Security Alerts page](https://github.com/discord/react-base-hooks/network/alerts).\n\n</details>",
+        "created_at": "2022-02-12T12:04:22Z",
+        "updated_at": "2022-02-12T12:04:23Z",
+        "closed_at": null,
+        "merged_at": null,
+        "merge_commit_sha": "929f178efec5d6fdcfeecf9e7f9534ce4ce32d05",
+        "assignee": null,
+        "assignees": [],
+        "requested_reviewers": [],
+        "requested_teams": [],
+        "labels": [
+          {
+            "id": 1759215416,
+            "node_id": "MDU6TGFiZWwxNzU5MjE1NDE2",
+            "url": "https://api.github.com/repos/discord/react-base-hooks/labels/dependencies",
+            "name": "dependencies",
+            "color": "0366d6",
+            "default": false,
+            "description": "Pull requests that update a dependency file"
+          }
+        ],
+        "milestone": null,
+        "draft": false,
+        "head": {
+          "label": "discord:dependabot/npm_and_yarn/ajv-6.12.6",
+          "ref": "dependabot/npm_and_yarn/ajv-6.12.6",
+          "sha": "dcade581692fd34dd9d16051051febb8c891cf8e",
+          "user": {
+            "login": "discord",
+            "id": 1965106,
+            "node_id": "MDEyOk9yZ2FuaXphdGlvbjE5NjUxMDY=",
+            "gravatar_id": "",
+            "url": "https://api.github.com/users/discord",
+            "type": "Organization",
+            "site_admin": false
+          },
+          "repo": {
+            "id": 201517358,
+            "node_id": "MDEwOlJlcG9zaXRvcnkyMDE1MTczNTg=",
+            "name": "react-base-hooks",
+            "full_name": "discord/react-base-hooks",
+            "private": false,
+            "owner": {
+              "login": "discord",
+              "id": 1965106,
+              "node_id": "MDEyOk9yZ2FuaXphdGlvbjE5NjUxMDY=",
+              "gravatar_id": "",
+              "url": "https://api.github.com/users/discord",
+              "type": "Organization",
+              "site_admin": false
+            },
+            "description": "Basic utility React hooks",
+            "fork": false,
+            "url": "https://api.github.com/repos/discord/react-base-hooks",
+            "created_at": "2019-08-09T18:01:08Z",
+            "updated_at": "2023-04-18T02:14:47Z",
+            "pushed_at": "2023-01-04T07:11:58Z",
+            "homepage": "",
+            "size": 742,
+            "stargazers_count": 76,
+            "watchers_count": 76,
+            "language": "TypeScript",
+            "has_issues": true,
+            "has_projects": true,
+            "has_downloads": true,
+            "has_wiki": true,
+            "has_pages": false,
+            "has_discussions": false,
+            "forks_count": 11,
+            "archived": false,
+            "disabled": false,
+            "open_issues_count": 13,
+            "license": {
+              "key": "mit",
+              "name": "MIT License",
+              "spdx_id": "MIT",
+              "url": "https://api.github.com/licenses/mit",
+              "node_id": "MDc6TGljZW5zZTEz"
+            },
+            "allow_forking": true,
+            "is_template": false,
+            "web_commit_signoff_required": false,
+            "topics": [
+              "hooks",
+              "react"
+            ],
+            "visibility": "public",
+            "forks": 11,
+            "open_issues": 13,
+            "watchers": 76,
+            "default_branch": "master"
+          }
+        },
+        "base": {
+          "label": "discord:master",
+          "ref": "master",
+          "sha": "7f89d3eaedf724b294005a32a92253c72350e695",
+          "user": {
+            "login": "discord",
+            "id": 1965106,
+            "node_id": "MDEyOk9yZ2FuaXphdGlvbjE5NjUxMDY=",
+            "gravatar_id": "",
+            "url": "https://api.github.com/users/discord",
+            "type": "Organization",
+            "site_admin": false
+          },
+          "repo": {
+            "id": 201517358,
+            "node_id": "MDEwOlJlcG9zaXRvcnkyMDE1MTczNTg=",
+            "name": "react-base-hooks",
+            "full_name": "discord/react-base-hooks",
+            "private": false,
+            "owner": {
+              "login": "discord",
+              "id": 1965106,
+              "node_id": "MDEyOk9yZ2FuaXphdGlvbjE5NjUxMDY=",
+              "gravatar_id": "",
+              "url": "https://api.github.com/users/discord",
+              "type": "Organization",
+              "site_admin": false
+            },
+            "description": "Basic utility React hooks",
+            "fork": false,
+            "url": "https://api.github.com/repos/discord/react-base-hooks",
+            "created_at": "2019-08-09T18:01:08Z",
+            "updated_at": "2023-04-18T02:14:47Z",
+            "pushed_at": "2023-01-04T07:11:58Z",
+            "homepage": "",
+            "size": 742,
+            "stargazers_count": 76,
+            "watchers_count": 76,
+            "language": "TypeScript",
+            "has_issues": true,
+            "has_projects": true,
+            "has_downloads": true,
+            "has_wiki": true,
+            "has_pages": false,
+            "has_discussions": false,
+            "forks_count": 11,
+            "archived": false,
+            "disabled": false,
+            "open_issues_count": 13,
+            "license": {
+              "key": "mit",
+              "name": "MIT License",
+              "spdx_id": "MIT",
+              "url": "https://api.github.com/licenses/mit",
+              "node_id": "MDc6TGljZW5zZTEz"
+            },
+            "allow_forking": true,
+            "is_template": false,
+            "web_commit_signoff_required": false,
+            "topics": [
+              "hooks",
+              "react"
+            ],
+            "visibility": "public",
+            "forks": 11,
+            "open_issues": 13,
+            "watchers": 76,
+            "default_branch": "master"
+          }
+        },
+        "_links": {
+          "self": {
+            "href": "https://api.github.com/repos/discord/react-base-hooks/pulls/15"
+          },
+          "html": {
+            "href": "https://github.com/discord/react-base-hooks/pull/15"
+          },
+          "issue": {
+            "href": "https://api.github.com/repos/discord/react-base-hooks/issues/15"
+          },
+          "comments": {
+            "href": "https://api.github.com/repos/discord/react-base-hooks/issues/15/comments"
+          },
+          "review_comments": {
+            "href": "https://api.github.com/repos/discord/react-base-hooks/pulls/15/comments"
+          },
+          "review_comment": {
+            "href": "https://api.github.com/repos/discord/react-base-hooks/pulls/comments{/number}"
+          },
+          "commits": {
+            "href": "https://api.github.com/repos/discord/react-base-hooks/pulls/15/commits"
+          },
+          "statuses": {
+            "href": "https://api.github.com/repos/discord/react-base-hooks/statuses/dcade581692fd34dd9d16051051febb8c891cf8e"
+          }
+        },
+        "author_association": "NONE",
+        "auto_merge": null,
+        "active_lock_reason": null
+      },
+      {
+        "url": "https://api.github.com/repos/discord/react-base-hooks/pulls/14",
+        "id": 738727380,
+        "node_id": "PR_kwDODALpLs4sCBXU",
+        "number": 14,
+        "state": "open",
+        "locked": false,
+        "title": "Bump tmpl from 1.0.4 to 1.0.5",
+        "user": {
+          "login": "dependabot[bot]",
+          "id": 49699333,
+          "node_id": "MDM6Qm90NDk2OTkzMzM=",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/dependabot%5Bbot%5D",
+          "type": "Bot",
+          "site_admin": false
+        },
+        "body": "Bumps [tmpl](https://github.com/daaku/nodejs-tmpl) from 1.0.4 to 1.0.5.\n<details>\n<summary>Commits</summary>\n<ul>\n<li>See full diff in <a href=\"https://github.com/daaku/nodejs-tmpl/commits/v1.0.5\">compare view</a></li>\n</ul>\n</details>\n<br />\n\n\n[![Dependabot compatibility score](https://dependabot-badges.githubapp.com/badges/compatibility_score?dependency-name=tmpl&package-manager=npm_and_yarn&previous-version=1.0.4&new-version=1.0.5)](https://docs.github.com/en/github/managing-security-vulnerabilities/about-dependabot-security-updates#about-compatibility-scores)\n\nDependabot will resolve any conflicts with this PR as long as you don't alter it yourself. You can also trigger a rebase manually by commenting `@dependabot rebase`.\n\n[//]: # (dependabot-automerge-start)\n[//]: # (dependabot-automerge-end)\n\n---\n\n<details>\n<summary>Dependabot commands and options</summary>\n<br />\n\nYou can trigger Dependabot actions by commenting on this PR:\n- `@dependabot rebase` will rebase this PR\n- `@dependabot recreate` will recreate this PR, overwriting any edits that have been made to it\n- `@dependabot merge` will merge this PR after your CI passes on it\n- `@dependabot squash and merge` will squash and merge this PR after your CI passes on it\n- `@dependabot cancel merge` will cancel a previously requested merge and block automerging\n- `@dependabot reopen` will reopen this PR if it is closed\n- `@dependabot close` will close this PR and stop Dependabot recreating it. You can achieve the same result by closing it manually\n- `@dependabot ignore this major version` will close this PR and stop Dependabot creating any more for this major version (unless you reopen the PR or upgrade to it yourself)\n- `@dependabot ignore this minor version` will close this PR and stop Dependabot creating any more for this minor version (unless you reopen the PR or upgrade to it yourself)\n- `@dependabot ignore this dependency` will close this PR and stop Dependabot creating any more for this dependency (unless you reopen the PR or upgrade to it yourself)\n- `@dependabot use these labels` will set the current labels as the default for future PRs for this repo and language\n- `@dependabot use these reviewers` will set the current reviewers as the default for future PRs for this repo and language\n- `@dependabot use these assignees` will set the current assignees as the default for future PRs for this repo and language\n- `@dependabot use this milestone` will set the current milestone as the default for future PRs for this repo and language\n\nYou can disable automated security fix PRs for this repo from the [Security Alerts page](https://github.com/discord/react-base-hooks/network/alerts).\n\n</details>",
+        "created_at": "2021-09-21T11:54:51Z",
+        "updated_at": "2021-09-21T11:54:51Z",
+        "closed_at": null,
+        "merged_at": null,
+        "merge_commit_sha": "978aec067af660f65e3030c528ed624bc393d7c9",
+        "assignee": null,
+        "assignees": [],
+        "requested_reviewers": [],
+        "requested_teams": [],
+        "labels": [
+          {
+            "id": 1759215416,
+            "node_id": "MDU6TGFiZWwxNzU5MjE1NDE2",
+            "url": "https://api.github.com/repos/discord/react-base-hooks/labels/dependencies",
+            "name": "dependencies",
+            "color": "0366d6",
+            "default": false,
+            "description": "Pull requests that update a dependency file"
+          }
+        ],
+        "milestone": null,
+        "draft": false,
+        "head": {
+          "label": "discord:dependabot/npm_and_yarn/tmpl-1.0.5",
+          "ref": "dependabot/npm_and_yarn/tmpl-1.0.5",
+          "sha": "f8673bc592f399a43b84698185b02c58b59439b0",
+          "user": {
+            "login": "discord",
+            "id": 1965106,
+            "node_id": "MDEyOk9yZ2FuaXphdGlvbjE5NjUxMDY=",
+            "gravatar_id": "",
+            "url": "https://api.github.com/users/discord",
+            "type": "Organization",
+            "site_admin": false
+          },
+          "repo": {
+            "id": 201517358,
+            "node_id": "MDEwOlJlcG9zaXRvcnkyMDE1MTczNTg=",
+            "name": "react-base-hooks",
+            "full_name": "discord/react-base-hooks",
+            "private": false,
+            "owner": {
+              "login": "discord",
+              "id": 1965106,
+              "node_id": "MDEyOk9yZ2FuaXphdGlvbjE5NjUxMDY=",
+              "gravatar_id": "",
+              "url": "https://api.github.com/users/discord",
+              "type": "Organization",
+              "site_admin": false
+            },
+            "description": "Basic utility React hooks",
+            "fork": false,
+            "url": "https://api.github.com/repos/discord/react-base-hooks",
+            "created_at": "2019-08-09T18:01:08Z",
+            "updated_at": "2023-04-18T02:14:47Z",
+            "pushed_at": "2023-01-04T07:11:58Z",
+            "homepage": "",
+            "size": 742,
+            "stargazers_count": 76,
+            "watchers_count": 76,
+            "language": "TypeScript",
+            "has_issues": true,
+            "has_projects": true,
+            "has_downloads": true,
+            "has_wiki": true,
+            "has_pages": false,
+            "has_discussions": false,
+            "forks_count": 11,
+            "archived": false,
+            "disabled": false,
+            "open_issues_count": 13,
+            "license": {
+              "key": "mit",
+              "name": "MIT License",
+              "spdx_id": "MIT",
+              "url": "https://api.github.com/licenses/mit",
+              "node_id": "MDc6TGljZW5zZTEz"
+            },
+            "allow_forking": true,
+            "is_template": false,
+            "web_commit_signoff_required": false,
+            "topics": [
+              "hooks",
+              "react"
+            ],
+            "visibility": "public",
+            "forks": 11,
+            "open_issues": 13,
+            "watchers": 76,
+            "default_branch": "master"
+          }
+        },
+        "base": {
+          "label": "discord:master",
+          "ref": "master",
+          "sha": "7f89d3eaedf724b294005a32a92253c72350e695",
+          "user": {
+            "login": "discord",
+            "id": 1965106,
+            "node_id": "MDEyOk9yZ2FuaXphdGlvbjE5NjUxMDY=",
+            "gravatar_id": "",
+            "url": "https://api.github.com/users/discord",
+            "type": "Organization",
+            "site_admin": false
+          },
+          "repo": {
+            "id": 201517358,
+            "node_id": "MDEwOlJlcG9zaXRvcnkyMDE1MTczNTg=",
+            "name": "react-base-hooks",
+            "full_name": "discord/react-base-hooks",
+            "private": false,
+            "owner": {
+              "login": "discord",
+              "id": 1965106,
+              "node_id": "MDEyOk9yZ2FuaXphdGlvbjE5NjUxMDY=",
+              "gravatar_id": "",
+              "url": "https://api.github.com/users/discord",
+              "type": "Organization",
+              "site_admin": false
+            },
+            "description": "Basic utility React hooks",
+            "fork": false,
+            "url": "https://api.github.com/repos/discord/react-base-hooks",
+            "created_at": "2019-08-09T18:01:08Z",
+            "updated_at": "2023-04-18T02:14:47Z",
+            "pushed_at": "2023-01-04T07:11:58Z",
+            "homepage": "",
+            "size": 742,
+            "stargazers_count": 76,
+            "watchers_count": 76,
+            "language": "TypeScript",
+            "has_issues": true,
+            "has_projects": true,
+            "has_downloads": true,
+            "has_wiki": true,
+            "has_pages": false,
+            "has_discussions": false,
+            "forks_count": 11,
+            "archived": false,
+            "disabled": false,
+            "open_issues_count": 13,
+            "license": {
+              "key": "mit",
+              "name": "MIT License",
+              "spdx_id": "MIT",
+              "url": "https://api.github.com/licenses/mit",
+              "node_id": "MDc6TGljZW5zZTEz"
+            },
+            "allow_forking": true,
+            "is_template": false,
+            "web_commit_signoff_required": false,
+            "topics": [
+              "hooks",
+              "react"
+            ],
+            "visibility": "public",
+            "forks": 11,
+            "open_issues": 13,
+            "watchers": 76,
+            "default_branch": "master"
+          }
+        },
+        "_links": {
+          "self": {
+            "href": "https://api.github.com/repos/discord/react-base-hooks/pulls/14"
+          },
+          "html": {
+            "href": "https://github.com/discord/react-base-hooks/pull/14"
+          },
+          "issue": {
+            "href": "https://api.github.com/repos/discord/react-base-hooks/issues/14"
+          },
+          "comments": {
+            "href": "https://api.github.com/repos/discord/react-base-hooks/issues/14/comments"
+          },
+          "review_comments": {
+            "href": "https://api.github.com/repos/discord/react-base-hooks/pulls/14/comments"
+          },
+          "review_comment": {
+            "href": "https://api.github.com/repos/discord/react-base-hooks/pulls/comments{/number}"
+          },
+          "commits": {
+            "href": "https://api.github.com/repos/discord/react-base-hooks/pulls/14/commits"
+          },
+          "statuses": {
+            "href": "https://api.github.com/repos/discord/react-base-hooks/statuses/f8673bc592f399a43b84698185b02c58b59439b0"
+          }
+        },
+        "author_association": "NONE",
+        "auto_merge": null,
+        "active_lock_reason": null
+      }
+    ]
   }
 }

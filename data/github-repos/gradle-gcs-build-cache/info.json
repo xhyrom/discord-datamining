@@ -336,7 +336,503 @@
       }
     ],
     "releases": [],
-    "issues": [],
-    "pullRequests": []
+    "issues": [
+      {
+        "url": "https://api.github.com/repos/discord/gradle-gcs-build-cache/issues/2",
+        "id": 1351527006,
+        "node_id": "PR_kwDOEiXUNM491Dvo",
+        "number": 2,
+        "title": "Add a hook to hanadle StorageException during cache initialization",
+        "user": {
+          "login": "FuegoFro",
+          "id": 463696,
+          "node_id": "MDQ6VXNlcjQ2MzY5Ng==",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/FuegoFro",
+          "type": "User",
+          "site_admin": false
+        },
+        "labels": [],
+        "state": "closed",
+        "locked": false,
+        "assignee": null,
+        "assignees": [],
+        "milestone": null,
+        "comments": 0,
+        "created_at": "2022-08-25T22:59:43Z",
+        "updated_at": "2022-08-26T00:43:40Z",
+        "closed_at": "2022-08-26T00:43:33Z",
+        "author_association": "NONE",
+        "active_lock_reason": null,
+        "draft": false,
+        "pull_request": {
+          "url": "https://api.github.com/repos/discord/gradle-gcs-build-cache/pulls/2",
+          "merged_at": "2022-08-26T00:43:33Z"
+        },
+        "body": "This adds a hook to allow arbitrary behavior when a StorageException is encountered, eg to automatically attempt to re-auth, or print out a custom message.",
+        "reactions": {
+          "url": "https://api.github.com/repos/discord/gradle-gcs-build-cache/issues/2/reactions",
+          "total_count": 0,
+          "+1": 0,
+          "-1": 0,
+          "laugh": 0,
+          "hooray": 0,
+          "confused": 0,
+          "heart": 0,
+          "rocket": 0,
+          "eyes": 0
+        },
+        "performed_via_github_app": null,
+        "state_reason": null
+      },
+      {
+        "url": "https://api.github.com/repos/discord/gradle-gcs-build-cache/issues/1",
+        "id": 1211556267,
+        "node_id": "PR_kwDOEiXUNM42ld38",
+        "number": 1,
+        "title": "improve error messaging, display optional reauthentication prompt",
+        "user": {
+          "login": "denbeigh2000",
+          "id": 1646744,
+          "node_id": "MDQ6VXNlcjE2NDY3NDQ=",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/denbeigh2000",
+          "type": "User",
+          "site_admin": false
+        },
+        "labels": [],
+        "state": "closed",
+        "locked": false,
+        "assignee": null,
+        "assignees": [],
+        "milestone": null,
+        "comments": 0,
+        "created_at": "2022-04-21T21:10:21Z",
+        "updated_at": "2022-04-21T21:20:01Z",
+        "closed_at": "2022-04-21T21:19:56Z",
+        "author_association": "MEMBER",
+        "active_lock_reason": null,
+        "draft": false,
+        "pull_request": {
+          "url": "https://api.github.com/repos/discord/gradle-gcs-build-cache/pulls/1",
+          "merged_at": "2022-04-21T21:19:56Z"
+        },
+        "body": "This adds more useful error messaging so users can discern issues without re-invoking gradle with `--show-traces`\r\n\r\nIt also adds an optional prompt for re-authenticating if Google served a 401 or 403 response.\r\n\r\nvalidation:\r\n```\r\n$ ./gradlew ktlintCheck\r\n\r\n> Configure project :\r\nWARNING: Unsupported Kotlin plugin version.\r\nThe `embedded-kotlin` and `kotlin-dsl` plugins rely on features of Kotlin `1.3.41` that might work differently than in the requested version `1.3.50`.\r\n\r\n> Task :ktlintKotlinScriptCheck UP-TO-DATE\r\n> Task :ktlintMainSourceSetCheck\r\n> Task :ktlintTestSourceSetCheck NO-SOURCE\r\n> Task :ktlintCheck\r\n\r\nBUILD SUCCESSFUL in 1s\r\n2 actionable tasks: 1 executed, 1 up-to-date\r\n```",
+        "reactions": {
+          "url": "https://api.github.com/repos/discord/gradle-gcs-build-cache/issues/1/reactions",
+          "total_count": 0,
+          "+1": 0,
+          "-1": 0,
+          "laugh": 0,
+          "hooray": 0,
+          "confused": 0,
+          "heart": 0,
+          "rocket": 0,
+          "eyes": 0
+        },
+        "performed_via_github_app": null,
+        "state_reason": null
+      }
+    ],
+    "pullRequests": [
+      {
+        "url": "https://api.github.com/repos/discord/gradle-gcs-build-cache/pulls/2",
+        "id": 1037319144,
+        "node_id": "PR_kwDOEiXUNM491Dvo",
+        "number": 2,
+        "state": "closed",
+        "locked": false,
+        "title": "Add a hook to hanadle StorageException during cache initialization",
+        "user": {
+          "login": "FuegoFro",
+          "id": 463696,
+          "node_id": "MDQ6VXNlcjQ2MzY5Ng==",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/FuegoFro",
+          "type": "User",
+          "site_admin": false
+        },
+        "body": "This adds a hook to allow arbitrary behavior when a StorageException is encountered, eg to automatically attempt to re-auth, or print out a custom message.",
+        "created_at": "2022-08-25T22:59:43Z",
+        "updated_at": "2022-08-26T00:43:40Z",
+        "closed_at": "2022-08-26T00:43:33Z",
+        "merged_at": "2022-08-26T00:43:33Z",
+        "merge_commit_sha": "89a219d9185608e99a9587aed747b5f530038654",
+        "assignee": null,
+        "assignees": [],
+        "requested_reviewers": [],
+        "requested_teams": [],
+        "labels": [],
+        "milestone": null,
+        "draft": false,
+        "head": {
+          "label": "discord:fuegofro/add_storage_exception_hook",
+          "ref": "fuegofro/add_storage_exception_hook",
+          "sha": "eeec8522feb11573db69defd0d4d36771798074c",
+          "user": {
+            "login": "discord",
+            "id": 1965106,
+            "node_id": "MDEyOk9yZ2FuaXphdGlvbjE5NjUxMDY=",
+            "gravatar_id": "",
+            "url": "https://api.github.com/users/discord",
+            "type": "Organization",
+            "site_admin": false
+          },
+          "repo": {
+            "id": 304469044,
+            "node_id": "MDEwOlJlcG9zaXRvcnkzMDQ0NjkwNDQ=",
+            "name": "gradle-gcs-build-cache",
+            "full_name": "discord/gradle-gcs-build-cache",
+            "private": false,
+            "owner": {
+              "login": "discord",
+              "id": 1965106,
+              "node_id": "MDEyOk9yZ2FuaXphdGlvbjE5NjUxMDY=",
+              "gravatar_id": "",
+              "url": "https://api.github.com/users/discord",
+              "type": "Organization",
+              "site_admin": false
+            },
+            "description": "A Gradle build cache that uses Google Cloud Storage to store build artifacts",
+            "fork": true,
+            "url": "https://api.github.com/repos/discord/gradle-gcs-build-cache",
+            "created_at": "2020-10-15T23:17:13Z",
+            "updated_at": "2022-04-25T14:04:10Z",
+            "pushed_at": "2022-08-26T00:44:45Z",
+            "homepage": "",
+            "size": 71,
+            "stargazers_count": 2,
+            "watchers_count": 2,
+            "language": null,
+            "has_issues": false,
+            "has_projects": true,
+            "has_downloads": true,
+            "has_wiki": true,
+            "has_pages": false,
+            "has_discussions": false,
+            "forks_count": 4,
+            "archived": false,
+            "disabled": false,
+            "open_issues_count": 0,
+            "license": {
+              "key": "other",
+              "name": "Other",
+              "spdx_id": "NOASSERTION",
+              "url": null,
+              "node_id": "MDc6TGljZW5zZTA="
+            },
+            "allow_forking": true,
+            "is_template": false,
+            "web_commit_signoff_required": false,
+            "topics": [],
+            "visibility": "public",
+            "forks": 4,
+            "open_issues": 0,
+            "watchers": 2,
+            "default_branch": "master"
+          }
+        },
+        "base": {
+          "label": "discord:discord_fixes",
+          "ref": "discord_fixes",
+          "sha": "f9384444f70aaf92455d70088339b06eb2a783ff",
+          "user": {
+            "login": "discord",
+            "id": 1965106,
+            "node_id": "MDEyOk9yZ2FuaXphdGlvbjE5NjUxMDY=",
+            "gravatar_id": "",
+            "url": "https://api.github.com/users/discord",
+            "type": "Organization",
+            "site_admin": false
+          },
+          "repo": {
+            "id": 304469044,
+            "node_id": "MDEwOlJlcG9zaXRvcnkzMDQ0NjkwNDQ=",
+            "name": "gradle-gcs-build-cache",
+            "full_name": "discord/gradle-gcs-build-cache",
+            "private": false,
+            "owner": {
+              "login": "discord",
+              "id": 1965106,
+              "node_id": "MDEyOk9yZ2FuaXphdGlvbjE5NjUxMDY=",
+              "gravatar_id": "",
+              "url": "https://api.github.com/users/discord",
+              "type": "Organization",
+              "site_admin": false
+            },
+            "description": "A Gradle build cache that uses Google Cloud Storage to store build artifacts",
+            "fork": true,
+            "url": "https://api.github.com/repos/discord/gradle-gcs-build-cache",
+            "created_at": "2020-10-15T23:17:13Z",
+            "updated_at": "2022-04-25T14:04:10Z",
+            "pushed_at": "2022-08-26T00:44:45Z",
+            "homepage": "",
+            "size": 71,
+            "stargazers_count": 2,
+            "watchers_count": 2,
+            "language": null,
+            "has_issues": false,
+            "has_projects": true,
+            "has_downloads": true,
+            "has_wiki": true,
+            "has_pages": false,
+            "has_discussions": false,
+            "forks_count": 4,
+            "archived": false,
+            "disabled": false,
+            "open_issues_count": 0,
+            "license": {
+              "key": "other",
+              "name": "Other",
+              "spdx_id": "NOASSERTION",
+              "url": null,
+              "node_id": "MDc6TGljZW5zZTA="
+            },
+            "allow_forking": true,
+            "is_template": false,
+            "web_commit_signoff_required": false,
+            "topics": [],
+            "visibility": "public",
+            "forks": 4,
+            "open_issues": 0,
+            "watchers": 2,
+            "default_branch": "master"
+          }
+        },
+        "_links": {
+          "self": {
+            "href": "https://api.github.com/repos/discord/gradle-gcs-build-cache/pulls/2"
+          },
+          "html": {
+            "href": "https://github.com/discord/gradle-gcs-build-cache/pull/2"
+          },
+          "issue": {
+            "href": "https://api.github.com/repos/discord/gradle-gcs-build-cache/issues/2"
+          },
+          "comments": {
+            "href": "https://api.github.com/repos/discord/gradle-gcs-build-cache/issues/2/comments"
+          },
+          "review_comments": {
+            "href": "https://api.github.com/repos/discord/gradle-gcs-build-cache/pulls/2/comments"
+          },
+          "review_comment": {
+            "href": "https://api.github.com/repos/discord/gradle-gcs-build-cache/pulls/comments{/number}"
+          },
+          "commits": {
+            "href": "https://api.github.com/repos/discord/gradle-gcs-build-cache/pulls/2/commits"
+          },
+          "statuses": {
+            "href": "https://api.github.com/repos/discord/gradle-gcs-build-cache/statuses/eeec8522feb11573db69defd0d4d36771798074c"
+          }
+        },
+        "author_association": "NONE",
+        "auto_merge": null,
+        "active_lock_reason": null
+      },
+      {
+        "url": "https://api.github.com/repos/discord/gradle-gcs-build-cache/pulls/1",
+        "id": 915791356,
+        "node_id": "PR_kwDOEiXUNM42ld38",
+        "number": 1,
+        "state": "closed",
+        "locked": false,
+        "title": "improve error messaging, display optional reauthentication prompt",
+        "user": {
+          "login": "denbeigh2000",
+          "id": 1646744,
+          "node_id": "MDQ6VXNlcjE2NDY3NDQ=",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/denbeigh2000",
+          "type": "User",
+          "site_admin": false
+        },
+        "body": "This adds more useful error messaging so users can discern issues without re-invoking gradle with `--show-traces`\r\n\r\nIt also adds an optional prompt for re-authenticating if Google served a 401 or 403 response.\r\n\r\nvalidation:\r\n```\r\n$ ./gradlew ktlintCheck\r\n\r\n> Configure project :\r\nWARNING: Unsupported Kotlin plugin version.\r\nThe `embedded-kotlin` and `kotlin-dsl` plugins rely on features of Kotlin `1.3.41` that might work differently than in the requested version `1.3.50`.\r\n\r\n> Task :ktlintKotlinScriptCheck UP-TO-DATE\r\n> Task :ktlintMainSourceSetCheck\r\n> Task :ktlintTestSourceSetCheck NO-SOURCE\r\n> Task :ktlintCheck\r\n\r\nBUILD SUCCESSFUL in 1s\r\n2 actionable tasks: 1 executed, 1 up-to-date\r\n```",
+        "created_at": "2022-04-21T21:10:21Z",
+        "updated_at": "2022-04-21T21:20:01Z",
+        "closed_at": "2022-04-21T21:19:56Z",
+        "merged_at": "2022-04-21T21:19:56Z",
+        "merge_commit_sha": "44a17623b61e2116c821e62d216290578d99f20f",
+        "assignee": null,
+        "assignees": [],
+        "requested_reviewers": [
+          {
+            "login": "FuegoFro",
+            "id": 463696,
+            "node_id": "MDQ6VXNlcjQ2MzY5Ng==",
+            "gravatar_id": "",
+            "url": "https://api.github.com/users/FuegoFro",
+            "type": "User",
+            "site_admin": false
+          }
+        ],
+        "requested_teams": [],
+        "labels": [],
+        "milestone": null,
+        "draft": false,
+        "head": {
+          "label": "discord:denbeigh/reauth",
+          "ref": "denbeigh/reauth",
+          "sha": "c6d2d19a025b180943fd57a226560b453b253a2d",
+          "user": {
+            "login": "discord",
+            "id": 1965106,
+            "node_id": "MDEyOk9yZ2FuaXphdGlvbjE5NjUxMDY=",
+            "gravatar_id": "",
+            "url": "https://api.github.com/users/discord",
+            "type": "Organization",
+            "site_admin": false
+          },
+          "repo": {
+            "id": 304469044,
+            "node_id": "MDEwOlJlcG9zaXRvcnkzMDQ0NjkwNDQ=",
+            "name": "gradle-gcs-build-cache",
+            "full_name": "discord/gradle-gcs-build-cache",
+            "private": false,
+            "owner": {
+              "login": "discord",
+              "id": 1965106,
+              "node_id": "MDEyOk9yZ2FuaXphdGlvbjE5NjUxMDY=",
+              "gravatar_id": "",
+              "url": "https://api.github.com/users/discord",
+              "type": "Organization",
+              "site_admin": false
+            },
+            "description": "A Gradle build cache that uses Google Cloud Storage to store build artifacts",
+            "fork": true,
+            "url": "https://api.github.com/repos/discord/gradle-gcs-build-cache",
+            "created_at": "2020-10-15T23:17:13Z",
+            "updated_at": "2022-04-25T14:04:10Z",
+            "pushed_at": "2022-08-26T00:44:45Z",
+            "homepage": "",
+            "size": 71,
+            "stargazers_count": 2,
+            "watchers_count": 2,
+            "language": null,
+            "has_issues": false,
+            "has_projects": true,
+            "has_downloads": true,
+            "has_wiki": true,
+            "has_pages": false,
+            "has_discussions": false,
+            "forks_count": 4,
+            "archived": false,
+            "disabled": false,
+            "open_issues_count": 0,
+            "license": {
+              "key": "other",
+              "name": "Other",
+              "spdx_id": "NOASSERTION",
+              "url": null,
+              "node_id": "MDc6TGljZW5zZTA="
+            },
+            "allow_forking": true,
+            "is_template": false,
+            "web_commit_signoff_required": false,
+            "topics": [],
+            "visibility": "public",
+            "forks": 4,
+            "open_issues": 0,
+            "watchers": 2,
+            "default_branch": "master"
+          }
+        },
+        "base": {
+          "label": "discord:discord_fixes",
+          "ref": "discord_fixes",
+          "sha": "20272a3cf05a1c45cf4bdb1cfedc05cbfb815a68",
+          "user": {
+            "login": "discord",
+            "id": 1965106,
+            "node_id": "MDEyOk9yZ2FuaXphdGlvbjE5NjUxMDY=",
+            "gravatar_id": "",
+            "url": "https://api.github.com/users/discord",
+            "type": "Organization",
+            "site_admin": false
+          },
+          "repo": {
+            "id": 304469044,
+            "node_id": "MDEwOlJlcG9zaXRvcnkzMDQ0NjkwNDQ=",
+            "name": "gradle-gcs-build-cache",
+            "full_name": "discord/gradle-gcs-build-cache",
+            "private": false,
+            "owner": {
+              "login": "discord",
+              "id": 1965106,
+              "node_id": "MDEyOk9yZ2FuaXphdGlvbjE5NjUxMDY=",
+              "gravatar_id": "",
+              "url": "https://api.github.com/users/discord",
+              "type": "Organization",
+              "site_admin": false
+            },
+            "description": "A Gradle build cache that uses Google Cloud Storage to store build artifacts",
+            "fork": true,
+            "url": "https://api.github.com/repos/discord/gradle-gcs-build-cache",
+            "created_at": "2020-10-15T23:17:13Z",
+            "updated_at": "2022-04-25T14:04:10Z",
+            "pushed_at": "2022-08-26T00:44:45Z",
+            "homepage": "",
+            "size": 71,
+            "stargazers_count": 2,
+            "watchers_count": 2,
+            "language": null,
+            "has_issues": false,
+            "has_projects": true,
+            "has_downloads": true,
+            "has_wiki": true,
+            "has_pages": false,
+            "has_discussions": false,
+            "forks_count": 4,
+            "archived": false,
+            "disabled": false,
+            "open_issues_count": 0,
+            "license": {
+              "key": "other",
+              "name": "Other",
+              "spdx_id": "NOASSERTION",
+              "url": null,
+              "node_id": "MDc6TGljZW5zZTA="
+            },
+            "allow_forking": true,
+            "is_template": false,
+            "web_commit_signoff_required": false,
+            "topics": [],
+            "visibility": "public",
+            "forks": 4,
+            "open_issues": 0,
+            "watchers": 2,
+            "default_branch": "master"
+          }
+        },
+        "_links": {
+          "self": {
+            "href": "https://api.github.com/repos/discord/gradle-gcs-build-cache/pulls/1"
+          },
+          "html": {
+            "href": "https://github.com/discord/gradle-gcs-build-cache/pull/1"
+          },
+          "issue": {
+            "href": "https://api.github.com/repos/discord/gradle-gcs-build-cache/issues/1"
+          },
+          "comments": {
+            "href": "https://api.github.com/repos/discord/gradle-gcs-build-cache/issues/1/comments"
+          },
+          "review_comments": {
+            "href": "https://api.github.com/repos/discord/gradle-gcs-build-cache/pulls/1/comments"
+          },
+          "review_comment": {
+            "href": "https://api.github.com/repos/discord/gradle-gcs-build-cache/pulls/comments{/number}"
+          },
+          "commits": {
+            "href": "https://api.github.com/repos/discord/gradle-gcs-build-cache/pulls/1/commits"
+          },
+          "statuses": {
+            "href": "https://api.github.com/repos/discord/gradle-gcs-build-cache/statuses/c6d2d19a025b180943fd57a226560b453b253a2d"
+          }
+        },
+        "author_association": "MEMBER",
+        "auto_merge": null,
+        "active_lock_reason": null
+      }
+    ]
   }
 }

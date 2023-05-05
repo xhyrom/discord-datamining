@@ -57,7 +57,16 @@
     "triage": false,
     "pull": false
   },
-  "branches": [],
+  "branches": [
+    {
+      "name": "master",
+      "commit": {
+        "sha": "4fda6d087cb2b488d294ecf88feedc143e731fc2",
+        "url": "https://api.github.com/repos/discord/babel-plugin-flow-to-typescript/commits/4fda6d087cb2b488d294ecf88feedc143e731fc2"
+      },
+      "protected": false
+    }
+  ],
   "last5": {
     "commits": [
       {
