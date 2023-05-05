@@ -128705,8 +128705,12 @@ html .invoiceCancelRow-3s2UuC {
     border-radius: 9px
 }
 
+.icon-2OmVzO,
+.pill-1cZmwZ {
+    margin-right: 3px
+}
+
 .icon-2OmVzO {
-    margin-right: 3px;
     color: var(--interactive-normal)
 }
 
@@ -155046,4 +155050,4 @@ html .invoiceCancelRow-dVOR64 {
     flex-direction: column
 }
 
-/*# sourceMappingURL=40532.cdaaf795dda02e9144c9.css.map*/
+/*# sourceMappingURL=40532.eccc0e6ac92d3962706a.css.map*/
