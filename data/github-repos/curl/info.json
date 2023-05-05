@@ -59,7 +59,278 @@
   },
   "branches": [],
   "last5": {
-    "commits": [],
+    "commits": [
+      {
+        "sha": "87ba80a6df1dfd7ceaaa52352c9f23afff0ed513",
+        "node_id": "MDY6Q29tbWl0ODE0NzkyMDA6ODdiYTgwYTZkZjFkZmQ3Y2VhYWE1MjM1MmM5ZjIzYWZmZjBlZDUxMw==",
+        "commit": {
+          "author": {
+            "name": "Dan Fandrich",
+            "email": "dan@coneharvesters.com",
+            "date": "2019-02-21T21:06:16Z"
+          },
+          "committer": {
+            "name": "Dan Fandrich",
+            "email": "dan@coneharvesters.com",
+            "date": "2019-02-21T21:10:48Z"
+          },
+          "message": "tests: Fixed XML validation errors in some test files.",
+          "tree": {
+            "sha": "fdcb6a72ea9e2dbe9956d609fbdb0de1d40524f5",
+            "url": "https://api.github.com/repos/discord/curl/git/trees/fdcb6a72ea9e2dbe9956d609fbdb0de1d40524f5"
+          },
+          "url": "https://api.github.com/repos/discord/curl/git/commits/87ba80a6df1dfd7ceaaa52352c9f23afff0ed513",
+          "comment_count": 0,
+          "verification": {
+            "verified": false,
+            "reason": "unsigned",
+            "signature": null,
+            "payload": null
+          }
+        },
+        "url": "https://api.github.com/repos/discord/curl/commits/87ba80a6df1dfd7ceaaa52352c9f23afff0ed513",
+        "author": {
+          "login": "dfandrich",
+          "id": 228259,
+          "node_id": "MDQ6VXNlcjIyODI1OQ==",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/dfandrich",
+          "type": "User",
+          "site_admin": false
+        },
+        "committer": {
+          "login": "dfandrich",
+          "id": 228259,
+          "node_id": "MDQ6VXNlcjIyODI1OQ==",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/dfandrich",
+          "type": "User",
+          "site_admin": false
+        },
+        "parents": [
+          {
+            "sha": "8bc5ceb20480295230f05b3c351a0b08454ee6ee",
+            "url": "https://api.github.com/repos/discord/curl/commits/8bc5ceb20480295230f05b3c351a0b08454ee6ee"
+          }
+        ]
+      },
+      {
+        "sha": "8bc5ceb20480295230f05b3c351a0b08454ee6ee",
+        "node_id": "MDY6Q29tbWl0ODE0NzkyMDA6OGJjNWNlYjIwNDgwMjk1MjMwZjA1YjNjMzUxYTBiMDg0NTRlZTZlZQ==",
+        "commit": {
+          "author": {
+            "name": "Daniel Stenberg",
+            "email": "daniel@haxx.se",
+            "date": "2019-02-20T07:44:21Z"
+          },
+          "committer": {
+            "name": "Daniel Stenberg",
+            "email": "daniel@haxx.se",
+            "date": "2019-02-20T07:44:21Z"
+          },
+          "message": "TODO: Allow SAN names in HTTP/2 server push\n\nSuggested-by: Nicolas Grekas",
+          "tree": {
+            "sha": "6dea56a0b4b67785021aca8f59e4af4848682255",
+            "url": "https://api.github.com/repos/discord/curl/git/trees/6dea56a0b4b67785021aca8f59e4af4848682255"
+          },
+          "url": "https://api.github.com/repos/discord/curl/git/commits/8bc5ceb20480295230f05b3c351a0b08454ee6ee",
+          "comment_count": 0,
+          "verification": {
+            "verified": true,
+            "reason": "valid",
+            "signature": "-----BEGIN PGP SIGNATURE-----\n\niQFDBAABCgAtFiEEJ+3q8i86vOtQ25oSXMkI/bceEsIFAlxtBXAPHGRhbmllbEBo\nYXh4LnNlAAoJEFzJCP23HhLCw24H/23u+MmxHKhOxgMcRbenCbWjnrGP2FHVDnNA\nplgago8KL+x+mDQ9oKwG9atSYqF4URO7XI8Dg35Q8mK32d7503LSK84ltLI3iL8L\npqox/uFkeRixqmp3a4B+rWceDm+JbH0HpYSbR1EItEba19TT+H/n7jOw8+PWnRxw\nNB739aHAQUjyed3RRQXlR2M2ybBtkvCepITUIOw+OpWl5BXM49CjM0XbYGNpiglw\nysMiDf+HO7CSka1KHEMul/Ou/9isLHGix5pRmtA63ikao5BZGL2S0IBKryW1/IUo\nMpilCbz5zH5YViOJlu2OrfGcjPICYHuc9CL6zfb4GIya4DkSJ70=\n=FpdT\n-----END PGP SIGNATURE-----",
+            "payload": "tree 6dea56a0b4b67785021aca8f59e4af4848682255\nparent 86cd0cfb909e941bec5ee5ba3106f859b6a82d7e\nauthor Daniel Stenberg <daniel@haxx.se> 1550648661 +0100\ncommitter Daniel Stenberg <daniel@haxx.se> 1550648661 +0100\n\nTODO: Allow SAN names in HTTP/2 server push\n\nSuggested-by: Nicolas Grekas\n"
+          }
+        },
+        "url": "https://api.github.com/repos/discord/curl/commits/8bc5ceb20480295230f05b3c351a0b08454ee6ee",
+        "author": {
+          "login": "bagder",
+          "id": 177011,
+          "node_id": "MDQ6VXNlcjE3NzAxMQ==",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/bagder",
+          "type": "User",
+          "site_admin": false
+        },
+        "committer": {
+          "login": "bagder",
+          "id": 177011,
+          "node_id": "MDQ6VXNlcjE3NzAxMQ==",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/bagder",
+          "type": "User",
+          "site_admin": false
+        },
+        "parents": [
+          {
+            "sha": "86cd0cfb909e941bec5ee5ba3106f859b6a82d7e",
+            "url": "https://api.github.com/repos/discord/curl/commits/86cd0cfb909e941bec5ee5ba3106f859b6a82d7e"
+          }
+        ]
+      },
+      {
+        "sha": "86cd0cfb909e941bec5ee5ba3106f859b6a82d7e",
+        "node_id": "MDY6Q29tbWl0ODE0NzkyMDA6ODZjZDBjZmI5MDllOTQxYmVjNWVlNWJhMzEwNmY4NTliNmE4MmQ3ZQ==",
+        "commit": {
+          "author": {
+            "name": "Daniel Stenberg",
+            "email": "daniel@haxx.se",
+            "date": "2019-02-20T07:29:48Z"
+          },
+          "committer": {
+            "name": "Daniel Stenberg",
+            "email": "daniel@haxx.se",
+            "date": "2019-02-20T07:29:48Z"
+          },
+          "message": "RELEASE-NOTES: synced",
+          "tree": {
+            "sha": "4946cce6251de231d129a4ae31ebd1ab263e3a03",
+            "url": "https://api.github.com/repos/discord/curl/git/trees/4946cce6251de231d129a4ae31ebd1ab263e3a03"
+          },
+          "url": "https://api.github.com/repos/discord/curl/git/commits/86cd0cfb909e941bec5ee5ba3106f859b6a82d7e",
+          "comment_count": 0,
+          "verification": {
+            "verified": true,
+            "reason": "valid",
+            "signature": "-----BEGIN PGP SIGNATURE-----\n\niQFDBAABCgAtFiEEJ+3q8i86vOtQ25oSXMkI/bceEsIFAlxtAfAPHGRhbmllbEBo\nYXh4LnNlAAoJEFzJCP23HhLCBkgH/jO33gAzCuujyiMmnExjMN04Q8rVyqXbuuZ0\nI8S484aycYC+IFKMlb12MKmtrWOhdunmh5R3ruBrcFdwJZ+umLVJO7uJbk3CLvaJ\n2zGdjPMp5lBfS5USPJMwLIofACKyYkaI3RURHv/j8tKErAoljIv4lqj7E+T+6n6y\nuWalnfLyOdR8RtvcluWDmLcM5QaInSqhXxaxUWRSXDyeNfb8TcNAy1nRKnDNvr8v\nJ6vIzY63Y4eZ30LlaRMS4zQvISgKiBXbVVtBDiKfgRx2zfYIzmYaSaIA/6LSU9vq\n0WrBOGf0807ikCBgUKSEuvPMX3gdD/1B1grI6nA6rleycRyO3RU=\n=dA19\n-----END PGP SIGNATURE-----",
+            "payload": "tree 4946cce6251de231d129a4ae31ebd1ab263e3a03\nparent c543da9a5072801427a21b0d843d6a08bf48d119\nauthor Daniel Stenberg <daniel@haxx.se> 1550647788 +0100\ncommitter Daniel Stenberg <daniel@haxx.se> 1550647788 +0100\n\nRELEASE-NOTES: synced\n"
+          }
+        },
+        "url": "https://api.github.com/repos/discord/curl/commits/86cd0cfb909e941bec5ee5ba3106f859b6a82d7e",
+        "author": {
+          "login": "bagder",
+          "id": 177011,
+          "node_id": "MDQ6VXNlcjE3NzAxMQ==",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/bagder",
+          "type": "User",
+          "site_admin": false
+        },
+        "committer": {
+          "login": "bagder",
+          "id": 177011,
+          "node_id": "MDQ6VXNlcjE3NzAxMQ==",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/bagder",
+          "type": "User",
+          "site_admin": false
+        },
+        "parents": [
+          {
+            "sha": "c543da9a5072801427a21b0d843d6a08bf48d119",
+            "url": "https://api.github.com/repos/discord/curl/commits/c543da9a5072801427a21b0d843d6a08bf48d119"
+          }
+        ]
+      },
+      {
+        "sha": "c543da9a5072801427a21b0d843d6a08bf48d119",
+        "node_id": "MDY6Q29tbWl0ODE0NzkyMDA6YzU0M2RhOWE1MDcyODAxNDI3YTIxYjBkODQzZDZhMDhiZjQ4ZDExOQ==",
+        "commit": {
+          "author": {
+            "name": "Daniel Stenberg",
+            "email": "daniel@haxx.se",
+            "date": "2019-02-19T09:02:27Z"
+          },
+          "committer": {
+            "name": "Daniel Stenberg",
+            "email": "daniel@haxx.se",
+            "date": "2019-02-20T07:20:27Z"
+          },
+          "message": "curl: remove MANUAL from -M output\n\n... and remove it from the dist tarball. It has served its time, it\nbarely gets updated anymore and \"everything curl\" is now convering all\nthis document once tried to include, and does it more and better.\n\nIn the compressed scenario, this removes ~15K data from the binary,\nwhich is 25% of the -M output.\n\nIt remains in the git repo for now for as long as the web site builds a\npage using that as source. It renders poorly on the site (especially for\nmobile users) so its not even good there.\n\nCloses #3587",
+          "tree": {
+            "sha": "0ed0c69334e9aa5d271120b8ad0bd77af84db619",
+            "url": "https://api.github.com/repos/discord/curl/git/trees/0ed0c69334e9aa5d271120b8ad0bd77af84db619"
+          },
+          "url": "https://api.github.com/repos/discord/curl/git/commits/c543da9a5072801427a21b0d843d6a08bf48d119",
+          "comment_count": 0,
+          "verification": {
+            "verified": true,
+            "reason": "valid",
+            "signature": "-----BEGIN PGP SIGNATURE-----\n\niQFDBAABCgAtFiEEJ+3q8i86vOtQ25oSXMkI/bceEsIFAlxs/8IPHGRhbmllbEBo\nYXh4LnNlAAoJEFzJCP23HhLCk58H/Rd9nj4I5/2nbAl4ER8dr2TytKHPD3yeZTIb\nhVOSPKpMq6WkhwTtgDGKigVXFdUylAvLVHT3yRtVspd+KQxXqhcr6V1Or9OJTiOp\n+uFFGBJ2e3lexWJVIFeAbTqOK5TpZZs5x+RmZ9+lJwz2cAeXIGg72rGi8lJfAF6o\ngd9/Y5EUrK9Z4mLwQrvdc2ASRMj6WTjV3DA70dXi1Qa7rQIGttdvpw7j/wUn4i8g\nod8KYRLNCxupkVmoussD7dkna++mpW0eyzkbb0v9Y8ms8C5MiWTi06JJkGrzMno6\nEgI/lSMqnM7Spwjlq/yy2ua4Hp4xU2PbOHxDCEIEmKDqm2MSntw=\n=TZAq\n-----END PGP SIGNATURE-----",
+            "payload": "tree 0ed0c69334e9aa5d271120b8ad0bd77af84db619\nparent aa5a28bd697d652f78ba471022092e148d0b6e4f\nauthor Daniel Stenberg <daniel@haxx.se> 1550566947 +0100\ncommitter Daniel Stenberg <daniel@haxx.se> 1550647227 +0100\n\ncurl: remove MANUAL from -M output\n\n... and remove it from the dist tarball. It has served its time, it\nbarely gets updated anymore and \"everything curl\" is now convering all\nthis document once tried to include, and does it more and better.\n\nIn the compressed scenario, this removes ~15K data from the binary,\nwhich is 25% of the -M output.\n\nIt remains in the git repo for now for as long as the web site builds a\npage using that as source. It renders poorly on the site (especially for\nmobile users) so its not even good there.\n\nCloses #3587\n"
+          }
+        },
+        "url": "https://api.github.com/repos/discord/curl/commits/c543da9a5072801427a21b0d843d6a08bf48d119",
+        "author": {
+          "login": "bagder",
+          "id": 177011,
+          "node_id": "MDQ6VXNlcjE3NzAxMQ==",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/bagder",
+          "type": "User",
+          "site_admin": false
+        },
+        "committer": {
+          "login": "bagder",
+          "id": 177011,
+          "node_id": "MDQ6VXNlcjE3NzAxMQ==",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/bagder",
+          "type": "User",
+          "site_admin": false
+        },
+        "parents": [
+          {
+            "sha": "aa5a28bd697d652f78ba471022092e148d0b6e4f",
+            "url": "https://api.github.com/repos/discord/curl/commits/aa5a28bd697d652f78ba471022092e148d0b6e4f"
+          }
+        ]
+      },
+      {
+        "sha": "aa5a28bd697d652f78ba471022092e148d0b6e4f",
+        "node_id": "MDY6Q29tbWl0ODE0NzkyMDA6YWE1YTI4YmQ2OTdkNjUyZjc4YmE0NzEwMjIwOTJlMTQ4ZDBiNmU0Zg==",
+        "commit": {
+          "author": {
+            "name": "Daniel Stenberg",
+            "email": "daniel@haxx.se",
+            "date": "2019-02-18T08:10:01Z"
+          },
+          "committer": {
+            "name": "Daniel Stenberg",
+            "email": "daniel@haxx.se",
+            "date": "2019-02-20T07:18:02Z"
+          },
+          "message": "http2: verify :athority in push promise requests\n\nRFC 7540 says we should verify that the push is for an \"authoritative\"\nserver. We make sure of this by only allowing push with an :athority\nheader that matches the host that was asked for in the URL.\n\nFixes #3577\nReported-by: Nicolas Grekas\nBug: https://curl.haxx.se/mail/lib-2019-02/0057.html\nCloses #3581",
+          "tree": {
+            "sha": "ca8573ac9127aa9e193777cd6bb89bf34bd92e4c",
+            "url": "https://api.github.com/repos/discord/curl/git/trees/ca8573ac9127aa9e193777cd6bb89bf34bd92e4c"
+          },
+          "url": "https://api.github.com/repos/discord/curl/git/commits/aa5a28bd697d652f78ba471022092e148d0b6e4f",
+          "comment_count": 0,
+          "verification": {
+            "verified": true,
+            "reason": "valid",
+            "signature": "-----BEGIN PGP SIGNATURE-----\n\niQFDBAABCgAtFiEEJ+3q8i86vOtQ25oSXMkI/bceEsIFAlxs/0IPHGRhbmllbEBo\nYXh4LnNlAAoJEFzJCP23HhLC/vUH/1A+PHW2r+4dP5LKR63HguZnn3Bq2dYfYdtj\nXWsXcikQ0WV1nL8p5wQozrx9G/cIiOVSsI1C+oAb8m2tbA2Gg4rNtFsjy1AaUv+e\npeKBD+9ZK9JjewfRGi1ghAUD/IOv6PrXOC5lH++7nkQMTJQjxwT/4R/DDctAVDxZ\n2owi63YpbWbGFB2jJIDJ+P2eI+yuabYVOEyYjOo+MNRyHvtj+S/QoMAi0QuEuBRM\nzuxl2aNPXqyZTRcTZrGNfQPexmmz8BuJGN3rRQBukPxpHXaQi/Thl2oAaZlKiJGU\nBChMWor5VU8ltwISLoqb0QSJ7pDAW6h0pbe3+VCQgPQRdBQiPbU=\n=goBV\n-----END PGP SIGNATURE-----",
+            "payload": "tree ca8573ac9127aa9e193777cd6bb89bf34bd92e4c\nparent afc00e047c773faeaa60a5f86a246cbbeeba5819\nauthor Daniel Stenberg <daniel@haxx.se> 1550477401 +0100\ncommitter Daniel Stenberg <daniel@haxx.se> 1550647082 +0100\n\nhttp2: verify :athority in push promise requests\n\nRFC 7540 says we should verify that the push is for an \"authoritative\"\nserver. We make sure of this by only allowing push with an :athority\nheader that matches the host that was asked for in the URL.\n\nFixes #3577\nReported-by: Nicolas Grekas\nBug: https://curl.haxx.se/mail/lib-2019-02/0057.html\nCloses #3581\n"
+          }
+        },
+        "url": "https://api.github.com/repos/discord/curl/commits/aa5a28bd697d652f78ba471022092e148d0b6e4f",
+        "author": {
+          "login": "bagder",
+          "id": 177011,
+          "node_id": "MDQ6VXNlcjE3NzAxMQ==",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/bagder",
+          "type": "User",
+          "site_admin": false
+        },
+        "committer": {
+          "login": "bagder",
+          "id": 177011,
+          "node_id": "MDQ6VXNlcjE3NzAxMQ==",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/bagder",
+          "type": "User",
+          "site_admin": false
+        },
+        "parents": [
+          {
+            "sha": "afc00e047c773faeaa60a5f86a246cbbeeba5819",
+            "url": "https://api.github.com/repos/discord/curl/commits/afc00e047c773faeaa60a5f86a246cbbeeba5819"
+          }
+        ]
+      }
+    ],
     "releases": [],
     "issues": [],
     "pullRequests": []

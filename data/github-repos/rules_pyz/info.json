@@ -59,7 +59,238 @@
   },
   "branches": [],
   "last5": {
-    "commits": [],
+    "commits": [
+      {
+        "sha": "c2cc31b2fa749cb81f7e9c57ec6385b25a32cf80",
+        "node_id": "MDY6Q29tbWl0MTY5MzM0ODk1OmMyY2MzMWIyZmE3NDljYjgxZjdlOWM1N2VjNjM4NWIyNWEzMmNmODA=",
+        "commit": {
+          "author": {
+            "name": "Evan Jones",
+            "email": "evan.jones@bluecore.com",
+            "date": "2019-01-30T21:58:43Z"
+          },
+          "committer": {
+            "name": "GitHub",
+            "email": "noreply@github.com",
+            "date": "2019-01-30T21:58:43Z"
+          },
+          "message": "README.md: Unmaintained. (#57)",
+          "tree": {
+            "sha": "2508fe83ae9a218b6e1176f6398175575cda7c1e",
+            "url": "https://api.github.com/repos/discord/rules_pyz/git/trees/2508fe83ae9a218b6e1176f6398175575cda7c1e"
+          },
+          "url": "https://api.github.com/repos/discord/rules_pyz/git/commits/c2cc31b2fa749cb81f7e9c57ec6385b25a32cf80",
+          "comment_count": 0,
+          "verification": {
+            "verified": true,
+            "reason": "valid",
+            "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsBcBAABCAAQBQJcUh4TCRBK7hj4Ov3rIwAAdHIIAGMNDyA9e6O65N+Eoslw0NPV\nhU2F9s2UFlEdVGsM0+Z0eToPpKcifNtp2TVNIbMyrKK63X4O8brcQQI98etNCJjG\nptlMqU+YJnjq3kWc4QL5F/kfGxq2nYjDAkcGXNDf4JKQNsQhk5GMm1+jkm9KhfsS\nnpijy+zfIrdikrkDgVf05ROH59N6XViKt+OjiNEX6xaV9Z/pqdcUtWmtptyP+4lo\nIjm66YsXUsaLfDGUcwDfKxEvB6zEnGsdzyA1xckKBjtIBpu01vH+HPyWNxA9WCxt\nO6GGCr6q4QgxNmLxuF2MpReoNQWsysG7f0ZTyG6x9zhh8Wfq5HMA1NsAo6Yj6QQ=\n=9U9S\n-----END PGP SIGNATURE-----\n",
+            "payload": "tree 2508fe83ae9a218b6e1176f6398175575cda7c1e\nparent 5de81fb01389a66f824057dfce115c91f04ccafe\nauthor Evan Jones <evan.jones@bluecore.com> 1548885523 -0500\ncommitter GitHub <noreply@github.com> 1548885523 -0500\n\nREADME.md: Unmaintained. (#57)\n\n"
+          }
+        },
+        "url": "https://api.github.com/repos/discord/rules_pyz/commits/c2cc31b2fa749cb81f7e9c57ec6385b25a32cf80",
+        "author": null,
+        "committer": {
+          "login": "web-flow",
+          "id": 19864447,
+          "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/web-flow",
+          "type": "User",
+          "site_admin": false
+        },
+        "parents": [
+          {
+            "sha": "5de81fb01389a66f824057dfce115c91f04ccafe",
+            "url": "https://api.github.com/repos/discord/rules_pyz/commits/5de81fb01389a66f824057dfce115c91f04ccafe"
+          }
+        ]
+      },
+      {
+        "sha": "5de81fb01389a66f824057dfce115c91f04ccafe",
+        "node_id": "MDY6Q29tbWl0MTY5MzM0ODk1OjVkZTgxZmIwMTM4OWE2NmY4MjQwNTdkZmNlMTE1YzkxZjA0Y2NhZmU=",
+        "commit": {
+          "author": {
+            "name": "Evan Jones",
+            "email": "evan.jones@bluecore.com",
+            "date": "2019-01-30T21:56:43Z"
+          },
+          "committer": {
+            "name": "GitHub",
+            "email": "noreply@github.com",
+            "date": "2019-01-30T21:56:43Z"
+          },
+          "message": ".circleci/config.yml: Update to latest golang to fix apt-get install (#58)\n\nThis was failing with:\r\n\r\nsudo apt-get install --yes python3-minimal\r\n...\r\nE: Failed to fetch http://deb.debian.org/debian/pool/main/p/python3.5/libpython3.5-minimal_3.5.3-1_amd64.deb  404  Not Found\r\nE: Failed to fetch http://deb.debian.org/debian/pool/main/p/python3.5/python3.5-minimal_3.5.3-1_amd64.deb  404  Not Found\r\nE: Failed to fetch http://deb.debian.org/debian/pool/main/p/python3.5/libpython3.5-stdlib_3.5.3-1_amd64.deb  404  Not Found\r\nE: Failed to fetch http://deb.debian.org/debian/pool/main/p/python3.5/python3.5_3.5.3-1_amd64.deb  404  Not Found\r\nE: Unable to fetch some archives, maybe run apt-get update or try with --fix-missing?\r\nExited with code 100",
+          "tree": {
+            "sha": "aac1c2021ad0c57f3c402fd70b5fd0febd6f4fa8",
+            "url": "https://api.github.com/repos/discord/rules_pyz/git/trees/aac1c2021ad0c57f3c402fd70b5fd0febd6f4fa8"
+          },
+          "url": "https://api.github.com/repos/discord/rules_pyz/git/commits/5de81fb01389a66f824057dfce115c91f04ccafe",
+          "comment_count": 0,
+          "verification": {
+            "verified": true,
+            "reason": "valid",
+            "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsBcBAABCAAQBQJcUh2bCRBK7hj4Ov3rIwAAdHIIAF2JYRHNhrXaWErCzUjSnHca\nhsD6wJE0kXkViC/6NAbwbUR6kfmeqJETEUkd+C/yshHxjMLI17xtgk132o3OTNnI\nMv7RQeQehFIgqQJqPAqxfydP0bZ3pFBnW1S1DvMYIlV37vH/ICxW/7LnhnWuBWkn\nbQDsYC1xo0ADYPdHCEFdEVMuIOo+fw2wyByas6pFZyR6/vdZQNmI5giRG3nrNJ2u\njM3h+H8J9/v+xD2ETi79SZdcQ+K/noR1B4ChtQqFZsr7+IZf7XB4vOnI5QY26NaS\ngWunVaDCdnKo/MmWiwQKC0aCt7c7yaeQ+Hq8h3+TLasXHFj1j0vWKUusSpN60s4=\n=qm59\n-----END PGP SIGNATURE-----\n",
+            "payload": "tree aac1c2021ad0c57f3c402fd70b5fd0febd6f4fa8\nparent 649c99c7dd8059521bcfc2259ed0acdad100a4a6\nauthor Evan Jones <evan.jones@bluecore.com> 1548885403 -0500\ncommitter GitHub <noreply@github.com> 1548885403 -0500\n\n.circleci/config.yml: Update to latest golang to fix apt-get install (#58)\n\nThis was failing with:\r\n\r\nsudo apt-get install --yes python3-minimal\r\n...\r\nE: Failed to fetch http://deb.debian.org/debian/pool/main/p/python3.5/libpython3.5-minimal_3.5.3-1_amd64.deb  404  Not Found\r\nE: Failed to fetch http://deb.debian.org/debian/pool/main/p/python3.5/python3.5-minimal_3.5.3-1_amd64.deb  404  Not Found\r\nE: Failed to fetch http://deb.debian.org/debian/pool/main/p/python3.5/libpython3.5-stdlib_3.5.3-1_amd64.deb  404  Not Found\r\nE: Failed to fetch http://deb.debian.org/debian/pool/main/p/python3.5/python3.5_3.5.3-1_amd64.deb  404  Not Found\r\nE: Unable to fetch some archives, maybe run apt-get update or try with --fix-missing?\r\nExited with code 100"
+          }
+        },
+        "url": "https://api.github.com/repos/discord/rules_pyz/commits/5de81fb01389a66f824057dfce115c91f04ccafe",
+        "author": null,
+        "committer": {
+          "login": "web-flow",
+          "id": 19864447,
+          "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/web-flow",
+          "type": "User",
+          "site_admin": false
+        },
+        "parents": [
+          {
+            "sha": "649c99c7dd8059521bcfc2259ed0acdad100a4a6",
+            "url": "https://api.github.com/repos/discord/rules_pyz/commits/649c99c7dd8059521bcfc2259ed0acdad100a4a6"
+          }
+        ]
+      },
+      {
+        "sha": "649c99c7dd8059521bcfc2259ed0acdad100a4a6",
+        "node_id": "MDY6Q29tbWl0MTY5MzM0ODk1OjY0OWM5OWM3ZGQ4MDU5NTIxYmNmYzIyNTllZDBhY2RhZDEwMGE0YTY=",
+        "commit": {
+          "author": {
+            "name": "Evan Jones",
+            "email": "evan.jones@bluecore.com",
+            "date": "2018-09-18T19:34:33Z"
+          },
+          "committer": {
+            "name": "GitHub",
+            "email": "noreply@github.com",
+            "date": "2018-09-18T19:34:33Z"
+          },
+          "message": "Update third-party dependencies; Keep pytest 3.6 (#47)\n\nUpdate everything we depend on. The exception is pytest: Starting with\r\n3.7, it depends on pathlib2, which depends on scandir, which is native\r\ncode. Unfortunately, they don't ship binary wheels on pypi, which makes\r\nit hard to depend on. For now, let's just keep using the older pytest.\r\n\r\nPackages used directly by these rules:\r\n\r\natomicwrites 1.1.5 -> 1.2.1\r\nattrs 18.1.0 -> 18.2.0\r\nmore-itertools 4.2.0 -> 4.3.0\r\npip 10.0.1 -> 18.0\r\npluggy 0.6.0 -> 0.7.1\r\npy 1.5.3 -> 1.6.0\r\npytest 3.6.0 -> 3.6.4\r\nsetuptools 39.2.0 -> 40.4.1\r\n\r\nPackages used for the tests:\r\n\r\ncertifi 2018.4.16 -> 2018.8.24\r\ncryptography 2.2.2 -> 2.3.1\r\ngoogle_api_core 1.2.0 -> 1.4.0\r\ngoogle_auth 1.5.0 -> 1.5.1\r\ngoogle_cloud_datastore 1.6.0 -> 1.7.0\r\ngrpcio 1.12.0 -> 1.15.0\r\nidna 2.6 -> 2.7\r\nnumpy 1.14.3 -> 1.15.1\r\nprotobuf 3.5.2.post1 -> 3.6.1\r\npyasn1 0.4.3 -> 0.4.4\r\npyasn1_modules 0.2.1 -> 0.2.2\r\npytz 2018.4 -> 2018.5\r\nrequests 2.18.4 -> 2.19.1\r\nrsa 3.4.2 -> 4.0\r\nurllib3 1.22 -> 1.23",
+          "tree": {
+            "sha": "0a2d4b6e8aef6a2959fcdfa8e68e0428a876ad8a",
+            "url": "https://api.github.com/repos/discord/rules_pyz/git/trees/0a2d4b6e8aef6a2959fcdfa8e68e0428a876ad8a"
+          },
+          "url": "https://api.github.com/repos/discord/rules_pyz/git/commits/649c99c7dd8059521bcfc2259ed0acdad100a4a6",
+          "comment_count": 0,
+          "verification": {
+            "verified": true,
+            "reason": "valid",
+            "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsBcBAABCAAQBQJboVNJCRBK7hj4Ov3rIwAAdHIIAEuJJ14pPrNFzARxYixc+4+8\nZ840Dn+S/XbIxOgpxfShjkGq+wBlXNJSA9DGp4YnWQYumU3vDi1AgduddmYHjBxl\n3Yw1k0JOmZf8nb73ZryxyNmLRGtSYGo6dipHa2yxCGBYY+tWeweQaxbohD07Jqgw\nj1cREXA0MHHc7d968iKHdqBoZOwOCl/k0Z/MXoHP5wshJ7b/0FBdi3sZWEEreFYr\nKB2KInzJcb9K8wX09sfOOtfxVqiVVQe0Tw+sxgh81ApA2F/ASya6u8inud653MF5\n4HUILeYeAlVcoj2N7awb5a9dy4kcEquFpvIMg0OiQ2QkAPO0J8caSrOIT3Q6ohk=\n=zrms\n-----END PGP SIGNATURE-----\n",
+            "payload": "tree 0a2d4b6e8aef6a2959fcdfa8e68e0428a876ad8a\nparent 939460e0c922c4a50125f975550bfc2e591b55a7\nauthor Evan Jones <evan.jones@bluecore.com> 1537299273 -0400\ncommitter GitHub <noreply@github.com> 1537299273 -0400\n\nUpdate third-party dependencies; Keep pytest 3.6 (#47)\n\nUpdate everything we depend on. The exception is pytest: Starting with\r\n3.7, it depends on pathlib2, which depends on scandir, which is native\r\ncode. Unfortunately, they don't ship binary wheels on pypi, which makes\r\nit hard to depend on. For now, let's just keep using the older pytest.\r\n\r\nPackages used directly by these rules:\r\n\r\natomicwrites 1.1.5 -> 1.2.1\r\nattrs 18.1.0 -> 18.2.0\r\nmore-itertools 4.2.0 -> 4.3.0\r\npip 10.0.1 -> 18.0\r\npluggy 0.6.0 -> 0.7.1\r\npy 1.5.3 -> 1.6.0\r\npytest 3.6.0 -> 3.6.4\r\nsetuptools 39.2.0 -> 40.4.1\r\n\r\nPackages used for the tests:\r\n\r\ncertifi 2018.4.16 -> 2018.8.24\r\ncryptography 2.2.2 -> 2.3.1\r\ngoogle_api_core 1.2.0 -> 1.4.0\r\ngoogle_auth 1.5.0 -> 1.5.1\r\ngoogle_cloud_datastore 1.6.0 -> 1.7.0\r\ngrpcio 1.12.0 -> 1.15.0\r\nidna 2.6 -> 2.7\r\nnumpy 1.14.3 -> 1.15.1\r\nprotobuf 3.5.2.post1 -> 3.6.1\r\npyasn1 0.4.3 -> 0.4.4\r\npyasn1_modules 0.2.1 -> 0.2.2\r\npytz 2018.4 -> 2018.5\r\nrequests 2.18.4 -> 2.19.1\r\nrsa 3.4.2 -> 4.0\r\nurllib3 1.22 -> 1.23"
+          }
+        },
+        "url": "https://api.github.com/repos/discord/rules_pyz/commits/649c99c7dd8059521bcfc2259ed0acdad100a4a6",
+        "author": null,
+        "committer": {
+          "login": "web-flow",
+          "id": 19864447,
+          "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/web-flow",
+          "type": "User",
+          "site_admin": false
+        },
+        "parents": [
+          {
+            "sha": "939460e0c922c4a50125f975550bfc2e591b55a7",
+            "url": "https://api.github.com/repos/discord/rules_pyz/commits/939460e0c922c4a50125f975550bfc2e591b55a7"
+          }
+        ]
+      },
+      {
+        "sha": "939460e0c922c4a50125f975550bfc2e591b55a7",
+        "node_id": "MDY6Q29tbWl0MTY5MzM0ODk1OjkzOTQ2MGUwYzkyMmM0YTUwMTI1Zjk3NTU1MGJmYzJlNTkxYjU1YTc=",
+        "commit": {
+          "author": {
+            "name": "Evan Jones",
+            "email": "evan.jones@bluecore.com",
+            "date": "2018-09-17T22:50:13Z"
+          },
+          "committer": {
+            "name": "GitHub",
+            "email": "noreply@github.com",
+            "date": "2018-09-17T22:50:13Z"
+          },
+          "message": "rules_python_zip/main_shell_template.sh: Quote $@ for args with spaces (#46)\n\nPassing -k 'str1 or str2' to pytest did not work because of this missing\r\nquote.",
+          "tree": {
+            "sha": "bd08625f9fa4662280bdac7cf7e4e3cca83e34c7",
+            "url": "https://api.github.com/repos/discord/rules_pyz/git/trees/bd08625f9fa4662280bdac7cf7e4e3cca83e34c7"
+          },
+          "url": "https://api.github.com/repos/discord/rules_pyz/git/commits/939460e0c922c4a50125f975550bfc2e591b55a7",
+          "comment_count": 0,
+          "verification": {
+            "verified": true,
+            "reason": "valid",
+            "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsBcBAABCAAQBQJboC+lCRBK7hj4Ov3rIwAAdHIIAIFMbidE8OjkbG9COvOwJJnq\nyxJfFkulWfrNyQ9irk4uWs4/urASZxJZjp//eu36zHPejJsj9o897G/LRTUGFeNJ\nQavx5kKSTZY9B5zgRmi14KyZ7ohkw+5is/7bFunOKT2+4f8dJhQZVgv34SEIUNTZ\nvF+Rkb5KrqPZYa6ojxF/Ox0pYN/HQvYe2Frl9rHHUsf10ayw2YzDkseXfwmoLsDk\nCD9KizutFqXTbHJFlwwfjL6VsIAsg1/0ruJfNAGkMKxwGqcoZXYTx1MKXQ0ejZyk\noFPsqGpaHAvzkDSoGK4XTgs7cLVuKedTie/nZaE39qPf0aWpYi5imODGgSr0mBE=\n=KQIF\n-----END PGP SIGNATURE-----\n",
+            "payload": "tree bd08625f9fa4662280bdac7cf7e4e3cca83e34c7\nparent d434fb7a23d8e24279fb6f5ff766860291440cd8\nauthor Evan Jones <evan.jones@bluecore.com> 1537224613 -0400\ncommitter GitHub <noreply@github.com> 1537224613 -0400\n\nrules_python_zip/main_shell_template.sh: Quote $@ for args with spaces (#46)\n\nPassing -k 'str1 or str2' to pytest did not work because of this missing\r\nquote."
+          }
+        },
+        "url": "https://api.github.com/repos/discord/rules_pyz/commits/939460e0c922c4a50125f975550bfc2e591b55a7",
+        "author": null,
+        "committer": {
+          "login": "web-flow",
+          "id": 19864447,
+          "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/web-flow",
+          "type": "User",
+          "site_admin": false
+        },
+        "parents": [
+          {
+            "sha": "d434fb7a23d8e24279fb6f5ff766860291440cd8",
+            "url": "https://api.github.com/repos/discord/rules_pyz/commits/d434fb7a23d8e24279fb6f5ff766860291440cd8"
+          }
+        ]
+      },
+      {
+        "sha": "d434fb7a23d8e24279fb6f5ff766860291440cd8",
+        "node_id": "MDY6Q29tbWl0MTY5MzM0ODk1OmQ0MzRmYjdhMjNkOGUyNDI3OWZiNmY1ZmY3NjY4NjAyOTE0NDBjZDg=",
+        "commit": {
+          "author": {
+            "name": "Evan Jones",
+            "email": "evan.jones@bluecore.com",
+            "date": "2018-08-10T14:55:32Z"
+          },
+          "committer": {
+            "name": "GitHub",
+            "email": "noreply@github.com",
+            "date": "2018-08-10T14:55:32Z"
+          },
+          "message": "pyz_image: Use latest distroless image; remove local bug fixes (#38)\n\nThe bug fixes for the distroless Python images were committed upstream.\r\nSwitch to using those images, instead of patching them ourself.",
+          "tree": {
+            "sha": "6c49a2ec6f7fad67d9fa438b175919648032eb3d",
+            "url": "https://api.github.com/repos/discord/rules_pyz/git/trees/6c49a2ec6f7fad67d9fa438b175919648032eb3d"
+          },
+          "url": "https://api.github.com/repos/discord/rules_pyz/git/commits/d434fb7a23d8e24279fb6f5ff766860291440cd8",
+          "comment_count": 0,
+          "verification": {
+            "verified": true,
+            "reason": "valid",
+            "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsBcBAABCAAQBQJbbadkCRBK7hj4Ov3rIwAAdHIIAA1Z2uoMWrWdiz9TJVkdll4v\nQ9v0sitELcCa9IDFaxqt8V0M356E4HlpNZmVWkBUo2Pyp61i006h7POV/pmBr0IK\nNJU6shKzpxEZwfI25xdDfbNnYX1dXPFdj8rNFkILN+6genHC2dfNjWuRf2Re1nQ1\nhBA94vKt8e6HWztjYgBS9Ca+TyBMdUPzIhYcbJlPoQlpHolfoyj3qr7fOrE1i4PV\no56H7udSTHfXaHa3MxKFBlK60aGdo82KBkKJHVcrd55JJXawGv8WlcS7JPDoTnke\nT0jGS0SbT4gy+rsbLADthLWTncP9h9jDG91r/yBLunnGyMd/AKEWMTBLZOlp7d8=\n=sTWV\n-----END PGP SIGNATURE-----\n",
+            "payload": "tree 6c49a2ec6f7fad67d9fa438b175919648032eb3d\nparent df9a4bd2b15b744259cf6aae9e69ac84b6b09ab3\nauthor Evan Jones <evan.jones@bluecore.com> 1533912932 -0400\ncommitter GitHub <noreply@github.com> 1533912932 -0400\n\npyz_image: Use latest distroless image; remove local bug fixes (#38)\n\nThe bug fixes for the distroless Python images were committed upstream.\r\nSwitch to using those images, instead of patching them ourself."
+          }
+        },
+        "url": "https://api.github.com/repos/discord/rules_pyz/commits/d434fb7a23d8e24279fb6f5ff766860291440cd8",
+        "author": null,
+        "committer": {
+          "login": "web-flow",
+          "id": 19864447,
+          "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/web-flow",
+          "type": "User",
+          "site_admin": false
+        },
+        "parents": [
+          {
+            "sha": "df9a4bd2b15b744259cf6aae9e69ac84b6b09ab3",
+            "url": "https://api.github.com/repos/discord/rules_pyz/commits/df9a4bd2b15b744259cf6aae9e69ac84b6b09ab3"
+          }
+        ]
+      }
+    ],
     "releases": [],
     "issues": [],
     "pullRequests": []

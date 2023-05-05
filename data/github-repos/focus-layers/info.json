@@ -339,7 +339,123 @@
         ]
       }
     ],
-    "releases": [],
+    "releases": [
+      {
+        "url": "https://api.github.com/repos/discord/focus-layers/releases/39390610",
+        "id": 39390610,
+        "author": {
+          "login": "faultyserver",
+          "id": 783733,
+          "node_id": "MDQ6VXNlcjc4MzczMw==",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/faultyserver",
+          "type": "User",
+          "site_admin": false
+        },
+        "node_id": "MDc6UmVsZWFzZTM5MzkwNjEw",
+        "tag_name": "v0.6.1",
+        "target_commitish": "master",
+        "name": "v0.6.1 - More autoFocus fixing and no more rAF",
+        "draft": false,
+        "prerelease": false,
+        "created_at": "2021-03-07T06:16:33Z",
+        "published_at": "2021-03-07T06:19:52Z",
+        "assets": [],
+        "body": "This version (hopefully) actually fixes the autoFocus problem by breaking out of React's `useEffect` callback ordering and updating layer enabled/disabled states immediately (#16)."
+      },
+      {
+        "url": "https://api.github.com/repos/discord/focus-layers/releases/39297920",
+        "id": 39297920,
+        "author": {
+          "login": "faultyserver",
+          "id": 783733,
+          "node_id": "MDQ6VXNlcjc4MzczMw==",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/faultyserver",
+          "type": "User",
+          "site_admin": false
+        },
+        "node_id": "MDc6UmVsZWFzZTM5Mjk3OTIw",
+        "tag_name": "v0.6.0",
+        "target_commitish": "master",
+        "name": "v0.6.0 - Returns, autofocus, and CJS support",
+        "draft": false,
+        "prerelease": false,
+        "created_at": "2021-03-04T19:26:25Z",
+        "published_at": "2021-03-04T19:33:33Z",
+        "assets": [],
+        "body": "- Re-added the ability to specify a different target for returning focus when a layer is popped (#7, #13)\r\n- Fixed issues with `autoFocus` appearing broken when a lock layer is added on top of another (#12, #14)\r\n- Added `useFocusLock` as a named export for better compatibility in CJS modules (#11, #15)\r\n"
+      },
+      {
+        "url": "https://api.github.com/repos/discord/focus-layers/releases/27043535",
+        "id": 27043535,
+        "author": {
+          "login": "faultyserver",
+          "id": 783733,
+          "node_id": "MDQ6VXNlcjc4MzczMw==",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/faultyserver",
+          "type": "User",
+          "site_admin": false
+        },
+        "node_id": "MDc6UmVsZWFzZTI3MDQzNTM1",
+        "tag_name": "v0.5.1",
+        "target_commitish": "master",
+        "name": "v0.5.1 - Allow disabling focus returns",
+        "draft": false,
+        "prerelease": false,
+        "created_at": "2020-05-29T18:29:28Z",
+        "published_at": "2020-05-29T18:30:45Z",
+        "assets": [],
+        "body": ""
+      },
+      {
+        "url": "https://api.github.com/repos/discord/focus-layers/releases/26931243",
+        "id": 26931243,
+        "author": {
+          "login": "faultyserver",
+          "id": 783733,
+          "node_id": "MDQ6VXNlcjc4MzczMw==",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/faultyserver",
+          "type": "User",
+          "site_admin": false
+        },
+        "node_id": "MDc6UmVsZWFzZTI2OTMxMjQz",
+        "tag_name": "v0.5.0",
+        "target_commitish": "master",
+        "name": "v0.5.0 - Documentation and edge cases",
+        "draft": false,
+        "prerelease": false,
+        "created_at": "2020-05-27T07:37:02Z",
+        "published_at": "2020-05-27T07:45:09Z",
+        "assets": [],
+        "body": "All components of the package are now documented with descriptive context. The code has been split up into multiple distinct modules to improve readability with those comments inline. Finally, a number of edge cases have been addressed to improve stability and fix incorrect behavior with various blur and refocus situations."
+      },
+      {
+        "url": "https://api.github.com/repos/discord/focus-layers/releases/26593111",
+        "id": 26593111,
+        "author": {
+          "login": "faultyserver",
+          "id": 783733,
+          "node_id": "MDQ6VXNlcjc4MzczMw==",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/faultyserver",
+          "type": "User",
+          "site_admin": false
+        },
+        "node_id": "MDc6UmVsZWFzZTI2NTkzMTEx",
+        "tag_name": "v0.4.1",
+        "target_commitish": "master",
+        "name": "",
+        "draft": false,
+        "prerelease": false,
+        "created_at": "2020-05-16T22:12:53Z",
+        "published_at": "2020-05-16T22:14:51Z",
+        "assets": [],
+        "body": ""
+      }
+    ],
     "issues": [],
     "pullRequests": []
   }

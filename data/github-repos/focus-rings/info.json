@@ -59,8 +59,419 @@
   },
   "branches": [],
   "last5": {
-    "commits": [],
-    "releases": [],
+    "commits": [
+      {
+        "sha": "253cc64e6d27602d94f882e28d98404d38895ba5",
+        "node_id": "C_kwDOExPvadoAKDI1M2NjNjRlNmQyNzYwMmQ5NGY4ODJlMjhkOTg0MDRkMzg4OTViYTU",
+        "commit": {
+          "author": {
+            "name": "Jon Egeland",
+            "email": "jon.egeland@discordapp.com",
+            "date": "2022-09-19T22:19:38Z"
+          },
+          "committer": {
+            "name": "Jon Egeland",
+            "email": "jon.egeland@discordapp.com",
+            "date": "2022-09-19T22:19:38Z"
+          },
+          "message": "bump to v1.1.0",
+          "tree": {
+            "sha": "eb583e181f3821510887e23bbd76ef936d1bed66",
+            "url": "https://api.github.com/repos/discord/focus-rings/git/trees/eb583e181f3821510887e23bbd76ef936d1bed66"
+          },
+          "url": "https://api.github.com/repos/discord/focus-rings/git/commits/253cc64e6d27602d94f882e28d98404d38895ba5",
+          "comment_count": 0,
+          "verification": {
+            "verified": false,
+            "reason": "unsigned",
+            "signature": null,
+            "payload": null
+          }
+        },
+        "url": "https://api.github.com/repos/discord/focus-rings/commits/253cc64e6d27602d94f882e28d98404d38895ba5",
+        "author": {
+          "login": "faultyserver",
+          "id": 783733,
+          "node_id": "MDQ6VXNlcjc4MzczMw==",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/faultyserver",
+          "type": "User",
+          "site_admin": false
+        },
+        "committer": {
+          "login": "faultyserver",
+          "id": 783733,
+          "node_id": "MDQ6VXNlcjc4MzczMw==",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/faultyserver",
+          "type": "User",
+          "site_admin": false
+        },
+        "parents": [
+          {
+            "sha": "e92d63adff7b4aeaabb8cd3bf5d5b3c9b0e17d0a",
+            "url": "https://api.github.com/repos/discord/focus-rings/commits/e92d63adff7b4aeaabb8cd3bf5d5b3c9b0e17d0a"
+          }
+        ]
+      },
+      {
+        "sha": "e92d63adff7b4aeaabb8cd3bf5d5b3c9b0e17d0a",
+        "node_id": "C_kwDOExPvadoAKGU5MmQ2M2FkZmY3YjRhZWFhYmI4Y2QzYmY1ZDViM2M5YjBlMTdkMGE",
+        "commit": {
+          "author": {
+            "name": "Jon Egeland",
+            "email": "jon.egeland@discordapp.com",
+            "date": "2022-09-19T22:15:41Z"
+          },
+          "committer": {
+            "name": "Jon Egeland",
+            "email": "jon.egeland@discordapp.com",
+            "date": "2022-09-19T22:15:41Z"
+          },
+          "message": "bump to test 1.1.0-rc.1",
+          "tree": {
+            "sha": "f394d81d1b5d3e7cfc0f8c78e12802bdf5c173f8",
+            "url": "https://api.github.com/repos/discord/focus-rings/git/trees/f394d81d1b5d3e7cfc0f8c78e12802bdf5c173f8"
+          },
+          "url": "https://api.github.com/repos/discord/focus-rings/git/commits/e92d63adff7b4aeaabb8cd3bf5d5b3c9b0e17d0a",
+          "comment_count": 0,
+          "verification": {
+            "verified": false,
+            "reason": "unsigned",
+            "signature": null,
+            "payload": null
+          }
+        },
+        "url": "https://api.github.com/repos/discord/focus-rings/commits/e92d63adff7b4aeaabb8cd3bf5d5b3c9b0e17d0a",
+        "author": {
+          "login": "faultyserver",
+          "id": 783733,
+          "node_id": "MDQ6VXNlcjc4MzczMw==",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/faultyserver",
+          "type": "User",
+          "site_admin": false
+        },
+        "committer": {
+          "login": "faultyserver",
+          "id": 783733,
+          "node_id": "MDQ6VXNlcjc4MzczMw==",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/faultyserver",
+          "type": "User",
+          "site_admin": false
+        },
+        "parents": [
+          {
+            "sha": "ec310c7153ead141c1d9599e81624bdd998f2af7",
+            "url": "https://api.github.com/repos/discord/focus-rings/commits/ec310c7153ead141c1d9599e81624bdd998f2af7"
+          }
+        ]
+      },
+      {
+        "sha": "ec310c7153ead141c1d9599e81624bdd998f2af7",
+        "node_id": "C_kwDOExPvadoAKGVjMzEwYzcxNTNlYWQxNDFjMWQ5NTk5ZTgxNjI0YmRkOTk4ZjJhZjc",
+        "commit": {
+          "author": {
+            "name": "Jon Egeland",
+            "email": "jon.egeland@discordapp.com",
+            "date": "2022-09-19T22:15:05Z"
+          },
+          "committer": {
+            "name": "Jon Egeland",
+            "email": "jon.egeland@discordapp.com",
+            "date": "2022-09-19T22:15:05Z"
+          },
+          "message": "Add a `ringsEnabled` toggle for all rings",
+          "tree": {
+            "sha": "631af44c1abb7c9f301a61183d10fb6e8d30fafe",
+            "url": "https://api.github.com/repos/discord/focus-rings/git/trees/631af44c1abb7c9f301a61183d10fb6e8d30fafe"
+          },
+          "url": "https://api.github.com/repos/discord/focus-rings/git/commits/ec310c7153ead141c1d9599e81624bdd998f2af7",
+          "comment_count": 0,
+          "verification": {
+            "verified": false,
+            "reason": "unsigned",
+            "signature": null,
+            "payload": null
+          }
+        },
+        "url": "https://api.github.com/repos/discord/focus-rings/commits/ec310c7153ead141c1d9599e81624bdd998f2af7",
+        "author": {
+          "login": "faultyserver",
+          "id": 783733,
+          "node_id": "MDQ6VXNlcjc4MzczMw==",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/faultyserver",
+          "type": "User",
+          "site_admin": false
+        },
+        "committer": {
+          "login": "faultyserver",
+          "id": 783733,
+          "node_id": "MDQ6VXNlcjc4MzczMw==",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/faultyserver",
+          "type": "User",
+          "site_admin": false
+        },
+        "parents": [
+          {
+            "sha": "6ccf38a1ecf8893eb6e4e780722e8e35c4e437fc",
+            "url": "https://api.github.com/repos/discord/focus-rings/commits/6ccf38a1ecf8893eb6e4e780722e8e35c4e437fc"
+          }
+        ]
+      },
+      {
+        "sha": "6ccf38a1ecf8893eb6e4e780722e8e35c4e437fc",
+        "node_id": "C_kwDOExPvadoAKDZjY2YzOGExZWNmODg5M2ViNmU0ZTc4MDcyMmU4ZTM1YzRlNDM3ZmM",
+        "commit": {
+          "author": {
+            "name": "Jon Egeland",
+            "email": "jon.egeland@discordapp.com",
+            "date": "2022-09-19T21:57:44Z"
+          },
+          "committer": {
+            "name": "Jon Egeland",
+            "email": "jon.egeland@discordapp.com",
+            "date": "2022-09-19T21:57:44Z"
+          },
+          "message": "fix pnpm workspace definition",
+          "tree": {
+            "sha": "ec92e5ceed7fb403d6d178550860c07414d72e2d",
+            "url": "https://api.github.com/repos/discord/focus-rings/git/trees/ec92e5ceed7fb403d6d178550860c07414d72e2d"
+          },
+          "url": "https://api.github.com/repos/discord/focus-rings/git/commits/6ccf38a1ecf8893eb6e4e780722e8e35c4e437fc",
+          "comment_count": 0,
+          "verification": {
+            "verified": false,
+            "reason": "unsigned",
+            "signature": null,
+            "payload": null
+          }
+        },
+        "url": "https://api.github.com/repos/discord/focus-rings/commits/6ccf38a1ecf8893eb6e4e780722e8e35c4e437fc",
+        "author": {
+          "login": "faultyserver",
+          "id": 783733,
+          "node_id": "MDQ6VXNlcjc4MzczMw==",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/faultyserver",
+          "type": "User",
+          "site_admin": false
+        },
+        "committer": {
+          "login": "faultyserver",
+          "id": 783733,
+          "node_id": "MDQ6VXNlcjc4MzczMw==",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/faultyserver",
+          "type": "User",
+          "site_admin": false
+        },
+        "parents": [
+          {
+            "sha": "9a71419213aaa670255c4417fa61a6fa20e3c881",
+            "url": "https://api.github.com/repos/discord/focus-rings/commits/9a71419213aaa670255c4417fa61a6fa20e3c881"
+          }
+        ]
+      },
+      {
+        "sha": "9a71419213aaa670255c4417fa61a6fa20e3c881",
+        "node_id": "C_kwDOExPvadoAKDlhNzE0MTkyMTNhYWE2NzAyNTVjNDQxN2ZhNjFhNmZhMjBlM2M4ODE",
+        "commit": {
+          "author": {
+            "name": "Jon Egeland",
+            "email": "jon.egeland@discordapp.com",
+            "date": "2022-09-16T19:42:37Z"
+          },
+          "committer": {
+            "name": "Jon Egeland",
+            "email": "jon.egeland@discordapp.com",
+            "date": "2022-09-16T19:43:06Z"
+          },
+          "message": "re-add README to actual package",
+          "tree": {
+            "sha": "6e0710cd93b764d17a4448ca9376d5048ceabcff",
+            "url": "https://api.github.com/repos/discord/focus-rings/git/trees/6e0710cd93b764d17a4448ca9376d5048ceabcff"
+          },
+          "url": "https://api.github.com/repos/discord/focus-rings/git/commits/9a71419213aaa670255c4417fa61a6fa20e3c881",
+          "comment_count": 0,
+          "verification": {
+            "verified": false,
+            "reason": "unsigned",
+            "signature": null,
+            "payload": null
+          }
+        },
+        "url": "https://api.github.com/repos/discord/focus-rings/commits/9a71419213aaa670255c4417fa61a6fa20e3c881",
+        "author": {
+          "login": "faultyserver",
+          "id": 783733,
+          "node_id": "MDQ6VXNlcjc4MzczMw==",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/faultyserver",
+          "type": "User",
+          "site_admin": false
+        },
+        "committer": {
+          "login": "faultyserver",
+          "id": 783733,
+          "node_id": "MDQ6VXNlcjc4MzczMw==",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/faultyserver",
+          "type": "User",
+          "site_admin": false
+        },
+        "parents": [
+          {
+            "sha": "01f4be5dc99f47ff1e99dbfef2987b6182beee4c",
+            "url": "https://api.github.com/repos/discord/focus-rings/commits/01f4be5dc99f47ff1e99dbfef2987b6182beee4c"
+          }
+        ]
+      }
+    ],
+    "releases": [
+      {
+        "url": "https://api.github.com/repos/discord/focus-rings/releases/77597976",
+        "id": 77597976,
+        "author": {
+          "login": "faultyserver",
+          "id": 783733,
+          "node_id": "MDQ6VXNlcjc4MzczMw==",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/faultyserver",
+          "type": "User",
+          "site_admin": false
+        },
+        "node_id": "RE_kwDOExPvac4EoA0Y",
+        "tag_name": "v1.1.0",
+        "target_commitish": "main",
+        "name": "v1.1.0 - Toggle ring visibility through JS",
+        "draft": false,
+        "prerelease": false,
+        "created_at": "2022-09-19T22:19:38Z",
+        "published_at": "2022-09-19T22:28:51Z",
+        "assets": [],
+        "body": "This version expands `FocusRingAnimationManager` to also provide a global toggle for whether focus rings will be rendered at all. This is useful for when applications only want to render rings when the user is in a \"keyboard mode\" or for any other reason.\r\n\r\nThe scope of changes is:\r\n\r\n- `FocusRingAnimationManager` -> `FocusRingManager`.\r\n- `FocusRingManager.ringsEnabled` is a boolean indicating whether rings are currently allowed to render.\r\n- `FocusRingManager.setRingsEnabled(enabled: boolean)` is a function to change the `ringsEnabled` value. It will also force the rings to immediately re-render to pick up this value.",
+        "reactions": {
+          "url": "https://api.github.com/repos/discord/focus-rings/releases/77597976/reactions",
+          "total_count": 2,
+          "+1": 0,
+          "-1": 0,
+          "laugh": 0,
+          "hooray": 0,
+          "confused": 0,
+          "heart": 0,
+          "rocket": 0,
+          "eyes": 2
+        }
+      },
+      {
+        "url": "https://api.github.com/repos/discord/focus-rings/releases/77345630",
+        "id": 77345630,
+        "author": {
+          "login": "faultyserver",
+          "id": 783733,
+          "node_id": "MDQ6VXNlcjc4MzczMw==",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/faultyserver",
+          "type": "User",
+          "site_admin": false
+        },
+        "node_id": "RE_kwDOExPvac4EnDNe",
+        "tag_name": "v1.0.8",
+        "target_commitish": "main",
+        "name": "v1.0.8 - Fix default package export compatibility",
+        "draft": false,
+        "prerelease": false,
+        "created_at": "2022-09-14T17:49:35Z",
+        "published_at": "2022-09-15T23:24:45Z",
+        "assets": [],
+        "body": "v1.0.6 changed how this package was built and bundled, and unfortunately got compatibility backwards, meaning the default export was a bundle that required ES module support to run (which `node` would not be able to import properly) rather than a CommonJS bundle. This release fixes that by making CJS the default export and providing the ES module for environments that support it."
+      },
+      {
+        "url": "https://api.github.com/repos/discord/focus-rings/releases/77176343",
+        "id": 77176343,
+        "author": {
+          "login": "faultyserver",
+          "id": 783733,
+          "node_id": "MDQ6VXNlcjc4MzczMw==",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/faultyserver",
+          "type": "User",
+          "site_admin": false
+        },
+        "node_id": "RE_kwDOExPvac4EmZ4X",
+        "tag_name": "v1.0.7",
+        "target_commitish": "main",
+        "name": "v1.0.7",
+        "draft": false,
+        "prerelease": false,
+        "created_at": "2022-09-14T17:49:35Z",
+        "published_at": "2022-09-14T18:03:33Z",
+        "assets": [],
+        "body": "Quick bugfix for using a default border radius if all of the radii on an element are 0. This matches previous behavior before the fix for Firefox was introduced in #7."
+      },
+      {
+        "url": "https://api.github.com/repos/discord/focus-rings/releases/77160625",
+        "id": 77160625,
+        "author": {
+          "login": "faultyserver",
+          "id": 783733,
+          "node_id": "MDQ6VXNlcjc4MzczMw==",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/faultyserver",
+          "type": "User",
+          "site_admin": false
+        },
+        "node_id": "RE_kwDOExPvac4EmWCx",
+        "tag_name": "v1.0.6",
+        "target_commitish": "main",
+        "name": "v1.0.6 - Add configuration for light/dark ring colors and thresholds",
+        "draft": false,
+        "prerelease": false,
+        "created_at": "2022-09-14T15:53:28Z",
+        "published_at": "2022-09-14T15:59:24Z",
+        "assets": [],
+        "body": "#11 Adds `themeOptions` as a prop to `FocusRingScope`, allowing consumers to change the brightness threshold that determines whether a light or dark focus ring is presented. It also adds `var(--focus-light)` and `var(--focus-dark)` to complement the existing `var(--focus-primary)`, allowing consumers to control all 3 possible ring colors from their own CSS.\r\n\r\nThis release also restructures the repository into a more modern monorepo format."
+      },
+      {
+        "url": "https://api.github.com/repos/discord/focus-rings/releases/53219845",
+        "id": 53219845,
+        "author": {
+          "login": "faultyserver",
+          "id": 783733,
+          "node_id": "MDQ6VXNlcjc4MzczMw==",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/faultyserver",
+          "type": "User",
+          "site_admin": false
+        },
+        "node_id": "RE_kwDOExPvac4DLBIF",
+        "tag_name": "v1.0.5",
+        "target_commitish": "main",
+        "name": "v1.0.5 - Fix border radius calculations in Firefox",
+        "draft": false,
+        "prerelease": false,
+        "created_at": "2021-11-12T06:35:36Z",
+        "published_at": "2021-11-12T06:38:11Z",
+        "assets": [],
+        "body": "#10 fixes an issue where Firefox would not return a value for `borderRadius` from the computed style of an element. All major browsers should now have the correct border radius for each corner.",
+        "reactions": {
+          "url": "https://api.github.com/repos/discord/focus-rings/releases/53219845/reactions",
+          "total_count": 1,
+          "+1": 0,
+          "-1": 0,
+          "laugh": 0,
+          "hooray": 1,
+          "confused": 0,
+          "heart": 0,
+          "rocket": 0,
+          "eyes": 0
+        }
+      }
+    ],
     "issues": [],
     "pullRequests": []
   }

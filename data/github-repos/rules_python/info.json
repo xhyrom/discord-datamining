@@ -59,7 +59,262 @@
   },
   "branches": [],
   "last5": {
-    "commits": [],
+    "commits": [
+      {
+        "sha": "94677401bc56ed5d756f50b441a6a5c7f735a6d4",
+        "node_id": "MDY6Q29tbWl0MTU1NDczODYwOjk0Njc3NDAxYmM1NmVkNWQ3NTZmNTBiNDQxYTZhNWM3ZjczNWE2ZDQ=",
+        "commit": {
+          "author": {
+            "name": "Jon Brandvein",
+            "email": "brandjon@google.com",
+            "date": "2019-11-15T18:34:49Z"
+          },
+          "committer": {
+            "name": "GitHub",
+            "email": "noreply@github.com",
+            "date": "2019-11-15T18:34:49Z"
+          },
+          "message": "Add pip3_import (#256)\n\nThis adds `pip3_import` as a wrapper around `pip_import` that sets `python_interpreter` to `\"python3\"`. This is important for requesting the Python 3 version of a package on systems where the `\"python\"` command is Python 2 (which is most of them).\r\n\r\nWe decline to add an analogous `pip2_import` wrapper at this time, because the command `\"python2\"` does not exist on all platforms by default (e.g. macOS).\r\n\r\n`piptool.py` is updated to prefix the names of the wheel repos (an implementation\r\ndetail of rules_python) with the name given to `pip_import`. This is needed to\r\navoid shadowing wheel repos when the same wheel name is used by separate\r\n`pip_import` invocations -- in particular when the same wheel is used for both\r\nPY2 and PY3. (Thanks to @joshclimacell for pointing this detail out in\r\nhis prototype 90a70d5a550a01646966ce61156e6f83f02b4b73.)\r\n\r\nRegenerated the .par files and docs.\r\n\r\nAlso updated the README to better explain the structure of the packaging rules. This includes mentioning `pip3_import`, concerns around versioning / hermeticity, and not depending on the wheel repo names (use `requirement()` instead).",
+          "tree": {
+            "sha": "a2bfa9247a230866a489d907b36d41a68c569772",
+            "url": "https://api.github.com/repos/discord/rules_python/git/trees/a2bfa9247a230866a489d907b36d41a68c569772"
+          },
+          "url": "https://api.github.com/repos/discord/rules_python/git/commits/94677401bc56ed5d756f50b441a6a5c7f735a6d4",
+          "comment_count": 0,
+          "verification": {
+            "verified": true,
+            "reason": "valid",
+            "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsBcBAABCAAQBQJdzu/JCRBK7hj4Ov3rIwAAdHIIAA3rNaz/lu39/22pqvqBBaNQ\nWkqzc8qNOigyxc5pYjrx07hIwnEGOr+wdAY1WE5bVyGVXm6Ox6Tl89Uux0IW776N\nFMubocG+quSQg+jzOvhOIpwDssikI6XDz4PWstTO/LZEdU7cZhyFyfyVntxKTy7G\nJ/t319VicvwXfQ9bb96HAOZswnWQ/02a3kFNh+FQg+VC2gyMPpqp7HfEH2R+feOI\nBiTOBIgSyST6LeVhaiXP/3s/VsgM9v+kX/fAscRjg9Sj3r7zkDBdN3NkGYvDfCIQ\nQa5RE898QDNDjJoiQYf+O8yJQRvkKF905tXWPM9juxJb593Q++ZizqNYpCJyO28=\n=q/of\n-----END PGP SIGNATURE-----\n",
+            "payload": "tree a2bfa9247a230866a489d907b36d41a68c569772\nparent 7b222cfdb4e59b9fd2a609e1fbb233e94fdcde7c\nauthor Jon Brandvein <brandjon@google.com> 1573842889 -0500\ncommitter GitHub <noreply@github.com> 1573842889 -0500\n\nAdd pip3_import (#256)\n\nThis adds `pip3_import` as a wrapper around `pip_import` that sets `python_interpreter` to `\"python3\"`. This is important for requesting the Python 3 version of a package on systems where the `\"python\"` command is Python 2 (which is most of them).\r\n\r\nWe decline to add an analogous `pip2_import` wrapper at this time, because the command `\"python2\"` does not exist on all platforms by default (e.g. macOS).\r\n\r\n`piptool.py` is updated to prefix the names of the wheel repos (an implementation\r\ndetail of rules_python) with the name given to `pip_import`. This is needed to\r\navoid shadowing wheel repos when the same wheel name is used by separate\r\n`pip_import` invocations -- in particular when the same wheel is used for both\r\nPY2 and PY3. (Thanks to @joshclimacell for pointing this detail out in\r\nhis prototype 90a70d5a550a01646966ce61156e6f83f02b4b73.)\r\n\r\nRegenerated the .par files and docs.\r\n\r\nAlso updated the README to better explain the structure of the packaging rules. This includes mentioning `pip3_import`, concerns around versioning / hermeticity, and not depending on the wheel repo names (use `requirement()` instead)."
+          }
+        },
+        "url": "https://api.github.com/repos/discord/rules_python/commits/94677401bc56ed5d756f50b441a6a5c7f735a6d4",
+        "author": {
+          "login": "brandjon",
+          "id": 1308070,
+          "node_id": "MDQ6VXNlcjEzMDgwNzA=",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/brandjon",
+          "type": "User",
+          "site_admin": false
+        },
+        "committer": {
+          "login": "web-flow",
+          "id": 19864447,
+          "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/web-flow",
+          "type": "User",
+          "site_admin": false
+        },
+        "parents": [
+          {
+            "sha": "7b222cfdb4e59b9fd2a609e1fbb233e94fdcde7c",
+            "url": "https://api.github.com/repos/discord/rules_python/commits/7b222cfdb4e59b9fd2a609e1fbb233e94fdcde7c"
+          }
+        ]
+      },
+      {
+        "sha": "7b222cfdb4e59b9fd2a609e1fbb233e94fdcde7c",
+        "node_id": "MDY6Q29tbWl0MTU1NDczODYwOjdiMjIyY2ZkYjRlNTliOWZkMmE2MDllMWZiYjIzM2U5NGZkY2RlN2M=",
+        "commit": {
+          "author": {
+            "name": "Jon Brandvein",
+            "email": "brandjon@google.com",
+            "date": "2019-11-11T17:32:16Z"
+          },
+          "committer": {
+            "name": "GitHub",
+            "email": "noreply@github.com",
+            "date": "2019-11-11T17:32:16Z"
+          },
+          "message": "Add python_interpreter attr to pip rules (#252)\n\nThis adds a `python_interpreter` attribute to `pip_import` and `whl_library` that can be used to select the system command used to run Python's packaging tools. This provides the basis for invoking pip under Python 3 to install PY3 dependencies.\r\n\r\nExample usage:\r\n```\r\npip_import(\r\n    name = 'pip_deps',\r\n    requirements = '//:requirements.txt',\r\n    python_interpreter = 'python3.7',\r\n)\r\n```\r\n\r\nThe par files have been regenerated. (This required a little bootstrapping since piptool.py needs to be modified to accept the flag before pip.bzl is modified to pass it.)",
+          "tree": {
+            "sha": "4d6d7ef1042fa4235bb962e9fcbf4d005041eaf3",
+            "url": "https://api.github.com/repos/discord/rules_python/git/trees/4d6d7ef1042fa4235bb962e9fcbf4d005041eaf3"
+          },
+          "url": "https://api.github.com/repos/discord/rules_python/git/commits/7b222cfdb4e59b9fd2a609e1fbb233e94fdcde7c",
+          "comment_count": 0,
+          "verification": {
+            "verified": true,
+            "reason": "valid",
+            "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsBcBAABCAAQBQJdyZsgCRBK7hj4Ov3rIwAAdHIIAHwg+zmWw91ZImRZhoFmpnYk\ni7Eg8YA40fpGMbpmwvEr4C85H/czBAJmLQzT6JzxvRtzDltomML/5X6ZQcJXpgvJ\nyV+Cu+C5L/LXQfQk9d4xKZpUcFoIT0xXtEDrFCoOcm5x35KBepQ+fgNNabn5VVti\nlLLoU6CFj1USggWY+2AaFKUsWwHIA+bVfxgPsv434Zbb+hbuLBvoZjMQyx8eqbtW\naiIygnKxTbHeyQkgca+1SMTkS/NuEEMgpTfn4ES6KRrBXHetxW5AlOe/5DKqfkTC\nN/qOJL3q4+OBxvTMW2nv/sxybELNnllQV8jcscFNPbKbE50MDd7GrIXP1xMbkPk=\n=xu8X\n-----END PGP SIGNATURE-----\n",
+            "payload": "tree 4d6d7ef1042fa4235bb962e9fcbf4d005041eaf3\nparent 13bf8b7769c5eeabdda5d9ea0cf3ae9e895cc61c\nauthor Jon Brandvein <brandjon@google.com> 1573493536 -0500\ncommitter GitHub <noreply@github.com> 1573493536 -0500\n\nAdd python_interpreter attr to pip rules (#252)\n\nThis adds a `python_interpreter` attribute to `pip_import` and `whl_library` that can be used to select the system command used to run Python's packaging tools. This provides the basis for invoking pip under Python 3 to install PY3 dependencies.\r\n\r\nExample usage:\r\n```\r\npip_import(\r\n    name = 'pip_deps',\r\n    requirements = '//:requirements.txt',\r\n    python_interpreter = 'python3.7',\r\n)\r\n```\r\n\r\nThe par files have been regenerated. (This required a little bootstrapping since piptool.py needs to be modified to accept the flag before pip.bzl is modified to pass it.)"
+          }
+        },
+        "url": "https://api.github.com/repos/discord/rules_python/commits/7b222cfdb4e59b9fd2a609e1fbb233e94fdcde7c",
+        "author": {
+          "login": "brandjon",
+          "id": 1308070,
+          "node_id": "MDQ6VXNlcjEzMDgwNzA=",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/brandjon",
+          "type": "User",
+          "site_admin": false
+        },
+        "committer": {
+          "login": "web-flow",
+          "id": 19864447,
+          "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/web-flow",
+          "type": "User",
+          "site_admin": false
+        },
+        "parents": [
+          {
+            "sha": "13bf8b7769c5eeabdda5d9ea0cf3ae9e895cc61c",
+            "url": "https://api.github.com/repos/discord/rules_python/commits/13bf8b7769c5eeabdda5d9ea0cf3ae9e895cc61c"
+          }
+        ]
+      },
+      {
+        "sha": "13bf8b7769c5eeabdda5d9ea0cf3ae9e895cc61c",
+        "node_id": "MDY6Q29tbWl0MTU1NDczODYwOjEzYmY4Yjc3NjljNWVlYWJkZGE1ZDllYTBjZjNhZTllODk1Y2M2MWM=",
+        "commit": {
+          "author": {
+            "name": "Jon Brandvein",
+            "email": "brandjon@google.com",
+            "date": "2019-11-11T15:50:37Z"
+          },
+          "committer": {
+            "name": "GitHub",
+            "email": "noreply@github.com",
+            "date": "2019-11-11T15:50:37Z"
+          },
+          "message": "Fix packaging rules documentation generation (#251)\n\nFor some reason the rendered docs for the packaging rules' weren't up-to-date. The docstrings also used an outdated format.\r\n\r\nThis change moves docstrings into `doc=` notation where applicable, switches to markdown syntax where possible (but see #255), and regenerates the rendered docs.",
+          "tree": {
+            "sha": "e12c8290bf59198958103b7406c66fd31133151d",
+            "url": "https://api.github.com/repos/discord/rules_python/git/trees/e12c8290bf59198958103b7406c66fd31133151d"
+          },
+          "url": "https://api.github.com/repos/discord/rules_python/git/commits/13bf8b7769c5eeabdda5d9ea0cf3ae9e895cc61c",
+          "comment_count": 0,
+          "verification": {
+            "verified": true,
+            "reason": "valid",
+            "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsBcBAABCAAQBQJdyYNNCRBK7hj4Ov3rIwAAdHIIAKzG4QRhnnLvEkKhiVUNaFK5\nAbgbTvDPAwjHjGzwp2ZqoADgDfljEymfwsCGTDhMcpUZIouhNEs8G13OM9MSL/Ws\nk/5I4Z/aK87gZx1efn644XC1wEUh+LY77bBAjaeLeA8Rn7kdwqFRxpY2QBeyjpIt\nxd/b7iI3CvCuaU7iJLMOAUt0AWgQj+hPAxa1XkXOH+rhPPWKVCej9k6ut7t2ERXv\n7DpjNY3VXJVTQXp311t/q6rf+Nai6eq/QjFZTduzc9H9sHCWE5YqTnxQdVXQ+Uoz\nZQtq0ipWzSYy/667TD13yZD60+pdhTSind8Qyovr0SCoHNyrtoYaVu07ZpzWjSU=\n=uIsB\n-----END PGP SIGNATURE-----\n",
+            "payload": "tree e12c8290bf59198958103b7406c66fd31133151d\nparent a610acec1653001b736338e4bc2dbe9609ed86b2\nauthor Jon Brandvein <brandjon@google.com> 1573487437 -0500\ncommitter GitHub <noreply@github.com> 1573487437 -0500\n\nFix packaging rules documentation generation (#251)\n\nFor some reason the rendered docs for the packaging rules' weren't up-to-date. The docstrings also used an outdated format.\r\n\r\nThis change moves docstrings into `doc=` notation where applicable, switches to markdown syntax where possible (but see #255), and regenerates the rendered docs."
+          }
+        },
+        "url": "https://api.github.com/repos/discord/rules_python/commits/13bf8b7769c5eeabdda5d9ea0cf3ae9e895cc61c",
+        "author": {
+          "login": "brandjon",
+          "id": 1308070,
+          "node_id": "MDQ6VXNlcjEzMDgwNzA=",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/brandjon",
+          "type": "User",
+          "site_admin": false
+        },
+        "committer": {
+          "login": "web-flow",
+          "id": 19864447,
+          "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/web-flow",
+          "type": "User",
+          "site_admin": false
+        },
+        "parents": [
+          {
+            "sha": "a610acec1653001b736338e4bc2dbe9609ed86b2",
+            "url": "https://api.github.com/repos/discord/rules_python/commits/a610acec1653001b736338e4bc2dbe9609ed86b2"
+          }
+        ]
+      },
+      {
+        "sha": "a610acec1653001b736338e4bc2dbe9609ed86b2",
+        "node_id": "MDY6Q29tbWl0MTU1NDczODYwOmE2MTBhY2VjMTY1MzAwMWI3MzYzMzhlNGJjMmRiZTk2MDllZDg2YjI=",
+        "commit": {
+          "author": {
+            "name": "Marcel Hlopko",
+            "email": "hlopko@bazel.build",
+            "date": "2019-11-04T09:10:04Z"
+          },
+          "committer": {
+            "name": "GitHub",
+            "email": "noreply@github.com",
+            "date": "2019-11-04T09:10:04Z"
+          },
+          "message": "Add renovate.json (#248)",
+          "tree": {
+            "sha": "547c5a112ddc8ffa15edad33526524871eaa2d04",
+            "url": "https://api.github.com/repos/discord/rules_python/git/trees/547c5a112ddc8ffa15edad33526524871eaa2d04"
+          },
+          "url": "https://api.github.com/repos/discord/rules_python/git/commits/a610acec1653001b736338e4bc2dbe9609ed86b2",
+          "comment_count": 0,
+          "verification": {
+            "verified": true,
+            "reason": "valid",
+            "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsBcBAABCAAQBQJdv+rsCRBK7hj4Ov3rIwAAdHIIAE40vmWnllJ7PA48Dm9PjSsm\npW9OsWYG79bcuw0/qlLmtIwMTrN+YEjVhobAPCuJxZx7bWo1WycrXim0TZ0fR/lJ\nX/yAnllxG6NCdAprkqUWkz+TKGHlfNrs2vPTnmR8993KXIVfmVJH7TzVMZQO+X5s\nniL2+Ea8LodrZVg+XuysdCUA9wdgLnoWjNHVRxNf2PO166BBf6nlAYF7243SxHAj\n3mQPbLUWBAecG6ZzTpPiIFJDiVpc5FEiE0PkAhd7ZAc0N4ulJ7CrXjx5G2BGZXoY\nyqBIQRlaX0WRWINHZfMIVggQbRL34/LCnTMbBxjha6ykX0pZlTptUfkOyeCBp0Y=\n=mJ4D\n-----END PGP SIGNATURE-----\n",
+            "payload": "tree 547c5a112ddc8ffa15edad33526524871eaa2d04\nparent 7467de3dd687c589fdb9d0b7f909e8754d3d994a\nauthor Marcel Hlopko <hlopko@bazel.build> 1572858604 +0100\ncommitter GitHub <noreply@github.com> 1572858604 +0100\n\nAdd renovate.json (#248)\n\n"
+          }
+        },
+        "url": "https://api.github.com/repos/discord/rules_python/commits/a610acec1653001b736338e4bc2dbe9609ed86b2",
+        "author": null,
+        "committer": {
+          "login": "web-flow",
+          "id": 19864447,
+          "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/web-flow",
+          "type": "User",
+          "site_admin": false
+        },
+        "parents": [
+          {
+            "sha": "7467de3dd687c589fdb9d0b7f909e8754d3d994a",
+            "url": "https://api.github.com/repos/discord/rules_python/commits/7467de3dd687c589fdb9d0b7f909e8754d3d994a"
+          }
+        ]
+      },
+      {
+        "sha": "7467de3dd687c589fdb9d0b7f909e8754d3d994a",
+        "node_id": "MDY6Q29tbWl0MTU1NDczODYwOjc0NjdkZTNkZDY4N2M1ODlmZGI5ZDBiN2Y5MDllODc1NGQzZDk5NGE=",
+        "commit": {
+          "author": {
+            "name": "Marcel Hlopko",
+            "email": "hlopko@bazel.build",
+            "date": "2019-10-31T20:30:28Z"
+          },
+          "committer": {
+            "name": "Jon Brandvein",
+            "email": "brandjon@google.com",
+            "date": "2019-10-31T20:30:28Z"
+          },
+          "message": "Add badge for incompatible flag pipeline (#247)\n\nhttps://buildkite.com/bazel/rules-python-plus-bazelisk-migrate",
+          "tree": {
+            "sha": "f7aefe5e8c945319a2f82005853c460512d26e1f",
+            "url": "https://api.github.com/repos/discord/rules_python/git/trees/f7aefe5e8c945319a2f82005853c460512d26e1f"
+          },
+          "url": "https://api.github.com/repos/discord/rules_python/git/commits/7467de3dd687c589fdb9d0b7f909e8754d3d994a",
+          "comment_count": 0,
+          "verification": {
+            "verified": false,
+            "reason": "unsigned",
+            "signature": null,
+            "payload": null
+          }
+        },
+        "url": "https://api.github.com/repos/discord/rules_python/commits/7467de3dd687c589fdb9d0b7f909e8754d3d994a",
+        "author": null,
+        "committer": {
+          "login": "brandjon",
+          "id": 1308070,
+          "node_id": "MDQ6VXNlcjEzMDgwNzA=",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/brandjon",
+          "type": "User",
+          "site_admin": false
+        },
+        "parents": [
+          {
+            "sha": "230f6d15b4ab23cd3a46c54023c9e5fb3e1e3542",
+            "url": "https://api.github.com/repos/discord/rules_python/commits/230f6d15b4ab23cd3a46c54023c9e5fb3e1e3542"
+          }
+        ]
+      }
+    ],
     "releases": [],
     "issues": [],
     "pullRequests": []

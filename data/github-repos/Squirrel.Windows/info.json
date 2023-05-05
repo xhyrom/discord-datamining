@@ -429,7 +429,104 @@
         "body": "Adds the --check command line option, so we can just pull the RELEASES file without actually downloading.\n"
       }
     ],
-    "issues": [],
+    "issues": [
+      {
+        "url": "https://api.github.com/repos/discord/Squirrel.Windows/issues/2",
+        "id": 967424766,
+        "node_id": "MDExOlB1bGxSZXF1ZXN0NzA5NTk5MjAw",
+        "number": 2,
+        "title": "Make directory deletion more atomic",
+        "user": {
+          "login": "mikepavone",
+          "id": 157731,
+          "node_id": "MDQ6VXNlcjE1NzczMQ==",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/mikepavone",
+          "type": "User",
+          "site_admin": false
+        },
+        "labels": [],
+        "state": "closed",
+        "locked": false,
+        "assignee": null,
+        "assignees": [],
+        "milestone": null,
+        "comments": 1,
+        "created_at": "2021-08-11T20:41:17Z",
+        "updated_at": "2021-09-14T00:12:26Z",
+        "closed_at": "2021-09-14T00:12:12Z",
+        "author_association": "NONE",
+        "active_lock_reason": null,
+        "draft": false,
+        "pull_request": {
+          "url": "https://api.github.com/repos/discord/Squirrel.Windows/pulls/2",
+          "merged_at": "2021-09-14T00:12:12Z"
+        },
+        "body": "Currently, if a file is locked in the destination directory (which will be the case if the app is running), it will end up partially deleted and the installation will exit with an error. This leaves the existing install in a corrupted state, which is less than ideal. This PR makes deletes sort-of atomic by first renaming the directory before deleting it. This rename will fail if the app is currently running or if the contents of the directory happen to be locked for some other reason",
+        "reactions": {
+          "url": "https://api.github.com/repos/discord/Squirrel.Windows/issues/2/reactions",
+          "total_count": 0,
+          "+1": 0,
+          "-1": 0,
+          "laugh": 0,
+          "hooray": 0,
+          "confused": 0,
+          "heart": 0,
+          "rocket": 0,
+          "eyes": 0
+        },
+        "performed_via_github_app": null,
+        "state_reason": null
+      },
+      {
+        "url": "https://api.github.com/repos/discord/Squirrel.Windows/issues/1",
+        "id": 75446352,
+        "node_id": "MDExOlB1bGxSZXF1ZXN0MzUxOTA4NDA=",
+        "number": 1,
+        "title": "Feature/fixsetup",
+        "user": {
+          "login": "jasoncitron",
+          "id": 90868,
+          "node_id": "MDQ6VXNlcjkwODY4",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/jasoncitron",
+          "type": "User",
+          "site_admin": false
+        },
+        "labels": [],
+        "state": "closed",
+        "locked": false,
+        "assignee": null,
+        "assignees": [],
+        "milestone": null,
+        "comments": 2,
+        "created_at": "2015-05-12T03:41:00Z",
+        "updated_at": "2015-05-12T18:31:33Z",
+        "closed_at": "2015-05-12T18:31:31Z",
+        "author_association": "NONE",
+        "active_lock_reason": null,
+        "draft": false,
+        "pull_request": {
+          "url": "https://api.github.com/repos/discord/Squirrel.Windows/pulls/1",
+          "merged_at": "2015-05-12T18:31:31Z"
+        },
+        "body": "Fixes a few high priority UX bugs in the installer.\n- Uninstall now attempts to delete its folder 10 times (with a 1 second sleep between each). This fixes our \"not everything is uninstalled upon uninstall\" issue. Update.exe unfortunately remains.\n- Updating now waits 10 seconds instead of 2 seconds to acquire the global squirrel lock. This fixes the issue where upon the first launch updating would immediately fail, because the installer was still running and had the squirrel lock.\n- Checking no longer attempts to return release notes, since they are guaranteed to not be present. ReleaseNotes come from the nuget, which we are not downloading in Check.\n- Just some extra logging too.\n",
+        "reactions": {
+          "url": "https://api.github.com/repos/discord/Squirrel.Windows/issues/1/reactions",
+          "total_count": 0,
+          "+1": 0,
+          "-1": 0,
+          "laugh": 0,
+          "hooray": 0,
+          "confused": 0,
+          "heart": 0,
+          "rocket": 0,
+          "eyes": 0
+        },
+        "performed_via_github_app": null,
+        "state_reason": null
+      }
+    ],
     "pullRequests": []
   }
 }
