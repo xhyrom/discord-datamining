@@ -97417,6 +97417,16 @@ strong {
     text-decoration: underline
 }
 
+.actionButton-1AQvDt {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    gap: 4px
+}
+
 .notice-1x8lm- {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -141612,6 +141622,63 @@ html .invoiceCancelRow-3s2UuC {
     margin-top: 18px
 }
 
+.headerContainer-3uHkGl {
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    gap: 6px
+}
+
+.headerContainer-3uHkGl,
+.mainContainer-1VGrrU {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex
+}
+
+.mainContainer-1VGrrU {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    gap: 20px;
+    margin-bottom: 20px;
+    margin-top: 20px
+}
+
+.pauseInvitesContainer-1NY0se {
+    padding: 12px;
+    border: 1px solid var(--background-accent);
+    border-radius: 4px;
+    -webkit-box-align: start;
+    -ms-flex-align: start;
+    align-items: flex-start;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    gap: 8px
+}
+
+.pauseInvitesContainer-1NY0se,
+.pauseInvitesText-1ZXC37 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex
+}
+
+.pauseInvitesText-1ZXC37 {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    gap: 6px
+}
+
+.toggle-3V4Qgn {
+    -ms-flex-negative: 0;
+    flex-shrink: 0
+}
+
 .root-3NorMy {
     width: 336px
 }
@@ -154752,4 +154819,4 @@ html .invoiceCancelRow-dVOR64 {
     flex-direction: column
 }
 
-/*# sourceMappingURL=40532.a28a0598f64fbdad146b.css.map*/
+/*# sourceMappingURL=40532.63b57e0d793373e5ad36.css.map*/
