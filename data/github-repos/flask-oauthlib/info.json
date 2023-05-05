@@ -57,7 +57,40 @@
     "triage": false,
     "pull": false
   },
-  "branches": [],
+  "branches": [
+    {
+      "name": "issue-89",
+      "commit": {
+        "sha": "8b0d0459fe3b93a2cea52738d0d192be3250c8e9",
+        "url": "https://api.github.com/repos/discord/flask-oauthlib/commits/8b0d0459fe3b93a2cea52738d0d192be3250c8e9"
+      },
+      "protected": false
+    },
+    {
+      "name": "master",
+      "commit": {
+        "sha": "4579b9a8ddcdc42a55ef53c74ef0c0a181499a76",
+        "url": "https://api.github.com/repos/discord/flask-oauthlib/commits/4579b9a8ddcdc42a55ef53c74ef0c0a181499a76"
+      },
+      "protected": false
+    },
+    {
+      "name": "new-client",
+      "commit": {
+        "sha": "c03fb5260505efb63e99d968e841e87fbcafb3f3",
+        "url": "https://api.github.com/repos/discord/flask-oauthlib/commits/c03fb5260505efb63e99d968e841e87fbcafb3f3"
+      },
+      "protected": false
+    },
+    {
+      "name": "refactor-tests",
+      "commit": {
+        "sha": "da432a2caafcf824aba0dd1a14d53adc22485e98",
+        "url": "https://api.github.com/repos/discord/flask-oauthlib/commits/da432a2caafcf824aba0dd1a14d53adc22485e98"
+      },
+      "protected": false
+    }
+  ],
   "last5": {
     "commits": [
       {
