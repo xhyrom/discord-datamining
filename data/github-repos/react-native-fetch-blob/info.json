@@ -336,56 +336,7 @@
       }
     ],
     "releases": [],
-    "issues": [
-      {
-        "url": "https://api.github.com/repos/discord/react-native-fetch-blob/issues/1",
-        "id": 488876710,
-        "node_id": "MDExOlB1bGxSZXF1ZXN0MzEzODA5MTk5",
-        "number": 1,
-        "title": "[ios] add video support",
-        "user": {
-          "login": "jonwu",
-          "id": 2797965,
-          "node_id": "MDQ6VXNlcjI3OTc5NjU=",
-          "gravatar_id": "",
-          "url": "https://api.github.com/users/jonwu",
-          "type": "User",
-          "site_admin": false
-        },
-        "labels": [],
-        "state": "closed",
-        "locked": false,
-        "assignee": null,
-        "assignees": [],
-        "milestone": null,
-        "comments": 0,
-        "created_at": "2019-09-04T00:03:55Z",
-        "updated_at": "2019-09-05T00:17:50Z",
-        "closed_at": "2019-09-05T00:17:45Z",
-        "author_association": "NONE",
-        "active_lock_reason": null,
-        "draft": false,
-        "pull_request": {
-          "url": "https://api.github.com/repos/discord/react-native-fetch-blob/pulls/1",
-          "merged_at": "2019-09-05T00:17:45Z"
-        },
-        "body": "A quick way to handle video support. Note: we will eventually move off of this library and use native blob. \r\n\r\n*extra whitespaces came from auto-format in my ide... i don't think this should matter but i can clean up if needed",
-        "reactions": {
-          "url": "https://api.github.com/repos/discord/react-native-fetch-blob/issues/1/reactions",
-          "total_count": 0,
-          "+1": 0,
-          "-1": 0,
-          "laugh": 0,
-          "hooray": 0,
-          "confused": 0,
-          "heart": 0,
-          "rocket": 0,
-          "eyes": 0
-        },
-        "performed_via_github_app": null,
-        "state_reason": null
-      }
-    ],
+    "issues": [],
     "pullRequests": []
   }
 }
