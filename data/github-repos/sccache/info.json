@@ -57,96 +57,7 @@
     "triage": false,
     "pull": false
   },
-  "branches": [
-    {
-      "name": "0.2.8-workaround",
-      "commit": {
-        "sha": "2570c3af00791a906815f351e2b9c18f8d0fe644",
-        "url": "https://api.github.com/repos/discord/sccache/commits/2570c3af00791a906815f351e2b9c18f8d0fe644"
-      },
-      "protected": false
-    },
-    {
-      "name": "0.2.9-workaround",
-      "commit": {
-        "sha": "0966cd265efe4622261dcaf65433d6c985379a67",
-        "url": "https://api.github.com/repos/discord/sccache/commits/0966cd265efe4622261dcaf65433d6c985379a67"
-      },
-      "protected": false
-    },
-    {
-      "name": "0.2.10-workaround",
-      "commit": {
-        "sha": "e8151a2adb48d1fd4e672d49ae17f38b784c2bdd",
-        "url": "https://api.github.com/repos/discord/sccache/commits/e8151a2adb48d1fd4e672d49ae17f38b784c2bdd"
-      },
-      "protected": false
-    },
-    {
-      "name": "0.2.11-workaround",
-      "commit": {
-        "sha": "9d9375590ebf7a1a3812810a5cd10bf13a2640de",
-        "url": "https://api.github.com/repos/discord/sccache/commits/9d9375590ebf7a1a3812810a5cd10bf13a2640de"
-      },
-      "protected": false
-    },
-    {
-      "name": "0.2.12-workaround",
-      "commit": {
-        "sha": "37117d594c3c1d5d2dcf5b1e8fc1529614718457",
-        "url": "https://api.github.com/repos/discord/sccache/commits/37117d594c3c1d5d2dcf5b1e8fc1529614718457"
-      },
-      "protected": false
-    },
-    {
-      "name": "0.2.13-workaround",
-      "commit": {
-        "sha": "eac96c836e6057f3f015e775427fd2a954667c86",
-        "url": "https://api.github.com/repos/discord/sccache/commits/eac96c836e6057f3f015e775427fd2a954667c86"
-      },
-      "protected": false
-    },
-    {
-      "name": "appveyor-minimum-version",
-      "commit": {
-        "sha": "1a7785d6e6538f404021339844063b44950ad1df",
-        "url": "https://api.github.com/repos/discord/sccache/commits/1a7785d6e6538f404021339844063b44950ad1df"
-      },
-      "protected": false
-    },
-    {
-      "name": "jobserver-typos",
-      "commit": {
-        "sha": "cefaf4365af9be3597a874c3184fcc1318eaa44a",
-        "url": "https://api.github.com/repos/discord/sccache/commits/cefaf4365af9be3597a874c3184fcc1318eaa44a"
-      },
-      "protected": false
-    },
-    {
-      "name": "master",
-      "commit": {
-        "sha": "6628e1f70db3d583cb5e79210603ad878de3d315",
-        "url": "https://api.github.com/repos/discord/sccache/commits/6628e1f70db3d583cb5e79210603ad878de3d315"
-      },
-      "protected": false
-    },
-    {
-      "name": "oauth_key_format",
-      "commit": {
-        "sha": "cee7b4b98faa373f3c49aa2f5ff64861e9d729ca",
-        "url": "https://api.github.com/repos/discord/sccache/commits/cee7b4b98faa373f3c49aa2f5ff64861e9d729ca"
-      },
-      "protected": false
-    },
-    {
-      "name": "support-google-metadata-server",
-      "commit": {
-        "sha": "ff4152382f0f3ee03ebc5873f38d50dd9300989d",
-        "url": "https://api.github.com/repos/discord/sccache/commits/ff4152382f0f3ee03ebc5873f38d50dd9300989d"
-      },
-      "protected": false
-    }
-  ],
+  "branches": [],
   "last5": {
     "commits": [
       {
@@ -412,7 +323,76 @@
         ]
       }
     ],
-    "releases": [],
+    "releases": [
+      {
+        "url": "https://api.github.com/repos/discord/sccache/releases/55786619",
+        "id": 55786619,
+        "author": {
+          "login": "jdost",
+          "id": 882537,
+          "node_id": "MDQ6VXNlcjg4MjUzNw==",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/jdost",
+          "type": "User",
+          "site_admin": false
+        },
+        "node_id": "MDc6UmVsZWFzZTU1Nzg2NjE5",
+        "tag_name": "v0.2.16-alpha.0",
+        "target_commitish": "oauth_key_format",
+        "name": "0.2.16-alpha.0",
+        "draft": false,
+        "prerelease": true,
+        "created_at": "2021-04-28T15:39:52Z",
+        "published_at": "2021-12-21T23:05:13Z",
+        "assets": [
+          {
+            "url": "https://api.github.com/repos/discord/sccache/releases/assets/52313818",
+            "id": 52313818,
+            "node_id": "RA_kwDOEmOxUc4DHj7a",
+            "name": "sccache-v0.2.16-alpha.0-x86_64-unknown-linux-musl.tar.gz",
+            "label": null,
+            "uploader": {
+              "login": "jdost",
+              "id": 882537,
+              "node_id": "MDQ6VXNlcjg4MjUzNw==",
+              "gravatar_id": "",
+              "url": "https://api.github.com/users/jdost",
+              "type": "User",
+              "site_admin": false
+            },
+            "content_type": "application/gzip",
+            "state": "uploaded",
+            "size": 7610267,
+            "download_count": 8757,
+            "created_at": "2021-12-21T23:04:16Z",
+            "updated_at": "2021-12-21T23:04:20Z"
+          },
+          {
+            "url": "https://api.github.com/repos/discord/sccache/releases/assets/52313819",
+            "id": 52313819,
+            "node_id": "RA_kwDOEmOxUc4DHj7b",
+            "name": "sccache-v0.2.16-alpha.0-x86_64-unknown-linux-musl.tar.gz.sha256",
+            "label": null,
+            "uploader": {
+              "login": "jdost",
+              "id": 882537,
+              "node_id": "MDQ6VXNlcjg4MjUzNw==",
+              "gravatar_id": "",
+              "url": "https://api.github.com/users/jdost",
+              "type": "User",
+              "site_admin": false
+            },
+            "content_type": "application/octet-stream",
+            "state": "uploaded",
+            "size": 64,
+            "download_count": 1,
+            "created_at": "2021-12-21T23:04:20Z",
+            "updated_at": "2021-12-21T23:04:20Z"
+          }
+        ],
+        "body": "Branch including the GCS OAuth fixes pending in #992"
+      }
+    ],
     "issues": [],
     "pullRequests": []
   }
