@@ -133054,6 +133054,72 @@ html .invoiceCancelRow-3s2UuC {
     margin-top: 16px
 }
 
+.activityCardImageContainer-3DFkA4 {
+    position: relative;
+    overflow: hidden;
+    -o-object-fit: cover;
+    object-fit: cover;
+    -webkit-animation: fadeIn-3uu9Vz .7s;
+    animation: fadeIn-3uu9Vz .7s
+}
+
+.video-24_jkr {
+    position: absolute;
+    -webkit-animation: fadeIn-3uu9Vz .5s;
+    animation: fadeIn-3uu9Vz .5s;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0
+}
+
+.video-24_jkr.videoFadeOut-1cWPpt {
+    -webkit-animation: fadeOut-18CGt7 .5s;
+    animation: fadeOut-18CGt7 .5s;
+    -webkit-animation-fill-mode: forwards;
+    animation-fill-mode: forwards
+}
+
+@-webkit-keyframes fadeIn-3uu9Vz {
+    0% {
+        opacity: 0
+    }
+
+    to {
+        opacity: 1
+    }
+}
+
+@keyframes fadeIn-3uu9Vz {
+    0% {
+        opacity: 0
+    }
+
+    to {
+        opacity: 1
+    }
+}
+
+@-webkit-keyframes fadeOut-18CGt7 {
+    0% {
+        opacity: 1
+    }
+
+    to {
+        opacity: 0
+    }
+}
+
+@keyframes fadeOut-18CGt7 {
+    0% {
+        opacity: 1
+    }
+
+    to {
+        opacity: 0
+    }
+}
+
 .container-lpf9y1 {
     display: grid;
     grid-template-columns: 24px 1fr;
@@ -154820,4 +154886,4 @@ html .invoiceCancelRow-dVOR64 {
     flex-direction: column
 }
 
-/*# sourceMappingURL=40532.a5cd2b19d54da04c5bfd.css.map*/
+/*# sourceMappingURL=40532.bbfbc27ccc1193f6cdde.css.map*/
