@@ -57,64 +57,7 @@
     "triage": false,
     "pull": false
   },
-  "branches": [
-    {
-      "name": "code-formatter",
-      "commit": {
-        "sha": "2ad7724749a3eb61fdfd401496d8135a9ece0003",
-        "url": "https://api.github.com/repos/discord/SlackTextViewController/commits/2ad7724749a3eb61fdfd401496d8135a9ece0003"
-      },
-      "protected": false
-    },
-    {
-      "name": "feat-input-formatting",
-      "commit": {
-        "sha": "c74de0f7ceb8b6d36fc94f47763ee1dcd5ab89ba",
-        "url": "https://api.github.com/repos/discord/SlackTextViewController/commits/c74de0f7ceb8b6d36fc94f47763ee1dcd5ab89ba"
-      },
-      "protected": false
-    },
-    {
-      "name": "keyboard-panning-v2",
-      "commit": {
-        "sha": "0374fb77549805fdd32aab751b5fefeac182bc7b",
-        "url": "https://api.github.com/repos/discord/SlackTextViewController/commits/0374fb77549805fdd32aab751b5fefeac182bc7b"
-      },
-      "protected": false
-    },
-    {
-      "name": "master",
-      "commit": {
-        "sha": "1df4c0f4a19cd6252c790512ee542344637bd90f",
-        "url": "https://api.github.com/repos/discord/SlackTextViewController/commits/1df4c0f4a19cd6252c790512ee542344637bd90f"
-      },
-      "protected": false
-    },
-    {
-      "name": "stable",
-      "commit": {
-        "sha": "69f366945aaed697d4ba564894a2359c1ad723e1",
-        "url": "https://api.github.com/repos/discord/SlackTextViewController/commits/69f366945aaed697d4ba564894a2359c1ad723e1"
-      },
-      "protected": false
-    },
-    {
-      "name": "swift-example",
-      "commit": {
-        "sha": "c7cf36a97723c08589fc6fad5c142817fcab74c9",
-        "url": "https://api.github.com/repos/discord/SlackTextViewController/commits/c7cf36a97723c08589fc6fad5c142817fcab74c9"
-      },
-      "protected": false
-    },
-    {
-      "name": "text-formatting-fixes",
-      "commit": {
-        "sha": "45563b72463d283b67b6d9f2e1f6b30132107ce3",
-        "url": "https://api.github.com/repos/discord/SlackTextViewController/commits/45563b72463d283b67b6d9f2e1f6b30132107ce3"
-      },
-      "protected": false
-    }
-  ],
+  "branches": [],
   "last5": {
     "commits": [
       {
