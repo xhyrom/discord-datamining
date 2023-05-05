@@ -17,12 +17,12 @@
   "fork": false,
   "url": "https://api.github.com/repos/discord/discord-api-docs",
   "created_at": "2016-03-29T17:11:53Z",
-  "updated_at": "2023-05-05T16:59:44Z",
-  "pushed_at": "2023-05-05T08:31:56Z",
+  "updated_at": "2023-05-05T17:18:36Z",
+  "pushed_at": "2023-05-05T18:07:58Z",
   "homepage": "https://discord.com/developers/docs/intro",
   "size": 59767,
-  "stargazers_count": 5370,
-  "watchers_count": 5370,
+  "stargazers_count": 5371,
+  "watchers_count": 5371,
   "language": "Markdown",
   "has_issues": true,
   "has_projects": false,
@@ -53,7 +53,7 @@
   "visibility": "public",
   "forks": 1264,
   "open_issues": 174,
-  "watchers": 5370,
+  "watchers": 5371,
   "default_branch": "main",
   "permissions": {
     "admin": false,
@@ -65,6 +65,60 @@
   "branches": [],
   "last5": {
     "commits": [
+      {
+        "sha": "7467461237468e01f79ec2d88bcb8b77a024ea34",
+        "node_id": "C_kwDOA0coRtoAKDc0Njc0NjEyMzc0NjhlMDFmNzllYzJkODhiY2I4Yjc3YTAyNGVhMzQ",
+        "commit": {
+          "author": {
+            "name": "advaith",
+            "email": "advaithj1@gmail.com",
+            "date": "2023-05-05T17:51:56Z"
+          },
+          "committer": {
+            "name": "GitHub",
+            "email": "noreply@github.com",
+            "date": "2023-05-05T17:51:56Z"
+          },
+          "message": "Document join raid and mention raid protection (#5778)\n\nDocument join raid and mention raid protection",
+          "tree": {
+            "sha": "da8b849aa4b97ca0e761d1d39d40d474a70cb8e2",
+            "url": "https://api.github.com/repos/discord/discord-api-docs/git/trees/da8b849aa4b97ca0e761d1d39d40d474a70cb8e2"
+          },
+          "url": "https://api.github.com/repos/discord/discord-api-docs/git/commits/7467461237468e01f79ec2d88bcb8b77a024ea34",
+          "comment_count": 0,
+          "verification": {
+            "verified": true,
+            "reason": "valid",
+            "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsBcBAABCAAQBQJkVUI8CRBK7hj4Ov3rIwAAbnYIACWpZ5rMP/31bJmNyWseH7Bg\nBxm/v7CItq8/JG0kUoCw221iM+dUAIM26kP+M2j+srxJtUZntScqxYB4y/OhkyaG\n9ZVlhQ8U/W4aO8UlmXDPKOOvIA59MD3r12b9WVK2GI+MQGRbbWujAWsjw80sQhrA\nVFk7A1otqpfE/otHd1yybdXAXs3XhKa+994YSSQqFqbSPbIfTypfnTdufV1CyX+C\n5JX3ZPYpIDqrEO9wyxUqUcZ6m4+8793vezSYHAkyqG0nGikbjMWiJpFe/LgFkcRk\nvxj828yh3mM5cutFwGWWWnp3rEIBVC776VWc6c6lPDv1HjqfqZ6VxB+yX1wLK8Y=\n=nziD\n-----END PGP SIGNATURE-----\n",
+            "payload": "tree da8b849aa4b97ca0e761d1d39d40d474a70cb8e2\nparent 70bc0f05a90b952f376ac2071dba52225dedf7c6\nauthor advaith <advaithj1@gmail.com> 1683309116 -0700\ncommitter GitHub <noreply@github.com> 1683309116 -0400\n\nDocument join raid and mention raid protection (#5778)\n\nDocument join raid and mention raid protection\r\n"
+          }
+        },
+        "url": "https://api.github.com/repos/discord/discord-api-docs/commits/7467461237468e01f79ec2d88bcb8b77a024ea34",
+        "author": {
+          "login": "advaith1",
+          "id": 11778454,
+          "node_id": "MDQ6VXNlcjExNzc4NDU0",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/advaith1",
+          "type": "User",
+          "site_admin": false
+        },
+        "committer": {
+          "login": "web-flow",
+          "id": 19864447,
+          "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/web-flow",
+          "type": "User",
+          "site_admin": false
+        },
+        "parents": [
+          {
+            "sha": "70bc0f05a90b952f376ac2071dba52225dedf7c6",
+            "url": "https://api.github.com/repos/discord/discord-api-docs/commits/70bc0f05a90b952f376ac2071dba52225dedf7c6"
+          }
+        ]
+      },
       {
         "sha": "70bc0f05a90b952f376ac2071dba52225dedf7c6",
         "node_id": "C_kwDOA0coRtoAKDcwYmMwZjA1YTkwYjk1MmYzNzZhYzIwNzFkYmE1MjIyNWRlZGY3YzY",
@@ -280,64 +334,58 @@
             "url": "https://api.github.com/repos/discord/discord-api-docs/commits/858d43a7c1a7db4c590afedbc157c7ae2a42d8fe"
           }
         ]
-      },
-      {
-        "sha": "858d43a7c1a7db4c590afedbc157c7ae2a42d8fe",
-        "node_id": "C_kwDOA0coRtoAKDg1OGQ0M2E3YzFhN2RiNGM1OTBhZmVkYmMxNTdjN2FlMmE0MmQ4ZmU",
-        "commit": {
-          "author": {
-            "name": "Pedro",
-            "email": "3602279+Doc94@users.noreply.github.com",
-            "date": "2023-04-11T21:30:50Z"
-          },
-          "committer": {
-            "name": "GitHub",
-            "email": "noreply@github.com",
-            "date": "2023-04-11T21:30:50Z"
-          },
-          "message": "Fix json example for onboarding (#6063)\n\nremove the \",\" added in all final of objects.",
-          "tree": {
-            "sha": "fadc5a5ac97f840a712b7efbcd10dad8226e87ad",
-            "url": "https://api.github.com/repos/discord/discord-api-docs/git/trees/fadc5a5ac97f840a712b7efbcd10dad8226e87ad"
-          },
-          "url": "https://api.github.com/repos/discord/discord-api-docs/git/commits/858d43a7c1a7db4c590afedbc157c7ae2a42d8fe",
-          "comment_count": 0,
-          "verification": {
-            "verified": true,
-            "reason": "valid",
-            "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsBcBAABCAAQBQJkNdGKCRBK7hj4Ov3rIwAAF9YIAHq2IUbj8TzReilF2AIbjWsU\n3/tFwP9I1uSFcx1hel4kyit+iftfJpNbhixLnKdRb+m+CPCPhHtcFGtOkBdxWOss\nqXL63CDVAoD79JuOvalKpJcN4cp32Hrb5Ee7Wo1Aae3jSMvwpxYsFmwi753gAPyt\nq8HlxY04AKaQx2nM7NBe+V/KzbXMDHBFBQUxn1ZmT+4NR4bKcbKSCSmK18YYk3Z6\n2s9SeybLgoWd1jVtUavSuHZFU224tAtvWCitd6urE0X0uSHG0fcXO9Y1KYgVjmXH\nblyMZ3is0+lRjHpLCIU6Te/6h/NRBM6Y2yF4BRa5y6m6qDx3kE0FamvZNmp7u8k=\n=5+ls\n-----END PGP SIGNATURE-----\n",
-            "payload": "tree fadc5a5ac97f840a712b7efbcd10dad8226e87ad\nparent 88a761816b26d6891f8a276683bf57a4133aa233\nauthor Pedro <3602279+Doc94@users.noreply.github.com> 1681248650 -0400\ncommitter GitHub <noreply@github.com> 1681248650 -0700\n\nFix json example for onboarding (#6063)\n\nremove the \",\" added in all final of objects."
-          }
-        },
-        "url": "https://api.github.com/repos/discord/discord-api-docs/commits/858d43a7c1a7db4c590afedbc157c7ae2a42d8fe",
-        "author": {
-          "login": "Doc94",
-          "id": 3602279,
-          "node_id": "MDQ6VXNlcjM2MDIyNzk=",
-          "gravatar_id": "",
-          "url": "https://api.github.com/users/Doc94",
-          "type": "User",
-          "site_admin": false
-        },
-        "committer": {
-          "login": "web-flow",
-          "id": 19864447,
-          "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
-          "gravatar_id": "",
-          "url": "https://api.github.com/users/web-flow",
-          "type": "User",
-          "site_admin": false
-        },
-        "parents": [
-          {
-            "sha": "88a761816b26d6891f8a276683bf57a4133aa233",
-            "url": "https://api.github.com/repos/discord/discord-api-docs/commits/88a761816b26d6891f8a276683bf57a4133aa233"
-          }
-        ]
       }
     ],
     "releases": [],
     "issues": [
+      {
+        "url": "https://api.github.com/repos/discord/discord-api-docs/issues/6133",
+        "id": 1697997665,
+        "node_id": "PR_kwDOA0coRs5P4i-z",
+        "number": 6133,
+        "title": "Update changelog for join raid and mention raid changes",
+        "user": {
+          "login": "hemu",
+          "id": 1871299,
+          "node_id": "MDQ6VXNlcjE4NzEyOTk=",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/hemu",
+          "type": "User",
+          "site_admin": false
+        },
+        "labels": [],
+        "state": "open",
+        "locked": false,
+        "assignee": null,
+        "assignees": [],
+        "milestone": null,
+        "comments": 0,
+        "created_at": "2023-05-05T18:07:57Z",
+        "updated_at": "2023-05-05T18:08:19Z",
+        "closed_at": null,
+        "author_association": "CONTRIBUTOR",
+        "active_lock_reason": null,
+        "draft": false,
+        "pull_request": {
+          "url": "https://api.github.com/repos/discord/discord-api-docs/pulls/6133",
+          "merged_at": null
+        },
+        "body": "See: https://github.com/discord/discord-api-docs/pull/5778",
+        "reactions": {
+          "url": "https://api.github.com/repos/discord/discord-api-docs/issues/6133/reactions",
+          "total_count": 1,
+          "+1": 0,
+          "-1": 0,
+          "laugh": 0,
+          "hooray": 0,
+          "confused": 0,
+          "heart": 1,
+          "rocket": 0,
+          "eyes": 0
+        },
+        "performed_via_github_app": null,
+        "state_reason": null
+      },
       {
         "url": "https://api.github.com/repos/discord/discord-api-docs/issues/6131",
         "id": 1696487452,
@@ -409,7 +457,7 @@
         "milestone": null,
         "comments": 0,
         "created_at": "2023-05-04T17:35:57Z",
-        "updated_at": "2023-05-05T15:50:58Z",
+        "updated_at": "2023-05-05T18:10:47Z",
         "closed_at": null,
         "author_association": "CONTRIBUTOR",
         "active_lock_reason": null,
@@ -548,59 +596,6 @@
         },
         "performed_via_github_app": null,
         "state_reason": null
-      },
-      {
-        "url": "https://api.github.com/repos/discord/discord-api-docs/issues/6126",
-        "id": 1690330698,
-        "node_id": "I_kwDOA0coRs5kwGZK",
-        "number": 6126,
-        "title": "RequestAbortedError [AbortError]: Request aborted",
-        "user": {
-          "login": "qiaokeli111",
-          "id": 39187010,
-          "node_id": "MDQ6VXNlcjM5MTg3MDEw",
-          "gravatar_id": "",
-          "url": "https://api.github.com/users/qiaokeli111",
-          "type": "User",
-          "site_admin": false
-        },
-        "labels": [
-          {
-            "id": 349418148,
-            "node_id": "MDU6TGFiZWwzNDk0MTgxNDg=",
-            "url": "https://api.github.com/repos/discord/discord-api-docs/labels/bug",
-            "name": "bug",
-            "color": "ee0701",
-            "default": true,
-            "description": null
-          }
-        ],
-        "state": "closed",
-        "locked": false,
-        "assignee": null,
-        "assignees": [],
-        "milestone": null,
-        "comments": 1,
-        "created_at": "2023-05-01T03:58:39Z",
-        "updated_at": "2023-05-01T03:59:40Z",
-        "closed_at": "2023-05-01T03:59:40Z",
-        "author_association": "NONE",
-        "active_lock_reason": null,
-        "body": "### Description\n\nthis is my code,im sure my token is right,help me plz\r\n\r\nand the error is\r\nD:\\czj\\web3\\learn\\node_modules\\_undici@5.21.2@undici\\lib\\api\\abort-signal.js:10\r\nself.onError(new RequestAbortedError())\r\n^\r\n\r\nRequestAbortedError [AbortError]: Request aborted\r\nat abort (D:\\czj\\web3\\learn\\node_modules\\_undici@5.21.2@undici\\lib\\api\\abort-signal.js:10:18)\r\nat AbortSignal.self.<computed> (D:\\czj\\web3\\learn\\node_modules\\_undici@5.21.2@undici\\lib\\api\\abort-signal.js:29:5)\r\nat AbortSignal.[nodejs.internal.kHybridDispatch] (node:internal/event_target:736:20)\r\nat AbortSignal.dispatchEvent (node:internal/event_target:678:26)\r\nat abortSignal (node:internal/abort_controller:292:10)\r\nat AbortController.abort (node:internal/abort_controller:323:5)\r\nat Timeout.<anonymous> (D:\\czj\\web3\\learn\\node_modules\\_@discordjs_rest@1.7.0@@discordjs\\rest\\dist\\index.js:589:71)\r\nat listOnTimeout (node:internal/timers:559:17)\r\nat processTimers (node:internal/timers:502:7) {\r\ncode: 'UND_ERR_ABORTED'\r\n}\n\n### Steps to Reproduce\n\nconst { Client, Events, GatewayIntentBits,REST, Routes } = require('discord.js');\r\n\r\nconst client = new Client({ intents: [\r\nGatewayIntentBits.Guilds,\r\nGatewayIntentBits.MessageContent,\r\nGatewayIntentBits.GuildMessages\r\n]\r\n});\r\n\r\nclient.on('ready', () => {\r\nconsole.log(`Logged in as ${client.user.tag}!`);\r\n});\r\n\r\nclient.login('MTEwMjE2OTQ4OTI5MTg3MDI0MA.Gs-eiH.Gim7ZM2ConA9q7X-0G6UbwXqtFIFdTszFgYIJY');\n\n### Expected Behavior\n\nit can be right\n\n### Current Behavior\n\nshow error\n\n### Screenshots/Videos\n\n_No response_\n\n### Client and System Information\n\nnode v16.18.0  \"discord.io\": \"^2.5.3\",",
-        "reactions": {
-          "url": "https://api.github.com/repos/discord/discord-api-docs/issues/6126/reactions",
-          "total_count": 0,
-          "+1": 0,
-          "-1": 0,
-          "laugh": 0,
-          "hooray": 0,
-          "confused": 0,
-          "heart": 0,
-          "rocket": 0,
-          "eyes": 0
-        },
-        "performed_via_github_app": null,
-        "state_reason": "completed"
       }
     ],
     "pullRequests": []
