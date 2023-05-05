@@ -132715,14 +132715,24 @@ html .invoiceCancelRow-3s2UuC {
     pointer-events: none
 }
 
-.greenBalloon-2XYU8h {
-    fill: var(--discord-8th-bday-pink)
+.balloon-1FK4e1 {
+    stroke-width: 0;
+    stroke-linejoin: round;
+    -webkit-transition: stroke-width .3s;
+    transition: stroke-width .3s
 }
 
-.greenBalloon-2XYU8h:focus {
-    stroke: var(--discord-8th-bday-pink);
-    stroke-width: 3px;
-    stroke-linejoin: round
+.balloon-1FK4e1:hover {
+    stroke-width: 3px
+}
+
+.balloon-1FK4e1:focus {
+    stroke-width: 5px
+}
+
+.greenBalloon-2XYU8h {
+    fill: var(--discord-8th-bday-pink);
+    stroke: var(--discord-8th-bday-pink)
 }
 
 .greenDots-3eGZY8 {
@@ -132730,13 +132740,8 @@ html .invoiceCancelRow-3s2UuC {
 }
 
 .blueBalloon-3l9Fzm {
-    fill: var(--discord-8th-bday-pink)
-}
-
-.blueBalloon-3l9Fzm:focus {
-    stroke: var(--discord-8th-bday-pink);
-    stroke-width: 3px;
-    stroke-linejoin: round
+    fill: var(--discord-8th-bday-pink);
+    stroke: var(--discord-8th-bday-pink)
 }
 
 .blueDots-1CJ-qF {
@@ -132744,17 +132749,172 @@ html .invoiceCancelRow-3s2UuC {
 }
 
 .pinkBalloon-1sjRZy {
-    fill: var(--discord-8th-bday-green)
-}
-
-.pinkBalloon-1sjRZy:focus {
-    stroke: var(--discord-8th-bday-green);
-    stroke-width: 3px;
-    stroke-linejoin: round
+    fill: var(--discord-8th-bday-green);
+    stroke: var(--discord-8th-bday-green)
 }
 
 .pinkDots-32joAj {
     fill: var(--discord-8th-bday-pink)
+}
+
+.rocket-1yvfNV {
+    opacity: 0;
+    -webkit-animation: fly-31hrO1 5s linear;
+    animation: fly-31hrO1 5s linear;
+    top: 0;
+    left: 0;
+    position: fixed;
+    pointer-events: none
+}
+
+@-webkit-keyframes fly-31hrO1 {
+    0% {
+        opacity: 1;
+        -webkit-transform: translate(-10vw, 110vh) rotate(0deg) scale(1);
+        transform: translate(-10vw, 110vh) rotate(0deg) scale(1)
+    }
+
+    10% {
+        -webkit-transform: translate(50vw, 50vh) rotate(90deg) scale(3);
+        transform: translate(50vw, 50vh) rotate(90deg) scale(3)
+    }
+
+    20% {
+        -webkit-transform: translate(110vw, -10vh) rotate(180deg) scale(1);
+        transform: translate(110vw, -10vh) rotate(180deg) scale(1)
+    }
+
+    21% {
+        -webkit-transform: translate(-10vw, -10vh) rotate(0deg) scale(1);
+        transform: translate(-10vw, -10vh) rotate(0deg) scale(1)
+    }
+
+    30% {
+        -webkit-transform: translate(50vw, 50vh) rotate(1turn) scale(2);
+        transform: translate(50vw, 50vh) rotate(1turn) scale(2)
+    }
+
+    40% {
+        -webkit-transform: translate(110vw, 110vh) rotate(3turn) scale(1);
+        transform: translate(110vw, 110vh) rotate(3turn) scale(1)
+    }
+
+    40.5% {
+        -webkit-transform: translate(-10vw, 110vh) rotate(3turn) scale(1);
+        transform: translate(-10vw, 110vh) rotate(3turn) scale(1)
+    }
+
+    41% {
+        -webkit-transform: translate(-10vw, 50vh) rotate(0deg) scale(1);
+        transform: translate(-10vw, 50vh) rotate(0deg) scale(1)
+    }
+
+    60% {
+        -webkit-transform: translate(-10vw, 50vh) rotate(0deg) scale(.1);
+        transform: translate(-10vw, 50vh) rotate(0deg) scale(.1)
+    }
+
+    65% {
+        -webkit-transform: translate(20vw, 50vh) rotate(0deg) scale(1);
+        transform: translate(20vw, 50vh) rotate(0deg) scale(1)
+    }
+
+    70% {
+        -webkit-transform: translate(20vw, 50vh) rotate(0deg) scale(1);
+        transform: translate(20vw, 50vh) rotate(0deg) scale(1)
+    }
+
+    75% {
+        -webkit-transform: translate(60vw, 50vh) rotate(-30deg) scale(1);
+        transform: translate(60vw, 50vh) rotate(-30deg) scale(1)
+    }
+
+    99% {
+        -webkit-transform: translate(300vw, 50vh) rotate(-30deg) scale(1);
+        transform: translate(300vw, 50vh) rotate(-30deg) scale(1);
+        opacity: 1
+    }
+
+    to {
+        -webkit-transform: translate(-200%, 110vh) rotate(0deg);
+        transform: translate(-200%, 110vh) rotate(0deg);
+        opacity: 0
+    }
+}
+
+@keyframes fly-31hrO1 {
+    0% {
+        opacity: 1;
+        -webkit-transform: translate(-10vw, 110vh) rotate(0deg) scale(1);
+        transform: translate(-10vw, 110vh) rotate(0deg) scale(1)
+    }
+
+    10% {
+        -webkit-transform: translate(50vw, 50vh) rotate(90deg) scale(3);
+        transform: translate(50vw, 50vh) rotate(90deg) scale(3)
+    }
+
+    20% {
+        -webkit-transform: translate(110vw, -10vh) rotate(180deg) scale(1);
+        transform: translate(110vw, -10vh) rotate(180deg) scale(1)
+    }
+
+    21% {
+        -webkit-transform: translate(-10vw, -10vh) rotate(0deg) scale(1);
+        transform: translate(-10vw, -10vh) rotate(0deg) scale(1)
+    }
+
+    30% {
+        -webkit-transform: translate(50vw, 50vh) rotate(1turn) scale(2);
+        transform: translate(50vw, 50vh) rotate(1turn) scale(2)
+    }
+
+    40% {
+        -webkit-transform: translate(110vw, 110vh) rotate(3turn) scale(1);
+        transform: translate(110vw, 110vh) rotate(3turn) scale(1)
+    }
+
+    40.5% {
+        -webkit-transform: translate(-10vw, 110vh) rotate(3turn) scale(1);
+        transform: translate(-10vw, 110vh) rotate(3turn) scale(1)
+    }
+
+    41% {
+        -webkit-transform: translate(-10vw, 50vh) rotate(0deg) scale(1);
+        transform: translate(-10vw, 50vh) rotate(0deg) scale(1)
+    }
+
+    60% {
+        -webkit-transform: translate(-10vw, 50vh) rotate(0deg) scale(.1);
+        transform: translate(-10vw, 50vh) rotate(0deg) scale(.1)
+    }
+
+    65% {
+        -webkit-transform: translate(20vw, 50vh) rotate(0deg) scale(1);
+        transform: translate(20vw, 50vh) rotate(0deg) scale(1)
+    }
+
+    70% {
+        -webkit-transform: translate(20vw, 50vh) rotate(0deg) scale(1);
+        transform: translate(20vw, 50vh) rotate(0deg) scale(1)
+    }
+
+    75% {
+        -webkit-transform: translate(60vw, 50vh) rotate(-30deg) scale(1);
+        transform: translate(60vw, 50vh) rotate(-30deg) scale(1)
+    }
+
+    99% {
+        -webkit-transform: translate(300vw, 50vh) rotate(-30deg) scale(1);
+        transform: translate(300vw, 50vh) rotate(-30deg) scale(1);
+        opacity: 1
+    }
+
+    to {
+        -webkit-transform: translate(-200%, 110vh) rotate(0deg);
+        transform: translate(-200%, 110vh) rotate(0deg);
+        opacity: 0
+    }
 }
 
 .outerContainer-2qLQSo {
@@ -154886,4 +155046,4 @@ html .invoiceCancelRow-dVOR64 {
     flex-direction: column
 }
 
-/*# sourceMappingURL=40532.bbfbc27ccc1193f6cdde.css.map*/
+/*# sourceMappingURL=40532.cdaaf795dda02e9144c9.css.map*/
