@@ -133073,24 +133073,20 @@ html .invoiceCancelRow-3s2UuC {
 
 .activityGridHeader-kurtV_ {
     margin-top: 16px;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
     -webkit-box-pack: justify;
     -ms-flex-pack: justify;
     justify-content: space-between
 }
 
-.activityGridSubTitle-3j8RxM {
-    margin-top: 4px;
-    color: var(--header-secondary)
+.activityGridHeader-kurtV_,
+.activityGridToggle-cOwMvl {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex
 }
 
 .activityGridToggle-cOwMvl {
     cursor: pointer;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center
@@ -155052,4 +155048,4 @@ html .invoiceCancelRow-dVOR64 {
     flex-direction: column
 }
 
-/*# sourceMappingURL=40532.8aa834cccbb33097c185.css.map*/
+/*# sourceMappingURL=40532.9ae4dcbb4e5c086fe3cf.css.map*/
