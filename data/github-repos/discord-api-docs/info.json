@@ -17,12 +17,12 @@
   "fork": false,
   "url": "https://api.github.com/repos/discord/discord-api-docs",
   "created_at": "2016-03-29T17:11:53Z",
-  "updated_at": "2023-05-06T09:34:01Z",
-  "pushed_at": "2023-05-05T18:07:58Z",
+  "updated_at": "2023-05-06T10:40:54Z",
+  "pushed_at": "2023-05-06T10:51:47Z",
   "homepage": "https://discord.com/developers/docs/intro",
   "size": 59776,
-  "stargazers_count": 5372,
-  "watchers_count": 5372,
+  "stargazers_count": 5374,
+  "watchers_count": 5374,
   "language": "Markdown",
   "has_issues": true,
   "has_projects": false,
@@ -33,7 +33,7 @@
   "forks_count": 1264,
   "archived": false,
   "disabled": false,
-  "open_issues_count": 174,
+  "open_issues_count": 176,
   "license": {
     "key": "other",
     "name": "Other",
@@ -52,8 +52,8 @@
   ],
   "visibility": "public",
   "forks": 1264,
-  "open_issues": 174,
-  "watchers": 5372,
+  "open_issues": 176,
+  "watchers": 5374,
   "default_branch": "main",
   "permissions": {
     "admin": false,
@@ -339,6 +339,107 @@
     "releases": [],
     "issues": [
       {
+        "url": "https://api.github.com/repos/discord/discord-api-docs/issues/6135",
+        "id": 1698580391,
+        "node_id": "PR_kwDOA0coRs5P6fex",
+        "number": 6135,
+        "title": "update emoji gateway event information",
+        "user": {
+          "login": "Lulalaby",
+          "id": 14029133,
+          "node_id": "MDQ6VXNlcjE0MDI5MTMz",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/Lulalaby",
+          "type": "User",
+          "site_admin": false
+        },
+        "labels": [],
+        "state": "open",
+        "locked": false,
+        "assignee": null,
+        "assignees": [],
+        "milestone": null,
+        "comments": 0,
+        "created_at": "2023-05-06T10:51:47Z",
+        "updated_at": "2023-05-06T10:53:20Z",
+        "closed_at": null,
+        "author_association": "CONTRIBUTOR",
+        "active_lock_reason": null,
+        "draft": false,
+        "pull_request": {
+          "url": "https://api.github.com/repos/discord/discord-api-docs/pulls/6135",
+          "merged_at": null
+        },
+        "body": "`MESSAGE_REACTION_REMOVE` and `MESSAGE_REACTION_REMOVE_EMOJI` has the field `emoji`.`animated` now when the reaction emoji was animated.\r\n\r\nRef: https://discord.com/channels/613425648685547541/801247546151403531/1104171572375326782\r\n\r\nNote: This is currently rolling out to stable",
+        "reactions": {
+          "url": "https://api.github.com/repos/discord/discord-api-docs/issues/6135/reactions",
+          "total_count": 0,
+          "+1": 0,
+          "-1": 0,
+          "laugh": 0,
+          "hooray": 0,
+          "confused": 0,
+          "heart": 0,
+          "rocket": 0,
+          "eyes": 0
+        },
+        "performed_via_github_app": null,
+        "state_reason": null
+      },
+      {
+        "url": "https://api.github.com/repos/discord/discord-api-docs/issues/6134",
+        "id": 1698579711,
+        "node_id": "I_kwDOA0coRs5lPkT_",
+        "number": 6134,
+        "title": "Suz's Bug",
+        "user": {
+          "login": "susieinkansas",
+          "id": 22153127,
+          "node_id": "MDQ6VXNlcjIyMTUzMTI3",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/susieinkansas",
+          "type": "User",
+          "site_admin": false
+        },
+        "labels": [
+          {
+            "id": 349418148,
+            "node_id": "MDU6TGFiZWwzNDk0MTgxNDg=",
+            "url": "https://api.github.com/repos/discord/discord-api-docs/labels/bug",
+            "name": "bug",
+            "color": "ee0701",
+            "default": true,
+            "description": null
+          }
+        ],
+        "state": "open",
+        "locked": false,
+        "assignee": null,
+        "assignees": [],
+        "milestone": null,
+        "comments": 1,
+        "created_at": "2023-05-06T10:49:28Z",
+        "updated_at": "2023-05-06T10:58:46Z",
+        "closed_at": null,
+        "author_association": "NONE",
+        "active_lock_reason": null,
+        "body": "### Description\n\nMissing everything \n\n### Steps to Reproduce\n\nIdk\n\n### Expected Behavior\n\nMissing servers and friends \n\n### Current Behavior\n\nMissing everything \n\n### Screenshots/Videos\n\n_No response_\n\n### Client and System Information\n\nAndroid ",
+        "reactions": {
+          "url": "https://api.github.com/repos/discord/discord-api-docs/issues/6134/reactions",
+          "total_count": 2,
+          "+1": 0,
+          "-1": 0,
+          "laugh": 0,
+          "hooray": 0,
+          "confused": 2,
+          "heart": 0,
+          "rocket": 0,
+          "eyes": 0
+        },
+        "performed_via_github_app": null,
+        "state_reason": null
+      },
+      {
         "url": "https://api.github.com/repos/discord/discord-api-docs/issues/6133",
         "id": 1697997665,
         "node_id": "PR_kwDOA0coRs5P4i-z",
@@ -481,1154 +582,8 @@
         },
         "performed_via_github_app": null,
         "state_reason": null
-      },
-      {
-        "url": "https://api.github.com/repos/discord/discord-api-docs/issues/6129",
-        "id": 1696123111,
-        "node_id": "I_kwDOA0coRs5lGMjn",
-        "number": 6129,
-        "title": "`INVITE_*` gateway events now require `MANAGE_CHANNELS` in every channel or `ADMINISTRATOR` globally",
-        "user": {
-          "login": "hampuskraft",
-          "id": 24176136,
-          "node_id": "MDQ6VXNlcjI0MTc2MTM2",
-          "gravatar_id": "",
-          "url": "https://api.github.com/users/hampuskraft",
-          "type": "User",
-          "site_admin": false
-        },
-        "labels": [
-          {
-            "id": 349418148,
-            "node_id": "MDU6TGFiZWwzNDk0MTgxNDg=",
-            "url": "https://api.github.com/repos/discord/discord-api-docs/labels/bug",
-            "name": "bug",
-            "color": "ee0701",
-            "default": true,
-            "description": null
-          }
-        ],
-        "state": "closed",
-        "locked": false,
-        "assignee": null,
-        "assignees": [],
-        "milestone": null,
-        "comments": 3,
-        "created_at": "2023-05-04T14:18:15Z",
-        "updated_at": "2023-05-04T18:18:02Z",
-        "closed_at": "2023-05-04T18:18:01Z",
-        "author_association": "CONTRIBUTOR",
-        "active_lock_reason": null,
-        "body": "### Description\r\n\r\nDespite having the correct intents set, receiving any `INVITE_*` events over the gateway now requires `ADMINISTRATOR` (1 << 3) globally or `MANAGE_CHANNELS` (1 << 4) in every channel it should receive events for. An invite logger bot in a smaller server was functioning just fine until recently. The last known working timestamp is `2023-05-02T12:43:47.638Z`, but seeing as nobody has reported this bug here yet, I'd guess it's a very recent change.\r\n\r\n### Steps to Reproduce\r\n\r\n1. Add a bot to a guild and assign it a role with `MANAGE_GUILD` (1 << 5).\r\n2. Connect to the gateway using the bot token and specify the `GUILD_INVITES` (1 << 6) intent.\r\n3. Create/delete an invite using relevant endpoints and observe how no `INVITE_*` events are received.\r\n4. Assign the role every single permission *but* `ADMINISTRATOR` (1 << 3).\r\n5. Repeat step 3, with the same result.\r\n6. Now, assign `ADMINISTRATOR` (1 << 3), and repeat step 3. This time `INVITE_*` events are received.\r\n7. Remove all permissions but `MANAGE_GUILD` (1 << 5) from the role and create a permission overwrite for the role in the channel(s) in question with `MANAGE_CHANNELS` (1 << 4).\r\n8. Repeat step 3. This time `INVITE_*` events are received for that channel only.\r\n\r\n### Expected Behavior\r\n\r\nEither one of `MANAGE_GUILD` (1 << 5) globally or `MANAGE_CHANNELS` (1 << 4) per channel should be required, which remains the check for the `GET /guilds/<guild_id>/invites` endpoint (not filtered by `MANAGE_CHANNELS` permission overwrites in the channels).\r\n\r\n### Current Behavior\r\n\r\n`ADMINISTRATOR` (1 << 3) is now required to receive such events globally, or `MANAGE_CHANNELS` (1 << 4) in every channel it should receive events for.\r\n\r\n### Screenshots/Videos\r\n\r\nhttps://user-images.githubusercontent.com/24176136/236239307-67b7eeb9-18e0-4e3a-8200-6dbb9d704488.mp4\r\n\r\n### Client and System Information\r\n\r\nN/A, directly using the latest stable API & gateway.",
-        "reactions": {
-          "url": "https://api.github.com/repos/discord/discord-api-docs/issues/6129/reactions",
-          "total_count": 0,
-          "+1": 0,
-          "-1": 0,
-          "laugh": 0,
-          "hooray": 0,
-          "confused": 0,
-          "heart": 0,
-          "rocket": 0,
-          "eyes": 0
-        },
-        "performed_via_github_app": null,
-        "state_reason": "completed"
-      },
-      {
-        "url": "https://api.github.com/repos/discord/discord-api-docs/issues/6127",
-        "id": 1693018810,
-        "node_id": "I_kwDOA0coRs5k6Wq6",
-        "number": 6127,
-        "title": "Onboarding adds deleted roles to member's role property",
-        "user": {
-          "login": "hackermondev",
-          "id": 60828015,
-          "node_id": "MDQ6VXNlcjYwODI4MDE1",
-          "gravatar_id": "",
-          "url": "https://api.github.com/users/hackermondev",
-          "type": "User",
-          "site_admin": false
-        },
-        "labels": [
-          {
-            "id": 349418148,
-            "node_id": "MDU6TGFiZWwzNDk0MTgxNDg=",
-            "url": "https://api.github.com/repos/discord/discord-api-docs/labels/bug",
-            "name": "bug",
-            "color": "ee0701",
-            "default": true,
-            "description": null
-          },
-          {
-            "id": 2631834352,
-            "node_id": "MDU6TGFiZWwyNjMxODM0MzUy",
-            "url": "https://api.github.com/repos/discord/discord-api-docs/labels/synced",
-            "name": "synced",
-            "color": "BFD4F2",
-            "default": false,
-            "description": "Synced to internal tracker"
-          }
-        ],
-        "state": "open",
-        "locked": false,
-        "assignee": null,
-        "assignees": [],
-        "milestone": null,
-        "comments": 0,
-        "created_at": "2023-05-02T19:57:07Z",
-        "updated_at": "2023-05-03T18:28:43Z",
-        "closed_at": null,
-        "author_association": "NONE",
-        "active_lock_reason": null,
-        "body": "### Description\r\n\r\nIf you assign a role to a prompt in Onboarding, then delete the role, the prompt is not changed and when users choose it in Onboarding, the role id will be added to their member object even though the role doesn't exist anymore.\r\n\r\nThis can break the functionality of bots and API libraries if they try to fetch role information of a role that doesn't exist.\r\n\r\n### Steps to Reproduce\r\n\r\n1. Create a role\r\n2. Enable Onboarding\r\n3. Assign the role for a prompt in Onboarding\r\n4. Delete the role\r\n5. From another account, join the server and choose the prompt during Onboarding\r\n\r\n### Expected Behavior\r\n\r\nEither the API should stop the role from being deleted if used in Onboarding, or not add the role ID to the member's object.\r\n\r\n### Current Behavior\r\n\r\nThe role ID is added to the member's `role` property in the user object and its returned when the member is fetched but the role doesn't exist anymore.\r\n\r\n### Screenshots/Videos\r\n\r\n_No response_\r\n\r\n### Client and System Information\r\n\r\nStable 194296 (68c6883) Windows 10 64-Bit",
-        "reactions": {
-          "url": "https://api.github.com/repos/discord/discord-api-docs/issues/6127/reactions",
-          "total_count": 0,
-          "+1": 0,
-          "-1": 0,
-          "laugh": 0,
-          "hooray": 0,
-          "confused": 0,
-          "heart": 0,
-          "rocket": 0,
-          "eyes": 0
-        },
-        "performed_via_github_app": null,
-        "state_reason": null
       }
     ],
-    "pullRequests": [
-      {
-        "url": "https://api.github.com/repos/discord/discord-api-docs/pulls/6133",
-        "id": 1340223411,
-        "node_id": "PR_kwDOA0coRs5P4i-z",
-        "number": 6133,
-        "state": "open",
-        "locked": false,
-        "title": "Update changelog for join raid and mention raid changes",
-        "user": {
-          "login": "hemu",
-          "id": 1871299,
-          "node_id": "MDQ6VXNlcjE4NzEyOTk=",
-          "gravatar_id": "",
-          "url": "https://api.github.com/users/hemu",
-          "type": "User",
-          "site_admin": false
-        },
-        "body": "See: https://github.com/discord/discord-api-docs/pull/5778",
-        "created_at": "2023-05-05T18:07:57Z",
-        "updated_at": "2023-05-05T20:05:26Z",
-        "closed_at": null,
-        "merged_at": null,
-        "merge_commit_sha": "289b9fd2286ab408f75cd8748459a7c52400e154",
-        "assignee": null,
-        "assignees": [],
-        "requested_reviewers": [
-          {
-            "login": "shaydewael",
-            "id": 3411005,
-            "node_id": "MDQ6VXNlcjM0MTEwMDU=",
-            "gravatar_id": "",
-            "url": "https://api.github.com/users/shaydewael",
-            "type": "User",
-            "site_admin": false
-          }
-        ],
-        "requested_teams": [],
-        "labels": [],
-        "milestone": null,
-        "draft": false,
-        "head": {
-          "label": "discord:h/update-change-log-for-raids",
-          "ref": "h/update-change-log-for-raids",
-          "sha": "0e98275bc2d30b448a1994d7381a422d9ac61a17",
-          "user": {
-            "login": "discord",
-            "id": 1965106,
-            "node_id": "MDEyOk9yZ2FuaXphdGlvbjE5NjUxMDY=",
-            "gravatar_id": "",
-            "url": "https://api.github.com/users/discord",
-            "type": "Organization",
-            "site_admin": false
-          },
-          "repo": {
-            "id": 54995014,
-            "node_id": "MDEwOlJlcG9zaXRvcnk1NDk5NTAxNA==",
-            "name": "discord-api-docs",
-            "full_name": "discord/discord-api-docs",
-            "private": false,
-            "owner": {
-              "login": "discord",
-              "id": 1965106,
-              "node_id": "MDEyOk9yZ2FuaXphdGlvbjE5NjUxMDY=",
-              "gravatar_id": "",
-              "url": "https://api.github.com/users/discord",
-              "type": "Organization",
-              "site_admin": false
-            },
-            "description": "Official Discord API Documentation",
-            "fork": false,
-            "url": "https://api.github.com/repos/discord/discord-api-docs",
-            "created_at": "2016-03-29T17:11:53Z",
-            "updated_at": "2023-05-06T09:34:01Z",
-            "pushed_at": "2023-05-05T18:07:58Z",
-            "homepage": "https://discord.com/developers/docs/intro",
-            "size": 59776,
-            "stargazers_count": 5372,
-            "watchers_count": 5372,
-            "language": "Markdown",
-            "has_issues": true,
-            "has_projects": false,
-            "has_downloads": true,
-            "has_wiki": false,
-            "has_pages": false,
-            "has_discussions": true,
-            "forks_count": 1264,
-            "archived": false,
-            "disabled": false,
-            "open_issues_count": 174,
-            "license": {
-              "key": "other",
-              "name": "Other",
-              "spdx_id": "NOASSERTION",
-              "url": null,
-              "node_id": "MDc6TGljZW5zZTA="
-            },
-            "allow_forking": true,
-            "is_template": false,
-            "web_commit_signoff_required": false,
-            "topics": [
-              "discord",
-              "discord-api",
-              "discordapp",
-              "memescale"
-            ],
-            "visibility": "public",
-            "forks": 1264,
-            "open_issues": 174,
-            "watchers": 5372,
-            "default_branch": "main"
-          }
-        },
-        "base": {
-          "label": "discord:main",
-          "ref": "main",
-          "sha": "7467461237468e01f79ec2d88bcb8b77a024ea34",
-          "user": {
-            "login": "discord",
-            "id": 1965106,
-            "node_id": "MDEyOk9yZ2FuaXphdGlvbjE5NjUxMDY=",
-            "gravatar_id": "",
-            "url": "https://api.github.com/users/discord",
-            "type": "Organization",
-            "site_admin": false
-          },
-          "repo": {
-            "id": 54995014,
-            "node_id": "MDEwOlJlcG9zaXRvcnk1NDk5NTAxNA==",
-            "name": "discord-api-docs",
-            "full_name": "discord/discord-api-docs",
-            "private": false,
-            "owner": {
-              "login": "discord",
-              "id": 1965106,
-              "node_id": "MDEyOk9yZ2FuaXphdGlvbjE5NjUxMDY=",
-              "gravatar_id": "",
-              "url": "https://api.github.com/users/discord",
-              "type": "Organization",
-              "site_admin": false
-            },
-            "description": "Official Discord API Documentation",
-            "fork": false,
-            "url": "https://api.github.com/repos/discord/discord-api-docs",
-            "created_at": "2016-03-29T17:11:53Z",
-            "updated_at": "2023-05-06T09:34:01Z",
-            "pushed_at": "2023-05-05T18:07:58Z",
-            "homepage": "https://discord.com/developers/docs/intro",
-            "size": 59776,
-            "stargazers_count": 5372,
-            "watchers_count": 5372,
-            "language": "Markdown",
-            "has_issues": true,
-            "has_projects": false,
-            "has_downloads": true,
-            "has_wiki": false,
-            "has_pages": false,
-            "has_discussions": true,
-            "forks_count": 1264,
-            "archived": false,
-            "disabled": false,
-            "open_issues_count": 174,
-            "license": {
-              "key": "other",
-              "name": "Other",
-              "spdx_id": "NOASSERTION",
-              "url": null,
-              "node_id": "MDc6TGljZW5zZTA="
-            },
-            "allow_forking": true,
-            "is_template": false,
-            "web_commit_signoff_required": false,
-            "topics": [
-              "discord",
-              "discord-api",
-              "discordapp",
-              "memescale"
-            ],
-            "visibility": "public",
-            "forks": 1264,
-            "open_issues": 174,
-            "watchers": 5372,
-            "default_branch": "main"
-          }
-        },
-        "_links": {
-          "self": {
-            "href": "https://api.github.com/repos/discord/discord-api-docs/pulls/6133"
-          },
-          "html": {
-            "href": "https://github.com/discord/discord-api-docs/pull/6133"
-          },
-          "issue": {
-            "href": "https://api.github.com/repos/discord/discord-api-docs/issues/6133"
-          },
-          "comments": {
-            "href": "https://api.github.com/repos/discord/discord-api-docs/issues/6133/comments"
-          },
-          "review_comments": {
-            "href": "https://api.github.com/repos/discord/discord-api-docs/pulls/6133/comments"
-          },
-          "review_comment": {
-            "href": "https://api.github.com/repos/discord/discord-api-docs/pulls/comments{/number}"
-          },
-          "commits": {
-            "href": "https://api.github.com/repos/discord/discord-api-docs/pulls/6133/commits"
-          },
-          "statuses": {
-            "href": "https://api.github.com/repos/discord/discord-api-docs/statuses/0e98275bc2d30b448a1994d7381a422d9ac61a17"
-          }
-        },
-        "author_association": "CONTRIBUTOR",
-        "auto_merge": null,
-        "active_lock_reason": null
-      },
-      {
-        "url": "https://api.github.com/repos/discord/discord-api-docs/pulls/6131",
-        "id": 1338878411,
-        "node_id": "PR_kwDOA0coRs5PzanL",
-        "number": 6131,
-        "state": "open",
-        "locked": false,
-        "title": "Update invite gateway event docs",
-        "user": {
-          "login": "hampuskraft",
-          "id": 24176136,
-          "node_id": "MDQ6VXNlcjI0MTc2MTM2",
-          "gravatar_id": "",
-          "url": "https://api.github.com/users/hampuskraft",
-          "type": "User",
-          "site_admin": false
-        },
-        "body": "This PR clarifies the previously undocumented requirement to receive `INVITE_*` events (see #6129).",
-        "created_at": "2023-05-04T18:17:43Z",
-        "updated_at": "2023-05-05T10:05:34Z",
-        "closed_at": null,
-        "merged_at": null,
-        "merge_commit_sha": "05dac3fbfc6afe085c573e2b83246dd54c916047",
-        "assignee": null,
-        "assignees": [],
-        "requested_reviewers": [],
-        "requested_teams": [],
-        "labels": [],
-        "milestone": null,
-        "draft": false,
-        "head": {
-          "label": "hampuskraft:docs/invite-event-perms",
-          "ref": "docs/invite-event-perms",
-          "sha": "a792d9b6e620d6260b854e4b318ae1b970deef63",
-          "user": {
-            "login": "hampuskraft",
-            "id": 24176136,
-            "node_id": "MDQ6VXNlcjI0MTc2MTM2",
-            "gravatar_id": "",
-            "url": "https://api.github.com/users/hampuskraft",
-            "type": "User",
-            "site_admin": false
-          },
-          "repo": {
-            "id": 636378218,
-            "node_id": "R_kgDOJe5cag",
-            "name": "discord-api-docs",
-            "full_name": "hampuskraft/discord-api-docs",
-            "private": false,
-            "owner": {
-              "login": "hampuskraft",
-              "id": 24176136,
-              "node_id": "MDQ6VXNlcjI0MTc2MTM2",
-              "gravatar_id": "",
-              "url": "https://api.github.com/users/hampuskraft",
-              "type": "User",
-              "site_admin": false
-            },
-            "description": "Official Discord API Documentation",
-            "fork": true,
-            "url": "https://api.github.com/repos/hampuskraft/discord-api-docs",
-            "created_at": "2023-05-04T18:03:16Z",
-            "updated_at": "2023-05-04T18:03:16Z",
-            "pushed_at": "2023-05-05T08:31:55Z",
-            "homepage": "https://discord.com/developers/docs/intro",
-            "size": 59735,
-            "stargazers_count": 0,
-            "watchers_count": 0,
-            "language": null,
-            "has_issues": false,
-            "has_projects": true,
-            "has_downloads": true,
-            "has_wiki": false,
-            "has_pages": false,
-            "has_discussions": false,
-            "forks_count": 0,
-            "archived": false,
-            "disabled": false,
-            "open_issues_count": 0,
-            "license": {
-              "key": "other",
-              "name": "Other",
-              "spdx_id": "NOASSERTION",
-              "url": null,
-              "node_id": "MDc6TGljZW5zZTA="
-            },
-            "allow_forking": true,
-            "is_template": false,
-            "web_commit_signoff_required": false,
-            "topics": [],
-            "visibility": "public",
-            "forks": 0,
-            "open_issues": 0,
-            "watchers": 0,
-            "default_branch": "main"
-          }
-        },
-        "base": {
-          "label": "discord:main",
-          "ref": "main",
-          "sha": "70bc0f05a90b952f376ac2071dba52225dedf7c6",
-          "user": {
-            "login": "discord",
-            "id": 1965106,
-            "node_id": "MDEyOk9yZ2FuaXphdGlvbjE5NjUxMDY=",
-            "gravatar_id": "",
-            "url": "https://api.github.com/users/discord",
-            "type": "Organization",
-            "site_admin": false
-          },
-          "repo": {
-            "id": 54995014,
-            "node_id": "MDEwOlJlcG9zaXRvcnk1NDk5NTAxNA==",
-            "name": "discord-api-docs",
-            "full_name": "discord/discord-api-docs",
-            "private": false,
-            "owner": {
-              "login": "discord",
-              "id": 1965106,
-              "node_id": "MDEyOk9yZ2FuaXphdGlvbjE5NjUxMDY=",
-              "gravatar_id": "",
-              "url": "https://api.github.com/users/discord",
-              "type": "Organization",
-              "site_admin": false
-            },
-            "description": "Official Discord API Documentation",
-            "fork": false,
-            "url": "https://api.github.com/repos/discord/discord-api-docs",
-            "created_at": "2016-03-29T17:11:53Z",
-            "updated_at": "2023-05-06T09:34:01Z",
-            "pushed_at": "2023-05-05T18:07:58Z",
-            "homepage": "https://discord.com/developers/docs/intro",
-            "size": 59776,
-            "stargazers_count": 5372,
-            "watchers_count": 5372,
-            "language": "Markdown",
-            "has_issues": true,
-            "has_projects": false,
-            "has_downloads": true,
-            "has_wiki": false,
-            "has_pages": false,
-            "has_discussions": true,
-            "forks_count": 1264,
-            "archived": false,
-            "disabled": false,
-            "open_issues_count": 174,
-            "license": {
-              "key": "other",
-              "name": "Other",
-              "spdx_id": "NOASSERTION",
-              "url": null,
-              "node_id": "MDc6TGljZW5zZTA="
-            },
-            "allow_forking": true,
-            "is_template": false,
-            "web_commit_signoff_required": false,
-            "topics": [
-              "discord",
-              "discord-api",
-              "discordapp",
-              "memescale"
-            ],
-            "visibility": "public",
-            "forks": 1264,
-            "open_issues": 174,
-            "watchers": 5372,
-            "default_branch": "main"
-          }
-        },
-        "_links": {
-          "self": {
-            "href": "https://api.github.com/repos/discord/discord-api-docs/pulls/6131"
-          },
-          "html": {
-            "href": "https://github.com/discord/discord-api-docs/pull/6131"
-          },
-          "issue": {
-            "href": "https://api.github.com/repos/discord/discord-api-docs/issues/6131"
-          },
-          "comments": {
-            "href": "https://api.github.com/repos/discord/discord-api-docs/issues/6131/comments"
-          },
-          "review_comments": {
-            "href": "https://api.github.com/repos/discord/discord-api-docs/pulls/6131/comments"
-          },
-          "review_comment": {
-            "href": "https://api.github.com/repos/discord/discord-api-docs/pulls/comments{/number}"
-          },
-          "commits": {
-            "href": "https://api.github.com/repos/discord/discord-api-docs/pulls/6131/commits"
-          },
-          "statuses": {
-            "href": "https://api.github.com/repos/discord/discord-api-docs/statuses/a792d9b6e620d6260b854e4b318ae1b970deef63"
-          }
-        },
-        "author_association": "CONTRIBUTOR",
-        "auto_merge": null,
-        "active_lock_reason": null
-      },
-      {
-        "url": "https://api.github.com/repos/discord/discord-api-docs/pulls/6130",
-        "id": 1338814372,
-        "node_id": "PR_kwDOA0coRs5PzK-k",
-        "number": 6130,
-        "state": "open",
-        "locked": false,
-        "title": "Start username docs updates",
-        "user": {
-          "login": "shaydewael",
-          "id": 3411005,
-          "node_id": "MDQ6VXNlcjM0MTEwMDU=",
-          "gravatar_id": "",
-          "url": "https://api.github.com/users/shaydewael",
-          "type": "User",
-          "site_admin": false
-        },
-        "body": "Update docs based on the new username changes (outlined [here](https://support.discord.com/hc/en-us/articles/12620128861463) for regular users and [here](https://support-dev.discord.com/hc/en-us/articles/13667755828631) for apps/bots)\r\n\r\n### TODO\r\n- [ ] Add specifics about webhooks\r\n- [ ] Update examples with user payloads throughout all of docs\r\n- [ ] Find somewhere to detail verified vs unverified bot usernames\r\n- [ ] Update docs to indicate all apps have bot users, where needed\r\n- [ ] Add example for default avatar",
-        "created_at": "2023-05-04T17:35:57Z",
-        "updated_at": "2023-05-05T18:10:47Z",
-        "closed_at": null,
-        "merged_at": null,
-        "merge_commit_sha": "819d8b9f3f383823de8ee5efa2b634bfdcd1e550",
-        "assignee": null,
-        "assignees": [],
-        "requested_reviewers": [
-          {
-            "login": "devsnek",
-            "id": 5952481,
-            "node_id": "MDQ6VXNlcjU5NTI0ODE=",
-            "gravatar_id": "",
-            "url": "https://api.github.com/users/devsnek",
-            "type": "User",
-            "site_admin": false
-          }
-        ],
-        "requested_teams": [],
-        "labels": [],
-        "milestone": null,
-        "draft": true,
-        "head": {
-          "label": "shaydewael:username-updates",
-          "ref": "username-updates",
-          "sha": "9a162cf08604dc39b10d65f715ed1d87b6b52678",
-          "user": {
-            "login": "shaydewael",
-            "id": 3411005,
-            "node_id": "MDQ6VXNlcjM0MTEwMDU=",
-            "gravatar_id": "",
-            "url": "https://api.github.com/users/shaydewael",
-            "type": "User",
-            "site_admin": false
-          },
-          "repo": {
-            "id": 467292476,
-            "node_id": "R_kgDOG9pRPA",
-            "name": "discord-api-docs",
-            "full_name": "shaydewael/discord-api-docs",
-            "private": false,
-            "owner": {
-              "login": "shaydewael",
-              "id": 3411005,
-              "node_id": "MDQ6VXNlcjM0MTEwMDU=",
-              "gravatar_id": "",
-              "url": "https://api.github.com/users/shaydewael",
-              "type": "User",
-              "site_admin": false
-            },
-            "description": "Official Discord API Documentation",
-            "fork": true,
-            "url": "https://api.github.com/repos/shaydewael/discord-api-docs",
-            "created_at": "2022-03-07T23:25:53Z",
-            "updated_at": "2022-06-22T04:10:20Z",
-            "pushed_at": "2023-05-04T17:49:08Z",
-            "homepage": "https://discord.com/developers/docs/intro",
-            "size": 63021,
-            "stargazers_count": 1,
-            "watchers_count": 1,
-            "language": "Markdown",
-            "has_issues": false,
-            "has_projects": true,
-            "has_downloads": true,
-            "has_wiki": false,
-            "has_pages": false,
-            "has_discussions": false,
-            "forks_count": 0,
-            "archived": false,
-            "disabled": false,
-            "open_issues_count": 0,
-            "license": {
-              "key": "other",
-              "name": "Other",
-              "spdx_id": "NOASSERTION",
-              "url": null,
-              "node_id": "MDc6TGljZW5zZTA="
-            },
-            "allow_forking": true,
-            "is_template": false,
-            "web_commit_signoff_required": false,
-            "topics": [],
-            "visibility": "public",
-            "forks": 0,
-            "open_issues": 0,
-            "watchers": 1,
-            "default_branch": "main"
-          }
-        },
-        "base": {
-          "label": "discord:main",
-          "ref": "main",
-          "sha": "70bc0f05a90b952f376ac2071dba52225dedf7c6",
-          "user": {
-            "login": "discord",
-            "id": 1965106,
-            "node_id": "MDEyOk9yZ2FuaXphdGlvbjE5NjUxMDY=",
-            "gravatar_id": "",
-            "url": "https://api.github.com/users/discord",
-            "type": "Organization",
-            "site_admin": false
-          },
-          "repo": {
-            "id": 54995014,
-            "node_id": "MDEwOlJlcG9zaXRvcnk1NDk5NTAxNA==",
-            "name": "discord-api-docs",
-            "full_name": "discord/discord-api-docs",
-            "private": false,
-            "owner": {
-              "login": "discord",
-              "id": 1965106,
-              "node_id": "MDEyOk9yZ2FuaXphdGlvbjE5NjUxMDY=",
-              "gravatar_id": "",
-              "url": "https://api.github.com/users/discord",
-              "type": "Organization",
-              "site_admin": false
-            },
-            "description": "Official Discord API Documentation",
-            "fork": false,
-            "url": "https://api.github.com/repos/discord/discord-api-docs",
-            "created_at": "2016-03-29T17:11:53Z",
-            "updated_at": "2023-05-06T09:34:01Z",
-            "pushed_at": "2023-05-05T18:07:58Z",
-            "homepage": "https://discord.com/developers/docs/intro",
-            "size": 59776,
-            "stargazers_count": 5372,
-            "watchers_count": 5372,
-            "language": "Markdown",
-            "has_issues": true,
-            "has_projects": false,
-            "has_downloads": true,
-            "has_wiki": false,
-            "has_pages": false,
-            "has_discussions": true,
-            "forks_count": 1264,
-            "archived": false,
-            "disabled": false,
-            "open_issues_count": 174,
-            "license": {
-              "key": "other",
-              "name": "Other",
-              "spdx_id": "NOASSERTION",
-              "url": null,
-              "node_id": "MDc6TGljZW5zZTA="
-            },
-            "allow_forking": true,
-            "is_template": false,
-            "web_commit_signoff_required": false,
-            "topics": [
-              "discord",
-              "discord-api",
-              "discordapp",
-              "memescale"
-            ],
-            "visibility": "public",
-            "forks": 1264,
-            "open_issues": 174,
-            "watchers": 5372,
-            "default_branch": "main"
-          }
-        },
-        "_links": {
-          "self": {
-            "href": "https://api.github.com/repos/discord/discord-api-docs/pulls/6130"
-          },
-          "html": {
-            "href": "https://github.com/discord/discord-api-docs/pull/6130"
-          },
-          "issue": {
-            "href": "https://api.github.com/repos/discord/discord-api-docs/issues/6130"
-          },
-          "comments": {
-            "href": "https://api.github.com/repos/discord/discord-api-docs/issues/6130/comments"
-          },
-          "review_comments": {
-            "href": "https://api.github.com/repos/discord/discord-api-docs/pulls/6130/comments"
-          },
-          "review_comment": {
-            "href": "https://api.github.com/repos/discord/discord-api-docs/pulls/comments{/number}"
-          },
-          "commits": {
-            "href": "https://api.github.com/repos/discord/discord-api-docs/pulls/6130/commits"
-          },
-          "statuses": {
-            "href": "https://api.github.com/repos/discord/discord-api-docs/statuses/9a162cf08604dc39b10d65f715ed1d87b6b52678"
-          }
-        },
-        "author_association": "CONTRIBUTOR",
-        "auto_merge": null,
-        "active_lock_reason": null
-      },
-      {
-        "url": "https://api.github.com/repos/discord/discord-api-docs/pulls/6120",
-        "id": 1332433345,
-        "node_id": "PR_kwDOA0coRs5Pa1HB",
-        "number": 6120,
-        "state": "open",
-        "locked": false,
-        "title": "Add Create Expressions permission",
-        "user": {
-          "login": "Puncher1",
-          "id": 65789180,
-          "node_id": "MDQ6VXNlcjY1Nzg5MTgw",
-          "gravatar_id": "",
-          "url": "https://api.github.com/users/Puncher1",
-          "type": "User",
-          "site_admin": false
-        },
-        "body": null,
-        "created_at": "2023-04-28T22:00:15Z",
-        "updated_at": "2023-04-28T23:07:42Z",
-        "closed_at": null,
-        "merged_at": null,
-        "merge_commit_sha": "dc835c312854527e9a509040cde33022f2520e87",
-        "assignee": null,
-        "assignees": [],
-        "requested_reviewers": [],
-        "requested_teams": [],
-        "labels": [],
-        "milestone": null,
-        "draft": false,
-        "head": {
-          "label": "Puncher1:create_expressions-perm",
-          "ref": "create_expressions-perm",
-          "sha": "025568e9562b8908adfab570633c92d645999a3a",
-          "user": {
-            "login": "Puncher1",
-            "id": 65789180,
-            "node_id": "MDQ6VXNlcjY1Nzg5MTgw",
-            "gravatar_id": "",
-            "url": "https://api.github.com/users/Puncher1",
-            "type": "User",
-            "site_admin": false
-          },
-          "repo": {
-            "id": 606218779,
-            "node_id": "R_kgDOJCIqGw",
-            "name": "discord-api-docs",
-            "full_name": "Puncher1/discord-api-docs",
-            "private": false,
-            "owner": {
-              "login": "Puncher1",
-              "id": 65789180,
-              "node_id": "MDQ6VXNlcjY1Nzg5MTgw",
-              "gravatar_id": "",
-              "url": "https://api.github.com/users/Puncher1",
-              "type": "User",
-              "site_admin": false
-            },
-            "description": "Official Discord API Documentation",
-            "fork": true,
-            "url": "https://api.github.com/repos/Puncher1/discord-api-docs",
-            "created_at": "2023-02-24T21:49:34Z",
-            "updated_at": "2023-03-04T18:40:10Z",
-            "pushed_at": "2023-04-28T23:07:41Z",
-            "homepage": "https://discord.com/developers/docs/intro",
-            "size": 59779,
-            "stargazers_count": 0,
-            "watchers_count": 0,
-            "language": "Markdown",
-            "has_issues": false,
-            "has_projects": true,
-            "has_downloads": true,
-            "has_wiki": false,
-            "has_pages": false,
-            "has_discussions": false,
-            "forks_count": 0,
-            "archived": false,
-            "disabled": false,
-            "open_issues_count": 0,
-            "license": {
-              "key": "other",
-              "name": "Other",
-              "spdx_id": "NOASSERTION",
-              "url": null,
-              "node_id": "MDc6TGljZW5zZTA="
-            },
-            "allow_forking": true,
-            "is_template": false,
-            "web_commit_signoff_required": false,
-            "topics": [],
-            "visibility": "public",
-            "forks": 0,
-            "open_issues": 0,
-            "watchers": 0,
-            "default_branch": "main"
-          }
-        },
-        "base": {
-          "label": "discord:main",
-          "ref": "main",
-          "sha": "70bc0f05a90b952f376ac2071dba52225dedf7c6",
-          "user": {
-            "login": "discord",
-            "id": 1965106,
-            "node_id": "MDEyOk9yZ2FuaXphdGlvbjE5NjUxMDY=",
-            "gravatar_id": "",
-            "url": "https://api.github.com/users/discord",
-            "type": "Organization",
-            "site_admin": false
-          },
-          "repo": {
-            "id": 54995014,
-            "node_id": "MDEwOlJlcG9zaXRvcnk1NDk5NTAxNA==",
-            "name": "discord-api-docs",
-            "full_name": "discord/discord-api-docs",
-            "private": false,
-            "owner": {
-              "login": "discord",
-              "id": 1965106,
-              "node_id": "MDEyOk9yZ2FuaXphdGlvbjE5NjUxMDY=",
-              "gravatar_id": "",
-              "url": "https://api.github.com/users/discord",
-              "type": "Organization",
-              "site_admin": false
-            },
-            "description": "Official Discord API Documentation",
-            "fork": false,
-            "url": "https://api.github.com/repos/discord/discord-api-docs",
-            "created_at": "2016-03-29T17:11:53Z",
-            "updated_at": "2023-05-06T09:34:01Z",
-            "pushed_at": "2023-05-05T18:07:58Z",
-            "homepage": "https://discord.com/developers/docs/intro",
-            "size": 59776,
-            "stargazers_count": 5372,
-            "watchers_count": 5372,
-            "language": "Markdown",
-            "has_issues": true,
-            "has_projects": false,
-            "has_downloads": true,
-            "has_wiki": false,
-            "has_pages": false,
-            "has_discussions": true,
-            "forks_count": 1264,
-            "archived": false,
-            "disabled": false,
-            "open_issues_count": 174,
-            "license": {
-              "key": "other",
-              "name": "Other",
-              "spdx_id": "NOASSERTION",
-              "url": null,
-              "node_id": "MDc6TGljZW5zZTA="
-            },
-            "allow_forking": true,
-            "is_template": false,
-            "web_commit_signoff_required": false,
-            "topics": [
-              "discord",
-              "discord-api",
-              "discordapp",
-              "memescale"
-            ],
-            "visibility": "public",
-            "forks": 1264,
-            "open_issues": 174,
-            "watchers": 5372,
-            "default_branch": "main"
-          }
-        },
-        "_links": {
-          "self": {
-            "href": "https://api.github.com/repos/discord/discord-api-docs/pulls/6120"
-          },
-          "html": {
-            "href": "https://github.com/discord/discord-api-docs/pull/6120"
-          },
-          "issue": {
-            "href": "https://api.github.com/repos/discord/discord-api-docs/issues/6120"
-          },
-          "comments": {
-            "href": "https://api.github.com/repos/discord/discord-api-docs/issues/6120/comments"
-          },
-          "review_comments": {
-            "href": "https://api.github.com/repos/discord/discord-api-docs/pulls/6120/comments"
-          },
-          "review_comment": {
-            "href": "https://api.github.com/repos/discord/discord-api-docs/pulls/comments{/number}"
-          },
-          "commits": {
-            "href": "https://api.github.com/repos/discord/discord-api-docs/pulls/6120/commits"
-          },
-          "statuses": {
-            "href": "https://api.github.com/repos/discord/discord-api-docs/statuses/025568e9562b8908adfab570633c92d645999a3a"
-          }
-        },
-        "author_association": "CONTRIBUTOR",
-        "auto_merge": null,
-        "active_lock_reason": null
-      },
-      {
-        "url": "https://api.github.com/repos/discord/discord-api-docs/pulls/6105",
-        "id": 1323040846,
-        "node_id": "PR_kwDOA0coRs5O3ABO",
-        "number": 6105,
-        "state": "open",
-        "locked": false,
-        "title": "Add Guild Navigation Message Format",
-        "user": {
-          "login": "Mysterious-Dev",
-          "id": 40738104,
-          "node_id": "MDQ6VXNlcjQwNzM4MTA0",
-          "gravatar_id": "",
-          "url": "https://api.github.com/users/Mysterious-Dev",
-          "type": "User",
-          "site_admin": false
-        },
-        "body": "With the addition of Onboarding feature, a new message format has been added, `<id:type>` ^^.\r\n\r\nSo this PR completes the documentation for this (there might be some changes on the structure of the changes to make 😊) ^^.",
-        "created_at": "2023-04-21T12:45:16Z",
-        "updated_at": "2023-04-27T06:17:36Z",
-        "closed_at": null,
-        "merged_at": null,
-        "merge_commit_sha": "8311adb8975ebab019be995ca692b23f594e89ab",
-        "assignee": null,
-        "assignees": [],
-        "requested_reviewers": [
-          {
-            "login": "thewilloftheshadow",
-            "id": 35580099,
-            "node_id": "MDQ6VXNlcjM1NTgwMDk5",
-            "gravatar_id": "",
-            "url": "https://api.github.com/users/thewilloftheshadow",
-            "type": "User",
-            "site_admin": false
-          }
-        ],
-        "requested_teams": [],
-        "labels": [],
-        "milestone": null,
-        "draft": false,
-        "head": {
-          "label": "Mysterious-Dev:id_customize_reference",
-          "ref": "id_customize_reference",
-          "sha": "ca9f0c2a5bffc13acd49e2822b80fbb9e9c5b1ed",
-          "user": {
-            "login": "Mysterious-Dev",
-            "id": 40738104,
-            "node_id": "MDQ6VXNlcjQwNzM4MTA0",
-            "gravatar_id": "",
-            "url": "https://api.github.com/users/Mysterious-Dev",
-            "type": "User",
-            "site_admin": false
-          },
-          "repo": {
-            "id": 630900830,
-            "node_id": "R_kgDOJZrIXg",
-            "name": "discord-api-docs",
-            "full_name": "Mysterious-Dev/discord-api-docs",
-            "private": false,
-            "owner": {
-              "login": "Mysterious-Dev",
-              "id": 40738104,
-              "node_id": "MDQ6VXNlcjQwNzM4MTA0",
-              "gravatar_id": "",
-              "url": "https://api.github.com/users/Mysterious-Dev",
-              "type": "User",
-              "site_admin": false
-            },
-            "description": "Official Discord API Documentation",
-            "fork": true,
-            "url": "https://api.github.com/repos/Mysterious-Dev/discord-api-docs",
-            "created_at": "2023-04-21T12:21:33Z",
-            "updated_at": "2023-04-21T12:21:33Z",
-            "pushed_at": "2023-04-21T17:05:42Z",
-            "homepage": "https://discord.com/developers/docs/intro",
-            "size": 59804,
-            "stargazers_count": 0,
-            "watchers_count": 0,
-            "language": null,
-            "has_issues": false,
-            "has_projects": true,
-            "has_downloads": true,
-            "has_wiki": false,
-            "has_pages": false,
-            "has_discussions": false,
-            "forks_count": 0,
-            "archived": false,
-            "disabled": false,
-            "open_issues_count": 0,
-            "license": {
-              "key": "other",
-              "name": "Other",
-              "spdx_id": "NOASSERTION",
-              "url": null,
-              "node_id": "MDc6TGljZW5zZTA="
-            },
-            "allow_forking": true,
-            "is_template": false,
-            "web_commit_signoff_required": false,
-            "topics": [],
-            "visibility": "public",
-            "forks": 0,
-            "open_issues": 0,
-            "watchers": 0,
-            "default_branch": "main"
-          }
-        },
-        "base": {
-          "label": "discord:main",
-          "ref": "main",
-          "sha": "70bc0f05a90b952f376ac2071dba52225dedf7c6",
-          "user": {
-            "login": "discord",
-            "id": 1965106,
-            "node_id": "MDEyOk9yZ2FuaXphdGlvbjE5NjUxMDY=",
-            "gravatar_id": "",
-            "url": "https://api.github.com/users/discord",
-            "type": "Organization",
-            "site_admin": false
-          },
-          "repo": {
-            "id": 54995014,
-            "node_id": "MDEwOlJlcG9zaXRvcnk1NDk5NTAxNA==",
-            "name": "discord-api-docs",
-            "full_name": "discord/discord-api-docs",
-            "private": false,
-            "owner": {
-              "login": "discord",
-              "id": 1965106,
-              "node_id": "MDEyOk9yZ2FuaXphdGlvbjE5NjUxMDY=",
-              "gravatar_id": "",
-              "url": "https://api.github.com/users/discord",
-              "type": "Organization",
-              "site_admin": false
-            },
-            "description": "Official Discord API Documentation",
-            "fork": false,
-            "url": "https://api.github.com/repos/discord/discord-api-docs",
-            "created_at": "2016-03-29T17:11:53Z",
-            "updated_at": "2023-05-06T09:34:01Z",
-            "pushed_at": "2023-05-05T18:07:58Z",
-            "homepage": "https://discord.com/developers/docs/intro",
-            "size": 59776,
-            "stargazers_count": 5372,
-            "watchers_count": 5372,
-            "language": "Markdown",
-            "has_issues": true,
-            "has_projects": false,
-            "has_downloads": true,
-            "has_wiki": false,
-            "has_pages": false,
-            "has_discussions": true,
-            "forks_count": 1264,
-            "archived": false,
-            "disabled": false,
-            "open_issues_count": 174,
-            "license": {
-              "key": "other",
-              "name": "Other",
-              "spdx_id": "NOASSERTION",
-              "url": null,
-              "node_id": "MDc6TGljZW5zZTA="
-            },
-            "allow_forking": true,
-            "is_template": false,
-            "web_commit_signoff_required": false,
-            "topics": [
-              "discord",
-              "discord-api",
-              "discordapp",
-              "memescale"
-            ],
-            "visibility": "public",
-            "forks": 1264,
-            "open_issues": 174,
-            "watchers": 5372,
-            "default_branch": "main"
-          }
-        },
-        "_links": {
-          "self": {
-            "href": "https://api.github.com/repos/discord/discord-api-docs/pulls/6105"
-          },
-          "html": {
-            "href": "https://github.com/discord/discord-api-docs/pull/6105"
-          },
-          "issue": {
-            "href": "https://api.github.com/repos/discord/discord-api-docs/issues/6105"
-          },
-          "comments": {
-            "href": "https://api.github.com/repos/discord/discord-api-docs/issues/6105/comments"
-          },
-          "review_comments": {
-            "href": "https://api.github.com/repos/discord/discord-api-docs/pulls/6105/comments"
-          },
-          "review_comment": {
-            "href": "https://api.github.com/repos/discord/discord-api-docs/pulls/comments{/number}"
-          },
-          "commits": {
-            "href": "https://api.github.com/repos/discord/discord-api-docs/pulls/6105/commits"
-          },
-          "statuses": {
-            "href": "https://api.github.com/repos/discord/discord-api-docs/statuses/ca9f0c2a5bffc13acd49e2822b80fbb9e9c5b1ed"
-          }
-        },
-        "author_association": "NONE",
-        "auto_merge": null,
-        "active_lock_reason": null
-      }
-    ]
+    "pullRequests": []
   }
 }
