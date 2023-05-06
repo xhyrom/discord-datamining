@@ -1,15 +1,21 @@
 import differ from "@adryd325/discord-datamining-lang-differ";
 
 /**
- * @param {import('@octokit/action').RestEndpointMethodTypes["repos"]["compareCommits"]["response"]} diff
+ * @param {import('@octokit/action').Octokit} octokit
+ * @param {unknown} eventPayload
  */
-export const all = (diff) => {
+export const all = async (octokit, eventPayload) => {
+  const diff = await octokit.repos.compareCommits({
+    owner: eventPayload.repository.owner.login,
+    repo: eventPayload.repository.name,
+    base: eventPayload.before,
+    head: eventPayload.after,
+  });
+
   let comment = "";
 
   for (const file of diff.data.files) {
     if (!file.patch) continue;
-    if (file.status === "unchanged") continue;
-    if (file.status === "renamed") continue;
 
     comment += `### ${file.filename}\n\n`;
     comment += "```diff\n";
@@ -17,10 +23,7 @@ export const all = (diff) => {
     comment += "\n```\n\n";
   }
 
-  if (!comment) {
-    console.log("No changes found");
-    process.exit(0);
-  }
+  return comment;
 };
 
 /**

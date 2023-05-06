@@ -9,14 +9,7 @@ const eventPayload = JSON.parse(
   await readFile(process.env.GITHUB_EVENT_PATH, "utf8")
 );
 
-const diff = await octokit.repos.compareCommits({
-  owner: eventPayload.repository.owner.login,
-  repo: eventPayload.repository.name,
-  base: eventPayload.before,
-  head: eventPayload.after,
-});
-
-const allComment = all(diff);
+const allComment = await all(octokit, eventPayload);
 const langComment = await lang(octokit, eventPayload);
 
 console.log(allComment);
