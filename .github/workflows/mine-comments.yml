@@ -1,6 +1,8 @@
 name: Mine Comments
 on:
   push:
+    branches:
+      - "**"
 
 jobs:
   comments:
