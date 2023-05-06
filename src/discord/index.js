@@ -11,7 +11,11 @@ import simpleGit from "simple-git";
 import { join } from "node:path";
 import { error } from "node:console";
 
-const git = simpleGit();
+const git = simpleGit({
+  config: {
+    "credential.https://github.com/.helper": `"! f() { echo username=xHyroM; echo password=$ACCESS_TOKEN; };f"`,
+  },
+});
 
 const hashInFile = await readFile(join("data", "hash.txt"), "utf-8");
 if (hashInFile === hash) {

@@ -1,6 +1,6 @@
 import { Octokit } from "@octokit/action";
 import { readFile } from "node:fs/promises";
-import { all } from "./comments.js";
+import { all, lang } from "./comments.js";
 
 const octokit = new Octokit();
 const eventPayload = JSON.parse(

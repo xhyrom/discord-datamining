@@ -9,7 +9,11 @@ import { join } from "node:path";
 import simpleGit from "simple-git";
 import filenamify from "filenamify";
 
-const git = simpleGit();
+const git = simpleGit({
+  config: {
+    "credential.https://github.com/.helper": `"! f() { echo username=xHyroM; echo password=$ACCESS_TOKEN; };f"`,
+  },
+});
 
 await mkdir(join("data", "github-repos"), { recursive: true }).catch(() => {});
 
