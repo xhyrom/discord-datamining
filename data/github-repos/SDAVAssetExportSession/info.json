@@ -57,16 +57,7 @@
     "triage": false,
     "pull": false
   },
-  "branches": [
-    {
-      "name": "master",
-      "commit": {
-        "sha": "666a494c43a07d6c7d2bd5318d8e073a969c55fa",
-        "url": "https://api.github.com/repos/discord/SDAVAssetExportSession/commits/666a494c43a07d6c7d2bd5318d8e073a969c55fa"
-      },
-      "protected": false
-    }
-  ],
+  "branches": [],
   "last5": {
     "commits": [
       {
