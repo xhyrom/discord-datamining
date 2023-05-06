@@ -51,16 +51,7 @@
     "triage": false,
     "pull": false
   },
-  "branches": [
-    {
-      "name": "master",
-      "commit": {
-        "sha": "14295e75f2a2084c93e0e972323ca59ead80ea38",
-        "url": "https://api.github.com/repos/discord/discord-open-source/commits/14295e75f2a2084c93e0e972323ca59ead80ea38"
-      },
-      "protected": false
-    }
-  ],
+  "branches": [],
   "last5": {
     "commits": [
       {
