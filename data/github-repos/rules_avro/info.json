@@ -57,48 +57,7 @@
     "triage": false,
     "pull": false
   },
-  "branches": [
-    {
-      "name": "discord_fixes",
-      "commit": {
-        "sha": "beeda43bdcce8b8054028813c5f2f6fb97d2908f",
-        "url": "https://api.github.com/repos/discord/rules_avro/commits/beeda43bdcce8b8054028813c5f2f6fb97d2908f"
-      },
-      "protected": false
-    },
-    {
-      "name": "fix_deprecated_java_refs",
-      "commit": {
-        "sha": "b83a6016b556f53442a8205246c8d3e0a158c696",
-        "url": "https://api.github.com/repos/discord/rules_avro/commits/b83a6016b556f53442a8205246c8d3e0a158c696"
-      },
-      "protected": false
-    },
-    {
-      "name": "master",
-      "commit": {
-        "sha": "e1c763e4e8486ac99454fc82b9098f82aec3ffd0",
-        "url": "https://api.github.com/repos/discord/rules_avro/commits/e1c763e4e8486ac99454fc82b9098f82aec3ffd0"
-      },
-      "protected": false
-    },
-    {
-      "name": "upgrade_bazel",
-      "commit": {
-        "sha": "c00b20a9323918446bd13dc9f38c145585dd80b2",
-        "url": "https://api.github.com/repos/discord/rules_avro/commits/c00b20a9323918446bd13dc9f38c145585dd80b2"
-      },
-      "protected": false
-    },
-    {
-      "name": "zombiezen/bazel5",
-      "commit": {
-        "sha": "1220dbdb7e93f034447e73bef4d51eec56cef922",
-        "url": "https://api.github.com/repos/discord/rules_avro/commits/1220dbdb7e93f034447e73bef4d51eec56cef922"
-      },
-      "protected": false
-    }
-  ],
+  "branches": [],
   "last5": {
     "commits": [
       {

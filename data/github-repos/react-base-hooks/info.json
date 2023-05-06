@@ -18,7 +18,7 @@
   "url": "https://api.github.com/repos/discord/react-base-hooks",
   "created_at": "2019-08-09T18:01:08Z",
   "updated_at": "2023-04-18T02:14:47Z",
-  "pushed_at": "2023-01-04T07:11:58Z",
+  "pushed_at": "2023-05-06T12:14:58Z",
   "homepage": "",
   "size": 742,
   "stargazers_count": 76,
@@ -33,7 +33,7 @@
   "forks_count": 11,
   "archived": false,
   "disabled": false,
-  "open_issues_count": 13,
+  "open_issues_count": 14,
   "license": {
     "key": "mit",
     "name": "MIT License",
@@ -50,7 +50,7 @@
   ],
   "visibility": "public",
   "forks": 11,
-  "open_issues": 13,
+  "open_issues": 14,
   "watchers": 76,
   "default_branch": "master",
   "permissions": {
@@ -337,6 +337,64 @@
     "releases": [],
     "issues": [
       {
+        "url": "https://api.github.com/repos/discord/react-base-hooks/issues/19",
+        "id": 1698605673,
+        "node_id": "PR_kwDODALpLs5P6kkH",
+        "number": 19,
+        "title": "Bump ws from 5.2.2 to 5.2.3",
+        "user": {
+          "login": "dependabot[bot]",
+          "id": 49699333,
+          "node_id": "MDM6Qm90NDk2OTkzMzM=",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/dependabot%5Bbot%5D",
+          "type": "Bot",
+          "site_admin": false
+        },
+        "labels": [
+          {
+            "id": 1759215416,
+            "node_id": "MDU6TGFiZWwxNzU5MjE1NDE2",
+            "url": "https://api.github.com/repos/discord/react-base-hooks/labels/dependencies",
+            "name": "dependencies",
+            "color": "0366d6",
+            "default": false,
+            "description": "Pull requests that update a dependency file"
+          }
+        ],
+        "state": "open",
+        "locked": false,
+        "assignee": null,
+        "assignees": [],
+        "milestone": null,
+        "comments": 0,
+        "created_at": "2023-05-06T12:14:58Z",
+        "updated_at": "2023-05-06T12:14:59Z",
+        "closed_at": null,
+        "author_association": "NONE",
+        "active_lock_reason": null,
+        "draft": false,
+        "pull_request": {
+          "url": "https://api.github.com/repos/discord/react-base-hooks/pulls/19",
+          "merged_at": null
+        },
+        "body": "Bumps [ws](https://github.com/websockets/ws) from 5.2.2 to 5.2.3.\n<details>\n<summary>Release notes</summary>\n<p><em>Sourced from <a href=\"https://github.com/websockets/ws/releases\">ws's releases</a>.</em></p>\n<blockquote>\n<h2>5.2.3</h2>\n<h1>Bug fixes</h1>\n<ul>\n<li>Backported 00c425ec to the 5.x release line (76d47c14).</li>\n</ul>\n</blockquote>\n</details>\n<details>\n<summary>Commits</summary>\n<ul>\n<li><a href=\"https://github.com/websockets/ws/commit/6dd88e7e968ef2416445d8f8620c17d99b15c77c\"><code>6dd88e7</code></a> [dist] 5.2.3</li>\n<li><a href=\"https://github.com/websockets/ws/commit/76d47c1479002022a3e4357b3c9f0e23a68d4cd2\"><code>76d47c1</code></a> [security] Fix ReDoS vulnerability</li>\n<li>See full diff in <a href=\"https://github.com/websockets/ws/compare/5.2.2...5.2.3\">compare view</a></li>\n</ul>\n</details>\n<br />\n\n\n[![Dependabot compatibility score](https://dependabot-badges.githubapp.com/badges/compatibility_score?dependency-name=ws&package-manager=npm_and_yarn&previous-version=5.2.2&new-version=5.2.3)](https://docs.github.com/en/github/managing-security-vulnerabilities/about-dependabot-security-updates#about-compatibility-scores)\n\nDependabot will resolve any conflicts with this PR as long as you don't alter it yourself. You can also trigger a rebase manually by commenting `@dependabot rebase`.\n\n[//]: # (dependabot-automerge-start)\n[//]: # (dependabot-automerge-end)\n\n---\n\n<details>\n<summary>Dependabot commands and options</summary>\n<br />\n\nYou can trigger Dependabot actions by commenting on this PR:\n- `@dependabot rebase` will rebase this PR\n- `@dependabot recreate` will recreate this PR, overwriting any edits that have been made to it\n- `@dependabot merge` will merge this PR after your CI passes on it\n- `@dependabot squash and merge` will squash and merge this PR after your CI passes on it\n- `@dependabot cancel merge` will cancel a previously requested merge and block automerging\n- `@dependabot reopen` will reopen this PR if it is closed\n- `@dependabot close` will close this PR and stop Dependabot recreating it. You can achieve the same result by closing it manually\n- `@dependabot ignore this major version` will close this PR and stop Dependabot creating any more for this major version (unless you reopen the PR or upgrade to it yourself)\n- `@dependabot ignore this minor version` will close this PR and stop Dependabot creating any more for this minor version (unless you reopen the PR or upgrade to it yourself)\n- `@dependabot ignore this dependency` will close this PR and stop Dependabot creating any more for this dependency (unless you reopen the PR or upgrade to it yourself)\nYou can disable automated security fix PRs for this repo from the [Security Alerts page](https://github.com/discord/react-base-hooks/network/alerts).\n\n</details>",
+        "reactions": {
+          "url": "https://api.github.com/repos/discord/react-base-hooks/issues/19/reactions",
+          "total_count": 0,
+          "+1": 0,
+          "-1": 0,
+          "laugh": 0,
+          "hooray": 0,
+          "confused": 0,
+          "heart": 0,
+          "rocket": 0,
+          "eyes": 0
+        },
+        "performed_via_github_app": null,
+        "state_reason": null
+      },
+      {
         "url": "https://api.github.com/repos/discord/react-base-hooks/issues/18",
         "id": 1518446540,
         "node_id": "PR_kwDODALpLs5GmOUn",
@@ -555,64 +613,6 @@
         "body": "Bumps [ajv](https://github.com/ajv-validator/ajv) from 6.10.2 to 6.12.6.\n<details>\n<summary>Release notes</summary>\n<p><em>Sourced from <a href=\"https://github.com/ajv-validator/ajv/releases\">ajv's releases</a>.</em></p>\n<blockquote>\n<h2>v6.12.6</h2>\n<p>Fix performance issue of &quot;url&quot; format.</p>\n<h2>v6.12.5</h2>\n<p>Fix uri scheme validation (<a href=\"https://github.com/ChALkeR\"><code>@​ChALkeR</code></a>).\nFix boolean schemas with strictKeywords option (<a href=\"https://github-redirect.dependabot.com/ajv-validator/ajv/issues/1270\">#1270</a>)</p>\n<h2>v6.12.4</h2>\n<p>Fix: coercion of one-item arrays to scalar that should fail validation (<a href=\"https://runkit.com/esp/5f3672ba2f6642001ae27411\">failing example</a>).</p>\n<h2>v6.12.3</h2>\n<p>Pass schema object to processCode function\nOption for strictNumbers (<a href=\"https://github.com/issacgerges\"><code>@​issacgerges</code></a>, <a href=\"https://github-redirect.dependabot.com/ajv-validator/ajv/issues/1128\">#1128</a>)\nFixed vulnerability related to untrusted schemas (<a href=\"https://cve.mitre.org/cgi-bin/cvekey.cgi?keyword=CVE-2020-15366\">CVE-2020-15366</a>)</p>\n<h2>v6.12.2</h2>\n<p>Removed post-install script</p>\n<h2>v6.12.1</h2>\n<p>Docs and dependency updates</p>\n<h2>v6.12.0</h2>\n<p>Improved hostname validation (<a href=\"https://github.com/sambauers\"><code>@​sambauers</code></a>, <a href=\"https://github-redirect.dependabot.com/ajv-validator/ajv/issues/1143\">#1143</a>)\nOption <code>keywords</code> to add custom keywords (<a href=\"https://github.com/franciscomorais\"><code>@​franciscomorais</code></a>, <a href=\"https://github-redirect.dependabot.com/ajv-validator/ajv/issues/1137\">#1137</a>)\nTypes fixes (<a href=\"https://github.com/boenrobot\"><code>@​boenrobot</code></a>, <a href=\"https://github.com/MattiAstedrone\"><code>@​MattiAstedrone</code></a>)\nDocs:</p>\n<ul>\n<li><a href=\"https://github.com/epoberezkin/ajv#error-logging\">error logging</a> example (<a href=\"https://github.com/RadiationSickness\"><code>@​RadiationSickness</code></a>)</li>\n<li>TypeScript usage notes (<a href=\"https://github.com/thetric\"><code>@​thetric</code></a>)</li>\n</ul>\n<h2>v6.11.0</h2>\n<p>Time formats support two digit and colon-less variants of timezone offset (<a href=\"https://github-redirect.dependabot.com/ajv-validator/ajv/issues/1061\">#1061</a> , <a href=\"https://github.com/cjpillsbury\"><code>@​cjpillsbury</code></a>)\nDocs: RegExp related security considerations\nTests: Disabled failing typescript test</p>\n</blockquote>\n</details>\n<details>\n<summary>Commits</summary>\n<ul>\n<li><a href=\"https://github.com/ajv-validator/ajv/commit/fe591439f34e24030f69df9eb8d91e6d037a3af7\"><code>fe59143</code></a> 6.12.6</li>\n<li><a href=\"https://github.com/ajv-validator/ajv/commit/d580d3e8ac6a467670d68d86e3a39fd661ac8c23\"><code>d580d3e</code></a> Merge pull request <a href=\"https://github-redirect.dependabot.com/ajv-validator/ajv/issues/1298\">#1298</a> from ajv-validator/fix-url</li>\n<li><a href=\"https://github.com/ajv-validator/ajv/commit/fd363896a8d6c5697b5da41f4d9a400a84efaf8e\"><code>fd36389</code></a> fix: regular expression for &quot;url&quot; format</li>\n<li><a href=\"https://github.com/ajv-validator/ajv/commit/490e34c4846064db5c962a77087e17078954c2f6\"><code>490e34c</code></a> docs: link to v7-beta branch</li>\n<li><a href=\"https://github.com/ajv-validator/ajv/commit/9cd93a1bdbdefd5a7ba3db5e123d20c84d1d1d0e\"><code>9cd93a1</code></a> docs: note about v7 in readme</li>\n<li><a href=\"https://github.com/ajv-validator/ajv/commit/877d286e7f145b1b2127da66c6800b071533f28f\"><code>877d286</code></a> Merge pull request <a href=\"https://github-redirect.dependabot.com/ajv-validator/ajv/issues/1262\">#1262</a> from b4h0-c4t/refactor-opt-object-type</li>\n<li><a href=\"https://github.com/ajv-validator/ajv/commit/f1c8e45b9cdff918be28becf03bf0b339321c398\"><code>f1c8e45</code></a> 6.12.5</li>\n<li><a href=\"https://github.com/ajv-validator/ajv/commit/764035e201d7733b8d700d4a04dd079fef9f4d30\"><code>764035e</code></a> Merge branch 'ChALkeR-chalker/fix-comma'</li>\n<li><a href=\"https://github.com/ajv-validator/ajv/commit/37981602ce6d43313ae106644b372b021626a8af\"><code>3798160</code></a> Merge branch 'chalker/fix-comma' of git://github.com/ChALkeR/ajv into ChALkeR...</li>\n<li><a href=\"https://github.com/ajv-validator/ajv/commit/a3c7ebab222e4cce07b5e30ebcbb809da7f934e8\"><code>a3c7eba</code></a> Merge branch 'refactor-opt-object-type' of github.com:b4h0-c4t/ajv into refac...</li>\n<li>Additional commits viewable in <a href=\"https://github.com/ajv-validator/ajv/compare/v6.10.2...v6.12.6\">compare view</a></li>\n</ul>\n</details>\n<br />\n\n\n[![Dependabot compatibility score](https://dependabot-badges.githubapp.com/badges/compatibility_score?dependency-name=ajv&package-manager=npm_and_yarn&previous-version=6.10.2&new-version=6.12.6)](https://docs.github.com/en/github/managing-security-vulnerabilities/about-dependabot-security-updates#about-compatibility-scores)\n\nDependabot will resolve any conflicts with this PR as long as you don't alter it yourself. You can also trigger a rebase manually by commenting `@dependabot rebase`.\n\n[//]: # (dependabot-automerge-start)\n[//]: # (dependabot-automerge-end)\n\n---\n\n<details>\n<summary>Dependabot commands and options</summary>\n<br />\n\nYou can trigger Dependabot actions by commenting on this PR:\n- `@dependabot rebase` will rebase this PR\n- `@dependabot recreate` will recreate this PR, overwriting any edits that have been made to it\n- `@dependabot merge` will merge this PR after your CI passes on it\n- `@dependabot squash and merge` will squash and merge this PR after your CI passes on it\n- `@dependabot cancel merge` will cancel a previously requested merge and block automerging\n- `@dependabot reopen` will reopen this PR if it is closed\n- `@dependabot close` will close this PR and stop Dependabot recreating it. You can achieve the same result by closing it manually\n- `@dependabot ignore this major version` will close this PR and stop Dependabot creating any more for this major version (unless you reopen the PR or upgrade to it yourself)\n- `@dependabot ignore this minor version` will close this PR and stop Dependabot creating any more for this minor version (unless you reopen the PR or upgrade to it yourself)\n- `@dependabot ignore this dependency` will close this PR and stop Dependabot creating any more for this dependency (unless you reopen the PR or upgrade to it yourself)\n- `@dependabot use these labels` will set the current labels as the default for future PRs for this repo and language\n- `@dependabot use these reviewers` will set the current reviewers as the default for future PRs for this repo and language\n- `@dependabot use these assignees` will set the current assignees as the default for future PRs for this repo and language\n- `@dependabot use this milestone` will set the current milestone as the default for future PRs for this repo and language\n\nYou can disable automated security fix PRs for this repo from the [Security Alerts page](https://github.com/discord/react-base-hooks/network/alerts).\n\n</details>",
         "reactions": {
           "url": "https://api.github.com/repos/discord/react-base-hooks/issues/15/reactions",
-          "total_count": 0,
-          "+1": 0,
-          "-1": 0,
-          "laugh": 0,
-          "hooray": 0,
-          "confused": 0,
-          "heart": 0,
-          "rocket": 0,
-          "eyes": 0
-        },
-        "performed_via_github_app": null,
-        "state_reason": null
-      },
-      {
-        "url": "https://api.github.com/repos/discord/react-base-hooks/issues/14",
-        "id": 1002323068,
-        "node_id": "PR_kwDODALpLs4sCBXU",
-        "number": 14,
-        "title": "Bump tmpl from 1.0.4 to 1.0.5",
-        "user": {
-          "login": "dependabot[bot]",
-          "id": 49699333,
-          "node_id": "MDM6Qm90NDk2OTkzMzM=",
-          "gravatar_id": "",
-          "url": "https://api.github.com/users/dependabot%5Bbot%5D",
-          "type": "Bot",
-          "site_admin": false
-        },
-        "labels": [
-          {
-            "id": 1759215416,
-            "node_id": "MDU6TGFiZWwxNzU5MjE1NDE2",
-            "url": "https://api.github.com/repos/discord/react-base-hooks/labels/dependencies",
-            "name": "dependencies",
-            "color": "0366d6",
-            "default": false,
-            "description": "Pull requests that update a dependency file"
-          }
-        ],
-        "state": "open",
-        "locked": false,
-        "assignee": null,
-        "assignees": [],
-        "milestone": null,
-        "comments": 0,
-        "created_at": "2021-09-21T11:54:51Z",
-        "updated_at": "2021-09-21T11:54:51Z",
-        "closed_at": null,
-        "author_association": "NONE",
-        "active_lock_reason": null,
-        "draft": false,
-        "pull_request": {
-          "url": "https://api.github.com/repos/discord/react-base-hooks/pulls/14",
-          "merged_at": null
-        },
-        "body": "Bumps [tmpl](https://github.com/daaku/nodejs-tmpl) from 1.0.4 to 1.0.5.\n<details>\n<summary>Commits</summary>\n<ul>\n<li>See full diff in <a href=\"https://github.com/daaku/nodejs-tmpl/commits/v1.0.5\">compare view</a></li>\n</ul>\n</details>\n<br />\n\n\n[![Dependabot compatibility score](https://dependabot-badges.githubapp.com/badges/compatibility_score?dependency-name=tmpl&package-manager=npm_and_yarn&previous-version=1.0.4&new-version=1.0.5)](https://docs.github.com/en/github/managing-security-vulnerabilities/about-dependabot-security-updates#about-compatibility-scores)\n\nDependabot will resolve any conflicts with this PR as long as you don't alter it yourself. You can also trigger a rebase manually by commenting `@dependabot rebase`.\n\n[//]: # (dependabot-automerge-start)\n[//]: # (dependabot-automerge-end)\n\n---\n\n<details>\n<summary>Dependabot commands and options</summary>\n<br />\n\nYou can trigger Dependabot actions by commenting on this PR:\n- `@dependabot rebase` will rebase this PR\n- `@dependabot recreate` will recreate this PR, overwriting any edits that have been made to it\n- `@dependabot merge` will merge this PR after your CI passes on it\n- `@dependabot squash and merge` will squash and merge this PR after your CI passes on it\n- `@dependabot cancel merge` will cancel a previously requested merge and block automerging\n- `@dependabot reopen` will reopen this PR if it is closed\n- `@dependabot close` will close this PR and stop Dependabot recreating it. You can achieve the same result by closing it manually\n- `@dependabot ignore this major version` will close this PR and stop Dependabot creating any more for this major version (unless you reopen the PR or upgrade to it yourself)\n- `@dependabot ignore this minor version` will close this PR and stop Dependabot creating any more for this minor version (unless you reopen the PR or upgrade to it yourself)\n- `@dependabot ignore this dependency` will close this PR and stop Dependabot creating any more for this dependency (unless you reopen the PR or upgrade to it yourself)\n- `@dependabot use these labels` will set the current labels as the default for future PRs for this repo and language\n- `@dependabot use these reviewers` will set the current reviewers as the default for future PRs for this repo and language\n- `@dependabot use these assignees` will set the current assignees as the default for future PRs for this repo and language\n- `@dependabot use this milestone` will set the current milestone as the default for future PRs for this repo and language\n\nYou can disable automated security fix PRs for this repo from the [Security Alerts page](https://github.com/discord/react-base-hooks/network/alerts).\n\n</details>",
-        "reactions": {
-          "url": "https://api.github.com/repos/discord/react-base-hooks/issues/14/reactions",
           "total_count": 0,
           "+1": 0,
           "-1": 0,
