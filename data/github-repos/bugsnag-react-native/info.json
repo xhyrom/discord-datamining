@@ -57,9 +57,309 @@
     "triage": false,
     "pull": false
   },
-  "branches": [],
+  "branches": [
+    {
+      "name": "fix-missing-error-message",
+      "commit": {
+        "sha": "29cbc759ae9f48837e3219357e7737d5aa684c58",
+        "url": "https://api.github.com/repos/discord/bugsnag-react-native/commits/29cbc759ae9f48837e3219357e7737d5aa684c58"
+      },
+      "protected": false
+    },
+    {
+      "name": "kattrali/handle-unhandled-promise-rejections",
+      "commit": {
+        "sha": "bb22cdfc5b8cbaa13fee2096a22130c47bfcb5e4",
+        "url": "https://api.github.com/repos/discord/bugsnag-react-native/commits/bb22cdfc5b8cbaa13fee2096a22130c47bfcb5e4"
+      },
+      "protected": false
+    },
+    {
+      "name": "master",
+      "commit": {
+        "sha": "4cb6eee3b4c140e458dc9c02c704a3beea57811c",
+        "url": "https://api.github.com/repos/discord/bugsnag-react-native/commits/4cb6eee3b4c140e458dc9c02c704a3beea57811c"
+      },
+      "protected": false
+    }
+  ],
   "last5": {
-    "commits": [],
+    "commits": [
+      {
+        "sha": "4cb6eee3b4c140e458dc9c02c704a3beea57811c",
+        "node_id": "MDY6Q29tbWl0NzI2NzgyMDE6NGNiNmVlZTNiNGMxNDBlNDU4ZGM5YzAyYzcwNGEzYmVlYTU3ODExYw==",
+        "commit": {
+          "author": {
+            "name": "Shadi",
+            "email": "TheSisb@users.noreply.github.com",
+            "date": "2016-11-02T21:39:24Z"
+          },
+          "committer": {
+            "name": "GitHub",
+            "email": "noreply@github.com",
+            "date": "2016-11-02T21:39:24Z"
+          },
+          "message": "es6 cleanup",
+          "tree": {
+            "sha": "131f8e7c8a96de0e58d36b1cbe62ebb56598d885",
+            "url": "https://api.github.com/repos/discord/bugsnag-react-native/git/trees/131f8e7c8a96de0e58d36b1cbe62ebb56598d885"
+          },
+          "url": "https://api.github.com/repos/discord/bugsnag-react-native/git/commits/4cb6eee3b4c140e458dc9c02c704a3beea57811c",
+          "comment_count": 0,
+          "verification": {
+            "verified": false,
+            "reason": "unsigned",
+            "signature": null,
+            "payload": null
+          }
+        },
+        "url": "https://api.github.com/repos/discord/bugsnag-react-native/commits/4cb6eee3b4c140e458dc9c02c704a3beea57811c",
+        "author": {
+          "login": "TheSisb",
+          "id": 1592327,
+          "node_id": "MDQ6VXNlcjE1OTIzMjc=",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/TheSisb",
+          "type": "User",
+          "site_admin": false
+        },
+        "committer": {
+          "login": "web-flow",
+          "id": 19864447,
+          "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/web-flow",
+          "type": "User",
+          "site_admin": false
+        },
+        "parents": [
+          {
+            "sha": "95f39ef14179cde979c8055aeb8a84e044cc789a",
+            "url": "https://api.github.com/repos/discord/bugsnag-react-native/commits/95f39ef14179cde979c8055aeb8a84e044cc789a"
+          }
+        ]
+      },
+      {
+        "sha": "95f39ef14179cde979c8055aeb8a84e044cc789a",
+        "node_id": "MDY6Q29tbWl0NzI2NzgyMDE6OTVmMzllZjE0MTc5Y2RlOTc5YzgwNTVhZWI4YTg0ZTA0NGNjNzg5YQ==",
+        "commit": {
+          "author": {
+            "name": "Shadi",
+            "email": "TheSisb@users.noreply.github.com",
+            "date": "2016-11-02T20:25:22Z"
+          },
+          "committer": {
+            "name": "GitHub",
+            "email": "noreply@github.com",
+            "date": "2016-11-02T20:25:22Z"
+          },
+          "message": "crash fix",
+          "tree": {
+            "sha": "8a3b5ebca170e69c7e0ee4630fd927a30cc097cc",
+            "url": "https://api.github.com/repos/discord/bugsnag-react-native/git/trees/8a3b5ebca170e69c7e0ee4630fd927a30cc097cc"
+          },
+          "url": "https://api.github.com/repos/discord/bugsnag-react-native/git/commits/95f39ef14179cde979c8055aeb8a84e044cc789a",
+          "comment_count": 0,
+          "verification": {
+            "verified": false,
+            "reason": "unsigned",
+            "signature": null,
+            "payload": null
+          }
+        },
+        "url": "https://api.github.com/repos/discord/bugsnag-react-native/commits/95f39ef14179cde979c8055aeb8a84e044cc789a",
+        "author": {
+          "login": "TheSisb",
+          "id": 1592327,
+          "node_id": "MDQ6VXNlcjE1OTIzMjc=",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/TheSisb",
+          "type": "User",
+          "site_admin": false
+        },
+        "committer": {
+          "login": "web-flow",
+          "id": 19864447,
+          "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/web-flow",
+          "type": "User",
+          "site_admin": false
+        },
+        "parents": [
+          {
+            "sha": "d1ada5dbce80c560a63b452ecdddbf27cd08c2b1",
+            "url": "https://api.github.com/repos/discord/bugsnag-react-native/commits/d1ada5dbce80c560a63b452ecdddbf27cd08c2b1"
+          }
+        ]
+      },
+      {
+        "sha": "d1ada5dbce80c560a63b452ecdddbf27cd08c2b1",
+        "node_id": "MDY6Q29tbWl0NzI2NzgyMDE6ZDFhZGE1ZGJjZTgwYzU2MGE2M2I0NTJlY2RkZGJmMjdjZDA4YzJiMQ==",
+        "commit": {
+          "author": {
+            "name": "Delisa Mason",
+            "email": "iskanamagus@gmail.com",
+            "date": "2016-10-28T21:26:15Z"
+          },
+          "committer": {
+            "name": "Delisa Mason",
+            "email": "iskanamagus@gmail.com",
+            "date": "2016-10-28T21:26:15Z"
+          },
+          "message": "Release v1.0.4",
+          "tree": {
+            "sha": "4049fb9ae3d6484806fbc4e61556f7a0324d8a79",
+            "url": "https://api.github.com/repos/discord/bugsnag-react-native/git/trees/4049fb9ae3d6484806fbc4e61556f7a0324d8a79"
+          },
+          "url": "https://api.github.com/repos/discord/bugsnag-react-native/git/commits/d1ada5dbce80c560a63b452ecdddbf27cd08c2b1",
+          "comment_count": 0,
+          "verification": {
+            "verified": false,
+            "reason": "unsigned",
+            "signature": null,
+            "payload": null
+          }
+        },
+        "url": "https://api.github.com/repos/discord/bugsnag-react-native/commits/d1ada5dbce80c560a63b452ecdddbf27cd08c2b1",
+        "author": {
+          "login": "kattrali",
+          "id": 333454,
+          "node_id": "MDQ6VXNlcjMzMzQ1NA==",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/kattrali",
+          "type": "User",
+          "site_admin": false
+        },
+        "committer": {
+          "login": "kattrali",
+          "id": 333454,
+          "node_id": "MDQ6VXNlcjMzMzQ1NA==",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/kattrali",
+          "type": "User",
+          "site_admin": false
+        },
+        "parents": [
+          {
+            "sha": "8d9f3899fa9006ad9c30e59c389e6afcffffb451",
+            "url": "https://api.github.com/repos/discord/bugsnag-react-native/commits/8d9f3899fa9006ad9c30e59c389e6afcffffb451"
+          }
+        ]
+      },
+      {
+        "sha": "8d9f3899fa9006ad9c30e59c389e6afcffffb451",
+        "node_id": "MDY6Q29tbWl0NzI2NzgyMDE6OGQ5ZjM4OTlmYTkwMDZhZDljMzBlNTljMzg5ZTZhZmNmZmZmYjQ1MQ==",
+        "commit": {
+          "author": {
+            "name": "Delisa Mason",
+            "email": "iskanamagus@gmail.com",
+            "date": "2016-10-28T21:17:55Z"
+          },
+          "committer": {
+            "name": "Delisa Mason",
+            "email": "iskanamagus@gmail.com",
+            "date": "2016-10-28T21:17:55Z"
+          },
+          "message": "[ios] Avoid dup-ing the notifier version when reloaded",
+          "tree": {
+            "sha": "c287e7fe489d4bc4e58db7ab786ff36c88982716",
+            "url": "https://api.github.com/repos/discord/bugsnag-react-native/git/trees/c287e7fe489d4bc4e58db7ab786ff36c88982716"
+          },
+          "url": "https://api.github.com/repos/discord/bugsnag-react-native/git/commits/8d9f3899fa9006ad9c30e59c389e6afcffffb451",
+          "comment_count": 0,
+          "verification": {
+            "verified": false,
+            "reason": "unsigned",
+            "signature": null,
+            "payload": null
+          }
+        },
+        "url": "https://api.github.com/repos/discord/bugsnag-react-native/commits/8d9f3899fa9006ad9c30e59c389e6afcffffb451",
+        "author": {
+          "login": "kattrali",
+          "id": 333454,
+          "node_id": "MDQ6VXNlcjMzMzQ1NA==",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/kattrali",
+          "type": "User",
+          "site_admin": false
+        },
+        "committer": {
+          "login": "kattrali",
+          "id": 333454,
+          "node_id": "MDQ6VXNlcjMzMzQ1NA==",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/kattrali",
+          "type": "User",
+          "site_admin": false
+        },
+        "parents": [
+          {
+            "sha": "2a994097b467931a485cccf3c487fcb5956b3ae9",
+            "url": "https://api.github.com/repos/discord/bugsnag-react-native/commits/2a994097b467931a485cccf3c487fcb5956b3ae9"
+          }
+        ]
+      },
+      {
+        "sha": "2a994097b467931a485cccf3c487fcb5956b3ae9",
+        "node_id": "MDY6Q29tbWl0NzI2NzgyMDE6MmE5OTQwOTdiNDY3OTMxYTQ4NWNjY2YzYzQ4N2ZjYjU5NTZiM2FlOQ==",
+        "commit": {
+          "author": {
+            "name": "Delisa Mason",
+            "email": "iskanamagus@gmail.com",
+            "date": "2016-10-28T21:08:27Z"
+          },
+          "committer": {
+            "name": "Delisa Mason",
+            "email": "iskanamagus@gmail.com",
+            "date": "2016-10-28T21:08:58Z"
+          },
+          "message": "Warn when discarding errors which aren't instances of Error\n\nCloses #13",
+          "tree": {
+            "sha": "3403732d6757ae2d2591cd26e3f4ce8267f5e02a",
+            "url": "https://api.github.com/repos/discord/bugsnag-react-native/git/trees/3403732d6757ae2d2591cd26e3f4ce8267f5e02a"
+          },
+          "url": "https://api.github.com/repos/discord/bugsnag-react-native/git/commits/2a994097b467931a485cccf3c487fcb5956b3ae9",
+          "comment_count": 0,
+          "verification": {
+            "verified": false,
+            "reason": "unsigned",
+            "signature": null,
+            "payload": null
+          }
+        },
+        "url": "https://api.github.com/repos/discord/bugsnag-react-native/commits/2a994097b467931a485cccf3c487fcb5956b3ae9",
+        "author": {
+          "login": "kattrali",
+          "id": 333454,
+          "node_id": "MDQ6VXNlcjMzMzQ1NA==",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/kattrali",
+          "type": "User",
+          "site_admin": false
+        },
+        "committer": {
+          "login": "kattrali",
+          "id": 333454,
+          "node_id": "MDQ6VXNlcjMzMzQ1NA==",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/kattrali",
+          "type": "User",
+          "site_admin": false
+        },
+        "parents": [
+          {
+            "sha": "2636844d7e1504b525bdbdaa5ea938e930c1b0c4",
+            "url": "https://api.github.com/repos/discord/bugsnag-react-native/commits/2636844d7e1504b525bdbdaa5ea938e930c1b0c4"
+          },
+          {
+            "sha": "82f8bb51d8eccd623130cab7a349fc60fbbca988",
+            "url": "https://api.github.com/repos/discord/bugsnag-react-native/commits/82f8bb51d8eccd623130cab7a349fc60fbbca988"
+          }
+        ]
+      }
+    ],
     "releases": [],
     "issues": [],
     "pullRequests": []

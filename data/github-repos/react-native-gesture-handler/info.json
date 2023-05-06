@@ -59,9 +59,329 @@
   },
   "branches": [],
   "last5": {
-    "commits": [],
+    "commits": [
+      {
+        "sha": "868589b8a14b38e984f54ec652fa60f2e584623c",
+        "node_id": "C_kwDOGxii1NoAKDg2ODU4OWI4YTE0YjM4ZTk4NGY1NGVjNjUyZmE2MGYyZTU4NDYyM2M",
+        "commit": {
+          "author": {
+            "name": "dependabot[bot]",
+            "email": "49699333+dependabot[bot]@users.noreply.github.com",
+            "date": "2023-01-27T10:35:09Z"
+          },
+          "committer": {
+            "name": "GitHub",
+            "email": "noreply@github.com",
+            "date": "2023-01-27T10:35:09Z"
+          },
+          "message": "Bump ua-parser-js from 0.7.24 to 0.7.33 in /docs (#2389)\n\n[//]: # (dependabot-start)\r\n⚠️  **Dependabot is rebasing this PR** ⚠️ \r\n\r\nRebasing might not happen immediately, so don't worry if this takes some\r\ntime.\r\n\r\nNote: if you make any changes to this PR yourself, they will take\r\nprecedence over the rebase.\r\n\r\n---\r\n\r\n[//]: # (dependabot-end)\r\n\r\nBumps [ua-parser-js](https://github.com/faisalman/ua-parser-js) from\r\n0.7.24 to 0.7.33.\r\n<details>\r\n<summary>Changelog</summary>\r\n<p><em>Sourced from <a\r\nhref=\"https://github.com/faisalman/ua-parser-js/blob/master/changelog.md\">ua-parser-js's\r\nchangelog</a>.</em></p>\r\n<blockquote>\r\n<h2>Version 0.7.33 / 1.0.33</h2>\r\n<ul>\r\n<li>Add new browser : Cobalt</li>\r\n<li>Identify Macintosh as an Apple device</li>\r\n<li>Fix ReDoS vulnerability</li>\r\n</ul>\r\n<h1>Version 0.8</h1>\r\n<p>Version 0.8 was created by accident. This version is now deprecated\r\nand no longer maintained, please update to version 0.7 / 1.0.</p>\r\n</blockquote>\r\n</details>\r\n<details>\r\n<summary>Commits</summary>\r\n<ul>\r\n<li><a\r\nhref=\"https://github.com/faisalman/ua-parser-js/commit/f2d0db001d87da15de7b9b1df7be9f2eacefd8c5\"><code>f2d0db0</code></a>\r\nBump version 0.7.33</li>\r\n<li><a\r\nhref=\"https://github.com/faisalman/ua-parser-js/commit/a6140a17dd0300a35cfc9cff999545f267889411\"><code>a6140a1</code></a>\r\nRemove unsafe regex in trim() function</li>\r\n<li><a\r\nhref=\"https://github.com/faisalman/ua-parser-js/commit/a88660493568d6144a551424a8139d6c876635f6\"><code>a886604</code></a>\r\nFix <a\r\nhref=\"https://github-redirect.dependabot.com/faisalman/ua-parser-js/issues/605\">#605</a>\r\n- Identify Macintosh as Apple device</li>\r\n<li><a\r\nhref=\"https://github.com/faisalman/ua-parser-js/commit/b814bcd79198e730936c82462e2d729eb5423e3c\"><code>b814bcd</code></a>\r\nMerge pull request <a\r\nhref=\"https://github-redirect.dependabot.com/faisalman/ua-parser-js/issues/606\">#606</a>\r\nfrom rileyjshaw/patch-1</li>\r\n<li><a\r\nhref=\"https://github.com/faisalman/ua-parser-js/commit/7f71024161399b7aa5d5cd10dba9e059f0218262\"><code>7f71024</code></a>\r\nFix documentation</li>\r\n<li><a\r\nhref=\"https://github.com/faisalman/ua-parser-js/commit/c239ac5167abd574a635cb809a2b4fa35810d23b\"><code>c239ac5</code></a>\r\nMerge pull request <a\r\nhref=\"https://github-redirect.dependabot.com/faisalman/ua-parser-js/issues/604\">#604</a>\r\nfrom obecerra3/master</li>\r\n<li><a\r\nhref=\"https://github.com/faisalman/ua-parser-js/commit/8d3c2d327cf540ff2c050f1cc67bca8c6f8e4458\"><code>8d3c2d3</code></a>\r\nAdd new browser: Cobalt</li>\r\n<li><a\r\nhref=\"https://github.com/faisalman/ua-parser-js/commit/d11fc47dc9b6acc0f89fc10c120cea08e10cd31a\"><code>d11fc47</code></a>\r\nBump version 0.7.32</li>\r\n<li><a\r\nhref=\"https://github.com/faisalman/ua-parser-js/commit/b490110109de586deab96c775c9ef0dfc9c919c4\"><code>b490110</code></a>\r\nMerge branch 'develop' of github.com:faisalman/ua-parser-js</li>\r\n<li><a\r\nhref=\"https://github.com/faisalman/ua-parser-js/commit/cb5da5ea4b220d5b60fe209e123b7f911d8e0d4a\"><code>cb5da5e</code></a>\r\nMerge pull request <a\r\nhref=\"https://github-redirect.dependabot.com/faisalman/ua-parser-js/issues/600\">#600</a>\r\nfrom moekm/develop</li>\r\n<li>Additional commits viewable in <a\r\nhref=\"https://github.com/faisalman/ua-parser-js/compare/0.7.24...0.7.33\">compare\r\nview</a></li>\r\n</ul>\r\n</details>\r\n<br />\r\n\r\n\r\n[![Dependabot compatibility\r\nscore](https://dependabot-badges.githubapp.com/badges/compatibility_score?dependency-name=ua-parser-js&package-manager=npm_and_yarn&previous-version=0.7.24&new-version=0.7.33)](https://docs.github.com/en/github/managing-security-vulnerabilities/about-dependabot-security-updates#about-compatibility-scores)\r\n\r\nDependabot will resolve any conflicts with this PR as long as you don't\r\nalter it yourself. You can also trigger a rebase manually by commenting\r\n`@dependabot rebase`.\r\n\r\n[//]: # (dependabot-automerge-start)\r\n[//]: # (dependabot-automerge-end)\r\n\r\n---\r\n\r\n<details>\r\n<summary>Dependabot commands and options</summary>\r\n<br />\r\n\r\nYou can trigger Dependabot actions by commenting on this PR:\r\n- `@dependabot rebase` will rebase this PR\r\n- `@dependabot recreate` will recreate this PR, overwriting any edits\r\nthat have been made to it\r\n- `@dependabot merge` will merge this PR after your CI passes on it\r\n- `@dependabot squash and merge` will squash and merge this PR after\r\nyour CI passes on it\r\n- `@dependabot cancel merge` will cancel a previously requested merge\r\nand block automerging\r\n- `@dependabot reopen` will reopen this PR if it is closed\r\n- `@dependabot close` will close this PR and stop Dependabot recreating\r\nit. You can achieve the same result by closing it manually\r\n- `@dependabot ignore this major version` will close this PR and stop\r\nDependabot creating any more for this major version (unless you reopen\r\nthe PR or upgrade to it yourself)\r\n- `@dependabot ignore this minor version` will close this PR and stop\r\nDependabot creating any more for this minor version (unless you reopen\r\nthe PR or upgrade to it yourself)\r\n- `@dependabot ignore this dependency` will close this PR and stop\r\nDependabot creating any more for this dependency (unless you reopen the\r\nPR or upgrade to it yourself)\r\n- `@dependabot use these labels` will set the current labels as the\r\ndefault for future PRs for this repo and language\r\n- `@dependabot use these reviewers` will set the current reviewers as\r\nthe default for future PRs for this repo and language\r\n- `@dependabot use these assignees` will set the current assignees as\r\nthe default for future PRs for this repo and language\r\n- `@dependabot use this milestone` will set the current milestone as the\r\ndefault for future PRs for this repo and language\r\n\r\nYou can disable automated security fix PRs for this repo from the\r\n[Security Alerts\r\npage](https://github.com/software-mansion/react-native-gesture-handler/network/alerts).\r\n\r\n</details>\r\n\r\nSigned-off-by: dependabot[bot] <support@github.com>\r\nCo-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>",
+          "tree": {
+            "sha": "e30dcf49146f242d8e3001b1f74e2f7ba88d4c06",
+            "url": "https://api.github.com/repos/discord/react-native-gesture-handler/git/trees/e30dcf49146f242d8e3001b1f74e2f7ba88d4c06"
+          },
+          "url": "https://api.github.com/repos/discord/react-native-gesture-handler/git/commits/868589b8a14b38e984f54ec652fa60f2e584623c",
+          "comment_count": 0,
+          "verification": {
+            "verified": true,
+            "reason": "valid",
+            "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsBcBAABCAAQBQJj06jdCRBK7hj4Ov3rIwAARI0IAAKJGYoNl5iSacwBlN3kdRiC\nif6q3UT/2T1hbB0H402nLOLJmx5UZ+lCff3MtGZewbpxI5L3+QnaoMSV3I9JqewV\nT1MJLRP586t3yENgGFWJAMUQkpbdGvG5jWCqUx5+FyfzFzF19OhyDjNhj3QdVZIf\nldXDY4H/1a0/AE/YfaYDM5Bb1L761voCYKh0C2Q1E+6/EVk6UcfF5dG4JYvvJ2/I\nugCLgFPeUJTSZ4brgp8HMfmiT3uDW58/EFVuBFRE6oo4hTyLJ1lWfaIMJUFUfKtB\n4izNqP5s5QalOMIvLNJdP+xO8QQDP0GkO1xhA6sMM6nOLsilVVT7nPdTotiKkSw=\n=r0CB\n-----END PGP SIGNATURE-----\n",
+            "payload": "tree e30dcf49146f242d8e3001b1f74e2f7ba88d4c06\nparent 6d5d6610a8fd535ac4a390f2b419128fe46f9f98\nauthor dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com> 1674815709 +0100\ncommitter GitHub <noreply@github.com> 1674815709 +0100\n\nBump ua-parser-js from 0.7.24 to 0.7.33 in /docs (#2389)\n\n[//]: # (dependabot-start)\r\n⚠️  **Dependabot is rebasing this PR** ⚠️ \r\n\r\nRebasing might not happen immediately, so don't worry if this takes some\r\ntime.\r\n\r\nNote: if you make any changes to this PR yourself, they will take\r\nprecedence over the rebase.\r\n\r\n---\r\n\r\n[//]: # (dependabot-end)\r\n\r\nBumps [ua-parser-js](https://github.com/faisalman/ua-parser-js) from\r\n0.7.24 to 0.7.33.\r\n<details>\r\n<summary>Changelog</summary>\r\n<p><em>Sourced from <a\r\nhref=\"https://github.com/faisalman/ua-parser-js/blob/master/changelog.md\">ua-parser-js's\r\nchangelog</a>.</em></p>\r\n<blockquote>\r\n<h2>Version 0.7.33 / 1.0.33</h2>\r\n<ul>\r\n<li>Add new browser : Cobalt</li>\r\n<li>Identify Macintosh as an Apple device</li>\r\n<li>Fix ReDoS vulnerability</li>\r\n</ul>\r\n<h1>Version 0.8</h1>\r\n<p>Version 0.8 was created by accident. This version is now deprecated\r\nand no longer maintained, please update to version 0.7 / 1.0.</p>\r\n</blockquote>\r\n</details>\r\n<details>\r\n<summary>Commits</summary>\r\n<ul>\r\n<li><a\r\nhref=\"https://github.com/faisalman/ua-parser-js/commit/f2d0db001d87da15de7b9b1df7be9f2eacefd8c5\"><code>f2d0db0</code></a>\r\nBump version 0.7.33</li>\r\n<li><a\r\nhref=\"https://github.com/faisalman/ua-parser-js/commit/a6140a17dd0300a35cfc9cff999545f267889411\"><code>a6140a1</code></a>\r\nRemove unsafe regex in trim() function</li>\r\n<li><a\r\nhref=\"https://github.com/faisalman/ua-parser-js/commit/a88660493568d6144a551424a8139d6c876635f6\"><code>a886604</code></a>\r\nFix <a\r\nhref=\"https://github-redirect.dependabot.com/faisalman/ua-parser-js/issues/605\">#605</a>\r\n- Identify Macintosh as Apple device</li>\r\n<li><a\r\nhref=\"https://github.com/faisalman/ua-parser-js/commit/b814bcd79198e730936c82462e2d729eb5423e3c\"><code>b814bcd</code></a>\r\nMerge pull request <a\r\nhref=\"https://github-redirect.dependabot.com/faisalman/ua-parser-js/issues/606\">#606</a>\r\nfrom rileyjshaw/patch-1</li>\r\n<li><a\r\nhref=\"https://github.com/faisalman/ua-parser-js/commit/7f71024161399b7aa5d5cd10dba9e059f0218262\"><code>7f71024</code></a>\r\nFix documentation</li>\r\n<li><a\r\nhref=\"https://github.com/faisalman/ua-parser-js/commit/c239ac5167abd574a635cb809a2b4fa35810d23b\"><code>c239ac5</code></a>\r\nMerge pull request <a\r\nhref=\"https://github-redirect.dependabot.com/faisalman/ua-parser-js/issues/604\">#604</a>\r\nfrom obecerra3/master</li>\r\n<li><a\r\nhref=\"https://github.com/faisalman/ua-parser-js/commit/8d3c2d327cf540ff2c050f1cc67bca8c6f8e4458\"><code>8d3c2d3</code></a>\r\nAdd new browser: Cobalt</li>\r\n<li><a\r\nhref=\"https://github.com/faisalman/ua-parser-js/commit/d11fc47dc9b6acc0f89fc10c120cea08e10cd31a\"><code>d11fc47</code></a>\r\nBump version 0.7.32</li>\r\n<li><a\r\nhref=\"https://github.com/faisalman/ua-parser-js/commit/b490110109de586deab96c775c9ef0dfc9c919c4\"><code>b490110</code></a>\r\nMerge branch 'develop' of github.com:faisalman/ua-parser-js</li>\r\n<li><a\r\nhref=\"https://github.com/faisalman/ua-parser-js/commit/cb5da5ea4b220d5b60fe209e123b7f911d8e0d4a\"><code>cb5da5e</code></a>\r\nMerge pull request <a\r\nhref=\"https://github-redirect.dependabot.com/faisalman/ua-parser-js/issues/600\">#600</a>\r\nfrom moekm/develop</li>\r\n<li>Additional commits viewable in <a\r\nhref=\"https://github.com/faisalman/ua-parser-js/compare/0.7.24...0.7.33\">compare\r\nview</a></li>\r\n</ul>\r\n</details>\r\n<br />\r\n\r\n\r\n[![Dependabot compatibility\r\nscore](https://dependabot-badges.githubapp.com/badges/compatibility_score?dependency-name=ua-parser-js&package-manager=npm_and_yarn&previous-version=0.7.24&new-version=0.7.33)](https://docs.github.com/en/github/managing-security-vulnerabilities/about-dependabot-security-updates#about-compatibility-scores)\r\n\r\nDependabot will resolve any conflicts with this PR as long as you don't\r\nalter it yourself. You can also trigger a rebase manually by commenting\r\n`@dependabot rebase`.\r\n\r\n[//]: # (dependabot-automerge-start)\r\n[//]: # (dependabot-automerge-end)\r\n\r\n---\r\n\r\n<details>\r\n<summary>Dependabot commands and options</summary>\r\n<br />\r\n\r\nYou can trigger Dependabot actions by commenting on this PR:\r\n- `@dependabot rebase` will rebase this PR\r\n- `@dependabot recreate` will recreate this PR, overwriting any edits\r\nthat have been made to it\r\n- `@dependabot merge` will merge this PR after your CI passes on it\r\n- `@dependabot squash and merge` will squash and merge this PR after\r\nyour CI passes on it\r\n- `@dependabot cancel merge` will cancel a previously requested merge\r\nand block automerging\r\n- `@dependabot reopen` will reopen this PR if it is closed\r\n- `@dependabot close` will close this PR and stop Dependabot recreating\r\nit. You can achieve the same result by closing it manually\r\n- `@dependabot ignore this major version` will close this PR and stop\r\nDependabot creating any more for this major version (unless you reopen\r\nthe PR or upgrade to it yourself)\r\n- `@dependabot ignore this minor version` will close this PR and stop\r\nDependabot creating any more for this minor version (unless you reopen\r\nthe PR or upgrade to it yourself)\r\n- `@dependabot ignore this dependency` will close this PR and stop\r\nDependabot creating any more for this dependency (unless you reopen the\r\nPR or upgrade to it yourself)\r\n- `@dependabot use these labels` will set the current labels as the\r\ndefault for future PRs for this repo and language\r\n- `@dependabot use these reviewers` will set the current reviewers as\r\nthe default for future PRs for this repo and language\r\n- `@dependabot use these assignees` will set the current assignees as\r\nthe default for future PRs for this repo and language\r\n- `@dependabot use this milestone` will set the current milestone as the\r\ndefault for future PRs for this repo and language\r\n\r\nYou can disable automated security fix PRs for this repo from the\r\n[Security Alerts\r\npage](https://github.com/software-mansion/react-native-gesture-handler/network/alerts).\r\n\r\n</details>\r\n\r\nSigned-off-by: dependabot[bot] <support@github.com>\r\nCo-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>"
+          }
+        },
+        "url": "https://api.github.com/repos/discord/react-native-gesture-handler/commits/868589b8a14b38e984f54ec652fa60f2e584623c",
+        "author": {
+          "login": "dependabot[bot]",
+          "id": 49699333,
+          "node_id": "MDM6Qm90NDk2OTkzMzM=",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/dependabot%5Bbot%5D",
+          "type": "Bot",
+          "site_admin": false
+        },
+        "committer": {
+          "login": "web-flow",
+          "id": 19864447,
+          "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/web-flow",
+          "type": "User",
+          "site_admin": false
+        },
+        "parents": [
+          {
+            "sha": "6d5d6610a8fd535ac4a390f2b419128fe46f9f98",
+            "url": "https://api.github.com/repos/discord/react-native-gesture-handler/commits/6d5d6610a8fd535ac4a390f2b419128fe46f9f98"
+          }
+        ]
+      },
+      {
+        "sha": "6d5d6610a8fd535ac4a390f2b419128fe46f9f98",
+        "node_id": "C_kwDOGxii1NoAKDZkNWQ2NjEwYThmZDUzNWFjNGEzOTBmMmI0MTkxMjhmZTQ2ZjlmOTg",
+        "commit": {
+          "author": {
+            "name": "dependabot[bot]",
+            "email": "49699333+dependabot[bot]@users.noreply.github.com",
+            "date": "2023-01-27T10:34:53Z"
+          },
+          "committer": {
+            "name": "GitHub",
+            "email": "noreply@github.com",
+            "date": "2023-01-27T10:34:53Z"
+          },
+          "message": "Bump ua-parser-js from 0.7.31 to 0.7.33 (#2392)\n\nBumps [ua-parser-js](https://github.com/faisalman/ua-parser-js) from\r\n0.7.31 to 0.7.33.\r\n<details>\r\n<summary>Changelog</summary>\r\n<p><em>Sourced from <a\r\nhref=\"https://github.com/faisalman/ua-parser-js/blob/master/changelog.md\">ua-parser-js's\r\nchangelog</a>.</em></p>\r\n<blockquote>\r\n<h2>Version 0.7.31 / 1.0.2</h2>\r\n<ul>\r\n<li>Fix OPPO Reno A5 incorrect detection</li>\r\n<li>Fix TypeError Bug</li>\r\n<li>Use AST to extract regexes and verify them with safe-regex</li>\r\n</ul>\r\n<h2>Version 0.7.32 / 1.0.32</h2>\r\n<ul>\r\n<li>Add new browser : DuckDuckGo, Huawei Browser, LinkedIn</li>\r\n<li>Add new OS : HarmonyOS</li>\r\n<li>Add some Huawei models</li>\r\n<li>Add Sharp Aquos TV</li>\r\n<li>Improve detection Xiaomi Mi CC9</li>\r\n<li>Fix Sony Xperia 1 III misidentified as Acer tablet</li>\r\n<li>Fix Detect Sony BRAVIA as SmartTV</li>\r\n<li>Fix Detect Xiaomi Mi TV as SmartTV</li>\r\n<li>Fix Detect Galaxy Tab S8 as tablet</li>\r\n<li>Fix WeGame mistakenly identified as WeChat</li>\r\n<li>Fix included commas in Safari / Mobile Safari version</li>\r\n<li>Increase UA_MAX_LENGTH to 350</li>\r\n</ul>\r\n<h2>Version 0.7.33 / 1.0.33</h2>\r\n<ul>\r\n<li>Add new browser : Cobalt</li>\r\n<li>Identify Macintosh as an Apple device</li>\r\n<li>Fix ReDoS vulnerability</li>\r\n</ul>\r\n<h1>Version 0.8</h1>\r\n<p>Version 0.8 was created by accident. This version is now deprecated\r\nand no longer maintained, please update to version 0.7 / 1.0.</p>\r\n</blockquote>\r\n</details>\r\n<details>\r\n<summary>Commits</summary>\r\n<ul>\r\n<li><a\r\nhref=\"https://github.com/faisalman/ua-parser-js/commit/f2d0db001d87da15de7b9b1df7be9f2eacefd8c5\"><code>f2d0db0</code></a>\r\nBump version 0.7.33</li>\r\n<li><a\r\nhref=\"https://github.com/faisalman/ua-parser-js/commit/a6140a17dd0300a35cfc9cff999545f267889411\"><code>a6140a1</code></a>\r\nRemove unsafe regex in trim() function</li>\r\n<li><a\r\nhref=\"https://github.com/faisalman/ua-parser-js/commit/a88660493568d6144a551424a8139d6c876635f6\"><code>a886604</code></a>\r\nFix <a\r\nhref=\"https://github-redirect.dependabot.com/faisalman/ua-parser-js/issues/605\">#605</a>\r\n- Identify Macintosh as Apple device</li>\r\n<li><a\r\nhref=\"https://github.com/faisalman/ua-parser-js/commit/b814bcd79198e730936c82462e2d729eb5423e3c\"><code>b814bcd</code></a>\r\nMerge pull request <a\r\nhref=\"https://github-redirect.dependabot.com/faisalman/ua-parser-js/issues/606\">#606</a>\r\nfrom rileyjshaw/patch-1</li>\r\n<li><a\r\nhref=\"https://github.com/faisalman/ua-parser-js/commit/7f71024161399b7aa5d5cd10dba9e059f0218262\"><code>7f71024</code></a>\r\nFix documentation</li>\r\n<li><a\r\nhref=\"https://github.com/faisalman/ua-parser-js/commit/c239ac5167abd574a635cb809a2b4fa35810d23b\"><code>c239ac5</code></a>\r\nMerge pull request <a\r\nhref=\"https://github-redirect.dependabot.com/faisalman/ua-parser-js/issues/604\">#604</a>\r\nfrom obecerra3/master</li>\r\n<li><a\r\nhref=\"https://github.com/faisalman/ua-parser-js/commit/8d3c2d327cf540ff2c050f1cc67bca8c6f8e4458\"><code>8d3c2d3</code></a>\r\nAdd new browser: Cobalt</li>\r\n<li><a\r\nhref=\"https://github.com/faisalman/ua-parser-js/commit/d11fc47dc9b6acc0f89fc10c120cea08e10cd31a\"><code>d11fc47</code></a>\r\nBump version 0.7.32</li>\r\n<li><a\r\nhref=\"https://github.com/faisalman/ua-parser-js/commit/b490110109de586deab96c775c9ef0dfc9c919c4\"><code>b490110</code></a>\r\nMerge branch 'develop' of github.com:faisalman/ua-parser-js</li>\r\n<li><a\r\nhref=\"https://github.com/faisalman/ua-parser-js/commit/cb5da5ea4b220d5b60fe209e123b7f911d8e0d4a\"><code>cb5da5e</code></a>\r\nMerge pull request <a\r\nhref=\"https://github-redirect.dependabot.com/faisalman/ua-parser-js/issues/600\">#600</a>\r\nfrom moekm/develop</li>\r\n<li>Additional commits viewable in <a\r\nhref=\"https://github.com/faisalman/ua-parser-js/compare/0.7.31...0.7.33\">compare\r\nview</a></li>\r\n</ul>\r\n</details>\r\n<br />\r\n\r\n\r\n[![Dependabot compatibility\r\nscore](https://dependabot-badges.githubapp.com/badges/compatibility_score?dependency-name=ua-parser-js&package-manager=npm_and_yarn&previous-version=0.7.31&new-version=0.7.33)](https://docs.github.com/en/github/managing-security-vulnerabilities/about-dependabot-security-updates#about-compatibility-scores)\r\n\r\nDependabot will resolve any conflicts with this PR as long as you don't\r\nalter it yourself. You can also trigger a rebase manually by commenting\r\n`@dependabot rebase`.\r\n\r\n[//]: # (dependabot-automerge-start)\r\n[//]: # (dependabot-automerge-end)\r\n\r\n---\r\n\r\n<details>\r\n<summary>Dependabot commands and options</summary>\r\n<br />\r\n\r\nYou can trigger Dependabot actions by commenting on this PR:\r\n- `@dependabot rebase` will rebase this PR\r\n- `@dependabot recreate` will recreate this PR, overwriting any edits\r\nthat have been made to it\r\n- `@dependabot merge` will merge this PR after your CI passes on it\r\n- `@dependabot squash and merge` will squash and merge this PR after\r\nyour CI passes on it\r\n- `@dependabot cancel merge` will cancel a previously requested merge\r\nand block automerging\r\n- `@dependabot reopen` will reopen this PR if it is closed\r\n- `@dependabot close` will close this PR and stop Dependabot recreating\r\nit. You can achieve the same result by closing it manually\r\n- `@dependabot ignore this major version` will close this PR and stop\r\nDependabot creating any more for this major version (unless you reopen\r\nthe PR or upgrade to it yourself)\r\n- `@dependabot ignore this minor version` will close this PR and stop\r\nDependabot creating any more for this minor version (unless you reopen\r\nthe PR or upgrade to it yourself)\r\n- `@dependabot ignore this dependency` will close this PR and stop\r\nDependabot creating any more for this dependency (unless you reopen the\r\nPR or upgrade to it yourself)\r\n- `@dependabot use these labels` will set the current labels as the\r\ndefault for future PRs for this repo and language\r\n- `@dependabot use these reviewers` will set the current reviewers as\r\nthe default for future PRs for this repo and language\r\n- `@dependabot use these assignees` will set the current assignees as\r\nthe default for future PRs for this repo and language\r\n- `@dependabot use this milestone` will set the current milestone as the\r\ndefault for future PRs for this repo and language\r\n\r\nYou can disable automated security fix PRs for this repo from the\r\n[Security Alerts\r\npage](https://github.com/software-mansion/react-native-gesture-handler/network/alerts).\r\n\r\n</details>\r\n\r\nSigned-off-by: dependabot[bot] <support@github.com>\r\nCo-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>",
+          "tree": {
+            "sha": "cd5af295fdd3979bb54b2185a76edaeaa797bb5e",
+            "url": "https://api.github.com/repos/discord/react-native-gesture-handler/git/trees/cd5af295fdd3979bb54b2185a76edaeaa797bb5e"
+          },
+          "url": "https://api.github.com/repos/discord/react-native-gesture-handler/git/commits/6d5d6610a8fd535ac4a390f2b419128fe46f9f98",
+          "comment_count": 0,
+          "verification": {
+            "verified": true,
+            "reason": "valid",
+            "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsBcBAABCAAQBQJj06jNCRBK7hj4Ov3rIwAAqEcIAJRwTtQyxlbCK5AmcHvxUtu1\n1sWAJEtzzvj0rxzkIeex5kOJpJ2eJpapIsgopSo/+1B8TT3EA3u+vJLb92bUZo7O\nQ32G1xxqgIFA8beuIA6/KV1+xn4+3Eru3MsyFUZZ/C3dXzvjCubvB/fJ2j85SMm/\n0761nDEnUA0K4ozmUqWNN4jmzWBFlk3INwlvxuZYJo4bhhSOCkGCHEeJ7p+61543\nR9V9pGeZtdr0Z3gHHOcUgqbuZBiI/zNUJaNfpI89P3peI/+A53kWeefhovR68ebE\nfmvgteGG+RyDHIYjx+Vmc1HrzOOt9IZ/UjkZbaNoWDuGHd8QveYy8DXocm3OvwI=\n=WPf/\n-----END PGP SIGNATURE-----\n",
+            "payload": "tree cd5af295fdd3979bb54b2185a76edaeaa797bb5e\nparent f0868f7ccf678c947ef65519ebf97ae149a10289\nauthor dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com> 1674815693 +0100\ncommitter GitHub <noreply@github.com> 1674815693 +0100\n\nBump ua-parser-js from 0.7.31 to 0.7.33 (#2392)\n\nBumps [ua-parser-js](https://github.com/faisalman/ua-parser-js) from\r\n0.7.31 to 0.7.33.\r\n<details>\r\n<summary>Changelog</summary>\r\n<p><em>Sourced from <a\r\nhref=\"https://github.com/faisalman/ua-parser-js/blob/master/changelog.md\">ua-parser-js's\r\nchangelog</a>.</em></p>\r\n<blockquote>\r\n<h2>Version 0.7.31 / 1.0.2</h2>\r\n<ul>\r\n<li>Fix OPPO Reno A5 incorrect detection</li>\r\n<li>Fix TypeError Bug</li>\r\n<li>Use AST to extract regexes and verify them with safe-regex</li>\r\n</ul>\r\n<h2>Version 0.7.32 / 1.0.32</h2>\r\n<ul>\r\n<li>Add new browser : DuckDuckGo, Huawei Browser, LinkedIn</li>\r\n<li>Add new OS : HarmonyOS</li>\r\n<li>Add some Huawei models</li>\r\n<li>Add Sharp Aquos TV</li>\r\n<li>Improve detection Xiaomi Mi CC9</li>\r\n<li>Fix Sony Xperia 1 III misidentified as Acer tablet</li>\r\n<li>Fix Detect Sony BRAVIA as SmartTV</li>\r\n<li>Fix Detect Xiaomi Mi TV as SmartTV</li>\r\n<li>Fix Detect Galaxy Tab S8 as tablet</li>\r\n<li>Fix WeGame mistakenly identified as WeChat</li>\r\n<li>Fix included commas in Safari / Mobile Safari version</li>\r\n<li>Increase UA_MAX_LENGTH to 350</li>\r\n</ul>\r\n<h2>Version 0.7.33 / 1.0.33</h2>\r\n<ul>\r\n<li>Add new browser : Cobalt</li>\r\n<li>Identify Macintosh as an Apple device</li>\r\n<li>Fix ReDoS vulnerability</li>\r\n</ul>\r\n<h1>Version 0.8</h1>\r\n<p>Version 0.8 was created by accident. This version is now deprecated\r\nand no longer maintained, please update to version 0.7 / 1.0.</p>\r\n</blockquote>\r\n</details>\r\n<details>\r\n<summary>Commits</summary>\r\n<ul>\r\n<li><a\r\nhref=\"https://github.com/faisalman/ua-parser-js/commit/f2d0db001d87da15de7b9b1df7be9f2eacefd8c5\"><code>f2d0db0</code></a>\r\nBump version 0.7.33</li>\r\n<li><a\r\nhref=\"https://github.com/faisalman/ua-parser-js/commit/a6140a17dd0300a35cfc9cff999545f267889411\"><code>a6140a1</code></a>\r\nRemove unsafe regex in trim() function</li>\r\n<li><a\r\nhref=\"https://github.com/faisalman/ua-parser-js/commit/a88660493568d6144a551424a8139d6c876635f6\"><code>a886604</code></a>\r\nFix <a\r\nhref=\"https://github-redirect.dependabot.com/faisalman/ua-parser-js/issues/605\">#605</a>\r\n- Identify Macintosh as Apple device</li>\r\n<li><a\r\nhref=\"https://github.com/faisalman/ua-parser-js/commit/b814bcd79198e730936c82462e2d729eb5423e3c\"><code>b814bcd</code></a>\r\nMerge pull request <a\r\nhref=\"https://github-redirect.dependabot.com/faisalman/ua-parser-js/issues/606\">#606</a>\r\nfrom rileyjshaw/patch-1</li>\r\n<li><a\r\nhref=\"https://github.com/faisalman/ua-parser-js/commit/7f71024161399b7aa5d5cd10dba9e059f0218262\"><code>7f71024</code></a>\r\nFix documentation</li>\r\n<li><a\r\nhref=\"https://github.com/faisalman/ua-parser-js/commit/c239ac5167abd574a635cb809a2b4fa35810d23b\"><code>c239ac5</code></a>\r\nMerge pull request <a\r\nhref=\"https://github-redirect.dependabot.com/faisalman/ua-parser-js/issues/604\">#604</a>\r\nfrom obecerra3/master</li>\r\n<li><a\r\nhref=\"https://github.com/faisalman/ua-parser-js/commit/8d3c2d327cf540ff2c050f1cc67bca8c6f8e4458\"><code>8d3c2d3</code></a>\r\nAdd new browser: Cobalt</li>\r\n<li><a\r\nhref=\"https://github.com/faisalman/ua-parser-js/commit/d11fc47dc9b6acc0f89fc10c120cea08e10cd31a\"><code>d11fc47</code></a>\r\nBump version 0.7.32</li>\r\n<li><a\r\nhref=\"https://github.com/faisalman/ua-parser-js/commit/b490110109de586deab96c775c9ef0dfc9c919c4\"><code>b490110</code></a>\r\nMerge branch 'develop' of github.com:faisalman/ua-parser-js</li>\r\n<li><a\r\nhref=\"https://github.com/faisalman/ua-parser-js/commit/cb5da5ea4b220d5b60fe209e123b7f911d8e0d4a\"><code>cb5da5e</code></a>\r\nMerge pull request <a\r\nhref=\"https://github-redirect.dependabot.com/faisalman/ua-parser-js/issues/600\">#600</a>\r\nfrom moekm/develop</li>\r\n<li>Additional commits viewable in <a\r\nhref=\"https://github.com/faisalman/ua-parser-js/compare/0.7.31...0.7.33\">compare\r\nview</a></li>\r\n</ul>\r\n</details>\r\n<br />\r\n\r\n\r\n[![Dependabot compatibility\r\nscore](https://dependabot-badges.githubapp.com/badges/compatibility_score?dependency-name=ua-parser-js&package-manager=npm_and_yarn&previous-version=0.7.31&new-version=0.7.33)](https://docs.github.com/en/github/managing-security-vulnerabilities/about-dependabot-security-updates#about-compatibility-scores)\r\n\r\nDependabot will resolve any conflicts with this PR as long as you don't\r\nalter it yourself. You can also trigger a rebase manually by commenting\r\n`@dependabot rebase`.\r\n\r\n[//]: # (dependabot-automerge-start)\r\n[//]: # (dependabot-automerge-end)\r\n\r\n---\r\n\r\n<details>\r\n<summary>Dependabot commands and options</summary>\r\n<br />\r\n\r\nYou can trigger Dependabot actions by commenting on this PR:\r\n- `@dependabot rebase` will rebase this PR\r\n- `@dependabot recreate` will recreate this PR, overwriting any edits\r\nthat have been made to it\r\n- `@dependabot merge` will merge this PR after your CI passes on it\r\n- `@dependabot squash and merge` will squash and merge this PR after\r\nyour CI passes on it\r\n- `@dependabot cancel merge` will cancel a previously requested merge\r\nand block automerging\r\n- `@dependabot reopen` will reopen this PR if it is closed\r\n- `@dependabot close` will close this PR and stop Dependabot recreating\r\nit. You can achieve the same result by closing it manually\r\n- `@dependabot ignore this major version` will close this PR and stop\r\nDependabot creating any more for this major version (unless you reopen\r\nthe PR or upgrade to it yourself)\r\n- `@dependabot ignore this minor version` will close this PR and stop\r\nDependabot creating any more for this minor version (unless you reopen\r\nthe PR or upgrade to it yourself)\r\n- `@dependabot ignore this dependency` will close this PR and stop\r\nDependabot creating any more for this dependency (unless you reopen the\r\nPR or upgrade to it yourself)\r\n- `@dependabot use these labels` will set the current labels as the\r\ndefault for future PRs for this repo and language\r\n- `@dependabot use these reviewers` will set the current reviewers as\r\nthe default for future PRs for this repo and language\r\n- `@dependabot use these assignees` will set the current assignees as\r\nthe default for future PRs for this repo and language\r\n- `@dependabot use this milestone` will set the current milestone as the\r\ndefault for future PRs for this repo and language\r\n\r\nYou can disable automated security fix PRs for this repo from the\r\n[Security Alerts\r\npage](https://github.com/software-mansion/react-native-gesture-handler/network/alerts).\r\n\r\n</details>\r\n\r\nSigned-off-by: dependabot[bot] <support@github.com>\r\nCo-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>"
+          }
+        },
+        "url": "https://api.github.com/repos/discord/react-native-gesture-handler/commits/6d5d6610a8fd535ac4a390f2b419128fe46f9f98",
+        "author": {
+          "login": "dependabot[bot]",
+          "id": 49699333,
+          "node_id": "MDM6Qm90NDk2OTkzMzM=",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/dependabot%5Bbot%5D",
+          "type": "Bot",
+          "site_admin": false
+        },
+        "committer": {
+          "login": "web-flow",
+          "id": 19864447,
+          "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/web-flow",
+          "type": "User",
+          "site_admin": false
+        },
+        "parents": [
+          {
+            "sha": "f0868f7ccf678c947ef65519ebf97ae149a10289",
+            "url": "https://api.github.com/repos/discord/react-native-gesture-handler/commits/f0868f7ccf678c947ef65519ebf97ae149a10289"
+          }
+        ]
+      },
+      {
+        "sha": "f0868f7ccf678c947ef65519ebf97ae149a10289",
+        "node_id": "C_kwDOGxii1NoAKGYwODY4ZjdjY2Y2NzhjOTQ3ZWY2NTUxOWViZjk3YWUxNDlhMTAyODk",
+        "commit": {
+          "author": {
+            "name": "Jakub Piasecki",
+            "email": "jakub.piasecki@swmansion.com",
+            "date": "2023-01-13T08:55:18Z"
+          },
+          "committer": {
+            "name": "GitHub",
+            "email": "noreply@github.com",
+            "date": "2023-01-13T08:55:18Z"
+          },
+          "message": "Release 2.9.0 (#2374)\n\n## Description\r\n\r\nBump versions to `2.9.0` in `package.json`, `Podfile.lock` and in the\r\ndocs.",
+          "tree": {
+            "sha": "d29f63e18bf863c6842c4d0ddb904578ee11a23d",
+            "url": "https://api.github.com/repos/discord/react-native-gesture-handler/git/trees/d29f63e18bf863c6842c4d0ddb904578ee11a23d"
+          },
+          "url": "https://api.github.com/repos/discord/react-native-gesture-handler/git/commits/f0868f7ccf678c947ef65519ebf97ae149a10289",
+          "comment_count": 0,
+          "verification": {
+            "verified": true,
+            "reason": "valid",
+            "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsBcBAABCAAQBQJjwRx2CRBK7hj4Ov3rIwAA4VUIABbX0yRu3XOCRYoNhcQ53aUf\nfXBrh3gbuOvbsJ+p8nkXFhS5diN/8BEdAilsW1t8ucF5xxpubC14SYq167C0jBCb\n76pRsjTw4NSB6FwAO29O6OWM6Wo57MgJ4fxveqHpOPSa87nUcKSv3DrVV1RAvdjK\n9bXw+7KiRfSzApuEBZYklq8qUytcw1XqUYDeYhXCRHPrk9dwPn8qHkRd1xSIryfC\naI57LKscifrbD0MWYHsjeJ/xN19pI16oIyPdG6pH5Sg6y88QfA/vEtyD2gjau6fe\nr0WlFbWSAO3Ur2D1EHMtvemJZ1TxSLm34a++c4zMM+7Kl+hOz64+iOkgyb82mhE=\n=iuM2\n-----END PGP SIGNATURE-----\n",
+            "payload": "tree d29f63e18bf863c6842c4d0ddb904578ee11a23d\nparent bd7e899b42ae64c757fbb0d810e0cfcf6a1c1268\nauthor Jakub Piasecki <jakub.piasecki@swmansion.com> 1673600118 +0100\ncommitter GitHub <noreply@github.com> 1673600118 +0100\n\nRelease 2.9.0 (#2374)\n\n## Description\r\n\r\nBump versions to `2.9.0` in `package.json`, `Podfile.lock` and in the\r\ndocs."
+          }
+        },
+        "url": "https://api.github.com/repos/discord/react-native-gesture-handler/commits/f0868f7ccf678c947ef65519ebf97ae149a10289",
+        "author": {
+          "login": "j-piasecki",
+          "id": 21055725,
+          "node_id": "MDQ6VXNlcjIxMDU1NzI1",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/j-piasecki",
+          "type": "User",
+          "site_admin": false
+        },
+        "committer": {
+          "login": "web-flow",
+          "id": 19864447,
+          "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/web-flow",
+          "type": "User",
+          "site_admin": false
+        },
+        "parents": [
+          {
+            "sha": "bd7e899b42ae64c757fbb0d810e0cfcf6a1c1268",
+            "url": "https://api.github.com/repos/discord/react-native-gesture-handler/commits/bd7e899b42ae64c757fbb0d810e0cfcf6a1c1268"
+          }
+        ]
+      },
+      {
+        "sha": "bd7e899b42ae64c757fbb0d810e0cfcf6a1c1268",
+        "node_id": "C_kwDOGxii1NoAKGJkN2U4OTliNDJhZTY0Yzc1N2ZiYjBkODEwZTBjZmNmNmExYzEyNjg",
+        "commit": {
+          "author": {
+            "name": "Jakub Piasecki",
+            "email": "jakub.piasecki@swmansion.com",
+            "date": "2023-01-13T08:29:26Z"
+          },
+          "committer": {
+            "name": "GitHub",
+            "email": "noreply@github.com",
+            "date": "2023-01-13T08:29:26Z"
+          },
+          "message": "Support React Native 0.71 (#2313)\n\n## Description\r\n\r\nThis PR adds support for new architecture on React Native 0.71, which\r\nmost notably includes the usage of prefabs in native builds.\r\n\r\nIt also removes most of the dependencies of `FabricExample` app, so\r\nupgrades in the future should be easier.\r\n\r\nCo-authored-by: Kacper Kafara <kacperkafara@gmail.com>",
+          "tree": {
+            "sha": "858c9576eb5a7ca4e4f456941fb88d55808c10b7",
+            "url": "https://api.github.com/repos/discord/react-native-gesture-handler/git/trees/858c9576eb5a7ca4e4f456941fb88d55808c10b7"
+          },
+          "url": "https://api.github.com/repos/discord/react-native-gesture-handler/git/commits/bd7e899b42ae64c757fbb0d810e0cfcf6a1c1268",
+          "comment_count": 0,
+          "verification": {
+            "verified": true,
+            "reason": "valid",
+            "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsBcBAABCAAQBQJjwRZmCRBK7hj4Ov3rIwAAz9wIAFpQewXTuYrR7wXW6FghYgdJ\nKRLhPCHYg47apzM+P+doy3/06VONdeARkDwU2Rimit2F8OsJfLE2Py0PfRdyauJJ\npsHchcJv6bIEbIhRdALbDr/eDx9OCETMXZBhQebsNL8vSuOKquo3SPMTqPrRhtTu\nla186PhMIuaIKgRK7h0ayjtGVT81g9de8Ix5rulZg40eExoN5l5DD8bdroDvxxqs\nSTn0CsQqcTkLMJtoX46n1cz++h7fzEOSik3/lldnd7PaD1oQ1igwK2t4PkDr+4Kr\n1KVCQTKpnppq/SiWZkNWNfmDMGAno5iEdn6tRJpNhpAF2Pfj94tyWxXdfu+oh3c=\n=y+0j\n-----END PGP SIGNATURE-----\n",
+            "payload": "tree 858c9576eb5a7ca4e4f456941fb88d55808c10b7\nparent bb7c29beb114c66bb083864347c0c4380a4c550d\nauthor Jakub Piasecki <jakub.piasecki@swmansion.com> 1673598566 +0100\ncommitter GitHub <noreply@github.com> 1673598566 +0100\n\nSupport React Native 0.71 (#2313)\n\n## Description\r\n\r\nThis PR adds support for new architecture on React Native 0.71, which\r\nmost notably includes the usage of prefabs in native builds.\r\n\r\nIt also removes most of the dependencies of `FabricExample` app, so\r\nupgrades in the future should be easier.\r\n\r\nCo-authored-by: Kacper Kafara <kacperkafara@gmail.com>"
+          }
+        },
+        "url": "https://api.github.com/repos/discord/react-native-gesture-handler/commits/bd7e899b42ae64c757fbb0d810e0cfcf6a1c1268",
+        "author": {
+          "login": "j-piasecki",
+          "id": 21055725,
+          "node_id": "MDQ6VXNlcjIxMDU1NzI1",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/j-piasecki",
+          "type": "User",
+          "site_admin": false
+        },
+        "committer": {
+          "login": "web-flow",
+          "id": 19864447,
+          "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/web-flow",
+          "type": "User",
+          "site_admin": false
+        },
+        "parents": [
+          {
+            "sha": "bb7c29beb114c66bb083864347c0c4380a4c550d",
+            "url": "https://api.github.com/repos/discord/react-native-gesture-handler/commits/bb7c29beb114c66bb083864347c0c4380a4c550d"
+          }
+        ]
+      },
+      {
+        "sha": "bb7c29beb114c66bb083864347c0c4380a4c550d",
+        "node_id": "C_kwDOGxii1NoAKGJiN2MyOWJlYjExNGM2NmJiMDgzODY0MzQ3YzBjNDM4MGE0YzU1MGQ",
+        "commit": {
+          "author": {
+            "name": "Tomek Zawadzki",
+            "email": "tomekzawadzki98@gmail.com",
+            "date": "2023-01-12T11:49:03Z"
+          },
+          "committer": {
+            "name": "GitHub",
+            "email": "noreply@github.com",
+            "date": "2023-01-12T11:49:03Z"
+          },
+          "message": "Cocoapods: Fix deprecated/removed File.exists method (#2368)\n\nSame as\r\nhttps://github.com/software-mansion/react-native-reanimated/pull/3919\r\n\r\nFixes\r\nhttps://github.com/software-mansion/react-native-gesture-handler/issues/2367",
+          "tree": {
+            "sha": "eef61170bce3a50b757923bc14eaa36f98b2a75e",
+            "url": "https://api.github.com/repos/discord/react-native-gesture-handler/git/trees/eef61170bce3a50b757923bc14eaa36f98b2a75e"
+          },
+          "url": "https://api.github.com/repos/discord/react-native-gesture-handler/git/commits/bb7c29beb114c66bb083864347c0c4380a4c550d",
+          "comment_count": 0,
+          "verification": {
+            "verified": true,
+            "reason": "valid",
+            "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsBcBAABCAAQBQJjv/OvCRBK7hj4Ov3rIwAAv7IIAGqwmAQ03s/0vdgx/M8qgjn0\n7hDX2KatEYH+hXRAvxYgc4OaDj1UgC5GXbjtvwnV3xVDJ7MuD+GqrZN4GMP79yiP\nPjUcs5qAklUu/XMd+aw4LgDoWwdMNpksP3MAq3arho0lgF+D6i3tLXx9Kn1RcLyZ\nYvQeYgiJCVD43xecaT0cnk6/OoRfzQQfmNwgEsft+vb45Ae6hZxrioqQ/APwxVCL\naovTAQcJAxBToQQTuj8nJYB8rVzwHCnLHnHtfBfm9hUo3k46+5NBpHGz6IiENP4w\nO5ehilHBuhohEKlgDY16EiSAWr91RSDTJ4I6HKcfovYBDmcmVCcMrzW4fb36iCI=\n=A8aI\n-----END PGP SIGNATURE-----\n",
+            "payload": "tree eef61170bce3a50b757923bc14eaa36f98b2a75e\nparent 8d114aedba6568ea13dc0eba22c763d0bb579a3c\nauthor Tomek Zawadzki <tomekzawadzki98@gmail.com> 1673524143 +0100\ncommitter GitHub <noreply@github.com> 1673524143 +0100\n\nCocoapods: Fix deprecated/removed File.exists method (#2368)\n\nSame as\r\nhttps://github.com/software-mansion/react-native-reanimated/pull/3919\r\n\r\nFixes\r\nhttps://github.com/software-mansion/react-native-gesture-handler/issues/2367"
+          }
+        },
+        "url": "https://api.github.com/repos/discord/react-native-gesture-handler/commits/bb7c29beb114c66bb083864347c0c4380a4c550d",
+        "author": {
+          "login": "tomekzaw",
+          "id": 20516055,
+          "node_id": "MDQ6VXNlcjIwNTE2MDU1",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/tomekzaw",
+          "type": "User",
+          "site_admin": false
+        },
+        "committer": {
+          "login": "web-flow",
+          "id": 19864447,
+          "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/web-flow",
+          "type": "User",
+          "site_admin": false
+        },
+        "parents": [
+          {
+            "sha": "8d114aedba6568ea13dc0eba22c763d0bb579a3c",
+            "url": "https://api.github.com/repos/discord/react-native-gesture-handler/commits/8d114aedba6568ea13dc0eba22c763d0bb579a3c"
+          }
+        ]
+      }
+    ],
     "releases": [],
-    "issues": [],
+    "issues": [
+      {
+        "url": "https://api.github.com/repos/discord/react-native-gesture-handler/issues/1",
+        "id": 1121501508,
+        "node_id": "PR_kwDOGxii1M4x8fUo",
+        "number": 1,
+        "title": "2.2.0 discord 1",
+        "user": {
+          "login": "mrkcsc",
+          "id": 658964,
+          "node_id": "MDQ6VXNlcjY1ODk2NA==",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/mrkcsc",
+          "type": "User",
+          "site_admin": false
+        },
+        "labels": [],
+        "state": "open",
+        "locked": false,
+        "assignee": null,
+        "assignees": [],
+        "milestone": null,
+        "comments": 0,
+        "created_at": "2022-02-02T04:38:31Z",
+        "updated_at": "2022-02-02T04:40:37Z",
+        "closed_at": null,
+        "author_association": "NONE",
+        "active_lock_reason": null,
+        "draft": true,
+        "pull_request": {
+          "url": "https://api.github.com/repos/discord/react-native-gesture-handler/pulls/1",
+          "merged_at": null
+        },
+        "body": "Fork of 2.2.0 with changes:\r\n\r\n* Update `build.gradle` to point to our named project `:react:react-native-reanimated`\r\n* Update the public Kotlin files to be `open` for subclassing.\r\n* Include the generated `/lib` directory for type definitons (we could not find a better way to get them included).\r\n\r\n---\r\n\r\nDo not merge, only use as reference for changes.",
+        "reactions": {
+          "url": "https://api.github.com/repos/discord/react-native-gesture-handler/issues/1/reactions",
+          "total_count": 0,
+          "+1": 0,
+          "-1": 0,
+          "laugh": 0,
+          "hooray": 0,
+          "confused": 0,
+          "heart": 0,
+          "rocket": 0,
+          "eyes": 0
+        },
+        "performed_via_github_app": null,
+        "state_reason": null
+      }
+    ],
     "pullRequests": []
   }
 }
