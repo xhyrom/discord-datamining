@@ -56,55 +56,5 @@
     "push": false,
     "triage": false,
     "pull": false
-  },
-  "branches": [
-    {
-      "name": "master",
-      "commit": {
-        "sha": "2ae4b2888165a393dfb6382168825fddf00c27b9",
-        "url": "https://api.github.com/repos/discord/rapidxml/commits/2ae4b2888165a393dfb6382168825fddf00c27b9"
-      },
-      "protected": false
-    }
-  ],
-  "last5": {
-    "commits": [
-      {
-        "sha": "2ae4b2888165a393dfb6382168825fddf00c27b9",
-        "node_id": "MDY6Q29tbWl0NjEzMjgzODY6MmFlNGIyODg4MTY1YTM5M2RmYjYzODIxNjg4MjVmZGRmMDBjMjdiOQ==",
-        "commit": {
-          "author": {
-            "name": "Chris Marsh",
-            "email": "chris@discordapp.com",
-            "date": "2016-06-16T18:34:06Z"
-          },
-          "committer": {
-            "name": "Chris Marsh",
-            "email": "chris@discordapp.com",
-            "date": "2016-06-16T18:34:06Z"
-          },
-          "message": "rapidxml 1.13",
-          "tree": {
-            "sha": "24d754a93a5bbc95555a42a5b1d123f4aed7fe03",
-            "url": "https://api.github.com/repos/discord/rapidxml/git/trees/24d754a93a5bbc95555a42a5b1d123f4aed7fe03"
-          },
-          "url": "https://api.github.com/repos/discord/rapidxml/git/commits/2ae4b2888165a393dfb6382168825fddf00c27b9",
-          "comment_count": 0,
-          "verification": {
-            "verified": false,
-            "reason": "unsigned",
-            "signature": null,
-            "payload": null
-          }
-        },
-        "url": "https://api.github.com/repos/discord/rapidxml/commits/2ae4b2888165a393dfb6382168825fddf00c27b9",
-        "author": null,
-        "committer": null,
-        "parents": []
-      }
-    ],
-    "releases": [],
-    "issues": [],
-    "pullRequests": []
   }
 }
