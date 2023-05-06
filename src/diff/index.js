@@ -2,7 +2,9 @@ import { Octokit } from "@octokit/action";
 import { readFile } from "node:fs/promises";
 import { all, lang } from "./comments.js";
 
-const octokit = new Octokit();
+const octokit = new Octokit({
+  auth: process.env.GITHUB_TOKEN,
+});
 const eventPayload = JSON.parse(
   await readFile(process.env.GITHUB_EVENT_PATH, "utf8")
 );
@@ -15,7 +17,10 @@ const diff = await octokit.repos.compareCommits({
 });
 
 const allComment = all(diff);
-const langComment = lang(octokit, eventPayload);
+const langComment = await lang(octokit, eventPayload);
+
+console.log(allComment);
+console.log(langComment);
 
 // create comment on commit
 if (allComment) {
