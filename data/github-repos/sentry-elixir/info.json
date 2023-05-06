@@ -57,7 +57,64 @@
     "triage": false,
     "pull": false
   },
-  "branches": [],
+  "branches": [
+    {
+      "name": "after_send_event",
+      "commit": {
+        "sha": "5550903e5b45710bac1e0eaafca3937fecfc060b",
+        "url": "https://api.github.com/repos/discord/sentry-elixir/commits/5550903e5b45710bac1e0eaafca3937fecfc060b"
+      },
+      "protected": false
+    },
+    {
+      "name": "change-default-send-behaviour",
+      "commit": {
+        "sha": "7abe46decfde286e4550d12a4fe33cdb0484ea8c",
+        "url": "https://api.github.com/repos/discord/sentry-elixir/commits/7abe46decfde286e4550d12a4fe33cdb0484ea8c"
+      },
+      "protected": false
+    },
+    {
+      "name": "extra-applications",
+      "commit": {
+        "sha": "8d15bbff5bb1df37a758ea8763b6f1dfdc034798",
+        "url": "https://api.github.com/repos/discord/sentry-elixir/commits/8d15bbff5bb1df37a758ea8763b6f1dfdc034798"
+      },
+      "protected": false
+    },
+    {
+      "name": "fix-plug-duplication",
+      "commit": {
+        "sha": "216cda4a3e0e6a7fcfd55698f66f1150892d87fc",
+        "url": "https://api.github.com/repos/discord/sentry-elixir/commits/216cda4a3e0e6a7fcfd55698f66f1150892d87fc"
+      },
+      "protected": false
+    },
+    {
+      "name": "genserver-timeout",
+      "commit": {
+        "sha": "0ae1dd1505726a30529b9a0a643f9e0f07e6ef87",
+        "url": "https://api.github.com/repos/discord/sentry-elixir/commits/0ae1dd1505726a30529b9a0a643f9e0f07e6ef87"
+      },
+      "protected": false
+    },
+    {
+      "name": "gzip",
+      "commit": {
+        "sha": "d6c4cec393869c9b69313d73184af0c945a31c3d",
+        "url": "https://api.github.com/repos/discord/sentry-elixir/commits/d6c4cec393869c9b69313d73184af0c945a31c3d"
+      },
+      "protected": false
+    },
+    {
+      "name": "master",
+      "commit": {
+        "sha": "dfcbf2349cd839f29b55cf231ba63e7cdef08655",
+        "url": "https://api.github.com/repos/discord/sentry-elixir/commits/dfcbf2349cd839f29b55cf231ba63e7cdef08655"
+      },
+      "protected": false
+    }
+  ],
   "last5": {
     "commits": [
       {
