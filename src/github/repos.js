@@ -13,7 +13,7 @@ export const repos = await Promise.all(
       org: "discord",
     })
   ).map(async (repo) => {
-    const lastCommits = await octokit.rest.repos
+    /*const lastCommits = await octokit.rest.repos
       .listCommits({
         owner: "discord",
         repo: repo.name,
@@ -51,17 +51,17 @@ export const repos = await Promise.all(
         owner: "discord",
         repo: repo.name,
       })
-      .catch(() => ({ data: [] }));
+      .catch(() => ({ data: [] }));*/
 
     return {
       ...repo,
-      branches: listOfBranches.data,
+      /*branches: listOfBranches.data,
       last5: {
         commits: lastCommits.data,
         releases: lastReleases.data,
         issues: lastIssues.data,
         pullRequests: lastPullRequests.data,
-      },
+      },*/
     };
   })
 );
