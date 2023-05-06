@@ -57,24 +57,7 @@
     "triage": false,
     "pull": false
   },
-  "branches": [
-    {
-      "name": "master",
-      "commit": {
-        "sha": "5a8a819d463a914004a4f28e3ed84a784e12e837",
-        "url": "https://api.github.com/repos/discord/Piexif/commits/5a8a819d463a914004a4f28e3ed84a784e12e837"
-      },
-      "protected": false
-    },
-    {
-      "name": "png",
-      "commit": {
-        "sha": "c8f5f73760ba7e4fdf5ad1c57e7c6ddea92529ef",
-        "url": "https://api.github.com/repos/discord/Piexif/commits/c8f5f73760ba7e4fdf5ad1c57e7c6ddea92529ef"
-      },
-      "protected": false
-    }
-  ],
+  "branches": [],
   "last5": {
     "commits": [
       {
