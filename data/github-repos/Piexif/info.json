@@ -339,54 +339,7 @@
         ]
       }
     ],
-    "releases": [
-      {
-        "url": "https://api.github.com/repos/discord/Piexif/releases/5680888",
-        "id": 5680888,
-        "author": {
-          "login": "brian-armstrong-discord",
-          "id": 25939803,
-          "node_id": "MDQ6VXNlcjI1OTM5ODAz",
-          "gravatar_id": "",
-          "url": "https://api.github.com/users/brian-armstrong-discord",
-          "type": "User",
-          "site_admin": false
-        },
-        "node_id": "MDc6UmVsZWFzZTU2ODA4ODg=",
-        "tag_name": "1.0.14",
-        "target_commitish": "master",
-        "name": "update __init__.py",
-        "draft": false,
-        "prerelease": false,
-        "created_at": "2017-03-08T19:08:10Z",
-        "published_at": "2017-03-08T19:08:30Z",
-        "assets": [],
-        "body": ""
-      },
-      {
-        "url": "https://api.github.com/repos/discord/Piexif/releases/5589448",
-        "id": 5589448,
-        "author": {
-          "login": "brian-armstrong-discord",
-          "id": 25939803,
-          "node_id": "MDQ6VXNlcjI1OTM5ODAz",
-          "gravatar_id": "",
-          "url": "https://api.github.com/users/brian-armstrong-discord",
-          "type": "User",
-          "site_admin": false
-        },
-        "node_id": "MDc6UmVsZWFzZTU1ODk0NDg=",
-        "tag_name": "1.0.13",
-        "target_commitish": "master",
-        "name": "",
-        "draft": false,
-        "prerelease": false,
-        "created_at": "2017-02-28T03:11:38Z",
-        "published_at": "2017-02-28T03:14:57Z",
-        "assets": [],
-        "body": ""
-      }
-    ],
+    "releases": [],
     "issues": [
       {
         "url": "https://api.github.com/repos/discord/Piexif/issues/1",
