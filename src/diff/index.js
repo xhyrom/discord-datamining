@@ -6,14 +6,11 @@ const eventPayload = JSON.parse(
   await readFile(process.env.GITHUB_EVENT_PATH, "utf8")
 );
 
-console.log(eventPayload);
-const latestCommit = eventPayload.commits[0];
-
 const diff = await octokit.repos.compareCommits({
   owner: eventPayload.repository.owner.login,
   repo: eventPayload.repository.name,
-  base: latestCommit.parents[0].id,
-  head: latestCommit.id,
+  base: eventPayload.before,
+  head: eventPayload.after,
 });
 
 console.log(diff);
