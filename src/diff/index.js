@@ -1,5 +1,6 @@
 import { Octokit } from "@octokit/action";
 import { readFile } from "node:fs/promises";
+import { all } from "./comments";
 
 const octokit = new Octokit();
 const eventPayload = JSON.parse(
@@ -13,5 +14,24 @@ const diff = await octokit.repos.compareCommits({
   head: eventPayload.after,
 });
 
-console.log(diff);
-console.log(diff.data.files);
+const all = all(diff);
+const lang = lang(octokit, eventPayload);
+
+// create comment on commit
+if (all) {
+  await octokit.repos.createCommitComment({
+    owner: eventPayload.repository.owner.login,
+    repo: eventPayload.repository.name,
+    commit_sha: eventPayload.after,
+    body: all,
+  });
+}
+
+if (lang) {
+  await octokit.repos.createCommitComment({
+    owner: eventPayload.repository.owner.login,
+    repo: eventPayload.repository.name,
+    commit_sha: eventPayload.after,
+    body: lang,
+  });
+}
