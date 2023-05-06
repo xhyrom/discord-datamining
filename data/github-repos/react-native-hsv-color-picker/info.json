@@ -51,32 +51,7 @@
     "triage": false,
     "pull": false
   },
-  "branches": [
-    {
-      "name": "dependabot/npm_and_yarn/acorn-5.7.4",
-      "commit": {
-        "sha": "4046b12865fe3c68b6cd7743c1aa3c213ccf01eb",
-        "url": "https://api.github.com/repos/discord/react-native-hsv-color-picker/commits/4046b12865fe3c68b6cd7743c1aa3c213ccf01eb"
-      },
-      "protected": false
-    },
-    {
-      "name": "ios/modified-for-color-picker",
-      "commit": {
-        "sha": "050cde2008d5b1d3c3812de445e61f569a7de55f",
-        "url": "https://api.github.com/repos/discord/react-native-hsv-color-picker/commits/050cde2008d5b1d3c3812de445e61f569a7de55f"
-      },
-      "protected": false
-    },
-    {
-      "name": "master",
-      "commit": {
-        "sha": "9d62cee4e928034eba96cec9d5e63dcdf026afea",
-        "url": "https://api.github.com/repos/discord/react-native-hsv-color-picker/commits/9d62cee4e928034eba96cec9d5e63dcdf026afea"
-      },
-      "protected": false
-    }
-  ],
+  "branches": [],
   "last5": {
     "commits": [
       {

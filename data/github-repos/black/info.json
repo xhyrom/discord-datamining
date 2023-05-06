@@ -332,56 +332,7 @@
       }
     ],
     "releases": [],
-    "issues": [
-      {
-        "url": "https://api.github.com/repos/discord/black/issues/1",
-        "id": 1205930173,
-        "node_id": "PR_kwDOD0NB1M42TuNN",
-        "number": 1,
-        "title": "Range limit click",
-        "user": {
-          "login": "goodspark",
-          "id": 29210237,
-          "node_id": "MDQ6VXNlcjI5MjEwMjM3",
-          "gravatar_id": "",
-          "url": "https://api.github.com/users/goodspark",
-          "type": "User",
-          "site_admin": false
-        },
-        "labels": [],
-        "state": "closed",
-        "locked": false,
-        "assignee": null,
-        "assignees": [],
-        "milestone": null,
-        "comments": 0,
-        "created_at": "2022-04-15T22:39:37Z",
-        "updated_at": "2022-04-18T17:33:56Z",
-        "closed_at": "2022-04-18T17:33:53Z",
-        "author_association": "NONE",
-        "active_lock_reason": null,
-        "draft": false,
-        "pull_request": {
-          "url": "https://api.github.com/repos/discord/black/pulls/1",
-          "merged_at": "2022-04-18T17:33:53Z"
-        },
-        "body": "Ref: https://github.com/psf/black/issues/2976\r\n\r\nBlack was importing something incorrectly. Upgrading to the version with the fix also means dropping Python 2.7 support.",
-        "reactions": {
-          "url": "https://api.github.com/repos/discord/black/issues/1/reactions",
-          "total_count": 0,
-          "+1": 0,
-          "-1": 0,
-          "laugh": 0,
-          "hooray": 0,
-          "confused": 0,
-          "heart": 0,
-          "rocket": 0,
-          "eyes": 0
-        },
-        "performed_via_github_app": null,
-        "state_reason": null
-      }
-    ],
+    "issues": [],
     "pullRequests": []
   }
 }
