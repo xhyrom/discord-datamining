@@ -14,16 +14,16 @@ const diff = await octokit.repos.compareCommits({
   head: eventPayload.after,
 });
 
-const all = all(diff);
+const full = all(diff);
 const lang = lang(octokit, eventPayload);
 
 // create comment on commit
-if (all) {
+if (full) {
   await octokit.repos.createCommitComment({
     owner: eventPayload.repository.owner.login,
     repo: eventPayload.repository.name,
     commit_sha: eventPayload.after,
-    body: all,
+    body: full,
   });
 }
 
