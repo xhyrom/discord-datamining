@@ -51,56 +51,7 @@
     "triage": false,
     "pull": false
   },
-  "branches": [
-    {
-      "name": "handle-buffered-callback",
-      "commit": {
-        "sha": "e32ad85a98c9ec1b7d47ba57ebf3909f2ae1380b",
-        "url": "https://api.github.com/repos/discord/gen_stage/commits/e32ad85a98c9ec1b7d47ba57ebf3909f2ae1380b"
-      },
-      "protected": false
-    },
-    {
-      "name": "jf-fq",
-      "commit": {
-        "sha": "f1f3663b49e97be764c3f1a1263b34483c2eb429",
-        "url": "https://api.github.com/repos/discord/gen_stage/commits/f1f3663b49e97be764c3f1a1263b34483c2eb429"
-      },
-      "protected": false
-    },
-    {
-      "name": "jv-exit-signals",
-      "commit": {
-        "sha": "966d998c699dec58e0d183ddbaa2b783c46cd375",
-        "url": "https://api.github.com/repos/discord/gen_stage/commits/966d998c699dec58e0d183ddbaa2b783c46cd375"
-      },
-      "protected": false
-    },
-    {
-      "name": "jv-zip",
-      "commit": {
-        "sha": "67ad3232a84704c3c25ead27efa1856bd47b8a25",
-        "url": "https://api.github.com/repos/discord/gen_stage/commits/67ad3232a84704c3c25ead27efa1856bd47b8a25"
-      },
-      "protected": false
-    },
-    {
-      "name": "master",
-      "commit": {
-        "sha": "e2c45e641c0f37321048678c19cc523513dbd387",
-        "url": "https://api.github.com/repos/discord/gen_stage/commits/e2c45e641c0f37321048678c19cc523513dbd387"
-      },
-      "protected": false
-    },
-    {
-      "name": "metrics-buffer",
-      "commit": {
-        "sha": "34f901d52a3b2b9d84ce2c38e04603b13f0154df",
-        "url": "https://api.github.com/repos/discord/gen_stage/commits/34f901d52a3b2b9d84ce2c38e04603b13f0154df"
-      },
-      "protected": false
-    }
-  ],
+  "branches": [],
   "last5": {
     "commits": [
       {
@@ -521,6 +472,563 @@
         "state_reason": null
       }
     ],
-    "pullRequests": []
+    "pullRequests": [
+      {
+        "url": "https://api.github.com/repos/discord/gen_stage/pulls/3",
+        "id": 428151162,
+        "node_id": "MDExOlB1bGxSZXF1ZXN0NDI4MTUxMTYy",
+        "number": 3,
+        "state": "closed",
+        "locked": false,
+        "title": "Implement handle_discarded callback and buffered_count method",
+        "user": {
+          "login": "mezz",
+          "id": 916092,
+          "node_id": "MDQ6VXNlcjkxNjA5Mg==",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/mezz",
+          "type": "User",
+          "site_admin": false
+        },
+        "body": "This is a new approach to getting the buffer count and number of discarded items.\r\nThe callback is different from the other PR, so now it's only called when something is discarded.\r\nI added a new method to get the buffer count, which should be much more efficient than polling the full state when the buffer is very large.",
+        "created_at": "2020-06-05T00:07:59Z",
+        "updated_at": "2021-08-06T22:46:40Z",
+        "closed_at": "2020-06-23T17:58:19Z",
+        "merged_at": null,
+        "merge_commit_sha": "58b455cd9523d675f5742d7a5e50b7931036686f",
+        "assignee": null,
+        "assignees": [],
+        "requested_reviewers": [
+          {
+            "login": "daisyzhou",
+            "id": 384777,
+            "node_id": "MDQ6VXNlcjM4NDc3Nw==",
+            "gravatar_id": "",
+            "url": "https://api.github.com/users/daisyzhou",
+            "type": "User",
+            "site_admin": false
+          }
+        ],
+        "requested_teams": [],
+        "labels": [],
+        "milestone": null,
+        "draft": false,
+        "head": {
+          "label": "discord:metrics-buffer-2",
+          "ref": "metrics-buffer-2",
+          "sha": "929ded2072640047b1d800c9255781255b07eb15",
+          "user": {
+            "login": "discord",
+            "id": 1965106,
+            "node_id": "MDEyOk9yZ2FuaXphdGlvbjE5NjUxMDY=",
+            "gravatar_id": "",
+            "url": "https://api.github.com/users/discord",
+            "type": "Organization",
+            "site_admin": false
+          },
+          "repo": {
+            "id": 256326939,
+            "node_id": "MDEwOlJlcG9zaXRvcnkyNTYzMjY5Mzk=",
+            "name": "gen_stage",
+            "full_name": "discord/gen_stage",
+            "private": false,
+            "owner": {
+              "login": "discord",
+              "id": 1965106,
+              "node_id": "MDEyOk9yZ2FuaXphdGlvbjE5NjUxMDY=",
+              "gravatar_id": "",
+              "url": "https://api.github.com/users/discord",
+              "type": "Organization",
+              "site_admin": false
+            },
+            "description": "Producer and consumer actors with back-pressure for Elixir",
+            "fork": true,
+            "url": "https://api.github.com/repos/discord/gen_stage",
+            "created_at": "2020-04-16T20:50:42Z",
+            "updated_at": "2021-04-28T21:28:48Z",
+            "pushed_at": "2021-08-06T22:46:39Z",
+            "homepage": "http://hexdocs.pm/gen_stage",
+            "size": 1189,
+            "stargazers_count": 2,
+            "watchers_count": 2,
+            "language": "Elixir",
+            "has_issues": false,
+            "has_projects": true,
+            "has_downloads": true,
+            "has_wiki": true,
+            "has_pages": false,
+            "has_discussions": false,
+            "forks_count": 3,
+            "archived": false,
+            "disabled": false,
+            "open_issues_count": 0,
+            "license": null,
+            "allow_forking": true,
+            "is_template": false,
+            "web_commit_signoff_required": false,
+            "topics": [],
+            "visibility": "public",
+            "forks": 3,
+            "open_issues": 0,
+            "watchers": 2,
+            "default_branch": "master"
+          }
+        },
+        "base": {
+          "label": "discord:master",
+          "ref": "master",
+          "sha": "e2c45e641c0f37321048678c19cc523513dbd387",
+          "user": {
+            "login": "discord",
+            "id": 1965106,
+            "node_id": "MDEyOk9yZ2FuaXphdGlvbjE5NjUxMDY=",
+            "gravatar_id": "",
+            "url": "https://api.github.com/users/discord",
+            "type": "Organization",
+            "site_admin": false
+          },
+          "repo": {
+            "id": 256326939,
+            "node_id": "MDEwOlJlcG9zaXRvcnkyNTYzMjY5Mzk=",
+            "name": "gen_stage",
+            "full_name": "discord/gen_stage",
+            "private": false,
+            "owner": {
+              "login": "discord",
+              "id": 1965106,
+              "node_id": "MDEyOk9yZ2FuaXphdGlvbjE5NjUxMDY=",
+              "gravatar_id": "",
+              "url": "https://api.github.com/users/discord",
+              "type": "Organization",
+              "site_admin": false
+            },
+            "description": "Producer and consumer actors with back-pressure for Elixir",
+            "fork": true,
+            "url": "https://api.github.com/repos/discord/gen_stage",
+            "created_at": "2020-04-16T20:50:42Z",
+            "updated_at": "2021-04-28T21:28:48Z",
+            "pushed_at": "2021-08-06T22:46:39Z",
+            "homepage": "http://hexdocs.pm/gen_stage",
+            "size": 1189,
+            "stargazers_count": 2,
+            "watchers_count": 2,
+            "language": "Elixir",
+            "has_issues": false,
+            "has_projects": true,
+            "has_downloads": true,
+            "has_wiki": true,
+            "has_pages": false,
+            "has_discussions": false,
+            "forks_count": 3,
+            "archived": false,
+            "disabled": false,
+            "open_issues_count": 0,
+            "license": null,
+            "allow_forking": true,
+            "is_template": false,
+            "web_commit_signoff_required": false,
+            "topics": [],
+            "visibility": "public",
+            "forks": 3,
+            "open_issues": 0,
+            "watchers": 2,
+            "default_branch": "master"
+          }
+        },
+        "_links": {
+          "self": {
+            "href": "https://api.github.com/repos/discord/gen_stage/pulls/3"
+          },
+          "html": {
+            "href": "https://github.com/discord/gen_stage/pull/3"
+          },
+          "issue": {
+            "href": "https://api.github.com/repos/discord/gen_stage/issues/3"
+          },
+          "comments": {
+            "href": "https://api.github.com/repos/discord/gen_stage/issues/3/comments"
+          },
+          "review_comments": {
+            "href": "https://api.github.com/repos/discord/gen_stage/pulls/3/comments"
+          },
+          "review_comment": {
+            "href": "https://api.github.com/repos/discord/gen_stage/pulls/comments{/number}"
+          },
+          "commits": {
+            "href": "https://api.github.com/repos/discord/gen_stage/pulls/3/commits"
+          },
+          "statuses": {
+            "href": "https://api.github.com/repos/discord/gen_stage/statuses/929ded2072640047b1d800c9255781255b07eb15"
+          }
+        },
+        "author_association": "MEMBER",
+        "auto_merge": null,
+        "active_lock_reason": null
+      },
+      {
+        "url": "https://api.github.com/repos/discord/gen_stage/pulls/2",
+        "id": 427455961,
+        "node_id": "MDExOlB1bGxSZXF1ZXN0NDI3NDU1OTYx",
+        "number": 2,
+        "state": "closed",
+        "locked": false,
+        "title": "Implement handle_buffered callback for handling buffer count metrics",
+        "user": {
+          "login": "mezz",
+          "id": 916092,
+          "node_id": "MDQ6VXNlcjkxNjA5Mg==",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/mezz",
+          "type": "User",
+          "site_admin": false
+        },
+        "body": "",
+        "created_at": "2020-06-03T21:05:20Z",
+        "updated_at": "2020-06-23T17:57:33Z",
+        "closed_at": "2020-06-23T17:57:33Z",
+        "merged_at": null,
+        "merge_commit_sha": "66f9d8643b8526f2d24ef92c9746047351abc02e",
+        "assignee": null,
+        "assignees": [],
+        "requested_reviewers": [],
+        "requested_teams": [],
+        "labels": [],
+        "milestone": null,
+        "draft": false,
+        "head": {
+          "label": "discord:handle-buffered-callback",
+          "ref": "handle-buffered-callback",
+          "sha": "e32ad85a98c9ec1b7d47ba57ebf3909f2ae1380b",
+          "user": {
+            "login": "discord",
+            "id": 1965106,
+            "node_id": "MDEyOk9yZ2FuaXphdGlvbjE5NjUxMDY=",
+            "gravatar_id": "",
+            "url": "https://api.github.com/users/discord",
+            "type": "Organization",
+            "site_admin": false
+          },
+          "repo": {
+            "id": 256326939,
+            "node_id": "MDEwOlJlcG9zaXRvcnkyNTYzMjY5Mzk=",
+            "name": "gen_stage",
+            "full_name": "discord/gen_stage",
+            "private": false,
+            "owner": {
+              "login": "discord",
+              "id": 1965106,
+              "node_id": "MDEyOk9yZ2FuaXphdGlvbjE5NjUxMDY=",
+              "gravatar_id": "",
+              "url": "https://api.github.com/users/discord",
+              "type": "Organization",
+              "site_admin": false
+            },
+            "description": "Producer and consumer actors with back-pressure for Elixir",
+            "fork": true,
+            "url": "https://api.github.com/repos/discord/gen_stage",
+            "created_at": "2020-04-16T20:50:42Z",
+            "updated_at": "2021-04-28T21:28:48Z",
+            "pushed_at": "2021-08-06T22:46:39Z",
+            "homepage": "http://hexdocs.pm/gen_stage",
+            "size": 1189,
+            "stargazers_count": 2,
+            "watchers_count": 2,
+            "language": "Elixir",
+            "has_issues": false,
+            "has_projects": true,
+            "has_downloads": true,
+            "has_wiki": true,
+            "has_pages": false,
+            "has_discussions": false,
+            "forks_count": 3,
+            "archived": false,
+            "disabled": false,
+            "open_issues_count": 0,
+            "license": null,
+            "allow_forking": true,
+            "is_template": false,
+            "web_commit_signoff_required": false,
+            "topics": [],
+            "visibility": "public",
+            "forks": 3,
+            "open_issues": 0,
+            "watchers": 2,
+            "default_branch": "master"
+          }
+        },
+        "base": {
+          "label": "discord:master",
+          "ref": "master",
+          "sha": "e2c45e641c0f37321048678c19cc523513dbd387",
+          "user": {
+            "login": "discord",
+            "id": 1965106,
+            "node_id": "MDEyOk9yZ2FuaXphdGlvbjE5NjUxMDY=",
+            "gravatar_id": "",
+            "url": "https://api.github.com/users/discord",
+            "type": "Organization",
+            "site_admin": false
+          },
+          "repo": {
+            "id": 256326939,
+            "node_id": "MDEwOlJlcG9zaXRvcnkyNTYzMjY5Mzk=",
+            "name": "gen_stage",
+            "full_name": "discord/gen_stage",
+            "private": false,
+            "owner": {
+              "login": "discord",
+              "id": 1965106,
+              "node_id": "MDEyOk9yZ2FuaXphdGlvbjE5NjUxMDY=",
+              "gravatar_id": "",
+              "url": "https://api.github.com/users/discord",
+              "type": "Organization",
+              "site_admin": false
+            },
+            "description": "Producer and consumer actors with back-pressure for Elixir",
+            "fork": true,
+            "url": "https://api.github.com/repos/discord/gen_stage",
+            "created_at": "2020-04-16T20:50:42Z",
+            "updated_at": "2021-04-28T21:28:48Z",
+            "pushed_at": "2021-08-06T22:46:39Z",
+            "homepage": "http://hexdocs.pm/gen_stage",
+            "size": 1189,
+            "stargazers_count": 2,
+            "watchers_count": 2,
+            "language": "Elixir",
+            "has_issues": false,
+            "has_projects": true,
+            "has_downloads": true,
+            "has_wiki": true,
+            "has_pages": false,
+            "has_discussions": false,
+            "forks_count": 3,
+            "archived": false,
+            "disabled": false,
+            "open_issues_count": 0,
+            "license": null,
+            "allow_forking": true,
+            "is_template": false,
+            "web_commit_signoff_required": false,
+            "topics": [],
+            "visibility": "public",
+            "forks": 3,
+            "open_issues": 0,
+            "watchers": 2,
+            "default_branch": "master"
+          }
+        },
+        "_links": {
+          "self": {
+            "href": "https://api.github.com/repos/discord/gen_stage/pulls/2"
+          },
+          "html": {
+            "href": "https://github.com/discord/gen_stage/pull/2"
+          },
+          "issue": {
+            "href": "https://api.github.com/repos/discord/gen_stage/issues/2"
+          },
+          "comments": {
+            "href": "https://api.github.com/repos/discord/gen_stage/issues/2/comments"
+          },
+          "review_comments": {
+            "href": "https://api.github.com/repos/discord/gen_stage/pulls/2/comments"
+          },
+          "review_comment": {
+            "href": "https://api.github.com/repos/discord/gen_stage/pulls/comments{/number}"
+          },
+          "commits": {
+            "href": "https://api.github.com/repos/discord/gen_stage/pulls/2/commits"
+          },
+          "statuses": {
+            "href": "https://api.github.com/repos/discord/gen_stage/statuses/e32ad85a98c9ec1b7d47ba57ebf3909f2ae1380b"
+          }
+        },
+        "author_association": "MEMBER",
+        "auto_merge": null,
+        "active_lock_reason": null
+      },
+      {
+        "url": "https://api.github.com/repos/discord/gen_stage/pulls/1",
+        "id": 404832463,
+        "node_id": "MDExOlB1bGxSZXF1ZXN0NDA0ODMyNDYz",
+        "number": 1,
+        "state": "closed",
+        "locked": false,
+        "title": "Emit metric instead of logging when buffer is exceeded",
+        "user": {
+          "login": "mezz",
+          "id": 916092,
+          "node_id": "MDQ6VXNlcjkxNjA5Mg==",
+          "gravatar_id": "",
+          "url": "https://api.github.com/users/mezz",
+          "type": "User",
+          "site_admin": false
+        },
+        "body": "",
+        "created_at": "2020-04-16T23:27:27Z",
+        "updated_at": "2020-04-17T17:15:44Z",
+        "closed_at": "2020-04-17T17:15:42Z",
+        "merged_at": "2020-04-17T17:15:42Z",
+        "merge_commit_sha": "34f901d52a3b2b9d84ce2c38e04603b13f0154df",
+        "assignee": null,
+        "assignees": [],
+        "requested_reviewers": [],
+        "requested_teams": [],
+        "labels": [],
+        "milestone": null,
+        "draft": false,
+        "head": {
+          "label": "discord:buffer-exceeded-metrics",
+          "ref": "buffer-exceeded-metrics",
+          "sha": "dd8b5c12797185393877bf33977b831cdabe2f2b",
+          "user": {
+            "login": "discord",
+            "id": 1965106,
+            "node_id": "MDEyOk9yZ2FuaXphdGlvbjE5NjUxMDY=",
+            "gravatar_id": "",
+            "url": "https://api.github.com/users/discord",
+            "type": "Organization",
+            "site_admin": false
+          },
+          "repo": {
+            "id": 256326939,
+            "node_id": "MDEwOlJlcG9zaXRvcnkyNTYzMjY5Mzk=",
+            "name": "gen_stage",
+            "full_name": "discord/gen_stage",
+            "private": false,
+            "owner": {
+              "login": "discord",
+              "id": 1965106,
+              "node_id": "MDEyOk9yZ2FuaXphdGlvbjE5NjUxMDY=",
+              "gravatar_id": "",
+              "url": "https://api.github.com/users/discord",
+              "type": "Organization",
+              "site_admin": false
+            },
+            "description": "Producer and consumer actors with back-pressure for Elixir",
+            "fork": true,
+            "url": "https://api.github.com/repos/discord/gen_stage",
+            "created_at": "2020-04-16T20:50:42Z",
+            "updated_at": "2021-04-28T21:28:48Z",
+            "pushed_at": "2021-08-06T22:46:39Z",
+            "homepage": "http://hexdocs.pm/gen_stage",
+            "size": 1189,
+            "stargazers_count": 2,
+            "watchers_count": 2,
+            "language": "Elixir",
+            "has_issues": false,
+            "has_projects": true,
+            "has_downloads": true,
+            "has_wiki": true,
+            "has_pages": false,
+            "has_discussions": false,
+            "forks_count": 3,
+            "archived": false,
+            "disabled": false,
+            "open_issues_count": 0,
+            "license": null,
+            "allow_forking": true,
+            "is_template": false,
+            "web_commit_signoff_required": false,
+            "topics": [],
+            "visibility": "public",
+            "forks": 3,
+            "open_issues": 0,
+            "watchers": 2,
+            "default_branch": "master"
+          }
+        },
+        "base": {
+          "label": "discord:master",
+          "ref": "master",
+          "sha": "e2c45e641c0f37321048678c19cc523513dbd387",
+          "user": {
+            "login": "discord",
+            "id": 1965106,
+            "node_id": "MDEyOk9yZ2FuaXphdGlvbjE5NjUxMDY=",
+            "gravatar_id": "",
+            "url": "https://api.github.com/users/discord",
+            "type": "Organization",
+            "site_admin": false
+          },
+          "repo": {
+            "id": 256326939,
+            "node_id": "MDEwOlJlcG9zaXRvcnkyNTYzMjY5Mzk=",
+            "name": "gen_stage",
+            "full_name": "discord/gen_stage",
+            "private": false,
+            "owner": {
+              "login": "discord",
+              "id": 1965106,
+              "node_id": "MDEyOk9yZ2FuaXphdGlvbjE5NjUxMDY=",
+              "gravatar_id": "",
+              "url": "https://api.github.com/users/discord",
+              "type": "Organization",
+              "site_admin": false
+            },
+            "description": "Producer and consumer actors with back-pressure for Elixir",
+            "fork": true,
+            "url": "https://api.github.com/repos/discord/gen_stage",
+            "created_at": "2020-04-16T20:50:42Z",
+            "updated_at": "2021-04-28T21:28:48Z",
+            "pushed_at": "2021-08-06T22:46:39Z",
+            "homepage": "http://hexdocs.pm/gen_stage",
+            "size": 1189,
+            "stargazers_count": 2,
+            "watchers_count": 2,
+            "language": "Elixir",
+            "has_issues": false,
+            "has_projects": true,
+            "has_downloads": true,
+            "has_wiki": true,
+            "has_pages": false,
+            "has_discussions": false,
+            "forks_count": 3,
+            "archived": false,
+            "disabled": false,
+            "open_issues_count": 0,
+            "license": null,
+            "allow_forking": true,
+            "is_template": false,
+            "web_commit_signoff_required": false,
+            "topics": [],
+            "visibility": "public",
+            "forks": 3,
+            "open_issues": 0,
+            "watchers": 2,
+            "default_branch": "master"
+          }
+        },
+        "_links": {
+          "self": {
+            "href": "https://api.github.com/repos/discord/gen_stage/pulls/1"
+          },
+          "html": {
+            "href": "https://github.com/discord/gen_stage/pull/1"
+          },
+          "issue": {
+            "href": "https://api.github.com/repos/discord/gen_stage/issues/1"
+          },
+          "comments": {
+            "href": "https://api.github.com/repos/discord/gen_stage/issues/1/comments"
+          },
+          "review_comments": {
+            "href": "https://api.github.com/repos/discord/gen_stage/pulls/1/comments"
+          },
+          "review_comment": {
+            "href": "https://api.github.com/repos/discord/gen_stage/pulls/comments{/number}"
+          },
+          "commits": {
+            "href": "https://api.github.com/repos/discord/gen_stage/pulls/1/commits"
+          },
+          "statuses": {
+            "href": "https://api.github.com/repos/discord/gen_stage/statuses/dd8b5c12797185393877bf33977b831cdabe2f2b"
+          }
+        },
+        "author_association": "MEMBER",
+        "auto_merge": null,
+        "active_lock_reason": null
+      }
+    ]
   }
 }

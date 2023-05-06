@@ -57,7 +57,16 @@
     "triage": false,
     "pull": false
   },
-  "branches": [],
+  "branches": [
+    {
+      "name": "main",
+      "commit": {
+        "sha": "811ba50dafaea2c49e08993e66222789971cfbce",
+        "url": "https://api.github.com/repos/discord/RLottieAndroid/commits/811ba50dafaea2c49e08993e66222789971cfbce"
+      },
+      "protected": false
+    }
+  ],
   "last5": {
     "commits": [
       {
