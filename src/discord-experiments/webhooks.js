@@ -1,5 +1,5 @@
 import { REST } from "@discordjs/rest";
-const rest = new REST({ version: "10" });
+const rest = new REST({ version: "10" }).setToken(process.env.DISCORD_TOKEN);
 
 /**
  * @param {string} id
