@@ -18,6 +18,14 @@ const ALL_GUILD_EXPERIMENTS_CLIENT = CURRENT_DISCORD_FILE.match(
     id: m.replace(/kind: "(\S+)",\s+id: "(\S+)"/g, "$2"),
   };
 });
+const ALL_USER_EXPERIMENTS_CLIENT = CURRENT_DISCORD_FILE.match(
+  /kind: "user",\s+id: "(\S+)"/g
+)?.map((m) => {
+  return {
+    kind: m.replace(/kind: "(\S+)",\s+id: "(\S+)"/g, "$1"),
+    id: m.replace(/kind: "(\S+)",\s+id: "(\S+)"/g, "$2"),
+  };
+});
 
 export const decodeGuildExperiment = (experiment) => {
   //Decodes Experiments
@@ -27,7 +35,8 @@ export const decodeGuildExperiment = (experiment) => {
       experiment[1] ??
       ALL_GUILD_EXPERIMENTS_CLIENT?.find(
         (clientExp) => murmurhash.v3(clientExp.id) === experiment[0]
-      ),
+      )?.id ??
+      null,
     revision: experiment[2],
     populations: [],
   };
