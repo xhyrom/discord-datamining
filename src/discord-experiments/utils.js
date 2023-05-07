@@ -1,9 +1,9 @@
 // Adopted from https://gitlab.com/derpystuff/discord-experiments/-/blob/main/index.js
 import deepEqual from "fast-deep-equal";
 import { EmbedBuilder, disableValidators } from "@discordjs/builders";
-import { info } from "../logger";
-import { send } from "./webhooks";
-import { experimentNameFormat, populationsFormat } from "./formatters";
+import { info } from "../logger.js";
+import { send } from "./webhooks.js";
+import { experimentNameFormat, populationsFormat } from "./formatters.js";
 disableValidators();
 
 export const decodeGuildExperiment = (experiment) => {
