@@ -30,5 +30,5 @@ export const send = async (eventPayload, id, token, content, threadId) => {
     }),
   });
 
-  console.log(await res.json());
+  !res.ok && console.error(await res.text());
 };
