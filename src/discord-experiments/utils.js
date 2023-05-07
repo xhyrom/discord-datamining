@@ -1,4 +1,10 @@
 // Adopted from https://gitlab.com/derpystuff/discord-experiments/-/blob/main/index.js
+import deepEqual from "fast-deep-equal";
+import { EmbedBuilder, disableValidators } from "@discordjs/builders";
+import { info } from "../logger";
+import { send } from "./webhooks";
+import { experimentNameFormat, populationsFormat } from "./formatters";
+disableValidators();
 
 export const decodeGuildExperiment = (experiment) => {
   //Decodes Experiments
@@ -162,4 +168,99 @@ export const decodeGuildExperiment = (experiment) => {
   });
   parsedExperiment.overrides = parsedOverrides;
   return parsedExperiment;
+};
+
+/**
+ * @param {unknown[]} oldExperiments
+ * @param {unknown[]} currentExperiments
+ * @param {string} webhookId
+ * @param {string} webhookToken
+ */
+export const watcher = (
+  oldExperiments,
+  currentExperiments,
+  webhookId,
+  webhookToken
+) => {
+  if (deepEqual(oldExperiments, currentExperiments)) return;
+
+  const oldExperimentsHashKeys = oldExperiments.map((e) => e.hashKey);
+  const currentExperimentsHashKeys = currentExperiments.map((e) => e.hashKey);
+
+  const addedExperiments = currentExperimentsHashKeys.filter(
+    (key) => !oldExperimentsHashKeys.includes(key)
+  );
+
+  const removedExperiments = oldExperimentsHashKeys.filter(
+    (key) => !currentExperimentsHashKeys.includes(key)
+  );
+
+  const changedExperiments = currentExperimentsHashKeys.filter((key) => {
+    if (!oldExperimentsHashKeys.includes(key)) return false;
+    return !deepEqual(oldExperiments[key], currentExperiments[key]);
+  });
+
+  if (addedExperiments.length > 0) {
+    info(
+      `Added Experiments: ${addedExperiments
+        .map(experimentNameFormat)
+        .join(", ")}`
+    );
+
+    for (const experiment of addedExperiments) {
+      send(
+        webhookId,
+        webhookToken,
+        [defaultEmbed(experiment).setColor(0x51f542).toJSON()],
+        "1104694113078608033"
+      );
+    }
+  }
+
+  if (removedExperiments.length > 0) {
+    info(
+      `Removed Experiments: ${removedExperiments
+        .map(experimentNameFormat)
+        .join(", ")}`
+    );
+
+    for (const experiment of addedExperiments) {
+      send(
+        webhookId,
+        webhookToken,
+        [defaultEmbed(experiment).setColor(0xf53731).toJSON()],
+        "1104694113078608033"
+      );
+    }
+  }
+
+  if (changedExperiments.length > 0) {
+    info(
+      `Changed Experiments: ${changedExperiments
+        .map(experimentNameFormat)
+        .join(", ")}`
+    );
+
+    for (const experiment of addedExperiments) {
+      send(
+        webhookId,
+        webhookToken,
+        [defaultEmbed(experiment).setColor(0x8dabc7).toJSON()],
+        "1104694113078608033"
+      );
+    }
+  }
+};
+
+const defaultEmbed = (experiment) => {
+  return new EmbedBuilder().addFields(
+    {
+      name: "Name",
+      value: experimentNameFormat(experiment),
+    },
+    {
+      name: "Populations",
+      value: populationsFormat(experiment),
+    }
+  );
 };

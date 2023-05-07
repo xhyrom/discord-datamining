@@ -1,13 +1,18 @@
 import { error, info, success } from "../logger.js";
-import { decodeGuildExperiment } from "./utils.js";
+import { decodeGuildExperiment, watcher } from "./utils.js";
+import { experimentNameFormat } from "./formatters.js";
 
-import { writeFile } from "node:fs/promises";
+import { readFile, writeFile } from "node:fs/promises";
 import { join } from "node:path";
 
 import simpleGit from "simple-git";
 import months from "../months.js";
 
 const git = simpleGit();
+
+const [webhookId, webhookToken] = new URL(process.env.DISCORD_WEBHOOK).pathname
+  .split("/")
+  .slice(3);
 
 info("Fetching experiments");
 const res = await (
@@ -17,6 +22,13 @@ const res = await (
 ).json();
 
 const experiments = res.guild_experiments.map(decodeGuildExperiment);
+
+await watcher(
+  JSON.parse(await readFile(join("data", "experiments.json"), "utf-8")),
+  experiments,
+  webhookId,
+  webhookToken
+);
 
 await writeFile(
   join("data", "experiments.json"),
@@ -39,9 +51,7 @@ await git.commit([
     months[date.getMonth()]
   } ${date.getFullYear()} - Discord Experiments was updated 🚀`,
   `Experiments (${experiments.length}):\n${experiments
-    .map(
-      (experiment) => `${experiment.name || "unknown"} (${experiment.hashKey})`
-    )
+    .map(experimentNameFormat)
     .join("\n")}`,
 ]);
 
