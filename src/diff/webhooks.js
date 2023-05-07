@@ -5,7 +5,7 @@
  * @param {string} content
  * @param {string|null} threadId
  */
-export const send = (eventPayload, id, token, content, threadId) => {
+export const send = async (eventPayload, id, token, content, threadId) => {
   const url = `https://discord.com/api/webhooks/${id}/${token}${
     threadId ? `?thread_id=${threadId}` : ""
   }}`;
@@ -19,7 +19,7 @@ export const send = (eventPayload, id, token, content, threadId) => {
     })`;
   }
 
-  return fetch(url, {
+  const res = await fetch(url, {
     method: "POST",
     headers: {
       "Content-Type": "application/json",
@@ -29,4 +29,6 @@ export const send = (eventPayload, id, token, content, threadId) => {
       thread_id: threadId,
     }),
   });
+
+  console.log(await res.json());
 };

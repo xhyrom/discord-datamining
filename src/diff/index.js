@@ -27,7 +27,7 @@ if (allComment) {
     body: allComment,
   });
 
-  send(
+  await send(
     eventPayload,
     webhookId,
     webhookToken,
@@ -44,7 +44,7 @@ if (langComment) {
     body: langComment,
   });
 
-  send(
+  await send(
     eventPayload,
     webhookId,
     webhookToken,
