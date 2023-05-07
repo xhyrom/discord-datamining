@@ -11,6 +11,7 @@ import {
   overridesFormat,
 } from "./formatters.js";
 import { join } from "node:path";
+import { getObjectDiff } from "./diff.js";
 disableValidators();
 
 const CURRENT_DISCORD_FILE = await readFile(join("data", "current.js"), "utf8");
@@ -247,7 +248,8 @@ export const watcher = (
         webhookToken,
         [
           defaultEmbed(
-            currentExperiments.find((e) => e.hashKey === experimentKey)
+            currentExperiments.find((e) => e.hashKey === experimentKey),
+            "add"
           )
             .setColor(0x51f542)
             .toJSON(),
@@ -274,7 +276,8 @@ export const watcher = (
         webhookToken,
         [
           defaultEmbed(
-            currentExperiments.find((e) => e.hashKey === experimentKey)
+            currentExperiments.find((e) => e.hashKey === experimentKey),
+            "remove"
           )
             .setColor(0xf53731)
             .toJSON(),
@@ -296,14 +299,23 @@ export const watcher = (
     );
 
     for (const experimentKey of changedExperiments) {
+      const oldExperiment = oldExperiments.find(
+        (e) => e.hashKey === experimentKey
+      );
+      const currentExperiment = currentExperiments.find(
+        (e) => e.hashKey === experimentKey
+      );
+
       send(
         webhookId,
         webhookToken,
         [
           defaultEmbed(
-            currentExperiments.find((e) => e.hashKey === experimentKey)
+            currentExperiment,
+            "change",
+            getObjectDiff(oldExperiment, currentExperiment).join("\n\n")
           )
-            .setColor(0x8dabc7)
+            .setColor(0xe8c61a)
             .toJSON(),
         ],
         "1104694113078608033"
@@ -312,8 +324,26 @@ export const watcher = (
   }
 };
 
-const defaultEmbed = (experiment) => {
-  return new EmbedBuilder().addFields(
+/**
+ * @param {any} experiment
+ * @param {string} action
+ * @param {string} diff
+ * @returns
+ */
+const defaultEmbed = (experiment, action, diff = "") => {
+  let title = "";
+  switch (action) {
+    case "add":
+      title = "New Experiment";
+      break;
+    case "remove":
+      title = "Experiment Removed";
+      break;
+    case "change":
+      title = "Experiment Updated";
+  }
+
+  const fields = [
     {
       name: "Name",
       value: experimentNameFormat(experiment),
@@ -333,6 +363,16 @@ const defaultEmbed = (experiment) => {
       name: "Overrides",
       value: overridesFormat(experiment.overrides),
       inline: false,
-    }
-  );
+    },
+  ];
+
+  if (diff !== "") {
+    fields.push({
+      name: "Changes",
+      value: diff,
+      inline: false,
+    });
+  }
+
+  return new EmbedBuilder().setTitle(title).addFields(...fields);
 };
