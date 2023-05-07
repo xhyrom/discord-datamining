@@ -20,14 +20,7 @@ const experiments = res.guild_experiments.map(decodeGuildExperiment);
 
 await writeFile(
   join("data", "experiments.json"),
-  JSON.stringify(
-    {
-      ...experiments,
-      raw: res,
-    },
-    null,
-    2
-  )
+  JSON.stringify(experiments, null, 2)
 );
 
 const result = await git.status();

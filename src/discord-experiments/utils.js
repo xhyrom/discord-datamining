@@ -156,8 +156,9 @@ export const decodeGuildExperiment = (experiment) => {
 
   const parsedOverrides = {};
   experiment[4].forEach(function (override) {
+    const overrideName = override.b === -1 ? "none" : `treatment-${override.b}`;
     //Parse overrides
-    parsedOverrides[override.b.toString()] = override.k;
+    parsedOverrides[overrideName] = override.k;
   });
   parsedExperiment.overrides = parsedOverrides;
   return parsedExperiment;
