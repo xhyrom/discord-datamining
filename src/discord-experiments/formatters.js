@@ -43,8 +43,8 @@ export const populationsFormat = (populations) => {
 export const overridesFormat = (overrides) => {
   return Object.entries(overrides).length > 0
     ? Object.entries(overrides)
-        .map(([name, value]) => `${nameFormat(name)}: ${value.join(", ")}`)
-        .join("\n")
+        .map(([name, value]) => `**${nameFormat(name)}**: ${value.join(", ")}`)
+        .join("\n\n")
     : "Any overrides";
 };
 
