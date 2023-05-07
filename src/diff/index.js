@@ -20,7 +20,7 @@ const langComment = await lang(octokit, eventPayload);
 
 // create comment on commit
 if (allComment) {
-  await octokit.repos.createCommitComment({
+  const comment = await octokit.repos.createCommitComment({
     owner: eventPayload.repository.owner.login,
     repo: eventPayload.repository.name,
     commit_sha: eventPayload.after,
@@ -29,6 +29,7 @@ if (allComment) {
 
   await send(
     eventPayload,
+    comment.data,
     webhookId,
     webhookToken,
     allComment,
@@ -37,7 +38,7 @@ if (allComment) {
 }
 
 if (langComment) {
-  await octokit.repos.createCommitComment({
+  const comment = await octokit.repos.createCommitComment({
     owner: eventPayload.repository.owner.login,
     repo: eventPayload.repository.name,
     commit_sha: eventPayload.after,
@@ -46,6 +47,7 @@ if (langComment) {
 
   await send(
     eventPayload,
+    comment.data,
     webhookId,
     webhookToken,
     langComment,
