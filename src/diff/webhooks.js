@@ -8,7 +8,7 @@
 export const send = async (eventPayload, id, token, content, threadId) => {
   const url = `https://discord.com/api/webhooks/${id}/${token}${
     threadId ? `?thread_id=${threadId}` : ""
-  }}`;
+  }`;
 
   if (content.length > 2000) {
     content = `${content.slice(
