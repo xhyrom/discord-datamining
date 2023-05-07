@@ -57,7 +57,7 @@ export const parseFilter = (f) => {
     return `Server ID is ${orList.format(f.hash_key)}`;
   if (f.type === "guild_hub_types")
     return `Server hub type is ${orList.format(
-      f.type.map((t) => hubTypes[t])
+      f.hub_types.map((t) => hubTypes[t])
     )}`;
   if (f.type === "guild_has_vanity_url")
     return `Server ${f.hash_key ? "has" : "does not have"} a vanity URL`;
