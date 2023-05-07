@@ -7,7 +7,7 @@ const octokit = new Octokit({
   auth: process.env.GITHUB_TOKEN,
 });
 
-const [webhookId, webhookToken] = new URL(process.env.DISCORD_WEBHOOK)
+const [webhookId, webhookToken] = new URL(process.env.DISCORD_WEBHOOK).pathname
   .split("/")
   .slice(3);
 
