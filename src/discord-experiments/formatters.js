@@ -46,12 +46,10 @@ export const parseFilter = (f) => {
   if (f.type === "guild_has_feature")
     return `Server has feature ${orList.format(f.hash_key)}`;
   if (f.type === "guild_id_range")
-    return `Server ID is in range ${f.hash_key ?? 0} - ${f[1][1][1]}`;
+    return `Server ID is in range ${f.hash_key ?? 0} - ${f.target}`;
   if (f.type === "guild_member_count_range")
     return `Server member count is ${
-      f[1][1][1]
-        ? `in range ${f.hash_key ?? 0} - ${f[1][1][1]}`
-        : `${f.hash_key}+`
+      f.target ? `in range ${f.hash_key ?? 0} - ${f.target}` : `${f.hash_key}+`
     }`;
   if (f.type === "guild_ids")
     return `Server ID is ${orList.format(f.hash_key)}`;
