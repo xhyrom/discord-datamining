@@ -1,16 +1,33 @@
 // Adopted from https://gitlab.com/derpystuff/discord-experiments/-/blob/main/index.js
 import deepEqual from "fast-deep-equal";
+import murmurhash from "murmurhash";
 import { EmbedBuilder, disableValidators } from "@discordjs/builders";
+import { readFile } from "node:fs/promises";
 import { info } from "../logger.js";
 import { send } from "./webhooks.js";
 import { experimentNameFormat, populationsFormat } from "./formatters.js";
+import { join } from "node:path";
 disableValidators();
+
+const CURRENT_DISCORD_FILE = await readFile(join("data", "current.js"), "utf8");
+const ALL_GUILD_EXPERIMENTS_CLIENT = CURRENT_DISCORD_FILE.match(
+  /kind: "guild",\s+id: "(\S+)"/g
+)?.map((m) => {
+  return {
+    kind: m.replace(/kind: "(\S+)",\s+id: "(\S+)"/g, "$1"),
+    id: m.replace(/kind: "(\S+)",\s+id: "(\S+)"/g, "$2"),
+  };
+});
 
 export const decodeGuildExperiment = (experiment) => {
   //Decodes Experiments
   const parsedExperiment = {
     hashKey: experiment[0],
-    name: experiment[1],
+    name:
+      experiment[1] ??
+      ALL_GUILD_EXPERIMENTS_CLIENT?.find(
+        (clientExp) => murmurhash.v3(clientExp.id) === experiment[0]
+      ),
     revision: experiment[2],
     populations: [],
   };

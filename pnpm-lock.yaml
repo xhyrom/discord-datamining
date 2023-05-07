@@ -34,6 +34,9 @@ dependencies:
   kleur:
     specifier: ^4.1.5
     version: 4.1.5
+  murmurhash:
+    specifier: ^2.0.1
+    version: 2.0.1
   simple-git:
     specifier: ^3.17.0
     version: 3.17.0
@@ -482,6 +485,10 @@ packages:
 
   /ms@2.1.2:
     resolution: {integrity: sha512-sGkPx+VjMtmA6MX27oA4FBFELFCZZ4S4XqeGOXCv68tT+jb3vk/RyaKWP0PTKyWtmLSM0b+adUTEvbs1PEaH2w==}
+    dev: false
+
+  /murmurhash@2.0.1:
+    resolution: {integrity: sha512-5vQEh3y+DG/lMPM0mCGPDnyV8chYg/g7rl6v3Gd8WMF9S429ox3Xk8qrk174kWhG767KQMqqxLD1WnGd77hiew==}
     dev: false
 
   /node-fetch@2.6.9:
