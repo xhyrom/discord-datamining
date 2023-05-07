@@ -74,6 +74,11 @@ export const decodeGuildExperiment = (experiment) => {
           parse = {
             type: "guild_has_vanity_url",
           };
+          filter[1].forEach(function (filterData) {
+            if (filterData[0] === 188952590) {
+              parse.has_vanity = filterData[1];
+            }
+          });
           parsedFilters.push(parse);
           break;
         case 1604612045: //guild_has_feature
@@ -287,10 +292,12 @@ const defaultEmbed = (experiment) => {
     {
       name: "Name",
       value: experimentNameFormat(experiment),
+      inline: true,
     },
     {
       name: "Populations",
       value: populationsFormat(experiment.populations),
+      inline: true,
     }
   );
 };

@@ -44,21 +44,20 @@ export const populationsFormat = (populations) => {
 const hubTypes = ["Default", "High School", "College"];
 export const parseFilter = (f) => {
   if (f.type === "guild_has_feature")
-    return `Server has feature ${orList.format(f.hash_key)}`;
+    return `Server has feature ${orList.format(f.guild_features)}`;
   if (f.type === "guild_id_range")
-    return `Server ID is in range ${f.hash_key ?? 0} - ${f.target}`;
+    return `Server ID is in range ${f.min_id ?? 0} - ${f.target}`;
   if (f.type === "guild_member_count_range")
     return `Server member count is ${
-      f.target ? `in range ${f.hash_key ?? 0} - ${f.target}` : `${f.hash_key}+`
+      f.target ? `in range ${f.min_id ?? 0} - ${f.target}` : `${f.hash_key}+`
     }`;
-  if (f.type === "guild_ids")
-    return `Server ID is ${orList.format(f.hash_key)}`;
+  if (f.type === "guild_ids") return `Server ID is ${orList.format(f.ids)}`;
   if (f.type === "guild_hub_types")
     return `Server hub type is ${orList.format(
       f.hub_types.map((t) => hubTypes[t])
     )}`;
   if (f.type === "guild_has_vanity_url")
-    return `Server ${f.hash_key ? "has" : "does not have"} a vanity URL`;
+    return `Server ${f.has_vanity ? "has" : "does not have"} a vanity URL`;
   if (f.type === "guild_in_range_by_hash")
     return `${f.target / 100}% of servers (hash key ${f.hash_key}, target ${
       f.target
