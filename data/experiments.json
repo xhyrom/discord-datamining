@@ -1,7 +1,6 @@
 [
   {
     "hashKey": 3363020987,
-    "name": null,
     "revision": 1,
     "populations": [
       {
@@ -86,7 +85,6 @@
   },
   {
     "hashKey": 2653930115,
-    "name": null,
     "revision": 0,
     "populations": [
       {
@@ -107,7 +105,6 @@
   },
   {
     "hashKey": 2780791286,
-    "name": null,
     "revision": 0,
     "populations": [
       {
@@ -148,7 +145,6 @@
   },
   {
     "hashKey": 2009396848,
-    "name": null,
     "revision": 0,
     "populations": [
       {
@@ -247,7 +243,6 @@
   },
   {
     "hashKey": 59132052,
-    "name": null,
     "revision": 0,
     "populations": [
       {
@@ -272,7 +267,6 @@
   },
   {
     "hashKey": 3607703918,
-    "name": null,
     "revision": 0,
     "populations": [
       {
@@ -438,7 +432,6 @@
   },
   {
     "hashKey": 1926000171,
-    "name": null,
     "revision": 0,
     "populations": [
       {
@@ -509,7 +502,10 @@
   },
   {
     "hashKey": 2201448248,
-    "name": null,
+    "name": {
+      "kind": "guild",
+      "id": "2022-01_guild_role_subscription_multigroup"
+    },
     "revision": 0,
     "populations": [
       {
@@ -577,7 +573,10 @@
   },
   {
     "hashKey": 3832113202,
-    "name": null,
+    "name": {
+      "kind": "guild",
+      "id": "2022-01_home_tab_guild"
+    },
     "revision": 4,
     "populations": [
       {
@@ -605,7 +604,6 @@
   },
   {
     "hashKey": 1412337990,
-    "name": null,
     "revision": 0,
     "populations": [
       {
@@ -631,7 +629,6 @@
   },
   {
     "hashKey": 3811644885,
-    "name": null,
     "revision": 0,
     "populations": [
       {
@@ -652,7 +649,6 @@
   },
   {
     "hashKey": 3674963204,
-    "name": null,
     "revision": 2,
     "populations": [
       {
@@ -741,7 +737,10 @@
   },
   {
     "hashKey": 3510816342,
-    "name": null,
+    "name": {
+      "kind": "guild",
+      "id": "2022-03_role_subscription_analytics_portal"
+    },
     "revision": 0,
     "populations": [
       {
@@ -777,7 +776,6 @@
   },
   {
     "hashKey": 754016061,
-    "name": null,
     "revision": 3,
     "populations": [
       {
@@ -872,7 +870,6 @@
   },
   {
     "hashKey": 1574506570,
-    "name": null,
     "revision": 0,
     "populations": [
       {
@@ -903,7 +900,10 @@
   },
   {
     "hashKey": 1990672009,
-    "name": null,
+    "name": {
+      "kind": "guild",
+      "id": "2022-04_guild_role_subscription_purchase_feedback_loop"
+    },
     "revision": 0,
     "populations": [
       {
@@ -928,7 +928,10 @@
   },
   {
     "hashKey": 4190408036,
-    "name": null,
+    "name": {
+      "kind": "guild",
+      "id": "2022-05_mobile_web_role_subscription_purchase_page"
+    },
     "revision": 0,
     "populations": [
       {
@@ -949,7 +952,6 @@
   },
   {
     "hashKey": 1737811563,
-    "name": null,
     "revision": 0,
     "populations": [
       {
@@ -988,7 +990,6 @@
   },
   {
     "hashKey": 4019729001,
-    "name": null,
     "revision": 0,
     "populations": [
       {
@@ -1020,7 +1021,6 @@
   },
   {
     "hashKey": 3282315774,
-    "name": null,
     "revision": 0,
     "populations": [
       {
@@ -1057,7 +1057,6 @@
   },
   {
     "hashKey": 258580919,
-    "name": null,
     "revision": 0,
     "populations": [
       {
@@ -1082,7 +1081,6 @@
   },
   {
     "hashKey": 3395186003,
-    "name": null,
     "revision": 0,
     "populations": [
       {
@@ -1137,7 +1135,10 @@
   },
   {
     "hashKey": 179711638,
-    "name": null,
+    "name": {
+      "kind": "guild",
+      "id": "2022-07_guild_role_subscriptions_variable_max_tiers"
+    },
     "revision": 0,
     "populations": [
       {
@@ -1167,7 +1168,6 @@
   },
   {
     "hashKey": 3683063649,
-    "name": null,
     "revision": 0,
     "populations": [
       {
@@ -1225,7 +1225,10 @@
   },
   {
     "hashKey": 1055563741,
-    "name": null,
+    "name": {
+      "kind": "guild",
+      "id": "2022-07_report_raids"
+    },
     "revision": 0,
     "populations": [
       {
@@ -1265,7 +1268,6 @@
   },
   {
     "hashKey": 944104242,
-    "name": null,
     "revision": 0,
     "populations": [
       {
@@ -1496,7 +1498,10 @@
   },
   {
     "hashKey": 3723449866,
-    "name": null,
+    "name": {
+      "kind": "guild",
+      "id": "2022-09_creator_monetization_raven"
+    },
     "revision": 0,
     "populations": [
       {
@@ -1561,7 +1566,10 @@
   },
   {
     "hashKey": 2457903107,
-    "name": null,
+    "name": {
+      "kind": "guild",
+      "id": "2022-10_communities_multi"
+    },
     "revision": 2,
     "populations": [
       {
@@ -1649,7 +1657,6 @@
   },
   {
     "hashKey": 1443876045,
-    "name": null,
     "revision": 0,
     "populations": [
       {
@@ -1680,7 +1687,10 @@
   },
   {
     "hashKey": 24149521,
-    "name": null,
+    "name": {
+      "kind": "guild",
+      "id": "2022-10_creator_store_pages"
+    },
     "revision": 0,
     "populations": [
       {
@@ -1724,7 +1734,10 @@
   },
   {
     "hashKey": 3636231100,
-    "name": null,
+    "name": {
+      "kind": "guild",
+      "id": "2022-10_guild_raid_messaging"
+    },
     "revision": 0,
     "populations": [
       {
@@ -1856,7 +1869,6 @@
   },
   {
     "hashKey": 2267701816,
-    "name": null,
     "revision": 0,
     "populations": [
       {
@@ -2047,7 +2059,6 @@
   },
   {
     "hashKey": 2462216785,
-    "name": null,
     "revision": 0,
     "populations": [
       {
@@ -2153,7 +2164,6 @@
   },
   {
     "hashKey": 416338856,
-    "name": null,
     "revision": 0,
     "populations": [
       {
@@ -2174,7 +2184,6 @@
   },
   {
     "hashKey": 1318029053,
-    "name": null,
     "revision": 3,
     "populations": [
       {
@@ -2241,7 +2250,6 @@
   },
   {
     "hashKey": 1446479414,
-    "name": null,
     "revision": 0,
     "populations": [
       {
@@ -2277,7 +2285,6 @@
   },
   {
     "hashKey": 1742920859,
-    "name": null,
     "revision": 0,
     "populations": [
       {
@@ -2352,7 +2359,6 @@
   },
   {
     "hashKey": 280866660,
-    "name": null,
     "revision": 0,
     "populations": [
       {
@@ -2496,7 +2502,10 @@
   },
   {
     "hashKey": 3320756132,
-    "name": null,
+    "name": {
+      "kind": "guild",
+      "id": "2023-02_app_recommendations_server_checklist"
+    },
     "revision": 2,
     "populations": [
       {
@@ -2517,7 +2526,6 @@
   },
   {
     "hashKey": 511273769,
-    "name": null,
     "revision": 0,
     "populations": [
       {
@@ -2578,7 +2586,6 @@
   },
   {
     "hashKey": 3362434932,
-    "name": null,
     "revision": 1,
     "populations": [
       {
@@ -2637,7 +2644,10 @@
   },
   {
     "hashKey": 2014775304,
-    "name": null,
+    "name": {
+      "kind": "guild",
+      "id": "2023-02_burst_reaction_guild_experiment"
+    },
     "revision": 3,
     "populations": [
       {
@@ -2736,7 +2746,6 @@
   },
   {
     "hashKey": 2001176293,
-    "name": null,
     "revision": 0,
     "populations": [
       {
@@ -2941,7 +2950,10 @@
   },
   {
     "hashKey": 1504498621,
-    "name": null,
+    "name": {
+      "kind": "guild",
+      "id": "2023-02_p13n_summarization"
+    },
     "revision": 2,
     "populations": [
       {
@@ -2989,7 +3001,10 @@
   },
   {
     "hashKey": 295820329,
-    "name": null,
+    "name": {
+      "kind": "guild",
+      "id": "2023-02_server_subscriptions_iap"
+    },
     "revision": 0,
     "populations": [
       {
@@ -3088,7 +3103,6 @@
   },
   {
     "hashKey": 3101260054,
-    "name": null,
     "revision": 0,
     "populations": [
       {
@@ -3119,7 +3133,6 @@
   },
   {
     "hashKey": 2809294122,
-    "name": null,
     "revision": 0,
     "populations": [
       {
@@ -3144,7 +3157,10 @@
   },
   {
     "hashKey": 4083096281,
-    "name": null,
+    "name": {
+      "kind": "guild",
+      "id": "2023-03_clyde_ai"
+    },
     "revision": 2,
     "populations": [
       {
@@ -3287,7 +3303,6 @@
   },
   {
     "hashKey": 3890564237,
-    "name": null,
     "revision": 0,
     "populations": [
       {
@@ -3507,7 +3522,6 @@
   },
   {
     "hashKey": 1789705089,
-    "name": null,
     "revision": 0,
     "populations": [
       {
@@ -3535,7 +3549,10 @@
   },
   {
     "hashKey": 3194028601,
-    "name": null,
+    "name": {
+      "kind": "guild",
+      "id": "2023-03_self_demonetization"
+    },
     "revision": 0,
     "populations": [
       {
@@ -3560,7 +3577,10 @@
   },
   {
     "hashKey": 808859253,
-    "name": null,
+    "name": {
+      "kind": "guild",
+      "id": "2023-03_server_subscriptions_tier_templates"
+    },
     "revision": 0,
     "populations": [
       {
@@ -3606,7 +3626,6 @@
   },
   {
     "hashKey": 4063488887,
-    "name": null,
     "revision": 0,
     "populations": [
       {
@@ -3696,7 +3715,6 @@
   },
   {
     "hashKey": 41612842,
-    "name": null,
     "revision": 0,
     "populations": [
       {
