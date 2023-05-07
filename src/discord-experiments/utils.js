@@ -369,7 +369,7 @@ const defaultEmbed = (experiment, action, diff = "") => {
   if (diff !== "") {
     fields.push({
       name: "Changes",
-      value: diff,
+      value: `\`\`\`diff\n${diff}\n\`\`\``,
       inline: false,
     });
   }

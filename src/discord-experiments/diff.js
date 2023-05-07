@@ -13,15 +13,14 @@ export const getObjectDiff = (obj1, obj2) => {
         diff.push(`- ${path}${key}: ${formatDiff(obj1[key])}`);
       } else if (!deepEqual(obj1[key], obj2[key])) {
         if (Array.isArray(obj1[key]) && Array.isArray(obj2[key])) {
-          if (!deepEqual(obj1[key], obj2[key])) {
-            diff.push(`- ${path}${key}: ${formatDiff(obj1[key])}`);
-            diff.push(`+ ${path}${key}: ${formatDiff(obj2[key])}`);
-          }
+          if (!deepEqual(obj1[key], obj2[key]))
+            compareObjects(obj1[key], obj2[key], `${path}${key}.`);
         } else if (
           typeof obj1[key] === "object" &&
           typeof obj2[key] === "object"
         ) {
-          compareObjects(obj1[key], obj2[key], `${path}${key}.`);
+          if (!deepEqual(obj1[key], obj2[key]))
+            compareObjects(obj1[key], obj2[key], `${path}${key}.`);
         } else {
           diff.push(`- ${path}${key}: ${formatDiff(obj1[key])}`);
           diff.push(`+ ${path}${key}: ${formatDiff(obj2[key])}`);
