@@ -203,7 +203,11 @@ export const watcher = (
   if (addedExperiments.length > 0) {
     info(
       `Added Experiments: ${addedExperiments
-        .map((key) => experimentNameFormat(currentExperiments[key]))
+        .map((key) =>
+          experimentNameFormat(
+            currentExperiments.find((e) => e.hashKey === key)
+          )
+        )
         .join(", ")}`
     );
 
@@ -212,7 +216,9 @@ export const watcher = (
         webhookId,
         webhookToken,
         [
-          defaultEmbed(currentExperiments[experimentKey])
+          defaultEmbed(
+            currentExperiments.find((e) => e.hashKey === experimentKey)
+          )
             .setColor(0x51f542)
             .toJSON(),
         ],
@@ -224,7 +230,11 @@ export const watcher = (
   if (removedExperiments.length > 0) {
     info(
       `Removed Experiments: ${removedExperiments
-        .map((key) => experimentNameFormat(currentExperiments[key]))
+        .map((key) =>
+          experimentNameFormat(
+            currentExperiments.find((e) => e.hashKey === key)
+          )
+        )
         .join(", ")}`
     );
 
@@ -233,7 +243,9 @@ export const watcher = (
         webhookId,
         webhookToken,
         [
-          defaultEmbed(currentExperiments[experimentKey])
+          defaultEmbed(
+            currentExperiments.find((e) => e.hashKey === experimentKey)
+          )
             .setColor(0xf53731)
             .toJSON(),
         ],
@@ -245,7 +257,11 @@ export const watcher = (
   if (changedExperiments.length > 0) {
     info(
       `Changed Experiments: ${changedExperiments
-        .map((key) => experimentNameFormat(currentExperiments[key]))
+        .map((key) =>
+          experimentNameFormat(
+            currentExperiments.find((e) => e.hashKey === key)
+          )
+        )
         .join(", ")}`
     );
 
@@ -254,7 +270,9 @@ export const watcher = (
         webhookId,
         webhookToken,
         [
-          defaultEmbed(currentExperiments[experimentKey])
+          defaultEmbed(
+            currentExperiments.find((e) => e.hashKey === experimentKey)
+          )
             .setColor(0x8dabc7)
             .toJSON(),
         ],
