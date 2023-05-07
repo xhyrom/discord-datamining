@@ -7,7 +7,7 @@ export const experimentNameFormat = (experiment) => {
     : experiment.hashKey;
 };
 
-export const bucketNameFormat = (bucketName) => {
+export const nameFormat = (bucketName) => {
   return bucketName === "none"
     ? "None"
     : `Treatment ${bucketName.replace("treatment-", "")}`;
@@ -29,7 +29,7 @@ export const populationsFormat = (populations) => {
     for (const [bucketName, bucketValue] of Object.entries(
       population.buckets
     )) {
-      format += `${bucketNameFormat(bucketName)}: ${bucketValue.rollout
+      format += `${nameFormat(bucketName)}: ${bucketValue.rollout
         .map((r) => `${r.start}-${r.end}`)
         .join(", ")}\n`;
     }
@@ -38,6 +38,14 @@ export const populationsFormat = (populations) => {
   }
 
   return format;
+};
+
+export const overridesFormat = (overrides) => {
+  return Object.entries(overrides).length > 0
+    ? Object.entries(overrides)
+        .map(([name, value]) => `${nameFormat(name)}: ${value.join(", ")}`)
+        .join("\n")
+    : "Any overrides";
 };
 
 // https://github.com/advaith1/rollouts/blob/main/components/experiment.tsx#L97-L106

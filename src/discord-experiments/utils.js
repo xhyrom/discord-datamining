@@ -5,7 +5,11 @@ import { EmbedBuilder, disableValidators } from "@discordjs/builders";
 import { readFile } from "node:fs/promises";
 import { info } from "../logger.js";
 import { send } from "./webhooks.js";
-import { experimentNameFormat, populationsFormat } from "./formatters.js";
+import {
+  experimentNameFormat,
+  populationsFormat,
+  overridesFormat,
+} from "./formatters.js";
 import { join } from "node:path";
 disableValidators();
 
@@ -316,9 +320,19 @@ const defaultEmbed = (experiment) => {
       inline: true,
     },
     {
+      name: "Type",
+      value: "guild",
+      inline: true,
+    },
+    {
       name: "Populations",
       value: populationsFormat(experiment.populations),
-      inline: true,
+      inline: false,
+    },
+    {
+      name: "Overrides",
+      value: overridesFormat(experiment.overrides),
+      inline: false,
     }
   );
 };
