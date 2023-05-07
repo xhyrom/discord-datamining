@@ -203,15 +203,19 @@ export const watcher = (
   if (addedExperiments.length > 0) {
     info(
       `Added Experiments: ${addedExperiments
-        .map(experimentNameFormat)
+        .map((key) => experimentNameFormat(currentExperiments[key]))
         .join(", ")}`
     );
 
-    for (const experiment of addedExperiments) {
+    for (const experimentKey of addedExperiments) {
       send(
         webhookId,
         webhookToken,
-        [defaultEmbed(experiment).setColor(0x51f542).toJSON()],
+        [
+          defaultEmbed(currentExperiments[experimentKey])
+            .setColor(0x51f542)
+            .toJSON(),
+        ],
         "1104694113078608033"
       );
     }
@@ -220,15 +224,19 @@ export const watcher = (
   if (removedExperiments.length > 0) {
     info(
       `Removed Experiments: ${removedExperiments
-        .map(experimentNameFormat)
+        .map((key) => experimentNameFormat(currentExperiments[key]))
         .join(", ")}`
     );
 
-    for (const experiment of addedExperiments) {
+    for (const experimentKey of removedExperiments) {
       send(
         webhookId,
         webhookToken,
-        [defaultEmbed(experiment).setColor(0xf53731).toJSON()],
+        [
+          defaultEmbed(currentExperiments[experimentKey])
+            .setColor(0xf53731)
+            .toJSON(),
+        ],
         "1104694113078608033"
       );
     }
@@ -237,15 +245,19 @@ export const watcher = (
   if (changedExperiments.length > 0) {
     info(
       `Changed Experiments: ${changedExperiments
-        .map(experimentNameFormat)
+        .map((key) => experimentNameFormat(currentExperiments[key]))
         .join(", ")}`
     );
 
-    for (const experiment of addedExperiments) {
+    for (const experimentKey of changedExperiments) {
       send(
         webhookId,
         webhookToken,
-        [defaultEmbed(experiment).setColor(0x8dabc7).toJSON()],
+        [
+          defaultEmbed(currentExperiments[experimentKey])
+            .setColor(0x8dabc7)
+            .toJSON(),
+        ],
         "1104694113078608033"
       );
     }
@@ -260,7 +272,7 @@ const defaultEmbed = (experiment) => {
     },
     {
       name: "Populations",
-      value: populationsFormat(experiment),
+      value: populationsFormat(experiment.populations),
     }
   );
 };
