@@ -5,6 +5,7 @@ import { writeFile } from "node:fs/promises";
 import { join } from "node:path";
 
 import simpleGit from "simple-git";
+import months from "../months.js";
 
 const git = simpleGit();
 
