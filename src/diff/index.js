@@ -11,10 +11,6 @@ const [webhookId, webhookToken] = new URL(process.env.DISCORD_WEBHOOK)
   .split("/")
   .slice(3);
 
-const webhookThreadId = new URL(process.env.DISCORD_WEBHOOK).searchParams.get(
-  "thread_id"
-);
-
 const eventPayload = JSON.parse(
   await readFile(process.env.GITHUB_EVENT_PATH, "utf8")
 );
@@ -31,7 +27,13 @@ if (allComment) {
     body: allComment,
   });
 
-  send(webhookId, webhookToken, allComment, webhookThreadId);
+  send(
+    eventPayload,
+    webhookId,
+    webhookToken,
+    allComment,
+    "1104677510878347334"
+  );
 }
 
 if (langComment) {
@@ -42,5 +44,11 @@ if (langComment) {
     body: langComment,
   });
 
-  send(webhookId, webhookToken, langComment, webhookThreadId);
+  send(
+    eventPayload,
+    webhookId,
+    webhookToken,
+    langComment,
+    "1104677673642496021"
+  );
 }
