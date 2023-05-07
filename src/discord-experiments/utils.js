@@ -18,14 +18,6 @@ const ALL_GUILD_EXPERIMENTS_CLIENT = CURRENT_DISCORD_FILE.match(
     id: m.replace(/kind: "(\S+)",\s+id: "(\S+)"/g, "$2"),
   };
 });
-const ALL_USER_EXPERIMENTS_CLIENT = CURRENT_DISCORD_FILE.match(
-  /kind: "user",\s+id: "(\S+)"/g
-)?.map((m) => {
-  return {
-    kind: m.replace(/kind: "(\S+)",\s+id: "(\S+)"/g, "$1"),
-    id: m.replace(/kind: "(\S+)",\s+id: "(\S+)"/g, "$2"),
-  };
-});
 
 export const decodeGuildExperiment = (experiment) => {
   //Decodes Experiments
