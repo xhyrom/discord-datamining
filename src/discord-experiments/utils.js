@@ -228,7 +228,10 @@ export const watcher = (
 
   const changedExperiments = currentExperimentsHashKeys.filter((key) => {
     if (!oldExperimentsHashKeys.includes(key)) return false;
-    return !deepEqual(oldExperiments[key], currentExperiments[key]);
+    return !deepEqual(
+      oldExperiments.find((e) => e.hashKey === key),
+      currentExperiments.find((e) => e.hashKey === key)
+    );
   });
 
   if (addedExperiments.length > 0) {
