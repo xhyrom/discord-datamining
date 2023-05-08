@@ -17504,6 +17504,15 @@ html.disable-forced-colors * {
     color: var(--white-500)
 }
 
+.paymentModalLockIcon-3iNBZX {
+    color: var(--primary-500);
+    padding: 0 10px
+}
+
+.theme-dark .paymentModalLockIcon-3iNBZX {
+    color: var(--primary-300)
+}
+
 .back-Zt4JKc {
     width: auto;
     min-width: auto;
@@ -28604,6 +28613,13 @@ img[alt] {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex
+}
+
+.back-Uv5ziB {
+    width: auto;
+    min-width: auto;
+    padding: 2px 4px;
+    margin-right: auto
 }
 
 .renewalInvoiceDate-1qMnnA {
@@ -155064,4 +155080,4 @@ html .invoiceCancelRow-dVOR64 {
     flex-direction: column
 }
 
-/*# sourceMappingURL=40532.da3ba48fe593e2b9a72d.css.map*/
+/*# sourceMappingURL=40532.51c7d6f180efcd3f070b.css.map*/
