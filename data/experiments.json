@@ -2596,27 +2596,7 @@
           {
             "type": "guild_has_feature",
             "guild_features": [
-              "PARTNERED"
-            ]
-          }
-        ]
-      },
-      {
-        "buckets": {
-          "treatment-1": {
-            "rollout": [
-              {
-                "start": 0,
-                "end": 10000
-              }
-            ]
-          }
-        },
-        "filters": [
-          {
-            "type": "guild_has_feature",
-            "guild_features": [
-              "COMMUNITY"
+              "AUTOMOD_TRIGGER_USER_PROFILE"
             ]
           }
         ]
