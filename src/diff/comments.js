@@ -31,11 +31,22 @@ export const all = async (octokit, eventPayload) => {
  * @param {unknown} eventPayload
  */
 export const lang = async (octokit, eventPayload) => {
-  const currentTree = await octokit.rest.git.getTree({
+  const currentTreeRoot = await octokit.rest.git.getTree({
     owner: eventPayload.repository.owner.login,
     repo: eventPayload.repository.name,
     tree_sha: eventPayload.before,
   });
+  const dataFileSha = currentTreeRoot.data.tree.find(
+    (file) => file.path === "data"
+  )?.sha;
+  if (!dataFileSha) return "";
+
+  const currentTree = await octokit.rest.git.getTree({
+    owner: eventPayload.repository.owner.login,
+    repo: eventPayload.repository.name,
+    tree_sha: dataFileSha,
+  });
+
   const currentFileSha = currentTree.data.tree.find((file) =>
     file.path.includes("current.js")
   )?.sha;
@@ -49,8 +60,8 @@ export const lang = async (octokit, eventPayload) => {
   });
 
   const commit = await octokit.rest.repos.getCommit({
-    owner,
-    repo,
+    owner: eventPayload.repository.owner.login,
+    repo: eventPayload.repository.name,
     ref: eventPayload.after,
   });
   if (!commit) return "";
