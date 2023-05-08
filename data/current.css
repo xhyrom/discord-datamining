@@ -26306,6 +26306,46 @@ img[alt] {
     opacity: 1
 }
 
+.cardBrands-3VQKtJ {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-box-pack: right;
+    -ms-flex-pack: right;
+    justify-content: right;
+    margin-bottom: -15px
+}
+
+.cardFormHeader-1oooZk {
+    margin-left: 5px
+}
+
+.cardFormHeader-1oooZk.jcb-Ff1Gj5:before {
+    background-image: url(/assets/2f837517dadf32743c343c0692856dbb.svg)
+}
+
+.cardFormHeader-1oooZk.amex-3qtwwv:before {
+    background-image: url(/assets/e6f5fdb421197ac145651a603b2a4ca1.svg)
+}
+
+.cardFormHeader-1oooZk.mastercard-WtGV2v:before {
+    background-image: url(/assets/8859268fe0da6c1d43120cc61af43cb2.svg)
+}
+
+.cardFormHeader-1oooZk.visa-3AxzrI:before {
+    background-image: url(/assets/46bbfc06391fb63686e04c31a0f5d393.svg)
+}
+
+.cardFormHeader-1oooZk.discover-Iz-grc:before {
+    background-image: url(/assets/151e9174cffc5d38d6ce34b0e119b613.svg)
+}
+
+.cardFormHeader-1oooZk.dinersclub-23rERj:before {
+    background-image: url(/assets/1192c04cdb47505dbb57fba293b49956.svg)
+}
+
 .cardNumberWrapper-3VguvY {
     position: relative
 }
@@ -155080,4 +155120,4 @@ html .invoiceCancelRow-dVOR64 {
     flex-direction: column
 }
 
-/*# sourceMappingURL=40532.51c7d6f180efcd3f070b.css.map*/
+/*# sourceMappingURL=40532.2ee26479d1d64c257b72.css.map*/
