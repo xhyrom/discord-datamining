@@ -51607,7 +51607,9 @@ input[type=checked]:focus-visible+.label-3TDpbn {
 }
 
 .infoItem-1OVJGV {
-    gap: 16px
+    gap: 16px;
+    -ms-flex-item-align: start;
+    align-self: flex-start
 }
 
 .infoItemSpacing-5b2hIJ {
@@ -155062,4 +155064,4 @@ html .invoiceCancelRow-dVOR64 {
     flex-direction: column
 }
 
-/*# sourceMappingURL=40532.144619e6e623bc21d926.css.map*/
+/*# sourceMappingURL=40532.da3ba48fe593e2b9a72d.css.map*/
