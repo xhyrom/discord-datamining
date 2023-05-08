@@ -15,6 +15,8 @@ const eventPayload = JSON.parse(
   await readFile(process.env.GITHUB_EVENT_PATH, "utf8")
 );
 
+console.log(eventPayload);
+
 const allComment = await all(octokit, eventPayload);
 const langComment = await lang(octokit, eventPayload);
 

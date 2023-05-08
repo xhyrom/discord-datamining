@@ -36,6 +36,7 @@ export const lang = async (octokit, eventPayload) => {
     repo: eventPayload.repository.name,
     tree_sha: eventPayload.before,
   });
+
   const dataFileSha = currentTreeRoot.data.tree.find(
     (file) => file.path === "data"
   )?.sha;
