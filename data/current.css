@@ -3263,7 +3263,8 @@ html.decorate-links .lowSaturationUnderline-Z6CW6z {
 }
 
 .lowerBadge-3j0ZAg {
-    bottom: 0
+    bottom: 0;
+    z-index: 2
 }
 
 .lowerBadge-3j0ZAg,
@@ -80263,6 +80264,15 @@ strong {
     position: relative
 }
 
+.hideEmoji-3wiav7 {
+    opacity: 0
+}
+
+.serverEmoji-2OaL7m {
+    width: 16px;
+    height: 16px
+}
+
 .pill-22lZHo {
     position: absolute;
     top: 0;
@@ -155052,4 +155062,4 @@ html .invoiceCancelRow-dVOR64 {
     flex-direction: column
 }
 
-/*# sourceMappingURL=40532.8c4b04098db3637c4cea.css.map*/
+/*# sourceMappingURL=40532.144619e6e623bc21d926.css.map*/
