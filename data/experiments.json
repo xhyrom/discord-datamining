@@ -3275,8 +3275,16 @@
           "none": {
             "rollout": [
               {
-                "start": 0,
+                "start": 2500,
                 "end": 10000
+              }
+            ]
+          },
+          "treatment-1": {
+            "rollout": [
+              {
+                "start": 0,
+                "end": 2500
               }
             ]
           }
