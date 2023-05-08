@@ -98498,7 +98498,8 @@ html .tabBadge-h4HGed {
 
 .activitiesBirthdayIcon-1Ou-De {
     border-radius: 4px;
-    color: var(--discord-8th-bday-yellow)
+    color: var(--discord-8th-bday-yellow);
+    margin-bottom: 6px
 }
 
 .activitiesBirthdayIconLight-1QhKyv {
@@ -132995,10 +132996,36 @@ html .invoiceCancelRow-3s2UuC {
 }
 
 .outerContainer-2qLQSo {
-    width: 100%;
-    padding: clamp(16px, calc(4vw - 12.48px), 64px);
+    -webkit-box-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+    min-width: 0;
     background-color: var(--background-tertiary);
-    overflow: auto
+    height: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column
+}
+
+.activitiesBirthdayIcon-vp7oVk {
+    color: var(--discord-8th-bday-yellow);
+    margin: 0 8px 6px
+}
+
+.activitiesBirthdayIconLight-2Djimf {
+    color: var(--discord-8th-bday-dark-blue)
+}
+
+.scroller-3y59C7 {
+    -webkit-box-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+    min-height: 0;
+    padding: 24px
 }
 
 .innerContainer-1PsSdm {
@@ -133394,9 +133421,31 @@ html .invoiceCancelRow-3s2UuC {
 }
 
 .outerContainer-3t7lrW {
-    width: 100%;
     background-color: var(--background-primary);
-    overflow: auto
+    -webkit-box-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+    min-width: 0;
+    height: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column
+}
+
+.rocketIcon-1m_qHn {
+    margin: 0 8px
+}
+
+.scroller-B4-bwK {
+    -webkit-box-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+    min-height: 0;
+    padding: 0 24px 24px
 }
 
 .innerContainer-PFRsaf {
@@ -133432,10 +133481,21 @@ html .invoiceCancelRow-3s2UuC {
     position: absolute;
     top: 0;
     left: 0;
-    padding: 16px;
+    padding: 16px
+}
+
+.backButtonContainer-y_0u_2,
+.titleContainer-3hHuPp {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex
+}
+
+.titleContainer-3hHuPp {
+    min-width: 0;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center
 }
 
 .backButtonIcon-iID3UV {
@@ -155120,4 +155180,4 @@ html .invoiceCancelRow-dVOR64 {
     flex-direction: column
 }
 
-/*# sourceMappingURL=40532.2ee26479d1d64c257b72.css.map*/
+/*# sourceMappingURL=40532.d0285883bdabbad25d34.css.map*/
