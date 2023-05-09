@@ -35,6 +35,7 @@ if (allComment) {
     webhookId,
     webhookToken,
     allComment,
+    null,
     "1104677510878347334"
   );
 }
@@ -53,6 +54,7 @@ if (langComment) {
     webhookId,
     webhookToken,
     langComment,
+    "1105589256996524042",
     "1104677673642496021"
   );
 }

@@ -1,4 +1,5 @@
 import { REST } from "@discordjs/rest";
+import { Routes } from "discord-api-types/v10";
 const rest = new REST({ version: "10" }).setToken(process.env.DISCORD_TOKEN);
 
 /**
@@ -8,11 +9,14 @@ const rest = new REST({ version: "10" }).setToken(process.env.DISCORD_TOKEN);
  * @param {string|null} threadId
  */
 export const send = async (id, token, embeds, threadId) => {
-  const url = `/webhooks/${id}/${token}${
-    threadId ? `?thread_id=${threadId}` : ""
-  }`;
-  const res = await rest.post(url, {
+  const params = new URLSearchParams();
+
+  if (threadId) params.append("thread_id", threadId);
+
+  const res = await rest.post(Routes.webhook(id, token), {
+    query: params,
     body: {
+      content: "<@&1105589221185568851>",
       embeds,
     },
   });

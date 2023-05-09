@@ -1,3 +1,7 @@
+import { REST } from "@discordjs/rest";
+import { Routes } from "discord-api-types/v10";
+const rest = new REST({ version: "10" }).setToken(process.env.DISCORD_TOKEN);
+
 /**
  * @param {unknown} eventPayload
  * @param {import("@octokit/action").RestEndpointMethodTypes["repos"]["createCommitComment"]["response"]["data"]} comment
@@ -12,11 +16,16 @@ export const send = async (
   id,
   token,
   content,
+  roleId,
   threadId
 ) => {
-  const url = `https://discord.com/api/webhooks/${id}/${token}${
-    threadId ? `?thread_id=${threadId}` : ""
-  }`;
+  const params = new URLSearchParams();
+
+  if (threadId) params.append("thread_id", threadId);
+
+  if (roleId) {
+    content = `<@&${roleId}>\n${content}`;
+  }
 
   if (content.length > 2000) {
     content = `${content.slice(
@@ -27,16 +36,12 @@ export const send = async (
     }#commitcomment-${comment.id})`;
   }
 
-  const res = await fetch(url, {
-    method: "POST",
-    headers: {
-      "Content-Type": "application/json",
-    },
-    body: JSON.stringify({
+  const res = await rest.post(Routes.webhook(id, token), {
+    query: params,
+    body: {
       content,
-      thread_id: threadId,
-    }),
+    },
   });
 
-  !res.ok && console.error(await res.text());
+  console.log(res);
 };
