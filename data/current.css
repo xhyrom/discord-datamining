@@ -77204,6 +77204,7 @@ strong {
 }
 
 .divider-3qUeLQ {
+    border-top: 1px solid var(--background-modifier-accent);
     margin-top: 3px;
     margin-bottom: 4px
 }
@@ -77221,10 +77222,6 @@ strong {
     color: var(--interactive-active)
 }
 
-.theme-dark .divider-3qUeLQ {
-    border-top: 1px solid hsla(0, 0%, 100%, .06)
-}
-
 .theme-dark .progressBarContainer-1efroK {
     background-color: var(--background-floating)
 }
@@ -77236,10 +77233,6 @@ strong {
 .theme-light .tier1Icon-fFpsa7,
 .theme-light .tier2Icon-txWoVF {
     color: var(--white-500)
-}
-
-.theme-light .divider-3qUeLQ {
-    border-top: 1px solid hsl(var(--primary-200-hsl)/.6)
 }
 
 .theme-light .progressBarContainer-1efroK {
@@ -155189,4 +155182,4 @@ html .invoiceCancelRow-dVOR64 {
     flex-direction: column
 }
 
-/*# sourceMappingURL=40532.694d80728e9692d196eb.css.map*/
+/*# sourceMappingURL=40532.bc8d63157f5e936137d8.css.map*/
