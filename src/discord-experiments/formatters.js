@@ -34,7 +34,7 @@ export const populationsFormat = (populations, treatments) => {
             0
           ) / 100;
         format += `**${nameFormat(bucketName)}**: ${
-          treatments.find((t) => t.id === parseInt(bucketName)).label ?? ""
+          treatments.find((t) => t.id === parseInt(bucketName))?.label ?? ""
         } ${percentage}% (${bucketValue.rollout
           .map((r) => `${r.start}-${r.end}`)
           .join(", ")})\n`;
