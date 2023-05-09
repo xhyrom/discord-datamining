@@ -64784,9 +64784,10 @@ strong {
 }
 
 .sharePromptContainer-2E60ZS {
-    background-color: var(--background-secondary);
+    background-color: var(--background-message-highlight);
     padding: 20px;
-    gap: 24px
+    gap: 24px;
+    margin-bottom: 10px
 }
 
 .sharePromptContainer-2E60ZS,
@@ -155186,4 +155187,4 @@ html .invoiceCancelRow-dVOR64 {
     flex-direction: column
 }
 
-/*# sourceMappingURL=40532.caa988ff40c149716bbf.css.map*/
+/*# sourceMappingURL=40532.592afdcd8038065b67ac.css.map*/
