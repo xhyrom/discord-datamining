@@ -62173,6 +62173,10 @@ strong {
     color: var(--primary-130)
 }
 
+.learnMore-12D_Ql p {
+    margin-bottom: 0
+}
+
 .learnMore-12D_Ql p:first-of-type {
     margin-top: 0;
     text-decoration: underline;
@@ -155198,4 +155202,4 @@ html .invoiceCancelRow-dVOR64 {
     flex-direction: column
 }
 
-/*# sourceMappingURL=40532.b8517d1175288d7498fb.css.map*/
+/*# sourceMappingURL=40532.06f480de06a8207760f0.css.map*/
