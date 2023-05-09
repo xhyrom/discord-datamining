@@ -133129,29 +133129,143 @@ html .invoiceCancelRow-3s2UuC {
 }
 
 .whatsNew-2Pwedg {
-    margin-top: 24px
+    margin-top: 24px;
+    width: 100%
 }
 
 .whatsNewItemsContainer-1dyM2M {
-    gap: 16px
+    gap: 20px
 }
 
-.whatsNewItemContainer-1iRxax,
+.flipCardOuter-3lABce,
 .whatsNewItemsContainer-1dyM2M {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex
 }
 
-.whatsNewItemContainer-1iRxax {
+.flipCardOuter-3lABce {
+    position: relative;
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
-    width: 464px;
-    background-color: var(--background-secondary);
+    width: 224px;
+    aspect-ratio: 224/303;
+    background-color: transparent;
+    -webkit-perspective: 2000px;
+    perspective: 2000px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    text-align: start
+}
+
+.flipCardInner-2hI9Pw {
+    position: relative;
+    margin: 10px 0;
+    width: 100%;
+    height: calc(100% - 20px);
+    text-align: center;
+    -webkit-transition: -webkit-transform 1s cubic-bezier(.6, -.28, .735, .045);
+    transition: -webkit-transform 1s cubic-bezier(.6, -.28, .735, .045);
+    transition: transform 1s cubic-bezier(.6, -.28, .735, .045);
+    transition: transform 1s cubic-bezier(.6, -.28, .735, .045), -webkit-transform 1s cubic-bezier(.6, -.28, .735, .045);
+    -webkit-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+    -webkit-box-shadow: var(--elevation-medium);
+    box-shadow: var(--elevation-medium);
+    border-radius: 16px
+}
+
+.flipCardInnerFlipped-TpPsYw {
+    -webkit-transform: rotateY(180deg);
+    transform: rotateY(180deg)
+}
+
+.flipCardBack-RJ6iwL,
+.flipCardFront-nT75HE {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    border-radius: 16px
+}
+
+.flipCardFront-nT75HE {
+    background-color: var(--background-primary)
+}
+
+.flipCardFrontImg-gTc993 {
+    width: 100%;
+    height: 100%
+}
+
+.flipCardBack-RJ6iwL {
+    -webkit-transform: rotateY(180deg);
+    transform: rotateY(180deg);
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center
+}
+
+.flipCardBackImg-kXaxyo {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border: 2px solid var(--background-primary);
+    border-radius: 16px;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    z-index: -1
+}
+
+.flipCardBackText-N1JFWz {
+    padding: 8px 16px;
+    border-radius: 8px;
+    background-color: var(--background-floating)
+}
+
+.whatsNewItemContainer-1iRxax {
+    width: 100%;
+    height: 100%;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
     border-radius: 16px;
     padding: 16px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    position: relative
+}
+
+.whatsNewDate-mk9C0H {
+    text-align: start
+}
+
+.whatsNewImageContainer-2_ZBY1 {
     position: relative;
-    overflow: hidden
+    min-height: 0
+}
+
+.newTag-3g6dtV {
+    position: absolute;
+    top: 8px;
+    left: 8px;
+    padding: 0 4px;
+    border-radius: 8px;
+    background-color: var(--status-danger-background);
+    color: var(--status-danger-text)
 }
 
 .whatsNewImage-5jpa5v {
@@ -133162,11 +133276,11 @@ html .invoiceCancelRow-3s2UuC {
     object-fit: cover;
     -webkit-box-flex: 0;
     -ms-flex: 0 0 auto;
-    flex: 0 0 auto
+    flex: 0 0 auto;
+    margin-top: 16px
 }
 
-.whatsNewDetails-1fYQoe {
-    margin-left: 16px;
+.whatsNewTextArea-2thzJN {
     -webkit-box-flex: 1;
     -ms-flex: 1;
     flex: 1;
@@ -133174,7 +133288,14 @@ html .invoiceCancelRow-3s2UuC {
 }
 
 .whatsNewDetailsHeader-2qkDgO {
-    margin-bottom: 8px
+    margin-top: 16px;
+    text-align: start
+}
+
+.whatsNewDescription-2y6ML9 {
+    color: var(--header-secondary);
+    text-align: start;
+    margin-top: 4px
 }
 
 .activityGridHeader-kurtV_ {
@@ -133385,6 +133506,10 @@ html .invoiceCancelRow-3s2UuC {
     to {
         opacity: 0
     }
+}
+
+.noPointer-2XkzX7 {
+    cursor: inherit
 }
 
 .container-lpf9y1 {
@@ -155187,4 +155312,4 @@ html .invoiceCancelRow-dVOR64 {
     flex-direction: column
 }
 
-/*# sourceMappingURL=40532.592afdcd8038065b67ac.css.map*/
+/*# sourceMappingURL=40532.5ca550c5aaeac6325efe.css.map*/
