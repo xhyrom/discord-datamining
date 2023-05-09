@@ -6037,6 +6037,24 @@
   },
   {
     "kind": "user",
+    "id": "2023-05_activities_joinleave_sounds",
+    "label": "Activities Sounds Experiment",
+    "defaultConfig": [
+      "enabled"
+    ],
+    "treatments": [
+      {
+        "id": 1,
+        "label": "Enable Activities Join/Leave Sounds",
+        "config": [
+          "enabled"
+        ]
+      }
+    ],
+    "hash": 3190368920
+  },
+  {
+    "kind": "user",
     "id": "2023-04_birthday_activities_color_together_tile",
     "label": "Birthday Activities Whats New Color Together Tile",
     "defaultConfig": [
@@ -6106,5 +6124,23 @@
       }
     ],
     "hash": 2616904300
+  },
+  {
+    "kind": "user",
+    "id": "2022-01_discovery_iar",
+    "label": "Ability to report servers in Server Discovery",
+    "defaultConfig": [
+      "canSeeInAppReportingButtons"
+    ],
+    "treatments": [
+      {
+        "id": 1,
+        "label": "Show IAR buttons in Server Discovery",
+        "config": [
+          "canSeeInAppReportingButtons"
+        ]
+      }
+    ],
+    "hash": 1877212037
   }
 ]
