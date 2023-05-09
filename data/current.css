@@ -64276,6 +64276,15 @@ strong {
     background-color: var(--background-modifier-selected)
 }
 
+.rowBody-1nxpBd {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center
+}
+
 .checkboxLabel-qMzEPK {
     padding-left: 8px
 }
@@ -155180,4 +155189,4 @@ html .invoiceCancelRow-dVOR64 {
     flex-direction: column
 }
 
-/*# sourceMappingURL=40532.d0285883bdabbad25d34.css.map*/
+/*# sourceMappingURL=40532.694d80728e9692d196eb.css.map*/
