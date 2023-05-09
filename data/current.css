@@ -16394,7 +16394,8 @@ html.disable-forced-colors * {
 .spoilerText-2G40u0 {
     border-radius: 3px;
     -webkit-transition: all .1s ease;
-    transition: all .1s ease
+    transition: all .1s ease;
+    display: inline-block
 }
 
 .spoilerText-2G40u0.codeBlock-3bMSSu {
@@ -155312,4 +155313,4 @@ html .invoiceCancelRow-dVOR64 {
     flex-direction: column
 }
 
-/*# sourceMappingURL=40532.5ca550c5aaeac6325efe.css.map*/
+/*# sourceMappingURL=40532.b0f95e36cd00ad37474a.css.map*/
