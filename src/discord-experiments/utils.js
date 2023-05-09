@@ -6,6 +6,7 @@ import { send } from "./webhooks.js";
 import {
   experimentNameFormat,
   populationsFormat,
+  treatmentsFormat,
   overridesFormat,
 } from "./formatters.js";
 import { getObjectDiff } from "./diff.js";
@@ -139,12 +140,13 @@ const defaultEmbed = (experiment, action, diff = "") => {
       inline: true,
     },
     {
+      name: "Treatments",
+      value: treatmentsFormat(experiment.treatments ?? []) || "None",
+      inline: false,
+    },
+    {
       name: "Populations",
-      value:
-        populationsFormat(
-          experiment.rollout?.populations ?? [],
-          experiment.treatments ?? []
-        ) || "None",
+      value: populationsFormat(experiment.rollout?.populations ?? []) || "None",
       inline: false,
     },
     {

@@ -11,42 +11,46 @@ export const nameFormat = (name) => {
   return name === "none" ? "None" : `Treatment ${name}`;
 };
 
-export const populationsFormat = (populations, treatments) => {
+export const populationsFormat = (populations) => {
   let format = "";
 
-  if (populations.length > 0) {
-    for (const population of populations) {
-      const filters =
-        population.filters.length !== 0
-          ? `**Filter**: ${andList.format(
-              population.filters.map((f) => parseFilter(f))
-            )}`
-          : "";
+  for (const population of populations) {
+    const filters =
+      population.filters.length !== 0
+        ? `**Filter**: ${andList.format(
+            population.filters.map((f) => parseFilter(f))
+          )}`
+        : "";
 
-      if (filters) format += `${filters}\n`;
+    if (filters) format += `${filters}\n`;
 
-      for (const [bucketName, bucketValue] of Object.entries(
-        population.buckets
-      )) {
-        const percentage =
-          bucketValue.rollout.reduce(
-            (total, range) => total + range.end - range.start,
-            0
-          ) / 100;
-        format += `**${nameFormat(bucketName)}**: ${
-          treatments.find((t) => t.id === parseInt(bucketName))?.label ?? ""
-        } ${percentage}% (${bucketValue.rollout
-          .map((r) => `${r.start}-${r.end}`)
-          .join(", ")})\n`;
-      }
-
-      format += "\n";
+    for (const [bucketName, bucketValue] of Object.entries(
+      population.buckets
+    )) {
+      const percentage =
+        bucketValue.rollout.reduce(
+          (total, range) => total + range.end - range.start,
+          0
+        ) / 100;
+      format += `**${nameFormat(
+        bucketName
+      )}**: ${percentage}% (${bucketValue.rollout
+        .map((r) => `${r.start}-${r.end}`)
+        .join(", ")})\n`;
     }
-  } else if (populations.length === 0 && treatments.length > 0) {
-    format = treatments
-      .map((t) => `**Treatment ${t.id}**: ${t.label}`)
-      .join("\n");
+
+    format += "\n";
   }
+
+  return format;
+};
+
+export const treatmentsFormat = (treatments) => {
+  let format = "";
+
+  format = treatments
+    .map((t) => `**Treatment ${t.id}**: ${t.label}`)
+    .join("\n");
 
   return format;
 };
