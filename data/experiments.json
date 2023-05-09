@@ -563,6 +563,24 @@
   },
   {
     "kind": "user",
+    "id": "2021-04_impression_logging",
+    "label": "Standard Analytics: Log Impressions",
+    "defaultConfig": [
+      "useStandardAnalytics"
+    ],
+    "treatments": [
+      {
+        "id": 1,
+        "label": "Log impressions",
+        "config": [
+          "useStandardAnalytics"
+        ]
+      }
+    ],
+    "hash": 3354177721
+  },
+  {
+    "kind": "user",
     "id": "2022-11_command_query_pagination",
     "label": "Command Query Pagination",
     "defaultConfig": [
