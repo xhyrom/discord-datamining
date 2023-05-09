@@ -133513,6 +133513,29 @@ html .invoiceCancelRow-3s2UuC {
     cursor: inherit
 }
 
+.kitBashContainer-7nmYyp {
+    margin-top: 24px;
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    gap: 24px;
+    max-height: 220px;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center
+}
+
+.kitBash-34gcW7 {
+    -webkit-box-flex: 0;
+    -ms-flex: 0 1 auto;
+    flex: 0 1 auto;
+    min-width: 0
+}
+
 .container-lpf9y1 {
     display: grid;
     grid-template-columns: 24px 1fr;
@@ -155313,4 +155336,4 @@ html .invoiceCancelRow-dVOR64 {
     flex-direction: column
 }
 
-/*# sourceMappingURL=40532.b0f95e36cd00ad37474a.css.map*/
+/*# sourceMappingURL=40532.021ea1c5e1f7affbae19.css.map*/
