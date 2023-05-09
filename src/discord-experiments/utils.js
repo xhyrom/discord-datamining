@@ -25,46 +25,33 @@ export const watcher = (
 ) => {
   if (deepEqual(oldExperiments, currentExperiments)) return;
 
-  const oldExperimentsHash = oldExperiments.map((e) => e.hash);
-  const currentExperimentsHash = currentExperiments.map((e) => e.hash);
-
-  const addedExperiments = currentExperimentsHash.filter(
-    (key) => !oldExperimentsHash.includes(key)
+  const addedExperiments = currentExperiments.filter(
+    (e) => !oldExperiments.some((o) => o.hash === e.hash)
   );
 
-  const removedExperiments = oldExperimentsHash.filter(
-    (key) => !currentExperimentsHash.includes(key)
+  const removedExperiments = oldExperiments.filter(
+    (e) => !currentExperiments.some((o) => o.hash === e.hash)
   );
 
-  const changedExperiments = currentExperimentsHash.filter((key) => {
-    if (!oldExperimentsHash.includes(key)) return false;
-    return !deepEqual(
-      oldExperiments.find((e) => e.hash === key),
-      currentExperiments.find((e) => e.hash === key)
-    );
-  });
+  const changedExperiments = currentExperiments.filter((e) =>
+    oldExperiments.some((o) => o.hash === e.hash && !deepEqual(o, e))
+  );
+
+  console.log(addedExperiments, removedExperiments, changedExperiments);
+  console.log(oldExperiments, currentExperiments);
 
   if (addedExperiments.length > 0) {
     info(
       `Added Experiments: ${addedExperiments
-        .map((key) =>
-          experimentNameFormat(currentExperiments.find((e) => e.hash === key))
-        )
+        .map(experimentNameFormat)
         .join(", ")}`
     );
 
-    for (const experimentKey of addedExperiments) {
+    for (const experiment of addedExperiments) {
       send(
         webhookId,
         webhookToken,
-        [
-          defaultEmbed(
-            currentExperiments.find((e) => e.hash === experimentKey),
-            "add"
-          )
-            .setColor(0x51f542)
-            .toJSON(),
-        ],
+        [defaultEmbed(experiment, "add").setColor(0x51f542).toJSON()],
         "1104694113078608033"
       );
     }
@@ -73,24 +60,15 @@ export const watcher = (
   if (removedExperiments.length > 0) {
     info(
       `Removed Experiments: ${removedExperiments
-        .map((key) =>
-          experimentNameFormat(currentExperiments.find((e) => e.hash === key))
-        )
+        .map(experimentNameFormat)
         .join(", ")}`
     );
 
-    for (const experimentKey of removedExperiments) {
+    for (const experiment of removedExperiments) {
       send(
         webhookId,
         webhookToken,
-        [
-          defaultEmbed(
-            currentExperiments.find((e) => e.hash === experimentKey),
-            "remove"
-          )
-            .setColor(0xf53731)
-            .toJSON(),
-        ],
+        [defaultEmbed(experiment, "remove").setColor(0xf53731).toJSON()],
         "1104694113078608033"
       );
     }
@@ -99,18 +77,17 @@ export const watcher = (
   if (changedExperiments.length > 0) {
     info(
       `Changed Experiments: ${changedExperiments
-        .map((key) =>
-          experimentNameFormat(currentExperiments.find((e) => e.hash === key))
-        )
+        .map(experimentNameFormat)
         .join(", ")}`
     );
 
-    for (const experimentKey of changedExperiments) {
+    for (const experiment of changedExperiments) {
       const oldExperiment = oldExperiments.find(
-        (e) => e.hash === experimentKey
+        (e) => e.hash === experiment.hash
       );
+
       const currentExperiment = currentExperiments.find(
-        (e) => e.hash === experimentKey
+        (e) => e.hash === experiment.hash
       );
 
       send(
