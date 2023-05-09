@@ -143,7 +143,7 @@ const defaultEmbed = (experiment, action, diff = "") => {
       value:
         populationsFormat(
           experiment.rollout?.populations ?? [],
-          experiment.treatments
+          experiment.treatments ?? []
         ) || "None",
       inline: false,
     },
