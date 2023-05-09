@@ -165,14 +165,14 @@ const defaultEmbed = (experiment, action, diff = "") => {
       name: "Populations",
       value:
         populationsFormat(
-          experiment.rollout.populations,
+          experiment.rollout?.populations,
           experiment.treatments
         ) || "None",
       inline: false,
     },
     {
       name: "Overrides",
-      value: overridesFormat(experiment.rollout.overrides) || "None",
+      value: overridesFormat(experiment.rollout?.overrides) || "None",
       inline: false,
     },
   ];
