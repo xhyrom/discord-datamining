@@ -135,7 +135,7 @@ const defaultEmbed = (experiment, action, diff = "") => {
     },
     {
       name: "Kind",
-      value: experiment.kind ?? "guild",
+      value: experiment.kind ?? "guild", // because old way of doing things
       inline: true,
     },
     {
