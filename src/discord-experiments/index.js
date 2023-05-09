@@ -1,5 +1,5 @@
 import { error, info, success } from "../logger.js";
-import { decodeGuildExperiment, watcher } from "./utils.js";
+import { watcher } from "./utils.js";
 import { experimentNameFormat } from "./formatters.js";
 
 import { readFile, writeFile } from "node:fs/promises";
@@ -15,13 +15,9 @@ const [webhookId, webhookToken] = new URL(process.env.DISCORD_WEBHOOK).pathname
   .slice(3);
 
 info("Fetching experiments");
-const res = await (
-  await fetch(
-    "https://canary.discord.com/api/v10/experiments?with_guild_experiments=true"
-  )
+const experiments = await (
+  await fetch("https://api.disexp.xhyrom.dev/")
 ).json();
-
-const experiments = res.guild_experiments.map(decodeGuildExperiment);
 
 await watcher(
   JSON.parse(await readFile(join("data", "experiments.json"), "utf-8")),

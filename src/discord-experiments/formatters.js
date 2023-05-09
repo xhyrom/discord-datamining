@@ -2,39 +2,50 @@ const andList = new Intl.ListFormat();
 const orList = new Intl.ListFormat("en", { type: "disjunction" });
 
 export const experimentNameFormat = (experiment) => {
-  return experiment.name
-    ? `${experiment.name} (${experiment.hashKey})`
-    : experiment.hashKey;
+  return experiment.label
+    ? `${experiment.label} - ${experiment.id} (${experiment.hash})`
+    : `experiment.id} (${experiment.hash})`;
 };
 
-export const nameFormat = (bucketName) => {
-  return bucketName === "none"
-    ? "None"
-    : `Treatment ${bucketName.replace("treatment-", "")}`;
+export const nameFormat = (name) => {
+  return name === "none" ? "None" : `Treatment ${name}`;
 };
 
-export const populationsFormat = (populations) => {
+export const populationsFormat = (populations, treatments) => {
   let format = "";
 
-  for (const population of populations) {
-    const filters =
-      population.filters.length !== 0
-        ? `Filter: ${andList.format(
-            population.filters.map((f) => parseFilter(f))
-          )}`
-        : "";
+  if (populations.length > 0) {
+    for (const population of populations) {
+      const filters =
+        population.filters.length !== 0
+          ? `**Filter**: ${andList.format(
+              population.filters.map((f) => parseFilter(f))
+            )}`
+          : "";
 
-    if (filters) format += `${filters}\n`;
+      if (filters) format += `${filters}\n`;
 
-    for (const [bucketName, bucketValue] of Object.entries(
-      population.buckets
-    )) {
-      format += `${nameFormat(bucketName)}: ${bucketValue.rollout
-        .map((r) => `${r.start}-${r.end}`)
-        .join(", ")}\n`;
+      for (const [bucketName, bucketValue] of Object.entries(
+        population.buckets
+      )) {
+        const percentage =
+          bucketValue.rollout.reduce(
+            (total, range) => total + range.end - range.start,
+            0
+          ) / 100;
+        format += `**${nameFormat(bucketName)}**: ${
+          treatments.find((t) => t.id === parseInt(bucketName)).label ?? ""
+        } ${percentage}% (${bucketValue.rollout
+          .map((r) => `${r.start}-${r.end}`)
+          .join(", ")})\n`;
+      }
+
+      format += "\n";
     }
-
-    format += "\n";
+  } else if (populations.length === 0 && treatments.length > 0) {
+    format = treatments
+      .map((t) => `**Treatment ${t.id}**: ${t.label}`)
+      .join("\n");
   }
 
   return format;
@@ -52,12 +63,14 @@ export const overridesFormat = (overrides) => {
 const hubTypes = ["Default", "High School", "College"];
 export const parseFilter = (f) => {
   if (f.type === "guild_has_feature")
-    return `Server has feature ${orList.format(f.guild_features)}`;
+    return `Server has feature ${orList.format(f.features)}`;
   if (f.type === "guild_id_range")
-    return `Server ID is in range ${f.min_id ?? 0} - ${f.target}`;
+    return `Server ID is in range ${f.min_id ?? 0} - ${f.max_id ?? 0}`;
   if (f.type === "guild_member_count_range")
     return `Server member count is ${
-      f.target ? `in range ${f.min_id ?? 0} - ${f.target}` : `${f.hash_key}+`
+      f.max_count
+        ? `in range ${f.min_count ?? 0} - ${f.max_count ?? 0}`
+        : `${f.min_count}+`
     }`;
   if (f.type === "guild_ids") return `Server ID is ${orList.format(f.ids)}`;
   if (f.type === "guild_hub_types")
