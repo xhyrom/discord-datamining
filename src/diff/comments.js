@@ -72,7 +72,7 @@ export const lang = async (octokit, eventPayload) => {
   );
 
   if (!commit) return "";
-  if (!currentJsFile.sha) return "";
+  if (!currentJsFile?.sha) return "";
 
   const newFile = await octokit.rest.git.getBlob({
     owner: eventPayload.repository.owner.login,
@@ -114,7 +114,7 @@ export const stylesheet = async (octokit, eventPayload) => {
   const currentCssFile = diff.data.files.find((file) =>
     file.filename.includes("current.css")
   );
-  if (!currentCssFile || !currentCssFile.patch) return "";
+  if (!currentCssFile || !currentCssFile?.patch) return "";
 
   comment += `### ${currentCssFile.filename}\n\n`;
   comment += "```diff\n";
