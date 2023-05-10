@@ -152310,7 +152310,7 @@ html .invoiceCancelRow-3s2UuC {
 
 .permissionsTable-3WNJxZ {
     display: grid;
-    grid-template-columns: auto 1fr;
+    grid-template-columns: 1fr 1fr;
     grid-gap: 32px;
     row-gap: 8px;
     margin-top: 8px
@@ -155347,4 +155347,4 @@ html .invoiceCancelRow-dVOR64 {
     flex-direction: column
 }
 
-/*# sourceMappingURL=40532.061085f14abbd92d5497.css.map*/
+/*# sourceMappingURL=40532.f1a00fdc1338fa905ee9.css.map*/
