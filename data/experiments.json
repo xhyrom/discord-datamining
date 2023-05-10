@@ -4826,6 +4826,42 @@
     }
   },
   {
+    "kind": "user",
+    "id": "2022-11_notification_redesign",
+    "label": "NotificationRedesign",
+    "defaultConfig": [
+      "enabled"
+    ],
+    "treatments": [
+      {
+        "id": 1,
+        "label": "Notification Redesign Enabled",
+        "config": [
+          "enabled"
+        ]
+      }
+    ],
+    "hash": 1792467213
+  },
+  {
+    "kind": "user",
+    "id": "2023-04_notification_redesign_v2",
+    "label": "NotificationRedesignV2",
+    "defaultConfig": [
+      "enabled"
+    ],
+    "treatments": [
+      {
+        "id": 1,
+        "label": "Notification Redesign V2 Enabled",
+        "config": [
+          "enabled"
+        ]
+      }
+    ],
+    "hash": 1347697298
+  },
+  {
     "kind": "guild",
     "id": "2023-04_fast_new_channels",
     "label": "Fast New Channels",
