@@ -34,7 +34,7 @@ jobs:
     name: Mine Discord Experiments
 
     runs-on: ubuntu-latest
-
+    needs: mine
     steps:
 
       - uses: actions/checkout@v3
