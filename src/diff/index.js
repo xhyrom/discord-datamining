@@ -1,6 +1,6 @@
 import { Octokit } from "@octokit/action";
 import { readFile } from "node:fs/promises";
-import { all, lang } from "./comments.js";
+import { all, lang, stylesheet } from "./comments.js";
 import { send } from "./webhooks.js";
 
 const octokit = new Octokit({
@@ -19,6 +19,7 @@ console.log(eventPayload);
 
 const allComment = await all(octokit, eventPayload);
 const langComment = await lang(octokit, eventPayload);
+const stylesheetComment = await stylesheet(octokit, eventPayload);
 
 // create comment on commit
 if (allComment) {
@@ -56,5 +57,24 @@ if (langComment) {
     langComment,
     "1105589256996524042",
     "1104677673642496021"
+  );
+}
+
+if (stylesheetComment) {
+  const comment = await octokit.repos.createCommitComment({
+    owner: eventPayload.repository.owner.login,
+    repo: eventPayload.repository.name,
+    commit_sha: eventPayload.after,
+    body: stylesheetComment,
+  });
+
+  await send(
+    eventPayload,
+    comment.data,
+    webhookId,
+    webhookToken,
+    stylesheetComment,
+    "1105847524662706226",
+    "1105847708079624193"
   );
 }
