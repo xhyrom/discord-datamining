@@ -133649,7 +133649,8 @@ html .invoiceCancelRow-3s2UuC {
     position: absolute;
     top: 0;
     left: 0;
-    padding: 16px
+    padding: 16px;
+    cursor: pointer
 }
 
 .backButtonContainer-y_0u_2,
@@ -155390,4 +155391,4 @@ html .invoiceCancelRow-dVOR64 {
     flex-direction: column
 }
 
-/*# sourceMappingURL=40532.89908e6f9260f22a0f35.css.map*/
+/*# sourceMappingURL=40532.8b7aa3c7c3ea940f5a7a.css.map*/
