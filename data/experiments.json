@@ -246,6 +246,24 @@
   },
   {
     "kind": "user",
+    "id": "2023-03_mobile_burst_reactions",
+    "label": "Mobile Burst Reactions User Experiment",
+    "defaultConfig": [
+      "enabled"
+    ],
+    "treatments": [
+      {
+        "id": 1,
+        "label": "Enabled",
+        "config": [
+          "enabled"
+        ]
+      }
+    ],
+    "hash": 412458642
+  },
+  {
+    "kind": "user",
     "id": "2023-03_channel_name_emojis",
     "label": "Channel Emojis",
     "defaultConfig": [
@@ -399,6 +417,24 @@
       }
     ],
     "hash": 4081692393
+  },
+  {
+    "kind": "user",
+    "id": "2022-12_media_mosaic_experiment",
+    "label": "Media Mosaic",
+    "defaultConfig": [
+      "enabled"
+    ],
+    "treatments": [
+      {
+        "id": 1,
+        "label": "Media mosaic is enabled",
+        "config": [
+          "enabled"
+        ]
+      }
+    ],
+    "hash": 1133868976
   },
   {
     "kind": "user",
@@ -901,6 +937,24 @@
     "hash": 1651184307
   },
   {
+    "kind": "user",
+    "id": "2023-05_clyde_ai_dm",
+    "label": "DMs to Clyde Experiemnt",
+    "defaultConfig": [
+      "isDMsToClydeEnabled"
+    ],
+    "treatments": [
+      {
+        "id": 1,
+        "label": "enable dms to clyde",
+        "config": [
+          "isDMsToClydeEnabled"
+        ]
+      }
+    ],
+    "hash": 1906632964
+  },
+  {
     "kind": "guild",
     "id": "2023-03_clyde_ai",
     "label": "ClydeAI",
@@ -1260,6 +1314,24 @@
     "hash": 3029387945
   },
   {
+    "kind": "guild",
+    "id": "2023-03_cr_accept_new_terms",
+    "label": "Server Subscriptions Accept New Terms",
+    "defaultConfig": [
+      "enabled"
+    ],
+    "treatments": [
+      {
+        "id": 1,
+        "label": "Enables Server Subscriptions Accept New Terms",
+        "config": [
+          "enabled"
+        ]
+      }
+    ],
+    "hash": 747043176
+  },
+  {
     "kind": "user",
     "id": "2022-09_emoji_ecosystem_holdout",
     "label": "Emoji Ecosystem Holdout Experiment",
@@ -1362,6 +1434,61 @@
       }
     ],
     "hash": 1134868932
+  },
+  {
+    "kind": "guild",
+    "id": "2022-07_report_raids",
+    "label": "Report Raids",
+    "defaultConfig": [
+      "enableRaidReporting"
+    ],
+    "treatments": [
+      {
+        "id": 1,
+        "label": "Enable Reporting Of Raids",
+        "config": [
+          "enableRaidReporting"
+        ]
+      }
+    ],
+    "hash": 1055563741,
+    "rollout": {
+      "populations": [
+        {
+          "buckets": {
+            "1": {
+              "rollout": [
+                {
+                  "start": 0,
+                  "end": 10000
+                }
+              ]
+            }
+          },
+          "filters": [
+            {
+              "type": "guild_in_range_by_hash",
+              "hash_key": 1055563741,
+              "target": 10000
+            }
+          ]
+        },
+        {
+          "buckets": {
+            "none": {
+              "rollout": [
+                {
+                  "start": 0,
+                  "end": 10000
+                }
+              ]
+            }
+          },
+          "filters": []
+        }
+      ],
+      "overrides": {}
+    }
   },
   {
     "kind": "guild",
@@ -1775,6 +1902,24 @@
       }
     ],
     "hash": 683339869
+  },
+  {
+    "kind": "user",
+    "id": "2022-12_home_feedback_ux",
+    "label": "Show post feedback for home",
+    "defaultConfig": [
+      "showFeedback"
+    ],
+    "treatments": [
+      {
+        "id": 100,
+        "label": "show feedback",
+        "config": [
+          "showFeedback"
+        ]
+      }
+    ],
+    "hash": 655899426
   },
   {
     "kind": "guild",
@@ -2243,6 +2388,46 @@
   },
   {
     "kind": "guild",
+    "id": "2022-04_guild_role_subscription_purchase_feedback_loop",
+    "label": "Guild Role Subscription Purchase Feedback Loop",
+    "defaultConfig": [
+      "enableRoleSubscriptionPurchaseFeedbackLoop"
+    ],
+    "treatments": [
+      {
+        "id": 1,
+        "label": "Enables guilds to send purchsae feedback loop system messages",
+        "config": [
+          "enableRoleSubscriptionPurchaseFeedbackLoop"
+        ]
+      }
+    ],
+    "hash": 1990672009,
+    "rollout": {
+      "populations": [
+        {
+          "buckets": {
+            "1": {
+              "rollout": [
+                {
+                  "start": 0,
+                  "end": 10000
+                }
+              ]
+            }
+          },
+          "filters": []
+        }
+      ],
+      "overrides": {
+        "1": [
+          "908114392263049277"
+        ]
+      }
+    }
+  },
+  {
+    "kind": "guild",
     "id": "2022-05_mobile_web_role_subscription_purchase_page",
     "label": "Guild Role Subscription Mobile Web",
     "defaultConfig": [
@@ -2294,6 +2479,48 @@
       }
     ],
     "hash": 1034661306
+  },
+  {
+    "kind": "guild",
+    "id": "2022-07_guild_role_subscriptions_variable_max_tiers",
+    "label": "Guild Role Subscription Max Tiers",
+    "defaultConfig": [
+      "enabled",
+      "maxTiers"
+    ],
+    "treatments": [
+      4,
+      5,
+      6
+    ],
+    "hash": 179711638,
+    "rollout": {
+      "populations": [
+        {
+          "buckets": {
+            "none": {
+              "rollout": [
+                {
+                  "start": 0,
+                  "end": 10000
+                }
+              ]
+            }
+          },
+          "filters": []
+        }
+      ],
+      "overrides": {
+        "6": [
+          "908114392263049277",
+          "443584877829554177",
+          "223070469148901376",
+          "224565836277481473",
+          "488444879836413975",
+          "756644176610721842"
+        ]
+      }
+    }
   },
   {
     "kind": "user",
@@ -2389,6 +2616,42 @@
       }
     ],
     "hash": 3313601281
+  },
+  {
+    "kind": "guild",
+    "id": "2023-02_server_subscriptions_iap",
+    "label": "Server Subscriptions IAP",
+    "defaultConfig": [
+      "enabled"
+    ],
+    "treatments": [
+      {
+        "id": 1,
+        "label": "Enables Server Subscriptions IAP",
+        "config": [
+          "enabled"
+        ]
+      }
+    ],
+    "hash": 295820329,
+    "rollout": {
+      "populations": [
+        {
+          "buckets": {
+            "1": {
+              "rollout": [
+                {
+                  "start": 0,
+                  "end": 10000
+                }
+              ]
+            }
+          },
+          "filters": []
+        }
+      ],
+      "overrides": {}
+    }
   },
   {
     "kind": "user",
@@ -2617,6 +2880,24 @@
   },
   {
     "kind": "user",
+    "id": "2023-02_tabs_v2",
+    "label": "Tabs V2 - GDM Bucketing",
+    "defaultConfig": [
+      "enabled"
+    ],
+    "treatments": [
+      {
+        "id": 1,
+        "label": "Enable Tabs V2",
+        "config": [
+          "enabled"
+        ]
+      }
+    ],
+    "hash": 1499660140
+  },
+  {
+    "kind": "user",
     "id": "2023-03_mobile_re_design_existing_users",
     "label": "Tabs V2 - Existing Users",
     "defaultConfig": [
@@ -2784,6 +3065,24 @@
   },
   {
     "kind": "user",
+    "id": "2023-02_inline_sending_preview_mobile",
+    "label": "Inline Sending Preview Mobile",
+    "defaultConfig": [
+      "enabled"
+    ],
+    "treatments": [
+      {
+        "id": 1,
+        "label": "Inline sending preview is enabled on mobile (both iOS and Android)",
+        "config": [
+          "enabled"
+        ]
+      }
+    ],
+    "hash": 1582099574
+  },
+  {
+    "kind": "user",
     "id": "2022-09_mobile_account_switcher",
     "label": "Mobile Account Switcher",
     "defaultConfig": [
@@ -2884,6 +3183,34 @@
   },
   {
     "kind": "user",
+    "id": "2023-05_dcf_improvements",
+    "label": "DCF Improvements Experiment",
+    "defaultConfig": [
+      "cooldownPeriod",
+      "dismissOnNavigation"
+    ],
+    "treatments": [
+      {
+        "id": 1,
+        "label": "Users will have a DC cooldown of 1 hour",
+        "config": [
+          "cooldownPeriod",
+          "dismissOnNavigation"
+        ]
+      },
+      {
+        "id": 2,
+        "label": "DCs will be dismissed when a user navigates away from their surface",
+        "config": [
+          "cooldownPeriod",
+          "dismissOnNavigation"
+        ]
+      }
+    ],
+    "hash": 1171817240
+  },
+  {
+    "kind": "user",
     "id": "2023-04_nitro_drop_experience",
     "label": "2023 Nitro April Drop Experience",
     "defaultConfig": [
@@ -2899,6 +3226,24 @@
       }
     ],
     "hash": 2753834830
+  },
+  {
+    "kind": "user",
+    "id": "2023-02_nitroduction_experience",
+    "label": "Nitroduction Experience",
+    "defaultConfig": [
+      "enabled"
+    ],
+    "treatments": [
+      {
+        "id": 1,
+        "label": "One month trial users recieve the Nitroduction experience",
+        "config": [
+          "enabled"
+        ]
+      }
+    ],
+    "hash": 2956169075
   },
   {
     "kind": "user",
@@ -3141,6 +3486,24 @@
   },
   {
     "kind": "user",
+    "id": "2023-03_free_discord_stickers",
+    "label": "Free Default Stickers",
+    "defaultConfig": [
+      "freeStickersEnabled"
+    ],
+    "treatments": [
+      {
+        "id": 1,
+        "label": "Enabled",
+        "config": [
+          "freeStickersEnabled"
+        ]
+      }
+    ],
+    "hash": 887694445
+  },
+  {
+    "kind": "user",
     "id": "2023-01_silent_messages",
     "label": "Silent Messages",
     "defaultConfig": [
@@ -3309,6 +3672,24 @@
   },
   {
     "kind": "user",
+    "id": "2022-11_rtx40xx_gpu_screenshare_with_av1",
+    "label": "Test how AV1 works on windows with RTX40xx GPUs for screenshare",
+    "defaultConfig": [
+      "signalAV1Support"
+    ],
+    "treatments": [
+      {
+        "id": 1,
+        "label": "Screenshare with AV1",
+        "config": [
+          "signalAV1Support"
+        ]
+      }
+    ],
+    "hash": 535388300
+  },
+  {
+    "kind": "user",
     "id": "2023-02_h265_android",
     "label": "Test how h265 works on android for DM calls",
     "defaultConfig": [
@@ -3367,6 +3748,24 @@
       }
     ],
     "hash": 2912909916
+  },
+  {
+    "kind": "user",
+    "id": "2021-08_max_sync_delay",
+    "label": "Overrides the default max sync delay for AV streams in WebRTC",
+    "defaultConfig": [
+      "maxSyncDelayOverride"
+    ],
+    "treatments": [
+      {
+        "id": 1,
+        "label": "Use 3 seconds as max sync delay",
+        "config": [
+          "maxSyncDelayOverride"
+        ]
+      }
+    ],
+    "hash": 578035700
   },
   {
     "kind": "user",
@@ -3441,6 +3840,24 @@
       }
     ],
     "hash": 478936943
+  },
+  {
+    "kind": "user",
+    "id": "2022-07_file_upload_limit",
+    "label": "File Upload Limit Increase",
+    "defaultConfig": [
+      "enabled"
+    ],
+    "treatments": [
+      {
+        "id": 1,
+        "label": "Enabled",
+        "config": [
+          "enabled"
+        ]
+      }
+    ],
+    "hash": 828251710
   },
   {
     "kind": "user",
@@ -3845,6 +4262,24 @@
       }
     ],
     "hash": 3364594544
+  },
+  {
+    "kind": "user",
+    "id": "2023-02_referral_trials",
+    "label": "Referral Trials",
+    "defaultConfig": [
+      "enabled"
+    ],
+    "treatments": [
+      {
+        "id": 1,
+        "label": "Nitro users can send a Nitro trial offer to another user.",
+        "config": [
+          "enabled"
+        ]
+      }
+    ],
+    "hash": 4247951256
   },
   {
     "kind": "user",
@@ -4391,6 +4826,69 @@
     }
   },
   {
+    "kind": "guild",
+    "id": "2023-04_fast_new_channels",
+    "label": "Fast New Channels",
+    "defaultConfig": [
+      "showNewChannelsQuickly"
+    ],
+    "treatments": [
+      {
+        "id": 1,
+        "label": "On",
+        "config": [
+          "showNewChannelsQuickly"
+        ]
+      }
+    ],
+    "hash": 4063488887,
+    "rollout": {
+      "populations": [
+        {
+          "buckets": {
+            "1": {
+              "rollout": [
+                {
+                  "start": 0,
+                  "end": 10000
+                }
+              ]
+            }
+          },
+          "filters": [
+            {
+              "type": "guild_has_feature",
+              "features": [
+                "COMMUNITY_CANARY"
+              ]
+            }
+          ]
+        },
+        {
+          "buckets": {
+            "1": {
+              "rollout": [
+                {
+                  "start": 0,
+                  "end": 10000
+                }
+              ]
+            }
+          },
+          "filters": []
+        }
+      ],
+      "overrides": {
+        "1": [
+          "651595875897835540"
+        ],
+        "42": [
+          "1080899969243943072"
+        ]
+      }
+    }
+  },
+  {
     "kind": "user",
     "id": "2023-04_soundboard_nitro",
     "label": "Soundboard Nitro",
@@ -4811,6 +5309,24 @@
     "hash": 3375543773
   },
   {
+    "kind": "user",
+    "id": "2021-02_staff_qc_debugging",
+    "label": "Display QS scores in results. Not a real experiment",
+    "defaultConfig": [
+      "showScores"
+    ],
+    "treatments": [
+      {
+        "id": 1,
+        "label": "Show scores in QS results",
+        "config": [
+          "showScores"
+        ]
+      }
+    ],
+    "hash": 2847059306
+  },
+  {
     "kind": "guild",
     "id": "2023-01_shared_canvas",
     "label": "Shared Canvas",
@@ -4999,6 +5515,24 @@
       }
     ],
     "hash": 542042630
+  },
+  {
+    "kind": "guild",
+    "id": "2021-12_discovery_requirements_m2",
+    "label": "Lower Server Discovery member count requirements",
+    "defaultConfig": [
+      "enableLowerMemberCountReq"
+    ],
+    "treatments": [
+      {
+        "id": 1,
+        "label": "Allow a server to become discoverable with lower member count requirements",
+        "config": [
+          "enableLowerMemberCountReq"
+        ]
+      }
+    ],
+    "hash": 1065075299
   },
   {
     "kind": "guild",
@@ -5345,6 +5879,61 @@
     }
   },
   {
+    "kind": "guild",
+    "id": "2023-03_onboarding_soft_requirement_for_partnership",
+    "label": "Hide onboarding soft requirement for partnership",
+    "defaultConfig": [
+      "showOnboardingRequirement"
+    ],
+    "treatments": [
+      {
+        "id": 1,
+        "label": "Show onboarding soft requirement for partnership",
+        "config": [
+          "showOnboardingRequirement"
+        ]
+      }
+    ],
+    "hash": 3738976194,
+    "rollout": {
+      "populations": [
+        {
+          "buckets": {
+            "1": {
+              "rollout": [
+                {
+                  "start": 0,
+                  "end": 10000
+                }
+              ]
+            }
+          },
+          "filters": [
+            {
+              "type": "guild_in_range_by_hash",
+              "hash_key": 3738976194,
+              "target": 10000
+            }
+          ]
+        },
+        {
+          "buckets": {
+            "none": {
+              "rollout": [
+                {
+                  "start": 0,
+                  "end": 10000
+                }
+              ]
+            }
+          },
+          "filters": []
+        }
+      ],
+      "overrides": {}
+    }
+  },
+  {
     "kind": "user",
     "id": "2021-10_pause_partner_applications_experiment",
     "label": "Pause Partner Applications Experiment",
@@ -5576,6 +6165,24 @@
       }
     ],
     "hash": 1045730203
+  },
+  {
+    "kind": "user",
+    "id": "2023-04_track_changes_true",
+    "label": "track changes true",
+    "defaultConfig": [
+      "inUse"
+    ],
+    "treatments": [
+      {
+        "id": 1,
+        "label": "track changes true",
+        "config": [
+          "inUse"
+        ]
+      }
+    ],
+    "hash": 2193643700
   },
   {
     "kind": "user",
@@ -5900,6 +6507,26 @@
     "hash": 3135454939
   },
   {
+    "kind": "user",
+    "id": "2023-04_consumer_education_launch__reporting",
+    "label": "Consumer Education Launch - Reporting",
+    "defaultConfig": [
+      "bucket",
+      "enabled"
+    ],
+    "treatments": [
+      {
+        "id": 1,
+        "label": "Reporting",
+        "config": [
+          "bucket",
+          "enabled"
+        ]
+      }
+    ],
+    "hash": 3966944317
+  },
+  {
     "kind": "guild",
     "id": "2022-11_default_disable_mass_mention",
     "label": "Disable mass mentions for communities by default",
@@ -6024,6 +6651,24 @@
       }
     ],
     "hash": 2993886886
+  },
+  {
+    "kind": "user",
+    "id": "2023-04_birthday_activities_whats_new_gdm_tile",
+    "label": "Birthday Activities Whats New GDM Tile",
+    "defaultConfig": [
+      "enabled"
+    ],
+    "treatments": [
+      {
+        "id": 1,
+        "label": "Enable GDM tile",
+        "config": [
+          "enabled"
+        ]
+      }
+    ],
+    "hash": 3839121633
   },
   {
     "kind": "user",
