@@ -774,6 +774,24 @@
   },
   {
     "kind": "user",
+    "id": "2023-05_popular_slash_commands_mobile",
+    "label": "Popular Slash Commands Mobile",
+    "defaultConfig": [
+      "enabled"
+    ],
+    "treatments": [
+      {
+        "id": 1,
+        "label": "Show Popular Commands section",
+        "config": [
+          "enabled"
+        ]
+      }
+    ],
+    "hash": 1146223059
+  },
+  {
+    "kind": "user",
     "id": "2023-05_avatar_decorations",
     "label": "Avatar Decorations Birthday 2023",
     "defaultConfig": [
