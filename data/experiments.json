@@ -477,6 +477,34 @@
   },
   {
     "kind": "user",
+    "id": "2023-05_overlay_hook_crash_detection",
+    "label": "Detect and report crashes in the overlay hook",
+    "defaultConfig": [
+      "enableCrashReporting",
+      "enableCrashTrigger"
+    ],
+    "treatments": [
+      {
+        "id": 1,
+        "label": "EnableCrashReporting",
+        "config": [
+          "enableCrashReporting",
+          "enableCrashTrigger"
+        ]
+      },
+      {
+        "id": 2,
+        "label": "EnableCrashTrigger",
+        "config": [
+          "enableCrashReporting",
+          "enableCrashTrigger"
+        ]
+      }
+    ],
+    "hash": 933369006
+  },
+  {
+    "kind": "user",
     "id": "2022-04_forced_colors_desktop",
     "label": "Forced Colors Mode (Desktop)",
     "defaultConfig": [
