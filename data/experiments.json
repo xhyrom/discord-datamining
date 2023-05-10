@@ -2884,34 +2884,6 @@
   },
   {
     "kind": "user",
-    "id": "2023-05_dcf_improvements",
-    "label": "DCF Improvements Experiment",
-    "defaultConfig": [
-      "cooldownPeriod",
-      "dismissOnNavigation"
-    ],
-    "treatments": [
-      {
-        "id": 1,
-        "label": "Users will have a DC cooldown of 1 hour",
-        "config": [
-          "cooldownPeriod",
-          "dismissOnNavigation"
-        ]
-      },
-      {
-        "id": 2,
-        "label": "DCs will be dismissed when a user navigates away from their surface",
-        "config": [
-          "cooldownPeriod",
-          "dismissOnNavigation"
-        ]
-      }
-    ],
-    "hash": 1171817240
-  },
-  {
-    "kind": "user",
     "id": "2023-04_nitro_drop_experience",
     "label": "2023 Nitro April Drop Experience",
     "defaultConfig": [
@@ -2927,24 +2899,6 @@
       }
     ],
     "hash": 2753834830
-  },
-  {
-    "kind": "user",
-    "id": "2023-02_nitroduction_experience",
-    "label": "Nitroduction Experience",
-    "defaultConfig": [
-      "enabled"
-    ],
-    "treatments": [
-      {
-        "id": 1,
-        "label": "One month trial users recieve the Nitroduction experience",
-        "config": [
-          "enabled"
-        ]
-      }
-    ],
-    "hash": 2956169075
   },
   {
     "kind": "user",
