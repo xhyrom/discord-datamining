@@ -4962,6 +4962,24 @@
   },
   {
     "kind": "user",
+    "id": "2023-05_premium_promo_removal",
+    "label": "Premium Promo Removal Experiment",
+    "defaultConfig": [
+      "enabled"
+    ],
+    "treatments": [
+      {
+        "id": 1,
+        "label": "Users will not see the premium promo nagbar",
+        "config": [
+          "enabled"
+        ]
+      }
+    ],
+    "hash": 3351255926
+  },
+  {
+    "kind": "user",
     "id": "2023-02_mfa_remove_phone",
     "label": "Safety Experience MFA Remove Phone",
     "defaultConfig": [
