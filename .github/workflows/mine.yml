@@ -29,3 +29,52 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.ACCESS_TOKEN }}
           ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}
           DISCORD_TOKEN: ${{ secrets.DISCORD_TOKEN }}
+  mine-discord-experiments:
+
+    name: Mine Discord Experiments
+
+    runs-on: ubuntu-latest
+
+    steps:
+
+      - uses: actions/checkout@v3
+
+        with:
+
+          persist-credentials: false
+
+      - uses: actions/setup-node@v2
+
+        with:
+
+          node-version: 19
+
+      - uses: pnpm/action-setup@v2
+
+        with:
+
+          version: 6.0.2
+
+      - name: "Run script"
+
+        run: |
+
+          git config --global url.https://${{ secrets.ACCESS_TOKEN }}@github.com/.insteadOf https://github.com/
+
+          git config user.name "xHyroM"
+
+          git config user.email "github@xhyrom.dev"
+
+          pnpm install
+
+          node src/discord-experiments/index.js
+
+        env:
+
+          GITHUB_TOKEN: ${{ secrets.ACCESS_TOKEN }}
+
+          ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}
+
+          DISCORD_WEBHOOK: ${{ secrets.DISCORD_WEBHOOK }}
+
+          DISCORD_TOKEN: ${{ secrets.DISCORD_TOKEN }}
