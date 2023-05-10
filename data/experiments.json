@@ -2949,34 +2949,6 @@
   },
   {
     "kind": "user",
-    "id": "2022-10_premium_tier_0_desktop_gifting",
-    "label": "Premium Tier 0 Desktop Gifting",
-    "defaultConfig": [
-      "enableMonthlyTier0Gifting",
-      "enableYearlyTier0Gifting"
-    ],
-    "treatments": [
-      {
-        "id": 1,
-        "label": "Enable Monthly and Yearly Gifting",
-        "config": [
-          "enableMonthlyTier0Gifting",
-          "enableYearlyTier0Gifting"
-        ]
-      },
-      {
-        "id": 2,
-        "label": "Enable Yearly Gifting",
-        "config": [
-          "enableMonthlyTier0Gifting",
-          "enableYearlyTier0Gifting"
-        ]
-      }
-    ],
-    "hash": 2101363121
-  },
-  {
-    "kind": "user",
     "id": "2021-06_preview_promotions",
     "label": "Promotions Preview",
     "defaultConfig": [
