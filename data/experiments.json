@@ -5959,6 +5959,42 @@
     }
   },
   {
+    "kind": "user",
+    "id": "2023-05_fast_onboarding_landing",
+    "label": "Fast Onboarding Landing",
+    "defaultConfig": [
+      "timeout",
+      "mobileTimeout"
+    ],
+    "treatments": [
+      {
+        "id": 1,
+        "label": "2x Speed",
+        "config": [
+          "timeout",
+          "mobileTimeout"
+        ]
+      },
+      {
+        "id": 2,
+        "label": "Instant",
+        "config": [
+          "timeout",
+          "mobileTimeout"
+        ]
+      },
+      {
+        "id": 42,
+        "label": "Instant Untracked",
+        "config": [
+          "timeout",
+          "mobileTimeout"
+        ]
+      }
+    ],
+    "hash": 1461620747
+  },
+  {
     "kind": "guild",
     "id": "2022-03_guild_access_rate_insight_experiment",
     "label": "Guild Access Rate Insight Experiment",
