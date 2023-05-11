@@ -240,6 +240,16 @@
           "hasBurstGlow",
           "hasSendAnimation"
         ]
+      },
+      {
+        "id": 10,
+        "label": "The exact same as bucket six, just with a different label",
+        "config": [
+          "enabled",
+          "hasTabUI",
+          "hasTwoButtonEntryPoint",
+          "hasFreeBursts"
+        ]
       }
     ],
     "hash": 1443856828
