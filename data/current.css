@@ -55119,6 +55119,14 @@ input[type=checked]:focus-visible+.label-3TDpbn {
     visibility: visible
 }
 
+.confettiCanvas-3YU5pM {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%
+}
+
 .soundInfo-1vWb45 {
     padding: 8px;
     display: -webkit-box;
@@ -146645,6 +146653,11 @@ html .invoiceCancelRow-3s2UuC {
     margin: 16px 0
 }
 
+.dropCriteriaText-2chrEa>p {
+    margin-top: 2px;
+    margin-bottom: 2px
+}
+
 .dropLearnMore-3BQ5Ht {
     margin-bottom: 16px
 }
@@ -155392,4 +155405,4 @@ html .invoiceCancelRow-dVOR64 {
     flex-direction: column
 }
 
-/*# sourceMappingURL=40532.fa6f52eb509457654c62.css.map*/
+/*# sourceMappingURL=40532.b4a2d9e9e967b3477299.css.map*/
