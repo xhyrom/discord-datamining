@@ -133237,10 +133237,10 @@ html .invoiceCancelRow-3s2UuC {
     width: 100%;
     height: calc(100% - 20px);
     text-align: center;
-    -webkit-transition: -webkit-transform 1s cubic-bezier(.6, -.28, .735, .045);
-    transition: -webkit-transform 1s cubic-bezier(.6, -.28, .735, .045);
-    transition: transform 1s cubic-bezier(.6, -.28, .735, .045);
-    transition: transform 1s cubic-bezier(.6, -.28, .735, .045), -webkit-transform 1s cubic-bezier(.6, -.28, .735, .045);
+    -webkit-transition: -webkit-transform .5s cubic-bezier(.6, -.28, .735, .045);
+    transition: -webkit-transform .5s cubic-bezier(.6, -.28, .735, .045);
+    transition: transform .5s cubic-bezier(.6, -.28, .735, .045);
+    transition: transform .5s cubic-bezier(.6, -.28, .735, .045), -webkit-transform .5s cubic-bezier(.6, -.28, .735, .045);
     -webkit-transform-style: preserve-3d;
     transform-style: preserve-3d;
     -webkit-box-shadow: var(--elevation-medium);
@@ -155454,4 +155454,4 @@ html .invoiceCancelRow-dVOR64 {
     flex-direction: column
 }
 
-/*# sourceMappingURL=40532.a3f63bdf95bebf2f1be6.css.map*/
+/*# sourceMappingURL=40532.f0f68f663956412e2684.css.map*/
