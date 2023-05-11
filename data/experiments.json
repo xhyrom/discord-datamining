@@ -1576,7 +1576,7 @@
   {
     "kind": "guild",
     "id": "2022-10_communities_multi",
-    "label": "A multi-arm guild experiment that segments all eligible guilds to test different combinations of the Communities 20.0 experience",
+    "label": "A multi-arm guild experiment that segments all eligible guilds to test different combinations of the Communities 2.0 experience",
     "defaultConfig": [
       "enableGuildHome",
       "forceEnableGuildHome"
@@ -3897,7 +3897,7 @@
     "treatments": [
       {
         "id": 1,
-        "label": "Calling with H0.265",
+        "label": "Calling with H.265",
         "config": [
           "signalH265SupportAndroid"
         ]
@@ -3915,7 +3915,7 @@
     "treatments": [
       {
         "id": 1,
-        "label": "Calling with H0.265",
+        "label": "Calling with H.265",
         "config": [
           "signalH265SupportApple"
         ]
@@ -6024,7 +6024,7 @@
     "treatments": [
       {
         "id": 1,
-        "label": "Show Guild Audit Log 20.0 for user",
+        "label": "Show Guild Audit Log 2.0 for user",
         "config": [
           "enableForUser"
         ]
@@ -6042,7 +6042,7 @@
     "treatments": [
       {
         "id": 1,
-        "label": "Show Guild Audit Log 20.0 for guild",
+        "label": "Show Guild Audit Log 2.0 for guild",
         "config": [
           "enableForGuild"
         ]
