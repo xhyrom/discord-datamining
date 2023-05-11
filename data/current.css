@@ -33728,8 +33728,49 @@ img[alt] {
     color: var(--guild-boosting-pink)
 }
 
+.premiumTooltipFooterBackground-3c049a {
+    background: -webkit-gradient(linear, left top, right top, from(#b473f5), to(#e292aa));
+    background: linear-gradient(90deg, #b473f5, #e292aa);
+    width: "100%"
+}
+
+.tooltipBodyContainer-OhZt72 {
+    text-align: center;
+    padding: 8px 12px
+}
+
+.tooltipPremiumFooterContainer-3Z8jwf {
+    text-align: center;
+    background: -webkit-gradient(linear, left top, right top, from(#b473f5), to(#e292aa));
+    background: linear-gradient(90deg, #b473f5, #e292aa);
+    color: #fff;
+    padding: 4px 12px;
+    border-radius: 0 0 5px 5px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center
+}
+
+.tooltipRemovePadding-1zEoQp {
+    padding: 0
+}
+
+.gemIcon-1rhNmW {
+    margin-top: 2px
+}
+
 .guildIconContainer-3QvE6w {
     margin-right: 4px
+}
+
+.guildIconV2Container-2H8IRS {
+    margin-right: 8px
 }
 
 .guildBadge-3_UK6z .boostedGuildIconGem-1cgQ2M {
@@ -155405,4 +155446,4 @@ html .invoiceCancelRow-dVOR64 {
     flex-direction: column
 }
 
-/*# sourceMappingURL=40532.b9314c082f36f321b2d1.css.map*/
+/*# sourceMappingURL=40532.23a03fca6fa20a79a395.css.map*/
