@@ -42,7 +42,6 @@
       }
     ],
     "hash": 2014775304,
-    "revision": 3,
     "rollout": {
       "populations": [
         {
@@ -111,6 +110,7 @@
           "filters": []
         }
       ],
+      "revision": 3,
       "overrides": {
         "4": [
           "886812261455368233",
@@ -317,7 +317,6 @@
       }
     ],
     "hash": 1504498621,
-    "revision": 2,
     "rollout": {
       "populations": [
         {
@@ -361,6 +360,7 @@
           ]
         }
       ],
+      "revision": 2,
       "overrides": {}
     }
   },
@@ -678,7 +678,6 @@
       }
     ],
     "hash": 3320756132,
-    "revision": 2,
     "rollout": {
       "populations": [
         {
@@ -695,6 +694,7 @@
           "filters": []
         }
       ],
+      "revision": 2,
       "overrides": {}
     }
   },
@@ -769,6 +769,7 @@
           "filters": []
         }
       ],
+      "revision": 0,
       "overrides": {}
     }
   },
@@ -1003,7 +1004,6 @@
       }
     ],
     "hash": 4083096281,
-    "revision": 2,
     "rollout": {
       "populations": [
         {
@@ -1110,6 +1110,7 @@
           ]
         }
       ],
+      "revision": 2,
       "overrides": {
         "1": [
           "860609921602682910",
@@ -1230,6 +1231,7 @@
           "filters": []
         }
       ],
+      "revision": 0,
       "overrides": {
         "1": [
           "651595875897835540",
@@ -1310,6 +1312,7 @@
           "filters": []
         }
       ],
+      "revision": 0,
       "overrides": {}
     }
   },
@@ -1505,6 +1508,7 @@
           "filters": []
         }
       ],
+      "revision": 0,
       "overrides": {}
     }
   },
@@ -1548,6 +1552,7 @@
           ]
         }
       ],
+      "revision": 0,
       "overrides": {
         "1": [
           "816784679717044276",
@@ -1619,7 +1624,6 @@
       }
     ],
     "hash": 2457903107,
-    "revision": 2,
     "rollout": {
       "populations": [
         {
@@ -1703,6 +1707,7 @@
           ]
         }
       ],
+      "revision": 2,
       "overrides": {}
     }
   },
@@ -1731,7 +1736,6 @@
       }
     ],
     "hash": 3832113202,
-    "revision": 4,
     "rollout": {
       "populations": [
         {
@@ -1748,6 +1752,7 @@
           "filters": []
         }
       ],
+      "revision": 4,
       "overrides": {
         "0": [
           "814669604840013874"
@@ -1991,6 +1996,7 @@
           "filters": []
         }
       ],
+      "revision": 0,
       "overrides": {}
     }
   },
@@ -2027,6 +2033,7 @@
           "filters": []
         }
       ],
+      "revision": 0,
       "overrides": {}
     }
   },
@@ -2047,7 +2054,6 @@
       }
     ],
     "hash": 485475819,
-    "revision": 2,
     "rollout": {
       "populations": [
         {
@@ -2064,6 +2070,7 @@
           "filters": []
         }
       ],
+      "revision": 2,
       "overrides": {}
     }
   },
@@ -2119,6 +2126,7 @@
           "filters": []
         }
       ],
+      "revision": 0,
       "overrides": {}
     }
   },
@@ -2234,6 +2242,7 @@
           "filters": []
         }
       ],
+      "revision": 0,
       "overrides": {}
     }
   },
@@ -2288,6 +2297,7 @@
           "filters": []
         }
       ],
+      "revision": 0,
       "overrides": {
         "1": [
           "908114392263049277",
@@ -2350,6 +2360,7 @@
           "filters": []
         }
       ],
+      "revision": 0,
       "overrides": {}
     }
   },
@@ -2386,6 +2397,7 @@
           "filters": []
         }
       ],
+      "revision": 0,
       "overrides": {
         "1": [
           "908114392263049277",
@@ -2437,6 +2449,7 @@
           "filters": []
         }
       ],
+      "revision": 0,
       "overrides": {
         "1": [
           "908114392263049277"
@@ -2477,6 +2490,7 @@
           "filters": []
         }
       ],
+      "revision": 0,
       "overrides": {}
     }
   },
@@ -2528,6 +2542,7 @@
           "filters": []
         }
       ],
+      "revision": 0,
       "overrides": {
         "6": [
           "908114392263049277",
@@ -2591,6 +2606,7 @@
           "filters": []
         }
       ],
+      "revision": 0,
       "overrides": {
         "1": [
           "979437427456364574",
@@ -2668,6 +2684,7 @@
           "filters": []
         }
       ],
+      "revision": 0,
       "overrides": {}
     }
   },
@@ -2740,6 +2757,7 @@
           "filters": []
         }
       ],
+      "revision": 0,
       "overrides": {
         "1": [
           "1042148168726487101",
@@ -2823,6 +2841,7 @@
           "filters": []
         }
       ],
+      "revision": 0,
       "overrides": {
         "1": [
           "1042521715630166056"
@@ -2870,6 +2889,7 @@
           ]
         }
       ],
+      "revision": 0,
       "overrides": {
         "1": [
           "1080899969243943072",
@@ -3182,6 +3202,78 @@
     "hash": 2355118827
   },
   {
+    "id": "2023-05_lock_icon",
+    "label": "Checkout Lock Icon",
+    "kind": "user",
+    "defaultConfig": [
+      "enabled"
+    ],
+    "treatments": [
+      {
+        "id": 1,
+        "label": "Enabled",
+        "config": [
+          "enabled"
+        ]
+      }
+    ],
+    "hash": 853908483
+  },
+  {
+    "kind": "user",
+    "label": "Pomelo Compatibility",
+    "id": "2023-03_pomelo_compatible_ux",
+    "defaultConfig": [
+      "enabled"
+    ],
+    "treatments": [
+      {
+        "id": 1,
+        "label": "enabled",
+        "config": [
+          "enabled"
+        ]
+      }
+    ],
+    "hash": 671665651
+  },
+  {
+    "kind": "user",
+    "label": "Pomelo",
+    "id": "2023-03_pomelo",
+    "defaultConfig": [
+      "enabled"
+    ],
+    "treatments": [
+      {
+        "id": 1,
+        "label": "enabled",
+        "config": [
+          "enabled"
+        ]
+      }
+    ],
+    "hash": 268309827
+  },
+  {
+    "kind": "user",
+    "label": "Pomelo Announcement",
+    "id": "2023-04_pomelo_announcement",
+    "defaultConfig": [
+      "enabled"
+    ],
+    "treatments": [
+      {
+        "id": 1,
+        "label": "enabled",
+        "config": [
+          "enabled"
+        ]
+      }
+    ],
+    "hash": 2804111708
+  },
+  {
     "kind": "user",
     "id": "2022-12_localized_pricing_promo_manager",
     "label": "Localized Pricing Promo Manager",
@@ -3198,6 +3290,33 @@
       }
     ],
     "hash": 4215507151
+  },
+  {
+    "kind": "user",
+    "id": "2022-09_premium_tier_0_global",
+    "label": "Premium tier 0 (Global)",
+    "defaultConfig": [
+      "enableTier0"
+    ],
+    "treatments": [
+      {
+        "id": 1,
+        "label": "Variant 1",
+        "config": [
+          "enableTier0",
+          "variant"
+        ]
+      },
+      {
+        "id": 2,
+        "label": "Variant 2",
+        "config": [
+          "enableTier0",
+          "variant"
+        ]
+      }
+    ],
+    "hash": 102690720
   },
   {
     "kind": "user",
@@ -3425,7 +3544,6 @@
       }
     ],
     "hash": 1816004721,
-    "revision": 2,
     "rollout": {
       "populations": [
         {
@@ -3499,6 +3617,7 @@
           "filters": []
         }
       ],
+      "revision": 2,
       "overrides": {}
     }
   },
@@ -3557,6 +3676,50 @@
     "hash": 4202366309
   },
   {
+    "id": "2022-07_voice_in_threads",
+    "label": "Voice in Threads",
+    "kind": "guild",
+    "defaultConfig": [
+      "enabled"
+    ],
+    "treatments": [
+      {
+        "id": 1,
+        "label": "On",
+        "config": [
+          "enabled"
+        ]
+      }
+    ],
+    "hash": 944104242,
+    "rollout": {
+      "populations": [
+        {
+          "buckets": {
+            "1": {
+              "rollout": [
+                {
+                  "start": 0,
+                  "end": 10000
+                }
+              ]
+            }
+          },
+          "filters": [
+            {
+              "type": "guild_has_feature",
+              "features": [
+                "VOICE_IN_THREADS"
+              ]
+            }
+          ]
+        }
+      ],
+      "revision": 0,
+      "overrides": {}
+    }
+  },
+  {
     "kind": "user",
     "id": "2022-09_remote_audio_settings",
     "label": "Remote Audio Settings",
@@ -3575,6 +3738,24 @@
     "hash": 1503364285
   },
   {
+    "kind": "user",
+    "label": "Global Display Name",
+    "id": "2023-01_global_display_names",
+    "defaultConfig": [
+      "enabled"
+    ],
+    "treatments": [
+      {
+        "id": 1,
+        "label": "enabled",
+        "config": [
+          "enabled"
+        ]
+      }
+    ],
+    "hash": 785391472
+  },
+  {
     "kind": "guild",
     "id": "2022-10_text_in_stage",
     "label": "Text-In-Stage",
@@ -3591,7 +3772,6 @@
       }
     ],
     "hash": 848173753,
-    "revision": 2,
     "rollout": {
       "populations": [
         {
@@ -3653,6 +3833,7 @@
           "filters": []
         }
       ],
+      "revision": 2,
       "overrides": {}
     }
   },
@@ -4022,6 +4203,58 @@
     "hash": 1428438599
   },
   {
+    "id": "2023-01_forums_non_community",
+    "label": "Forum non-community",
+    "kind": "guild",
+    "defaultConfig": [
+      "enabled"
+    ],
+    "treatments": [
+      {
+        "id": 1,
+        "label": "On",
+        "config": [
+          "enabled"
+        ]
+      }
+    ],
+    "hash": 1446479414,
+    "rollout": {
+      "populations": [
+        {
+          "buckets": {
+            "1": {
+              "rollout": [
+                {
+                  "start": 2500,
+                  "end": 5000
+                }
+              ]
+            },
+            "none": {
+              "rollout": [
+                {
+                  "start": 5000,
+                  "end": 10000
+                }
+              ]
+            }
+          },
+          "filters": []
+        }
+      ],
+      "revision": 0,
+      "overrides": {
+        "1": [
+          "651595875897835540",
+          "1046918739599315124",
+          "971683003606654976",
+          "1070109297268248639"
+        ]
+      }
+    }
+  },
+  {
     "kind": "user",
     "id": "2022-12_get_my_guilds_application_ids_endpoint",
     "label": "Get My Guilds' Application IDs Endpoint Experiment",
@@ -4145,6 +4378,7 @@
           ]
         }
       ],
+      "revision": 0,
       "overrides": {
         "1": [
           "763838479293349899",
@@ -4219,6 +4453,7 @@
           "filters": []
         }
       ],
+      "revision": 0,
       "overrides": {
         "1": [
           "651595875897835540",
@@ -4487,6 +4722,7 @@
           "filters": []
         }
       ],
+      "revision": 0,
       "overrides": {}
     }
   },
@@ -4507,7 +4743,6 @@
       }
     ],
     "hash": 1318029053,
-    "revision": 3,
     "rollout": {
       "populations": [
         {
@@ -4551,6 +4786,7 @@
           ]
         }
       ],
+      "revision": 3,
       "overrides": {
         "1": [
           "1034492236483792958",
@@ -4590,7 +4826,6 @@
       }
     ],
     "hash": 805661295,
-    "revision": 1,
     "rollout": {
       "populations": [
         {
@@ -4634,6 +4869,7 @@
           ]
         }
       ],
+      "revision": 1,
       "overrides": {
         "1": [
           "816784679717044276",
@@ -4696,6 +4932,7 @@
           "filters": []
         }
       ],
+      "revision": 0,
       "overrides": {
         "1": [
           "816784679717044276",
@@ -4759,6 +4996,7 @@
           "filters": []
         }
       ],
+      "revision": 0,
       "overrides": {
         "1": [
           "876918412369088582",
@@ -4805,7 +5043,6 @@
       }
     ],
     "hash": 3362434932,
-    "revision": 1,
     "rollout": {
       "populations": [
         {
@@ -4829,6 +5066,7 @@
           ]
         }
       ],
+      "revision": 1,
       "overrides": {
         "1": [
           "651595875897835540",
@@ -4932,6 +5170,7 @@
           "filters": []
         }
       ],
+      "revision": 0,
       "overrides": {
         "1": [
           "651595875897835540"
@@ -5264,8 +5503,27 @@
           "filters": []
         }
       ],
+      "revision": 0,
       "overrides": {}
     }
+  },
+  {
+    "id": "2022-12_timestamp_tooltip",
+    "label": "Timestamp Tooltip",
+    "kind": "user",
+    "defaultConfig": [
+      "enabled"
+    ],
+    "treatments": [
+      {
+        "id": 1,
+        "label": "Enabled",
+        "config": [
+          "enabled"
+        ]
+      }
+    ],
+    "hash": 1978665225
   },
   {
     "kind": "user",
@@ -5355,12 +5613,31 @@
           ]
         }
       ],
+      "revision": 0,
       "overrides": {
         "1": [
           "882680660588904448"
         ]
       }
     }
+  },
+  {
+    "id": "2022-12_seasonal_gifting",
+    "label": "Seasonal Gifting",
+    "kind": "user",
+    "defaultConfig": [
+      "enabled"
+    ],
+    "treatments": [
+      {
+        "id": 1,
+        "label": "Enabled",
+        "config": [
+          "enabled"
+        ]
+      }
+    ],
+    "hash": 184775741
   },
   {
     "kind": "user",
@@ -5458,6 +5735,7 @@
           ]
         }
       ],
+      "revision": 0,
       "overrides": {
         "1": [
           "1078807279979221032",
@@ -5676,6 +5954,7 @@
           "filters": []
         }
       ],
+      "revision": 0,
       "overrides": {}
     }
   },
@@ -5748,6 +6027,7 @@
           "filters": []
         }
       ],
+      "revision": 0,
       "overrides": {
         "1": [
           "799349358776549378",
@@ -5889,6 +6169,7 @@
           "filters": []
         }
       ],
+      "revision": 0,
       "overrides": {}
     }
   },
@@ -5943,6 +6224,7 @@
           ]
         }
       ],
+      "revision": 0,
       "overrides": {
         "2": [
           "132251458665054209"
@@ -6002,6 +6284,7 @@
           "filters": []
         }
       ],
+      "revision": 0,
       "overrides": {}
     }
   },
@@ -6063,6 +6346,7 @@
           "filters": []
         }
       ],
+      "revision": 0,
       "overrides": {
         "1": [
           "651595875897835540"
@@ -6352,7 +6636,6 @@
       }
     ],
     "hash": 4030301365,
-    "revision": 1,
     "rollout": {
       "populations": [
         {
@@ -6381,6 +6664,7 @@
           "filters": []
         }
       ],
+      "revision": 1,
       "overrides": {
         "1": [
           "882680660588904448",
@@ -6655,6 +6939,7 @@
           "filters": []
         }
       ],
+      "revision": 0,
       "overrides": {
         "1": [
           "651595875897835540",
