@@ -33,7 +33,7 @@
   "forks_count": 1269,
   "archived": false,
   "disabled": false,
-  "open_issues_count": 181,
+  "open_issues_count": 182,
   "license": {
     "key": "other",
     "name": "Other",
@@ -52,7 +52,7 @@
   ],
   "visibility": "public",
   "forks": 1269,
-  "open_issues": 181,
+  "open_issues": 182,
   "watchers": 5383,
   "default_branch": "main",
   "permissions": {
