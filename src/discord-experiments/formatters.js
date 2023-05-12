@@ -2,9 +2,13 @@ const andList = new Intl.ListFormat();
 const orList = new Intl.ListFormat("en", { type: "disjunction" });
 
 export const experimentNameFormat = (experiment) => {
-  return experiment.label
-    ? `${experiment.label} - ${experiment.id} (${experiment.hash})`
-    : `experiment.id} (${experiment.hash})`;
+  if (!experiment.data.label && !experiment.data.id) {
+    return `unknown (${experiment.data.hash})`;
+  }
+
+  return experiment.data.label
+    ? `${experiment.data.label} - ${experiment.data.id} (${experiment.data.hash})`
+    : `${experiment.data.id} (${experiment.hash})`;
 };
 
 export const nameFormat = (name) => {
@@ -41,16 +45,6 @@ export const populationsFormat = (populations) => {
 
     format += "\n";
   }
-
-  return format;
-};
-
-export const treatmentsFormat = (treatments) => {
-  let format = "";
-
-  format = treatments
-    .map((t) => `**Treatment ${t.id}**: ${t.label}`)
-    .join("\n");
 
   return format;
 };

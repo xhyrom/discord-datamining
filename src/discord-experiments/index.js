@@ -16,7 +16,9 @@ const [webhookId, webhookToken] = new URL(process.env.DISCORD_WEBHOOK).pathname
 
 info("Fetching experiments");
 const experiments = await (
-  await fetch("https://api.discord-experiments.xhyrom.dev/")
+  await fetch(
+    "https://api.discord-experiments.xhyrom.dev/v2/experiments?also_with_unknown_ids=true"
+  )
 ).json();
 
 await watcher(

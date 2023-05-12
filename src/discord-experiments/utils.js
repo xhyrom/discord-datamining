@@ -6,7 +6,6 @@ import { send } from "./webhooks.js";
 import {
   experimentNameFormat,
   populationsFormat,
-  treatmentsFormat,
   overridesFormat,
 } from "./formatters.js";
 import { getObjectDiff } from "./diff.js";
@@ -27,15 +26,15 @@ export const watcher = (
   if (deepEqual(oldExperiments, currentExperiments)) return;
 
   const addedExperiments = currentExperiments.filter(
-    (e) => !oldExperiments.some((o) => o.hash === e.hash)
+    (e) => !oldExperiments.some((o) => o.data.hash === e.data.hash)
   );
 
   const removedExperiments = oldExperiments.filter(
-    (e) => !currentExperiments.some((o) => o.hash === e.hash)
+    (e) => !currentExperiments.some((o) => o.data.hash === e.data.hash)
   );
 
   const changedExperiments = currentExperiments.filter((e) =>
-    oldExperiments.some((o) => o.hash === e.hash && !deepEqual(o, e))
+    oldExperiments.some((o) => o.data.hash === e.data.hash && !deepEqual(o, e))
   );
 
   console.log(addedExperiments, removedExperiments, changedExperiments);
@@ -84,11 +83,11 @@ export const watcher = (
 
     for (const experiment of changedExperiments) {
       const oldExperiment = oldExperiments.find(
-        (e) => e.hash === experiment.hash
+        (e) => e.data.hash === experiment.data.hash
       );
 
       const currentExperiment = currentExperiments.find(
-        (e) => e.hash === experiment.hash
+        (e) => e.data.hash === experiment.data.hash
       );
 
       send(
@@ -136,12 +135,12 @@ const defaultEmbed = (experiment, action, diff = "") => {
     },
     {
       name: "Kind",
-      value: experiment.kind ?? "guild", // because old way of doing things
+      value: experiment.data.kind ?? "guild", // because old way of doing things
       inline: true,
     },
     {
       name: "Treatments",
-      value: treatmentsFormat(experiment.treatments ?? []) || "None",
+      value: experiment.data.description?.join?.("\n") || "None",
       inline: false,
     },
     {
