@@ -124360,12 +124360,15 @@ input::-webkit-outer-spin-button {
 }
 
 .idRow-3iavmQ:hover {
-    text-decoration: underline
+    text-decoration: underline;
+    -webkit-text-decoration-color: var(--white);
+    text-decoration-color: var(--white)
 }
 
 .icon-3Ez8XO {
     margin-left: 2px;
-    height: 12px
+    height: 12px;
+    color: var(--white)
 }
 
 .noMargin-14VdLo {
@@ -155535,4 +155538,4 @@ html .invoiceCancelRow-dVOR64 {
     flex-direction: column
 }
 
-/*# sourceMappingURL=40532.d9006788d871a1ca200e.css.map*/
+/*# sourceMappingURL=40532.71cf5368fb4e2e5bdc08.css.map*/
