@@ -2486,6 +2486,44 @@
   {
     "data": {
       "kind": "user",
+      "id": "2022-12_forum_activity",
+      "label": "Increased activity view for Forums, per user",
+      "description": [
+        "Control",
+        "Treatment 1: Enabled"
+      ],
+      "hash": 828081447,
+      "buckets": [
+        0,
+        1
+      ],
+      "config_keys": [
+        "enabled"
+      ]
+    }
+  },
+  {
+    "data": {
+      "kind": "guild",
+      "id": "2023-01_forums_activity_2_guild",
+      "label": "Increased activity view for Forums, per guild",
+      "description": [
+        "Control",
+        "Treatment 1: Enabled"
+      ],
+      "hash": 4081692393,
+      "buckets": [
+        0,
+        1
+      ],
+      "config_keys": [
+        "enabled"
+      ]
+    }
+  },
+  {
+    "data": {
+      "kind": "user",
       "id": "2023-03_pomelo_compatible_ux",
       "label": "Pomelo Compatibility",
       "description": [
@@ -2674,44 +2712,6 @@
         "Treatment 1: Allow sending @silent messages"
       ],
       "hash": 183688925,
-      "buckets": [
-        0,
-        1
-      ],
-      "config_keys": [
-        "enabled"
-      ]
-    }
-  },
-  {
-    "data": {
-      "kind": "user",
-      "id": "2022-12_forum_activity",
-      "label": "Increased activity view for Forums, per user",
-      "description": [
-        "Control",
-        "Treatment 1: Enabled"
-      ],
-      "hash": 828081447,
-      "buckets": [
-        0,
-        1
-      ],
-      "config_keys": [
-        "enabled"
-      ]
-    }
-  },
-  {
-    "data": {
-      "kind": "guild",
-      "id": "2023-01_forums_activity_2_guild",
-      "label": "Increased activity view for Forums, per guild",
-      "description": [
-        "Control",
-        "Treatment 1: Enabled"
-      ],
-      "hash": 4081692393,
       "buckets": [
         0,
         1
@@ -4007,44 +4007,6 @@
         "Treatment 1: On"
       ],
       "hash": 1045730203,
-      "buckets": [
-        0,
-        1
-      ],
-      "config_keys": [
-        "enabled"
-      ]
-    }
-  },
-  {
-    "data": {
-      "kind": "user",
-      "id": "2023-04_track_changes_true",
-      "label": "track changes true",
-      "description": [
-        "Control",
-        "Treatment 1: track changes true"
-      ],
-      "hash": 2193643700,
-      "buckets": [
-        0,
-        1
-      ],
-      "config_keys": [
-        "enabled"
-      ]
-    }
-  },
-  {
-    "data": {
-      "kind": "user",
-      "id": "2023-04_track_changes_false",
-      "label": "track changes false",
-      "description": [
-        "Control",
-        "Treatment 1: track changes false"
-      ],
-      "hash": 3588538147,
       "buckets": [
         0,
         1
@@ -5370,6 +5332,50 @@
         "enabled",
         "left"
       ]
+    }
+  },
+  {
+    "data": {
+      "kind": "guild",
+      "id": "2023-02_voice_channel_statuses",
+      "label": "Voice Channel Status Guild Experiment",
+      "description": [
+        "Control",
+        "Treatment 1: Enable viewing and setting voice channel statuses for guild"
+      ],
+      "hash": 2809294122,
+      "buckets": [
+        0,
+        1
+      ],
+      "config_keys": [
+        "enabled"
+      ]
+    },
+    "rollout": {
+      "populations": [
+        {
+          "buckets": {
+            "none": {
+              "rollout": [
+                {
+                  "start": 0,
+                  "end": 10000
+                }
+              ]
+            }
+          },
+          "filters": []
+        }
+      ],
+      "revision": 0,
+      "overrides": {
+        "1": [
+          "890883112500854804",
+          "887867262839705651",
+          "1095810146761973830"
+        ]
+      }
     }
   },
   {
@@ -8223,37 +8229,6 @@
       ],
       "revision": 0,
       "overrides": {}
-    }
-  },
-  {
-    "data": {
-      "kind": "guild",
-      "hash": 2809294122
-    },
-    "rollout": {
-      "populations": [
-        {
-          "buckets": {
-            "none": {
-              "rollout": [
-                {
-                  "start": 0,
-                  "end": 10000
-                }
-              ]
-            }
-          },
-          "filters": []
-        }
-      ],
-      "revision": 0,
-      "overrides": {
-        "1": [
-          "890883112500854804",
-          "887867262839705651",
-          "1095810146761973830"
-        ]
-      }
     }
   },
   {
