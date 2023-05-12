@@ -133602,26 +133602,76 @@ html .invoiceCancelRow-3s2UuC {
 }
 
 .kitBashContainer-7nmYyp {
-    margin-top: 24px;
+    margin-top: 64px;
     width: 100%;
+    aspect-ratio: 874/355;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     gap: 24px;
-    max-height: 220px;
-    -webkit-box-pack: justify;
-    -ms-flex-pack: justify;
-    justify-content: space-between;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center
 }
 
 .kitBash-34gcW7 {
-    -webkit-box-flex: 0;
-    -ms-flex: 0 1 auto;
-    flex: 0 1 auto;
-    min-width: 0
+    width: 100%;
+    height: auto
+}
+
+.kitBashAnimation-1cFnOv>* {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+    -webkit-transition: all 5s;
+    transition: all 5s
+}
+
+.kitBashAnimation-1cFnOv>:first-child {
+    -webkit-transition-delay: 1s;
+    transition-delay: 1s
+}
+
+.kitBashAnimation-1cFnOv>:nth-child(2) {
+    -webkit-transition-delay: 2s;
+    transition-delay: 2s
+}
+
+.kitBashAnimation-1cFnOv>:nth-child(3) {
+    -webkit-transition-delay: 3s;
+    transition-delay: 3s
+}
+
+.kitBashAnimation-1cFnOv>:nth-child(4) {
+    -webkit-transition-delay: 4s;
+    transition-delay: 4s
+}
+
+.kitBashAnimation-1cFnOv>:nth-child(5) {
+    -webkit-transition-delay: 5s;
+    transition-delay: 5s
+}
+
+.kitBashAnimation-1cFnOv>:nth-child(6) {
+    -webkit-transition-delay: 6s;
+    transition-delay: 6s
+}
+
+.kitBashAnimation-1cFnOv>:nth-child(7) {
+    -webkit-transition-delay: 7s;
+    transition-delay: 7s
+}
+
+.kitBashAnimation-1cFnOv>:nth-child(8) {
+    -webkit-transition-delay: 8s;
+    transition-delay: 8s
+}
+
+.kitBashAnimation-1cFnOv:hover>* {
+    -webkit-transform: translateY(-10px);
+    transform: translateY(-10px)
 }
 
 .container-lpf9y1 {
@@ -155472,4 +155522,4 @@ html .invoiceCancelRow-dVOR64 {
     flex-direction: column
 }
 
-/*# sourceMappingURL=40532.10b8b8e1e93ce0d7194e.css.map*/
+/*# sourceMappingURL=40532.d834724f857d6405e6c5.css.map*/
