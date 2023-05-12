@@ -1925,6 +1925,44 @@
   {
     "data": {
       "kind": "user",
+      "id": "2022-11_notification_redesign",
+      "label": "NotificationRedesign",
+      "description": [
+        "Control",
+        "Treatment 1: Notification Redesign Enabled"
+      ],
+      "hash": 1792467213,
+      "buckets": [
+        0,
+        1
+      ],
+      "config_keys": [
+        "enabled"
+      ]
+    }
+  },
+  {
+    "data": {
+      "kind": "user",
+      "id": "2023-04_notification_redesign_v2",
+      "label": "NotificationRedesignV2",
+      "description": [
+        "Control",
+        "Treatment 1: Notification Redesign V2 Enabled"
+      ],
+      "hash": 1347697298,
+      "buckets": [
+        0,
+        1
+      ],
+      "config_keys": [
+        "enabled"
+      ]
+    }
+  },
+  {
+    "data": {
+      "kind": "user",
       "id": "2022-07_channel_highlights",
       "label": "Channel Highlights",
       "description": [
@@ -5133,44 +5171,6 @@
           "1070109297268248639"
         ]
       }
-    }
-  },
-  {
-    "data": {
-      "kind": "user",
-      "id": "2022-11_notification_redesign",
-      "label": "NotificationRedesign",
-      "description": [
-        "Control",
-        "Treatment 1: Notification Redesign Enabled"
-      ],
-      "hash": 1792467213,
-      "buckets": [
-        0,
-        1
-      ],
-      "config_keys": [
-        "enabled"
-      ]
-    }
-  },
-  {
-    "data": {
-      "kind": "user",
-      "id": "2023-04_notification_redesign_v2",
-      "label": "NotificationRedesignV2",
-      "description": [
-        "Control",
-        "Treatment 1: Notification Redesign V2 Enabled"
-      ],
-      "hash": 1347697298,
-      "buckets": [
-        0,
-        1
-      ],
-      "config_keys": [
-        "enabled"
-      ]
     }
   },
   {
