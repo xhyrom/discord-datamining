@@ -133183,6 +133183,12 @@ html .invoiceCancelRow-3s2UuC {
     padding: 0 16px
 }
 
+.birthdayExplanationNitroIcon-1wRcn3 {
+    -webkit-transform: translateY(7px);
+    transform: translateY(7px);
+    margin-top: -10px
+}
+
 .birthdayBalloonsContainer-2_cxx4 {
     -webkit-box-flex: 0;
     -ms-flex: 0 0 103px;
@@ -133502,7 +133508,14 @@ html .invoiceCancelRow-3s2UuC {
     -webkit-box-direction: normal;
     -ms-flex-direction: column;
     flex-direction: column;
-    cursor: pointer
+    cursor: pointer;
+    position: relative
+}
+
+.celebrateNitroIcon-2yBtFa {
+    position: absolute;
+    top: 7px;
+    left: 4px
 }
 
 .celebrateCardHeader-d3NG-H {
@@ -155522,4 +155535,4 @@ html .invoiceCancelRow-dVOR64 {
     flex-direction: column
 }
 
-/*# sourceMappingURL=40532.d834724f857d6405e6c5.css.map*/
+/*# sourceMappingURL=40532.d9006788d871a1ca200e.css.map*/
