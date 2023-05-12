@@ -22366,6 +22366,8 @@ html.disable-forced-colors * {
     --background-secondary-alt: var(--primary-660);
     --background-tertiary: var(--primary-700);
     --black: var(--black-500);
+    --border-strong: hsl(var(--white-500-hsl)/0.16);
+    --border-subtle: hsl(var(--white-500-hsl)/0.08);
     --bug-reporter-modal-submitting-background: hsl(var(--primary-800-hsl)/0.6);
     --button-danger-background: var(--red-430);
     --button-danger-background-active: var(--red-530);
@@ -22435,6 +22437,8 @@ html.disable-forced-colors * {
     --deprecated-text-input-border-hover: var(--primary-900);
     --deprecated-text-input-prefix: var(--primary-200);
     --display-banner-overflow-background: hsl(var(--primary-700-hsl)/0.5);
+    --divider-strong: hsl(var(--white-500-hsl)/0.16);
+    --divider-subtle: hsl(var(--white-500-hsl)/0.08);
     --focus-primary: var(--blue-345);
     --forum-post-extra-media-count-container-background: hsl(var(--primary-660-hsl)/0.8);
     --forum-post-tag-background: hsl(var(--primary-660-hsl)/0.9);
@@ -22540,6 +22544,8 @@ html.disable-forced-colors * {
     --background-secondary: var(--primary-130);
     --background-secondary-alt: var(--primary-160);
     --background-tertiary: var(--primary-200);
+    --border-strong: hsl(var(--black-500-hsl)/0.16);
+    --border-subtle: hsl(var(--black-500-hsl)/0.08);
     --bug-reporter-modal-submitting-background: hsl(var(--white-500-hsl)/0.6);
     --button-danger-background: var(--red-430);
     --button-danger-background-active: var(--red-530);
@@ -22609,6 +22615,8 @@ html.disable-forced-colors * {
     --deprecated-text-input-border-hover: var(--primary-300);
     --deprecated-text-input-prefix: var(--primary-300);
     --display-banner-overflow-background: hsl(var(--white-200-hsl)/0.5);
+    --divider-strong: hsl(var(--black-500-hsl)/0.16);
+    --divider-subtle: hsl(var(--black-500-hsl)/0.08);
     --forum-post-extra-media-count-container-background: hsl(var(--primary-160-hsl)/0.8);
     --forum-post-tag-background: hsl(var(--primary-160-hsl)/0.9);
     --header-primary: var(--primary-860);
@@ -22719,6 +22727,8 @@ html.disable-forced-colors * {
     --background-secondary: var(--primary-830);
     --background-secondary-alt: var(--primary-800);
     --background-tertiary: var(--primary-860);
+    --border-strong: hsl(var(--white-500-hsl)/0.16);
+    --border-subtle: hsl(var(--white-500-hsl)/0.08);
     --bug-reporter-modal-submitting-background: hsl(var(--primary-800-hsl)/0.6);
     --button-danger-background: var(--red-430);
     --button-danger-background-active: var(--red-530);
@@ -22788,6 +22798,8 @@ html.disable-forced-colors * {
     --deprecated-text-input-border-hover: var(--primary-900);
     --deprecated-text-input-prefix: var(--primary-200);
     --display-banner-overflow-background: hsl(var(--primary-700-hsl)/0.5);
+    --divider-strong: hsl(var(--white-500-hsl)/0.16);
+    --divider-subtle: hsl(var(--white-500-hsl)/0.08);
     --forum-post-extra-media-count-container-background: hsl(var(--primary-660-hsl)/0.8);
     --forum-post-tag-background: hsl(var(--primary-660-hsl)/0.9);
     --header-primary: var(--primary-130);
@@ -155460,4 +155472,4 @@ html .invoiceCancelRow-dVOR64 {
     flex-direction: column
 }
 
-/*# sourceMappingURL=40532.fea44f4d7508b546bb8e.css.map*/
+/*# sourceMappingURL=40532.10b8b8e1e93ce0d7194e.css.map*/
