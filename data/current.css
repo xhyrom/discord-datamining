@@ -142319,7 +142319,7 @@ html .invoiceCancelRow-3s2UuC {
     margin-top: 20px
 }
 
-.pauseInvitesContainer-1NY0se {
+.pauseContainer-36E8UF {
     padding: 12px;
     border: 1px solid var(--background-accent);
     border-radius: 4px;
@@ -142332,14 +142332,14 @@ html .invoiceCancelRow-3s2UuC {
     gap: 8px
 }
 
-.pauseInvitesContainer-1NY0se,
-.pauseInvitesText-1ZXC37 {
+.pauseContainer-36E8UF,
+.pauseText-3osYOy {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex
 }
 
-.pauseInvitesText-1ZXC37 {
+.pauseText-3osYOy {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
     -ms-flex-direction: column;
@@ -155538,4 +155538,4 @@ html .invoiceCancelRow-dVOR64 {
     flex-direction: column
 }
 
-/*# sourceMappingURL=40532.3b69eb4121d62ce43b3e.css.map*/
+/*# sourceMappingURL=40532.4348cd9508b89fdc75aa.css.map*/
