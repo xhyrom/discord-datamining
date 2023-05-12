@@ -74184,17 +74184,48 @@ strong {
 
 .content-1gYQeQ {
     position: relative;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
     padding: 0 8px;
     margin-left: 8px;
-    border-radius: 4px;
+    border-radius: var(--radius-xs);
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
     -ms-flex-direction: row;
     flex-direction: row;
+    -webkit-box-align: center;
     -ms-flex-align: center;
+    align-items: center;
     overflow: hidden
 }
 
 .content-1gYQeQ,
+.topicDiv-2v0WRA {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex
+}
+
+.topicDiv-2v0WRA {
+    margin-top: 2px
+}
+
+.topicDiv-2v0WRA .topicText-19tO_o {
+    color: var(--channels-default);
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis
+}
+
+.topicDiv-2v0WRA .icon-2W8DHg {
+    display: inline;
+    padding-bottom: 0
+}
+
 .mainContent-20q_Hp {
+    -webkit-box-flex: 1;
+    -ms-flex: 1 1 auto;
+    flex: 1 1 auto;
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
     display: -webkit-box;
@@ -74202,17 +74233,11 @@ strong {
     display: flex;
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
-    -webkit-box-align: center;
-    align-items: center
-}
-
-.mainContent-20q_Hp {
-    -webkit-box-flex: 1;
-    -ms-flex: 1 1 auto;
-    flex: 1 1 auto;
     -ms-flex-direction: row;
     flex-direction: row;
+    -webkit-box-align: center;
     -ms-flex-align: center;
+    align-items: center;
     min-width: 0;
     padding: 6px 0;
     cursor: pointer
@@ -74249,7 +74274,7 @@ strong {
     position: absolute;
     height: 8px;
     width: 4px;
-    border-radius: 0 4px 4px 0;
+    border-radius: 0 var(--radius-xs) var(--radius-xs) 0;
     top: 50%;
     left: 0;
     margin-top: -4px
@@ -74343,7 +74368,7 @@ strong {
 
 .favoriteSuggestion-2WkWVx {
     border: 2px dashed var(--background-modifier-accent);
-    border-radius: 12px;
+    border-radius: var(--radius-md);
     -webkit-box-sizing: border-box;
     box-sizing: border-box
 }
@@ -74432,7 +74457,7 @@ strong {
     -webkit-box-pack: center;
     -ms-flex-pack: center;
     justify-content: center;
-    border-radius: 9999px
+    border-radius: var(--radius-round)
 }
 
 .channelEmojiLeftOfIcon-2qUYhE {
@@ -74464,7 +74489,7 @@ strong {
 .ripple-2bsDhb {
     -webkit-transform: scale(0);
     transform: scale(0);
-    border-radius: 100%;
+    border-radius: var(--radius-round);
     position: absolute;
     -webkit-animation-name: ripple-2bsDhb;
     animation-name: ripple-2bsDhb;
@@ -88907,6 +88932,52 @@ strong {
 
 .participants-2w35jD {
     margin-left: 16px
+}
+
+.clickable-I5EKCW {
+    color: var(--channel-icon);
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center
+}
+
+.clickable-I5EKCW:hover {
+    color: var(--interactive-hover);
+    cursor: pointer
+}
+
+.clickable-I5EKCW .newBadge-ZPgRVg {
+    background-color: var(--brand-experiment);
+    font-size: 12px;
+    line-height: 16px;
+    padding: 0 6px;
+    margin-right: 8px
+}
+
+.clickable-I5EKCW .pencilIcon-3iF9Xx {
+    margin-left: 8px
+}
+
+.clickable-I5EKCW .leftStar-24m36V {
+    color: pink;
+    width: 14px;
+    height: 14px;
+    margin-left: 24px;
+    bottom: -5px;
+    right: 2px;
+    position: relative
+}
+
+.clickable-I5EKCW .rightStar-3OjQIR {
+    color: var(--yellow-300);
+    height: 10px;
+    width: 10px;
+    top: -8px;
+    right: -1px;
+    position: relative
 }
 
 .playingText-16QsYy {
@@ -139935,6 +140006,66 @@ html .invoiceCancelRow-3s2UuC {
     justify-content: center
 }
 
+.modalHeader-25uwMc {
+    display: block;
+    text-align: center
+}
+
+.closeButton-2LcRjO {
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    cursor: pointer;
+    color: var(--interactive-normal)
+}
+
+.headerImage-2uvMYP {
+    margin: 0 auto;
+    width: 300px;
+    height: 200px;
+    background-repeat: no-repeat;
+    background-image: url(/assets/8cd836bda74106c22c8bbe0d94b4c47b.svg)
+}
+
+.title-KciIcJ {
+    margin-bottom: 8px
+}
+
+.modalContent-3D_MY9 {
+    margin-bottom: 32px
+}
+
+.inputContainer-2W23Lj {
+    position: relative
+}
+
+.emojiButtonContainer-3QMxO2 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    position: absolute;
+    left: 0;
+    top: 0;
+    margin: 0 10px;
+    height: 100%
+}
+
+.emojiButton-2JQMs2.fullOpacity-1NRUzl {
+    opacity: 1
+}
+
+.input-2hZrmW {
+    padding-left: 42px;
+    padding-right: 36px
+}
+
+.error-KViqha {
+    margin-top: 8px
+}
+
 .container-NZfIjU,
 .waveformCanvas-16WrKK {
     width: 100%;
@@ -155538,4 +155669,4 @@ html .invoiceCancelRow-dVOR64 {
     flex-direction: column
 }
 
-/*# sourceMappingURL=40532.4348cd9508b89fdc75aa.css.map*/
+/*# sourceMappingURL=40532.3b4fbee695f950849c19.css.map*/
