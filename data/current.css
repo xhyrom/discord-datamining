@@ -16519,7 +16519,9 @@ html.disable-forced-colors * {
     margin-right: 3px;
     margin-bottom: .2rem;
     width: 1.05rem;
-    height: 1.05rem
+    height: 1.05rem;
+    line-height: 1.05rem !important;
+    font-size: .5rem !important
 }
 
 .name-VhpmFW {
@@ -155727,4 +155729,4 @@ html .invoiceCancelRow-dVOR64 {
     flex-direction: column
 }
 
-/*# sourceMappingURL=40532.ab0f5cf3a6e9d5de6a5c.css.map*/
+/*# sourceMappingURL=40532.2661b9a00910ce528c79.css.map*/
