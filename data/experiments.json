@@ -5631,7 +5631,8 @@
             },
             {
               "type": "guild_member_count_range",
-              "min_count": 5000
+              "min_count": 5000,
+              "max_count": null
             }
           ]
         },
@@ -6748,7 +6749,8 @@
             },
             {
               "type": "guild_member_count_range",
-              "min_count": 500
+              "min_count": 500,
+              "max_count": null
             }
           ]
         }
@@ -7461,7 +7463,8 @@
           "filters": [
             {
               "type": "guild_member_count_range",
-              "min_count": 200
+              "min_count": 200,
+              "max_count": null
             }
           ]
         }
@@ -7813,7 +7816,8 @@
             },
             {
               "type": "guild_member_count_range",
-              "min_count": 1000
+              "min_count": 1000,
+              "max_count": null
             },
             {
               "type": "guild_in_range_by_hash",
@@ -7842,7 +7846,8 @@
             },
             {
               "type": "guild_member_count_range",
-              "min_count": 1000
+              "min_count": 1000,
+              "max_count": null
             }
           ]
         },
