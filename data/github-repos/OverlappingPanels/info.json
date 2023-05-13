@@ -33,7 +33,7 @@
   "forks_count": 27,
   "archived": false,
   "disabled": false,
-  "open_issues_count": 10,
+  "open_issues_count": 9,
   "license": {
     "key": "apache-2.0",
     "name": "Apache License 2.0",
@@ -47,7 +47,7 @@
   "topics": [],
   "visibility": "public",
   "forks": 27,
-  "open_issues": 10,
+  "open_issues": 9,
   "watchers": 401,
   "default_branch": "master",
   "permissions": {
