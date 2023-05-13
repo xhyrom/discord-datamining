@@ -2872,7 +2872,7 @@
           },
           "filters": [
             {
-              "type": "guild_member_count",
+              "type": "guild_member_count_range",
               "min_count": 0,
               "max_count": 100
             }
@@ -2899,7 +2899,7 @@
           },
           "filters": [
             {
-              "type": "guild_member_count",
+              "type": "guild_member_count_range",
               "min_count": 101,
               "max_count": 200
             }
@@ -4661,7 +4661,7 @@
           },
           "filters": [
             {
-              "type": "guild_member_count",
+              "type": "guild_member_count_range",
               "min_count": null,
               "max_count": 300
             },
@@ -4685,7 +4685,7 @@
           },
           "filters": [
             {
-              "type": "guild_member_count",
+              "type": "guild_member_count_range",
               "min_count": null,
               "max_count": 300
             }
@@ -5630,7 +5630,7 @@
               ]
             },
             {
-              "type": "guild_member_count",
+              "type": "guild_member_count_range",
               "min_count": 5000
             }
           ]
@@ -6747,7 +6747,7 @@
               ]
             },
             {
-              "type": "guild_member_count",
+              "type": "guild_member_count_range",
               "min_count": 500
             }
           ]
@@ -7402,7 +7402,7 @@
               ]
             },
             {
-              "type": "guild_member_count",
+              "type": "guild_member_count_range",
               "min_count": 1,
               "max_count": 26
             }
@@ -7441,7 +7441,7 @@
           },
           "filters": [
             {
-              "type": "guild_member_count",
+              "type": "guild_member_count_range",
               "min_count": 1,
               "max_count": 200
             }
@@ -7460,7 +7460,7 @@
           },
           "filters": [
             {
-              "type": "guild_member_count",
+              "type": "guild_member_count_range",
               "min_count": 200
             }
           ]
@@ -7812,7 +7812,7 @@
               ]
             },
             {
-              "type": "guild_member_count",
+              "type": "guild_member_count_range",
               "min_count": 1000
             },
             {
@@ -7841,7 +7841,7 @@
               ]
             },
             {
-              "type": "guild_member_count",
+              "type": "guild_member_count_range",
               "min_count": 1000
             }
           ]
@@ -8199,7 +8199,7 @@
               "has_vanity": false
             },
             {
-              "type": "guild_member_count",
+              "type": "guild_member_count_range",
               "min_count": 1,
               "max_count": 50
             }
