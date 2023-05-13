@@ -3040,27 +3040,6 @@
   {
     "data": {
       "kind": "user",
-      "id": "2022-12_avatar_decorations",
-      "label": "Avatar Decorations",
-      "description": [
-        "Control",
-        "Treatment 1: Allow use of avatar decorations",
-        "Treatment 100: Debug"
-      ],
-      "hash": 2571891116,
-      "buckets": [
-        0,
-        1,
-        100
-      ],
-      "config_keys": [
-        "enabled"
-      ]
-    }
-  },
-  {
-    "data": {
-      "kind": "user",
       "id": "2023-05_avatar_decorations",
       "label": "Avatar Decorations Birthday 2023",
       "description": [
