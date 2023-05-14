@@ -136,7 +136,8 @@
           "1047953830979047455",
           "84764735832068096"
         ]
-      }
+      },
+      "overrides_formatted": []
     }
   },
   {
@@ -212,7 +213,29 @@
         }
       ],
       "revision": 0,
-      "overrides": {}
+      "overrides": {},
+      "overrides_formatted": [
+        {
+          "buckets": {
+            "1": {
+              "rollout": [
+                {
+                  "start": 0,
+                  "end": 10000
+                }
+              ]
+            }
+          },
+          "filters": [
+            {
+              "type": "guild_has_feature",
+              "features": [
+                "INTERNAL_EMPLOYEE_ONLY"
+              ]
+            }
+          ]
+        }
+      ]
     }
   },
   {
@@ -331,7 +354,29 @@
         }
       ],
       "revision": 0,
-      "overrides": {}
+      "overrides": {},
+      "overrides_formatted": [
+        {
+          "buckets": {
+            "1": {
+              "rollout": [
+                {
+                  "start": 0,
+                  "end": 10000
+                }
+              ]
+            }
+          },
+          "filters": [
+            {
+              "type": "guild_has_feature",
+              "features": [
+                "GUILD_ROLE_SUBSCRIPTIONS"
+              ]
+            }
+          ]
+        }
+      ]
     }
   },
   {
@@ -395,7 +440,8 @@
           "966419039977111582",
           "839303183536750622"
         ]
-      }
+      },
+      "overrides_formatted": []
     }
   },
   {
@@ -452,7 +498,29 @@
         }
       ],
       "revision": 0,
-      "overrides": {}
+      "overrides": {},
+      "overrides_formatted": [
+        {
+          "buckets": {
+            "1": {
+              "rollout": [
+                {
+                  "start": 0,
+                  "end": 10000
+                }
+              ]
+            }
+          },
+          "filters": [
+            {
+              "type": "guild_has_feature",
+              "features": [
+                "GUILD_ROLE_SUBSCRIPTION_TRIALS"
+              ]
+            }
+          ]
+        }
+      ]
     }
   },
   {
@@ -505,7 +573,8 @@
           "930534056200929290",
           "976593171834351728"
         ]
-      }
+      },
+      "overrides_formatted": []
     }
   },
   {
@@ -547,7 +616,8 @@
         "1": [
           "908114392263049277"
         ]
-      }
+      },
+      "overrides_formatted": []
     }
   },
   {
@@ -585,7 +655,8 @@
         }
       ],
       "revision": 0,
-      "overrides": {}
+      "overrides": {},
+      "overrides_formatted": []
     }
   },
   {
@@ -656,7 +727,8 @@
           "488444879836413975",
           "756644176610721842"
         ]
-      }
+      },
+      "overrides_formatted": []
     }
   },
   {
@@ -736,7 +808,8 @@
           "936663832070340678",
           "816393875027394642"
         ]
-      }
+      },
+      "overrides_formatted": []
     }
   },
   {
@@ -793,7 +866,8 @@
         }
       ],
       "revision": 0,
-      "overrides": {}
+      "overrides": {},
+      "overrides_formatted": []
     }
   },
   {
@@ -884,7 +958,8 @@
           "212435931766980609",
           "725341600670023700"
         ]
-      }
+      },
+      "overrides_formatted": []
     }
   },
   {
@@ -945,7 +1020,8 @@
         "1": [
           "1042521715630166056"
         ]
-      }
+      },
+      "overrides_formatted": []
     }
   },
   {
@@ -1002,7 +1078,49 @@
         }
       ],
       "revision": 0,
-      "overrides": {}
+      "overrides": {},
+      "overrides_formatted": [
+        {
+          "buckets": {
+            "1": {
+              "rollout": [
+                {
+                  "start": 0,
+                  "end": 10000
+                }
+              ]
+            }
+          },
+          "filters": [
+            {
+              "type": "guild_ids",
+              "ids": [
+                "321410260176732160",
+                "884458417467559936",
+                "384811165949231104",
+                "464894153193684993",
+                "524552788932558848",
+                "148606162810568704",
+                "603970300668805120",
+                "522477306787397642",
+                "187450744427773963",
+                "422460360084291596",
+                "808241932919767050",
+                "786557653924708373",
+                "1075932456198352918",
+                "1079876496493121558",
+                "1011482947343372319",
+                "1080899969243943072",
+                "679875946597056683",
+                "692412843370348615",
+                "1075056311651270736",
+                "942897714956472401",
+                "828370043867496531"
+              ]
+            }
+          ]
+        }
+      ]
     }
   },
   {
@@ -1573,7 +1691,8 @@
         }
       ],
       "revision": 2,
-      "overrides": {}
+      "overrides": {},
+      "overrides_formatted": []
     }
   },
   {
@@ -1620,7 +1739,8 @@
         "2": [
           "662267976984297473"
         ]
-      }
+      },
+      "overrides_formatted": []
     }
   },
   {
@@ -1822,7 +1942,8 @@
         }
       ],
       "revision": 0,
-      "overrides": {}
+      "overrides": {},
+      "overrides_formatted": []
     }
   },
   {
@@ -2118,7 +2239,8 @@
           "1073747669937299567",
           "401220874742661121"
         ]
-      }
+      },
+      "overrides_formatted": []
     }
   },
   {
@@ -2410,7 +2532,29 @@
         }
       ],
       "revision": 2,
-      "overrides": {}
+      "overrides": {},
+      "overrides_formatted": [
+        {
+          "buckets": {
+            "1": {
+              "rollout": [
+                {
+                  "start": 0,
+                  "end": 10000
+                }
+              ]
+            }
+          },
+          "filters": [
+            {
+              "type": "guild_ids",
+              "ids": [
+                "885418158788345897"
+              ]
+            }
+          ]
+        }
+      ]
     }
   },
   {
@@ -2518,7 +2662,69 @@
         }
       ],
       "revision": 2,
-      "overrides": {}
+      "overrides": {},
+      "overrides_formatted": [
+        {
+          "buckets": {
+            "1": {
+              "rollout": [
+                {
+                  "start": 0,
+                  "end": 10000
+                }
+              ]
+            }
+          },
+          "filters": [
+            {
+              "type": "guild_has_feature",
+              "features": [
+                "INTERNAL_EMPLOYEE_ONLY"
+              ]
+            }
+          ]
+        },
+        {
+          "buckets": {
+            "1": {
+              "rollout": [
+                {
+                  "start": 0,
+                  "end": 10000
+                }
+              ]
+            }
+          },
+          "filters": [
+            {
+              "type": "guild_has_feature",
+              "features": [
+                "TEXT_IN_STAGE_ENABLED"
+              ]
+            }
+          ]
+        },
+        {
+          "buckets": {
+            "1": {
+              "rollout": [
+                {
+                  "start": 0,
+                  "end": 10000
+                }
+              ]
+            }
+          },
+          "filters": [
+            {
+              "type": "guild_ids",
+              "ids": [
+                "885418158788345897"
+              ]
+            }
+          ]
+        }
+      ]
     }
   },
   {
@@ -2632,7 +2838,53 @@
         }
       ],
       "revision": 0,
-      "overrides": {}
+      "overrides": {},
+      "overrides_formatted": [
+        {
+          "buckets": {
+            "1": {
+              "rollout": [
+                {
+                  "start": 0,
+                  "end": 10000
+                }
+              ]
+            }
+          },
+          "filters": [
+            {
+              "type": "guild_has_feature",
+              "features": [
+                "MEMBER_VERIFICATION_MANUAL_APPROVAL"
+              ]
+            }
+          ]
+        },
+        {
+          "buckets": {
+            "1": {
+              "rollout": [
+                {
+                  "start": 0,
+                  "end": 10000
+                }
+              ]
+            }
+          },
+          "filters": [
+            {
+              "type": "guild_ids",
+              "ids": [
+                "991365865532575844",
+                "809846768074227723",
+                "809844301353320558",
+                "840296607785287763",
+                "651597514407018516"
+              ]
+            }
+          ]
+        }
+      ]
     }
   },
   {
@@ -2939,7 +3191,8 @@
         "4": [
           "938884225459957902"
         ]
-      }
+      },
+      "overrides_formatted": []
     }
   },
   {
@@ -3134,7 +3387,8 @@
         }
       ],
       "revision": 2,
-      "overrides": {}
+      "overrides": {},
+      "overrides_formatted": []
     }
   },
   {
@@ -3195,7 +3449,29 @@
         }
       ],
       "revision": 0,
-      "overrides": {}
+      "overrides": {},
+      "overrides_formatted": [
+        {
+          "buckets": {
+            "1": {
+              "rollout": [
+                {
+                  "start": 0,
+                  "end": 10000
+                }
+              ]
+            }
+          },
+          "filters": [
+            {
+              "type": "guild_ids",
+              "ids": [
+                "1103353437619503138"
+              ]
+            }
+          ]
+        }
+      ]
     }
   },
   {
@@ -3281,7 +3557,8 @@
         }
       ],
       "revision": 2,
-      "overrides": {}
+      "overrides": {},
+      "overrides_formatted": []
     }
   },
   {
@@ -3345,7 +3622,8 @@
         }
       ],
       "revision": 0,
-      "overrides": {}
+      "overrides": {},
+      "overrides_formatted": []
     }
   },
   {
@@ -3478,7 +3756,8 @@
         }
       ],
       "revision": 0,
-      "overrides": {}
+      "overrides": {},
+      "overrides_formatted": []
     }
   },
   {
@@ -3540,7 +3819,8 @@
           "169256939211980800",
           "987122927000494131"
         ]
-      }
+      },
+      "overrides_formatted": []
     }
   },
   {
@@ -3590,7 +3870,8 @@
           "1080899969243943072",
           "763838479293349899"
         ]
-      }
+      },
+      "overrides_formatted": []
     }
   },
   {
@@ -3916,7 +4197,8 @@
         "42": [
           "1080899969243943072"
         ]
-      }
+      },
+      "overrides_formatted": []
     }
   },
   {
@@ -4184,7 +4466,8 @@
           "1105953713673228358",
           "1105953777212739716"
         ]
-      }
+      },
+      "overrides_formatted": []
     }
   },
   {
@@ -4259,7 +4542,8 @@
           "816784679717044276",
           "991365865532575844"
         ]
-      }
+      },
+      "overrides_formatted": []
     }
   },
   {
@@ -4377,7 +4661,29 @@
         }
       ],
       "revision": 0,
-      "overrides": {}
+      "overrides": {},
+      "overrides_formatted": [
+        {
+          "buckets": {
+            "1": {
+              "rollout": [
+                {
+                  "start": 0,
+                  "end": 10000
+                }
+              ]
+            }
+          },
+          "filters": [
+            {
+              "type": "guild_ids",
+              "ids": [
+                "662267976984297473"
+              ]
+            }
+          ]
+        }
+      ]
     }
   },
   {
@@ -4547,7 +4853,8 @@
           "964645662866173972",
           "915336728707989534"
         ]
-      }
+      },
+      "overrides_formatted": []
     }
   },
   {
@@ -4725,7 +5032,39 @@
         }
       ],
       "revision": 0,
-      "overrides": {}
+      "overrides": {},
+      "overrides_formatted": [
+        {
+          "buckets": {
+            "1": {
+              "rollout": [
+                {
+                  "start": 0,
+                  "end": 10000
+                }
+              ]
+            }
+          },
+          "filters": [
+            {
+              "type": "guild_ids",
+              "ids": [
+                "907770923799674880",
+                "1044297931039199233",
+                "1044374869414002758",
+                "854800679930822667",
+                "763838479293349899",
+                "1044727347846320179",
+                "1044727370445234196",
+                "1044727553618882581",
+                "992093067530219550",
+                "956065520656986172",
+                "1044730151281369150"
+              ]
+            }
+          ]
+        }
+      ]
     }
   },
   {
@@ -4809,7 +5148,8 @@
           "1054565950759899176",
           "1039940765750665226"
         ]
-      }
+      },
+      "overrides_formatted": []
     }
   },
   {
@@ -4880,7 +5220,8 @@
           "876918412369088582",
           "1039940765750665226"
         ]
-      }
+      },
+      "overrides_formatted": []
     }
   },
   {
@@ -4958,7 +5299,8 @@
           "451446182515048448",
           "364119753972776960"
         ]
-      }
+      },
+      "overrides_formatted": []
     }
   },
   {
@@ -5017,7 +5359,8 @@
         "10": [
           "816784679717044276"
         ]
-      }
+      },
+      "overrides_formatted": []
     }
   },
   {
@@ -5075,7 +5418,8 @@
           "982376986070626344",
           "651597514407018516"
         ]
-      }
+      },
+      "overrides_formatted": []
     }
   },
   {
@@ -5149,7 +5493,8 @@
           "971683003606654976",
           "1070109297268248639"
         ]
-      }
+      },
+      "overrides_formatted": []
     }
   },
   {
@@ -5231,7 +5576,30 @@
         }
       ],
       "revision": 2,
-      "overrides": {}
+      "overrides": {},
+      "overrides_formatted": [
+        {
+          "buckets": {
+            "1": {
+              "rollout": [
+                {
+                  "start": 0,
+                  "end": 10000
+                }
+              ]
+            }
+          },
+          "filters": [
+            {
+              "type": "guild_ids",
+              "ids": [
+                "1096119963267375124",
+                "1096120009211781182"
+              ]
+            }
+          ]
+        }
+      ]
     }
   },
   {
@@ -5354,7 +5722,8 @@
           "887867262839705651",
           "1095810146761973830"
         ]
-      }
+      },
+      "overrides_formatted": []
     }
   },
   {
@@ -5434,7 +5803,30 @@
         }
       ],
       "revision": 0,
-      "overrides": {}
+      "overrides": {},
+      "overrides_formatted": [
+        {
+          "buckets": {
+            "1": {
+              "rollout": [
+                {
+                  "start": 0,
+                  "end": 10000
+                }
+              ]
+            }
+          },
+          "filters": [
+            {
+              "type": "guild_ids",
+              "ids": [
+                "874345844743213126",
+                "962007075288915998"
+              ]
+            }
+          ]
+        }
+      ]
     }
   },
   {
@@ -5569,7 +5961,8 @@
           "859533785225494528",
           "859533828754505741"
         ]
-      }
+      },
+      "overrides_formatted": []
     }
   },
   {
@@ -5663,7 +6056,8 @@
           "999116324842246224",
           "987012965834297405"
         ]
-      }
+      },
+      "overrides_formatted": []
     }
   },
   {
@@ -5724,7 +6118,8 @@
         "1": [
           "882680660588904448"
         ]
-      }
+      },
+      "overrides_formatted": []
     }
   },
   {
@@ -5916,7 +6311,8 @@
           "409190184744255490",
           "764656846777745429"
         ]
-      }
+      },
+      "overrides_formatted": []
     }
   },
   {
@@ -6426,7 +6822,8 @@
         }
       ],
       "revision": 0,
-      "overrides": {}
+      "overrides": {},
+      "overrides_formatted": []
     }
   },
   {
@@ -6488,7 +6885,8 @@
           "799349358776549378",
           "763838479293349899"
         ]
-      }
+      },
+      "overrides_formatted": []
     }
   },
   {
@@ -6666,7 +7064,30 @@
         }
       ],
       "revision": 0,
-      "overrides": {}
+      "overrides": {},
+      "overrides_formatted": [
+        {
+          "buckets": {
+            "1": {
+              "rollout": [
+                {
+                  "start": 0,
+                  "end": 10000
+                }
+              ]
+            }
+          },
+          "filters": [
+            {
+              "type": "guild_ids",
+              "ids": [
+                "161053416796323840",
+                "548440972997033996"
+              ]
+            }
+          ]
+        }
+      ]
     }
   },
   {
@@ -6760,7 +7181,8 @@
         "2": [
           "132251458665054209"
         ]
-      }
+      },
+      "overrides_formatted": []
     }
   },
   {
@@ -6817,7 +7239,8 @@
         }
       ],
       "revision": 0,
-      "overrides": {}
+      "overrides": {},
+      "overrides_formatted": []
     }
   },
   {
@@ -6880,7 +7303,8 @@
         "1": [
           "651595875897835540"
         ]
-      }
+      },
+      "overrides_formatted": []
     }
   },
   {
@@ -6924,7 +7348,8 @@
         }
       ],
       "revision": 1,
-      "overrides": {}
+      "overrides": {},
+      "overrides_formatted": []
     }
   },
   {
@@ -6949,7 +7374,8 @@
         }
       ],
       "revision": 0,
-      "overrides": {}
+      "overrides": {},
+      "overrides_formatted": []
     }
   },
   {
@@ -6994,7 +7420,8 @@
           "852642429105995786",
           "1016836116273430539"
         ]
-      }
+      },
+      "overrides_formatted": []
     }
   },
   {
@@ -7023,7 +7450,8 @@
         "1": [
           "733525406203773049"
         ]
-      }
+      },
+      "overrides_formatted": []
     }
   },
   {
@@ -7101,7 +7529,55 @@
         }
       ],
       "revision": 8,
-      "overrides": {}
+      "overrides": {},
+      "overrides_formatted": [
+        {
+          "buckets": {
+            "1": {
+              "rollout": [
+                {
+                  "start": 0,
+                  "end": 10000
+                }
+              ]
+            }
+          },
+          "filters": [
+            {
+              "type": "guild_has_feature",
+              "features": [
+                "INTERNAL_EMPLOYEE_ONLY",
+                "THREADS_ONLY_CHANNEL"
+              ]
+            }
+          ]
+        },
+        {
+          "buckets": {
+            "1": {
+              "rollout": [
+                {
+                  "start": 0,
+                  "end": 10000
+                }
+              ]
+            }
+          },
+          "filters": [
+            {
+              "type": "guild_has_feature",
+              "features": [
+                "BOT_DEVELOPER_EARLY_ACCESS"
+              ]
+            },
+            {
+              "type": "guild_member_count_range",
+              "min_count": 1,
+              "max_count": 26
+            }
+          ]
+        }
+      ]
     }
   },
   {
@@ -7130,7 +7606,8 @@
         "1": [
           "808870572401754153"
         ]
-      }
+      },
+      "overrides_formatted": []
     }
   },
   {
@@ -7155,7 +7632,8 @@
         }
       ],
       "revision": 3,
-      "overrides": {}
+      "overrides": {},
+      "overrides_formatted": []
     }
   },
   {
@@ -7199,7 +7677,30 @@
         }
       ],
       "revision": 0,
-      "overrides": {}
+      "overrides": {},
+      "overrides_formatted": [
+        {
+          "buckets": {
+            "1": {
+              "rollout": [
+                {
+                  "start": 0,
+                  "end": 10000
+                }
+              ]
+            }
+          },
+          "filters": [
+            {
+              "type": "guild_has_feature",
+              "features": [
+                "GUILD_COMMUNICATION_DISABLED_GUILDS",
+                "PARTNERED"
+              ]
+            }
+          ]
+        }
+      ]
     }
   },
   {
@@ -7232,7 +7733,8 @@
           "842461512206516224",
           "882680660588904448"
         ]
-      }
+      },
+      "overrides_formatted": []
     }
   },
   {
@@ -7257,7 +7759,49 @@
         }
       ],
       "revision": 0,
-      "overrides": {}
+      "overrides": {},
+      "overrides_formatted": [
+        {
+          "buckets": {
+            "1": {
+              "rollout": [
+                {
+                  "start": 0,
+                  "end": 10000
+                }
+              ]
+            }
+          },
+          "filters": [
+            {
+              "type": "guild_has_feature",
+              "features": [
+                "MEMBER_VERIFICATION_MANUAL_APPROVAL"
+              ]
+            }
+          ]
+        },
+        {
+          "buckets": {
+            "1": {
+              "rollout": [
+                {
+                  "start": 0,
+                  "end": 10000
+                }
+              ]
+            }
+          },
+          "filters": [
+            {
+              "type": "guild_has_feature",
+              "features": [
+                "INTERNAL_EMPLOYEE_ONLY"
+              ]
+            }
+          ]
+        }
+      ]
     }
   },
   {
@@ -7282,7 +7826,8 @@
         }
       ],
       "revision": 0,
-      "overrides": {}
+      "overrides": {},
+      "overrides_formatted": []
     }
   },
   {
@@ -7375,7 +7920,8 @@
           "1011361906616979496",
           "994727054190854314"
         ]
-      }
+      },
+      "overrides_formatted": []
     }
   },
   {
@@ -7474,7 +8020,8 @@
         "1": [
           "814196235741167637"
         ]
-      }
+      },
+      "overrides_formatted": []
     }
   },
   {
@@ -7509,7 +8056,8 @@
           "847184799365857331",
           "862757171887603722"
         ]
-      }
+      },
+      "overrides_formatted": []
     }
   },
   {
@@ -7552,7 +8100,8 @@
           "739299507795132486",
           "703067018416619522"
         ]
-      }
+      },
+      "overrides_formatted": []
     }
   },
   {
@@ -7588,7 +8137,8 @@
         "1": [
           "953754308971733103"
         ]
-      }
+      },
+      "overrides_formatted": []
     }
   },
   {
@@ -7626,7 +8176,8 @@
           "651597514407018516",
           "533420789547139077"
         ]
-      }
+      },
+      "overrides_formatted": []
     }
   },
   {
@@ -7651,7 +8202,22 @@
         }
       ],
       "revision": 3,
-      "overrides": {}
+      "overrides": {},
+      "overrides_formatted": [
+        {
+          "buckets": {
+            "1": {
+              "rollout": [
+                {
+                  "start": 0,
+                  "end": 10000
+                }
+              ]
+            }
+          },
+          "filters": []
+        }
+      ]
     }
   },
   {
@@ -7676,7 +8242,29 @@
         }
       ],
       "revision": 0,
-      "overrides": {}
+      "overrides": {},
+      "overrides_formatted": [
+        {
+          "buckets": {
+            "1": {
+              "rollout": [
+                {
+                  "start": 0,
+                  "end": 10000
+                }
+              ]
+            }
+          },
+          "filters": [
+            {
+              "type": "guild_has_feature",
+              "features": [
+                "ACTIVITIES_INTERNAL_DEV"
+              ]
+            }
+          ]
+        }
+      ]
     }
   },
   {
@@ -7741,7 +8329,8 @@
         }
       ],
       "revision": 2,
-      "overrides": {}
+      "overrides": {},
+      "overrides_formatted": []
     }
   },
   {
@@ -7866,7 +8455,89 @@
         }
       ],
       "revision": 0,
-      "overrides": {}
+      "overrides": {},
+      "overrides_formatted": [
+        {
+          "buckets": {
+            "1": {
+              "rollout": [
+                {
+                  "start": 0,
+                  "end": 10000
+                }
+              ]
+            }
+          },
+          "filters": [
+            {
+              "type": "guild_has_feature",
+              "features": [
+                "PARTNERED"
+              ]
+            }
+          ]
+        },
+        {
+          "buckets": {
+            "1": {
+              "rollout": [
+                {
+                  "start": 0,
+                  "end": 10000
+                }
+              ]
+            }
+          },
+          "filters": [
+            {
+              "type": "guild_has_feature",
+              "features": [
+                "VERIFIED"
+              ]
+            }
+          ]
+        },
+        {
+          "buckets": {
+            "1": {
+              "rollout": [
+                {
+                  "start": 0,
+                  "end": 10000
+                }
+              ]
+            }
+          },
+          "filters": [
+            {
+              "type": "guild_has_feature",
+              "features": [
+                "DISCOVERABLE"
+              ]
+            }
+          ]
+        },
+        {
+          "buckets": {
+            "1": {
+              "rollout": [
+                {
+                  "start": 0,
+                  "end": 10000
+                }
+              ]
+            }
+          },
+          "filters": [
+            {
+              "type": "guild_has_feature",
+              "features": [
+                "BOT_DEVELOPER_EARLY_ACCESS"
+              ]
+            }
+          ]
+        }
+      ]
     }
   },
   {
@@ -7891,7 +8562,29 @@
         }
       ],
       "revision": 0,
-      "overrides": {}
+      "overrides": {},
+      "overrides_formatted": [
+        {
+          "buckets": {
+            "1": {
+              "rollout": [
+                {
+                  "start": 0,
+                  "end": 10000
+                }
+              ]
+            }
+          },
+          "filters": [
+            {
+              "type": "guild_has_feature",
+              "features": [
+                "GUILD_ONBOARDING_ADMIN_ONLY"
+              ]
+            }
+          ]
+        }
+      ]
     }
   },
   {
@@ -7926,7 +8619,8 @@
           "954473884273496124",
           "1042148168726487101"
         ]
-      }
+      },
+      "overrides_formatted": []
     }
   },
   {
@@ -7951,7 +8645,29 @@
         }
       ],
       "revision": 0,
-      "overrides": {}
+      "overrides": {},
+      "overrides_formatted": [
+        {
+          "buckets": {
+            "1": {
+              "rollout": [
+                {
+                  "start": 0,
+                  "end": 10000
+                }
+              ]
+            }
+          },
+          "filters": [
+            {
+              "type": "guild_has_feature",
+              "features": [
+                "INTERNAL_EMPLOYEE_ONLY"
+              ]
+            }
+          ]
+        }
+      ]
     }
   },
   {
@@ -8003,7 +8719,8 @@
           "942646368453935204",
           "876918412369088582"
         ]
-      }
+      },
+      "overrides_formatted": []
     }
   },
   {
@@ -8055,7 +8772,8 @@
         }
       ],
       "revision": 2,
-      "overrides": {}
+      "overrides": {},
+      "overrides_formatted": []
     }
   },
   {
@@ -8080,7 +8798,8 @@
         }
       ],
       "revision": 0,
-      "overrides": {}
+      "overrides": {},
+      "overrides_formatted": []
     }
   },
   {
@@ -8105,7 +8824,8 @@
         }
       ],
       "revision": 0,
-      "overrides": {}
+      "overrides": {},
+      "overrides_formatted": []
     }
   },
   {
@@ -8177,7 +8897,51 @@
         }
       ],
       "revision": 0,
-      "overrides": {}
+      "overrides": {},
+      "overrides_formatted": [
+        {
+          "buckets": {
+            "1": {
+              "rollout": [
+                {
+                  "start": 0,
+                  "end": 10000
+                }
+              ]
+            }
+          },
+          "filters": [
+            {
+              "type": "guild_ids",
+              "ids": [
+                "772904309264089089",
+                "918917884883922954",
+                "936464871334244353"
+              ]
+            }
+          ]
+        },
+        {
+          "buckets": {
+            "1": {
+              "rollout": [
+                {
+                  "start": 0,
+                  "end": 10000
+                }
+              ]
+            }
+          },
+          "filters": [
+            {
+              "type": "guild_has_feature",
+              "features": [
+                "INTERNAL_EMPLOYEE_ONLY"
+              ]
+            }
+          ]
+        }
+      ]
     }
   },
   {
@@ -8221,7 +8985,8 @@
           "838840935404011560",
           "651595875897835540"
         ]
-      }
+      },
+      "overrides_formatted": []
     }
   },
   {
@@ -8256,7 +9021,8 @@
         }
       ],
       "revision": 0,
-      "overrides": {}
+      "overrides": {},
+      "overrides_formatted": []
     }
   },
   {
@@ -8288,7 +9054,8 @@
         }
       ],
       "revision": 0,
-      "overrides": {}
+      "overrides": {},
+      "overrides_formatted": []
     }
   },
   {
@@ -8313,7 +9080,35 @@
         }
       ],
       "revision": 0,
-      "overrides": {}
+      "overrides": {},
+      "overrides_formatted": [
+        {
+          "buckets": {
+            "1": {
+              "rollout": [
+                {
+                  "start": 0,
+                  "end": 10000
+                }
+              ]
+            }
+          },
+          "filters": [
+            {
+              "type": "guild_ids",
+              "ids": [
+                "786031121397317633",
+                "1044374869414002758",
+                "1075135858732175371",
+                "1105587297132478476",
+                "1105586877878247447",
+                "992093067530219550",
+                "1105586069497466943"
+              ]
+            }
+          ]
+        }
+      ]
     }
   },
   {
@@ -8338,7 +9133,8 @@
         }
       ],
       "revision": 0,
-      "overrides": {}
+      "overrides": {},
+      "overrides_formatted": []
     }
   }
 ]
