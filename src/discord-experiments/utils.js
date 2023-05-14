@@ -153,6 +153,12 @@ const defaultEmbed = (experiment, action, diff = "") => {
       value: overridesFormat(experiment.rollout?.overrides ?? {}) || "None",
       inline: false,
     },
+    {
+      name: "Overrides Formatted",
+      value:
+        populationsFormat(experiment.rollout?.overrides_formatted ?? []) ||
+        "None",
+    },
   ];
 
   if (diff !== "") {
