@@ -18622,27 +18622,6 @@ html.disable-forced-colors * {
     }
 }
 
-.container-mAkQVR {
-    display: -webkit-inline-box;
-    display: -ms-inline-flexbox;
-    display: inline-flex;
-    margin-top: 8px
-}
-
-.akaBadge-ep3q0P {
-    display: inline;
-    background-color: var(--background-secondary);
-    color: var(--header-secondary);
-    margin-right: 4px
-}
-
-.nicknames-3g5AJ9 {
-    display: inline-box;
-    -webkit-box-orient: vertical;
-    -webkit-line-clamp: 1;
-    overflow: hidden
-}
-
 .copiableField-2DYmf7 {
     padding-right: 8px
 }
@@ -155763,4 +155742,4 @@ html .invoiceCancelRow-dVOR64 {
     flex-direction: column
 }
 
-/*# sourceMappingURL=40532.215ca1f4cea49e254d67.css.map*/
+/*# sourceMappingURL=40532.5d3eba318774fa1a6365.css.map*/
