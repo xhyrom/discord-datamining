@@ -133201,6 +133201,12 @@ html .invoiceCancelRow-3s2UuC {
     justify-content: center
 }
 
+@supports (not (-moz-appearance:none)) {
+    .flipCardClosed-2MHhtz {
+        z-index: 1
+    }
+}
+
 .flipCardClosedImg-17wHvQ {
     position: absolute;
     width: 100%;
@@ -155757,4 +155763,4 @@ html .invoiceCancelRow-dVOR64 {
     flex-direction: column
 }
 
-/*# sourceMappingURL=40532.66a8f4459b3a16195b4d.css.map*/
+/*# sourceMappingURL=40532.215ca1f4cea49e254d67.css.map*/
