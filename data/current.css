@@ -29506,6 +29506,158 @@ img[alt] {
     top: -12px
 }
 
+.rimGlowVertical-1C_MxP {
+    position: absolute;
+    bottom: 22px;
+    left: -1px;
+    width: 1px;
+    height: 45px
+}
+
+.rimGlowVertical-1C_MxP.rimGlowVerticalTier0-vCZ4My {
+    background: -webkit-gradient(linear, left top, left bottom, from(var(--premium-tier-0-purple-for-gradients)), color-stop(50.52%, #fff), to(var(--premium-tier-0-purple-for-gradients)));
+    background: linear-gradient(180deg, var(--premium-tier-0-purple-for-gradients), #fff 50.52%, var(--premium-tier-0-purple-for-gradients))
+}
+
+.rimGlowVertical-1C_MxP.rimGlowVerticalTier2-2xUup0 {
+    background: -webkit-gradient(linear, left top, left bottom, from(var(--premium-tier-2-purple-for-gradients)), color-stop(50.52%, #fff), to(var(--premium-tier-2-purple-for-gradients)));
+    background: linear-gradient(180deg, var(--premium-tier-2-purple-for-gradients), #fff 50.52%, var(--premium-tier-2-purple-for-gradients))
+}
+
+.buttonSparkleStar1-CA2w95 {
+    position: absolute;
+    bottom: 35px;
+    left: -8px;
+    width: 14px;
+    height: 13px
+}
+
+.buttonSparkleStar2-2Addlz {
+    position: absolute;
+    bottom: 12px;
+    left: 7px;
+    width: 8px;
+    height: 7px
+}
+
+.buttonSparkleStar3-21HBCH {
+    position: absolute;
+    bottom: 37px;
+    left: 8px;
+    width: 14px;
+    height: 28px
+}
+
+.buttonSparkleStar4-11OUni {
+    position: absolute;
+    bottom: 26px;
+    right: 11px;
+    width: 12px;
+    height: 11px
+}
+
+.buttonSparkleStar5-2r_Ba1 {
+    position: absolute;
+    bottom: 41px;
+    right: 4px;
+    width: 8px;
+    height: 7px
+}
+
+.freeTrialPillWithSparkles-5xhJd7 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center
+}
+
+.sparkleStar1-1KIGhc {
+    width: 14px;
+    height: 12px
+}
+
+.sparkleStar2-3YemiR {
+    width: 8px;
+    height: 7px;
+    margin-left: -3px;
+    margin-bottom: 15px
+}
+
+.sparkleStar3-2hQxQI {
+    width: 14px;
+    height: 28px;
+    margin-left: 2px;
+    margin-right: 10px
+}
+
+.freeTrialPill-3htcnO {
+    height: 20px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    background: var(--white-500);
+    border-radius: var(--radius-md);
+    gap: 10px
+}
+
+.freeTrialPill-3htcnO.freeTrialPillTier0Inverted-2QEup2 {
+    background: -webkit-gradient(linear, left top, right top, from(hsl(235, calc(var(--saturation-factor, 1)*85.6%), 64.7%)), to(hsl(202, calc(var(--saturation-factor, 1)*100%), 38%)));
+    background: linear-gradient(90deg, hsl(235, calc(var(--saturation-factor, 1)*85.6%), 64.7%), hsl(202, calc(var(--saturation-factor, 1)*100%), 38%))
+}
+
+.freeTrialPill-3htcnO.freeTrialPillTier2Inverted-2grF4u {
+    background: -webkit-gradient(linear, left top, right top, from(hsl(269, calc(var(--saturation-factor, 1)*52.7%), 52.7%)), to(hsl(325, calc(var(--saturation-factor, 1)*31.7%), 51.8%)));
+    background: linear-gradient(90deg, hsl(269, calc(var(--saturation-factor, 1)*52.7%), 52.7%), hsl(325, calc(var(--saturation-factor, 1)*31.7%), 51.8%))
+}
+
+.freeTrialPillText-2p8aMd {
+    font-weight: 800;
+    display: inline-block;
+    padding: 4px 8px;
+    line-height: 12px;
+    text-align: center;
+    text-transform: uppercase;
+    white-space: nowrap;
+    cursor: default
+}
+
+.freeTrialPillText-2p8aMd.freeTrialPillTextTier0-38AT_s {
+    color: var(--premium-tier-0-purple-for-gradients)
+}
+
+.freeTrialPillText-2p8aMd.freeTrialPillTextTier2-2ePQKl {
+    color: var(--premium-tier-2-purple-for-gradients)
+}
+
+.freeTrialPillText-2p8aMd.freeTrialPillTextInverted-2Cwni_ {
+    color: var(--white-500)
+}
+
+.sparkleStar4-1FlS0C {
+    width: 13px;
+    height: 11px;
+    margin-left: 10px
+}
+
+.sparkleStar5-3QZh8D {
+    width: 8px;
+    height: 7px;
+    margin-left: 6px;
+    margin-top: 6px
+}
+
 .skuButtons-1fwkxf {
     padding: 0 8px 0 16px
 }
@@ -155742,4 +155894,4 @@ html .invoiceCancelRow-dVOR64 {
     flex-direction: column
 }
 
-/*# sourceMappingURL=40532.5d3eba318774fa1a6365.css.map*/
+/*# sourceMappingURL=40532.f94ea6779c903d3f8f79.css.map*/
