@@ -6533,6 +6533,27 @@
   {
     "data": {
       "kind": "user",
+      "id": "2023-05_premium_marketing_page_trial_tier_card",
+      "label": "Premium marketing page trial tier card",
+      "description": [
+        "Control",
+        "Treatment 1: Free trial pill on top of the card",
+        "Treatment 2: Free trial pill inline with the card"
+      ],
+      "hash": 2553858368,
+      "buckets": [
+        0,
+        1,
+        2
+      ],
+      "config_keys": [
+        "enabled"
+      ]
+    }
+  },
+  {
+    "data": {
+      "kind": "user",
       "id": "2023-04_tier_0_trial_cta_copy",
       "label": "Tier 0 Trial CTA Copy",
       "description": [
