@@ -3704,6 +3704,25 @@
   },
   {
     "data": {
+      "kind": "user",
+      "id": "2023-03_apps_in_gdms",
+      "label": "Apps in GDMs",
+      "description": [
+        "Control",
+        "Treatment 1: Show apps in gdm"
+      ],
+      "hash": 3375543773,
+      "buckets": [
+        0,
+        1
+      ],
+      "config_keys": [
+        "enabled"
+      ]
+    }
+  },
+  {
+    "data": {
       "kind": "guild",
       "id": "2022-07_report_raids",
       "label": "Report Raids",
@@ -6446,25 +6465,6 @@
         0,
         1,
         2
-      ],
-      "config_keys": [
-        "enabled"
-      ]
-    }
-  },
-  {
-    "data": {
-      "kind": "user",
-      "id": "2023-03_apps_in_gdms",
-      "label": "Apps in GDMs",
-      "description": [
-        "Control",
-        "Treatment 1: Show apps in gdm"
-      ],
-      "hash": 3375543773,
-      "buckets": [
-        0,
-        1
       ],
       "config_keys": [
         "enabled"
