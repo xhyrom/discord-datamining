@@ -936,6 +936,50 @@
         },
         {
           "buckets": {
+            "1": {
+              "rollout": [
+                {
+                  "start": 500,
+                  "end": 1000
+                }
+              ]
+            },
+            "2": {
+              "rollout": [
+                {
+                  "start": 1000,
+                  "end": 1500
+                }
+              ]
+            },
+            "3": {
+              "rollout": [
+                {
+                  "start": 1500,
+                  "end": 2000
+                }
+              ]
+            },
+            "none": {
+              "rollout": [
+                {
+                  "start": 2000,
+                  "end": 10000
+                }
+              ]
+            }
+          },
+          "filters": [
+            {
+              "type": "guild_has_feature",
+              "features": [
+                "ROLE_SUBSCRIPTIONS_ENABLED"
+              ]
+            }
+          ]
+        },
+        {
+          "buckets": {
             "none": {
               "rollout": [
                 {
@@ -3337,7 +3381,7 @@
     "data": {
       "kind": "user",
       "id": "2023-05_clyde_ai_dm",
-      "label": "DMs to Clyde Experiemnt",
+      "label": "DMs to Clyde",
       "description": [
         "Control",
         "Treatment 1: enable dms to clyde"
