@@ -3031,32 +3031,6 @@
   },
   {
     "data": {
-      "kind": "guild",
-      "id": "2021-12_soundboard",
-      "label": "Soundboard",
-      "description": [
-        "Control",
-        "Treatment 1: Soundboard on",
-        "Treatment 2: Soundboard on",
-        "Treatment 3: Control (soundboard off)",
-        "Treatment 4: Soundboard on w/ volume tooltip"
-      ],
-      "hash": 2433109164,
-      "buckets": [
-        0,
-        1,
-        2,
-        3,
-        4
-      ],
-      "config_keys": [
-        "allowSoundboard",
-        "showVolumeEducationTooltip"
-      ]
-    }
-  },
-  {
-    "data": {
       "kind": "user",
       "id": "2023-01_silent_messages",
       "label": "Silent Messages",
