@@ -16720,6 +16720,7 @@ html.disable-forced-colors * {
 .markup-eYLPri.inlineFormat-27RIC2 li,
 .markup-eYLPri .inlineFormat-27RIC2 li {
     display: inline;
+    display: -webkit-inline-box;
     margin: 0;
     padding-right: 8px;
     white-space: normal
@@ -16753,6 +16754,7 @@ html.disable-forced-colors * {
 .markup-eYLPri ol.inlineFormat-27RIC2,
 .markup-eYLPri ul.inlineFormat-27RIC2 {
     display: inline;
+    display: -webkit-inline-box;
     margin: 0;
     padding: 0 8px 0 0
 }
@@ -16806,11 +16808,12 @@ html.disable-forced-colors * {
     font-weight: 600;
     font-size: inherit;
     white-space: normal;
-    margin: 0;
+    margin: 0 !important;
     padding-right: 16px;
     line-height: 1.25em;
     color: inherit;
-    display: inline
+    display: inline;
+    display: -webkit-inline-box
 }
 
 .markup-eYLPri h1 {
@@ -155930,4 +155933,4 @@ html .invoiceCancelRow-dVOR64 {
     flex-direction: column
 }
 
-/*# sourceMappingURL=40532.d479c71f2ced103e3c10.css.map*/
+/*# sourceMappingURL=40532.3d2e8a2e4e78f00c89bb.css.map*/
