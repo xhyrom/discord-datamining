@@ -3975,29 +3975,6 @@
   {
     "data": {
       "kind": "user",
-      "id": "2022-04_activities_nitro",
-      "label": "Activities in Nitro",
-      "description": [
-        "Control",
-        "Treatment 0: Control",
-        "Treatment 1: Enable Nitro Activities",
-        "Treatment 2: Enable Nitro Activities"
-      ],
-      "hash": 3482807542,
-      "buckets": [
-        0,
-        0,
-        1,
-        2
-      ],
-      "config_keys": [
-        "enableNitroActivities"
-      ]
-    }
-  },
-  {
-    "data": {
-      "kind": "user",
       "id": "2023-02_mfa_remove_phone",
       "label": "Safety Experience MFA Remove Phone",
       "description": [
