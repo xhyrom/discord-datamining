@@ -82546,6 +82546,19 @@ strong {
     margin-left: 10px
 }
 
+.header-1mfWfo {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center
+}
+
+.guildBadge-wyTGi- {
+    margin-right: 4px
+}
+
 .childWrapper-2VY8PD {
     width: 40px;
     height: 40px;
@@ -155933,4 +155946,4 @@ html .invoiceCancelRow-dVOR64 {
     flex-direction: column
 }
 
-/*# sourceMappingURL=40532.3d2e8a2e4e78f00c89bb.css.map*/
+/*# sourceMappingURL=40532.7130ede018e55dd0e8dc.css.map*/
