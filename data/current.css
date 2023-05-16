@@ -29392,6 +29392,11 @@ img[alt] {
     width: 50%
 }
 
+.card-3ie2dy.withCardHover-2_gBIK:hover {
+    -webkit-box-shadow: var(--dark-elevation-high);
+    box-shadow: var(--dark-elevation-high)
+}
+
 .wumpusImageContainer-ZGD_8q {
     position: absolute;
     width: 40%;
@@ -29411,6 +29416,20 @@ img[alt] {
     background-image: linear-gradient(90deg, hsl(269, calc(var(--saturation-factor, 1)*52.7%), 52.7%), hsl(325, calc(var(--saturation-factor, 1)*31.7%), 51.8%))
 }
 
+.tier2-qNjKTW.withTier2Rim-3u3Nwn:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
+    margin: -1px;
+    border-radius: var(--radius-lg);
+    background: -webkit-gradient(linear, left top, right top, from(hsl(269, calc(var(--saturation-factor, 1)*52.7%), 52.7%)), to(hsl(325, calc(var(--saturation-factor, 1)*31.7%), 51.8%)));
+    background: linear-gradient(90deg, hsl(269, calc(var(--saturation-factor, 1)*52.7%), 52.7%), hsl(325, calc(var(--saturation-factor, 1)*31.7%), 51.8%))
+}
+
 .tier0Title-IvjroU {
     width: 106px;
     height: 40px
@@ -29418,7 +29437,8 @@ img[alt] {
 
 .tier2Title-8gwAVr {
     width: 96px;
-    height: 24px
+    height: 24px;
+    display: block
 }
 
 .item-62htNl,
@@ -29457,6 +29477,10 @@ img[alt] {
 
 .trialOfferPill-1JlTit {
     margin-bottom: 18px
+}
+
+.freeTrialPillInline-1xLX2j {
+    margin-bottom: 12px
 }
 
 .price-3oXq_a {
@@ -29659,6 +29683,29 @@ img[alt] {
     height: 7px;
     margin-left: 6px;
     margin-top: 6px
+}
+
+.topRimPill-s_zCm0 {
+    position: absolute;
+    top: -15px;
+    right: 4px;
+    z-index: 2
+}
+
+.rimGlowTier2-1l5S4q {
+    position: absolute;
+    height: 1px;
+    width: 88%;
+    top: -1px;
+    right: 5%;
+    background: -webkit-gradient(linear, right top, left top, from(var(--premium-tier-2-purple-for-gradients)), color-stop(4.98%, #fff), color-stop(50.52%, #fff), to(var(--premium-tier-2-pink-for-gradients)));
+    background: linear-gradient(-90deg, var(--premium-tier-2-purple-for-gradients), #fff 4.98%, #fff 50.52%, var(--premium-tier-2-pink-for-gradients));
+    z-index: 1
+}
+
+.trialHeader-1J-SBZ {
+    max-width: 70%;
+    margin-bottom: 18px
 }
 
 .skuButtons-1fwkxf {
@@ -128766,6 +128813,23 @@ html .invoiceCancelRow-3s2UuC {
     padding-left: 16px
 }
 
+.center-CjE0we {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center
+}
+
+.textCenter-1a3QKx {
+    text-align: center
+}
+
 .radioGroup-28eNGP {
     padding-top: 16px;
     padding-bottom: 8px
@@ -128773,6 +128837,43 @@ html .invoiceCancelRow-3s2UuC {
 
 .button-1mqifJ {
     padding-left: 16px
+}
+
+.options-1Pt6Vt {
+    margin-top: 12px;
+    margin-bottom: 24px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    gap: 8px
+}
+
+.optionContainer-20eLTX,
+.options-1Pt6Vt {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex
+}
+
+.optionContainer-20eLTX {
+    border: 1px solid var(--background-accent);
+    border-radius: 4px;
+    padding: 12px;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    gap: 14px
+}
+
+.optionText-1hXRYc {
+    -webkit-box-flex: 1;
+    -ms-flex: 1;
+    flex: 1
+}
+
+.falseAlarmReasonText-1N2LDs {
+    margin-top: 8px
 }
 
 .headerContainer-2ebBJj {
@@ -155963,4 +156064,4 @@ html .invoiceCancelRow-dVOR64 {
     flex-direction: column
 }
 
-/*# sourceMappingURL=40532.e26dc6b44b064d3651d4.css.map*/
+/*# sourceMappingURL=40532.ebd3465e36d7e0d5ce4b.css.map*/
