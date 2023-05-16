@@ -2952,6 +2952,25 @@
   },
   {
     "data": {
+      "kind": "guild",
+      "id": "2023-05_guild_member_safety_experiment",
+      "label": "Guild Member Safety Experiment",
+      "description": [
+        "Control",
+        "Treatment 1: Guild Member Safety Experiment"
+      ],
+      "hash": 603648674,
+      "buckets": [
+        0,
+        1
+      ],
+      "config_keys": [
+        "enabled"
+      ]
+    }
+  },
+  {
+    "data": {
       "kind": "user",
       "id": "2021-04_impression_logging",
       "label": "Standard Analytics: Log Impressions",
@@ -5815,8 +5834,7 @@
       "overrides": {
         "1": [
           "890883112500854804",
-          "887867262839705651",
-          "1095810146761973830"
+          "887867262839705651"
         ]
       },
       "overrides_formatted": []
