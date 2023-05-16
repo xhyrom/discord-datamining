@@ -133534,7 +133534,24 @@ html .invoiceCancelRow-3s2UuC {
     width: 100%;
     border-radius: 8px;
     overflow: hidden;
-    background-color: var(--background-secondary)
+    background-color: var(--background-secondary);
+    -webkit-transition: -webkit-transform .25s;
+    transition: -webkit-transform .25s;
+    transition: transform .25s;
+    transition: transform .25s, -webkit-transform .25s
+}
+
+.activityCard-3EABg3:focus,
+.activityCard-3EABg3:hover {
+    -webkit-transform: scale(1.025);
+    transform: scale(1.025)
+}
+
+.activityCardReducedMotion-20YSCz {
+    -webkit-transition: -webkit-transform 0ms;
+    transition: -webkit-transform 0ms;
+    transition: transform 0ms;
+    transition: transform 0ms, -webkit-transform 0ms
 }
 
 .activityCardImage-26EXZ5 {
@@ -155946,4 +155963,4 @@ html .invoiceCancelRow-dVOR64 {
     flex-direction: column
 }
 
-/*# sourceMappingURL=40532.7130ede018e55dd0e8dc.css.map*/
+/*# sourceMappingURL=40532.0f3083cc9524660fbcf4.css.map*/
