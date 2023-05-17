@@ -49739,6 +49739,10 @@ input[type=checked]:focus-visible+.label-3TDpbn {
     margin-left: auto
 }
 
+.titleCase-5olYhC {
+    text-transform: capitalize
+}
+
 .mainContainer-1CA4ga.compact-3MTfli {
     padding-left: 0;
     margin-left: -3.95rem
@@ -156184,4 +156188,4 @@ html .invoiceCancelRow-dVOR64 {
     flex-direction: column
 }
 
-/*# sourceMappingURL=40532.9c0ce80c4949cc4a049f.css.map*/
+/*# sourceMappingURL=40532.448b8190586710b8a5f8.css.map*/
