@@ -4601,111 +4601,6 @@
   {
     "data": {
       "kind": "user",
-      "id": "2023-02_guild_boosting_marketing_redesign",
-      "label": "Guild Boosting Marketing Redesign",
-      "description": [
-        "Control",
-        "Treatment 1: Variant 1",
-        "Treatment 2: Variant 2",
-        "Treatment 3: Variant 3"
-      ],
-      "hash": 1199473815,
-      "buckets": [
-        0,
-        1,
-        2,
-        3
-      ],
-      "config_keys": [
-        "enabled"
-      ]
-    }
-  },
-  {
-    "data": {
-      "kind": "user",
-      "id": "2023-02_nitro_most_popular_tag",
-      "label": "Most popular tag in nitro plan selection",
-      "description": [
-        "Control",
-        "Treatment 1: show most popular tag on nitro plan"
-      ],
-      "hash": 2459440542,
-      "buckets": [
-        0,
-        1
-      ],
-      "config_keys": [
-        "enabled"
-      ]
-    }
-  },
-  {
-    "data": {
-      "kind": "user",
-      "id": "2023-04_free_user_marketing_page_cta_copy",
-      "label": "Free User Marketing Page CTA Copy ",
-      "description": [
-        "Control",
-        "Treatment 1: Users will see \"Buy Now\" on all (tier 0 & tier 2) marketing page CTAs"
-      ],
-      "hash": 1038983733,
-      "buckets": [
-        0,
-        1
-      ],
-      "config_keys": [
-        "enabled"
-      ]
-    }
-  },
-  {
-    "data": {
-      "kind": "user",
-      "id": "2023-05_premium_marketing_page_trial_tier_card",
-      "label": "Premium marketing page trial tier card",
-      "description": [
-        "Control",
-        "Treatment 1: Free trial pill on top of the card",
-        "Treatment 2: Free trial pill inline with the card"
-      ],
-      "hash": 2553858368,
-      "buckets": [
-        0,
-        1,
-        2
-      ],
-      "config_keys": [
-        "pillLocation"
-      ]
-    }
-  },
-  {
-    "data": {
-      "kind": "user",
-      "id": "2023-04_tier_0_trial_cta_copy",
-      "label": "Tier 0 Trial CTA Copy",
-      "description": [
-        "Control",
-        "Treatment 1: Users with a tier 0 trial offer will see \"Get Free Trial\"",
-        "Treatment 2: Users with a tier 0 trial offer will see \"Try 1 Month Free\"",
-        "Treatment 3: Users with a tier 0 trial offer will see \"Start Free Trial\""
-      ],
-      "hash": 3084409284,
-      "buckets": [
-        0,
-        1,
-        2,
-        3
-      ],
-      "config_keys": [
-        "enabled"
-      ]
-    }
-  },
-  {
-    "data": {
-      "kind": "user",
       "id": "2022-12_timestamp_tooltip",
       "label": "Timestamp Tooltip",
       "description": [
@@ -6600,6 +6495,88 @@
         0,
         1,
         2
+      ],
+      "config_keys": [
+        "enabled"
+      ]
+    }
+  },
+  {
+    "data": {
+      "kind": "user",
+      "id": "2023-04_free_user_marketing_page_cta_copy",
+      "label": "Free User Marketing Page CTA Copy ",
+      "description": [
+        "Control",
+        "Treatment 1: Users will see \"Buy Now\" on all (tier 0 & tier 2) marketing page CTAs"
+      ],
+      "hash": 1038983733,
+      "buckets": [
+        0,
+        1
+      ],
+      "config_keys": [
+        "enabled"
+      ]
+    }
+  },
+  {
+    "data": {
+      "kind": "user",
+      "id": "2023-05_premium_marketing_page_trial_tier_card",
+      "label": "Premium marketing page trial tier card",
+      "description": [
+        "Control",
+        "Treatment 1: Free trial pill on top of the card",
+        "Treatment 2: Free trial pill inline with the card"
+      ],
+      "hash": 2553858368,
+      "buckets": [
+        0,
+        1,
+        2
+      ],
+      "config_keys": [
+        "pillLocation"
+      ]
+    }
+  },
+  {
+    "data": {
+      "kind": "user",
+      "id": "2023-04_tier_0_trial_cta_copy",
+      "label": "Tier 0 Trial CTA Copy",
+      "description": [
+        "Control",
+        "Treatment 1: Users with a tier 0 trial offer will see \"Get Free Trial\"",
+        "Treatment 2: Users with a tier 0 trial offer will see \"Try 1 Month Free\"",
+        "Treatment 3: Users with a tier 0 trial offer will see \"Start Free Trial\""
+      ],
+      "hash": 3084409284,
+      "buckets": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "config_keys": [
+        "enabled"
+      ]
+    }
+  },
+  {
+    "data": {
+      "kind": "user",
+      "id": "2023-02_nitro_most_popular_tag",
+      "label": "Most popular tag in nitro plan selection",
+      "description": [
+        "Control",
+        "Treatment 1: show most popular tag on nitro plan"
+      ],
+      "hash": 2459440542,
+      "buckets": [
+        0,
+        1
       ],
       "config_keys": [
         "enabled"
