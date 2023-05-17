@@ -2090,25 +2090,6 @@
   {
     "data": {
       "kind": "user",
-      "id": "2022-11_desktop_notification_center",
-      "label": "Desktop notification center",
-      "description": [
-        "Control",
-        "Treatment 1: Notification center desktop enabled"
-      ],
-      "hash": 1323079101,
-      "buckets": [
-        0,
-        1
-      ],
-      "config_keys": [
-        "enabled"
-      ]
-    }
-  },
-  {
-    "data": {
-      "kind": "user",
       "id": "2022-11_notification_redesign",
       "label": "NotificationRedesign",
       "description": [
@@ -2135,6 +2116,25 @@
         "Treatment 1: Notification Redesign V2 Enabled"
       ],
       "hash": 1347697298,
+      "buckets": [
+        0,
+        1
+      ],
+      "config_keys": [
+        "enabled"
+      ]
+    }
+  },
+  {
+    "data": {
+      "kind": "user",
+      "id": "2022-11_desktop_notification_center",
+      "label": "Desktop notification center",
+      "description": [
+        "Control",
+        "Treatment 1: Notification center desktop enabled"
+      ],
+      "hash": 1323079101,
       "buckets": [
         0,
         1
