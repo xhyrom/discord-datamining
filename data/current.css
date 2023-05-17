@@ -29740,10 +29740,6 @@ img[alt] {
     margin-bottom: 18px
 }
 
-.skuButtons-1fwkxf {
-    padding: 0 8px 0 16px
-}
-
 .button-1ns2oH {
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
@@ -29856,12 +29852,20 @@ img[alt] {
 }
 
 .plnNotice-Z0zliR {
-    margin: 0 16px 16px
+    margin-bottom: 16px
 }
 
-.premiumSkuSelect-2SGXp4 {
-    background-color: var(--modal-background);
-    border-radius: 4px
+.skuSelectModalHeader-lufMDl {
+    border-radius: 4px 4px 0 0
+}
+
+.skuSelectModalContent-1oAh0o {
+    border-radius: 0 0 4px 4px
+}
+
+.skuSelectModalContent-1oAh0o,
+.skuSelectModalHeader-lufMDl {
+    background-color: var(--modal-background)
 }
 
 .body-1HULZ8 {
@@ -155325,4 +155329,4 @@ html .invoiceCancelRow-dVOR64 {
     flex-direction: column
 }
 
-/*# sourceMappingURL=40532.65c490adfd94b97edf25.css.map*/
+/*# sourceMappingURL=40532.b3d6855da9f609321a1f.css.map*/
