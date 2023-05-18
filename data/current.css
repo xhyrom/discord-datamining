@@ -22493,6 +22493,8 @@ html.disable-forced-colors * {
     --profile-gradient-role-pill-background: hsl(var(--primary-660-hsl)/0.5);
     --profile-gradient-role-pill-border: hsl(var(--white-500-hsl)/0.2);
     --profile-gradient-section-box: hsl(var(--black-500-hsl)/0.45);
+    --redesign-activity-card-background: var(--primary-530);
+    --redesign-activity-card-background-pressed: var(--primary-630);
     --redesign-button-danger-background: var(--red-430);
     --redesign-button-danger-pressed-background: var(--red-500);
     --redesign-button-floating-background: var(--white-500);
@@ -22669,6 +22671,8 @@ html.disable-forced-colors * {
     --profile-gradient-role-pill-background: hsl(var(--white-500-hsl)/0.5);
     --profile-gradient-role-pill-border: hsl(var(--primary-660-hsl)/0.2);
     --profile-gradient-section-box: hsl(var(--white-500-hsl)/0.45);
+    --redesign-activity-card-background: var(--white-500);
+    --redesign-activity-card-background-pressed: var(--primary-160);
     --redesign-button-danger-background: var(--red-430);
     --redesign-button-danger-pressed-background: var(--red-500);
     --redesign-button-floating-background: var(--white-500);
@@ -22852,6 +22856,8 @@ html.disable-forced-colors * {
     --profile-gradient-role-pill-background: hsl(var(--primary-660-hsl)/0.5);
     --profile-gradient-role-pill-border: hsl(var(--white-500-hsl)/0.2);
     --profile-gradient-section-box: hsl(var(--black-500-hsl)/0.45);
+    --redesign-activity-card-background: var(--primary-530);
+    --redesign-activity-card-background-pressed: var(--primary-630);
     --redesign-button-danger-background: var(--red-430);
     --redesign-button-danger-pressed-background: var(--red-500);
     --redesign-button-floating-background: var(--white-500);
@@ -155310,4 +155316,4 @@ html .invoiceCancelRow-dVOR64 {
     flex-direction: column
 }
 
-/*# sourceMappingURL=40532.2af20283071e82a9f7f1.css.map*/
+/*# sourceMappingURL=40532.79e9328c0d8dac79e8f8.css.map*/
