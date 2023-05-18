@@ -16732,7 +16732,9 @@ html.disable-forced-colors * {
     display: -webkit-inline-box;
     margin: 0;
     padding-right: 8px;
-    white-space: normal
+    white-space: normal;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical
 }
 
 .markup-eYLPri.inlineFormat-27RIC2 li:before,
@@ -155435,4 +155437,4 @@ html .invoiceCancelRow-dVOR64 {
     flex-direction: column
 }
 
-/*# sourceMappingURL=40532.7aac3a86d677583ac34e.css.map*/
+/*# sourceMappingURL=40532.a62f84e300a67f0ff5b2.css.map*/
