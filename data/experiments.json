@@ -5698,12 +5698,14 @@
       "label": "Voice Channel Status Guild Experiment",
       "description": [
         "Control",
-        "Treatment 1: Enable viewing and setting voice channel statuses for guild"
+        "Treatment 1: Enable viewing and setting voice channel statuses for guild",
+        "Treatment 2: A/A test, identical to treatment 1"
       ],
       "hash": 2809294122,
       "buckets": [
         0,
-        1
+        1,
+        2
       ],
       "config_keys": [
         "enabled"
