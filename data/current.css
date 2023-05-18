@@ -144028,6 +144028,85 @@ html .invoiceCancelRow-3s2UuC {
     flex: 1
 }
 
+.hero-2oPZij {
+    position: relative;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    border-radius: 8px;
+    padding: 12px 24px 24px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: start;
+    -ms-flex-align: start;
+    align-items: flex-start;
+    text-align: center
+}
+
+.background-11Vibj {
+    -o-object-fit: cover;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 8px
+}
+
+.headings-1W00dW {
+    position: relative;
+    background-color: hsl(var(--black-500-hsl)/.7);
+    border-radius: 8px;
+    padding: 24px 12px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    gap: 16px
+}
+
+.logo-3S-3D9 {
+    color: var(--white);
+    vertical-align: top;
+    margin-right: 8px
+}
+
+.backButton-3-ezLT {
+    text-transform: uppercase;
+    padding: 0
+}
+
+.backButtonInner-3AV9-x {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    gap: 4px
+}
+
+.backButtonArrow-1HsSZs {
+    -webkit-transform: rotate(-90deg);
+    transform: rotate(-90deg);
+    width: 16px;
+    height: 16px
+}
+
 .divider-1bpIoX {
     margin-bottom: 24px;
     padding-bottom: 4px
@@ -155316,4 +155395,4 @@ html .invoiceCancelRow-dVOR64 {
     flex-direction: column
 }
 
-/*# sourceMappingURL=40532.79e9328c0d8dac79e8f8.css.map*/
+/*# sourceMappingURL=40532.0ece80b977b05ff3c873.css.map*/
