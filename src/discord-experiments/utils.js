@@ -162,9 +162,13 @@ const defaultEmbed = (experiment, action, diff = "") => {
   ];
 
   if (diff !== "") {
+    const content = `\`\`\`diff\n${diff}\n\`\`\``;
     fields.push({
       name: "Changes",
-      value: `\`\`\`diff\n${diff}\n\`\`\``,
+      value:
+        content.length > 1024
+          ? `[Too long to display](https://github.com/xHyroM/discord-datamining/commits/master/data/experiments.json)`
+          : content,
       inline: false,
     });
   }

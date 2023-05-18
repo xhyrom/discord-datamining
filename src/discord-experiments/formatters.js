@@ -46,7 +46,7 @@ export const populationsFormat = (populations) => {
     format += "\n";
   }
 
-  return format;
+  return format.length > 1024 ? format.slice(0, 1021) + "..." : format;
 };
 
 export const overridesFormat = (overrides) => {
