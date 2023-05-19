@@ -132722,8 +132722,8 @@ html .invoiceCancelRow-3s2UuC {
     width: 100%
 }
 
-.whatsNewScrollHeader-3gjDRE+.whatsNewScrollContainer-3J-LJI {
-    margin-top: 6px
+.tileScrollerHeader-3pb2TS+.tileScrollerContainer-pzM0xG {
+    margin-top: 8px
 }
 
 .whatsNewItemsContainer-1dyM2M {
@@ -132791,9 +132791,9 @@ html .invoiceCancelRow-3s2UuC {
 .flipCardInner-2hI9Pw {
     pointer-events: none;
     position: relative;
-    margin: 10px 0;
+    margin: 8px 0;
     width: 100%;
-    height: calc(100% - 20px);
+    height: calc(100% - 16px);
     text-align: center;
     -webkit-transform-style: preserve-3d;
     transform-style: preserve-3d;
@@ -132974,6 +132974,107 @@ html .invoiceCancelRow-3s2UuC {
     color: var(--header-secondary);
     text-align: start;
     margin-top: 4px
+}
+
+.happeningNowContainer--FsXBo {
+    margin-top: 16px
+}
+
+.happeningNowList-d5GEgX {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    gap: 16px
+}
+
+.happeningNowCard-LQzIBo {
+    width: 305px;
+    height: 171px;
+    margin: 8px 0;
+    border-radius: 8px;
+    background-color: var(--background-floating);
+    cursor: pointer;
+    overflow: hidden;
+    position: relative;
+    -webkit-transform: scale(.98);
+    transform: scale(.98);
+    -webkit-transition: -webkit-transform .25s;
+    transition: -webkit-transform .25s;
+    transition: transform .25s;
+    transition: transform .25s, -webkit-transform .25s;
+    -webkit-box-shadow: var(--elevation-medium);
+    box-shadow: var(--elevation-medium)
+}
+
+.happeningNowCard-LQzIBo:focus,
+.happeningNowCard-LQzIBo:hover {
+    -webkit-transform: scale(1);
+    transform: scale(1)
+}
+
+.happeningNowCard-LQzIBo:focus .happeningNowJoin-38S9z-,
+.happeningNowCard-LQzIBo:hover .happeningNowJoin-38S9z- {
+    background-color: var(--background-primary)
+}
+
+.happeningNowCardReducedMotion-1g0V-K {
+    -webkit-transition: -webkit-transform 0ms;
+    transition: -webkit-transform 0ms;
+    transition: transform 0ms;
+    transition: transform 0ms, -webkit-transform 0ms
+}
+
+.happeningNowCardForeground-1cYPEb {
+    width: calc(100% - 32px);
+    height: 100%;
+    padding: 16px;
+    background-color: rgba(0, 0, 0, .75);
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    position: relative;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center
+}
+
+.happeningNowCardImg-1mYG_w {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: auto
+}
+
+.happeningNowAvatars-32AEpp {
+    margin-top: 8px
+}
+
+.happeningNowAvatarNames-3sVYp2 {
+    margin-top: 4px
+}
+
+.happeningNowJoin-38S9z- {
+    background-color: var(--button-secondary-background);
+    margin-top: 8px;
+    color: var(--white-500);
+    padding: 8px 16px;
+    border-radius: 16px;
+    -webkit-transition: background-color .17s;
+    transition: background-color .17s
+}
+
+.happeningNowJoinReducedMotion-8vCDkJ {
+    -webkit-transition: background-color 0ms;
+    transition: background-color 0ms
+}
+
+.happeningNowChannelAndGuildName-1WbrEm {
+    margin-top: 8px
 }
 
 .activityGridHeader-kurtV_ {
@@ -155476,4 +155577,4 @@ html .invoiceCancelRow-dVOR64 {
     flex-direction: column
 }
 
-/*# sourceMappingURL=40532.8499f4da17e53c20cdd4.css.map*/
+/*# sourceMappingURL=40532.ee36c8d7ef94c1a68709.css.map*/
