@@ -142795,6 +142795,85 @@ html .invoiceCancelRow-3s2UuC {
     margin-top: 18px
 }
 
+.headerContainer-1wtH1x {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column
+}
+
+.header-Oo37_i,
+.ratingBody-2pS-kk {
+    text-align: center
+}
+
+.ratingBody-2pS-kk {
+    margin-top: 8px
+}
+
+.ratingsFooter-EL8gPd {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    text-align: center
+}
+
+.modalBody-7bE8AC,
+.ratingsFooter-EL8gPd {
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center
+}
+
+.modalBody-7bE8AC {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    padding: 16px
+}
+
+.ratingsSelector-3r-PBP {
+    gap: 8px;
+    width: auto;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center
+}
+
+.emoji-3RvElm {
+    background-position: 50%;
+    background-repeat: no-repeat;
+    padding: 12px 32px;
+    width: 90px;
+    height: 64px;
+    border: 2px solid var(--brand-500);
+    border-radius: 20px;
+    cursor: pointer;
+    -webkit-filter: grayscale(100%);
+    filter: grayscale(100%);
+    -webkit-transition: all .2s ease;
+    transition: all .2s ease;
+    -webkit-transition-property: -webkit-transform opacity filter;
+    transition-property: -webkit-transform opacity filter;
+    transition-property: transform opacity filter;
+    transition-property: transform opacity filter, -webkit-transform opacity filter
+}
+
+.emoji-3RvElm.selected-3DAT17,
+.emoji-3RvElm:hover {
+    -webkit-filter: none;
+    filter: none
+}
+
+.emojiThumbsDown-aCbkG7 {
+    background-image: url(/assets/24632aeaea78f1e93941b4c149a8bf9f.svg)
+}
+
+.emojiThumbsUp-3ndHuY {
+    background-image: url(/assets/642eef73cf98bf9e089be73eeab55a95.svg)
+}
+
 .headerContainer-3uHkGl {
     -webkit-box-align: center;
     -ms-flex-align: center;
@@ -156194,4 +156273,4 @@ html .invoiceCancelRow-dVOR64 {
     flex-direction: column
 }
 
-/*# sourceMappingURL=40532.77985b9d9a4749bba0f0.css.map*/
+/*# sourceMappingURL=40532.d77728885efef97e9515.css.map*/
