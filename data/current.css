@@ -133023,6 +133023,7 @@ html .invoiceCancelRow-3s2UuC {
 }
 
 .activityCard-3EABg3 {
+    position: relative;
     width: 100%;
     border-radius: 8px;
     overflow: hidden;
@@ -133037,6 +133038,12 @@ html .invoiceCancelRow-3s2UuC {
 .activityCard-3EABg3:hover {
     -webkit-transform: scale(1.025);
     transform: scale(1.025)
+}
+
+.activityCard-3EABg3:focus .activityCardHoverHint-2YGYcG,
+.activityCard-3EABg3:hover .activityCardHoverHint-2YGYcG {
+    -webkit-transform: translateY(-40px);
+    transform: translateY(-40px)
 }
 
 .activityCardReducedMotion-20YSCz {
@@ -133072,7 +133079,7 @@ html .invoiceCancelRow-3s2UuC {
 }
 
 .activityCardTagContainer-NNluK2 {
-    margin-top: 8px;
+    margin-top: 16px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -133083,6 +133090,38 @@ html .invoiceCancelRow-3s2UuC {
     padding: 2px;
     border-radius: 4px;
     background-color: var(--background-tertiary)
+}
+
+.activityCardHoverHint-2YGYcG {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: calc(100% - 16px);
+    padding: 8px 8px 16px;
+    background-color: var(--background-secondary);
+    color: var(--header-secondary);
+    -webkit-transition: -webkit-transform .25s;
+    transition: -webkit-transform .25s;
+    transition: transform .25s;
+    transition: transform .25s, -webkit-transform .25s;
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center
+}
+
+.activityCardHoverHintReducedMotion-1xK00G {
+    -webkit-transition: -webkit-transform 0ms;
+    transition: -webkit-transform 0ms;
+    transition: transform 0ms;
+    transition: transform 0ms, -webkit-transform 0ms
 }
 
 .celebrateContainer-1IXowf {
@@ -155437,4 +155476,4 @@ html .invoiceCancelRow-dVOR64 {
     flex-direction: column
 }
 
-/*# sourceMappingURL=40532.a62f84e300a67f0ff5b2.css.map*/
+/*# sourceMappingURL=40532.8499f4da17e53c20cdd4.css.map*/
