@@ -4532,6 +4532,25 @@
   },
   {
     "data": {
+      "kind": "guild",
+      "id": "2023-05_ugc_notifications",
+      "label": "Notifications for UGC changes",
+      "description": [
+        "Control",
+        "Treatment 1: Show Notifications"
+      ],
+      "hash": 631733804,
+      "buckets": [
+        0,
+        1
+      ],
+      "config_keys": [
+        "enabled"
+      ]
+    }
+  },
+  {
+    "data": {
       "kind": "user",
       "id": "2021-03_nitro_emoji_autocomplete_upsell",
       "label": "Emoji Autocomplete Upsell",
