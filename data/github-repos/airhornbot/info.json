@@ -30,10 +30,10 @@
   "has_wiki": false,
   "has_pages": false,
   "has_discussions": false,
-  "forks_count": 343,
+  "forks_count": 342,
   "archived": false,
   "disabled": false,
-  "open_issues_count": 2,
+  "open_issues_count": 1,
   "license": null,
   "allow_forking": true,
   "is_template": false,
@@ -42,8 +42,8 @@
     "bot"
   ],
   "visibility": "public",
-  "forks": 343,
-  "open_issues": 2,
+  "forks": 342,
+  "open_issues": 1,
   "watchers": 841,
   "default_branch": "main",
   "permissions": {

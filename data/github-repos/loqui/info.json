@@ -30,7 +30,7 @@
   "has_wiki": true,
   "has_pages": false,
   "has_discussions": false,
-  "forks_count": 31,
+  "forks_count": 32,
   "archived": true,
   "disabled": false,
   "open_issues_count": 16,
@@ -51,7 +51,7 @@
     "rpc"
   ],
   "visibility": "public",
-  "forks": 31,
+  "forks": 32,
   "open_issues": 16,
   "watchers": 217,
   "default_branch": "master",
