@@ -1667,6 +1667,623 @@
   },
   {
     "data": {
+      "kind": "user",
+      "id": "2021-04_network_action_logging",
+      "label": "Standard Analytics: Log Network Actions",
+      "description": [
+        "Control",
+        "Treatment 1: Log network actions"
+      ],
+      "hash": 3643362751,
+      "buckets": [
+        0,
+        1
+      ],
+      "config_keys": [
+        "enabled"
+      ]
+    }
+  },
+  {
+    "data": {
+      "kind": "user",
+      "id": "2023-05_dcf_improvements",
+      "label": "DCF Improvements Experiment",
+      "description": [
+        "Control",
+        "Treatment 1: Users will have a DC cooldown of 1 hour",
+        "Treatment 2: DCs will be dismissed when a user navigates away from their surface"
+      ],
+      "hash": 1171817240,
+      "buckets": [
+        0,
+        1,
+        2
+      ],
+      "config_keys": [
+        "cooldownPeriod",
+        "dismissOnNavigation"
+      ]
+    }
+  },
+  {
+    "data": {
+      "kind": "user",
+      "id": "2023-03_activities_release_tools",
+      "label": "Activities Release Tools",
+      "description": [
+        "Control",
+        "Treatment 1: enable activities release tools"
+      ],
+      "hash": 3482834131,
+      "buckets": [
+        0,
+        1
+      ],
+      "config_keys": [
+        "enabled"
+      ]
+    }
+  },
+  {
+    "data": {
+      "kind": "user",
+      "id": "2022-09_emoji_ecosystem_holdout",
+      "label": "Emoji Ecosystem Holdout Experiment",
+      "description": [
+        "Control",
+        "Treatment 1: In the Emoji Ecosystem Holdout"
+      ],
+      "hash": 667096268,
+      "buckets": [
+        0,
+        1
+      ],
+      "config_keys": [
+        "enabled"
+      ]
+    }
+  },
+  {
+    "data": {
+      "kind": "user",
+      "id": "2022-09_emoji_picker_discovery",
+      "label": "Emoji Picker Improved Discovery",
+      "description": [
+        "Control",
+        "Treatment 1: Bigger Picker",
+        "Treatment 2: Bigger Picker + Popular Server Emojis",
+        "Treatment 3: Bigger Picker + Newly Added Emojis"
+      ],
+      "hash": 346890398,
+      "buckets": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "config_keys": [
+        "enabled"
+      ]
+    }
+  },
+  {
+    "data": {
+      "kind": "guild",
+      "id": "2023-02_stage_boosting",
+      "label": "Stage Boosting",
+      "description": [
+        "Control",
+        "Treatment 1: Enabled"
+      ],
+      "hash": 1816004721,
+      "buckets": [
+        0,
+        1
+      ],
+      "config_keys": [
+        "enabled"
+      ]
+    },
+    "rollout": {
+      "populations": [
+        {
+          "buckets": {
+            "1": {
+              "rollout": [
+                {
+                  "start": 0,
+                  "end": 500
+                },
+                {
+                  "start": 500,
+                  "end": 5000
+                },
+                {
+                  "start": 5000,
+                  "end": 9500
+                },
+                {
+                  "start": 9500,
+                  "end": 10000
+                }
+              ]
+            }
+          },
+          "filters": [
+            {
+              "type": "guild_has_feature",
+              "features": [
+                "COMMUNITY"
+              ]
+            },
+            {
+              "type": "guild_in_range_by_hash",
+              "hash_key": 1816004721,
+              "target": 10000
+            }
+          ]
+        },
+        {
+          "buckets": {
+            "none": {
+              "rollout": [
+                {
+                  "start": 0,
+                  "end": 10000
+                }
+              ]
+            }
+          },
+          "filters": [
+            {
+              "type": "guild_has_feature",
+              "features": [
+                "COMMUNITY"
+              ]
+            }
+          ]
+        },
+        {
+          "buckets": {
+            "none": {
+              "rollout": [
+                {
+                  "start": 0,
+                  "end": 10000
+                }
+              ]
+            }
+          },
+          "filters": []
+        }
+      ],
+      "revision": 2,
+      "overrides": {},
+      "overrides_formatted": [
+        {
+          "buckets": {
+            "1": {
+              "rollout": [
+                {
+                  "start": 0,
+                  "end": 10000
+                }
+              ]
+            }
+          },
+          "filters": [
+            {
+              "type": "guild_ids",
+              "ids": [
+                "885418158788345897"
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "data": {
+      "kind": "user",
+      "id": "2021-09_ios_screenshare_resolution_profiles",
+      "label": "iOS: Screenshare resolution profiles",
+      "description": [
+        "Control",
+        "Treatment 1: Permanent old resolution",
+        "Treatment 2: Old resolution for 10s",
+        "Treatment 3: Wait 3s after 1st frame capture",
+        "Treatment 4: Wait 3s to capture 1st frame"
+      ],
+      "hash": 3656427814,
+      "buckets": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "config_keys": [
+        "enabled"
+      ]
+    }
+  },
+  {
+    "data": {
+      "kind": "user",
+      "id": "2022-10_context_menu_and_new_media_picker",
+      "label": "Context Menu and New Media Picker",
+      "description": [
+        "Control",
+        "Treatment 1: New media picker is enabled. Gift button is visible alongside Create Chread",
+        "Treatment 2: New media picker is enabled. Gift button is NOT visible alongside Create Chread"
+      ],
+      "hash": 478936943,
+      "buckets": [
+        0,
+        1,
+        2
+      ],
+      "config_keys": [
+        "enabled"
+      ]
+    }
+  },
+  {
+    "data": {
+      "kind": "user",
+      "id": "2022-08_guild_unreads",
+      "label": "Guild Unreads",
+      "description": [
+        "Control",
+        "Treatment 1: Allow \"Highlights\" as an Unreads Option"
+      ],
+      "hash": 4073302433,
+      "buckets": [
+        0,
+        1
+      ],
+      "config_keys": [
+        "enabled"
+      ]
+    }
+  },
+  {
+    "data": {
+      "kind": "user",
+      "id": "2022-11_notification_redesign",
+      "label": "NotificationRedesign",
+      "description": [
+        "Control",
+        "Treatment 1: Notification Redesign Enabled"
+      ],
+      "hash": 1792467213,
+      "buckets": [
+        0,
+        1
+      ],
+      "config_keys": [
+        "enabled"
+      ]
+    }
+  },
+  {
+    "data": {
+      "kind": "user",
+      "id": "2023-04_notification_redesign_v2",
+      "label": "NotificationRedesignV2",
+      "description": [
+        "Control",
+        "Treatment 1: Notification Redesign V2 Enabled"
+      ],
+      "hash": 1347697298,
+      "buckets": [
+        0,
+        1
+      ],
+      "config_keys": [
+        "enabled"
+      ]
+    }
+  },
+  {
+    "data": {
+      "kind": "user",
+      "id": "2022-11_desktop_notification_center",
+      "label": "Desktop notification center",
+      "description": [
+        "Control",
+        "Treatment 1: Notification center desktop enabled"
+      ],
+      "hash": 1323079101,
+      "buckets": [
+        0,
+        1
+      ],
+      "config_keys": [
+        "enabled"
+      ]
+    }
+  },
+  {
+    "data": {
+      "kind": "user",
+      "id": "2022-07_channel_highlights",
+      "label": "Channel Highlights",
+      "description": [
+        "Control",
+        "Treatment 1: Show Channel Highlights"
+      ],
+      "hash": 4169687140,
+      "buckets": [
+        0,
+        1
+      ],
+      "config_keys": [
+        "enabled"
+      ]
+    }
+  },
+  {
+    "data": {
+      "kind": "user",
+      "id": "2023-03_store_latest_message_data",
+      "label": "Store latest message data",
+      "description": [
+        "Control",
+        "Treatment 1: Use latest data from api/gateway"
+      ],
+      "hash": 1617749743,
+      "buckets": [
+        0,
+        1
+      ],
+      "config_keys": [
+        "enabled"
+      ]
+    }
+  },
+  {
+    "data": {
+      "kind": "guild",
+      "id": "2023-02_burst_reaction_guild_experiment",
+      "label": "Burst Reactions",
+      "description": [
+        "Control",
+        "Treatment 1: Enabled",
+        "Treatment 2: Tab UI",
+        "Treatment 4: Free Bursts"
+      ],
+      "hash": 2014775304,
+      "buckets": [
+        0,
+        1,
+        2,
+        4
+      ],
+      "config_keys": [
+        "enabled",
+        "hasTabUI",
+        "hasInfinite",
+        "hasFreeBursts"
+      ]
+    },
+    "rollout": {
+      "populations": [
+        {
+          "buckets": {
+            "4": {
+              "rollout": [
+                {
+                  "start": 0,
+                  "end": 10000
+                }
+              ]
+            }
+          },
+          "filters": [
+            {
+              "type": "guild_has_feature",
+              "features": [
+                "INTERNAL_EMPLOYEE_ONLY"
+              ]
+            }
+          ]
+        },
+        {
+          "buckets": {
+            "1": {
+              "rollout": [
+                {
+                  "start": 0,
+                  "end": 100
+                },
+                {
+                  "start": 200,
+                  "end": 600
+                }
+              ]
+            },
+            "4": {
+              "rollout": [
+                {
+                  "start": 100,
+                  "end": 200
+                },
+                {
+                  "start": 600,
+                  "end": 1000
+                },
+                {
+                  "start": 1000,
+                  "end": 1500
+                },
+                {
+                  "start": 1500,
+                  "end": 2000
+                }
+              ]
+            },
+            "none": {
+              "rollout": [
+                {
+                  "start": 2000,
+                  "end": 10000
+                }
+              ]
+            }
+          },
+          "filters": []
+        }
+      ],
+      "revision": 3,
+      "overrides": {
+        "4": [
+          "886812261455368233",
+          "315263844207558671",
+          "268982240569065472",
+          "1007668375159320607",
+          "943265993613008967",
+          "992539246835535943",
+          "1008822885378433105",
+          "1001114660524806205",
+          "1037856262144135230",
+          "642500834516664331",
+          "900193715962912819",
+          "533420789547139077",
+          "928454829079138344",
+          "169256939211980800",
+          "348185509484298240",
+          "132251458665054209",
+          "942897714956472401",
+          "917594655414181898",
+          "775023113645064253",
+          "1009606240546066473",
+          "81384788765712384",
+          "1073747669937299567",
+          "401220874742661121"
+        ]
+      },
+      "overrides_formatted": []
+    }
+  },
+  {
+    "data": {
+      "kind": "user",
+      "id": "2022-09_burst_reactions",
+      "label": "Burst Reactions User Experiment",
+      "description": [
+        "Control",
+        "Treatment 1: User two entry points",
+        "Treatment 2: User Tab UI",
+        "Treatment 4: User Free Bursts",
+        "Treatment 5: User Free Bursts",
+        "Treatment 6: Combined entry point and tabs",
+        "Treatment 7: Combined entry point and tabs + double weekly refills",
+        "Treatment 8: All additional polish",
+        "Treatment 9: All additional polish except notifications",
+        "Treatment 10: The exact same as bucket six, just with a different label"
+      ],
+      "hash": 1443856828,
+      "buckets": [
+        0,
+        1,
+        2,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10
+      ],
+      "config_keys": [
+        "enabled",
+        "hasTabUI",
+        "hasTwoButtonEntryPoint",
+        "hasFreeBursts"
+      ]
+    }
+  },
+  {
+    "data": {
+      "kind": "user",
+      "id": "2023-03_mobile_burst_reactions",
+      "label": "Mobile Burst Reactions User Experiment",
+      "description": [
+        "Control",
+        "Treatment 1: Enabled"
+      ],
+      "hash": 412458642,
+      "buckets": [
+        0,
+        1
+      ],
+      "config_keys": [
+        "enabled"
+      ]
+    }
+  },
+  {
+    "data": {
+      "kind": "user",
+      "id": "2023-04_activity_launcher_embed",
+      "label": "Activity Launcher Embed",
+      "description": [
+        "Control",
+        "Treatment 1: Enable the Activity Launcher Embed in chat"
+      ],
+      "hash": 3699020455,
+      "buckets": [
+        0,
+        1
+      ],
+      "config_keys": [
+        "enabled"
+      ]
+    }
+  },
+  {
+    "data": {
+      "kind": "user",
+      "id": "2022-12_media_mosaic_experiment",
+      "label": "Media Mosaic",
+      "description": [
+        "Control",
+        "Treatment 1: Media mosaic is enabled"
+      ],
+      "hash": 1133868976,
+      "buckets": [
+        0,
+        1
+      ],
+      "config_keys": [
+        "enabled"
+      ]
+    }
+  },
+  {
+    "data": {
+      "kind": "user",
+      "id": "2023-02_inline_sending_preview_mobile",
+      "label": "Inline Sending Preview Mobile",
+      "description": [
+        "Control",
+        "Treatment 1: Inline sending preview is enabled on mobile (both iOS and Android)"
+      ],
+      "hash": 1582099574,
+      "buckets": [
+        0,
+        1
+      ],
+      "config_keys": [
+        "enabled"
+      ]
+    }
+  },
+  {
+    "data": {
       "kind": "guild",
       "id": "2022-10_communities_multi",
       "label": "A multi-arm guild experiment that segments all eligible guilds to test different combinations of the Communities 2.0 experience",
@@ -2046,623 +2663,6 @@
       ],
       "config_keys": [
         "freeStickersEnabled"
-      ]
-    }
-  },
-  {
-    "data": {
-      "kind": "user",
-      "id": "2022-10_context_menu_and_new_media_picker",
-      "label": "Context Menu and New Media Picker",
-      "description": [
-        "Control",
-        "Treatment 1: New media picker is enabled. Gift button is visible alongside Create Chread",
-        "Treatment 2: New media picker is enabled. Gift button is NOT visible alongside Create Chread"
-      ],
-      "hash": 478936943,
-      "buckets": [
-        0,
-        1,
-        2
-      ],
-      "config_keys": [
-        "enabled"
-      ]
-    }
-  },
-  {
-    "data": {
-      "kind": "user",
-      "id": "2023-03_activities_release_tools",
-      "label": "Activities Release Tools",
-      "description": [
-        "Control",
-        "Treatment 1: enable activities release tools"
-      ],
-      "hash": 3482834131,
-      "buckets": [
-        0,
-        1
-      ],
-      "config_keys": [
-        "enabled"
-      ]
-    }
-  },
-  {
-    "data": {
-      "kind": "user",
-      "id": "2022-08_guild_unreads",
-      "label": "Guild Unreads",
-      "description": [
-        "Control",
-        "Treatment 1: Allow \"Highlights\" as an Unreads Option"
-      ],
-      "hash": 4073302433,
-      "buckets": [
-        0,
-        1
-      ],
-      "config_keys": [
-        "enabled"
-      ]
-    }
-  },
-  {
-    "data": {
-      "kind": "user",
-      "id": "2022-11_notification_redesign",
-      "label": "NotificationRedesign",
-      "description": [
-        "Control",
-        "Treatment 1: Notification Redesign Enabled"
-      ],
-      "hash": 1792467213,
-      "buckets": [
-        0,
-        1
-      ],
-      "config_keys": [
-        "enabled"
-      ]
-    }
-  },
-  {
-    "data": {
-      "kind": "user",
-      "id": "2023-04_notification_redesign_v2",
-      "label": "NotificationRedesignV2",
-      "description": [
-        "Control",
-        "Treatment 1: Notification Redesign V2 Enabled"
-      ],
-      "hash": 1347697298,
-      "buckets": [
-        0,
-        1
-      ],
-      "config_keys": [
-        "enabled"
-      ]
-    }
-  },
-  {
-    "data": {
-      "kind": "user",
-      "id": "2022-11_desktop_notification_center",
-      "label": "Desktop notification center",
-      "description": [
-        "Control",
-        "Treatment 1: Notification center desktop enabled"
-      ],
-      "hash": 1323079101,
-      "buckets": [
-        0,
-        1
-      ],
-      "config_keys": [
-        "enabled"
-      ]
-    }
-  },
-  {
-    "data": {
-      "kind": "user",
-      "id": "2022-07_channel_highlights",
-      "label": "Channel Highlights",
-      "description": [
-        "Control",
-        "Treatment 1: Show Channel Highlights"
-      ],
-      "hash": 4169687140,
-      "buckets": [
-        0,
-        1
-      ],
-      "config_keys": [
-        "enabled"
-      ]
-    }
-  },
-  {
-    "data": {
-      "kind": "user",
-      "id": "2023-03_store_latest_message_data",
-      "label": "Store latest message data",
-      "description": [
-        "Control",
-        "Treatment 1: Use latest data from api/gateway"
-      ],
-      "hash": 1617749743,
-      "buckets": [
-        0,
-        1
-      ],
-      "config_keys": [
-        "enabled"
-      ]
-    }
-  },
-  {
-    "data": {
-      "kind": "guild",
-      "id": "2023-02_burst_reaction_guild_experiment",
-      "label": "Burst Reactions",
-      "description": [
-        "Control",
-        "Treatment 1: Enabled",
-        "Treatment 2: Tab UI",
-        "Treatment 4: Free Bursts"
-      ],
-      "hash": 2014775304,
-      "buckets": [
-        0,
-        1,
-        2,
-        4
-      ],
-      "config_keys": [
-        "enabled",
-        "hasTabUI",
-        "hasInfinite",
-        "hasFreeBursts"
-      ]
-    },
-    "rollout": {
-      "populations": [
-        {
-          "buckets": {
-            "4": {
-              "rollout": [
-                {
-                  "start": 0,
-                  "end": 10000
-                }
-              ]
-            }
-          },
-          "filters": [
-            {
-              "type": "guild_has_feature",
-              "features": [
-                "INTERNAL_EMPLOYEE_ONLY"
-              ]
-            }
-          ]
-        },
-        {
-          "buckets": {
-            "1": {
-              "rollout": [
-                {
-                  "start": 0,
-                  "end": 100
-                },
-                {
-                  "start": 200,
-                  "end": 600
-                }
-              ]
-            },
-            "4": {
-              "rollout": [
-                {
-                  "start": 100,
-                  "end": 200
-                },
-                {
-                  "start": 600,
-                  "end": 1000
-                },
-                {
-                  "start": 1000,
-                  "end": 1500
-                },
-                {
-                  "start": 1500,
-                  "end": 2000
-                }
-              ]
-            },
-            "none": {
-              "rollout": [
-                {
-                  "start": 2000,
-                  "end": 10000
-                }
-              ]
-            }
-          },
-          "filters": []
-        }
-      ],
-      "revision": 3,
-      "overrides": {
-        "4": [
-          "886812261455368233",
-          "315263844207558671",
-          "268982240569065472",
-          "1007668375159320607",
-          "943265993613008967",
-          "992539246835535943",
-          "1008822885378433105",
-          "1001114660524806205",
-          "1037856262144135230",
-          "642500834516664331",
-          "900193715962912819",
-          "533420789547139077",
-          "928454829079138344",
-          "169256939211980800",
-          "348185509484298240",
-          "132251458665054209",
-          "942897714956472401",
-          "917594655414181898",
-          "775023113645064253",
-          "1009606240546066473",
-          "81384788765712384",
-          "1073747669937299567",
-          "401220874742661121"
-        ]
-      },
-      "overrides_formatted": []
-    }
-  },
-  {
-    "data": {
-      "kind": "user",
-      "id": "2022-09_burst_reactions",
-      "label": "Burst Reactions User Experiment",
-      "description": [
-        "Control",
-        "Treatment 1: User two entry points",
-        "Treatment 2: User Tab UI",
-        "Treatment 4: User Free Bursts",
-        "Treatment 5: User Free Bursts",
-        "Treatment 6: Combined entry point and tabs",
-        "Treatment 7: Combined entry point and tabs + double weekly refills",
-        "Treatment 8: All additional polish",
-        "Treatment 9: All additional polish except notifications",
-        "Treatment 10: The exact same as bucket six, just with a different label"
-      ],
-      "hash": 1443856828,
-      "buckets": [
-        0,
-        1,
-        2,
-        4,
-        5,
-        6,
-        7,
-        8,
-        9,
-        10
-      ],
-      "config_keys": [
-        "enabled",
-        "hasTabUI",
-        "hasTwoButtonEntryPoint",
-        "hasFreeBursts"
-      ]
-    }
-  },
-  {
-    "data": {
-      "kind": "user",
-      "id": "2023-03_mobile_burst_reactions",
-      "label": "Mobile Burst Reactions User Experiment",
-      "description": [
-        "Control",
-        "Treatment 1: Enabled"
-      ],
-      "hash": 412458642,
-      "buckets": [
-        0,
-        1
-      ],
-      "config_keys": [
-        "enabled"
-      ]
-    }
-  },
-  {
-    "data": {
-      "kind": "user",
-      "id": "2023-04_activity_launcher_embed",
-      "label": "Activity Launcher Embed",
-      "description": [
-        "Control",
-        "Treatment 1: Enable the Activity Launcher Embed in chat"
-      ],
-      "hash": 3699020455,
-      "buckets": [
-        0,
-        1
-      ],
-      "config_keys": [
-        "enabled"
-      ]
-    }
-  },
-  {
-    "data": {
-      "kind": "user",
-      "id": "2022-12_media_mosaic_experiment",
-      "label": "Media Mosaic",
-      "description": [
-        "Control",
-        "Treatment 1: Media mosaic is enabled"
-      ],
-      "hash": 1133868976,
-      "buckets": [
-        0,
-        1
-      ],
-      "config_keys": [
-        "enabled"
-      ]
-    }
-  },
-  {
-    "data": {
-      "kind": "user",
-      "id": "2023-02_inline_sending_preview_mobile",
-      "label": "Inline Sending Preview Mobile",
-      "description": [
-        "Control",
-        "Treatment 1: Inline sending preview is enabled on mobile (both iOS and Android)"
-      ],
-      "hash": 1582099574,
-      "buckets": [
-        0,
-        1
-      ],
-      "config_keys": [
-        "enabled"
-      ]
-    }
-  },
-  {
-    "data": {
-      "kind": "user",
-      "id": "2022-09_emoji_ecosystem_holdout",
-      "label": "Emoji Ecosystem Holdout Experiment",
-      "description": [
-        "Control",
-        "Treatment 1: In the Emoji Ecosystem Holdout"
-      ],
-      "hash": 667096268,
-      "buckets": [
-        0,
-        1
-      ],
-      "config_keys": [
-        "enabled"
-      ]
-    }
-  },
-  {
-    "data": {
-      "kind": "user",
-      "id": "2022-09_emoji_picker_discovery",
-      "label": "Emoji Picker Improved Discovery",
-      "description": [
-        "Control",
-        "Treatment 1: Bigger Picker",
-        "Treatment 2: Bigger Picker + Popular Server Emojis",
-        "Treatment 3: Bigger Picker + Newly Added Emojis"
-      ],
-      "hash": 346890398,
-      "buckets": [
-        0,
-        1,
-        2,
-        3
-      ],
-      "config_keys": [
-        "enabled"
-      ]
-    }
-  },
-  {
-    "data": {
-      "kind": "user",
-      "id": "2021-04_network_action_logging",
-      "label": "Standard Analytics: Log Network Actions",
-      "description": [
-        "Control",
-        "Treatment 1: Log network actions"
-      ],
-      "hash": 3643362751,
-      "buckets": [
-        0,
-        1
-      ],
-      "config_keys": [
-        "enabled"
-      ]
-    }
-  },
-  {
-    "data": {
-      "kind": "user",
-      "id": "2023-05_dcf_improvements",
-      "label": "DCF Improvements Experiment",
-      "description": [
-        "Control",
-        "Treatment 1: Users will have a DC cooldown of 1 hour",
-        "Treatment 2: DCs will be dismissed when a user navigates away from their surface"
-      ],
-      "hash": 1171817240,
-      "buckets": [
-        0,
-        1,
-        2
-      ],
-      "config_keys": [
-        "cooldownPeriod",
-        "dismissOnNavigation"
-      ]
-    }
-  },
-  {
-    "data": {
-      "kind": "guild",
-      "id": "2023-02_stage_boosting",
-      "label": "Stage Boosting",
-      "description": [
-        "Control",
-        "Treatment 1: Enabled"
-      ],
-      "hash": 1816004721,
-      "buckets": [
-        0,
-        1
-      ],
-      "config_keys": [
-        "enabled"
-      ]
-    },
-    "rollout": {
-      "populations": [
-        {
-          "buckets": {
-            "1": {
-              "rollout": [
-                {
-                  "start": 0,
-                  "end": 500
-                },
-                {
-                  "start": 500,
-                  "end": 5000
-                },
-                {
-                  "start": 5000,
-                  "end": 9500
-                },
-                {
-                  "start": 9500,
-                  "end": 10000
-                }
-              ]
-            }
-          },
-          "filters": [
-            {
-              "type": "guild_has_feature",
-              "features": [
-                "COMMUNITY"
-              ]
-            },
-            {
-              "type": "guild_in_range_by_hash",
-              "hash_key": 1816004721,
-              "target": 10000
-            }
-          ]
-        },
-        {
-          "buckets": {
-            "none": {
-              "rollout": [
-                {
-                  "start": 0,
-                  "end": 10000
-                }
-              ]
-            }
-          },
-          "filters": [
-            {
-              "type": "guild_has_feature",
-              "features": [
-                "COMMUNITY"
-              ]
-            }
-          ]
-        },
-        {
-          "buckets": {
-            "none": {
-              "rollout": [
-                {
-                  "start": 0,
-                  "end": 10000
-                }
-              ]
-            }
-          },
-          "filters": []
-        }
-      ],
-      "revision": 2,
-      "overrides": {},
-      "overrides_formatted": [
-        {
-          "buckets": {
-            "1": {
-              "rollout": [
-                {
-                  "start": 0,
-                  "end": 10000
-                }
-              ]
-            }
-          },
-          "filters": [
-            {
-              "type": "guild_ids",
-              "ids": [
-                "885418158788345897"
-              ]
-            }
-          ]
-        }
-      ]
-    }
-  },
-  {
-    "data": {
-      "kind": "user",
-      "id": "2021-09_ios_screenshare_resolution_profiles",
-      "label": "iOS: Screenshare resolution profiles",
-      "description": [
-        "Control",
-        "Treatment 1: Permanent old resolution",
-        "Treatment 2: Old resolution for 10s",
-        "Treatment 3: Wait 3s after 1st frame capture",
-        "Treatment 4: Wait 3s to capture 1st frame"
-      ],
-      "hash": 3656427814,
-      "buckets": [
-        0,
-        1,
-        2,
-        3,
-        4
-      ],
-      "config_keys": [
-        "enabled"
       ]
     }
   },
