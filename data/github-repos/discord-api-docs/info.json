@@ -17,7 +17,7 @@
   "fork": false,
   "url": "https://api.github.com/repos/discord/discord-api-docs",
   "created_at": "2016-03-29T17:11:53Z",
-  "updated_at": "2023-05-21T10:43:18Z",
+  "updated_at": "2023-05-21T14:52:40Z",
   "pushed_at": "2023-05-18T08:50:38Z",
   "homepage": "https://discord.com/developers/docs/intro",
   "size": 59778,
@@ -33,7 +33,7 @@
   "forks_count": 1270,
   "archived": false,
   "disabled": false,
-  "open_issues_count": 191,
+  "open_issues_count": 192,
   "license": {
     "key": "other",
     "name": "Other",
@@ -52,7 +52,7 @@
   ],
   "visibility": "public",
   "forks": 1270,
-  "open_issues": 191,
+  "open_issues": 192,
   "watchers": 5409,
   "default_branch": "main",
   "permissions": {
