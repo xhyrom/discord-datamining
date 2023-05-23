@@ -25255,7 +25255,8 @@ img[alt] {
 }
 
 .roleDot-xO-2ix {
-    margin-right: 2px
+    margin-right: 2px;
+    margin-left: -2px
 }
 
 .descriptionText-2b5seS {
@@ -156404,4 +156405,4 @@ html .invoiceCancelRow-dVOR64 {
     flex-direction: column
 }
 
-/*# sourceMappingURL=40532.21e5f955e779acb3e2f5.css.map*/
+/*# sourceMappingURL=40532.aa711d31d8a723d3c4f4.css.map*/
