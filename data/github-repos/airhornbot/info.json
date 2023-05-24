@@ -33,7 +33,7 @@
   "forks_count": 343,
   "archived": false,
   "disabled": false,
-  "open_issues_count": 1,
+  "open_issues_count": 2,
   "license": null,
   "allow_forking": true,
   "is_template": false,
@@ -43,7 +43,7 @@
   ],
   "visibility": "public",
   "forks": 343,
-  "open_issues": 1,
+  "open_issues": 2,
   "watchers": 841,
   "default_branch": "main",
   "permissions": {
