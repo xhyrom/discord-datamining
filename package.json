@@ -22,6 +22,7 @@
     "js-beautify": "^1.14.7",
     "kleur": "^4.1.5",
     "murmurhash": "^2.0.1",
-    "simple-git": "^3.17.0"
+    "simple-git": "^3.17.0",
+    "xml2json": "^0.12.0"
   }
 }
