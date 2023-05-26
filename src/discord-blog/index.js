@@ -1,4 +1,4 @@
-import xml2json from "xml2json";
+import xml2json from "xml-js";
 
 import { writeFile, mkdir } from "node:fs/promises";
 import { join } from "node:path";
@@ -6,6 +6,7 @@ import simpleGit from "simple-git";
 import { error, success } from "../logger.js";
 import months from "../months.js";
 import { diff } from "./diff.js";
+import { makeAllPropsStrings } from "./utils.js";
 
 const git = simpleGit();
 
@@ -16,11 +17,12 @@ const [webhookId, webhookToken] = new URL(process.env.DISCORD_WEBHOOK).pathname
 await mkdir(join("data", "blog-articles"), { recursive: true }).catch(() => {});
 
 const res = await (await fetch("https://discord.com/blog/rss.xml")).text();
-const json = JSON.parse(xml2json.toJson(res));
+const json = JSON.parse(xml2json.xml2json(res, { compact: true }));
 
 const { channel } = json.rss;
 
-for (const item of channel.item) {
+for (let item of channel.item) {
+  item = makeAllPropsStrings(item);
   const id = item.link.split("/").pop();
   const path = join("data", "blog-articles", id);
 
@@ -36,7 +38,7 @@ for (const item of channel.item) {
 
 await writeFile(
   join("data", "blog-articles", "channel.json"),
-  JSON.stringify(channel, null, 2)
+  JSON.stringify(makeAllPropsStrings(channel), null, 2)
 );
 
 success("Successfully fetched blog articles 🚀");
