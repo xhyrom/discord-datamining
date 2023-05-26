@@ -1649,25 +1649,6 @@
   {
     "data": {
       "kind": "user",
-      "id": "2022-04_forced_colors_desktop",
-      "label": "Forced Colors Mode (Desktop)",
-      "description": [
-        "Control",
-        "Treatment 1: Allow Forced Colors Mode"
-      ],
-      "hash": 3557480712,
-      "buckets": [
-        0,
-        1
-      ],
-      "config_keys": [
-        "enabled"
-      ]
-    }
-  },
-  {
-    "data": {
-      "kind": "user",
       "id": "2021-04_network_action_logging",
       "label": "Standard Analytics: Log Network Actions",
       "description": [
