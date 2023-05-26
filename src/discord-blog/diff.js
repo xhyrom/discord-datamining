@@ -7,7 +7,7 @@ import { EmbedBuilder } from "@discordjs/builders";
  * @param {string} webhookId
  * @param {string} webhookToken
  */
-export const diff = (items, webhookId, webhookToken) => {
+export const diff = async (items, webhookId, webhookToken) => {
   const fileNames = execSync("git diff --name-only FETCH_HEAD data/")
     .toString()
     .split("\n");
@@ -66,6 +66,11 @@ export const diff = (items, webhookId, webhookToken) => {
       )
       .setColor(0xe8c61a);
 
-    send(webhookId, webhookToken, [embed.toJSON()], "1111709102314377358");
+    await send(
+      webhookId,
+      webhookToken,
+      [embed.toJSON()],
+      "1111709102314377358"
+    );
   }
 };
