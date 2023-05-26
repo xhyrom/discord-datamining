@@ -36,9 +36,16 @@ export const diff = async (items, webhookId, webhookToken) => {
     const data = items.find((item) =>
       makeAllPropsStrings(item).link.includes(id)
     );
-    let changes = `\`\`\`diff\n${article.changes}\`\`\``;
-    if (changes.length > 1024) {
-      changes = changes.slice(0, 1015) + "...```";
+    if (!data) continue;
+
+    let changesData = `\`\`\`diff\n${article.data}\`\`\``;
+    if (changesData.length > 1024) {
+      changesData = changesData.slice(0, 1015) + "...```";
+    }
+
+    let changesContent = `\`\`\`diff\n${article.content}\`\`\``;
+    if (changesContent.length > 1024) {
+      changesContent = changesContent.slice(0, 1015) + "...```";
     }
 
     const embed = new EmbedBuilder()
@@ -61,8 +68,13 @@ export const diff = async (items, webhookId, webhookToken) => {
           inline: true,
         },
         {
-          name: "Changes",
-          value: changes,
+          name: "Changes Data",
+          value: changesData,
+          inline: true,
+        },
+        {
+          name: "Changes Content",
+          value: changesContent,
           inline: true,
         }
       )
