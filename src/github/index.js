@@ -1,7 +1,7 @@
 import "dotenv/config";
 import repos from "./repos.js";
-import { omit } from "./utils.js";
-import { success } from "../logger.js";
+import { omit } from "../utils.js";
+import { error, success } from "../logger.js";
 import months from "../months.js";
 
 import { writeFile, mkdir } from "node:fs/promises";
@@ -22,7 +22,10 @@ for (const repo of repos) {
 
   await mkdir(path, { recursive: true }).catch(() => {});
 
-  await writeFile(join(path, "info.json"), JSON.stringify(omit(repo), null, 2));
+  await writeFile(
+    join(path, "info.json"),
+    JSON.stringify(omit(repo, "_url"), null, 2)
+  );
 }
 
 const result = await git.status();
