@@ -1,6 +1,7 @@
 import { execSync } from "node:child_process";
 import { send } from "./webhooks.js";
 import { EmbedBuilder } from "@discordjs/builders";
+import { makeAllPropsStrings } from "./utils.js";
 
 /**
  * @param {unknown[]} items
@@ -27,13 +28,14 @@ export const diff = async (items, webhookId, webhookToken) => {
       ?.replace(".html", "");
     if (!articleName || !fileName) return acc;
     if (!acc[articleName]) acc[articleName] = {};
-    acc[articleName].title = articleName;
     acc[articleName][fileName] = file.content;
     return acc;
-  }, []);
+  }, {});
 
-  for (const article of articles) {
-    const data = items.find((item) => item.title === article.title);
+  for (const [id, article] of Object.entries(articles)) {
+    const data = items.find((item) =>
+      makeAllPropsStrings(item).link.includes(id)
+    );
     let changes = `\`\`\`diff\n${article.changes}\`\`\``;
     if (changes.length > 1024) {
       changes = changes.slice(0, 1015) + "...```";
@@ -45,7 +47,7 @@ export const diff = async (items, webhookId, webhookToken) => {
       .addFields(
         {
           name: "Title",
-          value: article.title,
+          value: data.title,
           inline: true,
         },
         {

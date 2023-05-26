@@ -46,7 +46,8 @@ if (langComment) {
     owner: eventPayload.repository.owner.login,
     repo: eventPayload.repository.name,
     commit_sha: eventPayload.after,
-    body: langComment,
+    body:
+      langComment.length > 65536 ? langComment.slice(0, 65536) : langComment,
   });
 
   await send(
@@ -65,7 +66,10 @@ if (stylesheetComment) {
     owner: eventPayload.repository.owner.login,
     repo: eventPayload.repository.name,
     commit_sha: eventPayload.after,
-    body: stylesheetComment,
+    body:
+      stylesheetComment.length > 65536
+        ? stylesheetComment.slice(0, 65536)
+        : stylesheetComment,
   });
 
   await send(
