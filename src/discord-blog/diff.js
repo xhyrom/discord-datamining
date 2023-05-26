@@ -48,45 +48,49 @@ export const diff = async (items, webhookId, webhookToken) => {
       changesContent = changesContent.slice(0, 1015) + "...```";
     }
 
-    const embed = new EmbedBuilder()
-      .setTitle("Article Updated")
-      .setDescription(data.description ?? "")
-      .addFields(
-        {
-          name: "Title",
-          value: data.title ?? "??",
-          inline: true,
-        },
-        {
-          name: "Link",
-          value: data.link ?? "??",
-          inline: true,
-        },
-        {
-          name: "Publish Date",
-          value: `<t:${Math.floor(
-            new Date(data.pubDate ?? 0).getTime() / 1000
-          )}>`,
-          inline: true,
-        },
-        {
-          name: "Changes Data",
-          value: changesData,
-          inline: true,
-        },
-        {
-          name: "Changes Content",
-          value: changesContent,
-          inline: true,
-        }
-      )
-      .setColor(0xe8c61a);
+    try {
+      const embed = new EmbedBuilder()
+        .setTitle("Article Updated")
+        .setDescription(data.description ?? "")
+        .addFields(
+          {
+            name: "Title",
+            value: data.title ?? "??",
+            inline: true,
+          },
+          {
+            name: "Link",
+            value: data.link ?? "??",
+            inline: true,
+          },
+          {
+            name: "Publish Date",
+            value: `<t:${Math.floor(
+              new Date(data.pubDate ?? 0).getTime() / 1000
+            )}>`,
+            inline: true,
+          },
+          {
+            name: "Changes Data",
+            value: changesData,
+            inline: true,
+          },
+          {
+            name: "Changes Content",
+            value: changesContent,
+            inline: true,
+          }
+        )
+        .setColor(0xe8c61a);
 
-    await send(
-      webhookId,
-      webhookToken,
-      [embed.toJSON()],
-      "1111709102314377358"
-    );
+      await send(
+        webhookId,
+        webhookToken,
+        [embed.toJSON()],
+        "1111709102314377358"
+      );
+    } catch (e) {
+      console.log(e);
+    }
   }
 };
