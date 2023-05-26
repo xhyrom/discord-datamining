@@ -50,21 +50,23 @@ export const diff = async (items, webhookId, webhookToken) => {
 
     const embed = new EmbedBuilder()
       .setTitle("Article Updated")
-      .setDescription(data.description)
+      .setDescription(data.description ?? "")
       .addFields(
         {
           name: "Title",
-          value: data.title,
+          value: data.title ?? "??",
           inline: true,
         },
         {
           name: "Link",
-          value: data.link,
+          value: data.link ?? "??",
           inline: true,
         },
         {
           name: "Publish Date",
-          value: `<t:${Math.floor(new Date(data.pubDate).getTime() / 1000)}>`,
+          value: `<t:${Math.floor(
+            new Date(data.pubDate ?? 0).getTime() / 1000
+          )}>`,
           inline: true,
         },
         {
