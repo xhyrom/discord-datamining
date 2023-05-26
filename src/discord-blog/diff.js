@@ -20,11 +20,12 @@ export const diff = (items, webhookId, webhookToken) => {
 
   const articles = files.reduce((acc, file) => {
     if (!file) return acc;
-    const articleName = file.fileName.split("/")[2];
+    const articleName = file.fileName?.split("/")?.[2];
     const fileName = file.fileName
-      .split("/")[3]
-      .replace(".json", "")
-      .replace(".html", "");
+      ?.split("/")?.[3]
+      ?.replace(".json", "")
+      ?.replace(".html", "");
+    if (!articleName || !fileName) return acc;
     if (!acc[articleName]) acc[articleName] = {};
     acc[articleName].title = articleName;
     acc[articleName][fileName] = file.content;
