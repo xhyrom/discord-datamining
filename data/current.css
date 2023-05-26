@@ -33421,29 +33421,6 @@ img[alt] {
     grid-template-columns: auto 1fr
 }
 
-.modalRoot-388zxG {
-    width: 440px
-}
-
-.modal-1Om1yD {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
-    text-align: center;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: column;
-    flex-direction: column;
-    gap: 16px;
-    -webkit-box-sizing: border-box;
-    box-sizing: border-box;
-    padding: 24px;
-    overflow: visible
-}
-
 .modalHeader-OnIkEx {
     padding-top: 32px;
     -webkit-box-pack: center;
@@ -156405,4 +156382,4 @@ html .invoiceCancelRow-dVOR64 {
     flex-direction: column
 }
 
-/*# sourceMappingURL=40532.aa711d31d8a723d3c4f4.css.map*/
+/*# sourceMappingURL=40532.6cea7ba1421564a930fe.css.map*/
