@@ -59,7 +59,7 @@ const date = new Date();
 await git.commit([
   `${date.getDate()} ${
     months[date.getMonth()]
-  } ${date.getFullYear()} - Github Data was updated 🚀`,
+  } ${date.getFullYear()} - Discord Blog Articles was updated 🚀`,
   `Articles (${channel.item.length}):\n${channel.item
     .map((item) => item.title)
     .join("\n")}`,
