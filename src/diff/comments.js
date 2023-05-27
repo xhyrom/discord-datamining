@@ -156,6 +156,7 @@ export const blogPosts = async (octokit, eventPayload) => {
     comment += "\n```\n\n";
 
     try {
+      const before = await getBlogPostFromBeforeCommit(octokit, eventPayload);
       const data = JSON.parse(
         await readFile(
           join("data", "blog-posts", fileName, "data.json"),
@@ -164,7 +165,7 @@ export const blogPosts = async (octokit, eventPayload) => {
       );
 
       embeds[fileName] = new EmbedBuilder()
-        .setTitle("Blog Post Updated")
+        .setTitle(before?.title ? "Blog Post Updated" : "New Blog Post")
         .addFields(
           {
             name: "Title",
@@ -179,54 +180,10 @@ export const blogPosts = async (octokit, eventPayload) => {
             value: data.link,
           }
         )
-        .setColor(0xe8c61a)
+        .setColor(before?.title ? 0xe8c61a : 0x51f542)
         .toJSON();
     } catch {
-      const tree = await octokit.rest.git.getTree({
-        owner: eventPayload.repository.owner.login,
-        repo: eventPayload.repository.name,
-        tree_sha: eventPayload.before,
-      });
-
-      const dataFileSha = tree.data.tree.find(
-        (file) => file.path === "data"
-      )?.sha;
-
-      if (!dataFileSha) continue;
-
-      const dataTree = await octokit.rest.git.getTree({
-        owner: eventPayload.repository.owner.login,
-        repo: eventPayload.repository.name,
-        tree_sha: dataFileSha,
-      });
-
-      const blogPostsTree = await octokit.rest.git.getTree({
-        owner: eventPayload.repository.owner.login,
-        repo: eventPayload.repository.name,
-        tree_sha: dataTree.data.tree.find((file) =>
-          file.path.includes("blog-posts")
-        )?.sha,
-      });
-
-      const blogPostTree = await octokit.rest.git.getTree({
-        owner: eventPayload.repository.owner.login,
-        repo: eventPayload.repository.name,
-        tree_sha: blogPostsTree.data.tree.find((file) =>
-          file.path.includes(fileName)
-        )?.sha,
-      });
-
-      const dataFile = await octokit.rest.git.getBlob({
-        owner: eventPayload.repository.owner.login,
-        repo: eventPayload.repository.name,
-        file_sha: blogPostTree.data.tree.find((file) =>
-          file.path.includes("data.json")
-        )?.sha,
-      });
-
-      const data = JSON.parse(
-        Buffer.from(dataFile.data.content, "base64").toString("utf8")
-      );
+      const data = await getBlogPostFromBeforeCommit(octokit, eventPayload);
 
       embeds[fileName] = new EmbedBuilder()
         .setTitle("Blog Post Removed")
@@ -253,4 +210,85 @@ export const blogPosts = async (octokit, eventPayload) => {
     comment,
     embeds: Object.values(embeds),
   };
+};
+
+/**
+ * @param {import('@octokit/action').Octokit} octokit
+ * @param {unknown} eventPayload
+ */
+const getBlogPostFromBeforeCommit = async (octokit, eventPayload) => {
+  try {
+    const tree = await octokit.rest.git.getTree({
+      owner: eventPayload.repository.owner.login,
+      repo: eventPayload.repository.name,
+      tree_sha: eventPayload.before,
+    });
+
+    if (!tree) return {};
+
+    const dataFileSha = tree.data.tree.find(
+      (file) => file.path === "data"
+    )?.sha;
+
+    if (!dataFileSha) return {};
+
+    const dataTree = await octokit.rest.git.getTree({
+      owner: eventPayload.repository.owner.login,
+      repo: eventPayload.repository.name,
+      tree_sha: dataFileSha,
+    });
+
+    if (!dataTree) return {};
+
+    const blogPostsFolder = dataTree.data.tree.find((file) =>
+      file.path.includes("blog-posts")
+    )?.sha;
+
+    if (!blogPostsFolder) return {};
+
+    const blogPostsTree = await octokit.rest.git.getTree({
+      owner: eventPayload.repository.owner.login,
+      repo: eventPayload.repository.name,
+      tree_sha: blogPostsFolder,
+    });
+
+    if (!blogPostsTree) return {};
+
+    const blogPostFolder = blogPostsTree.data.tree.find((file) =>
+      file.path.includes(fileName)
+    )?.sha;
+
+    if (!blogPostFolder) return {};
+
+    const blogPostTree = await octokit.rest.git.getTree({
+      owner: eventPayload.repository.owner.login,
+      repo: eventPayload.repository.name,
+      tree_sha: blogPostFolder,
+    });
+
+    if (!blogPostTree) return {};
+
+    const dateFileSha = blogPostTree.data.tree.find((file) =>
+      file.path.includes("data.json")
+    )?.sha;
+    if (!dateFileSha) return {};
+
+    const dataFile = await octokit.rest.git.getBlob({
+      owner: eventPayload.repository.owner.login,
+      repo: eventPayload.repository.name,
+      file_sha: dateFileSha,
+    });
+
+    if (!dataFile) return {};
+
+    const data = JSON.parse(
+      Buffer.from(dataFile.data.content, "base64").toString("utf8")
+    );
+
+    if (!data) return {};
+
+    return data;
+  } catch {
+    return {};
+  }
 };
