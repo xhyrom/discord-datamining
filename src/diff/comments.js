@@ -156,7 +156,11 @@ export const blogPosts = async (octokit, eventPayload) => {
     comment += "\n```\n\n";
 
     try {
-      const before = await getBlogPostFromBeforeCommit(octokit, eventPayload);
+      const before = await getBlogPostOrSupportArticleFromBeforeCommit(
+        octokit,
+        eventPayload,
+        "blog-posts"
+      );
       const data = JSON.parse(
         await readFile(
           join("data", "blog-posts", fileName, "data.json"),
@@ -183,7 +187,11 @@ export const blogPosts = async (octokit, eventPayload) => {
         .setColor(before?.title ? 0xe8c61a : 0x51f542)
         .toJSON();
     } catch {
-      const data = await getBlogPostFromBeforeCommit(octokit, eventPayload);
+      const data = await getBlogPostOrSupportArticleFromBeforeCommit(
+        octokit,
+        eventPayload,
+        "blog-posts"
+      );
 
       embeds[fileName] = new EmbedBuilder()
         .setTitle("Blog Post Removed")
@@ -216,7 +224,133 @@ export const blogPosts = async (octokit, eventPayload) => {
  * @param {import('@octokit/action').Octokit} octokit
  * @param {unknown} eventPayload
  */
-const getBlogPostFromBeforeCommit = async (octokit, eventPayload) => {
+export const supportArticles = async (octokit, eventPayload, dev) => {
+  const diff = await octokit.repos.compareCommits({
+    owner: eventPayload.repository.owner.login,
+    repo: eventPayload.repository.name,
+    base: eventPayload.before,
+    head: eventPayload.after,
+  });
+
+  let comment = "";
+
+  const path = `support${dev ? "-dev" : ""}-articles`;
+  const name = dev ? "Support Dev Article" : "Support Article";
+  const articles = diff.data.files.filter((file) =>
+    file.filename.includes(path)
+  );
+  const embeds = {};
+
+  for (const article of articles) {
+    if (!article.patch) continue;
+
+    const fileName = article.filename.split("/")[2];
+    comment += `## ${fileName}\n\n`;
+    comment += "```diff\n";
+    comment += article.patch;
+    comment += "\n```\n\n";
+
+    try {
+      const before = await getBlogPostOrSupportArticleFromBeforeCommit(
+        octokit,
+        eventPayload,
+        path
+      );
+      const data = JSON.parse(
+        await readFile(join("data", path, fileName, "data.json"), "utf-8")
+      );
+
+      embeds[fileName] = new EmbedBuilder()
+        .setTitle(
+          before?.title ?? before?.name ? `${name} Updated` : `New ${name}`
+        )
+        .addFields(
+          {
+            name: "Title",
+            value: data.title ?? data.name,
+          },
+          {
+            name: "Created At",
+            value: `<t:${Math.floor(
+              new Date(data.created_at).getTime() / 1000
+            )}>`,
+          },
+          {
+            name: "Updated At",
+            value: data.updated_at
+              ? `<t:${Math.floor(new Date(data.updated_at).getTime() / 1000)}>`
+              : "Never",
+          },
+          {
+            name: "Edited At",
+            value: data.edited_at
+              ? `<t:${Math.floor(new Date(data.edited_at).getTime() / 1000)}>`
+              : "Never",
+          },
+          {
+            name: "Link",
+            value: data.html_url,
+          }
+        )
+        .setColor(before?.title ?? before?.name ? 0xe8c61a : 0x51f542)
+        .toJSON();
+    } catch {
+      const data = await getBlogPostOrSupportArticleFromBeforeCommit(
+        octokit,
+        eventPayload,
+        path
+      );
+
+      embeds[fileName] = new EmbedBuilder()
+        .setTitle(`${name} Removed`)
+        .addFields(
+          {
+            name: "Title",
+            value: data.title ?? data.name,
+          },
+          {
+            name: "Created At",
+            value: `<t:${Math.floor(
+              new Date(data.created_at).getTime() / 1000
+            )}>`,
+          },
+          {
+            name: "Updated At",
+            value: data.updated_at
+              ? `<t:${Math.floor(new Date(data.updated_at).getTime() / 1000)}>`
+              : "Never",
+          },
+          {
+            name: "Edited At",
+            value: data.edited_at
+              ? `<t:${Math.floor(new Date(data.edited_at).getTime() / 1000)}>`
+              : "Never",
+          },
+          {
+            name: "Link",
+            value: data.html_url,
+          }
+        )
+        .setColor(0xf53731)
+        .toJSON();
+    }
+  }
+
+  return {
+    comment,
+    embeds: Object.values(embeds),
+  };
+};
+
+/**
+ * @param {import('@octokit/action').Octokit} octokit
+ * @param {unknown} eventPayload
+ */
+const getBlogPostOrSupportArticleFromBeforeCommit = async (
+  octokit,
+  eventPayload,
+  type
+) => {
   try {
     const tree = await octokit.rest.git.getTree({
       owner: eventPayload.repository.owner.login,
@@ -240,35 +374,35 @@ const getBlogPostFromBeforeCommit = async (octokit, eventPayload) => {
 
     if (!dataTree) return {};
 
-    const blogPostsFolder = dataTree.data.tree.find((file) =>
-      file.path.includes("blog-posts")
+    const blogPostsOrArticlesFolder = dataTree.data.tree.find((file) =>
+      file.path.includes(type)
     )?.sha;
 
-    if (!blogPostsFolder) return {};
+    if (!blogPostsOrArticlesFolder) return {};
 
-    const blogPostsTree = await octokit.rest.git.getTree({
+    const blogPostsOrArticlesTree = await octokit.rest.git.getTree({
       owner: eventPayload.repository.owner.login,
       repo: eventPayload.repository.name,
-      tree_sha: blogPostsFolder,
+      tree_sha: blogPostsOrArticlesFolder,
     });
 
-    if (!blogPostsTree) return {};
+    if (!blogPostsOrArticlesTree) return {};
 
-    const blogPostFolder = blogPostsTree.data.tree.find((file) =>
-      file.path.includes(fileName)
+    const blogPostOrArticleFolder = blogPostsOrArticlesTree.data.tree.find(
+      (file) => file.path.includes(fileName)
     )?.sha;
 
-    if (!blogPostFolder) return {};
+    if (!blogPostOrArticleFolder) return {};
 
-    const blogPostTree = await octokit.rest.git.getTree({
+    const blogPostOrArticleTree = await octokit.rest.git.getTree({
       owner: eventPayload.repository.owner.login,
       repo: eventPayload.repository.name,
-      tree_sha: blogPostFolder,
+      tree_sha: blogPostOrArticleFolder,
     });
 
-    if (!blogPostTree) return {};
+    if (!blogPostOrArticleTree) return {};
 
-    const dateFileSha = blogPostTree.data.tree.find((file) =>
+    const dateFileSha = blogPostOrArticleTree.data.tree.find((file) =>
       file.path.includes("data.json")
     )?.sha;
     if (!dateFileSha) return {};

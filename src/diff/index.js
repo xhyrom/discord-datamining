@@ -1,6 +1,12 @@
 import { Octokit } from "@octokit/action";
 import { readFile } from "node:fs/promises";
-import { all, strings, stylesheet, blogPosts } from "./comments.js";
+import {
+  all,
+  strings,
+  stylesheet,
+  blogPosts,
+  supportArticles,
+} from "./comments.js";
 import { send, sendEmbeds } from "./webhooks.js";
 
 const octokit = new Octokit({
@@ -15,6 +21,16 @@ const allComment = await all(octokit, eventPayload);
 const stringsComment = await strings(octokit, eventPayload);
 const stylesheetComment = await stylesheet(octokit, eventPayload);
 const blogPostsComment = await blogPosts(octokit, eventPayload);
+const supportArticlesComment = await supportArticles(
+  octokit,
+  eventPayload,
+  false
+);
+const supportDevArticlesComment = await supportArticles(
+  octokit,
+  eventPayload,
+  true
+);
 
 // create comment on commit
 if (allComment) {
@@ -103,6 +119,60 @@ if (blogPostsComment.comment) {
     webhookId,
     webhookToken,
     blogPostsComment.embeds,
-    "1111708976309084201"
+    "1112067613200228382"
+  );
+}
+
+if (supportArticlesComment.comment) {
+  const [webhookId, webhookToken] = new URL(
+    process.env.DISCORD_WEBHOOK_SUPPORT_ARTICLES ?? ""
+  ).pathname
+    .split("/")
+    .slice(3);
+
+  const comment = await octokit.repos.createCommitComment({
+    owner: eventPayload.repository.owner.login,
+    repo: eventPayload.repository.name,
+    commit_sha: eventPayload.after,
+    body:
+      supportArticlesComment.comment.length >= 65535
+        ? supportArticlesComment.comment.slice(0, 65535)
+        : supportArticlesComment.comment,
+  });
+
+  await sendEmbeds(
+    eventPayload,
+    comment.data,
+    webhookId,
+    webhookToken,
+    supportArticlesComment.embeds,
+    "1112067561375420436"
+  );
+}
+
+if (supportDevArticlesComment.comment) {
+  const [webhookId, webhookToken] = new URL(
+    process.env.DISCORD_WEBHOOK_SUPPORT_DEV_ARTICLES ?? ""
+  ).pathname
+    .split("/")
+    .slice(3);
+
+  const comment = await octokit.repos.createCommitComment({
+    owner: eventPayload.repository.owner.login,
+    repo: eventPayload.repository.name,
+    commit_sha: eventPayload.after,
+    body:
+      supportDevArticlesComment.comment.length >= 65535
+        ? supportDevArticlesComment.comment.slice(0, 65535)
+        : supportDevArticlesComment.comment,
+  });
+
+  await sendEmbeds(
+    eventPayload,
+    comment.data,
+    webhookId,
+    webhookToken,
+    supportDevArticlesComment.embeds,
+    "1112067587002609818"
   );
 }
