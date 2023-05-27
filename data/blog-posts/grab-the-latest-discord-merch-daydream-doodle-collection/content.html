@@ -1,0 +1,9 @@
+<div class="blog-post-content w-richtext">
+    <p>With those Idle Nights of summer falling into the rearview mirror, a fresh vibe’s blowing in. Maybe you’re dusting off those cozy hoodies, or <a href="https://discord.com/blog/discover-your-next-favorite-campus-club-in-student-hubs">connecting with classmates through your school’s Student Hub</a>, or living in the southern hemisphere and shaking your head silently at us. Point is, it’s a good time to start changing things up…and that starts with your look.</p>
+    <p>Enter our newest line of Discord merch: the <a href="https://bit.ly/3Cu1H2J"><strong>Daydream Doodle Collection</strong></a>.</p>
+    <figure class="w-richtext-figure-type-image w-richtext-align-fullwidth" style="max-width:1600pxpx" class="w-richtext-align-fullwidth w-richtext-figure-type-image">
+        <div><img src="https://assets-global.website-files.com/5f9072399b2640f14d6a2bf4/6307d7921d5be6e6817df163_xnnLy2DyYCgpWN57wk3VkqcyQUmBDXpQf47TA_im6hlsBhCHzmjvyTJBIGeU_Nn3hJnwjvR4HpBRxzBt6tbOgCJXihkPqcmIpz64H5Zwz6gHkNrskhp2XaxsTTU-pntzCZTh3zqpR5uneTphMVP7nvw.png" alt="A lookbook-style image containing all the merch items in one view."></div>
+    </figure>
+    <p>With its sketchy skateboards, thought bubbles, and jetpacks, the Daydream Doodle Collection represents those little moments where your troubles fall away and imagination takes flight. One might call that “not paying attention.” You know what we call it? <strong>The triumph of the human spirit.</strong></p>
+    <p>Keep reading to get the lowdown on available items, or just hit that big blurple button to shop the whole collection. </p>
+</div>

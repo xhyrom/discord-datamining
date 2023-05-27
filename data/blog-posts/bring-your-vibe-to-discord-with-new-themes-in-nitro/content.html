@@ -1,0 +1,10 @@
+<div class="blog-post-content w-richtext">
+    <p><strong><em>Update</em></strong><em>: Alongside the original sixteen themes, we’ve recently released an additional five Themes for Nitro subscribers! </em><a href="https://discord.com/blog/april-showers-bring-super-cool-nitro-powers"><em>Learn their names and tons more over on our April Nitro blog.</em></a><em> </em></p>
+    <p>Starting today, we’re bringing Discord Nitro subscribers a colorful new perk with <strong>Themes</strong>, giving them more ways to bring their own vibe to the Discord app on desktop. Alongside the rest of the perks provided by your Discord Nitro subscription, you’ll be able to bring some fresh hues to your Discord views. </p>
+    <p>At launch, 16 unique Themes will be available for you to personalize your app. Choose from theme colors such as Chroma Glow, Citrus Sherbert, Midnight Blurple, and Retro Raincloud to name a few. With so many options, there’s a pretty good chance you’ll find something that matches your vibe. </p>
+    <figure class="w-richtext-figure-type-image w-richtext-align-fullwidth" style="max-width:1600pxpx" class="w-richtext-align-fullwidth w-richtext-figure-type-image">
+        <div><img src="https://assets-global.website-files.com/5f9072399b2640f14d6a2bf4/64120d6d668681c43e2e0c4b_XrBhOGEicnFpk_zD25dGdk4HiTglV9uUAk1zkZVGwz7Wwqduz3Bv2Kw7SULL_dkEdizf_V9poErdSMKSSRXW-EH994ET8_yi3iSWy0w6_3OHDbyAeJKFN7u938ctE5qo03d9FOVgr3-ELemnflkMoBg.png" alt="A collage of four theme colors on the Discord desktop app."></div>
+    </figure>
+    <p>Themes will be available for Discord Nitro subscribers on desktop. Check out all the other sweet perks that come with Nitro over <a href="https://discord.com/nitro">here</a>. </p>
+    <p>Read on to learn how to pick your new favorite theme — it’s as easy as changing from Light to Dark theme. If you’ve never left Light or Dark theme in your life, you can also look below for a quick refresher. We won’t judge.<br>‍</p>
+</div>

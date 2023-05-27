@@ -1,0 +1,6 @@
+<div class="blog-post-content w-richtext">
+    <p><strong><em>*enters stage left while doing a kickflip on a skateboard before pulling up in front of you, taking off their sunglasses to reveal a second pair of sunglasses* 🛹</em></strong></p>
+    <p>Blazing Blog Billy here with a<strong> <em>TOTALLY RAD NITRO NEWSFLASH</em></strong>: Four incredibly cool new features are on their way to Nitro subscribers! (Nitroooooooh yyeeeahh!) <br><br>We’ve got <strong>SUPER REACTIONS</strong>. We’ve got <strong>SOUNDBOARD</strong>. You might even already be using Nitro’s new color <strong>THEMES</strong> if you’re a rad enough person — all of these and more are coming to DISCORD NITRO. </p>
+    <p>Plus, add some funky flair to your Discord profile icon with new seasonal <strong>AVATAR DECORATIONS</strong>. It’s like sticker-bombing your FACE. Your CIRCLE-SHAPED VIRTUAL FACE, because you’re definitely not a SQUARE. </p>
+    <p>Never heard of Discord Nitro before? We’ve got the lowdown: it’s our, uh… *<em>looks at the tiny note scribbled inside their palm*...</em> “premium subscription offering that enhances your self-expression abilities and helps you unleash more fun with your friends. With more perks than ever before, there’s never been a better time to check out Discord Nitro!” </p>
+</div>
