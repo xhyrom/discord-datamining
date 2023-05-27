@@ -1,0 +1,6 @@
+<div class="blog-post-content w-richtext">
+    <p>Starting today, we’re rolling out the ability to send <strong>Voice Messages</strong> in DMs, GDMs, and servers that have Voice Messages enabled. At the press (and hold) of a button, you’ll be able to send a quick little quip to a friend without having to hop in Voice to hear it. They’re faster when you just wanna “say the thing you wanna say” quickly, and Voice Messages harness the power of Krisp noise cancellation to block out background noise, making you sound just as good as you do in-person.</p>
+    <p>They’re also a great way to hear a friend’s Voice and have a more personal conversation without the stress of starting a “formal” Voice call. You never know if someone’s too busy to take an impromptu call or join a server’s Voice channel, but with a quick Voice Message, they’ll still be able to listen to your voice on their own time. </p>
+    <p><strong>At launch, Voice Messages can be created and sent from mobile, and all platforms will be able to play them. </strong>Currently, they can only be sent and received in DMs,Group DMs, and servers with Voice Messages enabled.</p>
+    <p>Learn how to create and send a Voice Message to your friends below:<br></p>
+</div>

@@ -1,0 +1,4 @@
+<div class="blog-post-content w-richtext">
+    <p>For this year’s International Women’s Day (IWD), we’re shining the limelight with two exemplary servers from the Discord Admin Community who volunteered to be a part of this year’s IWD celebrations. These two communities are women-owned and make an effort to uplift others who are looking to connect and learn about what interests them the most and push each other forward in areas that are traditionally more male-dominated.</p>
+    <p>Read on to learn how these Discord communities specialize in two unique use cases of learning: to prepare for your future and to prepare for a good ol’ dungeon crawl. <br>‍</p>
+</div>

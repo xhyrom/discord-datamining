@@ -1,0 +1,8 @@
+<div class="blog-post-content w-richtext">
+    <h5>AutoMod has grown in power! Take a peek at <a href="https://discord.com/tags/automod">our AutoMod page</a> to keep up to date on the newest additions to AutoMod. </h5>
+    <p>If you’ve found a community you love to call home on Discord, there’s a team of moderators dedicating their time to organizing and fostering that space for you and your friends to find belonging. But as a community grows, your mods and admins will need to buff up their defenses from those looking to sour the fun. </p>
+    <p>And we want to help — to equip your moderation team with the tools to keep your community and conversations welcoming. To empower you to handle any bad actors whose sole intention being to litter chat with malicious language, harmful scams or links, and all sorts of spam. </p>
+    <p>Community moderation should be a hobby you celebrate, and stepping away to make time for yourself shouldn’t rack your mind with guilt of what could be happening when you’re gone. Moderating your growing community should feel rewarding and fulfilling, not add constant stress from dealing with bad actors or unruly members.</p>
+    <p>Doing is better than saying, so we’ll be taking some of that moderation work off your hands and tackling it ourselves. Say hello to AutoMod, your new best friend in server moderation: up and about 24 hours a day, 7 days a week, keeping your server clean and sleek!</p>
+    <p>‍</p>
+</div>
