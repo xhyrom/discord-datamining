@@ -2,7 +2,7 @@
 import deepEqual from "fast-deep-equal";
 import { EmbedBuilder, disableValidators } from "@discordjs/builders";
 import { info } from "../logger.js";
-import { send } from "./webhooks.js";
+import { sendWebhook as send } from "../utils.js";
 import {
   experimentNameFormat,
   populationsFormat,
@@ -48,12 +48,9 @@ export const watcher = (
     );
 
     for (const experiment of addedExperiments) {
-      send(
-        webhookId,
-        webhookToken,
-        [defaultEmbed(experiment, "add").setColor(0x51f542).toJSON()],
-        "1104694113078608033"
-      );
+      send(webhookId, webhookToken, {
+        embeds: [defaultEmbed(experiment, "add").setColor(0x51f542).toJSON()],
+      });
     }
   }
 
@@ -65,12 +62,11 @@ export const watcher = (
     );
 
     for (const experiment of removedExperiments) {
-      send(
-        webhookId,
-        webhookToken,
-        [defaultEmbed(experiment, "remove").setColor(0xf53731).toJSON()],
-        "1104694113078608033"
-      );
+      send(webhookId, webhookToken, {
+        embeds: [
+          defaultEmbed(experiment, "remove").setColor(0xf53731).toJSON(),
+        ],
+      });
     }
   }
 
@@ -90,10 +86,8 @@ export const watcher = (
         (e) => e.data.hash === experiment.data.hash
       );
 
-      send(
-        webhookId,
-        webhookToken,
-        [
+      send(webhookId, webhookToken, {
+        embeds: [
           defaultEmbed(
             currentExperiment,
             "change",
@@ -102,8 +96,7 @@ export const watcher = (
             .setColor(0xe8c61a)
             .toJSON(),
         ],
-        "1104694113078608033"
-      );
+      });
     }
   }
 };

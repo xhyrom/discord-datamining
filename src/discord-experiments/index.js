@@ -10,7 +10,9 @@ import months from "../months.js";
 
 const git = simpleGit();
 
-const [webhookId, webhookToken] = new URL(process.env.DISCORD_WEBHOOK).pathname
+const [webhookId, webhookToken] = new URL(
+  process.env.DISCORD_WEBHOOK_EXPERIMENTS
+).pathname
   .split("/")
   .slice(3);
 

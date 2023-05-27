@@ -17,7 +17,7 @@ export const all = async (octokit, eventPayload) => {
   for (const file of diff.data.files) {
     if (!file.patch) continue;
 
-    comment += `### ${file.filename}\n\n`;
+    comment += `## ${file.filename}\n\n`;
     comment += "```diff\n";
     comment += file.patch;
     comment += "\n```\n\n";
@@ -30,7 +30,7 @@ export const all = async (octokit, eventPayload) => {
  * @param {import('@octokit/action').Octokit} octokit
  * @param {unknown} eventPayload
  */
-export const lang = async (octokit, eventPayload) => {
+export const strings = async (octokit, eventPayload) => {
   const currentTreeRoot = await octokit.rest.git.getTree({
     owner: eventPayload.repository.owner.login,
     repo: eventPayload.repository.name,
@@ -116,10 +116,42 @@ export const stylesheet = async (octokit, eventPayload) => {
   );
   if (!currentCssFile || !currentCssFile?.patch) return "";
 
-  comment += `### ${currentCssFile.filename}\n\n`;
+  comment += `## ${currentCssFile.filename}\n\n`;
   comment += "```diff\n";
   comment += currentCssFile.patch;
   comment += "\n```\n\n";
+
+  return comment;
+};
+
+/**
+ * @param {import('@octokit/action').Octokit} octokit
+ * @param {unknown} eventPayload
+ */
+export const blogPosts = async (octokit, eventPayload) => {
+  const diff = await octokit.repos.compareCommits({
+    owner: eventPayload.repository.owner.login,
+    repo: eventPayload.repository.name,
+    base: eventPayload.before,
+    head: eventPayload.after,
+  });
+
+  let comment = "";
+
+  const blogPosts = diff.data.files.filter((file) =>
+    file.filename.includes("blog-posts")
+  );
+
+  for (const blogPost of blogPosts) {
+    if (!blogPost.patch) continue;
+
+    comment += `## ${
+      blogPost.filename.split("/")?.[2] ?? blogPost.filename
+    }\n\n`;
+    comment += "```diff\n";
+    comment += blogPost.patch;
+    comment += "\n```\n\n";
+  }
 
   return comment;
 };

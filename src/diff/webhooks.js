@@ -1,14 +1,12 @@
-import { REST } from "@discordjs/rest";
-import { Routes } from "discord-api-types/v10";
-const rest = new REST({ version: "10" }).setToken(process.env.DISCORD_TOKEN);
+import { ButtonStyle, ComponentType } from "discord-api-types/v10";
+import { sendWebhook } from "../utils";
 
 /**
- * @param {unknown} eventPayload
+ * @param {any} eventPayload
  * @param {import("@octokit/action").RestEndpointMethodTypes["repos"]["createCommitComment"]["response"]["data"]} comment
  * @param {string} id
  * @param {string} token
  * @param {string} content
- * @param {string|null} threadId
  */
 export const send = async (
   eventPayload,
@@ -16,32 +14,30 @@ export const send = async (
   id,
   token,
   content,
-  roleId,
-  threadId
+  roleId
 ) => {
-  const params = new URLSearchParams();
-
-  if (threadId) params.append("thread_id", threadId);
-
   if (roleId) {
     content = `<@&${roleId}>\n${content}`;
   }
 
   if (content.length > 2000) {
-    content = `${content.slice(
-      0,
-      1830
-    )}...\n\`\`\`\n[You can see full comment here](https://github.com/xHyroM/discord-datamining/commit/${
-      eventPayload.after
-    }#commitcomment-${comment.id})`;
+    content = `${content.slice(0, 1990)}...\n\`\`\``;
   }
 
-  const res = await rest.post(Routes.webhook(id, token), {
-    query: params,
-    body: {
-      content,
-    },
+  await sendWebhook(id, token, {
+    content,
+    components: [
+      {
+        type: ComponentType.ActionRow,
+        components: [
+          {
+            type: ComponentType.Button,
+            label: "View on GitHub",
+            style: ButtonStyle.Link,
+            url: `https://github.com/xHyroM/discord-datamining/commit/${eventPayload.after}#commitcomment-${comment.id}`,
+          },
+        ],
+      },
+    ],
   });
-
-  console.log(res);
 };

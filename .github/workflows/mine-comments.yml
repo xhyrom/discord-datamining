@@ -22,5 +22,8 @@ jobs:
           node src/diff/index.js
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          DISCORD_WEBHOOK: ${{ secrets.DISCORD_WEBHOOK }}
+          DISCORD_WEBHOOK_STRINGS: ${{ secrets.DISCORD_WEBHOOK_STRINGS }}
+          DISCORD_WEBHOOK_STYLESHEET: ${{ secrets.DISCORD_WEBHOOK_STYLESHEET }}
+          DISCORD_WEBHOOK_BLOG_POSTS: ${{ secrets.DISCORD_WEBHOOK_BLOG_POSTS }}
+          DISCORD_WEBHOOK_SUPPORT_ARTICLES: ${{ secrets.DISCORD_WEBHOOK_SUPPORT_ARTICLES }}
           DISCORD_TOKEN: ${{ secrets.DISCORD_TOKEN }}

@@ -1,53 +1,46 @@
 import { Octokit } from "@octokit/action";
 import { readFile } from "node:fs/promises";
-import { all, lang, stylesheet } from "./comments.js";
+import { all, strings, stylesheet, blogPosts } from "./comments.js";
 import { send } from "./webhooks.js";
 
 const octokit = new Octokit({
   auth: process.env.GITHUB_TOKEN,
 });
 
-const [webhookId, webhookToken] = new URL(process.env.DISCORD_WEBHOOK).pathname
-  .split("/")
-  .slice(3);
-
 const eventPayload = JSON.parse(
-  await readFile(process.env.GITHUB_EVENT_PATH, "utf8")
+  await readFile(process.env.GITHUB_EVENT_PATH ?? "", "utf8")
 );
 
-console.log(eventPayload);
-
 const allComment = await all(octokit, eventPayload);
-const langComment = await lang(octokit, eventPayload);
+const stringsComment = await strings(octokit, eventPayload);
 const stylesheetComment = await stylesheet(octokit, eventPayload);
+const blogPostsComment = await blogPosts(octokit, eventPayload);
 
 // create comment on commit
 if (allComment) {
-  const comment = await octokit.repos.createCommitComment({
+  await octokit.repos.createCommitComment({
     owner: eventPayload.repository.owner.login,
     repo: eventPayload.repository.name,
     commit_sha: eventPayload.after,
     body: allComment,
   });
-
-  await send(
-    eventPayload,
-    comment.data,
-    webhookId,
-    webhookToken,
-    allComment,
-    null,
-    "1104677510878347334"
-  );
 }
 
-if (langComment) {
+if (stringsComment) {
+  const [webhookId, webhookToken] = new URL(
+    process.env.DISCORD_WEBHOOK_STRINGS ?? ""
+  ).pathname
+    .split("/")
+    .slice(3);
+
   const comment = await octokit.repos.createCommitComment({
     owner: eventPayload.repository.owner.login,
     repo: eventPayload.repository.name,
     commit_sha: eventPayload.after,
     body:
-      langComment.length > 65536 ? langComment.slice(0, 65536) : langComment,
+      stringsComment.length > 65536
+        ? stringsComment.slice(0, 65536)
+        : stringsComment,
   });
 
   await send(
@@ -55,13 +48,18 @@ if (langComment) {
     comment.data,
     webhookId,
     webhookToken,
-    langComment,
-    "1105589256996524042",
-    "1104677673642496021"
+    stringsComment,
+    "1105589256996524042"
   );
 }
 
 if (stylesheetComment) {
+  const [webhookId, webhookToken] = new URL(
+    process.env.DISCORD_WEBHOOK_STYLESHEET ?? ""
+  ).pathname
+    .split("/")
+    .slice(3);
+
   const comment = await octokit.repos.createCommitComment({
     owner: eventPayload.repository.owner.login,
     repo: eventPayload.repository.name,
@@ -78,7 +76,33 @@ if (stylesheetComment) {
     webhookId,
     webhookToken,
     stylesheetComment,
-    "1105847524662706226",
-    "1105847708079624193"
+    "1105847524662706226"
+  );
+}
+
+if (blogPostsComment) {
+  const [webhookId, webhookToken] = new URL(
+    process.env.DISCORD_WEBHOOK_BLOG_POSTS ?? ""
+  ).pathname
+    .split("/")
+    .slice(3);
+
+  const comment = await octokit.repos.createCommitComment({
+    owner: eventPayload.repository.owner.login,
+    repo: eventPayload.repository.name,
+    commit_sha: eventPayload.after,
+    body:
+      blogPostsComment.length > 65536
+        ? blogPostsComment.slice(0, 65536)
+        : blogPostsComment,
+  });
+
+  await send(
+    eventPayload,
+    comment.data,
+    webhookId,
+    webhookToken,
+    blogPostsComment,
+    "1111708976309084201"
   );
 }
