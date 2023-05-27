@@ -1,0 +1,3 @@
+<h3><span style="font-weight: 400;">This article is currently undergoing updates. Stay tuned for more soon!</span></h3>
+<p><span style="font-weight: 400;">If you utilize a screen reader, you can use it on Discord to help you navigate the desktop and browser clients. </span></p>
+<p><span style="font-weight: 400;">Screen readers are great for people who may be visually impaired and rely on screen readers to dictate the text on a screen and announce what features are currently being displayed.</span></p>

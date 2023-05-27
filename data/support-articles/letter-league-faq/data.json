@@ -1,0 +1,29 @@
+{
+  "id": 4409244345239,
+  "url": "https://hammerandchisel.zendesk.com/api/v2/help_center/en-us/articles/4409244345239.json",
+  "html_url": "https://support.discord.com/hc/en-us/articles/4409244345239-Letter-League-FAQ",
+  "author_id": 364802902112,
+  "comments_disabled": true,
+  "draft": false,
+  "promoted": false,
+  "position": 102,
+  "vote_sum": -21,
+  "vote_count": 107,
+  "section_id": 115000457731,
+  "created_at": "2021-09-23T02:27:28Z",
+  "updated_at": "2023-05-20T22:11:08Z",
+  "name": "Letter League FAQ",
+  "title": "Letter League FAQ",
+  "source_locale": "en-us",
+  "locale": "en-us",
+  "outdated": false,
+  "outdated_locales": [],
+  "edited_at": "2022-10-07T18:14:32Z",
+  "user_segment_id": null,
+  "permission_group_id": 1720972,
+  "content_tag_ids": [],
+  "label_names": [
+    "answer-bot",
+    "games"
+  ]
+}

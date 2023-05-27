@@ -1,0 +1,4 @@
+<p>Discord is committed to working with regulators worldwide to meet our obligations in the countries in which we operate, including the EU Digital Services Act (“DSA”).</p>
+<p>The DSA is a new law that regulates many different types of online services. One aspect of the law (Article 24(2) for the law wonks) requires online platforms to publish information about the average monthly active recipients of their services in the European Union.</p>
+<p>Under the DSA, some elements of the services Discord provides may qualify as an online platform. We’ve calculated the average number of monthly active recipients of these services in the EU for the six months from July 1, 2022 through December 31, 2022, and that number is well below 45 million.</p>
+<p>This information was prepared for the DSA and its specific requirements. It may differ from Discord user metrics reported in other contexts and should not be used for other purposes.</p>
