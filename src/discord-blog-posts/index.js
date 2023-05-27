@@ -30,7 +30,7 @@ for (let item of channel.item) {
     parse(content).querySelector(".blog-post-content")?.outerHTML ?? "";
   const beautified = jsBeautify.html_beautify(articleBody);
 
-  await writeFile(join(path, "content.html"), beautified);
+  await writeFile(join(path, "content.md"), beautified);
   await writeFile(join(path, "data.json"), JSON.stringify(item, null, 2));
 
   success(`Fetched ${item.title}`);
