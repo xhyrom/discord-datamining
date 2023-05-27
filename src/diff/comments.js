@@ -159,7 +159,8 @@ export const blogPosts = async (octokit, eventPayload) => {
       const before = await getBlogPostOrSupportArticleFromBeforeCommit(
         octokit,
         eventPayload,
-        "blog-posts"
+        "blog-posts",
+        fileName
       );
       const data = JSON.parse(
         await readFile(
@@ -190,7 +191,8 @@ export const blogPosts = async (octokit, eventPayload) => {
       const data = await getBlogPostOrSupportArticleFromBeforeCommit(
         octokit,
         eventPayload,
-        "blog-posts"
+        "blog-posts",
+        fileName
       );
 
       embeds[fileName] = new EmbedBuilder()
