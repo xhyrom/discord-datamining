@@ -80,7 +80,7 @@ if (stylesheetComment) {
   );
 }
 
-if (blogPostsComment) {
+if (blogPostsComment.comment) {
   const [webhookId, webhookToken] = new URL(
     process.env.DISCORD_WEBHOOK_BLOG_POSTS ?? ""
   ).pathname
