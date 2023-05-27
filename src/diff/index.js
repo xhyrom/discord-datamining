@@ -1,7 +1,7 @@
 import { Octokit } from "@octokit/action";
 import { readFile } from "node:fs/promises";
 import { all, strings, stylesheet, blogPosts } from "./comments.js";
-import { send } from "./webhooks.js";
+import { send, sendEmbeds } from "./webhooks.js";
 
 const octokit = new Octokit({
   auth: process.env.GITHUB_TOKEN,
@@ -97,12 +97,12 @@ if (blogPostsComment) {
         : blogPostsComment,
   });
 
-  await send(
+  await sendEmbeds(
     eventPayload,
     comment.data,
     webhookId,
     webhookToken,
-    blogPostsComment,
+    blogPostsComment.embeds,
     "1111708976309084201"
   );
 }

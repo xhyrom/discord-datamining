@@ -1,4 +1,7 @@
 import differ from "@adryd325/discord-datamining-lang-differ";
+import { readFile } from "node:fs/promises";
+import { EmbedBuilder } from "@discordjs/builders";
+import { join } from "node:path";
 
 /**
  * @param {import('@octokit/action').Octokit} octokit
@@ -138,20 +141,46 @@ export const blogPosts = async (octokit, eventPayload) => {
 
   let comment = "";
 
-  const blogPosts = diff.data.files.filter((file) =>
+  const posts = diff.data.files.filter((file) =>
     file.filename.includes("blog-posts")
   );
+  const embeds = {};
 
-  for (const blogPost of blogPosts) {
+  for (const blogPost of posts) {
     if (!blogPost.patch) continue;
 
-    comment += `## ${
-      blogPost.filename.split("/")?.[2] ?? blogPost.filename
-    }\n\n`;
+    const fileName = blogPost.filename.split("/")[2];
+    comment += `## ${fileName}\n\n`;
     comment += "```diff\n";
     comment += blogPost.patch;
     comment += "\n```\n\n";
+
+    const data = JSON.parse(
+      await readFile(join("data", "blog-posts", fileName, "data.json"), "utf-8")
+    );
+
+    embeds[fileName] = new EmbedBuilder()
+      .setTitle("Blog Post Updated")
+      .addFields(
+        {
+          name: "Title",
+          value: data.title,
+        },
+        {
+          name: "Description",
+          value: data.description,
+        },
+        {
+          name: "Link",
+          value: data.link,
+        }
+      )
+      .setColor(0xe8c61a)
+      .toJSON();
   }
 
-  return comment;
+  return {
+    comment,
+    embeds: Object.values(embeds),
+  };
 };
