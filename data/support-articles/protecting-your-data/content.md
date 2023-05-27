@@ -1,0 +1,10 @@
+<p>Over the past few months, we've investigated reports of bad actors who join public Discord servers to scrape user information to create unauthorized databases of server members.</p>
+<p>To be super clear, issues like these are 100% on our radar. <a href="https://discord.com/guidelines" target="_self">This kind of activity is completely against our Terms of Service and Community Guidelines</a>. Bad actors like these use a couple methods for scraping user data from our site: harvesting server information from server widgets (which is a server-configurable option in the server settings) and creating automated user accounts, called "self-bots", to join as many servers as possible through proxy manipulation.</p>
+<p>Self-bots are and have always been a violation of our <a class="ql-link" href="https://discord.com/developers/docs/legal" target="_blank" rel="noopener noreferrer">API Terms of Use</a>, and we have implemented a number of methods to detect this kind of abuse. Additionally, we have made several recent changes to limit the ability of bad actors to abuse our API in this way:</p>
+<ul>
+    <li>We've anonymized and limited data returned on server widgets</li>
+    <li>We've added stricter rate limits to widget data and to profile data</li>
+    <li>We've added stricter permission requirements and other limitations to downloading member list as an ordinary user</li>
+</ul>
+<p>These changes have helped limit mass gathering of new information by known bad actors, and our engineers will continue to improve our ability to prevent these bad actors from creating new accounts in the future. On top of that work, we have a dedicated team working on a new service, scheduled for launch in the near future, to help us even better detect this kind of abuse on our platform.</p>
+<p>We care deeply about maintaining and protecting the privacy of all of our users, and we're always here to answer your questions. If you have any concerns regarding your privacy on Discord, please don't hesitate to contact us at <a class="ql-link" target="_blank" rel="noopener noreferrer">privacy@discord.com</a>.</p>
