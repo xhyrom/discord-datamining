@@ -1,0 +1,3 @@
+<h2>Well...</h2>
+<p>Technically, we can’t stop you. This being said, we hope that you’ll come around on slash commands, they’re the bees knees.</p>
+<p>It should be noted that if we suspect you of implementing a feature for the purpose of acquiring the Message Content Intent (we’ve got good eyes), you will be denied the intent and the incident may impact your ability to receive other intents or verifications in the future.</p>

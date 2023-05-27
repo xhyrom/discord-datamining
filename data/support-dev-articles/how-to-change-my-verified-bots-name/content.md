@@ -1,0 +1,3 @@
+<p class="callout">⚠️ For unverified bots, please read <a href="https://support-dev.discord.com/hc/en-us/articles/6129090215959" target="_blank" rel="noopener">this</a>.</p>
+<p> </p>
+<p>Once your application is verified, unfortunately there is only one situation in which you can change its name. We require some sort of legal copyright / DMCA takedown notice from a company due to your application’s name in order to change it once verified. We have this restriction in place to stop situations where, once verified, people change the name of their application in order to impersonate other more popular applications.</p>
