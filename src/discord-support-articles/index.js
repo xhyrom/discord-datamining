@@ -45,7 +45,7 @@ for (const article of articles) {
   await writeFile(join(path, "content.html"), content);
   await writeFile(
     join(path, "data.json"),
-    JSON.stringify(omit(article, "body"), null, 2)
+    JSON.stringify(omit(article, ["body", "vote_sum", "vote_count"]), null, 2)
   );
 
   success(`Fetched ${article.title ?? article.name}`);
