@@ -1,3 +1,0 @@
-<p>As of <strong>December 17th, 2019</strong>, we became aware of a number of users on the Windows 7 OS facing issues attempting to use Screenshare and GoLive. This issue manifests as a blank black screen when attempting to use the feature.</p>
-<p>To make sure that your settings are optimal, you can check to see if the following is enabled:<br><strong>User Settings &gt; Voice &amp; Video &gt; 'Use our latest technology to capture your screen' Turn On</strong></p>
-<p>If this does not correct the issue, our sincerest apologies. The team is aware of a broader issue and investigating. We do not yet have an ETA on when this will be corrected.</p>

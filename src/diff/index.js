@@ -9,8 +9,12 @@ import {
 } from "./comments.js";
 import { send, sendEmbeds } from "./webhooks.js";
 
-const octokit = new Octokit({
+const octokit_github = new Octokit({
   auth: process.env.GITHUB_TOKEN,
+});
+
+const octokit = new Octokit({
+  auth: process.env.ACCESS_TOKEN,
 });
 
 const eventPayload = JSON.parse(
@@ -21,16 +25,6 @@ const allComment = await all(octokit, eventPayload);
 const stringsComment = await strings(octokit, eventPayload);
 const stylesheetComment = await stylesheet(octokit, eventPayload);
 const blogPostsComment = await blogPosts(octokit, eventPayload);
-const supportArticlesComment = await supportArticles(
-  octokit,
-  eventPayload,
-  false
-);
-const supportDevArticlesComment = await supportArticles(
-  octokit,
-  eventPayload,
-  true
-);
 
 // create comment on commit
 if (allComment) {
@@ -49,7 +43,7 @@ if (stringsComment) {
     .split("/")
     .slice(3);
 
-  const comment = await octokit.repos.createCommitComment({
+  const comment = await octokit_github.repos.createCommitComment({
     owner: eventPayload.repository.owner.login,
     repo: eventPayload.repository.name,
     commit_sha: eventPayload.after,
@@ -76,7 +70,7 @@ if (stylesheetComment) {
     .split("/")
     .slice(3);
 
-  const comment = await octokit.repos.createCommitComment({
+  const comment = await octokit_github.repos.createCommitComment({
     owner: eventPayload.repository.owner.login,
     repo: eventPayload.repository.name,
     commit_sha: eventPayload.after,
@@ -103,7 +97,7 @@ if (blogPostsComment.comment) {
     .split("/")
     .slice(3);
 
-  const comment = await octokit.repos.createCommitComment({
+  const comment = await octokit_github.repos.createCommitComment({
     owner: eventPayload.repository.owner.login,
     repo: eventPayload.repository.name,
     commit_sha: eventPayload.after,
@@ -130,7 +124,7 @@ if (supportArticlesComment.comment) {
     .split("/")
     .slice(3);
 
-  const comment = await octokit.repos.createCommitComment({
+  const comment = await octokit_github.repos.createCommitComment({
     owner: eventPayload.repository.owner.login,
     repo: eventPayload.repository.name,
     commit_sha: eventPayload.after,
@@ -157,7 +151,7 @@ if (supportDevArticlesComment.comment) {
     .split("/")
     .slice(3);
 
-  const comment = await octokit.repos.createCommitComment({
+  const comment = await octokit_github.repos.createCommitComment({
     owner: eventPayload.repository.owner.login,
     repo: eventPayload.repository.name,
     commit_sha: eventPayload.after,
