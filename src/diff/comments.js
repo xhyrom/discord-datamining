@@ -254,7 +254,8 @@ export const supportArticles = async (octokit, eventPayload, dev) => {
       const before = await getBlogPostOrSupportArticleFromBeforeCommit(
         octokit,
         eventPayload,
-        path
+        path,
+        fileName
       );
       const data = JSON.parse(
         await readFile(join("data", path, fileName, "data.json"), "utf-8")
@@ -298,7 +299,8 @@ export const supportArticles = async (octokit, eventPayload, dev) => {
       const data = await getBlogPostOrSupportArticleFromBeforeCommit(
         octokit,
         eventPayload,
-        path
+        path,
+        fileName
       );
 
       embeds[fileName] = new EmbedBuilder()
@@ -349,7 +351,8 @@ export const supportArticles = async (octokit, eventPayload, dev) => {
 const getBlogPostOrSupportArticleFromBeforeCommit = async (
   octokit,
   eventPayload,
-  type
+  type,
+  fileName
 ) => {
   try {
     const tree = await octokit.rest.git.getTree({
