@@ -1,4 +1,0 @@
-<p>Our team has received reports regarding output audio issues in voice calls on the Macbook Discord client. Specifically, audio coming from the left side of the Macbook is very faint. <br><br>We would like to clarify that this behavior is by design to reduce echos going into the mic. <a href="https://support.apple.com/guide/macbook-air/take-a-tour-apd7e765329d/mac" target="_blank" rel="noopener">MacBooks have their microphone under the left speaker</a>. </p>
-<p class="wysiwyg-text-align-center"><img src="https://support.discord.com/hc/article_attachments/360060932072/macbook_example.png" alt="macbook_example.png"></p>
-<h3 class="wysiwyg-text-align-left">However, our browser client does not share this behavior. If you would like to switch to our browser client, you can log in <a href="http://discord.com/login" target="_blank" rel="noopener">here</a> [<a href="http://discord.com/login">http://discord.com/login</a>]. </h3>
-<p> </p>

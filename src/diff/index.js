@@ -38,7 +38,7 @@ if (allComment) {
     owner: eventPayload.repository.owner.login,
     repo: eventPayload.repository.name,
     commit_sha: eventPayload.after,
-    body: allComment,
+    body: allComment.length >= 65535 ? allComment.slice(0, 65535) : allComment,
   });
 }
 
