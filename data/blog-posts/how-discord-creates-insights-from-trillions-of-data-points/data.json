@@ -1,9 +1,0 @@
-{
-  "title": "How Discord Creates Insights from Trillions of Data Points",
-  "link": "https://discord.com/blog/how-discord-creates-insights-from-trillions-of-data-points",
-  "guid": "https://discord.com/blog/how-discord-creates-insights-from-trillions-of-data-points",
-  "description": "This is the story of how we turned petabytes of raw data into a structured data warehouse and the system we built to maintain it, internally referred to as Derived.",
-  "pubDate": "Thu, 18 Nov 2021 00:00:00 GMT",
-  "media:content": "https://uploads-ssl.webflow.com/5f9072399b2640f14d6a2bf4/619575c462b70073305c7cbb_Engineering-Blog-Header-Updated.png",
-  "media:thumbnail": "https://uploads-ssl.webflow.com/5f9072399b2640f14d6a2bf4/619575c462b70073305c7cbb_Engineering-Blog-Header-Updated.png"
-}

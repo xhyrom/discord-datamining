@@ -1,8 +1,0 @@
-<div class="blog-post-content w-richtext">
-    <p>Wow, it looks like you’re all having a fabulous time using slash commands! /so /many /cool /things</p>
-    <p>Apps on Discord have been around for a long time — they’re what assign you roles, give out prizes, alert you on price drops for your favorite games, and pick up your laundry. (Okay, not that last one, but now that we wrote it, our very talented developer community will probably have something built within the hour.)</p>
-    <p>And <strong>now there’s a brand-new page for admins in Server Settings: Command Permissions</strong>! Head to a server where you’re an admin and look under the <strong>Integrations tab</strong>: here, you can <strong>customize which commands can be used, in what channels, and by which roles</strong>.</p>
-    <h2><br>...Wait, what are these commands again?</h2>
-    <p>Just over a year ago, we introduced you to <a href="https://discord.com/blog/slash-commands-are-here">slash commands</a>. In the olden days, you used to have to type messages out (a.k.a. text commands) in a public channel to talk to a bot. This meant you needed to know exactly what the right command word was - or worse, you’d need to try a bunch of magic words until you lucked out and found the right one, all of which would clog up that very important chat about which action movies count as holiday movies.</p>
-    <p>With slash commands, typing a “/” brings up a command picker where you can view all the commands available to you, along with a description of what they do so you can select the one you want. Now it’s as easy as /yippee-kai-yay.</p>
-</div>
