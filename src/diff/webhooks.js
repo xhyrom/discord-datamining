@@ -1,5 +1,5 @@
 import { ButtonStyle, ComponentType } from "discord-api-types/v10";
-import { sendWebhook } from "../utils";
+import { sendWebhook } from "../utils.js";
 
 /**
  * @param {any} eventPayload
