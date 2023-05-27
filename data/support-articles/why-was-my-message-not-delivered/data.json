@@ -1,0 +1,30 @@
+{
+  "id": 7326747355159,
+  "url": "https://hammerandchisel.zendesk.com/api/v2/help_center/en-us/articles/7326747355159.json",
+  "html_url": "https://support.discord.com/hc/en-us/articles/7326747355159-Why-was-my-message-not-delivered-",
+  "author_id": 424992137214,
+  "comments_disabled": true,
+  "draft": false,
+  "promoted": false,
+  "position": 46,
+  "vote_sum": 252,
+  "vote_count": 822,
+  "section_id": 115000457731,
+  "created_at": "2022-07-08T17:24:32Z",
+  "updated_at": "2023-05-27T10:58:53Z",
+  "name": "Why was my message not delivered?",
+  "title": "Why was my message not delivered?",
+  "source_locale": "en-us",
+  "locale": "en-us",
+  "outdated": false,
+  "outdated_locales": [],
+  "edited_at": "2022-10-13T18:28:09Z",
+  "user_segment_id": null,
+  "permission_group_id": 1720972,
+  "content_tag_ids": [],
+  "label_names": [
+    "answer-bot",
+    "suspicious link",
+    "message not delivered"
+  ]
+}

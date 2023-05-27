@@ -1,0 +1,16 @@
+<p><span style="font-weight: 400;">Privacy and safety are high priorities for Discord, including with the use of bots. That’s why we want to make it easier for you to understand what information about bots and other apps in the servers you’re in may have access to through Discord.</span></p>
+<p><span style="font-weight: 400;">Certain data access is unique to each bot, based on factors like its selected settings and verification status (learn more </span><a href="https://support.discord.com/hc/en-us/articles/360040720412" target="_blank" rel="noopener noreferrer">here</a><span style="font-weight: 400;">). To see this data access that a bot currently has in a server, open its profile in the server from the Discord desktop or browser app and click on the “Data Access” tab.</span></p>
+<p class="wysiwyg-text-align-center"><span style="font-weight: 400;"><img src="https://support.discord.com/hc/article_attachments/7933927399831/bot-data-visibility-example.png" alt="bot-data-visibility-example.png"></span></p>
+<p><span style="font-weight: 400;">In addition to the data described above and information they get from their direct communications or other interactions with users (e.g., a user’s command for the bot to take a specific action), all bots and other apps have access to a baseline set of data in the servers that they’re in, including:</span></p>
+<ul>
+    <li style="font-weight: 400;" aria-level="1"><span style="font-weight: 400;">Basic user profile information of server members (e.g., usernames, avatars, banners, discriminators, and nicknames);</span></li>
+    <li style="font-weight: 400;" aria-level="1"><span style="font-weight: 400;">Roles that members have in the server;</span></li>
+    <li style="font-weight: 400;" aria-level="1"><span style="font-weight: 400;">Metadata about messages (e.g., day and time sent);</span></li>
+    <li style="font-weight: 400;" aria-level="1"><span style="font-weight: 400;">The voice channel members join, as well as metadata about voice channels (e.g., muted, deafened, streaming, or have video on);</span></li>
+    <li style="font-weight: 400;" aria-level="1"><span style="font-weight: 400;">Message reactions by members; and</span></li>
+    <li style="font-weight: 400;" aria-level="1"><span style="font-weight: 400;">Language information selected by members in their User Settings.</span></li>
+</ul>
+<p><span style="font-weight: 400;">As described in our </span><a href="https://discord.com/terms" target="_blank" rel="noopener noreferrer">Terms of Service</a><span style="font-weight: 400;"> and </span><a href="https://discord.com/privacy#services-offered-by-third-parties" target="_blank" rel="noopener noreferrer">Privacy Policy</a><span style="font-weight: 400;">, bots may be developed by third parties and you should review any terms and policies provided by the developer of a bot to understand how it may use this data and to choose if you want to use it and participate in a server that incorporates it. Since a bot’s data access may change from time to time, we encourage you to regularly review this page and the bot’s profile for updates.</span></p>
+<h3>
+    <span style="font-weight: 400;">Have more questions? </span><a href="https://support.discord.com/hc/requests/new" target="_blank" rel="noopener noreferrer">Submit a request!</a>
+</h3>

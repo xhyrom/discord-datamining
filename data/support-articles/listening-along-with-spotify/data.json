@@ -1,0 +1,28 @@
+{
+  "id": 115003966072,
+  "url": "https://hammerandchisel.zendesk.com/api/v2/help_center/en-us/articles/115003966072.json",
+  "html_url": "https://support.discord.com/hc/en-us/articles/115003966072-Listening-Along-with-Spotify",
+  "author_id": 361945854972,
+  "comments_disabled": true,
+  "draft": false,
+  "promoted": false,
+  "position": 0,
+  "vote_sum": -511,
+  "vote_count": 4549,
+  "section_id": 201110577,
+  "created_at": "2018-01-12T17:19:18Z",
+  "updated_at": "2023-05-27T17:57:42Z",
+  "name": "Listening Along with Spotify",
+  "title": "Listening Along with Spotify",
+  "source_locale": "en-us",
+  "locale": "en-us",
+  "outdated": false,
+  "outdated_locales": [],
+  "edited_at": "2022-05-31T17:16:15Z",
+  "user_segment_id": null,
+  "permission_group_id": 1720972,
+  "content_tag_ids": [],
+  "label_names": [
+    "answer-bot"
+  ]
+}
