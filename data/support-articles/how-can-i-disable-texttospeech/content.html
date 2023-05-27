@@ -1,0 +1,4 @@
+<p>You can disable Text-To-Speech by going into User Settings &gt; Accessibility &gt; Disable "Allow playback and usage of /tts command."</p>
+<p class="wysiwyg-text-align-center"><img src="https://support.discord.com/hc/article_attachments/7064211753111/disable-tts-in-accessibility-tab-demo.gif" alt="disable-tts-in-accessibility-tab-demo.gif"></p>
+<p>This will now make it so that any instance of /tts will not be played if you or someone else uses it. </p>
+<p>For more in-depth information on Discord's Text-To-Speech abilities, check out <a href="https://support.discord.com/hc/en-us/articles/212517297-Text-to-Speech-101" target="_blank" rel="noopener noreferrer">Text-To-Speech 101</a></p>

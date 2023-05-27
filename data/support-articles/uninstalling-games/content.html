@@ -1,0 +1,16 @@
+<p><span style="font-weight: 400;">Need to make room on your computer by saying <em>buh bye</em> to an installed game? No problem! It’s pretty easy to uninstall games. This guide will show you how.</span></p>
+<p> </p>
+<h3><span style="font-weight: 400;">Note: You’re only able to uninstall games that you’ve downloaded from Discord. Games you’ve imported over from other platforms you won’t be able to uninstall via the Discord app. </span></h3>
+<h1>
+    <span style="font-weight: 400;">Method 1</span><span style="font-weight: 400;"><br></span>
+</h1>
+<p><span style="font-weight: 400;">This is the simplest way! Keep in mind </span><strong>you will need to be signed into your Discord account in order to uninstall the game</strong><span style="font-weight: 400;"> with this method. </span><span style="font-weight: 400;"><br></span><span style="font-weight: 400;"><br></span><span style="font-weight: 400;">First, head into the <strong>Library</strong> tab &amp; </span><strong>right-click</strong><span style="font-weight: 400;"> on the game you’d like to uninstall. If the game is installed you will see the option to <strong>Uninstall</strong>. Select <strong>Uninstall</strong> &amp; our hamsters will take care of the rest! Simple as that! </span><span style="font-weight: 400;"><br><br>Note that this Library tab only appears to those that have purchased a game on the Discord platform. If you're not seeing this tab it's because you haven't purchased a game:<br></span><span style="font-weight: 400;"><br></span><img src="https://support.discord.com/hc/article_attachments/360021086431/1_.jpg" alt="1_.jpg"></p>
+<h1>
+    <span style="font-weight: 400;">Method 2</span> 
+</h1>
+<p><span style="font-weight: 400;">You’ll want to use this method if you </span><strong>find yourself in the situation of being unable to log into your Discord account</strong><span style="font-weight: 400;"> &amp; uninstall conventional way. If you didn't select a custom location when you installed the game, the default install location of these Discord games is located on your PC under: </span></p>
+<p class="wysiwyg-text-align-center"><strong>Users &gt; (Profile) &gt; AppData &gt; Local &gt; DiscordGames</strong></p>
+<p><span style="font-weight: 400;">Heading into this folder you’ll see a list of games that you have installed. Right-click the game folder you’re trying to uninstall &amp; select </span><strong>Delete</strong><span style="font-weight: 400;">. Refresh the app &amp; you should no longer see this game installed. </span></p>
+<p><img src="https://support.discord.com/hc/article_attachments/360021086511/2_.jpg" alt="2_.jpg" width="1664" height="802"></p>
+<p>If you used a custom install location instead of the default, head to your custom install location and delete the game from there instead! </p>
+<p><strong>NOTE: </strong>Currently, this method of uninstalling your games won't remove their entries from Windows's <strong>Apps &amp; features </strong>list (also called <strong>Add/Remove Programs</strong> on Windows 7)</p>

@@ -1,0 +1,4 @@
+<p>To enable (or disable) <strong>Push-to-talk</strong> activation beeping, just open your <strong>User Settings</strong> by clicking on the cog icon in the bottom left corner:</p>
+<p><img src="https://support.discord.com/hc/article_attachments/360016012051/PTT_1.jpg" alt="PTT_1.jpg" width="801" height="215"><br><br></p>
+<p>Open the <strong>Notifications</strong> tab (in the left side bar), and scroll down to select/deselect "<strong>PTT Activate</strong>" and "<strong>PTT Deactivate</strong>" to adjust which noises you do or don't want to hear.</p>
+<p><img src="https://support.discord.com/hc/article_attachments/360058277091/Capture59.jpg" alt="Capture59.jpg"></p>
