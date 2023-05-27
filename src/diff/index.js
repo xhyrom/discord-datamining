@@ -92,9 +92,9 @@ if (blogPostsComment) {
     repo: eventPayload.repository.name,
     commit_sha: eventPayload.after,
     body:
-      blogPostsComment.length >= 65535
-        ? blogPostsComment.slice(0, 65535)
-        : blogPostsComment,
+      blogPostsComment.comment.length >= 65535
+        ? blogPostsComment.comment.slice(0, 65535)
+        : blogPostsComment.comment,
   });
 
   await sendEmbeds(
