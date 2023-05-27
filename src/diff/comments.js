@@ -279,12 +279,6 @@ export const supportArticles = async (octokit, eventPayload, dev) => {
             )}>`,
           },
           {
-            name: "Updated At",
-            value: data.updated_at
-              ? `<t:${Math.floor(new Date(data.updated_at).getTime() / 1000)}>`
-              : "Never",
-          },
-          {
             name: "Edited At",
             value: data.edited_at
               ? `<t:${Math.floor(new Date(data.edited_at).getTime() / 1000)}>`
@@ -317,12 +311,6 @@ export const supportArticles = async (octokit, eventPayload, dev) => {
             value: `<t:${Math.floor(
               new Date(data.created_at).getTime() / 1000
             )}>`,
-          },
-          {
-            name: "Updated At",
-            value: data.updated_at
-              ? `<t:${Math.floor(new Date(data.updated_at).getTime() / 1000)}>`
-              : "Never",
           },
           {
             name: "Edited At",
