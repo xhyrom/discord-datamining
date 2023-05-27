@@ -42,7 +42,7 @@ for (const article of articles) {
 
   const content = jsBeautify.html_beautify(article.body);
 
-  await writeFile(join(path, "content.html"), content);
+  await writeFile(join(path, "content.md"), content);
   await writeFile(
     join(path, "data.json"),
     JSON.stringify(omit(article, ["body", "vote_sum", "vote_count"]), null, 2)
