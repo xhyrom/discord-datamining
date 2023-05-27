@@ -1,0 +1,18 @@
+<p class="callout"><span style="font-weight: 400;">Update: We are no longer offering the ability to purchase a license to sell PC games starting December 1, 2021. On March 1, 2022, we are sunsetting store channel functionality. You can read more at <a href="https://support-dev.discord.com/hc/en-us/articles/6309018858647" target="_blank" rel="noopener noreferrer">this article</a>.</span></p>
+<p><span style="font-weight: 400;">Since we’re now allowing developers to completely self serve their games on Discord servers we do have in place a set of strict guidelines that we’re asking each game to uphold in order to be sold on our platform. With each game being submitted they will go through a quick review from our Dev Support Team before you’re able to sell a game. Keep in mind that </span><strong>we reserve the right to determine the appropriateness of all games and to accept or reject any game at our discretion. </strong><span style="font-weight: 400;"><br></span><span style="font-weight: 400;"><br></span><span style="font-weight: 400;">To break things down as basic as possible the main issues the team will be looking for are; </span><span style="font-weight: 400;"><br></span></p>
+<ul>
+    <li style="font-weight: 400;"><span style="font-weight: 400;">Your game must be your own work. You can not submit someone else's game. You must have the rights to submit your own game.</span></li>
+    <li style="font-weight: 400;"><span style="font-weight: 400;">You must submit a game, which means that the program shouldn't be malware, spyware, or make unanticipated changes to a user's computer.</span></li>
+    <li style="font-weight: 400;"><span style="font-weight: 400;">You must accurately provide information about yourself and your game. You can not mislead us about who you are or what your game is about.</span></li>
+    <li style="font-weight: 400;"><span style="font-weight: 400;">You can not submit games with:</span></li>
+    <ul>
+        <li style="font-weight: 400;"><span style="font-weight: 400;">Content related to minors that is sexually suggestive or overly violent</span></li>
+        <li style="font-weight: 400;"><span style="font-weight: 400;">Content that includes gambling with real-world currencies</span></li>
+        <li style="font-weight: 400;"><span style="font-weight: 400;">Content promoting or inciting real-world harm to anyone</span></li>
+    </ul>
+    <li style="font-weight: 400;"><span style="font-weight: 400;">You shouldn't submit a piece of content that is purely to disgust or offend — games can have shocking or uncomfortable moments, but that can't be the only goal or point of the game. </span></li>
+    <li style="font-weight: 400;"><span style="font-weight: 400;">If your game contains any material not suitable for minors, you must specify that content to us upon submission.</span></li>
+    <li style="font-weight: 400;"><span style="font-weight: 400;">Games that are purely, or have a majority, of Adult Themes or NSFW content will not be accepted.</span></li>
+    <li style="font-weight: 400;"><span style="font-weight: 400;">Your game must include a way for a user to exit the game from the game itself, meaning no killing the game using task manager alone.  </span></li>
+    <li style="font-weight: 400;"><span style="font-weight: 400;">Your game must be a game! We are not approving for commerce non-game related software, modifications for an existing game, etc. We will only approve for commerce a standalone videogame. </span></li>
+</ul>

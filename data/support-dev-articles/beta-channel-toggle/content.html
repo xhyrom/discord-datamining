@@ -1,0 +1,7 @@
+<p><span style="font-weight: 400;">After your game has made it through the approval process and is ready for commerce you're going to go ahead and create a store channel to start selling your game! </span></p>
+<p><span style="font-weight: 400;">One very important toggle to be mindful of is the</span><strong> Beta Channel</strong><span style="font-weight: 400;"> toggle.</span></p>
+<p><span style="font-weight: 400;"><img src="https://support-dev.discord.com/hc/article_attachments/360023869691/toggle_.jpg" alt="toggle_.jpg" width="509" height="758"></span></p>
+<p><span style="font-weight: 400;">When creating a channel this toggle will appear once an Application has been selected. </span></p>
+<p><span style="font-weight: 400;"><strong>This toggle will make your game free despite having a price set in the developer portal.</strong> </span></p>
+<p><span style="font-weight: 400;">If you accidentally select this toggle, you will have to remake this channel. Be sure to delete the old channel too. The way this toggle should be used is to give easy free access to your beta testers. When this channel is created we’d strongly recommend double-checking your store page to ensure everything looks right! <br></span></p>
+<p class="callout"><span style="font-weight: 400;">Reach out to our support team <a href="https://dis.gd/devsupport" target="_self">here</a> for any questions! </span></p>

@@ -1,0 +1,12 @@
+<p>So your bot is getting hit with a rate limit error code.</p>
+<h3>API Rate Limits</h3>
+<p>If a rate limit is exceeded (currently, 50 requests per second), the API will return a HTTP 429 response code. The limit for invalid requests is currently 10,000 per 10 minutes. However, if your bot gets temporarily CloudFlare banned from the API, it is most likely <strong>not</strong> a global rate limit issue and is more likely a spike in errors that were not properly handled.</p>
+<p>First thing we want to note is that <strong>we, under very few circumstances, raise the global rate limit on applications</strong>. The good news is there are available workarounds that we encourage developers to look into when building their apps.</p>
+<p>We also want to mention that interaction endpoints are not bound to the rate limit. So migrating functionality to application commands where possible could be another solution. Definitely take a look at our docs on that <a href="https://discord.com/developers/docs/interactions/application-commands">here</a>, or documentation for the library of your choice.</p>
+<h2>Gateway Rate Limits</h2>
+<p>To send data to/from Discord, your application connects to a websocket. <strong>Sharding</strong> is generally a best practice for applications especially as they continue to grow and scale on Discord. It’s a sure-fire way of working not quite around.. but within our API rate limits. Sharding opens multiple websockets so data can be exchanged across all of these connections rather than overloading one.</p>
+<pre><code class="language-jsx">shard_id = (guild_id &gt;&gt; 22) % num_shards
+</code></pre>
+<p>Traffic from guilds/servers will be routed to a shard (open websocket) and their requests will run in parallel to each other to stay under the global rate limit. Think of sharding as splitting your bot into multiple instances of itself. It’s entirely user-controlled and is only made simpler by your library of choice!</p>
+<p>With regard to <em>large bot sharding</em> and an increased global rate limit, these are services we can only offer to bots that are operating in 150,000 servers or more. You can learn more about how these requests work in our documentation: <a href="https://discord.com/developers/docs/topics/gateway#sharding-for-very-large-bots">https://discord.com/developers/docs/topics/gateway#sharding-for-very-large-bots</a></p>
+<p>You can read more about how to fine tune and configure shards <a href="https://discord.com/developers/docs/topics/gateway#sharding">here</a>.</p>
