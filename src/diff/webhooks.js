@@ -1,5 +1,5 @@
 import { ButtonStyle, ComponentType } from "discord-api-types/v10";
-import { sendWebhook } from "../utils.js";
+import { sendWebhook, splitArray } from "../utils.js";
 
 /**
  * @param {any} eventPayload
@@ -59,23 +59,25 @@ export const sendEmbeds = async (
 ) => {
   const content = roleId ? `<@&${roleId}>\n` : "";
 
-  if (embeds.length > 10) embeds = embeds.slice(0, 10);
+  const embedsSplitted = splitArray(embeds, 10);
 
-  await sendWebhook(id, token, {
-    content,
-    embeds,
-    components: [
-      {
-        type: ComponentType.ActionRow,
-        components: [
-          {
-            type: ComponentType.Button,
-            label: "View on GitHub",
-            style: ButtonStyle.Link,
-            url: `https://github.com/xHyroM/discord-datamining/commit/${eventPayload.after}#commitcomment-${comment.id}`,
-          },
-        ],
-      },
-    ],
-  });
+  for (const embds of embedsSplitted) {
+    await sendWebhook(id, token, {
+      content,
+      embeds: embds,
+      components: [
+        {
+          type: ComponentType.ActionRow,
+          components: [
+            {
+              type: ComponentType.Button,
+              label: "View on GitHub",
+              style: ButtonStyle.Link,
+              url: `https://github.com/xHyroM/discord-datamining/commit/${eventPayload.after}#commitcomment-${comment.id}`,
+            },
+          ],
+        },
+      ],
+    });
+  }
 };

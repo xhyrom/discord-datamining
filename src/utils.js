@@ -35,3 +35,18 @@ export const sendWebhook = async (id, token, body) => {
 
   console.log(res);
 };
+
+/**
+ * @param {any[]} array
+ * @param {number} size
+ * @returns
+ */
+export const splitArray = (array, size) => {
+  const result = [];
+
+  for (let i = 0; i < array.length; i += size) {
+    result.push(array.slice(i, i + size));
+  }
+
+  return result;
+};
