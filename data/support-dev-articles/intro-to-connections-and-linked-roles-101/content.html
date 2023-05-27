@@ -1,0 +1,19 @@
+<h2>
+    <strong>Intro to the intro</strong> (¬‿¬ )
+</h2>
+<p>So you're a dope Discord dev and you’ve built a really cool app that tons of people in your favorite communities use to help make their servers great. Your friend gets an invite to a seemingly cool server your peeps can’t stop raving about, and your buddy is super psyched to join and explore the contents therein, but there's a problem. This server is gated and requires verification before you join and get access to channels. Like a photo ID/Passport &amp; a 2FA code from an external app associated with your hobby. What to do!? Should they risk giving this server that <em>might</em> be cool personally identifiable info in order to join and partake?</p>
+<p>But wait, what if you could verify your identity using external accounts associated with your community, and get a server role that corresponds with your external account?</p>
+<p>Our experts say “that might be pretty cool” ┐('～`;)┌. So introducing our new and improved Connections from Discord!</p>
+<h2><strong>Overview (◕‿◕)</strong></h2>
+<p>Our new connections features give users the ability to connect external identities/accounts to your Discord profile. This will allow other users to verify the authenticity of your account via an icon on your user profile. Connections also enable admins to create roles and gated access with “Linked Roles”. In the past, connections only allowed certain special features, like being able to see what music someone’s jamming to from their Spotify.</p>
+<p>Moving forward, Connections can now act as a form of cross-platform verification you can apply to your account to access certain role-locked content in a server.</p>
+<p>For example, if you’re a dev you could build a linked role for Warhammer 40K Darktide that adds you to matches requesting your favorite class (Ogryns FTW BTW!!). Or make an app that connects you with other peeps who have similar game libraries.</p>
+<p>Are you a user and have a Steam, Epic, or Paypal account? Well, you’re in luck. Because now you can use those verified accounts to prove your account is the real deal on Discord to other users and admins. And if you have multiple external accounts that can be connected, you can even pick which connection you’d like displayed on your profile.</p>
+<h2><strong>What’s in this for Developers? ┬┴┬┴┤( ͡° ͜ʖ├┬┴┬┴</strong></h2>
+<p>For our developer community, we also opened up the Role Connections API for all developers to build any connection they want, to enable trust in their own way in their individual communities.</p>
+<p>You might be wondering how it works. In essence, Developers can use this new feature to build safer and more tight-nit communities by binding entry and access to servers and channels to verified roles. These roles could be more common like Paypal or eBay. Or be community or interest-specific like connections to Deviant Art, Steam, or Crunchyroll. Either way, with our new and improved connection features you’ll have the opportunity to help protect communities better by making access exclusive to those who can confirm they are a part of your clique.</p>
+<h2><strong>Where to learn more __φ(．．)</strong></h2>
+<p>So if you want to make your app more useful, or help keep your favorite community safe our new suite of features can help make your vision happen.</p>
+<p>To learn more, please check out our developer portal <a href="https://discord.com/developers/docs/intro" target="_blank" rel="noopener">here.</a></p>
+<p>Our code lab so you can practice <a href="https://discord.com/developers/docs/tutorials/configuring-app-metadata-for-linked-roles" target="_blank" rel="noopener">here</a>.</p>
+<p>As well as this nifty in-depth guide to building connections via our help center article <a href="https://support-dev.discord.com/hc/en-us/articles/10852186730903">here</a>.</p>
