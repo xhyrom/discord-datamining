@@ -38,8 +38,8 @@ if (stringsComment) {
     repo: eventPayload.repository.name,
     commit_sha: eventPayload.after,
     body:
-      stringsComment.length > 65536
-        ? stringsComment.slice(0, 65536)
+      stringsComment.length >= 65535
+        ? stringsComment.slice(0, 65535)
         : stringsComment,
   });
 
@@ -65,8 +65,8 @@ if (stylesheetComment) {
     repo: eventPayload.repository.name,
     commit_sha: eventPayload.after,
     body:
-      stylesheetComment.length > 65536
-        ? stylesheetComment.slice(0, 65536)
+      stylesheetComment.length >= 65535
+        ? stylesheetComment.slice(0, 65535)
         : stylesheetComment,
   });
 
@@ -92,8 +92,8 @@ if (blogPostsComment) {
     repo: eventPayload.repository.name,
     commit_sha: eventPayload.after,
     body:
-      blogPostsComment.length > 65536
-        ? blogPostsComment.slice(0, 65536)
+      blogPostsComment.length >= 65535
+        ? blogPostsComment.slice(0, 65535)
         : blogPostsComment,
   });
 
