@@ -1,0 +1,5 @@
+<div class="blog-post-content w-richtext">
+    <p>We recently ran an actual, honest-to-goodness study about emojis, and if we may summarize our findings: <a href="https://discord.com/blog/talk-emoji-to-me-survey-the-science-behind-emojis" target="_blank">people like ‘em</a>. </p>
+    <p>Emojis on Discord are even more special. Thanks to the mystical power of PNGs, you can make a little picture out of almost any symbol, in-joke, or bizarre late-night inspiration. Got a story about how your friend chugged too much 9 million Scoville hot sauce? Hot sauce skull emoji. Need a unique way to welcome your friends and/or terrify them the second they message you? Create an emoji of yourself waving hello! Spilled soda on your keyboard? You guessed it: replace the non-functioning letters with cunningly-camouflaged emojis. The possibilities are truly endless.</p>
+    <p>We’re so keen on the darn things, we decided to make a blog post answering all the most frequently-asked questions about them on one easily-referenced page. So break out the ✏️and 📜 and let’s dive in!</p>
+</div>

@@ -1,0 +1,4 @@
+<div class="blog-post-content w-richtext">
+    <p>Since its inception, AutoMod has helped remove millions of unwanted messages on communities across Discord. It’s a powerful tool that empowers mods and admins to keep their server clean and sleek 24/7, and its capabilities continue to grow with powerful enhancements like blocking mention spam, regex keywords, and more on the horizon. </p>
+    <p>As we continue to think about more ways to equip communities with powerful moderation capabilities, we’re looking to empower the super-builders that are constantly expanding what’s possible on Discord: you, the Developers. </p>
+</div>
