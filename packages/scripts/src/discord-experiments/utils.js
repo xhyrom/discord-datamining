@@ -193,7 +193,7 @@ const send = async (id, token, embeds, pushResult) => {
             label: "View on GitHub",
             style: ButtonStyle.Link,
             url: `https://github.com/xHyroM/discord-datamining/commit/${
-              pushResult.update?.head.remote ?? ""
+              pushResult.update?.hash.to ?? ""
             }`,
           },
         ],
