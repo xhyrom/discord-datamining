@@ -9,7 +9,7 @@ import {
   overridesFormat,
 } from "./formatters.js";
 import jsondiffpatch from "jsondiffpatch";
-import { ButtonStyle, ComponentType } from "discord-api-types/v10.js";
+import { ButtonStyle, ComponentType } from "discord-api-types/v10";
 disableValidators();
 
 /**
