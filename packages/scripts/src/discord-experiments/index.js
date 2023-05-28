@@ -26,13 +26,8 @@ const experiments = await (
   )
 ).json();
 
-await watcher(
-  JSON.parse(
-    await readFile(join("..", "..", "data", "experiments.json"), "utf-8")
-  ),
-  experiments,
-  webhookId,
-  webhookToken
+const oldExperiments = JSON.parse(
+  await readFile(join("..", "..", "data", "experiments.json"), "utf-8")
 );
 
 await writeFile(
@@ -60,5 +55,7 @@ await git.commit([
     .join("\n")}`,
 ]);
 
-await push(git, "origin", "master");
+const pushResult = await push(git, "origin", "master");
+await watcher(oldExperiments, experiments, pushResult, webhookId, webhookToken);
+
 success("Successfully pushed 🚀");

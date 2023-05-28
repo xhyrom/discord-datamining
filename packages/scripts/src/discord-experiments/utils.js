@@ -2,24 +2,27 @@
 import deepEqual from "fast-deep-equal";
 import { EmbedBuilder, disableValidators } from "@discordjs/builders";
 import { info } from "../logger.js";
-import { sendWebhook as send } from "../utils.js";
+import { sendWebhook } from "../utils.js";
 import {
   experimentNameFormat,
   populationsFormat,
   overridesFormat,
 } from "./formatters.js";
-import { getObjectDiff } from "./diff.js";
+import jsondiffpatch from "jsondiffpatch";
+import { ButtonStyle, ComponentType } from "discord-api-types/v10.js";
 disableValidators();
 
 /**
  * @param {unknown[]} oldExperiments
  * @param {unknown[]} currentExperiments
+ * @param {import("simple-git").PushResult} pushResult
  * @param {string} webhookId
  * @param {string} webhookToken
  */
 export const watcher = (
   oldExperiments,
   currentExperiments,
+  pushResult,
   webhookId,
   webhookToken
 ) => {
@@ -48,9 +51,12 @@ export const watcher = (
     );
 
     for (const experiment of addedExperiments) {
-      send(webhookId, webhookToken, {
-        embeds: [defaultEmbed(experiment, "add").setColor(0x51f542).toJSON()],
-      });
+      send(
+        webhookId,
+        webhookToken,
+        [defaultEmbed(experiment, "add").setColor(0x51f542).toJSON()],
+        pushResult
+      );
     }
   }
 
@@ -62,11 +68,12 @@ export const watcher = (
     );
 
     for (const experiment of removedExperiments) {
-      send(webhookId, webhookToken, {
-        embeds: [
-          defaultEmbed(experiment, "remove").setColor(0xf53731).toJSON(),
-        ],
-      });
+      send(
+        webhookId,
+        webhookToken,
+        [defaultEmbed(experiment, "remove").setColor(0xf53731).toJSON()],
+        pushResult
+      );
     }
   }
 
@@ -86,17 +93,26 @@ export const watcher = (
         (e) => e.data.hash === experiment.data.hash
       );
 
-      send(webhookId, webhookToken, {
-        embeds: [
-          defaultEmbed(
-            currentExperiment,
-            "change",
-            getObjectDiff(oldExperiment, currentExperiment).join("\n\n")
-          )
-            .setColor(0xe8c61a)
+      const diff = jsondiffpatch.formatters.console.format(
+        jsondiffpatch.diff(oldExperiment, currentExperiment) || {},
+        currentExperiment
+      );
+
+      send(
+        webhookId,
+        webhookToken,
+        [
+          defaultEmbed(currentExperiment, "change").setColor(0xe8c61a).toJSON(),
+          new EmbedBuilder()
+            .setDescription(
+              `\`\`\`ansi\n${
+                diff.length > 4083 ? diff.slice(0, 4080) + "..." : diff
+              }\`\`\``
+            )
             .toJSON(),
         ],
-      });
+        pushResult
+      );
     }
   }
 };
@@ -104,10 +120,9 @@ export const watcher = (
 /**
  * @param {any} experiment
  * @param {string} action
- * @param {string} diff
  * @returns
  */
-const defaultEmbed = (experiment, action, diff = "") => {
+const defaultEmbed = (experiment, action) => {
   let title = "";
   switch (action) {
     case "add":
@@ -154,17 +169,35 @@ const defaultEmbed = (experiment, action, diff = "") => {
     },
   ];
 
-  if (diff !== "") {
-    const content = `\`\`\`diff\n${diff}\n\`\`\``;
-    fields.push({
-      name: "Changes",
-      value:
-        content.length > 1024
-          ? `[Too long to display](https://github.com/xHyroM/discord-datamining/commits/master/data/experiments.json)`
-          : content,
-      inline: false,
-    });
-  }
-
   return new EmbedBuilder().setTitle(title).addFields(...fields);
+};
+
+/**
+ *
+ * @param {string} id
+ * @param {string} token
+ * @param {import("discord-api-types/v10.js").APIEmbed[]} embeds
+ * @param {import("simple-git").PushResult} pushResult
+ */
+const send = async (id, token, embeds, pushResult) => {
+  console.log(pushResult);
+  await sendWebhook(id, token, {
+    content: "<@&1105589221185568851>",
+    embeds,
+    components: [
+      {
+        type: ComponentType.ActionRow,
+        components: [
+          {
+            type: ComponentType.Button,
+            label: "View on GitHub",
+            style: ButtonStyle.Link,
+            url: `https://github.com/xHyroM/discord-datamining/commit/${
+              pushResult.update?.head.remote ?? ""
+            }`,
+          },
+        ],
+      },
+    ],
+  });
 };
