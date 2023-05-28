@@ -7,6 +7,7 @@ on:
     branches: [master]
     paths:
       - "packages/website/**"
+      - "data/**"
   # Allows you to run this workflow manually from the Actions tab on GitHub.
   workflow_dispatch:
 
