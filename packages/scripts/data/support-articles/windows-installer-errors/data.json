@@ -1,0 +1,25 @@
+{
+  "id": 209099387,
+  "url": "https://hammerandchisel.zendesk.com/api/v2/help_center/en-us/articles/209099387.json",
+  "html_url": "https://support.discord.com/hc/en-us/articles/209099387--Windows-Installer-Errors",
+  "author_id": 1199351638,
+  "comments_disabled": true,
+  "draft": false,
+  "promoted": false,
+  "position": 13,
+  "section_id": 360007875231,
+  "created_at": "2015-09-03T18:18:28Z",
+  "name": "[Windows] Installer Errors",
+  "title": "[Windows] Installer Errors",
+  "source_locale": "en-us",
+  "locale": "en-us",
+  "outdated": false,
+  "outdated_locales": [],
+  "edited_at": "2021-10-28T20:07:33Z",
+  "user_segment_id": null,
+  "permission_group_id": 1720972,
+  "content_tag_ids": [],
+  "label_names": [
+    "answer-bot"
+  ]
+}

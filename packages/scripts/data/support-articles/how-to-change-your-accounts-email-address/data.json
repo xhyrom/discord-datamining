@@ -1,0 +1,28 @@
+{
+  "id": 4423385681175,
+  "url": "https://hammerandchisel.zendesk.com/api/v2/help_center/en-us/articles/4423385681175.json",
+  "html_url": "https://support.discord.com/hc/en-us/articles/4423385681175-How-to-Change-Your-Account-s-Email-Address",
+  "author_id": 424992137214,
+  "comments_disabled": true,
+  "draft": false,
+  "promoted": false,
+  "position": 0,
+  "section_id": 360009072571,
+  "created_at": "2022-02-10T23:26:28Z",
+  "name": "How to Change Your Account's Email Address",
+  "title": "How to Change Your Account's Email Address",
+  "source_locale": "en-us",
+  "locale": "en-us",
+  "outdated": false,
+  "outdated_locales": [],
+  "edited_at": "2022-06-29T23:06:36Z",
+  "user_segment_id": null,
+  "permission_group_id": 1720972,
+  "content_tag_ids": [],
+  "label_names": [
+    "email",
+    "answer-bot",
+    "email is already registered",
+    "email error"
+  ]
+}

@@ -1,0 +1,30 @@
+{
+  "id": 4413460214807,
+  "url": "https://hammerandchisel.zendesk.com/api/v2/help_center/en-us/articles/4413460214807.json",
+  "html_url": "https://support.discord.com/hc/en-us/articles/4413460214807-How-to-Remove-a-Phone-Number",
+  "author_id": 424992137214,
+  "comments_disabled": true,
+  "draft": false,
+  "promoted": false,
+  "position": 0,
+  "section_id": 360009072571,
+  "created_at": "2021-11-17T22:03:01Z",
+  "name": "How to Remove a Phone Number",
+  "title": "How to Remove a Phone Number",
+  "source_locale": "en-us",
+  "locale": "en-us",
+  "outdated": false,
+  "outdated_locales": [],
+  "edited_at": "2022-05-31T16:14:14Z",
+  "user_segment_id": null,
+  "permission_group_id": 1720972,
+  "content_tag_ids": [],
+  "label_names": [
+    "answer-bot",
+    "phone",
+    "phone verification",
+    "remove number",
+    "remove a phone number",
+    "accidental account"
+  ]
+}

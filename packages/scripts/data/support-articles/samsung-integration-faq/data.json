@@ -1,0 +1,27 @@
+{
+  "id": 360031924632,
+  "url": "https://hammerandchisel.zendesk.com/api/v2/help_center/en-us/articles/360031924632.json",
+  "html_url": "https://support.discord.com/hc/en-us/articles/360031924632-Samsung-Integration-FAQ",
+  "author_id": 364802902112,
+  "comments_disabled": true,
+  "draft": false,
+  "promoted": false,
+  "position": 0,
+  "section_id": 360007770552,
+  "created_at": "2019-08-12T23:25:19Z",
+  "name": "Samsung Integration FAQ",
+  "title": "Samsung Integration FAQ",
+  "source_locale": "en-us",
+  "locale": "en-us",
+  "outdated": false,
+  "outdated_locales": [],
+  "edited_at": "2022-08-01T16:02:18Z",
+  "user_segment_id": null,
+  "permission_group_id": 1720972,
+  "content_tag_ids": [],
+  "label_names": [
+    "answer-bot",
+    "android",
+    "Samsung"
+  ]
+}

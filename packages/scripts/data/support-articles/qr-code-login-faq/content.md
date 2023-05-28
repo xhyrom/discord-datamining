@@ -1,0 +1,21 @@
+<p>With QR code login, you can connect to Discord quickly and securely without typing out your full password or sharing your password on an unfamiliar setup! Scanning a QR code with your logged in Discord mobile app is a super easy way to get logged in on a new computer, no matter where you are.</p>
+<h1 id="using-qr-code-login">Using QR Code Login</h1>
+<p>To login using a QR code, you'll first want to download the Discord mobile app and log in with your account credentials. QR code scanning is available on both <a href="https://play.google.com/store/apps/details?id=com.discord&amp;hl=en_US" target="_self">Discord for Android</a> and <a href="https://www.google.com/url?sa=t&amp;rct=j&amp;q=&amp;esrc=s&amp;source=web&amp;cd=1&amp;cad=rja&amp;uact=8&amp;ved=2ahUKEwjbjdKR8Z3nAhXVtp4KHa8KBbcQFjAAegQIAxAB&amp;url=https%3A%2F%2Fapps.apple.com%2Fus%2Fapp%2Fdiscord%2Fid985746746&amp;usg=AOvVaw1PNPyol20tdMi2gPY9McHu" target="_self">Discord for iOS</a>!</p>
+<p>Once you're logged in on your mobile device, you can log into the Discord desktop or browser client by scanning a QR code with the app. The QR code on the login screen looks like this!</p>
+<p><img src="https://support.discord.com/hc/article_attachments/360048105592/mceclip0.png" alt="mceclip0.png"></p>
+<p><em>Fun fact: QR codes only work for 2 minutes, so this one won't work anymore! Scan it and you'll see!</em></p>
+<p>To scan the login code, head to the Discord app. Open the User Settings menu, then choose the Scan QR Code option! We'll ask for camera permissions if you haven't granted them to us already, then you're ready to scan! Once the scanner's open, simply line up the box with the QR code on screen.</p>
+<h3>You can also scan the QR code using any application that supports QR scanning, including the Camera app on many devices! You'll get a quick shortcut to the Discord app for final scanning and approval.</h3>
+<h1 id="logging-in">Logging In</h1>
+<p>Once you've scanned the QR code, you'll be asked to verify and approve the ongoing login attempt. You'll see a screen that looks like this!</p>
+<p><img class="shrinkToFit transparent" src="https://cdn.discordapp.com/attachments/667100630820847618/669322222925512704/image0.png" alt="https://cdn.discordapp.com/attachments/667100630820847618/669322222925512704/image0.png" width="474" height="1029"></p>
+<p>After approval, your desktop device will be logged in and ready to go! Want to log out of that device? Just head to User Settings &gt; Log Out on the desktop or browser client and you'll be logged out until your next session!</p>
+<h3>QR codes only last for 2 minutes. If you don't scan the QR code you generate within 2 minutes, you'll need to generate a new QR code to login successfully—just refresh the login page or restart the desktop app!</h3>
+<h1 id="safety-tips">Safety Tips</h1>
+<p>You've got full control over what devices are allowed to login with the verification screen shown above. Even if you've scanned a QR code that's opened the Discord app by mistake, you can prevent the login attempt right away.</p>
+<p><strong>Never approve a QR code login that you didn't generate yourself! </strong>If you've been sent a QR code by someone else that opened the login verification screen, <strong>hit cancel right away</strong>.</p>
+<p>If you approve a login that wasn't yours by mistake, you can <a href="https://support.discord.com/hc/en-us/articles/218410947" target="_self">change your Discord password</a> to log out all devices at once, including those you don't personally approve of.</p>
+<p>Most importantly, don't forget that <strong>any QR code login attempt needs to be approved before it goes through</strong>. Keep an eye out for that verification screen and <strong>never verify or approve a login that you didn't ask for.</strong></p>
+<h3>If someone you don't know is asking you to login using a QR code, they may be trying to phish your account. You can learn more about phishing <a href="https://support.discord.com/hc/en-us/articles/360037660611" target="_self">here</a>!</h3>
+<p> </p>
+<p>If you have feedback on this new feature, please don't hesitate to share it with us as well! You can share any of your feedback <a href="https://dis.gd/feedback" target="_self">here</a>.</p>

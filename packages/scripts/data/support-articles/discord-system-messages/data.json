@@ -1,0 +1,29 @@
+{
+  "id": 360036118732,
+  "url": "https://hammerandchisel.zendesk.com/api/v2/help_center/en-us/articles/360036118732.json",
+  "html_url": "https://support.discord.com/hc/en-us/articles/360036118732-Discord-System-Messages",
+  "author_id": 364802902112,
+  "comments_disabled": true,
+  "draft": false,
+  "promoted": false,
+  "position": 0,
+  "section_id": 360007875171,
+  "created_at": "2019-11-21T01:14:35Z",
+  "name": "Discord System Messages",
+  "title": "Discord System Messages",
+  "source_locale": "en-us",
+  "locale": "en-us",
+  "outdated": false,
+  "outdated_locales": [],
+  "edited_at": "2020-06-18T16:58:58Z",
+  "user_segment_id": null,
+  "permission_group_id": 1720972,
+  "content_tag_ids": [],
+  "label_names": [
+    "DMs",
+    "tns",
+    "Messages",
+    "answer-bot",
+    "Trust & Safety"
+  ]
+}

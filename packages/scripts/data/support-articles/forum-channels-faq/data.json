@@ -1,0 +1,29 @@
+{
+  "id": 6208479917079,
+  "url": "https://hammerandchisel.zendesk.com/api/v2/help_center/en-us/articles/6208479917079.json",
+  "html_url": "https://support.discord.com/hc/en-us/articles/6208479917079-Forum-Channels-FAQ",
+  "author_id": 364802902112,
+  "comments_disabled": true,
+  "draft": false,
+  "promoted": false,
+  "position": 53,
+  "section_id": 115000457731,
+  "created_at": "2022-05-20T01:41:49Z",
+  "name": "Forum Channels FAQ",
+  "title": "Forum Channels FAQ",
+  "source_locale": "en-us",
+  "locale": "en-us",
+  "outdated": false,
+  "outdated_locales": [],
+  "edited_at": "2022-11-30T19:43:05Z",
+  "user_segment_id": null,
+  "permission_group_id": 1720972,
+  "content_tag_ids": [],
+  "label_names": [
+    "channel",
+    "answer-bot",
+    "forum",
+    "channels",
+    "forum channel"
+  ]
+}

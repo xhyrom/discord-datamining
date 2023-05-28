@@ -1,0 +1,25 @@
+{
+  "id": 218449248,
+  "url": "https://hammerandchisel.zendesk.com/api/v2/help_center/en-us/articles/218449248.json",
+  "html_url": "https://support.discord.com/hc/en-us/articles/218449248-Permissions-Lockout",
+  "author_id": 12415876668,
+  "comments_disabled": true,
+  "draft": false,
+  "promoted": false,
+  "position": 0,
+  "section_id": 201110547,
+  "created_at": "2016-04-25T19:34:58Z",
+  "name": "Permissions Lockout",
+  "title": "Permissions Lockout",
+  "source_locale": "en-us",
+  "locale": "en-us",
+  "outdated": false,
+  "outdated_locales": [],
+  "edited_at": "2022-05-31T16:18:05Z",
+  "user_segment_id": null,
+  "permission_group_id": 1720972,
+  "content_tag_ids": [],
+  "label_names": [
+    "answer-bot"
+  ]
+}

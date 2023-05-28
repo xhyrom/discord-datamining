@@ -1,0 +1,32 @@
+{
+  "id": 221421867,
+  "url": "https://hammerandchisel.zendesk.com/api/v2/help_center/en-us/articles/221421867.json",
+  "html_url": "https://support.discord.com/hc/en-us/articles/221421867-How-do-I-pin-messages-",
+  "author_id": 1199351638,
+  "comments_disabled": true,
+  "draft": false,
+  "promoted": false,
+  "position": 2,
+  "section_id": 115000458672,
+  "created_at": "2016-06-23T06:57:56Z",
+  "name": "How do I pin messages?",
+  "title": "How do I pin messages?",
+  "source_locale": "en-us",
+  "locale": "en-us",
+  "outdated": false,
+  "outdated_locales": [],
+  "edited_at": "2020-09-28T19:37:06Z",
+  "user_segment_id": null,
+  "permission_group_id": 1720972,
+  "content_tag_ids": [],
+  "label_names": [
+    "Pinned",
+    "Message",
+    "Sticky",
+    "Jump",
+    "Save",
+    "pinning",
+    "answer-bot",
+    "pin"
+  ]
+}

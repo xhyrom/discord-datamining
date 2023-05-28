@@ -1,0 +1,25 @@
+{
+  "id": 115003394412,
+  "url": "https://hammerandchisel.zendesk.com/api/v2/help_center/en-us/articles/115003394412.json",
+  "html_url": "https://support.discord.com/hc/en-us/articles/115003394412-AV-Errors-When-Updating",
+  "author_id": 361945854972,
+  "comments_disabled": true,
+  "draft": false,
+  "promoted": false,
+  "position": 0,
+  "section_id": 360007875231,
+  "created_at": "2017-12-12T00:34:55Z",
+  "name": "AV Errors When Updating",
+  "title": "AV Errors When Updating",
+  "source_locale": "en-us",
+  "locale": "en-us",
+  "outdated": false,
+  "outdated_locales": [],
+  "edited_at": "2020-06-18T17:10:10Z",
+  "user_segment_id": null,
+  "permission_group_id": 1720972,
+  "content_tag_ids": [],
+  "label_names": [
+    "answer-bot"
+  ]
+}

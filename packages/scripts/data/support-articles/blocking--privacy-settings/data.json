@@ -1,0 +1,31 @@
+{
+  "id": 217916488,
+  "url": "https://hammerandchisel.zendesk.com/api/v2/help_center/en-us/articles/217916488.json",
+  "html_url": "https://support.discord.com/hc/en-us/articles/217916488-Blocking-Privacy-Settings-",
+  "author_id": 1199351638,
+  "comments_disabled": true,
+  "draft": false,
+  "promoted": false,
+  "position": 0,
+  "section_id": 360007875171,
+  "created_at": "2016-03-30T21:06:01Z",
+  "name": "Blocking & Privacy Settings ",
+  "title": "Blocking & Privacy Settings ",
+  "source_locale": "en-us",
+  "locale": "en-us",
+  "outdated": false,
+  "outdated_locales": [],
+  "edited_at": "2022-05-31T17:15:09Z",
+  "user_segment_id": null,
+  "permission_group_id": 1720972,
+  "content_tag_ids": [],
+  "label_names": [
+    "ignore",
+    "ignoring",
+    "block",
+    "ban",
+    "raid",
+    "security",
+    "answer-bot"
+  ]
+}

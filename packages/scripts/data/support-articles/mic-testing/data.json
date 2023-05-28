@@ -1,0 +1,25 @@
+{
+  "id": 360020641332,
+  "url": "https://hammerandchisel.zendesk.com/api/v2/help_center/en-us/articles/360020641332.json",
+  "html_url": "https://support.discord.com/hc/en-us/articles/360020641332-Mic-Testing",
+  "author_id": 360103367092,
+  "comments_disabled": true,
+  "draft": false,
+  "promoted": false,
+  "position": 0,
+  "section_id": 201110537,
+  "created_at": "2018-12-12T23:57:06Z",
+  "name": "Mic Testing",
+  "title": "Mic Testing",
+  "source_locale": "en-us",
+  "locale": "en-us",
+  "outdated": false,
+  "outdated_locales": [],
+  "edited_at": "2022-05-31T17:16:03Z",
+  "user_segment_id": null,
+  "permission_group_id": 1720972,
+  "content_tag_ids": [],
+  "label_names": [
+    "answer-bot"
+  ]
+}

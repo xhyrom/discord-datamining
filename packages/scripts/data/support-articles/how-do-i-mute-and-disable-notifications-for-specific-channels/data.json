@@ -1,0 +1,30 @@
+{
+  "id": 209791877,
+  "url": "https://hammerandchisel.zendesk.com/api/v2/help_center/en-us/articles/209791877.json",
+  "html_url": "https://support.discord.com/hc/en-us/articles/209791877-How-do-I-mute-and-disable-notifications-for-specific-channels-",
+  "author_id": 12415876668,
+  "comments_disabled": true,
+  "draft": false,
+  "promoted": false,
+  "position": 0,
+  "section_id": 360007875151,
+  "created_at": "2015-09-13T03:51:20Z",
+  "name": "How do I mute and disable notifications for specific channels?",
+  "title": "How do I mute and disable notifications for specific channels?",
+  "source_locale": "en-us",
+  "locale": "en-us",
+  "outdated": false,
+  "outdated_locales": [],
+  "edited_at": "2022-05-31T17:15:07Z",
+  "user_segment_id": null,
+  "permission_group_id": 1720972,
+  "content_tag_ids": [],
+  "label_names": [
+    "ping",
+    "pings",
+    "notification",
+    "mute",
+    "alert",
+    "answer-bot"
+  ]
+}

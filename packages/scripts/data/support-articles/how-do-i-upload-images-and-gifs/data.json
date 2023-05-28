@@ -1,0 +1,28 @@
+{
+  "id": 211866427,
+  "url": "https://hammerandchisel.zendesk.com/api/v2/help_center/en-us/articles/211866427.json",
+  "html_url": "https://support.discord.com/hc/en-us/articles/211866427-How-do-I-upload-images-and-GIFs-",
+  "author_id": 2921470028,
+  "comments_disabled": true,
+  "draft": false,
+  "promoted": false,
+  "position": 4,
+  "section_id": 115000458672,
+  "created_at": "2015-10-03T23:55:05Z",
+  "name": "How do I upload images and GIFs?",
+  "title": "How do I upload images and GIFs?",
+  "source_locale": "en-us",
+  "locale": "en-us",
+  "outdated": false,
+  "outdated_locales": [],
+  "edited_at": "2023-04-03T20:03:23Z",
+  "user_segment_id": null,
+  "permission_group_id": 1720972,
+  "content_tag_ids": [],
+  "label_names": [
+    "answer-bot",
+    "upload images",
+    "upload gifs",
+    "alt text"
+  ]
+}

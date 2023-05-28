@@ -1,0 +1,30 @@
+{
+  "id": 13148417007767,
+  "url": "https://hammerandchisel.zendesk.com/api/v2/help_center/en-us/articles/13148417007767.json",
+  "html_url": "https://support.discord.com/hc/en-us/articles/13148417007767-Troubleshooting-Mobile-Crashing-and-Installation-Issues",
+  "author_id": 2921470028,
+  "comments_disabled": true,
+  "draft": false,
+  "promoted": false,
+  "position": 0,
+  "section_id": 6509209701655,
+  "created_at": "2023-03-16T20:44:39Z",
+  "name": "Troubleshooting Mobile Crashing and Installation Issues",
+  "title": "Troubleshooting Mobile Crashing and Installation Issues",
+  "source_locale": "en-us",
+  "locale": "en-us",
+  "outdated": false,
+  "outdated_locales": [],
+  "edited_at": "2023-03-16T20:57:03Z",
+  "user_segment_id": null,
+  "permission_group_id": 1720952,
+  "content_tag_ids": [],
+  "label_names": [
+    "answer-bot",
+    "mobile",
+    "mobile crashing",
+    "mobile troubleshooting",
+    "mobile installation",
+    "installation issues"
+  ]
+}

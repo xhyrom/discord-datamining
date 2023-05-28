@@ -1,0 +1,27 @@
+{
+  "id": 4412732047127,
+  "url": "https://hammerandchisel.zendesk.com/api/v2/help_center/en-us/articles/4412732047127.json",
+  "html_url": "https://support.discord.com/hc/en-us/articles/4412732047127-Discord-Account-Switcher-FAQ",
+  "author_id": 364802902112,
+  "comments_disabled": true,
+  "draft": false,
+  "promoted": false,
+  "position": 92,
+  "section_id": 115000457731,
+  "created_at": "2021-11-10T03:01:15Z",
+  "name": "Discord Account Switcher FAQ",
+  "title": "Discord Account Switcher FAQ",
+  "source_locale": "en-us",
+  "locale": "en-us",
+  "outdated": false,
+  "outdated_locales": [],
+  "edited_at": "2022-05-31T16:14:49Z",
+  "user_segment_id": null,
+  "permission_group_id": 1720972,
+  "content_tag_ids": [],
+  "label_names": [
+    "account",
+    "answer-bot",
+    "multi"
+  ]
+}

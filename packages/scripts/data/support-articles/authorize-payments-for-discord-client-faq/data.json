@@ -1,0 +1,30 @@
+{
+  "id": 9074940276503,
+  "url": "https://hammerandchisel.zendesk.com/api/v2/help_center/en-us/articles/9074940276503.json",
+  "html_url": "https://support.discord.com/hc/en-us/articles/9074940276503-Authorize-Payments-for-Discord-Client-FAQ",
+  "author_id": 423034714274,
+  "comments_disabled": true,
+  "draft": false,
+  "promoted": false,
+  "position": 0,
+  "section_id": 360002436411,
+  "created_at": "2022-09-22T22:21:41Z",
+  "name": "Authorize Payments for Discord Client FAQ",
+  "title": "Authorize Payments for Discord Client FAQ",
+  "source_locale": "en-us",
+  "locale": "en-us",
+  "outdated": false,
+  "outdated_locales": [],
+  "edited_at": "2022-10-18T14:08:29Z",
+  "user_segment_id": null,
+  "permission_group_id": 1720952,
+  "content_tag_ids": [],
+  "label_names": [
+    "payment",
+    "answer-bot",
+    "billing",
+    "purchase",
+    "authorize",
+    "fraudulent"
+  ]
+}
