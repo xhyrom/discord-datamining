@@ -1,0 +1,20 @@
+---
+import Layout from "~/layouts/Layout.astro";
+import Editor from "~/components/editors/CSSEditor.astro";
+
+import { stylesheets } from "~/utils";
+export async function getStaticPaths() {
+  return stylesheets.map((stylesheet) => {
+    return {
+      params: { id: stylesheet.name },
+      props: stylesheet,
+    };
+  });
+}
+
+const { content } = Astro.props;
+---
+
+<Layout>
+  <Editor value={content} theme="vs-dark" />
+</Layout>

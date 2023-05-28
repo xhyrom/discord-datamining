@@ -2,6 +2,7 @@
 import Layout from "~/layouts/Layout.astro";
 import { CONFIG } from "~/config";
 import Button from "~/components/widgets/Button.astro";
+import { stylesheets } from "~/utils";
 ---
 
 <Layout>
@@ -11,16 +12,18 @@ import Button from "~/components/widgets/Button.astro";
         {CONFIG.name}
       </h1>
       <h2 class="text-center text-3xl text-gray-500">
-        The most powerful datamining 🎉
+        View latest stylesheets
       </h2>
 
       <div class="flex flex-wrap justify-center gap-6">
-        <Button name="Experiments" href="/experiments" />
-        <Button name="Scripts" href="/scripts" />
-        <Button name="Stylesheet" href="/stylesheet" />
-        <Button name="Blog Posts" href="/blog-posts" />
-        <Button name="Support Articles" href="/support-articles" />
-        <Button name="Support Dev Articles" href="/support-dev-articles" />
+        {
+          stylesheets.map((stylesheet) => (
+            <Button
+              name={stylesheet.name}
+              href={`/stylesheets/${stylesheet.name}`}
+            />
+          ))
+        }
       </div>
     </div>
   </main>

@@ -2,6 +2,8 @@
 import { CONFIG } from "~/config";
 import { GoogleFontsOptimizer } from "astro-google-fonts-optimizer";
 import Navbar from "~/components/widgets/Navbar.astro";
+
+const { ...attrs } = Astro.props;
 ---
 
 <html lang="sk-SK">
@@ -37,7 +39,7 @@ import Navbar from "~/components/widgets/Navbar.astro";
       url="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,500;1,700;1,900&display=swap"
     />
   </head>
-  <body class="overflow-x-hidden bg-dark font-body">
+  <body class="overflow-hidden bg-dark font-body">
     <div
       class="flex min-h-screen flex-col md:h-screen md:w-screen md:justify-between"
     >
@@ -49,7 +51,7 @@ import Navbar from "~/components/widgets/Navbar.astro";
         <slot />
       </div>
 
-      <Navbar />
+      <Navbar {...attrs} />
     </div>
   </body>
 </html>

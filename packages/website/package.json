@@ -10,15 +10,19 @@
     "astro": "astro"
   },
   "dependencies": {
+    "@astrojs/prism": "^2.1.2",
     "@astrojs/sitemap": "^1.3.1",
     "@astrojs/tailwind": "^3.1.3",
     "astro": "^2.5.5",
+    "astro-code-editor": "^0.1.1",
     "astro-compress": "^1.1.44",
     "astro-google-fonts-optimizer": "^0.2.2",
     "astro-robots-txt": "^0.5.0",
     "autoprefixer": "^10.4.14",
     "cssnano": "^6.0.1",
+    "monaco-editor": "^0.38.0",
     "postcss": "^8.4.24",
+    "shiki": "^0.14.2",
     "tailwindcss": "^3.3.2"
   },
   "devDependencies": {
