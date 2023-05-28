@@ -24,7 +24,7 @@ jobs:
           git config user.name "xHyroM"
           git config user.email "github@xhyrom.dev"
           pnpm install
-          pnpm run start --filter=scripts -- -- github
+          pnpm run start --filter=scripts -- github
         env:
           GITHUB_TOKEN: ${{ secrets.ACCESS_TOKEN }}
           ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}
