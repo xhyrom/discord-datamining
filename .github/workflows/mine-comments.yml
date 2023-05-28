@@ -22,7 +22,7 @@ jobs:
       - name: "Run script"
         run: |
           pnpm install
-          pnpm run start --filter=scripts -- -- diff
+          pnpm run start --filter=scripts -- diff
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}
