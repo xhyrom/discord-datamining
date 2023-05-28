@@ -9,6 +9,7 @@ import jsBeautify from "js-beautify";
 import { error, success } from "../logger.js";
 import months from "../months.js";
 import { makeAllPropsStrings } from "./utils.js";
+import { push } from "../utils.js";
 
 const git = simpleGit({
   baseDir: join("..", ".."),
@@ -67,5 +68,5 @@ await git.commit([
     .join("\n")}`,
 ]);
 
-await git.push("origin", "master");
+await push(git, "origin", "master");
 success("Successfully pushed 🚀");

@@ -50,3 +50,22 @@ export const splitArray = (array, size) => {
 
   return result;
 };
+
+/**
+ *
+ * @param {import("simple-git").SimpleGit} git
+ * @param {string} remote
+ * @param {string} branch
+ * @param {number} tries
+ */
+export const push = async (git, remote, branch, tries = 0) => {
+  try {
+    await git.push(remote, branch);
+  } catch (e) {
+    if (tries > 5) {
+      throw e;
+    }
+
+    await push(git, remote, branch, tries + 1);
+  }
+};

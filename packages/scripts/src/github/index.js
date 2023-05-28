@@ -1,6 +1,6 @@
 import "dotenv/config";
 import repos from "./repos.js";
-import { omit } from "../utils.js";
+import { omit, push } from "../utils.js";
 import { error, success } from "../logger.js";
 import months from "../months.js";
 
@@ -52,5 +52,5 @@ await git.commit([
   `Repos (${repos.length}):\n${repos.map((repo) => repo.name).join("\n")}`,
 ]);
 
-await git.push("origin", "master");
+await push(git, "origin", "master");
 success("Successfully pushed 🚀");

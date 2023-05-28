@@ -10,6 +10,7 @@ import { mkdir, readFile, rmdir, writeFile } from "node:fs/promises";
 import simpleGit from "simple-git";
 import { join } from "node:path";
 import { error } from "node:console";
+import { push } from "../utils.js";
 
 const git = simpleGit({
   baseDir: join("..", ".."),
@@ -97,5 +98,5 @@ await git.commit([
   `Build Number: ${buildNumber}\nHash: ${hash}`,
 ]);
 
-await git.push("origin", "master");
+await push(git, "origin", "master");
 success(`Successfully pushed a new build ${buildNumber} (${hash}) 🚀`);

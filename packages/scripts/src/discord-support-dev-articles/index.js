@@ -4,7 +4,7 @@ import simpleGit from "simple-git";
 import jsBeautify from "js-beautify";
 
 import { error, success } from "../logger.js";
-import { omit } from "../utils.js";
+import { omit, push } from "../utils.js";
 import months from "../months.js";
 import { namilize } from "./utils.js";
 
@@ -81,5 +81,5 @@ await git.commit([
     .join("\n")}`,
 ]);
 
-await git.push("origin", "master");
+await push(git, "origin", "master");
 success("Successfully pushed 🚀");

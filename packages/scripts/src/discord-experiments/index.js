@@ -7,6 +7,7 @@ import { join } from "node:path";
 
 import simpleGit from "simple-git";
 import months from "../months.js";
+import { push } from "../utils.js";
 
 const git = simpleGit({
   baseDir: join("..", ".."),
@@ -59,5 +60,5 @@ await git.commit([
     .join("\n")}`,
 ]);
 
-await git.push("origin", "master");
+await push(git, "origin", "master");
 success("Successfully pushed 🚀");
