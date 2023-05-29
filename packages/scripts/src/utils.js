@@ -71,8 +71,21 @@ export const push = async (git, remote, branch, tries = 0) => {
     }
 
     await sleep(5000);
-    await git.pull();
+    await pull(git);
     const output = await push(git, remote, branch, tries + 1);
+    return output;
+  }
+};
+
+/**
+ * @param {import("simple-git").SimpleGit} git
+ */
+export const pull = async (git) => {
+  try {
+    const output = await git.pull();
+    return output;
+  } catch (e) {
+    const output = await git.pull("origin", "master", ["--no-ff"]);
     return output;
   }
 };
