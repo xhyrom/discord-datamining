@@ -32,7 +32,7 @@ const domain = {
 
 const subdomains = await (
   await fetch(
-    "https://api.securitytrails.com/v1/domain/discord.com/subdomains",
+    "https://api.securitytrails.com/v1/domain/discord.com/subdomains?include_inactive=false",
     {
       headers: {
         APIKEY: process.env.SECURITYTRAILS_API_KEY ?? "",
