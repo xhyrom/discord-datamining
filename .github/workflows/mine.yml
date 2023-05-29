@@ -23,6 +23,7 @@ jobs:
           git config --global url.https://${{ secrets.ACCESS_TOKEN }}@github.com/.insteadOf https://github.com/
           git config user.name "xHyroM"
           git config user.email "github@xhyrom.dev"
+          git config pull.rebase true
           pnpm install
           pnpm run start --filter=scripts -- discord
         env:
@@ -48,6 +49,7 @@ jobs:
           git config --global url.https://${{ secrets.ACCESS_TOKEN }}@github.com/.insteadOf https://github.com/
           git config user.name "xHyroM"
           git config user.email "github@xhyrom.dev"
+          git config pull.rebase true
           pnpm install
           pnpm run start --filter=scripts -- discord-experiments
         env:
@@ -74,6 +76,7 @@ jobs:
           git config --global url.https://${{ secrets.ACCESS_TOKEN }}@github.com/.insteadOf https://github.com/
           git config user.name "xHyroM"
           git config user.email "github@xhyrom.dev"
+          git config pull.rebase true
           pnpm install
           pnpm run start --filter=scripts -- discord-blog-posts
         env:
@@ -98,6 +101,7 @@ jobs:
           git config --global url.https://${{ secrets.ACCESS_TOKEN }}@github.com/.insteadOf https://github.com/
           git config user.name "xHyroM"
           git config user.email "github@xhyrom.dev"
+          git config pull.rebase true
           pnpm install
           pnpm run start --filter=scripts -- discord-support-articles
         env:
@@ -124,6 +128,7 @@ jobs:
           git config --global url.https://${{ secrets.ACCESS_TOKEN }}@github.com/.insteadOf https://github.com/
           git config user.name "xHyroM"
           git config user.email "github@xhyrom.dev"
+          git config pull.rebase true
           pnpm install
           pnpm run start --filter=scripts -- discord-support-dev-articles
         env:
@@ -150,6 +155,7 @@ jobs:
           git config --global url.https://${{ secrets.ACCESS_TOKEN }}@github.com/.insteadOf https://github.com/
           git config user.name "xHyroM"
           git config user.email "github@xhyrom.dev"
+          git config pull.rebase true
           pnpm install
           pnpm run start --filter=scripts -- discord-creator-support-articles
         env:
