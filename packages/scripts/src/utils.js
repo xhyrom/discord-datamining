@@ -71,9 +71,7 @@ export const push = async (git, remote, branch, tries = 0) => {
     }
 
     await sleep(5000);
-    await git.stash();
     await git.pull();
-    await git.stash(["pop"]);
     const output = await push(git, remote, branch, tries + 1);
     return output;
   }
