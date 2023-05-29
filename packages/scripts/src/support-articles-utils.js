@@ -138,11 +138,6 @@ const defaultEmbed = (section, action) => {
       inline: true,
     },
     {
-      name: "Updated At",
-      value: `<t:${Math.floor(new Date(section.updated_at).getTime() / 1000)}>`,
-      inline: true,
-    },
-    {
       name: "Sorting",
       value: section.sorting,
       inline: false,

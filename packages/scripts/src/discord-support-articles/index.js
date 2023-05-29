@@ -52,7 +52,9 @@ for (let i = 1; i <= firstPageSections.page_count; i++) {
     )
   ).json();
 
-  sections.push(...page.sections);
+  sections.push(
+    ...page.sections.map((section) => omit(section, ["updated_at"]))
+  );
 }
 
 for (const article of articles) {
