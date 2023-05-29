@@ -70,3 +70,15 @@ export const push = async (git, remote, branch, tries = 0) => {
     return await push(git, remote, branch, tries + 1);
   }
 };
+
+/**
+ * @param {string} str
+ * @returns
+ */
+export const namilize = (str) => {
+  return str
+    .trim()
+    .toLowerCase()
+    .replace(/[^a-z0-9 ]/g, "")
+    .replace(/ /g, "-");
+};

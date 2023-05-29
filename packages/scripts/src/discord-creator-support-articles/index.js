@@ -10,7 +10,7 @@ import months from "../months.js";
 const git = simpleGit({
   baseDir: join("..", ".."),
 });
-await mkdir(join("..", "..", "data", "support-dev-articles"), {
+await mkdir(join("..", "..", "data", "creator-support-articles"), {
   recursive: true,
 }).catch(() => {});
 
@@ -18,14 +18,14 @@ const articles = [];
 
 const firstPage = await (
   await fetch(
-    "https://support-dev.discord.com/api/v2/help_center/en-us/articles.json"
+    "https://creator-support.discord.com/api/v2/help_center/en-us/articles.json"
   )
 ).json();
 
 for (let i = 1; i <= firstPage.page_count; i++) {
   const page = await (
     await fetch(
-      `https://support-dev.discord.com/api/v2/help_center/en-us/articles.json?page=${i}&per_page=30`
+      `https://creator-support.discord.com/api/v2/help_center/en-us/articles.json?page=${i}&per_page=30`
     )
   ).json();
 
@@ -37,7 +37,7 @@ for (const article of articles) {
     "..",
     "..",
     "data",
-    "support-dev-articles",
+    "creator-support-articles",
     namilize(article.title ?? article.name)
   );
 
@@ -58,7 +58,7 @@ for (const article of articles) {
   success(`Fetched ${article.title ?? article.name}`);
 }
 
-success("Successfully fetched support dev articles 🚀");
+success("Successfully fetched creator support articles 🚀");
 
 const result = await git.status();
 if (result.files.length === 0) {
@@ -74,7 +74,7 @@ const date = new Date();
 await git.commit([
   `${date.getDate()} ${
     months[date.getMonth()]
-  } ${date.getFullYear()} - Discord Support Dev Articles was updated 🚀`,
+  } ${date.getFullYear()} - Discord Creator Support Articles was updated 🚀`,
   `Articles (${articles.length}):\n${articles
     .map((article) => article.title ?? article.name)
     .join("\n")}`,

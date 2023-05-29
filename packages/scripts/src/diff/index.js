@@ -24,12 +24,17 @@ const blogPostsComment = await blogPosts(octokit, eventPayload);
 const supportArticlesComment = await supportArticles(
   octokit,
   eventPayload,
-  false
+  "Support Articles"
 );
 const supportDevArticlesComment = await supportArticles(
   octokit,
   eventPayload,
-  true
+  "Support Dev Articles"
+);
+const creatorSupportArticlesComment = await supportArticles(
+  octokit,
+  eventPayload,
+  "Creator Support Articles"
 );
 
 // create comment on commit
@@ -174,5 +179,32 @@ if (supportDevArticlesComment.comment) {
     webhookToken,
     supportDevArticlesComment.embeds,
     "1112067587002609818"
+  );
+}
+
+if (creatorSupportArticlesComment.comment) {
+  const [webhookId, webhookToken] = new URL(
+    process.env.DISCORD_WEBHOOK_CREATOR_SUPPORT_ARTICLES ?? ""
+  ).pathname
+    .split("/")
+    .slice(3);
+
+  const comment = await octokit.repos.createCommitComment({
+    owner: eventPayload.repository.owner.login,
+    repo: eventPayload.repository.name,
+    commit_sha: eventPayload.after,
+    body:
+      creatorSupportArticlesComment.comment.length >= 65535
+        ? creatorSupportArticlesComment.comment.slice(0, 65535)
+        : creatorSupportArticlesComment.comment,
+  });
+
+  await sendEmbeds(
+    eventPayload,
+    comment.data,
+    webhookId,
+    webhookToken,
+    creatorSupportArticlesComment.embeds,
+    "1112613650159652946"
   );
 }

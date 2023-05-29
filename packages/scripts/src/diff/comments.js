@@ -225,8 +225,15 @@ export const blogPosts = async (octokit, eventPayload) => {
 /**
  * @param {import('@octokit/action').Octokit} octokit
  * @param {unknown} eventPayload
+ * @param {string} name
+ * @param {string} type
  */
-export const supportArticles = async (octokit, eventPayload, dev) => {
+export const supportArticles = async (
+  octokit,
+  eventPayload,
+  name,
+  type = ""
+) => {
   const diff = await octokit.repos.compareCommits({
     owner: eventPayload.repository.owner.login,
     repo: eventPayload.repository.name,
@@ -236,8 +243,7 @@ export const supportArticles = async (octokit, eventPayload, dev) => {
 
   let comment = "";
 
-  const path = `support${dev ? "-dev" : ""}-articles`;
-  const name = dev ? "Support Dev Article" : "Support Article";
+  const path = `support${type ? `-${type}` : ""}-articles`;
   const articles = diff.data.files.filter((file) =>
     file.filename.includes(path)
   );
@@ -253,8 +259,7 @@ export const supportArticles = async (octokit, eventPayload, dev) => {
     comment += "\n```\n\n";
 
     try {
-      const before = await getBlogPostOrSupportArticleFromBeforeCommit(
-        octokit,
+      const before = await getPostOArticleFromBeforeCommit(
         eventPayload,
         path,
         fileName
@@ -295,8 +300,7 @@ export const supportArticles = async (octokit, eventPayload, dev) => {
         .setColor(before?.title ?? before?.name ? 0xe8c61a : 0x51f542)
         .toJSON();
     } catch {
-      const data = await getBlogPostOrSupportArticleFromBeforeCommit(
-        octokit,
+      const data = await getPostOArticleFromBeforeCommit(
         eventPayload,
         path,
         fileName
@@ -338,86 +342,23 @@ export const supportArticles = async (octokit, eventPayload, dev) => {
 };
 
 /**
- * @param {import('@octokit/action').Octokit} octokit
  * @param {unknown} eventPayload
+ * @param {string} path
+ * @param {string} fileName
  */
-const getBlogPostOrSupportArticleFromBeforeCommit = async (
-  octokit,
+const getPostOArticleFromBeforeCommit = async (
   eventPayload,
-  type,
+  path,
   fileName
 ) => {
   try {
-    const tree = await octokit.rest.git.getTree({
-      owner: eventPayload.repository.owner.login,
-      repo: eventPayload.repository.name,
-      tree_sha: eventPayload.before,
-    });
+    const content = await (
+      await fetch(
+        `https://raw.githubusercontent.com/xHyroM/discord-datamining/${eventPayload.before}/data/${path}/${fileName}/data.json`
+      )
+    ).text();
 
-    if (!tree) return {};
-
-    const dataFileSha = tree.data.tree.find(
-      (file) => file.path === "data"
-    )?.sha;
-
-    if (!dataFileSha) return {};
-
-    const dataTree = await octokit.rest.git.getTree({
-      owner: eventPayload.repository.owner.login,
-      repo: eventPayload.repository.name,
-      tree_sha: dataFileSha,
-    });
-
-    if (!dataTree) return {};
-
-    const blogPostsOrArticlesFolder = dataTree.data.tree.find((file) =>
-      file.path.includes(type)
-    )?.sha;
-
-    if (!blogPostsOrArticlesFolder) return {};
-
-    const blogPostsOrArticlesTree = await octokit.rest.git.getTree({
-      owner: eventPayload.repository.owner.login,
-      repo: eventPayload.repository.name,
-      tree_sha: blogPostsOrArticlesFolder,
-    });
-
-    if (!blogPostsOrArticlesTree) return {};
-
-    const blogPostOrArticleFolder = blogPostsOrArticlesTree.data.tree.find(
-      (file) => file.path.includes(fileName)
-    )?.sha;
-
-    if (!blogPostOrArticleFolder) return {};
-
-    const blogPostOrArticleTree = await octokit.rest.git.getTree({
-      owner: eventPayload.repository.owner.login,
-      repo: eventPayload.repository.name,
-      tree_sha: blogPostOrArticleFolder,
-    });
-
-    if (!blogPostOrArticleTree) return {};
-
-    const dateFileSha = blogPostOrArticleTree.data.tree.find((file) =>
-      file.path.includes("data.json")
-    )?.sha;
-    if (!dateFileSha) return {};
-
-    const dataFile = await octokit.rest.git.getBlob({
-      owner: eventPayload.repository.owner.login,
-      repo: eventPayload.repository.name,
-      file_sha: dateFileSha,
-    });
-
-    if (!dataFile) return {};
-
-    const data = JSON.parse(
-      Buffer.from(dataFile.data.content, "base64").toString("utf8")
-    );
-
-    if (!data) return {};
-
-    return data;
+    return JSON.parse(content);
   } catch {
     return {};
   }

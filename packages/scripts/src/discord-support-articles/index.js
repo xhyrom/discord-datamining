@@ -4,9 +4,8 @@ import simpleGit from "simple-git";
 import jsBeautify from "js-beautify";
 
 import { error, success } from "../logger.js";
-import { omit, push } from "../utils.js";
+import { omit, push, namilize } from "../utils.js";
 import months from "../months.js";
-import { namilize } from "./utils.js";
 
 const git = simpleGit({
   baseDir: join("..", ".."),

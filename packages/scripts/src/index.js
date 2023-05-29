@@ -26,6 +26,10 @@ switch (action) {
     await import("./discord-support-dev-articles/index.js");
     break;
   }
+  case "discord-creator-support-articles": {
+    await import("./discord-creator-support-articles/index.js");
+    break;
+  }
   case "github": {
     await import("./github/index.js");
     break;
