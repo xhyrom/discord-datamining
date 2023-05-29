@@ -14,7 +14,7 @@ const git = simpleGit({
 });
 
 const [webhookId, webhookToken] = new URL(
-  process.env.DISCORD_WEBHOOK_EXPERIMENTS
+  process.env.DISCORD_WEBHOOK_EXPERIMENTS ?? ""
 ).pathname
   .split("/")
   .slice(3);

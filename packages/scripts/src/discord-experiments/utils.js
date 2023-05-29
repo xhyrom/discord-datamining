@@ -1,4 +1,3 @@
-// Adopted from https://gitlab.com/derpystuff/discord-experiments/-/blob/main/index.js
 import deepEqual from "fast-deep-equal";
 import { EmbedBuilder, disableValidators } from "@discordjs/builders";
 import { info } from "../logger.js";
@@ -13,8 +12,8 @@ import { ButtonStyle, ComponentType } from "discord-api-types/v10";
 disableValidators();
 
 /**
- * @param {unknown[]} oldExperiments
- * @param {unknown[]} currentExperiments
+ * @param {import("../types").Experiment[]} oldExperiments
+ * @param {import("../types").Experiment[]} currentExperiments
  * @param {import("simple-git").PushResult} pushResult
  * @param {string} webhookId
  * @param {string} webhookToken
@@ -180,7 +179,6 @@ const defaultEmbed = (experiment, action) => {
  * @param {import("simple-git").PushResult} pushResult
  */
 const send = async (id, token, embeds, pushResult) => {
-  console.log(pushResult);
   await sendWebhook(id, token, {
     content: "<@&1105589221185568851>",
     embeds,

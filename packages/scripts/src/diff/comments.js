@@ -156,8 +156,7 @@ export const blogPosts = async (octokit, eventPayload) => {
     comment += "\n```\n\n";
 
     try {
-      const before = await getBlogPostOrSupportArticleFromBeforeCommit(
-        octokit,
+      const before = await getPostOArticleFromBeforeCommit(
         eventPayload,
         "blog-posts",
         fileName
@@ -188,8 +187,7 @@ export const blogPosts = async (octokit, eventPayload) => {
         .setColor(before?.title ? 0xe8c61a : 0x51f542)
         .toJSON();
     } catch {
-      const data = await getBlogPostOrSupportArticleFromBeforeCommit(
-        octokit,
+      const data = await getPostOArticleFromBeforeCommit(
         eventPayload,
         "blog-posts",
         fileName
@@ -257,7 +255,10 @@ export const supportArticles = async (
     comment += article.patch;
     comment += "\n```\n\n";
 
+    if (fileName === "section.json") continue;
+
     try {
+      // TODO: use article.status
       const before = await getPostOArticleFromBeforeCommit(
         eventPayload,
         path,

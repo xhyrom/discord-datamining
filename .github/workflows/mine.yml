@@ -103,6 +103,7 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.ACCESS_TOKEN }}
           ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}
+          DISCORD_WEBHOOK_SUPPORT_ARTICLES: ${{ secrets.DISCORD_WEBHOOK_SUPPORT_ARTICLES }}
   mine-discord-support-dev-articles:
     name: Mine Discord Support Dev Articles
 
@@ -127,6 +128,7 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.ACCESS_TOKEN }}
           ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}
+          DISCORD_WEBHOOK_SUPPORT_DEV_ARTICLES: ${{ secrets.DISCORD_WEBHOOK_SUPPORT_DEV_ARTICLES }}
   mine-discord-creator-support-articles:
     name: Mine Discord Creator Support Articles
 
@@ -151,3 +153,4 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.ACCESS_TOKEN }}
           ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}
+          DISCORD_WEBHOOK_CREATOR_SUPPORT_ARTICLES: ${{ secrets.DISCORD_WEBHOOK_CREATOR_SUPPORT_ARTICLES }}
