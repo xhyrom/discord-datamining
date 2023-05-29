@@ -25,7 +25,10 @@ const git = simpleGit({
   baseDir: join("..", ".."),
 });
 
-const domain = {};
+const domain = {
+  domain: "discord.com",
+  tld: "com",
+};
 
 const subdomains = await (
   await fetch(
