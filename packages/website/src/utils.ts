@@ -41,7 +41,7 @@ export const stylesheets = await Promise.all([
   })),
 ]);
 
-/*const scriptsFiles = await (
+const scriptsFiles = await (
   await fetch(
     "https://api.github.com/repos/xHyroM/discord-datamining/contents/data/scripts",
     {
@@ -63,7 +63,7 @@ export const scripts = await Promise.all([
     name: file.name,
     content: await (await fetch(file.download_url)).text(),
   })),
-]);*/
+]);
 
 const blogPostsFolders = await (
   await fetch(
