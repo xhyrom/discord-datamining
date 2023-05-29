@@ -1,4 +1,0 @@
-<div class="blog-post-content w-richtext">
-    <p>While millions of people around the world use Discord, in reality, it’s just a (really good) product with the tools to help people talk. What makes Discord truly special are the people who use it to foster communities where everyone feels like they have a place to call home. </p>
-    <p>For this year’s Black History Month, we’re sharing a handful of exemplary communities on the platform that embody our mantra of trying to create a world where everyone has a place to belong. The following servers were sourced through the <a href="https://support.discord.com/hc/en-us/articles/5309276245271-Discord-Admin-Community-FAQ">Discord Admin Community</a> and recommended by Discord’s Black and African American Movement Employee Resource Group — or the BAAM ERG for short.<br>‍</p>
-</div>
