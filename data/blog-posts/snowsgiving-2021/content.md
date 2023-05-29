@@ -1,4 +1,0 @@
-<div class="blog-post-content w-richtext">
-    <p>A season of comfort. A season of belonging. Once a year, the Discord community comes together to celebrate together in a single server through the holiday spirit. We make new friends, entered in contests and giveaways, and give back to the world by supporting charitable organizations to make the world a better place.</p>
-    <p>For its fifth year, <strong>over 1.2 million community members</strong> came together in the Snowsgiving Server to help raise <strong>$512,000 in support of To Write Love on Her Arms</strong>, a nonprofit movement dedicated to presenting hope and finding help for people struggling with depression. They exist to encourage, inform, inspire, and invest directly into treatment and recovery. </p>
-</div>
