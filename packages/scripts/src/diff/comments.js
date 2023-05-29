@@ -226,13 +226,13 @@ export const blogPosts = async (octokit, eventPayload) => {
  * @param {import('@octokit/action').Octokit} octokit
  * @param {unknown} eventPayload
  * @param {string} name
- * @param {string} type
+ * @param {string} path
  */
 export const supportArticles = async (
   octokit,
   eventPayload,
   name,
-  type = ""
+  path = "support-articles"
 ) => {
   const diff = await octokit.repos.compareCommits({
     owner: eventPayload.repository.owner.login,
@@ -243,7 +243,6 @@ export const supportArticles = async (
 
   let comment = "";
 
-  const path = `support${type ? `-${type}` : ""}-articles`;
   const articles = diff.data.files.filter((file) =>
     file.filename.includes(path)
   );
@@ -305,6 +304,7 @@ export const supportArticles = async (
         path,
         fileName
       );
+      if (Object.keys(data).length === 0) continue;
 
       embeds[fileName] = new EmbedBuilder()
         .setTitle(`${name} Removed`)
@@ -335,6 +335,10 @@ export const supportArticles = async (
     }
   }
 
+  if (comment) {
+    comment = `# ${name}\n\n${comment}`;
+  }
+
   return {
     comment,
     embeds: Object.values(embeds),
@@ -358,7 +362,7 @@ const getPostOArticleFromBeforeCommit = async (
       )
     ).text();
 
-    return JSON.parse(content);
+    return content ? JSON.parse(content) : {};
   } catch {
     return {};
   }

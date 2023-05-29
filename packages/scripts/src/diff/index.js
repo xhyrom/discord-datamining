@@ -29,12 +29,14 @@ const supportArticlesComment = await supportArticles(
 const supportDevArticlesComment = await supportArticles(
   octokit,
   eventPayload,
-  "Support Dev Articles"
+  "Support Dev Articles",
+  "support-dev-articles"
 );
 const creatorSupportArticlesComment = await supportArticles(
   octokit,
   eventPayload,
-  "Creator Support Articles"
+  "Creator Support Articles",
+  "creator-support-articles"
 );
 
 // create comment on commit
