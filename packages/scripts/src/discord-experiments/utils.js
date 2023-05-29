@@ -94,7 +94,7 @@ export const watcher = (
 
       const diff = jsondiffpatch.formatters.console.format(
         jsondiffpatch.diff(oldExperiment, currentExperiment) || {},
-        currentExperiment
+        oldExperiment
       );
 
       send(
