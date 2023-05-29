@@ -3,7 +3,7 @@ import { CONFIG } from "~/config";
 import { GoogleFontsOptimizer } from "astro-google-fonts-optimizer";
 import Navbar from "~/components/widgets/Navbar.astro";
 
-const { ...attrs } = Astro.props;
+const { class: className, ...attrs } = Astro.props;
 ---
 
 <html lang="sk-SK">
@@ -39,10 +39,8 @@ const { ...attrs } = Astro.props;
       url="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,500;1,700;1,900&display=swap"
     />
   </head>
-  <body class="overflow-hidden bg-dark font-body">
-    <div
-      class="flex min-h-screen flex-col md:h-screen md:w-screen md:justify-between"
-    >
+  <body class=`bg-dark font-body ${className ? className : ""}`>
+    <div class="flex min-h-screen flex-col md:h-screen md:justify-between">
       <div>
         <div class="h-[9px] cursor-pointer bg-yellow"></div>
       </div>
@@ -53,5 +51,18 @@ const { ...attrs } = Astro.props;
 
       <Navbar {...attrs} />
     </div>
+
+    <style is:global>
+      ::-webkit-scrollbar {
+        width: 16px;
+      }
+
+      ::-webkit-scrollbar-thumb {
+        border: 6px solid rgba(0, 0, 0, 0);
+        background-clip: padding-box;
+        border-radius: 9999px;
+        background-color: #aaaaaa;
+      }
+    </style>
   </body>
 </html>

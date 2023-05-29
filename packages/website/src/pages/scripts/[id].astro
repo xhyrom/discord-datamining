@@ -1,13 +1,13 @@
 ---
 import Layout from "~/layouts/Layout.astro";
-import Editor from "~/components/editors/CSSEditor.astro";
+import Editor from "~/components/editors/TSEditor.astro";
 
-import { stylesheets } from "~/utils";
+import { scripts } from "~/utils";
 export async function getStaticPaths() {
-  return stylesheets.map((stylesheet) => {
+  return scripts.map((script) => {
     return {
-      params: { id: stylesheet.name },
-      props: stylesheet,
+      params: { id: script.name },
+      props: script,
     };
   });
 }

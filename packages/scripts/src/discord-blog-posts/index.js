@@ -31,8 +31,17 @@ for (let item of channel.item) {
   await mkdir(path, { recursive: true }).catch(() => {});
 
   const content = await (await fetch(item.link)).text();
-  const articleBody =
-    parse(content).querySelector(".blog-post-content")?.outerHTML ?? "";
+  const parsed = parse(content);
+  let querySelector = parsed.querySelector(
+    ".blog-post-container > div:first-child > div:nth-child(2)"
+  );
+  if (
+    querySelector &&
+    querySelector.querySelectorAll(".blog-post-content").length === 0
+  )
+    querySelector = parsed.querySelector(".blog-post-content");
+
+  const articleBody = querySelector?.outerHTML ?? "";
   const beautified = jsBeautify.html_beautify(articleBody);
 
   await writeFile(join(path, "content.md"), beautified);
