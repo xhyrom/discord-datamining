@@ -1,7 +1,7 @@
 <div class="column-4 w-col w-col-8 w-col-stack">
     <div id="heading-1" class="rich-wrapper">
         <div class="blog-post-content w-richtext">
-            <p><em>Here&#x27;s the Discord Changelog from November 1st, 2022. You can also find the most recent Changelog in the Discord app under </em><strong><em>Settings &gt; What&#x27;s New</em></strong><em>.</em></p>
+            <p><em>Here's the Discord Changelog from November 1st, 2022. You can also find the most recent Changelog in the Discord app under </em><strong><em>Settings &gt; What's New</em></strong><em>.</em></p>
             <div class="w-embed">
                 <hr class="hr-style">
             </div>

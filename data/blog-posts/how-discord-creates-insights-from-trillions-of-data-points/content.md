@@ -9,7 +9,7 @@
             <h2>Requirements and Approach</h2>
             <p>What we needed was a system for maintaining a complex Directed Acyclic Graph (DAG) of precomputed data—in our case, this meant a DAG of <strong>derived tables</strong> in our BigQuery data warehouse:<br></p>
             <ol role="list">
-                <li>A <strong>derived table</strong> essentially represents a data transformation that may have predecessor tables in the DAG as input dependencies: in other words, a derived table definition may be thought of as a SQL SELECT statement that references raw data or other derived tables.  </li>
+                <li>A <strong>derived table</strong> essentially represents a data transformation that may have predecessor tables in the DAG as input dependencies: in other words, a derived table definition may be thought of as a SQL SELECT statement that references raw data or other derived tables.&nbsp;&nbsp;</li>
                 <li>Assuming the DAG flows top to bottom, one might imagine that at the top of the DAG would be the raw data sources and lookup tables; in the middle, a core set of reusable “golden” core data tables (e.g. normalized daily sign-ups across platforms); and towards the bottom of the DAG, tables that are intended to be consumed directly in analysis, BI tools or machine learning models.</li>
                 <li>The DAG may contain thousands of tables, so it needs to scale.</li>
             </ol>
@@ -21,12 +21,12 @@
                 <li>Table updates should run as soon as new data is available (but no sooner!)</li>
                 <li>Maintain an audit trail of mutations to each table.</li>
                 <li>Include primitives for powering data lineage and a data catalog.</li>
-                <li>Intuitive, self-serve table modifications  for stakeholder teams like engineering, data science, and machine learning.</li>
-                <li>Allow for integration with  data access controls and support for  scalable privacy policy enforcement.</li>
+                <li>Intuitive, self-serve table modifications&nbsp; for stakeholder teams like engineering, data science, and machine learning.</li>
+                <li>Allow for integration with&nbsp; data access controls and support for&nbsp; scalable privacy policy enforcement.</li>
                 <li>Ability to automatically export derived data to production datastores for use in Discord’s user-facing product.</li>
                 <li>Simple and easy to operate in the context of Discord’s infrastructure environment.<strong><br></strong></li>
             </ol>
-            <p>While existing solutions such as <a href="https://blog.getdbt.com/what-exactly-is-dbt/">dbt</a>, <a href="https://airflow.apache.org/">Airflow</a>, and <a href="https://looker.com/">Looker</a> solve for some of the above, we ultimately decided that we wanted a more custom solution that would integrate nicely with our existing systems  and give us the flexibility to extend to use cases beyond analytics.<strong><br></strong></p>
+            <p>While existing solutions such as <a href="https://blog.getdbt.com/what-exactly-is-dbt/">dbt</a>, <a href="https://airflow.apache.org/">Airflow</a>, and <a href="https://looker.com/">Looker</a> solve for some of the above, we ultimately decided that we wanted a more custom solution that would integrate nicely with our existing systems&nbsp; and give us the flexibility to extend to use cases beyond analytics.<strong><br></strong></p>
             <p>We were already using Airflow to schedule batch jobs and to process simpler datasets, but we found the following limitations:<strong><br></strong></p>
             <ol role="list">
                 <li>Writing jobs was complicated and required people to have a deep understanding of Python, SQL, and Airflow. This violated our requirement that DAG modifications should be self-serve.</li>
@@ -53,7 +53,7 @@
             </ul>
             <p>Table build behavior specified using one of three different strategies would instruct how tables are built, incremented, and backfilled:<br></p>
             <ul role="list">
-                <li><strong>Replace:</strong> replace the entire table on a regular schedule. </li>
+                <li><strong>Replace:</strong> replace the entire table on a regular schedule.&nbsp;</li>
                 <li><strong>Append:</strong> add data incrementally to a table on a regular schedule.<strong>‍</strong></li>
                 <li><strong>Merge:</strong> merge incoming data with existing data based on configured criteria. This strategy is primarily used with tables supporting cohort analysis where we want to segment on user attributes such as “the first time a user used voice chat ” or “the most recent time that a user joined a Discord community server.”<br></li>
             </ul>
@@ -85,24 +85,24 @@
             <h3><strong>Testing:</strong></h3>
             <p>We wanted people to be able to test while developing new tables, so we implemented the following:</p>
             <ul role="list">
-                <li>For local development, people are able to use a command-line interface (CLI) to load up the real table configurations and validate dependencies across the entire DAG. </li>
-                <li>From the CLI, people can also create test versions of their tables on shadow production data to verify table output. </li>
+                <li>For local development, people are able to use a command-line interface (CLI) to load up the real table configurations and validate dependencies across the entire DAG.&nbsp;</li>
+                <li>From the CLI, people can also create test versions of their tables on shadow production data to verify table output.&nbsp;</li>
                 <li>Once a pull request is created, continuous integration (CI) deploys all new tables to a shadow production environment so that people are able to validate their changes again with real data before merging the pull request.<br></li>
             </ul>
             <h3><strong>Automation:</strong></h3>
             <p>In Version Two of Derived, the table’s metadata was tracked in Airflow, resulting in a number of manual steps during data maintenance operations (e.g. a backfill required pausing the DAG, running the operation, and then syncing the actual state of the table with Airflow metadata).<br></p>
-            <p>To automate data operations we moved table state tracking out of Airflow and into a metadata log so that Derived could independently decide when to repair, rebuild, and add data to tables. </p>
-            <p>More detailed state tracking at the table level also unlocks parallel computations so that a parent process doesn’t block while sequencing and scheduling 900+ tables, all tables can run concurrently and as frequently as desired to keep derived insights consistent across the data warehouse and up-to-date with data sources. Each table updater is deployed as its own Kubernetes Pod:  when a pod starts up, it runs through the following steps:<br></p>
+            <p>To automate data operations we moved table state tracking out of Airflow and into a metadata log so that Derived could independently decide when to repair, rebuild, and add data to tables.&nbsp;</p>
+            <p>More detailed state tracking at the table level also unlocks parallel computations so that a parent process doesn’t block while sequencing and scheduling 900+ tables, all tables can run concurrently and as frequently as desired to keep derived insights consistent across the data warehouse and up-to-date with data sources. Each table updater is deployed as its own Kubernetes Pod:&nbsp; when a pod starts up, it runs through the following steps:<br></p>
             <figure style="max-width:1705pxpx" class="w-richtext-align-fullwidth w-richtext-figure-type-image">
                 <div><img src="https://assets-global.website-files.com/5f9072399b2640f14d6a2bf4/619593436eb329754b290b1e_Derived_Blog_Post_-_3-_artistic_8.png" loading="lazy" alt=""></div>
             </figure>
-            <p>The metadata log is available in BigQuery and enables detailed monitoring, performance analysis, and data lineage. It  answers monitoring questions like <em>When was the table last updated? How recent is the data in the table</em>? For performance analysis, we join the metadata log to the BigQuery information_schema for query execution details; and to report on metrics for each table. Data lineage can be obtained from the metadata log by tracking predecessor dependencies when tables are updated, so the entire lineage can be re-constructed by traversing the metadata log.<br></p>
+            <p>The metadata log is available in BigQuery and enables detailed monitoring, performance analysis, and data lineage. It&nbsp; answers monitoring questions like <em>When was the table last updated? How recent is the data in the table</em>? For performance analysis, we join the metadata log to the BigQuery information_schema for query execution details; and to report on metrics for each table. Data lineage can be obtained from the metadata log by tracking predecessor dependencies when tables are updated, so the entire lineage can be re-constructed by traversing the metadata log.<br></p>
             <h3><strong>Powering Discord Features:</strong></h3>
             <p>Up until now, Derived operated only on BigQuery datasets (a data warehouse designed for big data processing) that frequently has query response times greater than one second. In order to power application features the response times needed to be much faster, especially for machine learning features where the application flow is: receive a user request, query multiple Derived datasets to create a feature set, make a prediction and respond to the user within one second. For this we added a new configuration option on Derived to automatically export from BigQuery to <a href="https://www.scylladb.com/">Scylla</a> so that the Derived dataset would be available in a database designed for high-performance queries in online systems.</p>
             <h2>Conclusion<br></h2>
             <p>We’ve been running Version Three in production for over a year now and have accomplished the original seven goals we set out to achieve...</p>
             <p> ✔️ Table updates should run as soon as new data is available (but no sooner!)<br> ✔️ Maintains an audit trail of mutations to derived datasets.<br> ✔️ Includes primitives for powering data lineage and data catalog tooling.<br> ✔️ Modifications to the DAG should be self-serve and intuitive for stakeholder teams like engineering, data science, and machine learning.<br> ✔️ Aware of data access controls and provides scalable data governance policy enforcement.<br> ✔️ Able to automatically export derived data to production datastores for use in Discord’s user-facing product.<br> ✔️ Simple and easy to operate in the context of Discord’s environment.<br></p>
-            <p>... but the journey is far from over, there are now thousands of tables in production and the team often receives feedback and suggestions from engaged people internally who are using Derived to build out very complex data sets. The system processes petabytes of data daily from trillions of data points and we continue to  improve the performance and feature set of Derived. We are working on a Version Four now -- we’re very creative with our project names around here --  and look forward to sharing further insights on the iterations to come.</p>
+            <p>... but the journey is far from over, there are now thousands of tables in production and the team often receives feedback and suggestions from engaged people internally who are using Derived to build out very complex data sets. The system processes petabytes of data daily from trillions of data points and we continue to&nbsp; improve the performance and feature set of Derived. We are working on a Version Four now -- we’re very creative with our project names around here --&nbsp; and look forward to sharing further insights on the iterations to come.</p>
             <p>Whew! That was a lot of information and quite the adventure for the team! If working with massive data sets strikes a chord with you, we invite you to check out our <a href="https://discord.com/jobs?team=data">jobs</a> page and apply!<br></p>
         </div>
     </div>

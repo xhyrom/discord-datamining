@@ -1,11 +1,11 @@
 <div class="column-4 w-col w-col-8 w-col-stack">
     <div id="heading-1" class="rich-wrapper">
         <div class="blog-post-content w-richtext">
-            <p><em>Here are the Discord updates from May 22, 2023. You can also find the most recent updates in the Discord app under </em><strong><em>Settings &gt; What&#x27;s New</em></strong><em>.</em></p>
+            <p><em>Here are the Discord updates from May 22, 2023. You can also find the most recent updates in the Discord app under </em><strong><em>Settings &gt; What's New</em></strong><em>.</em></p>
             <div class="w-embed">
                 <hr class="hr-style">
             </div>
-            <figure class="w-richtext-figure-type-image w-richtext-align-fullwidth" style="max-width:1600pxpx" class="w-richtext-align-fullwidth w-richtext-figure-type-image">
+            <figure class="w-richtext-figure-type-image w-richtext-align-fullwidth" style="max-width:1600pxpx">
                 <div><img src="https://assets-global.website-files.com/5f9072399b2640f14d6a2bf4/646d3e0fdaf245263be22be8_31ef9a26.png" alt="Wumpus wearing a helmet"></div>
             </figure>
             <h2><strong><em>Desktop Updates</em></strong></h2>
@@ -25,7 +25,7 @@
                 <li><strong>Sound off with soundboard.**</strong> Make your voice hangout a little more interesting with duck quacks, throat singing, the Vine boom, or any <a href="https://support.discord.com/hc/en-us/articles/12612888127767-Soundboard-FAQ">sounds curated by your community</a>. Please airhorn responsibly.<strong>‍</strong></li>
                 <li><strong>Stickers by Discord are now free for all.</strong> Our Wumpus, Mallow, and Choco sticker sets will soon be available to everyone.<strong>‍</strong></li>
                 <li><strong>New members get a warmer welcome. </strong>Community managers, you can now set up a simple quiz for new members to automatically assign channels and roles. People who join your Capybara Cleanliness Club server will spend less time figuring out how to get perms, and more time admiring pics of a capybara taking a hot bath. So cute…anyway, check out the <a href="http://https//discord.com/community/community-onboarding">blog</a> to learn more.<strong>‍</strong></li>
-                <li><strong>Embedded channel links now look like embedded channel links. </strong>If you’ve ever copied the permalink to a channel or message (half of you reading can probably skip this at this point) and shared it, it probably wasn’t exactly exciting to see a long link with no context about where it was from. We made it so now you know where it takes you. <br>‍</li>
+                <li><strong>Embedded channel links now look like embedded channel links. </strong>If you’ve ever copied the permalink to a channel or message (half of you reading can probably skip this at this point) and shared it, it probably wasn’t exactly exciting to see a long link with no context about where it was from. We made it so now you know where it takes you.&nbsp;<br>‍</li>
             </ul>
         </div>
     </div>
@@ -45,7 +45,7 @@
                 <li>‍<strong>Say more with voice messages.</strong> These were a hit in DMs and small servers, so we are adding them to larger servers. Admins who love silence can <a href="https://support.discord.com/hc/articles/13091096725527-Voice-Messages-#h_01GY0QJKCN13FJ6QXWXS6HD8BV">turn this off</a> if they wish.<strong>‍</strong></li>
                 <li><strong>Stickers by Discord are now free for all.</strong> Our Wumpus, Mallow, and Choco sticker sets will soon be available to everyone.<strong>‍</strong></li>
                 <li><strong>New members get a warmer welcome. </strong>Community managers, you can now set up a simple quiz for new members to automatically assign channels and roles. People who join your Capybara Cleanliness Club server will spend less time figuring out how to get perms, and more time admiring pics of a capybara taking a hot bath. So cute…anyway, check out the <a href="http://https//discord.com/community/community-onboarding">blog</a> to learn more.</li>
-                <li><strong>Embedded channel links now look like embedded channel links. </strong>If you’ve ever copied the permalink to a channel or message (half of you reading can probably skip this at this point) and shared it, it probably wasn’t exactly exciting to see a long link with no context about where it was from. We made it so now you know where it takes you. <strong>‍</strong></li>
+                <li><strong>Embedded channel links now look like embedded channel links. </strong>If you’ve ever copied the permalink to a channel or message (half of you reading can probably skip this at this point) and shared it, it probably wasn’t exactly exciting to see a long link with no context about where it was from. We made it so now you know where it takes you.&nbsp;<strong>‍</strong></li>
                 <li><strong>Preview uploaded media before you send it. </strong>You can also cancel an upload without clearing the whole message and having to start over.</li>
             </ul>
         </div>

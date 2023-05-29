@@ -9,7 +9,7 @@
             <h3>TLDR:</h3>
             <ul role="list">
                 <li><strong>For verified apps (bots that have a checkmark displayed), Slash Commands are the new standard for interacting with them. Huzzah!</strong></li>
-                <li><strong>For unverified apps (bots that don&#x27;t have a checkmark), you may still be using text commands when you interact with them, depending on what the developer prefers.</strong></li>
+                <li><strong>For unverified apps (bots that don't have a checkmark), you may still be using text commands when you interact with them, depending on what the developer prefers.</strong></li>
             </ul>
             <p><strong>September 1, 2022 is the final switchover date. This means that, if the developer of one of the apps you’re using has <em>not</em> made the switch yet, parts of the app might not work after that time.</strong></p>
             <p>We’ve given lots of notice to developers that this migration is happening, but if you have questions or are concerned about it, definitely reach out to them in their support server or website and check in.</p>
@@ -18,7 +18,7 @@
             <p>Whether an app uses these features depends on whether the developer chooses to implement them - and what kind of app it is and what it does - but they are all available now, and we’re seeing more and more great examples every day!</p>
             <h3><strong>Easier to use</strong></h3>
             <p><strong>1. Introducing the command picker!</strong> When you type “/” a handy menu of available slash commands pops up. At the top, you’ll see commands you use most often.</p>
-            <figure class="w-richtext-figure-type-image w-richtext-align-fullwidth" style="max-width:887pxpx" class="w-richtext-align-fullwidth w-richtext-figure-type-image">
+            <figure class="w-richtext-figure-type-image w-richtext-align-fullwidth" style="max-width:887pxpx">
                 <div><img src="https://assets-global.website-files.com/5f9072399b2640f14d6a2bf4/628572088b1d3cf52023fc2a_11111_command-picker.png" alt=""></div>
             </figure>
             <p><strong>2. Jump to the app you want to avoid confusion with similar commands</strong>. In the command picker you’ll also see a list of app icons - all their available commands are alphabetized, so clicking on an app will bring you straight to the relevant ones. (You’ll never accidentally do the wrong /play again.)<strong>‍</strong></p>
@@ -26,36 +26,36 @@
             <p><strong>4. Autocomplete for interactions.</strong> Every second counts in a busy day - save some time typing out long phrases with our support for autocomplete when using commands or searching in menus.<br>‍</p>
             <h3><strong>New things to do</strong></h3>
             <p><strong>1. Buttons!!!</strong> So fun, so colorful, so... self-explanatory. A great example of buttons making things easier is as an alternative for using reaction emojis with a bot (like to have it assign you a role). It might not seem that different, but on the backend, clicking a button is <em>much</em> better for developers because it helps the bot be more efficient - and run faster.</p>
-            <figure class="w-richtext-figure-type-image w-richtext-align-fullwidth" style="max-width:1852pxpx" class="w-richtext-align-fullwidth w-richtext-figure-type-image">
+            <figure class="w-richtext-figure-type-image w-richtext-align-fullwidth" style="max-width:1852pxpx">
                 <div><img src="https://assets-global.website-files.com/5f9072399b2640f14d6a2bf4/6285726945c9b57331824694_3333_reaction-replacement.png" alt=""></div>
             </figure>
             <p>Buttons come in multiple colors, and can even be a mini-game themselves. They can can also support links, making it easy to direct folks where you need them to go.</p>
-            <figure class="w-richtext-figure-type-image w-richtext-align-fullwidth" style="max-width:1400pxpx" class="w-richtext-align-fullwidth w-richtext-figure-type-image">
+            <figure class="w-richtext-figure-type-image w-richtext-align-fullwidth" style="max-width:1400pxpx">
                 <div><img src="https://assets-global.website-files.com/5f9072399b2640f14d6a2bf4/62857316414c2430b5f312c8_4444_command-buttons.png" alt=""></div>
             </figure>
             <p>‍<strong>2. Select menus</strong>. These are dropdowns, which helps a bot offer a long list of choices while making it easier to scroll and select, which saves tons of space (and time).</p>
-            <figure class="w-richtext-figure-type-image w-richtext-align-center" class="w-richtext-align-center w-richtext-figure-type-image">
+            <figure class="w-richtext-figure-type-image w-richtext-align-center">
                 <div><img src="https://assets-global.website-files.com/5f9072399b2640f14d6a2bf4/62857374acb30b41b8c616c5_5555.png" alt=""></div>
             </figure>
             <p><strong>3. Context menus can have commands in them!</strong> This is a lesser-known but super convenient method of accessing an app command quickly in a way that feels native to Discord - but it’s customized just for you. Here’s a little breakdown of what this feature is:</p>
             <p>Right-clicking on things like channels, categories, and users will bring up what we call a context menu:</p>
-            <figure class="w-richtext-figure-type-image w-richtext-align-fullwidth" style="max-width:1188pxpx" class="w-richtext-align-fullwidth w-richtext-figure-type-image">
+            <figure class="w-richtext-figure-type-image w-richtext-align-fullwidth" style="max-width:1188pxpx">
                 <div><img src="https://assets-global.website-files.com/5f9072399b2640f14d6a2bf4/628573ac727dc3b5ff1ca295_66666.png" alt=""></div>
             </figure>
             <p>If an app has commands that are specific to certain areas of Discord, they can live directly in that context menu for easier access. For example, a command that does something particular for a channel could be added directly to the channel context menu.</p>
             <p>Any context menu with commands added will have an additional option on the menu that says “Apps.”</p>
             <p>Hovering over “Apps” will display any commands. You’ll see the app icon next to them, to help you know which app is doing this task for you and help you make sure you’re using the right one, if there are multiple.</p>
-            <figure class="w-richtext-figure-type-image w-richtext-align-fullwidth" style="max-width:1166pxpx" class="w-richtext-align-fullwidth w-richtext-figure-type-image">
+            <figure class="w-richtext-figure-type-image w-richtext-align-fullwidth" style="max-width:1166pxpx">
                 <div><img src="https://assets-global.website-files.com/5f9072399b2640f14d6a2bf4/628574c94a0cbcb9e6193f5a_77777.png" alt=""></div>
             </figure>
             <p>Selecting the command tells the app to do the task immediately - unlike the command picker, which may give you a few choices first or require you to hit ‘enter’ before it executes the task. This means baking commands into context menus where they’re used the most will save you a little time. Note: context menu commands do not appear in the command picker.</p>
             <h3><strong>Safer</strong></h3>
             <p><strong>1. Ephemeral messages!</strong> These are messages a bot sends to you that are viewable <em>only</em> to you - there are plenty of situations where this comes in handy, but a really common way you’ll see this used is when an interaction you tried to do didn’t work properly: developers can set errors to be ephemeral, which means it keeps the chat clean and tidy. And aside from keeping dirty laundry out of view, ephemeral messages can also be a fun way to interact privately (without DMing you!) - which means you can use them when you’re playing a game and need to make moves without other people seeing (ssh).</p>
-            <figure class="w-richtext-figure-type-image w-richtext-align-fullwidth" style="max-width:1802pxpx" class="w-richtext-align-fullwidth w-richtext-figure-type-image">
+            <figure class="w-richtext-figure-type-image w-richtext-align-fullwidth" style="max-width:1802pxpx">
                 <div><img src="https://assets-global.website-files.com/5f9072399b2640f14d6a2bf4/628574eb8dbc9d04f98f58bd_8888_ephemeral-message-game.png" alt=""></div>
             </figure>
             <p><strong>2. Command permissions system</strong>. We recently announced this shiny new Integrations page, which has a fully customizable menu for commands. Moderators and admins who want to add new apps to their servers often need to make sure they can control where slash commands can be used - what channels, and by whom - and even <em>which</em> commands can be used. (Everyone should be able to use /help in any channel, but maybe /puppies should just be in the #pet-motivation channel - and /ban is for admins only.) With command permissions, slash commands become an even stronger improvement from the old command methods, as they become more flexible and customizable to your server’s needs. (Read our <a href="https://www.notion.so/Command-Permissions-Blog-post-44f5ff60ce724048a0609cf9ed103bc4">blog post</a> or check out <a href="https://support.discord.com/hc/en-us/articles/4644915651095-Command-Permissions"><strong>Help Center</strong></a> for tips.)</p>
-            <figure class="w-richtext-figure-type-image w-richtext-align-fullwidth" style="max-width:1275pxpx" class="w-richtext-align-fullwidth w-richtext-figure-type-image">
+            <figure class="w-richtext-figure-type-image w-richtext-align-fullwidth" style="max-width:1275pxpx">
                 <div><img src="https://assets-global.website-files.com/5f9072399b2640f14d6a2bf4/625ddbedd330d37960463537_Untitled.png" alt=""></div>
             </figure>
             <p>‍</p>

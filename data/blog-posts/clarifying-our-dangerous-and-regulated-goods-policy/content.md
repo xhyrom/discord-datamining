@@ -1,10 +1,10 @@
 <div class="column-4 w-col w-col-8 w-col-stack">
     <div id="heading-1" class="rich-wrapper">
         <div class="blog-post-content w-richtext">
-            <p>Last week, we <a href="https://discord.com/blog/important-policy-updates">announced</a> updates to our <a href="https://discord.com/terms">Terms of Service</a>, <a href="https://support.discord.com/hc/en-us/articles/4410339366295">Paid Services Terms</a>, <a href="https://discord.com/privacy">Privacy Policy</a>, and <a href="https://discord.com/guidelines">Community Guidelines</a>, which go into effect March 27, 2023. In the updates to our Community Guidelines, we further clarified our policy on Dangerous and Regulated Goods, and introduced a new part of the guideline that required communities to apply an age-restricted label to any channels that contain the discussion of dangerous and regulated goods. </p>
-            <p>The intention of this requirement is to ensure the safety of our users through preventing the promotion of dangerous or illegal activities, especially as it relates to teens on Discord. </p>
+            <p>Last week, we <a href="https://discord.com/blog/important-policy-updates">announced</a> updates to our <a href="https://discord.com/terms">Terms of Service</a>, <a href="https://support.discord.com/hc/en-us/articles/4410339366295">Paid Services Terms</a>, <a href="https://discord.com/privacy">Privacy Policy</a>, and <a href="https://discord.com/guidelines">Community Guidelines</a>, which go into effect March 27, 2023. In the updates to our Community Guidelines, we further clarified our policy on Dangerous and Regulated Goods, and introduced a new part of the guideline that required communities to apply an age-restricted label to any channels that contain the discussion of dangerous and regulated goods.&nbsp;</p>
+            <p>The intention of this requirement is to ensure the safety of our users through preventing the promotion of dangerous or illegal activities, especially as it relates to teens on Discord.&nbsp;</p>
             <p>However, we are further evaluating how best to support our moderators and communities in regards to any new age-restricted policies. As such, this new requirement will not go into effect until we have provided more guidance and clarity, which will happen in the coming months.</p>
-            <p>Below, we’ve gone a bit deeper into this rule to explain what is changing, what’s not, and what we classify as a Dangerous and Regulated Good. <br>‍</p>
+            <p>Below, we’ve gone a bit deeper into this rule to explain what is changing, what’s not, and what we classify as a Dangerous and Regulated Good.&nbsp;<br>‍</p>
         </div>
     </div>
     <div class="btn-wrapper w-condition-invisible"><a href="#" class="btn-blog w-dyn-bind-empty w-button"></a></div>
@@ -42,8 +42,8 @@
     <div id="heading-5" class="rich-wrapper">
         <div class="blog-post-content w-richtext">
             <h2><strong>Looking Ahead</strong></h2>
-            <p>After receiving feedback from our community, we are evaluating the potential for unintended consequences and negative impacts of the age-restricted requirement. Our existing guidelines on Dangerous and Regulated Goods remain as stated, however we are assessing how best to support server moderators regarding the age-restricted requirement and to ensure we are not preventing positive online engagement. </p>
-            <p>We regularly evaluate and assess our policies to ensure Discord remains a safe and welcoming place, and plan to update our Community Guidelines in the coming months. We will provide any important updates on this policy then. </p>
+            <p>After receiving feedback from our community, we are evaluating the potential for unintended consequences and negative impacts of the age-restricted requirement. Our existing guidelines on Dangerous and Regulated Goods remain as stated, however we are assessing how best to support server moderators regarding the age-restricted requirement and to ensure we are not preventing positive online engagement.&nbsp;</p>
+            <p>We regularly evaluate and assess our policies to ensure Discord remains a safe and welcoming place, and plan to update our Community Guidelines in the coming months. We will provide any important updates on this policy then.&nbsp;</p>
             <p>The full list of content and behaviors not allowed on Discord can be found in our <a href="https://discord.com/guidelines">Community Guidelines</a>. Our <a href="https://discord.com/safety">Safety Center</a> and <a href="https://discord.com/category/safety">Policy &amp; Safety Blog</a> are also great resources if you would like to read more about our approach to safety and our policies.</p>
         </div>
     </div>

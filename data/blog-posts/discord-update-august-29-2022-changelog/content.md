@@ -1,18 +1,18 @@
 <div class="column-4 w-col w-col-8 w-col-stack">
     <div id="heading-1" class="rich-wrapper">
         <div class="blog-post-content w-richtext">
-            <p><em>Here&#x27;s the Discord Changelog from August 29th, 2022. You can also find the most recent Changelog in the Discord app under </em><strong><em>Settings &gt; What&#x27;s New</em></strong><em>.</em></p>
+            <p><em>Here's the Discord Changelog from August 29th, 2022.&nbsp;You can also find the most recent Changelog in the Discord app under </em><strong><em>Settings &gt; What's New</em></strong><em>.</em></p>
             <div class="w-embed">
                 <hr class="hr-style">
             </div>
             <div class="w-embed w-iframe">
-                <center><iframe width="560" height="315" src="https://www.youtube.com/embed/_tV1w0N3QDg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></center>
+                <center><iframe width="560" height="315" src="https://www.youtube.com/embed/_tV1w0N3QDg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe></center>
             </div>
             <ul role="list">
-                <li>‍<strong>Added automated moderation for servers.</strong> Keep your community safe. Set up rules and alerts to automatically catch and block undesirable messages before they’re posted with AutoMod. Head over to Server Settings &gt; AutoMod to get started. <strong>‍</strong></li>
+                <li>‍<strong>Added automated moderation for servers.</strong> Keep your community safe. Set up rules and alerts to automatically catch and block undesirable messages before they’re posted with AutoMod. Head over to Server Settings &gt; AutoMod to get started.&nbsp;<strong>‍</strong></li>
                 <li>‍<strong>And now that AutoMod is here</strong>, imagine what it would be like to go back in time and set up a rule that blocks the words “Elden” and “Ring” because your friend Devin wouldn’t stop spoiling the game. Thanks a lot, Devin.<strong>‍</strong></li>
                 <li><strong>Free custom sticker slots.</strong> Each server can now add up to 5 custom stickers for free. Get started by visiting Server Settings &gt; Stickers. <a href="https://support.discord.com/hc/articles/4403089981975">Questions about uploading stickers?</a><strong>‍</strong></li>
-                <li><strong>Bots are changing!</strong> Going forward, most verified bots and apps will use slash commands. Using bots will be as easy as just typing slash &quot;/&quot; instead of struggling to figure out the right command…and then you can’t delete your failed attempts fast enough so you end up embarrassing yourself in #general and everyone starts pinging you…<strong>‍</strong></li>
+                <li><strong>Bots are changing!</strong> Going forward, most verified bots and apps will use slash commands. Using bots will be as easy as just typing slash "/" instead of struggling to figure out the right command…and then you can’t delete your failed attempts fast enough so you end up embarrassing yourself in #general and everyone starts pinging you…<strong>‍</strong></li>
                 <li><strong>But not all bots are ready just yet! </strong>Some devs already have slash commands working, some need a little more time to update. The rollout may be gradual for your favorite bots. In the meantime, you can read more about the change in <a href="https://discord.com/blog/welcome-to-the-new-era-of-discord-apps">this blog</a>.</li>
             </ul>
             <p>‍</p>
