@@ -15,6 +15,8 @@
     "@discordjs/rest": "^1.7.1",
     "@octokit/action": "^5.0.2",
     "@octokit/rest": "^19.0.7",
+    "@pafyll/array": "^0.0.1",
+    "@pafyll/core": "^0.0.1",
     "discord-api-types": "^0.37.41",
     "dotenv": "^16.0.3",
     "fast-deep-equal": "^3.1.3",

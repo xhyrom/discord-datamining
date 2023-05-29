@@ -25,6 +25,12 @@ importers:
       '@octokit/rest':
         specifier: ^19.0.7
         version: 19.0.7
+      '@pafyll/array':
+        specifier: ^0.0.1
+        version: 0.0.1
+      '@pafyll/core':
+        specifier: ^0.0.1
+        version: 0.0.1
       discord-api-types:
         specifier: ^0.37.41
         version: 0.37.41
@@ -1150,6 +1156,14 @@ packages:
     resolution: {integrity: sha512-MMeLdHyFIALioycq+LFcA71v0S2xpQUX2cw6pPbHQjaibcHYwLnmK/kMZaWuGfGfjBJZ3wRUq+dOaWsvrPJVvA==}
     dependencies:
       '@octokit/openapi-types': 17.2.0
+    dev: false
+
+  /@pafyll/array@0.0.1:
+    resolution: {integrity: sha512-uwjAOyk5ZRQV7AG+2+OMIb9aZDjj4OH34jwFrnHJMulNGcjNjQ8TO+5Lf9oR8asHVciMI+zmw3S6Odg7L8ZucA==}
+    dev: false
+
+  /@pafyll/core@0.0.1:
+    resolution: {integrity: sha512-RQCdU1nHsJI/eQ8pLKlcYDpf4CriOOv86YW5Rck9PHyyfkR43kLNXd/KsGeJdNrxP87u40R2qNI+pv6DZNP/tA==}
     dev: false
 
   /@pkgr/utils@2.4.1:
