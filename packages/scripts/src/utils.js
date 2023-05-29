@@ -1,3 +1,5 @@
+import { setTimeout as sleep } from "node:timers/promises";
+
 import { REST } from "@discordjs/rest";
 import { Routes } from "discord-api-types/v10";
 const rest = new REST({ version: "10" }).setToken(
@@ -60,15 +62,15 @@ export const splitArray = (array, size) => {
  * @returns {Promise<import("simple-git").PushResult>}
  */
 export const push = async (git, remote, branch, tries = 0) => {
-  console.log(tries);
   let output;
   try {
     output = await git.push(remote, branch);
   } catch (e) {
-    if (tries > 5) {
+    if (tries > 10) {
       throw e;
     }
 
+    await sleep(5000);
     output = await push(git, remote, branch, tries + 1);
   }
 
