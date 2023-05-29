@@ -60,15 +60,19 @@ export const splitArray = (array, size) => {
  * @returns {Promise<import("simple-git").PushResult>}
  */
 export const push = async (git, remote, branch, tries = 0) => {
+  console.log(tries);
+  let output;
   try {
-    return await git.push(remote, branch);
+    output = await git.push(remote, branch);
   } catch (e) {
     if (tries > 5) {
       throw e;
     }
 
-    return await push(git, remote, branch, tries + 1);
+    output = await push(git, remote, branch, tries + 1);
   }
+
+  return output;
 };
 
 /**
