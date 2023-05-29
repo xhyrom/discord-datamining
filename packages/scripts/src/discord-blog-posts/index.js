@@ -3,7 +3,7 @@ import xml2json from "xml-js";
 import { writeFile, mkdir } from "node:fs/promises";
 import { join } from "node:path";
 import simpleGit from "simple-git";
-import { parse } from "node-html-parser";
+import { JSDOM } from "jsdom";
 import jsBeautify from "js-beautify";
 
 import { error, success } from "../logger.js";
@@ -31,18 +31,15 @@ for (let item of channel.item) {
   await mkdir(path, { recursive: true }).catch(() => {});
 
   const content = await (await fetch(item.link)).text();
-  const parsed = parse(content);
-  let querySelector = parsed.querySelector(
+  const dom = new JSDOM(content);
+  let querySelector = dom.window.document.querySelector(
     ".blog-post-container > div:first-child > div:nth-child(2)"
-  );
-  if (
-    querySelector &&
-    querySelector.querySelectorAll(".blog-post-content").length === 0
-  )
-    querySelector = parsed.querySelector(".blog-post-content");
+  )?.outerHTML;
+  if (!querySelector)
+    querySelector =
+      dom.window.document.querySelector(".blog-post-content")?.outerHTML;
 
-  const articleBody = querySelector?.outerHTML ?? "";
-  const beautified = jsBeautify.html_beautify(articleBody);
+  const beautified = jsBeautify.html_beautify(querySelector ?? "");
 
   await writeFile(join(path, "content.md"), beautified);
   await writeFile(join(path, "data.json"), JSON.stringify(item, null, 2));
