@@ -92,7 +92,7 @@ export const watcher = (
           defaultEmbed(currentSection, "change").setColor(0xe8c61a).toJSON(),
           new EmbedBuilder()
             .setDescription(
-              `\`\`\`rb\n${
+              `\`\`\`ansi\n${
                 diff.length > 4083 ? diff.slice(0, 4080) + "..." : diff
               }\`\`\``
             )

@@ -84,7 +84,7 @@ await sendWebhook(webhookId, webhookToken, {
   embeds: [
     new EmbedBuilder()
       .setDescription(
-        `\`\`\`rb\n${
+        `\`\`\`ansi\n${
           diff.length > 4083 ? diff.slice(0, 4080) + "..." : diff
         }\`\`\``
       )
