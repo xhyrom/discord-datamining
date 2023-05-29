@@ -244,7 +244,7 @@ export const supportArticles = async (
   let comment = "";
 
   const articles = diff.data.files.filter((file) =>
-    file.filename.includes(path)
+    file.filename.startsWith(`data/${path}`)
   );
   const embeds = {};
 
