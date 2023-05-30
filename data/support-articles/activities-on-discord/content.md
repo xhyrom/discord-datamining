@@ -1,5 +1,5 @@
 <h3 class="wysiwyg-text-align-left">
-    <span id="docs-internal-guid-21984f6c-7fff-3dd3-8d49-117a3fabb703" style="color: #434343;">To celebrate Discord’s 8th Birthday, all Activities will be free to everyone from May 15, 2023 to June 15, 2023. Check out </span><a href="http://dis.gd/birthday" target="_blank" rel="noopener">our blog post</a><span style="color: #434343;"> on all birthday festivities!</span>
+    <span id="docs-internal-guid-21984f6c-7fff-3dd3-8d49-117a3fabb703" style="color: #434343;">To celebrate Discord’s 8th Birthday, all Activities will be free to everyone from May 15, 2023 to June 15, 2023. Check out </span><a href="http://dis.gd/birthday" target="_blank" rel="noopener noreferrer">our blog post</a><span style="color: #434343;"> on all birthday festivities!</span>
 </h3>
 <p class="wysiwyg-text-align-left">If you’ve ever stayed up way too late playing games and watching videos with people in Voice…well, you’re probably about to again. Now announcing Activities: a way to enjoy shared experiences with friends, such as games and media, on Discord itself.</p>
 <p class="wysiwyg-text-align-center"><br><iframe src="//www.youtube-nocookie.com/embed/POMIDMK6WfM" width="560" height="315" frameborder="0" allowfullscreen=""></iframe></p>
@@ -28,26 +28,27 @@
 <h3><span id="docs-internal-guid-89a7c860-7fff-b8ec-8b3a-bda0d88f1b88" style="color: #434343;">From May 15, 2023 to June 15, 2023, Activities are free for everyone to play in celebration for Discord’s 8th Birthday!</span></h3>
 <p>In our current format, there are some Activities that you can play for free - no additional purchases are required. Other Activities will require a Nitro subscription to launch. For these Activities, once a Nitro user has launched the Activity, any user in their voice channel (regardless of Nitro status) can join them to play. You’ll see which Activities are free and which require Nitro by looking at the Activity Shelf. Some games will also offer in-app purchases for special content and upgrades.</p>
 <h3>
-    <span id="docs-internal-guid-08924c55-7fff-5490-f1bd-036c2b8e97e8" style="color: #434343;">Please note: you can still make in-app purchases during Discord’s 8th Birthday celebration when all Activities are free to everyone, but you will need a Nitro subscription to access those in-app purchases after the celebration ends on June 15. If you would like a refund for your in-app purchase, please read our refund policy </span><a href="https://support.discord.com/hc/articles/360012668071" target="_blank" rel="noopener">here</a><span style="color: #434343;">.</span>
+    <span id="docs-internal-guid-08924c55-7fff-5490-f1bd-036c2b8e97e8" style="color: #434343;">Please note: you can still make in-app purchases during Discord’s 8th Birthday celebration when all Activities are free to everyone, but you will need a Nitro subscription to access those in-app purchases after the celebration ends on June 15. If you would like a refund for your in-app purchase, please read our refund policy </span><a href="https://support.discord.com/hc/articles/360012668071" target="_blank" rel="noopener noreferrer">here</a><span style="color: #434343;">.</span>
 </h3>
 <h1 id="h_01GSX5F5D8F7BQFT1Y4MB5DZHB">What Activities are available?</h1>
 <p>The following Activities are available today!</p>
 <ol>
-    <li><a href="https://support.discord.com/hc/en-us/articles/4409342945687" target="_blank" rel="noopener">Watch Together</a></li>
-    <li><a href="https://support.discord.com/hc/en-us/articles/5101932219671" target="_blank" rel="noopener">Putt Party</a></li>
-    <li><a href="https://support.discord.com/hc/en-us/articles/1500009655542" target="_blank" rel="noopener">Poker Night</a></li>
+    <li><a href="https://support.discord.com/hc/en-us/articles/4409342945687" target="_blank" rel="noopener noreferrer">Watch Together</a></li>
+    <li><a href="https://support.discord.com/hc/en-us/articles/5101932219671" target="_blank" rel="noopener noreferrer">Putt Party</a></li>
+    <li><a href="https://support.discord.com/hc/en-us/articles/1500009655542" target="_blank" rel="noopener noreferrer">Poker Night</a></li>
     <li>
-        <a href="https://support.discord.com/hc/en-us/articles/4409235005207" target="_blank" rel="noopener">Sketch Heads</a> 
+        <a href="https://support.discord.com/hc/en-us/articles/4409235005207" target="_blank" rel="noopener noreferrer">Sketch Heads</a> 
     </li>
-    <li><a href="https://support.discord.com/hc/en-us/articles/4404366703255" target="_blank" rel="noopener">Chess in the Park</a></li>
-    <li><a href="https://support.discord.com/hc/en-us/articles/4977911076119" target="_blank" rel="noopener">Land-io</a></li>
-    <li><a href="https://support.discord.com/hc/en-us/articles/4420143548951" target="_blank" rel="noopener">Blazing 8s</a></li>
-    <li><a href="https://support.discord.com/hc/articles/4409244345239" target="_blank" rel="noopener">Letter League</a></li>
-    <li><a href="https://support.discord.com/hc/en-us/articles/4413835060119" target="_blank" rel="noopener">Checkers in the Park</a></li>
-    <li><a href="https://frvr.com/support/" target="_blank" rel="noopener">Spellcast</a></li>
-    <li><a href="https://support.discord.com/hc/en-us/articles/6607890733079" target="_blank" rel="noopener">Bobble League</a></li>
-    <li><a href="https://support.discord.com/hc/en-us/articles/7552538635031" target="_blank" rel="noopener">Know What I Meme</a></li>
-    <li><a href="https://garticphone.com/discord-help" target="_blank" rel="noopener">Gartic Phone</a></li>
+    <li><a href="https://support.discord.com/hc/en-us/articles/4404366703255" target="_blank" rel="noopener noreferrer">Chess in the Park</a></li>
+    <li><a href="https://support.discord.com/hc/en-us/articles/4977911076119" target="_blank" rel="noopener noreferrer">Land-io</a></li>
+    <li><a href="https://support.discord.com/hc/en-us/articles/4420143548951" target="_blank" rel="noopener noreferrer">Blazing 8s</a></li>
+    <li><a href="https://support.discord.com/hc/articles/4409244345239" target="_blank" rel="noopener noreferrer">Letter League</a></li>
+    <li><a href="https://support.discord.com/hc/en-us/articles/4413835060119" target="_blank" rel="noopener noreferrer">Checkers in the Park</a></li>
+    <li><a href="https://frvr.com/support/" target="_blank" rel="noopener noreferrer">Spellcast</a></li>
+    <li><a href="https://support.discord.com/hc/en-us/articles/6607890733079" target="_blank" rel="noopener noreferrer">Bobble League</a></li>
+    <li><a href="https://support.discord.com/hc/en-us/articles/7552538635031" target="_blank" rel="noopener noreferrer">Know What I Meme</a></li>
+    <li><a href="https://garticphone.com/discord-help" target="_blank" rel="noopener noreferrer">Gartic Phone</a></li>
+    <li><a href="https://support.discord.com/hc/en-us/articles/14042410493847" target="_blank" rel="noopener">Jamspace</a></li>
 </ol>
 <h1 id="h_01GSX5FCYNMF5PCGKNNA6XFW29">How do I start an Activity?</h1>
 <h2 id="docs-internal-guid-67d1f612-7fff-856e-6a7d-09e2618d9a7f">On Desktop/Browser</h2>
@@ -84,7 +85,7 @@
 <ul>
     <li>If you have any apps opened in the background, please close out those apps.</li>
 </ul>
-<p>Still experiencing issues? Please reach out to our Support team <a href="https://dis.gd/contact" target="_blank" rel="noopener">here</a>.</p>
+<p>Still experiencing issues? Please reach out to our Support team <a href="https://dis.gd/contact" target="_blank" rel="noopener noreferrer">here</a>.</p>
 <h2 id="h_01GSX5T6WVXS25BCSSDW3TAGYM">Can I invite others to join my Activity?</h2>
 <p><span id="docs-internal-guid-483fe1a0-7fff-4f31-68ff-53cb76cd166c">Of course! There are a few ways you can invite others to join your Activity.</span></p>
 <p><span id="docs-internal-guid-7687b833-7fff-8bed-a5fe-26fe1db2b97c">Once you’ve started an Activity in a voice channel, in the desktop/browser app you can right-click on the voice channel in the channel list and select </span><strong>Invite to Activity</strong>. You can copy the invite link and send that through a DM or in a text channel or text chat to invite others to the Activity.</p>
@@ -128,4 +129,4 @@
 <p>
     <font size="4"><strong>Q: When will developers be able to integrate with Activities? (or When will the ActivitiesSDK be released?)</strong></font>
 </p>
-<p>We have no updates to share with developers regarding developer access to activities right now, but we love your enthusiasm! <span style="font-weight: 400;">Sign up </span><a href="https://discord.com/build/tell-us-more" target="_blank" rel="noopener">here</a><span style="font-weight: 400;"> to learn when we’ll have more to share.</span></p>
+<p>We have no updates to share with developers regarding developer access to activities right now, but we love your enthusiasm! <span style="font-weight: 400;">Sign up </span><a href="https://discord.com/build/tell-us-more" target="_blank" rel="noopener noreferrer">here</a><span style="font-weight: 400;"> to learn when we’ll have more to share.</span></p>
