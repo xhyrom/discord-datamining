@@ -132,7 +132,7 @@
 <p><span style="font-weight: 400;">Speakers in Stage channels must have a server role with </span><strong>Video </strong><span style="font-weight: 400;">permission or be given the </span><strong>Video </strong><span style="font-weight: 400;">permission exclusively in the Stage channel to enable their video or Go Live.</span></p>
 <p class="wysiwyg-text-align-center"><span style="font-weight: 400;"><img src="https://support.discord.com/hc/article_attachments/12414343225751" alt="EN-video-permission-role-stage-channelrole.png"></span></p>
 <h3>
-    <span style="font-weight: 400;">As always, when you, stage moderators, admins, and speakers are using </span><strong>Video </strong><span style="font-weight: 400;">or screen sharing content with </span><strong>Go Live</strong><span style="font-weight: 400;">, make sure to follow Discord’s </span><a href="https://discord.com/guidelines"><span style="font-weight: 400;">Community Guidelines</span></a><span style="font-weight: 400;">.</span>
+    <span style="font-weight: 400;">As always, when you, stage moderators, admins, and speakers are using </span><strong>Video </strong><span style="font-weight: 400;">or screen sharing content with </span><strong>Go Live</strong><span style="font-weight: 400;">, make sure to follow Discord’s </span><a href="https://discord.com/guidelines" target="_blank" rel="noopener noreferrer">Community Guidelines</a><span style="font-weight: 400;">.</span>
 </h3>
 <h2><strong>Stage Channel Capabilities and Limits</strong></h2>
 <p><span style="font-weight: 400;">There are some differences in capabilities and audience size limits depending on whether your Stage channel is </span><strong>Audio Only </strong><span style="font-weight: 400;">or is utilizing </span><strong>Video/Screen Share</strong><span style="font-weight: 400;">.</span></p>
@@ -170,7 +170,8 @@
         </ul>
     </li>
 </ul>
-<h3><span style="font-weight: 400;">Want to learn more about Server Boosting? You can check out this article <a href="https://support.discord.com/hc/en-us/articles/360028038352" target="_blank" rel="noopener">here</a>.</span></h3>
+<h3 id="docs-internal-guid-866baad7-7fff-0b59-53cc-4325dca33b60"><span style="color: #434343;" data-darkreader-inline-color="">Once a server has reached the minimum 14 boosts for Tier 3, each additional boost afterwards will give an additional 30 seats (up to a maximum of 10,000 seats) to Stages using video or screen share.</span></h3>
+<h3><span style="font-weight: 400;">Want to learn more about Server Boosting? You can check out this article <a href="https://support.discord.com/hc/en-us/articles/360028038352" target="_blank" rel="noopener noreferrer">here</a>.</span></h3>
 <p><strong>What Happens When the Stage Channel Hits its Video/Go Live audience limits?</strong></p>
 <ul>
     <li style="font-weight: 400;" aria-level="1"><span style="font-weight: 400;">If video/Go Live has already started in the Stage channel and the audience viewing size has reached its maximum limit, no more users can join.</span></li>
@@ -270,7 +271,8 @@
 <p><span style="font-weight: 400;">This will allow you to exit the event, but will not make any disconnect noise for the rest of the audience or Speakers. </span></p>
 <h1 id="h_01F22APKTBKBC6FAMVS8Q2ST89"><strong>FAQs</strong></h1>
 <p><strong>Q: What version of the app will this feature be available on? <br></strong><strong>A: </strong>All versions - desktop, browser, iOS and Android!</p>
-<p><strong>Q: How many people can be in a Stage channel at once?<br></strong><strong>A:</strong><span style="font-weight: 400;"> Stage Channels can currently support up to 10,000 people at once for audio only! If you enable video or screen share on stage you can have up to 50 people in the audience without Boosting or up to 300 people if your server is Boosted to Level 3.</span></p>
+<p id="docs-internal-guid-bba4ab1a-7fff-afff-cc6b-5f1ca13444e3"><strong>Q: How many people can be in a Stage channel at once?</strong><strong><br></strong><strong>A:</strong> Stage Channels can currently support up to 10,000 people. </p>
+<h3><span style="color: #434343;" data-darkreader-inline-color="">Note: To video or screen share on stage up to 10,000 people, your server will need to be boosted up to 338 boosts in total.</span></h3>
 <p><strong>Q: Is there any limit to the amount of moderators I can have?<br></strong><strong>A: </strong><span style="font-weight: 400;">No, but remember that the Stage moderators of the Stage channel have the ability to mute or remove any member from it.</span></p>
 <p><strong>Q: Is there any limit to the amount of speakers I can have at once?<br></strong><span style="font-weight: 400;"><strong>A:</strong> No limit on the number of audio-only Speakers! However, there is a limit of 1 Go Live stream and up to 5 video participants at a time.</span></p>
 <p><strong>Q: Can I run multiple stage channels at a time?<br></strong><strong>A: </strong>Y<span style="font-weight: 400;">es, you can have multiple different active events within a server!</span></p>
