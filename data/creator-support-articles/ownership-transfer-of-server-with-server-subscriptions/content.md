@@ -15,7 +15,7 @@
 <p>If you need to transfer the ownership of a server with Server Subscriptions activated, you can follow the steps below.</p>
 <h2 id="h_01GT25HAAS6VFD369A1JVNKSVQ"><strong>EXISTING OWNER - STEPS TO INITIATE A SERVER TRANSFER</strong></h2>
 <p><span class="wysiwyg-font-size-large"><strong>Step 1:</strong> </span></p>
-<p>Ensure the person you are transferring the server to meets the eligibility requirements from our<a href="https://support.discord.com/hc/en-us/articles/10575066024983-Discord-Server-Subscription-Policy" target="_blank" rel="noopener noreferrer"> Server Subscriptions policy</a> AND has set up<a href="https://www.notion.so/1861778cf2644b0089f6b8e1b6ee23c7" target="_blank" rel="noopener noreferrer"> Team and payment info</a>.</p>
+<p>Ensure the person you are transferring the server to meets the eligibility requirements from our<a href="https://support.discord.com/hc/en-us/articles/10575066024983-Discord-Server-Subscription-Policy" target="_blank" rel="noopener noreferrer"> Server Subscriptions policy</a> AND has set up <a href="https://discord.com/creators/server-subs-payout-onboarding-guide" target="_blank" rel="noopener">Team and payment info</a>.</p>
 <p><span class="wysiwyg-font-size-large"><strong>Step 2:</strong> </span></p>
 <p>Initiate a <a href="https://support.discord.com/hc/en-us/articles/216273938-How-do-I-transfer-server-ownership-" target="_blank" rel="noopener noreferrer">Server Transfer</a> (click to see instructions)</p>
 <h3>
