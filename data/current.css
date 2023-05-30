@@ -29572,8 +29572,30 @@ img[alt] {
     margin-bottom: 18px
 }
 
+.freeTrialPillInlineBlock-20oCo2 {
+    background: var(--white-500);
+    color: var(--black-500);
+    mix-blend-mode: screen;
+    border-radius: var(--radius-md);
+    font-weight: 800;
+    display: inline-block;
+    padding: 4px 8px;
+    line-height: 12px;
+    text-transform: uppercase
+}
+
 .freeTrialPillInline-1xLX2j {
-    margin-bottom: 12px
+    margin-top: 4px
+}
+
+.freeTrialActivatedPillInline-1QlXhb,
+.freeTrialPillInline-1xLX2j {
+    margin-bottom: 8px;
+    max-width: 60%
+}
+
+.freeTrialActivatedPillInline-1QlXhb {
+    margin-top: 8px
 }
 
 .price-3oXq_a {
@@ -154223,20 +154245,20 @@ html .invoiceCancelRow-3s2UuC {
     padding-bottom: 20px
 }
 
-.title-3i5DyX {
+.title-3XB20C {
     font-size: 24px;
     line-height: 30px;
     margin-top: 20px;
     margin-bottom: 12px
 }
 
-.subtitle-dP0EQF {
+.subtitle-7GyjIG {
     font-size: 16px;
     line-height: 20px;
     margin-bottom: 36px
 }
 
-.footer-k0JFJ6 {
+.footer-SRoQeo {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -156388,4 +156410,4 @@ html .invoiceCancelRow-dVOR64 {
     flex-direction: column
 }
 
-/*# sourceMappingURL=40532.1a8cfcc61a0c33d0af0d.css.map*/
+/*# sourceMappingURL=40532.67d7e4298443bc1f0a0f.css.map*/
