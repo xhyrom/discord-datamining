@@ -1,6 +1,6 @@
 <h3 id="docs-internal-guid-570bd19d-7fff-cf0f-96d6-8e7f8a2a7718"><strong>Note: Server Subscriptions are currently only available for US-based creators.</strong></h3>
 <p><strong>We're excited to announce Server Subscriptions for creators and communities on Discord!</strong></p>
-<p>Read on to learn what you need to know as a server admin. If you’re not a server admin but have questions related to your subscription to a server, you can<a href="https://support.discord.com/hc/en-us/articles/4415163187607" target="_blank" rel="noopener"> visit this help page for more information.</a></p>
+<p>Read on to learn what you need to know as a server admin. If you’re not a server admin but have questions related to your subscription to a server, you can<a href="https://support.discord.com/hc/en-us/articles/4415163187607" target="_blank" rel="noopener noreferrer"> visit this help page for more information.</a></p>
 <p class="wysiwyg-text-align-center"><span class="wysiwyg-underline"><img src="https://lh4.googleusercontent.com/DWACs2vxQZUEb5ZJI52Pa0jK2wtzG6rKPrcavBnNwFOG0M1u7D1bcKG8hB2Ad0nJxyGalEQf7DzGEmibKAgZbVTF8qoMvgAmKVn-ymAogGGDLfeT4BZ6IT-wmfnHGAFtxq4yOKh7ImQQA7kWqcxL9rU"></span></p>
 <p><strong>What this article covers:</strong></p>
 <ul>
@@ -57,16 +57,16 @@
     <li>You must be 18 years or older.</li>
     <li>Your account must be in good standing. Good standing includes but is not limited to:
         <ol>
-            <li>You are not actively violating any of Discord’s <a href="https://discord.com/terms" target="_blank" rel="noopener"><span class="wysiwyg-underline">Terms</span></a> or <a href="https://discord.com/guidelines" target="_blank" rel="noopener"><span class="wysiwyg-underline">Guidelines</span></a>.</li>
+            <li>You are not actively violating any of Discord’s <a href="https://discord.com/terms" target="_blank" rel="noopener noreferrer"><span class="wysiwyg-underline">Terms</span></a> or <a href="https://discord.com/guidelines" target="_blank" rel="noopener noreferrer"><span class="wysiwyg-underline">Guidelines</span></a>.</li>
             <li>Your account has not received a safety violation in the past 30 days</li>
             <li>Your account has not been flagged for suspicious activity usually reserved for safety, abuse, and fraud cases.</li>
             <li>No outstanding dues or unpaid charges owed to Discord</li>
         </ol>
     </li>
     <li>You must have your email verified.</li>
-    <li>You must have<a href="https://support.discord.com/hc/en-us/articles/219576828" target="_blank" rel="noopener"> Two Factor Authentication</a> enabled. Please note, you cannot remove 2FA when you have published server subscription tiers in your servers.</li>
+    <li>You must have<a href="https://support.discord.com/hc/en-us/articles/219576828" target="_blank" rel="noopener noreferrer"> Two Factor Authentication</a> enabled. Please note, you cannot remove 2FA when you have published server subscription tiers in your servers.</li>
 </ol>
-<p>It's important you read the<a href="https://support.discord.com/hc/en-us/articles/5330075836311" target="_blank" rel="noopener"> Monetization Terms</a> and<a href="https://support.discord.com/hc/en-us/articles/10575066024983" target="_blank" rel="noopener"> Server Subscription Policy</a> for more details on the specific requirements applicable to your use of Server Subscriptions.</p>
+<p>It's important you read the<a href="https://support.discord.com/hc/en-us/articles/5330075836311" target="_blank" rel="noopener noreferrer"> Monetization Terms</a> and<a href="https://support.discord.com/hc/en-us/articles/10575066024983" target="_blank" rel="noopener noreferrer"> Server Subscription Policy</a> for more details on the specific requirements applicable to your use of Server Subscriptions.</p>
 <h2 id="h_01GXS9201PQ8C2S9GCEM42VPZ6">How do I disable Server Subscriptions? </h2>
 <p>Please note that in order to fully remove the ability to earn money through Server Subscriptions from your server, the following must be true:</p>
 <ul>
@@ -91,11 +91,11 @@
 <h2 id="h_01GXS94CY6G12M8SRTFC79V61R"><strong>I HAVE SOME SERVER SUBSCRIPTIONS. WHEN WILL I BE PAID?</strong></h2>
 <p>You will be eligible for a payout once:<br>1) You have reached the minimum $100 threshold for a payout <br>2) Your server has been reviewed to ensure it meets our creator terms and policy.<br><br>Once you meet the $100 minimum, your account will be reviewed, and eligible payouts will be made once a month, the following month from when you reach the $100 threshold. For example,  if you meet the minimum threshold of $100 in January, you would most likely receive eligible payouts in February.</p>
 <h3>
-    <strong>Note</strong>: Please see our<a href="https://support.discord.com/hc/articles/5330075836311" target="_blank" rel="noopener"> Monetization Terms</a> for more information on payout eligibility, timelines, and process.
+    <strong>Note</strong>: Please see our<a href="https://support.discord.com/hc/articles/5330075836311" target="_blank" rel="noopener noreferrer"> Monetization Terms</a> for more information on payout eligibility, timelines, and process.
 </h3>
 <h2 id="h_01GXS94MM94KN8D3WRQPHYK4DY"><strong>HOW CAN SOMEONE ASK FOR A REFUND FROM A SERVER SUBSCRIPTION?</strong></h2>
-<p>If they would like to refund a Server Subscription purchase, they can review our<a href="https://support.discord.com/hc/articles/360012668071" target="_blank" rel="noopener"> refund policy</a> for details. </p>
-<p>They can contact our team at the following link:<a href="http://dis.gd/billing" target="_blank" rel="noopener"> dis.gd/billing</a>. </p>
+<p>If they would like to refund a Server Subscription purchase, they can review our<a href="https://support.discord.com/hc/articles/360012668071" target="_blank" rel="noopener noreferrer"> refund policy</a> for details. </p>
+<p>They can contact our team at the following link:<a href="http://dis.gd/billing" target="_blank" rel="noopener noreferrer"> dis.gd/billing</a>. </p>
 <p>Make sure they pick <strong>Server Subscription</strong> from the <strong>Type of Billing Issue</strong> dropdown menu to navigate to the refund request form.</p>
 <h1 id="h_01GXS957AT3C69ZJ3K43CP4WDN">Free Trials</h1>
 <p>Free Trials allow you to give access to Server Subscription membership benefits for free during the trial window. This lets your community get a sense of the experience so they can decide if they’d like to continue subscribing!</p>
@@ -131,13 +131,13 @@
 <p><strong>Q: Can admins manage the subscription tiers and see payment details, or is that only possible by the server owner? </strong></p>
 <p>A: Admins can change subscription tier details, but the server owner is the only person who can change and see payment information like payout account details and the payments tab. </p>
 <p><strong>Q: Can individuals temporarily be removed from a premium channel while still staying subscribed? (ie. disciplinary action for breaking the rules etc without performing a full kick or ban.)</strong></p>
-<p>A: Yes, you (or your moderators) can time people out without fully removing their subscription benefits. For instructions on time outs, see<a href="https://support.discord.com/hc/en-us/articles/4413305239191" target="_blank" rel="noopener"> here</a>.</p>
+<p>A: Yes, you (or your moderators) can time people out without fully removing their subscription benefits. For instructions on time outs, see<a href="https://support.discord.com/hc/en-us/articles/4413305239191" target="_blank" rel="noopener noreferrer"> here</a>.</p>
 <p>You would need to give them a role with permissions that denies them the ability to chat, but this is a manual process for each channel, for a specific user, which you'd then have to manually remove later.</p>
 <h2 id="h_01GXS97QKKRF8NZRVMA7CAHV7X"><strong>Mobile Support</strong></h2>
 <p><strong>Q: When will Server Subscriptions be supported on the Discord mobile app? </strong></p>
 <p>A: We are currently rolling out In-App Purchasing (IAP) for iOS mobile devices to servers with Server Subscriptions enabled.  </p>
 <p><strong>Q: Do mobile subscriptions have the same revenue split as desktop subscriptions?</strong></p>
 <p>A: No. Apple takes an additional 30% of revenue from all subscriptions initiated through the Discord iOS application. Subscribers on iOS mobile devices will see a higher price on iOS checkout to account for the additional iOS fee. </p>
-<p>More information on the fee structures is available in the Monetization Terms: https://support.discord.com/hc/en-us/articles/5330075836311-Monetization-Terms</p>
+<p>More information on the fee structures is available in the <a href="https://support.discord.com/hc/en-us/articles/5330075836311" target="_blank" rel="noopener">Monetization Terms</a>.</p>
 <p><strong>Q: When will subscriptions be purchasable on Android?</strong></p>
 <p>A: We’re working on it! We don’t have any timing to share at this point but we are actively working to bring Server Subscriptions to Android mobile devices.</p>
