@@ -51058,6 +51058,10 @@ input[type=checked]:focus-visible+.label-3TDpbn {
     background-color: var(--modal-background)
 }
 
+.lowercaseUsername-Fait_N {
+    text-transform: lowercase
+}
+
 .profileCard-1WeJDY {
     min-height: 120px;
     padding-bottom: 25px
@@ -156414,4 +156418,4 @@ html .invoiceCancelRow-dVOR64 {
     flex-direction: column
 }
 
-/*# sourceMappingURL=40532.ea87949f2b4b9fddda85.css.map*/
+/*# sourceMappingURL=40532.432008c174bdc760ac8e.css.map*/
