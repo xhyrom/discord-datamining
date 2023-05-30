@@ -126430,6 +126430,19 @@ input::-webkit-outer-spin-button {
     border-radius: 4px
 }
 
+.emptyStateWrapper--w9zN- {
+    padding: 8px 16px;
+    text-align: center
+}
+
+.emptyStateWrapper--w9zN- p {
+    margin: 0
+}
+
+.emptyStateWrapper--w9zN- a:hover {
+    text-decoration: underline
+}
+
 .modal-1wRCGu {
     overflow: hidden
 }
@@ -156375,4 +156388,4 @@ html .invoiceCancelRow-dVOR64 {
     flex-direction: column
 }
 
-/*# sourceMappingURL=40532.9b2befe716ec59e657bf.css.map*/
+/*# sourceMappingURL=40532.1a8cfcc61a0c33d0af0d.css.map*/
