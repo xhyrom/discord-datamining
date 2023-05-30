@@ -31,7 +31,7 @@ const firstPageArticles = await (
 ).json();
 const firstPageSections = await (
   await fetch(
-    "https://support.discord.com/api/v2/help_center/en-us/sections.json"
+    "https://support-dev.discord.com/api/v2/help_center/en-us/sections.json"
   )
 ).json();
 
