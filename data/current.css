@@ -83241,12 +83241,16 @@ strong {
 
 .enableCard-707m1C {
     padding: 12px 16px;
-    background-color: var(--background-accent);
+    background-color: var(--background-modifier-accent);
     color: var(--header-primary)
 }
 
 .toggleSection-CsmyzT {
     margin-bottom: 30px
+}
+
+.arrow-2_AG2e {
+    color: var(--header-primary)
 }
 
 .friendWrapper-2x5j0A {
@@ -156410,4 +156414,4 @@ html .invoiceCancelRow-dVOR64 {
     flex-direction: column
 }
 
-/*# sourceMappingURL=40532.67d7e4298443bc1f0a0f.css.map*/
+/*# sourceMappingURL=40532.ea87949f2b4b9fddda85.css.map*/
