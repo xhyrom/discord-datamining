@@ -82944,33 +82944,41 @@ strong {
 
 .linkingBanner-rB7UPH {
     -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
     -ms-flex-direction: row;
     flex-direction: row;
-    padding-right: 0;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    padding: 32px;
     margin-bottom: 24px
+}
+
+.linkingBanner-rB7UPH,
+.linkingBannerParent-3Q7JUy {
+    -webkit-box-direction: normal;
+    -webkit-box-align: start;
+    -ms-flex-align: start;
+    align-items: flex-start
 }
 
 .linkingBannerParent-3Q7JUy {
-    -webkit-box-align: start;
-    -ms-flex-align: start;
-    align-items: flex-start;
-    padding: 0 0 32px 32px;
-    margin-bottom: 24px
+    -webkit-box-orient: vertical;
+    -ms-flex-direction: column;
+    flex-direction: column
 }
 
 .linkingBannerUpper-g_ytMn {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
     -ms-flex-direction: row;
     flex-direction: row
 }
 
-.header-3Xv1Nh {
-    padding-top: 32px
+.linkingBannerUpper-g_ytMn,
+.step-3WCaE1 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex
 }
 
 .step-3WCaE1 {
@@ -82983,14 +82991,10 @@ strong {
     margin-bottom: 16px
 }
 
-.step-3WCaE1,
 .steps-1fr0h2 {
     display: -webkit-box;
     display: -ms-flexbox;
-    display: flex
-}
-
-.steps-1fr0h2 {
+    display: flex;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
     -ms-flex-direction: column;
@@ -83002,17 +83006,6 @@ strong {
 
 .steps-1fr0h2 :last-child {
     margin-bottom: 0
-}
-
-.parentBanenrArt-XXnXvl {
-    max-width: 170px;
-    margin-right: -24px
-}
-
-@media (min-width:900px) {
-    .parentBanenrArt-XXnXvl {
-        margin-right: 0
-    }
 }
 
 .stepNumber-1OYCPJ {
@@ -83033,8 +83026,8 @@ strong {
 }
 
 .bannerArt-kUjEEW {
-    max-width: 170px;
-    max-height: 141px
+    width: 224px;
+    height: 110px
 }
 
 .maxConnectionInfo-MsuSGr {
@@ -156382,4 +156375,4 @@ html .invoiceCancelRow-dVOR64 {
     flex-direction: column
 }
 
-/*# sourceMappingURL=40532.8dc71181e527cebacaa4.css.map*/
+/*# sourceMappingURL=40532.9b2befe716ec59e657bf.css.map*/
