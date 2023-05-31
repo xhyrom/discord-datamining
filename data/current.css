@@ -91734,7 +91734,8 @@ strong {
 }
 
 .appText-3s1de- {
-    text-align: left
+    text-align: left;
+    max-width: 288px
 }
 
 .switchContainer-2II_Xm {
@@ -156603,4 +156604,4 @@ html .invoiceCancelRow-dVOR64 {
     flex-direction: column
 }
 
-/*# sourceMappingURL=40532.8448bd6b0be5a29c0695.css.map*/
+/*# sourceMappingURL=40532.a3f00b374ea28f9f476b.css.map*/
