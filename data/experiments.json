@@ -7169,25 +7169,6 @@
   {
     "data": {
       "kind": "user",
-      "id": "2023-04_birthday_activities_color_together_tile",
-      "label": "Birthday Activities Whats New Color Together Tile",
-      "description": [
-        "Control",
-        "Treatment 1: Enable Color Together tile"
-      ],
-      "hash": 2993886886,
-      "buckets": [
-        0,
-        1
-      ],
-      "config_keys": [
-        "enabled"
-      ]
-    }
-  },
-  {
-    "data": {
-      "kind": "user",
       "id": "2023-04_birthday_activities_whats_new_gdm_tile",
       "label": "Birthday Activities Whats New GDM Tile",
       "description": [
@@ -7214,6 +7195,25 @@
         "Treatment 1: Enable Jamspace tile"
       ],
       "hash": 3742269191,
+      "buckets": [
+        0,
+        1
+      ],
+      "config_keys": [
+        "enabled"
+      ]
+    }
+  },
+  {
+    "data": {
+      "kind": "user",
+      "id": "2023-05_birthday_activities_poker",
+      "label": "Birthday Activities Poker Tile",
+      "description": [
+        "Control",
+        "Treatment 1: Enable Poker tile"
+      ],
+      "hash": 3212616249,
       "buckets": [
         0,
         1
