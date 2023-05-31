@@ -7423,6 +7423,25 @@
   {
     "data": {
       "kind": "user",
+      "id": "2023-04_broadcasting",
+      "label": "Go Live Broadcasting",
+      "description": [
+        "Control",
+        "Treatment 1: Allow user to Broadcast to friends & guilds"
+      ],
+      "hash": 139947315,
+      "buckets": [
+        0,
+        1
+      ],
+      "config_keys": [
+        "enabled"
+      ]
+    }
+  },
+  {
+    "data": {
+      "kind": "user",
       "id": "2022-02_guild_audit_log_user",
       "label": "Guild Audit Log - User Feature Flag",
       "description": [
