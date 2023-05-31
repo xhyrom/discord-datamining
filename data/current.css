@@ -102659,6 +102659,19 @@ html .tabBadge-h4HGed {
     align-self: center
 }
 
+.badge-yTfjej {
+    position: absolute;
+    bottom: -4px;
+    right: -2px;
+    width: 10px;
+    height: 10px;
+    color: var(--header-secondary)
+}
+
+.icon-1eqQfl {
+    position: relative
+}
+
 .scroller-laUYTP {
     margin-left: -3px;
     margin-right: -7px;
@@ -107126,6 +107139,11 @@ html .tabBadge-h4HGed {
 
 .changeTeamButton-2u3mhe {
     background-color: var(--interactive-muted);
+    color: var(--white-500)
+}
+
+.selectTeamButton-3yMx5j {
+    background-color: var(--brand-500);
     color: var(--white-500)
 }
 
@@ -156585,4 +156603,4 @@ html .invoiceCancelRow-dVOR64 {
     flex-direction: column
 }
 
-/*# sourceMappingURL=40532.f135256c4dc13b1d8cbf.css.map*/
+/*# sourceMappingURL=40532.8448bd6b0be5a29c0695.css.map*/
