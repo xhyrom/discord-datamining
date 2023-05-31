@@ -56,6 +56,14 @@ await git.commit([
 ]);
 
 const pushResult = await push(git, "origin", "master");
-await watcher(oldExperiments, experiments, pushResult, webhookId, webhookToken);
+if (pushResult.update) {
+  await watcher(
+    oldExperiments,
+    experiments,
+    pushResult,
+    webhookId,
+    webhookToken
+  );
+}
 
 success("Successfully pushed 🚀");

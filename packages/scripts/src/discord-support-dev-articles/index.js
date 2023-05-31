@@ -118,13 +118,15 @@ await git.commit([
 ]);
 
 const pushResult = await push(git, "origin", "master");
-await watcher(
-  oldSections,
-  sections,
-  pushResult,
-  webhookId,
-  webhookToken,
-  "1112067587002609818"
-);
+if (pushResult.update) {
+  await watcher(
+    oldSections,
+    sections,
+    pushResult,
+    webhookId,
+    webhookToken,
+    "1112067587002609818"
+  );
+}
 
 success("Successfully pushed 🚀");

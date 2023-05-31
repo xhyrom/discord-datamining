@@ -74,6 +74,9 @@ await git.commit([
 ]);
 
 const pushResult = await push(git, "origin", "master");
+success("Successfully pushed 🚀");
+
+if (!pushResult.update) process.exit(0);
 
 const diff = jsondiffpatch.formatters.console.format(
   jsondiffpatch.diff(oldDomain, domain) || {},
@@ -106,5 +109,3 @@ await sendWebhook(webhookId, webhookToken, {
     },
   ],
 });
-
-success("Successfully pushed 🚀");
