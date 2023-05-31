@@ -12,6 +12,24 @@
   },
   "item": [
     {
+      "title": "Bridging Mental Health Gaps for Gen Z",
+      "link": "https://discord.com/blog/bridging-gen-z-mental-health-gaps",
+      "guid": "https://discord.com/blog/bridging-gen-z-mental-health-gaps",
+      "description": "Stressed, anxious, hopeless, and unsure — Gen Z feels the weight of the world on their shoulders. For Mental Health Awareness Month, we surveyed Gen Z adults and parents of Gen Zers to get their perspectives on the challenges Gen Z faces in their quest for mental well-being in their daily lives. ",
+      "pubDate": "Wed, 31 May 2023 00:00:00 GMT",
+      "media:content": "https://uploads-ssl.webflow.com/5f9072399b2640f14d6a2bf4/635b114317d3dc3fae9b2564_Community%20-%202.png",
+      "media:thumbnail": "https://uploads-ssl.webflow.com/5f9072399b2640f14d6a2bf4/635b114317d3dc3fae9b2564_Community%20-%202.png"
+    },
+    {
+      "title": "Fun Things to Do With Your Friends on Discord",
+      "link": "https://discord.com/blog/fun-things-to-do-on-discord-apps-activities",
+      "guid": "https://discord.com/blog/fun-things-to-do-on-discord-apps-activities",
+      "description": "In this article, we’ll be sharing a few ideas to bring some life back into your Discord server, including third-party apps to check out and how to enjoy games and Activities with your friends, directly in Discord.",
+      "pubDate": "Wed, 31 May 2023 00:00:00 GMT",
+      "media:content": "https://uploads-ssl.webflow.com/5f9072399b2640f14d6a2bf4/64777c94f5f4e1d038525b68_TimesSquare_Blog_1800x720.png",
+      "media:thumbnail": "https://uploads-ssl.webflow.com/5f9072399b2640f14d6a2bf4/64777c94f5f4e1d038525b68_TimesSquare_Blog_1800x720.png"
+    },
+    {
       "title": "Discord Update: May 22, 2023 Changelog",
       "link": "https://discord.com/blog/discord-update-may-22-2023-changelog",
       "guid": "https://discord.com/blog/discord-update-may-22-2023-changelog",
@@ -892,24 +910,6 @@
       "pubDate": "Thu, 18 Nov 2021 00:00:00 GMT",
       "media:content": "https://uploads-ssl.webflow.com/5f9072399b2640f14d6a2bf4/619575c462b70073305c7cbb_Engineering-Blog-Header-Updated.png",
       "media:thumbnail": "https://uploads-ssl.webflow.com/5f9072399b2640f14d6a2bf4/619575c462b70073305c7cbb_Engineering-Blog-Header-Updated.png"
-    },
-    {
-      "title": "App Discovery is Coming to Discord",
-      "link": "https://discord.com/blog/discord-bots-and-app-discovery-announcement",
-      "guid": "https://discord.com/blog/discord-bots-and-app-discovery-announcement",
-      "description": "Gather 'round, bot fans and soon-to-be fans: we've got some long-anticipated news: app discovery is coming to Discord! ",
-      "pubDate": "Wed, 17 Nov 2021 00:00:00 GMT",
-      "media:content": "https://uploads-ssl.webflow.com/5f9072399b2640f14d6a2bf4/6192ad513cf1cf722a9729e8_app%20blog%20header.png",
-      "media:thumbnail": "https://uploads-ssl.webflow.com/5f9072399b2640f14d6a2bf4/6192ad513cf1cf722a9729e8_app%20blog%20header.png"
-    },
-    {
-      "title": "How We’re Fighting Spammers on Discord",
-      "link": "https://discord.com/blog/how-discord-is-fighting-spam",
-      "guid": "https://discord.com/blog/how-discord-is-fighting-spam",
-      "description": "You know it. We know it. Spam sucks. So today, we want to tell you what we are doing to combat it.",
-      "pubDate": "Fri, 12 Nov 2021 00:00:00 GMT",
-      "media:content": "https://uploads-ssl.webflow.com/5f9072399b2640f14d6a2bf4/618db6b2cf98f2d9aa324a53_image5.png",
-      "media:thumbnail": "https://uploads-ssl.webflow.com/5f9072399b2640f14d6a2bf4/618db6b2cf98f2d9aa324a53_image5.png"
     }
   ]
 }

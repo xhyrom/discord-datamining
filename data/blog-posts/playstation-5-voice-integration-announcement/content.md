@@ -21,8 +21,8 @@
             <figure class="w-richtext-figure-type-image w-richtext-align-fullwidth" style="max-width:1290pxpx">
                 <div><img src="https://assets-global.website-files.com/5f9072399b2640f14d6a2bf4/640846561575c10114ddc5ed_Zm3AWu_ihfd70q4sx7IAWjlWg3oZsYZrv3_VUUHZhrPwCtows8DV_BNzexAayqRLiWAhvOSOQ5LER24PASu2-kcZRfhHIhk5i0AvkxHSIkpPvEMIJZr_PxfBRAnPDlMDSsCDsDy0FRDaCKyqUrFz6FU.png" alt="A screenshot of the Connections page in Discord, used for linking your account for PlayStation Network to your Discord account."></div>
             </figure>
-            <p>Once you sign in and link your accounts, you're all set — now, you can voice chat with your Discord friends on your PS5, no matter what platform they're on.<em>‍</em></p>
-            <p><em> (If you’ve previously linked your account for PlayStation Network to display what game you’re playing, </em><strong><em>you’ll have to link your account again to grant the permissions needed for Voice. </em></strong><em>If you were lucky enough to try out Discord Voice on PS5 during the beta phase, you won’t need to link again.)</em>‍</p>
+            <p>Once you sign in and link your accounts, you're all set — now, you can voice chat with your Discord friends on your PS5, no matter what platform they're on.</p>
+            <p>If you've previously linked your account for PlayStation Network to display what game you're playing, <strong>you'll have to link your account again to grant the permissions needed for Voice.</strong> If you were lucky enough to try out Discord Voice on PS5 during the beta phase, you won't need to link again.</p>
             <p>If you need a bit more one-on-one guidance, hop on over to our <a href="https://support.discord.com/hc/en-us/articles/4419534960919">Help Center</a> article for more help getting yourself all connected.</p>
             <p>Once you’ve linked your accounts together, it’s time to get chatting!</p>
         </div>
