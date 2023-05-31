@@ -10194,6 +10194,16 @@ html.decorate-links .lowSaturationUnderline-Z6CW6z {
     text-align: center
 }
 
+.authorizedSuccessSubtext-3TL_wm {
+    margin-top: 16px;
+    text-align: center;
+    margin-bottom: 24px
+}
+
+.cta-28oIaz {
+    margin-top: 12px
+}
+
 .headerSuccess-3n55Ht {
     width: 158px;
     height: 130px;
@@ -10211,6 +10221,14 @@ html.decorate-links .lowSaturationUnderline-Z6CW6z {
     right: 12px;
     top: 12px;
     opacity: .8
+}
+
+.authorizedSuccessWrapper-5FsKkl {
+    padding: 24px
+}
+
+.button-3TsMJA+.button-3TsMJA {
+    margin-top: 12px
 }
 
 .footer-3Gu_Tl {
@@ -156422,4 +156440,4 @@ html .invoiceCancelRow-dVOR64 {
     flex-direction: column
 }
 
-/*# sourceMappingURL=40532.7e276249f2a57e55c756.css.map*/
+/*# sourceMappingURL=40532.7e62dc62931e6db8e363.css.map*/
