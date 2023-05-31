@@ -145020,9 +145020,15 @@ html .invoiceCancelRow-3s2UuC {
     -webkit-box-direction: normal;
     -ms-flex-direction: column;
     flex-direction: column;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
     width: 100%;
     height: 355px;
-    padding: 24px 32px;
+    padding: 64px 32px 24px;
     border-radius: 8px;
     background-color: var(--background-floating);
     -webkit-box-shadow: var(--elevation-high);
@@ -145037,6 +145043,12 @@ html .invoiceCancelRow-3s2UuC {
 .card-2IXuOZ:hover {
     -webkit-filter: drop-shadow(0 0 16px var(--brand-500));
     filter: drop-shadow(0 0 16px var(--brand-500))
+}
+
+.body-1I77SW {
+    -webkit-box-flex: 1;
+    -ms-flex: 1;
+    flex: 1
 }
 
 .buttonInner-1T3drB {
@@ -156573,4 +156585,4 @@ html .invoiceCancelRow-dVOR64 {
     flex-direction: column
 }
 
-/*# sourceMappingURL=40532.83e847b0a8854d6dd39b.css.map*/
+/*# sourceMappingURL=40532.c356e7cfbc7fb7e2b7d9.css.map*/
