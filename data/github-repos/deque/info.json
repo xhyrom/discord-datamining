@@ -29,7 +29,7 @@
   "url": "https://api.github.com/repos/discord/deque",
   "created_at": "2017-02-15T21:00:12Z",
   "updated_at": "2023-05-28T02:12:46Z",
-  "pushed_at": "2019-06-24T09:59:43Z",
+  "pushed_at": "2023-05-31T02:35:12Z",
   "homepage": "",
   "size": 12,
   "stargazers_count": 136,
@@ -41,10 +41,10 @@
   "has_wiki": true,
   "has_pages": false,
   "has_discussions": false,
-  "forks_count": 17,
+  "forks_count": 18,
   "archived": false,
   "disabled": false,
-  "open_issues_count": 2,
+  "open_issues_count": 3,
   "license": {
     "key": "mit",
     "name": "MIT License",
@@ -60,8 +60,8 @@
     "elixir"
   ],
   "visibility": "public",
-  "forks": 17,
-  "open_issues": 2,
+  "forks": 18,
+  "open_issues": 3,
   "watchers": 136,
   "default_branch": "master",
   "permissions": {
