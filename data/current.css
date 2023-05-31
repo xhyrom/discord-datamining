@@ -22574,7 +22574,7 @@ html.disable-forced-colors * {
     --profile-gradient-role-pill-background: hsl(var(--primary-660-hsl)/0.5);
     --profile-gradient-role-pill-border: hsl(var(--white-500-hsl)/0.2);
     --profile-gradient-section-box: hsl(var(--black-500-hsl)/0.45);
-    --redesign-activity-card-background: var(--primary-530);
+    --redesign-activity-card-background: var(--primary-560);
     --redesign-activity-card-background-pressed: var(--primary-630);
     --redesign-button-danger-background: var(--red-430);
     --redesign-button-danger-pressed-background: var(--red-500);
@@ -22937,7 +22937,7 @@ html.disable-forced-colors * {
     --profile-gradient-role-pill-background: hsl(var(--primary-660-hsl)/0.5);
     --profile-gradient-role-pill-border: hsl(var(--white-500-hsl)/0.2);
     --profile-gradient-section-box: hsl(var(--black-500-hsl)/0.45);
-    --redesign-activity-card-background: var(--primary-530);
+    --redesign-activity-card-background: var(--primary-560);
     --redesign-activity-card-background-pressed: var(--primary-630);
     --redesign-button-danger-background: var(--red-430);
     --redesign-button-danger-pressed-background: var(--red-500);
@@ -123828,6 +123828,7 @@ input::-webkit-outer-spin-button {
 .tableRow-PTF2x_ {
     color: var(--interactive-normal);
     font-size: 16px;
+    line-height: 22px;
     cursor: pointer
 }
 
@@ -124442,6 +124443,21 @@ input::-webkit-outer-spin-button {
     border-bottom: 1px solid var(--background-tertiary);
     -webkit-box-shadow: var(--elevation-high);
     box-shadow: var(--elevation-high)
+}
+
+.errorIcon-CjW-X3 {
+    color: var(--info-danger-foreground);
+    vertical-align: bottom;
+    height: 22px;
+    width: 22px;
+    margin-right: 8px
+}
+
+.errorToolbar-mLgL_6 {
+    border-top: 1px solid var(--background-tertiary);
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 auto;
+    flex: 0 0 auto
 }
 
 .channelRow-2Kh1SV {
@@ -144996,6 +145012,52 @@ html .invoiceCancelRow-3s2UuC {
     flex: 1
 }
 
+.countdown-1Wc7y- {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: start;
+    -ms-flex-align: start;
+    align-items: flex-start;
+    gap: 8px
+}
+
+.daysRemaining-32Ddt1 {
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    padding: 4px 8px;
+    background-color: hsl(var(--black-500-hsl)/.85)
+}
+
+.daysRemaining-32Ddt1,
+.timer-13Ce92 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    gap: 4px;
+    border-radius: 16px
+}
+
+.timerFill-108S1o {
+    width: 18px;
+    height: 18px;
+    background-color: var(--brand-500);
+    border-radius: 100%
+}
+
+.timerFill-108S1o.hidden-TDJ7aK {
+    visibility: hidden
+}
+
 .hero-2oPZij {
     position: relative;
     -webkit-box-sizing: border-box;
@@ -145073,6 +145135,25 @@ html .invoiceCancelRow-3s2UuC {
     transform: rotate(-90deg);
     width: 16px;
     height: 16px
+}
+
+.shop-3rE-Ir {
+    gap: 32px
+}
+
+.section-2z19FV,
+.shop-3rE-Ir {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column
+}
+
+.section-2z19FV {
+    gap: 24px
 }
 
 .divider-1bpIoX {
@@ -156440,4 +156521,4 @@ html .invoiceCancelRow-dVOR64 {
     flex-direction: column
 }
 
-/*# sourceMappingURL=40532.7e62dc62931e6db8e363.css.map*/
+/*# sourceMappingURL=40532.5aeee92c947585600ee9.css.map*/
