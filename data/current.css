@@ -106668,17 +106668,142 @@ html .tabBadge-h4HGed {
     left: -4px
 }
 
-.productCard-jomyWr {
-    display: grid;
-    grid-template-columns: 1fr 36px;
-    background: var(--background-secondary);
-    border-radius: 16px;
+.lineClamp1-3k0IDe {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    min-width: 0
+}
+
+.lineClamp2Plus-2imq8R {
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
     overflow: hidden
 }
 
-.productThumbnail-5xJTjt {
+.showHideButton-1X9tSS {
+    cursor: pointer
+}
+
+.productCard-10T4y5 {
+    width: 340px;
+    background: var(--background-secondary);
+    border-radius: 8px;
+    overflow: hidden
+}
+
+.productThumbnailContainer-iSvWHI {
+    position: relative
+}
+
+.productThumbnail-2PeX7X {
+    width: 340px;
+    height: 190px;
+    -o-object-fit: cover;
+    object-fit: cover
+}
+
+.purchaseToUnlockBadge-A3TLAq {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    gap: 6px;
+    padding: 4px 12px;
+    border-radius: 30px;
+    color: var(--white-500);
+    background: hsl(var(--black-500-hsl)/.6);
+    white-space: nowrap
+}
+
+.lockIcon-2PpbsO {
+    width: 16px;
+    height: 16px
+}
+
+.productDetails-18hXGG {
+    display: grid;
+    gap: 4px;
+    padding: 16px;
+    border-bottom: 1px solid var(--background-modifier-accent)
+}
+
+.productDescription-WCjjQk {
+    white-space: pre-wrap
+}
+
+.purchaseDetails-32ByvF {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    padding: 16px
+}
+
+.productActionButton-31AgRf {
+    grid-area: 1/2/3/3
+}
+
+.showHideButton-25bHRG {
+    padding-top: 2px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    gap: 6px;
+    color: var(--interactive-hover)
+}
+
+.badge-1hTRAi {
+    padding: 4px 8px;
+    border-radius: 4px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    gap: 6px;
+    color: var(--white-500)
+}
+
+.badgeIcon-sUUAoP {
+    fill: currentColor;
+    width: 16px;
+    height: 16px
+}
+
+.productCard-jomyWr {
+    position: relative
+}
+
+.productCardClickable-3xDCw- {
+    background: var(--background-secondary);
+    border-radius: 16px;
+    overflow: hidden;
+    cursor: pointer
+}
+
+.productThumbnailContainer-aQtDFJ {
     grid-area: 1/1/2/3;
     max-width: 100%
+}
+
+.productThumbnail-5xJTjt {
+    max-width: 100%;
+    height: 190px;
+    -o-object-fit: cover;
+    object-fit: cover
 }
 
 .productDetails-KQNd4O {
@@ -106691,23 +106816,30 @@ html .tabBadge-h4HGed {
     -webkit-box-direction: normal;
     -ms-flex-direction: column;
     flex-direction: column;
+    -webkit-box-align: start;
+    -ms-flex-align: start;
+    align-items: flex-start;
     gap: 8px;
-    padding: 16px 0 16px 16px;
+    padding: 16px 32px 16px 16px;
     overflow: hidden
 }
 
 .productName-3HL0K6 {
     white-space: nowrap;
     text-overflow: ellipsis;
-    overflow: hidden
+    overflow: hidden;
+    max-width: 100%
 }
 
 .productActionMenuButton-1nLyoz {
     width: 36px;
     height: 36px;
     padding: 6px;
-    margin-top: 6px;
-    cursor: pointer
+    cursor: pointer;
+    position: absolute;
+    top: 199px;
+    right: 0;
+    z-index: 100
 }
 
 .productActionMenuButton-1nLyoz .productActionMenuIcon-3-Oyyg {
@@ -106752,11 +106884,11 @@ html .tabBadge-h4HGed {
 }
 
 .theme-light .noProductsContainer-PcBbce {
-    background: var(--background-modifier-active) url(/assets/65c07347b34c72794126e8cf3649f314.svg) 16px 16px/702px 108px no-repeat
+    background: var(--background-modifier-active) url(/assets/d91b349a10655233f2dc2753f3c35265.png) 16px 16px/702px 108px no-repeat
 }
 
 .theme-dark .noProductsContainer-PcBbce {
-    background: var(--background-modifier-hover) url(/assets/cfcbb42a4e80c57dd4dfb7c5a8b7693e.svg) 16px 16px/702px 108px no-repeat
+    background: var(--background-modifier-hover) url(/assets/80b29ef69b7a8039d6f1276d5acc31eb.png) 16px 16px/702px 108px no-repeat
 }
 
 .productListingsHeader-2BIslS {
@@ -151574,6 +151706,69 @@ html .invoiceCancelRow-3s2UuC {
     color: var(--interactive-normal)
 }
 
+.modalRoot-ni21gU {
+    width: 1026px
+}
+
+.modalHeader-1rVO6t {
+    padding: 24px 16px 24px 24px;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    gap: 8px;
+    border-bottom: 1px solid var(--background-modifier-accent)
+}
+
+.headerText-VzcABJ {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    gap: 8px
+}
+
+.modalContent-4QmMqj {
+    padding: 24px 0;
+    background-color: var(--background-primary);
+    display: grid;
+    grid-template-columns: 1fr 380px
+}
+
+.productFields-3MlTpK {
+    padding: 0 24px;
+    gap: 24px;
+    border-right: 1px solid var(--background-modifier-accent)
+}
+
+.productFields-3MlTpK,
+.productPreview-T3FojC {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column
+}
+
+.productPreview-T3FojC {
+    padding: 0 16px 0 24px
+}
+
+.previewHeading-obFXK_ {
+    text-transform: uppercase
+}
+
+.footerActionButtons-3ZCd7x {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    gap: 12px
+}
+
 .header-1XFMZK {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -156715,4 +156910,4 @@ html .invoiceCancelRow-dVOR64 {
     flex-direction: column
 }
 
-/*# sourceMappingURL=40532.1a4decf3a576a35ce2ac.css.map*/
+/*# sourceMappingURL=40532.028e81b5cd416519038b.css.map*/
