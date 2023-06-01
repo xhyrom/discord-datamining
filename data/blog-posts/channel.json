@@ -12,6 +12,15 @@
   },
   "item": [
     {
+      "title": "Pride at Discord — Our Values and Our Actions",
+      "link": "https://discord.com/blog/pride-at-discord-our-values-and-our-actions",
+      "guid": "https://discord.com/blog/pride-at-discord-our-values-and-our-actions",
+      "description": "Discord supports the Pride movement celebrating the dignity, equality, power, and joy of LGBTQIA+ people and communities around the world. ",
+      "pubDate": "Thu, 01 Jun 2023 00:00:00 GMT",
+      "media:content": "https://uploads-ssl.webflow.com/5f9072399b2640f14d6a2bf4/6477d3863a7e148e268a9a53_Blog_1800x720%402x.png",
+      "media:thumbnail": "https://uploads-ssl.webflow.com/5f9072399b2640f14d6a2bf4/6477d3863a7e148e268a9a53_Blog_1800x720%402x.png"
+    },
+    {
       "title": "Bridging Mental Health Gaps for Gen Z",
       "link": "https://discord.com/blog/bridging-gen-z-mental-health-gaps",
       "guid": "https://discord.com/blog/bridging-gen-z-mental-health-gaps",
@@ -901,15 +910,6 @@
       "pubDate": "Tue, 23 Nov 2021 00:00:00 GMT",
       "media:content": "https://uploads-ssl.webflow.com/5f9072399b2640f14d6a2bf4/619bd45f7ba2bf5b4e115d6f_Nitro_Holiday_BlogHeader_21Nov.png",
       "media:thumbnail": "https://uploads-ssl.webflow.com/5f9072399b2640f14d6a2bf4/619bd45f7ba2bf5b4e115d6f_Nitro_Holiday_BlogHeader_21Nov.png"
-    },
-    {
-      "title": "How Discord Creates Insights from Trillions of Data Points",
-      "link": "https://discord.com/blog/how-discord-creates-insights-from-trillions-of-data-points",
-      "guid": "https://discord.com/blog/how-discord-creates-insights-from-trillions-of-data-points",
-      "description": "This is the story of how we turned petabytes of raw data into a structured data warehouse and the system we built to maintain it, internally referred to as Derived.",
-      "pubDate": "Thu, 18 Nov 2021 00:00:00 GMT",
-      "media:content": "https://uploads-ssl.webflow.com/5f9072399b2640f14d6a2bf4/619575c462b70073305c7cbb_Engineering-Blog-Header-Updated.png",
-      "media:thumbnail": "https://uploads-ssl.webflow.com/5f9072399b2640f14d6a2bf4/619575c462b70073305c7cbb_Engineering-Blog-Header-Updated.png"
     }
   ]
 }
