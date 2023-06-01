@@ -85122,14 +85122,30 @@ strong {
 
 .searchBar-2aylmZ {
     margin: 16px 20px 8px 30px;
+    -webkit-box-flex: 0;
+    -ms-flex: none;
+    flex: none;
     background: var(--bg-overlay-4, var(--background-tertiary))
 }
 
-.searchBar-2aylmZ,
 .sectionTitle-36PWt2 {
-    -webkit-box-flex: 0;
-    -ms-flex: none;
-    flex: none
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between
+}
+
+.clearButton-3ppKrD {
+    margin-right: 8px
 }
 
 .searchEmptyState-2rPnDR {
@@ -156604,4 +156620,4 @@ html .invoiceCancelRow-dVOR64 {
     flex-direction: column
 }
 
-/*# sourceMappingURL=40532.a3f00b374ea28f9f476b.css.map*/
+/*# sourceMappingURL=40532.03f9e69f9369c261c91d.css.map*/
