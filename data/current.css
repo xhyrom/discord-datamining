@@ -22597,6 +22597,10 @@ html.disable-forced-colors * {
     --status-danger: var(--red-400);
     --status-danger-background: var(--red-400);
     --status-danger-text: var(--white-500);
+    --status-dnd: var(--red-400);
+    --status-idle: var(--yellow-300);
+    --status-offline: var(--primary-360);
+    --status-online: var(--green-360);
     --status-positive: var(--green-360);
     --status-positive-background: var(--green-430);
     --status-positive-text: var(--white-500);
@@ -22775,6 +22779,10 @@ html.disable-forced-colors * {
     --status-danger: var(--red-430);
     --status-danger-background: var(--red-430);
     --status-danger-text: var(--white-500);
+    --status-dnd: var(--red-430);
+    --status-idle: var(--yellow-400);
+    --status-offline: var(--primary-460);
+    --status-online: var(--green-400);
     --status-positive: var(--green-400);
     --status-positive-background: var(--green-430);
     --status-positive-text: var(--white-500);
@@ -22960,6 +22968,10 @@ html.disable-forced-colors * {
     --status-danger: var(--red-400);
     --status-danger-background: var(--red-400);
     --status-danger-text: var(--white-500);
+    --status-dnd: var(--red-400);
+    --status-idle: var(--yellow-300);
+    --status-offline: var(--primary-360);
+    --status-online: var(--green-360);
     --status-positive: var(--green-360);
     --status-positive-background: var(--green-430);
     --status-positive-text: var(--white-500);
@@ -145059,6 +145071,7 @@ html .invoiceCancelRow-3s2UuC {
 }
 
 .card-2IXuOZ {
+    position: relative;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -145074,7 +145087,9 @@ html .invoiceCancelRow-3s2UuC {
     justify-content: center;
     width: 100%;
     height: 355px;
-    padding: 64px 32px 24px;
+    padding: 32px 24px;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
     border-radius: 8px;
     background-color: var(--background-floating);
     -webkit-box-shadow: var(--elevation-high);
@@ -145094,7 +145109,70 @@ html .invoiceCancelRow-3s2UuC {
 .body-1I77SW {
     -webkit-box-flex: 1;
     -ms-flex: 1;
-    flex: 1
+    flex: 1;
+    z-index: 1;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    gap: 16px
+}
+
+.body-1I77SW.animated-3fs_JL {
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    padding: 16px 12px
+}
+
+.body-1I77SW.collected-2ui73A {
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center
+}
+
+.banner-1Wc-A5 {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 144px;
+    overflow: hidden;
+    background-color: var(--black-500);
+    border-top-right-radius: 8px;
+    border-top-left-radius: 8px
+}
+
+.avatar-3eYlVC {
+    margin-top: 56px
+}
+
+.headings-2hfLYU {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    gap: 8px
+}
+
+.button-1ETBUz {
+    color: var(--white-500)
+}
+
+.button-1ETBUz.animated-3fs_JL {
+    background: -webkit-gradient(linear, left top, right top, from(hsl(269, calc(var(--saturation-factor, 1)*52.7%), 52.7%)), color-stop(hsl(296, calc(var(--saturation-factor, 1)*50%), 51.4%)), to(hsl(325, calc(var(--saturation-factor, 1)*31.7%), 51.8%)));
+    background: linear-gradient(90deg, hsl(269, calc(var(--saturation-factor, 1)*52.7%), 52.7%), hsl(296, calc(var(--saturation-factor, 1)*50%), 51.4%), hsl(325, calc(var(--saturation-factor, 1)*31.7%), 51.8%));
+    opacity: 1
 }
 
 .buttonInner-1T3drB {
@@ -145114,6 +145192,12 @@ html .invoiceCancelRow-3s2UuC {
 .buttonIcon-2ZQTCd {
     width: 16px;
     height: 16px
+}
+
+.checkmarkHeavy-1fuP4m {
+    color: var(--interactive-active);
+    width: 40px;
+    height: 40px
 }
 
 .countdown-1Wc7y- {
@@ -156631,4 +156715,4 @@ html .invoiceCancelRow-dVOR64 {
     flex-direction: column
 }
 
-/*# sourceMappingURL=40532.5e5459f9109ba7931234.css.map*/
+/*# sourceMappingURL=40532.1a4decf3a576a35ce2ac.css.map*/
