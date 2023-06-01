@@ -6184,25 +6184,6 @@
   {
     "data": {
       "kind": "user",
-      "id": "2023-05_premium_promo_removal",
-      "label": "Premium Promo Removal Experiment",
-      "description": [
-        "Control",
-        "Treatment 1: Users will not see the premium promo nagbar"
-      ],
-      "hash": 3351255926,
-      "buckets": [
-        0,
-        1
-      ],
-      "config_keys": [
-        "enabled"
-      ]
-    }
-  },
-  {
-    "data": {
-      "kind": "user",
       "id": "2023-05_safety_user_sentiment",
       "label": "Safety User Sentiment Feedback Eligible",
       "description": [
