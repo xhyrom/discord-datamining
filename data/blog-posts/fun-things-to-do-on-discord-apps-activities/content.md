@@ -39,7 +39,7 @@
                 <div><img src="https://assets-global.website-files.com/5f9072399b2640f14d6a2bf4/64767317d303820190276281_73c51ae1.png" alt="The Cappuccino bot asking a question to the server: “What have you been up to today?” Three users have responded so far. "></div>
             </figure>
             <p>Cappuccino is an app that prompts everyone with a specific question to answer. Their answers are called “beans,” and once everyone answers the question, these beans are brewed together in one summary written just for your community, called a “cappuccino!”&nbsp;</p>
-            <p>Use the <strong>/cappuccino </strong>command to ask everyone a question of your own, or use the <strong>/coffee-break</strong> command to ask everyone “what they have been up to." Don’t know what to ask? Brew up a <strong>/randomccino</strong> to ask the community a random question that’s collected and turned into a summary.&nbsp;</p>
+            <p>Use the <strong>/cappuccino </strong>command to ask everyone a question of your own, or use the <strong>/coffee-break</strong> command to ask everyone what they've been up to. Don’t know what to ask? Brew up a <strong>/randomccino</strong> to ask the community a random question that’s collected and turned into a summary.&nbsp;</p>
             <p>So whether you're a coffee connoisseur or just looking for a fun and engaging way to connect with others, Cappuccino has something for everyone; just grab a cup of your favorite brew and start up some coffee-fueled conversations!<br></p>
             <p>Open up your cafe and <a href="https://canary.discord.com/application-directory/1103981956267507712">add the app</a> to your server now.<br>‍</p>
         </div>
