@@ -77139,7 +77139,6 @@ strong {
 }
 
 .container-2giAcK {
-    margin: -8px 0 8px 8px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -77147,7 +77146,9 @@ strong {
     -webkit-box-direction: normal;
     -ms-flex-direction: column;
     flex-direction: column;
-    cursor: pointer
+    cursor: pointer;
+    padding: 6px 0 7px 8px;
+    position: relative
 }
 
 .container-2giAcK:hover .progressBar-2yl2pi {
@@ -77156,6 +77157,15 @@ strong {
     background-size: 300% 100%;
     -webkit-animation: progressPulse-2EeieX 2s linear infinite;
     animation: progressPulse-2EeieX 2s linear infinite
+}
+
+.container-2giAcK:after {
+    bottom: 0;
+    content: "";
+    border-bottom: 1px solid var(--background-modifier-accent);
+    left: 8px;
+    position: absolute;
+    right: 0
 }
 
 .textArea-7J7xQx {
@@ -156910,4 +156920,4 @@ html .invoiceCancelRow-dVOR64 {
     flex-direction: column
 }
 
-/*# sourceMappingURL=40532.028e81b5cd416519038b.css.map*/
+/*# sourceMappingURL=40532.42066188400fbfb3c491.css.map*/
