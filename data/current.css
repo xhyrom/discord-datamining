@@ -45127,7 +45127,10 @@ input[type=checked]:focus-visible+.label-3TDpbn {
 }
 
 .richTag-20_n21 {
-    background-color: var(--background-secondary-alt)
+    background-color: var(--background-secondary-alt);
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden
 }
 
 .medium-13kyaW .richTag-20_n21,
@@ -45145,13 +45148,17 @@ input[type=checked]:focus-visible+.label-3TDpbn {
 }
 
 .tagLabel-1CV02L {
-    padding-left: 6px
+    padding-left: 6px;
+    overflow: hidden;
+    text-overflow: ellipsis
 }
 
 .tagRoleColor-1rZDyG {
     height: 8px;
     width: 8px;
-    border-radius: 50%
+    border-radius: 50%;
+    -ms-flex-negative: 0;
+    flex-shrink: 0
 }
 
 .close-3-lUJg {
@@ -156624,4 +156631,4 @@ html .invoiceCancelRow-dVOR64 {
     flex-direction: column
 }
 
-/*# sourceMappingURL=40532.0500b3f3de0ce560f3b0.css.map*/
+/*# sourceMappingURL=40532.5e5459f9109ba7931234.css.map*/
