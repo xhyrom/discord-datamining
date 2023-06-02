@@ -134078,6 +134078,11 @@ html .invoiceCancelRow-3s2UuC {
     transform: translateY(-40px)
 }
 
+.activityCard-3EABg3:focus .activityCardButton-7obsqs,
+.activityCard-3EABg3:hover .activityCardButton-7obsqs {
+    background-color: var(--brand-experiment)
+}
+
 .activityCardReducedMotion-20YSCz {
     -webkit-transition: -webkit-transform 0ms;
     transition: -webkit-transform 0ms;
@@ -134108,6 +134113,10 @@ html .invoiceCancelRow-3s2UuC {
 .activityCardParticipants-1pfRTV {
     margin-top: 2px;
     color: var(--interactive-normal)
+}
+
+.activityCardButton-7obsqs {
+    margin-top: 16px
 }
 
 .activityCardTagContainer-NNluK2 {
@@ -156928,4 +156937,4 @@ html .invoiceCancelRow-dVOR64 {
     flex-direction: column
 }
 
-/*# sourceMappingURL=40532.47f03b0666e07f6b7d00.css.map*/
+/*# sourceMappingURL=40532.b088c26969ce12db7bef.css.map*/
