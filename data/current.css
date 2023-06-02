@@ -134111,6 +134111,13 @@ html .invoiceCancelRow-3s2UuC {
     background-color: var(--brand-experiment)
 }
 
+.activityCard-3EABg3:focus .activityCardSocialProofContainer-Mx8Pc3,
+.activityCard-3EABg3:focus .activityCardTagContainer-NNluK2,
+.activityCard-3EABg3:hover .activityCardSocialProofContainer-Mx8Pc3,
+.activityCard-3EABg3:hover .activityCardTagContainer-NNluK2 {
+    opacity: 0
+}
+
 .activityCardReducedMotion-20YSCz {
     -webkit-transition: -webkit-transform 0ms;
     transition: -webkit-transform 0ms;
@@ -134147,8 +134154,29 @@ html .invoiceCancelRow-3s2UuC {
     margin-top: 16px
 }
 
+.activityCardUsersHavePlayedContainer-3bY-sq {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    gap: 8px
+}
+
+.activityCardUsersHavePlayedText-24oDJc {
+    line-break: break-all
+}
+
+.activityCardSocialProofContainer-Mx8Pc3,
 .activityCardTagContainer-NNluK2 {
     margin-top: 16px;
+    opacity: 1;
+    -webkit-transition: opacity .25s;
+    transition: opacity .25s
+}
+
+.activityCardTagContainer-NNluK2 {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -157100,4 +157128,4 @@ html .invoiceCancelRow-dVOR64 {
     flex-direction: column
 }
 
-/*# sourceMappingURL=40532.06c662c912e55c819b99.css.map*/
+/*# sourceMappingURL=40532.8a786dc11a83e2a4dc0c.css.map*/
