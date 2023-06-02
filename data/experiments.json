@@ -1391,12 +1391,7 @@
         6
       ],
       "config_keys": [
-        "showRedesign",
-        "combineGuildsAndMessages",
-        "appNavbarAlwaysVisible",
-        "keepLastChannel",
-        "recentChannels",
-        "launchIntoLastChannel"
+        "enabled"
       ]
     }
   },
@@ -1425,12 +1420,7 @@
         6
       ],
       "config_keys": [
-        "showRedesign",
-        "combineGuildsAndMessages",
-        "appNavbarAlwaysVisible",
-        "keepLastChannel",
-        "recentChannels",
-        "launchIntoLastChannel"
+        "enabled"
       ]
     }
   },
