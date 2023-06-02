@@ -112319,6 +112319,17 @@ html .tabBadge-h4HGed {
     color: var(--red-400)
 }
 
+.actionItemContainer-fTh0zw,
+.resourceChannelContainer-2asBW8 {
+    margin-top: 12px
+}
+
+.actionItemError-1c-nSc,
+.resourceChannelError-2GeKtv {
+    border: 2px solid var(--red-400);
+    margin-bottom: 4px
+}
+
 .actionItem-2aVT03,
 .resourceChannel-26Ed-C {
     position: relative;
@@ -112333,8 +112344,7 @@ html .tabBadge-h4HGed {
     gap: 16px;
     border-radius: 12px;
     background: var(--background-secondary);
-    width: 100%;
-    margin-top: 12px
+    width: 100%
 }
 
 .actionItem-2aVT03,
@@ -157049,4 +157059,4 @@ html .invoiceCancelRow-dVOR64 {
     flex-direction: column
 }
 
-/*# sourceMappingURL=40532.c58eda827c96e97ffe47.css.map*/
+/*# sourceMappingURL=40532.ea73ae64d68b446a5f2a.css.map*/
