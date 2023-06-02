@@ -2,9 +2,11 @@
 <p class="wysiwyg-text-align-center"><span style="font-weight: 400;"><img src="https://support.discord.com/hc/article_attachments/14844781040663" alt="2023-EGS-EN-mega-sale-discord-item-native-IG-stories-image_1.jpg" width="336" height="597"></span></p>
 <p id="docs-internal-guid-631becc8-7fff-1bf9-a560-9f108585fe3d"><span class="wysiwyg-font-size-large"><strong>Promotion Summary</strong></span></p>
 <p><strong>Offer Details:</strong> 1 month of free Discord Nitro</p>
-<p><strong>Who is Eligible: </strong>Users who have not had an active Discord Nitro subscription on their accounts in the past 12 months are eligible. If a user currently has a Nitro Basic, Nitro Classic, or Server Boosting only subscription active on their account, redeeming this promotion will override that subscription.</p>
+<p><strong>Who is Eligible: </strong>Users who have not had an active Discord Nitro subscription on their accounts in the past 12 months are eligible. </p>
+<p id="docs-internal-guid-b110cde2-7fff-719d-9274-105a0c00e472">Users who previously had a Discord Nitro subscription and currently hold a Nitro Classic or Nitro Basic subscription that has been active for less than 12 months are ineligible.</p>
+<p>If a user currently has a Nitro Basic, Nitro Classic, or Server Boosting only subscription active on their account and you’ve never had a Nitro subscription, redeeming this promotion will override that subscription.</p>
 <p>We will not be able to refund any leftover subscription time from those, and the user will be forfeiting the remainder of the existing sub when activating the 1 month Nitro trial.</p>
-<p>This promotion is only available in certain regions. If you receive an "Unknown Gift Code" error during the claim/redemption process, you are not eligible to redeem this promotion. You can learn more at this<a href="https://support.discord.com/hc/en-us/articles/4708041338391" target="_blank" rel="noopener"> Help Center article.</a></p>
+<p>This promotion is only available in certain regions. If you receive an "Unknown Gift Code" error during the claim/redemption process, you are not eligible to redeem this promotion. You can learn more at this<a href="https://support.discord.com/hc/en-us/articles/4708041338391" target="_blank" rel="noopener noreferrer"> Help Center article.</a></p>
 <p><strong>Requirements:</strong> Claim through an email from the Epic Games Store by June 7, 2023 (11:00am EDT), and redeem in Discord account by July 7, 2023 (11:59pm EDT).</p>
 <p><strong>Subscription:</strong> After the 1 month free trial period, your Nitro subscription will convert to a monthly recurring subscription, and Discord will bill your payment method until you cancel it. You can cancel at any time in your Discord User Settings.</p>
 <h2><strong>What does this article cover?</strong></h2>
@@ -37,15 +39,15 @@
     </li>
 </ul>
 <h1 id="h_01FB7TZG19PE7P9N0HBHZBWWS1">What is Discord Nitro?</h1>
-<p><span id="docs-internal-guid-e91283be-7fff-a288-245c-9d30eb8d79dd">Discord <a href="https://support.discord.com/hc/en-us/articles/115000435108" target="_blank" rel="noopener">Nitro</a> is our subscription plan that gives you access to special perks that’ll make your time on Discord as fun as ever! Personalize and enhance your experience with popular perks like HD streaming (up to 4K and 60fps), 500MB file uploads, profile and avatar customizations, 2 free Server Boosts, and more:</span></p>
+<p><span id="docs-internal-guid-e91283be-7fff-a288-245c-9d30eb8d79dd">Discord <a href="https://support.discord.com/hc/en-us/articles/115000435108" target="_blank" rel="noopener noreferrer">Nitro</a> is our subscription plan that gives you access to special perks that’ll make your time on Discord as fun as ever! Personalize and enhance your experience with popular perks like HD streaming (up to 4K and 60fps), 500MB file uploads, profile and avatar customizations, 2 free Server Boosts, and more:</span></p>
 <ul>
-    <li><a href="https://support.discord.com/hc/en-us/articles/360036479811" target="_blank" rel="noopener">Custom Emojis</a></li>
-    <li><a href="https://support.discord.com/hc/en-us/articles/207260127" target="_blank" rel="noopener">Discord App Color Themes</a></li>
-    <li><a href="https://support.discord.com/hc/en-us/articles/12102061808663" target="_blank" rel="noopener">Super Reactions</a></li>
-    <li><a href="https://support.discord.com/hc/en-us/articles/13410113109911" target="_blank" rel="noopener">Avatar Decorations</a></li>
-    <li><a href="https://support.discord.com/hc/en-us/articles/4409388345495" target="_blank" rel="noopener">Unique Server Profiles</a></li>
-    <li><a href="https://support.discord.com/hc/en-us/articles/360028038352" target="_blank" rel="noopener">Server Boosts</a></li>
-    <li><a href="https://support.discord.com/hc/en-us/articles/115000435108" target="_blank" rel="noopener">More Nitro &amp; Nitro Basic perks</a></li>
+    <li><a href="https://support.discord.com/hc/en-us/articles/360036479811" target="_blank" rel="noopener noreferrer">Custom Emojis</a></li>
+    <li><a href="https://support.discord.com/hc/en-us/articles/207260127" target="_blank" rel="noopener noreferrer">Discord App Color Themes</a></li>
+    <li><a href="https://support.discord.com/hc/en-us/articles/12102061808663" target="_blank" rel="noopener noreferrer">Super Reactions</a></li>
+    <li><a href="https://support.discord.com/hc/en-us/articles/13410113109911" target="_blank" rel="noopener noreferrer">Avatar Decorations</a></li>
+    <li><a href="https://support.discord.com/hc/en-us/articles/4409388345495" target="_blank" rel="noopener noreferrer">Unique Server Profiles</a></li>
+    <li><a href="https://support.discord.com/hc/en-us/articles/360028038352" target="_blank" rel="noopener noreferrer">Server Boosts</a></li>
+    <li><a href="https://support.discord.com/hc/en-us/articles/115000435108" target="_blank" rel="noopener noreferrer">More Nitro &amp; Nitro Basic perks</a></li>
 </ul>
 <h1 id="h_01FCFMZ4DN4Y1KKEK4CKSMSAXH">How do I claim the Nitro Promo in the Epic Games Store?</h1>
 <h3 id="docs-internal-guid-58695478-7fff-5014-cddd-b60140e1ad78">In order to claim this Nitro trial promotion, you must have an Epic Games Store account.</h3>
@@ -59,6 +61,8 @@
 <h2 id="h_01FCZN7DAE284PT52X250Q8VN6">Eligibility for Redeeming the Nitro Trial</h2>
 <h3><span style="font-weight: 400;">This promotion is only available in certain regions. If you receive an "Unknown Gift Code" error during the claim/redemption process, you are not eligible to redeem this promotion. You can learn more at this <a href="https://support.discord.com/hc/en-us/articles/4708041338391" target="_blank" rel="noopener noreferrer">Help Center article.</a></span></h3>
 <p><span id="docs-internal-guid-75f616c3-7fff-0b92-441f-f35adf4736ea">Users who have not had an active Nitro subscription on their Discord accounts in the past 12 months are eligible to redeem this Nitro promotion.</span></p>
+<p id="docs-internal-guid-3aa9978f-7fff-e3c6-9e7a-ac8c4592b5ac">Users who previously had a Discord Nitro subscription and currently hold a Nitro Classic or Nitro Basic subscription that has been active for less than 12 months are ineligible.</p>
+<p>If a user currently has a Nitro Basic, Nitro Classic, or Server Boosting only subscription active on their account and you’ve never had a Nitro subscription, redeeming this promotion will override that subscription.</p>
 <h2 id="h_01FCFN3WP4XMA0KH15C7X30TP1">Step by Step Redeem Instructions</h2>
 <p><span style="font-weight: 400;">If you're eligible and ready to redeem this Nitro subscription on your own Discord account, you can follow these steps below to redeem the promo.</span></p>
 <h3>
@@ -118,13 +122,15 @@
     </li>
 </ul>
 <h2 id="h_01FCZN7TQYJPEDJPZ8KT5GZM8K"><span style="font-weight: 400;">What if I am an Active Nitro Basic, Nitro Classic, or Server Boosting Subscriber? </span></h2>
-<p><span style="font-weight: 400;"><span id="docs-internal-guid-711ddb14-7fff-f36e-f621-0eb8ea8c1e13">Just to clarify - if you currently have a Nitro Basic, Nitro Classic, or Server Boosting subscription, you will be eligible to claim this promotion and your current subscription will be replaced with the 1 month Nitro subscription.</span></span></p>
+<p id="docs-internal-guid-a6cad024-7fff-ecf6-ad86-13ca6edd48ef">Just to clarify - if you previously had a Discord Nitro subscription and currently hold a Nitro Classic or Nitro Basic subscription that has been active for less than 12 months, you are ineligible to redeem this promotion.</p>
+<p>So long as you currently have a Nitro Basic, Nitro Classic, or Server Boosting only subscription active on your account and you’ve never had a Nitro subscription, you will be able to redeem this promotion and replace it with the 1 month Nitro subscription.</p>
+<p><span style="font-weight: 400;"><span id="docs-internal-guid-711ddb14-7fff-f36e-f621-0eb8ea8c1e13"> </span></span></p>
 <h3>
     <span class="wysiwyg-color-red110"><strong>HOWEVER, please note: <br></strong></span><span class="wysiwyg-color-red110" style="font-weight: 400;">- By choosing to activate this 1 month trial, you will lose any features associated with your current subscriptions, and **<strong>you will not receive a refund for any remaining value on your current subscription</strong>**. </span>
 </h3>
 <p><span style="font-weight: 400;"><span id="docs-internal-guid-cf6993f7-7fff-d292-9255-9fc93b3b33be">At the end of the promotion period, you'll be converted to a paying Nitro subscription per month unless you cancel your subscription.</span></span></p>
 <h1 id="h_01FCFN0ZS87Z8XQFSYJV5EAWWQ"><span style="font-size: 1.2em; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif;">How do I share my Code with a Friend?</span></h1>
-<p id="docs-internal-guid-1d2ed073-7fff-00ab-a08a-c98b5f7f1a8b">If you've had a Nitro subscription previously on your Discord account in the past 12 months and you're unable to redeem the Nitro subscription link, you can share this link with a friend to use instead.</p>
+<p id="docs-internal-guid-1d2ed073-7fff-00ab-a08a-c98b5f7f1a8b"><span id="docs-internal-guid-f9b008bf-7fff-3208-5100-f78d2e94a370">If you're unable to redeem the Nitro subscription link, you can share this link with a friend to use instead.</span></p>
 <p>After you find the email from the Epic Games Store with the promotion link, you can directly copy the promotion link and send it to a friend. <strong>We recommend sending the link in a private direct message. Make sure your friend redeems the code by July 7, 2023 (11:59pm EDT)</strong>.</p>
 <h1 id="h_01FB7V0MPXX1S4TS09KPTZ1WSZ">Frequently Asked Questions</h1>
 <p>We know there's a lot of information to unpack on this promotion above, so we've also broken down this information in this FAQ section as well too.</p>
@@ -152,10 +158,12 @@
 <p><span class="wysiwyg-color-blue80 wysiwyg-font-size-large"><strong>Q: Who can claim this promotion?</strong></span></p>
 <p><span style="font-weight: 400;"><strong><span id="docs-internal-guid-93f21ae1-7fff-e944-7888-7659adb236f3">A: </span></strong>You must have an Epic Games Store account to claim this promotion through an email sent from the Epic Games Store to your email associated with your Epic Games Store account.</span></p>
 <p><span class="wysiwyg-color-blue80 wysiwyg-font-size-large"><strong>Q: Who can redeem this Nitro trial to their Discord account?</strong></span></p>
-<p id="docs-internal-guid-bc8b2cfa-7fff-1408-c08b-86a9120af17e"><strong>A: </strong>Only users who haven’t had a Nitro subscription on their Discord accounts in the past 12 months are able to redeem this Nitro trial.</p>
+<p id="docs-internal-guid-bc8b2cfa-7fff-1408-c08b-86a9120af17e"><strong>A: U</strong>ers who haven’t had a Nitro subscription on their Discord accounts in the past 12 months are able to redeem this Nitro trial.</p>
+<p><span id="docs-internal-guid-8ae3c7a3-7fff-94c8-862a-c9066ffe96b7">Additionally, users who previously had a Discord Nitro subscription and currently hold a Nitro Classic or Nitro Basic subscription that has been active for less than 12 months are ineligible.</span></p>
 <p>This promotion is only available in certain regions. If you receive an "Unknown Gift Code" error during the claim/redemption process, you are not eligible to redeem this promotion. You can learn more at this<a href="https://support.discord.com/hc/en-us/articles/4708041338391"> <span class="wysiwyg-underline" style="color: #1155cc;">Help Center article.</span></a></p>
 <p><strong><span class="wysiwyg-color-blue80 wysiwyg-font-size-large">Q: What if I'm a current or previous Nitro Classic subscriber or a Server Boost subscriber? Can I also take part in this promotion? </span></strong></p>
-<p id="docs-internal-guid-67f032b4-7fff-75f2-eb39-19c8d9f755f7"><strong>A: </strong>Yes, if you currently have a Nitro Basic, Nitro Classic, or Server Boosting subscription, you will be eligible to claim this promotion and your current subscription will be replaced with the 1 month Nitro subscription.</p>
+<p><strong>A: </strong>If you previously had a Discord Nitro subscription and currently hold a Nitro Classic or Nitro Basic subscription that has been active for less than 12 months, you are ineligible to redeem this promotion.</p>
+<p>So long as you currently have a Nitro Basic, Nitro Classic, or Server Boosting only subscription active on your account and you’ve never had a Nitro subscription, you will be able to redeem this promotion and replace it with the 1 month Nitro subscription.</p>
 <h3>
     <span class="wysiwyg-color-red110"><strong>HOWEVER, please note: <br></strong></span><span class="wysiwyg-color-red110" style="font-weight: 400;">- By choosing to activate this 1 month trial, you will lose any features associated with your current subscriptions, and **<strong>you will not receive a refund for any remaining value on your current subscription</strong>**. </span>
 </h3>
@@ -173,7 +181,7 @@
 <p><strong><span class="wysiwyg-color-blue80 wysiwyg-font-size-large">Q: What if I didn't receive an email from Epic Games Store with the Nitro promo link, even if I have an Epic Games Store account?</span></strong></p>
 <p id="docs-internal-guid-755dbe8c-7fff-db09-b02e-f632bc2e3a28"><strong>A:</strong> In order to receive an email from Epic Games Store with the Nitro promo link, you must have an Epic Games Store account.</p>
 <p>Additionally, make sure that you've opted to receive marketing emails from the Epic Games Store. If you've unsubscribed, you sadly won't be able to see this offer. </p>
-<p>If you believe you are eligible for the promotion, contact Epic Games Store's support team:<a href="https://www.epicgames.com/help/en-US/" target="_blank" rel="noopener"> https://www.epicgames.com/help/en-US/</a></p>
+<p>If you believe you are eligible for the promotion, contact Epic Games Store's support team:<a href="https://www.epicgames.com/help/en-US/" target="_blank" rel="noopener noreferrer"> https://www.epicgames.com/help/en-US/</a></p>
 <p><strong><span class="wysiwyg-color-blue80 wysiwyg-font-size-large">Q: I see a Sad Trombone error when I try to redeem my Nitro promo link.</span></strong></p>
 <p id="docs-internal-guid-ddf4b22b-7fff-1d63-3b08-74b962444009"><strong>A: </strong>Would you happen to be entering this Nitro promo link from the promotion into the Discord Gift Inventory or as a link within Discord chat?</p>
 <p>If so, this is the incorrect method for redeeming the Nitro promo link, and you will see an error when attempting to redeem the promotion.</p>
