@@ -9898,7 +9898,7 @@
             {
               "type": "guild_member_count_range",
               "min_count": 1,
-              "max_count": 50
+              "max_count": 200
             }
           ]
         }
