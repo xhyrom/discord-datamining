@@ -70305,7 +70305,8 @@ strong {
 
 .welcomeMessageContent-1ZqlKh {
     padding: 4px 16px 16px;
-    overflow-wrap: anywhere
+    overflow-wrap: anywhere;
+    min-height: 56px
 }
 
 .ownerIcon-rfHt88 {
@@ -118740,6 +118741,10 @@ input::-webkit-outer-spin-button {
     gap: 4px
 }
 
+.inlineSwitch-3LDwbT {
+    margin-left: 16px
+}
+
 .header-z3RQ7A,
 .subheader-qX60do {
     margin-bottom: 8px
@@ -157083,4 +157088,4 @@ html .invoiceCancelRow-dVOR64 {
     flex-direction: column
 }
 
-/*# sourceMappingURL=40532.45132b36269c8ae881c0.css.map*/
+/*# sourceMappingURL=40532.e17a7fc6e5900f8c1988.css.map*/
