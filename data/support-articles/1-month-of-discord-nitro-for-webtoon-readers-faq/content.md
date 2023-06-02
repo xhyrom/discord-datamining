@@ -2,7 +2,9 @@
 <p class="wysiwyg-text-align-center"><img src="https://support.discord.com/hc/article_attachments/14485372011927" alt="NitroWebtoon_BlogHeader.png"></p>
 <p><span class="wysiwyg-font-size-large"><strong>Promotion Summary</strong></span></p>
 <p><strong>Offer Details:</strong> 1 month of free Discord Nitro</p>
-<p><strong>Who is Eligible: </strong>Users who have not had an active Discord Nitro subscription on their accounts in the past 12 months are eligible. If a user currently has a Nitro Basic, Nitro Classic, or Server Boosting only subscription active on their account, redeeming this promotion will override that subscription.</p>
+<p><strong>Who is Eligible: </strong>Users who have not had an active Discord Nitro subscription on their accounts in the past 12 months are eligible. </p>
+<p id="docs-internal-guid-3ad619d8-7fff-5b42-0888-de525d034391">Users who previously had a Discord Nitro subscription and currently hold a Nitro Classic or Nitro Basic subscription that has been active for less than 12 months are ineligible.</p>
+<p>If a user currently has a Nitro Basic, Nitro Classic, or Server Boosting only subscription active on their account and you’ve never had a Nitro subscription, redeeming this promotion will override that subscription.</p>
 <p>We will not be able to refund any leftover subscription time from Nitro Basic, Nitro Classic, and Server Boosting subscriptions, and the user will be forfeiting the remainder of the existing sub when activating the 1 month Nitro trial.</p>
 <p>This promotion is unavailable in Russia. If you receive an "Unknown Gift Code" error during the claim/redemption process, you are not eligible to redeem this promotion. You can learn more at this<a href="https://support.discord.com/hc/en-us/articles/4708041338391" target="_blank" rel="noopener noreferrer"> Help Center article.</a></p>
 <p><strong>Requirements:</strong> Claim through June 8th, 2023 (11:59pm PT), and redeem in Discord account by August 20, 2023 (11:59pm PT).</p>
@@ -66,6 +68,8 @@
 <h3>This promotion is unavailable in Russia. If you receive an "Unknown Gift Code" error during the claim/redemption process, you are not eligible to redeem this promotion. You can learn more at this<a href="https://support.discord.com/hc/en-us/articles/4708041338391" target="_blank" rel="noopener noreferrer"> Help Center article.</a>
 </h3>
 <p>Users who have not had an active Nitro subscription on their Discord accounts in the past 12 months are eligible to redeem this Nitro promotion.</p>
+<p id="docs-internal-guid-90c2c0ac-7fff-60fa-d870-7fa3cd3a2940">Users who previously had a Discord Nitro subscription and currently hold a Nitro Classic or Nitro Basic subscription that has been active for less than 12 months are ineligible.</p>
+<p>If a user currently has a Nitro Basic, Nitro Classic, or Server Boosting only subscription active on their account and you’ve never had a Nitro subscription, redeeming this promotion will override that subscription.</p>
 <h2 id="h_01H01P42SPKZ1PC9MZPWZ4NYW6">Step by Step Redeem Instructions</h2>
 <p>If you're eligible and ready to redeem this Nitro subscription on your own Discord account, you can follow these steps below to redeem the promo.</p>
 <h3>NOTE:<br>- Before redeeming Nitro, make sure you are logged in your own Discord account.<br>- If you accidentally redeemed the Nitro promo link on an account that is not yours, we are unable to provide you with another promo link.</h3>
@@ -119,11 +123,12 @@
     <li>After accepting the promo to your account, you'll now be automatically redirected to your <strong>Subscriptions</strong> tab in your User Settings to see your newly activated Nitro subscription on your account.</li>
 </ul>
 <h2 id="h_01H01PE7MWAR0SC21RYGQ68YE8">What if I am an Active Nitro Basic, Nitro Classic, or Server Boosting Subscriber?</h2>
-<p>If you currently have a Nitro Basic, Nitro Classic, or Server Boosting subscription, you will be eligible to claim this promotion and your current subscription will be replaced with the 1 month Nitro subscription.</p>
+<p id="docs-internal-guid-ff8cf346-7fff-e386-1202-cf62e48bd909">Just to clarify - if you previously had a Discord Nitro subscription and currently hold a Nitro Classic or Nitro Basic subscription that has been active for less than 12 months, you are ineligible to redeem this promotion.</p>
+<p>So long as you currently have a Nitro Basic, Nitro Classic, or Server Boosting only subscription active on your account and you’ve never had a Nitro subscription, you will be able to redeem this promotion and replace it with the 1 month Nitro subscription.</p>
 <h3>HOWEVER, please note:<br>- By choosing to activate this 1 month trial, you will lose any features associated with your current subscriptions, and **you will not receive a refund for any remaining value on your current subscription**.</h3>
 <p>At the end of the promotion period, you'll be converted to a paying Nitro subscription per month unless you cancel your subscription.</p>
 <h1 id="h_01H01P4R5H4G1W6JK0FRE4ACG5">How do I share my Code with a Friend?</h1>
-<p>If you've had a Nitro subscription previously on your Discord account in the past 12 months and you're unable to redeem the Nitro subscription link, you can share this link with a friend to use instead.</p>
+<p>If you're unable to redeem the Nitro subscription link, you can share this link with a friend to use instead.</p>
 <p>You can directly copy the Nitro link from the email and send it to a friend. <strong>We recommend sending the link in a private direct message. Make sure your friend redeems the code by August 20, 2023 (11:59pm PT).</strong></p>
 <h1 id="h_01H01P51CJFA0DN1SXBGYJSWBS">Frequently Asked Questions</h1>
 <p>We know there's a lot of information to unpack on this promotion above, so we've also broken down this information in this FAQ section as well too.</p>
@@ -151,10 +156,12 @@
 <p><strong>Q: Who can claim this promotion?</strong></p>
 <p><strong>A:</strong> WEBTOON readers who are logged into their accounts and read all 4 chapters of “<a href="https://go.webtoons.com/1fy0Nzqoxzb" target="_blank" rel="noopener noreferrer">Wumpus Wonderventures</a>” in the WEBTOON app will have the opportunity to start the process to receive the Discord Nitro trial code.</p>
 <p><strong>Q: Who can redeem this Nitro trial to their Discord account?</strong></p>
-<p><strong>A: </strong>Only users who haven’t had a Nitro subscription on their Discord accounts in the past 12 months are able to redeem this Nitro trial.</p>
+<p><strong>A: </strong>Users who haven’t had a Nitro subscription on their Discord accounts in the past 12 months are able to redeem this Nitro trial.</p>
+<p><span id="docs-internal-guid-74e7244a-7fff-541c-7ed9-e4aff054e91d">Additionally, users who previously had a Discord Nitro subscription and currently hold a Nitro Classic or Nitro Basic subscription that has been active for less than 12 months are ineligible.</span></p>
 <p>This promotion is unavailable in Russia. If you receive an "Unknown Gift Code" error during the claim/redemption process, you are not eligible to redeem this promotion. You can learn more at this<a href="https://support.discord.com/hc/en-us/articles/4708041338391" target="_blank" rel="noopener noreferrer"> Help Center article.</a></p>
 <p><strong>Q: What if I'm a current or previous Nitro Basic, Nitro Classic, or a Server Boost subscriber? Can I also take part in this promotion? </strong></p>
-<p><strong>A: </strong>Yes, if you currently have a Nitro Basic, Nitro Classic, or Server Boosting subscription, you will be eligible to claim this promotion and your current subscription will be replaced with the 1 month Nitro subscription.</p>
+<p><strong>A: </strong>If you previously had a Discord Nitro subscription and currently hold a Nitro Classic or Nitro Basic subscription that has been active for less than 12 months, you are ineligible to redeem this promotion.</p>
+<p>So long as you currently have a Nitro Basic, Nitro Classic, or Server Boosting only subscription active on your account and you’ve never had a Nitro subscription, you will be able to redeem this promotion and replace it with the 1 month Nitro subscription.</p>
 <h3>HOWEVER, please note:<br>- By choosing to activate this 1 month trial, you will lose any features associated with your current subscriptions, and **you will not receive a refund for any remaining value on your current subscription**.</h3>
 <p>At the end of the promotion period, you'll be converted to a paying Nitro subscription per month unless you cancel your subscription.</p>
 <h2 id="h_01H01P5TYKW0X4Y2B83Q4EY1TK">Payment Info and Subscription Questions</h2>
