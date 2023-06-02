@@ -150929,7 +150929,14 @@ html .invoiceCancelRow-3s2UuC {
 }
 
 .userRowAvatar-1_vHvb {
-    margin-right: 16px
+    margin-right: 16px;
+    -ms-flex-negative: 0;
+    flex-shrink: 0
+}
+
+.userRowSubText-yuEaUZ,
+.userRowText-fizOLo {
+    white-space: pre-wrap
 }
 
 .userRowSubText-yuEaUZ {
@@ -150943,7 +150950,9 @@ html .invoiceCancelRow-3s2UuC {
 }
 
 .userRowSubAvatar-SsGWIw {
-    margin-right: 4px
+    margin-right: 4px;
+    -ms-flex-negative: 0;
+    flex-shrink: 0
 }
 
 .permissionsForm-35gjPz:not(:last-of-type) {
@@ -157088,4 +157097,4 @@ html .invoiceCancelRow-dVOR64 {
     flex-direction: column
 }
 
-/*# sourceMappingURL=40532.e17a7fc6e5900f8c1988.css.map*/
+/*# sourceMappingURL=40532.931fb41fe8a9391f132a.css.map*/
