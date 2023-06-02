@@ -1,5 +1,5 @@
 <p><span style="font-weight: 400;">Looking to unleash more fun on Discord? Look no further! Nitro and Nitro Basic are subscriptions that unlock new features and perks on Discord so you can better express yourself and get the best quality settings we have to offer. </span></p>
-<h1><strong>What does this article cover?</strong></h1>
+<p><span class="wysiwyg-font-size-large"><strong>What this article covers:</strong></span></p>
 <ul>
     <li>
         <a href="#h_01GFV3NE6JPS6BRTX7XYQDJ0S4" target="_self">Nitro Plans</a>
@@ -33,7 +33,7 @@
         <strong>2 Boosts + 30% off extra Boosts:</strong><span style="font-weight: 400;"> You’ll get 2 </span><a href="https://support.discord.com/hc/en-us/articles/360028038352" target="_blank" rel="noopener noreferrer"><strong>Server Boosts</strong></a><span style="font-weight: 400;"> that you can apply to any servers. Plus, you’ll get 30% off any additional future Boost purchases. </span>
     </li>
     <li style="font-weight: 400;" aria-level="1">
-        <strong><a href="https://support.discord.com/hc/en-us/articles/4403147417623" target="_blank" rel="noopener noreferrer">Profile</a> Upgrades:</strong><span style="font-weight: 400;"> add an animated avatar, a banner image, a profile theme, and change your Discord Tag #s to personalize how you present yourself.</span>
+        <strong><a href="https://support.discord.com/hc/en-us/articles/4403147417623" target="_blank" rel="noopener noreferrer">Profile</a> Upgrades:</strong><span style="font-weight: 400;"> add an animated avatar, a banner image, and a profile theme to personalize how you present yourself.</span>
     </li>
     <li style="font-weight: 400;" aria-level="1">
         <strong><a href="https://support.discord.com/hc/en-us/articles/4409388345495" target="_blank" rel="noopener noreferrer">Server Profiles</a>:</strong><span style="font-weight: 400;"> Be who you want in every server by customizing the details in your profile for each server. </span>
