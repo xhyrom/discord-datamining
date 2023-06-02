@@ -156201,6 +156201,30 @@ html .invoiceCancelRow-3s2UuC {
     max-height: clamp(200px, calc(100vh - 80px), 660px)
 }
 
+.contentContainer-3Wqho9 {
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    text-align: center;
+    padding-top: 32px;
+    padding-bottom: 32px
+}
+
+.title-nCmP1j {
+    margin-top: 24px
+}
+
+.subtitle-2cmpKI {
+    margin-top: 8px
+}
+
 .modalContent-3VXVtH {
     padding-top: 30px;
     text-align: center
@@ -157059,4 +157083,4 @@ html .invoiceCancelRow-dVOR64 {
     flex-direction: column
 }
 
-/*# sourceMappingURL=40532.ea73ae64d68b446a5f2a.css.map*/
+/*# sourceMappingURL=40532.45132b36269c8ae881c0.css.map*/
