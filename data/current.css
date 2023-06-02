@@ -42198,6 +42198,12 @@ h6.title-1p9WyQ {
     gap: 2px
 }
 
+.spoiler-1ZTq3- {
+    -webkit-filter: blur(20px);
+    filter: blur(20px);
+    pointer-events: none
+}
+
 .invalidWrapper-wwtQW_ {
     display: block;
     position: relative;
@@ -157128,4 +157134,4 @@ html .invoiceCancelRow-dVOR64 {
     flex-direction: column
 }
 
-/*# sourceMappingURL=40532.fa0972b268f2c6c77332.css.map*/
+/*# sourceMappingURL=40532.0921f083a0307c656b53.css.map*/
