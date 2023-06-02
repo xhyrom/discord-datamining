@@ -7531,7 +7531,7 @@
         1
       ],
       "config_keys": [
-        "enabled"
+        "isBroadcastingEnabled"
       ]
     }
   },
