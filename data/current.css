@@ -42158,6 +42158,17 @@ h6.title-1p9WyQ {
     gap: 5px
 }
 
+.descriptionFooterAuthorContainer-3EjGqE {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    cursor: default
+}
+
+.authorName-2zj-6v {
+    margin-left: 2px
+}
+
 .mediaChannelIcon-2xptEZ {
     color: var(--text-muted);
     margin-right: 2px;
@@ -157038,4 +157049,4 @@ html .invoiceCancelRow-dVOR64 {
     flex-direction: column
 }
 
-/*# sourceMappingURL=40532.dec6f2f67ddc5cd2c308.css.map*/
+/*# sourceMappingURL=40532.c58eda827c96e97ffe47.css.map*/
