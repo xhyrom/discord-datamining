@@ -77179,6 +77179,10 @@ strong {
     animation: progressPulse-2EeieX 2s linear infinite
 }
 
+.containerWithMargin-1CVXAM {
+    margin-bottom: 12px
+}
+
 .container-2giAcK:after {
     bottom: 0;
     content: "";
@@ -157134,4 +157138,4 @@ html .invoiceCancelRow-dVOR64 {
     flex-direction: column
 }
 
-/*# sourceMappingURL=40532.0921f083a0307c656b53.css.map*/
+/*# sourceMappingURL=40532.c56fcdc5833034593e12.css.map*/
