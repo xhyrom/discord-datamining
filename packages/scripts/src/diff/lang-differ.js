@@ -3,7 +3,7 @@ import {
   buildString,
 } from "@xhyrom-forks/discord-datamining-lang-differ";
 import getLangStrings from "@xhyrom-forks/discord-datamining-lang-differ/getLangStrings.js";
-import getRoutesStrings from "@xhyrom-forks/discord-datamining-lang-differ/getRoutesStrings";
+import getRoutesStrings from "@xhyrom-forks/discord-datamining-lang-differ/getRoutesStrings.js";
 
 export function differStrings(file1, file2) {
   const filesLangStrings = [getLangStrings(file1), getLangStrings(file2)];
