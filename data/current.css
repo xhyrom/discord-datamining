@@ -11516,6 +11516,16 @@ html.decorate-links .lowSaturationUnderline-Z6CW6z {
     flex-shrink: 0
 }
 
+.canvas-14h5SW {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 10000;
+    pointer-events: none
+}
+
 [data-popout-root],
 html {
     --brand-experiment-100: var(--brand-100);
@@ -11614,19 +11624,6 @@ html.disable-forced-colors * {
 
 .statusText-2ojAyl {
     padding-left: .5rem
-}
-
-.spriteCanvas-1GzFop {
-    position: absolute;
-    width: 0;
-    height: 0;
-    left: -100%
-}
-
-.cannon-3-FQ-q {
-    position: absolute;
-    width: 100%;
-    height: 100%
 }
 
 .platform-osx .drag-2yz2Kd {
@@ -54666,14 +54663,6 @@ input[type=checked]:focus-visible+.label-3TDpbn {
     visibility: visible
 }
 
-.confettiCanvas-3YU5pM {
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 100%;
-    width: 100%
-}
-
 .soundInfo-1vWb45 {
     padding: 8px;
     display: -webkit-box;
@@ -66554,7 +66543,7 @@ strong {
     font-weight: 600
 }
 
-.badge-3kyklB {
+.badge-3vQJtN {
     pointer-events: none;
     border-radius: 50%;
     background-color: var(--interactive-normal);
@@ -67414,15 +67403,53 @@ strong {
     text-transform: uppercase
 }
 
-.messageHeader-P9CPNE {
-    padding: 16px 0 16px 16px;
-    -webkit-box-pack: justify;
-    -ms-flex-pack: justify;
-    justify-content: space-between
+.container-2d2-Ae {
+    background-color: var(--background-secondary);
+    -webkit-box-shadow: var(--elevation-stroke), var(--elevation-high);
+    box-shadow: var(--elevation-stroke), var(--elevation-high);
+    border-radius: 4px;
+    overflow: hidden;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    position: relative;
+    z-index: 0;
+    overflow-y: scroll
 }
 
-.messageHeader-P9CPNE,
-.messageInfo-16g7g4 {
+.headerText-1X99rY {
+    padding: 16px
+}
+
+.headerText-1X99rY,
+.messageHeader-NNVleu {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center
+}
+
+.messageHeader-NNVleu {
+    padding: 16px 0 16px 16px
+}
+
+.messageInfo-32Ly2Z {
+    gap: 16px
+}
+
+.messageInfo-32Ly2Z,
+.reminderActions-24MUot {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -67431,18 +67458,31 @@ strong {
     align-items: center
 }
 
-.messageInfo-16g7g4 {
-    gap: 16px
+.reminderActions-24MUot {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    gap: 8px
 }
 
-.messagePreview-20knvj {
+.clock-13K8Dk {
+    cursor: pointer;
+    color: var(--interactive-muted)
+}
+
+.clock-13K8Dk:hover {
+    color: var(--interactive-active)
+}
+
+.messagePreview-1tzyZI {
     margin-top: 8px;
     word-wrap: break-all;
     white-space: break-spaces;
     overflow: hidden
 }
 
-.from-ReZNZh {
+.from-1N16WV {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -67452,12 +67492,12 @@ strong {
     align-items: center
 }
 
-.guildIcon-3MNUDk {
+.guildIcon-2KIS37 {
     -ms-flex-negative: 0;
     flex-shrink: 0
 }
 
-.actions-3G8_7d {
+.actions-r-Vfzn {
     position: absolute;
     top: 16px;
     right: 16px;
@@ -67469,31 +67509,31 @@ strong {
     opacity: 0
 }
 
-.loadButton-1NP2gC {
+.loadButton-1rcckR {
     padding: 0 8px
 }
 
-.notes-154ncN {
+.notes-cN2B2d {
     background-color: var(--background-accent);
     border-radius: 4px
 }
 
-.disabledMessage-1LczSR {
+.disabledMessage-V9Xmyu {
     opacity: .4;
     max-height: 64px;
     overflow: hidden
 }
 
-.unloadedMessage-3BbMw4:hover .actions-3G8_7d {
+.unloadedMessage-2PNYC2:hover .actions-r-Vfzn {
     opacity: 1
 }
 
-.userAvatar-17cGPb {
+.userAvatar-UKkMBJ {
     -ms-flex-negative: 0;
     flex-shrink: 0
 }
 
-.messageContent-3riVSE {
+.messageContent-2jMEa0 {
     margin-left: 16px;
     -webkit-box-flex: 1;
     -ms-flex: 1;
@@ -126400,16 +126440,6 @@ input::-webkit-outer-spin-button {
     width: 100%
 }
 
-.cannon-2TUmxT {
-    position: absolute;
-    width: 100vw;
-    height: 100vh;
-    top: calc(50% - 50vh);
-    left: calc(50% - 50vw);
-    z-index: 1;
-    pointer-events: none
-}
-
 .select-1rtJDa {
     background-color: var(--background-secondary);
     border-radius: 3px
@@ -157367,4 +157397,4 @@ html .invoiceCancelRow-dVOR64 {
     flex-direction: column
 }
 
-/*# sourceMappingURL=40532.f2531509c9131af4ce80.css.map*/
+/*# sourceMappingURL=40532.9789d69ee2671d9a495b.css.map*/
