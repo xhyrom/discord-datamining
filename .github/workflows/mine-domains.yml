@@ -1,4 +1,4 @@
-name: Mine Domain
+name: Mine Domains
 on:
   schedule:
     - cron: "0 0 * * *"
@@ -24,7 +24,7 @@ jobs:
           git config user.name "xHyroM"
           git config user.email "github@xhyrom.dev"
           pnpm install
-          pnpm run start --filter=scripts -- domain
+          pnpm run start --filter=scripts -- domains
         env:
           GITHUB_TOKEN: ${{ secrets.ACCESS_TOKEN }}
           ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}

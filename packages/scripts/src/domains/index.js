@@ -70,7 +70,7 @@ const date = new Date();
 await git.commit([
   `${date.getDate()} ${
     months[date.getMonth()]
-  } ${date.getFullYear()} - Domain Data was updated 🚀`,
+  } ${date.getFullYear()} - Domains were updated 🚀`,
 ]);
 
 const pushResult = await push(git, "origin", "master");

@@ -30,8 +30,12 @@ switch (action) {
     await import("./discord-creator-support-articles/index.js");
     break;
   }
-  case "domain": {
-    await import("./domain/index.js");
+  case "domains": {
+    await import("./domains/index.js");
+    break;
+  }
+  case "discord-routes": {
+    await import("./discord-routes/index.js");
     break;
   }
   case "github": {
