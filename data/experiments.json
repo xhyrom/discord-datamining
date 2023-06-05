@@ -3112,25 +3112,6 @@
   },
   {
     "data": {
-      "kind": "user",
-      "id": "2023-01_mfa_v2",
-      "label": "New MFA",
-      "description": [
-        "Control",
-        "Treatment 1: Enabled"
-      ],
-      "hash": 3622145244,
-      "buckets": [
-        0,
-        1
-      ],
-      "config_keys": [
-        "enabled"
-      ]
-    }
-  },
-  {
-    "data": {
       "kind": "guild",
       "id": "2021-11_member_verification_manual_approval",
       "label": "Member Verification Manual Approval",
