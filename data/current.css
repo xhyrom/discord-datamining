@@ -115610,6 +115610,24 @@ input::-webkit-outer-spin-button {
     color: var(--primary-500)
 }
 
+.divider-2IT4pD {
+    margin: 32px 0
+}
+
+.sectionHeader-2dR9NK {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    gap: 8px
+}
+
+.personalityMargin-3qvDbC {
+    margin-top: 16px
+}
+
 .container-2CHEay {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -157414,4 +157432,4 @@ html .invoiceCancelRow-dVOR64 {
     flex-direction: column
 }
 
-/*# sourceMappingURL=40532.e2cbbab702e96a3da21b.css.map*/
+/*# sourceMappingURL=40532.8e39bea54be99352e933.css.map*/
