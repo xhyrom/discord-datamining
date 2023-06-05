@@ -1,4 +1,4 @@
-import differ from "@xhyrom-forks/discord-datamining-lang-differ";
+import { differRoutes, differStrings } from "./lang-differ.js";
 import { readFile } from "node:fs/promises";
 import { EmbedBuilder } from "@discordjs/builders";
 import { join } from "node:path";
@@ -94,7 +94,46 @@ export const strings = async (octokit, eventPayload) => {
 
   let comment = "";
   try {
-    comment = differ(currentContent, newContent, "codeblock");
+    comment = differStrings(currentContent, newContent);
+  } catch {}
+
+  return comment;
+};
+
+/**
+ * @param {import('@octokit/action').Octokit} octokit
+ * @param {unknown} eventPayload
+ */
+export const routes = async (octokit, eventPayload) => {
+  const diff = await octokit.repos.compareCommits({
+    owner: eventPayload.repository.owner.login,
+    repo: eventPayload.repository.name,
+    base: eventPayload.before,
+    head: eventPayload.after,
+  });
+
+  // make sure its commit with routes.json
+  const currentRoutesFile = diff.data.files.find((file) =>
+    file.filename.includes("routes.json")
+  );
+  if (!currentRoutesFile || !currentRoutesFile?.patch) return "";
+
+  // we are not using routes.json because implementation in @xhyrom-forks/discord-datamining-lang-differ is different, but this works
+  const oldContent = await (
+    await fetch(
+      `https://raw.githubusercontent.com/xHyroM/discord-datamining/${eventPayload.before}/data/current.js`
+    )
+  ).text();
+
+  const newContent = await (
+    await fetch(
+      `https://raw.githubusercontent.com/xHyroM/discord-datamining/${eventPayload.after}/data/current.js`
+    )
+  ).text();
+
+  let comment = "";
+  try {
+    comment = differRoutes(oldContent, newContent);
   } catch {}
 
   return comment;

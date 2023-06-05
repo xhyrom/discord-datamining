@@ -16,7 +16,7 @@
     "@octokit/rest": "^19.0.7",
     "@pafyll/array": "^0.0.1",
     "@pafyll/core": "^0.0.1",
-    "@xhyrom-forks/discord-datamining-lang-differ": "github:xhyrom-forks/discord-datamining-lang-differ#change-name",
+    "@xhyrom-forks/discord-datamining-lang-differ": "github:xhyrom-forks/discord-datamining-lang-differ#personal-use",
     "discord-api-types": "^0.37.41",
     "dotenv": "^16.0.3",
     "fast-deep-equal": "^3.1.3",

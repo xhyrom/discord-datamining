@@ -29,8 +29,8 @@ importers:
         specifier: ^0.0.1
         version: 0.0.1
       '@xhyrom-forks/discord-datamining-lang-differ':
-        specifier: github:xhyrom-forks/discord-datamining-lang-differ#change-name
-        version: github.com/xhyrom-forks/discord-datamining-lang-differ/01c1f40962f5d480dee4dbcf71db75d62a60e8db
+        specifier: github:xhyrom-forks/discord-datamining-lang-differ#personal-use
+        version: github.com/xhyrom-forks/discord-datamining-lang-differ/038e4f583ae3d39a83038eb53f46b76dcde018d1
       discord-api-types:
         specifier: ^0.37.41
         version: 0.37.41
@@ -5673,10 +5673,10 @@ packages:
     resolution: {integrity: sha512-bXE4cR/kVZhKZX/RjPEflHaKVhUVl85noU3v6b8apfQEc1x4A+zBxjZ4lN8LqGd6WZ3dl98pY4o717VFmoPp+A==}
     dev: false
 
-  github.com/xhyrom-forks/discord-datamining-lang-differ/01c1f40962f5d480dee4dbcf71db75d62a60e8db:
-    resolution: {tarball: https://codeload.github.com/xhyrom-forks/discord-datamining-lang-differ/tar.gz/01c1f40962f5d480dee4dbcf71db75d62a60e8db}
+  github.com/xhyrom-forks/discord-datamining-lang-differ/038e4f583ae3d39a83038eb53f46b76dcde018d1:
+    resolution: {tarball: https://codeload.github.com/xhyrom-forks/discord-datamining-lang-differ/tar.gz/038e4f583ae3d39a83038eb53f46b76dcde018d1}
     name: '@xhyrom-forks/discord-datamining-lang-differ'
-    version: 1.3.0
+    version: 1.3.4
     dependencies:
       espree: 9.5.2
       object-deep-search: 0.0.7

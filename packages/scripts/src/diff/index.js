@@ -3,6 +3,7 @@ import { readFile } from "node:fs/promises";
 import {
   all,
   strings,
+  routes,
   stylesheet,
   blogPosts,
   supportArticles,
@@ -19,6 +20,7 @@ const eventPayload = JSON.parse(
 
 const allComment = await all(octokit, eventPayload);
 const stringsComment = await strings(octokit, eventPayload);
+const routesComment = await routes(octokit, eventPayload);
 const stylesheetComment = await stylesheet(octokit, eventPayload);
 const blogPostsComment = await blogPosts(octokit, eventPayload);
 const supportArticlesComment = await supportArticles(
@@ -73,6 +75,33 @@ if (stringsComment) {
     webhookToken,
     stringsComment,
     "1105589256996524042"
+  );
+}
+
+if (routesComment) {
+  const [webhookId, webhookToken] = new URL(
+    process.env.DISCORD_WEBHOOK_ROUTES ?? ""
+  ).pathname
+    .split("/")
+    .slice(3);
+
+  const comment = await octokit.repos.createCommitComment({
+    owner: eventPayload.repository.owner.login,
+    repo: eventPayload.repository.name,
+    commit_sha: eventPayload.after,
+    body:
+      routesComment.length >= 65535
+        ? routesComment.slice(0, 65535)
+        : routesComment,
+  });
+
+  await send(
+    eventPayload,
+    comment.data,
+    webhookId,
+    webhookToken,
+    routesComment,
+    "1115349386663305217"
   );
 }
 
