@@ -1160,6 +1160,28 @@
   },
   {
     "data": {
+      "kind": "user",
+      "id": "2023-04_broadcasting",
+      "label": "Go Live Broadcasting",
+      "description": [
+        "Control",
+        "Treatment 1: Allow user to Broadcast to friends & guilds",
+        "Treatment 2: Cannot broadcast, cannot view broadcasts"
+      ],
+      "hash": 139947315,
+      "buckets": [
+        0,
+        1,
+        2
+      ],
+      "config_keys": [
+        "canBroadcast",
+        "canViewBroadcasts"
+      ]
+    }
+  },
+  {
+    "data": {
       "kind": "guild",
       "id": "2023-02_onboarding_home_admin",
       "label": "[ADMIN] Home as a community onboarding surface",
@@ -7515,28 +7537,6 @@
       "revision": 0,
       "overrides": {},
       "overrides_formatted": []
-    }
-  },
-  {
-    "data": {
-      "kind": "user",
-      "id": "2023-04_broadcasting",
-      "label": "Go Live Broadcasting",
-      "description": [
-        "Control",
-        "Treatment 1: Allow user to Broadcast to friends & guilds",
-        "Treatment 2: Cannot broadcast, cannot view broadcasts"
-      ],
-      "hash": 139947315,
-      "buckets": [
-        0,
-        1,
-        2
-      ],
-      "config_keys": [
-        "canBroadcast",
-        "canViewBroadcasts"
-      ]
     }
   },
   {
