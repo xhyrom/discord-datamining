@@ -451,6 +451,7 @@
   "GUILD_ROLE_SUBSCRIPTION_TRIALS": "/guilds/:param/role-subscriptions/trials",
   "GUILD_ROLE_SUBSCRIPTION_LISTING_TRIAL": "/guilds/:param/role-subscriptions/subscription-listings/:param/trial",
   "GUILD_ROLE_SUBSCRIPTION_LISTING_TEMPLATES": "/guilds/:param/role-subscriptions/templates",
+  "GUILD_CLYDE_SETTINGS": "/guilds/:param/clyde-settings",
   "CREATOR_MONETIZATION_ENABLE_REQUESTS": "/guilds/:param/creator-monetization/enable-requests",
   "CREATOR_MONETIZATION_ELIGIBILITY": "/guilds/:param/creator-monetization/requirements",
   "CREATOR_MONETIZATION_ACCEPT_TERMS": "/guilds/:param/creator-monetization/enable-requests/:param/accept-terms",
