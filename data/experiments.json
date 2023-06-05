@@ -5337,7 +5337,7 @@
         1
       ],
       "config_keys": [
-        "showTODOs"
+        "showReminders"
       ]
     }
   },
