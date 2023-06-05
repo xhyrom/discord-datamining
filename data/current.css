@@ -29194,6 +29194,38 @@ img[alt] {
     margin-left: 10px
 }
 
+.noticeRoot-dNwFD- {
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    background-color: var(--background-secondary);
+    border-radius: 4px;
+    font-size: 14px;
+    line-height: 18px;
+    padding: 8px 16px
+}
+
+.iconContainer-11PIqx,
+.noticeRoot-dNwFD- {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex
+}
+
+.infoIcon-sSJ6na {
+    color: var(--yellow-300);
+    margin-right: 6px;
+    width: 14px;
+    height: 14px
+}
+
+.text-1PfTfl {
+    color: var(--interactive-normal);
+    -webkit-box-flex: 1;
+    -ms-flex-positive: 1;
+    flex-grow: 1
+}
+
 .planOption-187LtR {
     color: var(--interactive-normal);
     display: -webkit-box;
@@ -29399,6 +29431,10 @@ img[alt] {
     padding-bottom: 16px
 }
 
+.legacyPricingNotice-1oqVTr {
+    margin-bottom: 16px
+}
+
 .planSelectSeparatorLower-1fnlBj,
 .planSelectSeparatorUpper-2S3XqG {
     width: 100%;
@@ -29414,38 +29450,6 @@ img[alt] {
 .planSelectSeparatorLower-1fnlBj {
     margin-bottom: 16px;
     margin-top: 8px
-}
-
-.noticeRoot-dNwFD- {
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
-    background-color: var(--background-secondary);
-    border-radius: 4px;
-    font-size: 14px;
-    line-height: 18px;
-    padding: 8px 16px
-}
-
-.iconContainer-11PIqx,
-.noticeRoot-dNwFD- {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex
-}
-
-.infoIcon-sSJ6na {
-    color: var(--yellow-300);
-    margin-right: 6px;
-    width: 14px;
-    height: 14px
-}
-
-.text-1PfTfl {
-    color: var(--interactive-normal);
-    -webkit-box-flex: 1;
-    -ms-flex-positive: 1;
-    flex-grow: 1
 }
 
 .container-1XL04_ {
@@ -30058,7 +30062,7 @@ img[alt] {
     white-space: nowrap
 }
 
-.plnNotice-Z0zliR {
+.legacyPricingNotice-59KIlx {
     margin-bottom: 16px
 }
 
@@ -44967,7 +44971,7 @@ h6.title-1p9WyQ {
     color: var(--text-normal);
     opacity: .9;
     background: var(--background-secondary-alt);
-    border-radius: 8px;
+    border-radius: var(--radius-sm);
     cursor: pointer;
     overflow: hidden
 }
@@ -54604,7 +54608,7 @@ input[type=checked]:focus-visible+.label-3TDpbn {
     color: var(--white-500);
     background-color: hsl(var(--black-500-hsl)/.3);
     padding: 4px;
-    border-radius: 8px;
+    border-radius: var(--radius-sm);
     font-size: 12px;
     line-height: 16px
 }
@@ -54638,7 +54642,7 @@ input[type=checked]:focus-visible+.label-3TDpbn {
     box-sizing: border-box;
     position: relative;
     background: var(--background-secondary);
-    border-radius: 8px;
+    border-radius: var(--radius-sm);
     height: 40px;
     width: 150px;
     display: -webkit-box;
@@ -55471,7 +55475,7 @@ input[type=checked]:focus-visible+.label-3TDpbn {
     -webkit-box-pack: start;
     -ms-flex-pack: start;
     justify-content: flex-start;
-    border-radius: 8px;
+    border-radius: var(--radius-sm);
     padding: 12px
 }
 
@@ -64479,7 +64483,7 @@ strong {
     color: var(--interactive-normal);
     background-color: var(--background-secondary);
     height: 24px;
-    border-radius: 8px;
+    border-radius: var(--radius-sm);
     border: 1px solid transparent
 }
 
@@ -65030,7 +65034,7 @@ strong {
     top: -90px;
     right: 16px;
     padding: 4px 8px;
-    border-radius: 8px;
+    border-radius: var(--radius-sm);
     text-shadow: var(--background-tertiary);
     display: -webkit-box;
     display: -ms-flexbox;
@@ -65131,7 +65135,7 @@ strong {
     top: -150px;
     right: 8px;
     padding: 4px 8px;
-    border-radius: 8px;
+    border-radius: var(--radius-sm);
     text-shadow: var(--brand-experiment-700);
     display: -webkit-box;
     display: -ms-flexbox;
@@ -65462,7 +65466,7 @@ strong {
 .container-3aTfKk {
     position: relative;
     padding: 2px 4px;
-    border-radius: 8px;
+    border-radius: var(--radius-sm);
     background-color: var(--background-tertiary);
     display: -webkit-box;
     display: -ms-flexbox;
@@ -67844,7 +67848,7 @@ strong {
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
-    border-radius: 8px;
+    border-radius: var(--radius-sm);
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
     height: 100%;
@@ -67954,7 +67958,7 @@ strong {
 .newBadge-1LcB6t {
     display: inline;
     padding: 2px 8px;
-    border-radius: 12px;
+    border-radius: var(--radius-md);
     color: var(--brand-560);
     position: relative;
     top: -2px
@@ -67985,7 +67989,7 @@ strong {
 .dots-2_b2Mn {
     background-color: var(--background-tertiary);
     border: 3px solid var(--background-primary);
-    border-radius: 12px;
+    border-radius: var(--radius-md);
     height: 16px;
     -webkit-box-pack: center;
     -ms-flex-pack: center;
@@ -68228,7 +68232,7 @@ strong {
     width: 143px;
     -ms-flex-negative: 0;
     flex-shrink: 0;
-    border-radius: 8px;
+    border-radius: var(--radius-sm);
     overflow: hidden
 }
 
@@ -68303,7 +68307,7 @@ strong {
     width: 100%;
     height: 32px;
     background-color: var(--background-secondary);
-    border-radius: 8px
+    border-radius: var(--radius-sm)
 }
 
 .replies-15QcwL:hover {
@@ -68400,7 +68404,7 @@ strong {
 
 .dots-1MK4EX {
     background-color: var(--background-tertiary);
-    border-radius: 12px;
+    border-radius: var(--radius-md);
     height: 16px;
     -webkit-box-pack: center;
     -ms-flex-pack: center;
@@ -68529,7 +68533,7 @@ strong {
 .addReactButton-214Pdk {
     background-color: var(--background-secondary);
     padding: 5px 6px;
-    border-radius: 8px;
+    border-radius: var(--radius-sm);
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -75000,7 +75004,7 @@ strong {
 .upsellPreview-zfsyzm {
     background-color: var(--background-secondary);
     padding: 16px;
-    border-radius: 8px;
+    border-radius: var(--radius-sm);
     -ms-flex-preferred-size: 50%;
     flex-basis: 50%
 }
@@ -75008,7 +75012,7 @@ strong {
 .previewListItem-2VAZ-Y {
     background-color: var(--background-secondary-alt);
     padding: 8px 12px;
-    border-radius: 8px;
+    border-radius: var(--radius-sm);
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -75068,7 +75072,7 @@ strong {
 }
 
 .checkbox-3gI2WR {
-    border-radius: 4px;
+    border-radius: var(--radius-xs);
     height: 20px;
     width: 20px;
     border: 2px solid var(--interactive-normal);
@@ -79656,7 +79660,7 @@ strong {
     max-width: 248px;
     padding: 16px;
     background-color: var(--background-floating);
-    border-radius: 8px;
+    border-radius: var(--radius-sm);
     -webkit-box-shadow: var(--elevation-medium);
     box-shadow: var(--elevation-medium)
 }
@@ -80104,7 +80108,7 @@ strong {
     background-color: var(--background-tertiary);
     -webkit-box-shadow: var(--elevation-medium);
     box-shadow: var(--elevation-medium);
-    border-radius: 8px
+    border-radius: var(--radius-sm)
 }
 
 .close-1nV15i,
@@ -80195,7 +80199,7 @@ strong {
     -ms-flex-positive: 0;
     flex-grow: 0;
     background-color: var(--background-secondary);
-    border-radius: 12px;
+    border-radius: var(--radius-md);
     padding: 4px 8px;
     overflow: hidden
 }
@@ -86599,7 +86603,7 @@ strong {
 
 .video-2p_b7d {
     width: 100%;
-    border-radius: 8px
+    border-radius: var(--radius-sm)
 }
 
 .artContainer-3LHzN3 {
@@ -86609,7 +86613,7 @@ strong {
 .container-3a5mk- {
     -webkit-box-shadow: var(--elevation-stroke), var(--elevation-high);
     box-shadow: var(--elevation-stroke), var(--elevation-high);
-    border-radius: 8px;
+    border-radius: var(--radius-sm);
     background-color: var(--background-floating);
     overflow: hidden;
     isolation: isolate
@@ -86657,7 +86661,7 @@ strong {
 
 .emojiPicker-2NoGga {
     max-width: 498px;
-    border-radius: 8px
+    border-radius: var(--radius-sm)
 }
 
 .emojiItemDisabled-1dczo_ {
@@ -89351,7 +89355,7 @@ strong {
 }
 
 .categoryIcon-jiMNyP {
-    border-radius: 4px;
+    border-radius: var(--radius-xs);
     padding: 4px;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -89390,7 +89394,7 @@ strong {
     align-items: center;
     margin: 16px;
     padding: 8px;
-    border-radius: 8px;
+    border-radius: var(--radius-sm);
     background-color: var(--background-secondary)
 }
 
@@ -89498,7 +89502,7 @@ strong {
     background-color: var(--background-floating);
     height: 420px;
     width: 531px;
-    border-radius: 8px;
+    border-radius: var(--radius-sm);
     overflow: hidden;
     -webkit-box-shadow: var(--elevation-high);
     box-shadow: var(--elevation-high)
@@ -100670,7 +100674,7 @@ html .tabBadge-h4HGed {
 
 .splashContainer-2PC_Bm {
     height: 135px;
-    border-radius: 8px;
+    border-radius: var(--radius-sm);
     margin-right: 16px;
     overflow: hidden;
     -ms-flex-negative: 0;
@@ -100785,7 +100789,7 @@ html .tabBadge-h4HGed {
 
 .placeholder-2jEh13 {
     height: 136px;
-    border-radius: 8px;
+    border-radius: var(--radius-sm);
     -webkit-animation: placeholderPulse-11jG8o 1.8s ease-in-out infinite;
     animation: placeholderPulse-11jG8o 1.8s ease-in-out infinite;
     background-color: var(--background-tertiary)
@@ -100799,7 +100803,7 @@ html .tabBadge-h4HGed {
 .spinner-1JhZ2F {
     width: 48px;
     height: 48px;
-    border-radius: 8px;
+    border-radius: var(--radius-sm);
     background-color: var(--primary-800);
     top: 50%;
     left: 50%;
@@ -101065,7 +101069,7 @@ html .tabBadge-h4HGed {
     background-color: var(--background-secondary);
     padding: 80px 0;
     max-width: 720px;
-    border-radius: 8px
+    border-radius: var(--radius-sm)
 }
 
 .emptyImage-2pCD2j {
@@ -103621,7 +103625,7 @@ html .tabBadge-h4HGed {
     height: 100%;
     width: 100%;
     z-index: 1;
-    border-radius: 4px
+    border-radius: var(--radius-xs)
 }
 
 .selectedBackground-1t6xXq {
@@ -104449,7 +104453,7 @@ html .tabBadge-h4HGed {
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
-    border-radius: 4px
+    border-radius: var(--radius-xs)
 }
 
 .clickableContainer-3YtEIY {
@@ -104496,7 +104500,7 @@ html .tabBadge-h4HGed {
     -ms-flex-align: center;
     align-items: center;
     gap: 8px;
-    border-radius: 4px;
+    border-radius: var(--radius-xs);
     padding: 12px;
     border-left: 3px solid var(--background-secondary);
     -webkit-transition: background-color .15s ease-in-out;
@@ -104601,7 +104605,7 @@ html .tabBadge-h4HGed {
     align-items: center;
     gap: 8px;
     background-color: var(--background-secondary);
-    border-radius: 4px;
+    border-radius: var(--radius-xs);
     padding: 0
 }
 
@@ -104651,7 +104655,7 @@ html .tabBadge-h4HGed {
     position: relative;
     z-index: 1;
     border: 3px solid var(--background-secondary);
-    border-radius: 4px;
+    border-radius: var(--radius-xs);
     padding: 12px
 }
 
@@ -111184,7 +111188,7 @@ html .tabBadge-h4HGed {
     padding: 16px;
     -webkit-box-shadow: var(--elevation-high);
     box-shadow: var(--elevation-high);
-    border-radius: 8px
+    border-radius: var(--radius-sm)
 }
 
 .close-XcQsBf {
@@ -111228,7 +111232,7 @@ html .tabBadge-h4HGed {
 .item-3lzfvW {
     padding: 8px;
     background-color: var(--background-secondary);
-    border-radius: 8px
+    border-radius: var(--radius-sm)
 }
 
 .iconContainer-2w-ytb,
@@ -111367,7 +111371,7 @@ html .tabBadge-h4HGed {
     background-color: var(--background-modifier-accent);
     width: 4px;
     height: 4px;
-    border-radius: 4px;
+    border-radius: var(--radius-xs);
     -ms-flex-item-align: center;
     align-self: center
 }
@@ -111401,7 +111405,7 @@ html .tabBadge-h4HGed {
 }
 
 .lockedPill-oM4Ome {
-    border-radius: 8px;
+    border-radius: var(--radius-sm);
     border: thin solid var(--text-normal);
     color: var(--text-normal);
     padding: 6px 12px
@@ -111420,7 +111424,7 @@ html .tabBadge-h4HGed {
 .container-mJQ_O9 {
     background-color: var(--background-secondary);
     padding: 16px 16px 0;
-    border-radius: 8px
+    border-radius: var(--radius-sm)
 }
 
 .header-29lbwR {
@@ -111612,7 +111616,7 @@ html .tabBadge-h4HGed {
 }
 
 .optionCard-1zlvDz {
-    border-radius: 12px;
+    border-radius: var(--radius-md);
     border: 2px solid var(--background-modifier-accent);
     cursor: pointer;
     display: -webkit-box;
@@ -111724,7 +111728,7 @@ html .tabBadge-h4HGed {
 
 .container-3cFp_V {
     background-color: var(--background-secondary);
-    border-radius: 12px;
+    border-radius: var(--radius-md);
     padding: 16px;
     position: relative
 }
@@ -111791,7 +111795,7 @@ html .tabBadge-h4HGed {
 
 .titleInput-2MGOZZ {
     background: var(--background-secondary-alt);
-    border-radius: 8px;
+    border-radius: var(--radius-sm);
     border: 1px solid transparent;
     height: auto;
     outline: none;
@@ -111851,7 +111855,7 @@ html .tabBadge-h4HGed {
 
 .example-1aGQB0 {
     background-color: var(--background-tertiary);
-    border-radius: 12px;
+    border-radius: var(--radius-md);
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
     cursor: pointer;
@@ -111939,7 +111943,7 @@ html .tabBadge-h4HGed {
 }
 
 .enableBar-2Xw6zY {
-    border-radius: 8px
+    border-radius: var(--radius-sm)
 }
 
 .prompts-2H24Xy {
@@ -111993,7 +111997,7 @@ html .tabBadge-h4HGed {
     -ms-flex-align: center;
     align-items: center;
     border: 2px dashed var(--interactive-muted);
-    border-radius: 12px;
+    border-radius: var(--radius-md);
     cursor: pointer;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -112023,13 +112027,16 @@ html .tabBadge-h4HGed {
 .dot-1ts8mf {
     width: 4px;
     height: 4px;
-    border-radius: 8px;
     background-color: var(--background-modifier-accent)
+}
+
+.channelCoverage-Ix9axP,
+.dot-1ts8mf {
+    border-radius: var(--radius-sm)
 }
 
 .channelCoverage-Ix9axP {
     margin-top: 24px;
-    border-radius: 8px;
     overflow: hidden;
     background-color: var(--background-tertiary)
 }
@@ -112131,7 +112138,7 @@ html .tabBadge-h4HGed {
 }
 
 .enableBar-x17-Sw {
-    border-radius: 8px;
+    border-radius: var(--radius-sm);
     margin-top: 8px
 }
 
@@ -112187,7 +112194,7 @@ html .tabBadge-h4HGed {
 
 .recommendedChannels-we6o9Q {
     overflow: hidden;
-    border-radius: 8px
+    border-radius: var(--radius-sm)
 }
 
 .channelRow-2Hi_6t {
@@ -112218,7 +112225,7 @@ html .tabBadge-h4HGed {
 }
 
 .addChannelCTA-1m8VCH {
-    border-radius: 8px
+    border-radius: var(--radius-sm)
 }
 
 .topic-151vgY {
@@ -112308,7 +112315,7 @@ html .tabBadge-h4HGed {
 }
 
 .lockedPill-KFn7D_ {
-    border-radius: 8px;
+    border-radius: var(--radius-sm);
     border: thin solid var(--text-normal);
     color: var(--text-normal);
     padding: 6px 12px
@@ -112508,7 +112515,7 @@ html .tabBadge-h4HGed {
     top: 12px;
     right: 16px;
     background-color: var(--brand-experiment);
-    border-radius: 4px;
+    border-radius: var(--radius-xs);
     opacity: .5;
     -webkit-transition: opacity .2s ease-in-out;
     transition: opacity .2s ease-in-out
@@ -112538,7 +112545,7 @@ html .tabBadge-h4HGed {
     -ms-flex-align: center;
     align-items: center;
     border: 2px solid var(--background-modifier-accent);
-    border-radius: 12px;
+    border-radius: var(--radius-md);
     padding: 8px 12px
 }
 
@@ -112572,7 +112579,7 @@ html .tabBadge-h4HGed {
     align-items: center;
     padding: 12px 16px;
     gap: 16px;
-    border-radius: 12px;
+    border-radius: var(--radius-md);
     background: var(--background-secondary);
     width: 100%
 }
@@ -112634,7 +112641,7 @@ html .tabBadge-h4HGed {
     padding: 16px;
     gap: 8px;
     border: 2px dashed var(--interactive-muted);
-    border-radius: 8px;
+    border-radius: var(--radius-sm);
     cursor: pointer;
     color: var(--text-link)
 }
@@ -112660,7 +112667,7 @@ html .tabBadge-h4HGed {
 .boostIndicator-3PPa2P {
     margin-bottom: 8px;
     background: var(--background-secondary-alt);
-    border-radius: 12px;
+    border-radius: var(--radius-md);
     padding: 0 4px;
     color: var(--interactive-normal)
 }
@@ -112804,7 +112811,7 @@ html .tabBadge-h4HGed {
 
 .suggestedChannels-1mEoi7 {
     background-color: var(--background-secondary);
-    border-radius: 8px;
+    border-radius: var(--radius-sm);
     margin: 4px 0 8px
 }
 
@@ -113035,7 +113042,7 @@ html .tabBadge-h4HGed {
     bottom: 88px;
     left: -16px;
     background-color: var(--background-floating);
-    border-radius: 8px
+    border-radius: var(--radius-sm)
 }
 
 .educationUpsellArrow-37KrJN {
@@ -113111,7 +113118,7 @@ html .tabBadge-h4HGed {
 .container-2s0jpP {
     padding: 16px 8px;
     background-color: var(--background-secondary);
-    border-radius: 4px;
+    border-radius: var(--radius-xs);
     margin-bottom: 8px
 }
 
@@ -113305,7 +113312,7 @@ input::-webkit-outer-spin-button {
 .contentContainerNoConfig-1UKXUE {
     margin: 20px 0 0;
     background-color: var(--background-secondary);
-    border-radius: 8px;
+    border-radius: var(--radius-sm);
     padding: 20px 20px 0
 }
 
@@ -113445,7 +113452,7 @@ input::-webkit-outer-spin-button {
 
 .addVerificationButtonAppend-2dTEM- {
     border: 2px dashed var(--interactive-muted);
-    border-radius: 8px;
+    border-radius: var(--radius-sm);
     color: var(--text-link)
 }
 
@@ -113478,7 +113485,7 @@ input::-webkit-outer-spin-button {
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
-    border-radius: 4px;
+    border-radius: var(--radius-xs);
     border: 1px solid var(--status-warning-background);
     background-color: rgba(250, 166, 26, .1);
     margin-bottom: 16px
@@ -113533,7 +113540,7 @@ input::-webkit-outer-spin-button {
 .availabilityIndicator-3-1ZYA {
     background-color: var(--background-secondary-alt);
     padding: 1px 2px;
-    border-radius: 16px;
+    border-radius: var(--radius-lg);
     margin-left: 4px
 }
 
@@ -113548,7 +113555,7 @@ input::-webkit-outer-spin-button {
 
 .previewContainer-1GxmBJ {
     background: var(--background-secondary);
-    border-radius: 8px;
+    border-radius: var(--radius-sm);
     min-width: 80px;
     height: 80px;
     display: -webkit-box;
@@ -113659,7 +113666,7 @@ input::-webkit-outer-spin-button {
 .previewContainer-1xQAsw {
     margin-top: 16px;
     border: 1px solid var(--background-modifier-accent);
-    border-radius: 4px;
+    border-radius: var(--radius-xs);
     overflow: hidden;
     position: relative
 }
@@ -113783,7 +113790,7 @@ input::-webkit-outer-spin-button {
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
-    border-radius: 4px;
+    border-radius: var(--radius-xs);
     cursor: pointer
 }
 
@@ -114293,7 +114300,7 @@ input::-webkit-outer-spin-button {
     -webkit-box-direction: normal;
     -ms-flex-direction: column;
     flex-direction: column;
-    border-radius: 8px;
+    border-radius: var(--radius-sm);
     background-color: var(--background-secondary);
     margin-bottom: 20px;
     position: relative
@@ -114368,7 +114375,7 @@ input::-webkit-outer-spin-button {
     align-items: center;
     background-color: var(--background-secondary);
     color: var(--interactive-normal);
-    border-radius: 4px;
+    border-radius: var(--radius-xs);
     padding: 16px 24px 16px 16px;
     cursor: pointer
 }
@@ -114481,7 +114488,7 @@ input::-webkit-outer-spin-button {
     margin-bottom: 16px;
     height: 100%;
     width: 180px;
-    border-radius: 8px;
+    border-radius: var(--radius-sm);
     border: 1px solid var(--background-secondary-alt);
     background-color: var(--background-secondary);
     -webkit-box-shadow: 0 8px 16px rgba(0, 0, 0, .1);
@@ -114548,7 +114555,7 @@ input::-webkit-outer-spin-button {
 
 .roleTag-8dogTd {
     background-color: var(--background-primary);
-    border-radius: 4px;
+    border-radius: var(--radius-xs);
     margin: 2px;
     padding: 4px 8px;
     white-space: nowrap
@@ -114625,7 +114632,7 @@ input::-webkit-outer-spin-button {
 
 .roleRow-230vCm {
     position: relative;
-    border-radius: 4px
+    border-radius: var(--radius-xs)
 }
 
 .roleRow-230vCm:before {
@@ -114967,7 +114974,7 @@ input::-webkit-outer-spin-button {
 
 .simpleItemWrapper-1Zwc4I {
     background-color: var(--background-secondary);
-    border-radius: 8px;
+    border-radius: var(--radius-sm);
     margin-bottom: 8px
 }
 
@@ -115011,7 +115018,7 @@ input::-webkit-outer-spin-button {
     -ms-flex-positive: 0;
     flex-grow: 0;
     gap: 4px;
-    border-radius: 16px;
+    border-radius: var(--radius-lg);
     margin-top: 4px
 }
 
@@ -115021,7 +115028,7 @@ input::-webkit-outer-spin-button {
 
 .itemBodyInner-3iVT92 {
     border: 1px solid var(--background-modifier-accent);
-    border-radius: 8px;
+    border-radius: var(--radius-sm);
     padding: 12px;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -115042,7 +115049,7 @@ input::-webkit-outer-spin-button {
 }
 
 .warning-3tQuvB {
-    border-radius: 16px;
+    border-radius: var(--radius-lg);
     color: var(--status-warning)
 }
 
@@ -115110,7 +115117,7 @@ input::-webkit-outer-spin-button {
     -ms-flex-align: center;
     align-items: center;
     background-color: var(--background-secondary);
-    border-radius: 8px;
+    border-radius: var(--radius-sm);
     margin-top: 16px;
     padding: 24px
 }
@@ -115126,7 +115133,7 @@ input::-webkit-outer-spin-button {
 }
 
 .safetyChecklist-3kgSZf {
-    border-radius: 8px;
+    border-radius: var(--radius-sm);
     background-color: var(--background-secondary);
     margin-top: 32px
 }
@@ -115276,7 +115283,7 @@ input::-webkit-outer-spin-button {
     padding-bottom: 30px;
     position: relative;
     background-color: var(--background-secondary);
-    border-radius: 8px
+    border-radius: var(--radius-sm)
 }
 
 .developerPortalCta-3QrlHn {
@@ -115326,7 +115333,7 @@ input::-webkit-outer-spin-button {
     margin-bottom: 16px;
     padding: 16px;
     background-color: var(--background-secondary);
-    border-radius: 4px
+    border-radius: var(--radius-xs)
 }
 
 .insightsTitle-3YUkJe {
@@ -115412,7 +115419,7 @@ input::-webkit-outer-spin-button {
 
 .insightsActions-3cTXpa {
     margin-top: 16px;
-    border-radius: 4px;
+    border-radius: var(--radius-xs);
     overflow: hidden;
     background-color: var(--background-secondary-alt)
 }
@@ -115681,7 +115688,7 @@ input::-webkit-outer-spin-button {
     display: -ms-flexbox;
     display: flex;
     padding: 4px 8px 4px 4px;
-    border-radius: 4px;
+    border-radius: var(--radius-xs);
     background-color: var(--background-tertiary);
     -webkit-box-align: center;
     -ms-flex-align: center;
@@ -115694,7 +115701,7 @@ input::-webkit-outer-spin-button {
 
 .guildIcon-2qL9lN {
     margin-right: 8px;
-    border-radius: 4px
+    border-radius: var(--radius-xs)
 }
 
 .body-1JxAWB {
@@ -115719,7 +115726,7 @@ input::-webkit-outer-spin-button {
 
 .featureCard-3XHbjy {
     background-color: var(--background-secondary);
-    border-radius: 8px;
+    border-radius: var(--radius-sm);
     padding: 16px;
     text-align: start
 }
@@ -115805,7 +115812,7 @@ input::-webkit-outer-spin-button {
     -webkit-box-direction: normal;
     -ms-flex-direction: column;
     flex-direction: column;
-    border-radius: 8px;
+    border-radius: var(--radius-sm);
     background-color: var(--background-secondary);
     margin-bottom: 20px;
     position: relative
@@ -115993,7 +116000,7 @@ input::-webkit-outer-spin-button {
 .icon-QrJiDO {
     -ms-flex-item-align: center;
     align-self: center;
-    border-radius: 16px;
+    border-radius: var(--radius-lg);
     background-color: var(--background-tertiary);
     margin: 16px
 }
@@ -116077,7 +116084,7 @@ input::-webkit-outer-spin-button {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    border-radius: 4px;
+    border-radius: var(--radius-xs);
     background-color: var(--background-primary);
     margin-top: 8px;
     padding: 12px 16px
@@ -116098,7 +116105,7 @@ input::-webkit-outer-spin-button {
 }
 
 .warningIcon-1OWXzB {
-    border-radius: 4px
+    border-radius: var(--radius-xs)
 }
 
 .channelDescriptionWrapper-1KcNXz {
@@ -116109,7 +116116,7 @@ input::-webkit-outer-spin-button {
 }
 
 .notice-1Hf74q {
-    border-radius: 8px;
+    border-radius: var(--radius-sm);
     padding: 16px;
     margin: 0 0 16px;
     background-color: rgba(250, 166, 26, .1);
@@ -116149,7 +116156,7 @@ input::-webkit-outer-spin-button {
     width: 100%;
     height: auto;
     background-color: var(--background-floating);
-    border-radius: 8px
+    border-radius: var(--radius-sm)
 }
 
 .header-1YJkP_ {
@@ -116180,7 +116187,7 @@ input::-webkit-outer-spin-button {
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
-    border-radius: 8px
+    border-radius: var(--radius-sm)
 }
 
 .optionContainer-32r7Dj {
@@ -116487,7 +116494,7 @@ input::-webkit-outer-spin-button {
     height: 258px;
     width: 200px;
     overflow: hidden;
-    border-radius: 8px;
+    border-radius: var(--radius-sm);
     position: relative
 }
 
@@ -116737,7 +116744,7 @@ input::-webkit-outer-spin-button {
     align-items: center;
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
-    border-radius: 4px;
+    border-radius: var(--radius-xs);
     margin: 2px;
     padding: 4px 4px 4px 8px;
     -webkit-transition: none;
@@ -116778,7 +116785,7 @@ input::-webkit-outer-spin-button {
 }
 
 .container-13pE3E {
-    border-radius: 8px;
+    border-radius: var(--radius-sm);
     background-color: var(--background-secondary);
     overflow: hidden
 }
@@ -116907,7 +116914,7 @@ input::-webkit-outer-spin-button {
 }
 
 .checklist-1Foqd_ {
-    border-radius: 8px;
+    border-radius: var(--radius-sm);
     background-color: var(--background-secondary);
     overflow: hidden;
     width: 100%
@@ -117045,7 +117052,7 @@ input::-webkit-outer-spin-button {
 }
 
 .imageUploaderInnerSquare-3D4B4d {
-    border-radius: 4px;
+    border-radius: var(--radius-xs);
     background-size: cover;
     width: 320px;
     height: 180px
@@ -117170,7 +117177,7 @@ input::-webkit-outer-spin-button {
     margin: 10px 0;
     padding: 16px;
     border: 1px solid hsla(0, 0%, 100%, .06);
-    border-radius: 8px
+    border-radius: var(--radius-sm)
 }
 
 .background-1VboA7,
@@ -117432,7 +117439,7 @@ input::-webkit-outer-spin-button {
 }
 
 .imageUploaderInnerSquare-gHxn5x {
-    border-radius: 4px;
+    border-radius: var(--radius-xs);
     background-size: cover;
     width: 279px;
     height: 163px
@@ -117656,7 +117663,7 @@ input::-webkit-outer-spin-button {
     display: grid;
     grid-auto-flow: column;
     border: 1px solid var(--background-tertiary);
-    border-radius: 4px;
+    border-radius: var(--radius-xs);
     height: 24px;
     width: 64px;
     -webkit-box-sizing: border-box;
@@ -117875,7 +117882,7 @@ input::-webkit-outer-spin-button {
     align-items: center;
     padding: 16px;
     background: var(--background-secondary-alt);
-    border-radius: 8px;
+    border-radius: var(--radius-sm);
     text-align: left;
     color: var(--interactive-normal);
     margin-top: 16px;
@@ -118993,7 +119000,7 @@ input::-webkit-outer-spin-button {
     background-color: var(--background-modifier-accent);
     width: 4px;
     height: 4px;
-    border-radius: 4px;
+    border-radius: var(--radius-xs);
     -ms-flex-item-align: center;
     align-self: center
 }
@@ -119018,7 +119025,7 @@ input::-webkit-outer-spin-button {
 
 .content-12u2A_,
 .notice-3lRU62 {
-    border-radius: 8px
+    border-radius: var(--radius-sm)
 }
 
 .content-12u2A_ {
@@ -119028,7 +119035,7 @@ input::-webkit-outer-spin-button {
 .review-lB0WG3 {
     padding: 12px 16px;
     background-color: var(--background-tertiary);
-    border-radius: 8px;
+    border-radius: var(--radius-sm);
     border-bottom-left-radius: 0;
     border-bottom-right-radius: 0;
     margin-top: 24px
@@ -119082,7 +119089,7 @@ input::-webkit-outer-spin-button {
     align-items: center;
     padding: 12px 16px;
     background-color: var(--background-tertiary);
-    border-radius: 8px;
+    border-radius: var(--radius-sm);
     border-bottom-left-radius: 0;
     border-bottom-right-radius: 0
 }
@@ -119165,7 +119172,7 @@ input::-webkit-outer-spin-button {
 .progressBar-2ULTnj {
     width: 100%;
     height: 4px;
-    border-radius: 8px;
+    border-radius: var(--radius-sm);
     background-color: var(--interactive-muted)
 }
 
@@ -119244,7 +119251,7 @@ input::-webkit-outer-spin-button {
 }
 
 .guildSettingsOverviewNotice-3MaR93 {
-    border-radius: 4px
+    border-radius: var(--radius-xs)
 }
 
 .divider--oiTeJ {
@@ -119302,7 +119309,7 @@ input::-webkit-outer-spin-button {
 .guildFeatureAvailabilityIndicator-34eQAP {
     background-color: var(--background-secondary-alt);
     padding: 1px 2px;
-    border-radius: 16px;
+    border-radius: var(--radius-lg);
     margin-left: 4px;
     height: 18px
 }
@@ -119431,7 +119438,7 @@ input::-webkit-outer-spin-button {
     display: -ms-flexbox;
     display: flex;
     padding: 16px;
-    border-radius: 8px;
+    border-radius: var(--radius-sm);
     text-align: start;
     -webkit-box-align: center;
     -ms-flex-align: center;
@@ -119470,7 +119477,7 @@ input::-webkit-outer-spin-button {
 
 .checklistContainer-12xGp5 {
     background-color: var(--background-secondary);
-    border-radius: 8px;
+    border-radius: var(--radius-sm);
     text-align: start;
     margin: 0 32px
 }
@@ -120863,7 +120870,7 @@ input::-webkit-outer-spin-button {
     align-items: center;
     background: url(/assets/421e9ec77829ec1e4b1dd492dfad2f8a.svg), -webkit-gradient(linear, left top, right top, from(var(--guild-boosting-blue-for-gradients)), to(var(--guild-boosting-purple-for-gradients)));
     background: url(/assets/421e9ec77829ec1e4b1dd492dfad2f8a.svg), linear-gradient(90deg, var(--guild-boosting-blue-for-gradients), var(--guild-boosting-purple-for-gradients));
-    border-radius: 8px;
+    border-radius: var(--radius-sm);
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -120911,7 +120918,7 @@ input::-webkit-outer-spin-button {
 
 .descriptionBox-SKGNgB {
     background-color: var(--background-secondary);
-    border-radius: 8px;
+    border-radius: var(--radius-sm);
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -120980,7 +120987,7 @@ input::-webkit-outer-spin-button {
     background: var(--brand-experiment);
     height: 12px;
     width: 12px;
-    border-radius: 12px
+    border-radius: var(--radius-md)
 }
 
 .container-3sYrXC {
@@ -121127,7 +121134,7 @@ input::-webkit-outer-spin-button {
 .guildFeatureAvailabilityIndicator-1-B8Jv {
     background-color: var(--background-secondary-alt);
     padding: 1px 2px;
-    border-radius: 16px;
+    border-radius: var(--radius-lg);
     margin-left: 4px;
     height: 18px
 }
@@ -125334,7 +125341,7 @@ input::-webkit-outer-spin-button {
 
 .valuePropContainer-NqrwuR {
     background-color: var(--background-secondary);
-    border-radius: 8px;
+    border-radius: var(--radius-sm);
     padding: 8px;
     margin-top: 8px
 }
@@ -125419,7 +125426,7 @@ input::-webkit-outer-spin-button {
     display: -ms-flexbox;
     display: flex;
     background: var(--background-secondary-alt);
-    border-radius: 8px;
+    border-radius: var(--radius-sm);
     padding: 16px;
     margin-top: 24px;
     -webkit-box-align: center;
@@ -125448,7 +125455,7 @@ input::-webkit-outer-spin-button {
     width: 24px;
     height: 24px;
     margin-right: 10px;
-    border-radius: 4px;
+    border-radius: var(--radius-xs);
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
@@ -125467,7 +125474,7 @@ input::-webkit-outer-spin-button {
     display: -ms-flexbox;
     display: flex;
     background: var(--background-secondary-alt);
-    border-radius: 8px;
+    border-radius: var(--radius-sm);
     padding: 16px;
     margin-top: 24px;
     -webkit-box-align: center;
@@ -125497,7 +125504,7 @@ input::-webkit-outer-spin-button {
     width: 24px;
     height: 24px;
     margin-right: 10px;
-    border-radius: 4px;
+    border-radius: var(--radius-xs);
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
@@ -131329,7 +131336,7 @@ html .invoiceCancelRow-3s2UuC {
 .container-23VlYH {
     background-color: var(--background-secondary-alt);
     margin-top: 24px;
-    border-radius: 12px;
+    border-radius: var(--radius-md);
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex
@@ -131382,7 +131389,7 @@ html .invoiceCancelRow-3s2UuC {
 
 .post-2kZPfi {
     background-color: var(--background-primary);
-    border-radius: 12px;
+    border-radius: var(--radius-md);
     padding: 12px;
     -webkit-box-pack: justify;
     -ms-flex-pack: justify;
@@ -131441,7 +131448,7 @@ html .invoiceCancelRow-3s2UuC {
 
 .preview-3lPC77 {
     background-color: var(--background-primary);
-    border-radius: 12px;
+    border-radius: var(--radius-md);
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
     -ms-flex-direction: column;
@@ -131495,13 +131502,16 @@ html .invoiceCancelRow-3s2UuC {
     background-color: var(--brand-200);
     font-weight: 600;
     font-size: 10px;
-    padding: 2px 4px;
-    border-radius: 8px
+    padding: 2px 4px
+}
+
+.chatInput-2WlO0m,
+.opTag-1gdDoS {
+    border-radius: var(--radius-sm)
 }
 
 .chatInput-2WlO0m {
     background-color: var(--background-tertiary);
-    border-radius: 8px;
     padding: 12px 16px;
     margin: 12px 16px 16px
 }
@@ -131532,7 +131542,7 @@ html .invoiceCancelRow-3s2UuC {
 
 .fakeReactions-L4r2Wx {
     border: 1px solid var(--text-brand);
-    border-radius: 8px;
+    border-radius: var(--radius-sm);
     padding: 2px 6px
 }
 
@@ -131598,7 +131608,7 @@ html .invoiceCancelRow-3s2UuC {
 .demoImage-K9UvsR {
     margin-top: 24px;
     max-width: 100%;
-    border-radius: 16px
+    border-radius: var(--radius-lg)
 }
 
 .button-18kCi0 {
@@ -135095,7 +135105,7 @@ html .invoiceCancelRow-3s2UuC {
 }
 
 .modalRoot-3PoRGB {
-    border-radius: 8px
+    border-radius: var(--radius-sm)
 }
 
 .modal-1h0sIS {
@@ -135115,7 +135125,7 @@ html .invoiceCancelRow-3s2UuC {
 
 .forumPost-3MCART {
     border: 1px solid var(--background-modifier-accent);
-    border-radius: 12px;
+    border-radius: var(--radius-md);
     pointer-events: none;
     margin-top: 16px
 }
@@ -138355,7 +138365,7 @@ html .invoiceCancelRow-3s2UuC {
     flex-direction: column;
     text-align: center;
     background-color: var(--background-primary);
-    border-radius: 12px;
+    border-radius: var(--radius-md);
     margin-top: 16px;
     padding: 16px
 }
@@ -138409,7 +138419,7 @@ html .invoiceCancelRow-3s2UuC {
 
 .container-2_J666 {
     background-color: var(--background-primary);
-    border-radius: 12px;
+    border-radius: var(--radius-md);
     color: var(--interactive-normal);
     margin-top: 8px;
     margin-bottom: 12px;
@@ -138487,7 +138497,7 @@ html .invoiceCancelRow-3s2UuC {
     margin-top: 8px;
     padding: 12px 18px;
     background: var(--background-secondary);
-    border-radius: 8px;
+    border-radius: var(--radius-sm);
     color: var(--header-secondary);
     cursor: pointer
 }
@@ -138512,7 +138522,7 @@ html .invoiceCancelRow-3s2UuC {
 }
 
 .stepStatus-3oAHkt {
-    border-radius: 12px;
+    border-radius: var(--radius-md);
     margin-top: 10px
 }
 
@@ -138561,7 +138571,7 @@ html .invoiceCancelRow-3s2UuC {
 .rolePill-3OtAM1>div:first-of-type {
     font-size: 0;
     line-height: 0;
-    border-radius: 4px;
+    border-radius: var(--radius-xs);
     padding-left: 0;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -138589,7 +138599,7 @@ html .invoiceCancelRow-3s2UuC {
 .container-3arpDl {
     background-color: var(--background-primary);
     border: 1px solid var(--background-primary);
-    border-radius: 12px;
+    border-radius: var(--radius-md);
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
     padding: 12px;
@@ -138642,7 +138652,7 @@ html .invoiceCancelRow-3s2UuC {
     background-color: var(--background-secondary);
     padding: 16px;
     overflow: hidden;
-    border-radius: 8px;
+    border-radius: var(--radius-sm);
     position: relative
 }
 
@@ -138819,7 +138829,7 @@ html .invoiceCancelRow-3s2UuC {
 .increasedActivityMainCard-2ry6hI {
     background-color: var(--background-primary);
     border: 1px solid var(--home-card-resting-border);
-    border-radius: 12px;
+    border-radius: var(--radius-md);
     position: relative;
     bottom: 0
 }
@@ -138831,7 +138841,7 @@ html .invoiceCancelRow-3s2UuC {
 .mainCard-3KBsBI {
     background-color: var(--background-primary);
     border: 1px solid var(--home-card-resting-border);
-    border-radius: 12px
+    border-radius: var(--radius-md)
 }
 
 .emptyMainCard-2pg-47,
@@ -138926,7 +138936,7 @@ html .invoiceCancelRow-3s2UuC {
 }
 
 .sortPopout-zN4OCq {
-    border-radius: 4px;
+    border-radius: var(--radius-xs);
     width: auto !important
 }
 
@@ -138970,7 +138980,7 @@ html .invoiceCancelRow-3s2UuC {
 
 .loadingCard-3pIp9h {
     background-color: var(--background-primary);
-    border-radius: 12px;
+    border-radius: var(--radius-md);
     height: 102px;
     margin-bottom: 8px
 }
@@ -139029,7 +139039,7 @@ html .invoiceCancelRow-3s2UuC {
     height: 40px;
     padding: 4px 8px;
     margin-top: 4px;
-    border-radius: 4px;
+    border-radius: var(--radius-xs);
     background-color: var(--background-tertiary);
     display: -webkit-box;
     display: -ms-flexbox;
@@ -139045,7 +139055,7 @@ html .invoiceCancelRow-3s2UuC {
 .divider-2bkesd {
     width: 2px;
     height: 24px;
-    border-radius: 4px;
+    border-radius: var(--radius-xs);
     background-color: var(--background-modifier-accent);
     margin: 0 12px
 }
@@ -139128,7 +139138,7 @@ html .invoiceCancelRow-3s2UuC {
     margin-bottom: -1px;
     height: 32px;
     background-color: var(--background-tertiary);
-    border-radius: 24px;
+    border-radius: var(--radius-xl);
     padding: 8px 8px 8px 12px
 }
 
@@ -139305,7 +139315,7 @@ html .invoiceCancelRow-3s2UuC {
     width: 78px;
     height: 78px;
     background-color: var(--background-secondary-alt);
-    border-radius: 12px;
+    border-radius: var(--radius-md);
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -139366,7 +139376,7 @@ html .invoiceCancelRow-3s2UuC {
     flex-direction: row-reverse;
     height: 96px;
     padding: 8px;
-    border-radius: 16px;
+    border-radius: var(--radius-lg);
     background-color: var(--background-floating);
     -webkit-box-shadow: var(--elevation-medium);
     box-shadow: var(--elevation-medium);
@@ -139389,7 +139399,7 @@ html .invoiceCancelRow-3s2UuC {
 .image-3X4qqI {
     width: 78px;
     height: 78px;
-    border-radius: 12px
+    border-radius: var(--radius-md)
 }
 
 .badge-39TqBS {
@@ -139398,7 +139408,7 @@ html .invoiceCancelRow-3s2UuC {
     right: -4px;
     background-color: var(--brand-500);
     color: var(--white-500);
-    border-radius: 16px;
+    border-radius: var(--radius-lg);
     height: 16px;
     min-width: 8px;
     padding: 0 4px;
@@ -139511,7 +139521,7 @@ html .invoiceCancelRow-3s2UuC {
     -webkit-box-shadow: var(--elevation-high);
     box-shadow: var(--elevation-high);
     padding: 8px;
-    border-radius: 4px
+    border-radius: var(--radius-xs)
 }
 
 .header-cH4JI8 {
@@ -140179,7 +140189,7 @@ html .invoiceCancelRow-3s2UuC {
 .dots-BnC7QU {
     background-color: var(--background-tertiary);
     border: 3px solid var(--background-primary);
-    border-radius: 12px;
+    border-radius: var(--radius-md);
     height: 16px;
     -webkit-box-pack: center;
     -ms-flex-pack: center;
@@ -140212,7 +140222,7 @@ html .invoiceCancelRow-3s2UuC {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    border-radius: 4px
+    border-radius: var(--radius-xs)
 }
 
 .moreImagesPill-2ka20k {
@@ -140325,7 +140335,7 @@ html .invoiceCancelRow-3s2UuC {
     -ms-flex-align: center;
     align-items: center;
     border: 1px solid transparent;
-    border-radius: 8px;
+    border-radius: var(--radius-sm);
     margin-left: 12px;
     width: 100%;
     overflow: hidden;
@@ -140424,7 +140434,7 @@ html .invoiceCancelRow-3s2UuC {
     overflow: hidden;
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
-    border-radius: 8px;
+    border-radius: var(--radius-sm);
     border: 1px solid var(--background-modifier-accent);
     position: relative;
     background-color: var(--background-primary)
@@ -140524,7 +140534,7 @@ html .invoiceCancelRow-3s2UuC {
 }
 
 .newBadge-3reGJW {
-    border-radius: 12px;
+    border-radius: var(--radius-md);
     color: var(--brand-560);
     font-size: 10px
 }
@@ -140548,7 +140558,7 @@ html .invoiceCancelRow-3s2UuC {
 
 .card-3BPR1O {
     background-color: var(--background-primary);
-    border-radius: 12px;
+    border-radius: var(--radius-md);
     padding: 12px
 }
 
@@ -140576,7 +140586,7 @@ html .invoiceCancelRow-3s2UuC {
 .tag-3J_cO6 {
     background-color: var(--text-normal);
     width: 2.625rem;
-    border-radius: 12px;
+    border-radius: var(--radius-md);
     opacity: .06
 }
 
@@ -140586,7 +140596,7 @@ html .invoiceCancelRow-3s2UuC {
     height: 187px;
     -ms-flex-negative: 0;
     flex-shrink: 0;
-    border-radius: 8px
+    border-radius: var(--radius-sm)
 }
 
 .bodyMedia-Lo3ig4,
@@ -140608,7 +140618,7 @@ html .invoiceCancelRow-3s2UuC {
     height: 18px;
     background-color: var(--background-secondary);
     width: 30%;
-    border-radius: 8px
+    border-radius: var(--radius-sm)
 }
 
 .seperator-T85cpO {
@@ -140645,7 +140655,7 @@ html .invoiceCancelRow-3s2UuC {
 
 .firstMessage-KSF0TU,
 .title-1jjv36 {
-    border-radius: 8px
+    border-radius: var(--radius-sm)
 }
 
 .firstMessage-KSF0TU {
@@ -140669,7 +140679,7 @@ html .invoiceCancelRow-3s2UuC {
 
 .reactions-2lQAGh,
 .replies-1q4_9D {
-    border-radius: 8px
+    border-radius: var(--radius-sm)
 }
 
 .replies-1q4_9D {
@@ -140700,7 +140710,7 @@ html .invoiceCancelRow-3s2UuC {
     background-color: var(--background-primary);
     -webkit-box-shadow: var(--elevation-medium);
     box-shadow: var(--elevation-medium);
-    border-radius: 8px;
+    border-radius: var(--radius-sm);
     width: 180px
 }
 
@@ -141019,7 +141029,7 @@ html .invoiceCancelRow-3s2UuC {
     -ms-flex-align: center;
     align-items: center;
     padding: 8px;
-    border-radius: 4px
+    border-radius: var(--radius-xs)
 }
 
 .info-1oGfsf {
@@ -141760,7 +141770,7 @@ html .invoiceCancelRow-3s2UuC {
 .fakeInput-1_6lq6 {
     border: 1px solid var(--background-tertiary);
     background: var(--background-secondary);
-    border-radius: 4px;
+    border-radius: var(--radius-xs);
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -141898,7 +141908,7 @@ html .invoiceCancelRow-3s2UuC {
 
 .action-2Po5Sa {
     padding: 8px;
-    border-radius: 4px;
+    border-radius: var(--radius-xs);
     background-color: var(--background-secondary);
     border: 1px solid var(--background-tertiary)
 }
@@ -143782,7 +143792,7 @@ html .invoiceCancelRow-3s2UuC {
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
-    border-radius: 8px;
+    border-radius: var(--radius-sm);
     padding: 12px
 }
 
@@ -143965,7 +143975,7 @@ html .invoiceCancelRow-3s2UuC {
 .achievementContainer-2jBIZt {
     padding: 12px;
     background-color: var(--background-secondary);
-    border-radius: 8px;
+    border-radius: var(--radius-sm);
     cursor: pointer
 }
 
@@ -146012,7 +146022,7 @@ html .invoiceCancelRow-3s2UuC {
 
 .previewMessage-2g_aBv {
     padding: 8px;
-    border-radius: 4px;
+    border-radius: var(--radius-xs);
     margin-top: 16px;
     background-color: var(--background-primary)
 }
@@ -146254,7 +146264,7 @@ html .invoiceCancelRow-3s2UuC {
 
 .accountProfileCard-lbN7n- {
     background-color: var(--background-tertiary);
-    border-radius: 8px;
+    border-radius: var(--radius-sm);
     position: relative;
     overflow: hidden
 }
@@ -146309,7 +146319,7 @@ html .invoiceCancelRow-3s2UuC {
 }
 
 .background-3d_SjE {
-    border-radius: 8px;
+    border-radius: var(--radius-sm);
     background-color: var(--background-secondary);
     padding: 16px;
     margin: 8px 16px 16px
@@ -146358,7 +146368,7 @@ html .invoiceCancelRow-3s2UuC {
 }
 
 .fieldList-in8WkP {
-    border-radius: 8px;
+    border-radius: var(--radius-sm);
     background-color: var(--background-secondary)
 }
 
@@ -146819,7 +146829,7 @@ html .invoiceCancelRow-3s2UuC {
     -ms-flex-align: center;
     align-items: center;
     background: var(--background-secondary-alt);
-    border-radius: 8px;
+    border-radius: var(--radius-sm);
     padding: 24px 12px
 }
 
@@ -146858,7 +146868,7 @@ html .invoiceCancelRow-3s2UuC {
 .connectContainer-1hylYM {
     margin-bottom: 16px;
     background-color: var(--background-secondary-alt);
-    border-radius: 8px;
+    border-radius: var(--radius-sm);
     padding: 16px
 }
 
@@ -146893,7 +146903,7 @@ html .invoiceCancelRow-3s2UuC {
     width: 48px;
     height: 48px;
     color: var(--interactive-normal);
-    border-radius: 4px;
+    border-radius: var(--radius-xs);
     background-size: 36px 36px;
     background-repeat: no-repeat;
     background-position: 50%;
@@ -146921,7 +146931,7 @@ html .invoiceCancelRow-3s2UuC {
 .connection-YOVI9j {
     background-color: var(--background-secondary);
     width: 100%;
-    border-radius: 8px
+    border-radius: var(--radius-sm)
 }
 
 .connectionHeader-Ixbb1s {
@@ -147003,7 +147013,7 @@ html .invoiceCancelRow-3s2UuC {
 }
 
 .integration-1qC-fv {
-    border-radius: 8px;
+    border-radius: var(--radius-sm);
     background: var(--background-secondary-alt);
     padding: 16px;
     display: -webkit-box;
@@ -147076,7 +147086,7 @@ html .invoiceCancelRow-3s2UuC {
     -ms-flex-line-pack: start;
     align-content: flex-start;
     background-color: var(--background-tertiary);
-    border-radius: 8px;
+    border-radius: var(--radius-sm);
     padding: 8px 16px;
     margin: 20px 16px 0
 }
@@ -147249,7 +147259,7 @@ html .invoiceCancelRow-3s2UuC {
     font-size: 12px;
     line-height: 12px;
     padding: 3px 6px 4px;
-    border-radius: 4px;
+    border-radius: var(--radius-xs);
     text-align: center;
     -webkit-box-shadow: inset 0 -4px 0 var(--background-tertiary);
     box-shadow: inset 0 -4px 0 var(--background-tertiary);
@@ -148305,7 +148315,7 @@ html .invoiceCancelRow-3s2UuC {
     -ms-flex-align: start;
     align-items: flex-start;
     padding: 20px;
-    border-radius: 4px;
+    border-radius: var(--radius-xs);
     background-color: var(--background-tertiary)
 }
 
@@ -148347,7 +148357,7 @@ html .invoiceCancelRow-3s2UuC {
     margin-right: 10px;
     -ms-flex-negative: 0;
     flex-shrink: 0;
-    border-radius: 4px;
+    border-radius: var(--radius-xs);
     -ms-flex-item-align: start;
     align-self: flex-start;
     display: -webkit-box;
@@ -148368,7 +148378,7 @@ html .invoiceCancelRow-3s2UuC {
 
 .dropRewardImage-3EzmRx {
     width: 100%;
-    border-radius: 4px
+    border-radius: var(--radius-xs)
 }
 
 .dropCriteriaText-2chrEa {
@@ -148399,7 +148409,7 @@ html .invoiceCancelRow-3s2UuC {
 }
 
 .dropContainer-2rTNFx {
-    border-radius: 4px;
+    border-radius: var(--radius-xs);
     overflow: hidden;
     margin-bottom: 20px
 }
@@ -148440,7 +148450,7 @@ html .invoiceCancelRow-3s2UuC {
 .feedback-2vPl9d {
     font-size: 14px;
     color: var(--interactive-active);
-    border-radius: 4px;
+    border-radius: var(--radius-xs);
     font-weight: 500;
     margin-top: -12px;
     margin-bottom: 20px
@@ -148511,7 +148521,7 @@ html .invoiceCancelRow-3s2UuC {
     padding: 10px;
     grid-gap: 10px;
     font-size: 14px;
-    border-radius: 4px
+    border-radius: var(--radius-xs)
 }
 
 .removeKeybind-3J8M42 {
@@ -149176,7 +149186,7 @@ html .invoiceCancelRow-3s2UuC {
     -webkit-box-orient: vertical;
     -ms-flex-direction: column;
     flex-direction: column;
-    border-radius: 8px;
+    border-radius: var(--radius-sm);
     overflow: hidden;
     background-color: var(--background-secondary-alt)
 }
@@ -149386,7 +149396,7 @@ html .invoiceCancelRow-3s2UuC {
     -ms-flex-align: center;
     align-items: center;
     padding: 30px 18px;
-    border-radius: 8px;
+    border-radius: var(--radius-sm);
     background-color: var(--background-secondary-alt);
     position: relative;
     margin-bottom: 50px
@@ -149414,7 +149424,7 @@ html .invoiceCancelRow-3s2UuC {
 
 .wrapper-3htY7x {
     background-color: var(--background-secondary-alt);
-    border-radius: 8px;
+    border-radius: var(--radius-sm);
     padding: 16px 18px
 }
 
@@ -149460,7 +149470,7 @@ html .invoiceCancelRow-3s2UuC {
 }
 
 .recommendedServerCard-3f-92z {
-    border-radius: 8px;
+    border-radius: var(--radius-sm);
     position: relative
 }
 
@@ -149754,7 +149764,7 @@ html .invoiceCancelRow-3s2UuC {
 
 .cardWrapper-1bSePP {
     background: var(--background-tertiary);
-    border-radius: 4px
+    border-radius: var(--radius-xs)
 }
 
 .card-2xlCYc {
@@ -149963,7 +149973,7 @@ html .invoiceCancelRow-3s2UuC {
     padding: 8px;
     background: var(--background-tertiary);
     color: var(--interactive-active);
-    border-radius: 4px;
+    border-radius: var(--radius-xs);
     font-weight: 500
 }
 
@@ -150334,7 +150344,7 @@ html .invoiceCancelRow-3s2UuC {
 .cameraWrapper-nG8dpo {
     background-color: var(--background-secondary);
     border: 1px solid var(--background-tertiary);
-    border-radius: 4px;
+    border-radius: var(--radius-xs);
     width: 100%;
     min-height: 220px;
     display: -webkit-box;
@@ -150417,7 +150427,7 @@ html .invoiceCancelRow-3s2UuC {
     position: relative;
     top: 16px;
     height: 8px;
-    border-radius: 4px;
+    border-radius: var(--radius-xs);
     display: block;
     overflow: hidden
 }
@@ -151475,7 +151485,7 @@ html .invoiceCancelRow-3s2UuC {
     -ms-flex: 1;
     flex: 1;
     border: 1px solid var(--background-modifier-accent);
-    border-radius: 12px;
+    border-radius: var(--radius-md);
     padding: 12px
 }
 
@@ -151519,7 +151529,7 @@ html .invoiceCancelRow-3s2UuC {
 }
 
 .placeholderLine-86Fsd9 {
-    border-radius: 4px;
+    border-radius: var(--radius-xs);
     height: 8px;
     margin-bottom: 8px
 }
@@ -151532,8 +151542,12 @@ html .invoiceCancelRow-3s2UuC {
 .placeholderMedia-34JHvE {
     width: 64px;
     height: 64px;
-    border-radius: 8px;
     margin-left: 16px
+}
+
+.placeholderMedia-34JHvE,
+.reaction-BL6n45 {
+    border-radius: var(--radius-sm)
 }
 
 .reaction-BL6n45 {
@@ -151548,7 +151562,6 @@ html .invoiceCancelRow-3s2UuC {
     -ms-flex-align: center;
     align-items: center;
     background-color: var(--background-secondary);
-    border-radius: 8px;
     padding: 4px 6px;
     margin-right: 8px
 }
@@ -152717,7 +152730,7 @@ html .invoiceCancelRow-3s2UuC {
 
 .contentWrapper-2pLX__ {
     background-color: var(--background-secondary);
-    border-radius: 8px;
+    border-radius: var(--radius-sm);
     -webkit-box-shadow: var(--elevation-stroke), var(--elevation-high);
     box-shadow: var(--elevation-stroke), var(--elevation-high);
     -webkit-box-sizing: border-box;
@@ -152761,7 +152774,7 @@ html .invoiceCancelRow-3s2UuC {
 }
 
 .navButton-2UXXaK {
-    border-radius: 4px;
+    border-radius: var(--radius-xs);
     color: var(--interactive-normal);
     font-size: 16px;
     font-weight: 600;
@@ -152814,7 +152827,7 @@ html .invoiceCancelRow-3s2UuC {
 .uploadIconInnerContainer-2q37tB {
     padding: 8px;
     position: absolute;
-    border-radius: 8px;
+    border-radius: var(--radius-sm);
     background: var(--background-tertiary)
 }
 
@@ -153175,7 +153188,7 @@ html .invoiceCancelRow-3s2UuC {
 
 .deprivateTableBody-1pYyYb {
     background-color: var(--background-secondary);
-    border-radius: 8px;
+    border-radius: var(--radius-sm);
     margin: 8px 0;
     overflow: hidden
 }
@@ -153383,7 +153396,7 @@ html .invoiceCancelRow-3s2UuC {
 .roleLabel-34hvkV {
     display: inline-block;
     background-color: var(--background-modifier-accent);
-    border-radius: 4px;
+    border-radius: var(--radius-xs);
     padding: 1px 4px
 }
 
@@ -153416,7 +153429,7 @@ html .invoiceCancelRow-3s2UuC {
     width: -webkit-fit-content;
     width: -moz-fit-content;
     width: fit-content;
-    border-radius: 4px
+    border-radius: var(--radius-xs)
 }
 
 .channelRowLabel-3Y_t3O {
@@ -153470,7 +153483,7 @@ html .invoiceCancelRow-3s2UuC {
     -ms-flex-align: center;
     align-items: center;
     background-color: var(--background-tertiary);
-    border-radius: 4px;
+    border-radius: var(--radius-xs);
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -153556,7 +153569,7 @@ html .invoiceCancelRow-3s2UuC {
 
 .notice-23Ncr4 {
     background-color: hsl(var(--yellow-300-hsl)/.1);
-    border-radius: 4px;
+    border-radius: var(--radius-xs);
     border: 1px solid var(--status-warning-background);
     margin: 8px 0;
     padding: 8px
@@ -153756,7 +153769,7 @@ html .invoiceCancelRow-3s2UuC {
 }
 
 .modal-3DYIjv {
-    border-radius: 8px
+    border-radius: var(--radius-sm)
 }
 
 .header-3R3HJO {
@@ -153841,7 +153854,7 @@ html .invoiceCancelRow-3s2UuC {
     flex-direction: column;
     padding: 16px 20px;
     background-color: var(--background-secondary);
-    border-radius: 4px
+    border-radius: var(--radius-xs)
 }
 
 .tableHeader-Vpm9_C {
@@ -154338,7 +154351,7 @@ html .invoiceCancelRow-3s2UuC {
     align-items: center;
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
-    border-radius: 4px;
+    border-radius: var(--radius-xs);
     margin: 2px;
     padding: 4px 4px 4px 8px;
     -webkit-transition: none;
@@ -154428,7 +154441,7 @@ html .invoiceCancelRow-3s2UuC {
     border: 1px solid var(--background-tertiary);
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
-    border-radius: 4px
+    border-radius: var(--radius-xs)
 }
 
 .error-2Cn-dW {
@@ -157401,4 +157414,4 @@ html .invoiceCancelRow-dVOR64 {
     flex-direction: column
 }
 
-/*# sourceMappingURL=40532.f08303fd2bc78ac04774.css.map*/
+/*# sourceMappingURL=40532.e2cbbab702e96a3da21b.css.map*/
