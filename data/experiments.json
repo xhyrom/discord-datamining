@@ -7546,15 +7546,18 @@
       "label": "Go Live Broadcasting",
       "description": [
         "Control",
-        "Treatment 1: Allow user to Broadcast to friends & guilds"
+        "Treatment 1: Allow user to Broadcast to friends & guilds",
+        "Treatment 2: Cannot broadcast, cannot view broadcasts"
       ],
       "hash": 139947315,
       "buckets": [
         0,
-        1
+        1,
+        2
       ],
       "config_keys": [
-        "isBroadcastingEnabled"
+        "canBroadcast",
+        "canViewBroadcasts"
       ]
     }
   },
