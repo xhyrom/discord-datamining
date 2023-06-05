@@ -6,7 +6,7 @@ import months from "../months.js";
 import { readFile, writeFile } from "node:fs/promises";
 import { join } from "node:path";
 import simpleGit from "simple-git";
-import getRoutesString from "@adryd325/discord-datamining-lang-differ/getRoutesStrings.js";
+import getRoutesString from "@xhyrom-forks/discord-datamining-lang-differ/getRoutesStrings.js";
 
 const git = simpleGit({
   baseDir: join("..", ".."),

@@ -1,4 +1,4 @@
-import differ from "@adryd325/discord-datamining-lang-differ";
+import differ from "@xhyrom-forks/discord-datamining-lang-differ";
 import { readFile } from "node:fs/promises";
 import { EmbedBuilder } from "@discordjs/builders";
 import { join } from "node:path";
