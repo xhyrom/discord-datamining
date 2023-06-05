@@ -10252,8 +10252,7 @@ html.decorate-links .lowSaturationUnderline-Z6CW6z {
 
 .authorizedSuccessSubtext-3TL_wm {
     margin-top: 16px;
-    text-align: center;
-    margin-bottom: 24px
+    text-align: center
 }
 
 .cta-28oIaz {
@@ -10281,6 +10280,11 @@ html.decorate-links .lowSaturationUnderline-Z6CW6z {
 
 .authorizedSuccessWrapper-5FsKkl {
     padding: 24px
+}
+
+.buttonsContainer-201fCR {
+    margin-top: 24px;
+    width: 100%
 }
 
 .button-3TsMJA+.button-3TsMJA {
@@ -157397,4 +157401,4 @@ html .invoiceCancelRow-dVOR64 {
     flex-direction: column
 }
 
-/*# sourceMappingURL=40532.9789d69ee2671d9a495b.css.map*/
+/*# sourceMappingURL=40532.f08303fd2bc78ac04774.css.map*/
