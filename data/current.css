@@ -82570,20 +82570,20 @@ strong {
     background-color: var(--background-primary);
     -webkit-box-shadow: var(--elevation-low);
     box-shadow: var(--elevation-low);
-    border-radius: 12px
+    border-radius: var(--radius-md)
 }
 
 .connectedCounter-2eT6f4 {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    margin-bottom: 12px
+    margin-bottom: var(--spacing-12)
 }
 
 .icon-1hid89 {
     color: var(--text-normal);
-    margin-right: 4px;
-    margin-left: 4px
+    margin-right: var(--spacing-4);
+    margin-left: var(--spacing-4)
 }
 
 .tooltip-3kpmz2 {
@@ -82599,11 +82599,11 @@ strong {
     align-items: center;
     -webkit-box-shadow: var(--elevation-low);
     box-shadow: var(--elevation-low);
-    padding: 12px
+    padding: var(--spacing-12)
 }
 
 .headerText-2HDFaF {
-    margin-left: 12px;
+    margin-left: var(--spacing-12);
     width: 100%;
     overflow: hidden
 }
@@ -82652,14 +82652,14 @@ strong {
 }
 
 .emptyActivity-3Zqg2R {
-    margin-top: 30px;
+    margin-top: var(--spacing-32);
     -ms-flex-item-align: center;
     align-self: center
 }
 
 .actionSection-2pVCmc {
     margin-top: 20px;
-    margin-bottom: 8px
+    margin-bottom: var(--spacing-8)
 }
 
 .actions-3fxX7I {
@@ -82692,18 +82692,18 @@ strong {
 }
 
 .loadMore-3G_SqO {
-    padding-top: 4px;
-    padding-bottom: 4px
+    padding-top: var(--spacing-4);
+    padding-bottom: var(--spacing-4)
 }
 
 .spinner-1S-oU_ {
-    padding-top: 10px;
-    padding-bottom: 10px
+    padding-top: var(--spacing-12);
+    padding-bottom: var(--spacing-12)
 }
 
 .sectionDescription-rh_bDI,
 .sectionHeader-2u1rB2 {
-    margin-bottom: 4px
+    margin-bottom: var(--spacing-4)
 }
 
 .accountRow-2wvHFi {
@@ -82713,12 +82713,16 @@ strong {
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
-    width: 100%
+    width: 100%;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    margin-right: var(--spacing-4)
 }
 
 .select-3U80gm {
     min-width: 240px;
-    border-radius: 4px
+    border-radius: var(--radius-xs)
 }
 
 .row-XYkFDK {
@@ -157363,4 +157367,4 @@ html .invoiceCancelRow-dVOR64 {
     flex-direction: column
 }
 
-/*# sourceMappingURL=40532.12c4e39cea4995dbd8d7.css.map*/
+/*# sourceMappingURL=40532.f2531509c9131af4ce80.css.map*/
