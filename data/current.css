@@ -82219,7 +82219,8 @@ strong {
     display: flex;
     -webkit-box-align: center;
     -ms-flex-align: center;
-    align-items: center
+    align-items: center;
+    gap: 4px
 }
 
 .sideNavContent-D1tzYo {
@@ -157362,4 +157363,4 @@ html .invoiceCancelRow-dVOR64 {
     flex-direction: column
 }
 
-/*# sourceMappingURL=40532.be40b215ff30b56d8339.css.map*/
+/*# sourceMappingURL=40532.12c4e39cea4995dbd8d7.css.map*/
