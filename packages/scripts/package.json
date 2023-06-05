@@ -10,7 +10,7 @@
   "author": "xHyroM",
   "license": "MIT",
   "dependencies": {
-    "@adryd325/discord-datamining-lang-differ": "github:adryd325/discord-datamining-lang-differ",
+    "@adryd325/discord-datamining-lang-differ": "github:xhyrom-forks/discord-datamining-lang-differ",
     "@discordjs/builders": "^1.6.3",
     "@discordjs/rest": "^1.7.1",
     "@octokit/action": "^5.0.2",

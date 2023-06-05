@@ -11,8 +11,8 @@ importers:
   packages/scripts:
     dependencies:
       '@adryd325/discord-datamining-lang-differ':
-        specifier: github:adryd325/discord-datamining-lang-differ
-        version: github.com/adryd325/discord-datamining-lang-differ/dc193fa6f95cb015fdccfbdbca32d42fdfd34d22
+        specifier: github:xhyrom-forks/discord-datamining-lang-differ
+        version: github.com/xhyrom-forks/discord-datamining-lang-differ/65c05c6b0c30a1aa636da129c1622b36710bb399
       '@discordjs/builders':
         specifier: ^1.6.3
         version: 1.6.3
@@ -3758,6 +3758,10 @@ packages:
     engines: {node: '>=0.10.0'}
     dev: false
 
+  /object-deep-search@0.0.7:
+    resolution: {integrity: sha512-OZ6H1gWUVsN4mx9FrsZzWsYEgLImlUKH4A64dwl9029inekwiOYBLB+r0lbYXkHvLbMiQeOP9WRVYaCMB+HLzQ==}
+    dev: false
+
   /object-hash@3.0.0:
     resolution: {integrity: sha512-RSn9F68PjH9HqtltsSnqYC1XXoWe9Bju5+213R98cNGttag9q9yAOTzdbsqvIa7aNm5WffBZFpWYr2aWrklWAw==}
     engines: {node: '>= 6'}
@@ -5669,10 +5673,11 @@ packages:
     resolution: {integrity: sha512-bXE4cR/kVZhKZX/RjPEflHaKVhUVl85noU3v6b8apfQEc1x4A+zBxjZ4lN8LqGd6WZ3dl98pY4o717VFmoPp+A==}
     dev: false
 
-  github.com/adryd325/discord-datamining-lang-differ/dc193fa6f95cb015fdccfbdbca32d42fdfd34d22:
-    resolution: {tarball: https://codeload.github.com/adryd325/discord-datamining-lang-differ/tar.gz/dc193fa6f95cb015fdccfbdbca32d42fdfd34d22}
+  github.com/xhyrom-forks/discord-datamining-lang-differ/65c05c6b0c30a1aa636da129c1622b36710bb399:
+    resolution: {tarball: https://codeload.github.com/xhyrom-forks/discord-datamining-lang-differ/tar.gz/65c05c6b0c30a1aa636da129c1622b36710bb399}
     name: '@adryd325/discord-datamining-lang-differ'
-    version: 1.2.0
+    version: 1.3.0
     dependencies:
       espree: 9.5.2
+      object-deep-search: 0.0.7
     dev: false
