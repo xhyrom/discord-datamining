@@ -3617,6 +3617,31 @@
   {
     "data": {
       "kind": "user",
+      "id": "2023-05_collectibles",
+      "label": "Collectibles",
+      "description": [
+        "Control",
+        "Treatment 1: Nitro with collecting",
+        "Treatment 2: Non-nitro with collecting upsells",
+        "Treatment 3: Non-nitro with temporary avatar decorations upsells",
+        "Treatment 100: collecting with uploading"
+      ],
+      "hash": 2455278797,
+      "buckets": [
+        0,
+        1,
+        2,
+        3,
+        100
+      ],
+      "config_keys": [
+        "enabled"
+      ]
+    }
+  },
+  {
+    "data": {
+      "kind": "user",
       "id": "2023-05_avatar_decorations",
       "label": "Avatar Decorations Birthday 2023",
       "description": [
@@ -4291,31 +4316,6 @@
         ]
       },
       "overrides_formatted": []
-    }
-  },
-  {
-    "data": {
-      "kind": "user",
-      "id": "2023-05_collectibles",
-      "label": "Collectibles",
-      "description": [
-        "Control",
-        "Treatment 1: Nitro with collecting",
-        "Treatment 2: Non-nitro with collecting upsells",
-        "Treatment 3: Non-nitro with temporary avatar decorations upsells",
-        "Treatment 100: collecting with uploading"
-      ],
-      "hash": 2455278797,
-      "buckets": [
-        0,
-        1,
-        2,
-        3,
-        100
-      ],
-      "config_keys": [
-        "enabled"
-      ]
     }
   },
   {
@@ -9838,10 +9838,18 @@
       "populations": [
         {
           "buckets": {
-            "none": {
+            "1": {
               "rollout": [
                 {
                   "start": 300,
+                  "end": 600
+                }
+              ]
+            },
+            "none": {
+              "rollout": [
+                {
+                  "start": 600,
                   "end": 10000
                 }
               ]
