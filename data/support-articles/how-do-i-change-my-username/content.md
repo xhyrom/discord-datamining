@@ -1,11 +1,10 @@
-<h2>It's a simple task!</h2>
-<p>1. Click on your user settings tab</p>
-<p><img src="https://support.discord.com/hc/article_attachments/360098377433/user_settings.png" alt="user_settings.png"></p>
-<p>2. In the<strong> My Account</strong> tab of the <strong>User Settings</strong> menu, click that edit:</p>
-<p><img src="https://support.discord.com/hc/article_attachments/360098377533/edit_name.png" alt="edit_name.png" width="564" height="245"></p>
-<p>3. Change that username! Think of a schnazzy new name and type it on in:</p>
-<p><img src="https://support.discord.com/hc/article_attachments/360096082294/user_name.png" alt="user_name.png" width="564" height="441"></p>
-<p>4. Show Discord you mean business by adding your password:</p>
-<p><img src="https://support.discord.com/hc/article_attachments/360098377613/pw.png" alt="pw.png" width="564" height="435"></p>
-<h3>And you're all set! Keep in mind that usernames aren't unique, so you do technically have the ability to clone your friends' names. Remember, with great power comes great responsibility.. And it's probably best to not piss off your server mods.</h3>
-<p><em>Important note: Username changes are limited to 2 an hour. </em></p>
+<h3>
+    <span style="color: #434343;" data-darkreader-inline-color="">We are in the process of changing our username system and how usernames are displayed. You can learn more about this change through this </span><a href="https://support.discord.com/hc/en-us/articles/12620128861463-New-Usernames-Display-Names"><span class="wysiwyg-underline" style="color: #1155cc;" data-darkreader-inline-color="">article</span></a><span style="color: #434343;" data-darkreader-inline-color=""> and our </span><a href="https://discord.com/blog/usernames"><span class="wysiwyg-underline" style="color: #1155cc;" data-darkreader-inline-color="">blog</span></a><span style="color: #434343;" data-darkreader-inline-color="">.</span>
+</h3>
+<h2><strong><span style="color: #ae6607;" data-darkreader-inline-color="">It's A Simple Task!</span></strong></h2>
+<p><span style="color: #2e3338;" data-darkreader-inline-color="">1. Click on your user settings tab</span></p>
+<p><span style="color: #2e3338;" data-darkreader-inline-color="">2. In the My Account tab of the User Settings menu, click that edit:</span></p>
+<p><span style="color: #2e3338;" data-darkreader-inline-color="">3. Change that username! Think of a schnazzy new name and type it on in:</span></p>
+<p><span style="color: #2e3338;" data-darkreader-inline-color="">4. Show Discord you mean business by adding your password:</span></p>
+<h3><strong><span style="color: #104c32;" data-darkreader-inline-color="">And you're all set! Keep in mind that usernames aren't unique, so you do technically have the ability to clone your friends' names. Remember, with great power comes great responsibility.. And it's probably best to not piss off your server mods.</span></strong></h3>
+<p><em><span style="color: #2e3338;" data-darkreader-inline-color="">Important note: Username changes are limited to 2 an hour. </span></em></p>
