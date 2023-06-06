@@ -146371,6 +146371,12 @@ html .invoiceCancelRow-3s2UuC {
     height: 24px
 }
 
+.footer-1sUu8I {
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between
+}
+
 .lockIcon-3t6Ow0 {}
 
 .btn-3bxST1 {
@@ -157664,4 +157670,4 @@ html .invoiceCancelRow-dVOR64 {
     flex-direction: column
 }
 
-/*# sourceMappingURL=40532.fdf8876bcbc0395b5079.css.map*/
+/*# sourceMappingURL=40532.0c00fbd26b318800dfba.css.map*/
