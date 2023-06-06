@@ -92106,59 +92106,6 @@ strong {
     border: 2px solid CanvasText
 }
 
-.appText-3s1de- {
-    text-align: left;
-    max-width: 288px
-}
-
-.switchContainer-2II_Xm {
-    -ms-flex-negative: 0;
-    flex-shrink: 0;
-    margin-left: 8px
-}
-
-.toggleContainer-3Cpmim {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: row;
-    flex-direction: row;
-    padding: 16;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center
-}
-
-.icon--8wfnj {
-    border-radius: 100%;
-    margin-right: 16px
-}
-
-.headerContainer-1UzS17 {
-    -webkit-box-flex: 1;
-    -ms-flex: 1;
-    flex: 1;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: column;
-    flex-direction: column;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    justify-content: center
-}
-
-.separator-2TJzL9 {
-    margin-bottom: 16px;
-    margin-top: 16px;
-    border-bottom: 1px solid var(--background-modifier-accent);
-    width: 100%
-}
-
 .modalHeader-1V_jCD {
     -webkit-box-align: center;
     -ms-flex-align: center;
@@ -92274,6 +92221,43 @@ strong {
 
 .modal-1oA8C9 {
     max-height: 508px
+}
+
+.applicationRow-29JdRK {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center
+}
+
+.applicationRow-29JdRK:not(:first-child) {
+    padding-top: 16px
+}
+
+.applicationRow-29JdRK:not(:last-child) {
+    border-bottom: 1px solid var(--background-modifier-accent);
+    padding-bottom: 16px
+}
+
+.applicationIcon-iiuPIy {
+    border-radius: 50%;
+    margin-right: 16px
+}
+
+.applicationText-3ZBwCO {
+    text-align: left;
+    margin-right: 16px
+}
+
+.applicationButtonHack-caRgZ- {
+    -ms-flex-negative: 0;
+    flex-shrink: 0
 }
 
 .listRow-2nO1T6 {
@@ -157633,4 +157617,4 @@ html .invoiceCancelRow-dVOR64 {
     flex-direction: column
 }
 
-/*# sourceMappingURL=40532.dccb872b676cc8daafe6.css.map*/
+/*# sourceMappingURL=40532.9496d644f268896983d8.css.map*/
