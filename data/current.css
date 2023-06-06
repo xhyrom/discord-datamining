@@ -43188,6 +43188,14 @@ h6.title-1p9WyQ {
     color: Highlight
 }
 
+.brokenImageIcon-2UUIZ_ {
+    width: 48px;
+    height: auto;
+    -o-object-fit: contain;
+    object-fit: contain;
+    color: var(--background-accent)
+}
+
 .container-1diEqa {
     min-height: 130px;
     -ms-flex-wrap: wrap;
@@ -43275,21 +43283,33 @@ h6.title-1p9WyQ {
     border-radius: 8px 8px 0 0
 }
 
+.brokenImg-2U8h4Z {
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -ms-flex-pack: center;
+    background-color: #000
+}
+
+.brokenImg-2U8h4Z,
+.info-2WPmBw {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    justify-content: center
+}
+
 .info-2WPmBw {
     -webkit-box-flex: 1;
     -ms-flex: 1;
     flex: 1;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
     -ms-flex-direction: column;
     flex-direction: column;
     padding-right: auto;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    justify-content: center
+    -ms-flex-pack: center
 }
 
 .heading-efn8M2 {
@@ -86183,14 +86203,6 @@ strong {
 
 .icon-3H6fl3 {
     position: relative
-}
-
-.brokenImageIcon-2UUIZ_ {
-    width: 48px;
-    height: auto;
-    -o-object-fit: contain;
-    object-fit: contain;
-    color: var(--background-accent)
 }
 
 .activityItemButtonInnerClass-23Wx8I {
@@ -157444,4 +157456,4 @@ html .invoiceCancelRow-dVOR64 {
     flex-direction: column
 }
 
-/*# sourceMappingURL=40532.903f5821e9a625bd331d.css.map*/
+/*# sourceMappingURL=40532.4e687c95ff9eb359a3bd.css.map*/
