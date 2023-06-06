@@ -274,7 +274,7 @@
   "REACTION": "/channels/:param/messages/:param/reactions/:param/:param",
   "REACTION_WITH_TYPE": "/channels/:param/messages/:param/reactions/:param/:param/:param",
   "SEARCH_GUILD": "/guilds/:param/messages/search",
-  "SEARCH_DMS": "/users/:param/messages/search",
+  "SEARCH_DMS": "/users/@me/messages/search",
   "GUILD_APPLICATIONS": "/guilds/:param/applications",
   "APPLIED_GUILD_BOOSTS_FOR_GUILD": "/guilds/:param/premium/subscriptions",
   "APPLIED_GUILD_BOOST": "/guilds/:param/premium/subscriptions/:param",
