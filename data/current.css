@@ -156745,7 +156745,8 @@ html .invoiceCancelRow-3s2UuC {
     border: 1px solid var(--background-accent);
     border-radius: 4px;
     padding: 12px;
-    gap: 14px
+    gap: 14px;
+    cursor: pointer
 }
 
 .optionText-2EglTC {
@@ -157632,4 +157633,4 @@ html .invoiceCancelRow-dVOR64 {
     flex-direction: column
 }
 
-/*# sourceMappingURL=40532.acb0772298b3a765a5f2.css.map*/
+/*# sourceMappingURL=40532.dccb872b676cc8daafe6.css.map*/
