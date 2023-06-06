@@ -107088,11 +107088,31 @@ html .tabBadge-h4HGed {
 
 .showHideButton-25bHRG {
     padding-top: 2px;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
     gap: 6px;
     color: var(--interactive-hover)
+}
+
+.roleTag-12hkwd,
+.roleTagContainer-3c8xv8,
+.showHideButton-25bHRG {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex
+}
+
+.roleTag-12hkwd {
+    padding: 8px;
+    border-radius: 4px;
+    background: var(--background-modifier-hover);
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center
+}
+
+.roleColor-1d_WrY {
+    width: 12px;
+    height: 12px;
+    border-radius: 6px
 }
 
 .badge-1hTRAi {
@@ -152283,6 +152303,79 @@ html .invoiceCancelRow-3s2UuC {
     color: var(--interactive-normal)
 }
 
+.roleInputContainer-29uoeo {
+    position: relative
+}
+
+.roleColorContainer-1RK2oR {
+    position: absolute;
+    right: 0;
+    top: 0;
+    padding-right: 10px;
+    height: 100%;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex
+}
+
+.dropperIconContainer-1MQqLn {
+    height: 16px;
+    cursor: pointer
+}
+
+.dropperIconContainer-1MQqLn :hover {
+    -webkit-transition: opacity .2s ease;
+    transition: opacity .2s ease;
+    opacity: .85
+}
+
+.dropperIcon-1WrZrD {
+    color: var(--interactive-normal)
+}
+
+.roleColorPreview-1T6C8a {
+    width: 16px;
+    height: 16px;
+    border-radius: 50%
+}
+
+.attachedRoleContainer-LYLqUk {
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    padding: 12px 10px;
+    border-radius: 4px;
+    background-color: var(--background-secondary);
+    border: 1px solid var(--background-modifier-active)
+}
+
+.attachedRoleColor-2nhYs7 {
+    width: 16px;
+    height: 16px;
+    border-radius: 50%
+}
+
+.attachedRoleClose-1hBrvU {
+    height: 16px
+}
+
+.attachedRoleClose-1hBrvU :hover {
+    -webkit-transition: opacity .2s ease;
+    transition: opacity .2s ease;
+    opacity: .7
+}
+
+.attachedRoleCloseIcon-2FmoYL {
+    color: var(--text-normal);
+    cursor: pointer
+}
+
 .modalRoot-ni21gU {
     width: 1026px
 }
@@ -152343,7 +152436,35 @@ html .invoiceCancelRow-3s2UuC {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    -webkit-box-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between
+}
+
+.footerActionLeftButtons-DXANBe,
+.footerActionRightButtons-2YB03Q {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
     gap: 12px
+}
+
+.benefitToggleContainer-3VJ8VS {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    background-color: var(--background-modifier-hover);
+    border-radius: 8px;
+    padding: 7px 10px
 }
 
 .header-1XFMZK {
@@ -157511,4 +157632,4 @@ html .invoiceCancelRow-dVOR64 {
     flex-direction: column
 }
 
-/*# sourceMappingURL=40532.6d78882468a5d0f1b2bf.css.map*/
+/*# sourceMappingURL=40532.acb0772298b3a765a5f2.css.map*/
