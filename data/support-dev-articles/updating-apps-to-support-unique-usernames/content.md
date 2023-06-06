@@ -1,4 +1,3 @@
-<p class="callout"> </p>
 <h3>Table of Contents</h3>
 <ul>
     <li><a href="#h_01GYA8YEFHMQ365RN3K3Y3CSFG" target="_self" rel="undefined">How Apps are Affected</a></li>
@@ -35,6 +34,4 @@
 <p>Impersonation is against our terms of service and can be reported to our Trust and Safety team. We also have processes through which to act on Trademark disputes or DMCA takedowns. Those are all available through our online support form: <a href="https://dis.gd/contact">https://dis.gd/contact</a></p>
 <h3>Will apps be able to update their names?</h3>
 <p>Consider App names, business as usual! If yours is not verified, you can change its name within the app’s Developer Portal page. If your app is verified, you may <a href="https://dis.gd/developer-support" target="_self" rel="undefined">submit a request to Developer Support</a> and that request will be reviewed by a Support Agent.</p>
-<h3>
-    <span style="font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif; font-size: 15px;">As always, if you have any further questions please </span><a style="background-color: #282929; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif; font-size: 15px;" href="https://dis.gd/developer-support" target="_blank" rel="noopener noreferrer" data-darkreader-inline-bgcolor="">contact Developer Support</a><span style="font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif; font-size: 15px;">.</span>
-</h3>
+<p><span style="font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif; font-size: 15px;">As always, if you have any further questions please </span><a style="background-color: #282929; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif; font-size: 15px;" href="https://dis.gd/developer-support" target="_blank" rel="noopener noreferrer" data-darkreader-inline-bgcolor="">contact Developer Support</a><span style="font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif; font-size: 15px;">.</span></p>
