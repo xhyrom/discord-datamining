@@ -92262,6 +92262,10 @@ strong {
     max-height: 508px
 }
 
+.applicationRowContainer-2zJghe {
+    max-width: 100%
+}
+
 .applicationRow-29JdRK {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -92291,7 +92295,8 @@ strong {
 
 .applicationText-3ZBwCO {
     text-align: left;
-    margin-right: 16px
+    margin-right: 16px;
+    min-width: 0
 }
 
 .applicationButtonHack-caRgZ- {
@@ -157659,4 +157664,4 @@ html .invoiceCancelRow-dVOR64 {
     flex-direction: column
 }
 
-/*# sourceMappingURL=40532.9c6601e9bfa291ec26da.css.map*/
+/*# sourceMappingURL=40532.fdf8876bcbc0395b5079.css.map*/
