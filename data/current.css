@@ -1965,6 +1965,7 @@ html.decorate-links .lowSaturationUnderline-Z6CW6z {
 
 .enable-forced-colors.theme-dark .button-ejjZWC .contents-3NembX,
 .enable-forced-colors.theme-light .button-ejjZWC .contents-3NembX {
+    forced-color-adjust: none;
     color: ButtonText
 }
 
@@ -7361,6 +7362,7 @@ html.decorate-links .lowSaturationUnderline-Z6CW6z {
 }
 
 .enable-forced-colors .interactive-26HRN_ {
+    forced-color-adjust: none;
     background-color: ButtonFace;
     border: 1px solid ButtonFace;
     color: ButtonText
@@ -7671,6 +7673,7 @@ html.decorate-links .lowSaturationUnderline-Z6CW6z {
 }
 
 .enable-forced-colors .colorDefault-2_rLdz {
+    forced-color-adjust: none;
     background-color: ButtonFace;
     border: 1px solid ButtonFace;
     color: ButtonText
@@ -8175,6 +8178,7 @@ html.decorate-links .lowSaturationUnderline-Z6CW6z {
 }
 
 .enable-forced-colors .pageButton-uta6J3 {
+    forced-color-adjust: none;
     background-color: ButtonFace;
     color: ButtonText
 }
@@ -9204,6 +9208,7 @@ html.decorate-links .lowSaturationUnderline-Z6CW6z {
 }
 
 .enable-forced-colors .option-Uc12mm {
+    forced-color-adjust: none;
     background-color: Canvas;
     border: 1px solid Canvas;
     color: CanvasText
@@ -9432,6 +9437,7 @@ html.decorate-links .lowSaturationUnderline-Z6CW6z {
 }
 
 .enable-forced-colors .item-2GWPIy {
+    forced-color-adjust: none;
     background-color: ButtonFace !important;
     border: 1px solid ButtonFace;
     color: ButtonText !important
@@ -12054,6 +12060,11 @@ html.disable-forced-colors * {
 .enable-forced-colors .userProfileModalOuter-2wdWjU,
 .enable-forced-colors .userProfileOuter-2tQwNf {
     border: 2px solid CanvasText
+}
+
+.enable-forced-colors .userPopoutOverlayBackground-3A0Pcz,
+.enable-forced-colors .userProfileInner-1ngKnf:before {
+    background-color: Canvas
 }
 
 .divider-2dDziJ {
@@ -17189,6 +17200,7 @@ html.disable-forced-colors * {
     border-left-width: 0
 }
 
+.enable-forced-colors .roleMention-11Aaqi,
 .enable-forced-colors .mention {
     background-color: ButtonFace;
     color: ButtonText;
@@ -36119,12 +36131,6 @@ img[alt] {
     color: hsl(var(--white-500-hsl)/.4)
 }
 
-.enable-forced-colors .username-h_Y3Us {
-    background-color: ButtonFace;
-    color: ButtonText !important;
-    text-decoration: underline
-}
-
 .badgesContainer-Pqq0Kv {
     display: -webkit-inline-box;
     display: -ms-inline-flexbox;
@@ -36142,6 +36148,13 @@ img[alt] {
 
 .cozy-VmLDNB .badgesContainer-Pqq0Kv {
     margin-left: .25rem
+}
+
+.enable-forced-colors .headerText-2z4IhQ .username-h_Y3Us {
+    forced-color-adjust: none;
+    background-color: Canvas;
+    color: ButtonText;
+    text-decoration: underline
 }
 
 .badge-2WCXoe {
@@ -45801,6 +45814,7 @@ input[type=checked]:focus-visible+.label-3TDpbn {
 }
 
 .enable-forced-colors .interactive-MpGq2z {
+    forced-color-adjust: none;
     background-color: ButtonFace;
     color: ButtonText
 }
@@ -50094,6 +50108,15 @@ input[type=checked]:focus-visible+.label-3TDpbn {
 
 .interactionSending-3fE-1R {
     opacity: .5
+}
+
+.enable-forced-colors .automodMessage-265YwJ:before,
+.enable-forced-colors .ephemeral-2nDdnn:before,
+.enable-forced-colors .highlighted-1TaRLI:before,
+.enable-forced-colors .mentioned-Tre-dv:before,
+.enable-forced-colors .replying-eZ7p5z:before {
+    forced-color-adjust: none;
+    width: 4px
 }
 
 .pro-3GwLMX {
@@ -59423,13 +59446,13 @@ strong {
     width: 32px
 }
 
-.premiumCategory-1bZwXQ:hover {
+.firstPartyCategory-2ZVMkC:hover {
     background-color: var(--background-modifier-hover);
     color: var(--interactive-hover)
 }
 
-.premiumCategorySelected-2KWLhN,
-.premiumCategorySelected-2KWLhN:hover,
+.firstPartyCategorySelected-2zQ3yM,
+.firstPartyCategorySelected-2zQ3yM:hover,
 .stickerCategoryGenericSelected-DnO2K8,
 .stickerCategoryGenericSelected-DnO2K8:hover {
     background-color: var(--background-primary)
@@ -59537,16 +59560,16 @@ strong {
     color: GrayText
 }
 
-.enable-forced-colors .premiumCategorySelected-2KWLhN,
-.enable-forced-colors .premiumCategorySelected-2KWLhN:hover,
+.enable-forced-colors .firstPartyCategorySelected-2zQ3yM,
+.enable-forced-colors .firstPartyCategorySelected-2zQ3yM:hover,
 .enable-forced-colors .stickerCategoryGenericSelected-DnO2K8,
 .enable-forced-colors .stickerCategoryGenericSelected-DnO2K8:hover {
     background-color: HighlightText;
     border-color: Highlight
 }
 
-.enable-forced-colors .premiumCategorySelected-2KWLhN .stickerCategoryGenericIcon-3wumVD,
-.enable-forced-colors .premiumCategorySelected-2KWLhN:hover .stickerCategoryGenericIcon-3wumVD,
+.enable-forced-colors .firstPartyCategorySelected-2zQ3yM .stickerCategoryGenericIcon-3wumVD,
+.enable-forced-colors .firstPartyCategorySelected-2zQ3yM:hover .stickerCategoryGenericIcon-3wumVD,
 .enable-forced-colors .stickerCategoryGenericSelected-DnO2K8 .stickerCategoryGenericIcon-3wumVD,
 .enable-forced-colors .stickerCategoryGenericSelected-DnO2K8:hover .stickerCategoryGenericIcon-3wumVD {
     color: Highlight
@@ -66015,6 +66038,7 @@ strong {
 }
 
 .enable-forced-colors .cursorPointer-3JF56F {
+    forced-color-adjust: none;
     background-color: ButtonFace;
     color: ButtonText;
     text-decoration: underline
@@ -73956,6 +73980,7 @@ strong {
 .enable-forced-colors .icon-2W8DHg,
 .enable-forced-colors .mainContent-20q_Hp,
 .enable-forced-colors .name-28HaxV {
+    forced-color-adjust: none;
     color: ButtonText
 }
 
@@ -79625,6 +79650,7 @@ strong {
 }
 
 .enable-forced-colors .clickable-vvKY2q .header-3OsQeK {
+    forced-color-adjust: none;
     background-color: ButtonFace;
     color: ButtonText
 }
@@ -83148,6 +83174,7 @@ strong {
 }
 
 .enable-forced-colors .actionButton-3eYdq1 {
+    forced-color-adjust: none;
     background-color: ButtonFace;
     border: 1px solid ButtonFace;
     color: ButtonText
@@ -85144,6 +85171,7 @@ strong {
 }
 
 .enable-forced-colors .actionButton-3-B2x- {
+    forced-color-adjust: none;
     background-color: ButtonFace;
     border: 1px solid ButtonFace;
     color: ButtonText
@@ -87881,8 +87909,16 @@ strong {
     color: var(--red-400)
 }
 
-.enable-forced-colors .wrapper-9CUbzN {
-    border: 1px solid ButtonText
+.enable-forced-colors .border-2Vy6FN {
+    forced-color-adjust: none;
+    -webkit-box-shadow: inset 0 0 0 1px ButtonText;
+    box-shadow: inset 0 0 0 1px ButtonText
+}
+
+.enable-forced-colors .border-2Vy6FN.speaking-7QZEkv,
+.enable-forced-colors .border-2Vy6FN.voiceChannelEffect-1J1MWE {
+    -webkit-box-shadow: inset 0 0 0 2px Highlight, inset 0 0 0 3px var(--black-500);
+    box-shadow: inset 0 0 0 2px Highlight, inset 0 0 0 3px var(--black-500)
 }
 
 .container-1l_891 {
@@ -90982,6 +91018,7 @@ strong {
 }
 
 .enable-forced-colors .text-NKMwrd {
+    forced-color-adjust: none;
     background-color: ButtonFace;
     color: ButtonText;
     text-decoration: underline
@@ -98759,6 +98796,7 @@ strong {
 
 .enable-forced-colors .interactive-iyXY_x,
 .enable-forced-colors .link-39sEB3 {
+    forced-color-adjust: none;
     color: ButtonText
 }
 
@@ -101423,6 +101461,7 @@ html .tabBadge-h4HGed {
 }
 
 .enable-forced-colors .categoryItem-Kc_HK_ {
+    forced-color-adjust: none;
     color: ButtonText
 }
 
@@ -130136,6 +130175,7 @@ html .invoiceCancelRow-3s2UuC {
 }
 
 .enable-forced-colors .channelContainer-7uiQGJ {
+    forced-color-adjust: none;
     background-color: ButtonFace;
     color: ButtonText;
     text-decoration: underline
@@ -157617,4 +157657,4 @@ html .invoiceCancelRow-dVOR64 {
     flex-direction: column
 }
 
-/*# sourceMappingURL=40532.9496d644f268896983d8.css.map*/
+/*# sourceMappingURL=40532.1e27b216fc767e06cea6.css.map*/
