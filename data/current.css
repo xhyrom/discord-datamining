@@ -50641,6 +50641,55 @@ input[type=checked]:focus-visible+.label-3TDpbn {
     margin-bottom: 16px
 }
 
+.applicationIcon-39og1c {
+    margin-right: .5em
+}
+
+.submissionWarning-1UHj36 {
+    margin-bottom: 16px
+}
+
+.modalRoot-2Qy0fB {
+    border-radius: var(--radius-md) var(--radius-md) 0 0
+}
+
+.modalHeader-WudL3K {
+    color: var(--background-primary)
+}
+
+.closeButtonContainer-3CgePX {
+    position: absolute;
+    top: 8px;
+    right: 16px;
+    border-radius: 48px;
+    line-height: 24px;
+    height: 24px
+}
+
+.closeButton-3EdWTC {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center
+}
+
+.closeIcon-3_vMzj {
+    width: 16px;
+    height: 16px;
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 auto;
+    flex: 0 0 auto;
+    margin-right: 6px
+}
+
+.iframe-1g4XVa {
+    display: block;
+    width: auto;
+    height: 100%
+}
+
 .header-1LEkUo {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -157924,4 +157973,4 @@ html .invoiceCancelRow-dVOR64 {
     flex-direction: column
 }
 
-/*# sourceMappingURL=40532.e4e502352faa442ab9ea.css.map*/
+/*# sourceMappingURL=40532.f3ab325f3e2b1d9b344b.css.map*/
