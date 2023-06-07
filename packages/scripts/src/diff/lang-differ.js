@@ -22,8 +22,8 @@ export function differStrings(file1, file2) {
   return builtString ? builtString : "";
 }
 
-export function differRoutes(file1, file2) {
-  const filesRoutesStrings = [getRoutesStrings(file1), getRoutesStrings(file2)];
+export function differRoutes(routes1, routes2) {
+  const filesRoutesStrings = [routes1, routes2];
 
   const { addedStrings, updatedStrings, removedStrings } =
     diff(filesRoutesStrings);

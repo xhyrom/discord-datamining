@@ -113,27 +113,24 @@ export const routes = async (octokit, eventPayload) => {
   });
 
   // make sure its commit with routes.json
-  const currentRoutesFile = diff.data.files.find((file) =>
+  const currentRoutesFile = diff.data?.files?.find((file) =>
     file.filename.includes("routes.json")
   );
   if (!currentRoutesFile || !currentRoutesFile?.patch) return "";
 
-  // we are not using routes.json because implementation in @xhyrom-forks/discord-datamining-lang-differ is different, but this works
-  const oldContent = await (
+  const oldRoutes = await (
     await fetch(
-      `https://raw.githubusercontent.com/xHyroM/discord-datamining/${eventPayload.before}/data/current.js`
+      `https://raw.githubusercontent.com/xHyroM/discord-datamining/${eventPayload.before}/data/routes.json`
     )
-  ).text();
+  ).json();
 
-  const newContent = await (
-    await fetch(
-      `https://raw.githubusercontent.com/xHyroM/discord-datamining/${eventPayload.after}/data/current.js`
-    )
-  ).text();
+  const newRoutes = JSON.parse(
+    await readFile(join("..", "..", "data", "routes.json"), "utf-8")
+  );
 
   let comment = "";
   try {
-    comment = differRoutes(oldContent, newContent);
+    comment = differRoutes(oldRoutes, newRoutes);
   } catch {}
 
   return comment;
