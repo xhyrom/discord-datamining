@@ -542,6 +542,8 @@
   "DELETE_USER_TRIAL_OFFER": "/user-trial-offers/:param",
   "UNACK_USER_TRIAL_OFFER": "/user-trial-offers/:param/unack",
   "USER_TRIAL_OFFERS": "/user-trial-offers",
+  "INVENTORY_COLLECT": "/users/@me/inventory/packs/collect",
+  "INVENTORY_UNCOLLECT": "/users/@me/inventory/packs/uncollect",
   "APP": "/app",
   "APP_WITH_INVITE_AND_GUILD_ONBOARDING": "/app/invite-with-guild-onboarding/:param",
   "ACTIVITY": "/activity",
