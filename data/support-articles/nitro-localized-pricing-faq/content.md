@@ -17,7 +17,7 @@
     <li style="font-weight: 400;" aria-level="1"><span style="font-weight: 400;">If you are using an eligible payment method, you will automatically switch to the new price + currency. The change will take effect at your next billing cycle.</span></li>
     <li style="font-weight: 400;" aria-level="1"><span style="font-weight: 400;">If you use a payment method that does not support, or are located in a region where Discord doesn't offer localized pricing, our system will automatically charge in USD instead.</span></li>
 </ul>
-<h3><span style="font-weight: 400;">Looking for region specific payment methods? Check out this article <a href="https://support.discord.com/hc/en-us/articles/360017693772" target="_blank" rel="noopener noreferrer">here</a> for a list of acceptable payment methods.</span></h3>
+<h3 id="01H2BKS1DFVFEYMEQM0PMD3ES2"><span style="font-weight: 400;">Looking for region specific payment methods? Check out this article <a href="https://support.discord.com/hc/en-us/articles/360017693772" target="_blank" rel="noopener noreferrer">here</a> for a list of acceptable payment methods.</span></h3>
 <h1 id="h_01GFV5T14GW6CXF9VYAJRM04X9">Localized Prices</h1>
 <table style="height: 412px;">
     <tbody>
@@ -76,10 +76,10 @@
                 <p><strong>lira</strong></p>
             </td>
             <td style="height: 22px; width: 67.4px;">
-                <p><span style="font-weight: 400;">26.99</span></p>
+                <p><span style="font-weight: 400;">74.99</span></p>
             </td>
             <td style="height: 22px; width: 76.3px;">
-                <p><span style="font-weight: 400;">269.99</span></p>
+                <p><span style="font-weight: 400;">749.99</span></p>
             </td>
         </tr>
         <tr style="height: 22px;">
@@ -202,7 +202,7 @@
                 <p><strong>rupiah</strong></p>
             </td>
             <td style="height: 22px; width: 67.4px;">
-                <p><span style="font-weight: 400;">83,169</span></p>
+                <p><span style="font-weight: 400;">83169</span></p>
             </td>
             <td style="height: 22px; width: 76.3px;">
                 <p><span style="font-weight: 400;">831690</span></p>
@@ -230,10 +230,10 @@
                 <p><strong>baht</strong></p>
             </td>
             <td style="height: 22px; width: 67.4px;">
-                <p><span style="font-weight: 400;">215.00</span></p>
+                <p><span style="font-weight: 400;">215</span></p>
             </td>
             <td style="height: 22px; width: 76.3px;">
-                <p><span style="font-weight: 400;">2150.00</span></p>
+                <p><span style="font-weight: 400;">2150</span></p>
             </td>
         </tr>
         <tr style="height: 22px;">
@@ -281,13 +281,13 @@
     </tbody>
 </table>
 <p> </p>
-<table style="height: 408px; width: 227px;" width="194">
+<table style="height: 386px; width: 227px;" width="194">
     <tbody>
         <tr style="height: 28px;">
-            <td style="height: 28px; width: 174.9px;" colspan="3">
+            <td style="height: 28px; width: 175.1px;" colspan="3">
                 <p><span class="wysiwyg-font-size-large wysiwyg-color-blue90"><strong>Nitro Basic</strong></span></p>
             </td>
-            <td style="width: 76.3px;">
+            <td style="width: 76.3px; height: 28px;">
                 <p><span class="wysiwyg-font-size-large wysiwyg-color-blue90"><strong> </strong></span></p>
             </td>
         </tr>
@@ -301,7 +301,7 @@
             <td style="height: 22px; width: 63.1px;">
                 <p><strong>Monthly</strong></p>
             </td>
-            <td style="width: 76.3px;"><strong>Yearly</strong></td>
+            <td style="width: 76.3px; height: 22px;"><strong>Yearly</strong></td>
         </tr>
         <tr style="height: 22px;">
             <td style="height: 22px; width: 37.55px;">
@@ -313,7 +313,7 @@
             <td style="height: 22px; width: 63.1px;">
                 <p><span style="font-weight: 400;">2.99</span></p>
             </td>
-            <td style="width: 76.3px;">
+            <td style="width: 76.3px; height: 22px;">
                 <p><span style="font-weight: 400;">29.99<br></span></p>
             </td>
         </tr>
@@ -327,8 +327,22 @@
             <td style="height: 22px; width: 63.1px;">
                 <p><span style="font-weight: 400;">8.90</span></p>
             </td>
-            <td style="width: 76.3px;">
+            <td style="width: 76.3px; height: 22px;">
                 <p><span style="font-weight: 400;">89.90<br></span></p>
+            </td>
+        </tr>
+        <tr>
+            <td style="width: 37.55px;">
+                <p><strong>TRY<br></strong></p>
+            </td>
+            <td style="width: 52.45px;">
+                <p><strong>lira<br></strong></p>
+            </td>
+            <td style="width: 63.1px;">
+                <p><span style="font-weight: 400;">26.99<br></span></p>
+            </td>
+            <td style="width: 76.3px;">
+                <p><span style="font-weight: 400;">269.99<br></span></p>
             </td>
         </tr>
         <tr style="height: 22px;">
@@ -341,7 +355,7 @@
             <td style="height: 22px; width: 63.1px;">
                 <p><span style="font-weight: 400;">13.99</span></p>
             </td>
-            <td style="width: 76.3px;">
+            <td style="width: 76.3px; height: 22px;">
                 <p><span style="font-weight: 400;">139.99<br></span></p>
             </td>
         </tr>
@@ -355,7 +369,7 @@
             <td style="height: 22px; width: 63.1px;">
                 <p><span style="font-weight: 400;">4.49</span></p>
             </td>
-            <td style="width: 76.3px;">
+            <td style="width: 76.3px; height: 22px;">
                 <p><span style="font-weight: 400;">44.99<br></span></p>
             </td>
         </tr>
@@ -369,7 +383,7 @@
             <td style="height: 22px; width: 63.1px;">
                 <p><span style="font-weight: 400;">99.00</span></p>
             </td>
-            <td style="width: 76.3px;">
+            <td style="width: 76.3px; height: 22px;">
                 <p><span style="font-weight: 400;">999.00<br></span></p>
             </td>
         </tr>
@@ -383,7 +397,7 @@
             <td style="height: 22px; width: 63.1px;">
                 <p><span style="font-weight: 400;">8.90</span></p>
             </td>
-            <td style="width: 76.3px;">
+            <td style="width: 76.3px; height: 22px;">
                 <p><span style="font-weight: 400;">89.90<br></span></p>
             </td>
         </tr>
@@ -397,7 +411,7 @@
             <td style="height: 22px; width: 63.1px;">
                 <p><span style="font-weight: 400;">216.99</span></p>
             </td>
-            <td style="width: 76.3px;">
+            <td style="width: 76.3px; height: 22px;">
                 <p><span style="font-weight: 400;">2169.99</span></p>
             </td>
         </tr>
@@ -409,10 +423,10 @@
                 <p><strong>peso</strong></p>
             </td>
             <td style="height: 22px; width: 63.1px;">
-                <p><span style="font-weight: 400;">1900.00</span></p>
+                <p><span style="font-weight: 400;">1900</span></p>
             </td>
-            <td style="width: 76.3px;">
-                <p><span style="font-weight: 400;">18900.00<br></span></p>
+            <td style="width: 76.3px; height: 22px;">
+                <p><span style="font-weight: 400;">18900<br></span></p>
             </td>
         </tr>
         <tr style="height: 22px;">
@@ -423,10 +437,10 @@
                 <p><strong>peso</strong></p>
             </td>
             <td style="height: 22px; width: 63.1px;">
-                <p><span style="font-weight: 400;">7500.00</span></p>
+                <p><span style="font-weight: 400;">7500</span></p>
             </td>
-            <td style="width: 76.3px;">
-                <p><span style="font-weight: 400;">74900.00<br></span></p>
+            <td style="width: 76.3px; height: 22px;">
+                <p><span style="font-weight: 400;">74900<br></span></p>
             </td>
         </tr>
         <tr style="height: 22px;">
@@ -437,10 +451,10 @@
                 <p><strong>yen</strong></p>
             </td>
             <td style="height: 22px; width: 63.1px;">
-                <p><span style="font-weight: 400;">350.00</span></p>
+                <p><span style="font-weight: 400;">350</span></p>
             </td>
-            <td style="width: 76.3px;">
-                <p><span style="font-weight: 400;">3500.00<br></span></p>
+            <td style="width: 76.3px; height: 22px;">
+                <p><span style="font-weight: 400;">3500<br></span></p>
             </td>
         </tr>
         <tr style="height: 22px;">
@@ -453,8 +467,8 @@
             <td style="height: 22px; width: 63.1px;">
                 <p><span style="font-weight: 400;">29000</span></p>
             </td>
-            <td style="width: 76.3px;">
-                <p><span style="font-weight: 400;">289000.00<br></span></p>
+            <td style="width: 76.3px; height: 22px;">
+                <p><span style="font-weight: 400;">289000<br></span></p>
             </td>
         </tr>
         <tr style="height: 22px;">
@@ -467,7 +481,7 @@
             <td style="height: 22px; width: 63.1px;">
                 <p><span style="font-weight: 400;">11.90</span></p>
             </td>
-            <td style="width: 76.3px;">
+            <td style="width: 76.3px; height: 22px;">
                 <p><span style="font-weight: 400;">119.90<br></span></p>
             </td>
         </tr>
@@ -481,8 +495,8 @@
             <td style="height: 22px; width: 63.1px;">
                 <p><span style="font-weight: 400;">79</span></p>
             </td>
-            <td style="width: 76.3px;">
-                <p><span style="font-weight: 400;">789.00<br></span></p>
+            <td style="width: 76.3px; height: 22px;">
+                <p><span style="font-weight: 400;">789<br></span></p>
             </td>
         </tr>
         <tr style="height: 22px;">
@@ -495,8 +509,8 @@
             <td style="height: 22px; width: 63.1px;">
                 <p><span style="font-weight: 400;">42000</span></p>
             </td>
-            <td style="width: 76.3px;">
-                <p><span style="font-weight: 400;">419000.00<br></span></p>
+            <td style="width: 76.3px; height: 22px;">
+                <p><span style="font-weight: 400;">419000<br></span></p>
             </td>
         </tr>
         <tr style="height: 18px;">
@@ -509,8 +523,8 @@
             <td style="height: 18px; width: 63.1px;">
                 <p><span style="font-weight: 400;">49</span></p>
             </td>
-            <td style="width: 76.3px;">
-                <p><span style="font-weight: 400;">489.00<br></span></p>
+            <td style="width: 76.3px; height: 18px;">
+                <p><span style="font-weight: 400;">489<br></span></p>
             </td>
         </tr>
         <tr style="height: 10px;">
@@ -523,8 +537,8 @@
             <td style="height: 10px; width: 63.1px;">
                 <p><span style="font-weight: 400;">3500</span></p>
             </td>
-            <td style="width: 76.3px;">
-                <p><span style="font-weight: 400;">35000.00<br></span></p>
+            <td style="width: 76.3px; height: 10px;">
+                <p><span style="font-weight: 400;">35000<br></span></p>
             </td>
         </tr>
     </tbody>
@@ -587,10 +601,10 @@
                 <p><strong>lira</strong></p>
             </td>
             <td>
-                <p><span style="font-weight: 400;">13.49</span></p>
+                <p><span style="font-weight: 400;">36.99</span></p>
             </td>
             <td>
-                <p><span style="font-weight: 400;">134.49</span></p>
+                <p><span style="font-weight: 400;">369.99</span></p>
             </td>
         </tr>
         <tr>
@@ -660,7 +674,7 @@
                 <p><span style="font-weight: 400;">291.99</span></p>
             </td>
             <td>
-                <p><span style="font-weight: 400;">2,919.99</span></p>
+                <p><span style="font-weight: 400;">2919.99</span></p>
             </td>
         </tr>
         <tr>
@@ -741,10 +755,10 @@
                 <p><strong>baht</strong></p>
             </td>
             <td>
-                <p><span style="font-weight: 400;">107.00</span></p>
+                <p><span style="font-weight: 400;">107</span></p>
             </td>
             <td>
-                <p><span style="font-weight: 400;">1070.00</span></p>
+                <p><span style="font-weight: 400;">1070</span></p>
             </td>
         </tr>
         <tr>
@@ -772,7 +786,7 @@
                 <p><span style="font-weight: 400;">79</span></p>
             </td>
             <td>
-                <p><span style="font-weight: 400;">790.00</span></p>
+                <p><span style="font-weight: 400;">790</span></p>
             </td>
         </tr>
         <tr>
@@ -849,10 +863,10 @@
                 <p><strong>lira</strong></p>
             </td>
             <td>
-                <p><span style="font-weight: 400;">41.99</span></p>
+                <p><span style="font-weight: 400;">97.25</span></p>
             </td>
             <td>
-                <p><span style="font-weight: 400;">419.99</span></p>
+                <p><span style="font-weight: 400;">974.25</span></p>
             </td>
         </tr>
         <tr>
@@ -1003,10 +1017,10 @@
                 <p><strong>baht</strong></p>
             </td>
             <td>
-                <p><span style="font-weight: 400;">166.00</span></p>
+                <p><span style="font-weight: 400;">166</span></p>
             </td>
             <td>
-                <p><span style="font-weight: 400;">1660.00</span></p>
+                <p><span style="font-weight: 400;">1660</span></p>
             </td>
         </tr>
         <tr>
@@ -1053,8 +1067,9 @@
         </tr>
     </tbody>
 </table>
-<h1 class="wysiwyg-text-align-left">Euro Prices:</h1>
-<h3>Please see the <a href="#h_01GFY6R7CJWZSZG2CH4CNZHXGQ" target="_self">note</a> at the top of this article for info on which countries Euro pricing is currently available in.</h3>
+<h3 id="docs-internal-guid-ad53486c-7fff-0d8e-b23f-4da9df57f1a7"><span style="color: #434343;" data-darkreader-inline-color="">Discord periodically adjusts prices to ensure alignment with local markets.</span></h3>
+<h1 id="01H2BKS1DH0J5401J3Y1WAAXZR" class="wysiwyg-text-align-left">Euro Prices:</h1>
+<h3 id="01H2BKS1DHT5QQD1DBFHC2N3H4">Please see the <a href="#h_01GFY6R7CJWZSZG2CH4CNZHXGQ" target="_self">note</a> at the top of this article for info on which countries Euro pricing is currently available in.</h3>
 <table>
     <thead>
         <tr>
