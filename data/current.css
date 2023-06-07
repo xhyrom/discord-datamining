@@ -107184,7 +107184,7 @@ html .tabBadge-h4HGed {
 }
 
 .productThumbnail-5xJTjt {
-    max-width: 100%;
+    width: 100%;
     height: 190px;
     -o-object-fit: cover;
     object-fit: cover
@@ -152340,6 +152340,64 @@ html .invoiceCancelRow-3s2UuC {
     color: var(--interactive-normal)
 }
 
+.imageSelectionContainer-2dAUNT,
+.radioGroup-76x9d_ {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    gap: 8px
+}
+
+.clickableItem-ZT485I {
+    width: 135px;
+    height: 76px;
+    cursor: pointer;
+    overflow: hidden;
+    border-radius: 6px
+}
+
+.radioOption-275TJZ {
+    border: 2px solid transparent
+}
+
+.radioOptionImage-1QJSJp {
+    width: 135px;
+    height: 76px;
+    -o-object-fit: cover;
+    object-fit: cover
+}
+
+.uploadButton-21GBRt {
+    position: relative;
+    height: 74px;
+    margin: 2px 2px 2px 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    gap: 4px;
+    border: 1px dashed var(--interactive-muted);
+    color: var(--text-muted)
+}
+
+.selected-aWknL3 {
+    border: 2px solid var(--interactive-active)
+}
+
+.disabled-1zLHpO {
+    opacity: .3;
+    cursor: not-allowed
+}
+
 .roleInputContainer-29uoeo {
     position: relative
 }
@@ -152446,12 +152504,23 @@ html .invoiceCancelRow-3s2UuC {
 
 .productFields-3MlTpK {
     padding: 0 24px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
     gap: 24px;
     border-right: 1px solid var(--background-modifier-accent)
 }
 
-.productFields-3MlTpK,
+.thumbnailLabel-pdvYTa {
+    margin-bottom: 4px
+}
+
 .productPreview-T3FojC {
+    padding: 0 16px 0 24px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -152459,10 +152528,6 @@ html .invoiceCancelRow-3s2UuC {
     -webkit-box-direction: normal;
     -ms-flex-direction: column;
     flex-direction: column
-}
-
-.productPreview-T3FojC {
-    padding: 0 16px 0 24px
 }
 
 .previewHeading-obFXK_ {
@@ -157670,4 +157735,4 @@ html .invoiceCancelRow-dVOR64 {
     flex-direction: column
 }
 
-/*# sourceMappingURL=40532.0c00fbd26b318800dfba.css.map*/
+/*# sourceMappingURL=40532.6edf2b51148213756d9a.css.map*/
