@@ -311,6 +311,7 @@
   "BILLING_LOCALIZED_PROMO": "/users/@me/billing/localized-pricing-promo",
   "VERIFY_PURCHASE": "/google-play/verify-purchase-token",
   "DOWNGRADE_SUBSCRIPTION": "/google-play/downgrade-subscription",
+  "EMIT_GOOGLE_PLAY_METRICS": "/google-play/emit-google-play-metrics",
   "USER_AGREEMENTS": "/users/@me/agreements",
   "USER_ACHIEVEMENTS": "/users/@me/applications/:param/achievements",
   "USER_ACHIEVEMENTS_FOR_USER": "/users/:param/applications/:param/achievements/:param",
