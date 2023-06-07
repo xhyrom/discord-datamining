@@ -74567,13 +74567,24 @@ strong {
 }
 
 .table-2Z1caJ {
-    -webkit-box-flex: 1;
-    -ms-flex: 1;
-    flex: 1;
     border: 0;
     border-spacing: 0;
     padding: 8px;
     border-top: 1px solid var(--background-modifier-accent)
+}
+
+.table-2Z1caJ,
+.tableScroller-Aos1wP {
+    -webkit-box-flex: 1;
+    -ms-flex: 1;
+    flex: 1
+}
+
+.tableScroller-Aos1wP {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    max-height: 570px
 }
 
 .tableHeaderCell-2-of57 {
@@ -74609,7 +74620,12 @@ strong {
 }
 
 .memberRowContainer-OjKFek .actionCell-3VvB-W {
-    opacity: 0
+    opacity: 1;
+    color: var(--interactive-normal)
+}
+
+.memberRowContainer-OjKFek .actionCell-3VvB-W:hover {
+    color: var(--interactive-active)
 }
 
 .memberRowContainer-OjKFek:hover {
@@ -74617,7 +74633,8 @@ strong {
 }
 
 .memberRowContainer-OjKFek:hover .actionCell-3VvB-W {
-    opacity: 1
+    opacity: 1;
+    color: var(--interactive-hover)
 }
 
 .memberRowContainer-OjKFek:hover td:first-child {
@@ -74635,7 +74652,8 @@ strong {
 }
 
 .memberRowContainer-OjKFek.selected-2CoMjN .actionCell-3VvB-W {
-    opacity: 1
+    opacity: 1;
+    color: var(--interactive-active)
 }
 
 .memberRowContainer-OjKFek.selected-2CoMjN td:first-child {
@@ -74666,6 +74684,56 @@ strong {
     grid-row: span 2;
     -ms-flex-item-align: center;
     align-self: center
+}
+
+.paginationContainer-39gOvZ {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    padding: 8px 16px;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center
+}
+
+.pagination-33yvg7 {
+    -webkit-box-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+    padding: 0
+}
+
+.paginationInput-1FKZ7X {
+    margin-top: 0
+}
+
+.paginationInput-1FKZ7X>nav {
+    margin: 0 0 0 auto
+}
+
+.pageSizeInput-3OOk_2 {
+    padding: 4px 4px 4px 8px
+}
+
+.pageSizeSelection-hzlbwF {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    gap: 8px;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: end;
+    -ms-flex-pack: end;
+    justify-content: flex-end
 }
 
 .returnButton-1ptceW {
@@ -157735,4 +157803,4 @@ html .invoiceCancelRow-dVOR64 {
     flex-direction: column
 }
 
-/*# sourceMappingURL=40532.6edf2b51148213756d9a.css.map*/
+/*# sourceMappingURL=40532.549a1942f2229b23cc46.css.map*/
