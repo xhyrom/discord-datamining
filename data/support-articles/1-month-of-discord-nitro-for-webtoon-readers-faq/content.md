@@ -1,13 +1,13 @@
-<p id="docs-internal-guid-1452d463-7fff-e1d0-b6ae-d636ffe01696">Starting from May 10, 2023 (10:00am PT) to June 8, 2023 (11:59pm PT), WEBTOON readers can claim 1 month of free Discord Nitro from reading “<a href="https://go.webtoons.com/1fy0Nzqoxzb" target="_blank" rel="noopener noreferrer">Wumpus Wonderventures</a>” on the WEBTOON app. Read below to learn how you can claim<a href="https://support.discord.com/hc/en-us/articles/115000435108" target="_blank" rel="noopener noreferrer"> Discord Nitro</a>.</p>
+<p id="docs-internal-guid-1452d463-7fff-e1d0-b6ae-d636ffe01696"><span id="docs-internal-guid-744ced95-7fff-9845-df1b-9f7e538c7287">Starting from June 8, 2023 (10:00am PT) to July 10, 2023 (11:59pm PT), WEBTOON readers can claim 1 month of free Discord Nitro from purchasing the Discord Nitro x Coin Pack bundle in the WEBTOON app. Read below to learn how you can claim</span><a href="https://support.discord.com/hc/en-us/articles/115000435108" target="_blank" rel="noopener noreferrer"> Discord Nitro</a>.</p>
 <p class="wysiwyg-text-align-center"><img src="https://support.discord.com/hc/article_attachments/14485372011927" alt="NitroWebtoon_BlogHeader.png"></p>
 <p><span class="wysiwyg-font-size-large"><strong>Promotion Summary</strong></span></p>
 <p><strong>Offer Details:</strong> 1 month of free Discord Nitro</p>
-<p><strong>Who is Eligible: </strong>Users who have not had an active Discord Nitro subscription on their accounts in the past 12 months are eligible. </p>
+<p><strong>Who is Eligible: </strong>Users who have not had an active Discord Nitro subscription on their accounts in the past 12 months are eligible.</p>
 <p id="docs-internal-guid-3ad619d8-7fff-5b42-0888-de525d034391">Users who previously had a Discord Nitro subscription and currently hold a Nitro Classic or Nitro Basic subscription that has been active for less than 12 months are ineligible.</p>
 <p>If a user currently has a Nitro Basic, Nitro Classic, or Server Boosting only subscription active on their account and you’ve never had a Nitro subscription, redeeming this promotion will override that subscription.</p>
 <p>We will not be able to refund any leftover subscription time from Nitro Basic, Nitro Classic, and Server Boosting subscriptions, and the user will be forfeiting the remainder of the existing sub when activating the 1 month Nitro trial.</p>
 <p>This promotion is unavailable in Russia. If you receive an "Unknown Gift Code" error during the claim/redemption process, you are not eligible to redeem this promotion. You can learn more at this<a href="https://support.discord.com/hc/en-us/articles/4708041338391" target="_blank" rel="noopener noreferrer"> Help Center article.</a></p>
-<p><strong>Requirements:</strong> Claim through June 8th, 2023 (11:59pm PT), and redeem in Discord account by August 20, 2023 (11:59pm PT).</p>
+<p><strong>Requirements:</strong> <span id="docs-internal-guid-7b4b1062-7fff-db8f-ebb5-80e0b339d3fc">Claim through July 10, 2023 (11:59pm PT), and redeem in Discord account by August 20, 2023 (11:59pm PT).</span></p>
 <p><strong>Subscription:</strong> After the 1 month free trial period, your Nitro subscription will convert to a monthly recurring subscription, and Discord will bill your payment method for Nitro until you cancel it. You can cancel at any time in your Discord app’s User Settings. </p>
 <p><span class="wysiwyg-font-size-large"><strong>What does this article cover?</strong></span></p>
 <ul>
@@ -55,11 +55,17 @@
 <p>Learn more about WEBTOON <a href="https://www.webtoons.com/en/about" target="_blank" rel="noopener noreferrer">here</a>!</p>
 <p>Want to chat with other readers about your favorite stories, characters, and creators? Join the <a href="https://discord.gg/webtoonofficial" target="_blank" rel="noopener noreferrer">official WEBTOON server on Discord</a>!</p>
 <h1 id="h_01H01P3ADMKCYGHC927HPCHQ21">How do I claim the Nitro Promo from WEBTOON?</h1>
-<p><strong>1) Check the email you inputted after reading “</strong><a href="https://go.webtoons.com/1fy0Nzqoxzb" target="_blank" rel="noopener noreferrer">Wumpus Wonderventures</a><strong>” on the WEBTOON app</strong></p>
-<p>Once you have finished reading all 4 chapters of “<a href="https://go.webtoons.com/1fy0Nzqoxzb" target="_blank" rel="noopener noreferrer">Wumpus Wonderventures</a>” while logged into your WEBTOON account on the WEBTOON app, you will be prompted to enter your email to receive a Discord Nitro trial code. </p>
-<p>Log into your email and check for the inbox for a new email from the WEBTOON team. You can also search for "Nitro" in your email inbox.</p>
+<p id="docs-internal-guid-aad496b7-7fff-2753-827b-834f90dfefcb"><strong>1) Download the WEBTOON app on your mobile device and sign up or login to your WEBTOON account</strong></p>
+<p><strong>2) Visit the Coin Shop by pressing the “...” button on the lower right corner</strong></p>
+<p><strong>3) Select the “Nitro x Coin Pack” to purchase the package</strong></p>
+<p class="wysiwyg-text-align-center"><strong><img src="https://support.discord.com/hc/article_attachments/15171231470487" alt="WEBTOON-NitroxCoinPack.png" width="351" height="488"></strong></p>
+<p class="wysiwyg-text-align-left"><strong><span id="docs-internal-guid-7ef2c767-7fff-030e-a7f8-35d5b346c2e9">4) After purchasing the package, look for the pop-up or go back to the WEBTOON app homepage (or restart your app).</span></strong></p>
+<p class="wysiwyg-text-align-center"><strong><img src="https://support.discord.com/hc/article_attachments/15171261067159" alt="NitroxCoin-Purchase-confirmation.png" width="342" height="452"></strong></p>
+<p class="wysiwyg-text-align-left"><strong><span id="docs-internal-guid-34f523b9-7fff-7273-7204-81f04e14e75f">5) Press on the banner to enter your email address and sign up to receive 1 free month of Discord Nitro!</span></strong></p>
+<p class="wysiwyg-text-align-center"><strong><img src="https://support.discord.com/hc/article_attachments/15171261069975" alt="NitroxCoin-email-field.png" width="346" height="570"></strong></p>
+<p class="wysiwyg-text-align-left"><strong><span id="docs-internal-guid-5d6389bc-7fff-1852-1dbd-21402ec15014">6) Login to your email and check your inbox for a new email from the WEBTOON team. You can also search for "Nitro" in your email inbox.</span></strong></p>
 <h3><span style="color: #434343;">Please note that it may take up to 72 hours for you to receive an email with the Nitro code from WEBTOON.</span></h3>
-<p><strong>2) Press on the Discord Nitro link to claim your Nitro trial</strong></p>
+<p><strong>7) Press on the Discord Nitro link to claim your Nitro trial</strong></p>
 <p>Once you have found the email, press on the Discord Nitro link within the email and you'll be automatically redirected to a browser window to redeem the promotion.</p>
 <p><strong>The unique promotion link will look like this:</strong> https://discord.com/billing/promotions/XXXXXXXXXXXXXXXX  </p>
 <h1 id="h_01H01P3JVCGQCMCAT1TASM3KW0">How do I redeem the Nitro Trial on my Discord Account?</h1>
@@ -146,15 +152,18 @@
     </li>
 </ul>
 <h2 id="h_01H01P5A7THFTFHCV6GYMJGCTD">Promotion Details</h2>
-<p><strong>Q: How long does this promotion run for?</strong></p>
-<p><strong>A:</strong> WEBTOON readers can claim the Discord Nitro promo between <strong>May 10, 2023 (10:00am PT) to June 8, 2023 (11:59pm PT).</strong></p>
-<p>After <strong>June 8, 2023 (11:59pm PT)</strong>, WEBTOON readers will no longer be able to claim a trial promo link.</p>
+<p><strong><span id="docs-internal-guid-1bc29065-7fff-cec8-09e6-be6a3f2a2fa3">Q: How long does the Discord Coin promotion run for?</span></strong></p>
+<p id="docs-internal-guid-7dd2bca5-7fff-efa1-1fab-0db5b268d0ef"><strong>A:</strong> WEBTOON readers can claim the Discord Nitro promo between <strong>June 8, 2023 (10:00am PT) to July 10, 2023 (11:59pm PT).</strong></p>
+<p>After <strong>July 10, 2023 (11:59pm PT)</strong>, WEBTOON readers will no longer be able to claim a trial promo link.</p>
 <p><strong>Q: How long does the Discord Nitro promotion link last for?</strong></p>
 <p><strong>A:</strong> You must redeem the Nitro promotion by <strong>August 20, 2023 (11:59pm PT)</strong>.</p>
 <p>If a code has not been redeemed to the Discord account by <strong>August 20, 2023 (11:59pm PT)</strong>, it will expire and you will no longer be able to have 1 month of Discord Nitro.</p>
+<p><strong><span id="docs-internal-guid-bf504685-7fff-3281-c6d0-c227de263698">Q: Can I still claim 1 month of Nitro from reading Wumpus Wonderventures in the WEBTOON app?</span></strong></p>
+<p><strong>A:</strong> No, that promotion has ended. As of June 8, 2023, WEBTOON readers will no longer be able to claim 1 month of Discord Nitro from reading Wumpus Wonderventures in the WEBTOON app.</p>
+<p>If you claimed Discord Nitro during the Wumpus Wonderventures promotion period, you have until August 20, 2023, 11:59pm PT to redeem it.</p>
 <h2 id="h_01H01P5JDPHFD9MQ5R1DM1H1PY">Eligibility for the Promotion</h2>
 <p><strong>Q: Who can claim this promotion?</strong></p>
-<p><strong>A:</strong> WEBTOON readers who are logged into their accounts and read all 4 chapters of “<a href="https://go.webtoons.com/1fy0Nzqoxzb" target="_blank" rel="noopener noreferrer">Wumpus Wonderventures</a>” in the WEBTOON app will have the opportunity to start the process to receive the Discord Nitro trial code.</p>
+<p><strong><span id="docs-internal-guid-632b8a82-7fff-801e-766d-d1f6c3565c52">A:</span></strong> WEBTOON readers who purchase the Discord Nitro x Coin Pack for $4.99 in the WEBTOON app will receive 50 + 2 additional WEBTOON coins and can start the process to receive the Discord Nitro trial code. </p>
 <p><strong>Q: Who can redeem this Nitro trial to their Discord account?</strong></p>
 <p><strong>A: </strong>Users who haven’t had a Nitro subscription on their Discord accounts in the past 12 months are able to redeem this Nitro trial.</p>
 <p><span id="docs-internal-guid-74e7244a-7fff-541c-7ed9-e4aff054e91d">Additionally, users who previously had a Discord Nitro subscription and currently hold a Nitro Classic or Nitro Basic subscription that has been active for less than 12 months are ineligible.</span></p>
@@ -174,8 +183,8 @@
 <h3>Note: Banks will usually remove the temporary hold from your account within a few business days.</h3>
 <p>If your Discord transaction history does not show the hold released after 5 business days, please let us know at<a href="https://dis.gd/contact" target="_blank" rel="noopener noreferrer"> https://dis.gd/contact</a>, and our support team will be able to investigate this issue further.</p>
 <h2 id="h_01H01P62KBB6J3WYAFNXPYMDQV">Potential Errors and Other Issues</h2>
-<p><strong>Q: What if I didn't receive an email from WEBTOON with the Nitro promo link, even if I finished reading all 4 chapters of “</strong><a href="https://go.webtoons.com/1fy0Nzqoxzb" target="_blank" rel="noopener noreferrer">Wumpus Wonderventures</a><strong>”?</strong></p>
-<p><strong>A:</strong> In order to receive an email from WEBTOON with the Nitro promo link, you must enter your email when prompted to after reading the 4 chapters of “<a href="https://go.webtoons.com/1fy0Nzqoxzb" target="_blank" rel="noopener noreferrer">Wumpus Wonderventures</a>”.</p>
+<p><strong><span id="docs-internal-guid-64b62124-7fff-bf4d-0c9e-107b2a1fe44e">Q: What if I didn't receive an email from WEBTOON with the Nitro promo link, even if I purchased the Discord Nitro x Coin Pack?</span></strong></p>
+<p><strong><span id="docs-internal-guid-12664945-7fff-ea5f-a593-333a4fdae6ba">A:</span></strong> In order to receive an email from WEBTOON with the Nitro promo link, you must enter your email when prompted after purchasing the Discord Nitro x Coin Pack. </p>
 <p>Additionally, make sure that you've opted to receive emails from WEBTOON. Please note that it may take up to 72 hours for you to receive an email with the Nitro code from WEBTOON. </p>
 <p>If you believe you should be receiving a promotion link and you haven’t yet, contact WEBTOON’s support team <a href="https://webtoon.zendesk.com/hc/en-us" target="_blank" rel="noopener noreferrer">here</a> or to their support email: webtoonsupport@webtoon.com.</p>
 <p><strong>Q: I see a Sad Trombone error when I try to redeem my Nitro promo link.</strong></p>
