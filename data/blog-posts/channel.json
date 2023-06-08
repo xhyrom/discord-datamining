@@ -12,6 +12,15 @@
   },
   "item": [
     {
+      "title": "Privacy and Safety on Discord ",
+      "link": "https://discord.com/blog/privacy-and-safety-on-discord",
+      "guid": "https://discord.com/blog/privacy-and-safety-on-discord",
+      "description": "Discord is clarifying the safety procedures and policies we follow in different spaces on Discord. Community, Partner and Verified servers are receiving badges to more clearly indicate those spaces.",
+      "pubDate": "Thu, 08 Jun 2023 00:00:00 GMT",
+      "media:content": "https://uploads-ssl.webflow.com/5f9072399b2640f14d6a2bf4/6481133ca04838343a0676a5_BackupBlogHeaders_Batch2Artboard%202.png",
+      "media:thumbnail": "https://uploads-ssl.webflow.com/5f9072399b2640f14d6a2bf4/6481133ca04838343a0676a5_BackupBlogHeaders_Batch2Artboard%202.png"
+    },
+    {
       "title": "Pride at Discord — Our Values and Our Actions",
       "link": "https://discord.com/blog/pride-at-discord-our-values-and-our-actions",
       "guid": "https://discord.com/blog/pride-at-discord-our-values-and-our-actions",
@@ -901,15 +910,6 @@
       "pubDate": "Fri, 03 Dec 2021 00:00:00 GMT",
       "media:content": "https://uploads-ssl.webflow.com/5f9072399b2640f14d6a2bf4/61aa7642a72a1b627d695f49_Discord-Elixir-Blog-Header.png",
       "media:thumbnail": "https://uploads-ssl.webflow.com/5f9072399b2640f14d6a2bf4/61aa7642a72a1b627d695f49_Discord-Elixir-Blog-Header.png"
-    },
-    {
-      "title": "Get a Month of Free Nitro When You Subscribe During Our Holiday Promo ",
-      "link": "https://discord.com/blog/free-nitro-holiday-bogo-sale-2021",
-      "guid": "https://discord.com/blog/free-nitro-holiday-bogo-sale-2021",
-      "description": "This Nitro promotion has now ended. However, you can still read on to see what our Holiday 2021 Nitro promotion entailed in this blog post!",
-      "pubDate": "Tue, 23 Nov 2021 00:00:00 GMT",
-      "media:content": "https://uploads-ssl.webflow.com/5f9072399b2640f14d6a2bf4/619bd45f7ba2bf5b4e115d6f_Nitro_Holiday_BlogHeader_21Nov.png",
-      "media:thumbnail": "https://uploads-ssl.webflow.com/5f9072399b2640f14d6a2bf4/619bd45f7ba2bf5b4e115d6f_Nitro_Holiday_BlogHeader_21Nov.png"
     }
   ]
 }
