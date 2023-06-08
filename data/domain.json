@@ -56,31 +56,14 @@
     "snowsgiving-tale-2022-zh-cn"
   ],
   "records": {
-    "A": [
+    "NS": [
       {
-        "address": "162.159.137.232",
-        "ttl": 163,
-        "type": "A"
+        "value": "gabe.ns.cloudflare.com",
+        "type": "NS"
       },
       {
-        "address": "162.159.128.233",
-        "ttl": 163,
-        "type": "A"
-      },
-      {
-        "address": "162.159.136.232",
-        "ttl": 163,
-        "type": "A"
-      },
-      {
-        "address": "162.159.138.232",
-        "ttl": 163,
-        "type": "A"
-      },
-      {
-        "address": "162.159.135.232",
-        "ttl": 163,
-        "type": "A"
+        "value": "sima.ns.cloudflare.com",
+        "type": "NS"
       }
     ]
   }
