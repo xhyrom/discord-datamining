@@ -66713,7 +66713,8 @@ strong {
     flex: 0 1 auto;
     padding: 0 4px 0 0;
     max-width: 100%;
-    margin-left: -6px
+    margin-left: -6px;
+    font-weight: 600
 }
 
 .channelName-3aS_Eg div,
@@ -158080,4 +158081,4 @@ html .invoiceCancelRow-dVOR64 {
     flex-direction: column
 }
 
-/*# sourceMappingURL=40532.bd436f6ae128d5873a74.css.map*/
+/*# sourceMappingURL=40532.772590d7094cfefe051c.css.map*/
