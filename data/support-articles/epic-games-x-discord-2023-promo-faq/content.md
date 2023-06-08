@@ -1,8 +1,9 @@
+<h3>As of June 7, 2023, this promotion is unavailable to claim. If you did claim this promotion, you must redeem your Nitro trial code before July 7, 2023.</h3>
 <p id="docs-internal-guid-a02d81a2-7fff-4c05-5274-01a29c6b9b5b">Starting from May 25, 2023 (11:00am EDT) to June 7, 2023 (11:00am EDT), you can claim 1 month of free Discord Nitro from the Epic Games Store! Learn below about how you can claim<span style="font-weight: 400;"> </span><a href="https://support.discord.com/hc/en-us/articles/115000435108" target="_blank" rel="noopener noreferrer">Discord Nitro</a><span style="font-weight: 400;">.</span></p>
 <p class="wysiwyg-text-align-center"><span style="font-weight: 400;"><img src="https://support.discord.com/hc/article_attachments/14844781040663" alt="2023-EGS-EN-mega-sale-discord-item-native-IG-stories-image_1.jpg" width="336" height="597"></span></p>
 <p id="docs-internal-guid-631becc8-7fff-1bf9-a560-9f108585fe3d"><span class="wysiwyg-font-size-large"><strong>Promotion Summary</strong></span></p>
 <p><strong>Offer Details:</strong> 1 month of free Discord Nitro</p>
-<p><strong>Who is Eligible: </strong>Users who have not had an active Discord Nitro subscription on their accounts in the past 12 months are eligible. </p>
+<p><strong>Who is Eligible: </strong>Users who have not had an active Discord Nitro subscription on their accounts in the past 12 months are eligible.</p>
 <p id="docs-internal-guid-b110cde2-7fff-719d-9274-105a0c00e472">Users who previously had a Discord Nitro subscription and currently hold a Nitro Classic or Nitro Basic subscription that has been active for less than 12 months are ineligible.</p>
 <p>If a user currently has a Nitro Basic, Nitro Classic, or Server Boosting only subscription active on their account and you’ve never had a Nitro subscription, redeeming this promotion will override that subscription.</p>
 <p>We will not be able to refund any leftover subscription time from those, and the user will be forfeiting the remainder of the existing sub when activating the 1 month Nitro trial.</p>
