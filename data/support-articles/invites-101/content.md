@@ -1,26 +1,33 @@
-<p>Instant Invites allow your friends to access your server, and with the proper adjustments you'll be able to level up your invite game in a few simple steps. </p>
-<p>In order to gain the most amount out of your Invites, click on the <strong>box and arrow icon</strong><strong> </strong>next to each channel title to access the Invite panel.</p>
-<p><img src="https://support.discord.com/hc/article_attachments/360005822232" alt="1-.jpg" width="600" height="314"></p>
-<p>The invite panel will appear displaying a 24 hour access link by default if you haven't already adjusted the invite settings for that channel yet. Otherwise, the invite that displays will be dictated by your previous settings for that specific channel.  </p>
-<p>By clicking on <strong>Edit Invite Link</strong>, you’ll have the ability to change the duration of the link as well as how many times it can be accessed.   </p>
-<p><img src="https://support.discord.com/hc/article_attachments/360008482452" alt="1_.jpg" width="489" height="472"></p>
-<h1>Features</h1>
-<p><strong>Expire After </strong>is the duration for which the invite link will work for. Choose between never, 30 minutes, 1, 6, 12 hours or 1 full day.</p>
-<p><img src="https://support.discord.com/hc/article_attachments/360008519071" alt="2_.jpg" width="489" height="464"></p>
-<p><strong>Max Uses </strong>is how many times the same link can be clicked before it expires. It can be set to have no limit, 1, 5, 10, 25, 50, or 100 uses.</p>
-<p><img src="https://support.discord.com/hc/article_attachments/360008519131" alt="3_.jpg" width="488" height="485"></p>
-<p>Enabling the <strong>temporary membership </strong>option means that members who join are automatically kicked when they disconnect unless a role is assigned.</p>
-<p><img src="https://support.discord.com/hc/article_attachments/360008482752" alt="4_.jpg" width="485" height="457"></p>
-<p>To create a <strong>permanent invite, </strong>select <strong>"never"</strong> under <strong>"expire after" </strong>and <strong>"no limit"</strong> under <strong>"max uses."</strong> By doing so, you'll generate a link that has <strong>infinite uses</strong> and won't become obsolete over any period of time. However, it's important to remember that <strong>the only way anyone can access your server</strong> is through an <strong>invite link</strong> so be careful with who you give it to!</p>
-<p><img src="https://support.discord.com/hc/article_attachments/360008519251" alt="5_.png" width="484" height="455"> </p>
-<p> </p>
-<p>Once you’ve adjusted the settings to your needs, click “<strong>Generate a New Link”</strong> and your new invite link will appear. </p>
-<h1>Old dog, new tricks</h1>
-<p>After some recent changes, links are now set to be <strong>seven</strong> to <strong>eight characters long </strong>with the exception of links set to<strong> never expire. </strong>If you've created a permanent invite link prior to the update on 10/29/2020, the link would have a <strong>seven character count</strong>. Otherwise, new permanent invite links will contain <strong>ten characters</strong>. </p>
-<p>To manage the links you've already generated and sent off into the wild, click on <strong>Server Settings</strong> and open up the<strong> Invite </strong>tab.</p>
-<p><img src="https://support.discord.com/hc/article_attachments/360008482832" alt="6_.jpg" width="658" height="347"></p>
-<p>The tab provides you with info on who generated which link, how long it has left until it expires, and how many times each link has been used. Upon hovering your cursor on a link, a <strong>red X</strong> will appear and you'll be able to permanently delete it. </p>
-<p><img src="https://support.discord.com/hc/article_attachments/360008482852" alt="7_.png" width="660" height="94"> </p>
-<h3>The last tidbit of information to know is that <strong>each individual channel</strong>, whether it's a voice channel OR a text channel, has its <strong>own settings</strong> for invite links. This means that even if you adjusted the #general text channel invite settings, they <strong>will not transfer over</strong> to any of your other channels! </h3>
-<p> </p>
-<p> </p>
+<p>Instant Invites allow you to invite anyone to your server, at any time! You can set a temporary invite link that only lasts 30 minutes, or one that doesn’t expire at all, if you are in a Community Server. Want to set a Custom Invite Link? Please check out this <a href="https://support.discord.com/hc/en-us/articles/115001542132"><span class="wysiwyg-underline" style="color: #1155cc;" data-darkreader-inline-color="">article</span></a>.</p>
+<p><strong>What this article covers:</strong></p>
+<ul>
+    <li><a href="#h_01H2DMMB8F6AXJTASRT58DDT21" target="_self">How to Create an Instant Invite</a></li>
+    <li><a href="#h_01H2DMMG355MV7GJDQ9F65SDVG" target="_self">How to Edit Invite Settings</a></li>
+    <li><a href="#h_01H2DMMM65T4XJKAN17BKNA6H2" target="_self">How to Remove Instant Invite Links as an Admin</a></li>
+</ul>
+<h1 id="h_01H2DMMB8F6AXJTASRT58DDT21">How to Create an Instant Invite</h1>
+<p>If you hover over the right-hand side of a channel you should see an option that says <strong>Create Invite</strong> if you have the permissions.</p>
+<p class="wysiwyg-text-align-center"><img style="height: 148px; width: 258px;" src="https://support.discord.com/hc/article_attachments/15156535238807"></p>
+<p>After tapping on <strong>Create Invite</strong> you can send invites to anyone you’ve recently chatted with through Direct Messages or copy the invite link.</p>
+<p class="wysiwyg-text-align-center"><img style="height: 372px; width: 624px;" src="https://support.discord.com/hc/article_attachments/15156541580823"></p>
+<p>The invite panel will appear displaying a 7 days access link by default if you haven't already adjusted the invite settings for that channel yet. Otherwise, the invite that displays will be dictated by your previous settings for that specific channel.  </p>
+<p>By clicking on <strong>Edit Invite Link</strong>, you’ll have the ability to change the duration of the link as well as how many times it can be accessed.   </p>
+<h1 id="h_01H2DMMG355MV7GJDQ9F65SDVG">How to Edit Invite Settings</h1>
+<h3><span style="color: #434343;" data-darkreader-inline-color="">Starting on June 8, 2023, invite links created in Friend Servers (servers that don't have Community enabled) can last anywhere from 30 min to 30 days. To create invite links that never expire, servers will need to be a Community Server. You can continue to generate non-expiring links if you are in a Community Server.</span></h3>
+<p>Once you’re in the Create Invite panel you can edit the invite settings by tapping on <strong>Edit invite link</strong>.</p>
+<p class="wysiwyg-text-align-center"><img style="height: 480px; width: 463px;" src="https://support.discord.com/hc/article_attachments/15156541577367"></p>
+<p>Here you can change how long the invite link will be valid for and how many times this invite link can be used for.</p>
+<p class="wysiwyg-text-align-center"><img style="height: 305px; width: 310px;" src="https://support.discord.com/hc/article_attachments/15156564355863"><img style="height: 308px; width: 270px;" src="https://support.discord.com/hc/article_attachments/15156535233175"></p>
+<p>After editing the settings you can simply copy the invite link and directly send it to your friends or by tapping on the Invite button next to their name. </p>
+<p class="wysiwyg-text-align-center"><img style="height: 480px; width: 463px;" src="https://support.discord.com/hc/article_attachments/15156527477143"></p>
+<p>Enabling <strong>Grant temporary membership</strong> means that members who join through the invite link are automatically kicked when they disconnect unless a role is assigned.</p>
+<p class="wysiwyg-text-align-center"><img style="height: 421px; width: 454px;" src="https://support.discord.com/hc/article_attachments/15156541569303"></p>
+<p>If you want the invite link to never expire, make sure you are in a Community Server before setting <strong>Expire After</strong> to <strong>Never</strong>. The maximum duration for Friends Servers is 30 days. </p>
+<p>If you want the invite link to have infinite uses, you can set Max number of uses to <strong>No limit</strong>. It's important to remember that the only way anyone can access your server is through an invite link so be careful with who you give it to!</p>
+<p>Once you’ve adjusted the settings to your needs, tap on <strong>Generate a New Link</strong> and your new invite link will appear. </p>
+<h1 id="h_01H2DMMM65T4XJKAN17BKNA6H2">How to Remove Instant Invite Links as an Admin</h1>
+<h3><span style="color: #434343;" data-darkreader-inline-color="">Once an invite has been deleted, it can not be remade with that same invite code. Support is also not able to create this invite link again.</span></h3>
+<p>If you have permissions in the server you can remove invite links at any time. Just head to <strong>Server Settings</strong> &gt; <strong>Invites</strong>.</p>
+<p class="wysiwyg-text-align-center"><img style="height: 243px; width: 624px;" src="https://support.discord.com/hc/article_attachments/15156564356119"></p>
+<p>You can <strong>Pause Invites </strong>at any time or remove any generated invite by tapping on the x next to each invite. </p>
+<p class="wysiwyg-text-align-center"><img style="height: 376px; width: 624px;" src="https://support.discord.com/hc/article_attachments/15156551207703"></p>
