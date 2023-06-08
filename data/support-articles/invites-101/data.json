@@ -2,7 +2,7 @@
   "id": 208866998,
   "url": "https://hammerandchisel.zendesk.com/api/v2/help_center/en-us/articles/208866998.json",
   "html_url": "https://support.discord.com/hc/en-us/articles/208866998-Invites-101",
-  "author_id": 361945854972,
+  "author_id": 2921470028,
   "comments_disabled": true,
   "draft": false,
   "promoted": false,
@@ -26,6 +26,7 @@
     "server invite",
     "link",
     "support",
-    "answer-bot"
+    "answer-bot",
+    "invite link"
   ]
 }
