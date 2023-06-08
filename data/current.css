@@ -152740,7 +152740,7 @@ html .invoiceCancelRow-3s2UuC {
     cursor: pointer
 }
 
-.dropperIconContainer-1MQqLn :hover {
+.dropperIconContainer-1MQqLn:hover {
     -webkit-transition: opacity .2s ease;
     transition: opacity .2s ease;
     opacity: .85
@@ -152779,7 +152779,7 @@ html .invoiceCancelRow-3s2UuC {
     height: 16px
 }
 
-.attachedRoleClose-1hBrvU :hover {
+.attachedRoleClose-1hBrvU:hover {
     -webkit-transition: opacity .2s ease;
     transition: opacity .2s ease;
     opacity: .7
@@ -157843,6 +157843,28 @@ html .invoiceCancelRow-dVOR64 {
     margin: 0 auto 24px
 }
 
+.content-3nZN92 {
+    padding: 16px;
+    max-width: 760px
+}
+
+.header--idSyf {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center
+}
+
+.alertIcon-1Lc3ad {
+    color: var(--status-danger)
+}
+
+.body-VORqan p {
+    margin: 0
+}
+
 .modalContent-JK5iQA,
 .root-2-pdq6 {
     overflow: hidden
@@ -158058,4 +158080,4 @@ html .invoiceCancelRow-dVOR64 {
     flex-direction: column
 }
 
-/*# sourceMappingURL=40532.defb5f4e89069dacdc2c.css.map*/
+/*# sourceMappingURL=40532.bd436f6ae128d5873a74.css.map*/
