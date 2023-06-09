@@ -8109,7 +8109,7 @@
             },
             {
               "type": "guild_member_count_range",
-              "min_count": 500,
+              "min_count": 200,
               "max_count": null
             }
           ]
