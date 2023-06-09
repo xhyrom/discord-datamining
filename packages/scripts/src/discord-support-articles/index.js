@@ -112,7 +112,7 @@ const date = new Date();
 await git.commit([
   `${date.getDate()} ${
     months[date.getMonth()]
-  } 📰 ${date.getFullYear()} - Discord Support Articles was updated 🚀`,
+  } 📰 ${date.getFullYear()} - Discord Support Articles were updated 🚀`,
   `Articles (${articles.length}):\n${articles
     .map((article) => article.title ?? article.name)
     .join("\n")}`,
