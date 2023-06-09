@@ -35,7 +35,7 @@ const date = new Date();
 await git.commit([
   `${date.getDate()} ${
     months[date.getMonth()]
-  } ${date.getFullYear()} - Routes were updated 🚀`,
+  } 📨 ${date.getFullYear()} - Routes were updated 🚀`,
 ]);
 
 await push(git, "origin", "master");
