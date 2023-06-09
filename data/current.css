@@ -33533,19 +33533,6 @@ img[alt] {
     visibility: hidden
 }
 
-.activitiesPerk-1-3r7G {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center
-}
-
-.activitiesPerk-1-3r7G>:not(:first-child) {
-    margin-left: 8px
-}
-
 .header-8FvXkH {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -94520,15 +94507,6 @@ strong {
     width: 100%
 }
 
-.featureActivities-LzpEN3 .featureTitle-3N9Stg {
-    color: #5c87ff
-}
-
-.featureActivities-LzpEN3 .featureImage-91H2fC {
-    max-height: 90%;
-    width: 100%
-}
-
 .stickers-2JFQr2 .featureTitle-3N9Stg {
     color: #5c87ff
 }
@@ -95903,10 +95881,6 @@ strong {
 
 .moreGuildsImage-31VCP1 {
     width: 116px
-}
-
-.activitiesImages-1_FVwh {
-    width: 222px
 }
 
 .soundboardImage-2eOE50,
@@ -156220,11 +156194,6 @@ html .invoiceCancelRow-3s2UuC {
     width: 225px
 }
 
-.activitiesArt-1_7xUs {
-    width: 219px;
-    height: 150px
-}
-
 .card-1AUjv4 {
     margin-bottom: 20px;
     padding: 10px;
@@ -158640,4 +158609,4 @@ html .invoiceCancelRow-dVOR64 {
     flex-direction: column
 }
 
-/*# sourceMappingURL=40532.41a87f1c87cd7f53126e.css.map*/
+/*# sourceMappingURL=40532.e837c066c1a97d399c69.css.map*/
