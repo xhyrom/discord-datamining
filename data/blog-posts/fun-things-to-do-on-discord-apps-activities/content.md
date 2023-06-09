@@ -70,24 +70,34 @@
     </div>
     <div id="heading-7" class="rich-wrapper">
         <div class="blog-post-content w-richtext">
+            <h2><strong>How to Host YouTube Viewing Parties on Discord</strong></h2>
+            <p>Remember those Activities we just mentioned? One of them is called “Watch Together,” a way to enjoy YouTube videos with your friends. To <a href="https://support.discord.com/hc/en-us/articles/4409342945687">Watch Together</a> with your friends on Discord, use that same rocketship button we mentioned previously, right next to your Video and Screenshare buttons.&nbsp;</p>
+            <p>Whoever starts the Watch Together activity becomes the Host and has the virtual remote, deciding what to watch. Everyone’s YouTube video is automatically synced together, so there’s no need to count to three loud in the call to make sure everyone’s on the same spot in the video.&nbsp;</p>
+            <figure class="w-richtext-figure-type-image w-richtext-align-fullwidth" style="max-width:580pxpx">
+                <div><img src="https://assets-global.website-files.com/5f9072399b2640f14d6a2bf4/6483a2e644858da15db812fc_Watch%20Together.gif" loading="lazy" alt="A preview image of the “Watch Together” Activity in Discord."></div>
+            </figure>
+            <p>The Host can also share control with everyone&nbsp; in the Activity, allowing participants to freely queue up their picks on what should play next. First a 30-second cat clip, then a three hour video essay, followed by a 2 minute video about how to best brew a cup of coffee. What chaos ensues will likely be really telling about what you and your friends are like.&nbsp;</p>
+            <p>Watch Together is free to use by anyone on Discord — no Nitro required! Try it out in a Discord call next time you’re looking for something to watch!&nbsp;<br>‍</p>
+        </div>
+    </div>
+    <div id="heading-8" class="rich-wrapper">
+        <div class="blog-post-content w-richtext">
             <h2><strong>How to Find More Apps on Discord<br></strong></h2>
             <p>While we’ve shared a few ideas on what to do on Discord, we understand that you might be looking for something else. A way to post cats, throw a cake at your friends, or buff up your moderation abilities. You’ll find these and a nearly-endless amount of possibilities over in the <strong>App Directory</strong>.&nbsp;<br></p>
-            <figure class="w-richtext-figure-type-image w-richtext-align-fullwidth" style="max-width:1600px">
+            <figure class="w-richtext-figure-type-image w-richtext-align-fullwidth" style="max-width:1600pxpx">
                 <div><img src="https://assets-global.website-files.com/5f9072399b2640f14d6a2bf4/64767396d2c16c3ee9bd96ca_9a744eef.png" alt="A screenshot of the Discord App Directory."></div>
             </figure>
             <p>From image generation to community moderation, if there’s something you’ve ever wanted to do in Discord, you’ll likely find it in the App Directory. <strong>To explore what’s available, simply head into any server, then select the server’s name and open “App Directory.”&nbsp;</strong></p>
             <p>You’ll be able to explore the options within any server, but you can only add apps to servers that you have the right permissions for. If you don’t have the perms, consider asking a moderator in the server you’re in to add it!&nbsp;<br>‍</p>
         </div>
     </div>
-    <div id="heading-8" class="rich-wrapper">
+    <div id="heading-9" class="rich-wrapper">
         <div class="blog-post-content w-richtext">
             <h2><strong>The Possibilities Are Endless — And You Can Help<br></strong></h2>
             <p>The applications and bots mentioned above are created by independent developers and dev teams for millions of Discord users to enjoy in their communities. If you’ve got an idea for an app and you’ve got some coding know-how, you can build the app of your dreams. Check out <a href="https://discord.com/build">discord.com/build</a> to learn what’s possible. <a href="https://discord.com/build-case-studies/cappucino-memrise">Memrise, Cappuccino</a>, <a href="https://discord.com/build-case-studies/chani-motivation">CHANI, and Motivation</a> all brought their apps to Discord, and so can you!</p>
             <p>Not to toot our own horns here, buuuuut… the Discord Blog is a pretty great place to learn about what you can do on Discord! *<em>wink wink nudge nudge</em>* Explore our <a href="https://discord.com/category/how-to-discord">How to Discord</a> section to get the basics down, then keep an eye out at our <a href="https://discord.com/category/product">Product &amp; Features</a> category to stay up to date on the newest Discord features.&nbsp;</p>
+            <p>‍</p>
         </div>
-    </div>
-    <div id="heading-9" class="rich-wrapper">
-        <div class="blog-post-content w-dyn-bind-empty w-richtext"></div>
     </div>
     <div id="heading-10" class="rich-wrapper">
         <div class="blog-post-content w-dyn-bind-empty w-richtext"></div>
