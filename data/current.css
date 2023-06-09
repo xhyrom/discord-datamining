@@ -82831,7 +82831,8 @@ strong {
 }
 
 .settingsTabBar-1Fi_kb {
-    border-bottom: 1px solid var(--background-modifier-accent)
+    border-bottom: 1px solid var(--background-modifier-accent);
+    margin-bottom: 24px
 }
 
 .settingsTabBarItem-3Mb7vp {
@@ -158303,4 +158304,4 @@ html .invoiceCancelRow-dVOR64 {
     flex-direction: column
 }
 
-/*# sourceMappingURL=40532.9769a3017e3c1e07f14c.css.map*/
+/*# sourceMappingURL=40532.17b8515b1a6a49478672.css.map*/
