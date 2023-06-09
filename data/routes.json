@@ -378,6 +378,7 @@
   "GUILD_PREVIEW": "/guilds/:param/preview",
   "USER_AFFINITIES": "/users/@me/affinities/users",
   "GUILD_AFFINITIES": "/users/@me/affinities/guilds",
+  "CHANNEL_AFFINITIES": "/users/@me/affinities/channels",
   "FUNIMATION_PROMOTION": "/promotions/funimation",
   "PARTNERS_CONNECTIONS": "/partners/connections",
   "PARTNERS_APPLY": "/partners/apply",
