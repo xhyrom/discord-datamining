@@ -545,5 +545,6 @@
   "UNACK_USER_TRIAL_OFFER": "/user-trial-offers/:param/unack",
   "USER_TRIAL_OFFERS": "/user-trial-offers",
   "INVENTORY_COLLECT": "/users/@me/inventory/packs/collect",
-  "INVENTORY_UNCOLLECT": "/users/@me/inventory/packs/uncollect"
+  "INVENTORY_UNCOLLECT": "/users/@me/inventory/packs/uncollect",
+  "INVENTORY_GET": "/users/@me/inventory"
 }
