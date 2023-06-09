@@ -18559,6 +18559,10 @@ html.disable-forced-colors * {
     background-color: transparent
 }
 
+.messageClydeButton-3Iro1f {
+    border-radius: 100px
+}
+
 .theme-dark .wumpusTooltip-15kPrN {
     background: var(--white-500);
     color: var(--primary-500)
@@ -158613,4 +158617,4 @@ html .invoiceCancelRow-dVOR64 {
     flex-direction: column
 }
 
-/*# sourceMappingURL=40532.c48c852dfc60ea2f0d44.css.map*/
+/*# sourceMappingURL=40532.ac44cec52e2b51d912ef.css.map*/
