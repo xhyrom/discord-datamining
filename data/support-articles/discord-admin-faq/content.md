@@ -38,35 +38,23 @@
                         </ul>
                         <h3><span style="color: #434343;" data-darkreader-inline-color="">Note: The only way to join the Discord Admins Server is on the desktop/browser app. This is unavailable on the mobile app.</span></h3>
                         <p class="wysiwyg-text-align-center"><span style="color: #434343;" data-darkreader-inline-color=""><img src="https://support.discord.com/hc/article_attachments/15199001816471" alt="admin_server.png"></span></p>
-                        <section class="article-info">
-                            <div class="article-content">
-                                <div class="article-body">
-                                    <h1 class="wysiwyg-text-align-left">Frequently Asked Questions</h1>
-                                </div>
-                            </div>
-                        </section>
-                        <footer>
-                            <div class="article-footer">
-                                <div class="article-share">
-                                    <p><strong>Q: What can I find in the Discord Admins server?</strong></p>
-                                    <p>A: The Discord Admins server primarily focuses on engaging, managing, protecting, and growing thriving communities on Discord.</p>
-                                    <p>Here you can find chatter about best practices, safety, apps, monetization, and more. Members will also receive updates on new features or updates directly from Discord. We also use the community as a way to gather feedback on some features and ask members to provide us with feedback.</p>
-                                    <p><strong>Q: Where can I find the rules for the server?</strong></p>
-                                    <p>A: Current rules can be found in the #rules channel. Be sure to read them completely!</p>
-                                    <p>However, Discord reserves the right to act on misbehavior and violations not explicitly listed in our rules. At all times, use common sense and good judgment for anything you do on the server. Moderation actions by Staff or Moderators will ensure that we continue to promote healthy communities and assume that all Admins will be acting with positive intent.</p>
-                                    <p><strong>Q: I'm in the server, but I can't see any channels! What should I do?</strong></p>
-                                    <p>A: You must complete our Community Onboarding to access channels in the server. If you are still struggling with this, you can message our Modmail bot and ask a moderator for assistance.</p>
-                                    <p><strong>Q: Manage Server is a pretty high permission to give out, why is it locked behind this?</strong></p>
-                                    <p>A: We want to ensure that we are reaching server owners, admins and moderators with this community. As such, this will require us to ensure we are reaching an audience that has this permission or capability in order to create a welcoming and fun community for all.</p>
-                                    <p><strong>Q: Is the server only in English?</strong></p>
-                                    <p>A: A majority of the categories are in English, but not strictly limited to being an English language community. We have dedicated spaces for French and German users, with additional forum posts for other languages. We may expand this in the future to include more languages.</p>
-                                    <p><strong>Q: I was banned or removed from Discord Admins, can I appeal?</strong></p>
-                                    <p>A: Since the server works on a warning system before removals, we provide users with time and explanation on how to avoid removal from our server. If a user does hit the threshold for warnings, or is removed from the server, we will not offer appeals to rejoin the server.</p>
-                                    <h1 id="h_01H28S3R8H5GN6JMDN9BSEJPX1"><span style="font-weight: 400;">How to Contact </span></h1>
-                                    <p><span style="font-weight: 400;">We'd love to hear from you! Please submit your questions and feedback on our </span><a href="https://dis.gd/cprog" target="_blank" rel="noopener">Community Program support form</a><span style="font-weight: 400;">, and remember to select the Discord Admin Server in the Community Program dropdown.</span></p>
-                                </div>
-                            </div>
-                        </footer>
+                        <h1>Frequently Asked Questions</h1>
+                        <p><strong>Q: What can I find in the Discord Admins server?</strong></p>
+                        <p>A: The Discord Admins server primarily focuses on engaging, managing, protecting, and growing thriving communities on Discord.</p>
+                        <p>Here you can find chatter about best practices, safety, apps, monetization, and more. Members will also receive updates on new features or updates directly from Discord. We also use the community as a way to gather feedback on some features and ask members to provide us with feedback.</p>
+                        <p><strong>Q: Where can I find the rules for the server?</strong></p>
+                        <p>A: Current rules can be found in the #rules channel. Be sure to read them completely!</p>
+                        <p>However, Discord reserves the right to act on misbehavior and violations not explicitly listed in our rules. At all times, use common sense and good judgment for anything you do on the server. Moderation actions by Staff or Moderators will ensure that we continue to promote healthy communities and assume that all Admins will be acting with positive intent.</p>
+                        <p><strong>Q: I'm in the server, but I can't see any channels! What should I do?</strong></p>
+                        <p>A: You must complete our Community Onboarding to access channels in the server. If you are still struggling with this, you can message our Modmail bot and ask a moderator for assistance.</p>
+                        <p><strong>Q: Manage Server is a pretty high permission to give out, why is it locked behind this?</strong></p>
+                        <p>A: We want to ensure that we are reaching server owners, admins and moderators with this community. As such, this will require us to ensure we are reaching an audience that has this permission or capability in order to create a welcoming and fun community for all.</p>
+                        <p><strong>Q: Is the server only in English?</strong></p>
+                        <p>A: A majority of the categories are in English, but not strictly limited to being an English language community. We have dedicated spaces for French and German users, with additional forum posts for other languages. We may expand this in the future to include more languages.</p>
+                        <p><strong>Q: I was banned or removed from Discord Admins, can I appeal?</strong></p>
+                        <p>A: Since the server works on a warning system before removals, we provide users with time and explanation on how to avoid removal from our server. If a user does hit the threshold for warnings, or is removed from the server, we will not offer appeals to rejoin the server.</p>
+                        <h1>How to Contact </h1>
+                        <p>We'd love to hear from you! Please submit your questions and feedback on our <a href="https://support.discord.com/hc/en-us/requests/new?ticket_form_id=360000168511" target="_blank" rel="noopener">Community Program support form</a>, and remember to select the Discord Admin Server in the Community Program dropdown.</p>
                     </div>
                 </div>
             </section>
