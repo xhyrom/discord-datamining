@@ -54834,6 +54834,12 @@ input[type=checked]:focus-visible+.label-3TDpbn {
     text-align: center
 }
 
+.soundButton-2P2Ua2.focused-3HPLAS.hoverActiveBackground-gg2vFI,
+.soundButton-2P2Ua2:focus-within.hoverActiveBackground-gg2vFI,
+.soundButton-2P2Ua2:hover.hoverActiveBackground-gg2vFI {
+    background: var(--background-tertiary)
+}
+
 .soundButton-2P2Ua2.focused-3HPLAS:not(.premiumDisabled-20lb_D) .buttonOverlay-3K0hyD,
 .soundButton-2P2Ua2:focus-within:not(.premiumDisabled-20lb_D) .buttonOverlay-3K0hyD,
 .soundButton-2P2Ua2:hover:not(.premiumDisabled-20lb_D) .buttonOverlay-3K0hyD {
@@ -158081,4 +158087,4 @@ html .invoiceCancelRow-dVOR64 {
     flex-direction: column
 }
 
-/*# sourceMappingURL=40532.772590d7094cfefe051c.css.map*/
+/*# sourceMappingURL=40532.1675fe6e362cfcb9aa35.css.map*/
