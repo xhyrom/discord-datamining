@@ -3,18 +3,17 @@ import { push } from "../utils.js";
 import { error, success } from "../logger.js";
 import months from "../months.js";
 
-import { readFile, writeFile } from "node:fs/promises";
+import { writeFile } from "node:fs/promises";
 import { join } from "node:path";
 import simpleGit from "simple-git";
-import getRoutesString from "@xhyrom-forks/discord-datamining-lang-differ/getRoutesStrings.js";
 
 const git = simpleGit({
   baseDir: join("..", ".."),
 });
 
-const routes = getRoutesString(
-  await readFile(join("..", "..", "data", "current.js"), "utf-8")
-);
+const routes = await (
+  await fetch("https://api.distools.xhyrom.dev/v2/routes")
+).json();
 
 await writeFile(
   join("..", "..", "data", "routes.json"),

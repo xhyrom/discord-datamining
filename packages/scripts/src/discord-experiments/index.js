@@ -22,7 +22,7 @@ const [webhookId, webhookToken] = new URL(
 info("Fetching experiments");
 const experiments = await (
   await fetch(
-    "https://api.discord-experiments.xhyrom.dev/v2/experiments?also_with_unknown_ids=true"
+    "https://api.distools.xhyrom.dev/v2/experiments?also_with_unknown_ids=true"
   )
 ).json();
 

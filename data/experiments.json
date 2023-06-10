@@ -1316,7 +1316,7 @@
             {
               "type": "guild_in_range_by_hash",
               "hash_key": 695300504,
-              "target": 5000
+              "target": 10000
             }
           ]
         },
@@ -2303,6 +2303,25 @@
   {
     "data": {
       "kind": "user",
+      "id": "2023-06_no_dcs_in_overlay",
+      "label": "No DCs in Overlay",
+      "description": [
+        "Control",
+        "Treatment 1: Remove DCs"
+      ],
+      "hash": 2016786830,
+      "buckets": [
+        0,
+        1
+      ],
+      "config_keys": [
+        "enabled"
+      ]
+    }
+  },
+  {
+    "data": {
+      "kind": "user",
       "id": "2021-04_network_action_logging",
       "label": "Standard Analytics: Log Network Actions",
       "description": [
@@ -3268,7 +3287,8 @@
       "revision": 0,
       "overrides": {
         "1": [
-          "763838479293349899"
+          "763838479293349899",
+          "816784679717044276"
         ]
       },
       "overrides_formatted": []
@@ -4997,6 +5017,52 @@
   {
     "data": {
       "kind": "guild",
+      "id": "2023-04_guild_alert_mode",
+      "label": "Guild Alert Mode",
+      "description": [
+        "Control",
+        "Treatment 1: Show alert mode experimence"
+      ],
+      "hash": 2710924848,
+      "buckets": [
+        0,
+        1
+      ],
+      "config_keys": [
+        "showAlertMode"
+      ]
+    },
+    "rollout": {
+      "populations": [
+        {
+          "buckets": {
+            "none": {
+              "rollout": [
+                {
+                  "start": 0,
+                  "end": 10000
+                }
+              ]
+            }
+          },
+          "filters": []
+        }
+      ],
+      "revision": 0,
+      "overrides": {
+        "1": [
+          "816784679717044276",
+          "874345844743213126",
+          "840296607785287763",
+          "1113529666989469708"
+        ]
+      },
+      "overrides_formatted": []
+    }
+  },
+  {
+    "data": {
+      "kind": "guild",
       "id": "2022-07_invites_disabled",
       "label": "Report Raids",
       "description": [
@@ -6055,52 +6121,6 @@
   {
     "data": {
       "kind": "guild",
-      "id": "2023-04_guild_alert_mode",
-      "label": "Guild Alert Mode",
-      "description": [
-        "Control",
-        "Treatment 1: Show alert mode experimence"
-      ],
-      "hash": 2710924848,
-      "buckets": [
-        0,
-        1
-      ],
-      "config_keys": [
-        "showAlertMode"
-      ]
-    },
-    "rollout": {
-      "populations": [
-        {
-          "buckets": {
-            "none": {
-              "rollout": [
-                {
-                  "start": 0,
-                  "end": 10000
-                }
-              ]
-            }
-          },
-          "filters": []
-        }
-      ],
-      "revision": 0,
-      "overrides": {
-        "1": [
-          "816784679717044276",
-          "874345844743213126",
-          "840296607785287763",
-          "1113529666989469708"
-        ]
-      },
-      "overrides_formatted": []
-    }
-  },
-  {
-    "data": {
-      "kind": "guild",
       "id": "2023-03_onboarding_upsell_lifecycle",
       "label": "Onboarding Upsell Lifecycle",
       "description": [
@@ -6133,46 +6153,6 @@
         },
         {
           "buckets": {
-            "1": {
-              "rollout": [
-                {
-                  "start": 0,
-                  "end": 400
-                },
-                {
-                  "start": 400,
-                  "end": 2000
-                }
-              ]
-            },
-            "none": {
-              "rollout": [
-                {
-                  "start": 2000,
-                  "end": 4400
-                },
-                {
-                  "start": 6400,
-                  "end": 10000
-                }
-              ]
-            }
-          },
-          "filters": [
-            {
-              "type": "guild_member_count_range",
-              "min_count": 5000,
-              "max_count": null
-            },
-            {
-              "type": "guild_in_range_by_hash",
-              "hash_key": 485475819,
-              "target": 10000
-            }
-          ]
-        },
-        {
-          "buckets": {
             "none": {
               "rollout": [
                 {
@@ -6204,7 +6184,7 @@
           "filters": []
         }
       ],
-      "revision": 3,
+      "revision": 4,
       "overrides": {},
       "overrides_formatted": [
         {
@@ -8089,7 +8069,7 @@
             },
             {
               "type": "guild_member_count_range",
-              "min_count": 500,
+              "min_count": 200,
               "max_count": null
             }
           ]

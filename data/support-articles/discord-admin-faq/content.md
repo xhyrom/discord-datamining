@@ -5,7 +5,7 @@
                 <div class="article-content">
                     <div class="article-body">
                         <p id="docs-internal-guid-83da0d2a-7fff-f118-db31-fb7289e5efea"><strong>Welcome! We're excited to tell you more about the Discord Admins server, a server for community builders and leaders.</strong></p>
-                        <p><img src="https://support.discord.com/hc/article_attachments/6823958235799/Screen_Shot_2022-06-16_at_7.52.57_AM.png" alt="Screen_Shot_2022-06-16_at_7.52.57_AM.png"></p>
+                        <p><img src="https://support.discord.com/hc/article_attachments/6823958235799" alt="Screen_Shot_2022-06-16_at_7.52.57_AM.png"></p>
                         <p id="docs-internal-guid-e7730b3c-7fff-3fd5-6f68-2654495ceed6"><span class="wysiwyg-font-size-large"><strong>What this article covers: </strong></span></p>
                         <ul>
                             <li><a href="#h_01H28S36PEDZZREGK6ZMRGFMNY" target="_self">What is the Discord Admins Server?</a></li>
@@ -36,15 +36,9 @@
                             <li>Press on <strong>Join Discord's Admins Server</strong>
                             </li>
                         </ul>
-                        <h3><span style="color: #434343;">Note: The only way to join the Discord Admins Server is on the desktop/browser app. This is unavailable on the mobile app.</span></h3>
-                        <strong style="font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif;"><img src="https://support.discord.com/hc/article_attachments/6823912655639/Screen_Shot_2022-06-15_at_6.19.37_PM.png" alt="Screen_Shot_2022-06-15_at_6.19.37_PM.png"></strong>
-                    </div>
-                </div>
-            </section>
-            <footer>
-                <div class="article-footer">
-                    <div class="article-share">
-                        <h1 id="docs-internal-guid-edb2046c-7fff-dd5d-dc6b-f9a998053600">Frequently Asked Questions</h1>
+                        <h3><span style="color: #434343;" data-darkreader-inline-color="">Note: The only way to join the Discord Admins Server is on the desktop/browser app. This is unavailable on the mobile app.</span></h3>
+                        <p class="wysiwyg-text-align-center"><span style="color: #434343;" data-darkreader-inline-color=""><img src="https://support.discord.com/hc/article_attachments/15199001816471" alt="admin_server.png"></span></p>
+                        <h1>Frequently Asked Questions</h1>
                         <p><strong>Q: What can I find in the Discord Admins server?</strong></p>
                         <p>A: The Discord Admins server primarily focuses on engaging, managing, protecting, and growing thriving communities on Discord.</p>
                         <p>Here you can find chatter about best practices, safety, apps, monetization, and more. Members will also receive updates on new features or updates directly from Discord. We also use the community as a way to gather feedback on some features and ask members to provide us with feedback.</p>
@@ -59,11 +53,11 @@
                         <p>A: A majority of the categories are in English, but not strictly limited to being an English language community. We have dedicated spaces for French and German users, with additional forum posts for other languages. We may expand this in the future to include more languages.</p>
                         <p><strong>Q: I was banned or removed from Discord Admins, can I appeal?</strong></p>
                         <p>A: Since the server works on a warning system before removals, we provide users with time and explanation on how to avoid removal from our server. If a user does hit the threshold for warnings, or is removed from the server, we will not offer appeals to rejoin the server.</p>
-                        <h1 id="h_01H28S3R8H5GN6JMDN9BSEJPX1"><span style="font-weight: 400;">How to Contact </span></h1>
-                        <p><span style="font-weight: 400;">We'd love to hear from you! Please submit your questions and feedback on our </span><a href="https://dis.gd/cprog" target="_blank" rel="noopener noreferrer">Community Program support form</a><span style="font-weight: 400;">, and remember to select the Discord Admin Server in the Community Program dropdown.</span></p>
+                        <h1>How to Contact </h1>
+                        <p>We'd love to hear from you! Please submit your questions and feedback on our <a href="https://support.discord.com/hc/en-us/requests/new?ticket_form_id=360000168511" target="_blank" rel="noopener">Community Program support form</a>, and remember to select the Discord Admin Server in the Community Program dropdown.</p>
                     </div>
                 </div>
-            </footer>
+            </section>
         </div>
     </div>
 </section>
