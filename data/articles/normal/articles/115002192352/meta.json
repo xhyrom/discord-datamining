@@ -1,0 +1,26 @@
+{
+  "id": 115002192352,
+  "url": "https://hammerandchisel.zendesk.com/api/v2/help_center/en-us/articles/115002192352.json",
+  "html_url": "https://support.discord.com/hc/en-us/articles/115002192352-Automated-user-accounts-self-bots-",
+  "author_id": 114129062731,
+  "comments_disabled": true,
+  "draft": false,
+  "promoted": false,
+  "position": 0,
+  "section_id": 360007875171,
+  "created_at": "2017-10-17T19:35:16Z",
+  "name": "Automated user accounts (self-bots)",
+  "title": "Automated user accounts (self-bots)",
+  "source_locale": "en-us",
+  "locale": "en-us",
+  "outdated": false,
+  "outdated_locales": [],
+  "edited_at": "2021-10-28T19:50:46Z",
+  "user_segment_id": null,
+  "permission_group_id": 1720972,
+  "content_tag_ids": [],
+  "label_names": [
+    "safety",
+    "tns"
+  ]
+}

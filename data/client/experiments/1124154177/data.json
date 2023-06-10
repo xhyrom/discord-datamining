@@ -1,0 +1,19 @@
+{
+  "data": {
+    "kind": "user",
+    "id": "2022-01_home_feed_toggle",
+    "label": "Show Guild Feed Sorting Selector",
+    "description": [
+      "Control",
+      "Treatment 1: Yes Selector"
+    ],
+    "hash": 1124154177,
+    "buckets": [
+      0,
+      1
+    ],
+    "config_keys": [
+      "showSelector"
+    ]
+  }
+}

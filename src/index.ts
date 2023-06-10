@@ -12,7 +12,7 @@ await new Client().run();
 await new Domains(process.env.SECURITYTRAILS_API_KEY!).run();
 
 // Scrape all github data - organisation and repositories
-await new Github(process.env.GITHUB_TOKEN).run();
+await new Github().run();
 
 // Scrape https://discord.com/blog
 await new Blog().run();

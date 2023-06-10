@@ -1,0 +1,32 @@
+{
+  "id": 115001580171,
+  "url": "https://hammerandchisel.zendesk.com/api/v2/help_center/en-us/articles/115001580171.json",
+  "html_url": "https://support.discord.com/hc/en-us/articles/115001580171-Channel-Categories-101",
+  "author_id": 114628872252,
+  "comments_disabled": true,
+  "draft": false,
+  "promoted": false,
+  "position": 0,
+  "section_id": 201110547,
+  "created_at": "2017-09-14T23:42:51Z",
+  "name": "Channel Categories 101",
+  "title": "Channel Categories 101",
+  "source_locale": "en-us",
+  "locale": "en-us",
+  "outdated": false,
+  "outdated_locales": [],
+  "edited_at": "2020-09-21T21:01:24Z",
+  "user_segment_id": null,
+  "permission_group_id": 1720972,
+  "content_tag_ids": [],
+  "label_names": [
+    "sub channels",
+    "subchannels",
+    "nested channels",
+    "nest",
+    "nested",
+    "organize",
+    "folders",
+    "answer-bot"
+  ]
+}

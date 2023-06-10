@@ -1,0 +1,23 @@
+{
+  "id": 1500009434981,
+  "url": "https://hammerandchisel.zendesk.com/api/v2/help_center/en-us/articles/1500009434981.json",
+  "html_url": "https://support.discord.com/hc/en-us/articles/1500009434981-Ticketed-Events-Refund-Policy",
+  "author_id": 12415876668,
+  "comments_disabled": true,
+  "draft": false,
+  "promoted": false,
+  "position": 0,
+  "section_id": 360002436411,
+  "created_at": "2021-05-05T19:30:46Z",
+  "name": "Ticketed Events Refund Policy",
+  "title": "Ticketed Events Refund Policy",
+  "source_locale": "en-us",
+  "locale": "en-us",
+  "outdated": false,
+  "outdated_locales": [],
+  "edited_at": "2021-05-12T16:33:08Z",
+  "user_segment_id": null,
+  "permission_group_id": 1720972,
+  "content_tag_ids": [],
+  "label_names": []
+}

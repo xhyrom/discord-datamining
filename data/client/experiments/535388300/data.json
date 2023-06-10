@@ -1,0 +1,19 @@
+{
+  "data": {
+    "kind": "user",
+    "id": "2022-11_rtx40xx_gpu_screenshare_with_av1",
+    "label": "Test how AV1 works on windows with RTX40xx GPUs for screenshare",
+    "description": [
+      "Control",
+      "Treatment 1: Screenshare with AV1"
+    ],
+    "hash": 535388300,
+    "buckets": [
+      0,
+      1
+    ],
+    "config_keys": [
+      "enabled"
+    ]
+  }
+}

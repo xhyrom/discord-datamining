@@ -1,0 +1,19 @@
+{
+  "data": {
+    "kind": "user",
+    "id": "2023-05_referral_trials_birthday_moment",
+    "label": "Referral Trials Birthday Moment",
+    "description": [
+      "Control",
+      "Treatment 1: Users will see the birthday moment referral trial UX"
+    ],
+    "hash": 3364594544,
+    "buckets": [
+      0,
+      1
+    ],
+    "config_keys": [
+      "enabled"
+    ]
+  }
+}

@@ -1,12 +1,29 @@
 import { join } from "node:path";
-import { Client } from "../index.ts";
 import { File } from "../File.ts";
 import type { Module } from "../../index.ts";
-import { beautify, writeFile, rm } from "../../../utils.ts";
+import {
+  beautify,
+  writeFile,
+  rm,
+  postToDiscord,
+  getWebhookFromEnv,
+  octokit,
+} from "../../../utils.ts";
+import { ChannelType, type Channel } from "../Channel.ts";
 
 export class Stylesheets implements Module {
+  #files?: {
+    stylesheets: File[];
+    mainStylesheet: File;
+  };
+  #channel: Channel;
+
+  constructor(channel: Channel) {
+    this.#channel = channel;
+  }
+
   get baseDir() {
-    return join(Client.baseDir, "stylesheets");
+    return join(this.#channel.baseDir, "stylesheets");
   }
 
   async run() {
@@ -27,17 +44,49 @@ export class Stylesheets implements Module {
     );
   }
 
+  async diff(before: string, after: string) {
+    if (this.#channel.type !== ChannelType.Canary) return;
+
+    const diff = await octokit.repos.compareCommits({
+      owner: "xHyroM",
+      repo: "discord-datamining",
+      base: before,
+      head: after,
+    });
+
+    const currentCssFile = diff.data.files?.find((f) =>
+      f.filename.includes("main.css")
+    );
+    if (!currentCssFile || !currentCssFile.patch) return;
+
+    const desc = `\`\`\`diff\n${currentCssFile.patch}\n\`\`\``;
+
+    await postToDiscord(
+      getWebhookFromEnv("DISCORD_WEBHOOK_STYLESHEETS"),
+      after,
+      {
+        content: `<@&1105847524662706226>\n${
+          desc.length > 2000 ? desc.slice(0, 1968) + "...```" : desc
+        }`,
+      }
+    );
+  }
+
   async files() {
-    const res = await (await fetch("https://canary.discord.com/login")).text();
+    if (this.#files) return this.#files;
+
+    const res = await (await fetch(`${this.#channel.baseUrl}/login`)).text();
 
     const stylesheets = res
       .match(/<link rel="stylesheet" href="\/assets\/[a-z0-9.]+\.css"[^>]+>/g)
       ?.map((s) => s.match(/href="[^"]+"/g)?.[0].slice(14, -1))
-      ?.map((s) => new File(s!));
+      ?.map((s) => new File(s!))!;
 
-    return {
+    this.#files = {
       stylesheets,
-      mainStylesheet: stylesheets?.slice(-1)[0],
+      mainStylesheet: stylesheets?.slice(-1)[0]!,
     };
+
+    return this.#files;
   }
 }

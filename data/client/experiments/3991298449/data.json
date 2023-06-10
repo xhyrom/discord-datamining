@@ -1,0 +1,19 @@
+{
+  "data": {
+    "kind": "user",
+    "id": "2022-09_free_file_upload_limit",
+    "label": "Free File Upload Limit Increase",
+    "description": [
+      "Control",
+      "Treatment 1: Enabled"
+    ],
+    "hash": 3991298449,
+    "buckets": [
+      0,
+      1
+    ],
+    "config_keys": [
+      "enabled"
+    ]
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "id": 10394859532823,
+  "url": "https://hammerandchisel.zendesk.com/api/v2/help_center/en-us/articles/10394859532823.json",
+  "html_url": "https://support.discord.com/hc/en-us/articles/10394859532823-Community-Onboarding-Examples",
+  "author_id": 424992137214,
+  "comments_disabled": true,
+  "draft": false,
+  "promoted": false,
+  "position": 0,
+  "section_id": 360007770572,
+  "created_at": "2022-11-22T01:03:39Z",
+  "name": "Community Onboarding Examples",
+  "title": "Community Onboarding Examples",
+  "source_locale": "en-us",
+  "locale": "en-us",
+  "outdated": false,
+  "outdated_locales": [],
+  "edited_at": "2023-04-20T02:05:02Z",
+  "user_segment_id": null,
+  "permission_group_id": 1720972,
+  "content_tag_ids": [],
+  "label_names": [
+    "community onboarding experiment",
+    "community questions"
+  ]
+}

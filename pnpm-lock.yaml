@@ -4,12 +4,24 @@ importers:
 
   .:
     dependencies:
+      '@discordjs/builders':
+        specifier: ^1.6.3
+        version: 1.6.3
+      '@discordjs/rest':
+        specifier: ^1.7.1
+        version: 1.7.1
       '@octokit/rest':
         specifier: ^19.0.11
         version: 19.0.11
+      '@xhyrom-forks/discord-datamining-lang-differ':
+        specifier: github:xhyrom-forks/discord-datamining-lang-differ#personal-use
+        version: github.com/xhyrom-forks/discord-datamining-lang-differ/b0d9b040467fdea426e4cbca618b6c6f77bd236d
       '@xhyrom/configs':
         specifier: https://gitpkg.now.sh/xHyroM/things/packages/configs?main
         version: '@gitpkg.now.sh/xHyroM/things/packages/configs?main'
+      discord-api-types:
+        specifier: ^0.37.43
+        version: 0.37.43
       dotenv:
         specifier: ^16.1.4
         version: 16.1.4
@@ -19,10 +31,16 @@ importers:
       jsdom:
         specifier: ^22.1.0
         version: 22.1.0
+      simple-git:
+        specifier: ^3.19.0
+        version: 3.19.0
       xml-js:
         specifier: ^1.6.11
         version: 1.6.11
     devDependencies:
+      '@types/diff':
+        specifier: ^5.0.3
+        version: 5.0.3
       '@types/js-beautify':
         specifier: ^1.13.3
         version: 1.13.3
@@ -512,7 +530,7 @@ packages:
       '@discordjs/formatters': 0.3.1
       '@discordjs/util': 0.3.1
       '@sapphire/shapeshift': 3.9.0
-      discord-api-types: 0.37.41
+      discord-api-types: 0.37.43
       fast-deep-equal: 3.1.3
       ts-mixer: 6.0.3
       tslib: 2.5.2
@@ -527,7 +545,7 @@ packages:
     resolution: {integrity: sha512-M7X4IGiSeh4znwcRGcs+49B5tBkNDn4k5bmhxJDAUhRxRHTiFAOTVUNQ6yAKySu5jZTnCbSvTYHW3w0rAzV1MA==}
     engines: {node: '>=16.9.0'}
     dependencies:
-      discord-api-types: 0.37.41
+      discord-api-types: 0.37.43
     dev: false
 
   /@discordjs/rest@1.7.1:
@@ -538,7 +556,7 @@ packages:
       '@discordjs/util': 0.3.1
       '@sapphire/async-queue': 1.5.0
       '@sapphire/snowflake': 3.5.1
-      discord-api-types: 0.37.41
+      discord-api-types: 0.37.43
       file-type: 18.4.0
       tslib: 2.5.2
       undici: 5.22.1
@@ -1343,6 +1361,10 @@ packages:
     dependencies:
       '@types/ms': 0.7.31
     dev: false
+
+  /@types/diff@5.0.3:
+    resolution: {integrity: sha512-amrLbRqTU9bXMCc6uX0sWpxsQzRIo9z6MJPkH1pkez/qOxuqSZVuryJAWoBRq94CeG8JxY+VK4Le9HtjQR5T9A==}
+    dev: true
 
   /@types/hast@2.3.4:
     resolution: {integrity: sha512-wLEm0QvaoawEDoTRwzTXp4b4jpwiJDvR5KMnFnVodm3scufTlBOWRD6N1OBf9TZMhjlNsSfcO5V+7AF4+Vy+9g==}
@@ -2280,6 +2302,10 @@ packages:
 
   /discord-api-types@0.37.41:
     resolution: {integrity: sha512-FaPGBK9hx3zqSRX1x3KQWj+OElAJKmcyyfcdCy+U4AKv+gYuIkRySM7zd1So2sE4gc1DikkghkSBgBgKh6pe4Q==}
+    dev: false
+
+  /discord-api-types@0.37.43:
+    resolution: {integrity: sha512-bBhDWU3TF9KADxR/mHp1K4Bvu/LRtFQdGyBjADu4e66F3ZnD4kp12W/SJCttIaCcMXzPV3sfty6eDGRNRph51Q==}
     dev: false
 
   /dlv@1.1.3:
@@ -4916,6 +4942,16 @@ packages:
       - supports-color
     dev: false
 
+  /simple-git@3.19.0:
+    resolution: {integrity: sha512-hyH2p9Ptxjf/xPuL7HfXbpYt9gKhC1yWDh3KYIAYJJePAKV7AEjLN4xhp7lozOdNiaJ9jlVvAbBymVlcS2jRiA==}
+    dependencies:
+      '@kwsites/file-exists': 1.1.1
+      '@kwsites/promise-deferred': 1.1.1
+      debug: 4.3.4
+    transitivePeerDependencies:
+      - supports-color
+    dev: false
+
   /simple-swizzle@0.2.2:
     resolution: {integrity: sha512-JA//kQgZtbuY83m+xT+tXJkmJncGMTFT+C+g2h2R9uxkYIrE2yy9sgmcLhCnw57/WSD+Eh3J97FPEDFnbXnDUg==}
     dependencies:
@@ -5794,6 +5830,15 @@ packages:
     resolution: {tarball: https://codeload.github.com/xhyrom-forks/discord-datamining-lang-differ/tar.gz/038e4f583ae3d39a83038eb53f46b76dcde018d1}
     name: '@xhyrom-forks/discord-datamining-lang-differ'
     version: 1.3.4
+    dependencies:
+      espree: 9.5.2
+      object-deep-search: 0.0.7
+    dev: false
+
+  github.com/xhyrom-forks/discord-datamining-lang-differ/b0d9b040467fdea426e4cbca618b6c6f77bd236d:
+    resolution: {tarball: https://codeload.github.com/xhyrom-forks/discord-datamining-lang-differ/tar.gz/b0d9b040467fdea426e4cbca618b6c6f77bd236d}
+    name: '@xhyrom-forks/discord-datamining-lang-differ'
+    version: 1.3.5
     dependencies:
       espree: 9.5.2
       object-deep-search: 0.0.7

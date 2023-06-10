@@ -1,0 +1,27 @@
+{
+  "id": 207618817,
+  "url": "https://hammerandchisel.zendesk.com/api/v2/help_center/en-us/articles/207618817.json",
+  "html_url": "https://support.discord.com/hc/en-us/articles/207618817-How-do-I-edit-my-messages-",
+  "author_id": 12415876668,
+  "comments_disabled": true,
+  "draft": false,
+  "promoted": false,
+  "position": 7,
+  "section_id": 115000458672,
+  "created_at": "2015-08-15T23:30:02Z",
+  "name": "How do I edit my messages?",
+  "title": "How do I edit my messages?",
+  "source_locale": "en-us",
+  "locale": "en-us",
+  "outdated": false,
+  "outdated_locales": [],
+  "edited_at": "2020-06-04T21:55:46Z",
+  "user_segment_id": null,
+  "permission_group_id": 1720972,
+  "content_tag_ids": [],
+  "label_names": [
+    "mistake",
+    "manage",
+    "answer-bot"
+  ]
+}

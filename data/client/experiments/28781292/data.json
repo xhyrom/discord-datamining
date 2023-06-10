@@ -1,0 +1,21 @@
+{
+  "data": {
+    "kind": "user",
+    "id": "2022-11_premium_bogo_month_promotion",
+    "label": "Nitro Promo for Black Friday",
+    "description": [
+      "Control",
+      "Treatment 1: Enabled without promo materials (basic + classic)",
+      "Treatment 2: Enabled with promo materials (Rest of world)"
+    ],
+    "hash": 28781292,
+    "buckets": [
+      0,
+      1,
+      2
+    ],
+    "config_keys": [
+      "enabled"
+    ]
+  }
+}

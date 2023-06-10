@@ -1,0 +1,28 @@
+{
+  "id": 8420602109207,
+  "url": "https://hammerandchisel.zendesk.com/api/v2/help_center/en-us/articles/8420602109207.json",
+  "html_url": "https://support.discord.com/hc/en-us/articles/8420602109207-Message-Content-Privileged-Intent-Launch-Will-it-affect-me-",
+  "author_id": 5630494357399,
+  "comments_disabled": true,
+  "draft": false,
+  "promoted": false,
+  "position": 39,
+  "section_id": 115000457731,
+  "created_at": "2022-08-25T14:58:55Z",
+  "name": "Message Content Privileged Intent Launch: Will it affect me?",
+  "title": "Message Content Privileged Intent Launch: Will it affect me?",
+  "source_locale": "en-us",
+  "locale": "en-us",
+  "outdated": false,
+  "outdated_locales": [],
+  "edited_at": "2022-08-29T22:59:10Z",
+  "user_segment_id": null,
+  "permission_group_id": 1720972,
+  "content_tag_ids": [],
+  "label_names": [
+    "answer-bot",
+    "message content intent",
+    "privileged intent",
+    "Privileged Intents"
+  ]
+}

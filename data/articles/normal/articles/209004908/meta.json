@@ -1,0 +1,28 @@
+{
+  "id": 209004908,
+  "url": "https://hammerandchisel.zendesk.com/api/v2/help_center/en-us/articles/209004908.json",
+  "html_url": "https://support.discord.com/hc/en-us/articles/209004908--iOS-How-do-I-create-an-Invite-link-on-my-iOS-device-",
+  "author_id": 1199351638,
+  "comments_disabled": true,
+  "draft": false,
+  "promoted": false,
+  "position": 7,
+  "section_id": 201131298,
+  "created_at": "2015-09-12T00:55:45Z",
+  "name": "[iOS] How do I create an Invite link on my iOS device?",
+  "title": "[iOS] How do I create an Invite link on my iOS device?",
+  "source_locale": "en-us",
+  "locale": "en-us",
+  "outdated": false,
+  "outdated_locales": [],
+  "edited_at": "2022-05-31T17:16:48Z",
+  "user_segment_id": null,
+  "permission_group_id": 1720972,
+  "content_tag_ids": [],
+  "label_names": [
+    "inviation",
+    "inviting",
+    "friends",
+    "answer-bot"
+  ]
+}

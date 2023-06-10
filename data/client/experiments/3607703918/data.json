@@ -1,0 +1,37 @@
+{
+  "data": {
+    "kind": "guild",
+    "id": "2021-09_watch_together_rollout",
+    "label": "Exposure tracking for Watch Together (do not override)",
+    "description": [
+      "Control"
+    ],
+    "hash": 3607703918,
+    "buckets": [
+      0
+    ],
+    "config_keys": [
+      "enabled"
+    ]
+  },
+  "rollout": {
+    "populations": [
+      {
+        "buckets": {
+          "none": {
+            "rollout": [
+              {
+                "start": 0,
+                "end": 10000
+              }
+            ]
+          }
+        },
+        "filters": []
+      }
+    ],
+    "revision": 0,
+    "overrides": {},
+    "overrides_formatted": []
+  }
+}

@@ -1,0 +1,11 @@
+<p>You finally got that invite to the super cool Discord server you've been wanting to join, yes!</p>
+<p>So... why isn't it working? There are a few reasons your server link may be "Invalid" or not working!</p>
+<h1 id="h_01FS8FGCNPR5D3S4CRC46VX782">What to check if your invite is "Invalid"</h1>
+<p><strong>Private or Public Channel: </strong>The invite link you were given might go to a private channel in the server. Remember: generated invites aren't to a server in general, but to <span class="wysiwyg-underline">a specific channel in the server</span>. So it is crucial for the invite to go to a channel that<strong> is not a private channel </strong>and <strong>can be accessed by the @everyone role.</strong></p>
+<p><strong>Expiration:</strong> Your invite link may have expired. In this case, please contact the server owner and ask them for a new invite.</p>
+<p><strong>Invalid Code:</strong> You may not have a legitimate invite code. Please check your code and try again. Remember that invite codes -are- case sensitive!</p>
+<p><strong>Ban:</strong> You may have been banned from joining this server. Bans are based on IP address, so you would need to contact the server admins and ask them to revoke all bans in their Server Settings. Just because they remove your name, does not mean the invite will work.</p>
+<p><strong>100 Server Limit:</strong> A user cannot be a member of more than 100 servers. If you are in too many servers, you'll need to leave one before you can join.</p>
+<h3>Note: Server limits are raised from 100 to 200 if you have <a href="https://support.discord.com/hc/en-us/articles/115000435108" target="_blank" rel="noopener noreferrer">Discord Nitro</a>! </h3>
+<h2>Still having issues?</h2>
+<p>If you are still unable to join a server, we may need to look into the server or your account. Please reach out to Support team so that we can investigate further: <a class="ql-link" href="https://dis.gd/contact" target="_blank" rel="nofollow noopener noreferrer ugc" data-slab-linktype="text">https://dis.gd/contact</a></p>

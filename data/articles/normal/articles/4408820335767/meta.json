@@ -1,0 +1,32 @@
+{
+  "id": 4408820335767,
+  "url": "https://hammerandchisel.zendesk.com/api/v2/help_center/en-us/articles/4408820335767.json",
+  "html_url": "https://support.discord.com/hc/en-us/articles/4408820335767-How-can-I-manage-my-email-notifications-settings-",
+  "author_id": 1504238994441,
+  "comments_disabled": true,
+  "draft": false,
+  "promoted": false,
+  "position": 105,
+  "section_id": 115000457731,
+  "created_at": "2021-09-17T01:11:24Z",
+  "name": "How can I manage my email notifications settings?",
+  "title": "How can I manage my email notifications settings?",
+  "source_locale": "en-us",
+  "locale": "en-us",
+  "outdated": false,
+  "outdated_locales": [],
+  "edited_at": "2022-09-19T21:30:04Z",
+  "user_segment_id": null,
+  "permission_group_id": 1720972,
+  "content_tag_ids": [],
+  "label_names": [
+    "notification",
+    "email",
+    "notifications",
+    "answer-bot",
+    "emails",
+    "email notification",
+    "Discord emails",
+    "email notifications"
+  ]
+}

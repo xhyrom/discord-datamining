@@ -1,0 +1,10 @@
+{
+  "id": "slash-commands-permissions-discord-apps-bots",
+  "title": "Permission to Slash, Granted: Introducing Slash Command Permissions",
+  "link": "https://discord.com/blog/slash-commands-permissions-discord-apps-bots",
+  "guid": "https://discord.com/blog/slash-commands-permissions-discord-apps-bots",
+  "description": "There’s a brand-new page in Server Settings: Command Permissions! Server admins and moderators can head into the Integrations page to customize which slash commands can be used, in what channels, and by which roles. Read on for more!",
+  "pubDate": "Tue, 12 Apr 2022 00:00:00 GMT",
+  "media:content": "https://uploads-ssl.webflow.com/5f9072399b2640f14d6a2bf4/625489cc18bfe0b12a83e4a2_202201010_PM_CommandPermissionsBlog_JJ_v04.jpg",
+  "media:thumbnail": "https://uploads-ssl.webflow.com/5f9072399b2640f14d6a2bf4/625489cc18bfe0b12a83e4a2_202201010_PM_CommandPermissionsBlog_JJ_v04.jpg"
+}

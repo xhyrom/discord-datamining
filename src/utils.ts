@@ -4,11 +4,80 @@ import {
   mkdir,
   writeFile as nodeWriteFile,
   rm as nodeRm,
+  readFile as nodeReadFile,
+  access as nodeAccess,
+  constants,
 } from "node:fs/promises";
 import jsBeautify from "js-beautify";
+import simpleGit from "simple-git";
+import { REST } from "@discordjs/rest";
+import { Octokit } from "@octokit/rest";
+import { Routes, type APIEmbed, ButtonStyle } from "discord-api-types/v10";
+import { ActionRowBuilder, ButtonBuilder } from "@discordjs/builders";
 
 export const __dirname = fileURLToPath(new URL(".", import.meta.url));
-export const DATA_DIR = join(__dirname, "..", "data-new");
+export const DATA_DIR = join(__dirname, "..", "data");
+
+export const git = simpleGit();
+export const discordRest = new REST({ version: "10" }).setToken(
+  process.env.DISCORD_TOKEN ?? ""
+);
+export const octokit = new Octokit({
+  auth: process.env.GITHUB_TOKEN ?? "",
+});
+
+export const pushToGit = async (...message: string[]) => {
+  if (process.env.IS_DEV) return;
+
+  await git.add("data/*");
+  await git.commit(message);
+  return await git.push();
+};
+
+export const postToDiscord = async (
+  webhooks: string[],
+  pushHash: string | undefined,
+  body: {
+    content?: string;
+    embeds?: APIEmbed[];
+  }
+) => {
+  for (const webhook of webhooks) {
+    const [id, token] = webhook.split("/").slice(-2);
+
+    await discordRest.post(Routes.webhook(id!, token!), {
+      body: {
+        components: [
+          new ActionRowBuilder()
+            .setComponents(
+              new ButtonBuilder()
+                .setLabel("View on GitHub")
+                .setStyle(ButtonStyle.Link)
+                .setURL(
+                  pushHash
+                    ? `https://github.com/xHyroM/discord-datamining/commit/${pushHash}`
+                    : "https://github.com/xHyroM/discord-datamining"
+                )
+            )
+            .toJSON(),
+        ],
+        ...body,
+      },
+    });
+  }
+};
+
+export const getWebhookFromEnv = (name: string): string[] => {
+  const webhook =
+    process.env[process.env.IS_DEV ? "DISCORD_WEBHOOK_IS_DEV" : name];
+  if (!webhook) throw new Error(`Missing webhook: ${name}`);
+
+  try {
+    return JSON.parse(webhook) as string[];
+  } catch {
+    return [webhook];
+  }
+};
 
 export const getPaginator = async (
   url: string,
@@ -50,6 +119,21 @@ export const omitEndsWith = <T extends Record<string, any>>(
     }
   }
   return newObj;
+};
+
+export const exist = async (path: string) => {
+  try {
+    await nodeAccess(path, constants.F_OK);
+    return true;
+  } catch {
+    return false;
+  }
+};
+
+export const readFile = async (path: string) => {
+  if (!(await exist(path))) return null;
+
+  return await nodeReadFile(path, "utf8");
 };
 
 export const writeFile = async (path: string, data: string) => {

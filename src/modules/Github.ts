@@ -1,17 +1,15 @@
 import { join } from "node:path";
-import { DATA_DIR, omit, omitEndsWith, writeFile, rm } from "../utils.ts";
-import { Octokit } from "@octokit/rest";
+import {
+  DATA_DIR,
+  omit,
+  omitEndsWith,
+  writeFile,
+  octokit,
+  rm,
+} from "../utils.ts";
 import type { Module } from ".";
 
 export class Github implements Module {
-  private octokit: Octokit;
-
-  constructor(token?: string) {
-    this.octokit = new Octokit({
-      auth: token,
-    });
-  }
-
   get baseDir() {
     return join(DATA_DIR, "github");
   }
@@ -71,7 +69,7 @@ export class Github implements Module {
 
   async organisation() {
     try {
-      const { data: organisation } = await this.octokit.rest.orgs.get({
+      const { data: organisation } = await octokit.rest.orgs.get({
         org: "discord",
       });
 
@@ -83,8 +81,8 @@ export class Github implements Module {
 
   async repositories() {
     try {
-      const repositories = await this.octokit.paginate(
-        this.octokit.rest.repos.listForOrg,
+      const repositories = await octokit.paginate(
+        octokit.rest.repos.listForOrg,
         {
           org: "discord",
         }

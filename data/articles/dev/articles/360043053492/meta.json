@@ -1,0 +1,23 @@
+{
+  "id": 360043053492,
+  "url": "https://discorddevs.zendesk.com/api/v2/help_center/en-us/articles/360043053492.json",
+  "html_url": "https://support-dev.discord.com/hc/en-us/articles/360043053492-Statistics-Bot-Policy",
+  "author_id": 4749086327,
+  "comments_disabled": false,
+  "draft": false,
+  "promoted": false,
+  "position": 0,
+  "section_id": 360001637491,
+  "created_at": "2020-05-13T02:01:38Z",
+  "name": "Statistics Bot Policy",
+  "title": "Statistics Bot Policy",
+  "source_locale": "en-us",
+  "locale": "en-us",
+  "outdated": false,
+  "outdated_locales": [],
+  "edited_at": "2022-06-06T14:09:50Z",
+  "user_segment_id": null,
+  "permission_group_id": 1720952,
+  "content_tag_ids": [],
+  "label_names": []
+}

@@ -1,0 +1,30 @@
+{
+  "id": 11635925354775,
+  "url": "https://hammerandchisel.zendesk.com/api/v2/help_center/en-us/articles/11635925354775.json",
+  "html_url": "https://support.discord.com/hc/en-us/articles/11635925354775-Audio-Bitrate-FAQ",
+  "author_id": 1504238994441,
+  "comments_disabled": true,
+  "draft": false,
+  "promoted": false,
+  "position": 0,
+  "section_id": 201110547,
+  "created_at": "2023-01-12T23:52:39Z",
+  "name": "Audio Bitrate FAQ",
+  "title": "Audio Bitrate FAQ",
+  "source_locale": "en-us",
+  "locale": "en-us",
+  "outdated": false,
+  "outdated_locales": [],
+  "edited_at": "2023-01-12T23:54:23Z",
+  "user_segment_id": null,
+  "permission_group_id": 1720972,
+  "content_tag_ids": [],
+  "label_names": [
+    "answer-bot",
+    "boosting",
+    "audio",
+    "audio bitrate",
+    "bitrate",
+    "voice channel"
+  ]
+}

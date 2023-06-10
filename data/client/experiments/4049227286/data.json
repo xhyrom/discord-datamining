@@ -1,0 +1,21 @@
+{
+  "data": {
+    "kind": "user",
+    "id": "2021-10_pause_partner_applications_experiment",
+    "label": "Pause Partner Applications Experiment",
+    "description": [
+      "Control",
+      "Treatment 0: Off",
+      "Treatment 1: On no override"
+    ],
+    "hash": 4049227286,
+    "buckets": [
+      0,
+      0,
+      1
+    ],
+    "config_keys": [
+      "enabled"
+    ]
+  }
+}

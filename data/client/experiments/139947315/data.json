@@ -1,0 +1,22 @@
+{
+  "data": {
+    "kind": "user",
+    "id": "2023-04_broadcasting",
+    "label": "Go Live Broadcasting",
+    "description": [
+      "Control",
+      "Treatment 1: Allow user to Broadcast to friends & guilds",
+      "Treatment 2: Cannot broadcast, cannot view broadcasts"
+    ],
+    "hash": 139947315,
+    "buckets": [
+      0,
+      1,
+      2
+    ],
+    "config_keys": [
+      "canBroadcast",
+      "canViewBroadcasts"
+    ]
+  }
+}

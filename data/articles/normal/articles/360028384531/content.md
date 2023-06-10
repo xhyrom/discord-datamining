@@ -1,0 +1,33 @@
+<p>Are you a fan of pizza? Do you like getting pizza delivered to your house? Have you ever wished you could get pizza delivered right to your server? Well, if your favorite pizza topping is announcements from other Discord servers, now you can! </p>
+<p>With <strong>Channel Following</strong>, you can now have automated post pizzas topped with announcements from your favorite servers delivered directly to your server in a channel of your choice, using some of the same technology that powers <a href="https://support.discord.com/hc/en-us/articles/228383668-Intro-to-Webhooks" target="_self">Webhooks</a>! </p>
+<p class="wysiwyg-text-align-center"> </p>
+<h3>
+    <span style="font-weight: 400;">Note: Channel Following is now available to all servers with <a href="https://support.discord.com/hc/en-us/articles/360047132851-Enabling-Your-Community-Server" target="_blank" rel="noopener">Community Servers enabled</a></span>. 
+</h3>
+<h1 class="wysiwyg-text-align-left">Spotting an Announcement Channel</h1>
+<p>In select servers with <strong>Announcement Channels</strong>, which are special channels labeled with a Megaphone icon, you'll be able to use the new <strong>Follow</strong> option to have any messages from that channel posted directly into your server as they're posted! </p>
+<p class="wysiwyg-text-align-center"><img src="https://support.discord.com/hc/article_attachments/360062786892/Capture31.jpg" alt="Capture31.jpg"></p>
+<p class="wysiwyg-text-align-center"><img src="https://support.discord.com/hc/article_attachments/360062786852/Screen_Shot_2019-05-21_at_2.06.51_PM.png" alt="Screen_Shot_2019-05-21_at_2.06.51_PM.png"></p>
+<p> </p>
+<p>Let's say your group of friends wants to know when the new Spellbreak update comes out. First, find the announcement channel in the server you want to follow--in this case, the Spellbreak official server has an announcement channel that looks just like this!</p>
+<p><img src="https://support.discord.com/hc/article_attachments/360036832852/Screen_Shot_2019-08-22_at_12.26.24_PM.png" alt="Screen_Shot_2019-08-22_at_12.26.24_PM.png"></p>
+<p>Make sure that you have the <strong>Manage Webhooks </strong>permission in your server, as you'll need it to order some post pizzas! Then, click the Follow button!</p>
+<h3><span style="font-weight: 400;">Note: The Follow button is only available in Announcement Channels, labeled with the Megaphone icon! Developers can learn how to make an Announcement Channel <a href="https://support-dev.discord.com/hc/en-us/articles/360027891611-Sell-Your-Game-on-Discord-How-to-do-it" target="_self">here</a>! </span></h3>
+<h1>Adding it to your server</h1>
+<p>When you click the Follow button in an eligible channel, you'll be greeted with a whole host of options for where you want that Announcement channel's posts to appear in your own server!</p>
+<p><img src="https://support.discord.com/hc/article_attachments/360029039512/Screen_Shot_2019-05-21_at_2.08.36_PM.png" alt="Screen_Shot_2019-05-21_at_2.08.36_PM.png"></p>
+<p>From here, you can select which server and channel you want your new announcements bot to post in! Keep in mind that only servers and channels you have Manage Webhook permissions in will be shown. </p>
+<p>Once you're finished configuring these options, press Follow and you're ready to start getting post pizzas delivered to your server by your very own delivery bot!</p>
+<h1>Sit back &amp; enjoy</h1>
+<p>As the server you followed continues to post announcements, you'll receive posts from that server in the channel you picked. The posts will look a bit like this:</p>
+<p><img src="https://support.discord.com/hc/article_attachments/360029039632/Screen_Shot_2019-05-21_at_2.08.54_PM.png" alt="Screen_Shot_2019-05-21_at_2.08.54_PM.png"></p>
+<p>The posts will come from a bot named after the server in question. All the links and images in the post will be delivered as you'd expect, but our delivery bots will remove any and all role mentions in the post, including @everyone and @here.</p>
+<h3>Keep in mind, server admins have the ability to choose which announcement posts will be published and sent to your server through Channel Following. If you're missing an announcement post, it's likely the admins have chosen to not publish that post.</h3>
+<h1>How to remove</h1>
+<p>If you've got Manage Webhooks permissions, you can follow and unfollow servers at any time! If you want to stop receiving posts from a server that you followed, it's easy! Any servers you follow are added to your server as a Webhook. To unfollow a server, look for the server's listing in Server Settings &gt; Integrations &gt; Channels Followed!</p>
+<p><img src="https://support.discord.com/hc/article_attachments/360094890534/integrations_channels_followed_modal.png" alt="integrations_channels_followed_modal.png"></p>
+<p>Delete the bot that corresponds with that server's name to unfollow it! The bot will be removed from your server and you'll stop receiving posts from the server right away. <br><br><img src="https://support.discord.com/hc/article_attachments/360029038871/Screen_Shot_2019-05-21_at_2.12.22_PM.png" alt="Screen_Shot_2019-05-21_at_2.12.22_PM.png"></p>
+<h3><span style="font-weight: 400;">Note: You can use the Webhooks settings to modify your new follow bot too--you can change the channel it posts in, the bot's name, and the avatar of the bot, all using the Edit button! </span></h3>
+<h1><span style="font-weight: 400;">All set!<br></span></h1>
+<p>Now you know all there is to know about Channel Following! Channel Following is still in the experiment phase, so it'll only be available on select servers as our amazing pizza chefs continue to build out the feature! Keep an eye on our changelogs for more information on Channel Following in the future! <br><br>If you run a <span class="wysiwyg-font-size-medium" style="font-weight: 400;"><a href="https://support.discord.com/hc/en-us/articles/360047132851-Enabling-Your-Community-Server" target="_blank" rel="noopener">Community Server</a></span><span style="font-size: 1.2em; font-weight: 600;">, please check out the </span><a style="font-size: 1.2em; font-weight: 600; background-color: #ffffff;" href="https://support.discord.com/hc/en-us/articles/360032008192" target="_self">Announcement Channels FAQ</a><span style="font-size: 1.2em; font-weight: 600;">.</span></p>
+<p>While we continue to experiment with and improve Channel Following, if you have any suggestions for us, share them on our <a href="https://dis.gd/feedback" target="_self">feedback</a> page!</p>

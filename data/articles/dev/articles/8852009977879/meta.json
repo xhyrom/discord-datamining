@@ -1,0 +1,23 @@
+{
+  "id": 8852009977879,
+  "url": "https://discorddevs.zendesk.com/api/v2/help_center/en-us/articles/8852009977879.json",
+  "html_url": "https://support-dev.discord.com/hc/en-us/articles/8852009977879-App-Directory-Inclusion-Guidelines",
+  "author_id": 4749086327,
+  "comments_disabled": true,
+  "draft": false,
+  "promoted": false,
+  "position": 0,
+  "section_id": 360001637491,
+  "created_at": "2022-09-13T20:34:55Z",
+  "name": "App Directory Inclusion Guidelines",
+  "title": "App Directory Inclusion Guidelines",
+  "source_locale": "en-us",
+  "locale": "en-us",
+  "outdated": false,
+  "outdated_locales": [],
+  "edited_at": "2022-10-25T21:04:51Z",
+  "user_segment_id": null,
+  "permission_group_id": 1720952,
+  "content_tag_ids": [],
+  "label_names": []
+}

@@ -1,0 +1,79 @@
+{
+  "data": {
+    "kind": "guild",
+    "id": "2022-01_guild_role_subscription_trials",
+    "label": "Guild Role Subscription Trials",
+    "description": [
+      "Control",
+      "Treatment 1: Enables guild to create Guild Role Subscription Trials"
+    ],
+    "hash": 4200595067,
+    "buckets": [
+      0,
+      1
+    ],
+    "config_keys": [
+      "enableRoleSubscriptionTrialsForGuild"
+    ]
+  },
+  "rollout": {
+    "populations": [
+      {
+        "buckets": {
+          "1": {
+            "rollout": [
+              {
+                "start": 0,
+                "end": 10000
+              }
+            ]
+          }
+        },
+        "filters": [
+          {
+            "type": "guild_in_range_by_hash",
+            "hash_key": 770139301,
+            "target": 10000
+          }
+        ]
+      },
+      {
+        "buckets": {
+          "none": {
+            "rollout": [
+              {
+                "start": 0,
+                "end": 10000
+              }
+            ]
+          }
+        },
+        "filters": []
+      }
+    ],
+    "revision": 0,
+    "overrides": {},
+    "overrides_formatted": [
+      {
+        "buckets": {
+          "1": {
+            "rollout": [
+              {
+                "start": 0,
+                "end": 10000
+              }
+            ]
+          }
+        },
+        "filters": [
+          {
+            "type": "guild_has_feature",
+            "features": [
+              "GUILD_ROLE_SUBSCRIPTION_TRIALS"
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

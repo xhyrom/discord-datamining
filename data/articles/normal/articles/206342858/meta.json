@@ -1,0 +1,30 @@
+{
+  "id": 206342858,
+  "url": "https://hammerandchisel.zendesk.com/api/v2/help_center/en-us/articles/206342858.json",
+  "html_url": "https://support.discord.com/hc/en-us/articles/206342858--How-do-I-disable-auto-embed-",
+  "author_id": 361945854972,
+  "comments_disabled": true,
+  "draft": false,
+  "promoted": false,
+  "position": 6,
+  "section_id": 115000458672,
+  "created_at": "2015-07-23T20:53:08Z",
+  "name": " How do I disable auto-embed?",
+  "title": " How do I disable auto-embed?",
+  "source_locale": "en-us",
+  "locale": "en-us",
+  "outdated": false,
+  "outdated_locales": [],
+  "edited_at": "2022-05-31T17:16:07Z",
+  "user_segment_id": null,
+  "permission_group_id": 1720972,
+  "content_tag_ids": [],
+  "label_names": [
+    "embed",
+    "images",
+    "previews",
+    "preview",
+    "image",
+    "answer-bot"
+  ]
+}

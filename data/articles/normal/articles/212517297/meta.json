@@ -1,0 +1,28 @@
+{
+  "id": 212517297,
+  "url": "https://hammerandchisel.zendesk.com/api/v2/help_center/en-us/articles/212517297.json",
+  "html_url": "https://support.discord.com/hc/en-us/articles/212517297-Text-to-Speech-101",
+  "author_id": 364802902112,
+  "comments_disabled": true,
+  "draft": false,
+  "promoted": false,
+  "position": 3,
+  "section_id": 115000458672,
+  "created_at": "2015-10-12T21:46:53Z",
+  "name": "Text-to-Speech 101",
+  "title": "Text-to-Speech 101",
+  "source_locale": "en-us",
+  "locale": "en-us",
+  "outdated": false,
+  "outdated_locales": [],
+  "edited_at": "2022-06-18T00:44:28Z",
+  "user_segment_id": null,
+  "permission_group_id": 1720972,
+  "content_tag_ids": [],
+  "label_names": [
+    "speak",
+    "voice",
+    "tts",
+    "answer-bot"
+  ]
+}

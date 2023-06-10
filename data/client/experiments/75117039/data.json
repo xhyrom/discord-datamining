@@ -1,0 +1,27 @@
+{
+  "data": {
+    "kind": "user",
+    "id": "2022-08_home_drawer_autoclose",
+    "label": "Auto close home drawer",
+    "description": [
+      "Control",
+      "Treatment 1: normal animation",
+      "Treatment 2: no animate",
+      "Treatment 3: 150 delayed animation",
+      "Treatment 4: 250 delayed animation",
+      "Treatment 5: 500 delayed animation"
+    ],
+    "hash": 75117039,
+    "buckets": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "config_keys": [
+      "enabled"
+    ]
+  }
+}

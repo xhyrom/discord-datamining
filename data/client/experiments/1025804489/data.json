@@ -1,0 +1,21 @@
+{
+  "data": {
+    "kind": "user",
+    "id": "2021-11_discovery_tags",
+    "label": "Discovery Tags",
+    "description": [
+      "Control",
+      "Treatment 1: Show keyword tags on home and search result pages",
+      "Treatment 2: Show keyword tags on home and search result pages and under the search bar"
+    ],
+    "hash": 1025804489,
+    "buckets": [
+      0,
+      1,
+      2
+    ],
+    "config_keys": [
+      "enabled"
+    ]
+  }
+}

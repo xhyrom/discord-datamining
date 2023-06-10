@@ -1,0 +1,26 @@
+{
+  "id": 9360431966359,
+  "url": "https://hammerandchisel.zendesk.com/api/v2/help_center/en-us/articles/9360431966359.json",
+  "html_url": "https://support.discord.com/hc/en-us/articles/9360431966359-Welcome-to-the-App-Directory-",
+  "author_id": 5630494357399,
+  "comments_disabled": true,
+  "draft": false,
+  "promoted": false,
+  "position": 28,
+  "section_id": 115000457731,
+  "created_at": "2022-10-05T21:16:03Z",
+  "name": "Welcome to the App Directory!",
+  "title": "Welcome to the App Directory!",
+  "source_locale": "en-us",
+  "locale": "en-us",
+  "outdated": false,
+  "outdated_locales": [],
+  "edited_at": "2023-03-31T01:06:55Z",
+  "user_segment_id": null,
+  "permission_group_id": 1720972,
+  "content_tag_ids": [],
+  "label_names": [
+    "answer-bot",
+    "app directory"
+  ]
+}

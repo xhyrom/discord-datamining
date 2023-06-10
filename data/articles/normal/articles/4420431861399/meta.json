@@ -1,0 +1,29 @@
+{
+  "id": 4420431861399,
+  "url": "https://hammerandchisel.zendesk.com/api/v2/help_center/en-us/articles/4420431861399.json",
+  "html_url": "https://support.discord.com/hc/en-us/articles/4420431861399-Blog-PlayStation-x-Discord-Connect-Your-Account-and-Show-What-You-re-Playing-",
+  "author_id": 364802902112,
+  "comments_disabled": true,
+  "draft": false,
+  "promoted": false,
+  "position": 73,
+  "section_id": 115000457731,
+  "created_at": "2022-01-27T01:49:05Z",
+  "name": "Blog: PlayStation® x Discord: Connect Your Account and Show What You’re Playing ",
+  "title": "Blog: PlayStation® x Discord: Connect Your Account and Show What You’re Playing ",
+  "source_locale": "en-us",
+  "locale": "en-us",
+  "outdated": false,
+  "outdated_locales": [],
+  "edited_at": "2022-05-31T16:15:56Z",
+  "user_segment_id": null,
+  "permission_group_id": 1720972,
+  "content_tag_ids": [],
+  "label_names": [
+    "answer-bot",
+    "connect",
+    "connection",
+    "playstation",
+    "collab"
+  ]
+}

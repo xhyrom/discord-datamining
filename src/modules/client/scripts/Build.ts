@@ -2,36 +2,51 @@ import type { File } from "../File.ts";
 
 export class Build {
   script: File;
-  #content?: string = undefined;
+  #content?: string;
+  #buildNumber?: string | undefined;
+  #versionHash?: string | undefined;
+  #builtAt?: number | null;
 
   constructor(script: File) {
     this.script = script;
   }
 
   async buildNumber() {
+    if (this.#buildNumber) return this.#buildNumber;
+
     const content = await this.data();
     const buildNumber = Array.from(
       content.matchAll(/buildNumber:\s*"(?<number>[0-9]+)"/g)
     )[0]?.groups?.number;
-    return buildNumber;
+
+    this.#buildNumber = buildNumber;
+    return this.#buildNumber;
   }
 
   async versionHash() {
+    if (this.#versionHash) return this.#versionHash;
+
     const content = await this.data();
     const versionHash = Array.from(
       content.matchAll(/versionHash:\s*"(?<hash>(.*?))"/g)
     )[0]?.groups?.hash;
-    return versionHash;
+
+    this.#versionHash = versionHash;
+    return this.#versionHash;
   }
 
-  async buildAt() {
+  async builtAt() {
+    if (this.#builtAt) return this.#builtAt;
+
     const content = await this.data();
-    const buildAt = Array.from(
+    const builtAt = Array.from(
       content.matchAll(
         /"builtAt",\s*(?:String\("(?<timestamp>[^"]+)"\)|"(?<value>[^"]+)")\s*/g
       )
     )[0]?.groups?.timestamp;
-    return buildAt;
+
+    this.#builtAt = builtAt ? parseInt(builtAt) : null;
+    return this.#builtAt;
   }
 
   async data() {

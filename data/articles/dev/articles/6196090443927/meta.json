@@ -1,0 +1,30 @@
+{
+  "id": 6196090443927,
+  "url": "https://discorddevs.zendesk.com/api/v2/help_center/en-us/articles/6196090443927.json",
+  "html_url": "https://support-dev.discord.com/hc/en-us/articles/6196090443927-Suspicious-Bot-Growth",
+  "author_id": 5309274131351,
+  "comments_disabled": true,
+  "draft": false,
+  "promoted": false,
+  "position": 0,
+  "section_id": 5110493739415,
+  "created_at": "2022-05-19T16:24:11Z",
+  "name": "Suspicious Bot Growth",
+  "title": "Suspicious Bot Growth",
+  "source_locale": "en-us",
+  "locale": "en-us",
+  "outdated": false,
+  "outdated_locales": [],
+  "edited_at": "2022-06-06T23:31:03Z",
+  "user_segment_id": null,
+  "permission_group_id": 1720972,
+  "content_tag_ids": [],
+  "label_names": [
+    "answer-bot",
+    "Bots",
+    "Verification",
+    "Suspicious Growth",
+    "Error",
+    "Troubleshooting"
+  ]
+}

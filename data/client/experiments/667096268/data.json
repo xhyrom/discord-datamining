@@ -1,0 +1,19 @@
+{
+  "data": {
+    "kind": "user",
+    "id": "2022-09_emoji_ecosystem_holdout",
+    "label": "Emoji Ecosystem Holdout Experiment",
+    "description": [
+      "Control",
+      "Treatment 1: In the Emoji Ecosystem Holdout"
+    ],
+    "hash": 667096268,
+    "buckets": [
+      0,
+      1
+    ],
+    "config_keys": [
+      "enabled"
+    ]
+  }
+}
