@@ -9,10 +9,11 @@ import { Client } from "./modules/client/index.ts";
 // Scrape client data - scripts, styles, assets,
 await new Client().run();
 
-await new Domains(process.env.SECURITYTRAILS_API_KEY!).run();
+if (process.env.SCRAPE_DOMAINS === "true")
+  await new Domains(process.env.SECURITYTRAILS_API_KEY!).run();
 
 // Scrape all github data - organisation and repositories
-await new Github().run();
+if (process.env.SCRAPE_GITHUB === "true") await new Github().run();
 
 // Scrape https://discord.com/blog
 await new Blog().run();
