@@ -92558,10 +92558,20 @@ strong {
 }
 
 .modalHeader-1V_jCD {
+    padding-bottom: 8px
+}
+
+.emptyHeader-1gUgLh,
+.modalHeader-1V_jCD {
     -webkit-box-align: center;
     -ms-flex-align: center;
-    align-items: center;
-    padding-bottom: 8px
+    align-items: center
+}
+
+.emptyHeader-1gUgLh {
+    padding-bottom: 24px;
+    margin-left: 24px;
+    margin-right: 24px
 }
 
 .headingContainer--XdXtV {
@@ -158632,4 +158642,4 @@ html .invoiceCancelRow-dVOR64 {
     flex-direction: column
 }
 
-/*# sourceMappingURL=40532.00dab2fe8672a4992cf0.css.map*/
+/*# sourceMappingURL=40532.f423e085de33f6f1aa91.css.map*/
