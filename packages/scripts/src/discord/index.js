@@ -88,7 +88,7 @@ const date = new Date();
 await git.commit([
   `${date.getDate()} ${
     months[date.getMonth()]
-  } ${date.getFullYear()} - Build ${buildNumber} (${hash}) 🚀`,
+  } 📥 ${date.getFullYear()} - Build ${buildNumber} (${hash}) 🚀`,
   `Scripts (${scripts.length}):\n${scripts
     .map((script) => namilize(script))
     .join("\n")}`,

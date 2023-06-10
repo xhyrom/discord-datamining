@@ -49,7 +49,7 @@ const date = new Date();
 await git.commit([
   `${date.getDate()} ${
     months[date.getMonth()]
-  } ${date.getFullYear()} - Discord Experiments was updated 🚀`,
+  } 🧪 ${date.getFullYear()} - Discord Experiments were updated 🚀`,
   `Experiments (${experiments.length}):\n${experiments
     .map(experimentNameFormat)
     .join("\n")}`,

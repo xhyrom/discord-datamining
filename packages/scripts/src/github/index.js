@@ -48,7 +48,7 @@ const date = new Date();
 await git.commit([
   `${date.getDate()} ${
     months[date.getMonth()]
-  } ${date.getFullYear()} - Github Data was updated 🚀`,
+  } 💾 ${date.getFullYear()} - Github Data was updated 🚀`,
   `Repos (${repos.length}):\n${repos.map((repo) => repo.name).join("\n")}`,
 ]);
 
