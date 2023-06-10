@@ -1,0 +1,32 @@
+{
+  "id": 216679607,
+  "url": "https://hammerandchisel.zendesk.com/api/v2/help_center/en-us/articles/216679607.json",
+  "html_url": "https://support.discord.com/hc/en-us/articles/216679607--Verification-Levels",
+  "author_id": 1504238994441,
+  "comments_disabled": true,
+  "draft": false,
+  "promoted": false,
+  "position": 0,
+  "section_id": 202857957,
+  "created_at": "2016-01-27T23:10:05Z",
+  "name": " Verification Levels",
+  "title": " Verification Levels",
+  "source_locale": "en-us",
+  "locale": "en-us",
+  "outdated": false,
+  "outdated_locales": [],
+  "edited_at": "2023-02-16T19:40:10Z",
+  "user_segment_id": null,
+  "permission_group_id": 1720972,
+  "content_tag_ids": [],
+  "label_names": [
+    "Security",
+    "safety",
+    "raid",
+    "tns",
+    "answer-bot",
+    "verification",
+    "server settings",
+    "verification level"
+  ]
+}

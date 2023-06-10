@@ -1,0 +1,19 @@
+{
+  "data": {
+    "kind": "user",
+    "id": "2023-03_voice_messages_dm",
+    "label": "Voice Messages in DMs",
+    "description": [
+      "Control",
+      "Treatment 1: Can send voice messages"
+    ],
+    "hash": 2937329910,
+    "buckets": [
+      0,
+      1
+    ],
+    "config_keys": [
+      "enabled"
+    ]
+  }
+}

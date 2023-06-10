@@ -1,0 +1,28 @@
+{
+  "id": 9929188048023,
+  "url": "https://hammerandchisel.zendesk.com/api/v2/help_center/en-us/articles/9929188048023.json",
+  "html_url": "https://support.discord.com/hc/en-us/articles/9929188048023-Discord-and-Crunchyroll-Connection-FAQ",
+  "author_id": 12415876668,
+  "comments_disabled": true,
+  "draft": false,
+  "promoted": false,
+  "position": 17,
+  "section_id": 115000457731,
+  "created_at": "2022-11-01T13:15:55Z",
+  "name": "Discord and Crunchyroll Connection FAQ",
+  "title": "Discord and Crunchyroll Connection FAQ",
+  "source_locale": "en-us",
+  "locale": "en-us",
+  "outdated": false,
+  "outdated_locales": [],
+  "edited_at": "2022-12-20T22:48:59Z",
+  "user_segment_id": null,
+  "permission_group_id": 1720972,
+  "content_tag_ids": [],
+  "label_names": [
+    "answer-bot",
+    "connection",
+    "integration",
+    "crunchyroll"
+  ]
+}

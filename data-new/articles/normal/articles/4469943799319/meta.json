@@ -1,0 +1,27 @@
+{
+  "id": 4469943799319,
+  "url": "https://hammerandchisel.zendesk.com/api/v2/help_center/en-us/articles/4469943799319.json",
+  "html_url": "https://support.discord.com/hc/en-us/articles/4469943799319-Privacy-Policy-Updates",
+  "author_id": 364802902112,
+  "comments_disabled": true,
+  "draft": false,
+  "promoted": false,
+  "position": 0,
+  "section_id": 115000344951,
+  "created_at": "2022-02-22T21:17:23Z",
+  "name": "Privacy Policy Updates",
+  "title": "Privacy Policy Updates",
+  "source_locale": "en-us",
+  "locale": "en-us",
+  "outdated": false,
+  "outdated_locales": [],
+  "edited_at": "2023-02-24T19:39:58Z",
+  "user_segment_id": null,
+  "permission_group_id": 1720972,
+  "content_tag_ids": [],
+  "label_names": [
+    "answer-bot",
+    "Terms of service",
+    "policy"
+  ]
+}

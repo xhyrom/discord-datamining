@@ -1,0 +1,39 @@
+{
+  "data": {
+    "kind": "guild",
+    "id": "2022-05_mobile_web_role_subscription_purchase_page",
+    "label": "Guild Role Subscription Mobile Web",
+    "description": [
+      "Control",
+      "Treatment 1: Enables role subscription mobile web purchase page"
+    ],
+    "hash": 4190408036,
+    "buckets": [
+      0,
+      1
+    ],
+    "config_keys": [
+      "enabled"
+    ]
+  },
+  "rollout": {
+    "populations": [
+      {
+        "buckets": {
+          "1": {
+            "rollout": [
+              {
+                "start": 0,
+                "end": 10000
+              }
+            ]
+          }
+        },
+        "filters": []
+      }
+    ],
+    "revision": 0,
+    "overrides": {},
+    "overrides_formatted": []
+  }
+}

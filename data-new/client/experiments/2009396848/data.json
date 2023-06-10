@@ -1,0 +1,51 @@
+{
+  "data": {
+    "kind": "guild",
+    "hash": 2009396848
+  },
+  "rollout": {
+    "populations": [
+      {
+        "buckets": {
+          "1": {
+            "rollout": [
+              {
+                "start": 0,
+                "end": 10000
+              }
+            ]
+          }
+        },
+        "filters": [
+          {
+            "type": "guild_has_feature",
+            "features": [
+              "PARTNERED",
+              "VERIFIED"
+            ]
+          }
+        ]
+      },
+      {
+        "buckets": {
+          "none": {
+            "rollout": [
+              {
+                "start": 0,
+                "end": 10000
+              }
+            ]
+          }
+        },
+        "filters": []
+      }
+    ],
+    "revision": 0,
+    "overrides": {
+      "1": [
+        "733525406203773049"
+      ]
+    },
+    "overrides_formatted": []
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "data": {
+    "kind": "user",
+    "id": "2023-03_activity_gartic_phone_coach_mark",
+    "label": "Activity Coach Mark Gartic Phone",
+    "description": [
+      "Control",
+      "Treatment 1: Enable Activity Coach Mark Gartic Phone"
+    ],
+    "hash": 1886305766,
+    "buckets": [
+      0,
+      1
+    ],
+    "config_keys": [
+      "enabled"
+    ]
+  }
+}

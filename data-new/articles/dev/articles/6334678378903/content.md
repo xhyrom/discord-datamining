@@ -1,0 +1,5 @@
+<p class="wysiwyg-text-align-left callout">Update: We are no longer offering the ability to purchase a license to sell PC games starting December 1, 2021. On March 1, 2022, we are sunsetting store channel functionality. You can read more at <a href="https://support-dev.discord.com/hc/en-us/articles/6309018858647" target="_blank" rel="noopener noreferrer">this article</a>.</p>
+<p class="wysiwyg-text-align-left">Some developers are going to pick to list their game in an <strong>Early Access</strong> not yet complete raw cookie dough state. This is our way of letting you know that's the case: </p>
+<p class="wysiwyg-text-align-center"><img src="https://support-dev.discord.com/hc/article_attachments/11937682731799" alt="1_.png"></p>
+<p>Expect a few glitches on your journey. Also, feel prideful for helping a game developer get their baby across the finish line!</p>
+<p>Help these great games become even better by providing constructive feedback directly to the game developers via their server!</p>

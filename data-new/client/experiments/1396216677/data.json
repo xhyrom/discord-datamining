@@ -1,0 +1,19 @@
+{
+  "data": {
+    "kind": "user",
+    "id": "2023-03_mj_chat_bar_user",
+    "label": "MJ Chat Bar user experiment",
+    "description": [
+      "Control",
+      "Treatment 1: Enabled"
+    ],
+    "hash": 1396216677,
+    "buckets": [
+      0,
+      1
+    ],
+    "config_keys": [
+      "enabled"
+    ]
+  }
+}

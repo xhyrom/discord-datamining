@@ -1,0 +1,31 @@
+{
+  "id": 10388356626711,
+  "url": "https://hammerandchisel.zendesk.com/api/v2/help_center/en-us/articles/10388356626711.json",
+  "html_url": "https://support.discord.com/hc/en-us/articles/10388356626711-Connections-Linked-Roles-Admins",
+  "author_id": 424992137214,
+  "comments_disabled": true,
+  "draft": false,
+  "promoted": false,
+  "position": 0,
+  "section_id": 202857957,
+  "created_at": "2022-11-21T20:41:03Z",
+  "name": "Connections & Linked Roles: Admins",
+  "title": "Connections & Linked Roles: Admins",
+  "source_locale": "en-us",
+  "locale": "en-us",
+  "outdated": false,
+  "outdated_locales": [],
+  "edited_at": "2022-12-17T01:29:08Z",
+  "user_segment_id": null,
+  "permission_group_id": 1720972,
+  "content_tag_ids": [],
+  "label_names": [
+    "admin",
+    "answer-bot",
+    "connection",
+    "admin community",
+    "linked roles",
+    "App Connections",
+    "connections"
+  ]
+}

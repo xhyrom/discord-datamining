@@ -1,0 +1,19 @@
+{
+  "data": {
+    "kind": "user",
+    "id": "2023-01_global_display_names",
+    "label": "Global Display Name",
+    "description": [
+      "Control",
+      "Treatment 1: enabled"
+    ],
+    "hash": 785391472,
+    "buckets": [
+      0,
+      1
+    ],
+    "config_keys": [
+      "enabled"
+    ]
+  }
+}

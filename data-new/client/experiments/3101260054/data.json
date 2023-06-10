@@ -1,0 +1,36 @@
+{
+  "data": {
+    "kind": "guild",
+    "hash": 3101260054
+  },
+  "rollout": {
+    "populations": [
+      {
+        "buckets": {
+          "none": {
+            "rollout": [
+              {
+                "start": 0,
+                "end": 10000
+              }
+            ]
+          }
+        },
+        "filters": [
+          {
+            "type": "guild_has_vanity_url",
+            "has_vanity": false
+          },
+          {
+            "type": "guild_member_count_range",
+            "min_count": 1,
+            "max_count": 50
+          }
+        ]
+      }
+    ],
+    "revision": 0,
+    "overrides": {},
+    "overrides_formatted": []
+  }
+}

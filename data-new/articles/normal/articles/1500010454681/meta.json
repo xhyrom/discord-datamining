@@ -1,0 +1,28 @@
+{
+  "id": 1500010454681,
+  "url": "https://hammerandchisel.zendesk.com/api/v2/help_center/en-us/articles/1500010454681.json",
+  "html_url": "https://support.discord.com/hc/en-us/articles/1500010454681-Accessibility-Settings-Tab",
+  "author_id": 364802902112,
+  "comments_disabled": true,
+  "draft": false,
+  "promoted": false,
+  "position": 0,
+  "section_id": 360008206871,
+  "created_at": "2021-05-12T04:41:27Z",
+  "name": "Accessibility Settings Tab",
+  "title": "Accessibility Settings Tab",
+  "source_locale": "en-us",
+  "locale": "en-us",
+  "outdated": false,
+  "outdated_locales": [],
+  "edited_at": "2022-10-25T23:26:53Z",
+  "user_segment_id": null,
+  "permission_group_id": 1720972,
+  "content_tag_ids": [],
+  "label_names": [
+    "settings",
+    "Accessibility",
+    "A11y",
+    "tab"
+  ]
+}

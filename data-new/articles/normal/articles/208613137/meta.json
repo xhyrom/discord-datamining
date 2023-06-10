@@ -1,0 +1,28 @@
+{
+  "id": 208613137,
+  "url": "https://hammerandchisel.zendesk.com/api/v2/help_center/en-us/articles/208613137.json",
+  "html_url": "https://support.discord.com/hc/en-us/articles/208613137-How-can-I-disable-Text-To-Speech-",
+  "author_id": 1199351638,
+  "comments_disabled": true,
+  "draft": false,
+  "promoted": false,
+  "position": 7,
+  "section_id": 115000458672,
+  "created_at": "2015-08-27T01:18:47Z",
+  "name": "How can I disable Text-To-Speech?",
+  "title": "How can I disable Text-To-Speech?",
+  "source_locale": "en-us",
+  "locale": "en-us",
+  "outdated": false,
+  "outdated_locales": [],
+  "edited_at": "2022-11-25T13:03:34Z",
+  "user_segment_id": null,
+  "permission_group_id": 1720972,
+  "content_tag_ids": [],
+  "label_names": [
+    "talking",
+    "voice",
+    "tts",
+    "answer-bot"
+  ]
+}

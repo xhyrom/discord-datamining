@@ -1,0 +1,100 @@
+{
+  "data": {
+    "kind": "guild",
+    "hash": 754016061
+  },
+  "rollout": {
+    "populations": [
+      {
+        "buckets": {
+          "1": {
+            "rollout": [
+              {
+                "start": 0,
+                "end": 10000
+              }
+            ]
+          }
+        },
+        "filters": [
+          {
+            "type": "guild_has_feature",
+            "features": [
+              "BOT_DEVELOPER_EARLY_ACCESS"
+            ]
+          },
+          {
+            "type": "guild_member_count_range",
+            "min_count": 1,
+            "max_count": 26
+          }
+        ]
+      },
+      {
+        "buckets": {
+          "1": {
+            "rollout": [
+              {
+                "start": 0,
+                "end": 10000
+              }
+            ]
+          }
+        },
+        "filters": [
+          {
+            "type": "guild_has_feature",
+            "features": [
+              "COMMUNITY"
+            ]
+          }
+        ]
+      },
+      {
+        "buckets": {
+          "1": {
+            "rollout": [
+              {
+                "start": 0,
+                "end": 10000
+              }
+            ]
+          }
+        },
+        "filters": [
+          {
+            "type": "guild_member_count_range",
+            "min_count": 1,
+            "max_count": 200
+          }
+        ]
+      },
+      {
+        "buckets": {
+          "1": {
+            "rollout": [
+              {
+                "start": 0,
+                "end": 10000
+              }
+            ]
+          }
+        },
+        "filters": [
+          {
+            "type": "guild_member_count_range",
+            "min_count": 200,
+            "max_count": null
+          }
+        ]
+      }
+    ],
+    "revision": 3,
+    "overrides": {
+      "1": [
+        "814196235741167637"
+      ]
+    },
+    "overrides_formatted": []
+  }
+}

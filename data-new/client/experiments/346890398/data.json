@@ -1,0 +1,23 @@
+{
+  "data": {
+    "kind": "user",
+    "id": "2022-09_emoji_picker_discovery",
+    "label": "Emoji Picker Improved Discovery",
+    "description": [
+      "Control",
+      "Treatment 1: Bigger Picker",
+      "Treatment 2: Bigger Picker + Popular Server Emojis",
+      "Treatment 3: Bigger Picker + Newly Added Emojis"
+    ],
+    "hash": 346890398,
+    "buckets": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "config_keys": [
+      "enabled"
+    ]
+  }
+}

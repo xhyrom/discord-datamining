@@ -1,0 +1,22 @@
+{
+  "login": "discord",
+  "id": 1965106,
+  "node_id": "MDEyOk9yZ2FuaXphdGlvbjE5NjUxMDY=",
+  "url": "https://api.github.com/orgs/discord",
+  "description": "A new way to chat with your communities and friends. Discord is the easiest way to communicate over voice, video, and text.",
+  "name": "Discord",
+  "company": null,
+  "blog": "https://discord.com",
+  "location": "San Francisco, CA",
+  "email": "jobs@discord.com",
+  "twitter_username": "discord",
+  "is_verified": true,
+  "has_organization_projects": true,
+  "has_repository_projects": true,
+  "public_repos": 255,
+  "public_gists": 0,
+  "following": 0,
+  "created_at": "2012-07-12T19:03:26Z",
+  "updated_at": "2022-11-29T05:37:35Z",
+  "type": "Organization"
+}

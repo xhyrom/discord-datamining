@@ -1,0 +1,31 @@
+{
+  "id": 360040724612,
+  "url": "https://hammerandchisel.zendesk.com/api/v2/help_center/en-us/articles/360040724612.json",
+  "html_url": "https://support.discord.com/hc/en-us/articles/360040724612-Why-is-Discord-asking-for-my-birthday-",
+  "author_id": 114129062731,
+  "comments_disabled": true,
+  "draft": false,
+  "promoted": false,
+  "position": 0,
+  "section_id": 115000344951,
+  "created_at": "2020-03-19T00:18:15Z",
+  "name": "Why is Discord asking for my birthday?",
+  "title": "Why is Discord asking for my birthday?",
+  "source_locale": "en-us",
+  "locale": "en-us",
+  "outdated": false,
+  "outdated_locales": [],
+  "edited_at": "2022-05-31T16:17:27Z",
+  "user_segment_id": null,
+  "permission_group_id": 1720972,
+  "content_tag_ids": [],
+  "label_names": [
+    "answer-bot",
+    "Terms",
+    "Terms of service",
+    "Trust & Safety",
+    "age",
+    "guidelines",
+    "birthday"
+  ]
+}

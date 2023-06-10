@@ -1,0 +1,26 @@
+{
+  "id": 4404772028055,
+  "url": "https://discorddevs.zendesk.com/api/v2/help_center/en-us/articles/4404772028055.json",
+  "html_url": "https://support-dev.discord.com/hc/en-us/articles/4404772028055-Message-Content-Privileged-Intent-FAQ",
+  "author_id": 4749086327,
+  "comments_disabled": true,
+  "draft": false,
+  "promoted": false,
+  "position": 0,
+  "section_id": 360001637571,
+  "created_at": "2021-07-22T15:04:02Z",
+  "name": "Message Content Privileged Intent FAQ",
+  "title": "Message Content Privileged Intent FAQ",
+  "source_locale": "en-us",
+  "locale": "en-us",
+  "outdated": false,
+  "outdated_locales": [],
+  "edited_at": "2022-09-01T16:31:15Z",
+  "user_segment_id": null,
+  "permission_group_id": 1720952,
+  "content_tag_ids": [],
+  "label_names": [
+    "answer-bot",
+    "bots"
+  ]
+}

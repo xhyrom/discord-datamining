@@ -1,0 +1,21 @@
+{
+  "data": {
+    "kind": "user",
+    "id": "2023-05_overlay_hook_crash_detection",
+    "label": "Detect and report crashes in the overlay hook",
+    "description": [
+      "Control",
+      "Treatment 1: EnableCrashReporting",
+      "Treatment 2: EnableCrashTrigger"
+    ],
+    "hash": 933369006,
+    "buckets": [
+      0,
+      1,
+      2
+    ],
+    "config_keys": [
+      "enabled"
+    ]
+  }
+}

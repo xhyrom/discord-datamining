@@ -1,0 +1,29 @@
+{
+  "id": 4412085582359,
+  "url": "https://hammerandchisel.zendesk.com/api/v2/help_center/en-us/articles/4412085582359.json",
+  "html_url": "https://support.discord.com/hc/en-us/articles/4412085582359-Text-Channels-Text-Chat-In-Voice-Channels",
+  "author_id": 424992137214,
+  "comments_disabled": true,
+  "draft": false,
+  "promoted": false,
+  "position": 0,
+  "section_id": 115000458672,
+  "created_at": "2021-11-02T21:53:16Z",
+  "name": "Text Channels & Text Chat In Voice Channels",
+  "title": "Text Channels & Text Chat In Voice Channels",
+  "source_locale": "en-us",
+  "locale": "en-us",
+  "outdated": false,
+  "outdated_locales": [],
+  "edited_at": "2022-06-30T23:09:37Z",
+  "user_segment_id": null,
+  "permission_group_id": 1720972,
+  "content_tag_ids": [],
+  "label_names": [
+    "answer-bot",
+    "text",
+    "text channel",
+    "text chat in voice",
+    "text chat"
+  ]
+}

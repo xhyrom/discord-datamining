@@ -1,0 +1,21 @@
+{
+  "data": {
+    "kind": "user",
+    "id": "2022-12_premium_targeted_upsells",
+    "label": "Premium Targeted Upsells",
+    "description": [
+      "Control",
+      "Treatment 1: Use highest expected value to determine Nitro upsells",
+      "Treatment 2: Use highest likelihood to determine Nitro upsells"
+    ],
+    "hash": 2067676101,
+    "buckets": [
+      0,
+      1,
+      2
+    ],
+    "config_keys": [
+      "enabled"
+    ]
+  }
+}

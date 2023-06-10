@@ -1,9 +1,7 @@
 {
+  "extends": "@xhyrom/configs/ts",
   "compilerOptions": {
-    "allowImportingTsExtensions": true,
-    "noEmit": true,
-    "target": "ESNext",
-    "module": "ESNext" // or ES2015, ES2020
+    "allowImportingTsExtensions": true
   },
   "ts-node": {
     // Tell ts-node CLI to install the --loader automatically, explained below

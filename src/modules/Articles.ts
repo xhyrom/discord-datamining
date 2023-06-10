@@ -1,14 +1,25 @@
-import { getPaginator } from "../utils.ts";
+import {
+  DATA_DIR,
+  writeFile,
+  rm,
+  getPaginator,
+  omit,
+  beautify,
+} from "../utils.ts";
+import { join } from "node:path";
+import type { Module } from ".";
 
 export enum ArticleType {
-  Normal,
-  Dev,
-  Creator,
+  Normal = "normal",
+  Dev = "dev",
+  Creator = "creator",
 }
 
 interface Article {
   id: number;
   html_url: string;
+  vote_sum: number;
+  vote_count: number;
   section_id: number;
   created_at: string;
   updated_at: string;
@@ -32,11 +43,15 @@ interface Section {
   theme_template: string;
 }
 
-export class Articles {
+export class Articles implements Module {
   public type: ArticleType;
 
   constructor(type: ArticleType) {
     this.type = type;
+  }
+
+  get baseDir() {
+    return join(DATA_DIR, "articles", this.type);
   }
 
   get baseUrl() {
@@ -47,6 +62,43 @@ export class Articles {
         return "https://support-dev.discord.com";
       case ArticleType.Creator:
         return "https://creator-support.discord.com";
+    }
+  }
+
+  async run() {
+    const articles = await this.articles();
+    const sections = await this.sections();
+
+    if (articles.length === 0) {
+      console.log(`Potentional outage, no articles found for ${this.type}!`);
+      return;
+    }
+
+    if (sections.length === 0) {
+      console.log(`Potentional outage, no sections found for ${this.type}!`);
+      return;
+    }
+
+    await rm(this.baseDir);
+
+    await writeFile(
+      join(this.baseDir, "sections.json"),
+      JSON.stringify(sections, null, 2)
+    );
+
+    for (const article of articles) {
+      await writeFile(
+        join(this.baseDir, "articles", article.id.toString(), "content.md"),
+        beautify(article.body, "html")
+      );
+      await writeFile(
+        join(this.baseDir, "articles", article.id.toString(), "meta.json"),
+        JSON.stringify(
+          omit(article, "body", "vote_sum", "vote_count", "updated_at"),
+          null,
+          2
+        )
+      );
     }
   }
 

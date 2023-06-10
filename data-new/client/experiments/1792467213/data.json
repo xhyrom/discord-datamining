@@ -1,0 +1,19 @@
+{
+  "data": {
+    "kind": "user",
+    "id": "2022-11_notification_redesign",
+    "label": "NotificationRedesign",
+    "description": [
+      "Control",
+      "Treatment 1: Notification Redesign Enabled"
+    ],
+    "hash": 1792467213,
+    "buckets": [
+      0,
+      1
+    ],
+    "config_keys": [
+      "enabled"
+    ]
+  }
+}

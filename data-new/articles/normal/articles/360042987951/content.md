@@ -1,0 +1,14 @@
+<h3>As of May 4th, 2020, we have moved our domain from <span class="wysiwyg-underline">discordapp.com</span> to <span class="wysiwyg-underline">discord.com</span>! </h3>
+<h1>Domain Update FAQ</h1>
+<p><strong>Q: Why did my password manager/browser forget my password for Discord?</strong><br>A: Because your browser and password managers have your password stored under discordapp.com, you'll need change your saved passwords to the new domain <a href="https://discord.com/" target="_blank" rel="noopener noreferrer">discord.com</a></p>
+<p> </p>
+<p><strong>Q: Why am I getting all these new permission requests? (Mic, Camera, Notifications, etc)</strong><br>A: Since your permissions are only tied to the domain name discordapp.com, you will now need to allow permissions to our new domain <a class="textEditor-link" href="https://discord.com/" target="_blank" rel="nofollow noopener noreferrer" data-is-link="https://Discord.com">discord.com</a></p>
+<p> </p>
+<p><strong>Q: Why did all of my customizations to my account get reset (ex: Frequently Used emoji, notification settings, etc)? </strong><br>A: Our team has done their best to make sure that your customized Discord settings will not be impacted. However, some users may have been automatically logged out of their account during the update process.</p>
+<p>Unfortunately, if you were automatically logged out of your account with this domain update, your customizations to your account may have also been removed as well and will need to be added once more.</p>
+<p>We're so sorry for the confusion and frustration with those reset customizations.</p>
+<p> </p>
+<p><strong>Q: Why are my images/icons not appearing or loading?</strong></p>
+<p>A: It's possible that a browser add-on, extension, or ad blocker setting is blocking Discord from loading images.</p>
+<p>Double check any settings with your browser add-ons, extensions, or ad blockers, and make sure that discord.com has all the necessary permissions in order to have these images load again.</p>
+<p>You may also need to whitelist cdn.discordapp.com as well in your browser add-ons settings.</p>

@@ -1,0 +1,44 @@
+{
+  "data": {
+    "kind": "guild",
+    "hash": 3362434932
+  },
+  "rollout": {
+    "populations": [
+      {
+        "buckets": {
+          "1": {
+            "rollout": [
+              {
+                "start": 0,
+                "end": 10000
+              }
+            ]
+          }
+        },
+        "filters": [
+          {
+            "type": "guild_has_feature",
+            "features": [
+              "AUTOMOD_TRIGGER_USER_PROFILE"
+            ]
+          }
+        ]
+      }
+    ],
+    "revision": 1,
+    "overrides": {
+      "1": [
+        "651595875897835540",
+        "435572461912719360",
+        "900109648869355550",
+        "814624114345508936",
+        "816784679717044276",
+        "763838479293349899",
+        "982376986070626344",
+        "651597514407018516"
+      ]
+    },
+    "overrides_formatted": []
+  }
+}

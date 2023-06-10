@@ -1,0 +1,19 @@
+{
+  "data": {
+    "kind": "user",
+    "id": "2022-10_h265_dm_call",
+    "label": "Test how h265 works on ios/macos for DM calls",
+    "description": [
+      "Control",
+      "Treatment 1: Calling with H.265"
+    ],
+    "hash": 3916079111,
+    "buckets": [
+      0,
+      1
+    ],
+    "config_keys": [
+      "enabled"
+    ]
+  }
+}

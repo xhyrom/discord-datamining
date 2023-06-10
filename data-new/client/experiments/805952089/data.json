@@ -1,0 +1,67 @@
+{
+  "data": {
+    "kind": "guild",
+    "hash": 805952089
+  },
+  "rollout": {
+    "populations": [
+      {
+        "buckets": {
+          "none": {
+            "rollout": [
+              {
+                "start": 0,
+                "end": 10000
+              }
+            ]
+          }
+        },
+        "filters": []
+      }
+    ],
+    "revision": 0,
+    "overrides": {},
+    "overrides_formatted": [
+      {
+        "buckets": {
+          "1": {
+            "rollout": [
+              {
+                "start": 0,
+                "end": 10000
+              }
+            ]
+          }
+        },
+        "filters": [
+          {
+            "type": "guild_has_feature",
+            "features": [
+              "MEMBER_VERIFICATION_MANUAL_APPROVAL"
+            ]
+          }
+        ]
+      },
+      {
+        "buckets": {
+          "1": {
+            "rollout": [
+              {
+                "start": 0,
+                "end": 10000
+              }
+            ]
+          }
+        },
+        "filters": [
+          {
+            "type": "guild_has_feature",
+            "features": [
+              "INTERNAL_EMPLOYEE_ONLY"
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

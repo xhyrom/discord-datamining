@@ -1,0 +1,87 @@
+{
+  "data": {
+    "kind": "guild",
+    "hash": 2105552695
+  },
+  "rollout": {
+    "populations": [
+      {
+        "buckets": {
+          "none": {
+            "rollout": [
+              {
+                "start": 0,
+                "end": 10000
+              }
+            ]
+          }
+        },
+        "filters": []
+      }
+    ],
+    "revision": 0,
+    "overrides": {},
+    "overrides_formatted": [
+      {
+        "buckets": {
+          "1": {
+            "rollout": [
+              {
+                "start": 0,
+                "end": 10000
+              }
+            ]
+          }
+        },
+        "filters": [
+          {
+            "type": "guild_has_feature",
+            "features": [
+              "ACTIVITIES_INTERNAL_DEV"
+            ]
+          }
+        ]
+      },
+      {
+        "buckets": {
+          "2": {
+            "rollout": [
+              {
+                "start": 0,
+                "end": 10000
+              }
+            ]
+          }
+        },
+        "filters": [
+          {
+            "type": "guild_has_feature",
+            "features": [
+              "ACTIVITIES_EMPLOYEE"
+            ]
+          }
+        ]
+      },
+      {
+        "buckets": {
+          "3": {
+            "rollout": [
+              {
+                "start": 0,
+                "end": 10000
+              }
+            ]
+          }
+        },
+        "filters": [
+          {
+            "type": "guild_has_feature",
+            "features": [
+              "ACTIVITIES_ALPHA"
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

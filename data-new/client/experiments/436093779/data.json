@@ -1,0 +1,67 @@
+{
+  "data": {
+    "kind": "guild",
+    "hash": 436093779
+  },
+  "rollout": {
+    "populations": [
+      {
+        "buckets": {
+          "1": {
+            "rollout": [
+              {
+                "start": 0,
+                "end": 10000
+              }
+            ]
+          }
+        },
+        "filters": [
+          {
+            "type": "guild_in_range_by_hash",
+            "hash_key": 436093779,
+            "target": 10000
+          }
+        ]
+      },
+      {
+        "buckets": {
+          "none": {
+            "rollout": [
+              {
+                "start": 0,
+                "end": 10000
+              }
+            ]
+          }
+        },
+        "filters": []
+      }
+    ],
+    "revision": 0,
+    "overrides": {},
+    "overrides_formatted": [
+      {
+        "buckets": {
+          "1": {
+            "rollout": [
+              {
+                "start": 0,
+                "end": 10000
+              }
+            ]
+          }
+        },
+        "filters": [
+          {
+            "type": "guild_has_feature",
+            "features": [
+              "GUILD_COMMUNICATION_DISABLED_GUILDS",
+              "PARTNERED"
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

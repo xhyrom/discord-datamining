@@ -1,0 +1,19 @@
+{
+  "data": {
+    "kind": "user",
+    "id": "2022-09_creator_monetization_raven_users",
+    "label": "Creator Monetization Onboarding v2 Users",
+    "description": [
+      "Control",
+      "Treatment 1: Enables users to create Guild Role Subscriptions quickly"
+    ],
+    "hash": 2539540256,
+    "buckets": [
+      0,
+      1
+    ],
+    "config_keys": [
+      "enabled"
+    ]
+  }
+}

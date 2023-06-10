@@ -1,0 +1,27 @@
+{
+  "id": 115000070311,
+  "url": "https://hammerandchisel.zendesk.com/api/v2/help_center/en-us/articles/115000070311.json",
+  "html_url": "https://support.discord.com/hc/en-us/articles/115000070311-Quick-Switcher",
+  "author_id": 12415876668,
+  "comments_disabled": true,
+  "draft": false,
+  "promoted": false,
+  "position": 15,
+  "section_id": 201110577,
+  "created_at": "2017-03-30T00:56:14Z",
+  "name": "Quick Switcher",
+  "title": "Quick Switcher",
+  "source_locale": "en-us",
+  "locale": "en-us",
+  "outdated": false,
+  "outdated_locales": [],
+  "edited_at": "2022-05-31T16:18:11Z",
+  "user_segment_id": null,
+  "permission_group_id": 1720972,
+  "content_tag_ids": [],
+  "label_names": [
+    "switch",
+    "interface",
+    "answer-bot"
+  ]
+}

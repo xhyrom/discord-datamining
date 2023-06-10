@@ -1,0 +1,45 @@
+{
+  "data": {
+    "kind": "guild",
+    "id": "2023-05_ugc_notifications",
+    "label": "Notifications for UGC changes",
+    "description": [
+      "Control",
+      "Treatment 1: Show Notifications"
+    ],
+    "hash": 631733804,
+    "buckets": [
+      0,
+      1
+    ],
+    "config_keys": [
+      "enabled"
+    ]
+  },
+  "rollout": {
+    "populations": [
+      {
+        "buckets": {
+          "1": {
+            "rollout": [
+              {
+                "start": 0,
+                "end": 10000
+              }
+            ]
+          }
+        },
+        "filters": []
+      }
+    ],
+    "revision": 1,
+    "overrides": {
+      "1": [
+        "1096485049760759972",
+        "1096492110254964809",
+        "705666251560583168"
+      ]
+    },
+    "overrides_formatted": []
+  }
+}

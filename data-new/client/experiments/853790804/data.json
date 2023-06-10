@@ -1,0 +1,19 @@
+{
+  "data": {
+    "kind": "user",
+    "id": "2022-06_home_refresh_button",
+    "label": "Show refresh button",
+    "description": [
+      "Control",
+      "Treatment 1: Yes button"
+    ],
+    "hash": 853790804,
+    "buckets": [
+      0,
+      1
+    ],
+    "config_keys": [
+      "showRefreshButton"
+    ]
+  }
+}

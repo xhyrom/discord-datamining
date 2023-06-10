@@ -1,0 +1,23 @@
+{
+  "data": {
+    "kind": "user",
+    "id": "2022-12_channel_notice_redesign",
+    "label": "Channel Notice Redesign",
+    "description": [
+      "Control",
+      "Treatment 1: Show Redesigned Channel Notices",
+      "Treatment 2: Show Redesigned Stage/Event Notices",
+      "Treatment 3: Show Redesigned Channel Notices & Stage/Event Notices"
+    ],
+    "hash": 3502788249,
+    "buckets": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "config_keys": [
+      "enabled"
+    ]
+  }
+}

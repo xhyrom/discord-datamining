@@ -1,0 +1,19 @@
+{
+  "data": {
+    "kind": "user",
+    "id": "2023-04_null_experiment",
+    "label": "Null Experiment",
+    "description": [
+      "Control",
+      "Treatment 1: On"
+    ],
+    "hash": 1045730203,
+    "buckets": [
+      0,
+      1
+    ],
+    "config_keys": [
+      "enabled"
+    ]
+  }
+}

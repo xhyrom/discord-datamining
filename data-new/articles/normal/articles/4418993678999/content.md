@@ -1,0 +1,12 @@
+<p>As we test different formats for <a href="https://support.discord.com/hc/articles/4422142836759" target="_blank" rel="noopener noreferrer">Activities on Discord</a>, some servers will lose their current access to Activities.</p>
+<p><span style="font-weight: 400;">Any players who purchased content in Poker Night </span><span style="font-weight: 400;">from February 1, 2022 to October 3, 2022 </span><span style="font-weight: 400;">will receive a refund for those purchases. Purchasers will be messaged with refund details in October 2022. </span></p>
+<h1>FAQ</h1>
+<p><span class="wysiwyg-font-size-large"><strong>When will Activities on Discord be available on my server?</strong></span></p>
+<p><span style="font-weight: 400;">We have no set timeline for rolling out Activities to all servers on Discord, but we will update on Help Center and elsewhere if and when we do!</span></p>
+<p><strong><span class="wysiwyg-font-size-large">What will happen to any progress I made in Activities?</span></strong></p>
+<p>Most Activities on Discord do not retain progress in between play sessions with a couple of exceptions. Any Poker Night player level and event progress will remain unchanged for users regardless of the server they’re playing in. Chess in the Park and Checkers in the Park games last through multiple play sessions, but are specific to the server in which they’re played.</p>
+<p><strong><span class="wysiwyg-font-size-large">How will Poker Night refunds work?</span></strong></p>
+<p>Players who purchased content in Poker Night from February 1, 2022 to October 3, 2022 will receive a direct message as confirmation that they will be receiving a refund.</p>
+<p><span style="font-weight: 400;">Once you receive a direct message about your refund, it should post within 30 business days.</span></p>
+<p><span class="wysiwyg-font-size-large"><strong>I don’t see a refund for a Poker Night purchase I made from February 1, 2022 to October 3, 2022, what should I do?</strong></span></p>
+<p><span style="font-weight: 400;">If you bought Poker Night content </span><span style="font-weight: 400;">from February 1, 2022 to October 3, 2022, </span><span style="font-weight: 400;">and haven’t received a direct message for your refunding, or if it’s been 30 business days after receiving a direct message and your refund hasn’t posted, please open a ticket here </span><a href="https://dis.gd/contact"><span style="font-weight: 400;">https://dis.gd/contact</span></a><span style="font-weight: 400;">.</span></p>

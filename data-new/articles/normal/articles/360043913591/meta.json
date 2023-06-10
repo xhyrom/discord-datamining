@@ -1,0 +1,28 @@
+{
+  "id": 360043913591,
+  "url": "https://hammerandchisel.zendesk.com/api/v2/help_center/en-us/articles/360043913591.json",
+  "html_url": "https://support.discord.com/hc/en-us/articles/360043913591-Community-Server-Welcome-Screen",
+  "author_id": 361945854972,
+  "comments_disabled": true,
+  "draft": false,
+  "promoted": false,
+  "position": 0,
+  "section_id": 360007770572,
+  "created_at": "2020-05-20T20:53:24Z",
+  "name": "Community Server Welcome Screen",
+  "title": "Community Server Welcome Screen",
+  "source_locale": "en-us",
+  "locale": "en-us",
+  "outdated": false,
+  "outdated_locales": [],
+  "edited_at": "2022-05-31T16:29:43Z",
+  "user_segment_id": null,
+  "permission_group_id": 1720972,
+  "content_tag_ids": [],
+  "label_names": [
+    "community",
+    "answer-bot",
+    "community server",
+    "community tools"
+  ]
+}

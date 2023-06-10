@@ -1,0 +1,19 @@
+{
+  "data": {
+    "kind": "user",
+    "id": "2022-06_native_mobile_role_subscription_management",
+    "label": "Mobile Guild Role Subscription Management",
+    "description": [
+      "Control",
+      "Treatment 1: Enable native role subscription management for mobile"
+    ],
+    "hash": 1034661306,
+    "buckets": [
+      0,
+      1
+    ],
+    "config_keys": [
+      "enabled"
+    ]
+  }
+}

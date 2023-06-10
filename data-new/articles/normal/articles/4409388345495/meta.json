@@ -1,0 +1,29 @@
+{
+  "id": 4409388345495,
+  "url": "https://hammerandchisel.zendesk.com/api/v2/help_center/en-us/articles/4409388345495.json",
+  "html_url": "https://support.discord.com/hc/en-us/articles/4409388345495-Server-Profiles",
+  "author_id": 424992137214,
+  "comments_disabled": true,
+  "draft": false,
+  "promoted": false,
+  "position": 0,
+  "section_id": 360002436391,
+  "created_at": "2021-09-24T17:47:49Z",
+  "name": "Server Profiles",
+  "title": "Server Profiles",
+  "source_locale": "en-us",
+  "locale": "en-us",
+  "outdated": false,
+  "outdated_locales": [],
+  "edited_at": "2023-06-06T17:00:01Z",
+  "user_segment_id": null,
+  "permission_group_id": 1720972,
+  "content_tag_ids": [],
+  "label_names": [
+    "avatar",
+    "Nitro",
+    "answer-bot",
+    "server avatar",
+    "account customization"
+  ]
+}

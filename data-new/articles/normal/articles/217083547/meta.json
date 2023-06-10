@@ -1,0 +1,29 @@
+{
+  "id": 217083547,
+  "url": "https://hammerandchisel.zendesk.com/api/v2/help_center/en-us/articles/217083547.json",
+  "html_url": "https://support.discord.com/hc/en-us/articles/217083547-How-do-I-add-different-Keybinds-",
+  "author_id": 361945854972,
+  "comments_disabled": true,
+  "draft": false,
+  "promoted": false,
+  "position": 0,
+  "section_id": 201110537,
+  "created_at": "2016-02-10T00:56:09Z",
+  "name": "How do I add different Keybinds?",
+  "title": "How do I add different Keybinds?",
+  "source_locale": "en-us",
+  "locale": "en-us",
+  "outdated": false,
+  "outdated_locales": [],
+  "edited_at": "2020-10-02T21:19:15Z",
+  "user_segment_id": null,
+  "permission_group_id": 1720972,
+  "content_tag_ids": [],
+  "label_names": [
+    "shortcut",
+    "mapping",
+    "key",
+    "keys",
+    "answer-bot"
+  ]
+}

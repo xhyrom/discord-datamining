@@ -1,0 +1,24 @@
+{
+  "data": {
+    "kind": "user",
+    "id": "2023-05_avatar_decorations",
+    "label": "Avatar Decorations Birthday 2023",
+    "description": [
+      "Control",
+      "Treatment 1: Allow use of avatar decorations nitro",
+      "Treatment 2: Allow use of avatar decorations non-nitro",
+      "Treatment 100: Debug"
+    ],
+    "hash": 3542432067,
+    "buckets": [
+      0,
+      1,
+      2,
+      100
+    ],
+    "config_keys": [
+      "canUseAvatarDecorations",
+      "canUploadAvatarDecorations"
+    ]
+  }
+}

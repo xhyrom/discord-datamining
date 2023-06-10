@@ -1,0 +1,126 @@
+{
+  "data": {
+    "kind": "guild",
+    "hash": 3579083301
+  },
+  "rollout": {
+    "populations": [
+      {
+        "buckets": {
+          "1": {
+            "rollout": [
+              {
+                "start": 0,
+                "end": 8000
+              },
+              {
+                "start": 8000,
+                "end": 9000
+              },
+              {
+                "start": 9000,
+                "end": 10000
+              }
+            ]
+          }
+        },
+        "filters": [
+          {
+            "type": "guild_has_feature",
+            "features": [
+              "COMMUNITY"
+            ]
+          },
+          {
+            "type": "guild_in_range_by_hash",
+            "hash_key": 3579083301,
+            "target": 10000
+          }
+        ]
+      },
+      {
+        "buckets": {
+          "none": {
+            "rollout": [
+              {
+                "start": 0,
+                "end": 10000
+              }
+            ]
+          }
+        },
+        "filters": [
+          {
+            "type": "guild_has_feature",
+            "features": [
+              "COMMUNITY"
+            ]
+          }
+        ]
+      },
+      {
+        "buckets": {
+          "none": {
+            "rollout": [
+              {
+                "start": 0,
+                "end": 10000
+              }
+            ]
+          }
+        },
+        "filters": []
+      }
+    ],
+    "revision": 8,
+    "overrides": {},
+    "overrides_formatted": [
+      {
+        "buckets": {
+          "1": {
+            "rollout": [
+              {
+                "start": 0,
+                "end": 10000
+              }
+            ]
+          }
+        },
+        "filters": [
+          {
+            "type": "guild_has_feature",
+            "features": [
+              "INTERNAL_EMPLOYEE_ONLY",
+              "THREADS_ONLY_CHANNEL"
+            ]
+          }
+        ]
+      },
+      {
+        "buckets": {
+          "1": {
+            "rollout": [
+              {
+                "start": 0,
+                "end": 10000
+              }
+            ]
+          }
+        },
+        "filters": [
+          {
+            "type": "guild_has_feature",
+            "features": [
+              "BOT_DEVELOPER_EARLY_ACCESS"
+            ]
+          },
+          {
+            "type": "guild_member_count_range",
+            "min_count": 1,
+            "max_count": 26
+          }
+        ]
+      }
+    ]
+  }
+}

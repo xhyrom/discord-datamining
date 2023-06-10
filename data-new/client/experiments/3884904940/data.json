@@ -1,0 +1,80 @@
+{
+  "data": {
+    "kind": "guild",
+    "id": "2023-02_onboardingdropdowns",
+    "label": "Enables dropdown selections from onboarding prompts",
+    "description": [
+      "Control",
+      "Treatment 1: On"
+    ],
+    "hash": 3884904940,
+    "buckets": [
+      0,
+      1
+    ],
+    "config_keys": [
+      "enabled"
+    ]
+  },
+  "rollout": {
+    "populations": [
+      {
+        "buckets": {
+          "1": {
+            "rollout": [
+              {
+                "start": 0,
+                "end": 10000
+              }
+            ]
+          }
+        },
+        "filters": [
+          {
+            "type": "guild_in_range_by_hash",
+            "hash_key": 3884904940,
+            "target": 10000
+          }
+        ]
+      },
+      {
+        "buckets": {
+          "none": {
+            "rollout": [
+              {
+                "start": 0,
+                "end": 10000
+              }
+            ]
+          }
+        },
+        "filters": []
+      }
+    ],
+    "revision": 0,
+    "overrides": {},
+    "overrides_formatted": [
+      {
+        "buckets": {
+          "1": {
+            "rollout": [
+              {
+                "start": 0,
+                "end": 10000
+              }
+            ]
+          }
+        },
+        "filters": [
+          {
+            "type": "guild_ids",
+            "ids": [
+              "874345844743213126",
+              "962007075288915998"
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}
