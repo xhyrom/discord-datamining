@@ -48,13 +48,9 @@ export class Experiment {
   get formattedOverrides() {
     if (!this.rollout) return "";
 
-    return Object.entries(this.rollout.overrides).length > 0
-      ? Object.entries(this.rollout.overrides)
-          .map(
-            ([name, value]) => `**${nameFormat(name)}**: ${value.join(", ")}`
-          )
-          .join("\n\n")
-      : "Any overrides";
+    return Object.entries(this.rollout.overrides)
+      .map(([name, value]) => `**${nameFormat(name)}**: ${value.join(", ")}`)
+      .join("\n\n");
   }
 
   get formattedOverridesFormatted() {
