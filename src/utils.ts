@@ -31,7 +31,7 @@ export const pushToGit = async (...message: string[]) => {
   const msg = [];
 
   for (const m of message) {
-    msg.push(maximumStringLen(m, 50000));
+    msg.push(maximumStringLen(m, 20000));
   }
 
   await git.add("data/*");
