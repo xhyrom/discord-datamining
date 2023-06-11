@@ -179,12 +179,12 @@ export class Articles implements Module {
     }
 
     for (const article of diff.updatedArticles) {
+      if (!article.diff) continue;
+
       embeds.push(
         this.buildEmbed(sections, "Updated", article)
           .setDescription(
-            article.diff
-              ? maximumStringLen(article.diff, 4096)
-              : "No diff found"
+            maximumStringLen(`\`\`\`\n${article.diff}\n\`\`\``, 4096)
           )
           .setColor(0x2c5cde)
           .toJSON()
