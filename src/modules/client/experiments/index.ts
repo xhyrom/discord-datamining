@@ -10,6 +10,7 @@ import {
   postToDiscord,
   pushToGit,
   readFile,
+  rm,
   writeFile,
 } from "../../../utils.ts";
 import { Experiment } from "./Experiment.ts";
@@ -40,9 +41,16 @@ export class Experiments implements Module {
       JSON.stringify(experiments, null, 2)
     );
 
+    await rm(join(this.baseDir, "experiments"));
+
     for (const experiment of experiments) {
       await writeFile(
-        join(this.baseDir, experiment.data.hash.toString(), "data.json"),
+        join(
+          this.baseDir,
+          "experiments",
+          experiment.data.hash.toString(),
+          "data.json"
+        ),
         JSON.stringify(experiment, null, 2)
       );
     }
@@ -193,7 +201,7 @@ export class Experiments implements Module {
         newExperiment.diff = diff.data.files?.find(
           (f) =>
             f.filename ===
-            `data/client/experiments/${newExperiment.hash}/data.json`
+            `data/client/experiments/experiments/${newExperiment.hash}/data.json`
         )?.patch;
 
         updatedExperiments.push(newExperiment);
