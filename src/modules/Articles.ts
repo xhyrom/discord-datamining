@@ -184,7 +184,7 @@ export class Articles implements Module {
       embeds.push(
         this.buildEmbed(sections, "Updated", article)
           .setDescription(
-            maximumStringLen(`\`\`\`\n${article.diff}\n\`\`\``, 4096)
+            maximumStringLen(`\`\`\`diff\n${article.diff}\n\`\`\``, 4096)
           )
           .setColor(0x2c5cde)
           .toJSON()
@@ -306,6 +306,10 @@ export class Articles implements Module {
           value: `<t:${Math.floor(
             new Date(article.edited_at).getTime() / 1000
           )}>`,
+        },
+        {
+          name: "Link",
+          value: article.html_url,
         }
       );
   }
