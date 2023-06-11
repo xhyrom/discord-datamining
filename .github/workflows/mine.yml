@@ -1,0 +1,46 @@
+name: Mine
+on:
+  schedule:
+    - cron: "*/5 * * * *"
+  workflow_dispatch:
+
+jobs:
+  mine:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+        with:
+          persist-credentials: false
+      - uses: actions/setup-node@v3
+        with:
+          node-version: 19
+      - uses: pnpm/action-setup@v2
+        with:
+          version: 6.0.2
+
+      - name: Setup git
+        run: |
+          git config --global url.https://${{ secrets.ACCESS_TOKEN }}@github.com/.insteadOf https://github.com/
+          git config user.name "xHyroM"
+          git config user.email "github@xhyrom.dev"
+        env:
+          GITHUB_TOKEN: ${{ secrets.ACCESS_TOKEN }}
+          ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}
+
+      - name: Install dependencies
+        run: pnpm i
+
+      - name: Run
+        run: pnpm run start
+        env:
+          DISCORD_WEBHOOK_BUILDS: ${{ secrets.DISCORD_WEBHOOK_BUILDS }}
+          DISCORD_WEBHOOK_ROUTES: ${{ secrets.DISCORD_WEBHOOK_ROUTES }}
+          DISCORD_WEBHOOK_STRINGS: ${{ secrets.DISCORD_WEBHOOK_STRINGS }}
+          DISCORD_WEBHOOK_STYLESHEETS: ${{ secrets.DISCORD_WEBHOOK_STYLESHEET }} # todo: change to STYLESHEETS
+          DISCORD_WEBHOOK_EXPERIMENTS: ${{ secrets.DISCORD_WEBHOOK_EXPERIMENTS }}
+          DISCORD_WEBHOOK_POSTS: ${{ secrets.DISCORD_WEBHOOK_POSTS }}
+          DISCORD_WEBHOOK_MISCELLANEOUS: ${{ secrets.DISCORD_WEBHOOK_MISCELLANEOUS }}
+          SCRAPE_DOMAINS: false
+          SCRAPE_GITHUB: false
+          SCRAPE_POSTS: true
+          SCRAPE_CLIENT: true
