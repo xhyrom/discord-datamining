@@ -136,7 +136,7 @@ export class Domains implements Module {
       diff += "\n# Added\n";
 
       for (const domain of addedSubdomains) {
-        diff += `- ${domain}\n`;
+        diff += `+ ${domain}\n`;
       }
     }
 

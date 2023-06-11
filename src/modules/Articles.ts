@@ -83,7 +83,11 @@ export class Articles implements Module {
 
     await writeFile(
       join(this.baseDir, "sections.json"),
-      JSON.stringify(sections, null, 2)
+      JSON.stringify(
+        sections.map((s) => omit(s, "updated_at")),
+        null,
+        2
+      )
     );
 
     for (const article of articles) {
