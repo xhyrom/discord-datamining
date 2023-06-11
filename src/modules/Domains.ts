@@ -46,7 +46,7 @@ export class Domains implements Module {
         (await readFile(join(this.baseDir, `${domainName}.json`))) ?? "{}"
       );
 
-      if (!domain) {
+      if (!domain || !domainName) {
         console.log(`Domain ${domainName} is null!`);
         continue;
       }
@@ -65,7 +65,7 @@ export class Domains implements Module {
 
       if (!result?.update?.hash) continue;
 
-      const diff = this.diff(oldDomain, domain);
+      const diff = this.diff(domainName, oldDomain, domain);
       if (!diff) continue;
 
       const comment = await postToGithub(result?.update?.hash.to, diff);
@@ -100,42 +100,47 @@ export class Domains implements Module {
   }
 
   diff<T extends Omit<Response, "meta" | "endpoint">>(
-    oldDomains: T,
-    newDomains: T
+    name: string,
+    oldDomain: T,
+    newDomain: T
   ) {
-    if (!oldDomains.subdomains) oldDomains.subdomains = [];
-    if (!newDomains.subdomains) newDomains.subdomains = [];
+    if (!oldDomain.subdomains) oldDomain.subdomains = [];
+    if (!newDomain.subdomains) newDomain.subdomains = [];
 
-    const removedDomains: string[] = [];
-    const addedDomains: string[] = [];
+    const removedSubdomains: string[] = [];
+    const addedSubdomains: string[] = [];
 
-    for (const domain of oldDomains.subdomains) {
-      if (!newDomains.subdomains.includes(domain)) removedDomains.push(domain);
+    for (const domain of oldDomain.subdomains) {
+      if (!newDomain.subdomains.includes(domain))
+        removedSubdomains.push(domain);
     }
 
-    for (const domain of newDomains.subdomains) {
-      if (!oldDomains.subdomains.includes(domain)) addedDomains.push(domain);
+    for (const domain of newDomain.subdomains) {
+      if (!oldDomain.subdomains.includes(domain)) addedSubdomains.push(domain);
     }
 
-    if (removedDomains.length === 0 && addedDomains.length === 0) return "";
+    if (removedSubdomains.length === 0 && addedSubdomains.length === 0)
+      return "";
 
-    let diff = "";
+    let diff = `## Subdomains\n- ${name}\n\`\`\`diff`;
 
-    if (removedDomains.length > 0) {
+    if (removedSubdomains.length > 0) {
       diff += "\n# Removed\n";
 
-      for (const domain of removedDomains) {
+      for (const domain of removedSubdomains) {
         diff += `- ${domain};`;
       }
     }
 
-    if (addedDomains.length > 0) {
+    if (addedSubdomains.length > 0) {
       diff += "\n# Added\n";
 
-      for (const domain of addedDomains) {
+      for (const domain of addedSubdomains) {
         diff += `- ${domain};`;
       }
     }
+
+    diff += "```";
 
     return diff;
   }
