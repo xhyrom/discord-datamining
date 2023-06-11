@@ -2,18 +2,13 @@
   "data": {
     "kind": "user",
     "id": "2022-11_mobile_account_switcher_notifications",
-    "label": "Mobile Account Switcher: Notifications",
+    "label": "qwe",
     "description": [
       "Control",
       "Treatment 1: Enable notifications for multiple accounts"
     ],
     "hash": 1333727,
-    "buckets": [
-      0,
-      1
-    ],
-    "config_keys": [
-      "enabled"
-    ]
+    "buckets": [0, 1],
+    "config_keys": ["enabled"]
   }
 }
