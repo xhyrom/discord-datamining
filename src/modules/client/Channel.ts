@@ -157,7 +157,7 @@ export class Channel implements Module {
             .map((script) =>
               script.name === scriptFiles.mainScript.name
                 ? `${script.path} (main)`
-                : `  ${script.path}`
+                : `${script.path}`
             )
             .join("\n"),
         },
@@ -167,7 +167,7 @@ export class Channel implements Module {
             .map((stylesheet) =>
               stylesheet.name === stylesheetFiles.mainStylesheet.name
                 ? `${stylesheet.path} (main)`
-                : `  ${stylesheet.path}`
+                : `${stylesheet.path}`
             )
             .join("\n"),
         }

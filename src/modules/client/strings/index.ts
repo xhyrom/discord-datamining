@@ -14,6 +14,8 @@ import {
   postToDiscord,
   getWebhookFromEnv,
   pushToGit,
+  formatNumber,
+  postToGithub,
 } from "../../../utils.ts";
 
 export class Strings implements Module {
@@ -39,9 +41,7 @@ export class Strings implements Module {
 
     const result = await pushToGit(
       `📃 Strings were updated`,
-      `Strings (${Object.keys(strings).length}):\n${Object.entries(strings)
-        .map(([key, value]) => `${key}: ${value}`)
-        .join("\n")}`
+      `Strings - ${formatNumber(Object.keys(strings).length)}`
     );
 
     if (!result?.update?.hash) return;
@@ -49,6 +49,7 @@ export class Strings implements Module {
     const diff = this.diff(oldStrings, strings);
     if (!diff) return;
 
+    const comment = await postToGithub(result?.update?.hash.to, diff);
     await postToDiscord(
       getWebhookFromEnv("DISCORD_WEBHOOK_STRINGS"),
       result?.update?.hash.to,
@@ -56,7 +57,8 @@ export class Strings implements Module {
         content: `<@&1105589256996524042>\n${
           diff.length > 2000 ? diff.slice(0, 1968) + "...```" : diff
         }`,
-      }
+      },
+      comment.data.html_url
     );
   }
 

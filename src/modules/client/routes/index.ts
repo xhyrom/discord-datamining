@@ -12,6 +12,8 @@ import {
   postToDiscord,
   getWebhookFromEnv,
   pushToGit,
+  formatNumber,
+  postToGithub,
 } from "../../../utils.ts";
 
 export class Routes implements Module {
@@ -38,7 +40,9 @@ export class Routes implements Module {
 
     const result = await pushToGit(
       `🗺️ Routes were updated`,
-      `Routes (${Object.keys(json).length}):\n${Object.entries(json)
+      `Routes (${formatNumber(Object.keys(json).length)}):\n${Object.entries(
+        json
+      )
         .map(([key, value]) => `${key}: ${value}`)
         .join("\n")}`
     );
@@ -48,6 +52,7 @@ export class Routes implements Module {
     const diff = this.diff(oldRoutes, json);
     if (!diff) return;
 
+    const comment = await postToGithub(result?.update?.hash.to, diff);
     await postToDiscord(
       getWebhookFromEnv("DISCORD_WEBHOOK_ROUTES"),
       result?.update?.hash.to,
@@ -55,7 +60,8 @@ export class Routes implements Module {
         content: `<@&1115349386663305217>\n${
           diff.length > 2000 ? diff.slice(0, 1968) + "...```" : diff
         }`,
-      }
+      },
+      comment.data.html_url
     );
   }
 

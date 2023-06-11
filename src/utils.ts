@@ -27,11 +27,25 @@ export const octokit = new Octokit({
 });
 
 export const pushToGit = async (...message: string[]) => {
-  if (process.env.IS_DEV) return;
+  //if (process.env.IS_DEV) return;
+  const msg = [];
+
+  for (const m of message) {
+    msg.push(maximumStringLen(m, 50000));
+  }
 
   await git.add("data/*");
-  await git.commit(message);
+  await git.commit(msg);
   return await git.push();
+};
+
+export const postToGithub = async (commitHash: string, body: string) => {
+  return await octokit.repos.createCommitComment({
+    owner: "xHyroM",
+    repo: "discord-datamining",
+    commit_sha: commitHash,
+    body: maximumStringLen(body, 65530),
+  });
 };
 
 export const postToDiscord = async (
@@ -40,8 +54,10 @@ export const postToDiscord = async (
   body: {
     content?: string;
     embeds?: APIEmbed[];
-  }
+  },
+  url?: string
 ) => {
+  console.log(url);
   for (const webhook of webhooks) {
     const [id, token] = webhook.split("/").slice(-2);
 
@@ -54,7 +70,9 @@ export const postToDiscord = async (
                 .setLabel("View on GitHub")
                 .setStyle(ButtonStyle.Link)
                 .setURL(
-                  pushHash
+                  url
+                    ? url
+                    : pushHash
                     ? `https://github.com/xHyroM/discord-datamining/commit/${pushHash}`
                     : "https://github.com/xHyroM/discord-datamining"
                 )
@@ -168,4 +186,16 @@ export const beautify = (
     case "html":
       return jsBeautify.html(content);
   }
+};
+
+export const formatNumber = (number: number) => {
+  return number.toLocaleString("en-US");
+};
+
+export const maximumStringLen = (str: string, max: number) => {
+  if (str.startsWith("```") && str.endsWith("```")) {
+    return str.length > max ? str.slice(0, max - 6) + "...```" : str;
+  }
+
+  return str.length > max ? str.slice(0, max - 3) + "..." : str;
 };
