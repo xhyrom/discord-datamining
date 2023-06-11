@@ -45,7 +45,7 @@ export class Routes implements Module {
     );
 
     const result = await pushToGit(
-      `🗺️ Routes were updated`,
+      "🗺️ Routes were updated",
       `Routes (${formatNumber(Object.keys(routes).length)}):\n${Object.entries(
         routes
       )

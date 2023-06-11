@@ -27,15 +27,6 @@ export const octokit = new Octokit({
 });
 
 export const pushToGit = async (...message: string[]) => {
-  if (process.env.IS_DEV)
-    return {
-      update: {
-        hash: {
-          from: "master",
-          to: "master",
-        },
-      },
-    };
   const msg = [];
 
   for (const m of message) {
