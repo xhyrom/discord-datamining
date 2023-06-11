@@ -22,6 +22,7 @@
     "@xhyrom/configs": "https://gitpkg.now.sh/xHyroM/things/packages/configs?main",
     "discord-api-types": "^0.37.43",
     "dotenv": "^16.1.4",
+    "fast-deep-equal": "^3.1.3",
     "js-beautify": "^1.14.8",
     "jsdom": "^22.1.0",
     "simple-git": "^3.19.0",

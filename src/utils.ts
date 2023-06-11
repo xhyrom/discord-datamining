@@ -198,3 +198,11 @@ export const maximumStringLen = (str: string, max: number) => {
 
   return str.length > max ? str.slice(0, max - 3) + "..." : str;
 };
+
+export const chunk = <T>(array: T[], size: number): T[][] => {
+  const result = [];
+  for (let i = 0; i < array.length; i += size) {
+    result.push(array.slice(i, i + size));
+  }
+  return result;
+};

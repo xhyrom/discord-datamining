@@ -6,6 +6,8 @@ import { Github } from "./modules/Github.ts";
 import { Domains } from "./modules/Domains.ts";
 import { Client } from "./modules/client/index.ts";
 
+await new Articles(ArticleType.Creator).run();
+
 // Scrape client data - scripts, styles, assets,
 await new Client().run();
 
@@ -25,6 +27,5 @@ await new Articles(ArticleType.Normal).run();
 await new Articles(ArticleType.Dev).run();
 
 // Scrape https://creator-support.discord.com
-await new Articles(ArticleType.Creator).run();
 
 export {};

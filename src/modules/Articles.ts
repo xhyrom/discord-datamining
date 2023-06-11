@@ -5,9 +5,20 @@ import {
   getPaginator,
   omit,
   beautify,
+  readFile,
+  octokit,
+  formatNumber,
+  pushToGit,
+  maximumStringLen,
+  chunk,
+  postToDiscord,
+  getWebhookFromEnv,
 } from "../utils.ts";
 import { join } from "node:path";
+import deepEqual from "fast-deep-equal";
 import type { Module } from ".";
+import type { APIEmbed } from "discord-api-types/v10";
+import { EmbedBuilder } from "@discordjs/builders";
 
 export enum ArticleType {
   Normal = "normal",
@@ -29,6 +40,8 @@ interface Article {
   label_names: string[];
   body: string;
 }
+
+type ArticleWithDiff = Article & { diff?: string | undefined };
 
 interface Section {
   id: number;
@@ -65,6 +78,17 @@ export class Articles implements Module {
     }
   }
 
+  get displayType() {
+    switch (this.type) {
+      case ArticleType.Normal:
+        return "Normal";
+      case ArticleType.Dev:
+        return "Dev";
+      case ArticleType.Creator:
+        return "Creator";
+    }
+  }
+
   async run() {
     console.log(`Scraping ${this.type} articles`);
 
@@ -92,6 +116,21 @@ export class Articles implements Module {
       )
     );
 
+    const oldArticles = JSON.parse(
+      (await readFile(join(this.baseDir, "articles.json"))) ?? "[]"
+    );
+
+    await writeFile(
+      join(this.baseDir, "articles.json"),
+      JSON.stringify(
+        articles.map((article) =>
+          omit(article, "vote_sum", "vote_count", "updated_at")
+        ),
+        null,
+        2
+      )
+    );
+
     for (const article of articles) {
       await writeFile(
         join(this.baseDir, "articles", article.id.toString(), "content.md"),
@@ -104,6 +143,66 @@ export class Articles implements Module {
           null,
           2
         )
+      );
+    }
+
+    const result = await pushToGit(
+      `🗺️ ${this.displayType} Articles were updated`,
+      `Articles (${formatNumber(Object.keys(articles).length)}):\n${articles
+        .map((a) => `${a.title}`)
+        .join("\n")}`
+    );
+
+    if (!result?.update?.hash) return;
+
+    const diff = await this.diff(
+      result.update.hash.from,
+      result.update.hash.to,
+      oldArticles,
+      articles
+    );
+
+    console.log(diff);
+
+    const embeds: APIEmbed[] = [];
+
+    for (const article of diff.addedArticles) {
+      embeds.push(
+        this.buildEmbed(sections, "New", article).setColor(0x2cde5c).toJSON()
+      );
+    }
+
+    for (const article of diff.removedArticles) {
+      embeds.push(
+        this.buildEmbed(sections, "Removed", article)
+          .setColor(0xde2c2c)
+          .toJSON()
+      );
+    }
+
+    for (const article of diff.updatedArticles) {
+      embeds.push(
+        this.buildEmbed(sections, "Updated", article)
+          .setDescription(
+            article.diff
+              ? maximumStringLen(article.diff, 4096)
+              : "No diff found"
+          )
+          .setColor(0x2c5cde)
+          .toJSON()
+      );
+    }
+
+    const embedsPerTen = chunk(embeds, 10);
+
+    for (const embeds of embedsPerTen) {
+      await postToDiscord(
+        getWebhookFromEnv("DISCORD_WEBHOOK_ARTICLES"),
+        result?.update?.hash.to,
+        {
+          content: "<@&1117371394435600387>",
+          embeds,
+        }
       );
     }
   }
@@ -126,5 +225,92 @@ export class Articles implements Module {
     );
 
     return res;
+  }
+
+  private async diff(
+    before: string,
+    after: string,
+    oldArticles: Article[],
+    newArticles: Article[]
+  ): Promise<{
+    removedArticles: ArticleWithDiff[];
+    updatedArticles: ArticleWithDiff[];
+    addedArticles: ArticleWithDiff[];
+  }> {
+    const diff = await octokit.repos.compareCommits({
+      owner: "xHyroM",
+      repo: "discord-datamining",
+      base: before,
+      head: after,
+    });
+
+    console.log(diff, diff.data.files);
+
+    const removedArticles = [];
+    const updatedArticles = [];
+    const addedArticles = [];
+
+    for (const oldArticle of oldArticles) {
+      const newArticle = newArticles.find((a) => a.id === oldArticle.id);
+
+      if (!newArticle) {
+        removedArticles.push(oldArticle);
+        continue;
+      }
+
+      if (!deepEqual(oldArticle, newArticle)) {
+        updatedArticles.push({
+          ...newArticle,
+          diff: diff.data.files?.find((f) =>
+            f.filename.includes(
+              `${this.type}/articles/${newArticle.id}/content.md`
+            )
+          )?.patch,
+        });
+      }
+    }
+
+    for (const newArticle of newArticles) {
+      const oldArticle = oldArticles.find((a) => a.id === newArticle.id);
+
+      if (!oldArticle) {
+        addedArticles.push(newArticle);
+      }
+    }
+
+    return {
+      removedArticles,
+      updatedArticles,
+      addedArticles,
+    };
+  }
+
+  private buildEmbed(sections: Section[], action: string, article: Article) {
+    return new EmbedBuilder()
+      .setTitle(`${action} ${this.displayType} Article`)
+      .addFields(
+        {
+          name: "Title",
+          value: article.title,
+        },
+        {
+          name: "Section",
+          value:
+            sections.find((s) => s.id === article.section_id)?.name ??
+            "Unknown",
+        },
+        {
+          name: "Created At",
+          value: `<t:${Math.floor(
+            new Date(article.created_at).getTime() / 1000
+          )}>`,
+        },
+        {
+          name: "Edited At",
+          value: `<t:${Math.floor(
+            new Date(article.edited_at).getTime() / 1000
+          )}>`,
+        }
+      );
   }
 }
