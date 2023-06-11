@@ -34,6 +34,8 @@ export class Domains implements Module {
   }
 
   async run() {
+    console.log("Scraping domains");
+
     const domainsResponse = await Promise.all(
       this.domains.map((domain) => this.get(domain))
     );

@@ -22,6 +22,8 @@ export class Routes implements Module {
   }
 
   async run() {
+    console.log("Scraping routes");
+
     const routes = await fetch("https://api.distools.xhyrom.dev/v2/routes");
     if (!routes.ok) {
       console.log("Potentional outage, failed to fetch routes");

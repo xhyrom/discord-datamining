@@ -66,6 +66,8 @@ export class Articles implements Module {
   }
 
   async run() {
+    console.log(`Scraping ${this.type} articles`);
+
     const articles = await this.articles();
     const sections = await this.sections();
 

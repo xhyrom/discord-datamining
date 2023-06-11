@@ -75,6 +75,8 @@ export class Channel implements Module {
   }
 
   async run() {
+    console.log(`Scraping ${this.displayType} channel`);
+
     const latestVersionHash = await this.getVersionHash();
     const currentVersionHash = JSON.parse(
       (await readFile(join(this.baseDir, "info.json"))) ?? "{}"

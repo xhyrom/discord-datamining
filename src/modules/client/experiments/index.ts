@@ -9,6 +9,8 @@ export class Experiments implements Module {
   }
 
   async run() {
+    console.log("Scraping experiments");
+
     const experiments = await this.experiments();
     if (!experiments) {
       console.log("Potentional outage, failed to fetch experiments");

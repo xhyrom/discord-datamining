@@ -27,6 +27,8 @@ export class Stylesheets implements Module {
   }
 
   async run() {
+    console.log(`Scraping stylesheets for ${this.#channel.type}`);
+
     const files = await this.files();
 
     await rm(join(this.baseDir, "stylesheets"));
@@ -42,6 +44,8 @@ export class Stylesheets implements Module {
       join(this.baseDir, "main.css"),
       beautify(await files.mainStylesheet!.content(), "css")
     );
+
+    // Stylesheets diff is posted in Channel#run
   }
 
   async diff(before: string, after: string) {

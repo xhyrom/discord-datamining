@@ -95,6 +95,8 @@ export class Blog implements Module {
   }
 
   async run() {
+    console.log("Scraping blog");
+
     const posts = await this.posts();
     const channel = await this.channel();
 

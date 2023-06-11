@@ -15,6 +15,8 @@ export class Github implements Module {
   }
 
   async run() {
+    console.log("Scraping github");
+
     const organisation = await this.organisation();
     const repositories = await this.repositories();
 

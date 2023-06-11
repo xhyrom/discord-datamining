@@ -30,6 +30,8 @@ export class Scripts implements Module {
   }
 
   async run() {
+    console.log(`Scraping scripts for ${this.#channel.type}`);
+
     const files = await this.files();
     const build = await this.build();
 

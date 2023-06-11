@@ -24,6 +24,8 @@ export class Strings implements Module {
   }
 
   async run() {
+    console.log("Scraping strings");
+
     const strings = getLangStrings(
       (await readFile(
         join(this.baseDir, "channels", "canary", "scripts", "main.js")
