@@ -37,6 +37,10 @@
   "has_wiki": true,
   "has_pages": false,
   "has_discussions": false,
+<<<<<<< HEAD:data/github/repositories/487125220/meta.json
+=======
+  "forks_count": 32,
+>>>>>>> 5e760557fcff2e7b12bad71eaa3e8b41b3819b02:data/github-repos/cloudflare-sample-app/info.json
   "archived": false,
   "disabled": false,
   "license": {
@@ -51,6 +55,12 @@
   "web_commit_signoff_required": false,
   "topics": [],
   "visibility": "public",
+<<<<<<< HEAD:data/github/repositories/487125220/meta.json
+=======
+  "forks": 32,
+  "open_issues": 3,
+  "watchers": 121,
+>>>>>>> 5e760557fcff2e7b12bad71eaa3e8b41b3819b02:data/github-repos/cloudflare-sample-app/info.json
   "default_branch": "main",
   "permissions": {
     "admin": false,

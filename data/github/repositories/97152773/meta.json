@@ -39,6 +39,10 @@
   "has_discussions": false,
   "archived": false,
   "disabled": false,
+<<<<<<< HEAD:data/github/repositories/97152773/meta.json
+=======
+  "open_issues_count": 57,
+>>>>>>> 5e760557fcff2e7b12bad71eaa3e8b41b3819b02:data/github-repos/discord-rpc/info.json
   "license": {
     "key": "mit",
     "name": "MIT License",
@@ -51,6 +55,12 @@
   "web_commit_signoff_required": false,
   "topics": [],
   "visibility": "public",
+<<<<<<< HEAD:data/github/repositories/97152773/meta.json
+=======
+  "forks": 284,
+  "open_issues": 57,
+  "watchers": 962,
+>>>>>>> 5e760557fcff2e7b12bad71eaa3e8b41b3819b02:data/github-repos/discord-rpc/info.json
   "default_branch": "master",
   "permissions": {
     "admin": false,

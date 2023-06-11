@@ -28,6 +28,11 @@
   "fork": false,
   "url": "https://api.github.com/repos/discord/airhornbot",
   "created_at": "2016-03-05T22:56:46Z",
+<<<<<<< HEAD:data/github/repositories/53227290/meta.json
+=======
+  "updated_at": "2023-06-07T18:28:25Z",
+  "pushed_at": "2023-06-10T17:20:15Z",
+>>>>>>> 5e760557fcff2e7b12bad71eaa3e8b41b3819b02:data/github-repos/airhornbot/info.json
   "homepage": "https://airhorn.solutions",
   "size": 36630,
   "language": "TypeScript",
@@ -39,6 +44,10 @@
   "has_discussions": false,
   "archived": false,
   "disabled": false,
+<<<<<<< HEAD:data/github/repositories/53227290/meta.json
+=======
+  "open_issues_count": 2,
+>>>>>>> 5e760557fcff2e7b12bad71eaa3e8b41b3819b02:data/github-repos/airhornbot/info.json
   "license": null,
   "allow_forking": true,
   "is_template": false,
@@ -47,6 +56,12 @@
     "bot"
   ],
   "visibility": "public",
+<<<<<<< HEAD:data/github/repositories/53227290/meta.json
+=======
+  "forks": 343,
+  "open_issues": 2,
+  "watchers": 844,
+>>>>>>> 5e760557fcff2e7b12bad71eaa3e8b41b3819b02:data/github-repos/airhornbot/info.json
   "default_branch": "main",
   "permissions": {
     "admin": false,

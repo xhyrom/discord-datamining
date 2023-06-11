@@ -28,6 +28,11 @@
   "fork": true,
   "url": "https://api.github.com/repos/discord/electron",
   "created_at": "2016-04-27T20:43:15Z",
+<<<<<<< HEAD:data/github/repositories/57246193/meta.json
+=======
+  "updated_at": "2023-06-08T14:42:34Z",
+  "pushed_at": "2023-06-10T18:36:41Z",
+>>>>>>> 5e760557fcff2e7b12bad71eaa3e8b41b3819b02:data/github-repos/electron/info.json
   "homepage": "http://electron.atom.io",
   "size": 109395,
   "language": "C++",
