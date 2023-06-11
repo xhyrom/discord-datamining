@@ -1,0 +1,107 @@
+{
+  "data": {
+    "kind": "guild",
+    "id": "2023-05_automod_user_profile_ab",
+    "label": "Automod on User Profile A/B",
+    "description": [
+      "Control",
+      "Treatment 1: Automod on User Profile enabled"
+    ],
+    "hash": 4261225962,
+    "buckets": [
+      0,
+      1
+    ],
+    "config_keys": [
+      "enabled"
+    ]
+  },
+  "rollout": {
+    "populations": [
+      {
+        "buckets": {
+          "none": {
+            "rollout": [
+              {
+                "start": 0,
+                "end": 10000
+              }
+            ]
+          }
+        },
+        "filters": [
+          {
+            "type": "guild_ids",
+            "ids": [
+              "322850917248663552",
+              "662267976984297473",
+              "586704051148816385",
+              "517660115675906051",
+              "926691694680870982",
+              "1046979304547954728",
+              "710745950380884009",
+              "679875946597056683",
+              "989166677390426132",
+              "974519864045756446"
+            ]
+          }
+        ]
+      },
+      {
+        "buckets": {
+          "none": {
+            "rollout": [
+              {
+                "start": 0,
+                "end": 10000
+              }
+            ]
+          }
+        },
+        "filters": [
+          {
+            "type": "guild_has_feature",
+            "features": [
+              "AUTOMOD_TRIGGER_USER_PROFILE"
+            ]
+          }
+        ]
+      },
+      {
+        "buckets": {
+          "1": {
+            "rollout": [
+              {
+                "start": 3000,
+                "end": 6000
+              }
+            ]
+          },
+          "none": {
+            "rollout": [
+              {
+                "start": 6000,
+                "end": 10000
+              }
+            ]
+          }
+        },
+        "filters": [
+          {
+            "type": "guild_has_feature",
+            "features": [
+              "COMMUNITY"
+            ]
+          }
+        ]
+      }
+    ],
+    "revision": 1,
+    "overrides": {
+      "1": [
+        "651595875897835540"
+      ]
+    },
+    "overrides_formatted": []
+  }
+}

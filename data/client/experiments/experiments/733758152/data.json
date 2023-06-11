@@ -1,0 +1,19 @@
+{
+  "data": {
+    "kind": "user",
+    "id": "2021-03_expiration_notice_ios_embed",
+    "label": "Show expiration notice on ios invite embed",
+    "description": [
+      "Control",
+      "Treatment 1: Show expiration notice"
+    ],
+    "hash": 733758152,
+    "buckets": [
+      0,
+      1
+    ],
+    "config_keys": [
+      "enabled"
+    ]
+  }
+}

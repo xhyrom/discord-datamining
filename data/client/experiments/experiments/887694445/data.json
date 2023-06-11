@@ -1,0 +1,19 @@
+{
+  "data": {
+    "kind": "user",
+    "id": "2023-03_free_discord_stickers",
+    "label": "Free Default Stickers",
+    "description": [
+      "Control",
+      "Treatment 1: Enabled"
+    ],
+    "hash": 887694445,
+    "buckets": [
+      0,
+      1
+    ],
+    "config_keys": [
+      "freeStickersEnabled"
+    ]
+  }
+}

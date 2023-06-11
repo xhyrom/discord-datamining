@@ -1,0 +1,21 @@
+{
+  "data": {
+    "kind": "user",
+    "id": "2022-09_premium_tier_0_global",
+    "label": "Premium tier 0 (Global)",
+    "description": [
+      "Control",
+      "Treatment 1: Variant 1",
+      "Treatment 2: Variant 2"
+    ],
+    "hash": 102690720,
+    "buckets": [
+      0,
+      1,
+      2
+    ],
+    "config_keys": [
+      "enableTier0"
+    ]
+  }
+}

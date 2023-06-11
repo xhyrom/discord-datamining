@@ -1,0 +1,19 @@
+{
+  "data": {
+    "kind": "user",
+    "id": "2022-07_channel_highlights",
+    "label": "Channel Highlights",
+    "description": [
+      "Control",
+      "Treatment 1: Show Channel Highlights"
+    ],
+    "hash": 4169687140,
+    "buckets": [
+      0,
+      1
+    ],
+    "config_keys": [
+      "enabled"
+    ]
+  }
+}

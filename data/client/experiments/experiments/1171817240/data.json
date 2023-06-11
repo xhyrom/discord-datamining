@@ -1,0 +1,32 @@
+{
+  "data": {
+    "kind": "user",
+    "id": "2023-05_dcf_improvements",
+    "label": "DCF Improvements Experiment",
+    "description": [
+      "Control",
+      "Treatment 1: Users will have a DC cooldown of 1 hour",
+      "Treatment 2: DCs will be dismissed when a user navigates away from their surface",
+      "Treatment 3: Users will be limited to seeing 2 DC a day and 6 DC a week",
+      "Treatment 4: Users will be limited to seeing 2 DC a day",
+      "Treatment 5: Users will be limited to seeing 3 DC a day and 9 DC a week",
+      "Treatment 6: Users will be limited to seeing 3 DC a day"
+    ],
+    "hash": 1171817240,
+    "buckets": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6
+    ],
+    "config_keys": [
+      "cooldownPeriod",
+      "dismissOnNavigation",
+      "dailyCap",
+      "weeklyCap"
+    ]
+  }
+}

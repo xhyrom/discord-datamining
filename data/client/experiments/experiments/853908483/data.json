@@ -1,0 +1,19 @@
+{
+  "data": {
+    "kind": "user",
+    "id": "2023-05_lock_icon",
+    "label": "Checkout Lock Icon",
+    "description": [
+      "Control",
+      "Treatment 1: Enabled"
+    ],
+    "hash": 853908483,
+    "buckets": [
+      0,
+      1
+    ],
+    "config_keys": [
+      "enabled"
+    ]
+  }
+}

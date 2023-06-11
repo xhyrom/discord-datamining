@@ -1,0 +1,19 @@
+{
+  "data": {
+    "kind": "user",
+    "id": "2022-09_inboxes_v2_frontend",
+    "label": "Safety Integrity Platform Inboxes V2",
+    "description": [
+      "Control",
+      "Treatment 1: Enabled"
+    ],
+    "hash": 472975400,
+    "buckets": [
+      0,
+      1
+    ],
+    "config_keys": [
+      "enabled"
+    ]
+  }
+}

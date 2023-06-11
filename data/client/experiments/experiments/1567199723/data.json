@@ -1,0 +1,19 @@
+{
+  "data": {
+    "kind": "user",
+    "id": "2021-08_guild_role_subscription_users",
+    "label": "Guild Role Subscription Users",
+    "description": [
+      "Control",
+      "Treatment 1: Enables users to create Guild Role Subscriptions"
+    ],
+    "hash": 1567199723,
+    "buckets": [
+      0,
+      1
+    ],
+    "config_keys": [
+      "enableRoleSubscriptionsForUser"
+    ]
+  }
+}

@@ -1,0 +1,58 @@
+{
+  "data": {
+    "kind": "guild",
+    "id": "2022-07_report_raids",
+    "label": "Report Raids",
+    "description": [
+      "Control",
+      "Treatment 1: Enable Reporting Of Raids"
+    ],
+    "hash": 1055563741,
+    "buckets": [
+      0,
+      1
+    ],
+    "config_keys": [
+      "enableRaidReporting"
+    ]
+  },
+  "rollout": {
+    "populations": [
+      {
+        "buckets": {
+          "1": {
+            "rollout": [
+              {
+                "start": 0,
+                "end": 10000
+              }
+            ]
+          }
+        },
+        "filters": [
+          {
+            "type": "guild_in_range_by_hash",
+            "hash_key": 1055563741,
+            "target": 10000
+          }
+        ]
+      },
+      {
+        "buckets": {
+          "none": {
+            "rollout": [
+              {
+                "start": 0,
+                "end": 10000
+              }
+            ]
+          }
+        },
+        "filters": []
+      }
+    ],
+    "revision": 0,
+    "overrides": {},
+    "overrides_formatted": []
+  }
+}

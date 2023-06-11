@@ -1,0 +1,19 @@
+{
+  "data": {
+    "kind": "user",
+    "id": "2023-02_mobile_redesign_new_users",
+    "label": "Tabs V2 - New Users",
+    "description": [
+      "Control",
+      "Treatment 1: Enable Tabs V2"
+    ],
+    "hash": 1084726125,
+    "buckets": [
+      0,
+      1
+    ],
+    "config_keys": [
+      "enabled"
+    ]
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "data": {
+    "kind": "user",
+    "id": "2021-10_price_determination",
+    "label": "Price determination experiment",
+    "description": [
+      "Control",
+      "Treatment 1: Enabled"
+    ],
+    "hash": 3997593347,
+    "buckets": [
+      0,
+      1
+    ],
+    "config_keys": [
+      "enabled"
+    ]
+  }
+}
