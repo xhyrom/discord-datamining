@@ -1,9 +1,25 @@
 import { xml2js } from "xml-js";
 import { JSDOM } from "jsdom";
 import jsBeautify from "js-beautify";
-import { DATA_DIR, writeFile, rm, omit, beautify } from "../utils.ts";
+import {
+  DATA_DIR,
+  writeFile,
+  rm,
+  omit,
+  beautify,
+  readFile,
+  formatNumber,
+  pushToGit,
+  maximumStringLen,
+  chunk,
+  getWebhookFromEnv,
+  postToDiscord,
+} from "../../utils.ts";
 import { join } from "node:path";
-import type { Module } from ".";
+import type { Module } from "..";
+import { Posts } from "./index.ts";
+import type { APIEmbed } from "discord-api-types/v10";
+import { EmbedBuilder } from "@discordjs/builders";
 
 interface RssResponse {
   rss: {
@@ -115,6 +131,15 @@ export class Blog implements Module {
       JSON.stringify(channel, null, 2)
     );
 
+    const oldPosts = JSON.parse(
+      (await readFile(join(this.baseDir, "posts.json"))) ?? "[]"
+    );
+
+    await writeFile(
+      join(this.baseDir, "posts.json"),
+      JSON.stringify(posts, null, 2)
+    );
+
     await rm(join(this.baseDir, "posts"));
 
     for (const post of posts) {
@@ -125,6 +150,59 @@ export class Blog implements Module {
       await writeFile(
         join(this.baseDir, "posts", post.id, "meta.json"),
         JSON.stringify(omit(post, "body"), null, 2)
+      );
+    }
+
+    const result = await pushToGit(
+      `🗺️ Blog posts were updated`,
+      `Posts (${formatNumber(posts.length)}):\n${posts
+        .map((a) => `${a.title}`)
+        .join("\n")}`
+    );
+
+    if (!result?.update?.hash) return;
+
+    const diff = await Posts.diff(
+      result.update.hash.from,
+      result.update.hash.to,
+      `blog/posts`,
+      oldPosts,
+      posts
+    );
+
+    const embeds: APIEmbed[] = [];
+
+    for (const post of diff.addedPosts) {
+      embeds.push(this.buildEmbed("New", post).setColor(0x2cde5c).toJSON());
+    }
+
+    for (const post of diff.removedPosts) {
+      embeds.push(this.buildEmbed("Removed", post).setColor(0xde2c2c).toJSON());
+    }
+
+    for (const post of diff.updatedPosts) {
+      if (!post.diff) continue;
+
+      embeds.push(
+        this.buildEmbed("Updated", post)
+          .setDescription(
+            maximumStringLen(`\`\`\`diff\n${post.diff}\n\`\`\``, 4096)
+          )
+          .setColor(0x2c5cde)
+          .toJSON()
+      );
+    }
+
+    const embedsPerTen = chunk(embeds, 10);
+
+    for (const embeds of embedsPerTen) {
+      await postToDiscord(
+        getWebhookFromEnv("DISCORD_WEBHOOK_POSTS"),
+        result?.update?.hash.to,
+        {
+          content: "<@&1117371394435600387>",
+          embeds,
+        }
       );
     }
   }
@@ -193,5 +271,26 @@ export class Blog implements Module {
     this.#data = parsed;
 
     return parsed;
+  }
+
+  private buildEmbed(action: string, post: Post) {
+    return new EmbedBuilder().setTitle(`${action} Post`).addFields(
+      {
+        name: "Title",
+        value: post.title,
+      },
+      {
+        name: "Description",
+        value: post.description,
+      },
+      {
+        name: "Published At",
+        value: `<t:${Math.floor(new Date(post.pubDate).getTime() / 1000)}>`,
+      },
+      {
+        name: "Link",
+        value: post.link,
+      }
+    );
   }
 }

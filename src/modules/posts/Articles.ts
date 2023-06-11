@@ -6,19 +6,18 @@ import {
   omit,
   beautify,
   readFile,
-  octokit,
   formatNumber,
   pushToGit,
   maximumStringLen,
   chunk,
   postToDiscord,
   getWebhookFromEnv,
-} from "../utils.ts";
+} from "../../utils.ts";
 import { join } from "node:path";
-import deepEqual from "fast-deep-equal";
-import type { Module } from ".";
+import type { Module } from "../index.ts";
 import type { APIEmbed } from "discord-api-types/v10";
 import { EmbedBuilder } from "@discordjs/builders";
+import { Posts } from "./index.ts";
 
 export enum ArticleType {
   Normal = "normal",
@@ -40,8 +39,6 @@ interface Article {
   label_names: string[];
   body: string;
 }
-
-type ArticleWithDiff = Article & { diff?: string | undefined };
 
 interface Section {
   id: number;
@@ -148,29 +145,30 @@ export class Articles implements Module {
 
     const result = await pushToGit(
       `🗺️ ${this.displayType} Articles were updated`,
-      `Articles (${formatNumber(Object.keys(articles).length)}):\n${articles
+      `Articles (${formatNumber(articles.length)}):\n${articles
         .map((a) => `${a.title}`)
         .join("\n")}`
     );
 
     if (!result?.update?.hash) return;
 
-    const diff = await this.diff(
+    const diff = await Posts.diff(
       result.update.hash.from,
       result.update.hash.to,
+      `articles/${this.type}/articles`,
       oldArticles,
       articles
     );
 
     const embeds: APIEmbed[] = [];
 
-    for (const article of diff.addedArticles) {
+    for (const article of diff.addedPosts) {
       embeds.push(
         this.buildEmbed(sections, "New", article).setColor(0x2cde5c).toJSON()
       );
     }
 
-    for (const article of diff.removedArticles) {
+    for (const article of diff.removedPosts) {
       embeds.push(
         this.buildEmbed(sections, "Removed", article)
           .setColor(0xde2c2c)
@@ -178,7 +176,7 @@ export class Articles implements Module {
       );
     }
 
-    for (const article of diff.updatedArticles) {
+    for (const article of diff.updatedPosts) {
       if (!article.diff) continue;
 
       embeds.push(
@@ -225,69 +223,13 @@ export class Articles implements Module {
     return res;
   }
 
-  private async diff(
-    before: string,
-    after: string,
-    oldArticles: Article[],
-    newArticles: Article[]
-  ): Promise<{
-    removedArticles: ArticleWithDiff[];
-    updatedArticles: ArticleWithDiff[];
-    addedArticles: ArticleWithDiff[];
-  }> {
-    const diff = await octokit.repos.compareCommits({
-      owner: "xHyroM",
-      repo: "discord-datamining",
-      base: before,
-      head: after,
-    });
-
-    const removedArticles = [];
-    const updatedArticles = [];
-    const addedArticles = [];
-
-    for (const oldArticle of oldArticles) {
-      const newArticle = newArticles.find((a) => a.id === oldArticle.id);
-
-      if (!newArticle) {
-        removedArticles.push(oldArticle);
-        continue;
-      }
-
-      if (!deepEqual(oldArticle, newArticle)) {
-        updatedArticles.push({
-          ...newArticle,
-          diff: diff.data.files?.find((f) =>
-            f.filename.includes(
-              `${this.type}/articles/${newArticle.id}/content.md`
-            )
-          )?.patch,
-        });
-      }
-    }
-
-    for (const newArticle of newArticles) {
-      const oldArticle = oldArticles.find((a) => a.id === newArticle.id);
-
-      if (!oldArticle) {
-        addedArticles.push(newArticle);
-      }
-    }
-
-    return {
-      removedArticles,
-      updatedArticles,
-      addedArticles,
-    };
-  }
-
   private buildEmbed(sections: Section[], action: string, article: Article) {
     return new EmbedBuilder()
       .setTitle(`${action} ${this.displayType} Article`)
       .addFields(
         {
           name: "Title",
-          value: article.title,
+          value: article.title ?? article.name,
         },
         {
           name: "Section",
