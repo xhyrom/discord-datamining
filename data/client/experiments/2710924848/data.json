@@ -1,0 +1,46 @@
+{
+  "data": {
+    "kind": "guild",
+    "id": "2023-04_guild_alert_mode",
+    "label": "Guild Alert Mode",
+    "description": [
+      "Control",
+      "Treatment 1: Show alert mode experimence"
+    ],
+    "hash": 2710924848,
+    "buckets": [
+      0,
+      1
+    ],
+    "config_keys": [
+      "showAlertMode"
+    ]
+  },
+  "rollout": {
+    "populations": [
+      {
+        "buckets": {
+          "none": {
+            "rollout": [
+              {
+                "start": 0,
+                "end": 10000
+              }
+            ]
+          }
+        },
+        "filters": []
+      }
+    ],
+    "revision": 0,
+    "overrides": {
+      "1": [
+        "816784679717044276",
+        "874345844743213126",
+        "840296607785287763",
+        "1113529666989469708"
+      ]
+    },
+    "overrides_formatted": []
+  }
+}

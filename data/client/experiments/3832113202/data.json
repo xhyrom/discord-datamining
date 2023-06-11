@@ -1,0 +1,48 @@
+{
+  "data": {
+    "kind": "guild",
+    "id": "2022-01_home_tab_guild",
+    "label": "Home Tab Guild",
+    "description": [
+      "Control",
+      "Treatment 1: Check User as well",
+      "Treatment 2: Force on"
+    ],
+    "hash": 3832113202,
+    "buckets": [
+      0,
+      1,
+      2
+    ],
+    "config_keys": [
+      "enabled"
+    ]
+  },
+  "rollout": {
+    "populations": [
+      {
+        "buckets": {
+          "none": {
+            "rollout": [
+              {
+                "start": 0,
+                "end": 10000
+              }
+            ]
+          }
+        },
+        "filters": []
+      }
+    ],
+    "revision": 4,
+    "overrides": {
+      "0": [
+        "814669604840013874"
+      ],
+      "2": [
+        "662267976984297473"
+      ]
+    },
+    "overrides_formatted": []
+  }
+}

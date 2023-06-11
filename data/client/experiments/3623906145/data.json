@@ -1,0 +1,19 @@
+{
+  "data": {
+    "kind": "user",
+    "id": "2021-03_expiration_notice_mobile_web",
+    "label": "Show expiration notice on mobile web invite",
+    "description": [
+      "Control",
+      "Treatment 1: Show expiration notice"
+    ],
+    "hash": 3623906145,
+    "buckets": [
+      0,
+      1
+    ],
+    "config_keys": [
+      "enabled"
+    ]
+  }
+}

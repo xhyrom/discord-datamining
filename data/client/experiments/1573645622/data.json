@@ -1,0 +1,19 @@
+{
+  "data": {
+    "kind": "user",
+    "id": "2021-06_guild_subscriptions_payment_flow_test_page",
+    "label": "Test page for guild subscription payment flows",
+    "description": [
+      "Control",
+      "Treatment 1: Test page for guild subscription payment flows"
+    ],
+    "hash": 1573645622,
+    "buckets": [
+      0,
+      1
+    ],
+    "config_keys": [
+      "enabled"
+    ]
+  }
+}

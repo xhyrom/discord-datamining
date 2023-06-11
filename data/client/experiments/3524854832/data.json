@@ -1,0 +1,22 @@
+{
+  "data": {
+    "kind": "user",
+    "id": "2023-03_channel_name_emojis",
+    "label": "Channel Emojis",
+    "description": [
+      "Control",
+      "Treatment 1: Enable channel name emojis",
+      "Treatment 2: Emojis to left of channel icon"
+    ],
+    "hash": 3524854832,
+    "buckets": [
+      0,
+      1,
+      2
+    ],
+    "config_keys": [
+      "enabled",
+      "left"
+    ]
+  }
+}
