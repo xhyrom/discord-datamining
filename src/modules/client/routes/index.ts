@@ -178,8 +178,6 @@ export class Routes implements Module {
       ]);
     }
 
-    console.log(addedRoutes[0]);
-
     const builtString = lBuildString(
       "routes",
       "codeblock",
@@ -187,8 +185,6 @@ export class Routes implements Module {
       updatedRoutes,
       removedRoutes
     );
-
-    console.log(builtString);
 
     return builtString ? builtString : "";
   }
