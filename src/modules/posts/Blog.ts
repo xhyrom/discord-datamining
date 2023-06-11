@@ -154,7 +154,7 @@ export class Blog implements Module {
     }
 
     const result = await pushToGit(
-      `📝 Blog posts were updated`,
+      `📰 Blog posts were updated`,
       `Posts (${formatNumber(posts.length)}):\n${posts
         .map((a) => `${a.title}`)
         .join("\n")}`

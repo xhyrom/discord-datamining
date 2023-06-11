@@ -144,7 +144,7 @@ export class Articles implements Module {
     }
 
     const result = await pushToGit(
-      `📚 ${this.displayType} Articles were updated`,
+      `📰 ${this.displayType} Articles were updated`,
       `Articles (${formatNumber(articles.length)}):\n${articles
         .map((a) => `${a.title}`)
         .join("\n")}`
