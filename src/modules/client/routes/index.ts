@@ -92,7 +92,7 @@ export class Routes implements Module {
       try {
         const allowedMethods =
           (
-            await fetch(url, {
+            await fetch(`https://discord.com/api/v10${url}`, {
               method: "OPTIONS",
             })
           ).headers
