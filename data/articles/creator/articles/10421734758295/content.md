@@ -1,5 +1,4 @@
 <h3>
-     gumimacko
     <strong>Note:</strong> Promo pages are currently only available for monetizing servers.  This  means in order to create a Promo Page you must have Server Subscription tiers enabled and published. For more information about <a href="https://support.discord.com/hc/en-us/articles/5371495812631" target="_blank" rel="noopener">Server Subscriptions</a>, please visit this link.
 </h3>
 <p><span class="wysiwyg-font-size-large"><strong>What this article covers:</strong></span></p>
