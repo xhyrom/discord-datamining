@@ -57,7 +57,6 @@ export const postToDiscord = async (
   },
   url?: string
 ) => {
-  console.log(url);
   for (const webhook of webhooks) {
     const [id, token] = webhook.split("/").slice(-2);
 
@@ -87,7 +86,7 @@ export const postToDiscord = async (
 
 export const getWebhookFromEnv = (name: string): string[] => {
   const webhook =
-    process.env[process.env.IS_DEV ? "DISCORD_WEBHOOK_IS_DEV" : name];
+    process.env[process.env.IS_DEV ? "DISCORD_WEBHOOK_DEV" : name];
   if (!webhook) throw new Error(`Missing webhook: ${name}`);
 
   try {
