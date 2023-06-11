@@ -103,14 +103,17 @@ export class Domains implements Module {
     oldDomains: T,
     newDomains: T
   ) {
+    if (!oldDomains.subdomains) oldDomains.subdomains = [];
+    if (!newDomains.subdomains) newDomains.subdomains = [];
+
     const removedDomains: string[] = [];
     const addedDomains: string[] = [];
 
-    for (const domain of oldDomains.subdomains ?? []) {
+    for (const domain of oldDomains.subdomains) {
       if (!newDomains.subdomains.includes(domain)) removedDomains.push(domain);
     }
 
-    for (const domain of newDomains.subdomains ?? []) {
+    for (const domain of newDomains.subdomains) {
       if (!oldDomains.subdomains.includes(domain)) addedDomains.push(domain);
     }
 
