@@ -6,7 +6,6 @@ on:
 
 jobs:
   mine:
-    name: Mine
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
@@ -18,174 +17,30 @@ jobs:
       - uses: pnpm/action-setup@v2
         with:
           version: 6.0.2
-      - name: "Run script"
-        run: |
-          git config --global url.https://${{ secrets.ACCESS_TOKEN }}@github.com/.insteadOf https://github.com/
-          git config user.name "xHyroM"
-          git config user.email "github@xhyrom.dev"
-          git config --global pull.ff only
-          pnpm install
-          pnpm run start --filter=scripts -- discord
-        env:
-          GITHUB_TOKEN: ${{ secrets.ACCESS_TOKEN }}
-          ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}
-          DISCORD_TOKEN: ${{ secrets.DISCORD_TOKEN }}
-  mine-discord-experiments:
-    name: Mine Discord Experiments
 
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v3
-        with:
-          persist-credentials: false
-      - uses: actions/setup-node@v3
-        with:
-          node-version: 19
-      - uses: pnpm/action-setup@v2
-        with:
-          version: 6.0.2
-      - name: "Run script"
+      - name: Setup git
         run: |
           git config --global url.https://${{ secrets.ACCESS_TOKEN }}@github.com/.insteadOf https://github.com/
           git config user.name "xHyroM"
           git config user.email "github@xhyrom.dev"
-          git config --global pull.ff only
-          pnpm install
-          pnpm run start --filter=scripts -- discord-experiments
         env:
           GITHUB_TOKEN: ${{ secrets.ACCESS_TOKEN }}
           ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}
+
+      - name: Install dependencies
+        run: pnpm i
+
+      - name: Run
+        run: pnpm run start
+        env:
+          DISCORD_WEBHOOK_BUILDS: ${{ secrets.DISCORD_WEBHOOK_BUILDS }}
+          DISCORD_WEBHOOK_ROUTES: ${{ secrets.DISCORD_WEBHOOK_ROUTES }}
+          DISCORD_WEBHOOK_STRINGS: ${{ secrets.DISCORD_WEBHOOK_STRINGS }}
+          DISCORD_WEBHOOK_STYLESHEETS: ${{ secrets.DISCORD_WEBHOOK_STYLESHEET }} # todo: change to STYLESHEETS
           DISCORD_WEBHOOK_EXPERIMENTS: ${{ secrets.DISCORD_WEBHOOK_EXPERIMENTS }}
-          DISCORD_TOKEN: ${{ secrets.DISCORD_TOKEN }}
-  mine-discord-blog-posts:
-    name: Mine Discord Blog Posts
-
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v3
-        with:
-          persist-credentials: false
-      - uses: actions/setup-node@v3
-        with:
-          node-version: 19
-      - uses: pnpm/action-setup@v2
-        with:
-          version: 6.0.2
-      - name: "Run script"
-        run: |
-          git config --global url.https://${{ secrets.ACCESS_TOKEN }}@github.com/.insteadOf https://github.com/
-          git config user.name "xHyroM"
-          git config user.email "github@xhyrom.dev"
-          git config --global pull.ff only
-          pnpm install
-          pnpm run start --filter=scripts -- discord-blog-posts
-        env:
-          GITHUB_TOKEN: ${{ secrets.ACCESS_TOKEN }}
-          ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}
-  mine-discord-support-articles:
-    name: Mine Discord Support Articles
-
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v3
-        with:
-          persist-credentials: false
-      - uses: actions/setup-node@v3
-        with:
-          node-version: 19
-      - uses: pnpm/action-setup@v2
-        with:
-          version: 6.0.2
-      - name: "Run script"
-        run: |
-          git config --global url.https://${{ secrets.ACCESS_TOKEN }}@github.com/.insteadOf https://github.com/
-          git config user.name "xHyroM"
-          git config user.email "github@xhyrom.dev"
-          git config --global pull.ff only
-          pnpm install
-          pnpm run start --filter=scripts -- discord-support-articles
-        env:
-          GITHUB_TOKEN: ${{ secrets.ACCESS_TOKEN }}
-          ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}
-          DISCORD_WEBHOOK_SUPPORT_ARTICLES: ${{ secrets.DISCORD_WEBHOOK_SUPPORT_ARTICLES }}
-          DISCORD_TOKEN: ${{ secrets.DISCORD_TOKEN }}
-  mine-discord-support-dev-articles:
-    name: Mine Discord Support Dev Articles
-
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v3
-        with:
-          persist-credentials: false
-      - uses: actions/setup-node@v3
-        with:
-          node-version: 19
-      - uses: pnpm/action-setup@v2
-        with:
-          version: 6.0.2
-      - name: "Run script"
-        run: |
-          git config --global url.https://${{ secrets.ACCESS_TOKEN }}@github.com/.insteadOf https://github.com/
-          git config user.name "xHyroM"
-          git config user.email "github@xhyrom.dev"
-          git config --global pull.ff only
-          pnpm install
-          pnpm run start --filter=scripts -- discord-support-dev-articles
-        env:
-          GITHUB_TOKEN: ${{ secrets.ACCESS_TOKEN }}
-          ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}
-          DISCORD_WEBHOOK_SUPPORT_DEV_ARTICLES: ${{ secrets.DISCORD_WEBHOOK_SUPPORT_DEV_ARTICLES }}
-          DISCORD_TOKEN: ${{ secrets.DISCORD_TOKEN }}
-  mine-discord-creator-support-articles:
-    name: Mine Discord Creator Support Articles
-
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v3
-        with:
-          persist-credentials: false
-      - uses: actions/setup-node@v3
-        with:
-          node-version: 19
-      - uses: pnpm/action-setup@v2
-        with:
-          version: 6.0.2
-      - name: "Run script"
-        run: |
-          git config --global url.https://${{ secrets.ACCESS_TOKEN }}@github.com/.insteadOf https://github.com/
-          git config user.name "xHyroM"
-          git config user.email "github@xhyrom.dev"
-          git config --global pull.ff only
-          pnpm install
-          pnpm run start --filter=scripts -- discord-creator-support-articles
-        env:
-          GITHUB_TOKEN: ${{ secrets.ACCESS_TOKEN }}
-          ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}
-          DISCORD_WEBHOOK_CREATOR_SUPPORT_ARTICLES: ${{ secrets.DISCORD_WEBHOOK_CREATOR_SUPPORT_ARTICLES }}
-          DISCORD_TOKEN: ${{ secrets.DISCORD_TOKEN }}
-  mine-discord-routes:
-    name: Mine Discord Routes
-
-    runs-on: ubuntu-latest
-    needs: mine
-    steps:
-      - uses: actions/checkout@v3
-        with:
-          persist-credentials: false
-      - uses: actions/setup-node@v3
-        with:
-          node-version: 19
-      - uses: pnpm/action-setup@v2
-        with:
-          version: 6.0.2
-      - name: "Run script"
-        run: |
-          git config --global url.https://${{ secrets.ACCESS_TOKEN }}@github.com/.insteadOf https://github.com/
-          git config user.name "xHyroM"
-          git config user.email "github@xhyrom.dev"
-          git config --global pull.ff only
-          pnpm install
-          pnpm run start --filter=scripts -- discord-routes
-        env:
-          GITHUB_TOKEN: ${{ secrets.ACCESS_TOKEN }}
-          ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}
+          DISCORD_WEBHOOK_POSTS: ${{ secrets.DISCORD_WEBHOOK_POSTS }}
+          DISCORD_WEBHOOK_MISCELLANEOUS: ${{ secrets.DISCORD_WEBHOOK_MISCELLANEOUS }}
+          SCRAPE_DOMAINS: false
+          SCRAPE_GITHUB: false
+          SCRAPE_POSTS: true
+          SCRAPE_CLIENT: true

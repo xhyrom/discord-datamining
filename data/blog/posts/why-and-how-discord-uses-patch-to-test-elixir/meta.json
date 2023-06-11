@@ -1,0 +1,10 @@
+{
+  "id": "why-and-how-discord-uses-patch-to-test-elixir",
+  "title": "Why and How Discord Uses Patch to Test Elixir",
+  "link": "https://discord.com/blog/why-and-how-discord-uses-patch-to-test-elixir",
+  "guid": "https://discord.com/blog/why-and-how-discord-uses-patch-to-test-elixir",
+  "description": "In the latest Engineering blog, Senior Software Engineer Matt Nowack at Discord explains how his team utilizes Patch to test Elixir code.",
+  "pubDate": "Fri, 03 Dec 2021 00:00:00 GMT",
+  "media:content": "https://uploads-ssl.webflow.com/5f9072399b2640f14d6a2bf4/61aa7642a72a1b627d695f49_Discord-Elixir-Blog-Header.png",
+  "media:thumbnail": "https://uploads-ssl.webflow.com/5f9072399b2640f14d6a2bf4/61aa7642a72a1b627d695f49_Discord-Elixir-Blog-Header.png"
+}

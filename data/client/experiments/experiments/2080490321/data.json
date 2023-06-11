@@ -1,0 +1,45 @@
+{
+  "data": {
+    "kind": "guild",
+    "hash": 2080490321
+  },
+  "rollout": {
+    "populations": [
+      {
+        "buckets": {
+          "1": {
+            "rollout": [
+              {
+                "start": 300,
+                "end": 600
+              }
+            ]
+          },
+          "none": {
+            "rollout": [
+              {
+                "start": 600,
+                "end": 10000
+              }
+            ]
+          }
+        },
+        "filters": [
+          {
+            "type": "guild_has_feature",
+            "features": [
+              "ROLE_SUBSCRIPTIONS_ENABLED"
+            ]
+          }
+        ]
+      }
+    ],
+    "revision": 0,
+    "overrides": {
+      "0": [
+        "1098695569129611454"
+      ]
+    },
+    "overrides_formatted": []
+  }
+}

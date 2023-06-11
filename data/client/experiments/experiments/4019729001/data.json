@@ -1,0 +1,37 @@
+{
+  "data": {
+    "kind": "guild",
+    "hash": 4019729001
+  },
+  "rollout": {
+    "populations": [
+      {
+        "buckets": {
+          "none": {
+            "rollout": [
+              {
+                "start": 0,
+                "end": 10000
+              }
+            ]
+          }
+        },
+        "filters": [
+          {
+            "type": "guild_has_feature",
+            "features": [
+              "DISCOVERABLE"
+            ]
+          }
+        ]
+      }
+    ],
+    "revision": 0,
+    "overrides": {
+      "1": [
+        "953754308971733103"
+      ]
+    },
+    "overrides_formatted": []
+  }
+}

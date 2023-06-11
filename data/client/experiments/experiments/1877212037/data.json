@@ -1,0 +1,19 @@
+{
+  "data": {
+    "kind": "user",
+    "id": "2022-01_discovery_iar",
+    "label": "Ability to report servers in Server Discovery",
+    "description": [
+      "Control",
+      "Treatment 1: Show IAR buttons in Server Discovery"
+    ],
+    "hash": 1877212037,
+    "buckets": [
+      0,
+      1
+    ],
+    "config_keys": [
+      "canSeeInAppReportingButtons"
+    ]
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "data": {
+    "kind": "user",
+    "id": "2023-05_go_live_quest_fortnite",
+    "label": "Fortnite: Go Live Quest",
+    "description": [
+      "Control",
+      "Treatment 1: 15 min stream req + auto enrollment",
+      "Treatment 99: 2 minute stream req + auto enrollment"
+    ],
+    "hash": 2709361021,
+    "buckets": [
+      0,
+      1,
+      99
+    ],
+    "config_keys": [
+      "dropsEnabled",
+      "streamLengthRequirement",
+      "viewerCountRequirement",
+      "autoEnrollment",
+      "showUnenroll"
+    ]
+  }
+}

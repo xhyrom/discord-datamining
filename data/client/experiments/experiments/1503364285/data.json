@@ -1,0 +1,19 @@
+{
+  "data": {
+    "kind": "user",
+    "id": "2022-09_remote_audio_settings",
+    "label": "Remote Audio Settings",
+    "description": [
+      "Control",
+      "Treatment 1: Read/write remote audio settings"
+    ],
+    "hash": 1503364285,
+    "buckets": [
+      0,
+      1
+    ],
+    "config_keys": [
+      "enabled"
+    ]
+  }
+}

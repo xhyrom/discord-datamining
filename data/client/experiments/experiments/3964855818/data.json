@@ -1,0 +1,45 @@
+{
+  "data": {
+    "kind": "guild",
+    "hash": 3964855818
+  },
+  "rollout": {
+    "populations": [
+      {
+        "buckets": {
+          "1": {
+            "rollout": [
+              {
+                "start": 2000,
+                "end": 4000
+              }
+            ]
+          },
+          "none": {
+            "rollout": [
+              {
+                "start": 4000,
+                "end": 10000
+              }
+            ]
+          }
+        },
+        "filters": [
+          {
+            "type": "guild_has_feature",
+            "features": [
+              "COMMUNITY"
+            ]
+          }
+        ]
+      }
+    ],
+    "revision": 1,
+    "overrides": {
+      "1": [
+        "651595875897835540"
+      ]
+    },
+    "overrides_formatted": []
+  }
+}
