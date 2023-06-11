@@ -89,6 +89,15 @@ export class Routes implements Module {
 
     let i = 0;
     for (const [name, url] of Object.entries(json)) {
+      if (process.env.IS_DEV) {
+        result[name] = {
+          url,
+          allowed_methods: ["is_dev", "is_devv"],
+        };
+
+        continue;
+      }
+
       try {
         const allowedMethods =
           (
@@ -122,32 +131,54 @@ export class Routes implements Module {
     routesOld: Record<string, Route>,
     routesCurrent: Record<string, Route>
   ) {
-    const addedRoutes: Record<string, string> = {};
-    const updatedRoutes: Record<string, string> = {};
-    const removedRoutes: Record<string, string> = {};
+    const addedRoutes = [];
+    const updatedRoutes = [];
+    const removedRoutes = [];
 
     for (const [name, route] of Object.entries(routesCurrent)) {
       if (!routesOld[name]) {
-        addedRoutes[name] = `${route.url}${
-          route.allowed_methods ? ` (${route.allowed_methods.join(", ")})` : ""
-        }`;
+        addedRoutes.push([
+          name,
+          `${route.url}${
+            route.allowed_methods
+              ? ` (${route.allowed_methods.join(", ")})`
+              : ""
+          }`,
+        ]);
         continue;
       }
 
-      if (!deepEqual(routesOld[name], route)) {
-        updatedRoutes[name] = `${route.url}${
-          route.allowed_methods ? ` (${route.allowed_methods.join(", ")})` : ""
-        }`;
+      if (routesOld[name] && !deepEqual(routesOld[name], route)) {
+        const oldRoute = routesOld[name]!;
+
+        updatedRoutes.push([
+          name,
+          `${oldRoute.url}${
+            oldRoute.allowed_methods
+              ? ` (${oldRoute.allowed_methods.join(", ")})`
+              : ""
+          }`,
+          `${route.url}${
+            route.allowed_methods
+              ? ` (${route.allowed_methods.join(", ")})`
+              : ""
+          }`,
+        ]);
       }
 
       delete routesOld[name];
     }
 
     for (const [name, route] of Object.entries(routesOld)) {
-      removedRoutes[name] = `${route.url}${
-        route.allowed_methods ? ` (${route.allowed_methods.join(", ")})` : ""
-      }`;
+      removedRoutes.push([
+        name,
+        `${route.url}${
+          route.allowed_methods ? ` (${route.allowed_methods.join(", ")})` : ""
+        }`,
+      ]);
     }
+
+    console.log(addedRoutes[0]);
 
     const builtString = lBuildString(
       "routes",
@@ -156,6 +187,8 @@ export class Routes implements Module {
       updatedRoutes,
       removedRoutes
     );
+
+    console.log(builtString);
 
     return builtString ? builtString : "";
   }
