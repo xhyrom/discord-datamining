@@ -1,9 +1,9 @@
 import { join } from "node:path";
 import {
-  diff as lDiff,
   buildString as lBuildString,
   // @ts-expect-error - No types
 } from "@xhyrom-forks/discord-datamining-lang-differ";
+import deepEqual from "fast-deep-equal";
 import type { Module } from "../../index.ts";
 import { Client } from "../index.ts";
 import {
@@ -16,6 +16,11 @@ import {
   postToGithub,
 } from "../../../utils.ts";
 
+interface Route {
+  url: string;
+  allowed_methods: string[] | null;
+}
+
 export class Routes implements Module {
   get baseDir() {
     return join(Client.baseDir);
@@ -24,34 +29,40 @@ export class Routes implements Module {
   async run() {
     console.log("Scraping routes");
 
-    const routes = await fetch("https://api.distools.xhyrom.dev/v2/routes");
-    if (!routes.ok) {
+    const routes = await this.routes();
+    if (!routes) {
       console.log("Potentional outage, failed to fetch routes");
       return;
     }
 
-    const json = await routes.json();
     const oldRoutes = JSON.parse(
       (await readFile(join(this.baseDir, "routes.json"))) ?? "{}"
     );
 
     await writeFile(
       join(this.baseDir, "routes.json"),
-      JSON.stringify(json, null, 2)
+      JSON.stringify(routes, null, 2)
     );
 
     const result = await pushToGit(
       `🗺️ Routes were updated`,
-      `Routes (${formatNumber(Object.keys(json).length)}):\n${Object.entries(
-        json
+      `Routes (${formatNumber(Object.keys(routes).length)}):\n${Object.entries(
+        routes
       )
-        .map(([key, value]) => `${key}: ${value}`)
+        .map(
+          ([key, value]) =>
+            `${key}: ${value.url}${
+              value.allowed_methods
+                ? ` (${value.allowed_methods.join(", ")})`
+                : ""
+            }`
+        )
         .join("\n")}`
     );
 
     if (!result?.update?.hash) return;
 
-    const diff = this.diff(oldRoutes, json);
+    const diff = this.diff(oldRoutes, routes);
     if (!diff) return;
 
     const comment = await postToGithub(result?.update?.hash.to, diff);
@@ -67,21 +78,83 @@ export class Routes implements Module {
     );
   }
 
+  private async routes(): Promise<Record<string, Route> | null> {
+    const routes = await fetch("https://api.distools.xhyrom.dev/v2/routes");
+    if (!routes.ok) {
+      return null;
+    }
+
+    const json: Record<string, string> = await routes.json();
+    const result: Record<string, Route> = {};
+
+    let i = 0;
+    for (const [name, url] of Object.entries(json)) {
+      try {
+        const allowedMethods =
+          (
+            await fetch(url, {
+              method: "OPTIONS",
+            })
+          ).headers
+            .get("allow")
+            ?.split(", ") ?? [];
+
+        result[name] = {
+          url,
+          allowed_methods: allowedMethods.length > 0 ? allowedMethods : null,
+        };
+      } catch {
+        result[name] = {
+          url,
+          allowed_methods: null,
+        };
+      }
+
+      i++;
+
+      console.log(`Scraped ${i}/${Object.keys(json).length} routes`);
+    }
+
+    return result;
+  }
+
   private diff(
-    routesOld: Record<string, string>,
-    routesCurrent: Record<string, string>
+    routesOld: Record<string, Route>,
+    routesCurrent: Record<string, Route>
   ) {
-    const { addedStrings, updatedStrings, removedStrings } = lDiff([
-      routesOld,
-      routesCurrent,
-    ]);
+    const addedRoutes: Record<string, string> = {};
+    const updatedRoutes: Record<string, string> = {};
+    const removedRoutes: Record<string, string> = {};
+
+    for (const [name, route] of Object.entries(routesCurrent)) {
+      if (!routesOld[name]) {
+        addedRoutes[name] = `${route.url}${
+          route.allowed_methods ? ` (${route.allowed_methods.join(", ")})` : ""
+        }`;
+        continue;
+      }
+
+      if (!deepEqual(routesOld[name], route)) {
+        updatedRoutes[name] = `${route.url}${
+          route.allowed_methods ? ` (${route.allowed_methods.join(", ")})` : ""
+        }`;
+      }
+
+      delete routesOld[name];
+    }
+
+    for (const [name, route] of Object.entries(routesOld)) {
+      removedRoutes[name] = `${route.url}${
+        route.allowed_methods ? ` (${route.allowed_methods.join(", ")})` : ""
+      }`;
+    }
 
     const builtString = lBuildString(
       "routes",
       "codeblock",
-      addedStrings,
-      updatedStrings,
-      removedStrings
+      addedRoutes,
+      updatedRoutes,
+      removedRoutes
     );
 
     return builtString ? builtString : "";

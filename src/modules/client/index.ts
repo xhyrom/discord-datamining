@@ -16,7 +16,6 @@ export class Client implements Module {
   }
 
   async run() {
-    await new Routes().run();
     await new Experiments().run();
 
     await new Channel(ChannelType.Stable).run();
@@ -24,5 +23,10 @@ export class Client implements Module {
     await new Channel(ChannelType.Canary).run();
 
     await new Strings().run();
+  }
+
+  // This is a hack to run the routes last
+  async runLast() {
+    await new Routes().run();
   }
 }
