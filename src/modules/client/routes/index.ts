@@ -89,15 +89,6 @@ export class Routes implements Module {
 
     let i = 0;
     for (const [name, url] of Object.entries(json)) {
-      if (process.env.IS_DEV) {
-        result[name] = {
-          url,
-          allowed_methods: ["is_dev", "is_devv"],
-        };
-
-        continue;
-      }
-
       try {
         const allowedMethods =
           (
@@ -106,7 +97,8 @@ export class Routes implements Module {
             })
           ).headers
             .get("allow")
-            ?.split(", ") ?? [];
+            ?.split(", ")
+            ?.sort() ?? [];
 
         result[name] = {
           url,
