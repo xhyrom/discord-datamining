@@ -105,8 +105,6 @@ export class Articles implements Module {
       return;
     }
 
-    await rm(this.baseDir);
-
     await writeFile(
       join(this.baseDir, "sections.json"),
       JSON.stringify(
@@ -130,6 +128,8 @@ export class Articles implements Module {
         2
       )
     );
+
+    await rm(join(this.baseDir, "articles"));
 
     for (const article of articles) {
       await writeFile(
@@ -161,8 +161,6 @@ export class Articles implements Module {
       oldArticles,
       articles
     );
-
-    console.log(diff);
 
     const embeds: APIEmbed[] = [];
 
@@ -243,8 +241,6 @@ export class Articles implements Module {
       base: before,
       head: after,
     });
-
-    console.log(diff, diff.data.files);
 
     const removedArticles = [];
     const updatedArticles = [];
