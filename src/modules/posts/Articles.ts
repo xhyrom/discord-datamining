@@ -144,7 +144,7 @@ export class Articles implements Module {
     }
 
     const result = await pushToGit(
-      `🗺️ ${this.displayType} Articles were updated`,
+      `📚 ${this.displayType} Articles were updated`,
       `Articles (${formatNumber(articles.length)}):\n${articles
         .map((a) => `${a.title}`)
         .join("\n")}`
@@ -193,7 +193,7 @@ export class Articles implements Module {
 
     for (const embeds of embedsPerTen) {
       await postToDiscord(
-        getWebhookFromEnv("DISCORD_WEBHOOK_ARTICLES"),
+        getWebhookFromEnv("DISCORD_WEBHOOK_POSTS"),
         result?.update?.hash.to,
         {
           content: "<@&1117371394435600387>",

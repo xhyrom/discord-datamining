@@ -154,7 +154,7 @@ export class Blog implements Module {
     }
 
     const result = await pushToGit(
-      `🗺️ Blog posts were updated`,
+      `📝 Blog posts were updated`,
       `Posts (${formatNumber(posts.length)}):\n${posts
         .map((a) => `${a.title}`)
         .join("\n")}`
@@ -165,7 +165,7 @@ export class Blog implements Module {
     const diff = await Posts.diff(
       result.update.hash.from,
       result.update.hash.to,
-      `blog/posts`,
+      "blog/posts",
       oldPosts,
       posts
     );
@@ -277,11 +277,11 @@ export class Blog implements Module {
     return new EmbedBuilder().setTitle(`${action} Post`).addFields(
       {
         name: "Title",
-        value: post.title ?? "No title",
+        value: post.title ?? "Unknown",
       },
       {
         name: "Description",
-        value: post.description ?? "No description",
+        value: maximumStringLen(post.description, 1024) ?? "Unknown",
       },
       {
         name: "Published At",
@@ -289,7 +289,7 @@ export class Blog implements Module {
       },
       {
         name: "Link",
-        value: post.link ?? "No link",
+        value: post.link ?? "Unknown",
       }
     );
   }

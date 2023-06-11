@@ -79,6 +79,9 @@ export const postToDiscord = async (
             .toJSON(),
         ],
         ...body,
+        allowed_mentions: {
+          parse: ["roles"],
+        },
       },
     });
   }
