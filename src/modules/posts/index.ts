@@ -1,8 +1,8 @@
 import { join } from "node:path";
 import type { Module } from "..";
-import { DATA_DIR, octokit } from "../../utils";
-import { Blog } from "./Blog";
-import { ArticleType, Articles } from "./Articles";
+import { DATA_DIR, octokit } from "../../utils.ts";
+import { Blog } from "./Blog.ts";
+import { ArticleType, Articles } from "./Articles.ts";
 import deepEqual from "fast-deep-equal";
 
 export class Posts implements Module {

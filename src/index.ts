@@ -5,6 +5,8 @@ import { Domains } from "./modules/Domains.ts";
 import { Client } from "./modules/client/index.ts";
 import { Posts } from "./modules/posts/index.ts";
 
+await new Posts().run();
+
 // Scrape client data - scripts, styles, assets,
 await new Client().run();
 
@@ -13,7 +15,5 @@ if (process.env.SCRAPE_DOMAINS === "true")
 
 // Scrape all github data - organisation and repositories
 if (process.env.SCRAPE_GITHUB === "true") await new Github().run();
-
-await new Posts().run();
 
 export {};

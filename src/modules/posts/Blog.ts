@@ -277,11 +277,11 @@ export class Blog implements Module {
     return new EmbedBuilder().setTitle(`${action} Post`).addFields(
       {
         name: "Title",
-        value: post.title,
+        value: post.title ?? "No title",
       },
       {
         name: "Description",
-        value: post.description,
+        value: post.description ?? "No description",
       },
       {
         name: "Published At",
@@ -289,7 +289,7 @@ export class Blog implements Module {
       },
       {
         name: "Link",
-        value: post.link,
+        value: post.link ?? "No link",
       }
     );
   }
