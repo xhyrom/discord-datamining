@@ -28,17 +28,8 @@
   "fork": false,
   "url": "https://api.github.com/repos/discord/discord-api-docs",
   "created_at": "2016-03-29T17:11:53Z",
-<<<<<<< HEAD:data/github/repositories/54995014/meta.json
   "homepage": "https://discord.com/developers/docs/intro",
   "size": 59802,
-=======
-  "updated_at": "2023-06-09T21:39:19Z",
-  "pushed_at": "2023-06-07T18:31:18Z",
-  "homepage": "https://discord.com/developers/docs/intro",
-  "size": 59802,
-  "stargazers_count": 5451,
-  "watchers_count": 5451,
->>>>>>> 5e760557fcff2e7b12bad71eaa3e8b41b3819b02:data/github-repos/discord-api-docs/info.json
   "language": "Markdown",
   "has_issues": true,
   "has_projects": false,
@@ -46,15 +37,8 @@
   "has_wiki": false,
   "has_pages": false,
   "has_discussions": true,
-<<<<<<< HEAD:data/github/repositories/54995014/meta.json
   "archived": false,
   "disabled": false,
-=======
-  "forks_count": 1269,
-  "archived": false,
-  "disabled": false,
-  "open_issues_count": 183,
->>>>>>> 5e760557fcff2e7b12bad71eaa3e8b41b3819b02:data/github-repos/discord-api-docs/info.json
   "license": {
     "key": "other",
     "name": "Other",
@@ -72,12 +56,6 @@
     "memescale"
   ],
   "visibility": "public",
-<<<<<<< HEAD:data/github/repositories/54995014/meta.json
-=======
-  "forks": 1269,
-  "open_issues": 183,
-  "watchers": 5451,
->>>>>>> 5e760557fcff2e7b12bad71eaa3e8b41b3819b02:data/github-repos/discord-api-docs/info.json
   "default_branch": "main",
   "permissions": {
     "admin": false,

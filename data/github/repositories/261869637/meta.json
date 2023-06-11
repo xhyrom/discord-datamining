@@ -28,17 +28,8 @@
   "fork": false,
   "url": "https://api.github.com/repos/discord/OverlappingPanels",
   "created_at": "2020-05-06T20:19:55Z",
-<<<<<<< HEAD:data/github/repositories/261869637/meta.json
   "homepage": "",
   "size": 13134,
-=======
-  "updated_at": "2023-06-09T13:21:00Z",
-  "pushed_at": "2023-05-12T21:25:30Z",
-  "homepage": "",
-  "size": 13134,
-  "stargazers_count": 406,
-  "watchers_count": 406,
->>>>>>> 5e760557fcff2e7b12bad71eaa3e8b41b3819b02:data/github-repos/OverlappingPanels/info.json
   "language": "Kotlin",
   "has_issues": true,
   "has_projects": true,
@@ -60,12 +51,6 @@
   "web_commit_signoff_required": false,
   "topics": [],
   "visibility": "public",
-<<<<<<< HEAD:data/github/repositories/261869637/meta.json
-=======
-  "forks": 27,
-  "open_issues": 9,
-  "watchers": 406,
->>>>>>> 5e760557fcff2e7b12bad71eaa3e8b41b3819b02:data/github-repos/OverlappingPanels/info.json
   "default_branch": "master",
   "permissions": {
     "admin": false,

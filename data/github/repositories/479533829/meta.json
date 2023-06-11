@@ -37,10 +37,6 @@
   "has_wiki": true,
   "has_pages": false,
   "has_discussions": false,
-<<<<<<< HEAD:data/github/repositories/479533829/meta.json
-=======
-  "forks_count": 269,
->>>>>>> 5e760557fcff2e7b12bad71eaa3e8b41b3819b02:data/github-repos/discord-example-app/info.json
   "archived": false,
   "disabled": false,
   "license": {
@@ -55,12 +51,6 @@
   "web_commit_signoff_required": false,
   "topics": [],
   "visibility": "public",
-<<<<<<< HEAD:data/github/repositories/479533829/meta.json
-=======
-  "forks": 269,
-  "open_issues": 5,
-  "watchers": 304,
->>>>>>> 5e760557fcff2e7b12bad71eaa3e8b41b3819b02:data/github-repos/discord-example-app/info.json
   "default_branch": "main",
   "permissions": {
     "admin": false,
