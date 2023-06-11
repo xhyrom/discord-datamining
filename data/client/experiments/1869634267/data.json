@@ -1,0 +1,19 @@
+{
+  "data": {
+    "kind": "user",
+    "id": "2023-02_parent_tools_launch",
+    "label": "Safety - Family Center Launch",
+    "description": [
+      "Control",
+      "Treatment 1: Enabled"
+    ],
+    "hash": 1869634267,
+    "buckets": [
+      0,
+      1
+    ],
+    "config_keys": [
+      "enabled"
+    ]
+  }
+}

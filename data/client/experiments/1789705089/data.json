@@ -1,0 +1,60 @@
+{
+  "data": {
+    "kind": "guild",
+    "hash": 1789705089
+  },
+  "rollout": {
+    "populations": [
+      {
+        "buckets": {
+          "none": {
+            "rollout": [
+              {
+                "start": 0,
+                "end": 10000
+              }
+            ]
+          }
+        },
+        "filters": [
+          {
+            "type": "guild_has_feature",
+            "features": [
+              "COMMUNITY"
+            ]
+          }
+        ]
+      },
+      {
+        "buckets": {
+          "1": {
+            "rollout": [
+              {
+                "start": 100,
+                "end": 200
+              }
+            ]
+          },
+          "none": {
+            "rollout": [
+              {
+                "start": 200,
+                "end": 10000
+              }
+            ]
+          }
+        },
+        "filters": [
+          {
+            "type": "guild_member_count_range",
+            "min_count": 1,
+            "max_count": 50
+          }
+        ]
+      }
+    ],
+    "revision": 0,
+    "overrides": {},
+    "overrides_formatted": []
+  }
+}

@@ -1,0 +1,53 @@
+{
+  "data": {
+    "kind": "guild",
+    "hash": 2507971540
+  },
+  "rollout": {
+    "populations": [
+      {
+        "buckets": {
+          "1": {
+            "rollout": [
+              {
+                "start": 0,
+                "end": 5000
+              },
+              {
+                "start": 5000,
+                "end": 9000
+              },
+              {
+                "start": 9000,
+                "end": 10000
+              }
+            ]
+          }
+        },
+        "filters": [
+          {
+            "type": "guild_in_range_by_hash",
+            "hash_key": 2507971540,
+            "target": 10000
+          }
+        ]
+      },
+      {
+        "buckets": {
+          "none": {
+            "rollout": [
+              {
+                "start": 0,
+                "end": 10000
+              }
+            ]
+          }
+        },
+        "filters": []
+      }
+    ],
+    "revision": 2,
+    "overrides": {},
+    "overrides_formatted": []
+  }
+}

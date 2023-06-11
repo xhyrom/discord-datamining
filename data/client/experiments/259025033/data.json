@@ -1,0 +1,19 @@
+{
+  "data": {
+    "kind": "user",
+    "id": "2021-03_nitro_emoji_autocomplete_upsell",
+    "label": "Emoji Autocomplete Upsell",
+    "description": [
+      "Control",
+      "Treatment 1: Show emoji autocomplete upsell"
+    ],
+    "hash": 259025033,
+    "buckets": [
+      0,
+      1
+    ],
+    "config_keys": [
+      "enabled"
+    ]
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "data": {
+    "kind": "user",
+    "id": "2021-09_ios_screenshare_resolution_profiles",
+    "label": "iOS: Screenshare resolution profiles",
+    "description": [
+      "Control",
+      "Treatment 1: Permanent old resolution",
+      "Treatment 2: Old resolution for 10s",
+      "Treatment 3: Wait 3s after 1st frame capture",
+      "Treatment 4: Wait 3s to capture 1st frame"
+    ],
+    "hash": 3656427814,
+    "buckets": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ],
+    "config_keys": [
+      "enabled"
+    ]
+  }
+}

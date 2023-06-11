@@ -1,0 +1,19 @@
+{
+  "data": {
+    "kind": "user",
+    "id": "2022-12_home_feedback_ux",
+    "label": "Show post feedback for home",
+    "description": [
+      "Control",
+      "Treatment 100: show feedback"
+    ],
+    "hash": 655899426,
+    "buckets": [
+      0,
+      100
+    ],
+    "config_keys": [
+      "showFeedback"
+    ]
+  }
+}

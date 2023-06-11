@@ -1,0 +1,20 @@
+{
+  "data": {
+    "kind": "user",
+    "id": "2020-01_in_app_reporting",
+    "label": "2020-29 Exp: Report TOS violating messages in-app via new modal",
+    "description": [
+      "An experiment that tests if in-app reporting is useful for Trust & Safety",
+      "Control: No changes",
+      "Treatment 1: Add menu options to report message"
+    ],
+    "hash": 4181417939,
+    "buckets": [
+      0,
+      1
+    ],
+    "config_keys": [
+      "enabled"
+    ]
+  }
+}

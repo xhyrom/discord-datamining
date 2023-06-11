@@ -1,0 +1,19 @@
+{
+  "data": {
+    "kind": "user",
+    "id": "2023-05_safety_user_sentiment",
+    "label": "Safety User Sentiment Feedback Eligible",
+    "description": [
+      "Control",
+      "Treatment 1: Eligible"
+    ],
+    "hash": 1344378364,
+    "buckets": [
+      0,
+      1
+    ],
+    "config_keys": [
+      "enabled"
+    ]
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "data": {
+    "kind": "user",
+    "id": "2023-01_activities_in_gdm",
+    "label": "Activities in GDM",
+    "description": [
+      "Control",
+      "Treatment 1: enable Activities in GDMs"
+    ],
+    "hash": 1834860859,
+    "buckets": [
+      0,
+      1
+    ],
+    "config_keys": [
+      "isActivitiesInGdmEnabled"
+    ]
+  }
+}

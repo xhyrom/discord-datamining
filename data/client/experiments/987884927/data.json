@@ -1,0 +1,79 @@
+{
+  "data": {
+    "kind": "guild",
+    "id": "2022-11_creator_monetization_onboarding_waitlist",
+    "label": "Creator Monetization Onboarding Waitlist",
+    "description": [
+      "Control",
+      "Treatment 1: Enables Guilds to (possibly) see the waitlist"
+    ],
+    "hash": 987884927,
+    "buckets": [
+      0,
+      1
+    ],
+    "config_keys": [
+      "enabled"
+    ]
+  },
+  "rollout": {
+    "populations": [
+      {
+        "buckets": {
+          "1": {
+            "rollout": [
+              {
+                "start": 0,
+                "end": 10000
+              }
+            ]
+          }
+        },
+        "filters": [
+          {
+            "type": "guild_in_range_by_hash",
+            "hash_key": 987884927,
+            "target": 10000
+          }
+        ]
+      },
+      {
+        "buckets": {
+          "none": {
+            "rollout": [
+              {
+                "start": 0,
+                "end": 10000
+              }
+            ]
+          }
+        },
+        "filters": []
+      }
+    ],
+    "revision": 0,
+    "overrides": {},
+    "overrides_formatted": [
+      {
+        "buckets": {
+          "1": {
+            "rollout": [
+              {
+                "start": 0,
+                "end": 10000
+              }
+            ]
+          }
+        },
+        "filters": [
+          {
+            "type": "guild_has_feature",
+            "features": [
+              "INTERNAL_EMPLOYEE_ONLY"
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "data": {
+    "kind": "user",
+    "id": "2022-10_context_menu_and_new_media_picker",
+    "label": "Context Menu and New Media Picker",
+    "description": [
+      "Control",
+      "Treatment 1: New media picker is enabled. Gift button is visible alongside Create Chread",
+      "Treatment 2: New media picker is enabled. Gift button is NOT visible alongside Create Chread"
+    ],
+    "hash": 478936943,
+    "buckets": [
+      0,
+      1,
+      2
+    ],
+    "config_keys": [
+      "enabled"
+    ]
+  }
+}

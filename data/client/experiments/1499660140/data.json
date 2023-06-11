@@ -1,0 +1,19 @@
+{
+  "data": {
+    "kind": "user",
+    "id": "2023-02_tabs_v2",
+    "label": "Tabs V2 - GDM Bucketing",
+    "description": [
+      "Control",
+      "Treatment 1: Enable Tabs V2"
+    ],
+    "hash": 1499660140,
+    "buckets": [
+      0,
+      1
+    ],
+    "config_keys": [
+      "enabled"
+    ]
+  }
+}
