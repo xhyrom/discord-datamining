@@ -13,9 +13,10 @@
         </ul>
     </li>
     <li><a href="#h_01H090BYTYV1KR4VC7FYPFSP7W" target="_self">Editing and Deleting Uploaded Custom Stickers</a></li>
+    <li><a href="#h_01H2RBGF6TNF547ZRF53YQ5VGT" target="_self">Frequently Asked Questions</a></li>
 </ul>
 <h1 id="h_01H08ZY4YFESD526QPFEHMQ31A">Server Boosts and Stickers</h1>
-<p>As a default, a ll servers have 5 custom stickers slots for free. Your server can upload more custom stickers once the server has reached Boosting Levels 1, 2, or 3! Depending on what Boost level your server has reached will determine how many custom stickers you can upload.</p>
+<p>As a default, all servers have 5 custom stickers slots for free. Your server can upload more custom stickers once the server has reached Boosting Levels 1, 2, or 3! Depending on what Boost level your server has reached will determine how many custom stickers you can upload.</p>
 <ul>
     <li>Default: 5 custom sticker slots</li>
     <li>Level 1: +10 custom sticker slots</li>
@@ -102,7 +103,7 @@
     </li>
 </ul>
 <h3><strong>Note: You cannot edit the sticker file once it has been uploaded. If you want to replace the sticker file, you’ll need to delete this sticker and upload a new file!</strong></h3>
-<h1><strong>Q&amp;A</strong></h1>
+<h1 id="h_01H2RBGF6TNF547ZRF53YQ5VGT"><strong>Frequently Asked Questions<br></strong></h1>
 <p><strong>Q: Who can use custom stickers that have been uploaded in my server?</strong></p>
 <p>A: Anyone who has joined your server can use custom stickers within your server. Users who have a Nitro subscription will be able to use the custom stickers anywhere on Discord (other servers, direct messages, etc). </p>
 <p><strong>Q: How can I prevent people from sending stickers in my server?</strong></p>
