@@ -1,0 +1,19 @@
+{
+  "data": {
+    "kind": "guild",
+    "id": "2023-06_remove_reactions_by_type",
+    "label": "Remove Reactions by Type",
+    "description": [
+      "Control",
+      "Treatment 1: Enabled"
+    ],
+    "hash": 4195647747,
+    "buckets": [
+      0,
+      1
+    ],
+    "config_keys": [
+      "enabled"
+    ]
+  }
+}
