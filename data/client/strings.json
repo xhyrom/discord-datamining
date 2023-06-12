@@ -2093,7 +2093,7 @@
   "INTEGRATIONS_APPLICATION_VERIFIED_BOT": "\"Verified Bot\"",
   "INTEGRATIONS_APPLICATION_BOT_NAME": "\"!!{user}!!\"",
   "INTEGRATIONS_APPLICATION_NO_BOT": "\"This application does not have a bot in this server.\"",
-  "INTEGRATIONS_APPLICATION_REMOVE": "\"Remove Integration\"",
+  "INTEGRATIONS_APPLICATION_REMOVE": "\"Remove App\"",
   "INTEGRATIONS_APPLICATION_REMOVE_SUMMARY": "\"Removing this integration will remove any bots and webhooks on this page from your server. This action cannot be undone.\"",
   "INTEGRATIONS_APPLICATION_REMOVE_NO_PERMISSIONS": "\"You do not have permissions to remove this integration.\"",
   "INTEGRATIONS_APPLICATION_REMOVE_TITLE": "\"Remove !!{applicationName}!!\"",
