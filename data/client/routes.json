@@ -819,6 +819,14 @@
       "OPTIONS"
     ]
   },
+  "COLLECTIBLE_STORE_LISTING": {
+    "url": "/collectibles/:param",
+    "allowed_methods": [
+      "GET",
+      "HEAD",
+      "OPTIONS"
+    ]
+  },
   "COLLECTIBLES": {
     "url": "/collectibles",
     "allowed_methods": [
