@@ -84234,11 +84234,21 @@ strong {
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
     border-bottom: 1px solid var(--background-modifier-accent);
-    padding: 11px 10px
+    padding: 10px;
+    cursor: pointer
 }
 
 .rowItem-8WksG1.last-1-_K8m {
     border-bottom: none
+}
+
+.rowItem-8WksG1.active-29lXRo,
+.rowItem-8WksG1:hover {
+    background: var(--background-modifier-hover);
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    border-radius: 8px;
+    border-color: transparent
 }
 
 .container-3Ok1v9 {
@@ -159160,4 +159170,4 @@ html .invoiceCancelRow-dVOR64 {
     flex-direction: column
 }
 
-/*# sourceMappingURL=40532.d39a274934d3691539c8.css.map*/
+/*# sourceMappingURL=40532.d558fc2bb5d902cfd9d4.css.map*/
