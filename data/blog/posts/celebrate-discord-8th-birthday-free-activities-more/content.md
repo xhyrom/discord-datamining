@@ -38,7 +38,8 @@
             </figure>
             <ul role="list">
                 <li><strong>[NEW ACTIVITY UPDATE] Putt Party Paradise -&nbsp; </strong>More levels and new power-ups make it the perfect time to start putting (and partying). Click the in-app rocketship (🚀) button and get playin’!</li>
-                <li><strong>[NEW ACTIVITY] Jamspace: </strong>A collaborative digital whiteboard anyone in the call can contribute to. Map out your next MMO raid mid-call or just doodle together!<br>‍<br></li>
+                <li><strong>[NEW ACTIVITY] Jamspace - </strong>A collaborative digital whiteboard anyone in the call can contribute to. Map out your next MMO raid mid-call or just doodle together!</li>
+                <li><strong>[NEW&nbsp;ACTIVITY&nbsp;UPDATE] Poker Night Update </strong>- Poker Night goes all in with new stickers, emotes, cardbacks and plenty more. <br></li>
             </ul>
         </div>
     </div>
