@@ -4596,44 +4596,6 @@
   },
   {
     "data": {
-      "kind": "user",
-      "id": "2022-08_back_to_school",
-      "label": "Back to School Event",
-      "description": [
-        "Control",
-        "Treatment 1: Back to School experience enabled"
-      ],
-      "hash": 2676348506,
-      "buckets": [
-        0,
-        1
-      ],
-      "config_keys": [
-        "enabled"
-      ]
-    }
-  },
-  {
-    "data": {
-      "kind": "user",
-      "id": "2023-04_soundboard_nitro",
-      "label": "Soundboard Nitro",
-      "description": [
-        "Control",
-        "Treatment 1: Include Soundboard as a Nitro feature"
-      ],
-      "hash": 325693975,
-      "buckets": [
-        0,
-        1
-      ],
-      "config_keys": [
-        "isPremiumFeature"
-      ]
-    }
-  },
-  {
-    "data": {
       "kind": "guild",
       "id": "2023-04_fast_new_channels",
       "label": "Fast New Channels",
@@ -4733,6 +4695,44 @@
       ],
       "config_keys": [
         "enabled"
+      ]
+    }
+  },
+  {
+    "data": {
+      "kind": "user",
+      "id": "2022-08_back_to_school",
+      "label": "Back to School Event",
+      "description": [
+        "Control",
+        "Treatment 1: Back to School experience enabled"
+      ],
+      "hash": 2676348506,
+      "buckets": [
+        0,
+        1
+      ],
+      "config_keys": [
+        "enabled"
+      ]
+    }
+  },
+  {
+    "data": {
+      "kind": "user",
+      "id": "2023-04_soundboard_nitro",
+      "label": "Soundboard Nitro",
+      "description": [
+        "Control",
+        "Treatment 1: Include Soundboard as a Nitro feature"
+      ],
+      "hash": 325693975,
+      "buckets": [
+        0,
+        1
+      ],
+      "config_keys": [
+        "isPremiumFeature"
       ]
     }
   },
