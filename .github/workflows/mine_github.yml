@@ -48,6 +48,7 @@ jobs:
       - name: Run
         run: pnpm run start
         env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           DISCORD_TOKEN: ${{ secrets.DISCORD_TOKEN }}
           DISCORD_WEBHOOK_BUILDS: ${{ secrets.DISCORD_WEBHOOK_BUILDS }}
           DISCORD_WEBHOOK_ROUTES: ${{ secrets.DISCORD_WEBHOOK_ROUTES }}
