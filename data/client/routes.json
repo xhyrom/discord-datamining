@@ -2056,6 +2056,15 @@
       "OPTIONS"
     ]
   },
+  "REMOVE_EMOJI_REACTIONS": {
+    "url": "/channels/:param/messages/:param/reactions/:param",
+    "allowed_methods": [
+      "DELETE",
+      "GET",
+      "HEAD",
+      "OPTIONS"
+    ]
+  },
   "REACTION": {
     "url": "/channels/:param/messages/:param/reactions/:param/:param",
     "allowed_methods": [
