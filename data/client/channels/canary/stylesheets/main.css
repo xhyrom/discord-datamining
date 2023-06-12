@@ -28725,6 +28725,13 @@ img[alt] {
     cursor: pointer
 }
 
+.loadingSpinner-2PpfVg {
+    -webkit-box-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+    max-width: 100px
+}
+
 .perkRow-10K6XE {
     -webkit-box-align: center;
     -ms-flex-align: center;
@@ -159170,4 +159177,4 @@ html .invoiceCancelRow-dVOR64 {
     flex-direction: column
 }
 
-/*# sourceMappingURL=40532.d558fc2bb5d902cfd9d4.css.map*/
+/*# sourceMappingURL=40532.1970ab061a94418bb056.css.map*/
