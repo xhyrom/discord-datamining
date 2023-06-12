@@ -37,7 +37,7 @@
                             </li>
                         </ul>
                         <h3><span style="color: #434343;" data-darkreader-inline-color="">Note: The only way to join the Discord Admins Server is on the desktop/browser app. This is unavailable on the mobile app.</span></h3>
-                        <p class="wysiwyg-text-align-center"><span style="color: #434343;" data-darkreader-inline-color=""><img src="https://support.discord.com/hc/article_attachments/15199001816471" alt="admin_server.png"></span></p>
+                        <p class="wysiwyg-text-align-center"><span style="color: #434343;" data-darkreader-inline-color=""><img src="https://support.discord.com/hc/article_attachments/15246826977687" alt="communityserver.png"></span></p>
                         <h1>Frequently Asked Questions</h1>
                         <p><strong>Q: What can I find in the Discord Admins server?</strong></p>
                         <p>A: The Discord Admins server primarily focuses on engaging, managing, protecting, and growing thriving communities on Discord.</p>
@@ -54,7 +54,7 @@
                         <p><strong>Q: I was banned or removed from Discord Admins, can I appeal?</strong></p>
                         <p>A: Since the server works on a warning system before removals, we provide users with time and explanation on how to avoid removal from our server. If a user does hit the threshold for warnings, or is removed from the server, we will not offer appeals to rejoin the server.</p>
                         <h1>How to Contact </h1>
-                        <p>We'd love to hear from you! Please submit your questions and feedback on our <a href="https://support.discord.com/hc/en-us/requests/new?ticket_form_id=360000168511" target="_blank" rel="noopener">Community Program support form</a>, and remember to select the Discord Admin Server in the Community Program dropdown.</p>
+                        <p>We'd love to hear from you! Please submit your questions and feedback on our <a href="https://support.discord.com/hc/en-us/requests/new?ticket_form_id=360000168511" target="_blank" rel="noopener noreferrer">Community Program support form</a>, and remember to select the Discord Admin Server in the Community Program dropdown.</p>
                     </div>
                 </div>
             </section>
