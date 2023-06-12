@@ -1281,12 +1281,7 @@
   },
   "SETTINGS_CONSENT": {
     "url": "/users/@me/consent",
-    "allowed_methods": [
-      "GET",
-      "HEAD",
-      "OPTIONS",
-      "POST"
-    ]
+    "allowed_methods": null
   },
   "PHONE": {
     "url": "/users/@me/phone",
