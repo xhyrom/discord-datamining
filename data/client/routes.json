@@ -1509,7 +1509,10 @@
   },
   "LOGIN_MFA": {
     "url": "/auth/mfa/totp",
-    "allowed_methods": null
+    "allowed_methods": [
+      "OPTIONS",
+      "POST"
+    ]
   },
   "LOGIN_SMS": {
     "url": "/auth/mfa/sms",
@@ -1768,7 +1771,11 @@
   },
   "INTEGRATION_SEARCH": {
     "url": "/integrations/:param/search",
-    "allowed_methods": null
+    "allowed_methods": [
+      "GET",
+      "HEAD",
+      "OPTIONS"
+    ]
   },
   "INTEGRATION_APPLICATION_IDS_FOR_MY_GUILDS": {
     "url": "/users/@me/guilds/integration-application-ids",
@@ -2650,7 +2657,11 @@
   },
   "ENTITLEMENTS_GIFTABLE": {
     "url": "/users/@me/entitlements/gifts",
-    "allowed_methods": null
+    "allowed_methods": [
+      "GET",
+      "HEAD",
+      "OPTIONS"
+    ]
   },
   "STORE_ASSET": {
     "url": "/store/applications/:param/assets/:param.:param",
