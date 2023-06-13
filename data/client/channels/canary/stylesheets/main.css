@@ -23709,70 +23709,70 @@ html.disable-forced-colors * {
     font-family: gg sans;
     font-style: normal;
     font-weight: 400;
-    src: url(/assets/32e2ccd44de2de2c7f5b94a37e5db3e5.woff2) format("woff2")
+    src: url(/assets/3d6549bf2f38372c054eafb93fa358a9.woff2) format("woff2")
 }
 
 @font-face {
     font-family: gg sans;
     font-style: italic;
     font-weight: 400;
-    src: url(/assets/9cfac12d7cd9424339ade28e3ac2e465.woff2) format("woff2")
+    src: url(/assets/dd1dfe31c073b2b0a8f94cb1a0b7fbb0.woff2) format("woff2")
 }
 
 @font-face {
     font-family: gg sans;
     font-style: normal;
     font-weight: 500;
-    src: url(/assets/3d42d9a7b9b2a544ffef1474e2cb5db9.woff2) format("woff2")
+    src: url(/assets/7f63813838e283aea62f1a68ef1732c2.woff2) format("woff2")
 }
 
 @font-face {
     font-family: gg sans;
     font-style: italic;
     font-weight: 500;
-    src: url(/assets/6e9ad04c81d3d5740d510ab9279ca219.woff2) format("woff2")
+    src: url(/assets/2ada321f62e9743e0f9f2882960c8f9d.woff2) format("woff2")
 }
 
 @font-face {
     font-family: gg sans;
     font-style: normal;
     font-weight: 600;
-    src: url(/assets/5972f529ce487a43ff5fd8776b9784ab.woff2) format("woff2")
+    src: url(/assets/71d3e9dc2bcb8e91225ba9fab588c8f2.woff2) format("woff2")
 }
 
 @font-face {
     font-family: gg sans;
     font-style: italic;
     font-weight: 600;
-    src: url(/assets/8a525444d6d7d3f2283443cf6dadade9.woff2) format("woff2")
+    src: url(/assets/e3cd8b0354d764c89f6abcf561081a85.woff2) format("woff2")
 }
 
 @font-face {
     font-family: gg sans;
     font-style: normal;
     font-weight: 700;
-    src: url(/assets/2ab99ceb59ed8c892ea4c4cc0919ad25.woff2) format("woff2")
+    src: url(/assets/ff5eccde83f118cea0224ebbb9dc3179.woff2) format("woff2")
 }
 
 @font-face {
     font-family: gg sans;
     font-style: italic;
     font-weight: 700;
-    src: url(/assets/a0cf32926e2447a9f38e03e0c03d5665.woff2) format("woff2")
+    src: url(/assets/41a3d598a613a77c1d80b3ec957a2975.woff2) format("woff2")
 }
 
 @font-face {
     font-family: gg sans;
     font-style: normal;
     font-weight: 800;
-    src: url(/assets/1999f1db992930e3ab1f90236a60e623.woff2) format("woff2")
+    src: url(/assets/f5aba5511523dcae97748a1b35bbffe8.woff2) format("woff2")
 }
 
 @font-face {
     font-family: gg sans;
     font-style: italic;
     font-weight: 800;
-    src: url(/assets/e53f44ee835f09cfb4f8e728a98d1942.woff2) format("woff2")
+    src: url(/assets/b10a4ad08f83816da8deaa1c1963dd04.woff2) format("woff2")
 }
 
 @font-face {
@@ -23860,8 +23860,6 @@ html.disable-forced-colors * {
 }
 
 :root {
-    --font-primary: "gg sans", "Noto Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
-    --font-display: "gg sans", "Noto Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
     --font-headline: "ABC Ginto Nord", "Noto Sans", "Helvetica Neue", Helvetica, Arial, sans-serif
 }
 
@@ -23870,6 +23868,8 @@ html.disable-forced-colors * {
 :root:lang(el),
 :root:lang(ru),
 :root:lang(uk) {
+    --font-primary: "gg sans", "Noto Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    --font-display: "gg sans", "Noto Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
     --font-code: Consolas, "Andale Mono WT", "Andale Mono", "Lucida Console", "Lucida Sans Typewriter", "DejaVu Sans Mono", "Bitstream Vera Sans Mono", "Liberation Mono", "Nimbus Mono L", Monaco, "Courier New", Courier, monospace
 }
 
@@ -23877,8 +23877,6 @@ html.disable-forced-colors * {
 :root:lang(el),
 :root:lang(ru),
 :root:lang(uk) {
-    --font-primary: "Noto Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
-    --font-display: "Noto Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
     --font-headline: "Noto Sans", "Helvetica Neue", Helvetica, Arial, sans-serif
 }
 
@@ -159235,4 +159233,4 @@ html .invoiceCancelRow-dVOR64 {
     flex-direction: column
 }
 
-/*# sourceMappingURL=40532.ce679902ddc21e246abc.css.map*/
+/*# sourceMappingURL=40532.622f7325f6086e918069.css.map*/
