@@ -8630,6 +8630,8 @@
   "LANGUAGES": "\"Languages\"",
   "AUTO_SUGGEST_STICKERS": "\"Sticker Suggestions\"",
   "AUTO_SUGGEST_STICKERS_DESCRIPTION": "\"Allows sticker suggestions to appear when typing messages.\"",
+  "STICKERS_IN_AUTOCOMPLETE": "\"Stickers in Autocomplete\"",
+  "INCLUDE_STICKER_RESULTS_IN_AUTOCOMPLETE": "\"Allows stickers to appear in your autocomplete results.\"",
   "NUF_AGE_GATE_BODY": "\"We're so excited you're here! Before we get started please enter your birthday. [Why do I need to provide my birthday?]({helpURL})\"",
   "NUF_COMPLETE_TITLE": "\"Your server is ready!\"",
   "NUF_COMPLETE_SUBTITLE": "\"Welcome! You belong here\"",
