@@ -89,27 +89,26 @@ export class Routes implements Module {
 
     let i = 0;
     for (const [name, url] of Object.entries(json)) {
-      try {
-        const allowedMethods =
-          (
-            await fetch(`https://discord.com/api/v10${url}`, {
-              method: "OPTIONS",
-            })
-          ).headers
-            .get("allow")
-            ?.split(", ")
-            ?.sort() ?? [];
-
-        result[name] = {
-          url,
-          allowed_methods: allowedMethods.length > 0 ? allowedMethods : null,
-        };
-      } catch {
+      const res = await this.getAllowedMethods(url);
+      if (res.status === 404) {
         result[name] = {
           url,
           allowed_methods: null,
         };
+
+        i++;
+        continue;
       }
+
+      if (res.status !== 200) {
+        console.log(`Failed to fetch ${url}: ${res.text} (${res.status})`);
+        continue;
+      }
+
+      result[name] = {
+        url,
+        allowed_methods: res.allowed_methods,
+      };
 
       i++;
 
@@ -179,5 +178,24 @@ export class Routes implements Module {
     );
 
     return builtString ? builtString : "";
+  }
+
+  private async getAllowedMethods(route: string) {
+    const res = await fetch(`https://discord.com/api/v10${route}`, {
+      method: "OPTIONS",
+    });
+
+    if (!res.ok)
+      return {
+        allowed_methods: null,
+        status: res.status,
+        text: res.statusText,
+      };
+
+    return {
+      allowed_methods: res.headers.get("allow")?.split(", ") ?? [],
+      status: res.status,
+      text: res.statusText,
+    };
   }
 }
