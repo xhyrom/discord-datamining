@@ -1,5 +1,5 @@
 <p>If you're reading this page, you're probably on the path to Big Bot Growth™. Congratulations on your success! We're always thrilled to see a new creation flourishing in the world of Discord.</p>
-<p>You're probably <em>also</em> reading this page because you've been asked to complete some additional steps on behalf of your bot, including a verification process and whitelisting for <a class="ql-link" href="https://discord.com/developers/docs/topics/gateway#privileged-intents" target="_blank" rel="noopener noreferrer">Privileged Intents</a>. We are constantly striving to keep Discord a safe place for our users, and we want to first and foremost thank you for your important role in that process.</p>
+<p>You're probably <em>also</em> reading this page because you've been asked to complete some additional steps on behalf of your bot, including a verification process and allowlisting for <a class="ql-link" href="https://discord.com/developers/docs/topics/gateway#privileged-intents" target="_blank" rel="noopener noreferrer">Privileged Intents</a>. We are constantly striving to keep Discord a safe place for our users, and we want to first and foremost thank you for your important role in that process.</p>
 <p>We want to make sure that what you need to do is well understood, doesn't have any surprises or gotchas, and is as quick as possible. If you want to know more about the future of bots coming this year, you should definitely read our blog post: <a href="https://blog.discord.com/the-future-of-bots-on-discord-4e6e050ab52e" target="_self">The Future of Bots on Discord</a>.</p>
 <p><strong>What this article covers:</strong></p>
 <ul>
@@ -12,11 +12,11 @@
         </ul>
     </li>
     <li>
-        <a href="#privileged-intent-whitelisting" target="_self">Privileged Intent Whitelisting</a><br>
+        <a href="#privileged-intent-whitelisting" target="_self">Privileged Intent Allowlisting</a><br>
         <ul>
             <li><a href="#what-if-im-already-in-100-guilds-1" target="_self">What if I'm already in 100 <span class="sentiment-comment-neutral">server</span>s?</a></li>
-            <li><a href="#how-do-i-get-whitelisted" target="_self">How do I get whitelisted?</a></li>
-            <li><a href="#how-long-does-it-take-to-get-whitelisted" target="_self">How long does it take to get whitelisted?</a></li>
+            <li><a href="#how-do-i-get-whitelisted" target="_self">How do I get allowlisted?</a></li>
+            <li><a href="#how-long-does-it-take-to-get-whitelisted" target="_self">How long does it take to get allowlisted?</a></li>
             <li><a href="#what-is-considered-an-acceptable-use-case" target="_self">What is considered an acceptable use case?</a></li>
         </ul>
     </li>
@@ -36,15 +36,15 @@
 <p><span class="sentiment-comment-neutral">From now until the deadline of October 7, 2020, <strong>while no limits are being enforced</strong>, we will strive for a five business day turnaround time for all verification requests. During this time period, we will evaluate our process to ensure that we can commit to faster turnaround times after the deprecation period has ended. Please be mindful of the influx of verification requests that we will receive during the initial roll-out.</span></p>
 <h2 id="what-if-im-already-in-100-guilds">What if I'm already in 100 servers?</h2>
 <p>If your bot is already in 100 <span class="sentiment-comment-neutral">servers</span>, you have until October 7, 2020 to go through our verification process. After that date, if you have not been verified, your bot will not be able <span class="sentiment-comment-neutral">to join any new servers.</span></p>
-<h1 id="privileged-intent-whitelisting">Privileged Intent Whitelisting</h1>
-<p class="graf graf--p">As part of the verification process, we’re including an opt-in process to get whitelisted for <a class="markup--anchor markup--p-anchor" href="https://discord.com/developers/docs/topics/gateway#privileged-intents" target="_blank" rel="noopener noreferrer noopener" data-href="https://discordapp.com/developers/docs/topics/gateway#privileged-intents">Privileged Gateway Intents</a>. We believe that whitelisting access to certain information at scale, as well as requiring verification to reach that scale, will be a big positive step towards combating bad actors and continuing to uphold the privacy and safety of Discord users.</p>
+<h1 id="privileged-intent-whitelisting">Privileged Intent Allowlisting</h1>
+<p class="graf graf--p">As part of the verification process, we’re including an opt-in process to get allowlisted for <a class="markup--anchor markup--p-anchor" href="https://discord.com/developers/docs/topics/gateway#privileged-intents" target="_blank" rel="noopener noreferrer noopener" data-href="https://discordapp.com/developers/docs/topics/gateway#privileged-intents">Privileged Gateway Intents</a>. We believe that allowlisting access to certain information at scale, as well as requiring verification to reach that scale, will be a big positive step towards combating bad actors and continuing to uphold the privacy and safety of Discord users.</p>
 <p class="graf graf--p">Again, this only applies to bots in 100 or more servers. You may start the process as early as 76 servers, and you have until <strong class="markup--strong markup--p-strong">October 7, 2020</strong> to complete it before limitations are enforced.</p>
-<p>You must apply for whitelisting if you turn on any of the Privileged Intents for your bots in the Developer Portal like so and your bot is in 100 or more servers:</p>
-<p class="wysiwyg-text-align-center"><img src="https://support.discord.com/hc/article_attachments/360054322951/intents.png" alt="intents.png"></p>
+<p>You must apply for allowlisting if you turn on any of the Privileged Intents for your bots in the Developer Portal like so and your bot is in 100 or more servers:</p>
+<p class="wysiwyg-text-align-center"><img src="https://support.discord.com/hc/article_attachments/360054322951" alt="intents.png"></p>
 <h2 id="what-if-im-already-in-100-guilds-1">What if I am already in 100 <span class="sentiment-comment-neutral">servers</span>?</h2>
-<p>If you're already in 100 <span class="sentiment-comment-neutral">servers </span>and want to enable Privileged Intents for your bot, you may do so from now until <strong>October 7, 2020</strong> and get whitelisted after turning them on.</p>
-<p>After our deprecation period ends<strong>,</strong> if your bot is in over 100 servers, you cannot turn on Privileged Intents until you get whitelisted first. We don't want you to have broken bots, so please get whitelisted first.</p>
-<h2 id="how-do-i-get-whitelisted">How do I get whitelisted?</h2>
+<p>If you're already in 100 <span class="sentiment-comment-neutral">servers </span>and want to enable Privileged Intents for your bot, you may do so from now until <strong>October 7, 2020</strong> and get allowlisted after turning them on.</p>
+<p>After our deprecation period ends<strong>,</strong> if your bot is in over 100 servers, you cannot turn on Privileged Intents until you get allowlisted first. We don't want you to have broken bots, so please get allowlisted first.</p>
+<h2 id="how-do-i-get-whitelisted">How do I get allowlisted?</h2>
 <p><span class="sentiment-comment-neutral">At the top of your bot settings page, you should see a button to begin the process if your bot is in more than 75 servers. </span>If you don't see that and believe you should, please <a href="https://dis.gd/contact" target="_self">reach out to us via support</a>.</p>
 <p>When you click that button, you'll be redirected to a questionnaire. We'll ask you a few questions including:</p>
 <ul>
@@ -53,9 +53,9 @@
     <li>Some data security and privacy questions</li>
     <li>The ability to edit your verification request, if you have already submitted one, with new information regarding your new needs</li>
 </ul>
-<h2 id="how-long-does-it-take-to-get-whitelisted">How long does it take to get whitelisted?</h2>
+<h2 id="how-long-does-it-take-to-get-whitelisted">How long does it take to get allowlisted?</h2>
 <p>Once you submit an application, a human will look at your submission and get back to you.</p>
-<p>From now until the deadline of October 7, 2020, <strong>while no limits are being enforced</strong>, we will strive for a five business day turnaround time for all verification requests. During this time period, we will evaluate our process to ensure that we can commit to faster turnaround times after the deprecation period has ended. Please be mindful of the influx of verification requests that we will receive during the initial roll-out.</p>
+<p>From now until the deadline of October 7, 2020, <strong>while no limits are being enforced</strong>, we will strive for a five-business-day turnaround time for all verification requests. During this time period, we will evaluate our process to ensure that we can commit to faster turnaround times after the deprecation period has ended. Please be mindful of the influx of verification requests that we will receive during the initial roll-out.</p>
 <h2 id="what-is-considered-an-acceptable-use-case">What is considered an acceptable use case?</h2>
 <p>We're glad you asked! (And, we know this was the big question on your mind). As with most things, it is up to the details of the implementation. Rather than list out every possible idea, or have you extrapolate on examples, here are some principles that guide the way we think.</p>
 <p>If you have questions about your particular use case, be as descriptive as possible in your application, and please feel free to <a href="https://dis.gd/contact" target="_self">reach out to our support team</a>, or talk to us in our <a href="https://discord.gg/discord-developers" target="_self">Discord Server</a>! We're happy to talk you through the process.</p>
@@ -100,7 +100,6 @@
     </div>
 </div>
 <div id="703359139530801253" class="message-2qnXI6 cozyMessage-3V1Y8y wrapper-2a6GCs cozy-3raOZG zalgo-jN1Ica" tabindex="-1" aria-setsize="66" aria-posinset="55" data-ref-id="messages-54">
-    <div class="contents-2mQqc9"> </div>
     <div class="contents-2mQqc9">
         <div class="markup-2BOw-j messageContent-2qWWxC"><strong>How can I delete the information I’ve submitted?</strong></div>
         <div class="markup-2BOw-j messageContent-2qWWxC">Removing information upon demand defeats the purpose of verifying identity. At the same time, we have no interest in keeping this data longer than we need to, and we want to balance those two principles. As such, our retention policy is that we'll remove the identification information a year after the bot that it is connected with has been deleted.</div>
