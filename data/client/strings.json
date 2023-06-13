@@ -15236,6 +15236,7 @@
   "USER_IS_BROADCASTING_APPLICATION": "\"$[](userHook) is broadcasting $[](applicationHook) • $[Watch](watchHook)\"",
   "USER_IS_BROADCASTING": "\"$[](userHook) is broadcasting • $[Watch](watchHook)\"",
   "YOU_ARE_BROADCASTING_APPLICATION": "\"$[](userHook) You are broadcasting $[](applicationHook)\"",
+  "AUTO_BROADCAST_TOGGLE": "\"Auto Broadcast\"",
   "MFA_TOTP_NOT_SENT": "\"MFA interceptor triggered but TOTP code not sent.\"",
   "MFA_TOTP_CHECK_FAILED": "\"TOTP check failed.\"",
   "MFA_REJECTED": "\"MFA rejected.\"",
