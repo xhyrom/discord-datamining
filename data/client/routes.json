@@ -888,6 +888,13 @@
       "POST"
     ]
   },
+  "MESSAGE_DELETE_UPLOAD": {
+    "url": "/attachments/:param",
+    "allowed_methods": [
+      "DELETE",
+      "OPTIONS"
+    ]
+  },
   "MESSAGE_CROSSPOST": {
     "url": "/channels/:param/messages/:param/crosspost",
     "allowed_methods": [
