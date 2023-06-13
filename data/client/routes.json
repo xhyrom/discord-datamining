@@ -4179,5 +4179,9 @@
       "HEAD",
       "OPTIONS"
     ]
+  },
+  "COLLECTIBLE_ASSET": {
+    "url": "/applications/1096190356233670716/app-assets/:param.:param",
+    "allowed_methods": null
   }
 }
