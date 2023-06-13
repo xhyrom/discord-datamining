@@ -29382,6 +29382,27 @@ img[alt] {
     margin: 0
 }
 
+.stepBody-1M90eQ {
+    padding-top: 16px
+}
+
+.invoice-a_woJy {
+    margin-bottom: 16px
+}
+
+.paymentSourceWrapper-31uCqG {
+    margin: 16px 0
+}
+
+.currencyWrapper-otmqJS {
+    margin-top: 16px;
+    margin-bottom: 16px
+}
+
+.subscriptionCostRow-22AIP3 {
+    color: var(--header-primary)
+}
+
 .copyInput-3AbKWB {
     overflow: hidden;
     -webkit-box-sizing: border-box;
@@ -126017,6 +126038,21 @@ input::-webkit-outer-spin-button {
     margin-bottom: 16px
 }
 
+.buttonsContainer-3FAIZi {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    gap: 8px;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin-left: 12px;
+    margin-top: 12px
+}
+
 .panel-ruMKcW {
     -webkit-box-orient: vertical;
     -ms-flex-direction: column;
@@ -158600,6 +158636,28 @@ html .invoiceCancelRow-3s2UuC {
     justify-content: center
 }
 
+.confirmation-1J5ZWf {
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    padding: 40px 32px
+}
+
+.confirmationHeader-2mK-jD {
+    margin-bottom: 16px
+}
+
+.confirmationMessage-_sP7Dj {
+    margin-bottom: 34px
+}
+
 .spacing-30Ugox {}
 
 .headerSpacing-358R3d {
@@ -159177,4 +159235,4 @@ html .invoiceCancelRow-dVOR64 {
     flex-direction: column
 }
 
-/*# sourceMappingURL=40532.1970ab061a94418bb056.css.map*/
+/*# sourceMappingURL=40532.1867bc37604677f5b3f3.css.map*/
