@@ -103507,6 +103507,10 @@ html .tabBadge-h4HGed {
     text-align: center
 }
 
+.activityName-3I1oW1:hover {
+    text-decoration: underline
+}
+
 .theme-dark .panel-2ZFCRb {
     background: var(--bg-overlay-1, var(--background-secondary-alt))
 }
@@ -159247,4 +159251,4 @@ html .invoiceCancelRow-dVOR64 {
     flex-direction: column
 }
 
-/*# sourceMappingURL=40532.df8cc2aef7a8c81bc210.css.map*/
+/*# sourceMappingURL=40532.779fd1fde1b633d1df9a.css.map*/
