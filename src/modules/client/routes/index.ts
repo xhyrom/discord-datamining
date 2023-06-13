@@ -193,7 +193,7 @@ export class Routes implements Module {
       };
 
     return {
-      allowed_methods: res.headers.get("allow")?.split(", ") ?? [],
+      allowed_methods: res.headers.get("allow")?.split(", ")?.sort() ?? [],
       status: res.status,
       text: res.statusText,
     };
