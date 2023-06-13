@@ -1,15 +1,28 @@
 {
   "USER": {
     "url": "/users/:param",
-    "allowed_methods": null
+    "allowed_methods": [
+      "GET",
+      "HEAD",
+      "OPTIONS"
+    ]
   },
   "USER_RELATIONSHIPS": {
     "url": "/users/:param/relationships",
-    "allowed_methods": null
+    "allowed_methods": [
+      "GET",
+      "HEAD",
+      "OPTIONS"
+    ]
   },
   "USER_RELATIONSHIP": {
     "url": "/users/@me/relationships/:param",
-    "allowed_methods": null
+    "allowed_methods": [
+      "DELETE",
+      "OPTIONS",
+      "PATCH",
+      "PUT"
+    ]
   },
   "USER_BULK_RELATIONSHIPS": {
     "url": "/users/@me/relationships/bulk",
@@ -92,7 +105,12 @@
   },
   "USER_CLYDE_CONSENT": {
     "url": "/users/@me/clyde-consent",
-    "allowed_methods": null
+    "allowed_methods": [
+      "GET",
+      "HEAD",
+      "OPTIONS",
+      "PUT"
+    ]
   },
   "APPLICATION_ACTIVITY_STATISTICS": {
     "url": "/activities/statistics/applications/:param",
@@ -232,7 +250,14 @@
   },
   "SET_GUILD_MEMBER": {
     "url": "/guilds/:param/members/@me",
-    "allowed_methods": null
+    "allowed_methods": [
+      "DELETE",
+      "GET",
+      "HEAD",
+      "OPTIONS",
+      "PATCH",
+      "PUT"
+    ]
   },
   "GUILD_JOIN": {
     "url": "/guilds/:param/members/@me",
@@ -247,7 +272,10 @@
   },
   "GUILD_LEAVE": {
     "url": "/users/@me/guilds/:param",
-    "allowed_methods": null
+    "allowed_methods": [
+      "DELETE",
+      "OPTIONS"
+    ]
   },
   "GUILD_INTEGRATIONS": {
     "url": "/guilds/:param/integrations",
