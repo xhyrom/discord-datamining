@@ -182,7 +182,7 @@ export class Articles implements Module {
       embeds.push(
         this.buildEmbed(sections, "Updated", article)
           .setDescription(
-            maximumStringLen(`\`\`\`diff\n${article.diff}\n\`\`\``, 4096)
+            maximumStringLen(`\`\`\`diff\n${article.diff}\n\`\`\``, 3000)
           )
           .setColor(0x2c5cde)
           .toJSON()

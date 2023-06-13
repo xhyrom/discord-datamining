@@ -186,7 +186,7 @@ export class Blog implements Module {
       embeds.push(
         this.buildEmbed("Updated", post)
           .setDescription(
-            maximumStringLen(`\`\`\`diff\n${post.diff}\n\`\`\``, 4096)
+            maximumStringLen(`\`\`\`diff\n${post.diff}\n\`\`\``, 3000)
           )
           .setColor(0x2c5cde)
           .toJSON()
