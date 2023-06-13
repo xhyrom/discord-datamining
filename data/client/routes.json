@@ -4161,6 +4161,17 @@
       "PUT"
     ]
   },
+  "GUILD_MEMBERS_UNUSUAL_DM_ACTIVITY": {
+    "url": "/guilds/:param/members/unusual-dm-activity",
+    "allowed_methods": [
+      "DELETE",
+      "GET",
+      "HEAD",
+      "OPTIONS",
+      "PATCH",
+      "PUT"
+    ]
+  },
   "INVENTORY_GET": {
     "url": "/users/@me/inventory",
     "allowed_methods": [
