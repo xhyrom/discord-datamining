@@ -1,0 +1,19 @@
+{
+  "data": {
+    "kind": "user",
+    "id": "2023-03_trial_redemption_default_to_monthly_plan",
+    "label": "Trial Redemption Default To Monthly Plan",
+    "description": [
+      "Control",
+      "Treatment 1: Set default plan to monthly plan"
+    ],
+    "hash": 1656308555,
+    "buckets": [
+      0,
+      1
+    ],
+    "config_keys": [
+      "defaultToMonthlyPlan"
+    ]
+  }
+}
