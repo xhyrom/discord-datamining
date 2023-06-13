@@ -83353,7 +83353,11 @@ strong {
 }
 
 .containerSidenav-3qiKqP {
-    background: var(--home-background)
+    background: var(--background-primary)
+}
+
+.sidebarTabBar-13nR_e {
+    background: var(--background-secondary)
 }
 
 .settingsTabBar-1Fi_kb {
@@ -83429,7 +83433,7 @@ strong {
     -ms-flex-direction: column;
     flex-direction: column;
     padding: 24px;
-    background-color: var(--background-primary);
+    background-color: var(--background-secondary);
     -webkit-box-shadow: var(--elevation-low);
     box-shadow: var(--elevation-low);
     border-radius: 12px
@@ -83506,7 +83510,7 @@ strong {
     -webkit-box-direction: normal;
     -ms-flex-direction: column;
     flex-direction: column;
-    background-color: var(--background-nested-floating);
+    background-color: var(--background-secondary-alt);
     border-radius: 8px;
     padding: 10px 20px 12px;
     -webkit-box-shadow: var(--elevation-low);
@@ -83661,7 +83665,7 @@ strong {
 }
 
 .card-3Tj89U {
-    background-color: var(--background-primary);
+    background-color: var(--background-secondary);
     -webkit-box-shadow: var(--elevation-low);
     box-shadow: var(--elevation-low);
     border-radius: var(--radius-md)
@@ -83827,8 +83831,16 @@ strong {
     -ms-flex-align: center;
     align-items: center;
     padding: 16px 12px;
-    background-color: var(--background-secondary);
+    background-color: var(--background-tertiary);
     border-radius: 8px
+}
+
+.inModal-3IGsr9 {
+    background-color: var(--background-secondary)
+}
+
+.inModal-3IGsr9 .icon-container-nfe_kU {
+    background-color: var(--background-tertiary)
 }
 
 .positive-21Ckez {
@@ -83863,7 +83875,7 @@ strong {
     justify-content: center;
     width: 40px;
     height: 40px;
-    background-color: var(--background-tertiary);
+    background-color: var(--background-nested-floating);
     border-radius: 50%;
     -ms-flex-negative: 0;
     flex-shrink: 0;
@@ -83892,7 +83904,7 @@ strong {
     align-items: center;
     margin-top: 12px;
     padding: 24px;
-    background-color: var(--background-primary);
+    background-color: var(--background-secondary);
     -webkit-box-shadow: var(--elevation-low);
     box-shadow: var(--elevation-low);
     border-radius: 12px;
@@ -83906,7 +83918,7 @@ strong {
 
 @media (min-width:900px) {
     .container-1iKw09 {
-        padding: 32px;
+        padding: 32px 20px 32px 32px;
         -webkit-box-orient: horizontal;
         -webkit-box-direction: normal;
         -ms-flex-direction: row;
@@ -83936,12 +83948,15 @@ strong {
 
 .artContainer-1bqVms {
     margin-left: 32px;
-    margin-top: 32px
+    margin-top: 32px;
+    margin-right: 0
 }
 
 @media (min-width:900px) {
     .artContainer-1bqVms {
-        margin-top: 0
+        margin-right: -10px;
+        margin-left: -24px;
+        margin-top: -8px
     }
 }
 
@@ -83968,7 +83983,7 @@ strong {
     align-items: center;
     padding: 20px;
     border-radius: 12px;
-    background-color: var(--background-primary);
+    background-color: var(--background-secondary);
     -webkit-box-shadow: var(--elevation-low);
     box-shadow: var(--elevation-low)
 }
@@ -84300,10 +84315,10 @@ strong {
     -ms-flex-pack: center;
     justify-content: center;
     padding: 24px;
-    background: var(--background-primary);
+    background: var(--background-secondary);
     -webkit-box-shadow: var(--elevation-low);
     box-shadow: var(--elevation-low);
-    border-radius: 4px;
+    border-radius: 12px;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
     -ms-flex-direction: column;
@@ -159232,4 +159247,4 @@ html .invoiceCancelRow-dVOR64 {
     flex-direction: column
 }
 
-/*# sourceMappingURL=40532.7e909a24d98ff904d5dd.css.map*/
+/*# sourceMappingURL=40532.df8cc2aef7a8c81bc210.css.map*/
