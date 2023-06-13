@@ -2060,6 +2060,25 @@
   {
     "data": {
       "kind": "user",
+      "id": "2023-06_burst_reaction_entry_point_ordering",
+      "label": "Burst Reaction Entry Point Ordering",
+      "description": [
+        "Control",
+        "Treatment 1: Regular Reaction Prioritized"
+      ],
+      "hash": 2413236121,
+      "buckets": [
+        0,
+        1
+      ],
+      "config_keys": [
+        "enabled"
+      ]
+    }
+  },
+  {
+    "data": {
+      "kind": "user",
       "id": "2023-03_mobile_burst_reactions",
       "label": "Mobile Burst Reactions User Experiment",
       "description": [
@@ -4093,6 +4112,25 @@
         "Treatment 1: Enable channel summaries"
       ],
       "hash": 3283745071,
+      "buckets": [
+        0,
+        1
+      ],
+      "config_keys": [
+        "enabled"
+      ]
+    }
+  },
+  {
+    "data": {
+      "kind": "user",
+      "id": "2023-06_p13n_summarization_mobile_ux",
+      "label": "Channel Summaries UX on Mobile Experiment",
+      "description": [
+        "Control",
+        "Treatment 1: Enable mobile UX for channel summaries"
+      ],
+      "hash": 3780014786,
       "buckets": [
         0,
         1
