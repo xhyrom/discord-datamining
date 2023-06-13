@@ -17147,15 +17147,7 @@ html.disable-forced-colors * {
 
 .markup-eYLPri ol ol,
 .markup-eYLPri ul ol {
-    list-style-type: lower-roman;
     margin-bottom: 0
-}
-
-.markup-eYLPri ol ol ol,
-.markup-eYLPri ol ul ol,
-.markup-eYLPri ul ol ol,
-.markup-eYLPri ul ul ol {
-    list-style-type: lower-alpha
 }
 
 .markup-eYLPri h1,
@@ -153634,7 +153626,10 @@ html .invoiceCancelRow-3s2UuC {
 .roleColor-1d_WrY {
     width: 12px;
     height: 12px;
-    border-radius: 6px
+    border-radius: 6px;
+    -webkit-box-flex: 0;
+    -ms-flex: none;
+    flex: none
 }
 
 .container-ikgCx8 {
@@ -153854,6 +153849,10 @@ html .invoiceCancelRow-3s2UuC {
     width: 16px;
     height: 16px;
     border-radius: 50%
+}
+
+.input-2uYdoa {
+    padding-right: 60px
 }
 
 .roleHeader-NoH3DY {
@@ -159233,4 +159232,4 @@ html .invoiceCancelRow-dVOR64 {
     flex-direction: column
 }
 
-/*# sourceMappingURL=40532.622f7325f6086e918069.css.map*/
+/*# sourceMappingURL=40532.7e909a24d98ff904d5dd.css.map*/
