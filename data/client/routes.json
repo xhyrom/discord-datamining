@@ -4135,10 +4135,6 @@
     "url": "/user-trial-offers/:param",
     "allowed_methods": null
   },
-  "UNACK_USER_TRIAL_OFFER": {
-    "url": "/user-trial-offers/:param/unack",
-    "allowed_methods": null
-  },
   "USER_TRIAL_OFFERS": {
     "url": "/user-trial-offers",
     "allowed_methods": null
