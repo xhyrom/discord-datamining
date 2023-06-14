@@ -62707,6 +62707,14 @@ strong {
     height: 100%
 }
 
+.uploadContainer-TCg-Ji:hover .actionBar-1ozugS {
+    opacity: 1
+}
+
+.uploadContainer-TCg-Ji:focus-within .actionBar-1ozugS {
+    opacity: 1
+}
+
 .actionBarContainer-2BJ5hs {
     position: absolute;
     top: 0;
@@ -62719,7 +62727,8 @@ strong {
     z-index: 1;
     -webkit-transform: translate(25%, -25%);
     transform: translate(25%, -25%);
-    padding: 0
+    padding: 0;
+    opacity: 0
 }
 
 .miniPopover-1VlTqE {
@@ -159586,4 +159595,4 @@ html .invoiceCancelRow-dVOR64 {
     flex-direction: column
 }
 
-/*# sourceMappingURL=40532.a8a33fb9a12a57c04c65.css.map*/
+/*# sourceMappingURL=40532.cf20439c04259f7fa06e.css.map*/
