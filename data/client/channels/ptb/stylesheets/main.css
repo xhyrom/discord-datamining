@@ -10211,9 +10211,6 @@ html.decorate-links .lowSaturationUnderline-Z6CW6z {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    justify-content: center;
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
@@ -10221,7 +10218,8 @@ html.decorate-links .lowSaturationUnderline-Z6CW6z {
     border-radius: 5px;
     -webkit-box-shadow: var(--elevation-high);
     box-shadow: var(--elevation-high);
-    background-color: var(--background-floating)
+    background-color: var(--background-floating);
+    overflow: auto
 }
 
 .wave-prk3iX {
@@ -10329,7 +10327,7 @@ html.decorate-links .lowSaturationUnderline-Z6CW6z {
 
 .authorize-2xTTr- {
     width: 100%;
-    height: 100%;
+    height: auto;
     -webkit-box-orient: horizontal;
     -ms-flex-direction: row;
     flex-direction: row;
@@ -159629,4 +159627,4 @@ html .invoiceCancelRow-dVOR64 {
     flex-direction: column
 }
 
-/*# sourceMappingURL=40532.ccc4facddbd117245b61.css.map*/
+/*# sourceMappingURL=40532.d924ac2002da68fc103b.css.map*/
