@@ -81951,6 +81951,13 @@ strong {
     cursor: pointer
 }
 
+.listHeading-cZQEaD {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    gap: 8px
+}
+
 .wrapper-3XVBev {
     position: absolute;
     top: -16px;
@@ -159627,4 +159634,4 @@ html .invoiceCancelRow-dVOR64 {
     flex-direction: column
 }
 
-/*# sourceMappingURL=40532.6945cfb792072119db0e.css.map*/
+/*# sourceMappingURL=40532.bad47ebd084590ff56da.css.map*/
