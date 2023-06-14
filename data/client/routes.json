@@ -2638,6 +2638,14 @@
       "OPTIONS"
     ]
   },
+  "ENTITLEMENTS_FOR_USER": {
+    "url": "/users/@me/entitlements",
+    "allowed_methods": [
+      "GET",
+      "HEAD",
+      "OPTIONS"
+    ]
+  },
   "ENTITLEMENT_TICKET": {
     "url": "/users/@me/applications/:param/entitlement-ticket",
     "allowed_methods": [
