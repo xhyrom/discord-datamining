@@ -74276,7 +74276,10 @@ strong {
 
 .iconContainer-21RCa3 {
     position: relative;
-    margin-right: 6px
+    margin-right: 6px;
+    margin-top: 2px;
+    -ms-flex-item-align: start;
+    align-self: flex-start
 }
 
 .content-1gYQeQ {
@@ -74290,9 +74293,9 @@ strong {
     -webkit-box-direction: normal;
     -ms-flex-direction: row;
     flex-direction: row;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
+    -webkit-box-align: start;
+    -ms-flex-align: start;
+    align-items: flex-start;
     overflow: hidden
 }
 
@@ -74317,6 +74320,24 @@ strong {
 .topicDiv-2v0WRA .icon-2W8DHg {
     display: inline;
     padding-bottom: 0
+}
+
+.clickable-KsI9Xv {
+    color: var(--channels-default);
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex
+}
+
+.clickable-KsI9Xv:hover {
+    cursor: pointer
+}
+
+.pencilIcon-1M0k_p {
+    margin-left: 4px
 }
 
 .mainContent-20q_Hp {
@@ -74389,7 +74410,8 @@ strong {
     justify-content: center;
     -webkit-box-flex: 0;
     -ms-flex: 0 0 auto;
-    flex: 0 0 auto
+    flex: 0 0 auto;
+    padding-top: 2px
 }
 
 .modeMuted-2T4MDZ .icon-2W8DHg,
@@ -90512,35 +90534,8 @@ strong {
     cursor: pointer
 }
 
-.clickable-I5EKCW .newBadge-ZPgRVg {
-    background-color: var(--brand-experiment);
-    font-size: 12px;
-    line-height: 16px;
-    padding: 0 6px;
-    margin-right: 8px
-}
-
 .clickable-I5EKCW .pencilIcon-3iF9Xx {
-    margin-left: 8px
-}
-
-.clickable-I5EKCW .leftStar-24m36V {
-    color: pink;
-    width: 14px;
-    height: 14px;
-    margin-left: 24px;
-    bottom: -5px;
-    right: 2px;
-    position: relative
-}
-
-.clickable-I5EKCW .rightStar-3OjQIR {
-    color: var(--yellow-300);
-    height: 10px;
-    width: 10px;
-    top: -8px;
-    right: -1px;
-    position: relative
+    margin-left: 4px
 }
 
 .playingText-16QsYy {
@@ -138145,6 +138140,66 @@ html .invoiceCancelRow-3s2UuC {
     margin: 3px
 }
 
+.modalHeader-25uwMc {
+    display: block;
+    text-align: center
+}
+
+.closeButton-2LcRjO {
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    cursor: pointer;
+    color: var(--interactive-normal)
+}
+
+.headerImage-2uvMYP {
+    margin: 0 auto;
+    width: 300px;
+    height: 200px;
+    background-repeat: no-repeat;
+    background-image: url(/assets/8cd836bda74106c22c8bbe0d94b4c47b.svg)
+}
+
+.title-KciIcJ {
+    margin-bottom: 8px
+}
+
+.modalContent-3D_MY9 {
+    margin-bottom: 32px
+}
+
+.inputContainer-2W23Lj {
+    position: relative
+}
+
+.emojiButtonContainer-3QMxO2 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    position: absolute;
+    left: 0;
+    top: 0;
+    margin: 0 10px;
+    height: 100%
+}
+
+.emojiButton-2JQMs2.fullOpacity-1NRUzl {
+    opacity: 1
+}
+
+.input-2hZrmW {
+    padding-left: 42px;
+    padding-right: 36px
+}
+
+.error-KViqha {
+    margin-top: 8px
+}
+
 .modalRoot-2JTZ9d {
     height: 478px
 }
@@ -143398,66 +143453,6 @@ html .invoiceCancelRow-3s2UuC {
     -webkit-box-pack: center;
     -ms-flex-pack: center;
     justify-content: center
-}
-
-.modalHeader-25uwMc {
-    display: block;
-    text-align: center
-}
-
-.closeButton-2LcRjO {
-    position: absolute;
-    top: 8px;
-    right: 8px;
-    cursor: pointer;
-    color: var(--interactive-normal)
-}
-
-.headerImage-2uvMYP {
-    margin: 0 auto;
-    width: 300px;
-    height: 200px;
-    background-repeat: no-repeat;
-    background-image: url(/assets/8cd836bda74106c22c8bbe0d94b4c47b.svg)
-}
-
-.title-KciIcJ {
-    margin-bottom: 8px
-}
-
-.modalContent-3D_MY9 {
-    margin-bottom: 32px
-}
-
-.inputContainer-2W23Lj {
-    position: relative
-}
-
-.emojiButtonContainer-3QMxO2 {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
-    position: absolute;
-    left: 0;
-    top: 0;
-    margin: 0 10px;
-    height: 100%
-}
-
-.emojiButton-2JQMs2.fullOpacity-1NRUzl {
-    opacity: 1
-}
-
-.input-2hZrmW {
-    padding-left: 42px;
-    padding-right: 36px
-}
-
-.error-KViqha {
-    margin-top: 8px
 }
 
 .container-NZfIjU,
@@ -159634,4 +159629,4 @@ html .invoiceCancelRow-dVOR64 {
     flex-direction: column
 }
 
-/*# sourceMappingURL=40532.bad47ebd084590ff56da.css.map*/
+/*# sourceMappingURL=40532.ccc4facddbd117245b61.css.map*/
