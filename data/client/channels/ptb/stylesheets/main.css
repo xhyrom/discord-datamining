@@ -83617,7 +83617,8 @@ strong {
 }
 
 .sidebarTabBar-13nR_e {
-    background: var(--background-secondary)
+    -webkit-box-shadow: var(--elevation-low);
+    box-shadow: var(--elevation-low)
 }
 
 .settingsTabBar-1Fi_kb {
@@ -139530,11 +139531,12 @@ html .invoiceCancelRow-3s2UuC {
     align-items: center;
     -webkit-box-pack: center;
     -ms-flex-pack: center;
-    justify-content: center
+    justify-content: center;
+    width: 100%
 }
 
 .infoIcon-3d4VwP {
-    margin-right: 8px
+    margin-right: 4px
 }
 
 .buttonContainer-1ZL2O6 {
@@ -159644,4 +159646,4 @@ html .invoiceCancelRow-dVOR64 {
     flex-direction: column
 }
 
-/*# sourceMappingURL=40532.462d3f944108259b173f.css.map*/
+/*# sourceMappingURL=40532.faf945f8f6845cf815da.css.map*/
