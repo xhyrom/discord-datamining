@@ -15034,6 +15034,7 @@
   "MEMBER_SAFETY_COMMUNICATION_DISABLED": "\"Timed Out\"",
   "MEMBER_SAFETY_COMMUNICATION_DISABLED_TOOLTIP": "\"Timed Out Until\"",
   "MEMBER_SAFETY_UNUSUAL_DM_ACTIVITY_TOOLTIP": "\"Unusual DM Activity\"",
+  "MEMBER_SAFETY_MEMBER_ROW_ARIA_LABEL": "\"Member {name}\"",
   "MULTIPLE_TOPPING_DONUT": "\"Sprinkle Donut\"",
   "NO_TOPPING_DONUT": "\"Glazed Donut\"",
   "EAT_DONUT": "\"Eat Donut\"",
