@@ -2638,14 +2638,6 @@
       "OPTIONS"
     ]
   },
-  "ENTITLEMENTS_FOR_USER": {
-    "url": "/users/@me/entitlements",
-    "allowed_methods": [
-      "GET",
-      "HEAD",
-      "OPTIONS"
-    ]
-  },
   "ENTITLEMENT_TICKET": {
     "url": "/users/@me/applications/:param/entitlement-ticket",
     "allowed_methods": [
@@ -4124,8 +4116,7 @@
     "url": "/channels/:param/integrations/consent",
     "allowed_methods": [
       "DELETE",
-      "OPTIONS",
-      "PUT"
+      "OPTIONS"
     ]
   },
   "FINISH_MFA_CHECK": {
