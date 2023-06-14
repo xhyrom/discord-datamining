@@ -1247,6 +1247,14 @@
       "POST"
     ]
   },
+  "DEVICES": {
+    "url": "/users/@me/devices",
+    "allowed_methods": [
+      "DELETE",
+      "OPTIONS",
+      "POST"
+    ]
+  },
   "DEVICES_SYNC_TOKEN": {
     "url": "/users/@me/devices/sync-token",
     "allowed_methods": [
