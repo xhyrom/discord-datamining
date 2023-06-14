@@ -96,22 +96,6 @@
     "theme_template": "section_page"
   },
   {
-    "id": 360001629332,
-    "url": "https://discorddevs.zendesk.com/api/v2/help_center/en-us/sections/360001629332.json",
-    "html_url": "https://support-dev.discord.com/hc/en-us/sections/360001629332-General",
-    "category_id": 360000644612,
-    "position": 0,
-    "sorting": "manual",
-    "created_at": "2018-07-13T21:32:40Z",
-    "name": "General",
-    "description": "",
-    "locale": "en-us",
-    "source_locale": "en-us",
-    "outdated": false,
-    "parent_section_id": null,
-    "theme_template": "section_page"
-  },
-  {
     "id": 5110493739415,
     "url": "https://discorddevs.zendesk.com/api/v2/help_center/en-us/sections/5110493739415.json",
     "html_url": "https://support-dev.discord.com/hc/en-us/sections/5110493739415-Bots",
