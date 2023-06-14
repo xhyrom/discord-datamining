@@ -10326,6 +10326,9 @@ html.decorate-links .lowSaturationUnderline-Z6CW6z {
 }
 
 .authorize-2xTTr- {
+    -webkit-box-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
     width: 100%;
     height: auto;
     -webkit-box-orient: horizontal;
@@ -159641,4 +159644,4 @@ html .invoiceCancelRow-dVOR64 {
     flex-direction: column
 }
 
-/*# sourceMappingURL=40532.5de46a3ff757ea91c1d1.css.map*/
+/*# sourceMappingURL=40532.462d3f944108259b173f.css.map*/
