@@ -11614,8 +11614,6 @@
   "PREMIUM_TIER_0_FEATURE_UPLOADS_LONGER": "\"Bigger file uploads\"",
   "PREMIUM_TIER_0_FEATURE_BADGE_LONGER": "\"Special Nitro profile badge, and more!\"",
   "PREMIUM_SUBSCRIPTION_BUTTON_DISABLED_MANAGE_PLAN_TOOLTIP": "\"To manage your Nitro subscription, go to the Subscriptions page in User Settings.\"",
-  "GUILD_JOIN_CAPTCHA_HEADER": "\"Wait! Are you human?\"",
-  "GUILD_JOIN_CAPTCHA_DESCRIPTION": "\"Before you join, please confirm you’re not a robot.\"",
   "GENERIC_CAPTCHA_HEADER": "\"Wait! Are you human?\"",
   "GENERIC_CAPTCHA_DESCRIPTION": "\"Please confirm you’re not a robot.\"",
   "PREMIUM_SUBSCRIPTION_REACTIVATION_NOTICE_TEXT": "\"Your Nitro subscription has ended. Reactivate to regain access to larger file uploads and more.\"",
