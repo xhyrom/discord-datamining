@@ -1,8 +1,8 @@
 <h3>
     <strong>Note:</strong><strong><br></strong>- Discord requires a payment method to redeem this Nitro promo. A temporary charge will be placed on the payment method upon activating the promotion.<br>- This is to help Discord confirm the payment method works as expected and to prevent the use of fraudulent payment methods.
 </h3>
-<p>We’re so happy to announce that Discord is once again partnering with Xbox! From October 26, 2021 to May 25, 2023, <a href="https://www.xbox.com/en-US/xbox-game-pass" target="_blank" rel="noopener noreferrer">Xbox Game Pass Ultimate</a> members will get access to redeem a code for 3 months of <a href="https://support.discord.com/hc/en-us/articles/115000435108" target="_blank" rel="noopener noreferrer">Discord Nitro</a>. </p>
-<p><img src="https://support.discord.com/hc/article_attachments/4411294641175/XBoxGamepassPromo_BlogHeader.png" alt="XBoxGamepassPromo_BlogHeader.png"></p>
+<p>We’re so happy to announce that Discord is once again partnering with Xbox! Starting October 26, 2021, <a href="https://www.xbox.com/en-US/xbox-game-pass" target="_blank" rel="noopener noreferrer">Xbox Game Pass Ultimate</a> members will get access to redeem a code for 3 months of <a href="https://support.discord.com/hc/en-us/articles/115000435108" target="_blank" rel="noopener noreferrer">Discord Nitro</a>. </p>
+<p><img src="https://support.discord.com/hc/article_attachments/4411294641175" alt="XBoxGamepassPromo_BlogHeader.png"></p>
 <h1><span class="wysiwyg-color-blue90 wysiwyg-font-size-x-large"><strong>TL;DR</strong></span></h1>
 <p><span class="wysiwyg-color-orange110"><strong>Offer Details:</strong></span><span style="font-weight: 400;"> 3 months of Discord Nitro for Xbox Game Pass Ultimate members</span></p>
 <p><span class="wysiwyg-color-orange110"><strong>Who is Eligible:</strong></span></p>
@@ -35,8 +35,6 @@
         </ul>
     </li>
 </ul>
-<p><span class="wysiwyg-color-orange110"><strong>Requirements:</strong></span></p>
-<p><span style="font-weight: 400;">Claim from Xbox by May 25, 2023 (4:59 PM PT) and redeem to Discord account by June 24, 2023 (4:59 PM PT) <br></span></p>
 <p><span class="wysiwyg-color-orange110"><strong>Subscription:</strong></span></p>
 <p><span style="font-weight: 400;">After the 3 month free trial period, your Nitro subscription will convert to a monthly recurring subscription, and Discord will bill your payment method every month until you cancel. In most countries, you will be charged US$9.99/month, but<a href="https://support.discord.com/hc/en-us/articles/4407269525911" target="_blank" rel="noopener noreferrer"> check this link here</a> for details. You can cancel at any time in your Discord User Settings. </span></p>
 <h2><strong>What does this article cover?</strong></h2>
@@ -83,12 +81,7 @@
 <h1 id="h_01FDVJQGEP1SR4WEYHD2Q5Z3KA"><strong>How do I claim the Nitro Promo from the Xbox App</strong></h1>
 <p>As long as you're an <strong>Xbox Game Pass Ultimate</strong> member, you'll be able to receive the Nitro code directly through your Xbox, the Xbox Windows app, or the Xbox Mobile App!</p>
 <h2 id="h_01FDVJQQVV8AXZBTT9K5VGQ3RX">Eligibility for the Claiming this Promotion from Xbox</h2>
-<p><span style="font-weight: 400;">In order to claim this promotion link, you'll need to be a new Xbox Game Pass member. Additionally, this promotion is only available in AU, AT, BE, BR, CA, CL, CO, CZ, DK, FI, FR, DE, GR, HK, HU, IN, IE, IL, IT, JP, MX, NL, NZ, NO, PL, PT, SG, SA, SK, ZA, ES, SE, CH, TW, AE, GB, US. <br></span></p>
-<ul>
-    <li style="font-weight: 400;" aria-level="1">
-        <span style="font-weight: 400;">The code must be claimed from Xbox</span><strong> </strong><span style="font-weight: 400;">by <strong>May 25, 2023 (4:59 PM PT)</strong>, otherwise it will no longer be available to claim</span>
-    </li>
-</ul>
+<p><span style="font-weight: 400;">In order to claim this promotion link, you'll need to be a new Xbox Game Pass member. Additionally, this promotion is only available in AU, AT, BE, BR, CA, CL, CO, CZ, DK, FI, FR, DE, GR, HK, HU, IN, IE, IL, IT, JP, MX, NL, NZ, NO, PL, PT, SG, SA, SK, ZA, ES, SE, CH, TW, AE, GB, US. </span></p>
 <h2 id="h_01FDVJQZZCZ7KT2T1ZFRC28Z48">Step By Step Claim Instructions </h2>
 <p class="wysiwyg-text-align-center"><span class="wysiwyg-font-size-large wysiwyg-color-green120"><strong>Step 1) Open your Xbox app</strong></span></p>
 <ul>
@@ -96,12 +89,12 @@
         <span style="font-weight: 400;">If you’re subscribed to Xbox Game Pass ultimate</span><strong>,</strong><span style="font-weight: 400;"> open the Xbox app (and log into your Xbox account if needed) on the console, PC or mobile app!</span>
     </li>
 </ul>
-<p class="wysiwyg-text-align-center"><img src="https://support.discord.com/hc/article_attachments/4411566234007/Screenshot_51.png" alt="Screenshot_51.png"></p>
+<p class="wysiwyg-text-align-center"><img src="https://support.discord.com/hc/article_attachments/4411566234007" alt="Screenshot_51.png"></p>
 <p class="wysiwyg-text-align-center"><span class="wysiwyg-font-size-large wysiwyg-color-green120"><strong>Step 2) Search for the Nitro Promo on the Perks tab</strong></span></p>
 <ul>
     <li><span style="font-weight: 400;">Once you have logged in, scroll through the Perks tab and search for the Discord Nitro promo and press/click on the Discord Nitro promo option. It should look like this below: </span></li>
 </ul>
-<p class="wysiwyg-text-align-center"><img src="https://support.discord.com/hc/article_attachments/4411560535447/Screenshot_52.png" alt="Screenshot_52.png"></p>
+<p class="wysiwyg-text-align-center"><img src="https://support.discord.com/hc/article_attachments/4411560535447" alt="Screenshot_52.png"></p>
 <p class="wysiwyg-text-align-center"><span class="wysiwyg-font-size-large wysiwyg-color-green120"><strong>Step 3) Press the Claim Button</strong></span></p>
 <ul>
     <li>
@@ -242,11 +235,7 @@
 </ul>
 <h2 id="h_01FDVJN4H9DRMMZFN9GERQVQ4D"><strong>Promotion Details</strong></h2>
 <p><span class="wysiwyg-color-blue90 wysiwyg-font-size-large"><strong>Q: How long does this promotion run for?</strong></span></p>
-<p><strong>A:</strong><span style="font-weight: 400;"> Xbox Game Pass Ultimate subscribers can claim Discord Nitro promo between<strong> October 26, 2021</strong> to <strong>May 25, 2023 (4:59 PM PT).</strong></span></p>
-<p><span style="font-weight: 400;">After <strong>May 25, 2023 (4:59 PM PT)</strong></span><span style="font-weight: 400;">, Xbox Game Pass Ultimate subscribers will no longer be able to claim this promotion.</span></p>
-<p><span class="wysiwyg-color-blue90 wysiwyg-font-size-large"><strong>Q: How long does the Discord Nitro promotion link last for?</strong></span></p>
-<p><strong>A:</strong><span style="font-weight: 400;"> You must redeem the Nitro promotion by<strong> June 24, 2023 (4:59 PM PT).</strong></span></p>
-<p><span style="font-weight: 400;">If a code has not been redeemed to the Discord account by <strong>June</strong><strong> 24, 2023 (4:59 PM PT)</strong></span><span style="font-weight: 400;">, it will expire and you will no longer be able to redeem three months of Discord Nitro. </span></p>
+<p><strong>A:</strong> Xbox Game Pass Ultimate subscribers can claim Discord Nitro promo starting<strong> October 26, 2021</strong>.</p>
 <h2 id="h_01FDVJNE6DJMVGV63BJ4Q61WJ7"><strong>Eligibility for the Promotion</strong></h2>
 <p><span class="wysiwyg-color-blue90 wysiwyg-font-size-large"><strong>Q: Who can claim this promotion from their Xbox app?</strong></span></p>
 <p><strong>A: </strong><span style="font-weight: 400;">To claim through the Xbox app, you must be a current </span><span style="font-weight: 400;">Xbox Game Pass Ultimate member. Additionally, this promotion is only available in AR, AU, AT, BE, BR, CA, CL, CO, CZ, DK, FI, FR, DE, GR, HK, HU, IN, IE, IL, IT, JP, MX, NL, NZ, NO, PL, PT, SG, SA, ZA, ES, SE, CH, TW, TR, AE, GB, US. <br></span></p>
