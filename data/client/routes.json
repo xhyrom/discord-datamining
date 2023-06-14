@@ -780,13 +780,6 @@
       "OPTIONS"
     ]
   },
-  "FORUM_POSTS": {
-    "url": "/channels/:param/post-data",
-    "allowed_methods": [
-      "OPTIONS",
-      "POST"
-    ]
-  },
   "PARTNER_REQUIREMENTS": {
     "url": "/partners/:param/requirements",
     "allowed_methods": [
@@ -3983,13 +3976,6 @@
     "allowed_methods": [
       "OPTIONS",
       "POST"
-    ]
-  },
-  "SHARED_CANVAS_EMOJI_HOSE": {
-    "url": "/channels/:param/:param/shared-canvas/emoji-hose/:param",
-    "allowed_methods": [
-      "DELETE",
-      "OPTIONS"
     ]
   },
   "USER_PREMIUM_LIKELIHOOD": {
