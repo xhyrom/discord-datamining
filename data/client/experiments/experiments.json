@@ -7546,6 +7546,25 @@
   {
     "data": {
       "kind": "user",
+      "id": "2023-06_birthday_goodbye",
+      "label": "Activities Free Forever",
+      "description": [
+        "Control",
+        "Treatment 1: Enable Activities Free Forever"
+      ],
+      "hash": 2205929113,
+      "buckets": [
+        0,
+        1
+      ],
+      "config_keys": [
+        "enabled"
+      ]
+    }
+  },
+  {
+    "data": {
+      "kind": "user",
       "id": "2021-11_discovery_tags",
       "label": "Discovery Tags",
       "description": [
