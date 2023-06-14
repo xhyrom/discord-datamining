@@ -22924,8 +22924,13 @@ html.disable-forced-colors * {
     --redesign-button-danger-background: var(--red-430);
     --redesign-button-danger-pressed-background: var(--red-460);
     --redesign-button-danger-text: var(--white-500);
-    --redesign-button-floating-background: var(--white-500);
-    --redesign-button-floating-pressed-background: var(--primary-730);
+    --redesign-button-overlay-alpha-background: hsl(var(--black-500-hsl)/0.54);
+    --redesign-button-overlay-alpha-border: hsl(var(--black-500-hsl)/0);
+    --redesign-button-overlay-alpha-pressed-background: hsl(var(--black-500-hsl)/0.64);
+    --redesign-button-overlay-alpha-text: var(--white-500);
+    --redesign-button-overlay-background: var(--white-500);
+    --redesign-button-overlay-pressed-background: var(--primary-230);
+    --redesign-button-overlay-text: var(--primary-860);
     --redesign-button-positive-background: var(--green-430);
     --redesign-button-positive-pressed-background: var(--green-460);
     --redesign-button-positive-text: var(--white-500);
@@ -22936,9 +22941,9 @@ html.disable-forced-colors * {
     --redesign-button-primary-alt-on-blurple-pressed-background: var(--brand-530);
     --redesign-button-primary-alt-on-blurple-pressed-border: var(--brand-360);
     --redesign-button-primary-alt-on-blurple-text: var(--white-500);
-    --redesign-button-primary-alt-pressed-background: hsl(var(--brand-500-hsl)/0.08);
-    --redesign-button-primary-alt-pressed-border: var(--brand-330);
-    --redesign-button-primary-alt-pressed-text: var(--brand-330);
+    --redesign-button-primary-alt-pressed-background: hsl(var(--brand-700-hsl)/0.16);
+    --redesign-button-primary-alt-pressed-border: hsl(var(--brand-400-hsl)/0.5);
+    --redesign-button-primary-alt-pressed-text: var(--brand-360);
     --redesign-button-primary-alt-text: var(--brand-360);
     --redesign-button-primary-background: var(--brand-500);
     --redesign-button-primary-on-blurple-background: var(--white-500);
@@ -22948,12 +22953,12 @@ html.disable-forced-colors * {
     --redesign-button-primary-pressed-background: var(--brand-560);
     --redesign-button-primary-text: var(--white-500);
     --redesign-button-secondary-alt-background: var(--primary-530);
-    --redesign-button-secondary-alt-border: var(--primary-530);
+    --redesign-button-secondary-alt-border: hsl(var(--black-500-hsl)/0);
     --redesign-button-secondary-alt-pressed-background: var(--primary-560);
-    --redesign-button-secondary-alt-pressed-border: var(--primary-560);
-    --redesign-button-secondary-background: var(--primary-500);
-    --redesign-button-secondary-border: var(--primary-500);
-    --redesign-button-secondary-pressed-background: var(--primary-530);
+    --redesign-button-secondary-alt-text: var(--white-500);
+    --redesign-button-secondary-background: var(--primary-460);
+    --redesign-button-secondary-border: hsl(var(--black-500-hsl)/0);
+    --redesign-button-secondary-pressed-background: var(--primary-500);
     --redesign-button-secondary-text: var(--white-500);
     --redesign-only-background-active: var(--primary-530);
     --redesign-only-background-default: var(--primary-700);
@@ -23135,8 +23140,13 @@ html.disable-forced-colors * {
     --redesign-button-danger-background: var(--red-430);
     --redesign-button-danger-pressed-background: var(--red-460);
     --redesign-button-danger-text: var(--white-500);
-    --redesign-button-floating-background: var(--white-500);
-    --redesign-button-floating-pressed-background: var(--primary-730);
+    --redesign-button-overlay-alpha-background: hsl(var(--black-500-hsl)/0.54);
+    --redesign-button-overlay-alpha-border: hsl(var(--black-500-hsl)/0);
+    --redesign-button-overlay-alpha-pressed-background: hsl(var(--black-500-hsl)/0.64);
+    --redesign-button-overlay-alpha-text: var(--white-500);
+    --redesign-button-overlay-background: var(--white-500);
+    --redesign-button-overlay-pressed-background: var(--primary-230);
+    --redesign-button-overlay-text: var(--primary-860);
     --redesign-button-positive-background: var(--green-430);
     --redesign-button-positive-pressed-background: var(--green-460);
     --redesign-button-positive-text: var(--white-500);
@@ -23147,7 +23157,7 @@ html.disable-forced-colors * {
     --redesign-button-primary-alt-on-blurple-pressed-background: var(--brand-530);
     --redesign-button-primary-alt-on-blurple-pressed-border: var(--brand-360);
     --redesign-button-primary-alt-on-blurple-text: var(--white-500);
-    --redesign-button-primary-alt-pressed-background: hsl(var(--brand-500-hsl)/0.08);
+    --redesign-button-primary-alt-pressed-background: hsl(var(--brand-500-hsl)/0.06);
     --redesign-button-primary-alt-pressed-border: var(--brand-330);
     --redesign-button-primary-alt-pressed-text: var(--brand-560);
     --redesign-button-primary-alt-text: var(--brand-500);
@@ -23159,9 +23169,9 @@ html.disable-forced-colors * {
     --redesign-button-primary-pressed-background: var(--brand-560);
     --redesign-button-primary-text: var(--white-500);
     --redesign-button-secondary-alt-background: hsl(var(--black-500-hsl)/0.08);
-    --redesign-button-secondary-alt-border: hsl(var(--black-500-hsl)/0.08);
+    --redesign-button-secondary-alt-border: hsl(var(--black-500-hsl)/0);
     --redesign-button-secondary-alt-pressed-background: hsl(var(--black-500-hsl)/0.16);
-    --redesign-button-secondary-alt-pressed-border: hsl(var(--black-500-hsl)/0.16);
+    --redesign-button-secondary-alt-text: var(--primary-700);
     --redesign-button-secondary-background: var(--white-500);
     --redesign-button-secondary-border: hsl(var(--black-500-hsl)/0.08);
     --redesign-button-secondary-pressed-background: var(--primary-130);
@@ -23298,8 +23308,13 @@ html.disable-forced-colors * {
     --redesign-button-danger-background: var(--red-430);
     --redesign-button-danger-pressed-background: var(--red-460);
     --redesign-button-danger-text: var(--white-500);
-    --redesign-button-floating-background: var(--white-500);
-    --redesign-button-floating-pressed-background: var(--primary-730);
+    --redesign-button-overlay-alpha-background: hsl(var(--black-500-hsl)/0.54);
+    --redesign-button-overlay-alpha-border: hsl(var(--black-500-hsl)/0);
+    --redesign-button-overlay-alpha-pressed-background: hsl(var(--black-500-hsl)/0.64);
+    --redesign-button-overlay-alpha-text: var(--white-500);
+    --redesign-button-overlay-background: var(--white-500);
+    --redesign-button-overlay-pressed-background: var(--primary-230);
+    --redesign-button-overlay-text: var(--primary-860);
     --redesign-button-positive-background: var(--green-430);
     --redesign-button-positive-pressed-background: var(--green-460);
     --redesign-button-positive-text: var(--white-500);
@@ -23310,9 +23325,9 @@ html.disable-forced-colors * {
     --redesign-button-primary-alt-on-blurple-pressed-background: var(--brand-530);
     --redesign-button-primary-alt-on-blurple-pressed-border: var(--brand-360);
     --redesign-button-primary-alt-on-blurple-text: var(--white-500);
-    --redesign-button-primary-alt-pressed-background: hsl(var(--brand-500-hsl)/0.08);
-    --redesign-button-primary-alt-pressed-border: var(--brand-330);
-    --redesign-button-primary-alt-pressed-text: var(--brand-330);
+    --redesign-button-primary-alt-pressed-background: hsl(var(--brand-700-hsl)/0.16);
+    --redesign-button-primary-alt-pressed-border: hsl(var(--brand-400-hsl)/0.5);
+    --redesign-button-primary-alt-pressed-text: var(--brand-360);
     --redesign-button-primary-alt-text: var(--brand-360);
     --redesign-button-primary-background: var(--brand-500);
     --redesign-button-primary-on-blurple-background: var(--white-500);
@@ -23322,12 +23337,12 @@ html.disable-forced-colors * {
     --redesign-button-primary-pressed-background: var(--brand-560);
     --redesign-button-primary-text: var(--white-500);
     --redesign-button-secondary-alt-background: var(--primary-530);
-    --redesign-button-secondary-alt-border: var(--primary-530);
+    --redesign-button-secondary-alt-border: hsl(var(--black-500-hsl)/0);
     --redesign-button-secondary-alt-pressed-background: var(--primary-560);
-    --redesign-button-secondary-alt-pressed-border: var(--primary-560);
-    --redesign-button-secondary-background: var(--primary-500);
-    --redesign-button-secondary-border: var(--primary-500);
-    --redesign-button-secondary-pressed-background: var(--primary-530);
+    --redesign-button-secondary-alt-text: var(--white-500);
+    --redesign-button-secondary-background: var(--primary-460);
+    --redesign-button-secondary-border: hsl(var(--black-500-hsl)/0);
+    --redesign-button-secondary-pressed-background: var(--primary-500);
     --redesign-button-secondary-text: var(--white-500);
     --redesign-only-background-active: var(--primary-530);
     --redesign-only-background-default: var(--primary-700);
@@ -23515,8 +23530,13 @@ html.disable-forced-colors * {
     --redesign-button-danger-background: var(--red-430);
     --redesign-button-danger-pressed-background: var(--red-460);
     --redesign-button-danger-text: var(--white-500);
-    --redesign-button-floating-background: var(--white-500);
-    --redesign-button-floating-pressed-background: var(--primary-730);
+    --redesign-button-overlay-alpha-background: hsl(var(--black-500-hsl)/0.54);
+    --redesign-button-overlay-alpha-border: hsl(var(--black-500-hsl)/0);
+    --redesign-button-overlay-alpha-pressed-background: hsl(var(--black-500-hsl)/0.64);
+    --redesign-button-overlay-alpha-text: var(--white-500);
+    --redesign-button-overlay-background: var(--white-500);
+    --redesign-button-overlay-pressed-background: var(--primary-230);
+    --redesign-button-overlay-text: var(--primary-860);
     --redesign-button-positive-background: var(--green-430);
     --redesign-button-positive-pressed-background: var(--green-460);
     --redesign-button-positive-text: var(--white-500);
@@ -23527,9 +23547,9 @@ html.disable-forced-colors * {
     --redesign-button-primary-alt-on-blurple-pressed-background: var(--brand-530);
     --redesign-button-primary-alt-on-blurple-pressed-border: var(--brand-360);
     --redesign-button-primary-alt-on-blurple-text: var(--white-500);
-    --redesign-button-primary-alt-pressed-background: hsl(var(--brand-500-hsl)/0.08);
-    --redesign-button-primary-alt-pressed-border: var(--brand-330);
-    --redesign-button-primary-alt-pressed-text: var(--brand-330);
+    --redesign-button-primary-alt-pressed-background: hsl(var(--brand-700-hsl)/0.16);
+    --redesign-button-primary-alt-pressed-border: hsl(var(--brand-400-hsl)/0.5);
+    --redesign-button-primary-alt-pressed-text: var(--brand-360);
     --redesign-button-primary-alt-text: var(--brand-360);
     --redesign-button-primary-background: var(--brand-500);
     --redesign-button-primary-on-blurple-background: var(--white-500);
@@ -23539,12 +23559,12 @@ html.disable-forced-colors * {
     --redesign-button-primary-pressed-background: var(--brand-560);
     --redesign-button-primary-text: var(--white-500);
     --redesign-button-secondary-alt-background: var(--primary-530);
-    --redesign-button-secondary-alt-border: var(--primary-530);
+    --redesign-button-secondary-alt-border: hsl(var(--black-500-hsl)/0);
     --redesign-button-secondary-alt-pressed-background: var(--primary-560);
-    --redesign-button-secondary-alt-pressed-border: var(--primary-560);
-    --redesign-button-secondary-background: var(--primary-500);
-    --redesign-button-secondary-border: var(--primary-500);
-    --redesign-button-secondary-pressed-background: var(--primary-530);
+    --redesign-button-secondary-alt-text: var(--white-500);
+    --redesign-button-secondary-background: var(--primary-460);
+    --redesign-button-secondary-border: hsl(var(--black-500-hsl)/0);
+    --redesign-button-secondary-pressed-background: var(--primary-500);
     --redesign-button-secondary-text: var(--white-500);
     --redesign-only-background-active: var(--dontuse-14);
     --redesign-only-background-default: var(--dontuse-20);
@@ -23571,6 +23591,8 @@ html.disable-forced-colors * {
 .theme-dark {
     --shadow-border: 0 0 0 1px hsla(0, 0%, 100%, 0.08);
     --shadow-border-filter: drop-shadow(0 0 1px hsla(0, 0%, 100%, 0.08));
+    --shadow-button-overlay: 0 12px 24px 0 rgba(0, 0, 0, 0.24);
+    --shadow-button-overlay-filter: drop-shadow(0 12px 24px rgba(0, 0, 0, 0.24));
     --shadow-high: 0 12px 24px 0 rgba(0, 0, 0, 0.24);
     --shadow-high-filter: drop-shadow(0 12px 24px rgba(0, 0, 0, 0.24));
     --shadow-ledge: 0 2px 0 0 rgba(0, 0, 0, 0.05), 0 1.5px 0 0 rgba(0, 0, 0, 0.05), 0 1px 0 0 rgba(0, 0, 0, 0.16);
@@ -23596,6 +23618,8 @@ html.disable-forced-colors * {
 .theme-light {
     --shadow-border: 0 0 0 1px rgba(0, 0, 0, 0.08);
     --shadow-border-filter: drop-shadow(0 0 1px rgba(0, 0, 0, 0.08));
+    --shadow-button-overlay: 0 12px 24px 0 rgba(0, 0, 0, 0.24);
+    --shadow-button-overlay-filter: drop-shadow(0 12px 24px rgba(0, 0, 0, 0.24));
     --shadow-high: 0 12px 36px 0 rgba(0, 0, 0, 0.12);
     --shadow-high-filter: drop-shadow(0 12px 36px rgba(0, 0, 0, 0.12));
     --shadow-ledge: 0 2px 0 0 rgba(0, 0, 0, 0.025), 0 1.5px 0 0 rgba(0, 0, 0, 0.025), 0 1px 0 0 rgba(0, 0, 0, 0.08);
@@ -23622,6 +23646,8 @@ html.disable-forced-colors * {
 .theme-darker {
     --shadow-border: 0 0 0 1px hsla(0, 0%, 100%, 0.08);
     --shadow-border-filter: drop-shadow(0 0 1px hsla(0, 0%, 100%, 0.08));
+    --shadow-button-overlay: 0 12px 24px 0 rgba(0, 0, 0, 0.24);
+    --shadow-button-overlay-filter: drop-shadow(0 12px 24px rgba(0, 0, 0, 0.24));
     --shadow-high: 0 12px 24px 0 rgba(0, 0, 0, 0.24);
     --shadow-high-filter: drop-shadow(0 12px 24px rgba(0, 0, 0, 0.24));
     --shadow-ledge: 0 2px 0 0 rgba(0, 0, 0, 0.05), 0 1.5px 0 0 rgba(0, 0, 0, 0.05), 0 1px 0 0 rgba(0, 0, 0, 0.16);
@@ -159560,4 +159586,4 @@ html .invoiceCancelRow-dVOR64 {
     flex-direction: column
 }
 
-/*# sourceMappingURL=40532.2b73000bfc074b4425cc.css.map*/
+/*# sourceMappingURL=40532.a8a33fb9a12a57c04c65.css.map*/
