@@ -2466,6 +2466,13 @@
       "POST"
     ]
   },
+  "APPLICATION_BRANCHES": {
+    "url": "/branches",
+    "allowed_methods": [
+      "OPTIONS",
+      "POST"
+    ]
+  },
   "APPLICATION_PUBLIC": {
     "url": "/applications/:param/public",
     "allowed_methods": [
