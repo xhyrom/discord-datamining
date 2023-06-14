@@ -3,7 +3,7 @@
 <h1>How Do I Prevent Deletion</h1>
 <p>If you were notified that your account is going to be deleted because of inactivity - you can prevent the deletion by logging into Discord on the website or app. The email/phone number associated with your account should have been included in the message you received.</p>
 <p>Once you log into your account you should receive a message from Discord to let you know that the account deletion has been canceled:</p>
-<p class="wysiwyg-text-align-center"><img src="https://support.discord.com/hc/article_attachments/5304409745047/Untitled.png" alt="Untitled.png"></p>
+<p class="wysiwyg-text-align-center"><img src="https://support.discord.com/hc/article_attachments/5304409745047" alt="Untitled.png"></p>
 <h3>Note: If you have two-factor authentication enabled and you can’t find your codes <a class="notion-link-token notion-enable-hover" href="https://support.discord.com/hc/articles/115001221072-Lost-Two-Factor-Codes" target="_blank" rel="noopener noreferrer" data-token-index="1" data-reactroot="">you can learn more here</a>. If you do not have access to your backup codes, we are unable to remove 2FA and you will have to create a new account. Unfortunately, Discord cannot remove 2FA or issue you new backup codes.</h3>
 <h2><strong>How Do I Request My Account To Be Deleted?</strong></h2>
 <p>You can always manage your account in user settings including <a href="https://support.discord.com/hc/articles/212500837-How-do-I-permanently-delete-my-account-" target="_blank" rel="noopener noreferrer">asking for your account to be deleted</a>.</p>
