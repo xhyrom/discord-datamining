@@ -15231,7 +15231,7 @@
   "CLYDE_VIEW_SOURCE_SHOW_TOOLTIP": "\"View Sources\"",
   "CLYDE_VIEW_SOURCE_HIDE_TOOLTIP": "\"Hide Sources\"",
   "VOICE_PANEL_MEMBER_IS_STREAMING": "\"{member} is streaming\"",
-  "VOICE_PANEL_EMPTY_SUBTITLE": "\"No one’s here yet! When you are ready to talk, just hop in.\"",
+  "VOICE_PANEL_EMPTY_SUBTITLE": "\"No one’s here yet!\\nWhen you are ready to talk, just hop in.\"",
   "VOICE_PANEL_STREAM_PREVIEW_HEADER": "\"{username}'s stream\"",
   "BROADCASTING_SETTINGS": "\"Broadcasting Settings\"",
   "BROADCASTING_SETTINGS_DESCRIPTION": "\"Control who can see your broadcast.\"",
