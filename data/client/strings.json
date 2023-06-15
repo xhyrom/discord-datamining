@@ -3806,6 +3806,7 @@
   "SEND_WAVE": "\"Send a wave\"",
   "WAVE_TO": "\"Wave to !!{username}!!\"",
   "WAVE_DEFAULT_RECIPIENT": "\"your pal\"",
+  "WAVE_CTA": "\"👋  Wave\"",
   "NEXT": "\"Next\"",
   "BACKSPACE": "\"Backspace\"",
   "SYSTEM_KEYBOARD": "\"System keyboard\"",
