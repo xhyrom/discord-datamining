@@ -13115,7 +13115,7 @@
   "QUICKSEARCH_LINKS": "\"Links\"",
   "QUICKSEARCH_FILES": "\"Files\"",
   "QUICKSEARCH_MESSAGES": "\"Messages\"",
-  "QUICKSEARCH_CONVERSATIONS": "\"Conversations\"",
+  "QUICKSEARCH_PEOPLE": "\"People\"",
   "QUICKSEARCH_PINS": "\"Pins\"",
   "SERVER_ACTIVITY_STATUS_RESTRICTION": "\"Share your activity status in this server\"",
   "SERVER_ACTIVITY_STATUS_RESTRICTION_NOTE": "\"[Learn more about this setting here.]({helpdeskArticle})\"",
