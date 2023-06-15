@@ -1733,7 +1733,7 @@
     ]
   },
   "CALLSCOPE_LOGS": {
-    "url": "/callscope/logs/:param/user/:param/%3Aparam",
+    "url": "/callscope/logs/:param/user/:param/:param",
     "allowed_methods": null
   },
   "REPORT_V2": {
