@@ -244,6 +244,10 @@
     "url": "/guilds/:param/members/:param/nick",
     "allowed_methods": null
   },
+  "GUILD_MEMBER_AVATAR": {
+    "url": "/guilds/:param/users/:param/avatars/:param.:param",
+    "allowed_methods": null
+  },
   "SET_GUILD_MEMBER": {
     "url": "/guilds/:param/members/@me",
     "allowed_methods": [
@@ -1730,6 +1734,13 @@
   },
   "REPORT_V2": {
     "url": "/reports",
+    "allowed_methods": [
+      "OPTIONS",
+      "POST"
+    ]
+  },
+  "STAGE_REPORT": {
+    "url": "/reports/channels/:param/messages/:param",
     "allowed_methods": [
       "OPTIONS",
       "POST"
