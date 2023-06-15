@@ -74657,6 +74657,57 @@ strong {
     color: var(--text-danger)
 }
 
+.paginationContainer-1LecDm {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    padding: 4px 16px;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    border-top: 1px solid var(--background-modifier-accent)
+}
+
+.pagination-1WlC9Y {
+    -webkit-box-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+    padding: 0
+}
+
+.paginationInput-2-XoMf {
+    margin-top: 0
+}
+
+.paginationInput-2-XoMf>nav {
+    margin: 0 0 0 auto
+}
+
+.pageSizeInput-MBIIbl {
+    padding: 4px 4px 4px 8px
+}
+
+.pageSizeSelection--FwCJx {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    gap: 8px;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: end;
+    -ms-flex-pack: end;
+    justify-content: flex-end
+}
+
 .heading-sm-normal-2Fc_3V {
     font-weight: 400
 }
@@ -75136,16 +75187,8 @@ strong {
 }
 
 .memberRowContainer-ZDlmmA {
-    border-bottom: 1px solid var(--background-modifier-accent)
-}
-
-.memberRowContainer-ZDlmmA .actionCell-1tWIj3 {
-    opacity: 1;
-    color: var(--interactive-normal)
-}
-
-.memberRowContainer-ZDlmmA .actionCell-1tWIj3:hover {
-    color: var(--interactive-active)
+    -webkit-transition: background-color 80ms ease-in-out;
+    transition: background-color 80ms ease-in-out
 }
 
 .memberRowContainer-ZDlmmA:hover {
@@ -75162,20 +75205,68 @@ strong {
 }
 
 .memberRowContainer-ZDlmmA.selected-3uRybE .actionCell-1tWIj3 {
-    opacity: 1;
     color: var(--interactive-active)
 }
 
 .memberRowContainer-ZDlmmA td {
     padding: 8px;
+    position: relative;
     font-family: var(--font-primary);
     font-weight: 500;
     color: var(--text-normal);
     vertical-align: middle
 }
 
+.memberRowContainer-ZDlmmA td:after {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 1px;
+    opacity: 1;
+    background: var(--background-modifier-accent);
+    -webkit-transition: opacity 80ms ease-in-out;
+    transition: opacity 80ms ease-in-out
+}
+
+.memberRowContainer-ZDlmmA:hover+.memberRowContainer-ZDlmmA td:after,
+.memberRowContainer-ZDlmmA:hover td:after {
+    opacity: 0
+}
+
+.memberRowContainer-ZDlmmA:first-child td:after {
+    content: none
+}
+
+.smallCol-2P9JQN {
+    width: 11%
+}
+
+.mediumCol-1_4CO- {
+    width: 22%
+}
+
 .actionCell-1tWIj3 {
-    text-align: right
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: end;
+    -ms-flex-pack: end;
+    justify-content: flex-end;
+    gap: 8px;
+    color: var(--interactive-normal)
+}
+
+.actionCell-1tWIj3:hover {
+    color: var(--interactive-active)
 }
 
 .memberNameContainer-IOGroW {
@@ -75191,17 +75282,42 @@ strong {
 }
 
 .communicationDisabledTooltip-2NNACU {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
     -ms-flex-direction: column;
     flex-direction: column;
+    gap: 4px
+}
+
+.button-2XiUpU,
+.communicationDisabledTooltip-2NNACU {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
     -webkit-box-align: center;
     -ms-flex-align: center;
-    align-items: center;
-    gap: 4px
+    align-items: center
+}
+
+.button-2XiUpU {
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    width: 28px;
+    height: 28px;
+    cursor: pointer;
+    border-radius: var(--radius-round);
+    background-color: var(--background-modifier-accent);
+    -webkit-transition: background-color 80ms ease-in-out;
+    transition: background-color 80ms ease-in-out
+}
+
+.button-2XiUpU:hover {
+    background-color: var(--background-modifier-hover)
+}
+
+.button-2XiUpU:active {
+    background-color: var(--background-modifier-active)
 }
 
 .searchInputContainer-2O9YCK {
@@ -75247,6 +75363,52 @@ strong {
     -webkit-box-flex: 0;
     -ms-flex: 0;
     flex: 0
+}
+
+.newMembersNotice-35VT6e {
+    background-color: var(--brand-500);
+    border-radius: var(--radius-sm);
+    -webkit-transition: background-color 60ms ease-in-out;
+    transition: background-color 60ms ease-in-out;
+    cursor: pointer
+}
+
+.newMembersNotice-35VT6e td {
+    padding: 0 12px;
+    vertical-align: middle;
+    white-space: nowrap
+}
+
+.newMembersNotice-35VT6e:hover {
+    background-color: var(--brand-400)
+}
+
+.newMembersNotice-35VT6e:active {
+    background-color: var(--brand-600)
+}
+
+.memberNoticeAction-2fkFdr {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    gap: 4px
+}
+
+.memberNoticeActionButton-1aWxaM {
+    padding: 0;
+    font-weight: 400
+}
+
+.memberNoticeActionIcon-2eN7bb {
+    width: 20px;
+    height: 20px
 }
 
 .heading-sm-normal-1nsSx5 {
@@ -75716,115 +75878,17 @@ strong {
     border-top: 1px solid var(--background-modifier-accent)
 }
 
-.newMembersNotice-F1ekSD {
-    background-color: var(--brand-500);
-    border-radius: var(--radius-sm)
-}
-
-.newMembersNotice-F1ekSD td {
-    padding: 0 12px;
-    vertical-align: middle;
-    white-space: nowrap
-}
-
-.memberNoticeAction-3Jyeju {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: row;
-    flex-direction: row;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
-    gap: 4px
-}
-
-.memberNoticeActionButton-b-Hzhe {
-    padding: 0;
-    font-weight: 400
-}
-
-.memberNoticeActionIcon-7zwLV1 {
-    width: 20px;
-    height: 20px
-}
-
-.tableScroller-Aos1wP {
-    position: relative;
-    -webkit-box-orient: vertical;
-    -ms-flex-direction: column;
-    flex-direction: column;
-    -webkit-box-flex: 1;
-    -ms-flex: 1;
-    flex: 1;
-    max-height: 560px
-}
-
-.paginationContainer-39gOvZ,
-.tableScroller-Aos1wP {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-direction: normal
-}
-
-.paginationContainer-39gOvZ {
-    -webkit-box-orient: horizontal;
-    -ms-flex-direction: row;
-    flex-direction: row;
-    padding: 4px 16px;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
-    border-top: 1px solid var(--background-modifier-accent)
-}
-
-.pagination-33yvg7 {
-    -webkit-box-flex: 1;
-    -ms-flex: 1;
-    flex: 1;
-    padding: 0
-}
-
-.paginationInput-1FKZ7X {
-    margin-top: 0
-}
-
-.paginationInput-1FKZ7X>nav {
-    margin: 0 0 0 auto
-}
-
-.pageSizeInput-3OOk_2 {
-    padding: 4px 4px 4px 8px
-}
-
-.pageSizeSelection-hzlbwF {
-    -webkit-box-orient: horizontal;
-    -ms-flex-direction: row;
-    flex-direction: row;
-    gap: 8px;
-    -webkit-box-pack: end;
-    -ms-flex-pack: end;
-    justify-content: flex-end
-}
-
-.noResultsContainer-2I8NLc,
-.pageSizeSelection-hzlbwF {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-direction: normal;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center
-}
-
 .noResultsContainer-2I8NLc {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
     -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
     -ms-flex-direction: column;
     flex-direction: column;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
     -webkit-box-pack: center;
     -ms-flex-pack: center;
     justify-content: center;
@@ -159739,4 +159803,4 @@ html .invoiceCancelRow-dVOR64 {
     flex-direction: column
 }
 
-/*# sourceMappingURL=40532.d81585b72aec86189968.css.map*/
+/*# sourceMappingURL=40532.ed7702f97a616a28fc25.css.map*/
