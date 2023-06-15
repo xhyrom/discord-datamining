@@ -1,26 +1,26 @@
 <div class="column-4 w-col w-col-8 w-col-stack">
     <div id="heading-1" class="rich-wrapper">
         <div class="blog-post-content w-richtext">
-            <p><strong>It’s our birthday! All Activities are free until June 15, 2023; go check out our </strong><a href="http://dis.gd/birthday"><strong>birthday blog</strong></a><strong> for more info!</strong></p>
+            <p><strong>Editor’s Note: Activities are now open for everyone! Read on to see what Activities are available.</strong></p>
             <div class="w-embed">
                 <hr class="hr-style">
             </div>
             <p>If you’ve created lasting memories of playing games and watching videos with some of your closest friends on Discord, it’s about to get way easier to recreate those moments. Now announcing <strong>Activities: a way to instantly enjoy shared experiences with friends, such as games and media, on Discord itself.</strong><br></p>
-            <div class="w-embed w-iframe">
-                <center><iframe width="560" height="315" src="https://www.youtube.com/embed/8jD0dkCgF7k" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe></center>
-            </div>
-            <p>Anyone in a Voice channel on desktop, web, or mobile can jump in on Activities; just hit the tantalizing new Rocket Ship button and you’re a part of the action.&nbsp;</p>
-            <p>‍<strong>For a limited time, everyone will be able to access three Activities: Watch Together, Putt Party, and Gartic Phone. </strong>Discord Nitro subscribers can access even more Activities, and their friends can join in even if they aren’t subscribed to Nitro themselves.</p>
+            <figure class="w-richtext-figure-type-video w-richtext-align-fullwidth" style="padding-bottom:56.206088992974244%">
+                <div><iframe allowfullscreen="true" frameborder="0" scrolling="no" src="https://www.youtube.com/embed/POMIDMK6WfM" title="Activities"></iframe></div>
+            </figure>
+            <p>Anyone in a Voice chat on desktop, web, or mobile can jump in on Activities; just hit the tantalizing new Rocket Ship button and you’re a part of the action.&nbsp;</p>
+            <p><strong>Activities are open to everyone! </strong>Anyone in a Voice call on desktop, web, or mobile can jump in on Activities; just hit the tantalizing new Rocket Ship button and you’re a part of the action.<br>‍</p>
         </div>
     </div>
     <div class="btn-wrapper w-condition-invisible"><a href="#" class="btn-blog w-dyn-bind-empty w-button"></a></div>
     <div id="heading-2" class="rich-wrapper">
         <div class="blog-post-content w-richtext">
             <h2><strong>How to Start or Join Activities on Discord</strong></h2>
-            <p>Next time you’re hanging out in Voice chat, you’ll see a new Rocket Ship icon right next to your Video and Screenshare buttons. Picking it will present you with all the Activities on offer. Just pick one to get started!</p>
-            <figure class="w-richtext-figure-type-image w-richtext-align-fullwidth" style="max-width:698pxpx">
-                <div><img src="https://assets-global.website-files.com/5f9072399b2640f14d6a2bf4/633cbeb7c9573285faaad671_eIxZ6Kf-BBvz23j_vJO8lWEzwbj1G1x2T6ya-WieF_PMNLVSAJ2-6t7UHznWvDSrvpbzRM0KyrmRWe2VwJDGlDYC4zU04V4C30M7Y5ilnworfuudOpquLXdkNggnBSu7WEP1i-hkKZkre6meLO_4zdFfz2jbJt7KG6l5lUd56TfW3spyC-cvEJy0aA.png" alt="A screenshot of the desktop Discord app. A new button with an icon of a Rocket Ship is prominently displayed."></div>
-                <figcaption>The new green Rocket Ship button is ready to launch (your Activity).&nbsp;&nbsp;</figcaption>
+            <p>Next time you’re hanging out in Voice chat in either a Server or DM call, you’ll see a new Rocket Ship icon right next to your Video and Screen Share buttons. Picking it will present you with all the Activities on offer. Just pick one to get started.</p>
+            <figure class="w-richtext-figure-type-image w-richtext-align-fullwidth" style="max-width:1204pxpx">
+                <div><img src="https://assets-global.website-files.com/5f9072399b2640f14d6a2bf4/648b3df770c72077664ce63d_5bHcTuybaMFjuyxoxOiyMtSwGpQH9xboh_3i53MuzBmUKdqr9CxfTANYbzTc2Zo4NOBAWVsr3GTfgaI75F_5XX4QuZZyyrc8FCxI9ufywpzm263gaYInBnqfbfMD9t24dG4f3qCsgHTglFll0IwybhE.png" alt="A screenshot of the desktop Discord app. A new button with an icon of a Rocket Ship is displayed."></div>
+                <figcaption>The new Rocket Ship button is ready to launch (your Activity).&nbsp;&nbsp;</figcaption>
             </figure>
             <p>If a friend has already started an Activity you’d like to join, hover over the Voice channel they’re in and you’ll see a new “Join Activity” option.&nbsp;</p>
             <figure class="w-richtext-figure-type-image w-richtext-align-fullwidth" style="max-width:1198pxpx">
@@ -30,55 +30,52 @@
             <p>Each game has its own participant count, with some even having an <em>unlimited</em> number of participants. Ever wanted to throw a massive Chess tournament in your server? Then don’t <em>en passant </em>on this feature.</p>
             <p>Of course, <strong>you don’t all have to be doing the same Activity together</strong>. You can all enjoy different Activities in the same Voice channel, or, depending on a particular Activity’s participant cap, everyone can join the same Activity — anything goes. It’s the internet. It’s not like there’s a shortage of virtual chess boards.&nbsp;<br></p>
             <figure class="w-richtext-figure-type-image w-richtext-align-fullwidth" style="max-width:1600pxpx">
-                <div><img src="https://assets-global.website-files.com/5f9072399b2640f14d6a2bf4/633cbeb8816a5e0066d3fec9_ua38vJkuZ2DmMW9dMprlbCsQHh9vrEkJwsQZW2RyKT2-pXaX2a3PSC9OQrB1vFb78oWQPWKMswLkrFK6fgz2NWiVBr1J3WL7tQQxzcF8yAsFyZzbQqhjNK0O4GxmuUWiqkrgf6YzXl1I-7w4N1l9NAn6BOMPISCvVCiQbmjFGKwYnMGGZZhiJYOlrw.png" alt="Seven friends are playing a new Discord Activity: Sketch Heads.&nbsp;"></div>
+                <div><img src="https://assets-global.website-files.com/5f9072399b2640f14d6a2bf4/648b3df7e68935a80d5c8ed6_BLM8TiYbL0NhCpnVD-r2m0OAKmUmVAOPFulkhKZnQ6Bo3Fj5Xqt6aOyhP_V4NH98iPVR1oxLCv6PiyK37FimBkOeFFQuMoQtf1Bd15dFR__0yT-5IkpJzBGAwDmVoxcJwn5ay9JRm2U0Bgl3C3fY6_0.png" alt="Seven friends are playing a new Discord Activity: Sketch Heads.&nbsp;"></div>
             </figure>
             <p>So there you have it: if you just want to chill and play games with your server, you don’t have to make a spreadsheet of game libraries and schedule things out six months in advance. And if you want to watch a video with everybody, you don’t have to all hit “play” at the same time like you’re doing the world’s lowest-stakes heist.&nbsp;</p>
             <p>Now, if you want to kill some time relaxing with your server buds, you can just hop into Voice and instantly enjoy an Activity with anyone and @everyone who’s free.</p>
-            <p>So let’s talk options...</p>
-            <p>‍</p>
+            <p>So let’s talk options...<br>‍</p>
         </div>
     </div>
     <div id="heading-3" class="rich-wrapper">
         <div class="blog-post-content w-richtext">
             <h2><strong>What Games and Activities are Available?</strong></h2>
-            <figure class="w-richtext-figure-type-image w-richtext-align-fullwidth" style="max-width:3189pxpx">
-                <div><img src="https://assets-global.website-files.com/5f9072399b2640f14d6a2bf4/642473966c5e28efa46961b5_Available%20Activities.png" loading="lazy" alt="Key artwork for all currently-available Activities on Discord, including Poker Night, Sketch Heads, Chess in the Park, SpellCast, Bobble League, Putt Party, Checkers in the Park, YouTube, Land-io, Blazing 8's, Letter League, Know What I Meme, and Gartic Phone."></div>
+            <figure class="w-richtext-figure-type-image w-richtext-align-fullwidth" style="max-width:1600pxpx">
+                <div><img src="https://assets-global.website-files.com/5f9072399b2640f14d6a2bf4/648b3e8a7a63df5ca26b71b5_4iFKPYhDhjxe84fNt-SwGBFCM6aSwf2Je3Jzz1KMQFnW7j25fcCwOXvdk3cf1Ul0bmjoUllgcETFWHuno7lN_rODOeJUQ281QKsqqxxdoMHoA22pcPaK_CQprfw0WYM6HVJOXO-WDYA9l8KsxMinBk8.png" alt="Key artwork for all currently available Activities on Discord."></div>
             </figure>
-            <p>Right now, in celebration of our 8th birthday <strong>everyone</strong> will be able to launch and enjoy all Activities, including all of the Nitro-specific ones until June 15, 2023:</p>
+            <p>Activities can be launched in either a server’s Voice channels or in a DM Voice call. Check out the entirety of currently-available Activities. <br></p>
             <ul role="list">
-                <li><strong>Watch Together</strong>: Enjoy the same YouTube video at the same time.&nbsp;<strong><em>‍</em></strong></li>
-                <li><strong>Gartic Phone</strong>:<strong> </strong>Bring the phrase “sneaky stinky shoebill” to life by drawing it… poorly.<br></li>
-            </ul>
-            <p>If you have Discord Nitro, you’ll be able to start a session of these additional Activities for anyone in your server to join:&nbsp;</p>
-            <ul role="list">
-                <li><strong><em>[New &amp; Improved]</em> Poker Night 2.0:</strong> Give your Voice channel that Vegas high-roller vibe.&nbsp;</li>
-                <li><strong>Putt Party</strong>: Mini golf, mega drama.</li>
+                <li><strong>Watch Together</strong>: Enjoy the same YouTube video at the same time.&nbsp;</li>
+                <li><strong>Gartic Phone</strong>:<strong> </strong>Bring the phrase “sneaky stinky shoebill” to life by drawing it… poorly.</li>
+                <li>‍<strong>Poker Night 2.0</strong>: Give your Voice channel that Vegas high-roller vibe.&nbsp;</li>
+                <li><strong>Putt Party Paradise</strong>: Mini golf, mega drama. Now with more levels and new power-ups.&nbsp;</li>
                 <li><strong>Chess in the Park</strong>: One of the world’s classiest board games.&nbsp;</li>
                 <li><strong>Checkers in the Park</strong>: More laid-back than chess, and even more kings.</li>
                 <li><strong>Land-io</strong>: Claim territory and become outstanding in your field(s).</li>
                 <li><strong>Letter League</strong>: Wow, that’s a real word? That’s a lot of points.</li>
                 <li><strong>Sketch Heads</strong>: Okay, so they’re either drawing a snake or a sandwich.&nbsp;</li>
-                <li><strong>Blazing 8s</strong>: Get rid of your hand first or cry trying.</li>
-                <li><strong>Bobble League</strong>:<strong> </strong>Score goals as the coach of the world’s bobble-est team ever.</li>
-                <li><strong>[NEW] Know What I Meme</strong>: The perfect place to repost the same capybara GIF for the hundredth time.</li>
+                <li><strong><em>Blazing 8s: Get rid of your hand first or cry trying.</em></strong></li>
+                <li><strong><em>Bobble League: Score goals as the coach of the world’s bobble-est team ever.</em></strong></li>
+                <li><strong>Know What I Meme</strong>: The perfect place to repost the same capybara GIF for the hundredth time.</li>
+                <li><strong>Jamspace</strong> - A collaborative digital whiteboard anyone in the call can contribute to. Map out your next MMO raid mid-call or just doodle together!</li>
             </ul>
-            <p>For the full low-down on how Activities work, repeat after me: “The Help Center article can be <a href="https://support.discord.com/hc/en-us/articles/4422142836759-Activities-Experiment">found here</a>.” (Good job!)&nbsp;</p>
+            <h4><em>Note: This list of Activities was last updated on June 15, 2023.&nbsp;</em></h4>
+            <p>For the full low-down on how Activities work, repeat after me: “The Help Center article can be <a href="https://support.discord.com/hc/en-us/articles/4422142836759-Activities-Experiment">found here</a>.” (Good job!)<br>‍</p>
         </div>
     </div>
     <div id="heading-4" class="rich-wrapper">
         <div class="blog-post-content w-richtext">
-            <h2><strong>[NEW] Activities Make Their Way to Mobile</strong></h2>
-            <p><strong>‍</strong>We’re starting 2023 with a bang by bringing Activities on Discord to mobile.<br><br>With new Mobile support on Discord Activities, you can enjoy the great outdoors while talking and playing with your friends on Discord, no matter where they are. Play Chess in the Park in a real park, Blaze some 8s on your tablet while riding a horse in a fitting Western locale, or be that person playing Bobble League at the concert you paid way too much to get tickets for.&nbsp;</p>
-            <figure class="w-richtext-figure-type-image w-richtext-align-center">
+            <h2><strong>Activities Make Their Way to Mobile</strong>‍</h2>
+            <p>With Mobile support on Discord Activities, you can enjoy the great outdoors while talking and playing with your friends on Discord, no matter where they are. Play Chess in the Park in a real park, Blaze some 8s on your tablet while riding a horse in a fitting Western locale, or be that person playing Bobble League at the concert you paid way too much to get tickets for.&nbsp;</p>
+            <figure class="w-richtext-figure-type-image w-richtext-align-fullwidth" style="max-width:1200pxpx">
                 <div><img src="https://assets-global.website-files.com/5f9072399b2640f14d6a2bf4/641231302c9ef2d3a6e12149_F62dLeJOUPzs2kMTj3gGIElL_R_4XPBWyfOSYnYj7mumf-9mkBlozzA1j4W4p9IlIth9vO5_DXPswWgkuRFwyqyskBaeSsKVGxOBt8xfjnKDukcXACDCu2Y2nWyukmkKyKHfz7avWoo8mUxQZIRRVKs.png" alt=""></div>
             </figure>
-            <p>You can even play the newest Activity, Gartic Phone, on your actual phone without having to juggle between your phone’s web browser and your Discord call. <strong>In fact, you can enjoy&nbsp; every Activity on mobile</strong>. Read more about mobile support <a href="https://support.discord.com/hc/en-us/articles/4422142836759-Activities-Experiment">here</a>.</p>
+            <p>You can even play Gartic Phone on your actual phone without having to juggle between your phone’s web browser and your Discord call. <strong>In fact, you can enjoy every Activity on mobile</strong>. Read more about mobile support <a href="https://support.discord.com/hc/en-us/articles/4422142836759-Activities-Experiment">here</a>.&nbsp;&nbsp;<br>‍</p>
         </div>
     </div>
     <div id="heading-5" class="rich-wrapper">
         <div class="blog-post-content w-richtext">
             <h2><strong>Finally, Chat for Gamers</strong></h2>
-            <p>These nine activities are just the beginning of Activities in Discord — stay tuned for more Activities coming to Discord in the future.</p>
             <p>Alongside <a href="https://support.discord.com/hc/en-us/articles/4422142836759-Activities-Experiment">the main Help Center article</a> for Activities, most Activities have their own Help Center articles. If you’re looking for guidance, take a peek at these support pages:&nbsp;</p>
             <ul role="list">
                 <li><a href="https://support.discord.com/hc/en-us/articles/1500009655542">Poker Night</a>&nbsp;</li>
@@ -93,8 +90,9 @@
                 <li><a href="https://support.discord.com/hc/en-us/articles/6607890733079-Bobble-League-FAQ">Bobble League</a></li>
                 <li><a href="https://support.discord.com/hc/en-us/articles/7552538635031-Know-What-I-Meme-FAQ">Know What I Meme</a></li>
                 <li><a href="https://garticphone.com/discord-help">Gartic Phone</a></li>
+                <li><a href="https://support.discord.com/hc/en-us/articles/14042410493847-Jamspace-FAQ">Jamspace</a></li>
             </ul>
-            <p>And of course, you’ll always find us on the usual places: <a href="https://twitter.com/discord">Twitter</a>, <a href="https://www.instagram.com/discord/">Instagram</a> or <a href="https://www.tiktok.com/@discord">TikTok</a>. Try making a good ol’ fashioned montage of your sick Putt Party plays and share it with us!</p>
+            <p>And of course, you’ll always find us on the usual places: <a href="https://twitter.com/discord">Twitter</a>, <a href="https://www.instagram.com/discord/">Instagram</a> or <a href="https://www.tiktok.com/@discord">TikTok</a>. Try making a good ol’ fashioned montage of your sick Putt Party plays and share it with us!&nbsp;</p>
         </div>
     </div>
     <div id="heading-6" class="rich-wrapper">

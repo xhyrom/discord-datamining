@@ -1,6 +1,7 @@
 <div class="column-4 w-col w-col-8 w-col-stack">
     <div id="heading-1" class="rich-wrapper">
         <div class="blog-post-content w-richtext">
+            <p><strong><em>Update: </em></strong><em>We had such a fun time playing together, </em><a href="https://discord.com/blog/server-activities-games-voice-watch-together"><em>Activities</em></a><em> will continue to be open to all! Read on to see the original celebration for our 8th birthday.</em><strong><br>‍</strong></p>
             <p>🎂🎂🎂🎊🎊<strong> We are EIGHT YEARS OLD TODAY!</strong> <strong>(WOW) </strong>🎊🎊🎂🎂🎂&nbsp;</p>
             <p>Eight years of gathering with your friends on Discord and spending time together. You’ve been getting a few rounds of your favorite game in, discussing which fan-ship from that anime you’re obsessed with is best, or staying up late into the night in Voice with your best friends. At this rate, we’ll qualify for a senior discount at the local deli… mmm, corned beef…&nbsp;&nbsp;</p>
             <p>Between May 15–June 15, we’re celebrating our eighth Discord birthday, and you’re invited! (Yeah, <strong>YOU</strong>!) Read on to see what’s in store for our birthday celebrations.&nbsp;</p>
@@ -39,7 +40,8 @@
             <ul role="list">
                 <li><strong>[NEW ACTIVITY UPDATE] Putt Party Paradise -&nbsp; </strong>More levels and new power-ups make it the perfect time to start putting (and partying). Click the in-app rocketship (🚀) button and get playin’!</li>
                 <li><strong>[NEW ACTIVITY] Jamspace - </strong>A collaborative digital whiteboard anyone in the call can contribute to. Map out your next MMO raid mid-call or just doodle together!</li>
-                <li><strong>[NEW&nbsp;ACTIVITY&nbsp;UPDATE] Poker Night Update </strong>- Poker Night goes all in with new stickers, emotes, cardbacks and plenty more. <br></li>
+                <li><strong>[NEW&nbsp;ACTIVITY&nbsp;UPDATE] Poker Night Update </strong>- Poker Night goes all in with new stickers, emotes, cardbacks and plenty more. <strong>‍</strong></li>
+                <li>‍<strong>[FINAL UPDATE] </strong>We had such a fun time playing together, Activities will continue to be open to all. Happy birthday, y’all!<br></li>
             </ul>
         </div>
     </div>
