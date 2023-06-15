@@ -1732,6 +1732,10 @@
       "POST"
     ]
   },
+  "CALLSCOPE_LOGS": {
+    "url": "/callscope/logs/:param/user/:param/%3Aparam",
+    "allowed_methods": null
+  },
   "REPORT_V2": {
     "url": "/reports",
     "allowed_methods": [
