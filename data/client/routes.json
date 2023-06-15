@@ -3153,6 +3153,18 @@
       "OPTIONS"
     ]
   },
+  "MEMBER_SAFETY_SUPPLEMENTAL": {
+    "url": "/guilds/:param/members/supplemental",
+    "allowed_methods": [
+      "DELETE",
+      "GET",
+      "HEAD",
+      "OPTIONS",
+      "PATCH",
+      "POST",
+      "PUT"
+    ]
+  },
   "GUILD_AUTOMOD_RULES": {
     "url": "/guilds/:param/auto-moderation/rules",
     "allowed_methods": [
