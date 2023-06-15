@@ -90,18 +90,15 @@ export class Routes implements Module {
     let i = 0;
     for (const [name, url] of Object.entries(json)) {
       const res = await this.getAllowedMethods(url);
-      if (res.status === 404) {
+      if (res.status !== 200) {
+        console.log(`Failed to fetch ${url}: ${res.text} (${res.status})`);
+
         result[name] = {
           url,
           allowed_methods: null,
         };
 
         i++;
-        continue;
-      }
-
-      if (res.status !== 200) {
-        console.log(`Failed to fetch ${url}: ${res.text} (${res.status})`);
         continue;
       }
 
