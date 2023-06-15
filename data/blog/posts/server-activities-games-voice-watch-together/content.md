@@ -54,8 +54,8 @@
                 <li><strong>Land-io</strong>: Claim territory and become outstanding in your field(s).</li>
                 <li><strong>Letter League</strong>: Wow, that’s a real word? That’s a lot of points.</li>
                 <li><strong>Sketch Heads</strong>: Okay, so they’re either drawing a snake or a sandwich.&nbsp;</li>
-                <li><strong><em>Blazing 8s: Get rid of your hand first or cry trying.</em></strong></li>
-                <li><strong><em>Bobble League: Score goals as the coach of the world’s bobble-est team ever.</em></strong></li>
+                <li><strong>Blazing 8s: </strong>Get rid of your hand first or cry trying.</li>
+                <li><strong>Bobble League: </strong>Score goals as the coach of the world’s bobble-est team ever.</li>
                 <li><strong>Know What I Meme</strong>: The perfect place to repost the same capybara GIF for the hundredth time.</li>
                 <li><strong>Jamspace</strong> - A collaborative digital whiteboard anyone in the call can contribute to. Map out your next MMO raid mid-call or just doodle together!</li>
             </ul>
