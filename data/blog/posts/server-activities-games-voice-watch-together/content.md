@@ -59,8 +59,8 @@
                 <li><strong>Know What I Meme</strong>: The perfect place to repost the same capybara GIF for the hundredth time.</li>
                 <li><strong>Jamspace</strong> - A collaborative digital whiteboard anyone in the call can contribute to. Map out your next MMO raid mid-call or just doodle together!</li>
             </ul>
-            <h4><em>Note: This list of Activities was last updated on June 15, 2023.&nbsp;</em></h4>
-            <p>For the full low-down on how Activities work, repeat after me: “The Help Center article can be <a href="https://support.discord.com/hc/en-us/articles/4422142836759-Activities-Experiment">found here</a>.” (Good job!)<br>‍</p>
+            <p>For the full low-down on how Activities work, repeat after me: “The Help Center article can be <a href="https://support.discord.com/hc/en-us/articles/4422142836759-Activities-Experiment">found here</a>.” (Good job!)</p>
+            <h4><em>Note: This list of Activities was last updated on June 15, 2023.&nbsp;<br>‍</em>‍</h4>
         </div>
     </div>
     <div id="heading-4" class="rich-wrapper">
