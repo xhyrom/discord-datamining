@@ -45,9 +45,6 @@
         <strong><a href="https://support.discord.com/hc/en-us/articles/4413490191127" target="_blank" rel="noopener noreferrer">Custom Video Backgrounds</a>: </strong><span style="font-weight: 400;">Upload your own image to show up in your video background, giving you privacy with personality.</span>
     </li>
     <li style="font-weight: 400;" aria-level="1">
-        <strong>Access to All <a href="https://support.discord.com/hc/en-us/articles/4422142836759" target="_blank" rel="noopener noreferrer">Activities</a>: </strong><span style="font-weight: 400;">Access all currently available Activities, and launch games for anyone to instantly join and play in your server with you.</span>
-    </li>
-    <li style="font-weight: 400;" aria-level="1">
         <strong>Join up to 200 servers:</strong><span style="font-weight: 400;"> Get double the server space so you can join more communities you love. </span>
     </li>
     <li style="font-weight: 400;" aria-level="1">

@@ -1,11 +1,7 @@
-<h3 class="wysiwyg-text-align-left">
-    <span id="docs-internal-guid-21984f6c-7fff-3dd3-8d49-117a3fabb703" style="color: #434343;">To celebrate Discord’s 8th Birthday, all Activities will be free to everyone from May 15, 2023 to June 15, 2023. Check out </span><a href="http://dis.gd/birthday" target="_blank" rel="noopener noreferrer">our blog post</a><span style="color: #434343;"> on all birthday festivities!</span>
-</h3>
 <p class="wysiwyg-text-align-left">If you’ve ever stayed up way too late playing games and watching videos with people in Voice…well, you’re probably about to again. Now announcing Activities: a way to enjoy shared experiences with friends, such as games and media, on Discord itself.</p>
 <p class="wysiwyg-text-align-center"><br><iframe src="//www.youtube-nocookie.com/embed/POMIDMK6WfM" width="560" height="315" frameborder="0" allowfullscreen=""></iframe></p>
-<p id="docs-internal-guid-b3e2622f-7fff-7f50-563e-ba14ad76795b"><span class="wysiwyg-font-size-large"><strong>What does this article cover?</strong></span></p>
+<p id="docs-internal-guid-b3e2622f-7fff-7f50-563e-ba14ad76795b"><span class="wysiwyg-font-size-large"><strong>What this article covers: </strong></span></p>
 <ul>
-    <li><a href="#h_01GSX5ET8XWWCMBS64QV19497T" target="_self">Are Activities free?</a></li>
     <li><a href="#h_01GSX5F5D8F7BQFT1Y4MB5DZHB" target="_self">What Activities Are Available?</a></li>
     <li>
         <a href="#h_01GSX5FCYNMF5PCGKNNA6XFW29" target="_self">How Do I Start an Activity?</a>
@@ -24,12 +20,6 @@
     </li>
     <li><a href="#h_01GSX5V2MVSVPM69A1DG6ABJ70" target="_self">Other (Less) Frequently Asked Questions</a></li>
 </ul>
-<h1 id="h_01GSX5ET8XWWCMBS64QV19497T">Are the Activities free?</h1>
-<h3><span id="docs-internal-guid-89a7c860-7fff-b8ec-8b3a-bda0d88f1b88" style="color: #434343;">From May 15, 2023 to June 15, 2023, Activities are free for everyone to play in celebration for Discord’s 8th Birthday!</span></h3>
-<p>In our current format, there are some Activities that you can play for free - no additional purchases are required. Other Activities will require a Nitro subscription to launch. For these Activities, once a Nitro user has launched the Activity, any user in their voice channel (regardless of Nitro status) can join them to play. You’ll see which Activities are free and which require Nitro by looking at the Activity Shelf. Some games will also offer in-app purchases for special content and upgrades.</p>
-<h3>
-    <span id="docs-internal-guid-08924c55-7fff-5490-f1bd-036c2b8e97e8" style="color: #434343;">Please note: you can still make in-app purchases during Discord’s 8th Birthday celebration when all Activities are free to everyone, but you will need a Nitro subscription to access those in-app purchases after the celebration ends on June 15. If you would like a refund for your in-app purchase, please read our refund policy </span><a href="https://support.discord.com/hc/articles/360012668071" target="_blank" rel="noopener noreferrer">here</a><span style="color: #434343;">.</span>
-</h3>
 <h1 id="h_01GSX5F5D8F7BQFT1Y4MB5DZHB">What Activities are available?</h1>
 <p>The following Activities are available today!</p>
 <ol>
@@ -48,8 +38,9 @@
     <li><a href="https://support.discord.com/hc/en-us/articles/6607890733079" target="_blank" rel="noopener noreferrer">Bobble League</a></li>
     <li><a href="https://support.discord.com/hc/en-us/articles/7552538635031" target="_blank" rel="noopener noreferrer">Know What I Meme</a></li>
     <li><a href="https://garticphone.com/discord-help" target="_blank" rel="noopener noreferrer">Gartic Phone</a></li>
-    <li><a href="https://support.discord.com/hc/en-us/articles/14042410493847" target="_blank" rel="noopener">Jamspace</a></li>
+    <li><a href="https://support.discord.com/hc/en-us/articles/14042410493847" target="_blank" rel="noopener noreferrer">Jamspace</a></li>
 </ol>
+<h3 id="docs-internal-guid-a2f3a887-7fff-434b-e43e-040db67a74ca"><span style="color: #434343;" data-darkreader-inline-color="">Activities are now available for everyone to play! </span></h3>
 <h1 id="h_01GSX5FCYNMF5PCGKNNA6XFW29">How do I start an Activity?</h1>
 <h2 id="docs-internal-guid-67d1f612-7fff-856e-6a7d-09e2618d9a7f">On Desktop/Browser</h2>
 <p>1. Navigate to your intended server and join a voice channel, or start a voice call in a direct message (DM) or group direct message (GDM).</p>
@@ -101,7 +92,7 @@
 <p class="wysiwyg-text-align-center"><img src="https://support.discord.com/hc/article_attachments/13120310118679" alt="mobile-profile-status-join-activity.png" width="280" height="606"></p>
 <h4 class="wysiwyg-text-align-center">Mobile App</h4>
 <h2 id="h_01GSX5TN2992T3KWK0FG44QXMG">How do I end or change an Activity?</h2>
-<p><span id="docs-internal-guid-7567de62-7fff-9bff-50f5-adf0cfa86397">To leave an Activity, click the Activity exit icon in the Voice Channel controls. Leaving the Voice Channel will also do the trick!</span></p>
+<p><span id="docs-internal-guid-7567de62-7fff-9bff-50f5-adf0cfa86397">To leave an Activity, select the Activity exit icon in the Voice Channel controls. Leaving the Voice Channel will also do the trick!</span></p>
 <p class="wysiwyg-text-align-center"><img src="https://support.discord.com/hc/article_attachments/13120275526679" alt="desktop-leave-activity-buttons.png"></p>
 <h4 class="wysiwyg-text-align-center">Desktop/Browser App</h4>
 <p class="wysiwyg-text-align-center"><img src="https://support.discord.com/hc/article_attachments/13120311773463" alt="mobile-leave-activity-buton-or-choose-new-activity.png" width="242" height="524"></p>
