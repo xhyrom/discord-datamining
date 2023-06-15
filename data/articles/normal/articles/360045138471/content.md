@@ -1,7 +1,7 @@
 <h1>Running into Voice and Video Shenanigans? </h1>
 <p>Not able to hear your friend in your voice channel? Friends not able to hear you in group DMs even when you're shouting at the top of your lungs? Is your video not loading at all? </p>
 <p>If you answered "<strong><em><span class="wysiwyg-underline">YES</span>"</em></strong> to any of those questions above, or are having any other shenanigans, hopefully this guide below can help you resolve any audio/voice and video issues that pop up for you! </p>
-<p><span class="wysiwyg-font-size-large"><strong>What does this article cover? </strong></span></p>
+<p><span class="wysiwyg-font-size-large"><strong>What this article covers: <br></strong></span></p>
 <ul>
     <li id="h_beafdc94-8cff-414c-a0ed-df92aae5a7c3">
         <span style="font-weight: 400;"><a href="#h_01GRYQGF5DBVRE83BGXGNS71ZV" target="_self" rel="undefined">First Discord Settings to Check</a></span>
@@ -116,7 +116,7 @@
     </li>
     <li style="font-weight: 400;"><strong>Mac: <span style="font-weight: 400;"><a href="https://support.apple.com/guide/mac-help/change-privacy-security-settings-on-mac-mchl211c911f/13.0/mac/13.0">https://support.apple.com/guide/mac-help/change-privacy-security-settings-on-mac-mchl211c911f/13.0/mac/13.0</a></span></strong></li>
 </ul>
-<p class="wysiwyg-text-align-center"><strong><img src="https://support.discord.com/hc/article_attachments/360060466111/image12.png" alt="image12.png" width="494" height="423"></strong></p>
+<p class="wysiwyg-text-align-center"><strong><img src="https://support.discord.com/hc/article_attachments/360060466111" alt="image12.png" width="494" height="423"></strong></p>
 <p><strong>🔲   And for PC/Windows Users:</strong><strong> Check that your sound/audio or webcam/video/graphic card drivers and software are fully up to date! </strong></p>
 <ul>
     <li style="font-weight: 400;"><span style="font-weight: 400;">Follow these official guides here for more information on how to update your drivers for your device:</span></li>
@@ -304,6 +304,7 @@
         </li>
     </ul>
 </ul>
+<h3 id="docs-internal-guid-fbededba-7fff-255b-1551-435a447e1ab5"><span style="color: #434343;" data-darkreader-inline-color="">If you are experiencing low resolution or low quality video on iOS 16.4, we recommend upgrading to iOS 16.5.</span></h3>
 <p><strong>🔲   Check your app permissions for Discord and make sure you have enabled Microphone and Camera permissions for Discord! </strong></p>
 <ul>
     <li style="font-weight: 400;"><span style="font-weight: 400;">Check these links for how to enable those permissions: </span></li>
