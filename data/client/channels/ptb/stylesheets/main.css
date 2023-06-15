@@ -131034,21 +131034,44 @@ html .invoiceCancelRow-3s2UuC {
 .optionContainer-20eLTX {
     border: 1px solid var(--background-accent);
     border-radius: 4px;
-    padding: 12px;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
-    gap: 14px
+    padding: 12px
+}
+
+.optionContainerOther-12Ploo {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: start;
+    -ms-flex-align: start;
+    align-items: flex-start
 }
 
 .optionText-1hXRYc {
-    -webkit-box-flex: 1;
-    -ms-flex: 1;
-    flex: 1
+    width: 100%;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    gap: 14px
+}
+
+.textboxContainer-cpQS3O {
+    width: 100%
 }
 
 .falseAlarmReasonText-1N2LDs {
-    margin-top: 8px
+    margin-top: 8px;
+    margin-left: 32px;
+    -webkit-box-flex: 1;
+    -ms-flex: 1;
+    flex: 1
 }
 
 .headerContainer-2ebBJj {
@@ -157905,19 +157928,44 @@ html .invoiceCancelRow-3s2UuC {
 .optionContainer-155sWa {
     border: 1px solid var(--background-accent);
     border-radius: 4px;
-    padding: 12px;
-    gap: 14px;
-    cursor: pointer
+    padding: 12px
+}
+
+.optionContainerOther-ZfMf7x {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: start;
+    -ms-flex-align: start;
+    align-items: flex-start
 }
 
 .optionText-2EglTC {
-    -webkit-box-flex: 1;
-    -ms-flex: 1;
-    flex: 1
+    width: 100%;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    gap: 14px
+}
+
+.textboxContainer-1ZfDq1 {
+    width: 100%
 }
 
 .serverLockdownReasonText-L8k5A5 {
-    margin-top: 8px
+    margin-top: 8px;
+    margin-left: 32px;
+    -webkit-box-flex: 1;
+    -ms-flex: 1;
+    flex: 1
 }
 
 .closeButton-2JycqK {
@@ -159686,4 +159734,4 @@ html .invoiceCancelRow-dVOR64 {
     flex-direction: column
 }
 
-/*# sourceMappingURL=40532.67a8aee319080004de48.css.map*/
+/*# sourceMappingURL=40532.31a13ba6fb02d235dfcf.css.map*/
