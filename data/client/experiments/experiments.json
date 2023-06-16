@@ -3620,25 +3620,6 @@
   {
     "data": {
       "kind": "user",
-      "id": "2023-02_discord_embeds",
-      "label": "Discord embeds",
-      "description": [
-        "Control",
-        "Treatment 1: Enables fancy embedded links instead of raw Discord links"
-      ],
-      "hash": 1353647162,
-      "buckets": [
-        0,
-        1
-      ],
-      "config_keys": [
-        "enabled"
-      ]
-    }
-  },
-  {
-    "data": {
-      "kind": "user",
       "id": "2023-02_nitroduction_experience",
       "label": "Nitroduction Experience",
       "description": [
@@ -5491,6 +5472,25 @@
   {
     "data": {
       "kind": "user",
+      "id": "2023-06_inventory_reaction_tooltip",
+      "label": "Invenotry Reaction Tooltip Experiment",
+      "description": [
+        "Control",
+        "Treatment 1: Enabled"
+      ],
+      "hash": 3470792155,
+      "buckets": [
+        0,
+        1
+      ],
+      "config_keys": [
+        "enabled"
+      ]
+    }
+  },
+  {
+    "data": {
+      "kind": "user",
       "id": "2020-01_in_app_reporting",
       "label": "2020-29 Exp: Report TOS violating messages in-app via new modal",
       "description": [
@@ -6569,7 +6569,8 @@
           "887867262839705651",
           "993957185493160057",
           "705666251560583168",
-          "1115745220575887491"
+          "1115745220575887491",
+          "1095810146761973830"
         ]
       },
       "overrides_formatted": []
