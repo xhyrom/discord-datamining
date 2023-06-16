@@ -431,7 +431,11 @@
   },
   "GUILD_INSTANT_INVITES": {
     "url": "/guilds/:param/invites",
-    "allowed_methods": null
+    "allowed_methods": [
+      "GET",
+      "HEAD",
+      "OPTIONS"
+    ]
   },
   "GUILD_WIDGET": {
     "url": "/guilds/:param/widget",
