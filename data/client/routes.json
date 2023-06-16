@@ -1779,12 +1779,7 @@
   },
   "INTEGRATION_APPLICATION_IDS_FOR_MY_GUILDS": {
     "url": "/users/@me/guilds/integration-application-ids",
-    "allowed_methods": [
-      "DELETE",
-      "GET",
-      "HEAD",
-      "OPTIONS"
-    ]
+    "allowed_methods": null
   },
   "USER_GUILD_SETTINGS": {
     "url": "/users/@me/guilds/:param/settings",
