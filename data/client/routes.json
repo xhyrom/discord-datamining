@@ -431,11 +431,7 @@
   },
   "GUILD_INSTANT_INVITES": {
     "url": "/guilds/:param/invites",
-    "allowed_methods": [
-      "GET",
-      "HEAD",
-      "OPTIONS"
-    ]
+    "allowed_methods": null
   },
   "GUILD_WIDGET": {
     "url": "/guilds/:param/widget",
@@ -4145,7 +4141,10 @@
   },
   "FINISH_MFA_CHECK": {
     "url": "/mfa/finish",
-    "allowed_methods": null
+    "allowed_methods": [
+      "OPTIONS",
+      "POST"
+    ]
   },
   "CREATE_USER_TRIAL_OFFER": {
     "url": "/user-trial-offers/create/:param",
