@@ -2472,10 +2472,7 @@
   },
   "APPLICATION_BRANCHES": {
     "url": "/branches",
-    "allowed_methods": [
-      "OPTIONS",
-      "POST"
-    ]
+    "allowed_methods": null
   },
   "APPLICATION_PUBLIC": {
     "url": "/applications/:param/public",
@@ -2533,7 +2530,10 @@
   },
   "STORE_EMAIL_RESEND_PAYMENT_VERIFICATION": {
     "url": "/store/email/resend-payment-verification",
-    "allowed_methods": null
+    "allowed_methods": [
+      "OPTIONS",
+      "POST"
+    ]
   },
   "STORE_PUBLISHED_LISTINGS_APPLICATIONS": {
     "url": "/store/published-listings/applications",
@@ -3515,10 +3515,7 @@
   },
   "CREATOR_MONETIZATION_ACCEPT_TERMS": {
     "url": "/guilds/:param/creator-monetization/enable-requests/:param/accept-terms",
-    "allowed_methods": [
-      "OPTIONS",
-      "POST"
-    ]
+    "allowed_methods": null
   },
   "CREATOR_MONETIZATION_ACCEPT_TERMS_V2": {
     "url": "/guilds/:param/creator-monetization/accept-terms",
