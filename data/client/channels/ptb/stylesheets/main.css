@@ -62774,6 +62774,14 @@ strong {
     height: 100%
 }
 
+.uploadContainer-TCg-Ji:hover .smallActionBar-3_dhAZ {
+    opacity: 1
+}
+
+.uploadContainer-TCg-Ji:focus-within .smallActionBar-3_dhAZ {
+    opacity: 1
+}
+
 .actionBarContainer-2BJ5hs {
     position: absolute;
     top: 0;
@@ -62787,6 +62795,10 @@ strong {
     -webkit-transform: translate(25%, -25%);
     transform: translate(25%, -25%);
     padding: 0
+}
+
+.smallActionBar-3_dhAZ {
+    opacity: 0
 }
 
 .miniPopover-1VlTqE {
@@ -93507,20 +93519,10 @@ strong {
 }
 
 .modalHeader-1V_jCD {
-    padding-bottom: 8px
-}
-
-.emptyHeader-1gUgLh,
-.modalHeader-1V_jCD {
     -webkit-box-align: center;
     -ms-flex-align: center;
-    align-items: center
-}
-
-.emptyHeader-1gUgLh {
-    padding-bottom: 24px;
-    margin-left: 24px;
-    margin-right: 24px
+    align-items: center;
+    padding-bottom: 8px
 }
 
 .headingContainer--XdXtV {
@@ -159889,4 +159891,4 @@ html .invoiceCancelRow-dVOR64 {
     flex-direction: column
 }
 
-/*# sourceMappingURL=40532.de79a8fb102fbe4d0196.css.map*/
+/*# sourceMappingURL=40532.da278349ded4daf3589f.css.map*/
