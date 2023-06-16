@@ -2,7 +2,7 @@
   "id": 213491697,
   "url": "https://hammerandchisel.zendesk.com/api/v2/help_center/en-us/articles/213491697.json",
   "html_url": "https://support.discord.com/hc/en-us/articles/213491697-What-are-the-OS-system-requirements-for-Discord-",
-  "author_id": 364802902112,
+  "author_id": 1504238994441,
   "comments_disabled": true,
   "draft": false,
   "promoted": false,
@@ -15,7 +15,7 @@
   "locale": "en-us",
   "outdated": false,
   "outdated_locales": [],
-  "edited_at": "2023-02-16T21:21:51Z",
+  "edited_at": "2023-06-15T23:42:41Z",
   "user_segment_id": null,
   "permission_group_id": 1720972,
   "content_tag_ids": [],
@@ -23,6 +23,13 @@
     "min. spec",
     "OS",
     "requirements",
-    "answer-bot"
+    "ios",
+    "answer-bot",
+    "linux",
+    "android",
+    "desktop",
+    "system",
+    "system requirements",
+    "browser"
   ]
 }

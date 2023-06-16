@@ -1,15 +1,81 @@
+<p id="docs-internal-guid-b0ecfa91-7fff-9d30-f228-185b68d88550">Our goal for Discord is to support as many devices and operating systems as possible. Below, you’ll see the minimum operating systems requirements, along with what we recommend for the best experience.</p>
 <h3>
-    <span style="font-weight: 400;">Note: Beginning on August 1st, 2022, Discord users can expect to see improvements to the Discord Android application, including:<br>- </span><strong>Feature consistency across platforms</strong><span style="font-weight: 400;"> through a centralized and streamlined app development process across Android, iOS and desktop <br></span><strong>- Faster app update release cycles </strong><span style="font-weight: 400;">when a new feature is introduced or a pesky bug is fixed thanks to a more consolidated process<br></span><span style="font-weight: 400;">Over the next few weeks, the Android app will begin to transition to the React Native framework to enhance the user experience. To use the new version of the Discord app:<br>- </span><span style="font-weight: 400;">Go to the Google Play Store to manually update your Discord app.<br>- </span><span style="font-weight: 400;">Otherwise, if auto-update is enabled on your Android device, the app should automatically update.<br></span><span style="font-weight: 400;">You can read more about this change in our </span><a href="https://discord.com/blog/android-react-native-framework-update" target="_blank" rel="noopener noreferrer">blog post</a><span style="font-weight: 400;">.<br>The old Discord Android application will officially sunset on September 1st, 2022, so make sure you've updated your Android app from the Google Play Store before then!</span>
+    <span style="color: #434343;" data-darkreader-inline-color="">Please keep in mind that while devices that are running older operating systems and hardware may meet the minimum requirements to </span><em><span style="color: #434343;" data-darkreader-inline-color="">run</span></em><span style="color: #434343;" data-darkreader-inline-color=""> Discord, our technical support may be limited as these devices can often have trouble running more modern apps.</span>
 </h3>
-<p>Below are the minimum system and OS specifications for Discord. Due to potential programming changes, the minimum system requirements may change over time.</p>
-<h1>Desktop</h1>
-<p>Windows 7 and up</p>
-<p>MacOS 10.13 and up (High Sierra)</p>
-<h1>Mobile</h1>
-<p>iOS 11.0 and up</p>
-<h3>Note: The oldest devices supported by iOS 11 are listed <a href="https://support.apple.com/en-au/HT209574" target="_blank" rel="noopener noreferrer">here</a>! </h3>
-<p>Android 6 and up</p>
-<h3>Note: Discord only supports devices that ship with Google Play Services by default. This means some devices, including Amazon Kindles, are not supported. </h3>
-<h1>Browser</h1>
+<p><span class="wysiwyg-font-size-large"><strong>What this article covers: </strong></span></p>
+<ul>
+    <li><a href="#docs-internal-guid-09be9a94-7fff-2c2f-1ad4-48886516463f" target="_self">Desktop</a></li>
+    <li><a href="#h_01H30Q0N5QCNK259ATR3BR4A41" target="_self">Mobile</a></li>
+    <li><a href="#h_01H30Q0T863H0VTGBN9BY653ZD" target="_self">Browser</a></li>
+</ul>
+<h1 id="docs-internal-guid-09be9a94-7fff-2c2f-1ad4-48886516463f"><strong>Desktop</strong></h1>
+<div>
+    <table style="width: 100%;">
+        <colgroup>
+            <col>
+            <col>
+            <col>
+        </colgroup>
+        <tbody>
+            <tr>
+                <td><strong>OS</strong></td>
+                <td><strong>Minimum</strong></td>
+                <td><strong>Recommended</strong></td>
+            </tr>
+            <tr>
+                <td>Windows</td>
+                <td>Windows 7+</td>
+                <td>Windows 10+</td>
+            </tr>
+            <tr>
+                <td>Mac</td>
+                <td>MacOS 10.11 (El Capitan)+</td>
+                <td>MacOS 10.15 (Catalina)+</td>
+            </tr>
+            <tr>
+                <td>Linux</td>
+                <td colspan="2">Ubuntu 18.04+, Debian 10+, openSUSE 16.2+ and Fedora Linux 32+</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+<h3>
+    <strong><em><span style="color: #434343;" data-darkreader-inline-color="">For Linux</span></em></strong><span style="color: #434343;" data-darkreader-inline-color="">: Because of the variations in both software and hardware for computers running Linux, technical support for this operating system is limited. Our Linux client is based on Chromium, and so the requirements for this version of the app are based on Chrome’s requirements, found </span><a href="https://support.google.com/chrome/a/answer/7100626?hl=en" target="_blank" rel="noopener">here</a><span style="color: #434343;" data-darkreader-inline-color="">.</span>
+</h3>
+<h1 id="h_01H30Q0N5QCNK259ATR3BR4A41"><strong>Mobile</strong></h1>
+<div>
+    <table style="width: 100%;">
+        <colgroup>
+            <col>
+            <col>
+            <col>
+        </colgroup>
+        <tbody>
+            <tr>
+                <td><strong>OS</strong></td>
+                <td><strong>Minimum</strong></td>
+                <td><strong>Recommended</strong></td>
+            </tr>
+            <tr>
+                <td>Android</td>
+                <td>Android 6+</td>
+                <td>Android 10+</td>
+            </tr>
+            <tr>
+                <td>iOS</td>
+                <td>iOS 11+</td>
+                <td>iOS 13+</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+<h3>The oldest devices supported by iOS 11 are listed<a href="https://support.apple.com/en-au/HT209574" target="_blank" rel="noopener"> here</a><strong>.</strong>
+</h3>
+<p>You can find devices supported by iOS 12+ <a href="https://support.apple.com/en-au/guide/iphone/iphe3fa5df43/12.0/ios/12.0" target="_blank" rel="noopener">here</a>.</p>
+<h3><span style="color: #434343;" data-darkreader-inline-color="">For Android: Discord only supports devices that ship with Google Play Services by default. This means some devices, including Amazon Kindles, are not supported.</span></h3>
+<p>Jailbroken or Rooted devices are <strong>not supported</strong>. </p>
+<p>Beta operating systems are <strong>not supported</strong>. While Discord may install and run on a beta version of an operating system, some functions may not.</p>
+<h1 id="h_01H30Q0T863H0VTGBN9BY653ZD"><strong>Browser</strong></h1>
 <p>Google Chrome, Firefox 80+, Opera, Microsoft Edge 17+ (including Chromium Edge 79+ on Windows and macOS), Safari 11+ (available on macOS 10.13 High Sierra and up)</p>
-<h3>Note: Older browsers may lack functionality with newer features, and voice chat for Firefox is only supported by versions 80 and up!</h3>
+<h3><span style="color: #434343;" data-darkreader-inline-color="">Note: Older browsers may lack functionality with newer features, and voice chat for Firefox is only supported by versions 80 and up!</span></h3>
+<p>Running Discord in a mobile browser is <strong>not supported</strong>.</p>
