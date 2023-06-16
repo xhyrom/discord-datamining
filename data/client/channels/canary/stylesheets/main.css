@@ -16589,6 +16589,14 @@ html.disable-forced-colors * {
     margin-top: 14px
 }
 
+.reactionTooltip-1X6qQ5 {
+    max-width: 290px
+}
+
+.reactionGuildDetails-eHg-Jo {
+    margin: 8px 0
+}
+
 .emojiContainer-2XKwXX {
     display: inline-block;
     cursor: pointer
@@ -44112,7 +44120,16 @@ input[type=checked]:focus-visible+.label-3TDpbn {
 }
 
 .reactionTooltip-29BsaC {
-    max-width: unset
+    max-width: unset;
+    padding: 16px;
+    overflow: hidden;
+    background: var(--background-floating);
+    font-weight: 500;
+    font-size: 14px;
+    -webkit-box-shadow: var(--elevation-high);
+    box-shadow: var(--elevation-high);
+    color: var(--text-normal);
+    border-radius: 5px
 }
 
 .reactionTooltipContent-ngRYp2 {
@@ -44575,7 +44592,16 @@ input[type=checked]:focus-visible+.label-3TDpbn {
 }
 
 .reactionTooltip-3IOBwg {
-    max-width: unset
+    max-width: unset;
+    padding: 1rem;
+    overflow: hidden;
+    background: var(--background-floating);
+    font-weight: 500;
+    font-size: .875rem;
+    -webkit-box-shadow: var(--elevation-high);
+    box-shadow: var(--elevation-high);
+    color: var(--text-normal);
+    border-radius: .313rem
 }
 
 .reactionTooltipContent-3XfUAU {
@@ -159790,4 +159816,4 @@ html .invoiceCancelRow-dVOR64 {
     flex-direction: column
 }
 
-/*# sourceMappingURL=40532.e6b9b44ba7a78867b422.css.map*/
+/*# sourceMappingURL=40532.966b97e003588cdd1534.css.map*/
