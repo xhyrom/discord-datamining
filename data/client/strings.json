@@ -13769,7 +13769,7 @@
   "SOUNDBOARD_TOOLTIP_TITLE_NEW": "\"NEW: Soundboard\"",
   "SOUNDBOARD_TOOLTIP_BODY": "\"Learn more about Soundboard and manage permissions.\"",
   "SOUNDBOARD_MARKETING_BOOSTING_PERKS": "\"+{soundCount, plural, one {# Soundboard slot} other {# Soundboard slots}} (for a total of {totalSoundCount, number})\"",
-  "SOUNDBOARD_MARKETING_CUSTOM_SOUNDS_ANYWHERE": "\"Custom sounds anywhere\"",
+  "SOUNDBOARD_MARKETING_CUSTOM_SOUNDS_ANYWHERE": "\"Custom Sounds Anywhere\"",
   "SOUNDBOARD_MARKETING_REACT_WITH_SOUNDBOARD": "\"React with Soundboard custom sounds in all voice channels.\"",
   "SOUNDBOARD_SEARCH_PLACEHOLDER": "\"Search for sound\"",
   "SOUNDBOARD_SEARCH_EMPTY_STATE_BODY": "\"No sounds match your search\"",
