@@ -1,10 +1,10 @@
 <p class="wysiwyg-text-align-center"><img src="https://support.discord.com/hc/article_attachments/12336419447191" alt="updated-poker-night-banner.png"></p>
-<p><span class="wysiwyg-font-size-large"><strong><span style="font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif;">What does this article cover?</span></strong></span></p>
+<p><span class="wysiwyg-font-size-large"><strong><span style="font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif;">What this article covers: <br></span></strong></span></p>
 <ul>
     <li>
         <a href="#h_01F51PQ0RA5SKPWAABV4FW2K2K" target="_self">What is Poker Night?</a>
         <ul>
-            <li><a href="#h_01F51PQ5ZKAMXXQJB6M52C03HT" target="_self">How to start a Poker Night game</a></li>
+            <li><a href="#docs-internal-guid-c9e548b5-7fff-4b13-0306-dceff7b4ecf4" target="_self">Starting Poker Night in Discord</a></li>
             <li><a href="#h_01GRYW1ANG6C4KPZM00G382000" target="_self">How to Play</a></li>
             <li><a href="#h_01GRYW20YR3GAYSZKQ608GTAQH" target="_self">What is the Poker Shop?</a></li>
             <li><a href="#h_01GRYW28FMQB3QEPZRCT3GM8H2" target="_self">What are Content Packs</a></li>
@@ -15,19 +15,9 @@
 </ul>
 <h1 id="h_01F51PQ0RA5SKPWAABV4FW2K2K">What is Poker Night?</h1>
 <p><span style="font-weight: 400;">The Poker Night <a href="https://support.discord.com/hc/articles/4422142836759" target="_blank" rel="noopener noreferrer">Activity</a> is a Texas hold 'em style game we developed </span><span style="font-weight: 400;">here at Discord.</span><span style="font-weight: 400;"> You can play with up to<strong> 7 players total</strong> per game (you + 6 others), and have up to 17 additional spectators max.</span></p>
-<h2 id="h_01F51PQ5ZKAMXXQJB6M52C03HT">How to start a Poker Night game</h2>
-<p><span style="font-weight: 400;">To start a Poker Night game, follow these steps below!  </span></p>
-<ul>
-    <li style="font-weight: 400;" aria-level="2">
-        <span style="font-weight: 400;">Join a voice channel</span>
-        <ul>
-            <li style="font-weight: 400;" aria-level="3"><span style="font-weight: 400;">Once joined, you should see the Activity Launcher (it looks like a rocket ship) in the voice channel controls.</span></li>
-        </ul>
-    </li>
-    <li style="font-weight: 400;" aria-level="2"><span style="font-weight: 400;">Click the Activity Launcher to open the Activity Shelf</span></li>
-    <li style="font-weight: 400;" aria-level="2"><span style="font-weight: 400;">Then select "Poker Night"</span></li>
-</ul>
-<p class="wysiwyg-text-align-center"><span style="font-weight: 400;"><img src="https://support.discord.com/hc/article_attachments/12336463514903" alt="2023-activity-shelf-with-poker-night.png" width="432" height="710"></span></p>
+<h2 id="docs-internal-guid-c9e548b5-7fff-4b13-0306-dceff7b4ecf4">Starting Poker Night In Discord</h2>
+<p>There are many different ways you can launch Poker Night in the Discord app for you and your friends! Whether in a server’s voice channel or in a direct message, you can check out <a href="https://support.discord.com/hc/en-us/articles/4422142836759-Activities-on-Discord" target="_blank" rel="noopener noreferrer">Activities on Discord</a> for instructions on how to start any Activity.</p>
+<h3><span style="color: #434343;" data-darkreader-inline-color="">Before starting any Discord Activity on Desktop, please make sure to turn on Hardware Acceleration in User Settings &gt; Advanced.</span></h3>
 <h2 id="h_01GRYW1ANG6C4KPZM00G382000">How To Play</h2>
 <p>1. Join the table!</p>
 <ul>
@@ -73,6 +63,6 @@
 <p><span class="wysiwyg-font-size-large"><strong>Q: Where can I report bugs and problems with the game?</strong></span></p>
 <p>A: <span style="font-weight: 400;">Check out our Bug Report article to access the form here: </span><a href="https://dis.gd/bugs" target="_blank" rel="noopener noreferrer">https://dis.gd/bugs</a><span style="font-weight: 400;"> Make sure to follow the form when submitting a report for any issues you experience with Activities. </span></p>
 <p><span class="wysiwyg-font-size-large"><strong>Q: I bought something in the Activity, can I get a refund?</strong></span></p>
-<p><span style="font-weight: 400;">A: </span><span style="font-weight: 400;">If you purchased content in Poker Night, any purchases you made in Poker Night from February 1, 2022 to October 3, 2022 will be refunded as </span><a href="https://support.discord.com/hc/en-us/articles/4418993678999"><span style="font-weight: 400;">we move activities to other servers</span></a><span style="font-weight: 400;">. We do not offer refunds for other In-App Purchases, as listed in our </span><a href="https://support.discord.com/hc/en-us/articles/360012668071"><span style="font-weight: 400;">Refund Policy</span></a><span style="font-weight: 400;">.</span></p>
+<p><span style="font-weight: 400;">A: </span><span style="font-weight: 400;">If you purchased content in Poker Night, any purchases you made in Poker Night from February 1, 2022 to October 3, 2022 will be refunded as </span><a href="https://support.discord.com/hc/en-us/articles/4418993678999" target="_blank" rel="noopener">we move activities to other servers</a><span style="font-weight: 400;">. We do not offer refunds for other In-App Purchases, as listed in our </span><a href="https://support.discord.com/hc/en-us/articles/360012668071" target="_blank" rel="noopener">Refund Policy</a><span style="font-weight: 400;">.</span></p>
 <p><span class="wysiwyg-font-size-large"><strong>Q: My question isn't listed, what do I do?</strong></span></p>
 <p>A: If all is lost, please submit a ticket to our support team at <a class="ql-link" href="https://dis.gd/contact" target="_blank" rel="noopener noreferrer" data-slab-linktype="text">https://dis.gd/contact</a></p>
