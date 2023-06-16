@@ -128693,6 +128693,9 @@ input::-webkit-outer-spin-button {
 
 .content-i4kebw {
     overflow: hidden;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
     -ms-flex-direction: column;
@@ -128702,17 +128705,17 @@ input::-webkit-outer-spin-button {
     flex-grow: 1;
     height: 100%;
     gap: 8px;
-    padding: 16px 8px 16px 16px
+    padding: 0 8px 16px 16px
 }
 
-.content-i4kebw,
+.title-fbJZXt {
+    margin-top: 16px
+}
+
 .switch-lSyaKb {
     display: -webkit-box;
     display: -ms-flexbox;
-    display: flex
-}
-
-.switch-lSyaKb {
+    display: flex;
     -webkit-box-pack: justify;
     -ms-flex-pack: justify;
     justify-content: space-between;
@@ -128743,25 +128746,6 @@ input::-webkit-outer-spin-button {
 .checkbox-26Hs1J {
     padding: 16px 8px;
     z-index: 1
-}
-
-.footer-1IoysH {
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: row;
-    flex-direction: row;
-    -webkit-box-pack: justify;
-    -ms-flex-pack: justify;
-    justify-content: space-between
-}
-
-.autoBroadcastToggle-3zUfIu {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-item-align: center;
-    align-self: center;
-    gap: 4px
 }
 
 .theme-dark .checkbox-26Hs1J {
@@ -159895,4 +159879,4 @@ html .invoiceCancelRow-dVOR64 {
     flex-direction: column
 }
 
-/*# sourceMappingURL=40532.2d658f448d10c87dd8e4.css.map*/
+/*# sourceMappingURL=40532.4ae4b972d392c47455a5.css.map*/
