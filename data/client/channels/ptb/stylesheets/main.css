@@ -39627,17 +39627,8 @@ html .progress-2Otdc- {
     text-decoration: underline
 }
 
-.ctaButtonContent-iv7RzP {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    justify-content: center;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
-    gap: 2px
+.subscribeButton-24ESef {
+    background-color: #207b8d
 }
 
 .spoiler-1ZTq3- {
@@ -76512,7 +76503,11 @@ strong {
 }
 
 .titleBadge-13kJKi {
-    color: var(--brand-560);
+    color: var(--brand-560)
+}
+
+.premiumIcon-2LJbZe,
+.titleBadge-13kJKi {
     margin-left: 8px
 }
 
@@ -159870,4 +159865,4 @@ html .invoiceCancelRow-dVOR64 {
     flex-direction: column
 }
 
-/*# sourceMappingURL=40532.f6584f10608d199533dc.css.map*/
+/*# sourceMappingURL=40532.27a4429e3991eebeb03b.css.map*/
