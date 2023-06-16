@@ -2533,10 +2533,7 @@
   },
   "STORE_EMAIL_RESEND_PAYMENT_VERIFICATION": {
     "url": "/store/email/resend-payment-verification",
-    "allowed_methods": [
-      "OPTIONS",
-      "POST"
-    ]
+    "allowed_methods": null
   },
   "STORE_PUBLISHED_LISTINGS_APPLICATIONS": {
     "url": "/store/published-listings/applications",
