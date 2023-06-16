@@ -22930,6 +22930,7 @@ html.disable-forced-colors * {
     --profile-gradient-section-box: hsl(var(--black-500-hsl)/0.45);
     --redesign-activity-card-background: var(--primary-560);
     --redesign-activity-card-background-pressed: var(--primary-630);
+    --redesign-activity-card-border: hsl(var(--white-500-hsl)/0.02);
     --redesign-button-danger-background: var(--red-430);
     --redesign-button-danger-pressed-background: var(--red-460);
     --redesign-button-danger-text: var(--white-500);
@@ -23146,6 +23147,7 @@ html.disable-forced-colors * {
     --profile-gradient-section-box: hsl(var(--white-500-hsl)/0.45);
     --redesign-activity-card-background: var(--white-500);
     --redesign-activity-card-background-pressed: var(--primary-160);
+    --redesign-activity-card-border: hsl(var(--primary-400-hsl)/0.24);
     --redesign-button-danger-background: var(--red-430);
     --redesign-button-danger-pressed-background: var(--red-460);
     --redesign-button-danger-text: var(--white-500);
@@ -23314,6 +23316,7 @@ html.disable-forced-colors * {
     --interactive-normal: var(--primary-345);
     --redesign-activity-card-background: var(--primary-560);
     --redesign-activity-card-background-pressed: var(--primary-630);
+    --redesign-activity-card-border: hsl(var(--white-500-hsl)/0.02);
     --redesign-button-danger-background: var(--red-430);
     --redesign-button-danger-pressed-background: var(--red-460);
     --redesign-button-danger-text: var(--white-500);
@@ -23536,6 +23539,7 @@ html.disable-forced-colors * {
     --interactive-normal: var(--white-500);
     --redesign-activity-card-background: var(--primary-560);
     --redesign-activity-card-background-pressed: var(--primary-630);
+    --redesign-activity-card-border: hsl(var(--white-500-hsl)/0.02);
     --redesign-button-danger-background: var(--red-430);
     --redesign-button-danger-pressed-background: var(--red-460);
     --redesign-button-danger-text: var(--white-500);
@@ -159816,4 +159820,4 @@ html .invoiceCancelRow-dVOR64 {
     flex-direction: column
 }
 
-/*# sourceMappingURL=40532.966b97e003588cdd1534.css.map*/
+/*# sourceMappingURL=40532.8d76b92f9d9d72b7ac74.css.map*/
