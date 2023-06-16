@@ -15213,8 +15213,6 @@
   "PRIVATE_CHANNEL_INTEGRATION_OAUTH_SHEET_LEARN_MORE": "\"To learn more about apps in group messages visit our help center\"",
   "PRIVATE_CHANNEL_INTEGRATION_MORE_APPS_INFO": "\"Try some apps great for friend groups!\"",
   "PRIVATE_CHANNEL_INTEGRATION_ADD_MODAL_ROW_INFO": "\"Open {appName} profile\"",
-  "PRIVATE_CHANNEL_INTEGRATION_ADD_MODAL_EMPTY_HEADER": "\"You've done it!\"",
-  "PRIVATE_CHANNEL_INTEGRATION_ADD_MODAL_EMPTY_INFO": "\"You've added all available apps! Stay tuned as we are working to add more eligible apps.\"",
   "PRIVATE_CHANNEL_ADD_APPS_INFO": "\"Add apps to this message to do stuff together!\"",
   "PRIVATE_CHANNEL_APPS_HEADER": "\"Apps\"",
   "PRIVATE_CHANNEL_APPS_HEADER_COUNT": "\"{count, number} {count, plural, =1 {App} other {Apps}}\"",
