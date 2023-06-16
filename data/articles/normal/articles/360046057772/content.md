@@ -13,7 +13,7 @@
 <h1 id="h_01F2HKSHYWP6BJRDQZMFJD1XDJ">What is a Bug?</h1>
 <p><span style="font-weight: 400;">Bugs are unintended behavior of the Discord app that diminish a user's experience. Think of the app crashing unexpectedly, or the "Add Friends to DM" button not letting you add your friends into a Group DM when you haven't reached the limit!</span></p>
 <h2 id="h_01F2HKSR9GCV1FFCFAMSBYEP8B">How do I Report a Bug?</h2>
-<p><span style="font-weight: 400;">When issues pop up that negatively impact Discord users, we want to be able to understand and fix it as soon as possible. Any user can help us by reporting the bugs! </span><span style="font-weight: 400;">Bug reports should be submitted with a ticket to the </span><a href="https://dis.gd/bugreport" target="_blank" rel="noopener noreferrer">Bug form</a><span style="font-weight: 400;">. Be sure to fill out each category, as each is important. The most helpful bug reports include:</span></p>
+<p><span style="font-weight: 400;">When issues pop up that negatively impact Discord users, we want to be able to understand and fix it as soon as possible. Any user can help us by reporting the bugs! </span><span style="font-weight: 400;">Bug reports should be submitted with a ticket to the </span><a href="https://dis.gd/bugreport" target="_blank" rel="noopener">Bug Reporting form</a><span style="font-weight: 400;">. Be sure to fill out each category, as each is important. The most helpful bug reports include:</span></p>
 <ul>
     <li style="font-weight: 400;" aria-level="1"><span style="font-weight: 400;">A concise description of the bug, generally one sentence  </span></li>
     <li style="font-weight: 400;" aria-level="1"><span style="font-weight: 400;">Simple step by step direction on how to make the bug occur</span></li>
@@ -23,7 +23,7 @@
     <li style="font-weight: 400;" aria-level="1"><span style="font-weight: 400;">What device the bug occurs on</span></li>
 </ul>
 <p>There are some bug reports that are not currently supported.  We ask that you check out this <a href="https://support.discord.com/hc/en-us/articles/1500005933882-Unsupported-Reports" target="_blank" rel="noopener noreferrer">Unsupported Reports</a> article before submitting a bug report, to familiarize yourself with what topics are unsupported.</p>
-<p>Additionally, if you're experiencing a bug related to <span style="font-weight: 400;">Accessibility aka (A11Y) these issues </span><span style="font-weight: 400;">can also be submitted via our <a href="https://dis.gd/bugreport" target="_self" rel="undefined">Bug Reporting Form.</a></span></p>
+<p>Additionally, if you're experiencing a bug related to <span style="font-weight: 400;">Accessibility aka (A11Y) these issues </span><span style="font-weight: 400;">can also be submitted via our <a href="https://dis.gd/bugreport" target="_self" rel="undefined">Bug Reporting form.</a></span></p>
 <h2 id="h_01F2HKTD57FVC60P8B8JW6FTKX">What is Discord Testers?</h2>
 <p><span style="font-weight: 400;">Discord Testers, or DTesters, is an invite only official Discord server for adept volunteer Bug Testers to help identify, reproduce and provide high quality bug reports to our engineering team.  Periodically, new testers will be added and more information will be provided here as these opportunities arise.</span></p>
 <h2 id="h_01GB8VR2A607B1TXP5CX4MF7CF"><span style="font-weight: 400;">Discord Tester FAQ</span></h2>
