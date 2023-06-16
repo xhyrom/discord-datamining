@@ -5,12 +5,14 @@
     "label": "Mobile Burst Reactions User Experiment",
     "description": [
       "Control",
-      "Treatment 1: Enabled"
+      "Treatment 1: Enabled",
+      "Treatment 2: Enabled v2"
     ],
     "hash": 412458642,
     "buckets": [
       0,
-      1
+      1,
+      2
     ],
     "config_keys": [
       "enabled"
