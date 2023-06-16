@@ -1,34 +1,19 @@
-<p><img src="https://support.discord.com/hc/article_attachments/4487235506327/LoadingScreen.jpg" alt="LoadingScreen.jpg"></p>
-<p><strong>What does this article cover?</strong></p>
+<p><img src="https://support.discord.com/hc/article_attachments/4487235506327" alt="LoadingScreen.jpg"></p>
+<p><strong><span class="wysiwyg-font-size-large">What this article covers:</span><br></strong></p>
 <ul>
     <li>
         <a href="#h_01GESS6TZ45Q4HK60NVQTKNGC7" target="_self"><strong>What is Blazing 8s?</strong></a>
         <ul>
-            <li><a href="#h_01GESS6ENEP24H7Y34DKKCYT7V" target="_self"><strong>How to start a Blazing 8s game?</strong></a></li>
+            <li><a href="#docs-internal-guid-c8dba689-7fff-1d7a-55e7-9f1dc42833cb" target="_self">Starting Blazing 8s in Discord</a></li>
         </ul>
     </li>
     <li><strong><a href="#h_01GESS5Z8DF3CD779FT3B3HJ9Z" target="_self" rel="undefined">Blazing 8s FAQ</a></strong></li>
 </ul>
 <h1 id="h_01GESS6TZ45Q4HK60NVQTKNGC7">WHAT IS Blazing 8s?</h1>
 <p>Blazing 8s is an <a href="https://support.discord.com/hc/articles/4422142836759" target="_blank" rel="noopener noreferrer">Activity</a> that we've developed here at Discord. It is our Crazy Eights-inspired card game that you can play with your friends! The rules are simple — on your turn, discard a card from your hand with the same suit or number as the previous card. Playing special cards allows you to skip other players, reverse the direction of play, and even swap hands with other players. The first person to discard all their cards wins!</p>
-<h2 id="h_01GESS6ENEP24H7Y34DKKCYT7V">HOW TO START A Blazing 8s GAME?</h2>
-<p>To start an Blazing 8s game, follow these steps below!  </p>
-<ul>
-    <li style="font-weight: 400;" aria-level="2">
-        <span style="font-weight: 400;">Join a voice channel</span>
-        <ul>
-            <li style="font-weight: 400;" aria-level="3"><span style="font-weight: 400;">Once joined, you should see the Activity Launcher (it looks like a rocket ship) in the voice channel controls.</span></li>
-        </ul>
-    </li>
-    <li style="font-weight: 400;" aria-level="2"><span style="font-weight: 400;">Click the Activity Launcher to open the Activity Shelf"</span></li>
-    <li style="font-weight: 400;" aria-level="2"><span style="font-weight: 400;">Then select "Blazing 8s"</span></li>
-</ul>
-<p class="wysiwyg-text-align-center"><img src="https://support.discord.com/hc/article_attachments/8279826379415/B8_Poker_Chess_Letter.png" alt="B8_Poker_Chess_Letter.png" width="403" height="644"></p>
-<ul>
-    <li class="wysiwyg-text-align-left"><span style="font-weight: 400;">Once you've authorized Blazing 8s to access your account, you can begin playing with anyone on the server.</span></li>
-</ul>
-<p class="wysiwyg-text-align-center"><img src="https://support.discord.com/hc/article_attachments/4488104112919/ochoAuth.png" alt="ochoAuth.png" width="377" height="720"></p>
-<h3 class="wysiwyg-text-align-left"><span style="font-weight: 400;">Note: Blazing 8s is a game for 2-5 players. However, more members can join the activity as spectators and join the queue to play in future hands.</span></h3>
+<h2 id="docs-internal-guid-c8dba689-7fff-1d7a-55e7-9f1dc42833cb">Starting Blazing 8s In Discord</h2>
+<p>There are many different ways you can launch Blazing 8s in the Discord app for you and your friends! Whether in a server’s voice channel or in a direct message, you can check out <a href="https://support.discord.com/hc/en-us/articles/4422142836759-Activities-on-Discord" target="_blank" rel="noopener">Activities on Discord</a> for instructions on how to start any Activity.</p>
+<h3><span style="color: #434343;" data-darkreader-inline-color="">Before starting any Discord Activity on Desktop, please make sure to turn on Hardware Acceleration in User Settings &gt; Advanced.</span></h3>
 <h1 id="h_01GESS5Z8DF3CD779FT3B3HJ9Z"><span class="notion-enable-hover" data-token-index="0" data-reactroot="">BLAZING 8s FAQ</span></h1>
 <p><span class="wysiwyg-font-size-large"><strong>Q: Why is Discord adding games into voice channels?</strong></span></p>
 <p>A: We started Discord because we are all about bringing people together around gaming. As Discord has grown, we've seen more and more people use Discord to come together around games. For instance, we’ve seen people use Discord to not only play <em>League</em> but also to hang out and play more casual, social games with friends like <em>Jackbox</em> and <em>Among Us</em>.</p>
@@ -37,6 +22,8 @@
 <p>A: There is no age requirement for Blazing 8s</p>
 <p><span class="wysiwyg-font-size-large"><strong>Q: How do I play?</strong></span></p>
 <p>A: To start a game, first join one of the voice channels. Once there, you should see the Activity Launcher (it looks like a rocket ship) in the voice channel controls. Click the Activity Launcher to open the Activity Shelf, and then select "Blazing 8s".</p>
+<p id="docs-internal-guid-6d410d15-7fff-493e-8203-9d1ac12caab6"><span class="wysiwyg-font-size-large"><strong>Q: How many players can play Blazing 8s?</strong></span></p>
+<p>A: Blazing 8s is a game for 2-5 players. However, more members can join the activity as spectators and join the queue to play in future hands.</p>
 <p><span class="wysiwyg-font-size-large"><strong>Q: Where can I report bugs and problems with the game?</strong></span></p>
 <p>A: You'll be able to submit a bug report by going to <a href="https://dis.gd/bugreport" target="_blank" rel="noopener noreferrer">https://dis.gd/bugreport</a></p>
 <p>For instructions on how bug reports should be submitted, please see our Help Center article: <a href="https://dis.gd/bugs" target="_blank" rel="noopener noreferrer">https://dis.gd/bugs</a> </p>
