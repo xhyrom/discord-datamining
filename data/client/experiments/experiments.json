@@ -6531,58 +6531,6 @@
   },
   {
     "data": {
-      "kind": "guild",
-      "id": "2023-02_voice_channel_statuses",
-      "label": "Voice Channel Status Guild Experiment",
-      "description": [
-        "Control",
-        "Treatment 1: Enable viewing and setting voice channel statuses for guild",
-        "Treatment 2: A/A test, identical to treatment 1"
-      ],
-      "hash": 2809294122,
-      "buckets": [
-        0,
-        1,
-        2
-      ],
-      "config_keys": [
-        "enabled"
-      ]
-    },
-    "rollout": {
-      "populations": [
-        {
-          "buckets": {
-            "none": {
-              "rollout": [
-                {
-                  "start": 0,
-                  "end": 10000
-                }
-              ]
-            }
-          },
-          "filters": []
-        }
-      ],
-      "revision": 0,
-      "overrides": {
-        "1": [
-          "890883112500854804",
-          "887867262839705651",
-          "993957185493160057",
-          "705666251560583168",
-          "1115745220575887491",
-          "1095810146761973830",
-          "300748021300330497",
-          "1116006991505137734"
-        ]
-      },
-      "overrides_formatted": []
-    }
-  },
-  {
-    "data": {
       "kind": "user",
       "id": "2023-05_fast_onboarding_landing",
       "label": "Fast Onboarding Landing",
@@ -6972,6 +6920,58 @@
       "overrides": {
         "1": [
           "882680660588904448"
+        ]
+      },
+      "overrides_formatted": []
+    }
+  },
+  {
+    "data": {
+      "kind": "guild",
+      "id": "2023-02_voice_channel_statuses",
+      "label": "Voice Channel Status Guild Experiment",
+      "description": [
+        "Control",
+        "Treatment 1: Enable viewing and setting voice channel statuses for guild",
+        "Treatment 2: A/A test, identical to treatment 1"
+      ],
+      "hash": 2809294122,
+      "buckets": [
+        0,
+        1,
+        2
+      ],
+      "config_keys": [
+        "enabled"
+      ]
+    },
+    "rollout": {
+      "populations": [
+        {
+          "buckets": {
+            "none": {
+              "rollout": [
+                {
+                  "start": 0,
+                  "end": 10000
+                }
+              ]
+            }
+          },
+          "filters": []
+        }
+      ],
+      "revision": 0,
+      "overrides": {
+        "1": [
+          "890883112500854804",
+          "887867262839705651",
+          "993957185493160057",
+          "705666251560583168",
+          "1115745220575887491",
+          "1095810146761973830",
+          "300748021300330497",
+          "1116006991505137734"
         ]
       },
       "overrides_formatted": []
