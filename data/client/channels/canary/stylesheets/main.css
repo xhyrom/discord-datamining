@@ -36533,6 +36533,25 @@ img[alt] {
     text-decoration: underline
 }
 
+.personalityBadge-pYraBr {
+    display: inline-block;
+    overflow: hidden;
+    -o-object-fit: contain;
+    object-fit: contain;
+    margin-left: .25rem;
+    vertical-align: top;
+    position: relative;
+    top: 1px;
+    height: calc(1rem + 4px);
+    width: calc(1rem + 4px);
+    cursor: pointer;
+    text-indent: 0
+}
+
+.tooltip-2pLjoh {
+    text-align: center
+}
+
 .badge-2WCXoe {
     display: -webkit-inline-box;
     display: -ms-inline-flexbox;
@@ -116949,6 +116968,7 @@ input::-webkit-outer-spin-button {
     gap: 8px
 }
 
+.errorBlock-340VeT,
 .personalityMargin-3qvDbC {
     margin-top: 16px
 }
@@ -159865,4 +159885,4 @@ html .invoiceCancelRow-dVOR64 {
     flex-direction: column
 }
 
-/*# sourceMappingURL=40532.48af9f3a285ae39c1845.css.map*/
+/*# sourceMappingURL=40532.ec9a43ed5623f8a27746.css.map*/
