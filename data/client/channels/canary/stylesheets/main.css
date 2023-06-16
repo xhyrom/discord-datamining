@@ -18079,6 +18079,28 @@ html.disable-forced-colors * {
     margin-top: 8px
 }
 
+.applicationInstallButtonContent-1c_u11 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row
+}
+
+.applicationInstallButtonText-3iy9r8 {
+    -webkit-box-flex: 1;
+    -ms-flex: 1 1 0px;
+    flex: 1 1 0;
+    overflow: hidden;
+    text-overflow: ellipsis
+}
+
+.launchIcon-3Z-7Zl {
+    margin-left: 8px
+}
+
 .buttonsContainer-3iOFIV {
     display: grid;
     gap: 6px;
@@ -135117,28 +135139,6 @@ html .invoiceCancelRow-3s2UuC {
     margin-right: 8px
 }
 
-.applicationInstallButtonContent-2GoIj7 {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: row;
-    flex-direction: row
-}
-
-.applicationInstallButtonText-28e06z {
-    -webkit-box-flex: 1;
-    -ms-flex: 1 1 0px;
-    flex: 1 1 0;
-    overflow: hidden;
-    text-overflow: ellipsis
-}
-
-.launchIcon-RTf7He {
-    margin-left: 8px
-}
-
 .enable-forced-colors .additionalActionsIcon-3Cy8UU {
     background-color: ButtonFace;
     border: 1px solid ButtonFace;
@@ -159865,4 +159865,4 @@ html .invoiceCancelRow-dVOR64 {
     flex-direction: column
 }
 
-/*# sourceMappingURL=40532.27a4429e3991eebeb03b.css.map*/
+/*# sourceMappingURL=40532.48af9f3a285ae39c1845.css.map*/
