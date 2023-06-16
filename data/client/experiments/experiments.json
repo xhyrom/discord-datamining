@@ -5320,6 +5320,25 @@
   {
     "data": {
       "kind": "user",
+      "id": "2023-03_mobile_remix",
+      "label": "Remixing User Experiment",
+      "description": [
+        "Control",
+        "Treatment 1: Enables media remixing"
+      ],
+      "hash": 961769771,
+      "buckets": [
+        0,
+        1
+      ],
+      "config_keys": [
+        "enabled"
+      ]
+    }
+  },
+  {
+    "data": {
+      "kind": "user",
       "id": "2021-12_inferno_spam_redaction",
       "label": "Inferno Spam Redaction",
       "description": [
