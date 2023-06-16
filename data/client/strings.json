@@ -2075,6 +2075,7 @@
   "PUBLIC_LOCALE_HELP": "\"Discord will prioritize this server in search and in recommendations to users who speak the selected language.\"",
   "PUBLIC_LOCALE_SELECTOR_TITLE": "\"Select a Primary Language\"",
   "NO_INVITES_CAPTION": "\"No invites yet!\"",
+  "CLYDE_SETTINGS": "\"Clyde Settings\"",
   "CLYDE_SETTINGS_SAVE_FAILED": "\"Failed to save Clyde Settings\"",
   "CLYDE_SECTION_DESCRIPTION": "\"Clyde is currently a free experiment and may generate content that could be considered biased, harmful, or inaccurate. [Learn More]({helpdeskArticle})\"",
   "ENABLE_CLYDE_SECTION": "\"Enable Clyde\"",
