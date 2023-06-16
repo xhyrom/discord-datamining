@@ -5098,7 +5098,8 @@
           "816784679717044276",
           "874345844743213126",
           "840296607785287763",
-          "1113529666989469708"
+          "1113529666989469708",
+          "435572461912719360"
         ]
       },
       "overrides_formatted": []
@@ -6949,16 +6950,38 @@
       "populations": [
         {
           "buckets": {
+            "1": {
+              "rollout": [
+                {
+                  "start": 50,
+                  "end": 100
+                }
+              ]
+            },
+            "2": {
+              "rollout": [
+                {
+                  "start": 100,
+                  "end": 150
+                }
+              ]
+            },
             "none": {
               "rollout": [
                 {
-                  "start": 0,
+                  "start": 150,
                   "end": 10000
                 }
               ]
             }
           },
-          "filters": []
+          "filters": [
+            {
+              "type": "guild_member_count_range",
+              "min_count": 0,
+              "max_count": 51
+            }
+          ]
         }
       ],
       "revision": 0,

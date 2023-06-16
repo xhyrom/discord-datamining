@@ -22,16 +22,38 @@
     "populations": [
       {
         "buckets": {
+          "1": {
+            "rollout": [
+              {
+                "start": 50,
+                "end": 100
+              }
+            ]
+          },
+          "2": {
+            "rollout": [
+              {
+                "start": 100,
+                "end": 150
+              }
+            ]
+          },
           "none": {
             "rollout": [
               {
-                "start": 0,
+                "start": 150,
                 "end": 10000
               }
             ]
           }
         },
-        "filters": []
+        "filters": [
+          {
+            "type": "guild_member_count_range",
+            "min_count": 0,
+            "max_count": 51
+          }
+        ]
       }
     ],
     "revision": 0,
