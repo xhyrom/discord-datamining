@@ -2,12 +2,8 @@ import { join } from "node:path";
 import type { Module } from "../../index.ts";
 import { Client } from "../index.ts";
 import {
-  chunk,
   formatNumber,
-  getWebhookFromEnv,
-  maximumStringLen,
   octokit,
-  postToDiscord,
   pushToGit,
   readFile,
   rm,
@@ -15,8 +11,17 @@ import {
 } from "../../../utils.ts";
 import { Experiment } from "./Experiment.ts";
 import deepEqual from "fast-deep-equal";
-import type { APIEmbed, APIEmbedField } from "discord-api-types/v10";
-import { EmbedBuilder } from "@discordjs/builders";
+import { send } from "./sender/index.ts";
+
+export interface Diff {
+  addedExperiments: Experiment[];
+  removedExperiments: Experiment[];
+  updatedExperiments: {
+    before: Experiment;
+    after: Experiment;
+  }[];
+  firstRolloutBeganExperiments: Experiment[];
+}
 
 export class Experiments implements Module {
   get baseDir() {
@@ -58,7 +63,14 @@ export class Experiments implements Module {
     const result = await pushToGit(
       `🧪 Experiments were updated`,
       `Experiments (${formatNumber(experiments.length)}):\n${experiments
-        .map((experiment) => experiment.name)
+        .map((experiment) => {
+          if (!experiment.data.label && !experiment.data.id)
+            return `unknown (${experiment.data.hash})`;
+
+          return experiment.data.label
+            ? `${experiment.data.label} - ${experiment.data.id} (${experiment.data.hash})`
+            : `${experiment.data.id} (${experiment.data.hash})`;
+        })
         .join("\n")}`
     );
 
@@ -71,41 +83,7 @@ export class Experiments implements Module {
       experiments
     );
 
-    const embeds: APIEmbed[] = [];
-
-    for (const post of diff.addedExperiments) {
-      embeds.push(this.buildEmbed("New", post).setColor(0x2cde5c).toJSON());
-    }
-
-    for (const post of diff.removedExperiments) {
-      embeds.push(this.buildEmbed("Removed", post).setColor(0xde2c2c).toJSON());
-    }
-
-    for (const post of diff.updatedExperiments) {
-      if (!post.diff) continue;
-
-      embeds.push(
-        this.buildEmbed("Updated", post)
-          .setDescription(
-            maximumStringLen(`\`\`\`diff\n${post.diff}\n\`\`\``, 4096)
-          )
-          .setColor(0x2c5cde)
-          .toJSON()
-      );
-    }
-
-    const embedsPerTen = chunk(embeds, 10);
-
-    for (const embeds of embedsPerTen) {
-      await postToDiscord(
-        getWebhookFromEnv("DISCORD_WEBHOOK_EXPERIMENTS"),
-        result?.update?.hash.to,
-        {
-          content: "<@&1105589221185568851>",
-          embeds,
-        }
-      );
-    }
+    send(diff, result);
   }
 
   async experiments(): Promise<Experiment[] | null> {
@@ -118,64 +96,12 @@ export class Experiments implements Module {
     return json.map((e: any) => new Experiment(e));
   }
 
-  private buildEmbed(action: string, experiment: Experiment) {
-    const fields = [
-      {
-        name: "Label",
-        value: experiment.data.label ?? "unknown",
-        inline: true,
-      },
-      {
-        name: "Id",
-        value: experiment.data.id ?? "unknown",
-        inline: true,
-      },
-      {
-        name: "Hash",
-        value: experiment.data.hash.toString(),
-        inline: true,
-      },
-      {
-        name: "Kind",
-        value: experiment.data.kind,
-        inline: true,
-      },
-      {
-        name: "Treatments",
-        value: experiment.data.description?.join?.("\n"),
-      },
-      {
-        name: "Populations",
-        value: experiment.formattedPopulations,
-      },
-      {
-        name: "Overrides",
-        value: experiment.formattedOverrides,
-      },
-      {
-        name: "Overrides Formatted",
-        value: experiment.formattedOverridesFormatted,
-      },
-    ];
-
-    // Keep only fields with a value
-    const possibleFields = fields.filter((f) => f.value) as APIEmbedField[];
-
-    return new EmbedBuilder()
-      .setTitle(`${action} Experiment`)
-      .addFields(possibleFields);
-  }
-
   private async diff(
     before: string,
     after: string,
     oldExperiments: Experiment[],
     newExperiments: Experiment[]
-  ): Promise<{
-    removedExperiments: Experiment[];
-    updatedExperiments: Experiment[];
-    addedExperiments: Experiment[];
-  }> {
+  ): Promise<Diff> {
     const diff = await octokit.repos.compareCommits({
       owner: "xHyroM",
       repo: "discord-datamining",
@@ -186,6 +112,7 @@ export class Experiments implements Module {
     const removedExperiments = [];
     const updatedExperiments = [];
     const addedExperiments = [];
+    const firstRolloutBeganExperiments = [];
 
     for (const oldExperiment of oldExperiments) {
       const newExperiment = newExperiments.find(
@@ -204,7 +131,14 @@ export class Experiments implements Module {
             `data/client/experiments/experiments/${newExperiment.hash}/data.json`
         )?.patch;
 
-        updatedExperiments.push(newExperiment);
+        updatedExperiments.push({
+          before: oldExperiment,
+          after: newExperiment,
+        });
+
+        if (!oldExperiment.rollout && newExperiment.rollout) {
+          firstRolloutBeganExperiments.push(newExperiment);
+        }
       }
     }
 
@@ -222,6 +156,7 @@ export class Experiments implements Module {
       removedExperiments,
       updatedExperiments,
       addedExperiments,
+      firstRolloutBeganExperiments,
     };
   }
 }
