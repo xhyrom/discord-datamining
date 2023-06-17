@@ -130790,6 +130790,8 @@ html .invoiceCancelRow-3s2UuC {
 }
 
 .attachedRoleColor-2nhYs7 {
+    -ms-flex-negative: 0;
+    flex-shrink: 0;
     width: 16px;
     height: 16px;
     border-radius: 50%
@@ -159884,4 +159886,4 @@ html .invoiceCancelRow-dVOR64 {
     flex-direction: column
 }
 
-/*# sourceMappingURL=40532.b8be9e1c8188adc901ce.css.map*/
+/*# sourceMappingURL=40532.e6c53115677a4c07a18e.css.map*/
