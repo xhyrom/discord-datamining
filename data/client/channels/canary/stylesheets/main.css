@@ -74531,12 +74531,12 @@ strong {
 }
 
 .unread-36eUEm {
-    background-color: var(--channels-default)
+    background-color: var(--channels-default);
+    margin-top: 8px
 }
 
 .unreadRelevant-2f-VSK {
-    background-color: var(--interactive-active);
-    margin-top: 8px
+    background-color: var(--interactive-active)
 }
 
 .numberBadge-3uSQY0 {
@@ -159886,4 +159886,4 @@ html .invoiceCancelRow-dVOR64 {
     flex-direction: column
 }
 
-/*# sourceMappingURL=40532.e6c53115677a4c07a18e.css.map*/
+/*# sourceMappingURL=40532.499c05eb06258d63110a.css.map*/
