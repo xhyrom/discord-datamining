@@ -2887,6 +2887,7 @@
   "SEARCH_FOR_EMOJI": "\"Find the perfect emoji\"",
   "SEARCH_FOR_STICKER": "\"Find the perfect sticker\"",
   "NO_EMOJI_SEARCH_RESULTS": "\"No emoji match your search\"",
+  "EMOJI_CATEGORY_PACK": "\"{packName} Pack\"",
   "EMOJI_CATEGORY_RECENT": "\"Frequently Used\"",
   "EMOJI_CATEGORY_CUSTOM": "\"Custom\"",
   "EMOJI_CATEGORY_ACTIVITY": "\"Activities\"",
