@@ -4004,7 +4004,7 @@
     "data": {
       "kind": "user",
       "id": "2023-05_inventory_guild_packs",
-      "label": "Invenotry Guild Packs Experiment",
+      "label": "Inventory Guild Packs Experiment",
       "description": [
         "Control",
         "Treatment 1: Enabled"
@@ -5496,7 +5496,7 @@
     "data": {
       "kind": "user",
       "id": "2023-06_inventory_reaction_tooltip",
-      "label": "Invenotry Reaction Tooltip Experiment",
+      "label": "Inventory Reaction Tooltip Experiment",
       "description": [
         "Control",
         "Treatment 1: Enabled"
