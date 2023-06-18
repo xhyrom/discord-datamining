@@ -1,10 +1,10 @@
 import type { PushResult } from "simple-git";
 import type { Sender } from ".";
-import { chunk, getWebhookFromEnv, postToDiscord } from "../../../../utils";
+import { chunk, getWebhookFromEnv, postToDiscord } from "../../../../utils.ts";
 import type { Diff } from "../.";
-import type { Experiment } from "../Experiment";
+import type { Experiment } from "../Experiment.ts";
 import { EmbedBuilder } from "@discordjs/builders";
-import { andList, nameFormat, parseFilter } from "../utils";
+import { andList, nameFormat, parseFilter } from "../utils.ts";
 import deepEqual from "fast-deep-equal";
 
 export class WumpusCentralSender implements Sender {

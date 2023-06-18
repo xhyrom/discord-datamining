@@ -1,5 +1,5 @@
 import type { Experiment as ExperimentType, Population } from "./types";
-import { andList, colorFromName, nameFormat, parseFilter } from "./utils";
+import { andList, colorFromName, nameFormat, parseFilter } from "./utils.ts";
 
 export class Experiment {
   public data: ExperimentType["data"];

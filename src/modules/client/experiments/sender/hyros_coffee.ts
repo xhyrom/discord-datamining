@@ -5,10 +5,10 @@ import {
   getWebhookFromEnv,
   maximumStringLen,
   postToDiscord,
-} from "../../../../utils";
+} from "../../../../utils.ts";
 import type { Diff } from "../.";
 import type { APIEmbed, APIEmbedField } from "discord-api-types/v10";
-import type { Experiment } from "../Experiment";
+import type { Experiment } from "../Experiment.ts";
 import { EmbedBuilder } from "@discordjs/builders";
 
 export class HyrosCoffeeSender implements Sender {
