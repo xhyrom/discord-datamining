@@ -1,9 +1,8 @@
 {
-  "subdomain_count": 51,
+  "subdomain_count": 50,
   "subdomains": [
     "support",
     "blog",
-    "ptb",
     "canary",
     "status",
     "streamkit",
