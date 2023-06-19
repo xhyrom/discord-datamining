@@ -2893,6 +2893,14 @@
       "OPTIONS"
     ]
   },
+  "USER_BROADCASTS": {
+    "url": "/users/broadcasts/bucket",
+    "allowed_methods": [
+      "GET",
+      "HEAD",
+      "OPTIONS"
+    ]
+  },
   "FUNIMATION_PROMOTION": {
     "url": "/promotions/funimation",
     "allowed_methods": null
