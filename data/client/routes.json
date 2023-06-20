@@ -837,12 +837,7 @@
   },
   "USER_COLLECTIBLES": {
     "url": "/users/@me/collectibles",
-    "allowed_methods": [
-      "GET",
-      "HEAD",
-      "OPTIONS",
-      "PUT"
-    ]
+    "allowed_methods": null
   },
   "GUILD_MEMBER_BANNER": {
     "url": "/guilds/:param/users/:param/banners/:param.:param",
