@@ -1782,6 +1782,13 @@
       "OPTIONS"
     ]
   },
+  "USER_GUILD_SETTINGS": {
+    "url": "/users/@me/guilds/:param/settings",
+    "allowed_methods": [
+      "OPTIONS",
+      "PATCH"
+    ]
+  },
   "APPLICATIONS_DETECTABLE": {
     "url": "/applications/detectable",
     "allowed_methods": [
@@ -3316,6 +3323,14 @@
     "allowed_methods": [
       "OPTIONS",
       "POST"
+    ]
+  },
+  "DROPS_ELIGIBILITY": {
+    "url": "/drops/eligibility",
+    "allowed_methods": [
+      "GET",
+      "HEAD",
+      "OPTIONS"
     ]
   },
   "DROPS_REWARD_CODE": {
