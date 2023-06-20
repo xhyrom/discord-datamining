@@ -65,7 +65,7 @@
     </div>
     <div id="heading-4" class="rich-wrapper">
         <div class="blog-post-content w-richtext">
-            <h2><strong>Activities Make Their Way to Mobile</strong>‍</h2>
+            <h2><br>Activities Make Their Way to Mobile</h2>
             <p>With Mobile support on Discord Activities, you can enjoy the great outdoors while talking and playing with your friends on Discord, no matter where they are. Play Chess in the Park in a real park, Blaze some 8s on your tablet while riding a horse in a fitting Western locale, or be that person playing Bobble League at the concert you paid way too much to get tickets for.&nbsp;</p>
             <figure class="w-richtext-figure-type-image w-richtext-align-fullwidth" style="max-width:1200pxpx">
                 <div><img src="https://assets-global.website-files.com/5f9072399b2640f14d6a2bf4/641231302c9ef2d3a6e12149_F62dLeJOUPzs2kMTj3gGIElL_R_4XPBWyfOSYnYj7mumf-9mkBlozzA1j4W4p9IlIth9vO5_DXPswWgkuRFwyqyskBaeSsKVGxOBt8xfjnKDukcXACDCu2Y2nWyukmkKyKHfz7avWoo8mUxQZIRRVKs.png" alt=""></div>
