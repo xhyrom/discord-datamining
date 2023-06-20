@@ -1054,10 +1054,7 @@
   },
   "CHANNEL_RECIPIENT_REJECT_BATCH": {
     "url": "/channels/recipients/@me/batch-reject",
-    "allowed_methods": [
-      "OPTIONS",
-      "PUT"
-    ]
+    "allowed_methods": null
   },
   "CHANNEL_ICON": {
     "url": "/channels/:param/icons/:param.jpg",
@@ -3533,10 +3530,7 @@
   },
   "CREATOR_MONETIZATION_ACCEPT_TERMS_V2": {
     "url": "/guilds/:param/creator-monetization/accept-terms",
-    "allowed_methods": [
-      "OPTIONS",
-      "POST"
-    ]
+    "allowed_methods": null
   },
   "CREATOR_MONETIZATION_RESTRICTIONS": {
     "url": "/guilds/:param/creator-monetization/restrictions",
