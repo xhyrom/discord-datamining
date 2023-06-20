@@ -39560,7 +39560,18 @@ html .progress-2Otdc- {
 }
 
 .thumbnail-jSM4Zo {
-    width: 100%
+    max-width: 512px;
+    max-height: 288px;
+    width: 100%;
+    display: block;
+    aspect-ratio: 16/9
+}
+
+.portraitThumbnail-22MzEw {
+    -o-object-fit: contain;
+    object-fit: contain;
+    -o-object-position: center;
+    object-position: center
 }
 
 .thumbnailOverlay-2A614n {
@@ -159887,4 +159898,4 @@ html .invoiceCancelRow-dVOR64 {
     flex-direction: column
 }
 
-/*# sourceMappingURL=40532.12ce5f7ea60735330a3e.css.map*/
+/*# sourceMappingURL=40532.73ff6f2fd7fe8f75d550.css.map*/
