@@ -52,6 +52,10 @@ export class Experiment {
 
       if (filters) format += `${filters}\n`;
 
+      if (Object.keys(population.buckets).length > 0) {
+        format += "```ansi\n";
+      }
+
       for (const [bucketName, bucketValue] of Object.entries(
         population.buckets
       ).sort((a, b) => {
@@ -65,17 +69,18 @@ export class Experiment {
             0
           ) / 100;
         format += [
-          "```ansi",
-          `${colorFromName(bucketName)}**${nameFormat(
+          `${colorFromName(bucketName)}${nameFormat(
             bucketName
-          )}**: ${percentage}% (${bucketValue.rollout
+          )}: ${percentage}% (${bucketValue.rollout
             .map((r) => `${r.start}-${r.end}`)
             .join(", ")})\x1b[0m`,
-          "```",
+          "",
         ].join("\n");
       }
 
-      format += "\n";
+      if (Object.keys(population.buckets).length > 0) {
+        format += "```";
+      }
     }
 
     return format.length > 1024 ? format.slice(0, 1021) + "..." : format;

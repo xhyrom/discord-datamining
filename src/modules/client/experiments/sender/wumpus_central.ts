@@ -76,6 +76,10 @@ export class WumpusCentralSender implements Sender {
 
       if (filters) description += `${filters}\n`;
 
+      if (Object.keys(population.buckets).length > 0) {
+        description += "```js\n";
+      }
+
       for (const [bucketName, bucketValue] of Object.entries(
         population.buckets
       ).sort((a, b) => {
@@ -89,18 +93,22 @@ export class WumpusCentralSender implements Sender {
             0
           ) / 100;
         description += [
-          "```js",
           `${nameFormat(bucketName)}: ${percentage}% (${bucketValue.rollout
             .map((r) => `${r.start}-${r.end}`)
             .join(", ")})`,
-          "```",
+          "",
         ].join("\n");
+      }
+
+      if (Object.keys(population.buckets).length > 0) {
+        description += "```\n";
       }
     }
 
     return new EmbedBuilder()
       .setTitle(this.experimentName(exp))
       .setURL("https://discord.gg/QgEbfFa9XA")
+      .setDescription(description)
       .addFields(
         {
           name: "Treatments",
@@ -171,7 +179,7 @@ export class WumpusCentralSender implements Sender {
     if (!exp.data.label && !exp.data.id) return `unknown (${exp.data.hash})`;
 
     return exp.data.label
-      ? `${exp.data.label} (${exp.data.hash})`
+      ? `${exp.data.label} (${exp.data.id ? exp.data.id : exp.data.hash})`
       : `${exp.data.id} (${exp.data.hash})`;
   }
 }
