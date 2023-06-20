@@ -32,9 +32,9 @@
             <h3><strong>Only Open Trusted Links from Those You Know</strong></h3>
             <p>This may feel like a given, but a surprising amount of security issues stem from people clicking on links before checking if they’re the real deal. Always double-check a link you’re clicking — link shortening services can easily mask unsafe websites or programs. We recommend getting it checked against a resource like <a href="https://www.virustotal.com/gui/home/upload">VirusTotal</a> to see if someone has already flagged it as potentially dangerous.&nbsp;</p>
             <p>In addition, Discord has its own systems in place to remove malicious links and we’re constantly evolving those systems.&nbsp;<br></p>
-            <figure style="max-width:720pxpx" class="w-richtext-align-fullwidth w-richtext-figure-type-image">
+            <figure class="w-richtext-figure-type-image w-richtext-align-fullwidth" style="max-width:720pxpx">
                 <div><img src="https://assets-global.website-files.com/5f9072399b2640f14d6a2bf4/61f97ddcc8b961b407b7b71a_Q1KTT6i4fmgw7eT1iy6jHw45fnaUFoZR0KAAUtATvRRoViybqZIXJ3em_sLO8_LF0DQnuTfmn1l11weS--fmhL8Fj25PTK4liLTkii1VsjvhQr1irr1ss-jzKsuhkHhg4_3cdzmi.png" alt=""></div>
-                <figcaption>Note the misspelling in the URL, "<a href="https://www.google.com/url?q=http://dliscordnltro.com&amp;sa=D&amp;source=docs&amp;ust=1643911267789519&amp;usg=AOvVaw0HJheu7CuLigaD8xZl2u8H" target="_blank">dliscordnltro.com</a>."<br></figcaption>
+                <figcaption>Note the misspelling in the URL, "dliscordnltro.com."<br></figcaption>
             </figure>
             <h3><strong>Don’t Download Programs or Run Code You Don’t Recognize</strong></h3>
             <p>It’s not advised to download and run software that doesn’t come from a reputable source. Downloading and running programs that someone sends you unprompted is almost always a bad idea. <br><br>If a person claiming to have “special access to features” or new software says they need you to run on your own computer, they’re misleading you in order to get your personal info with their shady programs. If it sounds too good to be true, it probably is.</p>
@@ -50,7 +50,7 @@
             <p>Disabling DMs for a particular server is one of the best ways to prevent bad apples hiding inside larger communities from contacting you.&nbsp;</p>
             <p>To adjust who can and can’t DM you, head into User Settings &gt; Privacy &amp; Safety, then scroll down to “Server Privacy Defaults.” From there, you’ll find the option to “Allow direct messages from server members.”&nbsp;</p>
             <p>Feel free to adjust it as you wish, but do note that this new state only applies to servers joined after changing the toggle; it won’t retroactively affect your existing servers.<br></p>
-            <figure style="max-width:1600pxpx" class="w-richtext-align-fullwidth w-richtext-figure-type-image">
+            <figure class="w-richtext-figure-type-image w-richtext-align-fullwidth" style="max-width:1600pxpx">
                 <div><img src="https://assets-global.website-files.com/5f9072399b2640f14d6a2bf4/61fae1795bf57e28323afacc_hijEH7OrhRisTF_24CPAuin33VwaJC6D4eHGMekb4KbI3alLC8EixigYBqG5mhIAKe3CE6b7_6v6sFdbRrA5a7sBuaJjosXXV5nyM9vNQqTimPQAfhGymPlqs-BMSQwwg5qp8H3j.png" alt=""></div>
             </figure>
             <p>If you turn this option off, members of newly-joined servers can’t contact you via DM unless you’re friends with them beforehand. Receiving mail might be nice, but receiving suspicious messages from people you don’t know is less nice.</p>
