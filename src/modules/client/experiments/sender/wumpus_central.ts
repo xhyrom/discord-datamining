@@ -112,7 +112,7 @@ export class WumpusCentralSender implements Sender {
       .addFields(
         {
           name: "Treatments",
-          value: `\`\`\`js\n${exp.data.description?.join?.("\n")}\`\`\``,
+          value: `\`\`\`\n${exp.data.description?.join?.("\n")}\`\`\``,
         },
         {
           name: "Hash",
