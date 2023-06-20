@@ -3271,14 +3271,6 @@
       "OPTIONS"
     ]
   },
-  "PRICE_TIERS": {
-    "url": "/store/price-tiers",
-    "allowed_methods": [
-      "GET",
-      "HEAD",
-      "OPTIONS"
-    ]
-  },
   "TEAMS": {
     "url": "/teams",
     "allowed_methods": [
@@ -3313,13 +3305,6 @@
   },
   "HUB_EMAIL_VERIFY": {
     "url": "/guilds/automations/email-domain-lookup/verify",
-    "allowed_methods": [
-      "OPTIONS",
-      "POST"
-    ]
-  },
-  "HUB_EMAIL_VERIFY_CODE": {
-    "url": "/guilds/automations/email-domain-lookup/verify-code",
     "allowed_methods": [
       "OPTIONS",
       "POST"
