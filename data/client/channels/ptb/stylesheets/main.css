@@ -9566,6 +9566,98 @@ html.decorate-links .lowSaturationUnderline-Z6CW6z {
     bottom: 140px
 }
 
+.container-2-SiyA {
+    border-radius: var(--radius-sm);
+    background-color: var(--background-secondary);
+    -webkit-box-shadow: var(--shadow-low);
+    box-shadow: var(--shadow-low);
+    width: 100%
+}
+
+.footer-2Vz0z0,
+.toolbar-3-ch_e {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    padding: 16px
+}
+
+.table-3Cg7D3 {
+    color: var(--text-normal);
+    border-collapse: collapse;
+    width: 100%;
+    overflow: scroll;
+    table-layout: fixed
+}
+
+.header-2Tae7o {
+    border-bottom: 1px solid var(--divider-strong);
+    border-top: 1px solid var(--divider-subtle)
+}
+
+.body-1Na8n4 {
+    padding: 8px
+}
+
+.row-2vXrWq {
+    -webkit-transition: background-color .1s ease;
+    transition: background-color .1s ease;
+    outline: none;
+    border-bottom: 1px solid var(--divider-subtle);
+    white-space: nowrap
+}
+
+.row-2vXrWq[data-focus-visible] {
+    -webkit-box-shadow: 0 0 0 4px var(--blue-345);
+    box-shadow: 0 0 0 4px var(--blue-345)
+}
+
+.row-2vXrWq[data-pressed] {
+    background-color: var(--background-modifier-active)
+}
+
+.row-2vXrWq[data-hovered] {
+    background-color: var(--background-modifier-hover)
+}
+
+.row-2vXrWq[aria-selected=true] {
+    background-color: var(--background-modifier-selected)
+}
+
+.row-2vXrWq:last-child {
+    border-bottom: none
+}
+
+.column-2MLf8B {
+    outline: none;
+    padding: 16px
+}
+
+.column-2MLf8B[data-focus-visible] {
+    -webkit-box-shadow: 0 0 0 4px var(--blue-345);
+    box-shadow: 0 0 0 4px var(--blue-345)
+}
+
+.columnText-SE1zUu {
+    text-align: left
+}
+
+.cell-3lcYYC {
+    outline: none;
+    padding: 16px
+}
+
+.cell-3lcYYC[data-focus-visible] {
+    -webkit-box-shadow: 0 0 0 4px var(--blue-345);
+    box-shadow: 0 0 0 4px var(--blue-345)
+}
+
 .errorCodeMessage-3b0wxr {
     margin-top: 16px
 }
@@ -159898,4 +159990,4 @@ html .invoiceCancelRow-dVOR64 {
     flex-direction: column
 }
 
-/*# sourceMappingURL=40532.73ff6f2fd7fe8f75d550.css.map*/
+/*# sourceMappingURL=40532.96c02d848cfd947fc2ce.css.map*/
