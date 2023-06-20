@@ -63187,8 +63187,7 @@ strong {
     -ms-flex-align: center;
     align-items: center;
     pointer-events: all;
-    position: absolute;
-    overflow: hidden
+    position: absolute
 }
 
 .toolbar-37BrJ5:before {
@@ -63208,7 +63207,9 @@ strong {
     -webkit-box-direction: normal;
     -ms-flex-direction: row;
     flex-direction: row;
-    height: 32px
+    height: 32px;
+    border-radius: 4px;
+    overflow: hidden
 }
 
 .buttons-3snlAO,
@@ -159886,4 +159887,4 @@ html .invoiceCancelRow-dVOR64 {
     flex-direction: column
 }
 
-/*# sourceMappingURL=40532.499c05eb06258d63110a.css.map*/
+/*# sourceMappingURL=40532.12ce5f7ea60735330a3e.css.map*/
