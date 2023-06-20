@@ -74799,6 +74799,228 @@ strong {
     }
 }
 
+.searchContainer-xG1cQp {
+    position: relative
+}
+
+.searchBox-2dOriW {
+    padding: 0 innerPadding
+}
+
+.searchBar-3PNM5n {
+    -ms-flex-negative: 0;
+    flex-shrink: 0;
+    margin-left: 16px;
+    margin-right: 16px
+}
+
+.resultsList-3yWCAG {
+    background-color: var(--background-secondary);
+    -webkit-box-shadow: var(--elevation-high);
+    box-shadow: var(--elevation-high);
+    border-radius: 5px;
+    border: 1px solid var(--background-tertiary);
+    padding: 16px;
+    height: auto;
+    max-height: 260px
+}
+
+.resultsListParent-2qzprO {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    z-index: 9999
+}
+
+.sectionTitle-Rn3QY- {
+    color: var(--header-primary);
+    padding-bottom: 16px;
+    text-transform: uppercase
+}
+
+.selectableSearchRow-2SO4tF {
+    cursor: pointer;
+    display: block;
+    margin-right: 8px
+}
+
+.rowHeight-2mNW5o {
+    height: 24px
+}
+
+.sectionHeight-Vb3J7v {
+    height: 32px
+}
+
+.rowContainer-29FQQy {
+    padding: 2px 0
+}
+
+.rowLabel-vgbSyG {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    color: var(--text-normal);
+    font-family: var(--font-primary)
+}
+
+.roleLabel-1LvGo5 {
+    display: inline-block;
+    background-color: var(--background-modifier-accent);
+    border-radius: 4px;
+    padding: 1px 4px
+}
+
+.roleTagContainer-1lUfQS {
+    display: inline
+}
+
+.roleTag-PosfJk {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center
+}
+
+.roleTagIcon-3i9Pnn {
+    margin-right: 4px
+}
+
+.roleTagLabel-1Ppp7L {
+    display: inline
+}
+
+.channelLabel-2yRV3d {
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+    border-radius: 4px
+}
+
+.channelRowLabel-Za3n14 {
+    background-color: var(--background-modifier-accent);
+    padding: 2px 4px
+}
+
+.hasParent-2MXv0u {
+    margin-left: 12px
+}
+
+.noIndent-3lqRtD {
+    margin-left: -6px
+}
+
+.channelIcon-1irWaQ {
+    margin-right: 4px;
+    color: var(--text-muted)
+}
+
+.sectionFooter-usNZkG {
+    height: 1px;
+    padding-top: 13px;
+    padding-bottom: 18px;
+    vertical-align: middle;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center
+}
+
+.rolePopout-29Grfg {
+    background-color: var(--background-floating)
+}
+
+.roleNameContainer-L67_EV {
+    position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-box-flex: 1;
+    -ms-flex: 1;
+    flex: 1
+}
+
+.roleLabel-3XiMdX {
+    position: relative;
+    padding: 4px 8px;
+    border-radius: var(--radius-sm);
+    margin: -4px;
+    overflow: hidden
+}
+
+.spacer-2E7LSZ {
+    -webkit-box-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+    width: 100%
+}
+
+.checkboxContainer-3Fwh69 {
+    -webkit-box-flex: 0;
+    -ms-flex: 0;
+    flex: 0
+}
+
+.labelBackground-30cixf {
+    opacity: .25;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    -webkit-transition: opacity .2s ease-in-out;
+    transition: opacity .2s ease-in-out
+}
+
+.labelBackground-30cixf.selected-AjbrfP {
+    opacity: .35
+}
+
+.labelBackground-30cixf:hover {
+    opacity: .45
+}
+
+.labelText-1ib1_k {
+    position: relative;
+    z-index: 2
+}
+
+.footerContainer-158HhJ {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-box-pack: end;
+    -ms-flex-pack: end;
+    justify-content: flex-end;
+    padding: 8px;
+    gap: 8px;
+    border-top: 1px solid var(--background-modifier-accent)
+}
+
 .tableHeaderCellContainer-fAjuC1 {
     padding: 8px;
     text-align: left;
@@ -74902,6 +75124,11 @@ strong {
     -webkit-box-pack: end;
     -ms-flex-pack: end;
     justify-content: flex-end
+}
+
+.pageLabel-1HX0q- strong {
+    font-weight: 400;
+    color: var(--text-normal)
 }
 
 .heading-sm-normal-2Fc_3V {
@@ -75350,8 +75577,7 @@ strong {
     font-weight: 700
 }
 
-.flagContainer-1U89Lz,
-.roleContainer-13c6D7 {
+.flagContainer-1U89Lz {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -75365,13 +75591,6 @@ strong {
     gap: 8px
 }
 
-.highestRole-ReE-QC {
-    -webkit-box-flex: 0;
-    -ms-flex: 0 0;
-    flex: 0 0;
-    width: auto
-}
-
 .roundedRow-2mAezB td:first-child {
     border-top-left-radius: var(--radius-sm);
     border-bottom-left-radius: var(--radius-sm)
@@ -75383,8 +75602,10 @@ strong {
 }
 
 .memberRowContainer-ZDlmmA {
-    -webkit-transition: background-color 80ms ease-in-out;
-    transition: background-color 80ms ease-in-out
+    background-color: var(--background-primary);
+    -webkit-transition: background-color 60ms cubic-bezier(.48, 1.93, 1, .68);
+    transition: background-color 60ms cubic-bezier(.48, 1.93, 1, .68);
+    cursor: pointer
 }
 
 .memberRowContainer-ZDlmmA:hover {
@@ -75402,6 +75623,18 @@ strong {
 
 .memberRowContainer-ZDlmmA.selected-3uRybE .actionCell-1tWIj3 {
     color: var(--interactive-active)
+}
+
+.memberRowContainer-ZDlmmA .addRoleContainer-2tqBaM {
+    opacity: 0;
+    cursor: pointer;
+    -webkit-transition: opacity 60ms cubic-bezier(.48, 1.93, 1, .68);
+    transition: opacity 60ms cubic-bezier(.48, 1.93, 1, .68)
+}
+
+.memberRowContainer-ZDlmmA.selected-3uRybE .addRoleContainer-2tqBaM,
+.memberRowContainer-ZDlmmA:hover .addRoleContainer-2tqBaM {
+    opacity: 1
 }
 
 .memberRowContainer-ZDlmmA td {
@@ -75422,8 +75655,8 @@ strong {
     height: 1px;
     opacity: 1;
     background: var(--background-modifier-accent);
-    -webkit-transition: opacity 80ms ease-in-out;
-    transition: opacity 80ms ease-in-out
+    -webkit-transition: opacity 60ms cubic-bezier(.64, .57, .67, 1.53);
+    transition: opacity 60ms cubic-bezier(.64, .57, .67, 1.53)
 }
 
 .memberRowContainer-ZDlmmA:hover+.memberRowContainer-ZDlmmA td:after,
@@ -75458,7 +75691,9 @@ strong {
     -ms-flex-pack: end;
     justify-content: flex-end;
     gap: 8px;
-    color: var(--interactive-normal)
+    color: var(--interactive-normal);
+    -webkit-transition: color 60ms cubic-bezier(.48, 1.93, 1, .68);
+    transition: color 60ms cubic-bezier(.48, 1.93, 1, .68)
 }
 
 .actionCell-1tWIj3:hover {
@@ -75468,7 +75703,8 @@ strong {
 .memberNameContainer-IOGroW {
     display: grid;
     grid-template-columns: auto 1fr;
-    gap: 0 8px
+    gap: 0 8px;
+    cursor: pointer
 }
 
 .memberAvatar-OC8wGz {
@@ -75504,8 +75740,8 @@ strong {
     cursor: pointer;
     border-radius: var(--radius-round);
     background-color: var(--background-modifier-accent);
-    -webkit-transition: background-color 80ms ease-in-out;
-    transition: background-color 80ms ease-in-out
+    -webkit-transition: background-color 60ms cubic-bezier(.48, 1.93, 1, .68);
+    transition: background-color 60ms cubic-bezier(.48, 1.93, 1, .68)
 }
 
 .button-2XiUpU:hover {
@@ -75514,6 +75750,81 @@ strong {
 
 .button-2XiUpU:active {
     background-color: var(--background-modifier-active)
+}
+
+.roleContainer-13c6D7 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    gap: 4px
+}
+
+.highestRole-ReE-QC {
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0;
+    flex: 0 0;
+    width: auto;
+    margin: 0
+}
+
+.highestRole-ReE-QC,
+.otherRoles-LMys1u {
+    border-radius: var(--radius-xs);
+    background-color: var(--background-modifier-accent);
+    height: 24px
+}
+
+.otherRoles-LMys1u {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    width: 24px;
+    cursor: pointer
+}
+
+.addRoleIcon-5oV6RN {
+    width: 20px;
+    height: 20px;
+    color: var(--interactive-normal);
+    -webkit-transition: color 60ms cubic-bezier(.48, 1.93, 1, .68);
+    transition: color 60ms cubic-bezier(.48, 1.93, 1, .68)
+}
+
+.roleTooltip-WIu418 {
+    padding: 4px 0 0 4px
+}
+
+.roleTooltipItemContainer-3Jvgqd {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    gap: 4px;
+    padding: 8px
+}
+
+.roleTooltipItem-1kJZ1v {
+    overflow: hidden
 }
 
 .searchInputContainer-2O9YCK {
@@ -106562,145 +106873,6 @@ html .tabBadge-h4HGed {
     color: var(--text-link);
     font-weight: 600;
     cursor: pointer
-}
-
-.searchContainer-xG1cQp {
-    position: relative
-}
-
-.searchBox-2dOriW {
-    padding: 0 innerPadding
-}
-
-.searchBar-3PNM5n {
-    -ms-flex-negative: 0;
-    flex-shrink: 0;
-    margin-left: 16px;
-    margin-right: 16px
-}
-
-.resultsList-3yWCAG {
-    background-color: var(--background-secondary);
-    -webkit-box-shadow: var(--elevation-high);
-    box-shadow: var(--elevation-high);
-    border-radius: 5px;
-    border: 1px solid var(--background-tertiary);
-    padding: 16px;
-    height: auto;
-    max-height: 260px
-}
-
-.resultsListParent-2qzprO {
-    position: absolute;
-    top: 100%;
-    left: 0;
-    right: 0;
-    z-index: 9999
-}
-
-.sectionTitle-Rn3QY- {
-    color: var(--header-primary);
-    padding-bottom: 16px;
-    text-transform: uppercase
-}
-
-.selectableSearchRow-2SO4tF {
-    cursor: pointer;
-    display: block;
-    margin-right: 8px
-}
-
-.rowHeight-2mNW5o {
-    height: 24px
-}
-
-.sectionHeight-Vb3J7v {
-    height: 32px
-}
-
-.rowContainer-29FQQy {
-    padding: 2px 0
-}
-
-.rowLabel-vgbSyG {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    color: var(--text-normal);
-    font-family: var(--font-primary)
-}
-
-.roleLabel-1LvGo5 {
-    display: inline-block;
-    background-color: var(--background-modifier-accent);
-    border-radius: 4px;
-    padding: 1px 4px
-}
-
-.roleTagContainer-1lUfQS {
-    display: inline
-}
-
-.roleTag-PosfJk {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: row;
-    flex-direction: row;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center
-}
-
-.roleTagIcon-3i9Pnn {
-    margin-right: 4px
-}
-
-.roleTagLabel-1Ppp7L {
-    display: inline
-}
-
-.channelLabel-2yRV3d {
-    width: -webkit-fit-content;
-    width: -moz-fit-content;
-    width: fit-content;
-    border-radius: 4px
-}
-
-.channelRowLabel-Za3n14 {
-    background-color: var(--background-modifier-accent);
-    padding: 2px 4px
-}
-
-.hasParent-2MXv0u {
-    margin-left: 12px
-}
-
-.noIndent-3lqRtD {
-    margin-left: -6px
-}
-
-.channelIcon-1irWaQ {
-    margin-right: 4px;
-    color: var(--text-muted)
-}
-
-.sectionFooter-usNZkG {
-    height: 1px;
-    padding-top: 13px;
-    padding-bottom: 18px;
-    vertical-align: middle;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    justify-content: center
 }
 
 .exemptionHint-3G8JUi {
@@ -159990,4 +160162,4 @@ html .invoiceCancelRow-dVOR64 {
     flex-direction: column
 }
 
-/*# sourceMappingURL=40532.96c02d848cfd947fc2ce.css.map*/
+/*# sourceMappingURL=40532.178f45617506d895902a.css.map*/
