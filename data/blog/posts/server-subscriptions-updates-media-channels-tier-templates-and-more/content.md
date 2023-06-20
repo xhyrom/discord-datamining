@@ -3,7 +3,7 @@
         <div class="blog-post-content w-richtext">
             <p>Since Server Subscriptions first launched <a href="https://discord.com/blog/server-and-creator-subscriptions">in December</a>, thousands of creators have started earning on Discord, offering unique perks and benefits which help engage and grow their communities. To date, we've paid out millions of dollars to thousands of creators and communities, and we're seeing more creators and communities earning on their Discord servers every day.&nbsp;</p>
             <p>For creators and communities who haven’t tried out these features yet, we’ve heard your feedback: you want more ideas on what to offer, more tools to add value to your subscriptions, and the ability to sell different types of products on Discord.&nbsp; &nbsp; <br></p>
-            <p><strong>Today, we’re excited to share new tools that help you get started earning money faster. Over the next few months, you’ll be able to create more value for your existing Server Subscriptions and utilize entirely new ways to earn money on Discord with one-time purchases.<br>‍</strong></p>
+            <p><strong>Today, we’re excited to share new tools that help you get started earning money faster. Over the next few months, you’ll be able to create more value for your existing Server Subscriptions and utilize entirely new ways to earn money on Discord with one-time purchases.</strong></p>
         </div>
     </div>
     <div class="btn-wrapper w-condition-invisible"><a href="#" class="btn-blog w-dyn-bind-empty w-button"></a></div>
