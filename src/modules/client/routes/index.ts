@@ -90,7 +90,7 @@ export class Routes implements Module {
     let i = 0;
     for (const [name, url] of Object.entries(json)) {
       const res = await this.getAllowedMethods(url);
-      if (res.status !== 200) {
+      if (res.status === 404) {
         console.log(`Failed to fetch ${url}: ${res.text} (${res.status})`);
 
         result[name] = {
@@ -99,6 +99,10 @@ export class Routes implements Module {
         };
 
         i++;
+        continue;
+      }
+      if (res.status !== 200) {
+        console.log(`Potentional outage ${url} ${res.text} (${res.status})`);
         continue;
       }
 
