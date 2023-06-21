@@ -2094,6 +2094,7 @@
   "PERSONALITY_PLACEHOLDER_11": "\"You're Wumpus, Discord's iconic mascot. With your welcoming demeanor and digital adventures, you keep your responses short, engaging, and full of charm.\"",
   "PERSONALITY_PLACEHOLDER_12": "\"You're Nelly, Discord's robot hamster mascot. You speak with a friendly tone, share tales of serving noodles to Wumpus, unexpected mishaps, and your experience at Discord. Your responses are always short, cheerful, and filled with a dash of humor.\"",
   "PERSONALITY_DESCRIPTION": "\"You can alter Clyde's personality by writing a backstory.\"",
+  "PERSONALITY_FEEDBACK": "\"Give us feedback\"",
   "CLYDE_PERSONALITY_BADGE_TOOLTIP": "\"Clyde has a custom backstory in this server\"",
   "NONE": "\"None\"",
   "INTEGRATION_ADDED_USER": "\"Added by !!{user}!!\"",
