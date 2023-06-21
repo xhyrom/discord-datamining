@@ -16788,7 +16788,8 @@ html.disable-forced-colors * {
 .spoilerContent-32CqO- {
     --__current--spoiler-content-opacity: 1;
     --__current--spoiler-background-color: var(--__spoiler-background-color--revealed);
-    --__current--spoiler-border-color: var(--__spoiler-border-color--revealed)
+    --__current--spoiler-border-color: var(--__spoiler-border-color--revealed);
+    --__current--spoiler-pointer-events: all
 }
 
 .spoilerContent-32CqO-.hidden-2lQZ5q {
@@ -16796,6 +16797,7 @@ html.disable-forced-colors * {
     --__current--spoiler-text-color: var(--__spoiler-text-color--hidden);
     --__current--spoiler-background-color: var(--__spoiler-background-color--hidden);
     --__current--spoiler-border-color: var(--__spoiler-border-color--hidden);
+    --__current--spoiler-pointer-events: none;
     --__current--spoiler-warning-text-color: var(--__spoiler-warning-text-color);
     --__current--spoiler-warning-background-color: var(--__spoiler-warning-background-color)
 }
@@ -16909,39 +16911,27 @@ html.disable-forced-colors * {
 }
 
 .obscuredTextContentInner-2ytmvF {
+    color: var(--__current--spoiler-text-color)
+}
+
+.obscuredTextContentInner-2ytmvF code,
+.obscuredTextContentInner-2ytmvF span {
     opacity: var(--__current--spoiler-content-opacity);
     -webkit-transition: opacity .1s ease;
     transition: opacity .1s ease
 }
 
-.codeBlock-3bMSSu {
-    position: relative
+.enable-forced-colors .spoilerMarkdownContent-2R1Vwe a {
+    background-color: var(--__current--spoiler-background-color)
 }
 
-.codeBlock-3bMSSu:before {
-    content: "";
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    background-color: var(--__current--spoiler-background-color);
-    color: var(--__current--spoiler-text-color);
-    border-radius: var(--radius-xs)
-}
-
-.enable-forced-colors .codeBlock-3bMSSu:before {
-    border: 1px solid var(--__current--spoiler-border-color)
-}
-
-.codeBlock-3bMSSu code {
-    opacity: var(--__current--spoiler-content-opacity)
-}
-
-.quoteBlock-18jmoP blockquote {
+.spoilerMarkdownContent-2R1Vwe blockquote {
     position: relative;
+    pointer-events: all;
     color: var(--__current--spoiler-text-color)
 }
 
-.quoteBlock-18jmoP blockquote:before {
+.spoilerMarkdownContent-2R1Vwe blockquote:before {
     content: "";
     position: absolute;
     left: 0;
@@ -16951,37 +16941,72 @@ html.disable-forced-colors * {
     border-radius: var(--radius-xs)
 }
 
-.enable-forced-colors .quoteBlock-18jmoP blockquote:before {
+.enable-forced-colors .spoilerMarkdownContent-2R1Vwe blockquote:before {
     border: 1px solid var(--__current--spoiler-border-color)
 }
 
-.headingBlock-32XBTq {
+.spoilerMarkdownContent-2R1Vwe pre {
     position: relative;
-    display: inline-block;
-    color: var(--__current--spoiler-text-color) !important
+    pointer-events: all
 }
 
-.headingBlock-32XBTq:before {
+.spoilerMarkdownContent-2R1Vwe pre:before {
     content: "";
     position: absolute;
     width: 100%;
     height: 100%;
     background-color: var(--__current--spoiler-background-color);
-    border-radius: var(--radius-xs)
-}
-
-.enable-forced-colors .headingBlock-32XBTq:before {
-    border: 1px solid var(--__current--spoiler-border-color)
-}
-
-.listBlock-2MuTAV li>:not(ul, ol, li) {
-    background: var(--__current--spoiler-background-color);
     color: var(--__current--spoiler-text-color);
     border-radius: var(--radius-xs)
 }
 
-.enable-forced-colors .listBlock-2MuTAV li>:not(ul, ol, li) {
+.enable-forced-colors .spoilerMarkdownContent-2R1Vwe pre:before {
     border: 1px solid var(--__current--spoiler-border-color)
+}
+
+.spoilerMarkdownContent-2R1Vwe pre code {
+    opacity: var(--__current--spoiler-content-opacity)
+}
+
+.spoilerMarkdownContent-2R1Vwe ol li::marker,
+.spoilerMarkdownContent-2R1Vwe ul li::marker {
+    color: var(--text-normal)
+}
+
+.spoilerMarkdownContent-2R1Vwe h1>span,
+.spoilerMarkdownContent-2R1Vwe h2>span,
+.spoilerMarkdownContent-2R1Vwe h3>span,
+.spoilerMarkdownContent-2R1Vwe h4>span,
+.spoilerMarkdownContent-2R1Vwe h5>span,
+.spoilerMarkdownContent-2R1Vwe ol li>span,
+.spoilerMarkdownContent-2R1Vwe ul li>span {
+    opacity: 1 !important;
+    pointer-events: all;
+    color: var(--__current--spoiler-text-color) !important;
+    background: var(--__current--spoiler-background-color);
+    border-radius: var(--radius-xs);
+    -webkit-box-decoration-break: clone;
+    box-decoration-break: clone
+}
+
+.enable-forced-colors .spoilerMarkdownContent-2R1Vwe h1>span,
+.enable-forced-colors .spoilerMarkdownContent-2R1Vwe h2>span,
+.enable-forced-colors .spoilerMarkdownContent-2R1Vwe h3>span,
+.enable-forced-colors .spoilerMarkdownContent-2R1Vwe h4>span,
+.enable-forced-colors .spoilerMarkdownContent-2R1Vwe h5>span,
+.enable-forced-colors .spoilerMarkdownContent-2R1Vwe ol li>span,
+.enable-forced-colors .spoilerMarkdownContent-2R1Vwe ul li>span {
+    border: 1px solid var(--__current--spoiler-border-color)
+}
+
+.spoilerMarkdownContent-2R1Vwe h1>span>*,
+.spoilerMarkdownContent-2R1Vwe h2>span>*,
+.spoilerMarkdownContent-2R1Vwe h3>span>*,
+.spoilerMarkdownContent-2R1Vwe h4>span>*,
+.spoilerMarkdownContent-2R1Vwe h5>span>*,
+.spoilerMarkdownContent-2R1Vwe ol li>span>*,
+.spoilerMarkdownContent-2R1Vwe ul li>span>* {
+    pointer-events: var(--__current--spoiler-pointer-events)
 }
 
 .icon-3Ck3WO {
@@ -55539,15 +55564,19 @@ h6.title-1p9WyQ {
 
 .buttonOverlayActions-sq08sG {
     padding: 0 8px;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
     -webkit-box-pack: justify;
     -ms-flex-pack: justify;
     justify-content: space-between
+}
+
+.buttonOverlayActions-sq08sG,
+.secondaryButton-JGH-z5 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex
 }
 
 .secondaryButton-JGH-z5 {
@@ -131245,6 +131274,155 @@ html .invoiceCancelRow-3s2UuC {
     cursor: pointer
 }
 
+.headerImage-RAozSF {
+    width: 100%;
+    height: 100%;
+    -o-object-fit: cover;
+    object-fit: cover;
+    background-color: var(--background-primary)
+}
+
+.header-aNvwDd {
+    padding: 0;
+    height: 284px
+}
+
+.closeButtonContainer-3Scx2I {
+    width: 24px;
+    height: 24px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    border-radius: 50%;
+    background-color: hsl(var(--black-500-hsl)/.85);
+    cursor: pointer
+}
+
+.closeButtonContainer-3Scx2I:hover {
+    -webkit-transition: .2s ease;
+    transition: .2s ease;
+    opacity: .75
+}
+
+.closeButtonIcon-8-SD0P {
+    color: var(--primary-330)
+}
+
+.closeButton-9Of7PU {
+    position: absolute;
+    right: 16px;
+    top: 16px
+}
+
+.body-3ysK6O {
+    background-color: var(--background-primary);
+    padding: 16px 0
+}
+
+.seperator-2sZAFy {
+    width: 100%;
+    border-top: 1px solid var(--background-modifier-selected)
+}
+
+.description-w7pqM1 {
+    white-space: pre-wrap
+}
+
+.footer-1L_rjl {
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between
+}
+
+.header-1EmB_t {
+    height: 284px
+}
+
+.container-12qbdY {
+    background-color: var(--background-primary);
+    padding-top: 16px
+}
+
+.purchaseSummaryContainer-2uwkvW {
+    padding: 12px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    background-color: var(--background-secondary);
+    border-radius: 8px;
+    gap: 12px
+}
+
+.purchaseSummarInfo-2DGwaY {
+    -webkit-box-flex: 1;
+    -ms-flex: 1;
+    flex: 1
+}
+
+.purchaseSummaryImage-2tYaTb {
+    width: 100px;
+    height: 56px;
+    border-radius: 4px;
+    -o-object-fit: cover;
+    object-fit: cover;
+    background-color: var(--background-primary)
+}
+
+.footer-1U-ZW5 {
+    background-color: var(--background-secondary);
+    -webkit-box-pack: end;
+    -ms-flex-pack: end;
+    justify-content: flex-end;
+    padding: 16px
+}
+
+.footer-1U-ZW5,
+.productTypeContainer-1bH-B6 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex
+}
+
+.productTypeContainer-1bH-B6 {
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center
+}
+
+.dotSeparator-Aq38Gk {
+    width: 2px;
+    height: 2px;
+    border-radius: 50%;
+    background-color: var(--text-muted);
+    margin: 0 4px
+}
+
+.purchaseSummaryPrice-2d2wCU {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: end;
+    -ms-flex-align: end;
+    align-items: flex-end
+}
+
+.header-3FSM8E {
+    height: 146px
+}
+
 .modalContainer-2wqdQW,
 .modalSection-1Rsofh {
     display: -webkit-box;
@@ -153110,8 +153288,15 @@ html .invoiceCancelRow-3s2UuC {
 }
 
 .secondaryIcon-2Imsnh {
-    margin: 0 4px;
+    margin: 0 4px
+}
+
+.secondaryIconActive-265vbv {
     cursor: pointer
+}
+
+.secondaryIconDisabled-21RVnY {
+    color: var(--interactive-muted)
 }
 
 .container-DTKVqV {
@@ -160249,4 +160434,4 @@ html .invoiceCancelRow-dVOR64 {
     flex-direction: column
 }
 
-/*# sourceMappingURL=40532.d0b8aad6364a291faa42.css.map*/
+/*# sourceMappingURL=40532.f291bca3c3cb48cec59c.css.map*/
