@@ -16,20 +16,20 @@
 <ol>
     <li style="font-weight: 400;" aria-level="1"><span style="font-weight: 400;">Restart your Modem+Router+Computer - You'd be surprised how often the "turn it off and turn it back on again" trick works.</span></li>
     <li style="font-weight: 400;" aria-level="1"><span style="font-weight: 400;">Check with your internet service provider and make sure there are no outages in your area.</span></li>
-    <li style="font-weight: 400;" aria-level="1"><span style="font-weight: 400;">Check your Firewall/Antivirus and make sure that Discord is whitelisted/temporarily disabled</span></li>
+    <li style="font-weight: 400;" aria-level="1"><span style="font-weight: 400;">Check your Firewall/Antivirus and make sure that Discord is <span style="color: #2e3338;" data-darkreader-inline-color="">allowlisted</span>/temporarily disabled</span></li>
     <li style="font-weight: 400;" aria-level="1"><span style="font-weight: 400;">Check your VPN (Discord only works on VPNs that have UDP)</span></li>
     <li style="font-weight: 400;" aria-level="1"><span style="font-weight: 400;">Check with your network admin - If you're on a work/school network, Discord could be blocked!</span></li>
     <li style="font-weight: 400;" aria-level="1">
         <span style="font-weight: 400;">Change the voice region - If you're the admin, temporarily switch to try a different voice region in Voice Channel Settings &gt; Overview &gt; Region Override.</span><span style="font-weight: 400;"><br></span><span style="font-weight: 400;">- You're also able to change a voice region in private voice calls </span>
     </li>
 </ol>
-<p><span style="font-weight: 400;">If all of that doesn't work, we’ll need you to contact our </span><a href="https://dis.gd/support" target="_blank" rel="noopener">support team</a><span style="font-weight: 400;">. When you do, you need to provide a screenshot of your <a href="https://support.discord.com/hc/en-us/articles/115001239472" target="_blank" rel="noopener"><strong>console logs</strong></a>. Here is how to get that screenshot:</span></p>
+<p><span style="font-weight: 400;">If all of that doesn't work, we’ll need you to contact our </span><a href="https://dis.gd/support" target="_blank" rel="noopener noreferrer">support team</a><span style="font-weight: 400;">. When you do, you need to provide a screenshot of your <a href="https://support.discord.com/hc/en-us/articles/115001239472" target="_blank" rel="noopener noreferrer"><strong>console logs</strong></a>. Here is how to get that screenshot:</span></p>
 <ol>
     <li style="font-weight: 400;" aria-level="1">
-        <span style="font-weight: 400;">Download Discord's <a href="https://discord.com/download" target="_blank" rel="noopener">PTB client</a> or Canary client.</span>
+        <span style="font-weight: 400;">Download Discord's <a href="https://discord.com/download" target="_blank" rel="noopener noreferrer">PTB client</a> or Canary client.</span>
         <ul>
-            <li style="font-weight: 400;" aria-level="1"><a href="https://dis.gd/wincanary" target="_blank" rel="noopener"><span style="font-weight: 400;">Windows Canary</span></a></li>
-            <li style="font-weight: 400;" aria-level="1"><a href="https://dis.gd/maccanary" target="_blank" rel="noopener"><span style="font-weight: 400;">MacOS Canary</span></a></li>
+            <li style="font-weight: 400;" aria-level="1"><a href="https://dis.gd/wincanary" target="_blank" rel="noopener noreferrer"><span style="font-weight: 400;">Windows Canary</span></a></li>
+            <li style="font-weight: 400;" aria-level="1"><a href="https://dis.gd/maccanary" target="_blank" rel="noopener noreferrer"><span style="font-weight: 400;">MacOS Canary</span></a></li>
         </ul>
     </li>
     <li style="font-weight: 400;" aria-level="1"><span style="font-weight: 400;">Join the voice channel or voice call you’re getting an error in.</span></li>
@@ -42,6 +42,5 @@
         <strong>Awaiting Endpoint: </strong><span style="font-weight: 400;">This will show up in rare cases, so you shouldn’t see this occurring unless we’re having trouble with one of our servers. If you’re stuck here, it means there are generally broad service issues that can cause calls to be stuck in this perma-waiting room. </span>
     </li>
 </ul>
-<p><span style="font-weight: 400;">If you’re sitting and staring at an awaiting endpoint error, we’ll need you to reach out to our support team either via </span><a href="https://twitter.com/discord" target="_blank" rel="noopener">Twitter</a><span style="font-weight: 400;"> or our </span><a href="https://dis.gd/support" target="_blank" rel="noopener">Support Center</a><span style="font-weight: 400;">. </span></p>
-<p> </p>
+<p><span style="font-weight: 400;">If you’re sitting and staring at an awaiting endpoint error, we’ll need you to reach out to our support team either via </span><a href="https://twitter.com/discord" target="_blank" rel="noopener noreferrer">Twitter</a><span style="font-weight: 400;"> or our </span><a href="https://dis.gd/support" target="_blank" rel="noopener noreferrer">Support Center</a><span style="font-weight: 400;">. </span></p>
 <p><span style="font-weight: 400;">Lastly, if you’re still stuck on any of the above connection states - or may be stuck on one that isn’t listed above - please contact our support team so we can get you back to talking to your friends.</span></p>

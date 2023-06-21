@@ -25,13 +25,13 @@
 <p class="wysiwyg-text-align-left">3. Next tap on the banner at the top that says “Verify” to resend the verification email. </p>
 <p>4. Now just follow the steps in the verification email that you received!</p>
 <h1 id="h_01GSG5SAC527RWPN531P9N7Q8J"><a href="#h_01GSG5SAC527RWPN531P9N7Q8J" target="_self">Having trouble receiving the email?</a></h1>
-<p>If you're not seeing the email in your inbox, please try whitelisting the following email addresses:</p>
+<p>If you're not seeing the email in your inbox, please try allowlisting the following email addresses:</p>
 <ul>
     <li><strong>notifications@discord.com</strong></li>
     <li><strong>support@discord.com</strong></li>
     <li><strong>noreply@discord.com</strong></li>
 </ul>
-<p>Once you have finished whitelisting those emails, try requesting the verification email again through a different device if possible. If requesting through a mobile device, please try using data to see if the email arrives that way.</p>
+<p>Once you have finished allowlisting those emails, try requesting the verification email again through a different device if possible. If requesting through a mobile device, please try using data to see if the email arrives that way.</p>
 <h3>
     <span style="color: #434343;" data-darkreader-inline-color="">Note: Our support team is unable to send verification emails manually. However, if you’re running into any issues while trying the steps above, feel free to reach out at </span><a href="https://dis.gd/contact"><span class="wysiwyg-underline">https://dis.gd/contact</span></a><span style="color: #434343;" data-darkreader-inline-color="">. </span>
 </h3>
