@@ -23088,6 +23088,7 @@ html.disable-forced-colors * {
     --redesign-button-secondary-border: hsl(var(--black-500-hsl)/0);
     --redesign-button-secondary-pressed-background: var(--primary-500);
     --redesign-button-secondary-text: var(--white-500);
+    --redesign-input-control-selected: var(--brand-500);
     --redesign-only-background-active: var(--primary-530);
     --redesign-only-background-default: var(--primary-700);
     --redesign-only-background-overlay: var(--primary-600);
@@ -23305,6 +23306,7 @@ html.disable-forced-colors * {
     --redesign-button-secondary-border: hsl(var(--black-500-hsl)/0.08);
     --redesign-button-secondary-pressed-background: var(--primary-130);
     --redesign-button-secondary-text: var(--primary-700);
+    --redesign-input-control-selected: var(--brand-500);
     --redesign-only-background-active: var(--primary-430);
     --redesign-only-background-default: var(--primary-200);
     --redesign-only-background-overlay: var(--white-500);
@@ -23474,6 +23476,7 @@ html.disable-forced-colors * {
     --redesign-button-secondary-border: hsl(var(--black-500-hsl)/0);
     --redesign-button-secondary-pressed-background: var(--primary-500);
     --redesign-button-secondary-text: var(--white-500);
+    --redesign-input-control-selected: var(--brand-500);
     --redesign-only-background-active: var(--primary-530);
     --redesign-only-background-default: var(--primary-700);
     --redesign-only-background-overlay: var(--primary-600);
@@ -23697,6 +23700,7 @@ html.disable-forced-colors * {
     --redesign-button-secondary-border: hsl(var(--black-500-hsl)/0);
     --redesign-button-secondary-pressed-background: var(--primary-500);
     --redesign-button-secondary-text: var(--white-500);
+    --redesign-input-control-selected: var(--brand-500);
     --redesign-only-background-active: var(--dontuse-14);
     --redesign-only-background-default: var(--dontuse-20);
     --redesign-only-background-overlay: var(--dontuse-17);
@@ -160245,4 +160249,4 @@ html .invoiceCancelRow-dVOR64 {
     flex-direction: column
 }
 
-/*# sourceMappingURL=40532.ce55ce31d87d3738e910.css.map*/
+/*# sourceMappingURL=40532.d0b8aad6364a291faa42.css.map*/
