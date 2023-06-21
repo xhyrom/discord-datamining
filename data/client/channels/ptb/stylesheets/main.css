@@ -16788,7 +16788,8 @@ html.disable-forced-colors * {
 .spoilerContent-32CqO- {
     --__current--spoiler-content-opacity: 1;
     --__current--spoiler-background-color: var(--__spoiler-background-color--revealed);
-    --__current--spoiler-border-color: var(--__spoiler-border-color--revealed)
+    --__current--spoiler-border-color: var(--__spoiler-border-color--revealed);
+    --__current--spoiler-pointer-events: all
 }
 
 .spoilerContent-32CqO-.hidden-2lQZ5q {
@@ -16796,6 +16797,7 @@ html.disable-forced-colors * {
     --__current--spoiler-text-color: var(--__spoiler-text-color--hidden);
     --__current--spoiler-background-color: var(--__spoiler-background-color--hidden);
     --__current--spoiler-border-color: var(--__spoiler-border-color--hidden);
+    --__current--spoiler-pointer-events: none;
     --__current--spoiler-warning-text-color: var(--__spoiler-warning-text-color);
     --__current--spoiler-warning-background-color: var(--__spoiler-warning-background-color)
 }
@@ -16909,39 +16911,27 @@ html.disable-forced-colors * {
 }
 
 .obscuredTextContentInner-2ytmvF {
+    color: var(--__current--spoiler-text-color)
+}
+
+.obscuredTextContentInner-2ytmvF code,
+.obscuredTextContentInner-2ytmvF span {
     opacity: var(--__current--spoiler-content-opacity);
     -webkit-transition: opacity .1s ease;
     transition: opacity .1s ease
 }
 
-.codeBlock-3bMSSu {
-    position: relative
+.enable-forced-colors .spoilerMarkdownContent-2R1Vwe a {
+    background-color: var(--__current--spoiler-background-color)
 }
 
-.codeBlock-3bMSSu:before {
-    content: "";
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    background-color: var(--__current--spoiler-background-color);
-    color: var(--__current--spoiler-text-color);
-    border-radius: var(--radius-xs)
-}
-
-.enable-forced-colors .codeBlock-3bMSSu:before {
-    border: 1px solid var(--__current--spoiler-border-color)
-}
-
-.codeBlock-3bMSSu code {
-    opacity: var(--__current--spoiler-content-opacity)
-}
-
-.quoteBlock-18jmoP blockquote {
+.spoilerMarkdownContent-2R1Vwe blockquote {
     position: relative;
+    pointer-events: all;
     color: var(--__current--spoiler-text-color)
 }
 
-.quoteBlock-18jmoP blockquote:before {
+.spoilerMarkdownContent-2R1Vwe blockquote:before {
     content: "";
     position: absolute;
     left: 0;
@@ -16951,37 +16941,72 @@ html.disable-forced-colors * {
     border-radius: var(--radius-xs)
 }
 
-.enable-forced-colors .quoteBlock-18jmoP blockquote:before {
+.enable-forced-colors .spoilerMarkdownContent-2R1Vwe blockquote:before {
     border: 1px solid var(--__current--spoiler-border-color)
 }
 
-.headingBlock-32XBTq {
+.spoilerMarkdownContent-2R1Vwe pre {
     position: relative;
-    display: inline-block;
-    color: var(--__current--spoiler-text-color) !important
+    pointer-events: all
 }
 
-.headingBlock-32XBTq:before {
+.spoilerMarkdownContent-2R1Vwe pre:before {
     content: "";
     position: absolute;
     width: 100%;
     height: 100%;
     background-color: var(--__current--spoiler-background-color);
-    border-radius: var(--radius-xs)
-}
-
-.enable-forced-colors .headingBlock-32XBTq:before {
-    border: 1px solid var(--__current--spoiler-border-color)
-}
-
-.listBlock-2MuTAV li>:not(ul, ol, li) {
-    background: var(--__current--spoiler-background-color);
     color: var(--__current--spoiler-text-color);
     border-radius: var(--radius-xs)
 }
 
-.enable-forced-colors .listBlock-2MuTAV li>:not(ul, ol, li) {
+.enable-forced-colors .spoilerMarkdownContent-2R1Vwe pre:before {
     border: 1px solid var(--__current--spoiler-border-color)
+}
+
+.spoilerMarkdownContent-2R1Vwe pre code {
+    opacity: var(--__current--spoiler-content-opacity)
+}
+
+.spoilerMarkdownContent-2R1Vwe ol li::marker,
+.spoilerMarkdownContent-2R1Vwe ul li::marker {
+    color: var(--text-normal)
+}
+
+.spoilerMarkdownContent-2R1Vwe h1>span,
+.spoilerMarkdownContent-2R1Vwe h2>span,
+.spoilerMarkdownContent-2R1Vwe h3>span,
+.spoilerMarkdownContent-2R1Vwe h4>span,
+.spoilerMarkdownContent-2R1Vwe h5>span,
+.spoilerMarkdownContent-2R1Vwe ol li>span,
+.spoilerMarkdownContent-2R1Vwe ul li>span {
+    opacity: 1 !important;
+    pointer-events: all;
+    color: var(--__current--spoiler-text-color) !important;
+    background: var(--__current--spoiler-background-color);
+    border-radius: var(--radius-xs);
+    -webkit-box-decoration-break: clone;
+    box-decoration-break: clone
+}
+
+.enable-forced-colors .spoilerMarkdownContent-2R1Vwe h1>span,
+.enable-forced-colors .spoilerMarkdownContent-2R1Vwe h2>span,
+.enable-forced-colors .spoilerMarkdownContent-2R1Vwe h3>span,
+.enable-forced-colors .spoilerMarkdownContent-2R1Vwe h4>span,
+.enable-forced-colors .spoilerMarkdownContent-2R1Vwe h5>span,
+.enable-forced-colors .spoilerMarkdownContent-2R1Vwe ol li>span,
+.enable-forced-colors .spoilerMarkdownContent-2R1Vwe ul li>span {
+    border: 1px solid var(--__current--spoiler-border-color)
+}
+
+.spoilerMarkdownContent-2R1Vwe h1>span>*,
+.spoilerMarkdownContent-2R1Vwe h2>span>*,
+.spoilerMarkdownContent-2R1Vwe h3>span>*,
+.spoilerMarkdownContent-2R1Vwe h4>span>*,
+.spoilerMarkdownContent-2R1Vwe h5>span>*,
+.spoilerMarkdownContent-2R1Vwe ol li>span>*,
+.spoilerMarkdownContent-2R1Vwe ul li>span>* {
+    pointer-events: var(--__current--spoiler-pointer-events)
 }
 
 .icon-3Ck3WO {
@@ -160398,4 +160423,4 @@ html .invoiceCancelRow-dVOR64 {
     flex-direction: column
 }
 
-/*# sourceMappingURL=40532.faeb3c77366dac030ccb.css.map*/
+/*# sourceMappingURL=40532.26b8a2ea082764d91941.css.map*/
