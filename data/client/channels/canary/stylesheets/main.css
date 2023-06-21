@@ -55564,15 +55564,19 @@ h6.title-1p9WyQ {
 
 .buttonOverlayActions-sq08sG {
     padding: 0 8px;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
     -webkit-box-pack: justify;
     -ms-flex-pack: justify;
     justify-content: space-between
+}
+
+.buttonOverlayActions-sq08sG,
+.secondaryButton-JGH-z5 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex
 }
 
 .secondaryButton-JGH-z5 {
@@ -153284,8 +153288,15 @@ html .invoiceCancelRow-3s2UuC {
 }
 
 .secondaryIcon-2Imsnh {
-    margin: 0 4px;
+    margin: 0 4px
+}
+
+.secondaryIconActive-265vbv {
     cursor: pointer
+}
+
+.secondaryIconDisabled-21RVnY {
+    color: var(--interactive-muted)
 }
 
 .container-DTKVqV {
@@ -160423,4 +160434,4 @@ html .invoiceCancelRow-dVOR64 {
     flex-direction: column
 }
 
-/*# sourceMappingURL=40532.26b8a2ea082764d91941.css.map*/
+/*# sourceMappingURL=40532.f291bca3c3cb48cec59c.css.map*/
