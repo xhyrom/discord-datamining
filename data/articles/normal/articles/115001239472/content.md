@@ -48,7 +48,7 @@
 <ol>
     <li>Open your command prompt (cmd) in Administrator mode</li>
     <li>Type `ipconfig /release` then hit Enter</li>
-    <li>Type `ipconfig /flushdns`and hit enter again!</li>
+    <li>Type `ipconfig /flushdns` and hit enter again!</li>
     <li>Type `ipconfig /renew` hit enter, and close the cmd window</li>
 </ol>
 <p><strong>Mac</strong></p>
