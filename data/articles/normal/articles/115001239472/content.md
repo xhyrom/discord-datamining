@@ -1,11 +1,11 @@
 <p>Sometimes, Discord behaves badly, and the only way to troubleshoot is to start digging into the Console Log. </p>
 <h1>Opening the Console</h1>
-<p>In order to get the console tab in Developer Tools, you first need to install either <span style="font-weight: 400;">the <a href="https://discord.com/download" target="_blank" rel="noopener">PTB client</a> or Canary client:</span></p>
+<p>In order to get the console tab in Developer Tools, you first need to install either <span style="font-weight: 400;">the <a href="https://discord.com/download" target="_blank" rel="noopener noreferrer">PTB client</a> or Canary client:</span></p>
 <ul>
     <li style="list-style-type: none;">
         <ul>
-            <li style="font-weight: 400;" aria-level="1"><a href="https://dis.gd/wincanary" target="_blank" rel="noopener"><span style="font-weight: 400;">Windows Canary</span></a></li>
-            <li style="font-weight: 400;" aria-level="1"><a href="https://dis.gd/maccanary" target="_blank" rel="noopener"><span style="font-weight: 400;">MacOS Canary</span></a></li>
+            <li style="font-weight: 400;" aria-level="1"><a href="https://dis.gd/wincanary" target="_blank" rel="noopener noreferrer"><span style="font-weight: 400;">Windows Canary</span></a></li>
+            <li style="font-weight: 400;" aria-level="1"><a href="https://dis.gd/maccanary" target="_blank" rel="noopener noreferrer"><span style="font-weight: 400;">MacOS Canary</span></a></li>
         </ul>
     </li>
 </ul>
@@ -66,6 +66,6 @@
 </ul>
 <p> This is usually caused by something blocking Discord in some way.</p>
 <ol>
-    <li>Temporarily disable or whitelist Discord in your antivirus or firewall</li>
+    <li>Temporarily disable or <span style="color: #2e3338;" data-darkreader-inline-color="">allowlist</span> Discord in your antivirus or firewall</li>
     <li>Try clearing your browser cache and cookies</li>
 </ol>
