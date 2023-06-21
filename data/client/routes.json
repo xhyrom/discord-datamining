@@ -3227,6 +3227,20 @@
       "PUT"
     ]
   },
+  "GUILD_INCIDENT_REPORT_FALSE_ALARM": {
+    "url": "/guilds/:param/auto-moderation/false-alarm",
+    "allowed_methods": [
+      "OPTIONS",
+      "POST"
+    ]
+  },
+  "GUILD_INCIDENT_REPORT_RAID": {
+    "url": "/guilds/:param/auto-moderation/report-raid",
+    "allowed_methods": [
+      "OPTIONS",
+      "POST"
+    ]
+  },
   "DIRECTORY_CHANNEL_ENTRIES": {
     "url": "/channels/:param/directory-entries",
     "allowed_methods": [
