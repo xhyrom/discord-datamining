@@ -3026,6 +3026,13 @@
       "POST"
     ]
   },
+  "ACTIVITY_UPLOAD_ATTACHMENT": {
+    "url": "/activities/:param/attachment",
+    "allowed_methods": [
+      "OPTIONS",
+      "POST"
+    ]
+  },
   "CHANNEL_THREADS": {
     "url": "/channels/:param/threads",
     "allowed_methods": [
