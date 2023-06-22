@@ -130992,6 +130992,36 @@ html .invoiceCancelRow-3s2UuC {
     margin-top: 16px
 }
 
+.modalHeader-20fI_m {
+    padding-top: 32px;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center
+}
+
+.modalHeader-20fI_m .closeButton-3C8rVo {
+    position: absolute;
+    right: 12px;
+    top: 12px;
+    color: var(--interactive-normal)
+}
+
+.modalHeader-20fI_m .closeButton-3C8rVo:hover {
+    color: var(--interactive-hover)
+}
+
+.modalContent-1sv6Pk {
+    text-align: center
+}
+
+.contentText-9UTIuW {
+    margin-bottom: 24px
+}
+
+.button-W5Y-S5 {
+    padding: 11px 20px
+}
+
 .wrapper-poygym {
     padding-top: 32px
 }
@@ -160863,4 +160893,4 @@ html .invoiceCancelRow-dVOR64 {
     flex-direction: column
 }
 
-/*# sourceMappingURL=40532.cbe9f91b5e81c6cbbb61.css.map*/
+/*# sourceMappingURL=40532.91c86641d264460e0725.css.map*/
