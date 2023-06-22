@@ -34791,6 +34791,11 @@ img[alt] {
     height: 18px
 }
 
+.embed-hKpSrO :is(h1, h2, h3, h4, h5, h6) .emoji {
+    width: 1.375em;
+    height: 1.375em
+}
+
 .embed-hKpSrO pre {
     max-width: 100%;
     border: none
@@ -160909,4 +160914,4 @@ html .invoiceCancelRow-dVOR64 {
     flex-direction: column
 }
 
-/*# sourceMappingURL=40532.e3247e63efe28b9c3950.css.map*/
+/*# sourceMappingURL=40532.b13ce97115d873605188.css.map*/
