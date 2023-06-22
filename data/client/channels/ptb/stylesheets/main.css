@@ -28254,7 +28254,7 @@ img[alt] {
     opacity: 1
 }
 
-.sofortCopy-2lgqQg {
+.paymentSourceNoticeCopy-1hNGEu {
     margin-top: 5px
 }
 
@@ -91422,13 +91422,8 @@ strong {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    margin-bottom: 8px;
     color: var(--interactive-normal);
     cursor: pointer
-}
-
-.sectionHeader-1-lTK9:not(:first-child) {
-    margin-top: 16px
 }
 
 .sectionHeader-1-lTK9:hover,
@@ -91438,6 +91433,10 @@ strong {
 
 .sectionHeader-1-lTK9 .sectionTitle-1T_AdY {
     color: var(--interactive-normal)
+}
+
+.notFirstSectionHeader-39IEFP {
+    margin-top: 16px
 }
 
 .sectionTitle-1T_AdY {
@@ -91455,7 +91454,7 @@ strong {
     display: -ms-flexbox;
     display: flex;
     gap: 8px;
-    margin-bottom: 8px
+    margin-top: 8px
 }
 
 .settingsClickArea-1vKB0J {
@@ -160893,4 +160892,4 @@ html .invoiceCancelRow-dVOR64 {
     flex-direction: column
 }
 
-/*# sourceMappingURL=40532.91c86641d264460e0725.css.map*/
+/*# sourceMappingURL=40532.22329e93d154dd875c9e.css.map*/
