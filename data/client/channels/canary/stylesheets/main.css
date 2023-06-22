@@ -127276,24 +127276,41 @@ input::-webkit-outer-spin-button {
     height: 20px
 }
 
-.title-2xi6Ka {
+.title-3cSe_p {
     font-weight: 700;
     margin-top: 11px;
     margin-bottom: 8px
 }
 
-.body-1oUQrZ,
-.title-2xi6Ka {
+.body-11uPfb,
+.title-3cSe_p {
     text-align: center
 }
 
-.body-1oUQrZ {
+.body-11uPfb {
     margin-bottom: 16px
 }
 
-.art-3sVxAs {
+.art-1AsTRO {
     height: 105px;
     margin-top: -88px
+}
+
+.linkCalloutContainer-23jDxd {
+    border-radius: 8px;
+    border: 1px solid var(--background-modifier-accent);
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    padding: 16px;
+    margin-bottom: 12px;
+    max-height: 144px;
+    max-width: 498px;
+    min-width: min(408px, calc(100vw - 50px));
+    overflow-wrap: anywhere
 }
 
 .title-7K5pop {
@@ -160892,4 +160909,4 @@ html .invoiceCancelRow-dVOR64 {
     flex-direction: column
 }
 
-/*# sourceMappingURL=40532.22329e93d154dd875c9e.css.map*/
+/*# sourceMappingURL=40532.2b52c2cbed160d777849.css.map*/
