@@ -3615,6 +3615,14 @@
       "POST"
     ]
   },
+  "SUBSCRIPTION_PLAN_GROUP_LISTING": {
+    "url": "/subscription-plans/:param/subscription-group-listing",
+    "allowed_methods": [
+      "GET",
+      "HEAD",
+      "OPTIONS"
+    ]
+  },
   "SUBSCRIPTION_PLAN_GUILD_ROLE_GROUP_LISTING": {
     "url": "/subscription-plans/:param/guild-role-subscription-group-listing",
     "allowed_methods": [
