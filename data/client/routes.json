@@ -3517,6 +3517,15 @@
       "OPTIONS"
     ]
   },
+  "GUILD_CLYDE_SETTINGS": {
+    "url": "/guilds/:param/clyde-settings",
+    "allowed_methods": [
+      "GET",
+      "HEAD",
+      "OPTIONS",
+      "PATCH"
+    ]
+  },
   "CREATOR_MONETIZATION_ENABLE_REQUESTS": {
     "url": "/guilds/:param/creator-monetization/enable-requests",
     "allowed_methods": [
