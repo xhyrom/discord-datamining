@@ -23083,7 +23083,6 @@ html.disable-forced-colors * {
     --redesign-button-danger-pressed-background: var(--red-460);
     --redesign-button-danger-text: var(--white-500);
     --redesign-button-overlay-alpha-background: hsl(var(--black-500-hsl)/0.54);
-    --redesign-button-overlay-alpha-border: hsl(var(--black-500-hsl)/0);
     --redesign-button-overlay-alpha-pressed-background: hsl(var(--black-500-hsl)/0.64);
     --redesign-button-overlay-alpha-text: var(--white-500);
     --redesign-button-overlay-background: var(--white-500);
@@ -23111,12 +23110,12 @@ html.disable-forced-colors * {
     --redesign-button-primary-pressed-background: var(--brand-560);
     --redesign-button-primary-text: var(--white-500);
     --redesign-button-secondary-alt-background: var(--primary-530);
-    --redesign-button-secondary-alt-border: hsl(var(--black-500-hsl)/0);
     --redesign-button-secondary-alt-pressed-background: var(--primary-560);
     --redesign-button-secondary-alt-text: var(--white-500);
     --redesign-button-secondary-background: var(--primary-460);
-    --redesign-button-secondary-border: hsl(var(--black-500-hsl)/0);
+    --redesign-button-secondary-border: var(--primary-460);
     --redesign-button-secondary-pressed-background: var(--primary-500);
+    --redesign-button-secondary-pressed-border: var(--primary-500);
     --redesign-button-secondary-text: var(--white-500);
     --redesign-input-control-selected: var(--brand-500);
     --redesign-only-background-active: var(--primary-530);
@@ -23301,7 +23300,6 @@ html.disable-forced-colors * {
     --redesign-button-danger-pressed-background: var(--red-460);
     --redesign-button-danger-text: var(--white-500);
     --redesign-button-overlay-alpha-background: hsl(var(--black-500-hsl)/0.54);
-    --redesign-button-overlay-alpha-border: hsl(var(--black-500-hsl)/0);
     --redesign-button-overlay-alpha-pressed-background: hsl(var(--black-500-hsl)/0.64);
     --redesign-button-overlay-alpha-text: var(--white-500);
     --redesign-button-overlay-background: var(--white-500);
@@ -23329,12 +23327,12 @@ html.disable-forced-colors * {
     --redesign-button-primary-pressed-background: var(--brand-560);
     --redesign-button-primary-text: var(--white-500);
     --redesign-button-secondary-alt-background: hsl(var(--black-500-hsl)/0.08);
-    --redesign-button-secondary-alt-border: hsl(var(--black-500-hsl)/0);
     --redesign-button-secondary-alt-pressed-background: hsl(var(--black-500-hsl)/0.16);
     --redesign-button-secondary-alt-text: var(--primary-700);
     --redesign-button-secondary-background: var(--white-500);
     --redesign-button-secondary-border: hsl(var(--black-500-hsl)/0.08);
     --redesign-button-secondary-pressed-background: var(--primary-130);
+    --redesign-button-secondary-pressed-border: hsl(var(--black-500-hsl)/0.08);
     --redesign-button-secondary-text: var(--primary-700);
     --redesign-input-control-selected: var(--brand-500);
     --redesign-only-background-active: var(--primary-430);
@@ -23471,7 +23469,6 @@ html.disable-forced-colors * {
     --redesign-button-danger-pressed-background: var(--red-460);
     --redesign-button-danger-text: var(--white-500);
     --redesign-button-overlay-alpha-background: hsl(var(--black-500-hsl)/0.54);
-    --redesign-button-overlay-alpha-border: hsl(var(--black-500-hsl)/0);
     --redesign-button-overlay-alpha-pressed-background: hsl(var(--black-500-hsl)/0.64);
     --redesign-button-overlay-alpha-text: var(--white-500);
     --redesign-button-overlay-background: var(--white-500);
@@ -23499,12 +23496,12 @@ html.disable-forced-colors * {
     --redesign-button-primary-pressed-background: var(--brand-560);
     --redesign-button-primary-text: var(--white-500);
     --redesign-button-secondary-alt-background: var(--primary-530);
-    --redesign-button-secondary-alt-border: hsl(var(--black-500-hsl)/0);
     --redesign-button-secondary-alt-pressed-background: var(--primary-560);
     --redesign-button-secondary-alt-text: var(--white-500);
     --redesign-button-secondary-background: var(--primary-460);
-    --redesign-button-secondary-border: hsl(var(--black-500-hsl)/0);
+    --redesign-button-secondary-border: var(--primary-460);
     --redesign-button-secondary-pressed-background: var(--primary-500);
+    --redesign-button-secondary-pressed-border: var(--primary-500);
     --redesign-button-secondary-text: var(--white-500);
     --redesign-input-control-selected: var(--brand-500);
     --redesign-only-background-active: var(--primary-530);
@@ -23695,7 +23692,6 @@ html.disable-forced-colors * {
     --redesign-button-danger-pressed-background: var(--red-460);
     --redesign-button-danger-text: var(--white-500);
     --redesign-button-overlay-alpha-background: hsl(var(--black-500-hsl)/0.54);
-    --redesign-button-overlay-alpha-border: hsl(var(--black-500-hsl)/0);
     --redesign-button-overlay-alpha-pressed-background: hsl(var(--black-500-hsl)/0.64);
     --redesign-button-overlay-alpha-text: var(--white-500);
     --redesign-button-overlay-background: var(--white-500);
@@ -23723,12 +23719,12 @@ html.disable-forced-colors * {
     --redesign-button-primary-pressed-background: var(--brand-560);
     --redesign-button-primary-text: var(--white-500);
     --redesign-button-secondary-alt-background: var(--primary-530);
-    --redesign-button-secondary-alt-border: hsl(var(--black-500-hsl)/0);
     --redesign-button-secondary-alt-pressed-background: var(--primary-560);
     --redesign-button-secondary-alt-text: var(--white-500);
     --redesign-button-secondary-background: var(--primary-460);
-    --redesign-button-secondary-border: hsl(var(--black-500-hsl)/0);
+    --redesign-button-secondary-border: var(--primary-460);
     --redesign-button-secondary-pressed-background: var(--primary-500);
+    --redesign-button-secondary-pressed-border: var(--primary-500);
     --redesign-button-secondary-text: var(--white-500);
     --redesign-input-control-selected: var(--brand-500);
     --redesign-only-background-active: var(--dontuse-14);
@@ -27318,6 +27314,10 @@ img[alt] {
 
 .paymentModalBreadcrumbs-2geWj3:after {
     padding: 0
+}
+
+.paymentModalError-RmqlPz {
+    background-color: var(--modal-background)
 }
 
 .modal-3FSEFH {
@@ -131840,6 +131840,10 @@ html .invoiceCancelRow-3s2UuC {
     top: 16px
 }
 
+.modal-3NRxh5 {
+    border-radius: 12px
+}
+
 .body-3ysK6O {
     background-color: var(--background-primary);
     padding: 16px 0
@@ -131860,11 +131864,13 @@ html .invoiceCancelRow-3s2UuC {
     align-items: center;
     -webkit-box-pack: justify;
     -ms-flex-pack: justify;
-    justify-content: space-between
+    justify-content: space-between;
+    border-radius: 0 0 12px 12px
 }
 
 .header-1EmB_t {
-    height: 284px
+    height: 284px;
+    border-radius: 12px 12px 0 0
 }
 
 .container-12qbdY {
@@ -160914,4 +160920,4 @@ html .invoiceCancelRow-dVOR64 {
     flex-direction: column
 }
 
-/*# sourceMappingURL=40532.b13ce97115d873605188.css.map*/
+/*# sourceMappingURL=40532.87093a0fe7d4cb71a81e.css.map*/
