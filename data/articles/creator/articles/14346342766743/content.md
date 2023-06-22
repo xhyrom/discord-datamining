@@ -25,7 +25,7 @@
 <p><strong>1.</strong> In the channel list, hover over the channel category where you want your <em>Media Channel</em> to live and hit the "+" icon to Create a Channel.</p>
 <p class="wysiwyg-text-align-center"><img src="https://creator-support.discord.com/hc/article_attachments/14445913755671" alt="media-channel-create-a-media-channel.png"></p>
 <p><span class="notion-enable-hover" style="font-weight: 600;" data-token-index="0">2. </span>Select Media as the channel type, and enter a channel name.</p>
-<p class="wysiwyg-text-align-center"><img src="https://creator-support.discord.com/hc/article_attachments/14450706138007" alt="create-a-media-channel.png"></p>
+<p class="wysiwyg-text-align-center"><img src="https://creator-support.discord.com/hc/article_attachments/15490439948311" alt="media-channels-create-channel-popup.png" width="417" height="711"></p>
 <p><span class="notion-enable-hover" style="font-weight: 600;" data-token-index="0">3.</span> Then click Create Channel when you're done!</p>
 <h2 id="h_01H1PGZ2A00AHGFZC2ES4PZE3N">Upload Media or Files to Your Media Channel</h2>
 <p>Today, Media channel file uploads must adhere to existing Discord file limitations and compatibility. This varies based if you’re a Nitro subscriber or not.</p>
@@ -73,4 +73,4 @@
 <p>A: Today, Media channels leverage many of the same foundational elements as Forum Channels in gallery view but with feedback from creators and community admins like you we hope to add unique features over time which make Media channels offer unique solutions for media first communities.</p>
 <p><strong>Q: How can I be sure my exclusive content won’t be leaked by my subscribers?</strong></p>
 <p>A: Subscribers will be able to see your gated content and non-subscribers will see a blurred image if the post is shared with them.</p>
-<p>Over time our tools will improve but if you have feedback, suggestions, on how we can make this better for your community feel free to share it with us!</p>
+<p>Over time our tools will improve but if you have feedback, suggestions, on how we can make this better for your community <a href="https://creator-support.discord.com/hc/en-us/community/topics/14512705617175-Server-Subscriptions" target="_blank" rel="noopener">feel free to share it with us</a>!</p>
