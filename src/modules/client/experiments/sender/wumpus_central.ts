@@ -185,8 +185,6 @@ export class WumpusCentralSender implements Sender {
   private experimentName(exp: Experiment): string {
     if (!exp.data.label && !exp.data.id) return `unknown (${exp.data.hash})`;
 
-    return exp.data.label
-      ? `${exp.data.label} (${exp.data.id ? exp.data.id : exp.data.hash})`
-      : `${exp.data.id} (${exp.data.hash})`;
+    return `${exp.data.id} (${exp.data.hash})`;
   }
 }
