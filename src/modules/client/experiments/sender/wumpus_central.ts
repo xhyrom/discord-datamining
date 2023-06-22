@@ -105,20 +105,27 @@ export class WumpusCentralSender implements Sender {
       }
     }
 
+    const fields = [];
+
+    if (exp.data.description?.length !== 0) {
+      fields.push({
+        name: "Treatments",
+        value: `\`\`\`\n${exp.data.description?.join?.("\n")}\`\`\``,
+        inline: true,
+      });
+    }
+
+    fields.push({
+      name: "Hash",
+      value: `\`\`\`js\n${exp.hash}\`\`\``,
+      inline: true,
+    });
+
     return new EmbedBuilder()
       .setTitle(this.experimentName(exp))
       .setURL("https://discord.gg/QgEbfFa9XA")
       .setDescription(description)
-      .addFields(
-        {
-          name: "Treatments",
-          value: `\`\`\`\n${exp.data.description?.join?.("\n")}\`\`\``,
-        },
-        {
-          name: "Hash",
-          value: `\`\`\`js\n${exp.hash}\`\`\``,
-        }
-      )
+      .addFields(fields)
       .setFooter({
         text: "src: discord.gg/datamining @ xHyroM/discord-datamining",
       });

@@ -79,7 +79,7 @@ export class Experiment {
       }
 
       if (Object.keys(population.buckets).length > 0) {
-        format += "```";
+        format += "```\n";
       }
     }
 
