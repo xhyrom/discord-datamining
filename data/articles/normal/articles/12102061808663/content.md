@@ -14,11 +14,18 @@
     </li>
     <li><a href="#docs-internal-guid-0debdedc-7fff-1446-a53b-e38940ac3aaa" target="_self">Can I see who reacted with what emojis to a message?</a></li>
     <li><a href="#docs-internal-guid-a1ad1e1b-7fff-6379-92d9-fe4a25b6ef8c" target="_self">Can I remove Reaction/Super Reactions?</a></li>
+    <li>
+        <a href="#h_01H3JFKG512EY6JCHFK4G2QD4G" target="_self">Reactions on Super Reactions on Mobile</a>
+        <ul>
+            <li><a href="#h_01H3JFKVR4T006FSYYECASAM1E" target="_self">How to Use Reactions/Super Reactions on Mobile</a></li>
+            <li><a href="#h_01H3JFM3FVN9CXBJ9VVB7PKVC2" target="_self">How to Remove Reactions/Super Reactions on Mobile</a></li>
+        </ul>
+    </li>
 </ul>
 <h1 id="h_01GSTSKWMM1ZWBSNKE78KZ3SGR">What are Reactions?</h1>
 <p><strong>Reactions </strong>on Discord allow you express your reaction to a message with an emoji. </p>
 <h3>
-    <span style="color: #434343;">If you want to learn more about emojis on Discord, check out this </span><a href="https://support.discord.com/hc/en-us/articles/360041139231" target="_blank" rel="noopener noreferrer">article</a><span style="color: #434343;">.</span>
+    <span style="color: #434343;" data-darkreader-inline-color="">If you want to learn more about emojis on Discord, check out this </span><a href="https://support.discord.com/hc/en-us/articles/360041139231" target="_blank" rel="noopener noreferrer">article</a><span style="color: #434343;" data-darkreader-inline-color="">.</span>
 </h3>
 <p>Just press the little <strong>Add Reaction plus smiley-face icon</strong> next to the edit message menu icon to pull up your emoji menu to deal your best reaction.</p>
 <p id="docs-internal-guid-9cd70964-7fff-062f-34be-6f2473f26d5b">Wanna add more than one reaction to a message? The same <strong>Add Reaction plus smiley-face</strong> <strong>icon</strong> will show up next to the last emoji reaction, where you can add all the different types of fire you can think of:</p>
@@ -44,9 +51,10 @@
 <p class="wysiwyg-text-align-center"><img src="https://support.discord.com/hc/article_attachments/14020323892247" alt="UPDATED-super-reactions-window.png"></p>
 <h3>Super Reactions is available to some <a href="https://support.discord.com/hc/en-us/articles/115000435108" target="_blank" rel="noopener noreferrer">Nitro and Nitro Basic</a> subscribers! Learn more in the section below.</h3>
 <h2 id="h_01GSTSMC985YDSZBDB0W78J90A"><span id="docs-internal-guid-8341730a-7fff-eeb5-b670-baf39cdf7636">How many reactions does my Nitro/Nitro Basic subscription allow?</span></h2>
+<h3><span style="color: #434343;" data-darkreader-inline-color="">Super Reactions are not cumulative. If you do not use them for that week, they will not rollover to the next week.</span></h3>
 <p id="docs-internal-guid-f5c6dc17-7fff-2c9c-1e2c-5de1c61871a9">Everyone can see Super Reactions! To use Super Reactions, you must be a <a href="https://support.discord.com/hc/en-us/articles/115000435108" target="_blank" rel="noopener noreferrer">Nitro or Nitro Basic subscriber</a>.</p>
 <p>Depending if you are a Nitro, Nitro Basic, or Nitro Classic subscriber, you get a certain number of Super Reactions per week. <span id="docs-internal-guid-f26cf97f-7fff-aee9-bea1-8c978f486c6c">Non-subscribers get 2 free Super Reactions to try out for one-time only.</span> Here’s a chart based on your subscription:</p>
-<div id="docs-internal-guid-3c1c9752-7fff-5a54-d669-43f06c55dcd0">
+<div id="docs-internal-guid-3c1c9752-7fff-5a54-d669-43f06c55dcd0" class="wysiwyg-text-align-center">
     <table style="width: 68.8572%; height: 66px;">
         <colgroup>
             <col>
@@ -88,9 +96,9 @@
     <h2 id="docs-internal-guid-f8f43d52-7fff-8495-33b3-a61632f2b130">Removing Super Reactions as Server Admins and Moderators</h2>
     <p>If you are an admin or moderator for a server and you would like to remove Super Reactions from a message, you can do so on the <strong>desktop or browser app</strong>.</p>
     <h3>
-        <span style="color: #434343;">In order to remove Reactions and Super Reactions as a server admin or moderator, you must have the </span><strong><span style="color: #434343;">Manage Messages </span></strong><span style="color: #434343;">permission.</span>
+        <span style="color: #434343;" data-darkreader-inline-color="">In order to remove Reactions and Super Reactions as a server admin or moderator, you must have the </span><strong><span style="color: #434343;" data-darkreader-inline-color="">Manage Messages </span></strong><span style="color: #434343;" data-darkreader-inline-color="">permission.</span>
     </h3>
-    <h3><span style="color: #434343;">At this time, you cannot remove Super Reactions as an admin/mod on the mobile app.</span></h3>
+    <h3><span style="color: #434343;" data-darkreader-inline-color="">At this time, you cannot remove Super Reactions as an admin/mod on the mobile app.</span></h3>
     <p>1. Go to the message with the Super Reaction you would like to remove.</p>
     <p>2. You can right-click on the message or press the ellipses icon from the message toolbar to find the <strong>View Reactions </strong>option.</p>
     <p class="wysiwyg-text-align-center"><img src="https://support.discord.com/hc/article_attachments/13662973761431" alt="add-reaction-example-1.png" width="456" height="200"></p>
@@ -107,5 +115,17 @@
     <p class="wysiwyg-text-align-center"><img src="https://support.discord.com/hc/article_attachments/12584862968215" alt="remove-reaction-window.png"></p>
     <p id="docs-internal-guid-85e0cc22-7fff-e3cb-7fe3-e7abcd5d3206">In that same <strong>View Reactions</strong> window, you can remove your Super Reaction by selecting the <strong>X </strong>next to your username under the emoji with the Super Reaction.</p>
     <p class="wysiwyg-text-align-center"><img src="https://support.discord.com/hc/article_attachments/12584878662679" alt="remove-super-reaction.png"></p>
-    <h3 id="docs-internal-guid-80571b9e-7fff-15a4-1739-860e23e321b0" class="wysiwyg-text-align-center"><span style="color: #434343;">Note: If you remove a Super Reaction from a message, this super reaction will not be returned to your balance of available Super Reactions.<br><img src="https://support.discord.com/hc/article_attachments/13662492034583" alt="warning-popup-remove-super-reaction.png" width="322" height="273"><br></span></h3>
+    <h3 id="docs-internal-guid-80571b9e-7fff-15a4-1739-860e23e321b0" class="wysiwyg-text-align-center"><span style="color: #434343;" data-darkreader-inline-color="">Note: If you remove a Super Reaction from a message, this super reaction will not be returned to your balance of available Super Reactions.<br><img src="https://support.discord.com/hc/article_attachments/13662492034583" alt="warning-popup-remove-super-reaction.png" width="322" height="273"><br></span></h3>
+    <h1 id="h_01H3JFKG512EY6JCHFK4G2QD4G" class="wysiwyg-text-align-left">Reactions and Super Reactions on Mobile</h1>
+    <h2 id="h_01H3JFKVR4T006FSYYECASAM1E" class="wysiwyg-text-align-left">How to Use Reactions/Super Reactions on Mobile</h2>
+    <p class="wysiwyg-text-align-left">1. Tap and long press on a message you want to react to.</p>
+    <p class="wysiwyg-text-align-left">2. Then you’ll have the option to react with an emoji as a regular Reaction (left) or Super Reaction (right).</p>
+    <p class="wysiwyg-text-align-left">3. Tap on the emoji you’d like to react with.</p>
+    <img src="https://support.discord.com/hc/article_attachments/15513362507543" alt="mobile_reactions.gif" width="344" height="698"><br>
+    <h2 id="h_01H3JFM3FVN9CXBJ9VVB7PKVC2" class="wysiwyg-text-align-left">How to Remove Reactions/Super Reactions on Mobile</h2>
+    <p class="wysiwyg-text-align-left">1. Navigate to the message where you want to remove any Reactions or Super Reactions from.</p>
+    <p class="wysiwyg-text-align-left">2. Long press on the message and then tap on <strong>Reactions</strong>. </p>
+    <p class="wysiwyg-text-align-left">3. Here you can see all Reactions and Super Reactions on the post. If you have permissions, left swipe on each Reaction or Super Reaction to remove them. Once a reaction has been removed, this action can not be undone.</p>
+    <p class="wysiwyg-text-align-center"><img src="https://support.discord.com/hc/article_attachments/15513366831511" alt="mobile_reactions_remove.gif" width="318" height="644"></p>
+    <p> </p>
 </div>
