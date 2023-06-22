@@ -20548,6 +20548,11 @@ html.disable-forced-colors * {
     color: #fff
 }
 
+.closeIcon-gxNG0p {
+    height: 22px;
+    width: 22px
+}
+
 .popoutBanner-3cqRD9 .pencilContainer-18TrEJ,
 .popoutBannerPremium-3i5EEI .pencilContainer-18TrEJ {
     top: 10px;
@@ -160858,4 +160863,4 @@ html .invoiceCancelRow-dVOR64 {
     flex-direction: column
 }
 
-/*# sourceMappingURL=40532.a4fe2ea4443df70e1db9.css.map*/
+/*# sourceMappingURL=40532.cbe9f91b5e81c6cbbb61.css.map*/
