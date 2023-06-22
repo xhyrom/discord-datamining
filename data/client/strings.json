@@ -5681,6 +5681,8 @@
   "MALFORMED_LINK_BODY_NO_URL": "\"Unable to open link because it is malformed and potentially dangerous.\"",
   "BAD_LINK_WARNING_TITLE": "\"Abusive Website Ahead\"",
   "BAD_LINK_WARNING_BODY": "\"Heads up, **!!{domain}!!** has been flagged as an abusive domain. Websites like these might try to trick you into sharing personal information, steal your password, or install unwanted software on your device.\"",
+  "BAD_LINK_WARNING_TITLE_V2": "\"Dangerous Website Ahead\"",
+  "BAD_LINK_WARNING_BODY_V2": "\"Heads up, this link goes to **a known abusive domain**. Websites like these might try to trick you into sharing personal information, steal your password, or install unwanted software on your device.\"",
   "SUSPICIOUS_DOWNLOAD_WARNING_TITLE": "\"Potential Dangerous Download\"",
   "SUSPICIOUS_DOWNLOAD_WARNING_BODY": "\"Woah there! While programs downloaded from the internet may be beneficial, this type of file can damage your device or steal your personal data. Make sure to only run executables from developers that you trust!\"",
   "SUSPICIOUS_DOWNLOAD_WARNING_DOWNLOAD": "\"Continue to download\"",
