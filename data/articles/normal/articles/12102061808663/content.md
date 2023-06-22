@@ -121,11 +121,11 @@
     <p class="wysiwyg-text-align-left">1. Tap and long press on a message you want to react to.</p>
     <p class="wysiwyg-text-align-left">2. Then you’ll have the option to react with an emoji as a regular Reaction (left) or Super Reaction (right).</p>
     <p class="wysiwyg-text-align-left">3. Tap on the emoji you’d like to react with.</p>
-    <img src="https://support.discord.com/hc/article_attachments/15513362507543" alt="mobile_reactions.gif" width="344" height="698"><br>
+    <img src="https://support.discord.com/hc/article_attachments/15513362507543" alt="mobile_reactions.gif" width="387" height="786"><br>
     <h2 id="h_01H3JFM3FVN9CXBJ9VVB7PKVC2" class="wysiwyg-text-align-left">How to Remove Reactions/Super Reactions on Mobile</h2>
     <p class="wysiwyg-text-align-left">1. Navigate to the message where you want to remove any Reactions or Super Reactions from.</p>
     <p class="wysiwyg-text-align-left">2. Long press on the message and then tap on <strong>Reactions</strong>. </p>
     <p class="wysiwyg-text-align-left">3. Here you can see all Reactions and Super Reactions on the post. If you have permissions, left swipe on each Reaction or Super Reaction to remove them. Once a reaction has been removed, this action can not be undone.</p>
-    <p class="wysiwyg-text-align-center"><img src="https://support.discord.com/hc/article_attachments/15513366831511" alt="mobile_reactions_remove.gif" width="318" height="644"></p>
+    <p class="wysiwyg-text-align-center"><img src="https://support.discord.com/hc/article_attachments/15513366831511" alt="mobile_reactions_remove.gif" width="410" height="831"></p>
     <p> </p>
 </div>
