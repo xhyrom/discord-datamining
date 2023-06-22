@@ -3892,14 +3892,6 @@
       "POST"
     ]
   },
-  "GUILD_ADMIN_SERVER_ELIGIBILITY": {
-    "url": "/guilds/:param/admin-server-eligibility",
-    "allowed_methods": [
-      "GET",
-      "HEAD",
-      "OPTIONS"
-    ]
-  },
   "JOIN_ADMIN_SERVER": {
     "url": "/guilds/:param/join-admin-server",
     "allowed_methods": [
