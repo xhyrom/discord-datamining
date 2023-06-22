@@ -87,6 +87,14 @@
       "OPTIONS"
     ]
   },
+  "USER_ACTIVITY_JOIN": {
+    "url": "/users/:param/sessions/:param/activities/:param/1",
+    "allowed_methods": [
+      "GET",
+      "HEAD",
+      "OPTIONS"
+    ]
+  },
   "USER_ACTIVITY_STATISTICS": {
     "url": "/users/@me/activities/statistics/applications",
     "allowed_methods": [
@@ -2681,6 +2689,14 @@
   },
   "GIFS_SEARCH": {
     "url": "/gifs/search",
+    "allowed_methods": [
+      "GET",
+      "HEAD",
+      "OPTIONS"
+    ]
+  },
+  "GIFS_TRENDING": {
+    "url": "/gifs/trending",
     "allowed_methods": [
       "GET",
       "HEAD",
