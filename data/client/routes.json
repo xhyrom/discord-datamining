@@ -2139,13 +2139,6 @@
       "OPTIONS"
     ]
   },
-  "USER_GUILD_BOOST_SLOT_CANCEL": {
-    "url": "/users/@me/guilds/premium/subscription-slots/:param/cancel",
-    "allowed_methods": [
-      "OPTIONS",
-      "POST"
-    ]
-  },
   "USER_GUILD_BOOST_SLOT_UNCANCEL": {
     "url": "/users/@me/guilds/premium/subscription-slots/:param/uncancel",
     "allowed_methods": [
