@@ -2139,6 +2139,13 @@
       "OPTIONS"
     ]
   },
+  "USER_GUILD_BOOST_SLOT_CANCEL": {
+    "url": "/users/@me/guilds/premium/subscription-slots/:param/cancel",
+    "allowed_methods": [
+      "OPTIONS",
+      "POST"
+    ]
+  },
   "USER_GUILD_BOOST_SLOT_UNCANCEL": {
     "url": "/users/@me/guilds/premium/subscription-slots/:param/uncancel",
     "allowed_methods": [
@@ -3508,15 +3515,6 @@
       "GET",
       "HEAD",
       "OPTIONS"
-    ]
-  },
-  "GUILD_CLYDE_SETTINGS": {
-    "url": "/guilds/:param/clyde-settings",
-    "allowed_methods": [
-      "GET",
-      "HEAD",
-      "OPTIONS",
-      "PATCH"
     ]
   },
   "CREATOR_MONETIZATION_ENABLE_REQUESTS": {
