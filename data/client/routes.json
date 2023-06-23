@@ -446,15 +446,6 @@
       "PATCH"
     ]
   },
-  "GUILD_VANITY_URL": {
-    "url": "/guilds/:param/vanity-url",
-    "allowed_methods": [
-      "GET",
-      "HEAD",
-      "OPTIONS",
-      "PATCH"
-    ]
-  },
   "GUILD_MFA": {
     "url": "/guilds/:param/mfa",
     "allowed_methods": [
