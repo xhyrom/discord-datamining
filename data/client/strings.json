@@ -10045,6 +10045,7 @@
   "ROLE_EDIT_CONNECTIONS_CONTROLS_OR_DESCRIPTION": "\"Must connect at least one\"",
   "ROLE_EDIT_CONNECTIONS_CONTROLS_AND_DESCRIPTION": "\"Must connect all\"",
   "ROLE_EDIT_CONNECTIONS_CONTROLS_WARNING": "\"Adding connection or app requirements to an existing role will remove members from that role unless they already pass the new requirements. Consider creating a new role instead.\"",
+  "ROLE_EDIT_CONNECTIONS_CONTROLS_MEMBERS_WARNING": "\"Adding connection or app requirements to an existing role is only possible if the role has no members. Consider creating a new role instead.\"",
   "ROLE_EDIT_CONNECTIONS_CONTROLS_DESCRIPTION_LEARN_MORE": "\"Linking a connection or app requires members to connect their accounts before being added to the role. [Learn more about Linked Roles]({helpdeskArticleUrl}).\"",
   "ROLE_EDIT_CONNECTIONS_CONTROLS_MUST_HAVE_AT_LEAST_POSTS": "\"Must have at least $[](metadataHook) posts\"",
   "COUNTRY_NAME_AF": "\"Afghanistan\"",
