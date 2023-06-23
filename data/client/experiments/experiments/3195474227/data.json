@@ -1,0 +1,21 @@
+{
+  "data": {
+    "kind": "user",
+    "id": "2023-06_non_nitro_user_remix_upsell",
+    "label": "Non Nitro User Remix Upsell Experiment",
+    "description": [
+      "Control",
+      "Treatment 1: treatment 1",
+      "Treatment 2: treatment 2"
+    ],
+    "hash": 3195474227,
+    "buckets": [
+      0,
+      1,
+      2
+    ],
+    "config_keys": [
+      "enabled"
+    ]
+  }
+}

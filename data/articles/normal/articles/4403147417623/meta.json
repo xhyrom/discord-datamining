@@ -2,7 +2,7 @@
   "id": 4403147417623,
   "url": "https://hammerandchisel.zendesk.com/api/v2/help_center/en-us/articles/4403147417623.json",
   "html_url": "https://support.discord.com/hc/en-us/articles/4403147417623-Custom-Profiles",
-  "author_id": 364802902112,
+  "author_id": 2921470028,
   "comments_disabled": true,
   "draft": false,
   "promoted": false,
@@ -25,7 +25,10 @@
     "custom",
     "Avatar",
     "Custom",
+    "answer-bot",
     "banner",
-    "About me"
+    "About me",
+    "customize",
+    "pronouns"
   ]
 }
