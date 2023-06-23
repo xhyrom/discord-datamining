@@ -8619,6 +8619,25 @@
   },
   {
     "data": {
+      "kind": "user",
+      "id": "2023-06_bogo_promotion_gate",
+      "label": "BOGO Promotion Manager",
+      "description": [
+        "Control",
+        "Treatment 1: Enable BOGO Promotion Manager"
+      ],
+      "hash": 680908968,
+      "buckets": [
+        0,
+        1
+      ],
+      "config_keys": [
+        "enabled"
+      ]
+    }
+  },
+  {
+    "data": {
       "kind": "guild",
       "hash": 3363020987
     },
