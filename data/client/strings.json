@@ -13710,7 +13710,7 @@
   "CALL_SOUNDS_SETTINGS_JOIN_SOUND_CHANGE": "\"Change join sound\"",
   "CALL_SOUNDS_SETTINGS_JOIN_SOUND_REMOVE": "\"Remove join sound\"",
   "CALL_SOUNDS_SETTINGS_GLOBAL_GUILD_SEARCH": "\"Global Sound\"",
-  "CALL_SOUNDS_SETTINGS_ALL_SERVERS": "\"(All Servers)\"",
+  "CALL_SOUNDS_SETTINGS_ALL_SERVERS": "\"!!{soundName}!! $[(All Servers)](subtextHook)\"",
   "USE_EXTERNAL_SOUNDS": "\"Use External Sounds\"",
   "ROLE_PERMISSIONS_USE_EXTERNAL_SOUNDS_DESCRIPTION": "\"Allows members to use sounds from other servers, if they're a Discord Nitro member.\"",
   "USE_SOUNDBOARD": "\"Use Soundboard\"",
