@@ -59102,6 +59102,71 @@ strong {
     color: var(--status-danger)
 }
 
+.container-SnKspf {
+    -webkit-box-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    height: 100%;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 20px;
+    margin: auto;
+    text-align: center
+}
+
+.content-OmKytf {
+    margin: auto;
+    padding-bottom: 40px
+}
+
+.commonText-3hIZkx {
+    margin: 32px auto 0
+}
+
+.noClipsText-1Y2tk_ {
+    width: 250px
+}
+
+.noSearchResultsText-3dOC85 {
+    width: 300px
+}
+
+.noSearchResultsImage-122801 {
+    width: 300px;
+    height: 200px;
+    background-image: url(/assets/0f83ccc726a82f6cf5d8915547dea61d.svg)
+}
+
+.noClipsImage-jeDM6w,
+.noSearchResultsImage-122801 {
+    margin: 0 auto;
+    background-repeat: no-repeat;
+    background-size: contain
+}
+
+.noClipsImage-jeDM6w {
+    width: 280px;
+    height: 220px;
+    background-image: url(/assets/644b5f4a9647c9e558c15170aa902b8c.svg)
+}
+
+.keybindHintKeys-34Vixa {
+    display: inline-block
+}
+
+.keybindShortcut-333-uP {
+    height: 20px
+}
+
 .root-3T0tvy {
     padding: 16px;
     display: -webkit-box;
@@ -161048,4 +161113,4 @@ html .invoiceCancelRow-dVOR64 {
     flex-direction: column
 }
 
-/*# sourceMappingURL=40532.3587fa0fc0c2be71d51b.css.map*/
+/*# sourceMappingURL=40532.1c844fc70ed3d17032e2.css.map*/
