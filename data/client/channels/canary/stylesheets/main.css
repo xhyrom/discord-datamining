@@ -109202,7 +109202,7 @@ html .tabBadge-h4HGed {
     object-fit: cover
 }
 
-.productDetails-KQNd4O {
+.productInfo-25zgtv {
     -ms-flex-item-align: start;
     align-self: start;
     display: -webkit-box;
@@ -109215,16 +109215,37 @@ html .tabBadge-h4HGed {
     -webkit-box-align: start;
     -ms-flex-align: start;
     align-items: flex-start;
-    gap: 8px;
-    padding: 16px 32px 16px 16px;
+    padding: 16px;
     overflow: hidden
 }
 
 .productName-3HL0K6 {
+    max-width: 100%;
+    padding-right: 16px;
     white-space: nowrap;
     text-overflow: ellipsis;
-    overflow: hidden;
-    max-width: 100%
+    overflow: hidden
+}
+
+.productDetails-KQNd4O {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    gap: 8px
+}
+
+.dotSeparator-1QXKDg {
+    width: 4px;
+    height: 4px;
+    border-radius: 50%;
+    background-color: var(--text-muted);
+    -ms-flex-negative: 0;
+    flex-shrink: 0
 }
 
 .productActionMenuButton-1nLyoz {
@@ -160942,4 +160963,4 @@ html .invoiceCancelRow-dVOR64 {
     flex-direction: column
 }
 
-/*# sourceMappingURL=40532.776f56f32df427340904.css.map*/
+/*# sourceMappingURL=40532.c2a21ea683923fe90a89.css.map*/
