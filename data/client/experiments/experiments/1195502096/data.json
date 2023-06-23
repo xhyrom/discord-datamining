@@ -1,0 +1,19 @@
+{
+  "data": {
+    "kind": "user",
+    "id": "2023-06_clyde_ai_gdm",
+    "label": "Clyde in DMs/GDMs",
+    "description": [
+      "Control",
+      "Treatment 1: enable clyde in gdms"
+    ],
+    "hash": 1195502096,
+    "buckets": [
+      0,
+      1
+    ],
+    "config_keys": [
+      "enabled"
+    ]
+  }
+}
