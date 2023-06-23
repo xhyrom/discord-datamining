@@ -127555,11 +127555,24 @@ input::-webkit-outer-spin-button {
     box-shadow: var(--elevation-high)
 }
 
+.heroVideoContainer-2BXlTV {
+    width: 100%;
+    aspect-ratio: 16/9;
+    border-radius: 4px;
+    overflow: hidden
+}
+
+.heroVideo-jWjBSL {
+    width: 100%;
+    height: auto
+}
+
 .detailsTitle-jeXgXS {
     -webkit-box-flex: 1;
     -ms-flex: auto;
     flex: auto;
-    margin-right: 16px
+    margin-right: 16px;
+    margin-top: 8px
 }
 
 .detailsDetails-1RP5O8 {
@@ -127616,8 +127629,8 @@ input::-webkit-outer-spin-button {
 
 .activityImage-1v5wXM {
     -webkit-box-flex: 1;
-    -ms-flex: 1 1 335px;
-    flex: 1 1 335px;
+    -ms-flex: 1 1 278px;
+    flex: 1 1 278px;
     min-width: 0;
     aspect-ratio: 16/9;
     border-radius: 4px
@@ -127642,15 +127655,63 @@ input::-webkit-outer-spin-button {
     grid-gap: 16px
 }
 
+.launchImage-1DghpO {
+    width: 100%;
+    height: auto;
+    border-radius: 4px
+}
+
+.brokenLaunchImage-2OFl8s {
+    width: 100%;
+    aspect-ratio: 16/9;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    background-color: var(--black-500)
+}
+
+.brokenLaunchImage-2OFl8s,
 .singleRowShareContainer-3R6mrb {
     display: -webkit-box;
     display: -ms-flexbox;
-    display: flex;
+    display: flex
+}
+
+.singleRowShareContainer-3R6mrb {
     gap: 8px
 }
 
 .shareIconButton-p5tfXG {
     min-width: 0
+}
+
+.activityOverlay-13i89q {
+    background: hsl(var(--black-500-hsl)/.6);
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center
+}
+
+.actionButton-1W1e64 {
+    border-radius: 100px
 }
 
 .tryItOutBadge-27UB1L {
@@ -127817,31 +127878,6 @@ input::-webkit-outer-spin-button {
     min-width: 0
 }
 
-.activityOverlay-2XYBiH {
-    background: hsl(var(--black-500-hsl)/.6);
-    width: 100%;
-    height: 100%;
-    overflow: hidden;
-    position: absolute;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: column;
-    flex-direction: column;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    justify-content: center
-}
-
-.actionButton-zekMHs {
-    border-radius: 100px
-}
-
 .overlayBadge-2HAW2N {
     position: absolute;
     top: 0;
@@ -127973,31 +128009,6 @@ input::-webkit-outer-spin-button {
     height: 20px
 }
 
-.activityItem-3n8gav {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: column;
-    flex-direction: column;
-    border-radius: 4px;
-    overflow: hidden;
-    background: var(--background-secondary);
-    -webkit-box-shadow: var(--elevation-stroke);
-    box-shadow: var(--elevation-stroke);
-    cursor: pointer
-}
-
-.activityItem-3n8gav:hover {
-    background: var(--background-secondary-alt)
-}
-
-.activityItem-3n8gav.disabled-1VjMsy {
-    cursor: default;
-    background: var(--background-secondary)
-}
-
 .activityImage-37hq9j {
     width: 100%;
     height: 100%;
@@ -128065,54 +128076,6 @@ input::-webkit-outer-spin-button {
     }
 }
 
-.activityVideo-1cd2O3 {
-    position: absolute;
-    -webkit-animation: fadeIn-1KQVAk .5s;
-    animation: fadeIn-1KQVAk .5s
-}
-
-.activityVideo-1cd2O3.videoFadeOut-1D7II0 {
-    -webkit-animation: fadeOut-1L5xX6 .5s;
-    animation: fadeOut-1L5xX6 .5s;
-    -webkit-animation-fill-mode: forwards;
-    animation-fill-mode: forwards
-}
-
-.activityImageContainer-hr8ttr {
-    min-height: 0;
-    position: relative;
-    aspect-ratio: 16/9
-}
-
-.activityImageContainer-hr8ttr,
-.activityOverlay-2vrZyS {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    justify-content: center;
-    overflow: hidden
-}
-
-.activityOverlay-2vrZyS {
-    background: hsl(var(--black-500-hsl)/.6);
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: column;
-    flex-direction: column
-}
-
-.actionButton-1ef_u1 {
-    border-radius: 100px
-}
-
 .overlayBadge-1QKsYS {
     position: absolute;
     top: 0;
@@ -128121,6 +128084,11 @@ input::-webkit-outer-spin-button {
 }
 
 .badgeContainer-1iNrNN {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
     -ms-flex-direction: column;
     flex-direction: column;
     -webkit-box-align: start;
@@ -128129,105 +128097,216 @@ input::-webkit-outer-spin-button {
     gap: 3px
 }
 
-.activityTextContainer-3pGZK1,
-.badgeContainer-1iNrNN {
+.staffBadge-2yzJPm {
+    background-color: var(--white-500);
+    width: 20px;
+    height: 20px;
+    border-radius: 10px;
+    border: 1px solid var(--black-500)
+}
+
+.activityCard-1QLeOA {
+    position: relative;
+    width: 100%;
+    border-radius: 8px;
+    overflow: hidden;
+    background-color: var(--background-secondary);
+    cursor: pointer;
+    -webkit-transition: -webkit-transform .25s;
+    transition: -webkit-transform .25s;
+    transition: transform .25s;
+    transition: transform .25s, -webkit-transform .25s
+}
+
+.activityCard-1QLeOA:focus,
+.activityCard-1QLeOA:hover {
+    -webkit-transform: scale(1.025);
+    transform: scale(1.025)
+}
+
+.activityCard-1QLeOA:focus .activityCardHoverHint-EAR5T8,
+.activityCard-1QLeOA:hover .activityCardHoverHint-EAR5T8 {
+    -webkit-transform: translateY(-40px);
+    transform: translateY(-40px)
+}
+
+.activityCard-1QLeOA:focus .activityCardButton-35MkEc,
+.activityCard-1QLeOA:hover .activityCardButton-35MkEc {
+    background-color: var(--brand-experiment)
+}
+
+.activityCard-1QLeOA:focus .activityCardSocialProofContainer-1lk4w4,
+.activityCard-1QLeOA:focus .activityCardTagContainer-2TAppE,
+.activityCard-1QLeOA:hover .activityCardSocialProofContainer-1lk4w4,
+.activityCard-1QLeOA:hover .activityCardTagContainer-2TAppE {
+    opacity: 0
+}
+
+.activityCardWithoutDetailPageRoute-3cQFVv:focus .activityCardSocialProofContainer-1lk4w4,
+.activityCardWithoutDetailPageRoute-3cQFVv:focus .activityCardTagContainer-2TAppE,
+.activityCardWithoutDetailPageRoute-3cQFVv:hover .activityCardSocialProofContainer-1lk4w4,
+.activityCardWithoutDetailPageRoute-3cQFVv:hover .activityCardTagContainer-2TAppE {
+    opacity: 1
+}
+
+.activityCardReducedMotion-1FVRiZ {
+    -webkit-transition: -webkit-transform 0ms;
+    transition: -webkit-transform 0ms;
+    transition: transform 0ms;
+    transition: transform 0ms, -webkit-transform 0ms
+}
+
+.activityCardImage-2zBwMx {
+    aspect-ratio: 16/9;
+    width: 100%
+}
+
+.activityCardDetails-3iTupr {
+    padding: 8px;
+    min-height: 72px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     -webkit-box-orient: vertical;
-    -webkit-box-direction: normal
-}
-
-.activityTextContainer-3pGZK1 {
-    -webkit-box-flex: 1;
-    -ms-flex: 1;
-    flex: 1;
-    min-height: 0;
+    -webkit-box-direction: normal;
     -ms-flex-direction: column;
     flex-direction: column;
-    padding: 8px
-}
-
-.activityTitleText-3TshOz {
-    white-space: nowrap;
-    text-overflow: ellipsis;
-    overflow: hidden;
-    line-height: 24px
-}
-
-.activitySubtitleText-29dQyV {
-    display: -webkit-box;
-    overflow: hidden;
-    max-height: 4em;
-    margin-bottom: 4px;
-    -webkit-line-clamp: 3;
-    -webkit-box-orient: vertical
-}
-
-.usersArePlayingText-1wWrAG {
-    margin-bottom: 4px
-}
-
-.activityTagsContainer-2cCmpN {
-    margin-top: auto;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    width: 100%;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: row;
-    flex-direction: row;
-    -webkit-column-gap: 4px;
-    -moz-column-gap: 4px;
-    column-gap: 4px
-}
-
-.avatars-1u9Dqb {
-    background: #000;
-    margin-bottom: 8px
-}
-
-.activityName-3yCS1Q {
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: row;
-    flex-direction: row;
     -webkit-box-pack: justify;
     -ms-flex-pack: justify;
     justify-content: space-between
 }
 
-.activityName-3yCS1Q,
-.activityTag-cSTVmX {
+.activityCardParticipants-voF3Go {
+    margin-top: 2px;
+    color: var(--interactive-normal)
+}
+
+.activityCardUsersHavePlayedContainer-3ENRB1 {
     display: -webkit-box;
     display: -ms-flexbox;
-    display: flex
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    gap: 8px
 }
 
-.activityTag-cSTVmX {
-    padding: 2px 4px;
-    background-color: var(--background-tertiary);
+.activityCardUsersHavePlayedText-2kx6uw {
+    line-break: break-all
+}
+
+.activityCardSocialProofContainer-1lk4w4,
+.activityCardTagContainer-2TAppE {
+    margin-top: 16px;
+    opacity: 1;
+    -webkit-transition: opacity .25s;
+    transition: opacity .25s
+}
+
+.activityCardTagContainer-2TAppE {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    gap: 4px
+}
+
+.activityCardTag-1abK60 {
+    padding: 2px;
     border-radius: 4px;
-    white-space: nowrap;
-    text-overflow: ellipsis;
-    overflow: hidden
+    background-color: var(--background-tertiary)
 }
 
-.icon-3PM41H {
-    width: 14px;
-    height: 14px;
-    margin-right: 2px;
-    -ms-flex-item-align: center;
-    align-self: center
+.activityCardHoverHint-EAR5T8 {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: calc(100% - 16px);
+    padding: 8px 8px 16px;
+    background-color: var(--background-secondary);
+    color: var(--header-secondary);
+    -webkit-transition: -webkit-transform .25s;
+    transition: -webkit-transform .25s;
+    transition: transform .25s;
+    transition: transform .25s, -webkit-transform .25s;
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center
 }
 
-.staffBadge-2yzJPm {
-    width: 20px;
-    height: 20px
+.activityCardHoverHintReducedMotion-QtVitU {
+    -webkit-transition: -webkit-transform 0ms;
+    transition: -webkit-transform 0ms;
+    transition: transform 0ms;
+    transition: transform 0ms, -webkit-transform 0ms
+}
+
+.activityCardImageContainer-2e8UAt {
+    position: relative;
+    overflow: hidden;
+    -o-object-fit: cover;
+    object-fit: cover;
+    -webkit-animation: fadeIn-1KQVAk .7s;
+    animation: fadeIn-1KQVAk .7s;
+    aspect-ratio: 16/9
+}
+
+.video-2HGPng {
+    border-radius: 0;
+    position: absolute;
+    -webkit-animation: fadeIn-1KQVAk .5s;
+    animation: fadeIn-1KQVAk .5s;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0
+}
+
+.video-2HGPng.videoFadeOut-1D7II0 {
+    -webkit-animation: fadeOut-1L5xX6 .5s;
+    animation: fadeOut-1L5xX6 .5s;
+    -webkit-animation-fill-mode: forwards;
+    animation-fill-mode: forwards
+}
+
+.minimalDetailsContainer-3URV3- {
+    pointer-events: none;
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center
+}
+
+.minimalDetails-2JmXAZ,
+.minimalDetailsContainer-3URV3- {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center
+}
+
+.minimalDetails-2JmXAZ {
+    position: relative;
+    top: 33%;
+    padding: 4px 8px;
+    border-radius: 16px;
+    background-color: rgba(0, 0, 0, .7);
+    color: var(--white-500);
+    gap: 4px
 }
 
 .scrollContainer-1C3AzW {
@@ -128524,7 +128603,8 @@ input::-webkit-outer-spin-button {
 }
 
 .rootBigShelf-EYxXnY {
-    width: clamp(496px, calc(100vw - 160px), 1024px)
+    width: clamp(496px, calc(100vw - 160px), 1024px);
+    border-radius: 12px
 }
 
 .footer-yVEuwO {
@@ -128534,7 +128614,8 @@ input::-webkit-outer-spin-button {
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
-    background-color: var(--background-tertiary)
+    background-color: var(--background-tertiary);
+    border-radius: 0 0 12px 12px
 }
 
 .shelfTopBackground-R55ED9 {
@@ -128551,6 +128632,10 @@ input::-webkit-outer-spin-button {
 
 .modalHeader-3X0A4K {
     background-color: var(--background-primary)
+}
+
+.modalHeaderBigShelf-3qVsMx {
+    border-radius: 12px 12px 0 0
 }
 
 .headerBackButton-2lJPjT {
@@ -128607,20 +128692,24 @@ input::-webkit-outer-spin-button {
     opacity: .06
 }
 
+.emptyFooter-pq1R1_ {
+    height: 16px
+}
+
 .slideContentOuterContainerSquished-2DtPtj {
-    height: calc(100vh - 238px)
+    height: calc(100vh - 286px)
 }
 
 .slideContentOuterContainerSquishedWithDev-BQaj-K {
-    height: calc(100vh - 414px)
+    height: calc(100vh - 462px)
 }
 
 .slideContentOuterContainerTall-1G4gq9 {
-    height: 626px
+    height: 578px
 }
 
 .slideContentOuterContainerTallWithDev-2E3xVg {
-    height: 450px
+    height: 402px
 }
 
 .slideContentOuterContainerNoMetaTextSquished-1AmWiW {
@@ -128632,11 +128721,11 @@ input::-webkit-outer-spin-button {
 }
 
 .slideContentOuterContainerNoMetaTextNoFooterSquished-JzP1qJ {
-    height: calc(100vh - 220px)
+    height: calc(100vh - 268px)
 }
 
 .slideContentOuterContainerNoMetaTextNoFooterTall-1D_D6_ {
-    height: 644px
+    height: 596px
 }
 
 .image-39E-vF {
@@ -160959,4 +161048,4 @@ html .invoiceCancelRow-dVOR64 {
     flex-direction: column
 }
 
-/*# sourceMappingURL=40532.fae4d832bf3e201e4942.css.map*/
+/*# sourceMappingURL=40532.3587fa0fc0c2be71d51b.css.map*/
