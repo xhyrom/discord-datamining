@@ -129459,61 +129459,6 @@ input::-webkit-outer-spin-button {
     align-items: center
 }
 
-.wumpusRocketContainer-2sDiS2 {
-    position: absolute;
-    width: 100%;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    justify-content: center
-}
-
-.wumpusRocket-vhqIkO {
-    position: absolute;
-    top: -82px
-}
-
-.modalContent-1_pfLF {
-    margin: 72px 16px 32px;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: column;
-    flex-direction: column;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center
-}
-
-.modalContentText-3nEcnP {
-    margin-top: 8px;
-    text-align: center
-}
-
-.modalFooter-1mYSqc {
-    background-color: var(--background-tertiary);
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: row;
-    flex-direction: row;
-    -webkit-box-pack: justify;
-    -ms-flex-pack: justify;
-    justify-content: space-between;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center
-}
-
-.closeButton-2D0lkC {
-    cursor: pointer;
-    margin-left: -8px;
-    padding: 8px
-}
-
 .content-2WYvt3 {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -160997,4 +160942,4 @@ html .invoiceCancelRow-dVOR64 {
     flex-direction: column
 }
 
-/*# sourceMappingURL=40532.a4829f9911d13a18cb79.css.map*/
+/*# sourceMappingURL=40532.776f56f32df427340904.css.map*/
