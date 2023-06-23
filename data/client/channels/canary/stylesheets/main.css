@@ -131440,6 +131440,10 @@ html .invoiceCancelRow-3s2UuC {
     padding: 16px
 }
 
+.uploadArea-31mekv {
+    position: fixed
+}
+
 .addFileButtonLook-kvmcNx {
     background-color: var(--button-secondary-background);
     color: var(--white-500);
@@ -160993,4 +160997,4 @@ html .invoiceCancelRow-dVOR64 {
     flex-direction: column
 }
 
-/*# sourceMappingURL=40532.1ef72cf474b9dfb93bb6.css.map*/
+/*# sourceMappingURL=40532.a4829f9911d13a18cb79.css.map*/
