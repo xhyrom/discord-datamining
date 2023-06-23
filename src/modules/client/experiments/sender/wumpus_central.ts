@@ -121,14 +121,17 @@ export class WumpusCentralSender implements Sender {
       inline: true,
     });
 
-    return new EmbedBuilder()
+    const embed = new EmbedBuilder()
       .setTitle(this.experimentName(exp))
       .setURL("https://discord.gg/QgEbfFa9XA")
-      .setDescription(description)
       .addFields(fields)
       .setFooter({
         text: "src: discord.gg/datamining @ xHyroM/discord-datamining",
       });
+
+    if (description) embed.setDescription(description);
+
+    return embed;
   }
 
   private buildOverridesEmbed(
