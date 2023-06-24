@@ -14157,7 +14157,7 @@
   "PRIVATE_CHANNEL_APPS_HEADER": "\"Apps\"",
   "PRIVATE_CHANNEL_APPS_HEADER_COUNT": "\"{count, number} {count, plural, =1 {App} other {Apps}}\"",
   "PRIVATE_CHANNEL_TRY_APPS": "\"Learn more about apps in friend groups\"",
-  "PRIVATE_CHANNEL_TRY_APPS_LINKED": "\"[Learn more](helpCenterLink) about apps in friend groups\"",
+  "PRIVATE_CHANNEL_TRY_APPS_LINKED": "\"[Learn more]({helpCenterLink}) about apps in friend groups\"",
   "OAUTH2_REQUESTS_PRIVATE_CHANNEL_INTEGRATION": "\"wants to access your group message\"",
   "BOT_PROFILE_MANAGE_PRIVATE_CHANNEL_INTEGRATION": "\"Manage App\"",
   "BOT_PROFILE_REMOVE_PRIVATE_CHANNEL_INTEGRATION": "\"Remove App\"",
