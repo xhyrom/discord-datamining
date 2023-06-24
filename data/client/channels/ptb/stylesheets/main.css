@@ -559,6 +559,7 @@ html.decorate-links .lowSaturationUnderline-Z6CW6z {
 
 .lookOutlined-3RTC7c.colorPrimary-2-Lusz:disabled,
 .lookOutlined-3RTC7c.colorPrimary-2-Lusz[aria-disabled=true] {
+    color: var(--button-outline-primary-text);
     background-color: transparent
 }
 
@@ -13264,11 +13265,9 @@ html.disable-forced-colors * {
 
 .button-32Jo2d {
     position: relative;
-    background: -webkit-gradient(linear, left top, right top, from(var(--creator-revenue-start)), to(var(--creator-revenue-end)));
-    background: linear-gradient(90deg, var(--creator-revenue-start), var(--creator-revenue-end));
-    color: var(--white-500);
     font-weight: 600;
-    overflow: hidden
+    color: var(--white-500);
+    background: var(--button-creator-revenue-background)
 }
 
 .buttonContents-Nxrc5J {
@@ -13282,13 +13281,6 @@ html.disable-forced-colors * {
 
 .icon-jTx1Gg {
     margin-right: 4px
-}
-
-.shine-3xxflf {
-    position: absolute;
-    left: 37%;
-    right: 0;
-    top: 0
 }
 
 .arrow-2HswgU {
@@ -22825,6 +22817,58 @@ html.disable-forced-colors * {
     --spotify-hsl: 141 calc(var(--saturation-factor, 1)*72.9%) 42%;
     --steam: hsl(var(--steam-hsl)/1);
     --steam-hsl: 215 calc(var(--saturation-factor, 1)*35.1%) 14.5%;
+    --teal-100: hsl(var(--teal-100-hsl)/1);
+    --teal-100-hsl: 193 calc(var(--saturation-factor, 1)*69.2%) 97.5%;
+    --teal-130: hsl(var(--teal-130-hsl)/1);
+    --teal-130-hsl: 192 calc(var(--saturation-factor, 1)*83.3%) 95.3%;
+    --teal-160: hsl(var(--teal-160-hsl)/1);
+    --teal-160-hsl: 190 calc(var(--saturation-factor, 1)*83.3%) 90.6%;
+    --teal-200: hsl(var(--teal-200-hsl)/1);
+    --teal-200-hsl: 188 calc(var(--saturation-factor, 1)*85.7%) 83.5%;
+    --teal-230: hsl(var(--teal-230-hsl)/1);
+    --teal-230-hsl: 188 calc(var(--saturation-factor, 1)*88.3%) 73.1%;
+    --teal-260: hsl(var(--teal-260-hsl)/1);
+    --teal-260-hsl: 188 calc(var(--saturation-factor, 1)*81.9%) 65.3%;
+    --teal-300: hsl(var(--teal-300-hsl)/1);
+    --teal-300-hsl: 189 calc(var(--saturation-factor, 1)*72.8%) 58.2%;
+    --teal-330: hsl(var(--teal-330-hsl)/1);
+    --teal-330-hsl: 189 calc(var(--saturation-factor, 1)*65.6%) 52.2%;
+    --teal-345: hsl(var(--teal-345-hsl)/1);
+    --teal-345-hsl: 190 calc(var(--saturation-factor, 1)*62.8%) 48.4%;
+    --teal-360: hsl(var(--teal-360-hsl)/1);
+    --teal-360-hsl: 190 calc(var(--saturation-factor, 1)*64%) 43.5%;
+    --teal-400: hsl(var(--teal-400-hsl)/1);
+    --teal-400-hsl: 190 calc(var(--saturation-factor, 1)*63.5%) 38.6%;
+    --teal-430: hsl(var(--teal-430-hsl)/1);
+    --teal-430-hsl: 190 calc(var(--saturation-factor, 1)*63%) 33.9%;
+    --teal-460: hsl(var(--teal-460-hsl)/1);
+    --teal-460-hsl: 191 calc(var(--saturation-factor, 1)*64.2%) 29.6%;
+    --teal-500: hsl(var(--teal-500-hsl)/1);
+    --teal-500-hsl: 190 calc(var(--saturation-factor, 1)*65.2%) 25.9%;
+    --teal-530: hsl(var(--teal-530-hsl)/1);
+    --teal-530-hsl: 190 calc(var(--saturation-factor, 1)*66.7%) 22.4%;
+    --teal-560: hsl(var(--teal-560-hsl)/1);
+    --teal-560-hsl: 190 calc(var(--saturation-factor, 1)*69.7%) 19.4%;
+    --teal-600: hsl(var(--teal-600-hsl)/1);
+    --teal-600-hsl: 189 calc(var(--saturation-factor, 1)*71.8%) 16.7%;
+    --teal-630: hsl(var(--teal-630-hsl)/1);
+    --teal-630-hsl: 190 calc(var(--saturation-factor, 1)*73.7%) 14.9%;
+    --teal-660: hsl(var(--teal-660-hsl)/1);
+    --teal-660-hsl: 188 calc(var(--saturation-factor, 1)*75.8%) 12.9%;
+    --teal-700: hsl(var(--teal-700-hsl)/1);
+    --teal-700-hsl: 189 calc(var(--saturation-factor, 1)*79.3%) 11.4%;
+    --teal-730: hsl(var(--teal-730-hsl)/1);
+    --teal-730-hsl: 189 calc(var(--saturation-factor, 1)*80%) 9.8%;
+    --teal-760: hsl(var(--teal-760-hsl)/1);
+    --teal-760-hsl: 189 calc(var(--saturation-factor, 1)*81.4%) 8.4%;
+    --teal-800: hsl(var(--teal-800-hsl)/1);
+    --teal-800-hsl: 188 calc(var(--saturation-factor, 1)*83.3%) 7.1%;
+    --teal-830: hsl(var(--teal-830-hsl)/1);
+    --teal-830-hsl: 189 calc(var(--saturation-factor, 1)*87.1%) 6.1%;
+    --teal-860: hsl(var(--teal-860-hsl)/1);
+    --teal-860-hsl: 188 calc(var(--saturation-factor, 1)*85.2%) 5.3%;
+    --teal-900: hsl(var(--teal-900-hsl)/1);
+    --teal-900-hsl: 189 calc(var(--saturation-factor, 1)*90.9%) 4.3%;
     --transparent: hsl(var(--transparent-hsl)/0);
     --transparent-hsl: 0 calc(var(--saturation-factor, 1)*0%) 0%;
     --twitch: hsl(var(--twitch-hsl)/1);
@@ -22970,6 +23014,7 @@ html.disable-forced-colors * {
     --border-strong: hsl(var(--white-500-hsl)/0.16);
     --border-subtle: hsl(var(--white-500-hsl)/0.08);
     --bug-reporter-modal-submitting-background: hsl(var(--primary-800-hsl)/0.6);
+    --button-creator-revenue-background: var(--teal-430);
     --button-danger-background: var(--red-430);
     --button-danger-background-active: var(--red-530);
     --button-danger-background-disabled: var(--red-430);
@@ -23027,6 +23072,12 @@ html.disable-forced-colors * {
     --chat-input-container-background: var(--primary-600);
     --control-brand-foreground: var(--brand-360);
     --control-brand-foreground-new: var(--brand-360);
+    --creator-revenue-icon-gradient-end: var(--teal-430);
+    --creator-revenue-icon-gradient-start: var(--teal-360);
+    --creator-revenue-info-box-background: hsl(var(--teal-430-hsl)/0.1);
+    --creator-revenue-info-box-border: var(--teal-400);
+    --creator-revenue-locked-channel-icon: var(--teal-345);
+    --creator-revenue-progress-bar: var(--teal-400);
     --deprecated-card-bg: hsl(var(--primary-700-hsl)/0.6);
     --deprecated-card-editable-bg: hsl(var(--primary-700-hsl)/0.3);
     --deprecated-quickswitcher-input-background: var(--primary-400);
@@ -23189,6 +23240,7 @@ html.disable-forced-colors * {
     --border-strong: hsl(var(--black-500-hsl)/0.16);
     --border-subtle: hsl(var(--black-500-hsl)/0.08);
     --bug-reporter-modal-submitting-background: hsl(var(--white-500-hsl)/0.6);
+    --button-creator-revenue-background: var(--teal-430);
     --button-danger-background: var(--red-430);
     --button-danger-background-active: var(--red-530);
     --button-danger-background-disabled: var(--red-430);
@@ -23246,6 +23298,12 @@ html.disable-forced-colors * {
     --chat-input-container-background: var(--white-500);
     --control-brand-foreground: var(--brand-500);
     --control-brand-foreground-new: var(--brand-500);
+    --creator-revenue-icon-gradient-end: var(--teal-400);
+    --creator-revenue-icon-gradient-start: var(--teal-345);
+    --creator-revenue-info-box-background: hsl(var(--teal-430-hsl)/0.1);
+    --creator-revenue-info-box-border: var(--teal-400);
+    --creator-revenue-locked-channel-icon: var(--teal-400);
+    --creator-revenue-progress-bar: var(--teal-345);
     --deprecated-card-bg: var(--primary-100);
     --deprecated-card-editable-bg: hsl(var(--primary-100-hsl)/0.6);
     --deprecated-quickswitcher-input-background: var(--white-500);
@@ -23406,6 +23464,7 @@ html.disable-forced-colors * {
     --background-secondary: var(--primary-830);
     --background-secondary-alt: var(--primary-800);
     --background-tertiary: var(--primary-860);
+    --button-creator-revenue-background: var(--teal-430);
     --button-danger-background: var(--red-430);
     --button-danger-background-active: var(--red-530);
     --button-danger-background-disabled: var(--red-430);
@@ -23542,6 +23601,12 @@ html.disable-forced-colors * {
     --chat-border: var(--primary-700);
     --control-brand-foreground: var(--brand-360);
     --control-brand-foreground-new: var(--brand-360);
+    --creator-revenue-icon-gradient-end: var(--teal-430);
+    --creator-revenue-icon-gradient-start: var(--teal-360);
+    --creator-revenue-info-box-background: hsl(var(--teal-430-hsl)/0.1);
+    --creator-revenue-info-box-border: var(--teal-400);
+    --creator-revenue-locked-channel-icon: var(--teal-345);
+    --creator-revenue-progress-bar: var(--teal-400);
     --deprecated-card-bg: hsl(var(--primary-700-hsl)/0.6);
     --deprecated-card-editable-bg: hsl(var(--primary-700-hsl)/0.3);
     --deprecated-quickswitcher-input-background: var(--primary-400);
@@ -23627,6 +23692,7 @@ html.disable-forced-colors * {
     --background-secondary-alt: var(--dontuse-19);
     --background-tertiary: var(--dontuse-20);
     --black: var(--black-500);
+    --button-creator-revenue-background: var(--teal-430);
     --button-danger-background: var(--red-430);
     --button-danger-background-active: var(--red-530);
     --button-danger-background-disabled: var(--red-430);
@@ -79165,7 +79231,7 @@ strong {
     padding-top: 4px;
     padding-bottom: 4px;
     font-weight: 500;
-    color: var(--interactive-active)
+    color: var(--white-500)
 }
 
 .tierTrialIndicatorIcon-3JxVc4 {
@@ -110415,8 +110481,7 @@ html .tabBadge-h4HGed {
 
 .progressBarInner-3FaATB {
     height: 100%;
-    background: -webkit-gradient(linear, left top, right top, from(var(--creator-revenue-start)), to(var(--creator-revenue-end)));
-    background: linear-gradient(90deg, var(--creator-revenue-start), var(--creator-revenue-end))
+    background: var(--creator-revenue-progress-bar)
 }
 
 .container-q5WrN0 {
@@ -110558,7 +110623,7 @@ html .tabBadge-h4HGed {
 }
 
 .starIcon-2X9Q4U {
-    color: var(--interactive-normal);
+    color: var(--primary-330);
     width: 24px;
     height: 24px
 }
@@ -110597,21 +110662,22 @@ html .tabBadge-h4HGed {
 }
 
 .publishListing-1CuAKj {
-    border: 1px solid #14a1a6;
+    border: 1px solid var(--creator-revenue-info-box-border);
     border-radius: 4px;
     padding: 16px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    background: hsl(var(--creator-revenue-start-hsl)/.05);
+    background: var(--creator-revenue-info-box-background);
     -webkit-box-pack: justify;
     -ms-flex-pack: justify;
-    justify-content: space-between
+    justify-content: space-between;
+    gap: 8px
 }
 
 .publishButton-3chyxp {
-    background: -webkit-gradient(linear, left top, right top, from(var(--creator-revenue-start)), to(var(--creator-revenue-end)));
-    background: linear-gradient(90deg, var(--creator-revenue-start), var(--creator-revenue-end))
+    background: var(--button-creator-revenue-background);
+    color: var(--white)
 }
 
 .publishListingInfoHeader-21U1M8 {
@@ -119415,8 +119481,7 @@ input::-webkit-outer-spin-button {
 
 .progressBarInner-1jBB8- {
     height: 100%;
-    background: -webkit-gradient(linear, left top, right top, from(var(--creator-revenue-start)), to(var(--creator-revenue-end)));
-    background: linear-gradient(90deg, var(--creator-revenue-start), var(--creator-revenue-end))
+    background: var(--brand-500)
 }
 
 .reasonContainer-2_HuOZ {
@@ -148066,11 +148131,16 @@ html .invoiceCancelRow-3s2UuC {
 }
 
 .card-x5L6z7 {
-    background-image: -webkit-gradient(linear, left top, right top, from(var(--creator-revenue-start)), to(var(--creator-revenue-end)));
-    background-image: linear-gradient(90deg, var(--creator-revenue-start), var(--creator-revenue-end));
+    background-image: -webkit-gradient(linear, left top, right top, from(var(--teal-460)), color-stop(55%, var(--teal-430)), to(var(--teal-360)));
+    background-image: linear-gradient(90deg, var(--teal-460), var(--teal-430) 55%, var(--teal-360));
     -ms-flex-wrap: wrap;
     flex-wrap: wrap;
     gap: 16px
+}
+
+.manageSubscriptionsButton-3ixdQS {
+    background-color: var(--white);
+    color: var(--teal-530)
 }
 
 .handImage-3Ke7jw {
@@ -161123,4 +161193,4 @@ html .invoiceCancelRow-dVOR64 {
     flex-direction: column
 }
 
-/*# sourceMappingURL=40532.706629d25574f3d2b210.css.map*/
+/*# sourceMappingURL=40532.6e7e691f62a9f1f4517c.css.map*/
