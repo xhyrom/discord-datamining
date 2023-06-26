@@ -132060,6 +132060,65 @@ html .invoiceCancelRow-3s2UuC {
     cursor: pointer
 }
 
+.header-3nTh_Z {
+    background-color: var(--background-secondary-alt);
+    padding: 16px
+}
+
+.headerImage-iNMTOV {
+    height: 66px;
+    width: 119px;
+    border-radius: var(--radius-sm)
+}
+
+.headerTextColumn-3Qhrw2 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column
+}
+
+.closeButton-2zFuZJ {
+    -ms-flex-item-align: start;
+    align-self: flex-start;
+    -webkit-margin-start: auto;
+    margin-inline-start: auto
+}
+
+.attachmentRow-12qRou {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    padding: 24px 0
+}
+
+.attachmentRow-12qRou:not(:first-child) {
+    border-top: 1px solid var(--background-modifier-hover)
+}
+
+.attachmentFile-2AwJCM {
+    padding: 10px;
+    background-color: var(--background-modifier-hover);
+    border-radius: var(--radius-sm)
+}
+
+.attachmentDownloadButton-ikRw1y {
+    min-width: 0
+}
+
 .headerImage-RAozSF {
     width: 100%;
     height: 100%;
@@ -161193,4 +161252,4 @@ html .invoiceCancelRow-dVOR64 {
     flex-direction: column
 }
 
-/*# sourceMappingURL=40532.8f55877bf8a412fe962c.css.map*/
+/*# sourceMappingURL=40532.d594fe97f4edc642dfa0.css.map*/
