@@ -15056,6 +15056,8 @@
   "GUILD_PRODUCT_CONFIRMATION_MODAL_BODY_3": "\"Thank you and enjoy your purchase!\"",
   "GUILD_PRODUCT_PURCHASE_MODAL_CTA": "\"Purchase\"",
   "GUILD_PRODUCT_PURCHASE_SUMMARY_TOTAL_PAID": "\"Total paid\"",
+  "GUILD_PRODUCT_DOWNLOAD_MODAL_ARIA_LABEL": "\"All downloadables\"",
+  "GUILD_PRODUCT_DOWNLOADS_COUNT": "\"{count, plural, =1 {1 file} other {{count} files}}\"",
   "EXPANDABLE_TEXT_SHOW_MORE": "\"Show more\"",
   "EXPANDABLE_TEXT_SHOW_LESS": "\"Show less\"",
   "CUSTOM_IMAGE_SELECTOR_YOUR_CUSTOM_IMAGE": "\"Your custom image\"",
