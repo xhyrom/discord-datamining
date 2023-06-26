@@ -27,7 +27,7 @@
 <p>This is what a Discord profile looks like with Streamer Mode turned on (notice the username is replaced with the first letter only and periods): </p>
 <p class="wysiwyg-text-align-center">    <img style="height: 512px; width: 444px;" src="https://lh6.googleusercontent.com/XqVQZ3BfNqDJrqICoa34deNDXYkp14YGhHbJBSAIN-yuX2KEin-4tyLh5kiQdNgQZ1G1NqBGo6FMsnm2_T64pRNqYys_LKJTnsizm6LfTHzT-O1oAGkl8zYpVRbWMWbM-rBm8bXmXNug783K9FNxOIs"></p>
 <h3 class="wysiwyg-text-align-left">
-    <br><span style="color: #434343;" data-darkreader-inline-color="">If a display name is set under </span><a href="https://support.discord.com/hc/en-us/articles/4403147417623"><span class="wysiwyg-underline" style="color: #1155cc;" data-darkreader-inline-color="">Profiles</span></a><span style="color: #434343;" data-darkreader-inline-color="">, that name will be shown completely even with Streamer Mode turned on, but the username will remain hidden. </span>
+    <span style="color: #434343;" data-darkreader-inline-color="">If a display name is set under </span><a href="https://support.discord.com/hc/en-us/articles/4403147417623"><span class="wysiwyg-underline" style="color: #1155cc;" data-darkreader-inline-color="">Profiles</span></a><span style="color: #434343;" data-darkreader-inline-color="">, that name will be shown completely even with Streamer Mode turned on, but the username will remain hidden. </span>
 </h3>
 <p><span class="wysiwyg-font-size-large" style="font-weight: 400;"><strong>Hide Instant Invite Links</strong></span></p>
 <p class="wysiwyg-text-align-center"><img src="https://support.discord.com/hc/article_attachments/8741293742359" alt="streamermode_invitelinks.JPG"></p>
