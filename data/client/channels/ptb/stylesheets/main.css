@@ -148769,6 +148769,11 @@ html .invoiceCancelRow-3s2UuC {
     background: #4f545c
 }
 
+.animation-11Lxbm {
+    position: absolute;
+    top: -30px
+}
+
 .card-28ghuJ {
     position: relative;
     display: -webkit-box;
@@ -148785,7 +148790,7 @@ html .invoiceCancelRow-3s2UuC {
     -ms-flex-pack: center;
     justify-content: center;
     width: 100%;
-    height: 355px;
+    height: 342px;
     padding: 32px 24px;
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
@@ -148825,13 +148830,6 @@ html .invoiceCancelRow-3s2UuC {
     gap: 16px
 }
 
-.body-3wqyAl.animated-N2UW_e {
-    -webkit-box-pack: justify;
-    -ms-flex-pack: justify;
-    justify-content: space-between;
-    padding: 16px 12px
-}
-
 .body-3wqyAl.collected-S9uF3G {
     -webkit-box-pack: center;
     -ms-flex-pack: center;
@@ -148842,15 +148840,16 @@ html .invoiceCancelRow-3s2UuC {
     position: absolute;
     top: 0;
     width: 100%;
-    height: 144px;
+    height: 170px;
     overflow: hidden;
-    background-color: var(--black-500);
     border-top-right-radius: 8px;
-    border-top-left-radius: 8px
+    border-top-left-radius: 8px;
+    -o-object-fit: cover;
+    object-fit: cover
 }
 
 .avatar-MwXD3e {
-    margin-top: 56px
+    margin-top: 0
 }
 
 .headings-3l1-Le {
@@ -148861,17 +148860,14 @@ html .invoiceCancelRow-3s2UuC {
     -webkit-box-direction: normal;
     -ms-flex-direction: column;
     flex-direction: column;
-    gap: 8px
+    gap: 8px;
+    margin-top: 48px
 }
 
 .button-1QJ6Yp {
-    color: var(--white-500)
-}
-
-.button-1QJ6Yp.animated-N2UW_e {
+    color: var(--white-500);
     background: -webkit-gradient(linear, left top, right top, from(hsl(269, calc(var(--saturation-factor, 1)*52.7%), 52.7%)), color-stop(hsl(296, calc(var(--saturation-factor, 1)*50%), 51.4%)), to(hsl(325, calc(var(--saturation-factor, 1)*31.7%), 51.8%)));
-    background: linear-gradient(90deg, hsl(269, calc(var(--saturation-factor, 1)*52.7%), 52.7%), hsl(296, calc(var(--saturation-factor, 1)*50%), 51.4%), hsl(325, calc(var(--saturation-factor, 1)*31.7%), 51.8%));
-    opacity: 1
+    background: linear-gradient(90deg, hsl(269, calc(var(--saturation-factor, 1)*52.7%), 52.7%), hsl(296, calc(var(--saturation-factor, 1)*50%), 51.4%), hsl(325, calc(var(--saturation-factor, 1)*31.7%), 51.8%))
 }
 
 .buttonInner-1wYJY5 {
@@ -161345,4 +161341,4 @@ html .invoiceCancelRow-dVOR64 {
     flex-direction: column
 }
 
-/*# sourceMappingURL=40532.2fcaf8bc5ad2495fd0c9.css.map*/
+/*# sourceMappingURL=40532.962ec8a57c3083eceee2.css.map*/
