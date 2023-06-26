@@ -2558,6 +2558,7 @@
   "QR_CODE_LOGIN_SUCCESS_FLAVOR": "\"You're now logged in on desktop.\"",
   "QR_CODE_LOGIN_START_OVER": "\"Not me, start over\"",
   "QR_CODE_LOGIN_FINISH_BUTTON": "\"Start talking\"",
+  "QR_CODE_LOGIN_DELAY": "\"Log in on a new device? Ready in !!{seconds}!!\"",
   "QR_CODE_INVALID": "\"Invalid QR Code Found\"",
   "QR_CODE_FAIL": "\"Failed to scan\"",
   "QR_CODE_FAIL_DESCRIPTION": "\"Something went wrong when trying to scan.\"",
