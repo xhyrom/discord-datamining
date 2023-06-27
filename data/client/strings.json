@@ -9597,6 +9597,7 @@
   "APPLICATION_COMMAND_MENTION_CONFIRM_HEADER": "\"Clear message?\"",
   "APPLICATION_COMMAND_MENTION_CONFIRM_BODY": "\"Looks like you've already written something. Do you want to clear it and use a command?\"",
   "MJ_CHATBAR_BODY": "\"Type “$[command](commandHook)” to use Midjourney. Tip: Create a server to try it with just friends.\"",
+  "APPLICATION_IFRAME_MODAL_LOAD_ERROR": "\"There was an error trying to load the application.\"",
   "INTERACTION_RATE_LIMITED": "\"Slow down! You're clicking too fast.\"",
   "APPLICATION_ADD_TO_SERVER": "\"Add to Server\"",
   "APPLICATION_ADD_TO_SERVER_ACTIONS": "\"Add to Server Actions\"",
