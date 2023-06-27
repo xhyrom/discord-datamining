@@ -95865,6 +95865,13 @@ strong {
     height: 300px
 }
 
+.tag-1r0ilL {
+    background-color: var(--brand-experiment);
+    font-size: 12px;
+    line-height: 16px;
+    padding: 0 6px
+}
+
 .root-3Uv5Th {
     width: 490px
 }
@@ -96550,6 +96557,19 @@ strong {
 }
 
 .featureGoLive-15Pf6l .featureImage-91H2fC {
+    width: 172px
+}
+
+.featureRemixing-1cFJ5x .featureImageWrapper-2ndc8N {
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center
+}
+
+.featureRemixing-1cFJ5x .featureImage-91H2fC {
     width: 172px
 }
 
@@ -97840,6 +97860,16 @@ strong {
     text-align: center
 }
 
+.smallPerkCardEarlyAccessBadge-3nmrvW {
+    top: -4px;
+    left: 24px;
+    border-radius: 8px;
+    position: absolute;
+    color: #fff;
+    background: -webkit-gradient(linear, left top, right top, from(hsl(269, calc(var(--saturation-factor, 1)*52.7%), 52.7%)), to(hsl(325, calc(var(--saturation-factor, 1)*31.7%), 51.8%)));
+    background: linear-gradient(90deg, hsl(269, calc(var(--saturation-factor, 1)*52.7%), 52.7%), hsl(325, calc(var(--saturation-factor, 1)*31.7%), 51.8%))
+}
+
 .stickersImage-3o0IKJ {
     width: 222px
 }
@@ -97868,6 +97898,7 @@ strong {
     width: 116px
 }
 
+.remixingImage-XU_W95,
 .soundboardImage-2eOE50,
 .superReactionsImage-cyqMzO {
     height: 132px
@@ -161361,4 +161392,4 @@ html .invoiceCancelRow-dVOR64 {
     flex-direction: column
 }
 
-/*# sourceMappingURL=40532.53c9c5314921befab334.css.map*/
+/*# sourceMappingURL=40532.5c77dd32664a2c5580d2.css.map*/
