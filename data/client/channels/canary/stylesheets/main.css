@@ -132228,6 +132228,36 @@ html .invoiceCancelRow-3s2UuC {
     cursor: pointer
 }
 
+.container-3JugSj {
+    border-radius: 8px;
+    padding: 10px;
+    background-color: var(--background-modifier-hover);
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center
+}
+
+.dot-22hG7J {
+    width: 4px;
+    height: 4px;
+    border-radius: 50%;
+    background-color: var(--interactive-muted)
+}
+
+.fileIcon-17zbBG {
+    color: var(--interactive-muted)
+}
+
+.fileName-10UGB- {
+    max-width: 96px;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden
+}
+
 .container-12qbdY {
     background-color: var(--background-primary);
     padding-top: 16px
@@ -132358,25 +132388,6 @@ html .invoiceCancelRow-3s2UuC {
     flex-direction: column
 }
 
-.attachmentTag-2lN-CJ {
-    border-radius: 8px;
-    padding: 10px;
-    background-color: var(--background-modifier-hover);
-    display: -webkit-inline-box;
-    display: -ms-inline-flexbox;
-    display: inline-flex;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center
-}
-
-.attachmentTagDot-2nO-Jm {
-    width: 4px;
-    height: 4px;
-    border-radius: 50%;
-    background-color: var(--interactive-muted)
-}
-
 .attachmentGrid-294SZw {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -132384,17 +132395,6 @@ html .invoiceCancelRow-3s2UuC {
     gap: 10px;
     -ms-flex-wrap: wrap;
     flex-wrap: wrap
-}
-
-.attachmentIcon-32EgFZ {
-    color: var(--interactive-muted)
-}
-
-.attachmentFileName-2HXfGw {
-    max-width: 96px;
-    white-space: nowrap;
-    text-overflow: ellipsis;
-    overflow: hidden
 }
 
 .headerImage-RAozSF {
@@ -132500,12 +132500,6 @@ html .invoiceCancelRow-3s2UuC {
 
 .attachmentRow-12qRou:not(:first-child) {
     border-top: 1px solid var(--background-modifier-hover)
-}
-
-.attachmentFile-2AwJCM {
-    padding: 10px;
-    background-color: var(--background-modifier-hover);
-    border-radius: var(--radius-sm)
 }
 
 .attachmentDownloadButton-ikRw1y {
@@ -161503,4 +161497,4 @@ html .invoiceCancelRow-dVOR64 {
     flex-direction: column
 }
 
-/*# sourceMappingURL=40532.0b84118f3827f78d1382.css.map*/
+/*# sourceMappingURL=40532.181c7cc5a1d26f4fb8d2.css.map*/
