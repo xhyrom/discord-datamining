@@ -32652,6 +32652,136 @@ img[alt] {
     color: var(--interactive-normal)
 }
 
+.wrapper-3mwv0u {
+    position: relative
+}
+
+.highlight-2YSKHT {
+    pointer-events: none;
+    position: absolute;
+    z-index: 2
+}
+
+.highlightRing-2ufdvU {
+    position: absolute;
+    border-radius: 8px;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0
+}
+
+.guildBostMarketingPageHighlightBase-1j__Ya,
+.highlightBase-1Yt4M6 {}
+
+.guildBoostMarketingpageHighlightAccent-1F1tqx,
+.highlightAccent-3GlreQ {
+    -webkit-mask-image: -webkit-gradient(linear, left top, right top, from(#000), to(transparent));
+    -webkit-mask-image: linear-gradient(90deg, #000, transparent);
+    mask-image: -webkit-gradient(linear, left top, right top, from(#000), to(transparent));
+    mask-image: linear-gradient(90deg, #000, transparent)
+}
+
+.guildBostMarketingPageHighlightBase-1j__Ya {
+    border: 2px solid var(--premium-tier-2-pink)
+}
+
+.guildBoostMarketingpageHighlightAccent-1F1tqx {
+    border: 2px solid var(--premium-tier-2-purple)
+}
+
+.highlightBase-1Yt4M6 {
+    border: 2px solid var(--premium-tier-2-pink-for-gradients)
+}
+
+.highlightAccent-3GlreQ {
+    border: 2px solid var(--premium-tier-2-purple-for-gradients)
+}
+
+.children-1577pq {
+    position: relative
+}
+
+.guidedTutorialWrapper-3S5Lrt {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 8px 36px 10px;
+    text-align: center;
+    width: 280px
+}
+
+.guidedTutorialImage-RA7nxq {
+    display: block;
+    height: 60px;
+    margin: 0 auto 18px
+}
+
+.guidedTutorialHeading-3W6JyE {
+    margin-bottom: 8px
+}
+
+.guidedTutorialBody-208IUF {
+    margin-bottom: 24px
+}
+
+.guidedTutorialActions-Ec78EP {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center
+}
+
+.progressBarCount-1mKeiv {
+    margin-bottom: 6px
+}
+
+.progressBarContainer-8uRMKY {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 100%;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    margin-bottom: 24px
+}
+
+.progressBarInner-tOzuGc,
+.progressBarOuter-1w1erL {
+    height: 6px;
+    border-radius: 8px
+}
+
+.progressBarOuter-1w1erL {
+    width: 100px;
+    background: var(--background-modifier-active)
+}
+
+.premiumGradient-2CbSRV {
+    background: linear-gradient(95.07deg, var(--premium-tier-2-purple-for-gradients), var(--premium-tier-2-purple-for-gradients-2) 49.96%, var(--premium-tier-2-pink-for-gradients) 95.93%), var(--brand-500)
+}
+
+.progressBarInner-tOzuGc {}
+
+.closeButton-2rH2KZ {
+    position: absolute;
+    right: 19px;
+    top: 19px;
+    cursor: pointer
+}
+
+.primaryCta-2Xbcj- {}
+
+.backButton-e5XG2b {
+    color: var(--interactive-normal)
+}
+
+.guidedTooltip-S-ADA8 {
+    max-width: none
+}
+
 .wrapper-3ViBpj {
     background: linear-gradient(45deg, var(--guild-boosting-blue), var(--guild-boosting-purple));
     border-radius: 8px;
@@ -42794,121 +42924,6 @@ html .progress-2Otdc- {
     -ms-flex: 1 1 auto;
     flex: 1 1 auto;
     line-height: 22px
-}
-
-.wrapper-3mwv0u {
-    position: relative
-}
-
-.highlight-2YSKHT {
-    pointer-events: none;
-    position: absolute;
-    z-index: 2
-}
-
-.highlightRing-2ufdvU {
-    position: absolute;
-    border-radius: 8px;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0
-}
-
-.highlightBase-1Yt4M6 {
-    border: 2px solid var(--premium-tier-2-pink-for-gradients)
-}
-
-.highlightAccent-3GlreQ {
-    border: 2px solid var(--premium-tier-2-purple-for-gradients);
-    -webkit-mask-image: -webkit-gradient(linear, left top, right top, from(#000), to(transparent));
-    -webkit-mask-image: linear-gradient(90deg, #000, transparent);
-    mask-image: -webkit-gradient(linear, left top, right top, from(#000), to(transparent));
-    mask-image: linear-gradient(90deg, #000, transparent)
-}
-
-.children-1577pq {
-    position: relative
-}
-
-.guidedTutorialWrapper-3S5Lrt {
-    -webkit-box-sizing: border-box;
-    box-sizing: border-box;
-    padding: 8px 36px 10px;
-    text-align: center;
-    width: 280px
-}
-
-.guidedTutorialImage-RA7nxq {
-    display: block;
-    height: 60px;
-    margin: 0 auto 18px
-}
-
-.guidedTutorialHeading-3W6JyE {
-    margin-bottom: 8px
-}
-
-.guidedTutorialBody-208IUF {
-    margin-bottom: 24px
-}
-
-.guidedTutorialActions-Ec78EP {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    justify-content: center
-}
-
-.progressBarCount-1mKeiv {
-    margin-bottom: 6px
-}
-
-.progressBarContainer-8uRMKY {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    width: 100%;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    justify-content: center;
-    margin-bottom: 24px
-}
-
-.progressBarInner-tOzuGc,
-.progressBarOuter-1w1erL {
-    height: 6px;
-    border-radius: 8px
-}
-
-.progressBarOuter-1w1erL {
-    width: 100px;
-    background: var(--background-modifier-active)
-}
-
-.premiumGradient-2CbSRV {
-    background: linear-gradient(95.07deg, var(--premium-tier-2-purple-for-gradients), var(--premium-tier-2-purple-for-gradients-2) 49.96%, var(--premium-tier-2-pink-for-gradients) 95.93%), var(--brand-500)
-}
-
-.progressBarInner-tOzuGc {}
-
-.closeButton-2rH2KZ {
-    position: absolute;
-    right: 19px;
-    top: 19px;
-    cursor: pointer
-}
-
-.primaryCta-2Xbcj- {}
-
-.backButton-e5XG2b {
-    color: var(--interactive-normal)
-}
-
-.guidedTooltip-S-ADA8 {
-    max-width: none
 }
 
 .guildIcon-2SUGiq {
@@ -161410,4 +161425,4 @@ html .invoiceCancelRow-dVOR64 {
     flex-direction: column
 }
 
-/*# sourceMappingURL=40532.c0ec31365bdce94c340f.css.map*/
+/*# sourceMappingURL=40532.893e85aba25605d5c558.css.map*/
