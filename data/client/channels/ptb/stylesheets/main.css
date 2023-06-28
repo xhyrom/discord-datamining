@@ -28087,6 +28087,19 @@ img[alt] {
     display: flex
 }
 
+.copiableContainer-3dqyhP {
+    cursor: pointer
+}
+
+.paymentInfo-F_YvXL {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between
+}
+
 .paymentPane-ut5qKZ {
     border-radius: 5px;
     overflow: hidden
@@ -161497,4 +161510,4 @@ html .invoiceCancelRow-dVOR64 {
     flex-direction: column
 }
 
-/*# sourceMappingURL=40532.181c7cc5a1d26f4fb8d2.css.map*/
+/*# sourceMappingURL=40532.54ff5578acecf5b10b60.css.map*/
