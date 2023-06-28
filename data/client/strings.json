@@ -4479,6 +4479,8 @@
   "TWO_FA_WEBAUTHN_ACTION": "\"Use security key\"",
   "TWO_FA_WEBAUTHN_SWITCH_TOTP": "\"Enter a 2FA code instead\"",
   "TWO_FA_WEBAUTHN_TITLE": "\"Security keys\"",
+  "TWO_FA_WEBAUTHN_VIEW_KEYS_TITLE": "\"Your Keys\"",
+  "TWO_FA_WEBAUTHN_REGISTER_KEY_PLACEHOLDER_NAME": "\"My Key\"",
   "TWO_FA_WEBAUTHN_DESCRIPTION": "\"Add an additional layer of protection to your account by requiring access to physical device or biometric sensor.\"",
   "TWO_FA_WEBAUTHN_REGISTER": "\"Register a security key\"",
   "TWO_FA_WEBAUTHN_INTERACT": "\"Interact with your security key\"",
