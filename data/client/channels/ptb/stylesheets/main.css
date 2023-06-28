@@ -132447,6 +132447,10 @@ html .invoiceCancelRow-3s2UuC {
     height: 146px
 }
 
+.modal-3ahUMe {
+    border-radius: 12px
+}
+
 .header-3nTh_Z {
     background-color: var(--background-secondary-alt);
     padding: 16px
@@ -132455,7 +132459,9 @@ html .invoiceCancelRow-3s2UuC {
 .headerImage-iNMTOV {
     height: 66px;
     width: 119px;
-    border-radius: var(--radius-sm)
+    border-radius: var(--radius-sm);
+    -o-object-fit: cover;
+    object-fit: cover
 }
 
 .headerTextColumn-3Qhrw2 {
@@ -161497,4 +161503,4 @@ html .invoiceCancelRow-dVOR64 {
     flex-direction: column
 }
 
-/*# sourceMappingURL=40532.135ee08d467298de48f3.css.map*/
+/*# sourceMappingURL=40532.0b84118f3827f78d1382.css.map*/
