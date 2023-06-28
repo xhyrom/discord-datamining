@@ -3167,6 +3167,7 @@
   "DEVELOPER_APPLICATION_TEST_MODE_INVALID": "\"Invalid application ID\"",
   "DEVELOPER_APPLICATION_TEST_MODE_NOTE": "\"Enter your Discord application ID to enable test mode for that application.\"",
   "DEVELOPER_ACTIVITY_SHELF": "\"Developer Activity Shelf\"",
+  "DEVELOPER_ACTIVITY_SHELF_ENABLE": "\"Enable Developer Activity Shelf\"",
   "DEVELOPER_ACTIVITY_SHELF_NOTE": "\"When enabled, the activity shelf will show all activities your user and user's teams have access to.\"",
   "USER_SETTINGS_APPEARANCE_PREVIEW_MESSAGE_1": "\"Look at me I'm a beautiful butterfly\"",
   "USER_SETTINGS_APPEARANCE_PREVIEW_MESSAGE_2_LIGHT": "\"Fluttering in the sunlight :sun_with_face:\"",
