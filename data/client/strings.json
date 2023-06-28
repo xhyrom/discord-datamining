@@ -7178,6 +7178,7 @@
   "REDIRECTED_CALLBACK_PENDING": "\"Connecting your payment source. Your payment method will show up in Billing Settings once confirmed.\"",
   "REDIRECTED_PAYMENT_METHOD_CONFIRMATION_CALLBACK_SUCCESS": "\"Payment method confirmed. Return to **Discord**.\"",
   "REDIRECTED_CALLBACK_ERROR": "\"Something went wrong, try again.\"",
+  "CARD_NUMBER": "\"Card Number\"",
   "CREDIT_CARD_NUMBER": "\"Credit Card Number\"",
   "CREDIT_CARD_CVC": "\"CVC\"",
   "CREDIT_CARD_SECURITY_CODE": "\"Security Code\"",
