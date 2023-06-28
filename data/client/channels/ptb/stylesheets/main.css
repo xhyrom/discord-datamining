@@ -154430,6 +154430,30 @@ html .invoiceCancelRow-3s2UuC {
     margin-top: 8px
 }
 
+.pill-2PXC_N {
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    background: var(--background-secondary-alt);
+    border-radius: 8px;
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    gap: 4px;
+    padding: 4px 8px
+}
+
+.pillText-ZquA8G {
+    max-width: 150px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap
+}
+
+.pillIcon-1O5mAl {
+    width: 16px
+}
+
 .deviceOptionCertified-3nW5Y7 {
     width: 84px;
     height: 20px;
@@ -161510,4 +161534,4 @@ html .invoiceCancelRow-dVOR64 {
     flex-direction: column
 }
 
-/*# sourceMappingURL=40532.54ff5578acecf5b10b60.css.map*/
+/*# sourceMappingURL=40532.e63431ea8c416e11b580.css.map*/
