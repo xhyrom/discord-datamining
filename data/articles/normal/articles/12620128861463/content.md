@@ -101,7 +101,7 @@
 <p id="docs-internal-guid-8ea146ab-7fff-f4a3-1c79-c3718f4cfeb9">We are rolling out this change over the coming months. You will be notified in the app when you are eligible to pick a new username and set a display name. This app notification will walk you through each step of the change. </p>
 <p>In terms of rollout, we’re starting with access to owners of partner and verified servers, then to all users based on the age of their account in the coming months, starting with 2015. Current Nitro subscribers paying for the ability to customize their <span id="docs-internal-guid-1324de68-7fff-80f7-582e-731213977fb4">Discord tag/</span>discriminator that were registered on or before March 1, 2023 will also be given early access. This includes users that were on a Nitro or Nitro Classic plan on March 1, 2023, and remained active on either of those plans throughout the months leading to the new username rollout.</p>
 <h1 id="h_01GZHKGNP2FYNFSAJB3DW2E4PN">How to Change Your Username and Set a Display Name</h1>
-<h3><span style="color: #434343;">Note: Your Discord account must be verified by email or phone number in order to claim a new username. Learn more about account verification <a href="https://support.discord.com/hc/en-us/articles/6181726888215" target="_blank" rel="noopener">here</a>.</span></h3>
+<h3><span style="color: #434343;">Note: Your Discord account must be verified by email or phone number in order to claim a new username. Learn more about account verification <a href="https://support.discord.com/hc/en-us/articles/6181726888215" target="_blank" rel="noopener noreferrer">here</a>.</span></h3>
 <p><span id="docs-internal-guid-b29a0f33-7fff-2aa7-b2d3-87dc30bc4e40">When you are eligible to change your username, you will be notified in the app by a full-screen notification titled </span><strong>“Please update your username.”</strong> This takeover will walk you through each step of the change, which you can reference below.</p>
 <p class="wysiwyg-text-align-center"><img src="https://support.discord.com/hc/article_attachments/14484943310871" alt="final-username-change-flow.png"></p>
 <p id="docs-internal-guid-5d57cf5f-7fff-7185-1167-e596bf327b25"><span id="docs-internal-guid-70400203-7fff-ac0f-df01-6f5ffc98a8c1">If you do not change your username at this time, you can always start the change later in your </span><strong>User Settings</strong>.</p>
@@ -174,7 +174,7 @@
 <p><strong>Q. What if the username I want is taken?</strong></p>
 <p>A. <span id="docs-internal-guid-9c7d5d68-7fff-277c-e535-fb03b493721b">If the username you want is taken, you can add numbers, underscores ( _ ), and periods ( . ) to embellish your username. Remember: no two users can share the same username, so your username is unique to you!</span></p>
 <p><strong>Q. How often can I change my Username?</strong></p>
-<p>A. You can change your username up to 2 times per hour.</p>
+<p>A. You can change your username up to 2 times per week.</p>
 <p><strong>Q. How often can I change my Display Name?</strong></p>
 <p>A. You can change your Display Name whenever you want – even from one minute to the next.</p>
 <p><strong>Q. When can I update my username?</strong></p>
