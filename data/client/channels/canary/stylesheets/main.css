@@ -81990,6 +81990,11 @@ strong {
     margin-top: 2px
 }
 
+.topicDiv-2wZmYz.hoverable-1Uqwgy:hover .pencilIcon-25wkgL,
+.topicDiv-2wZmYz.hoverable-1Uqwgy:hover .topicText-1aI_uX {
+    color: var(--interactive-hover)
+}
+
 .topicText-1aI_uX {
     text-overflow: ellipsis;
     overflow: hidden
@@ -161534,4 +161539,4 @@ html .invoiceCancelRow-dVOR64 {
     flex-direction: column
 }
 
-/*# sourceMappingURL=40532.e63431ea8c416e11b580.css.map*/
+/*# sourceMappingURL=40532.a1d69521b61666d18e48.css.map*/
