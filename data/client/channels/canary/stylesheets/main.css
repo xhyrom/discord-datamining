@@ -29925,6 +29925,11 @@ img[alt] {
     padding: 4px 8px
 }
 
+.trialOfferText-3CadVA.tier0TrialOffer-2itity {
+    background-image: -webkit-gradient(linear, left top, right top, from(hsl(235, calc(var(--saturation-factor, 1)*85.6%), 64.7%)), to(hsl(202, calc(var(--saturation-factor, 1)*100%), 38%)));
+    background-image: linear-gradient(90deg, hsl(235, calc(var(--saturation-factor, 1)*85.6%), 64.7%), hsl(202, calc(var(--saturation-factor, 1)*100%), 38%))
+}
+
 .trialBadgeSparkles-IbG57b {
     position: absolute;
     left: 4px;
@@ -64805,6 +64810,47 @@ strong {
 
 .learnMore-15guln {
     margin-left: 3px
+}
+
+.ratingsSelector-YchmMh {
+    width: auto;
+    gap: 8px
+}
+
+.emoji-5r_S0Q {
+    background-position: 50%;
+    background-repeat: no-repeat;
+    padding: 12px 32px;
+    width: 90px;
+    height: 64px;
+    border: 2px solid var(--brand-500);
+    border-radius: 20px;
+    cursor: pointer;
+    -webkit-filter: grayscale(100%);
+    filter: grayscale(100%);
+    -webkit-transition: all .2s ease;
+    transition: all .2s ease;
+    -webkit-transition-property: -webkit-transform opacity filter;
+    transition-property: -webkit-transform opacity filter;
+    transition-property: transform opacity filter;
+    transition-property: transform opacity filter, -webkit-transform opacity filter
+}
+
+.emoji-5r_S0Q.selected-cqtpTK {
+    -webkit-filter: none;
+    filter: none
+}
+
+.emoji-5r_S0Q:hover {
+    background-color: var(--background-modifier-hover)
+}
+
+.emojiThumbsDown-sE22UY {
+    background-image: url(/assets/24632aeaea78f1e93941b4c149a8bf9f.svg)
+}
+
+.emojiThumbsUp-1qS_y4 {
+    background-image: url(/assets/642eef73cf98bf9e089be73eeab55a95.svg)
 }
 
 .icon-tZV_7s {
@@ -161597,4 +161643,4 @@ html .invoiceCancelRow-dVOR64 {
     flex-direction: column
 }
 
-/*# sourceMappingURL=40532.0d33db89c9a1d5326471.css.map*/
+/*# sourceMappingURL=40532.2711c72a42ebc467984a.css.map*/
