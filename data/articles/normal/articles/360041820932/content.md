@@ -1,14 +1,17 @@
-<p>We are required to strictly enforce our age limit for legal reasons and because of this, we will need to confirm your age if you intend to appeal. <br><br>If you are over the minimum age required for your country and have been locked out of the app due to an underage report, you can appeal by following the instructions below! </p>
-<h2>What do we need to unlock the account? </h2>
-<p><span class="wysiwyg-font-size-large"><strong>Step 1: <br></strong></span>Take a <strong>photo of yourself</strong> that includes yourself holding the following items:</p>
-<ol>
-    <li>A <span class="wysiwyg-color-blue"><strong>photo ID</strong></span> that contains your date of birth</li>
-    <li>A piece of paper that shows your <span class="wysiwyg-color-blue"><strong>full Discord Tag</strong> </span><em>(including your username and the last 4 digits following your username - ex: Wumpus#1234)</em>
+<p><span style="color: #2e3338;" data-darkreader-inline-color="">Due to legal reasons, we are required to strictly enforce our age limit. Because of this, we will need you to confirm your age if you intend to appeal</span></p>
+<p><span style="color: #2e3338;" data-darkreader-inline-color="">If you are over the minimum age required for your country and have been locked out of the app due to an underage report, you can appeal by following the instructions below.</span></p>
+<h1>What Do We Need To Unlock The Account? </h1>
+<p><span style="color: #2e3338;" data-darkreader-inline-color="">1.  </span><span style="color: #2e3338;" data-darkreader-inline-color="">Take a photo of yourself that includes yourself holding the following items:</span></p>
+<ul>
+    <li>
+        <span style="color: #2e3338;" data-darkreader-inline-color="">A </span><span style="color: #0000ff;" data-darkreader-inline-color="">photo ID</span><span style="color: #2e3338;" data-darkreader-inline-color=""> that contains your date of birth</span>
     </li>
-</ol>
-<p><span class="wysiwyg-font-size-large"><strong>Step 2: </strong></span></p>
-<p>Once you have taken the photo, submit a request to the Trust &amp; Safety team here: <a class="anchor-3Z-8Bb anchorUnderlineOnHover-2ESHQB" tabindex="0" title="https://dis.gd/request" href="https://dis.gd/request" target="_blank" rel="noreferrer noopener">https://dis.gd/request</a> and select <strong>"Update my age information"</strong> under the <strong><em>Report Type</em></strong> option.</p>
-<h3>
-    <strong>Note:</strong> <br>- All of the required information needs to be visible and readable in ONE photo.<br>- You must send the photo with the email address associated with your Discord account
-</h3>
+    <li>
+        <span style="color: #2e3338;" data-darkreader-inline-color="">A piece of paper that shows your </span><span style="color: #0000ff;" data-darkreader-inline-color="">full Discord Username </span><em><span style="color: #2e3338;" data-darkreader-inline-color="">(ex: Wumpus)</span></em>
+    </li>
+</ul>
+<p><span style="color: #2e3338;" data-darkreader-inline-color="">2. </span><span style="color: #2e3338;" data-darkreader-inline-color="">Once you have taken the photo, submit a request to the Trust &amp; Safety team here: </span><a href="https://dis.gd/request" target="_blank" rel="noopener">https://dis.gd/request</a><span style="color: #2e3338;" data-darkreader-inline-color=""> and select "Appeals, age update, or other questions" under the </span><em><span style="color: #2e3338;" data-darkreader-inline-color="">Report Type</span></em><span style="color: #2e3338;" data-darkreader-inline-color=""> option.</span></p>
+<h3><strong><span style="color: #104c32;" data-darkreader-inline-color="">Note:</span></strong></h3>
+<h3><strong><span style="color: #104c32;" data-darkreader-inline-color="">- All of the required information needs to be visible and readable in ONE photo.</span></strong></h3>
+<h3><strong><span style="color: #104c32;" data-darkreader-inline-color="">- You must send the photo with the email address associated with your Discord account</span></strong></h3>
 <h3><span class="wysiwyg-color-orange"><strong>The information you provide will only be used to verify your age and will not be used for any other purpose. </strong></span></h3>

@@ -21,7 +21,7 @@
 </ul>
 <h1 id="h_01H3MBQT5DJMFYWFZC9SE52DZ1">How to Edit Profiles Under User Settings</h1>
 <h3>
-    <span style="color: #434343;" data-darkreader-inline-color="">Looking to personalize your account identity in each of your servers? You must be a </span><a href="https://support.discord.com/hc/en-us/articles/115000435108" target="_blank" rel="noopener">Nitro</a><span style="color: #434343;" data-darkreader-inline-color=""> subscriber to unlock </span><a href="https://support.discord.com/hc/en-us/articles/4409388345495" target="_blank" rel="noopener">Server Profiles</a><span style="color: #434343;" data-darkreader-inline-color="">.</span>
+    <span style="color: #434343;" data-darkreader-inline-color="">Looking to personalize your account identity in each of your servers? You must be a </span><a href="https://support.discord.com/hc/en-us/articles/115000435108" target="_blank" rel="noopener noreferrer">Nitro</a><span style="color: #434343;" data-darkreader-inline-color=""> subscriber to unlock </span><a href="https://support.discord.com/hc/en-us/articles/4409388345495" target="_blank" rel="noopener noreferrer">Server Profiles</a><span style="color: #434343;" data-darkreader-inline-color="">.</span>
 </h3>
 <p>In order to change anything in your User Profile, you first need to access <strong>User Settings</strong>.</p>
 <h2 id="h_01H3MBQYKRKWTZNXSM1ZDKKQPG">Desktop</h2>
@@ -41,11 +41,11 @@
 <h1 id="h_01H3MBR8H9AJMP6J8F4G37MGR0">How to Customize your Profile</h1>
 <h2 id="h_01H3MBRCHQ4QMKR4AZ99ZSEKPP">Avatar</h2>
 <h3>
-    <a href="https://support.discord.com/hc/en-us/articles/115000435108" target="_blank" rel="noopener">Nitro</a><span style="color: #434343;" data-darkreader-inline-color=""> subscribers can upload animated GIFs as their profile avatar.</span>
+    <a href="https://support.discord.com/hc/en-us/articles/115000435108" target="_blank" rel="noopener noreferrer">Nitro</a><span style="color: #434343;" data-darkreader-inline-color=""> subscribers can upload animated GIFs as their profile avatar.</span>
 </h3>
 <p>After heading to your <strong>Profiles </strong>tab you can change your avatar via the <strong>Change Avatar</strong> button or by tapping on your current avatar.</p>
 <p class="wysiwyg-text-align-center"><img src="https://support.discord.com/hc/article_attachments/15527725413399" alt="profiles_customize_avatar.png" width="622" height="445"></p>
-<p>Here you can either upload your own image or choose a GIF (if you’re <a href="https://support.discord.com/hc/en-us/articles/115000435108" target="_blank" rel="noopener">Nitro</a> subscriber) as your Avatar. Supported file types include PNG and GIFs. </p>
+<p>Here you can either upload your own image or choose a GIF (if you’re <a href="https://support.discord.com/hc/en-us/articles/115000435108" target="_blank" rel="noopener noreferrer">Nitro</a> subscriber) as your Avatar. Supported file types include PNG and GIFs. </p>
 <p class="wysiwyg-text-align-center"><img src="https://support.discord.com/hc/article_attachments/15527725416087" alt="profiles_customize_avatar_upload.png"></p>
 <p>After uploading your image or selecting your chosen GIF, you can then crop the image to fit your desired look for your avatar or tap on <strong>Skip</strong> to skip this step. </p>
 <p class="wysiwyg-text-align-center"><img src="https://support.discord.com/hc/article_attachments/15527725418135" alt="profiles_avatar_crop.png" width="529" height="528"></p>
@@ -69,7 +69,7 @@
 <p class="wysiwyg-text-align-center"><img src="https://support.discord.com/hc/article_attachments/15527697917079" alt="about_me_settings_preview.png" width="319" height="532"></p>
 <h3 id="h_01H3MBRNC0NWF6G35ZE3D76DEM"><span style="color: #434343;" data-darkreader-inline-color="">Pronouns</span></h3>
 <h3><span style="color: #434343;" data-darkreader-inline-color="">This feature is gradually rolling out to everyone.</span></h3>
-<p>You can add your preferred pronouns in the <strong>Pronouns </strong>section. Only plain text can be used here (no emojis, links, or markdown text).</p>
+<p>You can add your preferred pronouns in the <strong>Pronouns </strong>section. </p>
 <p class="wysiwyg-text-align-center"><img src="https://support.discord.com/hc/article_attachments/15527697922583" alt="profiles_pronouns.png"></p>
 <p>After filling out your preferred pronouns, you can press on <strong>Save </strong>to save changes.</p>
 <h2 id="h_01H3MBRVTWGPMFXVA0P26Z1T3F">Banner</h2>
