@@ -3681,25 +3681,6 @@
   {
     "data": {
       "kind": "user",
-      "id": "2022-01_pronouns",
-      "label": "Pronouns in Profile",
-      "description": [
-        "Control",
-        "Treatment 1: Show Pronouns"
-      ],
-      "hash": 1176769702,
-      "buckets": [
-        0,
-        1
-      ],
-      "config_keys": [
-        "showPronouns"
-      ]
-    }
-  },
-  {
-    "data": {
-      "kind": "user",
       "id": "2023-05_inventory_guild_packs",
       "label": "Inventory Guild Packs Experiment",
       "description": [
