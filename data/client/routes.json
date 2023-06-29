@@ -204,13 +204,6 @@
     "url": "/users/@me/:param/:param/ack",
     "allowed_methods": null
   },
-  "BULK_ACK": {
-    "url": "/read-states/ack-bulk",
-    "allowed_methods": [
-      "OPTIONS",
-      "POST"
-    ]
-  },
   "GUILD_CHANNELS": {
     "url": "/guilds/:param/channels",
     "allowed_methods": [
