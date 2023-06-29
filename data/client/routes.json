@@ -1063,6 +1063,10 @@
     "url": "/channels/:param/icons/:param.jpg",
     "allowed_methods": null
   },
+  "CHANNEL_CONVERT": {
+    "url": "/channels/:param/convert",
+    "allowed_methods": null
+  },
   "CHANNEL_ACK": {
     "url": "/channels/:param/messages/ack",
     "allowed_methods": [
@@ -2548,6 +2552,14 @@
   },
   "STORE_PUBLISHED_LISTINGS_SKUS": {
     "url": "/store/published-listings/skus",
+    "allowed_methods": [
+      "GET",
+      "HEAD",
+      "OPTIONS"
+    ]
+  },
+  "STORE_PUBLISHED_LISTINGS_SKU": {
+    "url": "/store/published-listings/skus/:param",
     "allowed_methods": [
       "GET",
       "HEAD",
