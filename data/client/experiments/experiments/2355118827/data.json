@@ -24,14 +24,14 @@
             "rollout": [
               {
                 "start": 0,
-                "end": 100
+                "end": 2000
               }
             ]
           },
           "none": {
             "rollout": [
               {
-                "start": 200,
+                "start": 2000,
                 "end": 10000
               }
             ]
@@ -40,7 +40,7 @@
         "filters": []
       }
     ],
-    "revision": 2,
+    "revision": 3,
     "overrides": {
       "1": [
         "651595875897835540",
