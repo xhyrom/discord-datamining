@@ -4212,6 +4212,13 @@
       "PUT"
     ]
   },
+  "INVENTORY_UPDATE_SETTINGS": {
+    "url": "/guilds/:param/inventory/settings",
+    "allowed_methods": [
+      "OPTIONS",
+      "PATCH"
+    ]
+  },
   "GUILD_MEMBERS_UNUSUAL_DM_ACTIVITY": {
     "url": "/guilds/:param/members/unusual-dm-activity",
     "allowed_methods": [
