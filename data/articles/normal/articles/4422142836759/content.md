@@ -39,6 +39,7 @@
     <li><a href="https://support.discord.com/hc/en-us/articles/7552538635031" target="_blank" rel="noopener noreferrer">Know What I Meme</a></li>
     <li><a href="https://garticphone.com/discord-help" target="_blank" rel="noopener noreferrer">Gartic Phone</a></li>
     <li><a href="https://support.discord.com/hc/en-us/articles/14042410493847" target="_blank" rel="noopener noreferrer">Jamspace</a></li>
+    <li><a href="https://fundaygames.dk/discord/color-together-play-guide" target="_blank" rel="noopener">Color Together</a></li>
 </ol>
 <h3 id="docs-internal-guid-a2f3a887-7fff-434b-e43e-040db67a74ca"><span style="color: #434343;" data-darkreader-inline-color="">Activities are now available for everyone to play! </span></h3>
 <h1 id="h_01GSX5FCYNMF5PCGKNNA6XFW29">How do I start an Activity?</h1>
