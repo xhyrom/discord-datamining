@@ -29925,6 +29925,11 @@ img[alt] {
     padding: 4px 8px
 }
 
+.trialOfferText-3CadVA.tier0TrialOffer-2itity {
+    background-image: -webkit-gradient(linear, left top, right top, from(hsl(235, calc(var(--saturation-factor, 1)*85.6%), 64.7%)), to(hsl(202, calc(var(--saturation-factor, 1)*100%), 38%)));
+    background-image: linear-gradient(90deg, hsl(235, calc(var(--saturation-factor, 1)*85.6%), 64.7%), hsl(202, calc(var(--saturation-factor, 1)*100%), 38%))
+}
+
 .trialBadgeSparkles-IbG57b {
     position: absolute;
     left: 4px;
@@ -161597,4 +161602,4 @@ html .invoiceCancelRow-dVOR64 {
     flex-direction: column
 }
 
-/*# sourceMappingURL=40532.0d33db89c9a1d5326471.css.map*/
+/*# sourceMappingURL=40532.3d8dfa1cabb8ad61afa1.css.map*/
