@@ -1,20 +1,7 @@
 {
   "data": {
     "kind": "guild",
-    "id": "2022-10_text_in_stage",
-    "label": "Text-In-Stage",
-    "description": [
-      "Control",
-      "Treatment 1: Enable Text-In-Stage"
-    ],
-    "hash": 848173753,
-    "buckets": [
-      0,
-      1
-    ],
-    "config_keys": [
-      "enabled"
-    ]
+    "hash": 848173753
   },
   "rollout": {
     "populations": [

@@ -1,13 +1,13 @@
 {
   "data": {
     "kind": "user",
-    "id": "2023-03_activities_release_tools",
-    "label": "Activities Release Tools",
+    "id": "2023-06_h265_macos",
+    "label": "Test how h265 works on macos",
     "description": [
       "Control",
-      "Treatment 1: enable activities release tools"
+      "Treatment 1: Calling with H.265"
     ],
-    "hash": 3482834131,
+    "hash": 4148889709,
     "buckets": [
       0,
       1

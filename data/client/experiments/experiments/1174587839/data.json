@@ -1,14 +1,16 @@
 {
   "data": {
     "kind": "user",
-    "id": "2023-04_day_0_nux",
+    "id": "2023-07_day_0_nux",
     "label": "Mobile Redesign Day 0 NUX",
     "description": [
       "Control",
-      "Treatment 1: Enabled"
+      "Treatment 0: Control",
+      "Treatment 1: Day 0 Enabled"
     ],
-    "hash": 3498213737,
+    "hash": 1174587839,
     "buckets": [
+      0,
       0,
       1
     ],

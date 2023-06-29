@@ -5,16 +5,18 @@
     "label": "Minimum Jitter Buffer Level",
     "description": [
       "Control",
-      "Treatment 1: Minimum Jitter Buffer Level = 40ms",
-      "Treatment 2: Minimum Jitter Buffer Level = 60ms",
-      "Treatment 3: Minimum Jitter Buffer Level = 80ms"
+      "Treatment 1: Minimum Jitter Buffer Level = 80ms",
+      "Treatment 2: Minimum Jitter Buffer Level = 120ms",
+      "Treatment 3: Minimum Jitter Buffer Level = 160ms",
+      "Treatment 4: Minimum Jitter Buffer Level = 200ms"
     ],
     "hash": 1077571921,
     "buckets": [
       0,
       1,
       2,
-      3
+      3,
+      4
     ],
     "config_keys": [
       "enabled"

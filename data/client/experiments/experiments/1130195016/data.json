@@ -1,0 +1,19 @@
+{
+  "data": {
+    "kind": "user",
+    "id": "2023-06_hide_thread_count",
+    "label": "Hide thread count",
+    "description": [
+      "Control",
+      "Treatment 1: Hide thread count"
+    ],
+    "hash": 1130195016,
+    "buckets": [
+      0,
+      1
+    ],
+    "config_keys": [
+      "enabled"
+    ]
+  }
+}

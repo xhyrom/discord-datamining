@@ -19,7 +19,9 @@
       100
     ],
     "config_keys": [
-      "enabled"
+      "canUseCollectibles",
+      "canUseAvatarDecorations",
+      "canUploadAvatarDecorations"
     ]
   }
 }

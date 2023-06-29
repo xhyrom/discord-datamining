@@ -5,7 +5,6 @@
     "label": "Tabs V2 - Curry Existing Users",
     "description": [
       "Control",
-      "Treatment 1: Combine Messages and Guilds",
       "Treatment 2: App Navbar Always Visible",
       "Treatment 3: App Navbar Always Visible + Keep Channel",
       "Treatment 4: Recent channels",
@@ -15,7 +14,6 @@
     "hash": 4015496517,
     "buckets": [
       0,
-      1,
       2,
       3,
       4,

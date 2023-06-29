@@ -1,0 +1,19 @@
+{
+  "data": {
+    "kind": "user",
+    "id": "2023-06_app_directory_on_web",
+    "label": "App Directory on Web",
+    "description": [
+      "Control",
+      "Treatment 1: Logged-Out Access to App Directory"
+    ],
+    "hash": 2950854840,
+    "buckets": [
+      0,
+      1
+    ],
+    "config_keys": [
+      "enabled"
+    ]
+  }
+}

@@ -1266,6 +1266,8 @@
                 "786557653924708373",
                 "1075932456198352918",
                 "1079876496493121558",
+                "1105936951355388056",
+                "613425648685547541",
                 "1011482947343372319",
                 "1080899969243943072",
                 "679875946597056683",
@@ -1387,11 +1389,31 @@
   {
     "data": {
       "kind": "user",
+      "id": "2023-07_day_0_nux",
+      "label": "Mobile Redesign Day 0 NUX",
+      "description": [
+        "Control",
+        "Treatment 0: Control",
+        "Treatment 1: Day 0 Enabled"
+      ],
+      "hash": 1174587839,
+      "buckets": [
+        0,
+        0,
+        1
+      ],
+      "config_keys": [
+        "enabled"
+      ]
+    }
+  },
+  {
+    "data": {
+      "kind": "user",
       "id": "2023-06_mobile_redesign_curry_existing_users",
       "label": "Tabs V2 - Curry Existing Users",
       "description": [
         "Control",
-        "Treatment 1: Combine Messages and Guilds",
         "Treatment 2: App Navbar Always Visible",
         "Treatment 3: App Navbar Always Visible + Keep Channel",
         "Treatment 4: Recent channels",
@@ -1401,7 +1423,6 @@
       "hash": 4015496517,
       "buckets": [
         0,
-        1,
         2,
         3,
         4,
@@ -1420,7 +1441,6 @@
       "label": "Tabs V2 - Curry New Users",
       "description": [
         "Control",
-        "Treatment 1: Combine Messages and Guilds",
         "Treatment 2: App Navbar Always Visible",
         "Treatment 3: App Navbar Always Visible + Keep Channel",
         "Treatment 4: Recent channels",
@@ -1430,7 +1450,6 @@
       "hash": 2373630185,
       "buckets": [
         0,
-        1,
         2,
         3,
         4,
@@ -1544,16 +1563,18 @@
       "label": "Minimum Jitter Buffer Level",
       "description": [
         "Control",
-        "Treatment 1: Minimum Jitter Buffer Level = 40ms",
-        "Treatment 2: Minimum Jitter Buffer Level = 60ms",
-        "Treatment 3: Minimum Jitter Buffer Level = 80ms"
+        "Treatment 1: Minimum Jitter Buffer Level = 80ms",
+        "Treatment 2: Minimum Jitter Buffer Level = 120ms",
+        "Treatment 3: Minimum Jitter Buffer Level = 160ms",
+        "Treatment 4: Minimum Jitter Buffer Level = 200ms"
       ],
       "hash": 1077571921,
       "buckets": [
         0,
         1,
         2,
-        3
+        3,
+        4
       ],
       "config_keys": [
         "enabled"
@@ -1648,6 +1669,25 @@
         "Treatment 1: Calling with H.265"
       ],
       "hash": 2838233237,
+      "buckets": [
+        0,
+        1
+      ],
+      "config_keys": [
+        "enabled"
+      ]
+    }
+  },
+  {
+    "data": {
+      "kind": "user",
+      "id": "2023-06_h265_macos",
+      "label": "Test how h265 works on macos",
+      "description": [
+        "Control",
+        "Treatment 1: Calling with H.265"
+      ],
+      "hash": 4148889709,
       "buckets": [
         0,
         1
@@ -1775,25 +1815,6 @@
         2,
         3,
         4
-      ],
-      "config_keys": [
-        "enabled"
-      ]
-    }
-  },
-  {
-    "data": {
-      "kind": "user",
-      "id": "2023-04_day_0_nux",
-      "label": "Mobile Redesign Day 0 NUX",
-      "description": [
-        "Control",
-        "Treatment 1: Enabled"
-      ],
-      "hash": 3498213737,
-      "buckets": [
-        0,
-        1
       ],
       "config_keys": [
         "enabled"
@@ -2185,25 +2206,6 @@
         "Treatment 1: Inline sending preview is enabled on mobile (both iOS and Android)"
       ],
       "hash": 1582099574,
-      "buckets": [
-        0,
-        1
-      ],
-      "config_keys": [
-        "enabled"
-      ]
-    }
-  },
-  {
-    "data": {
-      "kind": "user",
-      "id": "2023-03_activities_release_tools",
-      "label": "Activities Release Tools",
-      "description": [
-        "Control",
-        "Treatment 1: enable activities release tools"
-      ],
-      "hash": 3482834131,
       "buckets": [
         0,
         1
@@ -2969,151 +2971,6 @@
   },
   {
     "data": {
-      "kind": "guild",
-      "id": "2022-10_text_in_stage",
-      "label": "Text-In-Stage",
-      "description": [
-        "Control",
-        "Treatment 1: Enable Text-In-Stage"
-      ],
-      "hash": 848173753,
-      "buckets": [
-        0,
-        1
-      ],
-      "config_keys": [
-        "enabled"
-      ]
-    },
-    "rollout": {
-      "populations": [
-        {
-          "buckets": {
-            "1": {
-              "rollout": [
-                {
-                  "start": 0,
-                  "end": 10000
-                }
-              ]
-            }
-          },
-          "filters": [
-            {
-              "type": "guild_has_feature",
-              "features": [
-                "COMMUNITY"
-              ]
-            },
-            {
-              "type": "guild_in_range_by_hash",
-              "hash_key": 848173753,
-              "target": 10000
-            }
-          ]
-        },
-        {
-          "buckets": {
-            "none": {
-              "rollout": [
-                {
-                  "start": 0,
-                  "end": 10000
-                }
-              ]
-            }
-          },
-          "filters": [
-            {
-              "type": "guild_has_feature",
-              "features": [
-                "COMMUNITY"
-              ]
-            }
-          ]
-        },
-        {
-          "buckets": {
-            "none": {
-              "rollout": [
-                {
-                  "start": 0,
-                  "end": 10000
-                }
-              ]
-            }
-          },
-          "filters": []
-        }
-      ],
-      "revision": 2,
-      "overrides": {},
-      "overrides_formatted": [
-        {
-          "buckets": {
-            "1": {
-              "rollout": [
-                {
-                  "start": 0,
-                  "end": 10000
-                }
-              ]
-            }
-          },
-          "filters": [
-            {
-              "type": "guild_has_feature",
-              "features": [
-                "INTERNAL_EMPLOYEE_ONLY"
-              ]
-            }
-          ]
-        },
-        {
-          "buckets": {
-            "1": {
-              "rollout": [
-                {
-                  "start": 0,
-                  "end": 10000
-                }
-              ]
-            }
-          },
-          "filters": [
-            {
-              "type": "guild_has_feature",
-              "features": [
-                "TEXT_IN_STAGE_ENABLED"
-              ]
-            }
-          ]
-        },
-        {
-          "buckets": {
-            "1": {
-              "rollout": [
-                {
-                  "start": 0,
-                  "end": 10000
-                }
-              ]
-            }
-          },
-          "filters": [
-            {
-              "type": "guild_ids",
-              "ids": [
-                "885418158788345897"
-              ]
-            }
-          ]
-        }
-      ]
-    }
-  },
-  {
-    "data": {
       "kind": "user",
       "id": "2023-03_pomelo_compatible_ux",
       "label": "Pomelo Compatibility",
@@ -3740,6 +3597,44 @@
   {
     "data": {
       "kind": "user",
+      "id": "2022-03_block_russian_purchases",
+      "label": "Block purchases based on country",
+      "description": [
+        "Control",
+        "Treatment 1: Payments Blocked"
+      ],
+      "hash": 3011681066,
+      "buckets": [
+        0,
+        1
+      ],
+      "config_keys": [
+        "paymentsBlocked"
+      ]
+    }
+  },
+  {
+    "data": {
+      "kind": "user",
+      "id": "2022-03_block_russian_purchases_desktop",
+      "label": "Block purchases based on country (desktop specific flags)",
+      "description": [
+        "Control",
+        "Treatment 1: Check Payment Source"
+      ],
+      "hash": 1814483290,
+      "buckets": [
+        0,
+        1
+      ],
+      "config_keys": [
+        "enabled"
+      ]
+    }
+  },
+  {
+    "data": {
+      "kind": "user",
       "id": "2023-05_collectibles",
       "label": "Collectibles",
       "description": [
@@ -3758,29 +3653,7 @@
         100
       ],
       "config_keys": [
-        "enabled"
-      ]
-    }
-  },
-  {
-    "data": {
-      "kind": "user",
-      "id": "2023-05_avatar_decorations",
-      "label": "Avatar Decorations Birthday 2023",
-      "description": [
-        "Control",
-        "Treatment 1: Allow use of avatar decorations nitro",
-        "Treatment 2: Allow use of avatar decorations non-nitro",
-        "Treatment 100: Debug"
-      ],
-      "hash": 3542432067,
-      "buckets": [
-        0,
-        1,
-        2,
-        100
-      ],
-      "config_keys": [
+        "canUseCollectibles",
         "canUseAvatarDecorations",
         "canUploadAvatarDecorations"
       ]
@@ -4043,44 +3916,6 @@
         "Treatment 1: Enabled"
       ],
       "hash": 853908483,
-      "buckets": [
-        0,
-        1
-      ],
-      "config_keys": [
-        "enabled"
-      ]
-    }
-  },
-  {
-    "data": {
-      "kind": "user",
-      "id": "2022-03_block_russian_purchases",
-      "label": "Block purchases based on country",
-      "description": [
-        "Control",
-        "Treatment 1: Payments Blocked"
-      ],
-      "hash": 3011681066,
-      "buckets": [
-        0,
-        1
-      ],
-      "config_keys": [
-        "paymentsBlocked"
-      ]
-    }
-  },
-  {
-    "data": {
-      "kind": "user",
-      "id": "2022-03_block_russian_purchases_desktop",
-      "label": "Block purchases based on country (desktop specific flags)",
-      "description": [
-        "Control",
-        "Treatment 1: Check Payment Source"
-      ],
-      "hash": 1814483290,
       "buckets": [
         0,
         1
@@ -4464,6 +4299,63 @@
   },
   {
     "data": {
+      "kind": "user",
+      "id": "2022-12_get_my_guilds_application_ids_endpoint",
+      "label": "Get My Guilds' Application IDs Endpoint Experiment",
+      "description": [
+        "Control",
+        "Treatment 1: Enabled"
+      ],
+      "hash": 3772658100,
+      "buckets": [
+        0,
+        1
+      ],
+      "config_keys": [
+        "enabled"
+      ]
+    }
+  },
+  {
+    "data": {
+      "kind": "user",
+      "id": "2023-02_app_directory_for_all_modal",
+      "label": "App Directory Upsell For All Modal",
+      "description": [
+        "Control",
+        "Treatment 1: Enabled"
+      ],
+      "hash": 968202795,
+      "buckets": [
+        0,
+        1
+      ],
+      "config_keys": [
+        "enabled"
+      ]
+    }
+  },
+  {
+    "data": {
+      "kind": "user",
+      "id": "2023-06_app_directory_on_web",
+      "label": "App Directory on Web",
+      "description": [
+        "Control",
+        "Treatment 1: Logged-Out Access to App Directory"
+      ],
+      "hash": 2950854840,
+      "buckets": [
+        0,
+        1
+      ],
+      "config_keys": [
+        "enabled"
+      ]
+    }
+  },
+  {
+    "data": {
       "kind": "guild",
       "id": "2023-04_fast_new_channels",
       "label": "Fast New Channels",
@@ -4526,44 +4418,6 @@
         ]
       },
       "overrides_formatted": []
-    }
-  },
-  {
-    "data": {
-      "kind": "user",
-      "id": "2022-12_get_my_guilds_application_ids_endpoint",
-      "label": "Get My Guilds' Application IDs Endpoint Experiment",
-      "description": [
-        "Control",
-        "Treatment 1: Enabled"
-      ],
-      "hash": 3772658100,
-      "buckets": [
-        0,
-        1
-      ],
-      "config_keys": [
-        "enabled"
-      ]
-    }
-  },
-  {
-    "data": {
-      "kind": "user",
-      "id": "2023-02_app_directory_for_all_modal",
-      "label": "App Directory Upsell For All Modal",
-      "description": [
-        "Control",
-        "Treatment 1: Enabled"
-      ],
-      "hash": 968202795,
-      "buckets": [
-        0,
-        1
-      ],
-      "config_keys": [
-        "enabled"
-      ]
     }
   },
   {
@@ -5285,6 +5139,14 @@
       "populations": [
         {
           "buckets": {
+            "1": {
+              "rollout": [
+                {
+                  "start": 9500,
+                  "end": 10000
+                }
+              ]
+            },
             "2": {
               "rollout": [
                 {
@@ -5313,7 +5175,7 @@
                 },
                 {
                   "start": 9000,
-                  "end": 10000
+                  "end": 9500
                 }
               ]
             }
@@ -5371,7 +5233,8 @@
             {
               "type": "guild_ids",
               "ids": [
-                "1103353437619503138"
+                "1103353437619503138",
+                "613425648685547541"
               ]
             }
           ]
@@ -5527,15 +5390,15 @@
       "revision": 0,
       "overrides": {
         "1": [
-          "651595875897835540",
           "963913819418161182",
-          "1082392097254023199",
           "1090311153802031315",
           "1042148168726487101",
           "816784679717044276",
           "803095016154071093",
           "612443491770957833",
           "706356477765353563",
+          "814669604840013874",
+          "997637077099364383",
           "443584877829554177",
           "844508269840957460",
           "756644176610721842",
@@ -6183,7 +6046,8 @@
         "1": [
           "651595875897835540",
           "1075135858732175371",
-          "667617745034280962"
+          "667617745034280962",
+          "981721840697360444"
         ]
       },
       "overrides_formatted": []
@@ -7050,7 +6914,8 @@
           "1115745220575887491",
           "1095810146761973830",
           "300748021300330497",
-          "1116006991505137734"
+          "1116006991505137734",
+          "172056827335409665"
         ]
       },
       "overrides_formatted": []
@@ -7471,6 +7336,25 @@
         0,
         1,
         2
+      ],
+      "config_keys": [
+        "enabled"
+      ]
+    }
+  },
+  {
+    "data": {
+      "kind": "user",
+      "id": "2023-06_hide_thread_count",
+      "label": "Hide thread count",
+      "description": [
+        "Control",
+        "Treatment 1: Hide thread count"
+      ],
+      "hash": 1130195016,
+      "buckets": [
+        0,
+        1
       ],
       "config_keys": [
         "enabled"
@@ -9899,6 +9783,138 @@
               "type": "guild_has_feature",
               "features": [
                 "INTERNAL_EMPLOYEE_ONLY"
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "data": {
+      "kind": "guild",
+      "hash": 848173753
+    },
+    "rollout": {
+      "populations": [
+        {
+          "buckets": {
+            "1": {
+              "rollout": [
+                {
+                  "start": 0,
+                  "end": 10000
+                }
+              ]
+            }
+          },
+          "filters": [
+            {
+              "type": "guild_has_feature",
+              "features": [
+                "COMMUNITY"
+              ]
+            },
+            {
+              "type": "guild_in_range_by_hash",
+              "hash_key": 848173753,
+              "target": 10000
+            }
+          ]
+        },
+        {
+          "buckets": {
+            "none": {
+              "rollout": [
+                {
+                  "start": 0,
+                  "end": 10000
+                }
+              ]
+            }
+          },
+          "filters": [
+            {
+              "type": "guild_has_feature",
+              "features": [
+                "COMMUNITY"
+              ]
+            }
+          ]
+        },
+        {
+          "buckets": {
+            "none": {
+              "rollout": [
+                {
+                  "start": 0,
+                  "end": 10000
+                }
+              ]
+            }
+          },
+          "filters": []
+        }
+      ],
+      "revision": 2,
+      "overrides": {},
+      "overrides_formatted": [
+        {
+          "buckets": {
+            "1": {
+              "rollout": [
+                {
+                  "start": 0,
+                  "end": 10000
+                }
+              ]
+            }
+          },
+          "filters": [
+            {
+              "type": "guild_has_feature",
+              "features": [
+                "INTERNAL_EMPLOYEE_ONLY"
+              ]
+            }
+          ]
+        },
+        {
+          "buckets": {
+            "1": {
+              "rollout": [
+                {
+                  "start": 0,
+                  "end": 10000
+                }
+              ]
+            }
+          },
+          "filters": [
+            {
+              "type": "guild_has_feature",
+              "features": [
+                "TEXT_IN_STAGE_ENABLED"
+              ]
+            }
+          ]
+        },
+        {
+          "buckets": {
+            "1": {
+              "rollout": [
+                {
+                  "start": 0,
+                  "end": 10000
+                }
+              ]
+            }
+          },
+          "filters": [
+            {
+              "type": "guild_ids",
+              "ids": [
+                "885418158788345897"
               ]
             }
           ]
