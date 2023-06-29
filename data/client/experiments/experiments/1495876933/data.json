@@ -1,0 +1,19 @@
+{
+  "data": {
+    "kind": "user",
+    "id": "2023-06_premium_unify_trial_upsell",
+    "label": "Premium Unify Trial Upsell",
+    "description": [
+      "Control",
+      "Treatment 1: Unified trial upsell experience"
+    ],
+    "hash": 1495876933,
+    "buckets": [
+      0,
+      1
+    ],
+    "config_keys": [
+      "enabled"
+    ]
+  }
+}
