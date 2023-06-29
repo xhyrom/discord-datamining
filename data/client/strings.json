@@ -7112,6 +7112,7 @@
   "BILLING_SUBSCRIBE_TO_PLAN": "\"Subscribe\"",
   "BILLING_INVOICE_GIFT_PLAN": "\"Gift !!{planName}!!\"",
   "BILLING_INVOICE_SUBSCRIPTION_CREDIT_APPLIED": "\"Subscription Credit applied!\"",
+  "BILLING_INVOICE_TOTAL": "\"**Total**\"",
   "BILLING_INVOICE_TODAY_TOTAL": "\"**Today's Total**\"",
   "BILLING_INVOICE_TODAY_TOTAL_TAX_INCLUSIVE": "\"**Today's Total** (Tax Included)\"",
   "BILLING_INVOICE_TOTAL_TAX_INCLUSIVE": "\"**Total** (Tax Included)\"",
