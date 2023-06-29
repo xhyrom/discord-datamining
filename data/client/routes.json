@@ -653,6 +653,15 @@
       "PATCH"
     ]
   },
+  "GUILD_JOIN_REQUESTS": {
+    "url": "/guilds/:param/requests",
+    "allowed_methods": [
+      "GET",
+      "HEAD",
+      "OPTIONS",
+      "PATCH"
+    ]
+  },
   "USER_JOIN_REQUEST_GUILDS": {
     "url": "/users/@me/join-request-guilds",
     "allowed_methods": [
