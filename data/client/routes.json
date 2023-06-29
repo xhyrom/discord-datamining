@@ -2334,13 +2334,6 @@
       "OPTIONS"
     ]
   },
-  "BILLING_INVOICE_MANUAL_PAYMENT": {
-    "url": "/users/@me/billing/subscriptions/:param/invoices/:param/pay",
-    "allowed_methods": [
-      "OPTIONS",
-      "POST"
-    ]
-  },
   "BILLING_COUNTRY_CODE": {
     "url": "/users/@me/billing/country-code",
     "allowed_methods": [
