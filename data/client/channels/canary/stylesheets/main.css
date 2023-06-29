@@ -76659,6 +76659,19 @@ strong {
     cursor: pointer
 }
 
+.memberName-1qkICy {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center
+}
+
 .memberAvatar-OC8wGz {
     grid-row: span 2;
     -ms-flex-item-align: center;
@@ -161658,4 +161671,4 @@ html .invoiceCancelRow-dVOR64 {
     flex-direction: column
 }
 
-/*# sourceMappingURL=40532.6ed53ac82ba17a4bc289.css.map*/
+/*# sourceMappingURL=40532.e09eae538caa444212bc.css.map*/
