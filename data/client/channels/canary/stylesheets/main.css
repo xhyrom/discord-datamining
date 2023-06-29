@@ -132043,6 +132043,28 @@ html .invoiceCancelRow-3s2UuC {
     color: var(--primary-100)
 }
 
+.confirmation-1J5ZWf {
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    padding: 40px 32px
+}
+
+.confirmationHeader-2mK-jD {
+    margin-bottom: 16px
+}
+
+.confirmationMessage-_sP7Dj {
+    margin-bottom: 34px
+}
+
 .container-ikgCx8 {
     background-color: var(--input-background);
     border-radius: 4px;
@@ -161211,28 +161233,6 @@ html .invoiceCancelRow-3s2UuC {
     justify-content: center
 }
 
-.confirmation-1J5ZWf {
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: column;
-    flex-direction: column;
-    padding: 40px 32px
-}
-
-.confirmationHeader-2mK-jD {
-    margin-bottom: 16px
-}
-
-.confirmationMessage-_sP7Dj {
-    margin-bottom: 34px
-}
-
 .spacing-30Ugox {}
 
 .headerSpacing-358R3d {
@@ -161788,4 +161788,4 @@ html .invoiceCancelRow-dVOR64 {
     flex-direction: column
 }
 
-/*# sourceMappingURL=40532.7ca308613f90acca7213.css.map*/
+/*# sourceMappingURL=40532.17ee0ced9e9c9d22dece.css.map*/
