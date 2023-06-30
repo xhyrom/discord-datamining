@@ -5224,6 +5224,14 @@
             "1": {
               "rollout": [
                 {
+                  "start": 8000,
+                  "end": 9000
+                },
+                {
+                  "start": 9000,
+                  "end": 9500
+                },
+                {
                   "start": 9500,
                   "end": 10000
                 }
@@ -5253,11 +5261,7 @@
                 },
                 {
                   "start": 7500,
-                  "end": 9000
-                },
-                {
-                  "start": 9000,
-                  "end": 9500
+                  "end": 8000
                 }
               ]
             }
@@ -7477,25 +7481,6 @@
         0,
         1,
         2
-      ],
-      "config_keys": [
-        "enabled"
-      ]
-    }
-  },
-  {
-    "data": {
-      "kind": "user",
-      "id": "2023-06_remove_spotify_dc_nagbar",
-      "label": "Remove Spotify DC Nagbar",
-      "description": [
-        "Control",
-        "Treatment 1: Remove Nagbar"
-      ],
-      "hash": 1682576930,
-      "buckets": [
-        0,
-        1
       ],
       "config_keys": [
         "enabled"
