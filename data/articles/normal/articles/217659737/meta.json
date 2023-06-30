@@ -2,7 +2,7 @@
   "id": 217659737,
   "url": "https://hammerandchisel.zendesk.com/api/v2/help_center/en-us/articles/217659737.json",
   "html_url": "https://support.discord.com/hc/en-us/articles/217659737-Game-Overlay-101",
-  "author_id": 1199351638,
+  "author_id": 2921470028,
   "comments_disabled": true,
   "draft": false,
   "promoted": false,
@@ -24,6 +24,7 @@
     "game status",
     "game",
     "overlay",
-    "answer-bot"
+    "answer-bot",
+    "game overlay"
   ]
 }
