@@ -2758,6 +2758,13 @@
       "POST"
     ]
   },
+  "USER_GIFT_CODE_REVOKE": {
+    "url": "/users/@me/entitlements/gift-codes/:param",
+    "allowed_methods": [
+      "DELETE",
+      "OPTIONS"
+    ]
+  },
   "USER_GIFT_CODES": {
     "url": "/users/@me/entitlements/gift-codes",
     "allowed_methods": [
