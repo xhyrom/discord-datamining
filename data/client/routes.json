@@ -558,14 +558,6 @@
       "OPTIONS"
     ]
   },
-  "GUILD_ANALYTICS_GROWTH_ACTIVATION_RETENTION": {
-    "url": "/guilds/:param/analytics/growth-activation/retention",
-    "allowed_methods": [
-      "GET",
-      "HEAD",
-      "OPTIONS"
-    ]
-  },
   "GUILD_TOP_READ_CHANNELS": {
     "url": "/guilds/:param/top-read-channels",
     "allowed_methods": [
