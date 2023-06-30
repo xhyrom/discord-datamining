@@ -20950,7 +20950,7 @@ html.disable-forced-colors * {
     padding-top: 16px
 }
 
-.bottomActionBar-2fu4kR {
+.footer-COV-5M {
     width: 100%;
     margin-top: 24px;
     padding-top: 16px;
@@ -61227,6 +61227,29 @@ strong {
     text-align: center
 }
 
+.emptyState-Ud44C9.unifyTrialUpsell-2DQtd1 {
+    margin: 0;
+    -webkit-box-pack: end;
+    -ms-flex-pack: end;
+    justify-content: flex-end
+}
+
+.upsellClose-_fOrsS {
+    cursor: pointer;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    color: var(--interactive-normal)
+}
+
+.upsellImage-WAlMmt {
+    height: 60px;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+    margin-bottom: 16px
+}
+
 .header-24Iqpn {
     margin-top: 16px;
     margin-bottom: 8px
@@ -61576,26 +61599,15 @@ strong {
 }
 
 .upsellWrapper-3KE9GX {
-    z-index: 2
-}
-
-.upsellBackground-34ZERR,
-.upsellWrapper-3KE9GX {
     position: absolute;
     top: 0;
     bottom: 0;
     left: 0;
-    right: 0
-}
-
-.upsellBackground-34ZERR {
+    right: 0;
+    z-index: 2;
     background: var(--background-secondary);
-    opacity: .98
-}
-
-.upsellContent-1ppSei {
+    opacity: .98;
     text-align: center;
-    position: relative;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -61613,8 +61625,12 @@ strong {
     padding: 0 20px
 }
 
-.upsellBody-13Ca5z {
-    margin-bottom: 24px
+.upsellWrapper-3KE9GX.unifyTrialUpsell-1749qI {
+    padding: 0;
+    opacity: 1;
+    -webkit-box-pack: end;
+    -ms-flex-pack: end;
+    justify-content: flex-end
 }
 
 .upsellImage-4XEtTU {
@@ -161788,4 +161804,4 @@ html .invoiceCancelRow-dVOR64 {
     flex-direction: column
 }
 
-/*# sourceMappingURL=40532.17ee0ced9e9c9d22dece.css.map*/
+/*# sourceMappingURL=40532.6e06e0bb771516e015cd.css.map*/
