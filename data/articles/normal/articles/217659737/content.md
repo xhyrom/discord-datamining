@@ -1,65 +1,92 @@
-<p><img src="https://support.discord.com/hc/article_attachments/360008173832" alt="Screen_Shot_2018-07-25_at_4.03.37_PM.png" width="1169" height="530"></p>
-<p><span style="color: #2e3338;" data-darkreader-inline-color="">Discordians! The in-game overlay is 100% waiting for you, and it's time to incorporate your voice &amp; text chat into your game for maximum effort, focus, and no distractions from declaring your online gaming supremacy. The overlay is a pretty fancy and fun piece of tech, so there are some important points to go over.</span></p>
-<h1><span style="color: #2e3338;" data-darkreader-inline-color="">Let's Get Started</span></h1>
-<p><span style="color: #2e3338;" data-darkreader-inline-color="">First steps first: Let's ensure the overlay is enabled! </span></p>
-<p><span style="color: #2e3338;" data-darkreader-inline-color="">1. Open up your User Settings</span></p>
-<p><span style="color: #2e3338;" data-darkreader-inline-color="">2. Press the Overlay tab and enable in-game overlay</span></p>
-<p><span style="color: #2e3338;" data-darkreader-inline-color="">3. Select the Game Activity tab</span></p>
-<p><span style="color: #2e3338;" data-darkreader-inline-color="">4. Enable the overlay with the desired game.</span></p>
-<h1><span style="color: #2e3338;" data-darkreader-inline-color="">Text Chat</span></h1>
-<p><span style="color: #2e3338;" data-darkreader-inline-color="">Text Channels have made it to the Overlay! </span></p>
-<p><span style="color: #2e3338;" data-darkreader-inline-color="">You’re now able to interact with a text channel in a very similar way you're already used to. Swap between channels, generate invite links, emoji &amp; reactions, it’s all there! Well, not all. There are a few missing features, guess we can call them Waluigi features. WAHHH. Some features that didn't make the cut are access pinned messages, jump to present messages, use file picker, and access to a search bar. </span></p>
-<h1><span style="color: #2e3338;" data-darkreader-inline-color="">Pinning</span></h1>
-<p><span style="color: #2e3338;" data-darkreader-inline-color="">Have a constant eye on a text channel, and voice widget while you game thanks to pinning! Basically, this will allow parts of the overlay to still be visible while still playing the games you love.</span></p>
-<p><span style="color: #2e3338;" data-darkreader-inline-color="">To toggle if a widget is pinned or not, navigate to these options here</span></p>
-<p><span style="color: #2e3338;" data-darkreader-inline-color="">Customize the opacity with this option:</span></p>
-<p><span style="color: #2e3338;" data-darkreader-inline-color="">With a widget(s) pinned &amp; the overlay hidden, it’ll look something like:</span></p>
-<h3><strong><span style="color: #104c32;" data-darkreader-inline-color="">Note: when a channel has been pinned, you’ll be able to read live updates while you game; however, you won’t be able to respond or interact until you enable the overlay with the keybind.   </span></strong></h3>
-<p><span style="color: #2e3338;" data-darkreader-inline-color="">A new keybind has also been added for extra quickness! Navigate to User Settings &gt; Keybinds &amp; select Activate Overlay Chat to set your keybind.</span></p>
-<p><span style="color: #2e3338;" data-darkreader-inline-color=""><br></span><span style="color: #2e3338;" data-darkreader-inline-color="">An in-game preview mode has been added as well so you’re able to get it just right! Adjusting the widget automatically puts you in preview mode. This will give you an idea of what that’ll look like when you’re gaming. Clicking &amp; holding these two areas will allow you to move &amp; change the size of the widget.</span></p>
-<p><span style="color: #2e3338;" data-darkreader-inline-color="">Need more convincing of this heckin coolness? How does surviving the ARK while watching cute cat videos sound?</span></p>
-<h1><span style="color: #2e3338;" data-darkreader-inline-color="">Resizing &amp; Moving</span></h1>
-<p><span style="color: #2e3338;" data-darkreader-inline-color="">Resizing and moving your chat window works how you’d expect it too! Press and hold here for all your resizing and moving needs.</span></p>
-<h1><span style="color: #2e3338;" data-darkreader-inline-color="">Direct To Your Friends</span></h1>
-<p><span style="color: #2e3338;" data-darkreader-inline-color="">Your friends list has decided to join the party too! If you'd rather use a voice call instead of using a server, it's time to celebrate! From the Friends section, you'll be able to initiate, join, and leave voice calls.</span></p>
-<p><span style="color: #2e3338;" data-darkreader-inline-color="">Now that you'll start receiving voice calls, you're going to need a way to be alerted, without being taken out of that intense 2v2! We don't want to ruin that sweet sweet aerial.</span></p>
-<h1><span style="color: #2e3338;" data-darkreader-inline-color="">Notifications In Overlay</span></h1>
-<p><span style="color: #2e3338;" data-darkreader-inline-color="">Notifications have been added as well! There are a few types you should get familiar with. Keep in mind these notifications movable &amp; removable, but we'll get to that later! </span></p>
-<h2><strong><span style="color: #ae6607;" data-darkreader-inline-color="">Call Notifications </span></strong></h2>
-<p><span style="color: #2e3338;" data-darkreader-inline-color="">Answer the call!</span></p>
-<h2><strong><span style="color: #ae6607;" data-darkreader-inline-color="">Text Notifications</span></strong></h2>
-<h3><strong><span style="color: #104c32;" data-darkreader-inline-color="">Note, these notifications will mimic the text notification settings you already have set up. </span></strong></h3>
-<p><span style="color: #2e3338;" data-darkreader-inline-color="">Open up the overlay to send that sassiness right back</span></p>
-<h2><strong><span style="color: #ae6607;" data-darkreader-inline-color="">Game Invite Notifications</span></strong></h2>
-<p><span style="color: #2e3338;" data-darkreader-inline-color="">Open the overlay to squad up!</span></p>
-<h1><strong><span class="wysiwyg-underline" style="color: #2e3338;" data-darkreader-inline-color="">Notification Options &amp; Options In Overlay</span></strong></h1>
-<p><span style="color: #2e3338;" data-darkreader-inline-color="">You're able to customize where this notification pop-ups, or turn it off completely! These options can be found in User Settings &gt; Overlay &gt; Overlay Notifications.</span></p>
-<p><span style="color: #2e3338;" data-darkreader-inline-color="">To completely turn off these notifications select:</span></p>
-<p><span style="color: #2e3338;" data-darkreader-inline-color="">Heard you like to option when overlaying so we put one in your overlay! Options for overlay now exist in the overlay! With the overlay open, go ahead and select the cogwheel: </span></p>
-<p><span style="color: #2e3338;" data-darkreader-inline-color="">Here you'll be able to make adjustments to the overlay.  </span></p>
-<h3><strong><span style="color: #104c32;" data-darkreader-inline-color="">Note, these options will only include the options for the overlay. Options in overlay won't include other options that you normally find in User Settings.</span></strong></h3>
-<p><span style="color: #2e3338;" data-darkreader-inline-color="">This is how you’re able to turn off notifications via overlay options. </span></p>
-<h1><span style="color: #2e3338;" data-darkreader-inline-color="">Super Important Note</span></h1>
-<p><span style="color: #2e3338;" data-darkreader-inline-color="">At the moment, the overlay is some pretty intense tech with a bit of arcane magic going on under the hood. Unfortunately, our various Anti-Virus software buddies haven't quite finished prodding Discord's files for the 100% good to go. Long story short:</span></p>
-<p><span style="color: #2e3338;" data-darkreader-inline-color="">Enabling the overlay might get Discord flagged by your Anti-Virus software. </span><span class="wysiwyg-underline" style="color: #2e3338;" data-darkreader-inline-color="">This is ok!</span><span style="color: #2e3338;" data-darkreader-inline-color=""> We can guarantee it is a false positive. We're working with all the different companies to get Discord allowlisted.</span></p>
-<p><span style="color: #2e3338;" data-darkreader-inline-color="">As you go into your software to add Discord to accepted processes, know that any file path that matches this one is 100% organic, certified, robograss-fed, homegrown Discord goodness:</span></p>
-<p><span style="color: #2e3338;" data-darkreader-inline-color="">%appdata%\discord\0.0.***highest-number***\modules</span></p>
-<p><em><span style="color: #2e3338;" data-darkreader-inline-color="">(the ***highest-number*** refers to the latest version of Discord. Your path will have different text here.)</span></em></p>
-<p><span style="color: #2e3338;" data-darkreader-inline-color="">You can allowlist files with that path with no problem.</span></p>
-<h1><span style="color: #2e3338;" data-darkreader-inline-color="">Overlay Issues</span></h1>
-<p><span style="color: #2e3338;" data-darkreader-inline-color="">As we work on the overlay, if you're experiencing issues with games crashing or ping spikes, we recommend you disable it temporarily.</span></p>
-<p><span style="color: #2e3338;" data-darkreader-inline-color="">To do this, follow the same steps you used to enable it. If you can't quite remember reading back that far, they are:</span></p>
-<p><span style="color: #2e3338;" data-darkreader-inline-color="">1. Open up your User Settings</span></p>
-<p><span style="color: #2e3338;" data-darkreader-inline-color="">2. Select the games tab</span></p>
-<p><span style="color: #2e3338;" data-darkreader-inline-color="">3. Check the overlay box next to the problem game.</span></p>
-<h1><span style="color: #2e3338;" data-darkreader-inline-color="">Want Some Extra Credit?</span></h1>
-<p><span style="color: #2e3338;" data-darkreader-inline-color="">We've really got our work cut out for us here. Luckily, you can help us out. </span></p>
-<p><span style="color: #2e3338;" data-darkreader-inline-color="">If you do experience the overlay crashing a game, grab this log:</span></p>
-<p><span style="color: #2e3338;" data-darkreader-inline-color="">%appdata%\discord\0.0.***highest-number***\modules\discord_hook\hook </span></p>
-<p><span style="color: #2e3338;" data-darkreader-inline-color="">And write in to our Support team at dis.gd/contact.</span></p>
-<p><span style="color: #2e3338;" data-darkreader-inline-color="">Make sure you let us know what issue you ran into, and what game! It'll help us sort out the problem appropriately.</span></p>
-<h1><span style="color: #2e3338;" data-darkreader-inline-color="">Problematic Games</span></h1>
-<p><span style="color: #2e3338;" data-darkreader-inline-color="">There are some games that we know are going to have some issues when using the overlay. It's possible the overlay works as intended; however, it's an "overlay at your own risk" type of situation. These games are</span></p>
+<p> </p>
+<p class="wysiwyg-text-align-center"><img style="height: 283px; width: 624px;" src="https://lh5.googleusercontent.com/acMR1ObDYjh-3CbrmuUehTdtwJBUNUi1OluDxQ5q2lGK2OymRlS9hMPNAb77jhaXAnOi9u5JPo2kdLWLumjnIr8xDmBCvGTvT03Zfs-SIcDGNWActgXDWs2mEB-bg82mCaupgqdIXNzq-0bleyP9Yx8" alt="Screen_Shot_2018-07-25_at_4.03.37_PM.png"></p>
+<p>Worried you’ll miss a message from your friend while you’re engaging in an epic battle? Worry no more with the Game Overlay!</p>
+<p><span class="wysiwyg-font-size-large"><strong>What this article covers:</strong></span></p>
+<ul>
+    <li><a href="#h_01H46H66JXMC7F1T7HK985D237" target="_self">How to Enable Game Overlay</a></li>
+    <li>
+        <a href="#h_01H46H9S9A1PWQ994GT79QBBZH" target="_self">Customizing the Game Overlay</a>
+        <ul>
+            <li><a href="#h_01H46H9XCTVFKWEBTXG0K9D24X" target="_self">Text</a></li>
+            <li><a href="#h_01H46HA16Z46R3VNZ6A01Y6BBX" target="_self">Voice</a></li>
+            <li><a href="#h_01H46HA58APNMH63PBFY9SZTBC" target="_self">Call</a></li>
+            <li><a href="#h_01H46HA9MPYS0VCSNS1ZE62Z6S" target="_self">Pinning</a></li>
+        </ul>
+    </li>
+    <li>
+        <a href="#h_01H46HAF4FF8TCARM43F4R0AHE" target="_self">Technical Issues with the Game Overlay</a>
+        <ul>
+            <li><a href="#h_01H46HAME1PG4G7HRB32JGJW5S" target="_self">Less Compatible Games</a></li>
+        </ul>
+    </li>
+</ul>
+<h1 id="h_01H46H66JXMC7F1T7HK985D237">How to Enable Game Overlay</h1>
+<h3><span style="color: #434343;" data-darkreader-inline-color="">If you experience lag, game crashing, or any other issues while the Game Overlay is enabled we recommend disabling Game Overlay for that specific game.</span></h3>
+<p>1. Open up your <strong>User Settings</strong> by tapping on the cogwheel next to your Username.</p>
+<p>2. Press the <strong>Overlay</strong> tab and enable in-game overlay.</p>
+<p class="wysiwyg-text-align-center"><img src="https://support.discord.com/hc/article_attachments/15693491628055" alt="game_overlay_settings.gif" width="647" height="364"></p>
+<p>3. After enabling the in-game overlay, then go to Registered Games by heading to <strong>User Settings</strong> &gt; <strong>Registered Games</strong>.</p>
+<p>4. Here you can toggle to enable or display the overlay and what games it will be displayed on. The monitor icon with a slash through it means the overlay won’t display. </p>
+<p class="wysiwyg-text-align-center"><img src="https://support.discord.com/hc/article_attachments/15693519292311" alt="registered_games_settings.gif"></p>
+<h1 id="h_01H46H9S9A1PWQ994GT79QBBZH">Customizing the Game Overlay</h1>
+<h2 id="h_01H46H9XCTVFKWEBTXG0K9D24X">Text</h2>
+<h3><span style="color: #434343;" data-darkreader-inline-color="">If a server, DM, or group message is currently muted or you have Streamer Mode turned on, messages will not be displayed.</span></h3>
+<p>Adventuring through Azeroth and worried you might miss a new message from your friend? Try turning on Text Chat notifications! </p>
+<p>If you want to see messages displayed through the Game Overlay, go to  <strong>User Settings</strong> &gt; <strong>Game Overlay</strong> and make sure that <strong>Show Text Chat Notifications</strong> is enabled.</p>
+<p class="wysiwyg-text-align-center"><img src="https://support.discord.com/hc/article_attachments/15693491637527" alt="show_text_chat_notifications.png"></p>
+<p>Once enabled, new messages through DMs, group messages, or servers will be displayed right over your gameplay.</p>
+<p class="wysiwyg-text-align-center"><img src="https://support.discord.com/hc/article_attachments/15693519299863" alt="game_overlay_text_example.gif"></p>
+<h2 id="h_01H46HA16Z46R3VNZ6A01Y6BBX">Voice</h2>
+<p>While in a Voice chat or call (DM, group message call, or voice channel in a server) you can see who is talking, or who might accidentally be muted.</p>
+<p>Under <strong>User Settings</strong> &gt; <strong>Game Overlay,</strong> you can change how these are displayed. Let’s go over each setting!</p>
+<p><strong>Avatar Size</strong></p>
+<p>Avatar Size can be Large or Small depending on your preference.</p>
+<p class="wysiwyg-text-align-center"><img src="https://support.discord.com/hc/article_attachments/15693519302295" alt="avatar_size_settings.png"></p>
+<p>Here is what a Small avatar will look like:</p>
+<p class="wysiwyg-text-align-center"><img src="https://support.discord.com/hc/article_attachments/15693519304599" alt="game_overlay_small_avatar.jpg"></p>
+<p>Here is what a Large avatar will look like:</p>
+<p class="wysiwyg-text-align-center"><img src="https://support.discord.com/hc/article_attachments/15693519309463" alt="game_overlay_large_avatar.jpg"></p>
+<p><strong>Display Names</strong></p>
+<p>You can have the display name shown for each user that is in the voice call or channel with you. This can be set to one of the following:</p>
+<p><strong>Always</strong> - The display name will always be shown</p>
+<p><strong>Only While Speaking</strong> - The display name will only be displayed while the user is actively speaking</p>
+<p><strong>Never </strong> - The display name will never be displayed</p>
+<p class="wysiwyg-text-align-center"><img src="https://support.discord.com/hc/article_attachments/15693519313815" alt="display_names.png"></p>
+<p>Here is an example of the variations of display names being shown and not shown that can be set: </p>
+<p class="wysiwyg-text-align-center"><img src="https://support.discord.com/hc/article_attachments/15693491653911" alt="game_voice_chat_no_display_name.gif"></p>
+<p><strong>Display Users</strong></p>
+<p>Finally, you can change how a user is displayed. They can be shown always, or only while speaking.</p>
+<p class="wysiwyg-text-align-center"><strong><img style="height: 124px; width: 624px;" src="https://lh4.googleusercontent.com/aTwBsKQzHOcEDovS38uDRLY3yVyO1M9dGNhPNZGEmFtOJOSqG-PY4uFgo0da4OJy-O9DbcK6mBp0xs7y_DykGlowx8NkJPor2ujr0WbRBUjUbX8z_zZUC1Zvppa807apSwJYQy0o7rYkNZ0BJtsUH04"></strong></p>
+<p><strong>Always</strong> - Selected users will only be displayed as long as they are in the voice call or voice channel. If a user is also muted or deafened, an icon will be displayed next to their name.</p>
+<p class="wysiwyg-text-align-center"><img src="https://support.discord.com/hc/article_attachments/15693519320087" alt="game_voice_chat_example_shown.gif"></p>
+<p><strong>Only While Speaking</strong> - Users will only be displayed when they are actively talking or any audio is being picked up from their microphone.</p>
+<p class="wysiwyg-text-align-center"><img src="https://support.discord.com/hc/article_attachments/15693491658647" alt="game_voice_chat_example_not_shown.gif" width="302" height="187"></p>
+<h2 id="h_01H46HA58APNMH63PBFY9SZTBC">Call</h2>
+<p>You can receive and answer calls with Game Overlay! You can answer a call by using your designated <a href="https://support.discord.com/hc/en-us/articles/217083547"><span class="wysiwyg-underline" style="color: #1155cc;" data-darkreader-inline-color="">keybinding</span></a> or hovering your mouse over the incoming call and tapping on <strong>Join Call</strong> or <strong>Decline.</strong></p>
+<p class="wysiwyg-text-align-center"><img src="https://support.discord.com/hc/article_attachments/15693519325847" alt="game_overlay_incoming_call.gif"></p>
+<h2 id="h_01H46HA9MPYS0VCSNS1ZE62Z6S">Pinning</h2>
+<p>If you’re worried you’ll miss a message while battling monsters in a game, you can always pin a specific channel, direct message, or group message.</p>
+<p>You’ll need to make sure you have a keybinding for <strong>Toggle Overlay Lock</strong>. You can set this by going to <strong>User Settings</strong> &gt; <strong>Game Overlay</strong> and then setting your own custom keybinding, or use the default one.</p>
+<p class="wysiwyg-text-align-center"><strong><img style="height: 100px; width: 350px;" src="https://lh4.googleusercontent.com/pK03OYsNxW3JBl9AmOBFoLWXHNI4xJkFGTGnGWyKvQQBz1oY7uj58HCrcqIku1VYIyosz_GXR-b_BennX7SQG-eZ0k63--0YiMFm11rkeglfKBxyIE1V-siX5aunDQIXqCdF3ko_zf5kjD9F_r-vlAo"></strong></p>
+<p>1. Once you’ve set your own keybinding make sure the game overlay is turned on and go ahead and open a game of your voice. </p>
+<p>2. Press on your keybinding that you set (default is SHIFT+`) and that will pull up Discord. </p>
+<p>3. Navigate to your channel, DM, or group message of choice and press on the <strong>Pin </strong>icon to the left of the Search bar.</p>
+<p class="wysiwyg-text-align-center"><img src="https://support.discord.com/hc/article_attachments/15693519330839" alt="game_overlay_pin.gif"></p>
+<p>4. After being pinned you’ll see a new icon appear to the left of the Pin icon, this will help you with changing the Opacity of the Discord app. You can move the slider to the left to make it more opaque or right to make it less opaque. Once you’re happy with the setting, you can tap on the “x” to close the Opacity menu.</p>
+<p class="wysiwyg-text-align-center"><img src="https://support.discord.com/hc/article_attachments/15693491665943" alt="game_overlay_opacity_slider.gif"></p>
+<p>5. Next, you can resize the pinned window so it doesn’t interfere with your gameplay. While the game overlay is unlocked (SHIFT+` unless you set another keybinding for it) place your pointer over the bottom right of the chat window and then click and hold and drag it to your desired size. </p>
+<p class="wysiwyg-text-align-center"><img src="https://support.discord.com/hc/article_attachments/15693491669143" alt="game_overlay_resize.gif"></p>
+<p>6. You can also move the chat to anywhere on the screen by clicking and dragging on the chat window. </p>
+<p>7. You won’t be able to chat directly in the pinned message, however, you can respond to any message if you unlock the overlay (SHIFT+` or the keybinding you set). Tap the keybinding again or press outside of the Discord window to lock it back into place.</p>
+<p class="wysiwyg-text-align-center"><img src="https://support.discord.com/hc/article_attachments/15693491670679" alt="game_overlay_respond_in_pin.gif"></p>
+<h1 id="h_01H46HAF4FF8TCARM43F4R0AHE">Technical Issues with the Overlay</h1>
+<p>At the moment, the overlay is some pretty intense tech with a bit of arcane magic going on under the hood. Unfortunately, our various Anti-Virus software buddies haven't quite finished prodding Discord's files for the 100% good to go. Enabling the overlay might get Discord flagged by your Anti-Virus software. This is ok! We can <em>guarantee</em> it is a false positive. We're working with all the different companies to get Discord allowlisted.</p>
+<p>As you go into your software to add Discord to accepted processes, know that any file path that matches this one is 100% organic, certified, robograss-fed, homegrown Discord goodness:</p>
+<p>%appdata%\discord\0.0.***highest-number***\modules</p>
+<p>(the ***highest-number*** refers to the latest version of Discord. Your path will have different text here.)</p>
+<p>You can allowlist files with that path with no problem.</p>
+<h2 id="h_01H46HAME1PG4G7HRB32JGJW5S">Less Compatible Games</h2>
+<p>There are some games that we know that do not work with the Discord Game Overlay. Unfortunately, if the overlay is not working with these games, there is nothing that we can do on our end and this is working as intended. Here is a list of known games: </p>
 <div>
     <table style="width: 100%;">
         <colgroup>
@@ -86,7 +113,7 @@
             <tr>
                 <td><span style="color: #2e3338;" data-darkreader-inline-color="">Final Fantasy XIV </span></td>
                 <td><span style="color: #2e3338;" data-darkreader-inline-color="">Killing Floor 2</span></td>
-                <td><span style="color: #2e3338;" data-darkreader-inline-color="">Overwatch: Origins Edition</span></td>
+                <td><span style="color: #2e3338;" data-darkreader-inline-color="">Roblox</span></td>
             </tr>
             <tr>
                 <td><span style="color: #2e3338;" data-darkreader-inline-color="">SteamVR</span></td>
@@ -111,10 +138,12 @@
             <tr>
                 <td><span style="color: #2e3338;" data-darkreader-inline-color="">DayZ</span></td>
                 <td><span style="color: #2e3338;" data-darkreader-inline-color="">PlanetSide 2</span></td>
-                <td><span style="color: #2e3338;" data-darkreader-inline-color=""> </span></td>
+                <td> </td>
             </tr>
         </tbody>
     </table>
 </div>
-<h3><strong><span style="color: #104c32;" data-darkreader-inline-color="">Note, there are a few other cases that overlay will not work with. The overlay is currently not supported for Mac, games with Vulkan support, and generally old games.</span></strong></h3>
-<p><span style="color: #2e3338;" data-darkreader-inline-color="">See any improvements you’d like to see with overlay? Excellent! Best way to provide that feedback is </span><a href="http://dis.gd/feedback"><strong><span style="color: #0067e0;" data-darkreader-inline-color="">here</span></strong></a><span style="color: #2e3338;" data-darkreader-inline-color="">.</span></p>
+<h3><span style="color: #434343;" data-darkreader-inline-color="">There are a few other cases that overlay will not work with. The overlay is currently not supported for Mac, games with Vulkan support, and generally older games.</span></h3>
+<p>If you do experience a game crashing while you have the overlay enabled, please grab this log:</p>
+<p>%appdata%\discord\0.0.***highest-number***\modules\discord_hook\hook </p>
+<p>And then submit a ticket to our <a href="https://dis.gd/support"><span class="wysiwyg-underline" style="color: #1155cc;" data-darkreader-inline-color="">Support team</span></a> along with what the issue is and what game this happened with, so they can take a closer look.</p>
