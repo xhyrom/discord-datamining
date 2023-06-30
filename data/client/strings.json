@@ -4336,7 +4336,6 @@
   "OAUTH2_CAN_READ_NOTICE": "\"This application **can** read your messages but **can not** send messages as you.\"",
   "OAUTH2_SCOPES_LABEL": "\"This will allow the developer of !!{application}!! to:\"",
   "OAUTH2_SCOPES_LABEL_TRUSTED_NAME": "\"This will allow !!{application}!! to:\"",
-  "OAUTH2_SCOPES_IP_LOCATION_SCOPE": "\"See your IP address, location, and web browser\"",
   "OAUTH2_REQUESTS_ACCOUNT_ACCESS": "\"wants to access your Discord account\"",
   "OAUTH2_SIGNED_IN_AS": "\"Signed in as $[](userHook)\"",
   "OAUTH2_THIRD_PARTY_APPLICATION": "\"An external application\"",
