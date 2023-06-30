@@ -76106,10 +76106,30 @@ strong {
     border-top: 1px solid var(--background-modifier-accent)
 }
 
+.tableHeaderRow-2Jri1A {
+    position: relative
+}
+
+.tableHeaderRow-2Jri1A:first-child:after {
+    content: "";
+    position: absolute;
+    width: calc(100% + 16px);
+    height: 1px;
+    left: -8px;
+    right: -8px;
+    -webkit-box-shadow: var(--elevation-low);
+    box-shadow: var(--elevation-low);
+    opacity: 1;
+    bottom: 8px
+}
+
 .tableHeaderCellContainer-fAjuC1 {
-    padding: 8px;
-    text-align: left;
-    border-bottom: 1px solid var(--background-tertiary)
+    padding: 8px 8px 16px;
+    text-align: left
+}
+
+.tableHeaderCellWithFilter-1Kkxh9 {
+    cursor: pointer
 }
 
 .tableHeaderCell-3KQ7j4 {
@@ -76158,62 +76178,6 @@ strong {
     width: 16px;
     height: 16px;
     color: var(--text-danger)
-}
-
-.paginationContainer-1LecDm {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: row;
-    flex-direction: row;
-    padding: 4px 16px;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
-    border-top: 1px solid var(--background-modifier-accent)
-}
-
-.pagination-1WlC9Y {
-    -webkit-box-flex: 1;
-    -ms-flex: 1;
-    flex: 1;
-    padding: 0
-}
-
-.paginationInput-2-XoMf {
-    margin-top: 0
-}
-
-.paginationInput-2-XoMf>nav {
-    margin: 0 0 0 auto
-}
-
-.pageSizeInput-MBIIbl {
-    padding: 4px 4px 4px 8px
-}
-
-.pageSizeSelection--FwCJx {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: row;
-    flex-direction: row;
-    gap: 8px;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
-    -webkit-box-pack: end;
-    -ms-flex-pack: end;
-    justify-content: flex-end
-}
-
-.pageLabel-1HX0q- strong {
-    font-weight: 400;
-    color: var(--text-normal)
 }
 
 .heading-sm-normal-2Fc_3V {
@@ -76688,8 +76652,8 @@ strong {
 
 .memberRowContainer-ZDlmmA {
     background-color: var(--background-primary);
-    -webkit-transition: background-color 60ms cubic-bezier(.48, 1.93, 1, .68);
-    transition: background-color 60ms cubic-bezier(.48, 1.93, 1, .68);
+    -webkit-transition: background-color 80ms cubic-bezier(.48, 1.93, 1, .68);
+    transition: background-color 80ms cubic-bezier(.48, 1.93, 1, .68);
     cursor: pointer
 }
 
@@ -76713,8 +76677,8 @@ strong {
 .memberRowContainer-ZDlmmA .addRoleContainer-2tqBaM {
     opacity: 0;
     cursor: pointer;
-    -webkit-transition: opacity 60ms cubic-bezier(.48, 1.93, 1, .68);
-    transition: opacity 60ms cubic-bezier(.48, 1.93, 1, .68)
+    -webkit-transition: opacity 80ms cubic-bezier(.48, 1.93, 1, .68);
+    transition: opacity 80ms cubic-bezier(.48, 1.93, 1, .68)
 }
 
 .memberRowContainer-ZDlmmA.selected-3uRybE .addRoleContainer-2tqBaM,
@@ -76740,8 +76704,8 @@ strong {
     height: 1px;
     opacity: 1;
     background: var(--background-modifier-accent);
-    -webkit-transition: opacity 60ms cubic-bezier(.64, .57, .67, 1.53);
-    transition: opacity 60ms cubic-bezier(.64, .57, .67, 1.53)
+    -webkit-transition: opacity 80ms cubic-bezier(.64, .57, .67, 1.53);
+    transition: opacity 80ms cubic-bezier(.64, .57, .67, 1.53)
 }
 
 .memberRowContainer-ZDlmmA:hover+.memberRowContainer-ZDlmmA td:after,
@@ -76777,8 +76741,8 @@ strong {
     justify-content: flex-end;
     gap: 8px;
     color: var(--interactive-normal);
-    -webkit-transition: color 60ms cubic-bezier(.48, 1.93, 1, .68);
-    transition: color 60ms cubic-bezier(.48, 1.93, 1, .68)
+    -webkit-transition: color 80ms cubic-bezier(.48, 1.93, 1, .68);
+    transition: color 80ms cubic-bezier(.48, 1.93, 1, .68)
 }
 
 .actionCell-1tWIj3:hover {
@@ -76838,8 +76802,8 @@ strong {
     cursor: pointer;
     border-radius: var(--radius-round);
     background-color: var(--background-modifier-accent);
-    -webkit-transition: background-color 60ms cubic-bezier(.48, 1.93, 1, .68);
-    transition: background-color 60ms cubic-bezier(.48, 1.93, 1, .68)
+    -webkit-transition: background-color 80ms cubic-bezier(.48, 1.93, 1, .68);
+    transition: background-color 80ms cubic-bezier(.48, 1.93, 1, .68)
 }
 
 .button-2XiUpU:hover {
@@ -76875,7 +76839,7 @@ strong {
 .highestRole-ReE-QC,
 .otherRoles-LMys1u {
     border-radius: var(--radius-xs);
-    background-color: var(--background-modifier-accent);
+    background-color: var(--background-secondary);
     height: 24px
 }
 
@@ -76898,11 +76862,9 @@ strong {
 }
 
 .addRoleIcon-5oV6RN {
-    width: 20px;
-    height: 20px;
     color: var(--interactive-normal);
-    -webkit-transition: color 60ms cubic-bezier(.48, 1.93, 1, .68);
-    transition: color 60ms cubic-bezier(.48, 1.93, 1, .68)
+    -webkit-transition: color 80ms cubic-bezier(.48, 1.93, 1, .68);
+    transition: color 80ms cubic-bezier(.48, 1.93, 1, .68)
 }
 
 .roleTooltip-WIu418 {
@@ -76923,6 +76885,62 @@ strong {
 
 .roleTooltipItem-1kJZ1v {
     overflow: hidden
+}
+
+.paginationContainer-1LecDm {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    padding: 4px 16px;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    border-top: 1px solid var(--background-modifier-accent)
+}
+
+.pagination-1WlC9Y {
+    -webkit-box-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+    padding: 0
+}
+
+.paginationInput-2-XoMf {
+    margin-top: 0
+}
+
+.paginationInput-2-XoMf>nav {
+    margin: 0 0 0 auto
+}
+
+.pageSizeInput-MBIIbl {
+    padding: 4px 4px 4px 8px
+}
+
+.pageSizeSelection--FwCJx {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    gap: 8px;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: end;
+    -ms-flex-pack: end;
+    justify-content: flex-end
+}
+
+.pageLabel-1HX0q- strong {
+    font-weight: 400;
+    color: var(--text-normal)
 }
 
 .searchInputContainer-2O9YCK {
@@ -76968,6 +76986,57 @@ strong {
     -webkit-box-flex: 0;
     -ms-flex: 0;
     flex: 0
+}
+
+.tableOptions-3I6pdq {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: end;
+    -ms-flex-pack: end;
+    justify-content: flex-end;
+    gap: 8px;
+    color: var(--interactive-normal);
+    -webkit-transition: color 80ms cubic-bezier(.48, 1.93, 1, .68);
+    transition: color 80ms cubic-bezier(.48, 1.93, 1, .68)
+}
+
+.tableOptions-3I6pdq:hover {
+    color: var(--interactive-active)
+}
+
+.tableOptions-3I6pdq .button-3ZhF0u {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    width: 28px;
+    height: 28px;
+    cursor: pointer;
+    border-radius: var(--radius-round);
+    background-color: transparent;
+    -webkit-transition: background-color 80ms cubic-bezier(.48, 1.93, 1, .68);
+    transition: background-color 80ms cubic-bezier(.48, 1.93, 1, .68)
+}
+
+.tableOptions-3I6pdq .button-3ZhF0u:hover {
+    background-color: var(--background-modifier-hover)
+}
+
+.tableOptions-3I6pdq .button-3ZhF0u:active {
+    background-color: var(--background-modifier-active)
 }
 
 .newMembersNotice-35VT6e {
@@ -77479,7 +77548,7 @@ strong {
 .table-2Z1caJ {
     border: 0;
     border-spacing: 0;
-    padding: 8px;
+    padding: 0 8px 8px;
     border-top: 1px solid var(--background-modifier-accent)
 }
 
@@ -161804,4 +161873,4 @@ html .invoiceCancelRow-dVOR64 {
     flex-direction: column
 }
 
-/*# sourceMappingURL=40532.6e06e0bb771516e015cd.css.map*/
+/*# sourceMappingURL=40532.111097f932513b6737f4.css.map*/
