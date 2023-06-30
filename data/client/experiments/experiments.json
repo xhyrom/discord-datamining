@@ -7463,6 +7463,25 @@
   {
     "data": {
       "kind": "user",
+      "id": "2023-06_bogo_promotion_gate",
+      "label": "BOGO Promotion Manager",
+      "description": [
+        "Control",
+        "Treatment 1: Enable BOGO Promotion Manager"
+      ],
+      "hash": 680908968,
+      "buckets": [
+        0,
+        1
+      ],
+      "config_keys": [
+        "enabled"
+      ]
+    }
+  },
+  {
+    "data": {
+      "kind": "user",
       "id": "2021-06_preview_promotions",
       "label": "Promotions Preview",
       "description": [
@@ -8509,25 +8528,6 @@
         "Treatment 1: Enable Localized Pricing Promo Manager"
       ],
       "hash": 4215507151,
-      "buckets": [
-        0,
-        1
-      ],
-      "config_keys": [
-        "enabled"
-      ]
-    }
-  },
-  {
-    "data": {
-      "kind": "user",
-      "id": "2023-06_bogo_promotion_gate",
-      "label": "BOGO Promotion Manager",
-      "description": [
-        "Control",
-        "Treatment 1: Enable BOGO Promotion Manager"
-      ],
-      "hash": 680908968,
       "buckets": [
         0,
         1
