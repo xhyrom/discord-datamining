@@ -401,6 +401,15 @@
       "POST"
     ]
   },
+  "GUILD_ONBOARDING": {
+    "url": "/guilds/:param/onboarding",
+    "allowed_methods": [
+      "GET",
+      "HEAD",
+      "OPTIONS",
+      "PUT"
+    ]
+  },
   "GUILD_ONBOARDING_PROMPT": {
     "url": "/guilds/:param/onboarding-prompts/:param",
     "allowed_methods": [
@@ -1395,6 +1404,13 @@
     "allowed_methods": [
       "OPTIONS",
       "POST"
+    ]
+  },
+  "CONNECTION_SYNC_CONTACTS": {
+    "url": "/users/@me/connections/contacts/@me/external-friend-list-entries",
+    "allowed_methods": [
+      "OPTIONS",
+      "PUT"
     ]
   },
   "CONNECTION_SYNC_CONTACTS_SETTINGS": {
@@ -2493,6 +2509,14 @@
     "allowed_methods": [
       "OPTIONS",
       "POST"
+    ]
+  },
+  "STORE_DIRECTORY_LAYOUT": {
+    "url": "/store/directory-layouts/:param",
+    "allowed_methods": [
+      "GET",
+      "HEAD",
+      "OPTIONS"
     ]
   },
   "STORE_DIRECTORY": {
