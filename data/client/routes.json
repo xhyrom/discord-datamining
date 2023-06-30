@@ -1067,16 +1067,6 @@
     "url": "/channels/:param/convert",
     "allowed_methods": null
   },
-  "CHANNEL_ACK": {
-    "url": "/channels/:param/messages/ack",
-    "allowed_methods": [
-      "DELETE",
-      "GET",
-      "HEAD",
-      "OPTIONS",
-      "PATCH"
-    ]
-  },
   "CHANNEL_STORE_LISTING": {
     "url": "/channels/:param/store-listing",
     "allowed_methods": [
