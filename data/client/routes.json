@@ -909,6 +909,13 @@
       "POST"
     ]
   },
+  "MESSAGE_LOG_GUILD_CHANNELS": {
+    "url": "/messages-log/guild-channels/get",
+    "allowed_methods": [
+      "OPTIONS",
+      "POST"
+    ]
+  },
   "BACKGROUND_SYNC": {
     "url": "/users/@me/background-sync",
     "allowed_methods": [
@@ -2601,14 +2608,6 @@
   },
   "STORE_LISTINGS_SKU": {
     "url": "/store/skus/:param/listings",
-    "allowed_methods": [
-      "GET",
-      "HEAD",
-      "OPTIONS"
-    ]
-  },
-  "APPLICATION_SKUS": {
-    "url": "/applications/:param/skus",
     "allowed_methods": [
       "GET",
       "HEAD",
