@@ -7044,25 +7044,6 @@
   {
     "data": {
       "kind": "user",
-      "id": "2023-06_guild_media_icon_indicator",
-      "label": "Guild Media Icon Indicator",
-      "description": [
-        "Control",
-        "Treatment 1: Show indicators"
-      ],
-      "hash": 3582700400,
-      "buckets": [
-        0,
-        1
-      ],
-      "config_keys": [
-        "enabled"
-      ]
-    }
-  },
-  {
-    "data": {
-      "kind": "user",
       "id": "2023-01_clear_all_message_requests",
       "label": "Safety Experience Reject All Message Requests",
       "description": [
