@@ -1,0 +1,30 @@
+{
+  "id": 15701300083095,
+  "url": "https://discordcreatorsupport.zendesk.com/api/v2/help_center/en-us/articles/15701300083095.json",
+  "html_url": "https://creator-support.discord.com/hc/en-us/articles/15701300083095-Discord-x-Influencers-Club",
+  "author_id": 1504238994441,
+  "comments_disabled": true,
+  "draft": false,
+  "promoted": false,
+  "position": 0,
+  "section_id": 10245511657879,
+  "created_at": "2023-06-30T21:20:44Z",
+  "name": "Discord x Influencers Club",
+  "title": "Discord x Influencers Club",
+  "source_locale": "en-us",
+  "locale": "en-us",
+  "outdated": false,
+  "outdated_locales": [],
+  "edited_at": "2023-06-30T21:34:05Z",
+  "user_segment_id": null,
+  "permission_group_id": 1720972,
+  "content_tag_ids": [],
+  "label_names": [
+    "answer-bot",
+    "server subscriptions",
+    "creators",
+    "partnership",
+    "Discord",
+    "Influencers Club"
+  ]
+}

@@ -1,5 +1,36 @@
 [
   {
+    "id": 15701300083095,
+    "url": "https://discordcreatorsupport.zendesk.com/api/v2/help_center/en-us/articles/15701300083095.json",
+    "html_url": "https://creator-support.discord.com/hc/en-us/articles/15701300083095-Discord-x-Influencers-Club",
+    "author_id": 1504238994441,
+    "comments_disabled": true,
+    "draft": false,
+    "promoted": false,
+    "position": 0,
+    "section_id": 10245511657879,
+    "created_at": "2023-06-30T21:20:44Z",
+    "name": "Discord x Influencers Club",
+    "title": "Discord x Influencers Club",
+    "source_locale": "en-us",
+    "locale": "en-us",
+    "outdated": false,
+    "outdated_locales": [],
+    "edited_at": "2023-06-30T21:34:05Z",
+    "user_segment_id": null,
+    "permission_group_id": 1720972,
+    "content_tag_ids": [],
+    "label_names": [
+      "answer-bot",
+      "server subscriptions",
+      "creators",
+      "partnership",
+      "Discord",
+      "Influencers Club"
+    ],
+    "body": "<p id=\"docs-internal-guid-90abc51d-7fff-4bb4-c2c9-a18de0d90903\">Discord has partnered with <a href=\"https://influencers.club/\" target=\"_blank\" rel=\"noopener\">Influencers Club</a> to conduct outreach to creators who are not currently on Discord to discuss partnership opportunities. This could include creating a server for their existing fans, monetizing their community using our Server Subscriptions product, or other initiatives.</p>\n<p><strong>Influencers Club will send emails to creators on our behalf using an @influencers.club email address.</strong> If you receive an email and don’t want to be contacted by Influencers Club again, please reply to their email and ask them to remove you from future outreach.</p>\n<p>You can learn more about how Discord is working with creators here: <a href=\"https://discord.com/serversubscriptions\" target=\"_blank\" rel=\"noopener\">https://discord.com/serversubscriptions</a></p>"
+  },
+  {
     "id": 14346342766743,
     "url": "https://discordcreatorsupport.zendesk.com/api/v2/help_center/en-us/articles/14346342766743.json",
     "html_url": "https://creator-support.discord.com/hc/en-us/articles/14346342766743-Media-Channels-for-Server-Subscriptions-BETA-",
