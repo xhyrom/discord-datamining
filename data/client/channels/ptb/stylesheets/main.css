@@ -40576,15 +40576,18 @@ html .progress-2Otdc- {
 }
 
 .thumbnailContainer-3JdYTm {
-    max-height: 288px;
     background-color: var(--background-floating);
-    overflow: hidden;
     position: relative
+}
+
+.thumbnail-jSM4Zo,
+.thumbnailContainer-3JdYTm {
+    max-height: 288px;
+    overflow: hidden
 }
 
 .thumbnail-jSM4Zo {
     max-width: 512px;
-    max-height: 288px;
     width: 100%;
     display: block;
     aspect-ratio: 16/9
@@ -40634,7 +40637,8 @@ html .progress-2Otdc- {
 }
 
 .descriptionContainer-2ZAH52 {
-    background-color: var(--background-secondary)
+    background-color: var(--background-secondary);
+    position: relative
 }
 
 .descriptionHeader-o2mruz {
@@ -161873,4 +161877,4 @@ html .invoiceCancelRow-dVOR64 {
     flex-direction: column
 }
 
-/*# sourceMappingURL=40532.111097f932513b6737f4.css.map*/
+/*# sourceMappingURL=40532.7827239cf19ea1a423e3.css.map*/
