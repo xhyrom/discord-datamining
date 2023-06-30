@@ -161322,6 +161322,39 @@ html .invoiceCancelRow-3s2UuC {
     justify-content: center
 }
 
+.oldCredentialName-15t4B9 {
+    margin-bottom: 12px
+}
+
+.content-cszKdD {
+    padding-bottom: 16px
+}
+
+.header-2JlmBW {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    padding-bottom: 24px
+}
+
+.subtitle-3iouKP {
+    -webkit-box-flex: 1;
+    -ms-flex-positive: 1;
+    flex-grow: 1;
+    margin-top: 8px;
+    text-align: center
+}
+
+.modalCloseButton-3H1UKI {
+    position: absolute;
+    top: 16px;
+    right: 16px
+}
+
+.cancel-3q2TOR {
+    margin-right: 8px
+}
+
 .spacing-30Ugox {}
 
 .headerSpacing-358R3d {
@@ -161877,4 +161910,4 @@ html .invoiceCancelRow-dVOR64 {
     flex-direction: column
 }
 
-/*# sourceMappingURL=40532.7827239cf19ea1a423e3.css.map*/
+/*# sourceMappingURL=40532.2a91cc4f3c95b36c7412.css.map*/
