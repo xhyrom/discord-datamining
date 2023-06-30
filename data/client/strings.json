@@ -4182,6 +4182,7 @@
   "INVITE_TO_SERVER": "\"Invite to Server\"",
   "INVITE_SENDING": "\"Sending invite\"",
   "INVITE_SENT": "\"Invite Sent\"",
+  "INVITE_SENT_EXCLAMATION": "\"Invite sent!\"",
   "SEARCH_WITH_GOOGLE": "\"Search with Google\"",
   "JUMP_TO_CHANNEL": "\"Jump to Channel\"",
   "ERROR": "\"Error\"",
