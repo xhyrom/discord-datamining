@@ -2614,6 +2614,14 @@
       "OPTIONS"
     ]
   },
+  "APPLICATION_SKUS": {
+    "url": "/applications/:param/skus",
+    "allowed_methods": [
+      "GET",
+      "HEAD",
+      "OPTIONS"
+    ]
+  },
   "STORE_EULA": {
     "url": "/store/eulas/:param",
     "allowed_methods": [
