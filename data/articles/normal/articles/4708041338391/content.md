@@ -7,8 +7,7 @@
 <p>Servers you have boosted will keep those boosts until your next billing period. After that, your Boosting subscription will end, and your boosts will be removed from those servers. You will not be able to purchase new boosts until further notice.</p>
 <h2>Gifting and Gift Redemptions</h2>
 <p>If you are located in Russia or use a Russian payment method, you will be unable to purchase, redeem, or access gifted Nitro subscriptions until further notice. Any unredeemed gifts will remain in your Gift Inventory, but you will be unable to access them at this time.</p>
-<h3>Please note: If someone offers to donate, trade, or sell you a gift subscription, <strong>you will not be able to redeem it</strong>. If you think it might be a scam, please <a style="background-color: #ffffff;" href="https://support.discord.com/hc/en-us/requests/new?ticket_form_id=360000029731" target="_blank" rel="noopener noreferrer">report the message to our Trust &amp; Safety team.</a>
-</h3>
+<h3>Please note: If someone offers to donate, trade, or sell you a gift subscription, <strong>you will not be able to redeem it</strong>. If you think it might be a scam, please report the message to our Trust &amp; Safety team.</h3>
 <h2>Refunds</h2>
 <p><span style="font-weight: 400;">At this time, we are unable to guarantee that refunds can be successfully processed in Russia or for Russian payment methods. Please note that all recurring subscriptions will not renew and you will not be charged for your next billing cycle.</span></p>
 <p><span style="font-weight: 400;">If you have questions, you can always contact our support team here:(</span><a href="http://dis.gd/billing"><span style="font-weight: 400;">http://dis.gd/billing</span></a><span style="font-weight: 400;">).</span></p>
