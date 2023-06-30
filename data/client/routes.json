@@ -909,13 +909,6 @@
       "POST"
     ]
   },
-  "MESSAGE_LOG_GUILD_CHANNELS": {
-    "url": "/messages-log/guild-channels/get",
-    "allowed_methods": [
-      "OPTIONS",
-      "POST"
-    ]
-  },
   "BACKGROUND_SYNC": {
     "url": "/users/@me/background-sync",
     "allowed_methods": [
