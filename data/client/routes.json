@@ -1067,6 +1067,16 @@
     "url": "/channels/:param/convert",
     "allowed_methods": null
   },
+  "CHANNEL_ACK": {
+    "url": "/channels/:param/messages/ack",
+    "allowed_methods": [
+      "DELETE",
+      "GET",
+      "HEAD",
+      "OPTIONS",
+      "PATCH"
+    ]
+  },
   "CHANNEL_STORE_LISTING": {
     "url": "/channels/:param/store-listing",
     "allowed_methods": [
@@ -2746,13 +2756,6 @@
       "HEAD",
       "OPTIONS",
       "POST"
-    ]
-  },
-  "USER_GIFT_CODE_REVOKE": {
-    "url": "/users/@me/entitlements/gift-codes/:param",
-    "allowed_methods": [
-      "DELETE",
-      "OPTIONS"
     ]
   },
   "USER_GIFT_CODES": {
