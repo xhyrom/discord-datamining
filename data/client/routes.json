@@ -2841,10 +2841,6 @@
       "PATCH"
     ]
   },
-  "GUILD_DISCOVERY_UPDATE_CATEGORY": {
-    "url": "/guilds/:param/discovery-categories/:param",
-    "allowed_methods": null
-  },
   "STREAM_PREVIEW": {
     "url": "/streams/:param/preview",
     "allowed_methods": [
