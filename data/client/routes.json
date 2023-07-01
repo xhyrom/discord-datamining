@@ -742,6 +742,17 @@
       "PUT"
     ]
   },
+  "BROADCAST_CHANNELS": {
+    "url": "/channels/broadcast-channels",
+    "allowed_methods": [
+      "DELETE",
+      "GET",
+      "HEAD",
+      "OPTIONS",
+      "PATCH",
+      "PUT"
+    ]
+  },
   "THREAD_MEMBER": {
     "url": "/channels/:param/thread-members/:param",
     "allowed_methods": [
