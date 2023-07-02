@@ -631,6 +631,10 @@
       "POST"
     ]
   },
+  "GUILD_HOME_HEADER": {
+    "url": "/guilds/:param/home-headers/:param.jpg",
+    "allowed_methods": null
+  },
   "GUILD_WELCOME_SCREEN": {
     "url": "/guilds/:param/welcome-screen",
     "allowed_methods": [
@@ -664,6 +668,18 @@
       "GET",
       "HEAD",
       "OPTIONS"
+    ]
+  },
+  "GUILD_MEMBER_REQUEST_TO_JOIN": {
+    "url": "/guilds/:param/requests/@me",
+    "allowed_methods": [
+      "DELETE",
+      "GET",
+      "HEAD",
+      "OPTIONS",
+      "PATCH",
+      "POST",
+      "PUT"
     ]
   },
   "GUILD_JOIN_REQUEST": {
@@ -796,6 +812,10 @@
   },
   "USER_BANNER": {
     "url": "/users/:param/banners/:param.:param",
+    "allowed_methods": null
+  },
+  "AVATAR_DECORATIONS": {
+    "url": "/users/:param/avatar-decorations/:param.:param",
     "allowed_methods": null
   },
   "AVATAR_DECORATION_PRESETS": {
