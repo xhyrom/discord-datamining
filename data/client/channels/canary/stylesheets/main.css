@@ -130384,87 +130384,22 @@ input::-webkit-outer-spin-button {
     margin-bottom: 24px
 }
 
-.avatar-3Q7DWY {
-    width: 24px
+.container-nB1UVn {
+    border: 1px solid var(--primary-800);
+    border-radius: var(--radius-sm);
+    padding: 8px
 }
 
-.avatar-3Q7DWY,
-.userListOverflow-1suxEu {
-    height: 24px;
-    border-radius: 50%
+.keybindHintKeys-1DcJot {
+    display: inline-block
 }
 
-.userListOverflow-1suxEu {
-    -webkit-box-sizing: border-box;
-    box-sizing: border-box;
-    font-size: 12px;
-    font-weight: 700;
-    min-width: 24px;
-    line-height: 25px;
-    padding: 0 5px 0 4px;
-    background-color: var(--background-primary);
-    color: var(--text-normal)
+.keybindShortcut-1eeJEE {
+    height: 20px
 }
 
-.voiceUserList-2xsfcA {
-    margin-left: 5px;
-    margin-right: 8px;
-    cursor: default
-}
-
-.channelIcon-1BydE- {
-    -webkit-box-flex: 0;
-    -ms-flex: 0 0 auto;
-    flex: 0 0 auto;
-    margin-right: 5px;
-    color: var(--text-muted)
-}
-
-.selected-3XnKRK .channelIcon-1BydE- {
-    color: var(--interactive-active)
-}
-
-.channelInfo-3xAwr2 {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
-    width: 100%
-}
-
-.channelName-3Ezu2W {
-    -webkit-box-flex: 1;
-    -ms-flex: 1 1 auto;
-    flex: 1 1 auto;
-    overflow: hidden;
-    white-space: nowrap;
-    text-overflow: ellipsis
-}
-
-.divider-1hrwMv {
-    width: 100%;
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    height: 1px;
-    opacity: 0;
-    z-index: 1
-}
-
-.divider-1hrwMv.separator-1BMOP1 {
-    opacity: 1
-}
-
-.theme-dark .separator-1BMOP1 {
-    -webkit-box-shadow: 0 1px 0 0 hsl(var(--primary-800-hsl)/.3), 0 1px 2px 0 hsl(var(--primary-800-hsl)/.3);
-    box-shadow: 0 1px 0 0 hsl(var(--primary-800-hsl)/.3), 0 1px 2px 0 hsl(var(--primary-800-hsl)/.3)
-}
-
-.theme-light .separator-1BMOP1 {
-    -webkit-box-shadow: 0 1px 0 0 hsl(var(--primary-300-hsl)/.3);
-    box-shadow: 0 1px 0 0 hsl(var(--primary-300-hsl)/.3)
+.formSwitch-mbAbTz {
+    margin-bottom: 0
 }
 
 .modalSize-3WSXDU {
@@ -130555,6 +130490,89 @@ input::-webkit-outer-spin-button {
 
 .theme-light .art-1TvEXv {
     background-image: url(/assets/e346e6a656f54e928bddef4ca3db088a.svg)
+}
+
+.avatar-3Q7DWY {
+    width: 24px
+}
+
+.avatar-3Q7DWY,
+.userListOverflow-1suxEu {
+    height: 24px;
+    border-radius: 50%
+}
+
+.userListOverflow-1suxEu {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    font-size: 12px;
+    font-weight: 700;
+    min-width: 24px;
+    line-height: 25px;
+    padding: 0 5px 0 4px;
+    background-color: var(--background-primary);
+    color: var(--text-normal)
+}
+
+.voiceUserList-2xsfcA {
+    margin-left: 5px;
+    margin-right: 8px;
+    cursor: default
+}
+
+.channelIcon-1BydE- {
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 auto;
+    flex: 0 0 auto;
+    margin-right: 5px;
+    color: var(--text-muted)
+}
+
+.selected-3XnKRK .channelIcon-1BydE- {
+    color: var(--interactive-active)
+}
+
+.channelInfo-3xAwr2 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    width: 100%
+}
+
+.channelName-3Ezu2W {
+    -webkit-box-flex: 1;
+    -ms-flex: 1 1 auto;
+    flex: 1 1 auto;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis
+}
+
+.divider-1hrwMv {
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 1px;
+    opacity: 0;
+    z-index: 1
+}
+
+.divider-1hrwMv.separator-1BMOP1 {
+    opacity: 1
+}
+
+.theme-dark .separator-1BMOP1 {
+    -webkit-box-shadow: 0 1px 0 0 hsl(var(--primary-800-hsl)/.3), 0 1px 2px 0 hsl(var(--primary-800-hsl)/.3);
+    box-shadow: 0 1px 0 0 hsl(var(--primary-800-hsl)/.3), 0 1px 2px 0 hsl(var(--primary-800-hsl)/.3)
+}
+
+.theme-light .separator-1BMOP1 {
+    -webkit-box-shadow: 0 1px 0 0 hsl(var(--primary-300-hsl)/.3);
+    box-shadow: 0 1px 0 0 hsl(var(--primary-300-hsl)/.3)
 }
 
 .title-3ZR76d {}
@@ -162094,4 +162112,4 @@ html .invoiceCancelRow-dVOR64 {
     flex-direction: column
 }
 
-/*# sourceMappingURL=40532.eb90aa5c44c5b051ffad.css.map*/
+/*# sourceMappingURL=40532.e197208e8cf597c9d2ee.css.map*/
