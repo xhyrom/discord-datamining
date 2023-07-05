@@ -15027,7 +15027,7 @@
   "MEDIA_CHANNEL_ADMIN_EDUCATION_HIDE": "\"Hide channel benefits\"",
   "MEDIA_POST_SHARE_PROMPT_TITLE": "\"Share this post with your community!\"",
   "MEDIA_POST_SHARE_PROMPT_SUBTITLE": "\"[Learn more]({helpArticleUrl}) about how sharing works.\"",
-  "MEDIA_POST_SHARE_PROMPT_SUBTITLE_MOBILE": "\"The easiest way to get more eyes on your content is to share it across your server!\"",
+  "MEDIA_POST_SHARE_PROMPT_SUBTITLE_MOBILE": "\"[Learn more](helpArticleUrl) about how sharing works.\"",
   "MEDIA_POST_SHARE_PROMPT_CTA": "\"Copy post link\"",
   "MEDIA_POST_ADMIN_EDUCATION_SERVER_SUB_PILL": "\"SERVER SUB EXCLUSIVE\"",
   "MEDIA_POST_ADMIN_EDUCATION_SHARE_TITLE": "\"Share exclusive videos and photos with subscribers!\"",
