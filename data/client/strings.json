@@ -4605,6 +4605,7 @@
   "FRIENDS_REQUEST_STATUS_INCOMING": "\"Incoming Friend Request\"",
   "FRIENDS_ADD_BY_USERNAME": "\"Add by Username\"",
   "FRIENDS_CONTACT_SYNC_CTA": "\"Find Your Friends\"",
+  "FRIENDS_CONTACT_SUGGESTION_ADDED": "\"Friend request sent\"",
   "CONTACTS": "\"Contacts\"",
   "CONTACTS_ON_DISCORD": "\"Contacts on Discord\"",
   "FRIEND_REQUEST_NO_RESULTS_FOUND": "\"Wumpus looked, but couldn’t find anyone with that name.\"",
