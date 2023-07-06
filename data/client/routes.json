@@ -1352,14 +1352,6 @@
       "POST"
     ]
   },
-  "CONNECTIONS": {
-    "url": "/users/@me/connections",
-    "allowed_methods": [
-      "GET",
-      "HEAD",
-      "OPTIONS"
-    ]
-  },
   "CONNECTIONS_AUTHORIZE": {
     "url": "/connections/:param/authorize",
     "allowed_methods": [
@@ -2808,14 +2800,6 @@
       "OPTIONS"
     ]
   },
-  "GUILD_DISCOVERY_CATEGORIES": {
-    "url": "/discovery/categories",
-    "allowed_methods": [
-      "GET",
-      "HEAD",
-      "OPTIONS"
-    ]
-  },
   "GUILD_DISCOVERY_VALID_TERM": {
     "url": "/discovery/valid-term",
     "allowed_methods": [
@@ -2908,10 +2892,6 @@
       "OPTIONS"
     ]
   },
-  "FUNIMATION_PROMOTION": {
-    "url": "/promotions/funimation",
-    "allowed_methods": null
-  },
   "PARTNERS_CONNECTIONS": {
     "url": "/partners/connections",
     "allowed_methods": [
@@ -2998,13 +2978,6 @@
       "OPTIONS"
     ]
   },
-  "INTERACTIONS": {
-    "url": "/interactions",
-    "allowed_methods": [
-      "OPTIONS",
-      "POST"
-    ]
-  },
   "MESSAGE_INTERACTION_DATA": {
     "url": "/channels/:param/messages/:param/interaction-data",
     "allowed_methods": [
@@ -3082,13 +3055,6 @@
       "OPTIONS"
     ]
   },
-  "SUBMIT_REPORT_MENU": {
-    "url": "/reporting/:param",
-    "allowed_methods": [
-      "OPTIONS",
-      "POST"
-    ]
-  },
   "STAGE_INSTANCES": {
     "url": "/stage-instances",
     "allowed_methods": [
@@ -3098,16 +3064,6 @@
   },
   "STAGE_INSTANCES_EXTRA": {
     "url": "/stage-instances/extra",
-    "allowed_methods": [
-      "DELETE",
-      "GET",
-      "HEAD",
-      "OPTIONS",
-      "PATCH"
-    ]
-  },
-  "STAGE_INSTANCE": {
-    "url": "/stage-instances/:param",
     "allowed_methods": [
       "DELETE",
       "GET",
@@ -3151,14 +3107,6 @@
       "POST"
     ]
   },
-  "GUILD_EVENT_USERS": {
-    "url": "/guilds/:param/scheduled-events/:param/users",
-    "allowed_methods": [
-      "GET",
-      "HEAD",
-      "OPTIONS"
-    ]
-  },
   "USER_GUILD_EVENT": {
     "url": "/guilds/:param/scheduled-events/:param/users/@me",
     "allowed_methods": [
@@ -3196,6 +3144,16 @@
       "POST"
     ]
   },
+  "GUILD_AUTOMOD_RULE": {
+    "url": "/guilds/:param/auto-moderation/rules/:param",
+    "allowed_methods": [
+      "DELETE",
+      "GET",
+      "HEAD",
+      "OPTIONS",
+      "PATCH"
+    ]
+  },
   "GUILD_AUTOMOD_VALIDATE_RULE": {
     "url": "/guilds/:param/auto-moderation/rules/validate",
     "allowed_methods": [
@@ -3212,20 +3170,6 @@
     "allowed_methods": [
       "OPTIONS",
       "POST"
-    ]
-  },
-  "GUILD_AUTOMOD_ALERT_ACTION": {
-    "url": "/guilds/:param/auto-moderation/alert-action",
-    "allowed_methods": [
-      "OPTIONS",
-      "POST"
-    ]
-  },
-  "GUILD_INCIDENT_ACTIONS": {
-    "url": "/guilds/:param/incident-actions",
-    "allowed_methods": [
-      "OPTIONS",
-      "PUT"
     ]
   },
   "GUILD_INCIDENT_REPORT_FALSE_ALARM": {
