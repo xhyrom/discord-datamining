@@ -81959,7 +81959,9 @@ strong {
     align-items: center;
     -webkit-box-pack: right;
     -ms-flex-pack: right;
-    justify-content: right
+    justify-content: right;
+    height: 16px;
+    overflow: visible
 }
 
 .overflow-24rSZ8 {
@@ -162166,4 +162168,4 @@ html .invoiceCancelRow-dVOR64 {
     flex-direction: column
 }
 
-/*# sourceMappingURL=40532.4788b71d5ce93844839e.css.map*/
+/*# sourceMappingURL=40532.19d790f498853d1aa8e0.css.map*/
