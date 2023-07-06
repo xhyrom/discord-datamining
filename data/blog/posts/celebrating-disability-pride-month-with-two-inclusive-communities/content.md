@@ -27,7 +27,7 @@
             </figure>
             <p>Community leader RaiderGoldenPup explains: “People come into our server all the time where they think they have ADHD but aren't sure. We help them understand why they are thinking the way they are and help them find medical professionals and help [them] figure out what topics need to be brought up to their doctor.”</p>
             <p>ADHD Dopamine offers all types of support from dozens of channels with information to plenty of spaces to chat and make new friends. There are App commands that help explain important terminology and a variety of channels to body double, share hyperfixations or just connect with each other. If there are any questions you may have for your peers, if you need to speak with someone who gets it, or to just have fun with similar people, ADHD Dopamine will be there for you.</p>
-            <p>You can find the ADHD Dopamine community in-app on Server Discovery, or at discord.com/servers.<br>‍</p>
+            <p>You can find the ADHD Dopamine community in-app on Server Discovery, or at <a href="https://discord.com/servers">discord.com/servers</a>.<br>‍</p>
         </div>
     </div>
     <div id="heading-3" class="rich-wrapper">
