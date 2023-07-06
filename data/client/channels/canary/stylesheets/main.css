@@ -154704,6 +154704,49 @@ html .invoiceCancelRow-3s2UuC {
     color: var(--primary-400)
 }
 
+.settingsTabBar-G3rM20 {
+    border-bottom: 1px solid var(--background-modifier-accent);
+    margin-bottom: 24px
+}
+
+.settingsTabBarItem-3HOVSc {
+    margin-right: 16px;
+    margin-left: 16px;
+    padding-bottom: 14px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center
+}
+
+.settingsTabBarItem-3HOVSc:first-child {
+    margin-left: 0
+}
+
+.contentPanel-2OKUNr {
+    -webkit-box-flex: 1;
+    -ms-flex: 1 1 auto;
+    flex: 1 1 auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: stretch;
+    -ms-flex-pack: stretch;
+    justify-content: stretch;
+    -webkit-box-align: stretch;
+    -ms-flex-align: stretch;
+    align-items: stretch;
+    position: relative;
+    overflow-y: auto;
+    overflow-x: hidden
+}
+
 .description-21ac5O {
     white-space: pre-wrap
 }
@@ -162168,4 +162211,4 @@ html .invoiceCancelRow-dVOR64 {
     flex-direction: column
 }
 
-/*# sourceMappingURL=40532.19d790f498853d1aa8e0.css.map*/
+/*# sourceMappingURL=40532.842e838379c7b18119be.css.map*/
