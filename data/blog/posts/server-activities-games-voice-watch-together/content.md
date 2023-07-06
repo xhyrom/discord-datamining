@@ -41,26 +41,28 @@
         <div class="blog-post-content w-richtext">
             <h2><strong>What Games and Activities are Available?</strong></h2>
             <figure class="w-richtext-figure-type-image w-richtext-align-fullwidth" style="max-width:1600pxpx">
-                <div><img src="https://assets-global.website-files.com/5f9072399b2640f14d6a2bf4/648b3e8a7a63df5ca26b71b5_4iFKPYhDhjxe84fNt-SwGBFCM6aSwf2Je3Jzz1KMQFnW7j25fcCwOXvdk3cf1Ul0bmjoUllgcETFWHuno7lN_rODOeJUQ281QKsqqxxdoMHoA22pcPaK_CQprfw0WYM6HVJOXO-WDYA9l8KsxMinBk8.png" alt="Key artwork for all currently available Activities on Discord."></div>
+                <div><img src="https://assets-global.website-files.com/5f9072399b2640f14d6a2bf4/64a6f3840f17f0e36f60bc3e_6LJ1aYlIhOmhLH3EuSX21Dc2oDtz_2lDTHsWqJ4vophKGWXgI8ofBet0-nNTzlREPJvuc6LTRljKOrylFEJ-FK3y9zpxEcjhvKpxZzTEo9eU9vZk2M-q34F2LQsC0lVQpvkUY4_NpPa-0N9SUNrrNNw.png" alt="Key artwork for all currently available Activities on Discord. "></div>
             </figure>
             <p>Activities can be launched in either a server’s Voice channels or in a DM Voice call. Check out the entirety of currently-available Activities. <br></p>
             <ul role="list">
                 <li><strong>Watch Together</strong>: Enjoy the same YouTube video at the same time.&nbsp;</li>
                 <li><strong>Gartic Phone</strong>:<strong> </strong>Bring the phrase “sneaky stinky shoebill” to life by drawing it… poorly.</li>
-                <li>‍<strong>Poker Night 2.0</strong>: Give your Voice channel that Vegas high-roller vibe.&nbsp;</li>
+                <li><strong>Poker Night 2.0</strong>: Give your Voice channel that Vegas high-roller vibe.&nbsp;</li>
                 <li><strong>Putt Party Paradise</strong>: Mini golf, mega drama. Now with more levels and new power-ups.&nbsp;</li>
                 <li><strong>Chess in the Park</strong>: One of the world’s classiest board games.&nbsp;</li>
                 <li><strong>Checkers in the Park</strong>: More laid-back than chess, and even more kings.</li>
                 <li><strong>Land-io</strong>: Claim territory and become outstanding in your field(s).</li>
                 <li><strong>Letter League</strong>: Wow, that’s a real word? That’s a lot of points.</li>
+                <li><strong>SpellCast</strong>: Wow, that’s a real word? Also, you’re a wizard.</li>
                 <li><strong>Sketch Heads</strong>: Okay, so they’re either drawing a snake or a sandwich.&nbsp;</li>
-                <li><strong>Blazing 8s: </strong>Get rid of your hand first or cry trying.</li>
-                <li><strong>Bobble League: </strong>Score goals as the coach of the world’s bobble-est team ever.</li>
+                <li><strong>Blazing 8s:</strong> Get rid of your hand first or cry trying.</li>
+                <li><strong>Bobble League:</strong> Score goals as the coach of the world’s bobble-est team ever.</li>
                 <li><strong>Know What I Meme</strong>: The perfect place to repost the same capybara GIF for the hundredth time.</li>
                 <li><strong>Jamspace</strong> - A collaborative digital whiteboard anyone in the call can contribute to. Map out your next MMO raid mid-call or just doodle together!</li>
+                <li><strong>[NEW] Color Together</strong>: The dress was always black and gold, now color it so.&nbsp;<em>‍</em><strong>‍</strong></li>
             </ul>
-            <p>For the full low-down on how Activities work, repeat after me: “The Help Center article can be <a href="https://support.discord.com/hc/en-us/articles/4422142836759-Activities-Experiment">found here</a>.” (Good job!)</p>
-            <h4><em>Note: This list of Activities was last updated on June 15, 2023.&nbsp;<br>‍</em>‍</h4>
+            <p><strong><em>Note: </em><em>This list of Activities was last updated on July 6, 2023.&nbsp;</em></strong></p>
+            <p>For the full low-down on how Activities work, repeat after me: “The Help Center article can be <a href="https://support.discord.com/hc/en-us/articles/4422142836759-Activities-Experiment">found here</a>.” (Good job!)&nbsp;<em><br>‍</em>‍</p>
         </div>
     </div>
     <div id="heading-4" class="rich-wrapper">
@@ -82,6 +84,7 @@
                 <li><a href="https://support.discord.com/hc/en-us/articles/4404366703255-Discord-Chess-in-the-Park-FAQ">Chess in the Park</a></li>
                 <li><a href="https://support.discord.com/hc/en-us/articles/4409235005207-Doodle-Crew-FAQ">Sketch Heads</a></li>
                 <li><a href="https://support.discord.com/hc/en-us/articles/4409244345239-Letter-Tile-FAQ">Letter League</a></li>
+                <li><a href="https://frvr.com/support/">SpellCast</a></li>
                 <li><a href="https://support.discord.com/hc/en-us/articles/4413835060119-Checkers-In-The-Park-FAQ">Checkers in the Park</a></li>
                 <li><a href="https://support.discord.com/hc/en-us/articles/4420143548951-Ocho-FAQ">Blazing 8s</a></li>
                 <li><a href="https://support.discord.com/hc/en-us/articles/4977911076119">Land-io</a></li>
@@ -91,6 +94,7 @@
                 <li><a href="https://support.discord.com/hc/en-us/articles/7552538635031-Know-What-I-Meme-FAQ">Know What I Meme</a></li>
                 <li><a href="https://garticphone.com/discord-help">Gartic Phone</a></li>
                 <li><a href="https://support.discord.com/hc/en-us/articles/14042410493847-Jamspace-FAQ">Jamspace</a></li>
+                <li><a href="https://www.fundaygames.dk/discord/color-together-play-guide">Color Together</a></li>
             </ul>
             <p>And of course, you’ll always find us on the usual places: <a href="https://twitter.com/discord">Twitter</a>, <a href="https://www.instagram.com/discord/">Instagram</a> or <a href="https://www.tiktok.com/@discord">TikTok</a>. Try making a good ol’ fashioned montage of your sick Putt Party plays and share it with us!&nbsp;</p>
         </div>
