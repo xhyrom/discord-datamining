@@ -39951,13 +39951,25 @@ html .progress-2Otdc- {
     padding: 4px 12px;
     border-radius: 30px;
     color: var(--white-500);
-    background: hsl(var(--black-500-hsl)/.6);
-    white-space: nowrap
+    background-color: rgba(43, 45, 49, .7);
+    white-space: nowrap;
+    -webkit-transition: background-color .2s ease-in-out;
+    transition: background-color .2s ease-in-out
+}
+
+.productThumbnailContainer-iSvWHI:hover .purchaseToUnlockBadge-A3TLAq {
+    background-color: rgba(43, 45, 49, .45)
 }
 
 .lockIcon-2PpbsO {
     width: 16px;
     height: 16px
+}
+
+.productName-3jtJ0D {
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden
 }
 
 .productDetails-18hXGG {
@@ -132337,7 +132349,7 @@ html .invoiceCancelRow-3s2UuC {
     height: 76px;
     cursor: pointer;
     overflow: hidden;
-    border-radius: var(--radius-xs)
+    border-radius: 6px
 }
 
 .uploadButton-21GBRt {
@@ -132506,7 +132518,7 @@ html .invoiceCancelRow-3s2UuC {
     -ms-flex-align: center;
     align-items: center;
     padding: 12px 10px;
-    border-radius: 4px;
+    border-radius: 6px;
     background-color: var(--background-secondary);
     border: 1px solid var(--background-modifier-active)
 }
@@ -132576,8 +132588,7 @@ html .invoiceCancelRow-3s2UuC {
     -webkit-box-direction: normal;
     -ms-flex-direction: column;
     flex-direction: column;
-    gap: 24px;
-    border-right: 1px solid var(--background-modifier-accent)
+    gap: 24px
 }
 
 .thumbnailLabel-pdvYTa {
@@ -132592,7 +132603,8 @@ html .invoiceCancelRow-3s2UuC {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
     -ms-flex-direction: column;
-    flex-direction: column
+    flex-direction: column;
+    border-left: 1px solid var(--background-modifier-accent)
 }
 
 .previewHeading-obFXK_ {
@@ -132633,6 +132645,10 @@ html .invoiceCancelRow-3s2UuC {
     border-radius: 8px;
     padding: 7px 10px;
     cursor: pointer
+}
+
+.disabled-1_Bxxh {
+    cursor: not-allowed
 }
 
 .container-3JugSj {
@@ -162110,4 +162126,4 @@ html .invoiceCancelRow-dVOR64 {
     flex-direction: column
 }
 
-/*# sourceMappingURL=40532.e59742a9542fad79f751.css.map*/
+/*# sourceMappingURL=40532.11b50e89451fc5946802.css.map*/
