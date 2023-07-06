@@ -2538,6 +2538,13 @@
       "OPTIONS"
     ]
   },
+  "STORE_EMAIL_RESEND_PAYMENT_VERIFICATION": {
+    "url": "/store/email/resend-payment-verification",
+    "allowed_methods": [
+      "OPTIONS",
+      "POST"
+    ]
+  },
   "STORE_PUBLISHED_LISTINGS_APPLICATIONS": {
     "url": "/store/published-listings/applications",
     "allowed_methods": [
@@ -3948,6 +3955,14 @@
       "HEAD",
       "OPTIONS",
       "PATCH"
+    ]
+  },
+  "GUILD_ENTITLEMENTS": {
+    "url": "/guilds/:param/entitlements",
+    "allowed_methods": [
+      "GET",
+      "HEAD",
+      "OPTIONS"
     ]
   },
   "GUILD_ROLE_CONNECTIONS_CONFIGURATION": {
