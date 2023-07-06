@@ -1721,14 +1721,6 @@
       "POST"
     ]
   },
-  "REGIONS": {
-    "url": "/guilds/:param/regions",
-    "allowed_methods": [
-      "GET",
-      "HEAD",
-      "OPTIONS"
-    ]
-  },
   "DEBUG_LOG": {
     "url": "/debug-logs/:param/:param",
     "allowed_methods": [
@@ -2060,15 +2052,6 @@
     "url": "/channels/:param/messages/:param/reactions",
     "allowed_methods": [
       "DELETE",
-      "OPTIONS"
-    ]
-  },
-  "REMOVE_EMOJI_REACTIONS": {
-    "url": "/channels/:param/messages/:param/reactions/:param",
-    "allowed_methods": [
-      "DELETE",
-      "GET",
-      "HEAD",
       "OPTIONS"
     ]
   },
