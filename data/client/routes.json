@@ -1567,6 +1567,13 @@
       "POST"
     ]
   },
+  "REMOTE_AUTH_FINISH": {
+    "url": "/users/@me/remote-auth/finish",
+    "allowed_methods": [
+      "OPTIONS",
+      "POST"
+    ]
+  },
   "LOGOUT": {
     "url": "/auth/logout",
     "allowed_methods": [
