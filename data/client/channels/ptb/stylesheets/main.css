@@ -20809,7 +20809,11 @@ html.disable-forced-colors * {
 }
 
 .heading-3P5RIL {
-    margin-bottom: 24px
+    margin-bottom: 8px
+}
+
+.context-3zt8nW {
+    margin-bottom: 16px
 }
 
 .gradientUpsellWrapper-10fDYZ {
@@ -20828,7 +20832,8 @@ html.disable-forced-colors * {
     -ms-flex-direction: column;
     flex-direction: column;
     padding: 24px 16px;
-    width: 100%
+    width: 100%;
+    margin-top: 16px
 }
 
 .gradientUpsellWrapper-10fDYZ a,
@@ -162133,4 +162138,4 @@ html .invoiceCancelRow-dVOR64 {
     flex-direction: column
 }
 
-/*# sourceMappingURL=40532.ed7a6dd24d17b500bb9e.css.map*/
+/*# sourceMappingURL=40532.057974f03fd68126ed65.css.map*/
