@@ -30067,35 +30067,6 @@ img[alt] {
     padding-bottom: 16px
 }
 
-.bogoPromo-WNXw7H {
-    background: linear-gradient(97.5deg, var(--premium-tier-2-purple-for-gradients), var(--premium-tier-2-purple-for-gradients-2) 50%, var(--premium-tier-2-pink-for-gradients));
-    border-radius: 4px;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    justify-content: center;
-    vertical-align: center;
-    text-align: center;
-    text-transform: uppercase;
-    padding: 16px 4px
-}
-
-.giftIcon-1n-FNE {
-    color: #fff
-}
-
-.textHeader-1ptkaY {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
-    margin-left: 10px
-}
-
 .noticeRoot-dNwFD- {
     -webkit-box-align: center;
     -ms-flex-align: center;
@@ -30895,6 +30866,58 @@ img[alt] {
     font-weight: 500;
     line-height: 20px;
     text-align: center
+}
+
+.bannerContainer-22r3cH {
+    height: 48px;
+    width: 408px;
+    position: relative
+}
+
+.giftIcon-1n-FNE {
+    color: #fff
+}
+
+.textContainer-32LZ2b {
+    position: absolute;
+    top: 0;
+    height: 48px;
+    width: 408px;
+    max-width: 408px;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    text-align: center;
+    text-transform: uppercase
+}
+
+.textContainer-32LZ2b,
+.textHeader-1ptkaY {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center
+}
+
+.textHeader-1ptkaY {
+    margin-left: 10px
+}
+
+.banner-2EqGlC {
+    border-radius: 4px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    vertical-align: center;
+    text-align: center;
+    text-transform: uppercase;
+    margin-top: 4px;
+    margin-bottom: 4px
 }
 
 .planSelectSeparatorLower-1fnlBj,
@@ -162138,4 +162161,4 @@ html .invoiceCancelRow-dVOR64 {
     flex-direction: column
 }
 
-/*# sourceMappingURL=40532.057974f03fd68126ed65.css.map*/
+/*# sourceMappingURL=40532.43093cd41dfd412fc14f.css.map*/
