@@ -13214,6 +13214,7 @@
   "BOGO_UNTIL_OFFER_ENDS": "\"{hours}:{minutes}:{seconds} Until Offer Ends\"",
   "BOGO_UNTIL_OFFER_ENDS_DAYS": "\"{days, plural, =1 {# Day} other {# Days}} Until Offer Ends\"",
   "BOGO_PERKS_SUBTITLE": "\"Try the latest perks: Remix, Avatar Decorations, and Clyde!\"",
+  "BOGO_PILL": "\"Buy 1, Get 1\"",
   "INTERACTION_PREMIUM_UPSELL_CTA": "\"Upgrade\"",
   "FOR_YOU": "\"For You\"",
   "FOR_YOU_EMPTY_TITLE": "\"Nothing here yet\"",
