@@ -2018,14 +2018,6 @@
       "POST"
     ]
   },
-  "GUILD_WEBHOOKS": {
-    "url": "/guilds/:param/webhooks",
-    "allowed_methods": [
-      "GET",
-      "HEAD",
-      "OPTIONS"
-    ]
-  },
   "WEBHOOK": {
     "url": "/webhooks/:param",
     "allowed_methods": [
