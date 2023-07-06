@@ -22529,6 +22529,7 @@ html.disable-forced-colors * {
     height: 100%
 }
 
+.allowsScrolling-DbsGWA,
 .mobileApp-3_TCAV {
     overflow: auto
 }
@@ -39637,6 +39638,11 @@ html .progress-2Otdc- {
 
 .directoryContainerMobile-1L74Qb {
     padding: 32px 16px 64px;
+    overflow: auto !important
+}
+
+.directoryContainerTablet-2CBNK0 {
+    padding: 32px 32px 64px;
     overflow: auto !important
 }
 
@@ -162162,4 +162168,4 @@ html .invoiceCancelRow-dVOR64 {
     flex-direction: column
 }
 
-/*# sourceMappingURL=40532.232f82a6ea109dbd5380.css.map*/
+/*# sourceMappingURL=40532.9a38268551b46290c2d8.css.map*/
