@@ -66,7 +66,8 @@
           "1021478553033920544",
           "533420789547139077",
           "996817886695927808",
-          "834846951068532756"
+          "834846951068532756",
+          "1126183992295694408"
         ]
       },
       "overrides_formatted": []
@@ -4501,6 +4502,63 @@
   {
     "data": {
       "kind": "user",
+      "id": "2023-06_bogo_announcement_modal",
+      "label": "BOGO Announcement Modal",
+      "description": [
+        "Control",
+        "Treatment 1: Users will see the BOGO announcement modal"
+      ],
+      "hash": 2338915282,
+      "buckets": [
+        0,
+        1
+      ],
+      "config_keys": [
+        "enabled"
+      ]
+    }
+  },
+  {
+    "data": {
+      "kind": "user",
+      "id": "2023-06_bogo_promotion_gate",
+      "label": "BOGO Promotion Manager",
+      "description": [
+        "Control",
+        "Treatment 1: Enable BOGO Promotion Manager"
+      ],
+      "hash": 680908968,
+      "buckets": [
+        0,
+        1
+      ],
+      "config_keys": [
+        "enabled"
+      ]
+    }
+  },
+  {
+    "data": {
+      "kind": "user",
+      "id": "2021-06_preview_promotions",
+      "label": "Promotions Preview",
+      "description": [
+        "Control",
+        "Treatment 1: Preview Enabled"
+      ],
+      "hash": 3704699110,
+      "buckets": [
+        0,
+        1
+      ],
+      "config_keys": [
+        "enabled"
+      ]
+    }
+  },
+  {
+    "data": {
+      "kind": "user",
       "id": "2023-02_referral_trials",
       "label": "Referral Trials",
       "description": [
@@ -7329,6 +7387,25 @@
   {
     "data": {
       "kind": "user",
+      "id": "2023-06_activity_shelf_banner_color_together",
+      "label": "Activity Shelf Banner Color Together",
+      "description": [
+        "Control",
+        "Treatment 1: Enable Activity Shelf Banner Color Together"
+      ],
+      "hash": 1426851414,
+      "buckets": [
+        0,
+        1
+      ],
+      "config_keys": [
+        "enabled"
+      ]
+    }
+  },
+  {
+    "data": {
+      "kind": "user",
       "id": "2023-06_birthday_goodbye",
       "label": "Activities Free Forever",
       "description": [
@@ -7438,44 +7515,6 @@
         0,
         1,
         2
-      ],
-      "config_keys": [
-        "enabled"
-      ]
-    }
-  },
-  {
-    "data": {
-      "kind": "user",
-      "id": "2023-06_bogo_promotion_gate",
-      "label": "BOGO Promotion Manager",
-      "description": [
-        "Control",
-        "Treatment 1: Enable BOGO Promotion Manager"
-      ],
-      "hash": 680908968,
-      "buckets": [
-        0,
-        1
-      ],
-      "config_keys": [
-        "enabled"
-      ]
-    }
-  },
-  {
-    "data": {
-      "kind": "user",
-      "id": "2021-06_preview_promotions",
-      "label": "Promotions Preview",
-      "description": [
-        "Control",
-        "Treatment 1: Preview Enabled"
-      ],
-      "hash": 3704699110,
-      "buckets": [
-        0,
-        1
       ],
       "config_keys": [
         "enabled"
