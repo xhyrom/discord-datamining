@@ -101697,27 +101697,56 @@ strong {
     font-weight: 400
 }
 
-.offerBadge-1KDtMz {
+.bogoTrialBadge-2-iWF2 {
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
-    background: linear-gradient(97.5deg, var(--premium-tier-2-purple-for-gradients), var(--premium-tier-2-purple-for-gradients-2) 50%, var(--premium-tier-2-pink-for-gradients));
-    border-radius: 12px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    padding: 1px 6px;
+    border-radius: 12px;
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 12px;
+    margin-left: auto;
+    padding: 4px 8px;
+    pointer-events: all;
     text-transform: uppercase;
-    gap: 4px
+    background-image: -webkit-gradient(linear, left top, right top, from(var(--premium-tier-2-purple-for-gradients)), to(var(--premium-tier-2-pink-for-gradients)));
+    background-image: linear-gradient(90deg, var(--premium-tier-2-purple-for-gradients), var(--premium-tier-2-pink-for-gradients));
+    color: var(--white-500)
 }
 
-.offerBadge-1KDtMz.isSelected-2AgtRL {
-    background: none
+.badgeContainer-3QrDuL {
+    position: relative;
+    margin-right: 4px
 }
 
-.premiumIcon-xakLA1 {
-    height: auto;
-    width: 14px
+.nitroTabBadgeContainer-1EIXgy {
+    margin-right: 12px
+}
+
+.star-ofcKh2 {
+    position: absolute;
+    color: var(--white)
+}
+
+.starLeft-33vGv7 {
+    bottom: -7px;
+    left: -12px
+}
+
+.starRight-g77SUT {
+    top: -8px;
+    right: -13px
+}
+
+.theme-light .starLeft-33vGv7 {
+    color: var(--premium-tier-2-purple-for-gradients)
+}
+
+.theme-light .starRight-g77SUT {
+    color: var(--premium-tier-2-pink-for-gradients)
 }
 
 .badgeIconPrivateMessages-2hN0QU {
@@ -162458,4 +162487,4 @@ html .invoiceCancelRow-dVOR64 {
     flex-direction: column
 }
 
-/*# sourceMappingURL=40532.cc2db03569cad6161d03.css.map*/
+/*# sourceMappingURL=40532.8c88dab043adad594b9f.css.map*/
