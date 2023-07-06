@@ -3295,14 +3295,6 @@
       "OPTIONS"
     ]
   },
-  "DIRECTORY_ENTRIES_BROADCAST_INFO": {
-    "url": "/guilds/:param/directory-entries/broadcast",
-    "allowed_methods": [
-      "GET",
-      "HEAD",
-      "OPTIONS"
-    ]
-  },
   "PRICE_TIERS": {
     "url": "/store/price-tiers",
     "allowed_methods": [
