@@ -136381,9 +136381,9 @@ html .invoiceCancelRow-3s2UuC {
     flex-wrap: wrap;
     margin-top: 12px;
     margin-bottom: 12px;
-    -webkit-column-gap: 16px;
-    -moz-column-gap: 16px;
-    column-gap: 16px;
+    -webkit-column-gap: 8px;
+    -moz-column-gap: 8px;
+    column-gap: 8px;
     color: var(--header-primary);
     position: relative
 }
@@ -136396,7 +136396,7 @@ html .invoiceCancelRow-3s2UuC {
 }
 
 .featureCard-37wVa- {
-    width: 317px;
+    width: 212px;
     min-height: 130px;
     background: var(--background-secondary-alt);
     border-radius: 11px;
@@ -136410,8 +136410,6 @@ html .invoiceCancelRow-3s2UuC {
 }
 
 .featureCardImg-rz2qAH {
-    width: 285px;
-    height: 128px;
     padding: 24px 16px 0
 }
 
@@ -162168,4 +162166,4 @@ html .invoiceCancelRow-dVOR64 {
     flex-direction: column
 }
 
-/*# sourceMappingURL=40532.9a38268551b46290c2d8.css.map*/
+/*# sourceMappingURL=40532.4788b71d5ce93844839e.css.map*/
