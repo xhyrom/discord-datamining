@@ -22529,6 +22529,7 @@ html.disable-forced-colors * {
     height: 100%
 }
 
+.allowsScrolling-DbsGWA,
 .mobileApp-3_TCAV {
     overflow: auto
 }
@@ -39637,6 +39638,11 @@ html .progress-2Otdc- {
 
 .directoryContainerMobile-1L74Qb {
     padding: 32px 16px 64px;
+    overflow: auto !important
+}
+
+.directoryContainerTablet-2CBNK0 {
+    padding: 32px 32px 64px;
     overflow: auto !important
 }
 
@@ -81953,7 +81959,9 @@ strong {
     align-items: center;
     -webkit-box-pack: right;
     -ms-flex-pack: right;
-    justify-content: right
+    justify-content: right;
+    height: 16px;
+    overflow: visible
 }
 
 .overflow-24rSZ8 {
@@ -98785,6 +98793,7 @@ strong {
     display: inline
 }
 
+.bogoPillWithSparkles-2cfttm,
 .freeTrialPillWithSparkles-3fINgJ {
     max-width: 100%;
     max-height: 24px;
@@ -136374,9 +136383,9 @@ html .invoiceCancelRow-3s2UuC {
     flex-wrap: wrap;
     margin-top: 12px;
     margin-bottom: 12px;
-    -webkit-column-gap: 16px;
-    -moz-column-gap: 16px;
-    column-gap: 16px;
+    -webkit-column-gap: 8px;
+    -moz-column-gap: 8px;
+    column-gap: 8px;
     color: var(--header-primary);
     position: relative
 }
@@ -136389,7 +136398,7 @@ html .invoiceCancelRow-3s2UuC {
 }
 
 .featureCard-37wVa- {
-    width: 317px;
+    width: 212px;
     min-height: 130px;
     background: var(--background-secondary-alt);
     border-radius: 11px;
@@ -136403,8 +136412,6 @@ html .invoiceCancelRow-3s2UuC {
 }
 
 .featureCardImg-rz2qAH {
-    width: 285px;
-    height: 128px;
     padding: 24px 16px 0
 }
 
@@ -162161,4 +162168,4 @@ html .invoiceCancelRow-dVOR64 {
     flex-direction: column
 }
 
-/*# sourceMappingURL=40532.43093cd41dfd412fc14f.css.map*/
+/*# sourceMappingURL=40532.19d790f498853d1aa8e0.css.map*/
