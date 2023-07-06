@@ -7,14 +7,16 @@
       "Control",
       "Treatment 1: Hide Stickers, only show 10 Emojis",
       "Treatment 2: Hide Stickers, show more Emojis without scrollbar",
-      "Treatment 3: Hide Stickers, show more Emojis with scrollbar"
+      "Treatment 3: Hide Stickers, show more Emojis with scrollbar",
+      "Treatment 4: Show Autocomplete Stickers Toggle on mobile"
     ],
     "hash": 3138896883,
     "buckets": [
       0,
       1,
       2,
-      3
+      3,
+      4
     ],
     "config_keys": [
       "enabled"
