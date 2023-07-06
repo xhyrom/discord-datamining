@@ -3196,16 +3196,6 @@
       "POST"
     ]
   },
-  "GUILD_AUTOMOD_RULE": {
-    "url": "/guilds/:param/auto-moderation/rules/:param",
-    "allowed_methods": [
-      "DELETE",
-      "GET",
-      "HEAD",
-      "OPTIONS",
-      "PATCH"
-    ]
-  },
   "GUILD_AUTOMOD_VALIDATE_RULE": {
     "url": "/guilds/:param/auto-moderation/rules/validate",
     "allowed_methods": [
@@ -4251,6 +4241,10 @@
   },
   "COLLECTIBLE_ASSET": {
     "url": "/applications/1096190356233670716/app-assets/:param.:param",
+    "allowed_methods": null
+  },
+  "SAFETY_HUB": {
+    "url": "/safety-hub",
     "allowed_methods": null
   }
 }
