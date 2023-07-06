@@ -13345,6 +13345,7 @@
   "REMOVE_FAVORITE": "\"Unfavorite\"",
   "REMOVE_FAVORITE_SUGGESTION": "\"Remove Suggestion\"",
   "OPT_IN_CHANNEL_NOTICE": "\"This channel is not on your channel list.\"",
+  "OPT_IN_CHANNEL_NOTICE_VOICE": "\"This voice channel is not on your channel list.\"",
   "OPT_IN_CHANNEL_NOTICE_CTA": "\"Add to Channel List\"",
   "OPT_IN_CHANNEL_NOTICE_MOBILE_CTA": "\"+ Add\"",
   "NEW_MESSAGES_PILL": "\"{count, plural, one {1 new message} other {{count} new messages}}\"",
