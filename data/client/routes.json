@@ -2506,15 +2506,6 @@
     "url": "/applications/trending/global",
     "allowed_methods": null
   },
-  "APPLICATION_BRANCH_LIST": {
-    "url": "/applications/:param/branches",
-    "allowed_methods": [
-      "GET",
-      "HEAD",
-      "OPTIONS",
-      "POST"
-    ]
-  },
   "LIBRARY_APPLICATION_INSTALLED": {
     "url": "/users/@me/library/:param/:param/installed",
     "allowed_methods": [
@@ -2643,14 +2634,6 @@
   },
   "ENTITLEMENTS_FOR_APPLICATION": {
     "url": "/users/@me/applications/:param/entitlements",
-    "allowed_methods": [
-      "GET",
-      "HEAD",
-      "OPTIONS"
-    ]
-  },
-  "ENTITLEMENTS_FOR_USER": {
-    "url": "/users/@me/entitlements",
     "allowed_methods": [
       "GET",
       "HEAD",
@@ -2830,15 +2813,6 @@
       "GET",
       "HEAD",
       "OPTIONS"
-    ]
-  },
-  "GUILD_DISCOVERY_METADATA": {
-    "url": "/guilds/:param/discovery-metadata",
-    "allowed_methods": [
-      "GET",
-      "HEAD",
-      "OPTIONS",
-      "PATCH"
     ]
   },
   "GUILD_DISCOVERY_UPDATE_CATEGORY": {
@@ -3576,14 +3550,6 @@
   },
   "GUILD_ROLE_SUBSCRIPTION_TRIAL_ELIGIBILITY": {
     "url": "/guilds/:param/role-subscriptions/subscription-listings/:param/trial/:param/eligibility",
-    "allowed_methods": [
-      "GET",
-      "HEAD",
-      "OPTIONS"
-    ]
-  },
-  "CREATOR_MONETIZATION_MARKETING_ONBOARDING": {
-    "url": "/guilds/:param/creator-monetization/marketing/onboarding",
     "allowed_methods": [
       "GET",
       "HEAD",
