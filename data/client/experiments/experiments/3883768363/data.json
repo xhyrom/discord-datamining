@@ -1,7 +1,20 @@
 {
   "data": {
     "kind": "guild",
-    "hash": 3883768363
+    "id": "2023-06_inventory_guild_setting",
+    "label": "Inventory Guild Settings Experiment",
+    "description": [
+      "Control",
+      "Treatment 1: Enabled"
+    ],
+    "hash": 3883768363,
+    "buckets": [
+      0,
+      1
+    ],
+    "config_keys": [
+      "enabled"
+    ]
   },
   "rollout": {
     "populations": [

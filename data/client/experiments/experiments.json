@@ -3696,6 +3696,68 @@
   },
   {
     "data": {
+      "kind": "user",
+      "id": "2023-06_inventory_reaction_tooltip",
+      "label": "Inventory Reaction Tooltip Experiment",
+      "description": [
+        "Control",
+        "Treatment 1: Enabled"
+      ],
+      "hash": 3470792155,
+      "buckets": [
+        0,
+        1
+      ],
+      "config_keys": [
+        "enabled"
+      ]
+    }
+  },
+  {
+    "data": {
+      "kind": "guild",
+      "id": "2023-06_inventory_guild_setting",
+      "label": "Inventory Guild Settings Experiment",
+      "description": [
+        "Control",
+        "Treatment 1: Enabled"
+      ],
+      "hash": 3883768363,
+      "buckets": [
+        0,
+        1
+      ],
+      "config_keys": [
+        "enabled"
+      ]
+    },
+    "rollout": {
+      "populations": [
+        {
+          "buckets": {
+            "none": {
+              "rollout": [
+                {
+                  "start": 0,
+                  "end": 10000
+                }
+              ]
+            }
+          },
+          "filters": []
+        }
+      ],
+      "revision": 0,
+      "overrides": {
+        "1": [
+          "937605284065607711"
+        ]
+      },
+      "overrides_formatted": []
+    }
+  },
+  {
+    "data": {
       "kind": "guild",
       "id": "2023-02_p13n_summarization",
       "label": "Channel Summaries Guild Experiment",
@@ -5568,25 +5630,6 @@
         "Treatment 1: Enables for users Guild Media Post Preview Embeds"
       ],
       "hash": 288968706,
-      "buckets": [
-        0,
-        1
-      ],
-      "config_keys": [
-        "enabled"
-      ]
-    }
-  },
-  {
-    "data": {
-      "kind": "user",
-      "id": "2023-06_inventory_reaction_tooltip",
-      "label": "Inventory Reaction Tooltip Experiment",
-      "description": [
-        "Control",
-        "Treatment 1: Enabled"
-      ],
-      "hash": 3470792155,
       "buckets": [
         0,
         1
@@ -10493,36 +10536,6 @@
       "overrides": {
         "1": [
           "710677407257854033"
-        ]
-      },
-      "overrides_formatted": []
-    }
-  },
-  {
-    "data": {
-      "kind": "guild",
-      "hash": 3883768363
-    },
-    "rollout": {
-      "populations": [
-        {
-          "buckets": {
-            "none": {
-              "rollout": [
-                {
-                  "start": 0,
-                  "end": 10000
-                }
-              ]
-            }
-          },
-          "filters": []
-        }
-      ],
-      "revision": 0,
-      "overrides": {
-        "1": [
-          "937605284065607711"
         ]
       },
       "overrides_formatted": []
