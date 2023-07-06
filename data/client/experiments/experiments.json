@@ -4264,6 +4264,63 @@
   {
     "data": {
       "kind": "user",
+      "id": "2023-06_bogo_announcement_modal",
+      "label": "BOGO Announcement Modal",
+      "description": [
+        "Control",
+        "Treatment 1: Users will see the BOGO announcement modal"
+      ],
+      "hash": 2338915282,
+      "buckets": [
+        0,
+        1
+      ],
+      "config_keys": [
+        "enabled"
+      ]
+    }
+  },
+  {
+    "data": {
+      "kind": "user",
+      "id": "2023-06_bogo_promotion_gate",
+      "label": "BOGO Promotion Manager",
+      "description": [
+        "Control",
+        "Treatment 1: Enable BOGO Promotion Manager"
+      ],
+      "hash": 680908968,
+      "buckets": [
+        0,
+        1
+      ],
+      "config_keys": [
+        "enabled"
+      ]
+    }
+  },
+  {
+    "data": {
+      "kind": "user",
+      "id": "2021-06_preview_promotions",
+      "label": "Promotions Preview",
+      "description": [
+        "Control",
+        "Treatment 1: Preview Enabled"
+      ],
+      "hash": 3704699110,
+      "buckets": [
+        0,
+        1
+      ],
+      "config_keys": [
+        "enabled"
+      ]
+    }
+  },
+  {
+    "data": {
+      "kind": "user",
       "id": "2023-02_mfa_remove_phone",
       "label": "Safety Experience MFA Remove Phone",
       "description": [
@@ -4552,63 +4609,6 @@
         "Treatment 1: Back to School experience enabled"
       ],
       "hash": 2676348506,
-      "buckets": [
-        0,
-        1
-      ],
-      "config_keys": [
-        "enabled"
-      ]
-    }
-  },
-  {
-    "data": {
-      "kind": "user",
-      "id": "2023-06_bogo_announcement_modal",
-      "label": "BOGO Announcement Modal",
-      "description": [
-        "Control",
-        "Treatment 1: Users will see the BOGO announcement modal"
-      ],
-      "hash": 2338915282,
-      "buckets": [
-        0,
-        1
-      ],
-      "config_keys": [
-        "enabled"
-      ]
-    }
-  },
-  {
-    "data": {
-      "kind": "user",
-      "id": "2023-06_bogo_promotion_gate",
-      "label": "BOGO Promotion Manager",
-      "description": [
-        "Control",
-        "Treatment 1: Enable BOGO Promotion Manager"
-      ],
-      "hash": 680908968,
-      "buckets": [
-        0,
-        1
-      ],
-      "config_keys": [
-        "enabled"
-      ]
-    }
-  },
-  {
-    "data": {
-      "kind": "user",
-      "id": "2021-06_preview_promotions",
-      "label": "Promotions Preview",
-      "description": [
-        "Control",
-        "Treatment 1: Preview Enabled"
-      ],
-      "hash": 3704699110,
       "buckets": [
         0,
         1
