@@ -2142,6 +2142,14 @@
       "OPTIONS"
     ]
   },
+  "USER_GUILD_BOOST_SLOTS": {
+    "url": "/users/@me/guilds/premium/subscription-slots",
+    "allowed_methods": [
+      "GET",
+      "HEAD",
+      "OPTIONS"
+    ]
+  },
   "USER_GUILD_BOOST_SLOT_CANCEL": {
     "url": "/users/@me/guilds/premium/subscription-slots/:param/cancel",
     "allowed_methods": [
