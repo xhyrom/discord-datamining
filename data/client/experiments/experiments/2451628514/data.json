@@ -1,0 +1,32 @@
+{
+  "data": {
+    "kind": "user",
+    "id": "2023-06_activity_shelf_to_detail_page",
+    "label": "Activity Shelf to Detail Page",
+    "description": [
+      "Control",
+      "Treatment 0: Control",
+      "Treatment 1: Enable Big Shelf",
+      "Treatment 2: Enable Activity Shelf to Detail Page",
+      "Treatment 3: Enable social-proof shelf details",
+      "Treatment 4: Enable minimal shelf details",
+      "Treatment 5: Enable minimal shelf details and route to detail page"
+    ],
+    "hash": 2451628514,
+    "buckets": [
+      0,
+      0,
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "config_keys": [
+      "enableBigShelf",
+      "enableShelfToDetailPage",
+      "enableSocialProofActivityDetails",
+      "enableMinimalActivityDetails"
+    ]
+  }
+}
