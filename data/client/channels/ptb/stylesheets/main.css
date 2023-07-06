@@ -144168,7 +144168,8 @@ html .invoiceCancelRow-3s2UuC {
 
 .container-12-eoM {
     background-color: var(--background-secondary);
-    padding: 24px 48px 16px
+    padding: 24px 48px 16px;
+    position: relative
 }
 
 .uploads-3zdzrp {
@@ -144176,6 +144177,7 @@ html .invoiceCancelRow-3s2UuC {
     -webkit-box-direction: normal;
     -ms-flex-direction: row;
     flex-direction: row;
+    padding-top: 16px;
     gap: 8px
 }
 
@@ -144184,10 +144186,6 @@ html .invoiceCancelRow-3s2UuC {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex
-}
-
-.uploadsContainer-362hAb {
-    margin-top: 16px
 }
 
 .thumbnailContainer-LoILOG {
@@ -162112,4 +162110,4 @@ html .invoiceCancelRow-dVOR64 {
     flex-direction: column
 }
 
-/*# sourceMappingURL=40532.e197208e8cf597c9d2ee.css.map*/
+/*# sourceMappingURL=40532.e59742a9542fad79f751.css.map*/
