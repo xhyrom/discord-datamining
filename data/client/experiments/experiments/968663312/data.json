@@ -1,20 +1,7 @@
 {
   "data": {
     "kind": "guild",
-    "id": "2023-01_voice_messages",
-    "label": "Voice Messages",
-    "description": [
-      "Control",
-      "Treatment 1: Can send voice messages"
-    ],
-    "hash": 968663312,
-    "buckets": [
-      0,
-      1
-    ],
-    "config_keys": [
-      "enabled"
-    ]
+    "hash": 968663312
   },
   "rollout": {
     "populations": [
