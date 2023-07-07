@@ -13698,6 +13698,8 @@
   "GUILD_SETTINGS_AUDIT_LOG_ONBOARDING_DISABLE_DEFAULT_CHANNELS": "\"Set default channels to disabled\"",
   "GUILD_SETTINGS_AUDIT_LOG_ONBOARDING_ENABLE_PROMPTS": "\"Set customization questions to enabled\"",
   "GUILD_SETTINGS_AUDIT_LOG_ONBOARDING_DISABLE_PROMPTS": "\"Set customization questions to disabled\"",
+  "GUILD_SETTINGS_AUDIT_LOG_ONBOARDING_ENABLE": "\"Enabled Onboarding\"",
+  "GUILD_SETTINGS_AUDIT_LOG_ONBOARDING_DISABLE": "\"Disabled Onboarding\"",
   "GUILD_SETTINGS_AUDIT_LOG_HOME_SETTINGS_AUTHOR_CHANGE": "\"Change welcome message author from **!!{oldUser}!!** to **!!{newUser}!!**\"",
   "GUILD_SETTINGS_AUDIT_LOG_HOME_SETTINGS_MESSAGE_CHANGE": "\"Change welcome message from **!!{oldMessage}!!** to **!!{newMessage}!!**\"",
   "GUILD_SETTINGS_AUDIT_LOG_HOME_SETTINGS_CHANGED_WELCOME_MESSAGE": "\"Changed the welcome message\"",
