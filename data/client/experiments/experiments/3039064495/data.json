@@ -1,0 +1,20 @@
+{
+  "data": {
+    "kind": "user",
+    "id": "2023-06_custom_call_sounds",
+    "label": "Custom Call Sounds",
+    "description": [
+      "Control",
+      "Treatment 1: Enabled"
+    ],
+    "hash": 3039064495,
+    "buckets": [
+      0,
+      1
+    ],
+    "config_keys": [
+      "enabled",
+      "entry_sounds_enabled"
+    ]
+  }
+}

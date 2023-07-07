@@ -4626,6 +4626,26 @@
   {
     "data": {
       "kind": "user",
+      "id": "2023-06_custom_call_sounds",
+      "label": "Custom Call Sounds",
+      "description": [
+        "Control",
+        "Treatment 1: Enabled"
+      ],
+      "hash": 3039064495,
+      "buckets": [
+        0,
+        1
+      ],
+      "config_keys": [
+        "enabled",
+        "entry_sounds_enabled"
+      ]
+    }
+  },
+  {
+    "data": {
+      "kind": "user",
       "id": "2023-02_referral_trials",
       "label": "Referral Trials",
       "description": [
@@ -4980,7 +5000,6 @@
       "overrides": {
         "1": [
           "816784679717044276",
-          "874345844743213126",
           "840296607785287763",
           "1113529666989469708",
           "435572461912719360",
