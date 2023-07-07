@@ -10,7 +10,7 @@
     <li style="font-weight: 400;" aria-level="1"><span style="font-weight: 400;">Select your issue from the drop-down menu.</span></li>
     <li style="font-weight: 400;" aria-level="1"><span style="font-weight: 400;">If you are reporting for self-harm*, you will be presented with the below screen providing information about how to reach Crisis Text Line.</span></li>
 </ol>
-<p><span style="font-weight: 400;"><img src="https://support.discord.com/hc/article_attachments/8432328272791/CTL.png" alt="CTL.png"></span></p>
+<p class="wysiwyg-text-align-center"><span style="font-weight: 400;"><img src="https://support.discord.com/hc/article_attachments/8432328272791" alt="CTL.png" width="437" height="946"></span></p>
 <p><span style="font-weight: 400;">From here, you can send resources to a friend to assist them in getting the help they need.</span></p>
 <p><span style="font-weight: 400;">Alternatively, you can text Crisis Text Line directly to get the help you need for yourself, including advice and support for helping a friend through a crisis. </span></p>
 <p><em><span style="font-weight: 400;">*Discord currently surfaces Crisis Text Line resources for reports of self-harm only.</span></em></p>
