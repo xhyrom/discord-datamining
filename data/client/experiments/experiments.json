@@ -2339,25 +2339,6 @@
   {
     "data": {
       "kind": "user",
-      "id": "2023-06_no_dcs_in_overlay",
-      "label": "No DCs in Overlay",
-      "description": [
-        "Control",
-        "Treatment 1: Remove DCs"
-      ],
-      "hash": 2016786830,
-      "buckets": [
-        0,
-        1
-      ],
-      "config_keys": [
-        "enabled"
-      ]
-    }
-  },
-  {
-    "data": {
-      "kind": "user",
       "id": "2021-04_network_action_logging",
       "label": "Standard Analytics: Log Network Actions",
       "description": [
