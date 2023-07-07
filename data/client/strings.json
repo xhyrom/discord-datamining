@@ -7239,6 +7239,8 @@
   "IAP_RESUBSCRIBE_BUTTON": "\"Resubscribe\"",
   "GPLAY_BILLING_ALERT_TITLE": "\"Oh no!\"",
   "GPLAY_BILLING_ALERT_BODY": "\"An issue has occurred with your purchase. Please wait and try again.\"",
+  "GPLAY_BILLING_VALIDATE_FAILURE": "\"Unable to make purchase. Please wait and try again.\"",
+  "GPLAY_BILLING_VALIDATE_FAILURE_RELOAD": "\"Unable to make purchase. Please reload app and try again.\"",
   "GPLAY_BILLING_CONNECTION_ERROR": "\"Unable to connect to Google Play Services. Please wait and try again.\"",
   "MOBILE_MANAGE_SUBSCRIPTION_DESKTOP": "\"Unfortunately, you cannot manage this subscription within the {mobilePlatform} app. Please go to the desktop app and manage your subscription via User Settings.\"",
   "MOBILE_MANAGE_SUBSCRIPTION_EXTERNAL": "\"Unfortunately, you cannot manage this subscription within the {mobilePlatform} app. Please go to the {externalPaymentGateway} subscription settings to manage your subscription.\"",
