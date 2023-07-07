@@ -3135,28 +3135,9 @@
     "url": "/guild-events",
     "allowed_methods": null
   },
-  "GUILD_EVENT": {
-    "url": "/guilds/:param/scheduled-events/:param",
-    "allowed_methods": [
-      "DELETE",
-      "GET",
-      "HEAD",
-      "OPTIONS",
-      "PATCH"
-    ]
-  },
   "GUILD_EVENT_IMAGE": {
     "url": "/guild-events/:param/images/:param.:param",
     "allowed_methods": null
-  },
-  "GUILD_EVENTS_FOR_GUILD": {
-    "url": "/guilds/:param/scheduled-events",
-    "allowed_methods": [
-      "GET",
-      "HEAD",
-      "OPTIONS",
-      "POST"
-    ]
   },
   "GUILD_EVENT_USERS": {
     "url": "/guilds/:param/scheduled-events/:param/users",
