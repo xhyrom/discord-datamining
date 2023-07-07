@@ -1449,6 +1449,13 @@
       "OPTIONS"
     ]
   },
+  "CONNECTIONS_LINK_DISPATCH_AUTH_CALLBACK": {
+    "url": "/connections/:param/link-dispatch-auth-callback",
+    "allowed_methods": [
+      "OPTIONS",
+      "POST"
+    ]
+  },
   "XBOX_HANDOFF": {
     "url": "/consoles/xbox-handoff",
     "allowed_methods": [
