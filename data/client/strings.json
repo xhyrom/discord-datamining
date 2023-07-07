@@ -11046,6 +11046,7 @@
   "PREMIUM_MESSAGE_LENGTH_ROADBLOCK_MODAL_HEADER": "\"Your message is too long...\"",
   "PREMIUM_MESSAGE_LENGTH_ROADBLOCK_MODAL_BODY": "\"You’ve hit the {maxLength} character count limit.\\n\\nSpeak your mind with 2x longer messages, send larger file uploads, [and more with Discord Nitro!](onLearnMore)\"",
   "PREMIUM_MESSAGE_LENGTH_ROADBLOCK_MODAL_CONTEXT": "\"You’ve hit the {maxLength} character count limit.\"",
+  "PREMIUM_MESSAGE_LENGTH_ROADBLOCK_MODAL_CONTEXT_NO_COUNT": "\"You've hit the character limit.\"",
   "PREMIUM_MESSAGE_LENGTH_ROADBLOCK_MODAL_GLOW_UP": "\"Speak your mind with 2x longer messages, send larger file uploads, [and more with Discord Nitro!](onLearnMore)\"",
   "PREMIUM_MESSAGE_LENGTH_CHATBOX_FLAIR": "\"Nitro is powering you with {maxLength} characters per message!\"",
   "PREMIUM_MESSAGE_LENGTH_MOBILE_ALERT_HEADER": "\"Your message is too long\"",
