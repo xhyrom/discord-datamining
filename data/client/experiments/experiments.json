@@ -4484,6 +4484,25 @@
   {
     "data": {
       "kind": "user",
+      "id": "2023-06_unique_username_registration",
+      "label": "Unique Username Registration",
+      "description": [
+        "Control",
+        "Treatment 1: Unique Username Registration enabled"
+      ],
+      "hash": 2476969328,
+      "buckets": [
+        0,
+        1
+      ],
+      "config_keys": [
+        "enabled"
+      ]
+    }
+  },
+  {
+    "data": {
+      "kind": "user",
       "id": "2022-12_get_my_guilds_application_ids_endpoint",
       "label": "Get My Guilds' Application IDs Endpoint Experiment",
       "description": [
