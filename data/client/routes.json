@@ -615,6 +615,17 @@
       "PUT"
     ]
   },
+  "RESOURCE_CHANNEL": {
+    "url": "/guilds/:param/resource-channels/:param",
+    "allowed_methods": [
+      "OPTIONS",
+      "PUT"
+    ]
+  },
+  "GUILD_RESOURCE_CHANNELS_ICON": {
+    "url": "/guilds/:param/avatars/:param.:param",
+    "allowed_methods": null
+  },
   "GUILD_MEMBER_ACTIONS": {
     "url": "/guilds/:param/new-member-actions",
     "allowed_methods": [
