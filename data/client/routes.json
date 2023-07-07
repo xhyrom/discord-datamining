@@ -55,6 +55,13 @@
       "POST"
     ]
   },
+  "BROADCAST_PRIVATE_CHANNEL": {
+    "url": "/users/@me/channels/broadcast",
+    "allowed_methods": [
+      "OPTIONS",
+      "POST"
+    ]
+  },
   "DM_CHANNEL": {
     "url": "/users/@me/dms/:param",
     "allowed_methods": [
@@ -2739,6 +2746,14 @@
   },
   "GIFS_TRENDING_SEARCH": {
     "url": "/gifs/trending-search",
+    "allowed_methods": [
+      "GET",
+      "HEAD",
+      "OPTIONS"
+    ]
+  },
+  "GIFT_CODE_RESOLVE": {
+    "url": "/entitlements/gift-codes/:param",
     "allowed_methods": [
       "GET",
       "HEAD",
