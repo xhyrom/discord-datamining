@@ -2389,6 +2389,13 @@
       "POST"
     ]
   },
+  "GOOGLE_PLAY_VALIDATE_PURCHASE": {
+    "url": "/google-play/validate-purchase",
+    "allowed_methods": [
+      "OPTIONS",
+      "POST"
+    ]
+  },
   "USER_AGREEMENTS": {
     "url": "/users/@me/agreements",
     "allowed_methods": [
