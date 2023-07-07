@@ -158916,6 +158916,14 @@ html .invoiceCancelRow-3s2UuC {
     padding: 48px 20px 20px
 }
 
+.containerWithHeader-3qX6pY {
+    padding: 16px
+}
+
+.header-1R3EBD {
+    margin-bottom: 12px
+}
+
 .closeButton-2doD2z {
     position: absolute;
     right: 12px;
@@ -158983,6 +158991,31 @@ html .invoiceCancelRow-3s2UuC {
 
 .welcomeMessageTextInput-1qtDhE {
     min-height: 200px
+}
+
+.uploadImage-NOPaF1 {
+    height: 72px;
+    width: 72px;
+    border-radius: var(--radius-xs);
+    border: 1px solid var(--background-tertiary);
+    background: var(--background-secondary-alt);
+    background-size: 72px 72px
+}
+
+.uploader-1407H5:hover .uploadImageIcon-1KpTYD {
+    background: var(--background-floating)
+}
+
+.uploader-1407H5 .uploadImageIcon-1KpTYD {
+    background: var(--background-secondary-alt);
+    background-image: none;
+    border-radius: 0;
+    width: 24px;
+    height: 24px;
+    top: 24px;
+    left: 24px;
+    color: var(--interactive-normal);
+    pointer-events: none
 }
 
 .header-2Cx7rS {
@@ -162712,4 +162745,4 @@ html .invoiceCancelRow-dVOR64 {
     flex-direction: column
 }
 
-/*# sourceMappingURL=40532.4bc00b6c4f9a92fdf1b8.css.map*/
+/*# sourceMappingURL=40532.7317ebb5fc29acb5a43e.css.map*/
