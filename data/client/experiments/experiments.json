@@ -5239,12 +5239,14 @@
       "label": "Remixing User Experiment",
       "description": [
         "Control",
-        "Treatment 1: Enables media remixing"
+        "Treatment 1: Enables media remixing",
+        "Treatment 2: Enables media remixing for desktop"
       ],
       "hash": 961769771,
       "buckets": [
         0,
-        1
+        1,
+        2
       ],
       "config_keys": [
         "enabled"
