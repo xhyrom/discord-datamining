@@ -3822,14 +3822,6 @@
       "OPTIONS"
     ]
   },
-  "APPLICATION_DIRECTORY_SEARCH": {
-    "url": "/application-directory/search",
-    "allowed_methods": [
-      "GET",
-      "HEAD",
-      "OPTIONS"
-    ]
-  },
   "APPLICATION_DIRECTORY_COLLECTIONS": {
     "url": "/application-directory/collections",
     "allowed_methods": [
