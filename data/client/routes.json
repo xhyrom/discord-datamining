@@ -2506,6 +2506,15 @@
     "url": "/applications/trending/global",
     "allowed_methods": null
   },
+  "APPLICATION_BRANCH_LIST": {
+    "url": "/applications/:param/branches",
+    "allowed_methods": [
+      "GET",
+      "HEAD",
+      "OPTIONS",
+      "POST"
+    ]
+  },
   "LIBRARY_APPLICATION_INSTALLED": {
     "url": "/users/@me/library/:param/:param/installed",
     "allowed_methods": [
@@ -2634,6 +2643,14 @@
   },
   "ENTITLEMENTS_FOR_APPLICATION": {
     "url": "/users/@me/applications/:param/entitlements",
+    "allowed_methods": [
+      "GET",
+      "HEAD",
+      "OPTIONS"
+    ]
+  },
+  "ENTITLEMENTS_FOR_USER": {
+    "url": "/users/@me/entitlements",
     "allowed_methods": [
       "GET",
       "HEAD",
@@ -2813,6 +2830,15 @@
       "GET",
       "HEAD",
       "OPTIONS"
+    ]
+  },
+  "GUILD_DISCOVERY_METADATA": {
+    "url": "/guilds/:param/discovery-metadata",
+    "allowed_methods": [
+      "GET",
+      "HEAD",
+      "OPTIONS",
+      "PATCH"
     ]
   },
   "GUILD_DISCOVERY_UPDATE_CATEGORY": {
@@ -3556,6 +3582,14 @@
       "OPTIONS"
     ]
   },
+  "CREATOR_MONETIZATION_MARKETING_ONBOARDING": {
+    "url": "/guilds/:param/creator-monetization/marketing/onboarding",
+    "allowed_methods": [
+      "GET",
+      "HEAD",
+      "OPTIONS"
+    ]
+  },
   "CREATOR_MONETIZATION_NAG_ACTIVATE_ELIGIBLITY": {
     "url": "/creator-monetization/marketing/nag-activate/eligibility",
     "allowed_methods": [
@@ -3901,6 +3935,13 @@
   },
   "AUTH_SESSIONS_LOGOUT": {
     "url": "/auth/sessions/logout",
+    "allowed_methods": [
+      "OPTIONS",
+      "POST"
+    ]
+  },
+  "CUSTOM_CALL_SOUNDS": {
+    "url": "/channels/:param/custom-call-sounds",
     "allowed_methods": [
       "OPTIONS",
       "POST"
