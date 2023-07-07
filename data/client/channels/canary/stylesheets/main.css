@@ -132814,6 +132814,20 @@ html .invoiceCancelRow-3s2UuC {
     margin-bottom: 5px
 }
 
+.warningTitle-Kb4MIV {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row
+}
+
+.warningIcon-1m2yHP {
+    color: var(--text-warning)
+}
+
 .attachedRoleContainer-LYLqUk {
     display: -webkit-inline-box;
     display: -ms-inline-flexbox;
@@ -132848,6 +132862,26 @@ html .invoiceCancelRow-3s2UuC {
 .attachedRoleCloseIcon-2FmoYL {
     color: var(--text-normal);
     cursor: pointer
+}
+
+.detachWarningHeading-1Fb8h_ {
+    margin-top: 16px;
+    margin-bottom: 4px
+}
+
+.detachWarningHeading-1Fb8h_,
+.reattachRoleRow-3ytzIN,
+.restoreDetachedRoleButtonInner-1MGXbP {
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row
 }
 
 .modalRoot-ni21gU {
@@ -160862,11 +160896,7 @@ html .invoiceCancelRow-3s2UuC {
 }
 
 .alertIcon-1Lc3ad {
-    color: var(--status-danger)
-}
-
-.body-VORqan p {
-    margin: 0
+    color: var(--status-warning)
 }
 
 .name-3q13Uo {
@@ -162598,4 +162628,4 @@ html .invoiceCancelRow-dVOR64 {
     flex-direction: column
 }
 
-/*# sourceMappingURL=40532.efa25b815bc6d316c006.css.map*/
+/*# sourceMappingURL=40532.da9b9d53db5ddbc28fbd.css.map*/
