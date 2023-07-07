@@ -20886,7 +20886,7 @@ html.disable-forced-colors * {
     -webkit-box-direction: normal;
     -ms-flex-direction: column;
     flex-direction: column;
-    padding: 24px 16px;
+    padding: 16px;
     width: 100%;
     margin-top: 16px
 }
@@ -20919,25 +20919,33 @@ html.disable-forced-colors * {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    margin-bottom: 16px
+    margin-bottom: 4px
 }
 
 .logoIcon-1B7zIe {
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 auto;
+    flex: 0 0 auto;
     height: 34px;
     margin-right: 2px;
     width: 34px
 }
 
-.logoIcon-1B7zIe,
-.logoWordmark-13R5k2 {
-    -webkit-box-flex: 0;
-    -ms-flex: 0 0 auto;
-    flex: 0 0 auto
+.logoIcon-1B7zIe.unifyTrialUpsell-2E28tK {
+    height: 24px;
+    width: 24px
 }
 
 .logoWordmark-13R5k2 {
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 auto;
+    flex: 0 0 auto;
     height: 24px;
     width: auto
+}
+
+.logoWordmark-13R5k2.unifyTrialUpsell-2E28tK {
+    height: 16px
 }
 
 .copy-3KuMw6 span {
@@ -20951,7 +20959,7 @@ html.disable-forced-colors * {
 }
 
 .copy-3KuMw6 {
-    margin-bottom: 16px;
+    margin-bottom: 12px;
     text-align: center
 }
 
@@ -21007,7 +21015,7 @@ html.disable-forced-colors * {
 
 .countdownText-1kI_1t {
     color: #fff;
-    padding-top: 16px
+    padding-top: 8px
 }
 
 .footer-COV-5M {
@@ -21038,6 +21046,10 @@ html.disable-forced-colors * {
 
 .subscribeButton-2z5X7P {
     margin-right: 24px
+}
+
+.upsellButton-fRR-oH {
+    margin-top: 16px
 }
 
 .root-1DvBsn {
@@ -42814,6 +42826,12 @@ html .progress-2Otdc- {
 .banner-25RWjr {
     width: 100%;
     border-radius: 8px
+}
+
+.banner-25RWjr.hasTrialOffer-303XEE {
+    max-height: 172px;
+    margin-top: 16px;
+    margin-bottom: 16px
 }
 
 .wrapper-2nNnyW {
@@ -162487,4 +162505,4 @@ html .invoiceCancelRow-dVOR64 {
     flex-direction: column
 }
 
-/*# sourceMappingURL=40532.8c88dab043adad594b9f.css.map*/
+/*# sourceMappingURL=40532.18b2301d74123c7d92b0.css.map*/
