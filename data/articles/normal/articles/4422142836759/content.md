@@ -10,7 +10,7 @@
             <li>
                 <a href="#h_01GSX69W2WZT0BK92VH98H8R5D" target="_self">On Mobile</a>
                 <ul>
-                    <li>My phone gets really warm while playing Activities on my mobile device. How do I fix that?</li>
+                    <li><a href="#docs-internal-guid-a870a266-7fff-31f3-e3dd-0d66737259ce" target="_self">My mobile device gets really warm while playing Activities. How do I fix it?</a></li>
                 </ul>
             </li>
             <li><a href="#h_01GSX5T6WVXS25BCSSDW3TAGYM" target="_self">Can I invite others to Join My Activity?</a></li>
@@ -39,9 +39,8 @@
     <li><a href="https://support.discord.com/hc/en-us/articles/7552538635031" target="_blank" rel="noopener noreferrer">Know What I Meme</a></li>
     <li><a href="https://garticphone.com/discord-help" target="_blank" rel="noopener noreferrer">Gartic Phone</a></li>
     <li><a href="https://support.discord.com/hc/en-us/articles/14042410493847" target="_blank" rel="noopener noreferrer">Jamspace</a></li>
-    <li><a href="https://fundaygames.dk/discord/color-together-play-guide" target="_blank" rel="noopener">Color Together</a></li>
+    <li><a href="https://fundaygames.dk/discord/color-together-play-guide" target="_blank" rel="noopener noreferrer">Color Together</a></li>
 </ol>
-<h3 id="docs-internal-guid-a2f3a887-7fff-434b-e43e-040db67a74ca"><span style="color: #434343;" data-darkreader-inline-color="">Activities are now available for everyone to play! </span></h3>
 <h1 id="h_01GSX5FCYNMF5PCGKNNA6XFW29">How do I start an Activity?</h1>
 <h2 id="docs-internal-guid-67d1f612-7fff-856e-6a7d-09e2618d9a7f">On Desktop/Browser</h2>
 <p>1. Navigate to your intended server and join a voice channel, or start a voice call in a direct message (DM) or group direct message (GDM).</p>
@@ -64,7 +63,7 @@
 <p>3. Select the Activity you want to play from the Activity Shelf menu. You will need to provide authorization if you’ve never played your chosen Activity before.</p>
 <p class="wysiwyg-text-align-center"><img src="https://support.discord.com/hc/article_attachments/13120309834519" alt="mobile-Activities-shelf.png" width="218" height="472"></p>
 <p>4. (Optional) Have your friends join the Activity. To play, they need to be in the same Voice Channel as you and join the Activity you started. <span id="docs-internal-guid-5e8f48f2-7fff-e06a-4a49-652c4c37a84f">Each person joining the game will need to provide authorization if they’ve never played the chosen Activity before.</span></p>
-<p id="docs-internal-guid-a870a266-7fff-31f3-e3dd-0d66737259ce"><span class="wysiwyg-font-size-large"><strong>My mobile device gets really warm while playing Activities. How do I fix it?</strong></span></p>
+<h2 id="docs-internal-guid-a870a266-7fff-31f3-e3dd-0d66737259ce"><span class="wysiwyg-font-size-large"><strong>My mobile device gets really warm while playing Activities. How do I fix it?</strong></span></h2>
 <p>If your mobile device becomes warm to the touch while you’re playing an Activity, we recommend that you try the following:</p>
 <ul>
     <li>If you have our picture-in-picture feature engaged while playing an Activity, please minimize/close the picture-in-picture feature and keep the Activity in focus.</li>
