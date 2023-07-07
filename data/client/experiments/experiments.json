@@ -4502,63 +4502,6 @@
   },
   {
     "data": {
-      "kind": "user",
-      "id": "2022-12_get_my_guilds_application_ids_endpoint",
-      "label": "Get My Guilds' Application IDs Endpoint Experiment",
-      "description": [
-        "Control",
-        "Treatment 1: Enabled"
-      ],
-      "hash": 3772658100,
-      "buckets": [
-        0,
-        1
-      ],
-      "config_keys": [
-        "enabled"
-      ]
-    }
-  },
-  {
-    "data": {
-      "kind": "user",
-      "id": "2023-02_app_directory_for_all_modal",
-      "label": "App Directory Upsell For All Modal",
-      "description": [
-        "Control",
-        "Treatment 1: Enabled"
-      ],
-      "hash": 968202795,
-      "buckets": [
-        0,
-        1
-      ],
-      "config_keys": [
-        "enabled"
-      ]
-    }
-  },
-  {
-    "data": {
-      "kind": "user",
-      "id": "2023-06_app_directory_on_web",
-      "label": "App Directory on Web",
-      "description": [
-        "Control",
-        "Treatment 1: Logged-Out Access to App Directory"
-      ],
-      "hash": 2950854840,
-      "buckets": [
-        0,
-        1
-      ],
-      "config_keys": [
-        "enabled"
-      ]
-    }
-  },
-  {
-    "data": {
       "kind": "guild",
       "id": "2023-04_fast_new_channels",
       "label": "Fast New Channels",
@@ -4621,6 +4564,44 @@
         ]
       },
       "overrides_formatted": []
+    }
+  },
+  {
+    "data": {
+      "kind": "user",
+      "id": "2022-12_get_my_guilds_application_ids_endpoint",
+      "label": "Get My Guilds' Application IDs Endpoint Experiment",
+      "description": [
+        "Control",
+        "Treatment 1: Enabled"
+      ],
+      "hash": 3772658100,
+      "buckets": [
+        0,
+        1
+      ],
+      "config_keys": [
+        "enabled"
+      ]
+    }
+  },
+  {
+    "data": {
+      "kind": "user",
+      "id": "2023-02_app_directory_for_all_modal",
+      "label": "App Directory Upsell For All Modal",
+      "description": [
+        "Control",
+        "Treatment 1: Enabled"
+      ],
+      "hash": 968202795,
+      "buckets": [
+        0,
+        1
+      ],
+      "config_keys": [
+        "enabled"
+      ]
     }
   },
   {
