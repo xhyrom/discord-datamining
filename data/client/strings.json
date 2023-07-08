@@ -2380,6 +2380,7 @@
   "SETTINGS_GAMES_OVERLAY_ON": "\"Overlay: On\"",
   "SETTINGS_GAMES_OVERLAY_OFF": "\"Overlay: Off\"",
   "SETTINGS_GAMES_TOGGLE_OVERLAY": "\"Toggle overlay\"",
+  "SETTINGS_GAMES_TOGGLE_DETECTION": "\"Toggle detection\"",
   "CONNECTED_ACCOUNT_VERIFYING": "\"Connecting your **!!{name}!!** account to **Discord**\"",
   "CONNECTED_ACCOUNT_VERIFY_SUCCESS": "\"Connected your **!!{name}!!** account to **Discord**\"",
   "CONNECTED_ACCOUNT_VERIFY_SUCCESS_DETAILS": "\"You can close this window and go back to Discord.\"",
