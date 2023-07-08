@@ -152381,6 +152381,10 @@ html .invoiceCancelRow-3s2UuC {
     opacity: 1
 }
 
+.toggleContainer-1SVwUo {
+    margin-left: 12px
+}
+
 .activeGame-1OdxzI {
     position: relative
 }
@@ -152402,7 +152406,7 @@ html .invoiceCancelRow-3s2UuC {
 .gameVerifiedIcon-1YMUdQ,
 .lastPlayed-1jum9A,
 .overlayStatusText-In0YrK,
-.overlayToggleIcon-1WRcQ9 {
+.toggleIcon-2tF94r {
     z-index: 1
 }
 
@@ -152444,12 +152448,8 @@ html .invoiceCancelRow-3s2UuC {
     opacity: 0
 }
 
-.overlayToggleIcon-1WRcQ9 {
+.toggleIcon-2tF94r {
     cursor: pointer
-}
-
-.overlayToggleIconOff-ps4gGp .fill-297bdf {
-    fill: var(--status-danger)
 }
 
 .overlayWarningIcon-3MtO6b {
@@ -152458,6 +152458,10 @@ html .invoiceCancelRow-3s2UuC {
     height: 16px;
     margin-right: 20px;
     opacity: 0
+}
+
+.toggleIconOff-XGPmqE .fill-297bdf {
+    fill: var(--status-danger)
 }
 
 .addGamePopout-2SKNIV {
@@ -152508,7 +152512,7 @@ html .invoiceCancelRow-3s2UuC {
     color: var(--primary-300)
 }
 
-.theme-light .overlayToggleIconOn-21NN2N .fill-297bdf {
+.theme-light .toggleIconOn-1dZapU .fill-297bdf {
     fill: var(--primary-300)
 }
 
@@ -152540,7 +152544,7 @@ html .invoiceCancelRow-3s2UuC {
     color: var(--primary-400)
 }
 
-.theme-dark .overlayToggleIconOn-21NN2N .fill-297bdf {
+.theme-dark .toggleIconOn-1dZapU .fill-297bdf {
     fill: var(--primary-400)
 }
 
@@ -152582,10 +152586,10 @@ html .invoiceCancelRow-3s2UuC {
     color: var(--white-500)
 }
 
-.theme-dark .nowPlaying-3UpuKc .overlayToggleIconOff-ps4gGp .fill-297bdf,
-.theme-dark .nowPlaying-3UpuKc .overlayToggleIconOn-21NN2N .fill-297bdf,
-.theme-light .nowPlaying-3UpuKc .overlayToggleIconOff-ps4gGp .fill-297bdf,
-.theme-light .nowPlaying-3UpuKc .overlayToggleIconOn-21NN2N .fill-297bdf {
+.theme-dark .nowPlaying-3UpuKc .toggleIconOff-XGPmqE .fill-297bdf,
+.theme-dark .nowPlaying-3UpuKc .toggleIconOn-1dZapU .fill-297bdf,
+.theme-light .nowPlaying-3UpuKc .toggleIconOff-XGPmqE .fill-297bdf,
+.theme-light .nowPlaying-3UpuKc .toggleIconOn-1dZapU .fill-297bdf {
     fill: var(--green-230)
 }
 
@@ -162768,4 +162772,4 @@ html .invoiceCancelRow-dVOR64 {
     flex-direction: column
 }
 
-/*# sourceMappingURL=40532.5ee0c16f7d74d08e246b.css.map*/
+/*# sourceMappingURL=40532.d37b64e40572631559c8.css.map*/
