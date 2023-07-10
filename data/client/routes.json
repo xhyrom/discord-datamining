@@ -1543,13 +1543,6 @@
       "POST"
     ]
   },
-  "LOGIN_WEBAUTHN": {
-    "url": "/auth/mfa/webauthn",
-    "allowed_methods": [
-      "OPTIONS",
-      "POST"
-    ]
-  },
   "LOGIN_SMS_SEND": {
     "url": "/auth/mfa/sms/send",
     "allowed_methods": [
@@ -2308,13 +2301,6 @@
       "DELETE",
       "GET",
       "HEAD",
-      "OPTIONS",
-      "POST"
-    ]
-  },
-  "BILLING_APPLY_APPLE_RECEIPT": {
-    "url": "/billing/apple/apply-receipt",
-    "allowed_methods": [
       "OPTIONS",
       "POST"
     ]
