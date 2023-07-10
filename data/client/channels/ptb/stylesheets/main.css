@@ -155076,6 +155076,170 @@ html .invoiceCancelRow-3s2UuC {
     border: 1px solid ButtonText
 }
 
+.classifications-html32 {
+    background-color: var(--background-secondary);
+    -webkit-box-orient: vertical;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    border-radius: var(--radius-md);
+    -webkit-box-shadow: var(--shadow-border), var(--shadow-low);
+    box-shadow: var(--shadow-border), var(--shadow-low)
+}
+
+.classifications-html32,
+.tableHeader-384hiM {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-direction: normal
+}
+
+.tableHeader-384hiM {
+    padding: 16px;
+    -webkit-box-orient: horizontal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center
+}
+
+.table-M5gICz {
+    border: 0;
+    border-spacing: 0;
+    padding: 0 8px 8px;
+    border-top: 1px solid var(--background-modifier-accent)
+}
+
+.tableHeaderRow-2x0CA- {
+    position: relative
+}
+
+.tableHeaderRow-2x0CA-:first-child:after {
+    content: "";
+    position: absolute;
+    width: calc(100% + 16px);
+    height: 1px;
+    left: -8px;
+    right: -8px;
+    -webkit-box-shadow: var(--elevation-low);
+    box-shadow: var(--elevation-low);
+    opacity: 1;
+    bottom: 8px
+}
+
+.tableHeaderCellContainer-1GAqEE {
+    padding: 8px 8px 16px;
+    text-align: left
+}
+
+.tableHeaderCellWithFilter-2_FlJm {
+    cursor: pointer
+}
+
+.tableHeaderCell-vNKLBs {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    gap: 4px
+}
+
+.filterIcon-2JwFxw {
+    -webkit-transform: rotate(90deg);
+    transform: rotate(90deg);
+    width: 16px;
+    height: 16px
+}
+
+.filterIconButton-2GFIKf {
+    cursor: pointer;
+    width: 16px;
+    height: 16px;
+    padding: 2px
+}
+
+.checkboxLabel-20JxDi {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    gap: 8px
+}
+
+.checkboxLabelIcon-34_Mkt {
+    width: 16px;
+    height: 16px;
+    color: var(--text-danger)
+}
+
+.tableRowContainer-27XteK {
+    background-color: var(--background-primary);
+    -webkit-transition: background-color 80ms cubic-bezier(.48, 1.93, 1, .68);
+    transition: background-color 80ms cubic-bezier(.48, 1.93, 1, .68);
+    cursor: pointer
+}
+
+.tableRowContainer-27XteK:hover {
+    background-color: var(--background-modifier-hover)
+}
+
+.tableRowContainer-27XteK:hover .actionCell-3KX3GC {
+    opacity: 1;
+    color: var(--interactive-hover)
+}
+
+.tableRowContainer-27XteK td {
+    padding: 8px;
+    position: relative;
+    font-family: var(--font-primary);
+    font-weight: 500;
+    color: var(--text-normal);
+    vertical-align: middle
+}
+
+.tableRowContainer-27XteK td:after {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 1px;
+    opacity: 1;
+    background: var(--background-modifier-accent);
+    -webkit-transition: opacity 80ms cubic-bezier(.64, .57, .67, 1.53);
+    transition: opacity 80ms cubic-bezier(.64, .57, .67, 1.53)
+}
+
+.tableRowContainer-27XteK:hover td:after {
+    opacity: 0
+}
+
+.tableRowContainer-27XteK:hover+.tableRowContainer-27XteK td:after {
+    opacity: 0
+}
+
+.tableRowContainer-27XteK:first-child td:after {
+    content: none
+}
+
+.emptyTableRow-24QDj4 {
+    text-align: center;
+    background-color: var(--background-secondary)
+}
+
 .status-1XZi8v {
     gap: var(--spacing-16);
     margin-bottom: var(--spacing-56)
@@ -162772,4 +162936,4 @@ html .invoiceCancelRow-dVOR64 {
     flex-direction: column
 }
 
-/*# sourceMappingURL=40532.d37b64e40572631559c8.css.map*/
+/*# sourceMappingURL=40532.c7d1254d1538e45ec740.css.map*/
