@@ -57552,6 +57552,11 @@ h6.title-1p9WyQ {
     color: var(--header-primary)
 }
 
+.voiceSummaryContainer-204CN1 {
+    -ms-flex-item-align: center;
+    align-self: center
+}
+
 .iconContainer-XRODjt {
     -ms-flex-negative: 0;
     flex-shrink: 0;
@@ -162991,4 +162996,4 @@ html .invoiceCancelRow-dVOR64 {
     flex-direction: column
 }
 
-/*# sourceMappingURL=40532.b2d0dc7d60cd5db06c7e.css.map*/
+/*# sourceMappingURL=40532.80ece29a7e28fa57879b.css.map*/
