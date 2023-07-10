@@ -1732,6 +1732,14 @@
       "POST"
     ]
   },
+  "REGIONS": {
+    "url": "/guilds/:param/regions",
+    "allowed_methods": [
+      "GET",
+      "HEAD",
+      "OPTIONS"
+    ]
+  },
   "DEBUG_LOG": {
     "url": "/debug-logs/:param/:param",
     "allowed_methods": [
