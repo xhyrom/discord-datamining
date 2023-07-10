@@ -14285,7 +14285,7 @@
   "INVENTORY_EMOJI_VISIBLE_DESCRIPTION": "\"Custom emoji from this server will be visible in previews across servers.\"",
   "INVENTORY_EMOJI_COLLECTED_DESCRIPTION": "\"**{number}** people have collected your server’s emoji.\"",
   "INVENTORY_NEW_PERMISSIONS": "\"New Permission for Emoji\"",
-  "INVENTORY_NEW_PERMISSIONS_DESCRIPTION": "\"Starting in early August, anyone will be able to collect and use your server's emoji. You can change this permission at any time in settings.\"",
+  "INVENTORY_NEW_PERMISSIONS_DESCRIPTION": "\"Starting in August, anyone will be able to collect and use your server's emoji. You can change this permission at any time in settings.\"",
   "INVENTORY_VIEW_PERMISSIONS": "\"View Permissions\"",
   "PRIVATE_CHANNEL_INTEGRATION_ADDED": "\"$[!!{username}!!](usernameHook) added the $[!!{otherUsername}!!](otherUsernameHook) app. See our [help center]({helpCenterLink}) for more info.\"",
   "PRIVATE_CHANNEL_INTEGRATION_ADDED_DELETED_APPLICATION": "\"$[!!{username}!!](usernameHook) added a deleted application. See our [help center]({helpCenterLink}) for more info.\"",
