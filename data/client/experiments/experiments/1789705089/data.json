@@ -24,33 +24,6 @@
             ]
           }
         ]
-      },
-      {
-        "buckets": {
-          "1": {
-            "rollout": [
-              {
-                "start": 100,
-                "end": 200
-              }
-            ]
-          },
-          "none": {
-            "rollout": [
-              {
-                "start": 200,
-                "end": 10000
-              }
-            ]
-          }
-        },
-        "filters": [
-          {
-            "type": "guild_member_count_range",
-            "min_count": 1,
-            "max_count": 50
-          }
-        ]
       }
     ],
     "revision": 0,
