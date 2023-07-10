@@ -12125,6 +12125,35 @@ html.decorate-links .lowSaturationUnderline-Z6CW6z {
     margin-bottom: 16px
 }
 
+.tryOutUpsellContainer-26s75x {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column
+}
+
+.topRimPill-15hOi9 {
+    margin-top: -15px;
+    padding-bottom: 16px
+}
+
+.subscribeButtonWide-1N0gug {
+    margin-top: 16px;
+    width: 100%;
+    height: 40px
+}
+
+.countdownTextInSetting-1Moiqv {
+    color: var(--premium-tier-2-purple);
+    padding-top: 8px
+}
+
 .nitroWheel-21E85D {
     width: 16px;
     height: 16px;
@@ -150481,7 +150510,7 @@ html .invoiceCancelRow-3s2UuC {
 }
 
 .background-yH6t2p {
-    padding: 12px
+    padding: 24px
 }
 
 .premiumBackground-34OIdE {
@@ -150826,7 +150855,6 @@ html .invoiceCancelRow-3s2UuC {
 
 .tryItOutSection-W9qeGH {
     margin: 40px -24px 0;
-    padding: 12px;
     width: -webkit-fit-content;
     width: -moz-fit-content;
     width: fit-content
@@ -150905,6 +150933,15 @@ html .invoiceCancelRow-3s2UuC {
 
 .theme-light .titleIcon-2Qyhm1 {
     color: var(--black-500)
+}
+
+.premiumTier2Divider-1sTkc_ {
+    height: 2px;
+    margin-top: 68px;
+    margin-left: -24px;
+    margin-right: -24px;
+    background-image: -webkit-gradient(linear, left top, right top, from(var(--premium-tier-2-pink-for-gradients)), color-stop(50%, var(--premium-tier-2-purple-for-gradients)), to(var(--premium-tier-2-pink-for-gradients)));
+    background-image: linear-gradient(90deg, var(--premium-tier-2-pink-for-gradients), var(--premium-tier-2-purple-for-gradients) 50%, var(--premium-tier-2-pink-for-gradients))
 }
 
 .buttonsContainer-1xP-jC {
@@ -162954,4 +162991,4 @@ html .invoiceCancelRow-dVOR64 {
     flex-direction: column
 }
 
-/*# sourceMappingURL=40532.d61cb9db23934921cf44.css.map*/
+/*# sourceMappingURL=40532.b2d0dc7d60cd5db06c7e.css.map*/
