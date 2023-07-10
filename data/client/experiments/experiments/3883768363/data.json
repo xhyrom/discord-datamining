@@ -5,12 +5,14 @@
     "label": "Inventory Guild Settings Experiment",
     "description": [
       "Control",
-      "Treatment 1: Enabled"
+      "Treatment 1: Show setting toggle without respecting it",
+      "Treatment 2: Show setting toggle and respect it"
     ],
     "hash": 3883768363,
     "buckets": [
       0,
-      1
+      1,
+      2
     ],
     "config_keys": [
       "enabled"

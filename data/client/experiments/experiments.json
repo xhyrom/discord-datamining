@@ -3812,12 +3812,14 @@
       "label": "Inventory Guild Settings Experiment",
       "description": [
         "Control",
-        "Treatment 1: Enabled"
+        "Treatment 1: Show setting toggle without respecting it",
+        "Treatment 2: Show setting toggle and respect it"
       ],
       "hash": 3883768363,
       "buckets": [
         0,
-        1
+        1,
+        2
       ],
       "config_keys": [
         "enabled"
@@ -3947,6 +3949,25 @@
         "Treatment 1: Enable mobile UX for channel summaries"
       ],
       "hash": 3780014786,
+      "buckets": [
+        0,
+        1
+      ],
+      "config_keys": [
+        "enabled"
+      ]
+    }
+  },
+  {
+    "data": {
+      "kind": "user",
+      "id": "2023-07_p13n_guild_dock_summaries",
+      "label": "Guild Dock Summaries on Mobile Experiment",
+      "description": [
+        "Control",
+        "Treatment 1: Enable guild dock summaries mobile UX"
+      ],
+      "hash": 727554173,
       "buckets": [
         0,
         1

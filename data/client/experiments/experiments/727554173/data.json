@@ -1,0 +1,19 @@
+{
+  "data": {
+    "kind": "user",
+    "id": "2023-07_p13n_guild_dock_summaries",
+    "label": "Guild Dock Summaries on Mobile Experiment",
+    "description": [
+      "Control",
+      "Treatment 1: Enable guild dock summaries mobile UX"
+    ],
+    "hash": 727554173,
+    "buckets": [
+      0,
+      1
+    ],
+    "config_keys": [
+      "enabled"
+    ]
+  }
+}
