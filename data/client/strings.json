@@ -12823,7 +12823,7 @@
   "GUILD_AUTOMOD_PROFILE_ERROR_QUARANTINE_BIO": "\"Your bio contains words flagged by this community.\"",
   "AUTOMOD_USER_PROFILE_UPSELL_HEADER": "\"Block Bad Usernames\"",
   "AUTOMOD_USER_PROFILE_UPSELL_CONTENT": "\"Filter out Bad Words in Usernames in **Server Settings > Automod.**\"",
-  "GUILD_AUTOMOD_USER_PROFILE_FILTER_NAME": "\"Block Words in Member Profiles\"",
+  "GUILD_AUTOMOD_USER_PROFILE_FILTER_NAME": "\"Block Words in Member Profile Names\"",
   "GUILD_AUTOMOD_USER_PROFILE_FILTER_DESCRIPTION": "\"Block specific language in your member's usernames.\"",
   "GUILD_AUTOMOD_ACTIONS_QUARANTINE_USER": "\"Block member interactions\"",
   "GUILD_AUTOMOD_ACTIONS_QUARANTINE_USER_DESCRIPTION": "\"Prevents a member from using text, voice, or other interactions.\"",
