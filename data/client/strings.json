@@ -4995,6 +4995,8 @@
   "DISABLE_SOUNDS_DESCRIPTION": "\"All sound effects will be disabled.\"",
   "DISABLE_NOTIFICATIONS_LABEL": "\"Disable Notifications\"",
   "DISABLE_NOTIFICATIONS_DESCRIPTION": "\"All desktop notifications will be disabled.\"",
+  "HIDE_WINDOW_FROM_STREAM_LABEL": "\"Hide Discord Window from Screen Capture\"",
+  "HIDE_WINDOW_FROM_STREAM_DESCRIPTION": "\"Hides most Discord windows from most screen capture software.\"",
   "HIDE_PERSONAL_INFORMATION_LABEL": "\"Hide Personal Information\"",
   "HIDE_PERSONAL_INFORMATION_DESCRIPTION": "\"Hides email, connected accounts, notes, and anonymizes number tags.\"",
   "CUSTOM_COLOR": "\"Custom Color\"",
