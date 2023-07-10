@@ -1030,6 +1030,15 @@
       "PUT"
     ]
   },
+  "INSTANT_INVITES": {
+    "url": "/channels/:param/invites",
+    "allowed_methods": [
+      "GET",
+      "HEAD",
+      "OPTIONS",
+      "POST"
+    ]
+  },
   "TYPING": {
     "url": "/channels/:param/typing",
     "allowed_methods": [
