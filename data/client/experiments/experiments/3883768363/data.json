@@ -15,5 +15,31 @@
     "config_keys": [
       "enabled"
     ]
+  },
+  "rollout": {
+    "populations": [
+      {
+        "buckets": {
+          "none": {
+            "rollout": [
+              {
+                "start": 0,
+                "end": 10000
+              }
+            ]
+          }
+        },
+        "filters": []
+      }
+    ],
+    "revision": 0,
+    "overrides": {
+      "1": [
+        "937605284065607711",
+        "954471955782844446",
+        "1009606240546066473"
+      ]
+    },
+    "overrides_formatted": []
   }
 }
