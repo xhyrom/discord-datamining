@@ -1,6 +1,6 @@
 <h3><span style="font-weight: 400;">Crisis Text Line with Discord is only available in the United States.</span></h3>
 <p><span style="font-weight: 400;">Discord is partnering with </span><a href="https://www.crisistextline.org/text-us/"><span style="font-weight: 400;">Crisis Text Line</span></a><span style="font-weight: 400;">, a nonprofit that provides text-based volunteer support for people in crisis.</span></p>
-<p><span style="font-weight: 400;">Mental wellness is important to us. With this partnership, our goal is to enable people to get the help they need for themselves, or empower a friend to get help, as quickly as possible.</span></p>
+<p><span style="font-weight: 400;">Mental wellness is important to us. With this partnership, our goal is to enable people to get the help they need for themselves, or empower a friend to get help, as quickly as possible.<br></span></p>
 <h1><span style="font-weight: 400;">How to use Crisis Text Line </span></h1>
 <p><span style="font-weight: 400;">Text DISCORD to 741741. </span></p>
 <p><strong>Crisis doesn’t just mean thinking about ending your own life. It’s any painful emotion and anytime you need support.</strong></p>
