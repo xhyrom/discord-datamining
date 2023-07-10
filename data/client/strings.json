@@ -15465,6 +15465,7 @@
   "MESSAGE_REMINDERS_IN_FOUR_HOURS": "\"in 4 hours\"",
   "MESSAGE_REMINDERS_IN_ONE_DAY": "\"in 1 day\"",
   "MESSAGE_REMINDERS_IN_ONE_WEEK": "\"in 1 week\"",
+  "MESSAGE_REMINDERS_NEVER": "\"never\"",
   "MESSAGE_REMINDERS_DUE_IN": "\"Due in {duration}\"",
   "MESSAGE_REMINDERS_OVERDUE": "\"Due {duration} ago\"",
   "SERVER_NOTIFICATIONS_TAB": "\"Server Notifications\"",
