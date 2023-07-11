@@ -23859,6 +23859,7 @@ html.disable-forced-colors * {
     --profile-gradient-section-box: hsl(var(--black-500-hsl)/0.45);
     --redesign-activity-card-background: var(--primary-560);
     --redesign-activity-card-background-pressed: var(--primary-630);
+    --redesign-activity-card-badge-icon: var(--primary-400);
     --redesign-activity-card-border: hsl(var(--white-500-hsl)/0.02);
     --redesign-button-danger-background: var(--red-430);
     --redesign-button-danger-pressed-background: var(--red-460);
@@ -24083,6 +24084,7 @@ html.disable-forced-colors * {
     --profile-gradient-section-box: hsl(var(--white-500-hsl)/0.45);
     --redesign-activity-card-background: var(--white-500);
     --redesign-activity-card-background-pressed: var(--primary-160);
+    --redesign-activity-card-badge-icon: var(--primary-400);
     --redesign-activity-card-border: hsl(var(--primary-400-hsl)/0.24);
     --redesign-button-danger-background: var(--red-430);
     --redesign-button-danger-pressed-background: var(--red-460);
@@ -24253,6 +24255,7 @@ html.disable-forced-colors * {
     --interactive-normal: var(--primary-345);
     --redesign-activity-card-background: var(--primary-560);
     --redesign-activity-card-background-pressed: var(--primary-630);
+    --redesign-activity-card-badge-icon: var(--primary-400);
     --redesign-activity-card-border: hsl(var(--white-500-hsl)/0.02);
     --redesign-button-danger-background: var(--red-430);
     --redesign-button-danger-pressed-background: var(--red-460);
@@ -24483,6 +24486,7 @@ html.disable-forced-colors * {
     --interactive-normal: var(--white-500);
     --redesign-activity-card-background: var(--primary-560);
     --redesign-activity-card-background-pressed: var(--primary-630);
+    --redesign-activity-card-badge-icon: var(--primary-400);
     --redesign-activity-card-border: hsl(var(--white-500-hsl)/0.02);
     --redesign-button-danger-background: var(--red-430);
     --redesign-button-danger-pressed-background: var(--red-460);
@@ -129796,8 +129800,7 @@ input::-webkit-outer-spin-button {
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
-    background-color: var(--background-tertiary);
-    border-radius: 0 0 12px 12px
+    background-color: var(--background-tertiary)
 }
 
 .shelfTopBackground-R55ED9 {
@@ -163124,4 +163127,4 @@ html .invoiceCancelRow-dVOR64 {
     flex-direction: column
 }
 
-/*# sourceMappingURL=40532.38e45b027061eb4ee40e.css.map*/
+/*# sourceMappingURL=40532.6a0847d7bb57ec0afa23.css.map*/
