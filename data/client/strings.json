@@ -1740,7 +1740,7 @@
   "GUILD_SETTINGS_DISCOVERY_CHECKLIST_CHANGE_NAME": "\"You need to change your $[server name](nameHook)\"",
   "GUILD_SETTINGS_DISCOVERY_CHECKLIST_2FA_FAILING": "\"Please Enable the [2FA Requirement For Moderation] Setting\"",
   "GUILD_SETTINGS_DISCOVERY_CHECKLIST_2FA_DESCRIPTION": "\"Members with moderation powers (e.g. admins or mods) are required to have 2FA enabled to perform moderation actions.\"",
-  "GUILD_SETTINGS_DISCOVERY_CHECKLIST_2FA_DESCRIPTION_FAILING": "\"This setting will require all members with moderation powers to have 2FA enabled before they can perform moderation actions. This can help protect against compromised admin or mod accounts. [Enable at the bottom of the Moderation tab.](onClick)\"",
+  "GUILD_SETTINGS_DISCOVERY_CHECKLIST_2FA_DESCRIPTION_FAILING": "\"This setting will require all members with moderation powers to have 2FA enabled before they can perform moderation actions. This can help protect against compromised admin or mod accounts. [Enable at the bottom of the Safety Setup tab.](onClick)\"",
   "GUILD_SETTINGS_DISCOVERY_CHECKLIST_AGE": "\"Meets Age Requirement\"",
   "GUILD_SETTINGS_DISCOVERY_CHECKLIST_AGE_FAILING": "\"Server Too Young\"",
   "GUILD_SETTINGS_DISCOVERY_CHECKLIST_AGE_DESCRIPTION": "\"Servers in Discovery have to be at least {minimumGuildAge, plural, one {1 week} other {{minimumGuildAge} weeks}} old.\"",
