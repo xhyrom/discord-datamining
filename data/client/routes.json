@@ -387,13 +387,6 @@
       "OPTIONS"
     ]
   },
-  "GUILD_ROLE_CONNECTIONS_ASSIGN": {
-    "url": "/guilds/:param/roles/:param/connections/assign",
-    "allowed_methods": [
-      "OPTIONS",
-      "POST"
-    ]
-  },
   "GUILD_ROLE_CONNECTIONS_UNASSIGN": {
     "url": "/guilds/:param/roles/:param/connections/unassign",
     "allowed_methods": [
