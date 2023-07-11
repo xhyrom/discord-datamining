@@ -12104,20 +12104,66 @@ html.decorate-links .lowSaturationUnderline-Z6CW6z {
 
 .divider-3Zo85p {
     height: 1px;
+    width: 100%;
     background-color: var(--background-modifier-accent)
+}
+
+@-webkit-keyframes zoomInFromBottomRight-2dtnad {
+    0% {
+        -webkit-transform: translateX(80%) translateY(80%) scaleX(20%) scaleY(20%);
+        transform: translateX(80%) translateY(80%) scaleX(20%) scaleY(20%)
+    }
+
+    to {
+        -webkit-transform: translateX(0) translateY(0) scaleX(100%) scaleY(100%);
+        transform: translateX(0) translateY(0) scaleX(100%) scaleY(100%)
+    }
+}
+
+@keyframes zoomInFromBottomRight-2dtnad {
+    0% {
+        -webkit-transform: translateX(80%) translateY(80%) scaleX(20%) scaleY(20%);
+        transform: translateX(80%) translateY(80%) scaleX(20%) scaleY(20%)
+    }
+
+    to {
+        -webkit-transform: translateX(0) translateY(0) scaleX(100%) scaleY(100%);
+        transform: translateX(0) translateY(0) scaleX(100%) scaleY(100%)
+    }
 }
 
 .messageLengthUpsellContainer-1xAicF {
     background-color: var(--background-floating);
     border-radius: var(--radius-sm);
-    overflow: hidden
+    overflow: hidden;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    padding: 12px
 }
 
-.messageLengthUpsellBody-3-5CN2 {
-    padding-top: 12px;
-    padding-left: 12px;
-    padding-right: 12px;
-    text-align: center
+.messageLengthUpsellContainer-1xAicF.messageLengthUpsellAppearAnimation-2mUV6R {
+    -webkit-animation-duration: .3s;
+    animation-duration: .3s;
+    -webkit-animation-timing-function: ease-in;
+    animation-timing-function: ease-in;
+    -webkit-animation-delay: 0s;
+    animation-delay: 0s;
+    -webkit-animation-iteration-count: 1;
+    animation-iteration-count: 1;
+    -webkit-animation-name: zoomInFromBottomRight-2dtnad;
+    animation-name: zoomInFromBottomRight-2dtnad
+}
+
+.messageLengthBrandedContainer-15PlPr {
+    margin-bottom: 16px
 }
 
 .messageLengthUpsellHeader-1Fo7I3 {
@@ -75877,6 +75923,7 @@ strong {
 
 .linkBottom-128lIB,
 .linkTop-1W1aK6 {
+    position: relative;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -163082,4 +163129,4 @@ html .invoiceCancelRow-dVOR64 {
     flex-direction: column
 }
 
-/*# sourceMappingURL=40532.b9079b720ea742a954e3.css.map*/
+/*# sourceMappingURL=40532.c2ca49614e29ef1c72fc.css.map*/
