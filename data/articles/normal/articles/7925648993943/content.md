@@ -1,6 +1,12 @@
 <h3><span style="font-weight: 400;">Crisis Text Line with Discord is only available in the United States.</span></h3>
 <p><span style="font-weight: 400;">Discord is partnering with </span><a href="https://www.crisistextline.org/text-us/"><span style="font-weight: 400;">Crisis Text Line</span></a><span style="font-weight: 400;">, a nonprofit that provides text-based volunteer support for people in crisis.</span></p>
 <p><span style="font-weight: 400;">Mental wellness is important to us. With this partnership, our goal is to enable people to get the help they need for themselves, or empower a friend to get help, as quickly as possible.<br></span></p>
+<p id="docs-internal-guid-2e28b7f5-7fff-fa84-9f15-6df656d7a041"><span class="wysiwyg-font-size-large"><strong>What this article covers: </strong></span></p>
+<ul>
+    <li>How to use Crisis Text Line</li>
+    <li>Where is Crisis Text Line Available?</li>
+    <li>Additional Resources</li>
+</ul>
 <h1><span style="font-weight: 400;">How to use Crisis Text Line </span></h1>
 <p><span style="font-weight: 400;">Text DISCORD to 741741. </span></p>
 <p><strong>Crisis doesn’t just mean thinking about ending your own life. It’s any painful emotion and anytime you need support.</strong></p>
@@ -10,10 +16,9 @@
     <li style="font-weight: 400;" aria-level="1"><span style="font-weight: 400;">Select your issue from the drop-down menu.</span></li>
     <li style="font-weight: 400;" aria-level="1"><span style="font-weight: 400;">If you are reporting for self-harm*, you will be presented with the below screen providing information about how to reach Crisis Text Line.</span></li>
 </ol>
-<p class="wysiwyg-text-align-center"><span style="font-weight: 400;"><img src="https://support.discord.com/hc/article_attachments/8432328272791" alt="CTL.png" width="437" height="946"></span></p>
+<p class="wysiwyg-text-align-center"><span style="font-weight: 400;"><img src="https://support.discord.com/hc/article_attachments/15940421928855" alt="selfharm.png" width="289" height="599"></span></p>
 <p><span style="font-weight: 400;">From here, you can send resources to a friend to assist them in getting the help they need.</span></p>
 <p><span style="font-weight: 400;">Alternatively, you can text Crisis Text Line directly to get the help you need for yourself, including advice and support for helping a friend through a crisis. </span></p>
-<p><em><span style="font-weight: 400;">*Discord currently surfaces Crisis Text Line resources for reports of self-harm only.</span></em></p>
 <p>Additional resources are available below. </p>
 <h1><span style="font-weight: 400;">Where is Crisis Text Line Available? </span></h1>
 <p><span style="font-weight: 400;">You can text Crisis Text Line in the US. Support is currently available in English and Spanish. </span></p>
