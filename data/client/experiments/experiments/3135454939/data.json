@@ -4,12 +4,14 @@
     "id": "2023-03_mute_block_aa",
     "label": "Safety Consumer Education Block/Mute - A/A",
     "description": [
-      "Control",
+      "Not Eligible",
+      "Control Bucket",
       "Treatment 1: Mute",
       "Treatment 2: Block"
     ],
     "hash": 3135454939,
     "buckets": [
+      -1,
       0,
       1,
       2

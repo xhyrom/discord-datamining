@@ -4,11 +4,13 @@
     "id": "2023-01_forums_non_community",
     "label": "Forum non-community",
     "description": [
-      "Control",
+      "Not Eligible",
+      "Control Bucket",
       "Treatment 1: On"
     ],
     "hash": 1446479414,
     "buckets": [
+      -1,
       0,
       1
     ],

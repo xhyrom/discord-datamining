@@ -4,10 +4,12 @@
     "id": "2021-09_watch_together_rollout",
     "label": "Exposure tracking for Watch Together (do not override)",
     "description": [
-      "Control"
+      "Not Eligible",
+      "Control Bucket"
     ],
     "hash": 3607703918,
     "buckets": [
+      -1,
       0
     ],
     "config_keys": [

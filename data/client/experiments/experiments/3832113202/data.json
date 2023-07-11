@@ -4,12 +4,14 @@
     "id": "2022-01_home_tab_guild",
     "label": "Home Tab Guild",
     "description": [
-      "Control",
+      "Not Eligible",
+      "Control Bucket",
       "Treatment 1: Check User as well",
       "Treatment 2: Force on"
     ],
     "hash": 3832113202,
     "buckets": [
+      -1,
       0,
       1,
       2

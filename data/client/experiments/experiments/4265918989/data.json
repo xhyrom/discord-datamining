@@ -4,11 +4,13 @@
     "id": "2023-04_server_subscriptions_tier_templates_user",
     "label": "Server Subscriptions Tier Templates",
     "description": [
-      "Control",
+      "Not Eligible",
+      "Control Bucket",
       "Treatment 1: Enable tier templates for user"
     ],
     "hash": 4265918989,
     "buckets": [
+      -1,
       0,
       1
     ],

@@ -4,11 +4,13 @@
     "id": "2023-03_apps_in_gdms",
     "label": "Apps in GDMs",
     "description": [
-      "Control",
+      "Not Eligible",
+      "Control Bucket",
       "Treatment 1: Show apps in gdm"
     ],
     "hash": 3375543773,
     "buckets": [
+      -1,
       0,
       1
     ],

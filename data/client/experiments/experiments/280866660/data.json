@@ -4,11 +4,13 @@
     "id": "2023-01_shared_canvas",
     "label": "Shared Canvas",
     "description": [
-      "Control",
+      "Not Eligible",
+      "Control Bucket",
       "Treatment 1: Enable Shared Canvas"
     ],
     "hash": 280866660,
     "buckets": [
+      -1,
       0,
       1
     ],

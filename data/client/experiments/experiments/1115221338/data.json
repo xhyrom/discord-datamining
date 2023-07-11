@@ -4,13 +4,15 @@
     "id": "2022-04_registration_copy_updates",
     "label": "Registration Copy Updates",
     "description": [
-      "Control",
+      "Not Eligible",
+      "Control Bucket",
       "Treatment 1: Continue / Copy Above Button / High Prominence Copy",
       "Treatment 2: Continue / Copy Below Button / High Prominence Copy",
       "Treatment 3: Continue / Copy Above Button / Normal Prominence Copy"
     ],
     "hash": 1115221338,
     "buckets": [
+      -1,
       0,
       1,
       2,

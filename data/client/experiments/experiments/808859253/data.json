@@ -4,13 +4,15 @@
     "id": "2023-03_server_subscriptions_tier_templates",
     "label": "Server Subscriptions Tier Templates",
     "description": [
-      "Control",
+      "Not Eligible",
+      "Control Bucket",
       "Treatment 1: 299 basic tier + no link",
       "Treatment 2: 399 basic tier + no link",
       "Treatment 3: 399 basic tier + link"
     ],
     "hash": 808859253,
     "buckets": [
+      -1,
       0,
       1,
       2,

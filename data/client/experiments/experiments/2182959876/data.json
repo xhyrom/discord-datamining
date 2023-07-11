@@ -4,11 +4,13 @@
     "id": "2023-03_mj_chat_bar_guild",
     "label": "MJ Chat Bar enabled guilds",
     "description": [
-      "Control",
+      "Not Eligible",
+      "Control Bucket",
       "Treatment 1: Enabled"
     ],
     "hash": 2182959876,
     "buckets": [
+      -1,
       0,
       1
     ],

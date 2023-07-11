@@ -4,11 +4,13 @@
     "id": "2023-03_cr_accept_new_terms",
     "label": "Server Subscriptions Accept New Terms",
     "description": [
-      "Control",
+      "Not Eligible",
+      "Control Bucket",
       "Treatment 1: Enables Server Subscriptions Accept New Terms"
     ],
     "hash": 747043176,
     "buckets": [
+      -1,
       0,
       1
     ],

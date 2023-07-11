@@ -4,11 +4,13 @@
     "id": "2022-10_guild_raid_messaging",
     "label": "Raid Alerts",
     "description": [
-      "Control",
+      "Not Eligible",
+      "Control Bucket",
       "Treatment 1: Enable Reporting Of Raids"
     ],
     "hash": 3636231100,
     "buckets": [
+      -1,
       0,
       1
     ],

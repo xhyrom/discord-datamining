@@ -4,11 +4,13 @@
     "id": "2021-08_max_sync_delay",
     "label": "Overrides the default max sync delay for AV streams in WebRTC",
     "description": [
-      "Control",
+      "Not Eligible",
+      "Control Bucket",
       "Treatment 1: Use 3 seconds as max sync delay"
     ],
     "hash": 578035700,
     "buckets": [
+      -1,
       0,
       1
     ],

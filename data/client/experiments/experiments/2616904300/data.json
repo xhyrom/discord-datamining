@@ -4,11 +4,13 @@
     "id": "2023-04_birthday_activities_putt_party_tile",
     "label": "Birthday Activities Whats New Putt Party Tile",
     "description": [
-      "Control",
+      "Not Eligible",
+      "Control Bucket",
       "Treatment 1: Enable Putt Party tile"
     ],
     "hash": 2616904300,
     "buckets": [
+      -1,
       0,
       1
     ],

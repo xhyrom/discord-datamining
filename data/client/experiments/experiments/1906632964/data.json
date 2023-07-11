@@ -4,11 +4,13 @@
     "id": "2023-05_clyde_ai_dm",
     "label": "DMs to Clyde",
     "description": [
-      "Control",
+      "Not Eligible",
+      "Control Bucket",
       "Treatment 1: enable dms to clyde"
     ],
     "hash": 1906632964,
     "buckets": [
+      -1,
       0,
       1
     ],

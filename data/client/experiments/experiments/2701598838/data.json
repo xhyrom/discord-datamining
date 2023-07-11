@@ -4,11 +4,13 @@
     "id": "2023-05_clyde_ai_guild_personality",
     "label": "Modify Clyde's Personality",
     "description": [
-      "Control",
+      "Not Eligible",
+      "Control Bucket",
       "Treatment 1: enable personality setting"
     ],
     "hash": 2701598838,
     "buckets": [
+      -1,
       0,
       1
     ],

@@ -4,12 +4,14 @@
     "id": "2023-02_free_form",
     "label": "Automod Server Policy",
     "description": [
-      "Control",
+      "Not Eligible",
+      "Control Bucket",
       "Treatment 1: Automod Server Policy",
       "Treatment 10: Automod Server Policy Rules Summarization"
     ],
     "hash": 2001176293,
     "buckets": [
+      -1,
       0,
       1,
       10

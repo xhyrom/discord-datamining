@@ -4,12 +4,14 @@
     "id": "2022-04_account_profile_popout",
     "label": "Account Profile Popout",
     "description": [
-      "Control",
+      "Not Eligible",
+      "Control Bucket",
       "Treatment 1: Enable Account Profile Popout",
       "Treatment 2: Enable Account Profile Popout w/ DiscordTag button"
     ],
     "hash": 4156073260,
     "buckets": [
+      -1,
       0,
       1,
       2

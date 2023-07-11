@@ -4,11 +4,13 @@
     "id": "2021-10_study_group",
     "label": "Student hub study group",
     "description": [
-      "Control",
+      "Not Eligible",
+      "Control Bucket",
       "Treatment 1: Enables study group sidebar"
     ],
     "hash": 4030301365,
     "buckets": [
+      -1,
       0,
       1
     ],

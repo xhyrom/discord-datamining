@@ -4,11 +4,13 @@
     "id": "2023-05_ugc_notifications",
     "label": "Notifications for UGC changes",
     "description": [
-      "Control",
+      "Not Eligible",
+      "Control Bucket",
       "Treatment 1: Show Notifications"
     ],
     "hash": 631733804,
     "buckets": [
+      -1,
       0,
       1
     ],

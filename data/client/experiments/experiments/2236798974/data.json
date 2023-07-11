@@ -4,11 +4,13 @@
     "id": "2023-04_server_products",
     "label": "Server Products",
     "description": [
-      "Control",
+      "Not Eligible",
+      "Control Bucket",
       "Treatment 1: Enables Server Products (AKA one time purchases for creator guilds)"
     ],
     "hash": 2236798974,
     "buckets": [
+      -1,
       0,
       1
     ],

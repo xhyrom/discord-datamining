@@ -4,11 +4,13 @@
     "id": "2022-11_creator_monetization_onboarding_waitlist",
     "label": "Creator Monetization Onboarding Waitlist",
     "description": [
-      "Control",
+      "Not Eligible",
+      "Control Bucket",
       "Treatment 1: Enables Guilds to (possibly) see the waitlist"
     ],
     "hash": 987884927,
     "buckets": [
+      -1,
       0,
       1
     ],

@@ -4,12 +4,14 @@
     "id": "2023-03_birthday_activities",
     "label": "Birthday Activities",
     "description": [
-      "Control",
+      "Not Eligible",
+      "Control Bucket",
       "Treatment 1: Enable Birthday Activities",
       "Treatment 2: Geo test Enable Birthday Activities but no share"
     ],
     "hash": 1389690772,
     "buckets": [
+      -1,
       0,
       1,
       2

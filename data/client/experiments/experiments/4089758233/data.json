@@ -4,11 +4,13 @@
     "id": "2021-11_member_verification_manual_approval",
     "label": "Member Verification Manual Approval",
     "description": [
-      "Control",
+      "Not Eligible",
+      "Control Bucket",
       "Treatment 1: Enable manual approval for membership verification"
     ],
     "hash": 4089758233,
     "buckets": [
+      -1,
       0,
       1
     ],

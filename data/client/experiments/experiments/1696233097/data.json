@@ -4,13 +4,13 @@
     "id": "2022-11_activitiesbashoutcoachmark",
     "label": "Bash Out Coach Mark",
     "description": [
-      "Control",
+      "Not Eligible",
       "Treatment 0: Control",
       "Treatment 1: Enable Bash Out Coach Mark"
     ],
     "hash": 1696233097,
     "buckets": [
-      0,
+      -1,
       0,
       1
     ],

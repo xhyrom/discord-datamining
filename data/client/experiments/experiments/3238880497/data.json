@@ -4,11 +4,13 @@
     "id": "2023-03_activitieswatchtogetherpromo",
     "label": "Activities Watch Together Promo",
     "description": [
-      "Control",
+      "Not Eligible",
+      "Control Bucket",
       "Treatment 1: enable Watch Together promo"
     ],
     "hash": 3238880497,
     "buckets": [
+      -1,
       0,
       1
     ],

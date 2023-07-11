@@ -4,11 +4,13 @@
     "id": "2022-11_desktop_notification_center",
     "label": "Desktop notification center",
     "description": [
-      "Control",
+      "Not Eligible",
+      "Control Bucket",
       "Treatment 1: Notification center desktop enabled"
     ],
     "hash": 1323079101,
     "buckets": [
+      -1,
       0,
       1
     ],

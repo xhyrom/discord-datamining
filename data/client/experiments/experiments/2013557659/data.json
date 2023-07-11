@@ -4,11 +4,13 @@
     "id": "2023-01_emoji_discovery_backfill",
     "label": "Emoji Hotrail Backfill",
     "description": [
-      "Control",
+      "Not Eligible",
+      "Control Bucket",
       "Treatment 1: Backfills Hotrail With Emojis"
     ],
     "hash": 2013557659,
     "buckets": [
+      -1,
       0,
       1
     ],

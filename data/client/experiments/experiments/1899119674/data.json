@@ -4,11 +4,13 @@
     "id": "2022-03_guild_access_rate_insight_experiment",
     "label": "Guild Access Rate Insight Experiment",
     "description": [
-      "Control",
+      "Not Eligible",
+      "Control Bucket",
       "Treatment 1: Show guild access rate in insights"
     ],
     "hash": 1899119674,
     "buckets": [
+      -1,
       0,
       1
     ],

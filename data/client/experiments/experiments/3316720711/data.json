@@ -4,12 +4,14 @@
     "id": "2021-02_quartz_video_source",
     "label": "Quartz Video Source",
     "description": [
-      "Control",
+      "Not Eligible",
+      "Control Bucket",
       "Treatment 1: gotta go fast",
       "Treatment 2: 2fast 2furious"
     ],
     "hash": 3316720711,
     "buckets": [
+      -1,
       0,
       1,
       2

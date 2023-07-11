@@ -4,13 +4,15 @@
     "id": "2022-07_guild_role_subscriptions_variable_max_tiers",
     "label": "Guild Role Subscription Max Tiers",
     "description": [
-      "Control",
+      "Not Eligible",
+      "Control Bucket",
       "Treatment 4: Enables {n} maximum published tiers",
       "Treatment 5: Enables {n} maximum published tiers",
       "Treatment 6: Enables {n} maximum published tiers"
     ],
     "hash": 179711638,
     "buckets": [
+      -1,
       0,
       4,
       5,

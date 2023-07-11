@@ -4,11 +4,13 @@
     "id": "2022-09_creator_monetization_raven_users",
     "label": "Creator Monetization Onboarding v2 Users",
     "description": [
-      "Control",
+      "Not Eligible",
+      "Control Bucket",
       "Treatment 1: Enables users to create Guild Role Subscriptions quickly"
     ],
     "hash": 2539540256,
     "buckets": [
+      -1,
       0,
       1
     ],

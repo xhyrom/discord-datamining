@@ -4,11 +4,13 @@
     "id": "2023-04_activity_launcher_embed",
     "label": "Activity Launcher Embed",
     "description": [
-      "Control",
+      "Not Eligible",
+      "Control Bucket",
       "Treatment 1: Enable the Activity Launcher Embed in chat"
     ],
     "hash": 3699020455,
     "buckets": [
+      -1,
       0,
       1
     ],

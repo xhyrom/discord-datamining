@@ -4,11 +4,13 @@
     "id": "2022-12_timestamp_tooltip",
     "label": "Timestamp Tooltip",
     "description": [
-      "Control",
+      "Not Eligible",
+      "Control Bucket",
       "Treatment 1: Enabled"
     ],
     "hash": 1978665225,
     "buckets": [
+      -1,
       0,
       1
     ],

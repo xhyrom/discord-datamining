@@ -4,11 +4,13 @@
     "id": "2021-04_impression_logging",
     "label": "Standard Analytics: Log Impressions",
     "description": [
-      "Control",
+      "Not Eligible",
+      "Control Bucket",
       "Treatment 1: Log impressions"
     ],
     "hash": 3354177721,
     "buckets": [
+      -1,
       0,
       1
     ],

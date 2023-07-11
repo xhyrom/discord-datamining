@@ -4,12 +4,14 @@
     "id": "2021-09_favorites_server",
     "label": "Enable fancy super-alpha favorites server.",
     "description": [
-      "Control",
+      "Not Eligible",
+      "Control Bucket",
       "Treatment 1: It is on.",
       "Treatment 2: It is forced off"
     ],
     "hash": 1134868932,
     "buckets": [
+      -1,
       0,
       1,
       2

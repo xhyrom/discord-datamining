@@ -5,11 +5,13 @@
       "id": "2023-01_global_display_names",
       "label": "Global Display Name",
       "description": [
-        "Control",
+        "Not Eligible",
+        "Control Bucket",
         "Treatment 1: enabled"
       ],
       "hash": 785391472,
       "buckets": [
+        -1,
         0,
         1
       ],
@@ -24,11 +26,13 @@
       "id": "2023-03_split_permissions",
       "label": "Split Permissions",
       "description": [
-        "Control",
+        "Not Eligible",
+        "Control Bucket",
         "Treatment 1: Split permissions into Add/Modify + Delete"
       ],
       "hash": 2355118827,
       "buckets": [
+        -1,
         0,
         1
       ],
@@ -87,12 +91,14 @@
       "id": "2021-09_favorites_server",
       "label": "Enable fancy super-alpha favorites server.",
       "description": [
-        "Control",
+        "Not Eligible",
+        "Control Bucket",
         "Treatment 1: It is on.",
         "Treatment 2: It is forced off"
       ],
       "hash": 1134868932,
       "buckets": [
+        -1,
         0,
         1,
         2
@@ -109,11 +115,13 @@
       "id": "2022-04_creator_monetization_country_allowlist",
       "label": "Creator Monetization Available in Country",
       "description": [
-        "Control",
+        "Not Eligible",
+        "Control Bucket",
         "Treatment 1: Enables users to view Creator Monetization entrypoints"
       ],
       "hash": 2532700533,
       "buckets": [
+        -1,
         0,
         1
       ],
@@ -128,11 +136,13 @@
       "id": "2022-09_creator_monetization_raven",
       "label": "Creator Monetization Onboarding v2",
       "description": [
-        "Control",
+        "Not Eligible",
+        "Control Bucket",
         "Treatment 1: Enables guild to create Guild Role Subscriptions quickly"
       ],
       "hash": 3723449866,
       "buckets": [
+        -1,
         0,
         1
       ],
@@ -190,11 +200,13 @@
       "id": "2022-09_creator_monetization_raven_users",
       "label": "Creator Monetization Onboarding v2 Users",
       "description": [
-        "Control",
+        "Not Eligible",
+        "Control Bucket",
         "Treatment 1: Enables users to create Guild Role Subscriptions quickly"
       ],
       "hash": 2539540256,
       "buckets": [
+        -1,
         0,
         1
       ],
@@ -209,11 +221,13 @@
       "id": "2022-11_creator_monetization_onboarding_waitlist",
       "label": "Creator Monetization Onboarding Waitlist",
       "description": [
-        "Control",
+        "Not Eligible",
+        "Control Bucket",
         "Treatment 1: Enables Guilds to (possibly) see the waitlist"
       ],
       "hash": 987884927,
       "buckets": [
+        -1,
         0,
         1
       ],
@@ -288,11 +302,13 @@
       "id": "2023-01_creator_monetization_nag_activate_users",
       "label": "Creator Monetization Nag Activate Users",
       "description": [
-        "Control",
+        "Not Eligible",
+        "Control Bucket",
         "Treatment 1: Enables users to see nag bar to activate server subscriptions"
       ],
       "hash": 3029387945,
       "buckets": [
+        -1,
         0,
         1
       ],
@@ -307,11 +323,13 @@
       "id": "2023-03_cr_accept_new_terms",
       "label": "Server Subscriptions Accept New Terms",
       "description": [
-        "Control",
+        "Not Eligible",
+        "Control Bucket",
         "Treatment 1: Enables Server Subscriptions Accept New Terms"
       ],
       "hash": 747043176,
       "buckets": [
+        -1,
         0,
         1
       ],
@@ -346,11 +364,13 @@
       "id": "2021-06_guild_role_subscriptions",
       "label": "Guild Role Subscriptions",
       "description": [
-        "Control",
+        "Not Eligible",
+        "Control Bucket",
         "Treatment 1: Enables guild to create Guild Role Subscriptions"
       ],
       "hash": 1405831955,
       "buckets": [
+        -1,
         0,
         1
       ],
@@ -449,11 +469,13 @@
       "id": "2021-08_guild_role_subscription_users",
       "label": "Guild Role Subscription Users",
       "description": [
-        "Control",
+        "Not Eligible",
+        "Control Bucket",
         "Treatment 1: Enables users to create Guild Role Subscriptions"
       ],
       "hash": 1567199723,
       "buckets": [
+        -1,
         0,
         1
       ],
@@ -468,11 +490,13 @@
       "id": "2022-01_guild_role_subscription_multigroup",
       "label": "Guild Role Subscription Multigroup",
       "description": [
-        "Control",
+        "Not Eligible",
+        "Control Bucket",
         "Treatment 1: Enables guild to create multiple Guild Role Subscription groups"
       ],
       "hash": 2201448248,
       "buckets": [
+        -1,
         0,
         1
       ],
@@ -514,11 +538,13 @@
       "id": "2022-01_guild_role_subscription_trials",
       "label": "Guild Role Subscription Trials",
       "description": [
-        "Control",
+        "Not Eligible",
+        "Control Bucket",
         "Treatment 1: Enables guild to create Guild Role Subscription Trials"
       ],
       "hash": 4200595067,
       "buckets": [
+        -1,
         0,
         1
       ],
@@ -593,11 +619,13 @@
       "id": "2022-03_role_subscription_analytics_portal",
       "label": "Guild Role Subscription Analytics",
       "description": [
-        "Control",
+        "Not Eligible",
+        "Control Bucket",
         "Treatment 1: Enables guild to view analytics for role subscriptions"
       ],
       "hash": 3510816342,
       "buckets": [
+        -1,
         0,
         1
       ],
@@ -647,11 +675,13 @@
       "id": "2022-04_guild_role_subscription_purchase_feedback_loop",
       "label": "Guild Role Subscription Purchase Feedback Loop",
       "description": [
-        "Control",
+        "Not Eligible",
+        "Control Bucket",
         "Treatment 1: Enables guilds to send purchsae feedback loop system messages"
       ],
       "hash": 1990672009,
       "buckets": [
+        -1,
         0,
         1
       ],
@@ -690,11 +720,13 @@
       "id": "2022-05_mobile_web_role_subscription_purchase_page",
       "label": "Guild Role Subscription Mobile Web",
       "description": [
-        "Control",
+        "Not Eligible",
+        "Control Bucket",
         "Treatment 1: Enables role subscription mobile web purchase page"
       ],
       "hash": 4190408036,
       "buckets": [
+        -1,
         0,
         1
       ],
@@ -729,11 +761,13 @@
       "id": "2022-06_native_mobile_role_subscription_management",
       "label": "Mobile Guild Role Subscription Management",
       "description": [
-        "Control",
+        "Not Eligible",
+        "Control Bucket",
         "Treatment 1: Enable native role subscription management for mobile"
       ],
       "hash": 1034661306,
       "buckets": [
+        -1,
         0,
         1
       ],
@@ -748,13 +782,15 @@
       "id": "2022-07_guild_role_subscriptions_variable_max_tiers",
       "label": "Guild Role Subscription Max Tiers",
       "description": [
-        "Control",
+        "Not Eligible",
+        "Control Bucket",
         "Treatment 4: Enables {n} maximum published tiers",
         "Treatment 5: Enables {n} maximum published tiers",
         "Treatment 6: Enables {n} maximum published tiers"
       ],
       "hash": 179711638,
       "buckets": [
+        -1,
         0,
         4,
         5,
@@ -801,11 +837,13 @@
       "id": "2022-08_mobile_web_role_subscription_upsell",
       "label": "Mobile Web Guild Role Subscription Upsell",
       "description": [
-        "Control",
+        "Not Eligible",
+        "Control Bucket",
         "Treatment 1: Enable mobile web role subscription upsell"
       ],
       "hash": 2514746297,
       "buckets": [
+        -1,
         0,
         1
       ],
@@ -820,11 +858,13 @@
       "id": "2022-10_creator_store_pages",
       "label": "Creator Store Pages ",
       "description": [
-        "Control",
+        "Not Eligible",
+        "Control Bucket",
         "Treatment 1: Enables guild to have store page"
       ],
       "hash": 24149521,
       "buckets": [
+        -1,
         0,
         1
       ],
@@ -882,11 +922,13 @@
       "id": "2022-12_mobile_guild_role_subscription_team_setup",
       "label": "Mobile Guild Role Subscription Team Setup",
       "description": [
-        "Control",
+        "Not Eligible",
+        "Control Bucket",
         "Treatment 1: Enables guild to allow payout team setup on mobile"
       ],
       "hash": 3313601281,
       "buckets": [
+        -1,
         0,
         1
       ],
@@ -934,11 +976,13 @@
       "id": "2023-02_server_subscriptions_iap",
       "label": "Server Subscriptions IAP",
       "description": [
-        "Control",
+        "Not Eligible",
+        "Control Bucket",
         "Treatment 1: Enables Server Subscriptions IAP"
       ],
       "hash": 295820329,
       "buckets": [
+        -1,
         0,
         1
       ],
@@ -973,11 +1017,13 @@
       "id": "2023-03_server_subs_iap_geo_rollout",
       "label": "Server Subscriptions IAP User",
       "description": [
-        "Control",
+        "Not Eligible",
+        "Control Bucket",
         "Treatment 1: Enables Server Subscriptions IAP For User"
       ],
       "hash": 6046655,
       "buckets": [
+        -1,
         0,
         1
       ],
@@ -992,13 +1038,15 @@
       "id": "2023-03_server_subscriptions_tier_templates",
       "label": "Server Subscriptions Tier Templates",
       "description": [
-        "Control",
+        "Not Eligible",
+        "Control Bucket",
         "Treatment 1: 299 basic tier + no link",
         "Treatment 2: 399 basic tier + no link",
         "Treatment 3: 399 basic tier + link"
       ],
       "hash": 808859253,
       "buckets": [
+        -1,
         0,
         1,
         2,
@@ -1104,11 +1152,13 @@
       "id": "2023-04_server_subscriptions_tier_templates_user",
       "label": "Server Subscriptions Tier Templates",
       "description": [
-        "Control",
+        "Not Eligible",
+        "Control Bucket",
         "Treatment 1: Enable tier templates for user"
       ],
       "hash": 4265918989,
       "buckets": [
+        -1,
         0,
         1
       ],
@@ -1123,11 +1173,13 @@
       "id": "2023-03_self_demonetization",
       "label": "Self Demonetization",
       "description": [
-        "Control",
+        "Not Eligible",
+        "Control Bucket",
         "Treatment 1: Enables Self Demonetization"
       ],
       "hash": 3194028601,
       "buckets": [
+        -1,
         0,
         1
       ],
@@ -1166,12 +1218,14 @@
       "id": "2023-04_broadcasting",
       "label": "Go Live Broadcasting",
       "description": [
-        "Control",
+        "Not Eligible",
+        "Control Bucket",
         "Treatment 1: Allow user to Broadcast to friends & guilds",
         "Treatment 2: Cannot broadcast, cannot view broadcasts"
       ],
       "hash": 139947315,
       "buckets": [
+        -1,
         0,
         1,
         2
@@ -1188,11 +1242,13 @@
       "id": "2023-02_onboarding_home_admin",
       "label": "[ADMIN] Home as a community onboarding surface",
       "description": [
-        "Control",
+        "Not Eligible",
+        "Control Bucket",
         "Treatment 1: Show the Onboarding Version of Home in Admin Settings"
       ],
       "hash": 748249793,
       "buckets": [
+        -1,
         0,
         1
       ],
@@ -1250,11 +1306,13 @@
       "id": "2023-05_optional_onboarding_home_admin",
       "label": "[ADMIN] Make server guide optional",
       "description": [
-        "Control",
+        "Not Eligible",
+        "Control Bucket",
         "Treatment 1: Optional"
       ],
       "hash": 695300504,
       "buckets": [
+        -1,
         0,
         1
       ],
@@ -1329,13 +1387,15 @@
       "id": "2023-02_onboarding_home",
       "label": "Home as a community onboarding surface",
       "description": [
-        "Control",
+        "Not Eligible",
+        "Control Bucket",
         "Treatment 1: Show the Onboarding Version of Home",
         "Treatment 2: Onboarding Home DEV",
         "Treatment 3: Show the Onboarding Version of Home"
       ],
       "hash": 454680912,
       "buckets": [
+        -1,
         0,
         1,
         2,
@@ -1353,13 +1413,13 @@
       "id": "2023-07_day_0_nux",
       "label": "Mobile Redesign Day 0 NUX",
       "description": [
-        "Control",
+        "Not Eligible",
         "Treatment 0: Control",
         "Treatment 1: Day 0 Enabled"
       ],
       "hash": 1174587839,
       "buckets": [
-        0,
+        -1,
         0,
         1
       ],
@@ -1374,7 +1434,8 @@
       "id": "2023-06_mobile_redesign_curry_existing_users",
       "label": "Tabs V2 - Curry Existing Users",
       "description": [
-        "Control",
+        "Not Eligible",
+        "Control Bucket",
         "Treatment 2: App Navbar Always Visible",
         "Treatment 3: App Navbar Always Visible + Keep Channel",
         "Treatment 4: Recent channels",
@@ -1383,6 +1444,7 @@
       ],
       "hash": 4015496517,
       "buckets": [
+        -1,
         0,
         2,
         3,
@@ -1401,7 +1463,8 @@
       "id": "2023-06_mobile_redesign_curry_new_users",
       "label": "Tabs V2 - Curry New Users",
       "description": [
-        "Control",
+        "Not Eligible",
+        "Control Bucket",
         "Treatment 2: App Navbar Always Visible",
         "Treatment 3: App Navbar Always Visible + Keep Channel",
         "Treatment 4: Recent channels",
@@ -1410,6 +1473,7 @@
       ],
       "hash": 2373630185,
       "buckets": [
+        -1,
         0,
         2,
         3,
@@ -1428,11 +1492,13 @@
       "id": "2023-02_tabs_v2",
       "label": "Tabs V2 - GDM Bucketing",
       "description": [
-        "Control",
+        "Not Eligible",
+        "Control Bucket",
         "Treatment 1: Enable Tabs V2"
       ],
       "hash": 1499660140,
       "buckets": [
+        -1,
         0,
         1
       ],
@@ -1447,11 +1513,13 @@
       "id": "2023-03_mobile_re_design_existing_users",
       "label": "Tabs V2 - Existing Users",
       "description": [
-        "Control",
+        "Not Eligible",
+        "Control Bucket",
         "Treatment 1: Enable Tabs V2"
       ],
       "hash": 1929843098,
       "buckets": [
+        -1,
         0,
         1
       ],
@@ -1466,11 +1534,13 @@
       "id": "2023-02_mobile_redesign_new_users",
       "label": "Tabs V2 - New Users",
       "description": [
-        "Control",
+        "Not Eligible",
+        "Control Bucket",
         "Treatment 1: Enable Tabs V2"
       ],
       "hash": 1084726125,
       "buckets": [
+        -1,
         0,
         1
       ],
@@ -1485,11 +1555,13 @@
       "id": "2023-04_mobile_redesign_0c_new_users",
       "label": "Tabs V2 - New Users Phase 0c",
       "description": [
-        "Control",
+        "Not Eligible",
+        "Control Bucket",
         "Treatment 1: Enable Tabs V2"
       ],
       "hash": 1767248084,
       "buckets": [
+        -1,
         0,
         1
       ],
@@ -1504,11 +1576,13 @@
       "id": "2023-04_mobile_redesign_0d_new_users",
       "label": "Tabs V2 - New Users Phase 0d",
       "description": [
-        "Control",
+        "Not Eligible",
+        "Control Bucket",
         "Treatment 1: Enable Tabs V2"
       ],
       "hash": 4264103376,
       "buckets": [
+        -1,
         0,
         1
       ],
@@ -1523,7 +1597,8 @@
       "id": "2022-08_rtc_minimum_jitter_buffer_level",
       "label": "Minimum Jitter Buffer Level",
       "description": [
-        "Control",
+        "Not Eligible",
+        "Control Bucket",
         "Treatment 1: Minimum Jitter Buffer Level = 80ms",
         "Treatment 2: Minimum Jitter Buffer Level = 120ms",
         "Treatment 3: Minimum Jitter Buffer Level = 160ms",
@@ -1531,6 +1606,7 @@
       ],
       "hash": 1077571921,
       "buckets": [
+        -1,
         0,
         1,
         2,
@@ -1548,11 +1624,13 @@
       "id": "2021-10_price_determination",
       "label": "Price determination experiment",
       "description": [
-        "Control",
+        "Not Eligible",
+        "Control Bucket",
         "Treatment 1: Enabled"
       ],
       "hash": 3997593347,
       "buckets": [
+        -1,
         0,
         1
       ],
@@ -1567,11 +1645,13 @@
       "id": "2023-03_trial_redemption_default_to_monthly_plan",
       "label": "Trial Redemption Default To Monthly Plan",
       "description": [
-        "Control",
+        "Not Eligible",
+        "Control Bucket",
         "Treatment 1: Set default plan to monthly plan"
       ],
       "hash": 1656308555,
       "buckets": [
+        -1,
         0,
         1
       ],
@@ -1586,12 +1666,14 @@
       "id": "2023-05_overlay_hook_crash_detection",
       "label": "Detect and report crashes in the overlay hook",
       "description": [
-        "Control",
+        "Not Eligible",
+        "Control Bucket",
         "Treatment 1: EnableCrashReporting",
         "Treatment 2: EnableCrashTrigger"
       ],
       "hash": 933369006,
       "buckets": [
+        -1,
         0,
         1,
         2
@@ -1607,11 +1689,13 @@
       "id": "2022-11_rtx40xx_gpu_screenshare_with_av1",
       "label": "Test how AV1 works on windows with RTX40xx GPUs for screenshare",
       "description": [
-        "Control",
+        "Not Eligible",
+        "Control Bucket",
         "Treatment 1: Screenshare with AV1"
       ],
       "hash": 535388300,
       "buckets": [
+        -1,
         0,
         1
       ],
@@ -1626,11 +1710,13 @@
       "id": "2023-02_h265_android",
       "label": "Test how h265 works on android for DM calls",
       "description": [
-        "Control",
+        "Not Eligible",
+        "Control Bucket",
         "Treatment 1: Calling with H.265"
       ],
       "hash": 2838233237,
       "buckets": [
+        -1,
         0,
         1
       ],
@@ -1645,11 +1731,13 @@
       "id": "2023-06_h265_macos",
       "label": "Test how h265 works on macos",
       "description": [
-        "Control",
+        "Not Eligible",
+        "Control Bucket",
         "Treatment 1: Calling with H.265"
       ],
       "hash": 4148889709,
       "buckets": [
+        -1,
         0,
         1
       ],
@@ -1664,11 +1752,13 @@
       "id": "2022-10_h265_dm_call",
       "label": "Test how h265 works on ios/macos for DM calls",
       "description": [
-        "Control",
+        "Not Eligible",
+        "Control Bucket",
         "Treatment 1: Calling with H.265"
       ],
       "hash": 3916079111,
       "buckets": [
+        -1,
         0,
         1
       ],
@@ -1683,12 +1773,14 @@
       "id": "2021-06_hdr_screen_capture",
       "label": "HDR Screen Capture",
       "description": [
-        "Control",
+        "Not Eligible",
+        "Control Bucket",
         "Treatment 1: Always",
         "Treatment 2: Permitted Devices Only"
       ],
       "hash": 2912909916,
       "buckets": [
+        -1,
         0,
         1,
         2
@@ -1704,11 +1796,13 @@
       "id": "2021-08_max_sync_delay",
       "label": "Overrides the default max sync delay for AV streams in WebRTC",
       "description": [
-        "Control",
+        "Not Eligible",
+        "Control Bucket",
         "Treatment 1: Use 3 seconds as max sync delay"
       ],
       "hash": 578035700,
       "buckets": [
+        -1,
         0,
         1
       ],
@@ -1723,12 +1817,14 @@
       "id": "2021-02_quartz_video_source",
       "label": "Quartz Video Source",
       "description": [
-        "Control",
+        "Not Eligible",
+        "Control Bucket",
         "Treatment 1: gotta go fast",
         "Treatment 2: 2fast 2furious"
       ],
       "hash": 3316720711,
       "buckets": [
+        -1,
         0,
         1,
         2
@@ -1744,11 +1840,13 @@
       "id": "2021-03_videotoolbox_rate_optimization",
       "label": "VideoToolbox Rate Control Optimizations",
       "description": [
-        "Control",
+        "Not Eligible",
+        "Control Bucket",
         "Treatment 1: On"
       ],
       "hash": 2775082884,
       "buckets": [
+        -1,
         0,
         1
       ],
@@ -1763,7 +1861,8 @@
       "id": "2022-12_auto_disable_video_mobile_v1",
       "label": "Mobile performance: VideoHealthManager",
       "description": [
-        "Control",
+        "Not Eligible",
+        "Control Bucket",
         "Treatment 1: 5 second window, 100% allowed poor fps ratio, 5 fps threshold, 15 second backoff",
         "Treatment 2: 5 second window, 100% allowed poor fps ratio, 5 fps threshold, 10 second backoff",
         "Treatment 3: 10 second window, 70% allowed poor fps ratio, 5 fps threshold, 15 second backoff",
@@ -1771,6 +1870,7 @@
       ],
       "hash": 3888328973,
       "buckets": [
+        -1,
         0,
         1,
         2,
@@ -1788,11 +1888,13 @@
       "id": "2022-09_remote_audio_settings",
       "label": "Remote Audio Settings",
       "description": [
-        "Control",
+        "Not Eligible",
+        "Control Bucket",
         "Treatment 1: Read/write remote audio settings"
       ],
       "hash": 1503364285,
       "buckets": [
+        -1,
         0,
         1
       ],
@@ -1807,11 +1909,13 @@
       "id": "2022-1_read_state_staff",
       "label": "Read State Staff",
       "description": [
-        "Control",
+        "Not Eligible",
+        "Control Bucket",
         "Treatment 1: Refresh after enabling"
       ],
       "hash": 2864217513,
       "buckets": [
+        -1,
         0,
         1
       ],
@@ -1826,11 +1930,13 @@
       "id": "2023-03_client_themes_16thru21",
       "label": "Client Themes New Themes",
       "description": [
-        "Control",
+        "Not Eligible",
+        "Control Bucket",
         "Treatment 1: New themes enabled"
       ],
       "hash": 1212874525,
       "buckets": [
+        -1,
         0,
         1
       ],
@@ -1845,11 +1951,13 @@
       "id": "2022-07_file_upload_limit",
       "label": "File Upload Limit Increase",
       "description": [
-        "Control",
+        "Not Eligible",
+        "Control Bucket",
         "Treatment 1: Enabled"
       ],
       "hash": 828251710,
       "buckets": [
+        -1,
         0,
         1
       ],
@@ -1864,11 +1972,13 @@
       "id": "2022-09_free_file_upload_limit",
       "label": "Free File Upload Limit Increase",
       "description": [
-        "Control",
+        "Not Eligible",
+        "Control Bucket",
         "Treatment 1: Enabled"
       ],
       "hash": 3991298449,
       "buckets": [
+        -1,
         0,
         1
       ],
@@ -1883,13 +1993,15 @@
       "id": "2023-02_burst_reaction_guild_experiment",
       "label": "Burst Reactions",
       "description": [
-        "Control",
+        "Not Eligible",
+        "Control Bucket",
         "Treatment 1: Enabled",
         "Treatment 2: Tab UI",
         "Treatment 4: Free Bursts"
       ],
       "hash": 2014775304,
       "buckets": [
+        -1,
         0,
         1,
         2,
@@ -2007,7 +2119,8 @@
       "id": "2022-09_burst_reactions",
       "label": "Burst Reactions User Experiment",
       "description": [
-        "Control",
+        "Not Eligible",
+        "Control Bucket",
         "Treatment 1: User two entry points",
         "Treatment 2: User Tab UI",
         "Treatment 4: User Free Bursts",
@@ -2020,6 +2133,7 @@
       ],
       "hash": 1443856828,
       "buckets": [
+        -1,
         0,
         1,
         2,
@@ -2045,11 +2159,13 @@
       "id": "2023-06_burst_reaction_entry_point_ordering",
       "label": "Burst Reaction Entry Point Ordering",
       "description": [
-        "Control",
+        "Not Eligible",
+        "Control Bucket",
         "Treatment 1: Regular Reaction Prioritized"
       ],
       "hash": 2413236121,
       "buckets": [
+        -1,
         0,
         1
       ],
@@ -2064,12 +2180,14 @@
       "id": "2023-03_mobile_burst_reactions",
       "label": "Mobile Burst Reactions User Experiment",
       "description": [
-        "Control",
+        "Not Eligible",
+        "Control Bucket",
         "Treatment 1: Enabled",
         "Treatment 2: Enabled v2"
       ],
       "hash": 412458642,
       "buckets": [
+        -1,
         0,
         1,
         2
@@ -2085,11 +2203,13 @@
       "id": "2023-04_activity_launcher_embed",
       "label": "Activity Launcher Embed",
       "description": [
-        "Control",
+        "Not Eligible",
+        "Control Bucket",
         "Treatment 1: Enable the Activity Launcher Embed in chat"
       ],
       "hash": 3699020455,
       "buckets": [
+        -1,
         0,
         1
       ],
@@ -2104,12 +2224,14 @@
       "id": "2022-10_context_menu_and_new_media_picker",
       "label": "Context Menu and New Media Picker",
       "description": [
-        "Control",
+        "Not Eligible",
+        "Control Bucket",
         "Treatment 1: New media picker is enabled. Gift button is visible alongside Create Chread",
         "Treatment 2: New media picker is enabled. Gift button is NOT visible alongside Create Chread"
       ],
       "hash": 478936943,
       "buckets": [
+        -1,
         0,
         1,
         2
@@ -2125,11 +2247,13 @@
       "id": "2023-03_store_latest_message_data",
       "label": "Store latest message data",
       "description": [
-        "Control",
+        "Not Eligible",
+        "Control Bucket",
         "Treatment 1: Use latest data from api/gateway"
       ],
       "hash": 1617749743,
       "buckets": [
+        -1,
         0,
         1
       ],
@@ -2144,11 +2268,13 @@
       "id": "2022-12_media_mosaic_experiment",
       "label": "Media Mosaic",
       "description": [
-        "Control",
+        "Not Eligible",
+        "Control Bucket",
         "Treatment 1: Media mosaic is enabled"
       ],
       "hash": 1133868976,
       "buckets": [
+        -1,
         0,
         1
       ],
@@ -2163,11 +2289,13 @@
       "id": "2023-02_inline_sending_preview_mobile",
       "label": "Inline Sending Preview Mobile",
       "description": [
-        "Control",
+        "Not Eligible",
+        "Control Bucket",
         "Treatment 1: Inline sending preview is enabled on mobile (both iOS and Android)"
       ],
       "hash": 1582099574,
       "buckets": [
+        -1,
         0,
         1
       ],
@@ -2182,11 +2310,13 @@
       "id": "2022-08_guild_unreads",
       "label": "Guild Unreads",
       "description": [
-        "Control",
+        "Not Eligible",
+        "Control Bucket",
         "Treatment 1: Allow \"Highlights\" as an Unreads Option"
       ],
       "hash": 4073302433,
       "buckets": [
+        -1,
         0,
         1
       ],
@@ -2201,11 +2331,13 @@
       "id": "2022-11_notification_redesign",
       "label": "NotificationRedesign",
       "description": [
-        "Control",
+        "Not Eligible",
+        "Control Bucket",
         "Treatment 1: Notification Redesign Enabled"
       ],
       "hash": 1792467213,
       "buckets": [
+        -1,
         0,
         1
       ],
@@ -2220,11 +2352,13 @@
       "id": "2023-04_notification_redesign_v2",
       "label": "NotificationRedesignV2",
       "description": [
-        "Control",
+        "Not Eligible",
+        "Control Bucket",
         "Treatment 1: Notification Redesign V2 Enabled"
       ],
       "hash": 1347697298,
       "buckets": [
+        -1,
         0,
         1
       ],
@@ -2239,11 +2373,13 @@
       "id": "2022-11_desktop_notification_center",
       "label": "Desktop notification center",
       "description": [
-        "Control",
+        "Not Eligible",
+        "Control Bucket",
         "Treatment 1: Notification center desktop enabled"
       ],
       "hash": 1323079101,
       "buckets": [
+        -1,
         0,
         1
       ],
@@ -2258,11 +2394,13 @@
       "id": "2022-07_channel_highlights",
       "label": "Channel Highlights",
       "description": [
-        "Control",
+        "Not Eligible",
+        "Control Bucket",
         "Treatment 1: Show Channel Highlights"
       ],
       "hash": 4169687140,
       "buckets": [
+        -1,
         0,
         1
       ],
@@ -2277,7 +2415,8 @@
       "id": "2023-05_dcf_improvements",
       "label": "DCF Improvements Experiment",
       "description": [
-        "Control",
+        "Not Eligible",
+        "Control Bucket",
         "Treatment 1: Users will have a DC cooldown of 1 hour",
         "Treatment 2: DCs will be dismissed when a user navigates away from their surface",
         "Treatment 3: Users will be limited to seeing 2 DC a day and 6 DC a week",
@@ -2287,6 +2426,7 @@
       ],
       "hash": 1171817240,
       "buckets": [
+        -1,
         0,
         1,
         2,
@@ -2309,11 +2449,13 @@
       "id": "2021-04_network_action_logging",
       "label": "Standard Analytics: Log Network Actions",
       "description": [
-        "Control",
+        "Not Eligible",
+        "Control Bucket",
         "Treatment 1: Log network actions"
       ],
       "hash": 3643362751,
       "buckets": [
+        -1,
         0,
         1
       ],
@@ -2328,11 +2470,13 @@
       "id": "2022-09_emoji_ecosystem_holdout",
       "label": "Emoji Ecosystem Holdout Experiment",
       "description": [
-        "Control",
+        "Not Eligible",
+        "Control Bucket",
         "Treatment 1: In the Emoji Ecosystem Holdout"
       ],
       "hash": 667096268,
       "buckets": [
+        -1,
         0,
         1
       ],
@@ -2347,13 +2491,15 @@
       "id": "2022-09_emoji_picker_discovery",
       "label": "Emoji Picker Improved Discovery",
       "description": [
-        "Control",
+        "Not Eligible",
+        "Control Bucket",
         "Treatment 1: Bigger Picker",
         "Treatment 2: Bigger Picker + Popular Server Emojis",
         "Treatment 3: Bigger Picker + Newly Added Emojis"
       ],
       "hash": 346890398,
       "buckets": [
+        -1,
         0,
         1,
         2,
@@ -2370,11 +2516,13 @@
       "id": "2023-02_stage_boosting",
       "label": "Stage Boosting",
       "description": [
-        "Control",
+        "Not Eligible",
+        "Control Bucket",
         "Treatment 1: Enabled"
       ],
       "hash": 1816004721,
       "buckets": [
+        -1,
         0,
         1
       ],
@@ -2487,7 +2635,8 @@
       "id": "2021-09_ios_screenshare_resolution_profiles",
       "label": "iOS: Screenshare resolution profiles",
       "description": [
-        "Control",
+        "Not Eligible",
+        "Control Bucket",
         "Treatment 1: Permanent old resolution",
         "Treatment 2: Old resolution for 10s",
         "Treatment 3: Wait 3s after 1st frame capture",
@@ -2495,6 +2644,7 @@
       ],
       "hash": 3656427814,
       "buckets": [
+        -1,
         0,
         1,
         2,
@@ -2512,7 +2662,7 @@
       "id": "2022-10_communities_multi",
       "label": "A multi-arm guild experiment that segments all eligible guilds to test different combinations of the Communities 2.0 experience",
       "description": [
-        "Control",
+        "Not Eligible",
         "Treatment 0: Holdout",
         "Treatment 1: NMX Core",
         "Treatment 2: NMX Core + Home",
@@ -2521,7 +2671,7 @@
       ],
       "hash": 2457903107,
       "buckets": [
-        0,
+        -1,
         0,
         1,
         2,
@@ -2626,12 +2776,14 @@
       "id": "2022-01_home_tab_guild",
       "label": "Home Tab Guild",
       "description": [
-        "Control",
+        "Not Eligible",
+        "Control Bucket",
         "Treatment 1: Check User as well",
         "Treatment 2: Force on"
       ],
       "hash": 3832113202,
       "buckets": [
+        -1,
         0,
         1,
         2
@@ -2674,13 +2826,15 @@
       "id": "2022-01_home_tab_user",
       "label": "Home Tab User",
       "description": [
-        "Control",
+        "Not Eligible",
+        "Control Bucket",
         "Treatment 1: Show Home Tab",
         "Treatment 2: Force on",
         "Treatment 3: Overflow"
       ],
       "hash": 3656796460,
       "buckets": [
+        -1,
         0,
         1,
         2,
@@ -2697,11 +2851,13 @@
       "id": "2022-01_home_feed_toggle",
       "label": "Show Guild Feed Sorting Selector",
       "description": [
-        "Control",
+        "Not Eligible",
+        "Control Bucket",
         "Treatment 1: Yes Selector"
       ],
       "hash": 1124154177,
       "buckets": [
+        -1,
         0,
         1
       ],
@@ -2716,11 +2872,13 @@
       "id": "2022-06_home_refresh_button",
       "label": "Show refresh button",
       "description": [
-        "Control",
+        "Not Eligible",
+        "Control Bucket",
         "Treatment 1: Yes button"
       ],
       "hash": 853790804,
       "buckets": [
+        -1,
         0,
         1
       ],
@@ -2735,11 +2893,13 @@
       "id": "2022-08_home_badge",
       "label": "Show badge on home channel",
       "description": [
-        "Control",
+        "Not Eligible",
+        "Control Bucket",
         "Treatment 1: show badge"
       ],
       "hash": 2294464289,
       "buckets": [
+        -1,
         0,
         1
       ],
@@ -2754,7 +2914,8 @@
       "id": "2022-08_home_drawer_autoclose",
       "label": "Auto close home drawer",
       "description": [
-        "Control",
+        "Not Eligible",
+        "Control Bucket",
         "Treatment 1: normal animation",
         "Treatment 2: no animate",
         "Treatment 3: 150 delayed animation",
@@ -2763,6 +2924,7 @@
       ],
       "hash": 75117039,
       "buckets": [
+        -1,
         0,
         1,
         2,
@@ -2781,11 +2943,13 @@
       "id": "2022-09_welcome_header",
       "label": "Show welcome header for home",
       "description": [
-        "Control",
+        "Not Eligible",
+        "Control Bucket",
         "Treatment 1: show welcome header"
       ],
       "hash": 683339869,
       "buckets": [
+        -1,
         0,
         1
       ],
@@ -2800,11 +2964,13 @@
       "id": "2022-12_home_feedback_ux",
       "label": "Show post feedback for home",
       "description": [
-        "Control",
+        "Not Eligible",
+        "Control Bucket",
         "Treatment 100: show feedback"
       ],
       "hash": 655899426,
       "buckets": [
+        -1,
         0,
         100
       ],
@@ -2819,11 +2985,13 @@
       "id": "2023-03_home_deprecation",
       "label": "Home Deprecation",
       "description": [
-        "Control",
+        "Not Eligible",
+        "Control Bucket",
         "Treatment 1: Show notice"
       ],
       "hash": 280214844,
       "buckets": [
+        -1,
         0,
         1
       ],
@@ -2877,11 +3045,13 @@
       "id": "2023-03_free_discord_stickers",
       "label": "Free Default Stickers",
       "description": [
-        "Control",
+        "Not Eligible",
+        "Control Bucket",
         "Treatment 1: Enabled"
       ],
       "hash": 887694445,
       "buckets": [
+        -1,
         0,
         1
       ],
@@ -2896,12 +3066,14 @@
       "id": "2023-05_land_on_server_guide",
       "label": "Land users on server guide",
       "description": [
-        "Control",
+        "Not Eligible",
+        "Control Bucket",
         "Treatment 1: Users land on server guide when joining a guild via invite",
         "Treatment 42: [untracked] Users land on server guide when joining a guild via invite"
       ],
       "hash": 3172321247,
       "buckets": [
+        -1,
         0,
         1,
         42
@@ -2917,11 +3089,13 @@
       "id": "2023-03_pomelo_compatible_ux",
       "label": "Pomelo Compatibility",
       "description": [
-        "Control",
+        "Not Eligible",
+        "Control Bucket",
         "Treatment 1: enabled"
       ],
       "hash": 671665651,
       "buckets": [
+        -1,
         0,
         1
       ],
@@ -2936,11 +3110,13 @@
       "id": "2021-11_member_verification_manual_approval",
       "label": "Member Verification Manual Approval",
       "description": [
-        "Control",
+        "Not Eligible",
+        "Control Bucket",
         "Treatment 1: Enable manual approval for membership verification"
       ],
       "hash": 4089758233,
       "buckets": [
+        -1,
         0,
         1
       ],
@@ -3020,11 +3196,13 @@
       "id": "2023-05_guild_member_safety_experiment",
       "label": "Guild Member Safety Experiment",
       "description": [
-        "Control",
+        "Not Eligible",
+        "Control Bucket",
         "Treatment 1: Guild Member Safety Experiment"
       ],
       "hash": 603648674,
       "buckets": [
+        -1,
         0,
         1
       ],
@@ -3098,11 +3276,13 @@
       "id": "2021-04_impression_logging",
       "label": "Standard Analytics: Log Impressions",
       "description": [
-        "Control",
+        "Not Eligible",
+        "Control Bucket",
         "Treatment 1: Log impressions"
       ],
       "hash": 3354177721,
       "buckets": [
+        -1,
         0,
         1
       ],
@@ -3117,11 +3297,13 @@
       "id": "2023-01_silent_messages",
       "label": "Silent Messages",
       "description": [
-        "Control",
+        "Not Eligible",
+        "Control Bucket",
         "Treatment 1: Allow sending @silent messages"
       ],
       "hash": 183688925,
       "buckets": [
+        -1,
         0,
         1
       ],
@@ -3136,11 +3318,13 @@
       "id": "2022-12_forum_activity",
       "label": "Increased activity view for Forums, per user",
       "description": [
-        "Control",
+        "Not Eligible",
+        "Control Bucket",
         "Treatment 1: Enabled"
       ],
       "hash": 828081447,
       "buckets": [
+        -1,
         0,
         1
       ],
@@ -3155,11 +3339,13 @@
       "id": "2023-01_forums_activity_2_guild",
       "label": "Increased activity view for Forums, per guild",
       "description": [
-        "Control",
+        "Not Eligible",
+        "Control Bucket",
         "Treatment 1: Enabled"
       ],
       "hash": 4081692393,
       "buckets": [
+        -1,
         0,
         1
       ],
@@ -3211,11 +3397,13 @@
       "id": "2023-06_premium_unify_trial_upsell",
       "label": "Premium Unify Trial Upsell",
       "description": [
-        "Control",
+        "Not Eligible",
+        "Control Bucket",
         "Treatment 1: Unified trial upsell experience"
       ],
       "hash": 1495876933,
       "buckets": [
+        -1,
         0,
         1
       ],
@@ -3230,11 +3418,13 @@
       "id": "2023-01_emoji_discovery_backfill",
       "label": "Emoji Hotrail Backfill",
       "description": [
-        "Control",
+        "Not Eligible",
+        "Control Bucket",
         "Treatment 1: Backfills Hotrail With Emojis"
       ],
       "hash": 2013557659,
       "buckets": [
+        -1,
         0,
         1
       ],
@@ -3249,11 +3439,13 @@
       "id": "2023-02_nitro_most_popular_tag",
       "label": "Most popular tag in nitro plan selection",
       "description": [
-        "Control",
+        "Not Eligible",
+        "Control Bucket",
         "Treatment 1: show most popular tag on nitro plan"
       ],
       "hash": 2459440542,
       "buckets": [
+        -1,
         0,
         1
       ],
@@ -3268,12 +3460,14 @@
       "id": "2023-05_premium_marketing_page_trial_tier_card",
       "label": "Premium marketing page trial tier card",
       "description": [
-        "Control",
+        "Not Eligible",
+        "Control Bucket",
         "Treatment 1: Free trial pill on top of the card",
         "Treatment 2: Free trial pill inline with the card"
       ],
       "hash": 2553858368,
       "buckets": [
+        -1,
         0,
         1,
         2
@@ -3289,13 +3483,15 @@
       "id": "2023-04_tier_0_trial_cta_copy",
       "label": "Tier 0 Trial CTA Copy",
       "description": [
-        "Control",
+        "Not Eligible",
+        "Control Bucket",
         "Treatment 1: Users with a tier 0 trial offer will see \"Get Free Trial\"",
         "Treatment 2: Users with a tier 0 trial offer will see \"Try 1 Month Free\"",
         "Treatment 3: Users with a tier 0 trial offer will see \"Start Free Trial\""
       ],
       "hash": 3084409284,
       "buckets": [
+        -1,
         0,
         1,
         2,
@@ -3312,11 +3508,13 @@
       "id": "2022-03_block_russian_purchases",
       "label": "Block purchases based on country",
       "description": [
-        "Control",
+        "Not Eligible",
+        "Control Bucket",
         "Treatment 1: Payments Blocked"
       ],
       "hash": 3011681066,
       "buckets": [
+        -1,
         0,
         1
       ],
@@ -3331,11 +3529,13 @@
       "id": "2022-03_block_russian_purchases_desktop",
       "label": "Block purchases based on country (desktop specific flags)",
       "description": [
-        "Control",
+        "Not Eligible",
+        "Control Bucket",
         "Treatment 1: Check Payment Source"
       ],
       "hash": 1814483290,
       "buckets": [
+        -1,
         0,
         1
       ],
@@ -3350,11 +3550,13 @@
       "id": "2023-06_bogo_announcement_modal",
       "label": "BOGO Announcement Modal",
       "description": [
-        "Control",
+        "Not Eligible",
+        "Control Bucket",
         "Treatment 1: Users will see the BOGO announcement modal"
       ],
       "hash": 2338915282,
       "buckets": [
+        -1,
         0,
         1
       ],
@@ -3369,11 +3571,13 @@
       "id": "2023-06_bogo_promotion_gate",
       "label": "BOGO Promotion Manager",
       "description": [
-        "Control",
+        "Not Eligible",
+        "Control Bucket",
         "Treatment 1: Enable BOGO Promotion Manager"
       ],
       "hash": 680908968,
       "buckets": [
+        -1,
         0,
         1
       ],
@@ -3388,11 +3592,13 @@
       "id": "2021-06_preview_promotions",
       "label": "Promotions Preview",
       "description": [
-        "Control",
+        "Not Eligible",
+        "Control Bucket",
         "Treatment 1: Preview Enabled"
       ],
       "hash": 3704699110,
       "buckets": [
+        -1,
         0,
         1
       ],
@@ -3407,11 +3613,13 @@
       "id": "2022-08_amoled_mode_web",
       "label": "Enabled AMOLED Mode on Web",
       "description": [
-        "Control",
+        "Not Eligible",
+        "Control Bucket",
         "Treatment 1: Enabled AMOLED Theme Option"
       ],
       "hash": 4202366309,
       "buckets": [
+        -1,
         0,
         1
       ],
@@ -3426,12 +3634,14 @@
       "id": "2022-11_clips_experiment",
       "label": "Clips Experiment",
       "description": [
-        "Control",
+        "Not Eligible",
+        "Control Bucket",
         "Treatment 1: Clips without upsells",
         "Treatment 2: Clips with upsells"
       ],
       "hash": 1651184307,
       "buckets": [
+        -1,
         0,
         1,
         2
@@ -3448,11 +3658,13 @@
       "id": "2023-01_activities_in_gdm",
       "label": "Activities in GDM",
       "description": [
-        "Control",
+        "Not Eligible",
+        "Control Bucket",
         "Treatment 1: enable Activities in GDMs"
       ],
       "hash": 1834860859,
       "buckets": [
+        -1,
         0,
         1
       ],
@@ -3467,13 +3679,15 @@
       "id": "2023-03_clyde_ai",
       "label": "ClydeAI",
       "description": [
-        "Control",
+        "Not Eligible",
+        "Control Bucket",
         "Treatment 1: Enabled (Default Off)",
         "Treatment 3: Enabled (Default On)",
         "Treatment 4: Coming Soon"
       ],
       "hash": 4083096281,
       "buckets": [
+        -1,
         0,
         1,
         3,
@@ -3632,11 +3846,13 @@
       "id": "2023-06_clyde_ai_gdm",
       "label": "Clyde in DMs/GDMs",
       "description": [
-        "Control",
+        "Not Eligible",
+        "Control Bucket",
         "Treatment 1: enable clyde in gdms"
       ],
       "hash": 1195502096,
       "buckets": [
+        -1,
         0,
         1
       ],
@@ -3651,11 +3867,13 @@
       "id": "2023-02_nitroduction_experience",
       "label": "Nitroduction Experience",
       "description": [
-        "Control",
+        "Not Eligible",
+        "Control Bucket",
         "Treatment 1: One month trial users recieve the Nitroduction experience"
       ],
       "hash": 2956169075,
       "buckets": [
+        -1,
         0,
         1
       ],
@@ -3670,11 +3888,13 @@
       "id": "2023-04_nitro_drop_announcement_modal",
       "label": "2023 Nitro April Drop Announcement Modal",
       "description": [
-        "Control",
+        "Not Eligible",
+        "Control Bucket",
         "Treatment 1: Enabled Nitro April Drop announcement modal"
       ],
       "hash": 4190502511,
       "buckets": [
+        -1,
         0,
         1
       ],
@@ -3689,11 +3909,13 @@
       "id": "2023-04_nitro_drop_experience",
       "label": "2023 Nitro April Drop Experience",
       "description": [
-        "Control",
+        "Not Eligible",
+        "Control Bucket",
         "Treatment 1: Enabled Nitro April Drop Experience (apart from the announcement modal)"
       ],
       "hash": 2753834830,
       "buckets": [
+        -1,
         0,
         1
       ],
@@ -3708,11 +3930,13 @@
       "id": "2023-03_april_fools",
       "label": "April Fools 2023",
       "description": [
-        "Control",
+        "Not Eligible",
+        "Control Bucket",
         "Treatment 1: April Fools 2023"
       ],
       "hash": 3971730794,
       "buckets": [
+        -1,
         0,
         1
       ],
@@ -3727,7 +3951,8 @@
       "id": "2023-05_collectibles",
       "label": "Collectibles",
       "description": [
-        "Control",
+        "Not Eligible",
+        "Control Bucket",
         "Treatment 1: Nitro with collecting",
         "Treatment 2: Non-nitro with collecting upsells",
         "Treatment 3: Non-nitro with temporary avatar decorations upsells",
@@ -3735,6 +3960,7 @@
       ],
       "hash": 2455278797,
       "buckets": [
+        -1,
         0,
         1,
         2,
@@ -3754,11 +3980,13 @@
       "id": "2023-05_clyde_ai_dm",
       "label": "DMs to Clyde",
       "description": [
-        "Control",
+        "Not Eligible",
+        "Control Bucket",
         "Treatment 1: enable dms to clyde"
       ],
       "hash": 1906632964,
       "buckets": [
+        -1,
         0,
         1
       ],
@@ -3773,11 +4001,13 @@
       "id": "2023-05_inventory_guild_packs",
       "label": "Inventory Guild Packs Experiment",
       "description": [
-        "Control",
+        "Not Eligible",
+        "Control Bucket",
         "Treatment 1: Enabled"
       ],
       "hash": 1473329304,
       "buckets": [
+        -1,
         0,
         1
       ],
@@ -3792,11 +4022,13 @@
       "id": "2023-06_inventory_reaction_tooltip",
       "label": "Inventory Reaction Tooltip Experiment",
       "description": [
-        "Control",
+        "Not Eligible",
+        "Control Bucket",
         "Treatment 1: Enabled"
       ],
       "hash": 3470792155,
       "buckets": [
+        -1,
         0,
         1
       ],
@@ -3811,12 +4043,14 @@
       "id": "2023-06_inventory_guild_setting",
       "label": "Inventory Guild Settings Experiment",
       "description": [
-        "Control",
+        "Not Eligible",
+        "Control Bucket",
         "Treatment 1: Show setting toggle without respecting it",
         "Treatment 2: Show setting toggle and respect it"
       ],
       "hash": 3883768363,
       "buckets": [
+        -1,
         0,
         1,
         2
@@ -3858,12 +4092,14 @@
       "id": "2023-02_p13n_summarization",
       "label": "Channel Summaries Guild Experiment",
       "description": [
-        "Control",
+        "Not Eligible",
+        "Control Bucket",
         "Treatment 1: Enable channel summaries",
         "Treatment 2: Enable channel summaries GA"
       ],
       "hash": 1504498621,
       "buckets": [
+        -1,
         0,
         1,
         2
@@ -3926,11 +4162,13 @@
       "id": "2023-03_p13n_summarization_user",
       "label": "Channel Summaries User Experiment",
       "description": [
-        "Control",
+        "Not Eligible",
+        "Control Bucket",
         "Treatment 1: Enable channel summaries"
       ],
       "hash": 3283745071,
       "buckets": [
+        -1,
         0,
         1
       ],
@@ -3945,11 +4183,13 @@
       "id": "2023-06_p13n_summarization_mobile_ux",
       "label": "Channel Summaries UX on Mobile Experiment",
       "description": [
-        "Control",
+        "Not Eligible",
+        "Control Bucket",
         "Treatment 1: Enable mobile UX for channel summaries"
       ],
       "hash": 3780014786,
       "buckets": [
+        -1,
         0,
         1
       ],
@@ -3964,11 +4204,13 @@
       "id": "2023-07_p13n_guild_dock_summaries",
       "label": "Guild Dock Summaries on Mobile Experiment",
       "description": [
-        "Control",
+        "Not Eligible",
+        "Control Bucket",
         "Treatment 1: Enable guild dock summaries mobile UX"
       ],
       "hash": 727554173,
       "buckets": [
+        -1,
         0,
         1
       ],
@@ -3983,11 +4225,13 @@
       "id": "2023-03_apps_in_gdms",
       "label": "Apps in GDMs",
       "description": [
-        "Control",
+        "Not Eligible",
+        "Control Bucket",
         "Treatment 1: Show apps in gdm"
       ],
       "hash": 3375543773,
       "buckets": [
+        -1,
         0,
         1
       ],
@@ -4002,11 +4246,13 @@
       "id": "2022-07_voice_in_threads",
       "label": "Voice in Threads",
       "description": [
-        "Control",
+        "Not Eligible",
+        "Control Bucket",
         "Treatment 1: On"
       ],
       "hash": 944104242,
       "buckets": [
+        -1,
         0,
         1
       ],
@@ -4048,11 +4294,13 @@
       "id": "2022-11_command_query_pagination",
       "label": "Command Query Pagination",
       "description": [
-        "Control",
+        "Not Eligible",
+        "Control Bucket",
         "Treatment 1: Enabled"
       ],
       "hash": 2206139940,
       "buckets": [
+        -1,
         0,
         1
       ],
@@ -4067,11 +4315,13 @@
       "id": "2023-05_lock_icon",
       "label": "Checkout Lock Icon",
       "description": [
-        "Control",
+        "Not Eligible",
+        "Control Bucket",
         "Treatment 1: Enabled"
       ],
       "hash": 853908483,
       "buckets": [
+        -1,
         0,
         1
       ],
@@ -4086,11 +4336,13 @@
       "id": "2022-07_report_raids",
       "label": "Report Raids",
       "description": [
-        "Control",
+        "Not Eligible",
+        "Control Bucket",
         "Treatment 1: Enable Reporting Of Raids"
       ],
       "hash": 1055563741,
       "buckets": [
+        -1,
         0,
         1
       ],
@@ -4144,11 +4396,13 @@
       "id": "2022-10_guild_raid_messaging",
       "label": "Raid Alerts",
       "description": [
-        "Control",
+        "Not Eligible",
+        "Control Bucket",
         "Treatment 1: Enable Reporting Of Raids"
       ],
       "hash": 3636231100,
       "buckets": [
+        -1,
         0,
         1
       ],
@@ -4207,11 +4461,13 @@
       "id": "2023-03_guild_safety_settings",
       "label": "Safety check in guild settings",
       "description": [
-        "Control",
+        "Not Eligible",
+        "Control Bucket",
         "Treatment 1: Show safety check in settings"
       ],
       "hash": 1640064366,
       "buckets": [
+        -1,
         0,
         1
       ],
@@ -4258,12 +4514,14 @@
       "id": "2022-12_premium_targeted_upsells",
       "label": "Premium Targeted Upsells",
       "description": [
-        "Control",
+        "Not Eligible",
+        "Control Bucket",
         "Treatment 1: Use highest expected value to determine Nitro upsells",
         "Treatment 2: Use highest likelihood to determine Nitro upsells"
       ],
       "hash": 2067676101,
       "buckets": [
+        -1,
         0,
         1,
         2
@@ -4279,12 +4537,14 @@
       "id": "2022-09_premium_tier_0_global",
       "label": "Premium tier 0 (Global)",
       "description": [
-        "Control",
+        "Not Eligible",
+        "Control Bucket",
         "Treatment 1: Variant 1",
         "Treatment 2: Variant 2"
       ],
       "hash": 102690720,
       "buckets": [
+        -1,
         0,
         1,
         2
@@ -4300,11 +4560,13 @@
       "id": "2023-02_mfa_remove_phone",
       "label": "Safety Experience MFA Remove Phone",
       "description": [
-        "Control",
+        "Not Eligible",
+        "Control Bucket",
         "Treatment 1: Enabled"
       ],
       "hash": 3346916614,
       "buckets": [
+        -1,
         0,
         1
       ],
@@ -4319,11 +4581,13 @@
       "id": "2021-03_expiration_notice_mobile_web",
       "label": "Show expiration notice on mobile web invite",
       "description": [
-        "Control",
+        "Not Eligible",
+        "Control Bucket",
         "Treatment 1: Show expiration notice"
       ],
       "hash": 3623906145,
       "buckets": [
+        -1,
         0,
         1
       ],
@@ -4338,11 +4602,13 @@
       "id": "2021-03_expiration_notice_ios",
       "label": "Show expiration notice on ios invite",
       "description": [
-        "Control",
+        "Not Eligible",
+        "Control Bucket",
         "Treatment 1: Show expiration notice"
       ],
       "hash": 2088781100,
       "buckets": [
+        -1,
         0,
         1
       ],
@@ -4357,11 +4623,13 @@
       "id": "2021-03_expiration_notice_ios_embed",
       "label": "Show expiration notice on ios invite embed",
       "description": [
-        "Control",
+        "Not Eligible",
+        "Control Bucket",
         "Treatment 1: Show expiration notice"
       ],
       "hash": 733758152,
       "buckets": [
+        -1,
         0,
         1
       ],
@@ -4376,11 +4644,13 @@
       "id": "2021-07_role_popout",
       "label": "Role Popout",
       "description": [
-        "Control",
+        "Not Eligible",
+        "Control Bucket",
         "Treatment 1: Enable Popout"
       ],
       "hash": 1428438599,
       "buckets": [
+        -1,
         0,
         1
       ],
@@ -4395,12 +4665,14 @@
       "id": "2022-09_mobile_account_switcher",
       "label": "Mobile Account Switcher",
       "description": [
-        "Control",
+        "Not Eligible",
+        "Control Bucket",
         "Treatment 1: Enable Account Switcher on Mobile",
         "Treatment 2: Unenroll Account Switcher on Mobile and Clear Local Flag"
       ],
       "hash": 2001067746,
       "buckets": [
+        -1,
         0,
         1,
         2
@@ -4416,11 +4688,13 @@
       "id": "2022-11_mobile_account_switcher_notifications",
       "label": "Mobile Account Switcher: Notifications",
       "description": [
-        "Control",
+        "Not Eligible",
+        "Control Bucket",
         "Treatment 1: Enable notifications for multiple accounts"
       ],
       "hash": 1333727,
       "buckets": [
+        -1,
         0,
         1
       ],
@@ -4435,13 +4709,15 @@
       "id": "2022-04_registration_copy_updates",
       "label": "Registration Copy Updates",
       "description": [
-        "Control",
+        "Not Eligible",
+        "Control Bucket",
         "Treatment 1: Continue / Copy Above Button / High Prominence Copy",
         "Treatment 2: Continue / Copy Below Button / High Prominence Copy",
         "Treatment 3: Continue / Copy Above Button / Normal Prominence Copy"
       ],
       "hash": 1115221338,
       "buckets": [
+        -1,
         0,
         1,
         2,
@@ -4458,11 +4734,13 @@
       "id": "2023-06_unique_username_registration",
       "label": "Unique Username Registration",
       "description": [
-        "Control",
+        "Not Eligible",
+        "Control Bucket",
         "Treatment 1: Unique Username Registration enabled"
       ],
       "hash": 2476969328,
       "buckets": [
+        -1,
         0,
         1
       ],
@@ -4477,11 +4755,13 @@
       "id": "2023-04_fast_new_channels",
       "label": "Fast New Channels",
       "description": [
-        "Control",
+        "Not Eligible",
+        "Control Bucket",
         "Treatment 1: On"
       ],
       "hash": 4063488887,
       "buckets": [
+        -1,
         0,
         1
       ],
@@ -4543,11 +4823,13 @@
       "id": "2022-12_get_my_guilds_application_ids_endpoint",
       "label": "Get My Guilds' Application IDs Endpoint Experiment",
       "description": [
-        "Control",
+        "Not Eligible",
+        "Control Bucket",
         "Treatment 1: Enabled"
       ],
       "hash": 3772658100,
       "buckets": [
+        -1,
         0,
         1
       ],
@@ -4562,11 +4844,13 @@
       "id": "2023-02_app_directory_for_all_modal",
       "label": "App Directory Upsell For All Modal",
       "description": [
-        "Control",
+        "Not Eligible",
+        "Control Bucket",
         "Treatment 1: Enabled"
       ],
       "hash": 968202795,
       "buckets": [
+        -1,
         0,
         1
       ],
@@ -4581,11 +4865,13 @@
       "id": "2022-08_back_to_school",
       "label": "Back to School Event",
       "description": [
-        "Control",
+        "Not Eligible",
+        "Control Bucket",
         "Treatment 1: Back to School experience enabled"
       ],
       "hash": 2676348506,
       "buckets": [
+        -1,
         0,
         1
       ],
@@ -4600,11 +4886,13 @@
       "id": "2023-06_custom_call_sounds",
       "label": "Custom Call Sounds",
       "description": [
-        "Control",
+        "Not Eligible",
+        "Control Bucket",
         "Treatment 1: Enabled"
       ],
       "hash": 3039064495,
       "buckets": [
+        -1,
         0,
         1
       ],
@@ -4620,11 +4908,13 @@
       "id": "2023-02_referral_trials",
       "label": "Referral Trials",
       "description": [
-        "Control",
+        "Not Eligible",
+        "Control Bucket",
         "Treatment 1: Nitro users can send a Nitro trial offer to another user."
       ],
       "hash": 4247951256,
       "buckets": [
+        -1,
         0,
         1
       ],
@@ -4639,11 +4929,13 @@
       "id": "2021-02_staff_qc_debugging",
       "label": "Display QS scores in results. Not a real experiment",
       "description": [
-        "Control",
+        "Not Eligible",
+        "Control Bucket",
         "Treatment 1: Show scores in QS results"
       ],
       "hash": 2847059306,
       "buckets": [
+        -1,
         0,
         1
       ],
@@ -4658,11 +4950,13 @@
       "id": "2023-06_new_activity_one_time_purchase_modal",
       "label": "New Activity One Time Purchase Modal",
       "description": [
-        "Control",
+        "Not Eligible",
+        "Control Bucket",
         "Treatment 1: enabled"
       ],
       "hash": 261136978,
       "buckets": [
+        -1,
         0,
         1
       ],
@@ -4677,11 +4971,13 @@
       "id": "2023-05_activities_joinleave_sounds",
       "label": "Activities Sounds Experiment",
       "description": [
-        "Control",
+        "Not Eligible",
+        "Control Bucket",
         "Treatment 1: Enable Activities Join/Leave Sounds"
       ],
       "hash": 3190368920,
       "buckets": [
+        -1,
         0,
         1
       ],
@@ -4696,11 +4992,13 @@
       "id": "2023-04_null_experiment",
       "label": "Null Experiment",
       "description": [
-        "Control",
+        "Not Eligible",
+        "Control Bucket",
         "Treatment 1: On"
       ],
       "hash": 1045730203,
       "buckets": [
+        -1,
         0,
         1
       ],
@@ -4715,11 +5013,13 @@
       "id": "2022-09_inboxes_v2_frontend",
       "label": "Safety Integrity Platform Inboxes V2",
       "description": [
-        "Control",
+        "Not Eligible",
+        "Control Bucket",
         "Treatment 1: Enabled"
       ],
       "hash": 472975400,
       "buckets": [
+        -1,
         0,
         1
       ],
@@ -4734,11 +5034,13 @@
       "id": "2021-07_popout_autocomplete",
       "label": "Popout Autocomplete experiment",
       "description": [
-        "Control",
+        "Not Eligible",
+        "Control Bucket",
         "Treatment 1: New autocomplete style"
       ],
       "hash": 1900424093,
       "buckets": [
+        -1,
         0,
         1
       ],
@@ -4753,7 +5055,8 @@
       "id": "2023-05_fullyemojiautocomplete",
       "label": "Only show emoji in autocomplete",
       "description": [
-        "Control",
+        "Not Eligible",
+        "Control Bucket",
         "Treatment 1: Hide Stickers, only show 10 Emojis",
         "Treatment 2: Hide Stickers, show more Emojis without scrollbar",
         "Treatment 3: Hide Stickers, show more Emojis with scrollbar",
@@ -4761,6 +5064,7 @@
       ],
       "hash": 3138896883,
       "buckets": [
+        -1,
         0,
         1,
         2,
@@ -4778,11 +5082,13 @@
       "id": "2023-05_ugc_notifications",
       "label": "Notifications for UGC changes",
       "description": [
-        "Control",
+        "Not Eligible",
+        "Control Bucket",
         "Treatment 1: Show Notifications"
       ],
       "hash": 631733804,
       "buckets": [
+        -1,
         0,
         1
       ],
@@ -4823,11 +5129,13 @@
       "id": "2021-03_nitro_emoji_autocomplete_upsell",
       "label": "Emoji Autocomplete Upsell",
       "description": [
-        "Control",
+        "Not Eligible",
+        "Control Bucket",
         "Treatment 1: Show emoji autocomplete upsell"
       ],
       "hash": 259025033,
       "buckets": [
+        -1,
         0,
         1
       ],
@@ -4842,11 +5150,13 @@
       "id": "2021-04_nitro_emoji_autocomplete_upsell_ios",
       "label": "Emoji Autocomplete Upsell iOS",
       "description": [
-        "Control",
+        "Not Eligible",
+        "Control Bucket",
         "Treatment 1: Show emoji autocomplete upsell"
       ],
       "hash": 371152535,
       "buckets": [
+        -1,
         0,
         1
       ],
@@ -4861,11 +5171,13 @@
       "id": "2023-04_server_badging",
       "label": "Server Badging",
       "description": [
-        "Control",
+        "Not Eligible",
+        "Control Bucket",
         "Treatment 1: Enable Server Badging"
       ],
       "hash": 41612842,
       "buckets": [
+        -1,
         0,
         1
       ],
@@ -4919,11 +5231,13 @@
       "id": "2023-04_guild_alert_mode",
       "label": "Guild Alert Mode",
       "description": [
-        "Control",
+        "Not Eligible",
+        "Control Bucket",
         "Treatment 1: Show alert mode experimence"
       ],
       "hash": 2710924848,
       "buckets": [
+        -1,
         0,
         1
       ],
@@ -4993,11 +5307,13 @@
       "id": "2022-07_invites_disabled",
       "label": "Report Raids",
       "description": [
-        "Control",
+        "Not Eligible",
+        "Control Bucket",
         "Treatment 1: Enable Reporting Of Raids"
       ],
       "hash": 3683063649,
       "buckets": [
+        -1,
         0,
         1
       ],
@@ -5069,11 +5385,13 @@
       "id": "2022-12_timestamp_tooltip",
       "label": "Timestamp Tooltip",
       "description": [
-        "Control",
+        "Not Eligible",
+        "Control Bucket",
         "Treatment 1: Enabled"
       ],
       "hash": 1978665225,
       "buckets": [
+        -1,
         0,
         1
       ],
@@ -5088,11 +5406,13 @@
       "id": "2023-03_mj_chat_bar_user",
       "label": "MJ Chat Bar user experiment",
       "description": [
-        "Control",
+        "Not Eligible",
+        "Control Bucket",
         "Treatment 1: Enabled"
       ],
       "hash": 1396216677,
       "buckets": [
+        -1,
         0,
         1
       ],
@@ -5107,11 +5427,13 @@
       "id": "2023-03_mj_chat_bar_guild",
       "label": "MJ Chat Bar enabled guilds",
       "description": [
-        "Control",
+        "Not Eligible",
+        "Control Bucket",
         "Treatment 1: Enabled"
       ],
       "hash": 2182959876,
       "buckets": [
+        -1,
         0,
         1
       ],
@@ -5167,11 +5489,13 @@
       "id": "2022-12_seasonal_gifting",
       "label": "Seasonal Gifting",
       "description": [
-        "Control",
+        "Not Eligible",
+        "Control Bucket",
         "Treatment 1: Enabled"
       ],
       "hash": 184775741,
       "buckets": [
+        -1,
         0,
         1
       ],
@@ -5186,11 +5510,13 @@
       "id": "2023-05_referral_trials_birthday_moment",
       "label": "Referral Trials Birthday Moment",
       "description": [
-        "Control",
+        "Not Eligible",
+        "Control Bucket",
         "Treatment 1: Users will see the birthday moment referral trial UX"
       ],
       "hash": 3364594544,
       "buckets": [
+        -1,
         0,
         1
       ],
@@ -5205,12 +5531,14 @@
       "id": "2023-06_non_nitro_user_remix_upsell",
       "label": "Non Nitro User Remix Upsell Experiment",
       "description": [
-        "Control",
+        "Not Eligible",
+        "Control Bucket",
         "Treatment 1: treatment 1",
         "Treatment 2: treatment 2"
       ],
       "hash": 3195474227,
       "buckets": [
+        -1,
         0,
         1,
         2
@@ -5226,12 +5554,14 @@
       "id": "2023-03_mobile_remix",
       "label": "Remixing User Experiment",
       "description": [
-        "Control",
+        "Not Eligible",
+        "Control Bucket",
         "Treatment 1: Enables media remixing",
         "Treatment 2: Enables media remixing for desktop"
       ],
       "hash": 961769771,
       "buckets": [
+        -1,
         0,
         1,
         2
@@ -5247,11 +5577,13 @@
       "id": "2021-12_inferno_spam_redaction",
       "label": "Inferno Spam Redaction",
       "description": [
-        "Control",
+        "Not Eligible",
+        "Control Bucket",
         "Treatment 1: Allow guild channel messages from spammers to be collapsed"
       ],
       "hash": 4179344527,
       "buckets": [
+        -1,
         0,
         1
       ],
@@ -5266,11 +5598,13 @@
       "id": "2023-02_app_recommendations_server_checklist",
       "label": "Application Recommendation Server Checklist Experiment",
       "description": [
-        "Control",
+        "Not Eligible",
+        "Control Bucket",
         "Treatment 1: Show recommendation to add apps in new server checklist"
       ],
       "hash": 3320756132,
       "buckets": [
+        -1,
         0,
         1
       ],
@@ -5305,12 +5639,14 @@
       "id": "2023-03_improved_message_markdown",
       "label": "Improved Message Markdown ",
       "description": [
-        "Control",
+        "Not Eligible",
+        "Control Bucket",
         "Treatment 1: Show improved message markdown",
         "Treatment 2: Show improved message markdown WITHOUT masked links"
       ],
       "hash": 1859132618,
       "buckets": [
+        -1,
         0,
         1,
         2
@@ -5326,12 +5662,14 @@
       "id": "2023-03_improved_message_markdown_guild",
       "label": "Improved Message Markdown Guild Experiment",
       "description": [
-        "Control",
+        "Not Eligible",
+        "Control Bucket",
         "Treatment 1: Show improved message markdown",
         "Treatment 2: Show improved message markdown WITHOUT masked links"
       ],
       "hash": 1489979462,
       "buckets": [
+        -1,
         0,
         1,
         2
@@ -5477,11 +5815,13 @@
       "id": "2023-05_popular_slash_commands_mobile",
       "label": "Popular Slash Commands Mobile",
       "description": [
-        "Control",
+        "Not Eligible",
+        "Control Bucket",
         "Treatment 1: Show Popular Commands section"
       ],
       "hash": 1146223059,
       "buckets": [
+        -1,
         0,
         1
       ],
@@ -5496,11 +5836,13 @@
       "id": "2023-03_guild_media_channel",
       "label": "Media Channel",
       "description": [
-        "Control",
+        "Not Eligible",
+        "Control Bucket",
         "Treatment 1: Enables guild to create a media channel"
       ],
       "hash": 3890564237,
       "buckets": [
+        -1,
         0,
         1
       ],
@@ -5633,11 +5975,13 @@
       "id": "2023-04_guild_media_channel_post_preview_embed_users",
       "label": "Guild Role Subscription Users",
       "description": [
-        "Control",
+        "Not Eligible",
+        "Control Bucket",
         "Treatment 1: Enables for users Guild Media Post Preview Embeds"
       ],
       "hash": 288968706,
       "buckets": [
+        -1,
         0,
         1
       ],
@@ -5672,11 +6016,13 @@
       "id": "2022-08_message_todos_staff_only",
       "label": "Message TODO list",
       "description": [
-        "Control",
+        "Not Eligible",
+        "Control Bucket",
         "Treatment 1: Show message TODOs CTA"
       ],
       "hash": 4170652702,
       "buckets": [
+        -1,
         0,
         1
       ],
@@ -5691,11 +6037,13 @@
       "id": "2022-11_automod_non_community_guilds_release",
       "label": "Automod Non-Community Guilds Release",
       "description": [
-        "Control",
+        "Not Eligible",
+        "Control Bucket",
         "Treatment 1: Automod Non-Community Guilds Release"
       ],
       "hash": 2608013421,
       "buckets": [
+        -1,
         0,
         1
       ],
@@ -5843,11 +6191,13 @@
       "id": "2022-12_mention_raid_limit",
       "label": "Automod Mention Raid Limit",
       "description": [
-        "Control",
+        "Not Eligible",
+        "Control Bucket",
         "Treatment 1: Automod Mention Raid Limit"
       ],
       "hash": 1318029053,
       "buckets": [
+        -1,
         0,
         1
       ],
@@ -5928,11 +6278,13 @@
       "id": "2023-01_mention_raid_notice",
       "label": "Automod Mention Raid Notice",
       "description": [
-        "Control",
+        "Not Eligible",
+        "Control Bucket",
         "Treatment 1: Automod Mention Raid Notice"
       ],
       "hash": 805661295,
       "buckets": [
+        -1,
         0,
         1
       ],
@@ -6000,11 +6352,13 @@
       "id": "2023-02_automod_custom_message",
       "label": "Automod Custom Message",
       "description": [
-        "Control",
+        "Not Eligible",
+        "Control Bucket",
         "Treatment 1: Automod Custom Message"
       ],
       "hash": 511273769,
       "buckets": [
+        -1,
         0,
         1
       ],
@@ -6079,12 +6433,14 @@
       "id": "2023-02_free_form",
       "label": "Automod Server Policy",
       "description": [
-        "Control",
+        "Not Eligible",
+        "Control Bucket",
         "Treatment 1: Automod Server Policy",
         "Treatment 10: Automod Server Policy Rules Summarization"
       ],
       "hash": 2001176293,
       "buckets": [
+        -1,
         0,
         1,
         10
@@ -6139,11 +6495,13 @@
       "id": "2023-05_automod_user_profile_ab",
       "label": "Automod on User Profile A/B",
       "description": [
-        "Control",
+        "Not Eligible",
+        "Control Bucket",
         "Treatment 1: Automod on User Profile enabled"
       ],
       "hash": 4261225962,
       "buckets": [
+        -1,
         0,
         1
       ],
@@ -6192,11 +6550,13 @@
       "id": "2023-06_remove_reactions_by_type",
       "label": "Remove Reactions by Type",
       "description": [
-        "Control",
+        "Not Eligible",
+        "Control Bucket",
         "Treatment 1: Enabled"
       ],
       "hash": 4195647747,
       "buckets": [
+        -1,
         0,
         1
       ],
@@ -6250,12 +6610,14 @@
       "id": "2022-07_system_dm_safety_onboarding",
       "label": "System DM Safety Onboarding",
       "description": [
-        "Control",
+        "Not Eligible",
+        "Control Bucket",
         "Treatment 1: Enabled, v1 copy",
         "Treatment 2: Enabled, v2 copy"
       ],
       "hash": 488500683,
       "buckets": [
+        -1,
         0,
         1,
         2
@@ -6271,11 +6633,13 @@
       "id": "2023-01_forums_non_community",
       "label": "Forum non-community",
       "description": [
-        "Control",
+        "Not Eligible",
+        "Control Bucket",
         "Treatment 1: On"
       ],
       "hash": 1446479414,
       "buckets": [
+        -1,
         0,
         1
       ],
@@ -6326,12 +6690,14 @@
       "id": "2023-05_go_live_quest_fortnite",
       "label": "Fortnite: Go Live Quest",
       "description": [
-        "Control",
+        "Not Eligible",
+        "Control Bucket",
         "Treatment 1: 15 min stream req + auto enrollment",
         "Treatment 99: 2 minute stream req + auto enrollment"
       ],
       "hash": 2709361021,
       "buckets": [
+        -1,
         0,
         1,
         99
@@ -6351,11 +6717,13 @@
       "id": "2023-03_onboarding_upsell_lifecycle",
       "label": "Onboarding Upsell Lifecycle",
       "description": [
-        "Control",
+        "Not Eligible",
+        "Control Bucket",
         "Treatment 1: Show new lifecycle upsells"
       ],
       "hash": 485475819,
       "buckets": [
+        -1,
         0,
         1
       ],
@@ -6463,11 +6831,13 @@
       "id": "2023-03_pomelo",
       "label": "Pomelo",
       "description": [
-        "Control",
+        "Not Eligible",
+        "Control Bucket",
         "Treatment 1: enabled"
       ],
       "hash": 268309827,
       "buckets": [
+        -1,
         0,
         1
       ],
@@ -6482,11 +6852,13 @@
       "id": "2023-05_safety_user_sentiment",
       "label": "Safety User Sentiment Feedback Eligible",
       "description": [
-        "Control",
+        "Not Eligible",
+        "Control Bucket",
         "Treatment 1: Eligible"
       ],
       "hash": 1344378364,
       "buckets": [
+        -1,
         0,
         1
       ],
@@ -6501,11 +6873,13 @@
       "id": "2022-12_home_header_redesign",
       "label": "Home New Header",
       "description": [
-        "Control",
+        "Not Eligible",
+        "Control Bucket",
         "Treatment 1: New Header"
       ],
       "hash": 3405402067,
       "buckets": [
+        -1,
         0,
         1
       ],
@@ -6568,12 +6942,14 @@
       "id": "2023-03_channel_name_emojis",
       "label": "Channel Emojis",
       "description": [
-        "Control",
+        "Not Eligible",
+        "Control Bucket",
         "Treatment 1: Enable channel name emojis",
         "Treatment 2: Emojis to left of channel icon"
       ],
       "hash": 3524854832,
       "buckets": [
+        -1,
         0,
         1,
         2
@@ -6590,13 +6966,15 @@
       "id": "2023-05_fast_onboarding_landing",
       "label": "Fast Onboarding Landing",
       "description": [
-        "Control",
+        "Not Eligible",
+        "Control Bucket",
         "Treatment 1: 2x Speed",
         "Treatment 2: Instant",
         "Treatment 42: Instant Untracked"
       ],
       "hash": 1461620747,
       "buckets": [
+        -1,
         0,
         1,
         2,
@@ -6613,11 +6991,13 @@
       "id": "2023-02_onboardingdropdowns",
       "label": "Enables dropdown selections from onboarding prompts",
       "description": [
-        "Control",
+        "Not Eligible",
+        "Control Bucket",
         "Treatment 1: On"
       ],
       "hash": 3884904940,
       "buckets": [
+        -1,
         0,
         1
       ],
@@ -6693,11 +7073,13 @@
       "id": "2023-01_guild_onboarding_includes_rules",
       "label": "Guild Onboarding includes rules experience",
       "description": [
-        "Control",
+        "Not Eligible",
+        "Control Bucket",
         "Treatment 1: Last page of onboarding is rules"
       ],
       "hash": 987713133,
       "buckets": [
+        -1,
         0,
         1
       ],
@@ -6712,11 +7094,13 @@
       "id": "2023-03_activities_game_night_coach_mark",
       "label": "Activities Game Night Experiment",
       "description": [
-        "Control",
+        "Not Eligible",
+        "Control Bucket",
         "Treatment 1: Enable Activities Game Night"
       ],
       "hash": 2171590360,
       "buckets": [
+        -1,
         0,
         1
       ],
@@ -6731,11 +7115,13 @@
       "id": "2023-03_activity_gartic_phone_coach_mark",
       "label": "Activity Coach Mark Gartic Phone",
       "description": [
-        "Control",
+        "Not Eligible",
+        "Control Bucket",
         "Treatment 1: Enable Activity Coach Mark Gartic Phone"
       ],
       "hash": 1886305766,
       "buckets": [
+        -1,
         0,
         1
       ],
@@ -6750,13 +7136,13 @@
       "id": "2022-11_activitiesbashoutcoachmark",
       "label": "Bash Out Coach Mark",
       "description": [
-        "Control",
+        "Not Eligible",
         "Treatment 0: Control",
         "Treatment 1: Enable Bash Out Coach Mark"
       ],
       "hash": 1696233097,
       "buckets": [
-        0,
+        -1,
         0,
         1
       ],
@@ -6771,11 +7157,13 @@
       "id": "2021-10_study_group",
       "label": "Student hub study group",
       "description": [
-        "Control",
+        "Not Eligible",
+        "Control Bucket",
         "Treatment 1: Enables study group sidebar"
       ],
       "hash": 4030301365,
       "buckets": [
+        -1,
         0,
         1
       ],
@@ -6829,11 +7217,13 @@
       "id": "2021-12_discovery_requirements_m2",
       "label": "Lower Server Discovery member count requirements",
       "description": [
-        "Control",
+        "Not Eligible",
+        "Control Bucket",
         "Treatment 1: Allow a server to become discoverable with lower member count requirements"
       ],
       "hash": 1065075299,
       "buckets": [
+        -1,
         0,
         1
       ],
@@ -6848,11 +7238,13 @@
       "id": "2022-11_default_disable_mass_mention",
       "label": "Disable mass mentions for communities by default",
       "description": [
-        "Control",
+        "Not Eligible",
+        "Control Bucket",
         "Treatment 1: Enabled"
       ],
       "hash": 2462216785,
       "buckets": [
+        -1,
         0,
         1
       ],
@@ -6924,11 +7316,13 @@
       "id": "2021-11_hub_events",
       "label": "Hub Events",
       "description": [
-        "Control",
+        "Not Eligible",
+        "Control Bucket",
         "Treatment 1: Show Hub Events List"
       ],
       "hash": 1107510295,
       "buckets": [
+        -1,
         0,
         1
       ],
@@ -6986,12 +7380,14 @@
       "id": "2023-02_voice_channel_statuses",
       "label": "Voice Channel Status Guild Experiment",
       "description": [
-        "Control",
+        "Not Eligible",
+        "Control Bucket",
         "Treatment 1: Enable viewing and setting voice channel statuses for guild",
         "Treatment 2: A/A test, identical to treatment 1"
       ],
       "hash": 2809294122,
       "buckets": [
+        -1,
         0,
         1,
         2
@@ -7061,13 +7457,15 @@
       "id": "2022-12_channel_notice_redesign",
       "label": "Channel Notice Redesign",
       "description": [
-        "Control",
+        "Not Eligible",
+        "Control Bucket",
         "Treatment 1: Show Redesigned Channel Notices",
         "Treatment 2: Show Redesigned Stage/Event Notices",
         "Treatment 3: Show Redesigned Channel Notices & Stage/Event Notices"
       ],
       "hash": 3502788249,
       "buckets": [
+        -1,
         0,
         1,
         2,
@@ -7084,11 +7482,13 @@
       "id": "2022-01_server_recommendations_rollout",
       "label": "Rollout experiment for server recommendations.",
       "description": [
-        "Control",
+        "Not Eligible",
+        "Control Bucket",
         "Treatment 1: Show server recommendations"
       ],
       "hash": 2353632184,
       "buckets": [
+        -1,
         0,
         1
       ],
@@ -7103,11 +7503,13 @@
       "id": "2023-01_clear_all_message_requests",
       "label": "Safety Experience Reject All Message Requests",
       "description": [
-        "Control",
+        "Not Eligible",
+        "Control Bucket",
         "Treatment 1: Enabled"
       ],
       "hash": 400679165,
       "buckets": [
+        -1,
         0,
         1
       ],
@@ -7122,11 +7524,13 @@
       "id": "2023-02_parent_tools_launch",
       "label": "Safety - Family Center Launch",
       "description": [
-        "Control",
+        "Not Eligible",
+        "Control Bucket",
         "Treatment 1: Enabled"
       ],
       "hash": 1869634267,
       "buckets": [
+        -1,
         0,
         1
       ],
@@ -7141,11 +7545,13 @@
       "id": "2021-04_longer_group_dm_invites",
       "label": "Longer Group DM Invites",
       "description": [
-        "Control",
+        "Not Eligible",
+        "Control Bucket",
         "Treatment 1: Makes group DM invites expire after 1 week."
       ],
       "hash": 1693164202,
       "buckets": [
+        -1,
         0,
         1
       ],
@@ -7160,11 +7566,13 @@
       "id": "2023-05_clear_pending_incoming_friend_requests",
       "label": "Enable ability to clear incoming friend requests",
       "description": [
-        "Control",
+        "Not Eligible",
+        "Control Bucket",
         "Treatment 1: Enabled"
       ],
       "hash": 3060384904,
       "buckets": [
+        -1,
         0,
         1
       ],
@@ -7179,11 +7587,13 @@
       "id": "2023-01_shared_canvas",
       "label": "Shared Canvas",
       "description": [
-        "Control",
+        "Not Eligible",
+        "Control Bucket",
         "Treatment 1: Enable Shared Canvas"
       ],
       "hash": 280866660,
       "buckets": [
+        -1,
         0,
         1
       ],
@@ -7286,11 +7696,13 @@
       "id": "2022-12_activities_auto_suggest",
       "label": "Activities Auto Suggest",
       "description": [
-        "Control",
+        "Not Eligible",
+        "Control Bucket",
         "Treatment 1: Enable VC Activities Mini Shelf"
       ],
       "hash": 2732395257,
       "buckets": [
+        -1,
         0,
         1
       ],
@@ -7305,11 +7717,13 @@
       "id": "2023-03_activitieswatchtogetherpromo",
       "label": "Activities Watch Together Promo",
       "description": [
-        "Control",
+        "Not Eligible",
+        "Control Bucket",
         "Treatment 1: enable Watch Together promo"
       ],
       "hash": 3238880497,
       "buckets": [
+        -1,
         0,
         1
       ],
@@ -7324,11 +7738,13 @@
       "id": "2023-03_activities_watch_together_promo_sparkles_week_1",
       "label": "Activities Watch Together Promo Week 1 Sparkles",
       "description": [
-        "Control",
+        "Not Eligible",
+        "Control Bucket",
         "Treatment 1: enable Watch Together promo week 1 sparkles"
       ],
       "hash": 1312040082,
       "buckets": [
+        -1,
         0,
         1
       ],
@@ -7343,11 +7759,13 @@
       "id": "2023-03_activities_watch_together_promo_sparkles_week_2",
       "label": "Activities Watch Together Promo Week 2 Sparkles",
       "description": [
-        "Control",
+        "Not Eligible",
+        "Control Bucket",
         "Treatment 1: enable Watch Together promo week 2 sparkles"
       ],
       "hash": 1736363471,
       "buckets": [
+        -1,
         0,
         1
       ],
@@ -7362,12 +7780,14 @@
       "id": "2023-03_birthday_activities",
       "label": "Birthday Activities",
       "description": [
-        "Control",
+        "Not Eligible",
+        "Control Bucket",
         "Treatment 1: Enable Birthday Activities",
         "Treatment 2: Geo test Enable Birthday Activities but no share"
       ],
       "hash": 1389690772,
       "buckets": [
+        -1,
         0,
         1,
         2
@@ -7383,11 +7803,13 @@
       "id": "2023-06_activity_shelf_banner_color_together",
       "label": "Activity Shelf Banner Color Together",
       "description": [
-        "Control",
+        "Not Eligible",
+        "Control Bucket",
         "Treatment 1: Enable Activity Shelf Banner Color Together"
       ],
       "hash": 1426851414,
       "buckets": [
+        -1,
         0,
         1
       ],
@@ -7402,11 +7824,13 @@
       "id": "2023-06_birthday_goodbye",
       "label": "Activities Free Forever",
       "description": [
-        "Control",
+        "Not Eligible",
+        "Control Bucket",
         "Treatment 1: Enable Activities Free Forever"
       ],
       "hash": 2205929113,
       "buckets": [
+        -1,
         0,
         1
       ],
@@ -7421,7 +7845,7 @@
       "id": "2023-06_activity_shelf_to_detail_page",
       "label": "Activity Shelf to Detail Page",
       "description": [
-        "Control",
+        "Not Eligible",
         "Treatment 0: Control",
         "Treatment 1: Enable Big Shelf",
         "Treatment 2: Enable Activity Shelf to Detail Page",
@@ -7431,7 +7855,7 @@
       ],
       "hash": 2451628514,
       "buckets": [
-        0,
+        -1,
         0,
         1,
         2,
@@ -7453,11 +7877,13 @@
       "id": "2023-03_pax_vc_tile_activities",
       "label": "PAX VC Tile Activities",
       "description": [
-        "Control",
+        "Not Eligible",
+        "Control Bucket",
         "Treatment 1: Enable PAX VC Tile Activities"
       ],
       "hash": 3149823763,
       "buckets": [
+        -1,
         0,
         1
       ],
@@ -7472,12 +7898,14 @@
       "id": "2023-01_vc_tile_activities_entry_point",
       "label": "VC Tile Activities Entry Point",
       "description": [
-        "Control",
+        "Not Eligible",
+        "Control Bucket",
         "Treatment 1: Enable one or two users VC Tile Activities Entry Point",
         "Treatment 2: Enable any number of users VC Tile Activities Entry Point"
       ],
       "hash": 1289034223,
       "buckets": [
+        -1,
         0,
         1,
         2
@@ -7493,11 +7921,13 @@
       "id": "2023-06_hide_thread_count",
       "label": "Hide thread count",
       "description": [
-        "Control",
+        "Not Eligible",
+        "Control Bucket",
         "Treatment 1: Hide thread count"
       ],
       "hash": 1130195016,
       "buckets": [
+        -1,
         0,
         1
       ],
@@ -7512,11 +7942,13 @@
       "id": "2021-06_guild_subscriptions_payment_flow_test_page",
       "label": "Test page for guild subscription payment flows",
       "description": [
-        "Control",
+        "Not Eligible",
+        "Control Bucket",
         "Treatment 1: Test page for guild subscription payment flows"
       ],
       "hash": 1573645622,
       "buckets": [
+        -1,
         0,
         1
       ],
@@ -7531,12 +7963,14 @@
       "id": "2022-11_premium_bogo_month_promotion",
       "label": "Nitro Promo for Black Friday",
       "description": [
-        "Control",
+        "Not Eligible",
+        "Control Bucket",
         "Treatment 1: Enabled without promo materials (basic + classic)",
         "Treatment 2: Enabled with promo materials (Rest of world)"
       ],
       "hash": 28781292,
       "buckets": [
+        -1,
         0,
         1,
         2
@@ -7552,11 +7986,13 @@
       "id": "2023-04_birthday_activities_whats_new_gdm_tile",
       "label": "Birthday Activities Whats New GDM Tile",
       "description": [
-        "Control",
+        "Not Eligible",
+        "Control Bucket",
         "Treatment 1: Enable GDM tile"
       ],
       "hash": 3839121633,
       "buckets": [
+        -1,
         0,
         1
       ],
@@ -7571,11 +8007,13 @@
       "id": "2023-04_birthday_activities_jamspace_tile",
       "label": "Birthday Activities Whats New Jamspace Tile",
       "description": [
-        "Control",
+        "Not Eligible",
+        "Control Bucket",
         "Treatment 1: Enable Jamspace tile"
       ],
       "hash": 3742269191,
       "buckets": [
+        -1,
         0,
         1
       ],
@@ -7590,11 +8028,13 @@
       "id": "2023-05_birthday_activities_poker",
       "label": "Birthday Activities Poker Tile",
       "description": [
-        "Control",
+        "Not Eligible",
+        "Control Bucket",
         "Treatment 1: Enable Poker tile"
       ],
       "hash": 3212616249,
       "buckets": [
+        -1,
         0,
         1
       ],
@@ -7609,11 +8049,13 @@
       "id": "2023-04_birthday_activities_putt_party_tile",
       "label": "Birthday Activities Whats New Putt Party Tile",
       "description": [
-        "Control",
+        "Not Eligible",
+        "Control Bucket",
         "Treatment 1: Enable Putt Party tile"
       ],
       "hash": 2616904300,
       "buckets": [
+        -1,
         0,
         1
       ],
@@ -7628,12 +8070,14 @@
       "id": "2021-11_discovery_tags",
       "label": "Discovery Tags",
       "description": [
-        "Control",
+        "Not Eligible",
+        "Control Bucket",
         "Treatment 1: Show keyword tags on home and search result pages",
         "Treatment 2: Show keyword tags on home and search result pages and under the search bar"
       ],
       "hash": 1025804489,
       "buckets": [
+        -1,
         0,
         1,
         2
@@ -7649,11 +8093,13 @@
       "id": "2022-01_discovery_iar",
       "label": "Ability to report servers in Server Discovery",
       "description": [
-        "Control",
+        "Not Eligible",
+        "Control Bucket",
         "Treatment 1: Show IAR buttons in Server Discovery"
       ],
       "hash": 1877212037,
       "buckets": [
+        -1,
         0,
         1
       ],
@@ -7668,12 +8114,14 @@
       "id": "2023-01_consumer_education_launch",
       "label": "Safety Consumer Education Launch - Block/Mute",
       "description": [
-        "Control",
+        "Not Eligible",
+        "Control Bucket",
         "Treatment 1: Mute",
         "Treatment 2: Block"
       ],
       "hash": 1318110575,
       "buckets": [
+        -1,
         0,
         1,
         2
@@ -7689,11 +8137,13 @@
       "id": "2023-04_dm_spam_filter_coachmark",
       "label": "Safety DM Spam Filter Coachmark rollout",
       "description": [
-        "Control",
+        "Not Eligible",
+        "Control Bucket",
         "Treatment 1: Enabled"
       ],
       "hash": 64742860,
       "buckets": [
+        -1,
         0,
         1
       ],
@@ -7708,12 +8158,14 @@
       "id": "2022-04_account_profile_popout",
       "label": "Account Profile Popout",
       "description": [
-        "Control",
+        "Not Eligible",
+        "Control Bucket",
         "Treatment 1: Enable Account Profile Popout",
         "Treatment 2: Enable Account Profile Popout w/ DiscordTag button"
       ],
       "hash": 4156073260,
       "buckets": [
+        -1,
         0,
         1,
         2
@@ -7729,12 +8181,14 @@
       "id": "2023-03_mute_block_aa",
       "label": "Safety Consumer Education Block/Mute - A/A",
       "description": [
-        "Control",
+        "Not Eligible",
+        "Control Bucket",
         "Treatment 1: Mute",
         "Treatment 2: Block"
       ],
       "hash": 3135454939,
       "buckets": [
+        -1,
         0,
         1,
         2
@@ -7750,11 +8204,13 @@
       "id": "2023-04_consumer_education_launch__reporting",
       "label": "Consumer Education Launch - Reporting",
       "description": [
-        "Control",
+        "Not Eligible",
+        "Control Bucket",
         "Treatment 1: Reporting"
       ],
       "hash": 3966944317,
       "buckets": [
+        -1,
         0,
         1
       ],
@@ -7769,10 +8225,12 @@
       "id": "2021-09_watch_together_rollout",
       "label": "Exposure tracking for Watch Together (do not override)",
       "description": [
-        "Control"
+        "Not Eligible",
+        "Control Bucket"
       ],
       "hash": 3607703918,
       "buckets": [
+        -1,
         0
       ],
       "config_keys": [
@@ -7806,11 +8264,13 @@
       "id": "2022-02_guild_audit_log_user",
       "label": "Guild Audit Log - User Feature Flag",
       "description": [
-        "Control",
+        "Not Eligible",
+        "Control Bucket",
         "Treatment 1: Show Guild Audit Log 2.0 for user"
       ],
       "hash": 2802647294,
       "buckets": [
+        -1,
         0,
         1
       ],
@@ -7825,11 +8285,13 @@
       "id": "2022-02_guild_audit_log_guild",
       "label": "Guild Audit Log - Guild Feature Flag",
       "description": [
-        "Control",
+        "Not Eligible",
+        "Control Bucket",
         "Treatment 1: Show Guild Audit Log 2.0 for guild"
       ],
       "hash": 1412337990,
       "buckets": [
+        -1,
         0,
         1
       ],
@@ -7869,11 +8331,13 @@
       "id": "2022-05_safety_coms_update",
       "label": "Safety Integrity Platform Coms Update",
       "description": [
-        "Control",
+        "Not Eligible",
+        "Control Bucket",
         "Treatment 1: Enabled"
       ],
       "hash": 542042630,
       "buckets": [
+        -1,
         0,
         1
       ],
@@ -7888,11 +8352,13 @@
       "id": "2023-04_server_products",
       "label": "Server Products",
       "description": [
-        "Control",
+        "Not Eligible",
+        "Control Bucket",
         "Treatment 1: Enables Server Products (AKA one time purchases for creator guilds)"
       ],
       "hash": 2236798974,
       "buckets": [
+        -1,
         0,
         1
       ],
@@ -7934,11 +8400,13 @@
       "id": "2022-03_guild_access_rate_insight_experiment",
       "label": "Guild Access Rate Insight Experiment",
       "description": [
-        "Control",
+        "Not Eligible",
+        "Control Bucket",
         "Treatment 1: Show guild access rate in insights"
       ],
       "hash": 1899119674,
       "buckets": [
+        -1,
         0,
         1
       ],
@@ -7953,11 +8421,13 @@
       "id": "2020-12_guild_delete_feedback",
       "label": "Guild Delete Feedback experiment",
       "description": [
-        "Control",
+        "Not Eligible",
+        "Control Bucket",
         "Treatment 1: Show guild delete feedback"
       ],
       "hash": 2003494159,
       "buckets": [
+        -1,
         0,
         1
       ],
@@ -7972,11 +8442,13 @@
       "id": "2023-02_onboarding_advanced_mode",
       "label": "Enables setting up onboarding with advanced mode",
       "description": [
-        "Control",
+        "Not Eligible",
+        "Control Bucket",
         "Treatment 1: On"
       ],
       "hash": 2544556038,
       "buckets": [
+        -1,
         0,
         1
       ],
@@ -8097,11 +8569,13 @@
       "id": "2023-05_clyde_ai_guild_personality",
       "label": "Modify Clyde's Personality",
       "description": [
-        "Control",
+        "Not Eligible",
+        "Control Bucket",
         "Treatment 1: enable personality setting"
       ],
       "hash": 2701598838,
       "buckets": [
+        -1,
         0,
         1
       ],
@@ -8212,12 +8686,14 @@
       "id": "2022-06_community_admin_server",
       "label": "Show the button to join the admin server in community overview server settings page",
       "description": [
-        "Control",
+        "Not Eligible",
+        "Control Bucket",
         "Treatment 1: Show button if requirements met",
         "Treatment 2: Bypass requirements"
       ],
       "hash": 3282315774,
       "buckets": [
+        -1,
         0,
         1,
         2
@@ -8269,11 +8745,13 @@
       "id": "2023-03_onboarding_soft_requirement_for_partnership",
       "label": "Hide onboarding soft requirement for partnership",
       "description": [
-        "Control",
+        "Not Eligible",
+        "Control Bucket",
         "Treatment 1: Show onboarding soft requirement for partnership"
       ],
       "hash": 3738976194,
       "buckets": [
+        -1,
         0,
         1
       ],
@@ -8327,13 +8805,13 @@
       "id": "2021-10_pause_partner_applications_experiment",
       "label": "Pause Partner Applications Experiment",
       "description": [
-        "Control",
+        "Not Eligible",
         "Treatment 0: Off",
         "Treatment 1: On no override"
       ],
       "hash": 4049227286,
       "buckets": [
-        0,
+        -1,
         0,
         1
       ],
@@ -8348,11 +8826,13 @@
       "id": "2022-06_free_sticker_slots_design_updates",
       "label": "Free Sticker Slots Design Updates",
       "description": [
-        "Control",
+        "Not Eligible",
+        "Control Bucket",
         "Treatment 1: Enabled"
       ],
       "hash": 258580919,
       "buckets": [
+        -1,
         0,
         1
       ],
@@ -8391,11 +8871,13 @@
       "id": "2023-04_pomelo_announcement",
       "label": "Pomelo Announcement",
       "description": [
-        "Control",
+        "Not Eligible",
+        "Control Bucket",
         "Treatment 1: enabled"
       ],
       "hash": 2804111708,
       "buckets": [
+        -1,
         0,
         1
       ],
@@ -8410,11 +8892,13 @@
       "id": "2023-02_guest_voice_invites",
       "label": "Guest Voice Invites",
       "description": [
-        "Control",
+        "Not Eligible",
+        "Control Bucket",
         "Treatment 1: Allow creation of guest voice invites"
       ],
       "hash": 1727857487,
       "buckets": [
+        -1,
         0,
         1
       ],
@@ -8498,11 +8982,13 @@
       "id": "2022-12_localized_pricing_promo_manager",
       "label": "Localized Pricing Promo Manager",
       "description": [
-        "Control",
+        "Not Eligible",
+        "Control Bucket",
         "Treatment 1: Enable Localized Pricing Promo Manager"
       ],
       "hash": 4215507151,
       "buckets": [
+        -1,
         0,
         1
       ],

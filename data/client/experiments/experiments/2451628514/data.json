@@ -4,7 +4,7 @@
     "id": "2023-06_activity_shelf_to_detail_page",
     "label": "Activity Shelf to Detail Page",
     "description": [
-      "Control",
+      "Not Eligible",
       "Treatment 0: Control",
       "Treatment 1: Enable Big Shelf",
       "Treatment 2: Enable Activity Shelf to Detail Page",
@@ -14,7 +14,7 @@
     ],
     "hash": 2451628514,
     "buckets": [
-      0,
+      -1,
       0,
       1,
       2,

@@ -4,11 +4,13 @@
     "id": "2022-12_localized_pricing_promo_manager",
     "label": "Localized Pricing Promo Manager",
     "description": [
-      "Control",
+      "Not Eligible",
+      "Control Bucket",
       "Treatment 1: Enable Localized Pricing Promo Manager"
     ],
     "hash": 4215507151,
     "buckets": [
+      -1,
       0,
       1
     ],

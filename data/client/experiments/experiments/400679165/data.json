@@ -4,11 +4,13 @@
     "id": "2023-01_clear_all_message_requests",
     "label": "Safety Experience Reject All Message Requests",
     "description": [
-      "Control",
+      "Not Eligible",
+      "Control Bucket",
       "Treatment 1: Enabled"
     ],
     "hash": 400679165,
     "buckets": [
+      -1,
       0,
       1
     ],

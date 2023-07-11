@@ -4,7 +4,8 @@
     "id": "2022-08_home_drawer_autoclose",
     "label": "Auto close home drawer",
     "description": [
-      "Control",
+      "Not Eligible",
+      "Control Bucket",
       "Treatment 1: normal animation",
       "Treatment 2: no animate",
       "Treatment 3: 150 delayed animation",
@@ -13,6 +14,7 @@
     ],
     "hash": 75117039,
     "buckets": [
+      -1,
       0,
       1,
       2,

@@ -4,7 +4,8 @@
     "id": "2022-08_rtc_minimum_jitter_buffer_level",
     "label": "Minimum Jitter Buffer Level",
     "description": [
-      "Control",
+      "Not Eligible",
+      "Control Bucket",
       "Treatment 1: Minimum Jitter Buffer Level = 80ms",
       "Treatment 2: Minimum Jitter Buffer Level = 120ms",
       "Treatment 3: Minimum Jitter Buffer Level = 160ms",
@@ -12,6 +13,7 @@
     ],
     "hash": 1077571921,
     "buckets": [
+      -1,
       0,
       1,
       2,

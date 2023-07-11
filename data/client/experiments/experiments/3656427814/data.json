@@ -4,7 +4,8 @@
     "id": "2021-09_ios_screenshare_resolution_profiles",
     "label": "iOS: Screenshare resolution profiles",
     "description": [
-      "Control",
+      "Not Eligible",
+      "Control Bucket",
       "Treatment 1: Permanent old resolution",
       "Treatment 2: Old resolution for 10s",
       "Treatment 3: Wait 3s after 1st frame capture",
@@ -12,6 +13,7 @@
     ],
     "hash": 3656427814,
     "buckets": [
+      -1,
       0,
       1,
       2,

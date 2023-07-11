@@ -4,11 +4,13 @@
     "id": "2022-01_server_recommendations_rollout",
     "label": "Rollout experiment for server recommendations.",
     "description": [
-      "Control",
+      "Not Eligible",
+      "Control Bucket",
       "Treatment 1: Show server recommendations"
     ],
     "hash": 2353632184,
     "buckets": [
+      -1,
       0,
       1
     ],

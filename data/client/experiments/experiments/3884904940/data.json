@@ -4,11 +4,13 @@
     "id": "2023-02_onboardingdropdowns",
     "label": "Enables dropdown selections from onboarding prompts",
     "description": [
-      "Control",
+      "Not Eligible",
+      "Control Bucket",
       "Treatment 1: On"
     ],
     "hash": 3884904940,
     "buckets": [
+      -1,
       0,
       1
     ],

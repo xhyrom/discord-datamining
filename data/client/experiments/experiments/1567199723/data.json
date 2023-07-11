@@ -4,11 +4,13 @@
     "id": "2021-08_guild_role_subscription_users",
     "label": "Guild Role Subscription Users",
     "description": [
-      "Control",
+      "Not Eligible",
+      "Control Bucket",
       "Treatment 1: Enables users to create Guild Role Subscriptions"
     ],
     "hash": 1567199723,
     "buckets": [
+      -1,
       0,
       1
     ],

@@ -4,13 +4,15 @@
     "id": "2022-01_home_tab_user",
     "label": "Home Tab User",
     "description": [
-      "Control",
+      "Not Eligible",
+      "Control Bucket",
       "Treatment 1: Show Home Tab",
       "Treatment 2: Force on",
       "Treatment 3: Overflow"
     ],
     "hash": 3656796460,
     "buckets": [
+      -1,
       0,
       1,
       2,

@@ -4,12 +4,14 @@
     "id": "2023-01_consumer_education_launch",
     "label": "Safety Consumer Education Launch - Block/Mute",
     "description": [
-      "Control",
+      "Not Eligible",
+      "Control Bucket",
       "Treatment 1: Mute",
       "Treatment 2: Block"
     ],
     "hash": 1318110575,
     "buckets": [
+      -1,
       0,
       1,
       2

@@ -4,11 +4,13 @@
     "id": "2023-01_global_display_names",
     "label": "Global Display Name",
     "description": [
-      "Control",
+      "Not Eligible",
+      "Control Bucket",
       "Treatment 1: enabled"
     ],
     "hash": 785391472,
     "buckets": [
+      -1,
       0,
       1
     ],

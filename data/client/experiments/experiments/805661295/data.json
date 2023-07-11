@@ -4,11 +4,13 @@
     "id": "2023-01_mention_raid_notice",
     "label": "Automod Mention Raid Notice",
     "description": [
-      "Control",
+      "Not Eligible",
+      "Control Bucket",
       "Treatment 1: Automod Mention Raid Notice"
     ],
     "hash": 805661295,
     "buckets": [
+      -1,
       0,
       1
     ],

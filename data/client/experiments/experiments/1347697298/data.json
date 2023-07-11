@@ -4,11 +4,13 @@
     "id": "2023-04_notification_redesign_v2",
     "label": "NotificationRedesignV2",
     "description": [
-      "Control",
+      "Not Eligible",
+      "Control Bucket",
       "Treatment 1: Notification Redesign V2 Enabled"
     ],
     "hash": 1347697298,
     "buckets": [
+      -1,
       0,
       1
     ],

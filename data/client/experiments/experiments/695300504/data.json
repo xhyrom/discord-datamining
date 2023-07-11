@@ -4,11 +4,13 @@
     "id": "2023-05_optional_onboarding_home_admin",
     "label": "[ADMIN] Make server guide optional",
     "description": [
-      "Control",
+      "Not Eligible",
+      "Control Bucket",
       "Treatment 1: Optional"
     ],
     "hash": 695300504,
     "buckets": [
+      -1,
       0,
       1
     ],

@@ -4,11 +4,13 @@
     "id": "2023-01_forums_activity_2_guild",
     "label": "Increased activity view for Forums, per guild",
     "description": [
-      "Control",
+      "Not Eligible",
+      "Control Bucket",
       "Treatment 1: Enabled"
     ],
     "hash": 4081692393,
     "buckets": [
+      -1,
       0,
       1
     ],

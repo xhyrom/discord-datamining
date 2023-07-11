@@ -4,7 +4,8 @@
     "id": "2023-06_mobile_redesign_curry_new_users",
     "label": "Tabs V2 - Curry New Users",
     "description": [
-      "Control",
+      "Not Eligible",
+      "Control Bucket",
       "Treatment 2: App Navbar Always Visible",
       "Treatment 3: App Navbar Always Visible + Keep Channel",
       "Treatment 4: Recent channels",
@@ -13,6 +14,7 @@
     ],
     "hash": 2373630185,
     "buckets": [
+      -1,
       0,
       2,
       3,

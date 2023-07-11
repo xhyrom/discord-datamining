@@ -4,11 +4,13 @@
     "id": "2022-01_guild_role_subscription_multigroup",
     "label": "Guild Role Subscription Multigroup",
     "description": [
-      "Control",
+      "Not Eligible",
+      "Control Bucket",
       "Treatment 1: Enables guild to create multiple Guild Role Subscription groups"
     ],
     "hash": 2201448248,
     "buckets": [
+      -1,
       0,
       1
     ],

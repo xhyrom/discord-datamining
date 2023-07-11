@@ -4,11 +4,13 @@
     "id": "2023-04_guild_alert_mode",
     "label": "Guild Alert Mode",
     "description": [
-      "Control",
+      "Not Eligible",
+      "Control Bucket",
       "Treatment 1: Show alert mode experimence"
     ],
     "hash": 2710924848,
     "buckets": [
+      -1,
       0,
       1
     ],

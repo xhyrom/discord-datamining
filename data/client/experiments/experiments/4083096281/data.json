@@ -4,13 +4,15 @@
     "id": "2023-03_clyde_ai",
     "label": "ClydeAI",
     "description": [
-      "Control",
+      "Not Eligible",
+      "Control Bucket",
       "Treatment 1: Enabled (Default Off)",
       "Treatment 3: Enabled (Default On)",
       "Treatment 4: Coming Soon"
     ],
     "hash": 4083096281,
     "buckets": [
+      -1,
       0,
       1,
       3,

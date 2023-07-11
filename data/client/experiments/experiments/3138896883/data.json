@@ -4,7 +4,8 @@
     "id": "2023-05_fullyemojiautocomplete",
     "label": "Only show emoji in autocomplete",
     "description": [
-      "Control",
+      "Not Eligible",
+      "Control Bucket",
       "Treatment 1: Hide Stickers, only show 10 Emojis",
       "Treatment 2: Hide Stickers, show more Emojis without scrollbar",
       "Treatment 3: Hide Stickers, show more Emojis with scrollbar",
@@ -12,6 +13,7 @@
     ],
     "hash": 3138896883,
     "buckets": [
+      -1,
       0,
       1,
       2,

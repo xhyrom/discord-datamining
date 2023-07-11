@@ -4,11 +4,13 @@
     "id": "2023-05_clear_pending_incoming_friend_requests",
     "label": "Enable ability to clear incoming friend requests",
     "description": [
-      "Control",
+      "Not Eligible",
+      "Control Bucket",
       "Treatment 1: Enabled"
     ],
     "hash": 3060384904,
     "buckets": [
+      -1,
       0,
       1
     ],

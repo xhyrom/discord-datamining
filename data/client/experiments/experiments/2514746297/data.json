@@ -4,11 +4,13 @@
     "id": "2022-08_mobile_web_role_subscription_upsell",
     "label": "Mobile Web Guild Role Subscription Upsell",
     "description": [
-      "Control",
+      "Not Eligible",
+      "Control Bucket",
       "Treatment 1: Enable mobile web role subscription upsell"
     ],
     "hash": 2514746297,
     "buckets": [
+      -1,
       0,
       1
     ],

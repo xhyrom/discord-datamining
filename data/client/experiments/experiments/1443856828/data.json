@@ -4,7 +4,8 @@
     "id": "2022-09_burst_reactions",
     "label": "Burst Reactions User Experiment",
     "description": [
-      "Control",
+      "Not Eligible",
+      "Control Bucket",
       "Treatment 1: User two entry points",
       "Treatment 2: User Tab UI",
       "Treatment 4: User Free Bursts",
@@ -17,6 +18,7 @@
     ],
     "hash": 1443856828,
     "buckets": [
+      -1,
       0,
       1,
       2,

@@ -4,7 +4,7 @@
     "id": "2022-10_communities_multi",
     "label": "A multi-arm guild experiment that segments all eligible guilds to test different combinations of the Communities 2.0 experience",
     "description": [
-      "Control",
+      "Not Eligible",
       "Treatment 0: Holdout",
       "Treatment 1: NMX Core",
       "Treatment 2: NMX Core + Home",
@@ -13,7 +13,7 @@
     ],
     "hash": 2457903107,
     "buckets": [
-      0,
+      -1,
       0,
       1,
       2,

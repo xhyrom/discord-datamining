@@ -4,11 +4,13 @@
     "id": "2023-02_nitroduction_experience",
     "label": "Nitroduction Experience",
     "description": [
-      "Control",
+      "Not Eligible",
+      "Control Bucket",
       "Treatment 1: One month trial users recieve the Nitroduction experience"
     ],
     "hash": 2956169075,
     "buckets": [
+      -1,
       0,
       1
     ],

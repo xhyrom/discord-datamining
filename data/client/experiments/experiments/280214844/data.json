@@ -4,11 +4,13 @@
     "id": "2023-03_home_deprecation",
     "label": "Home Deprecation",
     "description": [
-      "Control",
+      "Not Eligible",
+      "Control Bucket",
       "Treatment 1: Show notice"
     ],
     "hash": 280214844,
     "buckets": [
+      -1,
       0,
       1
     ],

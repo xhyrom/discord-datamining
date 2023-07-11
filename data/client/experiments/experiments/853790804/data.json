@@ -4,11 +4,13 @@
     "id": "2022-06_home_refresh_button",
     "label": "Show refresh button",
     "description": [
-      "Control",
+      "Not Eligible",
+      "Control Bucket",
       "Treatment 1: Yes button"
     ],
     "hash": 853790804,
     "buckets": [
+      -1,
       0,
       1
     ],

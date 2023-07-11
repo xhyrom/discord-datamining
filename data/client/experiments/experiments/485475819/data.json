@@ -4,11 +4,13 @@
     "id": "2023-03_onboarding_upsell_lifecycle",
     "label": "Onboarding Upsell Lifecycle",
     "description": [
-      "Control",
+      "Not Eligible",
+      "Control Bucket",
       "Treatment 1: Show new lifecycle upsells"
     ],
     "hash": 485475819,
     "buckets": [
+      -1,
       0,
       1
     ],

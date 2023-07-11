@@ -4,11 +4,13 @@
     "id": "2021-12_inferno_spam_redaction",
     "label": "Inferno Spam Redaction",
     "description": [
-      "Control",
+      "Not Eligible",
+      "Control Bucket",
       "Treatment 1: Allow guild channel messages from spammers to be collapsed"
     ],
     "hash": 4179344527,
     "buckets": [
+      -1,
       0,
       1
     ],

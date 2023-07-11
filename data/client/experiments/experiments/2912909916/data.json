@@ -4,12 +4,14 @@
     "id": "2021-06_hdr_screen_capture",
     "label": "HDR Screen Capture",
     "description": [
-      "Control",
+      "Not Eligible",
+      "Control Bucket",
       "Treatment 1: Always",
       "Treatment 2: Permitted Devices Only"
     ],
     "hash": 2912909916,
     "buckets": [
+      -1,
       0,
       1,
       2

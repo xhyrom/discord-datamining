@@ -4,11 +4,13 @@
     "id": "2023-02_onboarding_home_admin",
     "label": "[ADMIN] Home as a community onboarding surface",
     "description": [
-      "Control",
+      "Not Eligible",
+      "Control Bucket",
       "Treatment 1: Show the Onboarding Version of Home in Admin Settings"
     ],
     "hash": 748249793,
     "buckets": [
+      -1,
       0,
       1
     ],

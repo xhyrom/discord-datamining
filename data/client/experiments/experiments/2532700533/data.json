@@ -4,11 +4,13 @@
     "id": "2022-04_creator_monetization_country_allowlist",
     "label": "Creator Monetization Available in Country",
     "description": [
-      "Control",
+      "Not Eligible",
+      "Control Bucket",
       "Treatment 1: Enables users to view Creator Monetization entrypoints"
     ],
     "hash": 2532700533,
     "buckets": [
+      -1,
       0,
       1
     ],

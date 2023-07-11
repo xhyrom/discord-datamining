@@ -4,11 +4,13 @@
     "id": "2021-11_hub_events",
     "label": "Hub Events",
     "description": [
-      "Control",
+      "Not Eligible",
+      "Control Bucket",
       "Treatment 1: Show Hub Events List"
     ],
     "hash": 1107510295,
     "buckets": [
+      -1,
       0,
       1
     ],

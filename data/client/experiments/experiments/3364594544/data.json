@@ -4,11 +4,13 @@
     "id": "2023-05_referral_trials_birthday_moment",
     "label": "Referral Trials Birthday Moment",
     "description": [
-      "Control",
+      "Not Eligible",
+      "Control Bucket",
       "Treatment 1: Users will see the birthday moment referral trial UX"
     ],
     "hash": 3364594544,
     "buckets": [
+      -1,
       0,
       1
     ],

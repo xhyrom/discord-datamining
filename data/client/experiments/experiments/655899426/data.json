@@ -4,11 +4,13 @@
     "id": "2022-12_home_feedback_ux",
     "label": "Show post feedback for home",
     "description": [
-      "Control",
+      "Not Eligible",
+      "Control Bucket",
       "Treatment 100: show feedback"
     ],
     "hash": 655899426,
     "buckets": [
+      -1,
       0,
       100
     ],

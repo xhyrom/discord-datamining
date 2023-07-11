@@ -4,11 +4,13 @@
     "id": "2022-01_guild_role_subscription_trials",
     "label": "Guild Role Subscription Trials",
     "description": [
-      "Control",
+      "Not Eligible",
+      "Control Bucket",
       "Treatment 1: Enables guild to create Guild Role Subscription Trials"
     ],
     "hash": 4200595067,
     "buckets": [
+      -1,
       0,
       1
     ],

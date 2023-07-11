@@ -4,11 +4,13 @@
     "id": "2023-06_burst_reaction_entry_point_ordering",
     "label": "Burst Reaction Entry Point Ordering",
     "description": [
-      "Control",
+      "Not Eligible",
+      "Control Bucket",
       "Treatment 1: Regular Reaction Prioritized"
     ],
     "hash": 2413236121,
     "buckets": [
+      -1,
       0,
       1
     ],

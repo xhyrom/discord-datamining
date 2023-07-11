@@ -4,11 +4,13 @@
     "id": "2023-02_nitro_most_popular_tag",
     "label": "Most popular tag in nitro plan selection",
     "description": [
-      "Control",
+      "Not Eligible",
+      "Control Bucket",
       "Treatment 1: show most popular tag on nitro plan"
     ],
     "hash": 2459440542,
     "buckets": [
+      -1,
       0,
       1
     ],
