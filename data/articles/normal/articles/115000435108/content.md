@@ -24,7 +24,7 @@
         <strong>Custom stickers anywhere:</strong> Similar to custom emojis, use any custom stickers from any servers you belong to when sending messages.
     </li>
     <li style="font-weight: 400;" aria-level="1">
-        <strong>Bigger file sharing</strong><span style="font-weight: 400;">: </span><span style="font-weight: 400;">Upload files up to 500 MB so you can share videos, photos, and more with ease (on desktop &amp; iOS only).</span>
+        <strong>Bigger file sharing</strong><span style="font-weight: 400;">: </span><span style="font-weight: 400;">Upload files up to 500 MB so you can share videos, photos, and more with ease.</span>
     </li>
     <li style="font-weight: 400;" aria-level="1">
         <strong>HD Streaming</strong><span style="font-weight: 400;">: Share your screen in high resolution for crispy gameplay. </span>
@@ -51,6 +51,7 @@
         <strong>Longer Messages:</strong><span style="font-weight: 400;"> Say how you really feel with an increased character count limit of 4000 characters.</span>
     </li>
     <li style="font-weight: 400;" aria-level="1"><span style="font-weight: 400;"><strong>Color <a href="https://support.discord.com/hc/en-us/articles/207260127" target="_blank" rel="noopener noreferrer">Themes</a> for your Discord app:</strong> Add your vibe to the app with unique themes only available to Nitro subscribers.   </span></li>
+    <li style="font-weight: 400;" aria-level="1"><span style="font-weight: 400;"><a href="https://support.discord.com/hc/en-us/articles/12612888127767"><strong><span class="wysiwyg-underline" style="color: #1155cc;" data-darkreader-inline-color="">Soundboard</span></strong></a><strong> anywhere:</strong> Use any Soundboard from a server you’re in, anywhere you have permissions to use them in.</span></li>
 </ol>
 <h2 id="h_01GFV3P6JCBPK991K73KW8C70B"><strong>Nitro Basic</strong></h2>
 <p><span style="font-weight: 400;">The Nitro Basic plan includes some of the most-loved Nitro features that help you better express yourself for a fraction of the cost.</span></p>
