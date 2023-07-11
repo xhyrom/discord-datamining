@@ -2433,40 +2433,6 @@
   {
     "data": {
       "kind": "user",
-      "id": "2023-05_dcf_improvements",
-      "label": "DCF Improvements Experiment",
-      "description": [
-        "Not Eligible",
-        "Control Bucket",
-        "Treatment 1: Users will have a DC cooldown of 1 hour",
-        "Treatment 2: DCs will be dismissed when a user navigates away from their surface",
-        "Treatment 3: Users will be limited to seeing 2 DC a day and 6 DC a week",
-        "Treatment 4: Users will be limited to seeing 2 DC a day",
-        "Treatment 5: Users will be limited to seeing 3 DC a day and 9 DC a week",
-        "Treatment 6: Users will be limited to seeing 3 DC a day"
-      ],
-      "hash": 1171817240,
-      "buckets": [
-        -1,
-        0,
-        1,
-        2,
-        3,
-        4,
-        5,
-        6
-      ],
-      "config_keys": [
-        "cooldownPeriod",
-        "dismissOnNavigation",
-        "dailyCap",
-        "weeklyCap"
-      ]
-    }
-  },
-  {
-    "data": {
-      "kind": "user",
       "id": "2021-04_network_action_logging",
       "label": "Standard Analytics: Log Network Actions",
       "description": [
@@ -8413,7 +8379,13 @@
           "1075531421554180096",
           "510301158716342293",
           "239599059415859200",
-          "424012709219008522"
+          "424012709219008522",
+          "336430784204505098",
+          "811348849850581002",
+          "694209447995768833",
+          "538202802770542604",
+          "563549788063268875",
+          "332333431885135874"
         ]
       },
       "overrides_formatted": []
