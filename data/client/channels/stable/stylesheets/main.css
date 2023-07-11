@@ -12125,6 +12125,35 @@ html.decorate-links .lowSaturationUnderline-Z6CW6z {
     margin-bottom: 16px
 }
 
+.tryOutUpsellContainer-26s75x {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column
+}
+
+.topRimPill-15hOi9 {
+    margin-top: -15px;
+    padding-bottom: 16px
+}
+
+.subscribeButtonWide-1N0gug {
+    margin-top: 16px;
+    width: 100%;
+    height: 40px
+}
+
+.countdownTextInSetting-1Moiqv {
+    color: var(--premium-tier-2-purple);
+    padding-top: 8px
+}
+
 .nitroWheel-21E85D {
     width: 16px;
     height: 16px;
@@ -57523,6 +57552,11 @@ h6.title-1p9WyQ {
     color: var(--header-primary)
 }
 
+.voiceSummaryContainer-204CN1 {
+    -ms-flex-item-align: center;
+    align-self: center
+}
+
 .iconContainer-XRODjt {
     -ms-flex-negative: 0;
     flex-shrink: 0;
@@ -75736,7 +75770,11 @@ strong {
 
 .favoritesSuggestion-2B9XJa {
     border: 2px dashed var(--background-modifier-accent);
-    border-radius: var(--radius-md);
+    border-radius: var(--radius-md)
+}
+
+.favoritesSuggestion-2B9XJa,
+.link-1_kTxV {
     -webkit-box-sizing: border-box;
     box-sizing: border-box
 }
@@ -75744,23 +75782,26 @@ strong {
 .link-1_kTxV {
     cursor: pointer;
     position: relative;
-    -webkit-box-sizing: border-box;
-    box-sizing: border-box;
     padding: 6px 8px;
     margin-left: 8px;
     border-radius: var(--radius-xs);
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
     -ms-flex-direction: column;
-    flex-direction: column;
-    overflow: hidden
+    flex-direction: column
 }
 
-.link-1_kTxV,
-.linkTop-1W1aK6 {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex
+.link-1_kTxV:before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: -1px;
+    right: 0;
+    bottom: -1px;
+    left: 0
 }
 
 .linkTop-1W1aK6 {
@@ -75771,15 +75812,15 @@ strong {
 
 .linkBottom-128lIB,
 .linkTop-1W1aK6 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center
 }
 
 .linkBottom-128lIB {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
     margin-left: 26px
 }
 
@@ -77222,6 +77263,11 @@ strong {
     color: var(--text-normal)
 }
 
+.emptyPagination-TYv0Iu {
+    height: 63px;
+    border-top: 1px solid var(--background-modifier-accent)
+}
+
 .searchInputContainer-2O9YCK {
     -webkit-box-flex: 0;
     -ms-flex: 0;
@@ -77319,8 +77365,13 @@ strong {
 }
 
 .newMembersNotice-35VT6e {
+    position: relative;
+    top: -7px;
     background-color: var(--brand-500);
-    border-radius: var(--radius-sm);
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: var(--radius-sm);
+    border-bottom-left-radius: var(--radius-sm);
     -webkit-transition: background-color 60ms ease-in-out;
     transition: background-color 60ms ease-in-out;
     cursor: pointer
@@ -77330,6 +77381,14 @@ strong {
     padding: 0 12px;
     vertical-align: middle;
     white-space: nowrap
+}
+
+.newMembersNotice-35VT6e td:first-child {
+    border-bottom-left-radius: var(--radius-sm)
+}
+
+.newMembersNotice-35VT6e td:last-child {
+    border-bottom-right-radius: var(--radius-sm)
 }
 
 .newMembersNotice-35VT6e:hover {
@@ -150463,7 +150522,7 @@ html .invoiceCancelRow-3s2UuC {
 }
 
 .background-yH6t2p {
-    padding: 12px
+    padding: 24px
 }
 
 .premiumBackground-34OIdE {
@@ -150808,7 +150867,6 @@ html .invoiceCancelRow-3s2UuC {
 
 .tryItOutSection-W9qeGH {
     margin: 40px -24px 0;
-    padding: 12px;
     width: -webkit-fit-content;
     width: -moz-fit-content;
     width: fit-content
@@ -150887,6 +150945,15 @@ html .invoiceCancelRow-3s2UuC {
 
 .theme-light .titleIcon-2Qyhm1 {
     color: var(--black-500)
+}
+
+.premiumTier2Divider-1sTkc_ {
+    height: 2px;
+    margin-top: 68px;
+    margin-left: -24px;
+    margin-right: -24px;
+    background-image: -webkit-gradient(linear, left top, right top, from(var(--premium-tier-2-pink-for-gradients)), color-stop(50%, var(--premium-tier-2-purple-for-gradients)), to(var(--premium-tier-2-pink-for-gradients)));
+    background-image: linear-gradient(90deg, var(--premium-tier-2-pink-for-gradients), var(--premium-tier-2-purple-for-gradients) 50%, var(--premium-tier-2-pink-for-gradients))
 }
 
 .buttonsContainer-1xP-jC {
@@ -162936,4 +163003,4 @@ html .invoiceCancelRow-dVOR64 {
     flex-direction: column
 }
 
-/*# sourceMappingURL=40532.c7d1254d1538e45ec740.css.map*/
+/*# sourceMappingURL=40532.9a6ffcec45e9437c7bc0.css.map*/
