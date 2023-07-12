@@ -3562,6 +3562,10 @@
       "PATCH"
     ]
   },
+  "CHANNEL_BASED_CLYDE_PERSONALITY": {
+    "url": "/channels/:param/channel-based-clyde-personality",
+    "allowed_methods": null
+  },
   "CREATOR_MONETIZATION_ENABLE_REQUESTS": {
     "url": "/guilds/:param/creator-monetization/enable-requests",
     "allowed_methods": [
