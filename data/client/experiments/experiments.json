@@ -7365,10 +7365,38 @@
       "populations": [
         {
           "buckets": {
+            "1": {
+              "rollout": [
+                {
+                  "start": 250,
+                  "end": 350
+                }
+              ]
+            },
+            "2": {
+              "rollout": [
+                {
+                  "start": 350,
+                  "end": 450
+                }
+              ]
+            },
             "none": {
               "rollout": [
                 {
                   "start": 0,
+                  "end": 50
+                },
+                {
+                  "start": 50,
+                  "end": 100
+                },
+                {
+                  "start": 100,
+                  "end": 150
+                },
+                {
+                  "start": 450,
                   "end": 10000
                 }
               ]
@@ -7378,12 +7406,12 @@
             {
               "type": "guild_member_count_range",
               "min_count": 0,
-              "max_count": 51
+              "max_count": 2000
             }
           ]
         }
       ],
-      "revision": 1,
+      "revision": 2,
       "overrides": {
         "1": [
           "890883112500854804",
