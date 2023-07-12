@@ -13574,8 +13574,6 @@
   "GUILD_ONBOARDING_SETUP_PREVIEW_ROLES_WARNING": "\"Once enabled, getting a role will not bypass a member through verification and Rules. To manually verify members, you can right click a user and select Verify Member, or use the Members tab.\"",
   "GUILD_ONBOARDING_OVERVIEW_UPDATES_HEADER": "\"Recent Updates\"",
   "GUILD_ONBOARDING_OVERVIEW_UPDATES_1": "\"New feature: Server Guide. Give every new member a welcome message and instructions on how to get started.\"",
-  "GUILD_ONBOARDING_OVERVIEW_UPDATES_1_NOTE": "\"**NOTE:** Server Guide is gradually rolling out. A small number of members may not see it while it does. You can enable for most members now.\"",
-  "GUILD_ONBOARDING_OVERVIEW_UPDATES_2": "\"You can add up to 50 answers to a single question! It'll be displayed as a dropdown for your members.\"",
   "GUILD_ONBOARDING_OVERVIEW_SUBTITLE": "\"Give your members a simple starting experience with custom channels, roles, and first steps.\"",
   "GUILD_ONBOARDING_OVERVIEW_SEE_EXAMPLES": "\"See examples\"",
   "GUILD_ONBOARDING_OVERVIEW_TITLE_ENABLED": "\"Onboarding is Enabled\"",
