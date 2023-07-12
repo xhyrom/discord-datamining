@@ -136875,9 +136875,24 @@ html .invoiceCancelRow-3s2UuC {
 }
 
 .bodyText-9YTW2l {
-    text-align: center;
-    max-width: 500px;
     color: var(--header-primary)
+}
+
+.bodyText-9YTW2l,
+.termsApplyBodyText-1sjlJc {
+    text-align: center;
+    max-width: 500px
+}
+
+.termsApplyBodyText-1sjlJc {
+    padding-top: 8px;
+    color: var(--text-normal);
+    text-decoration: underline;
+    text-underline-offset: 2px
+}
+
+.termsApplyAnchor-3r1D-z:hover {
+    text-decoration: none
 }
 
 .featureCardGroup-2DxKq5 {
@@ -163127,4 +163142,4 @@ html .invoiceCancelRow-dVOR64 {
     flex-direction: column
 }
 
-/*# sourceMappingURL=40532.6a0847d7bb57ec0afa23.css.map*/
+/*# sourceMappingURL=40532.b6542789d5c5f1fff91d.css.map*/
