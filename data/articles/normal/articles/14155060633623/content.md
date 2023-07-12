@@ -8,7 +8,7 @@
 <h1 id="h_01H44C4DJGC3MWFAAVZV0J2V5D">How to Connect to a Parent or Guardian</h1>
 <p>To connect with a trusted adult family member, head to <strong>User Settings</strong> located in the bottom left of the desktop/browser app and then tap on <strong>Family Center</strong>. While here, tap on<strong> My Family </strong>and then press on <strong>Connect with Parent</strong>. </p>
 <h3>
-    <span style="color: #434343;" data-darkreader-inline-color="">Your parent/guardian will need to download the Discord mobile app and create an account to connect to you in Family Center. If you would like to see how Family Center works for parents/guardians or need any guidance, you can check out this article </span><a href="https://support.discord.com/hc/en-us/articles/14155043715735" target="_blank" rel="noopener">here</a><span style="color: #434343;" data-darkreader-inline-color="">.  </span>
+    <span style="color: #434343;" data-darkreader-inline-color="">Your parent/guardian will need to download the Discord mobile app and create an account to connect to you in Family Center. If you would like to see how Family Center works for parents/guardians or need any guidance, you can check out this article </span><a href="https://support.discord.com/hc/en-us/articles/14155043715735" target="_blank" rel="noopener noreferrer">here</a><span style="color: #434343;" data-darkreader-inline-color="">.  </span>
 </h3>
 <p class="wysiwyg-text-align-center"><img src="https://support.discord.com/hc/article_attachments/15673372338967" alt="image2.png"></p>
 <p>While here you’ll have a QR code that your parent or guardian can scan from their smartphone. After the QR code is scanned, you will receive a connection request from your parent/guardian. If you accept that connection request, you and your parent/guardian will be connected in Family Center and you will see your connected parent or guardian in the Connected Parents section under <strong>My Family.</strong></p>
@@ -27,14 +27,14 @@
 <h1 id="h_01H44C4V4BWJY8CA5WAPZ4TMG1">Frequently Asked Questions</h1>
 <p><strong>Q: Why am I seeing Family Center in parent view although I am a teenager?</strong></p>
 <p>A: The view you are seeing is based on the age you have provided when you signed up for Discord. If you are seeing Family Center in parent view, you may have selected an age over 18. </p>
-<p>To correct this, please submit an appeal to Discord at <a href="http://dis.gd/request" target="_blank" rel="noopener">dis.gd/request</a> &gt; <strong>Appeals, age updates, or other questions</strong> &gt; <strong>Update my age information</strong>. </p>
+<p>To correct this, please submit an appeal to Discord at <a href="http://dis.gd/request" target="_blank" rel="noopener noreferrer">dis.gd/request</a> &gt; <strong>Appeals, age updates, or other questions</strong> &gt; <strong>Update my age information</strong>. </p>
 <p><strong>Q: Do I have to add a parent/guardian? What if I wanted to add someone else?</strong></p>
 <p>A: You can connect to any trusted adult family member in Family Center. Whether that person is an older brother, sister, aunt, grandparent, or other guardian, you two can connect your Discord accounts and use Family Center.</p>
 <p><strong>Q: How many parents/guardians can list me as their teen?</strong></p>
 <p>A: Teens may connect to up to 3 parents/guardians. </p>
 <p><strong>Q: Can I revoke connections at any time?</strong></p>
 <p>A: Yes, both you and any connected family members can choose to disconnect from each other in Family Center at any time. This can be done by heading to “My Family” and tapping X on the account you wish to remove.</p>
-<p><strong>Q: Can my parents/guardians remove me from servers/DMs/GDMs? (General question around scope of function)</strong></p>
+<p><strong>Q: Can my parents/guardians remove me from servers/DMs/GDMs?</strong></p>
 <p>A: No, Family Center does not allow a connected parent/guardian to remove their teen from the servers, DMs, and GDMs that their Discord account is in.</p>
 <p><strong>Q: What kind of information will my parent/guardian be able to see?</strong></p>
 <p>A: We value your privacy which is why Family Center will not share the contents of your messages with your connected parent/guardian. Connected parents/guardians will only see the following information about:</p>
