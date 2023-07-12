@@ -1402,27 +1402,6 @@
   {
     "data": {
       "kind": "user",
-      "id": "2023-07_day_0_nux",
-      "label": "Mobile Redesign Day 0 NUX",
-      "description": [
-        "Not Eligible",
-        "Treatment 0: Control",
-        "Treatment 1: Day 0 Enabled"
-      ],
-      "hash": 1174587839,
-      "buckets": [
-        -1,
-        0,
-        1
-      ],
-      "config_keys": [
-        "enabled"
-      ]
-    }
-  },
-  {
-    "data": {
-      "kind": "user",
       "id": "2023-06_mobile_redesign_curry_existing_users",
       "label": "Tabs V2 - Curry Existing Users",
       "description": [
