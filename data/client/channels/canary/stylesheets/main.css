@@ -23176,37 +23176,37 @@ html.disable-forced-colors * {
     --dontuse-0: hsl(var(--dontuse-0-hsl)/1);
     --dontuse-0-hsl: 240 calc(var(--saturation-factor, 1)*9.1%) 97.8%;
     --dontuse-1: hsl(var(--dontuse-1-hsl)/1);
-    --dontuse-1-hsl: 240 calc(var(--saturation-factor, 1)*9.1%) 95.7%;
+    --dontuse-1-hsl: 220 calc(var(--saturation-factor, 1)*13%) 95.5%;
     --dontuse-10: hsl(var(--dontuse-10-hsl)/1);
-    --dontuse-10-hsl: 226 calc(var(--saturation-factor, 1)*11.2%) 54.5%;
+    --dontuse-10-hsl: 233 calc(var(--saturation-factor, 1)*11.9%) 55.5%;
     --dontuse-11: hsl(var(--dontuse-11-hsl)/1);
-    --dontuse-11-hsl: 228 calc(var(--saturation-factor, 1)*10.2%) 46.3%;
+    --dontuse-11-hsl: 234 calc(var(--saturation-factor, 1)*11.6%) 47.5%;
     --dontuse-12: hsl(var(--dontuse-12-hsl)/1);
-    --dontuse-12-hsl: 229 calc(var(--saturation-factor, 1)*10.4%) 39.4%;
+    --dontuse-12-hsl: 236 calc(var(--saturation-factor, 1)*12.9%) 41%;
     --dontuse-13: hsl(var(--dontuse-13-hsl)/1);
-    --dontuse-13-hsl: 227 calc(var(--saturation-factor, 1)*10.6%) 33.3%;
+    --dontuse-13-hsl: 235 calc(var(--saturation-factor, 1)*13%) 34.7%;
     --dontuse-14: hsl(var(--dontuse-14-hsl)/1);
-    --dontuse-14-hsl: 229 calc(var(--saturation-factor, 1)*11.1%) 28.2%;
+    --dontuse-14-hsl: 237 calc(var(--saturation-factor, 1)*12.8%) 29.2%;
     --dontuse-15: hsl(var(--dontuse-15-hsl)/1);
-    --dontuse-15-hsl: 231 calc(var(--saturation-factor, 1)*11.3%) 24.3%;
+    --dontuse-15-hsl: 236 calc(var(--saturation-factor, 1)*13.2%) 25.3%;
     --dontuse-16: hsl(var(--dontuse-16-hsl)/1);
-    --dontuse-16-hsl: 235 calc(var(--saturation-factor, 1)*10.9%) 21.6%;
+    --dontuse-16-hsl: 236 calc(var(--saturation-factor, 1)*12.5%) 22%;
     --dontuse-17: hsl(var(--dontuse-17-hsl)/1);
-    --dontuse-17-hsl: 229 calc(var(--saturation-factor, 1)*11.3%) 19%;
+    --dontuse-17-hsl: 235 calc(var(--saturation-factor, 1)*13.1%) 19.4%;
     --dontuse-18: hsl(var(--dontuse-18-hsl)/1);
-    --dontuse-18-hsl: 234 calc(var(--saturation-factor, 1)*11.6%) 16.9%;
+    --dontuse-18-hsl: 235 calc(var(--saturation-factor, 1)*13.6%) 17.3%;
     --dontuse-19: hsl(var(--dontuse-19-hsl)/1);
-    --dontuse-19-hsl: 233 calc(var(--saturation-factor, 1)*12%) 14.7%;
+    --dontuse-19-hsl: 234 calc(var(--saturation-factor, 1)*13.2%) 14.9%;
     --dontuse-2: hsl(var(--dontuse-2-hsl)/1);
     --dontuse-2-hsl: 225 calc(var(--saturation-factor, 1)*11.8%) 93.3%;
     --dontuse-20: hsl(var(--dontuse-20-hsl)/1);
-    --dontuse-20-hsl: 240 calc(var(--saturation-factor, 1)*12.1%) 12.9%;
+    --dontuse-20-hsl: 234 calc(var(--saturation-factor, 1)*15.2%) 12.9%;
     --dontuse-21: hsl(var(--dontuse-21-hsl)/1);
-    --dontuse-21-hsl: 240 calc(var(--saturation-factor, 1)*12.3%) 11.2%;
+    --dontuse-21-hsl: 233 calc(var(--saturation-factor, 1)*15.8%) 11.2%;
     --dontuse-22: hsl(var(--dontuse-22-hsl)/1);
-    --dontuse-22-hsl: 240 calc(var(--saturation-factor, 1)*13.7%) 10%;
+    --dontuse-22-hsl: 233 calc(var(--saturation-factor, 1)*16%) 9.8%;
     --dontuse-23: hsl(var(--dontuse-23-hsl)/1);
-    --dontuse-23-hsl: 240 calc(var(--saturation-factor, 1)*13.6%) 8.6%;
+    --dontuse-23-hsl: 231 calc(var(--saturation-factor, 1)*16.3%) 8.4%;
     --dontuse-24: hsl(var(--dontuse-24-hsl)/1);
     --dontuse-24-hsl: 230 calc(var(--saturation-factor, 1)*16.7%) 7.1%;
     --dontuse-25: hsl(var(--dontuse-25-hsl)/1);
@@ -23214,19 +23214,19 @@ html.disable-forced-colors * {
     --dontuse-26: hsl(var(--dontuse-26-hsl)/1);
     --dontuse-26-hsl: 240 calc(var(--saturation-factor, 1)*15.8%) 3.7%;
     --dontuse-3: hsl(var(--dontuse-3-hsl)/1);
-    --dontuse-3-hsl: 228 calc(var(--saturation-factor, 1)*10.2%) 90.4%;
+    --dontuse-3-hsl: 230 calc(var(--saturation-factor, 1)*12.5%) 90.6%;
     --dontuse-4: hsl(var(--dontuse-4-hsl)/1);
-    --dontuse-4-hsl: 223 calc(var(--saturation-factor, 1)*11.1%) 87.6%;
+    --dontuse-4-hsl: 225 calc(var(--saturation-factor, 1)*12.9%) 87.8%;
     --dontuse-5: hsl(var(--dontuse-5-hsl)/1);
-    --dontuse-5-hsl: 225 calc(var(--saturation-factor, 1)*10%) 84.3%;
+    --dontuse-5-hsl: 227 calc(var(--saturation-factor, 1)*11.4%) 84.5%;
     --dontuse-6: hsl(var(--dontuse-6-hsl)/1);
-    --dontuse-6-hsl: 229 calc(var(--saturation-factor, 1)*10.7%) 79.8%;
+    --dontuse-6-hsl: 231 calc(var(--saturation-factor, 1)*12.9%) 80.2%;
     --dontuse-7: hsl(var(--dontuse-7-hsl)/1);
-    --dontuse-7-hsl: 231 calc(var(--saturation-factor, 1)*10.8%) 74.5%;
+    --dontuse-7-hsl: 229 calc(var(--saturation-factor, 1)*13.2%) 74.7%;
     --dontuse-8: hsl(var(--dontuse-8-hsl)/1);
-    --dontuse-8-hsl: 229 calc(var(--saturation-factor, 1)*10.7%) 68.8%;
+    --dontuse-8-hsl: 227 calc(var(--saturation-factor, 1)*14.6%) 69.2%;
     --dontuse-9: hsl(var(--dontuse-9-hsl)/1);
-    --dontuse-9-hsl: 229 calc(var(--saturation-factor, 1)*10.8%) 61.8%;
+    --dontuse-9-hsl: 228 calc(var(--saturation-factor, 1)*13.5%) 62.4%;
     --ebay: hsl(var(--ebay-hsl)/1);
     --ebay-hsl: 211 calc(var(--saturation-factor, 1)*100%) 41.2%;
     --epic-games: hsl(var(--epic-games-hsl)/1);
@@ -23774,6 +23774,7 @@ html.disable-forced-colors * {
     --background-mobile-primary: var(--primary-600);
     --background-mobile-secondary: var(--primary-630);
     --background-modifier-accent: hsl(var(--primary-500-hsl)/0.48);
+    --background-modifier-accent-2: hsl(var(--primary-500-hsl)/0.48);
     --background-modifier-active: hsl(var(--primary-500-hsl)/0.48);
     --background-modifier-hover: hsl(var(--primary-500-hsl)/0.3);
     --background-modifier-selected: hsl(var(--primary-500-hsl)/0.6);
@@ -23782,7 +23783,6 @@ html.disable-forced-colors * {
     --background-secondary: var(--primary-630);
     --background-secondary-alt: var(--primary-660);
     --background-tertiary: var(--primary-700);
-    --black: var(--black-500);
     --border-strong: hsl(var(--white-500-hsl)/0.16);
     --border-subtle: hsl(var(--white-500-hsl)/0.08);
     --bug-reporter-modal-submitting-background: hsl(var(--primary-800-hsl)/0.6);
@@ -23863,14 +23863,16 @@ html.disable-forced-colors * {
     --display-banner-overflow-background: hsl(var(--primary-700-hsl)/0.5);
     --divider-strong: hsl(var(--white-500-hsl)/0.16);
     --divider-subtle: hsl(var(--white-500-hsl)/0.08);
-    --focus-primary: var(--blue-345);
     --forum-post-extra-media-count-container-background: hsl(var(--primary-660-hsl)/0.8);
     --forum-post-tag-background: hsl(var(--primary-660-hsl)/0.9);
+    --header-muted: var(--primary-360);
     --header-primary: var(--primary-130);
     --header-secondary: var(--primary-330);
     --home-background: var(--primary-645);
     --home-card-resting-border: hsl(var(--transparent-hsl)/0);
-    --info-box-background: hsl(var(--blue-345-hsl)/0.1);
+    --icon-muted: var(--primary-500);
+    --icon-primary: var(--primary-130);
+    --icon-secondary: var(--primary-330);
     --info-danger-background: hsl(var(--red-400-hsl)/0.1);
     --info-danger-foreground: var(--red-400);
     --info-danger-text: var(--white-500);
@@ -23939,18 +23941,19 @@ html.disable-forced-colors * {
     --redesign-button-primary-text: var(--white-500);
     --redesign-button-secondary-alt-background: var(--primary-530);
     --redesign-button-secondary-alt-pressed-background: var(--primary-560);
-    --redesign-button-secondary-alt-text: var(--white-500);
+    --redesign-button-secondary-alt-pressed-text: var(--primary-330);
+    --redesign-button-secondary-alt-text: var(--primary-230);
     --redesign-button-secondary-background: var(--primary-460);
-    --redesign-button-secondary-border: var(--primary-460);
+    --redesign-button-secondary-border: hsl(var(--white-500-hsl)/0.08);
     --redesign-button-secondary-pressed-background: var(--primary-500);
     --redesign-button-secondary-pressed-border: var(--primary-500);
-    --redesign-button-secondary-text: var(--white-500);
+    --redesign-button-secondary-text: var(--primary-230);
     --redesign-input-control-selected: var(--brand-500);
     --redesign-only-background-active: var(--primary-530);
-    --redesign-only-background-default: var(--primary-700);
-    --redesign-only-background-overlay: var(--primary-600);
+    --redesign-only-background-default: var(--primary-600);
+    --redesign-only-background-overlay: var(--primary-645);
     --redesign-only-background-raised: var(--primary-630);
-    --redesign-only-background-sunken: var(--primary-800);
+    --redesign-only-background-sunken: var(--primary-660);
     --scrollbar-auto-scrollbar-color-thumb: var(--primary-730);
     --scrollbar-auto-scrollbar-color-track: var(--primary-630);
     --scrollbar-auto-thumb: var(--primary-730);
@@ -23976,12 +23979,24 @@ html.disable-forced-colors * {
     --text-danger: var(--red-345);
     --text-link: var(--blue-345);
     --text-link-low-saturation: var(--blue-330);
+    --text-low-contrast: var(--primary-360);
+    --text-message-preview-low-sat: var(--primary-360);
     --text-muted: var(--primary-360);
+    --text-muted-on-default: var(--primary-330);
     --text-normal: var(--primary-230);
     --text-positive: var(--green-330);
+    --text-primary: var(--primary-230);
+    --text-secondary: var(--primary-330);
     --text-warning: var(--yellow-300);
     --textbox-markdown-syntax: var(--primary-360);
-    --user-profile-header-overflow-background: hsl(var(--primary-700-hsl)/0.5);
+    --user-profile-header-overflow-background: hsl(var(--primary-700-hsl)/0.5)
+}
+
+.theme-dark,
+.theme-light {
+    --black: var(--black-500);
+    --focus-primary: var(--blue-345);
+    --info-box-background: hsl(var(--blue-345-hsl)/0.1);
     --white: var(--white-500)
 }
 
@@ -24002,6 +24017,7 @@ html.disable-forced-colors * {
     --background-mobile-primary: var(--primary-100);
     --background-mobile-secondary: var(--white-500);
     --background-modifier-accent: hsl(var(--primary-400-hsl)/0.24);
+    --background-modifier-accent-2: hsl(var(--primary-400-hsl)/0.24);
     --background-modifier-active: hsl(var(--primary-400-hsl)/0.2);
     --background-modifier-hover: hsl(var(--primary-400-hsl)/0.16);
     --background-modifier-selected: hsl(var(--primary-400-hsl)/0.24);
@@ -24092,10 +24108,14 @@ html.disable-forced-colors * {
     --divider-subtle: hsl(var(--black-500-hsl)/0.08);
     --forum-post-extra-media-count-container-background: hsl(var(--primary-160-hsl)/0.8);
     --forum-post-tag-background: hsl(var(--primary-160-hsl)/0.9);
+    --header-muted: var(--primary-460);
     --header-primary: var(--primary-860);
     --header-secondary: var(--primary-500);
     --home-background: var(--primary-100);
     --home-card-resting-border: hsl(var(--primary-400-hsl)/0.24);
+    --icon-muted: var(--primary-300);
+    --icon-primary: var(--primary-860);
+    --icon-secondary: var(--primary-500);
     --info-danger-background: hsl(var(--red-430-hsl)/0.1);
     --info-danger-foreground: var(--red-430);
     --info-danger-text: var(--black-500);
@@ -24164,18 +24184,19 @@ html.disable-forced-colors * {
     --redesign-button-primary-text: var(--white-500);
     --redesign-button-secondary-alt-background: hsl(var(--black-500-hsl)/0.08);
     --redesign-button-secondary-alt-pressed-background: hsl(var(--black-500-hsl)/0.16);
-    --redesign-button-secondary-alt-text: var(--primary-700);
+    --redesign-button-secondary-alt-pressed-text: var(--primary-500);
+    --redesign-button-secondary-alt-text: var(--primary-600);
     --redesign-button-secondary-background: var(--white-500);
     --redesign-button-secondary-border: hsl(var(--black-500-hsl)/0.08);
     --redesign-button-secondary-pressed-background: var(--primary-130);
     --redesign-button-secondary-pressed-border: hsl(var(--black-500-hsl)/0.08);
-    --redesign-button-secondary-text: var(--primary-700);
+    --redesign-button-secondary-text: var(--primary-600);
     --redesign-input-control-selected: var(--brand-500);
     --redesign-only-background-active: var(--primary-430);
-    --redesign-only-background-default: var(--primary-200);
-    --redesign-only-background-overlay: var(--white-500);
+    --redesign-only-background-default: var(--white-500);
+    --redesign-only-background-overlay: var(--primary-160);
     --redesign-only-background-raised: var(--primary-130);
-    --redesign-only-background-sunken: var(--white-500);
+    --redesign-only-background-sunken: var(--primary-200);
     --scrollbar-auto-scrollbar-color-thumb: var(--primary-230);
     --scrollbar-auto-scrollbar-color-track: var(--primary-130);
     --scrollbar-auto-thumb: var(--primary-300);
@@ -24201,43 +24222,42 @@ html.disable-forced-colors * {
     --text-danger: var(--red-500);
     --text-link: var(--blue-430);
     --text-link-low-saturation: var(--blue-430);
+    --text-low-contrast: var(--primary-460);
+    --text-message-preview-low-sat: var(--primary-460);
     --text-muted: var(--primary-460);
+    --text-muted-on-default: var(--primary-430);
     --text-normal: var(--primary-600);
     --text-positive: var(--green-430);
+    --text-primary: var(--primary-600);
+    --text-secondary: var(--primary-500);
     --text-warning: var(--yellow-430);
     --textbox-markdown-syntax: var(--primary-530);
     --user-profile-header-overflow-background: hsl(var(--white-200-hsl)/0.5)
 }
 
-.theme-amoled,
-.theme-light {
-    --black: var(--black-500);
-    --focus-primary: var(--blue-345);
-    --info-box-background: hsl(var(--blue-345-hsl)/0.1);
-    --white: var(--white-500)
-}
-
 .theme-amoled {
-    --background-accent: var(--primary-760);
-    --background-floating: var(--primary-830);
-    --background-mentioned: hsl(var(--yellow-300-hsl)/0.1);
+    --background-accent: var(--dontuse-17);
+    --background-floating: var(--dontuse-23);
+    --background-mentioned: hsl(var(--yellow-260-hsl)/0.08);
     --background-mentioned-hover: hsl(var(--yellow-300-hsl)/0.08);
-    --background-message-automod: hsl(var(--red-400-hsl)/0.05);
+    --background-message-automod: hsl(var(--red-345-hsl)/0.08);
     --background-message-automod-hover: hsl(var(--red-400-hsl)/0.1);
     --background-message-highlight: hsl(var(--brand-360-hsl)/0.08);
     --background-message-highlight-hover: hsl(var(--brand-360-hsl)/0.06);
-    --background-message-hover: hsl(var(--primary-900-hsl)/0.06);
-    --background-mobile-primary: var(--black-500);
-    --background-mobile-secondary: var(--primary-860);
-    --background-modifier-accent: hsl(var(--primary-560-hsl)/0.48);
-    --background-modifier-active: hsl(var(--primary-560-hsl)/0.48);
-    --background-modifier-hover: hsl(var(--primary-560-hsl)/0.4);
-    --background-modifier-selected: hsl(var(--primary-560-hsl)/0.6);
-    --background-nested-floating: var(--primary-830);
-    --background-primary: var(--primary-900);
-    --background-secondary: var(--primary-830);
-    --background-secondary-alt: var(--primary-800);
-    --background-tertiary: var(--primary-860);
+    --background-message-hover: var(--dontuse-21);
+    --background-mobile-primary: var(--primary-600);
+    --background-mobile-secondary: var(--primary-630);
+    --background-modifier-accent: hsl(var(--dontuse-16-hsl)/0.455);
+    --background-modifier-accent-2: hsl(var(--dontuse-11-hsl)/0.32);
+    --background-modifier-active: hsl(var(--primary-500-hsl)/0.48);
+    --background-modifier-hover: hsl(var(--primary-500-hsl)/0.3);
+    --background-modifier-selected: hsl(var(--primary-500-hsl)/0.6);
+    --background-nested-floating: var(--black-500);
+    --background-primary: var(--black-500);
+    --background-secondary: var(--dontuse-23);
+    --background-secondary-alt: var(--dontuse-17);
+    --background-tertiary: var(--dontuse-19);
+    --border-strong: hsl(var(--dontuse-11-hsl)/0.2);
     --button-creator-revenue-background: var(--teal-430);
     --button-danger-background: var(--red-430);
     --button-danger-background-active: var(--red-530);
@@ -24290,19 +24310,18 @@ html.disable-forced-colors * {
     --channel-icon: var(--primary-400);
     --channel-text-area-placeholder: var(--primary-400);
     --channeltextarea-background: var(--primary-800);
-    --chat-background: var(--black-500);
-    --chat-input-container-background: var(--primary-600);
-    --header-primary: var(--primary-130);
-    --header-secondary: var(--primary-345);
-    --home-background: var(--primary-760);
-    --home-card-resting-border: hsl(var(--transparent-hsl)/0);
-    --interactive-active: var(--white-500);
-    --interactive-muted: var(--primary-500);
-    --interactive-normal: var(--primary-345);
-    --redesign-activity-card-background: var(--primary-560);
-    --redesign-activity-card-background-pressed: var(--primary-630);
+    --divider-strong: hsl(var(--dontuse-11-hsl)/0.2);
+    --header-primary: var(--dontuse-2);
+    --header-secondary: var(--dontuse-8);
+    --icon-primary: var(--dontuse-5);
+    --input-background: var(--dontuse-22);
+    --input-placeholder-text: var(--dontuse-9);
+    --interactive-active: var(--dontuse-3);
+    --interactive-normal: var(--dontuse-5);
+    --redesign-activity-card-background: var(--dontuse-20);
+    --redesign-activity-card-background-pressed: var(--dontuse-21);
     --redesign-activity-card-badge-icon: var(--primary-400);
-    --redesign-activity-card-border: hsl(var(--white-500-hsl)/0.02);
+    --redesign-activity-card-border: hsl(var(--dontuse-11-hsl)/0.12);
     --redesign-button-danger-background: var(--red-430);
     --redesign-button-danger-pressed-background: var(--red-460);
     --redesign-button-danger-text: var(--white-500);
@@ -24333,33 +24352,39 @@ html.disable-forced-colors * {
     --redesign-button-primary-on-blurple-text: var(--brand-500);
     --redesign-button-primary-pressed-background: var(--brand-560);
     --redesign-button-primary-text: var(--white-500);
-    --redesign-button-secondary-alt-background: var(--primary-530);
-    --redesign-button-secondary-alt-pressed-background: var(--primary-560);
-    --redesign-button-secondary-alt-text: var(--white-500);
-    --redesign-button-secondary-background: var(--primary-460);
-    --redesign-button-secondary-border: var(--primary-460);
-    --redesign-button-secondary-pressed-background: var(--primary-500);
+    --redesign-button-secondary-alt-background: hsl(var(--dontuse-16-hsl)/0.455);
+    --redesign-button-secondary-alt-pressed-background: hsl(var(--dontuse-11-hsl)/0.2);
+    --redesign-button-secondary-alt-pressed-text: var(--primary-330);
+    --redesign-button-secondary-alt-text: var(--primary-230);
+    --redesign-button-secondary-background: var(--dontuse-15);
+    --redesign-button-secondary-border: hsl(var(--white-500-hsl)/0.08);
+    --redesign-button-secondary-pressed-background: var(--dontuse-12);
     --redesign-button-secondary-pressed-border: var(--primary-500);
-    --redesign-button-secondary-text: var(--white-500);
+    --redesign-button-secondary-text: var(--primary-230);
     --redesign-input-control-selected: var(--brand-500);
-    --redesign-only-background-active: var(--primary-530);
-    --redesign-only-background-default: var(--primary-700);
-    --redesign-only-background-overlay: var(--primary-600);
-    --redesign-only-background-raised: var(--primary-630);
-    --redesign-only-background-sunken: var(--primary-800);
+    --redesign-only-background-active: var(--dontuse-17);
+    --redesign-only-background-default: var(--black-500);
+    --redesign-only-background-overlay: var(--dontuse-19);
+    --redesign-only-background-raised: var(--dontuse-23);
+    --redesign-only-background-sunken: var(--black-500);
     --scrollbar-auto-scrollbar-color-thumb: var(--primary-700);
     --scrollbar-auto-scrollbar-color-track: var(--primary-630);
     --scrollbar-auto-thumb: var(--primary-600);
     --scrollbar-auto-track: var(--primary-860);
     --scrollbar-thin-thumb: var(--primary-700);
     --scrollbar-thin-track: hsl(var(--black-500-hsl)/0);
-    --text-brand: var(--brand-360);
+    --text-brand: var(--brand-430);
     --text-danger: var(--red-345);
     --text-link: var(--blue-345);
     --text-link-low-saturation: var(--blue-330);
-    --text-muted: var(--primary-345);
-    --text-normal: var(--primary-300);
+    --text-low-contrast: var(--dontuse-12);
+    --text-message-preview-low-sat: var(--dontuse-9);
+    --text-muted: var(--dontuse-10);
+    --text-muted-on-default: var(--dontuse-11);
+    --text-normal: var(--dontuse-4);
     --text-positive: var(--green-330);
+    --text-primary: var(--dontuse-4);
+    --text-secondary: var(--dontuse-8);
     --text-warning: var(--yellow-300)
 }
 
@@ -24369,11 +24394,13 @@ html.disable-forced-colors * {
     --android-navigation-bar-background: var(--primary-830);
     --android-navigation-scrim-background: hsl(var(--primary-830-hsl)/0.5);
     --android-ripple: hsl(var(--white-500-hsl)/0.07);
-    --border-strong: hsl(var(--white-500-hsl)/0.16);
-    --border-subtle: hsl(var(--white-500-hsl)/0.08);
+    --black: var(--black-500);
+    --border-subtle: hsl(var(--dontuse-11-hsl)/0.12);
     --bug-reporter-modal-submitting-background: hsl(var(--primary-800-hsl)/0.6);
     --channels-default: var(--primary-360);
+    --chat-background: var(--primary-600);
     --chat-border: var(--primary-700);
+    --chat-input-container-background: var(--primary-600);
     --control-brand-foreground: var(--brand-360);
     --control-brand-foreground-new: var(--brand-360);
     --creator-revenue-icon-gradient-end: var(--teal-430);
@@ -24393,10 +24420,16 @@ html.disable-forced-colors * {
     --deprecated-text-input-border-hover: var(--primary-900);
     --deprecated-text-input-prefix: var(--primary-200);
     --display-banner-overflow-background: hsl(var(--primary-700-hsl)/0.5);
-    --divider-strong: hsl(var(--white-500-hsl)/0.16);
-    --divider-subtle: hsl(var(--white-500-hsl)/0.08);
+    --divider-subtle: hsl(var(--dontuse-11-hsl)/0.12);
+    --focus-primary: var(--blue-345);
     --forum-post-extra-media-count-container-background: hsl(var(--primary-660-hsl)/0.8);
     --forum-post-tag-background: hsl(var(--primary-660-hsl)/0.9);
+    --header-muted: var(--dontuse-10);
+    --home-background: var(--primary-645);
+    --home-card-resting-border: hsl(var(--transparent-hsl)/0);
+    --icon-muted: var(--dontuse-13);
+    --icon-secondary: var(--dontuse-9);
+    --info-box-background: hsl(var(--blue-345-hsl)/0.1);
     --info-danger-background: hsl(var(--red-400-hsl)/0.1);
     --info-danger-foreground: var(--red-400);
     --info-danger-text: var(--white-500);
@@ -24409,13 +24442,12 @@ html.disable-forced-colors * {
     --info-warning-background: hsl(var(--yellow-300-hsl)/0.1);
     --info-warning-foreground: var(--yellow-300);
     --info-warning-text: var(--white-500);
-    --input-background: var(--primary-700);
-    --input-placeholder-text: var(--input-placeholder-text-dark);
     --interactive-hover: var(--primary-230);
+    --interactive-muted: var(--dontuse-13);
     --live-stage-tile-border: hsl(var(--primary-500-hsl)/0.6);
     --logo-primary: var(--white-500);
-    --mention-background: hsl(var(--brand-500-hsl)/0.3);
-    --mention-foreground: var(--brand-260);
+    --mention-background: hsl(var(--brand-500-hsl)/0.5);
+    --mention-foreground: var(--brand-230);
     --modal-background: var(--primary-600);
     --modal-footer-background: var(--primary-630);
     --profile-gradient-message-input-border: hsl(var(--primary-500-hsl)/0.48);
@@ -24426,8 +24458,8 @@ html.disable-forced-colors * {
     --profile-gradient-role-pill-background: hsl(var(--primary-660-hsl)/0.5);
     --profile-gradient-role-pill-border: hsl(var(--white-500-hsl)/0.2);
     --profile-gradient-section-box: hsl(var(--black-500-hsl)/0.45);
-    --spoiler-hidden-background: var(--primary-700);
-    --spoiler-revealed-background: var(--primary-660);
+    --spoiler-hidden-background: var(--dontuse-14);
+    --spoiler-revealed-background: hsl(var(--dontuse-11-hsl)/0.16);
     --status-danger: var(--red-400);
     --status-danger-background: var(--red-400);
     --status-danger-text: var(--white-500);
@@ -24442,31 +24474,33 @@ html.disable-forced-colors * {
     --status-warning-background: var(--yellow-300);
     --status-warning-text: var(--black-500);
     --textbox-markdown-syntax: var(--primary-360);
-    --user-profile-header-overflow-background: hsl(var(--primary-700-hsl)/0.5)
+    --user-profile-header-overflow-background: hsl(var(--primary-700-hsl)/0.5);
+    --white: var(--white-500)
 }
 
 .theme-darker {
-    --background-accent: var(--dontuse-14);
-    --background-floating: var(--dontuse-23);
-    --background-mentioned: hsl(var(--yellow-300-hsl)/0.1);
+    --background-accent: var(--dontuse-15);
+    --background-floating: var(--dontuse-18);
+    --background-mentioned: hsl(var(--yellow-260-hsl)/0.08);
     --background-mentioned-hover: hsl(var(--yellow-300-hsl)/0.08);
-    --background-message-automod: hsl(var(--red-400-hsl)/0.05);
+    --background-message-automod: hsl(var(--red-345-hsl)/0.08);
     --background-message-automod-hover: hsl(var(--red-400-hsl)/0.1);
     --background-message-highlight: hsl(var(--brand-360-hsl)/0.08);
     --background-message-highlight-hover: hsl(var(--brand-360-hsl)/0.06);
-    --background-message-hover: hsl(var(--primary-900-hsl)/0.06);
+    --background-message-hover: var(--dontuse-21);
     --background-mobile-primary: var(--primary-600);
     --background-mobile-secondary: var(--primary-630);
-    --background-modifier-accent: hsl(var(--primary-500-hsl)/0.48);
+    --background-modifier-accent: hsl(var(--dontuse-11-hsl)/0.12);
+    --background-modifier-accent-2: hsl(var(--dontuse-11-hsl)/0.24);
     --background-modifier-active: hsl(var(--primary-500-hsl)/0.48);
     --background-modifier-hover: hsl(var(--primary-500-hsl)/0.3);
     --background-modifier-selected: hsl(var(--primary-500-hsl)/0.6);
-    --background-nested-floating: var(--dontuse-17);
-    --background-primary: var(--dontuse-16);
-    --background-secondary: var(--dontuse-17);
-    --background-secondary-alt: var(--dontuse-19);
-    --background-tertiary: var(--dontuse-20);
-    --black: var(--black-500);
+    --background-nested-floating: var(--dontuse-22);
+    --background-primary: var(--dontuse-20);
+    --background-secondary: var(--dontuse-18);
+    --background-secondary-alt: var(--dontuse-15);
+    --background-tertiary: var(--dontuse-16);
+    --border-strong: hsl(var(--dontuse-11-hsl)/0.18);
     --button-creator-revenue-background: var(--teal-430);
     --button-danger-background: var(--red-430);
     --button-danger-background-active: var(--red-530);
@@ -24519,21 +24553,18 @@ html.disable-forced-colors * {
     --channel-icon: var(--primary-400);
     --channel-text-area-placeholder: var(--primary-430);
     --channeltextarea-background: var(--primary-560);
-    --chat-background: var(--primary-600);
-    --chat-input-container-background: var(--primary-600);
-    --focus-primary: var(--blue-345);
+    --divider-strong: hsl(var(--dontuse-11-hsl)/0.18);
     --header-primary: var(--dontuse-1);
     --header-secondary: var(--dontuse-9);
-    --home-background: var(--primary-645);
-    --home-card-resting-border: hsl(var(--transparent-hsl)/0);
-    --info-box-background: hsl(var(--blue-345-hsl)/0.1);
-    --interactive-active: var(--dontuse-3);
-    --interactive-muted: var(--dontuse-13);
-    --interactive-normal: var(--white-500);
-    --redesign-activity-card-background: var(--primary-560);
-    --redesign-activity-card-background-pressed: var(--primary-630);
+    --icon-primary: var(--dontuse-3);
+    --input-background: hsl(var(--dontuse-24-hsl)/0.6);
+    --input-placeholder-text: var(--dontuse-9);
+    --interactive-active: var(--dontuse-1);
+    --interactive-normal: var(--dontuse-3);
+    --redesign-activity-card-background: var(--dontuse-19);
+    --redesign-activity-card-background-pressed: var(--dontuse-20);
     --redesign-activity-card-badge-icon: var(--primary-400);
-    --redesign-activity-card-border: hsl(var(--white-500-hsl)/0.02);
+    --redesign-activity-card-border: hsl(var(--dontuse-11-hsl)/0.06);
     --redesign-button-danger-background: var(--red-430);
     --redesign-button-danger-pressed-background: var(--red-460);
     --redesign-button-danger-text: var(--white-500);
@@ -24564,20 +24595,21 @@ html.disable-forced-colors * {
     --redesign-button-primary-on-blurple-text: var(--brand-500);
     --redesign-button-primary-pressed-background: var(--brand-560);
     --redesign-button-primary-text: var(--white-500);
-    --redesign-button-secondary-alt-background: var(--primary-530);
-    --redesign-button-secondary-alt-pressed-background: var(--primary-560);
-    --redesign-button-secondary-alt-text: var(--white-500);
-    --redesign-button-secondary-background: var(--primary-460);
-    --redesign-button-secondary-border: var(--primary-460);
-    --redesign-button-secondary-pressed-background: var(--primary-500);
+    --redesign-button-secondary-alt-background: hsl(var(--dontuse-11-hsl)/0.12);
+    --redesign-button-secondary-alt-pressed-background: hsl(var(--dontuse-11-hsl)/0.2);
+    --redesign-button-secondary-alt-pressed-text: var(--primary-330);
+    --redesign-button-secondary-alt-text: var(--primary-230);
+    --redesign-button-secondary-background: var(--dontuse-15);
+    --redesign-button-secondary-border: hsl(var(--white-500-hsl)/0.08);
+    --redesign-button-secondary-pressed-background: var(--dontuse-12);
     --redesign-button-secondary-pressed-border: var(--primary-500);
-    --redesign-button-secondary-text: var(--white-500);
+    --redesign-button-secondary-text: var(--primary-230);
     --redesign-input-control-selected: var(--brand-500);
-    --redesign-only-background-active: var(--dontuse-14);
+    --redesign-only-background-active: var(--dontuse-15);
     --redesign-only-background-default: var(--dontuse-20);
-    --redesign-only-background-overlay: var(--dontuse-17);
+    --redesign-only-background-overlay: var(--dontuse-16);
     --redesign-only-background-raised: var(--dontuse-18);
-    --redesign-only-background-sunken: var(--dontuse-21);
+    --redesign-only-background-sunken: var(--dontuse-22);
     --scrollbar-auto-scrollbar-color-thumb: var(--primary-730);
     --scrollbar-auto-scrollbar-color-track: var(--primary-630);
     --scrollbar-auto-thumb: var(--primary-730);
@@ -24588,11 +24620,15 @@ html.disable-forced-colors * {
     --text-danger: var(--red-345);
     --text-link: var(--blue-345);
     --text-link-low-saturation: var(--blue-330);
+    --text-low-contrast: var(--dontuse-11);
+    --text-message-preview-low-sat: var(--dontuse-11);
     --text-muted: var(--dontuse-10);
+    --text-muted-on-default: var(--dontuse-11);
     --text-normal: var(--dontuse-3);
     --text-positive: var(--green-330);
-    --text-warning: var(--yellow-300);
-    --white: var(--white-500)
+    --text-primary: var(--dontuse-3);
+    --text-secondary: var(--dontuse-9);
+    --text-warning: var(--yellow-300)
 }
 
 .theme-dark {
@@ -163224,4 +163260,4 @@ html .invoiceCancelRow-dVOR64 {
     flex-direction: column
 }
 
-/*# sourceMappingURL=40532.d4cc5f00a3e78a7ee7b1.css.map*/
+/*# sourceMappingURL=40532.416c1ca948ba91c3037e.css.map*/
