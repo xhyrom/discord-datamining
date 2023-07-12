@@ -4871,17 +4871,19 @@
       "description": [
         "Not Eligible",
         "Control Bucket",
-        "Treatment 1: Enabled"
+        "Treatment 1: Enabled",
+        "Treatment 2: Enabled w/VC Coachmark"
       ],
       "hash": 3039064495,
       "buckets": [
         -1,
         0,
-        1
+        1,
+        2
       ],
       "config_keys": [
         "enabled",
-        "entry_sounds_enabled"
+        "showVoiceChannelCoachmark"
       ]
     }
   },
