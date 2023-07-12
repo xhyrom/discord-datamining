@@ -3814,8 +3814,26 @@
       "OPTIONS"
     ]
   },
+  "APPLICATION_DIRECTORY_APPLICATION": {
+    "url": "/application-directory/applications/:param",
+    "allowed_methods": [
+      "GET",
+      "HEAD",
+      "OPTIONS",
+      "PATCH",
+      "PUT"
+    ]
+  },
   "APPLICATION_DIRECTORY_EMBED_APPLICATION": {
     "url": "/application-directory/applications/:param/embed",
+    "allowed_methods": [
+      "GET",
+      "HEAD",
+      "OPTIONS"
+    ]
+  },
+  "APPLICATION_DIRECTORY_CATEGORIES": {
+    "url": "/application-directory/categories",
     "allowed_methods": [
       "GET",
       "HEAD",
