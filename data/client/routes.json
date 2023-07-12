@@ -910,6 +910,13 @@
       "POST"
     ]
   },
+  "UPDATE_VOICE_CHANNEL_TOPIC": {
+    "url": "/channels/:param/topic",
+    "allowed_methods": [
+      "OPTIONS",
+      "PUT"
+    ]
+  },
   "MESSAGE_DELETE_UPLOAD": {
     "url": "/attachments/:param",
     "allowed_methods": [
