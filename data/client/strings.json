@@ -7390,7 +7390,6 @@
   "GUILD_SETTINGS_ONBOARDING_HOME_REVIEW_DESCRIPTION": "\"Your Welcome Message, Banner, To Do tasks, and Resources are all set up\"",
   "NEW_MEMBER_ACTION_CHANNEL": "\"in #{channelName}\"",
   "GUILD_SETTINGS_ONBOARDING_RULES_ACTION": "\"Read the rules\"",
-  "GUILD_SETTINGS_ONBOARDING_CUSTOMIZE_ACTION": "\"Visit Channels & Roles\"",
   "GUILD_SETTINGS_ONBOARDING_ADD_A_TASK": "\"Add a task\"",
   "GUILD_SETTINGS_ONBOARDING_HOME_BANNER": "\"Server Guide Banner\"",
   "GUILD_SETTINGS_ONBOARDING_HOME_BANNER_EXPLAINER_1": "\"This image will display at the top of the Server Guide.\"",
