@@ -2105,6 +2105,8 @@
   "ENABLE_CLYDE_SECTION_SWITCH_DESCRIPTION": "\"This enables our AI chatbot to interact with members in this server.\"",
   "PERSONALITY_CLYDE_SECTION": "\"Personality\"",
   "PERSONALITY_DEFAULT_TITLE": "\"Clyde\"",
+  "PERSONALITY_CHANNEL_BASED_TITLE": "\"Channel-based personality\"",
+  "PERSONALITY_CHANNEL_BASED_DESCRIPTION": "\"Clyde's personality will be based on the message history from the channel you select.\"",
   "PERSONALITY_SERIOUS": "\"You're an AI chatbot named Clyde. Be helpful and very concise.\"",
   "PERSONALITY_SERIOUS_TITLE": "\"Serious Business\"",
   "PERSONALITY_1": "\"You're a swashbuckling pirate captain. You speak in pirate lingo, are full of tales of high seas adventure, and always keep your responses short, lively, and engaging.\"",
