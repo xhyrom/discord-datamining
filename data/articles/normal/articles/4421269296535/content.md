@@ -9,7 +9,7 @@
         <a href="#h_01GV3GQ8B6WR17JJA5KX92GDHT" target="_self">What are Keyword Filters?</a>
         <ul>
             <li><a href="#h_01GV3GQDQD4EJH71R6PA5C6DAC" target="_self">How to Set Up Keyword Filters for AutoMod</a></li>
-            <li><span id="docs-internal-guid-26a35128-7fff-3ac4-dc68-48dcdcc8b354">Block Words in Server Member Usernames or Server Nicknames</span></li>
+            <li><a href="#docs-internal-guid-57931522-7fff-24d2-3f2d-58f601b6d462" target="_self"><span id="docs-internal-guid-26a35128-7fff-3ac4-dc68-48dcdcc8b354">Block Words in Server Member Usernames or Server Nicknames</span></a></li>
         </ul>
     </li>
     <li>
@@ -21,9 +21,9 @@
     <li><a href="#h_01GV3GRDBMVE8GDA7Q3JQSBRC5" target="_self">Frequently Asked Questions</a></li>
 </ul>
 <h1 id="h_01GV3GPHP4ES8CJ4MRXWHNDDDD">WHAT IS AUTOMOD?</h1>
-<p>AutoMod is a system of multiple content filters designed to make content moderation easier and less work for moderators. Some filters, like Keyword Filters, are configurable so you can have AutoMod automatically detect and block messages containing specific words or phrases you find harmful to your Community before they’re even posted. Other filters we’re building are powered by machine learning algorithms to detect and block harmful or dangerous messages, such as links to malware.</p>
+<p><strong>AutoMod</strong> is a system of multiple content filters designed to make content moderation easier and less work for moderators. Some filters, like Keyword Filters, are configurable so you can have AutoMod automatically detect and block messages containing specific words or phrases you find harmful to your Community before they’re even posted. Other filters we’re building are powered by machine learning algorithms to detect and block harmful or dangerous messages, such as links to malware.</p>
 <p class="wysiwyg-text-align-center"><img src="https://support.discord.com/hc/article_attachments/12974156206103" alt="automod_example.png"></p>
-<p>AutoMod prevents unwanted messages from being posted in your Community across all of your #text-channels, along with other messaging surfaces like Threads and Text Chat in Voice channels. This way, you can feel more comfortable providing your Community with more ways to talk and interact with each other without worrying about adding more moderation work onto your plate. </p>
+<p>AutoMod prevents unwanted messages from being posted in your Community across all of your #text-channels, along with other messaging surfaces like threads and text chat in voice channels. This way, you can feel more comfortable providing your Community with more ways to talk and interact with each other without worrying about adding more moderation work onto your plate. </p>
 <p class="wysiwyg-text-align-center"><br><img src="https://support.discord.com/hc/article_attachments/12974178178327" alt="automod_systemmessage.png"></p>
 <p class="wysiwyg-text-align-left">You can also choose to have AutoMod send you alerts containing who-what-where information about blocked messages to a dedicated, private channel of your choice to help you identify and act on potential bad actors and unwanted behavior within your Community.</p>
 <h1 id="h_01GV3GPTD3NTNMY5TCQCFX4X6Z">WHAT IS AUTOMOD AI?</h1>
@@ -52,7 +52,7 @@
 <p>1. Navigate to <strong>Server Settings &gt; Safety Setup </strong></p>
 <p>2. Once you are in Safety Setup, select <strong>Edit</strong> within <strong>DM and Spam Protection</strong></p>
 <p>3. <strong>Then, enable Members must accept rules before they can talk or DM to set up rules for your community </strong></p>
-<p>You can check out our Rules Screening <a href="https://support.discord.com/hc/en-us/articles/1500000466882" target="_blank" rel="noopener">article</a> to learn more.</p>
+<p>You can check out our Rules Screening <a href="https://support.discord.com/hc/en-us/articles/1500000466882" target="_blank" rel="noopener noreferrer">article</a> to learn more.</p>
 <h1 id="h_01GV3GQ8B6WR17JJA5KX92GDHT">WHAT ARE KEYWORD FILTERS?</h1>
 <p><span style="background-color: #ffffff;" data-darkreader-inline-bgcolor="">AutoMod’s Keyword Filters let you set up the following rules to determine what AutoMod should look out for and how to respond when it flags a message containing certain words or phrases: </span></p>
 <p><span style="background-color: #ffffff;" data-darkreader-inline-bgcolor="">1. Commonly Flagged Words Rule - Use ready-made word lists to filter commonly flagged words</span></p>
@@ -79,9 +79,9 @@
 </ol>
 <p class="wysiwyg-text-align-center"><img src="https://support.discord.com/hc/article_attachments/12974314950295" alt="automod_commonlyflagged_words.gif"></p>
 <ol start="2">
-    <li>Under Commonly Flagged Words, click “Set Up” to select from any of the three ready-made word lists of commonly flagged words.</li>
+    <li>Under Commonly Flagged Words, press “Set Up” to select from any of the three ready-made word lists of commonly flagged words.</li>
 </ol>
-<p class="wysiwyg-text-align-center"><img src="https://support.discord.com/hc/article_attachments/12974349989143" alt="automod_commonlyflagged_words_setup.gif">3. Create your own rules with words and phrases you want AutoMod to filter out by clicking “Set Up” under “Custom Keyword Rule” and entering keywords and phrases.</p>
+<p class="wysiwyg-text-align-center"><img src="https://support.discord.com/hc/article_attachments/12974349989143" alt="automod_commonlyflagged_words_setup.gif">3. Create your own rules with words and phrases you want AutoMod to filter out by selecting “Set Up” under “Custom Keyword Rule” and entering keywords and phrases.</p>
 <p>Tip: If you spot a message containing a word you want to add to your rules, you can quickly do so by highlighting the word in the message you want to add, right-clicking, and selecting "Flag Word" to add the word to an existing or new rule of your choice.</p>
 <p>3. Choose to have AutoMod block flagged messages entirely with a custom message, send you an alert, and/or time out users* when it flags a message. <br>*<em>Timeout user response is only available under Custom Keyword Rules</em></p>
 <p>When AutoMod blocks a message, a member will receive a message only visible to them. To append your own message, you can select “Edit Custom Message” and enter your own (up to 150 characters). </p>
@@ -96,9 +96,14 @@
 <p>If you set a channel to be exempt, any messages in Threads or Text Chat in Voice in that channel will also be exempt. Users with Admin and Manage Server permissions are always exempt from filter rules.</p>
 <p class="wysiwyg-text-align-center"><img src="https://support.discord.com/hc/article_attachments/12974383035671" alt="image10.png"></p>
 <h2 id="docs-internal-guid-57931522-7fff-24d2-3f2d-58f601b6d462">Block Words in Server Member Usernames or Server Nicknames</h2>
-<h3><span style="color: #434343;">This is currently an experimental feature and is not yet available to everyone.</span></h3>
 <p>You can also customize words or phrases you don't want visible in members' usernames or server nicknames while in your server. Usernames or members who have server nicknames that contain these blocked words will be required to update their server nickname before they can talk or interact with other server members. </p>
 <p>If members don't have permission to update their server nickname, members will need to update their default username before they can talk or interact in your server. AutoMod will default to checking the server nickname and if that isn’t implemented, AutoMod will check their username.</p>
+<p>1. To set this up, head to <strong>Server Settings </strong>&gt; <strong>Safety Setup</strong> </p>
+<p>2. Then tap on <strong>Edit</strong> next to Auto Mod.</p>
+<p>3. Under “Members” you should see an option that says “Block Words in Member Profile Names”, tap on the x to enable it if it’s not enabled already.</p>
+<p class="wysiwyg-text-align-center"><img style="height: 351px; width: 624px;" src="https://lh5.googleusercontent.com/fwckINmfHvBK-70VmRFoKxz8KTYeeqeG8X-harycpkn5rzEpEocsR7so9hYn6bL-I5SWvOqS-5pUUCzeE0sPHXJcqF_YxZeHJgwzJcqKKzGeCRA24L_e3vzVxWabodD92RpSwEwfNYdGgBGUlRVlyUc"></p>
+<p>If a user tries to use one of the blocked phrases or words in their username or server nickname, they’ll receive an error message and need to use something else.</p>
+<p class="wysiwyg-text-align-center"><img style="height: 113px; width: 345px;" src="https://lh3.googleusercontent.com/ej10wunVHRICwReyRiSoLLr61UPmE4gES97lQmjtqjSu_y3uk6MGP4GRiBXYVHQzq9s9s5r0uJlhkxIDS4eDwbiVs7u0cgMhPgKbHXr2bnTuSjeEA6X3i2ZvgmYjv8VjrqqIhcGlhtqbx1Qow3JeWCw"></p>
 <h1 id="h_01GV3GQSB85NVWN1KQJ8AKZYC8">WHAT ARE SPAM FILTERS?</h1>
 <p>Spam is a problem that communities have to defend against every day to protect their members from dangers and bad actors. In our mission to help you keep your Community safe without adding more moderation work onto your plate, we’re building new tools to help cut down spam on Discord.</p>
 <p>We know that spam comes in many forms. These new filters help address message activity that negatively impacts the members in your Community by allowing you to block messages containing spammy text content before they’re ever posted.</p>
