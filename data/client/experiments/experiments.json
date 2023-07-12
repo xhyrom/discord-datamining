@@ -4042,7 +4042,8 @@
           "1073747669937299567"
         ],
         "2": [
-          "834846951068532756"
+          "834846951068532756",
+          "1128777448062988471"
         ]
       },
       "overrides_formatted": []
@@ -7385,26 +7386,10 @@
       "populations": [
         {
           "buckets": {
-            "1": {
-              "rollout": [
-                {
-                  "start": 50,
-                  "end": 100
-                }
-              ]
-            },
-            "2": {
-              "rollout": [
-                {
-                  "start": 100,
-                  "end": 150
-                }
-              ]
-            },
             "none": {
               "rollout": [
                 {
-                  "start": 150,
+                  "start": 0,
                   "end": 10000
                 }
               ]
@@ -8556,6 +8541,27 @@
             }
           ]
         }
+      ]
+    }
+  },
+  {
+    "data": {
+      "kind": "guild",
+      "id": "2023-05_clyde_ai_channel_based_personalities",
+      "label": "Channel based Clyde personalities",
+      "description": [
+        "Not Eligible",
+        "Control Bucket",
+        "Treatment 1: enable personality setting"
+      ],
+      "hash": 2806454753,
+      "buckets": [
+        -1,
+        0,
+        1
+      ],
+      "config_keys": [
+        "enabled"
       ]
     }
   },
