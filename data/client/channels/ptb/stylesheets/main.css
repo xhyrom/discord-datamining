@@ -34876,6 +34876,14 @@ img[alt] {
     font-size: 14px
 }
 
+.switchButton-XYS2KL {
+    padding-left: 0;
+    margin-top: 8px;
+    margin-bottom: -16px;
+    -ms-flex-item-align: start;
+    align-self: flex-start
+}
+
 .footer-37EHvM {
     -webkit-box-pack: justify;
     -ms-flex-pack: justify;
@@ -163165,4 +163173,4 @@ html .invoiceCancelRow-dVOR64 {
     flex-direction: column
 }
 
-/*# sourceMappingURL=40532.0af3c8b55bff01608e0b.css.map*/
+/*# sourceMappingURL=40532.4e962e9b71e75b783bb8.css.map*/
