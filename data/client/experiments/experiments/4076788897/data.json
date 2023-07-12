@@ -1,0 +1,21 @@
+{
+  "data": {
+    "kind": "user",
+    "id": "2023-07_server_guide_post_onboarding_new_member_action",
+    "label": "Add onboarding new member action to server guide",
+    "description": [
+      "Not Eligible",
+      "Control Bucket",
+      "Treatment 1: Show the Onboarding Version of Home"
+    ],
+    "hash": 4076788897,
+    "buckets": [
+      -1,
+      0,
+      1
+    ],
+    "config_keys": [
+      "enabled"
+    ]
+  }
+}
