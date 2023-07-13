@@ -24,32 +24,32 @@
     "populations": [
       {
         "buckets": {
-          "none": {
+          "1": {
             "rollout": [
-              {
-                "start": 0,
-                "end": 50
-              },
               {
                 "start": 50,
                 "end": 100
               },
               {
+                "start": 250,
+                "end": 350
+              }
+            ]
+          },
+          "2": {
+            "rollout": [
+              {
                 "start": 100,
                 "end": 150
               },
               {
-                "start": 150,
-                "end": 250
-              },
-              {
-                "start": 250,
-                "end": 350
-              },
-              {
                 "start": 350,
                 "end": 450
-              },
+              }
+            ]
+          },
+          "none": {
+            "rollout": [
               {
                 "start": 450,
                 "end": 10000
@@ -66,7 +66,7 @@
         ]
       }
     ],
-    "revision": 2,
+    "revision": 3,
     "overrides": {
       "1": [
         "890883112500854804",
