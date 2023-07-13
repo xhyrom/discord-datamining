@@ -40241,6 +40241,10 @@ html .progress-2Otdc- {
     color: var(--interactive-active)
 }
 
+.lineClamp-1BEC7x {
+    white-space: pre-wrap
+}
+
 .roleTag--FTDMy,
 .roleTagContainer-BL55gB {
     display: -webkit-box;
@@ -163240,4 +163244,4 @@ html .invoiceCancelRow-dVOR64 {
     flex-direction: column
 }
 
-/*# sourceMappingURL=40532.6f4b896d42954f304568.css.map*/
+/*# sourceMappingURL=40532.84590ec515ad6a8d03e2.css.map*/
