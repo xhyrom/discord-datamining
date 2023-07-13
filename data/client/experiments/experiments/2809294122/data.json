@@ -27,31 +27,47 @@
           "1": {
             "rollout": [
               {
-                "start": 50,
-                "end": 100
-              },
-              {
-                "start": 250,
-                "end": 350
+                "start": 550,
+                "end": 650
               }
             ]
           },
           "2": {
             "rollout": [
               {
-                "start": 100,
-                "end": 150
-              },
-              {
-                "start": 350,
-                "end": 450
+                "start": 650,
+                "end": 750
               }
             ]
           },
           "none": {
             "rollout": [
               {
-                "start": 450,
+                "start": 0,
+                "end": 50
+              },
+              {
+                "start": 50,
+                "end": 100
+              },
+              {
+                "start": 100,
+                "end": 150
+              },
+              {
+                "start": 150,
+                "end": 250
+              },
+              {
+                "start": 250,
+                "end": 350
+              },
+              {
+                "start": 350,
+                "end": 450
+              },
+              {
+                "start": 750,
                 "end": 10000
               }
             ]
