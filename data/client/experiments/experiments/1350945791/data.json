@@ -1,0 +1,21 @@
+{
+  "data": {
+    "kind": "user",
+    "id": "2023-07_bogo_marketing_materials_experiment",
+    "label": "BOGO Marketing Materials",
+    "description": [
+      "Not Eligible",
+      "Control Bucket",
+      "Treatment 1: Enable BOGO marketing materials"
+    ],
+    "hash": 1350945791,
+    "buckets": [
+      -1,
+      0,
+      1
+    ],
+    "config_keys": [
+      "enabled"
+    ]
+  }
+}
