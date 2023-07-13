@@ -106565,11 +106565,12 @@ html .tabBadge-h4HGed {
 }
 
 .customCallSoundsFeatureArt-36wZsc {
-    background-image: url(/assets/d4146d45d80647e062daf56700561098.svg);
-    width: 172px;
-    height: 188px;
+    background-image: url(/assets/b96d2f44c97faa13d6f9763a9b43ab98.svg);
+    width: 161px;
+    height: 129px;
     -ms-flex-item-align: center;
-    align-self: center
+    align-self: center;
+    margin-bottom: -12px
 }
 
 .customCallSoundsFeatureHeader-suJP3c {
@@ -163017,4 +163018,4 @@ html .invoiceCancelRow-dVOR64 {
     flex-direction: column
 }
 
-/*# sourceMappingURL=40532.0e726b1a70767f5d3b40.css.map*/
+/*# sourceMappingURL=40532.16af48078b4958695148.css.map*/
