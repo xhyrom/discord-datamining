@@ -3815,13 +3815,11 @@
     ]
   },
   "APPLICATION_DIRECTORY_APPLICATION": {
-    "url": "/application-directory/applications/:param",
+    "url": "/application-directory-static/applications/:param",
     "allowed_methods": [
       "GET",
       "HEAD",
-      "OPTIONS",
-      "PATCH",
-      "PUT"
+      "OPTIONS"
     ]
   },
   "APPLICATION_DIRECTORY_EMBED_APPLICATION": {
@@ -3833,7 +3831,7 @@
     ]
   },
   "APPLICATION_DIRECTORY_CATEGORIES": {
-    "url": "/application-directory/categories",
+    "url": "/application-directory-static/categories",
     "allowed_methods": [
       "GET",
       "HEAD",
@@ -3841,7 +3839,7 @@
     ]
   },
   "APPLICATION_DIRECTORY_SIMILAR": {
-    "url": "/application-directory/applications/:param/similar",
+    "url": "/application-directory-static/applications/:param/similar",
     "allowed_methods": [
       "GET",
       "HEAD",
@@ -3849,7 +3847,7 @@
     ]
   },
   "APPLICATION_DIRECTORY_SEARCH": {
-    "url": "/application-directory/search",
+    "url": "/application-directory-static/search",
     "allowed_methods": [
       "GET",
       "HEAD",
@@ -3857,7 +3855,7 @@
     ]
   },
   "APPLICATION_DIRECTORY_COLLECTIONS": {
-    "url": "/application-directory/collections",
+    "url": "/application-directory-static/collections",
     "allowed_methods": [
       "GET",
       "HEAD",
