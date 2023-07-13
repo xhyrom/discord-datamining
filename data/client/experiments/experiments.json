@@ -2424,52 +2424,6 @@
   },
   {
     "data": {
-      "kind": "user",
-      "id": "2022-09_emoji_ecosystem_holdout",
-      "label": "Emoji Ecosystem Holdout Experiment",
-      "description": [
-        "Not Eligible",
-        "Control Bucket",
-        "Treatment 1: In the Emoji Ecosystem Holdout"
-      ],
-      "hash": 667096268,
-      "buckets": [
-        -1,
-        0,
-        1
-      ],
-      "config_keys": [
-        "enabled"
-      ]
-    }
-  },
-  {
-    "data": {
-      "kind": "user",
-      "id": "2022-09_emoji_picker_discovery",
-      "label": "Emoji Picker Improved Discovery",
-      "description": [
-        "Not Eligible",
-        "Control Bucket",
-        "Treatment 1: Bigger Picker",
-        "Treatment 2: Bigger Picker + Popular Server Emojis",
-        "Treatment 3: Bigger Picker + Newly Added Emojis"
-      ],
-      "hash": 346890398,
-      "buckets": [
-        -1,
-        0,
-        1,
-        2,
-        3
-      ],
-      "config_keys": [
-        "enabled"
-      ]
-    }
-  },
-  {
-    "data": {
       "kind": "guild",
       "id": "2023-02_stage_boosting",
       "label": "Stage Boosting",
@@ -2584,6 +2538,52 @@
             }
           ]
         }
+      ]
+    }
+  },
+  {
+    "data": {
+      "kind": "user",
+      "id": "2022-09_emoji_ecosystem_holdout",
+      "label": "Emoji Ecosystem Holdout Experiment",
+      "description": [
+        "Not Eligible",
+        "Control Bucket",
+        "Treatment 1: In the Emoji Ecosystem Holdout"
+      ],
+      "hash": 667096268,
+      "buckets": [
+        -1,
+        0,
+        1
+      ],
+      "config_keys": [
+        "enabled"
+      ]
+    }
+  },
+  {
+    "data": {
+      "kind": "user",
+      "id": "2022-09_emoji_picker_discovery",
+      "label": "Emoji Picker Improved Discovery",
+      "description": [
+        "Not Eligible",
+        "Control Bucket",
+        "Treatment 1: Bigger Picker",
+        "Treatment 2: Bigger Picker + Popular Server Emojis",
+        "Treatment 3: Bigger Picker + Newly Added Emojis"
+      ],
+      "hash": 346890398,
+      "buckets": [
+        -1,
+        0,
+        1,
+        2,
+        3
+      ],
+      "config_keys": [
+        "enabled"
       ]
     }
   },
