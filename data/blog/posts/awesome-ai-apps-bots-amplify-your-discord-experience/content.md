@@ -1,7 +1,7 @@
 <div class="column-4 w-col w-col-8 w-col-stack">
     <div id="heading-1" class="rich-wrapper">
         <div class="blog-post-content w-richtext">
-            <p>This Sunday, July 16 is AI Appreciation Day and in honor, we’re highlighting some amazing AI-powered apps from our creative Discord Developer community.&nbsp;</p>
+            <p>Today, we’re highlighting some amazing AI-powered apps from our creative Discord Developer community.</p>
             <p>You might be asking: Why celebrate a tool like AI? We believe in its value in aiding hanging out and having fun with friends. On Discord, rather than just going solo with an app, you can supercharge your conversations and share the experience of seeing what sorts of exciting, wild and sometimes silly results come from prompts.&nbsp;</p>
             <p>When friends are on Discord together to hang out, play games, or study, they often use apps to give their servers a more personal touch. Just like a treehouse, after you build your server and invite your friends, you decorate it and make it your own, based on hobbies, interests, and topics you care about.</p>
             <p>AI-powered apps have made their homes in nearly three million Discord servers, ranging from AI companions, to groups generating gaming assets with AI and AI-based learning communities. More than 30 million people already use AI apps on Discord every month!&nbsp; Whether you’re generating a shiny new avatar or putting into words something you can’t quite figure out on your own, there’s a lot to explore and we love seeing how people are using our platform to discover what’s possible together.</p>
@@ -48,7 +48,6 @@
             <div class="w-embed">
                 <div class="btn-wrapper"><a href="https://canary.discord.com/application-directory/936929561302675456" class="btn-blog w-button" target="_blank">Add Midjourney to Your Server</a></div>
             </div>
-            <h3></h3>
             <h3><strong><br>AI Image Generator&nbsp;</strong></h3>
             <p>This one’s a bit self-explanatory, but here’s the scoop on its backstory. The AI Image Generator app for Discord was developed in late 2022 with one purpose: to generate custom images based on user prompts. At that time, there was a huuuge surge of news about new AI technology, but most of the services you may have seen talked about back then were beyond the reach of individuals without expensive hardware.&nbsp;</p>
             <figure class="w-richtext-figure-type-image w-richtext-align-fullwidth" style="max-width:740pxpx">
@@ -82,7 +81,7 @@
                 <div><img src="https://assets-global.website-files.com/5f9072399b2640f14d6a2bf4/64af39ab3444cc7752b350bc_Yv1sVQ0PEYcPltp2fsAFFQGssZWaiOsM4weJl2lavF-vySTX0PcEhWMhmIOH-aZyp3MwRjPAq7tzCBNXzFXbQgUGv5-8ZpAy5pHqc5Dn7_CAkgpB13KP-CZar9DFAFeIHgRdDtYpJJ3mT2TqF2t8IKU.png" alt=""></div>
             </figure>
             <p>Apps are the heart and soul of Discord, providing endless possibilities for customization, entertainment, and community engagement. With over 500,000 community-developed apps at your fingertips, you can truly take your server to the next level and make it an even more unique and exciting space.&nbsp;</p>
-            <p>As we gear up to celebrate AI Appreciation Day this year, let's continue pushing the boundaries of AI on Discord and create even more magical experiences, together.</p>
+            <p>Let's continue pushing the boundaries of AI on Discord and create even more magical experiences, together.</p>
             <p>Stay tuned for more exciting updates and innovations on our platform — and share some of your generated masterpieces with us, would ya?<br>‍</p>
             <p>&lt;3 Your friends at Discord&nbsp;</p>
         </div>
