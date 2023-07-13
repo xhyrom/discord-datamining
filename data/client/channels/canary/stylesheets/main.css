@@ -49384,6 +49384,18 @@ input[type=checked]:focus-visible+.label-3TDpbn {
     margin-bottom: 16px
 }
 
+.outer-VAWfYQ {
+    position: relative
+}
+
+.inner-3je51t {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0
+}
+
 .applicationIcon-39og1c {
     margin-right: .5em
 }
@@ -49393,7 +49405,11 @@ input[type=checked]:focus-visible+.label-3TDpbn {
 }
 
 .modalRoot-2Qy0fB {
-    border-radius: var(--radius-md) var(--radius-md) 0 0
+    border-radius: var(--radius-md);
+    position: relative;
+    padding-bottom: 16px;
+    padding-top: 4px;
+    min-height: auto
 }
 
 .modalHeader-WudL3K {
@@ -49429,7 +49445,7 @@ input[type=checked]:focus-visible+.label-3TDpbn {
 
 .iframe-1g4XVa {
     display: block;
-    width: auto;
+    width: 100%;
     height: 100%
 }
 
@@ -53538,18 +53554,6 @@ input[type=checked]:focus-visible+.label-3TDpbn {
 .left-2y6nF_ {
     -webkit-transform: rotate(-90deg);
     transform: rotate(-90deg)
-}
-
-.outer-VAWfYQ {
-    position: relative
-}
-
-.inner-3je51t {
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0
 }
 
 .animator-1vqSL- {
@@ -162993,4 +162997,4 @@ html .invoiceCancelRow-dVOR64 {
     flex-direction: column
 }
 
-/*# sourceMappingURL=40532.6c93cc3065b095c91291.css.map*/
+/*# sourceMappingURL=40532.f0b97b56e3f87125d096.css.map*/
