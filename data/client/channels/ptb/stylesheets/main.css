@@ -30826,6 +30826,11 @@ img[alt] {
     height: 23px
 }
 
+.errorBlock-1xVeY6 {
+    position: relative;
+    margin: 5px 15px 15px
+}
+
 .copyInput-3AbKWB {
     overflow: hidden;
     -webkit-box-sizing: border-box;
@@ -131445,15 +131450,18 @@ html .invoiceCancelRow-3s2UuC {
     -webkit-box-direction: normal;
     -ms-flex-direction: column;
     flex-direction: column;
-    padding: 40px 32px
+    padding: 30px 24px 10px
 }
 
 .confirmationHeader-2mK-jD {
     margin-bottom: 16px
 }
 
-.confirmationMessage-_sP7Dj {
-    margin-bottom: 34px
+.divider-2DWzXr {
+    width: 100%;
+    height: 1px;
+    margin: 24px 0;
+    background-color: var(--background-modifier-accent)
 }
 
 .channelInfo-1XOTfG {
@@ -162997,4 +163005,4 @@ html .invoiceCancelRow-dVOR64 {
     flex-direction: column
 }
 
-/*# sourceMappingURL=40532.f0b97b56e3f87125d096.css.map*/
+/*# sourceMappingURL=40532.517d6edca65a6c019128.css.map*/
