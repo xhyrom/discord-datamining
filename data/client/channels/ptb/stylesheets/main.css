@@ -149074,6 +149074,22 @@ html .invoiceCancelRow-3s2UuC {
     flex: 1 1 33%
 }
 
+.selectOptionContainer-1rReVq {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between
+}
+
+.disabled-BkDJYT {
+    opacity: .5
+}
+
 .formItem-G4fK7P {
     margin-bottom: 32px
 }
@@ -163224,4 +163240,4 @@ html .invoiceCancelRow-dVOR64 {
     flex-direction: column
 }
 
-/*# sourceMappingURL=40532.d4cc5f00a3e78a7ee7b1.css.map*/
+/*# sourceMappingURL=40532.6f4b896d42954f304568.css.map*/
