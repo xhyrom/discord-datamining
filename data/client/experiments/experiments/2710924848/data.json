@@ -6,16 +6,18 @@
     "description": [
       "Not Eligible",
       "Control Bucket",
-      "Treatment 1: Show alert mode experimence"
+      "Treatment 1: Show alert mode experience",
+      "Treatment 2: Show alert mode experience with member safety"
     ],
     "hash": 2710924848,
     "buckets": [
       -1,
       0,
-      1
+      1,
+      2
     ],
     "config_keys": [
-      "showAlertMode"
+      "enabled"
     ]
   },
   "rollout": {

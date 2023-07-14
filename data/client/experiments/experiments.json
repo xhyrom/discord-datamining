@@ -5286,82 +5286,6 @@
   {
     "data": {
       "kind": "guild",
-      "id": "2023-04_guild_alert_mode",
-      "label": "Guild Alert Mode",
-      "description": [
-        "Not Eligible",
-        "Control Bucket",
-        "Treatment 1: Show alert mode experimence"
-      ],
-      "hash": 2710924848,
-      "buckets": [
-        -1,
-        0,
-        1
-      ],
-      "config_keys": [
-        "showAlertMode"
-      ]
-    },
-    "rollout": {
-      "populations": [
-        {
-          "buckets": {
-            "1": {
-              "rollout": [
-                {
-                  "start": 0,
-                  "end": 10000
-                }
-              ]
-            }
-          },
-          "filters": [
-            {
-              "type": "guild_has_feature",
-              "features": [
-                "MEMBER_SAFETY_PAGE_ROLLOUT"
-              ]
-            }
-          ]
-        },
-        {
-          "buckets": {
-            "none": {
-              "rollout": [
-                {
-                  "start": 0,
-                  "end": 10000
-                }
-              ]
-            }
-          },
-          "filters": []
-        }
-      ],
-      "revision": 1,
-      "overrides": {
-        "1": [
-          "840296607785287763",
-          "1113529666989469708",
-          "435572461912719360",
-          "779781184665944104",
-          "226576492782551042",
-          "679875946597056683",
-          "303681520202285057",
-          "595922668876857364",
-          "424012709219008522",
-          "942646368453935204",
-          "880928798718173224",
-          "874345844743213126"
-        ]
-      },
-      "overrides_formatted": []
-    }
-  },
-  {
-    "data": {
-      "kind": "guild",
       "id": "2022-07_invites_disabled",
       "label": "Report Raids",
       "description": [
@@ -6046,6 +5970,84 @@
       "config_keys": [
         "enabled"
       ]
+    }
+  },
+  {
+    "data": {
+      "kind": "guild",
+      "id": "2023-04_guild_alert_mode",
+      "label": "Guild Alert Mode",
+      "description": [
+        "Not Eligible",
+        "Control Bucket",
+        "Treatment 1: Show alert mode experience",
+        "Treatment 2: Show alert mode experience with member safety"
+      ],
+      "hash": 2710924848,
+      "buckets": [
+        -1,
+        0,
+        1,
+        2
+      ],
+      "config_keys": [
+        "enabled"
+      ]
+    },
+    "rollout": {
+      "populations": [
+        {
+          "buckets": {
+            "1": {
+              "rollout": [
+                {
+                  "start": 0,
+                  "end": 10000
+                }
+              ]
+            }
+          },
+          "filters": [
+            {
+              "type": "guild_has_feature",
+              "features": [
+                "MEMBER_SAFETY_PAGE_ROLLOUT"
+              ]
+            }
+          ]
+        },
+        {
+          "buckets": {
+            "none": {
+              "rollout": [
+                {
+                  "start": 0,
+                  "end": 10000
+                }
+              ]
+            }
+          },
+          "filters": []
+        }
+      ],
+      "revision": 1,
+      "overrides": {
+        "1": [
+          "840296607785287763",
+          "1113529666989469708",
+          "435572461912719360",
+          "779781184665944104",
+          "226576492782551042",
+          "679875946597056683",
+          "303681520202285057",
+          "595922668876857364",
+          "424012709219008522",
+          "942646368453935204",
+          "880928798718173224",
+          "874345844743213126"
+        ]
+      },
+      "overrides_formatted": []
     }
   },
   {
@@ -7463,6 +7465,10 @@
                 {
                   "start": 550,
                   "end": 650
+                },
+                {
+                  "start": 2650,
+                  "end": 4550
                 }
               ]
             },
@@ -7471,6 +7477,10 @@
                 {
                   "start": 650,
                   "end": 750
+                },
+                {
+                  "start": 4550,
+                  "end": 6450
                 }
               ]
             },
@@ -7478,30 +7488,10 @@
               "rollout": [
                 {
                   "start": 0,
-                  "end": 50
-                },
-                {
-                  "start": 50,
-                  "end": 100
-                },
-                {
-                  "start": 100,
-                  "end": 150
-                },
-                {
-                  "start": 150,
-                  "end": 250
-                },
-                {
-                  "start": 250,
-                  "end": 350
-                },
-                {
-                  "start": 350,
                   "end": 450
                 },
                 {
-                  "start": 750,
+                  "start": 6450,
                   "end": 10000
                 }
               ]
