@@ -1,0 +1,27 @@
+{
+  "id": 16000885744791,
+  "url": "https://hammerandchisel.zendesk.com/api/v2/help_center/en-us/articles/16000885744791.json",
+  "html_url": "https://support.discord.com/hc/en-us/articles/16000885744791-Master-Sweepstakes-Rules",
+  "author_id": 2921470028,
+  "comments_disabled": true,
+  "draft": false,
+  "promoted": false,
+  "position": 0,
+  "section_id": 115000457731,
+  "created_at": "2023-07-13T16:32:21Z",
+  "name": "Master Sweepstakes Rules",
+  "title": "Master Sweepstakes Rules",
+  "source_locale": "en-us",
+  "locale": "en-us",
+  "outdated": false,
+  "outdated_locales": [],
+  "edited_at": "2023-07-14T13:46:07Z",
+  "user_segment_id": null,
+  "permission_group_id": 1720952,
+  "content_tag_ids": [],
+  "label_names": [
+    "answer-bot",
+    "master sweepstakes",
+    "master sweepstakes rules"
+  ]
+}
