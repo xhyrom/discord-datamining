@@ -22,6 +22,33 @@
     "populations": [
       {
         "buckets": {
+          "1": {
+            "rollout": [
+              {
+                "start": 0,
+                "end": 2000
+              }
+            ]
+          },
+          "none": {
+            "rollout": [
+              {
+                "start": 2000,
+                "end": 10000
+              }
+            ]
+          }
+        },
+        "filters": [
+          {
+            "type": "guild_in_range_by_hash",
+            "hash_key": 3143066071,
+            "target": 10000
+          }
+        ]
+      },
+      {
+        "buckets": {
           "none": {
             "rollout": [
               {
