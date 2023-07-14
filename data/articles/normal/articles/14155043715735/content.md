@@ -1,4 +1,3 @@
-<h3 id="h_01H44D6TH7PSX1QH6PB588AH5W">Please Note: This feature is gradually rolling out to all regions at this time. Thank you for your patience.</h3>
 <p>Discord is a place where friends, family, and communities come together to make connections and hangout. Every day people come here to build community and discuss all sorts of topics, play both casual and competitive games, and sometimes even learn something new!</p>
 <h3>
     <span style="color: #434343;" data-darkreader-inline-color="">For a more in depth look into how Discord works, please check out our article on a </span><a href="https://support.discord.com/hc/en-us/articles/360045138571" target="_blank" rel="noopener noreferrer">Beginner’s Guide to Discord.</a><span style="color: #434343;" data-darkreader-inline-color=""> </span>

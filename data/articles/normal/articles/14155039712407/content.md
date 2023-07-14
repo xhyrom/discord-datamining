@@ -1,5 +1,4 @@
 <h1>What is Family Center?</h1>
-<h3 id="h_01H44D6TH7PSX1QH6PB588AH5W">Please Note: This feature is gradually rolling out to all regions at this time. Thank you for your patience.</h3>
 <p id="docs-internal-guid-f1890530-7fff-680f-9748-fdd18a5f00d1">Family Center is a new tool built to help parents and guardians stay informed about how their teen uses Discord while still respecting their privacy. Parents and guardians will be able to see their connected teen’s recent Discord activity through an in-app activity dashboard and weekly email summaries. Through transparency, our goal is to foster productive dialogue about safer internet habits, and to create mutually beneficial ways for parents, guardians, and teens to connect about their experiences on Discord.</p>
 <p><span class="wysiwyg-font-size-large"><strong>What this article covers:</strong></span></p>
 <ul>
