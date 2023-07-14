@@ -1,3 +1,4 @@
+<h3 id="h_01H44D6TH7PSX1QH6PB588AH5W">Please Note: This feature is gradually rolling out to all regions at this time. Thank you for your patience.</h3>
 <p id="docs-internal-guid-f6235f0c-7fff-0149-b712-27245ccfe4cd">Family Center is an optional tool created to help keep up to three parents or guardians informed about how you use Discord while still maintaining your privacy. As you make connections and join servers, the information provided within the <strong>Activity Summary </strong>will help you and your connected family members stay on the same page. However, to respect your privacy, the summary will not allow connected family members to view any of your messages between you and others. </p>
 <p><span class="wysiwyg-font-size-large"><strong>What this article covers:</strong></span></p>
 <ul>
