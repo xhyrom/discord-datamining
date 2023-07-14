@@ -99,6 +99,12 @@ export class WumpusCentralSender implements Sender<Post> {
       );
     }
 
-    return new EmbedBuilder().setTitle(`${action} Blogpost`).addFields(fields);
+    const embed = new EmbedBuilder()
+      .setTitle(`${action} Blogpost`)
+      .addFields(fields);
+
+    if (post["media:thumbnail"]) embed.setThumbnail(post["media:thumbnail"]);
+
+    return embed;
   }
 }
