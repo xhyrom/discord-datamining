@@ -1,4 +1,5 @@
-<p><img src="https://support.discord.com/hc/article_attachments/360087906114/Newsletter3.png" alt="Newsletter3.png"></p>
+<h3>As of July 14, 2023, we have paused Verified Server Applications at this time. If you have any questions, feel free to submit a request to the community team with <a href="https://support.discord.com/hc/en-us/requests/new?ticket_form_id=360000168511" target="_blank" rel="noopener">this form</a>.</h3>
+<p><img src="https://support.discord.com/hc/article_attachments/360087906114" alt="Newsletter3.png"></p>
 <p><span style="font-weight: 400;">Verified Servers on Discord are an indication that the server is the officially affiliated community of a business, brand, and figure of public interest. The Verification badge appears on the top left corner of a server.</span></p>
 <p><span style="font-weight: 400;">In order to apply for a Verified server, you will need to have the following requirements at a minimum: </span></p>
 <ul>
