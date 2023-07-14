@@ -22440,18 +22440,6 @@ html.disable-forced-colors * {
     bottom: 0
 }
 
-.badge-tWBYZN {
-    position: absolute;
-    bottom: 0;
-    right: 3px;
-    width: 10px;
-    height: 10px
-}
-
-.broadcastIcon-3oy6X4 {
-    position: relative
-}
-
 .button-28qZiI {
     line-height: 0
 }
@@ -89973,6 +89961,18 @@ strong {
 
 .slash-2yrR11 {
     color: var(--red-400)
+}
+
+.badge-1g3blX {
+    position: absolute;
+    bottom: 0;
+    right: 3px;
+    width: 10px;
+    height: 10px
+}
+
+.broadcastIcon-2z9a7P {
+    position: relative
 }
 
 .activityItemButtonInnerClass-23Wx8I {
@@ -163043,4 +163043,4 @@ html .invoiceCancelRow-dVOR64 {
     flex-direction: column
 }
 
-/*# sourceMappingURL=40532.d1c1b0d59776e67bd90e.css.map*/
+/*# sourceMappingURL=40532.4eed9e043af673d97139.css.map*/
