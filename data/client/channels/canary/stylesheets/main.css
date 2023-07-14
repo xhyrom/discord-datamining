@@ -75886,11 +75886,16 @@ strong {
 .wrapper-NhbLHG {
     padding: 1px 0;
     overflow: visible;
-    position: relative
+    position: relative;
+    margin-left: 8px
 }
 
-.typeThread-2Aqh6X .link-1_kTxV {
+.typeThread-2Aqh6X.wrapper-NhbLHG {
     margin-left: 36px
+}
+
+.typeThread-2Aqh6X .unread-36eUEm {
+    left: -36px
 }
 
 .wrapper-NhbLHG.modeSelected-3DmyhH {
@@ -75930,7 +75935,6 @@ strong {
     cursor: pointer;
     position: relative;
     padding: 6px 8px;
-    margin-left: 8px;
     border-radius: var(--radius-xs);
     display: -webkit-box;
     display: -ms-flexbox;
@@ -75993,8 +75997,10 @@ strong {
     height: 8px;
     width: 4px;
     border-radius: 0 var(--radius-xs) var(--radius-xs) 0;
-    top: 4px;
-    left: 0
+    top: 50%;
+    margin-top: -4px;
+    left: -8px;
+    background-color: var(--channels-default)
 }
 
 .children-1MGS9G {
@@ -76069,11 +76075,6 @@ strong {
 .modeUnread-3Cxepe:hover .name-28HaxV {
     color: var(--interactive-active);
     font-weight: var(--font-weight-semibold-1x-light-theme, 500)
-}
-
-.unread-36eUEm {
-    background-color: var(--channels-default);
-    margin-top: 8px
 }
 
 .unreadRelevant-2f-VSK {
@@ -163043,4 +163044,4 @@ html .invoiceCancelRow-dVOR64 {
     flex-direction: column
 }
 
-/*# sourceMappingURL=40532.4eed9e043af673d97139.css.map*/
+/*# sourceMappingURL=40532.8f69adb55ddfd06345a2.css.map*/
