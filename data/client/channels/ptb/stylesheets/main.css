@@ -115883,7 +115883,7 @@ html .tabBadge-h4HGed {
 .page-30p_Rr {
     padding-bottom: 48px;
     display: grid;
-    grid-template-columns: 3fr 2fr;
+    grid-template-columns: minmax(0, 3fr) minmax(0, 2fr);
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
     -ms-flex-direction: row;
@@ -116060,11 +116060,40 @@ html .tabBadge-h4HGed {
     height: 48px
 }
 
+.resourceChannelContent-2Poy4y {
+    -webkit-box-flex: 1;
+    -ms-flex: 1 1 auto;
+    flex: 1 1 auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    gap: 4px;
+    min-width: 0
+}
+
 .actionItemText--qW9Ho,
 .resourceChannelTitle-1DHf44 {
     -webkit-box-flex: 1;
     -ms-flex: 1 1 auto;
     flex: 1 1 auto
+}
+
+.resourceChannelDescription-r3BkMC {
+    min-width: 0;
+    overflow: hidden;
+    text-overflow: ellipsis
+}
+
+.iconWrapper-1WV8Kl {
+    margin-top: 2px
+}
+
+.icon-1PGON7 {
+    border-radius: var(--radius-sm)
 }
 
 .actionItemEditButton-do4Ch_,
@@ -163050,4 +163079,4 @@ html .invoiceCancelRow-dVOR64 {
     flex-direction: column
 }
 
-/*# sourceMappingURL=40532.9dce54a0f8d614f163f1.css.map*/
+/*# sourceMappingURL=40532.7219eb7d9c1063b65827.css.map*/
