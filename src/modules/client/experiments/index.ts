@@ -83,7 +83,7 @@ export class Experiments implements Module {
       experiments
     );
 
-    send(diff, result);
+    await send(diff, result);
   }
 
   async experiments(): Promise<Experiment[] | null> {

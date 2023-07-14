@@ -8,6 +8,6 @@ export interface Sender {
 }
 
 export const send = async (diff: Diff, result: PushResult) => {
-  new HyrosCoffeeSender().send(diff, result);
-  new WumpusCentralSender().send(diff, result);
+  await new HyrosCoffeeSender().send(diff, result);
+  await new WumpusCentralSender().send(diff, result);
 };

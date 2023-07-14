@@ -5,6 +5,15 @@ import { Blog } from "./Blog.ts";
 import { ArticleType, Articles } from "./Articles.ts";
 import deepEqual from "fast-deep-equal";
 
+export interface Diff<T> {
+  removedPosts: T[];
+  updatedPosts: {
+    diff?: string | undefined;
+  }[] &
+    T[];
+  addedPosts: T[];
+}
+
 export class Posts implements Module {
   get baseDir() {
     return join(DATA_DIR);
@@ -27,11 +36,7 @@ export class Posts implements Module {
     baseDir: string,
     oldPosts: T[],
     newPosts: T[]
-  ): Promise<{
-    removedPosts: K[];
-    updatedPosts: K[];
-    addedPosts: K[];
-  }> {
+  ): Promise<Diff<K>> {
     const diff = await octokit.repos.compareCommits({
       owner: "xHyroM",
       repo: "discord-datamining",

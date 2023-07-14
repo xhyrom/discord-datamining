@@ -10,16 +10,11 @@ import {
   readFile,
   formatNumber,
   pushToGit,
-  maximumStringLen,
-  chunk,
-  getWebhookFromEnv,
-  postToDiscord,
 } from "../../utils.ts";
 import { join } from "node:path";
 import type { Module } from "..";
 import { Posts } from "./index.ts";
-import type { APIEmbed } from "discord-api-types/v10";
-import { EmbedBuilder } from "@discordjs/builders";
+import { sendBlog } from "./sender/index.ts";
 
 interface RssResponse {
   rss: {
@@ -91,7 +86,7 @@ interface Channel {
   "atom:link": string;
 }
 
-interface Post {
+export interface Post {
   id: string; // Custom field, from guid
   body: string; // Custom field
   title: string;
@@ -170,41 +165,7 @@ export class Blog implements Module {
       posts
     );
 
-    const embeds: APIEmbed[] = [];
-
-    for (const post of diff.addedPosts) {
-      embeds.push(this.buildEmbed("New", post).setColor(0x2cde5c).toJSON());
-    }
-
-    for (const post of diff.removedPosts) {
-      embeds.push(this.buildEmbed("Removed", post).setColor(0xde2c2c).toJSON());
-    }
-
-    for (const post of diff.updatedPosts) {
-      if (!post.diff) continue;
-
-      embeds.push(
-        this.buildEmbed("Updated", post)
-          .setDescription(
-            maximumStringLen(`\`\`\`diff\n${post.diff}\n\`\`\``, 3000)
-          )
-          .setColor(0x2c5cde)
-          .toJSON()
-      );
-    }
-
-    const embedsPerTen = chunk(embeds, 10);
-
-    for (const embeds of embedsPerTen) {
-      await postToDiscord(
-        getWebhookFromEnv("DISCORD_WEBHOOK_POSTS"),
-        result?.update?.hash.to,
-        {
-          content: "<@&1117371394435600387>",
-          embeds,
-        }
-      );
-    }
+    await sendBlog(diff, result);
   }
 
   async channel(): Promise<Channel | null> {
@@ -271,26 +232,5 @@ export class Blog implements Module {
     this.#data = parsed;
 
     return parsed;
-  }
-
-  private buildEmbed(action: string, post: Post) {
-    return new EmbedBuilder().setTitle(`${action} Post`).addFields(
-      {
-        name: "Title",
-        value: post.title ?? "Unknown",
-      },
-      {
-        name: "Description",
-        value: maximumStringLen(post.description, 1024) ?? "Unknown",
-      },
-      {
-        name: "Published At",
-        value: `<t:${Math.floor(new Date(post.pubDate).getTime() / 1000)}>`,
-      },
-      {
-        name: "Link",
-        value: post.link ?? "Unknown",
-      }
-    );
   }
 }

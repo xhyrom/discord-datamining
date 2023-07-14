@@ -8,16 +8,11 @@ import {
   readFile,
   formatNumber,
   pushToGit,
-  maximumStringLen,
-  chunk,
-  postToDiscord,
-  getWebhookFromEnv,
 } from "../../utils.ts";
 import { join } from "node:path";
 import type { Module } from "../index.ts";
-import type { APIEmbed } from "discord-api-types/v10";
-import { EmbedBuilder } from "@discordjs/builders";
 import { Posts } from "./index.ts";
+import { sendArticles } from "./sender/index.ts";
 
 export enum ArticleType {
   Normal = "normal",
@@ -25,7 +20,7 @@ export enum ArticleType {
   Creator = "creator",
 }
 
-interface Article {
+export interface Article {
   id: number;
   html_url: string;
   vote_sum: number;
@@ -40,7 +35,7 @@ interface Article {
   body: string;
 }
 
-interface Section {
+export interface Section {
   id: number;
   html_url: string;
   category_id: number;
@@ -55,6 +50,7 @@ interface Section {
 
 export class Articles implements Module {
   public type: ArticleType;
+  #sections: Section[] | undefined;
 
   constructor(type: ArticleType) {
     this.type = type;
@@ -160,47 +156,7 @@ export class Articles implements Module {
       articles
     );
 
-    const embeds: APIEmbed[] = [];
-
-    for (const article of diff.addedPosts) {
-      embeds.push(
-        this.buildEmbed(sections, "New", article).setColor(0x2cde5c).toJSON()
-      );
-    }
-
-    for (const article of diff.removedPosts) {
-      embeds.push(
-        this.buildEmbed(sections, "Removed", article)
-          .setColor(0xde2c2c)
-          .toJSON()
-      );
-    }
-
-    for (const article of diff.updatedPosts) {
-      if (!article.diff) continue;
-
-      embeds.push(
-        this.buildEmbed(sections, "Updated", article)
-          .setDescription(
-            maximumStringLen(`\`\`\`diff\n${article.diff}\n\`\`\``, 3000)
-          )
-          .setColor(0x2c5cde)
-          .toJSON()
-      );
-    }
-
-    const embedsPerTen = chunk(embeds, 10);
-
-    for (const embeds of embedsPerTen) {
-      await postToDiscord(
-        getWebhookFromEnv("DISCORD_WEBHOOK_POSTS"),
-        result?.update?.hash.to,
-        {
-          content: "<@&1117371394435600387>",
-          embeds,
-        }
-      );
-    }
+    await sendArticles(diff, result, this);
   }
 
   async articles(): Promise<Article[]> {
@@ -214,45 +170,15 @@ export class Articles implements Module {
   }
 
   async sections(): Promise<Section[]> {
+    if (this.#sections) return this.#sections;
+
     const res = await getPaginator(
       `${this.baseUrl}/api/v2/help_center/en-us/sections.json`,
       "sections",
       1
     );
+    this.#sections = res;
 
     return res;
-  }
-
-  private buildEmbed(sections: Section[], action: string, article: Article) {
-    return new EmbedBuilder()
-      .setTitle(`${action} ${this.displayType} Article`)
-      .addFields(
-        {
-          name: "Title",
-          value: article.title ?? article.name,
-        },
-        {
-          name: "Section",
-          value:
-            sections.find((s) => s.id === article.section_id)?.name ??
-            "Unknown",
-        },
-        {
-          name: "Created At",
-          value: `<t:${Math.floor(
-            new Date(article.created_at).getTime() / 1000
-          )}>`,
-        },
-        {
-          name: "Edited At",
-          value: `<t:${Math.floor(
-            new Date(article.edited_at).getTime() / 1000
-          )}>`,
-        },
-        {
-          name: "Link",
-          value: article.html_url,
-        }
-      );
   }
 }
