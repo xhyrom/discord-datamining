@@ -34,12 +34,12 @@ export class WumpusCentralSender implements Sender {
       },
       {
         name: "Added Lines",
-        value: `\`\`\`js\n${mainFile?.additions ?? "Unknown"}\n\`\`\``,
+        value: `\`\`\`diff\n+ ${mainFile?.additions ?? "Unknown"}\n\`\`\``,
         inline: true,
       },
       {
         name: "Removed Lines",
-        value: `\`\`\`js\n${mainFile?.deletions ?? "Unknown"}\n\`\`\``,
+        value: `\`\`\`diff\n- ${mainFile?.deletions ?? "Unknown"}\n\`\`\``,
         inline: true,
       },
       {
