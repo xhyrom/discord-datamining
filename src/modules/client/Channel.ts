@@ -1,15 +1,12 @@
 import { join } from "node:path";
-import { EmbedBuilder } from "@discordjs/builders";
 import type { Module } from "..";
-import {
-  getWebhookFromEnv,
-  postToDiscord,
-  pushToGit,
-  readFile,
-} from "../../utils.ts";
+import { octokit, pushToGit, readFile } from "../../utils.ts";
 import { Scripts } from "./scripts/index.ts";
 import { Stylesheets } from "./stylesheets/index.ts";
 import { Client } from "./index.ts";
+import { send } from "./build_senders/index.ts";
+import type { PushResult } from "simple-git";
+import type { RestEndpointMethodTypes } from "@octokit/rest";
 
 export enum ChannelType {
   Stable,
@@ -20,6 +17,7 @@ export enum ChannelType {
 export class Channel implements Module {
   scripts: Scripts = new Scripts(this);
   stylesheets: Stylesheets = new Stylesheets(this);
+  #diff?: RestEndpointMethodTypes["repos"]["compareCommits"]["response"];
   public type: ChannelType;
 
   constructor(type: ChannelType) {
@@ -131,62 +129,28 @@ export class Channel implements Module {
 
     if (!result?.update?.hash) return;
 
-    const embed = new EmbedBuilder()
-      .setTitle(`${this.name} Build`)
-      .setColor(this.color)
-      .setTimestamp(date.getTime())
-      .addFields(
-        {
-          name: "Build Number",
-          value: (await build.buildNumber()) ?? "Unknown",
-          inline: true,
-        },
-        {
-          name: "Version Hash",
-          value: (await build.versionHash()) ?? "Unknown",
-          inline: true,
-        },
-        {
-          name: "Built At",
-          value: `<t:${Math.floor(date.getTime() / 1000)}> (<t:${Math.floor(
-            date.getTime() / 1000
-          )}:R>)`,
-          inline: true,
-        },
-        {
-          name: "Scripts",
-          value: scriptFiles.scripts
-            .map((script) =>
-              script.name === scriptFiles.mainScript.name
-                ? `${script.path} (main)`
-                : `${script.path}`
-            )
-            .join("\n"),
-        },
-        {
-          name: "Stylesheets",
-          value: stylesheetFiles.stylesheets
-            .map((stylesheet) =>
-              stylesheet.name === stylesheetFiles.mainStylesheet.name
-                ? `${stylesheet.path} (main)`
-                : `${stylesheet.path}`
-            )
-            .join("\n"),
-        }
-      );
-
-    await postToDiscord(
-      getWebhookFromEnv("DISCORD_WEBHOOK_BUILDS"),
-      result?.update?.hash.to,
-      {
-        content: "<@&1117194731328393396>",
-        embeds: [embed.toJSON()],
-      }
-    );
+    await send(result, this, build, scriptFiles, stylesheetFiles, date);
 
     if (this.type !== ChannelType.Canary) return;
 
-    await this.stylesheets.diff(result.update.hash.from, result.update.hash.to);
+    await this.stylesheets.diff(result, this);
+  }
+
+  async diff(result: PushResult) {
+    if (!result.update) return;
+
+    if (this.#diff) return this.#diff;
+
+    const diff = await octokit.repos.compareCommits({
+      owner: "xHyroM",
+      repo: "discord-datamining",
+      base: result.update.hash.from,
+      head: result.update.hash.to,
+    });
+
+    this.#diff = diff;
+
+    return diff;
   }
 
   private async getVersionHash() {

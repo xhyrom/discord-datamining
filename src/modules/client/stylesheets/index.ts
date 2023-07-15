@@ -10,6 +10,7 @@ import {
   octokit,
 } from "../../../utils.ts";
 import { ChannelType, type Channel } from "../Channel.ts";
+import type { PushResult } from "simple-git";
 
 export class Stylesheets implements Module {
   #files?: {
@@ -48,15 +49,11 @@ export class Stylesheets implements Module {
     // Stylesheets diff is posted in Channel#run
   }
 
-  async diff(before: string, after: string) {
+  async diff(result: PushResult, channel: Channel) {
     if (this.#channel.type !== ChannelType.Canary) return;
 
-    const diff = await octokit.repos.compareCommits({
-      owner: "xHyroM",
-      repo: "discord-datamining",
-      base: before,
-      head: after,
-    });
+    const diff = await channel.diff(result);
+    if (!diff) return;
 
     const currentCssFile = diff.data.files?.find((f) =>
       f.filename.includes("main.css")
@@ -67,7 +64,7 @@ export class Stylesheets implements Module {
 
     await postToDiscord(
       getWebhookFromEnv("DISCORD_WEBHOOK_STYLESHEETS"),
-      after,
+      result.update?.hash.to,
       {
         content: `<@&1105847524662706226>\n${
           desc.length > 2000 ? desc.slice(0, 1968) + "...```" : desc
