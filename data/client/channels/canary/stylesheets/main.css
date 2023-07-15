@@ -98577,7 +98577,8 @@ strong {
 }
 
 .bannerContent-2LXj4b a {
-    color: var(--blue-345) !important
+    color: var(--white) !important;
+    text-decoration: underline
 }
 
 .countdown-2TUNVe {
@@ -163075,4 +163076,4 @@ html .invoiceCancelRow-dVOR64 {
     flex-direction: column
 }
 
-/*# sourceMappingURL=40532.2f87362ce6f90e09c78c.css.map*/
+/*# sourceMappingURL=40532.e590df4d5471345a09aa.css.map*/
