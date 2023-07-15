@@ -60702,7 +60702,6 @@ strong {
 }
 
 .emojiMask-30Yemu {
-    left: 4px;
     position: relative
 }
 
@@ -140101,6 +140100,47 @@ html .invoiceCancelRow-3s2UuC {
     margin-right: 8px
 }
 
+.closeButton-1D1-a- {
+    position: absolute;
+    top: 4px;
+    right: 4px
+}
+
+.content-29RNNP {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    text-align: center;
+    padding: 24px
+}
+
+.image-21WP6W {
+    width: 120px;
+    height: 80px;
+    background-repeat: no-repeat;
+    background-size: 100%
+}
+
+.header-1nry0j {
+    margin-top: 16px;
+    margin-bottom: 8px
+}
+
+.theme-dark .image-21WP6W {
+    background-image: url(/assets/e7569d7c2e9acc7c6afffd5c9cf1d86c.svg)
+}
+
+.theme-light .image-21WP6W {
+    background-image: url(/assets/7afe394039f22e3a41d97c04287cbf9f.svg)
+}
+
 .fileUploadButton-2zOQcO {
     margin: 6px;
     padding: 4px 8px
@@ -163076,4 +163116,4 @@ html .invoiceCancelRow-dVOR64 {
     flex-direction: column
 }
 
-/*# sourceMappingURL=40532.e590df4d5471345a09aa.css.map*/
+/*# sourceMappingURL=40532.b8304d2748595b1e18e4.css.map*/
