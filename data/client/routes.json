@@ -1248,8 +1248,23 @@
       "OPTIONS"
     ]
   },
+  "POMELO_SUGGESTIONS_UNAUTHED": {
+    "url": "/unique-username/username-suggestions-unauthed",
+    "allowed_methods": [
+      "GET",
+      "HEAD",
+      "OPTIONS"
+    ]
+  },
   "POMELO_ATTEMPT": {
     "url": "/users/@me/pomelo-attempt",
+    "allowed_methods": [
+      "OPTIONS",
+      "POST"
+    ]
+  },
+  "POMELO_ATTEMPT_UNAUTHED": {
+    "url": "/unique-username/username-attempt-unauthed",
     "allowed_methods": [
       "OPTIONS",
       "POST"
