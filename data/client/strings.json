@@ -918,6 +918,7 @@
   "UU_REGISTER_USERNAME_HINT": "\"Only use letters, numbers, underscores, and periods.\"",
   "UU_REGISTER_PASSWORD_HINT": "\"Password must be 8 or more characters.\"",
   "UU_REGISTER_AGE_GATE_HEADER": "\"And, how old are you?\"",
+  "UU_REGISTER_DISPLAY_NAME_ERROR": "\"Sorry, that name can't be used.\"",
   "ACTIVITIES_SHARE_LOGS": "\"Share Activity Logs\"",
   "DEVELOPER_APPLICATION_TEST_MODE_ORIGIN_LABEL": "\"Select URL Origin Type (Embedded Apps Only)\"",
   "DEVELOPER_APPLICATION_TEST_MODE_PORT_NUMBER_LABEL": "\"Localhost Port Number\"",
