@@ -6,13 +6,19 @@
     "description": [
       "Not Eligible",
       "Control Bucket",
-      "Treatment 1: Unique Username Registration enabled"
+      "Treatment 1: Unique Username Registration enabled -livecheck -suggestions",
+      "Treatment 2: Unique Username Registration enabled -livecheck +suggestions",
+      "Treatment 3: Unique Username Registration enabled +livecheck -suggestions",
+      "Treatment 4: Unique Username Registration enabled +livecheck +suggestions"
     ],
     "hash": 2476969328,
     "buckets": [
       -1,
       0,
-      1
+      1,
+      2,
+      3,
+      4
     ],
     "config_keys": [
       "enabled"

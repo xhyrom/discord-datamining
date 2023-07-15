@@ -1,14 +1,14 @@
 {
   "data": {
     "kind": "user",
-    "id": "2021-03_nitro_emoji_autocomplete_upsell",
-    "label": "Emoji Autocomplete Upsell",
+    "id": "2023-07_autocomplete_emojis_nitro_upsell",
+    "label": "Autocomplete Emojis Nitro Upsell",
     "description": [
       "Not Eligible",
       "Control Bucket",
       "Treatment 1: Show emoji autocomplete upsell"
     ],
-    "hash": 259025033,
+    "hash": 1322503781,
     "buckets": [
       -1,
       0,

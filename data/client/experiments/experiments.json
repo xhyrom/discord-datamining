@@ -4765,13 +4765,19 @@
       "description": [
         "Not Eligible",
         "Control Bucket",
-        "Treatment 1: Unique Username Registration enabled"
+        "Treatment 1: Unique Username Registration enabled -livecheck -suggestions",
+        "Treatment 2: Unique Username Registration enabled -livecheck +suggestions",
+        "Treatment 3: Unique Username Registration enabled +livecheck -suggestions",
+        "Treatment 4: Unique Username Registration enabled +livecheck +suggestions"
       ],
       "hash": 2476969328,
       "buckets": [
         -1,
         0,
-        1
+        1,
+        2,
+        3,
+        4
       ],
       "config_keys": [
         "enabled"
@@ -5205,35 +5211,14 @@
   {
     "data": {
       "kind": "user",
-      "id": "2021-03_nitro_emoji_autocomplete_upsell",
-      "label": "Emoji Autocomplete Upsell",
+      "id": "2023-07_autocomplete_emojis_nitro_upsell",
+      "label": "Autocomplete Emojis Nitro Upsell",
       "description": [
         "Not Eligible",
         "Control Bucket",
         "Treatment 1: Show emoji autocomplete upsell"
       ],
-      "hash": 259025033,
-      "buckets": [
-        -1,
-        0,
-        1
-      ],
-      "config_keys": [
-        "enabled"
-      ]
-    }
-  },
-  {
-    "data": {
-      "kind": "user",
-      "id": "2021-04_nitro_emoji_autocomplete_upsell_ios",
-      "label": "Emoji Autocomplete Upsell iOS",
-      "description": [
-        "Not Eligible",
-        "Control Bucket",
-        "Treatment 1: Show emoji autocomplete upsell"
-      ],
-      "hash": 371152535,
+      "hash": 1322503781,
       "buckets": [
         -1,
         0,
@@ -6044,7 +6029,8 @@
           "530119670133555210",
           "964645662866173972",
           "915336728707989534",
-          "1095810146761973830"
+          "1095810146761973830",
+          "1116793467654381685"
         ]
       },
       "overrides_formatted": []
