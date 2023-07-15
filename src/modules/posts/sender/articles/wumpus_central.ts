@@ -90,13 +90,6 @@ export class WumpusCentralSender implements Sender<Article> {
             inline: true,
           },
           {
-            name: "Update Date",
-            value: `<t:${Math.floor(
-              new Date(article.edited_at).getTime() / 1000
-            )}>`,
-            inline: true,
-          },
-          {
             name: "Differences",
             value: `[View Changes](${commitUrl})`,
             inline: false,
