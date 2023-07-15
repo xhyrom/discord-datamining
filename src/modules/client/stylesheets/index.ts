@@ -7,7 +7,6 @@ import {
   rm,
   postToDiscord,
   getWebhookFromEnv,
-  octokit,
 } from "../../../utils.ts";
 import { ChannelType, type Channel } from "../Channel.ts";
 import type { PushResult } from "simple-git";
