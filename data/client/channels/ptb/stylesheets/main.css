@@ -27314,6 +27314,14 @@ img[alt] {
     margin: 0 4px 1px 0
 }
 
+.messageNegative-1uADAS {
+    color: var(--text-danger)
+}
+
+.messagePositive-22gIEW {
+    color: var(--text-positive)
+}
+
 .button-2BMPJJ {
     position: relative;
     top: 3px;
@@ -163106,4 +163114,4 @@ html .invoiceCancelRow-dVOR64 {
     flex-direction: column
 }
 
-/*# sourceMappingURL=40532.cfaf88b6843f623abeb1.css.map*/
+/*# sourceMappingURL=40532.e39cf77f7ea22330ab55.css.map*/
