@@ -118429,10 +118429,6 @@ input::-webkit-outer-spin-button {
     text-decoration: underline
 }
 
-.header-3_r5Ze {
-    margin-bottom: 32px
-}
-
 .divider-LdK8RO {
     margin: 24px 0;
     height: 1px;
@@ -118603,7 +118599,7 @@ input::-webkit-outer-spin-button {
     align-items: center;
     background-color: var(--background-secondary);
     border-radius: var(--radius-sm);
-    margin-top: 16px;
+    margin-top: 32px;
     padding: 24px
 }
 
@@ -118612,6 +118608,7 @@ input::-webkit-outer-spin-button {
     margin-right: 16px
 }
 
+.header-3kvM14,
 .updatesDescription-D08wxz,
 .updatesHeader-MkzgKb {
     margin-bottom: 8px
@@ -163109,4 +163106,4 @@ html .invoiceCancelRow-dVOR64 {
     flex-direction: column
 }
 
-/*# sourceMappingURL=40532.7ff0d6e2d9268884b384.css.map*/
+/*# sourceMappingURL=40532.cfaf88b6843f623abeb1.css.map*/
