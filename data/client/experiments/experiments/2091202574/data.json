@@ -1,0 +1,21 @@
+{
+  "data": {
+    "kind": "user",
+    "id": "2023-04_pomelo_suggestions",
+    "label": "Pomelo Suggestions",
+    "description": [
+      "Not Eligible",
+      "Control Bucket",
+      "Treatment 1: enabled"
+    ],
+    "hash": 2091202574,
+    "buckets": [
+      -1,
+      0,
+      1
+    ],
+    "config_keys": [
+      "enabled"
+    ]
+  }
+}

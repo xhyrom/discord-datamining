@@ -4724,6 +4724,48 @@
   {
     "data": {
       "kind": "user",
+      "id": "2023-04_pomelo_attempt",
+      "label": "Pomelo Attempt",
+      "description": [
+        "Not Eligible",
+        "Control Bucket",
+        "Treatment 1: enabled"
+      ],
+      "hash": 3522378716,
+      "buckets": [
+        -1,
+        0,
+        1
+      ],
+      "config_keys": [
+        "enabled"
+      ]
+    }
+  },
+  {
+    "data": {
+      "kind": "user",
+      "id": "2023-04_pomelo_suggestions",
+      "label": "Pomelo Suggestions",
+      "description": [
+        "Not Eligible",
+        "Control Bucket",
+        "Treatment 1: enabled"
+      ],
+      "hash": 2091202574,
+      "buckets": [
+        -1,
+        0,
+        1
+      ],
+      "config_keys": [
+        "enabled"
+      ]
+    }
+  },
+  {
+    "data": {
+      "kind": "user",
       "id": "2023-06_unique_username_registration",
       "label": "Unique Username Registration",
       "description": [
@@ -4742,6 +4784,35 @@
         2,
         3,
         4
+      ],
+      "config_keys": [
+        "enabled"
+      ]
+    }
+  },
+  {
+    "data": {
+      "kind": "user",
+      "id": "2023-03_pomelo_debounce_delay",
+      "label": "Pomelo Debounce Delay",
+      "description": [
+        "Not Eligible",
+        "Control Bucket",
+        "Treatment 1: 600ms",
+        "Treatment 2: 700ms",
+        "Treatment 3: 800ms",
+        "Treatment 4: 900ms",
+        "Treatment 5: 1000ms"
+      ],
+      "hash": 373531156,
+      "buckets": [
+        -1,
+        0,
+        1,
+        2,
+        3,
+        4,
+        5
       ],
       "config_keys": [
         "enabled"

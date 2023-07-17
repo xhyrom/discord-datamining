@@ -1,0 +1,29 @@
+{
+  "data": {
+    "kind": "user",
+    "id": "2023-03_pomelo_debounce_delay",
+    "label": "Pomelo Debounce Delay",
+    "description": [
+      "Not Eligible",
+      "Control Bucket",
+      "Treatment 1: 600ms",
+      "Treatment 2: 700ms",
+      "Treatment 3: 800ms",
+      "Treatment 4: 900ms",
+      "Treatment 5: 1000ms"
+    ],
+    "hash": 373531156,
+    "buckets": [
+      -1,
+      0,
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "config_keys": [
+      "enabled"
+    ]
+  }
+}
