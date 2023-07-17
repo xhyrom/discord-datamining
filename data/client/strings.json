@@ -2895,6 +2895,7 @@
   "NOTIFICATION_CENTER_FRIEND_DECLINED": "\"Friend request ignored\"",
   "NOTIFICATION_CENTER_INCOMING_FRIEND_REQUEST": "\"{username} sent you a friend request.\"",
   "NOTIFICATION_CENTER_INCOMING_FRIEND_REQUEST_ACCEPTED": "\"You accepted {username}’s friend request.\"",
+  "NOTIFICATION_CENTER_INCOMING_FRIEND_REQUESTS": "\"**{user}**, **{user2}**, and **{count} others** have sent you friend requests.\"",
   "NOTIFICATION_CENTER_FRIEND_REQUESTS_TITLE": "\"Friend Requests\"",
   "NOTIFICATION_CENTER_FRIEND_REQUESTS_EMPTY_TITLE": "\"No Incoming Friend Requests\"",
   "NOTIFICATION_CENTER_FRIEND_REQUESTS_EMPTY_SUBTITLE": "\"Once you have incoming friend requests, you can access them here!\"",
