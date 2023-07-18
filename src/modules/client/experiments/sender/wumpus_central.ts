@@ -50,6 +50,16 @@ export class WumpusCentralSender implements Sender {
 
     const embedsPerTen = chunk(embeds, 10);
 
+    console.log("=== Wumpus Central ===");
+    console.log(embedsPerTen.length);
+    console.log(embeds.length);
+
+    console.log("Embeds per ten");
+    console.log(embedsPerTen);
+
+    console.log("Embeds");
+    console.log(embeds);
+
     for (const embeds of embedsPerTen) {
       await postToDiscord(
         getWebhookFromEnv("WUMPUSCENTRAL_DISCORD_WEBHOOK_EXPERIMENTS"),
