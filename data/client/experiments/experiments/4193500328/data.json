@@ -1,0 +1,21 @@
+{
+  "data": {
+    "kind": "user",
+    "id": "2023-07_h265_for_windows_with_nvidia",
+    "label": "Test how h265 works on Windows with Nvidia nvenc codec",
+    "description": [
+      "Not Eligible",
+      "Control Bucket",
+      "Treatment 1: Calling with H.265"
+    ],
+    "hash": 4193500328,
+    "buckets": [
+      -1,
+      0,
+      1
+    ],
+    "config_keys": [
+      "enabled"
+    ]
+  }
+}
