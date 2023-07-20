@@ -27314,6 +27314,14 @@ img[alt] {
     margin: 0 4px 1px 0
 }
 
+.messageNegative-1uADAS {
+    color: var(--text-danger)
+}
+
+.messagePositive-22gIEW {
+    color: var(--text-positive)
+}
+
 .button-2BMPJJ {
     position: relative;
     top: 3px;
@@ -113145,6 +113153,19 @@ html .tabBadge-h4HGed {
     padding-bottom: 4px
 }
 
+.marginBottom8-2TAo74 {
+    margin-bottom: 8px
+}
+
+.marginBottom4-13zt5X {
+    margin-bottom: 4px
+}
+
+.divider-1gkJIq {
+    margin-top: 24px;
+    margin-bottom: 24px
+}
+
 .emojiAliasPlaceholder-3oShSx {
     position: absolute;
     top: 0;
@@ -163106,4 +163127,4 @@ html .invoiceCancelRow-dVOR64 {
     flex-direction: column
 }
 
-/*# sourceMappingURL=40532.cfaf88b6843f623abeb1.css.map*/
+/*# sourceMappingURL=40532.ca408cbef980f4f12824.css.map*/
