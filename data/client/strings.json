@@ -7451,6 +7451,7 @@
   "GUILD_SETTINGS_ONBOARDING_HOME_SETTINGS_INVALID_ACTION_CHANNEL": "\"Assigned channel is missing permissions for @everyone\"",
   "GUILD_SETTINGS_ONBOARDING_HOME_SETTINGS_INVALID_ACTION_CHANNEL_EMOJI": "\"This emoji no longer exists. Select a new one.\"",
   "GUILD_SETTINGS_ONBOARDING_HOME_SETTINGS_INVALID_RESOURCE_CHANNEL": "\"Assigned channel must be readonly for @everyone\"",
+  "GUILD_SETTINGS_ONBOARDING_PROMPT_INVALID_EMOJI": "\"This emoji no longer exists. Select a new one.\"",
   "GUILD_ONBOARDING_HOME_GUILD_MEMBERS_RATIO": "\"{online, number} / {total, number} Members online\"",
   "GUILD_SETTINGS_EMOJI_ALIAS": "\"Alias\"",
   "GUILD_SETTINGS_EMOJI_NAME": "\"Name\"",
