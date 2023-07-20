@@ -11153,10 +11153,18 @@
       "populations": [
         {
           "buckets": {
-            "none": {
+            "2": {
               "rollout": [
                 {
                   "start": 0,
+                  "end": 500
+                }
+              ]
+            },
+            "none": {
+              "rollout": [
+                {
+                  "start": 500,
                   "end": 10000
                 }
               ]
@@ -11173,7 +11181,7 @@
         },
         {
           "buckets": {
-            "none": {
+            "1": {
               "rollout": [
                 {
                   "start": 0,
