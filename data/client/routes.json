@@ -1966,6 +1966,10 @@
       "POST"
     ]
   },
+  "MFA_TOTP_ENABLE_VERIFY": {
+    "url": "users/@me/mfa/totp/enable/verify",
+    "allowed_methods": null
+  },
   "MFA_TOTP_DISABLE": {
     "url": "/users/@me/mfa/totp/disable",
     "allowed_methods": [
