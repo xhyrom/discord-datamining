@@ -56764,6 +56764,10 @@ h6.title-1p9WyQ {
     border-color: var(--status-positive-background)
 }
 
+.buttonDisabledSecondaryActionsEnabled-1uIZTB {
+    cursor: default
+}
+
 .buttonDisabled-2YTGC_ {
     pointer-events: none
 }
@@ -147120,36 +147124,36 @@ html .invoiceCancelRow-3s2UuC {
     flex: 1
 }
 
-.headerContainer-3Hja2u {
+.headerContainer-2mQMNG {
     display: block;
     text-align: center
 }
 
-.header-XceYjQ,
-.headerContainer-3Hja2u {
+.header-2no1qJ,
+.headerContainer-2mQMNG {
     margin-bottom: 8px
 }
 
-.modalClose-tOl-Qq {
+.modalClose-2tdkBv {
     position: absolute;
     top: 12px;
     right: 12px;
     z-index: 2
 }
 
-.section-3xOOsh {
+.section-1qc3EL {
     margin-bottom: 16px
 }
 
-.fileInput-2aMMue {
+.fileInput-2_kH2u {
     display: none
 }
 
-.compoundTextInputContainer-3jFYz0 {
+.compoundTextInputContainer-20dxsg {
     position: relative
 }
 
-.browseButton-2CxfRk {
+.browseButton-1WVsng {
     position: absolute;
     right: 8px;
     top: 8px;
@@ -147157,7 +147161,7 @@ html .invoiceCancelRow-3s2UuC {
     padding: 8px
 }
 
-.soundStateHint-1AMsOl {
+.soundStateHint-114jD- {
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
@@ -147166,41 +147170,41 @@ html .invoiceCancelRow-3s2UuC {
     flex: 1
 }
 
-.multiInput-wONk3i,
-.soundStateHint-1AMsOl {
+.multiInput-Ttjo-a,
+.soundStateHint-114jD- {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex
 }
 
-.multiInput-wONk3i {
+.multiInput-Ttjo-a {
     gap: 16px;
     -webkit-box-align: end;
     -ms-flex-align: end;
     align-items: end
 }
 
-.halfInput-15-VQ4 {
+.halfInput-2-SgC4 {
     -ms-flex-preferred-size: 50%;
     flex-basis: 50%
 }
 
-.emojiInput-3URXwQ {
+.emojiInput-3AOqw0 {
     position: relative
 }
 
-.emojiButton-2Z3krv {
+.emojiButton-1lJaeo {
     position: absolute;
     height: 100%;
     margin: 0 10px
 }
 
-.emojiText-1HLXh8 {
+.emojiText-1IXlXF {
     padding-left: 40px;
     cursor: pointer
 }
 
-.removeButton-2mK7O8 {
+.removeButton-3J1W9o {
     position: absolute;
     height: 20px;
     width: 20px;
@@ -163147,4 +163151,4 @@ html .invoiceCancelRow-dVOR64 {
     flex-direction: column
 }
 
-/*# sourceMappingURL=40532.90a392018ba0e25fb776.css.map*/
+/*# sourceMappingURL=40532.2549730d829c4963190e.css.map*/
