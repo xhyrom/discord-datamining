@@ -25103,6 +25103,14 @@ code {
     --decoration-to-avatar-ratio: 1.2
 }
 
+:root {
+    --font-weight-normal: 400;
+    --font-weight-medium: 500;
+    --font-weight-semibold: 600;
+    --font-weight-bold: 700;
+    --font-weight-extrabold: 800
+}
+
 .theme-dark.custom-theme-background {
     --bg-overlay-color: 0 0 0;
     --bg-overlay-color-inverse: 255 255 255;
@@ -163151,4 +163159,4 @@ html .invoiceCancelRow-dVOR64 {
     flex-direction: column
 }
 
-/*# sourceMappingURL=40532.6e5096dfddefd96bf530.css.map*/
+/*# sourceMappingURL=40532.91b5023d8e3e7fe5ec84.css.map*/
