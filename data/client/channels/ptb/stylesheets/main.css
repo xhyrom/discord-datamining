@@ -106526,6 +106526,84 @@ html .tabBadge-h4HGed {
     color: var(--interactive-active)
 }
 
+@-webkit-keyframes sparkle-_KEHBh {
+    0% {
+        opacity: 0;
+        -webkit-transform: rotate(-50deg) scale(0);
+        transform: rotate(-50deg) scale(0)
+    }
+
+    20% {
+        opacity: 1;
+        -webkit-transform: rotate(0deg) scale(1);
+        transform: rotate(0deg) scale(1)
+    }
+
+    40% {
+        opacity: 0;
+        -webkit-transform: rotate(50deg) scale(0);
+        transform: rotate(50deg) scale(0)
+    }
+
+    to {
+        opacity: 0;
+        -webkit-transform: rotate(-50deg) scale(0);
+        transform: rotate(-50deg) scale(0)
+    }
+}
+
+@keyframes sparkle-_KEHBh {
+    0% {
+        opacity: 0;
+        -webkit-transform: rotate(-50deg) scale(0);
+        transform: rotate(-50deg) scale(0)
+    }
+
+    20% {
+        opacity: 1;
+        -webkit-transform: rotate(0deg) scale(1);
+        transform: rotate(0deg) scale(1)
+    }
+
+    40% {
+        opacity: 0;
+        -webkit-transform: rotate(50deg) scale(0);
+        transform: rotate(50deg) scale(0)
+    }
+
+    to {
+        opacity: 0;
+        -webkit-transform: rotate(-50deg) scale(0);
+        transform: rotate(-50deg) scale(0)
+    }
+}
+
+.sparkleContainer-1hz_ry {
+    position: absolute
+}
+
+.sparkleStar-1FbVqs {
+    color: var(--gold);
+    top: -30px;
+    left: 14px
+}
+
+.sparklePlus-297hkf,
+.sparkleStar-1FbVqs {
+    position: relative;
+    -webkit-animation: sparkle-_KEHBh 2.5s ease-in-out infinite;
+    animation: sparkle-_KEHBh 2.5s ease-in-out infinite
+}
+
+.sparklePlus-297hkf {
+    opacity: 0;
+    color: var(--brand-experiment);
+    top: -8px;
+    left: -18px;
+    -webkit-animation-delay: .5s;
+    animation-delay: .5s
+}
+
 .featureBorder-2Jl8g4 {
     border-radius: 8px
 }
@@ -163159,4 +163237,4 @@ html .invoiceCancelRow-dVOR64 {
     flex-direction: column
 }
 
-/*# sourceMappingURL=40532.91b5023d8e3e7fe5ec84.css.map*/
+/*# sourceMappingURL=40532.42d6f6d5a589e8405307.css.map*/
