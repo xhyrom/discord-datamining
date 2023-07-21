@@ -56764,6 +56764,10 @@ h6.title-1p9WyQ {
     border-color: var(--status-positive-background)
 }
 
+.buttonDisabledSecondaryActionsEnabled-1uIZTB {
+    cursor: default
+}
+
 .buttonDisabled-2YTGC_ {
     pointer-events: none
 }
@@ -163147,4 +163151,4 @@ html .invoiceCancelRow-dVOR64 {
     flex-direction: column
 }
 
-/*# sourceMappingURL=40532.220bef650e301bfeb3dc.css.map*/
+/*# sourceMappingURL=40532.2549730d829c4963190e.css.map*/
