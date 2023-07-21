@@ -40940,38 +40940,38 @@ html .progress-2Otdc- {
     overflow: hidden
 }
 
-.postPreviewContainer-hhbOmo {
+.postPreviewContainer-1loFYP {
     width: 512px;
     border-radius: 10px;
     overflow: hidden
 }
 
-.thumbnailContainer-3JdYTm {
+.thumbnailContainer-1VpPBr {
     background-color: var(--background-floating);
     position: relative
 }
 
-.thumbnail-jSM4Zo,
-.thumbnailContainer-3JdYTm {
+.thumbnail-1PiUsb,
+.thumbnailContainer-1VpPBr {
     max-height: 288px;
     overflow: hidden
 }
 
-.thumbnail-jSM4Zo {
+.thumbnail-1PiUsb {
     max-width: 512px;
     width: 100%;
     display: block;
     aspect-ratio: 16/9
 }
 
-.portraitThumbnail-22MzEw {
+.portraitThumbnail-2XwPdd {
     -o-object-fit: contain;
     object-fit: contain;
     -o-object-position: center;
     object-position: center
 }
 
-.thumbnailOverlay-2A614n {
+.thumbnailOverlay-3phuvY {
     position: absolute;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -40990,11 +40990,11 @@ html .progress-2Otdc- {
     transition-duration: .17s
 }
 
-.thumbnailOverlay-2A614n:hover {
+.thumbnailOverlay-3phuvY:hover {
     background-color: var(--background-modifier-hover)
 }
 
-.thumbnailOverlayCta-1_TZ8w {
+.thumbnailOverlayCta-dBmc6l {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -41007,17 +41007,17 @@ html .progress-2Otdc- {
     padding: 16px
 }
 
-.descriptionContainer-2ZAH52 {
+.descriptionContainer-BtNwH4 {
     background-color: var(--background-secondary);
     position: relative
 }
 
-.descriptionHeader-o2mruz {
+.descriptionHeader-2OWn73 {
     padding: 16px;
     border-bottom: 1px solid var(--background-modifier-hover)
 }
 
-.descriptionHeaderText-W4sKzZ {
+.descriptionHeaderText-19zcWy {
     width: 100%;
     white-space: nowrap;
     line-height: 22px;
@@ -41025,11 +41025,11 @@ html .progress-2Otdc- {
     overflow: hidden
 }
 
-.descriptionSubtitle-pd8WgP {
+.descriptionSubtitle-3dLVf1 {
     width: 360px
 }
 
-.descriptionFooter--Afp1i {
+.descriptionFooter-1EjPcA {
     padding: 16px;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -41040,19 +41040,19 @@ html .progress-2Otdc- {
     gap: 16px
 }
 
-.authorAvatar-3KqIOY {
+.authorAvatar-ZJsFdS {
     border-radius: 50%;
     height: 40px;
     width: 40px
 }
 
-.descriptionFooterContainer-3R9OO3 {
+.descriptionFooterContainer-1dtUvB {
     -webkit-box-flex: 1;
     -ms-flex-positive: 1;
     flex-grow: 1
 }
 
-.descriptionFooterChannelName-2FX4HP {
+.descriptionFooterChannelName-31ebE4 {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -41062,38 +41062,38 @@ html .progress-2Otdc- {
     gap: 5px
 }
 
-.descriptionFooterAuthorContainer-3EjGqE {
+.descriptionFooterAuthorContainer-23yMG- {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     cursor: default
 }
 
-.authorName-2zj-6v {
+.authorName-2lGFn3 {
     margin-left: 2px
 }
 
-.mediaChannelIcon-2xptEZ {
+.mediaChannelIcon-1Abiyl {
     color: var(--text-muted);
     margin-right: 2px;
     height: 20px;
     width: 20px
 }
 
-.channelName-3G7eVX {
+.channelName-2AxDAT {
     cursor: pointer
 }
 
-.channelName-3G7eVX:hover {
+.channelName-2AxDAT:hover {
     color: var(--header-primary);
     text-decoration: underline
 }
 
-.subscribeButton-24ESef {
+.subscribeButton-W-PXqr {
     background-color: #207b8d
 }
 
-.spoiler-1ZTq3- {
+.spoiler-lTyK3X {
     -webkit-filter: blur(20px);
     filter: blur(20px);
     pointer-events: none
@@ -163151,4 +163151,4 @@ html .invoiceCancelRow-dVOR64 {
     flex-direction: column
 }
 
-/*# sourceMappingURL=40532.6daabd5ee0a8b962b39d.css.map*/
+/*# sourceMappingURL=40532.6e5096dfddefd96bf530.css.map*/
