@@ -23897,6 +23897,7 @@ html.disable-forced-colors * {
     --redesign-activity-card-background-pressed: var(--primary-630);
     --redesign-activity-card-badge-icon: var(--primary-400);
     --redesign-activity-card-border: hsl(var(--white-500-hsl)/0.02);
+    --redesign-activity-card-overflow-background: var(--primary-630);
     --redesign-button-danger-background: var(--red-430);
     --redesign-button-danger-pressed-background: var(--red-460);
     --redesign-button-danger-text: var(--white-500);
@@ -24122,6 +24123,7 @@ html.disable-forced-colors * {
     --redesign-activity-card-background-pressed: var(--primary-160);
     --redesign-activity-card-badge-icon: var(--primary-400);
     --redesign-activity-card-border: hsl(var(--primary-400-hsl)/0.24);
+    --redesign-activity-card-overflow-background: var(--primary-230);
     --redesign-button-danger-background: var(--red-430);
     --redesign-button-danger-pressed-background: var(--red-460);
     --redesign-button-danger-text: var(--white-500);
@@ -24293,6 +24295,7 @@ html.disable-forced-colors * {
     --redesign-activity-card-background-pressed: var(--primary-630);
     --redesign-activity-card-badge-icon: var(--primary-400);
     --redesign-activity-card-border: hsl(var(--white-500-hsl)/0.02);
+    --redesign-activity-card-overflow-background: var(--primary-630);
     --redesign-button-danger-background: var(--red-430);
     --redesign-button-danger-pressed-background: var(--red-460);
     --redesign-button-danger-text: var(--white-500);
@@ -24524,6 +24527,7 @@ html.disable-forced-colors * {
     --redesign-activity-card-background-pressed: var(--primary-630);
     --redesign-activity-card-badge-icon: var(--primary-400);
     --redesign-activity-card-border: hsl(var(--white-500-hsl)/0.02);
+    --redesign-activity-card-overflow-background: var(--dontuse-17);
     --redesign-button-danger-background: var(--red-430);
     --redesign-button-danger-pressed-background: var(--red-460);
     --redesign-button-danger-text: var(--white-500);
@@ -25101,6 +25105,14 @@ code {
 
 :root {
     --decoration-to-avatar-ratio: 1.2
+}
+
+:root {
+    --font-weight-normal: 400;
+    --font-weight-medium: 500;
+    --font-weight-semibold: 600;
+    --font-weight-bold: 700;
+    --font-weight-extrabold: 800
 }
 
 .theme-dark.custom-theme-background {
@@ -40940,38 +40952,38 @@ html .progress-2Otdc- {
     overflow: hidden
 }
 
-.postPreviewContainer-hhbOmo {
+.postPreviewContainer-1loFYP {
     width: 512px;
     border-radius: 10px;
     overflow: hidden
 }
 
-.thumbnailContainer-3JdYTm {
+.thumbnailContainer-1VpPBr {
     background-color: var(--background-floating);
     position: relative
 }
 
-.thumbnail-jSM4Zo,
-.thumbnailContainer-3JdYTm {
+.thumbnail-1PiUsb,
+.thumbnailContainer-1VpPBr {
     max-height: 288px;
     overflow: hidden
 }
 
-.thumbnail-jSM4Zo {
+.thumbnail-1PiUsb {
     max-width: 512px;
     width: 100%;
     display: block;
     aspect-ratio: 16/9
 }
 
-.portraitThumbnail-22MzEw {
+.portraitThumbnail-2XwPdd {
     -o-object-fit: contain;
     object-fit: contain;
     -o-object-position: center;
     object-position: center
 }
 
-.thumbnailOverlay-2A614n {
+.thumbnailOverlay-3phuvY {
     position: absolute;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -40990,11 +41002,11 @@ html .progress-2Otdc- {
     transition-duration: .17s
 }
 
-.thumbnailOverlay-2A614n:hover {
+.thumbnailOverlay-3phuvY:hover {
     background-color: var(--background-modifier-hover)
 }
 
-.thumbnailOverlayCta-1_TZ8w {
+.thumbnailOverlayCta-dBmc6l {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -41007,17 +41019,17 @@ html .progress-2Otdc- {
     padding: 16px
 }
 
-.descriptionContainer-2ZAH52 {
+.descriptionContainer-BtNwH4 {
     background-color: var(--background-secondary);
     position: relative
 }
 
-.descriptionHeader-o2mruz {
+.descriptionHeader-2OWn73 {
     padding: 16px;
     border-bottom: 1px solid var(--background-modifier-hover)
 }
 
-.descriptionHeaderText-W4sKzZ {
+.descriptionHeaderText-19zcWy {
     width: 100%;
     white-space: nowrap;
     line-height: 22px;
@@ -41025,11 +41037,11 @@ html .progress-2Otdc- {
     overflow: hidden
 }
 
-.descriptionSubtitle-pd8WgP {
+.descriptionSubtitle-3dLVf1 {
     width: 360px
 }
 
-.descriptionFooter--Afp1i {
+.descriptionFooter-1EjPcA {
     padding: 16px;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -41040,19 +41052,19 @@ html .progress-2Otdc- {
     gap: 16px
 }
 
-.authorAvatar-3KqIOY {
+.authorAvatar-ZJsFdS {
     border-radius: 50%;
     height: 40px;
     width: 40px
 }
 
-.descriptionFooterContainer-3R9OO3 {
+.descriptionFooterContainer-1dtUvB {
     -webkit-box-flex: 1;
     -ms-flex-positive: 1;
     flex-grow: 1
 }
 
-.descriptionFooterChannelName-2FX4HP {
+.descriptionFooterChannelName-31ebE4 {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -41062,38 +41074,38 @@ html .progress-2Otdc- {
     gap: 5px
 }
 
-.descriptionFooterAuthorContainer-3EjGqE {
+.descriptionFooterAuthorContainer-23yMG- {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     cursor: default
 }
 
-.authorName-2zj-6v {
+.authorName-2lGFn3 {
     margin-left: 2px
 }
 
-.mediaChannelIcon-2xptEZ {
+.mediaChannelIcon-1Abiyl {
     color: var(--text-muted);
     margin-right: 2px;
     height: 20px;
     width: 20px
 }
 
-.channelName-3G7eVX {
+.channelName-2AxDAT {
     cursor: pointer
 }
 
-.channelName-3G7eVX:hover {
+.channelName-2AxDAT:hover {
     color: var(--header-primary);
     text-decoration: underline
 }
 
-.subscribeButton-24ESef {
+.subscribeButton-W-PXqr {
     background-color: #207b8d
 }
 
-.spoiler-1ZTq3- {
+.spoiler-lTyK3X {
     -webkit-filter: blur(20px);
     filter: blur(20px);
     pointer-events: none
@@ -68793,7 +68805,7 @@ strong {
 }
 
 .image-2Ce57M {
-    max-width: 200px;
+    max-width: 400px;
     margin-bottom: 16px;
     -o-object-fit: contain;
     object-fit: contain
@@ -106516,6 +106528,84 @@ html .tabBadge-h4HGed {
     height: 16px;
     margin-right: 8px;
     color: var(--interactive-active)
+}
+
+@-webkit-keyframes sparkle-_KEHBh {
+    0% {
+        opacity: 0;
+        -webkit-transform: rotate(-50deg) scale(0);
+        transform: rotate(-50deg) scale(0)
+    }
+
+    20% {
+        opacity: 1;
+        -webkit-transform: rotate(0deg) scale(1);
+        transform: rotate(0deg) scale(1)
+    }
+
+    40% {
+        opacity: 0;
+        -webkit-transform: rotate(50deg) scale(0);
+        transform: rotate(50deg) scale(0)
+    }
+
+    to {
+        opacity: 0;
+        -webkit-transform: rotate(-50deg) scale(0);
+        transform: rotate(-50deg) scale(0)
+    }
+}
+
+@keyframes sparkle-_KEHBh {
+    0% {
+        opacity: 0;
+        -webkit-transform: rotate(-50deg) scale(0);
+        transform: rotate(-50deg) scale(0)
+    }
+
+    20% {
+        opacity: 1;
+        -webkit-transform: rotate(0deg) scale(1);
+        transform: rotate(0deg) scale(1)
+    }
+
+    40% {
+        opacity: 0;
+        -webkit-transform: rotate(50deg) scale(0);
+        transform: rotate(50deg) scale(0)
+    }
+
+    to {
+        opacity: 0;
+        -webkit-transform: rotate(-50deg) scale(0);
+        transform: rotate(-50deg) scale(0)
+    }
+}
+
+.sparkleContainer-1hz_ry {
+    position: absolute
+}
+
+.sparkleStar-1FbVqs {
+    color: var(--gold);
+    top: -30px;
+    left: 14px
+}
+
+.sparklePlus-297hkf,
+.sparkleStar-1FbVqs {
+    position: relative;
+    -webkit-animation: sparkle-_KEHBh 2.5s ease-in-out infinite;
+    animation: sparkle-_KEHBh 2.5s ease-in-out infinite
+}
+
+.sparklePlus-297hkf {
+    opacity: 0;
+    color: var(--brand-experiment);
+    top: -8px;
+    left: -18px;
+    -webkit-animation-delay: .5s;
+    animation-delay: .5s
 }
 
 .featureBorder-2Jl8g4 {
@@ -157866,6 +157956,21 @@ html .invoiceCancelRow-3s2UuC {
     color: var(--interactive-normal)
 }
 
+.warningSectionHeader-25eDUE {
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    margin-top: 16px;
+    margin-bottom: 4px
+}
+
 .header-1XFMZK {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -163151,4 +163256,4 @@ html .invoiceCancelRow-dVOR64 {
     flex-direction: column
 }
 
-/*# sourceMappingURL=40532.2549730d829c4963190e.css.map*/
+/*# sourceMappingURL=40532.5e6c5fa36de96f9a157a.css.map*/
