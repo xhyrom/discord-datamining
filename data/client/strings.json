@@ -12815,6 +12815,7 @@
   "GUILD_SETTINGS_SAFETY_MFA_BODY": "\"Moderators must have two-factor authentication enabled to ban, kick, or timeout members and delete messages.\"",
   "GUILD_SETTINGS_SAFETY_MFA_NON_OWNER_DETAIL": "\"Only the server owner can change this setting if they have 2FA enabled.\"",
   "GUILD_SETTINGS_SAFETY_MFA_OWNER_DETAIL": "\"To change this setting, first enable 2FA on your account [here](settingsHook).\"",
+  "GUILD_SETTINGS_SAFETY_MFA_DISCOVERABLE_DISABLED_TOOLTIP": "\"2FA is required while this server is in Server Discovery\"",
   "GUILD_SETTINGS_SAFETY_PERMISSIONS_TITLE": "\"Permissions\"",
   "GUILD_SETTINGS_ACTION_FILTER_AUTOMOD_RULE_CREATE": "\"Create AutoMod Rule\"",
   "GUILD_SETTINGS_ACTION_FILTER_AUTOMOD_RULE_UPDATE": "\"Update AutoMod Rule\"",
