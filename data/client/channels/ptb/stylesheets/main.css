@@ -23897,6 +23897,7 @@ html.disable-forced-colors * {
     --redesign-activity-card-background-pressed: var(--primary-630);
     --redesign-activity-card-badge-icon: var(--primary-400);
     --redesign-activity-card-border: hsl(var(--white-500-hsl)/0.02);
+    --redesign-activity-card-overflow-background: var(--primary-630);
     --redesign-button-danger-background: var(--red-430);
     --redesign-button-danger-pressed-background: var(--red-460);
     --redesign-button-danger-text: var(--white-500);
@@ -24122,6 +24123,7 @@ html.disable-forced-colors * {
     --redesign-activity-card-background-pressed: var(--primary-160);
     --redesign-activity-card-badge-icon: var(--primary-400);
     --redesign-activity-card-border: hsl(var(--primary-400-hsl)/0.24);
+    --redesign-activity-card-overflow-background: var(--primary-230);
     --redesign-button-danger-background: var(--red-430);
     --redesign-button-danger-pressed-background: var(--red-460);
     --redesign-button-danger-text: var(--white-500);
@@ -24293,6 +24295,7 @@ html.disable-forced-colors * {
     --redesign-activity-card-background-pressed: var(--primary-630);
     --redesign-activity-card-badge-icon: var(--primary-400);
     --redesign-activity-card-border: hsl(var(--white-500-hsl)/0.02);
+    --redesign-activity-card-overflow-background: var(--primary-630);
     --redesign-button-danger-background: var(--red-430);
     --redesign-button-danger-pressed-background: var(--red-460);
     --redesign-button-danger-text: var(--white-500);
@@ -24524,6 +24527,7 @@ html.disable-forced-colors * {
     --redesign-activity-card-background-pressed: var(--primary-630);
     --redesign-activity-card-badge-icon: var(--primary-400);
     --redesign-activity-card-border: hsl(var(--white-500-hsl)/0.02);
+    --redesign-activity-card-overflow-background: var(--dontuse-17);
     --redesign-button-danger-background: var(--red-430);
     --redesign-button-danger-pressed-background: var(--red-460);
     --redesign-button-danger-text: var(--white-500);
@@ -163237,4 +163241,4 @@ html .invoiceCancelRow-dVOR64 {
     flex-direction: column
 }
 
-/*# sourceMappingURL=40532.42d6f6d5a589e8405307.css.map*/
+/*# sourceMappingURL=40532.28e025a6ce59d745af8c.css.map*/
