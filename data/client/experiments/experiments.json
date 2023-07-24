@@ -1230,6 +1230,169 @@
   },
   {
     "data": {
+      "kind": "user",
+      "id": "2023-06_mobile_redesign_curry_existing_users",
+      "label": "Tabs V2 - Curry Existing Users",
+      "description": [
+        "Not Eligible",
+        "Control Bucket",
+        "Treatment 2: App Navbar Always Visible",
+        "Treatment 3: App Navbar Always Visible + Keep Channel",
+        "Treatment 4: Recent channels",
+        "Treatment 5: Launch into last channel",
+        "Treatment 6: Plain Redesign"
+      ],
+      "hash": 4015496517,
+      "buckets": [
+        -1,
+        0,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "config_keys": [
+        "enabled"
+      ]
+    }
+  },
+  {
+    "data": {
+      "kind": "user",
+      "id": "2023-06_mobile_redesign_curry_new_users",
+      "label": "Tabs V2 - Curry New Users",
+      "description": [
+        "Not Eligible",
+        "Control Bucket",
+        "Treatment 2: App Navbar Always Visible",
+        "Treatment 3: App Navbar Always Visible + Keep Channel",
+        "Treatment 4: Recent channels",
+        "Treatment 5: Launch into last channel",
+        "Treatment 6: Plain Redesign"
+      ],
+      "hash": 2373630185,
+      "buckets": [
+        -1,
+        0,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "config_keys": [
+        "enabled"
+      ]
+    }
+  },
+  {
+    "data": {
+      "kind": "user",
+      "id": "2023-02_tabs_v2",
+      "label": "Tabs V2 - GDM Bucketing",
+      "description": [
+        "Not Eligible",
+        "Control Bucket",
+        "Treatment 1: Enable Tabs V2"
+      ],
+      "hash": 1499660140,
+      "buckets": [
+        -1,
+        0,
+        1
+      ],
+      "config_keys": [
+        "enabled"
+      ]
+    }
+  },
+  {
+    "data": {
+      "kind": "user",
+      "id": "2023-03_mobile_re_design_existing_users",
+      "label": "Tabs V2 - Existing Users",
+      "description": [
+        "Not Eligible",
+        "Control Bucket",
+        "Treatment 1: Enable Tabs V2"
+      ],
+      "hash": 1929843098,
+      "buckets": [
+        -1,
+        0,
+        1
+      ],
+      "config_keys": [
+        "enabled"
+      ]
+    }
+  },
+  {
+    "data": {
+      "kind": "user",
+      "id": "2023-02_mobile_redesign_new_users",
+      "label": "Tabs V2 - New Users",
+      "description": [
+        "Not Eligible",
+        "Control Bucket",
+        "Treatment 1: Enable Tabs V2"
+      ],
+      "hash": 1084726125,
+      "buckets": [
+        -1,
+        0,
+        1
+      ],
+      "config_keys": [
+        "enabled"
+      ]
+    }
+  },
+  {
+    "data": {
+      "kind": "user",
+      "id": "2023-04_mobile_redesign_0c_new_users",
+      "label": "Tabs V2 - New Users Phase 0c",
+      "description": [
+        "Not Eligible",
+        "Control Bucket",
+        "Treatment 1: Enable Tabs V2"
+      ],
+      "hash": 1767248084,
+      "buckets": [
+        -1,
+        0,
+        1
+      ],
+      "config_keys": [
+        "enabled"
+      ]
+    }
+  },
+  {
+    "data": {
+      "kind": "user",
+      "id": "2023-04_mobile_redesign_0d_new_users",
+      "label": "Tabs V2 - New Users Phase 0d",
+      "description": [
+        "Not Eligible",
+        "Control Bucket",
+        "Treatment 1: Enable Tabs V2"
+      ],
+      "hash": 4264103376,
+      "buckets": [
+        -1,
+        0,
+        1
+      ],
+      "config_keys": [
+        "enabled"
+      ]
+    }
+  },
+  {
+    "data": {
       "kind": "guild",
       "id": "2023-02_onboarding_home_admin",
       "label": "[ADMIN] Home as a community onboarding surface",
@@ -1396,169 +1559,6 @@
       "config_keys": [
         "showOnboardingHome",
         "enableDevItems"
-      ]
-    }
-  },
-  {
-    "data": {
-      "kind": "user",
-      "id": "2023-06_mobile_redesign_curry_existing_users",
-      "label": "Tabs V2 - Curry Existing Users",
-      "description": [
-        "Not Eligible",
-        "Control Bucket",
-        "Treatment 2: App Navbar Always Visible",
-        "Treatment 3: App Navbar Always Visible + Keep Channel",
-        "Treatment 4: Recent channels",
-        "Treatment 5: Launch into last channel",
-        "Treatment 6: Plain Redesign"
-      ],
-      "hash": 4015496517,
-      "buckets": [
-        -1,
-        0,
-        2,
-        3,
-        4,
-        5,
-        6
-      ],
-      "config_keys": [
-        "enabled"
-      ]
-    }
-  },
-  {
-    "data": {
-      "kind": "user",
-      "id": "2023-06_mobile_redesign_curry_new_users",
-      "label": "Tabs V2 - Curry New Users",
-      "description": [
-        "Not Eligible",
-        "Control Bucket",
-        "Treatment 2: App Navbar Always Visible",
-        "Treatment 3: App Navbar Always Visible + Keep Channel",
-        "Treatment 4: Recent channels",
-        "Treatment 5: Launch into last channel",
-        "Treatment 6: Plain Redesign"
-      ],
-      "hash": 2373630185,
-      "buckets": [
-        -1,
-        0,
-        2,
-        3,
-        4,
-        5,
-        6
-      ],
-      "config_keys": [
-        "enabled"
-      ]
-    }
-  },
-  {
-    "data": {
-      "kind": "user",
-      "id": "2023-02_tabs_v2",
-      "label": "Tabs V2 - GDM Bucketing",
-      "description": [
-        "Not Eligible",
-        "Control Bucket",
-        "Treatment 1: Enable Tabs V2"
-      ],
-      "hash": 1499660140,
-      "buckets": [
-        -1,
-        0,
-        1
-      ],
-      "config_keys": [
-        "enabled"
-      ]
-    }
-  },
-  {
-    "data": {
-      "kind": "user",
-      "id": "2023-03_mobile_re_design_existing_users",
-      "label": "Tabs V2 - Existing Users",
-      "description": [
-        "Not Eligible",
-        "Control Bucket",
-        "Treatment 1: Enable Tabs V2"
-      ],
-      "hash": 1929843098,
-      "buckets": [
-        -1,
-        0,
-        1
-      ],
-      "config_keys": [
-        "enabled"
-      ]
-    }
-  },
-  {
-    "data": {
-      "kind": "user",
-      "id": "2023-02_mobile_redesign_new_users",
-      "label": "Tabs V2 - New Users",
-      "description": [
-        "Not Eligible",
-        "Control Bucket",
-        "Treatment 1: Enable Tabs V2"
-      ],
-      "hash": 1084726125,
-      "buckets": [
-        -1,
-        0,
-        1
-      ],
-      "config_keys": [
-        "enabled"
-      ]
-    }
-  },
-  {
-    "data": {
-      "kind": "user",
-      "id": "2023-04_mobile_redesign_0c_new_users",
-      "label": "Tabs V2 - New Users Phase 0c",
-      "description": [
-        "Not Eligible",
-        "Control Bucket",
-        "Treatment 1: Enable Tabs V2"
-      ],
-      "hash": 1767248084,
-      "buckets": [
-        -1,
-        0,
-        1
-      ],
-      "config_keys": [
-        "enabled"
-      ]
-    }
-  },
-  {
-    "data": {
-      "kind": "user",
-      "id": "2023-04_mobile_redesign_0d_new_users",
-      "label": "Tabs V2 - New Users Phase 0d",
-      "description": [
-        "Not Eligible",
-        "Control Bucket",
-        "Treatment 1: Enable Tabs V2"
-      ],
-      "hash": 4264103376,
-      "buckets": [
-        -1,
-        0,
-        1
-      ],
-      "config_keys": [
-        "enabled"
       ]
     }
   },
@@ -4984,18 +4984,10 @@
                 {
                   "start": 1150,
                   "end": 1550
-                }
-              ]
-            },
-            "2": {
-              "rollout": [
-                {
-                  "start": 650,
-                  "end": 750
                 },
                 {
-                  "start": 1550,
-                  "end": 1950
+                  "start": 3450,
+                  "end": 4950
                 }
               ]
             },
@@ -5006,7 +4998,15 @@
                   "end": 450
                 },
                 {
-                  "start": 1950,
+                  "start": 650,
+                  "end": 750
+                },
+                {
+                  "start": 1550,
+                  "end": 1950
+                },
+                {
+                  "start": 4950,
                   "end": 10000
                 }
               ]
