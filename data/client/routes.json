@@ -2131,12 +2131,26 @@
       "OPTIONS"
     ]
   },
+  "SEARCH_TABS_GUILD": {
+    "url": "/guilds/:param/messages/search/tabs",
+    "allowed_methods": [
+      "OPTIONS",
+      "POST"
+    ]
+  },
   "SEARCH_DMS": {
     "url": "/users/@me/messages/search",
     "allowed_methods": [
       "GET",
       "HEAD",
       "OPTIONS"
+    ]
+  },
+  "SEARCH_TABS_DMS": {
+    "url": "/users/@me/messages/search/tabs",
+    "allowed_methods": [
+      "OPTIONS",
+      "POST"
     ]
   },
   "GUILD_APPLICATIONS": {
@@ -2209,6 +2223,13 @@
       "HEAD",
       "OPTIONS",
       "PATCH"
+    ]
+  },
+  "SEARCH_TABS_CHANNEL": {
+    "url": "/channels/:param/messages/search/tabs",
+    "allowed_methods": [
+      "OPTIONS",
+      "POST"
     ]
   },
   "BILLING_STRIPE_SETUP_INTENT_SECRET": {
