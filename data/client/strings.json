@@ -13924,6 +13924,8 @@
   "CALL_SOUNDS_UPSELL_DESCRIPTION_NON_SUB": "\"Choose a Soundboard sound to automatically play whenever you join a voice channel. Only with Nitro.\"",
   "CALL_SOUNDS_UPSELL_DESCRIPTION_NON_TIER_2": "\"Upgrade your Nitro to automatically play a Soundboard sound whenever you join a voice channel.\"",
   "CALL_SOUNDS_UPSELL_DESCRIPTION_TIER_2": "\"Choose a Soundboard sound to automatically play whenever you join a voice channel. Now available with Nitro.\"",
+  "CALL_SOUNDS_CONTEXT_MENU_GUILD": "\"Set as server entrance sound\"",
+  "CALL_SOUNDS_CONTEXT_MENU_GLOBAL": "\"Set as global entrance sound\"",
   "SOUNDBOARD": "\"Soundboard\"",
   "USE_EXTERNAL_SOUNDS": "\"Use External Sounds\"",
   "ROLE_PERMISSIONS_USE_EXTERNAL_SOUNDS_DESCRIPTION": "\"Allows members to use sounds from other servers, if they're a Discord Nitro member.\"",
