@@ -4108,6 +4108,7 @@
   "TAB_A11Y_ROLE_DESCRIPTION": "\"Tab, {position} of {tabCount}\"",
   "TOGGLE_MEDIA_KEYBOARD": "\"Toggle media keyboard\"",
   "TOGGLE_MEDIA_KEYBOARD_HINT": "\"Open to add an image to your message, use a command, or start a thread\"",
+  "A11Y_MOBILE_HEADER_BUTTON_HINT": "\"double-tap for more options\"",
   "A11Y_ROLE_CHECKBOX": "\"checkbox\"",
   "A11Y_ROLE_SWITCH": "\"switch\"",
   "A11Y_ROLE_RADIO_BUTTON": "\"radio button\"",
