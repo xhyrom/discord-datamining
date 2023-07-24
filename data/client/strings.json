@@ -10499,6 +10499,7 @@
   "CONTACT_SYNC_INFO_EMAIL": "\"People can add you by your email\"",
   "SUGGESTED_FRIENDS_LIST_HEADER": "\"Suggested Friends\"",
   "PENDING_FRIENDS_LIST_HEADER": "\"Pending Friends\"",
+  "MUTUAL_FRIENDS_IN_COMMON": "\"{count, plural, =1 {1 friend in common} =0 {0 friends in common} other {{count} friends in common}}\"",
   "FORM_LABEL_REGION_OVERRIDE": "\"Region Override\"",
   "FORM_HELP_REGION_OVERRIDE": "\"Anyone in this channel will connect to the region you set, regardless of where they live. Regions affect voice and video quality. Leave it on Automatic and Discord will figure out what works best.\"",
   "AUTOMATIC_REGION": "\"Automatic\"",
