@@ -15106,6 +15106,7 @@
   "DEV_NOTICE_STAGING": "\"Staging {buildNumber}\"",
   "GUILD_SETTINGS_PARTNER_CHECKLIST_LOADING_FAILED": "\"We are having trouble loading the requirements. Please check back later.\"",
   "GUILD_SETTINGS_PARTNER_CHECKLIST_LOADING_FAILED_TOOLTIP": "\"Something went wrong. Please check back later\"",
+  "PURCHASE_REVIEW_TAX_LABEL": "\"Tax\"",
   "GUILD_ROLE_SUBSCRIPTION_SETUP_ENABLE_GROUP_VIEW_LABEL": "\"Enable Tier Groups\"",
   "GUILD_ROLE_SUBSCRIPTION_SETUP_DISABLE_GROUP_VIEW_LABEL": "\"Disable Tier Groups\"",
   "GUILD_ROLE_SUBSCRIPTION_SETUP_GROUP_VIEW_TOOLTIP": "\"Offer different groups of tiers that users can subscribe to separately.\"",
