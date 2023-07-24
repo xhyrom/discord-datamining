@@ -81,8 +81,8 @@
 <p><strong>Q: I see a notification saying "You're ineligible for this offer". Why?</strong></p>
 <p>A: If you encounter this notification, it is because you do not meet the eligibility criteria outlined above.</p>
 <p><strong>Q: I purchased a Nitro subscription during the promotion period, but I’d like to request a refund. What are the steps?</strong></p>
-<p>A: Before requesting a refund, please review our <a href="https://support.discord.com/hc/en-us/articles/360012668071" target="_blank" rel="noopener">Refund Policy</a> to ensure that your purchase is eligible for a refund.</p>
-<p>If you’d like to proceed, please send in a ticket specifying that you’d like a refund for your Nitro purchase to our support team here:<a href="http://dis.gd/billing" target="_blank" rel="noopener"> dis.gd/billing</a> and our agents will be happy to assist you.</p>
+<p>A: Before requesting a refund, please review our <a href="https://support.discord.com/hc/en-us/articles/360012668071" target="_blank" rel="noopener noreferrer">Refund Policy</a> to ensure that your purchase is eligible for a refund.</p>
+<p>If you’d like to proceed, please send in a ticket specifying that you’d like a refund for your Nitro purchase to our support team here:<a href="http://dis.gd/billing" target="_blank" rel="noopener noreferrer"> dis.gd/billing</a> and our agents will be happy to assist you.</p>
 <p>Please note that if your refund is issued, you will lose any promotional value or discounts associated with the purchase.</p>
 <p><strong>Q: Can I gift my free month to someone else?</strong></p>
 <p>A: No, this free month is yours to keep and will be automatically applied to your account. It can’t be gifted or transferred to another user.</p>
