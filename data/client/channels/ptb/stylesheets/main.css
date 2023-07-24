@@ -17645,8 +17645,52 @@ html.disable-forced-colors * {
     max-width: 290px
 }
 
-.reactionGuildDetails-eHg-Jo {
+.reactionEmojiDetailsUnfurlGuildDetails-1ZuobB {
     margin: 8px 0
+}
+
+.reactionEmojiDetailsClickable-2w5rsT {
+    border-radius: 4px;
+    color: var(--interactive-hover);
+    cursor: pointer;
+    -webkit-transition: color .125s;
+    transition: color .125s;
+    font-weight: 600;
+    margin-top: 8px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    background-color: hsl(var(--white-500-hsl)/.04);
+    padding: 6px 0
+}
+
+.reactionEmojiDetailsClickable-2w5rsT:hover {
+    color: var(--interactive-active)
+}
+
+.reactionEmojiDetailsArrow-23kwYa {
+    margin-top: 2px;
+    -webkit-transition: -webkit-transform .1s;
+    transition: -webkit-transform .1s;
+    transition: transform .1s;
+    transition: transform .1s, -webkit-transform .1s
+}
+
+.reactionEmojiDetailsArrow-23kwYa.reactionEmojiDetailsArrowCollapsed-44VNY1 {
+    -webkit-transform: rotate(-90deg);
+    transform: rotate(-90deg)
+}
+
+.reactionEmojiDetailsDivider-2Sz8O- {
+    border-bottom: 1px solid var(--background-modifier-accent);
+    margin: 16px 0
 }
 
 .emojiContainer-2XKwXX {
@@ -163292,4 +163336,4 @@ html .invoiceCancelRow-dVOR64 {
     flex-direction: column
 }
 
-/*# sourceMappingURL=40532.30f63666be4e0d53d629.css.map*/
+/*# sourceMappingURL=40532.b05007aff9c9ac2c85fb.css.map*/
