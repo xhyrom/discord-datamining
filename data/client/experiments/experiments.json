@@ -4136,7 +4136,7 @@
       "populations": [
         {
           "buckets": {
-            "none": {
+            "2": {
               "rollout": [
                 {
                   "start": 0,
@@ -4156,12 +4156,16 @@
         },
         {
           "buckets": {
-            "none": {
+            "1": {
               "rollout": [
                 {
                   "start": 0,
                   "end": 1500
-                },
+                }
+              ]
+            },
+            "none": {
+              "rollout": [
                 {
                   "start": 1500,
                   "end": 10000
@@ -4178,7 +4182,7 @@
           ]
         }
       ],
-      "revision": 2,
+      "revision": 3,
       "overrides": {
         "1": [
           "937605284065607711",
