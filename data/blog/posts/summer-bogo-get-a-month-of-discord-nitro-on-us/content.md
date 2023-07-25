@@ -58,7 +58,11 @@
         </div>
     </div>
     <div id="heading-5" class="rich-wrapper">
-        <div class="blog-post-content w-dyn-bind-empty w-richtext"></div>
+        <div class="blog-post-content w-richtext">
+            <figure style="padding-bottom:33.723653395784545%" class="w-richtext-align-center w-richtext-figure-type-video">
+                <div><iframe allowfullscreen="true" frameborder="0" scrolling="no" src="https://www.youtube.com/embed/DnkvLW5052Y" title="Twice the Nitro for the Price of One"></iframe></div>
+            </figure>
+        </div>
     </div>
     <div id="heading-6" class="rich-wrapper">
         <div class="blog-post-content w-dyn-bind-empty w-richtext"></div>
