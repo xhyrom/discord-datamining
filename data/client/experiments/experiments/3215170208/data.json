@@ -1,0 +1,24 @@
+{
+  "data": {
+    "kind": "user",
+    "id": "2023-07_checkout_prevent_accidental_modal_dismissal",
+    "label": "Checkout Prevent Accidental Modal Dismissal",
+    "description": [
+      "Not Eligible",
+      "Control Bucket",
+      "Treatment 1: confirmation-backdrop-disabled",
+      "Treatment 2: no-confirmation-backdrop-disabled"
+    ],
+    "hash": 3215170208,
+    "buckets": [
+      -1,
+      0,
+      1,
+      2
+    ],
+    "config_keys": [
+      "bucket",
+      "enabled"
+    ]
+  }
+}
