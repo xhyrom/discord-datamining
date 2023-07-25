@@ -15508,7 +15508,7 @@
   "CLIPS_CALL_TOOLTIP_TITLE": "\"You recently captured a clip!\"",
   "CLIPS_CALL_TOOLTIP_LINK_CTA": "\"View Clip\"",
   "CLIPS_SESSION_ENDED_TOOLTIP_BODY": "\"You captured a bunch of clips during your recent !!{applicationName}!! session. Check them out in your library!\"",
-  "CLIPS_SESSION_ENDED_TOOLTIP_HEADER": "\"You captured {count, plural, =1 {# clip} other {# clips}}!\"",
+  "CLIPS_SESSION_ENDED_TOOLTIP_HEADER": "\"You have {count, plural, =1 {# new clip} other {# new clips}}!\"",
   "CLIPS_SESSION_ENDED_TOOLTIP_PRIMARY_CTA": "\"View Clips\"",
   "CLIPS_SESSION_ENDED_TOOLTIP_SECONDARY_CTA": "\"Stop Reminders\"",
   "CLIPS_CHANNEL_NOTICE_EDUCATION_BODY": "\"You can now capture moments in live streams with clipping! Use $[!!{keybind}!!](keybindHook) to capture clips in-game.\"",
