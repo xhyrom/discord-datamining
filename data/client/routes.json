@@ -3807,10 +3807,6 @@
       "POST"
     ]
   },
-  "VIDEO_FILTER_ASSET_STORAGE": {
-    "url": "/users/:param/video-filter-assets/:param/:param.:param",
-    "allowed_methods": null
-  },
   "GUILD_SOUNDBOARD_SOUNDS": {
     "url": "/guilds/:param/soundboard-sounds",
     "allowed_methods": [
