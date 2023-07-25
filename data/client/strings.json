@@ -13963,6 +13963,7 @@
   "SOUNDBOARD_CONTEXT_MENU_DOWNLOAD_SOUND": "\"Download Sound\"",
   "SOUNDBOARD_CONTEXT_MENU_EDIT_SOUND": "\"Edit Sound\"",
   "SOUNDBOARD_SOUND_PREVIEW_SOUND": "\"Preview !!{emojiName}!! !!{soundName}!!\"",
+  "SOUNDBOARD_SOUND_PREVIEW_SOUND_LOW_VOLUME": "\"Increase your Soundboard volume setting to preview\"",
   "SOUNDBOARD_SOUND_FAVORITE_SOUND": "\"Favorite !!{emojiName}!! !!{soundName}!!\"",
   "SOUNDBOARD_ERROR_INVALID_FILE_TYPE": "\"Invalid audio file type. {fileType} is not supported.\"",
   "SOUNDBOARD_ERROR_FAILED_TO_ENCODE_FILE": "\"Failed to encode file.\"",
