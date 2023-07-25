@@ -17849,13 +17849,12 @@ html.disable-forced-colors * {
     height: 100%
 }
 
-.spoilerWarning-1JN1Ot {
+.obscureWarning-2jkWgh {
     position: absolute;
     left: 50%;
     top: 50%;
     -webkit-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
-    text-transform: uppercase;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -17871,22 +17870,22 @@ html.disable-forced-colors * {
     z-index: 1;
     padding: 8px 12px;
     border-radius: 20px;
-    letter-spacing: .5px;
-    font-size: 15px;
     -webkit-user-select: none;
     -moz-user-select: none;
     -ms-user-select: none;
     user-select: none;
-    color: var(--__current--spoiler-warning-text-color);
     background-color: var(--__current--spoiler-warning-background-color)
+}
+
+.spoilerWarning-1JN1Ot {
+    text-transform: uppercase;
+    letter-spacing: .5px;
+    font-size: 15px;
+    color: var(--__current--spoiler-warning-text-color)
 }
 
 .spoilerWarning-1JN1Ot.embed-hgK7Sp {
     margin-left: 4px
-}
-
-.sensitiveContentWarning-35EVcg {
-    font-size: 12px
 }
 
 .spoilerMarkdownContent-2R1Vwe {
@@ -131162,6 +131161,8 @@ input::-webkit-outer-spin-button {
     padding-bottom: 30px
 }
 
+.spacing-3gLx1N {}
+
 .body-3lgQR9 {
     color: var(--text-normal);
     font-size: 16px;
@@ -156094,7 +156095,7 @@ html .invoiceCancelRow-3s2UuC {
     margin-top: 20px
 }
 
-.soundButtonSettingContainer-2DXy1x {
+.soundButtonSettingContainer-3G4JEB {
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
     position: relative;
@@ -156122,31 +156123,31 @@ html .invoiceCancelRow-3s2UuC {
     padding: 0 12px
 }
 
-.emoji-1yOJba {
+.emoji-3ZzWuj {
     -ms-flex-negative: 0;
     flex-shrink: 0;
     margin-right: 8px
 }
 
-.emoji-1yOJba,
-.secondaryIcon-2Imsnh {
+.emoji-3ZzWuj,
+.secondaryIcon-Ij9HWB {
     width: 20px;
     height: 20px
 }
 
-.secondaryIcon-2Imsnh {
+.secondaryIcon-Ij9HWB {
     margin: 0 4px
 }
 
-.secondaryIconActive-265vbv {
+.secondaryIconActive-2a5spH {
     cursor: pointer
 }
 
-.secondaryIconDisabled-21RVnY {
+.secondaryIconDisabled-1TE_LX {
     color: var(--interactive-muted)
 }
 
-.container-DTKVqV {
+.container--kT5kX {
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
@@ -163358,4 +163359,4 @@ html .invoiceCancelRow-dVOR64 {
     flex-direction: column
 }
 
-/*# sourceMappingURL=40532.8c8b255cf3388016d1a6.css.map*/
+/*# sourceMappingURL=40532.54690a6dc346925fb248.css.map*/
