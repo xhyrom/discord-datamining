@@ -3252,8 +3252,8 @@ html.decorate-links .lowSaturationUnderline-Z6CW6z {
 }
 
 .avatarSpeaking-36V2PN {
-    -webkit-box-shadow: inset 0 0 0 2px var(--green-360), inset 0 0 0 3px var(--background-secondary);
-    box-shadow: inset 0 0 0 2px var(--green-360), inset 0 0 0 3px var(--background-secondary);
+    -webkit-box-shadow: inset 0 0 0 2px var(--status-speaking), inset 0 0 0 3px var(--background-secondary);
+    box-shadow: inset 0 0 0 2px var(--status-speaking), inset 0 0 0 3px var(--background-secondary);
     border-radius: 50%
 }
 
@@ -24006,6 +24006,7 @@ html.disable-forced-colors * {
     --status-positive: var(--green-360);
     --status-positive-background: var(--green-430);
     --status-positive-text: var(--white-500);
+    --status-speaking: var(--green-360);
     --status-warning: var(--yellow-300);
     --status-warning-background: var(--yellow-300);
     --status-warning-text: var(--black-500);
@@ -24250,6 +24251,7 @@ html.disable-forced-colors * {
     --status-positive: var(--green-400);
     --status-positive-background: var(--green-430);
     --status-positive-text: var(--white-500);
+    --status-speaking: var(--green-360);
     --status-warning: var(--yellow-400);
     --status-warning-background: var(--yellow-400);
     --status-warning-text: var(--white-500);
@@ -24506,6 +24508,7 @@ html.disable-forced-colors * {
     --status-positive: var(--green-360);
     --status-positive-background: var(--green-430);
     --status-positive-text: var(--white-500);
+    --status-speaking: var(--green-360);
     --status-warning: var(--yellow-300);
     --status-warning-background: var(--yellow-300);
     --status-warning-text: var(--black-500);
@@ -52422,8 +52425,8 @@ input[type=checked]:focus-visible+.label-3TDpbn {
 }
 
 .border-2BJQjd.speaking-3RWJBr {
-    -webkit-box-shadow: inset 0 0 0 2px var(--green-360), inset 0 0 0 3px var(--background-floating);
-    box-shadow: inset 0 0 0 2px var(--green-360), inset 0 0 0 3px var(--background-floating)
+    -webkit-box-shadow: inset 0 0 0 2px var(--status-speaking), inset 0 0 0 3px var(--background-floating);
+    box-shadow: inset 0 0 0 2px var(--status-speaking), inset 0 0 0 3px var(--background-floating)
 }
 
 .app-focused .border-2BJQjd {
@@ -163445,4 +163448,4 @@ html .invoiceCancelRow-dVOR64 {
     flex-direction: column
 }
 
-/*# sourceMappingURL=40532.8a411d29384b43b3dd95.css.map*/
+/*# sourceMappingURL=40532.fe9308e4640d5b9ddbc5.css.map*/
