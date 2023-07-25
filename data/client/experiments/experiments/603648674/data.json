@@ -43,7 +43,14 @@
             ]
           }
         },
-        "filters": []
+        "filters": [
+          {
+            "type": "guild_has_feature",
+            "features": [
+              "COMMUNITY"
+            ]
+          }
+        ]
       },
       {
         "buckets": {
@@ -59,7 +66,7 @@
         "filters": []
       }
     ],
-    "revision": 5,
+    "revision": 6,
     "overrides": {},
     "overrides_formatted": [
       {

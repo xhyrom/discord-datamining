@@ -3278,7 +3278,14 @@
               ]
             }
           },
-          "filters": []
+          "filters": [
+            {
+              "type": "guild_has_feature",
+              "features": [
+                "COMMUNITY"
+              ]
+            }
+          ]
         },
         {
           "buckets": {
@@ -3294,7 +3301,7 @@
           "filters": []
         }
       ],
-      "revision": 5,
+      "revision": 6,
       "overrides": {},
       "overrides_formatted": [
         {
@@ -5069,7 +5076,8 @@
           "161678624032948225",
           "281683040739262465",
           "133838756447911936",
-          "1129250560328093826"
+          "1129250560328093826",
+          "910453251445510155"
         ]
       },
       "overrides_formatted": []
