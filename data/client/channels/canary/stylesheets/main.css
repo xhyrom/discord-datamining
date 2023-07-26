@@ -18265,7 +18265,8 @@ html.disable-forced-colors * {
 }
 
 .markup-eYLPri ol {
-    list-style-type: decimal
+    list-style-type: decimal;
+    margin-left: calc(.4em + var(--totalCharacters)*0.6em)
 }
 
 .markup-eYLPri ol ul,
@@ -163509,4 +163510,4 @@ html .invoiceCancelRow-dVOR64 {
     flex-direction: column
 }
 
-/*# sourceMappingURL=40532.501d61f8c4f250c635d3.css.map*/
+/*# sourceMappingURL=40532.12211ba77d1348122e4f.css.map*/
