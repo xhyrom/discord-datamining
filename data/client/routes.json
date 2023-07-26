@@ -622,7 +622,18 @@
       "PUT"
     ]
   },
+  "NEW_MEMBER_ACTION": {
+    "url": "/guilds/:param/new-member-actions/:param",
+    "allowed_methods": [
+      "OPTIONS",
+      "PATCH"
+    ]
+  },
   "GUILD_RESOURCE_CHANNELS_ICON": {
+    "url": "/guilds/:param/avatars/:param.:param",
+    "allowed_methods": null
+  },
+  "GUILD_NEW_MEMBER_ACTIONS_ICON": {
     "url": "/guilds/:param/avatars/:param.:param",
     "allowed_methods": null
   },
