@@ -1,5 +1,5 @@
 <p> </p>
-<p class="wysiwyg-text-align-center"><img style="height: 283px; width: 624px;" src="https://lh5.googleusercontent.com/acMR1ObDYjh-3CbrmuUehTdtwJBUNUi1OluDxQ5q2lGK2OymRlS9hMPNAb77jhaXAnOi9u5JPo2kdLWLumjnIr8xDmBCvGTvT03Zfs-SIcDGNWActgXDWs2mEB-bg82mCaupgqdIXNzq-0bleyP9Yx8" alt="Screen_Shot_2018-07-25_at_4.03.37_PM.png"></p>
+<p class="wysiwyg-text-align-center"><img src="https://support.discord.com/hc/article_attachments/16313642172183" alt="game_overlay_101.png"></p>
 <p>Worried you’ll miss a message from your friend while you’re engaging in an epic battle? Worry no more with the Game Overlay!</p>
 <p><span class="wysiwyg-font-size-large"><strong>What this article covers:</strong></span></p>
 <ul>
