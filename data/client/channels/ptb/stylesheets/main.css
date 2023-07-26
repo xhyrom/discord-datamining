@@ -43542,6 +43542,14 @@ html .progress-2Otdc- {
     line-height: 22px
 }
 
+.listItemTooltip-2liw7A {
+    max-width: 196px;
+    font-size: 16px;
+    line-height: 20px;
+    font-weight: 600;
+    word-wrap: break-word
+}
+
 .guildIcon-2SUGiq {
     -webkit-box-align: center;
     -ms-flex-align: center;
@@ -118713,6 +118721,10 @@ input::-webkit-outer-spin-button {
     cursor: pointer
 }
 
+.header-3_r5Ze {
+    margin-bottom: 8px
+}
+
 .back-1NajWI {
     margin-bottom: 32px
 }
@@ -154347,6 +154359,16 @@ html .invoiceCancelRow-3s2UuC {
     padding: 2px 0
 }
 
+.titleWithBeta-1g988N {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    gap: 8px
+}
+
 .notificationSettings-3dppO6 {
     max-width: 75%
 }
@@ -163510,4 +163532,4 @@ html .invoiceCancelRow-dVOR64 {
     flex-direction: column
 }
 
-/*# sourceMappingURL=40532.12211ba77d1348122e4f.css.map*/
+/*# sourceMappingURL=40532.dd1f437c739c4297c738.css.map*/
