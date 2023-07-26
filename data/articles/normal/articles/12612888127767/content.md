@@ -22,6 +22,7 @@
             <li><a href="#h_01GWJXHA3ABX5H4KCBGPRZCF69" target="_self">How to manage sounds for Soundboard</a></li>
         </ul>
     </li>
+    <li><a href="#h_01H5JJ9XK68MMK1WXBFAQ0AQGR" target="_self">Soundboard Entrance Sounds</a></li>
     <li><a href="#h_01GTYZT0R7SHN43R0HEHGGTBGH" target="_self">Frequently Asked Questions</a></li>
 </ul>
 <h1 id="h_01GTYZS5ZCTGQ92MBZAQX0QCW1">What is Soundboard?</h1>
@@ -62,6 +63,15 @@
 <h3>Please note: We are currently experimenting with permissions, so the changes to the permissions here are not yet live yet to everyone.</h3>
 <p class="wysiwyg-text-align-center"><img style="height: 554px; width: 465px;" src="https://support.discord.com/hc/article_attachments/14535954337687"></p>
 <p class="wysiwyg-text-align-left">For users to be able to add custom sounds to a server, they will need to have <strong>Create Expressions</strong> permission enabled for their role. To give a role this permission, head to <strong>Server Settings</strong> &gt; <strong>Roles </strong>and then Enable or Disable it per role under <strong>Permissions</strong>.</p>
+<h1 id="h_01H5JJ9XK68MMK1WXBFAQ0AQGR">Soundboard Entrance Sounds</h1>
+<h3><span style="color: #434343;" data-darkreader-inline-color="">This experimental feature is only available to a limited number of users.</span></h3>
+<p>Are you finding yourself using a specific sound in Soundboard anytime you join a specific voice channel Well now you can set your own sound to automatically play from the Soundboard if you have <a href="https://support.discord.com/hc/en-us/articles/115000435108"><span class="wysiwyg-underline" style="color: #1155cc;" data-darkreader-inline-color="">Nitro</span></a>. </p>
+<p>1. To set it up, tap on <strong>User Settings</strong> then head to <strong>Voice &amp; Video</strong>.</p>
+<p>2. Under <strong>Sound Effects</strong> you can tap on the pencil icon to  set a sound for all servers or customize your sounds per server.</p>
+<p>3. To set a sound per server, tap on the drop down menu and select the server. With the server selected tap on the pencil icon and select the soundboard sound you’d like to use it.</p>
+<p>4. Once your chosen sound is selected, tap on the X in the upper right corner to close and it’ll automatically save. </p>
+<p class="wysiwyg-text-align-center"><img style="height: 351px; width: 624px;" src="https://lh5.googleusercontent.com/eL6o_uac3pBzl31iNNb-HyLYwBFtzFEvqJA8hAmCXiHt_BWu7kejB69GQ77D4SJDCkz5YZZakePUykq6QvUNuU5UYdQLicCf0oeEqyUplP-hpHAAOWX2e_u3R6VV88i6avLLdflNqxo20K2ArlEOx5k"></p>
+<p>Now when you join a server voice channel, that sound will automatically play!</p>
 <h1 id="h_01GTYZT0R7SHN43R0HEHGGTBGH">Frequently Asked Questions</h1>
 <p><strong>Q.</strong> How can I change the volume or opt out for Soundboard?</p>
 <p class="wysiwyg-text-align-center"><img src="https://support.discord.com/hc/article_attachments/12931123550359" alt="image7.png"></p>
