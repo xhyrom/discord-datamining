@@ -41633,16 +41633,16 @@ html .progress-2Otdc- {
     transition: all .1s ease
 }
 
-.inline-18PIBU.hiddenSpoilers-19m4Pg {
+.inline-18PIBU.hiddenAttachment-1ujFOi {
     visibility: hidden
 }
 
-.spoiler-3aUoEX {
+.obscured-20kiwN {
     -webkit-transition: all .1s ease;
     transition: all .1s ease
 }
 
-.spoiler-3aUoEX.hiddenSpoilers-19m4Pg {
+.obscured-20kiwN.hiddenAttachment-1ujFOi {
     -webkit-filter: blur(44px);
     filter: blur(44px);
     pointer-events: none
@@ -163657,4 +163657,4 @@ html .invoiceCancelRow-dVOR64 {
     flex-direction: column
 }
 
-/*# sourceMappingURL=40532.de8c7fe32d44a258a94e.css.map*/
+/*# sourceMappingURL=40532.f73e7d1bb83534ad0bc5.css.map*/
