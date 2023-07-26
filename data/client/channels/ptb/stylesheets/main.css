@@ -106842,17 +106842,24 @@ html .tabBadge-h4HGed {
     position: absolute
 }
 
-.sparkleStar-1FbVqs {
-    color: var(--gold);
-    top: -30px;
-    left: 14px
+.paused-3pkrsD {
+    -webkit-animation-play-state: paused;
+    animation-play-state: paused
 }
 
 .sparklePlus-297hkf,
 .sparkleStar-1FbVqs {
-    position: relative;
     -webkit-animation: sparkle-_KEHBh 2.5s ease-in-out infinite;
-    animation: sparkle-_KEHBh 2.5s ease-in-out infinite
+    animation: sparkle-_KEHBh 2.5s ease-in-out infinite;
+    -webkit-animation-play-state: inherit;
+    animation-play-state: inherit;
+    position: relative
+}
+
+.sparkleStar-1FbVqs {
+    color: var(--gold);
+    top: -30px;
+    left: 14px
 }
 
 .sparklePlus-297hkf {
@@ -163536,4 +163543,4 @@ html .invoiceCancelRow-dVOR64 {
     flex-direction: column
 }
 
-/*# sourceMappingURL=40532.8cb45cd0c8867d52977c.css.map*/
+/*# sourceMappingURL=40532.3de139e2efd238b8855b.css.map*/
