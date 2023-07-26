@@ -18265,7 +18265,8 @@ html.disable-forced-colors * {
 }
 
 .markup-eYLPri ol {
-    list-style-type: decimal
+    list-style-type: decimal;
+    margin-left: calc(.4em + var(--totalCharacters)*0.6em)
 }
 
 .markup-eYLPri ol ul,
@@ -30923,6 +30924,10 @@ img[alt] {
     margin: 5px 15px 15px
 }
 
+.fineprint-k3aNUH {
+    margin-bottom: 0
+}
+
 .copyInput-3AbKWB {
     overflow: hidden;
     -webkit-box-sizing: border-box;
@@ -43539,6 +43544,14 @@ html .progress-2Otdc- {
     -ms-flex: 1 1 auto;
     flex: 1 1 auto;
     line-height: 22px
+}
+
+.listItemTooltip-2liw7A {
+    max-width: 196px;
+    font-size: 16px;
+    line-height: 20px;
+    font-weight: 600;
+    word-wrap: break-word
 }
 
 .guildIcon-2SUGiq {
@@ -72658,6 +72671,10 @@ strong {
 
 .checkCircleCompleted-1VoXrE {
     color: var(--status-positive)
+}
+
+.icon-1iqpfX {
+    border-radius: var(--radius-sm)
 }
 
 .container-PAPxZh {
@@ -106825,17 +106842,24 @@ html .tabBadge-h4HGed {
     position: absolute
 }
 
-.sparkleStar-1FbVqs {
-    color: var(--gold);
-    top: -30px;
-    left: 14px
+.paused-3pkrsD {
+    -webkit-animation-play-state: paused;
+    animation-play-state: paused
 }
 
 .sparklePlus-297hkf,
 .sparkleStar-1FbVqs {
-    position: relative;
     -webkit-animation: sparkle-_KEHBh 2.5s ease-in-out infinite;
-    animation: sparkle-_KEHBh 2.5s ease-in-out infinite
+    animation: sparkle-_KEHBh 2.5s ease-in-out infinite;
+    -webkit-animation-play-state: inherit;
+    animation-play-state: inherit;
+    position: relative
+}
+
+.sparkleStar-1FbVqs {
+    color: var(--gold);
+    top: -30px;
+    left: 14px
 }
 
 .sparklePlus-297hkf {
@@ -118706,6 +118730,10 @@ input::-webkit-outer-spin-button {
 .descriptionAction-1ga4cu {
     margin-left: 4px;
     cursor: pointer
+}
+
+.header-3_r5Ze {
+    margin-bottom: 8px
 }
 
 .back-1NajWI {
@@ -133099,6 +133127,10 @@ html .invoiceCancelRow-3s2UuC {
     height: 645px
 }
 
+.textArea-3GydfY {
+    background-color: var(--input-background)
+}
+
 .container-ikgCx8 {
     background-color: var(--input-background);
     border-radius: 4px;
@@ -133534,6 +133566,10 @@ html .invoiceCancelRow-3s2UuC {
     -ms-flex-direction: column;
     flex-direction: column;
     gap: 24px
+}
+
+.descriptionArea-3-mset {
+    min-height: 66px
 }
 
 .thumbnailLabel-pdvYTa {
@@ -154334,6 +154370,16 @@ html .invoiceCancelRow-3s2UuC {
     padding: 2px 0
 }
 
+.titleWithBeta-1g988N {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    gap: 8px
+}
+
 .notificationSettings-3dppO6 {
     max-width: 75%
 }
@@ -159721,6 +159767,55 @@ html .invoiceCancelRow-3s2UuC {
     pointer-events: none
 }
 
+.iconUploadContainer-AOjRYN {
+    position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    gap: 8px
+}
+
+.iconUploadContainer-AOjRYN:hover .imageOverlay-1GRatO {
+    display: block
+}
+
+.iconUpload-1RRiHt {
+    border-radius: var(--radius-sm);
+    border: 1px solid var(--background-tertiary);
+    background-color: var(--background-secondary-alt);
+    padding: 8px;
+    color: var(--interactive-normal);
+    cursor: pointer
+}
+
+.iconUpload-1RRiHt:hover {
+    color: var(--interactive-hover)
+}
+
+.iconUpload-1RRiHt:active {
+    color: var(--interactive-active)
+}
+
+.uploadMenuItem-2hQJ-5 {
+    position: relative
+}
+
+.imageOverlay-1GRatO {
+    display: none;
+    background-color: rgba(0, 0, 0, .5019607843137255);
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    padding: 8px;
+    border-radius: var(--radius-sm)
+}
+
 .header-2Cx7rS {
     padding-top: 32px;
     padding-bottom: 24px;
@@ -163448,4 +163543,4 @@ html .invoiceCancelRow-dVOR64 {
     flex-direction: column
 }
 
-/*# sourceMappingURL=40532.fe9308e4640d5b9ddbc5.css.map*/
+/*# sourceMappingURL=40532.3de139e2efd238b8855b.css.map*/
