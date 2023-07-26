@@ -1,0 +1,23 @@
+{
+  "data": {
+    "kind": "user",
+    "id": "2023-06_reduced_payment_method_address_info",
+    "label": "Reduced Payment Method Address Info",
+    "description": [
+      "Not Eligible",
+      "Control Bucket",
+      "Treatment 1: Simplify address form",
+      "Treatment 2: Partial address in card form"
+    ],
+    "hash": 3371039046,
+    "buckets": [
+      -1,
+      0,
+      1,
+      2
+    ],
+    "config_keys": [
+      "enabled"
+    ]
+  }
+}
