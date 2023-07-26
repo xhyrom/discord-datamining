@@ -51,7 +51,7 @@
             <div class="w-embed">
                 <div class="btn-wrapper"><a href="http://discord.gg/cs-2" class="btn-blog w-button" target="_blank">Join the Counter-Strike server</a></div>
             </div>
-            <h2>‍‍<strong><br>Apex Legends</strong> </h2>
+            <h2>‍<strong><br>Apex Legends</strong> </h2>
             <h6>Available on PC via Steam or the EA app, Xbox Series X|S, Xbox One, PS5, PS4, and Nintendo Switch. Supports cross-play. Rated T.</h6>
             <p>Become the Champion of the Arena in <a href="https://www.ea.com/games/apex-legends">Apex Legends</a>, a Battle Royale game where squads of up to three vie for supremacy against up to 60 other players at once. Unlike other Battle Royale games where everyone has the same “base” character, Apex Legends lets you pick from a selection of characters known as Legends, each with their own unique abilities.&nbsp;</p>
             <p>Your group chat likely has that one person who DMs everyone to make sure they’re doing well who’d make a great medic, the ideal scout that’s always surveying the vibes before saying something, or the crazed one hopping between different Voice channels every five minutes. No matter the personality, you’ll all find the perfect Legend to fit your style and become Champions, together.&nbsp;</p>
@@ -65,7 +65,7 @@
             <div class="w-embed">
                 <div class="btn-wrapper"><a href="https://discord.gg/valorant" class="btn-blog w-button" target="_blank">Join the Valorant server</a></div>
             </div>
-            <h2><br>‍<strong>Grant Theft Auto V/Online</strong>‍</h2>
+            <h2><br>‍<strong>Grand Theft Auto V/Online</strong>‍</h2>
             <h6>Available on PC via Steam, Xbox Series X|S, Xbox One, PS5, and PS4. Supports cross-play. Rated M.</h6>
             <p>There’s a reason <a href="https://www.rockstargames.com/gta-v">Grand Theft Auto V</a> is still played after nearly ten years: it’s an open-world game where you can freely explore a huge city, cause havoc in a multitude of ways, with both a lengthy, compelling single-player campaign and a multiplayer component that’s received constant updates for almost a decade.&nbsp;</p>
             <p>Los Santos is your playground to leave destruction in your wake, do some actually-friendly taxi or ambulance work in single player, or become one of the most renowned crime lords in its multiplayer component, GTA Online. Hop into Discord and plan out some bank heists, matchmake in Team Deathmatch and Race modes, or just vibe and explore the city together. And this is all before even <em>considering</em> diving into the sprawling modding scene.</p>
