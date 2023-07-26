@@ -1978,8 +1978,18 @@
     ]
   },
   "MFA_TOTP_ENABLE_VERIFY": {
-    "url": "users/@me/mfa/totp/enable/verify",
-    "allowed_methods": null
+    "url": "/users/@me/mfa/totp/enable/verify",
+    "allowed_methods": [
+      "OPTIONS",
+      "POST"
+    ]
+  },
+  "MFA_TOTP_ENABLE_RESEND": {
+    "url": "/users/@me/mfa/totp/enable/resend",
+    "allowed_methods": [
+      "OPTIONS",
+      "POST"
+    ]
   },
   "MFA_TOTP_DISABLE": {
     "url": "/users/@me/mfa/totp/disable",
