@@ -72660,6 +72660,10 @@ strong {
     color: var(--status-positive)
 }
 
+.icon-1iqpfX {
+    border-radius: var(--radius-sm)
+}
+
 .container-PAPxZh {
     margin-top: 16px;
     -webkit-box-orient: vertical;
@@ -159721,6 +159725,55 @@ html .invoiceCancelRow-3s2UuC {
     pointer-events: none
 }
 
+.iconUploadContainer-AOjRYN {
+    position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    gap: 8px
+}
+
+.iconUploadContainer-AOjRYN:hover .imageOverlay-1GRatO {
+    display: block
+}
+
+.iconUpload-1RRiHt {
+    border-radius: var(--radius-sm);
+    border: 1px solid var(--background-tertiary);
+    background-color: var(--background-secondary-alt);
+    padding: 8px;
+    color: var(--interactive-normal);
+    cursor: pointer
+}
+
+.iconUpload-1RRiHt:hover {
+    color: var(--interactive-hover)
+}
+
+.iconUpload-1RRiHt:active {
+    color: var(--interactive-active)
+}
+
+.uploadMenuItem-2hQJ-5 {
+    position: relative
+}
+
+.imageOverlay-1GRatO {
+    display: none;
+    background-color: rgba(0, 0, 0, .5019607843137255);
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    padding: 8px;
+    border-radius: var(--radius-sm)
+}
+
 .header-2Cx7rS {
     padding-top: 32px;
     padding-bottom: 24px;
@@ -163448,4 +163501,4 @@ html .invoiceCancelRow-dVOR64 {
     flex-direction: column
 }
 
-/*# sourceMappingURL=40532.fe9308e4640d5b9ddbc5.css.map*/
+/*# sourceMappingURL=40532.524cd7d0e528365b0d2f.css.map*/
