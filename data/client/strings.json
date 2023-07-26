@@ -13354,6 +13354,7 @@
   "REMIXING_FREE_DRAW": "\"Free draw on media\"",
   "REMIXING_ADD_TEXT": "\"Add text to media\"",
   "REMIXING_ADD_STICKER": "\"Add sticker to media\"",
+  "REMIXING_ADD_MENTION": "\"Add a user/role mention to the media\"",
   "REMIXING_UNDO": "\"Undo previous change to the canvas\"",
   "REMIXING_REDO": "\"Redo previously undone change to the canvas\"",
   "REMIXING_ROTATE": "\"Rotate media clockwise\"",
