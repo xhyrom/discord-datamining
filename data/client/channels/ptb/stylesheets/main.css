@@ -133103,6 +133103,10 @@ html .invoiceCancelRow-3s2UuC {
     height: 645px
 }
 
+.textArea-3GydfY {
+    background-color: var(--input-background)
+}
+
 .container-ikgCx8 {
     background-color: var(--input-background);
     border-radius: 4px;
@@ -133538,6 +133542,10 @@ html .invoiceCancelRow-3s2UuC {
     -ms-flex-direction: column;
     flex-direction: column;
     gap: 24px
+}
+
+.descriptionArea-3-mset {
+    min-height: 66px
 }
 
 .thumbnailLabel-pdvYTa {
@@ -163501,4 +163509,4 @@ html .invoiceCancelRow-dVOR64 {
     flex-direction: column
 }
 
-/*# sourceMappingURL=40532.524cd7d0e528365b0d2f.css.map*/
+/*# sourceMappingURL=40532.501d61f8c4f250c635d3.css.map*/
