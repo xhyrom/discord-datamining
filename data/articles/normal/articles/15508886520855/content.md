@@ -1,4 +1,4 @@
-<p class="wysiwyg-text-align-center"><img src="https://support.discord.com/hc/article_attachments/16313198321047" alt="bobble_bash_header.png"></p>
+<p class="wysiwyg-text-align-center"><img src="https://support.discord.com/hc/article_attachments/16342835275671" alt="Bash_Shelf_1920x1080.png"></p>
 <p><span class="wysiwyg-font-size-large"><strong>What this article covers: </strong></span></p>
 <ul>
     <li><a href="#h_01H69P9TPDBSM0H8GP2ZRP31EZ" target="_self">What is Bobble Bash?</a></li>
@@ -26,7 +26,7 @@
 <p>Players can view their stats by selecting “My Stats” on the series voting screen. Anyone’s stats are accessible by clicking on their avatars inside the activity. Participating players see their stats at the end of a series, and spectators will see the Grand Champion’s stats.</p>
 <p class="wysiwyg-text-align-center"><img src="https://support.discord.com/hc/article_attachments/16313198347287" alt="bobble_bash_stats.png"></p>
 <p>Get crowned as champion! The player with the most points at the end of each level will win that level, and the player with the most points at the end of the series will be crowned champion.</p>
-<p class="wysiwyg-text-align-center"><img style="height: 341px; width: 624px;" src="https://lh5.googleusercontent.com/6SFnxJXnX5PL32AEeh_fd-x3CoOXKvQhb9bgWAVY1WjotRnBM3zsyThRb5sy3fKAxWub_6Lj8DiXJ4hJnAc3_CaxR3esByD8rAxOEmJsmA9S8P-G7zzhZquuv-Ndua4RbTkuU73Kcp6VwoRL6jvWdd4"></p>
+<p class="wysiwyg-text-align-center"><img src="https://support.discord.com/hc/article_attachments/16342890661527" alt="BB-Victory.gif"></p>
 <p>If a player wins the series, a victory crown will appear over their avatar for the duration of the next series.</p>
 <p class="wysiwyg-text-align-center"><img src="https://support.discord.com/hc/article_attachments/16313198353431" alt="bobble_bash_victory_crown.png"></p>
 <h1 id="h_01H69PH1MXM7CCCEZ9MNSPG1QS">BOBBLE BASH FAQ</h1>
