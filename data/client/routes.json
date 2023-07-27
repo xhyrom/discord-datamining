@@ -4329,6 +4329,14 @@
       "PATCH"
     ]
   },
+  "INVENTORY_PACK_METADATA": {
+    "url": "/inventory/packs/:param/metadata",
+    "allowed_methods": [
+      "GET",
+      "HEAD",
+      "OPTIONS"
+    ]
+  },
   "GUILD_MEMBERS_UNUSUAL_DM_ACTIVITY": {
     "url": "/guilds/:param/members/unusual-dm-activity",
     "allowed_methods": [
