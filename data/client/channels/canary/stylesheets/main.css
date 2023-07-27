@@ -162156,22 +162156,19 @@ html .invoiceCancelRow-3s2UuC {
 }
 
 .clipFormFooter-3kblL0 {
+    display: grid;
     padding: 16px;
     border-top: 1px solid var(--background-modifier-accent);
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 16px
+}
+
+.clipFormFooterPrimaryButton-ngnteH {
+    grid-column: span 3
 }
 
 .clipFormFooterButton-1EfV4_ {
-    -webkit-box-flex: 1;
-    -ms-flex: 1 1 50%;
-    flex: 1 1 50%;
-    margin-right: 16px
-}
-
-.clipFormFooterButton-1EfV4_:last-child {
-    margin-right: 0
+    grid-column: span 1
 }
 
 .clipFormItem-22cQCJ {
@@ -163823,4 +163820,4 @@ html .invoiceCancelRow-dVOR64 {
     flex-direction: column
 }
 
-/*# sourceMappingURL=40532.f797c7246d1142f6678c.css.map*/
+/*# sourceMappingURL=40532.833a696d2c2cb61747a0.css.map*/
