@@ -31083,11 +31083,35 @@ img[alt] {
 }
 
 .blurb-3d5FqU {
-    margin-top: 10px;
+    margin-top: 10px
+}
+
+.blurb-3d5FqU,
+.giftSentMessage-1sDSS2 {
     font-size: 16px;
     line-height: 1.44;
     text-align: center;
     max-width: 360px
+}
+
+.giftSentMessage-1sDSS2 {
+    margin-top: 16px;
+    margin-bottom: 8px;
+    color: var(--header-secondary)
+}
+
+.giftRecipient-gvWTeE {
+    margin-top: 16px
+}
+
+.giftRecipientName-3RYAxG {
+    margin-top: 10px
+}
+
+.giftRecipientTag-5DoPhC {
+    margin-top: 6px;
+    font-size: 13px;
+    color: var(--header-secondary)
 }
 
 .divider-3IBpTV {
@@ -163799,4 +163823,4 @@ html .invoiceCancelRow-dVOR64 {
     flex-direction: column
 }
 
-/*# sourceMappingURL=40532.d74f11eae895fcfc7f28.css.map*/
+/*# sourceMappingURL=40532.f797c7246d1142f6678c.css.map*/
