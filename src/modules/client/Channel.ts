@@ -107,7 +107,7 @@ export class Channel implements Module {
       [
         `Build Number: ${await build.buildNumber()}`,
         `Version Hash: ${await build.versionHash()}`,
-        `Build At: ${date.getDate()} ${date.getMonth()} ${date.getFullYear()} ${date.getHours()}:${date.getMinutes()}:${date.getSeconds()} (${date.getTime()})`,
+        `Build At: ${date.getDate()}/${date.getMonth()}/${date.getFullYear()} ${date.getHours()}:${date.getMinutes()}:${date.getSeconds()} (${date.getTime()})`,
       ].join("\n"),
       `Scripts (${scriptFiles.scripts.length}):\n${scriptFiles.scripts
         .map((script) =>
