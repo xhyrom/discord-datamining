@@ -11292,6 +11292,14 @@
               "rollout": [
                 {
                   "start": 0,
+                  "end": 8000
+                }
+              ]
+            },
+            "none": {
+              "rollout": [
+                {
+                  "start": 8000,
                   "end": 10000
                 }
               ]
