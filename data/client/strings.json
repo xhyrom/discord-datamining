@@ -5725,7 +5725,6 @@
   "BURST_REACTIONS_REMOVE_MODAL_DESCRIPTION": "\"You will not get a credit refund if you choose to remove this Super Reaction.\"",
   "BURST_REACTIONS_REMOVE_MODAL_CONFIRM": "\"Remove Super Reaction\"",
   "BURST_REACTIONS_REMOVE_MODAL_CANCEL": "\"Cancel\"",
-  "SUPER_REACTIONS_LEFT": "\"{count} Super Reactions left\"",
   "SUPER_REACTIONS_LEFT_WITH_PLURAL": "\"{count, plural, =1 {1 Super Reaction} other {{count} Super Reactions}} left\"",
   "BURST_MOBILE_NOT_READY_IMG_ALT": "\"Wumpus waving\"",
   "BURST_MOBILE_NOT_READY_TITLE": "\"Super Reactions\"",
