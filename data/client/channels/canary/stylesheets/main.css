@@ -162368,8 +162368,13 @@ html .invoiceCancelRow-3s2UuC {
     position: absolute;
     top: 0;
     bottom: 0;
-    width: 2px;
-    background-color: var(--white-500)
+    background-color: var(--white-500);
+    z-index: 1000;
+    width: 4px
+}
+
+.playhead-2-5O0o:hover {
+    cursor: ew-resize
 }
 
 .timePillBackground-2ud9zH {
@@ -163824,4 +163829,4 @@ html .invoiceCancelRow-dVOR64 {
     flex-direction: column
 }
 
-/*# sourceMappingURL=40532.8a56e3bcb5bd78e69a80.css.map*/
+/*# sourceMappingURL=40532.7d00a871e54a96eb5d36.css.map*/
