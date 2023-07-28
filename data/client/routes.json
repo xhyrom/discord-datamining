@@ -3156,6 +3156,8 @@
   "UPDATE_VOICE_STATE": {
     "url": "/guilds/:param/voice-states/:param",
     "allowed_methods": [
+      "GET",
+      "HEAD",
       "OPTIONS",
       "PATCH"
     ]
