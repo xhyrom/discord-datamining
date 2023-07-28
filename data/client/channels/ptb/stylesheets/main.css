@@ -162295,7 +162295,8 @@ html .invoiceCancelRow-3s2UuC {
 .timelineBackground-3E1FFv {
     height: 60px;
     width: 100%;
-    border-radius: 8px
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px
 }
 
 .hiddenCanvas-3ZTzN1 {
@@ -162425,6 +162426,10 @@ html .invoiceCancelRow-3s2UuC {
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center
+}
+
+.playPauseButton-4NJfqf:hover {
+    cursor: pointer
 }
 
 .modalContent-2Ly0BZ {
@@ -163829,4 +163834,4 @@ html .invoiceCancelRow-dVOR64 {
     flex-direction: column
 }
 
-/*# sourceMappingURL=40532.7d00a871e54a96eb5d36.css.map*/
+/*# sourceMappingURL=40532.9c5e0765ddeee6eff14b.css.map*/
