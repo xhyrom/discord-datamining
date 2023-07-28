@@ -5678,6 +5678,7 @@
   "SUPER_REACTIONS_LAUNCH_EMOJI_PICKER_UPSELL": "\"Hype up the chat with Super Reactions. Get more each week with [Nitro](onClick).\"",
   "SUPER_REACTIONS_MOBILE_DISMISS_MESSAGE": "\"Tap anywhere to close\"",
   "SUPER_REACTION_OUT_OF_BURSTS": "\"Looks like you’re out of Super Reactions\"",
+  "SUPER_REACTIONS_OUT_TOAST": "\"You’re out of Super Reactions\"",
   "SUPER_REACTIONS_OUT_OF_BURST_GOT_IT": "\"Got it!\"",
   "SUPER_REACTIONS_OUT_OF_BURSTS_SIMPLE": "\"But don’t worry! You’ll get more Super Reactions in {n, plural, =1 {1 day} other {{n} days}}.\"",
   "SUPER_REACTIONS_OUT_OF_BURSTS_SIMPLE_SOON": "\"But don’t worry! You’ll get more Super Reactions later today.\"",
