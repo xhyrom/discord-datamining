@@ -21,7 +21,7 @@
 <p>1. Tap on your avatar in the bottom right corner to access your <strong>User Settings</strong>.</p>
 <p class="wysiwyg-text-align-center"><img src="https://lh4.googleusercontent.com/VVLMyfhOjTOM8QZg5rAjFssTNoBtzHh7Qgn4arekHTlkzOzKd6rrj964smKcirUdyAcwVumssrmGb8_mShBsnxVX4NIhSKc9Aq7KiltjIzDxbFN309U-D5kxQmVbQ-pv7RzHalMEZEAzoDCPizEjdqE" width="277" height="454"></p>
 <p>2. With your User Settings now pulled up, tap on the option that says <strong>Account</strong>.</p>
-<p class="wysiwyg-text-align-center"><img src="https://lh6.googleusercontent.com/I42RaijQOfIfDIS6ZS4W1D4CQSrU5EBh1ptcqibhsIRqTbCmoMf-pBzVi0ceDeUm474HtGBBr1JGrA5k61KbfuO6hYBuxul7Pa3heM---_s8yCTwpbKvrgJ-g5qtQ5mZL0_OwzxrZnjZUHaX8AWDjU4" width="369" height="310"></p>
+<p class="wysiwyg-text-align-center"><img src="https://support.discord.com/hc/article_attachments/16370477834135" alt="mobile_email_verification_send.png" width="399" height="336"></p>
 <p class="wysiwyg-text-align-left">3. Next tap on the banner at the top that says “Verify” to resend the verification email. </p>
 <p>4. Now just follow the steps in the verification email that you received!</p>
 <h1 id="h_01GSG5SAC527RWPN531P9N7Q8J"><a href="#h_01GSG5SAC527RWPN531P9N7Q8J" target="_self">Having trouble receiving the email?</a></h1>
