@@ -27,7 +27,7 @@
 <p>5. <strong>Set your Explicit Media Content Filter to Medium or High. </strong></p>
 <p><em><strong>Go to Server Settings &gt; Safety Setup &gt; Explicit Media Content Filter</strong></em></p>
 <p><span style="font-weight: 400;">Raiders may often try to raid your server and post explicit content to shock, harass, or spur your members to leave. Enable this filter to automatically scan and block explicit media from being posted in your server. Community-enabled servers have the High Explicit Media Content filter on by default.</span></p>
-<p>6. <strong>Find and recruit moderators</strong><span style="font-weight: 400;">. It’s always useful to have a moderator you trust online to immediately prevent or de-escalate a raid should one occur. Our </span><a href="https://discord.com/moderation/1500000177601-210-moderator-recruitment" target="_blank" rel="noopener noreferrer">Moderator Recruitment article</a><span style="font-weight: 400;"> covers best practices you should know on finding and recruiting moderators.</span></p>
+<p>6. <strong>Find and recruit moderators</strong><span style="font-weight: 400;">. It’s always useful to have a moderator you trust online to immediately prevent or de-escalate a raid should one occur. </span><span id="docs-internal-guid-49b3ece1-7fff-25e2-1578-7c868eaa3abf">Our </span><a href="https://discord.com/community/identifying-assigning-moderators" target="_blank" rel="noopener">Identifying and Assigning Moderators article</a> covers best practices you should know on finding and recruiting moderators.</p>
 <h1>Being raided? Here are ways to de-escalate the raid:</h1>
 <p>1.<strong> Pause invitations to your server.</strong></p>
 <p><em><strong>Go to Server Settings &gt; Invites &gt; Pause Invites</strong></em></p>

@@ -24,7 +24,7 @@
 <p><strong>4. Do not host graphic or sexual content.</strong> Graphic violence and sexual content is not allowed in Student Hubs. Servers linked to Student Hubs should be appropriate for audiences of all ages 13+ and cannot include age-gated servers.</p>
 <p><strong>5. Have a server name and description that accurately describes the server that is free of profanity.</strong> Help potential members understand why they want to join the server you listed in your Student Hub.</p>
 <p><strong>6. Respect people's intellectual property and other rights.</strong> Only incorporate content that you own or have a license to use. Do not invade anyone's privacy, libel them, or otherwise violate their rights.</p>
-<p>7. <strong>Have a moderator team.</strong> Moderators can help ensure nothing rule-breaking is happening in your Student Hub-affiliated server and can find meaningful ways for your members to engage. Build a moderator team that members of your community can trust and turn to for help. Find out moderator best practices through our Discord Moderator Academy.</p>
+<p>7. <strong>Have a moderator team.</strong> Moderators can help ensure nothing rule-breaking is happening in your Student Hub-affiliated server and can find meaningful ways for your members to engage. Build a moderator team that members of your community can trust and turn to for help.</p>
 <p><strong>We may consider off-platform behavior when assessing an account or server for violation of the Student Hub guidelines.</strong></p>
 <h2>Enforcement</h2>
 <p>If you or your affiliated-Server violate any of the above guidelines, we may take any of the following enforcement actions:</p>
