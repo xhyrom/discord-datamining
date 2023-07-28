@@ -3307,26 +3307,6 @@
             "1": {
               "rollout": [
                 {
-                  "start": 0,
-                  "end": 10000
-                }
-              ]
-            }
-          },
-          "filters": [
-            {
-              "type": "guild_has_feature",
-              "features": [
-                "MEMBER_SAFETY_PAGE_ROLLOUT"
-              ]
-            }
-          ]
-        },
-        {
-          "buckets": {
-            "1": {
-              "rollout": [
-                {
                   "start": 2500,
                   "end": 2600
                 }
@@ -3363,7 +3343,7 @@
           ]
         }
       ],
-      "revision": 1,
+      "revision": 2,
       "overrides": {
         "1": [
           "840296607785287763",
@@ -3380,7 +3360,28 @@
           "874345844743213126"
         ]
       },
-      "overrides_formatted": []
+      "overrides_formatted": [
+        {
+          "buckets": {
+            "1": {
+              "rollout": [
+                {
+                  "start": 0,
+                  "end": 10000
+                }
+              ]
+            }
+          },
+          "filters": [
+            {
+              "type": "guild_has_feature",
+              "features": [
+                "MEMBER_SAFETY_PAGE_ROLLOUT"
+              ]
+            }
+          ]
+        }
+      ]
     }
   },
   {
