@@ -1,3 +1,4 @@
+<h3 class="wysiwyg-text-align-left">Please make sure your Discord app is updated to the latest version!</h3>
 <p class="wysiwyg-text-align-center"><img src="https://support.discord.com/hc/article_attachments/16207534274583" alt="summerslamnitro2023-banner.png"></p>
 <p><span id="docs-internal-guid-6d44a333-7fff-8d76-3ab0-35e32949baa2">Unleash more fun on Discord this summer with our new Nitro promotion starting on July 25, 2023! Read below to learn more.</span></p>
 <p><span class="wysiwyg-font-size-large"><strong><span id="docs-internal-guid-e7cf31cd-7fff-bc6c-5cce-3ae0fc45ead0">Promotion Summary</span></strong></span></p>
