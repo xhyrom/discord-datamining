@@ -1961,6 +1961,29 @@
   {
     "data": {
       "kind": "user",
+      "id": "2023-07_guild_list_order",
+      "label": "Put new guilds to the bottom of guild list",
+      "description": [
+        "Not Eligible",
+        "Control Bucket",
+        "Treatment 1: put new guilds to the bottom",
+        "Treatment 2: forced put new guilds to the bottom"
+      ],
+      "hash": 3517643571,
+      "buckets": [
+        -1,
+        0,
+        1,
+        2
+      ],
+      "config_keys": [
+        "enabled"
+      ]
+    }
+  },
+  {
+    "data": {
+      "kind": "user",
       "id": "2023-03_client_themes_16thru21",
       "label": "Client Themes New Themes",
       "description": [
