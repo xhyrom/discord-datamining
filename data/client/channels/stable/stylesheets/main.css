@@ -15416,6 +15416,31 @@ html.disable-forced-colors * {
     margin-right: 8px
 }
 
+@-webkit-keyframes overlayContentHidden-szOBzn {
+    0% {
+        opacity: 1
+    }
+
+    to {
+        opacity: 0
+    }
+}
+
+@keyframes overlayContentHidden-szOBzn {
+    0% {
+        opacity: 1
+    }
+
+    to {
+        opacity: 0
+    }
+}
+
+.overlayContentHidden-szOBzn {
+    -webkit-animation: overlayContentHidden-szOBzn .2s ease-in-out forwards;
+    animation: overlayContentHidden-szOBzn .2s ease-in-out forwards
+}
+
 .theme-dark .wrapper-1FP9YQ {
     background-color: var(--primary-700)
 }
@@ -41803,6 +41828,27 @@ html .progress-2Otdc- {
 .downloadHoverButtonIcon-16xasX {
     width: 20px;
     height: 20px
+}
+
+.clipPill-6-09eD {
+    position: absolute;
+    top: 4px;
+    left: 4px;
+    padding: 4px 8px;
+    background-color: var(--brand-500);
+    border-radius: var(--radius-xs);
+    z-index: 1;
+    text-transform: uppercase;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    gap: 4px
 }
 
 .enable-forced-colors .removeAttachmentButton-1iO1qS {
@@ -140067,7 +140113,7 @@ html .invoiceCancelRow-3s2UuC {
 }
 
 .clipItem-3fKTW2 {
-    border-radius: 8px;
+    border-radius: var(--radius-sm);
     cursor: pointer;
     overflow: hidden;
     padding: 8px;
@@ -140094,17 +140140,49 @@ html .invoiceCancelRow-3s2UuC {
     height: 16px
 }
 
-.clipDuration-1FUXmM {
-    background: var(--black-500);
+.newIcon-3qyXQQ {
+    width: 24px;
+    height: 24px
+}
+
+.clipBadges-3SqEsf {
     position: absolute;
+    gap: 8px;
     bottom: 8px;
-    left: 8px;
-    padding: 4px 10px;
-    border-radius: 3px
+    left: 8px
+}
+
+.clipBadge-eRKwdM,
+.clipBadges-3SqEsf {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row
+}
+
+.clipBadge-eRKwdM {
+    height: 28px;
+    padding: 2px 10px;
+    border-radius: var(--radius-xs);
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center
+}
+
+.clipNewBadge-c99euT {
+    background: var(--brand-500);
+    gap: 4px
+}
+
+.clipDurationBadge-2GUmDx {
+    background: var(--black-500)
 }
 
 .clipThumb-1PCUzz {
-    border-radius: 8px;
+    border-radius: var(--radius-sm);
     position: absolute;
     width: 100%;
     height: 100%;
@@ -140179,7 +140257,7 @@ html .invoiceCancelRow-3s2UuC {
     -ms-flex-align: center;
     align-items: center;
     background-color: var(--background-secondary);
-    border-radius: 2.5px;
+    border-radius: var(--radius-xs);
     line-height: 0
 }
 
@@ -162295,7 +162373,8 @@ html .invoiceCancelRow-3s2UuC {
 .timelineBackground-3E1FFv {
     height: 60px;
     width: 100%;
-    border-radius: 8px
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px
 }
 
 .hiddenCanvas-3ZTzN1 {
@@ -162425,6 +162504,10 @@ html .invoiceCancelRow-3s2UuC {
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center
+}
+
+.playPauseButton-4NJfqf:hover {
+    cursor: pointer
 }
 
 .modalContent-2Ly0BZ {
@@ -163829,4 +163912,4 @@ html .invoiceCancelRow-dVOR64 {
     flex-direction: column
 }
 
-/*# sourceMappingURL=40532.7d00a871e54a96eb5d36.css.map*/
+/*# sourceMappingURL=40532.1baef90537f91d14441e.css.map*/
