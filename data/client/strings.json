@@ -10723,6 +10723,7 @@
   "ACTIVITY_CARD_GUILD_EVENT_UPCOMING": "\"Upcoming Event\"",
   "ACTIVITY_CARD_LIVE_STAGE_LISTENERS_NO_SPEAKER": "\"{listener_count, number} listeners\"",
   "ACTIVITY_CARD_LIVE_STAGE_LISTENERS": "\"{speaker_name} + {listener_count, number} listeners\"",
+  "ACTIVITY_CARD_COUNT": "\"{n} Happening Now\"",
   "GUILD_EVENTS": "\"Events\"",
   "GUILD_EVENTS_PLURAL": "\"{number, plural, =1 {# Event} other {# Events}}\"",
   "LIVE_EVENT": "\"Live Event\"",
