@@ -4514,6 +4514,7 @@
   "TWO_FA_CONFIRM_TITLE": "\"Continue without Backup\"",
   "TWO_FA_CONFIRM_BODY": "\"Are you sure you don't want to enable SMS authentication or download your backup codes? Without them, you are at risk of losing your account permanently if you lose access to your authenticator app!\"",
   "TWO_FA_CONFIRM_CONFIRM": "\"I'm sure\"",
+  "TWO_FA_UNKNOWN_ERROR": "\"Oh no, an error has occurred.\"",
   "TWO_FA_WEBAUTHN_BODY": "\"When you are ready to authenticate, press the button below.\"",
   "TWO_FA_WEBAUTHN_ACTION": "\"Use security key\"",
   "TWO_FA_WEBAUTHN_SWITCH_TOTP": "\"Enter a 2FA code instead\"",
