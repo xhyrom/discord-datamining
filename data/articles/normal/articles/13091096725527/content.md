@@ -1,4 +1,3 @@
-<h3>Voice Messages will be rolling out to servers with more than 200 members soon!</h3>
 <p>Need to send a quick message to all of your friends but can't type because you're on the go? Or do you want to make sure your joke lands by adding comedic timing? Well, you're in luck - You can now send Voice Messages on Discord!<br><br><span class="wysiwyg-font-size-large"><strong><span style="background-color: #ffffff;" data-darkreader-inline-bgcolor="">What this article covers:</span></strong></span></p>
 <ul>
     <li><a href="#h_01GWHZTVQF14XB4MWF9JRS0QMT" target="_self">What are Voice Messages?</a></li>
