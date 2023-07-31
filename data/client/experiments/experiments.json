@@ -4896,6 +4896,27 @@
   {
     "data": {
       "kind": "user",
+      "id": "2023-07_friend_finder_auto_redirect_invite",
+      "label": "Friend Finder Auto Redirect Invite Experiment",
+      "description": [
+        "Not Eligible",
+        "Control Bucket",
+        "Treatment 1: Enable auto redirect when reaching an invite page for friends"
+      ],
+      "hash": 197619742,
+      "buckets": [
+        -1,
+        0,
+        1
+      ],
+      "config_keys": [
+        "enabled"
+      ]
+    }
+  },
+  {
+    "data": {
+      "kind": "user",
       "id": "2021-03_expiration_notice_mobile_web",
       "label": "Show expiration notice on mobile web invite",
       "description": [
