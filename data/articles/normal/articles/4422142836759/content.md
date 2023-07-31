@@ -40,7 +40,8 @@
     <li><a href="https://garticphone.com/discord-help" target="_blank" rel="noopener noreferrer">Gartic Phone</a></li>
     <li><a href="https://support.discord.com/hc/en-us/articles/14042410493847" target="_blank" rel="noopener noreferrer">Jamspace</a></li>
     <li><a href="https://fundaygames.dk/discord/color-together-play-guide" target="_blank" rel="noopener noreferrer">Color Together</a></li>
-    <li><a href="https://frvr.com/tutorials/krunker/" target="_blank" rel="noopener">Krunker FRVR</a></li>
+    <li><a href="https://frvr.com/tutorials/krunker/" target="_blank" rel="noopener noreferrer">Krunker FRVR</a></li>
+    <li><a href="https://blog.colonist.io/play-colonist-on-discord-a-step-by-step-guide/" target="_blank" rel="noopener">Colonist</a></li>
 </ol>
 <h1 id="h_01GSX5FCYNMF5PCGKNNA6XFW29">How do I start an Activity?</h1>
 <h2 id="docs-internal-guid-67d1f612-7fff-856e-6a7d-09e2618d9a7f">On Desktop/Browser</h2>
