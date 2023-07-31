@@ -111919,41 +111919,12 @@ html .tabBadge-h4HGed {
     overflow: hidden
 }
 
-.body-3B0emO {
-    padding: 16px;
-    background: var(--background-secondary-alt);
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: column;
-    flex-direction: column;
-    gap: 16px
-}
-
 .autoWidth-EQS4mx {
     min-width: auto
 }
 
-.subheading-3T6yZi {
-    margin-top: 4px
-}
-
 .formDescription-2UV8fR {
     margin-bottom: 16px
-}
-
-.iconSection-3yubBm {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex
-}
-
-.imageUploadButtonCTA-pRAk7M {
-    width: -webkit-max-content;
-    width: -moz-max-content;
-    width: max-content
 }
 
 .formInput-2ALzWe {
@@ -112047,29 +112018,6 @@ html .tabBadge-h4HGed {
     cursor: pointer
 }
 
-.publishListing-1CuAKj {
-    border: 1px solid var(--creator-revenue-info-box-border);
-    border-radius: 4px;
-    padding: 16px;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    background: var(--creator-revenue-info-box-background);
-    -webkit-box-pack: justify;
-    -ms-flex-pack: justify;
-    justify-content: space-between;
-    gap: 8px
-}
-
-.publishButton-3chyxp {
-    background: var(--button-creator-revenue-background);
-    color: var(--white)
-}
-
-.publishListingInfoHeader-21U1M8 {
-    font-family: var(--font-primary)
-}
-
 .deleteListingButton-gRaMlp {
     -ms-flex-item-align: start;
     align-self: flex-start
@@ -112088,6 +112036,12 @@ html .tabBadge-h4HGed {
 
 .formSplitHalf-fG7obG+.formSplitHalf-fG7obG {
     margin-left: 16px
+}
+
+.iconSection-7q68gz {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex
 }
 
 .iconSectionDescription-1csHNT {
@@ -113094,6 +113048,42 @@ html .tabBadge-h4HGed {
     background-color: var(--background-primary);
     padding-top: 16px;
     padding-bottom: 16px
+}
+
+.body-359An8 {
+    background: var(--background-secondary-alt);
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    gap: 16px
+}
+
+.body-359An8,
+.publishListing-1xI1lb {
+    padding: 16px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex
+}
+
+.publishListing-1xI1lb {
+    border: 1px solid var(--creator-revenue-info-box-border);
+    border-radius: 4px;
+    background: var(--creator-revenue-info-box-background);
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    gap: 8px
+}
+
+.publishListingInfoHeader-lvydUN {
+    font-family: var(--font-primary)
+}
+
+.publishButton-2iXGdZ {
+    background: var(--button-creator-revenue-background);
+    color: var(--white)
 }
 
 .container-2yVu6k {
@@ -163912,4 +163902,4 @@ html .invoiceCancelRow-dVOR64 {
     flex-direction: column
 }
 
-/*# sourceMappingURL=40532.1baef90537f91d14441e.css.map*/
+/*# sourceMappingURL=40532.e03948e12630cf88dcb7.css.map*/
