@@ -29358,7 +29358,13 @@ img[alt] {
 }
 
 .paymentSourceSelectedOption-20ngZh {
-    overflow: hidden
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    overflow: hidden;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center
 }
 
 .paymentSourceHasWarning-GctqWI {
@@ -163780,4 +163786,4 @@ html .invoiceCancelRow-dVOR64 {
     flex-direction: column
 }
 
-/*# sourceMappingURL=40532.9b43b292a7e57d43e69b.css.map*/
+/*# sourceMappingURL=40532.57ba626aa64274e00d04.css.map*/
