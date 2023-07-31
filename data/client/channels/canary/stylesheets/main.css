@@ -30404,6 +30404,13 @@ img[alt] {
     padding-bottom: 16px
 }
 
+.link-290TKp {
+    color: var(--interactive-active);
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 18px
+}
+
 .awaitingWrapper-1eIzMr {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -30453,13 +30460,6 @@ img[alt] {
     -webkit-box-flex: 1;
     -ms-flex-positive: 1;
     flex-grow: 1
-}
-
-.link-290TKp {
-    color: var(--interactive-active);
-    font-size: 14px;
-    font-weight: 600;
-    line-height: 18px
 }
 
 .planOption-187LtR {
@@ -163902,4 +163902,4 @@ html .invoiceCancelRow-dVOR64 {
     flex-direction: column
 }
 
-/*# sourceMappingURL=40532.e03948e12630cf88dcb7.css.map*/
+/*# sourceMappingURL=40532.078602061b3f158ada1e.css.map*/
