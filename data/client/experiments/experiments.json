@@ -5960,6 +5960,27 @@
   {
     "data": {
       "kind": "user",
+      "id": "2023-07_iframe_modal",
+      "label": "iFrame Modal",
+      "description": [
+        "Not Eligible",
+        "Control Bucket",
+        "Treatment 1: Enable iFrameModal"
+      ],
+      "hash": 135503004,
+      "buckets": [
+        -1,
+        0,
+        1
+      ],
+      "config_keys": [
+        "enabled"
+      ]
+    }
+  },
+  {
+    "data": {
+      "kind": "user",
       "id": "2023-06_non_nitro_user_remix_upsell",
       "label": "Non Nitro User Remix Upsell Experiment",
       "description": [
@@ -6117,30 +6138,6 @@
             "1": {
               "rollout": [
                 {
-                  "start": 6000,
-                  "end": 7500
-                },
-                {
-                  "start": 7500,
-                  "end": 8000
-                },
-                {
-                  "start": 8000,
-                  "end": 9000
-                },
-                {
-                  "start": 9000,
-                  "end": 9500
-                },
-                {
-                  "start": 9500,
-                  "end": 10000
-                }
-              ]
-            },
-            "2": {
-              "rollout": [
-                {
                   "start": 0,
                   "end": 1000
                 },
@@ -6159,6 +6156,26 @@
                 {
                   "start": 5000,
                   "end": 6000
+                },
+                {
+                  "start": 6000,
+                  "end": 7500
+                },
+                {
+                  "start": 7500,
+                  "end": 8000
+                },
+                {
+                  "start": 8000,
+                  "end": 9000
+                },
+                {
+                  "start": 9000,
+                  "end": 9500
+                },
+                {
+                  "start": 9500,
+                  "end": 10000
                 }
               ]
             }
