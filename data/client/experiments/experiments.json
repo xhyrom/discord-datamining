@@ -4160,48 +4160,6 @@
   {
     "data": {
       "kind": "user",
-      "id": "2023-04_nitro_drop_announcement_modal",
-      "label": "2023 Nitro April Drop Announcement Modal",
-      "description": [
-        "Not Eligible",
-        "Control Bucket",
-        "Treatment 1: Enabled Nitro April Drop announcement modal"
-      ],
-      "hash": 4190502511,
-      "buckets": [
-        -1,
-        0,
-        1
-      ],
-      "config_keys": [
-        "enabled"
-      ]
-    }
-  },
-  {
-    "data": {
-      "kind": "user",
-      "id": "2023-04_nitro_drop_experience",
-      "label": "2023 Nitro April Drop Experience",
-      "description": [
-        "Not Eligible",
-        "Control Bucket",
-        "Treatment 1: Enabled Nitro April Drop Experience (apart from the announcement modal)"
-      ],
-      "hash": 2753834830,
-      "buckets": [
-        -1,
-        0,
-        1
-      ],
-      "config_keys": [
-        "isEnabled"
-      ]
-    }
-  },
-  {
-    "data": {
-      "kind": "user",
       "id": "2023-03_april_fools",
       "label": "April Fools 2023",
       "description": [
@@ -5502,6 +5460,27 @@
       "config_keys": [
         "enabled",
         "showVoiceChannelCoachmark"
+      ]
+    }
+  },
+  {
+    "data": {
+      "kind": "user",
+      "id": "2023-04_nitro_drop_announcement_modal",
+      "label": "2023 Nitro April Drop Announcement Modal",
+      "description": [
+        "Not Eligible",
+        "Control Bucket",
+        "Treatment 1: Enabled Nitro April Drop announcement modal"
+      ],
+      "hash": 4190502511,
+      "buckets": [
+        -1,
+        0,
+        1
+      ],
+      "config_keys": [
+        "enabled"
       ]
     }
   },
