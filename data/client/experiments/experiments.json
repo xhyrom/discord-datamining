@@ -4360,6 +4360,53 @@
         },
         {
           "buckets": {
+            "2": {
+              "rollout": [
+                {
+                  "start": 0,
+                  "end": 10000
+                }
+              ]
+            }
+          },
+          "filters": [
+            {
+              "type": "guild_has_feature",
+              "features": [
+                "DISCOVERABLE"
+              ]
+            }
+          ]
+        },
+        {
+          "buckets": {
+            "1": {
+              "rollout": [
+                {
+                  "start": 0,
+                  "end": 1500
+                }
+              ]
+            },
+            "none": {
+              "rollout": [
+                {
+                  "start": 1500,
+                  "end": 10000
+                }
+              ]
+            }
+          },
+          "filters": [
+            {
+              "type": "guild_member_count_range",
+              "min_count": 300,
+              "max_count": null
+            }
+          ]
+        },
+        {
+          "buckets": {
             "1": {
               "rollout": [
                 {
@@ -4386,17 +4433,17 @@
           ]
         }
       ],
-      "revision": 3,
+      "revision": 4,
       "overrides": {
         "1": [
           "937605284065607711",
           "954471955782844446",
-          "1009606240546066473",
           "1033868531118374975",
           "1094865563152551996"
         ],
         "2": [
-          "1128777448062988471"
+          "1128777448062988471",
+          "1009606240546066473"
         ]
       },
       "overrides_formatted": []
