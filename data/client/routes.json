@@ -2332,6 +2332,14 @@
     "url": "/users/@me/billing/stripe/payment-intents/:param",
     "allowed_methods": null
   },
+  "BILLING_STANDALONE_CHECKOUT_PAGE": {
+    "url": "/billing/premium/subscribe?plan_id=:param&gift=:param&load_id=:param",
+    "allowed_methods": null
+  },
+  "BILLING_STANDALONE_CHECKOUT_LOGIN_HANDOFF": {
+    "url": "//canary.discord.com/billing/premium/subscribe/login-handoff?handoff_key=:param&handoff_token=:param&destination=:param",
+    "allowed_methods": null
+  },
   "BILLING_PAYPAL_BILLING_AGREEMENT_TOKENS": {
     "url": "/users/@me/billing/paypal/billing-agreement-tokens",
     "allowed_methods": [
