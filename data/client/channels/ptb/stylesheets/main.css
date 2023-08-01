@@ -24308,13 +24308,13 @@ html.disable-forced-colors * {
     --background-message-highlight: hsl(var(--brand-360-hsl)/0.08);
     --background-message-highlight-hover: hsl(var(--brand-360-hsl)/0.06);
     --background-message-hover: var(--dontuse-21);
-    --background-mobile-primary: var(--primary-600);
-    --background-mobile-secondary: var(--primary-630);
+    --background-mobile-primary: var(--black-500);
+    --background-mobile-secondary: var(--dontuse-26);
     --background-modifier-accent: hsl(var(--dontuse-16-hsl)/0.455);
     --background-modifier-accent-2: hsl(var(--dontuse-11-hsl)/0.32);
-    --background-modifier-active: hsl(var(--primary-500-hsl)/0.48);
+    --background-modifier-active: hsl(var(--dontuse-15-hsl)/0.48);
     --background-modifier-hover: hsl(var(--primary-500-hsl)/0.3);
-    --background-modifier-selected: hsl(var(--primary-500-hsl)/0.6);
+    --background-modifier-selected: hsl(var(--dontuse-15-hsl)/0.6);
     --background-nested-floating: var(--black-500);
     --background-primary: var(--black-500);
     --background-secondary: var(--dontuse-23);
@@ -24373,9 +24373,13 @@ html.disable-forced-colors * {
     --channel-icon: var(--primary-400);
     --channel-text-area-placeholder: var(--primary-400);
     --channeltextarea-background: var(--primary-800);
+    --chat-background: var(--black-500);
+    --chat-input-container-background: var(--primary-600);
     --divider-strong: hsl(var(--dontuse-11-hsl)/0.2);
     --header-primary: var(--dontuse-2);
     --header-secondary: var(--dontuse-8);
+    --home-background: var(--primary-760);
+    --home-card-resting-border: hsl(var(--transparent-hsl)/0);
     --icon-primary: var(--dontuse-5);
     --input-background: var(--dontuse-22);
     --input-placeholder-text: var(--dontuse-9);
@@ -24462,9 +24466,7 @@ html.disable-forced-colors * {
     --border-subtle: hsl(var(--dontuse-11-hsl)/0.12);
     --bug-reporter-modal-submitting-background: hsl(var(--primary-800-hsl)/0.6);
     --channels-default: var(--primary-360);
-    --chat-background: var(--primary-600);
     --chat-border: var(--primary-700);
-    --chat-input-container-background: var(--primary-600);
     --control-brand-foreground: var(--brand-360);
     --control-brand-foreground-new: var(--brand-360);
     --creator-revenue-icon-gradient-end: var(--teal-430);
@@ -24489,8 +24491,6 @@ html.disable-forced-colors * {
     --forum-post-extra-media-count-container-background: hsl(var(--primary-660-hsl)/0.8);
     --forum-post-tag-background: hsl(var(--primary-660-hsl)/0.9);
     --header-muted: var(--dontuse-10);
-    --home-background: var(--primary-645);
-    --home-card-resting-border: hsl(var(--transparent-hsl)/0);
     --icon-muted: var(--dontuse-13);
     --icon-secondary: var(--dontuse-9);
     --info-box-background: hsl(var(--blue-345-hsl)/0.1);
@@ -24618,9 +24618,13 @@ html.disable-forced-colors * {
     --channel-icon: var(--primary-400);
     --channel-text-area-placeholder: var(--primary-430);
     --channeltextarea-background: var(--primary-560);
+    --chat-background: var(--primary-600);
+    --chat-input-container-background: var(--primary-600);
     --divider-strong: hsl(var(--dontuse-11-hsl)/0.18);
     --header-primary: var(--dontuse-1);
     --header-secondary: var(--dontuse-9);
+    --home-background: var(--primary-645);
+    --home-card-resting-border: hsl(var(--transparent-hsl)/0);
     --icon-primary: var(--dontuse-3);
     --input-background: hsl(var(--dontuse-24-hsl)/0.6);
     --input-placeholder-text: var(--dontuse-9);
@@ -163786,4 +163790,4 @@ html .invoiceCancelRow-dVOR64 {
     flex-direction: column
 }
 
-/*# sourceMappingURL=40532.57ba626aa64274e00d04.css.map*/
+/*# sourceMappingURL=40532.f4ec543bc77d977cff0b.css.map*/
