@@ -10746,7 +10746,6 @@
   "ACTIVIY_CARD_LIVE_STAGE_TWO_PARTICIPANTS": "\"!!{name1}!! and !!{name2}!!\"",
   "ACTIVITY_CARD_LIVE_STAGE_MANY_FRIENDS": "\"!!{name}!! + {count, number} friends\"",
   "ACTIVITY_CARD_LIVE_STAGE_MANY_PARTICIPANTS": "\"!!{name}!! + {count, number} others\"",
-  "ACTIVITY_CARD_COUNT": "\"{n} Happening Now\"",
   "GUILD_EVENTS": "\"Events\"",
   "GUILD_EVENTS_PLURAL": "\"{number, plural, =1 {# Event} other {# Events}}\"",
   "LIVE_EVENT": "\"Live Event\"",
