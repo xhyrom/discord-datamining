@@ -1,0 +1,31 @@
+{
+  "data": {
+    "kind": "user",
+    "id": "2023-08_mobile_redesign_phase_one_existing_users",
+    "label": "Tabs V2 - Phase One - Existing Users",
+    "description": [
+      "Not Eligible",
+      "Control Bucket",
+      "Treatment 1: Redesign Base",
+      "Treatment 2: Redesign + Voice UI",
+      "Treatment 3: Redesign + Notification Center",
+      "Treatment 4: Redesign + Search",
+      "Treatment 5: Redesign + Everything",
+      "Treatment 6: Redesign + Day 0"
+    ],
+    "hash": 4045057395,
+    "buckets": [
+      -1,
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6
+    ],
+    "config_keys": [
+      "enabled"
+    ]
+  }
+}
