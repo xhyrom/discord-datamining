@@ -163210,6 +163210,77 @@ html .invoiceCancelRow-3s2UuC {
     color: var(--primary-400)
 }
 
+.header-1iJjq1 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    padding-top: 64px;
+    padding-bottom: 14px
+}
+
+.headerImage-19a454 {
+    position: absolute;
+    top: -68px;
+    left: 140px;
+    width: 170px
+}
+
+.title-P6bNuB {
+    font-weight: 700;
+    padding-bottom: 10px
+}
+
+.subtitle-7-0kWR,
+.title-P6bNuB {
+    text-align: center
+}
+
+.subtitle-7-0kWR {
+    color: var(--header-secondary)
+}
+
+.description-1TZfIb {
+    color: var(--text-normal);
+    text-align: center;
+    margin-top: 8px
+}
+
+.modalCloseButton-219Lzm {
+    position: absolute;
+    top: 16px;
+    right: 16px
+}
+
+.content-q7gq3Z {
+    padding-bottom: 16px
+}
+
+.help-7veoL7 {
+    margin-top: 8px
+}
+
+.password-2U-zAA {
+    margin-top: 16px
+}
+
+.buttons-3XLV4E {
+    margin-top: 24px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column
+}
+
 .header-1kWa4s {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -163723,75 +163794,4 @@ html .invoiceCancelRow-dVOR64 {
     height: 200px
 }
 
-.header-1iJjq1 {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: column;
-    flex-direction: column;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
-    padding-top: 64px;
-    padding-bottom: 14px
-}
-
-.headerImage-19a454 {
-    position: absolute;
-    top: -68px;
-    left: 140px;
-    width: 170px
-}
-
-.title-P6bNuB {
-    font-weight: 700;
-    padding-bottom: 10px
-}
-
-.subtitle-7-0kWR,
-.title-P6bNuB {
-    text-align: center
-}
-
-.subtitle-7-0kWR {
-    color: var(--header-secondary)
-}
-
-.description-1TZfIb {
-    color: var(--text-normal);
-    text-align: center;
-    margin-top: 8px
-}
-
-.modalCloseButton-219Lzm {
-    position: absolute;
-    top: 16px;
-    right: 16px
-}
-
-.content-q7gq3Z {
-    padding-bottom: 16px
-}
-
-.help-7veoL7 {
-    margin-top: 8px
-}
-
-.password-2U-zAA {
-    margin-top: 16px
-}
-
-.buttons-3XLV4E {
-    margin-top: 24px;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: column;
-    flex-direction: column
-}
-
-/*# sourceMappingURL=40532.a95802881f41c97df997.css.map*/
+/*# sourceMappingURL=40532.1fba51eba38bb66b8f91.css.map*/
