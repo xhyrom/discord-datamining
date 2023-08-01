@@ -131197,7 +131197,8 @@ html .invoiceCancelRow-3s2UuC {
 .headerImage-2osrlm {
     position: absolute;
     top: -68px;
-    left: 140px
+    left: 140px;
+    width: 180px
 }
 
 .title-3VYtQS {
@@ -163738,7 +163739,8 @@ html .invoiceCancelRow-dVOR64 {
 .headerImage-19a454 {
     position: absolute;
     top: -68px;
-    left: 140px
+    left: 140px;
+    width: 170px
 }
 
 .title-P6bNuB {
@@ -163790,4 +163792,4 @@ html .invoiceCancelRow-dVOR64 {
     flex-direction: column
 }
 
-/*# sourceMappingURL=40532.f4ec543bc77d977cff0b.css.map*/
+/*# sourceMappingURL=40532.25bedab2b841c4fe4bf5.css.map*/
