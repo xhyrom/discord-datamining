@@ -70036,7 +70036,7 @@ strong {
     flex-shrink: 0
 }
 
-.spoilerTag-dqzdZO {
+.obscuredTag-qAAFu5 {
     position: absolute;
     left: 50%;
     top: 50%;
@@ -70065,7 +70065,7 @@ strong {
     object-position: center left
 }
 
-.spoiler-1FYHTa {
+.obscured-3kBacU {
     -webkit-filter: blur(20px);
     filter: blur(20px);
     pointer-events: none
@@ -70419,7 +70419,7 @@ strong {
     object-position: center
 }
 
-.spoilerTag-1qflCA {
+.obscuredTag-3xj7Bp {
     position: absolute;
     left: 50%;
     top: 50%;
@@ -70428,7 +70428,7 @@ strong {
     color: hsl(var(--black-500-hsl)/.6)
 }
 
-.spoiler-2tIqOQ {
+.obscured-79ewnA {
     -webkit-filter: blur(20px);
     filter: blur(20px);
     pointer-events: none
@@ -72580,13 +72580,13 @@ strong {
     max-height: 72px
 }
 
-.spoiler-1DvH94 {
+.obscured-4O8m5- {
     -webkit-filter: blur(20px);
     filter: blur(20px);
     pointer-events: none
 }
 
-.spoilerTag-2KMOwX {
+.obscuredTag-26nunh {
     position: absolute;
     left: 50%;
     top: 50%;
@@ -145901,7 +145901,9 @@ html .invoiceCancelRow-3s2UuC {
     pointer-events: none
 }
 
-.spoilerTagContainer-2my203 {
+.obscuredTagContainer-1l_7fU {
+    position: absolute;
+    top: 0;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -145915,7 +145917,7 @@ html .invoiceCancelRow-3s2UuC {
     width: 100%
 }
 
-.spoilerTag-1ZDrHX {
+.obscuredTag-2OJ7b8 {
     z-index: 1;
     color: hsl(var(--black-500-hsl)/.6)
 }
@@ -145949,7 +145951,7 @@ html .invoiceCancelRow-3s2UuC {
     object-position: center
 }
 
-.spoiler-3yJOyt {
+.obscured-3re5Je {
     -webkit-filter: blur(20px);
     filter: blur(20px);
     pointer-events: none
@@ -163792,4 +163794,4 @@ html .invoiceCancelRow-dVOR64 {
     flex-direction: column
 }
 
-/*# sourceMappingURL=40532.25bedab2b841c4fe4bf5.css.map*/
+/*# sourceMappingURL=40532.a95802881f41c97df997.css.map*/
