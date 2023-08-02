@@ -127,7 +127,7 @@
             <p>So, what happened? We have a few learnings to share:</p>
             <ol role="list">
                 <li>Fulfillment to a distributed global team is <strong>really hard.</strong> Work from home makes this even more complicated! My advice: pay for importers in any difficult-to-ship-to countries</li>
-                <li>Always test on yourself first before shipping keys out to users. Because we we did this for weeks, we were able to aggressively roll out to all FTEs on our original timeline!</li>
+                <li>Always test on yourself first before shipping keys out to users. Because we did this for weeks, we were able to aggressively roll out to all FTEs on our original timeline!</li>
                 <li>Listen to concerns, and find a path forward for unusual cases. We were changing people’s behavior. If they are docked 100% of the time and requested a WebAuthn-compatible keyboard we let them buy their favorite and expense it.</li>
                 <li>Lean on enterprise shipping partners where you can. We used Yubico Enterprise Delivery, and their portal helped with US, UK, EU, etc. adoption tremendously. But: they don’t support every country we needed, so we had some complications to work through ourselves</li>
                 <li>For enforcement: stick to your dates, but allow for exceptions. The “Exception Group” in the plan let us move the needle forward without blocking on the longest tail cases— invaluable!</li>
