@@ -14387,7 +14387,7 @@
   "INVENTORY_COLLECT_PACK": "\"Collect Pack\"",
   "INVENTORY_REMOVE_PACK": "\"Remove Pack\"",
   "INVENTORY_ADD_PACK_WITHOUT_JOINING": "\"Add this pack to use emoji without joining the server.\"",
-  "INVENTORY_REMOVE_PACK_DESCRIPTION": "\"You already have this pack saved. you can remove it from your expression picker anytime.\"",
+  "INVENTORY_REMOVE_PACK_DESCRIPTION": "\"You already have this pack saved. You can remove it from your expression picker anytime.\"",
   "INVENTORY_COLLECT_NITRO_DESCRIPTION": "\"You have already collected your {maxFreePacks} free pack, upgrade to Nitro to collect {maxPacks}\"",
   "INVENTORY_EMOJI_DETAILS": "\"See details\"",
   "INVENTORY_ALLOW_USE_SETTING_MOBILE": "\"Allow anyone to use server emoji\"",
