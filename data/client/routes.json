@@ -586,6 +586,14 @@
       "OPTIONS"
     ]
   },
+  "EMOJI_SOURCE_DATA": {
+    "url": "/emojis/:param/source",
+    "allowed_methods": [
+      "GET",
+      "HEAD",
+      "OPTIONS"
+    ]
+  },
   "TOP_EMOJIS_FOR_GUILD": {
     "url": "/guilds/:param/top-emojis",
     "allowed_methods": [
