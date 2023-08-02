@@ -1,0 +1,21 @@
+{
+  "data": {
+    "kind": "user",
+    "id": "2023-08_premium_tutorial_for_all",
+    "label": "Premium Tutorial Experience For All",
+    "description": [
+      "Not Eligible",
+      "Control Bucket",
+      "Treatment 1: All net new users (exclude trial) receive premium tutorial experience"
+    ],
+    "hash": 1899757821,
+    "buckets": [
+      -1,
+      0,
+      1
+    ],
+    "config_keys": [
+      "enabled"
+    ]
+  }
+}
