@@ -1,0 +1,21 @@
+{
+  "data": {
+    "kind": "user",
+    "id": "2023-07_p13n_summarization_model_swap",
+    "label": "User channel summarization model swapping",
+    "description": [
+      "Not Eligible",
+      "Control Bucket",
+      "Treatment 1: Enable SOURCE_1"
+    ],
+    "hash": 3819099123,
+    "buckets": [
+      -1,
+      0,
+      1
+    ],
+    "config_keys": [
+      "enabled"
+    ]
+  }
+}

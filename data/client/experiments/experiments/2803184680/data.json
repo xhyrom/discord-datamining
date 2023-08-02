@@ -1,7 +1,22 @@
 {
   "data": {
     "kind": "guild",
-    "hash": 2803184680
+    "id": "2023-07_p13n_summarization_model_swap_guild",
+    "label": "Guild channel summarization model swapping",
+    "description": [
+      "Not Eligible",
+      "Control Bucket",
+      "Treatment 1: Override guild summaries to use SOURCE_1"
+    ],
+    "hash": 2803184680,
+    "buckets": [
+      -1,
+      0,
+      1
+    ],
+    "config_keys": [
+      "enabled"
+    ]
   },
   "rollout": {
     "populations": [
