@@ -1,0 +1,21 @@
+{
+  "data": {
+    "kind": "user",
+    "id": "2023-08_periodic_voice_stats",
+    "label": "Periodic Voice Stats",
+    "description": [
+      "Not Eligible",
+      "Control Bucket",
+      "Treatment 1: Enable sending periodic voice stats"
+    ],
+    "hash": 1794801891,
+    "buckets": [
+      -1,
+      0,
+      1
+    ],
+    "config_keys": [
+      "enabled"
+    ]
+  }
+}
