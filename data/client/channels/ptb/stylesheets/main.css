@@ -162097,6 +162097,54 @@ html .invoiceCancelRow-3s2UuC {
     background-color: hsl(var(--primary-500-hsl)/.04)
 }
 
+.root-1jaWT0 {
+    background: var(--background-tertiary);
+    border-radius: var(--radius-sm);
+    color: var(--interactive-active)
+}
+
+.nameSection-n4BTZZ {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    padding: 8px;
+    gap: 12px;
+    -ms-flex-wrap: nowrap;
+    flex-wrap: nowrap;
+    border-bottom: 1px solid var(--background-modifier-accent)
+}
+
+.name-2XgdM7 {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    min-width: 0
+}
+
+.timeContainer-3n38qL {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex
+}
+
+.timeContainer-3n38qL .timeTitle-AsX7fF {
+    margin-bottom: 4px
+}
+
+.timeContainer-3n38qL>* {
+    padding: 12px 24px;
+    -webkit-box-flex: 1;
+    -ms-flex: 1 1 auto;
+    flex: 1 1 auto
+}
+
+.timeContainer-3n38qL>:first-child {
+    border-right: 1px solid var(--background-modifier-accent)
+}
+
 .clipForm-2rnaip {
     -webkit-box-flex: 1;
     -ms-flex: 1 0 auto;
@@ -162111,16 +162159,19 @@ html .invoiceCancelRow-3s2UuC {
     -webkit-box-direction: normal;
     -ms-flex-direction: column;
     flex-direction: column;
-    -webkit-box-pack: justify;
-    -ms-flex-pack: justify;
-    justify-content: space-between
+    max-width: 330px
 }
 
-.clipFormBody-1uBUqz {
-    padding: 16px
+.clipFormSection-3tyQJu {
+    padding: 16px 16px 0
+}
+
+.clipFormSection-3tyQJu:not(:first-child) {
+    border-top: 1px solid var(--background-modifier-accent)
 }
 
 .clipFormFooter-3kblL0 {
+    margin-top: auto;
     display: grid;
     padding: 16px;
     border-top: 1px solid var(--background-modifier-accent);
@@ -162141,8 +162192,7 @@ html .invoiceCancelRow-3s2UuC {
 }
 
 .clipFormSwitches-2bGPD9 {
-    margin-top: 16px;
-    border-bottom: 1px solid var(--background-modifier-accent)
+    margin-top: 16px
 }
 
 .modalContent-3z4ESM {
@@ -163796,4 +163846,4 @@ html .invoiceCancelRow-dVOR64 {
     height: 200px
 }
 
-/*# sourceMappingURL=40532.04aeb59b63c3d221b623.css.map*/
+/*# sourceMappingURL=40532.b3986122f4090bfbd6fb.css.map*/
