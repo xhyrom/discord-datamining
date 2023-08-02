@@ -17585,9 +17585,13 @@ html.disable-forced-colors * {
 }
 
 .guildIcon-EvT-p6 {
-    width: 100%;
-    height: 100%;
     cursor: pointer
+}
+
+.guildIcon-EvT-p6,
+.guildIconNotClickable-1P3P78 {
+    width: 100%;
+    height: 100%
 }
 
 .guildBadge-3lXbZA {
@@ -163795,4 +163799,4 @@ html .invoiceCancelRow-dVOR64 {
     height: 200px
 }
 
-/*# sourceMappingURL=40532.e72984209acf664ba516.css.map*/
+/*# sourceMappingURL=40532.db37ba2e4cac627a64c4.css.map*/
