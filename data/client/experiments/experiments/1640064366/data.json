@@ -1,22 +1,7 @@
 {
   "data": {
     "kind": "guild",
-    "id": "2023-03_guild_safety_settings",
-    "label": "Safety check in guild settings",
-    "description": [
-      "Not Eligible",
-      "Control Bucket",
-      "Treatment 1: Show safety check in settings"
-    ],
-    "hash": 1640064366,
-    "buckets": [
-      -1,
-      0,
-      1
-    ],
-    "config_keys": [
-      "showSafetySettings"
-    ]
+    "hash": 1640064366
   },
   "rollout": {
     "populations": [

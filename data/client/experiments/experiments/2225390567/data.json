@@ -1,7 +1,24 @@
 {
   "data": {
     "kind": "guild",
-    "hash": 2225390567
+    "id": "2023-08_guild_alert_mode_friend_server",
+    "label": "Guild Alert Mode (friend servers only)",
+    "description": [
+      "Not Eligible",
+      "Control Bucket",
+      "Treatment 1: Show alert mode experience",
+      "Treatment 2: Show alert mode experience with member safety"
+    ],
+    "hash": 2225390567,
+    "buckets": [
+      -1,
+      0,
+      1,
+      2
+    ],
+    "config_keys": [
+      "enabled"
+    ]
   },
   "rollout": {
     "populations": [
