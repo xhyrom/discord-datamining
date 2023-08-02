@@ -15135,6 +15135,7 @@
   "DOMAIN_VERIFICATION_USE_HTTP": "\"Verify using HTTPS\"",
   "DOMAIN_VERIFICATION_USE_DNS": "\"Verify using DNS\"",
   "DOMAIN_VERIFICATION_INSTRUCTIONS_HTTP": "\"Add this file to your server:\"",
+  "GUILD_SHOP_CHANNEL_LABEL": "\"Server Shop\"",
   "DISCORD_NAME": "\"Discord\"",
   "DEFAULT_CONFIRMATION_MODAL_HEADER": "\"Are you sure?\"",
   "DISAPPROVAL": "\"ಠ_ಠ\"",
