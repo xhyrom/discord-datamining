@@ -2,17 +2,17 @@
 <p><strong><span class="wysiwyg-font-size-large">What this article covers:</span><br></strong></p>
 <ul>
     <li>
-        <a href="#h_01GESS6TZ45Q4HK60NVQTKNGC7" target="_self"><strong>What is Blazing 8s?</strong></a>
+        <a href="#h_01GESS6TZ45Q4HK60NVQTKNGC7" target="_self">What is Blazing 8s?</a>
         <ul>
             <li><a href="#docs-internal-guid-c8dba689-7fff-1d7a-55e7-9f1dc42833cb" target="_self">Starting Blazing 8s in Discord</a></li>
         </ul>
     </li>
-    <li><strong><a href="#h_01GESS5Z8DF3CD779FT3B3HJ9Z" target="_self" rel="undefined">Blazing 8s FAQ</a></strong></li>
+    <li><a href="#h_01GESS5Z8DF3CD779FT3B3HJ9Z" target="_self" rel="undefined">Blazing 8s FAQ</a></li>
 </ul>
 <h1 id="h_01GESS6TZ45Q4HK60NVQTKNGC7">WHAT IS Blazing 8s?</h1>
 <p>Blazing 8s is an <a href="https://support.discord.com/hc/articles/4422142836759" target="_blank" rel="noopener noreferrer">Activity</a> that we've developed here at Discord. It is our Crazy Eights-inspired card game that you can play with your friends! The rules are simple — on your turn, discard a card from your hand with the same suit or number as the previous card. Playing special cards allows you to skip other players, reverse the direction of play, and even swap hands with other players. The first person to discard all their cards wins!</p>
 <h2 id="docs-internal-guid-c8dba689-7fff-1d7a-55e7-9f1dc42833cb">Starting Blazing 8s In Discord</h2>
-<p>There are many different ways you can launch Blazing 8s in the Discord app for you and your friends! Whether in a server’s voice channel or in a direct message, you can check out <a href="https://support.discord.com/hc/en-us/articles/4422142836759-Activities-on-Discord" target="_blank" rel="noopener">Activities on Discord</a> for instructions on how to start any Activity.</p>
+<p>There are many different ways you can launch Blazing 8s in the Discord app for you and your friends! Whether in a server’s voice channel or in a direct message, you can check out <a href="https://support.discord.com/hc/en-us/articles/4422142836759-Activities-on-Discord" target="_blank" rel="noopener noreferrer">Activities on Discord</a> for instructions on how to start any Activity.</p>
 <h3><span style="color: #434343;" data-darkreader-inline-color="">Before starting any Discord Activity on Desktop, please make sure to turn on Hardware Acceleration in User Settings &gt; Advanced.</span></h3>
 <h1 id="h_01GESS5Z8DF3CD779FT3B3HJ9Z"><span class="notion-enable-hover" data-token-index="0" data-reactroot="">BLAZING 8s FAQ</span></h1>
 <p><span class="wysiwyg-font-size-large"><strong>Q: Why is Discord adding games into voice channels?</strong></span></p>
