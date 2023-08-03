@@ -665,15 +665,6 @@
     "url": "/guilds/:param/home-headers/:param.jpg",
     "allowed_methods": null
   },
-  "GUILD_WELCOME_SCREEN": {
-    "url": "/guilds/:param/welcome-screen",
-    "allowed_methods": [
-      "GET",
-      "HEAD",
-      "OPTIONS",
-      "PATCH"
-    ]
-  },
   "GUILD_MEMBER_VERIFICATION": {
     "url": "/guilds/:param/member-verification",
     "allowed_methods": [
