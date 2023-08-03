@@ -99156,6 +99156,88 @@ strong {
     vertical-align: middle
 }
 
+.wrapper-1MViKS {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    pointer-events: none;
+    position: sticky;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    z-index: 10;
+    opacity: 0
+}
+
+.fullscreenWrapper-39cv9k {
+    margin-bottom: 42px
+}
+
+.innerWrapper-Eo2E86 {
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    background-color: var(--background-secondary-alt);
+    border-radius: 50px;
+    -webkit-box-shadow: var(--elevation-high);
+    box-shadow: var(--elevation-high);
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    padding: 13px 27px 13px 13px;
+    pointer-events: all;
+    position: relative;
+    width: 438px
+}
+
+.innerWrapper-Eo2E86:after,
+.innerWrapper-Eo2E86:before {
+    border: 2px solid transparent;
+    border-radius: inherit;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    content: "";
+    height: 100%;
+    pointer-events: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%
+}
+
+.innerWrapper-Eo2E86:after {
+    border-color: var(--guild-boosting-blue);
+    -webkit-mask: -webkit-gradient(linear, left bottom, left top, from(#000), to(transparent));
+    -webkit-mask: linear-gradient(0deg, #000, transparent);
+    mask: -webkit-gradient(linear, left bottom, left top, from(#000), to(transparent));
+    mask: linear-gradient(0deg, #000, transparent)
+}
+
+.innerWrapper-Eo2E86:before {
+    border-color: var(--guild-boosting-purple)
+}
+
+.theme-light .innerWrapper-Eo2E86 {
+    background-color: var(--background-secondary)
+}
+
+.button-2j-SXS {
+    width: 160px;
+    height: 40px
+}
+
+.button-2j-SXS:first-child {
+    margin-right: 10px
+}
+
 .root-1-rRcJ {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -99216,6 +99298,10 @@ strong {
 
 .wideRow-3_IyUX {
     height: 128px
+}
+
+.shortRow-ju1LeA {
+    height: 20px
 }
 
 .cell-RLL0Ge,
@@ -99524,6 +99610,14 @@ strong {
 
 .footerSpacing-3N6Oem {
     height: 228px
+}
+
+.footerSpacingSmall-1daTM1 {
+    height: 128px
+}
+
+.footerSpacingSmallFullscreen-1iMTGQ {
+    height: 96px
 }
 
 .zIndex1-2EIyei {
@@ -163954,4 +164048,4 @@ html .invoiceCancelRow-dVOR64 {
     height: 200px
 }
 
-/*# sourceMappingURL=40532.1ab3bb356bb7c550ac0a.css.map*/
+/*# sourceMappingURL=40532.bab498c8dd64bf1d7118.css.map*/
