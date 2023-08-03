@@ -140420,9 +140420,13 @@ html .invoiceCancelRow-3s2UuC {
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
-    background-color: var(--background-secondary);
     border-radius: var(--radius-xs);
+    background-color: var(--background-secondary);
     line-height: 0
+}
+
+.button-1-uzof:hover {
+    background-color: var(--background-secondary-alt)
 }
 
 .miniIcon-2oK0u_ {
@@ -140534,22 +140538,40 @@ html .invoiceCancelRow-3s2UuC {
 .sortInput-FP6EX- {
     -ms-flex-preferred-size: 25%;
     flex-basis: 25%;
-    margin-right: 14px
+    margin-right: 16px
 }
 
-.buttonReset-1CQ7aC,
-.closeIcon-2HAVbL {
-    color: var(--interactive-normal)
-}
-
-.buttonReset-1CQ7aC {
+.button-1hrjc7 {
     line-height: 0;
     height: 40px;
     padding: 8px
 }
 
-.buttonReset-1CQ7aC:hover {
+.settingsButton-2vjaUY {
+    margin-right: 8px;
+    background-color: var(--input-background)
+}
+
+.settingsButton-2vjaUY:hover {
+    background-color: var(--background-secondary-alt)
+}
+
+.settingsIcon-3NBV-l {
+    color: var(--interactive-active);
+    width: 24px;
+    height: 24px
+}
+
+.closeButton-2QyACI {
+    color: var(--interactive-normal)
+}
+
+.closeButton-2QyACI:hover {
     color: var(--interactive-active)
+}
+
+.closeIcon-2HAVbL {
+    color: var(--interactive-normal)
 }
 
 .root-12-TZo {
@@ -163859,4 +163881,4 @@ html .invoiceCancelRow-dVOR64 {
     height: 200px
 }
 
-/*# sourceMappingURL=40532.2b67c7c3a2542b11dd1c.css.map*/
+/*# sourceMappingURL=40532.81163241dc2a8c013214.css.map*/
