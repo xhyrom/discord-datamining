@@ -4315,14 +4315,14 @@
   {
     "data": {
       "kind": "user",
-      "id": "2023-02_nitroduction_experience",
-      "label": "Nitroduction Experience",
+      "id": "2023-08_premium_tutorial_for_all",
+      "label": "Premium Tutorial Experience For All",
       "description": [
         "Not Eligible",
         "Control Bucket",
-        "Treatment 1: One month trial users recieve the Nitroduction experience"
+        "Treatment 1: All net new users (exclude trial) receive premium tutorial experience"
       ],
-      "hash": 2956169075,
+      "hash": 1899757821,
       "buckets": [
         -1,
         0,
@@ -4336,14 +4336,14 @@
   {
     "data": {
       "kind": "user",
-      "id": "2023-08_premium_tutorial_for_all",
-      "label": "Premium Tutorial Experience For All",
+      "id": "2023-02_nitroduction_experience",
+      "label": "Nitroduction Experience",
       "description": [
         "Not Eligible",
         "Control Bucket",
-        "Treatment 1: All net new users (exclude trial) receive premium tutorial experience"
+        "Treatment 1: One month trial users recieve the Nitroduction experience"
       ],
-      "hash": 1899757821,
+      "hash": 2956169075,
       "buckets": [
         -1,
         0,
