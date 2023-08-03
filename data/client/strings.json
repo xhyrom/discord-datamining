@@ -15606,6 +15606,7 @@
   "CLIPS_GALLERY_NO_CLIPS_CLIPS_NOT_ENABLED": "\"You haven’t clipped anything yet! Get started by [enabling clipping](onClick).\"",
   "CLIPS_EDIT_DATE_TITLE": "\"Clipped On\"",
   "CLIPS_EDIT_TIME_TITLE": "\"Time\"",
+  "CLIPS_EDIT_USER_LIST_TITLE": "\"In this clip\"",
   "STAFF_PTO_NOTICE": "\"Heads up! This person may be Out of Office.\"",
   "CONSOLE_PLAYSTATION_STAGING_TRANSFER_VOICE": "\"Transfer to PlayStation (sp-int)\"",
   "CONSOLE_PLAYSTATION_STAGING_JOIN_VOICE": "\"Join on PlayStation (sp-int)\"",
