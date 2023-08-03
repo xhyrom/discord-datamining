@@ -14087,6 +14087,8 @@
   "SOUNDBOARD_SOUND_DISABLED_PREMIUM_TIER_LOST": "\"Requires higher Server Boost Level\"",
   "SOUNDBOARD_NITRO_UPSELL_TITLE": "\"You can't use this sound right now\"",
   "SOUNDBOARD_NITRO_UPSELL_BODY": "\"Use your favorite sounds across Discord and much more with Nitro. [Learn more](onClick)\"",
+  "SOUNDBOARD_PREMIUM_UPSELL_TOAST": "\"Subscribe to Nitro to send sounds across servers.\"",
+  "SOUNDBOARD_PREMIUM_UPGRADE_UPSELL_TOAST": "\"Upgrade to Nitro to send sounds across servers.\"",
   "GUILD_SETTINGS_AUDIT_LOG_GUILD_SOUNDBOARD_SOUND_CREATED": "\"$[**!!{user}!!**](userHook) uploaded a Soundboard sound\"",
   "GUILD_SETTINGS_AUDIT_LOG_GUILD_SOUNDBOARD_SOUND_UPDATED": "\"$[**!!{user}!!**](userHook) updated a Soundboard sound\"",
   "GUILD_SETTINGS_AUDIT_LOG_GUILD_SOUNDBOARD_SOUND_DELETED": "\"$[**!!{user}!!**](userHook) deleted a Soundboard sound\"",
