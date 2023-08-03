@@ -2772,13 +2772,21 @@
       "description": [
         "Not Eligible",
         "Control Bucket",
-        "Treatment 1: Enable sending periodic voice stats"
+        "Treatment 1: Enable sending periodic voice stats for 100% of calls",
+        "Treatment 2: Enable sending periodic voice stats for 50% of calls",
+        "Treatment 3: Enable sending periodic voice stats for 20% of calls",
+        "Treatment 4: Enable sending periodic voice stats for 10% of calls",
+        "Treatment 5: Enable sending periodic voice stats for 5% of calls"
       ],
       "hash": 1794801891,
       "buckets": [
         -1,
         0,
-        1
+        1,
+        2,
+        3,
+        4,
+        5
       ],
       "config_keys": [
         "enabled"
