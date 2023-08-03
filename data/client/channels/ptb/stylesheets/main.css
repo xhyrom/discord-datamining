@@ -140149,13 +140149,13 @@ html .invoiceCancelRow-3s2UuC {
     cursor: pointer;
     overflow: hidden;
     padding: 8px;
-    background: transparent;
+    background: var(--background-modifier-hover);
     -webkit-filter: var(--shadow-low-filter);
     filter: var(--shadow-low-filter)
 }
 
 .clipItem-3fKTW2:hover {
-    background: var(--background-tertiary);
+    background: var(--background-modifier-selected);
     -webkit-filter: var(--shadow-low-hover-filter);
     filter: var(--shadow-low-hover-filter)
 }
@@ -140416,7 +140416,6 @@ html .invoiceCancelRow-3s2UuC {
 }
 
 .root-12-TZo {
-    background-color: var(--background-primary);
     border-radius: 8px;
     padding: 0;
     width: 992px;
@@ -163955,4 +163954,4 @@ html .invoiceCancelRow-dVOR64 {
     height: 200px
 }
 
-/*# sourceMappingURL=40532.12644784d5033e192b90.css.map*/
+/*# sourceMappingURL=40532.1ab3bb356bb7c550ac0a.css.map*/
