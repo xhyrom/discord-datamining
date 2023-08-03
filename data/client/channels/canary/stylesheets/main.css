@@ -162214,22 +162214,81 @@ html .invoiceCancelRow-3s2UuC {
 
 .timeContainer-3n38qL>* {
     padding: 12px 24px;
-    -webkit-box-flex: 1;
-    -ms-flex: 1 1 auto;
-    flex: 1 1 auto
+    width: 50%;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box
 }
 
 .timeContainer-3n38qL>:first-child {
     border-right: 1px solid var(--background-modifier-accent)
 }
 
+.root-uQCBdJ {
+    background-color: var(--background-tertiary);
+    padding: 12px;
+    border-radius: var(--radius-sm);
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    overflow: hidden
+}
+
+.userItem-2mris9 {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    padding: var(--spacing-4);
+    gap: var(--spacing-12)
+}
+
+.title-_uSBQv,
+.userItem-2mris9 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center
+}
+
+.title-_uSBQv {
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    margin-bottom: var(--spacing-8)
+}
+
+.userCountPill-2DVO59 {
+    border-radius: var(--radius-md);
+    padding: var(--spacing-4) var(--spacing-8);
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    background-color: var(--background-secondary)
+}
+
+.userCountIcon-tRq2vz {
+    margin-left: var(--spacing-4);
+    width: 16px;
+    height: 16px;
+    color: var(--interactive-normal)
+}
+
 .clipForm-2rnaip {
     -webkit-box-flex: 1;
     -ms-flex: 1 0 auto;
     flex: 1 0 auto;
-    margin-left: 16px;
+    margin-left: var(--spacing-16);
     background: var(--background-secondary-alt);
-    border-radius: 8px;
+    border-radius: var(--spacing-8);
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -162241,20 +162300,41 @@ html .invoiceCancelRow-3s2UuC {
 }
 
 .clipFormSection-3tyQJu {
-    padding: 16px 16px 0
+    padding: var(--spacing-16);
+    padding-bottom: 0;
+    overflow: hidden
 }
 
 .clipFormSection-3tyQJu:not(:first-child) {
     border-top: 1px solid var(--background-modifier-accent)
 }
 
+.editSection-1piDhG {
+    -ms-flex-negative: 0;
+    flex-shrink: 0
+}
+
+.metadataSection-1od6PT {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -ms-flex-negative: 1;
+    flex-shrink: 1;
+    min-height: 0;
+    padding-bottom: var(--spacing-16)
+}
+
 .clipFormFooter-3kblL0 {
     margin-top: auto;
     display: grid;
-    padding: 16px;
+    padding: var(--spacing-16);
     border-top: 1px solid var(--background-modifier-accent);
     grid-template-columns: 1fr 1fr 1fr;
-    gap: 16px
+    gap: var(--spacing-16)
 }
 
 .clipFormFooterPrimaryButton-ngnteH {
@@ -162266,11 +162346,18 @@ html .invoiceCancelRow-3s2UuC {
 }
 
 .clipFormItem-22cQCJ {
-    margin-bottom: 8px
+    margin-bottom: var(--spacing-8)
 }
 
 .clipFormSwitches-2bGPD9 {
-    margin-top: 16px
+    margin-top: var(--spacing-16)
+}
+
+.userList-KHsLW7 {
+    margin-top: var(--spacing-8);
+    -ms-flex-negative: 1;
+    flex-shrink: 1;
+    min-height: 0
 }
 
 .modalContent-3z4ESM {
@@ -163881,4 +163968,4 @@ html .invoiceCancelRow-dVOR64 {
     height: 200px
 }
 
-/*# sourceMappingURL=40532.81163241dc2a8c013214.css.map*/
+/*# sourceMappingURL=40532.100424bed22fd7900d12.css.map*/
