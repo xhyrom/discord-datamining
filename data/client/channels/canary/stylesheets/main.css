@@ -49700,6 +49700,13 @@ input[type=checked]:focus-visible+.label-3TDpbn {
     left: 0
 }
 
+.root-3Ek-v- {
+    width: clamp(0, calc(100vw - 160px), 1280px);
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex
+}
+
 .applicationIcon-39og1c {
     margin-right: .5em
 }
@@ -163948,4 +163955,4 @@ html .invoiceCancelRow-dVOR64 {
     height: 200px
 }
 
-/*# sourceMappingURL=40532.df8c44adcf5edd0c41d0.css.map*/
+/*# sourceMappingURL=40532.c80bc4b685fdf4ed2e60.css.map*/
