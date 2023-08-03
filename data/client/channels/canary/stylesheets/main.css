@@ -140287,7 +140287,7 @@ html .invoiceCancelRow-3s2UuC {
 }
 
 .clipItem-3fKTW2:hover {
-    background: var(--background-accent);
+    background: var(--background-tertiary);
     -webkit-filter: var(--shadow-low-hover-filter);
     filter: var(--shadow-low-hover-filter)
 }
@@ -140434,15 +140434,6 @@ html .invoiceCancelRow-3s2UuC {
     height: 20px
 }
 
-.deleteIcon-3QihLY,
-.editIcon-1f2iR1 {
-    color: var(--interactive-normal)
-}
-
-.shareIcon-3x_NcR {
-    color: var(--interactive-active)
-}
-
 .container-3ScZbv {
     -webkit-box-flex: 1;
     -ms-flex: 1;
@@ -140548,30 +140539,12 @@ html .invoiceCancelRow-3s2UuC {
 }
 
 .settingsButton-2vjaUY {
-    margin-right: 8px;
-    background-color: var(--input-background)
-}
-
-.settingsButton-2vjaUY:hover {
-    background-color: var(--background-secondary-alt)
+    margin-right: 8px
 }
 
 .settingsIcon-3NBV-l {
-    color: var(--interactive-active);
     width: 24px;
     height: 24px
-}
-
-.closeButton-2QyACI {
-    color: var(--interactive-normal)
-}
-
-.closeButton-2QyACI:hover {
-    color: var(--interactive-active)
-}
-
-.closeIcon-2HAVbL {
-    color: var(--interactive-normal)
 }
 
 .root-12-TZo {
@@ -163969,4 +163942,4 @@ html .invoiceCancelRow-dVOR64 {
     height: 200px
 }
 
-/*# sourceMappingURL=40532.c292a51207bd05bbc2d3.css.map*/
+/*# sourceMappingURL=40532.7e665fac173c65a02fe2.css.map*/
