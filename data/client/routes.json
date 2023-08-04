@@ -4335,11 +4335,17 @@
   },
   "INVENTORY_ADD_PACK": {
     "url": "/users/@me/inventory/packs/add",
-    "allowed_methods": null
+    "allowed_methods": [
+      "OPTIONS",
+      "PUT"
+    ]
   },
   "INVENTORY_REMOVE_PACK": {
     "url": "/users/@me/inventory/packs/remove",
-    "allowed_methods": null
+    "allowed_methods": [
+      "OPTIONS",
+      "PUT"
+    ]
   },
   "INVENTORY_UPDATE_SETTINGS": {
     "url": "/guilds/:param/inventory/settings",
