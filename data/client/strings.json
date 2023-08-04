@@ -12168,6 +12168,7 @@
   "NEW_FORUM_POST_COUNT": "\"{count, plural, =1 {1 New Post} other {{count} New Posts}}\"",
   "ACTIVE_FORUM_POST_COUNT": "\"{count, plural, =1 {1 Active Post} other {{count} Active Posts}}\"",
   "FORUM_POST_MESSAGE_COUNT": "\"{count, plural, =1 {1 Message} other {{count} Messages}}\"",
+  "FORUM_POST_MESSAGE_COUNT_A11Y": "\"{count, plural, =1 {1 Comment} other {{count} Comments}}\"",
   "FORUM_POST_MESSAGE_COUNT_SHORT": "\"{count} New\"",
   "FORUM_POST_MESSAGE_COUNT_SHORT_PARENTHETICAL": "\"({count} New)\"",
   "FORUM_POST_ARIA_LABEL": "\"Post {title}, {count, plural, =1 {1 message} other {{count} messages}}\"",
