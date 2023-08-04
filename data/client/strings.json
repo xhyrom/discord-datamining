@@ -14549,7 +14549,7 @@
   "GUILD_ROLE_SUBSCRIPTION_OTHER_CREATOR_NEXT_CARD_ARIA_LABEL": "\"See next creator highlight\"",
   "GUILD_ROLE_SUBSCRIPTION_OTHER_CREATOR_CARD_PREMIUM_EMOJI_TITLE": "\"My Premium Emojis\"",
   "GUILD_ROLE_SUBSCRIPTION_OTHER_CREATOR_VIEW_SERVER_CTA": "\"View my server\"",
-  "GUILD_ROLE_SUBSCRIPTION_SETTINGS_RESTRICTED_NOTICE": "\"Server Subscriptions have been restricted for this server. Please check your email for more information.\"",
+  "CREATOR_MONETIZATION_SETTINGS_RESTRICTED_NOTICE": "\"Monetization has been restricted for this server. Please check your email for more information.\"",
   "GUILD_ROLE_SUBSCRIPTION_SETTINGS_READ_ONLY_FOR_PENDING_NEW_OWNER_PENDING_NOTICE": "\"Access to settings has been restricted for this server since new owner has not accepted the monetization terms.\"",
   "GUILD_ROLE_SUBSCRIPTION_SETTINGS_ENABLE_REQUEST_PENDING": "\"Request Pending\"",
   "GUILD_ROLE_SUBSCRIPTION_SETTINGS_ENABLE_REQUEST_RECEIVED_AND_PENDING": "\"Your request has been received and is being reviewed.\"",
