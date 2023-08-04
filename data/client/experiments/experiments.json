@@ -4493,27 +4493,6 @@
   },
   {
     "data": {
-      "kind": "user",
-      "id": "2023-06_inventory_reaction_tooltip",
-      "label": "Inventory Reaction Tooltip Experiment",
-      "description": [
-        "Not Eligible",
-        "Control Bucket",
-        "Treatment 1: Enabled"
-      ],
-      "hash": 3470792155,
-      "buckets": [
-        -1,
-        0,
-        1
-      ],
-      "config_keys": [
-        "enabled"
-      ]
-    }
-  },
-  {
-    "data": {
       "kind": "guild",
       "id": "2023-06_inventory_guild_setting",
       "label": "Inventory Guild Settings Experiment",
