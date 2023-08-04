@@ -23846,6 +23846,7 @@ html.disable-forced-colors * {
     --background-secondary: var(--primary-630);
     --background-secondary-alt: var(--primary-660);
     --background-tertiary: var(--primary-700);
+    --blur-fallback: hsl(var(--primary-700-hsl)/0.96);
     --border-strong: hsl(var(--white-500-hsl)/0.16);
     --border-subtle: hsl(var(--white-500-hsl)/0.08);
     --bug-reporter-modal-submitting-background: hsl(var(--primary-800-hsl)/0.6);
@@ -23954,6 +23955,10 @@ html.disable-forced-colors * {
     --interactive-hover: var(--primary-230);
     --interactive-muted: var(--primary-500);
     --interactive-normal: var(--primary-330);
+    --legacy-android-blur-overlay-default: hsl(var(--black-500-hsl)/0.5);
+    --legacy-android-blur-overlay-ultra-thin: hsl(var(--black-500-hsl)/0.025);
+    --legacy-blur-fallback-default: hsl(var(--primary-660-hsl)/0.975);
+    --legacy-blur-fallback-ultra-thin: hsl(var(--black-500-hsl)/0.95);
     --live-stage-tile-border: hsl(var(--primary-500-hsl)/0.6);
     --logo-primary: var(--white-500);
     --mention-background: hsl(var(--brand-500-hsl)/0.3);
@@ -24062,6 +24067,8 @@ html.disable-forced-colors * {
     --black: var(--black-500);
     --focus-primary: var(--blue-345);
     --info-box-background: hsl(var(--blue-345-hsl)/0.1);
+    --theme-locked-blur-fallback: hsl(var(--primary-700-hsl)/0.96);
+    --voice-video-video-tile-blur-fallback: hsl(var(--primary-700-hsl)/0.48);
     --white: var(--white-500)
 }
 
@@ -24091,6 +24098,7 @@ html.disable-forced-colors * {
     --background-secondary: var(--primary-130);
     --background-secondary-alt: var(--primary-160);
     --background-tertiary: var(--primary-200);
+    --blur-fallback: hsl(var(--primary-530-hsl)/0.96);
     --border-strong: hsl(var(--black-500-hsl)/0.16);
     --border-subtle: hsl(var(--black-500-hsl)/0.08);
     --bug-reporter-modal-submitting-background: hsl(var(--white-500-hsl)/0.6);
@@ -24199,6 +24207,10 @@ html.disable-forced-colors * {
     --interactive-hover: var(--primary-600);
     --interactive-muted: var(--primary-300);
     --interactive-normal: var(--primary-500);
+    --legacy-android-blur-overlay-default: hsl(var(--white-500-hsl)/0.75);
+    --legacy-android-blur-overlay-ultra-thin: hsl(var(--white-500-hsl)/0.25);
+    --legacy-blur-fallback-default: hsl(var(--primary-230-hsl)/0.975);
+    --legacy-blur-fallback-ultra-thin: hsl(var(--white-500-hsl)/0.95);
     --live-stage-tile-border: hsl(var(--primary-430-hsl)/0.15);
     --logo-primary: var(--brand-500);
     --mention-background: hsl(var(--brand-500-hsl)/0.15);
@@ -24324,6 +24336,7 @@ html.disable-forced-colors * {
     --background-secondary: var(--dontuse-23);
     --background-secondary-alt: var(--dontuse-17);
     --background-tertiary: var(--dontuse-19);
+    --blur-fallback: hsl(var(--dontuse-19-hsl)/0.96);
     --border-strong: hsl(var(--dontuse-11-hsl)/0.2);
     --button-creator-revenue-background: var(--teal-430);
     --button-danger-background: var(--red-430);
@@ -24512,6 +24525,10 @@ html.disable-forced-colors * {
     --info-warning-text: var(--white-500);
     --interactive-hover: var(--primary-230);
     --interactive-muted: var(--dontuse-13);
+    --legacy-android-blur-overlay-default: hsl(var(--black-500-hsl)/0.5);
+    --legacy-android-blur-overlay-ultra-thin: hsl(var(--black-500-hsl)/0.025);
+    --legacy-blur-fallback-default: hsl(var(--primary-660-hsl)/0.975);
+    --legacy-blur-fallback-ultra-thin: hsl(var(--black-500-hsl)/0.95);
     --live-stage-tile-border: hsl(var(--primary-500-hsl)/0.6);
     --logo-primary: var(--white-500);
     --mention-background: hsl(var(--brand-500-hsl)/0.5);
@@ -24543,7 +24560,9 @@ html.disable-forced-colors * {
     --status-warning-background: var(--yellow-300);
     --status-warning-text: var(--black-500);
     --textbox-markdown-syntax: var(--primary-360);
+    --theme-locked-blur-fallback: hsl(var(--primary-700-hsl)/0.96);
     --user-profile-header-overflow-background: hsl(var(--primary-700-hsl)/0.5);
+    --voice-video-video-tile-blur-fallback: hsl(var(--primary-700-hsl)/0.48);
     --white: var(--white-500)
 }
 
@@ -24569,6 +24588,7 @@ html.disable-forced-colors * {
     --background-secondary: var(--dontuse-18);
     --background-secondary-alt: var(--dontuse-15);
     --background-tertiary: var(--dontuse-16);
+    --blur-fallback: hsl(var(--dontuse-17-hsl)/0.96);
     --border-strong: hsl(var(--dontuse-11-hsl)/0.18);
     --button-creator-revenue-background: var(--teal-430);
     --button-danger-background: var(--red-430);
@@ -164561,4 +164581,4 @@ html .invoiceCancelRow-dVOR64 {
     height: 200px
 }
 
-/*# sourceMappingURL=40532.540004269f6ede76e5a9.css.map*/
+/*# sourceMappingURL=40532.d81ab40f4831b50deed6.css.map*/
