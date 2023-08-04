@@ -4333,19 +4333,13 @@
     "url": "/user-trial-offers",
     "allowed_methods": null
   },
-  "INVENTORY_COLLECT": {
-    "url": "/users/@me/inventory/packs/collect",
-    "allowed_methods": [
-      "OPTIONS",
-      "PUT"
-    ]
+  "INVENTORY_ADD_PACK": {
+    "url": "/users/@me/inventory/packs/add",
+    "allowed_methods": null
   },
-  "INVENTORY_UNCOLLECT": {
-    "url": "/users/@me/inventory/packs/uncollect",
-    "allowed_methods": [
-      "OPTIONS",
-      "PUT"
-    ]
+  "INVENTORY_REMOVE_PACK": {
+    "url": "/users/@me/inventory/packs/remove",
+    "allowed_methods": null
   },
   "INVENTORY_UPDATE_SETTINGS": {
     "url": "/guilds/:param/inventory/settings",
