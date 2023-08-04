@@ -101,7 +101,7 @@
   "FOLDER_NAME": "\"Folder Name\"",
   "DELETE_FOLDER": "\"Delete Folder\"",
   "DELETE_FOLDER_CONFIRM_TEXT": "\"Are you sure you want to delete this folder?\"",
-  "GUILD_LIST_EDIT_MODAL_PLACEHOLDER": "\"Enter a name for your folder!\"",
+  "GUILD_LIST_EDIT_MODAL_PLACEHOLDER": "\"Enter a name for your folder\"",
   "GUILD_LIST_EDIT_MODAL_SERVERS_A11Y_LABEL": "\"Customize your servers\"",
   "GUILD_LIST_EDIT_MODAL_FOLDERS_A11Y_LABEL": "\"Customize your folders\"",
   "CREATE_FOLDER_MISSING_SERVERS_ERROR_TITLE": "\"Oops!\"",
