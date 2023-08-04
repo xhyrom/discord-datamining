@@ -15105,8 +15105,6 @@
   "MEDIA_CHANNEL_UPLOAD_THUMBNAIL_LABEL": "\"Upload thumbnail\"",
   "MEDIA_CHANNEL_CHANGE_THUMBNAIL_LABEL": "\"Change thumbnail\"",
   "MEDIA_CHANNEL_UPSELL_TITLE": "\"Turn content into conversation!\"",
-  "MEDIA_CHANNEL_UPSELL_NON_MONETIZING_GUILD_TITLE": "\"Introducing Media Channels!\"",
-  "MEDIA_CHANNEL_UPSELL_NON_MONETIZING_GUILD_BODY": "\"Create a space where photos and videos get the spotlight.\"",
   "MEDIA_CHANNEL_UPSELL_BODY": "\"Create a media channel to share exclusive photos, videos, and files with your subscribers.\"",
   "MEDIA_CHANNEL_UPSELL_CREATE_NOW_CTA": "\"Create now\"",
   "MEDIA_CHANNEL_HIDE_MEDIA_DOWNLOAD_OPTIONS_TOGGLE_LABEL": "\"Show Option to Save and Copy Embedded Media\"",
