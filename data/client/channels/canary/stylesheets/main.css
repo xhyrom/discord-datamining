@@ -12849,6 +12849,20 @@ html.disable-forced-colors * {
     border-radius: 0
 }
 
+.fillParent-1fFsVh {
+    width: 100%;
+    height: 100%;
+    display: block
+}
+
+.hiddenIframeContainer-2e5Qgh {
+    opacity: 0
+}
+
+.iframePlaceholder-NIUfmJ {
+    background-color: #000
+}
+
 .wrapper-C1y4Sz {
     position: absolute;
     border-radius: 4px 4px 0 0;
@@ -164600,4 +164614,4 @@ html .invoiceCancelRow-dVOR64 {
     height: 200px
 }
 
-/*# sourceMappingURL=40532.92c97beeede90c5d85ae.css.map*/
+/*# sourceMappingURL=40532.80d58c1ed136fa5662f4.css.map*/
