@@ -31009,6 +31009,19 @@ img[alt] {
     margin-bottom: 0
 }
 
+.skuHeading-3GulNW {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    gap: 25px;
+    margin-bottom: 20px
+}
+
+.skuHeadingText-1TQH4u {
+    -ms-flex-item-align: center;
+    align-self: center
+}
+
 .copyInput-3AbKWB {
     overflow: hidden;
     -webkit-box-sizing: border-box;
@@ -164619,4 +164632,4 @@ html .invoiceCancelRow-dVOR64 {
     height: 200px
 }
 
-/*# sourceMappingURL=40532.f56b3189a8347926587b.css.map*/
+/*# sourceMappingURL=40532.38742bdda9234ce301af.css.map*/
