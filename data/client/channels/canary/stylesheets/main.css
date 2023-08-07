@@ -31959,7 +31959,8 @@ img[alt] {
     -ms-flex-align: center;
     align-items: center;
     padding: 0 16px;
-    text-align: center
+    text-align: center;
+    background-color: var(--modal-background)
 }
 
 .errorBody-HJf2A5,
@@ -164614,4 +164615,4 @@ html .invoiceCancelRow-dVOR64 {
     height: 200px
 }
 
-/*# sourceMappingURL=40532.80d58c1ed136fa5662f4.css.map*/
+/*# sourceMappingURL=40532.78a507c4c5427bbe083e.css.map*/
