@@ -23847,6 +23847,7 @@ html.disable-forced-colors * {
     --background-secondary-alt: var(--primary-660);
     --background-tertiary: var(--primary-700);
     --blur-fallback: hsl(var(--primary-700-hsl)/0.96);
+    --blur-fallback-pressed: hsl(var(--primary-730-hsl)/0.96);
     --border-strong: hsl(var(--white-500-hsl)/0.16);
     --border-subtle: hsl(var(--white-500-hsl)/0.08);
     --bug-reporter-modal-submitting-background: hsl(var(--primary-800-hsl)/0.6);
@@ -24099,6 +24100,7 @@ html.disable-forced-colors * {
     --background-secondary-alt: var(--primary-160);
     --background-tertiary: var(--primary-200);
     --blur-fallback: hsl(var(--primary-530-hsl)/0.96);
+    --blur-fallback-pressed: hsl(var(--primary-530-hsl)/0.96);
     --border-strong: hsl(var(--black-500-hsl)/0.16);
     --border-subtle: hsl(var(--black-500-hsl)/0.08);
     --bug-reporter-modal-submitting-background: hsl(var(--white-500-hsl)/0.6);
@@ -24337,6 +24339,7 @@ html.disable-forced-colors * {
     --background-secondary-alt: var(--dontuse-17);
     --background-tertiary: var(--dontuse-19);
     --blur-fallback: hsl(var(--dontuse-19-hsl)/0.96);
+    --blur-fallback-pressed: hsl(var(--dontuse-19-hsl)/0.96);
     --border-strong: hsl(var(--dontuse-11-hsl)/0.2);
     --button-creator-revenue-background: var(--teal-430);
     --button-danger-background: var(--red-430);
@@ -24589,6 +24592,7 @@ html.disable-forced-colors * {
     --background-secondary-alt: var(--dontuse-15);
     --background-tertiary: var(--dontuse-16);
     --blur-fallback: hsl(var(--dontuse-17-hsl)/0.96);
+    --blur-fallback-pressed: hsl(var(--dontuse-17-hsl)/0.96);
     --border-strong: hsl(var(--dontuse-11-hsl)/0.18);
     --button-creator-revenue-background: var(--teal-430);
     --button-danger-background: var(--red-430);
@@ -164596,4 +164600,4 @@ html .invoiceCancelRow-dVOR64 {
     height: 200px
 }
 
-/*# sourceMappingURL=40532.8a5e2da6e5c5a1910c00.css.map*/
+/*# sourceMappingURL=40532.92c97beeede90c5d85ae.css.map*/
