@@ -3726,10 +3726,7 @@
   },
   "CREATOR_MONETIZATION_ACCEPT_NEW_TERMS": {
     "url": "/guilds/:param/creator-monetization/accept-new-terms",
-    "allowed_methods": [
-      "OPTIONS",
-      "POST"
-    ]
+    "allowed_methods": null
   },
   "CREATOR_MONETIZATION_ACCEPT_NEW_TERMS_DEMONETIZED": {
     "url": "/guilds/:param/creator-monetization/accept-new-terms-demonetized",
