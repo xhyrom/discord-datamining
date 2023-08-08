@@ -2775,7 +2775,7 @@
   "NOTICE_H264_DISABLED_SETTINGS_LINK_TEXT": "\"Visit Settings\"",
   "NOTICE_CORRUPT_INSTALLATION": "\"\\nWell, it looks like your Discord installation is corrupt. Let's fix that... together.\\n\"",
   "NOTICE_CORRUPT_INSTALLATION_HELP_LINK_TEXT": "\"Help!\"",
-  "NOTICE_STREAMER_MODE_TEXT": "\"Streamer Mode is enabled. Stay safe, friend.\"",
+  "NOTICE_STREAMER_MODE_TEXT": "\"Streamer Mode is enabled. Usernames have been truncated.\"",
   "NOTICE_CONNECT_SPOTIFY": "\"Connect your Spotify account to display your music in your status!\"",
   "NOTICE_CONNECT_PLAYSTATION": "\"Connect your PlayStation Network account to display games you're playing in your status!\"",
   "CLAIM_ACCOUNT": "\"Claim Account\"",
