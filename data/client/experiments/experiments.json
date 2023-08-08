@@ -4607,7 +4607,7 @@
       "populations": [
         {
           "buckets": {
-            "2": {
+            "none": {
               "rollout": [
                 {
                   "start": 0,
@@ -4627,7 +4627,7 @@
         },
         {
           "buckets": {
-            "1": {
+            "none": {
               "rollout": [
                 {
                   "start": 0,
@@ -4647,11 +4647,7 @@
         }
       ],
       "revision": 0,
-      "overrides": {
-        "1": [
-          "1064959560890204271"
-        ]
-      },
+      "overrides": {},
       "overrides_formatted": []
     }
   },
