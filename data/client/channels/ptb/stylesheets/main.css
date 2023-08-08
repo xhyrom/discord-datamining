@@ -103237,13 +103237,16 @@ html .tabBadge-h4HGed {
     color: var(--discord-8th-bday-dark-blue)
 }
 
-.enable-forced-colors .searchBar-3TnChZ {
-    border-bottom: 2px solid CanvasText
+.familyCenterLinkButton-1t3UxR {
+    padding-right: 0 !important
 }
 
-.familyCenterClose-Q7AraC:hover {
-    color: var(--text-muted);
-    background-color: var(--interactive-hover)
+.familyCenterPendingBadge-2up0vY {
+    padding-right: 8px
+}
+
+.enable-forced-colors .searchBar-3TnChZ {
+    border-bottom: 2px solid CanvasText
 }
 
 .theme-dark.custom-theme-background .themedHeaderMobile-1a1cTx {
@@ -164219,4 +164222,4 @@ html .invoiceCancelRow-dVOR64 {
     height: 200px
 }
 
-/*# sourceMappingURL=40532.a73a9284b68340b6e2a4.css.map*/
+/*# sourceMappingURL=40532.8d1a73a6ac308fcbdd95.css.map*/
