@@ -531,47 +531,6 @@
   {
     "data": {
       "kind": "guild",
-      "id": "2022-03_role_subscription_analytics_portal",
-      "label": "Guild Role Subscription Analytics",
-      "description": [
-        "Not Eligible",
-        "Control Bucket",
-        "Treatment 1: Enables guild to view analytics for role subscriptions"
-      ],
-      "hash": 3510816342,
-      "buckets": [
-        -1,
-        0,
-        1
-      ],
-      "config_keys": [
-        "enabled"
-      ]
-    },
-    "rollout": {
-      "populations": [
-        {
-          "buckets": {
-            "1": {
-              "rollout": [
-                {
-                  "start": 0,
-                  "end": 10000
-                }
-              ]
-            }
-          },
-          "filters": []
-        }
-      ],
-      "revision": 0,
-      "overrides": {},
-      "overrides_formatted": []
-    }
-  },
-  {
-    "data": {
-      "kind": "guild",
       "id": "2022-04_guild_role_subscription_purchase_feedback_loop",
       "label": "Guild Role Subscription Purchase Feedback Loop",
       "description": [
@@ -10462,6 +10421,32 @@
           "994727054190854314"
         ]
       },
+      "overrides_formatted": []
+    }
+  },
+  {
+    "data": {
+      "kind": "guild",
+      "hash": 3510816342
+    },
+    "rollout": {
+      "populations": [
+        {
+          "buckets": {
+            "1": {
+              "rollout": [
+                {
+                  "start": 0,
+                  "end": 10000
+                }
+              ]
+            }
+          },
+          "filters": []
+        }
+      ],
+      "revision": 0,
+      "overrides": {},
       "overrides_formatted": []
     }
   },
