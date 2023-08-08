@@ -5,7 +5,7 @@ import { Domains } from "./modules/Domains.ts";
 import { Client } from "./modules/client/index.ts";
 import { Posts } from "./modules/posts/index.ts";
 
-console.log("discord-datamining  Copyright (C) 2023 Jozef Steinhübl")
+console.log("discord-datamining  Copyright (C) 2023 Jozef Steinhübl");
 
 const client = new Client();
 
