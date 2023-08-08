@@ -51238,6 +51238,15 @@ input[type=checked]:focus-visible+.label-3TDpbn {
     z-index: 2
 }
 
+.applicationIconContainer-2nCb9j {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center
+}
+
 .applicationIcon-3FCnmq {
     width: 88px
 }
@@ -164210,4 +164219,4 @@ html .invoiceCancelRow-dVOR64 {
     height: 200px
 }
 
-/*# sourceMappingURL=40532.33e2f9023a7a6b225b80.css.map*/
+/*# sourceMappingURL=40532.a73a9284b68340b6e2a4.css.map*/
