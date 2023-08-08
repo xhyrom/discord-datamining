@@ -84021,13 +84021,6 @@ strong {
     display: block
 }
 
-.tooltipImage-3wB8UE {
-    height: 100px;
-    width: auto;
-    margin: 0 auto 16px;
-    display: block
-}
-
 .container-1NXEtd {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -117688,77 +117681,6 @@ input::-webkit-outer-spin-button {
     -webkit-box-direction: normal;
     -ms-flex-direction: column;
     flex-direction: column
-}
-
-.upsellContainer-1Ml-W5 {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: column;
-    flex-direction: column;
-    border-radius: var(--radius-sm);
-    background-color: var(--background-secondary);
-    margin-bottom: 20px;
-    position: relative
-}
-
-.upsellContainer-1Ml-W5,
-.upsellContent-3nGExe {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex
-}
-
-.upsellContent-3nGExe {
-    border-radius: 8px 8px 0 0;
-    padding: 16px 40px 16px 16px
-}
-
-.upsellFooter-2aN0L_ {
-    background-color: var(--background-secondary-alt);
-    border-radius: 0 0 8px 8px;
-    padding: 12px 16px;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-wrap: wrap;
-    flex-wrap: wrap
-}
-
-.upsellImage-2mkTTy {
-    margin-right: 16px
-}
-
-.upsellHeader-3Md3EP {
-    margin-bottom: 8px
-}
-
-.upsellButton-2ckJm5 {
-    margin-right: 8px;
-    margin-top: 4px;
-    margin-bottom: 4px
-}
-
-.upsellClose-1Qzkxy {
-    position: absolute;
-    top: 12px;
-    right: 12px;
-    color: var(--interactive-normal);
-    opacity: .5;
-    cursor: pointer
-}
-
-.upsellClose-1Qzkxy:hover {
-    opacity: 1;
-    color: var(--interactive-hover)
-}
-
-.confirmationText-3Y9E8V {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center
 }
 
 .container-3EtAkD {
@@ -163989,4 +163911,4 @@ html .invoiceCancelRow-dVOR64 {
     height: 200px
 }
 
-/*# sourceMappingURL=40532.9d63c50d1250c395ef6c.css.map*/
+/*# sourceMappingURL=40532.2161c127fc1d1348786f.css.map*/
