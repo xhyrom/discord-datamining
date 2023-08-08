@@ -68511,8 +68511,8 @@ strong {
 }
 
 .large-1W87Tq {
-    width: 32px;
-    height: 32px
+    width: 40px;
+    height: 40px
 }
 
 .container-22-IpK {
@@ -72541,7 +72541,7 @@ strong {
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
-    padding: 12px 16px;
+    padding: 12px 20px;
     background-color: var(--background-primary);
     -webkit-transition: background-color .2s ease-in-out;
     transition: background-color .2s ease-in-out;
@@ -72572,15 +72572,15 @@ strong {
 }
 
 .channelIcon-207WB_ {
-    width: 16px;
-    height: 16px;
+    width: 20px;
+    height: 20px;
     color: var(--channel-icon)
 }
 
 .channelIconContainer-1sVwKj,
 .rulesIconContainer-3hKWCf {
-    width: 32px;
-    height: 32px;
+    width: 40px;
+    height: 40px;
     border-radius: 20px;
     background-color: var(--background-tertiary);
     display: -webkit-box;
@@ -163989,4 +163989,4 @@ html .invoiceCancelRow-dVOR64 {
     height: 200px
 }
 
-/*# sourceMappingURL=40532.855365ea110c8ecef677.css.map*/
+/*# sourceMappingURL=40532.9d63c50d1250c395ef6c.css.map*/
