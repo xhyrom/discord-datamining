@@ -49761,13 +49761,6 @@ input[type=checked]:focus-visible+.label-3TDpbn {
     left: 0
 }
 
-.root-3Ek-v- {
-    width: clamp(0, calc(100vw - 160px), 1280px);
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex
-}
-
 .applicationIcon-39og1c {
     margin-right: .5em
 }
@@ -86535,7 +86528,6 @@ strong {
     -webkit-box-align: stretch;
     -ms-flex-align: stretch;
     align-items: stretch;
-    background: var(--background-primary);
     border-radius: 0 8px 8px 0
 }
 
@@ -164627,4 +164619,4 @@ html .invoiceCancelRow-dVOR64 {
     height: 200px
 }
 
-/*# sourceMappingURL=40532.291020161951f05563d1.css.map*/
+/*# sourceMappingURL=40532.782cdda142399093ac6b.css.map*/
