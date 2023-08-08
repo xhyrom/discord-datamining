@@ -40,7 +40,7 @@
     </table>
 </div>
 <h3>
-    <strong><em><span style="color: #434343;" data-darkreader-inline-color="">For Linux</span></em></strong><span style="color: #434343;" data-darkreader-inline-color="">: Because of the variations in both software and hardware for computers running Linux, technical support for this operating system is limited. Our Linux client is based on Chromium, and so the requirements for this version of the app are based on Chrome’s requirements, found </span><a href="https://support.google.com/chrome/a/answer/7100626?hl=en" target="_blank" rel="noopener">here</a><span style="color: #434343;" data-darkreader-inline-color="">.</span>
+    <strong><em><span style="color: #434343;" data-darkreader-inline-color="">For Linux</span></em></strong><span style="color: #434343;" data-darkreader-inline-color="">: Because of the variations in both software and hardware for computers running Linux, technical support for this operating system is limited. Our Linux client is based on Chromium, and so the requirements for this version of the app are based on Chrome’s requirements, found </span><a href="https://support.google.com/chrome/a/answer/7100626?hl=en" target="_blank" rel="noopener noreferrer">here</a><span style="color: #434343;" data-darkreader-inline-color="">.</span>
 </h3>
 <h1 id="h_01H30Q0N5QCNK259ATR3BR4A41"><strong>Mobile</strong></h1>
 <div>
@@ -63,18 +63,16 @@
             </tr>
             <tr>
                 <td>iOS</td>
-                <td>iOS 11+</td>
+                <td>iOS 12+</td>
                 <td>iOS 13+</td>
             </tr>
         </tbody>
     </table>
 </div>
-<h3>The oldest devices supported by iOS 11 are listed<a href="https://support.apple.com/en-au/HT209574" target="_blank" rel="noopener"> here</a><strong>.</strong>
-</h3>
-<p>You can find devices supported by iOS 12+ <a href="https://support.apple.com/en-au/guide/iphone/iphe3fa5df43/12.0/ios/12.0" target="_blank" rel="noopener">here</a>.</p>
+<p>You can find devices supported by iOS 12+ <a href="https://support.apple.com/en-au/guide/iphone/iphe3fa5df43/12.0/ios/12.0" target="_blank" rel="noopener noreferrer">here</a>.</p>
 <h3><span style="color: #434343;" data-darkreader-inline-color="">For Android: Discord only supports devices that ship with Google Play Services by default. This means some devices, including Amazon Kindles, are not supported.</span></h3>
 <p>Jailbroken or Rooted devices are <strong>not supported</strong>. </p>
-<p>Beta operating systems are <strong>not supported</strong>. While Discord may install and run on a beta version of an operating system, some functions may not.</p>
+<p id="docs-internal-guid-d73153cf-7fff-d004-57fc-5c487ddc9887">Beta operating systems are <strong>not supported</strong>. While Discord may install and run on a beta version of an operating system, <span id="docs-internal-guid-0f046720-7fff-33c6-8d14-f0ffc02eaeff">some features of the app may not function correctly</span>.</p>
 <h1 id="h_01H30Q0T863H0VTGBN9BY653ZD"><strong>Browser</strong></h1>
 <p>Google Chrome, Firefox 80+, Opera, Microsoft Edge 17+ (including Chromium Edge 79+ on Windows and macOS), Safari 11+ (available on macOS 10.13 High Sierra and up)</p>
 <h3><span style="color: #434343;" data-darkreader-inline-color="">Note: Older browsers may lack functionality with newer features, and voice chat for Firefox is only supported by versions 80 and up!</span></h3>
