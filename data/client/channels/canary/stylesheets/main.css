@@ -49778,34 +49778,33 @@ input[type=checked]:focus-visible+.label-3TDpbn {
 }
 
 .modalHeader-WudL3K {
-    color: var(--background-primary)
+    color: var(--background-primary);
+    border-bottom: 1px solid var(--border-subtle);
+    padding: 12px 16px
 }
 
 .closeButtonContainer-3CgePX {
-    position: absolute;
-    top: 8px;
-    right: 16px;
-    border-radius: 48px;
-    line-height: 24px;
-    height: 24px
+    margin-left: auto
 }
 
 .closeButton-3EdWTC {
     display: -webkit-box;
     display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center
+    display: flex
 }
 
 .closeIcon-3_vMzj {
-    width: 16px;
-    height: 16px;
-    -webkit-box-flex: 0;
-    -ms-flex: 0 0 auto;
-    flex: 0 0 auto;
-    margin-right: 6px
+    width: 24px;
+    height: 24px;
+    color: var(--interactive-normal)
+}
+
+.closeIcon-3_vMzj:hover {
+    color: var(--interactive-hover)
+}
+
+.closeIcon-3_vMzj:active {
+    color: var(--interactive-active)
 }
 
 .iframe-1g4XVa {
@@ -164222,4 +164221,4 @@ html .invoiceCancelRow-dVOR64 {
     height: 200px
 }
 
-/*# sourceMappingURL=40532.8d1a73a6ac308fcbdd95.css.map*/
+/*# sourceMappingURL=40532.b9afacca4bfe44e4faa8.css.map*/
