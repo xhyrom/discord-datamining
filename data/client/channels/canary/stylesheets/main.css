@@ -86647,7 +86647,13 @@ strong {
     overflow: hidden
 }
 
-.containerSidenav-3qiKqP {
+.theme-dark.custom-theme-background .containerSidenav-3qiKqP,
+.theme-light.custom-theme-background .containerSidenav-3qiKqP {
+    background: inherit
+}
+
+.theme-dark .containerSidenav-3qiKqP,
+.theme-light .containerSidenav-3qiKqP {
     background: var(--background-primary)
 }
 
@@ -164204,4 +164210,4 @@ html .invoiceCancelRow-dVOR64 {
     height: 200px
 }
 
-/*# sourceMappingURL=40532.8aa60647f85333870da8.css.map*/
+/*# sourceMappingURL=40532.33e2f9023a7a6b225b80.css.map*/
