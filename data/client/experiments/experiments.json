@@ -6192,47 +6192,6 @@
   },
   {
     "data": {
-      "kind": "guild",
-      "id": "2023-05_ugc_notifications",
-      "label": "Notifications for UGC changes",
-      "description": [
-        "Not Eligible",
-        "Control Bucket",
-        "Treatment 1: Show Notifications"
-      ],
-      "hash": 631733804,
-      "buckets": [
-        -1,
-        0,
-        1
-      ],
-      "config_keys": [
-        "enabled"
-      ]
-    },
-    "rollout": {
-      "populations": [
-        {
-          "buckets": {
-            "none": {
-              "rollout": [
-                {
-                  "start": 0,
-                  "end": 10000
-                }
-              ]
-            }
-          },
-          "filters": []
-        }
-      ],
-      "revision": 1,
-      "overrides": {},
-      "overrides_formatted": []
-    }
-  },
-  {
-    "data": {
       "kind": "user",
       "id": "2023-06_non_nitro_user_remix_upsell",
       "label": "Non Nitro User Remix Upsell Experiment",
@@ -11800,6 +11759,32 @@
           "290926798626357250"
         ]
       },
+      "overrides_formatted": []
+    }
+  },
+  {
+    "data": {
+      "kind": "guild",
+      "hash": 631733804
+    },
+    "rollout": {
+      "populations": [
+        {
+          "buckets": {
+            "none": {
+              "rollout": [
+                {
+                  "start": 0,
+                  "end": 10000
+                }
+              ]
+            }
+          },
+          "filters": []
+        }
+      ],
+      "revision": 1,
+      "overrides": {},
       "overrides_formatted": []
     }
   },
