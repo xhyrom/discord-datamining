@@ -10514,6 +10514,8 @@
   "FRIEND_FINDER_SUGGESTIONS": "\"Suggestions\"",
   "FRIEND_FINDER_FRIENDS": "\"All Friends\"",
   "FRIEND_FINDER_CONTACT_FRIEND_SUGGESTIONS_HEADER": "\"Contacts on Discord — {count}\"",
+  "FRIEND_FINDER_INCENTIVIZED_INVITE_TITLE": "\"Send invites earn Boosts!\"",
+  "FRIEND_FINDER_INCENTIVIZED_INVITE_SUBTITLE": "\"Get a free Boost for inviting each of these contacts when they sign up for Discord.\"",
   "CONTACT_SYNC_TITLE": "\"Find your friends\"",
   "CONTACT_SYNC_LANDING_TITLE": "\"Find your friends\"",
   "CONTACT_SYNC_LANDING_SUBTITLE_REDESIGN": "\"Let's see which of your contacts is already on Discord!\"",
