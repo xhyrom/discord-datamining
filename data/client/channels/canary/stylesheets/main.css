@@ -49836,6 +49836,20 @@ input[type=checked]:focus-visible+.label-3TDpbn {
     height: 100%
 }
 
+.botTag-YWx60B {
+    margin-left: 4px
+}
+
+.flexRow-1MGNjw {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row
+}
+
 .header-1LEkUo {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -163925,4 +163939,4 @@ html .invoiceCancelRow-dVOR64 {
     height: 200px
 }
 
-/*# sourceMappingURL=40532.687676b6b95f5209deea.css.map*/
+/*# sourceMappingURL=40532.6f27b3b3a5197cd59d75.css.map*/
