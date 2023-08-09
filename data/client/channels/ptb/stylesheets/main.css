@@ -22533,6 +22533,18 @@ html.disable-forced-colors * {
     bottom: 0
 }
 
+.badge-1g3blX {
+    position: absolute;
+    bottom: 0;
+    right: 3px;
+    width: 10px;
+    height: 10px
+}
+
+.broadcastIcon-2z9a7P {
+    position: relative
+}
+
 .button-28qZiI {
     line-height: 0
 }
@@ -90404,18 +90416,6 @@ strong {
     color: var(--red-400)
 }
 
-.badge-1g3blX {
-    position: absolute;
-    bottom: 0;
-    right: 3px;
-    width: 10px;
-    height: 10px
-}
-
-.broadcastIcon-2z9a7P {
-    position: relative
-}
-
 .activityItemButtonInnerClass-23Wx8I {
     width: 100%;
     display: -webkit-box;
@@ -106474,6 +106474,19 @@ html .tabBadge-h4HGed {
     color: var(--header-primary)
 }
 
+.icon-3EHBnD {
+    position: relative
+}
+
+.badge-2Ud1qD {
+    position: absolute;
+    bottom: 4px;
+    right: 4px;
+    width: 10px;
+    height: 10px;
+    color: var(--header-secondary)
+}
+
 .panel-2ZFCRb {
     padding: 8px;
     border-bottom: 1px solid var(--background-modifier-accent);
@@ -107153,19 +107166,6 @@ html .tabBadge-h4HGed {
 
 .customCallSoundsFeatureHeader-suJP3c {
     text-indent: -6px
-}
-
-.badge-yTfjej {
-    position: absolute;
-    bottom: -4px;
-    right: -2px;
-    width: 10px;
-    height: 10px;
-    color: var(--header-secondary)
-}
-
-.icon-1eqQfl {
-    position: relative
 }
 
 .scroller-laUYTP {
@@ -163922,4 +163922,4 @@ html .invoiceCancelRow-dVOR64 {
     height: 200px
 }
 
-/*# sourceMappingURL=40532.62b21ec4081a6c3263ef.css.map*/
+/*# sourceMappingURL=40532.393a0f0d7b2b53bf7bc7.css.map*/
