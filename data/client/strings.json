@@ -15002,7 +15002,7 @@
   "GUILD_ROLE_SUBSCRIPTION_PURCHASE_PAGE_PARTNER_SERVER_LABEL": "\"Partner server\"",
   "GUILD_ROLE_SUBSCRIPTION_PURCHASE_PAGE_WATCH_TRAILER": "\"Watch the trailer\"",
   "GUILD_ROLE_SUBSCRIPTION_PURCHASE_PAGE_CHOOSE_SUBSCRIPTION_FOR_GATED_CHANNEL_CTA": "\"Subscribe to unlock $[](unlockHook)\"",
-  "GUILD_ROLE_SUBSCRIPTION_PURCHASE_PAGE_CHOOSE_SUBSCRIPTION_CTA": "\"Choose a server sub to unlock more\"",
+  "GUILD_ROLE_SUBSCRIPTION_PURCHASE_PAGE_CHOOSE_SUBSCRIPTION_CTA": "\"Choose a subscription to unlock more\"",
   "GUILD_ROLE_SUBSCRIPTION_PURCHASE_LEGAL_DISCLAIMER": "'By clicking \"Subscribe\", you agree to the [Paid Services Terms]({paidURL}) and [Terms of Service]({termsURL}). This is a recurring subscription, we\\'ll charge your account today and every month until you cancel.'",
   "GUILD_ROLE_SUBSCRIPTION_PURCHASE_CARD_UNLOCK": "\"what you'll unlock\"",
   "GUILD_ROLE_SUBSCRIPTION_PURCHASE_CARD_CHANNEL_BENEFIT_TITLE": "\"Exclusive {numChannels, plural, =1 {Channel} other {Channels}}\"",
