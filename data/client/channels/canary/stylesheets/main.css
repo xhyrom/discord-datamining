@@ -38530,6 +38530,17 @@ img[alt] {
     padding: 8px 24px 16px
 }
 
+.slideContainer-jMq8eL {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    max-height: clamp(200px, calc(100vh - 80px), 660px)
+}
+
 .tile-2mmK5T {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -163911,4 +163922,4 @@ html .invoiceCancelRow-dVOR64 {
     height: 200px
 }
 
-/*# sourceMappingURL=40532.2161c127fc1d1348786f.css.map*/
+/*# sourceMappingURL=40532.62b21ec4081a6c3263ef.css.map*/
