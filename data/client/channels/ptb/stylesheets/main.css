@@ -73805,7 +73805,10 @@ strong {
     align-items: center;
     -webkit-box-pack: center;
     -ms-flex-pack: center;
-    justify-content: center
+    justify-content: center;
+    -webkit-box-flex: 1;
+    -ms-flex: 1 1 auto;
+    flex: 1 1 auto
 }
 
 .emptyPreviewImage-2pvAiF {
@@ -163922,4 +163925,4 @@ html .invoiceCancelRow-dVOR64 {
     height: 200px
 }
 
-/*# sourceMappingURL=40532.393a0f0d7b2b53bf7bc7.css.map*/
+/*# sourceMappingURL=40532.687676b6b95f5209deea.css.map*/
