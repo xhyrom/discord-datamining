@@ -150800,6 +150800,10 @@ html .invoiceCancelRow-3s2UuC {
     padding-bottom: 12px
 }
 
+.customizationSectionBackground-1-leQn {
+    padding: 16px
+}
+
 .sectionDescription-ol6C7B {
     margin-bottom: 16px
 }
@@ -150809,7 +150813,7 @@ html .invoiceCancelRow-3s2UuC {
 }
 
 .customizationSectionBorder-2RAJep {
-    margin: -12px -12px 0
+    margin: -12px -12px 0 -18px
 }
 
 .profileCustomizationSection-53kreU {
@@ -151191,6 +151195,20 @@ html .invoiceCancelRow-3s2UuC {
 }
 
 .buttonHighlighted-3tZekv {
+    background: linear-gradient(95.07deg, var(--premium-tier-2-purple-for-gradients), var(--premium-tier-2-purple-for-gradients-2) 49.96%, var(--premium-tier-2-pink-for-gradients) 95.93%)
+}
+
+.buttonsContainer-3E5j1w {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex
+}
+
+.removeButton-1o8L8B {
+    margin-left: 4px
+}
+
+.buttonHighlighted-3QKRPw {
     background: linear-gradient(95.07deg, var(--premium-tier-2-purple-for-gradients), var(--premium-tier-2-purple-for-gradients-2) 49.96%, var(--premium-tier-2-pink-for-gradients) 95.93%)
 }
 
@@ -163933,4 +163951,4 @@ html .invoiceCancelRow-dVOR64 {
     height: 200px
 }
 
-/*# sourceMappingURL=40532.e0f1d24bf8c550fef722.css.map*/
+/*# sourceMappingURL=40532.59b72a2dac8a11e6a084.css.map*/
