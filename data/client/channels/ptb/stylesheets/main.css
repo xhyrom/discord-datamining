@@ -20321,31 +20321,40 @@ html.disable-forced-colors * {
 }
 
 .profileEffects-km5xa2 {
-    overflow: hidden
+    pointer-events: none
 }
 
-.effectBackground-8Yf7Tt,
+.inner-2xMRmK,
 .profileEffects-km5xa2 {
     position: absolute;
     height: 100%;
     width: 100%;
-    pointer-events: none
+    top: 0;
+    left: 0
+}
+
+.inner-2xMRmK {
+    overflow: hidden
 }
 
 .effectBackground-8Yf7Tt {
+    height: 100%;
+    pointer-events: none;
     -webkit-transition-property: background, opacity;
     transition-property: background, opacity;
     top: 0;
     left: 0
 }
 
-.effect-23JFo_ {
+.effect-23JFo_,
+.effectBackground-8Yf7Tt {
+    position: absolute;
     width: 100%
 }
 
-.border-16r7Xn,
-.effect-23JFo_ {
-    position: absolute
+.border-16r7Xn {
+    position: absolute;
+    z-index: 100
 }
 
 @-webkit-keyframes uploadIconAnimateInLeft-18-7XG {
@@ -24036,8 +24045,6 @@ html.disable-forced-colors * {
     --redesign-button-danger-background: var(--red-430);
     --redesign-button-danger-pressed-background: var(--red-460);
     --redesign-button-danger-text: var(--white-500);
-    --redesign-button-overlay-alpha-background: hsl(var(--black-500-hsl)/0.54);
-    --redesign-button-overlay-alpha-pressed-background: hsl(var(--black-500-hsl)/0.64);
     --redesign-button-overlay-alpha-text: var(--white-500);
     --redesign-button-overlay-background: var(--white-500);
     --redesign-button-overlay-pressed-background: var(--primary-230);
@@ -24289,8 +24296,6 @@ html.disable-forced-colors * {
     --redesign-button-danger-background: var(--red-430);
     --redesign-button-danger-pressed-background: var(--red-460);
     --redesign-button-danger-text: var(--white-500);
-    --redesign-button-overlay-alpha-background: hsl(var(--black-500-hsl)/0.54);
-    --redesign-button-overlay-alpha-pressed-background: hsl(var(--black-500-hsl)/0.64);
     --redesign-button-overlay-alpha-text: var(--white-500);
     --redesign-button-overlay-background: var(--white-500);
     --redesign-button-overlay-pressed-background: var(--primary-230);
@@ -24467,8 +24472,6 @@ html.disable-forced-colors * {
     --redesign-button-danger-background: var(--red-430);
     --redesign-button-danger-pressed-background: var(--red-460);
     --redesign-button-danger-text: var(--white-500);
-    --redesign-button-overlay-alpha-background: hsl(var(--black-500-hsl)/0.54);
-    --redesign-button-overlay-alpha-pressed-background: hsl(var(--black-500-hsl)/0.64);
     --redesign-button-overlay-alpha-text: var(--white-500);
     --redesign-button-overlay-background: var(--white-500);
     --redesign-button-overlay-pressed-background: var(--primary-230);
@@ -24720,8 +24723,6 @@ html.disable-forced-colors * {
     --redesign-button-danger-background: var(--red-430);
     --redesign-button-danger-pressed-background: var(--red-460);
     --redesign-button-danger-text: var(--white-500);
-    --redesign-button-overlay-alpha-background: hsl(var(--black-500-hsl)/0.54);
-    --redesign-button-overlay-alpha-pressed-background: hsl(var(--black-500-hsl)/0.64);
     --redesign-button-overlay-alpha-text: var(--white-500);
     --redesign-button-overlay-background: var(--white-500);
     --redesign-button-overlay-pressed-background: var(--primary-230);
@@ -164110,4 +164111,4 @@ html .invoiceCancelRow-dVOR64 {
     height: 200px
 }
 
-/*# sourceMappingURL=40532.dbd927db56c7333d1e8f.css.map*/
+/*# sourceMappingURL=40532.d2fcc56b6f3d67613c43.css.map*/
