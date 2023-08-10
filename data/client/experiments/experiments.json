@@ -395,7 +395,7 @@
         1
       ],
       "config_keys": [
-        "enableRoleSubscriptionTrialsForGuild"
+        "enabled"
       ]
     },
     "rollout": {
