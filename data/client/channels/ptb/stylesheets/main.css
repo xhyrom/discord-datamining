@@ -56319,7 +56319,8 @@ h6.title-1p9WyQ {
     display: -webkit-box;
     -webkit-box-orient: vertical;
     -webkit-line-clamp: 4;
-    overflow: hidden
+    overflow: hidden;
+    max-height: 100px
 }
 
 .showMoreButtonText-1jnEQf {
@@ -163951,4 +163952,4 @@ html .invoiceCancelRow-dVOR64 {
     height: 200px
 }
 
-/*# sourceMappingURL=40532.59b72a2dac8a11e6a084.css.map*/
+/*# sourceMappingURL=40532.1a8eec92e943280047ef.css.map*/
