@@ -151416,6 +151416,10 @@ html .invoiceCancelRow-3s2UuC {
     background: linear-gradient(95.07deg, var(--premium-tier-2-purple-for-gradients), var(--premium-tier-2-purple-for-gradients-2) 49.96%, var(--premium-tier-2-pink-for-gradients) 95.93%)
 }
 
+.shopButton-2YAyWL {
+    margin-left: 16px
+}
+
 .buttonsContainer-3E5j1w {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -157844,6 +157848,41 @@ html .invoiceCancelRow-3s2UuC {
     top: 2px
 }
 
+.page-LilLhg {
+    height: 100%;
+    background-color: var(--background-primary)
+}
+
+.closeWrapper-4ioOGM {
+    position: absolute;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    top: 32px;
+    right: 32px;
+    z-index: 1
+}
+
+.closeContent-1VSMwH,
+.closeWrapper-4ioOGM {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 100%
+}
+
+.closeContent-1VSMwH {
+    position: fixed;
+    -webkit-box-pack: end;
+    -ms-flex-pack: end;
+    justify-content: flex-end;
+    pointer-events: none
+}
+
+.closeIcon-ErXdZG {
+    pointer-events: all
+}
+
 .spacing-1JirW3 {}
 
 .card-1LSSlz {
@@ -164169,4 +164208,4 @@ html .invoiceCancelRow-dVOR64 {
     height: 200px
 }
 
-/*# sourceMappingURL=40532.f83a7a434ad1229f0828.css.map*/
+/*# sourceMappingURL=40532.8d373c212569b72af8d3.css.map*/
