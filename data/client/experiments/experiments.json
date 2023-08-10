@@ -763,68 +763,6 @@
   {
     "data": {
       "kind": "guild",
-      "id": "2023-02_server_subscriptions_iap",
-      "label": "Server Subscriptions IAP",
-      "description": [
-        "Not Eligible",
-        "Control Bucket",
-        "Treatment 1: Enables Server Subscriptions IAP"
-      ],
-      "hash": 295820329,
-      "buckets": [
-        -1,
-        0,
-        1
-      ],
-      "config_keys": [
-        "enabled"
-      ]
-    },
-    "rollout": {
-      "populations": [
-        {
-          "buckets": {
-            "1": {
-              "rollout": [
-                {
-                  "start": 0,
-                  "end": 10000
-                }
-              ]
-            }
-          },
-          "filters": []
-        }
-      ],
-      "revision": 0,
-      "overrides": {},
-      "overrides_formatted": []
-    }
-  },
-  {
-    "data": {
-      "kind": "user",
-      "id": "2023-03_server_subs_iap_geo_rollout",
-      "label": "Server Subscriptions IAP User",
-      "description": [
-        "Not Eligible",
-        "Control Bucket",
-        "Treatment 1: Enables Server Subscriptions IAP For User"
-      ],
-      "hash": 6046655,
-      "buckets": [
-        -1,
-        0,
-        1
-      ],
-      "config_keys": [
-        "enabled"
-      ]
-    }
-  },
-  {
-    "data": {
-      "kind": "guild",
       "id": "2023-03_server_subscriptions_tier_templates",
       "label": "Server Subscriptions Tier Templates",
       "description": [
@@ -11252,6 +11190,32 @@
           "651597514407018516"
         ]
       },
+      "overrides_formatted": []
+    }
+  },
+  {
+    "data": {
+      "kind": "guild",
+      "hash": 295820329
+    },
+    "rollout": {
+      "populations": [
+        {
+          "buckets": {
+            "1": {
+              "rollout": [
+                {
+                  "start": 0,
+                  "end": 10000
+                }
+              ]
+            }
+          },
+          "filters": []
+        }
+      ],
+      "revision": 0,
+      "overrides": {},
       "overrides_formatted": []
     }
   },
