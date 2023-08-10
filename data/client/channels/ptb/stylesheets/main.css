@@ -23274,10 +23274,6 @@ html.disable-forced-colors * {
     --brand-860-hsl: 235 calc(var(--saturation-factor, 1)*46.9%) 9.6%;
     --brand-900: hsl(var(--brand-900-hsl)/1);
     --brand-900-hsl: 233 calc(var(--saturation-factor, 1)*50%) 3.1%;
-    --creator-revenue-end: hsl(var(--creator-revenue-end-hsl)/1);
-    --creator-revenue-end-hsl: 198 calc(var(--saturation-factor, 1)*81.5%) 46.7%;
-    --creator-revenue-start: hsl(var(--creator-revenue-start-hsl)/1);
-    --creator-revenue-start-hsl: 160 calc(var(--saturation-factor, 1)*81.3%) 35.7%;
     --crunchyroll: hsl(var(--crunchyroll-hsl)/1);
     --crunchyroll-hsl: 29 calc(var(--saturation-factor, 1)*93%) 55.5%;
     --discord-8th-bday-blue: hsl(var(--discord-8th-bday-blue-hsl)/1);
@@ -30980,6 +30976,19 @@ img[alt] {
 
 .formTitle-1Wrebk {
     margin-bottom: 12px
+}
+
+.spinnerWrapper-HR9SRA {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    min-height: 480px
 }
 
 .nitroIcon-30w_JW {
@@ -164101,4 +164110,4 @@ html .invoiceCancelRow-dVOR64 {
     height: 200px
 }
 
-/*# sourceMappingURL=40532.5b127d52a95f3a05c76a.css.map*/
+/*# sourceMappingURL=40532.dbd927db56c7333d1e8f.css.map*/
