@@ -15750,6 +15750,8 @@
   "AUTO_BROADCAST_TOGGLE": "\"Auto broadcast when starting games\"",
   "BROADCASTING_CAPTURE_PAUSED": "\"Broadcasting Enabled\"",
   "BROADCASTING_CAPTURE_PAUSED_DETAILS": "\"Waiting for your friends to watch\"",
+  "WATCHABLE": "\"Watchable\"",
+  "OPEN_ROOMS": "\"Open Rooms — {count, number}\"",
   "COLLECTIBLES_COLLECTING_FINISHED": "\"Collecting finished\"",
   "COLLECTIBLES_COLLECTED_DECORATIONS": "\"You've collected these decorations!\"",
   "XBOX": "\"Xbox\"",
