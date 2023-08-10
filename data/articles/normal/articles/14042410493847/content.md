@@ -1,19 +1,20 @@
 <p><span class="wysiwyg-font-size-large"><strong>What this article covers:</strong></span></p>
 <ul>
-    <li>What is Jamspace Whiteboard?</li>
-    <li>Starting Jamspace Whiteboard in Discord</li>
-    <li>How to Use Jamspace Whiteboard
+    <li><a href="#h_01H06K20Y2YFFCDD8B0FTGVJSJ" target="_self">What is Jamspace Whiteboard?</a></li>
+    <li><a href="#h_01H06K25VR16Q6MAJ0DW5Y2MA8" target="_self">Starting Jamspace Whiteboard in Discord</a></li>
+    <li>
+        <a href="#h_01H06K2B6AWB50WXP92VRM8JN4" target="_self">How to Use Jamspace Whiteboard</a>
         <ul>
-            <li>Drawing</li>
-            <li>Writing</li>
-            <li>GIF-ing</li>
-            <li>Shapes</li>
+            <li><a href="#h_01H06K2M958PF5NWPZFKBEF3YT" target="_self">Drawing</a></li>
+            <li><a href="#h_01H06K2SRD7EAWQ8MJKX35DKYQ" target="_self">Writing</a></li>
+            <li><a href="#h_01H06K31EYKJ3S36P4NA9FR3EP" target="_self">GIF-ing</a></li>
+            <li><a href="#h_01H7GPV2FB54AAJEZM4A014CDG" target="_self">Shapes</a></li>
         </ul>
     </li>
-    <li>What GIFs can be used in the activity?</li>
-    <li>“Saving” in Jamspace Whiteboard</li>
-    <li>Keyboard shortcuts</li>
-    <li>Frequently Asked Questions</li>
+    <li><a href="#h_01H06K3K4D5SKF74G4GSZXY9YS" target="_self">What GIFs can be used in the activity?</a></li>
+    <li><a href="#h_01H06K3XP9QHBMY3R2WSXD3C70" target="_self">“Saving” in Jamspace Whiteboard</a></li>
+    <li><a href="#h_01H06K43MWNF3VQSMC4X7ZSSZT" target="_self">Keyboard shortcuts</a></li>
+    <li><a href="#h_01H06K4BNT25T8BV05K1RZKPV8" target="_self">Frequently Asked Questions</a></li>
 </ul>
 <h1 id="h_01H06K20Y2YFFCDD8B0FTGVJSJ">What Is Jamspace Whiteboard?</h1>
 <p><strong>Jamspace Whiteboard</strong><span style="color: #2e3338;" data-darkreader-inline-color=""> is a collaborative whiteboard right inside Discord. You can draw, write text, search for and post GIFs (and can draw on top of those, too)! It’s not what you create, it’s the fun of creating it together!</span></p>
@@ -38,7 +39,7 @@
 <p>2. Select the <strong>GIF</strong> icon.</p>
 <p>3. Search for a GIF in the text field, or select a prompt.</p>
 <p>4. Select your GIF.</p>
-<h2>Shapes</h2>
+<h2 id="h_01H7GPV2FB54AAJEZM4A014CDG">Shapes</h2>
 <p><span style="color: #2e3338;" data-darkreader-inline-color="">1. Bring up the toolbar at the bottom of the screen</span></p>
 <p><span style="color: #2e3338;" data-darkreader-inline-color="">2. Select the Shape icon</span></p>
 <p><span style="color: #2e3338;" data-darkreader-inline-color="">3. </span><span style="color: #2e3338;" data-darkreader-inline-color="">Select a shape and color</span></p>
