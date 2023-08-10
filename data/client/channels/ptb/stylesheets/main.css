@@ -24046,7 +24046,7 @@ html.disable-forced-colors * {
     --redesign-button-secondary-background: var(--primary-460);
     --redesign-button-secondary-border: hsl(var(--white-500-hsl)/0.08);
     --redesign-button-secondary-pressed-background: var(--primary-500);
-    --redesign-button-secondary-pressed-border: var(--primary-500);
+    --redesign-button-secondary-pressed-border: hsl(var(--white-500-hsl)/0);
     --redesign-button-secondary-text: var(--primary-230);
     --redesign-input-control-selected: var(--brand-500);
     --redesign-only-background-active: var(--primary-530);
@@ -24299,7 +24299,7 @@ html.disable-forced-colors * {
     --redesign-button-secondary-background: var(--white-500);
     --redesign-button-secondary-border: hsl(var(--black-500-hsl)/0.08);
     --redesign-button-secondary-pressed-background: var(--primary-130);
-    --redesign-button-secondary-pressed-border: hsl(var(--black-500-hsl)/0.08);
+    --redesign-button-secondary-pressed-border: hsl(var(--black-500-hsl)/0.04);
     --redesign-button-secondary-text: var(--primary-600);
     --redesign-input-control-selected: var(--brand-500);
     --redesign-only-background-active: var(--primary-430);
@@ -24477,7 +24477,7 @@ html.disable-forced-colors * {
     --redesign-button-secondary-background: var(--dontuse-15);
     --redesign-button-secondary-border: hsl(var(--white-500-hsl)/0.08);
     --redesign-button-secondary-pressed-background: var(--dontuse-12);
-    --redesign-button-secondary-pressed-border: var(--primary-500);
+    --redesign-button-secondary-pressed-border: hsl(var(--white-500-hsl)/0);
     --redesign-button-secondary-text: var(--primary-230);
     --redesign-input-control-selected: var(--brand-500);
     --redesign-only-background-active: var(--dontuse-17);
@@ -24730,7 +24730,7 @@ html.disable-forced-colors * {
     --redesign-button-secondary-background: var(--dontuse-15);
     --redesign-button-secondary-border: hsl(var(--white-500-hsl)/0.08);
     --redesign-button-secondary-pressed-background: var(--dontuse-12);
-    --redesign-button-secondary-pressed-border: var(--primary-500);
+    --redesign-button-secondary-pressed-border: hsl(var(--white-500-hsl)/0);
     --redesign-button-secondary-text: var(--primary-230);
     --redesign-input-control-selected: var(--brand-500);
     --redesign-only-background-active: var(--dontuse-15);
@@ -163933,4 +163933,4 @@ html .invoiceCancelRow-dVOR64 {
     height: 200px
 }
 
-/*# sourceMappingURL=40532.48d1b21effd8f2dd408f.css.map*/
+/*# sourceMappingURL=40532.e0f1d24bf8c550fef722.css.map*/
