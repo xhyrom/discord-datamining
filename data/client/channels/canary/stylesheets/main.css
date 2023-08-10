@@ -20320,6 +20320,34 @@ html.disable-forced-colors * {
     box-shadow: 0 -1px 0 var(--background-modifier-accent)
 }
 
+.profileEffects-km5xa2 {
+    overflow: hidden
+}
+
+.effectBackground-8Yf7Tt,
+.profileEffects-km5xa2 {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    pointer-events: none
+}
+
+.effectBackground-8Yf7Tt {
+    -webkit-transition-property: background, opacity;
+    transition-property: background, opacity;
+    top: 0;
+    left: 0
+}
+
+.effect-23JFo_ {
+    width: 100%
+}
+
+.border-16r7Xn,
+.effect-23JFo_ {
+    position: absolute
+}
+
 @-webkit-keyframes uploadIconAnimateInLeft-18-7XG {
     0% {
         -webkit-transform: translateZ(0) rotate(0deg);
@@ -56319,7 +56347,8 @@ h6.title-1p9WyQ {
     display: -webkit-box;
     -webkit-box-orient: vertical;
     -webkit-line-clamp: 4;
-    overflow: hidden
+    overflow: hidden;
+    max-height: 100px
 }
 
 .showMoreButtonText-1jnEQf {
@@ -163951,4 +163980,4 @@ html .invoiceCancelRow-dVOR64 {
     height: 200px
 }
 
-/*# sourceMappingURL=40532.59b72a2dac8a11e6a084.css.map*/
+/*# sourceMappingURL=40532.b9f8a789c1c2f778d093.css.map*/
