@@ -23909,6 +23909,16 @@ html.disable-forced-colors * {
     --background-secondary: var(--primary-630);
     --background-secondary-alt: var(--primary-660);
     --background-tertiary: var(--primary-700);
+    --bg-backdrop: hsl(var(--black-500-hsl)/0.7);
+    --bg-base-primary: var(--primary-600);
+    --bg-base-secondary: var(--primary-630);
+    --bg-base-tertiary: var(--primary-660);
+    --bg-mod-faint: hsl(var(--primary-500-hsl)/0.3);
+    --bg-mod-strong: hsl(var(--primary-500-hsl)/0.54);
+    --bg-mod-subtle: hsl(var(--primary-500-hsl)/0.48);
+    --bg-surface-overlay: var(--primary-800);
+    --bg-surface-overlay-tmp: var(--primary-800);
+    --bg-surface-raised: var(--primary-600);
     --blur-fallback: hsl(var(--primary-700-hsl)/0.96);
     --blur-fallback-pressed: hsl(var(--primary-730-hsl)/0.96);
     --border-strong: hsl(var(--white-500-hsl)/0.16);
@@ -24045,6 +24055,8 @@ html.disable-forced-colors * {
     --redesign-button-danger-background: var(--red-430);
     --redesign-button-danger-pressed-background: var(--red-460);
     --redesign-button-danger-text: var(--white-500);
+    --redesign-button-overlay-alpha-background: hsl(var(--black-500-hsl)/0.54);
+    --redesign-button-overlay-alpha-pressed-background: hsl(var(--black-500-hsl)/0.64);
     --redesign-button-overlay-alpha-text: var(--white-500);
     --redesign-button-overlay-background: var(--white-500);
     --redesign-button-overlay-pressed-background: var(--primary-230);
@@ -24070,15 +24082,17 @@ html.disable-forced-colors * {
     --redesign-button-primary-on-blurple-text: var(--brand-500);
     --redesign-button-primary-pressed-background: var(--brand-560);
     --redesign-button-primary-text: var(--white-500);
-    --redesign-button-secondary-alt-background: var(--primary-530);
+    --redesign-button-secondary-alt-background: var(--primary-660);
     --redesign-button-secondary-alt-pressed-background: var(--primary-560);
     --redesign-button-secondary-alt-pressed-text: var(--primary-330);
     --redesign-button-secondary-alt-text: var(--primary-230);
     --redesign-button-secondary-background: var(--primary-460);
     --redesign-button-secondary-border: hsl(var(--white-500-hsl)/0.08);
     --redesign-button-secondary-pressed-background: var(--primary-500);
-    --redesign-button-secondary-pressed-border: hsl(var(--white-500-hsl)/0);
+    --redesign-button-secondary-pressed-border: hsl(var(--transparent-hsl)/0);
     --redesign-button-secondary-text: var(--primary-230);
+    --redesign-chat-input-background: var(--primary-700);
+    --redesign-input-control-active-bg: var(--primary-645);
     --redesign-input-control-selected: var(--brand-500);
     --redesign-only-background-active: var(--primary-530);
     --redesign-only-background-default: var(--primary-600);
@@ -24130,6 +24144,7 @@ html.disable-forced-colors * {
     --focus-primary: var(--blue-345);
     --info-box-background: hsl(var(--blue-345-hsl)/0.1);
     --theme-locked-blur-fallback: hsl(var(--primary-700-hsl)/0.96);
+    --voice-video-tile-blur-fallback: hsl(var(--primary-700-hsl)/0.48);
     --voice-video-video-tile-blur-fallback: hsl(var(--primary-700-hsl)/0.48);
     --white: var(--white-500)
 }
@@ -24151,7 +24166,7 @@ html.disable-forced-colors * {
     --background-mobile-primary: var(--primary-100);
     --background-mobile-secondary: var(--white-500);
     --background-modifier-accent: hsl(var(--primary-400-hsl)/0.24);
-    --background-modifier-accent-2: hsl(var(--primary-400-hsl)/0.24);
+    --background-modifier-accent-2: hsl(var(--primary-400-hsl)/0.16);
     --background-modifier-active: hsl(var(--primary-400-hsl)/0.2);
     --background-modifier-hover: hsl(var(--primary-400-hsl)/0.16);
     --background-modifier-selected: hsl(var(--primary-400-hsl)/0.24);
@@ -24160,8 +24175,18 @@ html.disable-forced-colors * {
     --background-secondary: var(--primary-130);
     --background-secondary-alt: var(--primary-160);
     --background-tertiary: var(--primary-200);
+    --bg-backdrop: hsl(var(--black-500-hsl)/0.7);
+    --bg-base-primary: var(--white-500);
+    --bg-base-secondary: var(--primary-130);
+    --bg-base-tertiary: var(--primary-160);
+    --bg-mod-faint: hsl(var(--primary-400-hsl)/0.2);
+    --bg-mod-strong: hsl(var(--primary-400-hsl)/0.24);
+    --bg-mod-subtle: hsl(var(--primary-400-hsl)/0.16);
+    --bg-surface-overlay: var(--white-500);
+    --bg-surface-overlay-tmp: var(--primary-130);
+    --bg-surface-raised: var(--white-500);
     --blur-fallback: hsl(var(--primary-530-hsl)/0.96);
-    --blur-fallback-pressed: hsl(var(--primary-530-hsl)/0.96);
+    --blur-fallback-pressed: hsl(var(--primary-560-hsl)/0.96);
     --border-strong: hsl(var(--black-500-hsl)/0.16);
     --border-subtle: hsl(var(--black-500-hsl)/0.08);
     --bug-reporter-modal-submitting-background: hsl(var(--white-500-hsl)/0.6);
@@ -24264,8 +24289,8 @@ html.disable-forced-colors * {
     --info-warning-background: hsl(var(--yellow-400-hsl)/0.1);
     --info-warning-foreground: var(--yellow-400);
     --info-warning-text: var(--black-500);
-    --input-background: var(--primary-200);
-    --input-placeholder-text: var(--primary-560);
+    --input-background: hsl(var(--black-500-hsl)/0.08);
+    --input-placeholder-text: var(--primary-500);
     --interactive-active: var(--primary-860);
     --interactive-hover: var(--primary-600);
     --interactive-muted: var(--primary-300);
@@ -24296,6 +24321,8 @@ html.disable-forced-colors * {
     --redesign-button-danger-background: var(--red-430);
     --redesign-button-danger-pressed-background: var(--red-460);
     --redesign-button-danger-text: var(--white-500);
+    --redesign-button-overlay-alpha-background: hsl(var(--black-500-hsl)/0.54);
+    --redesign-button-overlay-alpha-pressed-background: hsl(var(--black-500-hsl)/0.64);
     --redesign-button-overlay-alpha-text: var(--white-500);
     --redesign-button-overlay-background: var(--white-500);
     --redesign-button-overlay-pressed-background: var(--primary-230);
@@ -24330,6 +24357,8 @@ html.disable-forced-colors * {
     --redesign-button-secondary-pressed-background: var(--primary-130);
     --redesign-button-secondary-pressed-border: hsl(var(--black-500-hsl)/0.04);
     --redesign-button-secondary-text: var(--primary-600);
+    --redesign-chat-input-background: hsl(var(--black-500-hsl)/0.08);
+    --redesign-input-control-active-bg: var(--white-500);
     --redesign-input-control-selected: var(--brand-500);
     --redesign-only-background-active: var(--primary-430);
     --redesign-only-background-default: var(--white-500);
@@ -24397,8 +24426,18 @@ html.disable-forced-colors * {
     --background-secondary: var(--dontuse-23);
     --background-secondary-alt: var(--dontuse-17);
     --background-tertiary: var(--dontuse-19);
+    --bg-backdrop: hsl(var(--dontuse-19-hsl)/0.75);
+    --bg-base-primary: var(--black-500);
+    --bg-base-secondary: var(--black-500);
+    --bg-base-tertiary: var(--black-500);
+    --bg-mod-faint: hsl(var(--dontuse-11-hsl)/0.06);
+    --bg-mod-strong: hsl(var(--dontuse-11-hsl)/0.18);
+    --bg-mod-subtle: hsl(var(--dontuse-11-hsl)/0.12);
+    --bg-surface-overlay: var(--dontuse-19);
+    --bg-surface-overlay-tmp: var(--dontuse-23);
+    --bg-surface-raised: var(--dontuse-22);
     --blur-fallback: hsl(var(--dontuse-19-hsl)/0.96);
-    --blur-fallback-pressed: hsl(var(--dontuse-19-hsl)/0.96);
+    --blur-fallback-pressed: hsl(var(--dontuse-20-hsl)/0.96);
     --border-strong: hsl(var(--dontuse-11-hsl)/0.2);
     --button-creator-revenue-background: var(--teal-430);
     --button-danger-background: var(--red-430);
@@ -24472,6 +24511,8 @@ html.disable-forced-colors * {
     --redesign-button-danger-background: var(--red-430);
     --redesign-button-danger-pressed-background: var(--red-460);
     --redesign-button-danger-text: var(--white-500);
+    --redesign-button-overlay-alpha-background: hsl(var(--black-500-hsl)/0.54);
+    --redesign-button-overlay-alpha-pressed-background: hsl(var(--black-500-hsl)/0.64);
     --redesign-button-overlay-alpha-text: var(--white-500);
     --redesign-button-overlay-background: var(--white-500);
     --redesign-button-overlay-pressed-background: var(--primary-230);
@@ -24480,7 +24521,7 @@ html.disable-forced-colors * {
     --redesign-button-positive-pressed-background: var(--green-460);
     --redesign-button-positive-text: var(--white-500);
     --redesign-button-primary-alt-background: hsl(var(--brand-500-hsl)/0);
-    --redesign-button-primary-alt-border: var(--brand-360);
+    --redesign-button-primary-alt-border: var(--brand-430);
     --redesign-button-primary-alt-on-blurple-background: hsl(var(--brand-530-hsl)/0);
     --redesign-button-primary-alt-on-blurple-border: var(--white-500);
     --redesign-button-primary-alt-on-blurple-pressed-background: var(--brand-530);
@@ -24489,7 +24530,7 @@ html.disable-forced-colors * {
     --redesign-button-primary-alt-pressed-background: hsl(var(--brand-700-hsl)/0.16);
     --redesign-button-primary-alt-pressed-border: hsl(var(--brand-400-hsl)/0.5);
     --redesign-button-primary-alt-pressed-text: var(--brand-360);
-    --redesign-button-primary-alt-text: var(--brand-360);
+    --redesign-button-primary-alt-text: var(--brand-430);
     --redesign-button-primary-background: var(--brand-500);
     --redesign-button-primary-on-blurple-background: var(--white-500);
     --redesign-button-primary-on-blurple-pressed-background: var(--brand-200);
@@ -24499,13 +24540,15 @@ html.disable-forced-colors * {
     --redesign-button-primary-text: var(--white-500);
     --redesign-button-secondary-alt-background: hsl(var(--dontuse-16-hsl)/0.455);
     --redesign-button-secondary-alt-pressed-background: hsl(var(--dontuse-11-hsl)/0.2);
-    --redesign-button-secondary-alt-pressed-text: var(--primary-330);
-    --redesign-button-secondary-alt-text: var(--primary-230);
+    --redesign-button-secondary-alt-pressed-text: var(--dontuse-8);
+    --redesign-button-secondary-alt-text: var(--dontuse-4);
     --redesign-button-secondary-background: var(--dontuse-15);
-    --redesign-button-secondary-border: hsl(var(--white-500-hsl)/0.08);
+    --redesign-button-secondary-border: hsl(var(--dontuse-11-hsl)/0.12);
     --redesign-button-secondary-pressed-background: var(--dontuse-12);
-    --redesign-button-secondary-pressed-border: hsl(var(--white-500-hsl)/0);
-    --redesign-button-secondary-text: var(--primary-230);
+    --redesign-button-secondary-pressed-border: hsl(var(--dontuse-11-hsl)/0.12);
+    --redesign-button-secondary-text: var(--dontuse-4);
+    --redesign-chat-input-background: var(--dontuse-22);
+    --redesign-input-control-active-bg: var(--dontuse-17);
     --redesign-input-control-selected: var(--brand-500);
     --redesign-only-background-active: var(--dontuse-17);
     --redesign-only-background-default: var(--black-500);
@@ -24622,6 +24665,7 @@ html.disable-forced-colors * {
     --textbox-markdown-syntax: var(--primary-360);
     --theme-locked-blur-fallback: hsl(var(--primary-700-hsl)/0.96);
     --user-profile-header-overflow-background: hsl(var(--primary-700-hsl)/0.5);
+    --voice-video-tile-blur-fallback: hsl(var(--primary-700-hsl)/0.48);
     --voice-video-video-tile-blur-fallback: hsl(var(--primary-700-hsl)/0.48);
     --white: var(--white-500)
 }
@@ -24648,8 +24692,18 @@ html.disable-forced-colors * {
     --background-secondary: var(--dontuse-18);
     --background-secondary-alt: var(--dontuse-15);
     --background-tertiary: var(--dontuse-16);
+    --bg-backdrop: hsl(var(--black-500-hsl)/0.7);
+    --bg-base-primary: var(--dontuse-20);
+    --bg-base-secondary: var(--dontuse-20);
+    --bg-base-tertiary: var(--dontuse-22);
+    --bg-mod-faint: hsl(var(--dontuse-11-hsl)/0.12);
+    --bg-mod-strong: hsl(var(--dontuse-11-hsl)/0.24);
+    --bg-mod-subtle: hsl(var(--dontuse-11-hsl)/0.16);
+    --bg-surface-overlay: var(--dontuse-17);
+    --bg-surface-overlay-tmp: var(--dontuse-17);
+    --bg-surface-raised: var(--dontuse-18);
     --blur-fallback: hsl(var(--dontuse-17-hsl)/0.96);
-    --blur-fallback-pressed: hsl(var(--dontuse-17-hsl)/0.96);
+    --blur-fallback-pressed: hsl(var(--dontuse-18-hsl)/0.96);
     --border-strong: hsl(var(--dontuse-11-hsl)/0.18);
     --button-creator-revenue-background: var(--teal-430);
     --button-danger-background: var(--red-430);
@@ -24723,6 +24777,8 @@ html.disable-forced-colors * {
     --redesign-button-danger-background: var(--red-430);
     --redesign-button-danger-pressed-background: var(--red-460);
     --redesign-button-danger-text: var(--white-500);
+    --redesign-button-overlay-alpha-background: hsl(var(--black-500-hsl)/0.54);
+    --redesign-button-overlay-alpha-pressed-background: hsl(var(--black-500-hsl)/0.64);
     --redesign-button-overlay-alpha-text: var(--white-500);
     --redesign-button-overlay-background: var(--white-500);
     --redesign-button-overlay-pressed-background: var(--primary-230);
@@ -24750,13 +24806,15 @@ html.disable-forced-colors * {
     --redesign-button-primary-text: var(--white-500);
     --redesign-button-secondary-alt-background: hsl(var(--dontuse-11-hsl)/0.12);
     --redesign-button-secondary-alt-pressed-background: hsl(var(--dontuse-11-hsl)/0.2);
-    --redesign-button-secondary-alt-pressed-text: var(--primary-330);
-    --redesign-button-secondary-alt-text: var(--primary-230);
+    --redesign-button-secondary-alt-pressed-text: var(--dontuse-9);
+    --redesign-button-secondary-alt-text: var(--dontuse-3);
     --redesign-button-secondary-background: var(--dontuse-15);
-    --redesign-button-secondary-border: hsl(var(--white-500-hsl)/0.08);
+    --redesign-button-secondary-border: hsl(var(--dontuse-11-hsl)/0.12);
     --redesign-button-secondary-pressed-background: var(--dontuse-12);
-    --redesign-button-secondary-pressed-border: hsl(var(--white-500-hsl)/0);
-    --redesign-button-secondary-text: var(--primary-230);
+    --redesign-button-secondary-pressed-border: hsl(var(--dontuse-11-hsl)/0.12);
+    --redesign-button-secondary-text: var(--dontuse-3);
+    --redesign-chat-input-background: hsl(var(--dontuse-11-hsl)/0.12);
+    --redesign-input-control-active-bg: var(--dontuse-16);
     --redesign-input-control-selected: var(--brand-500);
     --redesign-only-background-active: var(--dontuse-15);
     --redesign-only-background-default: var(--dontuse-20);
@@ -164111,4 +164169,4 @@ html .invoiceCancelRow-dVOR64 {
     height: 200px
 }
 
-/*# sourceMappingURL=40532.d2fcc56b6f3d67613c43.css.map*/
+/*# sourceMappingURL=40532.f83a7a434ad1229f0828.css.map*/
