@@ -4828,6 +4828,27 @@
   {
     "data": {
       "kind": "user",
+      "id": "2023-08_profile_effects",
+      "label": "Profile Effects User Experiment",
+      "description": [
+        "Not Eligible",
+        "Control Bucket",
+        "Treatment 1: Enables profile effects"
+      ],
+      "hash": 3382923749,
+      "buckets": [
+        -1,
+        0,
+        1
+      ],
+      "config_keys": [
+        "enabled"
+      ]
+    }
+  },
+  {
+    "data": {
+      "kind": "user",
       "id": "2022-12_premium_targeted_upsells",
       "label": "Premium Targeted Upsells",
       "description": [
@@ -6211,27 +6232,6 @@
         ]
       },
       "overrides_formatted": []
-    }
-  },
-  {
-    "data": {
-      "kind": "user",
-      "id": "2023-08_profile_effects",
-      "label": "Profile Effects User Experiment",
-      "description": [
-        "Not Eligible",
-        "Control Bucket",
-        "Treatment 1: Enables profile effects"
-      ],
-      "hash": 3382923749,
-      "buckets": [
-        -1,
-        0,
-        1
-      ],
-      "config_keys": [
-        "enabled"
-      ]
     }
   },
   {
