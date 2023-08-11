@@ -93,7 +93,7 @@
                 <li><a href="https://support.discord.com/hc/en-us/articles/6607890733079-Bobble-League-FAQ">Bobble League</a></li>
                 <li><a href="https://support.discord.com/hc/en-us/articles/7552538635031-Know-What-I-Meme-FAQ">Know What I Meme</a></li>
                 <li><a href="https://garticphone.com/discord-help">Gartic Phone</a></li>
-                <li><a href="https://support.discord.com/hc/en-us/articles/14042410493847-Jamspace-FAQ">Jamspace</a></li>
+                <li><a href="https://support.discord.com/hc/en-us/articles/14042410493847-Jamspace-FAQ">Jamspace Whiteboard</a></li>
                 <li><a href="https://www.fundaygames.dk/discord/color-together-play-guide">Color Together</a></li>
             </ul>
             <p>And of course, you’ll always find us on the usual places: <a href="https://twitter.com/discord">Twitter</a>, <a href="https://www.instagram.com/discord/">Instagram</a> or <a href="https://www.tiktok.com/@discord">TikTok</a>. Try making a good ol’ fashioned montage of your sick Putt Party plays and share it with us!&nbsp;</p>
