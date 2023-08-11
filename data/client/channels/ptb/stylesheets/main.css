@@ -68019,14 +68019,14 @@ strong {
     white-space: nowrap
 }
 
-.imageContainer-ZRSemj {
+.mediaContainer-1ZqQwH {
     margin-top: auto;
     position: relative;
     min-height: 0
 }
 
-.imageContainer-ZRSemj>div:not([aria-expanded=false]),
-.imageContainer-ZRSemj>div:not([aria-expanded=false])>div {
+.mediaContainer-1ZqQwH>div:not([aria-expanded=false]),
+.mediaContainer-1ZqQwH>div:not([aria-expanded=false])>div {
     height: 100%
 }
 
@@ -68061,7 +68061,7 @@ strong {
     height: 100%
 }
 
-.image-1091CL {
+.media-29HL8- {
     border-radius: 3px;
     max-width: 100%;
     -o-object-fit: contain;
@@ -164208,4 +164208,4 @@ html .invoiceCancelRow-dVOR64 {
     height: 200px
 }
 
-/*# sourceMappingURL=40532.39cf5b9258ec3657066a.css.map*/
+/*# sourceMappingURL=40532.ea8cd94dd348fa9de80d.css.map*/
