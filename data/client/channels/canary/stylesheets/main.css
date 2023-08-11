@@ -162711,6 +162711,15 @@ html .invoiceCancelRow-3s2UuC {
     width: 100%
 }
 
+.timeline-iTKugp:hover {
+    cursor: pointer
+}
+
+.timelineDragging-3-CQgy:hover {
+    cursor: -webkit-grabbing;
+    cursor: grabbing
+}
+
 .timelineVideo-3n_Fzk {
     display: none
 }
@@ -162744,13 +162753,7 @@ html .invoiceCancelRow-3s2UuC {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
     -ms-flex-direction: column;
-    flex-direction: column;
-    cursor: ew-resize
-}
-
-.dragHandle-2_USkS:active {
-    cursor: -webkit-grabbing;
-    cursor: grabbing
+    flex-direction: column
 }
 
 .dragHandleLeft-2NSGMV {
@@ -162774,14 +162777,7 @@ html .invoiceCancelRow-3s2UuC {
     top: 0;
     bottom: 0;
     border-top: 2px solid var(--brand-500);
-    border-bottom: 2px solid var(--brand-500);
-    cursor: -webkit-grab;
-    cursor: grab
-}
-
-.dragBox-22aoQP:active {
-    cursor: -webkit-grabbing;
-    cursor: grabbing
+    border-bottom: 2px solid var(--brand-500)
 }
 
 .dragging-_rLGE4 {
@@ -162794,11 +162790,9 @@ html .invoiceCancelRow-3s2UuC {
     bottom: 0;
     background-color: var(--white-500);
     z-index: 1000;
-    width: 4px
-}
-
-.playhead-2-5O0o:hover {
-    cursor: ew-resize
+    width: 4px;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%)
 }
 
 .timePillBackground-2ud9zH {
@@ -164216,4 +164210,4 @@ html .invoiceCancelRow-dVOR64 {
     height: 200px
 }
 
-/*# sourceMappingURL=40532.83225a0a22cdfca519e3.css.map*/
+/*# sourceMappingURL=40532.070280a736934f55a183.css.map*/
