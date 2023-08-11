@@ -40,8 +40,8 @@
     <div id="heading-3" class="rich-wrapper">
         <div class="blog-post-content w-richtext">
             <h2><strong>What Games and Activities are Available?</strong></h2>
-            <figure class="w-richtext-figure-type-image w-richtext-align-fullwidth" style="max-width:1600pxpx">
-                <div><img src="https://assets-global.website-files.com/5f9072399b2640f14d6a2bf4/64a6f3840f17f0e36f60bc3e_6LJ1aYlIhOmhLH3EuSX21Dc2oDtz_2lDTHsWqJ4vophKGWXgI8ofBet0-nNTzlREPJvuc6LTRljKOrylFEJ-FK3y9zpxEcjhvKpxZzTEo9eU9vZk2M-q34F2LQsC0lVQpvkUY4_NpPa-0N9SUNrrNNw.png" alt="Key artwork for all currently available Activities on Discord. "></div>
+            <figure style="max-width:3189pxpx" class="w-richtext-align-fullwidth w-richtext-figure-type-image">
+                <div><img src="https://assets-global.website-files.com/5f9072399b2640f14d6a2bf4/64d5797b7a8bb24d608e2b0a_8.10.2023%20Update.png" loading="lazy" alt="Key artwork for all currently available Activities on Discord. "></div>
             </figure>
             <p>Activities can be launched in either a server’s Voice channels or in a DM Voice call. Check out the entirety of currently-available Activities. <br></p>
             <ul role="list">
@@ -58,10 +58,10 @@
                 <li><strong>Blazing 8s:</strong> Get rid of your hand first or cry trying.</li>
                 <li><strong>Bobble League:</strong> Score goals as the coach of the world’s bobble-est team ever.</li>
                 <li><strong>Know What I Meme</strong>: The perfect place to repost the same capybara GIF for the hundredth time.</li>
-                <li><strong>Jamspace</strong> - A collaborative digital whiteboard anyone in the call can contribute to. Map out your next MMO raid mid-call or just doodle together!</li>
-                <li><strong>[NEW] Color Together</strong>: The dress was always black and gold, now color it so.&nbsp;<em>‍</em><strong>‍</strong></li>
+                <li><strong>Jamspace</strong> <strong>Whiteboard</strong> - A collaborative digital whiteboard anyone in the call can contribute to. Map out your next MMO raid mid-call or just doodle together!</li>
+                <li><strong>Color Together</strong>: The dress was always black and gold, now color it so.&nbsp;<em>‍</em><strong>‍</strong></li>
             </ul>
-            <p><strong><em>Note: </em><em>This list of Activities was last updated on July 6, 2023.&nbsp;</em></strong></p>
+            <p><strong><em>Note: This list of Activities was last updated on August 10, 2023.&nbsp;</em></strong></p>
             <p>For the full low-down on how Activities work, repeat after me: “The Help Center article can be <a href="https://support.discord.com/hc/en-us/articles/4422142836759-Activities-Experiment">found here</a>.” (Good job!)&nbsp;<em><br>‍</em>‍</p>
         </div>
     </div>
