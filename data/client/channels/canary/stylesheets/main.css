@@ -1763,7 +1763,8 @@ html.decorate-links .lowSaturationUnderline-Z6CW6z {
     background-color: hsl(var(--primary-400-hsl)/.1)
 }
 
-.theme-light .lookOutlined-3RTC7c.colorTransparent-2SBJ8-:disabled. .theme-light .lookOutlined-3RTC7c.colorTransparent-2SBJ8-[aria-disabled=true] {
+.theme-light .lookOutlined-3RTC7c.colorTransparent-2SBJ8-:disabled,
+.theme-light .lookOutlined-3RTC7c.colorTransparent-2SBJ8-[aria-disabled=true] {
     background-color: transparent
 }
 
@@ -49878,6 +49879,13 @@ input[type=checked]:focus-visible+.label-3TDpbn {
     right: 0;
     bottom: 0;
     left: 0
+}
+
+.root-3Ek-v- {
+    width: clamp(320px, calc(100vw - 160px), min((100vh - 52px - 80px * 2) * 16/9, 1280px));
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex
 }
 
 .applicationIcon-39og1c {
@@ -164208,4 +164216,4 @@ html .invoiceCancelRow-dVOR64 {
     height: 200px
 }
 
-/*# sourceMappingURL=40532.ea8cd94dd348fa9de80d.css.map*/
+/*# sourceMappingURL=40532.83225a0a22cdfca519e3.css.map*/
