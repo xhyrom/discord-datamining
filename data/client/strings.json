@@ -1244,6 +1244,8 @@
   "GUILD_SETTINGS_AUDIT_LOG_MEMBER_ROLES_REMOVE": "\"**Removed** {count, plural, =1 {a role} other {some roles}}\"",
   "GUILD_SETTINGS_AUDIT_LOG_MEMBER_ROLES_ADD": "\"**Added** {count, plural, =1 {a role} other {some roles}}\"",
   "GUILD_SETTINGS_AUDIT_LOG_MEMBER_PRUNE_DELETE_DAYS": "\"For **{newValue, plural, =1 {a day} other {{newValue} days}}** of inactivity\"",
+  "GUILD_SETTINGS_AUDIT_LOG_MEMBER_BYPASSES_VERIFICATION_ON": "\"manually verified them\"",
+  "GUILD_SETTINGS_AUDIT_LOG_MEMBER_BYPASSES_VERIFICATION_OFF": "\"removed their manual verification\"",
   "GUILD_SETTINGS_AUDIT_LOG_ROLE_NAME_CREATE": "\"With the name **!!{newValue}!!**\"",
   "GUILD_SETTINGS_AUDIT_LOG_ROLE_NAME_CHANGE": "\"Changed the name from **!!{oldValue}!!** to **!!{newValue}!!**\"",
   "GUILD_SETTINGS_AUDIT_LOG_ROLE_PERMISSIONS_GRANTED": "\"**Granted** {count, plural, =1 {permission} other {permissions}}\"",
