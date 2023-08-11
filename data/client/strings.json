@@ -3984,6 +3984,7 @@
   "UNKNOWN_CHANNEL_PLACEHOLDER": "\"unknown-channel\"",
   "UNKNOWN_CHANNEL": "\"Unknown\"",
   "DELETED_ROLE_PLACEHOLDER": "\"deleted-role\"",
+  "UNKNOWN_USER_MENTION_PLACEHOLDER": "\"unknown-user\"",
   "CATEGORY_NAME_PLACEHOLDER": "\"New Category\"",
   "CREATE_CHANNEL_IN_CATEGORY": "\"Create Channel in !!{categoryName}!!\"",
   "OPEN_IN_BROWSER": "\"Open in Browser\"",
