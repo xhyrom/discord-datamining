@@ -1,12 +1,12 @@
 <div class="column-4 w-col w-col-8 w-col-stack">
     <div id="heading-1" class="rich-wrapper">
         <div class="blog-post-content w-richtext">
-            <p>Welcome, community moderators and admins!&nbsp;You’re about to have access to thousands of apps directly on Discord: our brand-new<strong> App Directory, </strong>rolling out in October 2022, lets you browse and install apps through curated collections and categories (such as games, moderation, and entertainment), and search through a diverse library of applications built by our incredible community of app developers.</p>
+            <p>Welcome, community moderators and admins!&nbsp;You’re about to have access to thousands of apps directly on Discord: our brand-new<strong> </strong><a href="https://discord.com/application-directory"><strong>App Directory</strong></a><strong>, </strong>rolling out in October 2022, lets you browse and install apps through curated collections and categories (such as games, moderation, and entertainment), and search through a diverse library of applications built by our incredible community of app developers.</p>
             <p>New to apps on Discord? Here’s a short guide to help you turn from a rookie to an app pro, just like the millions of users who interact with Discord apps every day!<br>‍</p>
             <h2><strong>Who builds these apps?</strong>&nbsp;</h2>
             <p>You do! Or you might know one of the thousands of talented, creative, and hard-working Discord users around the world who make apps! Our Discord Developer community has been a place for programmers of all skill levels to meet each other, experiment and iterate together, and grow their skills.&nbsp;<br>‍</p>
             <h2><strong>How do I find Discord apps?</strong>&nbsp;</h2>
-            <p>There are a handful of easy ways to discover apps. The newest way (and most exciting!) is to head to the App Directory, which you can find in Server Settings &gt; App Directory if you’re a moderator or admin.&nbsp;</p>
+            <p>There are a handful of easy ways to discover apps. The newest way (and most exciting!) is to head to the App Directory, which you can find in <strong>Server Settings &gt; App Directory</strong> if you’re a moderator or admin, or visit the <a href="https://discord.com/application-directory">App Directory here</a>.</p>
             <p>‍</p>
             <figure class="w-richtext-figure-type-image w-richtext-align-fullwidth" style="max-width:1600pxpx">
                 <div><img src="https://assets-global.website-files.com/5f9072399b2640f14d6a2bf4/634dddde3cec1a8b5f1501e0_bxkOu1qrC8VT-XsR3DE8dYSu836kHXOTAz-oDscyWC4EXArV0kQu-JqNdVl6mRnP1gYRZQuBoF0wA9emouuz6WkrRFJ2e-GOqzou7lbvaD0Tvh1vDzK93RolIPB9knEQlvNmqTKcGiHRBTJ_20oxuUsBXtain4O4RIy3qTTrhpwYVVwj1M9oZZDh4g.png" alt="An illustration of laptop that has the new App Directory opened on Discord."></div>

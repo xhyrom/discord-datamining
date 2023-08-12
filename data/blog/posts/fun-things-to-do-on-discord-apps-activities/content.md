@@ -10,12 +10,12 @@
         <div class="blog-post-content w-richtext">
             <h2><strong>How to Learn a Language Together on Discord<br></strong></h2>
             <p>Do you like to “@everyone” whenever possible? Yeah, I BET you do. Have you ever wanted to ping “@todos?” Share a message to “@tout le monde” or even “@みんな?” Well, none of those variations of the @everyone ping will actually work in Discord, but after learning a new language with Memrise, you’ll be able to talk to anyone and @everyone, no matter what language they speak!&nbsp;<br></p>
-            <figure class="w-richtext-figure-type-image w-richtext-align-fullwidth" style="max-width:1080px">
+            <figure class="w-richtext-figure-type-image w-richtext-align-fullwidth" style="max-width:1080pxpx">
                 <div><img src="https://assets-global.website-files.com/5f9072399b2640f14d6a2bf4/647672d3a166cbbaec5d3628_6fe868ca.png" alt="Promotional imagery for Memrise. It shows what the app is capable of, including “Translations,” “AI Chat” and creating Threads."></div>
             </figure>
             <p>Using <strong>Memrise</strong>, you’ll be able to learn both a new language solo or with your server friends! Use the <strong>/learn solo</strong> command to start a private exchange to practice your language skills.&nbsp;</p>
             <p>Once you’re ready to show what you’ve learned, or you’ve become an expert and want to talk with a friend who’s learning a language, the <strong>/learn together</strong> command will create a Thread so you and your fellow language learners can complete a challenge together.&nbsp;</p>
-            <p>There’s a lot to learn and enjoy with Memrise, so check the app out on the <a href="https://canary.discord.com/application-directory/1085553058823557180">App Directory</a>.<br>‍<em><br></em></p>
+            <p>There’s a lot to learn and enjoy with Memrise, so check the app out on the <a href="https://discord.com/application-directory">App Directory</a>.<em><br></em></p>
         </div>
     </div>
     <div id="heading-3" class="rich-wrapper">
@@ -23,11 +23,11 @@
             <h2><strong>How to Motivate Yourself and Friends on Discord<br></strong></h2>
             <p>It’s a scientific fact that spending time with good friends brings good vibes. But sometimes, it’s worth an extra bump of encouragement when the vibes need a bit of uplifting.&nbsp;</p>
             <p>That’s where <strong>Motivation</strong> comes in. By using Motivation’s aptly-named “<strong>/motivation”</strong> command, you’ll be able to share a bit of inspiration in the form of a motivational quote. That quote is then shared directly in the server for everyone to see, uplifting everyone’s mood and bringing just a bit more happiness to your friends, and depending on how big your server is, the world!&nbsp;</p>
-            <figure class="w-richtext-figure-type-image w-richtext-align-fullwidth" style="max-width:1206px">
+            <figure class="w-richtext-figure-type-image w-richtext-align-fullwidth" style="max-width:1206pxpx">
                 <div><img src="https://assets-global.website-files.com/5f9072399b2640f14d6a2bf4/647672f6e85875bf68bafcfe_e1c4afaa.png" alt="An image containing three inspirational quotes that were posted by Motivation."></div>
             </figure>
             <p>You can also use the <strong>/sendquote</strong> command to send a motivational quote to a friend via Direct Message, or schedule motivational quotes using <strong>/reminder</strong>. It’s like a surprise present of positivity!&nbsp;</p>
-            <p>Your daily dose of affirmations and positive vibes starts with <a href="https://canary.discord.com/application-directory/1073302920562475219">Motivation</a>, over in the App Directory. <br><br></p>
+            <p>Your daily dose of affirmations and positive vibes starts with <a href="https://canary.discord.com/application-directory/1073302920562475219">Motivation</a>, over in the <a href="https://discord.com/application-directory">App Directory</a>. <br><br></p>
         </div>
     </div>
     <div id="heading-4" class="rich-wrapper">
@@ -53,7 +53,7 @@
             </figure>
             <p>Channel your birth charts with CHANI: use it to know what the future holds by analyzing your birth chart, “Big Three” signs (your Sun, Moon, and rising signs), and how the current sky affects you and your friends that day. Use the <strong>/birth-chart</strong>,<strong> /current-sky </strong>and<strong> /big3 </strong>commands to learn everything you could ever want about your friends.&nbsp;</p>
             <p>Comparing birth charts and big three placements in Discord is a great way to learn more about the people you talk to, game, or hangout with every day. Whether you believe in astrology or not, you’ll spark crazy conversation simply by going “...yeeaaah that makes sense for you.”&nbsp;</p>
-            <p>Add the app to your server <a href="https://discord.com/application-directory/1091677533558292521">here</a>, unless you’re a Capricorn, in which case you’ve likely already added the app to all of your friends’ servers by now…<br>‍</p>
+            <p>Add the <a href="https://discord.com/application-directory">app</a> to your server <a href="https://discord.com/application-directory/1091677533558292521">here</a>, unless you’re a Capricorn, in which case you’ve likely already added the app to all of your friends’ servers by now…</p>
         </div>
     </div>
     <div id="heading-6" class="rich-wrapper">
@@ -65,7 +65,7 @@
                 <div><img src="https://assets-global.website-files.com/5f9072399b2640f14d6a2bf4/6476736ed30382019027d8ba_266cd5d9.png" alt="A group of six friends playing Sketch Heads during a Discord call."></div>
             </figure>
             <p>What exactly is available? You’ll find the full list of Activities over at <a href="https://discord.com/blog/server-activities-games-voice-watch-together">the dedicated Activities blog</a>. It’s always updated with the latest releases, so take a peek once in a while and see what’s new in the world of Activities on Discord.&nbsp;</p>
-            <p>Activities are supported on both desktop and mobile. If you’ve got Discord Nitro, you’ll be able to start a game of Checkers with your friends on the go. And other games I guess, but ya’know… checkers is cool.&nbsp;<br>‍</p>
+            <p>Activities are supported on both desktop and mobile. If you’ve got Discord Nitro, you’ll be able to start a game of Checkers with your friends on the go. And other games I guess, but ya’know… checkers is cool.&nbsp;</p>
         </div>
     </div>
     <div id="heading-7" class="rich-wrapper">
@@ -77,18 +77,18 @@
                 <div><img src="https://assets-global.website-files.com/5f9072399b2640f14d6a2bf4/6483a2e644858da15db812fc_Watch%20Together.gif" loading="lazy" alt="A preview image of the “Watch Together” Activity in Discord."></div>
             </figure>
             <p>The Host can also share control with everyone&nbsp; in the Activity, allowing participants to freely queue up their picks on what should play next. First a 30-second cat clip, then a three hour video essay, followed by a 2 minute video about how to best brew a cup of coffee. What chaos ensues will likely be really telling about what you and your friends are like.&nbsp;</p>
-            <p>Watch Together is free to use by anyone on Discord — no Nitro required! Try it out in a Discord call next time you’re looking for something to watch!&nbsp;<br>‍</p>
+            <p>Watch Together is free to use by anyone on Discord — no Nitro required! Try it out in a Discord call next time you’re looking for something to watch!&nbsp;</p>
         </div>
     </div>
     <div id="heading-8" class="rich-wrapper">
         <div class="blog-post-content w-richtext">
             <h2><strong>How to Find More Apps on Discord<br></strong></h2>
-            <p>While we’ve shared a few ideas on what to do on Discord, we understand that you might be looking for something else. A way to post cats, throw a cake at your friends, or buff up your moderation abilities. You’ll find these and a nearly-endless amount of possibilities over in the <strong>App Directory</strong>.&nbsp;<br></p>
+            <p>While we’ve shared a few ideas on what to do on Discord, we understand that you might be looking for something else. A way to post cats, throw a cake at your friends, or buff up your moderation abilities. You’ll find these and a nearly-endless amount of possibilities over in the <a href="https://discord.com/application-directory"><strong>App Directory</strong></a>.&nbsp;<br></p>
             <figure class="w-richtext-figure-type-image w-richtext-align-fullwidth" style="max-width:1600pxpx">
                 <div><img src="https://assets-global.website-files.com/5f9072399b2640f14d6a2bf4/64767396d2c16c3ee9bd96ca_9a744eef.png" alt="A screenshot of the Discord App Directory."></div>
             </figure>
-            <p>From image generation to community moderation, if there’s something you’ve ever wanted to do in Discord, you’ll likely find it in the App Directory. <strong>To explore what’s available, simply head into any server, then select the server’s name and open “App Directory.”&nbsp;</strong></p>
-            <p>You’ll be able to explore the options within any server, but you can only add apps to servers that you have the right permissions for. If you don’t have the perms, consider asking a moderator in the server you’re in to add it!&nbsp;<br>‍</p>
+            <p>From image generation to community moderation, if there’s something you’ve ever wanted to do in Discord, you’ll likely find it in the App Directory. <strong>To explore what’s available, simply head into any server, then select the server’s name and open “App Directory.", or check it out </strong><a href="https://discord.com/application-directory"><strong>here</strong></a><strong>.</strong></p>
+            <p>You’ll be able to explore the options within any server, but you can only add apps to servers that you have the right permissions for. If you don’t have the perms, consider asking a moderator in the server you’re in to add it!&nbsp;</p>
         </div>
     </div>
     <div id="heading-9" class="rich-wrapper">
@@ -96,7 +96,6 @@
             <h2><strong>The Possibilities Are Endless — And You Can Help<br></strong></h2>
             <p>The applications and bots mentioned above are created by independent developers and dev teams for millions of Discord users to enjoy in their communities. If you’ve got an idea for an app and you’ve got some coding know-how, you can build the app of your dreams. Check out <a href="https://discord.com/build">discord.com/build</a> to learn what’s possible. <a href="https://discord.com/build-case-studies/cappucino-memrise">Memrise, Cappuccino</a>, <a href="https://discord.com/build-case-studies/chani-motivation">CHANI, and Motivation</a> all brought their apps to Discord, and so can you!</p>
             <p>Not to toot our own horns here, buuuuut… the Discord Blog is a pretty great place to learn about what you can do on Discord! *<em>wink wink nudge nudge</em>* Explore our <a href="https://discord.com/category/how-to-discord">How to Discord</a> section to get the basics down, then keep an eye out at our <a href="https://discord.com/category/product">Product &amp; Features</a> category to stay up to date on the newest Discord features.&nbsp;</p>
-            <p>‍</p>
         </div>
     </div>
     <div id="heading-10" class="rich-wrapper">
