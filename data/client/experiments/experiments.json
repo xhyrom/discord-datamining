@@ -462,51 +462,6 @@
   {
     "data": {
       "kind": "guild",
-      "id": "2022-04_guild_role_subscription_purchase_feedback_loop",
-      "label": "Guild Role Subscription Purchase Feedback Loop",
-      "description": [
-        "Not Eligible",
-        "Control Bucket",
-        "Treatment 1: Enables guilds to send purchsae feedback loop system messages"
-      ],
-      "hash": 1990672009,
-      "buckets": [
-        -1,
-        0,
-        1
-      ],
-      "config_keys": [
-        "enableRoleSubscriptionPurchaseFeedbackLoop"
-      ]
-    },
-    "rollout": {
-      "populations": [
-        {
-          "buckets": {
-            "1": {
-              "rollout": [
-                {
-                  "start": 0,
-                  "end": 10000
-                }
-              ]
-            }
-          },
-          "filters": []
-        }
-      ],
-      "revision": 0,
-      "overrides": {
-        "1": [
-          "908114392263049277"
-        ]
-      },
-      "overrides_formatted": []
-    }
-  },
-  {
-    "data": {
-      "kind": "guild",
       "id": "2022-05_mobile_web_role_subscription_purchase_page",
       "label": "Guild Role Subscription Mobile Web",
       "description": [
@@ -3118,19 +3073,15 @@
                 {
                   "start": 2600,
                   "end": 3000
+                },
+                {
+                  "start": 3000,
+                  "end": 5000
                 }
               ]
             },
             "none": {
               "rollout": [
-                {
-                  "start": 500,
-                  "end": 2500
-                },
-                {
-                  "start": 3000,
-                  "end": 5000
-                },
                 {
                   "start": 5000,
                   "end": 7500
@@ -4063,6 +4014,27 @@
         "Treatment 1: One month trial users recieve the Nitroduction experience"
       ],
       "hash": 2956169075,
+      "buckets": [
+        -1,
+        0,
+        1
+      ],
+      "config_keys": [
+        "enabled"
+      ]
+    }
+  },
+  {
+    "data": {
+      "kind": "user",
+      "id": "2023-08_premium_tutorial_for_all_debug",
+      "label": "Premium Tutorial Experience For All Debugging",
+      "description": [
+        "Not Eligible",
+        "Control Bucket",
+        "Treatment 1: All net new users (exclude trial) receive premium tutorial experience"
+      ],
+      "hash": 3060539609,
       "buckets": [
         -1,
         0,
@@ -7996,27 +7968,6 @@
   {
     "data": {
       "kind": "user",
-      "id": "2023-02_parent_tools_launch",
-      "label": "Safety - Family Center Launch",
-      "description": [
-        "Not Eligible",
-        "Control Bucket",
-        "Treatment 1: Enabled"
-      ],
-      "hash": 1869634267,
-      "buckets": [
-        -1,
-        0,
-        1
-      ],
-      "config_keys": [
-        "enabled"
-      ]
-    }
-  },
-  {
-    "data": {
-      "kind": "user",
       "id": "2021-04_longer_group_dm_invites",
       "label": "Longer Group DM Invites",
       "description": [
@@ -10472,6 +10423,36 @@
   {
     "data": {
       "kind": "guild",
+      "hash": 1990672009
+    },
+    "rollout": {
+      "populations": [
+        {
+          "buckets": {
+            "1": {
+              "rollout": [
+                {
+                  "start": 0,
+                  "end": 10000
+                }
+              ]
+            }
+          },
+          "filters": []
+        }
+      ],
+      "revision": 0,
+      "overrides": {
+        "1": [
+          "908114392263049277"
+        ]
+      },
+      "overrides_formatted": []
+    }
+  },
+  {
+    "data": {
+      "kind": "guild",
       "hash": 1737811563
     },
     "rollout": {
@@ -11632,36 +11613,6 @@
       "overrides": {
         "0": [
           "1098695569129611454"
-        ]
-      },
-      "overrides_formatted": []
-    }
-  },
-  {
-    "data": {
-      "kind": "guild",
-      "hash": 1761652409
-    },
-    "rollout": {
-      "populations": [
-        {
-          "buckets": {
-            "none": {
-              "rollout": [
-                {
-                  "start": 0,
-                  "end": 10000
-                }
-              ]
-            }
-          },
-          "filters": []
-        }
-      ],
-      "revision": 0,
-      "overrides": {
-        "1": [
-          "1090311153802031315"
         ]
       },
       "overrides_formatted": []

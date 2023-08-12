@@ -1,22 +1,7 @@
 {
   "data": {
     "kind": "guild",
-    "id": "2022-04_guild_role_subscription_purchase_feedback_loop",
-    "label": "Guild Role Subscription Purchase Feedback Loop",
-    "description": [
-      "Not Eligible",
-      "Control Bucket",
-      "Treatment 1: Enables guilds to send purchsae feedback loop system messages"
-    ],
-    "hash": 1990672009,
-    "buckets": [
-      -1,
-      0,
-      1
-    ],
-    "config_keys": [
-      "enableRoleSubscriptionPurchaseFeedbackLoop"
-    ]
+    "hash": 1990672009
   },
   "rollout": {
     "populations": [
