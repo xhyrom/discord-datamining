@@ -964,6 +964,13 @@
       "POST"
     ]
   },
+  "BACKGROUND_SYNC": {
+    "url": "/users/@me/background-sync",
+    "allowed_methods": [
+      "OPTIONS",
+      "POST"
+    ]
+  },
   "MESSAGE_PREVIEWS": {
     "url": "/channels/preload-messages",
     "allowed_methods": [
