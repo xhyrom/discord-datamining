@@ -308,6 +308,16 @@
       "POST"
     ]
   },
+  "GUILD_BANS_SEARCH": {
+    "url": "/guilds/:param/bans/search",
+    "allowed_methods": [
+      "DELETE",
+      "GET",
+      "HEAD",
+      "OPTIONS",
+      "PUT"
+    ]
+  },
   "GUILD_BANS": {
     "url": "/guilds/:param/bans",
     "allowed_methods": [
