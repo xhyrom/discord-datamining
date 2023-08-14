@@ -119295,6 +119295,215 @@ input::-webkit-outer-spin-button {
     color: #0067e0
 }
 
+.searchBar-SC7FqZ {
+    width: 400px
+}
+
+.settingsHeader-1A0t14 {
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: start;
+    -ms-flex-align: start;
+    align-items: flex-start;
+    gap: 40px
+}
+
+.bannedUser-1IrKtC,
+.settingsHeader-1A0t14 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex
+}
+
+.bannedUser-1IrKtC {
+    position: relative;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    padding: 8px;
+    margin-bottom: 4px;
+    cursor: pointer;
+    border-radius: var(--radius-sm);
+    background-color: var(--background-modifier-accent);
+    -webkit-box-shadow: 3px hsl(var(--primary-500-hsl)/0);
+    box-shadow: 3px hsl(var(--primary-500-hsl)/0);
+    -webkit-transition: background-color .05s ease-in-out, -webkit-box-shadow .05s ease-in-out;
+    transition: background-color .05s ease-in-out, -webkit-box-shadow .05s ease-in-out;
+    transition: background-color .05s ease-in-out, box-shadow .05s ease-in-out;
+    transition: background-color .05s ease-in-out, box-shadow .05s ease-in-out, -webkit-box-shadow .05s ease-in-out
+}
+
+.bannedUser-1IrKtC:hover {
+    -webkit-box-shadow: 3px hsl(var(--primary-500-hsl)/.5);
+    box-shadow: 3px hsl(var(--primary-500-hsl)/.5);
+    background-color: var(--background-modifier-hover)
+}
+
+.bannedUser-1IrKtC .bannedUserAvatar-1IS5mW,
+.bannedUser-1IrKtC .username-u0pkiu {
+    z-index: 2
+}
+
+.bannedUser-1IrKtC .username-u0pkiu {
+    -webkit-box-flex: 1;
+    -ms-flex: 1 1 100px;
+    flex: 1 1 100px;
+    padding-left: 10px
+}
+
+.bannedUser-1IrKtC .username-u0pkiu .discrim-3XhmSm {
+    padding-left: 2px
+}
+
+.description-1z8W3d {
+    margin-bottom: 20px
+}
+
+.emptyState-ZhJfrZ {
+    margin-top: -24px
+}
+
+.spinner-20orqo {
+    margin-top: 20px
+}
+
+.bannedUserModal-1vJcCr .header-I940fI {
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    padding-top: 30px;
+    padding-bottom: 40px
+}
+
+.bannedUserModal-1vJcCr .footer-38B59F,
+.bannedUserModal-1vJcCr .header-I940fI {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center
+}
+
+.bannedUserModal-1vJcCr .footer-38B59F {
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between
+}
+
+.bannedUserModal-1vJcCr .userDiscrim-7zBkZ3,
+.bannedUserModal-1vJcCr .userUsername-2gE4dY {
+    font-weight: 500
+}
+
+.bannedUserModal-1vJcCr .reasonHeader-1Y8O8M {
+    text-transform: uppercase;
+    font-weight: 500
+}
+
+.bannedUserModal-1vJcCr .content-3gWIRn {
+    -webkit-user-select: text;
+    -moz-user-select: text;
+    -ms-user-select: text;
+    user-select: text;
+    padding-bottom: 20px
+}
+
+.bannedUserModal-1vJcCr .error-22CsDQ {
+    margin-top: 8px
+}
+
+.theme-dark .bannedUser-1IrKtC {
+    -webkit-box-shadow: 0 1px 0 0 hsl(var(--white-500-hsl)/.04);
+    box-shadow: 0 1px 0 0 hsl(var(--white-500-hsl)/.04)
+}
+
+.theme-dark .bannedUser-1IrKtC .username-u0pkiu {
+    color: var(--white-500)
+}
+
+.theme-dark .bannedUser-1IrKtC .username-u0pkiu .discrim-3XhmSm,
+.theme-dark .bannedUserModal-1vJcCr .reason-XzG6Ss,
+.theme-dark .bannedUserModal-1vJcCr .userDiscrim-7zBkZ3 {
+    color: var(--primary-400)
+}
+
+.theme-dark .bannedUserModal-1vJcCr .reasonHeader-1Y8O8M {
+    color: var(--primary-200)
+}
+
+.theme-light .bannedUser-1IrKtC {
+    -webkit-box-shadow: 0 1px 0 0 hsl(var(--primary-500-hsl)/.04);
+    box-shadow: 0 1px 0 0 hsl(var(--primary-500-hsl)/.04)
+}
+
+.theme-light .bannedUser-1IrKtC .username-u0pkiu {
+    color: var(--primary-500)
+}
+
+.theme-light .bannedUser-1IrKtC .username-u0pkiu .discrim-3XhmSm {
+    color: var(--primary-300)
+}
+
+.theme-light .bannedUserModal-1vJcCr .reason-XzG6Ss,
+.theme-light .bannedUserModal-1vJcCr .userDiscrim-7zBkZ3 {
+    color: var(--primary-400)
+}
+
+.theme-light .bannedUserModal-1vJcCr .reasonHeader-1Y8O8M {
+    color: var(--primary-500)
+}
+
+.container-2BhFic {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    gap: 12px;
+    padding: 56px 24px 24px;
+    width: 660px
+}
+
+.scrollerContainer-20PD88 {
+    height: 760px;
+    padding: 8px;
+    border-radius: var(--radius-md);
+    background-color: var(--background-primary);
+    -webkit-box-shadow: var(--elevation-medium), var(--elevation-stroke);
+    box-shadow: var(--elevation-medium), var(--elevation-stroke)
+}
+
+.bansSearchContainer-q16YdP {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    gap: 8px
+}
+
+.searchButton-25yUqB,
+.searchIcon-2f75qS {
+    cursor: pointer
+}
+
+.paginationInput-ZiNNqP {
+    margin-top: 0
+}
+
+.paginationInput-ZiNNqP>nav {
+    margin: 0 0 0 auto
+}
+
 .searchBar-30dqPB {
     width: 400px
 }
@@ -164169,4 +164378,4 @@ html .invoiceCancelRow-dVOR64 {
     height: 200px
 }
 
-/*# sourceMappingURL=40532.a16bf67152ce402eac39.css.map*/
+/*# sourceMappingURL=40532.838f8231547fcc0e70d4.css.map*/
