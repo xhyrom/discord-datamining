@@ -6523,6 +6523,8 @@
   "PREMIUM_MARKETING_PERKS_DISCOVERABILITY_THEMES_SUBTITLE": "\"Color your Discord with a new look!\"",
   "PREMIUM_MARKETING_PERKS_DISCOVERABILITY_BOOSTS_TITLE": "\"2 Server\\nBoosts + 30%\"",
   "PREMIUM_MARKETING_PERKS_DISCOVERABILITY_BOOSTS_SUBTITLE": "\"You have 2 free Boosts to share, plus 30% off additional Boosts. Spread the love!\"",
+  "PROFILE_THEMES_TOOLTIP_TITLE": "\"Customize more with Profile Themes\"",
+  "PROFILE_THEMES_TOOLTIP_DESCRIPTION_PREMIUM": "\"Add your personal style to your profile with custom colors!\"",
   "PREMIUM_SWITCH_PLAN_DISABLED_PENDING_MUTATION_PLAN": "\"You have to cancel your pending plan change before choosing another plan.\"",
   "PREMIUM_SWITCH_PLAN_DISABLED_PENDING_MUTATION_PREMIUM_GUILD_SUBSCRIPTION": "\"You have a pending boost cancellation. You have to uncancel it before switching plans.\"",
   "PREMIUM_SWITCH_PLAN_DISABLED_IN_TRIAL": "\"You cannot switch plans during your trial.\"",
