@@ -461,47 +461,6 @@
   },
   {
     "data": {
-      "kind": "guild",
-      "id": "2022-05_mobile_web_role_subscription_purchase_page",
-      "label": "Guild Role Subscription Mobile Web",
-      "description": [
-        "Not Eligible",
-        "Control Bucket",
-        "Treatment 1: Enables role subscription mobile web purchase page"
-      ],
-      "hash": 4190408036,
-      "buckets": [
-        -1,
-        0,
-        1
-      ],
-      "config_keys": [
-        "enabled"
-      ]
-    },
-    "rollout": {
-      "populations": [
-        {
-          "buckets": {
-            "1": {
-              "rollout": [
-                {
-                  "start": 0,
-                  "end": 10000
-                }
-              ]
-            }
-          },
-          "filters": []
-        }
-      ],
-      "revision": 0,
-      "overrides": {},
-      "overrides_formatted": []
-    }
-  },
-  {
-    "data": {
       "kind": "user",
       "id": "2022-06_native_mobile_role_subscription_management",
       "label": "Mobile Guild Role Subscription Management",
@@ -574,27 +533,6 @@
         ]
       },
       "overrides_formatted": []
-    }
-  },
-  {
-    "data": {
-      "kind": "user",
-      "id": "2022-08_mobile_web_role_subscription_upsell",
-      "label": "Mobile Web Guild Role Subscription Upsell",
-      "description": [
-        "Not Eligible",
-        "Control Bucket",
-        "Treatment 1: Enable mobile web role subscription upsell"
-      ],
-      "hash": 2514746297,
-      "buckets": [
-        -1,
-        0,
-        1
-      ],
-      "config_keys": [
-        "enabled"
-      ]
     }
   },
   {
@@ -10477,6 +10415,32 @@
   {
     "data": {
       "kind": "guild",
+      "hash": 4190408036
+    },
+    "rollout": {
+      "populations": [
+        {
+          "buckets": {
+            "1": {
+              "rollout": [
+                {
+                  "start": 0,
+                  "end": 10000
+                }
+              ]
+            }
+          },
+          "filters": []
+        }
+      ],
+      "revision": 0,
+      "overrides": {},
+      "overrides_formatted": []
+    }
+  },
+  {
+    "data": {
+      "kind": "guild",
       "hash": 1737811563
     },
     "rollout": {
@@ -11574,32 +11538,6 @@
   {
     "data": {
       "kind": "guild",
-      "hash": 3903965280
-    },
-    "rollout": {
-      "populations": [
-        {
-          "buckets": {
-            "none": {
-              "rollout": [
-                {
-                  "start": 0,
-                  "end": 10000
-                }
-              ]
-            }
-          },
-          "filters": []
-        }
-      ],
-      "revision": 0,
-      "overrides": {},
-      "overrides_formatted": []
-    }
-  },
-  {
-    "data": {
-      "kind": "guild",
       "hash": 2080490321
     },
     "rollout": {
@@ -11826,6 +11764,36 @@
           "1074777828672929852",
           "922748688403693578",
           "119138216639987713"
+        ]
+      },
+      "overrides_formatted": []
+    }
+  },
+  {
+    "data": {
+      "kind": "guild",
+      "hash": 2119968730
+    },
+    "rollout": {
+      "populations": [
+        {
+          "buckets": {
+            "none": {
+              "rollout": [
+                {
+                  "start": 0,
+                  "end": 10000
+                }
+              ]
+            }
+          },
+          "filters": []
+        }
+      ],
+      "revision": 0,
+      "overrides": {
+        "1": [
+          "651595875897835540"
         ]
       },
       "overrides_formatted": []
