@@ -84944,104 +84944,6 @@ strong {
     background: rgb(var(--bg-overlay-color)/var(--bg-overlay-opacity-3))
 }
 
-.container-3ea-f6 {
-    background-color: var(--background-floating);
-    border-radius: var(--radius-xs);
-    padding: 12px;
-    min-width: 272px;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: column;
-    flex-direction: column;
-    gap: 8px
-}
-
-.broadcastRow-cThFuv,
-.container-3ea-f6 {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex
-}
-
-.broadcastRow-cThFuv {
-    gap: 4px;
-    -webkit-box-pack: justify;
-    -ms-flex-pack: justify;
-    justify-content: space-between
-}
-
-.broadcastRow-cThFuv,
-.broadcastRowText-vXAP1P {
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center
-}
-
-.broadcastRowText-vXAP1P {
-    display: -webkit-inline-box;
-    display: -ms-inline-flexbox;
-    display: inline-flex;
-    white-space: no-wrap
-}
-
-.broadcastRowViewers-3BfBM1 {
-    margin-left: 20px;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
-    gap: 4px;
-    height: 16px
-}
-
-.viewerIcon-2JJSfL {
-    color: var(--text-muted);
-    width: auto;
-    height: 100%
-}
-
-.textSpacing-1sj4Qu {
-    margin-right: 4px
-}
-
-.applicationIcon-1-U74F {
-    margin-left: 8px;
-    margin-right: 4px
-}
-
-.applicationName-3Tgh13 {
-    margin-right: 8px
-}
-
-.button-s7E4zh {
-    padding: 0 8px;
-    cursor: pointer
-}
-
-.button-s7E4zh .icon-2VGP-A {
-    margin-left: -2px
-}
-
-.innerButton-2tGsVo {
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
-    gap: 4px
-}
-
-.innerButton-2tGsVo,
-.listHeading-1RxRrH {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex
-}
-
-.listHeading-1RxRrH {
-    gap: 8px
-}
-
 .wrapper-3XVBev {
     position: absolute;
     top: -16px;
@@ -85173,6 +85075,104 @@ strong {
     padding: 4px
 }
 
+.container-3ea-f6 {
+    background-color: var(--background-floating);
+    border-radius: var(--radius-xs);
+    padding: 12px;
+    min-width: 272px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    gap: 8px
+}
+
+.broadcastRow-cThFuv,
+.container-3ea-f6 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex
+}
+
+.broadcastRow-cThFuv {
+    gap: 4px;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between
+}
+
+.broadcastRow-cThFuv,
+.broadcastRowText-vXAP1P {
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center
+}
+
+.broadcastRowText-vXAP1P {
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    white-space: no-wrap
+}
+
+.broadcastRowViewers-3BfBM1 {
+    margin-left: 20px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    gap: 4px;
+    height: 16px
+}
+
+.viewerIcon-2JJSfL {
+    color: var(--text-muted);
+    width: auto;
+    height: 100%
+}
+
+.textSpacing-1sj4Qu {
+    margin-right: 4px
+}
+
+.applicationIcon-1-U74F {
+    margin-left: 8px;
+    margin-right: 4px
+}
+
+.applicationName-3Tgh13 {
+    margin-right: 8px
+}
+
+.button-s7E4zh {
+    padding: 0 8px;
+    cursor: pointer
+}
+
+.button-s7E4zh .icon-2VGP-A {
+    margin-left: -2px
+}
+
+.innerButton-2tGsVo {
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    gap: 4px
+}
+
+.innerButton-2tGsVo,
+.listHeading-1RxRrH {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex
+}
+
+.listHeading-1RxRrH {
+    gap: 8px
+}
+
 .pill-L_aLMQ {
     position: absolute;
     top: 0;
@@ -85193,6 +85193,15 @@ strong {
 
 .tutorialContainer-1pL9QS {
     position: relative
+}
+
+.broadcastBadge--UbzoP {
+    background-color: var(--brand-500);
+    color: var(--header-primary);
+    width: 12px;
+    height: 12px;
+    padding: 2px;
+    border-radius: 50%
 }
 
 .dragInner-1CUBf_ {
@@ -164378,4 +164387,4 @@ html .invoiceCancelRow-dVOR64 {
     height: 200px
 }
 
-/*# sourceMappingURL=40532.838f8231547fcc0e70d4.css.map*/
+/*# sourceMappingURL=40532.ddec3bffe5501c813b1e.css.map*/
