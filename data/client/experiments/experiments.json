@@ -8818,27 +8818,6 @@
   },
   {
     "data": {
-      "kind": "user",
-      "id": "2022-05_safety_coms_update",
-      "label": "Safety Integrity Platform Coms Update",
-      "description": [
-        "Not Eligible",
-        "Control Bucket",
-        "Treatment 1: Enabled"
-      ],
-      "hash": 542042630,
-      "buckets": [
-        -1,
-        0,
-        1
-      ],
-      "config_keys": [
-        "enabled"
-      ]
-    }
-  },
-  {
-    "data": {
       "kind": "guild",
       "id": "2023-04_server_products",
       "label": "Server Products",
