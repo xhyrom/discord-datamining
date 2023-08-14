@@ -4754,6 +4754,51 @@
   },
   {
     "data": {
+      "kind": "guild",
+      "id": "2023-08_improved_bans_page",
+      "label": "Guild Settings Improved Bans Page",
+      "description": [
+        "Not Eligible",
+        "Control Bucket",
+        "Treatment 1: Guild Settings Improved Bans Page"
+      ],
+      "hash": 3768642622,
+      "buckets": [
+        -1,
+        0,
+        1
+      ],
+      "config_keys": [
+        "enabled"
+      ]
+    },
+    "rollout": {
+      "populations": [
+        {
+          "buckets": {
+            "none": {
+              "rollout": [
+                {
+                  "start": 0,
+                  "end": 10000
+                }
+              ]
+            }
+          },
+          "filters": []
+        }
+      ],
+      "revision": 0,
+      "overrides": {
+        "1": [
+          "651595875897835540"
+        ]
+      },
+      "overrides_formatted": []
+    }
+  },
+  {
+    "data": {
       "kind": "user",
       "id": "2023-08_profile_effects",
       "label": "Profile Effects User Experiment",
@@ -11853,36 +11898,6 @@
       "overrides": {
         "1": [
           "710677407257854033"
-        ]
-      },
-      "overrides_formatted": []
-    }
-  },
-  {
-    "data": {
-      "kind": "guild",
-      "hash": 3768642622
-    },
-    "rollout": {
-      "populations": [
-        {
-          "buckets": {
-            "none": {
-              "rollout": [
-                {
-                  "start": 0,
-                  "end": 10000
-                }
-              ]
-            }
-          },
-          "filters": []
-        }
-      ],
-      "revision": 0,
-      "overrides": {
-        "1": [
-          "651595875897835540"
         ]
       },
       "overrides_formatted": []
