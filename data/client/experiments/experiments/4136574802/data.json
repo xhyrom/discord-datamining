@@ -1,0 +1,21 @@
+{
+  "data": {
+    "kind": "user",
+    "id": "2022-08_churro_experiment",
+    "label": "PS5 Voice Experiment",
+    "description": [
+      "Not Eligible",
+      "Control Bucket",
+      "Treatment 3: PS Experiment + upsells + Staging"
+    ],
+    "hash": 4136574802,
+    "buckets": [
+      -1,
+      0,
+      3
+    ],
+    "config_keys": [
+      "enabled"
+    ]
+  }
+}
