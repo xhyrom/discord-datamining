@@ -42,7 +42,7 @@
           },
           {
             "type": "guild_member_count_range",
-            "min_count": 200,
+            "min_count": 1000,
             "max_count": null
           }
         ]
