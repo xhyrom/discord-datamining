@@ -156090,6 +156090,45 @@ html .invoiceCancelRow-3s2UuC {
     border: 1px solid ButtonText
 }
 
+.container-3eXgyl {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    width: 100%;
+    gap: var(--spacing-16);
+    border: none;
+    background-color: var(--background-secondary);
+    padding-top: var(--spacing-8);
+    margin-bottom: var(--spacing-32)
+}
+
+.profile-3dQrku {
+    margin-left: var(--spacing-16);
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center
+}
+
+.status-AlEMXi,
+.title-Xn87VB {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    width: 100%
+}
+
+.title-Xn87VB {
+    row-gap: var(--spacing-8)
+}
+
 .classifications-html32 {
     background-color: var(--background-secondary);
     -webkit-box-orient: vertical;
@@ -156254,42 +156293,7 @@ html .invoiceCancelRow-3s2UuC {
     background-color: var(--background-secondary)
 }
 
-.status-1XZi8v {
-    gap: var(--spacing-16);
-    margin-bottom: var(--spacing-56)
-}
-
-.status-1XZi8v,
-.statusHeaders-BZL_bZ {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex
-}
-
-.statusHeaders-BZL_bZ {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: column;
-    flex-direction: column;
-    -ms-flex-line-pack: justify;
-    align-content: space-between
-}
-
-.statusHeader-2Fh493 {
-    margin-bottom: var(--spacing-24)
-}
-
-.thermometerContainer-36roGe {
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    justify-content: center;
-    padding: var(--spacing-16);
-    background-color: var(--background-secondary-alt);
-    max-width: 320px
-}
-
-.thermometer-QWV1UX,
-.thermometerContainer-36roGe {
+.container-glqsPC {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -156297,54 +156301,6 @@ html .invoiceCancelRow-3s2UuC {
     -webkit-box-direction: normal;
     -ms-flex-direction: column;
     flex-direction: column
-}
-
-.thermometer-QWV1UX {
-    width: 100%;
-    margin-top: var(--spacing-24)
-}
-
-.readout-E9R4FP {
-    height: 8px;
-    gap: 2px;
-    background-color: var(--white);
-    border-radius: 8px;
-    overflow: hidden
-}
-
-.readout-E9R4FP,
-.thresholds-JZ9NDO {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex
-}
-
-.thresholds-JZ9NDO {
-    -webkit-box-pack: justify;
-    -ms-flex-pack: justify;
-    justify-content: space-between;
-    margin-top: var(--spacing-8)
-}
-
-.cool-2YdRH8 {
-    -webkit-box-flex: 4;
-    -ms-flex-positive: 4;
-    flex-grow: 4;
-    background-color: var(--status-positive)
-}
-
-.warm-3YEO1U {
-    -webkit-box-flex: 3;
-    -ms-flex-positive: 3;
-    flex-grow: 3;
-    background-color: var(--status-warning)
-}
-
-.hot-1aftIB {
-    -webkit-box-flex: 1;
-    -ms-flex-positive: 1;
-    flex-grow: 1;
-    background-color: var(--status-danger)
 }
 
 .list-2kUvmJ {
@@ -164452,4 +164408,4 @@ html .invoiceCancelRow-dVOR64 {
     height: 200px
 }
 
-/*# sourceMappingURL=40532.7905e30b676bbdc6cd01.css.map*/
+/*# sourceMappingURL=40532.c8efd99e041ba3589d82.css.map*/
