@@ -99640,7 +99640,8 @@ strong {
 }
 
 .smallPerkCardDescription-2lM2_J {
-    text-align: center
+    text-align: center;
+    min-height: 36px
 }
 
 .smallPerkCardEarlyAccessBadge-3nmrvW {
@@ -99685,6 +99686,26 @@ strong {
 .soundboardImage-2eOE50,
 .superReactionsImage-cyqMzO {
     height: 132px
+}
+
+.uploadImage-2xgNdF {
+    width: 220px
+}
+
+.streamingImage-2so9tG {
+    width: 175px
+}
+
+.emojiImage-O-lWqp {
+    width: 210px
+}
+
+.videoBackgroundImage-VoMScu {
+    width: 222px
+}
+
+.moreGuildsAltImage-19gi3g {
+    width: 260px
 }
 
 .newTag-RoxV8D {
@@ -99739,7 +99760,8 @@ strong {
 }
 
 .heading-2tPnY1 {
-    margin-bottom: 16px
+    margin-bottom: 16px;
+    text-align: center
 }
 
 .subtitle-16COWT {
@@ -99751,7 +99773,7 @@ strong {
 .cardContainer-2ZcjK6 {
     display: grid;
     gap: 16px;
-    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    grid-template-columns: 1fr;
     width: 100%
 }
 
@@ -99775,7 +99797,16 @@ strong {
     align-items: center;
     padding: 24px;
     background-color: var(--background-floating);
-    border-radius: 20px
+    border-radius: 20px;
+    -webkit-transition: all .2s ease-in-out;
+    transition: all .2s ease-in-out
+}
+
+.card-2CbsaE:hover {
+    -webkit-box-shadow: var(--shadow-high);
+    box-shadow: var(--shadow-high);
+    -webkit-transform: translateY(-8px);
+    transform: translateY(-8px)
 }
 
 .clickable-2EIegO {
@@ -99819,6 +99850,12 @@ strong {
 
 .blue-1pvgvJ {
     background-image: linear-gradient(130.41deg, #0fb3ff 7.43%, #b940ff 82.67%)
+}
+
+@media (min-width:960px) {
+    .cardContainer-2ZcjK6 {
+        grid-template-columns: 1fr 1fr 1fr
+    }
 }
 
 .wrapper-1MViKS {
@@ -164455,4 +164492,4 @@ html .invoiceCancelRow-dVOR64 {
     height: 200px
 }
 
-/*# sourceMappingURL=40532.800ca539d58be59ac4b0.css.map*/
+/*# sourceMappingURL=40532.05f277af68e701efddeb.css.map*/
