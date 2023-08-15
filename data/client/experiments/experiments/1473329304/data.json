@@ -6,16 +6,19 @@
     "description": [
       "Not Eligible",
       "Control Bucket",
-      "Treatment 1: Enabled"
+      "Treatment 1: Enabled",
+      "Treatment 2: Enabled"
     ],
     "hash": 1473329304,
     "buckets": [
       -1,
       0,
-      1
+      1,
+      2
     ],
     "config_keys": [
-      "enabled"
+      "enabled",
+      "mobileEnabled"
     ]
   }
 }
