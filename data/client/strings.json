@@ -15761,7 +15761,7 @@
   "BROADCASTING_SETTINGS_MODAL_CUSTOM_GUILDS_HINT": "\"Select up to {count, number} servers\"",
   "BROADCASTING_SETTINGS_MODAL_DISABLED_DESCRIPTION": "\"All of your friends can see your broadcast\"",
   "BROADCASTING_SETTINGS_MODAL_BEHAVIOR_TITLE": "\"Broadcast behavior\"",
-  "LEAVE_BROADCAST": "\"Leave Broadcast\"",
+  "LEAVE_BROADCAST": "\"Leave Room\"",
   "STOP_BROADCASTING": "\"Stop Broadcasting\"",
   "START_BROADCASTING": "\"Start Broadcasting\"",
   "BROADCASTING": "\"Broadcasting\"",
