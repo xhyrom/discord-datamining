@@ -63634,6 +63634,79 @@ strong {
     --__header-bar-background: var(--home-background)
 }
 
+.lineClamp-2-w95g {
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    overflow: hidden
+}
+
+.container-Vrgqxz {
+    border-radius: 12px;
+    border: 1px solid var(--background-message-highlight-hover);
+    background: var(--background-message-highlight);
+    -webkit-box-shadow: var(--shadow-low);
+    box-shadow: var(--shadow-low);
+    padding: 16px;
+    -webkit-transition: background .3s;
+    transition: background .3s;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    gap: 16px
+}
+
+.container-Vrgqxz:hover {
+    background: var(--background-message-highlight-hover)
+}
+
+.coverImageContainer-V8-U47 {
+    width: 100%;
+    max-width: 655px
+}
+
+.coverImage-2HWWxr {
+    width: 100%;
+    border-radius: 12px
+}
+
+.infoContainer-14dbs1 {
+    -webkit-box-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+    max-width: 500px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex
+}
+
+.showMoreButton-13n9-g {
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    border-bottom: 1px solid var(--interactive-active);
+    padding-bottom: 2px;
+    cursor: pointer
+}
+
+.showMoreButton-13n9-g:hover {
+    -webkit-transition: .3s ease;
+    transition: .3s ease;
+    opacity: .75
+}
+
+.showMoreArrow-1hAnFi {
+    color: var(--interactive-active);
+    width: 16px;
+    height: 16px;
+    margin-right: -3px
+}
+
 .container-20Ljoy {
     -webkit-box-flex: 1;
     -ms-flex: 1;
@@ -63645,6 +63718,10 @@ strong {
     -webkit-box-direction: normal;
     -ms-flex-direction: column;
     flex-direction: column
+}
+
+.content-1tt_Au {
+    padding: 32px 42px
 }
 
 .container-3XgAHv {
@@ -84056,18 +84133,6 @@ strong {
 
 .message-1oQ5HY {
     text-align: center
-}
-
-.container-2P409q {
-    width: 280px;
-    text-align: center
-}
-
-.image-1-uOrT {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    margin: 0 auto 6px
 }
 
 .container-1vIv1Y {
@@ -164387,4 +164452,4 @@ html .invoiceCancelRow-dVOR64 {
     height: 200px
 }
 
-/*# sourceMappingURL=40532.ddec3bffe5501c813b1e.css.map*/
+/*# sourceMappingURL=40532.7905e30b676bbdc6cd01.css.map*/
