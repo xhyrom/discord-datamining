@@ -22602,8 +22602,8 @@ html.disable-forced-colors * {
 
 .badge-1g3blX {
     position: absolute;
-    bottom: 0;
-    right: 3px;
+    bottom: -2px;
+    right: 0;
     width: 10px;
     height: 10px
 }
@@ -164485,4 +164485,4 @@ html .invoiceCancelRow-dVOR64 {
     height: 200px
 }
 
-/*# sourceMappingURL=40532.28b314b22e035a4c9610.css.map*/
+/*# sourceMappingURL=40532.aba32487f41e2281a0ad.css.map*/
