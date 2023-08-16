@@ -6,7 +6,7 @@
             <p>Way back when Jason and I first built Discord in 2015, there were only a handful of us working on the product and I was personally responsible for designing and programming our username and identity systems. We were building Discord as a place to hang out with our friends while playing games. Back then I was playing Final Fantasy XIV and it was important to me that I show up in the Discord server as my in-game character. Years later, I spend most nights still hanging out in voice while playing FFXIV (maybe a little <em>too</em> much lol). Being able to be myself in these spaces and seeing others do the same is something I care about.</p>
             <p>Starting this month, however, we’re making some big changes to how usernames and identities work on our platform.</p>
             <p>The whole point of these changes is that we want to make it a lot easier for you and all the new users coming to Discord to connect and hang out with friends. And as Discord’s Co-Founder, I wanted to talk about these changes personally. We know that your username and identity are important, and we understand that some of you may not like this change and disagree with it. We know that this is an issue you feel strongly about.&nbsp;</p>
-            <p>We also recognize that our current username format has been one of the things that makes Discord unique, and that this change makes our usernames look a lot like those on other platforms. To be blunt, that’s kind of the point. These weren’t easy decisions, and we didn’t come to them lightly. We’ve put a lot of thought into this (like…<em> a lot</em>), so I’d like to walk through how we got here and what’s going to happen next.<br>‍</p>
+            <p>We also recognize that our current username format has been one of the things that makes Discord unique, and that this change makes our usernames look a lot like those on other platforms. To be blunt, that’s kind of the point. These weren’t easy decisions, and we didn’t come to them lightly. We’ve put a lot of thought into this (like…<em> a lot</em>), so I’d like to walk through how we got here and what’s going to happen next.</p>
         </div>
     </div>
     <div class="btn-wrapper w-condition-invisible"><a href="#" class="btn-blog w-dyn-bind-empty w-button"></a></div>
@@ -14,7 +14,7 @@
         <div class="blog-post-content w-richtext">
             <h2><strong>How We Got Here</strong></h2>
             <p>When we were first building Discord, one of our top priorities was to let you give yourself just about any name you wanted, join your friend’s server and hop on voice chat quickly and easily. We didn’t want people to ever hit a screen that said “Your Desired Username is Taken.” We also allowed usernames to be case-sensitive because originally, we didn’t even have a friend system, so no one had to type usernames manually. This became technical debt that we didn’t address adequately.</p>
-            <p>Meanwhile, as Discord grew, we got a ton of requests to let people chat with one another even if they no longer shared a server, so we created a friend system. To make sure everything still worked, we exposed the four-digit suffix called a “discriminator.” With those four digits, “PhiBi#8936” could be differentiated from “PhiBi#9863”.<br>‍</p>
+            <p>Meanwhile, as Discord grew, we got a ton of requests to let people chat with one another even if they no longer shared a server, so we created a friend system. To make sure everything still worked, we exposed the four-digit suffix called a “discriminator.” With those four digits, “PhiBi#8936” could be differentiated from “PhiBi#9863”.</p>
         </div>
     </div>
     <div id="heading-3" class="rich-wrapper">
@@ -44,7 +44,7 @@
             <ul role="list">
                 <li>Across Discord, <strong>almost half of all friend requests fail to connect the user with the person they wanted to match with</strong>, mostly because users enter an incorrect or invalid username due to a combination of missing discriminator and incorrect casing.&nbsp;</li>
             </ul>
-            <p>This isn’t a great experience, and we want to fix it. We want Discord to be a fun, easy place to hang out with friends, and it’s often just too difficult or complicated to connect with the people you care about.<br>‍</p>
+            <p>This isn’t a great experience, and we want to fix it. We want Discord to be a fun, easy place to hang out with friends, and it’s often just too difficult or complicated to connect with the people you care about.</p>
         </div>
     </div>
     <div id="heading-4" class="rich-wrapper">
@@ -55,7 +55,7 @@
             <p>We decided at one point that the most important issue to solve was case-sensitivity and special characters, so there could be only one phibi#8936, instead of allowing permutations like PhIBI#8936, and PHibi#8936.&nbsp;</p>
             <p>Unfortunately, we found that nearly one-third of our active users would be forced to change their name just to accommodate this. Meanwhile, people from regions where non-alphanumeric characters are common in names, such as Asia, would have difficulty fully representing themselves.</p>
             <p>So then we considered making that change but also enabling a separate global Display Name that could include special characters, a bit like how server nicknames work currently. But we realized that then we would have an even <em>more</em> complex system with both a Display Name and a username that still included the four-digit discriminator.&nbsp;&nbsp;</p>
-            <p>We came to the conclusion that if we were going to ask a lot of our users to make a change, we needed a more comprehensive and robust long-term solution - one that gives people the power to have a Display Name they can change anytime with very relaxed rate limits. Think of them like a global nickname.<br>‍</p>
+            <p>We came to the conclusion that if we were going to ask a lot of our users to make a change, we needed a more comprehensive and robust long-term solution - one that gives people the power to have a Display Name they can change anytime with very relaxed rate limits. Think of them like a global nickname.</p>
         </div>
     </div>
     <div id="heading-5" class="rich-wrapper">
@@ -65,12 +65,12 @@
             <p>1) A unique alphanumeric<strong> username</strong> without a discriminator, such as “phibi”. Think of this merely as a technical necessity. This username will be used only for connecting with other users (friending) and telling users apart when you check their profiles. They’ll be limited to lowercase characters (a-z), numbers (0-9) and two special characters (period and underscore). They’ll be much easier to remember, verbalize and share with your friends. You’ll be able to continue to change your username, but not too frequently.</p>
             <p>2) A non-unique <strong>Display Name</strong> that can include just about anything (as long as it adheres to our <a href="https://discord.com/guidelines">Community Guidelines</a>), including special characters, spaces, emojis and non-Latin characters. Your new Display Name will be <strong>how you primarily appear</strong> and will be your most prominent form of identity. Think of this as your main name. You will be able to change your Display Name whenever you want, even minute to minute.&nbsp;</p>
             <p>By default, your new Display Name will be your old username without the discriminator, <strong>so your friends continue to recognize you</strong>. So if you used to be “PhiBi#8936”, your new default Display Name will be “PhiBi”. Here’s an example:</p>
-            <figure style="max-width:1106px" class="w-richtext-align-fullwidth w-richtext-figure-type-image">
+            <figure class="w-richtext-figure-type-image w-richtext-align-fullwidth" style="max-width:1106pxpx">
                 <div><img src="https://assets-global.website-files.com/5f9072399b2640f14d6a2bf4/645c2a012698cf52d94bbb25_Username%20example.png" loading="lazy" alt="A Discord profile with a new username. Their username is now &quot;phibiscool,&quot; and their display name is &quot;PhiBi.&quot;"></div>
             </figure>
             <p>In addition, your previous username and discriminator will continue to work as an alias after the conversion process is done, so old friends who don’t know your new username yet will continue to be able to add you.&nbsp;</p>
             <p>And for the developers out there, while numerical User IDs will remain the same, learn more about some other changes that may impact your Apps <a href="https://dis.gd/app-usernames">here.</a>&nbsp;</p>
-            <p>If you already use a Server Nickname in a particular community, that Server Nickname will still take priority over your Display Name in that server.<br>‍</p>
+            <p>If you already use a Server Nickname in a particular community, that Server Nickname will still take priority over your Display Name in that server.</p>
         </div>
     </div>
     <div id="heading-6" class="rich-wrapper">
