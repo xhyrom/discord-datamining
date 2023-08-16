@@ -163777,11 +163777,66 @@ html .invoiceCancelRow-3s2UuC {
 
 .smallDecorationPreviewsContainer-2R9zvq {
     margin-left: 12px;
-    padding: 8px;
+    padding: 8px
+}
+
+.shopPreviewContainer-2S7Vwj,
+.smallDecorationPreviewsContainer-2R9zvq {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
     -ms-flex-direction: column;
     flex-direction: column
+}
+
+.shopPreviewContainer-2S7Vwj {
+    position: relative;
+    width: 280px;
+    height: 280px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    border-radius: 8px;
+    border: 2px solid transparent;
+    background: linear-gradient(var(--background-tertiary), var(--background-tertiary)) padding-box, linear-gradient(45deg, hsl(269, calc(var(--saturation-factor, 1)*52.7%), 52.7%), hsl(325, calc(var(--saturation-factor, 1)*31.7%), 51.8%)) border-box
+}
+
+.shopPreviewImageContainer-3VFhXn {
+    position: relative
+}
+
+.shopPreviewAvatar-19q4ij {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%)
+}
+
+.shopPreviewBanner-3oKlAv {
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    max-width: 100%
+}
+
+.shopPreviewTextContainer-3bAvMA {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    text-align: center;
+    gap: 8px
 }
 
 .icon-2atuJf {
@@ -164586,4 +164641,4 @@ html .invoiceCancelRow-dVOR64 {
     height: 200px
 }
 
-/*# sourceMappingURL=40532.efa786818601d64d03f8.css.map*/
+/*# sourceMappingURL=40532.787c641b43c303307937.css.map*/
