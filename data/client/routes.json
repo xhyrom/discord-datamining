@@ -2365,6 +2365,13 @@
       "POST"
     ]
   },
+  "BILLING_POPUP_BRIDGE": {
+    "url": "/billing/popup-bridge/:param",
+    "allowed_methods": [
+      "OPTIONS",
+      "POST"
+    ]
+  },
   "BILLING_POPUP_BRIDGE_CALLBACK": {
     "url": "/billing/popup-bridge/:param/callback",
     "allowed_methods": [
