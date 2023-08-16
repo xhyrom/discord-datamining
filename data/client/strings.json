@@ -14457,6 +14457,8 @@
   "COLLECTIBLES_INFO_PRESET": "\"This is a Limited Time Decoration.\"",
   "COLLECTIBLES_INFO_PREMIUM_TIER_0_UPSELL": "\"Collect the latest avatar decorations before they're gone! Only with Nitro.\"",
   "COLLECTIBLES_SUCCESS_DESC": "\"You’ve collected these decorations!\"",
+  "COLLECTIBLES_AVAILABLE_FOR_PURCHASE": "\"Available For Purchase\"",
+  "COLLECTIBLES_ACQUIRED_DATE": "\"Acquired {month} {year}\"",
   "MOBILE_TIME_REMAINING_DAYS": "\"{days} days remaining\"",
   "MOBILE_TIME_REMAINING_HOURS_MINUTES_SECONDS": "\"{hours}:{minutes}:{seconds} remaining\"",
   "DIRECTORY_CATEGORY_TOWN_HALL_1": "\"Staff Picks\"",
