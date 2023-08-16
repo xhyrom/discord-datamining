@@ -4,26 +4,26 @@
 <p><span class="wysiwyg-font-size-large"><strong>What this article covers: </strong></span></p>
 <ul>
     <li>
-        <a href="#h_01GTYZS5ZCTGQ92MBZAQX0QCW1">What is Soundboard?</a>
+        <a href="https://support.discord.com/hc/en-us/articles/12612888127767#h_01GTYZS5ZCTGQ92MBZAQX0QCW1">What is Soundboard?</a>
         <ul>
-            <li><a href="#docs-internal-guid-98910e3a-7fff-d156-b753-835d493e7571">Server Boost Soundboard</a></li>
+            <li><a href="https://support.discord.com/hc/en-us/articles/12612888127767#docs-internal-guid-98910e3a-7fff-d156-b753-835d493e7571">Server Boost Soundboard</a></li>
         </ul>
     </li>
     <li>
-        <a href="#h_01GTYZSGZ15S6B5RVD4W8EZWG9">How do I use Soundboard?</a>
+        <a href="https://support.discord.com/hc/en-us/articles/12612888127767#h_01GTYZSGZ15S6B5RVD4W8EZWG9">How do I use Soundboard?</a>
         <ul>
-            <li><a href="#h_01GTYZSNM9T3V440WDB2SVEVDX">How can I upload new sounds to the server’s Soundboard?</a></li>
+            <li><a href="https://support.discord.com/hc/en-us/articles/12612888127767#h_01GTYZSNM9T3V440WDB2SVEVDX">How can I upload new sounds to the server’s Soundboard?</a></li>
         </ul>
     </li>
     <li>
-        <a href="#h_01GTYZSTZQV1GXSRVX1A420WPX">As a Server Admin, how can I manage Soundboard?</a>
+        <a href="https://support.discord.com/hc/en-us/articles/12612888127767#h_01GTYZSTZQV1GXSRVX1A420WPX">As a Server Admin, how can I manage Soundboard?</a>
         <ul>
-            <li><a href="#docs-internal-guid-0a96be67-7fff-98dd-6c53-96e299527e36">How to give/remove Soundboard permissions</a></li>
-            <li><a href="#h_01GWJXHA3ABX5H4KCBGPRZCF69">How to manage sounds for Soundboard</a></li>
+            <li><a href="https://support.discord.com/hc/en-us/articles/12612888127767#docs-internal-guid-0a96be67-7fff-98dd-6c53-96e299527e36">How to give/remove Soundboard permissions</a></li>
+            <li><a href="https://support.discord.com/hc/en-us/articles/12612888127767#h_01GWJXHA3ABX5H4KCBGPRZCF69">How to manage sounds for Soundboard</a></li>
         </ul>
     </li>
-    <li><a href="#h_01H5JJ9XK68MMK1WXBFAQ0AQGR">Soundboard Entrance Sounds</a></li>
-    <li><a href="#h_01GTYZT0R7SHN43R0HEHGGTBGH">Frequently Asked Questions</a></li>
+    <li><a href="https://support.discord.com/hc/en-us/articles/12612888127767#h_01H5JJ9XK68MMK1WXBFAQ0AQGR">Soundboard Entrance Sounds</a></li>
+    <li><a href="https://support.discord.com/hc/en-us/articles/12612888127767#h_01GTYZT0R7SHN43R0HEHGGTBGH">Frequently Asked Questions</a></li>
 </ul>
 <h1 id="h_01GTYZS5ZCTGQ92MBZAQX0QCW1">What is Soundboard?</h1>
 <p class="wysiwyg-text-align-center"><img src="https://support.discord.com/hc/article_attachments/12931011736343" alt="soundboard_example.gif"></p>
@@ -65,7 +65,7 @@
 <p class="wysiwyg-text-align-left">For users to be able to add custom sounds to a server, they will need to have <strong>Create Expressions</strong> permission enabled for their role. To give a role this permission, head to <strong>Server Settings</strong> &gt; <strong>Roles </strong>and then Enable or Disable it per role under <strong>Permissions</strong>.</p>
 <h1 id="h_01H5JJ9XK68MMK1WXBFAQ0AQGR">Soundboard Entrance Sounds</h1>
 <h3 id="01H7GS346KX9G1TKFMHEYKXXGT"><span style="color: #434343;" data-darkreader-inline-color="">This experimental feature is only available to a limited number of users.</span></h3>
-<p>Are you finding yourself using a specific sound in Soundboard anytime you join a specific voice channel Well now you can set your own sound to automatically play from the Soundboard if you have <a href="https://support.discord.com/hc/en-us/articles/115000435108"><span class="wysiwyg-underline" style="color: #1155cc;" data-darkreader-inline-color="">Nitro</span></a>. </p>
+<p>Are you finding yourself using a specific sound in Soundboard anytime you join a specific voice channel? Well now you can set your own sound to automatically play from the Soundboard if you have <a href="https://support.discord.com/hc/en-us/articles/115000435108"><span class="wysiwyg-underline" style="color: #1155cc;" data-darkreader-inline-color="">Nitro</span></a>. </p>
 <p>1. To set it up, tap on <strong>User Settings</strong> then head to <strong>Voice &amp; Video</strong>.</p>
 <p>2. Under <strong>Sound Effects</strong> you can tap on the pencil icon to  set a sound for all servers or customize your sounds per server.</p>
 <p>3. To set a sound per server, tap on the drop down menu and select the server. With the server selected tap on the pencil icon and select the soundboard sound you’d like to use it.</p>
