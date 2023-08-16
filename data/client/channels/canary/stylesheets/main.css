@@ -23951,6 +23951,7 @@ html.disable-forced-colors * {
     --bg-surface-raised: var(--primary-600);
     --blur-fallback: hsl(var(--primary-700-hsl)/0.96);
     --blur-fallback-pressed: hsl(var(--primary-730-hsl)/0.96);
+    --border-faint: hsl(var(--white-500-hsl)/0.03);
     --border-strong: hsl(var(--white-500-hsl)/0.16);
     --border-subtle: hsl(var(--white-500-hsl)/0.08);
     --bug-reporter-modal-submitting-background: hsl(var(--primary-800-hsl)/0.6);
@@ -24003,6 +24004,12 @@ html.disable-forced-colors * {
     --button-secondary-background-active: var(--primary-400);
     --button-secondary-background-disabled: var(--primary-500);
     --button-secondary-background-hover: var(--primary-430);
+    --card-gradient-bg: hsl(var(--black-500-hsl)/0.7);
+    --card-gradient-pressed-bg: hsl(var(--black-500-hsl)/0.5);
+    --card-primary-bg: var(--primary-560);
+    --card-primary-pressed-bg: var(--primary-645);
+    --card-secondary-bg: var(--primary-560);
+    --card-secondary-pressed-bg: var(--primary-645);
     --channel-icon: var(--primary-400);
     --channel-text-area-placeholder: var(--primary-430);
     --channels-default: var(--primary-360);
@@ -24069,6 +24076,7 @@ html.disable-forced-colors * {
     --mention-foreground: var(--brand-260);
     --modal-background: var(--primary-600);
     --modal-footer-background: var(--primary-630);
+    --profile-gradient-card-background: hsl(var(--black-500-hsl)/0.7);
     --profile-gradient-message-input-border: hsl(var(--primary-500-hsl)/0.48);
     --profile-gradient-note-background: hsl(var(--black-500-hsl)/0.3);
     --profile-gradient-overlay: hsl(var(--black-500-hsl)/0.6);
@@ -24217,6 +24225,7 @@ html.disable-forced-colors * {
     --bg-surface-raised: var(--white-500);
     --blur-fallback: hsl(var(--primary-530-hsl)/0.96);
     --blur-fallback-pressed: hsl(var(--primary-560-hsl)/0.96);
+    --border-faint: hsl(var(--black-500-hsl)/0.04);
     --border-strong: hsl(var(--black-500-hsl)/0.16);
     --border-subtle: hsl(var(--black-500-hsl)/0.08);
     --bug-reporter-modal-submitting-background: hsl(var(--white-500-hsl)/0.6);
@@ -24269,6 +24278,12 @@ html.disable-forced-colors * {
     --button-secondary-background-active: var(--primary-530);
     --button-secondary-background-disabled: var(--primary-430);
     --button-secondary-background-hover: var(--primary-500);
+    --card-gradient-bg: hsl(var(--white-500-hsl)/0.7);
+    --card-gradient-pressed-bg: hsl(var(--white-500-hsl)/0.5);
+    --card-primary-bg: var(--white-500);
+    --card-primary-pressed-bg: var(--primary-160);
+    --card-secondary-bg: var(--white-500);
+    --card-secondary-pressed-bg: var(--primary-160);
     --channel-icon: var(--primary-430);
     --channel-text-area-placeholder: var(--primary-400);
     --channels-default: var(--primary-460);
@@ -24335,6 +24350,7 @@ html.disable-forced-colors * {
     --mention-foreground: var(--brand-500);
     --modal-background: var(--white-500);
     --modal-footer-background: var(--primary-130);
+    --profile-gradient-card-background: hsl(var(--white-500-hsl)/0.7);
     --profile-gradient-message-input-border: hsl(var(--primary-430-hsl)/0.24);
     --profile-gradient-note-background: hsl(var(--white-500-hsl)/0.3);
     --profile-gradient-overlay: hsl(var(--white-500-hsl)/0.6);
@@ -24518,6 +24534,12 @@ html.disable-forced-colors * {
     --button-secondary-background-active: var(--primary-400);
     --button-secondary-background-disabled: var(--primary-500);
     --button-secondary-background-hover: var(--primary-430);
+    --card-gradient-bg: hsl(var(--black-500-hsl)/0.7);
+    --card-gradient-pressed-bg: hsl(var(--black-500-hsl)/0.5);
+    --card-primary-bg: var(--dontuse-22);
+    --card-primary-pressed-bg: var(--dontuse-24);
+    --card-secondary-bg: var(--dontuse-23);
+    --card-secondary-pressed-bg: var(--dontuse-25);
     --channel-icon: var(--primary-400);
     --channel-text-area-placeholder: var(--primary-400);
     --channeltextarea-background: var(--primary-800);
@@ -24535,7 +24557,7 @@ html.disable-forced-colors * {
     --interactive-normal: var(--dontuse-5);
     --redesign-activity-card-background: var(--dontuse-20);
     --redesign-activity-card-background-pressed: var(--dontuse-21);
-    --redesign-activity-card-badge-icon: var(--primary-400);
+    --redesign-activity-card-badge-icon: var(--dontuse-11);
     --redesign-activity-card-border: hsl(var(--dontuse-11-hsl)/0.12);
     --redesign-activity-card-overflow-background: var(--primary-630);
     --redesign-button-danger-background: var(--red-430);
@@ -24613,6 +24635,7 @@ html.disable-forced-colors * {
     --android-navigation-scrim-background: hsl(var(--primary-830-hsl)/0.5);
     --android-ripple: hsl(var(--white-500-hsl)/0.07);
     --black: var(--black-500);
+    --border-faint: hsl(var(--dontuse-11-hsl)/0.06);
     --border-subtle: hsl(var(--dontuse-11-hsl)/0.12);
     --bug-reporter-modal-submitting-background: hsl(var(--primary-800-hsl)/0.6);
     --channels-default: var(--primary-360);
@@ -24668,6 +24691,7 @@ html.disable-forced-colors * {
     --mention-foreground: var(--brand-230);
     --modal-background: var(--primary-600);
     --modal-footer-background: var(--primary-630);
+    --profile-gradient-card-background: hsl(var(--black-500-hsl)/0.7);
     --profile-gradient-message-input-border: hsl(var(--primary-500-hsl)/0.48);
     --profile-gradient-note-background: hsl(var(--black-500-hsl)/0.3);
     --profile-gradient-overlay: hsl(var(--black-500-hsl)/0.6);
@@ -24784,6 +24808,12 @@ html.disable-forced-colors * {
     --button-secondary-background-active: var(--primary-400);
     --button-secondary-background-disabled: var(--primary-500);
     --button-secondary-background-hover: var(--primary-430);
+    --card-gradient-bg: hsl(var(--black-500-hsl)/0.7);
+    --card-gradient-pressed-bg: hsl(var(--black-500-hsl)/0.5);
+    --card-primary-bg: var(--dontuse-18);
+    --card-primary-pressed-bg: var(--dontuse-19);
+    --card-secondary-bg: var(--dontuse-19);
+    --card-secondary-pressed-bg: var(--dontuse-21);
     --channel-icon: var(--primary-400);
     --channel-text-area-placeholder: var(--primary-430);
     --channeltextarea-background: var(--primary-560);
@@ -24801,7 +24831,7 @@ html.disable-forced-colors * {
     --interactive-normal: var(--dontuse-3);
     --redesign-activity-card-background: var(--dontuse-19);
     --redesign-activity-card-background-pressed: var(--dontuse-20);
-    --redesign-activity-card-badge-icon: var(--primary-400);
+    --redesign-activity-card-badge-icon: var(--dontuse-11);
     --redesign-activity-card-border: hsl(var(--dontuse-11-hsl)/0.06);
     --redesign-activity-card-overflow-background: var(--dontuse-17);
     --redesign-button-danger-background: var(--red-430);
@@ -164525,4 +164555,4 @@ html .invoiceCancelRow-dVOR64 {
     height: 200px
 }
 
-/*# sourceMappingURL=40532.0b36bb8195c679cf9c60.css.map*/
+/*# sourceMappingURL=40532.cf9b0213b1bf2ca2c314.css.map*/
