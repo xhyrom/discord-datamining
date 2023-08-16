@@ -2395,6 +2395,8 @@
   "SETTINGS_GAMES_OVERLAY_OFF": "\"Overlay: Off\"",
   "SETTINGS_GAMES_TOGGLE_OVERLAY": "\"Toggle overlay\"",
   "SETTINGS_GAMES_TOGGLE_DETECTION": "\"Toggle detection\"",
+  "SETTINGS_GAMES_REPORT_INCORRECT_DETECTION": "\"Report incorrectly detected game\"",
+  "SETTINGS_GAMES_REPORT_INCORRECT_DETECTION_CONFIRMATION": "\"Report sent for: !!{gameName}!!\"",
   "CONNECTED_ACCOUNT_VERIFYING": "\"Connecting your **!!{name}!!** account to **Discord**\"",
   "CONNECTED_ACCOUNT_VERIFY_SUCCESS": "\"Connected your **!!{name}!!** account to **Discord**\"",
   "CONNECTED_ACCOUNT_VERIFY_SUCCESS_DETAILS": "\"You can close this window and go back to Discord.\"",
