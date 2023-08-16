@@ -20,7 +20,7 @@
           {
             "type": "guild_has_feature",
             "features": [
-              "GUILD_ONBOARDING"
+              "GUILD_ONBOARDING_HAS_PROMPTS"
             ]
           }
         ]
