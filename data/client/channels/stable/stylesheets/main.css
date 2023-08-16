@@ -23951,6 +23951,7 @@ html.disable-forced-colors * {
     --bg-surface-raised: var(--primary-600);
     --blur-fallback: hsl(var(--primary-700-hsl)/0.96);
     --blur-fallback-pressed: hsl(var(--primary-730-hsl)/0.96);
+    --border-faint: hsl(var(--white-500-hsl)/0.03);
     --border-strong: hsl(var(--white-500-hsl)/0.16);
     --border-subtle: hsl(var(--white-500-hsl)/0.08);
     --bug-reporter-modal-submitting-background: hsl(var(--primary-800-hsl)/0.6);
@@ -24003,6 +24004,12 @@ html.disable-forced-colors * {
     --button-secondary-background-active: var(--primary-400);
     --button-secondary-background-disabled: var(--primary-500);
     --button-secondary-background-hover: var(--primary-430);
+    --card-gradient-bg: hsl(var(--black-500-hsl)/0.7);
+    --card-gradient-pressed-bg: hsl(var(--black-500-hsl)/0.5);
+    --card-primary-bg: var(--primary-560);
+    --card-primary-pressed-bg: var(--primary-645);
+    --card-secondary-bg: var(--primary-560);
+    --card-secondary-pressed-bg: var(--primary-645);
     --channel-icon: var(--primary-400);
     --channel-text-area-placeholder: var(--primary-430);
     --channels-default: var(--primary-360);
@@ -24069,6 +24076,7 @@ html.disable-forced-colors * {
     --mention-foreground: var(--brand-260);
     --modal-background: var(--primary-600);
     --modal-footer-background: var(--primary-630);
+    --profile-gradient-card-background: hsl(var(--black-500-hsl)/0.7);
     --profile-gradient-message-input-border: hsl(var(--primary-500-hsl)/0.48);
     --profile-gradient-note-background: hsl(var(--black-500-hsl)/0.3);
     --profile-gradient-overlay: hsl(var(--black-500-hsl)/0.6);
@@ -24217,6 +24225,7 @@ html.disable-forced-colors * {
     --bg-surface-raised: var(--white-500);
     --blur-fallback: hsl(var(--primary-530-hsl)/0.96);
     --blur-fallback-pressed: hsl(var(--primary-560-hsl)/0.96);
+    --border-faint: hsl(var(--black-500-hsl)/0.04);
     --border-strong: hsl(var(--black-500-hsl)/0.16);
     --border-subtle: hsl(var(--black-500-hsl)/0.08);
     --bug-reporter-modal-submitting-background: hsl(var(--white-500-hsl)/0.6);
@@ -24269,6 +24278,12 @@ html.disable-forced-colors * {
     --button-secondary-background-active: var(--primary-530);
     --button-secondary-background-disabled: var(--primary-430);
     --button-secondary-background-hover: var(--primary-500);
+    --card-gradient-bg: hsl(var(--white-500-hsl)/0.7);
+    --card-gradient-pressed-bg: hsl(var(--white-500-hsl)/0.5);
+    --card-primary-bg: var(--white-500);
+    --card-primary-pressed-bg: var(--primary-160);
+    --card-secondary-bg: var(--white-500);
+    --card-secondary-pressed-bg: var(--primary-160);
     --channel-icon: var(--primary-430);
     --channel-text-area-placeholder: var(--primary-400);
     --channels-default: var(--primary-460);
@@ -24335,6 +24350,7 @@ html.disable-forced-colors * {
     --mention-foreground: var(--brand-500);
     --modal-background: var(--white-500);
     --modal-footer-background: var(--primary-130);
+    --profile-gradient-card-background: hsl(var(--white-500-hsl)/0.7);
     --profile-gradient-message-input-border: hsl(var(--primary-430-hsl)/0.24);
     --profile-gradient-note-background: hsl(var(--white-500-hsl)/0.3);
     --profile-gradient-overlay: hsl(var(--white-500-hsl)/0.6);
@@ -24518,6 +24534,12 @@ html.disable-forced-colors * {
     --button-secondary-background-active: var(--primary-400);
     --button-secondary-background-disabled: var(--primary-500);
     --button-secondary-background-hover: var(--primary-430);
+    --card-gradient-bg: hsl(var(--black-500-hsl)/0.7);
+    --card-gradient-pressed-bg: hsl(var(--black-500-hsl)/0.5);
+    --card-primary-bg: var(--dontuse-22);
+    --card-primary-pressed-bg: var(--dontuse-24);
+    --card-secondary-bg: var(--dontuse-23);
+    --card-secondary-pressed-bg: var(--dontuse-25);
     --channel-icon: var(--primary-400);
     --channel-text-area-placeholder: var(--primary-400);
     --channeltextarea-background: var(--primary-800);
@@ -24535,7 +24557,7 @@ html.disable-forced-colors * {
     --interactive-normal: var(--dontuse-5);
     --redesign-activity-card-background: var(--dontuse-20);
     --redesign-activity-card-background-pressed: var(--dontuse-21);
-    --redesign-activity-card-badge-icon: var(--primary-400);
+    --redesign-activity-card-badge-icon: var(--dontuse-11);
     --redesign-activity-card-border: hsl(var(--dontuse-11-hsl)/0.12);
     --redesign-activity-card-overflow-background: var(--primary-630);
     --redesign-button-danger-background: var(--red-430);
@@ -24613,6 +24635,7 @@ html.disable-forced-colors * {
     --android-navigation-scrim-background: hsl(var(--primary-830-hsl)/0.5);
     --android-ripple: hsl(var(--white-500-hsl)/0.07);
     --black: var(--black-500);
+    --border-faint: hsl(var(--dontuse-11-hsl)/0.06);
     --border-subtle: hsl(var(--dontuse-11-hsl)/0.12);
     --bug-reporter-modal-submitting-background: hsl(var(--primary-800-hsl)/0.6);
     --channels-default: var(--primary-360);
@@ -24668,6 +24691,7 @@ html.disable-forced-colors * {
     --mention-foreground: var(--brand-230);
     --modal-background: var(--primary-600);
     --modal-footer-background: var(--primary-630);
+    --profile-gradient-card-background: hsl(var(--black-500-hsl)/0.7);
     --profile-gradient-message-input-border: hsl(var(--primary-500-hsl)/0.48);
     --profile-gradient-note-background: hsl(var(--black-500-hsl)/0.3);
     --profile-gradient-overlay: hsl(var(--black-500-hsl)/0.6);
@@ -24784,6 +24808,12 @@ html.disable-forced-colors * {
     --button-secondary-background-active: var(--primary-400);
     --button-secondary-background-disabled: var(--primary-500);
     --button-secondary-background-hover: var(--primary-430);
+    --card-gradient-bg: hsl(var(--black-500-hsl)/0.7);
+    --card-gradient-pressed-bg: hsl(var(--black-500-hsl)/0.5);
+    --card-primary-bg: var(--dontuse-18);
+    --card-primary-pressed-bg: var(--dontuse-19);
+    --card-secondary-bg: var(--dontuse-19);
+    --card-secondary-pressed-bg: var(--dontuse-21);
     --channel-icon: var(--primary-400);
     --channel-text-area-placeholder: var(--primary-430);
     --channeltextarea-background: var(--primary-560);
@@ -24801,7 +24831,7 @@ html.disable-forced-colors * {
     --interactive-normal: var(--dontuse-3);
     --redesign-activity-card-background: var(--dontuse-19);
     --redesign-activity-card-background-pressed: var(--dontuse-20);
-    --redesign-activity-card-badge-icon: var(--primary-400);
+    --redesign-activity-card-badge-icon: var(--dontuse-11);
     --redesign-activity-card-border: hsl(var(--dontuse-11-hsl)/0.06);
     --redesign-activity-card-overflow-background: var(--dontuse-17);
     --redesign-button-danger-background: var(--red-430);
@@ -31077,7 +31107,7 @@ img[alt] {
     -webkit-box-pack: center;
     -ms-flex-pack: center;
     justify-content: center;
-    min-height: 480px
+    min-height: 280px
 }
 
 .nitroIcon-30w_JW {
@@ -59801,7 +59831,6 @@ strong {
     -webkit-box-flex: 0;
     -ms-flex: 0 0 auto;
     flex: 0 0 auto;
-    height: 48px;
     padding: 0 8px;
     font-size: 16px;
     line-height: 20px;
@@ -59819,6 +59848,14 @@ strong {
 
 .container-ZMc96U.transparent-1lUmft {
     background: transparent
+}
+
+.container-ZMc96U.containerHeight-2h-WZs {
+    height: 48px
+}
+
+.container-ZMc96U:not(.container-ZMc96U.containerHeight-2h-WZs) {
+    padding-top: 8px
 }
 
 .children-3xh0VB {
@@ -83662,8 +83699,7 @@ strong {
 .topicDiv-2wZmYz {
     display: -webkit-box;
     display: -ms-flexbox;
-    display: flex;
-    margin-top: 2px
+    display: flex
 }
 
 .topicDiv-2wZmYz.hoverable-1Uqwgy:hover .pencilIcon-25wkgL,
@@ -84737,6 +84773,35 @@ strong {
 
 .icon-3Bb8Z3 {
     color: var(--header-secondary);
+    margin-right: 4px
+}
+
+.button-2DcH_z {
+    margin-top: 8px
+}
+
+.centerContainer-1C6uik {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center
+}
+
+.betaTag-AQj_uS {
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+    margin: 4px
+}
+
+.title-10bEpP {
+    margin-bottom: 4px;
     margin-right: 4px
 }
 
@@ -93692,7 +93757,7 @@ strong {
     margin-left: 16px
 }
 
-.clickable-I5EKCW {
+.channelStatusClickable-2_H3j0 {
     color: var(--channel-icon);
     display: -webkit-box;
     display: -ms-flexbox;
@@ -93700,14 +93765,14 @@ strong {
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
-    margin: -12px 16px 0 48px;
+    margin-left: 48px;
     max-width: 50%;
     width: -webkit-fit-content;
     width: -moz-fit-content;
     width: fit-content
 }
 
-.clickable-I5EKCW:hover {
+.channelStatusClickable-2_H3j0:hover {
     color: var(--interactive-hover);
     cursor: pointer
 }
@@ -142731,6 +142796,10 @@ html .invoiceCancelRow-3s2UuC {
     margin-top: 16px
 }
 
+.form-135Z5z {
+    display: contents
+}
+
 .modalHeader-25uwMc {
     display: block;
     text-align: center
@@ -142784,7 +142853,8 @@ html .invoiceCancelRow-3s2UuC {
 }
 
 .textArea-2yhu3Y {
-    background: var(--input-background)
+    background: var(--input-background);
+    max-height: 80px
 }
 
 .error-KViqha {
@@ -164485,4 +164555,4 @@ html .invoiceCancelRow-dVOR64 {
     height: 200px
 }
 
-/*# sourceMappingURL=40532.aba32487f41e2281a0ad.css.map*/
+/*# sourceMappingURL=40532.cf9b0213b1bf2ca2c314.css.map*/
