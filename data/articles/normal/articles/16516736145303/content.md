@@ -86,7 +86,7 @@
 <p>If you’re subscribed to <strong>Discord Nitro,</strong> start by logging into your Discord account. </p>
 <p>You may notice a notification bar at the top of your browser/desktop app, and you can press the "<strong>Take me there" button</strong> in the notification bar to be redirected to your Gift Inventory. </p>
 <p>You can also directly head to your <strong>User Settings</strong>, and then select the <strong>Gift Inventory tab</strong>.</p>
-<p class="wysiwyg-text-align-center"><img src="https://support.discord.com/hc/article_attachments/16822668334743" alt="Screen Shot 2023-08-16 at 3.50.22 PM.png"></p>
+<p class="wysiwyg-text-align-center"><img src="https://support.discord.com/hc/article_attachments/16822810020375" alt="Screen Shot 2023-08-16 at 3.58.23 PM.png"></p>
 <p><strong>2) Select the Claim button for the Genshin Impact Gift</strong></p>
 <p>Once you press <strong>Claim </strong>on the Genshin Impact Gift in the Gift Inventory and you'll then see a new pop-up with your 12 character code for this promotion.</p>
 <p>If you want to redeem your code later, you can press the <strong>Maybe Later</strong> button, and then redeem the code before <strong>September 26th, 2023 (11:59pm PST).</strong></p>
