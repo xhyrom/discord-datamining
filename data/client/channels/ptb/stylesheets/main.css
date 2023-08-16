@@ -59801,7 +59801,6 @@ strong {
     -webkit-box-flex: 0;
     -ms-flex: 0 0 auto;
     flex: 0 0 auto;
-    height: 48px;
     padding: 0 8px;
     font-size: 16px;
     line-height: 20px;
@@ -59819,6 +59818,14 @@ strong {
 
 .container-ZMc96U.transparent-1lUmft {
     background: transparent
+}
+
+.container-ZMc96U.containerHeight-2h-WZs {
+    height: 48px
+}
+
+.container-ZMc96U:not(.container-ZMc96U.containerHeight-2h-WZs) {
+    padding-top: 8px
 }
 
 .children-3xh0VB {
@@ -93692,7 +93699,7 @@ strong {
     margin-left: 16px
 }
 
-.clickable-I5EKCW {
+.channelStatusClickable-2_H3j0 {
     color: var(--channel-icon);
     display: -webkit-box;
     display: -ms-flexbox;
@@ -93700,14 +93707,14 @@ strong {
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
-    margin: -12px 16px 0 48px;
+    margin-left: 48px;
     max-width: 50%;
     width: -webkit-fit-content;
     width: -moz-fit-content;
     width: fit-content
 }
 
-.clickable-I5EKCW:hover {
+.channelStatusClickable-2_H3j0:hover {
     color: var(--interactive-hover);
     cursor: pointer
 }
@@ -142731,6 +142738,10 @@ html .invoiceCancelRow-3s2UuC {
     margin-top: 16px
 }
 
+.form-135Z5z {
+    display: contents
+}
+
 .modalHeader-25uwMc {
     display: block;
     text-align: center
@@ -142784,7 +142795,8 @@ html .invoiceCancelRow-3s2UuC {
 }
 
 .textArea-2yhu3Y {
-    background: var(--input-background)
+    background: var(--input-background);
+    max-height: 80px
 }
 
 .error-KViqha {
@@ -164485,4 +164497,4 @@ html .invoiceCancelRow-dVOR64 {
     height: 200px
 }
 
-/*# sourceMappingURL=40532.aba32487f41e2281a0ad.css.map*/
+/*# sourceMappingURL=40532.207dbc0bc44e80389204.css.map*/
