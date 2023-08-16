@@ -3618,6 +3618,8 @@
   "SETTINGS_CUSTOM_APP_ICONS": "\"App Icon\"",
   "SETTINGS_CUSTOM_APP_ICONS_OFFICIAL": "\"Official\"",
   "APP_ICON_UPSELL": "\"Unlock all icons with Nitro\"",
+  "APP_ICON_UPSELL_MODAL_TITLE": "\"Unlock this App Icon\"",
+  "APP_ICON_UPSELL_MODAL_BODY": "\"Upgrade to Nitro to express yourself with custom app icons, updated often!\"",
   "SETTINGS_SYNC": "\"Sync across clients\"",
   "FORM_LABEL_SENSITIVTY": "\"Sensitivity\"",
   "FORM_LABEL_INPUT_SENSITIVTY": "\"Input Sensitivity\"",
