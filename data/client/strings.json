@@ -15617,6 +15617,7 @@
   "CLIPS_SETTINGS_VIDEO_QUALITY": "\"Video Quality Settings\"",
   "CLIPS_SETTINGS_VIDEO_QUALITY_HELP": "\"Clips will be captured at the same quality as your stream.\"",
   "CLIPS_SETTINGS_QUALITY_INFOBOX": "\"Please note that clips are captured at the same quality as your stream.\"",
+  "CLIPS_SETTINGS_UNDER_MIN_SPECS": "\"Your computer doesn't meet the minimum specifications for Clips, performance may be impacted if you enable Clips.\"",
   "CLIPS_QUALITY_DEFAULT": "\"Default\"",
   "CLIPS_SETTINGS_LENGTH": "\"Clip Length\"",
   "CLIPS_SETTINGS_LENGTH_HELP": "\"By default, we capture the last 30 seconds of your stream.\"",
