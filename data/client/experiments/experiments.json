@@ -8186,27 +8186,6 @@
   {
     "data": {
       "kind": "user",
-      "id": "2023-06_hide_thread_count",
-      "label": "Hide thread count",
-      "description": [
-        "Not Eligible",
-        "Control Bucket",
-        "Treatment 1: Hide thread count"
-      ],
-      "hash": 1130195016,
-      "buckets": [
-        -1,
-        0,
-        1
-      ],
-      "config_keys": [
-        "enabled"
-      ]
-    }
-  },
-  {
-    "data": {
-      "kind": "user",
       "id": "2021-06_guild_subscriptions_payment_flow_test_page",
       "label": "Test page for guild subscription payment flows",
       "description": [
