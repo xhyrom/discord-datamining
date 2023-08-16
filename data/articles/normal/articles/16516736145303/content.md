@@ -1,8 +1,8 @@
 <h3 id="docs-internal-guid-33948375-7fff-c75c-7ee2-926512f1d567"><span style="color: #434343;" data-darkreader-inline-color="">This promotion is gradually rolling out to all eligible regions!</span></h3>
-<p>Starting from <strong>August 15th, 2023 (7:00pm PST)</strong> to <strong>September 26th, 2023 (11:59pm PST)</strong>,<a href="https://support.discord.com/hc/en-us/articles/115000435108" target="_blank" rel="noopener"> Discord Nitro</a> subscribers can redeem an exclusive in-game gift pack for the action-based RPG, <a href="https://genshin.hoyoverse.com/en" target="_blank" rel="noopener">Genshin Impact</a><strong>.</strong></p>
+<p>Starting from <strong>August 15th, 2023 (7:00pm PST)</strong> to <strong>September 26th, 2023 (11:59pm PST)</strong>,<a href="https://support.discord.com/hc/en-us/articles/115000435108" target="_blank" rel="noopener noreferrer"> Discord Nitro</a> subscribers can redeem an exclusive in-game gift pack for the action-based RPG, <a href="https://genshin.hoyoverse.com/en" target="_blank" rel="noopener noreferrer">Genshin Impact</a><strong>.</strong></p>
 <p class="wysiwyg-text-align-center"><img src="https://support.discord.com/hc/article_attachments/16797174216471" alt="EN-.png"></p>
 <p><strong>Promotion Summary</strong></p>
-<p><strong>Offer Details:</strong> Genshin Impact in-game gift pack for<a href="https://support.discord.com/hc/en-us/articles/115000435108" target="_blank" rel="noopener"> Discord Nitro</a> subscribers</p>
+<p><strong>Offer Details:</strong> Genshin Impact in-game gift pack for<a href="https://support.discord.com/hc/en-us/articles/115000435108" target="_blank" rel="noopener noreferrer"> Discord Nitro</a> subscribers</p>
 <p>Included in the gift pack are the following items: </p>
 <ol>
     <li>Primogems x60</li>
@@ -58,17 +58,17 @@
 <h1 id="h_01H7XV23Z4FV86ZB32BSMDFB8K"><strong>What is Discord Nitro?</strong></h1>
 <p>Discord Nitro is our subscription plan that gives you access to special perks that’ll make your time on Discord as fun as ever! Personalize and enhance your experience with popular perks like HD streaming, 500MB file uploads, profile and avatar customizations, 2 free Server Boosts, and more:</p>
 <ul>
-    <li><a href="https://support.discord.com/hc/articles/360036479811" target="_blank" rel="noopener">Custom Emojis</a></li>
-    <li><a href="https://support.discord.com/hc/articles/207260127" target="_blank" rel="noopener">Discord App Color Themes</a></li>
-    <li><a href="https://support.discord.com/hc/articles/12102061808663" target="_blank" rel="noopener">Super Reactions</a></li>
-    <li><a href="https://support.discord.com/hc/articles/13410113109911" target="_blank" rel="noopener">Avatar Decorations</a></li>
-    <li><a href="https://support.discord.com/hc/en-us/articles/4409388345495" target="_blank" rel="noopener">Unique Server Profiles</a></li>
-    <li><a href="https://support.discord.com/hc/en-us/articles/360028038352-Server-Boosting-FAQ-" target="_blank" rel="noopener">Server Boosts</a></li>
-    <li><a href="https://support.discord.com/hc/articles/115000435108" target="_blank" rel="noopener">More Nitro &amp; Nitro Basic perks</a></li>
+    <li><a href="https://support.discord.com/hc/articles/360036479811" target="_blank" rel="noopener noreferrer">Custom Emojis</a></li>
+    <li><a href="https://support.discord.com/hc/articles/207260127" target="_blank" rel="noopener noreferrer">Discord App Color Themes</a></li>
+    <li><a href="https://support.discord.com/hc/articles/12102061808663" target="_blank" rel="noopener noreferrer">Super Reactions</a></li>
+    <li><a href="https://support.discord.com/hc/articles/13410113109911" target="_blank" rel="noopener noreferrer">Avatar Decorations</a></li>
+    <li><a href="https://support.discord.com/hc/en-us/articles/4409388345495" target="_blank" rel="noopener noreferrer">Unique Server Profiles</a></li>
+    <li><a href="https://support.discord.com/hc/en-us/articles/360028038352-Server-Boosting-FAQ-" target="_blank" rel="noopener noreferrer">Server Boosts</a></li>
+    <li><a href="https://support.discord.com/hc/articles/115000435108" target="_blank" rel="noopener noreferrer">More Nitro &amp; Nitro Basic perks</a></li>
 </ul>
 <h1 id="h_01H7XV31MPSP5QJD1VSYRZ2ZAV"><strong>What is Genshin Impact?</strong></h1>
-<p><a href="https://genshin.hoyoverse.com" target="_blank" rel="noopener">Genshin Impact</a>  is an open-world action RPG, where players embark on a journey across a magical world called Teyvat in search of their long-lost sibling. As you unravel the mysteries of Teyvat, you will encounter dangerous monsters you and your friends can defeat together!  </p>
-<p>This fantasy adventure is from developer and publisher <a href="https://www.hoyoverse.com/en-us" target="_blank" rel="noopener">HoYoverse</a>! You can read more about this promotion <a href="https://www.hoyolab.com/article_pre/11717?utm_source=sns&amp;utm_medium=discord&amp;utm_id=2&amp;utm_campaign=discordnitrocollab" target="_blank" rel="noopener">here</a>. </p>
+<p><a href="https://genshin.hoyoverse.com" target="_blank" rel="noopener noreferrer">Genshin Impact</a>  is an open-world action RPG, where players embark on a journey across a magical world called Teyvat in search of their long-lost sibling. As you unravel the mysteries of Teyvat, you will encounter dangerous monsters you and your friends can defeat together!  </p>
+<p>This fantasy adventure is from developer and publisher <a href="https://www.hoyoverse.com/en-us" target="_blank" rel="noopener noreferrer">HoYoverse</a>! You can read more about this promotion <a href="https://www.hoyolab.com/article_pre/11717?utm_source=sns&amp;utm_medium=discord&amp;utm_id=2&amp;utm_campaign=discordnitrocollab" target="_blank" rel="noopener noreferrer">here</a>. </p>
 <h1 id="h_01H7XV37K6BSQK81E8SEFTHBMA"><strong>How do I claim the Genshin Impact Promo in Discord?</strong></h1>
 <p>As long as you're a <strong>Discord Nitro</strong> member, you'll be able to claim the Genshin Impact Gift Pack code in the Gift Inventory from <strong>August 15th, 2023 (7:00pm PST)</strong> to <strong>September 26th, 2023 (11:59pm PST)</strong>.</p>
 <h2 id="h_01H7XV3DR1RR1YWA5K3GR5SZY7">Eligibility for the Claiming this Promotion in Discord</h2>
@@ -86,7 +86,7 @@
 <p>If you’re subscribed to <strong>Discord Nitro,</strong> start by logging into your Discord account. </p>
 <p>You may notice a notification bar at the top of your browser/desktop app, and you can press the "<strong>Take me there" button</strong> in the notification bar to be redirected to your Gift Inventory. </p>
 <p>You can also directly head to your <strong>User Settings</strong>, and then select the <strong>Gift Inventory tab</strong>.</p>
-<p class="wysiwyg-text-align-center"><img src="https://support.discord.com/hc/article_attachments/16797162674071" alt="image2.png"></p>
+<p class="wysiwyg-text-align-center"><img src="https://support.discord.com/hc/article_attachments/16822668334743" alt="Screen Shot 2023-08-16 at 3.50.22 PM.png"></p>
 <p><strong>2) Select the Claim button for the Genshin Impact Gift</strong></p>
 <p>Once you press <strong>Claim </strong>on the Genshin Impact Gift in the Gift Inventory and you'll then see a new pop-up with your 12 character code for this promotion.</p>
 <p>If you want to redeem your code later, you can press the <strong>Maybe Later</strong> button, and then redeem the code before <strong>September 26th, 2023 (11:59pm PST).</strong></p>
@@ -100,7 +100,7 @@
 <p>In order to redeem the gift pack on your Genshin Impact account, you will need to head over to the Genshin Impact’s official website or launch the Genshin Impact app. </p>
 <p><strong>How to Redeem the Gift Pack through the website: </strong></p>
 <ol>
-    <li>First, head over to the <a href="https://genshin.hoyoverse.com/en/gift" target="_blank" rel="noopener">Genshin Impact official website’s code redemption page</a>.</li>
+    <li>First, head over to the <a href="https://genshin.hoyoverse.com/en/gift" target="_blank" rel="noopener noreferrer">Genshin Impact official website’s code redemption page</a>.</li>
     <li>Then, log into your game account. </li>
 </ol>
 <p class="wysiwyg-text-align-center"><img src="https://support.discord.com/hc/article_attachments/16797174223511" alt="image1.png"></p>
@@ -117,10 +117,10 @@
 <h1 id="h_01H7XV4RZFV4VDFFNJ7V3V9W74"><strong>Frequently Asked Questions</strong></h1>
 <p>We know there's a lot of information to unpack on this promotion above, so we've also broken down this information in this FAQ section as well too.</p>
 <ul>
-    <li><a href="https://support.discord.com/hc/en-us/articles/8689996677783#h_01FCFN55V50R3D1K9CNVNV9XEP" target="_blank" rel="noopener">Promotion Details</a></li>
-    <li><a href="https://support.discord.com/hc/en-us/articles/8689996677783#h_01FCFN5F8M17DJ8YC5KYHJKB86" target="_blank" rel="noopener">Eligibility for the Promotion</a></li>
-    <li><a href="https://support.discord.com/hc/en-us/articles/8689996677783#h_01FCFN5Q2MY3JVCJ1A2XNWPVNF" target="_blank" rel="noopener">Claiming and Redemption Process</a></li>
-    <li><a href="https://support.discord.com/hc/en-us/articles/8689996677783#h_01FCFN5X8DM5SYX600FA16SEAT" target="_blank" rel="noopener">Potential Errors and Other Issues</a></li>
+    <li><a href="https://support.discord.com/hc/en-us/articles/8689996677783#h_01FCFN55V50R3D1K9CNVNV9XEP" target="_blank" rel="noopener noreferrer">Promotion Details</a></li>
+    <li><a href="https://support.discord.com/hc/en-us/articles/8689996677783#h_01FCFN5F8M17DJ8YC5KYHJKB86" target="_blank" rel="noopener noreferrer">Eligibility for the Promotion</a></li>
+    <li><a href="https://support.discord.com/hc/en-us/articles/8689996677783#h_01FCFN5Q2MY3JVCJ1A2XNWPVNF" target="_blank" rel="noopener noreferrer">Claiming and Redemption Process</a></li>
+    <li><a href="https://support.discord.com/hc/en-us/articles/8689996677783#h_01FCFN5X8DM5SYX600FA16SEAT" target="_blank" rel="noopener noreferrer">Potential Errors and Other Issues</a></li>
 </ul>
 <h2 id="h_01H7XV4ZBNQS8SQ8VCX7YNSAXC"><strong>Promotion Details</strong></h2>
 <p><strong>Q: How long does this promotion for Nitro Subscribers run for?</strong></p>
@@ -139,11 +139,11 @@
 <p><strong>A:</strong> This promotion is available in all regions except for the following: Mainland China, Iran, Russia, and Ukraine. Genshin Impact players, who have reached Adventure Rank 10 or higher in Fontaine on their HoYoverse Account, can redeem this gift the following in eligible servers: America, Europe, Asia, Taiwan, Hong Kong, and Macao. </p>
 <p>If you are in an eligible region and cannot redeem this gift, please reach out to your region’s support team for Genshin Impact:</p>
 <ul>
-    <li>ZH region: <a href="mailto:genshin_cs@nijigengames.com" target="_blank" rel="noopener">genshin_cs@nijigengames.com</a>
+    <li>ZH region: <a href="mailto:genshin_cs@nijigengames.com" target="_blank" rel="noopener noreferrer">genshin_cs@nijigengames.com</a>
     </li>
-    <li>JP region: <a href="mailto:genshin_jp@hoyoverse.com" target="_blank" rel="noopener">genshin_jp@hoyoverse.com</a>
+    <li>JP region: <a href="mailto:genshin_jp@hoyoverse.com" target="_blank" rel="noopener noreferrer">genshin_jp@hoyoverse.com</a>
     </li>
-    <li>DE, EN, ES, FR, ID, IT, KR, PT, RU, HT, TR, and VN regions：<a href="mailto:genshin_cs@hoyoverse.com" target="_blank" rel="noopener">genshin_cs@hoyoverse.com</a> </li>
+    <li>DE, EN, ES, FR, ID, IT, KR, PT, RU, HT, TR, and VN regions：<a href="mailto:genshin_cs@hoyoverse.com" target="_blank" rel="noopener noreferrer">genshin_cs@hoyoverse.com</a> </li>
 </ul>
 <h2 id="h_01H7XV5E5J6CPX7X2ASKB0X906"><strong>Claiming and Redemption Process</strong></h2>
 <p><strong>Q: On which Discord platforms can I claim this promotion?</strong></p>
@@ -157,7 +157,7 @@
     <li>
         <strong><span class="wysiwyg-underline" style="color: #ff9900;" data-darkreader-inline-color="">What if I'm still running into issues? </span></strong>
         <ul>
-            <li>If the refresh does not work, please submit a ticket through our support system at:<a href="https://dis.gd/contact" target="_blank" rel="noopener"> https://dis.gd/contact</a> and our support team will be able to investigate further.</li>
+            <li>If the refresh does not work, please submit a ticket through our support system at:<a href="https://dis.gd/contact" target="_blank" rel="noopener noreferrer"> https://dis.gd/contact</a> and our support team will be able to investigate further.</li>
             <li>Be sure to submit the ticket using the email address associated with your Discord account, and send us a screenshot of the following: 
                 <ol>
                     <li>Your My Account tab</li>
@@ -170,9 +170,9 @@
 <p><strong>Q: I'm having trouble redeeming this promotion to my Genshin Impact account. How do I contact Genshin Impact support? </strong></p>
 <p><strong>A:</strong> If you are having issues redeeming this promotion on your Genshin Impact account, you can reach out to your region’s Genshin Impact support team at: </p>
 <ul>
-    <li>ZH region: <a href="mailto:genshin_cs@nijigengames.com" target="_blank" rel="noopener">genshin_cs@nijigengames.com</a>
+    <li>ZH region: <a href="mailto:genshin_cs@nijigengames.com" target="_blank" rel="noopener noreferrer">genshin_cs@nijigengames.com</a>
     </li>
-    <li>JP region: <a href="mailto:genshin_jp@hoyoverse.com" target="_blank" rel="noopener">genshin_jp@hoyoverse.com</a>
+    <li>JP region: <a href="mailto:genshin_jp@hoyoverse.com" target="_blank" rel="noopener noreferrer">genshin_jp@hoyoverse.com</a>
     </li>
 </ul>
-<p>DE, EN, ES, FR, ID, IT, KR, PT, RU, HT, TR, and VN regions：<a href="mailto:genshin_cs@hoyoverse.com" target="_blank" rel="noopener">genshin_cs@hoyoverse.com</a></p>
+<p>DE, EN, ES, FR, ID, IT, KR, PT, RU, HT, TR, and VN regions：<a href="mailto:genshin_cs@hoyoverse.com" target="_blank" rel="noopener noreferrer">genshin_cs@hoyoverse.com</a></p>
