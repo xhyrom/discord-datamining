@@ -40,8 +40,8 @@
             <ul role="list">
                 <li><strong>[NEW ACTIVITY UPDATE] Putt Party Paradise -&nbsp; </strong>More levels and new power-ups make it the perfect time to start putting (and partying). Click the in-app rocketship (🚀) button and get playin’!</li>
                 <li><strong>[NEW ACTIVITY] Jamspace - </strong>A collaborative digital whiteboard anyone in the call can contribute to. Map out your next MMO raid mid-call or just doodle together!</li>
-                <li><strong>[NEW ACTIVITY UPDATE] Poker Night Update </strong>- Poker Night goes all in with new stickers, emotes, cardbacks and plenty more. </li>
-                <li>‍<strong>[FINAL UPDATE] </strong>We had such a fun time playing together, Activities will continue to be open to all. Happy birthday, y’all!<br></li>
+                <li><strong>[NEW ACTIVITY UPDATE] Poker Night Update </strong>- Poker Night goes all in with new stickers, emotes, cardbacks and plenty more.</li>
+                <li><strong>[FINAL UPDATE]</strong> We had such a fun time playing together, Activities will continue to be open to all. Happy birthday, y'all!<br></li>
             </ul>
         </div>
     </div>
@@ -54,8 +54,8 @@
                 <div><img src="https://assets-global.website-files.com/5f9072399b2640f14d6a2bf4/645bf3a4d16abf1f77400c80_0b31d378.gif" alt="An animated preview of the new set of Avatar Decorations that are available during the birthday celebrations."></div>
             </figure>
             <p>Birthday parties aren’t complete without gifting something to the friends you care about. That’s why, <strong>Nitro members can share a special two-week trial of Discord Nitro with up to three of their soon-to-be-lucky friends</strong>!&nbsp;</p>
-            <p>If one of your friends is eligible for a Nitro trial, you’ll see a new Nitro-shaped button when you go to talk to them in DMs. Select that, and you can offer them one of your three free trials. They’ll be able to use the special birthday avatar decorations and try out our newest features like Super Reactions, Color Themes, and more.&nbsp;</p>
-            <p>Both of these Nitro perks are around for a full month, and will end on June 15.<br>‍</p>
+            <p>If one of your friends is eligible for a Nitro trial, you’ll see a new Nitro-shaped button when you go to talk to them in DMs. Select that, and you can offer them one of your three free trials. They’ll be able to use the special birthday avatar decorations and try out our newest features like Super Reactions, Color Themes, and more.</p>
+            <p>Both of these Nitro perks are around for a full month, and will end on June 15.</p>
         </div>
     </div>
     <div id="heading-5" class="rich-wrapper">
