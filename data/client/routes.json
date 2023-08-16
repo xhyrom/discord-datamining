@@ -2396,6 +2396,14 @@
       "POST"
     ]
   },
+  "BILLING_PERKS_RELEVANCE": {
+    "url": "/users/@me/billing/perks-relevance",
+    "allowed_methods": [
+      "GET",
+      "HEAD",
+      "OPTIONS"
+    ]
+  },
   "BILLING_SUBSCRIPTIONS_PREVIEW": {
     "url": "/users/@me/billing/subscriptions/preview",
     "allowed_methods": [
