@@ -60,12 +60,12 @@
         <div class="blog-post-content w-richtext">
             <h2><strong>How to Play Games and Activities Directly on Discord<br></strong></h2>
             <p>Checkers, word games, checkers, minigolf, checkers… did I mention checkers? I like checkers, especially when I can play it directly in Discord!&nbsp;</p>
-            <p>Activities are a selection of a ton of fun and — depending on who you play with — casual games and shared experiences that Nitro subscribers can launch at any time. Next time you’re on a call in either a server or in DMs, <strong>use the rocketship button</strong> to choose between over a dozen Activities to play, directly within Discord.&nbsp;<br></p>
+            <p>Activities are a selection of a ton of fun and — depending on who you play with — casual games and shared experiences that anyone can launch at any time. Next time you’re on a call in either a server or in DMs, <strong>use the rocketship button</strong> to choose between over a dozen Activities to play, directly within Discord.&nbsp;<br></p>
             <figure class="w-richtext-figure-type-image w-richtext-align-fullwidth" style="max-width:1600pxpx">
                 <div><img src="https://assets-global.website-files.com/5f9072399b2640f14d6a2bf4/6476736ed30382019027d8ba_266cd5d9.png" alt="A group of six friends playing Sketch Heads during a Discord call."></div>
             </figure>
             <p>What exactly is available? You’ll find the full list of Activities over at <a href="https://discord.com/blog/server-activities-games-voice-watch-together">the dedicated Activities blog</a>. It’s always updated with the latest releases, so take a peek once in a while and see what’s new in the world of Activities on Discord.&nbsp;</p>
-            <p>Activities are supported on both desktop and mobile. If you’ve got Discord Nitro, you’ll be able to start a game of Checkers with your friends on the go. And other games I guess, but ya’know… checkers is cool.&nbsp;</p>
+            <p>Activities are supported on both desktop and mobile, so you’ll be able to start a game of Checkers with your friends on the go. And other games I guess, but ya’know… checkers is cool.&nbsp;</p>
         </div>
     </div>
     <div id="heading-7" class="rich-wrapper">
@@ -76,8 +76,8 @@
             <figure class="w-richtext-figure-type-image w-richtext-align-fullwidth" style="max-width:580pxpx">
                 <div><img src="https://assets-global.website-files.com/5f9072399b2640f14d6a2bf4/6483a2e644858da15db812fc_Watch%20Together.gif" loading="lazy" alt="A preview image of the “Watch Together” Activity in Discord."></div>
             </figure>
-            <p>The Host can also share control with everyone&nbsp; in the Activity, allowing participants to freely queue up their picks on what should play next. First a 30-second cat clip, then a three hour video essay, followed by a 2 minute video about how to best brew a cup of coffee. What chaos ensues will likely be really telling about what you and your friends are like.&nbsp;</p>
-            <p>Watch Together is free to use by anyone on Discord — no Nitro required! Try it out in a Discord call next time you’re looking for something to watch!&nbsp;</p>
+            <p>The Host can also share control with everyone&nbsp;in the Activity, allowing participants to freely queue up their picks on what should play next. First a 30-second cat clip, then a three hour video essay, followed by a 2 minute video about how to best brew a cup of coffee. What chaos ensues will likely be really telling about what you and your friends are like.&nbsp;</p>
+            <p>Like all Activities, Watch Together is available to anyone on Discord. Try it out in a Discord call next time you’re looking for something to watch!&nbsp;</p>
         </div>
     </div>
     <div id="heading-8" class="rich-wrapper">
