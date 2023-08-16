@@ -15639,7 +15639,6 @@
   "CLIPS_SETTINGS_ALLOW_VIEWER_CLIPS_HELP": "\"Enable the creation of clips from your Go Live stream\"",
   "CLIPS_SETTINGS_WHO_CAN_CAPTURE": "\"Who can capture clips\"",
   "CLIPS_SETTINGS_WHO_CAN_CAPTURE_HELP": "\"Choose what layer of connectivity you need viewers to have in order to capture clips\"",
-  "CLIPS_SETTINGS_GET_NITRO_FOR_BIGGER_UPLOADS": "\"Get Nitro for bigger uploads\"",
   "CLIPS_CONNECTIVITY_ALL": "\"All\"",
   "CLIPS_CONNECTIVITY_FRIENDS": "\"Friends\"",
   "CLIPS_KEYBIND_DESCRIPTION": "\"Clips the last 30 seconds to 2 minutes of your stream, depending on your settings.\"",
