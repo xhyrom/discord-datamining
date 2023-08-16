@@ -66817,10 +66817,13 @@ strong {
     overflow-y: scroll;
     max-height: 50vh;
     border-radius: 8px;
-    background: var(--bg-overlay-3, var(--channeltextarea-background));
     -webkit-backface-visibility: hidden;
     backface-visibility: hidden;
     scrollbar-width: none
+}
+
+.themedBackground-3uF0xW {
+    background: var(--bg-overlay-3, var(--channeltextarea-background))
 }
 
 .sticker-2Ylnbr {
@@ -164641,4 +164644,4 @@ html .invoiceCancelRow-dVOR64 {
     height: 200px
 }
 
-/*# sourceMappingURL=40532.787c641b43c303307937.css.map*/
+/*# sourceMappingURL=40532.8d99e62f6e22f351985f.css.map*/
