@@ -33,6 +33,10 @@ export interface Article {
   title: string; // title and name are the same
   label_names: string[];
   body: string;
+  draft: boolean;
+  promoted: boolean;
+  comments_disabled: boolean;
+  outdated: boolean;
 }
 
 export interface Section {

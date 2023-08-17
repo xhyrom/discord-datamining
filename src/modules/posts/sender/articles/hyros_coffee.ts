@@ -99,7 +99,22 @@ export class HyrosCoffeeSender implements Sender<Article> {
         {
           name: "Link",
           value: article.html_url,
-        }
+        },
+        {
+          name: "Outdated",
+          value: article.outdated ? "✅" : "❌",
+          inline: true,
+        },
+        {
+          name: "Draft",
+          value: article.draft ? "✅" : "❌",
+          inline: true,
+        },
+        {
+          name: "Comments Enabled",
+          value: !article.comments_disabled ? "✅" : "❌",
+          inline: true,
+        },
       );
   }
 }
