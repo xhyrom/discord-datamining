@@ -24040,6 +24040,7 @@ html.disable-forced-colors * {
     --divider-subtle: hsl(var(--white-500-hsl)/0.08);
     --forum-post-extra-media-count-container-background: hsl(var(--primary-660-hsl)/0.8);
     --forum-post-tag-background: hsl(var(--primary-660-hsl)/0.9);
+    --guild-notifications-bottom-sheet-pill-background: var(--primary-700);
     --header-muted: var(--primary-360);
     --header-primary: var(--primary-130);
     --header-secondary: var(--primary-330);
@@ -24314,6 +24315,7 @@ html.disable-forced-colors * {
     --divider-subtle: hsl(var(--black-500-hsl)/0.08);
     --forum-post-extra-media-count-container-background: hsl(var(--primary-160-hsl)/0.8);
     --forum-post-tag-background: hsl(var(--primary-160-hsl)/0.9);
+    --guild-notifications-bottom-sheet-pill-background: var(--white-500);
     --header-muted: var(--primary-460);
     --header-primary: var(--primary-860);
     --header-secondary: var(--primary-500);
@@ -24663,6 +24665,7 @@ html.disable-forced-colors * {
     --focus-primary: var(--blue-345);
     --forum-post-extra-media-count-container-background: hsl(var(--primary-660-hsl)/0.8);
     --forum-post-tag-background: hsl(var(--primary-660-hsl)/0.9);
+    --guild-notifications-bottom-sheet-pill-background: var(--primary-700);
     --header-muted: var(--dontuse-10);
     --icon-muted: var(--dontuse-13);
     --icon-secondary: var(--dontuse-9);
@@ -140822,12 +140825,6 @@ html .invoiceCancelRow-3s2UuC {
     display: flex
 }
 
-.editIcon-1f2iR1 {
-    color: var(--white-500);
-    width: 16px;
-    height: 16px
-}
-
 .newIcon-3qyXQQ {
     width: 24px;
     height: 24px
@@ -140866,7 +140863,14 @@ html .invoiceCancelRow-3s2UuC {
 }
 
 .clipDurationBadge-2GUmDx {
-    background: var(--black-500)
+    background: var(--black-500);
+    gap: 4px
+}
+
+.clipDurationEditIcon-3SqknF {
+    width: 16px;
+    height: 16px;
+    color: var(--white-500)
 }
 
 .clipThumb-1PCUzz {
@@ -163155,19 +163159,27 @@ html .invoiceCancelRow-3s2UuC {
     -webkit-transform: translateY(calc(-100% - 6px));
     transform: translateY(calc(-100% - 6px));
     border-radius: 50px;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
     -webkit-box-pack: center;
     -ms-flex-pack: center;
     justify-content: center;
     -webkit-box-align: center;
     -ms-flex-align: center;
-    align-items: center
+    align-items: center;
+    min-width: 120px
+}
+
+.timePillBackground-2ud9zH,
+.timePillText-3iGcKk {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex
 }
 
 .timePillText-3iGcKk {
-    white-space: nowrap
+    white-space: nowrap;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between
 }
 
 .cropArrow-vTI3sK {
@@ -163198,6 +163210,23 @@ html .invoiceCancelRow-3s2UuC {
 
 .playPauseButton-4NJfqf:hover {
     cursor: pointer
+}
+
+.char-AHfZpY {
+    display: inline-block;
+    text-align: center
+}
+
+.fixedWidthCharacter-4Az1wV {
+    width: 8px
+}
+
+.narrowCharacter-XUw8UW {
+    width: 4px
+}
+
+.slashCharacter-3HGIPA {
+    width: 12px
 }
 
 .modalContent-2Ly0BZ {
@@ -163739,7 +163768,8 @@ html .invoiceCancelRow-3s2UuC {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    height: 208px
+    height: 208px;
+    border: 2px solid transparent
 }
 
 .decorationPreview-273BXH {
@@ -163777,8 +163807,8 @@ html .invoiceCancelRow-3s2UuC {
 
 .shopPreviewContainer-2S7Vwj {
     position: relative;
-    width: 280px;
     height: 280px;
+    margin-top: 24px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -163863,7 +163893,8 @@ html .invoiceCancelRow-3s2UuC {
     -webkit-box-pack: center;
     -ms-flex-pack: center;
     justify-content: center;
-    color: var(--header-primary)
+    color: var(--header-primary);
+    position: relative
 }
 
 .selected-IxbpGM {
@@ -163872,7 +163903,7 @@ html .invoiceCancelRow-3s2UuC {
 }
 
 .list-2gEvIv {
-    height: 300px;
+    max-height: 420px;
     width: 288px;
     margin-bottom: 10px;
     left: -12px
@@ -163888,6 +163919,22 @@ html .invoiceCancelRow-3s2UuC {
 
 .tooltipText-EQbODE {
     padding: 8px 32px
+}
+
+.badge-1IU7uc {
+    position: absolute;
+    right: -8px;
+    top: -8px
+}
+
+.newBadge-29fT5u {
+    background: -webkit-gradient(linear, left top, right top, from(hsl(269, calc(var(--saturation-factor, 1)*52.7%), 52.7%)), color-stop(hsl(296, calc(var(--saturation-factor, 1)*50%), 51.4%)), to(hsl(325, calc(var(--saturation-factor, 1)*31.7%), 51.8%)));
+    background: linear-gradient(90deg, hsl(269, calc(var(--saturation-factor, 1)*52.7%), 52.7%), hsl(296, calc(var(--saturation-factor, 1)*50%), 51.4%), hsl(325, calc(var(--saturation-factor, 1)*31.7%), 51.8%))
+}
+
+.lockBadge-2UO4Sh {
+    width: 20px;
+    height: 20px
 }
 
 .subscribeFooter-35dQiH {
@@ -164628,4 +164675,4 @@ html .invoiceCancelRow-dVOR64 {
     height: 200px
 }
 
-/*# sourceMappingURL=40532.24cbb366c8591c7bb313.css.map*/
+/*# sourceMappingURL=40532.2f38f0f0eecd8b91c383.css.map*/
