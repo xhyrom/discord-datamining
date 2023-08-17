@@ -15,6 +15,7 @@ import { join } from "node:path";
 import type { Module } from "..";
 import { Posts } from "./index.ts";
 import { sendBlog } from "./sender/index.ts";
+import { DeepSet } from "../../DeepSet.ts"; 
 
 interface RssResponse {
   rss: {
@@ -108,7 +109,7 @@ export class Blog implements Module {
   async run() {
     console.log("Scraping blog");
 
-    const posts = await this.posts();
+    let posts = await this.posts();
     const channel = await this.channel();
 
     if (posts.length === 0) {
@@ -126,16 +127,29 @@ export class Blog implements Module {
       JSON.stringify(channel, null, 2)
     );
 
-    const oldPosts = JSON.parse(
+    let oldPosts = JSON.parse(
       (await readFile(join(this.baseDir, "posts.json"))) ?? "[]"
     );
+
+    let tempPosts = new DeepSet<Post>();
+    
+    for (const post of posts) {
+        tempPosts.add(post);
+    }
+
+    for (const post of oldPosts) {
+        tempPosts.add(post);
+    }
+    
+    posts = [...tempPosts.values()];
 
     await writeFile(
       join(this.baseDir, "posts.json"),
       JSON.stringify(posts, null, 2)
     );
 
-    await rm(join(this.baseDir, "posts"));
+    // todo: scrape blog posts better
+    //await rm(join(this.baseDir, "posts")); - rss shows only 100 items
 
     for (const post of posts) {
       await writeFile(
