@@ -15710,6 +15710,7 @@
   "CLIPS_EDIT_USER_LIST_TITLE": "\"Participants\"",
   "CLIPS_ATTACHMENT_TOOLTIP": "\"This clip was captured on Discord\"",
   "CLIPS_BETA_TAG_HOVER": "\"Clips is an experimental feature and isn't currently available everywhere on Discord.\"",
+  "CLIPS_SAVE_CLIP_TOOLTIP": "\"Save Clip (!!{hotkey}!!)\"",
   "STAFF_PTO_NOTICE": "\"Heads up! This person may be Out of Office.\"",
   "CONSOLE_PLAYSTATION_STAGING_TRANSFER_VOICE": "\"Transfer to PlayStation (sp-int)\"",
   "CONSOLE_PLAYSTATION_STAGING_JOIN_VOICE": "\"Join on PlayStation (sp-int)\"",
