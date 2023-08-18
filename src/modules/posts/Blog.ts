@@ -4,7 +4,6 @@ import jsBeautify from "js-beautify";
 import {
   DATA_DIR,
   writeFile,
-  rm,
   omit,
   beautify,
   readFile,
