@@ -1,14 +1,14 @@
 {
   "data": {
     "kind": "user",
-    "id": "2023-02_nitro_most_popular_tag",
-    "label": "Most popular tag in nitro plan selection",
+    "id": "2023-08_video_quality_measurement_v1",
+    "label": "Video Quality Measurement",
     "description": [
       "Not Eligible",
       "Control Bucket",
-      "Treatment 1: show most popular tag on nitro plan"
+      "Treatment 1: Measure PSNR"
     ],
-    "hash": 2459440542,
+    "hash": 2496837643,
     "buckets": [
       -1,
       0,
