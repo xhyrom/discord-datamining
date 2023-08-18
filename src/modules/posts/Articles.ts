@@ -1,6 +1,7 @@
 import {
   DATA_DIR,
   writeFile,
+  rm,
   getPaginator,
   omit,
   beautify,
