@@ -22792,6 +22792,81 @@ html.disable-forced-colors * {
     border-radius: 50%
 }
 
+.icon-3EHBnD {
+    position: relative;
+    width: 32px;
+    height: 32px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center
+}
+
+.badge-2Ud1qD {
+    position: absolute;
+    bottom: 2px;
+    right: 4px;
+    width: 10px;
+    height: 10px;
+    color: var(--header-secondary)
+}
+
+.container-3hXSV6 {
+    gap: 16px;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    width: 100%
+}
+
+.container-3hXSV6,
+.content-3DNEbu {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex
+}
+
+.content-3DNEbu {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-flex: 1;
+    -ms-flex-positive: 1;
+    flex-grow: 1
+}
+
+.actions-2p1_4W {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-item-align: end;
+    align-self: end;
+    gap: 4px;
+    -webkit-box-align: baseline;
+    -ms-flex-align: baseline;
+    align-items: baseline;
+    margin: 8px -4px -4px 0
+}
+
+.button-38O2r8 {
+    cursor: pointer;
+    color: var(--interactive-normal)
+}
+
+.button-38O2r8:hover {
+    color: var(--interactive-hover)
+}
+
+.button-38O2r8:active {
+    color: var(--interactive-active)
+}
+
 .mirror-1zCRf6 {
     -webkit-transform: scaleX(-1);
     transform: scaleX(-1)
@@ -22912,6 +22987,16 @@ html.disable-forced-colors * {
 
 .participantName-1xQQfc {
     margin-left: 8px
+}
+
+.emptyBroadcast-1aA3Bg {
+    height: auto;
+    padding: 16px;
+    background-color: var(--background-floating)
+}
+
+.innerEmptyBroadcast-19XoHg {
+    position: relative
 }
 
 .pictureInPicture-1GQX91 {
@@ -107307,19 +107392,6 @@ html .tabBadge-h4HGed {
     color: var(--header-primary)
 }
 
-.icon-3EHBnD {
-    position: relative
-}
-
-.badge-2Ud1qD {
-    position: absolute;
-    bottom: 4px;
-    right: 4px;
-    width: 10px;
-    height: 10px;
-    color: var(--header-secondary)
-}
-
 .userList-3HrI62 {
     position: relative;
     border: 1px solid;
@@ -165592,4 +165664,4 @@ html .invoiceCancelRow-dVOR64 {
     height: 200px
 }
 
-/*# sourceMappingURL=40532.810345e5561d2368a94b.css.map*/
+/*# sourceMappingURL=40532.3cea4a0e168c7cd776e2.css.map*/
