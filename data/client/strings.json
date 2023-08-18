@@ -15251,6 +15251,7 @@
   "DOMAIN_VERIFICATION_USE_DNS": "\"Verify using DNS\"",
   "DOMAIN_VERIFICATION_INSTRUCTIONS_HTTP": "\"Create a new file on your website:\"",
   "GUILD_SHOP_CHANNEL_LABEL": "\"Server Shop\"",
+  "GUILD_SHOP_PRODUCTS_A11Y_LABEL": "\"Available Products\"",
   "USER_DISCONNECTED_SUBTEXT": "\"!!{username}!! can still join anytime while you are here.\"",
   "DISCORD_NAME": "\"Discord\"",
   "DEFAULT_CONFIRMATION_MODAL_HEADER": "\"Are you sure?\"",
