@@ -156867,6 +156867,42 @@ html .invoiceCancelRow-3s2UuC {
     border: 1px solid ButtonText
 }
 
+.avatarBackground-2Dfzno {
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    background-color: var(--background-tertiary);
+    width: 90px;
+    height: 90px;
+    border-radius: 50%
+}
+
+.avatar-2TlDT6,
+.avatarBackground-2Dfzno {
+    position: relative
+}
+
+.avatar-2TlDT6,
+.avatarBackground-2Dfzno,
+.indicator-3cRy4o {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex
+}
+
+.indicator-3cRy4o {
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    position: absolute
+}
+
 .container-3eXgyl {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -165522,4 +165558,4 @@ html .invoiceCancelRow-dVOR64 {
     height: 200px
 }
 
-/*# sourceMappingURL=40532.62337e2583dec3e85b31.css.map*/
+/*# sourceMappingURL=40532.a388b802e5d896de5f54.css.map*/
