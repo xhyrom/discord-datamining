@@ -1,20 +1,18 @@
 {
   "data": {
     "kind": "user",
-    "id": "2023-05_inventory_guild_packs",
-    "label": "Inventory Guild Packs Experiment",
+    "id": "2023-08_local_message_background_sending",
+    "label": "Send Messages In The Backgrounded",
     "description": [
       "Not Eligible",
       "Control Bucket",
-      "Treatment 1: Enabled",
-      "Treatment 2: Enabled"
+      "Treatment 1: Enable Background Sending"
     ],
-    "hash": 1473329304,
+    "hash": 1704787863,
     "buckets": [
       -1,
       0,
-      1,
-      2
+      1
     ],
     "config_keys": [
       "enabled"

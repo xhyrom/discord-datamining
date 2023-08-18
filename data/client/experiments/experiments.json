@@ -2315,81 +2315,6 @@
   },
   {
     "data": {
-      "kind": "guild",
-      "id": "2022-01_home_tab_guild",
-      "label": "Home Tab Guild",
-      "description": [
-        "Not Eligible",
-        "Control Bucket",
-        "Treatment 1: Check User as well",
-        "Treatment 2: Force on"
-      ],
-      "hash": 3832113202,
-      "buckets": [
-        -1,
-        0,
-        1,
-        2
-      ],
-      "config_keys": [
-        "enabled"
-      ]
-    },
-    "rollout": {
-      "populations": [
-        {
-          "buckets": {
-            "none": {
-              "rollout": [
-                {
-                  "start": 0,
-                  "end": 10000
-                }
-              ]
-            }
-          },
-          "filters": []
-        }
-      ],
-      "revision": 4,
-      "overrides": {
-        "0": [
-          "814669604840013874"
-        ],
-        "2": [
-          "662267976984297473"
-        ]
-      },
-      "overrides_formatted": []
-    }
-  },
-  {
-    "data": {
-      "kind": "user",
-      "id": "2022-01_home_tab_user",
-      "label": "Home Tab User",
-      "description": [
-        "Not Eligible",
-        "Control Bucket",
-        "Treatment 1: Show Home Tab",
-        "Treatment 2: Force on",
-        "Treatment 3: Overflow"
-      ],
-      "hash": 3656796460,
-      "buckets": [
-        -1,
-        0,
-        1,
-        2,
-        3
-      ],
-      "config_keys": [
-        "enabled"
-      ]
-    }
-  },
-  {
-    "data": {
       "kind": "user",
       "id": "2022-01_home_feed_toggle",
       "label": "Show Guild Feed Sorting Selector",
@@ -3184,6 +3109,27 @@
   {
     "data": {
       "kind": "user",
+      "id": "2023-08_local_message_background_sending",
+      "label": "Send Messages In The Backgrounded",
+      "description": [
+        "Not Eligible",
+        "Control Bucket",
+        "Treatment 1: Enable Background Sending"
+      ],
+      "hash": 1704787863,
+      "buckets": [
+        -1,
+        0,
+        1
+      ],
+      "config_keys": [
+        "enabled"
+      ]
+    }
+  },
+  {
+    "data": {
+      "kind": "user",
       "id": "2023-01_silent_messages",
       "label": "Silent Messages",
       "description": [
@@ -3949,8 +3895,7 @@
         2
       ],
       "config_keys": [
-        "enabled",
-        "mobileEnabled"
+        "enabled"
       ]
     }
   },
@@ -4328,8 +4273,14 @@
           ]
         }
       ],
-      "revision": 0,
-      "overrides": {},
+      "revision": 1,
+      "overrides": {
+        "1": [
+          "1064959560890204271",
+          "834846951068532756",
+          "697694775561945109"
+        ]
+      },
       "overrides_formatted": []
     }
   },
@@ -4614,10 +4565,18 @@
       "populations": [
         {
           "buckets": {
+            "1": {
+              "rollout": [
+                {
+                  "start": 100,
+                  "end": 200
+                }
+              ]
+            },
             "none": {
               "rollout": [
                 {
-                  "start": 0,
+                  "start": 200,
                   "end": 10000
                 }
               ]
@@ -4626,7 +4585,7 @@
           "filters": []
         }
       ],
-      "revision": 0,
+      "revision": 1,
       "overrides": {
         "1": [
           "942897714956472401",
@@ -5894,7 +5853,8 @@
           "964645662866173972",
           "915336728707989534",
           "1095810146761973830",
-          "1116793467654381685"
+          "1116793467654381685",
+          "1129250560328093826"
         ]
       },
       "overrides_formatted": []
@@ -8252,6 +8212,29 @@
   {
     "data": {
       "kind": "user",
+      "id": "2023-08_reranked_marketing_tiles",
+      "label": "Reranked Marketing Tiles",
+      "description": [
+        "Not Eligible",
+        "Control Bucket",
+        "Treatment 1: Variant 1",
+        "Treatment 2: Variant 2"
+      ],
+      "hash": 4020129040,
+      "buckets": [
+        -1,
+        0,
+        1,
+        2
+      ],
+      "config_keys": [
+        "enabled"
+      ]
+    }
+  },
+  {
+    "data": {
+      "kind": "user",
       "id": "2023-08_perks_discoverability",
       "label": "Perks Discoverability",
       "description": [
@@ -8317,20 +8300,18 @@
   {
     "data": {
       "kind": "user",
-      "id": "2023-08_reranked_marketing_tiles",
-      "label": "Reranked Marketing Tiles",
+      "id": "2023-08_premium_new_settings_page",
+      "label": "New settings page for Nitro",
       "description": [
         "Not Eligible",
         "Control Bucket",
-        "Treatment 1: Variant 1",
-        "Treatment 2: Variant 2"
+        "Treatment 1: Enable new settings page for Nitro"
       ],
-      "hash": 4020129040,
+      "hash": 2083225274,
       "buckets": [
         -1,
         0,
-        1,
-        2
+        1
       ],
       "config_keys": [
         "enabled"
@@ -8726,6 +8707,7 @@
           "966095003136983121",
           "1075531421554180096",
           "706356477765353563",
+          "996817886695927808",
           "510301158716342293",
           "239599059415859200",
           "424012709219008522",
@@ -9946,6 +9928,39 @@
           ]
         }
       ]
+    }
+  },
+  {
+    "data": {
+      "kind": "guild",
+      "hash": 3832113202
+    },
+    "rollout": {
+      "populations": [
+        {
+          "buckets": {
+            "none": {
+              "rollout": [
+                {
+                  "start": 0,
+                  "end": 10000
+                }
+              ]
+            }
+          },
+          "filters": []
+        }
+      ],
+      "revision": 4,
+      "overrides": {
+        "0": [
+          "814669604840013874"
+        ],
+        "2": [
+          "662267976984297473"
+        ]
+      },
+      "overrides_formatted": []
     }
   },
   {
@@ -11555,6 +11570,37 @@
       "overrides": {
         "0": [
           "1098695569129611454"
+        ]
+      },
+      "overrides_formatted": []
+    }
+  },
+  {
+    "data": {
+      "kind": "guild",
+      "hash": 3779532009
+    },
+    "rollout": {
+      "populations": [
+        {
+          "buckets": {
+            "none": {
+              "rollout": [
+                {
+                  "start": 0,
+                  "end": 10000
+                }
+              ]
+            }
+          },
+          "filters": []
+        }
+      ],
+      "revision": 0,
+      "overrides": {
+        "1": [
+          "1095810146761973830",
+          "1073744274774048868"
         ]
       },
       "overrides_formatted": []
