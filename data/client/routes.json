@@ -939,8 +939,8 @@
       "POST"
     ]
   },
-  "UPDATE_VOICE_CHANNEL_TOPIC": {
-    "url": "/channels/:param/topic",
+  "UPDATE_VOICE_CHANNEL_STATUS": {
+    "url": "/channels/:param/voice-status",
     "allowed_methods": [
       "OPTIONS",
       "PUT"
