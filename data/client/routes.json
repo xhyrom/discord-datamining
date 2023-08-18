@@ -4377,6 +4377,29 @@
       "OPTIONS"
     ]
   },
+  "GUILD_MEMBERS_UNUSUAL_DM_ACTIVITY": {
+    "url": "/guilds/:param/members/unusual-dm-activity",
+    "allowed_methods": [
+      "DELETE",
+      "GET",
+      "HEAD",
+      "OPTIONS",
+      "PATCH",
+      "PUT"
+    ]
+  },
+  "INVENTORY_GET": {
+    "url": "/users/@me/inventory",
+    "allowed_methods": [
+      "GET",
+      "HEAD",
+      "OPTIONS"
+    ]
+  },
+  "COLLECTIBLE_ASSET": {
+    "url": "/applications/1096190356233670716/app-assets/:param.:param",
+    "allowed_methods": null
+  },
   "SAFETY_HUB": {
     "url": "/safety-hub",
     "allowed_methods": null
