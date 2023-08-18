@@ -868,28 +868,15 @@
   },
   "COLLECTIBLE_STORE_LISTING": {
     "url": "/collectibles/:param",
-    "allowed_methods": [
-      "GET",
-      "HEAD",
-      "OPTIONS"
-    ]
+    "allowed_methods": null
   },
   "COLLECTIBLES": {
     "url": "/collectibles",
-    "allowed_methods": [
-      "GET",
-      "HEAD",
-      "OPTIONS"
-    ]
+    "allowed_methods": null
   },
   "USER_COLLECTIBLES": {
     "url": "/users/@me/collectibles",
-    "allowed_methods": [
-      "GET",
-      "HEAD",
-      "OPTIONS",
-      "PUT"
-    ]
+    "allowed_methods": null
   },
   "GUILD_MEMBER_BANNER": {
     "url": "/guilds/:param/users/:param/banners/:param.:param",
