@@ -864,11 +864,7 @@
   },
   "USER_AVATAR_DECORATIONS": {
     "url": "/users/@me/avatar-decorations",
-    "allowed_methods": [
-      "GET",
-      "HEAD",
-      "OPTIONS"
-    ]
+    "allowed_methods": null
   },
   "COLLECTIBLE_STORE_LISTING": {
     "url": "/collectibles/:param",
