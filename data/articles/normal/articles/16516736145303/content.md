@@ -14,7 +14,7 @@
 <p><strong>Who is Eligible: </strong></p>
 <ul>
     <li>
-        <strong><span style="color: #0000ff;" data-darkreader-inline-color="">To claim through Discord</span></strong><strong>,</strong> you must be a current Nitro subscriber. 
+        <strong><span style="color: #0000ff;" data-darkreader-inline-color="">To claim through Discord</span></strong><strong>,</strong> you must be a current Nitro subscriber or Nitro trial subscriber. 
     </li>
     <li>
         <strong><span style="color: #ff0000;" data-darkreader-inline-color="">To redeem in Genshin Impact</span></strong>, you must have an active Genshin Impact account. 
@@ -71,6 +71,7 @@
 <p>This fantasy adventure is from developer and publisher <a href="https://www.hoyoverse.com/en-us" target="_blank" rel="noopener noreferrer">HoYoverse</a>! You can read more about this promotion <a href="https://www.hoyolab.com/article_pre/11717?utm_source=sns&amp;utm_medium=discord&amp;utm_id=2&amp;utm_campaign=discordnitrocollab" target="_blank" rel="noopener noreferrer">here</a>. </p>
 <h1 id="h_01H7XV37K6BSQK81E8SEFTHBMA"><strong>How do I claim the Genshin Impact Promo in Discord?</strong></h1>
 <p>As long as you're a <strong>Discord Nitro</strong> member, you'll be able to claim the Genshin Impact Gift Pack code in the Gift Inventory from <strong>August 15th, 2023 (7:00pm PST)</strong> to <strong>September 26th, 2023 (11:59pm PST)</strong>.</p>
+<h3 id="docs-internal-guid-2ae1ed14-7fff-c9f1-e8cf-43029817b4ff">Redemption of this promotion is in limited supply and subject to availability.</h3>
 <h2 id="h_01H7XV3DR1RR1YWA5K3GR5SZY7">Eligibility for the Claiming this Promotion in Discord</h2>
 <p>In order to claim this code, you’ll need to be an active subscriber to <strong>Discord Nitro</strong> (and you can be either a monthly or yearly Nitro subscriber).</p>
 <ul>
@@ -81,6 +82,7 @@
     </li>
 </ul>
 <p>Unfortunately, if you are a <strong>Nitro Basic, Nitro Classic, or Server Boosting</strong> subscriber, you'll need to subscribe to Nitro in order to claim this promotion.</p>
+<h3 id="docs-internal-guid-e548e51f-7fff-fdfa-334b-ddf55ea08cfc"><span style="color: #434343;" data-darkreader-inline-color="">Nitro trial users are also able to claim the Genshin Impact Gift Pack!</span></h3>
 <h2 id="h_01H7XV3MX0981MF54H521AATCM"><strong>Step By Step Claim Instructions </strong></h2>
 <p><strong>1) Log into Your Discord account and head to the Gift Inventory tab. </strong></p>
 <p>If you’re subscribed to <strong>Discord Nitro,</strong> start by logging into your Discord account. </p>

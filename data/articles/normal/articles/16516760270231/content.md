@@ -56,12 +56,17 @@
 <h1 id="01H7XQ576SWE094C92M2SG3RCT"><strong>How do I claim the Nitro Promo from my Genshin Impact account?</strong></h1>
 <p>You can claim this promotion through the in-game client! </p>
 <h3 id="01H7XQ576S0TP7E3BXF9V3V1F6"><span style="color: #434343;" data-darkreader-inline-color="">Note: Only Genshin Impact players who have reached Adventure Rank 10 or higher in Fontaine on their HoYoverse Account, will be able to claim this promotion!</span></h3>
-<p><strong>1. </strong>Launch <strong>Genshin Impact</strong> and enter the game’s world.</p>
-<p><strong>2. </strong>Open the <strong>Paimon menu</strong> in the upper left corner.</p>
-<p><strong>3. </strong>Open the settings menu by pressing the <strong>gear icon</strong></p>
-<p><strong>4. </strong>In the setting’s menu, enter <strong>[Account], [Redeem Code], and [Exchange]</strong>.</p>
-<p><strong>5. </strong>After redeeming a code, you will receive the Nitro code via in-game mail. The email can take up to 72 hours to send.</p>
-<p><strong>6. </strong>Then, follow the instructions within the email to redeem the code in Discord and activate your 1 month Nitro trial.</p>
+<p id="docs-internal-guid-741ca405-7fff-0021-3f18-c51bcbac7a70"><strong>How to claim the Nitro Promo in-game: </strong></p>
+<p>1. Launch <strong>Genshin Impact</strong> and enter the game’s world.</p>
+<p>2. Open the <strong>Paimon menu</strong> in the upper left corner.</p>
+<p>3. Open the settings menu by pressing the <strong>gear icon</strong></p>
+<p>4. In the setting’s menu, enter <strong>[Account], [Redeem Code], and [Exchange]</strong>.</p>
+<p>5. After redeeming a code, you will receive the Nitro code via in-game mail. The email can take up to 72 hours to send.</p>
+<p>6. Then, follow the instructions within the email to redeem the code in Discord and activate your 1 month Nitro trial.</p>
+<p><strong>How to claim the Nitro Promo through browser: </strong></p>
+<p id="docs-internal-guid-b5333d7f-7fff-4161-f4dc-80b7d974506e">1. If you meet the eligibility requirements, leave a comment on the <a href="https://www.hoyolab.com/article/20902797?utm_source=sns&amp;utm_medium=discord&amp;utm_campaign=discordnitrocollab&amp;utm_id=2" target="_blank" rel="noopener noreferrer">HoYoLAB post</a> during the promotion period and your participation will have been deemed successful.</p>
+<p>2. Event participants will receive the link for a 1-month Discord Nitro trial via HoYoLAB messages from the official Genshin Impact team within 72 hours of commenting. </p>
+<p>3. Once you have received the message, select the link to collect the event reward.</p>
 <h1 id="01H7XQ576S9DEMTQF4SQMWPGNX"><strong>How do I redeem the Nitro Trial on my Discord Account?</strong></h1>
 <p>Once you have claimed the promo link, you'll now need to officially redeem this promo link on your Discord account (or share this code with a friend). You must redeem this Nitro trial by <strong>August 15th, 2023 to September 26th, 2023</strong>. </p>
 <h2 id="01H7XQ576SGPGY5KKJ9MWJM2DY"><strong>Eligibility for Redeeming the Nitro Trial</strong></h2>
@@ -155,7 +160,7 @@
 <p>After <strong>September 26th, 2023 (11:59pm PST)</strong>, Genshin Impact players will no longer be able to claim a trial promo link.</p>
 <p><strong>Q: How long does the Discord Nitro promotion link last for?</strong></p>
 <p><strong>A:</strong> You must redeem the Nitro promotion by <strong>September 26th, 2023 (11:59pm PST)</strong>.</p>
-<p>If a code has not been redeemed to the Discord account by <strong>September 26th, 2023 (11:59pm PST)</strong>, it will expire and you will no longer be able to have three months of Discord Nitro.</p>
+<p>If a code has not been redeemed to the Discord account by <strong>September 26th, 2023 (11:59pm PST)</strong>, it will expire and you will no longer be able to have 1 month of Discord Nitro.</p>
 <h2 id="01H7XQ576TNJRV9BCQXJ9XNTP0"><strong>Eligibility for the Promotion</strong></h2>
 <p><strong>Q: Who can claim this promotion from their Genshin Impact email?</strong></p>
 <p id="docs-internal-guid-cb0a5863-7fff-66ad-7a3b-6b37eb6cf4cb"><strong>A: </strong>This promotion is available in all regions except for the following: Mainland China, Iran, Russia, and Ukraine. Genshin Impact players in eligible regions, who have reached Adventure Rank 10 or higher on their HoYoverse Account, will be able to claim this promotion.</p>
@@ -175,7 +180,7 @@
 <h2 id="01H7XQ576T96ECT74K6JVB4AM0"><strong>Payment Info and Subscription Questions</strong></h2>
 <p><strong>Q: Why do I need to submit my payment info to redeem Nitro?</strong></p>
 <p><strong>A:</strong> Because Nitro is a subscription plan, at the end of your free 1 month trial, we will start your first billing cycle so you can continue to enjoy Nitro on Discord.</p>
-<p>However, you can cancel the Nitro subscription at any time before the end of the three months.</p>
+<p>However, you can cancel the Nitro subscription at any time before the end of the 1 month trial.</p>
 <p><strong>Q: Why do I see a temporary hold/charge on my account when this is supposed to be a free promotion?</strong></p>
 <p><strong>A:</strong> Just to clarify, this Nitro promotion is free, however, there will be a <strong>temporary hold</strong> placed on the payment method upon activating the promotion. This is to help Discord confirm the payment method works as expected and to prevent the use of fraudulent payment methods. This charge will appear in your Discord transaction history, and it may appear as a hold on your payment method.</p>
 <p>We immediately reverse the temporary hold, and you’ll see that reflected in your Discord transaction history. Your bank may take longer to remove the hold from your payment method.</p>
