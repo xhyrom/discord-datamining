@@ -40848,18 +40848,6 @@ html .progress-2Otdc- {
     cursor: pointer
 }
 
-.textWithIcon-1Xi8lb {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    justify-content: center
-}
-
 .badge-ywz4LX {
     padding: 4px 8px;
     border-radius: 4px;
@@ -40972,6 +40960,18 @@ html .progress-2Otdc- {
 .disabled-3-zZxK {
     opacity: .5;
     cursor: not-allowed
+}
+
+.textWithIcon-1Xi8lb {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center
 }
 
 .inviteDetailsContainer-1F5-cd {
@@ -63814,6 +63814,17 @@ strong {
 
 .forumOrHome-2VTX6r {
     --__header-bar-background: var(--home-background)
+}
+
+.cardContainer-19n4Cc {
+    display: grid;
+    gap: 24px;
+    margin-left: auto;
+    margin-right: auto;
+    grid-template-columns: repeat(auto-fill, 340px);
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center
 }
 
 .lineClamp-2-w95g {
@@ -134577,6 +134588,52 @@ html .invoiceCancelRow-3s2UuC {
     cursor: not-allowed
 }
 
+.modal-3NRxh5 {
+    border-radius: 12px
+}
+
+.body-3ysK6O {
+    background-color: var(--background-primary);
+    padding: 16px 0
+}
+
+.seperator-2sZAFy {
+    width: 100%;
+    border-top: 1px solid var(--background-modifier-selected)
+}
+
+.description-w7pqM1 {
+    white-space: pre-wrap
+}
+
+.footer-1L_rjl {
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    border-radius: 0 0 12px 12px
+}
+
+.headerImage-2evLEZ {
+    width: 100%;
+    height: 267px
+}
+
+.closeButton-XJtNMo {
+    position: absolute;
+    right: 32px;
+    top: 32px;
+    opacity: .8
+}
+
+.closeButton-XJtNMo:hover {
+    opacity: 1;
+    -webkit-transition: opacity .3s ease;
+    transition: opacity .3s ease
+}
+
 .headerImage-RAozSF {
     width: 100%;
     height: 100%;
@@ -134714,52 +134771,6 @@ html .invoiceCancelRow-3s2UuC {
 
 .attachmentDownloadButton-ikRw1y {
     min-width: 0
-}
-
-.modal-3NRxh5 {
-    border-radius: 12px
-}
-
-.body-3ysK6O {
-    background-color: var(--background-primary);
-    padding: 16px 0
-}
-
-.seperator-2sZAFy {
-    width: 100%;
-    border-top: 1px solid var(--background-modifier-selected)
-}
-
-.description-w7pqM1 {
-    white-space: pre-wrap
-}
-
-.footer-1L_rjl {
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
-    -webkit-box-pack: justify;
-    -ms-flex-pack: justify;
-    justify-content: space-between;
-    border-radius: 0 0 12px 12px
-}
-
-.headerImage-2evLEZ {
-    width: 100%;
-    height: 267px
-}
-
-.closeButton-XJtNMo {
-    position: absolute;
-    right: 32px;
-    top: 32px;
-    opacity: .8
-}
-
-.closeButton-XJtNMo:hover {
-    opacity: 1;
-    -webkit-transition: opacity .3s ease;
-    transition: opacity .3s ease
 }
 
 .modalContainer-2wqdQW,
@@ -141338,6 +141349,7 @@ html .invoiceCancelRow-3s2UuC {
 .clipThumb-1PCUzz {
     border-radius: var(--radius-sm);
     position: absolute;
+    background-color: var(--background-tertiary);
     width: 100%;
     height: 100%;
     top: 0;
@@ -165559,4 +165571,4 @@ html .invoiceCancelRow-dVOR64 {
     height: 200px
 }
 
-/*# sourceMappingURL=40532.bbcfbcaa99870d2fcf5d.css.map*/
+/*# sourceMappingURL=40532.3b5281ffc5b88a3cd22f.css.map*/
