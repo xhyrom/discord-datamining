@@ -874,8 +874,16 @@
     "url": "/collectibles",
     "allowed_methods": null
   },
+  "COLLECTIBLES_CATEGORES": {
+    "url": "/collectibles/categories",
+    "allowed_methods": null
+  },
   "USER_COLLECTIBLES": {
     "url": "/users/@me/collectibles",
+    "allowed_methods": null
+  },
+  "COLLECTIBLES_PURCHASES": {
+    "url": "/users/@me/collectibles/purchases",
     "allowed_methods": null
   },
   "GUILD_MEMBER_BANNER": {
