@@ -107,6 +107,8 @@ export class Experiments implements Module {
       ["id", "hash", "label"]
     ];
 
+    experimentsDatabaseCache.sort((a, b) => a.id.localeCompare(b.id));
+
     for (const dbEntry of experimentsDatabaseCache) {
       newExperimentsDatabase.push([ dbEntry.id, dbEntry.hash, dbEntry.label ]);
     }
