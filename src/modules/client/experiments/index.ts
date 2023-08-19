@@ -62,7 +62,7 @@ export class Experiments implements Module {
     ).map((e: any) => new Experiment(e));
     const experimentsDatabase = (await readFile(join(this.baseDir, "experiments.csv"))) ?? "id,hash,label";
     const experimentsDatabaseCache = csvParse(experimentsDatabase, {
-        columns: false,
+        columns: true,
         skip_empty_lines: true,
     }) as { id: string; hash: string; label: string; }[];
     experimentsDatabaseCache.shift(); // remove id,hash,label
