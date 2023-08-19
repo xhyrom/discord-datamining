@@ -23,6 +23,8 @@
     "@octokit/rest": "^19.0.11",
     "@xhyrom-forks/discord-datamining-lang-differ": "github:xhyrom-forks/discord-datamining-lang-differ#personal-use",
     "@xhyrom/configs": "https://gitpkg.now.sh/xHyroM/things/packages/configs?main",
+    "csv-parse": "^5.4.0",
+    "csv-stringify": "^6.4.0",
     "discord-api-types": "^0.37.43",
     "dotenv": "^16.1.4",
     "fast-deep-equal": "^3.1.3",
