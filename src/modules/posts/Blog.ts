@@ -132,16 +132,16 @@ export class Blog implements Module {
 
     for (const post of response) {
         // update existing post
-        if (posts.some(p => p.id === post.id)) {
-            const cached = posts.find(p => p.id === post.id);
-            cached?.guid = post.guid;
-            cached?.link = post.link;
-            cached?.title = post.title;
-            cached?.pubDate = post.pubDate;
-            cached?.description = post.description;
-            cached?.["media:content"] = post["media:content"];
-            cached?.["media:thumbnail"] = post["media:thumbnail"];
-            cached?.body = post.body;
+        const cached = posts.find(p => p.id === post.id);
+        if (cached) {
+            cached.guid = post.guid;
+            cached.link = post.link;
+            cached.title = post.title;
+            cached.pubDate = post.pubDate;
+            cached.description = post.description;
+            cached["media:content"] = post["media:content"];
+            cached["media:thumbnail"] = post["media:thumbnail"];
+            cached.body = post.body;
 
             continue;
         }
