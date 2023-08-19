@@ -60,7 +60,7 @@ export class Experiments implements Module {
     const oldExperiments = JSON.parse(
       (await readFile(join(this.baseDir, "experiments.json"))) ?? "[]"
     ).map((e: any) => new Experiment(e));
-    const experimentsDatabase = (await readFile(join(this.baseDir, "experiments.csv"))) ?? "id,hash,label";
+    const experimentsDatabase = (await readFile(join(this.baseDir, "experiments.csv"))) ?? "";
     const experimentsDatabaseCache = csvParse(experimentsDatabase, {
         columns: false,
         skip_empty_lines: true,
@@ -107,7 +107,7 @@ export class Experiments implements Module {
     ];
 
     for (const dbEntry of experimentsDatabaseCache) {
-      newExperimentsDatabase.push(Object.values(dbEntry));
+      newExperimentsDatabase.push([ dbEntry.id, dbEntry.hash, dbEntry.label ]);
     }
 
     await writeFile(
