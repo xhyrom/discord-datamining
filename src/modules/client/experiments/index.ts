@@ -60,11 +60,12 @@ export class Experiments implements Module {
     const oldExperiments = JSON.parse(
       (await readFile(join(this.baseDir, "experiments.json"))) ?? "[]"
     ).map((e: any) => new Experiment(e));
-    const experimentsDatabase = (await readFile(join(this.baseDir, "experiments.csv"))) ?? "";
+    const experimentsDatabase = (await readFile(join(this.baseDir, "experiments.csv"))) ?? "id,hash,label";
     const experimentsDatabaseCache = csvParse(experimentsDatabase, {
         columns: false,
         skip_empty_lines: true,
     }) as { id: string; hash: string; label: string; }[];
+    experimentsDatabaseCache.shift(); // remove id,hash,label
 
     await writeFile(
       join(this.baseDir, "experiments.json"),
