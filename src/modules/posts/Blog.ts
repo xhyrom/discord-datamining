@@ -128,7 +128,7 @@ export class Blog implements Module {
     const posts = JSON.parse(
       (await readFile(join(this.baseDir, "posts.json"))) ?? "[]"
     ) as Post[];
-    const oldPosts = [...posts];
+    const oldPosts = structuredClone(posts);
 
     for (const post of response) {
         // update existing post
