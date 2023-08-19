@@ -13,8 +13,7 @@ import {
 import { join } from "node:path";
 import type { Module } from "..";
 import { Posts } from "./index.ts";
-import { sendBlog } from "./sender/index.ts";
-import { DeepSet } from "../../DeepSet.ts"; 
+import { sendBlog } from "./sender/index.ts"; 
 
 interface RssResponse {
   rss: {
@@ -108,10 +107,10 @@ export class Blog implements Module {
   async run() {
     console.log("Scraping blog");
 
-    let posts = await this.posts();
+    const response = await this.posts();
     const channel = await this.channel();
 
-    if (posts.length === 0) {
+    if (response.length === 0) {
       console.log("Potentional outage, no posts found!");
       return;
     }
@@ -126,21 +125,29 @@ export class Blog implements Module {
       JSON.stringify(channel, null, 2)
     );
 
-    let oldPosts = JSON.parse(
+    const posts = JSON.parse(
       (await readFile(join(this.baseDir, "posts.json"))) ?? "[]"
-    );
+    ) as Post[];
+    const oldPosts = [...posts];
 
-    let tempPosts = new DeepSet<Post>();
-    
-    for (const post of posts) {
-        tempPosts.add(post);
-    }
+    for (const post of response) {
+        // update existing post
+        if (posts.some(p => p.id === post.id)) {
+            const cached = posts.find(p => p.id === post.id);
+            cached?.guid = post.guid;
+            cached?.link = post.link;
+            cached?.title = post.title;
+            cached?.pubDate = post.pubDate;
+            cached?.description = post.description;
+            cached?.["media:content"] = post["media:content"];
+            cached?.["media:thumbnail"] = post["media:thumbnail"];
+            cached?.body = post.body;
 
-    for (const post of oldPosts) {
-        tempPosts.add(post);
+            continue;
+        }
+
+        posts.push(post);
     }
-    
-    posts = [...tempPosts.values()];
 
     await writeFile(
       join(this.baseDir, "posts.json"),
@@ -163,9 +170,7 @@ export class Blog implements Module {
 
     const result = await pushToGit(
       `📰 Blog posts were updated`,
-      `Posts (${formatNumber(posts.length)}):\n${posts
-        .map((a) => `${a.title}`)
-        .join("\n")}`
+      `Posts (${formatNumber(posts.length)})`,
     );
 
     if (!result?.update?.hash) return;
@@ -203,12 +208,20 @@ export class Blog implements Module {
     const posts = [];
 
     for (const post of data.rss.channel.item) {
-      const body = await (await fetch(post.link._text)).text();
+      const response = await fetch(post.link._text, {
+        redirect: "follow",
+      });
+      const body = await response.text();
       const dom = new JSDOM(body);
 
-      let querySelector = dom.window.document.querySelector(
+      let querySelector = "";
+
+      if (response.url.includes("/blog/")) querySelector = dom.window.document.querySelector(
         ".blog-post-container > div:first-child > div:nth-child(2)"
       )?.outerHTML;
+      else if (response.url.includes("/safety")) querySelector = dom.window.document
+          .querySelector(".w-layout-grid")?.outerHTML;
+
       if (!querySelector)
         querySelector =
           dom.window.document.querySelector(".blog-post-content")?.outerHTML;
