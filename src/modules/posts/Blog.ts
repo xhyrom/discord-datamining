@@ -214,7 +214,7 @@ export class Blog implements Module {
       const body = await response.text();
       const dom = new JSDOM(body);
 
-      let querySelector = "";
+      let querySelector: string | undefined = "";
 
       if (response.url.includes("/blog/")) querySelector = dom.window.document.querySelector(
         ".blog-post-container > div:first-child > div:nth-child(2)"
