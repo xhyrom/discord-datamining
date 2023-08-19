@@ -1,5 +1,4 @@
 id,hash,label
-2021-09_favorites_server,1134868932,Enable fancy super-alpha favorites server.
 2022-04_creator_monetization_country_allowlist,2532700533,Creator Monetization Available in Country
 2022-09_creator_monetization_raven,3723449866,Creator Monetization Onboarding v2
 2022-09_creator_monetization_raven_users,2539540256,Creator Monetization Onboarding v2 Users
@@ -257,3 +256,4 @@ id,hash,label
 2022-06_free_sticker_slots_design_updates,258580919,Free Sticker Slots Design Updates
 2022-12_localized_pricing_promo_manager,4215507151,Localized Pricing Promo Manager
 2023-07_dm_call_bitrate,4248455588,DM/GDM Call Bitrate Experiment
+2021-09_favorites_server,1134868932,Enable fancy super-alpha favorites server.
