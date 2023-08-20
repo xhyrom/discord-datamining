@@ -1,4 +1,5 @@
 {
+  "DISCORD": "\"Discord\"",
   "DISCORD_DESC_SHORT": "\"Imagine a place\"",
   "DISCORD_DESC_LONG": "\"Join over 100 million people who use Discord to talk and hang out with communities and friends.\"",
   "NOTIFICATION_BODY_ATTACHMENT": "\"Uploaded !!{filename}!!\"",
@@ -15839,6 +15840,8 @@
   "BROADCAST_FULL": "\"Party Full\"",
   "COLLECTIBLES_COLLECTING_FINISHED": "\"Collecting finished\"",
   "COLLECTIBLES_COLLECTED_DECORATIONS": "\"You've collected these decorations!\"",
+  "COLLECTIBLES_SHOP_HERO_BANNER_TITLE": "\"Collect what you want\"",
+  "COLLECTIBLES_SHOP_HERO_BANNER_SUBTITLE": "\"Collect and use 'em whenever you want. Shop the latest avatar decorations, discounted with Nitro. Hurry before they're gone!\"",
   "XBOX": "\"Xbox\"",
   "PLAYSTATION": "\"PlayStation\"",
   "GO_LIVE_MODAL_CAPTURE": "\"Capture Device\"",
