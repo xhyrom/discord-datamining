@@ -159276,6 +159276,98 @@ html .invoiceCancelRow-3s2UuC {
     animation: placeholderPulse-3Waq2d 3s ease-in-out infinite
 }
 
+.shopLogo-2NbABu {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    gap: 8px;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center
+}
+
+.shopLogoText-2dikaw {
+    margin-bottom: 2px
+}
+
+.heroBanner-15dNeS {
+    width: 100%;
+    height: 340px;
+    min-width: 640px;
+    background-image: url(/assets/250c1a91e980a1f9eae61934c3ee6e4c.png), -webkit-gradient(linear, left top, left bottom, from(var(--premium-tier-0-header-gradient-1)), color-stop(25%, var(--premium-tier-0-header-gradient-2)), color-stop(50%, var(--premium-tier-0-header-gradient-3)), color-stop(75%, var(--premium-tier-0-header-gradient-4)), to(var(--premium-tier-0-header-gradient-5)));
+    background-image: url(/assets/250c1a91e980a1f9eae61934c3ee6e4c.png), linear-gradient(180deg, var(--premium-tier-0-header-gradient-1), var(--premium-tier-0-header-gradient-2) 25%, var(--premium-tier-0-header-gradient-3) 50%, var(--premium-tier-0-header-gradient-4) 75%, var(--premium-tier-0-header-gradient-5));
+    background-size: contain, cover;
+    background-position: 100% 100%, 50%;
+    background-repeat: no-repeat, no-repeat;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-top: 40px;
+    border-radius: 32px;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    padding: 60px 0;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    position: relative
+}
+
+.heroDescription-2QJJDj {
+    max-width: 45%
+}
+
+.heroDescription-2QJJDj>* {
+    margin-left: 64px
+}
+
+.heroSubtitle-xmNmnh {
+    margin-top: 16px
+}
+
+.heroConfetti-3lgglU {
+    position: absolute
+}
+
+.confetti1-RQDn4f {
+    width: 105px;
+    top: -32px;
+    left: 60%
+}
+
+.confetti2-Q-FhBM {
+    width: 98px;
+    top: 25%;
+    left: 55%
+}
+
+.confetti3-g4Eirc {
+    width: 83px;
+    bottom: 0;
+    left: 58%
+}
+
+.confetti4-1RRZiL {
+    width: 105px;
+    top: -32px;
+    left: 25%
+}
+
+.confettiStarLarge-2XeK_X {
+    width: 89px;
+    bottom: 32px;
+    left: -45px
+}
+
+.confettiStarSmall-1GbuMh {
+    width: 39px;
+    bottom: 24px;
+    left: 44px
+}
+
 .page-LilLhg {
     height: 100%;
     background-color: var(--background-primary);
@@ -159323,11 +159415,6 @@ html .invoiceCancelRow-3s2UuC {
     display: grid;
     grid-gap: 16px;
     grid-template-columns: repeat(auto-fill, minmax(248px, 1fr))
-}
-
-.heroBanner-1Diga9 {
-    width: 100%;
-    background-color: #00f
 }
 
 .spacing-1JirW3 {}
@@ -165720,4 +165807,4 @@ html .invoiceCancelRow-dVOR64 {
     height: 200px
 }
 
-/*# sourceMappingURL=40532.5bec7971f116b1bad132.css.map*/
+/*# sourceMappingURL=40532.90e51c5f63c4d2a19a61.css.map*/
