@@ -20427,7 +20427,8 @@ html.disable-forced-colors * {
 }
 
 .inner-2xMRmK {
-    overflow: hidden
+    overflow: hidden;
+    border-radius: 8px
 }
 
 .effectBackground-8Yf7Tt {
@@ -165649,4 +165650,4 @@ html .invoiceCancelRow-dVOR64 {
     height: 200px
 }
 
-/*# sourceMappingURL=40532.0ba4257afb3bce4cfb33.css.map*/
+/*# sourceMappingURL=40532.1ba392d95be5c8821c04.css.map*/
