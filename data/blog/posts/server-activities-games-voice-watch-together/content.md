@@ -62,7 +62,7 @@
                 <li><strong>Color Together</strong>: The dress was always black and gold, now color it so.<em>‍</em><strong>‍</strong></li>
             </ul>
             <p><strong><em>Note: This list of Activities was last updated on August 10, 2023.</em></strong></p>
-            <p>For the full low-down on how Activities work, repeat after me: “The Help Center article can be <a href="https://support.discord.com/hc/en-us/articles/4422142836759-Activities-Experiment">found here</a>.” (Good job!)<em>‍</em>‍</p>
+            <p>For the full low-down on how Activities work, repeat after me: "The Help Center article can be <a href="https://support.discord.com/hc/en-us/articles/4422142836759-Activities-Experiment">found here</a>." (Good job!)<em>‍</em>‍</p>
         </div>
     </div>
     <div id="heading-4" class="rich-wrapper">
