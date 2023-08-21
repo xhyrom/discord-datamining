@@ -1470,6 +1470,13 @@
       "POST"
     ]
   },
+  "CONNECTION_SYNC_CONTACTS": {
+    "url": "/users/@me/connections/contacts/@me/external-friend-list-entries",
+    "allowed_methods": [
+      "OPTIONS",
+      "PUT"
+    ]
+  },
   "CONNECTION_SYNC_CONTACTS_SETTINGS": {
     "url": "/users/@me/connections/contacts/@me/external-friend-list-entries/settings",
     "allowed_methods": [
