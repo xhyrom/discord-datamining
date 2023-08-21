@@ -10,8 +10,9 @@
             </div>
         </div>
         <div class="rich-safeties-discription w-richtext">
-            <h6><br>This blog post is available in multiple languages. For non-English, <a href="https://support.discord.com/hc/en-us/articles/4492074519703">head to our Help Center</a> and select your preferred language at the top-right.<br>‍</h6>
-            <p><em>‍Update: On March 10th, 2023, the "How we approach privacy" section was updated to further clarify that Discord does not store or record voice or video content, and on March 13, 2023, further clarification about our updated </em><a href="https://discord.com/privacy"><em>Privacy Policy</em></a><em> was added.</em></p>
+            <h6>This blog post is available in multiple languages. For non-English, <a href="https://support.discord.com/hc/en-us/articles/4492074519703">head to our Help Center</a> and select your preferred language at the top-right.<em>‍</em></h6>
+            <p><em>Update: On March 10th, 2023, the "How we approach privacy" section was updated to further clarify that Discord does not store or record voice or video content, and on March 13, 2023, further clarification about our updated </em><a href="https://discord.com/privacy"><em>Privacy Policy</em></a><em> was added.</em></p>
+            <p><em>‍</em>‍</p>
             <p>Hi folks! It’s Important Announcement Day<sup>TM</sup> again: we’re updating our <a href="https://discord.com/terms">Terms of Service</a>, <a href="https://support.discord.com/hc/en-us/articles/4410339366295">Paid Services Terms</a>, <a href="https://discord.com/privacy">Privacy Policy</a>, and <a href="https://discord.com/guidelines">Community Guidelines</a>! These changes go into effect on <strong>March 27, 2023</strong>.</p>
             <p>We regularly review our policies to ensure we're surfacing important information to our users in a clear and easy-to-understand way. As we continually work to improve our services and protect your privacy, we periodically update these policies to reflect those priorities and commitments to each other. </p>
             <p>Here are some highlights of what we’ve updated:</p>
@@ -25,9 +26,9 @@
             <ul role="list">
                 <li><a href="https://support.discord.com/hc/articles/4469963531415">Terms of Service Updates</a></li>
                 <li><a href="https://support.discord.com/hc/articles/4469943799319">Privacy Policy Updates</a></li>
-                <li><a href="https://support.discord.com/hc/articles/4469957714327">Community Guidelines Updates</a></li>
+                <li><a href="https://support.discord.com/hc/articles/4469957714327">Community Guidelines Updates</a>‍</li>
             </ul>
-            <p>‍<a href="https://support.discord.com/hc/articles/4469957714327">‍</a>Thanks for reading!</p>
+            <p>‍<a href="https://support.discord.com/hc/articles/4469957714327">‍</a>Thanks for reading!<strong><em>‍</em></strong></p>
             <p><strong><em>Editor's Note</em></strong><em>: We've released a supplemental blog post providing additional info for our updated Community Guidelines. We encourage you to take a look </em><a href="https://discord.com/blog/clarifying-our-dangerous-and-regulated-goods-policy"><em>here</em></a><em>.</em></p>
         </div>
     </div>
