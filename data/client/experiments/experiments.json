@@ -8149,6 +8149,27 @@
   {
     "data": {
       "kind": "user",
+      "id": "2023-08_nitro_subs_variant",
+      "label": "Nitro Subs Variant",
+      "description": [
+        "Not Eligible",
+        "Control Bucket",
+        "Treatment 1: Enabled"
+      ],
+      "hash": 3370747435,
+      "buckets": [
+        -1,
+        0,
+        1
+      ],
+      "config_keys": [
+        "enabled"
+      ]
+    }
+  },
+  {
+    "data": {
+      "kind": "user",
       "id": "2023-08_reranked_marketing_tiles",
       "label": "Reranked Marketing Tiles",
       "description": [
