@@ -141598,12 +141598,16 @@ html .invoiceCancelRow-3s2UuC {
 }
 
 .clipGrid-2UlkbQ {
-    padding: 0 24px 8px;
+    padding: 0 24px 8px
+}
+
+.clipsRow-1kUnKl {
     display: grid;
     grid-gap: 12px;
     grid-template-columns: repeat(3, 308px);
     grid-auto-rows: minmax(-webkit-min-content, -webkit-max-content);
-    grid-auto-rows: minmax(min-content, max-content)
+    grid-auto-rows: minmax(min-content, max-content);
+    padding-bottom: 8px
 }
 
 .closeIcon-2RkG0f {
@@ -165768,4 +165772,4 @@ html .invoiceCancelRow-dVOR64 {
     height: 200px
 }
 
-/*# sourceMappingURL=40532.1598198f932316de4b64.css.map*/
+/*# sourceMappingURL=40532.573e61263339c71f0a4b.css.map*/
