@@ -15250,6 +15250,8 @@
   "MEDIA_POST_EMBED_AUTHOR_AVATAR_ALT": "\"Media post author avatar\"",
   "MEDIA_POST_EMBED_CHANNEL_ICON_ALT": "\"Channel icon with sparkle\"",
   "MEDIA_POST_EMBED_BLURRED_THUMBNAIL_TEXT": "\"SUBSCRIBE TO VIEW\"",
+  "MEDIA_POST_MULTIPLE_THUMBNAIL_NOTICE_TITLE": "\"Tap to set thumbnail\"",
+  "MEDIA_POST_MULTIPLE_THUMBNAIL_NOTICE_DESCRIPTION": "\"Tap on a media attachment and set it as the post thumbnail.\"",
   "DOMAIN_VERIFICATION_HEADER": "\"Connect your Domain\"",
   "DOMAIN_VERIFICATION_DESCRIPTION": "\"Verify ownership of your domain and show it off on your profile!\"",
   "DOMAIN_VERIFICATION_LABEL": "\"Domain\"",
