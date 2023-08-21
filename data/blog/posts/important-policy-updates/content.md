@@ -10,7 +10,8 @@
             </div>
         </div>
         <div class="rich-safeties-discription w-richtext">
-            <h6>This blog post is available in multiple languages. For non-English, <a href="https://support.discord.com/hc/en-us/articles/4492074519703">head to our Help Center</a> and select your preferred language at the top-right.<em>‍</em></h6>
+            <h5>This blog post is available in multiple languages. For non-English, <a href="https://support.discord.com/hc/en-us/articles/4492074519703">head to our Help Center</a> and select your preferred language at the top-right.</h5>
+            <h5>‍<em>‍</em></h5>
             <p><em>Update: On March 10th, 2023, the "How we approach privacy" section was updated to further clarify that Discord does not store or record voice or video content, and on March 13, 2023, further clarification about our updated </em><a href="https://discord.com/privacy"><em>Privacy Policy</em></a><em> was added.</em></p>
             <p><em>‍</em>‍</p>
             <p>Hi folks! It’s Important Announcement Day<sup>TM</sup> again: we’re updating our <a href="https://discord.com/terms">Terms of Service</a>, <a href="https://support.discord.com/hc/en-us/articles/4410339366295">Paid Services Terms</a>, <a href="https://discord.com/privacy">Privacy Policy</a>, and <a href="https://discord.com/guidelines">Community Guidelines</a>! These changes go into effect on <strong>March 27, 2023</strong>.</p>

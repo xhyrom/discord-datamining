@@ -10,7 +10,7 @@
                 <div><iframe allowfullscreen="true" frameborder="0" scrolling="no" src="https://www.youtube.com/embed/POMIDMK6WfM" title="Activities"></iframe></div>
             </figure>
             <p>Anyone in a Voice chat on desktop, web, or mobile can jump in on Activities; just hit the tantalizing new Rocket Ship button and you’re a part of the action.&nbsp;</p>
-            <p><strong>Activities are open to everyone! </strong>Anyone in a Voice call on desktop, web, or mobile can jump in on Activities; just hit the tantalizing new Rocket Ship button and you’re a part of the action.<br>‍</p>
+            <p><strong>Activities are open to everyone! </strong>Anyone in a Voice call on desktop, web, or mobile can jump in on Activities; just hit the tantalizing new Rocket Ship button and you’re a part of the action.</p>
         </div>
     </div>
     <div class="btn-wrapper w-condition-invisible"><a href="#" class="btn-blog w-dyn-bind-empty w-button"></a></div>
@@ -34,13 +34,13 @@
             </figure>
             <p>So there you have it: if you just want to chill and play games with your server, you don’t have to make a spreadsheet of game libraries and schedule things out six months in advance. And if you want to watch a video with everybody, you don’t have to all hit “play” at the same time like you’re doing the world’s lowest-stakes heist.&nbsp;</p>
             <p>Now, if you want to kill some time relaxing with your server buds, you can just hop into Voice and instantly enjoy an Activity with anyone and @everyone who’s free.</p>
-            <p>So let’s talk options...<br>‍</p>
+            <p>So let’s talk options...</p>
         </div>
     </div>
     <div id="heading-3" class="rich-wrapper">
         <div class="blog-post-content w-richtext">
             <h2><strong>What Games and Activities are Available?</strong></h2>
-            <figure style="max-width:3189pxpx" class="w-richtext-align-fullwidth w-richtext-figure-type-image">
+            <figure class="w-richtext-figure-type-image w-richtext-align-fullwidth" style="max-width:3189pxpx">
                 <div><img src="https://assets-global.website-files.com/5f9072399b2640f14d6a2bf4/64d5797b7a8bb24d608e2b0a_8.10.2023%20Update.png" loading="lazy" alt="Key artwork for all currently available Activities on Discord. "></div>
             </figure>
             <p>Activities can be launched in either a server’s Voice channels or in a DM Voice call. Check out the entirety of currently-available Activities. <br></p>
@@ -59,20 +59,20 @@
                 <li><strong>Bobble League:</strong> Score goals as the coach of the world’s bobble-est team ever.</li>
                 <li><strong>Know What I Meme</strong>: The perfect place to repost the same capybara GIF for the hundredth time.</li>
                 <li><strong>Jamspace</strong> <strong>Whiteboard</strong> - A collaborative digital whiteboard anyone in the call can contribute to. Map out your next MMO raid mid-call or just doodle together!</li>
-                <li><strong>Color Together</strong>: The dress was always black and gold, now color it so.&nbsp;<em>‍</em><strong>‍</strong></li>
+                <li><strong>Color Together</strong>: The dress was always black and gold, now color it so.<em>‍</em><strong>‍</strong></li>
             </ul>
-            <p><strong><em>Note: This list of Activities was last updated on August 10, 2023.&nbsp;</em></strong></p>
-            <p>For the full low-down on how Activities work, repeat after me: “The Help Center article can be <a href="https://support.discord.com/hc/en-us/articles/4422142836759-Activities-Experiment">found here</a>.” (Good job!)&nbsp;<em><br>‍</em>‍</p>
+            <p><strong><em>Note: This list of Activities was last updated on August 10, 2023.</em></strong></p>
+            <p>For the full low-down on how Activities work, repeat after me: “The Help Center article can be <a href="https://support.discord.com/hc/en-us/articles/4422142836759-Activities-Experiment">found here</a>.” (Good job!)<em>‍</em>‍</p>
         </div>
     </div>
     <div id="heading-4" class="rich-wrapper">
         <div class="blog-post-content w-richtext">
-            <h2><br>Activities Make Their Way to Mobile</h2>
+            <h2>Activities Make Their Way to Mobile</h2>
             <p>With Mobile support on Discord Activities, you can enjoy the great outdoors while talking and playing with your friends on Discord, no matter where they are. Play Chess in the Park in a real park, Blaze some 8s on your tablet while riding a horse in a fitting Western locale, or be that person playing Bobble League at the concert you paid way too much to get tickets for.&nbsp;</p>
             <figure class="w-richtext-figure-type-image w-richtext-align-fullwidth" style="max-width:1200pxpx">
                 <div><img src="https://assets-global.website-files.com/5f9072399b2640f14d6a2bf4/641231302c9ef2d3a6e12149_F62dLeJOUPzs2kMTj3gGIElL_R_4XPBWyfOSYnYj7mumf-9mkBlozzA1j4W4p9IlIth9vO5_DXPswWgkuRFwyqyskBaeSsKVGxOBt8xfjnKDukcXACDCu2Y2nWyukmkKyKHfz7avWoo8mUxQZIRRVKs.png" alt=""></div>
             </figure>
-            <p>You can even play Gartic Phone on your actual phone without having to juggle between your phone’s web browser and your Discord call. <strong>In fact, you can enjoy every Activity on mobile</strong>. Read more about mobile support <a href="https://support.discord.com/hc/en-us/articles/4422142836759-Activities-Experiment">here</a>.&nbsp;&nbsp;<br>‍</p>
+            <p>You can even play Gartic Phone on your actual phone without having to juggle between your phone’s web browser and your Discord call. <strong>In fact, you can enjoy every Activity on mobile</strong>. Read more about mobile support <a href="https://support.discord.com/hc/en-us/articles/4422142836759-Activities-Experiment">here</a>.</p>
         </div>
     </div>
     <div id="heading-5" class="rich-wrapper">
