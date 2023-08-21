@@ -1041,6 +1041,14 @@
       "PUT"
     ]
   },
+  "PINS": {
+    "url": "/channels/:param/pins",
+    "allowed_methods": [
+      "GET",
+      "HEAD",
+      "OPTIONS"
+    ]
+  },
   "PIN": {
     "url": "/channels/:param/pins/:param",
     "allowed_methods": [
