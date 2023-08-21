@@ -11,7 +11,8 @@
         </div>
         <div class="rich-safeties-discription w-richtext">
             <h5><strong><em>Warning - The below includes references to violent and potentially disturbing content.</em></strong></h5>
-            <p><strong><em>‍</em></strong>‍<em>‍</em>On Saturday, May 14, 2022, a white gunman targeted a predominantly Black community in Buffalo, New York and carried out a mass shooting in a supermarket. We were devastated to learn the suspect had written of his intentions in his private Discord server. </p>
+            <p>‍</p>
+            <p>On Saturday, May 14, 2022, a white gunman targeted a predominantly Black community in Buffalo, New York and carried out a mass shooting in a supermarket. We were devastated to learn the suspect had written of his intentions in his private Discord server.</p>
             <p>We extend our deepest sympathy to the victims and families of the shooting, and the communities to which they belong. The massacre was a hate crime and a stark display of the grave dangers of white supremacy. We denounce white supremacy and actions that stem from it in the strongest possible terms.</p>
             <p>Immediately upon learning of the attack, we began cooperating with law enforcement regarding the suspect’s activity on Discord. While there are limitations to what we can share due to an ongoing investigation, below is what we can confirm at this time:</p>
             <ul role="list">
