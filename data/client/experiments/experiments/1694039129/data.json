@@ -1,0 +1,27 @@
+{
+  "data": {
+    "kind": "user",
+    "id": "2023-08_dcf_ml_model",
+    "label": "DCF ML Perks Relevance Model",
+    "description": [
+      "Not Eligible",
+      "Treatment 0: threshold 0",
+      "Treatment 1: threshold 1",
+      "Treatment 2: threshold 2",
+      "Treatment 3: threshold 3",
+      "Treatment 4: threshold 4"
+    ],
+    "hash": 1694039129,
+    "buckets": [
+      -1,
+      0,
+      1,
+      2,
+      3,
+      4
+    ],
+    "config_keys": [
+      "enabled"
+    ]
+  }
+}
