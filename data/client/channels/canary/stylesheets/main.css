@@ -147485,11 +147485,15 @@ html .invoiceCancelRow-3s2UuC {
 
 .theme-dark .mediaIcon-3jlt7t,
 .theme-dark .moreImagesPill-2ka20k {
-    background-color: hsl(var(--primary-700-hsl)/.8)
+    background-color: hsl(var(--primary-700-hsl)/.9);
+    -webkit-box-shadow: var(--elevation-low);
+    box-shadow: var(--elevation-low)
 }
 
 .theme-dark .tagPill-1kSbgP {
-    background-color: hsl(var(--primary-660-hsl)/.8)
+    background-color: hsl(var(--primary-660-hsl)/.9);
+    -webkit-box-shadow: var(--elevation-low);
+    box-shadow: var(--elevation-low)
 }
 
 .theme-dark .textContentFooter-2JnNv8 {
@@ -147507,11 +147511,15 @@ html .invoiceCancelRow-3s2UuC {
 
 .theme-light .mediaIcon-3jlt7t,
 .theme-light .moreImagesPill-2ka20k {
-    background-color: hsl(var(--primary-230-hsl)/.8)
+    background-color: hsl(var(--primary-230-hsl)/.9);
+    -webkit-box-shadow: var(--elevation-low);
+    box-shadow: var(--elevation-low)
 }
 
 .theme-light .tagPill-1kSbgP {
-    background-color: hsl(var(--primary-160-hsl)/.8)
+    background-color: hsl(var(--primary-160-hsl)/.9);
+    -webkit-box-shadow: var(--elevation-low);
+    box-shadow: var(--elevation-low)
 }
 
 .theme-light .textContentFooter-2JnNv8 {
@@ -165889,4 +165897,4 @@ html .invoiceCancelRow-dVOR64 {
     height: 200px
 }
 
-/*# sourceMappingURL=40532.9f27eaa9ceed19e271b1.css.map*/
+/*# sourceMappingURL=40532.209bce1537a7a362a684.css.map*/
