@@ -5294,6 +5294,7 @@
   "SUMMARIES_CHANNEL_NOTICE_MANAGE_SETTINGS": "\"Manage Settings\"",
   "SUMMARIES_CHANNEL_NOTICE_LEARN_MORE": "\"Learn More\"",
   "SUMMARIES_CHANNEL_NOTICE_MESSAGE": "\"A new feature is coming soon to your server. Help members stay updated on conversations in your server with AI-generated summaries.\"",
+  "SUMMARIES_MOBILE_SOON": "\"Mobile coming soon.\"",
   "INVITE_URL": "\"Invite URL\"",
   "VANITY_URL_USES": "\"{uses, plural, =0 {0 uses} one {1 use} other {{uses} uses}}\"",
   "REMOVE_VANITY_URL": "\"Remove Custom Invite Link\"",
