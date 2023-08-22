@@ -876,7 +876,11 @@
   },
   "COLLECTIBLES_CATEGORES": {
     "url": "/collectibles/categories",
-    "allowed_methods": null
+    "allowed_methods": [
+      "GET",
+      "HEAD",
+      "OPTIONS"
+    ]
   },
   "USER_COLLECTIBLES": {
     "url": "/users/@me/collectibles",
