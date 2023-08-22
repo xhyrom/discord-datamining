@@ -23,25 +23,13 @@
     <li style="font-weight: 400;" aria-level="1"><span style="font-weight: 400;">What device the bug occurs on</span></li>
 </ul>
 <p>There are some bug reports that are not currently supported.  We ask that you check out this <a href="https://support.discord.com/hc/en-us/articles/1500005933882-Unsupported-Reports" target="_blank" rel="noopener noreferrer">Unsupported Reports</a> article before submitting a bug report, to familiarize yourself with what topics are unsupported.</p>
-<p>Additionally, if you're experiencing a bug related to <span style="font-weight: 400;">Accessibility aka (A11Y) these issues </span><span style="font-weight: 400;">can also be submitted via our <a href="https://dis.gd/bugreport" target="_blank" rel="noopener">Bug Reporting form.</a></span></p>
+<p>Additionally, if you're experiencing a bug related to <span style="font-weight: 400;">Accessibility aka (A11Y) these issues </span><span style="font-weight: 400;">can also be submitted via our <a href="https://dis.gd/bugreport" target="_blank" rel="noopener noreferrer">Bug Reporting form.</a></span></p>
 <h2 id="h_01F2HKTD57FVC60P8B8JW6FTKX">What is Discord Testers?</h2>
-<p id="docs-internal-guid-2b15ba4e-7fff-02b1-a770-a5a58ad5e411"><span style="color: #2e3338;">Discord Testers (also known as DTesters) is an official, invite only Discord server for adept volunteer bug testers. Our goal is to identify, reproduce, and provide high-quality bug reports. While there is no minimum activity expectation, inactive members may be removed. We intentionally keep our population small, but we periodically add new members.</span></p>
-<p><span style="color: #2e3338;">We're thrilled to announce that we're getting ready to welcome a few new members to the Discord Testers server. If you're interested, keep reading!</span></p>
-<p><span style="color: #2e3338;">Currently we are considering individuals who:</span></p>
-<ul>
-    <li><span style="color: #2e3338;">Are interested in submitting quality bug reports</span></li>
-    <li><span style="color: #2e3338;">Are 18 years or older</span></li>
-    <li><span style="color: #2e3338;">Have strong written English communication skills</span></li>
-    <li><span style="color: #2e3338;">Have a collaborative spirit</span></li>
-    <li><span style="color: #2e3338;">Are willing and able to sign a legally binding non-disclosure agreement</span></li>
-    <li><span style="color: #2e3338;">Demonstrate strong proficiency in the Consideration Quiz</span></li>
-</ul>
-<p><span style="color: #2e3338;">Interested individuals are encouraged to fill out the Consideration Quiz here:</span><a href="https://forms.gle/ZPVwUHSBK2NKwKCW9" target="_blank" rel="noopener"> https://forms.gle/ZPVwUHSBK2NKwKCW9</a></p>
-<p><span style="color: #2e3338;">This quiz will be available until August 22nd, 2023 at 9:00am, Pacific Time. </span><strong><span style="color: #2e3338;">If an overwhelming number of completed quizzes are received, access to the quiz may be ended early.</span></strong></p>
-<p><span style="color: #2e3338;">Only a small percentage of applicants will have the opportunity to join. New participants will be selected based on their performance on the quiz, as well as the needs of the server. We will carefully consider each applicant, so the selection process may take some time. We appreciate your patience!</span></p>
+<p>Discord Testers (also known as DTesters) is an official, invite only Discord server for adept volunteer bug testers. Our goal is to identify, reproduce, and provide high-quality bug reports. While there is no minimum activity expectation, inactive members may be removed. We're sorry to say that the opportunity to be considered for the Discord Testers server is currently unavailable. Periodically, new testers will be added and more information will be provided here as these opportunities arise.</p>
+<p>For those who filled out the most recent Discord Testers Consideration Quiz, we are in the process of reviewing the completed quizzes. When the review process is complete, we will update this page with more information. This process will take time, and we appreciate your patience.</p>
 <h2 id="h_01GB8VR2A607B1TXP5CX4MF7CF"><span style="font-weight: 400;">Discord Tester FAQ</span></h2>
 <p><strong>How can I report bugs if I am not a part of the Discord Testers server?</strong></p>
-<p><span style="font-weight: 400;">Bug reports should be submitted with a ticket to the </span><a href="https://dis.gd/bugreport" target="_blank" rel="noopener">Bug Reporting Form</a><span style="font-weight: 400;">. Be sure to fill out each category, as each is important.</span></p>
+<p><span style="font-weight: 400;">Bug reports should be submitted with a ticket to the </span><a href="https://dis.gd/bugreport" target="_blank" rel="noopener noreferrer">Bug Reporting Form</a><span style="font-weight: 400;">. Be sure to fill out each category, as each is important.</span></p>
 <p><strong>Are members of the Discord Testers server required to have previous experience?</strong></p>
 <p><span style="font-weight: 400;">Members of the Discord Testers server are expected to have submitted quality bug reports prior to joining the server.</span></p>
 <p><strong>Are DTesters required to sign a non-disclosure agreement (NDA)?  Why?</strong></p>
