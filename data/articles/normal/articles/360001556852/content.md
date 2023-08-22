@@ -1,11 +1,14 @@
-<p>You finally got that invite to the super cool Discord server you've been wanting to join, yes!</p>
-<p>So... why isn't it working? There are a few reasons your server link may be "Invalid" or not working!</p>
-<h1 id="h_01FS8FGCNPR5D3S4CRC46VX782">What to check if your invite is "Invalid"</h1>
-<p><strong>Private or Public Channel: </strong>The invite link you were given might go to a private channel in the server. Remember: generated invites aren't to a server in general, but to <span class="wysiwyg-underline">a specific channel in the server</span>. So it is crucial for the invite to go to a channel that<strong> is not a private channel </strong>and <strong>can be accessed by the @everyone role.</strong></p>
-<p><strong>Expiration:</strong> Your invite link may have expired. In this case, please contact the server owner and ask them for a new invite.</p>
-<p><strong>Invalid Code:</strong> You may not have a legitimate invite code. Please check your code and try again. Remember that invite codes -are- case sensitive!</p>
-<p><strong>Ban:</strong> You may have been banned from joining this server. Bans are based on IP address, so you would need to contact the server admins and ask them to revoke all bans in their Server Settings. Just because they remove your name, does not mean the invite will work.</p>
-<p><strong>100 Server Limit:</strong> A user cannot be a member of more than 100 servers. If you are in too many servers, you'll need to leave one before you can join.</p>
-<h3>Note: Server limits are raised from 100 to 200 if you have <a href="https://support.discord.com/hc/en-us/articles/115000435108" target="_blank" rel="noopener noreferrer">Discord Nitro</a>! </h3>
-<h2>Still having issues?</h2>
-<p>If you are still unable to join a server, we may need to look into the server or your account. Please reach out to Support team so that we can investigate further: <a class="ql-link" href="https://dis.gd/contact" target="_blank" rel="nofollow noopener noreferrer ugc" data-slab-linktype="text">https://dis.gd/contact</a></p>
+<p>Let me innnnnnn! You finally got an invite to a server, but you’re getting hit with an error message and can’t join. What does it mean? Why can’t you join? Let’s go over the possible error messages that you might see, what they mean, and what you can do if you’re seeing them.</p>
+<h1><strong><span style="color: #2e3338;" data-darkreader-inline-color="">Invalid Error Messages</span></strong></h1>
+<p class="wysiwyg-text-align-center"><img src="https://support.discord.com/hc/article_attachments/16951605041047" alt="server_invite_unknown.png"></p>
+<p><strong>Unknown/Expired Invite:</strong> Your invite link may have expired. In this case, please ask for a new invite link.</p>
+<p class="wysiwyg-text-align-center"><img src="https://support.discord.com/hc/article_attachments/16951605045143" alt="server_invite_invalid.png"></p>
+<p><strong>Invalid:</strong> You may not have a legitimate invite code. Please check the code again or ask for a new invite link. Remember too, codes are case sensitive.</p>
+<p class="wysiwyg-text-align-center"><img src="https://support.discord.com/hc/article_attachments/16951625033751" alt="server_invite_server_cap.png"></p>
+<p><strong>100 Server Limit</strong>: A user cannot be a member of more than 100 servers. If you are in too many servers, you'll need to leave one before you can join.</p>
+<h3><span style="color: #434343;" data-darkreader-inline-color="">If you have Discord Nitro you can join up to 200 servers! If you join over 100 servers while your Nitro is active, and then your Nitro expires, you’ll have to leave enough servers until you’re below 100 to join more.</span></h3>
+<p class="wysiwyg-text-align-center"><img src="https://support.discord.com/hc/article_attachments/16951605058199" alt="server_invite_server_ban.png"></p>
+<p><strong>Banned:</strong> You may have been banned from joining this server. Server bans are based on IP addresses, so you would need to contact the server admins and ask them to revoke all bans in their Server Settings. </p>
+<h3>
+    <span style="color: #434343;" data-darkreader-inline-color="">If you are still unable to join a server, please reach out to our Support team for further assistance: </span><a href="https://dis.gd/contact"><span class="wysiwyg-underline" style="color: #1155cc;" data-darkreader-inline-color="">https://dis.gd/contact</span></a>
+</h3>
