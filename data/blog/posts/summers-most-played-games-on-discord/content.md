@@ -26,7 +26,7 @@
             <h2><strong><br>Roblox</strong> </h2>
             <h6>Available on PC via official website, iOS, Android, and Xbox. Supports cross-play. Rated T.&nbsp;</h6>
             <p>What’s <a href="https://www.roblox.com/">Roblox</a>? Honestly, what ISN’T Roblox?! It’s not <em>just</em> one particular game: it’s grown into its own platform where players can create anything they want, any genre, any mood or style, and share their experience with the world.&nbsp;</p>
-            <p>Everything from life sims to shooters, to real-life recreations and games that require their own dedication. Some players play a variety of games, while others may spend hundreds of hours on just ONE game in Roblox. There’s a crazy amount of community-run Discord servers out there centered around specific Roblox experiences, so start off with the official one below and go from there!&nbsp;</p>
+            <p>Everything from life sims to shooters, to real-life recreations and games that require their own dedication. Some players play a variety of games, while others may spend hundreds of hours on just ONE game in Roblox. There’s a crazy amount of community-run Discord servers out there centered around specific Roblox experiences, so start off with the largest one below and go from there!&nbsp;</p>
             <div class="w-embed">
                 <div class="btn-wrapper"><a href="https://discord.gg/roblox" class="btn-blog w-button" target="_blank">Join the Roblox server</a></div>
             </div>
