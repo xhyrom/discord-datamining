@@ -6,13 +6,19 @@
     "description": [
       "Not Eligible",
       "Control Bucket",
-      "Treatment 1: Measure PSNR"
+      "Treatment 1: Measure PSNR [DEPRECATED DO NOT USE]",
+      "Treatment 2: Measure PSNR Only",
+      "Treatment 3: Measure VMAF Only",
+      "Treatment 4: Measure PSNR and VMAF"
     ],
     "hash": 2496837643,
     "buckets": [
       -1,
       0,
-      1
+      1,
+      2,
+      3,
+      4
     ],
     "config_keys": [
       "enabled"
