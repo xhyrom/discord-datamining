@@ -1522,89 +1522,6 @@
   {
     "data": {
       "kind": "user",
-      "id": "2023-08_video_quality_measurement_v1",
-      "label": "Video Quality Measurement",
-      "description": [
-        "Not Eligible",
-        "Control Bucket",
-        "Treatment 1: Measure PSNR [DEPRECATED DO NOT USE]",
-        "Treatment 2: Measure PSNR Only",
-        "Treatment 3: Measure VMAF Only",
-        "Treatment 4: Measure PSNR and VMAF"
-      ],
-      "hash": 2496837643,
-      "buckets": [
-        -1,
-        0,
-        1,
-        2,
-        3,
-        4
-      ],
-      "config_keys": [
-        "enabled"
-      ]
-    }
-  },
-  {
-    "data": {
-      "kind": "user",
-      "id": "2021-09_ios_screenshare_resolution_profiles",
-      "label": "iOS: Screenshare resolution profiles",
-      "description": [
-        "Not Eligible",
-        "Control Bucket",
-        "Treatment 1: Permanent old resolution",
-        "Treatment 2: Old resolution for 10s",
-        "Treatment 3: Wait 3s after 1st frame capture",
-        "Treatment 4: Wait 3s to capture 1st frame"
-      ],
-      "hash": 3656427814,
-      "buckets": [
-        -1,
-        0,
-        1,
-        2,
-        3,
-        4
-      ],
-      "config_keys": [
-        "enabled"
-      ]
-    }
-  },
-  {
-    "data": {
-      "kind": "user",
-      "id": "2023-08_periodic_voice_stats",
-      "label": "Periodic Voice Stats",
-      "description": [
-        "Not Eligible",
-        "Control Bucket",
-        "Treatment 1: Enable sending periodic voice stats for 100% of calls",
-        "Treatment 2: Enable sending periodic voice stats for 50% of calls",
-        "Treatment 3: Enable sending periodic voice stats for 20% of calls",
-        "Treatment 4: Enable sending periodic voice stats for 10% of calls",
-        "Treatment 5: Enable sending periodic voice stats for 5% of calls"
-      ],
-      "hash": 1794801891,
-      "buckets": [
-        -1,
-        0,
-        1,
-        2,
-        3,
-        4,
-        5
-      ],
-      "config_keys": [
-        "enabled"
-      ]
-    }
-  },
-  {
-    "data": {
-      "kind": "user",
       "id": "2022-1_read_state_staff",
       "label": "Read State Staff",
       "description": [
@@ -2332,6 +2249,89 @@
         1,
         2,
         3
+      ],
+      "config_keys": [
+        "enabled"
+      ]
+    }
+  },
+  {
+    "data": {
+      "kind": "user",
+      "id": "2023-08_video_quality_measurement_v1",
+      "label": "Video Quality Measurement",
+      "description": [
+        "Not Eligible",
+        "Control Bucket",
+        "Treatment 1: Measure PSNR [DEPRECATED DO NOT USE]",
+        "Treatment 2: Measure PSNR Only",
+        "Treatment 3: Measure VMAF Only",
+        "Treatment 4: Measure PSNR and VMAF"
+      ],
+      "hash": 2496837643,
+      "buckets": [
+        -1,
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "config_keys": [
+        "enabled"
+      ]
+    }
+  },
+  {
+    "data": {
+      "kind": "user",
+      "id": "2021-09_ios_screenshare_resolution_profiles",
+      "label": "iOS: Screenshare resolution profiles",
+      "description": [
+        "Not Eligible",
+        "Control Bucket",
+        "Treatment 1: Permanent old resolution",
+        "Treatment 2: Old resolution for 10s",
+        "Treatment 3: Wait 3s after 1st frame capture",
+        "Treatment 4: Wait 3s to capture 1st frame"
+      ],
+      "hash": 3656427814,
+      "buckets": [
+        -1,
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "config_keys": [
+        "enabled"
+      ]
+    }
+  },
+  {
+    "data": {
+      "kind": "user",
+      "id": "2023-08_periodic_voice_stats",
+      "label": "Periodic Voice Stats",
+      "description": [
+        "Not Eligible",
+        "Control Bucket",
+        "Treatment 1: Enable sending periodic voice stats for 100% of calls",
+        "Treatment 2: Enable sending periodic voice stats for 50% of calls",
+        "Treatment 3: Enable sending periodic voice stats for 20% of calls",
+        "Treatment 4: Enable sending periodic voice stats for 10% of calls",
+        "Treatment 5: Enable sending periodic voice stats for 5% of calls"
+      ],
+      "hash": 1794801891,
+      "buckets": [
+        -1,
+        0,
+        1,
+        2,
+        3,
+        4,
+        5
       ],
       "config_keys": [
         "enabled"
@@ -4546,13 +4546,17 @@
                 {
                   "start": 600,
                   "end": 1000
+                },
+                {
+                  "start": 2000,
+                  "end": 3000
                 }
               ]
             },
             "none": {
               "rollout": [
                 {
-                  "start": 1000,
+                  "start": 3000,
                   "end": 10000
                 }
               ]
