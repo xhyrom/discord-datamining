@@ -2478,6 +2478,7 @@
   "APP_OPENING": "\"Opening Discord App.\"",
   "INVITE_INVALID_CTA": "\"Tap to learn more\"",
   "INVITE_INVALID_ERROR": "\"This invite link is invalid or has expired.\\nWant to know more about Discord?\"",
+  "INSTANT_INVITE_REDIRECTING": "\"Redirecting...\"",
   "INSTANT_INVITE_RESOLVING": "\"Resolving Invite\"",
   "INSTANT_INVITE_ACCEPTING": "\"Accepting Invite\"",
   "INSTANT_INVITE_RESOLVED_TITLE": "\"Why, hello there.\"",
