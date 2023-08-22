@@ -17815,7 +17815,10 @@ html.disable-forced-colors * {
 }
 
 .emojiContainer-2XKwXX {
-    display: inline-block;
+    display: inline-block
+}
+
+.emojiContainerClickable-1et1jg {
     cursor: pointer
 }
 
@@ -165903,4 +165906,4 @@ html .invoiceCancelRow-dVOR64 {
     height: 200px
 }
 
-/*# sourceMappingURL=40532.5cc2e76b9a4ad6f955ba.css.map*/
+/*# sourceMappingURL=40532.ae6be2a2d05f28fc0d48.css.map*/
