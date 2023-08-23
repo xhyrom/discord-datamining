@@ -8168,6 +8168,27 @@
   {
     "data": {
       "kind": "user",
+      "id": "2023-08_collectiblesnitroavatardecoiap",
+      "label": "Collectible Nitro Avatar Decorations IAP",
+      "description": [
+        "Not Eligible",
+        "Control Bucket",
+        "Treatment 1: Collectibles IAP"
+      ],
+      "hash": 2588597280,
+      "buckets": [
+        -1,
+        0,
+        1
+      ],
+      "config_keys": [
+        "enabled"
+      ]
+    }
+  },
+  {
+    "data": {
+      "kind": "user",
       "id": "2023-04_tier_0_trial_cta_copy",
       "label": "Tier 0 Trial CTA Copy",
       "description": [
