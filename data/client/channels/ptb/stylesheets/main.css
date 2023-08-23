@@ -63850,20 +63850,22 @@ strong {
     gap: 24px;
     margin-left: auto;
     margin-right: auto;
-    grid-template-columns: repeat(auto-fill, 340px);
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    justify-content: center
+    grid-template-columns: repeat(auto-fill, 340px)
 }
 
 .card-2cxbBa:hover {
     -webkit-transform: scale(.97);
     transform: scale(.97);
     border-radius: var(--radius-sm);
-    outline: 1px solid var(--interactive-normal);
-    background: rgba(var(--white-500), .01);
-    -webkit-box-shadow: 0 0 21px 4px rgba(var(--white-500), .12);
-    box-shadow: 0 0 21px 4px rgba(var(--white-500), .12)
+    outline: 1.5px solid var(--interactive-normal);
+    background: hsla(0, 0%, 100%, .01);
+    -webkit-box-shadow: 0 0 21px 4px hsla(0, 0%, 100%, .12);
+    box-shadow: 0 0 21px 4px hsla(0, 0%, 100%, .12)
+}
+
+.container-PSWAEM {
+    padding-bottom: 24px;
+    border-bottom: 1px solid var(--background-modifier-hover)
 }
 
 .header-1kgmPb {
@@ -134916,7 +134918,8 @@ html .invoiceCancelRow-3s2UuC {
 
 .body-3ysK6O {
     background-color: var(--background-primary);
-    padding: 16px 0
+    padding-top: 16px;
+    padding-bottom: 40px
 }
 
 .seperator-2sZAFy {
@@ -141433,7 +141436,7 @@ html .invoiceCancelRow-3s2UuC {
 }
 
 .content-1fJ8n7 {
-    padding: 8px 24px
+    padding: 8px 24px 40px
 }
 
 .description-ElfBW8 {
@@ -166071,4 +166074,4 @@ html .invoiceCancelRow-dVOR64 {
     height: 200px
 }
 
-/*# sourceMappingURL=40532.a05206c387929ba14707.css.map*/
+/*# sourceMappingURL=40532.7dac542df85e91a982fc.css.map*/
