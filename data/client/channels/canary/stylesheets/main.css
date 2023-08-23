@@ -100441,11 +100441,6 @@ strong {
     max-width: 1066px
 }
 
-.noBackground-GkDHNy {
-    background-image: none;
-    margin-bottom: 64px
-}
-
 .heading-2tPnY1 {
     margin-bottom: 16px;
     text-align: center
@@ -100498,10 +100493,6 @@ strong {
 
 .clickable-2EIegO {
     cursor: pointer
-}
-
-.theme-light .forceDarker-Smogf3 {
-    background-color: var(--background-secondary)
 }
 
 .cardHeading-1ZCdP1 {
@@ -166133,4 +166124,4 @@ html .invoiceCancelRow-dVOR64 {
     height: 200px
 }
 
-/*# sourceMappingURL=40532.f93beac96293432947ce.css.map*/
+/*# sourceMappingURL=40532.d569d2b08442e133ae9b.css.map*/
