@@ -882,6 +882,10 @@
       "OPTIONS"
     ]
   },
+  "COLLECTIBLES_CLAIM": {
+    "url": "/users/@me/collectibles/claim",
+    "allowed_methods": null
+  },
   "USER_COLLECTIBLES": {
     "url": "/users/@me/collectibles",
     "allowed_methods": null
