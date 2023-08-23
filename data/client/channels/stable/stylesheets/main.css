@@ -3295,20 +3295,28 @@ html.decorate-links .lowSaturationUnderline-Z6CW6z {
     height: 48px
 }
 
+.noContain-3tUQPR {
+    contain: style
+}
+
 .lowerBadge-3j0ZAg {
+    pointer-events: none;
+    position: absolute;
     bottom: 0;
+    right: 0;
     z-index: 2
 }
 
-.lowerBadge-3j0ZAg,
-.upperBadge-1d6YsW {
-    pointer-events: none;
-    position: absolute;
-    right: 0
+.isHighlighted-fiBbsC {
+    stroke: #000;
+    stroke-width: 8px
 }
 
 .upperBadge-1d6YsW {
-    top: 0
+    pointer-events: none;
+    position: absolute;
+    top: 0;
+    right: 0
 }
 
 .focusStroke-2jFvzg {
@@ -3317,7 +3325,8 @@ html.decorate-links .lowSaturationUnderline-Z6CW6z {
 }
 
 .focusFill-3nDne0,
-.focusStroke-2jFvzg {
+.focusStroke-2jFvzg,
+.highlight-2cUPiD {
     fill: transparent
 }
 
@@ -17815,7 +17824,10 @@ html.disable-forced-colors * {
 }
 
 .emojiContainer-2XKwXX {
-    display: inline-block;
+    display: inline-block
+}
+
+.emojiContainerClickable-1et1jg {
     cursor: pointer
 }
 
@@ -59986,15 +59998,20 @@ strong {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
     min-width: 0;
     width: 100%;
     -webkit-box-flex: 0;
     -ms-flex: 0 0 auto;
     flex: 0 0 auto;
-    padding: 0 8px;
+    padding: 8px;
+    min-height: 48px;
     font-size: 16px;
     line-height: 20px;
     cursor: default;
@@ -60013,22 +60030,23 @@ strong {
     background: transparent
 }
 
-.container-ZMc96U.containerHeight-2h-WZs {
-    height: 48px
+.upperContainer-2DCPUA {
+    -ms-flex: 1;
+    flex: 1
 }
 
-.container-ZMc96U:not(.container-ZMc96U.containerHeight-2h-WZs) {
-    padding-top: 8px
+.children-3xh0VB,
+.upperContainer-2DCPUA {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-flex: 1
 }
 
 .children-3xh0VB {
     position: relative;
-    -webkit-box-flex: 1;
     -ms-flex: 1 1 auto;
     flex: 1 1 auto;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
@@ -63832,20 +63850,22 @@ strong {
     gap: 24px;
     margin-left: auto;
     margin-right: auto;
-    grid-template-columns: repeat(auto-fill, 340px);
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    justify-content: center
+    grid-template-columns: repeat(auto-fill, 340px)
 }
 
 .card-2cxbBa:hover {
     -webkit-transform: scale(.97);
     transform: scale(.97);
     border-radius: var(--radius-sm);
-    outline: 1px solid var(--interactive-normal);
-    background: rgba(var(--white-500), .01);
-    -webkit-box-shadow: 0 0 21px 4px rgba(var(--white-500), .12);
-    box-shadow: 0 0 21px 4px rgba(var(--white-500), .12)
+    outline: 1.5px solid var(--interactive-normal);
+    background: hsla(0, 0%, 100%, .01);
+    -webkit-box-shadow: 0 0 21px 4px hsla(0, 0%, 100%, .12);
+    box-shadow: 0 0 21px 4px hsla(0, 0%, 100%, .12)
+}
+
+.container-PSWAEM {
+    padding-bottom: 24px;
+    border-bottom: 1px solid var(--background-modifier-hover)
 }
 
 .header-1kgmPb {
@@ -94217,7 +94237,7 @@ strong {
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
-    margin-left: 48px;
+    margin-left: 40px;
     max-width: 50%;
     width: -webkit-fit-content;
     width: -moz-fit-content;
@@ -134898,7 +134918,8 @@ html .invoiceCancelRow-3s2UuC {
 
 .body-3ysK6O {
     background-color: var(--background-primary);
-    padding: 16px 0
+    padding-top: 16px;
+    padding-bottom: 40px
 }
 
 .seperator-2sZAFy {
@@ -141415,7 +141436,7 @@ html .invoiceCancelRow-3s2UuC {
 }
 
 .content-1fJ8n7 {
-    padding: 8px 24px
+    padding: 8px 24px 40px
 }
 
 .description-ElfBW8 {
@@ -159507,6 +159528,21 @@ html .invoiceCancelRow-3s2UuC {
     grid-template-columns: repeat(auto-fill, minmax(248px, 1fr))
 }
 
+.fantasyButton-2sxZR7 {
+    background: -webkit-gradient(linear, left top, right top, from(#138397), to(#b845c1));
+    background: linear-gradient(90deg, #138397, #b845c1)
+}
+
+.monstersButton-1dr7BT {
+    background: -webkit-gradient(linear, left top, right top, from(#1b6a25), to(#73821d));
+    background: linear-gradient(90deg, #1b6a25, #73821d)
+}
+
+.breakfastButton-2Cl9Yt {
+    background: -webkit-gradient(linear, left top, right top, from(#ac9e21), to(#c04500));
+    background: linear-gradient(90deg, #ac9e21, #c04500)
+}
+
 .spacing-1JirW3 {}
 
 .card-1LSSlz {
@@ -165652,6 +165688,147 @@ html .invoiceCancelRow-dVOR64 {
     margin: 0 auto 24px
 }
 
+.modalInner-7OWSBe {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    padding: 0
+}
+
+.modalInner-7OWSBe::-webkit-scrollbar {
+    width: 0;
+    height: 0
+}
+
+.modalCloseButton-3RgDvX {
+    position: absolute;
+    right: 8px;
+    top: 8px
+}
+
+.collectibleInfoContainer-3uyaC5 {
+    width: 276px
+}
+
+.collectibleInfoContainer-3uyaC5,
+.collectiblePreviewsContainer-2TJ889 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    padding: 20px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column
+}
+
+.collectiblePreviewsContainer-2TJ889 {
+    gap: 24px
+}
+
+.avatarPreviewContainer-2FEhy3 {
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    margin-bottom: 64px
+}
+
+.avatarPreviewContainer-2FEhy3,
+.chatPreview-2rboc6 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center
+}
+
+.chatPreview-2rboc6 {
+    height: 180px;
+    overflow: hidden;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: stretch;
+    -ms-flex-align: stretch;
+    align-items: stretch
+}
+
+.titleContainer-3YDEDj {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    gap: 4px;
+    margin-bottom: 64px
+}
+
+.titleImage-1KgSPN {
+    width: 75px;
+    height: 18px
+}
+
+.collectionText-1qGz8S {
+    border: 1px solid #fff;
+    color: #fff;
+    border-radius: 30px;
+    padding-right: 12px;
+    padding-left: 12px
+}
+
+.description-2InCpQ {
+    margin-bottom: 64px
+}
+
+.previewTitle-fVCFx0 {
+    margin-bottom: 8px
+}
+
+.fantasyImageBackground-2y9HOW {
+    background: url(/assets/c304062633516b98c4d5b3bf3e440e3c.png) no-repeat;
+    background-size: cover
+}
+
+.fantasyBackground--X9IyM {
+    background: linear-gradient(135deg, #247c94, #130b28)
+}
+
+.fantasyButton-23AHmi {
+    background: -webkit-gradient(linear, left top, right top, from(#138397), to(#b845c1));
+    background: linear-gradient(90deg, #138397, #b845c1)
+}
+
+.monstersImageBackground-dSrXMm {
+    background: url(/assets/f8b548e93bce0eee17d9aab754c4d285.png) no-repeat;
+    background-size: cover
+}
+
+.monstersBackground-1LsVpR {
+    background: linear-gradient(135deg, #62c200, #24132c)
+}
+
+.monstersButton-Mmyy4P {
+    background: -webkit-gradient(linear, left top, right top, from(#1b6a25), to(#73821d));
+    background: linear-gradient(90deg, #1b6a25, #73821d)
+}
+
+.breakfastImageBackground-28ymyL {
+    background: url(/assets/e2a9bd3caa66f0d26c3574977e975cf9.png) no-repeat;
+    background-size: cover
+}
+
+.breakfastBackground-3IHmM5 {
+    background: linear-gradient(135deg, #ffcd4b, #7a3b00)
+}
+
+.breakfastButton-U4AOk3 {
+    background: -webkit-gradient(linear, left top, right top, from(#ac9e21), to(#c04500));
+    background: linear-gradient(90deg, #ac9e21, #c04500)
+}
+
 .modalContent-JK5iQA,
 .root-2-pdq6 {
     overflow: hidden
@@ -165897,4 +166074,4 @@ html .invoiceCancelRow-dVOR64 {
     height: 200px
 }
 
-/*# sourceMappingURL=40532.209bce1537a7a362a684.css.map*/
+/*# sourceMappingURL=40532.7dac542df85e91a982fc.css.map*/
