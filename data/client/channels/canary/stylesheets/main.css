@@ -100614,6 +100614,10 @@ strong {
     border-color: var(--guild-boosting-purple)
 }
 
+.invisible-3WrAZ6>.innerWrapper-Eo2E86 {
+    pointer-events: none
+}
+
 .theme-light .innerWrapper-Eo2E86 {
     background-color: var(--background-secondary)
 }
@@ -166129,4 +166133,4 @@ html .invoiceCancelRow-dVOR64 {
     height: 200px
 }
 
-/*# sourceMappingURL=40532.ce7ee7e7c33d25ea576e.css.map*/
+/*# sourceMappingURL=40532.f93beac96293432947ce.css.map*/
