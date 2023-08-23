@@ -15686,7 +15686,6 @@
   "CLIPS_SETTINGS_ENABLE_CLIPS": "\"Enable clipping\"",
   "CLIPS_SETTINGS_ENABLE_CLIPS_HELP": "\"Enables you to capture clips while you're streaming by using the clipping keybind.\"",
   "CLIPS_SETTINGS_HELP_IN_GO_LIVE_CTA": "\"Capture clips during your stream with $[!!{keybind}!!](keybindHook).\"",
-  "CLIPS_SETTINGS_HELP_IN_GO_LIVE_CTA_CHANGE_KEYBIND": "\"You can adjust your keybind and clip duration by going to [Clips Settings](onClick)\"",
   "CLIPS_SETTINGS_ENABLE_HARDWARE_ENCODE": "\"Hardware Acceleration\"",
   "CLIPS_SETTINGS_ENABLE_HARDWARE_ENCODE_HELP": "\"Hardware acceleration uses your GPU for efficient clipping, if available.\"",
   "CLIPS_SETTINGS_VIDEO_QUALITY": "\"Video Quality Settings\"",
