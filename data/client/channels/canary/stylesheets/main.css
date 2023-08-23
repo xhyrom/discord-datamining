@@ -159350,41 +159350,87 @@ html .invoiceCancelRow-3s2UuC {
     top: 2px
 }
 
-@-webkit-keyframes placeholderPulse-3Waq2d {
-    0% {
-        opacity: .5
-    }
-
-    50% {
-        opacity: 1
-    }
-
-    to {
-        opacity: .5
-    }
+.card-1e8EiH {
+    height: 300px;
+    border-radius: 32px
 }
 
-@keyframes placeholderPulse-3Waq2d {
-    0% {
-        opacity: .5
-    }
-
-    50% {
-        opacity: 1
-    }
-
-    to {
-        opacity: .5
-    }
-}
-
-.skeleton-2QeXou {
+.skeleton-3HFIZN {
     cursor: pointer;
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
     overflow: hidden;
-    -webkit-animation: placeholderPulse-3Waq2d 3s ease-in-out infinite;
-    animation: placeholderPulse-3Waq2d 3s ease-in-out infinite
+    -webkit-animation: placeholderPulse-14ApXc 1.3s ease-in-out infinite;
+    animation: placeholderPulse-14ApXc 1.3s ease-in-out infinite;
+    background-color: var(--background-secondary);
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column
+}
+
+.skeleton-3HFIZN,
+.skeleton-3HFIZN .collectible-FtWK3w {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex
+}
+
+.skeleton-3HFIZN .collectible-FtWK3w {
+    height: 170px;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center
+}
+
+.skeleton-3HFIZN .avatar-1vMuYj {
+    height: 96px;
+    width: 96px;
+    border-radius: 50%
+}
+
+.skeleton-3HFIZN .avatar-1vMuYj,
+.skeleton-3HFIZN .description-30cVbJ {
+    background-color: var(--background-secondary-alt)
+}
+
+.skeleton-3HFIZN .description-30cVbJ {
+    height: 130px
+}
+
+.skeletonBanner-53un4I {
+    grid-column: 1/-1
+}
+
+@-webkit-keyframes placeholderPulse-14ApXc {
+    0% {
+        opacity: .3
+    }
+
+    50% {
+        opacity: 1
+    }
+
+    to {
+        opacity: .3
+    }
+}
+
+@keyframes placeholderPulse-14ApXc {
+    0% {
+        opacity: .3
+    }
+
+    50% {
+        opacity: 1
+    }
+
+    to {
+        opacity: .3
+    }
 }
 
 .shopLogo-2NbABu {
@@ -166074,4 +166120,4 @@ html .invoiceCancelRow-dVOR64 {
     height: 200px
 }
 
-/*# sourceMappingURL=40532.7dac542df85e91a982fc.css.map*/
+/*# sourceMappingURL=40532.2892f356e16922b3b8d1.css.map*/
