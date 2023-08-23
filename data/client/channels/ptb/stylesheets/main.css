@@ -107610,6 +107610,19 @@ html .tabBadge-h4HGed {
     color: var(--header-primary)
 }
 
+.image-3O4q0c {
+    width: 200px;
+    position: absolute;
+    top: -40px;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%)
+}
+
+.content-3Fu4xg {
+    padding-top: 72px
+}
+
 .panel-2ZFCRb {
     padding: 8px;
     border-bottom: 1px solid var(--background-modifier-accent);
@@ -166124,4 +166137,4 @@ html .invoiceCancelRow-dVOR64 {
     height: 200px
 }
 
-/*# sourceMappingURL=40532.d569d2b08442e133ae9b.css.map*/
+/*# sourceMappingURL=40532.094a4533efd35ff073c0.css.map*/
