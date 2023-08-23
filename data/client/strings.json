@@ -15867,6 +15867,8 @@
   "JOIN_BROADCAST": "\"Join Party\"",
   "VIEW_BROADCAST": "\"View Party\"",
   "BROADCAST_FULL": "\"Party Full\"",
+  "BROADCASTING_BROADCASTER_TOOLTIP_HEADER": "\"Start an Open Party!\"",
+  "BROADCASTING_BROADCASTER_TOOLTIP_BODY": "\"Choose specific friends and servers to hang out with spontaneously while gaming!\"",
   "COLLECTIBLES_COLLECTING_FINISHED": "\"Collecting finished\"",
   "COLLECTIBLES_COLLECTED_DECORATIONS": "\"You've collected these decorations!\"",
   "COLLECTIBLES_SHOP_HERO_BANNER_TITLE": "\"Collect what you want\"",
