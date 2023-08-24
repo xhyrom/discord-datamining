@@ -9941,6 +9941,7 @@
   "USER_SETTINGS_ACCOUNT_REMOVE_PHONE_A11Y_LABEL": "\"Remove phone number\"",
   "USER_SETTINGS_COPIED": "\"Copied!\"",
   "USER_SETTINGS_CACHES_CLEARED": "\"Caches Cleared!\"",
+  "USER_SETTINGS_CACHES_WRITTEN": "\"Caches Written!\"",
   "PHONE_VERIFICATION_UPDATE_TITLE": "\"Update your phone number\"",
   "PHONE_VERIFICATION_ADD_TITLE": "\"Enter a phone number\"",
   "PHONE_VERIFICATION_CURRENT_PHONE": "\"The current number on your account is !!{phone}!!.\"",
