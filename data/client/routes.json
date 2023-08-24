@@ -4406,5 +4406,19 @@
   "SAFETY_HUB": {
     "url": "/safety-hub",
     "allowed_methods": null
+  },
+  "INITIATE_CHANNEL_PROMPTS": {
+    "url": "/initiate-prompts",
+    "allowed_methods": [
+      "OPTIONS",
+      "POST"
+    ]
+  },
+  "FORCE_SEND_PROMPT": {
+    "url": "/:param/force-send-prompt",
+    "allowed_methods": [
+      "OPTIONS",
+      "POST"
+    ]
   }
 }
