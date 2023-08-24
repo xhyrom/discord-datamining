@@ -14155,6 +14155,8 @@
   "GUILD_SETTINGS_SOUNDBOARD_UPSELL_BANNER_TEXT": "\"Boost your server to Level {level} to unlock {numAdditional} more soundboard slots!\"",
   "SOUNDBOARD_SOUND_UPLOAD_BUTTON_DISABLED": "\"You don't have permissions to upload sounds to this server.\"",
   "SOUNDBOARD_CONTEXT_MENU_DOWNLOAD_SOUND": "\"Download Sound\"",
+  "SOUNDBOARD_DOWNLOAD_SOUND_FAILED_TITLE": "\"Sound Download Failed\"",
+  "SOUNDBOARD_DOWNLOAD_SOUND_FAILED_BODY": "\"Discord failed to download that sound for some reason. Sorry about that.\"",
   "SOUNDBOARD_CONTEXT_MENU_EDIT_SOUND": "\"Edit Sound\"",
   "SOUNDBOARD_SOUND_PREVIEW_SOUND": "\"Preview !!{emojiName}!! !!{soundName}!!\"",
   "SOUNDBOARD_SOUND_PREVIEW_SOUND_LOW_VOLUME": "\"Increase your Soundboard volume setting to preview\"",
