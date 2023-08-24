@@ -164428,6 +164428,106 @@ html .invoiceCancelRow-3s2UuC {
     margin-bottom: 16px
 }
 
+.contentPadding-3hHMcr {
+    padding-left: 16px;
+    padding-right: 16px
+}
+
+.title-3FcX6q {
+    padding-top: 16px
+}
+
+.subtitle-2kit9F {
+    padding-top: 8px;
+    padding-bottom: 16px
+}
+
+.searchBar-3Y56E- {
+    margin-right: 16px;
+    margin-left: 16px
+}
+
+.friendsList-14TvAf {
+    height: 200px
+}
+
+.channelList-3nEm0p {
+    margin-top: 8px;
+    max-height: 200px
+}
+
+.userRow-2knieh {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    height: 40px;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    padding-top: 6px;
+    padding-bottom: 6px;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden
+}
+
+.username-eAn5hz {
+    padding-left: 12px;
+    -webkit-box-flex: 1;
+    -ms-flex: 1 1 auto;
+    flex: 1 1 auto
+}
+
+.radioIcon-YDwI7i {
+    color: var(--interactive-normal);
+    padding-right: 8px;
+    padding-left: 8px
+}
+
+.channelRow-2KChR2 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    background: var(--background-secondary);
+    margin-bottom: 10px;
+    height: 46px;
+    border-radius: 3px;
+    cursor: pointer
+}
+
+.icon-3DOwcX {
+    color: var(--interactive-normal);
+    padding-right: 10px
+}
+
+.divider-1ueRBG {
+    width: 100%;
+    height: 1px;
+    background: var(--background-modifier-accent)
+}
+
+.bottomDivider-1rMhgi,
+.topDivider-3BH-Y8 {
+    margin-bottom: 8px;
+    margin-top: 12px
+}
+
+.emptyStateContainer-3wEbmh {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    height: 200px
+}
+
 .modal-2upm8B {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -166067,104 +166167,4 @@ html .invoiceCancelRow-dVOR64 {
     margin-bottom: 16px
 }
 
-.contentPadding-3hHMcr {
-    padding-left: 16px;
-    padding-right: 16px
-}
-
-.title-3FcX6q {
-    padding-top: 16px
-}
-
-.subtitle-2kit9F {
-    padding-top: 8px;
-    padding-bottom: 16px
-}
-
-.searchBar-3Y56E- {
-    margin-right: 16px;
-    margin-left: 16px
-}
-
-.friendsList-14TvAf {
-    height: 200px
-}
-
-.channelList-3nEm0p {
-    margin-top: 8px;
-    max-height: 200px
-}
-
-.userRow-2knieh {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    height: 40px;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
-    padding-top: 6px;
-    padding-bottom: 6px;
-    white-space: nowrap;
-    text-overflow: ellipsis;
-    overflow: hidden
-}
-
-.username-eAn5hz {
-    padding-left: 12px;
-    -webkit-box-flex: 1;
-    -ms-flex: 1 1 auto;
-    flex: 1 1 auto
-}
-
-.radioIcon-YDwI7i {
-    color: var(--interactive-normal);
-    padding-right: 8px;
-    padding-left: 8px
-}
-
-.channelRow-2KChR2 {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
-    background: var(--background-secondary);
-    margin-bottom: 10px;
-    height: 46px;
-    border-radius: 3px;
-    cursor: pointer
-}
-
-.icon-3DOwcX {
-    color: var(--interactive-normal);
-    padding-right: 10px
-}
-
-.divider-1ueRBG {
-    width: 100%;
-    height: 1px;
-    background: var(--background-modifier-accent)
-}
-
-.bottomDivider-1rMhgi,
-.topDivider-3BH-Y8 {
-    margin-bottom: 8px;
-    margin-top: 12px
-}
-
-.emptyStateContainer-3wEbmh {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    justify-content: center;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
-    height: 200px
-}
-
-/*# sourceMappingURL=40532.3dce9487efacc41357f8.css.map*/
+/*# sourceMappingURL=40532.2a9034faffff238a40de.css.map*/
