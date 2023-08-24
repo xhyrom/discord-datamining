@@ -1,7 +1,22 @@
 {
   "data": {
     "kind": "guild",
-    "hash": 2716650836
+    "id": "2023-08_deadchat_simple_prompt_guild",
+    "label": "Simple deadchat prompt",
+    "description": [
+      "Not Eligible",
+      "Control Bucket",
+      "Treatment 1: trigger deadchat upon connection open"
+    ],
+    "hash": 2716650836,
+    "buckets": [
+      -1,
+      0,
+      1
+    ],
+    "config_keys": [
+      "triggerDeadchat"
+    ]
   },
   "rollout": {
     "populations": [
