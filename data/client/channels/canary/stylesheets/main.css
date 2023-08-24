@@ -47632,6 +47632,22 @@ input[type=checked]:focus-visible+.label-3TDpbn {
     display: block
 }
 
+.mainContainer-1Pjp4M.compact-2eRAQf {
+    padding-left: 0;
+    margin-left: -3.95rem
+}
+
+.actions-3Nv0lZ {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    gap: 16px
+}
+
 .CTAMessage-3ZYw6f {
     margin-bottom: 2px
 }
@@ -166167,4 +166183,4 @@ html .invoiceCancelRow-dVOR64 {
     margin-bottom: 16px
 }
 
-/*# sourceMappingURL=40532.2a9034faffff238a40de.css.map*/
+/*# sourceMappingURL=40532.ac88cf89d259bb01bf85.css.map*/
