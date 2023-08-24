@@ -114390,6 +114390,10 @@ html .tabBadge-h4HGed {
     margin-bottom: 24px
 }
 
+:root {
+    --emojiInputHorizontalPadding: 8px
+}
+
 .emojiAliasPlaceholder-3oShSx {
     position: absolute;
     top: 0;
@@ -114398,8 +114402,8 @@ html .tabBadge-h4HGed {
     font-size: 16px;
     line-height: 16px;
     padding-top: 6px;
-    padding-left: 8px;
-    padding-right: 8px
+    padding-left: --emojiInputHorizontalPadding;
+    padding-right: --emojiInputHorizontalPadding
 }
 
 .emojiAliasPlaceholder-3oShSx:after,
@@ -114488,7 +114492,8 @@ html .tabBadge-h4HGed {
 .emojiRow-1aPaM- .emojiAliasInput-3ZhdKx .emojiInput-B8MGXq {
     -webkit-transition: opacity .1s ease-in-out;
     transition: opacity .1s ease-in-out;
-    opacity: 0
+    opacity: 0;
+    padding: 1px --emojiInputHorizontalPadding 0
 }
 
 .emojiRow-1aPaM- .emojiAliasInput-3ZhdKx .emojiInput-B8MGXq:focus {
@@ -166183,4 +166188,4 @@ html .invoiceCancelRow-dVOR64 {
     margin-bottom: 16px
 }
 
-/*# sourceMappingURL=40532.ac88cf89d259bb01bf85.css.map*/
+/*# sourceMappingURL=40532.b9427758b6d0929dec57.css.map*/
