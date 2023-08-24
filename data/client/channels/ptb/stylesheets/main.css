@@ -40767,13 +40767,20 @@ html .progress-2Otdc- {
 
 .productCard-10T4y5 {
     width: 340px;
-    background: var(--background-secondary);
     border-radius: 8px;
     overflow: hidden;
+    position: relative;
     height: 100%
 }
 
-.productCard-10T4y5,
+.solidBackground-13BMn7 {
+    background: var(--background-secondary)
+}
+
+.opaqueBackground-3Unh3V {
+    background: rgba(var(--background-modifier-hover), .3)
+}
+
 .productThumbnailContainer-iSvWHI {
     position: relative
 }
@@ -63966,7 +63973,8 @@ strong {
 }
 
 .tabDisabled-1l0OgZ {
-    background-color: var(--background-modifier-hover)
+    background-color: var(--background-modifier-hover);
+    cursor: not-allowed
 }
 
 .iconContainer-2gP6IM {
@@ -64063,6 +64071,12 @@ strong {
 
 .content-1tt_Au {
     padding: 32px 42px
+}
+
+.contentContainer-1faF_F {
+    margin: auto;
+    max-width: 1068px;
+    min-width: 704px
 }
 
 .container-3XgAHv {
@@ -166149,4 +166163,4 @@ html .invoiceCancelRow-dVOR64 {
     height: 200px
 }
 
-/*# sourceMappingURL=40532.4ff9b8cc8839ca8010c8.css.map*/
+/*# sourceMappingURL=40532.b085ebed66ece772d01b.css.map*/
