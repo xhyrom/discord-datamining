@@ -1,0 +1,21 @@
+{
+  "data": {
+    "kind": "user",
+    "id": "2023-08_overlay3_out_of_process_enablement",
+    "label": "Overlay3 - Out of Process Enablement",
+    "description": [
+      "Not Eligible",
+      "Control Bucket",
+      "Treatment 1: Enabled"
+    ],
+    "hash": 2544068076,
+    "buckets": [
+      -1,
+      0,
+      1
+    ],
+    "config_keys": [
+      "enabled"
+    ]
+  }
+}
