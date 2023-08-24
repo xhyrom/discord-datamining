@@ -3840,14 +3840,20 @@
         "Not Eligible",
         "Control Bucket",
         "Treatment 1: Enabled",
-        "Treatment 2: Enabled"
+        "Treatment 2: Mobile Enabled",
+        "Treatment 3: Read-only pack emoji for logged out users",
+        "Treatment 4: Freemium Enabled with Add Pack Modal",
+        "Treatment 5: Nitro Enabled with Add Pack Modal"
       ],
       "hash": 1473329304,
       "buckets": [
         -1,
         0,
         1,
-        2
+        2,
+        3,
+        4,
+        5
       ],
       "config_keys": [
         "enabled"
