@@ -7715,6 +7715,27 @@
   {
     "data": {
       "kind": "user",
+      "id": "2023-07_suggested_contacts_on_messages_tab",
+      "label": "Suggested Contacts Rows on Messages Tab",
+      "description": [
+        "Not Eligible",
+        "Treatment 0: Control, dont show suggested contacts row but show the widget and other day 0 related items.",
+        "Treatment 1: Enables suggested contacts rows on Messages tab if available. If there are no suggestions, default to the add friends widget."
+      ],
+      "hash": 3350915613,
+      "buckets": [
+        -1,
+        0,
+        1
+      ],
+      "config_keys": [
+        "enabled"
+      ]
+    }
+  },
+  {
+    "data": {
+      "kind": "user",
       "id": "2021-04_longer_group_dm_invites",
       "label": "Longer Group DM Invites",
       "description": [
@@ -11657,6 +11678,7 @@
               "type": "guild_ids",
               "ids": [
                 "1080899969243943072",
+                "1136423398608744588",
                 "874345844743213126"
               ]
             }

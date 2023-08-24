@@ -1,0 +1,21 @@
+{
+  "data": {
+    "kind": "user",
+    "id": "2023-07_suggested_contacts_on_messages_tab",
+    "label": "Suggested Contacts Rows on Messages Tab",
+    "description": [
+      "Not Eligible",
+      "Treatment 0: Control, dont show suggested contacts row but show the widget and other day 0 related items.",
+      "Treatment 1: Enables suggested contacts rows on Messages tab if available. If there are no suggestions, default to the add friends widget."
+    ],
+    "hash": 3350915613,
+    "buckets": [
+      -1,
+      0,
+      1
+    ],
+    "config_keys": [
+      "enabled"
+    ]
+  }
+}
