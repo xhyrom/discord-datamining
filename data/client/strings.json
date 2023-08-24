@@ -7573,6 +7573,7 @@
   "GUILD_SETTINGS_ONBOARDING_HOME_SAVE_FAILED": "\"Failed to save Server Guide\"",
   "GUILD_SETTINGS_ONBOARDING_HOME_SAVE_FAILED_REASON": "\"You must have a welcome message and at least 3 To Do tasks.\"",
   "GUILD_SETTINGS_ONBOARDING_HOME_SAVE_FAILED_INVALID": "\"Check that the permissions on your To Do and Resource channels are set correctly.\"",
+  "GUILD_SETTINGS_ONBOARDING_HOME_SAVE_FAILED_INVALID_WITH_DETAILS": "\"Check that the permissions on your To Do and Resource channels are set correctly.\\n\\nErrors: {errorMessage}\"",
   "GUILD_SETTINGS_ONBOARDING_SUGGESTED_RESOURCES_EXPLAINER": "\"We picked a few channels that are read-only\"",
   "GUILD_SETTINGS_ONBOARDING_SUGGESTED_RESOURCES_DISMISS": "\"Dismiss All\"",
   "GUILD_SETTINGS_ONBOARDING_HOME_SETTINGS_INVALID_ACTION_CHANNEL": "\"Assigned channel is missing permissions for @everyone\"",
