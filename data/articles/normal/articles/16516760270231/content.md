@@ -54,15 +54,8 @@
 <p><a href="https://genshin.hoyoverse.com" target="_blank" rel="noopener noreferrer">Genshin Impact</a> is an open-world action RPG, where players embark on a journey across a magical world called Teyvat in search of their long-lost sibling. As you unravel the mysteries of Teyvat, you will encounter dangerous monsters you and your friends can defeat together! </p>
 <p>This fantasy adventure is from developer and publisher <a href="https://www.hoyoverse.com/en-us" target="_blank" rel="noopener noreferrer">HoYoverse</a>! You can read more about this promotion <a href="https://www.hoyolab.com/article_pre/11717?utm_source=sns&amp;utm_medium=discord&amp;utm_id=2&amp;utm_campaign=discordnitrocollab" target="_blank" rel="noopener noreferrer">here</a>.</p>
 <h1 id="01H7XQ576SWE094C92M2SG3RCT"><strong>How do I claim the Nitro Promo from my Genshin Impact account?</strong></h1>
-<p>You can claim this promotion through the in-game client! </p>
+<p>You can claim this promotion on browser! </p>
 <h3 id="01H7XQ576S0TP7E3BXF9V3V1F6"><span style="color: #434343;" data-darkreader-inline-color="">Note: Only Genshin Impact players who have reached Adventure Rank 10 or higher in Fontaine on their HoYoverse Account, will be able to claim this promotion!</span></h3>
-<p id="docs-internal-guid-741ca405-7fff-0021-3f18-c51bcbac7a70"><strong>How to claim the Nitro Promo in-game: </strong></p>
-<p>1. Launch <strong>Genshin Impact</strong> and enter the game’s world.</p>
-<p>2. Open the <strong>Paimon menu</strong> in the upper left corner.</p>
-<p>3. Open the settings menu by pressing the <strong>gear icon</strong></p>
-<p>4. In the setting’s menu, enter <strong>[Account], [Redeem Code], and [Exchange]</strong>.</p>
-<p>5. After redeeming a code, you will receive the Nitro code via in-game mail. The email can take up to 72 hours to send.</p>
-<p>6. Then, follow the instructions within the email to redeem the code in Discord and activate your 1 month Nitro trial.</p>
 <p><strong>How to claim the Nitro Promo through browser: </strong></p>
 <p id="docs-internal-guid-b5333d7f-7fff-4161-f4dc-80b7d974506e">1. If you meet the eligibility requirements, leave a comment on the <a href="https://www.hoyolab.com/article/20902797?utm_source=sns&amp;utm_medium=discord&amp;utm_campaign=discordnitrocollab&amp;utm_id=2" target="_blank" rel="noopener noreferrer">HoYoLAB post</a> during the promotion period and your participation will have been deemed successful.</p>
 <p>2. Event participants will receive the link for a 1-month Discord Nitro trial via HoYoLAB messages from the official Genshin Impact team within 72 hours of commenting. </p>
@@ -78,9 +71,9 @@
 <p>If a user currently has a Nitro Basic, Nitro Classic, or Server Boosting only subscription active on their account and you’ve never had a Nitro subscription, redeeming this promotion will override that subscription.</p>
 <h2 id="01H7XQ576ST4EPTSJJV8KRPFH8"><strong>Step by Step Redeem Instructions</strong></h2>
 <p>If you're eligible and ready to redeem this Nitro subscription on your own Discord account, you can follow these steps below to redeem the promo.</p>
-<h3 id="01H7XQ576S6JMC35J9KYQZQNS2"><strong>NOTE:</strong></h3>
-<h3 id="01H7XQ576S7BYZCGP0R4T643PB"><strong>- Before redeeming Nitro, make sure you are logged in your own Discord account.</strong></h3>
-<h3 id="01H7XQ576T3XSGG50DDZEM8HA9"><strong>- If you accidentally redeemed the Nitro promo link on an account that is not yours, we are unable to provide you with another promo link.</strong></h3>
+<h3 id="01H7XQ576S6JMC35J9KYQZQNS2">
+    <strong>NOTE:<br></strong><strong>- Before redeeming Nitro, make sure you are logged in your own Discord account.<br></strong><strong>- If you accidentally redeemed the Nitro promo link on an account that is not yours, we are unable to provide you with another promo link.</strong>
+</h3>
 <p><strong>Step 1 - Pressing the Promo Link/Copy and Pasting into your Browser Window</strong></p>
 <ul>
     <li>Start by directly pressing or right-click on the promotion link and copy and paste the link into your browser window.</li>
@@ -125,8 +118,9 @@
     <li>If your Discord account does not have your payment information, you'll be asked to fill out your payment details. (Note: You will not be charged until the free trial ends and the subscription renews)</li>
     <li>When you've filled out all the necessary information and you're ready to redeem this promotion, press the "<strong>Accept Gift</strong>" button. </li>
 </ul>
-<h3 id="01H7XQ576T432JXDX8TBRJACV8"><strong>Note:</strong></h3>
-<h3 id="01H7XQ576TJDA4889M9G3VFPCS"><strong>- If you're logged into the incorrect Discord account, press the "Wrong account" button to login to the other account.</strong></h3>
+<h3 id="01H7XQ576T432JXDX8TBRJACV8">
+    <strong>Note:<br></strong><strong>- If you're logged into the incorrect Discord account, press the "Wrong account" button to login to the other account.</strong>
+</h3>
 <p><strong>Step 4 - Subscription Now Activated</strong></p>
 <ul>
     <li>After accepting the promo to your account, you'll now be automatically redirected to your <strong>Subscriptions</strong> tab in your User Settings to see your newly activated Nitro subscription on your account.</li>
@@ -134,8 +128,9 @@
 <h2 id="01H7XQ576TKKQVGC1B1CKFNDC7"><strong>What if I am an Active Nitro Basic, Nitro Classic, or Server Boosting Subscriber? </strong></h2>
 <p>Just to clarify - if you previously had a Discord Nitro subscription and currently hold a Nitro Classic or Nitro Basic subscription that has been active for less than 12 months, you are ineligible to redeem this promotion.</p>
 <p>So long as you currently have a Nitro Basic, Nitro Classic, or Server Boosting only subscription active on your account and you’ve never had a Nitro subscription, you will be able to redeem this promotion and replace it with the 1 month Nitro subscription.</p>
-<h3 id="01H7XQ576TMFWWEYQ28JP1E557"><strong>HOWEVER, please note:</strong></h3>
-<h3 id="01H7XQ576TC115HXM4F4HR461G"><strong>- By choosing to activate this 1 month trial, you will lose any features associated with your current subscriptions, and **you will not receive a refund for any remaining value on your current subscription**.</strong></h3>
+<h3 id="01H7XQ576TMFWWEYQ28JP1E557">
+    <strong>HOWEVER, please note:<br></strong><strong>- By choosing to activate this 1 month trial, you will lose any features associated with your current subscriptions, and **you will not receive a refund for any remaining value on your current subscription**.</strong>
+</h3>
 <p>At the end of the promotion period, you'll be converted to a paying Nitro subscription per month unless you cancel your subscription.</p>
 <h1 id="01H7XQ576TBVBJKG4ADAM0VTGG"><strong>How do I share my Code with a Friend?</strong></h1>
 <p>If you're unable to redeem the Nitro subscription link, you can share this link with a friend to use instead.</p>
@@ -143,10 +138,11 @@
 <h1 id="01H7XQ576T30RSWHYX373J4V11"><strong>Frequently Asked Questions</strong></h1>
 <p>We know there's a lot of information to unpack on this promotion above, so we've also broken down this information in this FAQ section as well too.</p>
 <ul>
-    <li>Promotion Details</li>
-    <li>Eligibility for the Promotion</li>
-    <li>Payment Info and Subscription Questions</li>
-    <li>Potential Errors and Other Issues
+    <li><a href="https://support.discord.com/hc/en-us/articles/16516760270231#01H7XQ576T37A43PB8VRCBY482">Promotion Details</a></li>
+    <li><a href="https://support.discord.com/hc/en-us/articles/16516760270231#01H7XQ576TNJRV9BCQXJ9XNTP0">Eligibility for the Promotion</a></li>
+    <li><a href="https://support.discord.com/hc/en-us/articles/16516760270231#01H7XQ576T96ECT74K6JVB4AM0">Payment Info and Subscription Questions</a></li>
+    <li>
+        <a href="https://support.discord.com/hc/en-us/articles/16516760270231#01H7XQ576T8ZFNHJ4NX4ZJME29">Potential Errors and Other Issues</a>
         <ul>
             <li>Already Had/Have Nitro</li>
             <li>Already Redeemed</li>
@@ -174,8 +170,9 @@
 <p><strong>Q: What if I'm a current or previous Nitro Basic, Nitro Classic, or a Server Boost subscriber? Can I also take part in this promotion? </strong></p>
 <p><strong>A: </strong>If you previously had a Discord Nitro subscription and currently hold a Nitro Classic or Nitro Basic subscription that has been active for less than 12 months, you are ineligible to redeem this promotion.</p>
 <p>So long as you currently have a Nitro Basic, Nitro Classic, or Server Boosting only subscription active on your account and you’ve never had a Nitro subscription, you will be able to redeem this promotion and replace it with the 1 month Nitro subscription.</p>
-<h3 id="01H7XQ576TN13C7WNNV37AANRC"><strong>HOWEVER, please note:</strong></h3>
-<h3 id="01H7XQ576TZZPPQ8GVVCHWE56W"><strong>- By choosing to activate this 1 month trial, you will lose any features associated with your current subscriptions, and **you will not receive a refund for any remaining value on your current subscription**.</strong></h3>
+<h3 id="01H7XQ576TN13C7WNNV37AANRC">
+    <strong>HOWEVER, please note:<br></strong><strong>- By choosing to activate this 1 month trial, you will lose any features associated with your current subscriptions, and **you will not receive a refund for any remaining value on your current subscription**.</strong>
+</h3>
 <p>At the end of the promotion period, you'll be converted to a paying Nitro subscription per month unless you cancel your subscription.</p>
 <h2 id="01H7XQ576T96ECT74K6JVB4AM0"><strong>Payment Info and Subscription Questions</strong></h2>
 <p><strong>Q: Why do I need to submit my payment info to redeem Nitro?</strong></p>
