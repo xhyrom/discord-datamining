@@ -874,7 +874,7 @@
     "url": "/collectibles",
     "allowed_methods": null
   },
-  "COLLECTIBLES_CATEGORES": {
+  "COLLECTIBLES_CATEGORIES": {
     "url": "/collectibles/categories",
     "allowed_methods": [
       "GET",
