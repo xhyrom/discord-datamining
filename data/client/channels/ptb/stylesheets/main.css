@@ -165902,6 +165902,100 @@ html .invoiceCancelRow-dVOR64 {
     margin: 0 auto 24px
 }
 
+.modalInner-1g60Qb {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    padding: 0;
+    width: 440px
+}
+
+.modalInner-1g60Qb::-webkit-scrollbar {
+    width: 0;
+    height: 0
+}
+
+.modalCloseButton-22284s {
+    position: absolute;
+    right: 8px;
+    top: 8px
+}
+
+.avatarDecoration-3jlk91 {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    -webkit-animation: zoomin-1OiPJE 1.5s;
+    animation: zoomin-1OiPJE 1.5s;
+    height: 144px;
+    width: 144px
+}
+
+@-webkit-keyframes zoomin-1OiPJE {
+    0% {
+        -webkit-transform: translate(-50%, -50%) scale(.25);
+        transform: translate(-50%, -50%) scale(.25)
+    }
+
+    to {
+        -webkit-transform: translate(-50%, -50%) scale(1);
+        transform: translate(-50%, -50%) scale(1)
+    }
+}
+
+@keyframes zoomin-1OiPJE {
+    0% {
+        -webkit-transform: translate(-50%, -50%) scale(.25);
+        transform: translate(-50%, -50%) scale(.25)
+    }
+
+    to {
+        -webkit-transform: translate(-50%, -50%) scale(1);
+        transform: translate(-50%, -50%) scale(1)
+    }
+}
+
+.decorationBanner-3Mft4y {
+    width: 100%;
+    height: 100%
+}
+
+.bannerContainer-2aPEIR {
+    position: relative;
+    height: 228px
+}
+
+.collectedInfo-1jRvE- {
+    background: linear-gradient(135deg, #247c94, #130b28);
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    text-align: center;
+    gap: 12px;
+    padding: 32px
+}
+
+.useNowButton-2gItsr {
+    background: -webkit-gradient(linear, left top, right top, from(#138397), to(#b845c1));
+    background: linear-gradient(90deg, #138397, #b845c1)
+}
+
 .modalInner-7OWSBe {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -166188,4 +166282,4 @@ html .invoiceCancelRow-dVOR64 {
     margin-bottom: 16px
 }
 
-/*# sourceMappingURL=40532.b9427758b6d0929dec57.css.map*/
+/*# sourceMappingURL=40532.4d2c61f95a47e6fb5a90.css.map*/
