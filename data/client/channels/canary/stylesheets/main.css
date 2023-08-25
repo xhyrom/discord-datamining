@@ -159418,9 +159418,269 @@ html .invoiceCancelRow-3s2UuC {
     top: 2px
 }
 
+.fantasyButton-186fs1 {
+    background: -webkit-gradient(linear, left top, right top, from(#138397), to(#b845c1));
+    background: linear-gradient(90deg, #138397, #b845c1)
+}
+
+.animeButton-1HDw8Y {
+    background: -webkit-gradient(linear, left top, right top, from(#5c0dd2), to(#821d78));
+    background: linear-gradient(90deg, #5c0dd2, #821d78)
+}
+
+.breakfastButton-s9lYbA {
+    background: -webkit-gradient(linear, left top, right top, from(#ac9e21), to(#c04500));
+    background: linear-gradient(90deg, #ac9e21, #c04500)
+}
+
+.disxcoreButton-1rB5zd {
+    background: linear-gradient(45deg, hsl(269, calc(var(--saturation-factor, 1)*52.7%), 52.7%), hsl(325, calc(var(--saturation-factor, 1)*31.7%), 51.8%))
+}
+
+.fantasyBackground-3zTq_0 {
+    background: linear-gradient(135deg, #247c94, #130b28)
+}
+
+.animeBackground-2Acsgo {
+    background: linear-gradient(135deg, #cfb9ee, #170b28)
+}
+
+.breakfastBackground-2XRpdA {
+    background: linear-gradient(135deg, #ffcd4b, #7a3b00)
+}
+
+.disxcoreBackground-26wUUc {
+    background: linear-gradient(135deg, #87266d, #101d40)
+}
+
+.fantasyCardBackground-2WcjNR {
+    background: -webkit-gradient(linear, left top, left bottom, from(#247c94), to(#130b28));
+    background: linear-gradient(#247c94, #130b28)
+}
+
+.animeCardBackground-RNUJD8 {
+    background: -webkit-gradient(linear, left top, left bottom, from(#cfb9ee), to(#170b28));
+    background: linear-gradient(#cfb9ee, #170b28)
+}
+
+.breakfastCardBackground-CsD-TS {
+    background: -webkit-gradient(linear, left top, left bottom, from(#ffcd4b), to(#7a3b00));
+    background: linear-gradient(#ffcd4b, #7a3b00)
+}
+
+.disxcoreCardBackground-pxCz0n {
+    background: -webkit-gradient(linear, left top, left bottom, from(#87266d), to(#101d40));
+    background: linear-gradient(#87266d, #101d40)
+}
+
+.fantasyGlow-L8TJbw {
+    -webkit-transition: -webkit-box-shadow .5s;
+    transition: -webkit-box-shadow .5s;
+    transition: box-shadow .5s;
+    transition: box-shadow .5s, -webkit-box-shadow .5s
+}
+
+.fantasyGlow-L8TJbw:hover {
+    -webkit-box-shadow: 0 0 5px 5px #226c85;
+    box-shadow: 0 0 5px 5px #226c85
+}
+
+.animeGlow-1_FdOZ {
+    -webkit-transition: -webkit-box-shadow .5s;
+    transition: -webkit-box-shadow .5s;
+    transition: box-shadow .5s;
+    transition: box-shadow .5s, -webkit-box-shadow .5s
+}
+
+.animeGlow-1_FdOZ:hover {
+    -webkit-box-shadow: 0 0 5px 5px #9d8ab9;
+    box-shadow: 0 0 5px 5px #9d8ab9
+}
+
+.breakfastGlow-1gk_kf {
+    -webkit-transition: -webkit-box-shadow .5s;
+    transition: -webkit-box-shadow .5s;
+    transition: box-shadow .5s;
+    transition: box-shadow .5s, -webkit-box-shadow .5s
+}
+
+.breakfastGlow-1gk_kf:hover {
+    -webkit-box-shadow: 0 0 5px 5px #ffcc81;
+    box-shadow: 0 0 5px 5px #ffcc81
+}
+
+.disxcoreGlow-2xVR-G {
+    -webkit-transition: -webkit-box-shadow .5s;
+    transition: -webkit-box-shadow .5s;
+    transition: box-shadow .5s;
+    transition: box-shadow .5s, -webkit-box-shadow .5s
+}
+
+.disxcoreGlow-2xVR-G:hover {
+    -webkit-box-shadow: 0 0 5px 5px #87266d;
+    box-shadow: 0 0 5px 5px #87266d
+}
+
+.fantasyBorder-2Yrfz7 {
+    background: -webkit-gradient(linear, left top, left bottom, from(rgba(33, 101, 126, 0)), to(rgba(33, 101, 126, .4)));
+    background: linear-gradient(rgba(33, 101, 126, 0), rgba(33, 101, 126, .4))
+}
+
+.animeBorder-3YcShl {
+    background: -webkit-gradient(linear, left top, left bottom, from(rgba(119, 102, 145, 0)), to(rgba(119, 102, 145, .4)));
+    background: linear-gradient(rgba(119, 102, 145, 0), rgba(119, 102, 145, .4))
+}
+
+.breakfastBorder-2hLBGJ {
+    background: -webkit-gradient(linear, left top, left bottom, from(rgba(226, 173, 59, 0)), to(rgba(226, 173, 59, .4)));
+    background: linear-gradient(rgba(226, 173, 59, 0), rgba(226, 173, 59, .4))
+}
+
+.disxcoreBorder-2jW_YC {
+    background: -webkit-gradient(linear, left top, left bottom, from(rgba(135, 38, 109, 0)), to(rgba(135, 38, 109, .4)));
+    background: linear-gradient(rgba(135, 38, 109, 0), rgba(135, 38, 109, .4))
+}
+
+.fantasyImageBackground-29OtK3 {
+    background: url(/assets/c304062633516b98c4d5b3bf3e440e3c.png) no-repeat
+}
+
+.animeImageBackground-1V1snY {
+    background: url(/assets/7beb0839f3f530d491cac494651277dc.png) no-repeat
+}
+
+.breakfastImageBackground-1Ztt8x {
+    background: url(/assets/e2a9bd3caa66f0d26c3574977e975cf9.png) no-repeat
+}
+
+@-webkit-keyframes placeholderPulse-3Waq2d {
+    0% {
+        opacity: .5
+    }
+}
+
+@keyframes placeholderPulse-3Waq2d {
+    0% {
+        opacity: .5
+    }
+}
+
 .card-1e8EiH {
     height: 300px;
     border-radius: 32px
+}
+
+.listingCard-3fkOuH {
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    grid-column: auto;
+    min-width: 100%;
+    padding: 2px;
+    -webkit-transition: -webkit-transform 1s;
+    transition: -webkit-transform 1s;
+    transition: transform 1s;
+    transition: transform 1s, -webkit-transform 1s;
+    cursor: pointer;
+    position: relative
+}
+
+.listingCard-3fkOuH:hover {
+    -webkit-transform: translateY(-4px);
+    transform: translateY(-4px)
+}
+
+.listingCardBody-3jEG-D {
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    right: 2px;
+    bottom: 2px;
+    border-radius: inherit
+}
+
+.avatar-1-EGTo {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 44px
+}
+
+.cardText-1gtC-S {
+    margin-top: 32px;
+    margin-left: 32px
+}
+
+.description-2DD9PM {
+    margin-top: 4px;
+    padding-right: 32px
+}
+
+.button-3KmITB,
+.price-cpJgMq {
+    margin-top: 16px
+}
+
+.button-3KmITB {
+    width: 90%;
+    -webkit-transition: opacity .5s;
+    transition: opacity .5s
+}
+
+.button-3KmITB:hover {
+    opacity: .8
+}
+
+.unlockButton-3VwZzu {
+    margin-top: 8px;
+    width: 90%
+}
+
+.bannerContent-19nx5R {
+    margin-top: 60px;
+    margin-left: 60px;
+    position: absolute
+}
+
+.bannerCard-2yr-T2 {
+    grid-column: 1/-1;
+    padding: 2px
+}
+
+.bannerBackground-2gFLDX,
+.bannerCard-2yr-T2 {
+    height: 300px;
+    border-radius: 32px;
+    width: 1060px
+}
+
+.bannerBackground-2gFLDX {
+    position: absolute
+}
+
+.bannerDescription-1-LGr0 {
+    margin-top: 16px
+}
+
+.bannerDiscordLogo-psYs1O {
+    padding-bottom: 8px
+}
+
+.innerHover-W_PGCE {
+    display: none
+}
+
+.innerBlur-3CojQz {
+    display: block
+}
+
+.card-1e8EiH:hover .innerHover-W_PGCE {
+    display: block
+}
+
+.card-1e8EiH:hover .innerBlur-3CojQz {
+    display: none
 }
 
 .skeleton-3HFIZN {
@@ -159542,7 +159802,7 @@ html .invoiceCancelRow-3s2UuC {
 }
 
 .heroDescription-2QJJDj {
-    max-width: 45%
+    max-width: 65%
 }
 
 .heroDescription-2QJJDj>* {
@@ -159593,19 +159853,44 @@ html .invoiceCancelRow-3s2UuC {
     left: 44px
 }
 
+.subscribeButton-3rUkdg {
+    margin-top: 16px
+}
+
 .page-LilLhg {
     height: 100%;
     background-color: var(--background-primary);
-    width: 100%;
     max-width: 1124px;
     padding: 32px;
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
-    margin: 44px auto 300px
+    margin: 44px auto 300px;
+    -webkit-box-flex: 1;
+    -ms-flex: 1 1 auto;
+    flex: 1 1 auto;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    overflow: visible;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    left: 50%;
+    -webkit-transform: translate(-50%);
+    transform: translate(-50%)
+}
+
+.closeWrapper-4ioOGM,
+.page-LilLhg {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    position: absolute
 }
 
 .closeWrapper-4ioOGM {
-    position: absolute;
     -webkit-box-pack: center;
     -ms-flex-pack: center;
     justify-content: center;
@@ -159614,16 +159899,12 @@ html .invoiceCancelRow-3s2UuC {
     z-index: 1
 }
 
-.closeContent-1VSMwH,
-.closeWrapper-4ioOGM {
+.closeContent-1VSMwH {
+    position: fixed;
+    width: 100%;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    width: 100%
-}
-
-.closeContent-1VSMwH {
-    position: fixed;
     -webkit-box-pack: end;
     -ms-flex-pack: end;
     justify-content: flex-end;
@@ -159635,26 +159916,80 @@ html .invoiceCancelRow-3s2UuC {
 }
 
 .cardsContainer-2kdrm8 {
-    min-width: 320px;
+    max-width: 1060px;
     padding: 24px 0;
     display: grid;
-    grid-gap: 16px;
-    grid-template-columns: repeat(auto-fill, minmax(248px, 1fr))
+    grid-gap: 28px;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    overflow: visible
 }
 
-.fantasyButton-2sxZR7 {
-    background: -webkit-gradient(linear, left top, right top, from(#138397), to(#b845c1));
-    background: linear-gradient(90deg, #138397, #b845c1)
+.bannerContent-3Sk0tn {
+    margin-top: 60px;
+    margin-left: 60px;
+    position: absolute
 }
 
-.monstersButton-1dr7BT {
-    background: -webkit-gradient(linear, left top, right top, from(#1b6a25), to(#73821d));
-    background: linear-gradient(90deg, #1b6a25, #73821d)
+.bannerCard-2LJzbg {
+    padding: 2px
 }
 
-.breakfastButton-2Cl9Yt {
-    background: -webkit-gradient(linear, left top, right top, from(#ac9e21), to(#c04500));
-    background: linear-gradient(90deg, #ac9e21, #c04500)
+.bannerBackground-HeU8g7,
+.bannerCard-2LJzbg {
+    height: 300px;
+    border-radius: 32px;
+    width: 1060px
+}
+
+.bannerBackground-HeU8g7 {
+    position: absolute
+}
+
+.bannerDescription-1muIwg {
+    margin-top: 16px;
+    max-width: 460px
+}
+
+.container-10BB8g {
+    max-width: 1060px;
+    padding-top: 24px
+}
+
+.bannerAccessories-3-RGdi {
+    padding-bottom: 8px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex
+}
+
+.bannerDiscordLogo-Pbd93s {
+    margin-top: 4px
+}
+
+.badge-1mVtCp {
+    height: 16px;
+    border-radius: 16px;
+    background: -webkit-gradient(linear, left top, right top, from(hsl(269, calc(var(--saturation-factor, 1)*52.7%), 52.7%)), color-stop(hsl(296, calc(var(--saturation-factor, 1)*50%), 51.4%)), to(hsl(325, calc(var(--saturation-factor, 1)*31.7%), 51.8%)));
+    background: linear-gradient(90deg, hsl(269, calc(var(--saturation-factor, 1)*52.7%), 52.7%), hsl(296, calc(var(--saturation-factor, 1)*50%), 51.4%), hsl(325, calc(var(--saturation-factor, 1)*31.7%), 51.8%));
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    padding: 2px 10px;
+    margin-left: 8px;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center
+}
+
+.nitroIcon-1X63-E {
+    color: #fff;
+    -ms-flex-negative: 0;
+    flex-shrink: 0;
+    height: 18px
+}
+
+.nitroText-6or9TO {
+    color: #fff
 }
 
 .spacing-1JirW3 {}
@@ -165902,100 +166237,6 @@ html .invoiceCancelRow-dVOR64 {
     margin: 0 auto 24px
 }
 
-.modalInner-1g60Qb {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: column;
-    flex-direction: column;
-    padding: 0;
-    width: 440px
-}
-
-.modalInner-1g60Qb::-webkit-scrollbar {
-    width: 0;
-    height: 0
-}
-
-.modalCloseButton-22284s {
-    position: absolute;
-    right: 8px;
-    top: 8px
-}
-
-.avatarDecoration-3jlk91 {
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    -webkit-transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%);
-    -webkit-animation: zoomin-1OiPJE 1.5s;
-    animation: zoomin-1OiPJE 1.5s;
-    height: 144px;
-    width: 144px
-}
-
-@-webkit-keyframes zoomin-1OiPJE {
-    0% {
-        -webkit-transform: translate(-50%, -50%) scale(.25);
-        transform: translate(-50%, -50%) scale(.25)
-    }
-
-    to {
-        -webkit-transform: translate(-50%, -50%) scale(1);
-        transform: translate(-50%, -50%) scale(1)
-    }
-}
-
-@keyframes zoomin-1OiPJE {
-    0% {
-        -webkit-transform: translate(-50%, -50%) scale(.25);
-        transform: translate(-50%, -50%) scale(.25)
-    }
-
-    to {
-        -webkit-transform: translate(-50%, -50%) scale(1);
-        transform: translate(-50%, -50%) scale(1)
-    }
-}
-
-.decorationBanner-3Mft4y {
-    width: 100%;
-    height: 100%
-}
-
-.bannerContainer-2aPEIR {
-    position: relative;
-    height: 228px
-}
-
-.collectedInfo-1jRvE- {
-    background: linear-gradient(135deg, #247c94, #130b28);
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: column;
-    flex-direction: column;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    justify-content: center;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
-    text-align: center;
-    gap: 12px;
-    padding: 32px
-}
-
-.useNowButton-2gItsr {
-    background: -webkit-gradient(linear, left top, right top, from(#138397), to(#b845c1));
-    background: linear-gradient(90deg, #138397, #b845c1)
-}
-
 .modalInner-7OWSBe {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -166031,7 +166272,8 @@ html .invoiceCancelRow-dVOR64 {
 }
 
 .collectiblePreviewsContainer-2TJ889 {
-    gap: 24px
+    gap: 24px;
+    background-size: cover
 }
 
 .avatarPreviewContainer-2FEhy3 {
@@ -166075,7 +166317,8 @@ html .invoiceCancelRow-dVOR64 {
 }
 
 .titleImage-1KgSPN {
-    width: 75px;
+    padding-right: 6px;
+    padding-top: 4px;
     height: 18px
 }
 
@@ -166115,12 +166358,11 @@ html .invoiceCancelRow-dVOR64 {
 }
 
 .monstersBackground-1LsVpR {
-    background: linear-gradient(135deg, #62c200, #24132c)
+    background: undefined
 }
 
 .monstersButton-Mmyy4P {
-    background: -webkit-gradient(linear, left top, right top, from(#1b6a25), to(#73821d));
-    background: linear-gradient(90deg, #1b6a25, #73821d)
+    background: undefined
 }
 
 .breakfastImageBackground-28ymyL {
@@ -166282,4 +166524,4 @@ html .invoiceCancelRow-dVOR64 {
     margin-bottom: 16px
 }
 
-/*# sourceMappingURL=40532.d5d4bad57013c0d4a719.css.map*/
+/*# sourceMappingURL=40532.b2a9c68a288cae46d8d8.css.map*/
