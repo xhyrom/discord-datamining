@@ -2343,7 +2343,10 @@
   },
   "BILLING_INVOICE_PDF": {
     "url": "/users/@me/billing/invoice",
-    "allowed_methods": null
+    "allowed_methods": [
+      "OPTIONS",
+      "POST"
+    ]
   },
   "BILLING_STRIPE_PAYMENT_INTENTS": {
     "url": "/users/@me/billing/stripe/payment-intents/payments/:param",
