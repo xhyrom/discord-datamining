@@ -24,10 +24,13 @@
         <span class="wysiwyg-color-red110"><strong>Note:</strong></span>
         <ul>
             <li style="font-weight: 400;" aria-level="1">
-                <span style="font-weight: 400;">Previous and current Nitro Basic, Nitro Classic, and Server Boosting subscribers are also eligible, </span><strong>however</strong><span style="font-weight: 400;">, the current subscription will be replaced with the 3 month Nitro subscription.</span>
+                <p id="docs-internal-guid-953dc3d8-7fff-f596-4049-be3d3292bd52">Users who previously had a Discord Nitro subscription and currently hold a Nitro Classic or Nitro Basic subscription that has been active for less than 12 months are ineligible.</p>
+            </li>
+            <li style="font-weight: 400;" aria-level="1">
+                <p id="docs-internal-guid-953dc3d8-7fff-f596-4049-be3d3292bd52">If a user currently has a Nitro Basic, Nitro Classic, or Server Boosting only subscription active on their account and you’ve never had a Nitro subscription, redeeming this promotion will override that subscription.</p>
                 <ul>
-                    <li style="font-weight: 400;" aria-level="3">
-                        <span style="font-weight: 400;">By choosing to activate this 3 month trial, you will lose any features associated with your current subscriptions, and **</span><strong>you will not receive a refund for any remaining value on your current subscription</strong><span style="font-weight: 400;">**. </span>
+                    <li style="font-weight: 400;" aria-level="1">
+                        <p id="docs-internal-guid-953dc3d8-7fff-f596-4049-be3d3292bd52"><span style="font-weight: 400;">By choosing to activate this 3 month trial, you will lose any features associated with your current subscriptions, and **</span><strong>you will not receive a refund for any remaining value on your current subscription</strong><span style="font-weight: 400;">**. </span></p>
                     </li>
                 </ul>
             </li>
@@ -114,9 +117,11 @@
     </li>
 </ul>
 <h1 id="h_01FDVJR8CGEYZ7N2F4CVMWGC3Y"><strong>How do I redeem the Nitro Promo on my Discord Account? </strong></h1>
-<p><span style="font-weight: 400;">Users who have not had an active Nitro subscription on their Discord accounts in the past 12 months are eligible to redeem this Nitro promotion.</span></p>
+<p><span id="docs-internal-guid-338e3ba1-7fff-8c03-ac2b-47db23f15bf3">Once you have saved the promo within Xbox, you'll now need to officially redeem this promo link on your Discord account (or share this code with a friend)! </span></p>
 <h2 id="h_01FDVJRGHBERYTX5A5YGCQHB8B">Eligibility for Redeeming the Nitro Trial</h2>
 <p><span id="docs-internal-guid-6093a721-7fff-1965-c1d4-549af743bb33">Users who have not had an active Nitro subscription on their Discord accounts in the past 12 months are eligible to redeem this Nitro promotion.</span></p>
+<p id="docs-internal-guid-eeecd1a3-7fff-2537-24e8-e5cb56a12729">Users who previously had a Discord Nitro subscription and currently hold a Nitro Classic or Nitro Basic subscription that has been active for less than 12 months are ineligible.</p>
+<p>If a user currently has a Nitro Basic, Nitro Classic, or Server Boosting only subscription active on their account and you’ve never had a Nitro subscription, redeeming this promotion will override that subscription.</p>
 <h2 id="h_01FDVJRRQ3P805VFXE8X09E874">Step by Step Redeem Instructions</h2>
 <p><span style="font-weight: 400;">If you're eligible and ready to redeem this Nitro subscription on your own Discord account, you can follow these steps below to redeem the promo!</span></p>
 <h3>
@@ -194,7 +199,8 @@
     </li>
 </ul>
 <h2 id="h_01FDVJS0CV9Q219E46N9HHVQ1B"><strong>What if I am an Active Nitro Basic, Nitro Classic, or Server Boosting Subscriber? </strong></h2>
-<p><span style="font-weight: 400;">Just to clarify - if you currently have a Nitro Basic, Nitro Classic, or Server Boosting subscription, you will be eligible to claim this Xbox promotion and your current subscription will be replaced with the 3 month Nitro subscription.</span></p>
+<p id="docs-internal-guid-4887d522-7fff-a982-afcf-37b64e5365ae">Just to clarify - if you previously had a Discord Nitro subscription and currently hold a Nitro Classic or Nitro Basic subscription that has been active for less than 12 months, you are ineligible to redeem this promotion.</p>
+<p>So long as you currently have a Nitro Basic, Nitro Classic, or Server Boosting only subscription active on your account and you’ve never had a Nitro subscription, you will be able to redeem this promotion and replace it with the 3 month Nitro subscription.</p>
 <h3>
     <strong>HOWEVER, please note:<br></strong><span style="font-weight: 400;">- By choosing to activate this 3 month trial, you will lose any features associated with your current subscriptions, and **</span><strong>you will not receive a refund for any remaining value on your current subscription</strong><span style="font-weight: 400;">**.</span>
 </h3>
@@ -242,7 +248,8 @@
 <p><span class="wysiwyg-color-blue90 wysiwyg-font-size-large"><strong>Q: Who can redeem this Nitro trial to their Discord account?</strong></span></p>
 <p><strong>A: </strong>Only users who haven’t had a Nitro subscription on their Discord accounts in the past 12 months are able to redeem this Nitro trial.</p>
 <p><span class="wysiwyg-color-blue90 wysiwyg-font-size-large"><strong>Q: What if I'm a current or previous Nitro Basic, Nitro Classic, or Server Boost subscriber? Can I also take part in this promotion? </strong></span></p>
-<p><strong>A: </strong><span style="font-weight: 400;">Yes, if you currently have a Nitro Basic, Nitro Classic, or Server Boosting subscription, you will be eligible to claim this promotion and your current subscription will be replaced with the 3 month Nitro subscription.</span></p>
+<p><strong>A: </strong>If you previously had a Discord Nitro subscription and currently hold a Nitro Classic or Nitro Basic subscription that has been active for less than 12 months, you are ineligible to redeem this promotion.</p>
+<p>So long as you currently have a Nitro Basic, Nitro Classic, or Server Boosting only subscription active on your account and you’ve never had a Nitro subscription, you will be able to redeem this promotion and replace it with the 3 months Nitro subscription.</p>
 <h3>
     <strong>HOWEVER, please note:<br></strong><span style="font-weight: 400;">- By choosing to activate this 3 month trial, you will lose any features associated with your current subscriptions, and **</span><strong>you will not receive a refund for any remaining value on your current subscription</strong><span style="font-weight: 400;">**.</span>
 </h3>
