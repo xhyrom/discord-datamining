@@ -94363,7 +94363,7 @@ strong {
     width: fit-content
 }
 
-.channelStatusClickable-2_H3j0:hover {
+.hoverable-yK3jB7:hover {
     color: var(--interactive-hover);
     cursor: pointer
 }
@@ -94373,11 +94373,6 @@ strong {
     text-overflow: ellipsis;
     white-space: nowrap;
     color: var(--channel-icon)
-}
-
-.channelStatus-3P8_7z:hover {
-    color: var(--interactive-hover);
-    cursor: pointer
 }
 
 .subtitleContainer-2rgtRP {
@@ -166573,4 +166568,4 @@ html .invoiceCancelRow-dVOR64 {
     margin-bottom: 16px
 }
 
-/*# sourceMappingURL=40532.776d988266d282c38b2b.css.map*/
+/*# sourceMappingURL=40532.23d65a42c3810d183bcf.css.map*/
