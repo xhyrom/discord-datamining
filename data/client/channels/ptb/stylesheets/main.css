@@ -63998,9 +63998,19 @@ strong {
 }
 
 .iconContainer-2gP6IM {
-    padding: 8px;
+    width: 36px;
+    height: 36px;
     background-color: var(--background-message-hover);
-    border-radius: 18px
+    border-radius: var(--radius-round);
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center
 }
 
 .lineClamp-2-w95g {
@@ -166563,4 +166573,4 @@ html .invoiceCancelRow-dVOR64 {
     margin-bottom: 16px
 }
 
-/*# sourceMappingURL=40532.6cc724b3293710c0be83.css.map*/
+/*# sourceMappingURL=40532.776d988266d282c38b2b.css.map*/
