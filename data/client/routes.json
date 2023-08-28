@@ -1815,13 +1815,6 @@
       "POST"
     ]
   },
-  "STAGE_REPORT": {
-    "url": "/reports/channels/:param/messages/:param",
-    "allowed_methods": [
-      "OPTIONS",
-      "POST"
-    ]
-  },
   "REPORT_OPTIONS": {
     "url": "/report/options",
     "allowed_methods": [
