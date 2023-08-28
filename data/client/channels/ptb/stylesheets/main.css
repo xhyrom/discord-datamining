@@ -157263,13 +157263,13 @@ html .invoiceCancelRow-3s2UuC {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
     -ms-flex-direction: row;
     flex-direction: row;
-    -webkit-box-pack: justify;
-    -ms-flex-pack: justify;
-    justify-content: space-between;
     position: relative;
     width: 100%
 }
@@ -157297,7 +157297,8 @@ html .invoiceCancelRow-3s2UuC {
     -ms-flex-align: center;
     align-items: center;
     row-gap: var(--spacing-8);
-    text-align: center
+    text-align: center;
+    width: 15%
 }
 
 .statusOption-nS2myl:nth-of-type(2) {
@@ -157314,6 +157315,21 @@ html .invoiceCancelRow-3s2UuC {
     text-align: end
 }
 
+.statusLabel-G7z_qe {
+    max-width: 100%;
+    overflow: hidden;
+    text-overflow: ellipsis
+}
+
+.checkmarkCircle-2mzXlR {
+    width: 34px;
+    height: 34px;
+    margin-left: -2px;
+    margin-top: -2px;
+    margin-bottom: -4px
+}
+
+.checkmarkCircle-2mzXlR,
 .marker-3mDmqZ {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -157324,7 +157340,10 @@ html .invoiceCancelRow-3s2UuC {
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
-    z-index: 1;
+    z-index: 1
+}
+
+.marker-3mDmqZ {
     border-radius: 50%;
     width: 28px;
     height: 28px;
@@ -166578,4 +166597,4 @@ html .invoiceCancelRow-dVOR64 {
     margin-bottom: 16px
 }
 
-/*# sourceMappingURL=40532.ce6f73f20662f4dd0cb8.css.map*/
+/*# sourceMappingURL=40532.cf332796e115dcd47c9e.css.map*/
