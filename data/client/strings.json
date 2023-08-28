@@ -15877,7 +15877,7 @@
   "STOP_BROADCASTING": "\"Stop your Party\"",
   "START_BROADCASTING": "\"Start a Party\"",
   "BROADCASTING": "\"In a Party\"",
-  "BROADCASTING_DESCRIPTION": "\"Start a Party so any of your friends can watch you game.\"",
+  "BROADCASTING_DESCRIPTION": "\"Select specific friends and servers and start an open party! We will let them know you're waiting to hangout.\"",
   "BROADCAST_SETTINGS": "\"Party Settings\"",
   "BROADCASTING_CHANNEL_NAME": "\"!!{name}!!'s Party\"",
   "LIVE_BROADCASTS": "\"Open Parties\"",
