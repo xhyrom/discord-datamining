@@ -4167,6 +4167,14 @@
       "OPTIONS"
     ]
   },
+  "ELIGIBLE_APPLICATION_SUBSCRIPTION_GUILDS": {
+    "url": "/users/@me/billing/eligible-application-subscription-guilds",
+    "allowed_methods": [
+      "GET",
+      "HEAD",
+      "OPTIONS"
+    ]
+  },
   "APPLICATION_USER_ROLE_CONNECTIONS": {
     "url": "/users/@me/applications/role-connections",
     "allowed_methods": [
