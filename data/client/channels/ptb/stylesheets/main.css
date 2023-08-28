@@ -64052,7 +64052,10 @@ strong {
 
 .coverImage-2HWWxr {
     width: 100%;
-    border-radius: 12px
+    border-radius: 12px;
+    aspect-ratio: 4;
+    -o-object-fit: cover;
+    object-fit: cover
 }
 
 .infoContainer-14dbs1 {
@@ -166575,4 +166578,4 @@ html .invoiceCancelRow-dVOR64 {
     margin-bottom: 16px
 }
 
-/*# sourceMappingURL=40532.a711afb6e8bb152e77b0.css.map*/
+/*# sourceMappingURL=40532.45b250cca6c5db8e47f2.css.map*/
