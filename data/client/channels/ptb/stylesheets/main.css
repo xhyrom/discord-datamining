@@ -24178,6 +24178,7 @@ html.disable-forced-colors * {
     --chat-background: var(--primary-600);
     --chat-border: var(--primary-700);
     --chat-input-container-background: var(--primary-600);
+    --chat-swipe-to-reply-background: var(--primary-660);
     --control-brand-foreground: var(--brand-360);
     --control-brand-foreground-new: var(--brand-360);
     --creator-revenue-icon-gradient-end: var(--teal-430);
@@ -24454,6 +24455,7 @@ html.disable-forced-colors * {
     --chat-background: var(--white-500);
     --chat-border: var(--primary-200);
     --chat-input-container-background: var(--white-500);
+    --chat-swipe-to-reply-background: var(--primary-160);
     --control-brand-foreground: var(--brand-500);
     --control-brand-foreground-new: var(--brand-500);
     --creator-revenue-icon-gradient-end: var(--teal-400);
@@ -24710,6 +24712,7 @@ html.disable-forced-colors * {
     --channeltextarea-background: var(--primary-800);
     --chat-background: var(--black-500);
     --chat-input-container-background: var(--primary-600);
+    --chat-swipe-to-reply-background: var(--dontuse-22);
     --divider-strong: hsl(var(--dontuse-11-hsl)/0.2);
     --header-primary: var(--dontuse-2);
     --header-secondary: var(--dontuse-8);
@@ -24986,6 +24989,7 @@ html.disable-forced-colors * {
     --channeltextarea-background: var(--primary-560);
     --chat-background: var(--primary-600);
     --chat-input-container-background: var(--primary-600);
+    --chat-swipe-to-reply-background: var(--dontuse-22);
     --divider-strong: hsl(var(--dontuse-11-hsl)/0.18);
     --header-primary: var(--dontuse-1);
     --header-secondary: var(--dontuse-9);
@@ -166571,4 +166575,4 @@ html .invoiceCancelRow-dVOR64 {
     margin-bottom: 16px
 }
 
-/*# sourceMappingURL=40532.b1f931fec4a62575d3b4.css.map*/
+/*# sourceMappingURL=40532.a711afb6e8bb152e77b0.css.map*/
