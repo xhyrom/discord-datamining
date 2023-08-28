@@ -112466,6 +112466,127 @@ html .tabBadge-h4HGed {
     gap: 32px
 }
 
+.container-Cb-EQQ {
+    display: inline-block
+}
+
+.iconWrapper-2AdNFG,
+.innerContainer-21XFuN {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex
+}
+
+.iconWrapper-2AdNFG {
+    width: 64px;
+    height: 64px;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    background-color: var(--background-tertiary);
+    color: var(--interactive-normal);
+    border-radius: 50%;
+    margin: 8px 0
+}
+
+.star-1ikfnc {
+    width: 16px;
+    margin-right: 4px;
+    -ms-flex-item-align: end;
+    align-self: flex-end
+}
+
+.sparkle-1ssgmy {
+    width: 20px;
+    -ms-flex-item-align: start;
+    align-self: flex-start
+}
+
+.container-5gin0f {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    padding: 24px;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    text-align: center;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box
+}
+
+.body-Zuo1s3 {
+    color: var(--header-secondary)
+}
+
+.selectTeamContainer-1O8qat {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex
+}
+
+.teamSelect-2fsSHh {
+    -webkit-box-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+    margin-right: 16px
+}
+
+.enableTicketingButton-1F1POQ {
+    height: 42px
+}
+
+.error-ziDVYV {
+    margin-top: 8px;
+    color: var(--status-danger)
+}
+
+.description-3lqOEM {
+    margin-bottom: 16px
+}
+
+.confirmationIcon-2eI-Ul {
+    margin: 24px 0
+}
+
+.confirmationHeader-M3Hn4k {
+    margin-bottom: 8px;
+    font-weight: 600;
+    text-align: center
+}
+
+.confirmationBody-3ugdpJ {
+    text-align: center
+}
+
+.nonOwnerNotice-1uy53q {
+    margin-bottom: 24px;
+    -webkit-box-align: start;
+    -ms-flex-align: start;
+    align-items: flex-start
+}
+
+.selfDemonetization-31z9KN {
+    margin-top: 32px
+}
+
+.changeTeamButton-2u3mhe {
+    background-color: var(--interactive-muted);
+    color: var(--white-500)
+}
+
+.selectTeamButton-3yMx5j {
+    background-color: var(--brand-500);
+    color: var(--white-500)
+}
+
 .listingNameColumn-vgiiUi {
     width: 52%
 }
@@ -112670,16 +112791,6 @@ html .tabBadge-h4HGed {
     object-fit: cover
 }
 
-.changeTeamButton-2u3mhe {
-    background-color: var(--interactive-muted);
-    color: var(--white-500)
-}
-
-.selectTeamButton-3yMx5j {
-    background-color: var(--brand-500);
-    color: var(--white-500)
-}
-
 .metricsContainer-15nr3H {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -112711,117 +112822,6 @@ html .tabBadge-h4HGed {
 
 .formSection-34R9QX {
     margin-bottom: 32px
-}
-
-.container-Cb-EQQ {
-    display: inline-block
-}
-
-.iconWrapper-2AdNFG,
-.innerContainer-21XFuN {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex
-}
-
-.iconWrapper-2AdNFG {
-    width: 64px;
-    height: 64px;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    justify-content: center;
-    background-color: var(--background-tertiary);
-    color: var(--interactive-normal);
-    border-radius: 50%;
-    margin: 8px 0
-}
-
-.star-1ikfnc {
-    width: 16px;
-    margin-right: 4px;
-    -ms-flex-item-align: end;
-    align-self: flex-end
-}
-
-.sparkle-1ssgmy {
-    width: 20px;
-    -ms-flex-item-align: start;
-    align-self: flex-start
-}
-
-.container-5gin0f {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: column;
-    flex-direction: column;
-    padding: 24px;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
-    text-align: center;
-    -webkit-box-sizing: border-box;
-    box-sizing: border-box
-}
-
-.body-Zuo1s3 {
-    color: var(--header-secondary)
-}
-
-.selectTeamContainer-1O8qat {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex
-}
-
-.teamSelect-2fsSHh {
-    -webkit-box-flex: 1;
-    -ms-flex: 1;
-    flex: 1;
-    margin-right: 16px
-}
-
-.enableTicketingButton-1F1POQ {
-    height: 42px
-}
-
-.error-ziDVYV {
-    margin-top: 8px;
-    color: var(--status-danger)
-}
-
-.description-3lqOEM {
-    margin-bottom: 16px
-}
-
-.confirmationIcon-2eI-Ul {
-    margin: 24px 0
-}
-
-.confirmationHeader-M3Hn4k {
-    margin-bottom: 8px;
-    font-weight: 600;
-    text-align: center
-}
-
-.confirmationBody-3ugdpJ {
-    text-align: center
-}
-
-.nonOwnerNotice-1uy53q {
-    margin-bottom: 24px;
-    -webkit-box-align: start;
-    -ms-flex-align: start;
-    align-items: flex-start
-}
-
-.selfDemonetization-31z9KN {
-    margin-top: 32px
 }
 
 .checklist-2zMwBm {
@@ -160191,6 +160191,16 @@ html .invoiceCancelRow-3s2UuC {
     margin-bottom: 4px
 }
 
+.closeButton-2swOfr {
+    position: absolute;
+    top: 12px;
+    right: 12px
+}
+
+.content-1OV4rb {
+    margin: 16px 0
+}
+
 .header-1XFMZK {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -160231,16 +160241,6 @@ html .invoiceCancelRow-3s2UuC {
     -ms-flex-align: center;
     align-items: center;
     gap: 8px
-}
-
-.closeButton-2swOfr {
-    position: absolute;
-    top: 12px;
-    right: 12px
-}
-
-.content-1OV4rb {
-    margin: 16px 0
 }
 
 .container-K6qMXJ {
@@ -166578,4 +166578,4 @@ html .invoiceCancelRow-dVOR64 {
     margin-bottom: 16px
 }
 
-/*# sourceMappingURL=40532.45b250cca6c5db8e47f2.css.map*/
+/*# sourceMappingURL=40532.ce6f73f20662f4dd0cb8.css.map*/
