@@ -146583,8 +146583,6 @@ html .invoiceCancelRow-3s2UuC {
 }
 
 .thumbnailContainer-LoILOG {
-    width: 153px;
-    height: 86px;
     -ms-flex-align: center;
     -ms-flex-pack: center;
     background-color: var(--background-secondary);
@@ -146695,6 +146693,10 @@ html .invoiceCancelRow-3s2UuC {
     border-radius: 8px;
     overflow: hidden;
     visibility: hidden
+}
+
+.changeThumbnailLabelOverflow-3XTMfl {
+    padding-bottom: 1px
 }
 
 .container-3kfp0r {
@@ -147744,7 +147746,8 @@ html .invoiceCancelRow-3s2UuC {
 
 .mediaPostContainer-3w7UVh {
     padding: 0;
-    border-radius: 0
+    border-radius: 0;
+    height: "100%"
 }
 
 .mediaPostThumbnail-2p56X4 {
@@ -166568,4 +166571,4 @@ html .invoiceCancelRow-dVOR64 {
     margin-bottom: 16px
 }
 
-/*# sourceMappingURL=40532.23d65a42c3810d183bcf.css.map*/
+/*# sourceMappingURL=40532.b1f931fec4a62575d3b4.css.map*/
