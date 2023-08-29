@@ -12940,86 +12940,6 @@ html.disable-forced-colors * {
     background-color: #000
 }
 
-.wrapper-C1y4Sz {
-    position: absolute;
-    border-radius: 4px 4px 0 0;
-    overflow: hidden;
-    z-index: 3;
-    -webkit-box-sizing: border-box;
-    box-sizing: border-box;
-    width: calc(100% - 8px)
-}
-
-.banner-iQGw2h {
-    background-image: -webkit-gradient(linear, left top, right top, from(var(--premium-tier-2-purple-for-gradients)), color-stop(50%, var(--premium-tier-2-purple-for-gradients-2)), to(var(--premium-tier-2-pink-for-gradients)));
-    background-image: linear-gradient(90deg, var(--premium-tier-2-purple-for-gradients), var(--premium-tier-2-purple-for-gradients-2) 50%, var(--premium-tier-2-pink-for-gradients));
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    justify-content: center;
-    text-align: center;
-    padding: 5px 8px;
-    -webkit-transition: opacity .2s ease, -webkit-transform .2s ease;
-    transition: opacity .2s ease, -webkit-transform .2s ease;
-    transition: opacity .2s ease, transform .2s ease;
-    transition: opacity .2s ease, transform .2s ease, -webkit-transform .2s ease;
-    opacity: 0;
-    -webkit-transform: translate3d(0, -100%, 0);
-    transform: translate3d(0, -100%, 0)
-}
-
-.banner-iQGw2h.hovering-3w7g3I,
-.banner-iQGw2h:focus-within {
-    opacity: 1;
-    -webkit-transform: translateZ(0);
-    transform: translateZ(0)
-}
-
-.content-23Uwtl {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    justify-content: center;
-    -webkit-box-flex: 1;
-    -ms-flex: 1 0;
-    flex: 1 0;
-    gap: 4px
-}
-
-.premiumIcon-1HXd7v,
-.text-3i9OZm a {
-    color: var(--white-500)
-}
-
-.premiumIcon-1HXd7v {
-    width: 20px;
-    height: 20px;
-    vertical-align: sub
-}
-
-.dismissButton-1LXix0 {
-    width: 16px;
-    height: 16px;
-    margin-left: 8px;
-    cursor: pointer
-}
-
-.closeIcon-2_2cmM {
-    color: var(--white-500);
-    width: 100%;
-    height: 100%
-}
-
 .upsellTooltipWrapper-1wqikQ {
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
@@ -166633,4 +166553,4 @@ html .invoiceCancelRow-dVOR64 {
     margin-bottom: 16px
 }
 
-/*# sourceMappingURL=40532.1a3e76fe04702c271fbc.css.map*/
+/*# sourceMappingURL=40532.ece39ce8d3030c6d058d.css.map*/
