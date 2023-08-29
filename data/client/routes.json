@@ -882,6 +882,14 @@
     "url": "/users/@me/collectibles",
     "allowed_methods": null
   },
+  "COLLECTIBLES_PURCHASES": {
+    "url": "/users/@me/collectibles/purchases",
+    "allowed_methods": [
+      "GET",
+      "HEAD",
+      "OPTIONS"
+    ]
+  },
   "GUILD_MEMBER_BANNER": {
     "url": "/guilds/:param/users/:param/banners/:param.:param",
     "allowed_methods": null
