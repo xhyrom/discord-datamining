@@ -854,8 +854,16 @@
     "url": "/users/:param/banners/:param.:param",
     "allowed_methods": null
   },
+  "AVATAR_DECORATIONS": {
+    "url": "/users/:param/avatar-decorations/:param.:param",
+    "allowed_methods": null
+  },
   "AVATAR_DECORATION_PRESETS": {
     "url": "/avatar-decoration-presets/:param.:param",
+    "allowed_methods": null
+  },
+  "USER_AVATAR_DECORATIONS": {
+    "url": "/users/@me/avatar-decorations",
     "allowed_methods": null
   },
   "COLLECTIBLE_STORE_LISTING": {
