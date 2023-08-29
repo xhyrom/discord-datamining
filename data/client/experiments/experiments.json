@@ -4595,6 +4595,27 @@
   {
     "data": {
       "kind": "user",
+      "id": "2023-08_collectiblesnitroavatardecoiap",
+      "label": "Collectible Nitro Avatar Decorations IAP",
+      "description": [
+        "Not Eligible",
+        "Control Bucket",
+        "Treatment 1: Collectibles IAP"
+      ],
+      "hash": 2588597280,
+      "buckets": [
+        -1,
+        0,
+        1
+      ],
+      "config_keys": [
+        "enabled"
+      ]
+    }
+  },
+  {
+    "data": {
+      "kind": "user",
       "id": "2023-08_profile_effects",
       "label": "Profile Effects User Experiment",
       "description": [
@@ -8086,6 +8107,27 @@
   {
     "data": {
       "kind": "user",
+      "id": "2023-08_jamspace_mini_shelf_banner",
+      "label": "Jamspace Mini Shelf Banner",
+      "description": [
+        "Not Eligible",
+        "Control Bucket",
+        "Treatment 1: Enable Jamspace Mini Shelf Banner"
+      ],
+      "hash": 2622935727,
+      "buckets": [
+        -1,
+        0,
+        1
+      ],
+      "config_keys": [
+        "enabled"
+      ]
+    }
+  },
+  {
+    "data": {
+      "kind": "user",
       "id": "2023-06_activity_shelf_to_detail_page",
       "label": "Activity Shelf to Detail Page",
       "description": [
@@ -8235,27 +8277,6 @@
         "Treatment 1: Enabled"
       ],
       "hash": 4108749034,
-      "buckets": [
-        -1,
-        0,
-        1
-      ],
-      "config_keys": [
-        "enabled"
-      ]
-    }
-  },
-  {
-    "data": {
-      "kind": "user",
-      "id": "2023-08_collectiblesnitroavatardecoiap",
-      "label": "Collectible Nitro Avatar Decorations IAP",
-      "description": [
-        "Not Eligible",
-        "Control Bucket",
-        "Treatment 1: Collectibles IAP"
-      ],
-      "hash": 2588597280,
       "buckets": [
         -1,
         0,
