@@ -1,5 +1,5 @@
-<h3><span style="color: #434343;" data-darkreader-inline-color="">This experimental feature is only available to a limited number of users and servers.</span></h3>
-<h3><span style="color: #434343;" data-darkreader-inline-color="">Current requirement is at least Nvidia GTX 980s/1600s, RTX all models, AMD Radeon RX 500 for Windows and MacBook 2017 or later to clip.</span></h3>
+<h3>This experimental feature is only available to a limited number of users and servers.</h3>
+<h3>Clips are only stored on your local machine. <a href="#h_01H8CG8GDJXMRF174DNNZR5KBA" target="_self">You control</a> which Clips you share on Discord.</h3>
 <p><span class="wysiwyg-font-size-large"><strong>What this article covers: </strong></span></p>
 <ul>
     <li><a href="#h_01H8CG7J4ZKM1SZ1VNSKNP5JY9" target="_self">What are Clips?</a></li>
@@ -7,6 +7,7 @@
         <a href="#h_01H8CG7RQQ5DX463DFEV8YTPV8" target="_self">How to Enable Clips</a>
         <ul>
             <li><a href="#h_01H8CG7XAYJGSN6048EPSPRXJG" target="_self">Overview of Clips Settings</a></li>
+            <li><a href="#h_01H919PQDVD16WNABXRR0JERAW" target="_self">Minimum System Requirements</a></li>
         </ul>
     </li>
     <li><a href="#h_01H8CG85XSK58RRBA1QA03BT6R" target="_self">How to Create Clips</a></li>
@@ -18,7 +19,7 @@
 <p>Do you ever find yourself streaming a game to your friends only to have an AMAZING moment that you wish you could clip to watch and share later? Now you can! While streaming, you can clip any fun or amazing moment by saving them directly to your computer. </p>
 <p>Edit your favorite clips and share epic moments with friends!</p>
 <h1 id="h_01H8CG7RQQ5DX463DFEV8YTPV8">How to Enable Clips</h1>
-<h3><span style="color: #434343;" data-darkreader-inline-color="">Some users may already have Clips enabled by default if their system has high end hardware. </span></h3>
+<h3><span style="color: #434343;" data-darkreader-inline-color="">Some users may already have Clips <a href="#h_01H919PQDVD16WNABXRR0JERAW" target="_self">enabled by default</a> if their system has high end hardware. </span></h3>
 <h3><span style="color: #434343;" data-darkreader-inline-color="">Having Clips enabled may impact your game performance if you have lower end hardware. If you experience any issues with your game, please try disabling Clips.</span></h3>
 <p>Before being able to create Clips, the feature first needs to be enabled. </p>
 <p>1. To enable, tap on <strong>User Settings</strong> then head to <strong>Clips</strong>.</p>
@@ -43,6 +44,9 @@
 <p><strong>Storage Location</strong></p>
 <p>When you clip an epic moment, it’s saved directly on your computer! You can change the storage location at any time by tapping on the current location and selecting a new storage option.</p>
 <p class="wysiwyg-text-align-center"><img src="https://support.discord.com/hc/article_attachments/16920806158743" alt="storage_location.png"></p>
+<h2 id="h_01H919PQDVD16WNABXRR0JERAW">Minimum System Requirements</h2>
+<p>Minimum system requirements for Clips on a Windows machine is either Nvidia GTX 980s/1600s, all Nvidia RTX models, or AMD Radeon RX 500. For Mac machines, a MacBook 2017 or later.</p>
+<p>Users may have Clips enabled by default if their system has either an Nvidia RTX 2000 series or greater, or a Radeon RX5700 series or greater.</p>
 <h1 id="h_01H8CG85XSK58RRBA1QA03BT6R">How to Create Clips</h1>
 <h3><span style="color: #434343;" data-darkreader-inline-color="">When streaming, make sure you’re streaming through Application and not just your screen. This ensures that game audio is also captured.</span></h3>
 <p class="wysiwyg-text-align-center"><img src="https://support.discord.com/hc/article_attachments/16920821667479" alt="clips_how_to_clip.gif"></p>
