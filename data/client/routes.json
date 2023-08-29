@@ -1961,15 +1961,6 @@
       "OPTIONS"
     ]
   },
-  "OAUTH2_TOKEN": {
-    "url": "/oauth2/tokens/:param",
-    "allowed_methods": [
-      "DELETE",
-      "GET",
-      "HEAD",
-      "OPTIONS"
-    ]
-  },
   "OAUTH2_WHITELIST_ACCEPT": {
     "url": "/oauth2/allowlist/accept",
     "allowed_methods": [
