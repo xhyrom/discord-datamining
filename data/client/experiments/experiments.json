@@ -914,6 +914,39 @@
   {
     "data": {
       "kind": "user",
+      "id": "2023-09_mobile_redesign_hfu",
+      "label": "Tabs V2 - HFU Iteration",
+      "description": [
+        "Not Eligible",
+        "Control Bucket",
+        "Treatment 1: DM Tab",
+        "Treatment 2: Launchpad Pull Tab",
+        "Treatment 3: Minimal Channel List",
+        "Treatment 4: Quickswitcher Tab",
+        "Treatment 5: Launchpad Tab",
+        "Treatment 6: Base redesign",
+        "Treatment 7: Full width panel"
+      ],
+      "hash": 3033100557,
+      "buckets": [
+        -1,
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "config_keys": [
+        "enabled"
+      ]
+    }
+  },
+  {
+    "data": {
+      "kind": "user",
       "id": "2023-08_mobile_redesign_phase_one_existing_users",
       "label": "Tabs V2 - Phase One - Existing Users",
       "description": [
