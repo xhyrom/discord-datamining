@@ -8203,6 +8203,91 @@
   },
   {
     "data": {
+      "kind": "guild",
+      "id": "2023-04_server_products",
+      "label": "Server Products",
+      "description": [
+        "Not Eligible",
+        "Control Bucket",
+        "Treatment 1: Enables Server Products (AKA one time purchases for creator guilds)"
+      ],
+      "hash": 2236798974,
+      "buckets": [
+        -1,
+        0,
+        1
+      ],
+      "config_keys": [
+        "enabled"
+      ]
+    },
+    "rollout": {
+      "populations": [
+        {
+          "buckets": {
+            "none": {
+              "rollout": [
+                {
+                  "start": 0,
+                  "end": 10000
+                }
+              ]
+            }
+          },
+          "filters": []
+        }
+      ],
+      "revision": 0,
+      "overrides": {
+        "1": [
+          "1042148168726487101",
+          "1037831818994536579",
+          "1075531421554180096",
+          "706356477765353563",
+          "996817886695927808",
+          "954473884273496124",
+          "1049530956337389668",
+          "1017156457172566096",
+          "1144364474954952796",
+          "510301158716342293",
+          "239599059415859200",
+          "424012709219008522",
+          "336430784204505098",
+          "811348849850581002",
+          "694209447995768833",
+          "538202802770542604",
+          "563549788063268875",
+          "332333431885135874",
+          "1102986978892460148",
+          "53690199142563851"
+        ]
+      },
+      "overrides_formatted": []
+    }
+  },
+  {
+    "data": {
+      "kind": "user",
+      "id": "2023-08_server_shop_upsell",
+      "label": "Server Products Upsell",
+      "description": [
+        "Not Eligible",
+        "Control Bucket",
+        "Treatment 1: Enables Server Products Upsell"
+      ],
+      "hash": 3738060959,
+      "buckets": [
+        -1,
+        0,
+        1
+      ],
+      "config_keys": [
+        "enabled"
+      ]
+    }
+  },
+  {
+    "data": {
       "kind": "user",
       "id": "2021-06_guild_subscriptions_payment_flow_test_page",
       "label": "Test page for guild subscription payment flows",
@@ -8744,70 +8829,6 @@
         "1": [
           "799349358776549378",
           "763838479293349899"
-        ]
-      },
-      "overrides_formatted": []
-    }
-  },
-  {
-    "data": {
-      "kind": "guild",
-      "id": "2023-04_server_products",
-      "label": "Server Products",
-      "description": [
-        "Not Eligible",
-        "Control Bucket",
-        "Treatment 1: Enables Server Products (AKA one time purchases for creator guilds)"
-      ],
-      "hash": 2236798974,
-      "buckets": [
-        -1,
-        0,
-        1
-      ],
-      "config_keys": [
-        "enabled"
-      ]
-    },
-    "rollout": {
-      "populations": [
-        {
-          "buckets": {
-            "none": {
-              "rollout": [
-                {
-                  "start": 0,
-                  "end": 10000
-                }
-              ]
-            }
-          },
-          "filters": []
-        }
-      ],
-      "revision": 0,
-      "overrides": {
-        "1": [
-          "1042148168726487101",
-          "1037831818994536579",
-          "1075531421554180096",
-          "706356477765353563",
-          "996817886695927808",
-          "954473884273496124",
-          "1049530956337389668",
-          "1017156457172566096",
-          "1144364474954952796",
-          "510301158716342293",
-          "239599059415859200",
-          "424012709219008522",
-          "336430784204505098",
-          "811348849850581002",
-          "694209447995768833",
-          "538202802770542604",
-          "563549788063268875",
-          "332333431885135874",
-          "1102986978892460148",
-          "53690199142563851"
         ]
       },
       "overrides_formatted": []
