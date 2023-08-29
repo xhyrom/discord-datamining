@@ -4595,27 +4595,6 @@
   {
     "data": {
       "kind": "user",
-      "id": "2023-08_collectiblesnitroavatardecoiap",
-      "label": "Collectible Nitro Avatar Decorations IAP",
-      "description": [
-        "Not Eligible",
-        "Control Bucket",
-        "Treatment 1: Collectibles IAP"
-      ],
-      "hash": 2588597280,
-      "buckets": [
-        -1,
-        0,
-        1
-      ],
-      "config_keys": [
-        "enabled"
-      ]
-    }
-  },
-  {
-    "data": {
-      "kind": "user",
       "id": "2023-08_profile_effects",
       "label": "Profile Effects User Experiment",
       "description": [
@@ -8339,6 +8318,27 @@
         "Treatment 1: Enabled"
       ],
       "hash": 4108749034,
+      "buckets": [
+        -1,
+        0,
+        1
+      ],
+      "config_keys": [
+        "enabled"
+      ]
+    }
+  },
+  {
+    "data": {
+      "kind": "user",
+      "id": "2023-08_collectiblesnitroavatardecoiap",
+      "label": "Collectible Nitro Avatar Decorations IAP",
+      "description": [
+        "Not Eligible",
+        "Control Bucket",
+        "Treatment 1: Collectibles IAP"
+      ],
+      "hash": 2588597280,
       "buckets": [
         -1,
         0,
