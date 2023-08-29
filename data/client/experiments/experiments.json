@@ -3805,21 +3805,29 @@
   {
     "data": {
       "kind": "user",
-      "id": "2023-08_collectiblesnitroavatardecoiap",
-      "label": "Collectible Nitro Avatar Decorations IAP",
+      "id": "2023-05_collectibles",
+      "label": "Collectibles",
       "description": [
         "Not Eligible",
         "Control Bucket",
-        "Treatment 1: Collectibles IAP"
+        "Treatment 1: Nitro with collecting",
+        "Treatment 2: Non-nitro with collecting upsells",
+        "Treatment 3: Non-nitro with temporary avatar decorations upsells",
+        "Treatment 100: collecting with uploading"
       ],
-      "hash": 2588597280,
+      "hash": 2455278797,
       "buckets": [
         -1,
         0,
-        1
+        1,
+        2,
+        3,
+        100
       ],
       "config_keys": [
-        "enabled"
+        "canUseCollectibles",
+        "canUseAvatarDecorations",
+        "canUploadAvatarDecorations"
       ]
     }
   },
@@ -4755,35 +4763,6 @@
       ],
       "config_keys": [
         "enabled"
-      ]
-    }
-  },
-  {
-    "data": {
-      "kind": "user",
-      "id": "2023-05_collectibles",
-      "label": "Collectibles",
-      "description": [
-        "Not Eligible",
-        "Control Bucket",
-        "Treatment 1: Nitro with collecting",
-        "Treatment 2: Non-nitro with collecting upsells",
-        "Treatment 3: Non-nitro with temporary avatar decorations upsells",
-        "Treatment 100: collecting with uploading"
-      ],
-      "hash": 2455278797,
-      "buckets": [
-        -1,
-        0,
-        1,
-        2,
-        3,
-        100
-      ],
-      "config_keys": [
-        "canUseCollectibles",
-        "canUseAvatarDecorations",
-        "canUploadAvatarDecorations"
       ]
     }
   },
@@ -8339,6 +8318,27 @@
         "Treatment 1: Enabled"
       ],
       "hash": 4108749034,
+      "buckets": [
+        -1,
+        0,
+        1
+      ],
+      "config_keys": [
+        "enabled"
+      ]
+    }
+  },
+  {
+    "data": {
+      "kind": "user",
+      "id": "2023-08_collectiblesnitroavatardecoiap",
+      "label": "Collectible Nitro Avatar Decorations IAP",
+      "description": [
+        "Not Eligible",
+        "Control Bucket",
+        "Treatment 1: Collectibles IAP"
+      ],
+      "hash": 2588597280,
       "buckets": [
         -1,
         0,
