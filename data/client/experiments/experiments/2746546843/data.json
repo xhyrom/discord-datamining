@@ -1,0 +1,21 @@
+{
+  "data": {
+    "kind": "user",
+    "id": "2023-08_login_mfav2",
+    "label": "Login MFAv2",
+    "description": [
+      "Not Eligible",
+      "Treatment 0: Control",
+      "Treatment 1: Enabled"
+    ],
+    "hash": 2746546843,
+    "buckets": [
+      -1,
+      0,
+      1
+    ],
+    "config_keys": [
+      "enabled"
+    ]
+  }
+}
