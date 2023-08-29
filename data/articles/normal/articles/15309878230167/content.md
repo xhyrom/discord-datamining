@@ -1,9 +1,9 @@
 <p id="docs-internal-guid-9fccae0e-7fff-47f7-0fe4-680e96873032">Starting from July 5, 2023 (10:00am PST) to October 3, 2023 (11:59pm PST), SoundCloud Next members can claim 1 month of free Discord Nitro and SoundCloud NextPro members can claim 3 months of free Discord Nitro. Learn below about how you can claim<a href="https://support.discord.com/hc/en-us/articles/115000435108"> <span class="wysiwyg-underline" style="color: #1155cc;" data-darkreader-inline-color="">Discord Nitro</span></a>.</p>
 <p><span class="wysiwyg-font-size-large"><strong>Promotion Summary</strong></span></p>
 <p><strong>Offer Details:</strong> <br>1 month of free Discord Nitro for SoundCloud Next members<br>3 months of free Discord Nitro for SoundCloud NextPro members</p>
-<p><strong>Who is Eligible: </strong>Users who have not had an active Discord Nitro subscription on their accounts in the past 12 months are eligible.</p>
-<p>Users who previously had a Discord Nitro subscription and currently hold a Nitro Classic or Nitro Basic subscription that has been active for less than 12 months are ineligible.</p>
-<p>If a user currently has a Nitro Basic, Nitro Classic, or Server Boosting only subscription active on their account and you’ve never had a Nitro subscription, redeeming this promotion will override that subscription.</p>
+<p><strong>Who is Eligible: </strong>Users who have never had an active Nitro subscription on their Discord accounts are eligible to redeem this Nitro promotion.</p>
+<p>Users who have had a Discord Nitro subscription at any point on their accounts and have had a Nitro Classic or Nitro Basic subscription in the past 12 months are ineligible to redeem this promotion.</p>
+<p>If a user has had a Nitro Basic, Nitro Classic, or Server Boosting subscription active on their account and they’ve never had a Nitro subscription, redeeming this promotion will override that subscription.</p>
 <p>We will not be able to refund any leftover subscription time from Nitro Basic, Nitro Classic, and Server Boosting subscriptions, and the user will be forfeiting the remainder of the existing sub when activating the 1 or 3 months Nitro trial.</p>
 <p>This promotion is only available in certain regions. If you receive an "Unknown Gift Code" error during the claim/redemption process, you are not eligible to redeem this promotion. You can learn more at this<a href="https://support.discord.com/hc/en-us/articles/4708041338391" target="_blank" rel="noopener noreferrer"> Help Center article.</a></p>
 <p><strong>Requirements:</strong> Claim through SoundCloud for Artists Benefits Page by September 27, 2023, and redeem in Discord account by September 27, 2023.</p>
@@ -70,9 +70,9 @@
 <h3>
     <strong>This promotion is only available in certain regions. If you receive an "Unknown Gift Code" error during the claim/redemption process, you are not eligible to redeem this promotion. You can learn more at this</strong><a href="https://support.discord.com/hc/en-us/articles/4708041338391" target="_blank" rel="noopener noreferrer"> Help Center article.</a>
 </h3>
-<p>Users who have not had an active Nitro subscription on their Discord accounts in the past 12 months are eligible to redeem this Nitro promotion.</p>
-<p>Users who previously had a Discord Nitro subscription and currently hold a Nitro Classic or Nitro Basic subscription that has been active for less than 12 months are ineligible.</p>
-<p>If a user currently has a Nitro Basic, Nitro Classic, or Server Boosting only subscription active on their account and you’ve never had a Nitro subscription, redeeming this promotion will override that subscription.</p>
+<p id="docs-internal-guid-6aebcbee-7fff-a06b-70c3-317d1cabc744">Users who have never had an active Nitro subscription on their Discord accounts are eligible to redeem this Nitro promotion.</p>
+<p>Users who have had a Discord Nitro subscription at any point on their accounts and have had a Nitro Classic or Nitro Basic subscription in the past 12 months are ineligible to redeem this promotion.</p>
+<p>If a user has had a Nitro Basic, Nitro Classic, or Server Boosting subscription active on their account and they’ve never had a Nitro subscription, redeeming this promotion will override that subscription.</p>
 <h2 id="h_01H3X7KTV17S2Y42GRTKA145AS"><strong>Step by Step Redeem Instructions</strong></h2>
 <p>If you're eligible and ready to redeem this Nitro subscription on your own Discord account, you can follow these steps below to redeem the promo.</p>
 <h3>
@@ -130,8 +130,8 @@
     <li>After accepting the promo to your account, you'll now be automatically redirected to your <strong>Subscriptions</strong> tab in your User Settings to see your newly activated Nitro subscription on your account.</li>
 </ul>
 <h2 id="h_01H3X7M4H82RC1EDBHTFYVHWB0"><strong>What if I am an Active Nitro Basic, Nitro Classic, or Server Boosting Subscriber? </strong></h2>
-<p>Just to clarify - if you previously had a Discord Nitro subscription and currently hold a Nitro Classic or Nitro Basic subscription that has been active for less than 12 months, you are ineligible to redeem this promotion.</p>
-<p>So long as you currently have a Nitro Basic, Nitro Classic, or Server Boosting only subscription active on your account and you’ve never had a Nitro subscription, you will be able to redeem this promotion and replace it with the 1 month Nitro subscription.</p>
+<p id="docs-internal-guid-4751f8e9-7fff-98ec-dcc1-0aa0c8294342">Just to clarify - if you have had a Discord Nitro subscription at any point on your account and have had a Nitro Classic or Nitro Basic subscription in the past 12 months, you are ineligible to redeem this promotion.</p>
+<p>So long as you have had a Nitro Basic, Nitro Classic, or Server Boosting subscription active on your account and you’ve never had a Nitro subscription, you will be able to redeem this promotion and replace it with the 1 or 3 month Nitro subscription.</p>
 <h3>
     <strong>HOWEVER, please note:</strong><strong><br></strong><strong>- By choosing to activate this 1 month/3 months trial, you will lose any features associated with your current subscriptions, and **you will not receive a refund for any remaining value on your current subscription**.</strong>
 </h3>
@@ -165,12 +165,12 @@
 <p><strong>Q: Who can claim this promotion from their SoundCloud email?</strong></p>
 <p><strong>A: </strong>Only SoundCloud Next and SoundCloud NextPro users who have opted into this Discord Nitro promotion in the SoundCloud for Artists Benefits Page are able to receive this promotion in the email associated with their SoundCloud account.</p>
 <p><strong>Q: Who can redeem this Nitro trial to their Discord account?</strong></p>
-<p><strong>A: </strong>Users who haven’t had a Nitro subscription on their Discord accounts in the past 12 months are able to redeem this Nitro trial.</p>
-<p>Additionally, users who previously had a Discord Nitro subscription and currently hold a Nitro Classic or Nitro Basic subscription that has been active for less than 12 months are ineligible.</p>
+<p><strong>A: </strong><span id="docs-internal-guid-0e6f42dd-7fff-4e0b-2f2f-509c6b82239f">Users who have never had an active Nitro subscription on their Discord accounts are eligible to redeem this Nitro promotion.</span></p>
+<p>Additionally, users who previously had a Discord Nitro subscription and have had a Nitro Classic or Nitro Basic subscription in the past 12 months are ineligible.</p>
 <p>This promotion is only available in certain regions. If you receive an "Unknown Gift Code" error during the claim/redemption process, you are not eligible to redeem this promotion. You can learn more at this<a href="https://support.discord.com/hc/en-us/articles/4708041338391" target="_blank" rel="noopener noreferrer"> Help Center article.</a></p>
 <p><strong>Q: What if I'm a current or previous Nitro Basic, Nitro Classic, or a Server Boost subscriber? Can I also take part in this promotion? </strong></p>
-<p><strong>A: </strong>If you previously had a Discord Nitro subscription and currently hold a Nitro Classic or Nitro Basic subscription that has been active for less than 12 months, you are ineligible to redeem this promotion.</p>
-<p>So long as you currently have a Nitro Basic, Nitro Classic, or Server Boosting only subscription active on your account and you’ve never had a Nitro subscription, you will be able to redeem this promotion and replace it with the 1 month or 3 month Nitro trial subscription.</p>
+<p><strong>A: </strong>If you previously had a Discord Nitro subscription at any point on your accounts and have had a Nitro Classic or Nitro Basic subscription in the past 12 months, you are ineligible to redeem this promotion.</p>
+<p>If you have had a Nitro Basic, Nitro Classic, or Server Boosting subscription active on your account and you’ve never had a Nitro subscription,  you will be able to redeem this promotion and replace it with the 1 month or 3 month Nitro trial subscription.</p>
 <h3>
     <strong>HOWEVER, please note:</strong><strong><br></strong><strong>- By choosing to activate this 1 month/3 months trial, you will lose any features associated with your current subscriptions, and **you will not receive a refund for any remaining value on your current subscription**.</strong>
 </h3>
@@ -197,7 +197,7 @@
 <p><strong>A:</strong> If you're seeing an "Oh no! It looks like you have Nitro already" error, that means that the Discord account you're trying to redeem this promotion on currently has a Nitro subscription so it is ineligible for this Nitro promotion.</p>
 <p>Please make sure you're logged into the account that you want to redeem this promotion on. Or you can give the promotion link to a friend who hasn't had Nitro before.</p>
 <p><strong>Q: I see a "Sorry, looks like you’ve already had a Nitro sub!" error when I try to redeem my Nitro promo link.</strong></p>
-<p><strong>A: </strong>If you're seeing an “Sorry, looks like you’ve already had a Nitro sub” error, that means that you've previously subscribed to Nitro on your Discord account in the past 12 months and you won't be able to redeem this 1 month/3 month perk. However, this promo link can be gifted to a friend.</p>
+<p><strong>A: </strong>If you're seeing an “Sorry, looks like you’ve already had a Nitro sub” error, that means that you've previously subscribed to Nitro on your Discord account and you won't be able to redeem this 1 month/3 month perk. However, this promo link can be gifted to a friend.</p>
 <p>If you have never subscribed to Nitro, please submit a ticket through our support system:<a href="https://dis.gd/contact" target="_blank" rel="noopener noreferrer"> https://dis.gd/contact</a> and our support team will be able to investigate further.</p>
 <p>Be sure to include your full Discord ID and email address tied to your Discord account</p>
 <p><strong>Q: I see a "This gift has already been redeemed" error when I try to redeem my Nitro promo link.</strong></p>

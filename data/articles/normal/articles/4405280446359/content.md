@@ -8,9 +8,10 @@
     <li><span id="docs-internal-guid-9fc41b47-7fff-3c5e-a0d9-9a6ff44af0ee">If you currently have a YouTube Premium trial subscription, you will not be eligible to claim this promotion.</span></li>
 </ul>
 <p><span style="font-weight: 400;"><span class="wysiwyg-color-blue90"><strong>To redeem in Discord, </strong></span></span>you must redeem on the Discord desktop or browser app.</p>
-<p>Users who have not had an active Discord Nitro subscription on their accounts in the past 12 months are eligible.</p>
-<p>Users who previously had a Discord Nitro subscription and currently hold a Nitro Classic or Nitro Basic subscription that has been active for less than 12 months are ineligible.</p>
-<p>If a user currently has a Nitro Basic, Nitro Classic, or Server Boosting only subscription active on their account and you’ve never had a Nitro subscription, redeeming this promotion will override that subscription.</p>
+<p id="docs-internal-guid-3b3eb23a-7fff-b82f-5b3a-3be02f78a6ba">Users who have never had an active Nitro subscription on their Discord accounts are eligible to redeem this Nitro promotion.</p>
+<p>Users who have had a Discord Nitro subscription at any point on their accounts and have had a Nitro Classic or Nitro Basic subscription in the past 12 months are ineligible to redeem this promotion.</p>
+<p>If a user has had a Nitro Basic, Nitro Classic, or Server Boosting subscription active on their account and they’ve never had a Nitro subscription, redeeming this promotion will override that subscription.</p>
+<p><span id="docs-internal-guid-741bb6d5-7fff-39dc-62d2-bc72d7b6b302">We will not be able to refund any leftover subscription time from those, and the user will be forfeiting the remainder of the existing sub when activating the 3 month Nitro trial.</span></p>
 <div id="chat-messages-874720871959375922" class="message-2qnXI6 cozyMessage-3V1Y8y wrapper-2a6GCs cozy-3raOZG zalgo-jN1Ica" tabindex="-1" data-list-item-id="chat-messages___chat-messages-874720871959375922">
     <div class="contents-2mQqc9">
         <div class="markup-2BOw-j messageContent-2qWWxC"><span class="wysiwyg-color-orange110"><strong style="color: #cc7a00; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif;">Requirements:</strong></span></div>
@@ -87,9 +88,9 @@
 <h1 id="h_01FCFN1GRYWSNKT58PTCR8ZT8S" class="wysiwyg-text-align-left"><strong>How do I redeem the Nitro Trial on my Discord Account? </strong></h1>
 <p>Once you have claimed the promo link in your YouTube Premium Member Hub, you'll now need to officially redeem this promo link on your <span style="font-weight: 400;">Discord</span> account (or share this code with a friend)! </p>
 <h2 id="h_01FCZN7DAE284PT52X250Q8VN6">Eligibility for Redeeming the Nitro Trial</h2>
-<p><span id="docs-internal-guid-cd6e06be-7fff-e72d-233d-f320c288e728">Users who have not had an active Nitro subscription on their Discord accounts in the past 12 months are eligible to redeem this Nitro promotion.</span></p>
-<p id="docs-internal-guid-615a4735-7fff-b72d-6db1-b9b6d934d6f1">Users who previously had a Discord Nitro subscription and currently hold a Nitro Classic or Nitro Basic subscription that has been active for less than 12 months are ineligible.</p>
-<p>If a user currently has a Nitro Basic, Nitro Classic, or Server Boosting only subscription active on their account and you’ve never had a Nitro subscription, redeeming this promotion will override that subscription.</p>
+<p id="docs-internal-guid-68e732f1-7fff-c89e-7e20-91446eaf67fe">Users who have never had an active Nitro subscription on their Discord accounts are eligible to redeem this Nitro promotion.</p>
+<p>Users who have had a Discord Nitro subscription at any point on their accounts and have had a Nitro Classic or Nitro Basic subscription in the past 12 months are ineligible to redeem this promotion.</p>
+<p>If a user has had a Nitro Basic, Nitro Classic, or Server Boosting subscription active on their account and they’ve never had a Nitro subscription, redeeming this promotion will override that subscription.</p>
 <h2 id="h_01FCFN3WP4XMA0KH15C7X30TP1">Step by Step Redeem Instructions</h2>
 <p><span style="font-weight: 400;">If you're eligible and ready to redeem this Nitro subscription on your own Discord account, you can follow these steps below to redeem the promo!</span></p>
 <h3>
@@ -153,8 +154,8 @@
     </li>
 </ul>
 <h2 id="h_01FCZN7TQYJPEDJPZ8KT5GZM8K"><span style="font-weight: 400;">What if I am an Active Nitro Basic, Nitro Classic, or Server Boosting Subscriber? </span></h2>
-<p id="docs-internal-guid-347df06c-7fff-1769-ba1c-4fc73fcc9651">Just to clarify - if you previously had a Discord Nitro subscription and currently hold a Nitro Classic or Nitro Basic subscription that has been active for less than 12 months, you are ineligible to redeem this promotion.</p>
-<p>So long as you currently have a Nitro Basic, Nitro Classic, or Server Boosting only subscription active on your account and you’ve never had a Nitro subscription, you will be able to redeem this promotion and replace it with the 3 month Nitro subscription.<span id="docs-internal-guid-ea385d71-7fff-fda6-a223-6f853a37dd8b"></span></p>
+<p id="docs-internal-guid-dc46be8e-7fff-56de-ef59-ebef23a6c25a">Just to clarify - if you have had a Discord Nitro subscription at any point on your account and have had a Nitro Classic or Nitro Basic subscription in the past 12 months, you are ineligible to redeem this promotion.</p>
+<p>So long as you have had a Nitro Basic, Nitro Classic, or Server Boosting subscription active on your account and you’ve never had a Nitro subscription, you will be able to redeem this promotion and replace it with the 3 month Nitro subscription.<span id="docs-internal-guid-ea385d71-7fff-fda6-a223-6f853a37dd8b"></span></p>
 <h3>
     <span class="wysiwyg-color-red110"><strong>HOWEVER, please note: <br></strong></span><span class="wysiwyg-color-red110" style="font-weight: 400;">- By choosing to activate this 3 month trial, you will lose any features associated with your current subscriptions, and **<strong>you will not receive a refund for any remaining value on your current subscription</strong>**. </span>
 </h3>
@@ -191,10 +192,12 @@
     <li><span style="font-weight: 400;"><strong>Note:</strong> <span id="docs-internal-guid-9fc41b47-7fff-3c5e-a0d9-9a6ff44af0ee">If you currently have a YouTube Premium trial subscription, you will not be eligible to claim this promotion.</span><br></span></li>
 </ul>
 <p><span class="wysiwyg-color-blue80 wysiwyg-font-size-large"><strong>Q: Who can redeem this Nitro trial to their Discord account?</strong></span></p>
-<p><span style="font-weight: 400;"><strong>A: </strong><span id="docs-internal-guid-2d3432d0-7fff-c03d-1ff7-4a6a1c20fe19">Only users who haven’t had a Nitro subscription on their Discord accounts in the past 12 months are able to redeem this Nitro trial.</span></span></p>
+<p><span style="font-weight: 400;"><strong>A: </strong><span id="docs-internal-guid-12bf5478-7fff-b434-8022-2f5d44d66d57">Users who have never had an active Nitro subscription on their Discord accounts are eligible to redeem this Nitro promotion.</span></span></p>
+<p><span style="font-weight: 400;">Additionally, users who previously had a Discord Nitro subscription and have had a Nitro Classic or Nitro Basic subscription in the past 12 months are ineligible</span></p>
 <p><strong><span class="wysiwyg-color-blue80 wysiwyg-font-size-large">Q: What if I'm a current or previous Nitro Classic subscriber or a Server Boost subscriber? Can I also take part in this promotion? </span></strong></p>
-<p id="docs-internal-guid-998aa068-7fff-9ee4-5550-f77fa89003d3"><strong>A: </strong>If you previously had a Discord Nitro subscription and currently hold a Nitro Classic or Nitro Basic subscription that has been active for less than 12 months, you are ineligible to redeem this promotion.</p>
-<p>So long as you currently have a Nitro Basic, Nitro Classic, or Server Boosting only subscription active on your account and you’ve never had a Nitro subscription, you will be able to redeem this promotion and replace it with the 3 months Nitro subscription.</p>
+<p><strong>A:</strong></p>
+<p id="docs-internal-guid-a1539745-7fff-0084-80f8-40eb0a0ca28b">If you previously had a Discord Nitro subscription at any point on your accounts and have had a Nitro Classic or Nitro Basic subscription in the past 12 months, you are ineligible to redeem this promotion.</p>
+<p>If you have had a Nitro Basic, Nitro Classic, or Server Boosting subscription active on your account and you’ve never had a Nitro subscription,  you will be able to redeem this promotion and replace it with the 3 months Nitro subscription.</p>
 <h3>
     <span class="wysiwyg-color-red110"><strong>HOWEVER, please note: <br></strong></span><span class="wysiwyg-color-red110" style="font-weight: 400;">- By choosing to activate this 3 month trial, you will lose any features associated with your current subscriptions, and **<strong>you will not receive a refund for any remaining value on your current subscription</strong>**. </span>
 </h3>
@@ -222,7 +225,7 @@
 <p><strong>A:</strong> If you're seeing an "Oh no! It looks like you have Nitro already" error, that means that the Discord account you're trying to redeem this promotion on currently has a Nitro subscription so it is ineligible for this Nitro promotion.</p>
 <p>Please make sure you're logged into the account that you want to redeem this promotion on. Or you can give the promotion link to a friend who hasn't had Nitro before!</p>
 <p id="h_01FBTHPKVBQDXANKPFZ4QJH612"><strong><span class="wysiwyg-color-blue80 wysiwyg-font-size-large">Q: I see a "<span class="wysiwyg-underline">Sorry, looks like you’ve already had a Nitro sub!</span>" error when I try to redeem my Nitro promo link!</span></strong></p>
-<p><strong>A: </strong>If you're seeing an “Sorry, looks like you’ve already had a Nitro sub” error, that means that you've previously subscribed to Nitro on your Discord account in the past 12 months and you won't be able to redeem this 3 month perk! However, this promo link can be gifted to a friend!</p>
+<p><strong>A: </strong>If you're seeing an “Sorry, looks like you’ve already had a Nitro sub” error, that means that you've previously subscribed to Nitro on your Discord account and you won't be able to redeem this 3 month perk! However, this promo link can be gifted to a friend!</p>
 <p>If you have never subscribed to Nitro, please submit a ticket through our support system:<a href="https://dis.gd/contact" target="_blank" rel="noopener noreferrer"> https://dis.gd/contact</a> and our support team will be able to investigate further.</p>
 <p>Be sure to include your full Discord ID and email address tied to your Discord account</p>
 <p><strong><span class="wysiwyg-color-blue80 wysiwyg-font-size-large">Q: I see a "<span class="wysiwyg-underline">This gift has already been redeemed</span>" error when I try to redeem my Nitro promo link!</span></strong></p>
