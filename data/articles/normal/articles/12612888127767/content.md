@@ -1,5 +1,4 @@
 <h3 id="01H7GS346K149V3V2H2VK55MF4"><span style="color: #434343;" data-darkreader-inline-color="">This experimental feature is only available to a limited number of communities!</span></h3>
-<h3 id="01H7GS346KYP8JTHNKNNV1YWAE"><span style="color: #434343;" data-darkreader-inline-color="">Soundboard is only available to play on the desktop app. Mobile app users will be able to hear sounds played through Soundboard but not play sounds themselves.<br></span></h3>
 <p>What’s that sound? Is it a bird? Is it a plane? No, it’s your friend smashing the button with the airhorn sound in the server’s <strong>Soundboard</strong>! Soundboard is your way to react in a Discord voice channel with brief audio clips. Learn more about how you can use Soundboard below. </p>
 <p><span class="wysiwyg-font-size-large"><strong>What this article covers: </strong></span></p>
 <ul>
@@ -12,6 +11,8 @@
     <li>
         <a href="https://support.discord.com/hc/en-us/articles/12612888127767#h_01GTYZSGZ15S6B5RVD4W8EZWG9">How do I use Soundboard?</a>
         <ul>
+            <li><a href="https://support.discord.com/hc/en-us/articles/12612888127767#h_01H93M0BWWG19PFPB0SNM7RQ7W">Desktop</a></li>
+            <li><a href="https://support.discord.com/hc/en-us/articles/12612888127767#h_01H93M0X2JH7F0M2VBG87VN3HH">Mobile</a></li>
             <li><a href="https://support.discord.com/hc/en-us/articles/12612888127767#h_01GTYZSNM9T3V440WDB2SVEVDX">How can I upload new sounds to the server’s Soundboard?</a></li>
         </ul>
     </li>
@@ -34,6 +35,7 @@
 <p>Tier 2: <strong>35 slots</strong></p>
 <p>Tier 3: <strong>48 slots</strong></p>
 <h1 id="h_01GTYZSGZ15S6B5RVD4W8EZWG9">How do I use Soundboard?</h1>
+<h2 id="h_01H93M0BWWG19PFPB0SNM7RQ7W">Desktop</h2>
 <p>1. Navigate to a server and join your intended voice channel.</p>
 <p class="wysiwyg-text-align-center"><img src="https://support.discord.com/hc/article_attachments/12931074785431" alt="image5.png"></p>
 <p>2. While in the voice channel, fully pull up the channel so that you can see everyone’s Avatars. If Soundboard is enabled, you should see a music icon on the bottom left. Press on the icon to open up Soundboard. If a user is deafened in the channel, they will not hear the sound play.</p>
@@ -43,6 +45,10 @@
 <p>4. With  Soundboard open, you can hover over any current available sound and then press <strong>Play</strong> to play that sound. Pressing <strong>Play</strong> will play the sound for everyone in the voice channel to hear.</p>
 <p class="wysiwyg-text-align-center"><img src="https://support.discord.com/hc/article_attachments/12931076069655" alt="image10.png"></p>
 <p>5. If there’s a sound you really like, you can also press on the <strong>Star icon</strong> to favorite a sound or to preview a sound and only play it for yourself.</p>
+<h2 id="h_01H93M0X2JH7F0M2VBG87VN3HH">Mobile</h2>
+<p>1. Navigate to a server and join your intended voice channel.</p>
+<p>2. While in the voice channel, swipe from the bottom up to pull up the mobile menu and then tap on <strong>Soundboard</strong>.</p>
+<p>3. Here you will see a list of available servers and sounds that you can use. Tap on any sound that you’d like to play.</p>
 <h2 id="h_01GTYZSNM9T3V440WDB2SVEVDX">How can I upload new sounds to the server’s Soundboard?</h2>
 <p>To upload new sounds press on the <strong>Add Sound</strong> button with the Soundboard panel open.</p>
 <p class="wysiwyg-text-align-center"><img src="https://support.discord.com/hc/article_attachments/12931070997527" alt="image3.png"></p>
@@ -80,3 +86,6 @@
 <p><strong>A.</strong> For Windows only, <strong>CTRL + `</strong> is the Soundboard keybind to easily use Soundboard from within the game overlay.</p>
 <p><strong>Q.</strong> Can any server’s Soundboard sounds be used in other servers?</p>
 <p><strong>A. </strong>In order to use Soundboard sounds across servers, you do need to have an active <a href="https://support.discord.com/hc/en-us/articles/115000435108" target="_blank" rel="noopener noreferrer">Nitro subscription</a>. You do not need Nitro in order to use the Soundboard within the server itself.</p>
+<div id="gtx-trans" style="position: absolute; left: 23px; top: 238.641px;">
+    <div class="gtx-trans-icon"> </div>
+</div>
