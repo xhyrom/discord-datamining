@@ -46,7 +46,7 @@
             <td style="width: 50%; height: 148px;">
                 <p id="docs-internal-guid-27fbe1be-7fff-0ce0-c064-babaacc0b45c">Be sure to use a valid phone number. </p>
                 <p>VOIP, Burner, or Landline numbers cannot be used. </p>
-                <p>Then, try re-entering the phone number you wish to verify. If you are still running into any issues, contact our support team here.</p>
+                <p>Then, try re-entering the phone number you wish to verify. If you are still running into any issues, contact our support team <a href="https://dis.gd/contact" target="_blank" rel="noopener">here</a>.</p>
             </td>
         </tr>
         <tr style="height: 79px;">
@@ -70,7 +70,7 @@
                 <strong><span id="docs-internal-guid-0d3de095-7fff-af91-b8c7-e492bd9d5f86">Captcha: </span></strong>this is an additional security step that you may run into while verifying
             </td>
             <td style="width: 50%; height: 67px;">
-                <p id="docs-internal-guid-31811107-7fff-5e99-7967-c62c3f09fe69">If you’re running into issues while completing the captcha, please reach out to our support team here.</p>
+                <p id="docs-internal-guid-31811107-7fff-5e99-7967-c62c3f09fe69">If you’re running into issues while completing the captcha, please reach out to our support team <a href="https://dis.gd/contact" target="_blank" rel="noopener">here</a>.</p>
             </td>
         </tr>
     </tbody>
