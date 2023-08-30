@@ -14588,6 +14588,7 @@
   "COLLECTIBLES_NITRO_EXCLUSIVE": "\"Nitro exclusive\"",
   "COLLECTIBLES_PERMANENT_COLLECTION": "\"This decoration is now part of your permanent collection and can be used at anytime!\"",
   "COLLECTIBLES_YOU_COLLECTED": "\"You've collected {itemName}.\"",
+  "COLLECTIBLES_ALREADY_OWNED": "\"Already owned\"",
   "MOBILE_TIME_REMAINING_DAYS": "\"{days} days remaining\"",
   "MOBILE_TIME_REMAINING_HOURS_MINUTES_SECONDS": "\"{hours}:{minutes}:{seconds} remaining\"",
   "DIRECTORY_CATEGORY_TOWN_HALL_1": "\"Staff Picks\"",
