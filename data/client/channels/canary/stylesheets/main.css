@@ -26235,105 +26235,6 @@ img[alt] {
     display: inline-block
 }
 
-.header-10w-8z {
-    padding: 24px 16px 0;
-    -webkit-box-flex: 0;
-    -ms-flex-positive: 0;
-    flex-grow: 0;
-    overflow: hidden
-}
-
-.subtitle-tyos6H {
-    margin-top: 8px
-}
-
-.closeButton-JlCWUb {
-    z-index: 1000;
-    position: absolute;
-    top: 12px;
-    right: 12px
-}
-
-.content-NHYufd {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: column;
-    flex-direction: column;
-    margin-top: 24px;
-    padding: 0 24px 24px
-}
-
-.content-NHYufd,
-.smsInputContainer-1k4eKM {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex
-}
-
-.smsInputContainer-1k4eKM {
-    gap: 8px
-}
-
-.smsInput-xmVCF4 {
-    -webkit-box-flex: 1;
-    -ms-flex-positive: 1;
-    flex-grow: 1
-}
-
-.error-2POeZP {
-    margin-top: 8px
-}
-
-.footer-S6BaJ1 {
-    -webkit-box-pack: justify;
-    -ms-flex-pack: justify;
-    justify-content: space-between;
-    padding-left: 8px
-}
-
-.listItemContainer-1ONsCK {
-    border-radius: 8px;
-    border: 1px solid var(--background-modifier-accent);
-    background-color: var(--background-primary);
-    margin-bottom: 8px;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
-    cursor: pointer;
-    width: 100%;
-    padding: 0
-}
-
-.listItemContainer-1ONsCK:hover {
-    background-color: var(--background-modifier-hover)
-}
-
-.keyboard-mode .listItemContainer-1ONsCK:focus {
-    background-color: var(--background-modifier-selected)
-}
-
-.listItemContainer-1ONsCK:active {
-    background-color: var(--background-modifier-active)
-}
-
-.listItemIcon-3velcv {
-    margin: 8px 8px 8px 16px
-}
-
-.listItemText-3j2xvB {
-    overflow: hidden;
-    text-overflow: ellipsis
-}
-
-.listItemArrow-2gMX84 {
-    margin-left: auto;
-    margin-right: 16px;
-    color: var(--interactive-normal)
-}
-
 .container-1DQLOU {
     position: absolute;
     top: 0;
@@ -33466,6 +33367,105 @@ img[alt] {
 .authBoxWhenMobileWebHandoffIsVisible-1wc3YQ {
     top: 70px !important;
     height: calc(100% - 70px) !important
+}
+
+.header-10w-8z {
+    padding: 24px 16px 0;
+    -webkit-box-flex: 0;
+    -ms-flex-positive: 0;
+    flex-grow: 0;
+    overflow: hidden
+}
+
+.subtitle-tyos6H {
+    margin-top: 8px
+}
+
+.closeButton-JlCWUb {
+    z-index: 1000;
+    position: absolute;
+    top: 12px;
+    right: 12px
+}
+
+.content-NHYufd {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    margin-top: 24px;
+    padding: 0 24px 24px
+}
+
+.content-NHYufd,
+.smsInputContainer-1k4eKM {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex
+}
+
+.smsInputContainer-1k4eKM {
+    gap: 8px
+}
+
+.smsInput-xmVCF4 {
+    -webkit-box-flex: 1;
+    -ms-flex-positive: 1;
+    flex-grow: 1
+}
+
+.error-2POeZP {
+    margin-top: 8px
+}
+
+.footer-S6BaJ1 {
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    padding-left: 8px
+}
+
+.listItemContainer-1ONsCK {
+    border-radius: 8px;
+    border: 1px solid var(--background-modifier-accent);
+    background-color: var(--background-primary);
+    margin-bottom: 8px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    cursor: pointer;
+    width: 100%;
+    padding: 0
+}
+
+.listItemContainer-1ONsCK:hover {
+    background-color: var(--background-modifier-hover)
+}
+
+.keyboard-mode .listItemContainer-1ONsCK:focus {
+    background-color: var(--background-modifier-selected)
+}
+
+.listItemContainer-1ONsCK:active {
+    background-color: var(--background-modifier-active)
+}
+
+.listItemIcon-3velcv {
+    margin: 8px 8px 8px 16px
+}
+
+.listItemText-3j2xvB {
+    overflow: hidden;
+    text-overflow: ellipsis
+}
+
+.listItemArrow-2gMX84 {
+    margin-left: auto;
+    margin-right: 16px;
+    color: var(--interactive-normal)
 }
 
 .wrapper-3mwv0u {
@@ -166386,4 +166386,4 @@ html .invoiceCancelRow-dVOR64 {
     margin-bottom: 16px
 }
 
-/*# sourceMappingURL=40532.fa233d52c0e6f8e73593.css.map*/
+/*# sourceMappingURL=40532.15d44192ebf15925b2ff.css.map*/
