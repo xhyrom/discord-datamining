@@ -3877,27 +3877,6 @@
   {
     "data": {
       "kind": "user",
-      "id": "2023-08_collectiblesnitroavatardecoiap",
-      "label": "Collectible Nitro Avatar Decorations IAP",
-      "description": [
-        "Not Eligible",
-        "Control Bucket",
-        "Treatment 1: Collectibles IAP"
-      ],
-      "hash": 2588597280,
-      "buckets": [
-        -1,
-        0,
-        1
-      ],
-      "config_keys": [
-        "enabled"
-      ]
-    }
-  },
-  {
-    "data": {
-      "kind": "user",
       "id": "2023-05_clyde_ai_dm",
       "label": "DMs to Clyde",
       "description": [
@@ -4827,35 +4806,6 @@
       ],
       "config_keys": [
         "enabled"
-      ]
-    }
-  },
-  {
-    "data": {
-      "kind": "user",
-      "id": "2023-05_collectibles",
-      "label": "Collectibles",
-      "description": [
-        "Not Eligible",
-        "Control Bucket",
-        "Treatment 1: Nitro with collecting",
-        "Treatment 2: Non-nitro with collecting upsells",
-        "Treatment 3: Non-nitro with temporary avatar decorations upsells",
-        "Treatment 100: collecting with uploading"
-      ],
-      "hash": 2455278797,
-      "buckets": [
-        -1,
-        0,
-        1,
-        2,
-        3,
-        100
-      ],
-      "config_keys": [
-        "canUseCollectibles",
-        "canUseAvatarDecorations",
-        "canUploadAvatarDecorations"
       ]
     }
   },
@@ -6005,6 +5955,27 @@
         ]
       },
       "overrides_formatted": []
+    }
+  },
+  {
+    "data": {
+      "kind": "user",
+      "id": "2023-08_collectiblesnitroavatardecoiap",
+      "label": "Collectible Nitro Avatar Decorations IAP",
+      "description": [
+        "Not Eligible",
+        "Control Bucket",
+        "Treatment 1: Collectibles IAP"
+      ],
+      "hash": 2588597280,
+      "buckets": [
+        -1,
+        0,
+        1
+      ],
+      "config_keys": [
+        "canUseCollectiblesIAP"
+      ]
     }
   },
   {
