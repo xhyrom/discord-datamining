@@ -4883,6 +4883,27 @@
   {
     "data": {
       "kind": "user",
+      "id": "2023-08_login_mfav2",
+      "label": "Login MFAv2",
+      "description": [
+        "Not Eligible",
+        "Treatment 0: Control",
+        "Treatment 1: Enabled"
+      ],
+      "hash": 2746546843,
+      "buckets": [
+        -1,
+        0,
+        1
+      ],
+      "config_keys": [
+        "enabled"
+      ]
+    }
+  },
+  {
+    "data": {
+      "kind": "user",
       "id": "2022-09_mobile_account_switcher",
       "label": "Mobile Account Switcher",
       "description": [
@@ -8390,6 +8411,27 @@
         "Treatment 1: Enabled"
       ],
       "hash": 4108749034,
+      "buckets": [
+        -1,
+        0,
+        1
+      ],
+      "config_keys": [
+        "enabled"
+      ]
+    }
+  },
+  {
+    "data": {
+      "kind": "user",
+      "id": "2023-08_whats_new",
+      "label": "What's New",
+      "description": [
+        "Not Eligible",
+        "Control Bucket",
+        "Treatment 1: Enabled"
+      ],
+      "hash": 1745832462,
       "buckets": [
         -1,
         0,
