@@ -159479,6 +159479,12 @@ html .invoiceCancelRow-3s2UuC {
     margin-top: 44px
 }
 
+.avatarPurchased-1W4Efn {
+    opacity: .5;
+    -webkit-transition: opacity .5s;
+    transition: opacity .5s
+}
+
 .cardText-1gtC-S {
     margin-top: 32px;
     margin-left: 32px
@@ -159561,6 +159567,23 @@ html .invoiceCancelRow-3s2UuC {
     opacity: 1
 }
 
+.checkmarkWrapper-2j6j-D {
+    position: absolute;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    left: 0;
+    right: 0;
+    top: 80px
+}
+
+.checkmark-YfCXw5 {
+    width: 100%;
+    color: #fff;
+    -webkit-transition: opacity .5s;
+    transition: opacity .5s
+}
+
 .card-1e8EiH:hover .innerHover-W_PGCE {
     opacity: 1
 }
@@ -159572,6 +159595,14 @@ html .invoiceCancelRow-3s2UuC {
 .card-1e8EiH:hover .button-3KmITB {
     -webkit-transform: translateY(-16px);
     transform: translateY(-16px)
+}
+
+.card-1e8EiH:hover .checkmark-YfCXw5 {
+    opacity: 0
+}
+
+.card-1e8EiH:hover .avatarPurchased-1W4Efn {
+    opacity: 1
 }
 
 .skeleton-3HFIZN {
@@ -166492,4 +166523,4 @@ html .invoiceCancelRow-dVOR64 {
     margin-bottom: 16px
 }
 
-/*# sourceMappingURL=40532.13ca62c1873d635aa3a9.css.map*/
+/*# sourceMappingURL=40532.1b9db472fbd8e055fdfe.css.map*/
