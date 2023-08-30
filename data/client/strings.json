@@ -14583,6 +14583,8 @@
   "COLLECTIBLES_NON_NITRO_CARD_INFO": "\"Access to purchase this decoration is only available with Nitro.\"",
   "COLLECTIBLES_NON_NITRO_DISXCORE_BANNER": "\"This starter pack is included and available to use with an active Nitro subscription. [Unlock with Nitro](onUnlockClick)\"",
   "COLLECTIBLES_NITRO_EXCLUSIVE": "\"Nitro exclusive\"",
+  "COLLECTIBLES_PERMANENT_COLLECTION": "\"This decoration is now part of your permanent collection and can be used at anytime!\"",
+  "COLLECTIBLES_YOU_COLLECTED": "\"You've collected {itemName}.\"",
   "MOBILE_TIME_REMAINING_DAYS": "\"{days} days remaining\"",
   "MOBILE_TIME_REMAINING_HOURS_MINUTES_SECONDS": "\"{hours}:{minutes}:{seconds} remaining\"",
   "DIRECTORY_CATEGORY_TOWN_HALL_1": "\"Staff Picks\"",
