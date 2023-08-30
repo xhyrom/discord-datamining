@@ -100451,6 +100451,13 @@ strong {
     background-color: var(--background-primary)
 }
 
+.whatsNew-2zakho:hover {
+    -webkit-box-shadow: var(--shadow-high);
+    box-shadow: var(--shadow-high);
+    -webkit-transform: translateY(-8px);
+    transform: translateY(-8px)
+}
+
 .pill-1KzVqx {
     background-image: -webkit-gradient(linear, left top, right top, from(var(--premium-tier-2-purple-for-gradients)), to(var(--premium-tier-2-pink-for-gradients)));
     background-image: linear-gradient(90deg, var(--premium-tier-2-purple-for-gradients), var(--premium-tier-2-pink-for-gradients));
@@ -166477,4 +166484,4 @@ html .invoiceCancelRow-dVOR64 {
     margin-bottom: 16px
 }
 
-/*# sourceMappingURL=40532.ed8dd6e890b253e7c268.css.map*/
+/*# sourceMappingURL=40532.4b199cd44b2fe8c74d9c.css.map*/
