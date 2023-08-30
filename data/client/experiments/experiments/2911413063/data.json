@@ -1,0 +1,33 @@
+{
+  "data": {
+    "kind": "user",
+    "id": "2023-08_mobile_redesign_0g_mini",
+    "label": "Tabs V2 - 0g Mini",
+    "description": [
+      "Not Eligible",
+      "Control Bucket",
+      "Treatment 1: Minimal Channel List",
+      "Treatment 2: Full Width Panel",
+      "Treatment 3: Recent Channels",
+      "Treatment 4: Notification Timer",
+      "Treatment 5: Base redesign"
+    ],
+    "hash": 2911413063,
+    "buckets": [
+      -1,
+      0,
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "config_keys": [
+      "showRedesign",
+      "showMinimalChannelList",
+      "showFullWidthPanel",
+      "showRecentChannels",
+      "showNotificationTimer"
+    ]
+  }
+}

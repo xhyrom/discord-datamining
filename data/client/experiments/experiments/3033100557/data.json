@@ -27,7 +27,13 @@
       7
     ],
     "config_keys": [
-      "enabled"
+      "showRedesign",
+      "showMessagesTab",
+      "showLaunchpadPullTab",
+      "showMinimalChannelList",
+      "showQuickswitcherTab",
+      "showLaunchpadTab",
+      "showFullWidthPanel"
     ]
   }
 }
