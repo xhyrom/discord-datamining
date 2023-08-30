@@ -28,6 +28,7 @@
             <li><a href="#h_63eed59a-854f-482f-8a4d-08b37797c510" target="_self">How to Make Your Own Emojis</a></li>
             <li><a href="#h_373cf88f-b19f-4455-94a5-c55ed46ca6a4" target="_self">How to Customize Your Profile</a></li>
             <li><a href="#h_ca22c0f9-2650-4340-91bb-29cb9ff3fb1d" target="_self">Markdown Formatting</a></li>
+            <li><a href="#h_01H93R67TVRVH0Q6PJEFCDS5JM" target="_self">How to Add a Status to Your Voice/Video Call</a></li>
         </ul>
     </li>
 </ul>
@@ -221,7 +222,7 @@
         <strong>Enable/Disabling Status Permissions: </strong>You can control which server members can change the voice status through the <strong>Set Voice Channel Status</strong> permission within the role/channel permission settings. 
     </li>
     <li>
-        <strong>Moderating Statuses: </strong>You can use <a href="https://support.discord.com/hc/articles/4421269296535" target="_blank" rel="noopener">Automod</a> to block phrases/words from being used within a channel status. Additionally, all voice channel status changes will be shown in the audit log so that you can see a history of changes. 
+        <strong>Moderating Statuses: </strong>You can use <a href="https://support.discord.com/hc/articles/4421269296535" target="_blank" rel="noopener noreferrer">Automod</a> to block phrases/words from being used within a channel status. Additionally, all voice channel status changes will be shown in the audit log so that you can see a history of changes. 
     </li>
 </ul>
 <p class="wysiwyg-text-align-center"><img src="https://support.discord.com/hc/article_attachments/17153912416663" alt="Permissions for roles.png"></p>
