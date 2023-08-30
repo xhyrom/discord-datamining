@@ -3817,16 +3817,6 @@
       "POST"
     ]
   },
-  "GUILD_PRODUCT_LISTINGS": {
-    "url": "/guilds/:param/products/listings/:param",
-    "allowed_methods": [
-      "DELETE",
-      "GET",
-      "HEAD",
-      "OPTIONS",
-      "PATCH"
-    ]
-  },
   "GUILD_PRODUCT_ATTACHMENT_DOWNLOAD": {
     "url": "/guilds/:param/products/listings/:param/attachments/:param/download",
     "allowed_methods": [
