@@ -5877,20 +5877,22 @@
   {
     "data": {
       "kind": "user",
-      "id": "2023-03_mobile_remix",
-      "label": "Remixing User Experiment",
+      "id": "2023-08_remix_ga",
+      "label": "Remix General Available",
       "description": [
         "Not Eligible",
         "Control Bucket",
-        "Treatment 1: Enables media remixing",
-        "Treatment 2: Enables media remixing for desktop"
+        "Treatment 1: Remix for Nitro Subscribers",
+        "Treatment 3: Upsell Remix for Non-Nitro Users",
+        "Treatment 5: Remix GA for everyone"
       ],
-      "hash": 961769771,
+      "hash": 3382036696,
       "buckets": [
         -1,
         0,
         1,
-        2
+        3,
+        5
       ],
       "config_keys": [
         "enabled"
