@@ -7332,6 +7332,31 @@
   },
   {
     "data": {
+      "kind": "user",
+      "id": "2023-05_fast_onboarding_landing",
+      "label": "Fast Onboarding Landing",
+      "description": [
+        "Not Eligible",
+        "Control Bucket",
+        "Treatment 1: 2x Speed",
+        "Treatment 2: Instant",
+        "Treatment 42: Instant Untracked"
+      ],
+      "hash": 1461620747,
+      "buckets": [
+        -1,
+        0,
+        1,
+        2,
+        42
+      ],
+      "config_keys": [
+        "enabled"
+      ]
+    }
+  },
+  {
+    "data": {
       "kind": "guild",
       "id": "2023-02_onboardingdropdowns",
       "label": "Enables dropdown selections from onboarding prompts",
