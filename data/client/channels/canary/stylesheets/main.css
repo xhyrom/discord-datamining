@@ -130068,6 +130068,22 @@ input::-webkit-outer-spin-button {
     flex: 0 0 auto
 }
 
+.panel-1fkf48 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    gap: 8px;
+    padding: 8px
+}
+
+.switch-232gTY {
+    margin-bottom: 0
+}
+
 .channelRow-2Kh1SV {
     padding: 8px 24px;
     display: -webkit-box;
@@ -130184,22 +130200,6 @@ input::-webkit-outer-spin-button {
     -webkit-box-direction: normal;
     -ms-flex-direction: column;
     flex-direction: column
-}
-
-.panel-2jP4FH {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: column;
-    flex-direction: column;
-    gap: 8px;
-    padding: 8px
-}
-
-.switch-1Y4t2- {
-    margin-bottom: 0
 }
 
 .icon-3SDpgl {
@@ -166289,4 +166289,4 @@ html .invoiceCancelRow-dVOR64 {
     margin-bottom: 16px
 }
 
-/*# sourceMappingURL=40532.091c522aa89e0ea350ff.css.map*/
+/*# sourceMappingURL=40532.863ca294c417ff882789.css.map*/
