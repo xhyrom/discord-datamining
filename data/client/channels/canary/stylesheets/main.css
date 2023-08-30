@@ -20363,23 +20363,16 @@ html.disable-forced-colors * {
     border-radius: 8px
 }
 
-.effectBackground-8Yf7Tt {
-    height: 100%;
-    pointer-events: none;
-    -webkit-transition-property: background, opacity;
-    transition-property: background, opacity;
-    top: 0;
-    left: 0
-}
-
-.effect-23JFo_,
-.effectBackground-8Yf7Tt {
-    position: absolute;
+.effect-23JFo_ {
     width: 100%
 }
 
+.border-16r7Xn,
+.effect-23JFo_ {
+    position: absolute
+}
+
 .border-16r7Xn {
-    position: absolute;
     z-index: 100
 }
 
@@ -166289,4 +166282,4 @@ html .invoiceCancelRow-dVOR64 {
     margin-bottom: 16px
 }
 
-/*# sourceMappingURL=40532.863ca294c417ff882789.css.map*/
+/*# sourceMappingURL=40532.3f04d151d72ba0e1e3db.css.map*/
