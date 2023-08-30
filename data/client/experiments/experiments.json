@@ -1421,6 +1421,27 @@
   {
     "data": {
       "kind": "user",
+      "id": "2023-08_full_band_krisp_android_",
+      "label": "Let us control if full band is enabled on Android",
+      "description": [
+        "Not Eligible",
+        "Control Bucket",
+        "Treatment 1: Load full band krisp model"
+      ],
+      "hash": 2791827263,
+      "buckets": [
+        -1,
+        0,
+        1
+      ],
+      "config_keys": [
+        "enabled"
+      ]
+    }
+  },
+  {
+    "data": {
+      "kind": "user",
       "id": "2021-08_max_sync_delay",
       "label": "Overrides the default max sync delay for AV streams in WebRTC",
       "description": [
