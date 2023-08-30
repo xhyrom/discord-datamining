@@ -100383,174 +100383,6 @@ strong {
     vertical-align: middle
 }
 
-.perspectiveContainer-1Vwhgl {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-perspective: 1000px;
-    perspective: 1000px
-}
-
-.perspectiveContainer-1Vwhgl:hover .partialFlip-O7CNrg {
-    -webkit-transform: rotateY(-30deg);
-    transform: rotateY(-30deg)
-}
-
-.perspectiveContainer-1Vwhgl:hover .partialFlip-O7CNrg .cover-1nw8ay {
-    opacity: 1
-}
-
-.card-20tMLf {
-    position: relative;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: column;
-    flex-direction: column;
-    -webkit-box-pack: start;
-    -ms-flex-pack: start;
-    justify-content: flex-start;
-    -webkit-box-align: start;
-    -ms-flex-align: start;
-    align-items: flex-start;
-    -webkit-box-flex: 1;
-    -ms-flex-positive: 1;
-    flex-grow: 1;
-    padding: 24px;
-    background-color: var(--background-floating);
-    border-radius: 20px;
-    background-size: cover;
-    background-repeat: no-repeat;
-    overflow: hidden;
-    -webkit-transition: all .2s ease-in-out;
-    transition: all .2s ease-in-out
-}
-
-.card-20tMLf:hover .cardDescription-23s_MQ {
-    opacity: 1
-}
-
-.card-20tMLf:hover .cardDescription-23s_MQ button {
-    pointer-events: all
-}
-
-.clickable-1A6JsZ {
-    cursor: pointer
-}
-
-.clickable-1A6JsZ:hover {
-    -webkit-box-shadow: var(--shadow-high);
-    box-shadow: var(--shadow-high);
-    -webkit-transform: translateY(-8px);
-    transform: translateY(-8px)
-}
-
-.whatsNew-2zakho {
-    background-color: var(--background-primary)
-}
-
-.pill-1KzVqx {
-    background-image: -webkit-gradient(linear, left top, right top, from(var(--premium-tier-2-purple-for-gradients)), to(var(--premium-tier-2-pink-for-gradients)));
-    background-image: linear-gradient(90deg, var(--premium-tier-2-purple-for-gradients), var(--premium-tier-2-pink-for-gradients));
-    border-radius: 10px;
-    color: var(--white);
-    padding: 0 8px;
-    margin-bottom: 8px
-}
-
-.cardHeading-3p4-LJ {
-    background-clip: text;
-    -webkit-background-clip: text !important;
-    color: transparent;
-    display: inline-block;
-    margin-bottom: 8px;
-    width: 100%;
-    white-space: pre-wrap;
-    background-color: var(--header-primary)
-}
-
-.cardSubtitle-q7wCE3 {
-    margin-bottom: 16px;
-    -webkit-box-flex: 1;
-    -ms-flex-positive: 1;
-    flex-grow: 1;
-    width: 100%
-}
-
-.cardImage-3uZfoW {
-    width: 100%
-}
-
-.cardDescription-23s_MQ {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    top: 0;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: column;
-    flex-direction: column;
-    -webkit-box-pack: start;
-    -ms-flex-pack: start;
-    justify-content: flex-start;
-    -webkit-box-align: start;
-    -ms-flex-align: start;
-    align-items: flex-start;
-    padding: 24px;
-    opacity: 0;
-    pointer-events: none;
-    -webkit-transition: all .2s ease-in-out;
-    transition: all .2s ease-in-out;
-    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(30%, #000), color-stop(80%, rgba(0, 0, 0, .5)));
-    background-image: linear-gradient(180deg, #000 30%, rgba(0, 0, 0, .5) 80%)
-}
-
-.cardDescription-23s_MQ p {
-    margin: 0
-}
-
-.cardDescription-23s_MQ p+p {
-    margin-top: 8px
-}
-
-.cardDescription-23s_MQ button {
-    margin-top: 24px;
-    -ms-flex-item-align: center;
-    align-self: center;
-    min-width: 180px
-}
-
-.cover-1nw8ay {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    top: 0;
-    opacity: 0;
-    -webkit-transition: all .2s ease-in-out;
-    transition: all .2s ease-in-out;
-    background-color: rgba(0, 0, 0, .6);
-    pointer-events: none
-}
-
-.purpleGradient-2608c0 {
-    background-image: linear-gradient(130.41deg, #727eff 7.43%, #b940ff 82.67%)
-}
-
-.pinkGradient-SCswi9 {
-    background-image: linear-gradient(130.41deg, #ff52d2 7.43%, #b940ff 82.67%)
-}
-
-.blueGradient-1Qg1e7 {
-    background-image: linear-gradient(130.41deg, #0fb3ff 7.43%, #b940ff 82.67%)
-}
-
 .featureBorder-3EsAxa {
     margin-bottom: 64px;
     border-radius: 12px;
@@ -100595,18 +100427,82 @@ strong {
     text-align: center
 }
 
-.fullWidth-NgZ6OT {
-    max-width: 100%
-}
-
 .cardContainer-2ZcjK6 {
     display: grid;
     gap: 16px;
     grid-template-columns: 1fr;
+    width: 100%
+}
+
+.card-2CbsaE,
+.cardContainer-2ZcjK6 {
     -webkit-box-pack: center;
     -ms-flex-pack: center;
-    justify-content: center;
+    justify-content: center
+}
+
+.card-2CbsaE {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    padding: 24px;
+    background-color: var(--background-floating);
+    border-radius: 20px;
+    -webkit-transition: all .2s ease-in-out;
+    transition: all .2s ease-in-out
+}
+
+.card-2CbsaE:hover {
+    -webkit-box-shadow: var(--shadow-high);
+    box-shadow: var(--shadow-high);
+    -webkit-transform: translateY(-8px);
+    transform: translateY(-8px)
+}
+
+.clickable-2EIegO {
+    cursor: pointer
+}
+
+.cardHeading-1ZCdP1 {
+    background-clip: text;
+    -webkit-background-clip: text !important;
+    color: transparent;
+    display: inline-block;
+    margin-bottom: 8px;
+    width: 100%;
+    white-space: pre-wrap;
+    background-color: var(--header-primary)
+}
+
+.cardSubtitle-3U36JN {
+    margin-bottom: 16px;
+    -webkit-box-flex: 1;
+    -ms-flex-positive: 1;
+    flex-grow: 1;
     width: 100%
+}
+
+.cardImage-vkJsEb {
+    width: 100%
+}
+
+.purple-1gn-EJ {
+    background-image: linear-gradient(130.41deg, #727eff 7.43%, #b940ff 82.67%)
+}
+
+.pink-16hpR- {
+    background-image: linear-gradient(130.41deg, #ff52d2 7.43%, #b940ff 82.67%)
+}
+
+.blue-1pvgvJ {
+    background-image: linear-gradient(130.41deg, #0fb3ff 7.43%, #b940ff 82.67%)
 }
 
 @media (min-width:960px) {
@@ -166386,4 +166282,4 @@ html .invoiceCancelRow-dVOR64 {
     margin-bottom: 16px
 }
 
-/*# sourceMappingURL=40532.15d44192ebf15925b2ff.css.map*/
+/*# sourceMappingURL=40532.3f04d151d72ba0e1e3db.css.map*/
