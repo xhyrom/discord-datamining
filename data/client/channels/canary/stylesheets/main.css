@@ -159470,28 +159470,30 @@ html .invoiceCancelRow-3s2UuC {
 }
 
 .description-2DD9PM {
-    margin-top: 4px;
-    padding-right: 32px
+    margin-top: 4px
 }
 
-.button-3KmITB,
 .price-cpJgMq {
     margin-top: 16px
 }
 
 .button-3KmITB {
-    width: 90%;
-    -webkit-transition: opacity .5s;
-    transition: opacity .5s
+    margin: 24px auto 0;
+    width: 100%;
+    -webkit-transition: -webkit-transform .5s;
+    transition: -webkit-transform .5s;
+    transition: transform .5s;
+    transition: transform .5s, -webkit-transform .5s
 }
 
-.button-3KmITB:hover {
+.purchaseButton-3Zdno8 {
+    margin-top: 32px;
+    -webkit-transition: inherit, opacity .5s;
+    transition: inherit, opacity .5s
+}
+
+.purchaseButton-3Zdno8:hover {
     opacity: .8
-}
-
-.unlockButton-3VwZzu {
-    margin-top: 8px;
-    width: 90%
 }
 
 .bannerContent-19nx5R {
@@ -159525,19 +159527,36 @@ html .invoiceCancelRow-3s2UuC {
 }
 
 .innerHover-W_PGCE {
-    display: none
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    opacity: 0
+}
+
+.innerBlur-3CojQz,
+.innerHover-W_PGCE {
+    position: absolute;
+    left: 32px;
+    right: 32px;
+    -webkit-transition: opacity .5s;
+    transition: opacity .5s
 }
 
 .innerBlur-3CojQz {
-    display: block
+    opacity: 1
 }
 
 .card-1e8EiH:hover .innerHover-W_PGCE {
-    display: block
+    opacity: 1
 }
 
 .card-1e8EiH:hover .innerBlur-3CojQz {
-    display: none
+    opacity: 0
+}
+
+.card-1e8EiH:hover .button-3KmITB {
+    -webkit-transform: translateY(-16px);
+    transform: translateY(-16px)
 }
 
 .skeleton-3HFIZN {
@@ -166458,4 +166477,4 @@ html .invoiceCancelRow-dVOR64 {
     margin-bottom: 16px
 }
 
-/*# sourceMappingURL=40532.b7b88c7f90c07e4193e5.css.map*/
+/*# sourceMappingURL=40532.ed8dd6e890b253e7c268.css.map*/
