@@ -85602,8 +85602,7 @@ strong {
 }
 
 .broadcast-3uhvcq {
-    background-color: var(--background-tertiary);
-    padding: 8px;
+    padding: 4px;
     border-radius: var(--radius-xs);
     gap: 16px;
     -webkit-box-align: center;
@@ -85631,6 +85630,14 @@ strong {
 
 .button-s7E4zh {
     margin-top: 4px
+}
+
+.separator-2UA0bE {
+    background-color: var(--background-tertiary);
+    height: 1px;
+    width: 100%;
+    border: none;
+    margin: 0
 }
 
 .pill-L_aLMQ {
@@ -166553,4 +166560,4 @@ html .invoiceCancelRow-dVOR64 {
     margin-bottom: 16px
 }
 
-/*# sourceMappingURL=40532.ece39ce8d3030c6d058d.css.map*/
+/*# sourceMappingURL=40532.538aae19cbca760a496a.css.map*/
