@@ -13681,6 +13681,7 @@
   "RECENTLY_JOINED_SUBTITLE": "\"You recently joined\"",
   "RECENTS_CATEGORY_HEADER": "\"Suggested\"",
   "RECENTLY_ACTIVE_CATEGORY_HEADER": "\"Recently Active\"",
+  "RECENTLY_VISITED_CATEGORY_HEADER": "\"Recently Visited\"",
   "VOICE_CHANNELS_CATEGORY_HEADER": "\"Active Now\"",
   "VOICE_CHANNELS_CATEGORY_BUTTON_EXPAND": "\"Show All\"",
   "VOICE_CHANNELS_CATEGORY_BUTTON_COLLAPSE": "\"Hide Voice Channels\"",
