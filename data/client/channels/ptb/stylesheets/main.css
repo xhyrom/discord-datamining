@@ -40647,8 +40647,12 @@ html .progress-2Otdc- {
     color: var(--interactive-active)
 }
 
-.lineClamp-1BEC7x {
+.lineClamp2Plus-1eksIb {
     white-space: pre-wrap
+}
+
+.lineClamp1-hh_tov {
+    white-space: nowrap
 }
 
 .roleTag--FTDMy,
@@ -40677,19 +40681,21 @@ html .progress-2Otdc- {
 }
 
 .productCard-10T4y5 {
-    width: 340px;
     border-radius: 8px;
     overflow: hidden;
-    position: relative;
-    height: 100%
+    position: relative
 }
 
 .solidBackground-13BMn7 {
     background: var(--background-secondary)
 }
 
-.opaqueBackground-3Unh3V {
-    background: rgba(78, 80, 88, .3)
+.theme-dark .opaqueBackground-3Unh3V {
+    background: rgba(48, 51, 56, .85)
+}
+
+.theme-light .opaqueBackground-3Unh3V {
+    background: var(--background-secondary)
 }
 
 .productThumbnailContainer-iSvWHI {
@@ -40697,10 +40703,10 @@ html .progress-2Otdc- {
 }
 
 .productThumbnail-2PeX7X {
-    width: 340px;
-    height: 190px;
+    width: 100%;
     -o-object-fit: cover;
-    object-fit: cover
+    object-fit: cover;
+    background: #2b2c31
 }
 
 .purchaseToUnlockBadge-A3TLAq {
@@ -40744,15 +40750,35 @@ html .progress-2Otdc- {
 }
 
 .productDetails-18hXGG {
-    display: grid;
-    gap: 4px;
+    -webkit-box-orient: horizontal;
+    -ms-flex-direction: row;
+    flex-direction: row;
     padding: 16px;
     border-bottom: 1px solid var(--background-modifier-accent);
-    -webkit-box-flex: 1;
     -ms-flex-positive: 1;
     flex-grow: 1;
     -ms-flex-line-pack: start;
     align-content: flex-start
+}
+
+.productDetailContent-2obWVm,
+.productDetails-18hXGG {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-direction: normal;
+    -webkit-box-flex: 1
+}
+
+.productDetailContent-2obWVm {
+    -webkit-box-orient: vertical;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    gap: 4px;
+    -ms-flex: 1;
+    flex: 1;
+    margin-right: 24px;
+    overflow: hidden
 }
 
 .purchaseDetails-32ByvF {
@@ -40770,12 +40796,20 @@ html .progress-2Otdc- {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    gap: 6px;
-    color: var(--interactive-hover)
+    gap: 4px;
+    color: var(--interactive-hover);
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center
+}
+
+.arrowIcon-1s4INR {
+    margin-bottom: -2px
 }
 
 .hasAction-3GAEYD {
-    cursor: pointer
+    cursor: pointer;
+    color: var(--text-link)
 }
 
 .cardClickableContainer-2nzN0M {
@@ -40832,18 +40866,31 @@ html .progress-2Otdc- {
 .productInfo-25zgtv {
     -ms-flex-item-align: start;
     align-self: start;
+    -webkit-box-orient: horizontal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    padding: 16px
+}
+
+.productInfo-25zgtv,
+.productInfoContent-1jUYrA {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    -webkit-box-direction: normal
+}
+
+.productInfoContent-1jUYrA {
     -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
     -ms-flex-direction: column;
     flex-direction: column;
+    -webkit-box-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+    overflow: hidden;
     -webkit-box-align: start;
     -ms-flex-align: start;
-    align-items: flex-start;
-    padding: 16px;
-    overflow: hidden
+    align-items: flex-start
 }
 
 .productName-3HL0K6 {
@@ -40876,14 +40923,11 @@ html .progress-2Otdc- {
 }
 
 .productActionMenuButton-1nLyoz {
-    width: 36px;
-    height: 36px;
-    padding: 6px;
+    width: 24px;
+    height: 24px;
     cursor: pointer;
-    position: absolute;
-    top: 199px;
-    right: 0;
-    z-index: 100
+    z-index: 100;
+    margin-right: -8px
 }
 
 .productActionMenuButton-1nLyoz .productActionMenuIcon-3-Oyyg {
@@ -63847,7 +63891,7 @@ strong {
     gap: 24px;
     margin-left: auto;
     margin-right: auto;
-    grid-template-columns: repeat(auto-fill, 340px)
+    grid-template-columns: repeat(auto-fill, 332px)
 }
 
 .card-2cxbBa:hover {
@@ -64015,8 +64059,8 @@ strong {
 
 .contentContainer-1faF_F {
     margin: auto;
-    max-width: 1068px;
-    min-width: 704px
+    max-width: 1044px;
+    min-width: 688px
 }
 
 .container-3XgAHv {
@@ -166583,4 +166627,4 @@ html .invoiceCancelRow-dVOR64 {
     margin-bottom: 16px
 }
 
-/*# sourceMappingURL=40532.8e3c7e16b5a9d73b2091.css.map*/
+/*# sourceMappingURL=40532.f6ef63136db82e947c9f.css.map*/
