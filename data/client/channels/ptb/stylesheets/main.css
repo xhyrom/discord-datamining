@@ -152669,6 +152669,10 @@ html .invoiceCancelRow-3s2UuC {
     width: 340px
 }
 
+.profileEffectsModalCustomizationPreview-3OBu4K {
+    width: 280px
+}
+
 .body-3lbupa {
     padding: 0 12px
 }
@@ -153179,6 +153183,15 @@ html .invoiceCancelRow-3s2UuC {
 
 .buttonHighlighted-3QKRPw {
     background: linear-gradient(95.07deg, var(--premium-tier-2-purple-for-gradients), var(--premium-tier-2-purple-for-gradients-2) 49.96%, var(--premium-tier-2-pink-for-gradients) 95.93%)
+}
+
+.newBadge-2Y53Os {
+    margin-left: 2px;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    background: -webkit-gradient(linear, left top, right top, from(hsl(269, calc(var(--saturation-factor, 1)*52.7%), 52.7%)), color-stop(hsl(296, calc(var(--saturation-factor, 1)*50%), 51.4%)), to(hsl(325, calc(var(--saturation-factor, 1)*31.7%), 51.8%)));
+    background: linear-gradient(90deg, hsl(269, calc(var(--saturation-factor, 1)*52.7%), 52.7%), hsl(296, calc(var(--saturation-factor, 1)*50%), 51.4%), hsl(325, calc(var(--saturation-factor, 1)*31.7%), 51.8%))
 }
 
 .sectionsContainer-3BlPu4 {
@@ -165587,21 +165600,17 @@ html .invoiceCancelRow-3s2UuC {
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
-    width: 340px;
+    width: 280px;
     margin: 1.5px 3px 40px 2px
 }
 
-.effectDescription-3TiVDd {
-    -ms-flex-item-align: start;
-    align-self: flex-start;
-    margin-top: 18px;
-    position: "relative"
+.icon-2MeLwV {
+    height: 24px;
+    width: 24px;
+    margin-bottom: 4px
 }
 
 .notAllowedIcon-2MQv-K {
-    height: 24px;
-    width: 24px;
-    margin-bottom: 4px;
     -webkit-transform: rotate(90deg);
     transform: rotate(90deg)
 }
@@ -165627,7 +165636,8 @@ html .invoiceCancelRow-3s2UuC {
     -ms-flex-pack: center;
     justify-content: center;
     background-color: var(--background-tertiary);
-    color: var(--header-primary)
+    color: var(--header-primary);
+    position: relative
 }
 
 .selected-1KX8A2 {
@@ -165637,9 +165647,63 @@ html .invoiceCancelRow-3s2UuC {
 
 .list-1UuDOi {
     height: 550px;
-    width: 320px;
-    margin-top: 10px;
+    width: 290px;
+    margin-top: 2px;
     left: -12px
+}
+
+.shopIcon-oIiJtJ {}
+
+.shopSparkle-3En2Kq {
+    color: var(--premium-tier-2-purple-for-gradients-2);
+    position: absolute
+}
+
+.shopSparkleBig-MaWgMd {
+    width: 11px;
+    height: 11px;
+    top: 15px;
+    left: 17px
+}
+
+.shopSparkleSmall-2LHy1a {
+    width: 8px;
+    height: 8px;
+    top: 11px;
+    left: 26px
+}
+
+.tooltip-LmVZ7y {
+    min-width: 250px
+}
+
+.tooltipInner-1NJzfW {
+    text-align: center
+}
+
+.tooltipText-2hhyIB {
+    padding: 8px 32px
+}
+
+.badge-w5FhZi {
+    position: absolute;
+    right: -8px;
+    top: -8px
+}
+
+.newBadge-2yfmTf {
+    background: -webkit-gradient(linear, left top, right top, from(hsl(269, calc(var(--saturation-factor, 1)*52.7%), 52.7%)), color-stop(hsl(296, calc(var(--saturation-factor, 1)*50%), 51.4%)), to(hsl(325, calc(var(--saturation-factor, 1)*31.7%), 51.8%)));
+    background: linear-gradient(90deg, hsl(269, calc(var(--saturation-factor, 1)*52.7%), 52.7%), hsl(296, calc(var(--saturation-factor, 1)*50%), 51.4%), hsl(325, calc(var(--saturation-factor, 1)*31.7%), 51.8%))
+}
+
+.lockBadge-1GRfLm {
+    width: 20px;
+    height: 20px
+}
+
+.presetEffectImg-1QMW5H {
+    height: 64px;
+    width: 64px
 }
 
 .subscribeFooter-3rMXge {
@@ -165661,6 +165725,7 @@ html .invoiceCancelRow-3s2UuC {
 
 .modalTitle-27DLRj {
     margin-bottom: 0;
+    margin-left: 4px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -165673,12 +165738,8 @@ html .invoiceCancelRow-3s2UuC {
     margin-right: 4px
 }
 
-.limitedTimeBadge-2PkT6s {
-    margin-left: 4px
-}
-
 .modalDescription-l9dq3V {
-    margin: 0 16px 24px
+    margin: 0 20px 24px
 }
 
 .discoverMorePerks-8syRxl {
@@ -165692,6 +165753,19 @@ html .invoiceCancelRow-3s2UuC {
     -webkit-box-pack: center;
     -ms-flex-pack: center;
     justify-content: center
+}
+
+.goToShopButton-2jWCIU,
+.newBadge-3yacPU {
+    background: -webkit-gradient(linear, left top, right top, from(hsl(269, calc(var(--saturation-factor, 1)*52.7%), 52.7%)), color-stop(hsl(296, calc(var(--saturation-factor, 1)*50%), 51.4%)), to(hsl(325, calc(var(--saturation-factor, 1)*31.7%), 51.8%)));
+    background: linear-gradient(90deg, hsl(269, calc(var(--saturation-factor, 1)*52.7%), 52.7%), hsl(296, calc(var(--saturation-factor, 1)*50%), 51.4%), hsl(325, calc(var(--saturation-factor, 1)*31.7%), 51.8%))
+}
+
+.newBadge-3yacPU {
+    margin-left: 4px;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center
 }
 
 .modalContentOverrides-a09q4S {
@@ -166517,4 +166591,4 @@ html .invoiceCancelRow-dVOR64 {
     margin-bottom: 16px
 }
 
-/*# sourceMappingURL=40532.18d1dcd6dd3e30f14150.css.map*/
+/*# sourceMappingURL=40532.8da65155c62ea22d3fab.css.map*/
