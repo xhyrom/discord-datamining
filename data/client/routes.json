@@ -876,7 +876,10 @@
   },
   "COLLECTIBLES_CLAIM": {
     "url": "/users/@me/claim-premium-collectibles-product",
-    "allowed_methods": null
+    "allowed_methods": [
+      "OPTIONS",
+      "PUT"
+    ]
   },
   "COLLECTIBLES_PURCHASES": {
     "url": "/users/@me/collectibles-purchases",
