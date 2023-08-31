@@ -858,14 +858,6 @@
     "url": "/avatar-decoration-presets/:param.:param",
     "allowed_methods": null
   },
-  "COLLECTIBLE_STORE_LISTING": {
-    "url": "/collectibles/:param",
-    "allowed_methods": null
-  },
-  "COLLECTIBLES": {
-    "url": "/collectibles",
-    "allowed_methods": null
-  },
   "COLLECTIBLES_CATEGORIES": {
     "url": "/collectibles/categories",
     "allowed_methods": [
@@ -878,10 +870,6 @@
     "url": "/users/@me/collectibles/claim",
     "allowed_methods": null
   },
-  "USER_COLLECTIBLES": {
-    "url": "/users/@me/collectibles",
-    "allowed_methods": null
-  },
   "COLLECTIBLES_PURCHASES": {
     "url": "/users/@me/collectibles/purchases",
     "allowed_methods": [
@@ -889,6 +877,10 @@
       "HEAD",
       "OPTIONS"
     ]
+  },
+  "COLLECTIBLES_ASSET": {
+    "url": "/applications/1096190356233670716/app-assets/:param.:param",
+    "allowed_methods": null
   },
   "GUILD_MEMBER_BANNER": {
     "url": "/guilds/:param/users/:param/banners/:param.:param",
@@ -4397,10 +4389,6 @@
       "HEAD",
       "OPTIONS"
     ]
-  },
-  "COLLECTIBLE_ASSET": {
-    "url": "/applications/1096190356233670716/app-assets/:param.:param",
-    "allowed_methods": null
   },
   "SAFETY_HUB": {
     "url": "/safety-hub",
