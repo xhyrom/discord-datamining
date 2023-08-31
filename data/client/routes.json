@@ -1916,6 +1916,14 @@
       "POST"
     ]
   },
+  "OAUTH2_AUTHORIZE_SAMSUNG": {
+    "url": "/oauth2/samsung/authorize",
+    "allowed_methods": [
+      "GET",
+      "HEAD",
+      "OPTIONS"
+    ]
+  },
   "OAUTH2_AUTHORIZE_SAMSUNG_CALLBACK": {
     "url": "/oauth2/samsung/authorize/callback",
     "allowed_methods": [
