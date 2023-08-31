@@ -1267,27 +1267,6 @@
   {
     "data": {
       "kind": "user",
-      "id": "2021-10_price_determination",
-      "label": "Price determination experiment",
-      "description": [
-        "Not Eligible",
-        "Control Bucket",
-        "Treatment 1: Enabled"
-      ],
-      "hash": 3997593347,
-      "buckets": [
-        -1,
-        0,
-        1
-      ],
-      "config_keys": [
-        "enabled"
-      ]
-    }
-  },
-  {
-    "data": {
-      "kind": "user",
       "id": "2023-03_trial_redemption_default_to_monthly_plan",
       "label": "Trial Redemption Default To Monthly Plan",
       "description": [
