@@ -1,5 +1,5 @@
 <ul>
-    <li>
+    <li style="list-style-type: none;">
         <ul>
             <li><span style="font-weight: 400;"><span class="wysiwyg-color-blue90"><strong>Effective:</strong> </span>12/01/2022</span></li>
             <li><span style="font-weight: 400;"><span class="wysiwyg-color-blue90"><strong>Last Updated:</strong></span> 08/31/2023<br></span></li>
