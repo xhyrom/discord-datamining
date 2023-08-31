@@ -43,7 +43,7 @@
         <ul>
             <li><a href="https://creator-support.discord.com/hc/en-us/articles/10423011974551#h_01H96GP5Y39JQNPDNJZJ0XDSCN">What are Server Products?</a></li>
             <li><a href="https://creator-support.discord.com/hc/en-us/articles/10423011974551#docs-internal-guid-cee13780-7fff-0b73-e6eb-5811529ea15f">Who can create Server Products?</a></li>
-            <li><a href="https://creator-support.discord.com/hc/en-us/articles/10423011974551#docs-internal-guid-7ea45ef6-7fff-4d23-d71c-deb388bc250b">How do I create a Server Product?</a></li>
+            <li><a href="https://creator-support.discord.com/hc/en-us/articles/10423011974551#h_01H96GRJ0V79JQD8754R890KKM">How do I create a Server Product?</a></li>
             <li><a href="https://creator-support.discord.com/hc/en-us/articles/10423011974551#h_01H96GVN3WHWT2XYWMRYJXDVEB">How do I delete a Server Product?</a></li>
             <li><a href="https://creator-support.discord.com/hc/en-us/articles/10423011974551#h_01H96GYY4M5VC0FWG9QKYNVJKW">How can a customer request a refund of a Server Product?</a></li>
         </ul>
@@ -176,7 +176,7 @@
 <p>Only the server owner can <a href="https://creator-support.discord.com/hc/en-us/articles/10423011974551#h_01H96DAAQW0QJK9C2V1NH629SX">enable monetization</a>, but any member with an admin role can create and manage Server Products.</p>
 <h2 id="h_01H96GRJ0V79JQD8754R890KKM">How do I create a Server Product?</h2>
 <p>1. Once a server owner has enabled monetization, anyone with an admin role can navigate to the <strong>Server Products </strong>tab within Server Settings and select <strong>Create New Product</strong>. </p>
-<h1 class="wysiwyg-text-align-center"><strong><img src="https://creator-support.discord.com/hc/article_attachments/17188941560471" alt="Screen Shot 2023-08-23 at 2.14.41 PM copy.png"></strong></h1>
+<h1 id="h_01H96XV5BWG25AM5017T72V7VW" class="wysiwyg-text-align-center"><strong><img src="https://creator-support.discord.com/hc/article_attachments/17188941560471" alt="Screen Shot 2023-08-23 at 2.14.41 PM copy.png"></strong></h1>
 <p id="docs-internal-guid-3118b654-7fff-1c5f-b974-dd90a1792c49">2. Then, you will be able to fill out the details and price for your product, select whether you want to include a Role and/or a Downloadable, and upload your Downloadable (if applicable). </p>
 <p>3. After you have finished, press <strong>Publish</strong> to upload it to your list of server products as a<br><strong>Downloadable</strong> or <strong>Premium</strong> <strong>Role</strong>.</p>
 <p class="wysiwyg-text-align-center"><strong><img src="https://creator-support.discord.com/hc/article_attachments/17188952159511" alt="details1.png"></strong></p>
@@ -216,7 +216,7 @@
 <p>A: We are currently rolling out In-App Purchasing (IAP) for iOS mobile devices to servers with Server Subscriptions enabled.  </p>
 <p><strong>Q: Do mobile subscriptions have the same revenue split as desktop subscriptions?</strong></p>
 <p>A: No. Apple takes an additional 30% of revenue from all subscriptions initiated through the Discord iOS application. Subscribers on iOS mobile devices will see a higher price on iOS checkout to account for the additional iOS fee. </p>
-<p>More information on the fee structures is available in the Monetization Terms: <a href="https://support.discord.com/hc/en-us/articles/5330075836311-Monetization-Terms">https://support.discord.com/hc/en-us/articles/5330075836311-Monetization-Terms</a> </p>
+<p>More information on the fee structures is available in the Monetization Terms: <a href="https://support.discord.com/hc/en-us/articles/5330075836311-Monetization-Terms">https://support.discord.com/hc/en-us/articles/5330075836311-Monetization-Terms</a></p>
 <p><strong>Q: When will subscriptions be purchasable on Android?</strong></p>
 <p>A: We’re working on it! We don’t have any timing to share at this point but we are actively working to bring Server Subscriptions to Android mobile devices.</p>
 <p> </p>
