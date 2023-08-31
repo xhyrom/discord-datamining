@@ -142196,6 +142196,10 @@ html .invoiceCancelRow-3s2UuC {
     grid-column: span 1
 }
 
+.submittingWrapperFix-1Ap0E6 {
+    padding: 0
+}
+
 .clipFormItem-22cQCJ {
     margin-bottom: var(--spacing-8)
 }
@@ -149583,6 +149587,29 @@ html .invoiceCancelRow-3s2UuC {
     top: 0;
     right: 0;
     margin: 10px
+}
+
+.guildSelectOptionIcon-Tl2Ek3 {
+    border-radius: 4px
+}
+
+.speakerIcon-1mojNX {
+    width: 16px;
+    height: 16px;
+    margin-right: 4px
+}
+
+.suffixNode-183sPU {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center
+}
+
+.disabledOption-1_AK9u {
+    opacity: .6
 }
 
 .closeButton-19588m {
@@ -166725,4 +166752,4 @@ html .invoiceCancelRow-dVOR64 {
     margin-bottom: 16px
 }
 
-/*# sourceMappingURL=40532.69321aea108c11b9d4e0.css.map*/
+/*# sourceMappingURL=40532.418a7f134653cff505d6.css.map*/
