@@ -20371,17 +20371,14 @@ html.disable-forced-colors * {
     box-shadow: 0 -1px 0 var(--background-modifier-accent)
 }
 
-.profileEffects-km5xa2 {
-    pointer-events: none
-}
-
 .inner-2xMRmK,
 .profileEffects-km5xa2 {
     position: absolute;
     height: 100%;
     width: 100%;
     top: 0;
-    left: 0
+    left: 0;
+    pointer-events: none
 }
 
 .inner-2xMRmK {
@@ -166817,4 +166814,4 @@ html .invoiceCancelRow-dVOR64 {
     margin-bottom: 16px
 }
 
-/*# sourceMappingURL=40532.95904546d0b85789752b.css.map*/
+/*# sourceMappingURL=40532.17976010dfed73b42d42.css.map*/
