@@ -90,7 +90,7 @@
 <p>Discord has a <strong>90 / 10 split</strong>, meaning you will receive 90% of the money from each membership and Discord will keep 10%. Keep in mind, there are various fees that will impact your final payment amount.  </p>
 <h2 id="h_01GXS94CY6G12M8SRTFC79V61R"><strong>I HAVE SOME SERVER SUBSCRIPTIONS. WHEN WILL I BE PAID?</strong></h2>
 <p>You will be eligible for a payout once:<br>1) You have reached the minimum $100 threshold for a payout <br>2) Your server has been reviewed to ensure it meets our creator terms and policy.<br><br>Once you meet the $100 minimum, your account will be reviewed, and eligible payouts will be made once a month, the following month from when you reach the $100 threshold. For example,  if you meet the minimum threshold of $100 in January, you would most likely receive eligible payouts in February.</p>
-<h3>
+<h3 id="h_01H96D5ZCZZWXFZ85497VWAGJE">
     <strong>Note</strong>: Please see our<a href="https://support.discord.com/hc/articles/5330075836311" target="_blank" rel="noopener noreferrer"> Monetization Terms</a> for more information on payout eligibility, timelines, and process.
 </h3>
 <h2 id="h_01GXS94MM94KN8D3WRQPHYK4DY"><strong>HOW CAN SOMEONE ASK FOR A REFUND FROM A SERVER SUBSCRIPTION?</strong></h2>
@@ -115,7 +115,7 @@
 <h1 id="h_01GXS96QSCT5PPEAY2VT7PHDJ1"><strong>Premium Emoji</strong></h1>
 <h2 id="h_01GXS9723MRKSTYF720EE0T4YS"><strong>GETTING STARTED WITH PREMIUM EMOJI</strong></h2>
 <p>Adding exclusive Emoji is a great way to add value to your Server Subscription tiers. You can add up to 25 additional custom emoji that only your Server Subscribers can use. </p>
-<h3>Note: Animated emoji can be used by all Server Subscribers even without Nitro. However, only Server Subscribers with Nitro can use premium emoji outside of the subscribed server.  </h3>
+<h3 id="h_01H96D5ZCZP2KXKYRZ2KQ924PM">Note: Animated emoji can be used by all Server Subscribers even without Nitro. However, only Server Subscribers with Nitro can use premium emoji outside of the subscribed server.  </h3>
 <p>To get started you can access the Premium Emoji tab in the Server Subscriptions settings.</p>
 <p class="wysiwyg-text-align-center"><img src="https://lh3.googleusercontent.com/BrXwC8WDl_zCC-wN8ljyRDtBDgRUF6TaopCxZicyHkgqg5SLPZo_Lg0Gr91cAkvfWSLHlkcEvL0aEX1fZADj7rJIH5fxagpLXb-EplAI04ur5EAQeg1H1TpcS-9JaoYxJ_wTTFUvvOvIK7wuhxbwvjc"></p>
 <h1 id="h_01GXS97A393T80NZ1T0QD1D2KC"><strong>Other Frequently Asked Questions</strong></h1>
@@ -138,6 +138,6 @@
 <p>A: We are currently rolling out In-App Purchasing (IAP) for iOS mobile devices to servers with Server Subscriptions enabled.  </p>
 <p><strong>Q: Do mobile subscriptions have the same revenue split as desktop subscriptions?</strong></p>
 <p>A: No. Apple takes an additional 30% of revenue from all subscriptions initiated through the Discord iOS application. Subscribers on iOS mobile devices will see a higher price on iOS checkout to account for the additional iOS fee. </p>
-<p>More information on the fee structures is available in the <a href="https://support.discord.com/hc/en-us/articles/5330075836311" target="_blank" rel="noopener">Monetization Terms</a>.</p>
+<p>More information on the fee structures is available in the <a href="https://support.discord.com/hc/en-us/articles/5330075836311" target="_blank" rel="noopener noreferrer">Monetization Terms</a>.</p>
 <p><strong>Q: When will subscriptions be purchasable on Android?</strong></p>
 <p>A: We’re working on it! We don’t have any timing to share at this point but we are actively working to bring Server Subscriptions to Android mobile devices.</p>
