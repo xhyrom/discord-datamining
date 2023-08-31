@@ -8354,29 +8354,6 @@
   {
     "data": {
       "kind": "user",
-      "id": "2023-08_reranked_marketing_tiles",
-      "label": "Reranked Marketing Tiles",
-      "description": [
-        "Not Eligible",
-        "Control Bucket",
-        "Treatment 1: Variant 1",
-        "Treatment 2: Variant 2"
-      ],
-      "hash": 4020129040,
-      "buckets": [
-        -1,
-        0,
-        1,
-        2
-      ],
-      "config_keys": [
-        "enabled"
-      ]
-    }
-  },
-  {
-    "data": {
-      "kind": "user",
       "id": "2023-08_perks_discoverability",
       "label": "Perks Discoverability",
       "description": [
@@ -8458,27 +8435,6 @@
         0,
         1,
         2
-      ],
-      "config_keys": [
-        "enabled"
-      ]
-    }
-  },
-  {
-    "data": {
-      "kind": "user",
-      "id": "2023-08_marketing_page_floating_cta",
-      "label": "Marketing Page Floating CTA",
-      "description": [
-        "Not Eligible",
-        "Control Bucket",
-        "Treatment 1: Enabled"
-      ],
-      "hash": 1486934563,
-      "buckets": [
-        -1,
-        0,
-        1
       ],
       "config_keys": [
         "enabled"
