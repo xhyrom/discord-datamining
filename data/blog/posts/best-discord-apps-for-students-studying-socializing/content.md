@@ -3,7 +3,7 @@
         <div class="blog-post-content w-richtext">
             <p>It’s almost time to dust off your backpack and hit the campus library: a new school year is about to begin for many students around the world!&nbsp;</p>
             <p>For people starting up their studies again, Discord has become a hub for building connections, furthering education, and empowering campus communities. Whether you’re collaborating on a project worth half your grade in your newly-created study server, or taking a break from hittin’ the books to get a few games in with your friends, it’s all happening on Discord thanks to a ton of amazing third party developers.</p>
-            <p>To celebrate Back to School, here are the best study and friendship-focused features, apps, and Activities on Discord.<br>‍</p>
+            <p>To celebrate Back to School, here are the best study and friendship-focused features, apps, and Activities on Discord.</p>
         </div>
     </div>
     <div class="btn-wrapper w-condition-invisible"><a href="#" class="btn-blog w-dyn-bind-empty w-button"></a></div>
@@ -13,13 +13,13 @@
             <p>What’s the most important part of school? That’s correct: YOUR STUDIES!&nbsp;</p>
             <p>And when it’s time to sit down at your desk and get to work, Discord’s here to help. Need advice on your next essay? Looking for some motivation to finally tackle all your classwork? In search of tips to help keep everything organized? We’ve got you covered better than an overstuffed backpack with poor weight distribution.</p>
             <p>We’ve scoured through the <a href="https://discord.com/application-directory">App Directory</a> and <a href="https://discord.com/blog/server-activities-games-voice-watch-together">Discord Activities</a> for some of the best Discord-owned and third-party Apps and Activities for Discord that will make learning feel like you’re talking to a friend. Even if you’re not officially enrolled in classes, you’ll still be able to learn something new.</p>
-            <p>Since Discord’s also on iOS and Android, you can jump into some study sessions and learn something new with your friends wherever you go.&nbsp;<br>‍</p>
-            <h3><strong>Jamspace Whiteboard</strong>&nbsp;</h3>
+            <p>Since Discord’s also on iOS and Android, you can jump into some study sessions and learn something new with your friends wherever you go.</p>
+            <h3><strong>Jamspace Whiteboard</strong></h3>
             <figure class="w-richtext-figure-type-video w-richtext-align-fullwidth" style="padding-bottom:56.206088992974244%">
                 <div><iframe allowfullscreen="true" frameborder="0" scrolling="no" src="https://www.youtube.com/embed/dkt3TJ7JXEk" title="Introducing Jamspace Whiteboard"></iframe></div>
             </figure>
             <p>When it comes to studying, it’s often much easier to explain concepts visually rather than just talking about them. Jamspace Whiteboard is an Activity developed by Discord that you can launch within a Voice channel or DM call, directly within Discord by clicking the Rocket Ship button! (Don’t know what Activities on Discord are? <a href="https://discord.com/blog/server-activities-games-voice-watch-together">Read all about ‘em here.</a>)&nbsp;</p>
-            <p>Having a digital whiteboard can be a great way to collaboratively study with your friends and map out anything you’d like. Post sticky notes and move them around a flow chart, collab on a math problem, sketch out a prototype, point to a specific area of text, mark the best one with a star, and so much more. Don’t forget to carve out a portion of the whiteboard just for doodling and academically appropriate gifs, of course. The possibilities are as vast as your imagination!<br>‍</p>
+            <p>Having a digital whiteboard can be a great way to collaboratively study with your friends and map out anything you’d like. Post sticky notes and move them around a flow chart, collab on a math problem, sketch out a prototype, point to a specific area of text, mark the best one with a star, and so much more. Don’t forget to carve out a portion of the whiteboard just for doodling and academically appropriate gifs, of course. The possibilities are as vast as your imagination!</p>
             <h3>StudyLion&nbsp;</h3>
             <figure class="w-richtext-figure-type-image w-richtext-align-fullwidth" style="max-width:1200pxpx">
                 <div><img src="https://assets-global.website-files.com/5f9072399b2640f14d6a2bf4/64ed17a9ea76ea1cb9564721_kC9Fht0aCBah8aNhjA-6zKTxweV3fYqlMzENIcSTE9-CxKQCGHzwYvg5Ia6IiCtW20mX_r1oJE-cLswmHCXj5e_qiPJ7gzbbFyJTDCbzTQ4ermBmFbvKbYKmifbkW7XahzhJzeDxNjM4-lpVYJfz-Do.png" alt="A preview of StudyLion’s Statistics features. It shows a server member’s studying history and a chart mapping their study habits over the previous week.‍"></div>
@@ -65,14 +65,14 @@
         <div class="blog-post-content w-richtext">
             <h2><strong>Discord Apps for Connecting with Buddies<br></strong></h2>
             <p>Again, what’s the most important part of school? That’s correct: YOUR STUDIES! <br><br>Now that the professor has walked away from you while you’re reading this, let’s chat about something just as important as your academic studies: forming long-lasting friendships with your classmates. Or, if you’re abroad, stay connected with your closest friends, no matter the distance.</p>
-            <p>We all need a break from studying from time to time. In fact, taking a well-deserved break and coming back to your studies will probably help you refocus and return to a better mood for tackling your tasks!&nbsp;<br>‍</p>
+            <p>We all need a break from studying from time to time. In fact, taking a well-deserved break and coming back to your studies will probably help you refocus and return to a better mood for tackling your tasks!</p>
             <h3><strong>Cappuccino</strong>&nbsp;<br></h3>
             <figure class="w-richtext-figure-type-image w-richtext-align-fullwidth" style="max-width:1126pxpx">
                 <div><img src="https://assets-global.website-files.com/5f9072399b2640f14d6a2bf4/64ee1a9258b8d51236e773db_PaKWMt5o01dP25DWFXZmeRM9e4evleLwzN8hWCwX9JQq8NVHZCq2FNaFURZw3b8ShhURk0fzAAo400R5PrP5OL-JCk43-Kb0sI-hiRZlN_d_HHqG8Ce6WXZ4RBWOKnGup2V1qSOwUlx-2PvG4Ii1zlM.png" alt="A demonstration of the Cappuccino app in-use. Cappuccino is asking server members what they’ve been up to lately, which it’ll eventually use to create an AI summarization of the answers supplied."></div>
             </figure>
             <p>Alongside with your usual iced coffee order, bring a freshly-brewed Cappuccino for all your classmates in your study server! Cappuccino is an app that prompts everyone with a specific question to answer. It could be about how the day was, what y’all have done recently, or anything else you can think of.&nbsp;</p>
             <p>Your server’s answers are called “beans.” Once everyone answers a question, the beans are brewed together to create a summary written just for your community, called a “cappuccino.” It’s the type of cappuccino that everyone in the chat can enjoy at once, and you won’t even feel awkward being the one person who brought a cappuccino to the study session.</p>
-            <p>Brew a cup for your community by adding Cappuccino to your server: &nbsp;<em>‍<br></em></p>
+            <p>Brew a cup for your community by adding Cappuccino to your server:<em>‍<br></em></p>
             <div class="w-embed">
                 <div class="btn-wrapper"><a data-track="https://discord.com/application-directory/1103981956267507712" href="https://discord.com/application-directory/1103981956267507712" class="btn-blog w-button" target="_blank">View Cappuccino on the App Directory</a></div>
             </div>
@@ -81,7 +81,7 @@
                 <div><iframe allowfullscreen="true" frameborder="0" scrolling="no" src="https://www.youtube.com/embed/2RQ2pTuQMz0" title="Introducing Gartic Phone on Discord"></iframe></div>
             </figure>
             <p>It’s possible you may have already played this game in the past! Gartic Phone is a popular browser-based game that’s also available as an easily-accessible Activity on Discord so anyone on the VC – whether they’re on desktop or using their smartphone – can join and play with the press of a button (the <a href="https://discord.com/blog/server-activities-games-voice-watch-together">Rocket Ship button</a> specifically).</p>
-            <p>The premise is simple: Everyone thinks of a silly sentence, then the sentence is shared with someone else who has to draw it. After everyone’s artistic renditions are gathered, they’re presented for the group to be amazed by, (lovingly) laughed at, or screenshotted for eventual inside jokes where you’ll send an emoji of your previous abomination and giggle at it like it was just yesterday.&nbsp;<br>‍</p>
+            <p>The premise is simple: Everyone thinks of a silly sentence, then the sentence is shared with someone else who has to draw it. After everyone’s artistic renditions are gathered, they’re presented for the group to be amazed by, (lovingly) laughed at, or screenshotted for eventual inside jokes where you’ll send an emoji of your previous abomination and giggle at it like it was just yesterday.</p>
             <h3><strong>Color Together</strong></h3>
             <figure class="w-richtext-figure-type-video w-richtext-align-fullwidth" style="padding-bottom:56.206088992974244%">
                 <div><iframe allowfullscreen="true" frameborder="0" scrolling="no" src="https://www.youtube.com/embed/6tpVtari6sY" title="Introducing Color Together"></iframe></div>
