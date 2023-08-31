@@ -30874,6 +30874,58 @@ img[alt] {
     flex-grow: 1
 }
 
+.giftBox-A9yB35,
+.giftBoxHighlighted-1D8128 {
+    background-color: var(--background-secondary-alt);
+    border-radius: 8px;
+    border: 3px solid var(--transparent)
+}
+
+.giftBoxHighlighted-1D8128 {
+    border: 3px solid var(--brand-360)
+}
+
+.infoIcon-chB-oI {
+    height: 16px;
+    color: var(--header-primary)
+}
+
+.giftBoxHeaderContainer-3BUaXT,
+.infoIconContainer-7wlSbF {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex
+}
+
+.giftBoxHeaderContainer-3BUaXT {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row
+}
+
+.giftBoxHeaderText-2ndxNR {
+    text-transform: uppercase;
+    letter-spacing: .02em;
+    margin-right: 6px
+}
+
+.giftBoxOptionContainer-ruho5Z {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    gap: 9px;
+    margin-top: 16px;
+    margin-bottom: 16px
+}
+
 .planOption-187LtR {
     color: var(--interactive-normal);
     display: -webkit-box;
@@ -30975,17 +31027,6 @@ img[alt] {
     color: var(--interactive-normal)
 }
 
-.infoIcon-J_sYol {
-    height: 16px;
-    color: var(--header-primary)
-}
-
-.infoIconContainer-mTm0rR {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex
-}
-
 .clickable-32Okxi {
     cursor: pointer
 }
@@ -31014,49 +31055,6 @@ img[alt] {
 
 .selectPlanTotalRow-1NPeLo {
     margin-top: 8px
-}
-
-.seasonalGiftBoxHeaderContainer-1xcybj {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: row;
-    flex-direction: row
-}
-
-.seasonalGiftBoxHeaderText-eXujIZ {
-    text-transform: uppercase;
-    letter-spacing: .02em;
-    margin-right: 6px
-}
-
-.seasonalGiftBoxOptionContainer-3wn-nC {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: row;
-    flex-direction: row;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
-    gap: 9px;
-    margin-top: 16px;
-    margin-bottom: 16px
-}
-
-.seasonalGiftBox-2gg4e7,
-.seasonalGiftBoxHighlighted-3Emebb {
-    background-color: var(--background-secondary-alt);
-    border-radius: 8px;
-    border: 3px solid var(--transparent)
-}
-
-.seasonalGiftBoxHighlighted-3Emebb {
-    border: 3px solid var(--brand-360)
 }
 
 .seasonalGiftBoxHeaderIcon-bmDtS5 {
@@ -166752,4 +166750,4 @@ html .invoiceCancelRow-dVOR64 {
     margin-bottom: 16px
 }
 
-/*# sourceMappingURL=40532.418a7f134653cff505d6.css.map*/
+/*# sourceMappingURL=40532.35b6c80e94b1ec4b6808.css.map*/
