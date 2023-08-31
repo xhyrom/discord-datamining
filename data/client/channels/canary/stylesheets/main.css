@@ -160471,9 +160471,11 @@ html .invoiceCancelRow-3s2UuC {
 }
 
 .bannerContent-3Sk0tn {
-    margin-top: 60px;
     margin-left: 60px;
-    position: absolute
+    position: absolute;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex
 }
 
 .bannerCard-2LJzbg {
@@ -160517,25 +160519,55 @@ html .invoiceCancelRow-3s2UuC {
     border-radius: 16px;
     background: -webkit-gradient(linear, left top, right top, from(hsl(269, calc(var(--saturation-factor, 1)*52.7%), 52.7%)), color-stop(hsl(296, calc(var(--saturation-factor, 1)*50%), 51.4%)), to(hsl(325, calc(var(--saturation-factor, 1)*31.7%), 51.8%)));
     background: linear-gradient(90deg, hsl(269, calc(var(--saturation-factor, 1)*52.7%), 52.7%), hsl(296, calc(var(--saturation-factor, 1)*50%), 51.4%), hsl(325, calc(var(--saturation-factor, 1)*31.7%), 51.8%));
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    padding: 2px 10px;
-    margin-left: 8px;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center
+    padding: 1px 4px 3px;
+    position: absolute;
+    right: -20px;
+    top: 14px
 }
 
 .nitroIcon-1X63-E {
     color: #fff;
-    -ms-flex-negative: 0;
-    flex-shrink: 0;
     height: 18px
 }
 
 .nitroText-6or9TO {
     color: #fff
+}
+
+.contentSection-3QALL0 {
+    margin-top: 60px;
+    -webkit-box-flex: 3;
+    -ms-flex: 3;
+    flex: 3
+}
+
+.decoSection-gerPq1 {
+    -webkit-box-flex: 2;
+    -ms-flex: 2;
+    flex: 2;
+    margin-left: 32px;
+    margin-top: 16px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex
+}
+
+.deco-3isTpm {
+    -webkit-box-flex: 1;
+    -ms-flex: 1;
+    flex: 1
+}
+
+.deco1-hukJIT {
+    margin-top: 8px
+}
+
+.deco2-KGEypq {
+    margin-top: 150px
+}
+
+.deco3-2-Y0Ve {
+    margin-top: 24px
 }
 
 .spacing-1JirW3 {}
@@ -166482,6 +166514,30 @@ html .invoiceCancelRow-dVOR64 {
     background: linear-gradient(90deg, #ac9e21, #c04500)
 }
 
+.nonNitroContainer-2qpzRP {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex
+}
+
+.nonNitroPrice-1ruK2a {
+    margin-top: 16px
+}
+
+.disclaimer-NGMa8n {
+    margin-top: 8px
+}
+
+.nitroIcon-2f1t6r {
+    color: #fff;
+    margin-top: 15px;
+    margin-left: 2px
+}
+
+.tooltip-1sdgrM {
+    max-width: 240px
+}
+
 .modalContent-JK5iQA,
 .root-2-pdq6 {
     overflow: hidden
@@ -166627,4 +166683,4 @@ html .invoiceCancelRow-dVOR64 {
     margin-bottom: 16px
 }
 
-/*# sourceMappingURL=40532.f6ef63136db82e947c9f.css.map*/
+/*# sourceMappingURL=40532.e6e3e426d5265cf27572.css.map*/
