@@ -15876,6 +15876,7 @@
   "BROADCASTING_BROADCASTER_TOOLTIP_BODY": "\"You can now create your own temporary space where friends can drop by to hang out.\"",
   "BROADCASTING_STOP_STREAM_CONFIRM_BODY": "\"Stopping your stream will also close your party, preventing people from seeing and joining it. You can re-open your party at any time by restarting your stream. Are you sure you want to end your stream?\"",
   "BROADCASTING_START_STREAM_CONFIRM_BODY": "\"Starting your stream will re-open your party, allowing people to see it and join. Are you sure you want to start your stream?\"",
+  "BROADCASTING_BETA_TOOLTIP_TEXT": "\"Open Parties is an experimental feature. A limited number of users have the ability to host or join.\"",
   "COLLECTIBLES_SHOP_HERO_BANNER_TITLE": "\"Collect what you want\"",
   "COLLECTIBLES_SHOP_HERO_BANNER_SUBTITLE": "\"Collect and use 'em whenever you want. Shop the latest avatar decorations, discounted with Nitro. Hurry before they're gone!\"",
   "XBOX": "\"Xbox\"",
