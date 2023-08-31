@@ -859,24 +859,16 @@
     "allowed_methods": null
   },
   "COLLECTIBLES_CATEGORIES": {
-    "url": "/collectibles/categories",
-    "allowed_methods": [
-      "GET",
-      "HEAD",
-      "OPTIONS"
-    ]
+    "url": "/collectibles-categories",
+    "allowed_methods": null
   },
   "COLLECTIBLES_CLAIM": {
-    "url": "/users/@me/collectibles/claim",
+    "url": "/users/@me/claim-premium-collectibles-product",
     "allowed_methods": null
   },
   "COLLECTIBLES_PURCHASES": {
-    "url": "/users/@me/collectibles/purchases",
-    "allowed_methods": [
-      "GET",
-      "HEAD",
-      "OPTIONS"
-    ]
+    "url": "/users/@me/collectibles-purchases",
+    "allowed_methods": null
   },
   "COLLECTIBLES_ASSET": {
     "url": "/applications/1096190356233670716/app-assets/:param.:param",
