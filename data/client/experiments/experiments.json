@@ -3249,6 +3249,27 @@
   },
   {
     "data": {
+      "kind": "guild",
+      "id": "2023-07_clyde_ai_proactive_guilds",
+      "label": "Proactive Clyde",
+      "description": [
+        "Not Eligible",
+        "Control Bucket",
+        "Treatment 1: enable proactive clyde"
+      ],
+      "hash": 3041932109,
+      "buckets": [
+        -1,
+        0,
+        1
+      ],
+      "config_keys": [
+        "enabled"
+      ]
+    }
+  },
+  {
+    "data": {
       "kind": "user",
       "id": "2023-08_local_message_background_sending",
       "label": "Send Messages In The Backgrounded",
