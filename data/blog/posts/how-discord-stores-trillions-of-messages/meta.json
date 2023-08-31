@@ -3,7 +3,7 @@
   "title": "How Discord Stores Trillions of Messages",
   "link": "https://discord.com/blog/how-discord-stores-trillions-of-messages",
   "guid": "https://discord.com/blog/how-discord-stores-trillions-of-messages",
-  "description": "Almost six years after our blog post titled \"How Discord Stores Billions of Messages,\" we’ve changed a lot, and this means how we store messages has needed to adapt as we scale. Engineer Bo Ingram shares insight into how Discord shoulders its traffic and provides a platform for our users to communicate.",
+  "description": "Engineer Bo Ingram shares insight into how Discord shoulders its traffic and provides a platform for our users to communicate.",
   "pubDate": "Mon, 06 Mar 2023 00:00:00 GMT",
   "media:content": "https://uploads-ssl.webflow.com/5f9072399b2640f14d6a2bf4/640658a746a8ce16d18f27ac_027_Header.png",
   "media:thumbnail": "https://uploads-ssl.webflow.com/5f9072399b2640f14d6a2bf4/640658a746a8ce16d18f27ac_027_Header.png"
