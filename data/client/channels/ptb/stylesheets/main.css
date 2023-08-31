@@ -100366,86 +100366,6 @@ strong {
     left: 16px
 }
 
-.container-1vJMin {
-    text-align: center;
-    position: relative;
-    padding: 32px;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    justify-content: center;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: column;
-    flex-direction: column
-}
-
-.container-1vJMin>* {
-    margin-bottom: 24px
-}
-
-.buttonContainer-tkKXTP {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    justify-content: center
-}
-
-.buttonContainer-tkKXTP>:not(:last-child) {
-    margin-right: 16px
-}
-
-.button-2wLT5y {
-    width: 160px;
-    height: 40px
-}
-
-.sparkleStar-6LvjTI {
-    position: absolute
-}
-
-.sparkleStar1-2v0V0s {
-    top: 12px;
-    left: 12px;
-    width: 8px;
-    height: 16px;
-    color: #6bf
-}
-
-.sparkleStar2-1ry0eu {
-    top: 28px;
-    left: 0;
-    width: 12px;
-    height: 24px;
-    color: #5765f1
-}
-
-.sparkleStar3-3rxehx {
-    top: 44px;
-    right: 0;
-    width: 8px;
-    height: 16px;
-    color: #91ffac
-}
-
-.sparkleStar4-3-pq8C {
-    top: 64px;
-    right: 12px;
-    width: 12px;
-    height: 24px;
-    color: #ea459e
-}
-
 .root-1F1IKT {
     position: absolute;
     z-index: -1;
@@ -101431,11 +101351,6 @@ strong {
     right: -32px
 }
 
-.footer-j5ehCa {
-    margin-top: 128px;
-    margin-bottom: 156px
-}
-
 .bottomIllustration-GuKjww {
     position: absolute;
     bottom: 0
@@ -101463,14 +101378,10 @@ strong {
 }
 
 .footerSpacing-3N6Oem {
-    height: 228px
-}
-
-.footerSpacingSmall-1daTM1 {
     height: 128px
 }
 
-.footerSpacingSmallFullscreen-1iMTGQ {
+.footerSpacingFullscreen-QPYGc9 {
     height: 96px
 }
 
@@ -166814,4 +166725,4 @@ html .invoiceCancelRow-dVOR64 {
     margin-bottom: 16px
 }
 
-/*# sourceMappingURL=40532.17976010dfed73b42d42.css.map*/
+/*# sourceMappingURL=40532.69321aea108c11b9d4e0.css.map*/
