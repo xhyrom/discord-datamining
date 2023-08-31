@@ -165767,7 +165767,6 @@ html .invoiceCancelRow-3s2UuC {
 }
 
 .collectedInfo-1jRvE- {
-    background: linear-gradient(135deg, #247c94, #130b28);
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -165784,11 +165783,6 @@ html .invoiceCancelRow-3s2UuC {
     text-align: center;
     gap: 12px;
     padding: 32px
-}
-
-.useNowButton-2gItsr {
-    background: -webkit-gradient(linear, left top, right top, from(#138397), to(#b845c1));
-    background: linear-gradient(90deg, #138397, #b845c1)
 }
 
 .oldCredentialName-15t4B9 {
@@ -166523,4 +166517,4 @@ html .invoiceCancelRow-dVOR64 {
     margin-bottom: 16px
 }
 
-/*# sourceMappingURL=40532.aa6668864942274e7f28.css.map*/
+/*# sourceMappingURL=40532.2f672c90474698137886.css.map*/
