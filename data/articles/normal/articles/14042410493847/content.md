@@ -54,11 +54,10 @@
 <p><span style="color: #2e3338;" data-darkreader-inline-color="">2. Select the Tt icon.</span></p>
 <p><span style="color: #2e3338;" data-darkreader-inline-color="">3. Choose a font and color, and write anything you like with your keyboard (analog or digital).</span></p>
 <h3 id="h_01H969WF2732W5Y2A0GXAVYQ0M"><span style="color: #434343;" data-darkreader-inline-color="">Note: Jamspace Whiteboard is an activity that allows everyone in voice to join (unlimited participants) but is optimized for up to 12 participants. More people can join the activity, but performance may decline when more people are interacting with Jamspace Whiteboard.</span></h3>
-<h1 id="h_01H06K3K4D5SKF74G4GSZXY9YS">What GIFs Can Be Used In the Activity?</h1>
-<p><span style="color: #2e3338;" data-darkreader-inline-color="">Jamspace Whiteboard has a built-in GIF library that you can search from inside the Activity.</span></p>
-<p><span style="color: #2e3338;" data-darkreader-inline-color="">To provide an enjoyable experience for the widest range of Discord users, we may use certain content filters so some GIFs may not appear in the search results.</span></p>
-<h3 id="h_01H969WF27QFEN36XWX4MPF6A6"><span style="color: #434343;" data-darkreader-inline-color="">Your “favorite” GIFs from Discord will not populate in Jamspace Whiteboard.</span></h3>
-<h1 id="h_01H06K3XP9QHBMY3R2WSXD3C70">“Saving” in Jamspace Whiteboard</h1>
+<h1 id="h_01H06K3K4D5SKF74G4GSZXY9YS">What GIFs &amp; Stickers Can Be Used In The Activity?</h1>
+<p>Jamspace Whiteboard has a built-in GIF &amp; Sticker library that you can search from inside the Activity.<br>To provide an enjoyable experience for the widest range of Discord users, we may use certain content filters so some GIFs &amp; Stickers may not appear in the search results.</p>
+<h3 id="h_01H969WF27QFEN36XWX4MPF6A6"><span style="color: #434343;" data-darkreader-inline-color="">Your “favorite” GIFs and Stickers from Discord will not populate in Jamspace Whiteboard.</span></h3>
+<h1 id="h_01H06K3XP9QHBMY3R2WSXD3C70"><span style="color: #2e3338;" data-darkreader-inline-color="">“Saving” and “Sharing” Jamspace Whiteboard</span></h1>
 <p>In Jamspace Whiteboard there is not a way to save or download an image of the board. There is also no way to load in a saved session.</p>
 <p><strong>If all participants leave the activity the Jamspace Whiteboard board will be wiped</strong> - next time you launch the activity you will start with a clean slate. Please take a screenshot of your creations before leaving the activity!</p>
 <h1 id="h_01H06K43MWNF3VQSMC4X7ZSSZT">Keyboard shortcuts</h1>
