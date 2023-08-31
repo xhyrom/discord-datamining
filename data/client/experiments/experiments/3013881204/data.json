@@ -1,0 +1,21 @@
+{
+  "data": {
+    "kind": "user",
+    "id": "2023-08_secure_frames_encryption",
+    "label": "Allowing testing secure frames for voice/video",
+    "description": [
+      "Not Eligible",
+      "Control Bucket",
+      "Treatment 1: Can support secure frames for voice/video"
+    ],
+    "hash": 3013881204,
+    "buckets": [
+      -1,
+      0,
+      1
+    ],
+    "config_keys": [
+      "enabled"
+    ]
+  }
+}
