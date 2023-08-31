@@ -63864,8 +63864,8 @@ strong {
     border-radius: var(--radius-sm);
     outline: 1.5px solid var(--interactive-normal);
     background: hsla(0, 0%, 100%, .01);
-    -webkit-box-shadow: 0 0 21px 4px hsla(0, 0%, 100%, .12);
-    box-shadow: 0 0 21px 4px hsla(0, 0%, 100%, .12)
+    -webkit-box-shadow: 0 0 12px 3px hsla(0, 0%, 100%, .12);
+    box-shadow: 0 0 12px 3px hsla(0, 0%, 100%, .12)
 }
 
 .container-PSWAEM {
@@ -63903,8 +63903,8 @@ strong {
 
 .tabSelected-1a9MlN {
     background-color: var(--brand-500);
-    -webkit-box-shadow: 0 0 12px 0 var(--brand-500);
-    box-shadow: 0 0 12px 0 var(--brand-500)
+    -webkit-box-shadow: 0 0 4px 0 var(--brand-500);
+    box-shadow: 0 0 4px 0 var(--brand-500)
 }
 
 .tabDisabled-1l0OgZ {
@@ -166517,4 +166517,4 @@ html .invoiceCancelRow-dVOR64 {
     margin-bottom: 16px
 }
 
-/*# sourceMappingURL=40532.1b14833e53321f712ee9.css.map*/
+/*# sourceMappingURL=40532.18d1dcd6dd3e30f14150.css.map*/
