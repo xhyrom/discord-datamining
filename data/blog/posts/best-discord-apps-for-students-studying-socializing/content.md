@@ -72,7 +72,8 @@
             </figure>
             <p>Alongside with your usual iced coffee order, bring a freshly-brewed Cappuccino for all your classmates in your study server! Cappuccino is an app that prompts everyone with a specific question to answer. It could be about how the day was, what y’all have done recently, or anything else you can think of.&nbsp;</p>
             <p>Your server’s answers are called “beans.” Once everyone answers a question, the beans are brewed together to create a summary written just for your community, called a “cappuccino.” It’s the type of cappuccino that everyone in the chat can enjoy at once, and you won’t even feel awkward being the one person who brought a cappuccino to the study session.</p>
-            <p>Brew a cup for your community by adding Cappuccino to your server:<em>‍<br></em></p>
+            <p>Brew a cup for your community by adding Cappuccino to your server:</p>
+            <p>‍<em>‍<br></em></p>
             <div class="w-embed">
                 <div class="btn-wrapper"><a data-track="https://discord.com/application-directory/1103981956267507712" href="https://discord.com/application-directory/1103981956267507712" class="btn-blog w-button" target="_blank">View Cappuccino on the App Directory</a></div>
             </div>
