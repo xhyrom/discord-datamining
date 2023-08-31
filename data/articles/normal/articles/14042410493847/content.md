@@ -6,6 +6,7 @@
         <a href="#h_01H06K2B6AWB50WXP92VRM8JN4" target="_self">How to Use Jamspace Whiteboard</a>
         <ul>
             <li><a href="#h_01H06K2M958PF5NWPZFKBEF3YT" target="_self">Drawing</a></li>
+            <li><a href="https://support.discord.com/hc/en-us/articles/14042410493847#h_01H969Y74DAJAX99BFZWAXYA0S">Stickynotes</a></li>
             <li><a href="#h_01H06K2SRD7EAWQ8MJKX35DKYQ" target="_self">Writing</a></li>
             <li><a href="#h_01H06K31EYKJ3S36P4NA9FR3EP" target="_self">GIF-ing</a></li>
             <li><a href="#h_01H7GPV2FB54AAJEZM4A014CDG" target="_self">Shapes</a></li>
@@ -20,36 +21,43 @@
 <p><strong>Jamspace Whiteboard</strong><span style="color: #2e3338;" data-darkreader-inline-color=""> is a collaborative whiteboard right inside Discord. You can draw, write text, search for and post GIFs (and can draw on top of those, too)! It’s not what you create, it’s the fun of creating it together!</span></p>
 <h1 id="h_01H06K25VR16Q6MAJ0DW5Y2MA8">Starting Jamspace Whiteboard in Discord</h1>
 <p>There are many different ways you can launch Jamspace Whiteboard in the Discord app for you and your friends! Whether in a server’s voice channel or in a direct message, you can check out <a href="https://support.discord.com/hc/en-us/articles/4422142836759-Activities-on-Discord" target="_blank" rel="noopener noreferrer">Activities on Discord</a> for instructions on how to start any Activity.</p>
-<h3><span style="color: #434343;" data-darkreader-inline-color="">Before starting any Discord Activity on Desktop, please make sure to turn on Hardware Acceleration in User Settings &gt; Advanced.</span></h3>
+<h3 id="h_01H969WF27RPXX10CJ9ZEHVRP8"><span style="color: #434343;" data-darkreader-inline-color="">Before starting any Discord Activity on Desktop, please make sure to turn on Hardware Acceleration in User Settings &gt; Advanced.</span></h3>
 <h1 id="h_01H06K2B6AWB50WXP92VRM8JN4">How to Use Jamspace Whiteboard</h1>
-<p>You can use Jamspace Whiteboard to create anything you like, but here are some hot tips!</p>
+<p><span style="color: #2e3338;" data-darkreader-inline-color="">You can use Jamspace Whiteboard to create anything you like, from drawings to diagrams to fun birthday cards, but here are some hot tips!</span></p>
 <h2 id="h_01H06K2M958PF5NWPZFKBEF3YT">Drawing</h2>
-<p class="wysiwyg-text-align-center"><img style="height: 349px; width: 624px;" src="https://support.discord.com/hc/article_attachments/14541288450583"></p>
+<p class="wysiwyg-text-align-center"><img src="https://support.discord.com/hc/article_attachments/17182181472791" alt="JamspaceDrawingGIFHelpCenter.gif"></p>
 <p>1. Bring up the quickbar at the bottom of the screen.</p>
 <p>2. Select the icon that looks like a pencil.</p>
-<p>3. Create a masterpiece!</p>
-<h2 id="h_01H06K2SRD7EAWQ8MJKX35DKYQ">Writing</h2>
-<p class="wysiwyg-text-align-center"><img style="height: 349px; width: 624px;" src="https://support.discord.com/hc/article_attachments/14541288456727"></p>
-<p>1. Bring up the quickbar at the bottom of the screen.</p>
-<p>2. Select the <strong>Tt</strong> icon.</p>
-<p>3. Write anything you like with your keyboard (analog or digital).</p>
-<h2 id="h_01H06K31EYKJ3S36P4NA9FR3EP">GIFing</h2>
-<p class="wysiwyg-text-align-center"><img style="height: 349px; width: 624px;" src="https://support.discord.com/hc/article_attachments/14541288537623"></p>
-<p>1. Bring up the quickbar at the bottom of the screen.</p>
-<p>2. Select the <strong>GIF</strong> icon.</p>
-<p>3. Search for a GIF in the text field, or select a prompt.</p>
-<p>4. Select your GIF.</p>
-<h2 id="h_01H7GPV2FB54AAJEZM4A014CDG">Shapes</h2>
+<p>3. Choose a default color or one from the color picker</p>
+<p>4. Create a masterpiece!</p>
+<h2 id="h_01H06K2SRD7EAWQ8MJKX35DKYQ">Sticky Notes</h2>
+<p class="wysiwyg-text-align-center"><img src="https://support.discord.com/hc/article_attachments/17182181477911" alt="StickyNoteGIFHelpCenter.gif"></p>
+<p><span style="color: #2e3338;" data-darkreader-inline-color="">1. Bring up the toolbar at the bottom of the screen.</span></p>
+<p><span style="color: #2e3338;" data-darkreader-inline-color="">2. Select the icon that looks like a paper sticky note.</span></p>
+<p><span style="color: #2e3338;" data-darkreader-inline-color="">3. Change color or font.</span></p>
+<p><span style="color: #2e3338;" data-darkreader-inline-color="">4. Click on the board to place the Sticky Note, and write on it!</span></p>
+<h2 id="01H96A0T74R12RMM76JJF1M5MK">GIFs and Stickers</h2>
+<p class="wysiwyg-text-align-center"><img src="https://support.discord.com/hc/article_attachments/17182181479959" alt="GIFandStickersHelpCenter.gif"></p>
+<p><span style="color: #2e3338;" data-darkreader-inline-color="">1. Bring up the toolbar at the bottom of the screen</span></p>
+<p><span style="color: #2e3338;" data-darkreader-inline-color="">2. Select the GIF icon</span></p>
+<p><span style="color: #2e3338;" data-darkreader-inline-color="">3. Select the Sticker tab or the GIF tab, search in the text field</span></p>
+<p><span style="color: #2e3338;" data-darkreader-inline-color="">4. Select the Sticker or GIF you want, it will be placed on the board</span></p>
+<h2 id="01H96A0ZYE7XSGWYBMS903EGMT">Shapes</h2>
+<p class="wysiwyg-text-align-center"><img src="https://support.discord.com/hc/article_attachments/17182181486103" alt="FilledandhollowShapesHelpCenter.gif"></p>
 <p><span style="color: #2e3338;" data-darkreader-inline-color="">1. Bring up the toolbar at the bottom of the screen</span></p>
 <p><span style="color: #2e3338;" data-darkreader-inline-color="">2. Select the Shape icon</span></p>
-<p><span style="color: #2e3338;" data-darkreader-inline-color="">3. </span><span style="color: #2e3338;" data-darkreader-inline-color="">Select a shape and color</span></p>
+<p><span style="color: #2e3338;" data-darkreader-inline-color="">3. Select a shape, color, and whether it is filled or hollow</span></p>
 <p><span style="color: #2e3338;" data-darkreader-inline-color="">4. Place a shape on the board by either tapping to place, or click and drag</span></p>
-<p class="wysiwyg-text-align-center"><img src="https://support.discord.com/hc/article_attachments/16680171016599" alt="ShapeHelpCenter.gif"></p>
-<h3><span style="color: #434343;" data-darkreader-inline-color="">Note: Jamspace Whiteboard is an activity that allows everyone in voice to join (unlimited participants) but is optimized for up to 12 participants. More people can join the activity, but performance may decline when more people are interacting with Jamspace Whiteboard.</span></h3>
+<h2 id="01H96A17F8EVATHM4AHPE7TMFA">Writing</h2>
+<p class="wysiwyg-text-align-center"><img src="https://support.discord.com/hc/article_attachments/17182181494807" alt="JamspaceTextHelpCenter.gif"></p>
+<p><span style="color: #2e3338;" data-darkreader-inline-color="">1. Bring up the toolbar at the bottom of the screen.</span></p>
+<p><span style="color: #2e3338;" data-darkreader-inline-color="">2. Select the Tt icon.</span></p>
+<p><span style="color: #2e3338;" data-darkreader-inline-color="">3. Choose a font and color, and write anything you like with your keyboard (analog or digital).</span></p>
+<h3 id="h_01H969WF2732W5Y2A0GXAVYQ0M"><span style="color: #434343;" data-darkreader-inline-color="">Note: Jamspace Whiteboard is an activity that allows everyone in voice to join (unlimited participants) but is optimized for up to 12 participants. More people can join the activity, but performance may decline when more people are interacting with Jamspace Whiteboard.</span></h3>
 <h1 id="h_01H06K3K4D5SKF74G4GSZXY9YS">What GIFs Can Be Used In the Activity?</h1>
 <p><span style="color: #2e3338;" data-darkreader-inline-color="">Jamspace Whiteboard has a built-in GIF library that you can search from inside the Activity.</span></p>
 <p><span style="color: #2e3338;" data-darkreader-inline-color="">To provide an enjoyable experience for the widest range of Discord users, we may use certain content filters so some GIFs may not appear in the search results.</span></p>
-<h3><span style="color: #434343;" data-darkreader-inline-color="">Your “favorite” GIFs from Discord will not populate in Jamspace Whiteboard.</span></h3>
+<h3 id="h_01H969WF27QFEN36XWX4MPF6A6"><span style="color: #434343;" data-darkreader-inline-color="">Your “favorite” GIFs from Discord will not populate in Jamspace Whiteboard.</span></h3>
 <h1 id="h_01H06K3XP9QHBMY3R2WSXD3C70">“Saving” in Jamspace Whiteboard</h1>
 <p>In Jamspace Whiteboard there is not a way to save or download an image of the board. There is also no way to load in a saved session.</p>
 <p><strong>If all participants leave the activity the Jamspace Whiteboard board will be wiped</strong> - next time you launch the activity you will start with a clean slate. Please take a screenshot of your creations before leaving the activity!</p>
