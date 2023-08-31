@@ -1,22 +1,7 @@
 {
   "data": {
     "kind": "guild",
-    "id": "2023-06_clyde_ai_channel_based_personality",
-    "label": "Channel based Clyde personalities",
-    "description": [
-      "Not Eligible",
-      "Control Bucket",
-      "Treatment 1: enable personality setting"
-    ],
-    "hash": 3143066071,
-    "buckets": [
-      -1,
-      0,
-      1
-    ],
-    "config_keys": [
-      "enabled"
-    ]
+    "hash": 3143066071
   },
   "rollout": {
     "populations": [
