@@ -77,7 +77,7 @@
 </ol>
 <p>Please read the<a href="https://support.discord.com/hc/en-us/articles/5330075836311" target="_blank" rel="noopener noreferrer"> Monetization Terms</a> for more details on the specific eligibility requirements.</p>
 <h2 id="h_01H96DAAQWP79AJ13WA9CQ92N4">What types of content am I NOT allowed to monetize on Discord?</h2>
-<p>Please closely review the full list of prohibited content in our <a href="https://support.discord.com/hc/en-us/articles/10575066024983-Discord-Server-Subscription-Policy" target="_blank" rel="noopener noreferrer">Monetization Policy</a>. This list includes:</p>
+<p>Please closely review the full list of prohibited content in our <a href="https://support.discord.com/hc/en-us/articles/10575066024983-Discord-Server-Subscription-Policy" target="_blank" rel="noopener noreferrer">Server Monetization Policy</a>. This list includes:</p>
 <ul>
     <li>Intellectual property</li>
     <li>Sexually explicit content</li>
@@ -94,7 +94,7 @@
 <p><strong>How much money will I earn?</strong></p>
 <p>Discord has a <strong>90 / 10 split</strong>. This means you will receive 90% of the money that you earn from each monthly subscription and/or one-time purchase you sell, and Discord will keep 10%. Keep in mind, there are various fees that will impact your final payment amount.</p>
 <p><strong>When will I get paid?</strong></p>
-<p>Once you accept our Monetization Terms, your server will be reviewed at the end of each month to determine if you’re eligible to receive a payout. To receive your <strong>first payout</strong>, your server must have earned at least $100 and meet our <a href="https://support.discord.com/hc/en-us/articles/5330075836311-Monetization-Terms" target="_blank" rel="noopener noreferrer">Monetization Terms</a> and <a href="https://support.discord.com/hc/en-us/articles/10575066024983-Discord-Server-Subscription-Policy" target="_blank" rel="noopener noreferrer">Monetization Policy</a>. If your server has earned less than $100 on its first monthly review date, it will be reviewed again at the end of the next month—and we’ll continue this process until you’ve earned $100.</p>
+<p>Once you accept our Monetization Terms, your server will be reviewed at the end of each month to determine if you’re eligible to receive a payout. To receive your <strong>first payout</strong>, your server must have earned at least $100 and meet our <a href="https://support.discord.com/hc/en-us/articles/5330075836311-Monetization-Terms" target="_blank" rel="noopener noreferrer">Monetization Terms</a> and <a href="https://support.discord.com/hc/en-us/articles/10575066024983-Discord-Server-Subscription-Policy" target="_blank" rel="noopener noreferrer">Server Monetization Policy</a>. If your server has earned less than $100 on its first monthly review date, it will be reviewed again at the end of the next month—and we’ll continue this process until you’ve earned $100.</p>
 <p>Once you’ve earned your first payout, you’ll need to earn $25 to be eligible for <strong>subsequent payouts</strong>.</p>
 <p>For example:</p>
 <ul>
@@ -114,7 +114,7 @@
 <p id="docs-internal-guid-0f56165f-7fff-7661-4a48-ac43051e8350">1. Once the server owner has enabled <a href="https://creator-support.discord.com/hc/en-us/articles/10423011974551#h_01H96DAAQW0QJK9C2V1NH629SX">monetization</a>, navigate to the <strong>Server Subscriptions </strong>tab in your Server Settings.</p>
 <p>2. Under <strong>Basic Info</strong>, select whether you want to make some channels exclusive (our most popular, flexible option) or make your entire server exclusive, which means that every user will need to pay to access it.</p>
 <p>3. Under <strong>Tiers</strong>, choose to create between 1-3 paid tiers. Need help deciding? <a href="https://discord.com/creators/server-subs-102-to-tier-or-not-to-tier" target="_blank" rel="noopener noreferrer">Click here</a> to review your options and decide what’s best for you.</p>
-<p>4. Under <strong>Emoji</strong>, you can upload Premium Emoji if it’s a perk you’d like to offer your subscribers. This is completely optional—<a href="https://creator-support.discord.com/hc/en-us/articles/10423011974551-Server-Subscriptions-For-Creators-Server-Owners-Admins#h_01GXS96QSCT5PPEAY2VT7PHDJ1" target="_blank" rel="noopener noreferrer">click here</a> to learn more about this option.</p>
+<p>4. Under <strong>Emoji</strong>, you can upload Premium Emoji if it’s a perk you’d like to offer your subscribers. This is completely optional—<a href="https://creator-support.discord.com/hc/en-us/articles/10423011974551#h_01H96GNKBMZWA050ZFXXAW885S" target="_blank" rel="noopener noreferrer">click here</a> to learn more about this option.</p>
 <h2 id="docs-internal-guid-e50d7a9e-7fff-500d-e443-70641ca92ff0">HOW DO I DISABLE SERVER SUBSCRIPTIONS? </h2>
 <p>In order to fully remove Server Subscriptions from your server, the following must be true:</p>
 <ul>
@@ -173,7 +173,7 @@
 </ul>
 <p class="wysiwyg-text-align-center"><img src="https://creator-support.discord.com/hc/article_attachments/17188941553943" alt="Frame 2870.png"></p>
 <h2 id="docs-internal-guid-cee13780-7fff-0b73-e6eb-5811529ea15f">Who can create Server Products?</h2>
-<p>Only the server owner can enable monetization [link to the <strong>How do I get started?</strong> section above], but any member with an admin role can create and manage Server Products.</p>
+<p>Only the server owner can <a href="https://creator-support.discord.com/hc/en-us/articles/10423011974551#h_01H96DAAQW0QJK9C2V1NH629SX">enable monetization</a>, but any member with an admin role can create and manage Server Products.</p>
 <h2 id="h_01H96GRJ0V79JQD8754R890KKM">How do I create a Server Product?</h2>
 <p>1. Once a server owner has enabled monetization, anyone with an admin role can navigate to the <strong>Server Products </strong>tab within Server Settings and select <strong>Create New Product</strong>. </p>
 <h1 class="wysiwyg-text-align-center"><strong><img src="https://creator-support.discord.com/hc/article_attachments/17188941560471" alt="Screen Shot 2023-08-23 at 2.14.41 PM copy.png"></strong></h1>
