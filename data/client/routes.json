@@ -868,7 +868,11 @@
   },
   "COLLECTIBLES_CATEGORIES": {
     "url": "/collectibles-categories",
-    "allowed_methods": null
+    "allowed_methods": [
+      "GET",
+      "HEAD",
+      "OPTIONS"
+    ]
   },
   "COLLECTIBLES_CLAIM": {
     "url": "/users/@me/claim-premium-collectibles-product",
@@ -876,7 +880,11 @@
   },
   "COLLECTIBLES_PURCHASES": {
     "url": "/users/@me/collectibles-purchases",
-    "allowed_methods": null
+    "allowed_methods": [
+      "GET",
+      "HEAD",
+      "OPTIONS"
+    ]
   },
   "COLLECTIBLES_ASSET": {
     "url": "/applications/1096190356233670716/app-assets/:param.:param",
