@@ -1,7 +1,7 @@
 {
   "id": 10575066024983,
   "url": "https://hammerandchisel.zendesk.com/api/v2/help_center/en-us/articles/10575066024983.json",
-  "html_url": "https://support.discord.com/hc/en-us/articles/10575066024983-Discord-Server-Subscription-Policy",
+  "html_url": "https://support.discord.com/hc/en-us/articles/10575066024983-Server-Monetization-Policy",
   "author_id": 364802902112,
   "comments_disabled": true,
   "draft": false,
@@ -9,21 +9,25 @@
   "position": 0,
   "section_id": 360007770572,
   "created_at": "2022-11-29T19:24:07Z",
-  "name": "Discord Server Subscription Policy",
-  "title": "Discord Server Subscription Policy",
+  "name": "Server Monetization Policy",
+  "title": "Server Monetization Policy",
   "source_locale": "en-us",
   "locale": "en-us",
   "outdated": false,
   "outdated_locales": [],
-  "edited_at": "2023-01-25T00:45:48Z",
+  "edited_at": "2023-08-31T21:09:37Z",
   "user_segment_id": null,
   "permission_group_id": 1720972,
   "content_tag_ids": [],
   "label_names": [
     "answer-bot",
+    "policy",
     "creator revenue policy",
     "creator revenue",
     "server subscription policy",
-    "server subscriptions"
+    "server subscriptions",
+    "monetization",
+    "server monetization policy",
+    "server monetization"
   ]
 }
