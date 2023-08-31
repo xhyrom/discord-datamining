@@ -135227,6 +135227,89 @@ html .invoiceCancelRow-3s2UuC {
     display: none
 }
 
+.container-3Kr3zk {
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    gap: 16px;
+    padding: 12px;
+    border-radius: var(--radius-sm);
+    background: var(--background-modifier-hover);
+    border: 1px solid transparent;
+    -webkit-transition: all .3s ease-out;
+    transition: all .3s ease-out
+}
+
+.publishable-1UY1vD {
+    border: 1px solid var(--button-creator-revenue-background);
+    background: rgba(32, 123, 141, .1);
+    -webkit-box-shadow: 0 0 10px 0 rgba(32, 123, 141, .5);
+    box-shadow: 0 0 10px 0 rgba(32, 123, 141, .5)
+}
+
+.explanationColumn-39-XMa {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-flex: 2;
+    -ms-flex: 2;
+    flex: 2;
+    gap: 4px
+}
+
+.publishButton-2ZGMAi {
+    background-color: var(--button-creator-revenue-background);
+    color: var(--white);
+    -webkit-transition: background-color opacity 300s ease-out;
+    transition: background-color opacity 300s ease-out
+}
+
+.disabledPublishButton-ms-s1j {
+    background-color: var(--interactive-muted);
+    color: var(--header-primary)
+}
+
+.button-3uyuzi {
+    -webkit-box-flex: 1;
+    -ms-flex: 1;
+    flex: 1
+}
+
+.buttonContents-2JWhnB {
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    gap: 8px
+}
+
+.buttonIcon-sTgGlm {
+    height: 16px;
+    width: 16px
+}
+
+.wasEverPublished-1d3WFQ {
+    -webkit-transition: all 0s;
+    transition: all 0s
+}
+
 .roleInputContainer-29uoeo {
     position: relative
 }
@@ -135346,7 +135429,7 @@ html .invoiceCancelRow-3s2UuC {
 
 .modalRoot-ni21gU {
     width: 1026px;
-    height: 770px;
+    height: 896px;
     border-radius: 12px
 }
 
@@ -135371,14 +135454,14 @@ html .invoiceCancelRow-3s2UuC {
 }
 
 .modalContent-4QmMqj {
-    padding: 24px 0;
+    padding: 0;
     background-color: var(--background-primary);
     display: grid;
-    grid-template-columns: 1fr 380px
+    grid-template-columns: 1fr 1px 388px
 }
 
 .productFieldsSection-1C10PD {
-    padding: 0 24px;
+    padding: 24px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -135397,16 +135480,25 @@ html .invoiceCancelRow-3s2UuC {
     margin-bottom: 5px
 }
 
-.productPreview-T3FojC {
-    padding: 0 16px 0 24px;
+.productPreviewScroller-_EVLbp {
+    -webkit-box-flex: 1;
+    -ms-flex: 1;
+    flex: 1
+}
+
+.productPreview-T3FojC,
+.productPreviewScroller-_EVLbp {
     display: -webkit-box;
     display: -ms-flexbox;
-    display: flex;
+    display: flex
+}
+
+.productPreview-T3FojC {
+    padding: 24px 16px 24px 24px;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
     -ms-flex-direction: column;
-    flex-direction: column;
-    border-left: 1px solid var(--background-modifier-accent)
+    flex-direction: column
 }
 
 .previewHeading-obFXK_ {
@@ -135451,6 +135543,22 @@ html .invoiceCancelRow-3s2UuC {
 
 .disabled-1_Bxxh {
     cursor: not-allowed
+}
+
+.horizontalSeparator-11FCSr {
+    height: calc(100% - 48px);
+    width: 1px
+}
+
+.horizontalSeparator-11FCSr,
+.verticalSeparator-3eso2I {
+    background: var(--background-modifier-hover);
+    margin: 24px 0
+}
+
+.verticalSeparator-3eso2I {
+    width: 100%;
+    height: 1px
 }
 
 .modal-3NRxh5 {
@@ -166683,4 +166791,4 @@ html .invoiceCancelRow-dVOR64 {
     margin-bottom: 16px
 }
 
-/*# sourceMappingURL=40532.e6e3e426d5265cf27572.css.map*/
+/*# sourceMappingURL=40532.04adbd44c95437c74c78.css.map*/
