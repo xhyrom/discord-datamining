@@ -858,6 +858,14 @@
     "url": "/avatar-decoration-presets/:param.:param",
     "allowed_methods": null
   },
+  "USER_PROFILE_EFFECTS": {
+    "url": "/user-profile-effects",
+    "allowed_methods": [
+      "GET",
+      "HEAD",
+      "OPTIONS"
+    ]
+  },
   "COLLECTIBLES_CATEGORIES": {
     "url": "/collectibles-categories",
     "allowed_methods": null
