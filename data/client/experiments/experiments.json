@@ -5067,50 +5067,24 @@
             "1": {
               "rollout": [
                 {
-                  "start": 550,
-                  "end": 650
-                },
-                {
-                  "start": 1150,
-                  "end": 1550
-                },
-                {
-                  "start": 3450,
-                  "end": 4950
+                  "start": 0,
+                  "end": 5000
                 }
               ]
             },
             "none": {
               "rollout": [
                 {
-                  "start": 0,
-                  "end": 450
-                },
-                {
-                  "start": 650,
-                  "end": 750
-                },
-                {
-                  "start": 1550,
-                  "end": 1950
-                },
-                {
-                  "start": 4950,
+                  "start": 5000,
                   "end": 10000
                 }
               ]
             }
           },
-          "filters": [
-            {
-              "type": "guild_member_count_range",
-              "min_count": 0,
-              "max_count": 2000
-            }
-          ]
+          "filters": []
         }
       ],
-      "revision": 4,
+      "revision": 5,
       "overrides": {
         "1": [
           "890883112500854804",
