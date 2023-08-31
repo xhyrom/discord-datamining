@@ -40647,8 +40647,12 @@ html .progress-2Otdc- {
     color: var(--interactive-active)
 }
 
-.lineClamp-1BEC7x {
+.lineClamp2Plus-1eksIb {
     white-space: pre-wrap
+}
+
+.lineClamp1-hh_tov {
+    white-space: nowrap
 }
 
 .roleTag--FTDMy,
@@ -40677,19 +40681,21 @@ html .progress-2Otdc- {
 }
 
 .productCard-10T4y5 {
-    width: 340px;
     border-radius: 8px;
     overflow: hidden;
-    position: relative;
-    height: 100%
+    position: relative
 }
 
 .solidBackground-13BMn7 {
     background: var(--background-secondary)
 }
 
-.opaqueBackground-3Unh3V {
-    background: rgba(78, 80, 88, .3)
+.theme-dark .opaqueBackground-3Unh3V {
+    background: rgba(48, 51, 56, .85)
+}
+
+.theme-light .opaqueBackground-3Unh3V {
+    background: var(--background-secondary)
 }
 
 .productThumbnailContainer-iSvWHI {
@@ -40697,10 +40703,10 @@ html .progress-2Otdc- {
 }
 
 .productThumbnail-2PeX7X {
-    width: 340px;
-    height: 190px;
+    width: 100%;
     -o-object-fit: cover;
-    object-fit: cover
+    object-fit: cover;
+    background: #2b2c31
 }
 
 .purchaseToUnlockBadge-A3TLAq {
@@ -40744,15 +40750,35 @@ html .progress-2Otdc- {
 }
 
 .productDetails-18hXGG {
-    display: grid;
-    gap: 4px;
+    -webkit-box-orient: horizontal;
+    -ms-flex-direction: row;
+    flex-direction: row;
     padding: 16px;
     border-bottom: 1px solid var(--background-modifier-accent);
-    -webkit-box-flex: 1;
     -ms-flex-positive: 1;
     flex-grow: 1;
     -ms-flex-line-pack: start;
     align-content: flex-start
+}
+
+.productDetailContent-2obWVm,
+.productDetails-18hXGG {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-direction: normal;
+    -webkit-box-flex: 1
+}
+
+.productDetailContent-2obWVm {
+    -webkit-box-orient: vertical;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    gap: 4px;
+    -ms-flex: 1;
+    flex: 1;
+    margin-right: 24px;
+    overflow: hidden
 }
 
 .purchaseDetails-32ByvF {
@@ -40770,12 +40796,20 @@ html .progress-2Otdc- {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    gap: 6px;
-    color: var(--interactive-hover)
+    gap: 4px;
+    color: var(--interactive-hover);
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center
+}
+
+.arrowIcon-1s4INR {
+    margin-bottom: -2px
 }
 
 .hasAction-3GAEYD {
-    cursor: pointer
+    cursor: pointer;
+    color: var(--text-link)
 }
 
 .cardClickableContainer-2nzN0M {
@@ -40832,18 +40866,31 @@ html .progress-2Otdc- {
 .productInfo-25zgtv {
     -ms-flex-item-align: start;
     align-self: start;
+    -webkit-box-orient: horizontal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    padding: 16px
+}
+
+.productInfo-25zgtv,
+.productInfoContent-1jUYrA {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    -webkit-box-direction: normal
+}
+
+.productInfoContent-1jUYrA {
     -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
     -ms-flex-direction: column;
     flex-direction: column;
+    -webkit-box-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+    overflow: hidden;
     -webkit-box-align: start;
     -ms-flex-align: start;
-    align-items: flex-start;
-    padding: 16px;
-    overflow: hidden
+    align-items: flex-start
 }
 
 .productName-3HL0K6 {
@@ -40876,14 +40923,11 @@ html .progress-2Otdc- {
 }
 
 .productActionMenuButton-1nLyoz {
-    width: 36px;
-    height: 36px;
-    padding: 6px;
+    width: 24px;
+    height: 24px;
     cursor: pointer;
-    position: absolute;
-    top: 199px;
-    right: 0;
-    z-index: 100
+    z-index: 100;
+    margin-right: -8px
 }
 
 .productActionMenuButton-1nLyoz .productActionMenuIcon-3-Oyyg {
@@ -63847,7 +63891,7 @@ strong {
     gap: 24px;
     margin-left: auto;
     margin-right: auto;
-    grid-template-columns: repeat(auto-fill, 340px)
+    grid-template-columns: repeat(auto-fill, 332px)
 }
 
 .card-2cxbBa:hover {
@@ -64015,8 +64059,8 @@ strong {
 
 .contentContainer-1faF_F {
     margin: auto;
-    max-width: 1068px;
-    min-width: 704px
+    max-width: 1044px;
+    min-width: 688px
 }
 
 .container-3XgAHv {
@@ -135183,6 +135227,89 @@ html .invoiceCancelRow-3s2UuC {
     display: none
 }
 
+.container-3Kr3zk {
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    gap: 16px;
+    padding: 12px;
+    border-radius: var(--radius-sm);
+    background: var(--background-modifier-hover);
+    border: 1px solid transparent;
+    -webkit-transition: all .3s ease-out;
+    transition: all .3s ease-out
+}
+
+.publishable-1UY1vD {
+    border: 1px solid var(--button-creator-revenue-background);
+    background: rgba(32, 123, 141, .1);
+    -webkit-box-shadow: 0 0 10px 0 rgba(32, 123, 141, .5);
+    box-shadow: 0 0 10px 0 rgba(32, 123, 141, .5)
+}
+
+.explanationColumn-39-XMa {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-flex: 2;
+    -ms-flex: 2;
+    flex: 2;
+    gap: 4px
+}
+
+.publishButton-2ZGMAi {
+    background-color: var(--button-creator-revenue-background);
+    color: var(--white);
+    -webkit-transition: background-color opacity 300s ease-out;
+    transition: background-color opacity 300s ease-out
+}
+
+.disabledPublishButton-ms-s1j {
+    background-color: var(--interactive-muted);
+    color: var(--header-primary)
+}
+
+.button-3uyuzi {
+    -webkit-box-flex: 1;
+    -ms-flex: 1;
+    flex: 1
+}
+
+.buttonContents-2JWhnB {
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    gap: 8px
+}
+
+.buttonIcon-sTgGlm {
+    height: 16px;
+    width: 16px
+}
+
+.wasEverPublished-1d3WFQ {
+    -webkit-transition: all 0s;
+    transition: all 0s
+}
+
 .roleInputContainer-29uoeo {
     position: relative
 }
@@ -135302,7 +135429,7 @@ html .invoiceCancelRow-3s2UuC {
 
 .modalRoot-ni21gU {
     width: 1026px;
-    height: 770px;
+    height: 896px;
     border-radius: 12px
 }
 
@@ -135327,14 +135454,14 @@ html .invoiceCancelRow-3s2UuC {
 }
 
 .modalContent-4QmMqj {
-    padding: 24px 0;
+    padding: 0;
     background-color: var(--background-primary);
     display: grid;
-    grid-template-columns: 1fr 380px
+    grid-template-columns: 1fr 1px 388px
 }
 
 .productFieldsSection-1C10PD {
-    padding: 0 24px;
+    padding: 24px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -135353,16 +135480,25 @@ html .invoiceCancelRow-3s2UuC {
     margin-bottom: 5px
 }
 
-.productPreview-T3FojC {
-    padding: 0 16px 0 24px;
+.productPreviewScroller-_EVLbp {
+    -webkit-box-flex: 1;
+    -ms-flex: 1;
+    flex: 1
+}
+
+.productPreview-T3FojC,
+.productPreviewScroller-_EVLbp {
     display: -webkit-box;
     display: -ms-flexbox;
-    display: flex;
+    display: flex
+}
+
+.productPreview-T3FojC {
+    padding: 24px 16px 24px 24px;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
     -ms-flex-direction: column;
-    flex-direction: column;
-    border-left: 1px solid var(--background-modifier-accent)
+    flex-direction: column
 }
 
 .previewHeading-obFXK_ {
@@ -135407,6 +135543,22 @@ html .invoiceCancelRow-3s2UuC {
 
 .disabled-1_Bxxh {
     cursor: not-allowed
+}
+
+.horizontalSeparator-11FCSr {
+    height: calc(100% - 48px);
+    width: 1px
+}
+
+.horizontalSeparator-11FCSr,
+.verticalSeparator-3eso2I {
+    background: var(--background-modifier-hover);
+    margin: 24px 0
+}
+
+.verticalSeparator-3eso2I {
+    width: 100%;
+    height: 1px
 }
 
 .modal-3NRxh5 {
@@ -160427,9 +160579,11 @@ html .invoiceCancelRow-3s2UuC {
 }
 
 .bannerContent-3Sk0tn {
-    margin-top: 60px;
     margin-left: 60px;
-    position: absolute
+    position: absolute;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex
 }
 
 .bannerCard-2LJzbg {
@@ -160473,25 +160627,55 @@ html .invoiceCancelRow-3s2UuC {
     border-radius: 16px;
     background: -webkit-gradient(linear, left top, right top, from(hsl(269, calc(var(--saturation-factor, 1)*52.7%), 52.7%)), color-stop(hsl(296, calc(var(--saturation-factor, 1)*50%), 51.4%)), to(hsl(325, calc(var(--saturation-factor, 1)*31.7%), 51.8%)));
     background: linear-gradient(90deg, hsl(269, calc(var(--saturation-factor, 1)*52.7%), 52.7%), hsl(296, calc(var(--saturation-factor, 1)*50%), 51.4%), hsl(325, calc(var(--saturation-factor, 1)*31.7%), 51.8%));
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    padding: 2px 10px;
-    margin-left: 8px;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center
+    padding: 1px 4px 3px;
+    position: absolute;
+    right: -20px;
+    top: 14px
 }
 
 .nitroIcon-1X63-E {
     color: #fff;
-    -ms-flex-negative: 0;
-    flex-shrink: 0;
     height: 18px
 }
 
 .nitroText-6or9TO {
     color: #fff
+}
+
+.contentSection-3QALL0 {
+    margin-top: 60px;
+    -webkit-box-flex: 3;
+    -ms-flex: 3;
+    flex: 3
+}
+
+.decoSection-gerPq1 {
+    -webkit-box-flex: 2;
+    -ms-flex: 2;
+    flex: 2;
+    margin-left: 32px;
+    margin-top: 16px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex
+}
+
+.deco-3isTpm {
+    -webkit-box-flex: 1;
+    -ms-flex: 1;
+    flex: 1
+}
+
+.deco1-hukJIT {
+    margin-top: 8px
+}
+
+.deco2-KGEypq {
+    margin-top: 150px
+}
+
+.deco3-2-Y0Ve {
+    margin-top: 24px
 }
 
 .spacing-1JirW3 {}
@@ -166438,6 +166622,30 @@ html .invoiceCancelRow-dVOR64 {
     background: linear-gradient(90deg, #ac9e21, #c04500)
 }
 
+.nonNitroContainer-2qpzRP {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex
+}
+
+.nonNitroPrice-1ruK2a {
+    margin-top: 16px
+}
+
+.disclaimer-NGMa8n {
+    margin-top: 8px
+}
+
+.nitroIcon-2f1t6r {
+    color: #fff;
+    margin-top: 15px;
+    margin-left: 2px
+}
+
+.tooltip-1sdgrM {
+    max-width: 240px
+}
+
 .modalContent-JK5iQA,
 .root-2-pdq6 {
     overflow: hidden
@@ -166583,4 +166791,4 @@ html .invoiceCancelRow-dVOR64 {
     margin-bottom: 16px
 }
 
-/*# sourceMappingURL=40532.8e3c7e16b5a9d73b2091.css.map*/
+/*# sourceMappingURL=40532.04adbd44c95437c74c78.css.map*/
