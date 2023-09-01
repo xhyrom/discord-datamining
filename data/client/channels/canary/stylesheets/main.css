@@ -100775,10 +100775,6 @@ html:not(.custom-theme-background) .container-Vrgqxz {
     transform: translateY(-8px)
 }
 
-.whatsNew-2zakho {
-    background-color: var(--background-primary)
-}
-
 .whatsNew-2zakho:hover {
     -webkit-box-shadow: var(--shadow-high);
     box-shadow: var(--shadow-high);
@@ -100859,6 +100855,11 @@ html:not(.custom-theme-background) .container-Vrgqxz {
     -ms-flex-item-align: center;
     align-self: center;
     min-width: 180px
+}
+
+.theme-light .cardDescription-23s_MQ {
+    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(30%, #fff), color-stop(80%, hsla(0, 0%, 100%, .5)));
+    background-image: linear-gradient(180deg, #fff 30%, hsla(0, 0%, 100%, .5) 80%)
 }
 
 .cover-1nw8ay {
@@ -101306,6 +101307,10 @@ html:not(.custom-theme-background) .container-Vrgqxz {
 .fullscreenHero-1r47nN {
     margin-bottom: 96px;
     padding-top: 96px
+}
+
+.noTopPaddingOverride-14hmNF {
+    padding-top: 0
 }
 
 .settingsHeroBogoHeight-2EBkRm {
@@ -166793,4 +166798,4 @@ html .invoiceCancelRow-dVOR64 {
     margin-bottom: 16px
 }
 
-/*# sourceMappingURL=40532.5e771d62c9e9e4369f51.css.map*/
+/*# sourceMappingURL=40532.fca1941ce3c31deaaaa4.css.map*/
