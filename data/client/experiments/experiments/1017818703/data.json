@@ -1,0 +1,21 @@
+{
+  "data": {
+    "kind": "user",
+    "id": "2023-09_client_theme_coachmark_reintro",
+    "label": "Experiment to reintroduce the client themes experiment",
+    "description": [
+      "Not Eligible",
+      "Control Bucket",
+      "Treatment 1: enable the coachmark"
+    ],
+    "hash": 1017818703,
+    "buckets": [
+      -1,
+      0,
+      1
+    ],
+    "config_keys": [
+      "enabled"
+    ]
+  }
+}

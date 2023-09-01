@@ -1,0 +1,21 @@
+{
+  "data": {
+    "kind": "user",
+    "id": "2023-08_guild_usage_survey",
+    "label": "Guild Usage Survey",
+    "description": [
+      "Not Eligible",
+      "Control Bucket",
+      "Treatment 1: show survey nag bar"
+    ],
+    "hash": 1468919041,
+    "buckets": [
+      -1,
+      0,
+      1
+    ],
+    "config_keys": [
+      "enabled"
+    ]
+  }
+}

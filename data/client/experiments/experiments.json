@@ -3931,6 +3931,27 @@
   {
     "data": {
       "kind": "user",
+      "id": "2023-09_client_theme_coachmark_reintro",
+      "label": "Experiment to reintroduce the client themes experiment",
+      "description": [
+        "Not Eligible",
+        "Control Bucket",
+        "Treatment 1: enable the coachmark"
+      ],
+      "hash": 1017818703,
+      "buckets": [
+        -1,
+        0,
+        1
+      ],
+      "config_keys": [
+        "enabled"
+      ]
+    }
+  },
+  {
+    "data": {
+      "kind": "user",
       "id": "2023-08_premium_tutorial_for_all",
       "label": "Premium Tutorial Experience For All",
       "description": [
@@ -5189,14 +5210,6 @@
               "rollout": [
                 {
                   "start": 0,
-                  "end": 5000
-                }
-              ]
-            },
-            "none": {
-              "rollout": [
-                {
-                  "start": 5000,
                   "end": 10000
                 }
               ]
@@ -6177,6 +6190,27 @@
         "viewerCountRequirement",
         "autoEnrollment",
         "showUnenroll"
+      ]
+    }
+  },
+  {
+    "data": {
+      "kind": "user",
+      "id": "2023-08_guild_usage_survey",
+      "label": "Guild Usage Survey",
+      "description": [
+        "Not Eligible",
+        "Control Bucket",
+        "Treatment 1: show survey nag bar"
+      ],
+      "hash": 1468919041,
+      "buckets": [
+        -1,
+        0,
+        1
+      ],
+      "config_keys": [
+        "enabled"
       ]
     }
   },
@@ -7241,66 +7275,6 @@
       "config_keys": [
         "enabled"
       ]
-    }
-  },
-  {
-    "data": {
-      "kind": "guild",
-      "id": "2023-06_remove_reactions_by_type",
-      "label": "Remove Reactions by Type",
-      "description": [
-        "Not Eligible",
-        "Control Bucket",
-        "Treatment 1: Enabled"
-      ],
-      "hash": 4195647747,
-      "buckets": [
-        -1,
-        0,
-        1
-      ],
-      "config_keys": [
-        "enabled"
-      ]
-    },
-    "rollout": {
-      "populations": [
-        {
-          "buckets": {
-            "1": {
-              "rollout": [
-                {
-                  "start": 0,
-                  "end": 10000
-                }
-              ]
-            }
-          },
-          "filters": [
-            {
-              "type": "guild_in_range_by_hash",
-              "hash_key": 4195647747,
-              "target": 10000
-            }
-          ]
-        },
-        {
-          "buckets": {
-            "none": {
-              "rollout": [
-                {
-                  "start": 0,
-                  "end": 10000
-                }
-              ]
-            }
-          },
-          "filters": []
-        }
-      ],
-      "revision": 0,
-      "overrides": {},
-      "overrides_formatted": []
     }
   },
   {
@@ -8376,7 +8350,7 @@
           "563549788063268875",
           "332333431885135874",
           "1102986978892460148",
-          "1090311153802031315",
+          "1147272126907306004",
           "53690199142563851"
         ]
       },
@@ -9439,6 +9413,7 @@
             {
               "type": "guild_ids",
               "ids": [
+                "1076244506703311049",
                 "1080899969243943072",
                 "1136423398608744588",
                 "814669604840013874",
@@ -11815,6 +11790,51 @@
           ]
         }
       ]
+    }
+  },
+  {
+    "data": {
+      "kind": "guild",
+      "hash": 4195647747
+    },
+    "rollout": {
+      "populations": [
+        {
+          "buckets": {
+            "1": {
+              "rollout": [
+                {
+                  "start": 0,
+                  "end": 10000
+                }
+              ]
+            }
+          },
+          "filters": [
+            {
+              "type": "guild_in_range_by_hash",
+              "hash_key": 4195647747,
+              "target": 10000
+            }
+          ]
+        },
+        {
+          "buckets": {
+            "none": {
+              "rollout": [
+                {
+                  "start": 0,
+                  "end": 10000
+                }
+              ]
+            }
+          },
+          "filters": []
+        }
+      ],
+      "revision": 0,
+      "overrides": {},
+      "overrides_formatted": []
     }
   },
   {

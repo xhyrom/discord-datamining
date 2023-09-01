@@ -249,6 +249,7 @@ id,hash,label
 2023-08_full_band_krisp_android_,2791827263,Let us control if full band is enabled on Android
 2023-08_guild_alert_mode_friend_server,2225390567,Guild Alert Mode (friend servers only)
 2023-08_guild_member_bulk_ban_experiment,2119968730,Bulk Banning Guild Members Experiment
+2023-08_guild_usage_survey,1468919041,Guild Usage Survey
 2023-08_iar_fraud_impersonation,868088545,In App Reports Fruad & Impersonation
 2023-08_iframe_modal_guild,3482606388,iFrame Modal guild experiment
 2023-08_improved_bans_page,3768642622,Guild Settings Improved Bans Page
@@ -275,4 +276,5 @@ id,hash,label
 2023-08_trial_notif_to_nitro_home,4023901003,Trial Notification to Nitro Home
 2023-08_video_quality_measurement_v1,2496837643,Video Quality Measurement
 2023-08_whats_new,1745832462,What's New
+2023-09_client_theme_coachmark_reintro,1017818703,Experiment to reintroduce the client themes experiment
 2023-09_mobile_redesign_hfu,3033100557,Tabs V2 - HFU Iteration
