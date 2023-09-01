@@ -71,15 +71,18 @@
         </colgroup>
         <tbody>
             <tr>
-                <td><strong><span style="color: #2e3338;" data-darkreader-inline-color="">Control</span></strong></td>
-                <td style="text-align: center;"><strong><span style="color: #2e3338;" data-darkreader-inline-color="">Windows / Linux</span></strong></td>
-                <td style="text-align: center;"><strong><span style="color: #2e3338;" data-darkreader-inline-color="">OSX</span></strong></td>
+                <td><span style="color: #2e3338;" data-darkreader-inline-color="">Control</span></td>
+                <td style="text-align: center;"><span style="color: #2e3338;" data-darkreader-inline-color="">Windows / Linux</span></td>
+                <td style="text-align: center;"><span style="color: #2e3338;" data-darkreader-inline-color="">OSX</span></td>
+            </tr>
+            <tr>
+                <td><span style="color: #2e3338;" data-darkreader-inline-color="">Open Shortcuts menu</span></td>
+                <td style="text-align: center;"><span style="color: #2e3338;" data-darkreader-inline-color="">Ctrl + /</span></td>
+                <td style="text-align: center;"><span style="color: #2e3338;" data-darkreader-inline-color="">⌘ + /</span></td>
             </tr>
             <tr>
                 <td><span style="color: #2e3338;" data-darkreader-inline-color="">Pan</span></td>
-                <td style="text-align: center;" colspan="2">
-                    <span style="color: #2e3338;" data-darkreader-inline-color="">Right-click drag anywhere</span><span style="color: #2e3338;" data-darkreader-inline-color=""><br></span><span style="color: #2e3338;" data-darkreader-inline-color="">or two-finger drag on touchpad</span>
-                </td>
+                <td style="text-align: center;" colspan="2"><span style="color: #2e3338;" data-darkreader-inline-color="">Space bar</span></td>
             </tr>
             <tr>
                 <td><span style="color: #2e3338;" data-darkreader-inline-color="">Zoom</span></td>
@@ -88,11 +91,11 @@
             </tr>
             <tr>
                 <td><span style="color: #2e3338;" data-darkreader-inline-color="">Select tool</span></td>
-                <td style="text-align: center;" colspan="2"><span style="color: #2e3338;" data-darkreader-inline-color="">V or hold spacebar</span></td>
+                <td style="text-align: center;" colspan="2"><span style="color: #2e3338;" data-darkreader-inline-color="">S or V or Esc</span></td>
             </tr>
             <tr>
                 <td><span style="color: #2e3338;" data-darkreader-inline-color="">Pencil tool</span></td>
-                <td style="text-align: center;" colspan="2"><span style="color: #2e3338;" data-darkreader-inline-color="">B</span></td>
+                <td style="text-align: center;" colspan="2"><span style="color: #2e3338;" data-darkreader-inline-color="">P or B</span></td>
             </tr>
             <tr>
                 <td><span style="color: #2e3338;" data-darkreader-inline-color="">Text tool</span></td>
@@ -108,6 +111,11 @@
                 <td style="text-align: center;"><span style="color: #2e3338;" data-darkreader-inline-color="">Delete</span></td>
             </tr>
             <tr>
+                <td><span style="color: #2e3338;" data-darkreader-inline-color="">Duplicate selection</span></td>
+                <td style="text-align: center;"><span style="color: #2e3338;" data-darkreader-inline-color="">Ctrl+D</span></td>
+                <td style="text-align: center;"><span style="color: #2e3338;" data-darkreader-inline-color="">⌘+D</span></td>
+            </tr>
+            <tr>
                 <td><span style="color: #2e3338;" data-darkreader-inline-color="">Undo</span></td>
                 <td style="text-align: center;"><span style="color: #2e3338;" data-darkreader-inline-color="">Ctrl+Z</span></td>
                 <td style="text-align: center;"><span style="color: #2e3338;" data-darkreader-inline-color="">⌘+Z</span></td>
@@ -120,6 +128,7 @@
         </tbody>
     </table>
 </div>
+<div> </div>
 <h1 id="h_01H06K4BNT25T8BV05K1RZKPV8">Frequently Asked Questions</h1>
 <p><strong><span style="color: #2e3338;" data-darkreader-inline-color="">Q: Is there an age requirement?</span></strong></p>
 <p><span style="color: #2e3338;" data-darkreader-inline-color="">A: There is no age requirement for Jamspace Whiteboard. By using the Jamspace Whiteboard activity you are agreeing to follow Discord </span><a href="https://discord.com/guidelines" target="_blank" rel="noopener noreferrer">Community Guidelines</a><span style="color: #2e3338;" data-darkreader-inline-color="">.</span></p>
