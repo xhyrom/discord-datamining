@@ -63961,7 +63961,8 @@ strong {
 .tabSelected-1a9MlN {
     background-color: var(--brand-500);
     -webkit-box-shadow: 0 0 4px 0 var(--brand-500);
-    box-shadow: 0 0 4px 0 var(--brand-500)
+    box-shadow: 0 0 4px 0 var(--brand-500);
+    border: 1px solid hsla(0, 0%, 100%, .15)
 }
 
 .tabDisabled-1l0OgZ {
@@ -166798,4 +166799,4 @@ html .invoiceCancelRow-dVOR64 {
     margin-bottom: 16px
 }
 
-/*# sourceMappingURL=40532.fca1941ce3c31deaaaa4.css.map*/
+/*# sourceMappingURL=40532.b2ac9983258447407858.css.map*/
