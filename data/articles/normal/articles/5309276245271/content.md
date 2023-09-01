@@ -20,6 +20,8 @@
                         <p><strong>What are the requirements to join this space?</strong></p>
                         <p>Below are the requirements your server will have to meet. </p>
                         <ul>
+                            <li>Have at least 1,000 members on your server</li>
+                            <li>Have at least a 60% monthly member retention rate</li>
                             <li>Have at least 200 members on your server</li>
                             <li>Your server must be at least 3 months old</li>
                             <li>Enable <a href="https://support.discord.com/hc/en-us/articles/360047132851-Enabling-Your-Community-Server" target="_blank" rel="noopener noreferrer">Community Settings</a> on your server</li>
@@ -36,9 +38,9 @@
                             <li>Press on <strong>Join Discord's Admins Server</strong>
                             </li>
                         </ul>
-                        <h3><span style="color: #434343;" data-darkreader-inline-color="">Note: The only way to join the Discord Admins Server is on the desktop/browser app. This is unavailable on the mobile app.</span></h3>
+                        <h3 id="h_01H991B1VRW4638ASPHMWFVQ88"><span style="color: #434343;" data-darkreader-inline-color="">Note: The only way to join the Discord Admins Server is on the desktop/browser app. This is unavailable on the mobile app.</span></h3>
                         <p class="wysiwyg-text-align-center"><span style="color: #434343;" data-darkreader-inline-color=""><img src="https://support.discord.com/hc/article_attachments/15246826977687" alt="communityserver.png"></span></p>
-                        <h1>Frequently Asked Questions</h1>
+                        <h1 id="h_01H991B1VR3MPNXFSPRYRCSVKA">Frequently Asked Questions</h1>
                         <p><strong>Q: What can I find in the Discord Admins server?</strong></p>
                         <p>A: The Discord Admins server primarily focuses on engaging, managing, protecting, and growing thriving communities on Discord.</p>
                         <p>Here you can find chatter about best practices, safety, apps, monetization, and more. Members will also receive updates on new features or updates directly from Discord. We also use the community as a way to gather feedback on some features and ask members to provide us with feedback.</p>
@@ -49,12 +51,8 @@
                         <p>A: You must complete our Community Onboarding to access channels in the server. If you are still struggling with this, you can message our Modmail bot and ask a moderator for assistance.</p>
                         <p><strong>Q: Manage Server is a pretty high permission to give out, why is it locked behind this?</strong></p>
                         <p>A: We want to ensure that we are reaching server owners, admins and moderators with this community. As such, this will require us to ensure we are reaching an audience that has this permission or capability in order to create a welcoming and fun community for all.</p>
-                        <p><strong>Q: Is the server only in English?</strong></p>
-                        <p>A: A majority of the categories are in English, but not strictly limited to being an English language community. We have dedicated spaces for French and German users, with additional forum posts for other languages. We may expand this in the future to include more languages.</p>
                         <p><strong>Q: I was banned or removed from Discord Admins, can I appeal?</strong></p>
                         <p>A: Since the server works on a warning system before removals, we provide users with time and explanation on how to avoid removal from our server. If a user does hit the threshold for warnings, or is removed from the server, we will not offer appeals to rejoin the server.</p>
-                        <h1>How to Contact </h1>
-                        <p>We'd love to hear from you! Please submit your questions and feedback on our <a href="https://support.discord.com/hc/en-us/requests/new?ticket_form_id=360000168511" target="_blank" rel="noopener noreferrer">Community Program support form</a>, and remember to select the Discord Admin Server in the Community Program dropdown.</p>
                     </div>
                 </div>
             </section>
