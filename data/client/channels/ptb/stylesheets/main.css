@@ -134907,7 +134907,8 @@ html .invoiceCancelRow-3s2UuC {
 }
 
 .textArea-3GydfY {
-    background-color: var(--input-background)
+    background-color: var(--input-background);
+    padding-bottom: 36px
 }
 
 .container-ikgCx8 {
@@ -135428,6 +135429,10 @@ html .invoiceCancelRow-3s2UuC {
     -ms-flex-direction: column;
     flex-direction: column;
     gap: 24px
+}
+
+.nameArea-2cXjvZ {
+    padding-bottom: 47px
 }
 
 .descriptionArea-3-mset {
@@ -166788,4 +166793,4 @@ html .invoiceCancelRow-dVOR64 {
     margin-bottom: 16px
 }
 
-/*# sourceMappingURL=40532.d6ba38121e90e02bab9a.css.map*/
+/*# sourceMappingURL=40532.5e771d62c9e9e4369f51.css.map*/
