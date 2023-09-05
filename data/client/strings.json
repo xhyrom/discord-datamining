@@ -15443,7 +15443,7 @@
   "GUILD_SHOP_SUPPORT_SERVER_HEADER": "\"Support the server\"",
   "GUILD_SHOP_PRODUCT_TYPE_SELECTOR_TITLE": "\"Products\"",
   "GUILD_SHOP_PRODUCT_TYPE_BODY": "\"Snag some Downloadables or special Roles\"",
-  "GUILD_ROLE_SUB_TYPE_TITLE": "\"Server Subs\"",
+  "GUILD_ROLE_SUB_TYPE_TITLE": "\"Server Subscriptions\"",
   "GUILD_ROLE_SUB_TYPE_BODY": "\"Moving to this tab soon. For now, view [here](openRoleSubPage)\"",
   "USER_DISCONNECTED_SUBTEXT": "\"!!{username}!! can still join anytime while you are here.\"",
   "DISCORD_NAME": "\"Discord\"",
