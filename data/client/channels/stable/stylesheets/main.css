@@ -111904,6 +111904,11 @@ html .tabBadge-h4HGed {
     margin-bottom: 24px
 }
 
+.tabBarItem-3SeJtd {
+    padding-bottom: 16px;
+    margin-bottom: -2px
+}
+
 .messageBlock-3K-P-A {
     border-width: 1px;
     border-style: solid;
@@ -112382,16 +112387,8 @@ html .tabBadge-h4HGed {
 .tabBar-MGaxA0 {
     margin-top: 24px;
     margin-bottom: 32px;
-    border-bottom: 2px solid var(--background-modifier-accent)
-}
-
-.tabBarItemSpacing-1eAJ4G {
-    margin-right: 32px
-}
-
-.tabBarItem-2YMiLs {
-    padding-bottom: 16px;
-    margin-bottom: -2px
+    border-bottom: 2px solid var(--background-modifier-accent);
+    gap: 32px
 }
 
 .container-2G73mC {
@@ -166811,4 +166808,4 @@ html .invoiceCancelRow-dVOR64 {
     margin-bottom: 16px
 }
 
-/*# sourceMappingURL=40532.dab8e75a07f832a816e8.css.map*/
+/*# sourceMappingURL=40532.1a49f834f577ce761070.css.map*/
