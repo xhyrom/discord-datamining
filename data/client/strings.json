@@ -13152,6 +13152,7 @@
   "GUILD_AUTOMOD_POST_TO_CHANNEL_HEADER_BLOCK_NICKNAME_UPDATE": "\"blocked a nickname update\"",
   "GUILD_AUTOMOD_POST_TO_CHANNEL_HEADER_BLOCK_NICKNAME_RESET": "\"blocked a nickname reset\"",
   "GUILD_AUTOMOD_POST_TO_CHANNEL_HEADER_QUARANTINE_USER_ON_GUILD_JOIN": "\"quarantined a member at server join\"",
+  "GUILD_AUTOMOD_POST_TO_CHANNEL_HEADER_BLOCK_GUEST_ON_GUILD_JOIN": "\"blocked a guest at server join\"",
   "GUILD_AUTOMOD_POST_TO_CHANNEL_HEADER_QUARANTINE_USER_MESSAGE_SEND": "\"quarantined a member at message send\"",
   "GUILD_AUTOMOD_POST_TO_CHANNEL_HEADER_QUARANTINE_USERNAME_UPDATE": "\"quarantined a member at username update\"",
   "GUILD_AUTOMOD_PROFILE_ERROR_QUARANTINE_USERNAME": "\"Your nickname contains words flagged by this community.\"",
