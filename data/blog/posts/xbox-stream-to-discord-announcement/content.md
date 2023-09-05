@@ -26,7 +26,7 @@
                 <div><img src="https://assets-global.website-files.com/5f9072399b2640f14d6a2bf4/64c949ef1435063628483aba_TmkRi3asrZEidaKNlMnXjxPd3eESP5emHwcfOvCVhrNWpOhpnVZeZm7Ji3htE9OY1rqTh4Zll0F0T2JCqnrMSYAJLesWej1bLmciZIUrM-TexI0ixKL7ApG_iEWVc8S-eYTDH_1kMQ2j9_rF3JPWEZ0.png" alt="The User Settings menu of the Discord desktop app. The “Connections” tab is opened, and option to connect an Xbox account to your Discord profile is highlighted by a dotted circle.&nbsp;&nbsp;"></div>
             </figure>
             <p>‍<strong>If you’ve already connected your accounts in the past to use Discord Voice on Xbox, there’s no need to re-connect your accounts.</strong></p>
-            <p><em>✨ Congratulations✨ </em>: you’ve completed the most complex part of this entire process. Now for the easy bit: streaming to Discord!<br>‍</p>
+            <p><em>✨ Congratulations✨ </em>: you’ve completed the most complex part of this entire process. Now for the easy bit: streaming to Discord!</p>
             <h3><strong>Then, Stream from Your Xbox to a Discord Server</strong></h3>
             <p>Once you’re all connected, the next time you press the Xbox button on your controller and open the Parties &amp; Chats tab on your Xbox Series X|S or Xbox One, select Discord, then scroll to one of your available servers and join a Voice channel. You’ll be placed in that community’s Voice channel. Select “Stream your game” when you’re ready to start streaming.</p>
             <p>Final step: <em>enjoy</em>!</p>
