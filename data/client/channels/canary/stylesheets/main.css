@@ -151533,6 +151533,21 @@ html .invoiceCancelRow-3s2UuC {
     flex: 1 1 33%
 }
 
+.subHeader-2QbuYQ {
+    margin-top: 16px;
+    margin-bottom: 50px
+}
+
+.headerContainer-2GXKev {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    gap: 8px
+}
+
 .container-3wgZ8J {
     position: relative;
     background-color: var(--background-secondary);
@@ -166808,4 +166823,4 @@ html .invoiceCancelRow-dVOR64 {
     margin-bottom: 16px
 }
 
-/*# sourceMappingURL=40532.1a49f834f577ce761070.css.map*/
+/*# sourceMappingURL=40532.d5d60aa257026acbff1f.css.map*/
