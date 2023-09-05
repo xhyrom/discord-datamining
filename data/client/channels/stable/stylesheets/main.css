@@ -63961,7 +63961,8 @@ strong {
 .tabSelected-1a9MlN {
     background-color: var(--brand-500);
     -webkit-box-shadow: 0 0 4px 0 var(--brand-500);
-    box-shadow: 0 0 4px 0 var(--brand-500)
+    box-shadow: 0 0 4px 0 var(--brand-500);
+    border: 1px solid hsla(0, 0%, 100%, .15)
 }
 
 .tabDisabled-1l0OgZ {
@@ -78131,6 +78132,23 @@ html:not(.custom-theme-background) .container-Vrgqxz {
     border-bottom-right-radius: var(--radius-sm)
 }
 
+.inviteChipletContainer-3839Ne {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row
+}
+
+.inviteChiplet-2M-M_o {
+    -webkit-box-flex: 0;
+    -ms-flex: 0;
+    flex: 0;
+    color: var(--text-muted)
+}
+
 .memberRowContainer-ZDlmmA {
     cursor: pointer
 }
@@ -78154,9 +78172,7 @@ html:not(.custom-theme-background) .container-Vrgqxz {
 
 .memberRowContainer-ZDlmmA .addRoleContainer-2tqBaM {
     opacity: 0;
-    cursor: pointer;
-    -webkit-transition: opacity 80ms cubic-bezier(.48, 1.93, 1, .68);
-    transition: opacity 80ms cubic-bezier(.48, 1.93, 1, .68)
+    cursor: pointer
 }
 
 .memberRowContainer-ZDlmmA:hover .addRoleContainer-2tqBaM {
@@ -78174,9 +78190,7 @@ html:not(.custom-theme-background) .container-Vrgqxz {
     font-weight: 500;
     color: var(--text-normal);
     vertical-align: middle;
-    background-color: transparent;
-    -webkit-transition: background-color 80ms cubic-bezier(.48, 1.93, 1, .68);
-    transition: background-color 80ms cubic-bezier(.48, 1.93, 1, .68)
+    background-color: transparent
 }
 
 .memberRowContainer-ZDlmmA td:after {
@@ -78187,9 +78201,7 @@ html:not(.custom-theme-background) .container-Vrgqxz {
     width: 100%;
     height: 1px;
     opacity: 1;
-    background: var(--background-modifier-accent);
-    -webkit-transition: opacity 80ms cubic-bezier(.64, .57, .67, 1.53);
-    transition: opacity 80ms cubic-bezier(.64, .57, .67, 1.53)
+    background: var(--background-modifier-accent)
 }
 
 .memberRowContainer-ZDlmmA:hover td:after {
@@ -78227,9 +78239,7 @@ html:not(.custom-theme-background) .container-Vrgqxz {
     -ms-flex-pack: end;
     justify-content: flex-end;
     gap: 8px;
-    color: var(--interactive-normal);
-    -webkit-transition: color 80ms cubic-bezier(.48, 1.93, 1, .68);
-    transition: color 80ms cubic-bezier(.48, 1.93, 1, .68)
+    color: var(--interactive-normal)
 }
 
 .actionCell-1tWIj3:hover {
@@ -78288,9 +78298,7 @@ html:not(.custom-theme-background) .container-Vrgqxz {
     height: 28px;
     cursor: pointer;
     border-radius: var(--radius-round);
-    background-color: var(--background-modifier-accent);
-    -webkit-transition: background-color 80ms cubic-bezier(.48, 1.93, 1, .68);
-    transition: background-color 80ms cubic-bezier(.48, 1.93, 1, .68)
+    background-color: var(--background-secondary)
 }
 
 .button-2XiUpU:hover {
@@ -78342,9 +78350,7 @@ html:not(.custom-theme-background) .container-Vrgqxz {
 }
 
 .addRoleIcon-5oV6RN {
-    color: var(--interactive-normal);
-    -webkit-transition: color 80ms cubic-bezier(.48, 1.93, 1, .68);
-    transition: color 80ms cubic-bezier(.48, 1.93, 1, .68)
+    color: var(--interactive-normal)
 }
 
 .roleTooltip-WIu418 {
@@ -78985,6 +78991,7 @@ html:not(.custom-theme-background) .container-Vrgqxz {
 }
 
 .table-2Z1caJ {
+    position: relative;
     border: 0;
     border-spacing: 0;
     padding: 0 8px 8px;
@@ -78999,7 +79006,7 @@ html:not(.custom-theme-background) .container-Vrgqxz {
     -webkit-box-direction: normal;
     -ms-flex-direction: row;
     flex-direction: row;
-    padding: 2px 16px;
+    padding: 0 16px;
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
@@ -79010,7 +79017,8 @@ html:not(.custom-theme-background) .container-Vrgqxz {
     -webkit-box-flex: 1;
     -ms-flex: 1;
     flex: 1;
-    padding: 0
+    padding: 0;
+    margin: -1.5px 0
 }
 
 .paginationInput-2-XoMf {
@@ -79022,7 +79030,7 @@ html:not(.custom-theme-background) .container-Vrgqxz {
 }
 
 .pageSizeInput-MBIIbl {
-    padding: 4px 4px 4px 8px
+    padding: 2px 2px 2px 6px
 }
 
 .pageSizeSelection--FwCJx {
@@ -79048,7 +79056,7 @@ html:not(.custom-theme-background) .container-Vrgqxz {
 }
 
 .emptyPagination-TYv0Iu {
-    height: 63px;
+    display: none;
     border-top: 1px solid var(--background-modifier-accent)
 }
 
@@ -79064,7 +79072,7 @@ html:not(.custom-theme-background) .container-Vrgqxz {
 }
 
 .searchHeaderContainer-1tLzKm {
-    padding: 12px 16px;
+    padding: 8px 16px;
     -ms-flex-direction: row;
     flex-direction: row;
     -ms-flex-align: center
@@ -79699,6 +79707,11 @@ html:not(.custom-theme-background) .container-Vrgqxz {
     flex-direction: column;
     gap: 24px;
     padding: 24px
+}
+
+.header-elFGge {
+    -webkit-box-shadow: var(--elevation-low);
+    box-shadow: var(--elevation-low)
 }
 
 .theme-dark .container-2qjEOK,
@@ -166798,4 +166811,4 @@ html .invoiceCancelRow-dVOR64 {
     margin-bottom: 16px
 }
 
-/*# sourceMappingURL=40532.fca1941ce3c31deaaaa4.css.map*/
+/*# sourceMappingURL=40532.dab8e75a07f832a816e8.css.map*/
