@@ -165534,15 +165534,15 @@ html .invoiceCancelRow-3s2UuC {
     justify-content: flex-end
 }
 
-.smallDecorationPreview-1xtpIg {
+.smallDecorationPreview-1SyODs {
     margin-top: 16px
 }
 
-.smallDecorationPreview-1xtpIg:first-child {
+.smallDecorationPreview-1SyODs:first-child {
     margin-top: 0
 }
 
-.previewSections-15Zfxw {
+.previewSections-3ILTQ1 {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -165550,7 +165550,7 @@ html .invoiceCancelRow-3s2UuC {
     border: 2px solid transparent
 }
 
-.decorationPreview-273BXH {
+.decorationPreview-1EtFuW {
     width: 208px;
     -webkit-box-pack: center;
     -ms-flex-pack: center;
@@ -165558,8 +165558,8 @@ html .invoiceCancelRow-3s2UuC {
     position: relative
 }
 
-.decorationPreview-273BXH,
-.smallDecorationPreviewsContainer-2R9zvq {
+.decorationPreview-1EtFuW,
+.smallDecorationPreviewsContainer-3kMKqr {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -165570,20 +165570,20 @@ html .invoiceCancelRow-3s2UuC {
     align-items: center
 }
 
-.smallDecorationPreviewsContainer-2R9zvq {
+.smallDecorationPreviewsContainer-3kMKqr {
     margin-left: 12px;
     padding: 8px
 }
 
-.shopPreviewContainer-2S7Vwj,
-.smallDecorationPreviewsContainer-2R9zvq {
+.shopPreviewContainer-3RRvP7,
+.smallDecorationPreviewsContainer-3kMKqr {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
     -ms-flex-direction: column;
     flex-direction: column
 }
 
-.shopPreviewContainer-2S7Vwj {
+.shopPreviewContainer-3RRvP7 {
     position: relative;
     height: 280px;
     margin-top: 24px;
@@ -165595,11 +165595,11 @@ html .invoiceCancelRow-3s2UuC {
     background: linear-gradient(var(--background-tertiary), var(--background-tertiary)) padding-box, linear-gradient(45deg, hsl(269, calc(var(--saturation-factor, 1)*52.7%), 52.7%), hsl(325, calc(var(--saturation-factor, 1)*31.7%), 51.8%)) border-box
 }
 
-.shopPreviewImageContainer-3VFhXn {
+.shopPreviewImageContainer-lxnv4e {
     position: relative
 }
 
-.shopPreviewAvatar-19q4ij {
+.shopPreviewAvatar-cN-vtP {
     position: absolute;
     left: 50%;
     top: 50%;
@@ -165607,13 +165607,13 @@ html .invoiceCancelRow-3s2UuC {
     transform: translate(-50%, -50%)
 }
 
-.shopPreviewBanner-3oKlAv {
+.shopPreviewBanner-1nFcMb {
     border-top-left-radius: 8px;
     border-top-right-radius: 8px;
     max-width: 100%
 }
 
-.shopPreviewTextContainer-3bAvMA {
+.shopPreviewTextContainer-1Vw8gO {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -165634,11 +165634,11 @@ html .invoiceCancelRow-3s2UuC {
     gap: 8px
 }
 
-.previewInfoContainer-1C8z2A {
+.purchaseInfoContainer-3ZqsNg {
     margin-top: 8px
 }
 
-.previewInfoName-1kkqZn {
+.purchaseInfoName-1sCOKs {
     margin-bottom: 8px
 }
 
@@ -165742,6 +165742,12 @@ html .invoiceCancelRow-3s2UuC {
 .lockBadge-2UO4Sh {
     width: 20px;
     height: 20px
+}
+
+.spinner-4mFvw6 {
+    margin: 8px;
+    -ms-flex-item-align: center;
+    align-self: center
 }
 
 .subscribeFooter-35dQiH {
@@ -166823,4 +166829,4 @@ html .invoiceCancelRow-dVOR64 {
     margin-bottom: 16px
 }
 
-/*# sourceMappingURL=40532.d5d60aa257026acbff1f.css.map*/
+/*# sourceMappingURL=40532.b389880d709d7033b9ac.css.map*/
