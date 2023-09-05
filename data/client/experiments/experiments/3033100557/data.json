@@ -12,7 +12,8 @@
       "Treatment 4: Quickswitcher Tab",
       "Treatment 5: Launchpad Tab",
       "Treatment 6: Base redesign",
-      "Treatment 7: Full width panel"
+      "Treatment 7: Full width panel",
+      "Treatment 8: Full width panel (disabled swiping & selected channel highlight)"
     ],
     "hash": 3033100557,
     "buckets": [
@@ -24,7 +25,8 @@
       4,
       5,
       6,
-      7
+      7,
+      8
     ],
     "config_keys": [
       "showRedesign",
@@ -33,7 +35,8 @@
       "showMinimalChannelList",
       "showQuickswitcherTab",
       "showLaunchpadTab",
-      "showFullWidthPanel"
+      "showFullWidthPanel",
+      "showFullWidthPanelNoSwipingOrSelected"
     ]
   }
 }
