@@ -31,8 +31,8 @@
             </div>
             <p>‍</p>
             <h3>Discord Algebra System (DAS)</h3>
-            <figure class="w-richtext-figure-type-image w-richtext-align-center" style="max-width:">
-                <div><img src="https://assets-global.website-files.com/5f9072399b2640f14d6a2bf4/64ed17a98be273501ba32893_4GcniEL9SbR-qrA2GarmYdXMdDPCCTELc4qIT55Nol1OIw4dpbV6c9qyWHNW1ik1JobgyYqZyqD0gkHisLwsPpoGFQL8PoB90Wavut1bWHzhbJ3phUhPQIhX1hSq8mUT0I-n7vtdGc28ZVAW77LLtAk.png" alt=" A conversation in Discord utilizing the Discord Algebra System app. A user is inputting a formula into D.A.S., and the app has embedded a visual representation of it as an image.&nbsp;"></div>
+            <figure style="max-width:651px" class="w-richtext-align-fullwidth w-richtext-figure-type-image">
+                <div><img src="https://assets-global.website-files.com/5f9072399b2640f14d6a2bf4/64f7bb46a4f297bebc5291aa_kjrjwzD.png" loading="lazy" alt=" A conversation in Discord utilizing the Discord Algebra System app. A user is inputting a formula into D.A.S., and the app has embedded a visual representation of it as an image."></div>
             </figure>
             <p>The Discord Algebra System (a third-party app for Discord and not a video game console) is here to provide your study server the ability to display, solve, and graph equations quickly and accurately. It can display what particular equations look like as an embedded image, figure ‘em out for you, and both expand and simplify expressions for when the equation you’re trying to solve is just a bit too lengthy.&nbsp;</p>
             <p>Now DAS what we call a great math app! Bring the Discord Algebra System into your study group for guidance in your mathematical studies.</p>
