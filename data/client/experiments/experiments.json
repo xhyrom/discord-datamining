@@ -1270,6 +1270,27 @@
   {
     "data": {
       "kind": "user",
+      "id": "2023-08_overlay3_out_of_process_enablement",
+      "label": "Overlay3 - Out of Process Enablement",
+      "description": [
+        "Not Eligible",
+        "Control Bucket",
+        "Treatment 1: Enabled"
+      ],
+      "hash": 2544068076,
+      "buckets": [
+        -1,
+        0,
+        1
+      ],
+      "config_keys": [
+        "useGlobalOverlay"
+      ]
+    }
+  },
+  {
+    "data": {
+      "kind": "user",
       "id": "2023-03_trial_redemption_default_to_monthly_plan",
       "label": "Trial Redemption Default To Monthly Plan",
       "description": [
@@ -3896,27 +3917,6 @@
         "Treatment 1: enable clyde in gdms"
       ],
       "hash": 1195502096,
-      "buckets": [
-        -1,
-        0,
-        1
-      ],
-      "config_keys": [
-        "enabled"
-      ]
-    }
-  },
-  {
-    "data": {
-      "kind": "user",
-      "id": "2023-08_overlay3_out_of_process_enablement",
-      "label": "Overlay3 - Out of Process Enablement",
-      "description": [
-        "Not Eligible",
-        "Control Bucket",
-        "Treatment 1: Enabled"
-      ],
-      "hash": 2544068076,
       "buckets": [
         -1,
         0,
