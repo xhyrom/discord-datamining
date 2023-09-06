@@ -30925,6 +30925,17 @@ img[alt] {
     border: 3px solid var(--brand-360)
 }
 
+.customGiftBox-1w7_Qw,
+.customGiftBoxHighlighted-1Pblta {
+    background-color: var(--transparent);
+    border-radius: 8px;
+    border: 3px solid var(--transparent)
+}
+
+.customGiftBoxHighlighted-1Pblta {
+    border: 3px solid var(--brand-360)
+}
+
 .infoIcon-chB-oI {
     height: 16px;
     color: var(--header-primary)
@@ -166977,4 +166988,4 @@ html .invoiceCancelRow-dVOR64 {
     margin-bottom: 16px
 }
 
-/*# sourceMappingURL=40532.7354b2e3474a47949db6.css.map*/
+/*# sourceMappingURL=40532.8de031ab46e71a155d8c.css.map*/
