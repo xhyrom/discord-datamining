@@ -42028,6 +42028,82 @@ html .progress-2Otdc- {
     background-image: url(/assets/9a31e0f65d520cc12d7f42374d59a2d1.svg)
 }
 
+.safetyPolicyNoticeContainer-2wY_SW {
+    background: var(--background-secondary);
+    border-radius: var(--radius-sm)
+}
+
+.noticeContent-1EgmaM,
+.safetyPolicyNoticeContainer-2wY_SW {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column
+}
+
+.noticeContent-1EgmaM {
+    -webkit-box-align: start;
+    -ms-flex-align: start;
+    align-items: flex-start;
+    padding: var(--spacing-12)
+}
+
+.headerRow-1qxJ48 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center
+}
+
+.warningIcon-2DDGtm {
+    color: var(--status-danger);
+    width: 14px;
+    height: 14px;
+    margin-right: var(--spacing-4)
+}
+
+.incidentTiming-2EM3_y {
+    color: var(--text-muted);
+    margin-top: var(--spacing-4)
+}
+
+.noticeBody-25dmuC {
+    margin-top: var(--spacing-8);
+    color: var(--text-muted)
+}
+
+.detailsButton-3ioB5q {
+    padding: var(--spacing-8) 0
+}
+
+.footerContainer-3PfmLe {
+    width: 100%;
+    border-radius: 0 0 var(--radius-sm) var(--radius-sm);
+    background-color: var(--status-danger);
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: start;
+    -ms-flex-align: start;
+    align-items: flex-start
+}
+
 .popoutContent-BfbFoV {
     padding: 16px;
     -webkit-box-orient: vertical;
@@ -135744,6 +135820,202 @@ html .invoiceCancelRow-3s2UuC {
     z-index: 1
 }
 
+.classificationContainer-2FJK5T {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    margin: auto 40px;
+    width: 460px
+}
+
+.classificationHeader-3QYYXD {
+    text-align: center
+}
+
+.classificationEvidenceContainer-y-T5GC {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    margin-top: 27px
+}
+
+.classificationEvidenceCard-2CLgLq {
+    margin-top: 14px;
+    height: 116px;
+    -webkit-box-shadow: 0 8px 16px 0 rgba(0, 0, 0, .2);
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, .2);
+    border: 1px solid var(--background-tertiary);
+    background: var(--background-accent);
+    border-radius: 4px
+}
+
+.classificationActionsTakenContainer-2oQYdw {
+    margin-top: 28px
+}
+
+.classificationActionsTakenCard-3EAO9D {
+    margin-top: 14px;
+    background: var(--background-secondary);
+    border-radius: 4px;
+    padding-top: 8px;
+    padding-bottom: 8px
+}
+
+.classificationActionsTakenRow-2DGA3d {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    margin: 8px 17px
+}
+
+.classificationActionsTakenRow-2DGA3d,
+.classificationActionsTakenRowIcon-34bgSG {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center
+}
+
+.classificationActionsTakenRowIcon-34bgSG {
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    background-color: var(--background-tertiary);
+    border-radius: 50%;
+    width: 24px;
+    height: 24px;
+    margin-right: 12px
+}
+
+.contentRemovedIcon-2av6Kp {
+    color: var(--status-danger)
+}
+
+.classificationActionExplanationContainer-2DCC0n {
+    margin-top: 28px
+}
+
+.guidelinesExplanation-3bcdT1 {
+    margin-top: 10px
+}
+
+.classificationLetUsKnowContainer-1tJ90z {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    margin-top: 30px;
+    margin-bottom: 30px
+}
+
+.classificationPolicyCard-k-6UUz {
+    margin-top: 14px;
+    background: var(--background-secondary);
+    border-radius: 8px;
+    padding-top: 8px;
+    padding-bottom: 8px
+}
+
+.classificationPolicyCard-k-6UUz,
+.classificationPolicyCardIcon-2_yQLj {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center
+}
+
+.classificationPolicyCardIcon-2_yQLj {
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    background-color: var(--background-tertiary);
+    border-radius: 200px;
+    width: 40px;
+    height: 40px;
+    margin: 12px 16px;
+    padding: 8px
+}
+
+.shieldIcon-ic3Q0I {
+    color: var(--focus-primary)
+}
+
+.classificationPolicyDescriptionContainer-1eeSio {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column
+}
+
+.classificationPolicyLinkIcon-1jNNk7 {
+    margin-left: 12px;
+    margin-right: 12px
+}
+
+.arrowIcon-1UBQs- {
+    color: var(--interactive-normal)
+}
+
+.image-1f-GnT {
+    width: 141px;
+    margin: -40px auto 12px
+}
+
+.modalRoot-1Wyor5 {
+    width: 600px
+}
+
+.modalContent-mUVXyl {
+    -webkit-box-orient: vertical;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    padding-bottom: 24px;
+    padding-left: 30px;
+    padding-right: 30px
+}
+
+.modalContent-mUVXyl,
+.modalHeader-27tkHS {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-direction: normal
+}
+
+.modalHeader-27tkHS {
+    -webkit-box-orient: horizontal;
+    -ms-flex-direction: row;
+    flex-direction: row
+}
+
+.modalClose-1XR0F0 {
+    position: absolute;
+    right: 16px;
+    top: 16px
+}
+
 .learnMoreLink-39KFEr {
     cursor: pointer;
     color: var(--text-link)
@@ -166989,4 +167261,4 @@ html .invoiceCancelRow-dVOR64 {
     margin-bottom: 16px
 }
 
-/*# sourceMappingURL=40532.6575047dc62469a7b6fe.css.map*/
+/*# sourceMappingURL=40532.b7ea4cdb2614f07447bf.css.map*/
