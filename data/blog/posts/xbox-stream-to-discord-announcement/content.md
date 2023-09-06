@@ -1,7 +1,7 @@
 <div class="column-4 w-col w-col-8 w-col-stack">
     <div id="heading-1" class="rich-wrapper">
         <div class="blog-post-content w-richtext">
-            <p><strong>Update: </strong>This feature begins rolling out this week on all Xbox Series X|S and Xbox One consoles.</p>
+            <p><strong>Update: </strong>This feature is now available on all Xbox Series X|S and Xbox One consoles.</p>
             <p>Last year, Discord partnered with Xbox to bring the ability to <a href="https://discord.com/blog/xbox-voice-integration-announcement">chat in Voice</a> with friends directly on Xbox as part of our quest to help people connect from their favorite platforms through Discord.&nbsp;</p>
             <p>And, we continue to be the best place for players to talk, connect and play with their friends. When we introduced streaming to players on PC and mobile, we wanted to help recreate the feeling of your friends lounging on the same couch, playing their favorite games and joking with each other, in a virtual environment from anywhere in the world. As cross-play between platforms continues to grow, so does our journey of bringing players together, wherever they play.&nbsp;</p>
             <p>Streaming your game on Discord is a great way to socialize with your buddies. Some use it to show off a new party game to their friends, while others stream single-player games to share their character builds and spread the word on hidden areas. The more hardcore players even use streaming to show off their competitive skills and clutch plays in multiplayer matches!&nbsp;&nbsp;</p>
