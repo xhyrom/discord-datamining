@@ -15477,6 +15477,7 @@
   "CLIPS_ONBOARDING_CLIP_BUTTON_ACTIVITY_PANEL_COACHMARK_BODY": "\"Save a fun moment from your stream by pressing the clip button or $[!!{keybind}!!](keybindHook).\"",
   "CLIPS_EXPORT_TO_SOUNDBOARD": "\"Add to Soundboard\"",
   "CLIPS_EXPORT_TO_FILE": "\"Download Edited Clip\"",
+  "CLIPS_CANNOT_ATTACH_FILE_TO_CHANNEL": "\"You cannot send files in this channel.\"",
   "GUILD_SHOP_CHANNEL_LABEL": "\"Server Shop\"",
   "GUILD_SHOP_PRODUCTS_A11Y_LABEL": "\"Available Products\"",
   "GUILD_SHOP_SUPPORT_SERVER_HEADER": "\"Support the server\"",
