@@ -1,4 +1,7 @@
 <p id="docs-internal-guid-f6235f0c-7fff-0149-b712-27245ccfe4cd">Family Center is an optional tool created to help keep up to three parents or guardians informed about how you use Discord while still maintaining your privacy. As you make connections and join servers, the information provided within the <strong>Activity Summary </strong>will help you and your connected family members stay on the same page. However, to respect your privacy, the summary will not allow connected family members to view any of your messages between you and others. </p>
+<h3 id="h_01H9P8YWBM2F1CGFXT3D4R15YY">
+    <span id="docs-internal-guid-fadc0082-7fff-3a1c-5315-1dc508572ab2" style="color: #434343;" data-darkreader-inline-color="">You can access Family Center by selecting this </span><a href="https://discord.com/feature/family-center" target="_blank" rel="noopener noreferrer">link</a><span style="color: #434343;" data-darkreader-inline-color=""> or by heading into your </span><strong><span style="color: #434343;" data-darkreader-inline-color="">User Settings </span></strong><span style="color: #434343;" data-darkreader-inline-color="">within the Discord App.</span>
+</h3>
 <p><span class="wysiwyg-font-size-large"><strong>What this article covers:</strong></span></p>
 <ul>
     <li><a href="#h_01H44C4DJGC3MWFAAVZV0J2V5D" target="_self">How to Connect to a Parent or Guardian</a></li>
@@ -7,7 +10,7 @@
 </ul>
 <h1 id="h_01H44C4DJGC3MWFAAVZV0J2V5D">How to Connect to a Parent or Guardian</h1>
 <p>To connect with a trusted adult family member, head to <strong>User Settings</strong> located in the bottom left of the desktop/browser app and then tap on <strong>Family Center</strong>. While here, tap on<strong> My Family </strong>and then press on <strong>Connect with Parent</strong>. </p>
-<h3>
+<h3 id="h_01H9P8YFJCGYNZF9G51AWAQJKY">
     <span style="color: #434343;" data-darkreader-inline-color="">Your parent/guardian will need to download the Discord mobile app and create an account to connect to you in Family Center. If you would like to see how Family Center works for parents/guardians or need any guidance, you can check out this article </span><a href="https://support.discord.com/hc/en-us/articles/14155043715735" target="_blank" rel="noopener noreferrer">here</a><span style="color: #434343;" data-darkreader-inline-color="">.  </span>
 </h3>
 <p class="wysiwyg-text-align-center"><img src="https://support.discord.com/hc/article_attachments/15673372338967" alt="image2.png"></p>
@@ -23,7 +26,7 @@
 </ul>
 <p><strong>Family Center</strong> &gt; <strong>Activity</strong> can be accessed at any time. Additionally, connected parents or guardians will receive a weekly update via email containing a high level summary of this view.</p>
 <p class="wysiwyg-text-align-center"><img src="https://support.discord.com/hc/article_attachments/15673372345111" alt="image3.png"></p>
-<h3><span style="color: #434343;" data-darkreader-inline-color="">Family Center does not show connected parents/guardians what you are sending in a message (server, direct message, or group direct message). </span></h3>
+<h3 id="h_01H9P8YFJCCE49HY8V9J38S58X"><span style="color: #434343;" data-darkreader-inline-color="">Family Center does not show connected parents/guardians what you are sending in a message (server, direct message, or group direct message). </span></h3>
 <h1 id="h_01H44C4V4BWJY8CA5WAPZ4TMG1">Frequently Asked Questions</h1>
 <p><strong>Q: Why am I seeing Family Center in parent view although I am a teenager?</strong></p>
 <p>A: The view you are seeing is based on the age you have provided when you signed up for Discord. If you are seeing Family Center in parent view, you may have selected an age over 18. </p>

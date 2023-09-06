@@ -1,8 +1,11 @@
 <p>Discord is a place where friends, family, and communities come together to make connections and hangout. Every day people come here to build community and discuss all sorts of topics, play both casual and competitive games, and sometimes even learn something new!</p>
-<h3>
+<h3 id="h_01H9P919M9KW2A4427HFWZJXV5">
     <span style="color: #434343;" data-darkreader-inline-color="">For a more in depth look into how Discord works, please check out our article on a </span><a href="https://support.discord.com/hc/en-us/articles/360045138571" target="_blank" rel="noopener noreferrer">Beginner’s Guide to Discord.</a><span style="color: #434343;" data-darkreader-inline-color=""> </span>
 </h3>
 <p>We are dedicated to making Discord a safe space for all. <strong>Family Center</strong> is a new tool we’ve built to help parents and guardians better understand how their teens use Discord, get insights into the communities they are a part of, and develop collaborative approaches to build positive online behaviors.</p>
+<h3 id="docs-internal-guid-f4271c0e-7fff-9fae-5aaa-6b04807abc94">
+    <span style="color: #434343;" data-darkreader-inline-color="">You can access Family Center by selecting this </span><a href="https://discord.com/feature/family-center" target="_blank" rel="noopener noreferrer">link</a><span style="color: #434343;" data-darkreader-inline-color=""> or by heading into your </span><strong><span style="color: #434343;" data-darkreader-inline-color="">User Settings </span></strong><span style="color: #434343;" data-darkreader-inline-color="">within the Discord App.</span>
+</h3>
 <p>For additional resources on how to better shape your Discord experience, please check out our <a href="https://discord.com/safety-parents" target="_blank" rel="noopener noreferrer">Safety Center</a>.</p>
 <p><span class="wysiwyg-font-size-large"><strong>What this article covers:</strong></span></p>
 <ul>
@@ -23,7 +26,7 @@
 <p>To connect to your teen in Family Center, your teen needs to provide you with the generated QR code that is located in their Family Center tab under the <strong>Connect with Parent </strong>option. Scan the QR code with your Discord app and after your teen accepts the connection, you’ll both have full access to Family Center!</p>
 <p class="wysiwyg-text-align-center"><img src="https://support.discord.com/hc/article_attachments/15673625197847" alt="image5.png"></p>
 <p>Once connected, you can head into Family Center by tapping on <strong>My Family</strong> to see any connected teens there.</p>
-<h3>
+<h3 id="h_01H9P919M9HH1XEHJNHNZFKR45">
     <span style="color: #434343;" data-darkreader-inline-color="">If you’d like to learn more about Family Center for teens, you can check out this </span><a href="https://support.discord.com/hc/en-us/articles/14155060633623" target="_blank" rel="noopener noreferrer">article</a><span style="color: #434343;" data-darkreader-inline-color="">.</span>
 </h3>
 <h2 id="h_01H44CS7CRBZHSR8CQ1CSRV6BM">Mobile</h2>
@@ -39,11 +42,11 @@
     <li>Servers joined or participated in, including server names, server icons, and server member counts</li>
 </ul>
 <p>In addition to seeing information about your teen’s recent activity through Family Center, you’ll also receive weekly updates containing a high level summary of their activity via email. </p>
-<h3><span style="color: #434343;" data-darkreader-inline-color="">The Family Center dashboard and weekly update emails will only contain information about activity occurring after the teen has accepted the connection request.</span></h3>
+<h3 id="h_01H9P919M9VJ6MYNDBGKNTMJC0"><span style="color: #434343;" data-darkreader-inline-color="">The Family Center dashboard and weekly update emails will only contain information about activity occurring after the teen has accepted the connection request.</span></h3>
 <p class="wysiwyg-text-align-center"><img src="https://support.discord.com/hc/article_attachments/15673625203735" alt="image1.png" width="307" height="638"></p>
 <p class="wysiwyg-text-align-center"><img src="https://support.discord.com/hc/article_attachments/15673625205015" alt="image4.png" width="620" height="605"></p>
 <p>You will not see what messages your teen has sent, only the users they have messaged.</p>
-<h3><span style="color: #434343;" data-darkreader-inline-color="">Although you can disconnect at any time, the month your teen turns 18 years old, they will be automatically disconnected from all connected parents in Family Center. </span></h3>
+<h3 id="h_01H9P919M9CY5X6G5E8399TH4V"><span style="color: #434343;" data-darkreader-inline-color="">Although you can disconnect at any time, the month your teen turns 18 years old, they will be automatically disconnected from all connected parents in Family Center. </span></h3>
 <h1 id="h_01H44CSKW8G8J9KBEB64YSN2CV">Frequently Asked Questions</h1>
 <p><strong>Q: Why can I only see the last 7 days of activity?</strong></p>
 <p>A: Our goal is to surface information in ways that are timely, not overwhelming, and helpful in starting conversations about online safety. Family Center highlights information in a 7 day period in order to provide contextually relevant information for parents and guardians.</p>

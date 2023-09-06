@@ -1,5 +1,8 @@
-<h1>What is Family Center?</h1>
+<h1 id="h_01H9P8TR669VPME36CJC7NK6ZQ">What is Family Center?</h1>
 <p id="docs-internal-guid-f1890530-7fff-680f-9748-fdd18a5f00d1">Family Center is a new tool built to help parents and guardians stay informed about how their teen uses Discord while still respecting their privacy. Parents and guardians will be able to see their connected teen’s recent Discord activity through an in-app activity dashboard and weekly email summaries. Through transparency, our goal is to foster productive dialogue about safer internet habits, and to create mutually beneficial ways for parents, guardians, and teens to connect about their experiences on Discord.</p>
+<h3 id="docs-internal-guid-9f4c9b51-7fff-1aad-c611-7eabd8269995">
+    <span style="color: #434343;" data-darkreader-inline-color="">You can access Family Center by selecting this </span><a href="https://discord.com/feature/family-center" target="_blank" rel="noopener noreferrer"><span class="wysiwyg-underline" style="color: #1155cc;" data-darkreader-inline-color="">link</span></a><span style="color: #434343;" data-darkreader-inline-color=""> or by heading into your </span><strong><span style="color: #434343;" data-darkreader-inline-color="">User Settings </span></strong><span style="color: #434343;" data-darkreader-inline-color="">within the Discord App.</span>
+</h3>
 <p><span class="wysiwyg-font-size-large"><strong>What this article covers:</strong></span></p>
 <ul>
     <li><a href="#h_01H44D6TH7PSX1QH6PB588AH5W" target="_self">What is Family Center?</a></li>
@@ -13,7 +16,7 @@
     <li><a href="#h_01H44D7GKW1QE5S12WF75TE87K" target="_self">Frequently Asked Questions</a></li>
 </ul>
 <h1 id="h_01H44D6ZST7QVZJXBW0W75EW5B">How to set up Family Center</h1>
-<h3>
+<h3 id="h_01H9P8TR66H9108MJPAQKPH921">
     <span style="color: #434343;" data-darkreader-inline-color="">If you run into any issues while setting up Family Center, please reach out to our Support team for further assistance </span><a href="https://dis.gd/contact" target="_blank" rel="noopener noreferrer">here</a><span style="color: #434343;" data-darkreader-inline-color="">. </span>
 </h3>
 <h2 id="h_01H44D75X6PDXHRV6ZX23471KX">Desktop/Browser </h2>
@@ -25,7 +28,7 @@
 <p class="wysiwyg-text-align-center"><img src="https://support.discord.com/hc/article_attachments/15673925089175" alt="image2.jpg" width="312" height="646"></p>
 <p>After navigating to User Settings, select the <strong>Family Center</strong> tab. Once in Family Center, press the “Connect with Teen” button within the<strong> My Family</strong> tab to scan the teen’s QR code that is located in their Family Center tab under the <strong>Connect with Parent </strong>option. After the teen has accepted their parent or guardian’s request, both can start using Family Center together.</p>
 <p class="wysiwyg-text-align-center"><img src="https://support.discord.com/hc/article_attachments/15673925090199" alt="image3.gif" width="309" height="634"></p>
-<h3>
+<h3 id="h_01H9P8TR66TKKK69803F68WQHD">
     <span style="color: #434343;" data-darkreader-inline-color="">If you would like to learn how to specifically set up a parent/guardian account, you can check out this article </span><a href="https://support.discord.com/hc/en-us/articles/14155043715735" target="_blank" rel="noopener noreferrer">here</a><span style="color: #434343;" data-darkreader-inline-color="">. If you would like to set up a teen account, you can refer to this article </span><a href="https://support.discord.com/hc/en-us/articles/14155060633623" target="_blank" rel="noopener noreferrer">here</a><span style="color: #434343;" data-darkreader-inline-color="">. </span>
 </h3>
 <h1 id="h_01H44D7GKW1QE5S12WF75TE87K">Frequently Asked Questions</h1>
