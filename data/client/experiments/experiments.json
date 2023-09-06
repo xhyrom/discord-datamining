@@ -8460,27 +8460,6 @@
   {
     "data": {
       "kind": "user",
-      "id": "2023-08_nitro_subs_variant",
-      "label": "Nitro Subs Variant",
-      "description": [
-        "Not Eligible",
-        "Control Bucket",
-        "Treatment 1: Enabled"
-      ],
-      "hash": 3370747435,
-      "buckets": [
-        -1,
-        0,
-        1
-      ],
-      "config_keys": [
-        "enabled"
-      ]
-    }
-  },
-  {
-    "data": {
-      "kind": "user",
       "id": "2023-08_perks_discoverability",
       "label": "Perks Discoverability",
       "description": [
@@ -8562,27 +8541,6 @@
         0,
         1,
         2
-      ],
-      "config_keys": [
-        "enabled"
-      ]
-    }
-  },
-  {
-    "data": {
-      "kind": "user",
-      "id": "2023-08_premium_new_settings_page",
-      "label": "New settings page for Nitro",
-      "description": [
-        "Not Eligible",
-        "Control Bucket",
-        "Treatment 1: Enable new settings page for Nitro"
-      ],
-      "hash": 2083225274,
-      "buckets": [
-        -1,
-        0,
-        1
       ],
       "config_keys": [
         "enabled"
