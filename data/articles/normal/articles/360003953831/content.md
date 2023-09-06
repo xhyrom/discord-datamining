@@ -1,4 +1,4 @@
-<h3><span style="font-weight: 400;"><span id="docs-internal-guid-5eac2f39-7fff-a697-8621-7bbf34729623" style="color: #434343;">Looking to learn more about streaming to Discord from Xbox? Check out this section <a href="#docs-internal-guid-83aca2cf-7fff-0fda-62ee-45bee8c7c518" target="_self">here</a>.</span></span></h3>
+<h3 id="h_01H9NM34SHFDGHZC1ANQR8DYJ7"><span style="font-weight: 400;"><span id="docs-internal-guid-5eac2f39-7fff-a697-8621-7bbf34729623" style="color: #434343;">Looking to learn more about streaming to Discord from Xbox? Check out this section <a href="#docs-internal-guid-83aca2cf-7fff-0fda-62ee-45bee8c7c518" target="_self">here</a>.</span></span></h3>
 <p><span style="font-weight: 400;"><span id="docs-internal-guid-9cef86e4-7fff-7285-1693-29d3edd0a633">By connecting your Discord account to your Xbox account, you can display your Xbox GamerTag and game activity on your user profile as well as have Discord voice chat on your Xbox console. Learn how to connect your Discord and Xbox accounts below!</span></span></p>
 <p class="wysiwyg-text-align-center"><span style="font-weight: 400;"><img src="https://support.discord.com/hc/article_attachments/7597538010903" alt="XBOX_DISCORD_Integration_banner.png"></span></p>
 <p class="wysiwyg-text-align-left"><span style="font-weight: 400;">In order to use Discord Voice on your Xbox console, please ensure your Xbox console is updated to the latest version.<br></span></p>
@@ -40,7 +40,7 @@
     <li style="font-weight: 400;" aria-level="1"><span style="font-weight: 400;">Transfer your Discord voice chat to your Xbox console</span></li>
 </ul>
 <h2 id="h_01G8DY30NM50BZB5TVQ1XN4QXX"><span style="font-weight: 400;">How to Connect My Xbox Account from Discord</span></h2>
-<h3><span style="font-weight: 400;">Note: If you connect your Discord and Xbox accounts prior to Discord Voice on Xbox becoming available to you, you'll have to relink your accounts again for Discord Voice on Xbox.</span></h3>
+<h3 id="h_01H9NM34SHFC2MSYGNYFAG3WGB"><span style="font-weight: 400;">Note: If you connect your Discord and Xbox accounts prior to Discord Voice on Xbox becoming available to you, you'll have to relink your accounts again for Discord Voice on Xbox.</span></h3>
 <p><span class="wysiwyg-font-size-large"><strong>On Desktop Client<br></strong></span></p>
 <p><span style="font-weight: 400;">1.Press on the </span><strong>cog wheel</strong><span style="font-weight: 400;"> at the bottom left of your client to go to your </span><strong>User Settings</strong><span style="font-weight: 400;"> and then navigate to the </span><strong>Connections</strong><span style="font-weight: 400;"> tab.</span></p>
 <p class="wysiwyg-text-align-center"><span style="font-weight: 400;"><img src="https://support.discord.com/hc/article_attachments/7597537235991" alt="connections-user-settings-xbox-example-base.png" width="558" height="496"></span></p>
@@ -93,7 +93,6 @@
 <p class="wysiwyg-text-align-center"><span style="font-weight: 400;"><img src="https://support.discord.com/hc/article_attachments/7597522780183" alt="mobile-unlink-xbox-connection-deauthorize-base.png" width="266" height="576"></span></p>
 <h1 id="h_01G8DY3XCXJ874AM7Z7PRR92J4"><span style="font-weight: 400;">How to Display Connection &amp; Game Activity on My Profile</span></h1>
 <p><span style="font-weight: 400;">With your Xbox connection to your Discord account, you can share with other Discord users </span><span style="font-weight: 400;">your Xbox GamerTag and what you’re currently playing on your Xbox console.</span></p>
-<p class="wysiwyg-text-align-center"><span style="font-weight: 400;"><img src="https://support.discord.com/hc/article_attachments/7597537999383" alt="xbox-example-display-status-connection-discord-profile.png" width="570" height="511"></span></p>
 <h2 id="h_01G8DY4EPD3YPQNYPMZXDD7HFD"><span style="font-weight: 400;">On Desktop - Display Your Connected Account on Your User Profile</span></h2>
 <p><span style="font-weight: 400;">1. Go to your </span><strong>User Settings</strong><span style="font-weight: 400;"> by pressing on the </span><strong>cog wheel</strong><span style="font-weight: 400;"> in the bottom left corner of your client.</span></p>
 <p><span style="font-weight: 400;">2. Select the </span><strong>Connections </strong><span style="font-weight: 400;">tab from the left-hand side.</span></p>
@@ -114,12 +113,11 @@
 <h1 id="h_01G8DY5EF772G2DR9TSEQ4WZHB"><span style="font-weight: 400;">How to Join your Discord Voice Chat on your Xbox</span></h1>
 <h2 id="h_01GJ0N0MFMK6816S9DQMM2SQ0J"><span style="font-weight: 400;">On Xbox Console</span></h2>
 <p><span style="font-weight: 400;">1. Make sure to follow the steps above in the <a href="#h_01G8DY0TKDFS1GFYVRYCZBV7CZ" target="_self">How to Connect My Xbox Account from Discord</a> section to properly connect your Discord and Xbox accounts.</span></p>
-<p class="wysiwyg-text-align-center"><span style="font-weight: 400;"><img src="https://support.discord.com/hc/article_attachments/10274384753175" alt="xbox-join-discord-voice-on-xbox-console-demo.gif" width="463" height="463"></span></p>
 <p><span style="font-weight: 400;">2. Log into your Xbox device with your Xbox account connected to your Discord account and press the </span><strong>Xbox button</strong><span style="font-weight: 400;"> on the controller to open the console’s guide.</span></p>
 <p><span style="font-weight: 400;">3. Navigate to </span><strong>Parties &amp; chats</strong><span style="font-weight: 400;"> then select </span><strong>Discord Voice </strong><span style="font-weight: 400;">in the menu list.</span></p>
 <p><span style="font-weight: 400;">4. Select the Discord server with the desired voice channel.</span></p>
 <p><span style="font-weight: 400;">5. Choose the voice channel to join a Discord voice channel from your Xbox console.</span></p>
-<h2><span class="wysiwyg-font-size-large">On Discord mobile app</span></h2>
+<h2 id="h_01H9NM34SJYRS2RST8HW0HM5RH"><span class="wysiwyg-font-size-large">On Discord mobile app</span></h2>
 <p><span style="font-weight: 400;">1. Make sure to follow the steps above in the <a href="#h_01G8DY30NM50BZB5TVQ1XN4QXX" target="_self">How to Connect My Xbox Account from Discord</a> section to properly connect your Discord and Xbox accounts.</span></p>
 <p><span style="font-weight: 400;">2. Once you have connected your accounts, </span><span class="wysiwyg-underline"><span style="font-weight: 400;">you must install the </span><strong>Xbox app</strong></span><span style="font-weight: 400;"> from your mobile device’s app store.</span></p>
 <p><span style="font-weight: 400;">If you don’t install the Xbox app, you will not be able to transfer Discord Voice to your Xbox console.</span></p>
@@ -130,7 +128,7 @@
 <p><span style="font-weight: 400;">5. And that’s it! In your Discord mobile app, you will be able to </span><strong>Mute</strong><span style="font-weight: 400;"> and </span><strong>Deafen</strong><span style="font-weight: 400;"> your audio by swiping up in the voice channel, which will be reflected in your Xbox Console.</span></p>
 <p class="wysiwyg-text-align-center"><span style="font-weight: 400;"><img src="https://support.discord.com/hc/article_attachments/7597537625239" alt="join-voice-channel-initiate-xbox-voice-transfer-base-5.png.jpg" width="294" height="637"></span></p>
 <p><span style="font-weight: 400;">You should also see in your Xbox under </span><strong>Parties &amp; Chats</strong><span style="font-weight: 400;"> the connected Discord voice chat, its participants, and other audio management settings. You can also </span><strong>Report</strong><span style="font-weight: 400;"> voice chat participants to Discord from your Xbox console.</span></p>
-<h3>
+<h3 id="h_01H9NM34SJYM46TKN89RE7AD7Q">
     <span style="font-weight: 400;">Note: You will not be able to communicate outside of your Xbox console if your Privacy Settings in the Xbox mobile app is set to “In-game friends” or “Blocked”.<br></span>- You can join cross-network play - set this to Allow<br>- You can communicate outside of Xbox with voice &amp; text - set this to Everybody.
 </h3>
 <h2 id="h_01GJ0MKPMS590HPVWJTK81WJJ4" class="p1"><span class="s1">On Desktop Client</span></h2>
@@ -145,10 +143,7 @@
 <p class="p2 wysiwyg-text-align-center"><span class="s1"><img src="https://support.discord.com/hc/article_attachments/8840279300247" alt="QR-code-transfer-discord-voice-to-xbox.png"></span></p>
 <p class="p2"><span class="s1">5. Follow the prompts on your Discord mobile app to complete the Discord voice transfer to Xbox.</span></p>
 <h1 id="docs-internal-guid-83aca2cf-7fff-0fda-62ee-45bee8c7c518"><strong>Stream Gameplay to Discord from Xbox</strong></h1>
-<h3>
-    <span style="color: #434343;">This experimental feature is only available to Xbox Insiders at this time. To learn more about Xbox Insiders, you can check out this Xbox Insider support page </span><a href="https://support.xbox.com/help/account-profile/manage-account/guide-to-insider-program" target="_blank" rel="noopener noreferrer">here</a><span style="color: #434343;">.</span>
-</h3>
-<h3><span style="color: #434343;">Check out our <a href="https://dis.gd/xbox-stream-to-discord" target="_blank" rel="noopener">blog post</a> on Streaming to Discord from Xbox!</span></h3>
+<h3 id="h_01H9NM34SJGGDTBCMYQ1CEJN6B"><span style="color: #434343;">Check out our <a href="https://dis.gd/xbox-stream-to-discord" target="_blank" rel="noopener noreferrer">blog post</a> on Streaming to Discord from Xbox!</span></h3>
 <p class="wysiwyg-text-align-center"><span style="color: #434343;"><img src="https://support.discord.com/hc/article_attachments/16467620815383" alt="Stream_from_Xbox_to_Discord_Sea_of_Thieves_Final_1.png"></span></p>
 <p id="docs-internal-guid-1b8b7732-7fff-3164-91c3-ed9e0541012e">Eager to stream your Xbox gameplay to your friends on Discord? Follow the steps below!</p>
 <p>If you are having trouble streaming to Discord from Xbox, please refer to Xbox’s “<a href="https://support.xbox.com/help/friends-social-activity/live-streaming/why-cant-i-stream-game" target="_blank" rel="noopener noreferrer">Why can’t I live stream my game?” support article</a>. For general tips on how to livestream your Xbox gameplay, please check out Xbox’s “<a href="https://support.xbox.com/help/friends-social-activity/live-streaming/how-to-stream-on-xbox" target="_blank" rel="noopener noreferrer">How to live stream on Xbox” support article</a>.</p>
@@ -156,11 +151,11 @@
 <p>2. Log into your <span style="background-color: #ffffff;">Xbox Series X|S or Xbox One device</span> with your Xbox account connected to your Discord account and press the Xbox button on the controller to open the console’s guide.</p>
 <p>3. Navigate to <strong>Parties &amp; chats</strong> then select <strong>Discord</strong> from the menu.</p>
 <p>4. Select the Discord server and then the server’s voice channel you want to stream to.</p>
-<p>5. Once you’ve joined the voice channel or direct message/group message, press on the  <strong>Stream your game </strong>option in the dedicated Xbox menu for your Discord chat on console.</p>
+<p>5. Once you’ve joined the voice channel, press on the  <strong>Stream your game </strong>option in the dedicated Xbox menu for your Discord chat on console.</p>
 <p>6. You can adjust your stream’s resolution and frame rate if you have a Nitro subscription on your Discord account. When you’re ready, press <strong>Start stream</strong>.</p>
-<h3><span style="color: #434343;">Please note: The 60 FPS option is unavailable on Xbox One.</span></h3>
+<h3 id="h_01H9NM34SJ1A4E3AC93P9ZG5B0"><span style="color: #434343;">Please note: The 60 FPS option is unavailable on Xbox One.</span></h3>
 <p>7. You are now streaming your Xbox gameplay to Discord! If you would like to stop streaming from Xbox, you can find the <strong>Stop streaming option </strong>and other livestream settings in the dedicated <strong>Parties &amp; chats</strong> menu for your Discord chat on Xbox.</p>
-<h3 class="wysiwyg-text-align-left"><span style="color: #434343;">If you are experiencing issues with streaming from the Xbox console, please reach out to Xbox support <a href="https://support.xbox.com/" target="_blank" rel="noopener noreferrer">here</a>.</span></h3>
+<h3 id="h_01H9NM34SJF2091RYN5C0B71MW" class="wysiwyg-text-align-left"><span style="color: #434343;">If you are experiencing issues with streaming from the Xbox console, please reach out to Xbox support <a href="https://support.xbox.com/" target="_blank" rel="noopener noreferrer">here</a>.</span></h3>
 <h1 id="h_01G8DY5V80CNBEY9FWHN8BDEHY"><span style="font-weight: 400;">Frequently Asked Questions</span></h1>
 <p><strong>Q: I’m running into the error “Transfer didn’t work. Your console needs an update before it can connect to Discord.”</strong></p>
 <p><span style="font-weight: 400;"><span id="docs-internal-guid-3912d576-7fff-c9df-1d2b-9d78bed66aee">A: Before you can join Discord Voice on your Xbox console, you must make sure your Xbox console is updated to the latest version.</span></span></p>
