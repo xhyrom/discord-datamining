@@ -22,7 +22,6 @@
                         <ul>
                             <li>Have at least 1,000 members on your server</li>
                             <li>Have at least a 60% monthly member retention rate</li>
-                            <li>Have at least 200 members on your server</li>
                             <li>Your server must be at least 3 months old</li>
                             <li>Enable <a href="https://support.discord.com/hc/en-us/articles/360047132851-Enabling-Your-Community-Server" target="_blank" rel="noopener noreferrer">Community Settings</a> on your server</li>
                         </ul>
