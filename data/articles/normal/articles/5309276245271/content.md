@@ -50,8 +50,6 @@
                         <p>A: You must complete our Community Onboarding to access channels in the server. If you are still struggling with this, you can message our Modmail bot and ask a moderator for assistance.</p>
                         <p><strong>Q: Manage Server is a pretty high permission to give out, why is it locked behind this?</strong></p>
                         <p>A: We want to ensure that we are reaching server owners, admins and moderators with this community. As such, this will require us to ensure we are reaching an audience that has this permission or capability in order to create a welcoming and fun community for all.</p>
-                        <p><strong>Q: I was banned or removed from Discord Admins, can I appeal?</strong></p>
-                        <p>A: Since the server works on a warning system before removals, we provide users with time and explanation on how to avoid removal from our server. If a user does hit the threshold for warnings, or is removed from the server, we will not offer appeals to rejoin the server.</p>
                     </div>
                 </div>
             </section>
