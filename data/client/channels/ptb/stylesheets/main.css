@@ -94671,6 +94671,32 @@ html:not(.custom-theme-background) .container-Vrgqxz {
     white-space: nowrap
 }
 
+.clipsEnabledIndicator-lFCSnR {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin: 0 8px
+}
+
+.clipBadgeText-1xiw3w {}
+
+.clipBadgeIcon-35J1FO {
+    padding-left: 4px;
+    width: 20px
+}
+
+@media (max-width:920px) {
+    .clipBadgeText-1xiw3w {
+        display: none
+    }
+
+    .clipBadgeIcon-35J1FO {
+        border-radius: var(--radius-sm);
+        height: 20px;
+        padding: 2px
+    }
+}
+
 .root-2H6Y8D.comboIcon-wuGHqz {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -166951,4 +166977,4 @@ html .invoiceCancelRow-dVOR64 {
     margin-bottom: 16px
 }
 
-/*# sourceMappingURL=40532.efbc03ac6f2e9416df4f.css.map*/
+/*# sourceMappingURL=40532.7354b2e3474a47949db6.css.map*/
