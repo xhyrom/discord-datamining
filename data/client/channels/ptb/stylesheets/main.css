@@ -17944,23 +17944,33 @@ html.disable-forced-colors * {
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
-    font-weight: 600;
-    cursor: pointer;
     z-index: 1;
     padding: 8px 12px;
-    border-radius: 20px;
     -webkit-user-select: none;
     -moz-user-select: none;
     -ms-user-select: none;
     user-select: none;
-    background-color: var(--__current--spoiler-warning-background-color)
+    color: var(--__current--spoiler-warning-text-color)
+}
+
+.explicitContentWarning-3g11Df {
+    text-align: center;
+    width: 100%
+}
+
+.explicitContentWarningText-1Kq9Yl {
+    margin-top: 4px;
+    color: var(--__current--spoiler-warning-text-color)
 }
 
 .spoilerWarning-1JN1Ot {
     text-transform: uppercase;
     letter-spacing: .5px;
     font-size: 15px;
-    color: var(--__current--spoiler-warning-text-color)
+    background-color: var(--__current--spoiler-warning-background-color);
+    cursor: pointer;
+    font-weight: 600;
+    border-radius: 20px
 }
 
 .spoilerWarning-1JN1Ot.embed-hgK7Sp {
@@ -42247,6 +42257,44 @@ html .progress-2Otdc- {
     -webkit-filter: blur(44px);
     filter: blur(44px);
     pointer-events: none
+}
+
+.obscureButtonContainer-3nx5-P {
+    position: absolute;
+    z-index: 1;
+    right: 4px;
+    bottom: 4px
+}
+
+.obscureHoverButton-2ODc_8 {
+    background-color: rgba(0, 0, 0, .6);
+    color: var(--white-500);
+    border-radius: 4px;
+    -webkit-transition: background-color .2s ease-in-out;
+    transition: background-color .2s ease-in-out;
+    padding: 6px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    cursor: pointer
+}
+
+.obscureHoverButton-2ODc_8:hover {
+    background-color: rgba(0, 0, 0, .8);
+    -webkit-transition: background-color .2s ease-in-out;
+    transition: background-color .2s ease-in-out
+}
+
+.obscureHoverButton-2ODc_8:focus {
+    background-color: #000;
+    -webkit-transition: background-color .2s ease-in-out;
+    transition: background-color .2s ease-in-out
+}
+
+.obscureHoverButton-2ODc_8:active {
+    background-color: var(--background-secondary-alt);
+    -webkit-transition: background-color .2s ease-in-out;
+    transition: background-color .2s ease-in-out
 }
 
 .attachmentContentItem-UKeiCx {
@@ -166908,4 +166956,4 @@ html .invoiceCancelRow-dVOR64 {
     margin-bottom: 16px
 }
 
-/*# sourceMappingURL=40532.50cff2d498ed9d348afa.css.map*/
+/*# sourceMappingURL=40532.e48a3ae65897b4540651.css.map*/
