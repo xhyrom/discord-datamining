@@ -160038,96 +160038,9 @@ html .invoiceCancelRow-3s2UuC {
     background: url(/assets/e2a9bd3caa66f0d26c3574977e975cf9.png) no-repeat
 }
 
-@-webkit-keyframes placeholderPulse-3Waq2d {
-    0% {
-        opacity: .5
-    }
-}
-
-@keyframes placeholderPulse-3Waq2d {
-    0% {
-        opacity: .5
-    }
-}
-
 .card-1e8EiH {
     height: 300px;
     border-radius: 32px
-}
-
-.listingCard-3fkOuH {
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
-    margin-left: auto;
-    margin-right: auto;
-    grid-column: auto;
-    min-width: 100%;
-    padding: 2px;
-    -webkit-transition: -webkit-transform 1s;
-    transition: -webkit-transform 1s;
-    transition: transform 1s;
-    transition: transform 1s, -webkit-transform 1s;
-    cursor: pointer;
-    position: relative
-}
-
-.listingCard-3fkOuH:hover {
-    -webkit-transform: translateY(-4px);
-    transform: translateY(-4px)
-}
-
-.listingCardBody-3jEG-D {
-    position: absolute;
-    top: 2px;
-    left: 2px;
-    right: 2px;
-    bottom: 2px;
-    border-radius: inherit
-}
-
-.avatar-1-EGTo {
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 44px
-}
-
-.avatarPurchased-1W4Efn {
-    opacity: .5;
-    -webkit-transition: opacity .5s;
-    transition: opacity .5s
-}
-
-.cardText-1gtC-S {
-    margin-top: 32px;
-    margin-left: 32px
-}
-
-.description-2DD9PM {
-    margin-top: 4px
-}
-
-.price-cpJgMq {
-    margin-top: 16px
-}
-
-.button-3KmITB {
-    margin: 24px auto 0;
-    width: 100%;
-    -webkit-transition: -webkit-transform .5s;
-    transition: -webkit-transform .5s;
-    transition: transform .5s;
-    transition: transform .5s, -webkit-transform .5s
-}
-
-.purchaseButton-3Zdno8 {
-    margin-top: 32px;
-    -webkit-transition: inherit, opacity .5s;
-    transition: inherit, opacity .5s
-}
-
-.purchaseButton-3Zdno8:hover {
-    opacity: .8
 }
 
 .bannerContent-19nx5R {
@@ -160158,64 +160071,6 @@ html .invoiceCancelRow-3s2UuC {
 
 .bannerDiscordLogo-psYs1O {
     padding-bottom: 8px
-}
-
-.innerHover-W_PGCE {
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
-    opacity: 0
-}
-
-.innerBlur-3CojQz,
-.innerHover-W_PGCE {
-    position: absolute;
-    left: 32px;
-    right: 32px;
-    -webkit-transition: opacity .5s;
-    transition: opacity .5s
-}
-
-.innerBlur-3CojQz {
-    opacity: 1
-}
-
-.checkmarkWrapper-2j6j-D {
-    position: absolute;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
-    left: 0;
-    right: 0;
-    top: 80px
-}
-
-.checkmark-YfCXw5 {
-    width: 100%;
-    color: #fff;
-    -webkit-transition: opacity .5s;
-    transition: opacity .5s
-}
-
-.card-1e8EiH:hover .innerHover-W_PGCE {
-    opacity: 1
-}
-
-.card-1e8EiH:hover .innerBlur-3CojQz {
-    opacity: 0
-}
-
-.card-1e8EiH:hover .button-3KmITB {
-    -webkit-transform: translateY(-16px);
-    transform: translateY(-16px)
-}
-
-.card-1e8EiH:hover .checkmark-YfCXw5 {
-    opacity: 0
-}
-
-.card-1e8EiH:hover .avatarPurchased-1W4Efn {
-    opacity: 1
 }
 
 .skeleton-3HFIZN {
@@ -160294,6 +160149,139 @@ html .invoiceCancelRow-3s2UuC {
     to {
         opacity: .3
     }
+}
+
+.shopCard-H3oN50 {
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    grid-column: auto;
+    min-width: 100%;
+    padding: 2px;
+    -webkit-transition: -webkit-transform 1s;
+    transition: -webkit-transform 1s;
+    transition: transform 1s;
+    transition: transform 1s, -webkit-transform 1s;
+    cursor: pointer;
+    position: relative
+}
+
+.shopCard-H3oN50:hover {
+    -webkit-transform: translateY(-4px);
+    transform: translateY(-4px)
+}
+
+.shopCardBody-G0vZ9T {
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    right: 2px;
+    bottom: 2px;
+    border-radius: inherit
+}
+
+.avatar-jvUUbt {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 44px
+}
+
+.avatarPurchased-3h_bK- {
+    opacity: .5;
+    -webkit-transition: opacity .5s;
+    transition: opacity .5s
+}
+
+.cardText-2OugTh {
+    margin-top: 32px;
+    margin-left: 32px
+}
+
+.description-1aSbLq {
+    margin-top: 4px
+}
+
+.price-ehI2ay {
+    margin-top: 16px
+}
+
+.button-3VHqk5 {
+    margin: 24px auto 0;
+    width: 100%;
+    -webkit-transition: -webkit-transform .5s;
+    transition: -webkit-transform .5s;
+    transition: transform .5s;
+    transition: transform .5s, -webkit-transform .5s
+}
+
+.purchaseButton-16bBUi {
+    margin-top: 32px;
+    -webkit-transition: inherit, opacity .5s;
+    transition: inherit, opacity .5s
+}
+
+.purchaseButton-16bBUi:hover {
+    opacity: .8
+}
+
+.innerHover-3lqG6f {
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    opacity: 0
+}
+
+.innerBlur-3NYZ8j,
+.innerHover-3lqG6f {
+    position: absolute;
+    left: 32px;
+    right: 32px;
+    -webkit-transition: opacity .5s;
+    transition: opacity .5s
+}
+
+.innerBlur-3NYZ8j {
+    opacity: 1
+}
+
+.checkmarkWrapper-30c52R {
+    position: absolute;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    left: 0;
+    right: 0;
+    top: 80px
+}
+
+.checkmark-1jbYXa {
+    width: 100%;
+    color: #fff;
+    -webkit-transition: opacity .5s;
+    transition: opacity .5s
+}
+
+.shopCard-H3oN50:hover .innerHover-3lqG6f {
+    opacity: 1
+}
+
+.shopCard-H3oN50:hover .innerBlur-3NYZ8j {
+    opacity: 0
+}
+
+.shopCard-H3oN50:hover .button-3VHqk5 {
+    -webkit-transform: translateY(-16px);
+    transform: translateY(-16px)
+}
+
+.shopCard-H3oN50:hover .checkmark-1jbYXa {
+    opacity: 0
+}
+
+.shopCard-H3oN50:hover .avatarPurchased-3h_bK- {
+    opacity: 1
 }
 
 .shopLogo-2NbABu {
@@ -166246,7 +166234,75 @@ html .invoiceCancelRow-3s2UuC {
     -ms-flex-align: center;
     align-items: center;
     width: 280px;
-    margin: 1.5px 3px 40px 2px
+    margin: 6.5px 3px 0 2px;
+    padding-left: 10px
+}
+
+.effectDescriptionBorder-336gnM {
+    border-radius: 4px;
+    border: 2px solid transparent;
+    margin-left: -4px;
+    margin-bottom: 20px;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box
+}
+
+.effectDescriptionBorderWithGradient-3GHthf {
+    background: linear-gradient(var(--background-primary), var(--background-primary)) padding-box, linear-gradient(45deg, hsl(269, calc(var(--saturation-factor, 1)*52.7%), 52.7%), hsl(325, calc(var(--saturation-factor, 1)*31.7%), 51.8%)) border-box
+}
+
+.effectDescriptionNoGradient-d7Q-Lc {
+    background: var(--background-modifier-accent)
+}
+
+.effectDescriptionContainer-1y_8OR {
+    background: var(--background-tertiary) padding-box;
+    position: relative;
+    width: 280px;
+    border-radius: 4px;
+    padding-right: 4px
+}
+
+.effectDescription-3TiVDd {
+    font-weight: 400;
+    font-family: gg sans;
+    padding: 2px 3px 10px 10px
+}
+
+.effectDescription-3TiVDd,
+.effectName-2B6JQP {
+    text-align: start;
+    line-height: 18px;
+    font-size: 14px
+}
+
+.effectName-2B6JQP {
+    font-weight: 600;
+    padding-top: 12px;
+    padding-left: 10px
+}
+
+.replayButton-3ja54M {
+    margin: 10px 0 10px 30px;
+    width: 149px;
+    height: 24px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex
+}
+
+.replayButtonText-1tQs6j {
+    font-family: gg sans;
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 16px;
+    text-align: center
+}
+
+.retryIcon-3yWMmW {
+    margin-left: 6px;
+    margin-right: 3px;
+    color: var(--text-normal)
 }
 
 .icon-2MeLwV {
@@ -166286,13 +166342,13 @@ html .invoiceCancelRow-3s2UuC {
 }
 
 .selected-1KX8A2 {
-    -webkit-box-shadow: inset 0 0 0 2px var(--brand-experiment-500);
-    box-shadow: inset 0 0 0 2px var(--brand-experiment-500)
+    -webkit-box-shadow: 0 0 0 2px var(--brand-experiment-500);
+    box-shadow: 0 0 0 2px var(--brand-experiment-500)
 }
 
 .list-1UuDOi {
-    height: 550px;
-    width: 290px;
+    height: 560px;
+    width: 310px;
     margin-top: 2px;
     left: -12px
 }
@@ -166348,6 +166404,7 @@ html .invoiceCancelRow-3s2UuC {
 }
 
 .presetEffectImg-1QMW5H {
+    border-radius: 4px;
     width: 100%;
     height: 100%
 }
@@ -167261,4 +167318,4 @@ html .invoiceCancelRow-dVOR64 {
     margin-bottom: 16px
 }
 
-/*# sourceMappingURL=40532.b7ea4cdb2614f07447bf.css.map*/
+/*# sourceMappingURL=40532.1d8efcf924a0d68c4cf9.css.map*/
