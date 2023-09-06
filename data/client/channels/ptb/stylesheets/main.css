@@ -165713,7 +165713,6 @@ html .invoiceCancelRow-3s2UuC {
 .shopPreviewContainer-3RRvP7 {
     position: relative;
     height: 280px;
-    margin-top: 24px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -165908,14 +165907,6 @@ html .invoiceCancelRow-3s2UuC {
     margin-right: 4px
 }
 
-.limitedTimeBadge-2DmgUQ {
-    margin-left: 4px
-}
-
-.modalDescription-2ZWRTD {
-    margin: 0 16px 24px
-}
-
 .modalContent-1X6ssz {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -165923,6 +165914,10 @@ html .invoiceCancelRow-3s2UuC {
     -webkit-box-pack: center;
     -ms-flex-pack: center;
     justify-content: center
+}
+
+.modalPreview-2hTuZp {
+    margin-top: 24px
 }
 
 .goToShopButton-daTECK {
@@ -166956,4 +166951,4 @@ html .invoiceCancelRow-dVOR64 {
     margin-bottom: 16px
 }
 
-/*# sourceMappingURL=40532.e48a3ae65897b4540651.css.map*/
+/*# sourceMappingURL=40532.efbc03ac6f2e9416df4f.css.map*/
