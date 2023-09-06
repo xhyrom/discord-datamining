@@ -10724,15 +10724,8 @@ html.decorate-links .lowSaturationUnderline-Z6CW6z {
     position: absolute;
     top: -50%;
     bottom: 0;
-    right: 0
-}
-
-.shineContainerDefault-3f8X_o {
+    right: 0;
     left: -50%
-}
-
-.shineContainerSmall-2hoVE5 {
-    left: -100%
 }
 
 .shine-ZNDEKg {
@@ -10741,8 +10734,15 @@ html.decorate-links .lowSaturationUnderline-Z6CW6z {
     position: relative;
     top: -100%;
     -webkit-transform: rotate(30deg);
-    transform: rotate(30deg);
+    transform: rotate(30deg)
+}
+
+.shineDefault-2FIj0a {
     width: 56px
+}
+
+.shineSmall-1ADPSi {
+    width: 30px
 }
 
 .shinePaused-IYu1S0 {
@@ -10752,8 +10752,15 @@ html.decorate-links .lowSaturationUnderline-Z6CW6z {
 
 .shineInner-OI1Z2S {
     background-color: currentColor;
-    height: 100%;
+    height: 100%
+}
+
+.shineInnerDefault-164Wps {
     width: 16px
+}
+
+.shineInnerSmall-3tat3e {
+    width: 10px
 }
 
 @-webkit-keyframes Shine-2gtL99 {
@@ -135069,6 +135076,10 @@ html .invoiceCancelRow-3s2UuC {
     flex-direction: column
 }
 
+.productPreviewCtaButton-2LUiGh {
+    cursor: default
+}
+
 .previewHeading-obFXK_ {
     text-transform: uppercase
 }
@@ -167002,4 +167013,4 @@ html .invoiceCancelRow-dVOR64 {
     margin-bottom: 16px
 }
 
-/*# sourceMappingURL=40532.c280f42b67acaabec5db.css.map*/
+/*# sourceMappingURL=40532.6f69dd327b0bddf2b845.css.map*/
