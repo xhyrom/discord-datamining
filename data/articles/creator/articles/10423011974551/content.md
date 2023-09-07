@@ -1,4 +1,6 @@
-<h3 id="docs-internal-guid-b72604f7-7fff-3760-7a7d-4b10b4e4270c"><strong><span style="color: #104c32;" data-darkreader-inline-color="">Note: Server monetization tools are currently only available for US-based servers.</span></strong></h3>
+<h3 id="docs-internal-guid-9f2baa7c-7fff-6650-6f2c-950c7ecda274">
+    <strong><span style="color: #104c32;" data-darkreader-inline-color="">Note: Server monetization tools are currently only available for US-based servers. To stay in the loop on international expansion, </span></strong><a href="https://share.hsforms.com/1lyeXVPncR_CYxaE-61u6yw2bach" target="_blank" rel="noopener noreferrer">click here</a><strong><span style="color: #104c32;" data-darkreader-inline-color=""> to join the waitlist.</span></strong>
+</h3>
 <p><span style="color: #4f545c;" data-darkreader-inline-color="">Server Monetization is a way for servers to earn money on Discord. Read on to learn what you need to know as a server admin. If you’re not a server admin but have questions related to Server Subscriptions or Server Products (currently in beta), you can</span><a href="https://support.discord.com/hc/en-us/articles/4415163187607" target="_blank" rel="noopener noreferrer"> visit this help page for more information.</a></p>
 <p class="wysiwyg-text-align-center"><span class="wysiwyg-underline"><img src="https://lh4.googleusercontent.com/DWACs2vxQZUEb5ZJI52Pa0jK2wtzG6rKPrcavBnNwFOG0M1u7D1bcKG8hB2Ad0nJxyGalEQf7DzGEmibKAgZbVTF8qoMvgAmKVn-ymAogGGDLfeT4BZ6IT-wmfnHGAFtxq4yOKh7ImQQA7kWqcxL9rU"></span></p>
 <p><span class="wysiwyg-font-size-large"><strong>What this article covers:</strong></span></p>
@@ -162,10 +164,10 @@
     <span style="color: #434343;" data-darkreader-inline-color="">NOTE: Server Products are currently in Beta testing and only available to a select group of servers. </span><a href="https://share.hsforms.com/1u00PIv3XT0mIJjgWMTeesw2bach" target="_blank" rel="noopener noreferrer">Click here</a><span style="color: #434343;" data-darkreader-inline-color=""> to join the waitlist.</span>
 </h3>
 <h2 id="h_01H96GP5Y39JQNPDNJZJ0XDSCN">What are Server Products?</h2>
-<p>Server Products are digital products that are sold as one-time purchases. These products are customizable and managed within your Server Shop.</p>
+<p id="docs-internal-guid-84c6063a-7fff-224c-ac19-036030f60fd5">Server Products are digital products that are sold as one-time purchases. These products are customizable and managed within your Server Shop. We don't offer support for physical good fulfillment.</p>
 <ul>
     <li>
-        <strong>Downloadables</strong> are <span style="background-color: #ffffff;" data-darkreader-inline-bgcolor="">digital files that you create and upload to Discord in any of these supported file types: .png, .mov, .pdf, .jpeg, and .gif. We’re not able to support: .zip and .rar. </span>You will be able to sell ebooks, guides, digital art, and so much more—just be sure to follow the rules around the types of content you’re <strong>not</strong> allowed to monetize <a href="https://support.discord.com/hc/en-us/articles/10575066024983-Discord-Server-Subscription-Policy" target="_blank" rel="noopener noreferrer">here</a>.
+        <strong>Downloadables</strong> are <span style="background-color: #ffffff;" data-darkreader-inline-bgcolor="">digital files that you create and upload to Discord in any of these supported file types: .png, .mov, .pdf, .jpeg, and .gif. We’re not able to support: .zip and .rar. <span id="docs-internal-guid-1871caec-7fff-972e-d338-430c360cc800" style="background-color: #ffffff;" data-darkreader-inline-bgcolor="">You can upload up to 10 files per product totaling a maximum of 500MB.</span><br></span>You will be able to sell ebooks, guides, digital art, and so much more—just be sure to follow the rules around the types of content you’re <strong>not</strong> allowed to monetize <a href="https://support.discord.com/hc/en-us/articles/10575066024983-Discord-Server-Subscription-Policy" target="_blank" rel="noopener noreferrer">here</a>.
     </li>
     <li>
         <strong>Premium Roles</strong> are roles with special permissions that you can sell to provide exclusive access to a channel or other Discord perk without requiring a monthly subscription. For example, if you wanted to sell tickets to a streaming event, you could create a Premium Role that provides one-time access to a Stage Channel on the day of your event.
@@ -219,4 +221,6 @@
 <p>More information on the fee structures is available in the Monetization Terms: <a href="https://support.discord.com/hc/en-us/articles/5330075836311-Monetization-Terms">https://support.discord.com/hc/en-us/articles/5330075836311-Monetization-Terms</a></p>
 <p><strong>Q: When will subscriptions be purchasable on Android?</strong></p>
 <p>A: We’re working on it! We don’t have any timing to share at this point but we are actively working to bring Server Subscriptions to Android mobile devices.</p>
+<p id="docs-internal-guid-8e7ecc26-7fff-29ff-1e8f-7c7e2a708118"><strong>Q: Why am I unable to see Server Products when using the mobile app? </strong></p>
+<p>A: Server Products is currently a limited experiment that’s only available on desktop and web within the United States. If you are still unable to see this feature while on desktop and web, please be sure to join our waitlist <a href="https://share.hsforms.com/1lyeXVPncR_CYxaE-61u6yw2bach" target="_blank" rel="noopener noreferrer">here</a>. </p>
 <p> </p>
