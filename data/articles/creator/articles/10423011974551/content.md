@@ -218,7 +218,7 @@
 <p>A: We are currently rolling out In-App Purchasing (IAP) for iOS mobile devices to servers with Server Subscriptions enabled.  </p>
 <p><strong>Q: Do mobile subscriptions have the same revenue split as desktop subscriptions?</strong></p>
 <p>A: No. Apple takes an additional 30% of revenue from all subscriptions initiated through the Discord iOS application. Subscribers on iOS mobile devices will see a higher price on iOS checkout to account for the additional iOS fee. </p>
-<p>More information on the fee structures is available in the Monetization Terms: <a href="https://support.discord.com/hc/en-us/articles/5330075836311-Monetization-Terms">https://support.discord.com/hc/en-us/articles/5330075836311-Monetization-Terms</a></p>
+<p>More information on the fee structures is available in the Monetization Terms: <a href="https://support.discord.com/hc/en-us/articles/5330075836311-Monetization-Terms" target="_blank" rel="noopener noreferrer">https://support.discord.com/hc/en-us/articles/5330075836311-Monetization-Terms</a></p>
 <p><strong>Q: When will subscriptions be purchasable on Android?</strong></p>
 <p>A: We’re working on it! We don’t have any timing to share at this point but we are actively working to bring Server Subscriptions to Android mobile devices.</p>
 <p id="docs-internal-guid-8e7ecc26-7fff-29ff-1e8f-7c7e2a708118"><strong>Q: Why am I unable to see Server Products when using the mobile app? </strong></p>
