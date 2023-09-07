@@ -1,0 +1,21 @@
+{
+  "data": {
+    "kind": "user",
+    "id": "2023-09_decoupled_game_clipping",
+    "label": "Test decoupled game clipping",
+    "description": [
+      "Not Eligible",
+      "Control Bucket",
+      "Treatment 1: Decoupled Game Clipping"
+    ],
+    "hash": 1366927696,
+    "buckets": [
+      -1,
+      0,
+      1
+    ],
+    "config_keys": [
+      "enabled"
+    ]
+  }
+}
