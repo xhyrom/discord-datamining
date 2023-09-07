@@ -1,0 +1,32 @@
+{
+  "id": 16761257977623,
+  "url": "https://hammerandchisel.zendesk.com/api/v2/help_center/en-us/articles/16761257977623.json",
+  "html_url": "https://support.discord.com/hc/en-us/articles/16761257977623-Packs-FAQ",
+  "author_id": 1504238994441,
+  "comments_disabled": true,
+  "draft": false,
+  "promoted": false,
+  "position": 0,
+  "section_id": 115000457731,
+  "created_at": "2023-08-14T19:31:30Z",
+  "name": "Packs FAQ",
+  "title": "Packs FAQ",
+  "source_locale": "en-us",
+  "locale": "en-us",
+  "outdated": false,
+  "outdated_locales": [],
+  "edited_at": "2023-09-07T21:46:10Z",
+  "user_segment_id": null,
+  "permission_group_id": 1720972,
+  "content_tag_ids": [],
+  "label_names": [
+    "answer-bot",
+    "emoji",
+    "emojis",
+    "subscription",
+    "nitro",
+    "packs",
+    "perks",
+    "pack"
+  ]
+}
