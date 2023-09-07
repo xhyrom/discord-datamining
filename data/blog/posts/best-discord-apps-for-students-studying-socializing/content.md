@@ -20,18 +20,18 @@
             </figure>
             <p>When it comes to studying, it’s often much easier to explain concepts visually rather than just talking about them. Jamspace Whiteboard is an Activity developed by Discord that you can launch within a Voice channel or DM call, directly within Discord by clicking the Rocket Ship button! (Don’t know what Activities on Discord are? <a href="https://discord.com/blog/server-activities-games-voice-watch-together">Read all about ‘em here.</a>)&nbsp;</p>
             <p>Having a digital whiteboard can be a great way to collaboratively study with your friends and map out anything you’d like. Post sticky notes and move them around a flow chart, collab on a math problem, sketch out a prototype, point to a specific area of text, mark the best one with a star, and so much more. Don’t forget to carve out a portion of the whiteboard just for doodling and academically appropriate gifs, of course. The possibilities are as vast as your imagination!</p>
-            <h3>StudyLion&nbsp;</h3>
+            <h3>LionBot&nbsp;</h3>
             <figure class="w-richtext-figure-type-image w-richtext-align-fullwidth" style="max-width:1200pxpx">
                 <div><img src="https://assets-global.website-files.com/5f9072399b2640f14d6a2bf4/64ed17a9ea76ea1cb9564721_kC9Fht0aCBah8aNhjA-6zKTxweV3fYqlMzENIcSTE9-CxKQCGHzwYvg5Ia6IiCtW20mX_r1oJE-cLswmHCXj5e_qiPJ7gzbbFyJTDCbzTQ4ermBmFbvKbYKmifbkW7XahzhJzeDxNjM4-lpVYJfz-Do.png" alt="A preview of StudyLion’s Statistics features. It shows a server member’s studying history and a chart mapping their study habits over the previous week.‍"></div>
             </figure>
-            <p>The hardest part of studying? Just <em>paws-ing</em> everything else to get things done. With StudyLion, you’ve got the <em>purrfect</em> Discord companion to keep your entire community maintaining great study habits.&nbsp;</p>
-            <p>With the ability to create dedicated studying channels, profile cards to show who’s hit study milestones, and timers to allow everyone to take a much-needed break between sessions, StudyLion will become the <em>pride</em> of your study habits.&nbsp;</p>
+            <p>The hardest part of studying? Just <em>paws-ing</em> everything else to get things done. With LionBot, you’ve got the <em>purrfect</em> Discord companion to keep your entire community maintaining great study habits.&nbsp;</p>
+            <p>With the ability to create dedicated studying channels, profile cards to show who’s hit study milestones, and timers to allow everyone to take a much-needed break between sessions, LionBot will become the <em>pride</em> of your study habits.&nbsp;</p>
             <div class="w-embed">
-                <div class="btn-wrapper"><a data-track="https://discord.com/application-directory/889078613817831495" href="https://discord.com/application-directory/889078613817831495" class="btn-blog w-button" target="_blank">View StudyLion on the App Directory</a></div>
+                <div class="btn-wrapper"><a data-track="https://discord.com/application-directory/889078613817831495" href="https://discord.com/application-directory/889078613817831495" class="btn-blog w-button" target="_blank">View LionBot on the App Directory</a></div>
             </div>
             <p>‍</p>
             <h3>Discord Algebra System (DAS)</h3>
-            <figure style="max-width:651px" class="w-richtext-align-fullwidth w-richtext-figure-type-image">
+            <figure class="w-richtext-figure-type-image w-richtext-align-fullwidth" style="max-width:651pxpx">
                 <div><img src="https://assets-global.website-files.com/5f9072399b2640f14d6a2bf4/64f7bb46a4f297bebc5291aa_kjrjwzD.png" loading="lazy" alt=" A conversation in Discord utilizing the Discord Algebra System app. A user is inputting a formula into D.A.S., and the app has embedded a visual representation of it as an image."></div>
             </figure>
             <p>The Discord Algebra System (a third-party app for Discord and not a video game console) is here to provide your study server the ability to display, solve, and graph equations quickly and accurately. It can display what particular equations look like as an embedded image, figure ‘em out for you, and both expand and simplify expressions for when the equation you’re trying to solve is just a bit too lengthy.&nbsp;</p>
