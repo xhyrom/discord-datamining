@@ -112181,6 +112181,24 @@ html .tabBadge-h4HGed {
     vertical-align: sub
 }
 
+.unpublishedBadge-24LZp1 {
+    margin-left: 8px;
+    padding: 0 4px;
+    background-color: var(--background-accent);
+    color: var(--interactive-normal);
+    display: inline-block;
+    border-radius: 4px
+}
+
+.listingNameLabel-1bScxU {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center
+}
+
 .toggleExpandColumn-1B-t8d {
     -webkit-box-align: stretch;
     -ms-flex-align: stretch;
@@ -167407,4 +167425,4 @@ html .invoiceCancelRow-dVOR64 {
     margin-bottom: 16px
 }
 
-/*# sourceMappingURL=40532.d7eecc3fff773c644e48.css.map*/
+/*# sourceMappingURL=40532.2616d66b5be64d35d678.css.map*/
