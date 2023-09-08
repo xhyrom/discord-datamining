@@ -1,5 +1,5 @@
 <p id="docs-internal-guid-89fd4c22-7fff-8ada-66a6-cc8a7193e61b">Starting from <strong>September 7th, 2023 (5pm PST)</strong> to <strong>October 6th, 2023 (5pm PST)</strong>,<a href="https://support.discord.com/hc/en-us/articles/115000435108" target="_blank" rel="noopener noreferrer"> Discord Nitro</a> subscribers can redeem an exclusive in-game gift pack for the sci-fi shooter, <a href="https://www.syncedthegame.com/en/" target="_blank" rel="noopener noreferrer">Synced</a>. </p>
-<p><img src="https://support.discord.com/hc/article_attachments/17377206035735" alt="use this.png"></p>
+<p class="wysiwyg-text-align-center"><img src="https://support.discord.com/hc/article_attachments/17377206035735" alt="use this.png"></p>
 <p id="docs-internal-guid-394bf4fc-7fff-9ce0-5f3b-713e8073622e"><strong>Promotion Summary</strong></p>
 <p><strong>Offer Details:</strong> Synced in-game gift pack for<a href="https://support.discord.com/hc/en-us/articles/115000435108" target="_blank" rel="noopener noreferrer"> Discord Nitro</a> subscribers</p>
 <p>Included in the gift pack are the following items: </p>
@@ -17,30 +17,30 @@
 <p>Claim through Discord Gift Inventory from <strong>September 7th, 2023 (5pm PST)</strong> to <strong>October 6th, 2023 (5pm PST)</strong>, and redeem in your Synced account by <strong>October 6th, 2023 (5pm PST)</strong>.</p>
 <h2 id="h_01H9TQ7CS5S22JTFKP9S2T9FBR"><strong>What this article covers: </strong></h2>
 <ul>
-    <li><a href="#h_01H9TQ7CS6YAGJHTKX8TF8MWZ7"><strong>What is Discord Nitro?</strong></a></li>
-    <li><a href="#h_01H9TQ7CS60B60Z8QD2XCP1YE1"><strong>What is Synced? </strong></a></li>
+    <li><a href="https://support.discord.com/hc/en-us/articles/16976446032407#h_01H9TQ7CS6YAGJHTKX8TF8MWZ7"><strong>What is Discord Nitro?</strong></a></li>
+    <li><a href="https://support.discord.com/hc/en-us/articles/16976446032407#h_01H9TQ7CS60B60Z8QD2XCP1YE1"><strong>What is Synced? </strong></a></li>
     <li>
-        <a href="#h_01H9TQ7CS6V75V6HD6B1FCZ19M"><strong>How do I claim the Synced Promo in Discord? </strong></a>
+        <a href="https://support.discord.com/hc/en-us/articles/16976446032407#h_01H9TQ7CS6V75V6HD6B1FCZ19M"><strong>How do I claim the Synced Promo in Discord? </strong></a>
         <ul>
-            <li><a href="#h_01H9TQ7CS627EED20AJ23J69AA">Eligibility for the Claiming this Promotion in Discord</a></li>
-            <li><a href="#h_01H9TQ7CS6WCS8RQZKXMZ2F5GM">Step By Step Claim Instructions </a></li>
+            <li><a href="https://support.discord.com/hc/en-us/articles/16976446032407#h_01H9TQ7CS627EED20AJ23J69AA">Eligibility for the Claiming this Promotion in Discord</a></li>
+            <li><a href="https://support.discord.com/hc/en-us/articles/16976446032407#h_01H9TQ7CS6WCS8RQZKXMZ2F5GM">Step By Step Claim Instructions </a></li>
         </ul>
     </li>
     <li>
-        <a href="#docs-internal-guid-3f6367dc-7fff-e9e6-3d1c-0f17ce6bd191"><strong>How do I redeem the gift pack from Synced? </strong></a>
+        <a href="https://support.discord.com/hc/en-us/articles/16976446032407#docs-internal-guid-3f6367dc-7fff-e9e6-3d1c-0f17ce6bd191"><strong>How do I redeem the gift pack from Synced? </strong></a>
         <ul>
-            <li><a href="#h_01H9TQDZM6BZ53XXJ50TPJCZ8J">Eligibility for Redeeming the Synced Gift Pack</a></li>
-            <li><a href="#h_01H9TQDZM63XQ9F4R2BK0C52MP">Step by Step Redeem Instructions</a></li>
+            <li><a href="https://support.discord.com/hc/en-us/articles/16976446032407#h_01H9TQDZM6BZ53XXJ50TPJCZ8J">Eligibility for Redeeming the Synced Gift Pack</a></li>
+            <li><a href="https://support.discord.com/hc/en-us/articles/16976446032407#h_01H9TQDZM63XQ9F4R2BK0C52MP">Step by Step Redeem Instructions</a></li>
         </ul>
     </li>
-    <li><a href="#h_01H9TQDZM6QZ2PWRGXGJZWA1Q9"><strong>How do I share my Code with a Friend?</strong></a></li>
+    <li><a href="https://support.discord.com/hc/en-us/articles/16976446032407#h_01H9TQDZM6QZ2PWRGXGJZWA1Q9"><strong>How do I share my Code with a Friend?</strong></a></li>
     <li>
-        <a href="#h_01H9TQDZM699MP9QYDC1KHYYD6"><strong>Frequently Asked Questions</strong></a>
+        <a href="https://support.discord.com/hc/en-us/articles/16976446032407#h_01H9TQDZM699MP9QYDC1KHYYD6"><strong>Frequently Asked Questions</strong></a>
         <ul>
-            <li><a href="#h_01H9TQDZM6T1VRR2EWGYSZJZ1J">Promotion Details</a></li>
-            <li><a href="#h_01H9TQDZM6Z6R5MCF9YZ8XBF6J">Eligibility for the Promotion</a></li>
-            <li><a href="#h_01H9TQDZM6H0MZTB3729CQ8VCQ">Claiming and Redemption Process</a></li>
-            <li><a href="#h_01H9TQDZM6DWF2VG73ZDZ8FWSF">Potential Errors and Other Issues</a></li>
+            <li><a href="https://support.discord.com/hc/en-us/articles/16976446032407#h_01H9TQDZM6T1VRR2EWGYSZJZ1J">Promotion Details</a></li>
+            <li><a href="https://support.discord.com/hc/en-us/articles/16976446032407#h_01H9TQDZM6Z6R5MCF9YZ8XBF6J">Eligibility for the Promotion</a></li>
+            <li><a href="https://support.discord.com/hc/en-us/articles/16976446032407#h_01H9TQDZM6H0MZTB3729CQ8VCQ">Claiming and Redemption Process</a></li>
+            <li><a href="https://support.discord.com/hc/en-us/articles/16976446032407#h_01H9TQDZM6DWF2VG73ZDZ8FWSF">Potential Errors and Other Issues</a></li>
         </ul>
     </li>
 </ul>
@@ -76,11 +76,11 @@
 <p>If you’re subscribed to <strong>Discord Nitro,</strong> start by logging into your Discord account. </p>
 <p>You may notice a notification bar at the top of your browser/desktop app, and you can press the "<strong>Take me there" button</strong> in the notification bar to be redirected to your Gift Inventory. </p>
 <p>You can also directly head to your <strong>User Settings</strong>, and then select the <strong>Gift Inventory tab</strong>.</p>
-<p><img src="https://support.discord.com/hc/article_attachments/17377220766487" alt="Screen Shot 2023-08-16 at 3.58.23 PM.png"></p>
+<p class="wysiwyg-text-align-center"><img src="https://support.discord.com/hc/article_attachments/17377220766487" alt="Screen Shot 2023-08-16 at 3.58.23 PM.png"></p>
 <p id="docs-internal-guid-a9621ada-7fff-58da-037e-ea42b3e83e8f"><strong>2) Press the Claim button for the Synced Gift</strong></p>
 <p>Once you press <strong>Claim </strong>on the Synced Gift in the Gift Inventory and you'll then see a new pop-up with your 12 character code for this promotion.</p>
 <p>If you want to redeem your code later, you can press the <strong>Maybe Later</strong> button, and then redeem the code before <strong>October 6th, 2023 (5pm PST)</strong>.</p>
-<p><img src="https://support.discord.com/hc/article_attachments/17377220770839" alt="Screenshot_2023-09-07_at_9.35.03_AM.png"></p>
+<p class="wysiwyg-text-align-center"><img src="https://support.discord.com/hc/article_attachments/17378080461335" alt="october6th-Screenshot_2023-09-08_at_10.19.55_AM.png"></p>
 <h1 id="docs-internal-guid-3f6367dc-7fff-e9e6-3d1c-0f17ce6bd191"><strong>How do I redeem the gift pack from Synced?</strong></h1>
 <p>Once you have claimed the code in the Gift Inventory, you'll now need to officially redeem this code on your Synced account (or share this code with a friend).</p>
 <h2 id="h_01H9TQDZM6BZ53XXJ50TPJCZ8J"><strong>Eligibility for Redeeming the Synced Gift Pack</strong></h2>
@@ -103,10 +103,10 @@
 <h1 id="h_01H9TQDZM699MP9QYDC1KHYYD6"><strong>Frequently Asked Questions</strong></h1>
 <p>We know there's a lot of information to unpack on this promotion above, so we've also broken down this information in this FAQ section as well too.</p>
 <ul>
-    <li><a href="#h_01H9TQDZM6T1VRR2EWGYSZJZ1J"><strong>Promotion Details</strong></a></li>
-    <li><a href="#h_01H9TQDZM6Z6R5MCF9YZ8XBF6J"><strong>Eligibility for the Promotion</strong></a></li>
-    <li><a href="#h_01H9TQDZM6H0MZTB3729CQ8VCQ"><strong>Claiming and Redemption Process</strong></a></li>
-    <li><a href="#h_01H9TQDZM6DWF2VG73ZDZ8FWSF"><strong>Potential Errors and Other Issues</strong></a></li>
+    <li><a href="https://support.discord.com/hc/en-us/articles/16976446032407#h_01H9TQDZM6T1VRR2EWGYSZJZ1J"><strong>Promotion Details</strong></a></li>
+    <li><a href="https://support.discord.com/hc/en-us/articles/16976446032407#h_01H9TQDZM6Z6R5MCF9YZ8XBF6J"><strong>Eligibility for the Promotion</strong></a></li>
+    <li><a href="https://support.discord.com/hc/en-us/articles/16976446032407#h_01H9TQDZM6H0MZTB3729CQ8VCQ"><strong>Claiming and Redemption Process</strong></a></li>
+    <li><a href="https://support.discord.com/hc/en-us/articles/16976446032407#h_01H9TQDZM6DWF2VG73ZDZ8FWSF"><strong>Potential Errors and Other Issues</strong></a></li>
 </ul>
 <h2 id="h_01H9TQDZM6T1VRR2EWGYSZJZ1J"><strong>Promotion Details</strong></h2>
 <p><strong>Q: How long does this promotion for Nitro Subscribers run for?</strong></p>

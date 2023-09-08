@@ -100,8 +100,8 @@
                 </td>
             </tr>
             <tr>
-                <td><img src="https://support.discord.com/hc/article_attachments/17377189093655" alt="image3.png"></td>
-                <td><img src="https://support.discord.com/hc/article_attachments/17377189103383" alt="image1.png"></td>
+                <td class="wysiwyg-text-align-center"><img src="https://support.discord.com/hc/article_attachments/17377189093655" alt="image3.png"></td>
+                <td class="wysiwyg-text-align-center"><img src="https://support.discord.com/hc/article_attachments/17377189103383" alt="image1.png"></td>
             </tr>
         </tbody>
     </table>
