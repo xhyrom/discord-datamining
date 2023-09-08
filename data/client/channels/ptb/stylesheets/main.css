@@ -160269,6 +160269,22 @@ html .invoiceCancelRow-3s2UuC {
     background: linear-gradient(rgba(135, 38, 109, 0), rgba(135, 38, 109, .4))
 }
 
+.fantasyBannerBackground-2ysFp_ {
+    background: url(/assets/dfd82b0026193458b51b2aeba75e9d51.png) no-repeat
+}
+
+.animeBannerBackground-1zAWJ5 {
+    background: url(/assets/6e7a4315cdf867badc269ade8791e151.png) no-repeat
+}
+
+.breakfastBannerBackground-1LPedv {
+    background: url(/assets/276ec187e47df8038f56f16bbd27bddd.png) no-repeat
+}
+
+.disxcoreBannerBackground-13bYkt {
+    background: url(/assets/209a468b38ed3f7c0ff28b8c331d446c.png) no-repeat
+}
+
 .fantasyImageBackground-29OtK3 {
     background: url(/assets/c304062633516b98c4d5b3bf3e440e3c.png) no-repeat
 }
@@ -160286,34 +160302,52 @@ html .invoiceCancelRow-3s2UuC {
     border-radius: 32px
 }
 
-.bannerContent-19nx5R {
-    margin-top: 60px;
-    margin-left: 60px;
-    position: absolute
-}
-
-.bannerCard-2yr-T2 {
+.categoryBanner-30HmMz {
     grid-column: 1/-1;
-    padding: 2px
+    position: relative;
+    background-size: cover;
+    width: 1060px;
+    height: 240px;
+    border-radius: var(--radius-xxl);
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    gap: 16px
 }
 
-.bannerBackground-2gFLDX,
-.bannerCard-2yr-T2 {
-    height: 300px;
-    border-radius: 32px;
-    width: 1060px
+.categoryLogo-3ODMFO {
+    max-height: 96px
 }
 
-.bannerBackground-2gFLDX {
-    position: absolute
+.discordLogo-1yKjN3 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    color: var(--white);
+    gap: 3px
 }
 
-.bannerDescription-1-LGr0 {
-    margin-top: 16px
+.discordIcon-2MRoE2 {
+    width: unset;
+    height: 12px
 }
 
-.bannerDiscordLogo-psYs1O {
-    padding-bottom: 8px
+.discordWordmark-xsxGxR {
+    width: unset;
+    height: 16px
 }
 
 .skeleton-3HFIZN {
@@ -167373,4 +167407,4 @@ html .invoiceCancelRow-dVOR64 {
     margin-bottom: 16px
 }
 
-/*# sourceMappingURL=40532.9fa9d7fcbd36ab2d6e79.css.map*/
+/*# sourceMappingURL=40532.d7eecc3fff773c644e48.css.map*/
