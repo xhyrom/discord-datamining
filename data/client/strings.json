@@ -3171,6 +3171,7 @@
   "THEME": "\"Theme\"",
   "THEME_LIGHT": "\"Light\"",
   "THEME_DARK": "\"Dark\"",
+  "THEME_MIDNIGHT": "\"Midnight\"",
   "THEME_UPDATED": "\"Theme has been updated.\"",
   "THEME_SYSTEM": "\"Sync with computer\"",
   "THEME_DISABLED_FOR_FORCED_COLORS": "\"When your device has High Contrast settings enabled, your Theme will automatically default to sync with your computer.\"",
