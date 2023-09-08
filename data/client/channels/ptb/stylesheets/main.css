@@ -84747,6 +84747,11 @@ html:not(.custom-theme-background) .container-Vrgqxz {
     color: var(--interactive-hover)
 }
 
+.statusDiv-19yyN4 .statusText-1NUrg6 {
+    font-size: 12px;
+    line-height: 16px
+}
+
 .statusText-1NUrg6 {
     text-overflow: ellipsis;
     overflow: hidden
@@ -94992,6 +94997,11 @@ html:not(.custom-theme-background) .container-Vrgqxz {
     width: -webkit-fit-content;
     width: -moz-fit-content;
     width: fit-content
+}
+
+.channelStatusClickable-2_H3j0 .channelStatus-3P8_7z {
+    font-size: 12px;
+    line-height: 16px
 }
 
 .hoverable-yK3jB7:hover {
@@ -167431,4 +167441,4 @@ html .invoiceCancelRow-dVOR64 {
     margin-bottom: 16px
 }
 
-/*# sourceMappingURL=40532.5ff7f11fda43135cc8e0.css.map*/
+/*# sourceMappingURL=40532.778ae94675abdd4fa2a0.css.map*/
