@@ -160315,12 +160315,79 @@ html .invoiceCancelRow-3s2UuC {
     background: url(/assets/e2a9bd3caa66f0d26c3574977e975cf9.png) no-repeat
 }
 
-.card-1e8EiH {
-    height: 300px;
-    border-radius: 32px
+.page-LilLhg {
+    height: 100%;
+    background-color: var(--background-primary);
+    max-width: 1124px;
+    padding: 32px;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    margin: 44px auto 300px;
+    -webkit-box-flex: 1;
+    -ms-flex: 1 1 auto;
+    flex: 1 1 auto;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    overflow: visible;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    left: 50%;
+    -webkit-transform: translate(-50%);
+    transform: translate(-50%)
 }
 
-.categoryBanner-30HmMz {
+.closeWrapper-4ioOGM,
+.page-LilLhg {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    position: absolute
+}
+
+.closeWrapper-4ioOGM {
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    top: 32px;
+    right: 32px;
+    z-index: 1
+}
+
+.closeContent-1VSMwH {
+    position: fixed;
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: end;
+    -ms-flex-pack: end;
+    justify-content: flex-end;
+    pointer-events: none
+}
+
+.closeIcon-ErXdZG {
+    pointer-events: all
+}
+
+.cardsContainer-2kdrm8 {
+    max-width: 1060px;
+    padding: 24px 0;
+    display: grid;
+    grid-gap: 28px;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    overflow: visible
+}
+
+.heroBanner-1Diga9 {
+    width: 100%;
+    background-color: #00f
+}
+
+.shopBanner-PEO5bV {
     grid-column: 1/-1;
     position: relative;
     background-size: cover;
@@ -160343,11 +160410,11 @@ html .invoiceCancelRow-3s2UuC {
     gap: 16px
 }
 
-.categoryLogo-3ODMFO {
+.categoryLogo-heQS7Z {
     max-height: 96px
 }
 
-.discordLogo-1yKjN3 {
+.discordLogo-38RP1c {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -160358,95 +160425,19 @@ html .invoiceCancelRow-3s2UuC {
     gap: 3px
 }
 
-.discordIcon-2MRoE2 {
+.discordIcon-kJrghc {
     width: unset;
     height: 12px
 }
 
-.discordWordmark-xsxGxR {
+.discordWordmark-Xl1DUZ {
     width: unset;
     height: 16px
 }
 
-.skeleton-3HFIZN {
-    cursor: pointer;
-    -webkit-box-sizing: border-box;
-    box-sizing: border-box;
-    overflow: hidden;
-    -webkit-animation: placeholderPulse-14ApXc 1.3s ease-in-out infinite;
-    animation: placeholderPulse-14ApXc 1.3s ease-in-out infinite;
-    background-color: var(--background-secondary);
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: column;
-    flex-direction: column
-}
-
-.skeleton-3HFIZN,
-.skeleton-3HFIZN .collectible-FtWK3w {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex
-}
-
-.skeleton-3HFIZN .collectible-FtWK3w {
-    height: 170px;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    justify-content: center
-}
-
-.skeleton-3HFIZN .avatar-1vMuYj {
-    height: 96px;
-    width: 96px;
-    border-radius: 50%
-}
-
-.skeleton-3HFIZN .avatar-1vMuYj,
-.skeleton-3HFIZN .description-30cVbJ {
-    background-color: var(--background-secondary-alt)
-}
-
-.skeleton-3HFIZN .description-30cVbJ {
-    height: 130px
-}
-
-.skeletonBanner-53un4I {
-    grid-column: 1/-1
-}
-
-@-webkit-keyframes placeholderPulse-14ApXc {
-    0% {
-        opacity: .3
-    }
-
-    50% {
-        opacity: 1
-    }
-
-    to {
-        opacity: .3
-    }
-}
-
-@keyframes placeholderPulse-14ApXc {
-    0% {
-        opacity: .3
-    }
-
-    50% {
-        opacity: 1
-    }
-
-    to {
-        opacity: .3
-    }
-}
-
 .shopCard-H3oN50 {
+    height: 300px;
+    border-radius: var(--radius-xxl);
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
@@ -160690,76 +160681,78 @@ html .invoiceCancelRow-3s2UuC {
     margin-top: 16px
 }
 
-.page-LilLhg {
-    height: 100%;
-    background-color: var(--background-primary);
-    max-width: 1124px;
-    padding: 32px;
+@-webkit-keyframes placeholderPulse-ooES5N {
+    0% {
+        opacity: .3
+    }
+
+    50% {
+        opacity: 1
+    }
+
+    to {
+        opacity: .3
+    }
+}
+
+@keyframes placeholderPulse-ooES5N {
+    0% {
+        opacity: .3
+    }
+
+    50% {
+        opacity: 1
+    }
+
+    to {
+        opacity: .3
+    }
+}
+
+.skeleton-1U6yWM {
+    cursor: pointer;
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
-    margin: 44px auto 300px;
-    -webkit-box-flex: 1;
-    -ms-flex: 1 1 auto;
-    flex: 1 1 auto;
+    overflow: hidden;
+    -webkit-animation: placeholderPulse-ooES5N 1.3s ease-in-out infinite;
+    animation: placeholderPulse-ooES5N 1.3s ease-in-out infinite;
+    background-color: var(--background-secondary);
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
     -ms-flex-direction: column;
-    flex-direction: column;
-    overflow: visible;
+    flex-direction: column
+}
+
+.cardBody-1ntQaF,
+.skeleton-1U6yWM {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex
+}
+
+.cardBody-1ntQaF {
+    height: 170px;
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
-    left: 50%;
-    -webkit-transform: translate(-50%);
-    transform: translate(-50%)
-}
-
-.closeWrapper-4ioOGM,
-.page-LilLhg {
-    width: 100%;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    position: absolute
-}
-
-.closeWrapper-4ioOGM {
     -webkit-box-pack: center;
     -ms-flex-pack: center;
-    justify-content: center;
-    top: 32px;
-    right: 32px;
-    z-index: 1
+    justify-content: center
 }
 
-.closeContent-1VSMwH {
-    position: fixed;
-    width: 100%;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: end;
-    -ms-flex-pack: end;
-    justify-content: flex-end;
-    pointer-events: none
+.cardAvatar-DsY13f {
+    height: 96px;
+    width: 96px;
+    border-radius: 50%
 }
 
-.closeIcon-ErXdZG {
-    pointer-events: all
+.cardAvatar-DsY13f,
+.cardSummary-218DWR {
+    background-color: var(--background-secondary-alt)
 }
 
-.cardsContainer-2kdrm8 {
-    max-width: 1060px;
-    padding: 24px 0;
-    display: grid;
-    grid-gap: 28px;
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-    overflow: visible
-}
-
-.heroBanner-1Diga9 {
-    width: 100%;
-    background-color: #00f
+.cardSummary-218DWR {
+    height: calc(100% - 170px)
 }
 
 .bannerContent-3Sk0tn {
@@ -167425,4 +167418,4 @@ html .invoiceCancelRow-dVOR64 {
     margin-bottom: 16px
 }
 
-/*# sourceMappingURL=40532.2616d66b5be64d35d678.css.map*/
+/*# sourceMappingURL=40532.6ae6825ee6b12de82b7b.css.map*/
