@@ -2167,27 +2167,6 @@
   },
   {
     "data": {
-      "kind": "user",
-      "id": "2021-04_network_action_logging",
-      "label": "Standard Analytics: Log Network Actions",
-      "description": [
-        "Not Eligible",
-        "Control Bucket",
-        "Treatment 1: Log network actions"
-      ],
-      "hash": 3643362751,
-      "buckets": [
-        -1,
-        0,
-        1
-      ],
-      "config_keys": [
-        "enabled"
-      ]
-    }
-  },
-  {
-    "data": {
       "kind": "guild",
       "id": "2023-02_stage_boosting",
       "label": "Stage Boosting",
@@ -3278,27 +3257,6 @@
         ]
       },
       "overrides_formatted": []
-    }
-  },
-  {
-    "data": {
-      "kind": "user",
-      "id": "2021-04_impression_logging",
-      "label": "Standard Analytics: Log Impressions",
-      "description": [
-        "Not Eligible",
-        "Control Bucket",
-        "Treatment 1: Log impressions"
-      ],
-      "hash": 3354177721,
-      "buckets": [
-        -1,
-        0,
-        1
-      ],
-      "config_keys": [
-        "enabled"
-      ]
     }
   },
   {
