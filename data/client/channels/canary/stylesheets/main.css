@@ -139083,6 +139083,12 @@ html .invoiceCancelRow-3s2UuC {
     padding: 0 16px
 }
 
+.popoutContent-RPXYST {
+    -webkit-box-align: stretch;
+    -ms-flex-align: stretch;
+    align-items: stretch
+}
+
 .modalRoot-3as19D {
     background-color: var(--background-secondary);
     border-radius: 8px;
@@ -167256,4 +167262,4 @@ html .invoiceCancelRow-dVOR64 {
     margin-bottom: 16px
 }
 
-/*# sourceMappingURL=40532.c2e0b275dd91aa17b298.css.map*/
+/*# sourceMappingURL=40532.ff0f0b6af5fc8c5d3cf2.css.map*/
