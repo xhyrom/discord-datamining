@@ -15710,6 +15710,7 @@
   "GUILD_PRODUCT_UNPUBLISH_DESCRIPTION": "\"This product will become unavailable for purchase.\"",
   "GUILD_PRODUCT_PUBLISH_REQUIRES_SAVE": "\"Please save before publishing\"",
   "GUILD_PRODUCT_UNPUBLISH_REQUIRES_SAVE": "\"Please save before unpublishing\"",
+  "GUILD_PRODUCT_UNPUBLISHED_TITLE": "\"Unpublished\"",
   "GUILD_PRODUCT_CARD_PURCHASE_TO_UNLOCK": "\"Purchase to Unlock\"",
   "GUILD_PRODUCT_CARD_EMPTY_NAME": "\"No title yet\"",
   "GUILD_PRODUCT_CARD_EMPTY_DESCRIPTION": "\"Empty Description\"",
