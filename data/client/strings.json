@@ -15621,7 +15621,7 @@
   "GUILD_PRODUCT_DELETE": "\"Delete Product\"",
   "GUILD_PRODUCTS_DELETE_CONFIRMATION_HEADER": "\"Delete product?\"",
   "GUILD_PRODUCTS_DELETE_CONFIRMATION_BODY": "\"Are you sure you want to delete **!!{productName}!!**? This action cannot be undone.\"",
-  "GUILD_PRODUCTS_DELETE_CONFIRMATION_BODY_ROLE_WARNING": "\"This product has the **!!{roleName}!!** role. Upon deletion, this role will be come unmanaged. That's just a fancy word that means you'll be able to delete it from your Role Settings\"",
+  "GUILD_PRODUCTS_DELETE_CONFIRMATION_BODY_ROLE_WARNING": "\"The role **!!{roleName}!!** will become unlinked from this product, and you'll be able to manage or delete it in Role Settings.\"",
   "GUILD_PRODUCTS_DELETE_CONFIRMATION_BODY_ROLE_WARNING_HEADER": "\"This product has a role\"",
   "GUILD_PRODUCTS_DELETE_CONFIRMATION_BUTTON": "\"Delete Product\"",
   "GUILD_PRODUCTS_DELETE_ERROR_TITLE": "\"Error Deleting Product\"",
