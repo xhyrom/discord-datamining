@@ -160495,15 +160495,17 @@ html .invoiceCancelRow-3s2UuC {
 
 .button-3VHqk5 {
     margin: 24px auto 0;
-    width: 100%;
+    width: 100%
+}
+
+.button-3VHqk5,
+.purchaseButton-16bBUi {
     -webkit-transition: all .5s;
     transition: all .5s
 }
 
 .purchaseButton-16bBUi {
-    margin-top: 32px;
-    -webkit-transition: opacity .5s;
-    transition: opacity .5s
+    margin-top: 32px
 }
 
 .purchaseButton-16bBUi:hover {
@@ -160853,6 +160855,11 @@ html .invoiceCancelRow-3s2UuC {
 
 .deco3-2-Y0Ve {
     margin-top: 24px
+}
+
+.premiumUnlockHook-3W9Gfe {
+    cursor: pointer;
+    text-decoration: underline
 }
 
 .spacing-1JirW3 {}
@@ -167113,7 +167120,9 @@ html .invoiceCancelRow-dVOR64 {
 .modalCloseButton-3RgDvX {
     position: absolute;
     right: 8px;
-    top: 8px
+    top: 8px;
+    opacity: 1;
+    color: var(--white-500)
 }
 
 .collectibleInfoContainer-3uyaC5 {
@@ -167418,4 +167427,4 @@ html .invoiceCancelRow-dVOR64 {
     margin-bottom: 16px
 }
 
-/*# sourceMappingURL=40532.6ae6825ee6b12de82b7b.css.map*/
+/*# sourceMappingURL=40532.873803d1b48728748618.css.map*/
