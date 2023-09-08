@@ -160373,6 +160373,23 @@ html .invoiceCancelRow-3s2UuC {
     opacity: .8
 }
 
+.premiumWheelTooltipContent-1tZDXT {
+    text-align: center
+}
+
+.premiumWheelBadge-1k9Y4d {
+    position: absolute;
+    top: 16px;
+    right: 16px;
+    padding: 0 4px
+}
+
+.premiumWheel-28L6fu {
+    color: var(--white-500);
+    width: 16px;
+    height: 16px
+}
+
 .innerHover-3lqG6f {
     -webkit-box-align: center;
     -ms-flex-align: center;
@@ -167262,4 +167279,4 @@ html .invoiceCancelRow-dVOR64 {
     margin-bottom: 16px
 }
 
-/*# sourceMappingURL=40532.c0b82989a5a7f21dd901.css.map*/
+/*# sourceMappingURL=40532.8598d597d47bbaca35cf.css.map*/
