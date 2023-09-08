@@ -1,4 +1,4 @@
-<h3>
+<h3 id="h_01H9TTWYH7D56CWTNAS0ZECK3H">
     <strong>Note: <br></strong>- Make sure to fully restart your desktop client if you don't see the update yet! <br>- Currently, we only support sharing audio when streaming an application - and all audio from the application will be shared. <span id="docs-internal-guid-eb4fb32e-7fff-c238-c9e8-d61bfeca23c7">If you choose to stream a window on MacOS, audio will not be shared.</span>
 </h3>
 <p><span class="wysiwyg-font-size-large"><strong>What this article covers: <br></strong></span></p>
@@ -8,7 +8,7 @@
         <ul>
             <li><a href="#h_01F33Q2B41D4196E5CRZKH8WFR" target="_self">macOS 10.15</a></li>
             <li><a href="#h_01F33Q2G00YAHM5TZJ5XH6NKTT" target="_self">macOS 11</a></li>
-            <li><a href="#h_01F33Q2M9381YXGAD2YBVF43NG" target="_self">M1 Machines</a></li>
+            <li><a href="https://support.discord.com/hc/en-us/articles/1500006741102#h_01F33Q2M9381YXGAD2YBVF43NG">Apple Silicon/M-Series</a></li>
         </ul>
     </li>
     <li><a href="#h_01F3R3YG2GSDBRFQA6BVM4K87X" target="_self">What is Rogue Amoeba?</a></li>
@@ -20,6 +20,7 @@
         </ul>
     </li>
 </ul>
+<h3 id="docs-internal-guid-2f83c24b-7fff-b6b9-5a4e-cf0d574f37f5"><span style="color: #434343;" data-darkreader-inline-color="">Note: The information within this article is subject to change. Not all eligible systems may be immediately listed at this time. </span></h3>
 <h1 id="h_01F3R3YB9N8TPS3JRBAMQ63076">How to Enable Screen Share with Audio on Mac</h1>
 <p>Sharing a screen on macOS 10.15+ now includes audio! </p>
 <p>To get started, head over to your <strong>Voice &amp; Video</strong> settings (within the <strong>User Settings</strong>) and find the <strong>Screen Share</strong> section.</p>
@@ -28,12 +29,12 @@
 <ul>
     <li><a href="#h_01F33Q2B41D4196E5CRZKH8WFR" target="_self">macOS 10.15</a></li>
     <li><a href="#h_01F33Q2G00YAHM5TZJ5XH6NKTT" target="_self">macOS 11</a></li>
-    <li><a href="#h_01F33Q2M9381YXGAD2YBVF43NG" target="_self">M1 Machines</a></li>
+    <li><a href="https://support.discord.com/hc/en-us/articles/1500006741102#h_01F33Q2M9381YXGAD2YBVF43NG">Apple Silicon/M-Series</a></li>
 </ul>
 <h1 id="h_01F3R3YG2GSDBRFQA6BVM4K87X"><strong>What is Rogue Amoeba? </strong></h1>
 <p>Rogue Amoeba's “Audio Capture Engine” (abbreviated as ACE) is a MacOS-based technology which makes it possible to capture audio from one or more individual applications, as well as all audio from the entire system at once. </p>
 <p>You can learn more about the company and software specifically on their website <a href="https://rogueamoeba.com/licensing/ace/" target="_blank" rel="noopener noreferrer">here</a>.</p>
-<h3>Note: We do not pass any information or data to Rogue Amoeba when you enable the tech on Discord. This means that no audio data is ever sent or shared outside of Discord.</h3>
+<h3 id="h_01H9TTWYH7Y0VYARVWYGXTYAH6">Note: We do not pass any information or data to Rogue Amoeba when you enable the tech on Discord. This means that no audio data is ever sent or shared outside of Discord.</h3>
 <h2 id="h_01F33Q2B41D4196E5CRZKH8WFR"><strong>macOS 10.15</strong></h2>
 <p>When you press the <strong>Install</strong> button in the Screen Share setting section, you should see a dialog like the one shown below. Once you see that dialog, enter your password and select <strong>Ok</strong> to install the extension.</p>
 <p>After a few seconds, the installation should complete and you'll be ready to start sharing audio with your streams!</p>
@@ -45,10 +46,10 @@
 <p>2. When you see this dialog, click <strong>Open Security Preferences</strong> and then <strong>Allow</strong> in the next window.</p>
 <p class="wysiwyg-text-align-center"><img src="https://support.discord.com/hc/article_attachments/1500010342722" alt="rogueamoeba_system_extension_permissions.png"></p>
 <p>3. You'll then need to restart your machine in order for the installation to complete and for screen share with audio to work.</p>
-<h2 id="h_01F33Q2M9381YXGAD2YBVF43NG"><strong>M1 Machines</strong></h2>
-<p>If you have a Mac with an M1 chip, there's an additional step for you to do, involving rebooting into the machine's Recovery environment.</p>
+<h2 id="h_01F33Q2M9381YXGAD2YBVF43NG"><strong>Apple Silicon/M-Series<br></strong></h2>
+<p>If you have an Apple Silicon/M-Series chipped Mac, there's an additional step for you to do, involving rebooting into the machine's Recovery environment.</p>
 <p>To start, you will need to grant the initial permissions <a href="#h_01F3R3YB9N8TPS3JRBAMQ63076" target="_self">mentioned above</a> - so make sure to enter your password and select <strong>Ok</strong> to install the extension! </p>
-<p><span class="wysiwyg-color-orange110 wysiwyg-font-size-large"><strong>Next Steps for M1 Machines:</strong></span></p>
+<p><span class="wysiwyg-color-orange110 wysiwyg-font-size-large"><strong>Next Steps for Apple Silicon/M-Series Chipped Machines:<br></strong></span></p>
 <p><span style="font-weight: 400;">Now, we’ll need to enable system extensions for Apple-trusted developers.</span></p>
 <p><span style="font-weight: 400;">1. Apple now requires explicit user approval to install system extensions - <br></span></p>
 <p id="docs-internal-guid-9fca2128-7fff-be05-d85d-d4fc97d68e4e">so you'll need to head into your Mac<strong> System Preferences </strong>and select <strong>Security &amp; Privacy</strong>.</p>
@@ -94,5 +95,5 @@ spctl kext-consent add 7266XEXAPM
 spctl kext-consent enable</pre>
 <p>3. After entering those commands, restart your Mac. Launch Discord again, and you'll be able to proceed through the installation.</p>
 <p>Once ACE is properly authorized and installed, you’ll be all set for the future: future updates to the component can be installed, or it can be uninstalled and even reinstalled, without requiring any further system-level authorization.</p>
-<h1>Need More Support? </h1>
+<h1 id="h_01H9TTWYH7S9FBR0JF1B210SBW">Need More Support? </h1>
 <p>If you've attempted the setup steps above and still have trouble sharing sound with your streams, please reach out to our team over at <a class="ql-link" href="https://dis.gd/contact" target="_blank" rel="noopener noreferrer" data-slab-linktype="text">https://dis.gd/contact</a>.</p>
