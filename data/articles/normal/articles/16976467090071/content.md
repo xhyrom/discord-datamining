@@ -11,29 +11,29 @@
 <p><strong>Subscription:</strong> After the 1 month free trial period, your Nitro subscription will convert to a monthly recurring subscription, and Discord will bill your payment method for per month until you cancel it. You can cancel at any time in your Discord User Settings. </p>
 <h2 id="h_01H9TQTZ9D79VH0P2SY2XTQ3P8"><strong>What this article covers: </strong></h2>
 <ul>
-    <li><a href="#h_01H9TQTZ9D3NXDJJ373E572P98">What is Discord Nitro?</a></li>
-    <li><a href="#h_01H9TQTZ9DWAKQWNDF35NWDVA7">What is Synced?</a></li>
-    <li><a href="#h_01H9TQTZ9DFGH8VSPCREW7F5Q1">How do I claim the Nitro Promo from Synced?  </a></li>
+    <li><a href="https://support.discord.com/hc/en-us/articles/16976467090071#h_01H9TQTZ9D3NXDJJ373E572P98">What is Discord Nitro?</a></li>
+    <li><a href="https://support.discord.com/hc/en-us/articles/16976467090071#h_01H9TQTZ9DWAKQWNDF35NWDVA7">What is Synced?</a></li>
+    <li><a href="https://support.discord.com/hc/en-us/articles/16976467090071#h_01H9TQTZ9DFGH8VSPCREW7F5Q1">How do I claim the Nitro Promo from Synced?  </a></li>
     <li>
-        <a href="#h_01H9TQZ1PEYKS5Q09Z4DFHCYRN">How do I redeem the Nitro Trial on my Discord Account? </a>
+        <a href="https://support.discord.com/hc/en-us/articles/16976467090071#h_01H9TQZ1PEYKS5Q09Z4DFHCYRN">How do I redeem the Nitro Trial on my Discord Account? </a>
         <ul>
-            <li><a href="#h_01H9TQZ1PEV0WDAPX2AS01G6AE">Eligibility for Redeeming the Nitro Trial</a></li>
+            <li><a href="https://support.discord.com/hc/en-us/articles/16976467090071#h_01H9TQZ1PEV0WDAPX2AS01G6AE">Eligibility for Redeeming the Nitro Trial</a></li>
             <li>
-                <a href="#h_01H9TQZ1PFH38XDXZYZ8VQS62N">Step by Step Redeem Instructions</a>
+                <a href="https://support.discord.com/hc/en-us/articles/16976467090071#h_01H9TQZ1PFH38XDXZYZ8VQS62N">Step by Step Redeem Instructions</a>
                 <ul>
-                    <li><a href="#h_01H9TR0SB2G8HY6X06DEG55YYT">What if I am an Active Nitro Basic, Nitro Classic, or Server Boosting Subscriber? </a></li>
+                    <li><a href="https://support.discord.com/hc/en-us/articles/16976467090071#h_01H9TR0SB2G8HY6X06DEG55YYT">What if I am an Active Nitro Basic, Nitro Classic, or Server Boosting Subscriber? </a></li>
                 </ul>
             </li>
         </ul>
     </li>
-    <li><a href="#h_01H9TR0SB2AQFQ64Z3K32SSP2Y">How do I share my Code with a Friend?</a></li>
+    <li><a href="https://support.discord.com/hc/en-us/articles/16976467090071#h_01H9TR0SB2AQFQ64Z3K32SSP2Y">How do I share my Code with a Friend?</a></li>
     <li>
-        <a href="#h_01H9TR0SB24BYJRFSTJTAESX8S">Frequently Asked Questions</a>
+        <a href="https://support.discord.com/hc/en-us/articles/16976467090071#h_01H9TR0SB24BYJRFSTJTAESX8S">Frequently Asked Questions</a>
         <ul>
-            <li><a href="#h_01H9TR0SB2NY46RMQHS1MDBJ6W">Promotion Details</a></li>
-            <li><a href="#h_01H9TR0SB2PGMY5V7Z8V9QAJ8N">Eligibility for the Promotion</a></li>
-            <li><a href="#h_01H9TR0SB2ZV1TMXBER2CWMAY2">Payment Info and Subscription Questions</a></li>
-            <li><a href="#h_01H9TR0SB2QWAAKC4WHDTMXZC4">Potential Errors and Other Issues</a></li>
+            <li><a href="https://support.discord.com/hc/en-us/articles/16976467090071#h_01H9TR0SB2NY46RMQHS1MDBJ6W">Promotion Details</a></li>
+            <li><a href="https://support.discord.com/hc/en-us/articles/16976467090071#h_01H9TR0SB2PGMY5V7Z8V9QAJ8N">Eligibility for the Promotion</a></li>
+            <li><a href="https://support.discord.com/hc/en-us/articles/16976467090071#h_01H9TR0SB2ZV1TMXBER2CWMAY2">Payment Info and Subscription Questions</a></li>
+            <li><a href="https://support.discord.com/hc/en-us/articles/16976467090071#h_01H9TR0SB2QWAAKC4WHDTMXZC4">Potential Errors and Other Issues</a></li>
         </ul>
     </li>
 </ul>
@@ -56,7 +56,7 @@
 <p>1. To get started, create an account or log into your existing account in the Synced app on your PC.</p>
 <p>2. Play Synced up until you have completed the tutorial and created a character in order to receive your Nitro offer.</p>
 <p>3. Once the offer appears, select "Get It Now" or "Claim Nitro Offer" and follow the steps to receive your promotional Nitro link!</p>
-<p class="wysiwyg-text-align-center"><img src="https://support.discord.com/hc/article_attachments/17377189091863" alt="fd99e4f3-3813-4b0f-a527-ebf1e0701173.png" width="378" height="610"></p>
+<p class="wysiwyg-text-align-center"><img src="https://support.discord.com/hc/article_attachments/17377189091863" alt="fd99e4f3-3813-4b0f-a527-ebf1e0701173.png" width="456" height="736"></p>
 <p id="docs-internal-guid-74f95b7e-7fff-6228-ed33-b645082d69df">After these steps, please proceed into the following section on redeeming the Nitro trial on your Discord account.</p>
 <h1 id="h_01H9TQZ1PEYKS5Q09Z4DFHCYRN"><strong>How do I redeem the Nitro Trial on my Discord Account?</strong></h1>
 <p>Once you have claimed the promo link, you'll now need to officially redeem this promo link on your Discord account (or share this code with a friend). You must redeem this Nitro trial by <strong>October 6th, 2023 (5pm PST) .</strong></p>
@@ -117,8 +117,9 @@
     <li>If your Discord account does not have your payment information, you'll be asked to fill out your payment details. (Note: You will not be charged until the free trial ends and the subscription renews)</li>
     <li>When you've filled out all the necessary information and you're ready to redeem this promotion, press the "<strong>Accept Gift</strong>" button. </li>
 </ul>
-<h3 id="h_01H9TR0SB2AV8CYQGVGZXBWZX2"><span style="color: #434343;" data-darkreader-inline-color="">Note:</span></h3>
-<h3 id="h_01H9TR0SB2AQYYHP6T90Q4EPRQ"><span style="color: #434343;" data-darkreader-inline-color="">- If you're logged into the incorrect Discord account, press the "Wrong account" button to login to the other account.</span></h3>
+<h3 id="h_01H9TR0SB2AV8CYQGVGZXBWZX2">
+    <span style="color: #434343;" data-darkreader-inline-color="">Note:<br></span><span style="color: #434343;" data-darkreader-inline-color="">- If you're logged into the incorrect Discord account, press the "Wrong account" button to login to the other account.</span>
+</h3>
 <p><strong>Step 4 - Subscription Now Activated</strong></p>
 <ul>
     <li>After accepting the promo to your account, you'll now be automatically redirected to your <strong>Subscriptions</strong> tab in your User Settings to see your newly activated Nitro subscription on your account.</li>
@@ -136,11 +137,11 @@
 <h1 id="h_01H9TR0SB24BYJRFSTJTAESX8S"><strong>Frequently Asked Questions</strong></h1>
 <p>We know there's a lot of information to unpack on this promotion above, so we've also broken down this information in this FAQ section as well too.</p>
 <ul>
-    <li><a href="#h_01H9TR0SB2NY46RMQHS1MDBJ6W">Promotion Details</a></li>
-    <li><a href="#h_01H9TR0SB2PGMY5V7Z8V9QAJ8N">Eligibility for the Promotion</a></li>
-    <li><a href="#h_01H9TR0SB2ZV1TMXBER2CWMAY2">Payment Info and Subscription Questions</a></li>
+    <li><a href="https://support.discord.com/hc/en-us/articles/16976467090071#h_01H9TR0SB2NY46RMQHS1MDBJ6W">Promotion Details</a></li>
+    <li><a href="https://support.discord.com/hc/en-us/articles/16976467090071#h_01H9TR0SB2PGMY5V7Z8V9QAJ8N">Eligibility for the Promotion</a></li>
+    <li><a href="https://support.discord.com/hc/en-us/articles/16976467090071#h_01H9TR0SB2ZV1TMXBER2CWMAY2">Payment Info and Subscription Questions</a></li>
     <li>
-        <a href="#h_01H9TR0SB2QWAAKC4WHDTMXZC4">Potential Errors and Other Issues</a>
+        <a href="https://support.discord.com/hc/en-us/articles/16976467090071#h_01H9TR0SB2QWAAKC4WHDTMXZC4">Potential Errors and Other Issues</a>
         <ul>
             <li>Already Had/Have Nitro</li>
             <li>Already Redeemed</li>
@@ -166,8 +167,9 @@
 <p><strong>Q: What if I'm a current or previous Nitro Basic, Nitro Classic, or a Server Boost subscriber? Can I also take part in this promotion? </strong></p>
 <p>A: If you previously had a Discord Nitro subscription at any point on your accounts and have had a Nitro Classic or Nitro Basic subscription in the past 12 months, you are ineligible to redeem this promotion.</p>
 <p>If you have had a Nitro Basic, Nitro Classic, or Server Boosting subscription active on your account and you’ve never had a Nitro subscription,  you will be able to redeem this promotion and replace it with the 1 month Nitro subscription.</p>
-<h3 id="h_01H9TR0SB298MFAGSM65Y0P2CY"><span style="color: #434343;" data-darkreader-inline-color="">HOWEVER, please note:</span></h3>
-<h3 id="h_01H9TR0SB2FN0BC44VDFWFSTHC"><span style="color: #434343;" data-darkreader-inline-color="">- By choosing to activate this 1 month trial, you will lose any features associated with your current subscriptions, and **you will not receive a refund for any remaining value on your current subscription**.</span></h3>
+<h3 id="h_01H9TR0SB298MFAGSM65Y0P2CY">
+    <span style="color: #434343;" data-darkreader-inline-color="">HOWEVER, please note:<br></span><span style="color: #434343;" data-darkreader-inline-color="">- By choosing to activate this 1 month trial, you will lose any features associated with your current subscriptions, and **you will not receive a refund for any remaining value on your current subscription**.</span>
+</h3>
 <p>At the end of the promotion period, you'll be converted to a paying Nitro subscription per month unless you cancel your subscription.</p>
 <h2 id="h_01H9TR0SB2ZV1TMXBER2CWMAY2"><strong>Payment Info and Subscription Questions</strong></h2>
 <p><strong>Q: Why do I need to submit my payment info to redeem Nitro?</strong></p>
