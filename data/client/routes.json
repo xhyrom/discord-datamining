@@ -4421,6 +4421,9 @@
   },
   "SEND_GAMING_STATS": {
     "url": "/:param/gaming-stats",
-    "allowed_methods": null
+    "allowed_methods": [
+      "OPTIONS",
+      "POST"
+    ]
   }
 }
