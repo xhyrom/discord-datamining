@@ -10700,7 +10700,7 @@
   "CONTACT_SYNC_NEEDS_PERMISSIONS": "\"To help you find your friends Discord, we’ll need permission to access your contacts.\"",
   "CONTACT_SYNC_NEEDS_PERMISSIONS_ANDROID": "\"To help you find your friends Discord, we’ll need permission to access your contacts. Go to settings, then permissions, then turn contacts on.\"",
   "CONTACT_SYNC_ENTER_NAME_TITLE": "\"Enter your name\"",
-  "CONTACT_SYNC_ENTER_NAME_SUBTITLE": "\"Your name is used for friend requests and suggestions to people you have in your contact book.\"",
+  "CONTACT_SYNC_ENTER_NAME_SUBTITLE": "\"Your name is used for friend requests, suggestions to your contacts and connecting with people you may know.\"",
   "CONTACT_SYNC_ENTER_NAME_INPUT_HEADER": "\"Your name\"",
   "CONTACT_SYNC_UPDATE_NAME_TITLE": "\"Update your name\"",
   "CONTACT_SYNC_UPDATE_NAME_SUBTITLE": "\"Your name is only used when you send friend requests to people you have in your contact book.\"",
