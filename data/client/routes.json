@@ -4419,6 +4419,14 @@
       "POST"
     ]
   },
+  "EXPLICIT_MEDIA_REPORT_FALSE_POSITIVE": {
+    "url": "/attachments/report-false-positive",
+    "allowed_methods": [
+      "DELETE",
+      "OPTIONS",
+      "POST"
+    ]
+  },
   "SEND_GAMING_STATS": {
     "url": "/:param/gaming-stats",
     "allowed_methods": [
