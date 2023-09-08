@@ -11,7 +11,7 @@
   *  but WITHOUT ANY WARRANTY; without even the implied warranty of
   *  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
   *  GNU General Public License for more details.
- 
+
   *  You should have received a copy of the GNU General Public License
   *  along with this program.  If not, see <https://www.gnu.org/licenses/>.
   * **/
@@ -30,21 +30,21 @@ export class WumpusCentralSender implements Sender {
     const embeds = [];
 
     for (const exp of diff.addedExperiments) {
-      embeds.push(this.buildEmbed(exp).setColor(0x58ff80).toJSON());
+      embeds.push(this.buildEmbed(exp, result?.update?.hash.to).setColor(0x58ff80).toJSON());
       if (exp.rollout?.overrides)
         embeds.push(
-          this.buildOverridesEmbed(exp, {}, exp.rollout.overrides)
+          this.buildOverridesEmbed(exp, {}, exp.rollout.overrides, result?.update?.hash.to)
             .setColor(0x58ff80)
             .toJSON()
         );
     }
 
     for (const exp of diff.removedExperiments) {
-      embeds.push(this.buildEmbed(exp).setColor(0xff6565).toJSON());
+      embeds.push(this.buildEmbed(exp, result?.update?.hash.to).setColor(0xff6565).toJSON());
     }
 
     for (const exp of diff.updatedExperiments) {
-      embeds.push(this.buildEmbed(exp.after).setColor(0xfff673).toJSON());
+      embeds.push(this.buildEmbed(exp.after, result?.update?.hash.to).setColor(0xfff673).toJSON());
       if (
         !deepEqual(
           exp.after.rollout?.overrides ?? {},
@@ -55,7 +55,8 @@ export class WumpusCentralSender implements Sender {
           this.buildOverridesEmbed(
             exp.after,
             exp.before.rollout?.overrides ?? {},
-            exp.after.rollout?.overrides ?? {}
+            exp.after.rollout?.overrides ?? {},
+              result?.update?.hash.to
           )
             .setColor(0xfff673)
             .toJSON()
@@ -63,7 +64,7 @@ export class WumpusCentralSender implements Sender {
     }
 
     for (const exp of diff.firstRolloutBeganExperiments) {
-      embeds.push(this.buildEmbed(exp).setColor(0x6571ff).toJSON());
+      embeds.push(this.buildEmbed(exp, result?.update?.hash.to).setColor(0x6571ff).toJSON());
     }
 
     const embedsPerTen = chunk(embeds, 10);
@@ -90,7 +91,7 @@ export class WumpusCentralSender implements Sender {
     }
   }
 
-  private buildEmbed(exp: Experiment): EmbedBuilder {
+  private buildEmbed(exp: Experiment, commitHash: string | undefined): EmbedBuilder {
     let description = "";
 
     for (const population of [
@@ -151,7 +152,7 @@ export class WumpusCentralSender implements Sender {
 
     const embed = new EmbedBuilder()
       .setTitle(this.experimentName(exp))
-      .setURL("https://discord.gg/QgEbfFa9XA")
+      .setURL(commitHash ? `https://github.com/xHyroM/discord-datamining/commit/${commitHash}` : 'https://discord.gg/QgEbfFa9XA')
       .addFields(fields)
       .setFooter({
         text: "src: discord.gg/datamining @ xHyroM/discord-datamining",
@@ -165,7 +166,8 @@ export class WumpusCentralSender implements Sender {
   private buildOverridesEmbed(
     exp: Experiment,
     oldOverrides: Record<string, string[]>,
-    overrides: Record<string, string[]>
+    overrides: Record<string, string[]>,
+    commitHash: string | undefined
   ): EmbedBuilder {
     const added = Object.fromEntries(
       Object.entries(overrides).map(([key, value]) => [
@@ -206,7 +208,7 @@ export class WumpusCentralSender implements Sender {
 
     return new EmbedBuilder()
       .setTitle(this.experimentName(exp))
-      .setURL("https://discord.gg/QgEbfFa9XA")
+      .setURL(commitHash ? `https://github.com/xHyroM/discord-datamining/commit/${commitHash}` : 'https://discord.gg/QgEbfFa9XA')
       .setDescription(descripton)
       .setFooter({
         text: "src: discord.gg/datamining @ xHyroM/discord-datamining",
