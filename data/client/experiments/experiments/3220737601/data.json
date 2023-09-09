@@ -1,0 +1,21 @@
+{
+  "data": {
+    "kind": "user",
+    "id": "2023-08_explicit_media_redaction",
+    "label": "Explicit Media Redaction",
+    "description": [
+      "Not Eligible",
+      "Control Bucket",
+      "Treatment 1: Enable explicit media redaction"
+    ],
+    "hash": 3220737601,
+    "buckets": [
+      -1,
+      0,
+      1
+    ],
+    "config_keys": [
+      "enabled"
+    ]
+  }
+}
