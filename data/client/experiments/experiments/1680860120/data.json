@@ -1,0 +1,21 @@
+{
+  "data": {
+    "kind": "user",
+    "id": "2023-09_show_server_sub_in_server_shop",
+    "label": "Show server sub in server shop",
+    "description": [
+      "Not Eligible",
+      "Control Bucket",
+      "Treatment 1: Enables showing server sub in server shop"
+    ],
+    "hash": 1680860120,
+    "buckets": [
+      -1,
+      0,
+      1
+    ],
+    "config_keys": [
+      "enabled"
+    ]
+  }
+}
