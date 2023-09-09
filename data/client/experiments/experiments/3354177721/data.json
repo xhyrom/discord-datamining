@@ -1,14 +1,14 @@
 {
   "data": {
     "kind": "user",
-    "id": "2023-09_decoupled_game_clipping",
-    "label": "Test decoupled game clipping",
+    "id": "2021-04_impression_logging",
+    "label": "Standard Analytics: Log Impressions",
     "description": [
       "Not Eligible",
       "Control Bucket",
-      "Treatment 1: Decoupled Game Clipping"
+      "Treatment 1: Log impressions"
     ],
-    "hash": 1366927696,
+    "hash": 3354177721,
     "buckets": [
       -1,
       0,

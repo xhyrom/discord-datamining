@@ -1356,27 +1356,6 @@
   {
     "data": {
       "kind": "user",
-      "id": "2023-09_decoupled_game_clipping",
-      "label": "Test decoupled game clipping",
-      "description": [
-        "Not Eligible",
-        "Control Bucket",
-        "Treatment 1: Decoupled Game Clipping"
-      ],
-      "hash": 1366927696,
-      "buckets": [
-        -1,
-        0,
-        1
-      ],
-      "config_keys": [
-        "enabled"
-      ]
-    }
-  },
-  {
-    "data": {
-      "kind": "user",
       "id": "2023-02_h265_android",
       "label": "Test how h265 works on android for DM calls",
       "description": [
@@ -2167,6 +2146,27 @@
   },
   {
     "data": {
+      "kind": "user",
+      "id": "2021-04_network_action_logging",
+      "label": "Standard Analytics: Log Network Actions",
+      "description": [
+        "Not Eligible",
+        "Control Bucket",
+        "Treatment 1: Log network actions"
+      ],
+      "hash": 3643362751,
+      "buckets": [
+        -1,
+        0,
+        1
+      ],
+      "config_keys": [
+        "enabled"
+      ]
+    }
+  },
+  {
+    "data": {
       "kind": "guild",
       "id": "2023-02_stage_boosting",
       "label": "Stage Boosting",
@@ -2803,27 +2803,6 @@
   },
   {
     "data": {
-      "kind": "user",
-      "id": "2023-09_show_server_sub_in_server_shop",
-      "label": "Show server sub in server shop",
-      "description": [
-        "Not Eligible",
-        "Control Bucket",
-        "Treatment 1: Enables showing server sub in server shop"
-      ],
-      "hash": 1680860120,
-      "buckets": [
-        -1,
-        0,
-        1
-      ],
-      "config_keys": [
-        "enabled"
-      ]
-    }
-  },
-  {
-    "data": {
       "kind": "guild",
       "id": "2021-11_member_verification_manual_approval",
       "label": "Member Verification Manual Approval",
@@ -3279,6 +3258,27 @@
         ]
       },
       "overrides_formatted": []
+    }
+  },
+  {
+    "data": {
+      "kind": "user",
+      "id": "2021-04_impression_logging",
+      "label": "Standard Analytics: Log Impressions",
+      "description": [
+        "Not Eligible",
+        "Control Bucket",
+        "Treatment 1: Log impressions"
+      ],
+      "hash": 3354177721,
+      "buckets": [
+        -1,
+        0,
+        1
+      ],
+      "config_keys": [
+        "enabled"
+      ]
     }
   },
   {
@@ -4456,48 +4456,6 @@
         ]
       },
       "overrides_formatted": []
-    }
-  },
-  {
-    "data": {
-      "kind": "user",
-      "id": "2023-08_explicit_media_redaction",
-      "label": "Explicit Media Redaction",
-      "description": [
-        "Not Eligible",
-        "Control Bucket",
-        "Treatment 1: Enable explicit media redaction"
-      ],
-      "hash": 3220737601,
-      "buckets": [
-        -1,
-        0,
-        1
-      ],
-      "config_keys": [
-        "enabled"
-      ]
-    }
-  },
-  {
-    "data": {
-      "kind": "user",
-      "id": "2023-09_soundmoji",
-      "label": "Soundmoji",
-      "description": [
-        "Not Eligible",
-        "Control Bucket",
-        "Treatment 1: Enabled"
-      ],
-      "hash": 2773988864,
-      "buckets": [
-        -1,
-        0,
-        1
-      ],
-      "config_keys": [
-        "enabled"
-      ]
     }
   },
   {
@@ -8256,29 +8214,6 @@
         -1,
         0,
         1
-      ],
-      "config_keys": [
-        "enabled"
-      ]
-    }
-  },
-  {
-    "data": {
-      "kind": "user",
-      "id": "2023-09_activity_shelf_order",
-      "label": "Activity Shelf Order",
-      "description": [
-        "Not Eligible",
-        "Control Bucket",
-        "Treatment 1: Activity Shelf Order: Most Recently Used",
-        "Treatment 2: Activity Shelf Order: Most Used"
-      ],
-      "hash": 677690720,
-      "buckets": [
-        -1,
-        0,
-        1,
-        2
       ],
       "config_keys": [
         "enabled"
