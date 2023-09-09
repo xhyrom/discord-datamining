@@ -1,14 +1,14 @@
 {
   "data": {
     "kind": "user",
-    "id": "2023-09_soundmoji",
-    "label": "Soundmoji",
+    "id": "2021-04_network_action_logging",
+    "label": "Standard Analytics: Log Network Actions",
     "description": [
       "Not Eligible",
       "Control Bucket",
-      "Treatment 1: Enabled"
+      "Treatment 1: Log network actions"
     ],
-    "hash": 2773988864,
+    "hash": 3643362751,
     "buckets": [
       -1,
       0,
