@@ -1,12 +1,4 @@
 {
-  "USER": {
-    "url": "/users/:param",
-    "allowed_methods": [
-      "GET",
-      "HEAD",
-      "OPTIONS"
-    ]
-  },
   "USER_RELATIONSHIPS": {
     "url": "/users/:param/relationships",
     "allowed_methods": [
@@ -239,10 +231,6 @@
       "PATCH",
       "PUT"
     ]
-  },
-  "GUILD_MEMBER_NICK": {
-    "url": "/guilds/:param/members/:param/nick",
-    "allowed_methods": null
   },
   "GUILD_MEMBER_AVATAR": {
     "url": "/guilds/:param/users/:param/avatars/:param.:param",
