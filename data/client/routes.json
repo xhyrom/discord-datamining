@@ -3912,6 +3912,30 @@
       "OPTIONS"
     ]
   },
+  "APPLICATION_COMMAND_INDEX_CHANNEL": {
+    "url": "/channels/:param/application-command-index",
+    "allowed_methods": [
+      "GET",
+      "HEAD",
+      "OPTIONS"
+    ]
+  },
+  "APPLICATION_COMMAND_INDEX_GUILD": {
+    "url": "/guilds/:param/application-command-index",
+    "allowed_methods": [
+      "GET",
+      "HEAD",
+      "OPTIONS"
+    ]
+  },
+  "APPLICATION_COMMAND_INDEX_USER": {
+    "url": "/users/@me/application-command-index",
+    "allowed_methods": [
+      "GET",
+      "HEAD",
+      "OPTIONS"
+    ]
+  },
   "GUILD_COMMANDS_FOR_APPLICATION": {
     "url": "/guilds/:param/application-commands/:param",
     "allowed_methods": [
