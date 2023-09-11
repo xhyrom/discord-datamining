@@ -52,8 +52,8 @@
 <p>A: If you re-subscribe within 7 days after your desktop subscription ends to a subscription within Google Play your Nitro streak will transfer over and not be lost.</p>
 <p><strong>Q: Why can't I do certain gifting actions through Google Play?</strong></p>
 <p>A: Currently, you can purchase and send gifts through Google Play. If you have a desktop subscription you will be able to redeem, apply, and send gifts through your Android app.</p>
-<h3 id="h_01HA2DNCG3A3F0VVB3EANPPF3M">
-    <span style="color: #434343;" data-darkreader-inline-color="">Note:<br></span><span style="color: #434343;" data-darkreader-inline-color="">- Currently, gifts purchased through Google Play cannot contribute towards subscriptions managed by the Google Play Store. <br></span><span style="color: #434343;" data-darkreader-inline-color="">- Redeemed gifts can still contribute towards subscriptions purchased on our desktop or browser apps.</span>
+<h3 id="h_01HA2EPVX1VG6JP5PG1KDEBB89">
+    <span style="color: #434343;" data-darkreader-inline-color="">Note:<br></span><span style="color: #434343;" data-darkreader-inline-color="">- Currently, gifts purchased through Google Play cannot contribute towards subscriptions managed by the Google Play Store. <br></span><span style="color: #434343;" data-darkreader-inline-color="">- Redeemed gifts can still contribute towards subscriptions purchased on our desktop or browser apps.</span>
 </h3>
 <p>If you're on the Android app, and you already have a Google Play subscription and you redeem a gift purchased through the Google Play store, your redeemed Nitro gift will not contribute towards that subscription and it will become Account Credit that can be used for a subscription on our desktop or browser app!</p>
 <p>If you're on the Android app, and you have no active subscription when you redeem a gift purchased through the Google Play store, you will begin a subscription that can be managed on the desktop or browser app! </p>
