@@ -23587,19 +23587,19 @@ html.disable-forced-colors * {
     --dontuse-0: hsl(var(--dontuse-0-hsl)/1);
     --dontuse-0-hsl: 240 calc(var(--saturation-factor, 1)*9.1%) 97.8%;
     --dontuse-1: hsl(var(--dontuse-1-hsl)/1);
-    --dontuse-1-hsl: 220 calc(var(--saturation-factor, 1)*13%) 95.5%;
+    --dontuse-1-hsl: 240 calc(var(--saturation-factor, 1)*4.3%) 95.5%;
     --dontuse-10: hsl(var(--dontuse-10-hsl)/1);
-    --dontuse-10-hsl: 233 calc(var(--saturation-factor, 1)*11.9%) 55.5%;
+    --dontuse-10-hsl: 236 calc(var(--saturation-factor, 1)*6.4%) 53.9%;
     --dontuse-11: hsl(var(--dontuse-11-hsl)/1);
-    --dontuse-11-hsl: 234 calc(var(--saturation-factor, 1)*11.6%) 47.5%;
+    --dontuse-11-hsl: 233 calc(var(--saturation-factor, 1)*7.2%) 46.1%;
     --dontuse-12: hsl(var(--dontuse-12-hsl)/1);
-    --dontuse-12-hsl: 236 calc(var(--saturation-factor, 1)*12.9%) 41%;
+    --dontuse-12-hsl: 237 calc(var(--saturation-factor, 1)*8.9%) 39.6%;
     --dontuse-13: hsl(var(--dontuse-13-hsl)/1);
-    --dontuse-13-hsl: 235 calc(var(--saturation-factor, 1)*13%) 34.7%;
+    --dontuse-13-hsl: 236 calc(var(--saturation-factor, 1)*9.8%) 33.9%;
     --dontuse-14: hsl(var(--dontuse-14-hsl)/1);
-    --dontuse-14-hsl: 237 calc(var(--saturation-factor, 1)*12.8%) 29.2%;
+    --dontuse-14-hsl: 236 calc(var(--saturation-factor, 1)*11.6%) 28.8%;
     --dontuse-15: hsl(var(--dontuse-15-hsl)/1);
-    --dontuse-15-hsl: 236 calc(var(--saturation-factor, 1)*13.2%) 25.3%;
+    --dontuse-15-hsl: 236 calc(var(--saturation-factor, 1)*12.5%) 25.1%;
     --dontuse-16: hsl(var(--dontuse-16-hsl)/1);
     --dontuse-16-hsl: 236 calc(var(--saturation-factor, 1)*12.5%) 22%;
     --dontuse-17: hsl(var(--dontuse-17-hsl)/1);
@@ -23609,7 +23609,7 @@ html.disable-forced-colors * {
     --dontuse-19: hsl(var(--dontuse-19-hsl)/1);
     --dontuse-19-hsl: 234 calc(var(--saturation-factor, 1)*13.2%) 14.9%;
     --dontuse-2: hsl(var(--dontuse-2-hsl)/1);
-    --dontuse-2-hsl: 225 calc(var(--saturation-factor, 1)*11.8%) 93.3%;
+    --dontuse-2-hsl: 220 calc(var(--saturation-factor, 1)*8.6%) 93.1%;
     --dontuse-20: hsl(var(--dontuse-20-hsl)/1);
     --dontuse-20-hsl: 234 calc(var(--saturation-factor, 1)*15.2%) 12.9%;
     --dontuse-21: hsl(var(--dontuse-21-hsl)/1);
@@ -23625,19 +23625,19 @@ html.disable-forced-colors * {
     --dontuse-26: hsl(var(--dontuse-26-hsl)/1);
     --dontuse-26-hsl: 240 calc(var(--saturation-factor, 1)*15.8%) 3.7%;
     --dontuse-3: hsl(var(--dontuse-3-hsl)/1);
-    --dontuse-3-hsl: 230 calc(var(--saturation-factor, 1)*12.5%) 90.6%;
+    --dontuse-3-hsl: 225 calc(var(--saturation-factor, 1)*8%) 90.2%;
     --dontuse-4: hsl(var(--dontuse-4-hsl)/1);
-    --dontuse-4-hsl: 225 calc(var(--saturation-factor, 1)*12.9%) 87.8%;
+    --dontuse-4-hsl: 225 calc(var(--saturation-factor, 1)*6.2%) 87.5%;
     --dontuse-5: hsl(var(--dontuse-5-hsl)/1);
-    --dontuse-5-hsl: 227 calc(var(--saturation-factor, 1)*11.4%) 84.5%;
+    --dontuse-5-hsl: 220 calc(var(--saturation-factor, 1)*7.3%) 83.9%;
     --dontuse-6: hsl(var(--dontuse-6-hsl)/1);
-    --dontuse-6-hsl: 231 calc(var(--saturation-factor, 1)*12.9%) 80.2%;
+    --dontuse-6-hsl: 231 calc(var(--saturation-factor, 1)*6.7%) 79.4%;
     --dontuse-7: hsl(var(--dontuse-7-hsl)/1);
-    --dontuse-7-hsl: 229 calc(var(--saturation-factor, 1)*13.2%) 74.7%;
+    --dontuse-7-hsl: 227 calc(var(--saturation-factor, 1)*6.8%) 73.9%;
     --dontuse-8: hsl(var(--dontuse-8-hsl)/1);
-    --dontuse-8-hsl: 227 calc(var(--saturation-factor, 1)*14.6%) 69.2%;
+    --dontuse-8-hsl: 230 calc(var(--saturation-factor, 1)*7.4%) 68.2%;
     --dontuse-9: hsl(var(--dontuse-9-hsl)/1);
-    --dontuse-9-hsl: 228 calc(var(--saturation-factor, 1)*13.5%) 62.4%;
+    --dontuse-9-hsl: 231 calc(var(--saturation-factor, 1)*7.1%) 61.2%;
     --ebay: hsl(var(--ebay-hsl)/1);
     --ebay-hsl: 211 calc(var(--saturation-factor, 1)*100%) 41.2%;
     --epic-games: hsl(var(--epic-games-hsl)/1);
@@ -24869,7 +24869,7 @@ html.disable-forced-colors * {
     --redesign-channel-message-preview-text: var(--dontuse-10);
     --redesign-channel-name-muted-text: var(--dontuse-10);
     --redesign-channel-name-text: var(--dontuse-2);
-    --redesign-chat-input-background: var(--dontuse-22);
+    --redesign-chat-input-background: hsl(var(--dontuse-16-hsl)/0.455);
     --redesign-input-control-active-bg: var(--dontuse-17);
     --redesign-input-control-selected: var(--brand-500);
     --redesign-only-background-active: var(--dontuse-17);
@@ -167568,4 +167568,4 @@ html .invoiceCancelRow-dVOR64 {
     margin-bottom: 16px
 }
 
-/*# sourceMappingURL=40532.f89a21ec83de2c9b868b.css.map*/
+/*# sourceMappingURL=40532.e782578b92120ce319db.css.map*/
