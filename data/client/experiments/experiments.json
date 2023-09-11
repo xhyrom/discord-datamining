@@ -9402,6 +9402,27 @@
   {
     "data": {
       "kind": "guild",
+      "id": "2023-09_gaming_stats_prompt_guild",
+      "label": "Gaming stats prompt",
+      "description": [
+        "Not Eligible",
+        "Control Bucket",
+        "Treatment 1: ability to trigger gaming stats prompt"
+      ],
+      "hash": 2478854553,
+      "buckets": [
+        -1,
+        0,
+        1
+      ],
+      "config_keys": [
+        "enabled"
+      ]
+    }
+  },
+  {
+    "data": {
+      "kind": "guild",
       "id": "2023-08_deadchat_simple_prompt_guild",
       "label": "Simple deadchat prompt",
       "description": [
