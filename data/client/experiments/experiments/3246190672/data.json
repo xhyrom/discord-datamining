@@ -1,0 +1,24 @@
+{
+  "data": {
+    "kind": "user",
+    "id": "2023-08_new_app_command_serving",
+    "label": "New Application Command Serving",
+    "description": [
+      "Not Eligible",
+      "Control Bucket",
+      "Treatment 1: Enabled",
+      "Treatment 2: Enabled + New Logic"
+    ],
+    "hash": 3246190672,
+    "buckets": [
+      -1,
+      0,
+      1,
+      2
+    ],
+    "config_keys": [
+      "enabled",
+      "newSearchLogic"
+    ]
+  }
+}

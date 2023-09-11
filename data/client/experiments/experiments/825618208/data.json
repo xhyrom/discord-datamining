@@ -1,0 +1,21 @@
+{
+  "data": {
+    "kind": "user",
+    "id": "2023-08_user_apps",
+    "label": "Allow user app commands",
+    "description": [
+      "Not Eligible",
+      "Control Bucket",
+      "Treatment 1: Allow user app commands"
+    ],
+    "hash": 825618208,
+    "buckets": [
+      -1,
+      0,
+      1
+    ],
+    "config_keys": [
+      "enabled"
+    ]
+  }
+}
