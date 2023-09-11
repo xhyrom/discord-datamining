@@ -20529,6 +20529,9 @@ html.disable-forced-colors * {
 }
 
 .effect-23JFo_ {
+    top: 0;
+    left: 0;
+    z-index: 100;
     width: 100%;
     position: absolute
 }
@@ -167568,4 +167571,4 @@ html .invoiceCancelRow-dVOR64 {
     margin-bottom: 16px
 }
 
-/*# sourceMappingURL=40532.e782578b92120ce319db.css.map*/
+/*# sourceMappingURL=40532.b8efc514c10886c5308e.css.map*/
