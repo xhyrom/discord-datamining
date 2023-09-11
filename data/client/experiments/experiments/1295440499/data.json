@@ -1,0 +1,21 @@
+{
+  "data": {
+    "kind": "user",
+    "id": "2023-08_activities_in_text",
+    "label": "Activities in Text",
+    "description": [
+      "Not Eligible",
+      "Control Bucket",
+      "Treatment 1: enable Activities in text channels"
+    ],
+    "hash": 1295440499,
+    "buckets": [
+      -1,
+      0,
+      1
+    ],
+    "config_keys": [
+      "enabled"
+    ]
+  }
+}
