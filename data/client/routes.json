@@ -4402,8 +4402,12 @@
     ]
   },
   "SAFETY_HUB": {
-    "url": "/safety-hub",
-    "allowed_methods": null
+    "url": "/safety-hub/@me",
+    "allowed_methods": [
+      "GET",
+      "HEAD",
+      "OPTIONS"
+    ]
   },
   "INITIATE_CHANNEL_PROMPTS": {
     "url": "/initiate-prompts",
