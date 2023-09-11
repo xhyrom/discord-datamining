@@ -4461,5 +4461,12 @@
       "OPTIONS",
       "POST"
     ]
+  },
+  "BULK_GUILD_BAN": {
+    "url": "/guilds/:param/bulk-ban",
+    "allowed_methods": [
+      "OPTIONS",
+      "POST"
+    ]
   }
 }
