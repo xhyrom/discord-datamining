@@ -2797,8 +2797,8 @@ html.decorate-links .lowSaturationUnderline-Z6CW6z {
 
 .theme-dark .rootWithShadow-2hdL2J,
 .theme-light .rootWithShadow-2hdL2J {
-    -webkit-box-shadow: var(--elevation-border), var(--elevation-high);
-    box-shadow: var(--elevation-border), var(--elevation-high)
+    -webkit-box-shadow: var(--legacy-elevation-border), var(--legacy-elevation-high);
+    box-shadow: var(--legacy-elevation-border), var(--legacy-elevation-high)
 }
 
 .footer-IubaaS,
@@ -5807,8 +5807,8 @@ html.decorate-links .lowSaturationUnderline-Z6CW6z {
 }
 
 .calendarContainer-jO0qHS {
-    -webkit-box-shadow: var(--elevation-border), var(--elevation-high);
-    box-shadow: var(--elevation-border), var(--elevation-high)
+    -webkit-box-shadow: var(--legacy-elevation-border), var(--legacy-elevation-high);
+    box-shadow: var(--legacy-elevation-border), var(--legacy-elevation-high)
 }
 
 .container-24ibm1 {
@@ -11667,8 +11667,8 @@ html.decorate-links .lowSaturationUnderline-Z6CW6z {
 }
 
 .card-3ie2dy.withCardHover-2_gBIK:hover {
-    -webkit-box-shadow: var(--elevation-high);
-    box-shadow: var(--elevation-high)
+    -webkit-box-shadow: var(--legacy-elevation-high);
+    box-shadow: var(--legacy-elevation-high)
 }
 
 .wumpusImageContainer-ZGD_8q {
@@ -20226,8 +20226,8 @@ html.disable-forced-colors * {
 .theme-dark .overflowRolesPopout-1Puiuq,
 .theme-dark .overflowRolesPopoutArrow-2R7g3K {
     background-color: var(--primary-600);
-    -webkit-box-shadow: var(--elevation-high), var(--elevation-border);
-    box-shadow: var(--elevation-high), var(--elevation-border)
+    -webkit-box-shadow: var(--legacy-elevation-high), var(--legacy-elevation-border);
+    box-shadow: var(--legacy-elevation-high), var(--legacy-elevation-border)
 }
 
 .theme-light .overflowRolesPopout-1Puiuq {
@@ -20237,8 +20237,8 @@ html.disable-forced-colors * {
 .theme-light .overflowRolesPopout-1Puiuq,
 .theme-light .overflowRolesPopoutArrow-2R7g3K {
     background-color: var(--white-500);
-    -webkit-box-shadow: var(--elevation-high), var(--elevation-border);
-    box-shadow: var(--elevation-high), var(--elevation-border)
+    -webkit-box-shadow: var(--legacy-elevation-high), var(--legacy-elevation-border);
+    box-shadow: var(--legacy-elevation-high), var(--legacy-elevation-border)
 }
 
 .roleIcon-29epUq {
@@ -21466,8 +21466,8 @@ html.disable-forced-colors * {
 
 .theme-dark .uploadModal-2ie9O_ {
     background-color: var(--primary-600);
-    -webkit-box-shadow: var(--elevation-border), var(--elevation-high);
-    box-shadow: var(--elevation-border), var(--elevation-high)
+    -webkit-box-shadow: var(--legacy-elevation-border), var(--legacy-elevation-high);
+    box-shadow: var(--legacy-elevation-border), var(--legacy-elevation-high)
 }
 
 .theme-dark .footer-VCsJQY {
@@ -21478,8 +21478,8 @@ html.disable-forced-colors * {
 
 .theme-light .uploadModal-2ie9O_ {
     background: var(--white-500);
-    -webkit-box-shadow: var(--elevation-border), var(--elevation-high);
-    box-shadow: var(--elevation-border), var(--elevation-high)
+    -webkit-box-shadow: var(--legacy-elevation-border), var(--legacy-elevation-high);
+    box-shadow: var(--legacy-elevation-border), var(--legacy-elevation-high)
 }
 
 .theme-light .footer-VCsJQY {
@@ -22294,8 +22294,8 @@ html.disable-forced-colors * {
 }
 
 .theme-light .video-eAcneW.noChat-3QkBOE .videoBackgroundTransition-Pn9nCS {
-    -webkit-box-shadow: var(--elevation-high);
-    box-shadow: var(--elevation-high)
+    -webkit-box-shadow: var(--legacy-elevation-high);
+    box-shadow: var(--legacy-elevation-high)
 }
 
 .theme-light .video-eAcneW.noChat-3QkBOE .videoTop-18vrXm,
@@ -22305,8 +22305,8 @@ html.disable-forced-colors * {
 }
 
 .theme-dark .video-eAcneW.noChat-3QkBOE .videoBackgroundTransition-Pn9nCS {
-    -webkit-box-shadow: var(--elevation-high);
-    box-shadow: var(--elevation-high)
+    -webkit-box-shadow: var(--legacy-elevation-high);
+    box-shadow: var(--legacy-elevation-high)
 }
 
 .theme-dark .video-eAcneW.noChat-3QkBOE .videoTop-18vrXm,
@@ -23093,35 +23093,59 @@ html.disable-forced-colors * {
 }
 
 :root {
-    --elevation-low: 0 1px 5px hsl(var(--black-500-hsl)/0.2);
-    --elevation-high: 0 2px 10px 0 hsl(var(--black-500-hsl)/0.1);
-    --elevation-border: 0 0 0 1px hsl(var(--primary-300-hsl)/0.3)
+    --legacy-elevation-low: 0 1px 5px hsl(var(--black-500-hsl)/0.2);
+    --legacy-elevation-high: 0 2px 10px 0 hsl(var(--black-500-hsl)/0.1);
+    --legacy-elevation-border: 0 0 0 1px hsl(var(--primary-300-hsl)/0.3)
 }
 
 .theme-dark {
-    --elevation-low: 0 1px 5px 0 hsl(var(--black-500-hsl)/0.3);
-    --elevation-high: 0 2px 10px 0 hsl(var(--black-500-hsl)/0.2);
-    --elevation-border: 0 0 0 1px hsl(var(--primary-700-hsl)/0.6)
+    --legacy-elevation-low: 0 1px 5px 0 hsl(var(--black-500-hsl)/0.3);
+    --legacy-elevation-high: 0 2px 10px 0 hsl(var(--black-500-hsl)/0.2);
+    --legacy-elevation-border: 0 0 0 1px hsl(var(--primary-700-hsl)/0.6)
 }
 
 .elevationLow-26BbEG {
-    -webkit-box-shadow: var(--elevation-low);
-    box-shadow: var(--elevation-low)
+    -webkit-box-shadow: var(--legacy-elevation-low);
+    box-shadow: var(--legacy-elevation-low)
 }
 
 .elevationHigh-3KUiqj {
-    -webkit-box-shadow: var(--elevation-high);
-    box-shadow: var(--elevation-high)
+    -webkit-box-shadow: var(--legacy-elevation-high);
+    box-shadow: var(--legacy-elevation-high)
 }
 
 .elevationBorderLow-3_3rXL {
-    -webkit-box-shadow: var(--elevation-border), var(--elevation-low);
-    box-shadow: var(--elevation-border), var(--elevation-low)
+    -webkit-box-shadow: var(--legacy-elevation-border), var(--legacy-elevation-low);
+    box-shadow: var(--legacy-elevation-border), var(--legacy-elevation-low)
 }
 
-.elevationBorderHigh-3drnJX {
-    -webkit-box-shadow: var(--elevation-border), var(--elevation-high);
-    box-shadow: var(--elevation-border), var(--elevation-high)
+.darkElevationBorderHigh-8ZYNYM {
+    -webkit-box-shadow: var(--legacy-elevation-border), var(--legacy-elevation-high);
+    box-shadow: var(--legacy-elevation-border), var(--legacy-elevation-high)
+}
+
+.lightElevationLow-1QzqDT {
+    -webkit-box-shadow: var(--legacy-elevation-low);
+    box-shadow: var(--legacy-elevation-low)
+}
+
+.lightElevationHigh-3gER0h {
+    -webkit-box-shadow: var(--legacy-elevation-high);
+    box-shadow: var(--legacy-elevation-high)
+}
+
+.lightElevationBorderLow-2Ysl3H {
+    -webkit-box-shadow: var(--legacy-elevation-border), var(--legacy-elevation-low);
+    box-shadow: var(--legacy-elevation-border), var(--legacy-elevation-low)
+}
+
+.elevationBorderHigh-3drnJX,
+.elevationBorderLow-3_3rXL,
+.elevationHigh-3KUiqj,
+.elevationLow-26BbEG,
+.lightElevationBorderHigh-3wutCI {
+    -webkit-box-shadow: var(--legacy-elevation-border), var(--legacy-elevation-high);
+    box-shadow: var(--legacy-elevation-border), var(--legacy-elevation-high)
 }
 
 .appAsidePanelWrapper-ev4hlp {
@@ -23189,8 +23213,8 @@ html.disable-forced-colors * {
 
 .theme-dark .modal-2RrUKJ,
 .theme-light .modal-2RrUKJ {
-    -webkit-box-shadow: var(--elevation-border), var(--elevation-high);
-    box-shadow: var(--elevation-border), var(--elevation-high)
+    -webkit-box-shadow: var(--legacy-elevation-border), var(--legacy-elevation-high);
+    box-shadow: var(--legacy-elevation-border), var(--legacy-elevation-high)
 }
 
 .theme-light .modal-2RrUKJ {
@@ -26023,8 +26047,8 @@ img[alt] {
     width: 480px;
     padding: 32px;
     font-size: 18px;
-    -webkit-box-shadow: var(--elevation-high);
-    box-shadow: var(--elevation-high);
+    -webkit-box-shadow: var(--legacy-elevation-high);
+    box-shadow: var(--legacy-elevation-high);
     border-radius: 5px;
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
@@ -43318,8 +43342,8 @@ html .progress-2Otdc- {
     min-height: 387px;
     padding: 32px;
     background-color: var(--white-500) !important;
-    -webkit-box-shadow: var(--elevation-border), var(--elevation-high) !important;
-    box-shadow: var(--elevation-border), var(--elevation-high) !important
+    -webkit-box-shadow: var(--legacy-elevation-border), var(--legacy-elevation-high) !important;
+    box-shadow: var(--legacy-elevation-border), var(--legacy-elevation-high) !important
 }
 
 .contentWrapper-1OoQ1E,
@@ -47649,8 +47673,8 @@ input[type=checked]:focus-visible+.label-3TDpbn {
 }
 
 .theme-light .burstReactionTooltipCoachmark-2gkUPq {
-    -webkit-box-shadow: var(--elevation-low), var(--elevation-border);
-    box-shadow: var(--elevation-low), var(--elevation-border)
+    -webkit-box-shadow: var(--legacy-elevation-low), var(--legacy-elevation-border);
+    box-shadow: var(--legacy-elevation-low), var(--legacy-elevation-border)
 }
 
 .burstReactionTooltipCoachmark-2gkUPq {
@@ -48375,8 +48399,8 @@ input[type=checked]:focus-visible+.label-3TDpbn {
 
 .theme-dark .guildPopout-1PxOP0 {
     background-color: var(--primary-700);
-    -webkit-box-shadow: var(--elevation-high), var(--elevation-border);
-    box-shadow: var(--elevation-high), var(--elevation-border)
+    -webkit-box-shadow: var(--legacy-elevation-high), var(--legacy-elevation-border);
+    box-shadow: var(--legacy-elevation-high), var(--legacy-elevation-border)
 }
 
 .theme-dark .guildName-3YrykR {
@@ -48385,8 +48409,8 @@ input[type=checked]:focus-visible+.label-3TDpbn {
 
 .theme-light .guildPopout-1PxOP0 {
     background-color: var(--primary-100);
-    -webkit-box-shadow: var(--elevation-high), var(--elevation-border);
-    box-shadow: var(--elevation-high), var(--elevation-border)
+    -webkit-box-shadow: var(--legacy-elevation-high), var(--legacy-elevation-border);
+    box-shadow: var(--legacy-elevation-high), var(--legacy-elevation-border)
 }
 
 .theme-light .guildName-3YrykR {
@@ -48437,8 +48461,8 @@ input[type=checked]:focus-visible+.label-3TDpbn {
 
 .theme-dark .popout-AVsFMl,
 .theme-light .popout-AVsFMl {
-    -webkit-box-shadow: var(--elevation-high), var(--elevation-border);
-    box-shadow: var(--elevation-high), var(--elevation-border)
+    -webkit-box-shadow: var(--legacy-elevation-high), var(--legacy-elevation-border);
+    box-shadow: var(--legacy-elevation-high), var(--legacy-elevation-border)
 }
 
 .theme-light .popout-AVsFMl {
@@ -50076,8 +50100,8 @@ input[type=checked]:focus-visible+.label-3TDpbn {
 
 .theme-dark .message-G6O-Wv,
 .theme-light .message-G6O-Wv {
-    -webkit-box-shadow: var(--elevation-border), var(--elevation-high);
-    box-shadow: var(--elevation-border), var(--elevation-high)
+    -webkit-box-shadow: var(--legacy-elevation-border), var(--legacy-elevation-high);
+    box-shadow: var(--legacy-elevation-border), var(--legacy-elevation-high)
 }
 
 .theme-light .message-G6O-Wv {
@@ -50314,40 +50338,64 @@ input[type=checked]:focus-visible+.label-3TDpbn {
 }
 
 :root {
-    --elevation-low: 0 1px 5px hsl(var(--black-500-hsl)/0.2);
-    --elevation-high: 0 2px 10px 0 hsl(var(--black-500-hsl)/0.1);
-    --elevation-border: 0 0 0 1px hsl(var(--primary-300-hsl)/0.3)
+    --legacy-elevation-low: 0 1px 5px hsl(var(--black-500-hsl)/0.2);
+    --legacy-elevation-high: 0 2px 10px 0 hsl(var(--black-500-hsl)/0.1);
+    --legacy-elevation-border: 0 0 0 1px hsl(var(--primary-300-hsl)/0.3)
 }
 
 .theme-dark {
-    --elevation-low: 0 1px 5px 0 hsl(var(--black-500-hsl)/0.3);
-    --elevation-high: 0 2px 10px 0 hsl(var(--black-500-hsl)/0.2);
-    --elevation-border: 0 0 0 1px hsl(var(--primary-700-hsl)/0.6)
+    --legacy-elevation-low: 0 1px 5px 0 hsl(var(--black-500-hsl)/0.3);
+    --legacy-elevation-high: 0 2px 10px 0 hsl(var(--black-500-hsl)/0.2);
+    --legacy-elevation-border: 0 0 0 1px hsl(var(--primary-700-hsl)/0.6)
 }
 
 .elevationLow-3aiJPL {
-    -webkit-box-shadow: var(--elevation-low);
-    box-shadow: var(--elevation-low)
+    -webkit-box-shadow: var(--legacy-elevation-low);
+    box-shadow: var(--legacy-elevation-low)
 }
 
 .elevationHigh-28Pty4 {
-    -webkit-box-shadow: var(--elevation-high);
-    box-shadow: var(--elevation-high)
+    -webkit-box-shadow: var(--legacy-elevation-high);
+    box-shadow: var(--legacy-elevation-high)
 }
 
 .elevationBorderLow-1t3dms {
-    -webkit-box-shadow: var(--elevation-border), var(--elevation-low);
-    box-shadow: var(--elevation-border), var(--elevation-low)
+    -webkit-box-shadow: var(--legacy-elevation-border), var(--legacy-elevation-low);
+    box-shadow: var(--legacy-elevation-border), var(--legacy-elevation-low)
 }
 
-.elevationBorderHigh-1s5JCj {
-    -webkit-box-shadow: var(--elevation-border), var(--elevation-high);
-    box-shadow: var(--elevation-border), var(--elevation-high)
+.darkElevationBorderHigh-GfqRpu {
+    -webkit-box-shadow: var(--legacy-elevation-border), var(--legacy-elevation-high);
+    box-shadow: var(--legacy-elevation-border), var(--legacy-elevation-high)
+}
+
+.lightElevationLow-1fQhMK {
+    -webkit-box-shadow: var(--legacy-elevation-low);
+    box-shadow: var(--legacy-elevation-low)
+}
+
+.lightElevationHigh-OUfZse {
+    -webkit-box-shadow: var(--legacy-elevation-high);
+    box-shadow: var(--legacy-elevation-high)
+}
+
+.lightElevationBorderLow-2z0sbK {
+    -webkit-box-shadow: var(--legacy-elevation-border), var(--legacy-elevation-low);
+    box-shadow: var(--legacy-elevation-border), var(--legacy-elevation-low)
+}
+
+.elevationBorderHigh-1s5JCj,
+.elevationBorderLow-1t3dms,
+.elevationHigh-28Pty4,
+.elevationLow-3aiJPL,
+.lightElevationBorderHigh-1Ab-WZ {
+    -webkit-box-shadow: var(--legacy-elevation-border), var(--legacy-elevation-high);
+    box-shadow: var(--legacy-elevation-border), var(--legacy-elevation-high)
 }
 
 .container-20TyK0 {
-    -webkit-box-shadow: var(--elevation-high);
-    box-shadow: var(--elevation-high);
+    -webkit-box-shadow: var(--legacy-elevation-high);
+    box-shadow: var(--legacy-elevation-high);
     padding: 10px 10px 10px 16px;
     overflow: hidden;
     border-radius: 5px
@@ -63377,8 +63425,8 @@ strong {
 }
 
 .container-2McqkF {
-    -webkit-box-shadow: var(--elevation-border), var(--elevation-high);
-    box-shadow: var(--elevation-border), var(--elevation-high);
+    -webkit-box-shadow: var(--legacy-elevation-border), var(--legacy-elevation-high);
+    box-shadow: var(--legacy-elevation-border), var(--legacy-elevation-high);
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
     border-radius: 3px;
@@ -73509,8 +73557,8 @@ html:not(.custom-theme-background) .container-Vrgqxz {
     position: absolute;
     right: 24px;
     bottom: 24px;
-    -webkit-box-shadow: var(--elevation-high);
-    box-shadow: var(--elevation-high)
+    -webkit-box-shadow: var(--legacy-elevation-high);
+    box-shadow: var(--legacy-elevation-high)
 }
 
 .editButton-1D5a_Z:focus,
@@ -94331,8 +94379,8 @@ html:not(.custom-theme-background) .container-Vrgqxz {
 
 .avatar-2YWBFP,
 .messageContentWrapper-3jcFO8 {
-    -webkit-box-shadow: var(--elevation-high);
-    box-shadow: var(--elevation-high)
+    -webkit-box-shadow: var(--legacy-elevation-high);
+    box-shadow: var(--legacy-elevation-high)
 }
 
 .messageContentWrapper-3jcFO8 {
@@ -105620,8 +105668,8 @@ html .tabBadge-h4HGed {
 
 .theme-dark .overflowTagsPopout-xZh8Gz {
     background-color: var(--background-floating);
-    -webkit-box-shadow: var(--elevation-high), var(--elevation-border);
-    box-shadow: var(--elevation-high), var(--elevation-border);
+    -webkit-box-shadow: var(--legacy-elevation-high), var(--legacy-elevation-border);
+    box-shadow: var(--legacy-elevation-high), var(--legacy-elevation-border);
     color: hsl(var(--white-500-hsl)/.8)
 }
 
@@ -105641,8 +105689,8 @@ html .tabBadge-h4HGed {
 
 .theme-light .overflowTagsPopout-xZh8Gz {
     background-color: var(--white-500);
-    -webkit-box-shadow: var(--elevation-high), var(--elevation-border);
-    box-shadow: var(--elevation-high), var(--elevation-border);
+    -webkit-box-shadow: var(--legacy-elevation-high), var(--legacy-elevation-border);
+    box-shadow: var(--legacy-elevation-high), var(--legacy-elevation-border);
     color: hsl(var(--primary-500-hsl)/.8)
 }
 
@@ -105965,8 +106013,8 @@ html .tabBadge-h4HGed {
 }
 
 .theme-light .card-2TuZPZ {
-    -webkit-box-shadow: var(--elevation-border), var(--elevation-medium);
-    box-shadow: var(--elevation-border), var(--elevation-medium)
+    -webkit-box-shadow: var(--legacy-elevation-border), var(--elevation-medium);
+    box-shadow: var(--legacy-elevation-border), var(--elevation-medium)
 }
 
 .theme-light .card-2TuZPZ:focus,
@@ -114410,13 +114458,13 @@ html .tabBadge-h4HGed {
 }
 
 .theme-light .button-1yVL_7 {
-    -webkit-box-shadow: var(--elevation-border), var(--elevation-low);
-    box-shadow: var(--elevation-border), var(--elevation-low)
+    -webkit-box-shadow: var(--legacy-elevation-border), var(--legacy-elevation-low);
+    box-shadow: var(--legacy-elevation-border), var(--legacy-elevation-low)
 }
 
 .theme-light .button-1yVL_7:hover {
-    -webkit-box-shadow: var(--elevation-border), var(--elevation-high);
-    box-shadow: var(--elevation-border), var(--elevation-high)
+    -webkit-box-shadow: var(--legacy-elevation-border), var(--legacy-elevation-high);
+    box-shadow: var(--legacy-elevation-border), var(--legacy-elevation-high)
 }
 
 .theme-light .default-1Tkeeg {
@@ -114428,13 +114476,13 @@ html .tabBadge-h4HGed {
 }
 
 .theme-dark .button-1yVL_7 {
-    -webkit-box-shadow: var(--elevation-border), var(--elevation-low);
-    box-shadow: var(--elevation-border), var(--elevation-low)
+    -webkit-box-shadow: var(--legacy-elevation-border), var(--legacy-elevation-low);
+    box-shadow: var(--legacy-elevation-border), var(--legacy-elevation-low)
 }
 
 .theme-dark .button-1yVL_7:hover {
-    -webkit-box-shadow: var(--elevation-border), var(--elevation-high);
-    box-shadow: var(--elevation-border), var(--elevation-high)
+    -webkit-box-shadow: var(--legacy-elevation-border), var(--legacy-elevation-high);
+    box-shadow: var(--legacy-elevation-border), var(--legacy-elevation-high)
 }
 
 .theme-dark .default-1Tkeeg {
@@ -117813,35 +117861,59 @@ html .tabBadge-h4HGed {
 }
 
 :root {
-    --elevation-low: 0 1px 5px hsl(var(--black-500-hsl)/0.2);
-    --elevation-high: 0 2px 10px 0 hsl(var(--black-500-hsl)/0.1);
-    --elevation-border: 0 0 0 1px hsl(var(--primary-300-hsl)/0.3)
+    --legacy-elevation-low: 0 1px 5px hsl(var(--black-500-hsl)/0.2);
+    --legacy-elevation-high: 0 2px 10px 0 hsl(var(--black-500-hsl)/0.1);
+    --legacy-elevation-border: 0 0 0 1px hsl(var(--primary-300-hsl)/0.3)
 }
 
 .theme-dark {
-    --elevation-low: 0 1px 5px 0 hsl(var(--black-500-hsl)/0.3);
-    --elevation-high: 0 2px 10px 0 hsl(var(--black-500-hsl)/0.2);
-    --elevation-border: 0 0 0 1px hsl(var(--primary-700-hsl)/0.6)
+    --legacy-elevation-low: 0 1px 5px 0 hsl(var(--black-500-hsl)/0.3);
+    --legacy-elevation-high: 0 2px 10px 0 hsl(var(--black-500-hsl)/0.2);
+    --legacy-elevation-border: 0 0 0 1px hsl(var(--primary-700-hsl)/0.6)
 }
 
 .elevationLow-2pUXH_ {
-    -webkit-box-shadow: var(--elevation-low);
-    box-shadow: var(--elevation-low)
+    -webkit-box-shadow: var(--legacy-elevation-low);
+    box-shadow: var(--legacy-elevation-low)
 }
 
 .elevationHigh-2YNksz {
-    -webkit-box-shadow: var(--elevation-high);
-    box-shadow: var(--elevation-high)
+    -webkit-box-shadow: var(--legacy-elevation-high);
+    box-shadow: var(--legacy-elevation-high)
 }
 
 .elevationBorderLow-3WE-dT {
-    -webkit-box-shadow: var(--elevation-border), var(--elevation-low);
-    box-shadow: var(--elevation-border), var(--elevation-low)
+    -webkit-box-shadow: var(--legacy-elevation-border), var(--legacy-elevation-low);
+    box-shadow: var(--legacy-elevation-border), var(--legacy-elevation-low)
 }
 
-.elevationBorderHigh-1tiwWD {
-    -webkit-box-shadow: var(--elevation-border), var(--elevation-high);
-    box-shadow: var(--elevation-border), var(--elevation-high)
+.darkElevationBorderHigh-2Z7ljf {
+    -webkit-box-shadow: var(--legacy-elevation-border), var(--legacy-elevation-high);
+    box-shadow: var(--legacy-elevation-border), var(--legacy-elevation-high)
+}
+
+.lightElevationLow-3HtSbi {
+    -webkit-box-shadow: var(--legacy-elevation-low);
+    box-shadow: var(--legacy-elevation-low)
+}
+
+.lightElevationHigh-3l2mT5 {
+    -webkit-box-shadow: var(--legacy-elevation-high);
+    box-shadow: var(--legacy-elevation-high)
+}
+
+.lightElevationBorderLow-hEPMDA {
+    -webkit-box-shadow: var(--legacy-elevation-border), var(--legacy-elevation-low);
+    box-shadow: var(--legacy-elevation-border), var(--legacy-elevation-low)
+}
+
+.elevationBorderHigh-1tiwWD,
+.elevationBorderLow-3WE-dT,
+.elevationHigh-2YNksz,
+.elevationLow-2pUXH_,
+.lightElevationBorderHigh-32EE7z {
+    -webkit-box-shadow: var(--legacy-elevation-border), var(--legacy-elevation-high);
+    box-shadow: var(--legacy-elevation-border), var(--legacy-elevation-high)
 }
 
 .container-3azaUr {
@@ -121993,8 +122065,8 @@ input::-webkit-outer-spin-button {
 }
 
 .theme-light .card-WWLYDO {
-    -webkit-box-shadow: var(--elevation-border), var(--elevation-medium);
-    box-shadow: var(--elevation-border), var(--elevation-medium)
+    -webkit-box-shadow: var(--legacy-elevation-border), var(--elevation-medium);
+    box-shadow: var(--legacy-elevation-border), var(--elevation-medium)
 }
 
 .subcategory-1zDTD3 {
@@ -125456,8 +125528,8 @@ input::-webkit-outer-spin-button {
 
 .theme-dark .subscribersPopout-3lkZNO {
     background: var(--primary-800);
-    -webkit-box-shadow: var(--elevation-high);
-    box-shadow: var(--elevation-high)
+    -webkit-box-shadow: var(--legacy-elevation-high);
+    box-shadow: var(--legacy-elevation-high)
 }
 
 .theme-dark .subscribersPopoutUser-3Az2Dc {
@@ -125497,8 +125569,8 @@ input::-webkit-outer-spin-button {
 
 .theme-light .subscribersPopout-3lkZNO {
     background: var(--white-500);
-    -webkit-box-shadow: var(--elevation-high);
-    box-shadow: var(--elevation-high);
+    -webkit-box-shadow: var(--legacy-elevation-high);
+    box-shadow: var(--legacy-elevation-high);
     border: 1px solid var(--primary-160)
 }
 
@@ -126120,8 +126192,8 @@ input::-webkit-outer-spin-button {
     align-items: center;
     background-color: var(--background-tertiary);
     border-radius: 24px;
-    -webkit-box-shadow: var(--elevation-low), var(--elevation-border);
-    box-shadow: var(--elevation-low), var(--elevation-border);
+    -webkit-box-shadow: var(--legacy-elevation-low), var(--legacy-elevation-border);
+    box-shadow: var(--legacy-elevation-low), var(--legacy-elevation-border);
     color: var(--interactive-normal);
     cursor: pointer;
     height: 36px;
@@ -126218,8 +126290,8 @@ input::-webkit-outer-spin-button {
 }
 
 .theme-light .action-2YPPom {
-    -webkit-box-shadow: var(--elevation-low), var(--elevation-border);
-    box-shadow: var(--elevation-low), var(--elevation-border)
+    -webkit-box-shadow: var(--legacy-elevation-low), var(--legacy-elevation-border);
+    box-shadow: var(--legacy-elevation-low), var(--legacy-elevation-border)
 }
 
 .enable-forced-colors .wrapper-24fR1R {
@@ -144265,8 +144337,8 @@ html .invoiceCancelRow-3s2UuC {
 
 .theme-dark .featureModalMessage-fZR6jp,
 .theme-light .featureModalMessage-fZR6jp {
-    -webkit-box-shadow: var(--elevation-border), var(--elevation-high);
-    box-shadow: var(--elevation-border), var(--elevation-high)
+    -webkit-box-shadow: var(--legacy-elevation-border), var(--legacy-elevation-high);
+    box-shadow: var(--legacy-elevation-border), var(--legacy-elevation-high)
 }
 
 .theme-light .featureModalMessage-fZR6jp {
@@ -147214,8 +147286,8 @@ html .invoiceCancelRow-3s2UuC {
     left: 0;
     right: 0;
     top: -15px;
-    -webkit-box-shadow: var(--elevation-high);
-    box-shadow: var(--elevation-high)
+    -webkit-box-shadow: var(--legacy-elevation-high);
+    box-shadow: var(--legacy-elevation-high)
 }
 
 @media (max-width:2065px) {
@@ -159516,8 +159588,8 @@ html .invoiceCancelRow-3s2UuC {
 
 .theme-dark .autocompleteArrow-jJE9TQ,
 .theme-dark .autocompleteShadow-2nfsSy {
-    -webkit-box-shadow: var(--elevation-high), var(--elevation-border);
-    box-shadow: var(--elevation-high), var(--elevation-border)
+    -webkit-box-shadow: var(--legacy-elevation-high), var(--legacy-elevation-border);
+    box-shadow: var(--legacy-elevation-high), var(--legacy-elevation-border)
 }
 
 .theme-dark .autocompleteArrow-jJE9TQ,
@@ -159560,8 +159632,8 @@ html .invoiceCancelRow-3s2UuC {
 
 .theme-light .autocompleteArrow-jJE9TQ,
 .theme-light .autocompleteShadow-2nfsSy {
-    -webkit-box-shadow: var(--elevation-high), var(--elevation-border);
-    box-shadow: var(--elevation-high), var(--elevation-border)
+    -webkit-box-shadow: var(--legacy-elevation-high), var(--legacy-elevation-border);
+    box-shadow: var(--legacy-elevation-high), var(--legacy-elevation-border)
 }
 
 .theme-light .autocompleteArrow-jJE9TQ,
@@ -167571,4 +167643,4 @@ html .invoiceCancelRow-dVOR64 {
     margin-bottom: 16px
 }
 
-/*# sourceMappingURL=40532.b8efc514c10886c5308e.css.map*/
+/*# sourceMappingURL=40532.392f5ea70119267f568d.css.map*/
