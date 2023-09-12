@@ -167363,6 +167363,7 @@ html .invoiceCancelRow-dVOR64 {
 }
 
 .collectibleInfoContainer-3uyaC5 {
+    padding: 20px;
     width: 276px
 }
 
@@ -167371,7 +167372,6 @@ html .invoiceCancelRow-dVOR64 {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    padding: 20px;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
     -ms-flex-direction: column;
@@ -167379,8 +167379,12 @@ html .invoiceCancelRow-dVOR64 {
 }
 
 .collectiblePreviewsContainer-2TJ889 {
-    gap: 24px;
+    padding: 80px 40px 20px 20px;
     background-size: cover
+}
+
+.previewContainerInner-28dlGW {
+    position: relative
 }
 
 .avatarPreviewContainer-2FEhy3 {
@@ -167401,7 +167405,11 @@ html .invoiceCancelRow-dVOR64 {
 }
 
 .chatPreview-2rboc6 {
-    height: 180px;
+    background: var(--background-primary);
+    border-radius: var(--radius-sm);
+    position: absolute;
+    bottom: -90px;
+    right: -16px;
     overflow: hidden;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -167409,7 +167417,34 @@ html .invoiceCancelRow-dVOR64 {
     flex-direction: column;
     -webkit-box-align: stretch;
     -ms-flex-align: stretch;
-    align-items: stretch
+    align-items: stretch;
+    padding: 16px;
+    gap: 12px
+}
+
+.mockMessage-3u7k9X {
+    padding-right: 12px !important;
+    margin-left: -12px
+}
+
+.mockInput-GqyVoT {
+    background: var(--background-accent);
+    border-radius: var(--radius-xl);
+    height: 40px;
+    padding: 0 8px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center
+}
+
+.mockInputButton-1p4KTd {
+    color: var(--interactive-normal)
 }
 
 .titleContainer-3YDEDj {
@@ -167625,4 +167660,4 @@ html .invoiceCancelRow-dVOR64 {
     margin-bottom: 16px
 }
 
-/*# sourceMappingURL=40532.dfaa80175cbf16e3d9b7.css.map*/
+/*# sourceMappingURL=40532.4192600cb46c3a44bd50.css.map*/
