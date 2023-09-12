@@ -68511,6 +68511,133 @@ html:not(.custom-theme-background) .container-Vrgqxz {
     margin-right: 8px
 }
 
+.activityButton-3CO1wv {
+    max-height: 50px;
+    cursor: pointer;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center
+}
+
+.rocket-3_PlYZ {
+    width: 32px;
+    height: 32px;
+    margin-right: 2px;
+    margin-bottom: 2px;
+    color: var(--interactive-normal)
+}
+
+.rocket-3_PlYZ>* {
+    fill: currentColor
+}
+
+.rocketHovered-38kThi {
+    color: var(--interactive-hover)
+}
+
+.rocketHovered-38kThi>* {
+    fill: currentColor
+}
+
+.buttonContainer-Z_at2- {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    position: relative
+}
+
+@-webkit-keyframes sparkle-1I0146 {
+    0% {
+        opacity: 0;
+        -webkit-transform: rotate(-50deg) scale(0);
+        transform: rotate(-50deg) scale(0)
+    }
+
+    20% {
+        opacity: 1;
+        -webkit-transform: rotate(0deg) scale(1);
+        transform: rotate(0deg) scale(1)
+    }
+
+    40% {
+        opacity: 0;
+        -webkit-transform: rotate(50deg) scale(0);
+        transform: rotate(50deg) scale(0)
+    }
+
+    to {
+        opacity: 0;
+        -webkit-transform: rotate(-50deg) scale(0);
+        transform: rotate(-50deg) scale(0)
+    }
+}
+
+@keyframes sparkle-1I0146 {
+    0% {
+        opacity: 0;
+        -webkit-transform: rotate(-50deg) scale(0);
+        transform: rotate(-50deg) scale(0)
+    }
+
+    20% {
+        opacity: 1;
+        -webkit-transform: rotate(0deg) scale(1);
+        transform: rotate(0deg) scale(1)
+    }
+
+    40% {
+        opacity: 0;
+        -webkit-transform: rotate(50deg) scale(0);
+        transform: rotate(50deg) scale(0)
+    }
+
+    to {
+        opacity: 0;
+        -webkit-transform: rotate(-50deg) scale(0);
+        transform: rotate(-50deg) scale(0)
+    }
+}
+
+.sparkleContainer-QK2z-k {
+    position: absolute
+}
+
+.sparkleStar-3h_gN1 {
+    color: var(--gold);
+    top: 24px;
+    left: 19px
+}
+
+.sparklePlus-20z2ja,
+.sparkleStar-3h_gN1 {
+    position: absolute;
+    -webkit-animation: sparkle-1I0146 2.5s ease-in-out infinite;
+    animation: sparkle-1I0146 2.5s ease-in-out infinite
+}
+
+.sparklePlus-20z2ja {
+    opacity: 0;
+    color: var(--brand-experiment);
+    top: 6px;
+    left: 3px;
+    -webkit-animation-delay: 1s;
+    animation-delay: 1s
+}
+
+.noAnimation-3AAMVf {
+    -webkit-animation: none;
+    animation: none;
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none
+}
+
 .emojiButton-3FRTuj {
     max-height: 50px;
     cursor: pointer;
@@ -167498,4 +167625,4 @@ html .invoiceCancelRow-dVOR64 {
     margin-bottom: 16px
 }
 
-/*# sourceMappingURL=40532.2787d58d9f1165610630.css.map*/
+/*# sourceMappingURL=40532.dfaa80175cbf16e3d9b7.css.map*/
