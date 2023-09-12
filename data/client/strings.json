@@ -5626,6 +5626,7 @@
   "SYSTEM_MESSAGE_STAGE_TOPIC_HOOK": "\"$[!!{username}!!](usernameHook) changed the Stage topic: **!!{topic}!!**\"",
   "SYSTEM_MESSAGE_STAGE_TOPIC_MOBILE": "\"[!!{username}!!](usernameOnClick) changed the Stage topic: **!!{topic}!!**\"",
   "STAGE_SYSTEM_MESSAGE_MODERATOR_VISIBILITY_MESSAGE": "\"Only Stage moderators can see this • [Dismiss message](handleDelete)\"",
+  "SYSTEM_MESSAGE_GET_GAMING_STATS": "\"Get my stats!\"",
   "ACCEPT_INVITE_MODAL_BUTTON": "\"Accept Invite\"",
   "ACCEPT_INVITE_MODAL_BUTTON_WITH_USERNAME": "\"Accept as $[](usernameHook)\"",
   "INVITE_MODAL_BUTTON": "\"Join **!!{guildName}!!**\"",
