@@ -20,7 +20,7 @@
     </li>
 </ul>
 <h1 id="h_01H3MBQT5DJMFYWFZC9SE52DZ1">How to Edit Profiles Under User Settings</h1>
-<h3>
+<h3 id="h_01HA5Q9PKNWAKKBQ95HWAJWCKR">
     <span style="color: #434343;" data-darkreader-inline-color="">Looking to personalize your account identity in each of your servers? You must be a </span><a href="https://support.discord.com/hc/en-us/articles/115000435108" target="_blank" rel="noopener noreferrer">Nitro</a><span style="color: #434343;" data-darkreader-inline-color=""> subscriber to unlock </span><a href="https://support.discord.com/hc/en-us/articles/4409388345495" target="_blank" rel="noopener noreferrer">Server Profiles</a><span style="color: #434343;" data-darkreader-inline-color="">.</span>
 </h3>
 <p>In order to change anything in your User Profile, you first need to access <strong>User Settings</strong>.</p>
@@ -40,7 +40,7 @@
 <p class="wysiwyg-text-align-center"><img src="https://support.discord.com/hc/article_attachments/15527697898903" alt="discord_user_settings_mobile_profiles_settings.png" width="347" height="612"></p>
 <h1 id="h_01H3MBR8H9AJMP6J8F4G37MGR0">How to Customize your Profile</h1>
 <h2 id="h_01H3MBRCHQ4QMKR4AZ99ZSEKPP">Avatar</h2>
-<h3>
+<h3 id="h_01HA5Q9PKN7K3DVTAMQFZVCCQ4">
     <a href="https://support.discord.com/hc/en-us/articles/115000435108" target="_blank" rel="noopener noreferrer">Nitro</a><span style="color: #434343;" data-darkreader-inline-color=""> subscribers can upload animated GIFs as their profile avatar.</span>
 </h3>
 <p>After heading to your <strong>Profiles </strong>tab you can change your avatar via the <strong>Change Avatar</strong> button or by tapping on your current avatar.</p>
@@ -51,7 +51,7 @@
 <p class="wysiwyg-text-align-center"><img src="https://support.discord.com/hc/article_attachments/15527725418135" alt="profiles_avatar_crop.png" width="529" height="528"></p>
 <p>Once you’re happy with how it looks, tap on <strong>Apply</strong> to save changes.</p>
 <h1 id="h_01H3MBRGVFHFKCS3GY314MR07Z">“About Me”</h1>
-<h3>
+<h3 id="h_01HA5Q9PKNQ8GDGHXXM1RYV08A">
     <a href="https://support.discord.com/hc/en-us/articles/115000435108" target="_blank" rel="noopener noreferrer">Nitro</a><span style="color: #434343;" data-darkreader-inline-color=""> subscribers can also use </span><a href="https://support.discord.com/hc/en-us/articles/360036479811-Custom-Emojis" target="_blank" rel="noopener noreferrer">custom emojis</a><span style="color: #434343;" data-darkreader-inline-color=""> in their About Me.</span>
 </h3>
 <p>You can share a little about yourself in your profile card in the About Me section. What are some games that you’re playing right now? Do you have a favorite quote? Favorite emojis? Include all of this and more!  </p>
@@ -64,16 +64,16 @@
     </li>
     <li>Unicode characters</li>
 </ul>
-<h3 class="wysiwyg-text-align-center"><img src="https://support.discord.com/hc/article_attachments/15527697909271" alt="about_me_settings.png"></h3>
+<h3 id="h_01HA5Q9PKN6E6PTAHFR49VRMT3" class="wysiwyg-text-align-center"><img src="https://support.discord.com/hc/article_attachments/15527697909271" alt="about_me_settings.png"></h3>
 <p>While you fill out your About Me, you can see a preview of what it’ll look like. Once you’re finished, just tap on <strong>Save</strong> to save changes.</p>
 <p class="wysiwyg-text-align-center"><img src="https://support.discord.com/hc/article_attachments/15527697917079" alt="about_me_settings_preview.png" width="319" height="532"></p>
-<h3 id="h_01H3MBRNC0NWF6G35ZE3D76DEM"><span style="color: #434343;" data-darkreader-inline-color="">Pronouns</span></h3>
-<h3><span style="color: #434343;" data-darkreader-inline-color="">This feature is gradually rolling out to everyone.</span></h3>
+<h2 id="h_01H3MBRNC0NWF6G35ZE3D76DEM"><span style="color: #434343;" data-darkreader-inline-color="">Pronouns</span></h2>
+<h3 id="h_01HA5Q9PKPRB3GMCGQYXTW3HNX"><span style="color: #434343;" data-darkreader-inline-color="">This feature is gradually rolling out to everyone.</span></h3>
 <p>You can add your preferred pronouns in the <strong>Pronouns </strong>section. </p>
 <p class="wysiwyg-text-align-center"><img src="https://support.discord.com/hc/article_attachments/15527697922583" alt="profiles_pronouns.png"></p>
 <p>After filling out your preferred pronouns, you can press on <strong>Save </strong>to save changes.</p>
 <h2 id="h_01H3MBRVTWGPMFXVA0P26Z1T3F">Banner</h2>
-<h3>
+<h3 id="h_01HA5Q9PKPM665XP7BDZAF4M3Y">
     <span style="color: #434343;" data-darkreader-inline-color="">Only </span><a href="https://support.discord.com/hc/en-us/articles/115000435108" target="_blank" rel="noopener noreferrer">Nitro</a><span style="color: #434343;" data-darkreader-inline-color=""> members can upload an image or animated GIF as their profile banner. </span>
 </h3>
 <p>Supported file types are PNG, JPG, and animated GIFs under 10MB. Images should also be at least 680x240 pixels.</p>
