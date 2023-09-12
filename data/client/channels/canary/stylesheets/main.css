@@ -160712,7 +160712,8 @@ html .invoiceCancelRow-3s2UuC {
     grid-column: 1/-1;
     position: relative;
     background-size: cover;
-    width: 1060px;
+    width: 100%;
+    max-width: 1060px;
     height: 240px;
     border-radius: var(--radius-xxl);
     display: -webkit-box;
@@ -160757,22 +160758,28 @@ html .invoiceCancelRow-3s2UuC {
 }
 
 .shopCard-H3oN50 {
-    height: 300px;
     border-radius: var(--radius-xxl);
     border: 2px solid transparent;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
-    margin-left: auto;
-    margin-right: auto;
     grid-column: auto;
     min-width: 100%;
-    padding: 2px;
     -webkit-transition: -webkit-transform 1s, -webkit-box-shadow .5s;
     transition: -webkit-transform 1s, -webkit-box-shadow .5s;
     transition: transform 1s, box-shadow .5s;
     transition: transform 1s, box-shadow .5s, -webkit-transform 1s, -webkit-box-shadow .5s;
-    position: relative
+    padding: 40px 32px 32px;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between
 }
 
 .shopCard-H3oN50:hover {
@@ -160801,7 +160808,20 @@ html .invoiceCancelRow-3s2UuC {
 }
 
 .cardText-2OugTh {
-    margin-top: 32px
+    margin-top: 32px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -webkit-box-flex: 1;
+    -ms-flex: 1;
+    flex: 1
 }
 
 .description-1aSbLq {
@@ -160813,18 +160833,9 @@ html .invoiceCancelRow-3s2UuC {
 }
 
 .button-3VHqk5 {
-    margin: 24px auto 0;
-    width: 100%
-}
-
-.button-3VHqk5,
-.purchaseButton-16bBUi {
+    width: 100%;
     -webkit-transition: all .5s;
     transition: all .5s
-}
-
-.purchaseButton-16bBUi {
-    margin-top: 32px
 }
 
 .purchaseButton-16bBUi:hover {
@@ -160848,24 +160859,33 @@ html .invoiceCancelRow-3s2UuC {
     height: 16px
 }
 
+.detailsWrapper-_FRe44 {
+    position: relative;
+    -webkit-box-flex: 1;
+    -ms-flex: 1;
+    flex: 1
+}
+
 .innerHover-3lqG6f {
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
+    position: absolute;
+    width: 100%;
+    top: 50%;
     opacity: 0
 }
 
 .innerBlur-3NYZ8j,
 .innerHover-3lqG6f {
-    position: absolute;
-    left: 32px;
-    right: 32px;
     -webkit-transition: opacity .5s;
     transition: opacity .5s
 }
 
 .innerBlur-3NYZ8j {
-    opacity: 1
+    opacity: 1;
+    left: 32px;
+    right: 32px
 }
 
 .checkmarkWrapper-30c52R {
@@ -160894,8 +160914,8 @@ html .invoiceCancelRow-3s2UuC {
 }
 
 .shopCard-H3oN50:hover .button-3VHqk5 {
-    -webkit-transform: translateY(-16px);
-    transform: translateY(-16px)
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%)
 }
 
 .shopCard-H3oN50:hover .checkmark-1jbYXa {
@@ -167554,10 +167574,6 @@ html .invoiceCancelRow-dVOR64 {
     margin-bottom: 64px
 }
 
-.previewTitle-fVCFx0 {
-    margin-bottom: 8px
-}
-
 .button-343kYP {
     -webkit-transition: opacity .5s;
     transition: opacity .5s
@@ -167738,4 +167754,4 @@ html .invoiceCancelRow-dVOR64 {
     margin-bottom: 16px
 }
 
-/*# sourceMappingURL=40532.e3b68c698379755838a5.css.map*/
+/*# sourceMappingURL=40532.c8f857088fe995363169.css.map*/
