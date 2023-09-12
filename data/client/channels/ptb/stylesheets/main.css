@@ -64414,7 +64414,8 @@ strong {
     grid-template-columns: repeat(auto-fill, 332px)
 }
 
-.card-2cxbBa:hover {
+.card-2cxbBa:hover .cardContent-3kz5is,
+.selectedCard-BP5u4F {
     -webkit-transform: scale(.97);
     transform: scale(.97);
     border-radius: var(--radius-sm);
@@ -139306,37 +139307,6 @@ html .invoiceCancelRow-3s2UuC {
     gap: 8px
 }
 
-.closeButton-13HeT4 {
-    position: absolute;
-    -webkit-box-sizing: content-box;
-    box-sizing: content-box;
-    top: 12px;
-    right: 4px
-}
-
-.content-9qWvW1 {
-    text-align: center
-}
-
-.image-28utoj {
-    margin-top: 24px;
-    height: 90px;
-    width: auto
-}
-
-.title-TCs5KR {
-    margin-top: 16px
-}
-
-.body-wZs22w {
-    margin-top: 8px;
-    margin-bottom: 32px
-}
-
-.button-2lf1sL {
-    width: 100%
-}
-
 .modalHeader-2Be19q {
     -webkit-box-align: center;
     -ms-flex-align: center;
@@ -164162,6 +164132,37 @@ html .invoiceCancelRow-3s2UuC {
     background-color: var(--background-tertiary)
 }
 
+.closeButton-13HeT4 {
+    position: absolute;
+    -webkit-box-sizing: content-box;
+    box-sizing: content-box;
+    top: 12px;
+    right: 4px
+}
+
+.content-9qWvW1 {
+    text-align: center
+}
+
+.image-28utoj {
+    margin-top: 24px;
+    height: 90px;
+    width: auto
+}
+
+.title-TCs5KR {
+    margin-top: 16px
+}
+
+.body-wZs22w {
+    margin-top: 8px;
+    margin-bottom: 32px
+}
+
+.button-2lf1sL {
+    width: 100%
+}
+
 .description-2pRfjZ {
     margin-bottom: 16px
 }
@@ -167727,4 +167728,4 @@ html .invoiceCancelRow-dVOR64 {
     margin-bottom: 16px
 }
 
-/*# sourceMappingURL=40532.3da839bdca9b7e22d772.css.map*/
+/*# sourceMappingURL=40532.8a057514376ee0a1daca.css.map*/
