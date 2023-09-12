@@ -4462,6 +4462,10 @@
       "POST"
     ]
   },
+  "UPDATE_GAMING_STATS": {
+    "url": "/:param/:param/update-gaming-stats",
+    "allowed_methods": null
+  },
   "BULK_GUILD_BAN": {
     "url": "/guilds/:param/bulk-ban",
     "allowed_methods": [
