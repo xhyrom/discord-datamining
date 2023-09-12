@@ -8,7 +8,8 @@
       "Control Bucket",
       "Treatment 1: Enabled (Default Off)",
       "Treatment 3: Enabled (Default On)",
-      "Treatment 4: Coming Soon"
+      "Treatment 4: Coming Soon",
+      "Treatment 5: Clyde Profiles"
     ],
     "hash": 4083096281,
     "buckets": [
@@ -16,7 +17,8 @@
       0,
       1,
       3,
-      4
+      4,
+      5
     ],
     "config_keys": [
       "experimentState"
