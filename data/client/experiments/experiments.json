@@ -3232,6 +3232,27 @@
   {
     "data": {
       "kind": "guild",
+      "id": "2023-09_member_safety_release_coachmark",
+      "label": "Members Safety Release Coachmark Experiment",
+      "description": [
+        "Not Eligible",
+        "Control Bucket",
+        "Treatment 1: Enable Members Safety Release Coachmark"
+      ],
+      "hash": 1865413295,
+      "buckets": [
+        -1,
+        0,
+        1
+      ],
+      "config_keys": [
+        "enabled"
+      ]
+    }
+  },
+  {
+    "data": {
+      "kind": "guild",
       "id": "2023-08_guild_member_bulk_ban_experiment",
       "label": "Bulk Banning Guild Members Experiment",
       "description": [
