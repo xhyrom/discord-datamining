@@ -60382,6 +60382,65 @@ strong {
     }
 }
 
+.coachmark-2wbauW {
+    margin-left: 8px;
+    width: 280px
+}
+
+.coachmark-2wbauW:after {
+    top: 8px !important;
+    right: calc(100% - 8px) !important
+}
+
+.container-3qYHDX {
+    position: absolute
+}
+
+@-webkit-keyframes fadeOut-1SFVt9 {
+    0% {
+        opacity: 1;
+        visibility: visible
+    }
+
+    99% {
+        opacity: .01;
+        visibility: visible
+    }
+
+    to {
+        opacity: 0;
+        visibility: hidden
+    }
+}
+
+@keyframes fadeOut-1SFVt9 {
+    0% {
+        opacity: 1;
+        visibility: visible
+    }
+
+    99% {
+        opacity: .01;
+        visibility: visible
+    }
+
+    to {
+        opacity: 0;
+        visibility: hidden
+    }
+}
+
+.upsell-LJfQI7 {
+    position: absolute;
+    z-index: 1000;
+    opacity: 1
+}
+
+.upsell-LJfQI7.hidden-2-HfKA {
+    -webkit-animation: fadeOut-1SFVt9 .3s forwards;
+    animation: fadeOut-1SFVt9 .3s forwards
+}
+
 .btnHamburger-3GF0_5 {
     width: 60px;
     height: 45px;
@@ -83232,6 +83291,13 @@ html:not(.custom-theme-background) .container-Vrgqxz {
 .newChannel-3uRBAS {
     color: var(--white-500);
     margin-top: 1.75px
+}
+
+.coachmark-1Yj9lQ {
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    left: 50%
 }
 
 .message-1WzYhw {
@@ -167660,4 +167726,4 @@ html .invoiceCancelRow-dVOR64 {
     margin-bottom: 16px
 }
 
-/*# sourceMappingURL=40532.4192600cb46c3a44bd50.css.map*/
+/*# sourceMappingURL=40532.c74260ddd0b777258bf5.css.map*/
