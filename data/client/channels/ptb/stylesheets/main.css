@@ -131507,6 +131507,7 @@ input::-webkit-outer-spin-button {
     -webkit-box-flex: 1;
     -ms-flex: 1;
     flex: 1;
+    padding: 8px;
     -webkit-box-pack: center;
     -ms-flex-pack: center;
     justify-content: center;
@@ -131587,9 +131588,14 @@ input::-webkit-outer-spin-button {
     position: relative
 }
 
+.decorationGridItemChurned-1jRrX4 {
+    opacity: .3
+}
+
 .selected-IxbpGM {
     -webkit-box-shadow: inset 0 0 0 2px var(--brand-experiment-500);
-    box-shadow: inset 0 0 0 2px var(--brand-experiment-500)
+    box-shadow: inset 0 0 0 2px var(--brand-experiment-500);
+    opacity: 1
 }
 
 .list-2gEvIv {
@@ -131622,9 +131628,11 @@ input::-webkit-outer-spin-button {
     background: linear-gradient(90deg, hsl(269, calc(var(--saturation-factor, 1)*52.7%), 52.7%), hsl(296, calc(var(--saturation-factor, 1)*50%), 51.4%), hsl(325, calc(var(--saturation-factor, 1)*31.7%), 51.8%))
 }
 
-.lockBadge-2UO4Sh {
-    width: 20px;
-    height: 20px
+.itemBadge-2VGhY3 {
+    width: 24px;
+    padding: 2px;
+    height: 24px;
+    border-radius: 50%
 }
 
 .spinner-4mFvw6 {
@@ -168065,4 +168073,4 @@ html .invoiceCancelRow-dVOR64 {
     margin-bottom: 16px
 }
 
-/*# sourceMappingURL=40532.c18f3bb500abc0f99766.css.map*/
+/*# sourceMappingURL=40532.41a2e738efb46068c67d.css.map*/
