@@ -47699,19 +47699,28 @@ html .progress-2Otdc- {
 }
 
 .seasonalGiftEmbedWrapper-3-ABcb {
-    height: 128px
-}
-
-.seasonalGiftEmbedWrapper-3-ABcb,
-.seasonalGiftEmbedWrapperHorizontal-zeHSkC {
-    margin: 0;
-    overflow: hidden;
-    position: relative;
     background: linear-gradient(102.85deg, #26569e 2.16%, #3584d5 46.11%, #5dbace 99.42%);
     background-position: 50% 50%
 }
 
-.seasonalGiftEmbedWrapperHorizontal-zeHSkC {
+.customGiftEmbedWrapper-2juaPF,
+.seasonalGiftEmbedWrapper-3-ABcb {
+    margin: 0;
+    overflow: hidden;
+    position: relative;
+    height: 128px
+}
+
+.customGiftEmbedWrapper-2juaPF,
+.giftEmbedWrapperHorizontal-wq8NY7 {
+    background: var(--background-tertiary);
+    background-position: 50% 50%
+}
+
+.giftEmbedWrapperHorizontal-wq8NY7 {
+    margin: 0;
+    overflow: hidden;
+    position: relative;
     height: 100%;
     -webkit-box-flex: 1;
     -ms-flex: 1;
@@ -47733,6 +47742,14 @@ html .progress-2Otdc- {
     height: 110%;
     right: -8px;
     bottom: -24px;
+    z-index: 1
+}
+
+.customGiftEmbedBox-1L9BlG {
+    position: absolute;
+    height: 90%;
+    right: -4px;
+    bottom: 20px;
     z-index: 1
 }
 
@@ -160776,23 +160793,29 @@ html .invoiceCancelRow-3s2UuC {
     padding: 32px;
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
-    margin: 44px auto 300px
+    margin: 44px auto 300px;
+    position: relative;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column
 }
 
-.closeWrapper-4ioOGM {
-    margin-right: auto;
-    margin-left: auto;
-    left: 0;
-    right: 0;
-    position: fixed;
+.close-1CF18x,
+.page-LilLhg {
     display: -webkit-box;
     display: -ms-flexbox;
-    display: flex;
+    display: flex
+}
+
+.close-1CF18x {
+    position: fixed;
     -webkit-box-pack: end;
     -ms-flex-pack: end;
     justify-content: flex-end;
-    width: 1176px;
-    margin-top: 64px
+    pointer-events: none;
+    top: 32px;
+    right: 32px
 }
 
 .closeIcon-ErXdZG {
@@ -167926,4 +167949,4 @@ html .invoiceCancelRow-dVOR64 {
     margin-bottom: 16px
 }
 
-/*# sourceMappingURL=40532.5c6c30121c6b24798ad4.css.map*/
+/*# sourceMappingURL=40532.7abb887312fa3c9fc3b8.css.map*/
