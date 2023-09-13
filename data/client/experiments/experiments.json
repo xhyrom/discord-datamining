@@ -1979,6 +1979,27 @@
   {
     "data": {
       "kind": "user",
+      "id": "2023-08_custom_gift",
+      "label": "Custom Gift Experiment",
+      "description": [
+        "Not Eligible",
+        "Control Bucket",
+        "Treatment 1: Show gift purchaser custom gift flow"
+      ],
+      "hash": 1100309809,
+      "buckets": [
+        -1,
+        0,
+        1
+      ],
+      "config_keys": [
+        "enabled"
+      ]
+    }
+  },
+  {
+    "data": {
+      "kind": "user",
       "id": "2023-03_store_latest_message_data",
       "label": "Store latest message data",
       "description": [
@@ -4567,27 +4588,6 @@
       "revision": 0,
       "overrides": {},
       "overrides_formatted": []
-    }
-  },
-  {
-    "data": {
-      "kind": "user",
-      "id": "2023-08_custom_gift",
-      "label": "Custom Gift Experiment",
-      "description": [
-        "Not Eligible",
-        "Control Bucket",
-        "Treatment 1: Show gift purchaser custom gift flow"
-      ],
-      "hash": 1100309809,
-      "buckets": [
-        -1,
-        0,
-        1
-      ],
-      "config_keys": [
-        "enabled"
-      ]
     }
   },
   {
