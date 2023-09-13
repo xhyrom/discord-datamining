@@ -5789,6 +5789,27 @@
   },
   {
     "data": {
+      "kind": "user",
+      "id": "2022-12_seasonal_gifting",
+      "label": "Seasonal Gifting",
+      "description": [
+        "Not Eligible",
+        "Control Bucket",
+        "Treatment 1: Enabled"
+      ],
+      "hash": 184775741,
+      "buckets": [
+        -1,
+        0,
+        1
+      ],
+      "config_keys": [
+        "enabled"
+      ]
+    }
+  },
+  {
+    "data": {
       "kind": "guild",
       "id": "2023-03_guild_media_channel",
       "label": "Media Channel",
@@ -7183,27 +7204,6 @@
         "Treatment 1: enable Activities in text channels"
       ],
       "hash": 1295440499,
-      "buckets": [
-        -1,
-        0,
-        1
-      ],
-      "config_keys": [
-        "enabled"
-      ]
-    }
-  },
-  {
-    "data": {
-      "kind": "user",
-      "id": "2022-12_seasonal_gifting",
-      "label": "Seasonal Gifting",
-      "description": [
-        "Not Eligible",
-        "Control Bucket",
-        "Treatment 1: Enabled"
-      ],
-      "hash": 184775741,
       "buckets": [
         -1,
         0,
