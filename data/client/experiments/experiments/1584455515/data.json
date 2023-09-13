@@ -1,0 +1,21 @@
+{
+  "data": {
+    "kind": "user",
+    "id": "2023-09_whats_new_drop_1_flip",
+    "label": "What's New Drop 1",
+    "description": [
+      "Not Eligible",
+      "Control Bucket",
+      "Treatment 1: Flipped"
+    ],
+    "hash": 1584455515,
+    "buckets": [
+      -1,
+      0,
+      1
+    ],
+    "config_keys": [
+      "enabled"
+    ]
+  }
+}
