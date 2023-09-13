@@ -889,10 +889,6 @@
       "OPTIONS"
     ]
   },
-  "COLLECTIBLES_ASSET": {
-    "url": "/applications/1096190356233670716/app-assets/:param.:param",
-    "allowed_methods": null
-  },
   "GUILD_MEMBER_BANNER": {
     "url": "/guilds/:param/users/:param/banners/:param.:param",
     "allowed_methods": null
@@ -2817,6 +2813,10 @@
       "DELETE",
       "OPTIONS"
     ]
+  },
+  "APPLICATION_ASSET": {
+    "url": "/applications/:param/app-assets/:param.:param",
+    "allowed_methods": null
   },
   "HYPESQUAD_ONLINE": {
     "url": "/hypesquad/online",
