@@ -100783,21 +100783,84 @@ html:not(.custom-theme-background) .container-Vrgqxz {
     vertical-align: middle
 }
 
-.perspectiveContainer-1Vwhgl {
+.flipCardContainer-Yr1oDc,
+.noFlipCardContainer-EXGBVu {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    height: 100%;
+    width: 100%
+}
+
+.noFlipCardContainer-EXGBVu:hover .card-20tMLf {
+    -webkit-box-shadow: var(--shadow-high);
+    box-shadow: var(--shadow-high);
+    -webkit-transform: translateY(-8px);
+    transform: translateY(-8px)
+}
+
+.flipCardContainer-Yr1oDc {
     -webkit-perspective: 1000px;
     perspective: 1000px
 }
 
-.perspectiveContainer-1Vwhgl:hover .partialFlip-O7CNrg {
+.flipCardContainer-Yr1oDc .card-20tMLf {
+    height: calc(100% - 48px);
+    width: calc(100% - 48px)
+}
+
+.flipCardContainer-Yr1oDc .partialFlipCard-3ljnDA {
+    aspect-ratio: 1
+}
+
+.flipCardContainer-Yr1oDc .partialFlipCard-3ljnDA:hover .card-20tMLf {
+    -webkit-box-shadow: var(--shadow-high);
+    box-shadow: var(--shadow-high);
+    -webkit-transform: translateY(-8px);
+    transform: translateY(-8px)
+}
+
+.flipCardContainer-Yr1oDc .flipCard-39OCl1.flipped-1ykbgv {
+    -webkit-transform: rotateY(-180deg);
+    transform: rotateY(-180deg)
+}
+
+.flipCardContainer-Yr1oDc:hover .partialFlipCard-3ljnDA {
     -webkit-transform: rotateY(-30deg);
     transform: rotateY(-30deg)
 }
 
-.perspectiveContainer-1Vwhgl:hover .partialFlip-O7CNrg .cover-1nw8ay {
-    opacity: 1
+.flipCard-39OCl1 {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    -webkit-transition: -webkit-transform .8s;
+    transition: -webkit-transform .8s;
+    transition: transform .8s;
+    transition: transform .8s, -webkit-transform .8s;
+    -webkit-transform-style: preserve-3d;
+    transform-style: preserve-3d
+}
+
+.flipCardBack-WarPiy,
+.flipCardFront-13TUSs {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden
+}
+
+.flipCardBack-WarPiy {
+    -webkit-transform: rotateY(180deg);
+    transform: rotateY(180deg)
+}
+
+.flipCardHidden-1lvo4J {
+    opacity: 0;
+    pointer-events: none
 }
 
 .card-20tMLf {
@@ -100815,17 +100878,15 @@ html:not(.custom-theme-background) .container-Vrgqxz {
     -webkit-box-align: start;
     -ms-flex-align: start;
     align-items: flex-start;
-    -webkit-box-flex: 1;
-    -ms-flex-positive: 1;
-    flex-grow: 1;
+    width: 100%;
     padding: 24px;
     background-color: var(--background-floating);
     border-radius: 20px;
     background-size: cover;
     background-repeat: no-repeat;
-    overflow: hidden;
     -webkit-transition: all .2s ease-in-out;
-    transition: all .2s ease-in-out
+    transition: all .2s ease-in-out;
+    overflow: hidden
 }
 
 .card-20tMLf:hover .cardDescription-23s_MQ {
@@ -100838,20 +100899,6 @@ html:not(.custom-theme-background) .container-Vrgqxz {
 
 .clickable-1A6JsZ {
     cursor: pointer
-}
-
-.clickable-1A6JsZ:hover {
-    -webkit-box-shadow: var(--shadow-high);
-    box-shadow: var(--shadow-high);
-    -webkit-transform: translateY(-8px);
-    transform: translateY(-8px)
-}
-
-.whatsNew-2zakho:hover {
-    -webkit-box-shadow: var(--shadow-high);
-    box-shadow: var(--shadow-high);
-    -webkit-transform: translateY(-8px);
-    transform: translateY(-8px)
 }
 
 .pill-1KzVqx {
@@ -167797,4 +167844,4 @@ html .invoiceCancelRow-dVOR64 {
     margin-bottom: 16px
 }
 
-/*# sourceMappingURL=40532.90c9e5e926d5c036956a.css.map*/
+/*# sourceMappingURL=40532.7814f0cfa676102dc3c1.css.map*/
