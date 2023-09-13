@@ -31507,13 +31507,22 @@ img[alt] {
 
 .modalHeader-gQTY3L {
     margin-bottom: -20px;
-    padding-bottom: 0;
-    background-image: -webkit-gradient(linear, left top, left bottom, from(var(--modal-background)), to(var(--modal-background)));
-    background-image: linear-gradient(var(--modal-background), var(--modal-background));
-    background-size: 100% calc(100% - 20px);
     background-position: 0 10px;
     background-repeat: no-repeat;
     overflow: clip
+}
+
+.modalHeader-gQTY3L,
+.modalHeaderCustomGift-2OEGVy {
+    padding-bottom: 0;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(var(--modal-background)), to(var(--modal-background)));
+    background-image: linear-gradient(var(--modal-background), var(--modal-background));
+    background-size: 100% calc(100% - 20px)
+}
+
+.modalHeaderCustomGift-2OEGVy {
+    margin-bottom: 0;
+    border-bottom: 1.5px solid var(--background-modifier-accent)
 }
 
 .header-2hjw1J {
@@ -31532,6 +31541,10 @@ img[alt] {
     -webkit-transform: translateX(-50%);
     transform: translateX(-50%);
     width: 100%
+}
+
+.giftNitroInfo-3j5i5M {
+    margin-bottom: 10px
 }
 
 .seasonalGiftBoxHeaderIcon-3IQVSR {
@@ -40985,6 +40998,27 @@ input[type=checked]:focus-visible+.label-3TDpbn {
     font-weight: 600
 }
 
+.giftRecipientInfo-oLFZzH {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center
+}
+
+.giftRecipientInfo-oLFZzH>* {
+    margin-right: 8px
+}
+
+.content-GeF06t {
+    margin-bottom: 30px
+}
+
+.giftRecipientName-35QsQT {
+    color: GrayText
+}
+
 .stepBody-3ZoVrh {
     padding-top: 12px
 }
@@ -41150,6 +41184,10 @@ input[type=checked]:focus-visible+.label-3TDpbn {
 
 .root-2s1-ri.withHeader-1pNqnP>:first-child {
     background-color: transparent
+}
+
+.giftMainAnimation-n9Ztg4 {
+    margin-bottom: 20px
 }
 
 .shaker-bevRrZ {
@@ -41628,8 +41666,8 @@ input[type=checked]:focus-visible+.label-3TDpbn {
     margin-top: 20px
 }
 
-.headerSeasonalGifting-3UKbTP {
-    margin-top: 120px
+.headerCustomGifting-a8qVSV {
+    margin-top: 60px
 }
 
 .termsCheckbox-2icdza {
@@ -168667,4 +168705,4 @@ html .invoiceCancelRow-dVOR64 {
     margin-bottom: 16px
 }
 
-/*# sourceMappingURL=40532.07c7bd3e62473b1c8294.css.map*/
+/*# sourceMappingURL=40532.e82f77a7ff215e1c97ce.css.map*/
