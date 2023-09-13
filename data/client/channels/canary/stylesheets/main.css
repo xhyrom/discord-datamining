@@ -153737,14 +153737,19 @@ html .invoiceCancelRow-3s2UuC {
 }
 
 .banner-1xzgK7 {
-    background: url(/assets/f4a8843666e0c4ecf504a13e4e13d0e8.png) no-repeat;
+    background: -webkit-gradient(linear, left top, left bottom, from(var(--premium-tier-0-header-gradient-1)), color-stop(25%, var(--premium-tier-0-header-gradient-2)), color-stop(50%, var(--premium-tier-0-header-gradient-3)), color-stop(75%, var(--premium-tier-0-header-gradient-4)), to(var(--premium-tier-0-header-gradient-5)));
+    background: linear-gradient(180deg, var(--premium-tier-0-header-gradient-1), var(--premium-tier-0-header-gradient-2) 25%, var(--premium-tier-0-header-gradient-3) 50%, var(--premium-tier-0-header-gradient-4) 75%, var(--premium-tier-0-header-gradient-5));
     height: 100px;
     margin-bottom: 24px;
+    margin-top: 24px;
     border-radius: 6px;
     position: relative
 }
 
 .bannerBody-3C2WHT {
+    background-color: hsl(var(--black-500-hsl)/.2);
+    height: 100%;
+    border-radius: inherit;
     -webkit-box-pack: center;
     -ms-flex-pack: center;
     justify-content: center;
@@ -153767,26 +153772,37 @@ html .invoiceCancelRow-3s2UuC {
     -webkit-box-flex: 3;
     -ms-flex: 3;
     flex: 3;
-    margin-top: 16px
+    margin-top: 16px;
+    padding: 0 16px
+}
+
+.textBody-1qjeO3 {
+    margin-top: 4px;
+    padding-right: 32px
 }
 
 .bannerDeco1-1SW8_d {
-    height: 62px;
-    position: absolute
+    position: absolute;
+    left: -16px;
+    top: -16px;
+    -webkit-transform: rotate(-18.8deg);
+    transform: rotate(-18.8deg)
 }
 
 .bannerDeco2-1eKoT- {
-    height: 56px;
-    margin-left: 54px;
-    margin-top: 16px;
-    position: absolute
+    margin-left: 70px;
+    margin-top: 8px;
+    position: absolute;
+    -webkit-transform: rotate(15deg);
+    transform: rotate(15deg)
 }
 
 .bannerDeco3-fSQ7G1 {
-    margin-top: 52px;
-    margin-left: 24px;
-    height: 46px;
-    position: absolute
+    margin-top: 66px;
+    margin-left: 36px;
+    position: absolute;
+    -webkit-transform: rotate(-9deg);
+    transform: rotate(-9deg)
 }
 
 .bannerCTAWrapper-KFQ6Gg {
@@ -160634,29 +160650,19 @@ html .invoiceCancelRow-3s2UuC {
 }
 
 .closeWrapper-4ioOGM {
-    position: absolute;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    justify-content: center;
-    top: 32px;
-    right: 32px;
-    z-index: 1
-}
-
-.closeContent-1VSMwH,
-.closeWrapper-4ioOGM {
+    margin-right: auto;
+    margin-left: auto;
+    left: 0;
+    right: 0;
+    position: fixed;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    width: 100%
-}
-
-.closeContent-1VSMwH {
-    position: fixed;
     -webkit-box-pack: end;
     -ms-flex-pack: end;
     justify-content: flex-end;
-    pointer-events: none
+    width: 1176px;
+    margin-top: 64px
 }
 
 .closeIcon-ErXdZG {
@@ -160674,6 +160680,12 @@ html .invoiceCancelRow-3s2UuC {
 
 .shop-3sIaH8 {
     background-color: var(--background-floating)
+}
+
+@media (orientation:portrait) {
+    .closeWrapper-4ioOGM {
+        width: inherit
+    }
 }
 
 .shopBanner-PEO5bV {
@@ -160910,10 +160922,10 @@ html .invoiceCancelRow-3s2UuC {
 
 .heroBanner-15dNeS {
     width: 100%;
-    height: 340px;
-    min-width: 640px;
-    background-image: url(/assets/250c1a91e980a1f9eae61934c3ee6e4c.png), -webkit-gradient(linear, left top, left bottom, from(var(--premium-tier-0-header-gradient-1)), color-stop(25%, var(--premium-tier-0-header-gradient-2)), color-stop(50%, var(--premium-tier-0-header-gradient-3)), color-stop(75%, var(--premium-tier-0-header-gradient-4)), to(var(--premium-tier-0-header-gradient-5)));
-    background-image: url(/assets/250c1a91e980a1f9eae61934c3ee6e4c.png), linear-gradient(180deg, var(--premium-tier-0-header-gradient-1), var(--premium-tier-0-header-gradient-2) 25%, var(--premium-tier-0-header-gradient-3) 50%, var(--premium-tier-0-header-gradient-4) 75%, var(--premium-tier-0-header-gradient-5));
+    height: 300px;
+    min-width: 840px;
+    background: -webkit-gradient(linear, left top, left bottom, from(var(--premium-tier-0-header-gradient-1)), color-stop(25%, var(--premium-tier-0-header-gradient-2)), color-stop(50%, var(--premium-tier-0-header-gradient-3)), color-stop(75%, var(--premium-tier-0-header-gradient-4)), to(var(--premium-tier-0-header-gradient-5)));
+    background: linear-gradient(180deg, var(--premium-tier-0-header-gradient-1), var(--premium-tier-0-header-gradient-2) 25%, var(--premium-tier-0-header-gradient-3) 50%, var(--premium-tier-0-header-gradient-4) 75%, var(--premium-tier-0-header-gradient-5));
     background-size: contain, cover;
     background-position: 100% 100%, 50%;
     background-repeat: no-repeat, no-repeat;
@@ -160934,60 +160946,118 @@ html .invoiceCancelRow-3s2UuC {
     position: relative
 }
 
+.bannerBackgroundWrapper-29zgRc {
+    max-width: 45%;
+    height: inherit;
+    overflow: hidden
+}
+
+.bannerBackground-AHhCcI {
+    position: relative;
+    height: 320px;
+    margin-top: 75px;
+    margin-right: 20px
+}
+
+.bannerForeground-2T7puc {
+    position: absolute;
+    right: 50px;
+    bottom: -12px;
+    height: 100px
+}
+
+.bannerHand-2NxPzG {
+    position: absolute;
+    height: 180px;
+    right: 126px
+}
+
 .heroDescription-2QJJDj {
-    max-width: 65%
+    max-width: 50%
 }
 
 .heroDescription-2QJJDj>* {
-    margin-left: 64px
+    margin-left: 64px;
+    margin-right: 32px
+}
+
+.bannerTitle-suxdlR {
+    font-family: var(--font-primary)
+}
+
+.premiumBadgeWrapper-3KlQro {
+    border: 2px solid var(--white-500);
+    border-radius: 32px;
+    width: 190px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    margin-bottom: 4px
+}
+
+.premiumBadgeText-3mF6ua {
+    padding-left: 4px
 }
 
 .heroSubtitle-xmNmnh {
     margin-top: 16px
 }
 
-.heroConfetti-3lgglU {
-    position: absolute
+.largeSparkle-1sFpip {
+    position: absolute;
+    height: 65px
 }
 
-.confetti1-RQDn4f {
-    width: 105px;
-    top: -32px;
-    left: 60%
+.smallSparkle-3Rw0iN {
+    position: absolute;
+    height: 30px
 }
 
-.confetti2-Q-FhBM {
-    width: 98px;
-    top: 25%;
-    left: 55%
+.largeTopSparkle-2PsYzN {
+    top: -16px;
+    right: 400px
 }
 
-.confetti3-g4Eirc {
-    width: 83px;
-    bottom: 0;
-    left: 58%
+.smallTopSparkle-FBQpgC {
+    right: 380px;
+    top: 36px
 }
 
-.confetti4-1RRZiL {
-    width: 105px;
-    top: -32px;
-    left: 25%
+.largeLeftSparkle-3U3kQ1 {
+    right: 480px;
+    bottom: 100px
 }
 
-.confettiStarLarge-2XeK_X {
-    width: 89px;
-    bottom: 32px;
-    left: -45px
+.smallLeftSparkle-3AL0_n {
+    right: 510px;
+    bottom: 85px
 }
 
-.confettiStarSmall-1GbuMh {
-    width: 39px;
-    bottom: 24px;
-    left: 44px
+.largeRightSparkle-3neVXZ {
+    right: 16px;
+    top: 56px
+}
+
+.smallRightSparkle-3WyLPd {
+    right: -8px
 }
 
 .subscribeButton-3rUkdg {
     margin-top: 16px
+}
+
+@media (orientation:portrait) {
+
+    .largeLeftSparkle-3U3kQ1,
+    .smallLeftSparkle-3AL0_n {
+        display: none
+    }
 }
 
 @-webkit-keyframes placeholderPulse-ooES5N {
@@ -167575,6 +167645,10 @@ html .invoiceCancelRow-dVOR64 {
     max-width: 240px
 }
 
+.profileCustomizationBody-3_pZnZ {
+    min-height: 100px
+}
+
 .modalContent-JK5iQA,
 .root-2-pdq6 {
     overflow: hidden
@@ -167722,4 +167796,4 @@ html .invoiceCancelRow-dVOR64 {
     margin-bottom: 16px
 }
 
-/*# sourceMappingURL=40532.b9edb8c2a3c505969646.css.map*/
+/*# sourceMappingURL=40532.b7ad1088a4782940a832.css.map*/
