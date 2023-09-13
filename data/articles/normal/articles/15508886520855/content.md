@@ -8,7 +8,7 @@
 </ul>
 <h1 id="h_01H69P9TPDBSM0H8GP2ZRP31EZ">WHAT IS BOBBLE BASH?</h1>
 <p>Bobble Bash is an <a href="https://support.discord.com/hc/en-us/articles/4422142836759-Activities-on-Discord" target="_blank" rel="noopener noreferrer">Activity</a> developed by Discord. It is a tabletop point collection game, where players bash their way between obstacles to score and win. Think shuffleboard meets bumper cars. Similar to Bobble League, the game features turn-based strategy and physics.</p>
-<h3 class="wysiwyg-text-align-center">!PHOTO AND MOTION SENSITIVITY WARNING!<br>This game contains motion that might cause discomfort or motion sickness. You can zoom out for a steady camera or disable the camera shake in the options menu!</h3>
+<h3 id="h_01HA87DY9JKKXB4N9MJ68GED72" class="wysiwyg-text-align-center">!PHOTO AND MOTION SENSITIVITY WARNING!<br>This game contains motion that might cause discomfort or motion sickness. You can zoom out for a steady camera or disable the camera shake in the options menu!</h3>
 <h1 id="h_01H69PGF7DGYVPJKQZBSVP13Y0">HOW TO START A BOBBLE BASH GAME</h1>
 <p>There are many different ways you can launch Bobble Bash in the Discord app for you and your friends! Whether in a server’s voice channel or a direct message, you can check out <a href="https://support.discord.com/hc/en-us/articles/4422142836759" target="_blank" rel="noopener noreferrer">Activities on Discord</a> for instructions on how to start any Activity.</p>
 <h1 id="h_01H69PGWK98E4VHGFDD5KGDMDR">HOW TO PLAY BOBBLE BASH</h1>
@@ -45,6 +45,6 @@
     <li>Username</li>
 </ul>
 <p>For Activities played in a single session, user data is stored so long as the Activity remains active, even if the user leaves the Activity. Once all users leave the Activity and it is determined the Activity has ended, the user data is deleted and no longer retained.</p>
-<h3><span style="color: #434343;" data-darkreader-inline-color="">Note: Deleting your data will remove all of your progression across these Discord-developed activities.</span></h3>
+<h3 id="h_01HA87DY9J8Q1HRDP1MH3AW3SJ"><span style="color: #434343;" data-darkreader-inline-color="">Note: Deleting your data will remove all of your progression across these Discord-developed activities.</span></h3>
 <p><strong>Q: My question isn't listed, what do I do?</strong></p>
 <p>A: If all is lost, please submit a ticket to our support team at <a href="https://dis.gd/contact"><span class="wysiwyg-underline" style="color: #1155cc;" data-darkreader-inline-color="">https://dis.gd/contact</span></a></p>
