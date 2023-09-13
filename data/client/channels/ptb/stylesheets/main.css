@@ -40321,21 +40321,6 @@ input[type=checked]:focus-visible+.label-3TDpbn {
     padding: 8px 0
 }
 
-.planOneTimeCost-lTo8GH {
-    margin-top: 8px
-}
-
-.selectionBox-5eGI8K {
-    outline: 2px solid var(--background-modifier-accent);
-    padding: 10px;
-    border-radius: 2px;
-    margin-bottom: 12px
-}
-
-.selectedPlan-29eJUF {
-    outline: 2px solid var(--brand-500)
-}
-
 .planOptionDisabled-388T-b {
     opacity: .6
 }
@@ -167964,4 +167949,4 @@ html .invoiceCancelRow-dVOR64 {
     margin-bottom: 16px
 }
 
-/*# sourceMappingURL=40532.d255d7d897b060df5009.css.map*/
+/*# sourceMappingURL=40532.7abb887312fa3c9fc3b8.css.map*/
