@@ -4572,27 +4572,6 @@
   {
     "data": {
       "kind": "user",
-      "id": "2023-05_lock_icon",
-      "label": "Checkout Lock Icon",
-      "description": [
-        "Not Eligible",
-        "Control Bucket",
-        "Treatment 1: Enabled"
-      ],
-      "hash": 853908483,
-      "buckets": [
-        -1,
-        0,
-        1
-      ],
-      "config_keys": [
-        "enabled"
-      ]
-    }
-  },
-  {
-    "data": {
-      "kind": "user",
       "id": "2023-08_custom_gift",
       "label": "Custom Gift Experiment",
       "description": [
