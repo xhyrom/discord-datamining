@@ -16092,6 +16092,7 @@
   "CHANNEL_PROMPT_UPLOAD_IMAGE_CTA": "\"Upload a picture\"",
   "CHANNEL_PROMPT_RANDOM_STICKER_CTA": "\"Random sticker\"",
   "DEADCHAT_PROMPT_1": "\"It's quiet in here.\"",
+  "CHANNEL_PROMPT_GAMING_CTA": "\"Get my stats!\"",
   "USER_SETTINGS_APPEARANCE_CHANNEL_LIST_LAYOUT_SIMPLIFIED": "\"Simplified\"",
   "FORCED_SECURE_FRAMES_INCOMPATIBLE_TITLE": "\"Disconnected\"",
   "FORCED_SECURE_FRAMES_INCOMPATIBLE_BODY": "\"That channel forces testing of secure frames for audio/video, but your client does not support the protocol version and we do not yet support protocol negotiation.\\n\\n We disconnected you from the channel to protect your ears.\"",
