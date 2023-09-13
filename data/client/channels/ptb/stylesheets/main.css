@@ -29160,10 +29160,11 @@ img[alt] {
     margin-top: 12px
 }
 
-.paymentDetail-3Hi99Q:first-child,
-.paymentDetail-3Hi99Q:last-child {
+.paymentDetail-3Hi99Q:first-child {
     margin-top: 20px
 }
+
+.guildProductDetail-1YlYZ8 {}
 
 .date-2cJd4O {
     width: 20%
@@ -35906,27 +35907,27 @@ img[alt] {
     height: 20px
 }
 
-.title-3cSe_p {
+.title-10HAaR {
     font-weight: 700;
     margin-top: 11px;
     margin-bottom: 8px
 }
 
-.body-11uPfb,
-.title-3cSe_p {
+.body-1cRN2e,
+.title-10HAaR {
     text-align: center
 }
 
-.body-11uPfb {
+.body-1cRN2e {
     margin-bottom: 16px
 }
 
-.art-1AsTRO {
+.art-2Ne17O {
     height: 105px;
     margin-top: -88px
 }
 
-.linkCalloutContainer-23jDxd {
+.linkCalloutContainer-NV0wYY {
     border-radius: 8px;
     border: 1px solid var(--background-modifier-accent);
     -webkit-box-pack: justify;
@@ -167796,4 +167797,4 @@ html .invoiceCancelRow-dVOR64 {
     margin-bottom: 16px
 }
 
-/*# sourceMappingURL=40532.24972a460217dd372fce.css.map*/
+/*# sourceMappingURL=40532.90c9e5e926d5c036956a.css.map*/
