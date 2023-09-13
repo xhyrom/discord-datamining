@@ -35906,27 +35906,27 @@ img[alt] {
     height: 20px
 }
 
-.title-3cSe_p {
+.title-10HAaR {
     font-weight: 700;
     margin-top: 11px;
     margin-bottom: 8px
 }
 
-.body-11uPfb,
-.title-3cSe_p {
+.body-1cRN2e,
+.title-10HAaR {
     text-align: center
 }
 
-.body-11uPfb {
+.body-1cRN2e {
     margin-bottom: 16px
 }
 
-.art-1AsTRO {
+.art-2Ne17O {
     height: 105px;
     margin-top: -88px
 }
 
-.linkCalloutContainer-23jDxd {
+.linkCalloutContainer-NV0wYY {
     border-radius: 8px;
     border: 1px solid var(--background-modifier-accent);
     -webkit-box-pack: justify;
@@ -40689,36 +40689,28 @@ html .progress-2Otdc- {
 }
 
 .header-XAevvr {
+    margin-top: 8px;
+    margin-bottom: 40px
+}
+
+.header-XAevvr,
+.titleContainer-1P_BAz {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
     -ms-flex-direction: row;
     flex-direction: row;
-    margin-top: 8px;
-    margin-bottom: 40px;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
     -webkit-box-pack: justify;
     -ms-flex-pack: justify;
     justify-content: space-between
 }
 
-.header-XAevvr,
-.headerName-2jZqFB,
 .titleContainer-1P_BAz {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center
-}
-
-.titleContainer-1P_BAz {
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: row;
-    flex-direction: row;
-    -webkit-box-pack: justify;
-    -ms-flex-pack: justify;
-    justify-content: space-between;
     width: 100%
 }
 
@@ -41082,12 +41074,8 @@ html .progress-2Otdc- {
     -webkit-box-direction: normal;
     -ms-flex-direction: column;
     flex-direction: column;
-    height: 100%
-}
-
-.expandFull-2z5A_C {
-    width: 100%;
-    height: 100%
+    height: 100%;
+    width: 100%
 }
 
 .badge-ywz4LX {
@@ -48004,12 +47992,12 @@ input[type=checked]:focus-visible+.label-3TDpbn {
     display: block
 }
 
-.mainContainer-1Pjp4M.compact-2eRAQf {
+.mainContainer-19qcNt.compact-32C6h3 {
     padding-left: 0;
     margin-left: -3.95rem
 }
 
-.actions-3Nv0lZ {
+.actions-2aNv4L {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -48020,12 +48008,16 @@ input[type=checked]:focus-visible+.label-3TDpbn {
     gap: 16px
 }
 
-.mainContainer-1R3nb-.compact-2jdxyL {
+.embed-2bVvuf {
+    margin: 8px 0
+}
+
+.mainContainer-1Pjp4M.compact-2eRAQf {
     padding-left: 0;
     margin-left: -3.95rem
 }
 
-.actions-1kRARe {
+.actions-3Nv0lZ {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -54557,6 +54549,24 @@ input[type=checked]:focus-visible+.label-3TDpbn {
     height: 94px
 }
 
+.logo-1aykp2 {
+    color: var(--header-primary)
+}
+
+.title-1AchJh {
+    font-size: 17px
+}
+
+.header--tvEWV {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    gap: 8px
+}
+
 .container-2DssOM {
     display: grid;
     grid-template-columns: repeat(6, auto);
@@ -60382,6 +60392,65 @@ strong {
     }
 }
 
+.coachmark-2wbauW {
+    margin-left: 8px;
+    width: 280px
+}
+
+.coachmark-2wbauW:after {
+    top: 8px !important;
+    right: calc(100% - 8px) !important
+}
+
+.container-3qYHDX {
+    position: absolute
+}
+
+@-webkit-keyframes fadeOut-1SFVt9 {
+    0% {
+        opacity: 1;
+        visibility: visible
+    }
+
+    99% {
+        opacity: .01;
+        visibility: visible
+    }
+
+    to {
+        opacity: 0;
+        visibility: hidden
+    }
+}
+
+@keyframes fadeOut-1SFVt9 {
+    0% {
+        opacity: 1;
+        visibility: visible
+    }
+
+    99% {
+        opacity: .01;
+        visibility: visible
+    }
+
+    to {
+        opacity: 0;
+        visibility: hidden
+    }
+}
+
+.upsell-LJfQI7 {
+    position: absolute;
+    z-index: 1000;
+    opacity: 1
+}
+
+.upsell-LJfQI7.hidden-2-HfKA {
+    -webkit-animation: fadeOut-1SFVt9 .3s forwards;
+    animation: fadeOut-1SFVt9 .3s forwards
+}
+
 .btnHamburger-3GF0_5 {
     width: 60px;
     height: 45px;
@@ -64355,7 +64424,8 @@ strong {
     grid-template-columns: repeat(auto-fill, 332px)
 }
 
-.card-2cxbBa:hover {
+.card-2cxbBa:hover .cardContent-3kz5is,
+.selectedCard-BP5u4F {
     -webkit-transform: scale(.97);
     transform: scale(.97);
     border-radius: var(--radius-sm);
@@ -77820,34 +77890,6 @@ html:not(.custom-theme-background) .container-Vrgqxz {
     }
 }
 
-.bannerContainer-1hFfQ1 {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
-    padding: 16px;
-    background: linear-gradient(135deg, var(--brand-500), var(--brand-400));
-    border-radius: 8px
-}
-
-.heading-1W7Ix- {
-    margin-left: 16px
-}
-
-.headingText-17dbtB {
-    margin-bottom: 4px
-}
-
-.buttonContainer-oLXVjt {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    gap: 8px;
-    margin-left: auto
-}
-
 .subheaderContainer-td9gEK {
     padding: 16px;
     -webkit-box-pack: justify;
@@ -83232,6 +83274,13 @@ html:not(.custom-theme-background) .container-Vrgqxz {
 .newChannel-3uRBAS {
     color: var(--white-500);
     margin-top: 1.75px
+}
+
+.coachmark-1Yj9lQ {
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    left: 50%
 }
 
 .message-1WzYhw {
@@ -133484,10 +133533,6 @@ input::-webkit-outer-spin-button {
     padding-bottom: 30px
 }
 
-.spacing-3gLx1N {
-    margin-bottom: 20px
-}
-
 .body-3lgQR9 {
     color: var(--text-normal);
     font-size: 16px;
@@ -136446,7 +136491,7 @@ html .invoiceCancelRow-3s2UuC {
 }
 
 .classificationPolicyLinkIcon-1jNNk7 {
-    margin-left: 12px;
+    margin-left: auto;
     margin-right: 12px
 }
 
@@ -139238,37 +139283,6 @@ html .invoiceCancelRow-3s2UuC {
     -ms-flex-align: center;
     align-items: center;
     gap: 8px
-}
-
-.closeButton-13HeT4 {
-    position: absolute;
-    -webkit-box-sizing: content-box;
-    box-sizing: content-box;
-    top: 12px;
-    right: 4px
-}
-
-.content-9qWvW1 {
-    text-align: center
-}
-
-.image-28utoj {
-    margin-top: 24px;
-    height: 90px;
-    width: auto
-}
-
-.title-TCs5KR {
-    margin-top: 16px
-}
-
-.body-wZs22w {
-    margin-top: 8px;
-    margin-bottom: 32px
-}
-
-.button-2lf1sL {
-    width: 100%
 }
 
 .modalHeader-2Be19q {
@@ -153723,14 +153737,19 @@ html .invoiceCancelRow-3s2UuC {
 }
 
 .banner-1xzgK7 {
-    background: url(/assets/f4a8843666e0c4ecf504a13e4e13d0e8.png) no-repeat;
+    background: -webkit-gradient(linear, left top, left bottom, from(var(--premium-tier-0-header-gradient-1)), color-stop(25%, var(--premium-tier-0-header-gradient-2)), color-stop(50%, var(--premium-tier-0-header-gradient-3)), color-stop(75%, var(--premium-tier-0-header-gradient-4)), to(var(--premium-tier-0-header-gradient-5)));
+    background: linear-gradient(180deg, var(--premium-tier-0-header-gradient-1), var(--premium-tier-0-header-gradient-2) 25%, var(--premium-tier-0-header-gradient-3) 50%, var(--premium-tier-0-header-gradient-4) 75%, var(--premium-tier-0-header-gradient-5));
     height: 100px;
     margin-bottom: 24px;
+    margin-top: 24px;
     border-radius: 6px;
     position: relative
 }
 
 .bannerBody-3C2WHT {
+    background-color: hsl(var(--black-500-hsl)/.2);
+    height: 100%;
+    border-radius: inherit;
     -webkit-box-pack: center;
     -ms-flex-pack: center;
     justify-content: center;
@@ -153753,26 +153772,37 @@ html .invoiceCancelRow-3s2UuC {
     -webkit-box-flex: 3;
     -ms-flex: 3;
     flex: 3;
-    margin-top: 16px
+    margin-top: 16px;
+    padding: 0 16px
+}
+
+.textBody-1qjeO3 {
+    margin-top: 4px;
+    padding-right: 32px
 }
 
 .bannerDeco1-1SW8_d {
-    height: 62px;
-    position: absolute
+    position: absolute;
+    left: -16px;
+    top: -16px;
+    -webkit-transform: rotate(-18.8deg);
+    transform: rotate(-18.8deg)
 }
 
 .bannerDeco2-1eKoT- {
-    height: 56px;
-    margin-left: 54px;
-    margin-top: 16px;
-    position: absolute
+    margin-left: 70px;
+    margin-top: 8px;
+    position: absolute;
+    -webkit-transform: rotate(15deg);
+    transform: rotate(15deg)
 }
 
 .bannerDeco3-fSQ7G1 {
-    margin-top: 52px;
-    margin-left: 24px;
-    height: 46px;
-    position: absolute
+    margin-top: 66px;
+    margin-left: 36px;
+    position: absolute;
+    -webkit-transform: rotate(-9deg);
+    transform: rotate(-9deg)
 }
 
 .bannerCTAWrapper-KFQ6Gg {
@@ -153967,6 +153997,7 @@ html .invoiceCancelRow-3s2UuC {
     width: 100%
 }
 
+.appArch-VKHeIn,
 .versionHash-mssSIL {
     text-transform: none
 }
@@ -160619,29 +160650,19 @@ html .invoiceCancelRow-3s2UuC {
 }
 
 .closeWrapper-4ioOGM {
-    position: absolute;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    justify-content: center;
-    top: 32px;
-    right: 32px;
-    z-index: 1
-}
-
-.closeContent-1VSMwH,
-.closeWrapper-4ioOGM {
+    margin-right: auto;
+    margin-left: auto;
+    left: 0;
+    right: 0;
+    position: fixed;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    width: 100%
-}
-
-.closeContent-1VSMwH {
-    position: fixed;
     -webkit-box-pack: end;
     -ms-flex-pack: end;
     justify-content: flex-end;
-    pointer-events: none
+    width: 1176px;
+    margin-top: 64px
 }
 
 .closeIcon-ErXdZG {
@@ -160661,11 +160682,18 @@ html .invoiceCancelRow-3s2UuC {
     background-color: var(--background-floating)
 }
 
+@media (orientation:portrait) {
+    .closeWrapper-4ioOGM {
+        width: inherit
+    }
+}
+
 .shopBanner-PEO5bV {
     grid-column: 1/-1;
     position: relative;
     background-size: cover;
-    width: 1060px;
+    width: 100%;
+    max-width: 1060px;
     height: 240px;
     border-radius: var(--radius-xxl);
     display: -webkit-box;
@@ -160710,22 +160738,28 @@ html .invoiceCancelRow-3s2UuC {
 }
 
 .shopCard-H3oN50 {
-    height: 300px;
     border-radius: var(--radius-xxl);
     border: 2px solid transparent;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
-    margin-left: auto;
-    margin-right: auto;
     grid-column: auto;
     min-width: 100%;
-    padding: 2px;
     -webkit-transition: -webkit-transform 1s, -webkit-box-shadow .5s;
     transition: -webkit-transform 1s, -webkit-box-shadow .5s;
     transition: transform 1s, box-shadow .5s;
     transition: transform 1s, box-shadow .5s, -webkit-transform 1s, -webkit-box-shadow .5s;
-    position: relative
+    padding: 40px 32px 32px;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between
 }
 
 .shopCard-H3oN50:hover {
@@ -160754,7 +160788,20 @@ html .invoiceCancelRow-3s2UuC {
 }
 
 .cardText-2OugTh {
-    margin-top: 32px
+    margin-top: 32px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -webkit-box-flex: 1;
+    -ms-flex: 1;
+    flex: 1
 }
 
 .description-1aSbLq {
@@ -160766,18 +160813,9 @@ html .invoiceCancelRow-3s2UuC {
 }
 
 .button-3VHqk5 {
-    margin: 24px auto 0;
-    width: 100%
-}
-
-.button-3VHqk5,
-.purchaseButton-16bBUi {
+    width: 100%;
     -webkit-transition: all .5s;
     transition: all .5s
-}
-
-.purchaseButton-16bBUi {
-    margin-top: 32px
 }
 
 .purchaseButton-16bBUi:hover {
@@ -160801,24 +160839,33 @@ html .invoiceCancelRow-3s2UuC {
     height: 16px
 }
 
+.detailsWrapper-_FRe44 {
+    position: relative;
+    -webkit-box-flex: 1;
+    -ms-flex: 1;
+    flex: 1
+}
+
 .innerHover-3lqG6f {
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
+    position: absolute;
+    width: 100%;
+    top: 50%;
     opacity: 0
 }
 
 .innerBlur-3NYZ8j,
 .innerHover-3lqG6f {
-    position: absolute;
-    left: 32px;
-    right: 32px;
     -webkit-transition: opacity .5s;
     transition: opacity .5s
 }
 
 .innerBlur-3NYZ8j {
-    opacity: 1
+    opacity: 1;
+    left: 32px;
+    right: 32px
 }
 
 .checkmarkWrapper-30c52R {
@@ -160847,8 +160894,8 @@ html .invoiceCancelRow-3s2UuC {
 }
 
 .shopCard-H3oN50:hover .button-3VHqk5 {
-    -webkit-transform: translateY(-16px);
-    transform: translateY(-16px)
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%)
 }
 
 .shopCard-H3oN50:hover .checkmark-1jbYXa {
@@ -160875,10 +160922,10 @@ html .invoiceCancelRow-3s2UuC {
 
 .heroBanner-15dNeS {
     width: 100%;
-    height: 340px;
-    min-width: 640px;
-    background-image: url(/assets/250c1a91e980a1f9eae61934c3ee6e4c.png), -webkit-gradient(linear, left top, left bottom, from(var(--premium-tier-0-header-gradient-1)), color-stop(25%, var(--premium-tier-0-header-gradient-2)), color-stop(50%, var(--premium-tier-0-header-gradient-3)), color-stop(75%, var(--premium-tier-0-header-gradient-4)), to(var(--premium-tier-0-header-gradient-5)));
-    background-image: url(/assets/250c1a91e980a1f9eae61934c3ee6e4c.png), linear-gradient(180deg, var(--premium-tier-0-header-gradient-1), var(--premium-tier-0-header-gradient-2) 25%, var(--premium-tier-0-header-gradient-3) 50%, var(--premium-tier-0-header-gradient-4) 75%, var(--premium-tier-0-header-gradient-5));
+    height: 300px;
+    min-width: 840px;
+    background: -webkit-gradient(linear, left top, left bottom, from(var(--premium-tier-0-header-gradient-1)), color-stop(25%, var(--premium-tier-0-header-gradient-2)), color-stop(50%, var(--premium-tier-0-header-gradient-3)), color-stop(75%, var(--premium-tier-0-header-gradient-4)), to(var(--premium-tier-0-header-gradient-5)));
+    background: linear-gradient(180deg, var(--premium-tier-0-header-gradient-1), var(--premium-tier-0-header-gradient-2) 25%, var(--premium-tier-0-header-gradient-3) 50%, var(--premium-tier-0-header-gradient-4) 75%, var(--premium-tier-0-header-gradient-5));
     background-size: contain, cover;
     background-position: 100% 100%, 50%;
     background-repeat: no-repeat, no-repeat;
@@ -160899,60 +160946,118 @@ html .invoiceCancelRow-3s2UuC {
     position: relative
 }
 
+.bannerBackgroundWrapper-29zgRc {
+    max-width: 45%;
+    height: inherit;
+    overflow: hidden
+}
+
+.bannerBackground-AHhCcI {
+    position: relative;
+    height: 320px;
+    margin-top: 75px;
+    margin-right: 20px
+}
+
+.bannerForeground-2T7puc {
+    position: absolute;
+    right: 50px;
+    bottom: -12px;
+    height: 100px
+}
+
+.bannerHand-2NxPzG {
+    position: absolute;
+    height: 180px;
+    right: 126px
+}
+
 .heroDescription-2QJJDj {
-    max-width: 65%
+    max-width: 50%
 }
 
 .heroDescription-2QJJDj>* {
-    margin-left: 64px
+    margin-left: 64px;
+    margin-right: 32px
+}
+
+.bannerTitle-suxdlR {
+    font-family: var(--font-primary)
+}
+
+.premiumBadgeWrapper-3KlQro {
+    border: 2px solid var(--white-500);
+    border-radius: 32px;
+    width: 190px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    margin-bottom: 4px
+}
+
+.premiumBadgeText-3mF6ua {
+    padding-left: 4px
 }
 
 .heroSubtitle-xmNmnh {
     margin-top: 16px
 }
 
-.heroConfetti-3lgglU {
-    position: absolute
+.largeSparkle-1sFpip {
+    position: absolute;
+    height: 65px
 }
 
-.confetti1-RQDn4f {
-    width: 105px;
-    top: -32px;
-    left: 60%
+.smallSparkle-3Rw0iN {
+    position: absolute;
+    height: 30px
 }
 
-.confetti2-Q-FhBM {
-    width: 98px;
-    top: 25%;
-    left: 55%
+.largeTopSparkle-2PsYzN {
+    top: -16px;
+    right: 400px
 }
 
-.confetti3-g4Eirc {
-    width: 83px;
-    bottom: 0;
-    left: 58%
+.smallTopSparkle-FBQpgC {
+    right: 380px;
+    top: 36px
 }
 
-.confetti4-1RRZiL {
-    width: 105px;
-    top: -32px;
-    left: 25%
+.largeLeftSparkle-3U3kQ1 {
+    right: 480px;
+    bottom: 100px
 }
 
-.confettiStarLarge-2XeK_X {
-    width: 89px;
-    bottom: 32px;
-    left: -45px
+.smallLeftSparkle-3AL0_n {
+    right: 510px;
+    bottom: 85px
 }
 
-.confettiStarSmall-1GbuMh {
-    width: 39px;
-    bottom: 24px;
-    left: 44px
+.largeRightSparkle-3neVXZ {
+    right: 16px;
+    top: 56px
+}
+
+.smallRightSparkle-3WyLPd {
+    right: -8px
 }
 
 .subscribeButton-3rUkdg {
     margin-top: 16px
+}
+
+@media (orientation:portrait) {
+
+    .largeLeftSparkle-3U3kQ1,
+    .smallLeftSparkle-3AL0_n {
+        display: none
+    }
 }
 
 @-webkit-keyframes placeholderPulse-ooES5N {
@@ -164093,6 +164198,37 @@ html .invoiceCancelRow-3s2UuC {
 
 .footer-1dszfg {
     background-color: var(--background-tertiary)
+}
+
+.closeButton-13HeT4 {
+    position: absolute;
+    -webkit-box-sizing: content-box;
+    box-sizing: content-box;
+    top: 12px;
+    right: 4px
+}
+
+.content-9qWvW1 {
+    text-align: center
+}
+
+.image-28utoj {
+    margin-top: 24px;
+    height: 90px;
+    width: auto
+}
+
+.title-TCs5KR {
+    margin-top: 16px
+}
+
+.body-wZs22w {
+    margin-top: 8px;
+    margin-bottom: 32px
+}
+
+.button-2lf1sL {
+    width: 100%
 }
 
 .description-2pRfjZ {
@@ -167363,6 +167499,7 @@ html .invoiceCancelRow-dVOR64 {
 }
 
 .collectibleInfoContainer-3uyaC5 {
+    padding: 20px;
     width: 276px
 }
 
@@ -167371,7 +167508,6 @@ html .invoiceCancelRow-dVOR64 {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    padding: 20px;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
     -ms-flex-direction: column;
@@ -167379,8 +167515,12 @@ html .invoiceCancelRow-dVOR64 {
 }
 
 .collectiblePreviewsContainer-2TJ889 {
-    gap: 24px;
+    padding: 80px 40px 20px 20px;
     background-size: cover
+}
+
+.previewContainerInner-28dlGW {
+    position: relative
 }
 
 .avatarPreviewContainer-2FEhy3 {
@@ -167401,7 +167541,11 @@ html .invoiceCancelRow-dVOR64 {
 }
 
 .chatPreview-2rboc6 {
-    height: 180px;
+    background: var(--background-primary);
+    border-radius: var(--radius-sm);
+    position: absolute;
+    bottom: -90px;
+    right: -16px;
     overflow: hidden;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -167409,7 +167553,34 @@ html .invoiceCancelRow-dVOR64 {
     flex-direction: column;
     -webkit-box-align: stretch;
     -ms-flex-align: stretch;
-    align-items: stretch
+    align-items: stretch;
+    padding: 16px;
+    gap: 12px
+}
+
+.mockMessage-3u7k9X {
+    padding-right: 12px !important;
+    margin-left: -12px
+}
+
+.mockInput-GqyVoT {
+    background: var(--background-accent);
+    border-radius: var(--radius-xl);
+    height: 40px;
+    padding: 0 8px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center
+}
+
+.mockInputButton-1p4KTd {
+    color: var(--interactive-normal)
 }
 
 .titleContainer-3YDEDj {
@@ -167439,10 +167610,6 @@ html .invoiceCancelRow-dVOR64 {
 
 .description-2InCpQ {
     margin-bottom: 64px
-}
-
-.previewTitle-fVCFx0 {
-    margin-bottom: 8px
 }
 
 .button-343kYP {
@@ -167476,6 +167643,10 @@ html .invoiceCancelRow-dVOR64 {
 
 .tooltip-1sdgrM {
     max-width: 240px
+}
+
+.profileCustomizationBody-3_pZnZ {
+    min-height: 100px
 }
 
 .modalContent-JK5iQA,
@@ -167625,4 +167796,4 @@ html .invoiceCancelRow-dVOR64 {
     margin-bottom: 16px
 }
 
-/*# sourceMappingURL=40532.dfaa80175cbf16e3d9b7.css.map*/
+/*# sourceMappingURL=40532.1efce29d27fc37977917.css.map*/
