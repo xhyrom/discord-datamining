@@ -160927,14 +160927,27 @@ html .invoiceCancelRow-3s2UuC {
     -webkit-box-pack: center;
     -ms-flex-pack: center;
     justify-content: center;
-    gap: 16px
+    gap: var(--spacing-16)
+}
+
+.categoryBanner-uG9Olv {
+    position: absolute;
+    z-index: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: inherit;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 2px
 }
 
 .categoryLogo-heQS7Z {
+    z-index: 1;
     max-height: 96px
 }
 
 .discordLogo-38RP1c {
+    z-index: 1;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -160953,6 +160966,10 @@ html .invoiceCancelRow-3s2UuC {
 .discordWordmark-Xl1DUZ {
     width: unset;
     height: 16px
+}
+
+.summary-YOl-Gl {
+    z-index: 1
 }
 
 .shopCard-H3oN50 {
@@ -168041,4 +168058,4 @@ html .invoiceCancelRow-dVOR64 {
     margin-bottom: 16px
 }
 
-/*# sourceMappingURL=40532.040917cdffc7bac8ddcd.css.map*/
+/*# sourceMappingURL=40532.9b4a3bf4de2466fb4f82.css.map*/
