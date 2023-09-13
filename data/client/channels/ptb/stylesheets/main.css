@@ -167181,6 +167181,12 @@ html .invoiceCancelRow-3s2UuC {
     padding: 32px
 }
 
+.confettiCanvas-1iBV68 {
+    position: absolute;
+    width: 100%;
+    height: 100%
+}
+
 .headerContainer-20VxQq {
     width: 100%;
     height: 146px;
@@ -167225,6 +167231,27 @@ html .invoiceCancelRow-3s2UuC {
     object-fit: cover;
     border-top-left-radius: 4px;
     border-top-right-radius: 4px
+}
+
+.modalOverrideBody-3VW5jT {
+    padding: 0;
+    overflow: visible
+}
+
+.modalOverrideBody-3VW5jT::-webkit-scrollbar {
+    width: 0;
+    height: 0
+}
+
+.modalOverrideSliderBody-1mMlNE {
+    padding: 0;
+    width: 440px
+}
+
+.confettiCanvas-28mIfX {
+    position: absolute;
+    width: 100%;
+    height: 100%
 }
 
 .oldCredentialName-15t4B9 {
@@ -168014,4 +168041,4 @@ html .invoiceCancelRow-dVOR64 {
     margin-bottom: 16px
 }
 
-/*# sourceMappingURL=40532.3c0ed5ed4511e64b85df.css.map*/
+/*# sourceMappingURL=40532.040917cdffc7bac8ddcd.css.map*/
