@@ -77890,34 +77890,6 @@ html:not(.custom-theme-background) .container-Vrgqxz {
     }
 }
 
-.bannerContainer-1hFfQ1 {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
-    padding: 16px;
-    background: linear-gradient(135deg, var(--brand-500), var(--brand-400));
-    border-radius: 8px
-}
-
-.heading-1W7Ix- {
-    margin-left: 16px
-}
-
-.headingText-17dbtB {
-    margin-bottom: 4px
-}
-
-.buttonContainer-oLXVjt {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    gap: 8px;
-    margin-left: auto
-}
-
 .subheaderContainer-td9gEK {
     padding: 16px;
     -webkit-box-pack: justify;
@@ -167750,4 +167722,4 @@ html .invoiceCancelRow-dVOR64 {
     margin-bottom: 16px
 }
 
-/*# sourceMappingURL=40532.a51df177e6b0cfc87e0c.css.map*/
+/*# sourceMappingURL=40532.b9edb8c2a3c505969646.css.map*/
