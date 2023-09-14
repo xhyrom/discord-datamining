@@ -161954,8 +161954,8 @@ html .invoiceCancelRow-3s2UuC {
     width: 100%;
     height: 300px;
     min-width: 840px;
-    background: -webkit-gradient(linear, left top, left bottom, from(var(--premium-tier-0-header-gradient-1)), color-stop(25%, var(--premium-tier-0-header-gradient-2)), color-stop(50%, var(--premium-tier-0-header-gradient-3)), color-stop(75%, var(--premium-tier-0-header-gradient-4)), to(var(--premium-tier-0-header-gradient-5)));
-    background: linear-gradient(180deg, var(--premium-tier-0-header-gradient-1), var(--premium-tier-0-header-gradient-2) 25%, var(--premium-tier-0-header-gradient-3) 50%, var(--premium-tier-0-header-gradient-4) 75%, var(--premium-tier-0-header-gradient-5));
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(-9.85%, var(--premium-tier-0-header-gradient-1)), color-stop(35.44%, var(--premium-tier-0-header-gradient-2)), color-stop(55.85%, var(--premium-tier-0-header-gradient-3)), color-stop(100.07%, var(--premium-tier-0-header-gradient-4)), color-stop(110.26%, var(--premium-tier-0-header-gradient-5)));
+    background: linear-gradient(180deg, var(--premium-tier-0-header-gradient-1) -9.85%, var(--premium-tier-0-header-gradient-2) 35.44%, var(--premium-tier-0-header-gradient-3) 55.85%, var(--premium-tier-0-header-gradient-4) 100.07%, var(--premium-tier-0-header-gradient-5) 110.26%);
     background-size: contain, cover;
     background-position: 100% 100%, 50%;
     background-repeat: no-repeat, no-repeat;
@@ -162016,23 +162016,27 @@ html .invoiceCancelRow-3s2UuC {
 }
 
 .premiumBadgeWrapper-3KlQro {
-    border: 2px solid var(--white-500);
+    border: 1px solid var(--white-500);
     border-radius: 32px;
-    width: 190px;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    justify-content: center;
-    margin-bottom: 4px
+    margin-bottom: 10px;
+    padding: 2px
+}
+
+.premiumBadge-3Q96cq {
+    height: 16px
 }
 
 .premiumBadgeText-3mF6ua {
-    padding-left: 4px
+    padding-left: 2px;
+    padding-right: 4px;
+    letter-spacing: .75px;
+    font-weight: 500
 }
 
 .heroSubtitle-xmNmnh {
@@ -168913,4 +168917,4 @@ html .invoiceCancelRow-dVOR64 {
     margin-bottom: 16px
 }
 
-/*# sourceMappingURL=40532.f0a65fb437e31cd044a7.css.map*/
+/*# sourceMappingURL=40532.4bb6dce1465d80bec398.css.map*/
