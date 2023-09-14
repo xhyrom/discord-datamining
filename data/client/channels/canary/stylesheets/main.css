@@ -25531,6 +25531,10 @@ html.disable-forced-colors * {
     --font-code: Consolas, "Andale Mono WT", "Andale Mono", "Lucida Console", "Lucida Sans Typewriter", "DejaVu Sans Mono", "Bitstream Vera Sans Mono", "Liberation Mono", "Nimbus Mono L", Monaco, "Courier New", Courier, monospace
 }
 
+:root {
+    --chat-resize-handle-width: 8px
+}
+
 a,
 abbr,
 acronym,
@@ -26287,7 +26291,6 @@ code {
 }
 
 :root {
-    --custom-channel-chat-resizable-sidebar-resize-handle-width: 8px;
     --custom-member-list-item-avatar-decoration-padding: 2px;
     --custom-messages-popout-messages-popout-footer-height: 120px;
     --custom-radio-image-border-thickness: 2px;
@@ -70432,7 +70435,7 @@ html:not(.custom-theme-background) .container-Vrgqxz {
 .resizeHandle-PBRzPC {
     cursor: ew-resize;
     height: 100%;
-    width: var(--custom-channel-chat-resizable-sidebar-resize-handle-width);
+    width: var(--chat-resize-handle-width);
     -ms-flex-negative: 0;
     flex-shrink: 0;
     background: var(--bg-overlay-3, var(--background-tertiary))
@@ -168706,4 +168709,4 @@ html .invoiceCancelRow-dVOR64 {
     margin-bottom: 16px
 }
 
-/*# sourceMappingURL=40532.1c0163df222a8860e237.css.map*/
+/*# sourceMappingURL=40532.f6cdc52a89e11edc5991.css.map*/
