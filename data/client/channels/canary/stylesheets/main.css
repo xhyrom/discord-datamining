@@ -161792,7 +161792,8 @@ html .invoiceCancelRow-3s2UuC {
     -webkit-box-pack: justify;
     -ms-flex-pack: justify;
     justify-content: space-between;
-    cursor: pointer
+    cursor: pointer;
+    overflow: hidden
 }
 
 .shopCard-H3oN50:hover {
@@ -161821,20 +161822,7 @@ html .invoiceCancelRow-3s2UuC {
 }
 
 .cardText-2OugTh {
-    margin-top: 32px;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: column;
-    flex-direction: column;
-    -webkit-box-pack: justify;
-    -ms-flex-pack: justify;
-    justify-content: space-between;
-    -webkit-box-flex: 1;
-    -ms-flex: 1;
-    flex: 1
+    margin-top: 32px
 }
 
 .description-1aSbLq {
@@ -161853,6 +161841,10 @@ html .invoiceCancelRow-3s2UuC {
 
 .purchaseButton-16bBUi:hover {
     opacity: .8
+}
+
+.upsellButton-1UaSX8 {
+    width: 100%
 }
 
 .premiumWheelTooltipContent-1tZDXT {
@@ -161880,10 +161872,28 @@ html .invoiceCancelRow-3s2UuC {
     flex: 1
 }
 
-.innerHover-3lqG6f {
+.hoverUpsellContainer-2so0Ya {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    gap: 24px;
+    -webkit-transition: -webkit-transform .5s;
+    transition: -webkit-transform .5s;
+    transition: transform .5s;
+    transition: transform .5s, -webkit-transform .5s
+}
+
+.innerHover-3lqG6f {
     position: absolute;
     width: 100%;
     top: 50%;
@@ -161925,6 +161935,11 @@ html .invoiceCancelRow-3s2UuC {
 
 .shopCard-H3oN50:hover .innerBlur-3NYZ8j {
     opacity: 0
+}
+
+.shopCard-H3oN50:hover .hoverUpsellContainer-2so0Ya {
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%)
 }
 
 .shopCard-H3oN50:hover .button-3VHqk5 {
@@ -168921,4 +168936,4 @@ html .invoiceCancelRow-dVOR64 {
     margin-bottom: 16px
 }
 
-/*# sourceMappingURL=40532.59f5d571d245a4851982.css.map*/
+/*# sourceMappingURL=40532.4252d3ef5c5f1c8635ba.css.map*/
