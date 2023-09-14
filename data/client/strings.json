@@ -10706,6 +10706,7 @@
   "CONTACT_SYNC_INFO_2": "\"Use the settings below to allow someone to add you if they have your contact information saved in their phone contacts.\"",
   "CONTACT_SYNC_INFO_3": "\"Allow someone to add you if they have your contact information saved in their phone contacts.\"",
   "CONTACT_SYNC_LEARN_MORE": "\"This can be changed anytime in settings. $[Learn More](learnMoreHook)\"",
+  "CONTACT_SYNC_DONT_SHOW_AGAIN": "\"Don't show me this again\"",
   "CONTACT_SYNC_SUGGESTIONS_TITLE": "\"Add Friends\"",
   "REDESIGN_CONTACT_SYNC_SUGGESTIONS_TITLE": "\"Add friends\"",
   "CONTACT_SYNC_SUGGESTIONS_CTA": "\"Add Friends\"",
