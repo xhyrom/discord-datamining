@@ -101738,6 +101738,16 @@ html:not(.custom-theme-background) .container-Vrgqxz {
     transform: rotateY(-30deg)
 }
 
+.flipCardContainer-Yr1oDc:hover .ultraFlipCard-1Mb6J9 {
+    -webkit-transform: rotateY(-570deg);
+    transform: rotateY(-570deg)
+}
+
+.flipCardContainer-Yr1oDc:hover .rotateCard-e53tKt {
+    -webkit-transform: rotateX(-520deg) rotateY(-1140deg);
+    transform: rotateX(-520deg) rotateY(-1140deg)
+}
+
 .flipCard-39OCl1 {
     position: relative;
     width: 100%;
@@ -168761,4 +168771,4 @@ html .invoiceCancelRow-dVOR64 {
     margin-bottom: 16px
 }
 
-/*# sourceMappingURL=40532.45e75f9d43a6a7b9a76d.css.map*/
+/*# sourceMappingURL=40532.14e1e38d81358d962e00.css.map*/
