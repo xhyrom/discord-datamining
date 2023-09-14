@@ -8080,6 +8080,10 @@ html.decorate-links .lowSaturationUnderline-Z6CW6z {
     padding-bottom: 20px
 }
 
+:root {
+    --custom-paginator-round-button-size: 28px
+}
+
 .pageControlContainer-1Mbe6M {
     bottom: 0;
     width: 100%;
@@ -8111,8 +8115,8 @@ html.decorate-links .lowSaturationUnderline-Z6CW6z {
     -webkit-box-pack: center;
     -ms-flex-pack: center;
     justify-content: center;
-    height: roundButtonSize;
-    min-width: roundButtonSize;
+    height: var(--custom-paginator-round-button-size);
+    min-width: var(--custom-paginator-round-button-size);
     padding: 6px;
     margin: 4px;
     cursor: pointer;
@@ -8125,8 +8129,8 @@ html.decorate-links .lowSaturationUnderline-Z6CW6z {
 }
 
 .roundButton-2mKRqM {
-    min-width: roundButtonSize;
-    border-radius: roundingSize
+    min-width: var(--custom-paginator-round-button-size);
+    border-radius: 14px
 }
 
 .endButton-pLBGXH {
@@ -8151,7 +8155,7 @@ html.decorate-links .lowSaturationUnderline-Z6CW6z {
 }
 
 .gap-3Q-U2O {
-    width: roundButtonSize;
+    width: var(--custom-paginator-round-button-size);
     margin: 8px 4px;
     text-align: center;
     color: var(--text-normal)
@@ -70163,6 +70167,33 @@ strong {
     box-shadow: 0 0 12px 3px hsla(0, 0%, 100%, .12)
 }
 
+.sortDropdown-2uFY21 {
+    gap: 4px;
+    margin-bottom: -1px;
+    height: 32px;
+    background-color: var(--background-modifier-hover);
+    border-radius: var(--radius-xl);
+    padding: 8px 8px 8px 12px
+}
+
+.sortDropdown-2uFY21,
+.sortDropdownInner-2Jsaa- {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center
+}
+
+.sortDropdownInner-2Jsaa- {
+    color: var(--interactive-normal)
+}
+
+.clearText-2sS1bV {
+    color: var(--text-link)
+}
+
 .container-PSWAEM {
     padding-bottom: 24px;
     border-bottom: 1px solid var(--background-modifier-hover)
@@ -70173,7 +70204,8 @@ strong {
 }
 
 .tabs-39_NWj {
-    color: var(--white-500)
+    color: var(--white-500);
+    gap: 16px
 }
 
 .tab-2E41_Z,
@@ -70213,15 +70245,28 @@ strong {
     height: 36px;
     background-color: var(--background-message-hover);
     border-radius: var(--radius-round);
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
     -webkit-box-pack: center;
     -ms-flex-pack: center;
     justify-content: center;
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center
+}
+
+.filters-1CqCVQ,
+.iconContainer-2gP6IM {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex
+}
+
+.filters-1CqCVQ {
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: end;
+    -ms-flex-align: end;
+    align-items: flex-end
 }
 
 .lineClamp-2-w95g {
@@ -133155,7 +133200,7 @@ input::-webkit-outer-spin-button {
 }
 
 .modalContent-2y3sGW {
-    padding: 0 innerPadding
+    padding: 0 16px
 }
 
 .modalContent-2y3sGW:last-child {
@@ -149681,6 +149726,11 @@ html .invoiceCancelRow-3s2UuC {
     margin-right: 4px
 }
 
+:root {
+    --custom-forum-post-form-horizontal-padding: 12px;
+    --custom-forum-post-form-control-size: 36px
+}
+
 .container-JhuCwn {
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
@@ -149701,16 +149751,16 @@ html .invoiceCancelRow-3s2UuC {
 }
 
 .horizontalPadding-3WQsQ9 {
-    padding-left: horizontalPadding;
-    padding-right: horizontalPadding
+    padding-left: var(--custom-forum-post-form-horizontal-padding);
+    padding-right: var(--custom-forum-post-form-horizontal-padding)
 }
 
 .formContainer-1zrOWf {
     -webkit-box-orient: horizontal;
     -ms-flex-direction: row;
     flex-direction: row;
-    padding-left: horizontalPadding;
-    padding-right: horizontalPadding
+    padding-left: var(--custom-forum-post-form-horizontal-padding);
+    padding-right: var(--custom-forum-post-form-horizontal-padding)
 }
 
 .form-25Aujy,
@@ -149889,7 +149939,7 @@ html .invoiceCancelRow-3s2UuC {
     justify-content: space-between;
     -ms-flex-negative: 0;
     flex-shrink: 0;
-    height: controlSize;
+    height: var(--custom-forum-post-form-control-size);
     gap: 8px;
     margin-top: 12px
 }
@@ -149941,7 +149991,7 @@ html .invoiceCancelRow-3s2UuC {
     border-radius: 20px;
     -ms-flex-negative: 0;
     flex-shrink: 0;
-    height: controlSize
+    height: var(--custom-forum-post-form-control-size)
 }
 
 .form-25Aujy .submitButton-3B-dZd .submitButtonInner-nLVTV_ {
@@ -149958,10 +150008,10 @@ html .invoiceCancelRow-3s2UuC {
     border-radius: 50%;
     -ms-flex-negative: 0;
     flex-shrink: 0;
-    height: controlSize;
+    height: var(--custom-forum-post-form-control-size);
     min-width: 0;
     padding: 0;
-    width: controlSize;
+    width: var(--custom-forum-post-form-control-size);
     background-color: var(--background-secondary-alt) !important
 }
 
@@ -168658,4 +168708,4 @@ html .invoiceCancelRow-dVOR64 {
     margin-bottom: 16px
 }
 
-/*# sourceMappingURL=40532.f2985517c2571358f295.css.map*/
+/*# sourceMappingURL=40532.55dd75892d34189c155c.css.map*/
