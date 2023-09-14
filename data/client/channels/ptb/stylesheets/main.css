@@ -11427,7 +11427,7 @@ html.decorate-links .lowSaturationUnderline-Z6CW6z {
     height: 8px
 }
 
-.limitedTimeBadge-JvRtll {
+.premiumBadge-2VNQ3o {
     background: var(--custom-premium-colors-premium-gradient-tier-2-tri-color)
 }
 
@@ -26141,15 +26141,6 @@ code {
 
 :root {
     --custom-guild-role-connections-modal-close-button-margin: 12px
-}
-
-:root {
-    --custom-collectibles-shop-min-card-width: 300px;
-    --custom-collectibles-shop-gutter-size: 28px;
-    --custom-collectibles-shop-max-content-width: 1060px;
-    --custom-collectibles-shop-max-page-width: 1060px;
-    --custom-collectibles-shop-banner-banner-height: 240px;
-    --custom-collectibles-shop-card-card-height: 300px
 }
 
 :root {
@@ -46891,9 +46882,9 @@ input[type=checked]:focus-visible+.label-3TDpbn {
 }
 
 .compact-2Nkcau .messageContent-2t3eCI .emoji.jumboable {
-    width: var(--custom-i-18-n-loader-size-emoji);
-    height: var(--custom-i-18-n-loader-size-emoji);
-    min-height: var(--custom-i-18-n-loader-size-emoji)
+    width: var(--custom-emoji-size-emoji);
+    height: var(--custom-emoji-size-emoji);
+    min-height: var(--custom-emoji-size-emoji)
 }
 
 .compact-2Nkcau .messageContent-2t3eCI.markupRtl-1iLc5Y {
@@ -132247,10 +132238,6 @@ input::-webkit-outer-spin-button {
     top: -8px
 }
 
-.newBadge-29fT5u {
-    background: var(--custom-premium-colors-premium-gradient-tier-2-tri-color)
-}
-
 .itemBadge-2VGhY3 {
     width: 24px;
     padding: 2px;
@@ -154764,8 +154751,7 @@ html .invoiceCancelRow-3s2UuC {
     margin-left: 2px;
     -webkit-box-align: center;
     -ms-flex-align: center;
-    align-items: center;
-    background: var(--custom-premium-colors-premium-gradient-tier-2-tri-color)
+    align-items: center
 }
 
 .sectionsContainer-3BlPu4 {
@@ -161461,41 +161447,13 @@ html .invoiceCancelRow-3s2UuC {
     top: 2px
 }
 
-.fantasyBannerBackground-2ysFp_ {
-    background: url(/assets/dfd82b0026193458b51b2aeba75e9d51.png) no-repeat
-}
-
-.animeBannerBackground-1zAWJ5 {
-    background: url(/assets/6e7a4315cdf867badc269ade8791e151.png) no-repeat
-}
-
-.breakfastBannerBackground-1LPedv {
-    background: url(/assets/276ec187e47df8038f56f16bbd27bddd.png) no-repeat
-}
-
-.disxcoreBannerBackground-13bYkt {
-    background: url(/assets/209a468b38ed3f7c0ff28b8c331d446c.png) no-repeat
-}
-
-.fantasyImageBackground-29OtK3 {
-    background: url(/assets/c304062633516b98c4d5b3bf3e440e3c.png) no-repeat
-}
-
-.animeImageBackground-1V1snY {
-    background: url(/assets/7beb0839f3f530d491cac494651277dc.png) no-repeat
-}
-
-.breakfastImageBackground-1Ztt8x {
-    background: url(/assets/e2a9bd3caa66f0d26c3574977e975cf9.png) no-repeat
-}
-
 .shopBanner-PEO5bV {
     grid-column: 1/-1;
     position: relative;
     background-size: cover;
     width: 100%;
-    max-width: var(--custom-collectibles-shop-max-content-width);
-    height: var(--custom-collectibles-shop-banner-banner-height);
+    max-width: 1060px;
+    height: 240px;
     border-radius: var(--radius-xxl);
     display: -webkit-box;
     display: -ms-flexbox;
@@ -161880,7 +161838,7 @@ html .invoiceCancelRow-3s2UuC {
 
 .page-LilLhg {
     width: 100%;
-    max-width: calc(var(--custom-collectibles-shop-max-page-width) + 64px);
+    max-width: 1124px;
     padding: 32px;
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
@@ -161914,11 +161872,11 @@ html .invoiceCancelRow-3s2UuC {
 }
 
 .cardsContainer-2kdrm8 {
-    max-width: var(--custom-collectibles-shop-max-content-width);
+    max-width: 1060px;
     padding: 24px 0;
     display: grid;
-    grid-gap: var(--custom-collectibles-shop-gutter-size);
-    grid-template-columns: repeat(auto-fill, minmax(var(--custom-collectibles-shop-min-card-width), 1fr));
+    grid-gap: 28px;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
     overflow: visible
 }
 
@@ -162020,8 +161978,8 @@ html .invoiceCancelRow-3s2UuC {
 
 .bannerBackground-HeU8g7,
 .bannerCard-2LJzbg {
-    height: var(--custom-collectibles-shop-card-card-height);
-    border-radius: 32px;
+    height: 300px;
+    border-radius: var(--radius-xxl);
     width: 1060px
 }
 
@@ -162035,7 +161993,7 @@ html .invoiceCancelRow-3s2UuC {
 }
 
 .container-10BB8g {
-    max-width: var(--custom-collectibles-shop-max-content-width);
+    max-width: 1060px;
     padding-top: 24px
 }
 
@@ -167665,10 +167623,6 @@ html .invoiceCancelRow-3s2UuC {
     top: -8px
 }
 
-.newBadge-2yfmTf {
-    background: var(--custom-premium-colors-premium-gradient-tier-2-tri-color)
-}
-
 .lockBadge-1GRfLm {
     border-radius: 16px;
     width: 20px;
@@ -167730,8 +167684,7 @@ html .invoiceCancelRow-3s2UuC {
     justify-content: center
 }
 
-.goToShopButton-2jWCIU,
-.newBadge-3yacPU {
+.goToShopButton-2jWCIU {
     background: var(--custom-premium-colors-premium-gradient-tier-2-tri-color)
 }
 
@@ -168506,7 +168459,7 @@ html .invoiceCancelRow-dVOR64 {
 .titleImage-1KgSPN {
     padding-right: 6px;
     padding-top: 4px;
-    max-height: 18px
+    max-height: 96
 }
 
 .collectionText-1qGz8S {
@@ -168705,4 +168658,4 @@ html .invoiceCancelRow-dVOR64 {
     margin-bottom: 16px
 }
 
-/*# sourceMappingURL=40532.e82f77a7ff215e1c97ce.css.map*/
+/*# sourceMappingURL=40532.2773a8f03e7441721de6.css.map*/
