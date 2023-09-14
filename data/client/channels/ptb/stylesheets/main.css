@@ -132083,38 +132083,38 @@ input::-webkit-outer-spin-button {
 
 .shopPreviewContainer-3RRvP7 {
     position: relative;
-    height: 280px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    border-radius: 8px;
+    border-radius: var(--radius-sm);
     border: 2px solid transparent;
-    background: -webkit-gradient(linear, left top, left bottom, from(var(--background-tertiary)), to(var(--background-tertiary))) padding-box, var(--custom-premium-colors-premium-gradient-tier-2-diagonal) border-box;
-    background: linear-gradient(var(--background-tertiary), var(--background-tertiary)) padding-box, var(--custom-premium-colors-premium-gradient-tier-2-diagonal) border-box
-}
-
-.shopPreviewImageContainer-lxnv4e {
-    position: relative
-}
-
-.shopPreviewAvatar-cN-vtP {
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    -webkit-transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%)
+    background: -webkit-gradient(linear, left top, left bottom, from(var(--background-secondary)), to(var(--background-secondary))) padding-box, var(--custom-premium-colors-premium-gradient-tier-2-diagonal) border-box;
+    background: linear-gradient(var(--background-secondary), var(--background-secondary)) padding-box, var(--custom-premium-colors-premium-gradient-tier-2-diagonal) border-box
 }
 
 .shopPreviewBanner-1nFcMb {
-    border-top-left-radius: 8px;
-    border-top-right-radius: 8px;
-    max-width: 100%
+    border-top-left-radius: 6px;
+    border-top-right-radius: 6px;
+    width: 100%;
+    min-height: 176px;
+    -ms-flex-pack: center;
+    -ms-flex-align: center;
+    background-position: top;
+    background-size: cover
 }
 
+.shopPreviewBanner-1nFcMb,
 .shopPreviewTextContainer-1Vw8gO {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    -webkit-box-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    align-items: center
+}
+
+.shopPreviewTextContainer-1Vw8gO {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
     -ms-flex-direction: column;
@@ -132122,15 +132122,11 @@ input::-webkit-outer-spin-button {
     -webkit-box-flex: 1;
     -ms-flex: 1;
     flex: 1;
-    padding: 8px;
-    -webkit-box-pack: center;
     -ms-flex-pack: center;
-    justify-content: center;
-    -webkit-box-align: center;
     -ms-flex-align: center;
-    align-items: center;
     text-align: center;
-    gap: 8px
+    gap: 8px;
+    padding: 16px
 }
 
 .purchaseInfoContainer-3ZqsNg {
@@ -132288,7 +132284,10 @@ input::-webkit-outer-spin-button {
     display: flex;
     -webkit-box-pack: center;
     -ms-flex-pack: center;
-    justify-content: center
+    justify-content: center;
+    -webkit-box-align: start;
+    -ms-flex-align: start;
+    align-items: flex-start
 }
 
 .modalPreview-2hTuZp {
@@ -161606,7 +161605,8 @@ html .invoiceCancelRow-3s2UuC {
     position: absolute;
     top: 16px;
     right: 16px;
-    padding: 0 4px
+    padding: 0 4px;
+    background: var(--custom-premium-colors-premium-gradient-tier-2-diagonal)
 }
 
 .premiumWheel-28L6fu {
@@ -168658,4 +168658,4 @@ html .invoiceCancelRow-dVOR64 {
     margin-bottom: 16px
 }
 
-/*# sourceMappingURL=40532.2773a8f03e7441721de6.css.map*/
+/*# sourceMappingURL=40532.f2985517c2571358f295.css.map*/
