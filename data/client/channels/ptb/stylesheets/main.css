@@ -20567,6 +20567,10 @@ html.disable-forced-colors * {
     padding-right: 8px
 }
 
+.profileEffects-km5xa2 {
+    z-index: 1
+}
+
 .inner-2xMRmK,
 .profileEffects-km5xa2 {
     position: absolute;
@@ -20585,7 +20589,6 @@ html.disable-forced-colors * {
 .effect-23JFo_ {
     top: 0;
     left: 0;
-    z-index: 100;
     width: 100%;
     position: absolute
 }
@@ -47446,6 +47449,34 @@ input[type=checked]:focus-visible+.label-3TDpbn {
 
 .smsNumberContainer-1nz7X9.copied-Q-KisB {
     border-color: var(--status-positive-background)
+}
+
+.container-sA5c7B {
+    margin-bottom: 24px
+}
+
+.userContainer-3PdHOf {
+    padding: 16px;
+    border: 1px solid var(--background-modifier-accent);
+    border-radius: 8px
+}
+
+.header-3TJYwb {
+    margin-bottom: 8px;
+    color: var(--header-secondary)
+}
+
+.userInfo-_0JmFy {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center
+}
+
+.userIcon-21OnYj {
+    margin-right: 8px
 }
 
 .container-EXWwuk {
@@ -168848,4 +168879,4 @@ html .invoiceCancelRow-dVOR64 {
     margin-bottom: 16px
 }
 
-/*# sourceMappingURL=40532.07b961cb165c8b60e1b1.css.map*/
+/*# sourceMappingURL=40532.08d1aa102e73c9bd35ed.css.map*/
