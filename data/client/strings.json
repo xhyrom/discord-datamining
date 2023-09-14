@@ -15814,6 +15814,7 @@
   "GUILD_PRODUCT_BILLING_PRODUCT_TYPE": "\"Product Type\"",
   "GUILD_PRODUCT_BILLING_SERVER_NAME": "\"Server Name\"",
   "GUILD_PRODUCT_BILLING_TYPE_PREMIUM_ROLE": "\"Premium Role\"",
+  "GUILD_PRODUCT_BILLING_ACCESS_DOWNLOADABLES": "\"Access your downloadables\"",
   "THREAD_HAS_BEEN_DELETED": "\"Thread has been deleted.\"",
   "FRIEND_INVITE_SHEET_TITLE": "\"Send Link to Add Friends\"",
   "FRIEND_INVITE_EXPIRATION": "\"Links expire in {expirationDays} days, or {expirationUses} uses.\"",
