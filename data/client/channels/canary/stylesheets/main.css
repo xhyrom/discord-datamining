@@ -70330,7 +70330,8 @@ strong {
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
-    border-radius: var(--radius-sm)
+    border-radius: var(--radius-sm);
+    background-color: var(--background-modifier-hover)
 }
 
 .tabSelected-1a9MlN {
@@ -70341,7 +70342,6 @@ strong {
 }
 
 .tabDisabled-1l0OgZ {
-    background-color: var(--background-modifier-hover);
     cursor: not-allowed
 }
 
@@ -83522,8 +83522,15 @@ html:not(.custom-theme-background) .container-Vrgqxz {
     -ms-flex-align: center;
     align-items: center;
     text-align: center;
-    background-color: var(--background-tertiary);
     padding: 32px 16px 16px
+}
+
+.theme-light .tierInfoContainer-3o77tj {
+    background-color: hsla(0, 0%, 100%, .5)
+}
+
+.theme-dark .tierInfoContainer-3o77tj {
+    background-color: var(--background-modifier-hover)
 }
 
 .tierDescriptionTruncate-1JFjgq {
@@ -83825,7 +83832,6 @@ html:not(.custom-theme-background) .container-Vrgqxz {
 
 .scroller-38C5lh {
     height: 100%;
-    background-color: var(--background-primary);
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -168879,4 +168885,4 @@ html .invoiceCancelRow-dVOR64 {
     margin-bottom: 16px
 }
 
-/*# sourceMappingURL=40532.08d1aa102e73c9bd35ed.css.map*/
+/*# sourceMappingURL=40532.35c2a2e701caf402c1b9.css.map*/
