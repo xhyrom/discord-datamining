@@ -100950,6 +100950,84 @@ html:not(.custom-theme-background) .container-Vrgqxz {
     color: var(--header-secondary)
 }
 
+.premiumFeatureBannerBackground-2y3EUg {
+    border-radius: 8px;
+    background: linear-gradient(0deg, rgba(0, 0, 0, .2), rgba(0, 0, 0, .2)), linear-gradient(187deg, var(--premium-tier-0-header-gradient-1) -9.85%, var(--premium-tier-0-header-gradient-2) 35.44%, var(--premium-tier-0-header-gradient-3) 55.85%, var(--premium-tier-0-header-gradient-4) 100.07%, var(--premium-tier-0-header-gradient-5) 110.26%)
+}
+
+.container-2giTRz {
+    margin: 24px 0;
+    border-radius: var(--radius-sm);
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center
+}
+
+.avatars-14vQ8F {
+    position: relative;
+    width: 136px
+}
+
+.avatar1-rvUTGU {
+    position: absolute;
+    -webkit-transform: rotate(-18.81deg) scale(.9);
+    transform: rotate(-18.81deg) scale(.9);
+    top: -18px;
+    left: -22px
+}
+
+.avatar2-1IdW0v {
+    position: absolute;
+    -webkit-transform: rotate(15deg) scale(.75);
+    transform: rotate(15deg) scale(.75);
+    right: 0;
+    top: -7px
+}
+
+.avatar3-3iB1dt {
+    position: absolute;
+    -webkit-transform: rotate(-9.161deg) scale(.85);
+    transform: rotate(-9.161deg) scale(.85);
+    bottom: -12px;
+    left: 24px
+}
+
+.mainColumn-3pLT0l {
+    -webkit-box-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+    padding: 18px 12px 18px 4px
+}
+
+.title-10uSQB {
+    margin-bottom: 4px
+}
+
+.buttons-3RORp3 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    padding-right: 24px
+}
+
+.ctaButton-1ZepkT {
+    padding: 11px 20px
+}
+
 .brandShine-2_xHTj {
     color: hsl(var(--brand-500-hsl)/.1) !important
 }
@@ -102379,6 +102457,10 @@ html:not(.custom-theme-background) .container-Vrgqxz {
     padding: unset;
     margin-top: 56px;
     margin-bottom: 56px
+}
+
+.collectiblesBanner-3eeMZW {
+    margin-top: 0
 }
 
 .trialOfferWrapper-2Y24ok {
@@ -154593,90 +154675,6 @@ html .invoiceCancelRow-3s2UuC {
     border-radius: 4px
 }
 
-.banner-1xzgK7 {
-    background: -webkit-gradient(linear, left top, left bottom, from(var(--premium-tier-0-header-gradient-1)), color-stop(25%, var(--premium-tier-0-header-gradient-2)), color-stop(50%, var(--premium-tier-0-header-gradient-3)), color-stop(75%, var(--premium-tier-0-header-gradient-4)), to(var(--premium-tier-0-header-gradient-5)));
-    background: linear-gradient(180deg, var(--premium-tier-0-header-gradient-1), var(--premium-tier-0-header-gradient-2) 25%, var(--premium-tier-0-header-gradient-3) 50%, var(--premium-tier-0-header-gradient-4) 75%, var(--premium-tier-0-header-gradient-5));
-    height: 100px;
-    margin-bottom: 24px;
-    margin-top: 24px;
-    border-radius: 6px;
-    position: relative
-}
-
-.bannerBody-3C2WHT {
-    background-color: hsl(var(--black-500-hsl)/.2);
-    height: 100%;
-    border-radius: inherit;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    justify-content: center;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: row;
-    flex-direction: row
-}
-
-.sampleDecorations-3Nig2f {
-    -webkit-box-flex: 1;
-    -ms-flex: 1;
-    flex: 1
-}
-
-.bannerText-2EWuPI {
-    -webkit-box-flex: 3;
-    -ms-flex: 3;
-    flex: 3;
-    margin-top: 16px;
-    padding: 0 16px
-}
-
-.textBody-1qjeO3 {
-    margin-top: 4px;
-    padding-right: 32px
-}
-
-.bannerDeco1-1SW8_d {
-    position: absolute;
-    left: -16px;
-    top: -16px;
-    -webkit-transform: rotate(-18.8deg);
-    transform: rotate(-18.8deg)
-}
-
-.bannerDeco2-1eKoT- {
-    margin-left: 70px;
-    margin-top: 8px;
-    position: absolute;
-    -webkit-transform: rotate(15deg);
-    transform: rotate(15deg)
-}
-
-.bannerDeco3-fSQ7G1 {
-    margin-top: 66px;
-    margin-left: 36px;
-    position: absolute;
-    -webkit-transform: rotate(-9deg);
-    transform: rotate(-9deg)
-}
-
-.bannerCTAWrapper-KFQ6Gg {
-    margin-top: 30px
-}
-
-.bannerCTA-kuDxuX,
-.bannerCTAWrapper-KFQ6Gg {
-    -webkit-box-flex: 1;
-    -ms-flex: 1;
-    flex: 1
-}
-
-.bannerCTA-kuDxuX {
-    width: 100px
-}
-
 .tryItOutSection-W9qeGH {
     margin: 40px -24px 0;
     width: -webkit-fit-content;
@@ -168708,4 +168706,4 @@ html .invoiceCancelRow-dVOR64 {
     margin-bottom: 16px
 }
 
-/*# sourceMappingURL=40532.55dd75892d34189c155c.css.map*/
+/*# sourceMappingURL=40532.1c0163df222a8860e237.css.map*/
