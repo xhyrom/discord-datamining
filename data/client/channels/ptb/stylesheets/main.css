@@ -105132,6 +105132,58 @@ html:not(.custom-theme-background) .container-Vrgqxz {
     bottom: -6px
 }
 
+.badgeContainer-3TDXH5 {
+    position: relative;
+    margin-right: 8px
+}
+
+.newBadge-3Alh6h {
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    border-radius: 12px;
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 12px;
+    margin-left: auto;
+    padding: 4px 0;
+    width: 78px;
+    pointer-events: all;
+    text-transform: uppercase;
+    background-image: -webkit-gradient(linear, left top, right top, from(var(--premium-tier-2-purple-for-gradients)), to(var(--premium-tier-2-pink-for-gradients)));
+    background-image: linear-gradient(90deg, var(--premium-tier-2-purple-for-gradients), var(--premium-tier-2-pink-for-gradients));
+    color: var(--white-500)
+}
+
+.star-9ignI8 {
+    position: absolute;
+    color: var(--white)
+}
+
+.starLeft-3eJ_3v {
+    bottom: -7px;
+    left: -9px
+}
+
+.starRight-1xCrPt {
+    top: -9px;
+    right: -8px
+}
+
+.theme-light .starLeft-3eJ_3v {
+    color: var(--premium-tier-2-purple-for-gradients)
+}
+
+.theme-light .starRight-1xCrPt {
+    color: var(--premium-tier-2-pink-for-gradients)
+}
+
 .premiumTrialBadge-pEqntF {
     -webkit-box-align: center;
     -ms-flex-align: center;
@@ -168709,4 +168761,4 @@ html .invoiceCancelRow-dVOR64 {
     margin-bottom: 16px
 }
 
-/*# sourceMappingURL=40532.f6cdc52a89e11edc5991.css.map*/
+/*# sourceMappingURL=40532.45e75f9d43a6a7b9a76d.css.map*/
