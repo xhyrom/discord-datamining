@@ -134816,6 +134816,34 @@ input::-webkit-outer-spin-button {
     background-image: url(/assets/7afe394039f22e3a41d97c04287cbf9f.svg)
 }
 
+.section-3ZQbT5 {
+    margin-bottom: 16px
+}
+
+.emojiInput-28Uqhi {
+    position: relative
+}
+
+.emojiButton-3subwV {
+    position: absolute;
+    height: 100%;
+    margin: 0 10px
+}
+
+.emojiText-1KzVNL {
+    padding-left: 40px;
+    cursor: pointer
+}
+
+.removeButton-3rVVpg {
+    position: absolute;
+    height: 20px;
+    width: 20px;
+    top: 0;
+    right: 0;
+    margin: 10px
+}
+
 .container-30qY7E {
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
@@ -135545,6 +135573,29 @@ input::-webkit-outer-spin-button {
     flex: 1
 }
 
+.guildSelectOptionIcon-Tl2Ek3 {
+    border-radius: 4px
+}
+
+.speakerIcon-1mojNX {
+    width: 16px;
+    height: 16px;
+    margin-right: 4px
+}
+
+.suffixNode-183sPU {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center
+}
+
+.disabledOption-1_AK9u {
+    opacity: .6
+}
+
 .headerContainer-2mQMNG {
     display: block;
     text-align: center
@@ -135610,21 +135661,6 @@ input::-webkit-outer-spin-button {
     flex-basis: 50%
 }
 
-.emojiInput-3AOqw0 {
-    position: relative
-}
-
-.emojiButton-1lJaeo {
-    position: absolute;
-    height: 100%;
-    margin: 0 10px
-}
-
-.emojiText-1IXlXF {
-    padding-left: 40px;
-    cursor: pointer
-}
-
 .removeButton-3J1W9o {
     position: absolute;
     height: 20px;
@@ -135632,29 +135668,6 @@ input::-webkit-outer-spin-button {
     top: 0;
     right: 0;
     margin: 10px
-}
-
-.guildSelectOptionIcon-Tl2Ek3 {
-    border-radius: 4px
-}
-
-.speakerIcon-1mojNX {
-    width: 16px;
-    height: 16px;
-    margin-right: 4px
-}
-
-.suffixNode-183sPU {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center
-}
-
-.disabledOption-1_AK9u {
-    opacity: .6
 }
 
 .container-1_EVMa {
@@ -162241,16 +162254,20 @@ html .invoiceCancelRow-3s2UuC {
     height: calc(100% - 170px)
 }
 
-.bannerContent-3Sk0tn {
-    margin-left: 60px;
-    position: absolute;
+.bannerCard-2LJzbg {
+    padding: 2px;
+    position: relative;
+    margin-top: 24px;
     display: -webkit-box;
     display: -ms-flexbox;
-    display: flex
-}
-
-.bannerCard-2LJzbg {
-    padding: 2px
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    gap: 32px
 }
 
 .bannerBackground-HeU8g7,
@@ -162261,28 +162278,38 @@ html .invoiceCancelRow-3s2UuC {
 }
 
 .bannerBackground-HeU8g7 {
-    position: absolute
+    position: absolute;
+    z-index: 0
+}
+
+.bannerFont-J6Rq9R {
+    width: 500px;
+    height: 56px
 }
 
 .bannerDescription-1muIwg {
-    margin-top: 16px;
     max-width: 460px
 }
 
-.container-10BB8g {
-    max-width: 1060px;
-    padding-top: 24px
-}
-
-.bannerAccessories-3-RGdi {
-    padding-bottom: 8px;
+.discordLogo-22aBdJ {
+    z-index: 1;
     display: -webkit-box;
     display: -ms-flexbox;
-    display: flex
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    color: var(--white)
 }
 
-.bannerDiscordLogo-Pbd93s {
-    margin-top: 4px
+.discordIcon-2b1PlC {
+    width: unset;
+    height: 16px
+}
+
+.discordWordmark-13lZhR {
+    width: unset;
+    height: 24px
 }
 
 .badge-1mVtCp {
@@ -162291,52 +162318,44 @@ html .invoiceCancelRow-3s2UuC {
     background: var(--custom-premium-colors-premium-gradient-tier-2-tri-color);
     padding: 1px 4px 3px;
     position: absolute;
-    right: -20px;
-    top: 14px
+    right: 16px;
+    top: 16px
 }
 
-.nitroIcon-1X63-E {
+.premiumIcon-25IdfV {
     color: #fff;
     height: 18px
 }
 
-.nitroText-6or9TO {
-    color: #fff
+.contentSection-3QALL0 {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    gap: 16px
 }
 
-.contentSection-3QALL0 {
-    margin-top: 60px;
-    -webkit-box-flex: 3;
-    -ms-flex: 3;
-    flex: 3
+.contentSection-3QALL0,
+.decoSection-gerPq1 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    z-index: 1
 }
 
 .decoSection-gerPq1 {
-    -webkit-box-flex: 2;
-    -ms-flex: 2;
-    flex: 2;
-    margin-left: 32px;
-    margin-top: 16px;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex
+    gap: 24px
 }
 
-.deco-3isTpm {
-    -webkit-box-flex: 1;
-    -ms-flex: 1;
-    flex: 1
-}
-
-.deco1-hukJIT {
+.pinkInterface-3WSNgF {
     margin-top: 8px
 }
 
-.deco2-KGEypq {
+.blueHeadset-3YaP41 {
     margin-top: 150px
 }
 
-.deco3-2-Y0Ve {
+.greenSmoke-18S32C {
     margin-top: 24px
 }
 
@@ -168936,4 +168955,4 @@ html .invoiceCancelRow-dVOR64 {
     margin-bottom: 16px
 }
 
-/*# sourceMappingURL=40532.4252d3ef5c5f1c8635ba.css.map*/
+/*# sourceMappingURL=40532.727d6fc8e56d3c8d240e.css.map*/
