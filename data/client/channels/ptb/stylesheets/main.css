@@ -101854,11 +101854,15 @@ html:not(.custom-theme-background) .container-Vrgqxz {
     width: calc(100% - 48px)
 }
 
-.flipCardContainer-Yr1oDc .partialFlipCard-3ljnDA {
+.flipCardContainer-Yr1oDc .partialFlipCard-3ljnDA,
+.flipCardContainer-Yr1oDc .rotateCard-e53tKt,
+.flipCardContainer-Yr1oDc .ultraFlipCard-1Mb6J9 {
     aspect-ratio: 1
 }
 
-.flipCardContainer-Yr1oDc .partialFlipCard-3ljnDA:hover .card-20tMLf {
+.flipCardContainer-Yr1oDc .partialFlipCard-3ljnDA:hover .card-20tMLf,
+.flipCardContainer-Yr1oDc .rotateCard-e53tKt:hover .card-20tMLf,
+.flipCardContainer-Yr1oDc .ultraFlipCard-1Mb6J9:hover .card-20tMLf {
     -webkit-box-shadow: var(--shadow-high);
     box-shadow: var(--shadow-high);
     -webkit-transform: translateY(-8px);
@@ -168955,4 +168959,4 @@ html .invoiceCancelRow-dVOR64 {
     margin-bottom: 16px
 }
 
-/*# sourceMappingURL=40532.727d6fc8e56d3c8d240e.css.map*/
+/*# sourceMappingURL=40532.1b631d4905bde4142b1a.css.map*/
