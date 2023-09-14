@@ -161761,7 +161761,8 @@ html .invoiceCancelRow-3s2UuC {
     flex-direction: column;
     -webkit-box-pack: justify;
     -ms-flex-pack: justify;
-    justify-content: space-between
+    justify-content: space-between;
+    cursor: pointer
 }
 
 .shopCard-H3oN50:hover {
@@ -168644,7 +168645,8 @@ html .invoiceCancelRow-dVOR64 {
     -ms-flex-align: stretch;
     align-items: stretch;
     padding: 16px;
-    gap: 12px
+    gap: 12px;
+    z-index: 1
 }
 
 .mockMessage-3u7k9X {
@@ -168653,8 +168655,8 @@ html .invoiceCancelRow-dVOR64 {
 }
 
 .mockInput-GqyVoT {
-    background: var(--background-accent);
-    border-radius: var(--radius-xl);
+    background: var(--bg-overlay-3, var(--channeltextarea-background));
+    border-radius: var(--radius-md);
     height: 40px;
     padding: 0 8px;
     display: -webkit-box;
@@ -168885,4 +168887,4 @@ html .invoiceCancelRow-dVOR64 {
     margin-bottom: 16px
 }
 
-/*# sourceMappingURL=40532.35c2a2e701caf402c1b9.css.map*/
+/*# sourceMappingURL=40532.4b67a791557d8ca71ac2.css.map*/
