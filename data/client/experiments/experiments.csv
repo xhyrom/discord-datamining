@@ -232,6 +232,7 @@ id,hash,label
 2023-07_domain_connection,3495789820,Domain Connection
 2023-07_friend_finder_auto_redirect_invite,197619742,Friend Finder Auto Redirect Invite Experiment
 2023-07_guild_list_order,3517643571,Put new guilds to the bottom of guild list
+2023-07_guild_members_search_in_elasticsearch,386483746,Members Search V2 Experiment
 2023-07_h265_for_windows_with_nvidia,4193500328,Test how h265 works on Windows with Nvidia nvenc codec
 2023-07_iframe_modal,135503004,iFrame Modal
 2023-07_member_safety_non_community,581929451,Members Safety Non Community Experiment
