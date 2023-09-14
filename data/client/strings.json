@@ -15632,7 +15632,7 @@
   "GUILD_ROLE_SUBSCRIPTION_CREATOR_BENEFIT_REVENUE_INCREASE_WITH_GUILD_PRODUCT_EXP": "\"+$1200 this month\"",
   "GUILD_ROLE_SUBSCRIPTION_COMMUNITY_REQUIREMENT_NOTICE_WITH_GUILD_PRODUCT_EXP": "\"Before you can start monetizing, you need to convert your server to a Community\"",
   "GUILD_PRODUCTS_TITLE": "\"Server Products\"",
-  "GUILD_PRODUCTS_SETTINGS_DESCRIPTION": "\"Create new digital products to sell in your server, including downloadable files, Premium Roles, and more.\\n\\nQuestions about what you can sell? [Click here]({monetizationPolicyLink}) to review our Monetization Policy.\"",
+  "GUILD_PRODUCTS_SETTINGS_DESCRIPTION": "\"Create new digital products to sell in your server, including downloadable files, Premium Roles, and more.\\n\\nCheck out [Server Products support article]({serverProductsSupportLink}) and our [Monetization Policy]({monetizationPolicyLink}) to learn more. \"",
   "GUILD_PRODUCTS_CREATE_PRODUCT_BUTTON": "\"Create New Product\"",
   "GUILD_PRODUCTS_BASIC_INFO_SECTION": "\"Basic Info\"",
   "GUILD_PRODUCT_SETUP_INFO_DESCRIPTION_PLACEHOLDER": "\"Let your community know what you're selling and why they should purchase your products.\"",
