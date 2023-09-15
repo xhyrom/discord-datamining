@@ -3341,7 +3341,8 @@
           "816784679717044276",
           "809846768074227723",
           "1149072796383711313",
-          "987012965834297405"
+          "987012965834297405",
+          "936317138904440892"
         ]
       },
       "overrides_formatted": []
@@ -9497,14 +9498,14 @@
   {
     "data": {
       "kind": "guild",
-      "id": "2023-09_gaming_stats_setup",
-      "label": "Gaming stats exposure setup",
+      "id": "2023-09_gaming_stats_prompt_guild",
+      "label": "Gaming stats prompt",
       "description": [
         "Not Eligible",
         "Control Bucket",
-        "Treatment 1: trigger gaming stats data"
+        "Treatment 1: ability to trigger gaming stats prompt"
       ],
-      "hash": 3080965400,
+      "hash": 2478854553,
       "buckets": [
         -1,
         0,
@@ -9513,6 +9514,36 @@
       "config_keys": [
         "enabled"
       ]
+    },
+    "rollout": {
+      "populations": [
+        {
+          "buckets": {
+            "none": {
+              "rollout": [
+                {
+                  "start": 0,
+                  "end": 10000
+                }
+              ]
+            }
+          },
+          "filters": []
+        }
+      ],
+      "revision": 0,
+      "overrides": {
+        "1": [
+          "1136423398608744588",
+          "1106398370580406354",
+          "874345844743213126",
+          "1076244506703311049"
+        ],
+        "2": [
+          "840296607785287763"
+        ]
+      },
+      "overrides_formatted": []
     }
   },
   {
@@ -9584,6 +9615,27 @@
   },
   {
     "data": {
+      "kind": "guild",
+      "id": "2023-09_gaming_stats_setup",
+      "label": "Gaming stats exposure setup",
+      "description": [
+        "Not Eligible",
+        "Control Bucket",
+        "Treatment 1: trigger gaming stats data"
+      ],
+      "hash": 3080965400,
+      "buckets": [
+        -1,
+        0,
+        1
+      ],
+      "config_keys": [
+        "enabled"
+      ]
+    }
+  },
+  {
+    "data": {
       "kind": "user",
       "id": "2022-12_localized_pricing_promo_manager",
       "label": "Localized Pricing Promo Manager",
@@ -9601,57 +9653,6 @@
       "config_keys": [
         "enabled"
       ]
-    }
-  },
-  {
-    "data": {
-      "kind": "guild",
-      "id": "2023-09_gaming_stats_prompt_guild",
-      "label": "Gaming stats prompt",
-      "description": [
-        "Not Eligible",
-        "Control Bucket",
-        "Treatment 1: ability to trigger gaming stats prompt"
-      ],
-      "hash": 2478854553,
-      "buckets": [
-        -1,
-        0,
-        1
-      ],
-      "config_keys": [
-        "enabled"
-      ]
-    },
-    "rollout": {
-      "populations": [
-        {
-          "buckets": {
-            "none": {
-              "rollout": [
-                {
-                  "start": 0,
-                  "end": 10000
-                }
-              ]
-            }
-          },
-          "filters": []
-        }
-      ],
-      "revision": 0,
-      "overrides": {
-        "1": [
-          "1136423398608744588",
-          "1106398370580406354",
-          "874345844743213126",
-          "1076244506703311049"
-        ],
-        "2": [
-          "840296607785287763"
-        ]
-      },
-      "overrides_formatted": []
     }
   },
   {
