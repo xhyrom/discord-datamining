@@ -6,11 +6,11 @@
     "description": [
       "Not Eligible",
       "Control Bucket",
-      "Treatment 1: Enabled",
-      "Treatment 2: Mobile Enabled",
+      "Treatment 1: Desktop view/use/collect",
+      "Treatment 2: Desktop view/use/collect and mobile view/use",
       "Treatment 3: Read-only pack emoji for logged out users",
-      "Treatment 4: Freemium Enabled with Add Pack Modal",
-      "Treatment 5: Nitro Enabled with Add Pack Modal"
+      "Treatment 4: Mobile/desktop view/use/collect, and show Try Packs Modal",
+      "Treatment 5: Mobile/desktop view/use/collect, and show Try Packs Modal (second group)"
     ],
     "hash": 1473329304,
     "buckets": [
