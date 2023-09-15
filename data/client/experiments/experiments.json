@@ -4513,14 +4513,6 @@
               "rollout": [
                 {
                   "start": 0,
-                  "end": 7500
-                }
-              ]
-            },
-            "none": {
-              "rollout": [
-                {
-                  "start": 7500,
                   "end": 10000
                 }
               ]
@@ -4541,14 +4533,6 @@
               "rollout": [
                 {
                   "start": 0,
-                  "end": 7500
-                }
-              ]
-            },
-            "none": {
-              "rollout": [
-                {
-                  "start": 7500,
                   "end": 10000
                 }
               ]
@@ -5378,48 +5362,6 @@
   {
     "data": {
       "kind": "user",
-      "id": "2022-12_get_my_guilds_application_ids_endpoint",
-      "label": "Get My Guilds' Application IDs Endpoint Experiment",
-      "description": [
-        "Not Eligible",
-        "Control Bucket",
-        "Treatment 1: Enabled"
-      ],
-      "hash": 3772658100,
-      "buckets": [
-        -1,
-        0,
-        1
-      ],
-      "config_keys": [
-        "enabled"
-      ]
-    }
-  },
-  {
-    "data": {
-      "kind": "user",
-      "id": "2023-02_app_directory_for_all_modal",
-      "label": "App Directory Upsell For All Modal",
-      "description": [
-        "Not Eligible",
-        "Control Bucket",
-        "Treatment 1: Enabled"
-      ],
-      "hash": 968202795,
-      "buckets": [
-        -1,
-        0,
-        1
-      ],
-      "config_keys": [
-        "enabled"
-      ]
-    }
-  },
-  {
-    "data": {
-      "kind": "user",
       "id": "2022-08_back_to_school",
       "label": "Back to School Event",
       "description": [
@@ -5782,27 +5724,6 @@
             }
           ]
         }
-      ]
-    }
-  },
-  {
-    "data": {
-      "kind": "user",
-      "id": "2023-05_popular_slash_commands_mobile",
-      "label": "Popular Slash Commands Mobile",
-      "description": [
-        "Not Eligible",
-        "Control Bucket",
-        "Treatment 1: Show Popular Commands section"
-      ],
-      "hash": 1146223059,
-      "buckets": [
-        -1,
-        0,
-        1
-      ],
-      "config_keys": [
-        "enabled"
       ]
     }
   },
@@ -7689,6 +7610,27 @@
         "Treatment 1: Enable Bash Out Coach Mark"
       ],
       "hash": 1696233097,
+      "buckets": [
+        -1,
+        0,
+        1
+      ],
+      "config_keys": [
+        "enabled"
+      ]
+    }
+  },
+  {
+    "data": {
+      "kind": "user",
+      "id": "2023-02_app_directory_for_all_modal",
+      "label": "App Directory Upsell For All Modal",
+      "description": [
+        "Not Eligible",
+        "Control Bucket",
+        "Treatment 1: Enabled"
+      ],
+      "hash": 968202795,
       "buckets": [
         -1,
         0,
