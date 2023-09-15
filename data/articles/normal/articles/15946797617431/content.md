@@ -26,7 +26,7 @@
 <h3 id="h_01HAD8XEZPDDZZM8H2GXR3X4SF"><span style="color: #434343;" data-darkreader-inline-color="">To utilize the Members page, you will need to be the owner of that server or have the following permissions for that server: administrator, manage server, ban members, or kick members. </span></h3>
 <p>If you meet either requirements, then you can head into the server of your choice and select the <strong>Members </strong>tab above the server’s channel list. This will load a page where you can view all server members within that specific server.</p>
 <p class="wysiwyg-text-align-center"><img src="https://support.discord.com/hc/article_attachments/17566474149911" alt="1.png"></p>
-<h3 id="docs-internal-guid-af88eee7-7fff-2736-e7d2-ada233e92486"><span style="color: #434343;" data-darkreader-inline-color="">Note: The Members page is currently only available on desktop. </span></h3>
+<h3 id="docs-internal-guid-af88eee7-7fff-2736-e7d2-ada233e92486"><span style="color: #434343;" data-darkreader-inline-color="">Note: The Members page is currently only available on browser/desktop. </span></h3>
 <h1 id="h_01HAD96EADBQ0G1V8RE27ATP8E">Managing Server Members</h1>
 <p>While navigating through the Members page, there are useful tools you can use to manage your server members.</p>
 <h2 id="h_01HAD96EADXYYWVRBF85F6TV67">Adding Roles </h2>
