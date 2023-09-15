@@ -25,19 +25,7 @@
           "1": {
             "rollout": [
               {
-                "start": 5000,
-                "end": 7500
-              }
-            ]
-          },
-          "none": {
-            "rollout": [
-              {
-                "start": 2500,
-                "end": 5000
-              },
-              {
-                "start": 7500,
+                "start": 0,
                 "end": 10000
               }
             ]
@@ -51,22 +39,9 @@
             ]
           }
         ]
-      },
-      {
-        "buckets": {
-          "none": {
-            "rollout": [
-              {
-                "start": 0,
-                "end": 10000
-              }
-            ]
-          }
-        },
-        "filters": []
       }
     ],
-    "revision": 6,
+    "revision": 7,
     "overrides": {},
     "overrides_formatted": [
       {

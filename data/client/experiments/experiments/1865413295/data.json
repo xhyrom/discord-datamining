@@ -17,5 +17,36 @@
     "config_keys": [
       "enabled"
     ]
+  },
+  "rollout": {
+    "populations": [
+      {
+        "buckets": {
+          "1": {
+            "rollout": [
+              {
+                "start": 0,
+                "end": 10000
+              }
+            ]
+          }
+        },
+        "filters": [
+          {
+            "type": "guild_has_feature",
+            "features": [
+              "COMMUNITY"
+            ]
+          }
+        ]
+      }
+    ],
+    "revision": 0,
+    "overrides": {
+      "1": [
+        "763838479293349899"
+      ]
+    },
+    "overrides_formatted": []
   }
 }
