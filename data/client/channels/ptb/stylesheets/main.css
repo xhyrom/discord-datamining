@@ -24972,12 +24972,12 @@ html.disable-forced-colors * {
     --background-message-highlight-hover: hsl(var(--brand-360-hsl)/0.06);
     --background-message-hover: var(--dontuse-21);
     --background-mobile-primary: var(--black-500);
-    --background-mobile-secondary: var(--dontuse-26);
+    --background-mobile-secondary: var(--black-500);
     --background-modifier-accent: hsl(var(--dontuse-16-hsl)/0.455);
     --background-modifier-accent-2: hsl(var(--dontuse-11-hsl)/0.32);
-    --background-modifier-active: hsl(var(--dontuse-15-hsl)/0.48);
+    --background-modifier-active: hsl(var(--dontuse-13-hsl)/0.48);
     --background-modifier-hover: hsl(var(--dontuse-13-hsl)/0.3);
-    --background-modifier-selected: hsl(var(--dontuse-15-hsl)/0.6);
+    --background-modifier-selected: hsl(var(--dontuse-13-hsl)/0.6);
     --background-nested-floating: var(--black-500);
     --background-primary: var(--black-500);
     --background-secondary: var(--dontuse-23);
@@ -25058,15 +25058,13 @@ html.disable-forced-colors * {
     --divider-strong: hsl(var(--dontuse-11-hsl)/0.2);
     --header-primary: var(--dontuse-2);
     --header-secondary: var(--dontuse-8);
-    --home-background: var(--primary-760);
-    --home-card-resting-border: hsl(var(--transparent-hsl)/0);
+    --icon-muted: var(--dontuse-12);
     --icon-primary: var(--dontuse-5);
-    --input-background: var(--dontuse-22);
+    --input-background: hsl(var(--dontuse-16-hsl)/0.455);
     --input-placeholder-text: var(--dontuse-9);
     --interactive-active: var(--dontuse-3);
-    --interactive-normal: var(--dontuse-5);
-    --redesign-activity-card-background: var(--dontuse-20);
-    --redesign-activity-card-background-pressed: var(--dontuse-21);
+    --redesign-activity-card-background: var(--primary-560);
+    --redesign-activity-card-background-pressed: var(--primary-630);
     --redesign-activity-card-badge-icon: var(--dontuse-11);
     --redesign-activity-card-border: hsl(var(--dontuse-11-hsl)/0.12);
     --redesign-activity-card-overflow-background: var(--primary-630);
@@ -25106,7 +25104,7 @@ html.disable-forced-colors * {
     --redesign-button-secondary-alt-text: var(--dontuse-4);
     --redesign-button-secondary-background: var(--dontuse-15);
     --redesign-button-secondary-border: hsl(var(--dontuse-11-hsl)/0.12);
-    --redesign-button-secondary-pressed-background: var(--dontuse-12);
+    --redesign-button-secondary-pressed-background: var(--dontuse-13);
     --redesign-button-secondary-pressed-border: hsl(var(--dontuse-11-hsl)/0.12);
     --redesign-button-secondary-text: var(--dontuse-4);
     --redesign-channel-category-name-text: var(--dontuse-8);
@@ -25116,11 +25114,11 @@ html.disable-forced-colors * {
     --redesign-chat-input-background: hsl(var(--dontuse-16-hsl)/0.455);
     --redesign-input-control-active-bg: var(--dontuse-17);
     --redesign-input-control-selected: var(--brand-500);
-    --redesign-only-background-active: var(--dontuse-17);
-    --redesign-only-background-default: var(--black-500);
-    --redesign-only-background-overlay: var(--dontuse-19);
-    --redesign-only-background-raised: var(--dontuse-23);
-    --redesign-only-background-sunken: var(--black-500);
+    --redesign-only-background-active: var(--primary-530);
+    --redesign-only-background-default: var(--primary-600);
+    --redesign-only-background-overlay: var(--primary-645);
+    --redesign-only-background-raised: var(--primary-630);
+    --redesign-only-background-sunken: var(--primary-660);
     --scrollbar-auto-scrollbar-color-thumb: var(--dontuse-20);
     --scrollbar-auto-scrollbar-color-track: var(--dontuse-17);
     --scrollbar-auto-thumb: var(--dontuse-16);
@@ -25134,7 +25132,7 @@ html.disable-forced-colors * {
     --text-low-contrast: var(--dontuse-12);
     --text-message-preview-low-sat: var(--dontuse-9);
     --text-muted: var(--dontuse-10);
-    --text-muted-on-default: var(--dontuse-11);
+    --text-muted-on-default: var(--primary-330);
     --text-normal: var(--dontuse-4);
     --text-positive: var(--green-330);
     --text-primary: var(--dontuse-4);
@@ -25181,7 +25179,8 @@ html.disable-forced-colors * {
     --forum-post-tag-background: hsl(var(--dontuse-19-hsl)/0.9);
     --guild-notifications-bottom-sheet-pill-background: var(--primary-700);
     --header-muted: var(--dontuse-10);
-    --icon-muted: var(--dontuse-13);
+    --home-background: var(--dontuse-18);
+    --home-card-resting-border: hsl(var(--transparent-hsl)/0);
     --icon-secondary: var(--dontuse-9);
     --info-box-background: hsl(var(--blue-345-hsl)/0.1);
     --info-danger-background: hsl(var(--red-400-hsl)/0.1);
@@ -25198,6 +25197,7 @@ html.disable-forced-colors * {
     --info-warning-text: var(--white-500);
     --interactive-hover: var(--dontuse-4);
     --interactive-muted: var(--dontuse-13);
+    --interactive-normal: var(--dontuse-6);
     --legacy-android-blur-overlay-default: hsl(var(--primary-660-hsl)/0.5);
     --legacy-android-blur-overlay-ultra-thin: hsl(var(--black-500-hsl)/0.025);
     --legacy-blur-fallback-default: hsl(var(--primary-660-hsl)/0.975);
@@ -25338,15 +25338,13 @@ html.disable-forced-colors * {
     --divider-strong: hsl(var(--dontuse-11-hsl)/0.18);
     --header-primary: var(--dontuse-1);
     --header-secondary: var(--dontuse-9);
-    --home-background: var(--dontuse-18);
-    --home-card-resting-border: hsl(var(--transparent-hsl)/0);
-    --icon-primary: var(--dontuse-3);
-    --input-background: hsl(var(--dontuse-24-hsl)/0.6);
+    --icon-muted: var(--dontuse-11);
+    --icon-primary: var(--dontuse-4);
+    --input-background: hsl(var(--dontuse-24-hsl)/0.65);
     --input-placeholder-text: var(--dontuse-9);
     --interactive-active: var(--dontuse-1);
-    --interactive-normal: var(--dontuse-3);
-    --redesign-activity-card-background: var(--dontuse-19);
-    --redesign-activity-card-background-pressed: var(--dontuse-20);
+    --redesign-activity-card-background: var(--primary-560);
+    --redesign-activity-card-background-pressed: var(--primary-630);
     --redesign-activity-card-badge-icon: var(--dontuse-10);
     --redesign-activity-card-border: hsl(var(--dontuse-11-hsl)/0.06);
     --redesign-activity-card-overflow-background: var(--dontuse-17);
@@ -25386,7 +25384,7 @@ html.disable-forced-colors * {
     --redesign-button-secondary-alt-text: var(--dontuse-3);
     --redesign-button-secondary-background: var(--dontuse-15);
     --redesign-button-secondary-border: hsl(var(--dontuse-11-hsl)/0.12);
-    --redesign-button-secondary-pressed-background: var(--dontuse-12);
+    --redesign-button-secondary-pressed-background: var(--dontuse-13);
     --redesign-button-secondary-pressed-border: hsl(var(--dontuse-11-hsl)/0.12);
     --redesign-button-secondary-text: var(--dontuse-3);
     --redesign-channel-category-name-text: var(--dontuse-9);
@@ -25396,11 +25394,11 @@ html.disable-forced-colors * {
     --redesign-chat-input-background: hsl(var(--dontuse-11-hsl)/0.12);
     --redesign-input-control-active-bg: var(--dontuse-16);
     --redesign-input-control-selected: var(--brand-500);
-    --redesign-only-background-active: var(--dontuse-15);
-    --redesign-only-background-default: var(--dontuse-20);
-    --redesign-only-background-overlay: var(--dontuse-16);
-    --redesign-only-background-raised: var(--dontuse-18);
-    --redesign-only-background-sunken: var(--dontuse-22);
+    --redesign-only-background-active: var(--primary-530);
+    --redesign-only-background-default: var(--primary-600);
+    --redesign-only-background-overlay: var(--primary-645);
+    --redesign-only-background-raised: var(--primary-630);
+    --redesign-only-background-sunken: var(--primary-660);
     --scrollbar-auto-scrollbar-color-thumb: var(--dontuse-21);
     --scrollbar-auto-scrollbar-color-track: var(--dontuse-17);
     --scrollbar-auto-thumb: var(--dontuse-21);
@@ -25414,7 +25412,7 @@ html.disable-forced-colors * {
     --text-low-contrast: var(--dontuse-11);
     --text-message-preview-low-sat: var(--dontuse-11);
     --text-muted: var(--dontuse-10);
-    --text-muted-on-default: var(--dontuse-11);
+    --text-muted-on-default: var(--primary-330);
     --text-normal: var(--dontuse-3);
     --text-positive: var(--green-330);
     --text-primary: var(--dontuse-3);
@@ -169133,4 +169131,4 @@ html .invoiceCancelRow-dVOR64 {
     margin-bottom: 16px
 }
 
-/*# sourceMappingURL=40532.6ab34bc4603e257aec68.css.map*/
+/*# sourceMappingURL=40532.65aa4c6638aae8a064a0.css.map*/
