@@ -3213,6 +3213,8 @@
         "1": [
           "763838479293349899",
           "1148717179055919114",
+          "991365865532575844",
+          "921490685830525009",
           "1150906756197785741"
         ]
       },
@@ -8670,6 +8672,27 @@
         "Treatment 1: Test page for guild subscription payment flows"
       ],
       "hash": 1573645622,
+      "buckets": [
+        -1,
+        0,
+        1
+      ],
+      "config_keys": [
+        "enabled"
+      ]
+    }
+  },
+  {
+    "data": {
+      "kind": "user",
+      "id": "2023-09_collectibles_marketing_page",
+      "label": "Collectibles Marketing Page",
+      "description": [
+        "Not Eligible",
+        "Control Bucket",
+        "Treatment 1: Enabled"
+      ],
+      "hash": 1645732717,
       "buckets": [
         -1,
         0,
