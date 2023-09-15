@@ -1,7 +1,22 @@
 {
   "data": {
     "kind": "guild",
-    "hash": 2342285461
+    "id": "2023-08_guild_member_mod_view",
+    "label": "Guild Member Mod View",
+    "description": [
+      "Not Eligible",
+      "Control Bucket",
+      "Treatment 1: Guild Member Mod View"
+    ],
+    "hash": 2342285461,
+    "buckets": [
+      -1,
+      0,
+      1
+    ],
+    "config_keys": [
+      "enabled"
+    ]
   },
   "rollout": {
     "populations": [
