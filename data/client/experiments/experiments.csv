@@ -288,6 +288,7 @@ id,hash,label
 2023-09_decoupled_game_clipping,1366927696,Test decoupled game clipping
 2023-09_gaming_stats_prompt_guild,2478854553,Gaming stats prompt
 2023-09_gaming_stats_setup,3080965400,Gaming stats exposure setup
+2023-09_guild_events_improvements,2181787089,Experiments with various improvements to our events system
 2023-09_member_safety_release_coachmark,1865413295,Members Safety Release Coachmark Experiment
 2023-09_mobile_redesign_hfu,3033100557,Tabs V2 - HFU Iteration
 2023-09_server_shop_phantom_preview,759064140,Server Shop Phantom Preview

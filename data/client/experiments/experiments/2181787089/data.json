@@ -1,0 +1,29 @@
+{
+  "data": {
+    "kind": "guild",
+    "id": "2023-09_guild_events_improvements",
+    "label": "Experiments with various improvements to our events system",
+    "description": [
+      "Not Eligible",
+      "Control Bucket",
+      "Treatment 1: User can see all improvements",
+      "Treatment 2: User can see top level events entrypoint in friend guilds",
+      "Treatment 3: User can see channel list changes and top level events entrypoint in friend guilds",
+      "Treatment 4: User can see autostart toggle and top level events entrypoint in friend guilds",
+      "Treatment 5: User can see recurring events and top level events entrypoint in friend guilds"
+    ],
+    "hash": 2181787089,
+    "buckets": [
+      -1,
+      0,
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "config_keys": [
+      "enabled"
+    ]
+  }
+}

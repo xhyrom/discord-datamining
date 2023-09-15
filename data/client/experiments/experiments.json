@@ -7893,6 +7893,35 @@
   },
   {
     "data": {
+      "kind": "guild",
+      "id": "2023-09_guild_events_improvements",
+      "label": "Experiments with various improvements to our events system",
+      "description": [
+        "Not Eligible",
+        "Control Bucket",
+        "Treatment 1: User can see all improvements",
+        "Treatment 2: User can see top level events entrypoint in friend guilds",
+        "Treatment 3: User can see channel list changes and top level events entrypoint in friend guilds",
+        "Treatment 4: User can see autostart toggle and top level events entrypoint in friend guilds",
+        "Treatment 5: User can see recurring events and top level events entrypoint in friend guilds"
+      ],
+      "hash": 2181787089,
+      "buckets": [
+        -1,
+        0,
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "config_keys": [
+        "enabled"
+      ]
+    }
+  },
+  {
+    "data": {
       "kind": "user",
       "id": "2022-12_channel_notice_redesign",
       "label": "Channel Notice Redesign",
@@ -9524,14 +9553,14 @@
   {
     "data": {
       "kind": "guild",
-      "id": "2023-09_gaming_stats_setup",
-      "label": "Gaming stats exposure setup",
+      "id": "2023-09_gaming_stats_prompt_guild",
+      "label": "Gaming stats prompt",
       "description": [
         "Not Eligible",
         "Control Bucket",
-        "Treatment 1: trigger gaming stats data"
+        "Treatment 1: ability to trigger gaming stats prompt"
       ],
-      "hash": 3080965400,
+      "hash": 2478854553,
       "buckets": [
         -1,
         0,
@@ -9540,6 +9569,36 @@
       "config_keys": [
         "enabled"
       ]
+    },
+    "rollout": {
+      "populations": [
+        {
+          "buckets": {
+            "none": {
+              "rollout": [
+                {
+                  "start": 0,
+                  "end": 10000
+                }
+              ]
+            }
+          },
+          "filters": []
+        }
+      ],
+      "revision": 0,
+      "overrides": {
+        "1": [
+          "1136423398608744588",
+          "1106398370580406354",
+          "874345844743213126",
+          "1076244506703311049"
+        ],
+        "2": [
+          "840296607785287763"
+        ]
+      },
+      "overrides_formatted": []
     }
   },
   {
@@ -9611,6 +9670,27 @@
   },
   {
     "data": {
+      "kind": "guild",
+      "id": "2023-09_gaming_stats_setup",
+      "label": "Gaming stats exposure setup",
+      "description": [
+        "Not Eligible",
+        "Control Bucket",
+        "Treatment 1: trigger gaming stats data"
+      ],
+      "hash": 3080965400,
+      "buckets": [
+        -1,
+        0,
+        1
+      ],
+      "config_keys": [
+        "enabled"
+      ]
+    }
+  },
+  {
+    "data": {
       "kind": "user",
       "id": "2022-12_localized_pricing_promo_manager",
       "label": "Localized Pricing Promo Manager",
@@ -9628,57 +9708,6 @@
       "config_keys": [
         "enabled"
       ]
-    }
-  },
-  {
-    "data": {
-      "kind": "guild",
-      "id": "2023-09_gaming_stats_prompt_guild",
-      "label": "Gaming stats prompt",
-      "description": [
-        "Not Eligible",
-        "Control Bucket",
-        "Treatment 1: ability to trigger gaming stats prompt"
-      ],
-      "hash": 2478854553,
-      "buckets": [
-        -1,
-        0,
-        1
-      ],
-      "config_keys": [
-        "enabled"
-      ]
-    },
-    "rollout": {
-      "populations": [
-        {
-          "buckets": {
-            "none": {
-              "rollout": [
-                {
-                  "start": 0,
-                  "end": 10000
-                }
-              ]
-            }
-          },
-          "filters": []
-        }
-      ],
-      "revision": 0,
-      "overrides": {
-        "1": [
-          "1136423398608744588",
-          "1106398370580406354",
-          "874345844743213126",
-          "1076244506703311049"
-        ],
-        "2": [
-          "840296607785287763"
-        ]
-      },
-      "overrides_formatted": []
     }
   },
   {
