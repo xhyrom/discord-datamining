@@ -168841,8 +168841,7 @@ html .invoiceCancelRow-dVOR64 {
 }
 
 .collectiblePreviewsContainer-2TJ889 {
-    position: relative;
-    padding: 80px 40px 20px 20px
+    position: relative
 }
 
 .categoryBanner-2VV5av {
@@ -168851,6 +168850,14 @@ html .invoiceCancelRow-dVOR64 {
     top: 0;
     right: 0;
     height: 100%
+}
+
+.collectiblePreviewsContainerNoChat-1IDSp_ {
+    padding: 50px 40px
+}
+
+.collectiblePreviewsContainerWithChat-2lLj1- {
+    padding: 80px 40px 20px 20px
 }
 
 .previewContainerInner-28dlGW {
@@ -168895,7 +168902,17 @@ html .invoiceCancelRow-dVOR64 {
 
 .mockMessage-3u7k9X {
     padding-right: 12px !important;
-    margin-left: -12px
+    margin-left: -12px;
+    max-width: 220px
+}
+
+.mockMessage-3u7k9X h2 div {
+    display: inline-block;
+    max-width: 112px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    margin-bottom: -6px
 }
 
 .mockInput-GqyVoT {
@@ -168948,6 +168965,7 @@ html .invoiceCancelRow-dVOR64 {
 }
 
 .button-343kYP {
+    width: 100%;
     -webkit-transition: opacity .5s;
     transition: opacity .5s
 }
@@ -169131,4 +169149,4 @@ html .invoiceCancelRow-dVOR64 {
     margin-bottom: 16px
 }
 
-/*# sourceMappingURL=40532.65aa4c6638aae8a064a0.css.map*/
+/*# sourceMappingURL=40532.08c6df87b810e74269f9.css.map*/
