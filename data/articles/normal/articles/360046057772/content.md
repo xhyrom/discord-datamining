@@ -1,4 +1,4 @@
-<h3>🚧 Article under construction! 🚧</h3>
+<h3 id="h_01HACQPV14R5TP4D2JZ9QT3WRE">🚧 Article under construction! 🚧</h3>
 <p><strong><span class="wysiwyg-font-size-large">What this article covers:</span></strong></p>
 <ul>
     <li>
@@ -25,8 +25,17 @@
 <p>There are some bug reports that are not currently supported.  We ask that you check out this <a href="https://support.discord.com/hc/en-us/articles/1500005933882-Unsupported-Reports" target="_blank" rel="noopener noreferrer">Unsupported Reports</a> article before submitting a bug report, to familiarize yourself with what topics are unsupported.</p>
 <p>Additionally, if you're experiencing a bug related to <span style="font-weight: 400;">Accessibility aka (A11Y) these issues </span><span style="font-weight: 400;">can also be submitted via our <a href="https://dis.gd/bugreport" target="_blank" rel="noopener noreferrer">Bug Reporting form.</a></span></p>
 <h2 id="h_01F2HKTD57FVC60P8B8JW6FTKX">What is Discord Testers?</h2>
-<p>Discord Testers (also known as DTesters) is an official, invite only Discord server for adept volunteer bug testers. Our goal is to identify, reproduce, and provide high-quality bug reports. While there is no minimum activity expectation, inactive members may be removed. We're sorry to say that the opportunity to be considered for the Discord Testers server is currently unavailable. Periodically, new testers will be added and more information will be provided here as these opportunities arise.</p>
-<p>For those who filled out the most recent Discord Testers Consideration Quiz, we are in the process of reviewing the completed quizzes. When the review process is complete, we will update this page with more information. This process will take time, and we appreciate your patience.</p>
+<h3 id="h_01HACQQ071Z125TVD1XJXMCJ3Q"><span style="color: #434343;" data-darkreader-inline-color="">We're sorry to say that the opportunity to be considered for the Discord Testers server is currently unavailable.</span></h3>
+<p><strong><span style="color: #2e3338;" data-darkreader-inline-color="">Discord Testers</span></strong><span style="color: #2e3338;" data-darkreader-inline-color=""> (also known as DTesters) is an official, invite only Discord server for adept volunteer bug testers. Our goal is to identify, reproduce, and provide high-quality bug reports. </span></p>
+<p><span style="color: #2e3338;" data-darkreader-inline-color="">We wanted to say a big thank you to those that took the time to fill out the recent Discord Testers Consideration Quiz. Your interest and participation mean a lot to us! If you were one of the top performers, we're in the process of sending you an email with more information on what to do next. Don't forget to check your spam folder for messages from @discordapp.com, just in case our email ended up there.</span></p>
+<p><span style="color: #2e3338;" data-darkreader-inline-color="">If you have not been contacted, we are sorry to say that you were not chosen this time around. We understand that this news is likely disappointing, but wanted to offer some guidance for the future. </span></p>
+<p><span style="color: #2e3338;" data-darkreader-inline-color="">Here are some tips for improving for the Discord Testers Consideration Quiz next time:</span></p>
+<ul>
+    <li><span style="color: #2e3338;" data-darkreader-inline-color="">Make sure to follow the quiz directions carefully</span></li>
+    <li><span style="color: #2e3338;" data-darkreader-inline-color="">Become more familiar with Discord and its features</span></li>
+    <li><span style="color: #2e3338;" data-darkreader-inline-color="">Utilize Discord support articles in the Help Center</span></li>
+</ul>
+<p><span style="color: #2e3338;" data-darkreader-inline-color="">Periodically, new testers will be added and more information will be provided here as these opportunities arise. </span></p>
 <h2 id="h_01GB8VR2A607B1TXP5CX4MF7CF"><span style="font-weight: 400;">Discord Tester FAQ</span></h2>
 <p><strong>How can I report bugs if I am not a part of the Discord Testers server?</strong></p>
 <p><span style="font-weight: 400;">Bug reports should be submitted with a ticket to the </span><a href="https://dis.gd/bugreport" target="_blank" rel="noopener noreferrer">Bug Reporting Form</a><span style="font-weight: 400;">. Be sure to fill out each category, as each is important.</span></p>
