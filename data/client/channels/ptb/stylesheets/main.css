@@ -103068,6 +103068,11 @@ html:not(.custom-theme-background) .container-Vrgqxz {
     margin-top: 0
 }
 
+.collectiblesBannerFullscreen-1ukkvK {
+    margin-top: -40px;
+    margin-bottom: 80px
+}
+
 .trialOfferWrapper-2Y24ok {
     background: url(/assets/65454777d66570697a69882f93146ea3.svg) 255px no-repeat, -webkit-gradient(linear, left top, right top, from(var(--premium-tier-2-purple-for-gradients)), to(var(--premium-tier-2-pink-for-gradients)));
     background: url(/assets/65454777d66570697a69882f93146ea3.svg) 255px no-repeat, linear-gradient(90deg, var(--premium-tier-2-purple-for-gradients), var(--premium-tier-2-pink-for-gradients));
@@ -169449,4 +169454,4 @@ html .invoiceCancelRow-dVOR64 {
     margin-bottom: 16px
 }
 
-/*# sourceMappingURL=40532.7201b33366ab26365547.css.map*/
+/*# sourceMappingURL=40532.b1cce0a246d1838650e6.css.map*/
