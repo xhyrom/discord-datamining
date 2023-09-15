@@ -4513,14 +4513,14 @@
               "rollout": [
                 {
                   "start": 0,
-                  "end": 2000
+                  "end": 5000
                 }
               ]
             },
             "none": {
               "rollout": [
                 {
-                  "start": 2000,
+                  "start": 5000,
                   "end": 10000
                 }
               ]
@@ -4541,14 +4541,14 @@
               "rollout": [
                 {
                   "start": 0,
-                  "end": 2000
+                  "end": 5000
                 }
               ]
             },
             "none": {
               "rollout": [
                 {
-                  "start": 2000,
+                  "start": 5000,
                   "end": 10000
                 }
               ]
