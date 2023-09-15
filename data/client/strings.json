@@ -7179,6 +7179,7 @@
   "BILLING_GIFT_COPIED": "\"Copied!\"",
   "BILLING_LEGAL_MUMBO_JUMBO": "\"Legal Mumbo Jumbo\"",
   "BILLING_LEGAL_MUMBO_JUMBO_TERMS_LABEL": "\"I agree to the [Discord Terms of Service]({termsURL}) and [Paid Services Terms]({paidURL})\"",
+  "BILLING_LEGAL_MUMBO_JUMBO_TERMS_LABEL_SIMPLE": "\"I agree to the [Paid Services Terms]({paidURL})\"",
   "BILLING_LEGAL_MUMBO_JUMBO_TERMS_LABEL_V2": "'By clicking \"{primaryText}\", you agree to the [Paid Services Terms]({paidURL}).'",
   "BILLING_LEGAL_MUMBO_JUMBO_TRIAL_TERMS_LABEL": "\"I agree to the [Discord Terms of Service]({termsURL}), [Paid Services Terms]({paidURL}), and that my subscription will renew for **{rate}** on **{renewalDate, date, medium}**. I can cancel anytime under User Settings > Subscriptions, and previous charges won’t be refunded unless required by law.\"",
   "BILLING_THIRD_PARTY_EULA_LABEL": "\"I agree to the [{applicationName} EULA](onClick)\"",
