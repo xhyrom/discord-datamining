@@ -168756,7 +168756,7 @@ html .invoiceCancelRow-dVOR64 {
 }
 
 .chatPreview-2rboc6 {
-    background: var(--background-primary);
+    background: var(--bg-overlay-chat, var(--background-primary));
     border-radius: var(--radius-sm);
     position: absolute;
     bottom: -90px;
@@ -169012,4 +169012,4 @@ html .invoiceCancelRow-dVOR64 {
     margin-bottom: 16px
 }
 
-/*# sourceMappingURL=40532.51f1045a732716060937.css.map*/
+/*# sourceMappingURL=40532.5c8040d8c151104e8a41.css.map*/
