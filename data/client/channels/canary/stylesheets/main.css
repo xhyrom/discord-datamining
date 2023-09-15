@@ -161882,7 +161882,8 @@ html .invoiceCancelRow-3s2UuC {
 }
 
 .description-1aSbLq {
-    margin-top: 4px
+    margin-top: 4px;
+    word-wrap: break-word
 }
 
 .price-ehI2ay {
@@ -161892,7 +161893,9 @@ html .invoiceCancelRow-3s2UuC {
 .button-3VHqk5 {
     width: 100%;
     -webkit-transition: all .5s;
-    transition: all .5s
+    transition: all .5s;
+    -webkit-transform: translateY(20%);
+    transform: translateY(20%)
 }
 
 .purchaseButton-16bBUi:hover {
@@ -161952,7 +161955,7 @@ html .invoiceCancelRow-3s2UuC {
 .innerHover-3lqG6f {
     position: absolute;
     width: 100%;
-    top: 50%;
+    bottom: 0;
     opacity: 0
 }
 
@@ -161965,7 +161968,18 @@ html .invoiceCancelRow-3s2UuC {
 .innerBlur-3NYZ8j {
     opacity: 1;
     left: 32px;
-    right: 32px
+    right: 32px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    height: 100%
 }
 
 .checkmarkWrapper-30c52R {
@@ -161999,8 +162013,8 @@ html .invoiceCancelRow-3s2UuC {
 }
 
 .shopCard-H3oN50:hover .button-3VHqk5 {
-    -webkit-transform: translateY(-50%);
-    transform: translateY(-50%)
+    -webkit-transform: translateY(0);
+    transform: translateY(0)
 }
 
 .shopCard-H3oN50:hover .checkmark-1jbYXa {
@@ -162037,7 +162051,7 @@ html .invoiceCancelRow-3s2UuC {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    margin-top: 40px;
+    margin-top: 24px;
     border-radius: 32px;
     -webkit-box-align: center;
     -ms-flex-align: center;
@@ -162206,9 +162220,9 @@ html .invoiceCancelRow-3s2UuC {
 
 .cardsContainer-2kdrm8 {
     max-width: 1060px;
-    padding: 24px 0;
+    margin-top: 40px;
     display: grid;
-    grid-gap: 28px;
+    grid-gap: 24px;
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
     overflow: visible
 }
@@ -168998,4 +169012,4 @@ html .invoiceCancelRow-dVOR64 {
     margin-bottom: 16px
 }
 
-/*# sourceMappingURL=40532.e1653e1c2d96dbe59d2e.css.map*/
+/*# sourceMappingURL=40532.51f1045a732716060937.css.map*/
