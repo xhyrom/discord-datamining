@@ -37,7 +37,7 @@
 <h2 id="h_01H5K0YX4XET5E6KP0Q1T9HWNP">Reviewing Signals</h2>
 <p id="docs-internal-guid-43759e45-7fff-5e44-80e9-2149ff8a7c8f">If you would like to review any unusual DM activity or server members who have been timed out, select the <strong>Signals</strong> category. </p>
 <p class="wysiwyg-text-align-center"><img src="https://support.discord.com/hc/article_attachments/17566504969495" alt="2_remove_user.png"></p>
-<p>This will open the menu where you will be able to choose the specific flags you would like to view by checking off the box. Once you have selected your choice, you will be able to review the list of server members who have the selected flags: </p>
+<p>This will open the menu where you will be able to choose the specific Signals you would like to view by checking off the box. Once you have selected your choice, you will be able to review the list of server members who have the selected Signals: </p>
 <ul>
     <li>
         <strong>Unusual DM Activity:</strong> <span id="docs-internal-guid-57538280-7fff-96cb-25ab-0c3b88039609">Shows members who may have sent a high volume of DMs to non-friend server members.</span>
