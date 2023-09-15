@@ -1,0 +1,26 @@
+{
+  "data": {
+    "kind": "user",
+    "id": "2023-09_activity_bobble_bash_upsell",
+    "label": "Activity Bobble Bash Upsell",
+    "description": [
+      "Not Eligible",
+      "Control Bucket",
+      "Treatment 1: Enable mini-shelf banner + double-wide shelf",
+      "Treatment 2: Enable mini-shelf banner",
+      "Treatment 3: Enable double-wide shelf"
+    ],
+    "hash": 3892100904,
+    "buckets": [
+      -1,
+      0,
+      1,
+      2,
+      3
+    ],
+    "config_keys": [
+      "enableBobbleBashMiniShelfBanner",
+      "enableBobbleBashDoubleWideShelf"
+    ]
+  }
+}
