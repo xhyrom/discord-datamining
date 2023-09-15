@@ -1,0 +1,21 @@
+{
+  "data": {
+    "kind": "guild",
+    "id": "2023-09_gaming_stats_setup",
+    "label": "Gaming stats exposure setup",
+    "description": [
+      "Not Eligible",
+      "Control Bucket",
+      "Treatment 1: trigger gaming stats data"
+    ],
+    "hash": 3080965400,
+    "buckets": [
+      -1,
+      0,
+      1
+    ],
+    "config_keys": [
+      "enabled"
+    ]
+  }
+}
