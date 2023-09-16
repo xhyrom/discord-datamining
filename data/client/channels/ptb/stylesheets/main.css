@@ -116520,7 +116520,8 @@ html .tabBadge-h4HGed {
 .emojiAliasInput-3ZhdKx {
     position: relative;
     z-index: 1;
-    width: 200px
+    width: 200px;
+    margin-top: 2px
 }
 
 .emojiRow-1aPaM- {
@@ -116538,7 +116539,8 @@ html .tabBadge-h4HGed {
     -webkit-transition: opacity .1s ease-in-out;
     transition: opacity .1s ease-in-out;
     opacity: 0;
-    padding: 1px --emojiInputHorizontalPadding 0
+    background-color: var(--background-tertiary);
+    padding: 0 --emojiInputHorizontalPadding
 }
 
 .emojiRow-1aPaM- .emojiAliasInput-3ZhdKx .emojiInput-B8MGXq:focus {
@@ -169454,4 +169456,4 @@ html .invoiceCancelRow-dVOR64 {
     margin-bottom: 16px
 }
 
-/*# sourceMappingURL=40532.b1cce0a246d1838650e6.css.map*/
+/*# sourceMappingURL=40532.56f91908671a3427fcb9.css.map*/
