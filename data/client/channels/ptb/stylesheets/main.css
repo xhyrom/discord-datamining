@@ -103134,7 +103134,8 @@ html:not(.custom-theme-background) .container-Vrgqxz {
 }
 
 .collectiblesBanner-3eeMZW {
-    margin-top: 0
+    margin-top: 0;
+    z-index: 1
 }
 
 .collectiblesBannerFullscreen-1ukkvK {
@@ -169551,4 +169552,4 @@ html .invoiceCancelRow-dVOR64 {
     margin-bottom: 16px
 }
 
-/*# sourceMappingURL=40532.5599a8129db0928b9e1f.css.map*/
+/*# sourceMappingURL=40532.bd6b57eb45997307671f.css.map*/
