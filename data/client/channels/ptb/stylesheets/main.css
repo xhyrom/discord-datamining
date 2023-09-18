@@ -101636,6 +101636,14 @@ html:not(.custom-theme-background) .container-Vrgqxz {
     padding: 11px 20px
 }
 
+.marketingPage-2Ut4qv .mainColumn-3pLT0l {
+    width: 1000px
+}
+
+.marketingPage-2Ut4qv .textBody-1qjeO3 {
+    max-width: 400px
+}
+
 .brandShine-2_xHTj {
     color: hsl(var(--brand-500-hsl)/.1) !important
 }
@@ -102337,7 +102345,25 @@ html:not(.custom-theme-background) .container-Vrgqxz {
     transform: translateY(-8px)
 }
 
+.flipCardContainer-Yr1oDc .flipCard-39OCl1.clickable-1A6JsZ .cover-1nw8ay {
+    opacity: 1
+}
+
 .flipCardContainer-Yr1oDc .flipCard-39OCl1.flipped-1ykbgv {
+    -webkit-transform: rotateY(-180deg);
+    transform: rotateY(-180deg)
+}
+
+.flipCardContainer-Yr1oDc .flipCard-39OCl1.flipped-1ykbgv .flipCardButtonContainer--NA2Tt {
+    opacity: 0;
+    pointer-events: none
+}
+
+.flipCardContainer-Yr1oDc .flipCard-39OCl1.flipped-1ykbgv .cover-1nw8ay {
+    opacity: 0
+}
+
+.flipCardContainer-Yr1oDc .flipCard-39OCl1.flipped-1ykbgv:hover {
     -webkit-transform: rotateY(-180deg);
     transform: rotateY(-180deg)
 }
@@ -102390,11 +102416,30 @@ html:not(.custom-theme-background) .container-Vrgqxz {
     pointer-events: none
 }
 
-.card-20tMLf {
-    position: relative;
+.flipCardButtonContainer--NA2Tt {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    pointer-events: none
+}
+
+.card-20tMLf,
+.flipCardButtonContainer--NA2Tt {
     display: -webkit-box;
     display: -ms-flexbox;
-    display: flex;
+    display: flex
+}
+
+.card-20tMLf {
+    position: relative;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
     -ms-flex-direction: column;
@@ -102425,7 +102470,8 @@ html:not(.custom-theme-background) .container-Vrgqxz {
 }
 
 .clickable-1A6JsZ {
-    cursor: pointer
+    cursor: pointer;
+    pointer-events: all
 }
 
 .pill-1KzVqx {
@@ -103086,8 +103132,10 @@ html:not(.custom-theme-background) .container-Vrgqxz {
 }
 
 .collectiblesBannerFullscreen-1ukkvK {
-    margin-top: -40px;
-    margin-bottom: 80px
+    margin-top: -40px !important;
+    margin-bottom: 80px !important;
+    max-width: 824px;
+    min-width: 600px
 }
 
 .trialOfferWrapper-2Y24ok {
@@ -169481,4 +169529,4 @@ html .invoiceCancelRow-dVOR64 {
     margin-bottom: 16px
 }
 
-/*# sourceMappingURL=40532.aba06d6fdfebc2e3d679.css.map*/
+/*# sourceMappingURL=40532.7b543bf17fc73d59430d.css.map*/
