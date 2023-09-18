@@ -15,7 +15,8 @@
       1
     ],
     "config_keys": [
-      "triggerDeadchat"
+      "triggerDeadchat",
+      "enableDeadchat"
     ]
   },
   "rollout": {
