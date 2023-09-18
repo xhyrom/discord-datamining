@@ -16125,6 +16125,7 @@
   "EXPLICIT_CONTENT_WARNING_TOOLTIP": "\"Content Warning: This may contain sensitive content\"",
   "EXPLICIT_CONTENT_ALT": "\"Content Warning: This may contain sensitive content\"",
   "EXPLICIT_CONTENT_BUTTON_TOOLTIP": "\"Reveal sensitive content\"",
+  "OBSCURED_CONTENT_LEARN_MORE_MESSAGE_LABEL": "\"Why we hide some media\"",
   "OBSCURED_CONTENT_LEARN_MORE_NOTICE": "\"Safety Alert\"",
   "OBSCURED_CONTENT_LEARN_MORE_HEADER": "\"This may be sensitive\"",
   "OBSCURED_CONTENT_LEARN_MORE_DESCRIPTION_ADULT": "\"Based on your settings, Discord blurs images that may be sensitive. You can change this filter in your Privacy & Safety settings at any time.\"",
