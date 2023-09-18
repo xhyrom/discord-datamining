@@ -126700,7 +126700,15 @@ input::-webkit-outer-spin-button {
     margin-bottom: 20px
 }
 
-.badgedItem-qaR-jm {
+.flexRow-89It6P {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row
+}
+
+.badgedItem-qaR-jm,
+.flexRow-89It6P {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -169540,4 +169548,4 @@ html .invoiceCancelRow-dVOR64 {
     margin-bottom: 16px
 }
 
-/*# sourceMappingURL=40532.47d0480cad586d5eda3e.css.map*/
+/*# sourceMappingURL=40532.2eccbd87276147b9d718.css.map*/
