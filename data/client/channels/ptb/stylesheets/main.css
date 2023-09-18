@@ -162482,20 +162482,30 @@ html .invoiceCancelRow-3s2UuC {
     margin-top: 16px
 }
 
-.button-3VHqk5 {
+.buttonsContainer-1B5Td_ {
     width: 100%;
-    -webkit-transition: all .5s;
-    transition: all .5s;
-    -webkit-transform: translateY(20%);
-    transform: translateY(20%)
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    gap: 8px
 }
 
+.previewButton-15tLXZ {
+    padding: 0 7px
+}
+
+.previewButton-15tLXZ:hover,
 .purchaseButton-16bBUi:hover {
     opacity: .8
 }
 
-.upsellButton-1UaSX8 {
-    width: 100%
+.previewButtonInner-3Gn0Se {
+    max-width: 24px;
+    max-height: 24px
+}
+
+.defaultPreviewButtonColor-nHD0Sj {
+    background-color: var(--background-accent)
 }
 
 .premiumWheelTooltipContent-1tZDXT {
@@ -162537,30 +162547,24 @@ html .invoiceCancelRow-3s2UuC {
     -webkit-box-pack: center;
     -ms-flex-pack: center;
     justify-content: center;
-    gap: 24px;
-    -webkit-transition: -webkit-transform .5s;
-    transition: -webkit-transform .5s;
-    transition: transform .5s;
-    transition: transform .5s, -webkit-transform .5s
+    gap: 16px
 }
 
 .innerHover-3lqG6f {
     position: absolute;
     width: 100%;
     bottom: 0;
-    opacity: 0
-}
-
-.innerBlur-3NYZ8j,
-.innerHover-3lqG6f {
-    -webkit-transition: opacity .5s;
-    transition: opacity .5s
+    opacity: 0;
+    -webkit-transition: all .5s;
+    transition: all .5s;
+    -webkit-transform: translateY(20%);
+    transform: translateY(20%)
 }
 
 .innerBlur-3NYZ8j {
     opacity: 1;
-    left: 32px;
-    right: 32px;
+    -webkit-transition: opacity .5s;
+    transition: opacity .5s;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -162592,21 +162596,13 @@ html .invoiceCancelRow-3s2UuC {
 }
 
 .shopCard-H3oN50:hover .innerHover-3lqG6f {
-    opacity: 1
+    opacity: 1;
+    -webkit-transform: translateY(0);
+    transform: translateY(0)
 }
 
 .shopCard-H3oN50:hover .innerBlur-3NYZ8j {
     opacity: 0
-}
-
-.shopCard-H3oN50:hover .hoverUpsellContainer-2so0Ya {
-    -webkit-transform: translateY(-50%);
-    transform: translateY(-50%)
-}
-
-.shopCard-H3oN50:hover .button-3VHqk5 {
-    -webkit-transform: translateY(0);
-    transform: translateY(0)
 }
 
 .shopCard-H3oN50:hover .checkmark-1jbYXa {
@@ -169544,4 +169540,4 @@ html .invoiceCancelRow-dVOR64 {
     margin-bottom: 16px
 }
 
-/*# sourceMappingURL=40532.e0be8910be350a15d498.css.map*/
+/*# sourceMappingURL=40532.24e88c5c95ef9b3e6df3.css.map*/
