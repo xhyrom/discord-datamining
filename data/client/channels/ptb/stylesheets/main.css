@@ -2894,7 +2894,15 @@ html.decorate-links .lowSaturationUnderline-Z6CW6z {
 .closeWithCircleBackground-3WrZoY .closeIcon-pSJDFz {
     width: 16px;
     height: 16px;
-    color: var(--interactive-normal)
+    color: var(--primary-330)
+}
+
+.closeWithCircleBackground-3WrZoY .closeIcon-pSJDFz:hover {
+    color: var(--primary-230)
+}
+
+.closeWithCircleBackground-3WrZoY:hover {
+    background-color: var(--black-500)
 }
 
 @media (max-width:485px) {
@@ -168531,8 +168539,8 @@ html .invoiceCancelRow-3s2UuC {
 
 .modalCloseButton-22284s {
     position: absolute;
-    right: 8px;
-    top: 8px
+    top: 16px;
+    right: 16px
 }
 
 .avatarDecoration-3jlk91 {
@@ -168615,30 +168623,10 @@ html .invoiceCancelRow-3s2UuC {
     background-color: var(--background-primary)
 }
 
-.closeContainer-3ve08B {
-    width: 24px;
-    height: 24px;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    justify-content: center;
+.closeButton-2Bzz-z {
     position: absolute;
     top: 16px;
-    right: 16px;
-    background-color: hsl(var(--black-500-hsl)/.85);
-    border-radius: 50%;
-    cursor: pointer
-}
-
-.closeIcon-22RzWm {
-    width: 16px;
-    height: 16px;
-    color: var(--interactive-normal)
+    right: 16px
 }
 
 .headerImage-1LiIsw,
@@ -169493,4 +169481,4 @@ html .invoiceCancelRow-dVOR64 {
     margin-bottom: 16px
 }
 
-/*# sourceMappingURL=40532.cc942238060806909446.css.map*/
+/*# sourceMappingURL=40532.aba06d6fdfebc2e3d679.css.map*/
