@@ -2936,6 +2936,17 @@
       "POST"
     ]
   },
+  "USER_OFFER": {
+    "url": "/users/@me/billing/user-offer",
+    "allowed_methods": [
+      "OPTIONS",
+      "POST"
+    ]
+  },
+  "USER_OFFER_ACKNOWLEDGED": {
+    "url": "/users/@me/billing/user-offer/ack",
+    "allowed_methods": null
+  },
   "GUILD_DISCOVERY": {
     "url": "/discoverable-guilds",
     "allowed_methods": [
