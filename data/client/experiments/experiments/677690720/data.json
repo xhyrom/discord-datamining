@@ -7,14 +7,16 @@
       "Not Eligible",
       "Control Bucket",
       "Treatment 1: Activity Shelf Order: Most Recently Used",
-      "Treatment 2: Activity Shelf Order: Most Used"
+      "Treatment 2: Activity Shelf Order: Most Used",
+      "Treatment 3: Activity Shelf Order: Weighted Most Used"
     ],
     "hash": 677690720,
     "buckets": [
       -1,
       0,
       1,
-      2
+      2,
+      3
     ],
     "config_keys": [
       "enabled"
