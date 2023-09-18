@@ -1,22 +1,7 @@
 {
   "data": {
     "kind": "guild",
-    "id": "2023-02_app_recommendations_server_checklist",
-    "label": "Application Recommendation Server Checklist Experiment",
-    "description": [
-      "Not Eligible",
-      "Control Bucket",
-      "Treatment 1: Show recommendation to add apps in new server checklist"
-    ],
-    "hash": 3320756132,
-    "buckets": [
-      -1,
-      0,
-      1
-    ],
-    "config_keys": [
-      "enabled"
-    ]
+    "hash": 3320756132
   },
   "rollout": {
     "populations": [
