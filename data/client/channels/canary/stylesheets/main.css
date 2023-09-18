@@ -162338,6 +162338,25 @@ html .invoiceCancelRow-3s2UuC {
     z-index: 1
 }
 
+.previewContainer-3HzSb7 {
+    position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    width: 200px;
+    height: 390px;
+    z-index: 0
+}
+
+.preview-RKQD82 {
+    position: relative;
+    width: 100%;
+    height: 100%
+}
+
 .shopCard-H3oN50 {
     border-radius: var(--radius-xxl);
     border: 2px solid transparent;
@@ -162391,7 +162410,8 @@ html .invoiceCancelRow-3s2UuC {
 }
 
 .cardText-2OugTh {
-    margin-top: 32px
+    margin-top: 32px;
+    z-index: 1
 }
 
 .description-1aSbLq {
@@ -162536,6 +162556,14 @@ html .invoiceCancelRow-3s2UuC {
 
 .shopCard-H3oN50:hover .avatarPurchased-3h_bK- {
     opacity: 1
+}
+
+.profileEffectShopPreview-1yyQoX {
+    position: relative;
+    height: 120px;
+    width: 200px;
+    top: -10px;
+    margin: 0 auto
 }
 
 .shopLogo-2NbABu {
@@ -169465,4 +169493,4 @@ html .invoiceCancelRow-dVOR64 {
     margin-bottom: 16px
 }
 
-/*# sourceMappingURL=40532.23f33ee06202618a04f0.css.map*/
+/*# sourceMappingURL=40532.cc942238060806909446.css.map*/
