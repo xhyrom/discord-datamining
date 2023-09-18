@@ -64,7 +64,7 @@
     </li>
     <li>Unicode characters</li>
 </ul>
-<h3 id="h_01HA5Q9PKN6E6PTAHFR49VRMT3" class="wysiwyg-text-align-center"><img src="https://support.discord.com/hc/article_attachments/15527697909271" alt="about_me_settings.png"></h3>
+<p id="h_01HA5Q9PKN6E6PTAHFR49VRMT3" class="wysiwyg-text-align-center"><img src="https://support.discord.com/hc/article_attachments/15527697909271" alt="about_me_settings.png"></p>
 <p>While you fill out your About Me, you can see a preview of what it’ll look like. Once you’re finished, just tap on <strong>Save</strong> to save changes.</p>
 <p class="wysiwyg-text-align-center"><img src="https://support.discord.com/hc/article_attachments/15527697917079" alt="about_me_settings_preview.png" width="319" height="532"></p>
 <h2 id="h_01H3MBRNC0NWF6G35ZE3D76DEM"><span style="color: #434343;" data-darkreader-inline-color="">Pronouns</span></h2>
