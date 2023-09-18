@@ -2325,6 +2325,13 @@
       "POST"
     ]
   },
+  "BILLING_PAYMENTS_REFUND": {
+    "url": "/users/@me/billing/payments/:param/refund",
+    "allowed_methods": [
+      "OPTIONS",
+      "POST"
+    ]
+  },
   "BILLING_INVOICE_PDF": {
     "url": "/users/@me/billing/invoice",
     "allowed_methods": [
