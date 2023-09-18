@@ -101564,7 +101564,6 @@ html:not(.custom-theme-background) .container-Vrgqxz {
 }
 
 .container-2giTRz {
-    margin: 24px 0;
     border-radius: var(--radius-sm);
     display: -webkit-box;
     display: -ms-flexbox;
@@ -101576,6 +101575,10 @@ html:not(.custom-theme-background) .container-Vrgqxz {
     -webkit-box-pack: center;
     -ms-flex-pack: center;
     justify-content: center
+}
+
+.containerDefaultMargin-ajoaVC {
+    margin: 24px 0
 }
 
 .avatars-14vQ8F {
@@ -103132,8 +103135,8 @@ html:not(.custom-theme-background) .container-Vrgqxz {
 }
 
 .collectiblesBannerFullscreen-1ukkvK {
-    margin-top: -40px !important;
-    margin-bottom: 80px !important;
+    margin-top: -40px;
+    margin-bottom: 80px;
     max-width: 824px;
     min-width: 600px
 }
@@ -169541,4 +169544,4 @@ html .invoiceCancelRow-dVOR64 {
     margin-bottom: 16px
 }
 
-/*# sourceMappingURL=40532.9c83cc60cb98f597242e.css.map*/
+/*# sourceMappingURL=40532.e0be8910be350a15d498.css.map*/
