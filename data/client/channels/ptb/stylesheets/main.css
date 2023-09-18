@@ -42461,6 +42461,28 @@ input[type=checked]:focus-visible+.label-3TDpbn {
     flex-direction: row-reverse
 }
 
+.content-1o8ytE {
+    background-color: var(--modal-background);
+    border-radius: 4px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    margin: 0 auto;
+    width: 440px;
+    max-height: 720px;
+    min-height: 200px
+}
+
 .accountIdentifier-3wwAW_ {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -169443,4 +169465,4 @@ html .invoiceCancelRow-dVOR64 {
     margin-bottom: 16px
 }
 
-/*# sourceMappingURL=40532.b6cbda99eed1ec6f27f2.css.map*/
+/*# sourceMappingURL=40532.23f33ee06202618a04f0.css.map*/
