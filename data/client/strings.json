@@ -9937,7 +9937,6 @@
   "APPLICATION_COMMAND_NO_PERMISSIONS": "\"You don't have permission to use any commands from **!!{applicationName}!!**\"",
   "APPLICATION_COMMAND_EDUCATION": "\"Try slash commands! A new way to use bots by typing slash. [Dismiss](dismissOnClick)\"",
   "APPLICATION_COMMAND_FILE_ATTACHMENT": "\"Please attach a file\"",
-  "APPLICATION_COMMAND_FORM_DATA_WARNING": "\"You're submitting information to a third party developer. Do not share passwords or other sensitive information.\"",
   "APPLICATION_COMMAND_MENTION_CONFIRM_HEADER": "\"Clear message?\"",
   "APPLICATION_COMMAND_MENTION_CONFIRM_BODY": "\"Looks like you've already written something. Do you want to clear it and use a command?\"",
   "MJ_CHATBAR_BODY": "\"Type “$[command](commandHook)” to use Midjourney. Tip: Create a server to try it with just friends.\"",
