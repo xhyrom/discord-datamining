@@ -24585,6 +24585,7 @@ html.disable-forced-colors * {
     --mention-foreground: var(--brand-260);
     --modal-background: var(--primary-600);
     --modal-footer-background: var(--primary-630);
+    --navigator-header-tint: var(--white-500);
     --profile-gradient-card-background: hsl(var(--black-500-hsl)/0.7);
     --profile-gradient-message-input-border: hsl(var(--primary-500-hsl)/0.48);
     --profile-gradient-note-background: hsl(var(--black-500-hsl)/0.3);
@@ -24865,6 +24866,7 @@ html.disable-forced-colors * {
     --mention-foreground: var(--brand-500);
     --modal-background: var(--white-500);
     --modal-footer-background: var(--primary-130);
+    --navigator-header-tint: var(--primary-500);
     --profile-gradient-card-background: hsl(var(--white-500-hsl)/0.7);
     --profile-gradient-message-input-border: hsl(var(--primary-430-hsl)/0.24);
     --profile-gradient-note-background: hsl(var(--white-500-hsl)/0.3);
@@ -25216,6 +25218,7 @@ html.disable-forced-colors * {
     --mention-foreground: var(--brand-230);
     --modal-background: var(--dontuse-16);
     --modal-footer-background: var(--dontuse-17);
+    --navigator-header-tint: var(--white-500);
     --profile-gradient-card-background: hsl(var(--black-500-hsl)/0.7);
     --profile-gradient-message-input-border: hsl(var(--primary-500-hsl)/0.48);
     --profile-gradient-note-background: hsl(var(--black-500-hsl)/0.3);
@@ -169548,4 +169551,4 @@ html .invoiceCancelRow-dVOR64 {
     margin-bottom: 16px
 }
 
-/*# sourceMappingURL=40532.2eccbd87276147b9d718.css.map*/
+/*# sourceMappingURL=40532.5599a8129db0928b9e1f.css.map*/
