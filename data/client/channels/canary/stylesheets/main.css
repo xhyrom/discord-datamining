@@ -109076,6 +109076,60 @@ html .tabBadge-h4HGed {
     margin-left: -2px
 }
 
+.shopArt-2-esbI {
+    background: var(--black-500) url(/assets/02fd855bc6bf9f19706a8ffb67be48ae.svg) 50% 58px no-repeat;
+    height: 237px;
+    width: 100%;
+    border-radius: var(--radius-sm);
+    -ms-flex-item-align: center;
+    align-self: center;
+    -o-object-fit: cover;
+    object-fit: cover;
+    position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column
+}
+
+.logo-14GE_y {
+    margin: 16px auto 0
+}
+
+.avatars-1ZSYOv {
+    position: relative;
+    -webkit-box-flex: 1;
+    -ms-flex: 1;
+    flex: 1
+}
+
+.avatar1-1fM5wq {
+    position: absolute;
+    -webkit-transform: scale(.925) rotate(-18.81deg);
+    transform: scale(.925) rotate(-18.81deg);
+    left: 25px;
+    top: 17px
+}
+
+.avatar2-3QCjOp {
+    position: absolute;
+    -webkit-transform: scale(.8125) rotate(15deg);
+    transform: scale(.8125) rotate(15deg);
+    right: 17px;
+    top: 26px
+}
+
+.avatar3-MB8wXR {
+    position: absolute;
+    -webkit-transform: scale(.778) rotate(-5.441deg);
+    transform: scale(.778) rotate(-5.441deg);
+    left: 82px;
+    bottom: 10px
+}
+
 .container-2pEU_G {
     width: 285px;
     background-color: var(--brand-500);
@@ -169680,4 +169734,4 @@ html .invoiceCancelRow-dVOR64 {
     margin-bottom: 16px
 }
 
-/*# sourceMappingURL=40532.77db6e5f22f3523235ab.css.map*/
+/*# sourceMappingURL=40532.7872cd8ff14be435211f.css.map*/
