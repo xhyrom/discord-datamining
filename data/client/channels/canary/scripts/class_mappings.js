@@ -17923,7 +17923,9 @@
         },
         452726: e => {
             e.exports = {
-                seasonalGiftBoxHeaderIcon: "seasonalGiftBoxHeaderIcon-3IQVSR"
+                seasonalGiftBoxHeaderIcon: "seasonalGiftBoxHeaderIcon-3IQVSR",
+                container: "container-o-S0iD",
+                closeButton: "closeButton-ZfXmYI"
             }
         },
         791110: e => {
@@ -19673,6 +19675,7 @@
             e.exports = {
                 modalHeader: "modalHeader-gQTY3L",
                 modalHeaderCustomGift: "modalHeaderCustomGift-2OEGVy",
+                closeButton: "closeButton-2hWxXy",
                 header: "header-2hjw1J",
                 headerAnimation: "headerAnimation-3DVb6i",
                 giftNitroInfo: "giftNitroInfo-3j5i5M"
@@ -26725,4 +26728,4 @@
         }
     }
 ]);
-//# sourceMappingURL=6edbbc24460824802d05.js.map
+//# sourceMappingURL=22ac5a36b592e06a8322.js.map
