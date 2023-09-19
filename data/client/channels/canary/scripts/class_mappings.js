@@ -4947,9 +4947,9 @@
                 modalContent: "modalContent-1X6ssz",
                 modalPreview: "modalPreview-2hTuZp",
                 modalFooter: "modalFooter-jdWlLy",
-                subscribeFooter: "subscribeFooter-35dQiH",
-                buttonsRight: "buttonsRight-3BSRx7",
-                goToShopButton: "goToShopButton-daTECK"
+                modalFooterUpsell: "modalFooterUpsell-31vIjm",
+                modalFooterUpsellButtons: "modalFooterUpsellButtons-F05wS0",
+                modalFooterShopButton: "modalFooterShopButton-2okLGY"
             }
         },
         675960: e => {
@@ -6269,6 +6269,7 @@
                 closeIcon: "closeIcon-ErXdZG",
                 cardsContainer: "cardsContainer-2kdrm8",
                 shop: "shop-3sIaH8",
+                itemTypeTitle: "itemTypeTitle-fjLyoh",
                 closeWrapper: "closeWrapper-4ioOGM"
             }
         },
@@ -26733,4 +26734,4 @@
         }
     }
 ]);
-//# sourceMappingURL=c28007b904798aa02de7.js.map
+//# sourceMappingURL=be63252cbe5e23ed3030.js.map
