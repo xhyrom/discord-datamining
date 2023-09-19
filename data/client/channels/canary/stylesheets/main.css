@@ -132854,6 +132854,23 @@ input::-webkit-outer-spin-button {
     margin-right: 4px
 }
 
+.modalPreview-1z6dXG {
+    width: 280px;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    gap: 16px
+}
+
 .smallDecorationPreview-1SyODs {
     margin-top: 16px
 }
@@ -132919,8 +132936,6 @@ input::-webkit-outer-spin-button {
     border-top-right-radius: 6px;
     width: 100%;
     min-height: 176px;
-    -ms-flex-pack: center;
-    -ms-flex-align: center;
     background-position: top;
     background-size: cover
 }
@@ -132931,32 +132946,31 @@ input::-webkit-outer-spin-button {
     display: -ms-flexbox;
     display: flex;
     -webkit-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center;
     -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center
 }
 
+.shopPreviewTextContainer-1Vw8gO {
+    text-align: center;
+    padding: 0 16px 16px
+}
+
+.purchaseInfo-1HhPXm,
 .shopPreviewTextContainer-1Vw8gO {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
     -ms-flex-direction: column;
     flex-direction: column;
-    -webkit-box-flex: 1;
-    -ms-flex: 1;
-    flex: 1;
-    -ms-flex-pack: center;
-    -ms-flex-align: center;
-    text-align: center;
-    gap: 8px;
-    padding: 16px
+    gap: 8px
 }
 
-.purchaseInfoContainer-3ZqsNg {
-    margin-top: 8px
-}
-
-.purchaseInfoName-1sCOKs {
-    margin-bottom: 8px
+.purchaseInfo-1HhPXm {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex
 }
 
 .icon-2atuJf {
@@ -133033,9 +133047,19 @@ input::-webkit-outer-spin-button {
 
 .list-2gEvIv {
     max-height: 420px;
-    width: 288px;
-    margin-bottom: 10px;
+    padding-bottom: 16px;
     left: -12px
+}
+
+.headings-2gWSex {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    gap: 4px
 }
 
 .tooltip-2UaXP- {
@@ -133052,8 +133076,8 @@ input::-webkit-outer-spin-button {
 
 .badge-1IU7uc {
     position: absolute;
-    right: -8px;
-    top: -8px
+    right: -4px;
+    top: -4px
 }
 
 .itemBadge-2VGhY3 {
@@ -133069,6 +133093,66 @@ input::-webkit-outer-spin-button {
     align-self: center
 }
 
+.modal-1A4ZZd {
+    border-radius: var(--radius-sm)
+}
+
+.modalBody-3r6E4y {
+    padding: 16px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    gap: 16px
+}
+
+.modalBody-3r6E4y,
+.modalHeader-1ZzUf6 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex
+}
+
+.modalHeader-1ZzUf6 {
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    padding: 0
+}
+
+.modalHeadings-3LBRJZ {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    gap: 8px
+}
+
+.modalCloseButton-3n0qvD {
+    -ms-flex-item-align: start;
+    align-self: flex-start;
+    padding: 0
+}
+
+.modalContent-1X6ssz {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    padding: 0
+}
+
+.modalPreview-2hTuZp {
+    margin-top: 24px
+}
+
+.modalFooter-jdWlLy {
+    margin: -16px;
+    padding: 16px
+}
+
 .subscribeFooter-35dQiH {
     -webkit-box-pack: justify;
     -ms-flex-pack: justify;
@@ -133080,40 +133164,6 @@ input::-webkit-outer-spin-button {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex
-}
-
-.modalHeader-1ZzUf6 {
-    padding-bottom: 10px
-}
-
-.modalTitle-1cY4bU {
-    margin-bottom: 0;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center
-}
-
-.premiumIcon-3v17yR {
-    margin-right: 4px
-}
-
-.modalContent-1X6ssz {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    justify-content: center;
-    -webkit-box-align: start;
-    -ms-flex-align: start;
-    align-items: flex-start
-}
-
-.modalPreview-2hTuZp {
-    margin-top: 24px
 }
 
 .goToShopButton-daTECK {
@@ -169788,4 +169838,4 @@ html .invoiceCancelRow-dVOR64 {
     margin-bottom: 16px
 }
 
-/*# sourceMappingURL=40532.02ee1d278dd1338e8784.css.map*/
+/*# sourceMappingURL=40532.7df0a3bc738d59d68dbe.css.map*/
