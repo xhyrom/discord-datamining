@@ -6,13 +6,15 @@
     "description": [
       "Not Eligible",
       "Control Bucket",
-      "Treatment 1: ability to trigger gaming stats prompt"
+      "Treatment 1: ability to trigger gaming stats prompt",
+      "Treatment 2: ability to trigger gaming stats prompt (leaderboard)"
     ],
     "hash": 2478854553,
     "buckets": [
       -1,
       0,
-      1
+      1,
+      2
     ],
     "config_keys": [
       "enabled"
