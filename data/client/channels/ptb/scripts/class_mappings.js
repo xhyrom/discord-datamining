@@ -4939,18 +4939,22 @@
         240647: e => {
             e.exports = {
                 spinner: "spinner-4mFvw6",
-                subscribeFooter: "subscribeFooter-35dQiH",
-                buttonsRight: "buttonsRight-3BSRx7",
+                modal: "modal-1A4ZZd",
+                modalBody: "modalBody-3r6E4y",
                 modalHeader: "modalHeader-1ZzUf6",
-                modalTitle: "modalTitle-1cY4bU",
-                premiumIcon: "premiumIcon-3v17yR",
+                modalHeadings: "modalHeadings-3LBRJZ",
+                modalCloseButton: "modalCloseButton-3n0qvD",
                 modalContent: "modalContent-1X6ssz",
                 modalPreview: "modalPreview-2hTuZp",
+                modalFooter: "modalFooter-jdWlLy",
+                subscribeFooter: "subscribeFooter-35dQiH",
+                buttonsRight: "buttonsRight-3BSRx7",
                 goToShopButton: "goToShopButton-daTECK"
             }
         },
         675960: e => {
             e.exports = {
+                modalPreview: "modalPreview-1z6dXG",
                 smallDecorationPreview: "smallDecorationPreview-1SyODs",
                 previewSections: "previewSections-3ILTQ1",
                 decorationPreview: "decorationPreview-1EtFuW",
@@ -4958,8 +4962,7 @@
                 shopPreviewContainer: "shopPreviewContainer-3RRvP7",
                 shopPreviewBanner: "shopPreviewBanner-1nFcMb",
                 shopPreviewTextContainer: "shopPreviewTextContainer-1Vw8gO",
-                purchaseInfoContainer: "purchaseInfoContainer-3ZqsNg",
-                purchaseInfoName: "purchaseInfoName-1sCOKs"
+                purchaseInfo: "purchaseInfo-1HhPXm"
             }
         },
         389091: e => {
@@ -4975,6 +4978,7 @@
                 decorationGridItemChurned: "decorationGridItemChurned-1jRrX4",
                 selected: "selected-IxbpGM",
                 list: "list-2gEvIv",
+                headings: "headings-2gWSex",
                 tooltip: "tooltip-2UaXP-",
                 tooltipInner: "tooltipInner-1P2vsJ",
                 tooltipText: "tooltipText-EQbODE",
@@ -26729,4 +26733,4 @@
         }
     }
 ]);
-//# sourceMappingURL=572b5f31c87da121cbbb.js.map
+//# sourceMappingURL=c28007b904798aa02de7.js.map
