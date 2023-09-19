@@ -80420,7 +80420,14 @@ html:not(.custom-theme-background) .container-Vrgqxz {
     box-shadow: var(--elevation-low)
 }
 
-.sidebar-2rB69-,
+.sidebar-2rB69- {
+    background-color: var(--home-background)
+}
+
+.scroller-qwiOD6 {
+    padding-bottom: 76px
+}
+
 .theme-dark .container-2qjEOK,
 .theme-dark .page-2dwf_i,
 .theme-dark .sidebar-2rB69- {
@@ -169850,4 +169857,4 @@ html .invoiceCancelRow-dVOR64 {
     margin-bottom: 16px
 }
 
-/*# sourceMappingURL=40532.be3d257d3a4cb157f95f.css.map*/
+/*# sourceMappingURL=40532.14d7a72e7a7d11e4a6c4.css.map*/
