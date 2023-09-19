@@ -168739,6 +168739,13 @@ html .invoiceCancelRow-3s2UuC {
 }
 
 .presetEffectImg-1QMW5H {
+    -o-object-fit: cover;
+    object-fit: cover
+}
+
+.presetEffectBackground-2FjhQJ,
+.presetEffectImg-1QMW5H {
+    position: absolute;
     border-radius: 4px;
     width: 100%;
     height: 100%
@@ -169781,4 +169788,4 @@ html .invoiceCancelRow-dVOR64 {
     margin-bottom: 16px
 }
 
-/*# sourceMappingURL=40532.732bcd7a7c8fd1671615.css.map*/
+/*# sourceMappingURL=40532.02ee1d278dd1338e8784.css.map*/
