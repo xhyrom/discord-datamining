@@ -4982,6 +4982,16 @@
                 itemBadge: "itemBadge-2VGhY3 badge-1IU7uc"
             }
         },
+        341596: e => {
+            e.exports = {
+                shopArt: "shopArt-2-esbI",
+                logo: "logo-14GE_y",
+                avatars: "avatars-1ZSYOv",
+                avatar1: "avatar1-1fM5wq",
+                avatar2: "avatar2-3QCjOp",
+                avatar3: "avatar3-MB8wXR"
+            }
+        },
         34375: e => {
             e.exports = {
                 modalContent: "modalContent-3VXVtH",
@@ -26710,4 +26720,4 @@
         }
     }
 ]);
-//# sourceMappingURL=46119d71398a13edfdf8.js.map
+//# sourceMappingURL=b9ed4ebd9a65613928b5.js.map
