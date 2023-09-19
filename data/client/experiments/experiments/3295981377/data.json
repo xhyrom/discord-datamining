@@ -1,22 +1,7 @@
 {
   "data": {
     "kind": "guild",
-    "id": "2023-05_onboarding_wumpus_tooltip_obliteration",
-    "label": "Guild Onboarding Wumpus Tooltip",
-    "description": [
-      "Not Eligible",
-      "Control Bucket",
-      "Treatment 1: Removes Wumpus tooltips"
-    ],
-    "hash": 3295981377,
-    "buckets": [
-      -1,
-      0,
-      1
-    ],
-    "config_keys": [
-      "enabled"
-    ]
+    "hash": 3295981377
   },
   "rollout": {
     "populations": [
