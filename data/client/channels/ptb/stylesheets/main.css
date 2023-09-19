@@ -30258,14 +30258,19 @@ img[alt] {
     justify-content: space-between
 }
 
-.guildProductPurchaseBenefits-3vVJX9 {
+.divider-WyLucM {
+    width: 100%;
     border-top: 1px solid var(--background-modifier-hover);
-    margin-top: 20px;
-    padding-top: 20px;
-    list-style: none
+    margin-top: 16px;
+    margin-bottom: 16px
 }
 
-.guildProductBenefitsContainer-xvdW4N {
+.sectionDivider-2xnNB9 {
+    margin-top: 20px;
+    margin-bottom: 20px
+}
+
+.guildProductBenefits-3hRdeR {
     border-radius: 8px;
     background-color: var(--background-secondary);
     padding: 16px
@@ -30276,11 +30281,12 @@ img[alt] {
     margin-bottom: 12px
 }
 
-.divider-WyLucM {
+.warningBlock-2jxO3N {
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
     width: 100%;
-    border-top: 1px solid var(--background-modifier-hover);
-    margin-top: 16px;
-    margin-bottom: 16px
+    overflow: auto
 }
 
 .textWithIcon-1Xi8lb {
@@ -30318,6 +30324,126 @@ img[alt] {
     -webkit-box-flex: 0;
     -ms-flex: none;
     flex: none
+}
+
+.messageBlock-3K-P-A {
+    border-width: 1px;
+    border-style: solid;
+    border-radius: 4px;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+    margin: 0 auto
+}
+
+.messageBlock-3K-P-A,
+.messageBlock-3K-P-A a {
+    color: var(--text-normal)
+}
+
+.yellowMessageBlock-30xvbA {
+    background-color: hsl(var(--yellow-300-hsl)/.1);
+    border-color: var(--yellow-300)
+}
+
+.yellowMessageBlock-30xvbA .messageBlockIcon-a_xAgW {
+    color: var(--yellow-300)
+}
+
+.redMessageBlock-2jr6uT {
+    background-color: hsl(var(--red-400-hsl)/.1);
+    border-color: var(--red-400)
+}
+
+.redMessageBlock-2jr6uT .messageBlockIcon-a_xAgW {
+    color: var(--red-400)
+}
+
+.brownMessageBlock-r5H96c {
+    background-color: hsl(var(--yellow-300-hsl)/.1);
+    border-color: var(--status-warning-background)
+}
+
+.brownMessageBlock-r5H96c .messageBlockIcon-a_xAgW {
+    color: var(--status-warning-background)
+}
+
+.statusWarningBlock-5Ektdz {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: start;
+    -ms-flex-align: start;
+    align-items: flex-start;
+    text-align: start
+}
+
+.statusWarningBlock-5Ektdz p {
+    margin-top: 0
+}
+
+.statusWarningBlockWithCta-u7O7xy {
+    padding: 16px 12px
+}
+
+.horizontalStatusWarningBlock-3LhSE_ {
+    -webkit-box-orient: horizontal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    gap: 32px
+}
+
+.horizontalStatusWarningBlock-3LhSE_,
+.verticalStatusWarningBlock-Qdcu5_ {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-direction: normal;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between
+}
+
+.verticalStatusWarningBlock-Qdcu5_ {
+    -webkit-box-orient: vertical;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: start;
+    -ms-flex-align: start;
+    align-items: flex-start;
+    gap: 16px
+}
+
+.ctaButtonContainer-zK4KL7 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex
+}
+
+.ctaButton-3P_VMx {
+    border-radius: 24px
+}
+
+.ctaBlackButton-1mTEM1 {
+    background-color: var(--interactive-hover);
+    border: 1px solid var(--interactive-active)
+}
+
+.ctaBlackButton-1mTEM1:hover {
+    background-color: var(--black-500);
+    border-color: var(--black-600)
+}
+
+.ctaBlackButton-1mTEM1:active {
+    background-color: var(--black-600);
+    border-color: var(--black-700)
+}
+
+.ctaButtonText-1tElPL {
+    color: var(--background-floating)
 }
 
 .assetWrapper-2hzITV {
@@ -113905,126 +114031,6 @@ html .tabBadge-h4HGed {
     margin-bottom: -2px
 }
 
-.messageBlock-3K-P-A {
-    border-width: 1px;
-    border-style: solid;
-    border-radius: 4px;
-    width: -webkit-fit-content;
-    width: -moz-fit-content;
-    width: fit-content;
-    margin: 0 auto
-}
-
-.messageBlock-3K-P-A,
-.messageBlock-3K-P-A a {
-    color: var(--text-normal)
-}
-
-.yellowMessageBlock-30xvbA {
-    background-color: hsl(var(--yellow-300-hsl)/.1);
-    border-color: var(--yellow-300)
-}
-
-.yellowMessageBlock-30xvbA .messageBlockIcon-a_xAgW {
-    color: var(--yellow-300)
-}
-
-.redMessageBlock-2jr6uT {
-    background-color: hsl(var(--red-400-hsl)/.1);
-    border-color: var(--red-400)
-}
-
-.redMessageBlock-2jr6uT .messageBlockIcon-a_xAgW {
-    color: var(--red-400)
-}
-
-.brownMessageBlock-r5H96c {
-    background-color: hsl(var(--yellow-300-hsl)/.1);
-    border-color: var(--status-warning-background)
-}
-
-.brownMessageBlock-r5H96c .messageBlockIcon-a_xAgW {
-    color: var(--status-warning-background)
-}
-
-.statusWarningBlock-5Ektdz {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: start;
-    -ms-flex-align: start;
-    align-items: flex-start;
-    text-align: start
-}
-
-.statusWarningBlock-5Ektdz p {
-    margin-top: 0
-}
-
-.statusWarningBlockWithCta-u7O7xy {
-    padding: 16px 12px
-}
-
-.horizontalStatusWarningBlock-3LhSE_ {
-    -webkit-box-orient: horizontal;
-    -ms-flex-direction: row;
-    flex-direction: row;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
-    gap: 32px
-}
-
-.horizontalStatusWarningBlock-3LhSE_,
-.verticalStatusWarningBlock-Qdcu5_ {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-direction: normal;
-    -webkit-box-pack: justify;
-    -ms-flex-pack: justify;
-    justify-content: space-between
-}
-
-.verticalStatusWarningBlock-Qdcu5_ {
-    -webkit-box-orient: vertical;
-    -ms-flex-direction: column;
-    flex-direction: column;
-    -webkit-box-align: start;
-    -ms-flex-align: start;
-    align-items: flex-start;
-    gap: 16px
-}
-
-.ctaButtonContainer-zK4KL7 {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex
-}
-
-.ctaButton-3P_VMx {
-    border-radius: 24px
-}
-
-.ctaBlackButton-1mTEM1 {
-    background-color: var(--interactive-hover);
-    border: 1px solid var(--interactive-active)
-}
-
-.ctaBlackButton-1mTEM1:hover {
-    background-color: var(--black-500);
-    border-color: var(--black-600)
-}
-
-.ctaBlackButton-1mTEM1:active {
-    background-color: var(--black-600);
-    border-color: var(--black-700)
-}
-
-.ctaButtonText-1tElPL {
-    color: var(--background-floating)
-}
-
 .noticeContainer-7x7OSZ {
     margin: 16px auto;
     width: 100%
@@ -169844,4 +169850,4 @@ html .invoiceCancelRow-dVOR64 {
     margin-bottom: 16px
 }
 
-/*# sourceMappingURL=40532.0af36cbaa159828473c3.css.map*/
+/*# sourceMappingURL=40532.be3d257d3a4cb157f95f.css.map*/
