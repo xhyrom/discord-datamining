@@ -31827,8 +31827,22 @@ img[alt] {
 }
 
 .modalHeaderCustomGift-2OEGVy {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
     margin-bottom: 0;
     border-bottom: 1.5px solid var(--background-modifier-accent)
+}
+
+.closeButton-2hWxXy {
+    margin-left: auto;
+    bottom: 25%
 }
 
 .header-2hjw1J {
@@ -31860,6 +31874,25 @@ img[alt] {
     -ms-flex-item-align: center;
     align-self: center;
     z-index: 1
+}
+
+.container-o-S0iD {
+    background-image: -webkit-gradient(linear, left top, left bottom, from(var(--modal-background)), to(var(--modal-background)));
+    background-image: linear-gradient(var(--modal-background), var(--modal-background));
+    background-size: 100% calc(100% - 20px);
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center
+}
+
+.closeButton-ZfXmYI {
+    margin-left: auto
 }
 
 .spinner-1HUPsi {
@@ -169747,4 +169780,4 @@ html .invoiceCancelRow-dVOR64 {
     margin-bottom: 16px
 }
 
-/*# sourceMappingURL=40532.ebf9e6da5a3703732896.css.map*/
+/*# sourceMappingURL=40532.6cefe9e7f49e72a89816.css.map*/
