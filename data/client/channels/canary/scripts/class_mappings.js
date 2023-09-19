@@ -19105,13 +19105,21 @@
                 videoBackgroundImage: "videoBackgroundImage-VoMScu",
                 moreGuildsAltImage: "moreGuildsAltImage-19gi3g",
                 newTag: "newTag-RoxV8D",
-                betaTag: "betaTag-1SPc-F"
+                betaTag: "betaTag-1SPc-F",
+                sizeGizmo: "sizeGizmo-1Qurgd",
+                sizeGizmoText: "sizeGizmoText-OBigQJ",
+                arrow: "arrow-33qzVi",
+                subscriberNitroHome: "subscriberNitroHome-2yhIpB",
+                partiallyHidden: "partiallyHidden-1_IhuR",
+                cover: "cover-20EvR4",
+                hidden: "hidden-3VVAdD"
             }
         },
         472688: e => {
             e.exports = {
                 featureBorder: "featureBorder-3EsAxa",
                 section: "section-1cIikJ",
+                noBackground: "noBackground-GkDHNy",
                 heading: "heading-2tPnY1",
                 subtitle: "subtitle-16COWT",
                 fullWidth: "fullWidth-NgZ6OT",
@@ -19122,6 +19130,7 @@
             e.exports = {
                 flipCardContainer: "flipCardContainer-Yr1oDc",
                 noFlipCardContainer: "noFlipCardContainer-EXGBVu",
+                forceShadow: "forceShadow-1PusjL",
                 card: "card-20tMLf",
                 partialFlipCard: "partialFlipCard-3ljnDA",
                 rotateCard: "rotateCard-e53tKt",
@@ -19200,6 +19209,58 @@
             e.exports = {
                 brandShine: "brandShine-2_xHTj",
                 freeTrialText: "freeTrialText-1tHbUv"
+            }
+        },
+        569289: e => {
+            e.exports = {
+                container: "container-lEc62N",
+                textContainer: "textContainer-2icyNr",
+                heading: "heading-2qlQ8k",
+                giftCardButton: "giftCardButton-rSCReQ",
+                giftButtonCTA: "giftButtonCTA-1MKm7M"
+            }
+        },
+        137928: e => {
+            e.exports = {
+                container: "container-3i38ow",
+                trialPill: "trialPill-3V9i6Q",
+                textContainer: "textContainer-MoCfSi",
+                description: "description-2tDsY-",
+                buttonContainer: "buttonContainer-2GyCoM",
+                button: "button-2D4rBa",
+                sparkleStar: "sparkleStar-2ibaA9",
+                sparkleStar1: "sparkleStar1-2FvSEP sparkleStar-2ibaA9",
+                sparkleStar2: "sparkleStar2-xwL75E sparkleStar-2ibaA9",
+                sparkleStar3: "sparkleStar3-1SoUoZ sparkleStar-2ibaA9",
+                sparkleStar4: "sparkleStar4-FZIAAs sparkleStar-2ibaA9",
+                imageContainer: "imageContainer-3dEb5N"
+            }
+        },
+        866075: e => {
+            e.exports = {
+                container: "container-1K2aIX",
+                textContainer: "textContainer-HLsSdg",
+                managePlanButton: "managePlanButton-3M2tdP",
+                managePlanButtonCTA: "managePlanButtonCTA-qlm58G"
+            }
+        },
+        354820: e => {
+            e.exports = {
+                root: "root-2xT7ha",
+                stop1: "stop1-2gTs3T",
+                stop2: "stop2-1hAlKf",
+                stop3: "stop3-3pS_fh"
+            }
+        },
+        25918: e => {
+            e.exports = {
+                container: "container-9vYOF4",
+                heroHeading: "heroHeading-1ZP837",
+                perksCards: "perksCards-2Gq6cx",
+                giftNitro: "giftNitro-2xJWhA",
+                manageMembership: "manageMembership-3EhpQs",
+                footerSpacing: "footerSpacing-4r9UzV",
+                bottomIllustration: "bottomIllustration-azLMAr"
             }
         },
         57827: e => {
@@ -26736,4 +26797,4 @@
         }
     }
 ]);
-//# sourceMappingURL=6df35aaf9c9a1fae49bc.js.map
+//# sourceMappingURL=0cc7f75151070328160a.js.map
