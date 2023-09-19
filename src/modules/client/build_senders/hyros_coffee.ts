@@ -24,6 +24,7 @@ import type { Build } from "../scripts/Build.ts";
 import type { Channel } from "../Channel.ts";
 import type { Scripts } from "../scripts/index.ts";
 import type { Stylesheets } from "../stylesheets/index.ts";
+import type { File } from "../File.ts";
 
 export class HyrosCoffeeSender implements Sender {
   async send(
@@ -59,11 +60,7 @@ export class HyrosCoffeeSender implements Sender {
         {
           name: "Scripts",
           value: scriptFiles.scripts
-            .map((script) =>
-              script.name === scriptFiles.mainScript.name
-                ? `${script.path} (main)`
-                : `${script.path}`
-            )
+            .map((script) => this.formatScriptName(scriptFiles, script))
             .join("\n"),
         },
         {
@@ -86,5 +83,23 @@ export class HyrosCoffeeSender implements Sender {
         embeds: [embed.toJSON()],
       }
     );
+  }
+
+  formatScriptName(scriptFiles: Awaited<ReturnType<Scripts["files"]>>, script: File) {
+    let suffix = "";
+
+    if (script.name === scriptFiles.mainScript.name)
+      suffix = "main";
+
+    if (script.name === scriptFiles.vendor?.name)
+      suffix = "vendor";
+
+    if (script.name === scriptFiles.chunkLoader?.name)
+      suffix = "chunk loader";
+
+    if (script.name === scriptFiles.classMappings?.name)
+      suffix = "class mappings";
+
+    return `${script.path}${suffix ? ` (${suffix})` : ""}`;
   }
 }

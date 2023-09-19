@@ -27,6 +27,9 @@ import type { Channel } from "../Channel.ts";
 export class Scripts implements Module {
   #files?: {
     scripts: File[];
+    chunkLoader: File | null;
+    classMappings: File | null;
+    vendor: File | null;
     mainScript: File;
   };
   #build?: Build;
@@ -80,6 +83,27 @@ export class Scripts implements Module {
       join(this.baseDir, "main.js"),
       beautify(await files.mainScript!.content(), "js")
     );
+
+    if (files.chunkLoader) {
+      await writeFile(
+        join(this.baseDir, "chunk_loader.js"),
+        beautify(await files.chunkLoader.content(), "js")
+      );
+    }
+
+    if (files.classMappings) {
+      await writeFile(
+        join(this.baseDir, "class_mappings.js"),
+        beautify(await files.classMappings.content(), "js")
+      );
+    }
+
+    if (files.vendor) {
+      await writeFile(
+        join(this.baseDir, "vendor.js"),
+        beautify(await files.vendor.content(), "js")
+      );
+    }
   }
 
   async files() {
@@ -94,7 +118,10 @@ export class Scripts implements Module {
 
     this.#files = {
       scripts,
-      mainScript: scripts?.slice(-1)[0]!,
+      chunkLoader: scripts?.[0] ?? null,
+      classMappings: scripts.length > 3 ? scripts?.[1] ?? null : null,
+      vendor: scripts.length > 4 ? scripts?.[2] ?? null : null,
+      mainScript: scripts?.[scripts.length - 1]!,
     };
 
     return this.#files;
