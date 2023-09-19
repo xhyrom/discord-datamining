@@ -133153,20 +133153,20 @@ input::-webkit-outer-spin-button {
     padding: 16px
 }
 
-.subscribeFooter-35dQiH {
+.modalFooterUpsell-31vIjm {
     -webkit-box-pack: justify;
     -ms-flex-pack: justify;
     justify-content: space-between
 }
 
-.buttonsRight-3BSRx7,
-.subscribeFooter-35dQiH {
+.modalFooterUpsell-31vIjm,
+.modalFooterUpsellButtons-F05wS0 {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex
 }
 
-.goToShopButton-daTECK {
+.modalFooterShopButton-2okLGY {
     background: var(--custom-premium-colors-premium-gradient-tier-2-tri-color)
 }
 
@@ -162623,6 +162623,7 @@ html .invoiceCancelRow-3s2UuC {
 
 .shopBanner-PEO5bV {
     grid-column: 1/-1;
+    margin-top: 40px;
     position: relative;
     background-size: cover;
     width: 100%;
@@ -163105,7 +163106,7 @@ html .invoiceCancelRow-3s2UuC {
 
 .cardsContainer-2kdrm8 {
     max-width: 1060px;
-    margin-top: 40px;
+    margin-top: 26px;
     display: grid;
     grid-gap: 24px;
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
@@ -163114,6 +163115,11 @@ html .invoiceCancelRow-3s2UuC {
 
 .shop-3sIaH8 {
     background-color: var(--background-floating)
+}
+
+.itemTypeTitle-fjLyoh {
+    text-transform: uppercase;
+    margin-top: 26px
 }
 
 @media (max-width:1204px) {
@@ -169838,4 +169844,4 @@ html .invoiceCancelRow-dVOR64 {
     margin-bottom: 16px
 }
 
-/*# sourceMappingURL=40532.7df0a3bc738d59d68dbe.css.map*/
+/*# sourceMappingURL=40532.0af36cbaa159828473c3.css.map*/
