@@ -20038,7 +20038,8 @@
                 tooltipText: "tooltipText-2hhyIB",
                 badge: "badge-w5FhZi",
                 lockBadge: "lockBadge-1GRfLm badge-w5FhZi",
-                presetEffectImg: "presetEffectImg-1QMW5H"
+                presetEffectImg: "presetEffectImg-1QMW5H",
+                presetEffectBackground: "presetEffectBackground-2FjhQJ"
             }
         },
         885616: e => {
@@ -26728,4 +26729,4 @@
         }
     }
 ]);
-//# sourceMappingURL=5cdc361504e6e2114e19.js.map
+//# sourceMappingURL=572b5f31c87da121cbbb.js.map
