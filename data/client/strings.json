@@ -16171,6 +16171,7 @@
   "DEADCHAT_PROMPT_1": "\"It's quiet in here.\"",
   "CHANNEL_PROMPT_GAMING_CTA": "\"Get my stats!\"",
   "FORM_HELP_SYSTEM_CHANNEL_DEADCHAT_PROMPT_MESSAGE": "\"Prompt members to chat after this channel has been inactive for a while.\"",
+  "PROMPT_CAMERA_LOADING_TITLE": "\"What are you looking at?\"",
   "USER_SETTINGS_APPEARANCE_CHANNEL_LIST_LAYOUT_SIMPLIFIED": "\"Simplified\"",
   "FORCED_SECURE_FRAMES_INCOMPATIBLE_TITLE": "\"Disconnected\"",
   "FORCED_SECURE_FRAMES_INCOMPATIBLE_BODY": "\"That channel forces testing of secure frames for audio/video, but your client does not support the protocol version and we do not yet support protocol negotiation.\\n\\n We disconnected you from the channel to protect your ears.\"",
