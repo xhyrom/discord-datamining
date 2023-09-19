@@ -18,7 +18,7 @@
 
 import type { PushResult } from "simple-git";
 import { HyrosCoffeeSender } from "./hyros_coffee.ts";
-import { WumpusCentralSender } from "./wumpus_central.ts";
+//import { WumpusCentralSender } from "./wumpus_central.ts";
 import type { Channel } from "../Channel.ts";
 import type { Build } from "../scripts/Build.ts";
 import type { Scripts } from "../scripts/index.ts";
@@ -51,12 +51,12 @@ export const send = async (
     stylesheetFiles,
     date
   );
-  await new WumpusCentralSender().send(
+  /**await new WumpusCentralSender().send(
     result,
     channel,
     build,
     scriptFiles,
     stylesheetFiles,
     date
-  );
+  );**/
 };
