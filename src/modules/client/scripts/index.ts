@@ -119,8 +119,8 @@ export class Scripts implements Module {
     this.#files = {
       scripts,
       chunkLoader: scripts?.[0] ?? null,
-      classMappings: scripts.length > 3 ? scripts?.[1] ?? null : null,
-      vendor: scripts.length > 4 ? scripts?.[2] ?? null : null,
+      classMappings: scripts.length > 2 ? scripts?.[1] ?? null : null,
+      vendor: scripts.length > 3 ? scripts?.[2] ?? null : null,
       mainScript: scripts?.[scripts.length - 1]!,
     };
 
