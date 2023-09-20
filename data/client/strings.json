@@ -2125,6 +2125,8 @@
   "PERSONALITY_PLACEHOLDER": "\"Describe Clyde's personality\"",
   "PERSONALITY_DESCRIPTION": "\"Edit Clyde's personality by writing a description or instructions for Clyde.\"",
   "PERSONALITY_FEEDBACK": "\"Give us feedback\"",
+  "CLYDE_SETTINGS_AVATAR_HEADER": "\"Avatar\"",
+  "CLYDE_SETTINGS_BANNER_HEADER": "\"Profile Banner\"",
   "CLYDE_PERSONALITY_BADGE_TOOLTIP": "\"Clyde has a custom backstory in this server\"",
   "NONE": "\"None\"",
   "INTEGRATION_ADDED_USER": "\"Added by !!{user}!!\"",
