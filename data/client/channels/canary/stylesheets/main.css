@@ -101971,9 +101971,9 @@ html:not(.custom-theme-background) .container-Vrgqxz {
     bottom: 0;
     left: 0;
     right: 0;
-    height: 50px;
-    background-image: -webkit-gradient(linear, left top, left bottom, from(hsl(var(--primary-630-hsl)/0)), color-stop(95%, var(--background-primary)));
-    background-image: linear-gradient(180deg, hsl(var(--primary-630-hsl)/0) 0, var(--background-primary) 95%);
+    height: 30%;
+    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(10%, hsl(var(--primary-630-hsl)/0)), color-stop(85%, var(--background-primary)));
+    background-image: linear-gradient(180deg, hsl(var(--primary-630-hsl)/0) 10%, var(--background-primary) 85%);
     -webkit-transition: opacity .4s ease-in-out;
     transition: opacity .4s ease-in-out
 }
@@ -102141,8 +102141,7 @@ html:not(.custom-theme-background) .container-Vrgqxz {
     background-size: cover;
     background-repeat: no-repeat;
     -webkit-transition: all .2s ease-in-out;
-    transition: all .2s ease-in-out;
-    overflow: hidden
+    transition: all .2s ease-in-out
 }
 
 .card-20tMLf:hover .cardDescription-23s_MQ {
@@ -102159,12 +102158,15 @@ html:not(.custom-theme-background) .container-Vrgqxz {
 }
 
 .pill-1KzVqx {
+    position: absolute;
+    top: -8px;
+    left: 24px;
     background-image: -webkit-gradient(linear, left top, right top, from(var(--premium-tier-2-purple-for-gradients)), to(var(--premium-tier-2-pink-for-gradients)));
     background-image: linear-gradient(90deg, var(--premium-tier-2-purple-for-gradients), var(--premium-tier-2-pink-for-gradients));
     border-radius: 10px;
     color: var(--white);
     padding: 0 8px;
-    margin-bottom: 8px
+    z-index: 10
 }
 
 .cardHeading-3p4-LJ {
@@ -102214,6 +102216,7 @@ html:not(.custom-theme-background) .container-Vrgqxz {
     pointer-events: none;
     -webkit-transition: all .2s ease-in-out;
     transition: all .2s ease-in-out;
+    border-radius: 20px;
     background-image: -webkit-gradient(linear, left top, left bottom, color-stop(30%, #000), color-stop(80%, rgba(0, 0, 0, .5)));
     background-image: linear-gradient(180deg, #000 30%, rgba(0, 0, 0, .5) 80%)
 }
@@ -102248,7 +102251,8 @@ html:not(.custom-theme-background) .container-Vrgqxz {
     -webkit-transition: all .2s ease-in-out;
     transition: all .2s ease-in-out;
     background-color: rgba(0, 0, 0, .6);
-    pointer-events: none
+    pointer-events: none;
+    border-radius: 20px
 }
 
 .purpleGradient-2608c0 {
@@ -156522,7 +156526,7 @@ html .invoiceCancelRow-3s2UuC {
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
-    border-radius: var(--radius-sm);
+    border-radius: var(--radius-lg);
     position: relative;
     color: var(--white-500);
     width: 100%;
@@ -170201,4 +170205,4 @@ html .invoiceCancelRow-dVOR64 {
     margin-bottom: 16px
 }
 
-/*# sourceMappingURL=40532.1fe2decb3383424c08f6.css.map*/
+/*# sourceMappingURL=40532.73976d934f3d71013134.css.map*/
