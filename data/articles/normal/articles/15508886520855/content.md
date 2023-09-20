@@ -11,6 +11,7 @@
 <h3 id="h_01HA87DY9JKKXB4N9MJ68GED72" class="wysiwyg-text-align-center">!PHOTO AND MOTION SENSITIVITY WARNING!<br>This game contains motion that might cause discomfort or motion sickness. You can zoom out for a steady camera or disable the camera shake in the options menu!</h3>
 <h1 id="h_01H69PGF7DGYVPJKQZBSVP13Y0">HOW TO START A BOBBLE BASH GAME</h1>
 <p>There are many different ways you can launch Bobble Bash in the Discord app for you and your friends! Whether in a server’s voice channel or a direct message, you can check out <a href="https://support.discord.com/hc/en-us/articles/4422142836759" target="_blank" rel="noopener noreferrer">Activities on Discord</a> for instructions on how to start any Activity.</p>
+<p class="wysiwyg-text-align-center"><strong>Heads up! Some mobile devices might not meet the minimum requirements for Bobble Bash, which could make the game run slower. For the best experience, we recommend playing Bobble Bash on the Discord desktop app.</strong></p>
 <h1 id="h_01H69PGWK98E4VHGFDD5KGDMDR">HOW TO PLAY BOBBLE BASH</h1>
 <p>Vote on a series! Two of the five series will appear on the screen for players to vote on. Each series has four levels for you to bash your way through to victory. The Random Series is a selection of four levels from any of the series.</p>
 <p class="wysiwyg-text-align-center"><img src="https://support.discord.com/hc/article_attachments/16313214271511" alt="bobble_bash_how_to_play.gif"></p>

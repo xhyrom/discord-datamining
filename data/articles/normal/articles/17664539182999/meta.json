@@ -1,0 +1,27 @@
+{
+  "id": 17664539182999,
+  "url": "https://hammerandchisel.zendesk.com/api/v2/help_center/en-us/articles/17664539182999.json",
+  "html_url": "https://support.discord.com/hc/en-us/articles/17664539182999-Usernames-and-Trademark-Crossroads-",
+  "author_id": 2921470028,
+  "comments_disabled": true,
+  "draft": false,
+  "promoted": false,
+  "position": 0,
+  "section_id": 115000344951,
+  "created_at": "2023-09-19T22:04:31Z",
+  "name": "Usernames and Trademark Crossroads ",
+  "title": "Usernames and Trademark Crossroads ",
+  "source_locale": "en-us",
+  "locale": "en-us",
+  "outdated": false,
+  "outdated_locales": [],
+  "edited_at": "2023-09-19T22:15:36Z",
+  "user_segment_id": null,
+  "permission_group_id": 1720972,
+  "content_tag_ids": [],
+  "label_names": [
+    "answer-bot",
+    "usernames",
+    "trademark"
+  ]
+}
