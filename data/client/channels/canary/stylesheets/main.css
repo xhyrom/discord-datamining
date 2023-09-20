@@ -71440,6 +71440,9 @@ strong {
 .tab-2E41_Z {
     padding: 8px;
     width: 300px;
+    -webkit-box-pack: start;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
@@ -71456,6 +71459,12 @@ strong {
 
 .tabDisabled-1l0OgZ {
     cursor: not-allowed
+}
+
+.tabPreviewClose-Ic6Mxe {
+    margin-left: auto;
+    color: var(--interactive-normal);
+    padding-right: 4px
 }
 
 .iconContainer-2gP6IM {
@@ -170298,4 +170307,4 @@ html .invoiceCancelRow-dVOR64 {
     margin-bottom: 16px
 }
 
-/*# sourceMappingURL=40532.b5c74b9ca5ebb0f8c7e4.css.map*/
+/*# sourceMappingURL=40532.2f99668f7fc6139f9dba.css.map*/
