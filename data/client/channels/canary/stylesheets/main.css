@@ -110906,20 +110906,6 @@ html .tabBadge-h4HGed {
     border-top: 1px solid var(--background-modifier-accent)
 }
 
-.callscopeContainer-3fNX2e {
-    width: 100%;
-    -ms-flex-preferred-size: 100%;
-    flex-basis: 100%;
-    margin: 8px 0 0;
-    border: 0;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: end;
-    -ms-flex-pack: end;
-    justify-content: flex-end
-}
-
 .popoutText-3NRmTw {
     color: var(--text-normal);
     font-size: 14px;
@@ -110942,9 +110928,7 @@ html .tabBadge-h4HGed {
 .popoutBottom-15-vLu {
     display: -webkit-box;
     display: -ms-flexbox;
-    display: flex;
-    -ms-flex-wrap: wrap;
-    flex-wrap: wrap
+    display: flex
 }
 
 .debugButton-OTfjlB {
@@ -170248,4 +170232,4 @@ html .invoiceCancelRow-dVOR64 {
     margin-bottom: 16px
 }
 
-/*# sourceMappingURL=40532.6a770c1a352d374523c5.css.map*/
+/*# sourceMappingURL=40532.a9abb394cc94084910fe.css.map*/
