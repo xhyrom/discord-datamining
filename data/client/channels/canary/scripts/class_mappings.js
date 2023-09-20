@@ -6238,6 +6238,12 @@
                 description: "description-zNcVcn"
             }
         },
+        749288: e => {
+            e.exports = {
+                profileCustomizationTab: "profileCustomizationTab-Fbo9ic",
+                editProfileSections: "editProfileSections-3MjYm1"
+            }
+        },
         402102: e => {
             e.exports = {
                 container: "container-5qN7ct",
@@ -26803,4 +26809,4 @@
         }
     }
 ]);
-//# sourceMappingURL=e4eca99b2663c19a3cca.js.map
+//# sourceMappingURL=04168c15f31de564422c.js.map
