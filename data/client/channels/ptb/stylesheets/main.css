@@ -26125,6 +26125,10 @@ code {
 }
 
 :root {
+    --custom-header-icon-color-expired: #4e5058
+}
+
+:root {
     --custom-reaction-picker-border-radius: 8px
 }
 
@@ -160884,16 +160888,31 @@ html .invoiceCancelRow-3s2UuC {
     cursor: pointer
 }
 
-.icon-2h8wJQ {
+.headerIconWrapper-VPxUJJ {
+    background-color: var(--background-tertiary);
+    border-radius: var(--radius-xl);
     -ms-flex-preferred-size: 11%;
     flex-basis: 11%;
     margin: 8px;
-    padding: 8px;
-    background-color: var(--background-tertiary);
+    max-height: -webkit-min-content;
+    max-height: -moz-min-content;
+    max-height: min-content;
     max-width: -webkit-min-content;
     max-width: -moz-min-content;
     max-width: min-content;
-    border-radius: var(--radius-xl)
+    padding: 8px
+}
+
+.headerIconActive-bQeHBZ {
+    color: var(--header-primary);
+    height: 28px;
+    width: 28px
+}
+
+.headerIconExpired-3B-2Fw {
+    color: var(--custom-header-icon-color-expired);
+    height: 28px;
+    width: 28px
 }
 
 .caret-1lASwx {
@@ -160906,8 +160925,7 @@ html .invoiceCancelRow-3s2UuC {
 .title-3tlXGi {
     -ms-flex-preferred-size: 84%;
     flex-basis: 84%;
-    color: var(--channels-default);
-    font-size: 13px
+    color: var(--channels-default)
 }
 
 .items-2jXzOR,
@@ -160924,55 +160942,46 @@ html .invoiceCancelRow-3s2UuC {
 
 .items-2jXzOR {
     padding: 8px;
-    color: var(--white)
-}
-
-.itemDetail--KQ54H,
-.items-2jXzOR {
+    color: var(--white);
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center
 }
 
 .itemDetail--KQ54H {
+    background-color: var(--background-secondary-alt);
+    border-radius: var(--radius-md);
+    cursor: pointer;
     height: -webkit-max-content;
     height: -moz-max-content;
     height: max-content;
+    margin: 8px 4px 0;
+    padding: 10px;
+    width: 100%
+}
+
+.descriptionContainer-2geGp1 {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    width: 100%;
-    -webkit-box-pack: justify;
-    -ms-flex-pack: justify;
-    justify-content: space-between;
-    padding: 10px;
-    margin-top: 8px;
-    margin-left: 4px;
-    margin-right: 4px;
-    background-color: var(--background-secondary-alt)
-}
-
-.itemDetail--KQ54H,
-.timestamp-uDYvi2 {
-    border-radius: var(--radius-md)
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    gap: 8px
 }
 
 .timestamp-uDYvi2 {
     padding: 8px;
+    border-radius: var(--radius-md);
     background-color: var(--background-tertiary);
     width: -webkit-max-content;
     width: -moz-max-content;
-    width: max-content;
-    font-size: 12px
-}
-
-.description-1P7BoI {
-    font-size: 18px
+    width: max-content
 }
 
 .expirationDate-26V1wk {
-    color: var(--channels-default);
-    font-size: 13px
+    color: var(--channels-default)
 }
 
 .content-1gG6Yo {
@@ -161006,16 +161015,39 @@ html .invoiceCancelRow-3s2UuC {
     align-items: center;
     -webkit-box-pack: center;
     -ms-flex-pack: center;
-    justify-content: center
+    justify-content: center;
+    gap: 8px;
+    margin-top: 12px;
+    margin-bottom: 12px
 }
 
+.emptyStateSubtext-39gu0_,
 .emptyStateText-3VABLz {
-    font-size: 18px
+    margin: 0
 }
 
-.emptyStateSubtext-39gu0_ {
-    font-size: 12px;
-    margin-top: 0
+.iconContainer-2ymZAI {
+    margin-bottom: 16px;
+    position: relative
+}
+
+.iconBackground--HDTG9 {
+    background-color: var(--background-tertiary);
+    border-radius: 36px;
+    display: inline-block;
+    padding: 10px
+}
+
+.icon-2h8wJQ {
+    color: var(--header-secondary);
+    height: 48px;
+    width: 48px;
+    margin: 4px 2px 0
+}
+
+.stars-IkYlZI {
+    position: absolute;
+    left: -10px
 }
 
 .container-glqsPC {
@@ -170215,4 +170247,4 @@ html .invoiceCancelRow-dVOR64 {
     margin-bottom: 16px
 }
 
-/*# sourceMappingURL=40532.3d899c072028fa12435f.css.map*/
+/*# sourceMappingURL=40532.ca4784151ce3b7fb5b9e.css.map*/
