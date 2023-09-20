@@ -135129,6 +135129,60 @@ input::-webkit-outer-spin-button {
     background-image: url(/assets/e346e6a656f54e928bddef4ca3db088a.svg)
 }
 
+.card-m7VgZ8 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    padding: 8px 4px 8px 8px;
+    border-radius: 3px;
+    font-size: 16px;
+    line-height: 16px;
+    color: var(--header-primary);
+    border: 1px solid var(--background-tertiary);
+    background-color: var(--background-secondary)
+}
+
+.modalContent-32fYh- {
+    padding: 0 innerPadding
+}
+
+.modalContent-32fYh-:last-child {
+    margin-bottom: 20px
+}
+
+.selectedDeviceContainer-EnmBXf {
+    border: 1px solid var(--primary-800);
+    border-radius: 8px;
+    padding: 0 8px 8px
+}
+
+.changeButton-15bEQb {
+    margin-left: auto;
+    -ms-flex-negative: 0;
+    flex-shrink: 0;
+    margin-top: -4px;
+    margin-bottom: -4px
+}
+
+.ellipsisText-3VzoWC {
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    max-width: 100%;
+    font-weight: 500;
+    margin-right: 8px
+}
+
+.selectedIcon-Tj0six {
+    -ms-flex-negative: 0;
+    flex-shrink: 0;
+    margin-right: 8px;
+    color: var(--interactive-normal)
+}
+
 .avatar-3Q7DWY {
     width: 24px
 }
@@ -135248,22 +135302,6 @@ input::-webkit-outer-spin-button {
 
 .channelSelectScrollerInner-1ZSgdZ {
     padding-bottom: 0
-}
-
-.card-m7VgZ8 {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
-    padding: 8px 4px 8px 8px;
-    border-radius: 3px;
-    font-size: 16px;
-    line-height: 16px;
-    color: var(--header-primary);
-    border: 1px solid var(--background-tertiary);
-    background-color: var(--background-secondary)
 }
 
 .group-1_ptLP,
@@ -170260,4 +170298,4 @@ html .invoiceCancelRow-dVOR64 {
     margin-bottom: 16px
 }
 
-/*# sourceMappingURL=40532.c8f7d9be9c01910b5443.css.map*/
+/*# sourceMappingURL=40532.b5c74b9ca5ebb0f8c7e4.css.map*/
