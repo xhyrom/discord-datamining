@@ -1182,7 +1182,6 @@
                 section: "section-2zQkYM",
                 graphContainer: "graphContainer-3Txdak",
                 separator: "separator-15Vn3M",
-                callscopeContainer: "callscopeContainer-3fNX2e",
                 popoutText: "popoutText-3NRmTw",
                 popoutTextDetails: "popoutTextDetails-zNomhC",
                 popoutBottom: "popoutBottom-15-vLu",
@@ -26808,4 +26807,4 @@
         }
     }
 ]);
-//# sourceMappingURL=0be372ae62c9a9272b29.js.map
+//# sourceMappingURL=2450f7285d12f03b3e3c.js.map
