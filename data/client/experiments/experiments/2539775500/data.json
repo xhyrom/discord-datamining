@@ -1,0 +1,21 @@
+{
+  "data": {
+    "kind": "user",
+    "id": "2023-09_premium_likelihood_discount_offers",
+    "label": "Premium Likelihood Discount Offers",
+    "description": [
+      "Not Eligible",
+      "Control Bucket",
+      "Treatment 1: Premium likelihood discount enabled for user."
+    ],
+    "hash": 2539775500,
+    "buckets": [
+      -1,
+      0,
+      1
+    ],
+    "config_keys": [
+      "enabled"
+    ]
+  }
+}
