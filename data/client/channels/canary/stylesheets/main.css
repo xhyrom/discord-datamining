@@ -133492,19 +133492,6 @@ input::-webkit-outer-spin-button {
     padding: 16px
 }
 
-.modalFooterUpsell-31vIjm {
-    -webkit-box-pack: justify;
-    -ms-flex-pack: justify;
-    justify-content: space-between
-}
-
-.modalFooterUpsell-31vIjm,
-.modalFooterUpsellButtons-F05wS0 {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex
-}
-
 .modalFooterShopButton-2okLGY {
     background: var(--custom-premium-colors-premium-gradient-tier-2-tri-color)
 }
@@ -170232,4 +170219,4 @@ html .invoiceCancelRow-dVOR64 {
     margin-bottom: 16px
 }
 
-/*# sourceMappingURL=40532.a9abb394cc94084910fe.css.map*/
+/*# sourceMappingURL=40532.b5236fe5f60e81d76c86.css.map*/
