@@ -21,7 +21,7 @@
 <p class="wysiwyg-text-align-center"><img src="https://support.discord.com/hc/article_attachments/17558809635223" alt="custom_app_icon_selection.png"></p>
 <p>3. Now you can select any available app icon! To select your chosen icon, tap on the icon that matches your style.</p>
 <p class="wysiwyg-text-align-center"><img src="https://support.discord.com/hc/article_attachments/17558765416343" alt="custom_app_icon_selected.png" width="360" height="754"></p>
-<p>4. Once a new icon is chosen, you’ll receive a pop-up confirming the change.</p>
+<p>4. Once a new icon is chosen, you’ll receive a pop-up confirming the change (if you're on iOS).</p>
 <p class="wysiwyg-text-align-center"><img src="https://support.discord.com/hc/article_attachments/17558809653015" alt="custom_app_icon_home_screen.png" width="379" height="825"></p>
 <p>5. Navigate back to your device’s home screen to see that the Discord app icon has changed!</p>
 <h1 id="h_01HACYH70RDN1V4RYWXEVVQBCQ">Frequently Asked Questions</h1>
