@@ -6241,12 +6241,16 @@
         402102: e => {
             e.exports = {
                 container: "container-5qN7ct",
-                slideInFromLeft: "slideInFromLeft-3-SF6U",
                 content: "content-1bnD2b",
+                title: "title-297v9U",
                 ctaContainer: "ctaContainer-3GjHpt",
                 cta: "cta-3QwYgo",
+                close: "close-3G3kj9",
+                closeIcon: "closeIcon-221Mzj",
+                collectibles: "collectibles-1NhnmF",
                 collectiblesList: "collectiblesList-tJGgEQ",
-                item: "item-2WPK-W"
+                item: "item-2WPK-W",
+                selectedItem: "selectedItem-2jIRkM"
             }
         },
         311198: e => {
@@ -22273,7 +22277,8 @@
                 avatarPositionPremiumNoBanner: "avatarPositionPremiumNoBanner-2u3xDC",
                 avatarPositionPanel: "avatarPositionPanel-3ZMJUj",
                 avatarPositionPomelo: "avatarPositionPomelo-1FNpU4",
-                avatarHoverTarget: "avatarHoverTarget-1zzfRL"
+                avatarHoverTarget: "avatarHoverTarget-1zzfRL",
+                tryingOutAvatarDecoration: "tryingOutAvatarDecoration-3AMq0l"
             }
         },
         73762: e => {
@@ -26798,4 +26803,4 @@
         }
     }
 ]);
-//# sourceMappingURL=7232351d8690ff447ee6.js.map
+//# sourceMappingURL=e4eca99b2663c19a3cca.js.map
