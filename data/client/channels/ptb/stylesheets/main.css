@@ -13379,8 +13379,8 @@ html.disable-forced-colors * {
 }
 
 .animation-2Ht874 {
-    -webkit-animation: slideInFromBottom-30Bm31 .8s ease-in .1s 1 forwards;
-    animation: slideInFromBottom-30Bm31 .8s ease-in .1s 1 forwards;
+    -webkit-animation: slideInFromBottom-30Bm31 .6s cubic-bezier(.26, .17, .28, 1.27) .1s 1 forwards;
+    animation: slideInFromBottom-30Bm31 .6s cubic-bezier(.26, .17, .28, 1.27) .1s 1 forwards;
     -webkit-transform: translateY(120%);
     transform: translateY(120%);
     z-index: -1
@@ -22234,6 +22234,11 @@ html.disable-forced-colors * {
 .enable-forced-colors .avatarHintInner-2HUAWj {
     background-color: ButtonFace;
     color: ButtonText
+}
+
+.tryingOutAvatarDecoration-3AMq0l {
+    position: absolute;
+    bottom: 0
 }
 
 .avatar-3a2ws7 {
@@ -109803,45 +109808,7 @@ html .tabBadge-h4HGed {
     left: 128px
 }
 
-@-webkit-keyframes slideInFromLeft-3-SF6U {
-    0% {
-        -webkit-transform: translate3d(-110%, 0, 0);
-        transform: translate3d(-110%, 0, 0)
-    }
-
-    85% {
-        -webkit-transform: translate3d(5%, 0, 0);
-        transform: translate3d(5%, 0, 0)
-    }
-
-    to {
-        -webkit-transform: translateZ(0);
-        transform: translateZ(0)
-    }
-}
-
-@keyframes slideInFromLeft-3-SF6U {
-    0% {
-        -webkit-transform: translate3d(-110%, 0, 0);
-        transform: translate3d(-110%, 0, 0)
-    }
-
-    85% {
-        -webkit-transform: translate3d(5%, 0, 0);
-        transform: translate3d(5%, 0, 0)
-    }
-
-    to {
-        -webkit-transform: translateZ(0);
-        transform: translateZ(0)
-    }
-}
-
 .container-5qN7ct {
-    -webkit-transform: translate3d(-110%, 0, 0);
-    transform: translate3d(-110%, 0, 0);
-    -webkit-animation: slideInFromLeft-3-SF6U .6s linear .1s 1 forwards;
-    animation: slideInFromLeft-3-SF6U .6s linear .1s 1 forwards;
     background: var(--background-primary);
     margin-left: 4px;
     border-radius: var(--radius-sm);
@@ -109861,20 +109828,37 @@ html .tabBadge-h4HGed {
 }
 
 .content-1bnD2b {
-    padding: 24px 24px 0
+    padding: 24px 24px 12px
+}
+
+.title-297v9U {
+    padding-bottom: 8px;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    justify-items: center
+}
+
+.ctaContainer-3GjHpt,
+.title-297v9U {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex
 }
 
 .ctaContainer-3GjHpt {
     background-color: var(--background-secondary);
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
     -webkit-box-pack: center;
     -ms-flex-pack: center;
     justify-content: center;
     -webkit-box-align: center;
     -ms-flex-align: center;
-    align-items: center
+    align-items: center;
+    border-radius: 0 0 var(--radius-sm) var(--radius-sm)
 }
 
 .cta-3QwYgo {
@@ -109882,10 +109866,34 @@ html .tabBadge-h4HGed {
     width: 100%
 }
 
+.close-3G3kj9 {
+    cursor: pointer;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center
+}
+
+.closeIcon-221Mzj {
+    color: var(--interactive-normal);
+    width: 16px;
+    height: 16px
+}
+
+.collectibles-1NhnmF {
+    -webkit-box-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+    overflow: scroll;
+    margin: 0 16px 0 24px
+}
+
 .collectiblesList-tJGgEQ {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(80px, 1fr));
-    grid-gap: 8px
+    grid-gap: 12px
 }
 
 .item-2WPK-W {
@@ -109901,7 +109909,14 @@ html .tabBadge-h4HGed {
     align-items: center;
     -webkit-box-pack: center;
     -ms-flex-pack: center;
-    justify-content: center
+    justify-content: center;
+    cursor: pointer
+}
+
+.selectedItem-2jIRkM {
+    width: 76px;
+    height: 76px;
+    border: 2px solid var(--brand-500)
 }
 
 .clearStatusIcon-_QNldr {
@@ -170213,4 +170228,4 @@ html .invoiceCancelRow-dVOR64 {
     margin-bottom: 16px
 }
 
-/*# sourceMappingURL=40532.504f622576308a1fc2d3.css.map*/
+/*# sourceMappingURL=40532.6193d4a6f8c5a109ce54.css.map*/
