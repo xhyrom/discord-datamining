@@ -2894,7 +2894,10 @@
   },
   "PARTNER_PROMOTIONS": {
     "url": "/entitlements/partner-promotions/:param",
-    "allowed_methods": null
+    "allowed_methods": [
+      "OPTIONS",
+      "POST"
+    ]
   },
   "USER_GIFT_CODE_CREATE": {
     "url": "/users/@me/entitlements/gift-codes",
