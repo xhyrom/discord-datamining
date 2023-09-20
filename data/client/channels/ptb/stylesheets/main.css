@@ -30982,6 +30982,14 @@ img[alt] {
     margin-top: 5px
 }
 
+.divider-3SuVR5 {
+    margin-top: 8px;
+    margin-bottom: 8px;
+    width: 100%;
+    height: 1px;
+    background-color: var(--background-modifier-accent)
+}
+
 .warnBlock-URqwCC {
     position: relative;
     display: -webkit-box;
@@ -170246,4 +170254,4 @@ html .invoiceCancelRow-dVOR64 {
     margin-bottom: 16px
 }
 
-/*# sourceMappingURL=40532.9441cbccb66d89db984b.css.map*/
+/*# sourceMappingURL=40532.4efe2681f4b963d60773.css.map*/
