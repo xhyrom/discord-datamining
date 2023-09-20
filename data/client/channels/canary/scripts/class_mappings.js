@@ -20512,19 +20512,25 @@
             e.exports = {
                 dropdown: "dropdown-22I09M",
                 header: "header-3SCqi0",
-                icon: "icon-2h8wJQ",
+                headerIconWrapper: "headerIconWrapper-VPxUJJ",
+                headerIconActive: "headerIconActive-bQeHBZ",
+                headerIconExpired: "headerIconExpired-3B-2Fw",
                 caret: "caret-1lASwx",
                 title: "title-3tlXGi",
                 items: "items-2jXzOR",
                 itemDetail: "itemDetail--KQ54H",
+                descriptionContainer: "descriptionContainer-2geGp1",
                 timestamp: "timestamp-uDYvi2",
-                description: "description-1P7BoI",
                 expirationDate: "expirationDate-26V1wk",
                 content: "content-1gG6Yo",
                 paginationButton: "paginationButton-3MtdnS",
                 emptyState: "emptyState-1ifWMx",
+                emptyStateSubtext: "emptyStateSubtext-39gu0_",
                 emptyStateText: "emptyStateText-3VABLz",
-                emptyStateSubtext: "emptyStateSubtext-39gu0_"
+                iconContainer: "iconContainer-2ymZAI",
+                iconBackground: "iconBackground--HDTG9",
+                icon: "icon-2h8wJQ",
+                stars: "stars-IkYlZI"
             }
         },
         282986: e => {
@@ -26801,4 +26807,4 @@
         }
     }
 ]);
-//# sourceMappingURL=142bf9e2a3090b1fb4d2.js.map
+//# sourceMappingURL=35a9cc21eea0e2e661c9.js.map
