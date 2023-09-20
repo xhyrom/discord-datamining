@@ -163078,6 +163078,29 @@ html .invoiceCancelRow-3s2UuC {
     height: 100%
 }
 
+.priceWrapper-3XSWjw {
+    display: inline-block
+}
+
+.price-1Nd6eJ {
+    font-weight: 600
+}
+
+.strikedPrice-3AIrSN {
+    text-decoration: line-through;
+    opacity: .7
+}
+
+.premiumIcon-3J0XnZ {
+    display: inline-block;
+    position: relative;
+    top: 2px;
+    margin-left: 8px;
+    margin-right: 4px;
+    width: 16px;
+    height: 16px
+}
+
 .shopCard-H3oN50 {
     border-radius: var(--radius-xxl);
     border: 2px solid transparent;
@@ -170031,7 +170054,7 @@ html .invoiceCancelRow-dVOR64 {
 }
 
 .description-2InCpQ {
-    margin-bottom: 64px
+    margin-bottom: 38px
 }
 
 .button-343kYP {
@@ -170070,6 +170093,10 @@ html .invoiceCancelRow-dVOR64 {
 
 .profileCustomizationBody-3_pZnZ {
     min-height: 100px
+}
+
+.priceTag-2Fjcol {
+    margin-top: 24px
 }
 
 .modalContent-JK5iQA,
@@ -170219,4 +170246,4 @@ html .invoiceCancelRow-dVOR64 {
     margin-bottom: 16px
 }
 
-/*# sourceMappingURL=40532.b5236fe5f60e81d76c86.css.map*/
+/*# sourceMappingURL=40532.9441cbccb66d89db984b.css.map*/

@@ -6270,6 +6270,14 @@
                 confettiCanvas: "confettiCanvas-1iBV68"
             }
         },
+        543579: e => {
+            e.exports = {
+                priceWrapper: "priceWrapper-3XSWjw",
+                price: "price-1Nd6eJ",
+                strikedPrice: "strikedPrice-3AIrSN",
+                premiumIcon: "premiumIcon-3J0XnZ"
+            }
+        },
         869667: e => {
             e.exports = {
                 page: "page-LilLhg",
@@ -6370,7 +6378,8 @@
                 disclaimer: "disclaimer-NGMa8n",
                 premiumIcon: "premiumIcon-1tZnQG",
                 tooltip: "tooltip-1sdgrM",
-                profileCustomizationBody: "profileCustomizationBody-3_pZnZ"
+                profileCustomizationBody: "profileCustomizationBody-3_pZnZ",
+                priceTag: "priceTag-2Fjcol"
             }
         },
         840487: e => {
@@ -26805,4 +26814,4 @@
         }
     }
 ]);
-//# sourceMappingURL=a4379a2cab9cfffe117c.js.map
+//# sourceMappingURL=c0df5a9eb62c87f70559.js.map
