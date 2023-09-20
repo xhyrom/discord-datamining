@@ -40,8 +40,8 @@
     <div id="heading-3" class="rich-wrapper">
         <div class="blog-post-content w-richtext">
             <h2><strong>What Games and Activities are Available?</strong></h2>
-            <figure class="w-richtext-figure-type-image w-richtext-align-fullwidth" style="max-width:3189pxpx">
-                <div><img src="https://assets-global.website-files.com/5f9072399b2640f14d6a2bf4/64d5797b7a8bb24d608e2b0a_8.10.2023%20Update.png" loading="lazy" alt="Key artwork for all currently available Activities on Discord. "></div>
+            <figure class="w-richtext-figure-type-image w-richtext-align-fullwidth" style="max-width:1600pxpx">
+                <div><img src="https://assets-global.website-files.com/5f9072399b2640f14d6a2bf4/650b2da66bea13668504090d_UGdmiGMi1Y_8NLixcAfiU1kc5gbYvPPPyYQcOQgydUWkXGlWRCKkCXVlfRD7Qexful0Ka7smNyT8mggi_xQKiGJ9SjIG4SvQJlOSQggVAQBL12pTf_xrerruIR0hzKJxjlrBas0NY6fho-TXav25L3g.png" alt="Key artwork for all currently available Activities on Discord."></div>
             </figure>
             <p>Activities can be launched in either a server’s Voice channels or in a DM Voice call. Check out the entirety of currently-available Activities. <br></p>
             <ul role="list">
@@ -59,9 +59,10 @@
                 <li><strong>Bobble League:</strong> Score goals as the coach of the world’s bobble-est team ever.</li>
                 <li><strong>Know What I Meme</strong>: The perfect place to repost the same capybara GIF for the hundredth time.</li>
                 <li><strong>Jamspace</strong> <strong>Whiteboard</strong> - A collaborative digital whiteboard anyone in the call can contribute to. Map out your next MMO raid mid-call or just doodle together!</li>
-                <li><strong>Color Together</strong>: The dress was always black and gold, now color it so.<em>‍</em><strong>‍</strong></li>
+                <li><strong>Color Together</strong>: The dress was always black and gold, now color it so.</li>
+                <li><strong>[NEW] Bobble Bash</strong>: Collect the most gems while bashing your buddies away from them.<em>‍</em><strong>‍</strong></li>
             </ul>
-            <p><strong><em>Note: This list of Activities was last updated on August 10, 2023.</em></strong></p>
+            <p><strong><em>Note: This list of Activities was last updated on September 20, 2023.</em></strong></p>
             <p>For the full low-down on how Activities work, repeat after me: "The Help Center article can be <a href="https://support.discord.com/hc/en-us/articles/4422142836759-Activities-Experiment">found here</a>." (Good job!)<em>‍</em>‍</p>
         </div>
     </div>
@@ -95,6 +96,7 @@
                 <li><a href="https://garticphone.com/discord-help">Gartic Phone</a></li>
                 <li><a href="https://support.discord.com/hc/en-us/articles/14042410493847-Jamspace-FAQ">Jamspace Whiteboard</a></li>
                 <li><a href="https://www.fundaygames.dk/discord/color-together-play-guide">Color Together</a></li>
+                <li><a href="https://support.discord.com/hc/en-us/articles/15508886520855-Bobble-Bash-FAQ">Bobble Bash</a></li>
             </ul>
             <p>And of course, you’ll always find us on the usual places: <a href="https://twitter.com/discord">Twitter</a>, <a href="https://www.instagram.com/discord/">Instagram</a> or <a href="https://www.tiktok.com/@discord">TikTok</a>. Try making a good ol’ fashioned montage of your sick Putt Party plays and share it with us!&nbsp;</p>
         </div>
