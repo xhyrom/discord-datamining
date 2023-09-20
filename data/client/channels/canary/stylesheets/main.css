@@ -41573,41 +41573,8 @@ input[type=checked]:focus-visible+.label-3TDpbn {
     padding-bottom: 12px
 }
 
-.trialPlanSelectHeaderCompressed-2lE5IM {
-    padding-top: 8px;
-    padding-bottom: 12px;
-    text-transform: uppercase
-}
-
 .legacyPricingNotice-1oqVTr {
     margin-bottom: 16px
-}
-
-.negativeMarginTop-3utWFZ {
-    margin-top: -16px
-}
-
-.noMarginDivider-1RmHhS {
-    background-color: var(--background-modifier-accent);
-    height: 1px
-}
-
-.totalRow-3sxp77 {
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: row;
-    flex-direction: row;
-    -webkit-box-pack: justify;
-    -ms-flex-pack: justify;
-    justify-content: space-between;
-    padding-top: 12px;
-    padding-bottom: 12px
 }
 
 .root-2s1-ri {
@@ -170248,4 +170215,4 @@ html .invoiceCancelRow-dVOR64 {
     margin-bottom: 16px
 }
 
-/*# sourceMappingURL=40532.95dc981742591f83ff91.css.map*/
+/*# sourceMappingURL=40532.3d899c072028fa12435f.css.map*/
