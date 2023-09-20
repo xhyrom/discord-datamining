@@ -2293,7 +2293,7 @@
   "FORM_LABEL_MUTE_SERVER": "\"Mute **!!{name}!!**\"",
   "FORM_LABEL_UNMUTE_SERVER": "\"Unmute **!!{name}!!**\"",
   "FORM_LABEL_MUTE_SERVER_DESCRIPTION": "\"\\nMuting a server prevents unread indicators and notifications from appearing unless you are mentioned.\\n\"",
-  "FORM_LABEL_MUTE_SERVER_DESCRIPTION_NEW": "\"Muting a server suppresses notifications but unread indicators will still be visible if you're mentioned\"",
+  "FORM_LABEL_MUTE_SERVER_DESCRIPTION_NEW": "\"Muting a server suppresses notifications but unread indicators will still be visible if you're mentioned.\"",
   "FORM_LABEL_MOBILE_PUSH_NOTIFICATIONS": "\"Mobile Push Notifications\"",
   "FORM_LABEL_ALL_MESSAGES": "\"All Messages\"",
   "FORM_LABEL_ONLY_MENTIONS": "\"Only **@mentions**\"",
