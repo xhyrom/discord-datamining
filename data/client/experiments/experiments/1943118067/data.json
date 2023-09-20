@@ -1,0 +1,21 @@
+{
+  "data": {
+    "kind": "guild",
+    "id": "2023-09_guild_events_entrypoint",
+    "label": "Experiments with showing Events entrypoint in the channel list in friends guilds",
+    "description": [
+      "Not Eligible",
+      "Control Bucket",
+      "Treatment 1: User can see top level events entrypoint in friend guilds"
+    ],
+    "hash": 1943118067,
+    "buckets": [
+      -1,
+      0,
+      1
+    ],
+    "config_keys": [
+      "enabled"
+    ]
+  }
+}
