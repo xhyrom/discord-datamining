@@ -106335,6 +106335,59 @@ html:not(.custom-theme-background) .container-Vrgqxz {
     bottom: -6px
 }
 
+.premiumTrialBadge-WjIyAB {
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    color: var(--header-primary);
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    border-radius: 12px;
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 12px;
+    margin-left: auto;
+    padding: 4px 8px;
+    pointer-events: all;
+    text-transform: uppercase
+}
+
+.premiumTrialBadgeIcon-1Y_EPl {
+    height: 12px;
+    width: 12px;
+    margin-right: 2px
+}
+
+.premiumTrialTier0UnacknowledgedBadge-1uVRwo {
+    background-image: -webkit-gradient(linear, left top, right top, from(var(--premium-tier-0-purple-for-gradients)), color-stop(50%, var(--premium-tier-0-blue-for-gradients-2)), to(var(--premium-tier-0-blue-for-gradients)));
+    background-image: linear-gradient(90deg, var(--premium-tier-0-purple-for-gradients) 0, var(--premium-tier-0-blue-for-gradients-2) 50%, var(--premium-tier-0-blue-for-gradients));
+    color: var(--white-500)
+}
+
+.premiumDiscountUnacknowledgedBadge-11ov_R,
+.premiumTrialTier2UnacknowledgedBadge-1iHCWR {
+    background-image: -webkit-gradient(linear, left top, right top, from(var(--premium-tier-2-purple-for-gradients)), to(var(--premium-tier-2-pink-for-gradients)));
+    background-image: linear-gradient(90deg, var(--premium-tier-2-purple-for-gradients), var(--premium-tier-2-pink-for-gradients));
+    color: var(--white-500)
+}
+
+.premiumTrialAcknowledgedBadge-2fhKRM {
+    background-color: var(--background-accent)
+}
+
+.premiumTrialBadgeSelected-3Qgd2d {
+    background-color: var(--background-secondary)
+}
+
+.theme-light .premiumTrialBadge-WjIyAB {
+    background-color: var(--background-tertiary)
+}
+
+.theme-light .premiumTrialBadgeSelected-3Qgd2d {
+    background-color: var(--background-secondary)
+}
+
 .badgeContainer-3TDXH5 {
     position: relative;
     margin-right: 8px
@@ -106385,58 +106438,6 @@ html:not(.custom-theme-background) .container-Vrgqxz {
 
 .theme-light .starRight-1xCrPt {
     color: var(--premium-tier-2-pink-for-gradients)
-}
-
-.premiumTrialBadge-pEqntF {
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
-    color: var(--header-primary);
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    border-radius: 12px;
-    font-size: 12px;
-    font-weight: 600;
-    line-height: 12px;
-    margin-left: auto;
-    padding: 4px 8px;
-    pointer-events: all;
-    text-transform: uppercase
-}
-
-.premiumTrialBadgeIcon-24nUOG {
-    height: 12px;
-    width: 12px;
-    margin-right: 2px
-}
-
-.premiumTrialTier0UnacknowledgedBadge-Fhgvyi {
-    background-image: -webkit-gradient(linear, left top, right top, from(var(--premium-tier-0-purple-for-gradients)), color-stop(50%, var(--premium-tier-0-blue-for-gradients-2)), to(var(--premium-tier-0-blue-for-gradients)));
-    background-image: linear-gradient(90deg, var(--premium-tier-0-purple-for-gradients) 0, var(--premium-tier-0-blue-for-gradients-2) 50%, var(--premium-tier-0-blue-for-gradients));
-    color: var(--white-500)
-}
-
-.premiumTrialTier2UnacknowledgedBadge-1XA1ny {
-    background-image: -webkit-gradient(linear, left top, right top, from(var(--premium-tier-2-purple-for-gradients)), to(var(--premium-tier-2-pink-for-gradients)));
-    background-image: linear-gradient(90deg, var(--premium-tier-2-purple-for-gradients), var(--premium-tier-2-pink-for-gradients));
-    color: var(--white-500)
-}
-
-.premiumTrialAcknowledgedBadge-2QxbU_ {
-    background-color: var(--background-accent)
-}
-
-.premiumTrialBadgeSelected-3NVwA4 {
-    background-color: var(--background-secondary)
-}
-
-.theme-light .premiumTrialBadge-pEqntF {
-    background-color: var(--background-tertiary)
-}
-
-.theme-light .premiumTrialBadgeSelected-3NVwA4 {
-    background-color: var(--background-secondary)
 }
 
 .muted-2El7St .avatar-1HDIsL {
@@ -170247,4 +170248,4 @@ html .invoiceCancelRow-dVOR64 {
     margin-bottom: 16px
 }
 
-/*# sourceMappingURL=40532.2855cb33bf1cbe5c01f2.css.map*/
+/*# sourceMappingURL=40532.6a770c1a352d374523c5.css.map*/
