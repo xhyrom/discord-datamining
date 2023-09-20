@@ -6399,6 +6399,7 @@
                 premiumFeatureBannerBackground: "premiumFeatureBannerBackground-Epwl-X",
                 container: "container-5BK5-N premiumFeatureBannerBackground-Epwl-X",
                 containerDefaultMargin: "containerDefaultMargin-3T8Dq_",
+                marketingPage: "marketingPage-1HmCSX",
                 avatars: "avatars-bkeu7E",
                 avatar1: "avatar1-1rcc7k",
                 avatar2: "avatar2-vlNb-U",
@@ -6407,7 +6408,6 @@
                 title: "title-CXxZie",
                 buttons: "buttons-2BQREU",
                 ctaButton: "ctaButton-30CBdb",
-                marketingPage: "marketingPage-1HmCSX",
                 textBody: "textBody-1mECjS"
             }
         },
@@ -18769,7 +18769,8 @@
                 tier2PlanComparisonTableBackground: "tier2PlanComparisonTableBackground-1Ynqbn",
                 topRimPill: "topRimPill-2RlwEn",
                 rimGlowTier2: "rimGlowTier2-3DKwGJ",
-                trialHeader: "trialHeader-x6aWbp"
+                trialHeader: "trialHeader-x6aWbp",
+                collectiblesBanner: "collectiblesBanner-24W37t"
             }
         },
         723965: e => {
@@ -26797,4 +26798,4 @@
         }
     }
 ]);
-//# sourceMappingURL=abcd1e58774e8473a6a4.js.map
+//# sourceMappingURL=7232351d8690ff447ee6.js.map

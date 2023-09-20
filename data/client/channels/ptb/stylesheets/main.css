@@ -102634,7 +102634,7 @@ html:not(.custom-theme-background) .container-Vrgqxz {
 }
 
 .premiumFeatureBannerBackground-Epwl-X {
-    border-radius: 8px;
+    border-radius: var(--radius-sm);
     background: linear-gradient(0deg, rgba(0, 0, 0, .2), rgba(0, 0, 0, .2)), linear-gradient(187deg, var(--premium-tier-0-header-gradient-1) -9.85%, var(--premium-tier-0-header-gradient-2) 35.44%, var(--premium-tier-0-header-gradient-3) 55.85%, var(--premium-tier-0-header-gradient-4) 100.07%, var(--premium-tier-0-header-gradient-5) 110.26%)
 }
 
@@ -102654,6 +102654,11 @@ html:not(.custom-theme-background) .container-Vrgqxz {
 
 .containerDefaultMargin-3T8Dq_ {
     margin: 24px 0
+}
+
+.container-5BK5-N.marketingPage-1HmCSX {
+    background: -webkit-gradient(linear, left top, right top, from(var(--premium-tier-2-purple-for-gradients)), to(var(--premium-tier-2-pink-for-gradients)));
+    background: linear-gradient(90deg, var(--premium-tier-2-purple-for-gradients), var(--premium-tier-2-pink-for-gradients))
 }
 
 .avatars-bkeu7E {
@@ -102712,10 +102717,6 @@ html:not(.custom-theme-background) .container-Vrgqxz {
 
 .ctaButton-30CBdb {
     padding: 11px 20px
-}
-
-.marketingPage-1HmCSX .mainColumn-3aeB42 {
-    width: 1000px
 }
 
 .marketingPage-1HmCSX .textBody-1mECjS {
@@ -103676,14 +103677,16 @@ html:not(.custom-theme-background) .container-Vrgqxz {
 
 .collectiblesBanner-3eeMZW {
     margin-top: 0;
-    z-index: 1
+    z-index: 1;
+    border-radius: var(--radius-lg)
 }
 
 .collectiblesBannerFullscreen-1ukkvK {
     margin-top: -40px;
     margin-bottom: 80px;
     max-width: 824px;
-    min-width: 600px
+    min-width: 600px;
+    width: 100%
 }
 
 .trialOfferWrapper-2Y24ok {
@@ -156603,6 +156606,11 @@ html .invoiceCancelRow-3s2UuC {
     margin-bottom: 16px
 }
 
+.collectiblesBanner-24W37t {
+    margin: 24px 0;
+    border-radius: var(--radius-lg)
+}
+
 .socialLinks-3ywLUf {
     padding: 8px 10px;
     font-size: 12px;
@@ -170205,4 +170213,4 @@ html .invoiceCancelRow-dVOR64 {
     margin-bottom: 16px
 }
 
-/*# sourceMappingURL=40532.73976d934f3d71013134.css.map*/
+/*# sourceMappingURL=40532.504f622576308a1fc2d3.css.map*/
