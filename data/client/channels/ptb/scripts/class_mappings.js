@@ -4947,8 +4947,6 @@
                 modalContent: "modalContent-1X6ssz",
                 modalPreview: "modalPreview-2hTuZp",
                 modalFooter: "modalFooter-jdWlLy",
-                modalFooterUpsell: "modalFooterUpsell-31vIjm",
-                modalFooterUpsellButtons: "modalFooterUpsellButtons-F05wS0",
                 modalFooterShopButton: "modalFooterShopButton-2okLGY"
             }
         },
@@ -26807,4 +26805,4 @@
         }
     }
 ]);
-//# sourceMappingURL=2450f7285d12f03b3e3c.js.map
+//# sourceMappingURL=a4379a2cab9cfffe117c.js.map
