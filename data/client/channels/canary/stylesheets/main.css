@@ -102724,6 +102724,10 @@ html:not(.custom-theme-background) .container-Vrgqxz {
     padding: 11px 20px
 }
 
+.ctaButton-30CBdb:hover {
+    opacity: .9
+}
+
 .marketingPage-1HmCSX .textBody-1mECjS {
     max-width: 400px
 }
@@ -163457,6 +163461,10 @@ html .invoiceCancelRow-3s2UuC {
     margin-top: 16px
 }
 
+.subscribeButton-3rUkdg:hover {
+    opacity: .9
+}
+
 @media (orientation:portrait) {
 
     .largeLeftSparkle-3U3kQ1,
@@ -170240,4 +170248,4 @@ html .invoiceCancelRow-dVOR64 {
     margin-bottom: 16px
 }
 
-/*# sourceMappingURL=40532.dbcf30b7b968826ea5b6.css.map*/
+/*# sourceMappingURL=40532.95dc981742591f83ff91.css.map*/
