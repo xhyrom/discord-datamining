@@ -1,4 +1,4 @@
-/*! For license information please see c964033a8d8d9ea07736.js.LICENSE.txt */
+/*! For license information please see 3f9508934e7ce2aef3e7.js.LICENSE.txt */
 (this.webpackChunkdiscord_app = this.webpackChunkdiscord_app || []).push([
     [22897], {
         151131: (t, e, r) => {
@@ -24215,6 +24215,7 @@
                 t.AUTHORIZED_APP_CONNECTED = "authorized_app_connected";
                 t.OPEN_MODAL = "open_modal";
                 t.OPEN_POPOUT = "open_popout";
+                t.CLOSE_POPOUT = "close_popout";
                 t.MODAL_DISMISSED = "modal_dismissed";
                 t.MODAL_SECTION_VIEWED = "modal_section_viewed";
                 t.HOVER_MENU_OPENED = "hover_menu_opened";
@@ -24873,6 +24874,7 @@
                 t.ACK_COMMUNITY_MESSAGES = "ack_community_messages";
                 t.VOICE_PANEL_TAB_OPENED = "voice_panel_tab_opened";
                 t.INVENTORY_GUILD_SETTINGS = "inventory_guild_settings";
+                t.INVENTORY_PACK_ACTION_COMPLETED = "inventory_pack_action_completed";
                 t.ANNOUNCEMENT_MESSAGE_LINK_CLICKED = "announcement_message_link_clicked";
                 t.ANNOUNCEMENT_MESSAGE_VIEWED = "announcement_message_viewed";
                 t.REDESIGN_NAV_BAR_CLICKED = "redesign_nav_bar_clicked";
@@ -37031,7 +37033,7 @@
                     dsn: "https://fa97a90475514c03a42f80cd36d147c4@sentry.io/140984",
                     autoSessionTracking: !1,
                     environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                    release: "discord_web-0d01b87a9e6d52e304e789c400676e8e70a16259",
+                    release: "discord_web-cbc3b91ad140fe855101e5a08b7b0cc3e70fabcc",
                     beforeSend: function(t) {
                         return function(t) {
                             return null != t.exception && null != t.exception.values && t.exception.values.every((function(t) {
@@ -37058,8 +37060,8 @@
                     denyUrls: [/recaptcha/, /mobilediscord\.com/, /betterdiscord:\/\//]
                 });
                 var t;
-                X.YA("buildNumber", null !== (t = "229750") ? t : "");
-                X.YA("builtAt", String("1695238966914"));
+                X.YA("buildNumber", null !== (t = "229759") ? t : "");
+                X.YA("builtAt", String("1695240245681"));
                 var e = window.GLOBAL_ENV.SENTRY_TAGS;
                 if (null != e && "object" == typeof e)
                     for (var r in e) X.YA(r, e[r]);
@@ -48437,4 +48439,4 @@
         e(128594), e(535666), e(784633), e(678991)
     }
 ]);
-//# sourceMappingURL=c964033a8d8d9ea07736.js.map
+//# sourceMappingURL=3f9508934e7ce2aef3e7.js.map
