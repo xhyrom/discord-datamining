@@ -9723,6 +9723,7 @@
   "AGE_GATE_FAMILY_CENTER_HEADER": "\"Please confirm your age\"",
   "AGE_GATE_BODY": "\"To keep our users safe, we need to verify your age. We will only ask you for this once. [Why do I need to provide my birthday?]({helpURL})\"",
   "AGE_GATE_NSFW_BODY": "\"Before you can view this age-restricted channel, we need to verify your age. We will only ask you for this once. [Why do I need to provide my birthday?]({helpURL})\"",
+  "AGE_GATE_DEEP_LINK_BODY": "\"We need to verify your age. [Why do I need to provide my birthday?]({helpURL})\"",
   "AGE_GATE_FAMILY_CENTER_BODY": "\"Before you can use Family Center, we need to verify your age so we can show you the appropriate experience. We will only ask you for this once.\"",
   "AGE_GATE_UNDERAGE_EXISTING_HEADER": "\"Sorry, there's an issue.\"",
   "AGE_GATE_UNDERAGE_EXISTING_BODY_DELETION": "\"You have **14 days** to verify your age before your account will be deleted. Check your email for instructions on verifying your age.\"",
