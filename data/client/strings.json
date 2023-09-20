@@ -16206,6 +16206,8 @@
   "SERVER_USAGE_SURVEY_BODY": "\"Help us make Discord better by answering a few questions about !!{guildName}!!\"",
   "SERVER_USAGE_SURVEY_CTA": "\"Take Survey\"",
   "REPORTS_USER_MENU_OPTION_MOBILE": "\"Report User Profile\"",
+  "CREATE_POLL": "\"Create Poll\"",
+  "POLLS": "\"Polls\"",
   "CHANGE_LANGUAGE_MODAL_TITLE_SPANISH": "\"¿Cambiar idioma?\"",
   "CHANGE_LANGUAGE_MODAL_SUBTITLE_SPANISH": "\"¿Te gustaría configurar Discord en Español?\"",
   "YES_TEXT_SPANISH": "\"Sí\"",
