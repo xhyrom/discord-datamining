@@ -1,37 +1,40 @@
-<p>Highlights bring you the best content from the servers you care about. If you are opted in to receive Highlights for a server, Discord will notify you via email of the best messages, events, announcements, and more from that server.</p>
-<p><span class="wysiwyg-font-size-large"><strong>What this article covers:</strong></span></p>
+<p>Öne Çıkanlar, önem verdiğin sunuculardaki en iyi içerikleri sana sunar. Bir sunucu için Öne Çıkanlar'ı almayı seçtiysen, Discord seni o sunucudaki en iyi mesajlar, etkinlikler, duyurular ve daha fazlası hakkında e-posta yoluyla bilgilendirecektir.</p>
+<p><strong>Bu makale neleri kapsar:</strong></p>
 <ul>
     <li>
-        <a href="https://support.discord.com/hc/en-us/articles/5304469213079#h_01HAMZ2WJG13QVBE0NHZQ9Q07A">What are Highlights notifications?</a>
+        <a href="https://support.discord.com/hc/en-us/articles/5304469213079#h_01HAVEVJ3K1YRQDQ1ZBEKRBG0B">Öne Çıkanlar bildirimleri nedir?</a>
         <ul>
-            <li><a href="https://support.discord.com/hc/en-us/articles/5304469213079#h_01HAMZ2WJG7779JZRRP0GYBCY7">Conversations with your friends</a></li>
-            <li><a href="https://support.discord.com/hc/en-us/articles/5304469213079#h_01HAMZ2WJGV44TBDM9R2W3SCH3">Popular Messages</a></li>
+            <li><a href="https://support.discord.com/hc/en-us/articles/5304469213079#h_01HAVEXM27S81YKYBSBGV83N96">Arkadaşlarınla konuşmalar</a></li>
+            <li><a href="https://support.discord.com/hc/en-us/articles/5304469213079#h_01HAVEVJ3KCY5FF8GW49FZZQD5">Popüler Mesajlar</a></li>
         </ul>
     </li>
-    <li><a href="https://support.discord.com/hc/en-us/articles/5304469213079#h_01HAMZ2WJGXC57STS5MGNVVY8D">Suppress Highlights</a></li>
-    <li><a href="https://support.discord.com/hc/en-us/articles/5304469213079#h_01HAMZ2WJGFGGF2S3ZA257TD5F">Frequently Asked Questions</a></li>
+    <li><a href="https://support.discord.com/hc/en-us/articles/5304469213079#h_01HAVEVJ3K6677V2YM9FTZC2VZ">Önemli Noktaları Bastır</a></li>
+    <li><a href="https://support.discord.com/hc/en-us/articles/5304469213079#h_01HAVEVJ3KK14APSRK5QWDPBXE">Sıkça Sorulan Sorular</a></li>
 </ul>
-<h1 id="h_01HAMZ2WJG13QVBE0NHZQ9Q07A">What are Highlights notifications?</h1>
-<p>Highlights lets you know about key moments happening in the servers you care about. This will include things like popular posts, events, friend activity, new forums, and more. We built this for those of you who want a notification option between receiving all messages and receiving nothing.</p>
-<p>Today, you might see two types of highlight notifications:</p>
-<h2 id="h_01HAMZ2WJG7779JZRRP0GYBCY7">Conversations with your friends</h2>
-<h3 id="h_01HAMZ2WJG8Q9MYSFJE44ZZRX2"><span style="color: #434343;" data-darkreader-inline-color="">This feature is currently an experiment and only available to a limited number of servers.</span></h3>
-<p class="wysiwyg-text-align-center"><img src="https://support.discord.com/hc/article_attachments/17629501517975" alt="highlights.png"></p>
-<p>Occasionally, you might receive a notification about a conversation your friends are having – something especially useful on busier servers where you don’t want to (or can’t) receive a notification for every message (i.e. your notifications are set to @mentions only). We factor in the people you usually talk to and the servers/channels you care about when deciding when to send the notification.</p>
-<h3 id="h_01HAMZ2WJGW9H9HVDETX25H43B">
-    <span style="color: #434343;" data-darkreader-inline-color="">NOTE: This notification is only available to the servers that have enabled </span><a href="https://support.discord.com/hc/en-us/articles/12926016807575-Summaries-AI#:~:text=You%20can%20check%20to%20see,many%20messages%20in%20a%20channel." target="_blank" rel="noopener noreferrer">Conversation Summaries</a><span style="color: #434343;" data-darkreader-inline-color="">.</span>
+<h1 id="h_01HAVEVJ3K1YRQDQ1ZBEKRBG0B">Öne Çıkanlar bildirimleri nedir?</h1>
+<p>Öne Çıkanlar, önem verdiğin sunucularda gerçekleşen önemli anlardan haberdar olmanı sağlar. Bu, popüler gönderiler, etkinlikler, arkadaş etkinliği, yeni forumlar ve daha fazlası gibi şeyleri içerecektir. Bunu, tüm mesajları almak ile hiçbir şey almamak arasında bir bildirim seçeneği isteyenler için geliştirdik.</p>
+<p> </p>
+<p>Bugün, iki tür öne çıkan bildirim görebilirsin:</p>
+<h2 id="h_01HAVEXM27S81YKYBSBGV83N96">Arkadaşlarınla konuşmalar</h2>
+<h3 id="h_01HAVEVJ3KD9FZTYRCDPFR5BN3"><span style="color: #434343;">Bu özellik şu anda bir deneme aşamasındadır ve yalnızca sınırlı sayıda sunucu tarafından kullanılabilir.</span></h3>
+<p><strong><img style="height: 183px; width: 624px;" src="https://lh3.googleusercontent.com/vffRl3JMqXSKKbi8dufz4omTu9Bx_UlgZbiZESONzWmhGh81TwbFEeQiIqjpaqebC-dEWSDBXE-Rn4XNqVCRpfR6mkmBOuSchwq7VT2DJrPHwvxLweuymWsfD_GzItqStuRFRiKUeQDVnylDuYyCnA"></strong></p>
+<p>Bazen, arkadaşlarının yaptığı bir konuşma hakkında bir bildirim alabilirsin - özellikle her mesaj için bir bildirim almak istemediğin (veya alamadığın) daha yoğun sunucularda yararlı olan bir şey (yani, bildirimlerin yalnızca @mentions olarak ayarlanmıştır). Bildirimin ne zaman gönderileceğine karar verirken genellikle konuştuğun kişileri ve önem verdiğin sunucuları/kanalları dikkate alıyoruz.</p>
+<h3 id="h_01HAVEVJ3KAVP5D3WN19WSW6P7">
+    <span style="color: #434343;">NOT: Bu bildirim yalnızca </span><a href="https://support.discord.com/hc/en-us/articles/12926016807575-Summaries-AI#:~:text=You%20can%20check%20to%20see,many%20messages%20in%20a%20channel."><span class="wysiwyg-underline" style="color: #1155cc;">Konuşma Özetlerini</span></a><span style="color: #434343;"> etkinleştirmiş sunucular tarafından kullanılabilir.</span>
 </h3>
-<h2 id="h_01HAMZ2WJGV44TBDM9R2W3SCH3">Popular Messages</h2>
-<p>Occasionally, you might receive a notification about a popular message in a server. We figure out what’s popular using factors such as how many reactions/replies a message received, and we also consider servers/channels where you are most active.</p>
-<p class="wysiwyg-text-align-center"><img src="https://support.discord.com/hc/article_attachments/17629501523223" alt="highlights2.png"></p>
-<h1 id="h_01HAMZ2WJGXC57STS5MGNVVY8D">Suppress Highlights</h1>
-<p>The <strong>Suppress Highlights</strong> setting is an additional toggle you can turn on or off in each server. It is located in your server notification settings. This setting operates independently of your server notification settings (<strong>all messages</strong>, <strong>@mentions only</strong>, or <strong>nothing</strong>). For example, you can have your server notifications settings set to <strong>Nothing</strong> and still receive Highlights notifications if the toggle is on. </p>
-<p class="wysiwyg-text-align-center"><img src="https://support.discord.com/hc/article_attachments/17629501524759" alt="highlights_settings.png"><img src="https://support.discord.com/hc/article_attachments/17629501530007" alt="highlights_settings_2.png"></p>
-<p>Muting a server will turn off the Highlights toggle, and you will not receive any notifications from that server.</p>
-<h1 id="h_01HAMZ2WJGFGGF2S3ZA257TD5F">Frequently Asked Questions</h1>
-<p><strong>Q: How can I turn on or off Highlights for all of my servers?</strong></p>
-<p>A: You can turn Highlights on or off by navigating to the server notifications setting menu and enabling <strong>Suppress Highlights</strong>. Currently, these settings can only be changed one server at a time.</p>
-<p><strong>Q: Are Highlights personalized to me?</strong></p>
-<p>A: Yes, the information that Discord uses to determine if something is considered a Highlight might depend on your activity on Discord, along with details about the server or channel. Discord relies on information such as how often you visit a server, the number of reactions to a post, or the number of attendees at an event in a server. </p>
-<p>At any point in time, you may choose to turn on or off this personalized experience on Discord via <strong>the personalization toggle in your </strong><a href="https://support.discord.com/hc/en-us/articles/360004109911-Data-Privacy-Controls" target="_blank" rel="noopener noreferrer">Privacy &amp; Safety settings</a><strong>.</strong></p>
-<p class="wysiwyg-text-align-center"><img src="https://support.discord.com/hc/article_attachments/17629481305751" alt="data.png"></p>
+<h2 id="h_01HAVEVJ3KCY5FF8GW49FZZQD5">Popüler Mesajlar</h2>
+<p>Bazen, bir sunucudaki popüler bir mesaj hakkında bir bildirim alabilirsin. Bir mesajın kaç tepki/cevap aldığı gibi faktörleri kullanarak neyin popüler olduğunu belirleriz ve ayrıca en aktif olduğun sunucuları/kanalları da dikkate alırız.</p>
+<p><img style="height: 215px; width: 624px;" src="https://lh4.googleusercontent.com/WXsPwGvo5h_uL34hZUYaeeU-aFYJMj3U6egCYGKAdPhP8o0RNWAGEpd57rFfNWRLi9JP8n5ma-YY7lRzn_rgo-VRBVlKSgv-Cckj8la1qTVOp6_f6bUWAblEiQIX4acGSQPksa1Qcbx2zeppCznIZQ"></p>
+<h1 id="h_01HAVEVJ3K6677V2YM9FTZC2VZ">Önemli Noktaları Bastır</h1>
+<p><strong>Önemli Noktaları Bastır</strong> ayarı, her sunucuda açıp kapatabileceğin ek bir geçiştir. Sunucu bildirim ayarlarında bulunur. Bu ayar, sunucu bildirim ayarlarından <strong>(tüm mesajlar, yalnızca @bahsetmeler veya hiçbir şey)</strong> bağımsız olarak çalışır. Örneğin, sunucu bildirim ayarların <strong>Hiçbir şey</strong> olarak ayarlanmış olabilir ve geçiş açıksa Öne Çıkanlar bildirimlerini almaya devam edebilirsin. </p>
+<p class="wysiwyg-text-align-center"><img style="height: 770px; width: 600px;" src="https://lh5.googleusercontent.com/qUSC_rh0Hj-pdopHC5AMmwSrJgAzhBD0g68xFNS58_4r0PdWCzIfcEFHbAltxaOqt4mqyQ9xMRWR7JuqZg1Nb3u7H-ckwFDvJcgSUQ9q5oZBTxtIyW3prH0RzZyn85DoUuYI86KFq10_-YuzXyuk2A"><img style="height: 544px; width: 443px;" src="https://lh4.googleusercontent.com/pkzNnqelXclchlWU5r88IY65RuTWiNsJtz08Pd73QQE948ZmcyDDeui4hwPD8v3UT37IuEqJWTt2RIcHoDQ1vHi5dTLXlZ2bn250uwtbqRMuLWVB5BlErGROe4BK4cO-_yilL9zgIwWmu7-FsIuk6A"></p>
+<p>Bir sunucuyu sessize almak Öne Çıkanlar geçişini kapatır ve o sunucudan herhangi bir bildirim almazsın.</p>
+<h2 id="h_01HAVEVJ3KSC2E9FJHG9ET0D64">Öne Çıkanlar'a neler dahildir?</h2>
+<p>Öne Çıkanlar, önem verdiğin sunucularda neler olup bittiğini bilmenizi sağlar. Bu, popüler gönderiler, etkinlikler, arkadaş etkinliği, yeni forumlar ve daha fazlası gibi şeyleri içerir.</p>
+<h1 id="h_01HAVEVJ3KK14APSRK5QWDPBXE">Sıkça Sorulan Sorular</h1>
+<p><strong>S: Tüm sunucularım için Highlights'ı nasıl açabilir veya kapatabilirim?</strong></p>
+<p>C: Sunucu bildirimleri ayar menüsüne gidip Öne Çıkanları Bastır seçeneğini etkinleştirerek <strong>Öne Çıkanları</strong> açabilir veya kapatabilirsin. Şu anda bu ayarlar tek seferde yalnızca bir sunucu için değiştirilebilmektedir.</p>
+<p><strong>S: Öne Çıkanlar benim için kişiselleştirilmiş mi?</strong></p>
+<p>C: Evet, Discord'un bir şeyin Öne Çıkan olarak kabul edilip edilmeyeceğini belirlemek için kullandığı bilgiler, sunucu veya kanalla ilgili ayrıntıların yanı sıra Discord'daki bazı etkinliklere bağlı olabilir. Discord, bir sunucuyu ne sıklıkta ziyaret ettiğin, bir gönderiye verilen tepki sayısı veya bir sunucudaki bir etkinliğe katılanların sayısı gibi bilgilere dayanır. </p>
+<p>İstediğin zaman, <a href="https://support.discord.com/hc/en-us/articles/360004109911-Data-Privacy-Controls"><span class="wysiwyg-underline" style="color: #1155cc;">Gizlilik ve Güvenlik ayarlarındaki</span></a> <strong>kişiselleştirme geçişini kullanarak</strong> Discord için kişisel verileri açmayı veya kapatmayı seçebilirsin.</p>
+<p class="wysiwyg-text-align-center"><img style="height: 91px; width: 624px;" src="https://lh6.googleusercontent.com/5IBbUYnVgj8_XwKTtAp_iLqDAu-dWNGN7qbO4Haf5eOzgEZZdAAYzFTfdnAGNghSzaelcdX_DKy1NzybT-MdkYeUJTrGE59HMievsKMl0nphDKxUh5hkVlj5hvWDFLQfGRToZEQW6dbL5gZNeoOZgg"></p>
