@@ -49540,6 +49540,30 @@ html .progress-2Otdc- {
     color: var(--interactive-active)
 }
 
+.accessory-A8wSuS {
+    cursor: pointer;
+    color: var(--interactive-normal);
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    gap: var(--spacing-4)
+}
+
+.accessory-A8wSuS:hover {
+    color: var(--interactive-hover)
+}
+
+.accessory-A8wSuS:hover .accessoryText-7HAF8F {
+    color: var(--interactive-hover)
+}
+
+.accessoryText-7HAF8F {
+    color: var(--interactive-normal)
+}
+
 .lineClamp2Plus-1eksIb {
     white-space: pre-wrap
 }
@@ -139839,6 +139863,48 @@ html .invoiceCancelRow-3s2UuC {
     background-color: var(--background-modifier-accent)
 }
 
+.headerImg-3pc9WG {
+    width: 112px;
+    height: 112px;
+    margin-bottom: var(--spacing-16)
+}
+
+.headerText-lupoPT {
+    text-transform: uppercase
+}
+
+.modalBody-1FMXCs {
+    text-align: center;
+    padding: var(--spacing-8) var(--spacing-16) var(--spacing-16)
+}
+
+.modalInteriorHeader-lLiM_t {
+    margin-bottom: var(--spacing-8)
+}
+
+.modalHeader-TUfObH {
+    overflow: visible;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    margin-top: -72px
+}
+
+.buttonContainer-UOdff1 {
+    padding: var(--spacing-24) 0 0
+}
+
+.buttonContainer-UOdff1>button {
+    margin-bottom: var(--spacing-8)
+}
+
 .textArea-3GydfY {
     background-color: var(--input-background);
     padding-bottom: 36px
@@ -170332,4 +170398,4 @@ html .invoiceCancelRow-dVOR64 {
     margin-bottom: 16px
 }
 
-/*# sourceMappingURL=40532.d6087cdad792aab01d5d.css.map*/
+/*# sourceMappingURL=40532.66d1aea91f867baf58ba.css.map*/
