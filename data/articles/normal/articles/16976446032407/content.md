@@ -10,9 +10,7 @@
 <p><strong>Who is Eligible: </strong></p>
 <p><strong>To claim through Discord,</strong> you must be a current Nitro subscriber or Nitro trial user. </p>
 <p>To redeem in Synced, you must have an active account in Synced. </p>
-<ul>
-    <li>This promotion is available in all regions except for the following: Mainland China, North Korea, Russia, India, Cuba, Crimea, Iran, Syria, Donetsk People’s Republic, Luhansk, and Belgium. Synced players within eligible regions will have to complete the tutorial and create a character to view the exclusive items within their in-game backpack. </li>
-</ul>
+<p><span id="docs-internal-guid-97676969-7fff-4662-1ee9-cec13933dcd1">This promotion is only available in certain regions. If you receive an "Unknown Gift Code" error during the claim/redemption process, you are not eligible to redeem this promotion. You can learn more at this</span><a href="https://support.discord.com/hc/en-us/articles/4708041338391"><span class="wysiwyg-underline" style="color: #1155cc;" data-darkreader-inline-color=""> Help Center article.</span></a></p>
 <p><strong>Requirements:</strong></p>
 <p>Claim through Discord Gift Inventory from <strong>September 7th, 2023 (5pm PST)</strong> to <strong>October 6th, 2023 (5pm PST)</strong>, and redeem in your Synced account by <strong>October 6th, 2023 (5pm PST)</strong>.</p>
 <h2 id="h_01H9TQ7CS5S22JTFKP9S2T9FBR"><strong>What this article covers: </strong></h2>
@@ -122,7 +120,7 @@
 <p><strong>Q: Who can redeem this gift pack from Synced?</strong></p>
 <p>A: All Synced players within eligible regions will be able to redeem this in-game gift pack. However, players will need to complete the tutorial and character creation to view the items within their in-game backpack!</p>
 <p><strong>Q: Can I redeem the gift pack to my Synced account in my region? </strong></p>
-<p>A: This promotion is only available in certain regions. If you receive an "Unknown Gift Code" error during the claim/redemption process, you are not eligible to redeem this promotion.  Ineligible regions are: Mainland China, North Korea, Russia, India, Cuba, Crimea, Iran, Syria, Donetsk People’s Republic, Luhansk, and Belgium.</p>
+<p>A: This promotion is only available in certain regions. If you receive an "Unknown Gift Code" error during the claim/redemption process, you are not eligible to redeem this promotion.  </p>
 <h2 id="h_01H9TQDZM6H0MZTB3729CQ8VCQ"><strong>Claiming and Redemption Process</strong></h2>
 <p><strong>Q: On which Discord platforms can I claim this promotion?</strong></p>
 <p>A: You'll be able to redeem the promo on the mobile, browser and desktop version of the Discord app. </p>
