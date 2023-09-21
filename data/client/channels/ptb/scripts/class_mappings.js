@@ -6284,7 +6284,6 @@
             e.exports = {
                 page: "page-LilLhg",
                 close: "close-1CF18x",
-                closeIcon: "closeIcon-ErXdZG",
                 cardsContainer: "cardsContainer-2kdrm8",
                 shop: "shop-3sIaH8",
                 itemTypeTitle: "itemTypeTitle-fjLyoh",
@@ -26826,4 +26825,4 @@
         }
     }
 ]);
-//# sourceMappingURL=17ffce0664823613ab35.js.map
+//# sourceMappingURL=561590b1bf07c69bd4ee.js.map
