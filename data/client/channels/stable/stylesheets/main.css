@@ -49540,6 +49540,30 @@ html .progress-2Otdc- {
     color: var(--interactive-active)
 }
 
+.accessory-A8wSuS {
+    cursor: pointer;
+    color: var(--interactive-normal);
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    gap: var(--spacing-4)
+}
+
+.accessory-A8wSuS:hover {
+    color: var(--interactive-hover)
+}
+
+.accessory-A8wSuS:hover .accessoryText-7HAF8F {
+    color: var(--interactive-hover)
+}
+
+.accessoryText-7HAF8F {
+    color: var(--interactive-normal)
+}
+
 .lineClamp2Plus-1eksIb {
     white-space: pre-wrap
 }
@@ -139839,6 +139863,48 @@ html .invoiceCancelRow-3s2UuC {
     background-color: var(--background-modifier-accent)
 }
 
+.headerImg-3pc9WG {
+    width: 112px;
+    height: 112px;
+    margin-bottom: var(--spacing-16)
+}
+
+.headerText-lupoPT {
+    text-transform: uppercase
+}
+
+.modalBody-1FMXCs {
+    text-align: center;
+    padding: var(--spacing-8) var(--spacing-16) var(--spacing-16)
+}
+
+.modalInteriorHeader-lLiM_t {
+    margin-bottom: var(--spacing-8)
+}
+
+.modalHeader-TUfObH {
+    overflow: visible;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    margin-top: -72px
+}
+
+.buttonContainer-UOdff1 {
+    padding: var(--spacing-24) 0 0
+}
+
+.buttonContainer-UOdff1>button {
+    margin-bottom: var(--spacing-8)
+}
+
 .textArea-3GydfY {
     background-color: var(--input-background);
     padding-bottom: 36px
@@ -163143,15 +163209,48 @@ html .invoiceCancelRow-3s2UuC {
     -webkit-box-pack: center;
     -ms-flex-pack: center;
     justify-content: center;
-    width: 200px;
+    width: 100%;
     height: 390px;
     z-index: 0
 }
 
+.previewContainerAnimation-DIEHcA {
+    -webkit-animation: scaleIn-3PX5jn .5s;
+    animation: scaleIn-3PX5jn .5s
+}
+
 .preview-RKQD82 {
     position: relative;
+    -o-object-fit: contain;
+    object-fit: contain;
+    -o-object-position: top;
+    object-position: top;
     width: 100%;
     height: 100%
+}
+
+@-webkit-keyframes scaleIn-3PX5jn {
+    0% {
+        -webkit-transform: scale(.7);
+        transform: scale(.7)
+    }
+
+    to {
+        -webkit-transform: scale(1);
+        transform: scale(1)
+    }
+}
+
+@keyframes scaleIn-3PX5jn {
+    0% {
+        -webkit-transform: scale(.7);
+        transform: scale(.7)
+    }
+
+    to {
+        -webkit-transform: scale(1);
+        transform: scale(1)
+    }
 }
 
 .priceWrapper-3XSWjw {
@@ -163197,9 +163296,6 @@ html .invoiceCancelRow-3s2UuC {
     -webkit-box-direction: normal;
     -ms-flex-direction: column;
     flex-direction: column;
-    -webkit-box-pack: justify;
-    -ms-flex-pack: justify;
-    justify-content: space-between;
     cursor: pointer;
     overflow: hidden
 }
@@ -163231,7 +163327,17 @@ html .invoiceCancelRow-3s2UuC {
 
 .cardText-2OugTh {
     margin-top: 32px;
-    z-index: 1
+    z-index: 1;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-flex: 1;
+    -ms-flex: 1;
+    flex: 1
 }
 
 .description-1aSbLq {
@@ -163294,10 +163400,14 @@ html .invoiceCancelRow-3s2UuC {
     flex: 1
 }
 
+.detailsWrapper-_FRe44,
 .hoverUpsellContainer-2so0Ya {
     display: -webkit-box;
     display: -ms-flexbox;
-    display: flex;
+    display: flex
+}
+
+.hoverUpsellContainer-2so0Ya {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
     -ms-flex-direction: column;
@@ -163336,7 +163446,10 @@ html .invoiceCancelRow-3s2UuC {
     -webkit-box-pack: justify;
     -ms-flex-pack: justify;
     justify-content: space-between;
-    height: 100%
+    height: 100%;
+    -webkit-box-flex: 1;
+    -ms-flex: 1;
+    flex: 1
 }
 
 .checkmarkWrapper-30c52R {
@@ -163639,47 +163752,80 @@ html .invoiceCancelRow-3s2UuC {
     overflow: hidden;
     -webkit-animation: placeholderPulse-ooES5N 1.3s ease-in-out infinite;
     animation: placeholderPulse-ooES5N 1.3s ease-in-out infinite;
-    background-color: var(--background-secondary);
+    background-color: var(--background-secondary-alt);
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
     -ms-flex-direction: column;
-    flex-direction: column
+    flex-direction: column;
+    height: 300px;
+    padding: 16px
 }
 
-.cardBody-1ntQaF,
-.skeleton-1U6yWM {
+.bannerBody-20oTYV {
+    width: inherit
+}
+
+.bannerBody-20oTYV,
+.cardBody-1ntQaF {
     display: -webkit-box;
     display: -ms-flexbox;
-    display: flex
+    display: flex;
+    background-color: var(--background-secondary);
+    height: inherit;
+    border-radius: var(--radius-lg)
 }
 
 .cardBody-1ntQaF {
-    height: 170px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
     -webkit-box-align: center;
     -ms-flex-align: center;
-    align-items: center;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    justify-content: center
+    align-items: center
 }
 
 .cardAvatar-DsY13f {
+    margin-top: 32px;
     height: 96px;
     width: 96px;
-    border-radius: 50%
+    border-radius: 50%;
+    background-color: var(--background-primary)
 }
 
-.cardAvatar-DsY13f,
-.cardSummary-218DWR {
-    background-color: var(--background-secondary-alt)
+.cardTitle-3D3z1l {
+    margin-top: 16px;
+    width: 35%
+}
+
+.cardDescription-1eoWy6,
+.cardTitle-3D3z1l {
+    background-color: var(--background-primary);
+    height: 16px;
+    border-radius: var(--radius-sm)
+}
+
+.cardDescription-1eoWy6 {
+    margin-top: 8px;
+    width: 25%
 }
 
 .cardSummary-218DWR {
-    height: calc(100% - 170px)
+    height: 32px;
+    width: 90%;
+    border-radius: var(--radius-sm);
+    background-color: var(--background-primary);
+    margin-top: auto;
+    margin-bottom: 16px
 }
 
 .bannerCard-2LJzbg {
-    padding: 2px;
+    padding: 32px;
+    max-width: 100%;
+    max-height: 100%;
     position: relative;
     margin-top: 24px;
     display: -webkit-box;
@@ -163696,19 +163842,20 @@ html .invoiceCancelRow-3s2UuC {
 
 .bannerBackground-HeU8g7,
 .bannerCard-2LJzbg {
-    height: 300px;
-    border-radius: var(--radius-xxl);
-    width: 1060px
+    border-radius: var(--radius-xxl)
 }
 
 .bannerBackground-HeU8g7 {
     position: absolute;
+    height: 100%;
+    width: 100%;
     z-index: 0
 }
 
 .bannerFont-J6Rq9R {
-    width: 500px;
-    height: 56px
+    width: auto;
+    height: auto;
+    max-width: 100%
 }
 
 .bannerDescription-1muIwg {
@@ -163768,19 +163915,19 @@ html .invoiceCancelRow-3s2UuC {
 }
 
 .decoSection-gerPq1 {
-    gap: 24px
+    gap: 20px
 }
 
 .pinkInterface-3WSNgF {
-    margin-top: 8px
+    margin-top: 4px
 }
 
 .blueHeadset-3YaP41 {
-    margin-top: 150px
+    margin-top: 120px
 }
 
 .greenSmoke-18S32C {
-    margin-top: 24px
+    margin-top: 20px
 }
 
 .premiumUnlockHook-3W9Gfe {
@@ -169213,7 +169360,7 @@ html .invoiceCancelRow-3s2UuC {
 }
 
 .list-1UuDOi {
-    width: 310px;
+    width: 298px;
     padding-bottom: 4px;
     margin-top: 2px;
     left: -12px
@@ -169410,7 +169557,8 @@ html .invoiceCancelRow-3s2UuC {
 
 .bannerContainer-2aPEIR {
     position: relative;
-    height: 228px
+    height: 228px;
+    overflow: hidden
 }
 
 .collectedInfoContainer-Rds0XX {
@@ -169444,6 +169592,14 @@ html .invoiceCancelRow-3s2UuC {
     position: absolute;
     width: 100%;
     height: 100%
+}
+
+.profileEffectShopPreview-223heR {
+    position: relative;
+    height: 100%;
+    width: 160px;
+    top: 20px;
+    margin: 0 auto
 }
 
 .headerContainer-20VxQq {
@@ -170318,4 +170474,4 @@ html .invoiceCancelRow-dVOR64 {
     margin-bottom: 16px
 }
 
-/*# sourceMappingURL=40532.91f1e865e7a42e1eb3a2.css.map*/
+/*# sourceMappingURL=40532.3e9cb5b84a686728173c.css.map*/

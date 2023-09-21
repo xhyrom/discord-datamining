@@ -1,4 +1,4 @@
-/*! For license information please see 30556286ab2b493af04b.js.LICENSE.txt */
+/*! For license information please see 1d3d3a31806b1930d29e.js.LICENSE.txt */
 (this.webpackChunkdiscord_app = this.webpackChunkdiscord_app || []).push([
     [22897], {
         151131: (t, e, r) => {
@@ -37035,7 +37035,7 @@
                     dsn: "https://fa97a90475514c03a42f80cd36d147c4@sentry.io/140984",
                     autoSessionTracking: !1,
                     environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                    release: "discord_web-9f5d013df114312ebd611ae7d928daca6948a6d4",
+                    release: "discord_web-c282a5553736de888b14ff30fc39a4d68cf1fdb2",
                     beforeSend: function(t) {
                         return function(t) {
                             return null != t.exception && null != t.exception.values && t.exception.values.every((function(t) {
@@ -37062,8 +37062,8 @@
                     denyUrls: [/recaptcha/, /mobilediscord\.com/, /betterdiscord:\/\//]
                 });
                 var t;
-                X.YA("buildNumber", null !== (t = "230084") ? t : "");
-                X.YA("builtAt", String("1695320178842"));
+                X.YA("buildNumber", null !== (t = "230264") ? t : "");
+                X.YA("builtAt", String("1695338565898"));
                 var e = window.GLOBAL_ENV.SENTRY_TAGS;
                 if (null != e && "object" == typeof e)
                     for (var r in e) X.YA(r, e[r]);
@@ -40884,7 +40884,8 @@
                 t[t.GUILD_INCIDENT_REPORT_FALSE_ALARM = 39] = "GUILD_INCIDENT_REPORT_FALSE_ALARM";
                 t[t.GUILD_DEADCHAT_REVIVE_PROMPT = 40] = "GUILD_DEADCHAT_REVIVE_PROMPT";
                 t[t.CUSTOM_GIFT = 41] = "CUSTOM_GIFT";
-                t[t.GUILD_GAMING_STATS_PROMPT = 42] = "GUILD_GAMING_STATS_PROMPT"
+                t[t.GUILD_GAMING_STATS_PROMPT = 42] = "GUILD_GAMING_STATS_PROMPT";
+                t[t.POLL = 43] = "POLL"
             }(n || (n = {}));
             var a = {
                 DELETABLE: new Set([0, 6, 7, 8, 9, 10, 11, 12, 18, 19, 20, 22, 23, 24, 25, 26, 27, 28, 29, 31, 32, 33, 34, 35, 40, 41, 42]),
@@ -48441,4 +48442,4 @@
         e(128594), e(535666), e(784633), e(678991)
     }
 ]);
-//# sourceMappingURL=30556286ab2b493af04b.js.map
+//# sourceMappingURL=1d3d3a31806b1930d29e.js.map
