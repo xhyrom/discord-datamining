@@ -133479,7 +133479,8 @@ input::-webkit-outer-spin-button {
     -webkit-box-pack: justify;
     -ms-flex-pack: justify;
     justify-content: space-between;
-    padding: 0
+    padding: 0;
+    overflow: hidden
 }
 
 .modalHeadings-3LBRJZ {
@@ -170303,4 +170304,4 @@ html .invoiceCancelRow-dVOR64 {
     margin-bottom: 16px
 }
 
-/*# sourceMappingURL=40532.575ce296f22c0838c0f5.css.map*/
+/*# sourceMappingURL=40532.18f9b5683fdaf47aff7a.css.map*/
