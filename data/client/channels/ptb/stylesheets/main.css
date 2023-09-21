@@ -163792,7 +163792,9 @@ html .invoiceCancelRow-3s2UuC {
 }
 
 .bannerCard-2LJzbg {
-    padding: 2px;
+    padding: 32px;
+    max-width: 100%;
+    max-height: 100%;
     position: relative;
     margin-top: 24px;
     display: -webkit-box;
@@ -163809,19 +163811,20 @@ html .invoiceCancelRow-3s2UuC {
 
 .bannerBackground-HeU8g7,
 .bannerCard-2LJzbg {
-    height: 300px;
-    border-radius: var(--radius-xxl);
-    width: 1060px
+    border-radius: var(--radius-xxl)
 }
 
 .bannerBackground-HeU8g7 {
     position: absolute;
+    height: 100%;
+    width: 100%;
     z-index: 0
 }
 
 .bannerFont-J6Rq9R {
-    width: 500px;
-    height: 56px
+    width: auto;
+    height: auto;
+    max-width: 100%
 }
 
 .bannerDescription-1muIwg {
@@ -163881,19 +163884,19 @@ html .invoiceCancelRow-3s2UuC {
 }
 
 .decoSection-gerPq1 {
-    gap: 24px
+    gap: 20px
 }
 
 .pinkInterface-3WSNgF {
-    margin-top: 8px
+    margin-top: 4px
 }
 
 .blueHeadset-3YaP41 {
-    margin-top: 150px
+    margin-top: 120px
 }
 
 .greenSmoke-18S32C {
-    margin-top: 24px
+    margin-top: 20px
 }
 
 .premiumUnlockHook-3W9Gfe {
@@ -170440,4 +170443,4 @@ html .invoiceCancelRow-dVOR64 {
     margin-bottom: 16px
 }
 
-/*# sourceMappingURL=40532.16e5fabe54742a7f11ad.css.map*/
+/*# sourceMappingURL=40532.6132d1af27cd724dc87d.css.map*/
