@@ -3823,6 +3823,14 @@
       "POST"
     ]
   },
+  "PAYMENT_PAYOUT_GROUPS": {
+    "url": "/applications/:param/payment-payout-groups",
+    "allowed_methods": [
+      "GET",
+      "HEAD",
+      "OPTIONS"
+    ]
+  },
   "GUILD_PRODUCTS": {
     "url": "/guilds/:param/products",
     "allowed_methods": [
