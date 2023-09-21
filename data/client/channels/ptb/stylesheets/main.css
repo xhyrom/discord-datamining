@@ -163209,15 +163209,48 @@ html .invoiceCancelRow-3s2UuC {
     -webkit-box-pack: center;
     -ms-flex-pack: center;
     justify-content: center;
-    width: 200px;
+    width: 100%;
     height: 390px;
     z-index: 0
 }
 
+.previewContainerAnimation-DIEHcA {
+    -webkit-animation: scaleIn-3PX5jn .5s;
+    animation: scaleIn-3PX5jn .5s
+}
+
 .preview-RKQD82 {
     position: relative;
+    -o-object-fit: contain;
+    object-fit: contain;
+    -o-object-position: top;
+    object-position: top;
     width: 100%;
     height: 100%
+}
+
+@-webkit-keyframes scaleIn-3PX5jn {
+    0% {
+        -webkit-transform: scale(.7);
+        transform: scale(.7)
+    }
+
+    to {
+        -webkit-transform: scale(1);
+        transform: scale(1)
+    }
+}
+
+@keyframes scaleIn-3PX5jn {
+    0% {
+        -webkit-transform: scale(.7);
+        transform: scale(.7)
+    }
+
+    to {
+        -webkit-transform: scale(1);
+        transform: scale(1)
+    }
 }
 
 .priceWrapper-3XSWjw {
@@ -169293,7 +169326,7 @@ html .invoiceCancelRow-3s2UuC {
 }
 
 .list-1UuDOi {
-    width: 310px;
+    width: 298px;
     padding-bottom: 4px;
     margin-top: 2px;
     left: -12px
@@ -169490,7 +169523,8 @@ html .invoiceCancelRow-3s2UuC {
 
 .bannerContainer-2aPEIR {
     position: relative;
-    height: 228px
+    height: 228px;
+    overflow: hidden
 }
 
 .collectedInfoContainer-Rds0XX {
@@ -169524,6 +169558,14 @@ html .invoiceCancelRow-3s2UuC {
     position: absolute;
     width: 100%;
     height: 100%
+}
+
+.profileEffectShopPreview-223heR {
+    position: relative;
+    height: 100%;
+    width: 160px;
+    top: 20px;
+    margin: 0 auto
 }
 
 .headerContainer-20VxQq {
@@ -170398,4 +170440,4 @@ html .invoiceCancelRow-dVOR64 {
     margin-bottom: 16px
 }
 
-/*# sourceMappingURL=40532.66d1aea91f867baf58ba.css.map*/
+/*# sourceMappingURL=40532.16e5fabe54742a7f11ad.css.map*/

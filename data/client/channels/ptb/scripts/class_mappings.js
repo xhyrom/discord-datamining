@@ -6269,7 +6269,8 @@
                 bannerContainer: "bannerContainer-2aPEIR",
                 collectedInfoContainer: "collectedInfoContainer-Rds0XX",
                 collectedTextContainer: "collectedTextContainer-2YS8ho",
-                confettiCanvas: "confettiCanvas-1iBV68"
+                confettiCanvas: "confettiCanvas-1iBV68",
+                profileEffectShopPreview: "profileEffectShopPreview-223heR"
             }
         },
         543579: e => {
@@ -20152,6 +20153,8 @@
         885616: e => {
             e.exports = {
                 previewContainer: "previewContainer-3HzSb7",
+                previewContainerAnimation: "previewContainerAnimation-DIEHcA",
+                scaleIn: "scaleIn-3PX5jn",
                 preview: "preview-RKQD82"
             }
         },
@@ -26843,4 +26846,4 @@
         }
     }
 ]);
-//# sourceMappingURL=846afb0a21b9dc6ef86f.js.map
+//# sourceMappingURL=2c8ff5356d1f2acf537b.js.map
