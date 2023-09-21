@@ -1,13 +1,14 @@
-<h3>
+<h3 id="h_01HAWQ8WVV5J3QJZB16HSA858S">
     <strong>Note: <br></strong>- Stage channels are only available within Community servers. For more details on enabling community, please check <a href="https://support.discord.com/hc/en-us/articles/360047132851" target="_blank" rel="noopener noreferrer">this article here</a>!
 </h3>
-<h1><strong>What does this FAQ cover? </strong></h1>
+<h1 id="h_01HAWQ8WVVTTGMSAQXBYR18WDY"><strong>What does this FAQ cover? </strong></h1>
 <ul>
     <li>
         <a href="#h_01F22AKG1WM0JYC69N1JW22JBZ" target="_self">What are Stage channels?</a>
         <ul>
             <li><a href="#h_01GS8FEFA0X79N7SM76VGPD25D" target="_self" rel="undefined">How do they work?</a></li>
             <li><a href="#h_01F22AKYY4AFEK1JDWG2THSVY7" target="_self">Who can speak in a Stage channel?</a></li>
+            <li><a href="https://support.discord.com/hc/en-us/articles/1500005513722#h_01HAWQ8WVWAQZJN2PVRSACY5RX">How do you start a Stage?</a></li>
         </ul>
     </li>
     <li>
@@ -15,6 +16,7 @@
         <ul>
             <li><a href="#h_01F22AMCVKHQGQB8N3EF30B20C" target="_self">How do I create a Stage channel?</a></li>
             <li><a href="#h_01GS8E8E90VZRG935WC9V8YRTD" target="_self">How do I Enable Video or Screen Share? </a></li>
+            <li><a href="https://support.discord.com/hc/en-us/articles/1500005513722#h_01HAWQ8WVWV89JR3T5HSP6PPKF">Stage Channel Capabilities and Limits</a></li>
             <li><a href="#h_01F22D3YHY5BBCWABT7PARJY7B" target="_self">How do I add/remove Stage moderators? </a></li>
             <li><a href="#h_01F22AMKZ3EY6EPFFBSA1SV0A5" target="_self">How do I modify the “topic”?</a></li>
         </ul>
@@ -45,7 +47,7 @@
     <li><strong><a href="#h_01F22APKTBKBC6FAMVS8Q2ST89" target="_self">FAQs</a></strong></li>
 </ul>
 <h1 id="h_01F22AKG1WM0JYC69N1JW22JBZ"><strong>What are Stage channels?</strong></h1>
-<p class="wysiwyg-text-align-center"><span style="font-weight: 400;"><strong><img src="https://support.discord.com/hc/article_attachments/1500007546062/1_NtFr9IAUxLPuiKKlRTK1zQ.png" alt="1_NtFr9IAUxLPuiKKlRTK1zQ.png" width="694" height="278"></strong></span></p>
+<p class="wysiwyg-text-align-center"><span style="font-weight: 400;"><strong><img src="https://support.discord.com/hc/article_attachments/1500007546062" alt="1_NtFr9IAUxLPuiKKlRTK1zQ.png" width="694" height="278"></strong></span></p>
 <p><strong>Stage channels</strong><span style="font-weight: 400;"> are a special type of voice channel you can create in your Community server. They are for conversations and events where some people can talk and others can listen as the audience. </span></p>
 <p><span style="font-weight: 400;">If you’re running an event where you want only a select number of participants to be speaking or on video at a time with a majority of the audience in passive, listening mode - then Stage channels offer a great way to support and run that event!</span></p>
 <p><span style="font-weight: 400;">In testing, we’ve seen people use Stage channels to run AMAs, Fireside Chats, Townhalls, Reading Groups, and more!</span></p>
@@ -74,7 +76,7 @@
     </li>
 </ul>
 <p><span style="font-weight: 400;">Stage Moderators can become speakers on their own, but non-moderators and all other audience members must be invited up to speak or if they choose to, they can raise their hand and request to speak, which has to be approved by a Stage Moderator.</span></p>
-<h2><strong>How Do You Start A Stage?</strong></h2>
+<h2 id="h_01HAWQ8WVWAQZJN2PVRSACY5RX"><strong>How Do You Start A Stage?</strong></h2>
 <p><span style="font-weight: 400;">To start a conversation on a Stage channel, you should first have the crucial permissions to manage the Stage channel as a Stage Moderator or Server Admin. These permissions include:</span></p>
 <ul>
     <li style="font-weight: 400;" aria-level="1"><span style="font-weight: 400;">Manage Channel</span></li>
@@ -96,14 +98,14 @@
     </li>
 </ul>
 <p class="wysiwyg-text-align-center"><span style="font-weight: 400;"><img src="https://support.discord.com/hc/article_attachments/12414343351703" alt="EN-waiting-stage-to-start-options.png"></span></p>
-<h3>
+<h3 id="h_01HAWQ8WVWANHAY6X5F6SYY8E6">
     <span style="font-weight: 400;">Music will play for each server member waiting for the Stage to formally start and while Stage Moderators/Admins set up the Stage for the conversation. The music is available on a user level and not managed by server admins. To mute the music, press on the </span><strong>music note button</strong><span style="font-weight: 400;">! </span>
 </h3>
 <p><span style="font-weight: 400;">Stage Moderators can become speakers on their own, but non-moderators and all other audience members must be invited up to speak or if they choose to, they can raise their hand and request to speak, which has to be approved by a Stage Moderator.</span></p>
-<h1 id="h_01F22MRH0EKN1DQ7B820N2HV03"><strong>For Community Server Owners</strong></h1>
+<h1 id="h_01F22MRH0EKN1DQ7B820N2HV03"><strong>For Community Server Owners and Administrators<br></strong></h1>
 <p>If you're ready to start running your event in your community server, follow these steps below on how to create a Stage channel and set up Stage moderators to get your Stage up and running! </p>
 <h2 id="h_01F22AMCVKHQGQB8N3EF30B20C"><strong>How do I create a Stage channel?</strong></h2>
-<h3>
+<h3 id="h_01HAWQ8WVWT8BN60GZXNK7556X">
     <span style="font-weight: 400;"><strong>Note:</strong> Stage channels are only available in Community servers. To learn how to convert your server to a Community, check out our article on </span><a href="https://support.discord.com/hc/en-us/articles/360047132851" target="_blank" rel="noopener noreferrer">Enabling Your Community Server</a><span style="font-weight: 400;">.</span>
 </h3>
 <p>In order to create a Stage Channel, you will need to have the “<strong>Manage Channels</strong>” and “<strong>Manage Roles</strong>” enabled for you in the server.</p>
@@ -131,10 +133,10 @@
 <p class="wysiwyg-text-align-center"><span style="font-weight: 400;"><img src="https://support.discord.com/hc/article_attachments/12414343100951" alt="EN-Stage-Channel-go-live-button.png"></span></p>
 <p><span style="font-weight: 400;">Speakers in Stage channels must have a server role with </span><strong>Video </strong><span style="font-weight: 400;">permission or be given the </span><strong>Video </strong><span style="font-weight: 400;">permission exclusively in the Stage channel to enable their video or Go Live.</span></p>
 <p class="wysiwyg-text-align-center"><span style="font-weight: 400;"><img src="https://support.discord.com/hc/article_attachments/12414343225751" alt="EN-video-permission-role-stage-channelrole.png"></span></p>
-<h3>
+<h3 id="h_01HAWQ8WVW3KAB6NSJS4DKKA5Q">
     <span style="font-weight: 400;">As always, when you, stage moderators, admins, and speakers are using </span><strong>Video </strong><span style="font-weight: 400;">or screen sharing content with </span><strong>Go Live</strong><span style="font-weight: 400;">, make sure to follow Discord’s </span><a href="https://discord.com/guidelines" target="_blank" rel="noopener noreferrer">Community Guidelines</a><span style="font-weight: 400;">.</span>
 </h3>
-<h2><strong>Stage Channel Capabilities and Limits</strong></h2>
+<h2 id="h_01HAWQ8WVWV89JR3T5HSP6PPKF"><strong>Stage Channel Capabilities and Limits</strong></h2>
 <p><span style="font-weight: 400;">There are some differences in capabilities and audience size limits depending on whether your Stage channel is </span><strong>Audio Only </strong><span style="font-weight: 400;">or is utilizing </span><strong>Video/Screen Share</strong><span style="font-weight: 400;">.</span></p>
 <p><span class="wysiwyg-font-size-large"><strong>Audio Only Stage Channels</strong></span></p>
 <ul>
@@ -170,8 +172,9 @@
         </ul>
     </li>
 </ul>
-<h3 id="docs-internal-guid-866baad7-7fff-0b59-53cc-4325dca33b60"><span style="color: #434343;" data-darkreader-inline-color="">Once a server has reached the minimum 14 boosts for Tier 3, each additional boost afterwards will give an additional 30 seats (up to a maximum of 10,000 seats) to Stages using video or screen share.</span></h3>
-<h3><span style="font-weight: 400;">Want to learn more about Server Boosting? You can check out this article <a href="https://support.discord.com/hc/en-us/articles/360028038352" target="_blank" rel="noopener noreferrer">here</a>.</span></h3>
+<h3 id="docs-internal-guid-866baad7-7fff-0b59-53cc-4325dca33b60">
+    <span style="color: #434343;" data-darkreader-inline-color="">Once a server has reached the minimum 14 boosts for Tier 3, each additional boost afterwards will give an additional 30 seats (up to a maximum of 10,000 seats) to Stages using video or screen share.<br></span><span style="font-weight: 400;">Want to learn more about Server Boosting? You can check out this article <a href="https://support.discord.com/hc/en-us/articles/360028038352" target="_blank" rel="noopener noreferrer">here</a>.</span>
+</h3>
 <p><strong>What Happens When the Stage Channel Hits its Video/Go Live audience limits?</strong></p>
 <ul>
     <li style="font-weight: 400;" aria-level="1"><span style="font-weight: 400;">If video/Go Live has already started in the Stage channel and the audience viewing size has reached its maximum limit, no more users can join.</span></li>
@@ -179,9 +182,9 @@
         <span style="font-weight: 400;">If video/Go Live has not started and the stage has more than 50 audience members (and is not Boosted to allow for a greater audience viewing size) then the Speakers and Stage moderators </span><strong>will not be able to start their video or screen share</strong><span style="font-weight: 400;">.</span>
     </li>
 </ul>
-<h3><span style="font-weight: 400;">Note: For this reason we suggest you start your stage with at least one video on if you plan on doing video/screen share and anticipate you may hit your audience viewing size limit</span></h3>
+<h3 id="h_01HAWQ8WVW1FR73T6913Y4180H"><span style="font-weight: 400;">Note: For this reason we suggest you start your stage with at least one video on if you plan on doing video/screen share and anticipate you may hit your audience viewing size limit</span></h3>
 <h2 id="h_01F22D3YHY5BBCWABT7PARJY7B"><strong>How do I add/remove Stage moderators? </strong></h2>
-<h3><span style="font-weight: 400;"><strong>Note:</strong> In order to modify the Stage moderators, you will need to have the “<strong>Manage Channels</strong>” and “<strong>Manage Roles</strong>” enabled in the server. </span></h3>
+<h3 id="h_01HAWQ8WVWP4MN1KJTA7Z2AR17"><span style="font-weight: 400;"><strong>Note:</strong> In order to modify the Stage moderators, you will need to have the “<strong>Manage Channels</strong>” and “<strong>Manage Roles</strong>” enabled in the server. </span></h3>
 <p><span style="font-weight: 400;">We’ve built a special UI to make it easy for you to add/remove Stage moderators, but the underlying permissions are built on top of the permission system. This is why you might already see roles selected in the UI since those roles already have the set of permissions at the server-level.</span></p>
 <p><span style="font-weight: 400;">Stage moderators must have these permissions on the Stage channel itself:</span></p>
 <ul>
@@ -272,7 +275,7 @@
 <h1 id="h_01F22APKTBKBC6FAMVS8Q2ST89"><strong>FAQs</strong></h1>
 <p><strong>Q: What version of the app will this feature be available on? <br></strong><strong>A: </strong>All versions - desktop, browser, iOS and Android!</p>
 <p id="docs-internal-guid-bba4ab1a-7fff-afff-cc6b-5f1ca13444e3"><strong>Q: How many people can be in a Stage channel at once?</strong><strong><br></strong><strong>A:</strong> Stage Channels can currently support up to 10,000 people. </p>
-<h3><span style="color: #434343;" data-darkreader-inline-color="">Note: To video or screen share on stage up to 10,000 people, your server will need to be boosted up to 338 boosts in total.</span></h3>
+<h3 id="h_01HAWQ8WVW3C50MC0J4RMKT9CZ"><span style="color: #434343;" data-darkreader-inline-color="">Note: To video or screen share on stage up to 10,000 people, your server will need to be boosted up to 338 boosts in total.</span></h3>
 <p><strong>Q: Is there any limit to the amount of moderators I can have?<br></strong><strong>A: </strong><span style="font-weight: 400;">No, but remember that the Stage moderators of the Stage channel have the ability to mute or remove any member from it.</span></p>
 <p><strong>Q: Is there any limit to the amount of speakers I can have at once?<br></strong><span style="font-weight: 400;"><strong>A:</strong> No limit on the number of audio-only Speakers! However, there is a limit of 1 Go Live stream and up to 5 video participants at a time.</span></p>
 <p><strong>Q: Can I run multiple stage channels at a time?<br></strong><strong>A: </strong>Y<span style="font-weight: 400;">es, you can have multiple different active events within a server!</span></p>
