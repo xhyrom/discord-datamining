@@ -20745,29 +20745,34 @@ html.disable-forced-colors * {
 }
 
 .profileEffects-km5xa2 {
-    z-index: 1
-}
-
-.inner-2xMRmK,
-.profileEffects-km5xa2 {
     position: absolute;
     height: 100%;
     width: 100%;
     top: 0;
     left: 0;
-    pointer-events: none
+    pointer-events: none;
+    z-index: 2;
+    -webkit-transition: opacity .6s ease-in-out;
+    transition: opacity .6s ease-in-out
+}
+
+.hovered-1pHBzl {
+    opacity: .35
 }
 
 .inner-2xMRmK {
     overflow: hidden;
-    border-radius: 8px
+    border-radius: 8px;
+    height: 100%;
+    pointer-events: none
 }
 
-.effect-23JFo_ {
-    top: 0;
-    left: 0;
+.effect-23JFo_,
+.inner-2xMRmK {
+    position: absolute;
     width: 100%;
-    position: absolute
+    top: 0;
+    left: 0
 }
 
 @-webkit-keyframes uploadIconAnimateInLeft-18-7XG {
@@ -170304,4 +170309,4 @@ html .invoiceCancelRow-dVOR64 {
     margin-bottom: 16px
 }
 
-/*# sourceMappingURL=40532.18f9b5683fdaf47aff7a.css.map*/
+/*# sourceMappingURL=40532.f767d400c369328f3426.css.map*/
