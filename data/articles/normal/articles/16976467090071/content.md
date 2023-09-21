@@ -61,7 +61,6 @@
 <h1 id="h_01H9TQZ1PEYKS5Q09Z4DFHCYRN"><strong>How do I redeem the Nitro Trial on my Discord Account?</strong></h1>
 <p>Once you have claimed the promo link, you'll now need to officially redeem this promo link on your Discord account (or share this code with a friend). You must redeem this Nitro trial by <strong>October 6th, 2023 (5pm PST) .</strong></p>
 <h2 id="h_01H9TQZ1PEV0WDAPX2AS01G6AE"><strong>Eligibility for Redeeming the Nitro Trial</strong></h2>
-<h3 id="h_01H9TQZ1PE2QDVVRE95NCRGCHC"><span style="color: #434343;" data-darkreader-inline-color="">This promotion is available in all regions except for the following: Mainland China, North Korea, Russia, India, Cuba, Crimea, Iran, Syria, Donetsk People’s Republic, Luhansk, and Belgium.</span></h3>
 <h3 id="h_01H9TQZ1PE60A1NYECW9T1FP8V">
     <span style="color: #434343;" data-darkreader-inline-color="">If you receive an "Unknown Gift Code" error during the claim/redemption process, you are not eligible to redeem this promotion. You can learn more at this</span><a href="https://support.discord.com/hc/en-us/articles/4708041338391" target="_blank" rel="noopener noreferrer"> Help Center article.</a>
 </h3>
@@ -162,7 +161,7 @@
 <p><strong>Q: Who can redeem this Nitro trial to their Discord account?</strong></p>
 <p>A: Users who have never had an active Nitro subscription on their Discord accounts are eligible to redeem this Nitro promotion.</p>
 <p>Additionally, users who previously had a Discord Nitro subscription and have had a Nitro Classic or Nitro Basic subscription in the past 12 months are ineligible.</p>
-<p>This promotion is only available in certain regions. If you receive an "Unknown Gift Code" error during the claim/redemption process, you are not eligible to redeem this promotion. Ineligible regions are: Mainland China, North Korea, Russia, India, Cuba, Crimea, Iran, Syria, Donetsk People’s Republic, Luhansk, and Belgium.</p>
+<p>This promotion is only available in certain regions. If you receive an "Unknown Gift Code" error during the claim/redemption process, you are not eligible to redeem this promotion. </p>
 <p>You can learn more at this<a href="https://support.discord.com/hc/en-us/articles/4708041338391" target="_blank" rel="noopener noreferrer"> Help Center article.</a></p>
 <p><strong>Q: What if I'm a current or previous Nitro Basic, Nitro Classic, or a Server Boost subscriber? Can I also take part in this promotion? </strong></p>
 <p>A: If you previously had a Discord Nitro subscription at any point on your accounts and have had a Nitro Classic or Nitro Basic subscription in the past 12 months, you are ineligible to redeem this promotion.</p>

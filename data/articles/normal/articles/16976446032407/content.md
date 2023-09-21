@@ -120,7 +120,7 @@
 <p><strong>Q: Who can redeem this gift pack from Synced?</strong></p>
 <p>A: All Synced players within eligible regions will be able to redeem this in-game gift pack. However, players will need to complete the tutorial and character creation to view the items within their in-game backpack!</p>
 <p><strong>Q: Can I redeem the gift pack to my Synced account in my region? </strong></p>
-<p>A: This promotion is only available in certain regions. If you receive an "Unknown Gift Code" error during the claim/redemption process, you are not eligible to redeem this promotion.  </p>
+<p>A: This promotion is only available in certain regions. If you receive an "Unknown Gift Code" error during the claim/redemption process, you are not eligible to redeem this promotion. </p>
 <h2 id="h_01H9TQDZM6H0MZTB3729CQ8VCQ"><strong>Claiming and Redemption Process</strong></h2>
 <p><strong>Q: On which Discord platforms can I claim this promotion?</strong></p>
 <p>A: You'll be able to redeem the promo on the mobile, browser and desktop version of the Discord app. </p>
