@@ -20745,29 +20745,34 @@ html.disable-forced-colors * {
 }
 
 .profileEffects-km5xa2 {
-    z-index: 1
-}
-
-.inner-2xMRmK,
-.profileEffects-km5xa2 {
     position: absolute;
     height: 100%;
     width: 100%;
     top: 0;
     left: 0;
-    pointer-events: none
+    pointer-events: none;
+    z-index: 2;
+    -webkit-transition: opacity .6s ease-in-out;
+    transition: opacity .6s ease-in-out
+}
+
+.hovered-1pHBzl {
+    opacity: .35
 }
 
 .inner-2xMRmK {
     overflow: hidden;
-    border-radius: 8px
+    border-radius: 8px;
+    height: 100%;
+    pointer-events: none
 }
 
-.effect-23JFo_ {
-    top: 0;
-    left: 0;
+.effect-23JFo_,
+.inner-2xMRmK {
+    position: absolute;
     width: 100%;
-    position: absolute
+    top: 0;
+    left: 0
 }
 
 @-webkit-keyframes uploadIconAnimateInLeft-18-7XG {
@@ -33788,7 +33793,7 @@ img[alt] {
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
     margin-bottom: 36px;
-    padding: 13px 27px 13px 13px;
+    padding: 12px 22px 12px 12px;
     pointer-events: all;
     position: relative;
     width: 438px
@@ -33848,6 +33853,10 @@ img[alt] {
     -webkit-box-flex: 0;
     -ms-flex: 0 0 auto;
     flex: 0 0 auto
+}
+
+.ctaButton-39lz0z {
+    border-radius: var(--custom-button-button-lg-height)
 }
 
 .guildName-3yK56c {
@@ -71440,6 +71449,9 @@ strong {
 .tab-2E41_Z {
     padding: 8px;
     width: 300px;
+    -webkit-box-pack: start;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
@@ -71456,6 +71468,12 @@ strong {
 
 .tabDisabled-1l0OgZ {
     cursor: not-allowed
+}
+
+.tabPreviewClose-Ic6Mxe {
+    margin-left: auto;
+    color: var(--interactive-normal);
+    padding-right: 4px
 }
 
 .iconContainer-2gP6IM {
@@ -103221,10 +103239,9 @@ html:not(.custom-theme-background) .container-Vrgqxz {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    padding: 13px 27px 13px 13px;
+    padding: 12px;
     pointer-events: all;
-    position: relative;
-    width: 438px
+    position: relative
 }
 
 .innerWrapper-Eo2E86:after,
@@ -103262,9 +103279,13 @@ html:not(.custom-theme-background) .container-Vrgqxz {
     background-color: var(--background-secondary)
 }
 
+.button-2j-SXS,
+.shinyButton-3_LSN1 {
+    border-radius: var(--custom-button-button-md-height)
+}
+
 .button-2j-SXS {
-    width: 160px;
-    height: 40px
+    width: 160px
 }
 
 .button-2j-SXS:first-child {
@@ -133470,7 +133491,8 @@ input::-webkit-outer-spin-button {
     -webkit-box-pack: justify;
     -ms-flex-pack: justify;
     justify-content: space-between;
-    padding: 0
+    padding: 0;
+    overflow: hidden
 }
 
 .modalHeadings-3LBRJZ {
@@ -133595,7 +133617,9 @@ input::-webkit-outer-spin-button {
 
 .profileCustomizationPreview-3zZw6E {
     position: relative;
-    min-height: 280px
+    min-height: 280px;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box
 }
 
 .banner-3D8GgT {
@@ -163545,12 +163569,8 @@ html .invoiceCancelRow-3s2UuC {
     -webkit-box-pack: end;
     -ms-flex-pack: end;
     justify-content: flex-end;
-    pointer-events: none;
     top: 32px;
-    right: 32px
-}
-
-.closeIcon-ErXdZG {
+    right: 32px;
     pointer-events: all
 }
 
@@ -170298,4 +170318,4 @@ html .invoiceCancelRow-dVOR64 {
     margin-bottom: 16px
 }
 
-/*# sourceMappingURL=40532.b5c74b9ca5ebb0f8c7e4.css.map*/
+/*# sourceMappingURL=40532.91f1e865e7a42e1eb3a2.css.map*/

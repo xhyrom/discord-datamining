@@ -6284,7 +6284,6 @@
             e.exports = {
                 page: "page-LilLhg",
                 close: "close-1CF18x",
-                closeIcon: "closeIcon-ErXdZG",
                 cardsContainer: "cardsContainer-2kdrm8",
                 shop: "shop-3sIaH8",
                 itemTypeTitle: "itemTypeTitle-fjLyoh",
@@ -6667,6 +6666,7 @@
                 tab: "tab-2E41_Z",
                 tabSelected: "tabSelected-1a9MlN",
                 tabDisabled: "tabDisabled-1l0OgZ",
+                tabPreviewClose: "tabPreviewClose-Ic6Mxe",
                 iconContainer: "iconContainer-2gP6IM",
                 filters: "filters-1CqCVQ"
             }
@@ -19207,7 +19207,8 @@
                 fullscreenWrapper: "fullscreenWrapper-39cv9k",
                 innerWrapper: "innerWrapper-Eo2E86",
                 invisible: "invisible-3WrAZ6",
-                button: "button-2j-SXS"
+                button: "button-2j-SXS",
+                shinyButton: "shinyButton-3_LSN1"
             }
         },
         33928: e => {
@@ -20079,6 +20080,7 @@
         256187: e => {
             e.exports = {
                 profileEffects: "profileEffects-km5xa2",
+                hovered: "hovered-1pHBzl",
                 inner: "inner-2xMRmK",
                 effect: "effect-23JFo_"
             }
@@ -26825,4 +26827,4 @@
         }
     }
 ]);
-//# sourceMappingURL=1259936566f5d61187c8.js.map
+//# sourceMappingURL=0a44d0c1d7df07b12fce.js.map

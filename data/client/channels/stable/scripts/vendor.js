@@ -1,4 +1,4 @@
-/*! For license information please see 59baa85d409e06c62397.js.LICENSE.txt */
+/*! For license information please see 30556286ab2b493af04b.js.LICENSE.txt */
 (this.webpackChunkdiscord_app = this.webpackChunkdiscord_app || []).push([
     [22897], {
         151131: (t, e, r) => {
@@ -24833,6 +24833,8 @@
                 t.VOICE_MESSAGE_RECORDED = "voice_message_recorded";
                 t.FAMILY_CENTER_VIEWED = "family_center_viewed";
                 t.FAMILY_CENTER_ACTION = "family_center_action";
+                t.SAFETY_HUB_VIEWED = "safety_hub_viewed";
+                t.SAFETY_HUB_ACTION = "safety_hub_action";
                 t.BOOSTING_UPSELL_VIEWED = "boosting_upsell_viewed";
                 t.BOOSTING_UPSELL_CLICKED = "boosting_upsell_clicked";
                 t.TNS_SKU_REPORT_SUBMITTED = "tns_sku_report_submitted";
@@ -37033,7 +37035,7 @@
                     dsn: "https://fa97a90475514c03a42f80cd36d147c4@sentry.io/140984",
                     autoSessionTracking: !1,
                     environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                    release: "discord_web-ab70e4a6946aa89bbde86cf5d3c289dd7e9ad233",
+                    release: "discord_web-9f5d013df114312ebd611ae7d928daca6948a6d4",
                     beforeSend: function(t) {
                         return function(t) {
                             return null != t.exception && null != t.exception.values && t.exception.values.every((function(t) {
@@ -37060,8 +37062,8 @@
                     denyUrls: [/recaptcha/, /mobilediscord\.com/, /betterdiscord:\/\//]
                 });
                 var t;
-                X.YA("buildNumber", null !== (t = "229893") ? t : "");
-                X.YA("builtAt", String("1695251174916"));
+                X.YA("buildNumber", null !== (t = "230084") ? t : "");
+                X.YA("builtAt", String("1695320178842"));
                 var e = window.GLOBAL_ENV.SENTRY_TAGS;
                 if (null != e && "object" == typeof e)
                     for (var r in e) X.YA(r, e[r]);
@@ -48439,4 +48441,4 @@
         e(128594), e(535666), e(784633), e(678991)
     }
 ]);
-//# sourceMappingURL=59baa85d409e06c62397.js.map
+//# sourceMappingURL=30556286ab2b493af04b.js.map
