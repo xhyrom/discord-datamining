@@ -163752,43 +163752,74 @@ html .invoiceCancelRow-3s2UuC {
     overflow: hidden;
     -webkit-animation: placeholderPulse-ooES5N 1.3s ease-in-out infinite;
     animation: placeholderPulse-ooES5N 1.3s ease-in-out infinite;
-    background-color: var(--background-secondary);
+    background-color: var(--background-secondary-alt);
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
     -ms-flex-direction: column;
-    flex-direction: column
+    flex-direction: column;
+    height: 300px;
+    padding: 16px
 }
 
-.cardBody-1ntQaF,
-.skeleton-1U6yWM {
+.bannerBody-20oTYV {
+    width: inherit
+}
+
+.bannerBody-20oTYV,
+.cardBody-1ntQaF {
     display: -webkit-box;
     display: -ms-flexbox;
-    display: flex
+    display: flex;
+    background-color: var(--background-secondary);
+    height: inherit;
+    border-radius: var(--radius-lg)
 }
 
 .cardBody-1ntQaF {
-    height: 170px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
     -webkit-box-align: center;
     -ms-flex-align: center;
-    align-items: center;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    justify-content: center
+    align-items: center
 }
 
 .cardAvatar-DsY13f {
+    margin-top: 32px;
     height: 96px;
     width: 96px;
-    border-radius: 50%
+    border-radius: 50%;
+    background-color: var(--background-primary)
 }
 
-.cardAvatar-DsY13f,
-.cardSummary-218DWR {
-    background-color: var(--background-secondary-alt)
+.cardTitle-3D3z1l {
+    margin-top: 16px;
+    width: 35%
+}
+
+.cardDescription-1eoWy6,
+.cardTitle-3D3z1l {
+    background-color: var(--background-primary);
+    height: 16px;
+    border-radius: var(--radius-sm)
+}
+
+.cardDescription-1eoWy6 {
+    margin-top: 8px;
+    width: 25%
 }
 
 .cardSummary-218DWR {
-    height: calc(100% - 170px)
+    height: 32px;
+    width: 90%;
+    border-radius: var(--radius-sm);
+    background-color: var(--background-primary);
+    margin-top: auto;
+    margin-bottom: 16px
 }
 
 .bannerCard-2LJzbg {
@@ -170443,4 +170474,4 @@ html .invoiceCancelRow-dVOR64 {
     margin-bottom: 16px
 }
 
-/*# sourceMappingURL=40532.6132d1af27cd724dc87d.css.map*/
+/*# sourceMappingURL=40532.3e9cb5b84a686728173c.css.map*/
