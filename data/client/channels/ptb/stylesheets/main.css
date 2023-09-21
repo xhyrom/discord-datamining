@@ -33793,7 +33793,7 @@ img[alt] {
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
     margin-bottom: 36px;
-    padding: 13px 27px 13px 13px;
+    padding: 12px 22px 12px 12px;
     pointer-events: all;
     position: relative;
     width: 438px
@@ -33853,6 +33853,10 @@ img[alt] {
     -webkit-box-flex: 0;
     -ms-flex: 0 0 auto;
     flex: 0 0 auto
+}
+
+.ctaButton-39lz0z {
+    border-radius: var(--custom-button-button-lg-height)
 }
 
 .guildName-3yK56c {
@@ -103235,10 +103239,9 @@ html:not(.custom-theme-background) .container-Vrgqxz {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    padding: 13px 27px 13px 13px;
+    padding: 12px;
     pointer-events: all;
-    position: relative;
-    width: 438px
+    position: relative
 }
 
 .innerWrapper-Eo2E86:after,
@@ -103276,9 +103279,13 @@ html:not(.custom-theme-background) .container-Vrgqxz {
     background-color: var(--background-secondary)
 }
 
+.button-2j-SXS,
+.shinyButton-3_LSN1 {
+    border-radius: var(--custom-button-button-md-height)
+}
+
 .button-2j-SXS {
-    width: 160px;
-    height: 40px
+    width: 160px
 }
 
 .button-2j-SXS:first-child {
@@ -133610,7 +133617,9 @@ input::-webkit-outer-spin-button {
 
 .profileCustomizationPreview-3zZw6E {
     position: relative;
-    min-height: 280px
+    min-height: 280px;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box
 }
 
 .banner-3D8GgT {
@@ -170309,4 +170318,4 @@ html .invoiceCancelRow-dVOR64 {
     margin-bottom: 16px
 }
 
-/*# sourceMappingURL=40532.f767d400c369328f3426.css.map*/
+/*# sourceMappingURL=40532.91f1e865e7a42e1eb3a2.css.map*/
