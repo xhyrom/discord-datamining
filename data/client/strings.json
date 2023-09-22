@@ -5301,7 +5301,7 @@
   "SUMMARIES_FEEDBACK_OPTION_NOT_USEFUL": "\"Summaries aren't useful in this channel\"",
   "SUMMARIES_FEEDBACK_OPTION_OTHER": "\"Other\"",
   "SUMMARIES_ACTIONS_CREATE_THREAD_FAILED": "\"Could not create thread\"",
-  "SUMMARIES_ACITONS_NOTIFICATIONS_LABEL": "\"Notifications\"",
+  "SUMMARIES_ACTIONS_NOTIFICATIONS_LABEL": "\"Notifications\"",
   "SUMMARIES_ACITONS_SHARE_LABEL": "\"Share\"",
   "SUMMARIES_ACITONS_SHARE_CONTENT": "\"Talking about !!{topic}!! - !!{url}!!\"",
   "SUMMARIES_ACITONS_SHARE_FAILED": "\"Failed to share the conversation\"",
