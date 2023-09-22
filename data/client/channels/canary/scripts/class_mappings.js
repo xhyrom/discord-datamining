@@ -16380,9 +16380,9 @@
         330913: e => {
             e.exports = {
                 emojiSection: "emojiSection-3QtaWO",
+                betaTag: "betaTag-1M5-PW",
                 primaryEmoji: "primaryEmoji-2Og_xG",
                 ctaButton: "ctaButton-23h6Qo",
-                inventoryCtaButton: "inventoryCtaButton-14Yg7U",
                 guildSection: "guildSection-2Zyzy8",
                 guildTitle: "guildTitle-1yMWvh",
                 guildIcon: "guildIcon-EvT-p6",
@@ -16399,14 +16399,13 @@
                 popoutContent: "popoutContent-3RWpUF",
                 popoutLoader: "popoutLoader-3rb1tr",
                 joinGuildLink: "joinGuildLink-378B05",
-                reactionTooltip: "reactionTooltip-1X6qQ5",
                 reactionEmojiDetailsUnfurlGuildDetails: "reactionEmojiDetailsUnfurlGuildDetails-1ZuobB",
                 reactionEmojiDetailsClickable: "reactionEmojiDetailsClickable-2w5rsT",
                 emojiDetailsLoader: "emojiDetailsLoader-rFTeUy",
                 reactionEmojiDetailsArrow: "reactionEmojiDetailsArrow-23kwYa",
                 reactionEmojiDetailsArrowCollapsed: "reactionEmojiDetailsArrowCollapsed-44VNY1",
                 reactionEmojiDetailsDivider: "reactionEmojiDetailsDivider-2Sz8O-",
-                emojiDescription: "emojiDescription-2kZlpZ",
+                inventoryCtaButton: "inventoryCtaButton-14Yg7U",
                 ctaDescription: "ctaDescription-1zR-Kd",
                 nitroWheel: "nitroWheel-OHIsdP"
             }
@@ -16539,7 +16538,6 @@
                 reactionInner: "reactionInner-1po5__",
                 remainingReactions: "remainingReactions-gVC95O",
                 reactionTooltip: "reactionTooltip-29BsaC",
-                reactionTooltipContent: "reactionTooltipContent-ngRYp2",
                 reactionTooltipEmoji: "reactionTooltipEmoji-1pBYSk",
                 reactionTooltipText: "reactionTooltipText-3OhRFp",
                 reactionTooltipInner: "reactionTooltipInner-1LZ-lG",
@@ -16551,7 +16549,6 @@
                 burstAnimatedCounter: "burstAnimatedCounter-2ic_eL",
                 burstReactionTooltipUpsellCta: "burstReactionTooltipUpsellCta-2WDzWM",
                 premiumIcon: "premiumIcon-e-K62h",
-                addReactionTooltip: "addReactionTooltip-16ZROi",
                 sparkles: "sparkles-A95Yt-",
                 burstGlow: "burstGlow-uhab6Q"
             }
@@ -16575,22 +16572,17 @@
                 reactionInner: "reactionInner-YJjOtT",
                 remainingReactions: "remainingReactions-1r1Dvu",
                 reactionTooltip: "reactionTooltip-3IOBwg",
-                reactionTooltipContent: "reactionTooltipContent-3XfUAU",
                 reactionTooltipEmoji: "reactionTooltipEmoji-1Rv8jQ",
                 reactionTooltipText: "reactionTooltipText-iAWHhX",
                 reactionTooltipInner: "reactionTooltipInner-Pl3uOD",
                 burstReactionTooltipInner: "burstReactionTooltipInner-2aCEVH",
                 burstReactionTooltipMessage: "burstReactionTooltipMessage-2UCrKo",
                 burstReactionTooltipSpacer: "burstReactionTooltipSpacer-1oUrib",
-                burstBetaAlertTitle: "burstBetaAlertTitle-2S9ciS",
                 burstReactionTooltipPrompt: "burstReactionTooltipPrompt-3XAM1h",
                 burstReactionTooltipNitroIcon: "burstReactionTooltipNitroIcon-34FUA3",
                 burstAnimatedCounter: "burstAnimatedCounter-3zZXOt",
                 burstReactionTooltipUpsellCta: "burstReactionTooltipUpsellCta-2WX3Zh",
                 premiumIcon: "premiumIcon-xSTd_o",
-                addReactionTooltip: "addReactionTooltip-THgyYF",
-                sparkleStar: "sparkleStar-evJw9v",
-                sparklePlus: "sparklePlus-V5DWdp",
                 sparkles: "sparkles-1yqog1",
                 burstGlow: "burstGlow-3AZMzF"
             }
@@ -26867,4 +26859,4 @@
         }
     }
 ]);
-//# sourceMappingURL=76e8d5661bedc07e7520.js.map
+//# sourceMappingURL=a8ed816f02d07e4aa0d2.js.map
