@@ -17789,6 +17789,23 @@ html.disable-forced-colors * {
     user-select: text
 }
 
+.theme-dark .betaTag-1M5-PW {
+    position: absolute;
+    top: -4px;
+    right: -8px;
+    color: var(--premium-tier-2-pink-for-gradients-2);
+    background-color: #fff
+}
+
+.theme-light .betaTag-1M5-PW {
+    position: absolute;
+    top: -4px;
+    right: -8px;
+    color: var(--white-100);
+    background: -webkit-gradient(linear, left top, right top, from(var(--premium-tier-2-pink-for-gradients)), color-stop(var(--premium-tier-2-pink-for-gradients-2)), to(var(--premium-tier-2-purple-for-gradients)));
+    background: linear-gradient(90deg, var(--premium-tier-2-pink-for-gradients), var(--premium-tier-2-pink-for-gradients-2), var(--premium-tier-2-purple-for-gradients))
+}
+
 .primaryEmoji-2Og_xG {
     min-width: var(--custom-emoji-size-jumbo-emoji);
     min-height: var(--custom-emoji-size-jumbo-emoji);
@@ -17797,10 +17814,6 @@ html.disable-forced-colors * {
 
 .ctaButton-23h6Qo {
     margin: 16px auto 0
-}
-
-.inventoryCtaButton-14Yg7U {
-    margin: 8px auto 0
 }
 
 .guildSection-2Zyzy8 {
@@ -17905,12 +17918,8 @@ html.disable-forced-colors * {
     text-decoration: underline
 }
 
-.reactionTooltip-1X6qQ5 {
-    max-width: 290px
-}
-
 .reactionEmojiDetailsUnfurlGuildDetails-1ZuobB {
-    margin: 8px 0
+    margin: 16px 0 8px
 }
 
 .reactionEmojiDetailsClickable-2w5rsT {
@@ -17969,9 +17978,8 @@ html.disable-forced-colors * {
     margin: 16px 0
 }
 
-.emojiDescription-2kZlpZ {
-    margin-top: 4px;
-    padding: 0 8px
+.inventoryCtaButton-14Yg7U {
+    margin: 8px auto 0
 }
 
 .ctaDescription-1zR-Kd {
@@ -52933,7 +52941,7 @@ html .progress-2Otdc- {
 }
 
 .reactionTooltip-29BsaC {
-    max-width: unset;
+    max-width: 288px;
     padding: 16px;
     overflow: hidden;
     background: var(--background-floating);
@@ -52942,17 +52950,7 @@ html .progress-2Otdc- {
     -webkit-box-shadow: var(--elevation-high);
     box-shadow: var(--elevation-high);
     color: var(--text-normal);
-    border-radius: 5px
-}
-
-.reactionTooltipContent-ngRYp2 {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
-    padding: 12px
+    border-radius: var(--radius-xs)
 }
 
 .reactionTooltipEmoji-1pBYSk {
@@ -52961,8 +52959,7 @@ html .progress-2Otdc- {
 }
 
 .reactionTooltipText-3OhRFp {
-    margin-left: 12px;
-    max-width: 240px
+    margin-left: 12px
 }
 
 .reactionTooltipInner-1LZ-lG {
@@ -52988,8 +52985,7 @@ html .progress-2Otdc- {
 }
 
 .burstReactionTooltipInner-vjhXLF {
-    pointer-events: all;
-    max-width: 290px
+    pointer-events: all
 }
 
 .burstReactionTooltipInner-vjhXLF:hover {
@@ -53031,7 +53027,8 @@ html .progress-2Otdc- {
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
-    width: 100%
+    width: 100%;
+    margin: 12px 0
 }
 
 .burstReactionTooltipNitroIcon-3I3oFz {
@@ -53055,10 +53052,6 @@ html .progress-2Otdc- {
 
 .premiumIcon-e-K62h {
     margin-right: 4px
-}
-
-.addReactionTooltip-16ZROi {
-    max-width: 300px
 }
 
 .sparkles-A95Yt- {
@@ -53205,21 +53198,20 @@ html .progress-2Otdc- {
     align-items: center;
     -ms-flex-wrap: wrap;
     flex-wrap: wrap;
-    margin-bottom: -.5rem;
-    padding-bottom: .25rem
+    margin-bottom: -8px;
+    padding-bottom: 4px
 }
 
 .icon-1q31jb,
 .reactionBtn-3I19bq {
-    width: 1rem;
-    height: 1rem
+    width: 16px;
+    height: 16px
 }
 
 .reactionBtn-3I19bq {
-    position: relative;
-    margin-left: .25rem;
-    margin-right: .25rem;
-    margin-bottom: .125rem;
+    margin-left: 4px;
+    margin-right: 4px;
+    margin-bottom: 2px;
     cursor: pointer;
     visibility: hidden;
     color: var(--interactive-normal)
@@ -53241,16 +53233,27 @@ html .progress-2Otdc- {
 }
 
 .reactionBtn-3I19bq.forceShow-K8Ygj7 {
-    visibility: visible
-}
-
-.reactionBtn-3I19bq.forceShowLook-1zmTr- {
-    padding: .25rem .375rem;
-    border-radius: .5rem;
+    visibility: visible;
+    padding: 4px 6px;
+    border-radius: 8px;
     background-color: var(--background-secondary);
     border: 1px solid transparent;
     margin-left: 0;
-    margin-bottom: .25rem
+    margin-bottom: 4px
+}
+
+.reactionBtn-3I19bq.forceShow-K8Ygj7:hover {
+    background-color: var(--background-primary);
+    border-color: hsl(var(--white-500-hsl)/.2)
+}
+
+.reactionBtn-3I19bq.forceShowLook-1zmTr- {
+    padding: 4px 6px;
+    border-radius: 8px;
+    background-color: var(--background-secondary);
+    border: 1px solid transparent;
+    margin-left: 0;
+    margin-bottom: 4px
 }
 
 .reactionBtn-3I19bq.forceShowLook-1zmTr-:hover {
@@ -53263,14 +53266,14 @@ html .progress-2Otdc- {
 }
 
 .reaction-3vwAF2 {
-    border-radius: .5rem;
+    border-radius: 8px;
     cursor: pointer;
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
     -ms-flex-negative: 0;
     flex-shrink: 0;
-    margin-right: .25rem;
-    margin-bottom: .25rem;
+    margin-right: 4px;
+    margin-bottom: 4px;
     -webkit-user-select: none;
     -moz-user-select: none;
     -ms-user-select: none;
@@ -53295,16 +53298,16 @@ html .progress-2Otdc- {
 }
 
 .reaction-3vwAF2 .emoji {
-    width: 1rem;
-    height: 1rem;
-    margin: .125rem 0;
+    width: 16px;
+    height: 16px;
+    margin: 2px 0;
     min-width: auto;
     min-height: auto
 }
 
 .reaction-3vwAF2 .emoji-text {
     color: var(--text-normal);
-    vertical-align: -.125rem;
+    vertical-align: -2px;
     display: inline-block
 }
 
@@ -53351,14 +53354,14 @@ html .progress-2Otdc- {
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
-    padding: .125rem .375rem;
+    padding: 2px 6px;
     position: relative
 }
 
 .reactionCount-26U4As {
     font-size: 0.875rem;
     font-weight: 600;
-    margin-left: .375rem;
+    margin-left: 6px;
     text-align: center;
     color: var(--interactive-normal)
 }
@@ -53408,26 +53411,16 @@ html .progress-2Otdc- {
 }
 
 .reactionTooltip-3IOBwg {
-    max-width: unset;
-    padding: 1rem;
+    max-width: 288px;
+    padding: 16px;
     overflow: hidden;
     background: var(--background-floating);
     font-weight: 500;
-    font-size: .875rem;
+    font-size: 0.875rem;
     -webkit-box-shadow: var(--elevation-high);
     box-shadow: var(--elevation-high);
     color: var(--text-normal);
-    border-radius: .313rem
-}
-
-.reactionTooltipContent-3XfUAU {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
-    padding: 16px
+    border-radius: var(--radius-xs)
 }
 
 .reactionTooltipEmoji-1Rv8jQ {
@@ -53436,8 +53429,7 @@ html .progress-2Otdc- {
 }
 
 .reactionTooltipText-iAWHhX {
-    margin-left: 12px;
-    max-width: 240px
+    margin-left: 12px
 }
 
 .reactionTooltipInner-Pl3uOD {
@@ -53463,8 +53455,7 @@ html .progress-2Otdc- {
 }
 
 .burstReactionTooltipInner-2aCEVH {
-    pointer-events: all;
-    max-width: 290px
+    pointer-events: all
 }
 
 .burstReactionTooltipInner-2aCEVH:hover {
@@ -53499,10 +53490,6 @@ html .progress-2Otdc- {
     border-bottom: 1px solid var(--background-modifier-accent)
 }
 
-.burstBetaAlertTitle-2S9ciS {
-    text-transform: unset
-}
-
 .burstReactionTooltipPrompt-3XAM1h {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -53510,7 +53497,8 @@ html .progress-2Otdc- {
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
-    width: 100%
+    width: 100%;
+    margin: 12px 0
 }
 
 .burstReactionTooltipNitroIcon-34FUA3 {
@@ -53536,24 +53524,6 @@ html .progress-2Otdc- {
     margin-right: 4px
 }
 
-.addReactionTooltip-THgyYF {
-    max-width: 300px
-}
-
-.sparkleStar-evJw9v {
-    top: -32px;
-    left: 16px
-}
-
-.sparklePlus-V5DWdp {
-    top: -6px;
-    left: -20px
-}
-
-.theme-light.custom-theme-background .reaction-3vwAF2 {
-    border: 1px solid var(--background-modifier-accent)
-}
-
 .sparkles-1yqog1 {
     top: -8px;
     left: -8px;
@@ -53567,7 +53537,7 @@ html .progress-2Otdc- {
     right: 0;
     top: 0;
     bottom: 0;
-    border-radius: .5rem;
+    border-radius: 8px;
     z-index: -1;
     opacity: .35
 }
@@ -170549,4 +170519,4 @@ html .invoiceCancelRow-dVOR64 {
     margin-bottom: 16px
 }
 
-/*# sourceMappingURL=40532.87a570163691b334d5ec.css.map*/
+/*# sourceMappingURL=40532.5158b99f4c2a457fb0aa.css.map*/
