@@ -163339,16 +163339,6 @@ html .invoiceCancelRow-3s2UuC {
     transform: translateY(-4px)
 }
 
-.shopCardBody-G0vZ9T {
-    position: absolute;
-    top: 2px;
-    left: 2px;
-    right: 2px;
-    bottom: 2px;
-    border-radius: inherit;
-    padding: 40px 32px 32px
-}
-
 .avatar-jvUUbt {
     margin: 0 auto
 }
@@ -163696,7 +163686,7 @@ html .invoiceCancelRow-3s2UuC {
     padding: 0 32px 32px;
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
-    margin: 44px auto 300px;
+    margin: 44px auto;
     position: relative;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -170169,8 +170159,8 @@ html .invoiceCancelRow-dVOR64 {
 
 .modalCloseButton-3RgDvX {
     position: absolute;
-    right: 8px;
-    top: 8px;
+    right: 16px;
+    top: 16px;
     opacity: 1;
     color: var(--white-500)
 }
@@ -170304,7 +170294,7 @@ html .invoiceCancelRow-dVOR64 {
 .titleImage-1KgSPN {
     padding-right: 6px;
     padding-top: 4px;
-    max-height: 96
+    max-height: 18px
 }
 
 .collectionText-1qGz8S {
@@ -170508,4 +170498,4 @@ html .invoiceCancelRow-dVOR64 {
     margin-bottom: 16px
 }
 
-/*# sourceMappingURL=40532.e29af5da690a1e35bc2c.css.map*/
+/*# sourceMappingURL=40532.ecd27290063354e23682.css.map*/
