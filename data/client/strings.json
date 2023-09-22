@@ -14747,6 +14747,8 @@
   "INVENTORY_TRY_PACKS_TITLE": "\"Add your favorite emoji packs\"",
   "INVENTORY_TRY_PACKS_DESCRIPTION": "\"Now you can add up to {maxPacks} emoji packs straight to your emoji picker with Nitro.\"",
   "INVENTORY_TRY_PACKS_DESCRIPTION_2": "\"Here are some popular packs to get you started:\"",
+  "INVENTORY_TRY_PACKS_DESCRIPTION_FREEMIUM": "\"Now you can add {maxFreePacks, plural, one {{maxFreePacks} emoji pack} other {{maxFreePacks} emoji packs}} straight to your emoji picker and use {maxFreePacks, plural, one {it} other {them}} anywhere on Discord.\"",
+  "INVENTORY_TRY_PACKS_DESCRIPTION_FREEMIUM_2": "\"Let the emoji party begin with one of the popular packs below:\"",
   "INVENTORY_TRY_PACKS_MORE_EMOJI": "\"+{numberOfEmoji} more emoji\"",
   "INVENTORY_TRY_PACKS_UPSELL": "\"Upgrade to Nitro to add up to {maxPacks} emoji packs.\"",
   "PRIVATE_CHANNEL_INTEGRATION_ADDED": "\"$[!!{username}!!](usernameHook) added the $[!!{otherUsername}!!](otherUsernameHook) app. See our [help center]({helpCenterLink}) for more info.\"",
