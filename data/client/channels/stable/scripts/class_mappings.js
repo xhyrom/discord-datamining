@@ -22299,6 +22299,8 @@
                 scrollerSeparator: "scrollerSeparator-6DmwRQ",
                 editClydeButton: "editClydeButton-1EJ7XD",
                 editClydeButtonInner: "editClydeButtonInner-3tIOpf",
+                clydeErrorText: "clydeErrorText-21B00D",
+                sadClyde: "sadClyde-ej4LbK",
                 pencilIcon: "pencilIcon-3ZoLdr"
             }
         },
@@ -26849,4 +26851,4 @@
         }
     }
 ]);
-//# sourceMappingURL=660d78f99d083ac6c04d.js.map
+//# sourceMappingURL=06f823a13837b3291c0b.js.map
