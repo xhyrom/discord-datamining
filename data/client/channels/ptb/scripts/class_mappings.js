@@ -19207,6 +19207,9 @@
                 cardHeading: "cardHeading-3p4-LJ",
                 cardSubtitle: "cardSubtitle-q7wCE3",
                 cardImage: "cardImage-3uZfoW",
+                above: "above-3GwaSM",
+                below: "below-1qiHYs",
+                topCover: "topCover-2oR1dk",
                 purpleGradient: "purpleGradient-2608c0",
                 pinkGradient: "pinkGradient-SCswi9",
                 blueGradient: "blueGradient-1Qg1e7"
@@ -26851,4 +26854,4 @@
         }
     }
 ]);
-//# sourceMappingURL=06f823a13837b3291c0b.js.map
+//# sourceMappingURL=1bfa3d5adbea83a5755f.js.map
