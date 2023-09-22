@@ -9,7 +9,16 @@
       "Treatment 1: Measure PSNR [DEPRECATED DO NOT USE]",
       "Treatment 2: Measure PSNR Only",
       "Treatment 3: Measure VMAF Only",
-      "Treatment 4: Measure PSNR and VMAF"
+      "Treatment 4: Measure PSNR and VMAF",
+      "Treatment 5: Measure PSNR Only, 5000ms",
+      "Treatment 6: Measure VMAF Only, 5000ms",
+      "Treatment 7: Measure PSNR and VMAF, 5000ms",
+      "Treatment 8: Measure PSNR Only, 10000ms",
+      "Treatment 9: Measure VMAF Only, 10000ms",
+      "Treatment 10: Measure PSNR and VMAF, 10000ms",
+      "Treatment 11: Measure PSNR Only, 30000ms",
+      "Treatment 12: Measure VMAF Only, 30000ms",
+      "Treatment 13: Measure PSNR and VMAF, 30000ms"
     ],
     "hash": 2496837643,
     "buckets": [
@@ -18,7 +27,16 @@
       1,
       2,
       3,
-      4
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13
     ],
     "config_keys": [
       "enabled"
