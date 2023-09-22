@@ -163355,6 +163355,7 @@ html .invoiceCancelRow-3s2UuC {
     overflow: hidden
 }
 
+.shopCard-H3oN50:focus-within,
 .shopCard-H3oN50:hover {
     -webkit-transform: translateY(-4px);
     transform: translateY(-4px)
@@ -163514,20 +163515,24 @@ html .invoiceCancelRow-3s2UuC {
     transition: opacity .5s
 }
 
+.shopCard-H3oN50:focus-within .innerHover-3lqG6f,
 .shopCard-H3oN50:hover .innerHover-3lqG6f {
     opacity: 1;
     -webkit-transform: translateY(0);
     transform: translateY(0)
 }
 
+.shopCard-H3oN50:focus-within .innerBlur-3NYZ8j,
 .shopCard-H3oN50:hover .innerBlur-3NYZ8j {
     opacity: 0
 }
 
+.shopCard-H3oN50:focus-within .checkmark-1jbYXa,
 .shopCard-H3oN50:hover .checkmark-1jbYXa {
     opacity: 0
 }
 
+.shopCard-H3oN50:focus-within .avatarPurchased-3h_bK-,
 .shopCard-H3oN50:hover .avatarPurchased-3h_bK- {
     opacity: 1
 }
@@ -163734,7 +163739,6 @@ html .invoiceCancelRow-3s2UuC {
 
 .cardsContainer-2kdrm8 {
     max-width: 1060px;
-    margin-top: 26px;
     display: grid;
     grid-gap: 24px;
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
@@ -163872,7 +163876,7 @@ html .invoiceCancelRow-3s2UuC {
     max-width: 100%;
     max-height: 100%;
     position: relative;
-    margin-top: 24px;
+    margin-top: 40px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -170519,4 +170523,4 @@ html .invoiceCancelRow-dVOR64 {
     margin-bottom: 16px
 }
 
-/*# sourceMappingURL=40532.499fc9c57d80ddb96411.css.map*/
+/*# sourceMappingURL=40532.8e6360f55e46fa121b9f.css.map*/
