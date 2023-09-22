@@ -2948,10 +2948,7 @@
   },
   "USER_OFFER_ACKNOWLEDGED": {
     "url": "/users/@me/billing/user-offer/ack",
-    "allowed_methods": [
-      "OPTIONS",
-      "POST"
-    ]
+    "allowed_methods": null
   },
   "GUILD_DISCOVERY": {
     "url": "/discoverable-guilds",
