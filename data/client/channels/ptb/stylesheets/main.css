@@ -156351,6 +156351,27 @@ html .invoiceCancelRow-3s2UuC {
     background: linear-gradient(95.07deg, var(--premium-tier-2-purple-for-gradients), var(--premium-tier-2-purple-for-gradients-2) 49.96%, var(--premium-tier-2-pink-for-gradients) 95.93%)
 }
 
+.buttonsContainer-3E5j1w {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex
+}
+
+.removeButton-1o8L8B {
+    margin-left: 4px
+}
+
+.buttonHighlighted-3QKRPw {
+    background: linear-gradient(95.07deg, var(--premium-tier-2-purple-for-gradients), var(--premium-tier-2-purple-for-gradients-2) 49.96%, var(--premium-tier-2-pink-for-gradients) 95.93%)
+}
+
+.newBadge-2Y53Os {
+    margin-left: 2px;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center
+}
+
 .tryItOutSection-W9qeGH {
     margin: 40px -24px 0;
     width: -webkit-fit-content;
@@ -156440,27 +156461,6 @@ html .invoiceCancelRow-3s2UuC {
     margin-right: -24px;
     background-image: -webkit-gradient(linear, left top, right top, from(var(--premium-tier-2-pink-for-gradients)), color-stop(50%, var(--premium-tier-2-purple-for-gradients)), to(var(--premium-tier-2-pink-for-gradients)));
     background-image: linear-gradient(90deg, var(--premium-tier-2-pink-for-gradients), var(--premium-tier-2-purple-for-gradients) 50%, var(--premium-tier-2-pink-for-gradients))
-}
-
-.buttonsContainer-3E5j1w {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex
-}
-
-.removeButton-1o8L8B {
-    margin-left: 4px
-}
-
-.buttonHighlighted-3QKRPw {
-    background: linear-gradient(95.07deg, var(--premium-tier-2-purple-for-gradients), var(--premium-tier-2-purple-for-gradients-2) 49.96%, var(--premium-tier-2-pink-for-gradients) 95.93%)
-}
-
-.newBadge-2Y53Os {
-    margin-left: 2px;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center
 }
 
 .sectionsContainer-3BlPu4 {
@@ -170519,4 +170519,4 @@ html .invoiceCancelRow-dVOR64 {
     margin-bottom: 16px
 }
 
-/*# sourceMappingURL=40532.5158b99f4c2a457fb0aa.css.map*/
+/*# sourceMappingURL=40532.63ebf2ee381b191df1c8.css.map*/
