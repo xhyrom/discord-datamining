@@ -12,7 +12,6 @@
         <a href="#h_01H3MBR8H9AJMP6J8F4G37MGR0" target="_self">How to Customize your Profile</a>
         <ul>
             <li><a href="#h_01H3MBRCHQ4QMKR4AZ99ZSEKPP" target="_self">Avatar</a></li>
-            <li><a href="https://support.discord.com/hc/en-us/articles/4403147417623#h_01HAWGZQYY8B5KQH1FJ2N2VJ01">Avatar Decorations</a></li>
             <li><a href="#h_01H3MBRGVFHFKCS3GY314MR07Z" target="_self">“About Me”</a></li>
             <li><a href="#h_01H3MBRNC0NWF6G35ZE3D76DEM" target="_self">Pronouns</a></li>
             <li><a href="#h_01H3MBRVTWGPMFXVA0P26Z1T3F" target="_self">Banner</a></li>
@@ -51,17 +50,6 @@
 <p>After uploading your image or selecting your chosen GIF, you can then crop the image to fit your desired look for your avatar or tap on <strong>Skip</strong> to skip this step. </p>
 <p class="wysiwyg-text-align-center"><img src="https://support.discord.com/hc/article_attachments/15527725418135" alt="profiles_avatar_crop.png" width="529" height="528"></p>
 <p>Once you’re happy with how it looks, tap on <strong>Apply</strong> to save changes.</p>
-<h2 id="h_01HAWGZQYY8B5KQH1FJ2N2VJ01"><strong>Avatar Decorations</strong></h2>
-<h3 id="h_01HAWGZQYYZB9RS5CGB0SF7G8B">
-    <a href="https://support.discord.com/hc/en-us/articles/115000435108" target="_blank" rel="noopener noreferrer">Nitro</a><span style="color: #434343;" data-darkreader-inline-color=""> subscribers can purchase and apply </span><a href="https://support.discord.com/hc/en-us/articles/13410113109911" target="_blank" rel="noopener noreferrer">Avatar Decorations</a><span style="color: #434343;" data-darkreader-inline-color=""> to their profile’s avatar.</span>
-</h3>
-<h3 id="h_01HAWGZQYYEXWF9VHEYCPBG1MD"><span style="color: #434343;" data-darkreader-inline-color="">We’re slowly rolling out the shop so it may not be available to all users at this time. </span></h3>
-<p>Want to add more razzle-dazzle to your avatar? Apply a decoration to it!<br><a href="https://support.discord.com/hc/en-us/articles/13410113109911" target="_blank" rel="noopener noreferrer">Avatar Decorations</a> are unique cosmetics designed to style your avatar with fun and charming looks that you can wear for any occasion.</p>
-<p><a href="https://support.discord.com/hc/en-us/articles/115000435108" target="_blank" rel="noopener noreferrer">Nitro</a> subscribers can preview, purchase, and collect their favorite decoration styles from the shop, which can be located in your <strong>User Profile</strong> and <strong>Nitro</strong> tab. </p>
-<p class="wysiwyg-text-align-center"><img src="https://support.discord.com/hc/article_attachments/17718108093719" alt="profile_shop.png"></p>
-<p>Purchased decorations are yours to keep and get added to your collection - you can find them in your <strong>Profiles</strong> tab &gt; <strong>Change Decoration</strong>.</p>
-<p class="wysiwyg-text-align-center"><span style="background-color: #ffe599;" data-darkreader-inline-bgcolor=""><img src="https://support.discord.com/hc/article_attachments/17718088650135" alt="profile_avatar_decorations.png"></span></p>
-<p>Once you’ve decided on the decoration you’d like to use, apply it and save your changes!</p>
 <h1 id="h_01H3MBRGVFHFKCS3GY314MR07Z">“About Me”</h1>
 <h3 id="h_01HA5Q9PKNQ8GDGHXXM1RYV08A">
     <a href="https://support.discord.com/hc/en-us/articles/115000435108" target="_blank" rel="noopener noreferrer">Nitro</a><span style="color: #434343;" data-darkreader-inline-color=""> subscribers can also use </span><a href="https://support.discord.com/hc/en-us/articles/360036479811-Custom-Emojis" target="_blank" rel="noopener noreferrer">custom emojis</a><span style="color: #434343;" data-darkreader-inline-color=""> in their About Me.</span>
