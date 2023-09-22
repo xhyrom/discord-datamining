@@ -109878,7 +109878,7 @@ html .tabBadge-h4HGed {
 }
 
 .container-5qN7ct {
-    background: var(--background-primary);
+    background: var(--background-secondary);
     margin-left: 4px;
     border-radius: var(--radius-sm);
     width: 312px;
@@ -109969,7 +109969,7 @@ html .tabBadge-h4HGed {
     width: 80px;
     height: 80px;
     border-radius: var(--radius-sm);
-    background-color: var(--bg-backdrop);
+    background-color: var(--background-floating);
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -109979,13 +109979,24 @@ html .tabBadge-h4HGed {
     -webkit-box-pack: center;
     -ms-flex-pack: center;
     justify-content: center;
-    cursor: pointer
+    cursor: pointer;
+    padding: 6px;
+    border: 2px solid transparent;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box
 }
 
 .selectedItem-2jIRkM {
-    width: 76px;
-    height: 76px;
-    border: 2px solid var(--brand-500)
+    border-color: var(--brand-500)
+}
+
+.avatarDecorationItem-2rZe1f {
+    height: 100%;
+    width: 100%
+}
+
+.loading-1Jf2O1 {
+    height: 100%
 }
 
 .clearStatusIcon-_QNldr {
@@ -163339,16 +163350,6 @@ html .invoiceCancelRow-3s2UuC {
     transform: translateY(-4px)
 }
 
-.shopCardBody-G0vZ9T {
-    position: absolute;
-    top: 2px;
-    left: 2px;
-    right: 2px;
-    bottom: 2px;
-    border-radius: inherit;
-    padding: 40px 32px 32px
-}
-
 .avatar-jvUUbt {
     margin: 0 auto
 }
@@ -163696,7 +163697,7 @@ html .invoiceCancelRow-3s2UuC {
     padding: 0 32px 32px;
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
-    margin: 44px auto 300px;
+    margin: 44px auto;
     position: relative;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -170169,8 +170170,8 @@ html .invoiceCancelRow-dVOR64 {
 
 .modalCloseButton-3RgDvX {
     position: absolute;
-    right: 8px;
-    top: 8px;
+    right: 16px;
+    top: 16px;
     opacity: 1;
     color: var(--white-500)
 }
@@ -170304,7 +170305,7 @@ html .invoiceCancelRow-dVOR64 {
 .titleImage-1KgSPN {
     padding-right: 6px;
     padding-top: 4px;
-    max-height: 96
+    max-height: 18px
 }
 
 .collectionText-1qGz8S {
@@ -170508,4 +170509,4 @@ html .invoiceCancelRow-dVOR64 {
     margin-bottom: 16px
 }
 
-/*# sourceMappingURL=40532.e29af5da690a1e35bc2c.css.map*/
+/*# sourceMappingURL=40532.caad8953c16d2403abfe.css.map*/

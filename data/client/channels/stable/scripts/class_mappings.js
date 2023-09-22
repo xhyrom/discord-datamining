@@ -6255,7 +6255,9 @@
                 collectibles: "collectibles-1NhnmF",
                 collectiblesList: "collectiblesList-tJGgEQ",
                 item: "item-2WPK-W",
-                selectedItem: "selectedItem-2jIRkM"
+                selectedItem: "selectedItem-2jIRkM",
+                avatarDecorationItem: "avatarDecorationItem-2rZe1f",
+                loading: "loading-1Jf2O1"
             }
         },
         311198: e => {
@@ -6305,7 +6307,6 @@
         630505: e => {
             e.exports = {
                 shopCard: "shopCard-H3oN50",
-                shopCardBody: "shopCardBody-G0vZ9T",
                 avatar: "avatar-jvUUbt",
                 avatarPurchased: "avatarPurchased-3h_bK-",
                 cardText: "cardText-2OugTh",
@@ -26854,4 +26855,4 @@
         }
     }
 ]);
-//# sourceMappingURL=1bfa3d5adbea83a5755f.js.map
+//# sourceMappingURL=04eb28bce00b98631adb.js.map
