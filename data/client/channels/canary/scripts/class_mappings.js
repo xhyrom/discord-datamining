@@ -6255,7 +6255,9 @@
                 collectibles: "collectibles-1NhnmF",
                 collectiblesList: "collectiblesList-tJGgEQ",
                 item: "item-2WPK-W",
-                selectedItem: "selectedItem-2jIRkM"
+                selectedItem: "selectedItem-2jIRkM",
+                avatarDecorationItem: "avatarDecorationItem-2rZe1f",
+                loading: "loading-1Jf2O1"
             }
         },
         311198: e => {
@@ -26853,4 +26855,4 @@
         }
     }
 ]);
-//# sourceMappingURL=7919ff6977954c5e319b.js.map
+//# sourceMappingURL=04eb28bce00b98631adb.js.map
