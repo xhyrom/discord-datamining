@@ -7,14 +7,16 @@
       "Not Eligible",
       "Control Bucket",
       "Treatment 1: Merged Server + DM tab",
-      "Treatment 2: Split DM Tab"
+      "Treatment 2: Split DM Tab",
+      "Treatment 3: Base redesign"
     ],
     "hash": 985588111,
     "buckets": [
       -1,
       0,
       1,
-      2
+      2,
+      3
     ],
     "config_keys": [
       "showRedesign",
