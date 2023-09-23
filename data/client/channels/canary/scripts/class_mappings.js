@@ -6646,9 +6646,14 @@
         },
         754148: e => {
             e.exports = {
+                twoColumnWidth: "1439px",
+                fullShopPageWidth: "1789px",
                 container: "container-20Ljoy",
                 content: "content-1tt_Au",
-                contentContainer: "contentContainer-1faF_F"
+                contentContainer: "contentContainer-1faF_F",
+                tabContainer: "tabContainer-2CNeKV",
+                sparkleCloudTop: "sparkleCloudTop-3D79_3",
+                sparkleCloudBottom: "sparkleCloudBottom-33rbkJ"
             }
         },
         844275: e => {
@@ -6666,15 +6671,16 @@
         },
         873159: e => {
             e.exports = {
+                twoColumnWidth: "1439px",
                 container: "container-PSWAEM",
+                filters: "filters-1CqCVQ",
                 header: "header-1kgmPb",
                 tabs: "tabs-39_NWj",
                 tab: "tab-2E41_Z",
                 tabSelected: "tabSelected-1a9MlN",
                 tabDisabled: "tabDisabled-1l0OgZ",
                 tabPreviewClose: "tabPreviewClose-Ic6Mxe",
-                iconContainer: "iconContainer-2gP6IM",
-                filters: "filters-1CqCVQ"
+                iconContainer: "iconContainer-2gP6IM"
             }
         },
         824426: e => {
@@ -6693,6 +6699,7 @@
         },
         894756: e => {
             e.exports = {
+                twoColumnWidth: "1439px",
                 container: "container-Vrgqxz",
                 infoContainer: "infoContainer-14dbs1",
                 coverImageContainer: "coverImageContainer-V8-U47",
@@ -26860,4 +26867,4 @@
         }
     }
 ]);
-//# sourceMappingURL=e847f0f36a4743e137eb.js.map
+//# sourceMappingURL=0d34ea8ed7fe1cc5eeaf.js.map
