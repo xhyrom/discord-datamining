@@ -102738,8 +102738,7 @@ html:not(.custom-theme-background) .container-Vrgqxz {
     flex-direction: row;
     -webkit-box-pack: center;
     -ms-flex-pack: center;
-    justify-content: center;
-    min-height: 100px
+    justify-content: center
 }
 
 .containerDefaultMargin-3T8Dq_ {
@@ -102753,7 +102752,8 @@ html:not(.custom-theme-background) .container-Vrgqxz {
 
 .avatars-bkeu7E {
     position: relative;
-    width: 136px
+    width: 136px;
+    height: 100px
 }
 
 .avatar1-1rcc7k {
@@ -102784,7 +102784,7 @@ html:not(.custom-theme-background) .container-Vrgqxz {
     -webkit-box-flex: 1;
     -ms-flex: 1;
     flex: 1;
-    padding: 0 12px 0 4px;
+    padding: 18px 12px 18px 4px;
     margin: auto 0
 }
 
@@ -170595,4 +170595,4 @@ html .invoiceCancelRow-dVOR64 {
     margin-bottom: 16px
 }
 
-/*# sourceMappingURL=40532.1e6b9f16783e5c0700bf.css.map*/
+/*# sourceMappingURL=40532.dd1429b100d62178b316.css.map*/
