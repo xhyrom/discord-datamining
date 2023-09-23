@@ -6290,6 +6290,7 @@
                 cardsContainer: "cardsContainer-2kdrm8",
                 shop: "shop-3sIaH8",
                 itemTypeTitle: "itemTypeTitle-fjLyoh",
+                pageWrapper: "pageWrapper-3Au6sJ",
                 closeWrapper: "closeWrapper-4ioOGM"
             }
         },
@@ -26859,4 +26860,4 @@
         }
     }
 ]);
-//# sourceMappingURL=f2aedc28c148a5996244.js.map
+//# sourceMappingURL=62cbddff4b2bb4bd54a3.js.map

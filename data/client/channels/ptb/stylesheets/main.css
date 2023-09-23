@@ -13409,7 +13409,8 @@ html.disable-forced-colors * {
 }
 
 .avatarSection-3AUnZj {
-    width: 52px
+    width: 52px;
+    cursor: pointer
 }
 
 .content-wpwQTU {
@@ -13425,11 +13426,11 @@ html.disable-forced-colors * {
     flex-direction: column;
     -webkit-box-pack: center;
     -ms-flex-pack: center;
-    justify-content: center
+    justify-content: center;
+    cursor: pointer
 }
 
 .ctaLink-33fT8d {
-    cursor: pointer;
     text-decoration: underline
 }
 
@@ -102685,7 +102686,8 @@ html:not(.custom-theme-background) .container-Vrgqxz {
     flex-direction: row;
     -webkit-box-pack: center;
     -ms-flex-pack: center;
-    justify-content: center
+    justify-content: center;
+    min-height: 100px
 }
 
 .containerDefaultMargin-3T8Dq_ {
@@ -102722,7 +102724,7 @@ html:not(.custom-theme-background) .container-Vrgqxz {
     position: absolute;
     -webkit-transform: rotate(-9.161deg) scale(.85);
     transform: rotate(-9.161deg) scale(.85);
-    bottom: -12px;
+    top: 56px;
     left: 24px
 }
 
@@ -102730,7 +102732,8 @@ html:not(.custom-theme-background) .container-Vrgqxz {
     -webkit-box-flex: 1;
     -ms-flex: 1;
     flex: 1;
-    padding: 18px 12px 18px 4px
+    padding: 0 12px 0 4px;
+    margin: auto 0
 }
 
 .title-CXxZie {
@@ -109925,7 +109928,7 @@ html .tabBadge-h4HGed {
     -webkit-box-flex: 1;
     -ms-flex: 1;
     flex: 1;
-    overflow: scroll;
+    overflow: auto;
     margin: 0 16px 0 24px
 }
 
@@ -163581,7 +163584,8 @@ html .invoiceCancelRow-3s2UuC {
     padding: 60px 0;
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
-    position: relative
+    position: relative;
+    min-width: 300px
 }
 
 .bannerBackgroundWrapper-29zgRc {
@@ -163712,7 +163716,7 @@ html .invoiceCancelRow-3s2UuC {
     padding: 0 32px 32px;
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
-    margin: 44px auto;
+    margin: 44px 0 300px;
     position: relative;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -163728,7 +163732,7 @@ html .invoiceCancelRow-3s2UuC {
 }
 
 .close-1CF18x {
-    position: fixed;
+    position: sticky;
     -webkit-box-pack: end;
     -ms-flex-pack: end;
     justify-content: flex-end;
@@ -163754,9 +163758,24 @@ html .invoiceCancelRow-3s2UuC {
     margin-top: 26px
 }
 
-@media (max-width:1204px) {
-    .page-LilLhg {
-        padding: 32px 84px 32px 32px
+.pageWrapper-3Au6sJ {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: stretch;
+    -ms-flex-align: stretch;
+    align-items: stretch;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    width: 100%;
+    position: relative;
+    left: 20px
+}
+
+@media (max-width:1124px) {
+    .close-1CF18x {
+        position: fixed
     }
 }
 
@@ -170523,4 +170542,4 @@ html .invoiceCancelRow-dVOR64 {
     margin-bottom: 16px
 }
 
-/*# sourceMappingURL=40532.8e6360f55e46fa121b9f.css.map*/
+/*# sourceMappingURL=40532.885a425402b84265c6f6.css.map*/
