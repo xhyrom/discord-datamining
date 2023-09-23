@@ -26421,7 +26421,9 @@ code {
 :root {
     --custom-guild-shop-page-two-column-max-width: 1439px;
     --custom-aspect-stable-image-container-padding: 20px;
-    --custom-monetization-info-table-expandable-rows-toggle-expand-column-width: 30px
+    --custom-monetization-info-table-expandable-rows-toggle-expand-column-width: 30px;
+    --custom-guild-shop-content-width: 1044px;
+    --custom-guild-shop-content-width-reduced: 688px
 }
 
 :root {
@@ -71428,9 +71430,83 @@ strong {
     color: var(--text-link)
 }
 
+.container-20Ljoy {
+    -webkit-box-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    position: relative;
+    z-index: 0
+}
+
+.content-1tt_Au {
+    padding: 32px 42px
+}
+
+.contentContainer-1faF_F {
+    margin: auto;
+    width: var(--custom-guild-shop-content-width);
+    position: relative;
+    z-index: 1
+}
+
+@media (max-width:1439px) {
+    .contentContainer-1faF_F {
+        width: var(--custom-guild-shop-content-width-reduced)
+    }
+}
+
+.tabContainer-2CNeKV {
+    border-top: 1px solid var(--background-modifier-hover)
+}
+
+.sparkleCloudTop-3D79_3 {
+    top: 48px;
+    left: 0
+}
+
+.sparkleCloudBottom-33rbkJ {
+    bottom: 0;
+    right: 0
+}
+
+.sparkleCloudBottom-33rbkJ,
+.sparkleCloudTop-3D79_3 {
+    position: absolute;
+    opacity: 1;
+    -webkit-transition: opacity .5s ease-in-out;
+    transition: opacity .5s ease-in-out;
+    pointer-events: none;
+    z-index: 0
+}
+
+@media (max-width:1789px) {
+
+    .sparkleCloudBottom-33rbkJ,
+    .sparkleCloudTop-3D79_3 {
+        opacity: 0
+    }
+}
+
 .container-PSWAEM {
-    padding-bottom: 24px;
-    border-bottom: 1px solid var(--background-modifier-hover)
+    padding-bottom: 24px
+}
+
+@media (max-width:1439px) {
+    .filters-1CqCVQ {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        max-width: var(--custom-guild-shop-content-width-reduced);
+        gap: 16px
+    }
 }
 
 .header-1kgmPb {
@@ -71566,12 +71642,13 @@ strong {
     background: var(--background-message-highlight-hover)
 }
 
-@media (max-width:twoColumnMaxWidth) {
+@media (max-width:1439px) {
     .container-Vrgqxz {
         -webkit-box-orient: vertical;
         -webkit-box-direction: reverse;
         -ms-flex-direction: column-reverse;
-        flex-direction: column-reverse
+        flex-direction: column-reverse;
+        max-width: var(--custom-guild-shop-content-width-reduced)
     }
 
     .container-Vrgqxz .infoContainer-14dbs1 {
@@ -71585,7 +71662,7 @@ html:not(.custom-theme-background) .container-Vrgqxz {
 
 .coverImageContainer-V8-U47 {
     width: 100%;
-    max-width: 655px
+    max-width: var(--custom-guild-shop-content-width-reduced)
 }
 
 .coverImage-2HWWxr {
@@ -71633,34 +71710,6 @@ html:not(.custom-theme-background) .container-Vrgqxz {
     width: 16px;
     height: 16px;
     margin-right: -3px
-}
-
-.container-20Ljoy {
-    -webkit-box-flex: 1;
-    -ms-flex: 1;
-    flex: 1;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: column;
-    flex-direction: column
-}
-
-.content-1tt_Au {
-    padding: 32px 42px
-}
-
-.contentContainer-1faF_F {
-    margin: auto;
-    width: 1044px
-}
-
-@media (max-width:twoColumnMaxWidth) {
-    .contentContainer-1faF_F {
-        width: 688px
-    }
 }
 
 .container-3XgAHv {
@@ -170546,4 +170595,4 @@ html .invoiceCancelRow-dVOR64 {
     margin-bottom: 16px
 }
 
-/*# sourceMappingURL=40532.050fca080f48116c8836.css.map*/
+/*# sourceMappingURL=40532.1e6b9f16783e5c0700bf.css.map*/
