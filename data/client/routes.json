@@ -1480,15 +1480,6 @@
       "PUT"
     ]
   },
-  "CONNECTION_SYNC_CONTACTS_SETTINGS": {
-    "url": "/users/@me/connections/contacts/@me/external-friend-list-entries/settings",
-    "allowed_methods": [
-      "GET",
-      "HEAD",
-      "OPTIONS",
-      "PUT"
-    ]
-  },
   "CONNECTION_ACCESS_TOKEN": {
     "url": "/users/@me/connections/:param/:param/access-token",
     "allowed_methods": [
