@@ -22,7 +22,7 @@
     "populations": [
       {
         "buckets": {
-          "2": {
+          "none": {
             "rollout": [
               {
                 "start": 0,
@@ -42,7 +42,7 @@
       },
       {
         "buckets": {
-          "1": {
+          "none": {
             "rollout": [
               {
                 "start": 0,
