@@ -2490,6 +2490,8 @@
   "INSTANT_INVITE_BANNED_INFO": "\"Uh-oh. Looks like you've been banned.\"",
   "INSTANT_INVITE_DIRECT_FRIEND_DESCRIPTION": "\"Accepting this invite will add **!!{username}!!** as your friend on Discord.\"",
   "INSTANT_INVITE_DIRECT_FRIEND_DESCRIPTION_REGISTER": "\"Create an account and add **!!{username}!!** as your friend on Discord.\"",
+  "INSTANT_INVITE_DISABLED_ALERT_TITLE": "\"Invites are paused in this server\"",
+  "INSTANT_INVITE_DISABLED_ALERT_SUBTITLE": "\"An admin has temporarily disabled invites\"",
   "DEEPLINK_BROWSER_TITLE": "\"Discord App Detected\"",
   "DEEPLINK_BROWSER_PROMPT": "\"Do you want to open this link in your Discord app?\"",
   "DEEPLINK_BROWSER_APP_OPENED": "\"We've opened the link in your Discord app. You can close this browser tab now.\"",
