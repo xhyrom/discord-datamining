@@ -102672,7 +102672,10 @@ html:not(.custom-theme-background) .container-Vrgqxz {
 
 .premiumFeatureBannerBackground-Epwl-X {
     border-radius: var(--radius-sm);
-    background: linear-gradient(0deg, rgba(0, 0, 0, .2), rgba(0, 0, 0, .2)), linear-gradient(187deg, var(--premium-tier-0-header-gradient-1) -9.85%, var(--premium-tier-0-header-gradient-2) 35.44%, var(--premium-tier-0-header-gradient-3) 55.85%, var(--premium-tier-0-header-gradient-4) 100.07%, var(--premium-tier-0-header-gradient-5) 110.26%)
+    background: linear-gradient(0deg, rgba(0, 0, 0, .2), rgba(0, 0, 0, .2)), linear-gradient(187deg, var(--premium-tier-0-header-gradient-1) -9.85%, var(--premium-tier-0-header-gradient-2) 35.44%, var(--premium-tier-0-header-gradient-3) 55.85%, var(--premium-tier-0-header-gradient-4) 100.07%, var(--premium-tier-0-header-gradient-5) 110.26%);
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center
 }
 
 .container-5BK5-N {
@@ -109680,7 +109683,8 @@ html .tabBadge-h4HGed {
     position: relative;
     -webkit-box-flex: 1;
     -ms-flex: 1;
-    flex: 1
+    flex: 1;
+    height: 100px
 }
 
 .avatar1-1fM5wq {
@@ -170542,4 +170546,4 @@ html .invoiceCancelRow-dVOR64 {
     margin-bottom: 16px
 }
 
-/*# sourceMappingURL=40532.885a425402b84265c6f6.css.map*/
+/*# sourceMappingURL=40532.050fca080f48116c8836.css.map*/
