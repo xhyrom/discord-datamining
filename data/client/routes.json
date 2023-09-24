@@ -346,6 +346,16 @@
       "POST"
     ]
   },
+  "GUILD_ROLE_MEMBER_COUNTS": {
+    "url": "/guilds/:param/roles/member-counts",
+    "allowed_methods": [
+      "DELETE",
+      "GET",
+      "HEAD",
+      "OPTIONS",
+      "PATCH"
+    ]
+  },
   "GUILD_ROLE_CONNECTIONS_CONFIGURATIONS": {
     "url": "/guilds/:param/roles/connections-configurations",
     "allowed_methods": [
@@ -356,10 +366,25 @@
       "PATCH"
     ]
   },
+  "GUILD_ROLE_MEMBER_IDS": {
+    "url": "/guilds/:param/roles/:param/member-ids",
+    "allowed_methods": [
+      "GET",
+      "HEAD",
+      "OPTIONS"
+    ]
+  },
   "GUILD_ROLE": {
     "url": "/guilds/:param/roles/:param",
     "allowed_methods": [
       "DELETE",
+      "OPTIONS",
+      "PATCH"
+    ]
+  },
+  "GUILD_ROLE_MEMBERS": {
+    "url": "/guilds/:param/roles/:param/members",
+    "allowed_methods": [
       "OPTIONS",
       "PATCH"
     ]
@@ -370,6 +395,13 @@
       "GET",
       "HEAD",
       "OPTIONS"
+    ]
+  },
+  "GUILD_ROLE_CONNECTIONS_ASSIGN": {
+    "url": "/guilds/:param/roles/:param/connections/assign",
+    "allowed_methods": [
+      "OPTIONS",
+      "POST"
     ]
   },
   "GUILD_ROLE_CONNECTIONS_UNASSIGN": {
