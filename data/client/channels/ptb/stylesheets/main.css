@@ -163249,7 +163249,6 @@ html .invoiceCancelRow-3s2UuC {
     grid-column: 1/-1;
     margin-top: 40px;
     position: relative;
-    background-size: cover;
     width: 100%;
     max-width: 1060px;
     height: 240px;
@@ -163267,7 +163266,9 @@ html .invoiceCancelRow-3s2UuC {
     -webkit-box-pack: center;
     -ms-flex-pack: center;
     justify-content: center;
-    gap: var(--spacing-16)
+    gap: var(--spacing-16);
+    outline: 2px solid transparent;
+    outline-offset: -2px
 }
 
 .categoryBanner-uG9Olv {
@@ -170616,4 +170617,4 @@ html .invoiceCancelRow-dVOR64 {
     margin-bottom: 16px
 }
 
-/*# sourceMappingURL=40532.59d1793bbdedd92fbff3.css.map*/
+/*# sourceMappingURL=40532.17902a619c8b2aa5a8b0.css.map*/
