@@ -62,6 +62,8 @@
 <p>A: At this time, the new Members page is available to all Community-enabled servers.</p>
 <p><strong>Q: How are the Signals defined?</strong></p>
 <p id="docs-internal-guid-8ac37960-7fff-a481-2afc-ef6b4b2623eb">A: We can’t share the specific details around the Unusual DM Activity signal at this time. The Timed Out signals are displayed for users who have been timed out.</p>
+<p id="docs-internal-guid-133f1c76-7fff-1f21-fbf5-c2194c47837a"><strong>Q: If a member has "Unknown" under Invite Code, then what does this mean?</strong></p>
+<p>A: This means that the member joined the server through Server Discovery, through a bot, or the member joined the server before June 21, 2023.</p>
 <p id="docs-internal-guid-4f6d035e-7fff-cb0e-2232-62dca65f1ecc"><strong>Q: Who can see the Members page?</strong></p>
 <p>A: Currently, the Members page is visible for the server’s owner and admins who have admin/manage server/kick/ban permissions.</p>
 <p>Specific information like invite codes will require Manage Server permission.</p>
