@@ -12518,7 +12518,9 @@
                 broadcastInfoTooltip: "broadcastInfoTooltip-leBbLw",
                 addImageHint: "addImageHint-zpA22t",
                 imagePreview: "imagePreview-1tHSL8",
-                imagePreviewInner: "imagePreviewInner-1gBjgW"
+                imagePreviewInner: "imagePreviewInner-1gBjgW",
+                autoStartToggle: "autoStartToggle-HhMQER",
+                autoStartTitle: "autoStartTitle-32bWco"
             }
         },
         488589: e => {
@@ -26911,4 +26913,4 @@
         }
     }
 ]);
-//# sourceMappingURL=d12c24c3e48c77e21cfa.js.map
+//# sourceMappingURL=eb67b8ba619829cdb87c.js.map
