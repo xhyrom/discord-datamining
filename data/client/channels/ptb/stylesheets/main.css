@@ -154101,6 +154101,19 @@ html .invoiceCancelRow-3s2UuC {
     width: 100%
 }
 
+.autoStartToggle-HhMQER {
+    margin-top: 20px
+}
+
+.autoStartTitle-32bWco {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center
+}
+
 .header-3U-bWb {
     margin: 24px;
     display: -webkit-box;
@@ -170902,4 +170915,4 @@ html .invoiceCancelRow-dVOR64 {
     margin-bottom: 16px
 }
 
-/*# sourceMappingURL=40532.028f69e03163d9c8e6eb.css.map*/
+/*# sourceMappingURL=40532.2a8b36bcabb95d049a0a.css.map*/
