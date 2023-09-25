@@ -8,12 +8,12 @@
             <li><a href="#h_01GWJJPZTY0EKDJJSAHPBA6VWN" target="_self">Mobile</a></li>
         </ul>
     </li>
-    <li><a href="#h_01GWJJX4GZDK1QJAXZBB7N4RNG" target="_self">FAQ</a></li>
+    <li><a href="https://support.discord.com/hc/en-us/articles/13410113109911#h_01GWJJX4GZDK1QJAXZBB7N4RNG">FAQ</a></li>
 </ul>
 <h1 id="h_01GWJJPDWA7210GPEJB5Z4R5WC">What are avatar decorations?</h1>
 <p><span style="color: #444746; background-color: #ffffff;" data-darkreader-inline-color="" data-darkreader-inline-bgcolor="">Avatar decorations are a way to customize your avatar on Discord! You can choose from several decoration options to add more flair to your avatar, or overall profile aesthetic.</span></p>
 <p class="wysiwyg-text-align-left"><img src="https://support.discord.com/hc/article_attachments/13409698900119"></p>
-<h3 class="wysiwyg-text-align-left">The available selection of avatar decorations will change periodically, and can be used by Nitro Subscribers for a limited time only. To learn ore about Nitro, check out this <a href="https://support.discord.com/hc/en-us/articles/115000435108-What-are-Nitro-Nitro-Basic-" target="_blank" rel="noopener noreferrer">article</a>.</h3>
+<h3 id="h_01HB74KJDRTSZ1V2QDHV02C16C" class="wysiwyg-text-align-left">The available selection of avatar decorations will change periodically, and can be used by Nitro Subscribers for a limited time only. To learn ore about Nitro, check out this <a href="https://support.discord.com/hc/en-us/articles/115000435108-What-are-Nitro-Nitro-Basic-" target="_blank" rel="noopener noreferrer">article</a>.</h3>
 <h1 id="h_01GWJJPN9PTEB6JWYR9DZQZSQY">How do I add an avatar decoration? </h1>
 <h2 id="h_01GWJJPTV8YQ3C3BDW7Q93ARGX">Desktop</h2>
 <p>1. On the desktop app or web app, head into your <strong>User Settings </strong>by selecting the cogwheel [<img src="https://support.discord.com/hc/article_attachments/13409843259799" alt="Cog.png">]. </p>
