@@ -12351,7 +12351,7 @@
   "INVITES_DISABLED_DESCRIPTION": "\"Invite links, embeds, and vanity urls will still be visible, but their usage will be paused. New users will no longer be able to join this server. Managing invites will still work. [Learn More]({helpArticleUrl})\"",
   "INVITES_DISABLED_DESCRIPTION_MOBILE": "\"Invite links, embeds, and vanity urls will still be visible, but new users will no longer be able to join this server. [Learn More]({helpArticleUrl})\"",
   "DISABLE_DMS": "\"Pause DMs\"",
-  "DISABLE_DMS_DESCRIPTION": "\"Temporarily stops new direct messages from being sent between members in your server. Friends can still DM each other, and moderators can still DM members.\"",
+  "DISABLE_DMS_DESCRIPTION": "\"Temporarily stops new direct messages from being sent between members in your server. Friends can still DM each other, and moderators can still DM members, and your Apps can still DM members.\"",
   "PAYMENT_AUTHORIZATION_SUCCEEDED": "\"Payment Authorized\"",
   "PAYMENT_AUTHORIZING": "\"Authorizing\"",
   "PAYMENT_AUTHORIZATION_EXPIRED": "\"Payment authorization link has expired.\"",
