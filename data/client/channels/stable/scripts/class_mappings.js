@@ -6290,6 +6290,7 @@
                 cardsContainer: "cardsContainer-2kdrm8",
                 shop: "shop-3sIaH8",
                 itemTypeTitle: "itemTypeTitle-fjLyoh",
+                pageWrapper: "pageWrapper-3Au6sJ",
                 closeWrapper: "closeWrapper-4ioOGM"
             }
         },
@@ -6327,6 +6328,12 @@
                 checkmarkWrapper: "checkmarkWrapper-30c52R",
                 checkmark: "checkmark-1jbYXa",
                 profileEffectShopPreview: "profileEffectShopPreview-1yyQoX"
+            }
+        },
+        170795: e => {
+            e.exports = {
+                wrapper: "wrapper-2pTC1G",
+                reload: "reload-1YKUlg"
             }
         },
         145763: e => {
@@ -6645,9 +6652,14 @@
         },
         754148: e => {
             e.exports = {
+                twoColumnWidth: "1439px",
+                fullShopPageWidth: "1789px",
                 container: "container-20Ljoy",
                 content: "content-1tt_Au",
-                contentContainer: "contentContainer-1faF_F"
+                contentContainer: "contentContainer-1faF_F",
+                tabContainer: "tabContainer-2CNeKV",
+                sparkleCloudTop: "sparkleCloudTop-3D79_3",
+                sparkleCloudBottom: "sparkleCloudBottom-33rbkJ"
             }
         },
         844275: e => {
@@ -6665,15 +6677,16 @@
         },
         873159: e => {
             e.exports = {
+                twoColumnWidth: "1439px",
                 container: "container-PSWAEM",
+                filters: "filters-1CqCVQ",
                 header: "header-1kgmPb",
                 tabs: "tabs-39_NWj",
                 tab: "tab-2E41_Z",
                 tabSelected: "tabSelected-1a9MlN",
                 tabDisabled: "tabDisabled-1l0OgZ",
                 tabPreviewClose: "tabPreviewClose-Ic6Mxe",
-                iconContainer: "iconContainer-2gP6IM",
-                filters: "filters-1CqCVQ"
+                iconContainer: "iconContainer-2gP6IM"
             }
         },
         824426: e => {
@@ -6692,6 +6705,7 @@
         },
         894756: e => {
             e.exports = {
+                twoColumnWidth: "1439px",
                 container: "container-Vrgqxz",
                 infoContainer: "infoContainer-14dbs1",
                 coverImageContainer: "coverImageContainer-V8-U47",
@@ -7734,6 +7748,18 @@
                 checkmark: "checkmark-bW9BK8",
                 animate: "animate-2lCxlp",
                 arrow: "arrow-3MeJHj"
+            }
+        },
+        516499: e => {
+            e.exports = {
+                header: "header-2Yd2Hh",
+                subheader: "subheader-18b4EV",
+                closeButton: "closeButton-3evMqZ",
+                button: "button-2w-KF8",
+                image: "image-3ZkQfv",
+                video: "video-3ULxIr",
+                media: "media-1EIjIn",
+                mediaContainer: "mediaContainer-1GNZ1u"
             }
         },
         421657: e => {
@@ -16368,9 +16394,9 @@
         330913: e => {
             e.exports = {
                 emojiSection: "emojiSection-3QtaWO",
+                betaTag: "betaTag-1M5-PW",
                 primaryEmoji: "primaryEmoji-2Og_xG",
                 ctaButton: "ctaButton-23h6Qo",
-                inventoryCtaButton: "inventoryCtaButton-14Yg7U",
                 guildSection: "guildSection-2Zyzy8",
                 guildTitle: "guildTitle-1yMWvh",
                 guildIcon: "guildIcon-EvT-p6",
@@ -16387,14 +16413,13 @@
                 popoutContent: "popoutContent-3RWpUF",
                 popoutLoader: "popoutLoader-3rb1tr",
                 joinGuildLink: "joinGuildLink-378B05",
-                reactionTooltip: "reactionTooltip-1X6qQ5",
                 reactionEmojiDetailsUnfurlGuildDetails: "reactionEmojiDetailsUnfurlGuildDetails-1ZuobB",
                 reactionEmojiDetailsClickable: "reactionEmojiDetailsClickable-2w5rsT",
                 emojiDetailsLoader: "emojiDetailsLoader-rFTeUy",
                 reactionEmojiDetailsArrow: "reactionEmojiDetailsArrow-23kwYa",
                 reactionEmojiDetailsArrowCollapsed: "reactionEmojiDetailsArrowCollapsed-44VNY1",
                 reactionEmojiDetailsDivider: "reactionEmojiDetailsDivider-2Sz8O-",
-                emojiDescription: "emojiDescription-2kZlpZ",
+                inventoryCtaButton: "inventoryCtaButton-14Yg7U",
                 ctaDescription: "ctaDescription-1zR-Kd",
                 nitroWheel: "nitroWheel-OHIsdP"
             }
@@ -16527,7 +16552,6 @@
                 reactionInner: "reactionInner-1po5__",
                 remainingReactions: "remainingReactions-gVC95O",
                 reactionTooltip: "reactionTooltip-29BsaC",
-                reactionTooltipContent: "reactionTooltipContent-ngRYp2",
                 reactionTooltipEmoji: "reactionTooltipEmoji-1pBYSk",
                 reactionTooltipText: "reactionTooltipText-3OhRFp",
                 reactionTooltipInner: "reactionTooltipInner-1LZ-lG",
@@ -16539,7 +16563,6 @@
                 burstAnimatedCounter: "burstAnimatedCounter-2ic_eL",
                 burstReactionTooltipUpsellCta: "burstReactionTooltipUpsellCta-2WDzWM",
                 premiumIcon: "premiumIcon-e-K62h",
-                addReactionTooltip: "addReactionTooltip-16ZROi",
                 sparkles: "sparkles-A95Yt-",
                 burstGlow: "burstGlow-uhab6Q"
             }
@@ -16563,22 +16586,17 @@
                 reactionInner: "reactionInner-YJjOtT",
                 remainingReactions: "remainingReactions-1r1Dvu",
                 reactionTooltip: "reactionTooltip-3IOBwg",
-                reactionTooltipContent: "reactionTooltipContent-3XfUAU",
                 reactionTooltipEmoji: "reactionTooltipEmoji-1Rv8jQ",
                 reactionTooltipText: "reactionTooltipText-iAWHhX",
                 reactionTooltipInner: "reactionTooltipInner-Pl3uOD",
                 burstReactionTooltipInner: "burstReactionTooltipInner-2aCEVH",
                 burstReactionTooltipMessage: "burstReactionTooltipMessage-2UCrKo",
                 burstReactionTooltipSpacer: "burstReactionTooltipSpacer-1oUrib",
-                burstBetaAlertTitle: "burstBetaAlertTitle-2S9ciS",
                 burstReactionTooltipPrompt: "burstReactionTooltipPrompt-3XAM1h",
                 burstReactionTooltipNitroIcon: "burstReactionTooltipNitroIcon-34FUA3",
                 burstAnimatedCounter: "burstAnimatedCounter-3zZXOt",
                 burstReactionTooltipUpsellCta: "burstReactionTooltipUpsellCta-2WX3Zh",
                 premiumIcon: "premiumIcon-xSTd_o",
-                addReactionTooltip: "addReactionTooltip-THgyYF",
-                sparkleStar: "sparkleStar-evJw9v",
-                sparklePlus: "sparklePlus-V5DWdp",
                 sparkles: "sparkles-1yqog1",
                 burstGlow: "burstGlow-3AZMzF"
             }
@@ -26855,4 +26873,4 @@
         }
     }
 ]);
-//# sourceMappingURL=04eb28bce00b98631adb.js.map
+//# sourceMappingURL=88a63f71c5f04151442d.js.map

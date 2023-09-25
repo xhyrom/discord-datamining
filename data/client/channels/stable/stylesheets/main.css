@@ -13409,7 +13409,8 @@ html.disable-forced-colors * {
 }
 
 .avatarSection-3AUnZj {
-    width: 52px
+    width: 52px;
+    cursor: pointer
 }
 
 .content-wpwQTU {
@@ -13425,11 +13426,11 @@ html.disable-forced-colors * {
     flex-direction: column;
     -webkit-box-pack: center;
     -ms-flex-pack: center;
-    justify-content: center
+    justify-content: center;
+    cursor: pointer
 }
 
 .ctaLink-33fT8d {
-    cursor: pointer;
     text-decoration: underline
 }
 
@@ -17789,6 +17790,23 @@ html.disable-forced-colors * {
     user-select: text
 }
 
+.theme-dark .betaTag-1M5-PW {
+    position: absolute;
+    top: -4px;
+    right: -8px;
+    color: var(--premium-tier-2-pink-for-gradients-2);
+    background-color: #fff
+}
+
+.theme-light .betaTag-1M5-PW {
+    position: absolute;
+    top: -4px;
+    right: -8px;
+    color: var(--white-100);
+    background: -webkit-gradient(linear, left top, right top, from(var(--premium-tier-2-pink-for-gradients)), color-stop(var(--premium-tier-2-pink-for-gradients-2)), to(var(--premium-tier-2-purple-for-gradients)));
+    background: linear-gradient(90deg, var(--premium-tier-2-pink-for-gradients), var(--premium-tier-2-pink-for-gradients-2), var(--premium-tier-2-purple-for-gradients))
+}
+
 .primaryEmoji-2Og_xG {
     min-width: var(--custom-emoji-size-jumbo-emoji);
     min-height: var(--custom-emoji-size-jumbo-emoji);
@@ -17797,10 +17815,6 @@ html.disable-forced-colors * {
 
 .ctaButton-23h6Qo {
     margin: 16px auto 0
-}
-
-.inventoryCtaButton-14Yg7U {
-    margin: 8px auto 0
 }
 
 .guildSection-2Zyzy8 {
@@ -17905,12 +17919,8 @@ html.disable-forced-colors * {
     text-decoration: underline
 }
 
-.reactionTooltip-1X6qQ5 {
-    max-width: 290px
-}
-
 .reactionEmojiDetailsUnfurlGuildDetails-1ZuobB {
-    margin: 8px 0
+    margin: 16px 0 8px
 }
 
 .reactionEmojiDetailsClickable-2w5rsT {
@@ -17969,9 +17979,8 @@ html.disable-forced-colors * {
     margin: 16px 0
 }
 
-.emojiDescription-2kZlpZ {
-    margin-top: 4px;
-    padding: 0 8px
+.inventoryCtaButton-14Yg7U {
+    margin: 8px auto 0
 }
 
 .ctaDescription-1zR-Kd {
@@ -26412,7 +26421,9 @@ code {
 :root {
     --custom-guild-shop-page-two-column-max-width: 1439px;
     --custom-aspect-stable-image-container-padding: 20px;
-    --custom-monetization-info-table-expandable-rows-toggle-expand-column-width: 30px
+    --custom-monetization-info-table-expandable-rows-toggle-expand-column-width: 30px;
+    --custom-guild-shop-content-width: 1044px;
+    --custom-guild-shop-content-width-reduced: 688px
 }
 
 :root {
@@ -52933,7 +52944,7 @@ html .progress-2Otdc- {
 }
 
 .reactionTooltip-29BsaC {
-    max-width: unset;
+    max-width: 288px;
     padding: 16px;
     overflow: hidden;
     background: var(--background-floating);
@@ -52942,17 +52953,7 @@ html .progress-2Otdc- {
     -webkit-box-shadow: var(--elevation-high);
     box-shadow: var(--elevation-high);
     color: var(--text-normal);
-    border-radius: 5px
-}
-
-.reactionTooltipContent-ngRYp2 {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
-    padding: 12px
+    border-radius: var(--radius-xs)
 }
 
 .reactionTooltipEmoji-1pBYSk {
@@ -52961,8 +52962,7 @@ html .progress-2Otdc- {
 }
 
 .reactionTooltipText-3OhRFp {
-    margin-left: 12px;
-    max-width: 240px
+    margin-left: 12px
 }
 
 .reactionTooltipInner-1LZ-lG {
@@ -52988,8 +52988,7 @@ html .progress-2Otdc- {
 }
 
 .burstReactionTooltipInner-vjhXLF {
-    pointer-events: all;
-    max-width: 290px
+    pointer-events: all
 }
 
 .burstReactionTooltipInner-vjhXLF:hover {
@@ -53031,7 +53030,8 @@ html .progress-2Otdc- {
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
-    width: 100%
+    width: 100%;
+    margin: 12px 0
 }
 
 .burstReactionTooltipNitroIcon-3I3oFz {
@@ -53055,10 +53055,6 @@ html .progress-2Otdc- {
 
 .premiumIcon-e-K62h {
     margin-right: 4px
-}
-
-.addReactionTooltip-16ZROi {
-    max-width: 300px
 }
 
 .sparkles-A95Yt- {
@@ -53205,21 +53201,20 @@ html .progress-2Otdc- {
     align-items: center;
     -ms-flex-wrap: wrap;
     flex-wrap: wrap;
-    margin-bottom: -.5rem;
-    padding-bottom: .25rem
+    margin-bottom: -8px;
+    padding-bottom: 4px
 }
 
 .icon-1q31jb,
 .reactionBtn-3I19bq {
-    width: 1rem;
-    height: 1rem
+    width: 16px;
+    height: 16px
 }
 
 .reactionBtn-3I19bq {
-    position: relative;
-    margin-left: .25rem;
-    margin-right: .25rem;
-    margin-bottom: .125rem;
+    margin-left: 4px;
+    margin-right: 4px;
+    margin-bottom: 2px;
     cursor: pointer;
     visibility: hidden;
     color: var(--interactive-normal)
@@ -53241,16 +53236,27 @@ html .progress-2Otdc- {
 }
 
 .reactionBtn-3I19bq.forceShow-K8Ygj7 {
-    visibility: visible
-}
-
-.reactionBtn-3I19bq.forceShowLook-1zmTr- {
-    padding: .25rem .375rem;
-    border-radius: .5rem;
+    visibility: visible;
+    padding: 4px 6px;
+    border-radius: 8px;
     background-color: var(--background-secondary);
     border: 1px solid transparent;
     margin-left: 0;
-    margin-bottom: .25rem
+    margin-bottom: 4px
+}
+
+.reactionBtn-3I19bq.forceShow-K8Ygj7:hover {
+    background-color: var(--background-primary);
+    border-color: hsl(var(--white-500-hsl)/.2)
+}
+
+.reactionBtn-3I19bq.forceShowLook-1zmTr- {
+    padding: 4px 6px;
+    border-radius: 8px;
+    background-color: var(--background-secondary);
+    border: 1px solid transparent;
+    margin-left: 0;
+    margin-bottom: 4px
 }
 
 .reactionBtn-3I19bq.forceShowLook-1zmTr-:hover {
@@ -53263,14 +53269,14 @@ html .progress-2Otdc- {
 }
 
 .reaction-3vwAF2 {
-    border-radius: .5rem;
+    border-radius: 8px;
     cursor: pointer;
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
     -ms-flex-negative: 0;
     flex-shrink: 0;
-    margin-right: .25rem;
-    margin-bottom: .25rem;
+    margin-right: 4px;
+    margin-bottom: 4px;
     -webkit-user-select: none;
     -moz-user-select: none;
     -ms-user-select: none;
@@ -53295,16 +53301,16 @@ html .progress-2Otdc- {
 }
 
 .reaction-3vwAF2 .emoji {
-    width: 1rem;
-    height: 1rem;
-    margin: .125rem 0;
+    width: 16px;
+    height: 16px;
+    margin: 2px 0;
     min-width: auto;
     min-height: auto
 }
 
 .reaction-3vwAF2 .emoji-text {
     color: var(--text-normal);
-    vertical-align: -.125rem;
+    vertical-align: -2px;
     display: inline-block
 }
 
@@ -53351,14 +53357,14 @@ html .progress-2Otdc- {
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
-    padding: .125rem .375rem;
+    padding: 2px 6px;
     position: relative
 }
 
 .reactionCount-26U4As {
     font-size: 0.875rem;
     font-weight: 600;
-    margin-left: .375rem;
+    margin-left: 6px;
     text-align: center;
     color: var(--interactive-normal)
 }
@@ -53408,26 +53414,16 @@ html .progress-2Otdc- {
 }
 
 .reactionTooltip-3IOBwg {
-    max-width: unset;
-    padding: 1rem;
+    max-width: 288px;
+    padding: 16px;
     overflow: hidden;
     background: var(--background-floating);
     font-weight: 500;
-    font-size: .875rem;
+    font-size: 0.875rem;
     -webkit-box-shadow: var(--elevation-high);
     box-shadow: var(--elevation-high);
     color: var(--text-normal);
-    border-radius: .313rem
-}
-
-.reactionTooltipContent-3XfUAU {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
-    padding: 16px
+    border-radius: var(--radius-xs)
 }
 
 .reactionTooltipEmoji-1Rv8jQ {
@@ -53436,8 +53432,7 @@ html .progress-2Otdc- {
 }
 
 .reactionTooltipText-iAWHhX {
-    margin-left: 12px;
-    max-width: 240px
+    margin-left: 12px
 }
 
 .reactionTooltipInner-Pl3uOD {
@@ -53463,8 +53458,7 @@ html .progress-2Otdc- {
 }
 
 .burstReactionTooltipInner-2aCEVH {
-    pointer-events: all;
-    max-width: 290px
+    pointer-events: all
 }
 
 .burstReactionTooltipInner-2aCEVH:hover {
@@ -53499,10 +53493,6 @@ html .progress-2Otdc- {
     border-bottom: 1px solid var(--background-modifier-accent)
 }
 
-.burstBetaAlertTitle-2S9ciS {
-    text-transform: unset
-}
-
 .burstReactionTooltipPrompt-3XAM1h {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -53510,7 +53500,8 @@ html .progress-2Otdc- {
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
-    width: 100%
+    width: 100%;
+    margin: 12px 0
 }
 
 .burstReactionTooltipNitroIcon-34FUA3 {
@@ -53536,24 +53527,6 @@ html .progress-2Otdc- {
     margin-right: 4px
 }
 
-.addReactionTooltip-THgyYF {
-    max-width: 300px
-}
-
-.sparkleStar-evJw9v {
-    top: -32px;
-    left: 16px
-}
-
-.sparklePlus-V5DWdp {
-    top: -6px;
-    left: -20px
-}
-
-.theme-light.custom-theme-background .reaction-3vwAF2 {
-    border: 1px solid var(--background-modifier-accent)
-}
-
 .sparkles-1yqog1 {
     top: -8px;
     left: -8px;
@@ -53567,7 +53540,7 @@ html .progress-2Otdc- {
     right: 0;
     top: 0;
     bottom: 0;
-    border-radius: .5rem;
+    border-radius: 8px;
     z-index: -1;
     opacity: .35
 }
@@ -71457,9 +71430,83 @@ strong {
     color: var(--text-link)
 }
 
+.container-20Ljoy {
+    -webkit-box-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    position: relative;
+    z-index: 0
+}
+
+.content-1tt_Au {
+    padding: 32px 42px
+}
+
+.contentContainer-1faF_F {
+    margin: auto;
+    width: var(--custom-guild-shop-content-width);
+    position: relative;
+    z-index: 1
+}
+
+@media (max-width:1439px) {
+    .contentContainer-1faF_F {
+        width: var(--custom-guild-shop-content-width-reduced)
+    }
+}
+
+.tabContainer-2CNeKV {
+    border-top: 1px solid var(--background-modifier-hover)
+}
+
+.sparkleCloudTop-3D79_3 {
+    top: 48px;
+    left: 0
+}
+
+.sparkleCloudBottom-33rbkJ {
+    bottom: 0;
+    right: 0
+}
+
+.sparkleCloudBottom-33rbkJ,
+.sparkleCloudTop-3D79_3 {
+    position: absolute;
+    opacity: 1;
+    -webkit-transition: opacity .5s ease-in-out;
+    transition: opacity .5s ease-in-out;
+    pointer-events: none;
+    z-index: 0
+}
+
+@media (max-width:1789px) {
+
+    .sparkleCloudBottom-33rbkJ,
+    .sparkleCloudTop-3D79_3 {
+        opacity: 0
+    }
+}
+
 .container-PSWAEM {
-    padding-bottom: 24px;
-    border-bottom: 1px solid var(--background-modifier-hover)
+    padding-bottom: 24px
+}
+
+@media (max-width:1439px) {
+    .filters-1CqCVQ {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        max-width: var(--custom-guild-shop-content-width-reduced);
+        gap: 16px
+    }
 }
 
 .header-1kgmPb {
@@ -71595,12 +71642,13 @@ strong {
     background: var(--background-message-highlight-hover)
 }
 
-@media (max-width:twoColumnMaxWidth) {
+@media (max-width:1439px) {
     .container-Vrgqxz {
         -webkit-box-orient: vertical;
         -webkit-box-direction: reverse;
         -ms-flex-direction: column-reverse;
-        flex-direction: column-reverse
+        flex-direction: column-reverse;
+        max-width: var(--custom-guild-shop-content-width-reduced)
     }
 
     .container-Vrgqxz .infoContainer-14dbs1 {
@@ -71614,7 +71662,7 @@ html:not(.custom-theme-background) .container-Vrgqxz {
 
 .coverImageContainer-V8-U47 {
     width: 100%;
-    max-width: 655px
+    max-width: var(--custom-guild-shop-content-width-reduced)
 }
 
 .coverImage-2HWWxr {
@@ -71662,34 +71710,6 @@ html:not(.custom-theme-background) .container-Vrgqxz {
     width: 16px;
     height: 16px;
     margin-right: -3px
-}
-
-.container-20Ljoy {
-    -webkit-box-flex: 1;
-    -ms-flex: 1;
-    flex: 1;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: column;
-    flex-direction: column
-}
-
-.content-1tt_Au {
-    padding: 32px 42px
-}
-
-.contentContainer-1faF_F {
-    margin: auto;
-    width: 1044px
-}
-
-@media (max-width:twoColumnMaxWidth) {
-    .contentContainer-1faF_F {
-        width: 688px
-    }
 }
 
 .container-3XgAHv {
@@ -102701,7 +102721,10 @@ html:not(.custom-theme-background) .container-Vrgqxz {
 
 .premiumFeatureBannerBackground-Epwl-X {
     border-radius: var(--radius-sm);
-    background: linear-gradient(0deg, rgba(0, 0, 0, .2), rgba(0, 0, 0, .2)), linear-gradient(187deg, var(--premium-tier-0-header-gradient-1) -9.85%, var(--premium-tier-0-header-gradient-2) 35.44%, var(--premium-tier-0-header-gradient-3) 55.85%, var(--premium-tier-0-header-gradient-4) 100.07%, var(--premium-tier-0-header-gradient-5) 110.26%)
+    background: linear-gradient(0deg, rgba(0, 0, 0, .2), rgba(0, 0, 0, .2)), linear-gradient(187deg, var(--premium-tier-0-header-gradient-1) -9.85%, var(--premium-tier-0-header-gradient-2) 35.44%, var(--premium-tier-0-header-gradient-3) 55.85%, var(--premium-tier-0-header-gradient-4) 100.07%, var(--premium-tier-0-header-gradient-5) 110.26%);
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center
 }
 
 .container-5BK5-N {
@@ -102729,7 +102752,8 @@ html:not(.custom-theme-background) .container-Vrgqxz {
 
 .avatars-bkeu7E {
     position: relative;
-    width: 136px
+    width: 136px;
+    height: 100px
 }
 
 .avatar1-1rcc7k {
@@ -102752,7 +102776,7 @@ html:not(.custom-theme-background) .container-Vrgqxz {
     position: absolute;
     -webkit-transform: rotate(-9.161deg) scale(.85);
     transform: rotate(-9.161deg) scale(.85);
-    bottom: -12px;
+    top: 56px;
     left: 24px
 }
 
@@ -102760,7 +102784,8 @@ html:not(.custom-theme-background) .container-Vrgqxz {
     -webkit-box-flex: 1;
     -ms-flex: 1;
     flex: 1;
-    padding: 18px 12px 18px 4px
+    padding: 18px 12px 18px 4px;
+    margin: auto 0
 }
 
 .title-CXxZie {
@@ -103755,8 +103780,8 @@ html:not(.custom-theme-background) .container-Vrgqxz {
 }
 
 .collectiblesBannerFullscreen-1ukkvK {
-    margin-top: -40px;
-    margin-bottom: 80px;
+    margin-top: -50px;
+    margin-bottom: 24px;
     max-width: 824px;
     min-width: 600px;
     width: 100%
@@ -109707,7 +109732,8 @@ html .tabBadge-h4HGed {
     position: relative;
     -webkit-box-flex: 1;
     -ms-flex: 1;
-    flex: 1
+    flex: 1;
+    height: 100px
 }
 
 .avatar1-1fM5wq {
@@ -109955,7 +109981,7 @@ html .tabBadge-h4HGed {
     -webkit-box-flex: 1;
     -ms-flex: 1;
     flex: 1;
-    overflow: scroll;
+    overflow: auto;
     margin: 0 16px 0 24px
 }
 
@@ -139950,6 +139976,46 @@ html .invoiceCancelRow-3s2UuC {
     margin-bottom: var(--spacing-8)
 }
 
+.header-2Yd2Hh {
+    margin: var(--spacing-16) 0
+}
+
+.subheader-18b4EV {
+    margin-top: var(--spacing-16)
+}
+
+.closeButton-3evMqZ {
+    position: absolute;
+    top: var(--spacing-12);
+    right: 0
+}
+
+.button-2w-KF8:not(:first-child) {
+    margin-right: var(--spacing-16)
+}
+
+.image-3ZkQfv {
+    aspect-ratio: 4/3;
+    border-radius: var(--radius-xs)
+}
+
+.image-3ZkQfv,
+.video-3ULxIr {
+    width: 100%
+}
+
+.media-1EIjIn,
+.mediaContainer-1GNZ1u {
+    border-radius: var(--radius-xs)
+}
+
+.mediaContainer-1GNZ1u {
+    padding: var(--spacing-16);
+    background-color: var(--background-secondary);
+    margin-top: var(--spacing-12);
+    margin-bottom: var(--spacing-16)
+}
+
 .textArea-3GydfY {
     background-color: var(--input-background);
     padding-bottom: 36px
@@ -156341,6 +156407,27 @@ html .invoiceCancelRow-3s2UuC {
     background: linear-gradient(95.07deg, var(--premium-tier-2-purple-for-gradients), var(--premium-tier-2-purple-for-gradients-2) 49.96%, var(--premium-tier-2-pink-for-gradients) 95.93%)
 }
 
+.buttonsContainer-3E5j1w {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex
+}
+
+.removeButton-1o8L8B {
+    margin-left: 4px
+}
+
+.buttonHighlighted-3QKRPw {
+    background: linear-gradient(95.07deg, var(--premium-tier-2-purple-for-gradients), var(--premium-tier-2-purple-for-gradients-2) 49.96%, var(--premium-tier-2-pink-for-gradients) 95.93%)
+}
+
+.newBadge-2Y53Os {
+    margin-left: 2px;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center
+}
+
 .tryItOutSection-W9qeGH {
     margin: 40px -24px 0;
     width: -webkit-fit-content;
@@ -156430,27 +156517,6 @@ html .invoiceCancelRow-3s2UuC {
     margin-right: -24px;
     background-image: -webkit-gradient(linear, left top, right top, from(var(--premium-tier-2-pink-for-gradients)), color-stop(50%, var(--premium-tier-2-purple-for-gradients)), to(var(--premium-tier-2-pink-for-gradients)));
     background-image: linear-gradient(90deg, var(--premium-tier-2-pink-for-gradients), var(--premium-tier-2-purple-for-gradients) 50%, var(--premium-tier-2-pink-for-gradients))
-}
-
-.buttonsContainer-3E5j1w {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex
-}
-
-.removeButton-1o8L8B {
-    margin-left: 4px
-}
-
-.buttonHighlighted-3QKRPw {
-    background: linear-gradient(95.07deg, var(--premium-tier-2-purple-for-gradients), var(--premium-tier-2-purple-for-gradients-2) 49.96%, var(--premium-tier-2-pink-for-gradients) 95.93%)
-}
-
-.newBadge-2Y53Os {
-    margin-left: 2px;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center
 }
 
 .sectionsContainer-3BlPu4 {
@@ -163345,6 +163411,7 @@ html .invoiceCancelRow-3s2UuC {
     overflow: hidden
 }
 
+.shopCard-H3oN50:focus-within,
 .shopCard-H3oN50:hover {
     -webkit-transform: translateY(-4px);
     transform: translateY(-4px)
@@ -163504,20 +163571,24 @@ html .invoiceCancelRow-3s2UuC {
     transition: opacity .5s
 }
 
+.shopCard-H3oN50:focus-within .innerHover-3lqG6f,
 .shopCard-H3oN50:hover .innerHover-3lqG6f {
     opacity: 1;
     -webkit-transform: translateY(0);
     transform: translateY(0)
 }
 
+.shopCard-H3oN50:focus-within .innerBlur-3NYZ8j,
 .shopCard-H3oN50:hover .innerBlur-3NYZ8j {
     opacity: 0
 }
 
+.shopCard-H3oN50:focus-within .checkmark-1jbYXa,
 .shopCard-H3oN50:hover .checkmark-1jbYXa {
     opacity: 0
 }
 
+.shopCard-H3oN50:focus-within .avatarPurchased-3h_bK-,
 .shopCard-H3oN50:hover .avatarPurchased-3h_bK- {
     opacity: 1
 }
@@ -163528,6 +163599,27 @@ html .invoiceCancelRow-3s2UuC {
     width: 200px;
     top: -10px;
     margin: 0 auto
+}
+
+.wrapper-2pTC1G {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    min-height: 300px
+}
+
+.reload-1YKUlg {
+    margin-top: 24px
 }
 
 .shopLogo-2NbABu {
@@ -163566,7 +163658,8 @@ html .invoiceCancelRow-3s2UuC {
     padding: 60px 0;
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
-    position: relative
+    position: relative;
+    min-width: 300px
 }
 
 .bannerBackgroundWrapper-29zgRc {
@@ -163697,7 +163790,7 @@ html .invoiceCancelRow-3s2UuC {
     padding: 0 32px 32px;
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
-    margin: 44px auto;
+    margin: 44px 0 300px;
     position: relative;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -163713,7 +163806,7 @@ html .invoiceCancelRow-3s2UuC {
 }
 
 .close-1CF18x {
-    position: fixed;
+    position: sticky;
     -webkit-box-pack: end;
     -ms-flex-pack: end;
     justify-content: flex-end;
@@ -163724,7 +163817,6 @@ html .invoiceCancelRow-3s2UuC {
 
 .cardsContainer-2kdrm8 {
     max-width: 1060px;
-    margin-top: 26px;
     display: grid;
     grid-gap: 24px;
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
@@ -163740,9 +163832,24 @@ html .invoiceCancelRow-3s2UuC {
     margin-top: 26px
 }
 
-@media (max-width:1204px) {
-    .page-LilLhg {
-        padding: 32px 84px 32px 32px
+.pageWrapper-3Au6sJ {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: stretch;
+    -ms-flex-align: stretch;
+    align-items: stretch;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    width: 100%;
+    position: relative;
+    left: 20px
+}
+
+@media (max-width:1124px) {
+    .close-1CF18x {
+        position: fixed
     }
 }
 
@@ -163862,7 +163969,7 @@ html .invoiceCancelRow-3s2UuC {
     max-width: 100%;
     max-height: 100%;
     position: relative;
-    margin-top: 24px;
+    margin-top: 40px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -170509,4 +170616,4 @@ html .invoiceCancelRow-dVOR64 {
     margin-bottom: 16px
 }
 
-/*# sourceMappingURL=40532.caad8953c16d2403abfe.css.map*/
+/*# sourceMappingURL=40532.d0e87a2546431fca545f.css.map*/
