@@ -1,7 +1,7 @@
 <h3 id="h_01HACYH70R2MGGRT0ZE24RP1PV">
     <span style="color: #434343;" data-darkreader-inline-color="">This feature is rolling out and will be available to all </span><a href="https://support.discord.com/hc/en-us/articles/115000435108"><span class="wysiwyg-underline" style="color: #1155cc;" data-darkreader-inline-color="">Nitro</span></a><span style="color: #434343;" data-darkreader-inline-color=""> members soon.</span>
 </h3>
-<p class="wysiwyg-text-align-center"><img src="https://support.discord.com/hc/article_attachments/17685937797015" alt="custom_app_icon_preview.gif" width="532" height="532"></p>
+<p class="wysiwyg-text-align-center"><img src="https://support.discord.com/hc/article_attachments/17800376352023" alt="ezgif-2-3bf8156bec.gif" width="481" height="481"></p>
 <p><span class="wysiwyg-font-size-large"><strong>What this article covers: </strong></span></p>
 <ul>
     <li><a href="https://support.discord.com/hc/en-us/articles/17503907209239#h_01HACYH70RNE834ZCQQWMQD2SD">What is a custom app icon?</a></li>
