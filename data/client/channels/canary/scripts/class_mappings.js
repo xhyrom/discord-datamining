@@ -18559,6 +18559,44 @@
                 earlyAccessTag: "earlyAccessTag-s1_WiT"
             }
         },
+        308903: e => {
+            e.exports = {
+                featuredPack: "featuredPack-35VlKz",
+                dimmed: "dimmed-76YycG",
+                featuredPackGuildIcon: "featuredPackGuildIcon-1604EB",
+                featuredPackGuildIconImage: "featuredPackGuildIconImage-5yVnHu",
+                featuredPackTitle: "featuredPackTitle-2gaNDd",
+                featuredPackGuildBadge: "featuredPackGuildBadge-1uU4_r",
+                featuredPackEmojiGrid: "featuredPackEmojiGrid-wAWrO0",
+                featuredPackFooter: "featuredPackFooter-JGmfM6",
+                featuredPackFooterButton: "featuredPackFooterButton-32UXIj"
+            }
+        },
+        398662: e => {
+            e.exports = {
+                root: "root-3wCxvQ",
+                star: "star-1SVBUk",
+                star1: "star1-3JFL2c star-1SVBUk",
+                star2: "star2-1daY_Q star-1SVBUk",
+                star3: "star3-3PbZwo star-1SVBUk",
+                star4: "star4-2NHxXn star-1SVBUk",
+                star5: "star5-w3laph star-1SVBUk",
+                betaTag: "betaTag-wDAeL_",
+                headerText: "headerText-ChsErP",
+                subHeaderText: "subHeaderText-1UEkqQ",
+                nitroWheelHeader: "nitroWheelHeader-3OgvL1",
+                nitroWheelButton: "nitroWheelButton-1IOfxJ",
+                closeButton: "closeButton-1TExuj",
+                content: "content-2Fs4If",
+                featuredPacks: "featuredPacks-3GyQUp",
+                buttonWide: "buttonWide-1I1PS5",
+                footerUpsell: "footerUpsell-2hWHR8",
+                innerButton: "innerButton-qWIgh_",
+                upsellText: "upsellText-xTV86p",
+                getNitroButton: "getNitroButton-1GtCqk",
+                getNitroButtonContents: "getNitroButtonContents-2Khbjz"
+            }
+        },
         476527: e => {
             e.exports = {
                 bogoTrialBadge: "bogoTrialBadge-2-iWF2",
@@ -26873,4 +26911,4 @@
         }
     }
 ]);
-//# sourceMappingURL=bfdb8b32d43953e0be69.js.map
+//# sourceMappingURL=d12c24c3e48c77e21cfa.js.map
