@@ -16215,6 +16215,7 @@
   "OBSCURED_CONTENT_SHOW_CONTENT_ALT": "\"Show content\"",
   "OBSCURED_CONTENT_INFO_LINK_TEXT": "\"Why was this blurred?\"",
   "EXPLICIT_CONTENT_WARNING": "\"This may contain sensitive content\"",
+  "EXPLICIT_CONTENT_WARNING_PENDING": "\"This may contain sensitive content\"",
   "EXPLICIT_CONTENT_WARNING_TOOLTIP": "\"Content Warning: This may contain sensitive content\"",
   "EXPLICIT_CONTENT_ALT": "\"Content Warning: This may contain sensitive content\"",
   "EXPLICIT_CONTENT_BUTTON_TOOLTIP": "\"Reveal sensitive content\"",
