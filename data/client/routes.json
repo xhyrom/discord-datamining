@@ -2776,13 +2776,6 @@
       "OPTIONS"
     ]
   },
-  "ENTITLEMENT_TICKET": {
-    "url": "/users/@me/applications/:param/entitlement-ticket",
-    "allowed_methods": [
-      "OPTIONS",
-      "POST"
-    ]
-  },
   "APPLICATION_TICKET": {
     "url": "/users/@me/applications/:param/ticket",
     "allowed_methods": [
