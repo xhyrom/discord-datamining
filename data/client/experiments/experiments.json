@@ -11259,8 +11259,8 @@
   {
     "data": {
       "kind": "user",
-      "id": "2023-09_mobile_redesign_panels",
-      "label": "Tabs V2 - Panels",
+      "id": "2023-09_mobile_redesign_panels_existing_users",
+      "label": "Tabs V2 - Panels - Existing Users",
       "description": [
         "Not Eligible",
         "Control Bucket",
@@ -11268,7 +11268,7 @@
         "Treatment 2: Split DM Tab",
         "Treatment 3: Base redesign"
       ],
-      "hash": 985588111,
+      "hash": 2137061112,
       "buckets": [
         -1,
         0,
