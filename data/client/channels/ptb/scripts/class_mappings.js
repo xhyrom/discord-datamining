@@ -11130,6 +11130,7 @@
         939043: e => {
             e.exports = {
                 welcomeMessageContainer: "welcomeMessageContainer-35bQR5",
+                welcomeMessageProfileContainer: "welcomeMessageProfileContainer-39rNYb",
                 avatar: "avatar-3b6R5I",
                 avatarBackground: "avatarBackground-2PaDOT",
                 avatarBorder: "avatarBorder-20IrEw",
@@ -26913,4 +26914,4 @@
         }
     }
 ]);
-//# sourceMappingURL=d89d7e7e69caca7a6a4d.js.map
+//# sourceMappingURL=2a12eb06166971981816.js.map
