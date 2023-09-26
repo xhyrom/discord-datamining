@@ -107,7 +107,7 @@
             </tr>
         </tbody>
     </table>
-    <p><em>Mobile transactions are note currently available.</em></p>
+    <p><em>Mobile transactions are not currently available.</em></p>
     <p> </p>
     <p><em>*Unless otherwise agreed, mobile app store fees will be added to the total price of an Offering and paid by the purchaser. </em></p>
     <p><em>‡Retained Auto-Renewing Subscriptions means auto-renewing subscription purchases made by customers who have accrued greater than one year of paid subscription service on a given subscription tier, as determined by Apple in its sole discretion. </em></p>
