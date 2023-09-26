@@ -10588,7 +10588,7 @@
       ],
       "config_keys": [
         "enabled",
-        "newSearchLogic"
+        "newScoreLogic"
       ]
     }
   },
