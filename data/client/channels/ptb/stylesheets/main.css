@@ -41489,6 +41489,15 @@ input[type=checked]:focus-visible+.label-3TDpbn {
     padding-bottom: 12px
 }
 
+.discountPlanOptionSubtext-1b9wfo {
+    max-width: 300px;
+    text-align: right
+}
+
+.discountPlanOptionSubtext-1b9wfo p {
+    margin: 0
+}
+
 .planOptionClickableContainer-O-50CZ {
     cursor: pointer
 }
@@ -41824,6 +41833,14 @@ input[type=checked]:focus-visible+.label-3TDpbn {
     -webkit-box-pack: end;
     -ms-flex-pack: end;
     justify-content: flex-end
+}
+
+.discountSubtext-tZj6y7 {
+    text-align: right
+}
+
+.discountSubtext-tZj6y7 p {
+    margin: 0
 }
 
 .formTitle-1Wrebk {
@@ -171006,4 +171023,4 @@ html .invoiceCancelRow-dVOR64 {
     margin-bottom: 8px
 }
 
-/*# sourceMappingURL=40532.88ad10586309d9555ab1.css.map*/
+/*# sourceMappingURL=40532.a9fd3a3a599b7d0f98d3.css.map*/
