@@ -18069,6 +18069,7 @@
                 reviewWarningMessage: "reviewWarningMessage-2eAqZy",
                 trialPriceLine: "trialPriceLine-1oO61T",
                 afterTrialPriceLine: "afterTrialPriceLine-34Q7Py",
+                discountSubtext: "discountSubtext-tZj6y7",
                 formTitle: "formTitle-1Wrebk",
                 spinnerWrapper: "spinnerWrapper-HR9SRA"
             }
@@ -19894,6 +19895,7 @@
                 planOptionDiscount: "planOptionDiscount-2nex9n",
                 planOptionSubtextContainer: "planOptionSubtextContainer-2-j54c",
                 planOptionSubtext: "planOptionSubtext-2aRA5U",
+                discountPlanOptionSubtext: "discountPlanOptionSubtext-1b9wfo",
                 planOptionClickableContainer: "planOptionClickableContainer-O-50CZ",
                 updatedOptionSelected: "updatedOptionSelected-2fb_Pc",
                 optionPriceSelected: "optionPriceSelected-g9GS0h"
@@ -26926,4 +26928,4 @@
         }
     }
 ]);
-//# sourceMappingURL=406872aa0cb56a95e8fe.js.map
+//# sourceMappingURL=0aa8d053fad88ec8c4b3.js.map
