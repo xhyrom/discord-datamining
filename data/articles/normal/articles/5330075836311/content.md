@@ -1,10 +1,10 @@
 <ul>
-    <li><span style="font-weight: 400;"><span class="wysiwyg-color-blue90"><strong>Effective Date:</strong> </span>April 5, 2023</span></li>
-    <li><span style="font-weight: 400;"><span class="wysiwyg-color-blue90"><strong>Last Updated:</strong> </span>December 1, 2022</span></li>
+    <li><span style="font-weight: 400;"><span class="wysiwyg-color-blue90"><strong>Effective Date:</strong> </span>September 26, 2023<br></span></li>
+    <li><span style="font-weight: 400;"><span class="wysiwyg-color-blue90"><strong>Last Updated:</strong> </span>September 26, 2023<br></span></li>
 </ul>
 <p><span style="font-weight: 400;">These Monetization Terms (“Monetization Terms”) apply to the things you sell through Discord and set out the legal obligations between us and you. </span></p>
 <p><span style="font-weight: 400;">When we say “Discord”, “we”, “us”, and “our” in these Monetization Terms, we mean Discord Inc., except where we explicitly state otherwise.</span></p>
-<p><span style="font-weight: 400;">When we say “Terms” in these Monetization Terms, we mean, collectively, these Monetization Terms, our <a href="https://support.discord.com/hc/en-us/articles/10575066024983" target="_blank" rel="noopener noreferrer">Server Monetization Policy</a>, our Premium Apps Policy, our </span><a href="https://discord.com/terms" target="_blank" rel="noopener noreferrer">Terms of Service</a><span style="font-weight: 400;">, our </span><a href="https://support.discord.com/hc/en-us/articles/4410339366295" target="_blank" rel="noopener noreferrer">Paid Service Terms</a><span style="font-weight: 400;">, and any other applicable terms, policies, or guidelines that we make available to you or apply to your use of services made available by or through Discord. In the event of any conflict between these Monetization  Terms and any other Terms, these Monetization Terms will govern to the extent of such conflict. </span></p>
+<p><span style="font-weight: 400;">When we say “Terms” in these Monetization Terms, we mean, collectively, these Monetization Terms, our <a href="https://support.discord.com/hc/en-us/articles/10575066024983" target="_blank" rel="noopener noreferrer">Server Monetization Policy</a>, our <a href="https://support-dev.discord.com/hc/en-us/articles/17442400631959" target="_blank" rel="noopener noreferrer">Premium Apps Policy</a>, our </span><a href="https://discord.com/terms" target="_blank" rel="noopener noreferrer">Terms of Service</a><span style="font-weight: 400;">, our </span><a href="https://support.discord.com/hc/en-us/articles/4410339366295" target="_blank" rel="noopener noreferrer">Paid Service Terms</a><span style="font-weight: 400;">, and any other applicable terms, policies, or guidelines that we make available to you or apply to your use of services made available by or through Discord. In the event of any conflict between these Monetization  Terms and any other Terms, these Monetization Terms will govern to the extent of such conflict. </span></p>
 <h3 id="h_01H9KAAQF0J7J49C9AG4A9HQ3E">
     <strong>IMPORTANT NOTE: <br></strong>The <a href="https://discord.com/terms" target="_blank" rel="noopener noreferrer">Terms of Service</a> have a section titled “Settling Disputes Between You and Discord” that contains an arbitration clause and class-action waiver that applies to all U.S.-based Discord users. Please read this section carefully as it may significantly affect your legal rights, including your right to file a lawsuit in court. 
 </h3>
@@ -43,7 +43,7 @@
 <p><span style="font-weight: 400;">You also authorize us to receive any required tax reporting or documentation directly from Payout Providers on your behalf. Where required, we will make any tax reporting documentation that we receive on your behalf available to you promptly. </span></p>
 <p><span style="font-weight: 400;">Discord reserves the right to assess applicable taxes as required by local law or by our Payment Gateways, including applicable sales taxes for the purchase of any Offering. Depending on your location, you may be charged transaction taxes (sales, VAT, GST, withholding, and other similar taxes). </span></p>
 <h2 id="h_01H9KAAQF06HX0E85T0E9S39BN"><span style="font-weight: 400;">Restrictions</span></h2>
-<p><span style="font-weight: 400;">You cannot sell (or do) anything on Discord that violates our Terms or any applicable laws, rules, or regulations. This includes breaching our </span><a href="https://discord.com/terms" target="_blank" rel="noopener noreferrer">Terms of Service</a><span style="font-weight: 400;">, <a href="https://support.discord.com/hc/en-us/articles/10575066024983" target="_blank" rel="noopener noreferrer">Server Subscription Policy</a>, Premium Apps Policy, </span><a href="https://discord.com/guidelines" target="_blank" rel="noopener noreferrer">Community Guidelines</a><span style="font-weight: 400;">, or our </span><a href="https://support.discord.com/hc/en-us/articles/4420312247575" target="_blank" rel="noopener noreferrer">other policies</a><span style="font-weight: 400;">. </span></p>
+<p><span style="font-weight: 400;">You cannot sell (or do) anything on Discord that violates our Terms or any applicable laws, rules, or regulations. This includes breaching our </span><a href="https://discord.com/terms" target="_blank" rel="noopener noreferrer">Terms of Service</a><span style="font-weight: 400;">, <a href="https://support.discord.com/hc/en-us/articles/10575066024983" target="_blank" rel="noopener noreferrer">Server Subscription Policy</a>, <a href="https://support-dev.discord.com/hc/en-us/articles/17442400631959" target="_blank" rel="noopener noreferrer">Premium Apps Policy</a>, </span><a href="https://discord.com/guidelines" target="_blank" rel="noopener noreferrer">Community Guidelines</a><span style="font-weight: 400;">, or our </span><a href="https://support.discord.com/hc/en-us/articles/4420312247575" target="_blank" rel="noopener noreferrer">other policies</a><span style="font-weight: 400;">. </span></p>
 <p><span style="font-weight: 400;">All of these policies are extremely important to us, so please read them.</span></p>
 <p><span style="font-weight: 400;">If you breach our Terms, we reserve the right to indefinitely withhold payouts, restrict your ability to sell things through Discord, terminate your server, cancel any active Offerings and authorize refunds to users, or terminate your account with or without notice, report you to law enforcement, or take other appropriate actions, at our discretion. </span></p>
 <h2 id="h_01H9KAAQF0XGPRDGBWSTYTZ68P"><span style="font-weight: 400;">Privacy</span></h2>
@@ -55,49 +55,41 @@
 <h2 id="h_01H9KAAQF0RQBVY4M3TZSV9XXK"><span style="font-weight: 400;">Indemnity</span></h2>
 <p><span style="font-weight: 400;">In addition to the indemnities set forth in the </span><a href="https://discord.com/terms" target="_blank" rel="noopener noreferrer">Terms of Service</a><span style="font-weight: 400;">, you will indemnify and hold Discord and its officers, directors, employees, and agents harmless from and against any claims, liabilities, damages, and costs (including reasonable legal and accounting fees) arising from or related to: (a) your access to or use of our services (including without limitation the pilot features), (b) your content, (c) your Offering,  (d) your failure to pay all applicable taxes other than taxes based on Discord’s income), or (e) your violation of our Terms.</span></p>
 <h2 id="h_01H9KAAQF0AWXFZYVNAHB9YT1R"><span style="font-weight: 400;">Schedule 1 - Fees</span></h2>
+<table style="border-collapse: collapse; width: 100%;" border="1">
+    <tbody>
+        <tr>
+            <td style="width: 25%;">Transaction Type</td>
+            <td style="width: 25%;">Payment Processing Fee</td>
+            <td style="width: 25%;">Transaction Fee</td>
+            <td style="width: 25%;">Platform Fee</td>
+        </tr>
+        <tr>
+            <td style="width: 25%;"><strong>Desktop App &amp; Browser</strong></td>
+            <td style="width: 25%;">6%</td>
+            <td style="width: 25%;">As applicable</td>
+            <td style="width: 25%;">10%</td>
+        </tr>
+        <tr>
+            <td style="width: 25%;"><strong>iOS App Store</strong></td>
+            <td style="width: 25%;">
+                <p>30%*</p>
+                <p>Retained Auto-renewing Subscriptions‡: 15%</p>
+            </td>
+            <td style="width: 25%;">As applicable</td>
+            <td style="width: 25%;">10%</td>
+        </tr>
+        <tr>
+            <td style="width: 25%;"><strong>Google Play Store</strong></td>
+            <td style="width: 25%;">
+                <p>Auto-renewing subscriptions: 15%</p>
+                <p>Other purchases: 30%</p>
+            </td>
+            <td style="width: 25%;">As applicable</td>
+            <td style="width: 25%;">10%</td>
+        </tr>
+    </tbody>
+</table>
 <div id="docs-internal-guid-de0cad21-7fff-a97f-1914-ab717a173fb5">
-    <table style="width: 100%; height: 287px;">
-        <colgroup>
-            <col>
-            <col>
-            <col>
-            <col>
-        </colgroup>
-        <tbody>
-            <tr style="height: 44px;">
-                <td style="width: 26.5714%; height: 44px;">Transaction Type</td>
-                <td style="width: 38.2857%; height: 44px;">Payment Processing Fee</td>
-                <td style="width: 21.2857%; height: 44px;">Transaction Fee</td>
-                <td style="width: 13.7143%; height: 44px;">Platform Fee</td>
-            </tr>
-            <tr style="height: 44px;">
-                <td style="width: 26.5714%; height: 44px;"><strong>Desktop App &amp; Browser</strong></td>
-                <td style="width: 38.2857%; height: 44px;">6%</td>
-                <td style="width: 21.2857%; height: 44px;">As applicable</td>
-                <td style="width: 13.7143%; height: 44px;">10%</td>
-            </tr>
-            <tr style="height: 118px;">
-                <td style="width: 26.5714%; height: 118px;"><strong>iOS App Store</strong></td>
-                <td style="width: 38.2857%; height: 118px;">
-                    <p>30%*</p>
-                    <br>
-                    <p>Retained Auto-renewing Subscriptions‡: 15%</p>
-                </td>
-                <td style="width: 21.2857%; height: 118px;">As applicable</td>
-                <td style="width: 13.7143%; height: 118px;">10%</td>
-            </tr>
-            <tr style="height: 81px;">
-                <td style="width: 26.5714%; height: 81px;"><strong>Google Play Store</strong></td>
-                <td style="width: 38.2857%; height: 81px;">
-                    <p>Auto-renewing subscriptions: 15%</p>
-                    <br>
-                    <p>Other purchases: 30%</p>
-                </td>
-                <td style="width: 21.2857%; height: 81px;">As applicable</td>
-                <td style="width: 13.7143%; height: 81px;">10%</td>
-            </tr>
-        </tbody>
-    </table>
     <p>For Premium Apps:</p>
     <table style="border-collapse: collapse; width: 100%;" border="1">
         <tbody>
@@ -108,14 +100,14 @@
                 <td style="width: 25%;">Platform Fee</td>
             </tr>
             <tr>
-                <td style="width: 25%;">Desktop App &amp; Browser</td>
+                <td style="width: 25%;"><strong>Desktop App &amp; Browser</strong></td>
                 <td style="width: 25%;">6%</td>
                 <td style="width: 25%;">As applicable</td>
                 <td style="width: 25%;">30%</td>
             </tr>
         </tbody>
     </table>
-    <p>Mobile transactions are note currently available.<br></p>
+    <p><em>Mobile transactions are note currently available.</em></p>
     <p> </p>
     <p><em>*Unless otherwise agreed, mobile app store fees will be added to the total price of an Offering and paid by the purchaser. </em></p>
     <p><em>‡Retained Auto-Renewing Subscriptions means auto-renewing subscription purchases made by customers who have accrued greater than one year of paid subscription service on a given subscription tier, as determined by Apple in its sole discretion. </em></p>
