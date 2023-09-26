@@ -94329,6 +94329,47 @@ html:not(.custom-theme-background) .container-Vrgqxz {
     color: var(--red-400)
 }
 
+.activityBadge-34Wru_ {
+    background-color: var(--status-positive-background)
+}
+
+.activityBadge-34Wru_,
+.activityNewBadge-1H3HMG {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-shadow: var(--elevation-low);
+    box-shadow: var(--elevation-low)
+}
+
+.activityNewBadge-1H3HMG {
+    background-color: var(--status-danger-background)
+}
+
+.activityUpdatedBadge-1VJSx2 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    background-color: var(--text-link-low-saturation);
+    -webkit-box-shadow: var(--elevation-low);
+    box-shadow: var(--elevation-low)
+}
+
+.activityBadgeIcon-2KlUmN {
+    margin-left: -2px;
+    margin-right: 2px
+}
+
+.tooltip-3vBH0C {
+    text-align: center
+}
+
 .activityItemButtonInnerClass-23Wx8I {
     width: 100%;
     display: -webkit-box;
@@ -94471,6 +94512,27 @@ html:not(.custom-theme-background) .container-Vrgqxz {
     -ms-flex-pack: center;
     justify-content: center;
     background-color: #000
+}
+
+.overlayBadge-3cuG2k {
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 4px
+}
+
+.badgeContainer-2p5ImL {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: start;
+    -ms-flex-align: start;
+    align-items: flex-start;
+    gap: 3px
 }
 
 .container-1jQZ2U {
@@ -138780,27 +138842,6 @@ input::-webkit-outer-spin-button {
     border-radius: 100px
 }
 
-.tryItOutBadge-27UB1L {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
-    background-color: var(--status-positive-background);
-    -webkit-box-shadow: var(--elevation-low);
-    box-shadow: var(--elevation-low)
-}
-
-.tryItOutBadgeIcon-3QxNLQ {
-    margin-left: -2px;
-    margin-right: 2px
-}
-
-.tooltip-20_2FI {
-    text-align: center
-}
-
 .activityItem-1Z9CTr {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -170929,4 +170970,4 @@ html .invoiceCancelRow-dVOR64 {
     margin-bottom: 8px
 }
 
-/*# sourceMappingURL=40532.b9daacf746976704e119.css.map*/
+/*# sourceMappingURL=40532.c6cc9ab19e88fafcea2a.css.map*/
