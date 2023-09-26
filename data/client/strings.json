@@ -5753,6 +5753,7 @@
   "EXPIRE_AFTER": "\"Expire After\"",
   "ONLY_YOU_CAN_SEE_AND_DELETE_THESE": "\"Only you can see {count, plural, one {this} other {these}} • [Dismiss {countMessages, plural, one {message} other {messages}}](handleDelete)\"",
   "NEW": "\"new\"",
+  "UPDATED": "\"updated\"",
   "NEW_MENTIONS": "\"New Mentions\"",
   "NEW_UNREADS": "\"New Unreads\"",
   "MENTIONS_COUNT": "\"{count} mentions\"",
