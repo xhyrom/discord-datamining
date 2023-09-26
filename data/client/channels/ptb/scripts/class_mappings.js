@@ -3848,6 +3848,15 @@
                 img: "img-3qXQ07"
             }
         },
+        335900: e => {
+            e.exports = {
+                activityBadge: "activityBadge-34Wru_",
+                activityNewBadge: "activityNewBadge-1H3HMG",
+                activityUpdatedBadge: "activityUpdatedBadge-1VJSx2",
+                activityBadgeIcon: "activityBadgeIcon-2KlUmN",
+                tooltip: "tooltip-3vBH0C"
+            }
+        },
         137359: e => {
             e.exports = {
                 activityItem: "activityItem-1Z9CTr",
@@ -4000,7 +4009,9 @@
                 activityAction: "activityAction-16dK8W",
                 activityActionButton: "activityActionButton-324Fqd",
                 activityActionButtonDanger: "activityActionButtonDanger-3oeHL8",
-                brokenImageIconWrapper: "brokenImageIconWrapper-3MCRyf activitySuggestionImage-69_CSr"
+                brokenImageIconWrapper: "brokenImageIconWrapper-3MCRyf activitySuggestionImage-69_CSr",
+                overlayBadge: "overlayBadge-3cuG2k",
+                badgeContainer: "badgeContainer-2p5ImL"
             }
         },
         494778: e => {
@@ -4100,13 +4111,6 @@
                 container: "container-lpf9y1",
                 acronym: "acronym-3eWTRs",
                 text: "text-1Y1fjJ"
-            }
-        },
-        238331: e => {
-            e.exports = {
-                tryItOutBadge: "tryItOutBadge-27UB1L",
-                tryItOutBadgeIcon: "tryItOutBadgeIcon-3QxNLQ",
-                tooltip: "tooltip-20_2FI"
             }
         },
         561506: e => {
@@ -26916,4 +26920,4 @@
         }
     }
 ]);
-//# sourceMappingURL=0e2c34023dfcef596097.js.map
+//# sourceMappingURL=5366ed0197481e01aa0b.js.map
