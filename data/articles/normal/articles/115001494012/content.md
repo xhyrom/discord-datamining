@@ -14,7 +14,7 @@
 </h1>
 <p><span style="font-weight: 400;">Before being able to submit a Partner application, you’ll need to hit our server engagement prerequisites. Servers looking to apply for the Partner Program must be marked as a “Community” server in Server Settings, which will allow you to access Server Insights.</span></p>
 <p><span style="font-weight: 400;">Server Insights will be able to give you a look at exactly how close you are to applying to the Discord Partner Program. You can track your progress towards unlocking the Partner Program application at any time within Server Insights and the in-app Partner page shown below: </span></p>
-<p><img src="https://support.discord.com/hc/article_attachments/360087264314/Screen_Shot_2020-08-31_at_9.28.47_AM.png" alt="Screen_Shot_2020-08-31_at_9.28.47_AM.png"></p>
+<p><img src="https://support.discord.com/hc/article_attachments/360087264314" alt="Screen_Shot_2020-08-31_at_9.28.47_AM.png"></p>
 <p><span style="font-weight: 400;">Once you’ve got access to this page, below are the server requirements you will also have to reach: </span></p>
 <ul>
     <li style="font-weight: 400;">
