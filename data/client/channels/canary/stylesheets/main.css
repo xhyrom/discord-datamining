@@ -18127,8 +18127,8 @@ html.disable-forced-colors * {
     overflow: hidden
 }
 
-.channelWithIcon.iconMentionText-u6IUqo {
-    gap: 0
+.channelWithIcon-3MNayO .iconMentionText-u6IUqo {
+    gap: 0 !important
 }
 
 .wrapper-1ZcZW- {
@@ -22250,6 +22250,12 @@ html.disable-forced-colors * {
     background-color: var(--profile-body-background-color);
     border-radius: 8px;
     max-width: 190px
+}
+
+.profileBadgesCompactNoTouch-2UvmQO {
+    width: 140px;
+    gap: 1px;
+    pointer-events: none
 }
 
 .profileBadges-2pItdR.profileBadges-2pItdR {
@@ -27128,20 +27134,20 @@ img[alt] {
     min-height: 540px
 }
 
-.theme-light.authBox-1HR6Ha {
+.theme-light .authBox-1HR6Ha {
     background: var(--primary-100)
 }
 
-.theme-light.authBox-1HR6Ha .discordLogo-2A4X97 {
+.theme-light .authBox-1HR6Ha .discordLogo-2A4X97 {
     background: url(/assets/fcd92bc77a099db37095457dd4dd2eec.svg) no-repeat;
     width: 130px
 }
 
-.theme-dark.authBox-1HR6Ha {
+.theme-dark .authBox-1HR6Ha {
     background: var(--background-mobile-primary)
 }
 
-.theme-dark.authBox-1HR6Ha .discordLogo-2A4X97 {
+.theme-dark .authBox-1HR6Ha .discordLogo-2A4X97 {
     background: url(/assets/22fd790491653d837422d80e3500cf92.svg) no-repeat;
     width: 130px
 }
@@ -85516,8 +85522,9 @@ html:not(.custom-theme-background) .container-Vrgqxz {
 }
 
 .collapsed-2KOacR .icon-3zI3d2 {
-    -webkit-transform: rotate(-90deg);
-    transform: rotate(-90deg)
+    --custom-icon-collapse-rotate: -90deg;
+    -webkit-transform: rotate(var(--custom-icon-collapse-rotate));
+    transform: rotate(var(--custom-icon-collapse-rotate))
 }
 
 .wrapper-1S43wv.muted-19J0ih,
@@ -110548,7 +110555,7 @@ html .tabBadge-h4HGed {
     margin-bottom: 8px
 }
 
-.button-12Fmur {
+button.button-12Fmur {
     line-height: 0;
     width: 32px;
     height: 32px;
@@ -110566,12 +110573,12 @@ html .tabBadge-h4HGed {
     color: var(--interactive-normal)
 }
 
-.button-12Fmur.enabled-9OeuTA:hover {
+button.button-12Fmur.enabled-9OeuTA:hover {
     color: var(--interactive-hover);
     background-color: var(--background-modifier-selected)
 }
 
-.button-12Fmur.disabled-GROwTe {
+button.button-12Fmur.disabled-GROwTe {
     opacity: .4
 }
 
@@ -168291,6 +168298,99 @@ html .invoiceCancelRow-3s2UuC {
     text-decoration: underline
 }
 
+.akaBadge-xuUN_i {
+    background-color: var(--background-secondary);
+    color: var(--header-secondary);
+    display: inline-block;
+    vertical-align: middle
+}
+
+.header-2GQ1DX {
+    margin: 0 auto
+}
+
+.subHeader-1Vzeng {
+    text-align: center
+}
+
+.miniAvatar-1lx-FC {
+    margin-left: 4px
+}
+
+.miniAvatar-1lx-FC,
+.miniGuildIcon-2LeaLS {
+    display: inline-block;
+    vertical-align: middle
+}
+
+.miniGuildIcon-2LeaLS {
+    margin-left: 2px
+}
+
+.akaTransfer-pEnLe6,
+.guildTransfer-16nZuR {
+    display: inline-block
+}
+
+.guildName-3pcS0A,
+.nickname-2G0Tcv {
+    margin-left: 4px;
+    display: inline-block
+}
+
+.spacing-22Fxaw {
+    margin-bottom: 20px
+}
+
+.fromToWrapper-7A2MIP {
+    padding-top: 24px;
+    margin-top: 24px;
+    background: no-repeat 50% 0
+}
+
+.from-1-zmLY,
+.to-9AOSH0 {
+    border-radius: 50%
+}
+
+.from-1-zmLY {
+    margin-right: -27px;
+    opacity: .3
+}
+
+.to-9AOSH0 {
+    position: relative;
+    z-index: 1
+}
+
+.theme-dark .to-9AOSH0 {
+    -webkit-box-shadow: 0 0 0 4px var(--primary-600);
+    box-shadow: 0 0 0 4px var(--primary-600);
+    background-color: var(--primary-630)
+}
+
+.theme-dark .fromToWrapper-7A2MIP {
+    background-image: url(/assets/00933827d9e2b3ecacc0a0a319211ddc.svg)
+}
+
+.theme-light .to-9AOSH0 {
+    -webkit-box-shadow: 0 0 0 4px var(--white-500);
+    box-shadow: 0 0 0 4px var(--white-500);
+    background-color: var(--primary-100)
+}
+
+.theme-light .fromToWrapper-7A2MIP {
+    background-image: url(/assets/04457b30c1c2fcb344cb4d12913c5191.svg)
+}
+
+.protectedText-3aaJee {
+    margin-bottom: 20px
+}
+
+.roleSubscriptionText-qC6RcZ {
+    margin-bottom: 16px
+}
+
 .content-1ePXdk,
 .modal-9ze_ZV {
     display: -webkit-box;
@@ -169859,7 +169959,9 @@ html .invoiceCancelRow-3s2UuC {
 
 .presetEffectImg-1QMW5H {
     -o-object-fit: cover;
-    object-fit: cover
+    object-fit: cover;
+    -o-object-position: top;
+    object-position: top
 }
 
 .presetEffectBackground-2FjhQJ,
@@ -170827,97 +170929,4 @@ html .invoiceCancelRow-dVOR64 {
     margin-bottom: 8px
 }
 
-.akaBadge-xuUN_i {
-    background-color: var(--background-secondary);
-    color: var(--header-secondary);
-    display: inline-block;
-    vertical-align: middle
-}
-
-.header-2GQ1DX {
-    margin: 0 auto
-}
-
-.subHeader-1Vzeng {
-    text-align: center
-}
-
-.miniAvatar-1lx-FC {
-    margin-left: 4px
-}
-
-.miniAvatar-1lx-FC,
-.miniGuildIcon-2LeaLS {
-    display: inline-block;
-    vertical-align: middle
-}
-
-.miniGuildIcon-2LeaLS {
-    margin-left: 2px
-}
-
-.akaTransfer-pEnLe6,
-.guildTransfer-16nZuR {
-    display: inline-block
-}
-
-.guildName-3pcS0A,
-.nickname-2G0Tcv {
-    margin-left: 4px;
-    display: inline-block
-}
-
-.spacing-22Fxaw {
-    margin-bottom: 20px
-}
-
-.fromToWrapper-7A2MIP {
-    padding-top: 24px;
-    margin-top: 24px;
-    background: no-repeat 50% 0
-}
-
-.from-1-zmLY,
-.to-9AOSH0 {
-    border-radius: 50%
-}
-
-.from-1-zmLY {
-    margin-right: -27px;
-    opacity: .3
-}
-
-.to-9AOSH0 {
-    position: relative;
-    z-index: 1
-}
-
-.theme-dark .to-9AOSH0 {
-    -webkit-box-shadow: 0 0 0 4px var(--primary-600);
-    box-shadow: 0 0 0 4px var(--primary-600);
-    background-color: var(--primary-630)
-}
-
-.theme-dark .fromToWrapper-7A2MIP {
-    background-image: url(/assets/00933827d9e2b3ecacc0a0a319211ddc.svg)
-}
-
-.theme-light .to-9AOSH0 {
-    -webkit-box-shadow: 0 0 0 4px var(--white-500);
-    box-shadow: 0 0 0 4px var(--white-500);
-    background-color: var(--primary-100)
-}
-
-.theme-light .fromToWrapper-7A2MIP {
-    background-image: url(/assets/04457b30c1c2fcb344cb4d12913c5191.svg)
-}
-
-.protectedText-3aaJee {
-    margin-bottom: 20px
-}
-
-.roleSubscriptionText-qC6RcZ {
-    margin-bottom: 16px
-}
-
-/*# sourceMappingURL=40532.bd9a0207bbee75ae6a83.css.map*/
+/*# sourceMappingURL=40532.b9daacf746976704e119.css.map*/
