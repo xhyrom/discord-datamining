@@ -10692,15 +10692,13 @@
       "description": [
         "Not Eligible",
         "Control Bucket",
-        "Treatment 1: Enables profile effects without entitlements and shop",
-        "Treatment 2: Enables profile effects with entitlements and shop"
+        "Treatment 1: Enables profile effects and shop"
       ],
       "hash": 3382923749,
       "buckets": [
         -1,
         0,
-        1,
-        2
+        1
       ],
       "config_keys": [
         "enabled"
