@@ -6279,6 +6279,11 @@
                 profileEffectShopPreview: "profileEffectShopPreview-223heR"
             }
         },
+        259722: e => {
+            e.exports = {
+                typePill: "typePill-3VTEut"
+            }
+        },
         207069: e => {
             e.exports = {
                 priceWrapper: "priceWrapper-3XSWjw",
@@ -6393,7 +6398,8 @@
                 premiumIcon: "premiumIcon-1tZnQG",
                 tooltip: "tooltip-1sdgrM",
                 profileCustomizationBody: "profileCustomizationBody-3_pZnZ",
-                priceTag: "priceTag-2Fjcol"
+                priceTag: "priceTag-2Fjcol",
+                headingWithItemTypePill: "headingWithItemTypePill-lySTP5"
             }
         },
         407061: e => {
@@ -26920,4 +26926,4 @@
         }
     }
 ]);
-//# sourceMappingURL=2e9d728aab05e76725e4.js.map
+//# sourceMappingURL=a7234d5684f9b42076cc.js.map

@@ -170716,6 +170716,15 @@ html .invoiceCancelRow-dVOR64 {
     margin: 0 auto 24px
 }
 
+.typePill-3VTEut {
+    border: .5px solid var(--white);
+    border-radius: 8px;
+    height: 13px;
+    display: inline-block;
+    margin-bottom: 4px;
+    padding: 1px 4px
+}
+
 .modalRoot-31JGpb {
     border-radius: var(--radius-sm);
     background-color: transparent
@@ -170928,6 +170937,10 @@ html .invoiceCancelRow-dVOR64 {
     margin-top: 24px
 }
 
+.headingWithItemTypePill-lySTP5 {
+    margin-bottom: 4px
+}
+
 .modalContent-JK5iQA,
 .root-2-pdq6 {
     overflow: hidden
@@ -170982,4 +170995,4 @@ html .invoiceCancelRow-dVOR64 {
     margin-bottom: 8px
 }
 
-/*# sourceMappingURL=40532.83e989a77f9b155d2d94.css.map*/
+/*# sourceMappingURL=40532.9842799c3ab717b068bd.css.map*/
