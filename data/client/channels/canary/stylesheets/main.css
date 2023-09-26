@@ -60893,6 +60893,17 @@ html .progress-2Otdc- {
     padding: 32px 200px 64px
 }
 
+.platform-osx .directoryContainer-z-0pgp:before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 22px;
+    z-index: 10;
+    -webkit-app-region: drag
+}
+
 .directoryContainerMobile-1L74Qb {
     padding: 32px 16px 64px;
     overflow: auto !important
@@ -170995,4 +171006,4 @@ html .invoiceCancelRow-dVOR64 {
     margin-bottom: 8px
 }
 
-/*# sourceMappingURL=40532.9842799c3ab717b068bd.css.map*/
+/*# sourceMappingURL=40532.88ad10586309d9555ab1.css.map*/
