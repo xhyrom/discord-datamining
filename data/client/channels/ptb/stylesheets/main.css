@@ -16302,9 +16302,6 @@ html.disable-forced-colors * {
     right: 8px;
     top: 0;
     height: 100%;
-    padding-left: 12px;
-    background-image: -webkit-gradient(linear, left top, right top, from(transparent), color-stop(20%, var(--background-tertiary)));
-    background-image: linear-gradient(90deg, transparent, var(--background-tertiary) 20%);
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -171022,4 +171019,4 @@ html .invoiceCancelRow-dVOR64 {
     margin-bottom: 8px
 }
 
-/*# sourceMappingURL=40532.9a004533b027742909b7.css.map*/
+/*# sourceMappingURL=40532.7e45d2d226226c7ba799.css.map*/
