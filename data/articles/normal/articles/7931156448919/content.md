@@ -1,5 +1,5 @@
 <p><span style="font-weight: 400;">On Discord, you can automatically update your activity status to show the game you’re playing, an activity you’re doing that supports rich presence (like listening to Spotify), or if you’re attending a public Stage. </span></p>
-<p class="wysiwyg-text-align-center"><img src="https://support.discord.com/hc/article_attachments/7933525649559/activity-status-example-user-icon.png" alt="activity-status-example-user-icon.png"></p>
+<p class="wysiwyg-text-align-center"><img src="https://support.discord.com/hc/article_attachments/7933525649559" alt="activity-status-example-user-icon.png"></p>
 <p><span style="font-weight: 400;">You can customize where and how your activity status shows up. Here’s a guide: </span></p>
 <ul>
     <li><a href="#h_01G9ZXP8R9CSNVDBCVTNM3H16S" target="_self"><span style="font-weight: 400;">Global Settings</span></a></li>
@@ -16,7 +16,7 @@
         <p><span style="font-weight: 400;">You will see two toggles: </span></p>
     </li>
 </ul>
-<p class="wysiwyg-text-align-center"><img src="https://support.discord.com/hc/article_attachments/7933528055063/activity-status-global-settings-options.png" alt="activity-status-global-settings-options.png"></p>
+<p class="wysiwyg-text-align-center"><img src="https://support.discord.com/hc/article_attachments/7933528055063" alt="activity-status-global-settings-options.png"></p>
 <ul>
     <li style="font-weight: 400;" aria-level="1">
         <strong>Display current activity as a status message:</strong><span style="font-weight: 400;"> This toggle controls whether or not anyone on Discord can see your activity status. If this setting is toggled on, your activity status will automatically be displayed in servers you are in and to your friends. You can control whether your activity status is shared in a particular server using that server’s “Activity Status” setting, as described below.</span>
@@ -33,7 +33,7 @@
     <li style="font-weight: 400;" aria-level="1"><span style="font-weight: 400;">Within a server, go to the server settings dropdown menu &gt; Privacy Settings </span></li>
     <li style="font-weight: 400;" aria-level="1"><span style="font-weight: 400;">You will see the below: </span></li>
 </ul>
-<p class="wysiwyg-text-align-center"><img src="https://support.discord.com/hc/article_attachments/8036882957591/unknown__6_.png" alt="unknown__6_.png" width="606" height="138"></p>
+<p class="wysiwyg-text-align-center"><img src="https://support.discord.com/hc/article_attachments/8036882957591" alt="unknown__6_.png" width="606" height="138"></p>
 <ul>
     <li style="font-weight: 400;" aria-level="1">
         <strong>Share your activity status in this server:</strong><span style="font-weight: 400;"> This toggle controls whether or not everyone in a server can see your activity status. </span>

@@ -2,7 +2,7 @@
 <h1 id="using-qr-code-login">Using QR Code Login</h1>
 <p>To login using a QR code, you'll first want to download the Discord mobile app and log in with your account credentials. QR code scanning is available on both <a href="https://play.google.com/store/apps/details?id=com.discord&amp;hl=en_US" target="_self">Discord for Android</a> and <a href="https://www.google.com/url?sa=t&amp;rct=j&amp;q=&amp;esrc=s&amp;source=web&amp;cd=1&amp;cad=rja&amp;uact=8&amp;ved=2ahUKEwjbjdKR8Z3nAhXVtp4KHa8KBbcQFjAAegQIAxAB&amp;url=https%3A%2F%2Fapps.apple.com%2Fus%2Fapp%2Fdiscord%2Fid985746746&amp;usg=AOvVaw1PNPyol20tdMi2gPY9McHu" target="_self">Discord for iOS</a>!</p>
 <p>Once you're logged in on your mobile device, you can log into the Discord desktop or browser client by scanning a QR code with the app. The QR code on the login screen looks like this!</p>
-<p><img src="https://support.discord.com/hc/article_attachments/360048105592/mceclip0.png" alt="mceclip0.png"></p>
+<p><img src="https://support.discord.com/hc/article_attachments/360048105592" alt="mceclip0.png"></p>
 <p><em>Fun fact: QR codes only work for 2 minutes, so this one won't work anymore! Scan it and you'll see!</em></p>
 <p>To scan the login code, head to the Discord app. Open the User Settings menu, then choose the Scan QR Code option! We'll ask for camera permissions if you haven't granted them to us already, then you're ready to scan! Once the scanner's open, simply line up the box with the QR code on screen.</p>
 <h3>You can also scan the QR code using any application that supports QR scanning, including the Camera app on many devices! You'll get a quick shortcut to the Discord app for final scanning and approval.</h3>

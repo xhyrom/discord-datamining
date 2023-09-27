@@ -10,7 +10,7 @@
 </ul>
 <h1 id="h_01FB7GSDX29HY45M5SCMK2YBYK">What is Word Snacks?</h1>
 <p><span style="font-weight: 400;">Word Snacks is an <a href="https://support.discord.com/hc/articles/4422142836759" target="_blank" rel="noopener noreferrer">Activity</a> that we've developed in-house and is a multiplayer word search game, where you and your friends try to make as many words as possible from a few letters. The more words you can spell before your opponents, the higher your score!<br><br></span></p>
-<p class="wysiwyg-text-align-center"><img src="https://support.discord.com/hc/article_attachments/4409234925463/word_snack_example.png" alt="word_snack_example.png"></p>
+<p class="wysiwyg-text-align-center"><img src="https://support.discord.com/hc/article_attachments/4409234925463" alt="word_snack_example.png"></p>
 <h1 id="h_01FB7GSKBBHYRXYHD50401W5Q5">How to start a Word Snacks game?</h1>
 <p>To start a Word Snacks Game, follow these steps below!  </p>
 <ul>
@@ -26,7 +26,7 @@
         </ul>
     </li>
 </ul>
-<p class="wysiwyg-text-align-center"><img src="https://support.discord.com/hc/article_attachments/4550836440599/Untitled.png" alt="Untitled.png" width="452" height="710"></p>
+<p class="wysiwyg-text-align-center"><img src="https://support.discord.com/hc/article_attachments/4550836440599" alt="Untitled.png" width="452" height="710"></p>
 <ul>
     <li style="list-style-type: none;">
         <ul>
@@ -34,7 +34,7 @@
         </ul>
     </li>
 </ul>
-<p class="wysiwyg-text-align-center"><img src="https://support.discord.com/hc/article_attachments/4409245661463/word_snacks_perm.png" alt="word_snacks_perm.png" width="444" height="723"></p>
+<p class="wysiwyg-text-align-center"><img src="https://support.discord.com/hc/article_attachments/4409245661463" alt="word_snacks_perm.png" width="444" height="723"></p>
 <h3>Note: When playing with more than 20 people you may experience some technical issues. For the best experience, we recommend games with up to 8 players.</h3>
 <h2 id="h_01F4ZHYENSF3VFJR8BEMF8ZPC2">Word Snacks FAQ</h2>
 <p><span class="wysiwyg-font-size-large"><strong>Q: Why is Discord adding games into voice channels?</strong></span></p>

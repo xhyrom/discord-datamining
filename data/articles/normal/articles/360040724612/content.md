@@ -1,4 +1,4 @@
-<h1><img src="https://support.discord.com/hc/article_attachments/360052376732/discord_security_shield.png" alt="discord_security_shield.png"></h1>
+<h1><img src="https://support.discord.com/hc/article_attachments/360052376732" alt="discord_security_shield.png"></h1>
 <h1>Why is Discord asking for my birthday?</h1>
 <p>Discord's <a href="https://discord.com/terms" target="_blank" rel="noopener">Terms of Service</a> require people to be over a minimum age to access our app or website, so we require users to confirm their age to satisfy that minimum age requirement. We use this information in accordance with our Privacy Policy and to keep our users safe and ensure they don't encounter material that's not appropriate for them.</p>
 <h3>For example, if you are between the ages of 13 and 17, we use your age information to figure out whether you are able to join servers or channels that contain age-restricted content (the <a href="https://support.discord.com/hc/articles/1500005292701-Accessing-an-NSFW-Server-FAQ" target="_blank" rel="noopener">answer</a> is <strong>no</strong>--age-restricted content is only accessible to users over 18).</h3>

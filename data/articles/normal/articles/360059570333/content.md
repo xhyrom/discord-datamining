@@ -1,5 +1,5 @@
 <p><strong>Discord official merchandise is brought to you by our partner DOTEXE. Head over to  <a href="https://discordmerch.com/" target="_blank" rel="noopener noreferrer">discordmerch.com</a> now to check out our latest collections!</strong></p>
-<p><img style="font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif;" src="https://support.discord.com/hc/article_attachments/4410763038871/Merch2021_Everyone_Header_3840x1740.png" alt="Merch2021_Everyone_Header_3840x1740.png"></p>
+<p><img style="font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif;" src="https://support.discord.com/hc/article_attachments/4410763038871" alt="Merch2021_Everyone_Header_3840x1740.png"></p>
 <h1><strong>Order Information</strong></h1>
 <p><span style="font-weight: 400;">Orders placed through this site are fulfilled by DOTEXE.</span></p>
 <p><span style="font-weight: 400;">If you have a question about your order, reach out to DOTEXE at the contact information below. DOTEXE receives certain information directly from you when you place an order, including your contact and payment information.</span></p>

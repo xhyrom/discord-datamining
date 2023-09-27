@@ -3,7 +3,7 @@
 <p>The Account Switcher enables Discord users with multiple accounts to easily access and switch between these accounts on desktop.</p>
 <h2>How do I access the Account Switcher?</h2>
 <p>Click on your avatar image at the bottom left of your Discord app, then select “Switch Accounts”.</p>
-<p class="wysiwyg-text-align-center"><img src="https://support.discord.com/hc/article_attachments/4745834844183/unnamed.png" alt="unnamed.png"></p>
+<p class="wysiwyg-text-align-center"><img src="https://support.discord.com/hc/article_attachments/4745834844183" alt="unnamed.png"></p>
 <p><span class="wysiwyg-font-size-large"><strong>How many accounts can I log into with the Account Switcher?</strong></span><br>You can log into five accounts using the Account Switcher. </p>
 <p><span class="wysiwyg-font-size-large"><strong>Will the Account Switcher show Discord users my other accounts?</strong></span></p>
 <p>No. The Account Switcher makes it easier for you to switch between your accounts. It does not show other users which accounts you are switching between.</p>

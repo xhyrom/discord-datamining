@@ -69,7 +69,7 @@
 </ul>
 <h2 id="h_01F68GDDKKNTQ5EHXNA83ESAJZ"><strong>How do I report a Stage Channel?</strong></h2>
 <p><span style="font-weight: 400;">On desktop, you can right-click on a Stage Channel and click on <strong>“Report Stage”</strong> if you believe that the Stage is in violation of our </span><a href="https://discord.com/guidelines" target="_blank" rel="noopener">Community Guidelines</a><span style="font-weight: 400;">, </span><a href="https://support.discord.com/hc/en-us/articles/1500010879761" target="_blank" rel="noopener">Stage Guidelines</a><span style="font-weight: 400;">, or </span><a href="https://discord.com/terms" target="_blank" rel="noopener">Terms of Service</a><span style="font-weight: 400;">.</span></p>
-<p class="wysiwyg-text-align-center"><img src="https://support.discord.com/hc/article_attachments/1500018821182/report.gif" alt="report.gif"></p>
+<p class="wysiwyg-text-align-center"><img src="https://support.discord.com/hc/article_attachments/1500018821182" alt="report.gif"></p>
 <h3><strong><span style="font-weight: 400;">On mobile, you can open up the report Stage option by clicking the gear icon in the top right of the Stage</span></strong></h3>
 <h2 id="h_01F68GDMT7FS9DGPN002CTKXZ2"><strong>What rules do public Stage Channels need to follow?</strong></h2>
 <p><strong><span style="font-weight: 400;">Everyone on Discord needs to follow the <a href="https://discord.com/guidelines">Community Guidelines</a> and <a href="https://discord.com/terms">Terms of Service</a> at all times. Stages must also follow these <a href="https://support.discord.com/hc/en-us/articles/1500010879761-Stage-Channel-Guidelines-">Stage Guidelines.</a> </span></strong></p>
@@ -98,4 +98,4 @@
 <p><strong> </strong></p>
 <p><span class="wysiwyg-font-size-large"><strong>I like this Stage and the people in it. Can I join the server from the Stage?</strong></span></p>
 <p><span style="font-weight: 400;">Yes! If you love what you’re hearing you can click into the Stage Channel and be brought to the community that is hosting the event. From there, you can click the nag bar at the top of your screen to join the Community and connect with other members!</span></p>
-<h3><span style="font-weight: 400;">Note: If a community has any screening or verification set up you will still need to complete those steps before you can become a full member and talk. <br><img src="https://support.discord.com/hc/article_attachments/1500018816862/bag_bar.png" alt="bag_bar.png"></span></h3>
+<h3><span style="font-weight: 400;">Note: If a community has any screening or verification set up you will still need to complete those steps before you can become a full member and talk. <br><img src="https://support.discord.com/hc/article_attachments/1500018816862" alt="bag_bar.png"></span></h3>
