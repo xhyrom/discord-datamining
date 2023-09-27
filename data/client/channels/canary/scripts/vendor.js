@@ -1,4 +1,4 @@
-/*! For license information please see cef8754f3ea2e2805acd.js.LICENSE.txt */
+/*! For license information please see 0f49738646fe74ea9aab.js.LICENSE.txt */
 (this.webpackChunkdiscord_app = this.webpackChunkdiscord_app || []).push([
     [22897], {
         151131: (t, e, r) => {
@@ -26459,8 +26459,6 @@
                 t.GUILD_TOOLTIP = "guild_tooltip";
                 t.GIF_PICKER_TOOLTIP = "gif_picker_tooltip";
                 t.GIF_PICKER_TOOLTIP_SPARKLE = "gif_picker_tooltip_sparkle";
-                t.STICKER_PICKER_TOOLTIP = "sticker_picker_tooltip";
-                t.STICKER_PICKER_TOOLTIP_SPARKLE = "sticker_picker_tooltip_sparkle";
                 t.STICKER_PICKER_SHOP_VIEW_ALL = "sticker_picker_shop_view_all";
                 t.SCREENSHARE_ONBOARD_SPARKLES = "screenshare_onboard_sparkles";
                 t.SCREENSHARE_SWIPE_UP_CONTROLS = "screenshare_swipe_up_controls";
@@ -26713,8 +26711,7 @@
                                                     }
                                                 }
                                                 return []
-                                            }(t).some((t => (0,
-                                                u.U0)(t, e)))
+                                            }(t).some((t => (0, u.U0)(t, e)))
                                         }(t, e.ignoreErrors)) {
                                         ("undefined" == typeof __SENTRY_DEBUG__ || __SENTRY_DEBUG__) && E.kg.warn(`Event dropped due to being matched by \`ignoreErrors\` option.\nEvent: ${(0,c.jH)(t)}`);
                                         return !0
@@ -26740,7 +26737,8 @@
                                             const r = T(t);
                                             return !r || (0, u.U0)(r, e)
                                         }(t, e.allowUrls)) {
-                                        ("undefined" == typeof __SENTRY_DEBUG__ || __SENTRY_DEBUG__) && E.kg.warn(`Event dropped due to not being matched by \`allowUrls\` option.\nEvent: ${(0,c.jH)(t)}.\nUrl: ${T(t)}`);
+                                        ("undefined" == typeof __SENTRY_DEBUG__ || __SENTRY_DEBUG__) && E.kg.warn(`Event dropped due to not being matched by \`allowUrls\` option.\nEvent: ${(0,
+c.jH)(t)}.\nUrl: ${T(t)}`);
                                         return !0
                                     }
                                     return !1
@@ -27024,7 +27022,8 @@
             }
 
             function v(t, e) {
-                const [r, n] = t;
+                const [r, n] = t
+                ;
                 let a = JSON.stringify(r);
 
                 function i(t) {
@@ -27212,8 +27211,7 @@
             function q(t) {
                 return t && /^function fetch\(\)\s+\{\s+\[native code\]\s+\}$/.test(t.toString())
             }
-            const J = (0,
-                x.Rf)();
+            const J = (0, x.Rf)();
             const Q = (0, x.Rf)(),
                 tt = {},
                 et = {};
@@ -27364,8 +27362,7 @@
                                         }
                                         return t
                                     }()) return;
-                                (0,
-                                    o.hl)(Q, "fetch", (function(t) {
+                                (0, o.hl)(Q, "fetch", (function(t) {
                                     return function(...e) {
                                         const {
                                             method: r,
@@ -28438,8 +28435,7 @@
             function zt(t, e = {}) {
                 const r = "string" == typeof e ? e : e.tunnel,
                     n = "string" != typeof e && e._metadata ? e._metadata.sdk : void 0;
-                return r || `${function(t){return`${Xt(t)}${t.projectId}/envelope/`}(t)}?${function(t,e){return(0,o._j)({sentry_key:t.publicKey,sentry_version:"7",...e&&{
-sentry_client:`${e.name}/${e.version}`}})}(t,n)}`
+                return r || `${function(t){return`${Xt(t)}${t.projectId}/envelope/`}(t)}?${function(t,e){return(0,o._j)({sentry_key:t.publicKey,sentry_version:"7",...e&&{sentry_client:`${e.name}/${e.version}`}})}(t,n)}`
             }
 
             function Zt(t, e) {
@@ -29130,7 +29126,8 @@ sentry_client:`${e.name}/${e.version}`}})}(t,n)}`
                         return this._transport.send(t).then(null, (t => {
                             ("undefined" == typeof __SENTRY_DEBUG__ || __SENTRY_DEBUG__) && E.kg.error("Error while sending event:", t)
                         }))
-                    }("undefined" == typeof __SENTRY_DEBUG__ || __SENTRY_DEBUG__) && E.kg.error("Transport disabled")
+                    }
+                    ("undefined" == typeof __SENTRY_DEBUG__ || __SENTRY_DEBUG__) && E.kg.error("Transport disabled")
                 }
                 _clearOutcomes() {
                     const t = this._outcomes;
@@ -29361,8 +29358,7 @@ sentry_client:`${e.name}/${e.version}`}})}(t,n)}`
                                 }(t) ? (0, De.Rt)(t.target, {
                                     keyAttrs: n,
                                     maxStringLength: a
-                                }) : (0,
-                                    De.Rt)(t, {
+                                }) : (0, De.Rt)(t, {
                                     keyAttrs: n,
                                     maxStringLength: a
                                 })
@@ -37036,7 +37032,7 @@ sentry_client:`${e.name}/${e.version}`}})}(t,n)}`
                     dsn: "https://fa97a90475514c03a42f80cd36d147c4@sentry.io/140984",
                     autoSessionTracking: !1,
                     environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                    release: "discord_web-0bf8c41ab955d15c2e1b8b088ecc3be21ab6d534",
+                    release: "discord_web-547ac331bfd78256c1501919fcc8fb78f0b1c399",
                     beforeSend: function(t) {
                         return function(t) {
                             return null != t.exception && null != t.exception.values && t.exception.values.every((function(t) {
@@ -37063,8 +37059,8 @@ sentry_client:`${e.name}/${e.version}`}})}(t,n)}`
                     denyUrls: [/recaptcha/, /mobilediscord\.com/, /betterdiscord:\/\//]
                 });
                 var t;
-                X.YA("buildNumber", null !== (t = "232016") ? t : "");
-                X.YA("builtAt", String("1695851976896"));
+                X.YA("buildNumber", null !== (t = "232037") ? t : "");
+                X.YA("builtAt", String("1695853039661"));
                 var e = window.GLOBAL_ENV.SENTRY_TAGS;
                 if (null != e && "object" == typeof e)
                     for (var r in e) X.YA(r, e[r]);
@@ -48453,4 +48449,4 @@ sentry_client:`${e.name}/${e.version}`}})}(t,n)}`
         e(128594), e(535666), e(784633), e(678991)
     }
 ]);
-//# sourceMappingURL=cef8754f3ea2e2805acd.js.map
+//# sourceMappingURL=0f49738646fe74ea9aab.js.map

@@ -170252,14 +170252,15 @@ html .invoiceCancelRow-3s2UuC {
 
 .badge-w5FhZi {
     position: absolute;
-    right: -8px;
-    top: -8px
+    right: -4px;
+    top: -4px
 }
 
 .lockBadge-1GRfLm {
-    border-radius: 16px;
-    width: 20px;
-    height: 20px
+    width: 24px;
+    padding: 2px;
+    height: 24px;
+    border-radius: 50%
 }
 
 .presetEffectImg-1QMW5H {
@@ -170275,6 +170276,10 @@ html .invoiceCancelRow-3s2UuC {
     border-radius: 4px;
     width: 100%;
     height: 100%
+}
+
+.modal-3Dr350 {
+    border-radius: var(--radius-sm)
 }
 
 .subscribeFooter-3rMXge {
@@ -171247,4 +171252,4 @@ html .invoiceCancelRow-dVOR64 {
     margin-bottom: 8px
 }
 
-/*# sourceMappingURL=40532.88a18f1d8b4ef85c9aba.css.map*/
+/*# sourceMappingURL=40532.5dbeb9dff80b8bdedaaf.css.map*/
