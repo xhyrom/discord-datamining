@@ -1,4 +1,4 @@
-/*! For license information please see ac49aa85d66fde185293.js.LICENSE.txt */
+/*! For license information please see 23cc978b36cd38fbe636.js.LICENSE.txt */
 (this.webpackChunkdiscord_app = this.webpackChunkdiscord_app || []).push([
     [22897], {
         151131: (t, e, r) => {
@@ -22962,7 +22962,8 @@
                 t.INSTANT_INVITE = "INSTANT_INVITE";
                 t.EMOJI = "EMOJI";
                 t.EMOJI_REACTION = "EMOJI_REACTION";
-                t.DMS = "DMS"
+                t.DMS = "DMS";
+                t.THREAD = "THREAD"
             }(Te || (Te = {}));
             ! function(t) {
                 t.NEWEST = "newest";
@@ -37032,7 +37033,7 @@
                     dsn: "https://fa97a90475514c03a42f80cd36d147c4@sentry.io/140984",
                     autoSessionTracking: !1,
                     environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                    release: "discord_web-6a27369f630778da11c8e7a45967ac93d0f5606d",
+                    release: "discord_web-60e7cfd0fed604f896caebeb938c5571c25a0893",
                     beforeSend: function(t) {
                         return function(t) {
                             return null != t.exception && null != t.exception.values && t.exception.values.every((function(t) {
@@ -37059,8 +37060,8 @@
                     denyUrls: [/recaptcha/, /mobilediscord\.com/, /betterdiscord:\/\//]
                 });
                 var t;
-                X.YA("buildNumber", null !== (t = "231737") ? t : "");
-                X.YA("builtAt", String("1695830043098"));
+                X.YA("buildNumber", null !== (t = "231756") ? t : "");
+                X.YA("builtAt", String("1695832468378"));
                 var e = window.GLOBAL_ENV.SENTRY_TAGS;
                 if (null != e && "object" == typeof e)
                     for (var r in e) X.YA(r, e[r]);
@@ -48449,4 +48450,4 @@
         e(128594), e(535666), e(784633), e(678991)
     }
 ]);
-//# sourceMappingURL=ac49aa85d66fde185293.js.map
+//# sourceMappingURL=23cc978b36cd38fbe636.js.map
