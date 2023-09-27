@@ -1,4 +1,4 @@
-/*! For license information please see 1e40099590e8b13c453f.js.LICENSE.txt */
+/*! For license information please see f8a449e865b66328767d.js.LICENSE.txt */
 (this.webpackChunkdiscord_app = this.webpackChunkdiscord_app || []).push([
     [22897], {
         151131: (t, e, r) => {
@@ -24280,6 +24280,7 @@
                 t.CONTACT_INVITE_IOS_SENT = "contact_invite_ios_sent";
                 t.CONTACT_INVITE_TAPPED = "contact_invite_tapped";
                 t.CONTACT_INVITE_OVERLAY_DISMISSED = "contact_invite_overlay_dismissed";
+                t.FRIEND_SUGGESTION_ADDED = "friend_suggestion_added";
                 t.MESSAGE_REQUESTS_INITIALIZED = "message_requests_initialized";
                 t.GUILD_DEFAULT_MESSAGE_REQUEST_UPDATED = "guild_default_message_request_updated";
                 t.SPAM_MESSAGE_REQUESTS_VIEWED = "spam_message_requests_viewed";
@@ -25510,7 +25511,8 @@
                 t.GOG = "gog";
                 t.EPIC = "epic"
             }(mn || (mn = {}));
-            var vn, Bn, bn = Object.freeze((x(Gn = {}, mn.DISCORD, "Discord"), x(Gn, mn.STEAM, "Steam"), x(Gn, mn.UPLAY, "Uplay"), x(Gn, mn.BATTLENET, "Battle.net"), x(Gn, mn.ORIGIN, "Origin"), x(Gn, mn.GOG, "GOG"), x(Gn, mn.TWITCH, "Twitch"), x(Gn, mn.EPIC, "Epic"), Gn)),
+            var vn, Bn, bn = Object.freeze((x(Gn = {}, mn.DISCORD, "Discord"), x(Gn, mn.STEAM, "Steam"),
+                    x(Gn, mn.UPLAY, "Uplay"), x(Gn, mn.BATTLENET, "Battle.net"), x(Gn, mn.ORIGIN, "Origin"), x(Gn, mn.GOG, "GOG"), x(Gn, mn.TWITCH, "Twitch"), x(Gn, mn.EPIC, "Epic"), Gn)),
                 wn = 6016,
                 Hn = 3384;
             ! function(t) {
@@ -26711,7 +26713,8 @@
                                                     }
                                                 }
                                                 return []
-                                            }(t).some((t => (0, u.U0)(t, e)))
+                                            }(t).some((t => (0,
+                                                u.U0)(t, e)))
                                         }(t, e.ignoreErrors)) {
                                         ("undefined" == typeof __SENTRY_DEBUG__ || __SENTRY_DEBUG__) && E.kg.warn(`Event dropped due to being matched by \`ignoreErrors\` option.\nEvent: ${(0,c.jH)(t)}`);
                                         return !0
@@ -27209,7 +27212,8 @@
             function q(t) {
                 return t && /^function fetch\(\)\s+\{\s+\[native code\]\s+\}$/.test(t.toString())
             }
-            const J = (0, x.Rf)();
+            const J = (0,
+                x.Rf)();
             const Q = (0, x.Rf)(),
                 tt = {},
                 et = {};
@@ -27360,7 +27364,8 @@
                                         }
                                         return t
                                     }()) return;
-                                (0, o.hl)(Q, "fetch", (function(t) {
+                                (0,
+                                    o.hl)(Q, "fetch", (function(t) {
                                     return function(...e) {
                                         const {
                                             method: r,
@@ -28322,8 +28327,7 @@
                 return {
                     $: e,
                     add: function(n) {
-                        if (!(void 0 === t || e.length < t)) return (0,
-                            Kt.$2)(new kt("Not adding Promise because buffer limit was reached."));
+                        if (!(void 0 === t || e.length < t)) return (0, Kt.$2)(new kt("Not adding Promise because buffer limit was reached."));
                         const a = n(); - 1 === e.indexOf(a) && e.push(a);
                         a.then((() => r(a))).then(null, (() => r(a).then(null, (() => {}))));
                         return a
@@ -28434,7 +28438,8 @@
             function zt(t, e = {}) {
                 const r = "string" == typeof e ? e : e.tunnel,
                     n = "string" != typeof e && e._metadata ? e._metadata.sdk : void 0;
-                return r || `${function(t){return`${Xt(t)}${t.projectId}/envelope/`}(t)}?${function(t,e){return(0,o._j)({sentry_key:t.publicKey,sentry_version:"7",...e&&{sentry_client:`${e.name}/${e.version}`}})}(t,n)}`
+                return r || `${function(t){return`${Xt(t)}${t.projectId}/envelope/`}(t)}?${function(t,e){return(0,o._j)({sentry_key:t.publicKey,sentry_version:"7",...e&&{
+sentry_client:`${e.name}/${e.version}`}})}(t,n)}`
             }
 
             function Zt(t, e) {
@@ -29216,8 +29221,7 @@
                     const a = e;
                     if ("stack" in e) i = Te(t, e);
                     else {
-                        const e = a.name || ((0,
-                                S.TX)(a) ? "DOMError" : "DOMException"),
+                        const e = a.name || ((0, S.TX)(a) ? "DOMError" : "DOMException"),
                             o = a.message ? `${e}: ${a.message}` : e;
                         i = Se(t, o, r, n);
                         (0, c.Db)(i, o)
@@ -29290,8 +29294,7 @@
             }) {
                 const r = (0, o.zf)(t),
                     n = e ? "promise rejection" : "exception";
-                if ((0,
-                        S.VW)(t)) return `Event \`ErrorEvent\` captured as ${n} with message \`${t.message}\``;
+                if ((0, S.VW)(t)) return `Event \`ErrorEvent\` captured as ${n} with message \`${t.message}\``;
                 if ((0, S.cO)(t)) {
                     return `Event \`${function(t){try{const e=Object.getPrototypeOf(t);return e?e.constructor.name:void 0}catch(t){}}(t)}\` (type=${t.type}) captured as ${n}`
                 }
@@ -29358,7 +29361,8 @@
                                 }(t) ? (0, De.Rt)(t.target, {
                                     keyAttrs: n,
                                     maxStringLength: a
-                                }) : (0, De.Rt)(t, {
+                                }) : (0,
+                                    De.Rt)(t, {
                                     keyAttrs: n,
                                     maxStringLength: a
                                 })
@@ -29459,8 +29463,7 @@
                                 startTimestamp: e,
                                 endTimestamp: r
                             };
-                        (0,
-                            A.Gd)().addBreadcrumb({
+                        (0, A.Gd)().addBreadcrumb({
                             category: "fetch",
                             data: n,
                             level: "error",
@@ -37033,7 +37036,7 @@
                     dsn: "https://fa97a90475514c03a42f80cd36d147c4@sentry.io/140984",
                     autoSessionTracking: !1,
                     environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                    release: "discord_web-3e22a167d27d3f0a8f3f710eb05df24207fc7ef8",
+                    release: "discord_web-a154de5c41317144b5e3af3ba6002b3aad28399e",
                     beforeSend: function(t) {
                         return function(t) {
                             return null != t.exception && null != t.exception.values && t.exception.values.every((function(t) {
@@ -37060,8 +37063,8 @@
                     denyUrls: [/recaptcha/, /mobilediscord\.com/, /betterdiscord:\/\//]
                 });
                 var t;
-                X.YA("buildNumber", null !== (t = "231822") ? t : "");
-                X.YA("builtAt", String("1695837850435"));
+                X.YA("buildNumber", null !== (t = "231871") ? t : "");
+                X.YA("builtAt", String("1695841362626"));
                 var e = window.GLOBAL_ENV.SENTRY_TAGS;
                 if (null != e && "object" == typeof e)
                     for (var r in e) X.YA(r, e[r]);
@@ -48450,4 +48453,4 @@
         e(128594), e(535666), e(784633), e(678991)
     }
 ]);
-//# sourceMappingURL=1e40099590e8b13c453f.js.map
+//# sourceMappingURL=f8a449e865b66328767d.js.map
