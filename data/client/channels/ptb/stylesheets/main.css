@@ -11046,7 +11046,6 @@ html.decorate-links .lowSaturationUnderline-Z6CW6z {
 }
 
 .buttonText-1c-l_x {
-    max-width: 140px;
     white-space: nowrap;
     text-overflow: ellipsis;
     overflow: hidden
@@ -103806,7 +103805,7 @@ html:not(.custom-theme-background) .container-Vrgqxz {
 }
 
 .button-2j-SXS {
-    width: 160px
+    min-width: 160px
 }
 
 .button-2j-SXS:first-child {
@@ -171023,4 +171022,4 @@ html .invoiceCancelRow-dVOR64 {
     margin-bottom: 8px
 }
 
-/*# sourceMappingURL=40532.a9fd3a3a599b7d0f98d3.css.map*/
+/*# sourceMappingURL=40532.c5cd353936df7cf806f0.css.map*/
