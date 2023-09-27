@@ -170112,7 +170112,8 @@ html .invoiceCancelRow-3s2UuC {
     margin-top: 20px;
     margin-bottom: 20px;
     -webkit-box-sizing: border-box;
-    box-sizing: border-box
+    box-sizing: border-box;
+    width: 100%
 }
 
 .effectDescriptionBorderWithGradient-3GHthf {
@@ -170127,9 +170128,8 @@ html .invoiceCancelRow-3s2UuC {
 .effectDescriptionContainer-1y_8OR {
     background: var(--background-tertiary) padding-box;
     position: relative;
-    width: 280px;
-    border-radius: 4px;
-    padding-right: 4px
+    width: 100%;
+    border-radius: 4px
 }
 
 .effectDescription-3TiVDd {
@@ -170151,8 +170151,17 @@ html .invoiceCancelRow-3s2UuC {
     padding-left: 10px
 }
 
+.effectPurchasedAt-34gVOT {
+    text-align: start;
+    line-height: 12px;
+    font-weight: 400;
+    font-size: 10px;
+    font-family: gg sans;
+    padding: 0 3px 10px 10px
+}
+
 .replayButton-3ja54M {
-    margin: 10px 0 10px 30px;
+    margin: 15px 0 -8px 30px;
     width: 149px;
     height: 24px;
     display: -webkit-box;
@@ -171257,4 +171266,4 @@ html .invoiceCancelRow-dVOR64 {
     margin-bottom: 8px
 }
 
-/*# sourceMappingURL=40532.fc795270714364f26124.css.map*/
+/*# sourceMappingURL=40532.f2e5416f1ff982d3350c.css.map*/
