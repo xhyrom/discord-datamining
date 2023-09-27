@@ -22249,7 +22249,7 @@ html.disable-forced-colors * {
 }
 
 .profileBadgesCompactNoTouch-2UvmQO {
-    width: 140px;
+    max-width: 140px;
     gap: 1px;
     pointer-events: none
 }
@@ -26527,7 +26527,9 @@ code {
     --custom-aspect-stable-image-container-padding: 20px;
     --custom-monetization-info-table-expandable-rows-toggle-expand-column-width: 30px;
     --custom-guild-shop-content-width: 1044px;
-    --custom-guild-shop-content-width-reduced: 688px
+    --custom-guild-shop-content-width-reduced: 688px;
+    --custom-guild-shop-preview-pill-shadow-dark: -4px 5px #1d1d1d;
+    --custom-guild-shop-preview-pill-shadow-light: -4px 5px #d7dce8
 }
 
 :root {
@@ -71915,6 +71917,232 @@ strong {
     }
 }
 
+.container-BY3bnw {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -webkit-box-flex: 1;
+    -ms-flex-positive: 1;
+    flex-grow: 1;
+    background: var(--background-modifier-hover);
+    border-radius: 12px;
+    height: 376px;
+    overflow: hidden
+}
+
+@media (max-width:1439px) {
+    .container-BY3bnw {
+        width: 332px;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+        flex-direction: column-reverse
+    }
+}
+
+.content-G5edtV {
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    padding: 32px
+}
+
+.content-G5edtV,
+.pillContainer-125_aR {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column
+}
+
+.pillContainer-125_aR {
+    gap: 24px
+}
+
+@media (max-width:1439px) {
+    .pillContainer-125_aR {
+        display: none
+    }
+}
+
+.row-19ZZwl {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    gap: 16px
+}
+
+.pill-_U3jjQ {
+    padding: 4px 14px;
+    border-radius: 100px;
+    border: 1px solid var(--background-modifier-selected);
+    background: var(--background-modifier-accent);
+    -webkit-box-shadow: var(--custom-guild-shop-preview-pill-shadow-dark);
+    box-shadow: var(--custom-guild-shop-preview-pill-shadow-dark)
+}
+
+.ctaContent-1Ym1Eh {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    gap: 14px
+}
+
+@media (max-width:1439px) {
+    .ctaContent-1Ym1Eh {
+        text-align: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center
+    }
+}
+
+.getStartedButton-3JVUu4 {
+    width: 136px;
+    height: 38px;
+    padding: 6px 20px
+}
+
+.getStartedButton-3JVUu4,
+.getStartedButtonContents-3WcY-k {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center
+}
+
+.getStartedArrow-aiJqMG {
+    margin-left: 8px;
+    height: 16px;
+    width: 16px
+}
+
+.muralImage-38iF1v {
+    height: 100%;
+    -o-object-fit: cover;
+    object-fit: cover
+}
+
+@media (max-width:1439px) {
+    .muralImage-38iF1v {
+        display: none
+    }
+}
+
+.muralImageReducedWidth-1qNk55 {
+    height: 100%;
+    -o-object-fit: cover;
+    object-fit: cover;
+    display: none
+}
+
+@media (max-width:1439px) {
+    .muralImageReducedWidth-1qNk55 {
+        display: block
+    }
+}
+
+.theme-light .container-BY3bnw {
+    background: var(--background-secondary)
+}
+
+.theme-light .pill-_U3jjQ {
+    background: var(--background-secondary-alt);
+    -webkit-box-shadow: var(--custom-guild-shop-preview-pill-shadow-light);
+    box-shadow: var(--custom-guild-shop-preview-pill-shadow-light)
+}
+
+.previewContentContainer-3DVSWl {
+    -webkit-box-orient: vertical;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    margin-left: auto;
+    margin-right: auto
+}
+
+.previewContent-2af7FX,
+.previewContentContainer-3DVSWl {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-direction: normal
+}
+
+.previewContent-2af7FX {
+    -webkit-box-orient: horizontal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    gap: 54px
+}
+
+@media (max-width:1439px) {
+    .previewContent-2af7FX {
+        gap: 24px
+    }
+}
+
+.learnMoreTipContainer-zpYfCh {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+    margin-top: 32px;
+    color: var(--header-secondary);
+    padding: 4px 10px;
+    border-radius: 4px;
+    border: .8px solid var(--interactive-muted);
+    -ms-flex-item-align: end;
+    align-self: flex-end
+}
+
+@media (max-width:1439px) {
+    .learnMoreTipContainer-zpYfCh {
+        margin-top: 83px;
+        -ms-flex-item-align: center;
+        align-self: center
+    }
+}
+
+.theme-dark .learnMoreTipContainer-zpYfCh {
+    background: var(--background-modifier-hover)
+}
+
+.theme-light .learnMoreTipContainer-zpYfCh {
+    color: var(--interactive-normal);
+    border: .8px solid var(--interactive-normal)
+}
+
+.infoCircle-HFPPT3 {
+    width: 16px;
+    height: 16px;
+    margin-right: 6px
+}
+
 .theme-dark .previewNotice-19XEBw {
     background-color: var(--background-modifier-hover)
 }
@@ -71989,7 +72217,7 @@ html:not(.custom-theme-background) .container-Vrgqxz {
 
 .coverImageContainer-V8-U47 {
     width: 100%;
-    max-width: var(--custom-guild-shop-content-width-reduced)
+    max-width: 655px
 }
 
 .coverImage-2HWWxr {
@@ -171019,4 +171247,4 @@ html .invoiceCancelRow-dVOR64 {
     margin-bottom: 8px
 }
 
-/*# sourceMappingURL=40532.7e45d2d226226c7ba799.css.map*/
+/*# sourceMappingURL=40532.88a18f1d8b4ef85c9aba.css.map*/
