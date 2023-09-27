@@ -19771,14 +19771,6 @@
                 wrapperActive: "wrapperActive-k9mCe9"
             }
         },
-        220800: e => {
-            e.exports = {
-                giftBox: "giftBox-A9yB35",
-                giftBoxHighlighted: "giftBoxHighlighted-1D8128",
-                customGiftBox: "customGiftBox-1w7_Qw",
-                customGiftBoxHighlighted: "customGiftBoxHighlighted-1Pblta"
-            }
-        },
         233863: e => {
             e.exports = {
                 infoIcon: "infoIcon-chB-oI",
@@ -19786,6 +19778,14 @@
                 infoIconContainer: "infoIconContainer-7wlSbF",
                 giftBoxHeaderText: "giftBoxHeaderText-2ndxNR",
                 giftBoxOptionContainer: "giftBoxOptionContainer-ruho5Z"
+            }
+        },
+        614278: e => {
+            e.exports = {
+                giftBox: "giftBox-5g9APR",
+                giftBoxHighlighted: "giftBoxHighlighted-3OVp07",
+                customGiftBox: "customGiftBox-fAjo-m",
+                customGiftBoxHighlighted: "customGiftBoxHighlighted-rMoa5Q"
             }
         },
         241387: e => {
@@ -26928,4 +26928,4 @@
         }
     }
 ]);
-//# sourceMappingURL=fa3c06b7f1514bb5b8da.js.map
+//# sourceMappingURL=dff82d71ac7854f4c724.js.map
