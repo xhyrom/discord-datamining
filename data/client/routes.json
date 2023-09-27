@@ -3825,13 +3825,6 @@
       "OPTIONS"
     ]
   },
-  "GUILD_PRODUCTS": {
-    "url": "/guilds/:param/products",
-    "allowed_methods": [
-      "OPTIONS",
-      "POST"
-    ]
-  },
   "GUILD_PRODUCT_LISTINGS": {
     "url": "/guilds/:param/products/listings/:param",
     "allowed_methods": [
