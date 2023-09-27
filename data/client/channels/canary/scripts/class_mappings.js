@@ -20259,7 +20259,8 @@
                 previewContainer: "previewContainer-3HzSb7",
                 previewContainerAnimation: "previewContainerAnimation-DIEHcA",
                 scaleIn: "scaleIn-3PX5jn",
-                preview: "preview-RKQD82"
+                preview: "preview-RKQD82",
+                previewForCollected: "previewForCollected-1k92_e preview-RKQD82"
             }
         },
         124715: e => {
@@ -26954,4 +26955,4 @@
         }
     }
 ]);
-//# sourceMappingURL=874511f30e02ac2dc27c.js.map
+//# sourceMappingURL=145081c2177a0b003c11.js.map

@@ -163937,6 +163937,8 @@ html .invoiceCancelRow-3s2UuC {
     justify-content: center;
     width: 100%;
     height: 390px;
+    border-radius: var(--radius-md);
+    overflow: hidden;
     z-index: 0
 }
 
@@ -163947,12 +163949,15 @@ html .invoiceCancelRow-3s2UuC {
 
 .preview-RKQD82 {
     position: relative;
+    width: 100%;
+    height: 100%
+}
+
+.previewForCollected-1k92_e {
     -o-object-fit: contain;
     object-fit: contain;
     -o-object-position: top;
-    object-position: top;
-    width: 100%;
-    height: 100%
+    object-position: top
 }
 
 @-webkit-keyframes scaleIn-3PX5jn {
@@ -171252,4 +171257,4 @@ html .invoiceCancelRow-dVOR64 {
     margin-bottom: 8px
 }
 
-/*# sourceMappingURL=40532.5dbeb9dff80b8bdedaaf.css.map*/
+/*# sourceMappingURL=40532.fc795270714364f26124.css.map*/
