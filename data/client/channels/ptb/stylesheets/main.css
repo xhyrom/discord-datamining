@@ -65279,11 +65279,11 @@ h6.title-1p9WyQ {
 .root-3wCxvQ {
     width: 900px;
     border-radius: 8px;
-    background: -webkit-gradient(linear, right top, left top, from(var(--premium-tier-2-pink-for-gradients)), color-stop(33.63%, var(--premium-tier-2-pink-for-gradients-2)), to(var(--premium-tier-2-purple-for-gradients)));
-    background: linear-gradient(270deg, var(--premium-tier-2-pink-for-gradients), var(--premium-tier-2-pink-for-gradients-2) 33.63%, var(--premium-tier-2-purple-for-gradients));
+    background: -webkit-gradient(linear, left top, left bottom, from(#065571), color-stop(80%, #301c50));
+    background: linear-gradient(180deg, #065571, #301c50 80%);
     overflow: visible;
-    -webkit-box-shadow: none;
-    box-shadow: none
+    -webkit-box-shadow: none !important;
+    box-shadow: none !important
 }
 
 .star-1SVBUk {
@@ -65376,7 +65376,8 @@ h6.title-1p9WyQ {
     top: 15px;
     right: 10px;
     cursor: pointer;
-    color: var(--interactive-normal);
+    opacity: 1;
+    color: #dbdee1;
     z-index: 5
 }
 
@@ -171266,4 +171267,4 @@ html .invoiceCancelRow-dVOR64 {
     margin-bottom: 8px
 }
 
-/*# sourceMappingURL=40532.f2e5416f1ff982d3350c.css.map*/
+/*# sourceMappingURL=40532.3dbd46d8da2dc5275308.css.map*/
