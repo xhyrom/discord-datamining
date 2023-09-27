@@ -14761,6 +14761,8 @@
   "COLLECTIBLES_PROFILE_EFFECT_PERMANENT_COLLECTION": "\"This effect is now part of your collection and can be used anytime!\"",
   "COLLECTIBLES_DETAILS_MODAL_PROFILE_EFFECTS_NON_PREMIUM_PURCHASE_DISCLAIMER": "\"After subscribing to Nitro, you’ll have to purchase this effect separately. Nitro subscriptions become non-refundable once you’ve purchased a effect.\"",
   "COLLECTIBLES_PROFILE_EFFECT_PREMIUM_DISCOUNT_TOOLTIP_TEXT": "\"Nitro subscribers get a discount on this effect\"",
+  "CHANGE_PROFILE_EFFECT_MODAL_PREVIEW_PURCHASE": "\"Want this profile effect for yourself? Visit the shop to buy and add it to your collection. Only with Nitro.\"",
+  "CHANGE_PROFILE_EFFECT_MODAL_PREVIEW_PURCHASE_PREMIUM": "\"Want this profile effect for yourself? Head to the shop to buy and collect it!\"",
   "MOBILE_TIME_REMAINING_DAYS": "\"{days} days remaining\"",
   "MOBILE_TIME_REMAINING_HOURS_MINUTES_SECONDS": "\"{hours}:{minutes}:{seconds} remaining\"",
   "DIRECTORY_CATEGORY_TOWN_HALL_1": "\"Staff Picks\"",
