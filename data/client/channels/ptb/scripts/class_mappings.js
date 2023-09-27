@@ -20207,6 +20207,7 @@
         },
         418877: e => {
             e.exports = {
+                modal: "modal-3Dr350",
                 subscribeFooter: "subscribeFooter-3rMXge",
                 buttonsRight: "buttonsRight-3JWUcH",
                 modalHeader: "modalHeader-QZFdV1",
@@ -26953,4 +26954,4 @@
         }
     }
 ]);
-//# sourceMappingURL=57c9bdbbed2ba93cd368.js.map
+//# sourceMappingURL=874511f30e02ac2dc27c.js.map
