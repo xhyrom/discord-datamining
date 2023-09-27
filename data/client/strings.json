@@ -4650,6 +4650,7 @@
   "MFA_V2_TOTP": "\"Verify with a two-factor code\"",
   "MFA_V2_PASSWORD": "\"Verify with a password\"",
   "MFA_V2_SMS_RESEND": "\"Resend Code\"",
+  "MFA_V2_WEBAUTHN_GENERIC_ERROR": "\"An error occurred. Please try again.\"",
   "ACCOUNT_MANAGEMENT": "\"Account Management\"",
   "DELETE_ACCOUNT": "\"Delete Account\"",
   "DISABLE_ACCOUNT": "\"Disable Account\"",
