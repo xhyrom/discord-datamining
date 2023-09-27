@@ -20229,6 +20229,7 @@
                 effectDescriptionContainer: "effectDescriptionContainer-1y_8OR",
                 effectDescription: "effectDescription-3TiVDd",
                 effectName: "effectName-2B6JQP",
+                effectPurchasedAt: "effectPurchasedAt-34gVOT",
                 replayButton: "replayButton-3ja54M",
                 replayButtonText: "replayButtonText-1tQs6j",
                 retryIcon: "retryIcon-3yWMmW"
@@ -26955,4 +26956,4 @@
         }
     }
 ]);
-//# sourceMappingURL=145081c2177a0b003c11.js.map
+//# sourceMappingURL=7527947468c66a124aa2.js.map
