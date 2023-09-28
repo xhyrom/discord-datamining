@@ -1,4 +1,4 @@
-/*! For license information please see ac80a65235e8c869db98.js.LICENSE.txt */
+/*! For license information please see 75a53c8c15ad1ef55764.js.LICENSE.txt */
 (this.webpackChunkdiscord_app = this.webpackChunkdiscord_app || []).push([
     [22897], {
         151131: (t, e, r) => {
@@ -37047,7 +37047,7 @@ c.jH)(t)}.\nUrl: ${A(t)}`);
                     dsn: "https://fa97a90475514c03a42f80cd36d147c4@sentry.io/140984",
                     autoSessionTracking: !1,
                     environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                    release: "discord_web-de4f5e8af666b24913effd4cec1b618281b9a174",
+                    release: "discord_web-203fff9c761cfc2730a4ffeaf96f43d606b5a8b6",
                     beforeSend: function(t) {
                         return function(t) {
                             return null != t.exception && null != t.exception.values && t.exception.values.every((function(t) {
@@ -37074,8 +37074,8 @@ c.jH)(t)}.\nUrl: ${A(t)}`);
                     denyUrls: [/recaptcha/, /mobilediscord\.com/, /betterdiscord:\/\//]
                 });
                 var t;
-                X.YA("buildNumber", null !== (t = "232364") ? t : "");
-                X.YA("builtAt", String("1695928272412"));
+                X.YA("buildNumber", null !== (t = "232405") ? t : "");
+                X.YA("builtAt", String("1695931907829"));
                 var e = window.GLOBAL_ENV.SENTRY_TAGS;
                 if (null != e && "object" == typeof e)
                     for (var r in e) X.YA(r, e[r]);
@@ -37743,7 +37743,7 @@ c.jH)(t)}.\nUrl: ${A(t)}`);
                     [P.GIROPAY, "giropay"],
                     [P.IDEAL, "ideal"]
                 ]),
-                H = new Set([P.PAYSAFE_CARD, P.GCASH, P.GRABPAY_MY, P.GOPAY_WALLET, P.MOMO_WALLET, P.KAKAOPAY, P.BANCONTACT, P.EPS, P.IDEAL, P.SOFORT, P.GIROPAY, P.PRZELEWY24]),
+                H = new Set([P.PAYSAFE_CARD, P.GCASH, P.GRABPAY_MY, P.GOPAY_WALLET, P.MOMO_WALLET, P.KAKAOPAY, P.BANCONTACT, P.EPS, P.IDEAL, P.SOFORT, P.GIROPAY, P.PRZELEWY24, P.CASH_APP]),
                 Y = new Set([P.PAYSAFE_CARD, P.GRABPAY_MY, P.GIROPAY, P.PRZELEWY24, P.SOFORT, P.BANCONTACT, P.EPS, P.IDEAL]),
                 x = new Set([P.CARD, P.PAYPAL, P.SEPA_DEBIT, P.GCASH, P.MOMO_WALLET, P.VENMO, P.KAKAOPAY, P.GOPAY_WALLET, P.CASH_APP]),
                 k = new Set([P.GIROPAY, P.SOFORT, P.PRZELEWY24, P.BANCONTACT, P.EPS, P.IDEAL, P.PAYSAFE_CARD, P.GRABPAY_MY, P.GOPAY_WALLET]),
@@ -48455,4 +48455,4 @@ c.jH)(t)}.\nUrl: ${A(t)}`);
         e(128594), e(535666), e(784633), e(678991)
     }
 ]);
-//# sourceMappingURL=ac80a65235e8c869db98.js.map
+//# sourceMappingURL=75a53c8c15ad1ef55764.js.map
