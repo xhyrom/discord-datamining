@@ -6720,8 +6720,10 @@
                 getStartedButton: "getStartedButton-3JVUu4",
                 getStartedButtonContents: "getStartedButtonContents-3WcY-k",
                 getStartedArrow: "getStartedArrow-aiJqMG",
+                muralImageContainer: "muralImageContainer-3Snn8v",
                 muralImage: "muralImage-38iF1v",
-                muralImageReducedWidth: "muralImageReducedWidth-1qNk55"
+                muralImageReducedWidth: "muralImageReducedWidth-1qNk55",
+                responsive: "responsive-3Y9u5v"
             }
         },
         653440: e => {
@@ -11210,12 +11212,6 @@
                 arrowIcon: "arrowIcon-1s4INR",
                 hasAction: "hasAction-3GAEYD",
                 cardClickableContainer: "cardClickableContainer-2nzN0M"
-            }
-        },
-        462819: e => {
-            e.exports = {
-                container: "container-2G73mC",
-                tail: "tail-DnKGop"
             }
         },
         259367: e => {
@@ -26970,4 +26966,4 @@
         }
     }
 ]);
-//# sourceMappingURL=f292199b2be3b6855176.js.map
+//# sourceMappingURL=dc1824498aa558bab1b8.js.map

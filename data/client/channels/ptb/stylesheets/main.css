@@ -71922,69 +71922,54 @@ strong {
 }
 
 .container-BY3bnw {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
     -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
     -ms-flex-direction: row;
     flex-direction: row;
-    -webkit-box-pack: justify;
-    -ms-flex-pack: justify;
-    justify-content: space-between;
     -webkit-box-flex: 1;
     -ms-flex-positive: 1;
     flex-grow: 1;
     background: var(--background-modifier-hover);
     border-radius: 12px;
     height: 376px;
+    width: 658px;
     overflow: hidden
 }
 
-@media (max-width:1439px) {
-    .container-BY3bnw {
-        width: 332px;
-        -webkit-box-orient: vertical;
-        -webkit-box-direction: reverse;
-        -ms-flex-direction: column-reverse;
-        flex-direction: column-reverse
-    }
-}
-
+.container-BY3bnw,
 .content-G5edtV {
-    -webkit-box-pack: justify;
-    -ms-flex-pack: justify;
-    justify-content: space-between;
-    padding: 32px
-}
-
-.content-G5edtV,
-.pillContainer-125_aR {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between
+}
+
+.content-G5edtV {
+    -webkit-box-orient: vertical;
     -ms-flex-direction: column;
-    flex-direction: column
+    flex-direction: column;
+    padding: 32px
 }
 
 .pillContainer-125_aR {
+    -webkit-box-orient: vertical;
+    -ms-flex-direction: column;
+    flex-direction: column;
     gap: 24px
 }
 
-@media (max-width:1439px) {
-    .pillContainer-125_aR {
-        display: none
-    }
-}
-
+.pillContainer-125_aR,
 .row-19ZZwl {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    -webkit-box-direction: normal
+}
+
+.row-19ZZwl {
     -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
     -ms-flex-direction: row;
     flex-direction: row;
     gap: 16px
@@ -72010,15 +71995,6 @@ strong {
     gap: 14px
 }
 
-@media (max-width:1439px) {
-    .ctaContent-1Ym1Eh {
-        text-align: center;
-        -webkit-box-align: center;
-        -ms-flex-align: center;
-        align-items: center
-    }
-}
-
 .getStartedButton-3JVUu4 {
     width: 136px;
     height: 38px;
@@ -72041,16 +72017,26 @@ strong {
     width: 16px
 }
 
+.muralImageContainer-3Snn8v {
+    height: 100%;
+    position: relative
+}
+
 .muralImage-38iF1v {
     height: 100%;
     -o-object-fit: cover;
     object-fit: cover
 }
 
-@media (max-width:1439px) {
-    .muralImage-38iF1v {
-        display: none
-    }
+.muralImageContainer-3Snn8v:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-image: -webkit-gradient(linear, right top, left top, from(rgba(40, 40, 40, .55)), to(transparent));
+    background-image: linear-gradient(270deg, rgba(40, 40, 40, .55), transparent)
 }
 
 .muralImageReducedWidth-1qNk55 {
@@ -72058,12 +72044,6 @@ strong {
     -o-object-fit: cover;
     object-fit: cover;
     display: none
-}
-
-@media (max-width:1439px) {
-    .muralImageReducedWidth-1qNk55 {
-        display: block
-    }
 }
 
 .theme-light .container-BY3bnw {
@@ -72074,6 +72054,37 @@ strong {
     background: var(--background-secondary-alt);
     -webkit-box-shadow: var(--custom-guild-shop-preview-pill-shadow-light);
     box-shadow: var(--custom-guild-shop-preview-pill-shadow-light)
+}
+
+@media (max-width:1439px) {
+    .responsive-3Y9u5v .container-BY3bnw {
+        width: 332px;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+        flex-direction: column-reverse
+    }
+
+    .responsive-3Y9u5v .ctaContent-1Ym1Eh {
+        text-align: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center
+    }
+
+    .responsive-3Y9u5v .muralImage-38iF1v,
+    .responsive-3Y9u5v .pillContainer-125_aR {
+        display: none
+    }
+
+    .responsive-3Y9u5v .muralImageContainer-3Snn8v:before {
+        background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(40, 40, 40, .55)), to(transparent));
+        background-image: linear-gradient(180deg, rgba(40, 40, 40, .55), transparent)
+    }
+
+    .responsive-3Y9u5v .muralImageReducedWidth-1qNk55 {
+        display: block
+    }
 }
 
 .previewContentContainer-3DVSWl {
@@ -115590,20 +115601,6 @@ button.button-12Fmur.disabled-GROwTe {
     bottom: 20px;
     width: 480px;
     z-index: 2
-}
-
-.container-2G73mC {
-    position: relative;
-    padding: 6px 15px;
-    border-radius: 16px
-}
-
-.tail-DnKGop {
-    position: absolute;
-    width: 13px;
-    height: 9px;
-    bottom: 0;
-    left: -4px
 }
 
 .noProductsContainer-PcBbce {
@@ -171375,4 +171372,4 @@ html .invoiceCancelRow-dVOR64 {
     margin-bottom: 8px
 }
 
-/*# sourceMappingURL=40532.c8b031b5c73e250ded76.css.map*/
+/*# sourceMappingURL=40532.01ec3e7d59563b4e26d2.css.map*/
