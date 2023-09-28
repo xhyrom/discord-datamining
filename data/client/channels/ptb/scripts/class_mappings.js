@@ -12630,6 +12630,8 @@
                 stageIcon: "stageIcon-1Gi-1l",
                 userNames: "userNames-2j2GW-",
                 joinButton: "joinButton-1HdI2a",
+                rsvpButton: "rsvpButton-1rIlgm",
+                buttonIcon: "buttonIcon-lnv1wf",
                 closeIcon: "closeIcon-1AEDhI"
             }
         },
@@ -26994,4 +26996,4 @@
         }
     }
 ]);
-//# sourceMappingURL=b715e11a673aa9347a2d.js.map
+//# sourceMappingURL=de01c1006127993db0fb.js.map
