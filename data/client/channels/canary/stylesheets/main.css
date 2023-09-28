@@ -71338,8 +71338,7 @@ strong {
     -webkit-box-direction: normal;
     -ms-flex-direction: row;
     flex-direction: row;
-    min-width: 0;
-    padding: 0 68px
+    min-width: 0
 }
 
 @media (max-width:724px) {
@@ -171577,4 +171576,4 @@ html .invoiceCancelRow-dVOR64 {
     margin-bottom: 8px
 }
 
-/*# sourceMappingURL=40532.416a4847efaf6137596b.css.map*/
+/*# sourceMappingURL=40532.96486bac173f1dc597b1.css.map*/
