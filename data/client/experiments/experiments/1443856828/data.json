@@ -14,7 +14,8 @@
       "Treatment 7: Combined entry point and tabs + double weekly refills",
       "Treatment 8: All additional polish",
       "Treatment 9: All additional polish except notifications",
-      "Treatment 10: The exact same as bucket six, just with a different label"
+      "Treatment 10: The exact same as bucket six, just with a different label",
+      "Treatment 11: New send experience"
     ],
     "hash": 1443856828,
     "buckets": [
@@ -28,7 +29,8 @@
       7,
       8,
       9,
-      10
+      10,
+      11
     ],
     "config_keys": [
       "enabled",

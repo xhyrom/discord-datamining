@@ -1,0 +1,21 @@
+{
+  "data": {
+    "kind": "guild",
+    "id": "2023-09_upcoming_guild_events_notice",
+    "label": "Shows additional notices in the channel list for upcoming events",
+    "description": [
+      "Not Eligible",
+      "Control Bucket",
+      "Treatment 1: Guild members can see upcoming events notices"
+    ],
+    "hash": 2766349394,
+    "buckets": [
+      -1,
+      0,
+      1
+    ],
+    "config_keys": [
+      "enabled"
+    ]
+  }
+}
