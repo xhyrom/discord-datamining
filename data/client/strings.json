@@ -11329,6 +11329,7 @@
   "USER_SETTINGS_PROFILE_EFFECT": "\"Profile Effect\"",
   "USER_SETTINGS_REMOVE_PROFILE_EFFECT": "\"Remove Effect\"",
   "USER_SETTINGS_CHANGE_PROFILE_EFFECT": "\"Change Effect\"",
+  "USER_SETTINGS_ADD_PROFILE_EFFECT": "\"Add Effect\"",
   "USER_SETTINGS_ABOUT_ME": "\"About Me\"",
   "USER_SETTINGS_ABOUT_ME_HINT": "\"Tap to add an about me\"",
   "USER_SETTINGS_PRONOUNS_HINT": "\"Tap to add pronouns\"",
