@@ -2,7 +2,7 @@
 <p><strong>Promotion Summary</strong></p>
 <p><strong>Offer Details:</strong> 6 months of free Discord Nitro</p>
 <p><strong>Who is Eligible: </strong>Users who have never had an active Nitro subscription on their Discord accounts are eligible to redeem this Nitro promotion.</p>
-<p>Users who have had a Discord Nitro subscription at any point on their accounts and have had a Nitro Classic or Nitro Basic subscription in the past 12 months are ineligible to redeem this promotion.</p>
+<p>Users who have had a Discord Nitro subscription at any point on their accounts and have had a Nitro Classic or Nitro Basic subscription <span id="docs-internal-guid-9c6a741f-7fff-9a79-6186-b3da498e1e7e">within the past 12 months are eligible</span> to redeem this promotion.</p>
 <p>If a user has had a Nitro Basic, Nitro Classic, or Server Boosting subscription active on their account and they’ve never had a Nitro subscription, redeeming this promotion will override that subscription.</p>
 <p>We will not be able to refund any leftover subscription time from those, and the user will be forfeiting the remainder of the existing sub when activating the 6 months Nitro trial.</p>
 <p><strong>Requirements:</strong> Claim through Google Play on the Play Points Perks tab. The feature will start rolling out on August 31, 2023 to eligible users and ends on February 28, 2024. The offer must be redeemed in a Discord account by March 29, 2024 (23:59 pm local time).</p>
@@ -79,7 +79,7 @@
 <p class="wysiwyg-text-align-center"><img src="https://support.discord.com/hc/article_attachments/17183392459031" alt="Untitled (4).png"></p>
 <h2 id="h_01H964XPZPYTPXJ958RRYAQTSP"><strong>Eligibility for Redeeming the Nitro Trial</strong></h2>
 <p id="docs-internal-guid-4b57c88c-7fff-1940-b1bf-baf50322e7f6">Users who have never had an active Nitro subscription on their Discord accounts are eligible to redeem this Nitro promotion.</p>
-<p>Users who have had a Discord Nitro subscription at any point on their accounts and have had a Nitro Classic or Nitro Basic subscription in the past 12 months are ineligible to redeem this promotion.</p>
+<p>Users who have had a Discord Nitro subscription at any point on their accounts and have had a Nitro Classic or Nitro Basic subscription <span id="docs-internal-guid-9c6a741f-7fff-9a79-6186-b3da498e1e7e">within the past 12 months are eligible</span> to redeem this promotion.</p>
 <p>If a user has had a Nitro Basic, Nitro Classic, or Server Boosting subscription active on their account and they’ve never had a Nitro subscription, redeeming this promotion will override that subscription.</p>
 <h2 id="h_01H964XPZPNQ32GQ9JF869Z3KR"><strong>Step by Step Redeem Instructions</strong></h2>
 <p>If you're eligible and ready to redeem this Nitro subscription on your own Discord account, you can follow these steps below to redeem the promo.</p>
@@ -94,7 +94,7 @@
 <p>3) Tap on <strong>Redeem Code</strong>.</p>
 <p>4) Enter the promo code and redeem it.</p>
 <h2 id="h_01H964XPZP39KD5SS4YBVB1WYK"><strong>What if I am an Active Nitro Basic, Nitro Classic, or Server Boosting Subscriber? </strong></h2>
-<p id="docs-internal-guid-fc507973-7fff-a399-0ae7-c8454ba26f98">Just to clarify - if you have had a Discord Nitro subscription at any point on your account and have had a Nitro Classic or Nitro Basic subscription in the past 12 months, you are ineligible to redeem this promotion.</p>
+<p id="docs-internal-guid-fc507973-7fff-a399-0ae7-c8454ba26f98">Just to clarify - if you have had a Discord Nitro subscription at any point on your account and have had a Nitro Classic or Nitro Basic subscription <span id="docs-internal-guid-9c6a741f-7fff-9a79-6186-b3da498e1e7e">within the past 12 months, you are eligible</span> to redeem this promotion.</p>
 <p>So long as you have had a Nitro Basic, Nitro Classic, or Server Boosting subscription active on your account and you’ve never had a Nitro subscription, you will be able to redeem this promotion and replace it with the 6 months Nitro subscription.</p>
 <h3 id="h_01H964XPZP8WFNEMJVZMPDS4GF"><strong>HOWEVER, please note:</strong></h3>
 <h3 id="h_01H964XPZPT336M6T8EGSHSEMC"><strong>- By choosing to activate this 6 months trial, you will lose any features associated with your current subscriptions, and **you will not receive a refund for any remaining value on your current subscription**.</strong></h3>
@@ -117,12 +117,14 @@
 <p><strong>A: </strong>Rolling out to you soon if you’re a US Google Play Platinum member</p>
 <p><strong>Q: Who can redeem this Nitro trial to their Discord account?</strong></p>
 <p><strong>A: </strong>Users who have never had an active Nitro subscription on their Discord accounts are eligible to redeem this Nitro promotion.</p>
-<p>Additionally, users who previously had a Discord Nitro subscription and have had a Nitro Classic or Nitro Basic subscription in the past 12 months are ineligible.</p>
+<p>Additionally, users who previously had a Discord Nitro subscription and have had a Nitro Classic or Nitro Basic subscription <span id="docs-internal-guid-9c6a741f-7fff-9a79-6186-b3da498e1e7e">within the past 12 months are eligible</span>.</p>
 <p><strong>Q: What if I'm a current or previous Nitro Basic, Nitro Classic, or a Server Boost subscriber? Can I also take part in this promotion? </strong></p>
-<p><strong>A: </strong>If you previously had a Discord Nitro subscription at any point on your accounts and have had a Nitro Classic or Nitro Basic subscription in the past 12 months, you are ineligible to redeem this promotion.</p>
+<p><strong>A: </strong>If you previously had a Discord Nitro subscription at any point on your accounts and have had a Nitro Classic or Nitro Basic subscription <span id="docs-internal-guid-9c6a741f-7fff-9a79-6186-b3da498e1e7e">within the past 12 months</span>, you are eligible to redeem this promotion.</p>
 <p>If you have had a Nitro Basic, Nitro Classic, or Server Boosting subscription active on your account and you’ve never had a Nitro subscription,  you will be able to redeem this promotion and replace it with the 6 months Nitro subscription.</p>
 <h3 id="h_01H964XPZPE3A06P11CWG7VEFB"><strong>HOWEVER, please note:</strong></h3>
 <h3 id="h_01H964XPZPTVVMC0WKFJFPXZNZ"><strong>- By choosing to activate this 6 month trials, you will lose any features associated with your current subscriptions, and **you will not receive a refund for any remaining value on your current subscription**.</strong></h3>
 <p>At the end of the promotion period, you'll be converted to a paying Nitro subscription per month unless you cancel your subscription.</p>
+<p><strong>Q: Can I share my code with a friend if I'm not eligible to redeem it?</strong></p>
+<p>A: No, this is an exclusive offer and only the recipient of the Nitro trial can redeem it from their Google Play Platinum account.</p>
 <p><strong>Q: I’m having trouble with my Google Play account.</strong></p>
 <p><strong>A:</strong> Reach out to Google Play’s support team: <a href="https://support.google.com/googleplay/" target="_blank" rel="noopener noreferrer">https://support.google.com/googleplay/</a></p>
