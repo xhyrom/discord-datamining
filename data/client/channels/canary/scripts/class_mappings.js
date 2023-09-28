@@ -10690,8 +10690,9 @@
                 code: "code-1q3JFI",
                 mainTableContainer: "mainTableContainer-3Nxvkd",
                 noResultsContainer: "noResultsContainer-2YrKBF",
-                spinner: "spinner-xNTyIO",
-                hideSpinner: "hideSpinner-3_EHCw"
+                loaderContainer: "loaderContainer-16oMpU",
+                loaderBar: "loaderBar-16KU_Y",
+                loadingBar: "loadingBar-28_l-A"
             }
         },
         626801: e => {
@@ -26967,4 +26968,4 @@
         }
     }
 ]);
-//# sourceMappingURL=0a4326f32c265c43f85e.js.map
+//# sourceMappingURL=76eeba3e643b2a77b056.js.map
