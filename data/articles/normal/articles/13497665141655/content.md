@@ -8,9 +8,9 @@
 <h1 id="h_01H55ZTX2Q5342B75RC1G452TB">What is a Server Guide?</h1>
 <p>Server Guide is a dedicated space that new members see after they join. Its purpose is to enable server admins to customize their welcoming experience further by offering an engaging and informative introduction to their community. For existing members, Server Guide can be set up by admins to house Resource Pages.</p>
 <p>By using Server Guide, admins can showcase their server's unique features, rules, and channels, ensuring that newcomers feel welcomed and informed from the moment they join. This tailored experience helps new users quickly acclimate to the server.</p>
-<p class="wysiwyg-text-align-center"><img style="height: 444px; width: 624px;" src="https://lh3.googleusercontent.com/MUKR47LF6JJR32raC4A6u32dlThFmICoHk2ku3XjfndQGVliUVMCyRV_pcEwfgSexS63x8PwzNVTASvbiifUS7TiW1LkxJy_ja4NqesRY4x25XkRnT0V0VYiJxs_ToRnu8fETY5VZxa6bVeQnraOwRQ"></p>
+<p class="wysiwyg-text-align-center"><img src="https://support.discord.com/hc/article_attachments/17866576547223" alt="server_guide1.png"></p>
 <h1 id="h_01H55ZWG4YBTASWFS80JQHR19D">How to set up Server Guide</h1>
-<p class="wysiwyg-text-align-center"><img style="height: 391px; width: 624px;" src="https://lh5.googleusercontent.com/klGdvSS7ZA3rEzJWxlOYsEazA9Q2jdGP4Yo4W-5_GVnMoV4QBR5rDAXP3Bwo48Acc8d6vUyVttBHWchIiXy8D7zSKVOfTC1qLLQjU8Id7nLKScm_62uOEhECj8AeGegPTszZch5Tl1CDah-WNohAHDk"></p>
+<p class="wysiwyg-text-align-center"><img src="https://support.discord.com/hc/article_attachments/17866600310679" alt="server_guide2.png"></p>
 <p>Server Guide is a feature within Onboarding, which can be accessed via <strong>Server Settings &gt; Onboarding</strong>.</p>
 <p>Once you’ve completed the <strong>Default Channels</strong> and <strong>Questions</strong> portion of Onboarding, you can advance to the Server Guide setup. Here, you can customize a few things:</p>
 <ul>
