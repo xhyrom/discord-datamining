@@ -13080,6 +13080,7 @@
   "MEMBERS_TABLE_ROLE_SELECTION_CONFIRM": "\"Confirm\"",
   "MEMBERS_TABLE_NEW_MEMBER_TIMESTAMP_REFRESH_MODAL_TITLE": "\"View New Members?\"",
   "MEMBERS_TABLE_NEW_MEMBER_TIMESTAMP_REFRESH_MODAL_DESCRIPTION": "\"Doing this will reset your search. Are you sure you want to continue?\"",
+  "MEMBERS_TABLE_MEMBER_SEARCH_LOADING": "\"Searching all members...\"",
   "MEMBERS_TABLE_JOINED_AT_TIMESTAMP_SECONDS": "\"just now\"",
   "MEMBERS_TABLE_JOINED_AT_TIMESTAMP_MINUTES": "\"{count} {count, plural, =1 {min} other {mins}} ago\"",
   "MEMBERS_TABLE_JOINED_AT_TIMESTAMP_HOURS": "\"{count} {count, plural, =1 {hr} other {hrs}} ago\"",
