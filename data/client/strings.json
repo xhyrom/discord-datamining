@@ -13877,6 +13877,7 @@
   "SUMMARY_FEEDBACK": "\"Was this a good summary?\"",
   "SUMMARY_NO_SUMMARIES_ALT_TEXT": "\"A lost bird looking at map\"",
   "SUMMARIES_VIEW_ALL": "\"View all summaries\"",
+  "SUMMARIES_NO_SUMMARIES": "\"No summaries\"",
   "JUMP_TO_PRESENT_BUTTON_LABEL": "\"Jump to Present\"",
   "GUILD_SIDEBAR_HEADER_MOBILE_A11Y_HINT": "\"double-tap for server options\"",
   "GUILD_SIDEBAR_CHANNEL_BROWSER": "\"Browse Channels\"",
