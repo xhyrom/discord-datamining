@@ -49583,6 +49583,240 @@ html .progress-2Otdc- {
     color: var(--interactive-active)
 }
 
+.lineClamp-2-w95g {
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    overflow: hidden
+}
+
+.container-20Ljoy {
+    -webkit-box-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    position: relative;
+    z-index: 0
+}
+
+.content-1tt_Au {
+    padding: 32px 42px
+}
+
+.contentContainer-1faF_F {
+    margin: auto;
+    width: var(--custom-guild-shop-content-width);
+    position: relative;
+    z-index: 1
+}
+
+@media (max-width:1439px) {
+    .contentContainer-1faF_F {
+        width: var(--custom-guild-shop-content-width-reduced)
+    }
+}
+
+.tabContainer-2CNeKV {
+    border-top: 1px solid var(--background-modifier-hover)
+}
+
+.sparkleCloudTop-3D79_3 {
+    top: 48px;
+    left: 0
+}
+
+.sparkleCloudBottom-33rbkJ {
+    bottom: 0;
+    right: 0
+}
+
+.sparkleCloudBottom-33rbkJ,
+.sparkleCloudTop-3D79_3 {
+    position: absolute;
+    opacity: 1;
+    -webkit-transition: opacity .5s ease-in-out;
+    transition: opacity .5s ease-in-out;
+    pointer-events: none;
+    z-index: 0
+}
+
+@media (max-width:1789px) {
+
+    .sparkleCloudBottom-33rbkJ,
+    .sparkleCloudTop-3D79_3 {
+        opacity: 0
+    }
+}
+
+.container-Vrgqxz {
+    border-radius: 12px;
+    border: 1px solid var(--background-message-highlight-hover);
+    background: var(--background-message-highlight);
+    -webkit-box-shadow: var(--shadow-low);
+    box-shadow: var(--shadow-low);
+    padding: 16px;
+    -webkit-transition: background .3s;
+    transition: background .3s;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    gap: 24px
+}
+
+.container-Vrgqxz:hover {
+    background: var(--background-message-highlight-hover)
+}
+
+@media (max-width:1439px) {
+    .container-Vrgqxz {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+        flex-direction: column-reverse;
+        max-width: var(--custom-guild-shop-content-width-reduced)
+    }
+
+    .container-Vrgqxz .infoContainer-14dbs1 {
+        max-width: none
+    }
+}
+
+html:not(.custom-theme-background) .container-Vrgqxz {
+    background-color: var(--background-secondary)
+}
+
+.coverImageContainer-V8-U47 {
+    width: 100%;
+    max-width: 655px
+}
+
+.coverImage-2HWWxr {
+    width: 100%;
+    border-radius: 12px;
+    aspect-ratio: 4;
+    -o-object-fit: cover;
+    object-fit: cover
+}
+
+.infoContainer-14dbs1 {
+    -webkit-box-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+    max-width: 500px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex
+}
+
+.infoContainerNoDescription-3y0gdG,
+.showMoreButton-13n9-g {
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center
+}
+
+.showMoreButton-13n9-g {
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    border-bottom: 1px solid var(--interactive-active);
+    padding-bottom: 2px;
+    cursor: pointer
+}
+
+.showMoreButton-13n9-g:hover {
+    -webkit-transition: .3s ease;
+    transition: .3s ease;
+    opacity: .75
+}
+
+.showMoreArrow-1hAnFi {
+    color: var(--interactive-active);
+    width: 16px;
+    height: 16px;
+    margin-right: -3px
+}
+
+.guildShopEmbed-1nkLdU {
+    background-color: var(--background-secondary);
+    width: 510px;
+    min-height: 300px;
+    padding: 16px;
+    border-radius: 12px
+}
+
+.spinnerContainer-1Rt31d {
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center
+}
+
+.serverShopLabel-IFN7PT,
+.spinnerContainer-1Rt31d {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex
+}
+
+.serverShopLabel-IFN7PT {
+    gap: 4px
+}
+
+.serverShopLabelText-15AGIU {
+    text-transform: uppercase
+}
+
+.guildShopEmbedFooter-2isZhb {
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    width: 100%;
+    gap: 12px
+}
+
+.guildShopEmbedFooter-2isZhb,
+.guildShopSummary-1A-M8Q {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex
+}
+
+.guildShopSummary-1A-M8Q {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    height: 42px;
+    list-style-type: disc;
+    padding-left: 20px;
+    color: var(--interactive-muted)
+}
+
+.guildShopEmbedCta-2T31wV {
+    margin-left: auto
+}
+
+.guildShopEmbedCtaContent-16pdEQ {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    gap: 8px
+}
+
 .accessory-A8wSuS {
     cursor: pointer;
     color: var(--interactive-normal);
@@ -71751,70 +71985,6 @@ strong {
     color: var(--text-link)
 }
 
-.container-20Ljoy {
-    -webkit-box-flex: 1;
-    -ms-flex: 1;
-    flex: 1;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: column;
-    flex-direction: column;
-    position: relative;
-    z-index: 0
-}
-
-.content-1tt_Au {
-    padding: 32px 42px
-}
-
-.contentContainer-1faF_F {
-    margin: auto;
-    width: var(--custom-guild-shop-content-width);
-    position: relative;
-    z-index: 1
-}
-
-@media (max-width:1439px) {
-    .contentContainer-1faF_F {
-        width: var(--custom-guild-shop-content-width-reduced)
-    }
-}
-
-.tabContainer-2CNeKV {
-    border-top: 1px solid var(--background-modifier-hover)
-}
-
-.sparkleCloudTop-3D79_3 {
-    top: 48px;
-    left: 0
-}
-
-.sparkleCloudBottom-33rbkJ {
-    bottom: 0;
-    right: 0
-}
-
-.sparkleCloudBottom-33rbkJ,
-.sparkleCloudTop-3D79_3 {
-    position: absolute;
-    opacity: 1;
-    -webkit-transition: opacity .5s ease-in-out;
-    transition: opacity .5s ease-in-out;
-    pointer-events: none;
-    z-index: 0
-}
-
-@media (max-width:1789px) {
-
-    .sparkleCloudBottom-33rbkJ,
-    .sparkleCloudTop-3D79_3 {
-        opacity: 0
-    }
-}
-
 .container-PSWAEM {
     padding-bottom: 24px
 }
@@ -72182,104 +72352,6 @@ strong {
 
 .removePreviewButton-1uuOSE {
     padding: 5px 10px
-}
-
-.lineClamp-2-w95g {
-    display: -webkit-box;
-    -webkit-box-orient: vertical;
-    overflow: hidden
-}
-
-.container-Vrgqxz {
-    border-radius: 12px;
-    border: 1px solid var(--background-message-highlight-hover);
-    background: var(--background-message-highlight);
-    -webkit-box-shadow: var(--shadow-low);
-    box-shadow: var(--shadow-low);
-    padding: 16px;
-    -webkit-transition: background .3s;
-    transition: background .3s;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: justify;
-    -ms-flex-pack: justify;
-    justify-content: space-between;
-    gap: 24px
-}
-
-.container-Vrgqxz:hover {
-    background: var(--background-message-highlight-hover)
-}
-
-@media (max-width:1439px) {
-    .container-Vrgqxz {
-        -webkit-box-orient: vertical;
-        -webkit-box-direction: reverse;
-        -ms-flex-direction: column-reverse;
-        flex-direction: column-reverse;
-        max-width: var(--custom-guild-shop-content-width-reduced)
-    }
-
-    .container-Vrgqxz .infoContainer-14dbs1 {
-        max-width: none
-    }
-}
-
-html:not(.custom-theme-background) .container-Vrgqxz {
-    background-color: var(--background-secondary)
-}
-
-.coverImageContainer-V8-U47 {
-    width: 100%;
-    max-width: 655px
-}
-
-.coverImage-2HWWxr {
-    width: 100%;
-    border-radius: 12px;
-    aspect-ratio: 4;
-    -o-object-fit: cover;
-    object-fit: cover
-}
-
-.infoContainer-14dbs1 {
-    -webkit-box-flex: 1;
-    -ms-flex: 1;
-    flex: 1;
-    max-width: 500px;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex
-}
-
-.infoContainerNoDescription-3y0gdG,
-.showMoreButton-13n9-g {
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center
-}
-
-.showMoreButton-13n9-g {
-    display: -webkit-inline-box;
-    display: -ms-inline-flexbox;
-    display: inline-flex;
-    border-bottom: 1px solid var(--interactive-active);
-    padding-bottom: 2px;
-    cursor: pointer
-}
-
-.showMoreButton-13n9-g:hover {
-    -webkit-transition: .3s ease;
-    transition: .3s ease;
-    opacity: .75
-}
-
-.showMoreArrow-1hAnFi {
-    color: var(--interactive-active);
-    width: 16px;
-    height: 16px;
-    margin-right: -3px
 }
 
 .container-3XgAHv {
@@ -134677,8 +134749,12 @@ input::-webkit-outer-spin-button {
     width: 340px
 }
 
-.profileEffectsModalCustomizationPreview-3OBu4K {
+.profileEffectsModalCustomizationPreviewWithoutTheme-1GZC9b {
     width: 280px
+}
+
+.profileEffectsModalCustomizationPreviewWithTheme-2B1NHu {
+    width: 288px
 }
 
 .body-3lbupa {
@@ -140751,6 +140827,32 @@ html .invoiceCancelRow-3s2UuC {
     background-color: var(--background-modifier-accent)
 }
 
+.modal-fu-JnI {
+    border-radius: 12px;
+    overflow: hidden
+}
+
+.coverImageContainer-1ql8BE {
+    padding: 24px
+}
+
+.coverImage-2iTRRB {
+    width: 100%;
+    border-radius: 8px
+}
+
+.header-8fDQFi {
+    margin: 0 24px
+}
+
+.content-1fJ8n7 {
+    padding: 8px 24px 40px
+}
+
+.description-ElfBW8 {
+    white-space: pre-wrap
+}
+
 .headerImg-3pc9WG {
     width: 112px;
     height: 112px;
@@ -145273,6 +145375,56 @@ html .invoiceCancelRow-3s2UuC {
     padding: 0 16px
 }
 
+.widthForAddPack-10Wt0o {
+    width: 600px
+}
+
+.addPackHeader-3KAyih {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-bottom: 8px
+}
+
+.betaTag-1JU1tK {
+    color: var(--premium-tier-2-pink-for-gradients-2);
+    height: 20px;
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    border-radius: 10px;
+    margin-left: 10px
+}
+
+.addPackSection-3_0rIw {
+    border-top: 1px solid var(--background-modifier-accent);
+    margin-top: 28px;
+    padding: 28px 0 0
+}
+
+.nitroWheel-1Uj5y0 {
+    margin-right: 4px
+}
+
+.inventoryLeaveServerDescription-fK_NSd {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center
+}
+
+.maxPacksNoticeText-3XT_g0 {
+    margin-top: 8px
+}
+
 .popoutContent-RPXYST {
     -webkit-box-align: stretch;
     -ms-flex-align: stretch;
@@ -147823,32 +147975,6 @@ html .invoiceCancelRow-3s2UuC {
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
     border-radius: 0 0 8px
-}
-
-.modal-fu-JnI {
-    border-radius: 12px;
-    overflow: hidden
-}
-
-.coverImageContainer-1ql8BE {
-    padding: 24px
-}
-
-.coverImage-2iTRRB {
-    width: 100%;
-    border-radius: 8px
-}
-
-.header-8fDQFi {
-    margin: 0 24px
-}
-
-.content-1fJ8n7 {
-    padding: 8px 24px 40px
-}
-
-.description-ElfBW8 {
-    white-space: pre-wrap
 }
 
 .clipItem-3fKTW2 {
@@ -170279,10 +170405,17 @@ html .invoiceCancelRow-3s2UuC {
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
-    width: 280px;
     min-height: 560px;
     margin: 6.5px 3px 0 2px;
     padding-left: 10px
+}
+
+.previewContainerWithTheme-2GxmaE {
+    width: 288px
+}
+
+.previewContainerWithoutTheme-2nRTiv {
+    width: 280px
 }
 
 .effectDescriptionBorder-336gnM {
@@ -171444,4 +171577,4 @@ html .invoiceCancelRow-dVOR64 {
     margin-bottom: 8px
 }
 
-/*# sourceMappingURL=40532.09b7296772889dba31fc.css.map*/
+/*# sourceMappingURL=40532.416a4847efaf6137596b.css.map*/
