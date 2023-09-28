@@ -51,7 +51,8 @@
         <strong>Longer Messages:</strong><span style="font-weight: 400;"> Say how you really feel with an increased character count limit of 4000 characters.</span>
     </li>
     <li style="font-weight: 400;" aria-level="1"><span style="font-weight: 400;"><strong>Color <a href="https://support.discord.com/hc/en-us/articles/207260127" target="_blank" rel="noopener noreferrer">Themes</a> for your Discord app:</strong> Add your vibe to the app with unique themes only available to Nitro subscribers.   </span></li>
-    <li style="font-weight: 400;" aria-level="1"><span style="font-weight: 400;"><a href="https://support.discord.com/hc/en-us/articles/12612888127767"><strong><span class="wysiwyg-underline" style="color: #1155cc;" data-darkreader-inline-color="">Soundboard</span></strong></a><strong> anywhere:</strong> Use any Soundboard from a server you’re in, anywhere you have permissions to use them in.</span></li>
+    <li style="font-weight: 400;" aria-level="1"><span style="font-weight: 400;"><a href="https://support.discord.com/hc/en-us/articles/12612888127767"><strong><span style="color: #1155cc;" data-darkreader-inline-color="">Soundboard</span></strong></a><strong> anywhere:</strong> Use any Soundboard from a server you’re in, anywhere you have permissions to use them in.</span></li>
+    <li style="font-weight: 400;" aria-level="1"><span style="font-weight: 400;"><strong><a id="docs-internal-guid-f1deee14-7fff-a301-51fe-76a824af6032" href="https://support.discord.com/hc/en-us/articles/13410113109911" target="_blank" rel="noopener noreferrer">Avatar Decorations</a></strong>: Get early access to the shop where you can buy and collect your favorite styles to rock for any occasion. </span></li>
 </ol>
 <h2 id="h_01GFV3P6JCBPK991K73KW8C70B"><strong>Nitro Basic</strong></h2>
 <p><span style="font-weight: 400;">The Nitro Basic plan includes some of the most-loved Nitro features that help you better express yourself for a fraction of the cost.</span></p>
@@ -62,7 +63,7 @@
     <li style="font-weight: 400;" aria-level="1"><span style="font-weight: 400;">Nitro badge</span></li>
     <li style="font-weight: 400;" aria-level="1"><span style="font-weight: 400;">Custom video backgrounds</span></li>
 </ul>
-<h3 id="h_01HBCKSC7J8MWZD3103G535ZJ8"><span style="font-weight: 400;">Are you looking for Classic? Check our FAQ at the bottom of this article.</span></h3>
+<h3 id="h_01HBCK2APPH2Q7ABWTMKADV4H5"><span style="font-weight: 400;">Are you looking for Classic? Check our FAQ at the bottom of this article.</span></h3>
 <h1 id="h_01GFV3PD5V65SNQDEGHD084MBA"><strong>How do I sign up?</strong></h1>
 <p><span style="font-weight: 400;">Nitro and Nitro Basic are </span><a href="https://support.discord.com/hc/en-us/articles/360017693772" target="_blank" rel="noopener noreferrer">billed as a subscription</a><span style="font-weight: 400;"> and we offer annual and monthly versions as well as </span><a href="https://support.discord.com/hc/en-us/articles/4407269525911" target="_blank" rel="noopener noreferrer">localized pricing</a><span style="font-weight: 400;"> in some countries. </span></p>
 <p><span style="font-weight: 400;">As a subscriber, you’ll be charged once per billing period. When you pay for a subscription, you have access to those benefits for the length of that subscription. You can cancel your subscription at any time, which will be effective at the end of your current billing period.</span></p>
@@ -108,12 +109,12 @@
     </li>
 </ol>
 <h1 id="h_01GFV3PWAGD4EGTD91ERBZ5R4S"><strong>Frequently Asked Questions</strong></h1>
-<h2 id="h_01HBCKSC7JXMZYJA4MHDY42748"><strong>General Questions</strong></h2>
+<h2 id="h_01HBCK2APPYM5CDJSC020DGQ82"><strong>General Questions</strong></h2>
 <p><span class="wysiwyg-font-size-large"><strong>Q: My Nitro subscription comes with 2 Server Boosts. What are those?</strong></span></p>
 <p><span style="font-weight: 400;">A: Server Boosts are a way to show support for your favorite communities. Each Boost that you give to a server helps collectively unlock perks for everyone in the server to enjoy. You can learn more about </span><a href="https://support.discord.com/hc/en-us/articles/360028038352" target="_blank" rel="noopener noreferrer">Server Boosting here</a><span style="font-weight: 400;">! </span></p>
 <p><span class="wysiwyg-font-size-large"><strong>Q: I’m having issues with my payment method when I try to buy a Nitro or Nitro Basic subscription.</strong></span></p>
 <p><span style="font-weight: 400;">A: If you’re having trouble with your payment method or if you have any questions about how Discord billing works, you can check out this article </span><a href="https://support.discord.com/hc/en-us/articles/360017693772" target="_blank" rel="noopener noreferrer">here</a><span style="font-weight: 400;">.</span></p>
-<h2 id="h_01HBCKSC7JTVPFAW30HQ2H2MA8"><strong>Classic</strong></h2>
+<h2 id="h_01HBCK2APPN2Y15C13HGT52NWZ"><strong>Classic</strong></h2>
 <p><span class="wysiwyg-font-size-large"><strong>Q: I have a Nitro Classic subscription, but I no longer see Nitro Classic in the UI. Can I still subscribe to Nitro Classic?</strong></span></p>
 <p><span style="font-weight: 400;">A: If you have an active Nitro Classic subscription, you can keep your current plan. Please note that if you cancel your subscription, you will not be able to re-subscribe to Classic. </span></p>
 <p><span class="wysiwyg-font-size-large"><strong>Q: I have Nitro Classic credits in my account but I don’t know what Nitro Classic gives me.</strong></span></p>
@@ -135,7 +136,7 @@
 <p><span style="font-weight: 400;">Check out </span><a href="https://support.discord.com/hc/en-us/articles/360030782312" target="_blank" rel="noopener noreferrer">this support article</a><span style="font-weight: 400;"> for general information on subscription credits!</span></p>
 <p><span class="wysiwyg-font-size-large"><strong>Q: I don’t have a Nitro subscription and I want to purchase Classic.</strong></span></p>
 <p><span style="font-weight: 400;">A: </span><span style="font-weight: 400;">At this moment, you can only subscribe to Nitro and Nitro Basic. Nitro Classic is not available for purchase.</span></p>
-<h2 id="h_01HBCKSC7JPGR6FS2M3TTN6MQ1"><strong>Basic</strong></h2>
+<h2 id="h_01HBCK2APPMT7K0Z8VFPKA4H5K"><strong>Basic</strong></h2>
 <p><span class="wysiwyg-font-size-large"><strong>Q: Do you offer Nitro and Nitro Basic in my local currency?</strong></span></p>
 <p><span style="font-weight: 400;">A: We are constantly working to expand the availability of accepted currencies for Nitro and Nitro Basic. Check </span><a href="https://support.discord.com/hc/en-us/articles/4407269525911" target="_blank" rel="noopener noreferrer">this article</a><span style="font-weight: 400;"> for information on localized pricing.</span></p>
 <p><span class="wysiwyg-font-size-large"><strong>Q: Can I gift Nitro Basic to a friend? </strong></span></p>
