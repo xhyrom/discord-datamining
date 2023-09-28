@@ -134523,6 +134523,10 @@ input::-webkit-outer-spin-button {
     height: 90px
 }
 
+.noBorderRadius-bCqfLW {
+    border-radius: 0
+}
+
 .bannerNormal-2jf-df {
     height: 60px
 }
@@ -170215,11 +170219,10 @@ html .invoiceCancelRow-3s2UuC {
 .effectDescriptionBorder-336gnM {
     border-radius: 4px;
     border: 2px solid transparent;
-    margin-top: 20px;
-    margin-bottom: 20px;
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
-    width: 100%
+    width: 100%;
+    margin: 20px var(--custom-user-profile-themed-container-user-profile-themed-padding)
 }
 
 .effectDescriptionBorderWithGradient-3GHthf {
@@ -170234,8 +170237,8 @@ html .invoiceCancelRow-3s2UuC {
 .effectDescriptionContainer-1y_8OR {
     background: var(--background-tertiary) padding-box;
     position: relative;
-    width: 100%;
-    border-radius: 4px
+    border-radius: 2px;
+    padding-right: 4px
 }
 
 .effectDescription-3TiVDd {
@@ -171372,4 +171375,4 @@ html .invoiceCancelRow-dVOR64 {
     margin-bottom: 8px
 }
 
-/*# sourceMappingURL=40532.0c4a90db7dd500c20863.css.map*/
+/*# sourceMappingURL=40532.ba0baf876eac51b6c1b6.css.map*/
