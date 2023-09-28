@@ -26528,6 +26528,9 @@ code {
     --custom-monetization-info-table-expandable-rows-toggle-expand-column-width: 30px;
     --custom-guild-shop-content-width: 1044px;
     --custom-guild-shop-content-width-reduced: 688px;
+    --custom-guild-shop-channel-row-gradient: linear-gradient(113deg, #2f3570 1.98%, #422c70 94.48%);
+    --custom-guild-shop-channel-row-gradient-hover: linear-gradient(113deg, #383f86 1.98%, #4d3385 94.48%);
+    --custom-guild-shop-channel-row-glow: 0 0 4px rgba(189, 149, 255, 0.5);
     --custom-guild-shop-preview-pill-shadow-dark: -4px 5px #1d1d1d;
     --custom-guild-shop-preview-pill-shadow-light: -4px 5px #d7dce8
 }
@@ -86108,6 +86111,111 @@ html:not(.custom-theme-background) .container-Vrgqxz {
     width: 100%;
     margin: 4px 0;
     background-color: var(--background-modifier-accent)
+}
+
+.previewChannelRow-3Er7JP {
+    position: relative;
+    -webkit-transition: opacity .2s ease-in-out;
+    transition: opacity .2s ease-in-out;
+    padding: 1px 0;
+    margin-left: 8px
+}
+
+.previewChannelRowContent-3fpJu0 {
+    cursor: pointer;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 6px 8px;
+    border-radius: var(--radius-xs);
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    overflow: hidden;
+    height: 34px
+}
+
+.channelLabel-14dlkc {
+    color: var(--channels-default);
+    font-weight: var(--font-weight-semibold-1x-light-theme, 500)
+}
+
+.shopIcon-1Bvujq {
+    display: block;
+    width: 20px;
+    height: 20px;
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 auto;
+    flex: 0 0 auto;
+    color: var(--channel-icon);
+    margin-right: 6px
+}
+
+.selected-VDl2J3 .channelLabel-14dlkc,
+.selected-VDl2J3 .shopIcon-1Bvujq {
+    color: var(--interactive-active)
+}
+
+.selected-VDl2J3 .previewChannelRowContent-3fpJu0:hover .fullPreview-2Jh2uC .closeButton-1FeJeB {
+    display: block
+}
+
+.selected-VDl2J3 .previewChannelRowContent-3fpJu0:hover .fullPreview-2Jh2uC .money-2DSXfU,
+.selected-VDl2J3 .previewChannelRowContent-3fpJu0:hover .fullPreview-2Jh2uC .questionMark-ZD83vL {
+    display: none
+}
+
+.theme-light .previewChannelRowContent-3fpJu0 {
+    border: 1px solid var(--interactive-muted);
+    background: var(--background-secondary)
+}
+
+.theme-light .selected-VDl2J3 .previewChannelRowContent-3fpJu0 {
+    border: 1px solid var(--interactive-active)
+}
+
+.theme-dark .previewChannelRowContent-3fpJu0 {
+    border: 1px solid var(--bg-gradient-cotton-candy-2);
+    background: var(--custom-guild-shop-channel-row-gradient)
+}
+
+.theme-dark .previewChannelRowContent-3fpJu0:hover {
+    background: var(--custom-guild-shop-channel-row-gradient-hover);
+    -webkit-box-shadow: var(--custom-guild-shop-channel-row-glow);
+    box-shadow: var(--custom-guild-shop-channel-row-glow)
+}
+
+.gifSection-12U4hT {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    gap: 6px;
+    margin-left: auto
+}
+
+.money-2DSXfU {
+    max-height: 48px;
+    margin-top: -6px;
+    margin-bottom: -6px
+}
+
+.questionMark-ZD83vL {
+    width: 20px;
+    height: 20px
+}
+
+.closeButton-1FeJeB {
+    margin-left: auto;
+    color: var(--interactive-normal);
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    display: none
 }
 
 .wrapper-2fEmwW {
@@ -171267,4 +171375,4 @@ html .invoiceCancelRow-dVOR64 {
     margin-bottom: 8px
 }
 
-/*# sourceMappingURL=40532.3dbd46d8da2dc5275308.css.map*/
+/*# sourceMappingURL=40532.c8b031b5c73e250ded76.css.map*/
