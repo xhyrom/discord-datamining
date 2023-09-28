@@ -1,4 +1,4 @@
-/*! For license information please see 339294826381f0939791.js.LICENSE.txt */
+/*! For license information please see 2c9d9c2b7bd73525d3ab.js.LICENSE.txt */
 (this.webpackChunkdiscord_app = this.webpackChunkdiscord_app || []).push([
     [22897], {
         151131: (t, e, r) => {
@@ -23980,7 +23980,8 @@
                 t.POPOUT_WINDOWS = "popout_windows";
                 t.ELEVATED_HOOK = "elevated_hook";
                 t.CREATE_HOST_ON_ATTACH = "create_host_on_attach";
-                t.USER_DATA_CACHE = "user_data_cache"
+                t.USER_DATA_CACHE = "user_data_cache";
+                t.WEBAUTHN = "webauthn"
             }(Pr || (Pr = {}));
             ! function(t) {
                 t.FILTER_FROM = "FILTER_FROM";
@@ -37036,7 +37037,7 @@ c.jH)(t)}.\nUrl: ${A(t)}`);
                     dsn: "https://fa97a90475514c03a42f80cd36d147c4@sentry.io/140984",
                     autoSessionTracking: !1,
                     environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                    release: "discord_web-6d5d354d1bca676855bf022b7e41e7f823fe7f2f",
+                    release: "discord_web-e6ee4eb93bc4dac24139aba20772f505caa01e25",
                     beforeSend: function(t) {
                         return function(t) {
                             return null != t.exception && null != t.exception.values && t.exception.values.every((function(t) {
@@ -37063,8 +37064,8 @@ c.jH)(t)}.\nUrl: ${A(t)}`);
                     denyUrls: [/recaptcha/, /mobilediscord\.com/, /betterdiscord:\/\//]
                 });
                 var t;
-                X.YA("buildNumber", null !== (t = "232277") ? t : "");
-                X.YA("builtAt", String("1695921787664"));
+                X.YA("buildNumber", null !== (t = "232292") ? t : "");
+                X.YA("builtAt", String("1695923049355"));
                 var e = window.GLOBAL_ENV.SENTRY_TAGS;
                 if (null != e && "object" == typeof e)
                     for (var r in e) X.YA(r, e[r]);
@@ -48444,4 +48445,4 @@ c.jH)(t)}.\nUrl: ${A(t)}`);
         e(128594), e(535666), e(784633), e(678991)
     }
 ]);
-//# sourceMappingURL=339294826381f0939791.js.map
+//# sourceMappingURL=2c9d9c2b7bd73525d3ab.js.map
