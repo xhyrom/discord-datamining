@@ -1,0 +1,23 @@
+{
+  "data": {
+    "kind": "user",
+    "id": "2023-09_mobile_redesign_staff",
+    "label": "Tabs V2 - HFU Iteration",
+    "description": [
+      "Not Eligible",
+      "Control Bucket",
+      "Treatment 1: Staff",
+      "Treatment 2: Staff Personal"
+    ],
+    "hash": 2522365240,
+    "buckets": [
+      -1,
+      0,
+      1,
+      2
+    ],
+    "config_keys": [
+      "enabled"
+    ]
+  }
+}
