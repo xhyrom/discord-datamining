@@ -20067,6 +20067,7 @@
                 gifTag: "gifTag-TF1Coa",
                 bannerUploaderInnerSquare: "bannerUploaderInnerSquare-2c2J8_ banner-3D8GgT",
                 bannerUploaderInnerSquareEmpty: "bannerUploaderInnerSquareEmpty-NmkmF3 banner-3D8GgT",
+                noBorderRadius: "noBorderRadius-bCqfLW",
                 bannerNormal: "bannerNormal-2jf-df banner-3D8GgT",
                 bannerNitroUpsell: "bannerNitroUpsell-2iP18z",
                 bannerNitroUpsellText: "bannerNitroUpsellText-Ll6vKY",
@@ -26966,4 +26967,4 @@
         }
     }
 ]);
-//# sourceMappingURL=0363bb500cc7f9d0e9be.js.map
+//# sourceMappingURL=0a4326f32c265c43f85e.js.map
