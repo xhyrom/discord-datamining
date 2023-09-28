@@ -11056,6 +11056,7 @@
   "SCHEDULE_EVENT_DESCRIPTION": "\"Schedule a Stage for a future date.\"",
   "GO_TO_CHANNEL": "\"Go To Channel\"",
   "STARTING_SOON": "\"Starting soon\"",
+  "NEW_EVENT": "\"New Event\"",
   "DISCONNECT_MENU": "\"Disconnect Actions\"",
   "STARTING_IN_MINUTES": "\"Starting in {minutes}m\"",
   "ENDING_ON_DATE": "\"Ends {date}\"",
