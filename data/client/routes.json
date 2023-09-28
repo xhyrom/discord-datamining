@@ -3333,6 +3333,13 @@
       "PUT"
     ]
   },
+  "GUILD_MEMBER_SEARCH": {
+    "url": "/guilds/:param/members-search",
+    "allowed_methods": [
+      "OPTIONS",
+      "POST"
+    ]
+  },
   "GUILD_AUTOMOD_RULES": {
     "url": "/guilds/:param/auto-moderation/rules",
     "allowed_methods": [
