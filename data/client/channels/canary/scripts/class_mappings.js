@@ -6375,6 +6375,7 @@
                 avatar: "avatar-jvUUbt",
                 avatarPurchased: "avatarPurchased-3h_bK-",
                 cardText: "cardText-2OugTh",
+                cardTextProfileEffect: "cardTextProfileEffect-3ulRYT",
                 description: "description-1aSbLq",
                 price: "price-ehI2ay",
                 buttonsContainer: "buttonsContainer-1B5Td_",
@@ -27044,4 +27045,4 @@
         }
     }
 ]);
-//# sourceMappingURL=96c2a21127cb43c94d21.js.map
+//# sourceMappingURL=8084dcf88e2f749e7c0a.js.map
