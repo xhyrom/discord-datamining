@@ -12280,7 +12280,9 @@
         661492: e => {
             e.exports = {
                 closeButton: "closeButton-2swOfr",
-                content: "content-1OV4rb"
+                content: "content-1OV4rb",
+                warningHeading: "warningHeading-3LQtSZ",
+                warningIcon: "warningIcon-UbN-0c"
             }
         },
         666309: e => {
@@ -27058,4 +27060,4 @@
         }
     }
 ]);
-//# sourceMappingURL=994e525d733a3854ae7a.js.map
+//# sourceMappingURL=d5e06098ab488ba34322.js.map

@@ -165542,6 +165542,18 @@ html .invoiceCancelRow-3s2UuC {
     margin: 16px 0
 }
 
+.warningHeading-3LQtSZ {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    gap: 6px
+}
+
+.warningIcon-UbN-0c {
+    -ms-flex-negative: 0;
+    flex-shrink: 0
+}
+
 .header-1XFMZK {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -171969,4 +171981,4 @@ html .invoiceCancelRow-dVOR64 {
     margin-bottom: 8px
 }
 
-/*# sourceMappingURL=40532.bf3e309af0d7d7dc3774.css.map*/
+/*# sourceMappingURL=40532.e63a19e50a198db6cf29.css.map*/
