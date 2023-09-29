@@ -16625,17 +16625,6 @@
                 reactionMe: "reactionMe-2zhiyZ",
                 reactionInner: "reactionInner-1po5__",
                 remainingReactions: "remainingReactions-gVC95O",
-                reactionTooltip: "reactionTooltip-29BsaC",
-                reactionTooltipEmoji: "reactionTooltipEmoji-1pBYSk",
-                reactionTooltipText: "reactionTooltipText-3OhRFp",
-                reactionTooltipInner: "reactionTooltipInner-1LZ-lG",
-                burstReactionTooltipInner: "burstReactionTooltipInner-vjhXLF",
-                burstReactionTooltipMessage: "burstReactionTooltipMessage-pEgo2Y",
-                burstReactionTooltipSpacer: "burstReactionTooltipSpacer-2zo84j",
-                burstReactionTooltipPrompt: "burstReactionTooltipPrompt-LDdrM7",
-                burstReactionTooltipNitroIcon: "burstReactionTooltipNitroIcon-3I3oFz",
-                burstAnimatedCounter: "burstAnimatedCounter-2ic_eL",
-                burstReactionTooltipUpsellCta: "burstReactionTooltipUpsellCta-2WDzWM",
                 premiumIcon: "premiumIcon-e-K62h",
                 sparkles: "sparkles-A95Yt-",
                 burstGlow: "burstGlow-uhab6Q"
@@ -16659,17 +16648,6 @@
                 reactionMe: "reactionMe-1PwQAc",
                 reactionInner: "reactionInner-YJjOtT",
                 remainingReactions: "remainingReactions-1r1Dvu",
-                reactionTooltip: "reactionTooltip-3IOBwg",
-                reactionTooltipEmoji: "reactionTooltipEmoji-1Rv8jQ",
-                reactionTooltipText: "reactionTooltipText-iAWHhX",
-                reactionTooltipInner: "reactionTooltipInner-Pl3uOD",
-                burstReactionTooltipInner: "burstReactionTooltipInner-2aCEVH",
-                burstReactionTooltipMessage: "burstReactionTooltipMessage-2UCrKo",
-                burstReactionTooltipSpacer: "burstReactionTooltipSpacer-1oUrib",
-                burstReactionTooltipPrompt: "burstReactionTooltipPrompt-3XAM1h",
-                burstReactionTooltipNitroIcon: "burstReactionTooltipNitroIcon-34FUA3",
-                burstAnimatedCounter: "burstAnimatedCounter-3zZXOt",
-                burstReactionTooltipUpsellCta: "burstReactionTooltipUpsellCta-2WX3Zh",
                 premiumIcon: "premiumIcon-xSTd_o",
                 sparkles: "sparkles-1yqog1",
                 burstGlow: "burstGlow-3AZMzF"
@@ -16710,6 +16688,21 @@
                 scrollerWrap: "scrollerWrap-6LjisI",
                 divider: "divider-2v1WG4",
                 messageGroupBlocked: "messageGroupBlocked-28oIlD"
+            }
+        },
+        955640: e => {
+            e.exports = {
+                reactionTooltip: "reactionTooltip-1qrpUf",
+                reactionTooltipEmoji: "reactionTooltipEmoji-3ufwi8",
+                reactionTooltipText: "reactionTooltipText-277c-U",
+                reactionTooltipInner: "reactionTooltipInner-1Zrck4",
+                burstReactionTooltipInner: "burstReactionTooltipInner-fObrFX",
+                burstReactionTooltipMessage: "burstReactionTooltipMessage-2cBIrF",
+                burstReactionTooltipSpacer: "burstReactionTooltipSpacer-UbiqoN",
+                burstReactionTooltipPrompt: "burstReactionTooltipPrompt-1I2XvT",
+                burstReactionTooltipNitroIcon: "burstReactionTooltipNitroIcon-8t0V-c",
+                burstAnimatedCounter: "burstAnimatedCounter-3s-Pno",
+                burstReactionTooltipUpsellCta: "burstReactionTooltipUpsellCta-c3Hmdf"
             }
         },
         996038: e => {
@@ -26996,4 +26989,4 @@
         }
     }
 ]);
-//# sourceMappingURL=de01c1006127993db0fb.js.map
+//# sourceMappingURL=6325570d9f38e7edd813.js.map
