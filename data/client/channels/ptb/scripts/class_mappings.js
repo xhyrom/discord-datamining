@@ -6218,6 +6218,17 @@
                 titleContainer: "titleContainer-3Lez7G"
             }
         },
+        970485: e => {
+            e.exports = {
+                video: "video-1Ws-4A",
+                header: "header-2n8dGs",
+                footer: "footer-3Utv6L",
+                closeContainer: "closeContainer-hxuDP9",
+                close: "close-35Zli8",
+                hintText: "hintText-3e0Cwe",
+                clydeText: "clydeText-1VpFDZ"
+            }
+        },
         244192: e => {
             e.exports = {
                 personalityBadge: "personalityBadge-pYraBr",
@@ -27046,4 +27057,4 @@
         }
     }
 ]);
-//# sourceMappingURL=f71a163d02d62ba06b6b.js.map
+//# sourceMappingURL=22b6bc38b98cb5b83b89.js.map
