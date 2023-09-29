@@ -24,9 +24,9 @@
             <ul role="list">
                 <li><strong>Fantasy</strong>: Bring your sword and shield to any server you adventure into.&nbsp;</li>
                 <li><strong>Anime</strong>: Senpai’s in the server!!! Quick, put on your Nervous or In-Love decoration.</li>
-                <li><strong>Breakfast: </strong>What’d ya eat this morning? Wear a donut, toast or pancakes to relay this important answer to your friends.&nbsp;</li>
+                <li><strong>Breakfast: </strong>What’d ya eat this morning? Wear a donut, toast or pancakes to relay this important answer to your friends.</li>
             </ul>
-            <p>Slide a latte next to your icon to let others know you woke up wayyyy before them, or wear an anime-themed decoration to let your friends know you’re binging the latest season of your absolute <em>favorite</em> show (pairs well with <a href="https://support.discord.com/hc/en-us/articles/9929188048023-Discord-and-Crunchyroll-Connection-FAQ#:~:text=If%20you%20connect%20your%20Crunchyroll,re%20watching%20in%20real%20time.">linking your Crunchyroll profile to Discord</a>!).&nbsp;</p>
+            <p>Slide a latte next to your icon to let others know you woke up wayyy before them, or wear an anime-themed decoration to let your friends know you're binging the latest season of your absolute favorite show (pairs well with <a href="https://support.discord.com/hc/en-us/articles/9929188048023-Discord-and-Crunchyroll-Connection-FAQ#:~:text=If%20you%20connect%20your%20Crunchyroll,re%20watching%20in%20real%20time.">linking your Crunchyroll profile to Discord</a>!).</p>
             <p>Once your eye spots the decoration of your dreams, you can preview it. Try it on, see how it looks (trick question, you look lovely today). If you like something, consider buying it for keeps; your new decorations will get added to your collection so you can rock your favorite styles for any occasion.&nbsp;</p>
             <p>It’s like shopping for clothes, except no one is following you around the store with questions like “have you found what you’re looking for,” and “why not get these jeans as well?” </p>
         </div>
