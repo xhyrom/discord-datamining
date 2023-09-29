@@ -3698,6 +3698,17 @@
       "PATCH"
     ]
   },
+  "GUILD_CLYDE_ADD_MEMBER": {
+    "url": "/guilds/:param/members/clyde",
+    "allowed_methods": [
+      "DELETE",
+      "GET",
+      "HEAD",
+      "OPTIONS",
+      "PATCH",
+      "PUT"
+    ]
+  },
   "CHANNEL_BASED_CLYDE_PERSONALITY": {
     "url": "/channels/:param/channel-based-clyde-personality",
     "allowed_methods": [
