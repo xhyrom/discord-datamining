@@ -1,4 +1,4 @@
-/*! For license information please see eb6617bb7247b0abcb6e.js.LICENSE.txt */
+/*! For license information please see 7393d52828f31b23cc3c.js.LICENSE.txt */
 (this.webpackChunkdiscord_app = this.webpackChunkdiscord_app || []).push([
     [22897], {
         151131: (t, e, r) => {
@@ -21254,6 +21254,9 @@
                     GUILD_MEMBER_AVATAR: function(t, e, r, n) {
                         return "/guilds/".concat(t, "/users/").concat(e, "/avatars/").concat(r, ".").concat(n)
                     },
+                    CLYDE_PROFILES_AVATAR: function(t, e, r) {
+                        return "/clyde-profiles/".concat(t, "/avatars/").concat(e, ".").concat(r)
+                    },
                     SET_GUILD_MEMBER: function(t) {
                         return "/guilds/".concat(t, "/members/@me")
                     },
@@ -21503,6 +21506,10 @@
                     GUILD_MEMBER_BANNER: function(t, e, r) {
                         var n = arguments.length > 3 && void 0 !== arguments[3] ? arguments[3] : "png";
                         return "/guilds/".concat(t, "/users/").concat(e, "/banners/").concat(r, ".").concat(n)
+                    },
+                    CLYDE_PROFILES_BANNER: function(t, e) {
+                        var r = arguments.length > 2 && void 0 !== arguments[2] ? arguments[2] : "png";
+                        return "/clyde-profiles/".concat(t, "/banners/").concat(e, ".").concat(r)
                     },
                     MESSAGES: function(t) {
                         return "/channels/".concat(t, "/messages")
@@ -22517,6 +22524,12 @@
                     },
                     BULK_GUILD_BAN: function(t) {
                         return "/guilds/".concat(t, "/bulk-ban")
+                    },
+                    CLYDE_PROFILES: function(t) {
+                        return "/clyde-profiles/".concat(t)
+                    },
+                    CLYDE_PROFILES_CREATE: function(t) {
+                        return "/guilds/".concat(t, "/clyde-profiles")
                     }
                 }),
                 St = Object.freeze({
@@ -37047,7 +37060,7 @@ c.jH)(t)}.\nUrl: ${A(t)}`);
                     dsn: "https://fa97a90475514c03a42f80cd36d147c4@sentry.io/140984",
                     autoSessionTracking: !1,
                     environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                    release: "discord_web-c6c5eb873894d05f3a9e27683414c6ea501c4603",
+                    release: "discord_web-1dbc00affa1b863cff1632e86dd4ac06c2ab34b3",
                     beforeSend: function(t) {
                         return function(t) {
                             return null != t.exception && null != t.exception.values && t.exception.values.every((function(t) {
@@ -37074,8 +37087,8 @@ c.jH)(t)}.\nUrl: ${A(t)}`);
                     denyUrls: [/recaptcha/, /mobilediscord\.com/, /betterdiscord:\/\//]
                 });
                 var t;
-                X.YA("buildNumber", null !== (t = "232528") ? t : "");
-                X.YA("builtAt", String("1695939252627"));
+                X.YA("buildNumber", null !== (t = "232643") ? t : "");
+                X.YA("builtAt", String("1695951447531"));
                 var e = window.GLOBAL_ENV.SENTRY_TAGS;
                 if (null != e && "object" == typeof e)
                     for (var r in e) X.YA(r, e[r]);
@@ -48455,4 +48468,4 @@ c.jH)(t)}.\nUrl: ${A(t)}`);
         e(128594), e(535666), e(784633), e(678991)
     }
 ]);
-//# sourceMappingURL=eb6617bb7247b0abcb6e.js.map
+//# sourceMappingURL=7393d52828f31b23cc3c.js.map
