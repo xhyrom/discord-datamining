@@ -164676,6 +164676,17 @@ html .invoiceCancelRow-3s2UuC {
     flex: 1
 }
 
+.cardText-2OugTh.cardTextProfileEffect-3ulRYT:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: -webkit-gradient(linear, left top, left bottom, from(transparent), color-stop(transparent), to(rgba(0, 0, 0, .8)));
+    background: linear-gradient(180deg, transparent, transparent, rgba(0, 0, 0, .8))
+}
+
 .description-1aSbLq {
     margin-top: 4px;
     word-wrap: break-word
@@ -171886,4 +171897,4 @@ html .invoiceCancelRow-dVOR64 {
     margin-bottom: 8px
 }
 
-/*# sourceMappingURL=40532.40da3cc626379fca72ed.css.map*/
+/*# sourceMappingURL=40532.cc36cc1dc0fc69a32afe.css.map*/
