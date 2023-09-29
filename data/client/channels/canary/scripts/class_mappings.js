@@ -6434,10 +6434,11 @@
                 modalCloseButton: "modalCloseButton-3RgDvX",
                 collectibleInfoContainer: "collectibleInfoContainer-3uyaC5",
                 collectiblePreviewsContainer: "collectiblePreviewsContainer-2TJ889",
+                previewsContainerInner: "previewsContainerInner-3HAzg6",
+                profileEffectPreviewsContainerInner: "profileEffectPreviewsContainerInner-3_2cg0 previewsContainerInner-3HAzg6",
                 categoryBanner: "categoryBanner-2VV5av",
                 collectiblePreviewsContainerNoChat: "collectiblePreviewsContainerNoChat-1IDSp_ collectiblePreviewsContainer-2TJ889",
                 collectiblePreviewsContainerWithChat: "collectiblePreviewsContainerWithChat-2lLj1- collectiblePreviewsContainer-2TJ889",
-                previewContainerInner: "previewContainerInner-28dlGW",
                 avatarPreviewContainer: "avatarPreviewContainer-2FEhy3",
                 chatPreview: "chatPreview-2rboc6",
                 mockMessage: "mockMessage-3u7k9X",
@@ -27045,4 +27046,4 @@
         }
     }
 ]);
-//# sourceMappingURL=8084dcf88e2f749e7c0a.js.map
+//# sourceMappingURL=f71a163d02d62ba06b6b.js.map

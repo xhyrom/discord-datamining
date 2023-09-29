@@ -171629,7 +171629,8 @@ html .invoiceCancelRow-dVOR64 {
 
 .modalRoot-31JGpb {
     border-radius: var(--radius-sm);
-    background-color: transparent
+    background-color: transparent;
+    min-height: 570px
 }
 
 .modalContent-2LOVNi {
@@ -171655,26 +171656,44 @@ html .invoiceCancelRow-dVOR64 {
 
 .collectibleInfoContainer-3uyaC5 {
     z-index: 1;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
     padding: 20px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
     -webkit-box-pack: justify;
     -ms-flex-pack: justify;
     justify-content: space-between;
     width: 276px
 }
 
-.collectibleInfoContainer-3uyaC5,
 .collectiblePreviewsContainer-2TJ889 {
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center
+}
+
+.collectiblePreviewsContainer-2TJ889,
+.previewsContainerInner-3HAzg6 {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
     -ms-flex-direction: column;
-    flex-direction: column
+    flex-direction: column;
+    position: relative
 }
 
-.collectiblePreviewsContainer-2TJ889 {
-    position: relative
+.previewsContainerInner-3HAzg6 {
+    margin-top: 25px
+}
+
+.profileEffectPreviewsContainerInner-3_2cg0 {
+    margin-top: 0
 }
 
 .categoryBanner-2VV5av {
@@ -171686,15 +171705,11 @@ html .invoiceCancelRow-dVOR64 {
 }
 
 .collectiblePreviewsContainerNoChat-1IDSp_ {
-    padding: 50px 40px
+    padding: 0 40px
 }
 
 .collectiblePreviewsContainerWithChat-2lLj1- {
-    padding: 80px 40px 20px 20px
-}
-
-.previewContainerInner-28dlGW {
-    position: relative
+    padding: 0 40px 0 20px
 }
 
 .avatarPreviewContainer-2FEhy3 {
@@ -171717,9 +171732,10 @@ html .invoiceCancelRow-dVOR64 {
 .chatPreview-2rboc6 {
     background: var(--bg-overlay-chat, var(--background-primary));
     border-radius: var(--radius-sm);
-    position: absolute;
-    bottom: -90px;
-    right: -16px;
+    position: relative;
+    bottom: 44px;
+    left: 42px;
+    width: 290px;
     overflow: hidden;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -171897,4 +171913,4 @@ html .invoiceCancelRow-dVOR64 {
     margin-bottom: 8px
 }
 
-/*# sourceMappingURL=40532.cc36cc1dc0fc69a32afe.css.map*/
+/*# sourceMappingURL=40532.c1cb8540eddb534f1ff5.css.map*/
