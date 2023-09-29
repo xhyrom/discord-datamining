@@ -245,6 +245,7 @@ id,hash,label
 2023-08_activities_in_text,1295440499,Activities in Text
 2023-08_clips_public_test,3779532009,Clips (Public Test)
 2023-08_collectiblesnitroavatardecoiap,2588597280,Collectible Nitro Avatar Decorations IAP
+2023-08_custom_app_icons,2089092680,Custom App Icons
 2023-08_custom_gift,1100309809,Custom Gift Experiment
 2023-08_dcf_ml_model,1694039129,DCF ML Perks Relevance Model
 2023-08_deadchat_simple_prompt_guild,2716650836,Simple deadchat prompt
@@ -290,10 +291,12 @@ id,hash,label
 2023-09_client_theme_coachmark_reintro,1017818703,Experiment to reintroduce the client themes experiment
 2023-09_collectibles_marketing_page,1645732717,Collectibles Marketing Page
 2023-09_decoupled_game_clipping,1366927696,Test decoupled game clipping
+2023-09_deskop_in_app_icon,1066761149,Desktop In-App Icons
 2023-09_gaming_stats_prompt_guild,2478854553,Gaming stats prompt
 2023-09_gaming_stats_setup,3080965400,Gaming stats exposure setup
 2023-09_guild_events_entrypoint,1943118067,Experiments with showing Events entrypoint in the channel list in friends guilds
 2023-09_guild_events_improvements,2181787089,Experiments with various improvements to our events system
+2023-09_limited_time_custom_app_icons,4133484951,Limited-time icons
 2023-09_member_safety_release_coachmark,1865413295,Members Safety Release Coachmark Experiment
 2023-09_mobile_redesign_hfu,3033100557,Tabs V2 - HFU Iteration
 2023-09_mobile_redesign_panels,985588111,Tabs V2 - Panels
