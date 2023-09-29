@@ -12272,28 +12272,20 @@ html.decorate-links .lowSaturationUnderline-Z6CW6z {
 }
 
 .logoIcon-1B7zIe {
-    -webkit-box-flex: 0;
-    -ms-flex: 0 0 auto;
-    flex: 0 0 auto;
-    height: 34px;
     margin-right: 2px;
-    width: 34px
-}
-
-.logoIcon-1B7zIe.unifyTrialUpsell-2E28tK {
     height: 24px;
     width: 24px
 }
 
+.logoIcon-1B7zIe,
 .logoWordmark-13R5k2 {
     -webkit-box-flex: 0;
     -ms-flex: 0 0 auto;
-    flex: 0 0 auto;
-    height: 24px;
-    width: auto
+    flex: 0 0 auto
 }
 
-.logoWordmark-13R5k2.unifyTrialUpsell-2E28tK {
+.logoWordmark-13R5k2 {
+    width: auto;
     height: 16px
 }
 
@@ -172173,4 +172165,4 @@ html .invoiceCancelRow-dVOR64 {
     margin-bottom: 8px
 }
 
-/*# sourceMappingURL=40532.3b5cb98be9a1ac937550.css.map*/
+/*# sourceMappingURL=40532.7cf7cf3b0768b86402a4.css.map*/
