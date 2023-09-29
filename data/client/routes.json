@@ -248,6 +248,10 @@
     "url": "/guilds/:param/users/:param/avatars/:param.:param",
     "allowed_methods": null
   },
+  "CLYDE_PROFILES_AVATAR": {
+    "url": "/clyde-profiles/:param/avatars/:param.:param",
+    "allowed_methods": null
+  },
   "SET_GUILD_MEMBER": {
     "url": "/guilds/:param/members/@me",
     "allowed_methods": [
@@ -891,6 +895,10 @@
   },
   "GUILD_MEMBER_BANNER": {
     "url": "/guilds/:param/users/:param/banners/:param.:param",
+    "allowed_methods": null
+  },
+  "CLYDE_PROFILES_BANNER": {
+    "url": "/clyde-profiles/:param/banners/:param.:param",
     "allowed_methods": null
   },
   "MESSAGES": {
@@ -4490,6 +4498,21 @@
   },
   "BULK_GUILD_BAN": {
     "url": "/guilds/:param/bulk-ban",
+    "allowed_methods": [
+      "OPTIONS",
+      "POST"
+    ]
+  },
+  "CLYDE_PROFILES": {
+    "url": "/clyde-profiles/:param",
+    "allowed_methods": [
+      "GET",
+      "HEAD",
+      "OPTIONS"
+    ]
+  },
+  "CLYDE_PROFILES_CREATE": {
+    "url": "/guilds/:param/clyde-profiles",
     "allowed_methods": [
       "OPTIONS",
       "POST"
