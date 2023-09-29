@@ -1,2 +1,3 @@
+<h3 id="h_01HBH36YPY92VXGJYBTZ498977" class="update-body font-regular">Note: This Issue has now been Resolved! </h3>
 <div class="update-body font-regular">If you're currently having issues when attempting to connect, and delay or failure to send messages, please note our team is actively working to resolve this issue.<br> <br>Here's a link with more information: <a href="https://discordstatus.com/" rel="noopener noreferrer">https://discordstatus.com/</a>
 </div>
