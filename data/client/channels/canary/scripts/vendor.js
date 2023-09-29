@@ -1,4 +1,4 @@
-/*! For license information please see 85f23931431af0898d91.js.LICENSE.txt */
+/*! For license information please see 93e2d3270cdb86bdc8e7.js.LICENSE.txt */
 (this.webpackChunkdiscord_app = this.webpackChunkdiscord_app || []).push([
     [22897], {
         151131: (t, e, r) => {
@@ -20895,7 +20895,8 @@
                 t.POMELO_ELIGIBLE = "POMELO_ELIGIBLE";
                 t.GUILD_RAID_NOTIFICATION = "GUILD_RAID_NOTIFICATION";
                 t.SAFETY_USER_SENTIMENT_NAGBAR = "SAFETY_USER_SENTIMENT_NAGBAR";
-                t.SERVER_USAGE_SURVEY = "SERVER_USAGE_SURVEY"
+                t.SERVER_USAGE_SURVEY = "SERVER_USAGE_SURVEY";
+                t.WIN32_DEPRECATED_MESSAGE = "WIN32_DEPRECATED_MESSAGE"
             }(h || (h = {}));
             ! function(t) {
                 t.RESOLVING = "RESOLVING";
@@ -25499,7 +25500,8 @@
                 t.CLIPS = "16861982215703";
                 t.REMIXING_TEXT_SUPPORT = "15145601963031-Remix-FAQ#h_01H2Y1F86HNTVKWNVJJSB4C6A5";
                 t.SERVER_SUBSCRIPTION_AND_PRODUCTS = "10423011974551";
-                t.SERVER_PRODUCTS = "10423011974551#docs-internal-guid-918e991a-7fff-03d5-8326-5d065e5edeb1"
+                t.SERVER_PRODUCTS = "10423011974551#docs-internal-guid-918e991a-7fff-03d5-8326-5d065e5edeb1";
+                t.WIN32_DEPRECATE = "213491697"
             }(Ln || (Ln = {}));
             var Cn, gn, Un, Pn, Mn, mn = function(t) {
                     return "https://www.youtube.com/embed/".concat(t)
@@ -37060,7 +37062,7 @@ c.jH)(t)}.\nUrl: ${A(t)}`);
                     dsn: "https://fa97a90475514c03a42f80cd36d147c4@sentry.io/140984",
                     autoSessionTracking: !1,
                     environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                    release: "discord_web-bc0b04df6ba98ff97f58b211c42a958d4cb23cc7",
+                    release: "discord_web-a6cea41b9a6f67bfd438a574f573b1dad00f44bb",
                     beforeSend: function(t) {
                         return function(t) {
                             return null != t.exception && null != t.exception.values && t.exception.values.every((function(t) {
@@ -37087,8 +37089,8 @@ c.jH)(t)}.\nUrl: ${A(t)}`);
                     denyUrls: [/recaptcha/, /mobilediscord\.com/, /betterdiscord:\/\//]
                 });
                 var t;
-                X.YA("buildNumber", null !== (t = "232632") ? t : "");
-                X.YA("builtAt", String("1695949628588"));
+                X.YA("buildNumber", null !== (t = "232646") ? t : "");
+                X.YA("builtAt", String("1695952023757"));
                 var e = window.GLOBAL_ENV.SENTRY_TAGS;
                 if (null != e && "object" == typeof e)
                     for (var r in e) X.YA(r, e[r]);
@@ -48468,4 +48470,4 @@ c.jH)(t)}.\nUrl: ${A(t)}`);
         e(128594), e(535666), e(784633), e(678991)
     }
 ]);
-//# sourceMappingURL=85f23931431af0898d91.js.map
+//# sourceMappingURL=93e2d3270cdb86bdc8e7.js.map
