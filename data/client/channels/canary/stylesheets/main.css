@@ -106717,6 +106717,10 @@ strong {
     background-color: var(--info-danger-background)
 }
 
+.buildOverride-1HKGZe {
+    background-color: var(--status-positive-background)
+}
+
 .icon-3F2JOt {
     display: inline-block;
     vertical-align: middle;
@@ -171965,4 +171969,4 @@ html .invoiceCancelRow-dVOR64 {
     margin-bottom: 8px
 }
 
-/*# sourceMappingURL=40532.4c5068a8e7be3f08a095.css.map*/
+/*# sourceMappingURL=40532.bf3e309af0d7d7dc3774.css.map*/
