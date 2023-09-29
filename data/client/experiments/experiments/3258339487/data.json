@@ -1,0 +1,21 @@
+{
+  "data": {
+    "kind": "user",
+    "id": "2023-09_window_32_deprecation_message",
+    "label": "show deprecation message for 32-bit Windows",
+    "description": [
+      "Not Eligible",
+      "Control Bucket",
+      "Treatment 1: show message"
+    ],
+    "hash": 3258339487,
+    "buckets": [
+      -1,
+      0,
+      1
+    ],
+    "config_keys": [
+      "enabled"
+    ]
+  }
+}
