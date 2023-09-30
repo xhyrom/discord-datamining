@@ -103909,6 +103909,23 @@ strong {
     max-width: 400px
 }
 
+.upsellArt-1BE-fp {
+    width: 146px;
+    min-height: 100px;
+    -ms-flex-item-align: end;
+    align-self: flex-end;
+    position: relative
+}
+
+.profileEffectsUpsellArt-1k9puR {
+    position: absolute;
+    bottom: 0;
+    left: -16px;
+    -o-object-fit: contain;
+    object-fit: contain;
+    width: 146px
+}
+
 .brandShine-2_xHTj {
     color: hsl(var(--brand-500-hsl)/.1) !important
 }
@@ -172183,4 +172200,4 @@ html .invoiceCancelRow-dVOR64 {
     margin-bottom: 8px
 }
 
-/*# sourceMappingURL=40532.3b0f14e40bdf0df8d3f4.css.map*/
+/*# sourceMappingURL=40532.81ffd3252c418668dcff.css.map*/

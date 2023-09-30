@@ -6547,7 +6547,9 @@
                 title: "title-CXxZie",
                 buttons: "buttons-2BQREU",
                 ctaButton: "ctaButton-30CBdb",
-                textBody: "textBody-1mECjS"
+                textBody: "textBody-1mECjS",
+                upsellArt: "upsellArt-1BE-fp",
+                profileEffectsUpsellArt: "profileEffectsUpsellArt-1k9puR"
             }
         },
         799012: e => {
@@ -27099,4 +27101,4 @@
         }
     }
 ]);
-//# sourceMappingURL=a0653c9b6e606e92f44f.js.map
+//# sourceMappingURL=4d31dbdb3a0c7a92ee00.js.map
