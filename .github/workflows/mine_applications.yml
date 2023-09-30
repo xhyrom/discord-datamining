@@ -1,0 +1,64 @@
+name: Mine Applications
+on:
+  schedule:
+    - cron: "0 * * * *"
+  workflow_dispatch:
+
+jobs:
+  mine:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+        with:
+          persist-credentials: false
+      - uses: actions/setup-node@v3
+        with:
+          node-version: 19
+      - uses: pnpm/action-setup@v2
+        id: pnpm-install
+        with:
+          version: 8
+          run_install: false
+
+      - name: Get pnpm store directory
+        id: pnpm-cache
+        run: |
+          echo "STORE_PATH=$(pnpm store path)" >> $GITHUB_OUTPUT
+
+      - uses: actions/cache@v3
+        name: Setup pnpm cache
+        with:
+          path: ${{ steps.pnpm-cache.outputs.STORE_PATH }}
+          key: ${{ runner.os }}-pnpm-store-${{ hashFiles('**/pnpm-lock.yaml') }}
+          restore-keys: |
+            ${{ runner.os }}-pnpm-store-
+
+      - name: Setup git
+        run: |
+          git config --global url.https://${{ secrets.ACCESS_TOKEN }}@github.com/.insteadOf https://github.com/
+          git config user.name "xHyroM"
+          git config user.email "github@xhyrom.dev"
+        env:
+          GITHUB_TOKEN: ${{ secrets.ACCESS_TOKEN }}
+          ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}
+
+      - name: Install dependencies
+        run: pnpm i
+
+      - name: Run
+        run: pnpm run start
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          DISCORD_TOKEN: ${{ secrets.DISCORD_TOKEN }}
+          DISCORD_USER_TOKEN: ${{ secrets.DISCORD_USER_TOKEN }}
+          DISCORD_WEBHOOK_BUILDS: ${{ secrets.DISCORD_WEBHOOK_BUILDS }}
+          WUMPUSCENTRAL_DISCORD_WEBHOOK_BUILDS: ${{ secrets.WUMPUSCENTRAL_DISCORD_WEBHOOK_BUILDS }} # builds but for wumpuscentral
+          DISCORD_WEBHOOK_ROUTES: ${{ secrets.DISCORD_WEBHOOK_ROUTES }}
+          DISCORD_WEBHOOK_STRINGS: ${{ secrets.DISCORD_WEBHOOK_STRINGS }}
+          DISCORD_WEBHOOK_STYLESHEETS: ${{ secrets.DISCORD_WEBHOOK_STYLESHEET }} # todo: change to STYLESHEETS
+          DISCORD_WEBHOOK_EXPERIMENTS: ${{ secrets.DISCORD_WEBHOOK_EXPERIMENTS }}
+          WUMPUSCENTRAL_DISCORD_WEBHOOK_EXPERIMENTS: ${{ secrets.WUMPUSCENTRAL_DISCORD_WEBHOOK_EXPERIMENTS }} # experiments but for wumpuscentral
+          DISCORD_WEBHOOK_POSTS: ${{ secrets.DISCORD_WEBHOOK_POSTS }}
+          WUMPUSCENTRAL_DISCORD_WEBHOOK_POSTS: ${{ secrets.WUMPUSCENTRAL_DISCORD_WEBHOOK_POSTS }} # posts but for wumpuscentral
+          DISCORD_WEBHOOK_MISCELLANEOUS: ${{ secrets.DISCORD_WEBHOOK_MISCELLANEOUS }}
+          SCRAPE_CLIENT_APPLICATIONS: true

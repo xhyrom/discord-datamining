@@ -16,11 +16,15 @@
   *  along with this program.  If not, see <https://www.gnu.org/licenses/>.
   * **/
 
+import { readFile } from "node:fs/promises";
+
 export class File {
   path: string;
+  local: boolean;
 
-  constructor(path: string) {
+  constructor(path: string, local: boolean = false) {
     this.path = path;
+    this.local = local;
   }
 
   get name() {
@@ -32,8 +36,14 @@ export class File {
   }
 
   async content() {
+    if (this.local) return await this.localContent();
+
     return await (
       await fetch(`https://canary.discord.com/assets/${this.path}`)
     ).text();
+  }
+
+  async localContent() {
+    return await readFile(this.path, "utf-8");
   }
 }
