@@ -171176,32 +171176,55 @@ html .invoiceCancelRow-3s2UuC {
     border-radius: var(--radius-sm)
 }
 
-.subscribeFooter-3rMXge {
-    -webkit-box-pack: justify;
-    -ms-flex-pack: justify;
-    justify-content: space-between
+.modalFooter-2Xpaik {
+    margin: -16px;
+    padding: 16px
 }
 
 .buttonsRight-3JWUcH,
-.subscribeFooter-3rMXge {
+.modalBody-3w24P1 {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex
 }
 
-.modalHeader-QZFdV1 {
-    padding-bottom: 10px
+.modalBody-3w24P1 {
+    padding: 16px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    gap: 16px
 }
 
-.modalTitle-27DLRj {
-    margin-bottom: 0;
-    margin-left: 4px;
+.modalHeader-QZFdV1 {
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    padding: 0;
+    overflow: hidden
+}
+
+.modalHeader-QZFdV1,
+.modalHeadings-1FFBHj {
     display: -webkit-box;
     display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center
+    display: flex
+}
+
+.modalHeadings-1FFBHj {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    gap: 8px;
+    margin-top: 4px
+}
+
+.modalCloseButton-3UuEsg {
+    -ms-flex-item-align: start;
+    align-self: flex-start;
+    padding: 0
 }
 
 .premiumIcon-2zT6sO {
@@ -171213,16 +171236,14 @@ html .invoiceCancelRow-3s2UuC {
 }
 
 .discoverMorePerks-8syRxl {
-    margin-left: -16px
+    margin-left: -34px
 }
 
 .modalContent-S_tIF8 {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    justify-content: center
+    padding: 2px
 }
 
 .goToShopButton-2jWCIU {
@@ -172162,4 +172183,4 @@ html .invoiceCancelRow-dVOR64 {
     margin-bottom: 8px
 }
 
-/*# sourceMappingURL=40532.690ce56ac16b44156fc8.css.map*/
+/*# sourceMappingURL=40532.3b0f14e40bdf0df8d3f4.css.map*/
