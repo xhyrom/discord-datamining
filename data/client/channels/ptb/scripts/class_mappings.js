@@ -6354,7 +6354,7 @@
                 cta: "cta-3QwYgo",
                 close: "close-3G3kj9",
                 closeIcon: "closeIcon-221Mzj",
-                collectibles: "collectibles-1NhnmF",
+                listWrapper: "listWrapper-3rA0-L",
                 collectiblesList: "collectiblesList-tJGgEQ",
                 item: "item-2WPK-W",
                 selectedItem: "selectedItem-2jIRkM",
@@ -27097,4 +27097,4 @@
         }
     }
 ]);
-//# sourceMappingURL=8db77942fd157f63d675.js.map
+//# sourceMappingURL=489ba3cd5ae982ea3c77.js.map
