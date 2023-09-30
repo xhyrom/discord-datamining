@@ -44,6 +44,6 @@ export class File {
   }
 
   async localContent() {
-    return await readFile(this.path);
+    return (await readFile(this.path)) ?? "";
   }
 }
