@@ -16,7 +16,7 @@
   *  along with this program.  If not, see <https://www.gnu.org/licenses/>.
   * **/
 
-import { readFile } from "../../utils";
+import { readFile } from "../../utils.ts";
 
 export class File {
   path: string;
