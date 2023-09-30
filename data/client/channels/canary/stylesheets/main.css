@@ -111072,18 +111072,15 @@ html .tabBadge-h4HGed {
     height: 16px
 }
 
-.collectibles-1NhnmF {
-    -webkit-box-flex: 1;
-    -ms-flex: 1;
-    flex: 1;
-    overflow: auto;
-    margin: 0 16px 0 24px
+.listWrapper-3rA0-L {
+    margin: 0 16px
 }
 
 .collectiblesList-tJGgEQ {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(80px, 1fr));
-    grid-gap: 12px
+    grid-gap: 8px;
+    justify-items: center
 }
 
 .item-2WPK-W {
@@ -172165,4 +172162,4 @@ html .invoiceCancelRow-dVOR64 {
     margin-bottom: 8px
 }
 
-/*# sourceMappingURL=40532.fd9c0f3b51c9a1e31fb6.css.map*/
+/*# sourceMappingURL=40532.690ce56ac16b44156fc8.css.map*/
