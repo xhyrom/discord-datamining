@@ -16,7 +16,7 @@
   *  along with this program.  If not, see <https://www.gnu.org/licenses/>.
   * **/
 
-import { readFile } from "node:fs/promises";
+import { readFile } from "../../utils";
 
 export class File {
   path: string;
@@ -44,6 +44,6 @@ export class File {
   }
 
   async localContent() {
-    return await readFile(this.path, "utf-8");
+    return await readFile(this.path);
   }
 }

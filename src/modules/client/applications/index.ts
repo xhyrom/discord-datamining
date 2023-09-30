@@ -83,6 +83,7 @@ export class Applications implements Module {
 
   async getSnowflakes() {
     const content = await this.#build?.data();
+    console.log(content);
     if (!content) return [];
 
     const snowflakes = content.match(/\d{17,18,19}/g);
