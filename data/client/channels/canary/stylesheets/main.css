@@ -171005,11 +171005,11 @@ html .invoiceCancelRow-3s2UuC {
 }
 
 .effectDescriptionNoGradient-d7Q-Lc {
-    background: var(--background-modifier-accent)
+    background: var(--background-modifier-active)
 }
 
 .effectDescriptionContainer-1y_8OR {
-    background: var(--background-tertiary) padding-box;
+    background: var(--background-secondary) padding-box;
     position: relative;
     border-radius: 2px;
     padding-right: 4px
@@ -172165,4 +172165,4 @@ html .invoiceCancelRow-dVOR64 {
     margin-bottom: 8px
 }
 
-/*# sourceMappingURL=40532.7cf7cf3b0768b86402a4.css.map*/
+/*# sourceMappingURL=40532.fd9c0f3b51c9a1e31fb6.css.map*/
