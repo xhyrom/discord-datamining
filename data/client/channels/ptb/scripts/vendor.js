@@ -1,4 +1,4 @@
-/*! For license information please see eb21377ce6622ec77194.js.LICENSE.txt */
+/*! For license information please see 1b537de4682784df720c.js.LICENSE.txt */
 (this.webpackChunkdiscord_app = this.webpackChunkdiscord_app || []).push([
     [22897], {
         151131: (t, e, r) => {
@@ -37065,7 +37065,7 @@
                     dsn: "https://fa97a90475514c03a42f80cd36d147c4@sentry.io/140984",
                     autoSessionTracking: !1,
                     environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                    release: "discord_web-dfcc24374b9d632ac4a9e60062359360242a0826",
+                    release: "discord_web-fd59a97e06ddacdc84f7b66e11826bb92b1816da",
                     beforeSend: function(t) {
                         return function(t) {
                             return null != t.exception && null != t.exception.values && t.exception.values.every((function(t) {
@@ -37092,8 +37092,8 @@
                     denyUrls: [/recaptcha/, /mobilediscord\.com/, /betterdiscord:\/\//]
                 });
                 var t;
-                X.YA("buildNumber", null !== (t = "233083") ? t : "");
-                X.YA("builtAt", String("1696187098936"));
+                X.YA("buildNumber", null !== (t = "233088") ? t : "");
+                X.YA("builtAt", String("1696188282754"));
                 var e = window.GLOBAL_ENV.SENTRY_TAGS;
                 if (null != e && "object" == typeof e)
                     for (var r in e) X.YA(r, e[r]);
@@ -48473,4 +48473,4 @@
         e(128594), e(535666), e(784633), e(678991)
     }
 ]);
-//# sourceMappingURL=eb21377ce6622ec77194.js.map
+//# sourceMappingURL=1b537de4682784df720c.js.map
