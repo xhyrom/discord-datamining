@@ -1824,6 +1824,13 @@
     "url": "/integrations",
     "allowed_methods": null
   },
+  "INTEGRATION_JOIN": {
+    "url": "/integrations/:param/join",
+    "allowed_methods": [
+      "OPTIONS",
+      "POST"
+    ]
+  },
   "INTEGRATION_SEARCH": {
     "url": "/integrations/:param/search",
     "allowed_methods": [
