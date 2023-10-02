@@ -998,6 +998,7 @@
   "VOICE_CHANNEL_UNMUTED": "\"Unmuted\"",
   "VOICE_CHANNEL_DEAFENED": "\"Deafened\"",
   "VOICE_CHANNEL_UNDEAFENED": "\"Undeafened\"",
+  "VOICE_CHANNEL_LOCAL_MUTED": "\"Muted for me\"",
   "VOICE_CHANNEL_MUTED_CUSTOM_JOIN_SOUND": "\"Join Without Entrance Sound\"",
   "PREMIUM_GUILD_SUBSCRIPTION": "\"Boost\"",
   "OPEN_CHAT": "\"Open Chat\"",
