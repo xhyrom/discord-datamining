@@ -22392,21 +22392,6 @@
                 popoutMenu: "popoutMenu-3LsYJw"
             }
         },
-        857861: e => {
-            e.exports = {
-                referencePosition: "referencePosition-1TDKF3",
-                containerWrapper: "containerWrapper-WZBNDK",
-                animation: "animation-2Ht874",
-                slideInFromBottom: "slideInFromBottom-30Bm31",
-                container: "container-25mm3w",
-                avatarSection: "avatarSection-3AUnZj",
-                content: "content-wpwQTU",
-                ctaLink: "ctaLink-33fT8d",
-                buttons: "buttons-14YbUr",
-                closeButton: "closeButton-2m3Wyq",
-                closeIcon: "closeIcon-2l_Cxc"
-            }
-        },
         470734: e => {
             e.exports = {
                 customStatusSection: "customStatusSection-2_fKRl",
@@ -22419,6 +22404,22 @@
                 clydeErrorText: "clydeErrorText-21B00D",
                 sadClyde: "sadClyde-ej4LbK",
                 pencilIcon: "pencilIcon-3ZoLdr"
+            }
+        },
+        172952: e => {
+            e.exports = {
+                referencePosition: "referencePosition-3awUp7",
+                containerWrapper: "containerWrapper-1kh54c",
+                animation: "animation-2Ulm63",
+                slideInFromBottom: "slideInFromBottom-OAY5yI",
+                container: "container-34SFyU",
+                avatarSection: "avatarSection-23Phyu",
+                content: "content-2fvXP0",
+                contentWithoutAvatar: "contentWithoutAvatar-3goPR0",
+                ctaLink: "ctaLink-2Wa-yK",
+                buttons: "buttons-2t4rDg",
+                closeButton: "closeButton-1FOk1_",
+                closeIcon: "closeIcon-2wyTZ8"
             }
         },
         51448: e => {
@@ -26977,4 +26978,4 @@
         }
     }
 ]);
-//# sourceMappingURL=78c436a0adfe3c617a3d.js.map
+//# sourceMappingURL=963f15a3416aef1525ae.js.map
