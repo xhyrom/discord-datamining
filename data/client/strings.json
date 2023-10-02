@@ -3965,6 +3965,7 @@
   "BAN_REASON_OPTION_HACKED_ACCOUNT": "\"Compromised or hacked account\"",
   "BAN_REASON_OPTION_BREAKING_RULES": "\"Breaking server rules\"",
   "BAN_REASON_OPTION_OTHER": "\"Other\"",
+  "BAN_REASON_REQUIRED_ERROR": "\"Ban reason must be provided\"",
   "CALL_USER_PROMPT_HEADER": "\"Ready to start a call?\"",
   "CALL_USER_PROMPT": "\"Enjoy this moment.  Then jump in when you're ready.\"",
   "CALL_USER_CONFIRM": "\"I'm ready!\"",
