@@ -4528,5 +4528,9 @@
       "OPTIONS",
       "POST"
     ]
+  },
+  "POLL_ANSWERS": {
+    "url": "/channels/:param/polls/:param/answers",
+    "allowed_methods": null
   }
 }
