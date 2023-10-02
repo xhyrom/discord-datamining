@@ -25022,7 +25022,8 @@
             e.exports = {
                 flowerStarContainer: "flowerStarContainer-1QeD-L",
                 flowerStar: "flowerStar-2tNFCR",
-                childContainer: "childContainer-U_a6Yh"
+                childContainer: "childContainer-U_a6Yh",
+                redesignIconChildContainer: "redesignIconChildContainer-x-i5Ag"
             }
         },
         367830: e => {
@@ -27101,4 +27102,4 @@
         }
     }
 ]);
-//# sourceMappingURL=4d31dbdb3a0c7a92ee00.js.map
+//# sourceMappingURL=0c0e8f16e72dffef81db.js.map

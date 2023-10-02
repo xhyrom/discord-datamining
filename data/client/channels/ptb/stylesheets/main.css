@@ -13845,6 +13845,11 @@ html.disable-forced-colors * {
     pointer-events: none
 }
 
+.redesignIconChildContainer-x-i5Ag>svg {
+    width: 12px;
+    height: 12px
+}
+
 .background-3Da2vZ {
     width: 16px;
     height: 16px
@@ -172200,4 +172205,4 @@ html .invoiceCancelRow-dVOR64 {
     margin-bottom: 8px
 }
 
-/*# sourceMappingURL=40532.81ffd3252c418668dcff.css.map*/
+/*# sourceMappingURL=40532.0bce8b5768bb1a70cee3.css.map*/
