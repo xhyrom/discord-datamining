@@ -41510,6 +41510,10 @@ input[type=checked]:focus-visible+.label-3TDpbn {
     height: 100%
 }
 
+.textArea-2pmFjo *>span {
+    color: var(--white-100)
+}
+
 .theme-dark .bioTextArea-3TCvr_,
 .theme-light .bioTextArea-3TCvr_ {
     background: var(--input-background)
@@ -171300,4 +171304,4 @@ html .invoiceCancelRow-dVOR64 {
     margin-bottom: 8px
 }
 
-/*# sourceMappingURL=40532.ba7a1c9daa3ca5ed9324.css.map*/
+/*# sourceMappingURL=40532.df44b2bf007c649f818e.css.map*/
