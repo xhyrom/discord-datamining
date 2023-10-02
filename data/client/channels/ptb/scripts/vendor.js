@@ -1,4 +1,4 @@
-/*! For license information please see a41a689b5a266fef5ff2.js.LICENSE.txt */
+/*! For license information please see 22e60ebe833f30985cbc.js.LICENSE.txt */
 (this.webpackChunkdiscord_app = this.webpackChunkdiscord_app || []).push([
     [22897], {
         151131: (t, e, r) => {
@@ -24923,7 +24923,8 @@
                 t.CHANNEL_LIST_END_REACHED = "channel_list_end_reached";
                 t.COLLECTIBLES_SHOP_VIEWED = "collectibles_shop_viewed";
                 t.UPDATER_METRICS_DOWNLOAD = "updater_metrics_download";
-                t.UPDATER_METRICS_INSTALL = "updater_metrics_install"
+                t.UPDATER_METRICS_INSTALL = "updater_metrics_install";
+                t.CHANNEL_PROMPT_ACTION_CLICKED = "channel_prompt_action_clicked"
             }(Zr || (Zr = {}));
             ! function(t) {
                 t.CANARY = "canary";
@@ -25549,7 +25550,8 @@
                 t.GOG = "gog";
                 t.EPIC = "epic"
             }(Pn || (Pn = {}));
-            var vn, Bn, bn = Object.freeze((x(Mn = {}, Pn.DISCORD, "Discord"), x(Mn, Pn.STEAM, "Steam"), x(Mn, Pn.UPLAY, "Uplay"), x(Mn, Pn.BATTLENET, "Battle.net"), x(Mn, Pn.ORIGIN, "Origin"), x(Mn, Pn.GOG, "GOG"), x(Mn, Pn.TWITCH, "Twitch"), x(Mn, Pn.EPIC, "Epic"), Mn)),
+            var vn, Bn, bn = Object.freeze((x(Mn = {}, Pn.DISCORD, "Discord"), x(Mn, Pn.STEAM, "Steam"), x(Mn, Pn.UPLAY, "Uplay"), x(Mn, Pn.BATTLENET, "Battle.net"), x(Mn, Pn.ORIGIN, "Origin"), x(Mn, Pn.GOG, "GOG"),
+                    x(Mn, Pn.TWITCH, "Twitch"), x(Mn, Pn.EPIC, "Epic"), Mn)),
                 wn = 6016,
                 Hn = 3384;
             ! function(t) {
@@ -37070,7 +37072,7 @@
                     dsn: "https://fa97a90475514c03a42f80cd36d147c4@sentry.io/140984",
                     autoSessionTracking: !1,
                     environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                    release: "discord_web-5b6042606fee117ce9afc543b87f8e41330401b2",
+                    release: "discord_web-05b7248283e4f4173ae9b1e9d727b01ac3f1e191",
                     beforeSend: function(t) {
                         return function(t) {
                             return null != t.exception && null != t.exception.values && t.exception.values.every((function(t) {
@@ -37097,8 +37099,8 @@
                     denyUrls: [/recaptcha/, /mobilediscord\.com/, /betterdiscord:\/\//]
                 });
                 var t;
-                X.YA("buildNumber", null !== (t = "233338") ? t : "");
-                X.YA("builtAt", String("1696278594558"));
+                X.YA("buildNumber", null !== (t = "233369") ? t : "");
+                X.YA("builtAt", String("1696280874362"));
                 var e = window.GLOBAL_ENV.SENTRY_TAGS;
                 if (null != e && "object" == typeof e)
                     for (var r in e) X.YA(r, e[r]);
@@ -48478,4 +48480,4 @@
         e(128594), e(535666), e(784633), e(678991)
     }
 ]);
-//# sourceMappingURL=a41a689b5a266fef5ff2.js.map
+//# sourceMappingURL=22e60ebe833f30985cbc.js.map
