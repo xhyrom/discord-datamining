@@ -15827,6 +15827,7 @@
   "GUILD_SETTINGS_AUDIT_LOG_AUTO_MODERATION_FLAGGED_USER_PROFILE": "\"AutoMod flagged $[**!!{user}!!**](userHook) for violating content in their user profile\"",
   "DEV_NOTICE_LOCAL": "\"Local development mode\"",
   "DEV_NOTICE_STAGING": "\"Staging {buildNumber}\"",
+  "NOTIF_CENTER_V2_VIEW_SUMMARY": "\"Join in!\"",
   "GUILD_SETTINGS_PARTNER_CHECKLIST_LOADING_FAILED": "\"We are having trouble loading the requirements. Please check back later.\"",
   "GUILD_SETTINGS_PARTNER_CHECKLIST_LOADING_FAILED_TOOLTIP": "\"Something went wrong. Please check back later\"",
   "PURCHASE_REVIEW_TAX_LABEL": "\"Tax\"",
