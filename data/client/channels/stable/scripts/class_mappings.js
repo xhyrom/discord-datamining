@@ -222,6 +222,7 @@
                 devBanner: "devBanner-AXSCfT",
                 local: "local-29aZ6k",
                 staging: "staging-3qotTa",
+                buildOverride: "buildOverride-1HKGZe",
                 icon: "icon-3F2JOt",
                 closeButton: "closeButton-2q4zo9",
                 closeIcon: "closeIcon-1SJYBj"
@@ -4218,6 +4219,37 @@
                 current: "current-WzpAFB jsonSection-3yB9ax"
             }
         },
+        53175: e => {
+            e.exports = {
+                editorAnimate: "editorAnimate-2BAiXS",
+                slidein: "slidein-zGJHpq",
+                editor: "editor-1m9XtV",
+                editorHeader: "editorHeader-3h2YIJ",
+                editorBody: "editorBody-NkD7E_",
+                selectionGroup: "selectionGroup-2dXNwb",
+                editorFooter: "editorFooter-2tN7of",
+                footerButton: "footerButton-17QoZh",
+                closeCircleButton: "closeCircleButton-1pJMpe",
+                closeCircle: "closeCircle-i104wn"
+            }
+        },
+        87195: e => {
+            e.exports = {
+                appIconSelectionContainer: "appIconSelectionContainer-2Cd0QY",
+                appIconSelection: "appIconSelection-3Iponf",
+                selected: "selected-3t8c7u",
+                disabled: "disabled-2Y8GuN"
+            }
+        },
+        107026: e => {
+            e.exports = {
+                presets: "presets-24jj0u",
+                header: "header-3i6N5M",
+                headings: "headings-2_dX0_",
+                title: "title-3yqHZ2",
+                premiumIcon: "premiumIcon-313jmI"
+            }
+        },
         11384: e => {
             e.exports = {
                 bar: "bar-2MWHzg",
@@ -6218,6 +6250,17 @@
                 titleContainer: "titleContainer-3Lez7G"
             }
         },
+        970485: e => {
+            e.exports = {
+                video: "video-1Ws-4A",
+                header: "header-2n8dGs",
+                footer: "footer-3Utv6L",
+                closeContainer: "closeContainer-hxuDP9",
+                close: "close-35Zli8",
+                hintText: "hintText-3e0Cwe",
+                clydeText: "clydeText-1VpFDZ"
+            }
+        },
         244192: e => {
             e.exports = {
                 personalityBadge: "personalityBadge-pYraBr",
@@ -6311,7 +6354,7 @@
                 cta: "cta-3QwYgo",
                 close: "close-3G3kj9",
                 closeIcon: "closeIcon-221Mzj",
-                collectibles: "collectibles-1NhnmF",
+                listWrapper: "listWrapper-3rA0-L",
                 collectiblesList: "collectiblesList-tJGgEQ",
                 item: "item-2WPK-W",
                 selectedItem: "selectedItem-2jIRkM",
@@ -6375,6 +6418,7 @@
                 avatar: "avatar-jvUUbt",
                 avatarPurchased: "avatarPurchased-3h_bK-",
                 cardText: "cardText-2OugTh",
+                cardTextProfileEffect: "cardTextProfileEffect-3ulRYT",
                 description: "description-1aSbLq",
                 price: "price-ehI2ay",
                 buttonsContainer: "buttonsContainer-1B5Td_",
@@ -6433,10 +6477,11 @@
                 modalCloseButton: "modalCloseButton-3RgDvX",
                 collectibleInfoContainer: "collectibleInfoContainer-3uyaC5",
                 collectiblePreviewsContainer: "collectiblePreviewsContainer-2TJ889",
+                previewsContainerInner: "previewsContainerInner-3HAzg6",
+                profileEffectPreviewsContainerInner: "profileEffectPreviewsContainerInner-3_2cg0 previewsContainerInner-3HAzg6",
                 categoryBanner: "categoryBanner-2VV5av",
                 collectiblePreviewsContainerNoChat: "collectiblePreviewsContainerNoChat-1IDSp_ collectiblePreviewsContainer-2TJ889",
                 collectiblePreviewsContainerWithChat: "collectiblePreviewsContainerWithChat-2lLj1- collectiblePreviewsContainer-2TJ889",
-                previewContainerInner: "previewContainerInner-28dlGW",
                 avatarPreviewContainer: "avatarPreviewContainer-2FEhy3",
                 chatPreview: "chatPreview-2rboc6",
                 mockMessage: "mockMessage-3u7k9X",
@@ -6502,7 +6547,9 @@
                 title: "title-CXxZie",
                 buttons: "buttons-2BQREU",
                 ctaButton: "ctaButton-30CBdb",
-                textBody: "textBody-1mECjS"
+                textBody: "textBody-1mECjS",
+                upsellArt: "upsellArt-1BE-fp",
+                profileEffectsUpsellArt: "profileEffectsUpsellArt-1k9puR"
             }
         },
         799012: e => {
@@ -12266,7 +12313,9 @@
         661492: e => {
             e.exports = {
                 closeButton: "closeButton-2swOfr",
-                content: "content-1OV4rb"
+                content: "content-1OV4rb",
+                warningHeading: "warningHeading-3LQtSZ",
+                warningIcon: "warningIcon-UbN-0c"
             }
         },
         666309: e => {
@@ -18823,60 +18872,6 @@
                 badgeIconSettingsMenu: "badgeIconSettingsMenu-39c26C"
             }
         },
-        32708: e => {
-            e.exports = {
-                pePromoBanner: "pePromoBanner-2ccf_F",
-                phPromoBanner: "phPromoBanner-3iexBk",
-                coPromoBanner: "coPromoBanner-Oe0jlg",
-                clPromoBanner: "clPromoBanner-d39jJy",
-                arPromoBanner: "arPromoBanner-14FLNJ",
-                jpPromoBanner: "jpPromoBanner-MOwUQM",
-                vnPromoBanner: "vnPromoBanner-rqLtEp",
-                thPromoBanner: "thPromoBanner-E-tCxO",
-                idPromoBanner: "idPromoBanner-6C-EJ8",
-                myPromoBanner: "myPromoBanner-3sLxJh",
-                mxPromoBanner: "mxPromoBanner-2JQ_Zc",
-                krPromoBanner: "krPromoBanner-1u4lq0",
-                bgPromoBanner: "bgPromoBanner-3Hs7dd",
-                czPromoBanner: "czPromoBanner-3GMn4g",
-                dkPromoBanner: "dkPromoBanner-2rF52W",
-                huPromoBanner: "huPromoBanner-1E_iFy",
-                roPromoBanner: "roPromoBanner-vcgbT0",
-                sePromoBanner: "sePromoBanner-2bJEIb",
-                isPromoBanner: "isPromoBanner-12WN5X",
-                chPromoBanner: "chPromoBanner-3D3oyi",
-                liPromoBanner: "liPromoBanner-1xq0PL",
-                cyPromoBanner: "cyPromoBanner-2m5C0V",
-                eePromoBanner: "eePromoBanner-3JfqSu",
-                iePromoBanner: "iePromoBanner-1_lXBC",
-                lvPromoBanner: "lvPromoBanner-2QQx_L",
-                ltPromoBanner: "ltPromoBanner-SmZrP7",
-                luPromoBanner: "luPromoBanner-H-PqWR",
-                mtPromoBanner: "mtPromoBanner-2pG_Lw",
-                skPromoBanner: "skPromoBanner-1QpsgI",
-                siPromoBanner: "siPromoBanner-FPTwbf",
-                grPromoBanner: "grPromoBanner-1F9_QA",
-                fiPromoBanner: "fiPromoBanner-3ZsnEr",
-                ptPromoBanner: "ptPromoBanner-1veYIL",
-                bePromoBanner: "bePromoBanner-3U1MPS",
-                atPromoBanner: "atPromoBanner-bFv5GA",
-                frPromoBanner: "frPromoBanner-a4X48o",
-                dePromoBanner: "dePromoBanner-212SC1",
-                esPromoBanner: "esPromoBanner-TvNp-M",
-                itPromoBanner: "itPromoBanner-2sbfJu",
-                nlPromoBanner: "nlPromoBanner-2xLQ6i",
-                plPromoBanner: "plPromoBanner-3Ry5ml",
-                hrPromoBanner: "hrPromoBanner-Kf6UCY",
-                promoBanner: "promoBanner-1pEkqm",
-                heroIcon: "heroIcon-1-ZUhv",
-                heroHeader: "heroHeader-Rd3Npr",
-                heroBody: "heroBody-1EuD4B",
-                heroBodyHideLink: "heroBodyHideLink-1-ZoDy",
-                heroBodyLinkCTA: "heroBodyLinkCTA-2rKO_B",
-                heroButtons: "heroButtons-CJvWLU",
-                heroBody2: "heroBody2-2V9NwH"
-            }
-        },
         53755: e => {
             e.exports = {
                 bannerContainer: "bannerContainer-osZqK9",
@@ -19043,65 +19038,6 @@
                 tier1UploadPerk: "tier1UploadPerk-1ZDumb",
                 tier1StreamPerk: "tier1StreamPerk-1ksfni",
                 bottomOfPageVisibilitySensor: "bottomOfPageVisibilitySensor-1KV8Qh"
-            }
-        },
-        7278: e => {
-            e.exports = {
-                responsiveWidthMobile: "740px",
-                hero: "hero-1aNo0v",
-                featureImage: "featureImage-91H2fC",
-                featureTitle: "featureTitle-3N9Stg",
-                heroIcon: "heroIcon-3kmupU",
-                heroHeader: "heroHeader-1A0uOZ",
-                heroBody: "heroBody-20fY29",
-                heroButtons: "heroButtons-357iJy",
-                giftText: "giftText-1l0-Fk",
-                giftHeader: "giftHeader-1ZxcqK",
-                giftContainer: "giftContainer-1X7m0c",
-                giftButtonInner: "giftButtonInner-3eeZP9",
-                giftButton: "giftButton-2PdXmQ",
-                featuresHeader: "featuresHeader-2bjq5B",
-                featureGrid: "featureGrid-SSlfD0",
-                feature: "feature-2IUcBI",
-                featureNewBadge: "featureNewBadge-27qr_t",
-                featureDescription: "featureDescription-3U0QB3",
-                featureChildrenWrapper: "featureChildrenWrapper-2cxUCl",
-                featureImageWrapper: "featureImageWrapper-2ndc8N",
-                featureVideoBackgrounds: "featureVideoBackgrounds-3-ItPq",
-                featureEmoji: "featureEmoji-cnSD0D",
-                featureClientThemes: "featureClientThemes-vi_2eN",
-                featureProfile: "featureProfile-2h92hd",
-                featurePremiumGuild: "featurePremiumGuild-2uV6-N",
-                featureBadge: "featureBadge-1FNGAH",
-                featureUploadSize: "featureUploadSize-3k1zif",
-                featureGoLive: "featureGoLive-15Pf6l",
-                featureRemixing: "featureRemixing-1cFJ5x",
-                learnMoreLink: "learnMoreLink-2JwgbJ",
-                itemInfoIcon: "itemInfoIcon-9WQ6fQ",
-                featureMoreServers: "featureMoreServers-3eY3SW",
-                featurePerGuildProfile: "featurePerGuildProfile-3nTrFP",
-                featureLongerMessageContent: "featureLongerMessageContent-4BIM8v",
-                stickers: "stickers-2JFQr2",
-                featureSuperReactions: "featureSuperReactions-KuUcky",
-                featureSoundboard: "featureSoundboard-14erND",
-                newSparkles: "newSparkles-23Fy9H",
-                marketingSurfaceFeatureVideoBackgrounds: "marketingSurfaceFeatureVideoBackgrounds-2_WejA",
-                marketingsurfaceFeatureLongerMessageContent: "marketingsurfaceFeatureLongerMessageContent-2TF6bR",
-                marketingSurfaceFeatureBadge: "marketingSurfaceFeatureBadge-307ZFx",
-                featurePerGuildAvatar: "featurePerGuildAvatar-1a7XJ2",
-                sparkle: "sparkle-9Ivjy-",
-                marketingSurfaceFeatureProfile: "marketingSurfaceFeatureProfile-2ha2zs",
-                marketingSurfaceStickers: "marketingSurfaceStickers-mXYP_7",
-                marketingSurfaceFeatureMoreServers: "marketingSurfaceFeatureMoreServers-2BGZkV",
-                marketingSurfaceFeaturePremiumGuild: "marketingSurfaceFeaturePremiumGuild-VvCNJz",
-                comingSoon: "comingSoon-Tlfuks"
-            }
-        },
-        349748: e => {
-            e.exports = {
-                buttons: "buttons-19uowm",
-                buttonsCenter: "buttonsCenter-21Ab-2",
-                button: "button-1U79Hu"
             }
         },
         118699: e => {
@@ -19600,18 +19536,6 @@
                 priceSpinner: "priceSpinner-2Uu7FV"
             }
         },
-        565509: e => {
-            e.exports = {
-                trialOfferWrapper: "trialOfferWrapper-2Y24ok",
-                premiumLogo: "premiumLogo-NlHzM2",
-                trialOfferCopyHeading: "trialOfferCopyHeading-9ABI7M",
-                trialOfferCopyBody: "trialOfferCopyBody-2s8ffX",
-                giftWrapper: "giftWrapper-2Rmqr2",
-                giftCopy: "giftCopy-1CPzXM",
-                giftCopyHeading: "giftCopyHeading-BAlAZB",
-                giftButtonText: "giftButtonText-3_Cv78"
-            }
-        },
         716905: e => {
             e.exports = {
                 heading: "heading-3P5RIL",
@@ -19622,7 +19546,6 @@
                 gradientUpsellWrapperWithBottomMargin: "gradientUpsellWrapperWithBottomMargin-26dKvZ",
                 logo: "logo-UKNbg6",
                 logoIcon: "logoIcon-1B7zIe",
-                unifyTrialUpsell: "unifyTrialUpsell-2E28tK",
                 logoWordmark: "logoWordmark-13R5k2",
                 copy: "copy-3KuMw6",
                 trialBadge: "trialBadge-3mU3P3",
@@ -20294,10 +20217,12 @@
         418877: e => {
             e.exports = {
                 modal: "modal-3Dr350",
-                subscribeFooter: "subscribeFooter-3rMXge",
+                modalFooter: "modalFooter-2Xpaik",
                 buttonsRight: "buttonsRight-3JWUcH",
+                modalBody: "modalBody-3w24P1",
                 modalHeader: "modalHeader-QZFdV1",
-                modalTitle: "modalTitle-27DLRj",
+                modalHeadings: "modalHeadings-1FFBHj",
+                modalCloseButton: "modalCloseButton-3UuEsg",
                 premiumIcon: "premiumIcon-2zT6sO",
                 modalDescription: "modalDescription-l9dq3V",
                 discoverMorePerks: "discoverMorePerks-8syRxl",
@@ -22858,6 +22783,12 @@
                 premiumTier2Divider: "premiumTier2Divider-3-VIqi"
             }
         },
+        503658: e => {
+            e.exports = {
+                tryItOutButtons: "tryItOutButtons-2z1WFH",
+                selectionGroup: "selectionGroup-1uE1O_"
+            }
+        },
         102172: e => {
             e.exports = {
                 authedApp: "authedApp-8q3NA9",
@@ -24965,7 +24896,8 @@
             e.exports = {
                 flowerStarContainer: "flowerStarContainer-1QeD-L",
                 flowerStar: "flowerStar-2tNFCR",
-                childContainer: "childContainer-U_a6Yh"
+                childContainer: "childContainer-U_a6Yh",
+                redesignIconChildContainer: "redesignIconChildContainer-x-i5Ag"
             }
         },
         367830: e => {
@@ -27044,4 +26976,4 @@
         }
     }
 ]);
-//# sourceMappingURL=96c2a21127cb43c94d21.js.map
+//# sourceMappingURL=9770cb5176a9318ff107.js.map

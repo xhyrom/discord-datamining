@@ -1,4 +1,4 @@
-/*! For license information please see 7393d52828f31b23cc3c.js.LICENSE.txt */
+/*! For license information please see ab4b079da0ab731bd5e4.js.LICENSE.txt */
 (this.webpackChunkdiscord_app = this.webpackChunkdiscord_app || []).push([
     [22897], {
         151131: (t, e, r) => {
@@ -20895,7 +20895,8 @@
                 t.POMELO_ELIGIBLE = "POMELO_ELIGIBLE";
                 t.GUILD_RAID_NOTIFICATION = "GUILD_RAID_NOTIFICATION";
                 t.SAFETY_USER_SENTIMENT_NAGBAR = "SAFETY_USER_SENTIMENT_NAGBAR";
-                t.SERVER_USAGE_SURVEY = "SERVER_USAGE_SURVEY"
+                t.SERVER_USAGE_SURVEY = "SERVER_USAGE_SURVEY";
+                t.WIN32_DEPRECATED_MESSAGE = "WIN32_DEPRECATED_MESSAGE"
             }(h || (h = {}));
             ! function(t) {
                 t.RESOLVING = "RESOLVING";
@@ -22276,6 +22277,9 @@
                     GUILD_CLYDE_SETTINGS: function(t) {
                         return "/guilds/".concat(t, "/clyde-settings")
                     },
+                    GUILD_CLYDE_ADD_MEMBER: function(t) {
+                        return "/guilds/".concat(t, "/members/clyde")
+                    },
                     CHANNEL_BASED_CLYDE_PERSONALITY: function(t) {
                         return "/channels/".concat(t, "/channel-based-clyde-personality")
                     },
@@ -22530,6 +22534,9 @@
                     },
                     CLYDE_PROFILES_CREATE: function(t) {
                         return "/guilds/".concat(t, "/clyde-profiles")
+                    },
+                    POLL_ANSWERS: function(t, e) {
+                        return "/channels/".concat(t, "/polls/").concat(e, "/answers")
                     }
                 }),
                 St = Object.freeze({
@@ -23745,10 +23752,9 @@
                         GUILD_ROLE_SUBSCRIPTIONS_CANCEL: tr.GUILD_ROLE_SUBSCRIPTION_CANCEL,
                         GUILD_BOOSTING: tr.GUILD_BOOSTING,
                         WEBAUTHN_VIEW: tr.SETTINGS_WEBAUTHN_VIEW
-                    }, w.cP, tr.GUILD_ROLE_SUBSCRIPTION), x(ir, "BILLING", tr.SETTINGS_BILLING), x(ir, "EXPERIMENTS", tr.SETTINGS_EXPERIMENTS),
-                    x(ir, "DEVELOPER_OPTIONS", tr.SETTINGS_DEVELOPER_OPTIONS), x(ir, "WINDOWS", tr.SETTINGS_WINDOWS), x(ir, "LINUX", tr.SETTINGS_LINUX), x(ir, "HYPESQUAD_ONLINE", tr.SETTINGS_HYPESQUAD_ONLINE), x(ir, "DESKTOP_APP", tr.SETTINGS_DESKTOP_APP), x(ir, "INVENTORY", tr.SETTINGS_INVENTORY), x(ir, "DEBUG_LOGS", tr.SETTINGS_DEBUG_LOGS), x(ir, "DATABASE_CONTROLS", tr.SETTINGS_DATABASE_CONTROLS), x(ir, "STARTUP_TIMINGS", tr.SETTINGS_STARTUP_TIMINGS), x(ir, "TEXT_COMPONENT", tr.TEXT_COMPONENT), x(ir, "DESIGN_SYSTEM", tr.DESIGN_SYSTEM), x(ir, "DESIGN_SYSTEM_TEXT", tr.DESIGN_SYSTEM_TEXT), x(ir, "DESIGN_SYSTEM_BUTTON", tr.DESIGN_SYSTEM_BUTTON), x(ir, "DESIGN_SYSTEM_TABLE_ROW", tr.DESIGN_SYSTEM_TABLE_ROW), x(ir, "DESIGN_SYSTEM_ALERT_MODAL", tr.DESIGN_SYSTEM_ALERT_MODAL), x(ir, "DESIGN_SYSTEM_BACKGROUND_BLUR_VIEW", tr.DESIGN_SYSTEM_BACKGROUND_BLUR_VIEW), x(ir, "DESIGN_SYSTEM_SHADOWS", tr.DESIGN_SYSTEM_SHADOWS), x(ir, "DESIGN_SYSTEM_SEGMENTED_CONTROL", tr.DESIGN_SYSTEM_SEGMENTED_CONTROL), x(ir, "DESIGN_SYSTEM_TABS", tr.DESIGN_SYSTEM_TABS),
-                    x(ir, "DESIGN_SYSTEM_CONTEXT_MENU", tr.DESIGN_SYSTEM_CONTEXT_MENU), x(ir, "DESIGN_SYSTEM_TOAST", tr.DESIGN_SYSTEM_TOAST), x(ir, "DESIGN_SYSTEM_TEXT_INPUT", tr.DESIGN_SYSTEM_TEXT_INPUT), x(ir, "DESIGN_SYSTEM_TOOLTIP", tr.DESIGN_SYSTEM_TOOLTIP), x(ir, "DESIGN_SYSTEM_COACHMARK", tr.DESIGN_SYSTEM_COACHMARK), x(ir, "DESIGN_SYSTEM_STACK", tr.DESIGN_SYSTEM_STACK), x(ir, "DESIGN_SYSTEM_BACKDROP", tr.DESIGN_SYSTEM_BACKDROP), x(ir, "DESIGN_SYSTEM_MODAL", tr.DESIGN_SYSTEM_MODAL), x(ir, "ADVANCED", tr.SETTINGS_ADVANCED), x(ir, "PROFILE_CUSTOMIZATION", tr.SETTINGS_CUSTOMIZE_PROFILE), x(ir, "PROFILE_CUSTOMIZATION_TRY_IT_OUT", tr.SETTINGS_CUSTOMIZE_PROFILE_TRY_IT_OUT), x(ir, "PROFILE_CUSTOMIZATION_AVATAR_DECORATION", tr.SETTINGS_CUSTOMIZE_PROFILE_AVATAR_DECORATION), x(ir, "HOTSPOT_OPTIONS", tr.SETTINGS_HOTSPOT_OPTIONS), x(ir, "DISMISSIBLE_CONTENT_OPTIONS", tr.SETTINGS_DISMISSIBLE_CONTENT_OPTIONS), x(ir, "PAYMENT_FLOW_MODAL_TEST_PAGE", tr.SETTINGS_PAYMENT_FLOW_MODAL_TEST_PAGE), x(ir, "POGGERMODE", tr.SETTINGS_POGGERMODE),
-                    x(ir, "SESSIONS", tr.SETTINGS_SESSIONS), x(ir, "FAMILY_CENTER", tr.SETTINGS_FAMILY_CENTER), x(ir, "FRIEND_REQUESTS", tr.SETTINGS_FRIEND_REQUESTS), x(ir, "CLIPS", tr.SETTINGS_CLIPS), x(ir, "SPEED_TEST", tr.SETTINGS_SPEED_TEST), x(ir, "COMMUNITY_ALERTS", tr.COMMUNITY_ALERTS), ir));
+                    }, w.cP, tr.GUILD_ROLE_SUBSCRIPTION), x(ir, "BILLING", tr.SETTINGS_BILLING), x(ir, "EXPERIMENTS", tr.SETTINGS_EXPERIMENTS), x(ir, "DEVELOPER_OPTIONS", tr.SETTINGS_DEVELOPER_OPTIONS), x(ir, "WINDOWS", tr.SETTINGS_WINDOWS), x(ir, "LINUX", tr.SETTINGS_LINUX), x(ir, "HYPESQUAD_ONLINE", tr.SETTINGS_HYPESQUAD_ONLINE), x(ir, "DESKTOP_APP", tr.SETTINGS_DESKTOP_APP), x(ir, "INVENTORY", tr.SETTINGS_INVENTORY), x(ir, "DEBUG_LOGS", tr.SETTINGS_DEBUG_LOGS), x(ir, "DATABASE_CONTROLS", tr.SETTINGS_DATABASE_CONTROLS), x(ir, "STARTUP_TIMINGS", tr.SETTINGS_STARTUP_TIMINGS), x(ir, "TEXT_COMPONENT", tr.TEXT_COMPONENT), x(ir, "DESIGN_SYSTEM", tr.DESIGN_SYSTEM), x(ir, "DESIGN_SYSTEM_TEXT", tr.DESIGN_SYSTEM_TEXT), x(ir, "DESIGN_SYSTEM_BUTTON", tr.DESIGN_SYSTEM_BUTTON),
+                    x(ir, "DESIGN_SYSTEM_TABLE_ROW", tr.DESIGN_SYSTEM_TABLE_ROW), x(ir, "DESIGN_SYSTEM_ALERT_MODAL", tr.DESIGN_SYSTEM_ALERT_MODAL), x(ir, "DESIGN_SYSTEM_BACKGROUND_BLUR_VIEW", tr.DESIGN_SYSTEM_BACKGROUND_BLUR_VIEW), x(ir, "DESIGN_SYSTEM_SHADOWS", tr.DESIGN_SYSTEM_SHADOWS), x(ir, "DESIGN_SYSTEM_SEGMENTED_CONTROL", tr.DESIGN_SYSTEM_SEGMENTED_CONTROL), x(ir, "DESIGN_SYSTEM_TABS", tr.DESIGN_SYSTEM_TABS), x(ir, "DESIGN_SYSTEM_CONTEXT_MENU", tr.DESIGN_SYSTEM_CONTEXT_MENU), x(ir, "DESIGN_SYSTEM_TOAST", tr.DESIGN_SYSTEM_TOAST), x(ir, "DESIGN_SYSTEM_TEXT_INPUT", tr.DESIGN_SYSTEM_TEXT_INPUT), x(ir, "DESIGN_SYSTEM_TOOLTIP", tr.DESIGN_SYSTEM_TOOLTIP), x(ir, "DESIGN_SYSTEM_COACHMARK", tr.DESIGN_SYSTEM_COACHMARK), x(ir, "DESIGN_SYSTEM_STACK", tr.DESIGN_SYSTEM_STACK), x(ir, "DESIGN_SYSTEM_BACKDROP", tr.DESIGN_SYSTEM_BACKDROP), x(ir, "DESIGN_SYSTEM_MODAL", tr.DESIGN_SYSTEM_MODAL), x(ir, "ADVANCED", tr.SETTINGS_ADVANCED), x(ir, "PROFILE_CUSTOMIZATION", tr.SETTINGS_CUSTOMIZE_PROFILE),
+                    x(ir, "PROFILE_CUSTOMIZATION_TRY_IT_OUT", tr.SETTINGS_CUSTOMIZE_PROFILE_TRY_IT_OUT), x(ir, "PROFILE_CUSTOMIZATION_AVATAR_DECORATION", tr.SETTINGS_CUSTOMIZE_PROFILE_AVATAR_DECORATION), x(ir, "HOTSPOT_OPTIONS", tr.SETTINGS_HOTSPOT_OPTIONS), x(ir, "DISMISSIBLE_CONTENT_OPTIONS", tr.SETTINGS_DISMISSIBLE_CONTENT_OPTIONS), x(ir, "PAYMENT_FLOW_MODAL_TEST_PAGE", tr.SETTINGS_PAYMENT_FLOW_MODAL_TEST_PAGE), x(ir, "POGGERMODE", tr.SETTINGS_POGGERMODE), x(ir, "SESSIONS", tr.SETTINGS_SESSIONS), x(ir, "FAMILY_CENTER", tr.SETTINGS_FAMILY_CENTER), x(ir, "FRIEND_REQUESTS", tr.SETTINGS_FRIEND_REQUESTS), x(ir, "CLIPS", tr.SETTINGS_CLIPS), x(ir, "SPEED_TEST", tr.SETTINGS_SPEED_TEST), x(ir, "COMMUNITY_ALERTS", tr.COMMUNITY_ALERTS), ir));
             ! function(t) {
                 t.APPLICATION_STORE = "Application Store Verified Guild Invite - Lurker";
                 t.CHAT_INPUT_BLOCKER = "Chat Input Blocker - Lurker Mode";
@@ -25499,7 +25505,8 @@
                 t.CLIPS = "16861982215703";
                 t.REMIXING_TEXT_SUPPORT = "15145601963031-Remix-FAQ#h_01H2Y1F86HNTVKWNVJJSB4C6A5";
                 t.SERVER_SUBSCRIPTION_AND_PRODUCTS = "10423011974551";
-                t.SERVER_PRODUCTS = "10423011974551#docs-internal-guid-918e991a-7fff-03d5-8326-5d065e5edeb1"
+                t.SERVER_PRODUCTS = "10423011974551#docs-internal-guid-918e991a-7fff-03d5-8326-5d065e5edeb1";
+                t.WIN32_DEPRECATE = "213491697"
             }(Ln || (Ln = {}));
             var Cn, gn, Un, Pn, Mn, mn = function(t) {
                     return "https://www.youtube.com/embed/".concat(t)
@@ -26765,8 +26772,7 @@
                                             const r = A(t);
                                             return !r || (0, u.U0)(r, e)
                                         }(t, e.allowUrls)) {
-                                        ("undefined" == typeof __SENTRY_DEBUG__ || __SENTRY_DEBUG__) && E.kg.warn(`Event dropped due to not being matched by \`allowUrls\` option.\nEvent: ${(0,
-c.jH)(t)}.\nUrl: ${A(t)}`);
+                                        ("undefined" == typeof __SENTRY_DEBUG__ || __SENTRY_DEBUG__) && E.kg.warn(`Event dropped due to not being matched by \`allowUrls\` option.\nEvent: ${(0,c.jH)(t)}.\nUrl: ${A(t)}`);
                                         return !0
                                     }
                                     return !1
@@ -27050,8 +27056,7 @@ c.jH)(t)}.\nUrl: ${A(t)}`);
             }
 
             function v(t, e) {
-                const [r, n] = t
-                ;
+                const [r, n] = t;
                 let a = JSON.stringify(r);
 
                 function i(t) {
@@ -28352,7 +28357,8 @@ c.jH)(t)}.\nUrl: ${A(t)}`);
                 return {
                     $: e,
                     add: function(n) {
-                        if (!(void 0 === t || e.length < t)) return (0, Kt.$2)(new kt("Not adding Promise because buffer limit was reached."));
+                        if (!(void 0 === t || e.length < t)) return (0,
+                            Kt.$2)(new kt("Not adding Promise because buffer limit was reached."));
                         const a = n(); - 1 === e.indexOf(a) && e.push(a);
                         a.then((() => r(a))).then(null, (() => r(a).then(null, (() => {}))));
                         return a
@@ -29154,8 +29160,7 @@ c.jH)(t)}.\nUrl: ${A(t)}`);
                         return this._transport.send(t).then(null, (t => {
                             ("undefined" == typeof __SENTRY_DEBUG__ || __SENTRY_DEBUG__) && E.kg.error("Error while sending event:", t)
                         }))
-                    }
-                    ("undefined" == typeof __SENTRY_DEBUG__ || __SENTRY_DEBUG__) && E.kg.error("Transport disabled")
+                    }("undefined" == typeof __SENTRY_DEBUG__ || __SENTRY_DEBUG__) && E.kg.error("Transport disabled")
                 }
                 _clearOutcomes() {
                     const t = this._outcomes;
@@ -29246,7 +29251,8 @@ c.jH)(t)}.\nUrl: ${A(t)}`);
                     const a = e;
                     if ("stack" in e) i = Ae(t, e);
                     else {
-                        const e = a.name || ((0, h.TX)(a) ? "DOMError" : "DOMException"),
+                        const e = a.name || ((0,
+                                h.TX)(a) ? "DOMError" : "DOMException"),
                             o = a.message ? `${e}: ${a.message}` : e;
                         i = he(t, o, r, n);
                         (0, c.Db)(i, o)
@@ -29319,7 +29325,8 @@ c.jH)(t)}.\nUrl: ${A(t)}`);
             }) {
                 const r = (0, o.zf)(t),
                     n = e ? "promise rejection" : "exception";
-                if ((0, h.VW)(t)) return `Event \`ErrorEvent\` captured as ${n} with message \`${t.message}\``;
+                if ((0,
+                        h.VW)(t)) return `Event \`ErrorEvent\` captured as ${n} with message \`${t.message}\``;
                 if ((0, h.cO)(t)) {
                     return `Event \`${function(t){try{const e=Object.getPrototypeOf(t);return e?e.constructor.name:void 0}catch(t){}}(t)}\` (type=${t.type}) captured as ${n}`
                 }
@@ -29487,7 +29494,8 @@ c.jH)(t)}.\nUrl: ${A(t)}`);
                                 startTimestamp: e,
                                 endTimestamp: r
                             };
-                        (0, T.Gd)().addBreadcrumb({
+                        (0,
+                            T.Gd)().addBreadcrumb({
                             category: "fetch",
                             data: n,
                             level: "error",
@@ -37060,7 +37068,7 @@ c.jH)(t)}.\nUrl: ${A(t)}`);
                     dsn: "https://fa97a90475514c03a42f80cd36d147c4@sentry.io/140984",
                     autoSessionTracking: !1,
                     environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                    release: "discord_web-1dbc00affa1b863cff1632e86dd4ac06c2ab34b3",
+                    release: "discord_web-acadbbf708b5dbc3cc7e08b2fdd3ae8005793776",
                     beforeSend: function(t) {
                         return function(t) {
                             return null != t.exception && null != t.exception.values && t.exception.values.every((function(t) {
@@ -37087,8 +37095,8 @@ c.jH)(t)}.\nUrl: ${A(t)}`);
                     denyUrls: [/recaptcha/, /mobilediscord\.com/, /betterdiscord:\/\//]
                 });
                 var t;
-                X.YA("buildNumber", null !== (t = "232643") ? t : "");
-                X.YA("builtAt", String("1695951447531"));
+                X.YA("buildNumber", null !== (t = "233208") ? t : "");
+                X.YA("builtAt", String("1696267406459"));
                 var e = window.GLOBAL_ENV.SENTRY_TAGS;
                 if (null != e && "object" == typeof e)
                     for (var r in e) X.YA(r, e[r]);
@@ -48468,4 +48476,4 @@ c.jH)(t)}.\nUrl: ${A(t)}`);
         e(128594), e(535666), e(784633), e(678991)
     }
 ]);
-//# sourceMappingURL=7393d52828f31b23cc3c.js.map
+//# sourceMappingURL=ab4b079da0ab731bd5e4.js.map
