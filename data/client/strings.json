@@ -15742,6 +15742,7 @@
   "SAFETY_POLICY_NOTICE_HEADER": "\"You broke Discord's community guidelines\"",
   "SAFETY_POLICY_NOTICE_BODY": "\"We've taken action that affects your account.\"",
   "SAFETY_POLICY_NOTICE_DAYS_AGO": "\"{daysAgo, plural, =0 {Today} =1 {Yesterday} other {# days ago}}\"",
+  "BLOCKED_BY_PROXY_NOTICE": "\"Please bear with us as we are encountering some network errors.\"",
   "DISCORD_NAME": "\"Discord\"",
   "DEFAULT_CONFIRMATION_MODAL_HEADER": "\"Are you sure?\"",
   "DISAPPROVAL": "\"ಠ_ಠ\"",
