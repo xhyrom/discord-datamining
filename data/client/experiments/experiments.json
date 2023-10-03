@@ -2290,7 +2290,8 @@
         "enabled",
         "hasTabUI",
         "hasTwoButtonEntryPoint",
-        "hasFreeBursts"
+        "hasFreeBursts",
+        "hasUnlimited"
       ]
     }
   },
