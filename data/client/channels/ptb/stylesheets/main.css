@@ -41698,6 +41698,18 @@ input[type=checked]:focus-visible+.label-3TDpbn {
     flex-direction: row
 }
 
+.giftMainAnimation-3mE9-P {
+    margin-bottom: 15px;
+    height: 215px
+}
+
+.spinner-2R6WcU {
+    -webkit-transform: scale(.75);
+    transform: scale(.75);
+    width: 100%;
+    height: 100%
+}
+
 .giftBoxHeaderText-2ndxNR {
     text-transform: uppercase;
     letter-spacing: .02em;
@@ -41997,11 +42009,6 @@ input[type=checked]:focus-visible+.label-3TDpbn {
 
 .root-2s1-ri.withHeader-1pNqnP>:first-child {
     background-color: transparent
-}
-
-.giftMainAnimation-n9Ztg4 {
-    margin-bottom: 15px;
-    height: 215px
 }
 
 .shaker-bevRrZ {
@@ -49167,6 +49174,10 @@ html .progress-2Otdc- {
     background-image: url(/assets/feaff2557c548146aad83669db695e0b.svg)
 }
 
+.theme-light .customGiftEmbedWrapper-2juaPF {
+    background: var(--primary-100)
+}
+
 .theme-dark .libraryLink-t3ekoU {
     color: hsl(var(--white-500-hsl)/.6)
 }
@@ -49178,6 +49189,10 @@ html .progress-2Otdc- {
 
 .theme-dark .metadata-3MqUp5 {
     color: var(--primary-400)
+}
+
+.theme-dark .customGiftEmbedWrapper-2juaPF {
+    background: var(--background-tertiary)
 }
 
 .seasonalGiftEmbedWrapper-3-ABcb {
@@ -49193,9 +49208,7 @@ html .progress-2Otdc- {
     height: 128px
 }
 
-.customGiftEmbedWrapper-2juaPF,
-.giftEmbedWrapperHorizontal-wq8NY7 {
-    background: var(--background-tertiary);
+.customGiftEmbedWrapper-2juaPF {
     background-position: 50% 50%
 }
 
@@ -49203,6 +49216,7 @@ html .progress-2Otdc- {
     margin: 0;
     overflow: hidden;
     position: relative;
+    background-position: 50% 50%;
     height: 100%;
     -webkit-box-flex: 1;
     -ms-flex: 1;
@@ -171446,4 +171460,4 @@ html .invoiceCancelRow-dVOR64 {
     margin-bottom: 8px
 }
 
-/*# sourceMappingURL=40532.4bc19393c5a046128c71.css.map*/
+/*# sourceMappingURL=40532.10cc4b255b0237ec5f0b.css.map*/
