@@ -26378,6 +26378,7 @@
                 inline: "inline-18PIBU",
                 hiddenAttachment: "hiddenAttachment-1ujFOi",
                 obscured: "obscured-20kiwN",
+                obscureVideo: "obscureVideo-9qK0C4",
                 attachmentContentItem: "attachmentContentItem-UKeiCx",
                 removeAttachmentButton: "removeAttachmentButton-1iO1qS",
                 spoilerRemoveAttachmentButton: "spoilerRemoveAttachmentButton-3aeXPK removeAttachmentButton-1iO1qS",
@@ -26981,4 +26982,4 @@
         }
     }
 ]);
-//# sourceMappingURL=3b5a60a5099a35d726bb.js.map
+//# sourceMappingURL=57b9a924b6bd68d69e79.js.map
