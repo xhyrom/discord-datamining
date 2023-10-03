@@ -3334,7 +3334,11 @@
   },
   "DROPS_PLATFORM_AVAILABILITY": {
     "url": "/drops/reward-code/availability",
-    "allowed_methods": null
+    "allowed_methods": [
+      "GET",
+      "HEAD",
+      "OPTIONS"
+    ]
   },
   "DROPS_HEARTBEAT": {
     "url": "/drops/quests/:param/heartbeat",
@@ -3426,7 +3430,10 @@
   },
   "GUILD_ROLE_SUBSCRIPTION_GROUP_LISTING_ARCHIVE": {
     "url": "/guilds/:param/role-subscriptions/group-listings/:param/subscription-listings/:param/archive",
-    "allowed_methods": null
+    "allowed_methods": [
+      "OPTIONS",
+      "POST"
+    ]
   },
   "GUILD_ROLE_SUBSCRIPTION_TRIALS": {
     "url": "/guilds/:param/role-subscriptions/trials",
@@ -3569,7 +3576,11 @@
   },
   "SUBSCRIPTION_PLAN_GUILD_ROLE_GROUP_LISTING": {
     "url": "/subscription-plans/:param/guild-role-subscription-group-listing",
-    "allowed_methods": null
+    "allowed_methods": [
+      "GET",
+      "HEAD",
+      "OPTIONS"
+    ]
   },
   "MEDIA_POST_RESHARE_GET_PREVIEW": {
     "url": "/channels/:param/media-post-preview",
@@ -3877,7 +3888,10 @@
   },
   "CUSTOM_CALL_SOUNDS": {
     "url": "/channels/:param/custom-call-sounds",
-    "allowed_methods": null
+    "allowed_methods": [
+      "OPTIONS",
+      "POST"
+    ]
   },
   "VOICE_CHANNEL_EFFECTS": {
     "url": "/channels/:param/voice-channel-effects",
@@ -3923,7 +3937,10 @@
   },
   "CONNECT_REQUEST": {
     "url": "/consoles/connect-request/:param",
-    "allowed_methods": null
+    "allowed_methods": [
+      "DELETE",
+      "OPTIONS"
+    ]
   },
   "CONSOLES_DEVICES": {
     "url": "/consoles/:param/devices",
