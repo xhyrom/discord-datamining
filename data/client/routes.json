@@ -1554,7 +1554,10 @@
   },
   "REMOTE_AUTH_LOGIN": {
     "url": "/users/@me/remote-auth/login",
-    "allowed_methods": null
+    "allowed_methods": [
+      "OPTIONS",
+      "POST"
+    ]
   },
   "REMOTE_AUTH_FINISH": {
     "url": "/users/@me/remote-auth/finish",
