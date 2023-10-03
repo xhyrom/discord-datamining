@@ -509,7 +509,11 @@
   },
   "GUILD_ANALYTICS_MEMBER_INSIGHTS": {
     "url": "/guilds/:param/analytics/member-insights",
-    "allowed_methods": null
+    "allowed_methods": [
+      "GET",
+      "HEAD",
+      "OPTIONS"
+    ]
   },
   "GUILD_ANALYTICS_GROWTH_ACTIVATION_OVERVIEW": {
     "url": "/guilds/:param/analytics/growth-activation/overview",
@@ -537,7 +541,11 @@
   },
   "EMOJI_SOURCE_DATA": {
     "url": "/emojis/:param/source",
-    "allowed_methods": null
+    "allowed_methods": [
+      "GET",
+      "HEAD",
+      "OPTIONS"
+    ]
   },
   "TOP_EMOJIS_FOR_GUILD": {
     "url": "/guilds/:param/top-emojis",
@@ -698,7 +706,11 @@
   },
   "PARTNER_REQUIREMENTS": {
     "url": "/partners/:param/requirements",
-    "allowed_methods": null
+    "allowed_methods": [
+      "GET",
+      "HEAD",
+      "OPTIONS"
+    ]
   },
   "AVATAR": {
     "url": "/users/:param/avatars/:param.:param",
@@ -771,7 +783,10 @@
   },
   "MESSAGE_DELETE_UPLOAD": {
     "url": "/attachments/:param",
-    "allowed_methods": null
+    "allowed_methods": [
+      "DELETE",
+      "OPTIONS"
+    ]
   },
   "MESSAGE_CROSSPOST": {
     "url": "/channels/:param/messages/:param/crosspost",
@@ -848,7 +863,10 @@
   },
   "TYPING": {
     "url": "/channels/:param/typing",
-    "allowed_methods": null
+    "allowed_methods": [
+      "OPTIONS",
+      "POST"
+    ]
   },
   "CHANNEL_PERMISSIONS_OVERWRITE": {
     "url": "/channels/:param/permissions/:param",
@@ -907,7 +925,11 @@
   },
   "CHANNEL_FOLLOWER_MESSAGE_STATS": {
     "url": "/channels/:param/follower-message-stats",
-    "allowed_methods": null
+    "allowed_methods": [
+      "GET",
+      "HEAD",
+      "OPTIONS"
+    ]
   },
   "CHANNEL_INTEGRATIONS": {
     "url": "/channels/:param/integrations",
@@ -991,7 +1013,10 @@
   },
   "POMELO_CREATE": {
     "url": "/users/@me/pomelo",
-    "allowed_methods": null
+    "allowed_methods": [
+      "OPTIONS",
+      "POST"
+    ]
   },
   "DELETE_ACCOUNT": {
     "url": "/users/@me/delete",
@@ -1027,7 +1052,11 @@
   },
   "PHONE": {
     "url": "/users/@me/phone",
-    "allowed_methods": null
+    "allowed_methods": [
+      "DELETE",
+      "OPTIONS",
+      "POST"
+    ]
   },
   "PHONE_VERIFY_NO_PASSWORD": {
     "url": "/users/@me/phone/verify",
@@ -1066,7 +1095,11 @@
   },
   "CONNECTIONS_AUTHORIZE": {
     "url": "/connections/:param/authorize",
-    "allowed_methods": null
+    "allowed_methods": [
+      "GET",
+      "HEAD",
+      "OPTIONS"
+    ]
   },
   "CONNECTIONS_AUTHORIZE_CONTINUATION": {
     "url": "/connections/:param/authorize?continuation=true",
@@ -1107,7 +1140,11 @@
   },
   "CONNECTION_ACCESS_TOKEN": {
     "url": "/users/@me/connections/:param/:param/access-token",
-    "allowed_methods": null
+    "allowed_methods": [
+      "GET",
+      "HEAD",
+      "OPTIONS"
+    ]
   },
   "CONNECTIONS_CALLBACK_CONTINUATION": {
     "url": "/connections/:param/callback-continuation/:param",
@@ -1155,7 +1192,11 @@
   },
   "EXPERIMENTS": {
     "url": "/experiments",
-    "allowed_methods": null
+    "allowed_methods": [
+      "GET",
+      "HEAD",
+      "OPTIONS"
+    ]
   },
   "LOGIN": {
     "url": "/auth/login",
@@ -1167,7 +1208,10 @@
   },
   "LOGIN_SMS": {
     "url": "/auth/mfa/sms",
-    "allowed_methods": null
+    "allowed_methods": [
+      "OPTIONS",
+      "POST"
+    ]
   },
   "LOGIN_WEBAUTHN": {
     "url": "/auth/mfa/webauthn",
@@ -1205,7 +1249,10 @@
   },
   "REGISTER": {
     "url": "/auth/register",
-    "allowed_methods": null
+    "allowed_methods": [
+      "OPTIONS",
+      "POST"
+    ]
   },
   "REGISTER_PHONE": {
     "url": "/auth/register/phone",
@@ -1247,7 +1294,10 @@
   },
   "TRACK": {
     "url": "/science",
-    "allowed_methods": null
+    "allowed_methods": [
+      "OPTIONS",
+      "POST"
+    ]
   },
   "METRICS": {
     "url": "/metrics",
@@ -1325,7 +1375,11 @@
   },
   "REPORT_OPTIONS": {
     "url": "/report/options",
-    "allowed_methods": null
+    "allowed_methods": [
+      "GET",
+      "HEAD",
+      "OPTIONS"
+    ]
   },
   "INTEGRATIONS": {
     "url": "/integrations",
@@ -1361,7 +1415,11 @@
   },
   "APPLICATION_RPC": {
     "url": "/oauth2/applications/:param/rpc",
-    "allowed_methods": null
+    "allowed_methods": [
+      "GET",
+      "HEAD",
+      "OPTIONS"
+    ]
   },
   "APPLICATION_ASSETS": {
     "url": "/oauth2/applications/:param/assets",
@@ -1429,7 +1487,10 @@
   },
   "OAUTH2_DEVICE_VERIFY": {
     "url": "/oauth2/device/verify",
-    "allowed_methods": null
+    "allowed_methods": [
+      "OPTIONS",
+      "POST"
+    ]
   },
   "OAUTH2_DEVICE_FINISH": {
     "url": "/oauth2/device/finish",
@@ -1467,7 +1528,10 @@
   },
   "MFA_CODES_VERIFICATION": {
     "url": "/users/@me/mfa/codes-verification",
-    "allowed_methods": null
+    "allowed_methods": [
+      "OPTIONS",
+      "POST"
+    ]
   },
   "MFA_SEND_VERIFICATION_KEY": {
     "url": "/auth/verify/view-backup-codes-challenge",
@@ -1595,7 +1659,10 @@
   },
   "SEARCH_TABS_DMS": {
     "url": "/users/@me/messages/search/tabs",
-    "allowed_methods": null
+    "allowed_methods": [
+      "OPTIONS",
+      "POST"
+    ]
   },
   "GUILD_APPLICATIONS": {
     "url": "/guilds/:param/applications",
@@ -1708,7 +1775,10 @@
   },
   "BILLING_PAYMENTS_REFUND": {
     "url": "/users/@me/billing/payments/:param/refund",
-    "allowed_methods": null
+    "allowed_methods": [
+      "OPTIONS",
+      "POST"
+    ]
   },
   "BILLING_INVOICE_PDF": {
     "url": "/users/@me/billing/invoice",
@@ -1779,7 +1849,10 @@
   },
   "BILLING_APPLY_APPLE_RECEIPT": {
     "url": "/billing/apple/apply-receipt",
-    "allowed_methods": null
+    "allowed_methods": [
+      "OPTIONS",
+      "POST"
+    ]
   },
   "BILLING_APPLE_SUBSCRIPTION": {
     "url": "/billing/apple/subscriptions/:param",
@@ -1804,7 +1877,12 @@
   },
   "BILLING_SUBSCRIPTION_PREVIEW": {
     "url": "/users/@me/billing/subscriptions/:param/preview",
-    "allowed_methods": null
+    "allowed_methods": [
+      "GET",
+      "HEAD",
+      "OPTIONS",
+      "PATCH"
+    ]
   },
   "BILLING_SUBSCRIPTION_INVOICE": {
     "url": "/users/@me/billing/subscriptions/:param/invoices",
@@ -1824,7 +1902,11 @@
   },
   "BILLING_LOCALIZED_PROMO": {
     "url": "/users/@me/billing/localized-pricing-promo",
-    "allowed_methods": null
+    "allowed_methods": [
+      "GET",
+      "HEAD",
+      "OPTIONS"
+    ]
   },
   "VERIFY_PURCHASE": {
     "url": "/google-play/verify-purchase-token",
@@ -1877,7 +1959,11 @@
   },
   "LIBRARY": {
     "url": "/users/@me/library",
-    "allowed_methods": null
+    "allowed_methods": [
+      "GET",
+      "HEAD",
+      "OPTIONS"
+    ]
   },
   "LIBRARY_APPLICATION_BRANCH": {
     "url": "/users/@me/library/:param/:param",
@@ -1913,7 +1999,10 @@
   },
   "APPLICATION_BUILD_SIZE": {
     "url": "/applications/:param/branches/:param/builds/:param/size",
-    "allowed_methods": null
+    "allowed_methods": [
+      "OPTIONS",
+      "POST"
+    ]
   },
   "APPLICATION_BRANCHES": {
     "url": "/branches",
@@ -1999,7 +2088,12 @@
   },
   "STORE_SKU": {
     "url": "/store/skus/:param",
-    "allowed_methods": null
+    "allowed_methods": [
+      "GET",
+      "HEAD",
+      "OPTIONS",
+      "PATCH"
+    ]
   },
   "STORE_SKU_PURCHASE": {
     "url": "/store/skus/:param/purchase",
@@ -2024,7 +2118,11 @@
   },
   "STORE_EULA": {
     "url": "/store/eulas/:param",
-    "allowed_methods": null
+    "allowed_methods": [
+      "GET",
+      "HEAD",
+      "OPTIONS"
+    ]
   },
   "ENTITLEMENTS_FOR_APPLICATION": {
     "url": "/users/@me/applications/:param/entitlements",
@@ -2058,7 +2156,11 @@
   },
   "ENTITLEMENTS_GIFTABLE": {
     "url": "/users/@me/entitlements/gifts",
-    "allowed_methods": null
+    "allowed_methods": [
+      "GET",
+      "HEAD",
+      "OPTIONS"
+    ]
   },
   "STORE_ASSET": {
     "url": "/store/applications/:param/assets/:param.:param",
@@ -2121,7 +2223,11 @@
   },
   "GIFT_CODE_RESOLVE": {
     "url": "/entitlements/gift-codes/:param",
-    "allowed_methods": null
+    "allowed_methods": [
+      "GET",
+      "HEAD",
+      "OPTIONS"
+    ]
   },
   "GIFT_CODE_REDEEM": {
     "url": "/entitlements/gift-codes/:param/redeem",
@@ -2158,7 +2264,11 @@
   },
   "USER_TRIAL_OFFER": {
     "url": "/users/@me/billing/user-trial-offer",
-    "allowed_methods": null
+    "allowed_methods": [
+      "GET",
+      "HEAD",
+      "OPTIONS"
+    ]
   },
   "USER_TRIAL_OFFER_ACKNOWLEDGED": {
     "url": "/users/@me/billing/user-trial-offer/:param/ack",
@@ -2221,7 +2331,10 @@
   },
   "STREAM": {
     "url": "/streams/:param/stream",
-    "allowed_methods": null
+    "allowed_methods": [
+      "OPTIONS",
+      "PATCH"
+    ]
   },
   "GUILD_PREVIEW": {
     "url": "/guilds/:param/preview",
@@ -2284,7 +2397,11 @@
   },
   "STICKER_ASSET": {
     "url": "/stickers/:param.:param",
-    "allowed_methods": null
+    "allowed_methods": [
+      "GET",
+      "HEAD",
+      "OPTIONS"
+    ]
   },
   "STICKER": {
     "url": "/stickers/:param",
@@ -2359,7 +2476,10 @@
   },
   "ACTIVITY_UPLOAD_ATTACHMENT": {
     "url": "/activities/:param/attachment",
-    "allowed_methods": null
+    "allowed_methods": [
+      "OPTIONS",
+      "POST"
+    ]
   },
   "CHANNEL_THREADS": {
     "url": "/channels/:param/threads",
@@ -2437,7 +2557,13 @@
   },
   "GUILD_EVENT": {
     "url": "/guilds/:param/scheduled-events/:param",
-    "allowed_methods": null
+    "allowed_methods": [
+      "DELETE",
+      "GET",
+      "HEAD",
+      "OPTIONS",
+      "PATCH"
+    ]
   },
   "GUILD_EVENT_IMAGE": {
     "url": "/guild-events/:param/images/:param.:param",
@@ -2516,7 +2642,10 @@
   },
   "GUILD_INCIDENT_ACTIONS": {
     "url": "/guilds/:param/incident-actions",
-    "allowed_methods": null
+    "allowed_methods": [
+      "OPTIONS",
+      "PUT"
+    ]
   },
   "GUILD_INCIDENT_REPORT_FALSE_ALARM": {
     "url": "/guilds/:param/auto-moderation/false-alarm",
@@ -2553,7 +2682,11 @@
   },
   "DIRECTORY_CHANNEL_CATEGORY_COUNTS": {
     "url": "/channels/:param/directory-entries/counts",
-    "allowed_methods": null
+    "allowed_methods": [
+      "GET",
+      "HEAD",
+      "OPTIONS"
+    ]
   },
   "DIRECTORY_CHANNEL_LIST_BY_ID": {
     "url": "/channels/:param/directory-entries/list",
@@ -2622,7 +2755,10 @@
   },
   "DROPS_CLAIM_REWARD_CODE": {
     "url": "/drops/reward-code/claim",
-    "allowed_methods": null
+    "allowed_methods": [
+      "OPTIONS",
+      "POST"
+    ]
   },
   "DROPS_USER_STATUS": {
     "url": "/drops/@me",
@@ -2709,7 +2845,11 @@
   },
   "GUILD_ROLE_SUBSCRIPTION_LISTINGS": {
     "url": "/guilds/:param/role-subscriptions/group-listings/:param/subscription-listings/:param",
-    "allowed_methods": null
+    "allowed_methods": [
+      "DELETE",
+      "OPTIONS",
+      "PATCH"
+    ]
   },
   "GUILD_ROLE_SUBSCRIPTION_GROUP_LISTING_ARCHIVE": {
     "url": "/guilds/:param/role-subscriptions/group-listings/:param/subscription-listings/:param/archive",
@@ -2850,7 +2990,12 @@
   },
   "BUG_REPORTS": {
     "url": "/private/bug-reports",
-    "allowed_methods": null
+    "allowed_methods": [
+      "GET",
+      "HEAD",
+      "OPTIONS",
+      "POST"
+    ]
   },
   "PAYMENT_PAYOUT_GROUPS": {
     "url": "/applications/:param/payment-payout-groups",
@@ -2906,7 +3051,10 @@
   },
   "VIDEO_FILTER_ASSET_LAST_USED": {
     "url": "/users/@me/video-filters/assets/:param/last-used",
-    "allowed_methods": null
+    "allowed_methods": [
+      "OPTIONS",
+      "POST"
+    ]
   },
   "VIDEO_FILTER_ASSET_STORAGE": {
     "url": "/users/:param/video-filter-assets/:param/:param.:param",
@@ -2986,7 +3134,11 @@
   },
   "APPLICATION_DIRECTORY_SIMILAR": {
     "url": "/application-directory-static/applications/:param/similar",
-    "allowed_methods": null
+    "allowed_methods": [
+      "GET",
+      "HEAD",
+      "OPTIONS"
+    ]
   },
   "APPLICATION_DIRECTORY_SEARCH": {
     "url": "/application-directory-static/search",
@@ -3002,7 +3154,11 @@
   },
   "GUILD_FEED": {
     "url": "/guilds/:param/guild-feed",
-    "allowed_methods": null
+    "allowed_methods": [
+      "GET",
+      "HEAD",
+      "OPTIONS"
+    ]
   },
   "CHANNEL_HIGHLIGHTS": {
     "url": "/guilds/:param/channel-highlights",
@@ -3038,7 +3194,10 @@
   },
   "NOTIF_CENTER_ITEMS": {
     "url": "/users/@me/notification-center/items/:param",
-    "allowed_methods": null
+    "allowed_methods": [
+      "DELETE",
+      "OPTIONS"
+    ]
   },
   "NOTIF_CENTER_ITEMS_ACK": {
     "url": "/users/@me/notification-center/items/:param/ack",
@@ -3128,7 +3287,11 @@
   },
   "CONSOLES_DEVICES": {
     "url": "/consoles/:param/devices",
-    "allowed_methods": null
+    "allowed_methods": [
+      "GET",
+      "HEAD",
+      "OPTIONS"
+    ]
   },
   "CONSOLES_DEVICES_COMMANDS": {
     "url": "/consoles/:param/devices/:param/commands",
@@ -3151,7 +3314,11 @@
   },
   "APPLICATION_USER_ROLE_CONNECTIONS": {
     "url": "/users/@me/applications/role-connections",
-    "allowed_methods": null
+    "allowed_methods": [
+      "GET",
+      "HEAD",
+      "OPTIONS"
+    ]
   },
   "SHARED_CANVAS_LINES": {
     "url": "/channels/:param/:param/shared-canvas/lines",
@@ -3185,7 +3352,12 @@
   },
   "SAVED_MESSAGES": {
     "url": "/saved-messages",
-    "allowed_methods": null
+    "allowed_methods": [
+      "GET",
+      "HEAD",
+      "OPTIONS",
+      "POST"
+    ]
   },
   "GET_REFERRALS_REMAINING": {
     "url": "/users/@me/referrals/eligibility",
@@ -3216,15 +3388,30 @@
   },
   "FAMILY_CENTER_TEEN_ACTIVITY_ME": {
     "url": "/family-center/@me",
-    "allowed_methods": null
+    "allowed_methods": [
+      "GET",
+      "HEAD",
+      "OPTIONS"
+    ]
   },
   "FAMILY_CENTER_TEEN_ACTIVITY_MORE": {
     "url": "/family-center/more-activity/:param/:param/:param/:param",
-    "allowed_methods": null
+    "allowed_methods": [
+      "GET",
+      "HEAD",
+      "OPTIONS"
+    ]
   },
   "FAMILY_CENTER_LINKED_USERS": {
     "url": "/users/@me/linked-users",
-    "allowed_methods": null
+    "allowed_methods": [
+      "DELETE",
+      "GET",
+      "HEAD",
+      "OPTIONS",
+      "PATCH",
+      "POST"
+    ]
   },
   "FAMILY_CENTER_LINK_CODE": {
     "url": "/family-center/@me/link-code",
@@ -3248,11 +3435,20 @@
   },
   "APPLICATIONS_SHELF": {
     "url": "/applications/shelf",
-    "allowed_methods": null
+    "allowed_methods": [
+      "GET",
+      "HEAD",
+      "OPTIONS",
+      "PATCH",
+      "PUT"
+    ]
   },
   "DISCORDIFY_ME": {
     "url": "/users/@me/avatars/discordify",
-    "allowed_methods": null
+    "allowed_methods": [
+      "OPTIONS",
+      "POST"
+    ]
   },
   "BADGE_ICON": {
     "url": "/badge-icons/:param.png",
@@ -3260,7 +3456,10 @@
   },
   "PRIVATE_CHANNEL_INTEGRATION_CONSENT": {
     "url": "/channels/:param/integrations/consent",
-    "allowed_methods": null
+    "allowed_methods": [
+      "DELETE",
+      "OPTIONS"
+    ]
   },
   "FINISH_MFA_CHECK": {
     "url": "/mfa/finish",
@@ -3313,7 +3512,14 @@
   },
   "GUILD_MEMBERS_UNUSUAL_DM_ACTIVITY": {
     "url": "/guilds/:param/members/unusual-dm-activity",
-    "allowed_methods": null
+    "allowed_methods": [
+      "DELETE",
+      "GET",
+      "HEAD",
+      "OPTIONS",
+      "PATCH",
+      "PUT"
+    ]
   },
   "INVENTORY_GET": {
     "url": "/users/@me/inventory",
@@ -3340,7 +3546,10 @@
   },
   "FORCE_SEND_PROMPT": {
     "url": "/:param/force-send-prompt",
-    "allowed_methods": null
+    "allowed_methods": [
+      "OPTIONS",
+      "POST"
+    ]
   },
   "EXPLICIT_MEDIA_REPORT_FALSE_POSITIVE": {
     "url": "/attachments/report-false-positive",
