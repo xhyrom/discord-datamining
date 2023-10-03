@@ -11230,8 +11230,8 @@ html.decorate-links .lowSaturationUnderline-Z6CW6z {
 
 .editorAnimate-2BAiXS {
     margin-right: calc(var(--custom-client-themes-editor-content-width)*-1 + var(--custom-client-themes-editor-editor-padding)*2*-1);
-    -webkit-animation: slidein-zGJHpq .1s ease-in 1s forwards;
-    animation: slidein-zGJHpq .1s ease-in 1s forwards
+    -webkit-animation: slidein-zGJHpq .25s ease-in 1s forwards;
+    animation: slidein-zGJHpq .25s ease-in 1s forwards
 }
 
 @-webkit-keyframes slidein-zGJHpq {
@@ -171381,4 +171381,4 @@ html .invoiceCancelRow-dVOR64 {
     margin-bottom: 8px
 }
 
-/*# sourceMappingURL=40532.a22ca8bea25095545d44.css.map*/
+/*# sourceMappingURL=40532.19b19b425f74670c85b6.css.map*/
