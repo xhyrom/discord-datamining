@@ -386,8 +386,139 @@
       "PATCH"
     ]
   },
+  "GUILD_ROLE_MEMBERS": {
+    "url": "/guilds/:param/roles/:param/members",
+    "allowed_methods": [
+      "OPTIONS",
+      "PATCH"
+    ]
+  },
+  "GUILD_ROLE_CONNECTIONS_ELIGIBILITY": {
+    "url": "/guilds/:param/roles/:param/connections/eligibility",
+    "allowed_methods": [
+      "GET",
+      "HEAD",
+      "OPTIONS"
+    ]
+  },
+  "GUILD_ROLE_CONNECTIONS_ASSIGN": {
+    "url": "/guilds/:param/roles/:param/connections/assign",
+    "allowed_methods": [
+      "OPTIONS",
+      "POST"
+    ]
+  },
+  "GUILD_ROLE_CONNECTIONS_UNASSIGN": {
+    "url": "/guilds/:param/roles/:param/connections/unassign",
+    "allowed_methods": [
+      "OPTIONS",
+      "POST"
+    ]
+  },
+  "GUILD_ONBOARDING": {
+    "url": "/guilds/:param/onboarding",
+    "allowed_methods": [
+      "GET",
+      "HEAD",
+      "OPTIONS",
+      "PUT"
+    ]
+  },
+  "GUILD_ONBOARDING_PROMPT": {
+    "url": "/guilds/:param/onboarding-prompts/:param",
+    "allowed_methods": [
+      "DELETE",
+      "OPTIONS"
+    ]
+  },
+  "GUILD_PRUNE": {
+    "url": "/guilds/:param/prune",
+    "allowed_methods": [
+      "GET",
+      "HEAD",
+      "OPTIONS",
+      "POST"
+    ]
+  },
+  "GUILD_DISCOVERY_SPLASH": {
+    "url": "/guilds/:param/discovery-splashes/:param.jpg",
+    "allowed_methods": null
+  },
+  "GUILDS": {
+    "url": "/guilds",
+    "allowed_methods": [
+      "OPTIONS",
+      "POST"
+    ]
+  },
+  "CLYDE_PROFILES_BANNER": {
+    "url": "/clyde-profiles/:param/banners/:param.:param",
+    "allowed_methods": null
+  },
+  "CHANNEL_PERMISSIONS_OVERWRITE": {
+    "url": "/channels/:param/permissions/:param",
+    "allowed_methods": [
+      "DELETE",
+      "OPTIONS",
+      "PUT"
+    ]
+  },
+  "FRIEND_SUGGESTIONS": {
+    "url": "/friend-suggestions",
+    "allowed_methods": [
+      "GET",
+      "HEAD",
+      "OPTIONS"
+    ]
+  },
+  "VERIFY_PHONE": {
+    "url": "/phone-verifications/verify",
+    "allowed_methods": [
+      "OPTIONS",
+      "POST"
+    ]
+  },
+  "LOGIN_MFA": {
+    "url": "/auth/mfa/totp",
+    "allowed_methods": [
+      "OPTIONS",
+      "POST"
+    ]
+  },
+  "SSO_TOKEN": {
+    "url": "/sso-token",
+    "allowed_methods": [
+      "GET",
+      "HEAD",
+      "OPTIONS"
+    ]
+  },
+  "APPLICATION_RPC": {
+    "url": "/oauth2/applications/:param/rpc",
+    "allowed_methods": [
+      "GET",
+      "HEAD",
+      "OPTIONS"
+    ]
+  },
+  "OAUTH2_AUTHORIZE_SAMSUNG_CALLBACK": {
+    "url": "/oauth2/samsung/authorize/callback",
+    "allowed_methods": [
+      "GET",
+      "HEAD",
+      "OPTIONS"
+    ]
+  },
   "OAUTH2_AUTHORIZE_WEBHOOK_CHANNELS": {
     "url": "/oauth2/authorize/webhook-channels",
+    "allowed_methods": [
+      "GET",
+      "HEAD",
+      "OPTIONS"
+    ]
+  },
+  "OAUTH2_CURRENT_AUTH": {
+    "url": "/oauth2/@me",
     "allowed_methods": [
       "GET",
       "HEAD",
@@ -411,8 +542,29 @@
       "OPTIONS"
     ]
   },
-  "CALL_RING": {
-    "url": "/channels/:param/call/ring",
+  "OAUTH2_WHITELIST_ACCEPT": {
+    "url": "/oauth2/allowlist/accept",
+    "allowed_methods": [
+      "OPTIONS",
+      "POST"
+    ]
+  },
+  "MFA_TOTP_ENABLE": {
+    "url": "/users/@me/mfa/totp/enable",
+    "allowed_methods": [
+      "OPTIONS",
+      "POST"
+    ]
+  },
+  "MFA_SMS_DISABLE": {
+    "url": "/users/@me/mfa/sms/disable",
+    "allowed_methods": [
+      "OPTIONS",
+      "POST"
+    ]
+  },
+  "CALL_STOP_RINGING": {
+    "url": "/channels/:param/call/stop-ringing",
     "allowed_methods": [
       "OPTIONS",
       "POST"
@@ -472,29 +624,84 @@
       "OPTIONS"
     ]
   },
-  "REACTION": {
-    "url": "/channels/:param/messages/:param/reactions/:param/:param",
+  "REMOVE_EMOJI_REACTIONS": {
+    "url": "/channels/:param/messages/:param/reactions/:param",
     "allowed_methods": [
       "DELETE",
+      "GET",
+      "HEAD",
       "OPTIONS"
     ]
   },
-  "USER_GUILD_BOOST_SLOT_CANCEL": {
-    "url": "/users/@me/guilds/premium/subscription-slots/:param/cancel",
+  "SEARCH_DMS": {
+    "url": "/users/@me/messages/search",
+    "allowed_methods": [
+      "GET",
+      "HEAD",
+      "OPTIONS"
+    ]
+  },
+  "USER_APPLIED_GUILD_BOOSTS": {
+    "url": "/users/@me/guilds/premium/subscriptions",
+    "allowed_methods": [
+      "GET",
+      "HEAD",
+      "OPTIONS"
+    ]
+  },
+  "SEARCH_TABS_CHANNEL": {
+    "url": "/channels/:param/messages/search/tabs",
     "allowed_methods": [
       "OPTIONS",
       "POST"
     ]
   },
-  "BILLING_STRIPE_PAYMENT_INTENTS_VIA_ID": {
-    "url": "/users/@me/billing/stripe/payment-intents/:param",
-    "allowed_methods": null
+  "BILLING_PAYMENTS": {
+    "url": "/users/@me/billing/payments",
+    "allowed_methods": [
+      "GET",
+      "HEAD",
+      "OPTIONS"
+    ]
   },
-  "BILLING_GENERATE_APPLE_TRIAL_OFFER_SIGNATURE": {
-    "url": "/users/@me/billing/apple/trial-offer-signature",
+  "BILLING_STRIPE_PAYMENT_INTENTS": {
+    "url": "/users/@me/billing/stripe/payment-intents/payments/:param",
+    "allowed_methods": [
+      "GET",
+      "HEAD",
+      "OPTIONS"
+    ]
+  },
+  "BILLING_POPUP_BRIDGE": {
+    "url": "/billing/popup-bridge/:param",
     "allowed_methods": [
       "OPTIONS",
       "POST"
+    ]
+  },
+  "BILLING_PERKS_RELEVANCE": {
+    "url": "/users/@me/billing/perks-relevance",
+    "allowed_methods": [
+      "GET",
+      "HEAD",
+      "OPTIONS"
+    ]
+  },
+  "BILLING_SUBSCRIPTION": {
+    "url": "/users/@me/billing/subscriptions/:param",
+    "allowed_methods": [
+      "DELETE",
+      "GET",
+      "HEAD",
+      "OPTIONS"
+    ]
+  },
+  "BILLING_LOCALIZED_PROMO": {
+    "url": "/users/@me/billing/localized-pricing-promo",
+    "allowed_methods": [
+      "GET",
+      "HEAD",
+      "OPTIONS"
     ]
   },
   "USER_ACHIEVEMENTS": {
@@ -505,21 +712,39 @@
       "OPTIONS"
     ]
   },
-  "APPLICATION_PUBLIC": {
-    "url": "/applications/:param/public",
+  "LIBRARY_APPLICATION_DELETE": {
+    "url": "/users/@me/library/:param",
+    "allowed_methods": null
+  },
+  "APPLICATION_BRANCHES": {
+    "url": "/branches",
+    "allowed_methods": [
+      "OPTIONS",
+      "POST"
+    ]
+  },
+  "STORE_DIRECTORY": {
+    "url": "/store/directory/:param",
     "allowed_methods": [
       "GET",
       "HEAD",
       "OPTIONS"
     ]
   },
-  "STORE_SKU": {
-    "url": "/store/skus/:param",
+  "STORE_PUBLISHED_LISTINGS_SKU": {
+    "url": "/store/published-listings/skus/:param",
     "allowed_methods": [
       "GET",
       "HEAD",
-      "OPTIONS",
-      "PATCH"
+      "OPTIONS"
+    ]
+  },
+  "STORE_LISTINGS_SKU": {
+    "url": "/store/skus/:param/listings",
+    "allowed_methods": [
+      "GET",
+      "HEAD",
+      "OPTIONS"
     ]
   },
   "APPLICATION_TICKET": {
@@ -529,19 +754,63 @@
       "POST"
     ]
   },
-  "PARTNER_PROMOTIONS": {
-    "url": "/entitlements/partner-promotions/:param",
+  "APPLICATION_STORAGE": {
+    "url": "/applications/:param/branches/:param/storage",
+    "allowed_methods": null
+  },
+  "GIFS_TRENDING_SEARCH": {
+    "url": "/gifs/trending-search",
     "allowed_methods": [
-      "OPTIONS",
-      "POST"
+      "GET",
+      "HEAD",
+      "OPTIONS"
+    ]
+  },
+  "USER_GIFT_CODE_REVOKE": {
+    "url": "/users/@me/entitlements/gift-codes/:param",
+    "allowed_methods": [
+      "DELETE",
+      "OPTIONS"
+    ]
+  },
+  "GUILD_DISCOVERY": {
+    "url": "/discoverable-guilds",
+    "allowed_methods": [
+      "GET",
+      "HEAD",
+      "OPTIONS"
     ]
   },
   "GUILD_DISCOVERY_UPDATE_CATEGORY": {
     "url": "/guilds/:param/discovery-categories/:param",
     "allowed_methods": null
   },
-  "STORE_DIRECTORY_LAYOUT_STICKER_PACKS": {
-    "url": "/sticker-packs/directory-v2/:param",
+  "GUILD_AFFINITIES": {
+    "url": "/users/@me/affinities/guilds",
+    "allowed_methods": [
+      "GET",
+      "HEAD",
+      "OPTIONS"
+    ]
+  },
+  "PARTNERS_CONNECTIONS": {
+    "url": "/partners/connections",
+    "allowed_methods": [
+      "GET",
+      "HEAD",
+      "OPTIONS"
+    ]
+  },
+  "STICKER_PACKS": {
+    "url": "/sticker-packs",
+    "allowed_methods": [
+      "GET",
+      "HEAD",
+      "OPTIONS"
+    ]
+  },
+  "MESSAGE_INTERACTION_DATA": {
+    "url": "/channels/:param/messages/:param/interaction-data",
     "allowed_methods": [
       "GET",
       "HEAD",
@@ -555,31 +824,86 @@
       "POST"
     ]
   },
-  "USER_GUILD_EVENT": {
-    "url": "/guilds/:param/scheduled-events/:param/users/@me",
+  "SUBMIT_REPORT_MENU": {
+    "url": "/reporting/:param",
+    "allowed_methods": [
+      "OPTIONS",
+      "POST"
+    ]
+  },
+  "GUILD_EVENT": {
+    "url": "/guilds/:param/scheduled-events/:param",
     "allowed_methods": [
       "DELETE",
+      "GET",
+      "HEAD",
       "OPTIONS",
+      "PATCH"
+    ]
+  },
+  "MEMBER_SAFETY_SUPPLEMENTAL": {
+    "url": "/guilds/:param/members/supplemental",
+    "allowed_methods": [
+      "DELETE",
+      "GET",
+      "HEAD",
+      "OPTIONS",
+      "PATCH",
+      "POST",
       "PUT"
     ]
   },
-  "DIRECTORY_CHANNEL_CATEGORY_COUNTS": {
-    "url": "/channels/:param/directory-entries/counts",
+  "GUILD_AUTOMOD_CLEAR_MENTION_RAID": {
+    "url": "/guilds/:param/auto-moderation/clear-mention-raid",
+    "allowed_methods": [
+      "OPTIONS",
+      "POST"
+    ]
+  },
+  "DIRECTORY_CHANNEL_ENTRY": {
+    "url": "/channels/:param/directory-entry/:param",
+    "allowed_methods": [
+      "DELETE",
+      "GET",
+      "HEAD",
+      "OPTIONS",
+      "PATCH",
+      "POST"
+    ]
+  },
+  "PRICE_TIERS": {
+    "url": "/store/price-tiers",
     "allowed_methods": [
       "GET",
       "HEAD",
       "OPTIONS"
     ]
   },
-  "DROPS_HEARTBEAT": {
-    "url": "/drops/quests/:param/heartbeat",
+  "HUB_EMAIL_VERIFY_CODE": {
+    "url": "/guilds/automations/email-domain-lookup/verify-code",
     "allowed_methods": [
       "OPTIONS",
       "POST"
     ]
   },
-  "GUILD_CLYDE_SETTINGS": {
-    "url": "/guilds/:param/clyde-settings",
+  "DROPS_USER_STATUS": {
+    "url": "/drops/@me",
+    "allowed_methods": [
+      "GET",
+      "HEAD",
+      "OPTIONS"
+    ]
+  },
+  "OUTBOUND_PROMOTIONS_PREVIEW": {
+    "url": "/outbound-promotions/preview",
+    "allowed_methods": [
+      "GET",
+      "HEAD",
+      "OPTIONS"
+    ]
+  },
+  "GUILD_ROLE_SUBSCRIPTIONS_SETTINGS": {
+    "url": "/guilds/:param/role-subscriptions/settings",
     "allowed_methods": [
       "GET",
       "HEAD",
@@ -587,54 +911,166 @@
       "PATCH"
     ]
   },
-  "SUBSCRIPTION_PLAN_GROUP_LISTING": {
-    "url": "/subscription-plans/:param/subscription-group-listing",
+  "GUILD_ROLE_SUBSCRIPTION_LISTING_TEMPLATES": {
+    "url": "/guilds/:param/role-subscriptions/templates",
     "allowed_methods": [
       "GET",
       "HEAD",
       "OPTIONS"
     ]
   },
-  "VIDEO_FILTER_ASSET": {
-    "url": "/users/@me/video-filters/assets/:param",
-    "allowed_methods": [
-      "DELETE",
-      "OPTIONS"
-    ]
-  },
-  "APPLICATION_DIRECTORY_APPLICATION": {
-    "url": "/application-directory-static/applications/:param",
+  "CREATOR_MONETIZATION_ELIGIBILITY": {
+    "url": "/guilds/:param/creator-monetization/requirements",
     "allowed_methods": [
       "GET",
       "HEAD",
       "OPTIONS"
     ]
   },
-  "NOTIF_CENTER_ITEMS_ACK": {
-    "url": "/users/@me/notification-center/items/:param/ack",
+  "CREATOR_MONETIZATION_ACCEPT_TERMS_V2": {
+    "url": "/guilds/:param/creator-monetization/accept-terms",
     "allowed_methods": [
       "OPTIONS",
       "POST"
     ]
   },
-  "CONNECT_REQUEST": {
-    "url": "/consoles/connect-request/:param",
+  "GUILD_ROLE_SUBSCRIPTION_TRIAL_ELIGIBILITY": {
+    "url": "/guilds/:param/role-subscriptions/subscription-listings/:param/trial/:param/eligibility",
+    "allowed_methods": [
+      "GET",
+      "HEAD",
+      "OPTIONS"
+    ]
+  },
+  "GUILD_PRODUCTS": {
+    "url": "/guilds/:param/products",
+    "allowed_methods": [
+      "OPTIONS",
+      "POST"
+    ]
+  },
+  "EMAIL_SETTINGS": {
+    "url": "/users/@me/email-settings",
+    "allowed_methods": [
+      "GET",
+      "HEAD",
+      "OPTIONS",
+      "PATCH"
+    ]
+  },
+  "VIDEO_FILTER_ASSET_STORAGE": {
+    "url": "/users/:param/video-filter-assets/:param/:param.:param",
+    "allowed_methods": null
+  },
+  "APPLICATION_COMMAND_INDEX_CHANNEL": {
+    "url": "/channels/:param/application-command-index",
+    "allowed_methods": [
+      "GET",
+      "HEAD",
+      "OPTIONS"
+    ]
+  },
+  "APPLICATION_DIRECTORY_EMBED_APPLICATION": {
+    "url": "/application-directory/applications/:param/embed",
+    "allowed_methods": [
+      "GET",
+      "HEAD",
+      "OPTIONS"
+    ]
+  },
+  "APPLICATION_DIRECTORY_SEARCH": {
+    "url": "/application-directory-static/search",
+    "allowed_methods": [
+      "GET",
+      "HEAD",
+      "OPTIONS"
+    ]
+  },
+  "CHANNEL_HIGHLIGHTS": {
+    "url": "/guilds/:param/channel-highlights",
+    "allowed_methods": [
+      "GET",
+      "HEAD",
+      "OPTIONS"
+    ]
+  },
+  "ACTIVE_CHANNELS": {
+    "url": "/guilds/:param/active-channels",
+    "allowed_methods": [
+      "GET",
+      "HEAD",
+      "OPTIONS"
+    ]
+  },
+  "JOIN_ADMIN_SERVER": {
+    "url": "/guilds/:param/join-admin-server",
+    "allowed_methods": [
+      "OPTIONS",
+      "POST"
+    ]
+  },
+  "VOICE_CHANNEL_EFFECTS": {
+    "url": "/channels/:param/voice-channel-effects",
+    "allowed_methods": [
+      "OPTIONS",
+      "POST"
+    ]
+  },
+  "CONNECT_REQUEST_CREATE": {
+    "url": "/consoles/connect-request",
+    "allowed_methods": [
+      "OPTIONS",
+      "POST"
+    ]
+  },
+  "ELIGIBLE_APPLICATION_SUBSCRIPTION_GUILDS": {
+    "url": "/users/@me/billing/eligible-application-subscription-guilds",
+    "allowed_methods": [
+      "GET",
+      "HEAD",
+      "OPTIONS"
+    ]
+  },
+  "USER_PREMIUM_LIKELIHOOD": {
+    "url": "/users/@me/billing/premium-likelihood",
+    "allowed_methods": [
+      "GET",
+      "HEAD",
+      "OPTIONS"
+    ]
+  },
+  "CREATE_REFERRAL_PREVIEW": {
+    "url": "/users/@me/referrals/:param/preview",
+    "allowed_methods": [
+      "OPTIONS",
+      "POST"
+    ]
+  },
+  "FAMILY_CENTER_TEEN_ACTIVITY_MORE": {
+    "url": "/family-center/more-activity/:param/:param/:param/:param",
+    "allowed_methods": [
+      "GET",
+      "HEAD",
+      "OPTIONS"
+    ]
+  },
+  "REFERRAL_OFFER_ID_RESOLVE": {
+    "url": "/referrals/:param",
+    "allowed_methods": [
+      "GET",
+      "HEAD",
+      "OPTIONS"
+    ]
+  },
+  "PRIVATE_CHANNEL_INTEGRATION_CONSENT": {
+    "url": "/channels/:param/integrations/consent",
     "allowed_methods": [
       "DELETE",
       "OPTIONS"
     ]
   },
-  "GET_REFERRALS_REMAINING": {
-    "url": "/users/@me/referrals/eligibility",
-    "allowed_methods": [
-      "GET",
-      "HEAD",
-      "OPTIONS",
-      "POST"
-    ]
-  },
-  "BADGE_ICON": {
-    "url": "/badge-icons/:param.png",
+  "USER_TRIAL_OFFERS": {
+    "url": "/user-trial-offers",
     "allowed_methods": null
   },
   "GUILD_MEMBERS_UNUSUAL_DM_ACTIVITY": {
@@ -646,6 +1082,13 @@
       "OPTIONS",
       "PATCH",
       "PUT"
+    ]
+  },
+  "SEND_GAMING_STATS": {
+    "url": "/:param/gaming-stats",
+    "allowed_methods": [
+      "OPTIONS",
+      "POST"
     ]
   },
   "POLL_ANSWERS": {
