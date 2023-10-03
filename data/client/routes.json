@@ -1082,7 +1082,11 @@
   },
   "CHANNEL_FOLLOWER_STATS": {
     "url": "/channels/:param/follower-stats",
-    "allowed_methods": null
+    "allowed_methods": [
+      "GET",
+      "HEAD",
+      "OPTIONS"
+    ]
   },
   "CHANNEL_FOLLOWER_MESSAGE_STATS": {
     "url": "/channels/:param/follower-message-stats",
@@ -1987,7 +1991,11 @@
   },
   "SEARCH_GUILD": {
     "url": "/guilds/:param/messages/search",
-    "allowed_methods": null
+    "allowed_methods": [
+      "GET",
+      "HEAD",
+      "OPTIONS"
+    ]
   },
   "SEARCH_TABS_GUILD": {
     "url": "/guilds/:param/messages/search/tabs",
@@ -2730,7 +2738,10 @@
   },
   "USER_TRIAL_OFFER_ACKNOWLEDGED": {
     "url": "/users/@me/billing/user-trial-offer/:param/ack",
-    "allowed_methods": null
+    "allowed_methods": [
+      "OPTIONS",
+      "POST"
+    ]
   },
   "USER_OFFER": {
     "url": "/users/@me/billing/user-offer",
@@ -2840,7 +2851,11 @@
   },
   "CHANNEL_AFFINITIES": {
     "url": "/users/@me/affinities/channels",
-    "allowed_methods": null
+    "allowed_methods": [
+      "GET",
+      "HEAD",
+      "OPTIONS"
+    ]
   },
   "USER_BROADCASTS": {
     "url": "/users/broadcasts/bucket",
@@ -3445,7 +3460,10 @@
   },
   "GUILD_ROLE_SUBSCRIPTION_LISTING_TRIAL": {
     "url": "/guilds/:param/role-subscriptions/subscription-listings/:param/trial",
-    "allowed_methods": null
+    "allowed_methods": [
+      "OPTIONS",
+      "PATCH"
+    ]
   },
   "GUILD_ROLE_SUBSCRIPTION_LISTING_TEMPLATES": {
     "url": "/guilds/:param/role-subscriptions/templates",
