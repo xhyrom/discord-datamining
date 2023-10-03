@@ -47,15 +47,16 @@ export class Routes implements Module {
   async run() {
     console.log("Scraping routes");
 
-    const routes = await this.routes();
+    const oldRoutes = JSON.parse(
+      (await readFile(join(this.baseDir, "routes.json"))) ?? "{}"
+    );
+
+    const routes = await this.routes(oldRoutes);
     if (!routes) {
       console.log("Potentional outage, failed to fetch routes");
       return;
     }
 
-    const oldRoutes = JSON.parse(
-      (await readFile(join(this.baseDir, "routes.json"))) ?? "{}"
-    );
 
     await writeFile(
       join(this.baseDir, "routes.json"),
@@ -96,7 +97,7 @@ export class Routes implements Module {
     );
   }
 
-  private async routes(): Promise<Record<string, Route> | null> {
+  private async routes(oldRoutes: Record<string, Route>): Promise<Record<string, Route> | null> {
     const routes = await fetch("https://api.distools.xhyrom.dev/v2/routes");
     if (!routes.ok) {
       return null;
@@ -114,6 +115,15 @@ export class Routes implements Module {
         result[name] = {
           url,
           allowed_methods: null,
+        };
+
+        i++;
+        continue;
+      }
+      if (res.status === 429) {
+        result[name] = {
+          url,
+          allowed_methods: oldRoutes[name]?.allowed_methods ?? null,
         };
 
         i++;
