@@ -17081,6 +17081,7 @@
                 body: "body-3Iroxy",
                 messagePreviewContainer: "messagePreviewContainer-t9iNtM",
                 messagePreviewText: "messagePreviewText-26PrYG",
+                calloutContainer: "calloutContainer-2WCWZC",
                 unread: "unread-O4ZgUu",
                 friendRequestContainer: "friendRequestContainer-2gb8-g",
                 button: "button-1zIh4B",
@@ -26984,4 +26985,4 @@
         }
     }
 ]);
-//# sourceMappingURL=5099bc1d622d0b8e2992.js.map
+//# sourceMappingURL=98201cf2cbf2e0c24256.js.map
