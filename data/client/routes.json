@@ -478,7 +478,12 @@
   },
   "GUILD_PRUNE": {
     "url": "/guilds/:param/prune",
-    "allowed_methods": null
+    "allowed_methods": [
+      "GET",
+      "HEAD",
+      "OPTIONS",
+      "POST"
+    ]
   },
   "GUILD_ICON": {
     "url": "/guilds/:param/icons/:param.:param",
@@ -600,7 +605,12 @@
   },
   "GUILD_HOME_SETTINGS": {
     "url": "/guilds/:param/new-member-welcome",
-    "allowed_methods": null
+    "allowed_methods": [
+      "GET",
+      "HEAD",
+      "OPTIONS",
+      "PUT"
+    ]
   },
   "RESOURCE_CHANNEL": {
     "url": "/guilds/:param/resource-channels/:param",
@@ -1677,7 +1687,10 @@
   },
   "RESET_PASSWORD": {
     "url": "/auth/reset",
-    "allowed_methods": null
+    "allowed_methods": [
+      "OPTIONS",
+      "POST"
+    ]
   },
   "REGIONS": {
     "url": "/guilds/:param/regions",
@@ -3239,7 +3252,13 @@
   },
   "GUILD_AUTOMOD_RULE": {
     "url": "/guilds/:param/auto-moderation/rules/:param",
-    "allowed_methods": null
+    "allowed_methods": [
+      "DELETE",
+      "GET",
+      "HEAD",
+      "OPTIONS",
+      "PATCH"
+    ]
   },
   "GUILD_AUTOMOD_VALIDATE_RULE": {
     "url": "/guilds/:param/auto-moderation/rules/validate",
@@ -3608,7 +3627,10 @@
   },
   "CREATOR_MONETIZATION_ACCEPT_TERMS": {
     "url": "/guilds/:param/creator-monetization/enable-requests/:param/accept-terms",
-    "allowed_methods": null
+    "allowed_methods": [
+      "OPTIONS",
+      "POST"
+    ]
   },
   "CREATOR_MONETIZATION_ACCEPT_TERMS_V2": {
     "url": "/guilds/:param/creator-monetization/accept-terms",
@@ -4037,7 +4059,11 @@
   },
   "MESSAGE_REQUESTS_SUPPLEMENTAL_DATA": {
     "url": "/users/@me/message-requests/supplemental-data",
-    "allowed_methods": null
+    "allowed_methods": [
+      "GET",
+      "HEAD",
+      "OPTIONS"
+    ]
   },
   "CONNECT_REQUEST_CREATE": {
     "url": "/consoles/connect-request",
