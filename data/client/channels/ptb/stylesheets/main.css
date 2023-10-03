@@ -110414,18 +110414,25 @@ html .tabBadge-h4HGed {
     height: 231px
 }
 
-.shopArt-3HBKJX {
-    background: no-repeat url(/assets/28d57a10fec72b8581352dce5daa9c70.png) 50% 50%/cover transparent;
-    height: 158px;
-    width: 100%;
-    margin-top: -230px;
-    margin-bottom: 158px;
-    -webkit-transform: translateY(158px);
-    transform: translateY(158px)
+.loading-2lROMq {
+    opacity: 0;
+    pointer-events: none
 }
 
-.static-1TvOp8 {
-    background: no-repeat url(/assets/025ecbe1073a103f3afac0995f82bcac.png) 50% 50%/cover transparent
+.shopArt-3HBKJX {
+    margin-top: -86px;
+    margin-bottom: -8px
+}
+
+.shopArt-3HBKJX img {
+    height: 176px;
+    width: 213;
+    -o-object-fit: contain;
+    object-fit: contain
+}
+
+.imageLoader-LqGjD_ {
+    display: none
 }
 
 .header-2lFgXZ {
@@ -171381,4 +171388,4 @@ html .invoiceCancelRow-dVOR64 {
     margin-bottom: 8px
 }
 
-/*# sourceMappingURL=40532.19b19b425f74670c85b6.css.map*/
+/*# sourceMappingURL=40532.c4f0905995890ec9cd8d.css.map*/
