@@ -494,7 +494,11 @@
   },
   "GUILD_DISCOVERY_REQUIREMENTS": {
     "url": "/guilds/:param/discovery-requirements",
-    "allowed_methods": null
+    "allowed_methods": [
+      "GET",
+      "HEAD",
+      "OPTIONS"
+    ]
   },
   "GUILD_RECOMMENDATIONS": {
     "url": "/guild-recommendations",
@@ -744,7 +748,14 @@
   },
   "THREAD_MEMBER": {
     "url": "/channels/:param/thread-members/:param",
-    "allowed_methods": null
+    "allowed_methods": [
+      "DELETE",
+      "GET",
+      "HEAD",
+      "OPTIONS",
+      "POST",
+      "PUT"
+    ]
   },
   "THREAD_MEMBER_SETTINGS": {
     "url": "/channels/:param/thread-members/@me/settings",
@@ -1723,7 +1734,11 @@
   },
   "OAUTH2_AUTHORIZE_SAMSUNG_CALLBACK": {
     "url": "/oauth2/samsung/authorize/callback",
-    "allowed_methods": null
+    "allowed_methods": [
+      "GET",
+      "HEAD",
+      "OPTIONS"
+    ]
   },
   "OAUTH2_AUTHORIZE_WEBHOOK_CHANNELS": {
     "url": "/oauth2/authorize/webhook-channels",
@@ -2259,7 +2274,10 @@
   },
   "VERIFY_PURCHASE": {
     "url": "/google-play/verify-purchase-token",
-    "allowed_methods": null
+    "allowed_methods": [
+      "OPTIONS",
+      "POST"
+    ]
   },
   "DOWNGRADE_SUBSCRIPTION": {
     "url": "/google-play/downgrade-subscription",
@@ -2727,7 +2745,11 @@
   },
   "GUILD_DISCOVERY_SLUG": {
     "url": "/discovery/:param",
-    "allowed_methods": null
+    "allowed_methods": [
+      "GET",
+      "HEAD",
+      "OPTIONS"
+    ]
   },
   "GUILD_DISCOVERY_METADATA": {
     "url": "/guilds/:param/discovery-metadata",
@@ -3697,7 +3719,11 @@
   },
   "APPLICATION_DIRECTORY_SEARCH": {
     "url": "/application-directory-static/search",
-    "allowed_methods": null
+    "allowed_methods": [
+      "GET",
+      "HEAD",
+      "OPTIONS"
+    ]
   },
   "APPLICATION_DIRECTORY_COLLECTIONS": {
     "url": "/application-directory-static/collections",
