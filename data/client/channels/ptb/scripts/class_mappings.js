@@ -6433,6 +6433,7 @@
         727918: e => {
             e.exports = {
                 wrapper: "wrapper-2pTC1G",
+                heading1: "heading1-2oLmb_",
                 reload: "reload-1YKUlg"
             }
         },
@@ -26985,4 +26986,4 @@
         }
     }
 ]);
-//# sourceMappingURL=98201cf2cbf2e0c24256.js.map
+//# sourceMappingURL=77b8f1d9a7bb53239626.js.map
