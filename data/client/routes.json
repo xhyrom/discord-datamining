@@ -1986,7 +1986,10 @@
   },
   "CALL_RING": {
     "url": "/channels/:param/call/ring",
-    "allowed_methods": null
+    "allowed_methods": [
+      "OPTIONS",
+      "POST"
+    ]
   },
   "CALL_STOP_RINGING": {
     "url": "/channels/:param/call/stop-ringing",
