@@ -1826,8 +1826,8 @@
                 libraryIcon: "libraryIcon-11UjLs",
                 invalidPoop: "invalidPoop--w1123",
                 invalidPoopHorizontal: "invalidPoopHorizontal-lVJuEM",
-                seasonalGiftEmbedWrapper: "seasonalGiftEmbedWrapper-3-ABcb",
                 customGiftEmbedWrapper: "customGiftEmbedWrapper-2juaPF",
+                seasonalGiftEmbedWrapper: "seasonalGiftEmbedWrapper-3-ABcb",
                 giftEmbedWrapperHorizontal: "giftEmbedWrapperHorizontal-wq8NY7",
                 snow: "snow-_q6DgL",
                 seasonalGiftEmbedBox: "seasonalGiftEmbedBox-2RnS0W",
@@ -18203,7 +18203,6 @@
                 responsiveWidthMobile: "485px",
                 root: "root-2s1-ri",
                 withHeader: "withHeader-1pNqnP",
-                giftMainAnimation: "giftMainAnimation-n9Ztg4",
                 shaker: "shaker-bevRrZ",
                 modalHeader: "modalHeader-2Rmdrh",
                 header: "header-2hQs-p",
@@ -19804,6 +19803,8 @@
                 infoIcon: "infoIcon-chB-oI",
                 giftBoxHeaderContainer: "giftBoxHeaderContainer-3BUaXT",
                 infoIconContainer: "infoIconContainer-7wlSbF",
+                giftMainAnimation: "giftMainAnimation-3mE9-P",
+                spinner: "spinner-2R6WcU",
                 giftBoxHeaderText: "giftBoxHeaderText-2ndxNR",
                 giftBoxOptionContainer: "giftBoxOptionContainer-ruho5Z"
             }
@@ -26988,4 +26989,4 @@
         }
     }
 ]);
-//# sourceMappingURL=483f86c74a30f17eb0b5.js.map
+//# sourceMappingURL=9abca3e00e98705dd007.js.map
