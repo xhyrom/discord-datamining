@@ -10778,16 +10778,19 @@
       "description": [
         "Not Eligible",
         "Control Bucket",
-        "Treatment 1: show custom app icons setting"
+        "Treatment 1: only show the icon when active",
+        "Treatment 2: persist the icon"
       ],
       "hash": 1066761149,
       "buckets": [
         -1,
         0,
-        1
+        1,
+        2
       ],
       "config_keys": [
-        "showIconSetting"
+        "showIconSetting",
+        "persistIcon"
       ]
     }
   },
