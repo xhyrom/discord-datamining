@@ -20260,8 +20260,9 @@
         },
         686559: e => {
             e.exports = {
+                loading: "loading-2lROMq",
                 shopArt: "shopArt-3HBKJX",
-                static: "static-1TvOp8"
+                imageLoader: "imageLoader-LqGjD_"
             }
         },
         146967: e => {
@@ -26980,4 +26981,4 @@
         }
     }
 ]);
-//# sourceMappingURL=d0ae07f9628e6a97a01f.js.map
+//# sourceMappingURL=b85f892a4303b936e590.js.map
