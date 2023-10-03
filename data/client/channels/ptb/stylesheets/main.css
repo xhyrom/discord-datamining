@@ -164522,10 +164522,25 @@ html .invoiceCancelRow-3s2UuC {
     background-color: var(--background-floating)
 }
 
+.itemTypeTitleContainer-3KVj87 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row
+}
+
 .itemTypeTitle-fjLyoh {
     text-transform: uppercase;
     margin-top: 26px;
     margin-bottom: 10px
+}
+
+.newItemTypeBadge-2_xpQl {
+    margin-left: 8px;
+    margin-top: 28px
 }
 
 .pageWrapper-3Au6sJ {
@@ -171396,4 +171411,4 @@ html .invoiceCancelRow-dVOR64 {
     margin-bottom: 8px
 }
 
-/*# sourceMappingURL=40532.9594d365f964f8c8271b.css.map*/
+/*# sourceMappingURL=40532.b6609e87bd3e4ae6ba2f.css.map*/
