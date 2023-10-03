@@ -68036,6 +68036,14 @@ strong {
     margin: auto
 }
 
+.calloutContainer-2WCWZC {
+    margin-top: 4px;
+    margin-bottom: 2px;
+    padding: 8px 16px;
+    background-color: var(--background-primary);
+    border-radius: 8px
+}
+
 .unread-O4ZgUu {
     position: absolute;
     top: 28px;
@@ -164522,10 +164530,25 @@ html .invoiceCancelRow-3s2UuC {
     background-color: var(--background-floating)
 }
 
+.itemTypeTitleContainer-3KVj87 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row
+}
+
 .itemTypeTitle-fjLyoh {
     text-transform: uppercase;
     margin-top: 26px;
     margin-bottom: 10px
+}
+
+.newItemTypeBadge-2_xpQl {
+    margin-left: 8px;
+    margin-top: 28px
 }
 
 .pageWrapper-3Au6sJ {
@@ -171396,4 +171419,4 @@ html .invoiceCancelRow-dVOR64 {
     margin-bottom: 8px
 }
 
-/*# sourceMappingURL=40532.9594d365f964f8c8271b.css.map*/
+/*# sourceMappingURL=40532.c17e18d9c0981ef31086.css.map*/
