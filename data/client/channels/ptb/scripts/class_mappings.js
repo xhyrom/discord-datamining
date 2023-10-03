@@ -19788,8 +19788,7 @@
         22865: e => {
             e.exports = {
                 body: "body-2atPTk",
-                textArea: "textArea-2pmFjo",
-                bioTextArea: "bioTextArea-3TCvr_"
+                textArea: "textArea-2pmFjo"
             }
         },
         820794: e => {
@@ -26989,4 +26988,4 @@
         }
     }
 ]);
-//# sourceMappingURL=9abca3e00e98705dd007.js.map
+//# sourceMappingURL=62f09807859f649b7186.js.map

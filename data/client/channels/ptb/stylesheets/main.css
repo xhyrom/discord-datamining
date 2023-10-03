@@ -41658,13 +41658,12 @@ input[type=checked]:focus-visible+.label-3TDpbn {
     height: 100%
 }
 
-.textArea-2pmFjo *>span {
+.theme-dark .textArea-2pmFjo *>span {
     color: var(--white-100)
 }
 
-.theme-dark .bioTextArea-3TCvr_,
-.theme-light .bioTextArea-3TCvr_ {
-    background: var(--input-background)
+.theme-light .textArea-2pmFjo *>span {
+    color: var(--text-normal)
 }
 
 .customGiftBox-fAjo-m,
@@ -171460,4 +171459,4 @@ html .invoiceCancelRow-dVOR64 {
     margin-bottom: 8px
 }
 
-/*# sourceMappingURL=40532.10cc4b255b0237ec5f0b.css.map*/
+/*# sourceMappingURL=40532.165e01946a98cbdc0fa5.css.map*/
