@@ -18,8 +18,9 @@
 <p>Do you ever find yourself streaming a game to your friends only to have an AMAZING moment that you wish you could clip to watch and share later? Now you can! While streaming, you can clip any fun or amazing moment by saving them directly to your computer. </p>
 <p>Edit your favorite clips and share epic moments with friends!</p>
 <h1 id="h_01H8CG7RQQ5DX463DFEV8YTPV8">How to Enable Clips</h1>
-<h3 id="docs-internal-guid-d964d01a-7fff-f263-a843-bf8a549a2a93">
-    <span style="color: #434343;" data-darkreader-inline-color="">Clips is currently available in Early Access for Nitro members. <br></span><span style="color: #434343;" data-darkreader-inline-color="">Some users may already have Clips <a href="#h_01H919PQDVD16WNABXRR0JERAW" target="_self">enabled by default</a> if their system has high end hardware. <br></span><span style="color: #434343;" data-darkreader-inline-color="">Having Clips enabled may impact your game performance if you have lower end hardware. If you experience any issues with your game, please try disabling Clips.</span>
+<h3 id="docs-internal-guid-d964d01a-7fff-f263-a843-bf8a549a2a93"><span style="color: #434343;" data-darkreader-inline-color="">Clips is currently available in Early Access for Nitro members. </span></h3>
+<h3>
+    <span style="color: #434343;" data-darkreader-inline-color="">Some users may already have Clips <a href="#h_01H919PQDVD16WNABXRR0JERAW" target="_self">enabled by default</a> if their system has high end hardware. <br></span><span style="color: #434343;" data-darkreader-inline-color="">Having Clips enabled may impact your game performance if you have lower end hardware. If you experience any issues with your game, please try disabling Clips.</span>
 </h3>
 <p>Before being able to create Clips, the feature first needs to be enabled. </p>
 <p>1. To enable, tap on <strong>User Settings</strong> then head to <strong>Clips</strong>.</p>
