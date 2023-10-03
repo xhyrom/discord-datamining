@@ -1,4 +1,4 @@
-/*! For license information please see a3db1830f7fa298e3444.js.LICENSE.txt */
+/*! For license information please see 785c14821ddc5ded5f7d.js.LICENSE.txt */
 (this.webpackChunkdiscord_app = this.webpackChunkdiscord_app || []).push([
     [22897], {
         151131: (t, e, r) => {
@@ -24295,6 +24295,8 @@
                 t.OVERLAY_LAYOUT_UPDATED = "overlay_layout_updated";
                 t.OVERLAY_SETTINGS_UPDATED = "overlay_settings_updated";
                 t.OVERLAY_PERF_INFO = "overlay_perf_info";
+                t.OVERLAY_USAGE_STATS = "overlay_usage_stats";
+                t.OVERLAY_USAGE_NOTIFICATION_STATS = "overlay_usage_notification_stats";
                 t.SPOTIFY_AUTO_PAUSED = "spotify_auto_paused";
                 t.SPOTIFY_BUTTON_CLICKED = "spotify_button_clicked";
                 t.SPOTIFY_LISTEN_ALONG_STARTED = "spotify_listen_along_started";
@@ -37077,7 +37079,7 @@ sentry_client:`${e.name}/${e.version}`}})}(t,n)}`
                     dsn: "https://fa97a90475514c03a42f80cd36d147c4@sentry.io/140984",
                     autoSessionTracking: !1,
                     environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                    release: "discord_web-14458d578aaf6d43e2ff76fb80d3e04eda57e974",
+                    release: "discord_web-68c376081078c65d3a26c397a953ee1469e32749",
                     beforeSend: function(t) {
                         return function(t) {
                             return null != t.exception && null != t.exception.values && t.exception.values.every((function(t) {
@@ -37104,8 +37106,8 @@ sentry_client:`${e.name}/${e.version}`}})}(t,n)}`
                     denyUrls: [/recaptcha/, /mobilediscord\.com/, /betterdiscord:\/\//]
                 });
                 var t;
-                X.YA("buildNumber", null !== (t = "233790") ? t : "");
-                X.YA("builtAt", String("1696360812421"));
+                X.YA("buildNumber", null !== (t = "233800") ? t : "");
+                X.YA("builtAt", String("1696361218222"));
                 var e = window.GLOBAL_ENV.SENTRY_TAGS;
                 if (null != e && "object" == typeof e)
                     for (var r in e) X.YA(r, e[r]);
@@ -48485,4 +48487,4 @@ sentry_client:`${e.name}/${e.version}`}})}(t,n)}`
         e(128594), e(535666), e(784633), e(678991)
     }
 ]);
-//# sourceMappingURL=a3db1830f7fa298e3444.js.map
+//# sourceMappingURL=785c14821ddc5ded5f7d.js.map
