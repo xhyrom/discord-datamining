@@ -1416,7 +1416,10 @@
   },
   "CONNECTION_REFRESH": {
     "url": "/users/@me/connections/:param/:param/refresh",
-    "allowed_methods": null
+    "allowed_methods": [
+      "OPTIONS",
+      "POST"
+    ]
   },
   "CONNECTION_SYNC_CONTACTS": {
     "url": "/users/@me/connections/contacts/@me/external-friend-list-entries",
@@ -1600,7 +1603,13 @@
   },
   "INVITE": {
     "url": "/invites/:param",
-    "allowed_methods": null
+    "allowed_methods": [
+      "DELETE",
+      "GET",
+      "HEAD",
+      "OPTIONS",
+      "POST"
+    ]
   },
   "UNRESOLVED_GUILD_TEMPLATE": {
     "url": "/guilds/templates/:param",
