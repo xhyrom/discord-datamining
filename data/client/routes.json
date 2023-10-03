@@ -1241,7 +1241,10 @@
   },
   "DELETE_ACCOUNT": {
     "url": "/users/@me/delete",
-    "allowed_methods": null
+    "allowed_methods": [
+      "OPTIONS",
+      "POST"
+    ]
   },
   "DISABLE_ACCOUNT": {
     "url": "/users/@me/disable",
@@ -1600,7 +1603,12 @@
   },
   "GUILD_TEMPLATE": {
     "url": "/guilds/:param/templates/:param",
-    "allowed_methods": null
+    "allowed_methods": [
+      "DELETE",
+      "OPTIONS",
+      "PATCH",
+      "PUT"
+    ]
   },
   "TRACK": {
     "url": "/science",
