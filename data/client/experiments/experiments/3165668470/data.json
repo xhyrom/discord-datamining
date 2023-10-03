@@ -6,13 +6,15 @@
     "description": [
       "Not Eligible",
       "Control Bucket",
-      "Treatment 1: Enable unified chat input expression icon"
+      "Treatment 1: Enable unified chat input expression icon opening last viewed tab",
+      "Treatment 2: Enable unified chat input expression icon opening emoji tab"
     ],
     "hash": 3165668470,
     "buckets": [
       -1,
       0,
-      1
+      1,
+      2
     ],
     "config_keys": [
       "enabled"
