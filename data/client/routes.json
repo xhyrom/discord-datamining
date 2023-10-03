@@ -462,7 +462,12 @@
   },
   "GUILD_VANITY_URL": {
     "url": "/guilds/:param/vanity-url",
-    "allowed_methods": null
+    "allowed_methods": [
+      "GET",
+      "HEAD",
+      "OPTIONS",
+      "PATCH"
+    ]
   },
   "GUILD_MFA": {
     "url": "/guilds/:param/mfa",
@@ -510,7 +515,11 @@
   },
   "GUILD_ANALYTICS_OVERVIEW": {
     "url": "/guilds/:param/analytics/overview",
-    "allowed_methods": null
+    "allowed_methods": [
+      "GET",
+      "HEAD",
+      "OPTIONS"
+    ]
   },
   "GUILD_ANALYTICS_ENGAGEMENT_OVERVIEW": {
     "url": "/guilds/:param/analytics/engagement/overview",
@@ -682,7 +691,10 @@
   },
   "GUILD_DELETE": {
     "url": "/guilds/:param/delete",
-    "allowed_methods": null
+    "allowed_methods": [
+      "OPTIONS",
+      "POST"
+    ]
   },
   "CHANNELS": {
     "url": "/channels",
@@ -836,7 +848,10 @@
   },
   "UPDATE_VOICE_CHANNEL_STATUS": {
     "url": "/channels/:param/voice-status",
-    "allowed_methods": null
+    "allowed_methods": [
+      "OPTIONS",
+      "PUT"
+    ]
   },
   "MESSAGE_DELETE_UPLOAD": {
     "url": "/attachments/:param",
@@ -907,7 +922,11 @@
   },
   "GUILD_FEED_MESSAGE_SET_PREFERENCE": {
     "url": "/guilds/:param/guild-feed/preference",
-    "allowed_methods": null
+    "allowed_methods": [
+      "DELETE",
+      "OPTIONS",
+      "PUT"
+    ]
   },
   "GUILD_FEED_FEATURE_ITEM": {
     "url": "/guilds/:param/guild-feed/feature",
@@ -973,7 +992,11 @@
   },
   "CHANNEL_RECIPIENT_CONSENT": {
     "url": "/channels/:param/recipients/@me",
-    "allowed_methods": null
+    "allowed_methods": [
+      "DELETE",
+      "OPTIONS",
+      "PUT"
+    ]
   },
   "CHANNEL_RECIPIENT_REJECT_BATCH": {
     "url": "/channels/recipients/@me/batch-reject",
@@ -1079,7 +1102,10 @@
   },
   "TUTORIAL_INDICATOR": {
     "url": "/tutorial/indicators/:param",
-    "allowed_methods": null
+    "allowed_methods": [
+      "OPTIONS",
+      "PUT"
+    ]
   },
   "USERS": {
     "url": "/users",
@@ -1375,7 +1401,10 @@
   },
   "REMOTE_AUTH_INITIALIZE": {
     "url": "/users/@me/remote-auth",
-    "allowed_methods": null
+    "allowed_methods": [
+      "OPTIONS",
+      "POST"
+    ]
   },
   "REMOTE_AUTH_CANCEL": {
     "url": "/users/@me/remote-auth/cancel",
@@ -1421,7 +1450,11 @@
   },
   "MFA_WEBAUTHN_CREDENTIAL": {
     "url": "/users/@me/mfa/webauthn/credentials/:param",
-    "allowed_methods": null
+    "allowed_methods": [
+      "DELETE",
+      "OPTIONS",
+      "PATCH"
+    ]
   },
   "INVITE": {
     "url": "/invites/:param",
@@ -1522,10 +1555,6 @@
   },
   "DEBUG_LOGS": {
     "url": "/debug-logs/multi/:param",
-    "allowed_methods": null
-  },
-  "CALLSCOPE_LOGS": {
-    "url": "/callscope/logs/:param/user/:param/:param",
     "allowed_methods": null
   },
   "REPORT_V2": {
@@ -1701,7 +1730,10 @@
   },
   "MFA_SMS_ENABLE": {
     "url": "/users/@me/mfa/sms/enable",
-    "allowed_methods": null
+    "allowed_methods": [
+      "OPTIONS",
+      "POST"
+    ]
   },
   "MFA_SMS_DISABLE": {
     "url": "/users/@me/mfa/sms/disable",
@@ -1872,7 +1904,12 @@
   },
   "APPLIED_GUILD_BOOSTS_FOR_GUILD": {
     "url": "/guilds/:param/premium/subscriptions",
-    "allowed_methods": null
+    "allowed_methods": [
+      "GET",
+      "HEAD",
+      "OPTIONS",
+      "PUT"
+    ]
   },
   "APPLIED_GUILD_BOOST": {
     "url": "/guilds/:param/premium/subscriptions/:param",
@@ -2259,7 +2296,13 @@
   },
   "APPLICATIONS_PUBLIC": {
     "url": "/applications/public",
-    "allowed_methods": null
+    "allowed_methods": [
+      "GET",
+      "HEAD",
+      "OPTIONS",
+      "PATCH",
+      "PUT"
+    ]
   },
   "APPLICATIONS_TRENDING": {
     "url": "/applications/trending/global",
@@ -2267,7 +2310,12 @@
   },
   "APPLICATION_BRANCH_LIST": {
     "url": "/applications/:param/branches",
-    "allowed_methods": null
+    "allowed_methods": [
+      "GET",
+      "HEAD",
+      "OPTIONS",
+      "POST"
+    ]
   },
   "LIBRARY_APPLICATION_INSTALLED": {
     "url": "/users/@me/library/:param/:param/installed",
@@ -2512,7 +2560,10 @@
   },
   "PARTNER_PROMOTIONS": {
     "url": "/entitlements/partner-promotions/:param",
-    "allowed_methods": null
+    "allowed_methods": [
+      "OPTIONS",
+      "POST"
+    ]
   },
   "USER_GIFT_CODE_CREATE": {
     "url": "/users/@me/entitlements/gift-codes",
@@ -2656,7 +2707,11 @@
   },
   "PARTNERS_CONNECTIONS": {
     "url": "/partners/connections",
-    "allowed_methods": null
+    "allowed_methods": [
+      "GET",
+      "HEAD",
+      "OPTIONS"
+    ]
   },
   "PARTNERS_APPLY": {
     "url": "/partners/apply",
@@ -2842,7 +2897,11 @@
   },
   "USER_SURVEY": {
     "url": "/users/@me/survey",
-    "allowed_methods": null
+    "allowed_methods": [
+      "GET",
+      "HEAD",
+      "OPTIONS"
+    ]
   },
   "GUILD_EVENTS": {
     "url": "/guild-events",
@@ -3015,7 +3074,12 @@
   },
   "TEAMS": {
     "url": "/teams",
-    "allowed_methods": null
+    "allowed_methods": [
+      "GET",
+      "HEAD",
+      "OPTIONS",
+      "POST"
+    ]
   },
   "APPLICATIONS": {
     "url": "/applications",
@@ -3353,7 +3417,10 @@
   },
   "GUILD_PRODUCT_ATTACHMENT_DOWNLOAD": {
     "url": "/guilds/:param/products/listings/:param/attachments/:param/download",
-    "allowed_methods": null
+    "allowed_methods": [
+      "OPTIONS",
+      "POST"
+    ]
   },
   "TENOR_ASSET_PATH": {
     "url": "/tenor",
@@ -3643,7 +3710,10 @@
   },
   "CONNECT_REQUEST_CREATE": {
     "url": "/consoles/connect-request",
-    "allowed_methods": null
+    "allowed_methods": [
+      "OPTIONS",
+      "POST"
+    ]
   },
   "CONNECT_REQUEST": {
     "url": "/consoles/connect-request/:param",
