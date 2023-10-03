@@ -6251,17 +6251,6 @@
                 titleContainer: "titleContainer-3Lez7G"
             }
         },
-        970485: e => {
-            e.exports = {
-                video: "video-1Ws-4A",
-                header: "header-2n8dGs",
-                footer: "footer-3Utv6L",
-                closeContainer: "closeContainer-hxuDP9",
-                close: "close-35Zli8",
-                hintText: "hintText-3e0Cwe",
-                clydeText: "clydeText-1VpFDZ"
-            }
-        },
         244192: e => {
             e.exports = {
                 personalityBadge: "personalityBadge-pYraBr",
@@ -14732,7 +14721,6 @@
                 channelLabel: "channelLabel-14dlkc",
                 shopIcon: "shopIcon-1Bvujq",
                 selected: "selected-VDl2J3",
-                fullPreview: "fullPreview-2Jh2uC",
                 closeButton: "closeButton-1FeJeB",
                 money: "money-2DSXfU",
                 questionMark: "questionMark-ZD83vL",
@@ -19816,8 +19804,6 @@
         },
         614278: e => {
             e.exports = {
-                giftBox: "giftBox-5g9APR",
-                giftBoxHighlighted: "giftBoxHighlighted-3OVp07",
                 customGiftBox: "customGiftBox-fAjo-m",
                 customGiftBoxHighlighted: "customGiftBoxHighlighted-rMoa5Q"
             }
@@ -19844,6 +19830,7 @@
         710431: e => {
             e.exports = {
                 stepBody: "stepBody-3ZoVrh",
+                giftOptions: "giftOptions-33xCmt",
                 stepBodyCustomGift: "stepBodyCustomGift-2Xj4sH",
                 bodyColumnMiddle: "bodyColumnMiddle-yHnZIj",
                 bodyColumnRight: "bodyColumnRight-31A5Yf",
@@ -19953,7 +19940,8 @@
             e.exports = {
                 giftRecipientInfo: "giftRecipientInfo-oLFZzH",
                 content: "content-GeF06t",
-                giftRecipientName: "giftRecipientName-35QsQT"
+                giftRecipientName: "giftRecipientName-35QsQT",
+                giftRecipientTag: "giftRecipientTag-2-wRC-"
             }
         },
         787257: e => {
@@ -20268,6 +20256,13 @@
                 lockBadge: "lockBadge-1GRfLm badge-w5FhZi",
                 presetEffectImg: "presetEffectImg-1QMW5H",
                 presetEffectBackground: "presetEffectBackground-2FjhQJ"
+            }
+        },
+        686559: e => {
+            e.exports = {
+                loading: "loading-2lROMq",
+                shopArt: "shopArt-3HBKJX",
+                imageLoader: "imageLoader-LqGjD_"
             }
         },
         146967: e => {
@@ -22159,6 +22154,7 @@
                 panelBanner: "panelBanner-2KnOzw bannerPremium-kkSkPv",
                 cancelModalBanner: "cancelModalBanner-3sqsYA bannerPremium-kkSkPv",
                 pencilContainer: "pencilContainer-18TrEJ",
+                pencilContainerDark: "pencilContainerDark-3nPbrs pencilContainer-18TrEJ",
                 editIcon: "editIcon-3h_5Rm",
                 closeIcon: "closeIcon-gxNG0p",
                 premiumIconTooltipContent: "premiumIconTooltipContent-e6VnCZ",
@@ -22413,10 +22409,12 @@
                 containerWrapper: "containerWrapper-1kh54c",
                 animation: "animation-2Ulm63",
                 slideInFromBottom: "slideInFromBottom-OAY5yI",
+                inSidebar: "inSidebar-2ZaxJI",
+                slideInFromTop: "slideInFromTop-3SK3LX",
                 container: "container-34SFyU",
                 avatarSection: "avatarSection-23Phyu",
                 content: "content-2fvXP0",
-                contentWithoutAvatar: "contentWithoutAvatar-3goPR0",
+                withoutAvatar: "withoutAvatar-247vxY",
                 ctaLink: "ctaLink-2Wa-yK",
                 buttons: "buttons-2t4rDg",
                 closeButton: "closeButton-1FOk1_",
@@ -26983,4 +26981,4 @@
         }
     }
 ]);
-//# sourceMappingURL=9627ed0e69e506726f62.js.map
+//# sourceMappingURL=b85f892a4303b936e590.js.map

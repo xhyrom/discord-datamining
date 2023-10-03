@@ -1,4 +1,4 @@
-/*! For license information please see 8a3775558f24cfe2475e.js.LICENSE.txt */
+/*! For license information please see ed92dacab176013b8e7b.js.LICENSE.txt */
 (this.webpackChunkdiscord_app = this.webpackChunkdiscord_app || []).push([
     [22897], {
         151131: (t, e, r) => {
@@ -20245,257 +20245,258 @@
                 ZUi: () => F,
                 Usc: () => W,
                 yb: () => j,
-                OBS: () => st,
-                HfH: () => Et,
+                OBS: () => Et,
+                HfH: () => ct,
                 iLy: () => Z,
                 J0y: () => $,
-                wC$: () => q,
-                OYC: () => J,
-                Odu: () => Q,
-                t_t: () => tt,
-                ipw: () => et,
-                _1z: () => rt,
-                _vf: () => nt,
-                Ypu: () => at,
-                BmY: () => it,
-                O0n: () => ot,
-                sFg: () => _t,
-                YeM: () => ft,
-                BpS: () => ct,
-                lxg: () => ut,
-                OGo: () => It,
-                wZ8: () => Rt,
-                mFx: () => lt,
-                GU0: () => At,
-                ME: () => Nt,
-                I_8: () => Ot,
-                XAJ: () => pt,
-                ANM: () => Lt,
-                Z5c: () => Dt,
-                Gp_: () => dt,
-                cEn: () => yt,
-                CND: () => vt,
-                lHf: () => Bt,
-                wEG: () => bt,
-                jEp: () => Ct,
-                lTL: () => gt,
-                ff_: () => Ut,
-                Hej: () => Pt,
-                xjy: () => Mt,
-                bL: () => mt,
-                UF9: () => Gt,
-                DZw: () => Vt,
-                tHP: () => Ft,
-                AQB: () => Wt,
-                Z8P: () => jt,
-                DJj: () => Xt,
-                PNu: () => zt,
-                j3N: () => Zt,
-                FD8: () => $t,
-                J6R: () => qt,
-                en1: () => Jt,
-                tG9: () => Qt,
-                HN8: () => te,
-                VKK: () => ee,
-                vuo: () => re,
-                l$U: () => ne,
-                tPV: () => ae,
-                JuI: () => ie,
-                OSm: () => oe,
-                BiE: () => _e,
-                dN1: () => se,
-                mBz: () => Ee,
-                PRK: () => ce,
-                XmY: () => ue,
-                $92: () => Ie,
-                PEY: () => Re,
-                Xyh: () => le,
-                ys_: () => wt,
-                WtW: () => Ht,
-                IIU: () => Yt,
-                GOo: () => xt,
-                OcF: () => kt,
-                Lcj: () => Kt,
-                IXf: () => he,
-                dGM: () => Se,
-                qhL: () => Le,
-                Fc: () => De,
-                epw: () => Ce,
-                eWB: () => ge,
-                V7H: () => Ue,
-                fo$: () => Pe,
-                LAt: () => Me,
-                $pe: () => me,
-                xGv: () => Ge,
-                TU7: () => ye,
-                B9o: () => ve,
-                eez: () => Be,
-                RcX: () => be,
-                pAY: () => we,
-                keq: () => He,
-                p3w: () => Ye,
-                LYt: () => xe,
-                PrS: () => ke,
-                $Y6: () => Ke,
-                R7I: () => Ve,
-                JkL: () => Fe,
-                scU: () => We,
-                z7k: () => je,
-                EYA: () => Xe,
-                E07: () => ze,
-                rnv: () => Ze,
-                vpv: () => $e,
-                TNx: () => qe,
-                KA4: () => Je,
-                dYL: () => Qe,
-                aib: () => Ae,
-                QIO: () => Te,
-                evJ: () => fe,
-                Sbl: () => de,
-                q5t: () => Ne,
-                j28: () => Oe,
-                ZY5: () => pe,
-                b8q: () => ar,
-                jXE: () => tr,
-                qAy: () => er,
-                Qqv: () => rr,
-                SaU: () => Tr,
-                oAB: () => fr,
-                vtS: () => or,
-                uRl: () => _r,
-                t4x: () => sr,
-                PsQ: () => Er,
-                dAT: () => cr,
-                a5g: () => ur,
-                V_K: () => Rr,
-                CkL: () => lr,
-                LPv: () => Ar,
-                aZC: () => hr,
-                ABu: () => dr,
-                M7m: () => Nr,
-                RYY: () => pr,
-                BFP: () => Sr,
-                vbS: () => Lr,
-                fzT: () => Dr,
-                p6O: () => Cr,
-                pmI: () => gr,
-                Wyy: () => vr,
-                eRX: () => Mr,
-                dCx: () => mr,
-                rtL: () => Gr,
-                Sap: () => yr,
-                b2L: () => wr,
-                vTt: () => Hr,
-                Eu4: () => Br,
-                oCV: () => xr,
-                o3l: () => kr,
-                WND: () => Kr,
-                tuJ: () => Yr,
-                OBo: () => Wr,
-                O0b: () => Vr,
-                hUK: () => Fr,
-                G5l: () => Xr,
-                yqN: () => tn,
-                rMx: () => Zr,
-                R5N: () => $r,
-                xW$: () => qr,
-                udG: () => Jr,
-                vID: () => Qr,
-                SRg: () => an,
-                Hqc: () => on,
-                Dge: () => _n,
-                AEg: () => en,
-                hVg: () => rn,
-                S9g: () => nn,
-                rsA: () => Rn,
-                vB8: () => sn,
-                jwA: () => En,
-                ecB: () => cn,
-                KFR: () => un,
-                zUn: () => In,
-                Rg9: () => fn,
-                c2C: () => ln,
-                ane: () => An,
-                PUi: () => Tn,
-                GNZ: () => Sn,
-                AeJ: () => dn,
-                yXg: () => Nn,
-                VD2: () => On,
-                NYg: () => pn,
-                q9n: () => hn,
-                nkL: () => Dn,
-                BhN: () => Ln,
-                ivE: () => mn,
-                n8r: () => Gn,
-                x0X: () => yn,
-                eHb: () => Cn,
-                TzF: () => gn,
-                QCD: () => Un,
-                GQo: () => Pn,
-                EOG: () => bn,
-                N_j: () => wn,
-                XKF: () => Hn,
-                pjP: () => vn,
-                SOq: () => Bn,
-                HGf: () => xn,
-                eBq: () => Fn,
-                ny$: () => kn,
-                ogU: () => Kn,
-                IlC: () => Vn,
-                e3s: () => _a,
-                DJE: () => Wn,
-                f07: () => jn,
-                vxO: () => Xn,
-                apO: () => zn,
-                iEv: () => Zn,
-                sHY: () => $n,
-                TaA: () => qn,
-                qc2: () => Jn,
-                aIt: () => Qn,
-                epS: () => ta,
-                kGb: () => ea,
-                l4R: () => ra,
-                POd: () => na,
-                QR$: () => ia,
-                gkr: () => oa,
-                jsM: () => Ea,
-                MoX: () => sa,
-                HsE: () => ua,
-                REU: () => Ia,
-                qXD: () => ca,
-                iC$: () => ha,
-                CgE: () => Ra,
-                zYc: () => la,
-                s9s: () => Aa,
-                AzA: () => Ta,
-                QyF: () => fa,
-                aVf: () => da,
-                x8Z: () => Na,
-                wI2: () => pa,
-                w2V: () => La,
-                A2N: () => Sa,
-                MsY: () => Ca,
-                Lg6: () => ga,
-                KJ3: () => Ba,
-                l9w: () => Ua,
-                jm8: () => Pa,
-                si2: () => Ma,
-                K3D: () => ma,
-                FQ1: () => Ga,
-                IWh: () => ya,
-                IyS: () => va,
-                wli: () => xa,
-                UkZ: () => ba,
-                ylB: () => Ha,
-                b4C: () => Ya,
-                qWG: () => Fa,
-                xAR: () => Wa,
-                _8R: () => ja,
-                hCA: () => ka,
-                Ucd: () => Ka,
-                rtk: () => Va,
-                pTL: () => za,
-                Jn9: () => Za,
+                xPJ: () => q,
+                wC$: () => J,
+                OYC: () => Q,
+                Odu: () => tt,
+                t_t: () => et,
+                ipw: () => rt,
+                _1z: () => nt,
+                _vf: () => at,
+                Ypu: () => it,
+                BmY: () => ot,
+                O0n: () => _t,
+                sFg: () => st,
+                YeM: () => dt,
+                BpS: () => ut,
+                lxg: () => It,
+                OGo: () => Rt,
+                wZ8: () => lt,
+                mFx: () => At,
+                GU0: () => Tt,
+                ME: () => Ot,
+                I_8: () => pt,
+                XAJ: () => ht,
+                ANM: () => Dt,
+                Z5c: () => Ct,
+                Gp_: () => Nt,
+                cEn: () => vt,
+                CND: () => Bt,
+                lHf: () => bt,
+                wEG: () => wt,
+                jEp: () => gt,
+                lTL: () => Ut,
+                ff_: () => Pt,
+                Hej: () => Mt,
+                xjy: () => mt,
+                bL: () => Gt,
+                UF9: () => yt,
+                DZw: () => Ft,
+                tHP: () => Wt,
+                AQB: () => jt,
+                Z8P: () => Xt,
+                DJj: () => zt,
+                PNu: () => Zt,
+                j3N: () => $t,
+                FD8: () => qt,
+                J6R: () => Jt,
+                en1: () => Qt,
+                tG9: () => te,
+                HN8: () => ee,
+                VKK: () => re,
+                vuo: () => ne,
+                l$U: () => ae,
+                tPV: () => ie,
+                JuI: () => oe,
+                OSm: () => _e,
+                BiE: () => se,
+                dN1: () => Ee,
+                mBz: () => ce,
+                PRK: () => ue,
+                XmY: () => Ie,
+                $92: () => Re,
+                PEY: () => le,
+                Xyh: () => Ae,
+                ys_: () => Ht,
+                WtW: () => Yt,
+                IIU: () => xt,
+                GOo: () => kt,
+                OcF: () => Kt,
+                Lcj: () => Vt,
+                IXf: () => Se,
+                dGM: () => Le,
+                qhL: () => De,
+                Fc: () => Ce,
+                epw: () => ge,
+                eWB: () => Ue,
+                V7H: () => Pe,
+                fo$: () => Me,
+                LAt: () => me,
+                $pe: () => Ge,
+                xGv: () => ye,
+                TU7: () => ve,
+                B9o: () => Be,
+                eez: () => be,
+                RcX: () => we,
+                pAY: () => He,
+                keq: () => Ye,
+                p3w: () => xe,
+                LYt: () => ke,
+                PrS: () => Ke,
+                $Y6: () => Ve,
+                R7I: () => Fe,
+                JkL: () => We,
+                scU: () => je,
+                z7k: () => Xe,
+                EYA: () => ze,
+                E07: () => Ze,
+                rnv: () => $e,
+                vpv: () => qe,
+                TNx: () => Je,
+                KA4: () => Qe,
+                dYL: () => tr,
+                aib: () => Te,
+                QIO: () => fe,
+                evJ: () => de,
+                Sbl: () => Ne,
+                q5t: () => Oe,
+                j28: () => pe,
+                ZY5: () => he,
+                b8q: () => ir,
+                jXE: () => er,
+                qAy: () => rr,
+                Qqv: () => nr,
+                SaU: () => fr,
+                oAB: () => dr,
+                vtS: () => _r,
+                uRl: () => sr,
+                t4x: () => Er,
+                PsQ: () => cr,
+                dAT: () => ur,
+                a5g: () => Ir,
+                V_K: () => lr,
+                CkL: () => Ar,
+                LPv: () => Tr,
+                aZC: () => Sr,
+                ABu: () => Nr,
+                M7m: () => Or,
+                RYY: () => hr,
+                BFP: () => Lr,
+                vbS: () => Dr,
+                fzT: () => Cr,
+                p6O: () => gr,
+                pmI: () => Ur,
+                Wyy: () => Br,
+                eRX: () => mr,
+                dCx: () => Gr,
+                rtL: () => yr,
+                Sap: () => vr,
+                b2L: () => Hr,
+                vTt: () => Yr,
+                Eu4: () => br,
+                oCV: () => kr,
+                o3l: () => Kr,
+                WND: () => Vr,
+                tuJ: () => xr,
+                OBo: () => jr,
+                O0b: () => Fr,
+                hUK: () => Wr,
+                G5l: () => zr,
+                yqN: () => en,
+                rMx: () => $r,
+                R5N: () => qr,
+                xW$: () => Jr,
+                udG: () => Qr,
+                vID: () => tn,
+                SRg: () => on,
+                Hqc: () => _n,
+                Dge: () => sn,
+                AEg: () => rn,
+                hVg: () => nn,
+                S9g: () => an,
+                rsA: () => ln,
+                vB8: () => En,
+                jwA: () => cn,
+                ecB: () => un,
+                KFR: () => In,
+                zUn: () => Rn,
+                Rg9: () => dn,
+                c2C: () => An,
+                ane: () => Tn,
+                PUi: () => fn,
+                GNZ: () => Ln,
+                AeJ: () => Nn,
+                yXg: () => On,
+                VD2: () => pn,
+                NYg: () => hn,
+                q9n: () => Sn,
+                nkL: () => Cn,
+                BhN: () => Dn,
+                ivE: () => Gn,
+                n8r: () => yn,
+                x0X: () => vn,
+                eHb: () => gn,
+                TzF: () => Un,
+                QCD: () => Pn,
+                GQo: () => Mn,
+                EOG: () => wn,
+                N_j: () => Hn,
+                XKF: () => Yn,
+                pjP: () => Bn,
+                SOq: () => bn,
+                HGf: () => kn,
+                eBq: () => Wn,
+                ny$: () => Kn,
+                ogU: () => Vn,
+                IlC: () => Fn,
+                e3s: () => sa,
+                DJE: () => jn,
+                f07: () => Xn,
+                vxO: () => zn,
+                apO: () => Zn,
+                iEv: () => $n,
+                sHY: () => qn,
+                TaA: () => Jn,
+                qc2: () => Qn,
+                aIt: () => ta,
+                epS: () => ea,
+                kGb: () => ra,
+                l4R: () => na,
+                POd: () => aa,
+                QR$: () => oa,
+                gkr: () => _a,
+                jsM: () => ca,
+                MoX: () => Ea,
+                HsE: () => Ia,
+                REU: () => Ra,
+                qXD: () => ua,
+                iC$: () => Sa,
+                CgE: () => la,
+                zYc: () => Aa,
+                s9s: () => Ta,
+                AzA: () => fa,
+                QyF: () => da,
+                aVf: () => Na,
+                x8Z: () => Oa,
+                wI2: () => ha,
+                w2V: () => Da,
+                A2N: () => La,
+                MsY: () => ga,
+                Lg6: () => Ua,
+                KJ3: () => ba,
+                l9w: () => Pa,
+                jm8: () => Ma,
+                si2: () => ma,
+                K3D: () => Ga,
+                FQ1: () => ya,
+                IWh: () => va,
+                IyS: () => Ba,
+                wli: () => ka,
+                UkZ: () => wa,
+                ylB: () => Ya,
+                b4C: () => xa,
+                qWG: () => Wa,
+                xAR: () => ja,
+                _8R: () => Xa,
+                hCA: () => Ka,
+                Ucd: () => Va,
+                rtk: () => Fa,
+                pTL: () => Za,
+                Jn9: () => $a,
                 $7l: () => Y.$7,
                 O42: () => Y.O4,
                 FsG: () => Y.Fs,
@@ -20555,9 +20556,9 @@
                 BRd: () => H.BR,
                 ETv: () => H.ET,
                 ldS: () => H.ld,
-                gLR: () => Xa,
-                T23: () => qa,
-                BVn: () => $a
+                gLR: () => za,
+                T23: () => Ja,
+                BVn: () => qa
             });
             r(756583);
             var n, a, i, o, _, s, E, c, u, I, R, l, A, T, f, d, N, O, p, h, S, L, D, C = r(441143),
@@ -21046,8 +21047,8 @@
                 t.SENDING = "SENDING";
                 t.SEND_FAILED = "SEND_FAILED"
             }(j || (j = {}));
-            var z, Z, $, q, J, Q, tt, et, rt, nt, at, it, ot, _t, st = new Set([G.u.REPLY, G.u.THREAD_STARTER_MESSAGE]),
-                Et = Object.freeze((x(z = {}, G.u.DEFAULT, !0), x(z, G.u.CHANNEL_PINNED_MESSAGE, !0), x(z, G.u.USER_JOIN, !0), x(z, G.u.GUILD_BOOST, !0),
+            var z, Z, $, q, J, Q, tt, et, rt, nt, at, it, ot, _t, st, Et = new Set([G.u.REPLY, G.u.THREAD_STARTER_MESSAGE]),
+                ct = Object.freeze((x(z = {}, G.u.DEFAULT, !0), x(z, G.u.CHANNEL_PINNED_MESSAGE, !0), x(z, G.u.USER_JOIN, !0), x(z, G.u.GUILD_BOOST, !0),
                     x(z, G.u.GUILD_BOOST_TIER_1, !0), x(z, G.u.GUILD_BOOST_TIER_2, !0), x(z, G.u.GUILD_BOOST_TIER_3, !0), x(z, G.u.CHANNEL_FOLLOW_ADD, !0), x(z, G.u.THREAD_CREATED, !0), x(z, G.u.REPLY, !0), x(z, G.u.CHAT_INPUT_COMMAND, !0), x(z, G.u.GUILD_INVITE_REMINDER, !0), x(z, G.u.CONTEXT_MENU_COMMAND, !0), x(z, G.u.AUTO_MODERATION_ACTION, !0), x(z, G.u.ROLE_SUBSCRIPTION_PURCHASE, !0), x(z, G.u.INTERACTION_PREMIUM_UPSELL, !0), x(z, G.u.STAGE_START, !0), x(z, G.u.STAGE_END, !0), x(z, G.u.STAGE_TOPIC, !0), x(z, G.u.STAGE_SPEAKER, !0), x(z, G.u.GUILD_APPLICATION_PREMIUM_SUBSCRIPTION, !0), x(z, G.u.GUILD_DEADCHAT_REVIVE_PROMPT, !0), z));
             ! function(t) {
                 t[t.CROSSPOSTED = 1] = "CROSSPOSTED";
@@ -21071,21 +21072,24 @@
                 t[t.CONTAINS_EXPLICIT_MEDIA = 16] = "CONTAINS_EXPLICIT_MEDIA"
             }($ || ($ = {}));
             ! function(t) {
-                t.ALWAYS = "ALWAYS";
-                t.NEVER = "NEVER";
-                t.ONLY_WHILE_SPEAKING = "ONLY_WHILE_SPEAKING"
+                t[t.CONTAINS_EXPLICIT_MEDIA = 1] = "CONTAINS_EXPLICIT_MEDIA"
             }(q || (q = {}));
             ! function(t) {
                 t.ALWAYS = "ALWAYS";
+                t.NEVER = "NEVER";
                 t.ONLY_WHILE_SPEAKING = "ONLY_WHILE_SPEAKING"
             }(J || (J = {}));
+            ! function(t) {
+                t.ALWAYS = "ALWAYS";
+                t.ONLY_WHILE_SPEAKING = "ONLY_WHILE_SPEAKING"
+            }(Q || (Q = {}));
             ! function(t) {
                 t.GUILDS = "GUILDS";
                 t.VOICE = "VOICE";
                 t.TEXT = "TEXT";
                 t.GUILDS_TEXT = "GUILDS_TEXT";
                 t.LOBBY_VOICE = "LOBBY_VOICE"
-            }(Q || (Q = {}));
+            }(tt || (tt = {}));
             ! function(t) {
                 t.DEFAULT = "DEFAULT";
                 t.PINNED = "PINNED";
@@ -21094,56 +21098,56 @@
                 t.IN_GAME_TEXT = "IN_GAME_TEXT";
                 t.IN_GAME_ACTIVE = "IN_GAME_ACTIVE";
                 t.IN_GAME_PREVIEW = "IN_GAME_PREVIEW"
-            }(tt || (tt = {}));
+            }(et || (et = {}));
             ! function(t) {
                 t.LARGE = "large";
                 t.SMALL = "small"
-            }(et || (et = {}));
+            }(rt || (rt = {}));
             ! function(t) {
                 t[t.ACTIVE = 0] = "ACTIVE";
                 t[t.TIMED_OUT = 1] = "TIMED_OUT";
                 t[t.DISMISSED = 2] = "DISMISSED"
-            }(rt || (rt = {}));
+            }(nt || (nt = {}));
             ! function(t) {
                 t.TOP_LEFT = "topLeft";
                 t.TOP_RIGHT = "topRight";
                 t.BOTTOM_LEFT = "bottomLeft";
                 t.BOTTOM_RIGHT = "bottomRight";
                 t.DISABLED = "disabled"
-            }(nt || (nt = {}));
+            }(at || (at = {}));
             ! function(t) {
                 t.ENABLED = "ENABLED";
                 t.DISABLED = "DISABLED"
-            }(at || (at = {}));
+            }(it || (it = {}));
             ! function(t) {
                 t.CONNECT = "CONNECT";
                 t.DISPATCH = "DISPATCH";
                 t.LOG_MESSAGES = "LOG_MESSAGES";
                 t.STORAGE_SYNC = "STORAGE_SYNC"
-            }(it || (it = {}));
+            }(ot || (ot = {}));
             ! function(t) {
                 t.TEXT_WIDGET = "TEXT_WIDGET"
-            }(ot || (ot = {}));
+            }(_t || (_t = {}));
             ! function(t) {
                 t[t.NONE = 0] = "NONE";
                 t[t.LOW = 1] = "LOW";
                 t[t.MEDIUM = 2] = "MEDIUM";
                 t[t.HIGH = 3] = "HIGH";
                 t[t.VERY_HIGH = 4] = "VERY_HIGH"
-            }(_t || (_t = {}));
-            var ct, ut, It, Rt, lt, At, Tt, ft = Object.freeze({
+            }(st || (st = {}));
+            var ut, It, Rt, lt, At, Tt, ft, dt = Object.freeze({
                 ACCOUNT_AGE: 5,
                 MEMBER_AGE: 10
             });
             ! function(t) {
                 t[t.NONE = 0] = "NONE";
                 t[t.ELEVATED = 1] = "ELEVATED"
-            }(ct || (ct = {}));
+            }(ut || (ut = {}));
             ! function(t) {
                 t[t.DISABLED = 0] = "DISABLED";
                 t[t.MEMBERS_WITHOUT_ROLES = 1] = "MEMBERS_WITHOUT_ROLES";
                 t[t.ALL_MEMBERS = 2] = "ALL_MEMBERS"
-            }(ut || (ut = {}));
+            }(It || (It = {}));
             ! function(t) {
                 t[t.NONE = 0] = "NONE";
                 t[t.FRIEND = 1] = "FRIEND";
@@ -21152,35 +21156,35 @@
                 t[t.PENDING_OUTGOING = 4] = "PENDING_OUTGOING";
                 t[t.IMPLICIT = 5] = "IMPLICIT";
                 t[t.SUGGESTION = 6] = "SUGGESTION"
-            }(It || (It = {}));
+            }(Rt || (Rt = {}));
             ! function(t) {
                 t.CONFIRM = "CONFIRM";
                 t.SUCCESS = "SUCCESS";
                 t.ERROR = "ERROR";
                 t.OPEN = "OPEN"
-            }(Rt || (Rt = {}));
+            }(lt || (lt = {}));
             ! function(t) {
                 t[t.JOIN = 1] = "JOIN";
                 t[t.LISTEN = 3] = "LISTEN";
                 t[t.WATCH = 4] = "WATCH";
                 t[t.JOIN_REQUEST = 5] = "JOIN_REQUEST"
-            }(lt || (lt = {}));
+            }(At || (At = {}));
             ! function(t) {
                 t[t.RTC = 1] = "RTC";
                 t[t.IOS_APP = 2] = "IOS_APP";
                 t[t.WEB_APP = 3] = "WEB_APP";
                 t[t.ANDROID_APP = 4] = "ANDROID_APP";
                 t[t.SPEED_TEST = 5] = "SPEED_TEST"
-            }(At || (At = {}));
+            }(Tt || (Tt = {}));
             ! function(t) {
                 t[t.DEFAULT = 0] = "DEFAULT";
                 t[t.HIGH_SCHOOL = 1] = "HIGH_SCHOOL";
                 t[t.COLLEGE = 2] = "COLLEGE"
-            }(Tt || (Tt = {}));
-            var dt, Nt = "@me",
-                Ot = "@favorites",
-                pt = "1096190356233670716",
-                ht = Object.freeze({
+            }(ft || (ft = {}));
+            var Nt, Ot = "@me",
+                pt = "@favorites",
+                ht = "1096190356233670716",
+                St = Object.freeze({
                     USER: function(t) {
                         return "/users/".concat(t)
                     },
@@ -21210,7 +21214,7 @@
                         return "/users/".concat(t, "/sessions/").concat(e, "/activities/").concat(null != r ? r : 0, "/metadata")
                     },
                     USER_ACTIVITY_JOIN: function(t, e, r) {
-                        return "/users/".concat(t, "/sessions/").concat(e, "/activities/").concat(r, "/").concat(lt.JOIN)
+                        return "/users/".concat(t, "/sessions/").concat(e, "/activities/").concat(r, "/").concat(At.JOIN)
                     },
                     USER_ACTIVITY_STATISTICS: "/users/@me/activities/statistics/applications",
                     USER_CLYDE_CONSENT: "/users/@me/clyde-consent",
@@ -22540,7 +22544,7 @@
                         return "/channels/".concat(t, "/polls/").concat(e, "/answers")
                     }
                 }),
-                St = Object.freeze({
+                Lt = Object.freeze({
                     INDEX: "/",
                     APP: "/app",
                     APP_WITH_INVITE_AND_GUILD_ONBOARDING: function(t) {
@@ -22583,7 +22587,7 @@
                     ME: "/channels/@me",
                     MESSAGE_REQUESTS: "/message-requests",
                     CHANNEL: function(t, e, r) {
-                        var n = null == e ? "/channels/".concat(t || Nt) : "/channels/".concat(t || Nt, "/").concat(e);
+                        var n = null == e ? "/channels/".concat(t || Ot) : "/channels/".concat(t || Ot, "/").concat(e);
                         return null == r ? n : "".concat(n, "/").concat(r)
                     },
                     CHANNEL_THREAD_VIEW: function(t, e, r, n) {
@@ -22623,7 +22627,7 @@
                         return "/gifts/".concat(t, "/login")
                     },
                     WELCOME: function(t, e) {
-                        return null != e ? "/welcome/".concat(null != t ? t : Nt, "/").concat(e) : "/welcome/".concat(null != t ? t : Nt)
+                        return null != e ? "/welcome/".concat(null != t ? t : Ot, "/").concat(e) : "/welcome/".concat(null != t ? t : Ot)
                     },
                     VERIFY: "/verify",
                     VERIFY_REQUEST: "/verify-request",
@@ -22719,16 +22723,16 @@
                         return "/channels/".concat(t, "/shop/").concat(e)
                     }
                 }),
-                Lt = (0, B.F)(ht),
-                Dt = (0, B.F)(St, [":", "?", "@"]);
+                Dt = (0, B.F)(St),
+                Ct = (0, B.F)(Lt, [":", "?", "@"]);
             ! function(t) {
                 t.ANY = "$any";
                 t.ALL = "$all"
-            }(dt || (dt = {}));
-            var Ct, gt, Ut, Pt, Mt, mt, Gt, yt = "RPC_PRIVATE_SCOPE",
-                vt = "RPC_PRIVATE_LIMITED_SCOPE",
-                Bt = "RPC_LOCAL_SCOPE",
-                bt = "RPC_AUTHENTICATED_SCOPE";
+            }(Nt || (Nt = {}));
+            var gt, Ut, Pt, Mt, mt, Gt, yt, vt = "RPC_PRIVATE_SCOPE",
+                Bt = "RPC_PRIVATE_LIMITED_SCOPE",
+                bt = "RPC_LOCAL_SCOPE",
+                wt = "RPC_AUTHENTICATED_SCOPE";
             ! function(t) {
                 t.USER_SETTINGS = "USER_SETTINGS";
                 t.CHANGELOG = "CHANGELOG";
@@ -22737,7 +22741,7 @@
                 t.STORE_LISTING = "STORE_LISTING";
                 t.CHANNEL = "CHANNEL";
                 t.PICK_GUILD_SETTINGS = "PICK_GUILD_SETTINGS"
-            }(Ct || (Ct = {}));
+            }(gt || (gt = {}));
             ! function(t) {
                 t[t.UNKNOWN_ERROR = 1e3] = "UNKNOWN_ERROR";
                 t[t.SERVICE_UNAVAILABLE = 1001] = "SERVICE_UNAVAILABLE";
@@ -22771,7 +22775,7 @@
                 t[t.PURCHASE_ERROR = 5009] = "PURCHASE_ERROR";
                 t[t.UNAUTHORIZED_FOR_ACHIEVEMENT = 5010] = "UNAUTHORIZED_FOR_ACHIEVEMENT";
                 t[t.RATE_LIMITED = 5011] = "RATE_LIMITED"
-            }(gt || (gt = {}));
+            }(Ut || (Ut = {}));
             ! function(t) {
                 t[t.APPLICATION_NOT_FOUND = 101] = "APPLICATION_NOT_FOUND";
                 t[t.DISK_LOW = 2022] = "DISK_LOW";
@@ -22793,13 +22797,13 @@
                 t[t.NOT_DIRECTORY = 2077] = "NOT_DIRECTORY";
                 t[t.INVALID_DRIVE = 2078] = "INVALID_DRIVE";
                 t[t.DISK_FULL = 2080] = "DISK_FULL"
-            }(Ut || (Ut = {}));
+            }(Pt || (Pt = {}));
             ! function(t) {
                 t.IPC = "ipc";
                 t.WEBSOCKET = "ws";
                 t.HTTP = "http";
                 t.POST_MESSAGE = "post_message"
-            }(Pt || (Pt = {}));
+            }(Mt || (Mt = {}));
             ! function(t) {
                 t[t.INSTANCE = 1] = "INSTANCE";
                 t[t.JOIN = 2] = "JOIN";
@@ -22808,47 +22812,47 @@
                 t[t.PARTY_PRIVACY_FRIENDS = 64] = "PARTY_PRIVACY_FRIENDS";
                 t[t.PARTY_PRIVACY_VOICE_CHANNEL = 128] = "PARTY_PRIVACY_VOICE_CHANNEL";
                 t[t.EMBEDDED = 256] = "EMBEDDED"
-            }(Mt || (Mt = {}));
+            }(mt || (mt = {}));
             ! function(t) {
                 t[t.ALL_MESSAGES = 0] = "ALL_MESSAGES";
                 t[t.ONLY_MENTIONS = 1] = "ONLY_MENTIONS";
                 t[t.NO_MESSAGES = 2] = "NO_MESSAGES";
                 t[t.NULL = 3] = "NULL"
-            }(mt || (mt = {}));
+            }(Gt || (Gt = {}));
             ! function(t) {
                 t[t.SECOND = 1] = "SECOND";
                 t[t.MINUTE = 60] = "MINUTE";
                 t[t.HOUR = 3600] = "HOUR";
                 t[t.DAY = 86400] = "DAY"
-            }(Gt || (Gt = {}));
-            var wt, Ht, Yt, xt, kt, Kt, Vt = 100,
-                Ft = 200,
-                Wt = 50,
+            }(yt || (yt = {}));
+            var Ht, Yt, xt, kt, Kt, Vt, Ft = 100,
+                Wt = 200,
                 jt = 50,
-                Xt = 25,
-                zt = 4 * Wt,
-                Zt = .5 * zt,
-                $t = 5 * Wt,
-                qt = 2e3,
-                Jt = 4e3,
-                Qt = 50,
-                te = 100,
+                Xt = 50,
+                zt = 25,
+                Zt = 4 * jt,
+                $t = .5 * Zt,
+                qt = 5 * jt,
+                Jt = 2e3,
+                Qt = 4e3,
+                te = 50,
                 ee = 100,
-                re = 256,
-                ne = 32,
-                ae = 190,
-                ie = ne,
-                oe = 6e5,
-                _e = [0, 5, 10, 15, 30, Gt.MINUTE, 2 * Gt.MINUTE, 5 * Gt.MINUTE, 10 * Gt.MINUTE, 15 * Gt.MINUTE, 30 * Gt.MINUTE, 1 * Gt.HOUR, 2 * Gt.HOUR, 6 * Gt.HOUR],
-                se = 10,
-                Ee = 26214400,
-                ce = 524288e3,
-                ue = function(t) {
+                re = 100,
+                ne = 256,
+                ae = 32,
+                ie = 190,
+                oe = ae,
+                _e = 6e5,
+                se = [0, 5, 10, 15, 30, yt.MINUTE, 2 * yt.MINUTE, 5 * yt.MINUTE, 10 * yt.MINUTE, 15 * yt.MINUTE, 30 * yt.MINUTE, 1 * yt.HOUR, 2 * yt.HOUR, 6 * yt.HOUR],
+                Ee = 10,
+                ce = 26214400,
+                ue = 524288e3,
+                Ie = function(t) {
                     return "||".concat(t, "||")
                 },
-                Ie = /^\|\|([\s\S]+?)\|\|/,
-                Re = /^<id:(home|browse|customize|guide)>/,
-                le = /^\d{17,19}$/;
+                Re = /^\|\|([\s\S]+?)\|\|/,
+                le = /^<id:(home|browse|customize|guide)>/,
+                Ae = /^\d{17,19}$/;
             ! function(t) {
                 t.MESSAGE = "MESSAGE";
                 t.MESSAGE_GROUP_BLOCKED = "MESSAGE_GROUP_BLOCKED";
@@ -22860,11 +22864,11 @@
                 t.MESSAGE_GROUP = "MESSAGE_GROUP";
                 t.DIVIDER_TIME_STAMP = "DIVIDER_TIME_STAMP";
                 t.DIVIDER_NEW_MESSAGES = "DIVIDER_NEW_MESSAGES"
-            }(wt || (wt = {}));
+            }(Ht || (Ht = {}));
             ! function(t) {
                 t.VIDEO = "video";
                 t.VOICE = "voice"
-            }(Ht || (Ht = {}));
+            }(Yt || (Yt = {}));
             ! function(t) {
                 t[t.PLAYING = 0] = "PLAYING";
                 t[t.STREAMING = 1] = "STREAMING";
@@ -22872,49 +22876,49 @@
                 t[t.WATCHING = 3] = "WATCHING";
                 t[t.CUSTOM_STATUS = 4] = "CUSTOM_STATUS";
                 t[t.COMPETING = 5] = "COMPETING"
-            }(Yt || (Yt = {}));
+            }(xt || (xt = {}));
             ! function(t) {
                 t.GAME = "game";
                 t.USER = "user";
                 t.GROUP = "group"
-            }(xt || (xt = {}));
+            }(kt || (kt = {}));
             ! function(t) {
                 t.LOADING = "LOADING";
                 t.COMPLETE = "COMPLETE";
                 t.FAILED = "FAILED"
-            }(kt || (kt = {}));
+            }(Kt || (Kt = {}));
             ! function(t) {
                 t.FEATURED = "featured";
                 t.GAMES_YOU_PLAY = "gamesYouPlay";
                 t.SEARCH = "search";
                 t.MISC = "misc"
-            }(Kt || (Kt = {}));
-            var Ae, Te, fe, de, Ne, Oe, pe, he = 128,
-                Se = 1024,
-                Le = 2e3,
-                De = 8e3,
-                Ce = 64e3,
-                ge = 96e3,
-                Ue = 1e3,
-                Pe = "0000",
-                Me = "1",
-                me = 99,
-                Ge = 1e4,
+            }(Vt || (Vt = {}));
+            var Te, fe, de, Ne, Oe, pe, he, Se = 128,
+                Le = 1024,
+                De = 2e3,
+                Ce = 8e3,
+                ge = 64e3,
+                Ue = 96e3,
+                Pe = 1e3,
+                Me = "0000",
+                me = "1",
+                Ge = 99,
                 ye = 1e4,
-                ve = 50,
-                Be = 150,
-                be = 300,
-                we = 10,
-                He = 20,
-                Ye = 25,
-                xe = "#0000",
-                ke = 240,
-                Ke = 480,
-                Ve = 650,
-                Fe = "DEVICE_TOKEN",
-                We = "DEVICE_VOIP_TOKEN",
-                je = "first_run_date_key",
-                Xe = Object.freeze({
+                ve = 1e4,
+                Be = 50,
+                be = 150,
+                we = 300,
+                He = 10,
+                Ye = 20,
+                xe = 25,
+                ke = "#0000",
+                Ke = 240,
+                Ve = 480,
+                Fe = 650,
+                We = "DEVICE_TOKEN",
+                je = "DEVICE_VOIP_TOKEN",
+                Xe = "first_run_date_key",
+                ze = Object.freeze({
                     API_DOCS: "".concat(window.GLOBAL_ENV.MARKETING_ENDPOINT, "/developers/docs/intro"),
                     API_DOCS_GAME_AND_SERVER_MANAGEMENT: "".concat(window.GLOBAL_ENV.MARKETING_ENDPOINT, "/developers/docs/game-and-server-management/alpha-and-beta-testing"),
                     API_DOCS_APPLICATION_SKUS_INDEX: function(t) {
@@ -22961,7 +22965,7 @@
                     INVITES_HELP: "https://support.discord.com/hc/en-us/articles/208866998-Invites-101",
                     SAFETY_CENTER: "".concat(window.GLOBAL_ENV.MARKETING_ENDPOINT, "/safetycenter")
                 }),
-                ze = Object.freeze({
+                Ze = Object.freeze({
                     DEVELOPER_PORTAL: "/developers",
                     DEVELOPER_PORTAL_GUILD_ANALYTICS: function(t) {
                         return "/developers/servers/".concat(t)
@@ -22971,11 +22975,11 @@
                         return "/developers/teams/".concat(t, "/payout-settings")
                     }
                 }),
-                Ze = 10,
-                $e = 25,
-                qe = /^FILTER_/,
-                Je = /^ANSWER_/,
-                Qe = 32;
+                $e = 10,
+                qe = 25,
+                Je = /^FILTER_/,
+                Qe = /^ANSWER_/,
+                tr = 32;
             ! function(t) {
                 t.GUILD = "GUILD";
                 t.CHANNEL = "CHANNEL";
@@ -22991,12 +22995,12 @@
                 t.EMOJI_REACTION = "EMOJI_REACTION";
                 t.DMS = "DMS";
                 t.THREAD = "THREAD"
-            }(Ae || (Ae = {}));
+            }(Te || (Te = {}));
             ! function(t) {
                 t.NEWEST = "newest";
                 t.OLDEST = "oldest";
                 t.MOST_RELEVANT = "most_relevant"
-            }(Te || (Te = {}));
+            }(fe || (fe = {}));
             ! function(t) {
                 t[t.UNKNOWN_ACCOUNT = 10001] = "UNKNOWN_ACCOUNT";
                 t[t.UNKNOWN_APPLICATION = 10002] = "UNKNOWN_APPLICATION";
@@ -23150,7 +23154,7 @@
                 t[t.GUILD_JOIN_INVITE_LIMITED_ACCESS = 400002] = "GUILD_JOIN_INVITE_LIMITED_ACCESS";
                 t[t.GUILD_GO_LIVE_LIMITED_ACCESS = 400003] = "GUILD_GO_LIVE_LIMITED_ACCESS";
                 t[t.GUILD_LIMITED_ACCESS_MAX = 409999] = "GUILD_LIMITED_ACCESS_MAX"
-            }(fe || (fe = {}));
+            }(de || (de = {}));
             ! function(t) {
                 t.GUILD_CREATE_INVITE_SUGGESTION = "Guild Create Invite Suggestion";
                 t.ADD_FRIENDS_TO_DM = "Add Friends to DM";
@@ -23218,17 +23222,17 @@
                 t.APP_DIRECTORY_PROFILE = "App Directory Profile";
                 t.INTERACTION_RESPONSE = "Interaction Response";
                 t.CONSOLE_LAN_DETECTION_ACTION_SHEET = "Console LAN Detection Action Sheet"
-            }(de || (de = {}));
+            }(Ne || (Ne = {}));
             ! function(t) {
                 t.JOIN = "join";
                 t.ASK_TO_JOIN = "ask to join";
                 t.LAUNCH = "launch";
                 t.SPECTATE = "spectate"
-            }(Ne || (Ne = {}));
+            }(Oe || (Oe = {}));
             ! function(t) {
                 t.ONLINE_DESKTOP = "online-desktop";
                 t.ONLINE_MOBILE = "online-mobile-only"
-            }(Oe || (Oe = {}));
+            }(pe || (pe = {}));
             ! function(t) {
                 t.AUTH = "Auth";
                 t.STORE_LISTING = "Store Listing";
@@ -23283,8 +23287,8 @@
                 t.ACTIVITY_UPSELL_ACTION_SHEET = "Activity Upsell Action Sheet";
                 t.PREMIUM_TRIAL_TUTORIAL_COACHMARK = "Premium Tutorial Coachmark";
                 t.GUILD_BOOSTING_USER_SETTINGS = "Guild Boosting User Settings"
-            }(pe || (pe = {}));
-            var tr, er, rr, nr, ar = "help_center_cta";
+            }(he || (he = {}));
+            var er, rr, nr, ar, ir = "help_center_cta";
             ! function(t) {
                 t.HERO = "Hero";
                 t.BODY = "Body";
@@ -23587,7 +23591,7 @@
                 t.COMMUNITY_ALERTS = "Community Alerts Settings";
                 t.SUMMARY_ACTION_SHEET = "Summary Action Sheet";
                 t.COLLECTIBLES_SHOP_DETAILS_MODAL = "Collectibles Shop Details Modal"
-            }(tr || (tr = {}));
+            }(er || (er = {}));
             ! function(t) {
                 t.TOOLTIP = "Tooltip";
                 t.CARD = "Card";
@@ -23685,7 +23689,7 @@
                 t.REACTION_RIGHT_CLICK_MENU_UPSELL = "REACTION_RIGHT_CLICK_MENU_UPSELL";
                 t.REMIXING_ACTION_SHEET_UPSELL = "REMIXING_ACTION_SHEET_UPSELL";
                 t.MESSAGE_REMIX_BUTTON = "MESSAGE_REMIX_BUTTON"
-            }(er || (er = {}));
+            }(rr || (rr = {}));
             ! function(t) {
                 t.GIFT = "gift";
                 t.BUY = "buy";
@@ -23702,62 +23706,62 @@
                 t.REACTION = "reaction";
                 t.CANT_ADD_OR_REMOVE = "cant_add_or_remove";
                 t.REACTION_OVERFLOW = "reaction_overflow"
-            }(rr || (rr = {}));
+            }(nr || (nr = {}));
             ! function(t) {
                 t.PRIMARY = "primary";
                 t.SECONDARY = "secondary";
                 t.DISMISS = "dismiss"
-            }(nr || (nr = {}));
-            var ir, or, _r, sr, Er, cr, ur, Ir, Rr, lr, Ar, Tr = {
-                    page: pe.DIRECT,
-                    object: er.WEB_URL
+            }(ar || (ar = {}));
+            var or, _r, sr, Er, cr, ur, Ir, Rr, lr, Ar, Tr, fr = {
+                    page: he.DIRECT,
+                    object: rr.WEB_URL
                 },
-                fr = Object.freeze((x(ir = {
-                        TEXT_PLAYGROUND: tr.SETTINGS_TEXT_PLAYGROUND,
-                        OVERVIEW: tr.SETTINGS_OVERVIEW,
-                        BROWSER: tr.SETTINGS_BROWSER,
-                        CHANGE_LOG: tr.SETTINGS_CHANGELOG,
-                        PREMIUM_GIFTING: tr.SETTINGS_PREMIUM_GIFTING,
-                        BLOCKED_USERS: tr.SETTINGS_BLOCKED_USERS,
-                        CUSTOM_STATUS: tr.SETTINGS_CUSTOM_STATUS,
-                        CUSTOM_STATUS_EMOJI_PICKER: tr.SETTINGS_CUSTOM_STATUS_EMOJI_PICKER,
-                        BUILD_OVERRIDE: tr.SETTINGS_BUILD_OVERRIDE,
-                        CHANGELOG_OVERRIDE: tr.SETTINGS_CHANGELOG_OVERRIDE,
-                        ACCOUNT: tr.SETTINGS_ACCOUNT,
-                        ACCOUNT_CHANGE_USERNAME: tr.SETTINGS_CHANGE_USERNAME,
-                        ACCOUNT_CHANGE_PASSWORD: tr.SETTINGS_CHANGE_PASSWORD,
-                        ACCOUNT_CONFIRM_PASSWORD: tr.SETTINGS_CONFIRM_PASSWORD,
-                        ACCOUNT_BACKUP_CODES: tr.SETTINGS_BACKUP_CODES,
-                        ACCOUNT_CONFIRM_VIEW_BACKUP_CODES: tr.SETTINGS_BACKUP_CODES,
-                        CONNECTIONS: tr.SETTINGS_CONNECTIONS,
-                        CONNECTIONS_XBOX: tr.SETTINGS_CONNECTIONS_XBOX,
-                        AUTHORIZED_APPS: tr.SETTINGS_AUTHORIZED_APPS,
-                        TEXT: tr.SETTINGS_TEXT_AND_IMAGES,
-                        VOICE: tr.SETTINGS_VOICE_AND_VIDEO,
-                        PRIVACY_AND_SAFETY: tr.SETTINGS_PRIVACY_AND_SAFETY,
-                        NOTIFICATIONS: tr.SETTINGS_NOTIFICATIONS,
-                        APP_ICONS: tr.SETTINGS_APP_ICONS,
-                        DATA: tr.SETTINGS_DATA,
-                        EMAILS: tr.SETTINGS_EMAILS,
-                        ACTIVITY_PRIVACY: tr.SETTINGS_ACTIVITY_PRIVACY,
-                        REGISTERED_GAMES: tr.SETTINGS_GAME_ACTIVITY,
-                        KEYBINDS: tr.SETTINGS_KEYBINDS,
-                        APPEARANCE: tr.SETTINGS_APPEARANCE,
-                        ACCESSIBILITY: tr.SETTINGS_ACCESSIBILITY,
-                        OVERLAY: tr.SETTINGS_OVERLAY,
-                        LOCALE: tr.SETTINGS_LANGUAGE,
-                        STREAMER_MODE: tr.SETTINGS_STREAMER_MODE,
-                        SUBSCRIPTIONS: tr.SETTINGS_SUBSCRIPTIONS,
-                        PREMIUM: tr.SETTINGS_PREMIUM,
-                        PREMIUM_PLAN_SELECT: tr.SETTINGS_PREMIUM_PLAN_SELECT,
-                        PREMIUM_PLAN_COMPARISON: tr.SETTINGS_PREMIUM_PLAN_COMPARISON,
-                        GUILD_ROLE_SUBSCRIPTIONS: tr.GUILD_ROLE_SUBSCRIPTION,
-                        GUILD_ROLE_SUBSCRIPTIONS_CANCEL: tr.GUILD_ROLE_SUBSCRIPTION_CANCEL,
-                        GUILD_BOOSTING: tr.GUILD_BOOSTING,
-                        WEBAUTHN_VIEW: tr.SETTINGS_WEBAUTHN_VIEW
-                    }, w.cP, tr.GUILD_ROLE_SUBSCRIPTION), x(ir, "BILLING", tr.SETTINGS_BILLING), x(ir, "EXPERIMENTS", tr.SETTINGS_EXPERIMENTS), x(ir, "DEVELOPER_OPTIONS", tr.SETTINGS_DEVELOPER_OPTIONS), x(ir, "WINDOWS", tr.SETTINGS_WINDOWS), x(ir, "LINUX", tr.SETTINGS_LINUX), x(ir, "HYPESQUAD_ONLINE", tr.SETTINGS_HYPESQUAD_ONLINE), x(ir, "DESKTOP_APP", tr.SETTINGS_DESKTOP_APP), x(ir, "INVENTORY", tr.SETTINGS_INVENTORY), x(ir, "DEBUG_LOGS", tr.SETTINGS_DEBUG_LOGS), x(ir, "DATABASE_CONTROLS", tr.SETTINGS_DATABASE_CONTROLS), x(ir, "STARTUP_TIMINGS", tr.SETTINGS_STARTUP_TIMINGS), x(ir, "TEXT_COMPONENT", tr.TEXT_COMPONENT), x(ir, "DESIGN_SYSTEM", tr.DESIGN_SYSTEM), x(ir, "DESIGN_SYSTEM_TEXT", tr.DESIGN_SYSTEM_TEXT), x(ir, "DESIGN_SYSTEM_BUTTON", tr.DESIGN_SYSTEM_BUTTON),
-                    x(ir, "DESIGN_SYSTEM_TABLE_ROW", tr.DESIGN_SYSTEM_TABLE_ROW), x(ir, "DESIGN_SYSTEM_ALERT_MODAL", tr.DESIGN_SYSTEM_ALERT_MODAL), x(ir, "DESIGN_SYSTEM_BACKGROUND_BLUR_VIEW", tr.DESIGN_SYSTEM_BACKGROUND_BLUR_VIEW), x(ir, "DESIGN_SYSTEM_SHADOWS", tr.DESIGN_SYSTEM_SHADOWS), x(ir, "DESIGN_SYSTEM_SEGMENTED_CONTROL", tr.DESIGN_SYSTEM_SEGMENTED_CONTROL), x(ir, "DESIGN_SYSTEM_TABS", tr.DESIGN_SYSTEM_TABS), x(ir, "DESIGN_SYSTEM_CONTEXT_MENU", tr.DESIGN_SYSTEM_CONTEXT_MENU), x(ir, "DESIGN_SYSTEM_TOAST", tr.DESIGN_SYSTEM_TOAST), x(ir, "DESIGN_SYSTEM_TEXT_INPUT", tr.DESIGN_SYSTEM_TEXT_INPUT), x(ir, "DESIGN_SYSTEM_TOOLTIP", tr.DESIGN_SYSTEM_TOOLTIP), x(ir, "DESIGN_SYSTEM_COACHMARK", tr.DESIGN_SYSTEM_COACHMARK), x(ir, "DESIGN_SYSTEM_STACK", tr.DESIGN_SYSTEM_STACK), x(ir, "DESIGN_SYSTEM_BACKDROP", tr.DESIGN_SYSTEM_BACKDROP), x(ir, "DESIGN_SYSTEM_MODAL", tr.DESIGN_SYSTEM_MODAL), x(ir, "DESIGN_SYSTEM_SHEETS", tr.DESIGN_SYSTEM_SHEETS), x(ir, "ADVANCED", tr.SETTINGS_ADVANCED), x(ir, "PROFILE_CUSTOMIZATION", tr.SETTINGS_CUSTOMIZE_PROFILE),
-                    x(ir, "PROFILE_CUSTOMIZATION_TRY_IT_OUT", tr.SETTINGS_CUSTOMIZE_PROFILE_TRY_IT_OUT), x(ir, "PROFILE_CUSTOMIZATION_AVATAR_DECORATION", tr.SETTINGS_CUSTOMIZE_PROFILE_AVATAR_DECORATION), x(ir, "HOTSPOT_OPTIONS", tr.SETTINGS_HOTSPOT_OPTIONS), x(ir, "DISMISSIBLE_CONTENT_OPTIONS", tr.SETTINGS_DISMISSIBLE_CONTENT_OPTIONS), x(ir, "PAYMENT_FLOW_MODAL_TEST_PAGE", tr.SETTINGS_PAYMENT_FLOW_MODAL_TEST_PAGE), x(ir, "POGGERMODE", tr.SETTINGS_POGGERMODE), x(ir, "SESSIONS", tr.SETTINGS_SESSIONS), x(ir, "FAMILY_CENTER", tr.SETTINGS_FAMILY_CENTER), x(ir, "FRIEND_REQUESTS", tr.SETTINGS_FRIEND_REQUESTS), x(ir, "CLIPS", tr.SETTINGS_CLIPS), x(ir, "SPEED_TEST", tr.SETTINGS_SPEED_TEST), x(ir, "COMMUNITY_ALERTS", tr.COMMUNITY_ALERTS), ir));
+                dr = Object.freeze((x(or = {
+                        TEXT_PLAYGROUND: er.SETTINGS_TEXT_PLAYGROUND,
+                        OVERVIEW: er.SETTINGS_OVERVIEW,
+                        BROWSER: er.SETTINGS_BROWSER,
+                        CHANGE_LOG: er.SETTINGS_CHANGELOG,
+                        PREMIUM_GIFTING: er.SETTINGS_PREMIUM_GIFTING,
+                        BLOCKED_USERS: er.SETTINGS_BLOCKED_USERS,
+                        CUSTOM_STATUS: er.SETTINGS_CUSTOM_STATUS,
+                        CUSTOM_STATUS_EMOJI_PICKER: er.SETTINGS_CUSTOM_STATUS_EMOJI_PICKER,
+                        BUILD_OVERRIDE: er.SETTINGS_BUILD_OVERRIDE,
+                        CHANGELOG_OVERRIDE: er.SETTINGS_CHANGELOG_OVERRIDE,
+                        ACCOUNT: er.SETTINGS_ACCOUNT,
+                        ACCOUNT_CHANGE_USERNAME: er.SETTINGS_CHANGE_USERNAME,
+                        ACCOUNT_CHANGE_PASSWORD: er.SETTINGS_CHANGE_PASSWORD,
+                        ACCOUNT_CONFIRM_PASSWORD: er.SETTINGS_CONFIRM_PASSWORD,
+                        ACCOUNT_BACKUP_CODES: er.SETTINGS_BACKUP_CODES,
+                        ACCOUNT_CONFIRM_VIEW_BACKUP_CODES: er.SETTINGS_BACKUP_CODES,
+                        CONNECTIONS: er.SETTINGS_CONNECTIONS,
+                        CONNECTIONS_XBOX: er.SETTINGS_CONNECTIONS_XBOX,
+                        AUTHORIZED_APPS: er.SETTINGS_AUTHORIZED_APPS,
+                        TEXT: er.SETTINGS_TEXT_AND_IMAGES,
+                        VOICE: er.SETTINGS_VOICE_AND_VIDEO,
+                        PRIVACY_AND_SAFETY: er.SETTINGS_PRIVACY_AND_SAFETY,
+                        NOTIFICATIONS: er.SETTINGS_NOTIFICATIONS,
+                        APP_ICONS: er.SETTINGS_APP_ICONS,
+                        DATA: er.SETTINGS_DATA,
+                        EMAILS: er.SETTINGS_EMAILS,
+                        ACTIVITY_PRIVACY: er.SETTINGS_ACTIVITY_PRIVACY,
+                        REGISTERED_GAMES: er.SETTINGS_GAME_ACTIVITY,
+                        KEYBINDS: er.SETTINGS_KEYBINDS,
+                        APPEARANCE: er.SETTINGS_APPEARANCE,
+                        ACCESSIBILITY: er.SETTINGS_ACCESSIBILITY,
+                        OVERLAY: er.SETTINGS_OVERLAY,
+                        LOCALE: er.SETTINGS_LANGUAGE,
+                        STREAMER_MODE: er.SETTINGS_STREAMER_MODE,
+                        SUBSCRIPTIONS: er.SETTINGS_SUBSCRIPTIONS,
+                        PREMIUM: er.SETTINGS_PREMIUM,
+                        PREMIUM_PLAN_SELECT: er.SETTINGS_PREMIUM_PLAN_SELECT,
+                        PREMIUM_PLAN_COMPARISON: er.SETTINGS_PREMIUM_PLAN_COMPARISON,
+                        GUILD_ROLE_SUBSCRIPTIONS: er.GUILD_ROLE_SUBSCRIPTION,
+                        GUILD_ROLE_SUBSCRIPTIONS_CANCEL: er.GUILD_ROLE_SUBSCRIPTION_CANCEL,
+                        GUILD_BOOSTING: er.GUILD_BOOSTING,
+                        WEBAUTHN_VIEW: er.SETTINGS_WEBAUTHN_VIEW
+                    }, w.cP, er.GUILD_ROLE_SUBSCRIPTION), x(or, "BILLING", er.SETTINGS_BILLING), x(or, "EXPERIMENTS", er.SETTINGS_EXPERIMENTS), x(or, "DEVELOPER_OPTIONS", er.SETTINGS_DEVELOPER_OPTIONS), x(or, "WINDOWS", er.SETTINGS_WINDOWS), x(or, "LINUX", er.SETTINGS_LINUX), x(or, "HYPESQUAD_ONLINE", er.SETTINGS_HYPESQUAD_ONLINE), x(or, "DESKTOP_APP", er.SETTINGS_DESKTOP_APP), x(or, "INVENTORY", er.SETTINGS_INVENTORY), x(or, "DEBUG_LOGS", er.SETTINGS_DEBUG_LOGS),
+                    x(or, "DATABASE_CONTROLS", er.SETTINGS_DATABASE_CONTROLS), x(or, "STARTUP_TIMINGS", er.SETTINGS_STARTUP_TIMINGS), x(or, "TEXT_COMPONENT", er.TEXT_COMPONENT), x(or, "DESIGN_SYSTEM", er.DESIGN_SYSTEM), x(or, "DESIGN_SYSTEM_TEXT", er.DESIGN_SYSTEM_TEXT), x(or, "DESIGN_SYSTEM_BUTTON", er.DESIGN_SYSTEM_BUTTON), x(or, "DESIGN_SYSTEM_TABLE_ROW", er.DESIGN_SYSTEM_TABLE_ROW), x(or, "DESIGN_SYSTEM_ALERT_MODAL", er.DESIGN_SYSTEM_ALERT_MODAL), x(or, "DESIGN_SYSTEM_BACKGROUND_BLUR_VIEW", er.DESIGN_SYSTEM_BACKGROUND_BLUR_VIEW), x(or, "DESIGN_SYSTEM_SHADOWS", er.DESIGN_SYSTEM_SHADOWS), x(or, "DESIGN_SYSTEM_SEGMENTED_CONTROL", er.DESIGN_SYSTEM_SEGMENTED_CONTROL), x(or, "DESIGN_SYSTEM_TABS", er.DESIGN_SYSTEM_TABS), x(or, "DESIGN_SYSTEM_CONTEXT_MENU", er.DESIGN_SYSTEM_CONTEXT_MENU), x(or, "DESIGN_SYSTEM_TOAST", er.DESIGN_SYSTEM_TOAST), x(or, "DESIGN_SYSTEM_TEXT_INPUT", er.DESIGN_SYSTEM_TEXT_INPUT), x(or, "DESIGN_SYSTEM_TOOLTIP", er.DESIGN_SYSTEM_TOOLTIP), x(or, "DESIGN_SYSTEM_COACHMARK", er.DESIGN_SYSTEM_COACHMARK),
+                    x(or, "DESIGN_SYSTEM_STACK", er.DESIGN_SYSTEM_STACK), x(or, "DESIGN_SYSTEM_BACKDROP", er.DESIGN_SYSTEM_BACKDROP), x(or, "DESIGN_SYSTEM_MODAL", er.DESIGN_SYSTEM_MODAL), x(or, "DESIGN_SYSTEM_SHEETS", er.DESIGN_SYSTEM_SHEETS), x(or, "ADVANCED", er.SETTINGS_ADVANCED), x(or, "PROFILE_CUSTOMIZATION", er.SETTINGS_CUSTOMIZE_PROFILE), x(or, "PROFILE_CUSTOMIZATION_TRY_IT_OUT", er.SETTINGS_CUSTOMIZE_PROFILE_TRY_IT_OUT), x(or, "PROFILE_CUSTOMIZATION_AVATAR_DECORATION", er.SETTINGS_CUSTOMIZE_PROFILE_AVATAR_DECORATION), x(or, "HOTSPOT_OPTIONS", er.SETTINGS_HOTSPOT_OPTIONS), x(or, "DISMISSIBLE_CONTENT_OPTIONS", er.SETTINGS_DISMISSIBLE_CONTENT_OPTIONS), x(or, "PAYMENT_FLOW_MODAL_TEST_PAGE", er.SETTINGS_PAYMENT_FLOW_MODAL_TEST_PAGE), x(or, "POGGERMODE", er.SETTINGS_POGGERMODE), x(or, "SESSIONS", er.SETTINGS_SESSIONS), x(or, "FAMILY_CENTER", er.SETTINGS_FAMILY_CENTER), x(or, "FRIEND_REQUESTS", er.SETTINGS_FRIEND_REQUESTS), x(or, "CLIPS", er.SETTINGS_CLIPS), x(or, "SPEED_TEST", er.SETTINGS_SPEED_TEST), x(or, "COMMUNITY_ALERTS", er.COMMUNITY_ALERTS), or));
             ! function(t) {
                 t.APPLICATION_STORE = "Application Store Verified Guild Invite - Lurker";
                 t.CHAT_INPUT_BLOCKER = "Chat Input Blocker - Lurker Mode";
@@ -23765,13 +23769,13 @@
                 t.MOBILE_GUILD_DISCOVERY = "iOS Guild Discovery - Lurker";
                 t.DIRECTORY_ENTRY = "Directory Channel Entry";
                 t.DIRECTORY_EVENTS = "Directory Channel Events"
-            }(or || (or = {}));
+            }(_r || (_r = {}));
             ! function(t) {
                 t.QR_CODE = "QR Code Login";
                 t.MOBILE_WEB_HANDOFF = "Mobile Web Handoff";
                 t.DEFAULT = "The default username password Login";
                 t.MFA = "MFA Login"
-            }(_r || (_r = {}));
+            }(sr || (sr = {}));
             ! function(t) {
                 t.INVITE_NOTICE = "Invite Notice";
                 t.SETTINGS_INVITE = "Settings Invite";
@@ -23796,7 +23800,7 @@
                 t.ACTIVITY_ENTRY_POINT_TILE = "Activity Entry Point Tile";
                 t.ADD_FRIENDS_MODAL = "Add Friends Modal";
                 t.ADD_FRIENDS_WIDGET = "Add Friends Widget"
-            }(sr || (sr = {}));
+            }(Er || (Er = {}));
             ! function(t) {
                 t.GUILD_BANNER_NOTICE = "Guild Banner Notice";
                 t.GUILD_MFA_WARNING = "Guild MFA Warning";
@@ -23815,7 +23819,7 @@
                 t.CLYDE_USER_NUX_NOTICE = "Clyde User Nux Notice";
                 t.SUMMARIES_NOTICE = "Summaries Channel Notice";
                 t.SUMMARIES_ENABLED_NOTICE = "Summaries Enabled Notice"
-            }(Er || (Er = {}));
+            }(cr || (cr = {}));
             ! function(t) {
                 t.APPLICATION = "Application";
                 t.SERVER_INVITE = "Server Invite";
@@ -23823,12 +23827,12 @@
                 t.FRIEND_INVITE = "Friend Invite";
                 t.SPOTIFY = "Spotify";
                 t.STREAM = "Stream"
-            }(cr || (cr = {}));
+            }(ur || (ur = {}));
             ! function(t) {
                 t.DIRECT_MESSAGE = "Direct Message";
                 t.SMS = "SMS";
                 t.EMAIL = "Email"
-            }(ur || (ur = {}));
+            }(Ir || (Ir = {}));
             ! function(t) {
                 t.SHARE = "Share";
                 t.COPY = "Copy";
@@ -23841,13 +23845,13 @@
                 t.TWITTER = "Twitter";
                 t.MESSENGER = "Messenger";
                 t.TELEGRAM = "Telegram"
-            }(Ir || (Ir = {}));
+            }(Rr || (Rr = {}));
             ! function(t) {
                 t[t.DEFAULT = 0] = "DEFAULT";
                 t[t.EXPLICIT = 1] = "EXPLICIT";
                 t[t.SAFE = 2] = "SAFE";
                 t[t.AGE_RESTRICTED = 3] = "AGE_RESTRICTED"
-            }(Rr || (Rr = {}));
+            }(lr || (lr = {}));
             ! function(t) {
                 t.IFRAME_MOUNT = "IFRAME_MOUNT";
                 t.IFRAME_UNMOUNT = "IFRAME_UNMOUNT";
@@ -23926,12 +23930,12 @@
                 t.VOICE_PANEL_OPEN = "VOICE_PANEL_OPEN";
                 t.VOICE_PANEL_CLOSE = "VOICE_PANEL_CLOSE";
                 t.VOICE_PANEL_PIP_CONTENT_READY = "VOICE_PANEL_PIP_CONTENT_READY"
-            }(lr || (lr = {}));
+            }(Ar || (Ar = {}));
             ! function(t) {
                 t.TOGGLE_REACTION_POPOUT = "TOGGLE_REACTION_POPOUT";
                 t.ANIMATE_CHAT_AVATAR = "ANIMATE_CHAT_AVATAR"
-            }(Ar || (Ar = {}));
-            var dr, Nr, Or, pr, hr = 50;
+            }(Tr || (Tr = {}));
+            var Nr, Or, pr, hr, Sr = 50;
             ! function(t) {
                 t.TWITCH = "twitch";
                 t.YOUTUBE = "youtube";
@@ -23959,7 +23963,7 @@
                 t.TIKTOK = "tiktok";
                 t.CRUNCHYROLL = "crunchyroll";
                 t.DOMAIN = "domain"
-            }(dr || (dr = {}));
+            }(Nr || (Nr = {}));
             ! function(t) {
                 t.DESKTOP = "desktop";
                 t.XBOX = "xbox";
@@ -23969,36 +23973,36 @@
                 t.EMBEDDED = "embedded";
                 t.PS4 = "ps4";
                 t.PS5 = "ps5"
-            }(Nr || (Nr = {}));
+            }(Or || (Or = {}));
             ! function(t) {
                 t.IOS = "iOS";
                 t.ANDROID = "Android"
-            }(Or || (Or = {}));
+            }(pr || (pr = {}));
             ! function(t) {
                 t[t.PRIVATE = 0] = "PRIVATE";
                 t[t.PUBLIC = 1] = "PUBLIC"
-            }(pr || (pr = {}));
+            }(hr || (hr = {}));
             Object.freeze({
                 OAUTH2_REDIRECT_FRAGMENT: "/_discord?",
                 GAME_INVITE_FRAGMENT: "/_discord/join?secret=",
                 AUTHORIZATION_CANCEL_FRAGMENT: "/_discord/auth?cancel=true"
             });
-            var Sr = new Set([dr.FACEBOOK, dr.CONTACTS]),
-                Lr = new Set([dr.SPOTIFY, dr.XBOX, dr.PLAYSTATION, dr.PLAYSTATION_STAGING, dr.CRUNCHYROLL]),
-                Dr = Object.freeze({
+            var Lr = new Set([Nr.FACEBOOK, Nr.CONTACTS]),
+                Dr = new Set([Nr.SPOTIFY, Nr.XBOX, Nr.PLAYSTATION, Nr.PLAYSTATION_STAGING, Nr.CRUNCHYROLL]),
+                Cr = Object.freeze({
                     DESKTOP: "".concat(location.protocol).concat(window.GLOBAL_ENV.API_ENDPOINT, "/download"),
                     IOS: "https://itunes.apple.com/app/discord/id985746746",
                     ANDROID: "https://play.google.com/store/apps/details?id=com.discord"
                 }),
-                Cr = 10070709,
-                gr = [1752220, 3066993, 3447003, 10181046, 15277667, 15844367, 15105570, 15158332, 9807270, 6323595, 1146986, 2067276, 2123412, 7419530, 11342935, 12745742, 11027200, 10038562, 9936031, 5533306],
-                Ur = (0, v._i)(U.Z.BRAND_500);
-            g()(null != Ur, "Brand color could not be parsed");
-            var Pr, Mr, mr, Gr, yr, vr = Ur;
+                gr = 10070709,
+                Ur = [1752220, 3066993, 3447003, 10181046, 15277667, 15844367, 15105570, 15158332, 9807270, 6323595, 1146986, 2067276, 2123412, 7419530, 11342935, 12745742, 11027200, 10038562, 9936031, 5533306],
+                Pr = (0, v._i)(U.Z.BRAND_500);
+            g()(null != Pr, "Brand color could not be parsed");
+            var Mr, mr, Gr, yr, vr, Br = Pr;
             ! function(t) {
                 t.ROLE = "ROLE";
                 t.MEMBER = "MEMBER"
-            }(Pr || (Pr = {}));
+            }(Mr || (Mr = {}));
             ! function(t) {
                 t.VOICE_LEGACY_SUBSYSTEM = "voice_legacy_subsystem";
                 t.DEBUG_LOGGING = "debug_logging";
@@ -24007,7 +24011,7 @@
                 t.CREATE_HOST_ON_ATTACH = "create_host_on_attach";
                 t.USER_DATA_CACHE = "user_data_cache";
                 t.WEBAUTHN = "webauthn"
-            }(Mr || (Mr = {}));
+            }(mr || (mr = {}));
             ! function(t) {
                 t.FILTER_FROM = "FILTER_FROM";
                 t.FILTER_MENTIONS = "FILTER_MENTIONS";
@@ -24029,28 +24033,28 @@
                 t.ANSWER_IN = "ANSWER_IN";
                 t.FILTER_PINNED = "FILTER_PINNED";
                 t.ANSWER_PINNED = "ANSWER_PINNED"
-            }(mr || (mr = {}));
+            }(Gr || (Gr = {}));
             ! function(t) {
                 t.HISTORY = "HISTORY";
                 t.SEARCH_OPTIONS = "SEARCH_OPTIONS";
                 t.DATES = "DATES"
-            }(Gr || (Gr = {}));
+            }(yr || (yr = {}));
             ! function(t) {
                 t.EMPTY = "EMPTY";
                 t.FILTER = "FILTER";
                 t.FILTER_ALL = "FILTER_ALL"
-            }(yr || (yr = {}));
-            var Br, br, wr = "YYYY-MM-DD",
-                Hr = "PrivateChannelRecipientsInvitePopout";
+            }(vr || (vr = {}));
+            var br, wr, Hr = "YYYY-MM-DD",
+                Yr = "PrivateChannelRecipientsInvitePopout";
             ! function(t) {
                 t[t.NONE = 0] = "NONE";
                 t[t.TIER_1 = 1] = "TIER_1";
                 t[t.TIER_2 = 2] = "TIER_2";
                 t[t.TIER_3 = 3] = "TIER_3"
-            }(Br || (Br = {}));
-            var Yr, xr = Object.freeze((x(br = {}, Br.NONE, 0), x(br, Br.TIER_1, 2), x(br, Br.TIER_2, 7), x(br, Br.TIER_3, 14), br)),
-                kr = 7,
-                Kr = 0;
+            }(br || (br = {}));
+            var xr, kr = Object.freeze((x(wr = {}, br.NONE, 0), x(wr, br.TIER_1, 2), x(wr, br.TIER_2, 7), x(wr, br.TIER_3, 14), wr)),
+                Kr = 7,
+                Vr = 0;
             ! function(t) {
                 t[t.DEFAULT = 0] = "DEFAULT";
                 t[t.GIFT = 1] = "GIFT";
@@ -24058,8 +24062,8 @@
                 t[t.PREMIUM_TIER_1 = 3] = "PREMIUM_TIER_1";
                 t[t.PREMIUM_TIER_2 = 4] = "PREMIUM_TIER_2";
                 t[t.MOBILE = 5] = "MOBILE"
-            }(Yr || (Yr = {}));
-            var Vr, Fr, Wr = Object.freeze({
+            }(xr || (xr = {}));
+            var Fr, Wr, jr = Object.freeze({
                 fonts: [{
                     src: "url(https://cdn.discordapp.com/assets/stripe/ggsans-vf.woff2)",
                     family: "gg sans"
@@ -24072,14 +24076,14 @@
                 t[t.CANCELED = 3] = "CANCELED";
                 t[t.ENDED = 4] = "ENDED";
                 t[t.ACCOUNT_HOLD = 6] = "ACCOUNT_HOLD"
-            }(Vr || (Vr = {}));
+            }(Fr || (Fr = {}));
             ! function(t) {
                 t[t.OPEN = 1] = "OPEN";
                 t[t.PAID = 2] = "PAID";
                 t[t.VOID = 3] = "VOID";
                 t[t.UNCOLLECTIBLE = 4] = "UNCOLLECTIBLE"
-            }(Fr || (Fr = {}));
-            var jr, Xr = "Price changed";
+            }(Wr || (Wr = {}));
+            var Xr, zr = "Price changed";
             ! function(t) {
                 t.USER = "USER";
                 t.GLOBAL = "GLOBAL";
@@ -24092,8 +24096,8 @@
                 t.STICKER = "STICKER";
                 t.CHOICE_LOADING = "CHOICE_LOADING";
                 t.LABEL = "LABEL"
-            }(jr || (jr = {}));
-            var zr, Zr, $r, qr, Jr, Qr, tn = Object.freeze({
+            }(Xr || (Xr = {}));
+            var Zr, $r, qr, Jr, Qr, tn, en = Object.freeze({
                 FONT_SIZE_DEFAULT: 16,
                 FONT_SIZE_MIN: 12,
                 FONT_SIZE_MAX: 24,
@@ -24121,7 +24125,7 @@
                 t.ADD_BUTTON = "add button";
                 t.APPS_BUTTON = "apps button";
                 t.APPS = "apps"
-            }(zr || (zr = {}));
+            }(Zr || (Zr = {}));
             ! function(t) {
                 t.APP_OPENED = "app_opened";
                 t.APP_CRASHED = "app_crashed";
@@ -24404,6 +24408,7 @@
                 t.GIFT_CODE_SENT = "gift_code_sent";
                 t.GIFT_CODE_RESOLVED = "gift_code_resolved";
                 t.GIFT_CODE_COPIED = "gift_code_copied";
+                t.GIFT_ACCEPT_STEP = "gift_accept_step";
                 t.SLASH_COMMAND_USED = "slash_command_used";
                 t.KEYBOARD_SHORTCUT_USED = "keyboard_shortcut_used";
                 t.KEYBOARD_MODE_TOGGLED = "keyboard_mode_toggled";
@@ -24841,6 +24846,7 @@
                 t.GUILD_ROLE_SUBSCRIPTION_STORE_PAGE_TOGGLED = "guild_role_subscription_store_page_toggled";
                 t.GUILD_ROLE_SUBSCRIPTION_TEAM_SETUP_CLICKED = "guild_role_subscription_team_setup_clicked";
                 t.GUILD_ROLE_SUBSCRIPTION_SETUP_MODAL_CLOSED = "guild_role_subscription_setup_modal_closed";
+                t.GUILD_SHOP_PREVIEW_CLICK = "guild_shop_preview_click";
                 t.MESSAGE_ACTION_SHEET_OPENED = "message_action_sheet_opened";
                 t.SNOWSGIVING_PAGE_CTA_CLICKED = "snowsgiving_page_cta_clicked";
                 t.REACTION_ACTION_SHEET_OPENED = "reaction_action_sheet_opened";
@@ -24926,12 +24932,12 @@
                 t.UPDATER_METRICS_DOWNLOAD = "updater_metrics_download";
                 t.UPDATER_METRICS_INSTALL = "updater_metrics_install";
                 t.CHANNEL_PROMPT_ACTION_CLICKED = "channel_prompt_action_clicked"
-            }(Zr || (Zr = {}));
+            }($r || ($r = {}));
             ! function(t) {
                 t.CANARY = "canary";
                 t.PTB = "ptb";
                 t.STABLE = "stable"
-            }($r || ($r = {}));
+            }(qr || (qr = {}));
             ! function(t) {
                 t[t.STAFF = 1] = "STAFF";
                 t[t.COLLABORATOR = Math.pow(2, 50)] = "COLLABORATOR";
@@ -24955,7 +24961,7 @@
                 t[t.PREMIUM_PROMO_DISMISSED = 32] = "PREMIUM_PROMO_DISMISSED";
                 t[t.HAS_UNREAD_URGENT_MESSAGES = 8192] = "HAS_UNREAD_URGENT_MESSAGES";
                 t[t.QUARANTINED = Math.pow(2, 44)] = "QUARANTINED"
-            }(qr || (qr = {}));
+            }(Jr || (Jr = {}));
             ! function(t) {
                 t[t.EMBEDDED_IAP = 8] = "EMBEDDED_IAP";
                 t[t.APPLICATION_AUTO_MODERATION_RULE_CREATE_BADGE = 64] = "APPLICATION_AUTO_MODERATION_RULE_CREATE_BADGE";
@@ -24968,7 +24974,7 @@
                 t[t.GATEWAY_MESSAGE_CONTENT_LIMITED = 524288] = "GATEWAY_MESSAGE_CONTENT_LIMITED";
                 t[t.EMBEDDED_FIRST_PARTY = 1048576] = "EMBEDDED_FIRST_PARTY";
                 t[t.APPLICATION_COMMAND_BADGE = 8388608] = "APPLICATION_COMMAND_BADGE"
-            }(Jr || (Jr = {}));
+            }(Qr || (Qr = {}));
             ! function(t) {
                 t.MFA_WARNING = "MFA_WARNING";
                 t.INVITE = "INVITE";
@@ -24994,8 +25000,8 @@
                 t.CLYDE_USER_NUX = "CLYDE_USER_NUX";
                 t.SUMMARIES = "SUMMARIES";
                 t.SUMMARIES_ENABLED = "SUMMARIES_ENABLED"
-            }(Qr || (Qr = {}));
-            var en, rn, nn, an = Object.freeze({
+            }(tn || (tn = {}));
+            var rn, nn, an, on = Object.freeze({
                     STORAGE_MANIFEST: function(t, e) {
                         return "".concat(t, "/storage/").concat(e, "/MANIFEST")
                     },
@@ -25013,14 +25019,14 @@
                         linux: "linux"
                     }
                 }),
-                on = 864e5,
-                _n = 2592e5;
+                _n = 864e5,
+                sn = 2592e5;
             ! function(t) {
                 t.NORMAL = "normal";
                 t.MINIMUM = "minimum";
                 t.NO_CHAT = "no-chat";
                 t.FULL_SCREEN = "full-screen"
-            }(en || (en = {}));
+            }(rn || (rn = {}));
             ! function(t) {
                 t.THEATRE = "theatre";
                 t.FULL_SCREEN = "full-screen";
@@ -25029,7 +25035,7 @@
                 t.PORTRAIT = "portrait";
                 t.LANDSCAPE = "landscape";
                 t.MINIMIZED = "minimized"
-            }(rn || (rn = {}));
+            }(nn || (nn = {}));
             ! function(t) {
                 t.USER_SETTINGS = "USER_SETTINGS";
                 t.CHANNEL_SETTINGS = "CHANNEL_SETTINGS";
@@ -25037,8 +25043,8 @@
                 t.RTC_DEBUG = "RTC_DEBUG";
                 t.GUILD_IDENTITY_SETTINGS = "GUILD_IDENTITY_SETTINGS";
                 t.COLLECTIBLES_SHOP = "COLLECTIBLES_SHOP"
-            }(nn || (nn = {}));
-            var sn, En, cn, un, In, Rn = Object.freeze({
+            }(an || (an = {}));
+            var En, cn, un, In, Rn, ln = Object.freeze({
                 ALL: null,
                 GUILD_UPDATE: 1,
                 CHANNEL_CREATE: 10,
@@ -25119,16 +25125,16 @@
                 t.CREATE = "CREATE";
                 t.UPDATE = "UPDATE";
                 t.DELETE = "DELETE"
-            }(sn || (sn = {}));
+            }(En || (En = {}));
             ! function(t) {
                 t.USER = "1";
                 t.ROLE = "0"
-            }(En || (En = {}));
+            }(cn || (cn = {}));
             ! function(t) {
                 t[t.ROLE = 1] = "ROLE";
                 t[t.USER = 2] = "USER";
                 t[t.CHANNEL = 3] = "CHANNEL"
-            }(cn || (cn = {}));
+            }(un || (un = {}));
             ! function(t) {
                 t.ALL = "ALL";
                 t.UNKNOWN = "UNKNOWN";
@@ -25154,7 +25160,7 @@
                 t.HOME_SETTINGS = "HOME_SETTINGS";
                 t.VOICE_CHANNEL_STATUS = "VOICE_CHANNEL_STATUS";
                 t.CLYDE_AI = "CLYDE_AI"
-            }(un || (un = {}));
+            }(In || (In = {}));
             ! function(t) {
                 t.NAME = "name";
                 t.DESCRIPTION = "description";
@@ -25279,8 +25285,8 @@
                 t.WELCOME_MESSAGE = "welcome_message";
                 t.NEW_MEMBER_ACTIONS = "new_member_actions";
                 t.RESOURCE_CHANNELS = "resource_channels"
-            }(In || (In = {}));
-            var ln, An, Tn, fn = 50;
+            }(Rn || (Rn = {}));
+            var An, Tn, fn, dn = 50;
             ! function(t) {
                 t.AGREEMENTS = "AGREEMENTS";
                 t.REQUIRE_CAPTCHA = "REQUIRE_CAPTCHA";
@@ -25292,10 +25298,10 @@
                 t.REQUIRE_REVERIFIED_EMAIL_OR_VERIFIED_PHONE = "REQUIRE_REVERIFIED_EMAIL_OR_VERIFIED_PHONE";
                 t.REQUIRE_VERIFIED_EMAIL_OR_REVERIFIED_PHONE = "REQUIRE_VERIFIED_EMAIL_OR_REVERIFIED_PHONE";
                 t.REQUIRE_REVERIFIED_EMAIL_OR_REVERIFIED_PHONE = "REQUIRE_REVERIFIED_EMAIL_OR_REVERIFIED_PHONE"
-            }(ln || (ln = {}));
+            }(An || (An = {}));
             ! function(t) {
                 t.UPDATE_PASSWORD = "update_password"
-            }(An || (An = {}));
+            }(Tn || (Tn = {}));
             ! function(t) {
                 t.CAPTCHA = "captcha";
                 t.EMAIL_OR_PHONE = "email_or_phone";
@@ -25303,15 +25309,15 @@
                 t.EMAIL = "email";
                 t.REVERIFY_PHONE = "reverify_phone";
                 t.REVERIFY_EMAIL = "reverify_email"
-            }(Tn || (Tn = {}));
-            var dn, Nn, On, pn, hn, Sn = 512;
+            }(fn || (fn = {}));
+            var Nn, On, pn, hn, Sn, Ln = 512;
             ! function(t) {
                 t[t.PRIMARY = 0] = "PRIMARY";
                 t[t.SECONDARY = 2] = "SECONDARY";
                 t[t.WHEEL = 4] = "WHEEL";
                 t[t.BACK = 8] = "BACK";
                 t[t.FORWARD = 16] = "FORWARD"
-            }(dn || (dn = {}));
+            }(Nn || (Nn = {}));
             ! function(t) {
                 t[t.BACKSPACE = 8] = "BACKSPACE";
                 t[t.TAB = 9] = "TAB";
@@ -25347,29 +25353,29 @@
                 t[t.S = 83] = "S";
                 t[t.U = 85] = "U";
                 t[t.COMMA = 188] = "COMMA"
-            }(Nn || (Nn = {}));
+            }(On || (On = {}));
             ! function(t) {
                 t.TOP_LEFT = "top-left";
                 t.TOP_RIGHT = "top-right";
                 t.BOTTOM_LEFT = "bottom-left";
                 t.BOTTOM_RIGHT = "bottom-right"
-            }(On || (On = {}));
+            }(pn || (pn = {}));
             ! function(t) {
                 t.VIDEO = "VIDEO";
                 t.EMBED_IFRAME = "EMBED_IFRAME"
-            }(pn || (pn = {}));
+            }(hn || (hn = {}));
             ! function(t) {
                 t.GIF = "GIF"
-            }(hn || (hn = {}));
-            var Ln, Dn = Object.freeze({
+            }(Sn || (Sn = {}));
+            var Dn, Cn = Object.freeze({
                 GIPHY: {
-                    type: hn.GIF,
+                    type: Sn.GIF,
                     command: "giphy",
                     title: "Giphy",
                     commandId: "-8"
                 },
                 TENOR: {
-                    type: hn.GIF,
+                    type: Sn.GIF,
                     command: "tenor",
                     title: "Tenor",
                     commandId: "-9"
@@ -25511,21 +25517,21 @@
                 t.SERVER_SUBSCRIPTION_AND_PRODUCTS = "10423011974551";
                 t.SERVER_PRODUCTS = "10423011974551#docs-internal-guid-918e991a-7fff-03d5-8326-5d065e5edeb1";
                 t.WIN32_DEPRECATE = "213491697"
-            }(Ln || (Ln = {}));
-            var Cn, gn, Un, Pn, Mn, mn = function(t) {
+            }(Dn || (Dn = {}));
+            var gn, Un, Pn, Mn, mn, Gn = function(t) {
                     return "https://www.youtube.com/embed/".concat(t)
                 },
-                Gn = function(t) {
+                yn = function(t) {
                     return "https://img.youtube.com/vi/".concat(t, "/maxresdefault.jpg")
                 },
-                yn = "https://discordapp.com/mweb-handoff";
+                vn = "https://discordapp.com/mweb-handoff";
             ! function(t) {
                 t[t.HIDDEN = 1] = "HIDDEN";
                 t[t.PRIVATE = 2] = "PRIVATE";
                 t[t.OVERLAY_DISABLED = 4] = "OVERLAY_DISABLED";
                 t[t.ENTITLED = 8] = "ENTITLED";
                 t[t.PREMIUM = 16] = "PREMIUM"
-            }(Cn || (Cn = {}));
+            }(gn || (gn = {}));
             ! function(t) {
                 t.DONE = "DONE";
                 t.PLANNING = "PLANNING";
@@ -25534,13 +25540,13 @@
                 t.PULLING = "PULLING";
                 t.CONFLICT = "CONFLICT";
                 t.ERROR = "ERROR"
-            }(gn || (gn = {}));
+            }(Un || (Un = {}));
             ! function(t) {
                 t.PULL = "PULL";
                 t.PUSH = "PUSH";
                 t.CONFLICT = "CONFLICT";
                 t.NONE = "NONE"
-            }(Un || (Un = {}));
+            }(Pn || (Pn = {}));
             ! function(t) {
                 t.DISCORD = "discord";
                 t.STEAM = "steam";
@@ -25550,31 +25556,30 @@
                 t.ORIGIN = "origin";
                 t.GOG = "gog";
                 t.EPIC = "epic"
-            }(Pn || (Pn = {}));
-            var vn, Bn, bn = Object.freeze((x(Mn = {}, Pn.DISCORD, "Discord"), x(Mn, Pn.STEAM, "Steam"), x(Mn, Pn.UPLAY, "Uplay"), x(Mn, Pn.BATTLENET, "Battle.net"), x(Mn, Pn.ORIGIN, "Origin"), x(Mn, Pn.GOG, "GOG"),
-                    x(Mn, Pn.TWITCH, "Twitch"), x(Mn, Pn.EPIC, "Epic"), Mn)),
-                wn = 6016,
-                Hn = 3384;
+            }(Mn || (Mn = {}));
+            var Bn, bn, wn = Object.freeze((x(mn = {}, Mn.DISCORD, "Discord"), x(mn, Mn.STEAM, "Steam"), x(mn, Mn.UPLAY, "Uplay"), x(mn, Mn.BATTLENET, "Battle.net"), x(mn, Mn.ORIGIN, "Origin"), x(mn, Mn.GOG, "GOG"), x(mn, Mn.TWITCH, "Twitch"), x(mn, Mn.EPIC, "Epic"), mn)),
+                Hn = 6016,
+                Yn = 3384;
             ! function(t) {
                 t.USAGE_STATISTICS = "usage_statistics";
                 t.PERSONALIZATION = "personalization"
-            }(vn || (vn = {}));
+            }(Bn || (Bn = {}));
             ! function(t) {
                 t[t.MUTUAL_FRIENDS = 2] = "MUTUAL_FRIENDS";
                 t[t.MUTUAL_GUILDS = 4] = "MUTUAL_GUILDS";
                 t[t.NO_RELATION = 8] = "NO_RELATION"
-            }(Bn || (Bn = {}));
-            var Yn, xn = Bn.MUTUAL_FRIENDS | Bn.MUTUAL_GUILDS | Bn.NO_RELATION;
+            }(bn || (bn = {}));
+            var xn, kn = bn.MUTUAL_FRIENDS | bn.MUTUAL_GUILDS | bn.NO_RELATION;
             ! function(t) {
                 t[t.NONE = 0] = "NONE";
                 t[t.FIND_BY_PHONE = 2] = "FIND_BY_PHONE";
                 t[t.FIND_BY_EMAIL = 4] = "FIND_BY_EMAIL"
-            }(Yn || (Yn = {}));
-            var kn, Kn, Vn, Fn = 30;
+            }(xn || (xn = {}));
+            var Kn, Vn, Fn, Wn = 30;
             ! function(t) {
                 t[t.PRIVATE = 1] = "PRIVATE";
                 t[t.PUBLIC = 2] = "PUBLIC"
-            }(kn || (kn = {}));
+            }(Kn || (Kn = {}));
             ! function(t) {
                 t[t.NO_ERROR = 0] = "NO_ERROR";
                 t[t.UNKNOWN_ERROR = 1] = "UNKNOWN_ERROR";
@@ -25584,17 +25589,17 @@
                 t[t.FULL = 5] = "FULL";
                 t[t.LOBBY_LIMIT_REACHED = 6] = "LOBBY_LIMIT_REACHED";
                 t[t.ALREADY_CONNECTING = 7] = "ALREADY_CONNECTING"
-            }(Kn || (Kn = {}));
+            }(Vn || (Vn = {}));
             ! function(t) {
                 t.OVERLAY = "OVERLAY";
                 t.APP = "APP";
                 t.POPOUT = "POPOUT"
-            }(Vn || (Vn = {}));
-            var Wn, jn, Xn, zn, Zn, $n, qn, Jn, Qn, ta, ea, ra, na, aa, ia, oa, _a = __OVERLAY__ ? Vn.OVERLAY : Vn.APP;
+            }(Fn || (Fn = {}));
+            var jn, Xn, zn, Zn, $n, qn, Jn, Qn, ta, ea, ra, na, aa, ia, oa, _a, sa = __OVERLAY__ ? Fn.OVERLAY : Fn.APP;
             ! function(t) {
                 t.COMPLETE = "complete";
                 t.TRANSITION = "transition"
-            }(Wn || (Wn = {}));
+            }(jn || (jn = {}));
             ! function(t) {
                 t.QUEUED = "queued";
                 t.PLANNING = "planning";
@@ -25606,7 +25611,7 @@
                 t.REPAIRING = "repairing";
                 t.POST_INSTALL_SCRIPTS = "running_install_scripts";
                 t.UNINSTALLING = "uninstalling"
-            }(jn || (jn = {}));
+            }(Xn || (Xn = {}));
             ! function(t) {
                 t.INSTALL_REQUIRED = "install_required";
                 t.INSTALLING = "installing";
@@ -25615,7 +25620,7 @@
                 t.UPDATING = "updating";
                 t.REPAIRING = "repairing";
                 t.UNINSTALLING = "uninstalling"
-            }(Xn || (Xn = {}));
+            }(zn || (zn = {}));
             ! function(t) {
                 t.PLAY = "play";
                 t.INSTALL = "install";
@@ -25623,22 +25628,22 @@
                 t.PAUSE = "pause";
                 t.MOVE_UP = "move_up";
                 t.RESUME = "resume"
-            }(zn || (zn = {}));
+            }(Zn || (Zn = {}));
             ! function(t) {
                 t.NAME = "name";
                 t.PLATFORM = "platform";
                 t.ACTIONS = "actions";
                 t.LAST_PLAYED = "last_played"
-            }(Zn || (Zn = {}));
+            }($n || ($n = {}));
             ! function(t) {
                 t.ASCENDING = "asc";
                 t.DESCENDING = "desc"
-            }($n || ($n = {}));
+            }(qn || (qn = {}));
             ! function(t) {
                 t.WINDOWS = "1";
                 t.MACOS = "2";
                 t.LINUX = "3"
-            }(qn || (qn = {}));
+            }(Jn || (Jn = {}));
             ! function(t) {
                 t[t.PURCHASE = 1] = "PURCHASE";
                 t[t.PREMIUM_SUBSCRIPTION = 2] = "PREMIUM_SUBSCRIPTION";
@@ -25648,11 +25653,11 @@
                 t[t.USER_GIFT = 6] = "USER_GIFT";
                 t[t.PREMIUM_PURCHASE = 7] = "PREMIUM_PURCHASE";
                 t[t.APPLICATION_SUBSCRIPTION = 8] = "APPLICATION_SUBSCRIPTION"
-            }(Jn || (Jn = {}));
+            }(Qn || (Qn = {}));
             ! function(t) {
                 t.ESRB = "1";
                 t.PEGI = "2"
-            }(Qn || (Qn = {}));
+            }(ta || (ta = {}));
             ! function(t) {
                 t[t.DURABLE_PRIMARY = 1] = "DURABLE_PRIMARY";
                 t[t.DURABLE = 2] = "DURABLE";
@@ -25660,12 +25665,12 @@
                 t[t.BUNDLE = 4] = "BUNDLE";
                 t[t.SUBSCRIPTION = 5] = "SUBSCRIPTION";
                 t[t.SUBSCRIPTION_GROUP = 6] = "SUBSCRIPTION_GROUP"
-            }(ta || (ta = {}));
+            }(ea || (ea = {}));
             ! function(t) {
                 t[t.FULL = 1] = "FULL";
                 t[t.EARLY_ACCESS = 2] = "EARLY_ACCESS";
                 t[t.VIP_ACCESS = 3] = "VIP_ACCESS"
-            }(ea || (ea = {}));
+            }(ra || (ra = {}));
             ! function(t) {
                 t[t.PREMIUM_PURCHASE = 1] = "PREMIUM_PURCHASE";
                 t[t.HAS_FREE_PREMIUM_CONTENT = 2] = "HAS_FREE_PREMIUM_CONTENT";
@@ -25676,7 +25681,7 @@
                 t[t.AVAILABLE_FOR_SUBSCRIPTION_GIFTING = 64] = "AVAILABLE_FOR_SUBSCRIPTION_GIFTING";
                 t[t.APPLICATION_GUILD_SUBSCRIPTION = 128] = "APPLICATION_GUILD_SUBSCRIPTION";
                 t[t.APPLICATION_USER_SUBSCRIPTION = 256] = "APPLICATION_USER_SUBSCRIPTION"
-            }(ra || (ra = {}));
+            }(na || (na = {}));
             ! function(t) {
                 t[t.PREMIUM = 1] = "PREMIUM";
                 t[t.BOOST = 2] = "BOOST";
@@ -25685,30 +25690,30 @@
                 t[t.GUILD_PRODUCT = 5] = "GUILD_PRODUCT";
                 t[t.APPLICATION = 6] = "APPLICATION";
                 t[t.COLLECTIBLES = 7] = "COLLECTIBLES"
-            }(na || (na = {}));
+            }(aa || (aa = {}));
             ! function(t) {
                 t.HOME = "1";
                 t.BROWSE = "2"
-            }(aa || (aa = {}));
+            }(ia || (ia = {}));
             ! function(t) {
                 t.WIN32 = "win32";
                 t.WIN64 = "win64";
                 t.MACOS = "macos";
                 t.LINUX = "linux"
-            }(ia || (ia = {}));
+            }(oa || (oa = {}));
             ! function(t) {
                 t.HOUSE_1 = "HOUSE_1";
                 t.HOUSE_2 = "HOUSE_2";
                 t.HOUSE_3 = "HOUSE_3"
-            }(oa || (oa = {}));
-            var sa, Ea = "RANDOM_HYPESQUAD_HOUSE";
+            }(_a || (_a = {}));
+            var Ea, ca = "RANDOM_HYPESQUAD_HOUSE";
             ! function(t) {
                 t[t.KEYBOARD_KEY = 0] = "KEYBOARD_KEY";
                 t[t.MOUSE_BUTTON = 1] = "MOUSE_BUTTON";
                 t[t.KEYBOARD_MODIFIER_KEY = 2] = "KEYBOARD_MODIFIER_KEY";
                 t[t.GAMEPAD_BUTTON = 3] = "GAMEPAD_BUTTON"
-            }(sa || (sa = {}));
-            var ca, ua = Object.freeze({
+            }(Ea || (Ea = {}));
+            var ua, Ia = Object.freeze({
                     esc: 9,
                     f1: 67,
                     f2: 68,
@@ -25827,7 +25832,7 @@
                     "track back": 173,
                     "track skip": 171
                 }),
-                Ia = Object.freeze({
+                Ra = Object.freeze({
                     a: 4,
                     s: 22,
                     d: 7,
@@ -25943,8 +25948,8 @@
                 t[t.Center = 2] = "Center";
                 t[t.Back = 3] = "Back";
                 t[t.Forward = 4] = "Forward"
-            }(ca || (ca = {}));
-            var Ra, la, Aa, Ta, fa, da, Na, Oa, pa, ha = Object.freeze({
+            }(ua || (ua = {}));
+            var la, Aa, Ta, fa, da, Na, Oa, pa, ha, Sa = Object.freeze({
                 a: 65,
                 s: 83,
                 d: 68,
@@ -26064,19 +26069,19 @@
                 t[t.MACOS = 2] = "MACOS";
                 t[t.LINUX = 3] = "LINUX";
                 t[t.BROWSER = 4] = "BROWSER"
-            }(Ra || (Ra = {}));
+            }(la || (la = {}));
             ! function(t) {
                 t.EMPTY_MESSAGE = "EMPTY_MESSAGE";
                 t.MESSAGE_TOO_LONG = "MESSAGE_TOO_LONG";
                 t.RATE_LIMITED = "RATE_LIMITED";
                 t.SHOUTING_CANCELLED = "SHOUTING_CANCELLED";
                 t.SLOWMODE_COOLDOWN = "SLOWMODE_COOLDOWN"
-            }(la || (la = {}));
+            }(Aa || (Aa = {}));
             ! function(t) {
                 t[t.IMG = 1] = "IMG";
                 t[t.YOUTUBE_VIDEO = 2] = "YOUTUBE_VIDEO";
                 t[t.VIDEO = 3] = "VIDEO"
-            }(Aa || (Aa = {}));
+            }(Ta || (Ta = {}));
             ! function(t) {
                 t.NOW_PLAYING = "1";
                 t.RECENTLY_PLAYED = "2";
@@ -26086,11 +26091,6 @@
                 t.RELEASE_DATE = "7";
                 t.EARLY_ACCESS = "8";
                 t.HAS_FREE_PREMIUM_CONTENT = "9"
-            }(Ta || (Ta = {}));
-            ! function(t) {
-                t.INPUT = "INPUT";
-                t.OUTPUT = "OUTPUT";
-                t.INPUT_AND_OUTPUT = "INPUT_AND_OUTPUT"
             }(fa || (fa = {}));
             ! function(t) {
                 t.INPUT = "INPUT";
@@ -26098,46 +26098,51 @@
                 t.INPUT_AND_OUTPUT = "INPUT_AND_OUTPUT"
             }(da || (da = {}));
             ! function(t) {
+                t.INPUT = "INPUT";
+                t.OUTPUT = "OUTPUT";
+                t.INPUT_AND_OUTPUT = "INPUT_AND_OUTPUT"
+            }(Na || (Na = {}));
+            ! function(t) {
                 t.APPLICATION_LIBRARY_BADGE = "application_library_badge_18_11_02";
                 t.SERVER_DISCOVERY_BADGE = "server_discovery_badge_19_02_11";
                 t.E3_SERVER_DISCOVERY_BADGE = "e3_server_discovery_badge_19_06_08"
-            }(Na || (Na = {}));
+            }(Oa || (Oa = {}));
             ! function(t) {
                 t.MESSAGE = "MESSAGE";
                 t.FORUM_THREAD_CREATED = "FORUM_THREAD_CREATED";
                 t.BUG_REPORTER = "BUG_REPORTER";
                 t.ALERT = "ALERT"
-            }(Oa || (Oa = {}));
+            }(pa || (pa = {}));
             ! function(t) {
                 t.TRENDING_GIFS = "Trending";
                 t.FAVORITES = "Favorites";
                 t.TRENDING_CATEGORY = "Category";
                 t.SEARCH = "Search";
                 t.SEARCH_SUGGESTION = "Search Suggestion"
-            }(pa || (pa = {}));
-            var Sa, La = new Set([H.pK.USD, H.pK.CAD, H.pK.EUR, H.pK.AUD, H.pK.GBP, H.pK.PHP, H.pK.MYR, H.pK.VND, H.pK.KRW, H.pK.IDR]);
+            }(ha || (ha = {}));
+            var La, Da = new Set([H.pK.USD, H.pK.CAD, H.pK.EUR, H.pK.AUD, H.pK.GBP, H.pK.PHP, H.pK.MYR, H.pK.VND, H.pK.KRW, H.pK.IDR]);
             ! function(t) {
                 t.ALWAYS = "ALWAYS";
                 t.ON_CLICK = "ON_CLICK";
                 t.IF_MODERATOR = "IF_MODERATOR"
-            }(Sa || (Sa = {}));
-            var Da, Ca = 4,
-                ga = [];
+            }(La || (La = {}));
+            var Ca, ga = 4,
+                Ua = [];
             ! function(t) {
                 t.CHANNEL_CALL_POPOUT = "CHANNEL_CALL_POPOUT";
                 t.SOUNDBOARD = "SOUNDBOARD";
                 t.RTC_DEBUG_POPOUT = "RTC_DEBUG_POPOUT";
                 t.CHANNEL_POPOUT = "CHANNEL_POPOUT"
-            }(Da || (Da = {}));
-            var Ua, Pa, Ma, ma, Ga, ya, va, Ba = function(t) {
+            }(Ca || (Ca = {}));
+            var Pa, Ma, ma, Ga, ya, va, Ba, ba = function(t) {
                 var e = {};
                 for (var r in t) e[r] = "DISCORD_".concat(t[r]);
                 return e
-            }(Da);
+            }(Ca);
             ! function(t) {
                 t.LOADED = "loaded";
                 t.UNLOADED = "unloaded"
-            }(Ua || (Ua = {}));
+            }(Pa || (Pa = {}));
             ! function(t) {
                 t.CONNECTING = "CONNECTING";
                 t.ACTIVE = "ACTIVE";
@@ -26145,21 +26150,21 @@
                 t.ENDED = "ENDED";
                 t.PAUSED = "PAUSED";
                 t.FAILED = "FAILED"
-            }(Pa || (Pa = {}));
+            }(Ma || (Ma = {}));
             ! function(t) {
                 t.USER_REQUESTED = "user_requested";
                 t.STREAM_FULL = "stream_full";
                 t.UNAUTHORIZED = "unauthorized";
                 t.SAFETY_GUILD_RATE_LIMITED = "safety_guild_rate_limited"
-            }(Ma || (Ma = {}));
+            }(ma || (ma = {}));
             ! function(t) {
                 t.SOUND = "SOUND";
                 t.VIDEO = "VIDEO"
-            }(ma || (ma = {}));
+            }(Ga || (Ga = {}));
             ! function(t) {
                 t.PLAYING = "playing";
                 t.PAUSED = "paused"
-            }(Ga || (Ga = {}));
+            }(ya || (ya = {}));
             ! function(t) {
                 t.NONE = "none";
                 t.WIFI = "wifi";
@@ -26169,7 +26174,7 @@
                 t.BLUETOOTH = "bluetooth";
                 t.WIMAX = "wimax";
                 t.OTHER = "other"
-            }(ya || (ya = {}));
+            }(va || (va = {}));
             ! function(t) {
                 t.UNKNOWN = "unknown";
                 t.SLOW_TWO_G = "slow-2g";
@@ -26177,23 +26182,23 @@
                 t.THREE_G = "3g";
                 t.FOUR_G = "4g";
                 t.FIVE_G = "5g"
-            }(va || (va = {}));
-            var ba, wa, Ha, Ya, xa = "discodoEasterEgg";
+            }(Ba || (Ba = {}));
+            var wa, Ha, Ya, xa, ka = "discodoEasterEgg";
             ! function(t) {
                 t.INITIAL = "initial";
                 t.ENTER = "enter";
                 t.UPDATE = "update";
                 t.LEAVE = "leave"
-            }(ba || (ba = {}));
+            }(wa || (wa = {}));
             ! function(t) {
                 t.CHANNEL_SETTINGS = "Channel Settings";
                 t.CHANNEL_NOTIFICATION_SETTINGS = "Channel Notification Settings";
                 t.GUILD_NOTIFICATION_SETTINGS = "Guild Notification Settings"
-            }(wa || (wa = {}));
+            }(Ha || (Ha = {}));
             ! function(t) {
                 t[t.INCOMING = 1] = "INCOMING";
                 t[t.CHANNEL_FOLLOWER = 2] = "CHANNEL_FOLLOWER"
-            }(Ha || (Ha = {}));
+            }(Ya || (Ya = {}));
             ! function(t) {
                 t[t.APPLICATION = 0] = "APPLICATION";
                 t[t.OVERVIEW = 1] = "OVERVIEW";
@@ -26201,38 +26206,38 @@
                 t[t.TWITCH = 3] = "TWITCH";
                 t[t.YOUTUBE = 4] = "YOUTUBE";
                 t[t.WEBHOOKS = 5] = "WEBHOOKS"
-            }(Ya || (Ya = {}));
-            var ka, Ka, Va, Fa = 2500,
-                Wa = 0,
-                ja = 2592e6;
+            }(xa || (xa = {}));
+            var Ka, Va, Fa, Wa = 2500,
+                ja = 0,
+                Xa = 2592e6;
             ! function(t) {
                 t.USERS = "users";
                 t.ROLES = "roles";
                 t.EVERYONE = "everyone"
-            }(ka || (ka = {}));
+            }(Ka || (Ka = {}));
             ! function(t) {
                 t[t.AUTO = 1] = "AUTO";
                 t[t.FULL = 2] = "FULL"
-            }(Ka || (Ka = {}));
+            }(Va || (Va = {}));
             ! function(t) {
                 t[t.NOT_ENABLED = 0] = "NOT_ENABLED";
                 t[t.ENABLING = 1] = "ENABLING";
                 t[t.ENABLED = 2] = "ENABLED";
                 t[t.FAILED_TO_ENABLE = 3] = "FAILED_TO_ENABLE"
-            }(Va || (Va = {}));
-            var Xa, za = 100,
-                Za = /(mfa\.[a-z0-9_-]{20,})|([a-z0-9_-]{23,28}\.[a-z0-9_-]{6,7}\.[a-z0-9_-]{27})/i;
+            }(Fa || (Fa = {}));
+            var za, Za = 100,
+                $a = /(mfa\.[a-z0-9_-]{20,})|([a-z0-9_-]{23,28}\.[a-z0-9_-]{6,7}\.[a-z0-9_-]{27})/i;
             P.Z;
             ! function(t) {
                 t[t.NULL = 0] = "NULL";
                 t[t.DISABLED = 1] = "DISABLED";
                 t[t.ENABLED = 2] = "ENABLED"
-            }(Xa || (Xa = {}));
-            var $a, qa = "https://creator-support.discord.com/hc/en-us/articles/12653663868823";
+            }(za || (za = {}));
+            var qa, Ja = "https://creator-support.discord.com/hc/en-us/articles/12653663868823";
             ! function(t) {
                 t[t.CLIPS_ENABLED = 1] = "CLIPS_ENABLED";
                 t[t.ALLOW_VOICE_RECORDING = 2] = "ALLOW_VOICE_RECORDING"
-            }($a || ($a = {}))
+            }(qa || (qa = {}))
         },
         761001: (t, e, r) => {
             "use strict";
@@ -27400,7 +27405,8 @@
                                         }
                                         return t
                                     }()) return;
-                                (0, o.hl)(Q, "fetch", (function(t) {
+                                (0,
+                                    o.hl)(Q, "fetch", (function(t) {
                                     return function(...e) {
                                         const {
                                             method: r,
@@ -28362,8 +28368,7 @@
                 return {
                     $: e,
                     add: function(n) {
-                        if (!(void 0 === t || e.length < t)) return (0,
-                            Kt.$2)(new kt("Not adding Promise because buffer limit was reached."));
+                        if (!(void 0 === t || e.length < t)) return (0, Kt.$2)(new kt("Not adding Promise because buffer limit was reached."));
                         const a = n(); - 1 === e.indexOf(a) && e.push(a);
                         a.then((() => r(a))).then(null, (() => r(a).then(null, (() => {}))));
                         return a
@@ -28474,7 +28479,8 @@
             function zt(t, e = {}) {
                 const r = "string" == typeof e ? e : e.tunnel,
                     n = "string" != typeof e && e._metadata ? e._metadata.sdk : void 0;
-                return r || `${function(t){return`${Xt(t)}${t.projectId}/envelope/`}(t)}?${function(t,e){return(0,o._j)({sentry_key:t.publicKey,sentry_version:"7",...e&&{sentry_client:`${e.name}/${e.version}`}})}(t,n)}`
+                return r || `${function(t){return`${Xt(t)}${t.projectId}/envelope/`}(t)}?${function(t,e){return(0,o._j)({sentry_key:t.publicKey,sentry_version:"7",...e&&{
+sentry_client:`${e.name}/${e.version}`}})}(t,n)}`
             }
 
             function Zt(t, e) {
@@ -29256,8 +29262,7 @@
                     const a = e;
                     if ("stack" in e) i = Ae(t, e);
                     else {
-                        const e = a.name || ((0,
-                                h.TX)(a) ? "DOMError" : "DOMException"),
+                        const e = a.name || ((0, h.TX)(a) ? "DOMError" : "DOMException"),
                             o = a.message ? `${e}: ${a.message}` : e;
                         i = he(t, o, r, n);
                         (0, c.Db)(i, o)
@@ -29330,8 +29335,7 @@
             }) {
                 const r = (0, o.zf)(t),
                     n = e ? "promise rejection" : "exception";
-                if ((0,
-                        h.VW)(t)) return `Event \`ErrorEvent\` captured as ${n} with message \`${t.message}\``;
+                if ((0, h.VW)(t)) return `Event \`ErrorEvent\` captured as ${n} with message \`${t.message}\``;
                 if ((0, h.cO)(t)) {
                     return `Event \`${function(t){try{const e=Object.getPrototypeOf(t);return e?e.constructor.name:void 0}catch(t){}}(t)}\` (type=${t.type}) captured as ${n}`
                 }
@@ -29398,7 +29402,8 @@
                                 }(t) ? (0, Le.Rt)(t.target, {
                                     keyAttrs: n,
                                     maxStringLength: a
-                                }) : (0, Le.Rt)(t, {
+                                }) : (0,
+                                    Le.Rt)(t, {
                                     keyAttrs: n,
                                     maxStringLength: a
                                 })
@@ -29499,8 +29504,7 @@
                                 startTimestamp: e,
                                 endTimestamp: r
                             };
-                        (0,
-                            T.Gd)().addBreadcrumb({
+                        (0, T.Gd)().addBreadcrumb({
                             category: "fetch",
                             data: n,
                             level: "error",
@@ -37073,7 +37077,7 @@
                     dsn: "https://fa97a90475514c03a42f80cd36d147c4@sentry.io/140984",
                     autoSessionTracking: !1,
                     environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                    release: "discord_web-7ec6a3de33efaabb9ac25cac6728281e15c95da6",
+                    release: "discord_web-7adec5623eb3c2f62c2ccff637ee06ba6f3f2701",
                     beforeSend: function(t) {
                         return function(t) {
                             return null != t.exception && null != t.exception.values && t.exception.values.every((function(t) {
@@ -37100,8 +37104,8 @@
                     denyUrls: [/recaptcha/, /mobilediscord\.com/, /betterdiscord:\/\//]
                 });
                 var t;
-                X.YA("buildNumber", null !== (t = "233458") ? t : "");
-                X.YA("builtAt", String("1696286713788"));
+                X.YA("buildNumber", null !== (t = "233731") ? t : "");
+                X.YA("builtAt", String("1696355595354"));
                 var e = window.GLOBAL_ENV.SENTRY_TAGS;
                 if (null != e && "object" == typeof e)
                     for (var r in e) X.YA(r, e[r]);
@@ -48481,4 +48485,4 @@
         e(128594), e(535666), e(784633), e(678991)
     }
 ]);
-//# sourceMappingURL=8a3775558f24cfe2475e.js.map
+//# sourceMappingURL=ed92dacab176013b8e7b.js.map
