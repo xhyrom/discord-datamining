@@ -2117,7 +2117,8 @@
                 radioItemStyles: "radioItemStyles-1GfN_H",
                 footer: "footer-3fypzC",
                 footerStepped: "footerStepped-NTlQlm footer-3fypzC",
-                cancel: "cancel-1d7LYK"
+                cancel: "cancel-1d7LYK",
+                error: "error-3La22l"
             }
         },
         327183: e => {
@@ -11015,7 +11016,8 @@
                 addRoleIcon: "addRoleIcon-5oV6RN",
                 roleTooltip: "roleTooltip-WIu418",
                 roleTooltipItemContainer: "roleTooltipItemContainer-3Jvgqd",
-                roleTooltipItem: "roleTooltipItem-1kJZ1v"
+                roleTooltipItem: "roleTooltipItem-1kJZ1v",
+                disabledActionTooltip: "disabledActionTooltip-4AW_kU"
             }
         },
         498087: e => {
@@ -22391,21 +22393,6 @@
                 popoutMenu: "popoutMenu-3LsYJw"
             }
         },
-        857861: e => {
-            e.exports = {
-                referencePosition: "referencePosition-1TDKF3",
-                containerWrapper: "containerWrapper-WZBNDK",
-                animation: "animation-2Ht874",
-                slideInFromBottom: "slideInFromBottom-30Bm31",
-                container: "container-25mm3w",
-                avatarSection: "avatarSection-3AUnZj",
-                content: "content-wpwQTU",
-                ctaLink: "ctaLink-33fT8d",
-                buttons: "buttons-14YbUr",
-                closeButton: "closeButton-2m3Wyq",
-                closeIcon: "closeIcon-2l_Cxc"
-            }
-        },
         470734: e => {
             e.exports = {
                 customStatusSection: "customStatusSection-2_fKRl",
@@ -22418,6 +22405,22 @@
                 clydeErrorText: "clydeErrorText-21B00D",
                 sadClyde: "sadClyde-ej4LbK",
                 pencilIcon: "pencilIcon-3ZoLdr"
+            }
+        },
+        172952: e => {
+            e.exports = {
+                referencePosition: "referencePosition-3awUp7",
+                containerWrapper: "containerWrapper-1kh54c",
+                animation: "animation-2Ulm63",
+                slideInFromBottom: "slideInFromBottom-OAY5yI",
+                container: "container-34SFyU",
+                avatarSection: "avatarSection-23Phyu",
+                content: "content-2fvXP0",
+                contentWithoutAvatar: "contentWithoutAvatar-3goPR0",
+                ctaLink: "ctaLink-2Wa-yK",
+                buttons: "buttons-2t4rDg",
+                closeButton: "closeButton-1FOk1_",
+                closeIcon: "closeIcon-2wyTZ8"
             }
         },
         51448: e => {
@@ -25195,7 +25198,11 @@
                 wrapper: "wrapper-rWtXPd",
                 videoWrapper: "videoWrapper-KvX9hj",
                 downloadLink: "downloadLink-3cavAH",
-                mobileCloseWrapper: "mobileCloseWrapper-2byadv"
+                mobileCloseWrapper: "mobileCloseWrapper-2byadv",
+                obscureContainer: "obscureContainer-B0o4ps",
+                obscureWrapper: "obscureWrapper-2PC2QZ",
+                obscure: "obscure-nthVvO",
+                controlsOffset: "controlsOffset-1Jggv4"
             }
         },
         323121: e => {
@@ -25299,7 +25306,9 @@
                 spoilerMarkdownContent: "spoilerMarkdownContent-2R1Vwe",
                 obscuredBlockContent: "obscuredBlockContent-2QCAD4",
                 obscuredTextContent: "obscuredTextContent-3vHOH3",
-                obscuredTextContentInner: "obscuredTextContentInner-2ytmvF"
+                obscuredTextContentInner: "obscuredTextContentInner-2ytmvF",
+                obscureButtonContainer: "obscureButtonContainer-ELAZd7",
+                obscureHoverButton: "obscureHoverButton-3MRFX1"
             }
         },
         224477: e => {
@@ -26371,8 +26380,6 @@
                 inline: "inline-18PIBU",
                 hiddenAttachment: "hiddenAttachment-1ujFOi",
                 obscured: "obscured-20kiwN",
-                obscureButtonContainer: "obscureButtonContainer-3nx5-P",
-                obscureHoverButton: "obscureHoverButton-2ODc_8",
                 attachmentContentItem: "attachmentContentItem-UKeiCx",
                 removeAttachmentButton: "removeAttachmentButton-1iO1qS",
                 spoilerRemoveAttachmentButton: "spoilerRemoveAttachmentButton-3aeXPK removeAttachmentButton-1iO1qS",
@@ -26976,4 +26983,4 @@
         }
     }
 ]);
-//# sourceMappingURL=9770cb5176a9318ff107.js.map
+//# sourceMappingURL=9627ed0e69e506726f62.js.map
