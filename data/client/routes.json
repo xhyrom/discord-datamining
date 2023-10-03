@@ -386,100 +386,63 @@
       "PATCH"
     ]
   },
-  "CHANNEL_ACK": {
-    "url": "/channels/:param/messages/ack",
+  "GUILD_ROLE_MEMBERS": {
+    "url": "/guilds/:param/roles/:param/members",
     "allowed_methods": [
-      "DELETE",
-      "GET",
-      "HEAD",
       "OPTIONS",
       "PATCH"
     ]
   },
-  "CHANNEL_FOLLOWER_MESSAGE_STATS": {
-    "url": "/channels/:param/follower-message-stats",
+  "GUILD_ROLE_CONNECTIONS_ELIGIBILITY": {
+    "url": "/guilds/:param/roles/:param/connections/eligibility",
     "allowed_methods": [
       "GET",
       "HEAD",
       "OPTIONS"
     ]
   },
-  "FRIEND_SUGGESTION": {
-    "url": "/friend-suggestions/:param",
-    "allowed_methods": [
-      "DELETE",
-      "OPTIONS"
-    ]
-  },
-  "POMELO_ATTEMPT": {
-    "url": "/users/@me/pomelo-attempt",
+  "GUILD_ROLE_CONNECTIONS_ASSIGN": {
+    "url": "/guilds/:param/roles/:param/connections/assign",
     "allowed_methods": [
       "OPTIONS",
       "POST"
     ]
   },
-  "PHONE": {
-    "url": "/users/@me/phone",
-    "allowed_methods": [
-      "DELETE",
-      "OPTIONS",
-      "POST"
-    ]
+  "ROLE_ICON": {
+    "url": "/roles/:param/icons/:param.png",
+    "allowed_methods": null
   },
-  "RESEND_PHONE": {
-    "url": "/phone-verifications/resend",
-    "allowed_methods": [
-      "OPTIONS",
-      "POST"
-    ]
+  "GUILD_DISCOVERY_CHECKLIST": {
+    "url": "/guilds/:param/discovery-checklist",
+    "allowed_methods": null
   },
-  "CONNECTION_ACCESS_TOKEN": {
-    "url": "/users/@me/connections/:param/:param/access-token",
+  "GUILD_ANALYTICS_GROWTH_ACTIVATION_RETENTION": {
+    "url": "/guilds/:param/analytics/growth-activation/retention",
     "allowed_methods": [
       "GET",
       "HEAD",
       "OPTIONS"
     ]
   },
-  "MENTIONS_MESSAGE_ID": {
-    "url": "/users/@me/mentions/:param",
+  "NEW_MEMBER_ACTION": {
+    "url": "/guilds/:param/new-member-actions/:param",
     "allowed_methods": [
-      "DELETE",
-      "OPTIONS"
-    ]
-  },
-  "REMOTE_AUTH_INITIALIZE": {
-    "url": "/users/@me/remote-auth",
-    "allowed_methods": [
-      "OPTIONS",
-      "POST"
-    ]
-  },
-  "MFA_WEBAUTHN_CREDENTIAL": {
-    "url": "/users/@me/mfa/webauthn/credentials/:param",
-    "allowed_methods": [
-      "DELETE",
       "OPTIONS",
       "PATCH"
     ]
   },
-  "AUTHORIZE_PAYMENT": {
-    "url": "/billing/verify-purchase-request",
+  "USER_JOIN_REQUEST_GUILDS": {
+    "url": "/users/@me/join-request-guilds",
     "allowed_methods": [
-      "OPTIONS",
-      "POST"
+      "GET",
+      "HEAD",
+      "OPTIONS"
     ]
   },
-  "STAGE_REPORT": {
-    "url": "/reports/channels/:param/messages/:param",
+  "CHANNEL": {
+    "url": "/channels/:param",
     "allowed_methods": [
-      "OPTIONS",
-      "POST"
-    ]
-  },
-  "APPLICATIONS_DETECTABLE": {
-    "url": "/applications/detectable",
-    "allowed_methods": [
+      "DELETE",
       "GET",
       "HEAD",
       "OPTIONS",
@@ -487,8 +450,98 @@
       "PUT"
     ]
   },
-  "OAUTH2_AUTHORIZE": {
-    "url": "/oauth2/authorize",
+  "AVATAR": {
+    "url": "/users/:param/avatars/:param.:param",
+    "allowed_methods": null
+  },
+  "CLYDE_PROFILES_BANNER": {
+    "url": "/clyde-profiles/:param/banners/:param.:param",
+    "allowed_methods": null
+  },
+  "MESSAGE_LOG_PRIVATE_CHANNELS": {
+    "url": "/messages-log/private-channels/get",
+    "allowed_methods": [
+      "OPTIONS",
+      "POST"
+    ]
+  },
+  "GUILD_FEED_FEATURE_ITEM": {
+    "url": "/guilds/:param/guild-feed/feature",
+    "allowed_methods": [
+      "DELETE",
+      "GET",
+      "HEAD",
+      "OPTIONS",
+      "PUT"
+    ]
+  },
+  "CHANNEL_RECIPIENT": {
+    "url": "/channels/:param/recipients/:param",
+    "allowed_methods": [
+      "DELETE",
+      "OPTIONS",
+      "PUT"
+    ]
+  },
+  "CHANNEL_FOLLOWERS": {
+    "url": "/channels/:param/followers",
+    "allowed_methods": [
+      "OPTIONS",
+      "POST"
+    ]
+  },
+  "FRIEND_FINDER_HIDE_INVITE_SUGGESTION": {
+    "url": "/friend-finder/hide-invite-suggestion",
+    "allowed_methods": null
+  },
+  "POMELO_SUGGESTIONS": {
+    "url": "/users/@me/pomelo-suggestions",
+    "allowed_methods": [
+      "GET",
+      "HEAD",
+      "OPTIONS"
+    ]
+  },
+  "SETTINGS": {
+    "url": "/users/@me/settings",
+    "allowed_methods": [
+      "GET",
+      "HEAD",
+      "OPTIONS",
+      "PATCH"
+    ]
+  },
+  "CONNECTIONS": {
+    "url": "/users/@me/connections",
+    "allowed_methods": [
+      "GET",
+      "HEAD",
+      "OPTIONS"
+    ]
+  },
+  "CONNECTION_SYNC_CONTACTS": {
+    "url": "/users/@me/connections/contacts/@me/external-friend-list-entries",
+    "allowed_methods": [
+      "OPTIONS",
+      "PUT"
+    ]
+  },
+  "CAPTCHA": {
+    "url": "/users/@me/captcha/verify",
+    "allowed_methods": [
+      "OPTIONS",
+      "POST"
+    ]
+  },
+  "REMOTE_AUTH_CANCEL": {
+    "url": "/users/@me/remote-auth/cancel",
+    "allowed_methods": [
+      "OPTIONS",
+      "POST"
+    ]
+  },
+  "UNRESOLVED_GUILD_TEMPLATE": {
+    "url": "/guilds/templates/:param",
     "allowed_methods": [
       "GET",
       "HEAD",
@@ -496,8 +549,48 @@
       "POST"
     ]
   },
+  "SSO_TOKEN": {
+    "url": "/sso-token",
+    "allowed_methods": [
+      "GET",
+      "HEAD",
+      "OPTIONS"
+    ]
+  },
+  "DEBUG_LOGS": {
+    "url": "/debug-logs/multi/:param",
+    "allowed_methods": [
+      "OPTIONS",
+      "POST"
+    ]
+  },
+  "INTEGRATION_APPLICATION_IDS_FOR_MY_GUILDS": {
+    "url": "/users/@me/guilds/integration-application-ids",
+    "allowed_methods": [
+      "DELETE",
+      "GET",
+      "HEAD",
+      "OPTIONS"
+    ]
+  },
+  "OAUTH2_AUTHORIZE_SAMSUNG_CALLBACK": {
+    "url": "/oauth2/samsung/authorize/callback",
+    "allowed_methods": [
+      "GET",
+      "HEAD",
+      "OPTIONS"
+    ]
+  },
   "OAUTH2_AUTHORIZE_WEBHOOK_CHANNELS": {
     "url": "/oauth2/authorize/webhook-channels",
+    "allowed_methods": [
+      "GET",
+      "HEAD",
+      "OPTIONS"
+    ]
+  },
+  "OAUTH2_CURRENT_AUTH": {
+    "url": "/oauth2/@me",
     "allowed_methods": [
       "GET",
       "HEAD",
@@ -528,20 +621,18 @@
       "POST"
     ]
   },
-  "MFA_TOTP_ENABLE": {
-    "url": "/users/@me/mfa/totp/enable",
+  "OAUTH2_DEVICE_VERIFY": {
+    "url": "/oauth2/device/verify",
     "allowed_methods": [
       "OPTIONS",
       "POST"
     ]
   },
-  "CALL": {
-    "url": "/channels/:param/call",
+  "MFA_CODES_VERIFICATION": {
+    "url": "/users/@me/mfa/codes-verification",
     "allowed_methods": [
-      "GET",
-      "HEAD",
       "OPTIONS",
-      "PATCH"
+      "POST"
     ]
   },
   "CHANNEL_WEBHOOKS": {
@@ -598,8 +689,24 @@
       "OPTIONS"
     ]
   },
-  "SEARCH_DMS": {
-    "url": "/users/@me/messages/search",
+  "REMOVE_EMOJI_REACTIONS": {
+    "url": "/channels/:param/messages/:param/reactions/:param",
+    "allowed_methods": [
+      "DELETE",
+      "GET",
+      "HEAD",
+      "OPTIONS"
+    ]
+  },
+  "REACTION": {
+    "url": "/channels/:param/messages/:param/reactions/:param/:param",
+    "allowed_methods": [
+      "DELETE",
+      "OPTIONS"
+    ]
+  },
+  "SEARCH_GUILD": {
+    "url": "/guilds/:param/messages/search",
     "allowed_methods": [
       "GET",
       "HEAD",
@@ -613,133 +720,155 @@
       "POST"
     ]
   },
-  "BILLING_PAYMENT": {
-    "url": "/users/@me/billing/payments/:param",
-    "allowed_methods": [
-      "GET",
-      "HEAD",
-      "OPTIONS"
-    ]
-  },
-  "BILLING_POPUP_BRIDGE": {
-    "url": "/billing/popup-bridge/:param",
+  "BILLING_PAYMENTS_VOID": {
+    "url": "/users/@me/billing/payments/:param/void",
     "allowed_methods": [
       "OPTIONS",
       "POST"
     ]
   },
-  "BILLING_SUBSCRIPTION": {
-    "url": "/users/@me/billing/subscriptions/:param",
-    "allowed_methods": [
-      "DELETE",
-      "GET",
-      "HEAD",
-      "OPTIONS"
-    ]
-  },
-  "DOWNGRADE_SUBSCRIPTION": {
-    "url": "/google-play/downgrade-subscription",
+  "BILLING_POPUP_BRIDGE_CALLBACK": {
+    "url": "/billing/popup-bridge/:param/callback",
     "allowed_methods": [
       "OPTIONS",
       "POST"
     ]
   },
-  "LIBRARY": {
-    "url": "/users/@me/library",
-    "allowed_methods": [
-      "GET",
-      "HEAD",
-      "OPTIONS"
-    ]
-  },
-  "APPLICATIONS_PUBLIC": {
-    "url": "/applications/public",
-    "allowed_methods": [
-      "GET",
-      "HEAD",
-      "OPTIONS",
-      "PATCH",
-      "PUT"
-    ]
-  },
-  "STORE_PUBLISHED_LISTINGS_SUBSCRIPTION_PLANS": {
-    "url": "/store/published-listings/skus/:param/subscription-plans",
-    "allowed_methods": [
-      "GET",
-      "HEAD",
-      "OPTIONS"
-    ]
-  },
-  "ENTITLEMENTS_GIFTABLE": {
-    "url": "/users/@me/entitlements/gifts",
-    "allowed_methods": [
-      "GET",
-      "HEAD",
-      "OPTIONS"
-    ]
-  },
-  "GIFS_TRENDING_SEARCH": {
-    "url": "/gifs/trending-search",
-    "allowed_methods": [
-      "GET",
-      "HEAD",
-      "OPTIONS"
-    ]
-  },
-  "USER_OFFER": {
-    "url": "/users/@me/billing/user-offer",
+  "BILLING_CREATE_APPLE_IAP_JWT_TOKEN": {
+    "url": "/billing/apple/jwt-token",
     "allowed_methods": [
       "OPTIONS",
       "POST"
     ]
   },
-  "STREAM": {
-    "url": "/streams/:param/stream",
+  "GOOGLE_PLAY_VALIDATE_PURCHASE": {
+    "url": "/google-play/validate-purchase",
     "allowed_methods": [
+      "OPTIONS",
+      "POST"
+    ]
+  },
+  "USER_HARVEST": {
+    "url": "/users/@me/harvest",
+    "allowed_methods": [
+      "GET",
+      "HEAD",
+      "OPTIONS",
+      "POST"
+    ]
+  },
+  "STORE_DIRECTORY_LAYOUT": {
+    "url": "/store/directory-layouts/:param",
+    "allowed_methods": [
+      "GET",
+      "HEAD",
+      "OPTIONS"
+    ]
+  },
+  "STORE_SKU": {
+    "url": "/store/skus/:param",
+    "allowed_methods": [
+      "GET",
+      "HEAD",
       "OPTIONS",
       "PATCH"
     ]
   },
-  "USER_STICKER_PACKS": {
-    "url": "/users/@me/sticker-packs",
-    "allowed_methods": null
+  "APPLICATION_TICKET": {
+    "url": "/users/@me/applications/:param/ticket",
+    "allowed_methods": [
+      "OPTIONS",
+      "POST"
+    ]
   },
-  "ACTIVITY_SHELF": {
-    "url": "/activities/shelf",
+  "GIFS_TRENDING_GIFS": {
+    "url": "/gifs/trending-gifs",
     "allowed_methods": [
       "GET",
       "HEAD",
       "OPTIONS"
     ]
   },
-  "STAGE_INSTANCES": {
-    "url": "/stage-instances",
+  "PARTNER_PROMOTIONS": {
+    "url": "/entitlements/partner-promotions/:param",
     "allowed_methods": [
       "OPTIONS",
       "POST"
     ]
   },
-  "MEMBER_SAFETY_SUPPLEMENTAL": {
-    "url": "/guilds/:param/members/supplemental",
+  "GUILD_DISCOVERY_VALID_TERM": {
+    "url": "/discovery/valid-term",
+    "allowed_methods": [
+      "GET",
+      "HEAD",
+      "OPTIONS"
+    ]
+  },
+  "GUILD_PREVIEW": {
+    "url": "/guilds/:param/preview",
+    "allowed_methods": [
+      "GET",
+      "HEAD",
+      "OPTIONS"
+    ]
+  },
+  "STICKER_PACK": {
+    "url": "/sticker-packs/:param",
+    "allowed_methods": [
+      "GET",
+      "HEAD",
+      "OPTIONS"
+    ]
+  },
+  "GUILD_STICKER_PACKS": {
+    "url": "/guilds/:param/stickers",
+    "allowed_methods": [
+      "GET",
+      "HEAD",
+      "OPTIONS",
+      "POST"
+    ]
+  },
+  "ACTIVITY_TEST_MODE": {
+    "url": "/activities/:param/test-mode",
+    "allowed_methods": [
+      "GET",
+      "HEAD",
+      "OPTIONS",
+      "POST"
+    ]
+  },
+  "STAGE_INSTANCES_EXTRA": {
+    "url": "/stage-instances/extra",
     "allowed_methods": [
       "DELETE",
       "GET",
       "HEAD",
       "OPTIONS",
-      "PATCH",
-      "POST",
+      "PATCH"
+    ]
+  },
+  "USER_GUILD_EVENT": {
+    "url": "/guilds/:param/scheduled-events/:param/users/@me",
+    "allowed_methods": [
+      "DELETE",
+      "OPTIONS",
       "PUT"
     ]
   },
-  "DIRECTORY_CHANNEL_ENTRY": {
-    "url": "/channels/:param/directory-entry/:param",
+  "GUILD_AUTOMOD_CLEAR_MENTION_RAID": {
+    "url": "/guilds/:param/auto-moderation/clear-mention-raid",
     "allowed_methods": [
-      "DELETE",
+      "OPTIONS",
+      "POST"
+    ]
+  },
+  "DIRECTORY_CHANNEL_CATEGORY_COUNTS": {
+    "url": "/channels/:param/directory-entries/counts",
+    "allowed_methods": [
       "GET",
       "HEAD",
-      "OPTIONS",
-      "PATCH",
-      "POST"
+      "OPTIONS"
     ]
   },
   "HUB_EMAIL_VERIFY_CODE": {
@@ -749,59 +878,65 @@
       "POST"
     ]
   },
-  "CLAIMED_OUTBOUND_PROMOTION_CODES": {
-    "url": "/users/@me/outbound-promotions/codes",
+  "DROPS_PLATFORM_AVAILABILITY": {
+    "url": "/drops/reward-code/availability",
     "allowed_methods": [
       "GET",
       "HEAD",
       "OPTIONS"
     ]
   },
-  "GUILD_CLYDE_ADD_MEMBER": {
-    "url": "/guilds/:param/members/clyde",
+  "GUILD_PRODUCT_CREATE_ATTACHMENT_UPLOAD": {
+    "url": "/guilds/:param/products/attachments",
+    "allowed_methods": [
+      "OPTIONS",
+      "POST"
+    ]
+  },
+  "GUILD_ROLE_SUBSCRIPTION_LISTING_TRIAL": {
+    "url": "/guilds/:param/role-subscriptions/subscription-listings/:param/trial",
+    "allowed_methods": [
+      "OPTIONS",
+      "PATCH"
+    ]
+  },
+  "CREATOR_MONETIZATION_ENABLE_REQUESTS": {
+    "url": "/guilds/:param/creator-monetization/enable-requests",
+    "allowed_methods": [
+      "OPTIONS",
+      "POST"
+    ]
+  },
+  "CREATOR_MONETIZATION_ACCEPT_NEW_TERMS": {
+    "url": "/guilds/:param/creator-monetization/accept-new-terms",
+    "allowed_methods": null
+  },
+  "BUG_REPORTS": {
+    "url": "/private/bug-reports",
+    "allowed_methods": [
+      "GET",
+      "HEAD",
+      "OPTIONS",
+      "POST"
+    ]
+  },
+  "VIDEO_FILTER_ASSET": {
+    "url": "/users/@me/video-filters/assets/:param",
     "allowed_methods": [
       "DELETE",
-      "GET",
-      "HEAD",
-      "OPTIONS",
-      "PATCH",
-      "PUT"
+      "OPTIONS"
     ]
   },
-  "CREATOR_MONETIZATION_OWNERSHIP_TRANSFER_ONBOARD": {
-    "url": "/guilds/:param/creator-monetization/ownership-transfer/onboarding",
-    "allowed_methods": [
-      "OPTIONS",
-      "POST"
-    ]
-  },
-  "MEDIA_POST_RESHARE_GET_PREVIEW": {
-    "url": "/channels/:param/media-post-preview",
+  "APPLICATION_COMMAND_INDEX_GUILD": {
+    "url": "/guilds/:param/application-command-index",
     "allowed_methods": [
       "GET",
       "HEAD",
       "OPTIONS"
     ]
   },
-  "VIDEO_FILTER_ASSETS": {
-    "url": "/users/@me/video-filters/assets",
-    "allowed_methods": [
-      "GET",
-      "HEAD",
-      "OPTIONS",
-      "POST"
-    ]
-  },
-  "APPLICATION_COMMANDS_SEARCH": {
-    "url": "/channels/:param/application-commands/search",
-    "allowed_methods": [
-      "GET",
-      "HEAD",
-      "OPTIONS"
-    ]
-  },
-  "APPLICATION_DIRECTORY_SIMILAR": {
-    "url": "/application-directory-static/applications/:param/similar",
+  "APPLICATION_DIRECTORY_COLLECTIONS": {
+    "url": "/application-directory-static/collections",
     "allowed_methods": [
       "GET",
       "HEAD",
@@ -816,44 +951,51 @@
       "OPTIONS"
     ]
   },
-  "AUTH_SESSIONS_LOGOUT": {
-    "url": "/auth/sessions/logout",
+  "CUSTOM_CALL_SOUNDS": {
+    "url": "/channels/:param/custom-call-sounds",
     "allowed_methods": [
       "OPTIONS",
       "POST"
     ]
   },
-  "CONSOLES_DEVICES": {
-    "url": "/consoles/:param/devices",
+  "CONSOLES_DEVICES_COMMANDS": {
+    "url": "/consoles/:param/devices/:param/commands",
+    "allowed_methods": [
+      "OPTIONS",
+      "POST"
+    ]
+  },
+  "SHARED_CANVAS_EMOJI_HOSES": {
+    "url": "/channels/:param/:param/shared-canvas/emoji-hose",
+    "allowed_methods": [
+      "OPTIONS",
+      "POST"
+    ]
+  },
+  "FAMILY_CENTER_TEEN_ACTIVITY": {
+    "url": "/family-center/:param/activity",
     "allowed_methods": [
       "GET",
       "HEAD",
       "OPTIONS"
     ]
   },
-  "GET_REFERRALS_REMAINING": {
-    "url": "/users/@me/referrals/eligibility",
+  "APPLICATIONS_SHELF": {
+    "url": "/applications/shelf",
     "allowed_methods": [
       "GET",
       "HEAD",
       "OPTIONS",
-      "POST"
-    ]
-  },
-  "REFERRAL_OFFER_ID_RESOLVE": {
-    "url": "/referrals/:param",
-    "allowed_methods": [
-      "GET",
-      "HEAD",
-      "OPTIONS"
+      "PATCH",
+      "PUT"
     ]
   },
   "USER_TRIAL_OFFERS": {
     "url": "/user-trial-offers",
     "allowed_methods": null
   },
-  "INITIATE_CHANNEL_PROMPTS": {
-    "url": "/initiate-prompts",
+  "FORCE_SEND_PROMPT": {
+    "url": "/:param/force-send-prompt",
     "allowed_methods": [
       "OPTIONS",
       "POST"
