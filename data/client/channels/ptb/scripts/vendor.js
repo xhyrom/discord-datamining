@@ -1,4 +1,4 @@
-/*! For license information please see fbc83391e0a350b048f0.js.LICENSE.txt */
+/*! For license information please see 7d66e6498abfeacd0d1a.js.LICENSE.txt */
 (this.webpackChunkdiscord_app = this.webpackChunkdiscord_app || []).push([
     [22897], {
         151131: (t, e, r) => {
@@ -24408,6 +24408,7 @@
                 t.GIFT_CODE_SENT = "gift_code_sent";
                 t.GIFT_CODE_RESOLVED = "gift_code_resolved";
                 t.GIFT_CODE_COPIED = "gift_code_copied";
+                t.GIFT_ACCEPT_STEP = "gift_accept_step";
                 t.SLASH_COMMAND_USED = "slash_command_used";
                 t.KEYBOARD_SHORTCUT_USED = "keyboard_shortcut_used";
                 t.KEYBOARD_MODE_TOGGLED = "keyboard_mode_toggled";
@@ -37076,7 +37077,7 @@ sentry_client:`${e.name}/${e.version}`}})}(t,n)}`
                     dsn: "https://fa97a90475514c03a42f80cd36d147c4@sentry.io/140984",
                     autoSessionTracking: !1,
                     environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                    release: "discord_web-f318b8387d4a8b5d8a804584df11aadcae5a11a4",
+                    release: "discord_web-355b33600ac05605f35f102652a05a330b260555",
                     beforeSend: function(t) {
                         return function(t) {
                             return null != t.exception && null != t.exception.values && t.exception.values.every((function(t) {
@@ -37103,8 +37104,8 @@ sentry_client:`${e.name}/${e.version}`}})}(t,n)}`
                     denyUrls: [/recaptcha/, /mobilediscord\.com/, /betterdiscord:\/\//]
                 });
                 var t;
-                X.YA("buildNumber", null !== (t = "233674") ? t : "");
-                X.YA("builtAt", String("1696353127431"));
+                X.YA("buildNumber", null !== (t = "233677") ? t : "");
+                X.YA("builtAt", String("1696353319032"));
                 var e = window.GLOBAL_ENV.SENTRY_TAGS;
                 if (null != e && "object" == typeof e)
                     for (var r in e) X.YA(r, e[r]);
@@ -48484,4 +48485,4 @@ sentry_client:`${e.name}/${e.version}`}})}(t,n)}`
         e(128594), e(535666), e(784633), e(678991)
     }
 ]);
-//# sourceMappingURL=fbc83391e0a350b048f0.js.map
+//# sourceMappingURL=7d66e6498abfeacd0d1a.js.map
