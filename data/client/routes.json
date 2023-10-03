@@ -3069,7 +3069,10 @@
   },
   "INTERACTIONS": {
     "url": "/interactions",
-    "allowed_methods": null
+    "allowed_methods": [
+      "OPTIONS",
+      "POST"
+    ]
   },
   "MESSAGE_INTERACTION_DATA": {
     "url": "/channels/:param/messages/:param/interaction-data",
