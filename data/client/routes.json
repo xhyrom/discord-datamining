@@ -1483,7 +1483,10 @@
   },
   "LOGIN": {
     "url": "/auth/login",
-    "allowed_methods": null
+    "allowed_methods": [
+      "OPTIONS",
+      "POST"
+    ]
   },
   "LOGIN_MFA": {
     "url": "/auth/mfa/totp",
