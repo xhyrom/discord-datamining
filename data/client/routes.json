@@ -1386,7 +1386,11 @@
   },
   "XBOX_HANDOFF": {
     "url": "/consoles/xbox-handoff",
-    "allowed_methods": null
+    "allowed_methods": [
+      "GET",
+      "HEAD",
+      "OPTIONS"
+    ]
   },
   "NOTES": {
     "url": "/users/@me/notes",
@@ -2741,7 +2745,11 @@
   },
   "GUILD_DISCOVERY": {
     "url": "/discoverable-guilds",
-    "allowed_methods": null
+    "allowed_methods": [
+      "GET",
+      "HEAD",
+      "OPTIONS"
+    ]
   },
   "GUILD_DISCOVERY_CATEGORIES": {
     "url": "/discovery/categories",
@@ -3388,7 +3396,12 @@
   },
   "GUILD_ROLE_SUBSCRIPTIONS_SETTINGS": {
     "url": "/guilds/:param/role-subscriptions/settings",
-    "allowed_methods": null
+    "allowed_methods": [
+      "GET",
+      "HEAD",
+      "OPTIONS",
+      "PATCH"
+    ]
   },
   "GUILD_ROLE_SUBSCRIPTION_GROUP_LISTINGS": {
     "url": "/guilds/:param/role-subscriptions/group-listings/:param",
@@ -4216,7 +4229,10 @@
   },
   "BULK_GUILD_BAN": {
     "url": "/guilds/:param/bulk-ban",
-    "allowed_methods": null
+    "allowed_methods": [
+      "OPTIONS",
+      "POST"
+    ]
   },
   "EXPLICIT_MEDIA_SCAN_MESSAGES": {
     "url": "/channels/:param/explicit-media",
