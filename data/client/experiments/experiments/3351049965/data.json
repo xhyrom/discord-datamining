@@ -1,0 +1,23 @@
+{
+  "data": {
+    "kind": "user",
+    "id": "2023-10_viewer_clipping",
+    "label": "Test viewer side clipping",
+    "description": [
+      "Not Eligible",
+      "Control Bucket",
+      "Treatment 1: Viewer Clipping with side encoder",
+      "Treatment 2: Viewer Clipping with enc encoder"
+    ],
+    "hash": 3351049965,
+    "buckets": [
+      -1,
+      0,
+      1,
+      2
+    ],
+    "config_keys": [
+      "enabled"
+    ]
+  }
+}
