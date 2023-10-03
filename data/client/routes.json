@@ -471,7 +471,10 @@
   },
   "GUILD_MFA": {
     "url": "/guilds/:param/mfa",
-    "allowed_methods": null
+    "allowed_methods": [
+      "OPTIONS",
+      "POST"
+    ]
   },
   "GUILD_PRUNE": {
     "url": "/guilds/:param/prune",
@@ -503,7 +506,13 @@
   },
   "GUILD_EMOJI": {
     "url": "/guilds/:param/emojis/:param",
-    "allowed_methods": null
+    "allowed_methods": [
+      "DELETE",
+      "GET",
+      "HEAD",
+      "OPTIONS",
+      "PATCH"
+    ]
   },
   "GUILD_AUDIT_LOG": {
     "url": "/guilds/:param/audit-logs",
@@ -591,7 +600,10 @@
   },
   "RESOURCE_CHANNEL": {
     "url": "/guilds/:param/resource-channels/:param",
-    "allowed_methods": null
+    "allowed_methods": [
+      "OPTIONS",
+      "PUT"
+    ]
   },
   "NEW_MEMBER_ACTION": {
     "url": "/guilds/:param/new-member-actions/:param",
@@ -634,7 +646,12 @@
   },
   "GUILD_MEMBER_VERIFICATION": {
     "url": "/guilds/:param/member-verification",
-    "allowed_methods": null
+    "allowed_methods": [
+      "GET",
+      "HEAD",
+      "OPTIONS",
+      "PATCH"
+    ]
   },
   "GUILD_JOIN_REQUESTS": {
     "url": "/guilds/:param/requests",
@@ -670,7 +687,10 @@
   },
   "GUILDS": {
     "url": "/guilds",
-    "allowed_methods": null
+    "allowed_methods": [
+      "OPTIONS",
+      "POST"
+    ]
   },
   "GUILD": {
     "url": "/guilds/:param",
@@ -826,7 +846,10 @@
   },
   "MESSAGES_GREET": {
     "url": "/channels/:param/greet",
-    "allowed_methods": null
+    "allowed_methods": [
+      "OPTIONS",
+      "POST"
+    ]
   },
   "MESSAGE": {
     "url": "/channels/:param/messages/:param",
@@ -883,7 +906,10 @@
   },
   "BACKGROUND_SYNC": {
     "url": "/users/@me/background-sync",
-    "allowed_methods": null
+    "allowed_methods": [
+      "OPTIONS",
+      "POST"
+    ]
   },
   "MESSAGE_PREVIEWS": {
     "url": "/channels/preload-messages",
@@ -948,7 +974,11 @@
   },
   "PINS": {
     "url": "/channels/:param/pins",
-    "allowed_methods": null
+    "allowed_methods": [
+      "GET",
+      "HEAD",
+      "OPTIONS"
+    ]
   },
   "PIN": {
     "url": "/channels/:param/pins/:param",
@@ -1339,7 +1369,11 @@
   },
   "NOTES": {
     "url": "/users/@me/notes",
-    "allowed_methods": null
+    "allowed_methods": [
+      "GET",
+      "HEAD",
+      "OPTIONS"
+    ]
   },
   "NOTE": {
     "url": "/users/@me/notes/:param",
@@ -1447,7 +1481,10 @@
   },
   "REGISTER_PHONE": {
     "url": "/auth/register/phone",
-    "allowed_methods": null
+    "allowed_methods": [
+      "OPTIONS",
+      "POST"
+    ]
   },
   "MFA_WEBAUTHN_CREDENTIALS": {
     "url": "/users/@me/mfa/webauthn/credentials",
@@ -1711,7 +1748,12 @@
   },
   "OAUTH2_TOKEN": {
     "url": "/oauth2/tokens/:param",
-    "allowed_methods": null
+    "allowed_methods": [
+      "DELETE",
+      "GET",
+      "HEAD",
+      "OPTIONS"
+    ]
   },
   "OAUTH2_WHITELIST_ACCEPT": {
     "url": "/oauth2/allowlist/accept",
@@ -1765,7 +1807,10 @@
   },
   "MFA_SMS_DISABLE": {
     "url": "/users/@me/mfa/sms/disable",
-    "allowed_methods": null
+    "allowed_methods": [
+      "OPTIONS",
+      "POST"
+    ]
   },
   "MFA_CODES_VERIFICATION": {
     "url": "/users/@me/mfa/codes-verification",
@@ -3028,7 +3073,14 @@
   },
   "GUILD_AUTOMOD_VALIDATE_RULE": {
     "url": "/guilds/:param/auto-moderation/rules/validate",
-    "allowed_methods": null
+    "allowed_methods": [
+      "DELETE",
+      "GET",
+      "HEAD",
+      "OPTIONS",
+      "PATCH",
+      "POST"
+    ]
   },
   "GUILD_AUTOMOD_CLEAR_MENTION_RAID": {
     "url": "/guilds/:param/auto-moderation/clear-mention-raid",
@@ -3127,7 +3179,12 @@
   },
   "APPLICATIONS": {
     "url": "/applications",
-    "allowed_methods": null
+    "allowed_methods": [
+      "GET",
+      "HEAD",
+      "OPTIONS",
+      "POST"
+    ]
   },
   "APPLICATION_OWNER_TRANSFER": {
     "url": "/applications/:param/transfer",
@@ -3255,7 +3312,10 @@
   },
   "GUILD_PRODUCT_CREATE_ATTACHMENT_UPLOAD": {
     "url": "/guilds/:param/products/attachments",
-    "allowed_methods": null
+    "allowed_methods": [
+      "OPTIONS",
+      "POST"
+    ]
   },
   "GUILD_ROLE_SUBSCRIPTIONS_SETTINGS": {
     "url": "/guilds/:param/role-subscriptions/settings",
@@ -3349,7 +3409,10 @@
   },
   "CREATOR_MONETIZATION_ACCEPT_TERMS_V2": {
     "url": "/guilds/:param/creator-monetization/accept-terms",
-    "allowed_methods": null
+    "allowed_methods": [
+      "OPTIONS",
+      "POST"
+    ]
   },
   "CREATOR_MONETIZATION_RESTRICTIONS": {
     "url": "/guilds/:param/creator-monetization/restrictions",
