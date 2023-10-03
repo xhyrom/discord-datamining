@@ -1538,7 +1538,10 @@
   },
   "METRICS": {
     "url": "/metrics",
-    "allowed_methods": null
+    "allowed_methods": [
+      "OPTIONS",
+      "POST"
+    ]
   },
   "SSO": {
     "url": "/sso",
@@ -1789,7 +1792,10 @@
   },
   "MFA_TOTP_ENABLE_RESEND": {
     "url": "/users/@me/mfa/totp/enable/resend",
-    "allowed_methods": null
+    "allowed_methods": [
+      "OPTIONS",
+      "POST"
+    ]
   },
   "MFA_TOTP_DISABLE": {
     "url": "/users/@me/mfa/totp/disable",
@@ -2145,7 +2151,10 @@
   },
   "BILLING_POPUP_BRIDGE_CALLBACK": {
     "url": "/billing/popup-bridge/:param/callback",
-    "allowed_methods": null
+    "allowed_methods": [
+      "OPTIONS",
+      "POST"
+    ]
   },
   "BILLING_POPUP_BRIDGE_CALLBACK_REDIRECT_PREFIX": {
     "url": "/billing/popup-bridge/:param/callback/:param/:param",
@@ -2298,7 +2307,10 @@
   },
   "HANDOFF_EXCHANGE": {
     "url": "/auth/handoff/exchange",
-    "allowed_methods": null
+    "allowed_methods": [
+      "OPTIONS",
+      "POST"
+    ]
   },
   "LIBRARY": {
     "url": "/users/@me/library",
@@ -2434,7 +2446,11 @@
   },
   "STORE_PUBLISHED_LISTINGS_SKUS": {
     "url": "/store/published-listings/skus",
-    "allowed_methods": null
+    "allowed_methods": [
+      "GET",
+      "HEAD",
+      "OPTIONS"
+    ]
   },
   "STORE_PUBLISHED_LISTINGS_SKU": {
     "url": "/store/published-listings/skus/:param",
@@ -2737,7 +2753,10 @@
   },
   "STREAM_NOTIFY": {
     "url": "/streams/:param/notify",
-    "allowed_methods": null
+    "allowed_methods": [
+      "OPTIONS",
+      "POST"
+    ]
   },
   "STREAM": {
     "url": "/streams/:param/stream",
@@ -3150,7 +3169,11 @@
   },
   "DIRECTORY_CHANNEL_LIST_BY_ID": {
     "url": "/channels/:param/directory-entries/list",
-    "allowed_methods": null
+    "allowed_methods": [
+      "GET",
+      "HEAD",
+      "OPTIONS"
+    ]
   },
   "DIRECTORY_ENTRIES_BROADCAST_INFO": {
     "url": "/guilds/:param/directory-entries/broadcast",
@@ -3209,7 +3232,10 @@
   },
   "HUB_EMAIL_VERIFY_CODE": {
     "url": "/guilds/automations/email-domain-lookup/verify-code",
-    "allowed_methods": null
+    "allowed_methods": [
+      "OPTIONS",
+      "POST"
+    ]
   },
   "DROPS_ELIGIBILITY": {
     "url": "/drops/eligibility",
@@ -3850,7 +3876,10 @@
   },
   "CONSOLES_DEVICES_COMMAND": {
     "url": "/consoles/:param/devices/:param/commands/:param",
-    "allowed_methods": null
+    "allowed_methods": [
+      "DELETE",
+      "OPTIONS"
+    ]
   },
   "ELIGIBLE_APPLICATION_SUBSCRIPTION_GUILDS": {
     "url": "/users/@me/billing/eligible-application-subscription-guilds",
@@ -3899,7 +3928,11 @@
   },
   "BURST_CREDIT_BALANCE": {
     "url": "/users/@me/burst-credits",
-    "allowed_methods": null
+    "allowed_methods": [
+      "GET",
+      "HEAD",
+      "OPTIONS"
+    ]
   },
   "SAVED_MESSAGES": {
     "url": "/saved-messages",
