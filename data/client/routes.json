@@ -874,7 +874,10 @@
   },
   "MESSAGE_ACK": {
     "url": "/channels/:param/messages/:param/ack",
-    "allowed_methods": null
+    "allowed_methods": [
+      "OPTIONS",
+      "POST"
+    ]
   },
   "MESSAGE_CREATE_ATTACHMENT_UPLOAD": {
     "url": "/channels/:param/attachments",
@@ -980,11 +983,19 @@
   },
   "GUILD_FEED_MARK_SEEN": {
     "url": "/guilds/:param/guild-feed/mark-seen",
-    "allowed_methods": null
+    "allowed_methods": [
+      "OPTIONS",
+      "POST"
+    ]
   },
   "PINS_ACK": {
     "url": "/channels/:param/pins/ack",
-    "allowed_methods": null
+    "allowed_methods": [
+      "DELETE",
+      "OPTIONS",
+      "POST",
+      "PUT"
+    ]
   },
   "PINS": {
     "url": "/channels/:param/pins",
@@ -1059,7 +1070,13 @@
   },
   "CHANNEL_ACK": {
     "url": "/channels/:param/messages/ack",
-    "allowed_methods": null
+    "allowed_methods": [
+      "DELETE",
+      "GET",
+      "HEAD",
+      "OPTIONS",
+      "PATCH"
+    ]
   },
   "CHANNEL_STORE_LISTING": {
     "url": "/channels/:param/store-listing",
@@ -1116,7 +1133,10 @@
   },
   "FORUM_TAGS": {
     "url": "/channels/:param/tags",
-    "allowed_methods": null
+    "allowed_methods": [
+      "OPTIONS",
+      "POST"
+    ]
   },
   "FORUM_TAG": {
     "url": "/channels/:param/tags/:param",
@@ -1128,7 +1148,10 @@
   },
   "FRIEND_FINDER": {
     "url": "/friend-finder/find-friends",
-    "allowed_methods": null
+    "allowed_methods": [
+      "OPTIONS",
+      "POST"
+    ]
   },
   "FRIEND_FINDER_HIDE_INVITE_SUGGESTION": {
     "url": "/friend-finder/hide-invite-suggestion",
@@ -1290,7 +1313,10 @@
   },
   "VERIFY_PHONE_FOR_TICKET": {
     "url": "/phone-verifications/validate-support-ticket",
-    "allowed_methods": null
+    "allowed_methods": [
+      "OPTIONS",
+      "POST"
+    ]
   },
   "RESEND_PHONE": {
     "url": "/phone-verifications/resend",
@@ -1484,7 +1510,10 @@
   },
   "REMOTE_AUTH_CANCEL": {
     "url": "/users/@me/remote-auth/cancel",
-    "allowed_methods": null
+    "allowed_methods": [
+      "OPTIONS",
+      "POST"
+    ]
   },
   "REMOTE_AUTH_LOGIN": {
     "url": "/users/@me/remote-auth/login",
@@ -1614,7 +1643,10 @@
   },
   "VERIFY_RESEND": {
     "url": "/auth/verify/resend",
-    "allowed_methods": null
+    "allowed_methods": [
+      "OPTIONS",
+      "POST"
+    ]
   },
   "FORGOT_PASSWORD": {
     "url": "/auth/forgot",
@@ -2060,7 +2092,11 @@
   },
   "USER_APPLIED_GUILD_BOOSTS": {
     "url": "/users/@me/guilds/premium/subscriptions",
-    "allowed_methods": null
+    "allowed_methods": [
+      "GET",
+      "HEAD",
+      "OPTIONS"
+    ]
   },
   "USER_GUILD_BOOST_SLOTS": {
     "url": "/users/@me/guilds/premium/subscription-slots",
@@ -2137,7 +2173,11 @@
   },
   "BILLING_PAYMENTS": {
     "url": "/users/@me/billing/payments",
-    "allowed_methods": null
+    "allowed_methods": [
+      "GET",
+      "HEAD",
+      "OPTIONS"
+    ]
   },
   "BILLING_PAYMENT": {
     "url": "/users/@me/billing/payments/:param",
@@ -2355,7 +2395,10 @@
   },
   "USER_ACHIEVEMENTS_FOR_USER": {
     "url": "/users/:param/applications/:param/achievements/:param",
-    "allowed_methods": null
+    "allowed_methods": [
+      "OPTIONS",
+      "PUT"
+    ]
   },
   "HANDOFF": {
     "url": "/auth/handoff",
@@ -3217,7 +3260,11 @@
   },
   "DIRECTORY_CHANNEL_ENTRIES": {
     "url": "/channels/:param/directory-entries",
-    "allowed_methods": null
+    "allowed_methods": [
+      "GET",
+      "HEAD",
+      "OPTIONS"
+    ]
   },
   "DIRECTORY_CHANNEL_ENTRY": {
     "url": "/channels/:param/directory-entry/:param",
@@ -3390,7 +3437,11 @@
   },
   "OUTBOUND_PROMOTIONS_PREVIEW": {
     "url": "/outbound-promotions/preview",
-    "allowed_methods": null
+    "allowed_methods": [
+      "GET",
+      "HEAD",
+      "OPTIONS"
+    ]
   },
   "BOGO_PROMOTIONS": {
     "url": "/bogo-promotions",
