@@ -1,4 +1,4 @@
-/*! For license information please see ed92dacab176013b8e7b.js.LICENSE.txt */
+/*! For license information please see b8e88b5a169664fce26c.js.LICENSE.txt */
 (this.webpackChunkdiscord_app = this.webpackChunkdiscord_app || []).push([
     [22897], {
         151131: (t, e, r) => {
@@ -23590,7 +23590,8 @@
                 t.REMIX_UPSELL_ACTIONSHEET = "Remix Upsell Actionsheet";
                 t.COMMUNITY_ALERTS = "Community Alerts Settings";
                 t.SUMMARY_ACTION_SHEET = "Summary Action Sheet";
-                t.COLLECTIBLES_SHOP_DETAILS_MODAL = "Collectibles Shop Details Modal"
+                t.COLLECTIBLES_SHOP_DETAILS_MODAL = "Collectibles Shop Details Modal";
+                t.PROFILE_EFFECT_CUSTOMIZATION = "Profile Effect Customization"
             }(er || (er = {}));
             ! function(t) {
                 t.TOOLTIP = "Tooltip";
@@ -24295,6 +24296,8 @@
                 t.OVERLAY_LAYOUT_UPDATED = "overlay_layout_updated";
                 t.OVERLAY_SETTINGS_UPDATED = "overlay_settings_updated";
                 t.OVERLAY_PERF_INFO = "overlay_perf_info";
+                t.OVERLAY_USAGE_STATS = "overlay_usage_stats";
+                t.OVERLAY_USAGE_NOTIFICATION_STATS = "overlay_usage_notification_stats";
                 t.SPOTIFY_AUTO_PAUSED = "spotify_auto_paused";
                 t.SPOTIFY_BUTTON_CLICKED = "spotify_button_clicked";
                 t.SPOTIFY_LISTEN_ALONG_STARTED = "spotify_listen_along_started";
@@ -25516,7 +25519,7 @@
                 t.REMIXING_TEXT_SUPPORT = "15145601963031-Remix-FAQ#h_01H2Y1F86HNTVKWNVJJSB4C6A5";
                 t.SERVER_SUBSCRIPTION_AND_PRODUCTS = "10423011974551";
                 t.SERVER_PRODUCTS = "10423011974551#docs-internal-guid-918e991a-7fff-03d5-8326-5d065e5edeb1";
-                t.WIN32_DEPRECATE = "213491697"
+                t.WIN32_DEPRECATE = "17997797368471"
             }(Dn || (Dn = {}));
             var gn, Un, Pn, Mn, mn, Gn = function(t) {
                     return "https://www.youtube.com/embed/".concat(t)
@@ -37077,7 +37080,7 @@ sentry_client:`${e.name}/${e.version}`}})}(t,n)}`
                     dsn: "https://fa97a90475514c03a42f80cd36d147c4@sentry.io/140984",
                     autoSessionTracking: !1,
                     environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                    release: "discord_web-7adec5623eb3c2f62c2ccff637ee06ba6f3f2701",
+                    release: "discord_web-546f66eb064eca0400af0d0be19aaf04e815411c",
                     beforeSend: function(t) {
                         return function(t) {
                             return null != t.exception && null != t.exception.values && t.exception.values.every((function(t) {
@@ -37104,8 +37107,8 @@ sentry_client:`${e.name}/${e.version}`}})}(t,n)}`
                     denyUrls: [/recaptcha/, /mobilediscord\.com/, /betterdiscord:\/\//]
                 });
                 var t;
-                X.YA("buildNumber", null !== (t = "233731") ? t : "");
-                X.YA("builtAt", String("1696355595354"));
+                X.YA("buildNumber", null !== (t = "233846") ? t : "");
+                X.YA("builtAt", String("1696363965635"));
                 var e = window.GLOBAL_ENV.SENTRY_TAGS;
                 if (null != e && "object" == typeof e)
                     for (var r in e) X.YA(r, e[r]);
@@ -48485,4 +48488,4 @@ sentry_client:`${e.name}/${e.version}`}})}(t,n)}`
         e(128594), e(535666), e(784633), e(678991)
     }
 ]);
-//# sourceMappingURL=ed92dacab176013b8e7b.js.map
+//# sourceMappingURL=b8e88b5a169664fce26c.js.map
