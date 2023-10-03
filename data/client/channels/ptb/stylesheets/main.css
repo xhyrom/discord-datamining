@@ -68036,6 +68036,14 @@ strong {
     margin: auto
 }
 
+.calloutContainer-2WCWZC {
+    margin-top: 4px;
+    margin-bottom: 2px;
+    padding: 8px 16px;
+    background-color: var(--background-primary);
+    border-radius: 8px
+}
+
 .unread-O4ZgUu {
     position: absolute;
     top: 28px;
@@ -171411,4 +171419,4 @@ html .invoiceCancelRow-dVOR64 {
     margin-bottom: 8px
 }
 
-/*# sourceMappingURL=40532.b6609e87bd3e4ae6ba2f.css.map*/
+/*# sourceMappingURL=40532.c17e18d9c0981ef31086.css.map*/
