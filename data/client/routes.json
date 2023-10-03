@@ -626,7 +626,12 @@
   },
   "GUILD_MEMBER_ACTIONS": {
     "url": "/guilds/:param/new-member-actions",
-    "allowed_methods": null
+    "allowed_methods": [
+      "DELETE",
+      "GET",
+      "HEAD",
+      "OPTIONS"
+    ]
   },
   "GUILD_MEMBER_ACTION_UPDATE": {
     "url": "/guilds/:param/new-member-action/:param",
@@ -1779,7 +1784,12 @@
   },
   "OWNED_APPLICATION_BRANCHES": {
     "url": "/applications/:param/branches",
-    "allowed_methods": null
+    "allowed_methods": [
+      "GET",
+      "HEAD",
+      "OPTIONS",
+      "POST"
+    ]
   },
   "OAUTH2_AUTHORIZE": {
     "url": "/oauth2/authorize",
