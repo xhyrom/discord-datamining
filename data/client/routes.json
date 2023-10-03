@@ -629,7 +629,12 @@
   },
   "GUILD_JOIN_REQUESTS": {
     "url": "/guilds/:param/requests",
-    "allowed_methods": null
+    "allowed_methods": [
+      "GET",
+      "HEAD",
+      "OPTIONS",
+      "PATCH"
+    ]
   },
   "USER_JOIN_REQUEST_GUILDS": {
     "url": "/users/@me/join-request-guilds",
@@ -670,7 +675,10 @@
   },
   "GUILD_PINCODE": {
     "url": "/guilds/:param/pincode",
-    "allowed_methods": null
+    "allowed_methods": [
+      "OPTIONS",
+      "PUT"
+    ]
   },
   "GUILD_DELETE": {
     "url": "/guilds/:param/delete",
@@ -701,7 +709,10 @@
   },
   "THREAD_MEMBER_SETTINGS": {
     "url": "/channels/:param/thread-members/@me/settings",
-    "allowed_methods": null
+    "allowed_methods": [
+      "OPTIONS",
+      "PATCH"
+    ]
   },
   "ALL_ARCHIVED_THREADS": {
     "url": "/channels/:param/threads/archived/:param",
@@ -721,7 +732,10 @@
   },
   "FORUM_POSTS": {
     "url": "/channels/:param/post-data",
-    "allowed_methods": null
+    "allowed_methods": [
+      "OPTIONS",
+      "POST"
+    ]
   },
   "PARTNER_REQUIREMENTS": {
     "url": "/partners/:param/requirements",
@@ -757,7 +771,10 @@
   },
   "COLLECTIBLES_CLAIM": {
     "url": "/users/@me/claim-premium-collectibles-product",
-    "allowed_methods": null
+    "allowed_methods": [
+      "OPTIONS",
+      "PUT"
+    ]
   },
   "COLLECTIBLES_PURCHASES": {
     "url": "/users/@me/collectibles-purchases",
@@ -790,7 +807,13 @@
   },
   "MESSAGE": {
     "url": "/channels/:param/messages/:param",
-    "allowed_methods": null
+    "allowed_methods": [
+      "DELETE",
+      "GET",
+      "HEAD",
+      "OPTIONS",
+      "PATCH"
+    ]
   },
   "MESSAGE_ACK": {
     "url": "/channels/:param/messages/:param/ack",
@@ -870,7 +893,13 @@
   },
   "GUILD_FEED_FEATURE_ITEM": {
     "url": "/guilds/:param/guild-feed/feature",
-    "allowed_methods": null
+    "allowed_methods": [
+      "DELETE",
+      "GET",
+      "HEAD",
+      "OPTIONS",
+      "PUT"
+    ]
   },
   "GUILD_FEED_MARK_SEEN": {
     "url": "/guilds/:param/guild-feed/mark-seen",
@@ -890,7 +919,12 @@
   },
   "INSTANT_INVITES": {
     "url": "/channels/:param/invites",
-    "allowed_methods": null
+    "allowed_methods": [
+      "GET",
+      "HEAD",
+      "OPTIONS",
+      "POST"
+    ]
   },
   "TYPING": {
     "url": "/channels/:param/typing",
@@ -921,7 +955,10 @@
   },
   "CHANNEL_RECIPIENT_REJECT_BATCH": {
     "url": "/channels/recipients/@me/batch-reject",
-    "allowed_methods": null
+    "allowed_methods": [
+      "OPTIONS",
+      "PUT"
+    ]
   },
   "CHANNEL_ICON": {
     "url": "/channels/:param/icons/:param.jpg",
@@ -1012,7 +1049,11 @@
   },
   "TUTORIAL_INDICATORS_SUPPRESS": {
     "url": "/tutorial/indicators/suppress",
-    "allowed_methods": null
+    "allowed_methods": [
+      "OPTIONS",
+      "POST",
+      "PUT"
+    ]
   },
   "TUTORIAL_INDICATOR": {
     "url": "/tutorial/indicators/:param",
@@ -1045,7 +1086,10 @@
   },
   "POMELO_ATTEMPT": {
     "url": "/users/@me/pomelo-attempt",
-    "allowed_methods": null
+    "allowed_methods": [
+      "OPTIONS",
+      "POST"
+    ]
   },
   "POMELO_ATTEMPT_UNAUTHED": {
     "url": "/unique-username/username-attempt-unauthed",
@@ -1079,7 +1123,11 @@
   },
   "DEVICES_SYNC_TOKEN": {
     "url": "/users/@me/devices/sync-token",
-    "allowed_methods": null
+    "allowed_methods": [
+      "GET",
+      "HEAD",
+      "OPTIONS"
+    ]
   },
   "DEVICES_SYNC": {
     "url": "/users/@me/devices/sync",
@@ -1110,7 +1158,10 @@
   },
   "PHONE_REVERIFY": {
     "url": "/users/@me/phone/reverify",
-    "allowed_methods": null
+    "allowed_methods": [
+      "OPTIONS",
+      "POST"
+    ]
   },
   "FRIEND_INVITES": {
     "url": "/users/@me/invites",
@@ -1152,7 +1203,11 @@
   },
   "CONNECTIONS_AUTHORIZE_CONTINUATION": {
     "url": "/connections/:param/authorize?continuation=true",
-    "allowed_methods": null
+    "allowed_methods": [
+      "GET",
+      "HEAD",
+      "OPTIONS"
+    ]
   },
   "CONNECTIONS_AUTHORIZE_LINK": {
     "url": "/connections/:param/authorize?two_way_link=true&two_way_link_type=:param",
@@ -1236,7 +1291,10 @@
   },
   "MENTIONS_MESSAGE_ID": {
     "url": "/users/@me/mentions/:param",
-    "allowed_methods": null
+    "allowed_methods": [
+      "DELETE",
+      "OPTIONS"
+    ]
   },
   "CAPTCHA": {
     "url": "/users/@me/captcha/verify",
@@ -1341,7 +1399,12 @@
   },
   "GUILD_TEMPLATES": {
     "url": "/guilds/:param/templates",
-    "allowed_methods": null
+    "allowed_methods": [
+      "GET",
+      "HEAD",
+      "OPTIONS",
+      "POST"
+    ]
   },
   "GUILD_TEMPLATE": {
     "url": "/guilds/:param/templates/:param",
@@ -1376,7 +1439,10 @@
   },
   "AUTHORIZE_IP": {
     "url": "/auth/authorize-ip",
-    "allowed_methods": null
+    "allowed_methods": [
+      "OPTIONS",
+      "POST"
+    ]
   },
   "AUTHORIZE_PAYMENT": {
     "url": "/billing/verify-purchase-request",
@@ -1407,7 +1473,10 @@
   },
   "DEBUG_LOG": {
     "url": "/debug-logs/:param/:param",
-    "allowed_methods": null
+    "allowed_methods": [
+      "OPTIONS",
+      "POST"
+    ]
   },
   "DEBUG_LOGS": {
     "url": "/debug-logs/multi/:param",
@@ -1442,7 +1511,10 @@
   },
   "INTEGRATION_JOIN": {
     "url": "/integrations/:param/join",
-    "allowed_methods": null
+    "allowed_methods": [
+      "OPTIONS",
+      "POST"
+    ]
   },
   "INTEGRATION_SEARCH": {
     "url": "/integrations/:param/search",
@@ -1596,7 +1668,10 @@
   },
   "MFA_SEND_VERIFICATION_KEY": {
     "url": "/auth/verify/view-backup-codes-challenge",
-    "allowed_methods": null
+    "allowed_methods": [
+      "OPTIONS",
+      "POST"
+    ]
   },
   "CALL": {
     "url": "/channels/:param/call",
@@ -1708,7 +1783,10 @@
   },
   "SEARCH_TABS_GUILD": {
     "url": "/guilds/:param/messages/search/tabs",
-    "allowed_methods": null
+    "allowed_methods": [
+      "OPTIONS",
+      "POST"
+    ]
   },
   "SEARCH_DMS": {
     "url": "/users/@me/messages/search",
@@ -1965,7 +2043,10 @@
   },
   "BILLING_INVOICE_MANUAL_PAYMENT": {
     "url": "/users/@me/billing/subscriptions/:param/invoices/:param/pay",
-    "allowed_methods": null
+    "allowed_methods": [
+      "OPTIONS",
+      "POST"
+    ]
   },
   "BILLING_COUNTRY_CODE": {
     "url": "/users/@me/billing/country-code",
@@ -2122,7 +2203,11 @@
   },
   "STORE_DIRECTORY": {
     "url": "/store/directory/:param",
-    "allowed_methods": null
+    "allowed_methods": [
+      "GET",
+      "HEAD",
+      "OPTIONS"
+    ]
   },
   "STORE_EMAIL_RESEND_PAYMENT_VERIFICATION": {
     "url": "/store/email/resend-payment-verification",
@@ -2302,7 +2387,10 @@
   },
   "GIFS_SELECT": {
     "url": "/gifs/select",
-    "allowed_methods": null
+    "allowed_methods": [
+      "OPTIONS",
+      "POST"
+    ]
   },
   "GIFS_SUGGEST": {
     "url": "/gifs/suggest",
@@ -2422,7 +2510,12 @@
   },
   "STREAM_PREVIEW": {
     "url": "/streams/:param/preview",
-    "allowed_methods": null
+    "allowed_methods": [
+      "GET",
+      "HEAD",
+      "OPTIONS",
+      "POST"
+    ]
   },
   "STREAM_NOTIFY": {
     "url": "/streams/:param/notify",
@@ -2484,7 +2577,11 @@
   },
   "STICKER_PACK": {
     "url": "/sticker-packs/:param",
-    "allowed_methods": null
+    "allowed_methods": [
+      "GET",
+      "HEAD",
+      "OPTIONS"
+    ]
   },
   "STORE_DIRECTORY_LAYOUT_STICKER_PACKS": {
     "url": "/sticker-packs/directory-v2/:param",
@@ -3030,7 +3127,11 @@
   },
   "CREATOR_MONETIZATION_RESTRICTIONS": {
     "url": "/guilds/:param/creator-monetization/restrictions",
-    "allowed_methods": null
+    "allowed_methods": [
+      "GET",
+      "HEAD",
+      "OPTIONS"
+    ]
   },
   "GUILD_ROLE_SUBSCRIPTION_TRIAL_ELIGIBILITY": {
     "url": "/guilds/:param/role-subscriptions/subscription-listings/:param/trial/:param/eligibility",
@@ -3207,7 +3308,11 @@
   },
   "APPLICATION_COMMAND_INDEX_CHANNEL": {
     "url": "/channels/:param/application-command-index",
-    "allowed_methods": null
+    "allowed_methods": [
+      "GET",
+      "HEAD",
+      "OPTIONS"
+    ]
   },
   "APPLICATION_COMMAND_INDEX_GUILD": {
     "url": "/guilds/:param/application-command-index",
@@ -3247,7 +3352,11 @@
   },
   "APPLICATION_DIRECTORY_CATEGORIES": {
     "url": "/application-directory-static/categories",
-    "allowed_methods": null
+    "allowed_methods": [
+      "GET",
+      "HEAD",
+      "OPTIONS"
+    ]
   },
   "APPLICATION_DIRECTORY_SIMILAR": {
     "url": "/application-directory-static/applications/:param/similar",
@@ -3322,7 +3431,10 @@
   },
   "NOTIF_CENTER_ITEMS_ACK": {
     "url": "/users/@me/notification-center/items/:param/ack",
-    "allowed_methods": null
+    "allowed_methods": [
+      "OPTIONS",
+      "POST"
+    ]
   },
   "NOTIF_CENTER_ITEMS_BULK_ACK": {
     "url": "/users/@me/notification-center/items/bulk-ack",
@@ -3357,7 +3469,10 @@
   },
   "AUTH_SESSIONS_LOGOUT": {
     "url": "/auth/sessions/logout",
-    "allowed_methods": null
+    "allowed_methods": [
+      "OPTIONS",
+      "POST"
+    ]
   },
   "CUSTOM_CALL_SOUNDS": {
     "url": "/channels/:param/custom-call-sounds",
