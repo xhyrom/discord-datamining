@@ -1779,7 +1779,10 @@
   },
   "USER_GUILD_SETTINGS": {
     "url": "/users/@me/guilds/:param/settings",
-    "allowed_methods": null
+    "allowed_methods": [
+      "OPTIONS",
+      "PATCH"
+    ]
   },
   "APPLICATIONS_DETECTABLE": {
     "url": "/applications/detectable",
