@@ -2367,7 +2367,7 @@
   "FORM_LABEL_MOBILE_NOTIFICATIONS_CALL_DESC": "\"Integrate calls with Phone app.\"",
   "FORM_LABEL_MOBILE_CHANNEL_OVERRIDE_MUTE": "\"You won't receive notifications from muted channels, and they will appear grayed out in your channel list. This setting applies across all your devices.\"",
   "FORM_LABEL_MOBILE_CATEGORY_OVERRIDE_MUTE": "\"You won't receive notifications from muted categories, and they will appear grayed out in your channel list. This setting applies across all your devices.\"",
-  "FORM_LABEL_MOBILE_CHANNEL_OVERRIDE_GUILD_MUTED": "\"Your server is currently $[**muted**](mutedHook). You can't get notifications from this channel nor change settings until you unmute this server\"",
+  "FORM_LABEL_MOBILE_CHANNEL_OVERRIDE_GUILD_MUTED": "\"Your server is currently $[**muted**](mutedHook). You can't get notifications from this channel nor change settings until you unmute this server.\"",
   "FORM_LABEL_MOBILE_CHANNEL_OVERRIDE_GUILD_MESSAGE_NOTIFICATION": "\"Your server's notification is set to $[**nothing**](notificationHook). You will not get any notifications from this channel, but you can override it here.\"",
   "CHANNEL_OR_GUILD_MUTED": "\"This channel or server is currently muted.\"",
   "MUTE_SETTINGS_MUTE_THIS_CONVERSATION": "\"Mute this conversation\"",
