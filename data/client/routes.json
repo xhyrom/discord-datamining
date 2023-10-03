@@ -1218,7 +1218,11 @@
   },
   "POMELO_SUGGESTIONS": {
     "url": "/users/@me/pomelo-suggestions",
-    "allowed_methods": null
+    "allowed_methods": [
+      "GET",
+      "HEAD",
+      "OPTIONS"
+    ]
   },
   "POMELO_SUGGESTIONS_UNAUTHED": {
     "url": "/unique-username/username-suggestions-unauthed",
@@ -1905,7 +1909,10 @@
   },
   "MFA_TOTP_ENABLE": {
     "url": "/users/@me/mfa/totp/enable",
-    "allowed_methods": null
+    "allowed_methods": [
+      "OPTIONS",
+      "POST"
+    ]
   },
   "MFA_TOTP_ENABLE_VERIFY": {
     "url": "/users/@me/mfa/totp/enable/verify",
@@ -3763,7 +3770,13 @@
   },
   "GUILD_PRODUCT_LISTINGS": {
     "url": "/guilds/:param/products/listings/:param",
-    "allowed_methods": null
+    "allowed_methods": [
+      "DELETE",
+      "GET",
+      "HEAD",
+      "OPTIONS",
+      "PATCH"
+    ]
   },
   "GUILD_PRODUCT_ATTACHMENT_DOWNLOAD": {
     "url": "/guilds/:param/products/listings/:param/attachments/:param/download",
@@ -3956,7 +3969,10 @@
   },
   "USER_EMAIL_VERIFY_CODE": {
     "url": "/users/@me/email/verify-code",
-    "allowed_methods": null
+    "allowed_methods": [
+      "OPTIONS",
+      "POST"
+    ]
   },
   "PREMIUM_USAGE": {
     "url": "/users/@me/premium-usage",
@@ -3998,7 +4014,11 @@
   },
   "GUILD_ADMIN_SERVER_ELIGIBILITY": {
     "url": "/guilds/:param/admin-server-eligibility",
-    "allowed_methods": null
+    "allowed_methods": [
+      "GET",
+      "HEAD",
+      "OPTIONS"
+    ]
   },
   "JOIN_ADMIN_SERVER": {
     "url": "/guilds/:param/join-admin-server",
