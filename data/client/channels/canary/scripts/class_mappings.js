@@ -19803,6 +19803,7 @@
                 giftBoxHeaderContainer: "giftBoxHeaderContainer-3BUaXT",
                 infoIconContainer: "infoIconContainer-7wlSbF",
                 giftMainAnimation: "giftMainAnimation-3mE9-P",
+                animation: "animation-2G0RUD",
                 spinner: "spinner-2R6WcU",
                 giftBoxHeaderText: "giftBoxHeaderText-2ndxNR",
                 giftBoxOptionContainer: "giftBoxOptionContainer-ruho5Z"
@@ -26988,4 +26989,4 @@
         }
     }
 ]);
-//# sourceMappingURL=62f09807859f649b7186.js.map
+//# sourceMappingURL=861bdd723b351c64c65f.js.map

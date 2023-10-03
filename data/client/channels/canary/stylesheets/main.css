@@ -41698,8 +41698,13 @@ input[type=checked]:focus-visible+.label-3TDpbn {
 }
 
 .giftMainAnimation-3mE9-P {
-    margin-bottom: 15px;
+    margin-bottom: 65px;
     height: 215px
+}
+
+.animation-2G0RUD {
+    -webkit-transform: scale(1);
+    transform: scale(1)
 }
 
 .spinner-2R6WcU {
@@ -41728,7 +41733,7 @@ input[type=checked]:focus-visible+.label-3TDpbn {
     align-items: center;
     gap: 9px;
     margin: 25px auto auto;
-    max-width: 90%
+    max-width: 85%
 }
 
 .planOption-187LtR {
@@ -171459,4 +171464,4 @@ html .invoiceCancelRow-dVOR64 {
     margin-bottom: 8px
 }
 
-/*# sourceMappingURL=40532.165e01946a98cbdc0fa5.css.map*/
+/*# sourceMappingURL=40532.c37c885ed08d4df882e6.css.map*/
