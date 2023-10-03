@@ -157621,6 +157621,10 @@ html .invoiceCancelRow-3s2UuC {
     border-radius: 4px
 }
 
+.credentialItem-uKtZCz {
+    border-top: 1px solid var(--background-modifier-accent)
+}
+
 .credentialItem-uKtZCz:not(:last-child) {
     margin-bottom: 4px
 }
@@ -171388,4 +171392,4 @@ html .invoiceCancelRow-dVOR64 {
     margin-bottom: 8px
 }
 
-/*# sourceMappingURL=40532.c4f0905995890ec9cd8d.css.map*/
+/*# sourceMappingURL=40532.917d2e69b8741d4b20a4.css.map*/
