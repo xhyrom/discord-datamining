@@ -1058,7 +1058,10 @@
   },
   "CHANNEL_INTEGRATION": {
     "url": "/channels/:param/integrations/:param",
-    "allowed_methods": null
+    "allowed_methods": [
+      "DELETE",
+      "OPTIONS"
+    ]
   },
   "FORUM_TAGS": {
     "url": "/channels/:param/tags",
@@ -1237,7 +1240,10 @@
   },
   "RESEND_PHONE": {
     "url": "/phone-verifications/resend",
-    "allowed_methods": null
+    "allowed_methods": [
+      "OPTIONS",
+      "POST"
+    ]
   },
   "CONNECTIONS": {
     "url": "/users/@me/connections",
@@ -1314,7 +1320,11 @@
   },
   "CONNECTIONS_CALLBACK_CONTINUATION": {
     "url": "/connections/:param/callback-continuation/:param",
-    "allowed_methods": null
+    "allowed_methods": [
+      "GET",
+      "HEAD",
+      "OPTIONS"
+    ]
   },
   "CONNECTIONS_LINK_DISPATCH_AUTH_CALLBACK": {
     "url": "/connections/:param/link-dispatch-auth-callback",
@@ -1495,7 +1505,11 @@
   },
   "SSO": {
     "url": "/sso",
-    "allowed_methods": null
+    "allowed_methods": [
+      "GET",
+      "HEAD",
+      "OPTIONS"
+    ]
   },
   "SSO_TOKEN": {
     "url": "/sso-token",
@@ -1557,6 +1571,10 @@
     "url": "/debug-logs/multi/:param",
     "allowed_methods": null
   },
+  "CALLSCOPE_LOGS": {
+    "url": "/callscope/logs/:param/user/:param/:param",
+    "allowed_methods": null
+  },
   "REPORT_V2": {
     "url": "/reports",
     "allowed_methods": null
@@ -1597,7 +1615,12 @@
   },
   "INTEGRATION_APPLICATION_IDS_FOR_MY_GUILDS": {
     "url": "/users/@me/guilds/integration-application-ids",
-    "allowed_methods": null
+    "allowed_methods": [
+      "DELETE",
+      "GET",
+      "HEAD",
+      "OPTIONS"
+    ]
   },
   "USER_GUILD_SETTINGS": {
     "url": "/users/@me/guilds/:param/settings",
@@ -1647,7 +1670,12 @@
   },
   "OAUTH2_AUTHORIZE": {
     "url": "/oauth2/authorize",
-    "allowed_methods": null
+    "allowed_methods": [
+      "GET",
+      "HEAD",
+      "OPTIONS",
+      "POST"
+    ]
   },
   "OAUTH2_AUTHORIZE_SAMSUNG": {
     "url": "/oauth2/samsung/authorize",
@@ -2622,7 +2650,11 @@
   },
   "GUILD_DISCOVERY_CATEGORIES": {
     "url": "/discovery/categories",
-    "allowed_methods": null
+    "allowed_methods": [
+      "GET",
+      "HEAD",
+      "OPTIONS"
+    ]
   },
   "GUILD_DISCOVERY_VALID_TERM": {
     "url": "/discovery/valid-term",
@@ -2671,7 +2703,11 @@
   },
   "GUILD_PREVIEW": {
     "url": "/guilds/:param/preview",
-    "allowed_methods": null
+    "allowed_methods": [
+      "GET",
+      "HEAD",
+      "OPTIONS"
+    ]
   },
   "USER_AFFINITIES": {
     "url": "/users/@me/affinities/users",
@@ -2730,7 +2766,11 @@
   },
   "STORE_DIRECTORY_LAYOUT_STICKER_PACKS": {
     "url": "/sticker-packs/directory-v2/:param",
-    "allowed_methods": null
+    "allowed_methods": [
+      "GET",
+      "HEAD",
+      "OPTIONS"
+    ]
   },
   "USER_STICKER_PACKS": {
     "url": "/users/@me/sticker-packs",
@@ -2801,7 +2841,11 @@
   },
   "ACTIVITY_SHELF": {
     "url": "/activities/shelf",
-    "allowed_methods": null
+    "allowed_methods": [
+      "GET",
+      "HEAD",
+      "OPTIONS"
+    ]
   },
   "ACTIVITY_CHANNEL_LAUNCH": {
     "url": "/activities/:param/:param",
@@ -3172,7 +3216,11 @@
   },
   "OUTBOUND_PROMOTIONS": {
     "url": "/outbound-promotions",
-    "allowed_methods": null
+    "allowed_methods": [
+      "GET",
+      "HEAD",
+      "OPTIONS"
+    ]
   },
   "OUTBOUND_PROMOTIONS_PREVIEW": {
     "url": "/outbound-promotions/preview",
@@ -3645,7 +3693,10 @@
   },
   "JOIN_ADMIN_SERVER": {
     "url": "/guilds/:param/join-admin-server",
-    "allowed_methods": null
+    "allowed_methods": [
+      "OPTIONS",
+      "POST"
+    ]
   },
   "AUTH_SESSIONS": {
     "url": "/auth/sessions",
@@ -4001,7 +4052,10 @@
   },
   "SEND_GAMING_STATS": {
     "url": "/:param/gaming-stats",
-    "allowed_methods": null
+    "allowed_methods": [
+      "OPTIONS",
+      "POST"
+    ]
   },
   "UPDATE_GAMING_STATS": {
     "url": "/:param/:param/update-gaming-stats",
