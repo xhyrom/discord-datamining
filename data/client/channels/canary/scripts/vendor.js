@@ -1,4 +1,4 @@
-/*! For license information please see d4b1b761cec2f5fbde11.js.LICENSE.txt */
+/*! For license information please see d108a7964466d7bd2533.js.LICENSE.txt */
 (this.webpackChunkdiscord_app = this.webpackChunkdiscord_app || []).push([
     [22897], {
         151131: (t, e, r) => {
@@ -25516,7 +25516,7 @@
                 t.REMIXING_TEXT_SUPPORT = "15145601963031-Remix-FAQ#h_01H2Y1F86HNTVKWNVJJSB4C6A5";
                 t.SERVER_SUBSCRIPTION_AND_PRODUCTS = "10423011974551";
                 t.SERVER_PRODUCTS = "10423011974551#docs-internal-guid-918e991a-7fff-03d5-8326-5d065e5edeb1";
-                t.WIN32_DEPRECATE = "213491697"
+                t.WIN32_DEPRECATE = "17997797368471"
             }(Dn || (Dn = {}));
             var gn, Un, Pn, Mn, mn, Gn = function(t) {
                     return "https://www.youtube.com/embed/".concat(t)
@@ -37077,7 +37077,7 @@ sentry_client:`${e.name}/${e.version}`}})}(t,n)}`
                     dsn: "https://fa97a90475514c03a42f80cd36d147c4@sentry.io/140984",
                     autoSessionTracking: !1,
                     environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                    release: "discord_web-8dd7cdfe103087bb57eb304d6593efb2a02a5ad6",
+                    release: "discord_web-83afa807ea842839b86c1c730784d076131a9aee",
                     beforeSend: function(t) {
                         return function(t) {
                             return null != t.exception && null != t.exception.values && t.exception.values.every((function(t) {
@@ -37104,8 +37104,8 @@ sentry_client:`${e.name}/${e.version}`}})}(t,n)}`
                     denyUrls: [/recaptcha/, /mobilediscord\.com/, /betterdiscord:\/\//]
                 });
                 var t;
-                X.YA("buildNumber", null !== (t = "233757") ? t : "");
-                X.YA("builtAt", String("1696357687681"));
+                X.YA("buildNumber", null !== (t = "233760") ? t : "");
+                X.YA("builtAt", String("1696357824451"));
                 var e = window.GLOBAL_ENV.SENTRY_TAGS;
                 if (null != e && "object" == typeof e)
                     for (var r in e) X.YA(r, e[r]);
@@ -48485,4 +48485,4 @@ sentry_client:`${e.name}/${e.version}`}})}(t,n)}`
         e(128594), e(535666), e(784633), e(678991)
     }
 ]);
-//# sourceMappingURL=d4b1b761cec2f5fbde11.js.map
+//# sourceMappingURL=d108a7964466d7bd2533.js.map
