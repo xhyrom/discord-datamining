@@ -1075,7 +1075,10 @@
   },
   "CHANNEL_FOLLOWERS": {
     "url": "/channels/:param/followers",
-    "allowed_methods": null
+    "allowed_methods": [
+      "OPTIONS",
+      "POST"
+    ]
   },
   "CHANNEL_FOLLOWER_STATS": {
     "url": "/channels/:param/follower-stats",
@@ -1226,7 +1229,10 @@
   },
   "DEVICES_SYNC": {
     "url": "/users/@me/devices/sync",
-    "allowed_methods": null
+    "allowed_methods": [
+      "OPTIONS",
+      "PUT"
+    ]
   },
   "SETTINGS": {
     "url": "/users/@me/settings",
@@ -1312,7 +1318,11 @@
   },
   "CONNECTIONS_AUTHORIZE_LINK": {
     "url": "/connections/:param/authorize?two_way_link=true&two_way_link_type=:param",
-    "allowed_methods": null
+    "allowed_methods": [
+      "GET",
+      "HEAD",
+      "OPTIONS"
+    ]
   },
   "CONNECTIONS_AUTHORIZE_LINK_DEVICE": {
     "url": "/connections/:param/authorize?two_way_link=true&two_way_link_type=device_code&two_way_user_code=:param",
@@ -1572,7 +1582,10 @@
   },
   "VERIFY": {
     "url": "/auth/verify",
-    "allowed_methods": null
+    "allowed_methods": [
+      "OPTIONS",
+      "POST"
+    ]
   },
   "AUTHORIZE_IP": {
     "url": "/auth/authorize-ip",
@@ -1628,7 +1641,10 @@
   },
   "REPORT_V2": {
     "url": "/reports",
-    "allowed_methods": null
+    "allowed_methods": [
+      "OPTIONS",
+      "POST"
+    ]
   },
   "STAGE_REPORT": {
     "url": "/reports/channels/:param/messages/:param",
@@ -2981,7 +2997,12 @@
   },
   "UPDATE_VOICE_STATE": {
     "url": "/guilds/:param/voice-states/:param",
-    "allowed_methods": null
+    "allowed_methods": [
+      "GET",
+      "HEAD",
+      "OPTIONS",
+      "PATCH"
+    ]
   },
   "GET_REPORT_MENU": {
     "url": "/reporting/menu/:param",
@@ -3441,7 +3462,10 @@
   },
   "CREATOR_MONETIZATION_ENABLE_REQUESTS": {
     "url": "/guilds/:param/creator-monetization/enable-requests",
-    "allowed_methods": null
+    "allowed_methods": [
+      "OPTIONS",
+      "POST"
+    ]
   },
   "CREATOR_MONETIZATION_ELIGIBILITY": {
     "url": "/guilds/:param/creator-monetization/requirements",
@@ -3994,7 +4018,11 @@
   },
   "FAMILY_CENTER_TEEN_ACTIVITY": {
     "url": "/family-center/:param/activity",
-    "allowed_methods": null
+    "allowed_methods": [
+      "GET",
+      "HEAD",
+      "OPTIONS"
+    ]
   },
   "FAMILY_CENTER_TEEN_ACTIVITY_ME": {
     "url": "/family-center/@me",
@@ -4189,6 +4217,13 @@
   "BULK_GUILD_BAN": {
     "url": "/guilds/:param/bulk-ban",
     "allowed_methods": null
+  },
+  "EXPLICIT_MEDIA_SCAN_MESSAGES": {
+    "url": "/channels/:param/explicit-media",
+    "allowed_methods": [
+      "OPTIONS",
+      "PUT"
+    ]
   },
   "CLYDE_PROFILES": {
     "url": "/clyde-profiles/:param",
