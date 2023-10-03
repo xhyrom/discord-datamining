@@ -14767,6 +14767,8 @@
   "COLLECTIBLES_SHOP_HERO_BANNER_SUBTITLE": "\"Charming. Fierce. Hungry. Whatever your vibe, buy and collect your favorite styles for your profile for any occasion. Only with Nitro.\"",
   "COLLECTIBLES_PURCHASE_DISCLAIMER": "\"Hey! This purchase is non-refundable. Once you complete your purchase, the item will be available for use immediately and can be accessed in your User Profile settings.\"",
   "COLLECTIBLES_PURCHASE_DISCLAIMER_WAIVER": "\"You understand that you will receive your item immediately upon purchase, and you waive your right to withdraw.\"",
+  "COLLECTIBLES_SHOP_ERROR_HEADING": "\"Well, this is awkward.\"",
+  "COLLECTIBLES_SHOP_ERROR_SHOP_LOAD": "\"Hmmm, we weren't able to load the shop. Check back later.\"",
   "CHANGE_DECORATION_MODAL_PURCHASE_HEADER": "\"My Decorations\"",
   "CHANGE_DECORATION_MODAL_STARTER_DESC": "\"Use anytime with an active Nitro subscription.\"",
   "COLLECTIBLES_CHAT_PREVIEW_TEXT": "\"Look at my beautiful decoration\"",
