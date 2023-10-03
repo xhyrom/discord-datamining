@@ -1618,7 +1618,11 @@
   },
   "APPLIED_GUILD_BOOST_COOLDOWN": {
     "url": "/users/@me/guilds/premium/subscriptions/cooldown",
-    "allowed_methods": null
+    "allowed_methods": [
+      "GET",
+      "HEAD",
+      "OPTIONS"
+    ]
   },
   "USER_APPLIED_GUILD_BOOSTS": {
     "url": "/users/@me/guilds/premium/subscriptions",
@@ -1675,7 +1679,13 @@
   },
   "BILLING_PAYMENT_SOURCE": {
     "url": "/users/@me/billing/payment-sources/:param",
-    "allowed_methods": null
+    "allowed_methods": [
+      "DELETE",
+      "GET",
+      "HEAD",
+      "OPTIONS",
+      "PATCH"
+    ]
   },
   "BILLING_PAYMENTS": {
     "url": "/users/@me/billing/payments",
@@ -1836,7 +1846,10 @@
   },
   "GOOGLE_PLAY_VALIDATE_PURCHASE": {
     "url": "/google-play/validate-purchase",
-    "allowed_methods": null
+    "allowed_methods": [
+      "OPTIONS",
+      "POST"
+    ]
   },
   "USER_AGREEMENTS": {
     "url": "/users/@me/agreements",
@@ -1928,7 +1941,10 @@
   },
   "LIBRARY_APPLICATION_INSTALLED": {
     "url": "/users/@me/library/:param/:param/installed",
-    "allowed_methods": null
+    "allowed_methods": [
+      "OPTIONS",
+      "POST"
+    ]
   },
   "STORE_DIRECTORY_LAYOUT": {
     "url": "/store/directory-layouts/:param",
@@ -1975,7 +1991,11 @@
   },
   "STORE_PUBLISHED_LISTINGS_SUBSCRIPTION_PLANS": {
     "url": "/store/published-listings/skus/:param/subscription-plans",
-    "allowed_methods": null
+    "allowed_methods": [
+      "GET",
+      "HEAD",
+      "OPTIONS"
+    ]
   },
   "STORE_SKU": {
     "url": "/store/skus/:param",
@@ -2024,7 +2044,10 @@
   },
   "ENTITLEMENT_TICKET": {
     "url": "/users/@me/applications/:param/entitlement-ticket",
-    "allowed_methods": null
+    "allowed_methods": [
+      "OPTIONS",
+      "POST"
+    ]
   },
   "APPLICATION_TICKET": {
     "url": "/users/@me/applications/:param/ticket",
@@ -2226,7 +2249,11 @@
   },
   "USER_BROADCASTS": {
     "url": "/users/broadcasts/bucket",
-    "allowed_methods": null
+    "allowed_methods": [
+      "GET",
+      "HEAD",
+      "OPTIONS"
+    ]
   },
   "FUNIMATION_PROMOTION": {
     "url": "/promotions/funimation",
@@ -2286,7 +2313,13 @@
   },
   "GUILD_STICKER": {
     "url": "/guilds/:param/stickers/:param",
-    "allowed_methods": null
+    "allowed_methods": [
+      "DELETE",
+      "GET",
+      "HEAD",
+      "OPTIONS",
+      "PATCH"
+    ]
   },
   "STICKER_GUILD_DATA": {
     "url": "/stickers/:param/guild",
@@ -2344,7 +2377,12 @@
   },
   "APPLICATION_BOT_GUILD_COMMAND_PERMISSIONS": {
     "url": "/applications/:param/guilds/:param/commands/:param/permissions",
-    "allowed_methods": null
+    "allowed_methods": [
+      "GET",
+      "HEAD",
+      "OPTIONS",
+      "PUT"
+    ]
   },
   "UPDATE_VOICE_STATE": {
     "url": "/guilds/:param/voice-states/:param",
@@ -2695,7 +2733,12 @@
   },
   "GUILD_CLYDE_SETTINGS": {
     "url": "/guilds/:param/clyde-settings",
-    "allowed_methods": null
+    "allowed_methods": [
+      "GET",
+      "HEAD",
+      "OPTIONS",
+      "PATCH"
+    ]
   },
   "GUILD_CLYDE_ADD_MEMBER": {
     "url": "/guilds/:param/members/clyde",
@@ -2792,7 +2835,11 @@
   },
   "MEDIA_POST_RESHARE_GET_PREVIEW": {
     "url": "/channels/:param/media-post-preview",
-    "allowed_methods": null
+    "allowed_methods": [
+      "GET",
+      "HEAD",
+      "OPTIONS"
+    ]
   },
   "UNFURL_EMBED_URLS": {
     "url": "/unfurler/embed-urls",
@@ -2852,7 +2899,10 @@
   },
   "VIDEO_FILTER_ASSET": {
     "url": "/users/@me/video-filters/assets/:param",
-    "allowed_methods": null
+    "allowed_methods": [
+      "DELETE",
+      "OPTIONS"
+    ]
   },
   "VIDEO_FILTER_ASSET_LAST_USED": {
     "url": "/users/@me/video-filters/assets/:param/last-used",
@@ -2904,7 +2954,11 @@
   },
   "APPLICATION_COMMAND_INDEX_USER": {
     "url": "/users/@me/application-command-index",
-    "allowed_methods": null
+    "allowed_methods": [
+      "GET",
+      "HEAD",
+      "OPTIONS"
+    ]
   },
   "GUILD_COMMANDS_FOR_APPLICATION": {
     "url": "/guilds/:param/application-commands/:param",
@@ -3053,7 +3107,12 @@
   },
   "GUILD_ROLE_CONNECTIONS_CONFIGURATION": {
     "url": "/guilds/:param/roles/:param/connections/configuration",
-    "allowed_methods": null
+    "allowed_methods": [
+      "GET",
+      "HEAD",
+      "OPTIONS",
+      "PUT"
+    ]
   },
   "MESSAGE_REQUESTS_SUPPLEMENTAL_DATA": {
     "url": "/users/@me/message-requests/supplemental-data",
@@ -3096,7 +3155,10 @@
   },
   "SHARED_CANVAS_LINES": {
     "url": "/channels/:param/:param/shared-canvas/lines",
-    "allowed_methods": null
+    "allowed_methods": [
+      "OPTIONS",
+      "POST"
+    ]
   },
   "SHARED_CANVAS_EMOJI_HOSES": {
     "url": "/channels/:param/:param/shared-canvas/emoji-hose",
@@ -3236,7 +3298,10 @@
   },
   "INVENTORY_UPDATE_SETTINGS": {
     "url": "/guilds/:param/inventory/settings",
-    "allowed_methods": null
+    "allowed_methods": [
+      "OPTIONS",
+      "PATCH"
+    ]
   },
   "INVENTORY_PACK_METADATA": {
     "url": "/inventory/packs/:param/metadata",
@@ -3298,7 +3363,11 @@
   },
   "CLYDE_PROFILES": {
     "url": "/clyde-profiles/:param",
-    "allowed_methods": null
+    "allowed_methods": [
+      "GET",
+      "HEAD",
+      "OPTIONS"
+    ]
   },
   "CLYDE_PROFILES_CREATE": {
     "url": "/guilds/:param/clyde-profiles",
