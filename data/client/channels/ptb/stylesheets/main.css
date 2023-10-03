@@ -11254,6 +11254,25 @@ html.decorate-links .lowSaturationUnderline-Z6CW6z {
     }
 }
 
+.title-1_sM_T {
+    -webkit-box-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center
+}
+
+.title-1_sM_T .premiumIcon-3De-25 {
+    color: var(--header-primary);
+    margin-left: 8px;
+    width: 18px;
+    height: 18px
+}
+
 .editor-1m9XtV {
     position: relative;
     background: var(--background-primary);
@@ -171427,4 +171446,4 @@ html .invoiceCancelRow-dVOR64 {
     margin-bottom: 8px
 }
 
-/*# sourceMappingURL=40532.b422bc4e650ff4dee6f5.css.map*/
+/*# sourceMappingURL=40532.4bc19393c5a046128c71.css.map*/

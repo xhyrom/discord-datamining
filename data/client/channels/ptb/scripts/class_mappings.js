@@ -4224,6 +4224,8 @@
             e.exports = {
                 editorAnimate: "editorAnimate-2BAiXS",
                 slidein: "slidein-zGJHpq",
+                title: "title-1_sM_T",
+                premiumIcon: "premiumIcon-3De-25",
                 editor: "editor-1m9XtV",
                 editorHeader: "editorHeader-3h2YIJ",
                 editorBody: "editorBody-NkD7E_",
@@ -26986,4 +26988,4 @@
         }
     }
 ]);
-//# sourceMappingURL=77b8f1d9a7bb53239626.js.map
+//# sourceMappingURL=483f86c74a30f17eb0b5.js.map
