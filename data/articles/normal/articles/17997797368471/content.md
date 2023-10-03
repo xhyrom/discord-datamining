@@ -1,0 +1,10 @@
+<p id="docs-internal-guid-cc3f4450-7fff-e397-9e7b-f845559c7f7a">As of <strong>December 1st, 2023</strong>, Discord will no longer be supported on 32-bit Windows operating systems.</p>
+<p>To continue receiving updates and support for your Discord client, you must upgrade to a 64-bit OS version of Windows after this date.</p>
+<p>If you are unsure if you are running a 32-bit OS version of Windows, you can check by following these steps:</p>
+<p>1. Open your <strong>Start Menu</strong>, and search for “about<strong>”. </strong><img src="https://support.discord.com/hc/article_attachments/17997803706391" alt="image2.png">2. Select  <strong>About your PC </strong>to open your <strong>System Settings </strong>window.</p>
+<p>3.  While in System Settings, refer to <strong>System Type </strong>which will list either a <strong>32-bit operating system</strong> or the <strong>64-bit operating system</strong>. </p>
+<p class="wysiwyg-text-align-center"><img src="https://support.discord.com/hc/article_attachments/17997827718807" alt="image1.png"></p>
+<p>To upgrade your Windows from 32-bit OS to 64-bit OS, you can check out the Microsoft FAQ <a href="https://support.microsoft.com/en-us/windows/32-bit-and-64-bit-windows-frequently-asked-questions-c6ca9541-8dce-4d48-0415-94a3faa2e13d" target="_blank" rel="noopener">here</a>. </p>
+<h1 id="h_01HBV8J30YJTZASH9NFFZX1VCJ">Frequently Asked Questions</h1>
+<p><strong>Q: Will the Discord client I currently have installed continue to work after December 1st, 2023?</strong><br>A: Basic functionality may continue to work, however functionality and stability is not guaranteed as the client will no longer receive updates.</p>
+<p><strong>Q: If I cannot upgrade my computer right now, can I use the browser version of Discord?</strong><br>A: Yes, as long as your browser meets the minimum requirements found <a href="https://support.discord.com/hc/en-us/articles/213491697-What-are-the-OS-system-requirements-for-Discord-" target="_blank" rel="noopener">here</a>, you can continue to use it.</p>
