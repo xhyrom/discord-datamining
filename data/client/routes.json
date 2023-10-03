@@ -1288,7 +1288,12 @@
   },
   "SETTINGS": {
     "url": "/users/@me/settings",
-    "allowed_methods": null
+    "allowed_methods": [
+      "GET",
+      "HEAD",
+      "OPTIONS",
+      "PATCH"
+    ]
   },
   "SETTINGS_CONSENT": {
     "url": "/users/@me/consent",
@@ -2297,7 +2302,12 @@
   },
   "BILLING_SUBSCRIPTIONS": {
     "url": "/users/@me/billing/subscriptions",
-    "allowed_methods": null
+    "allowed_methods": [
+      "GET",
+      "HEAD",
+      "OPTIONS",
+      "POST"
+    ]
   },
   "BILLING_PERKS_RELEVANCE": {
     "url": "/users/@me/billing/perks-relevance",
