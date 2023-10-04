@@ -86,7 +86,7 @@ export class Applications implements Module {
     console.log(content);
     if (!content) return [];
 
-    const snowflakes = content.match(/\d{17,18,19}/g);
+    const snowflakes = content.match(/\d{17,19}/g);
     if (!snowflakes) return [];
 
     const result = [];
