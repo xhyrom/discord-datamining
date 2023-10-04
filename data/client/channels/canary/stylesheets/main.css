@@ -50054,7 +50054,7 @@ html .progress-2Otdc- {
 .container-Vrgqxz {
     border-radius: 12px;
     border: 1px solid var(--background-message-highlight-hover);
-    background: var(--background-message-highlight);
+    background: var(--background-secondary);
     -webkit-box-shadow: var(--shadow-low);
     box-shadow: var(--shadow-low);
     padding: 16px;
@@ -50069,10 +50069,6 @@ html .progress-2Otdc- {
     gap: 24px
 }
 
-.container-Vrgqxz:hover {
-    background: var(--background-message-highlight-hover)
-}
-
 @media (max-width:1439px) {
     .container-Vrgqxz {
         -webkit-box-orient: vertical;
@@ -50085,10 +50081,6 @@ html .progress-2Otdc- {
     .container-Vrgqxz .infoContainer-14dbs1 {
         max-width: none
     }
-}
-
-html:not(.custom-theme-background) .container-Vrgqxz {
-    background-color: var(--background-secondary)
 }
 
 .coverImageContainer-V8-U47 {
@@ -171464,4 +171456,4 @@ html .invoiceCancelRow-dVOR64 {
     margin-bottom: 8px
 }
 
-/*# sourceMappingURL=40532.c37c885ed08d4df882e6.css.map*/
+/*# sourceMappingURL=40532.4293c97b7d61e24aba13.css.map*/
