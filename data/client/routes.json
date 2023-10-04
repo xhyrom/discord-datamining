@@ -2204,7 +2204,10 @@
   },
   "USER_GUILD_BOOST_SLOT_UNCANCEL": {
     "url": "/users/@me/guilds/premium/subscription-slots/:param/uncancel",
-    "allowed_methods": null
+    "allowed_methods": [
+      "OPTIONS",
+      "POST"
+    ]
   },
   "SEARCH_CHANNEL": {
     "url": "/channels/:param/messages/search",
