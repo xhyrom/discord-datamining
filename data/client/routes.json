@@ -511,7 +511,12 @@
   },
   "GUILD_EMOJIS": {
     "url": "/guilds/:param/emojis",
-    "allowed_methods": null
+    "allowed_methods": [
+      "GET",
+      "HEAD",
+      "OPTIONS",
+      "POST"
+    ]
   },
   "GUILD_EMOJI": {
     "url": "/guilds/:param/emojis/:param",
