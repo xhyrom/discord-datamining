@@ -2389,7 +2389,10 @@
   },
   "BILLING_GENERATE_APPLE_TRIAL_OFFER_SIGNATURE": {
     "url": "/users/@me/billing/apple/trial-offer-signature",
-    "allowed_methods": null
+    "allowed_methods": [
+      "OPTIONS",
+      "POST"
+    ]
   },
   "BILLING_CREATE_APPLE_IAP_JWT_TOKEN": {
     "url": "/billing/apple/jwt-token",
