@@ -1,4 +1,4 @@
-/*! For license information please see 06f506f8d0df060f4dc1.js.LICENSE.txt */
+/*! For license information please see 33364dcee3d20b0a743d.js.LICENSE.txt */
 (this.webpackChunkdiscord_app = this.webpackChunkdiscord_app || []).push([
     [22897], {
         151131: (t, e, r) => {
@@ -20741,7 +20741,6 @@
                 t.DELETE = "DELETE";
                 t.DISCOVERY = "DISCOVERY";
                 t.DISCOVERY_LANDING_PAGE = "DISCOVERY_LANDING_PAGE";
-                t.PARTNER = "PARTNER";
                 t.GUILD_PREMIUM = "GUILD_PREMIUM";
                 t.ANALYTICS = "ANALYTICS";
                 t.COMMUNITY = "COMMUNITY";
@@ -37087,7 +37086,7 @@ c.jH)(t)}.\nUrl: ${A(t)}`);
                     dsn: "https://fa97a90475514c03a42f80cd36d147c4@sentry.io/140984",
                     autoSessionTracking: !1,
                     environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                    release: "discord_web-d765d9868e016e161a28415edcb646d8185f2662",
+                    release: "discord_web-4dd2d15d6bcc23e7602cf15ff2f5f99d468751ba",
                     beforeSend: function(t) {
                         return function(t) {
                             return null != t.exception && null != t.exception.values && t.exception.values.every((function(t) {
@@ -37114,8 +37113,8 @@ c.jH)(t)}.\nUrl: ${A(t)}`);
                     denyUrls: [/recaptcha/, /mobilediscord\.com/, /betterdiscord:\/\//]
                 });
                 var t;
-                X.YA("buildNumber", null !== (t = "234267") ? t : "");
-                X.YA("builtAt", String("1696444459194"));
+                X.YA("buildNumber", null !== (t = "234269") ? t : "");
+                X.YA("builtAt", String("1696444608668"));
                 var e = window.GLOBAL_ENV.SENTRY_TAGS;
                 if (null != e && "object" == typeof e)
                     for (var r in e) X.YA(r, e[r]);
@@ -48495,4 +48494,4 @@ c.jH)(t)}.\nUrl: ${A(t)}`);
         e(128594), e(535666), e(784633), e(678991)
     }
 ]);
-//# sourceMappingURL=06f506f8d0df060f4dc1.js.map
+//# sourceMappingURL=33364dcee3d20b0a743d.js.map
