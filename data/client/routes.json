@@ -715,7 +715,10 @@
   },
   "GUILD_JOIN_REQUEST_ACK": {
     "url": "/guilds/:param/requests/:param/ack",
-    "allowed_methods": null
+    "allowed_methods": [
+      "OPTIONS",
+      "POST"
+    ]
   },
   "GUILDS": {
     "url": "/guilds",
