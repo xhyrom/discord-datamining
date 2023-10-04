@@ -1,4 +1,4 @@
-/*! For license information please see c2cdd46c8bc637302b62.js.LICENSE.txt */
+/*! For license information please see fbf8d54797ea2d06b5e3.js.LICENSE.txt */
 (this.webpackChunkdiscord_app = this.webpackChunkdiscord_app || []).push([
     [22897], {
         151131: (t, e, r) => {
@@ -24854,6 +24854,7 @@
                 t.GUILD_ROLE_SUBSCRIPTION_TEAM_SETUP_CLICKED = "guild_role_subscription_team_setup_clicked";
                 t.GUILD_ROLE_SUBSCRIPTION_SETUP_MODAL_CLOSED = "guild_role_subscription_setup_modal_closed";
                 t.GUILD_SHOP_PREVIEW_CLICK = "guild_shop_preview_click";
+                t.GUILD_SHOP_EMBED_CLICKED = "guild_shop_embed_clicked";
                 t.MESSAGE_ACTION_SHEET_OPENED = "message_action_sheet_opened";
                 t.SNOWSGIVING_PAGE_CTA_CLICKED = "snowsgiving_page_cta_clicked";
                 t.REACTION_ACTION_SHEET_OPENED = "reaction_action_sheet_opened";
@@ -37085,7 +37086,7 @@ c.jH)(t)}.\nUrl: ${A(t)}`);
                     dsn: "https://fa97a90475514c03a42f80cd36d147c4@sentry.io/140984",
                     autoSessionTracking: !1,
                     environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                    release: "discord_web-bd9b8989e2dc1cb6e994ccaf18c6d184a36e44ab",
+                    release: "discord_web-e48331b5b2f64b9330e805bc007bbecabf64e8c1",
                     beforeSend: function(t) {
                         return function(t) {
                             return null != t.exception && null != t.exception.values && t.exception.values.every((function(t) {
@@ -37112,8 +37113,8 @@ c.jH)(t)}.\nUrl: ${A(t)}`);
                     denyUrls: [/recaptcha/, /mobilediscord\.com/, /betterdiscord:\/\//]
                 });
                 var t;
-                X.YA("buildNumber", null !== (t = "234196") ? t : "");
-                X.YA("builtAt", String("1696439138470"));
+                X.YA("buildNumber", null !== (t = "234203") ? t : "");
+                X.YA("builtAt", String("1696439897377"));
                 var e = window.GLOBAL_ENV.SENTRY_TAGS;
                 if (null != e && "object" == typeof e)
                     for (var r in e) X.YA(r, e[r]);
@@ -48493,4 +48494,4 @@ c.jH)(t)}.\nUrl: ${A(t)}`);
         e(128594), e(535666), e(784633), e(678991)
     }
 ]);
-//# sourceMappingURL=c2cdd46c8bc637302b62.js.map
+//# sourceMappingURL=fbf8d54797ea2d06b5e3.js.map
