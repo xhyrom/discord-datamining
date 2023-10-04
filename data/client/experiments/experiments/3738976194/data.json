@@ -1,22 +1,7 @@
 {
   "data": {
     "kind": "guild",
-    "id": "2023-03_onboarding_soft_requirement_for_partnership",
-    "label": "Hide onboarding soft requirement for partnership",
-    "description": [
-      "Not Eligible",
-      "Control Bucket",
-      "Treatment 1: Show onboarding soft requirement for partnership"
-    ],
-    "hash": 3738976194,
-    "buckets": [
-      -1,
-      0,
-      1
-    ],
-    "config_keys": [
-      "enabled"
-    ]
+    "hash": 3738976194
   },
   "rollout": {
     "populations": [
