@@ -586,7 +586,11 @@
   },
   "EMOJI_GUILD_DATA": {
     "url": "/emojis/:param/guild",
-    "allowed_methods": null
+    "allowed_methods": [
+      "GET",
+      "HEAD",
+      "OPTIONS"
+    ]
   },
   "EMOJI_SOURCE_DATA": {
     "url": "/emojis/:param/source",
@@ -1042,7 +1046,11 @@
   },
   "PIN": {
     "url": "/channels/:param/pins/:param",
-    "allowed_methods": null
+    "allowed_methods": [
+      "DELETE",
+      "OPTIONS",
+      "PUT"
+    ]
   },
   "INSTANT_INVITES": {
     "url": "/channels/:param/invites",
@@ -1123,7 +1131,11 @@
   },
   "CHANNEL_STORE_LISTING_SKU": {
     "url": "/channels/:param/store-listings/:param",
-    "allowed_methods": null
+    "allowed_methods": [
+      "GET",
+      "HEAD",
+      "OPTIONS"
+    ]
   },
   "CHANNEL_ENTITLEMENT_GRANT": {
     "url": "/channels/:param/store-listing/entitlement-grant",
@@ -1198,7 +1210,11 @@
   },
   "FRIEND_SUGGESTIONS": {
     "url": "/friend-suggestions",
-    "allowed_methods": null
+    "allowed_methods": [
+      "GET",
+      "HEAD",
+      "OPTIONS"
+    ]
   },
   "FRIEND_SUGGESTION": {
     "url": "/friend-suggestions/:param",
