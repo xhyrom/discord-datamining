@@ -164100,6 +164100,10 @@ html .invoiceCancelRow-3s2UuC {
     object-position: top
 }
 
+.purchasedEffect-znrxGP {
+    opacity: .35
+}
+
 @-webkit-keyframes scaleIn-3PX5jn {
     0% {
         -webkit-transform: scale(.7);
@@ -164335,11 +164339,17 @@ html .invoiceCancelRow-3s2UuC {
     top: 80px
 }
 
+.profileEffectCheckmarkWrapper-1XFz5M {
+    top: 110px
+}
+
 .checkmark-1jbYXa {
     width: 100%;
     color: #fff;
     -webkit-transition: opacity .5s;
-    transition: opacity .5s
+    transition: opacity .5s;
+    -webkit-filter: drop-shadow(0 0 1px rgba(0, 0, 0, .2));
+    filter: drop-shadow(0 0 1px rgba(0, 0, 0, .2))
 }
 
 .shopCard-H3oN50:focus-within .innerHover-3lqG6f,
@@ -164370,6 +164380,10 @@ html .invoiceCancelRow-3s2UuC {
     width: 200px;
     top: -10px;
     margin: 0 auto
+}
+
+.productName-3cG1ZC {
+    position: relative
 }
 
 .wrapper-2pTC1G {
@@ -170325,7 +170339,7 @@ html .invoiceCancelRow-3s2UuC {
 .effectDescription-3TiVDd {
     font-weight: 400;
     font-family: gg sans;
-    padding: 2px 3px 10px 10px
+    padding: 0 3px 8px 10px
 }
 
 .effectDescription-3TiVDd,
@@ -171493,4 +171507,4 @@ html .invoiceCancelRow-dVOR64 {
     margin-bottom: 8px
 }
 
-/*# sourceMappingURL=40532.30391308ff0031ae021a.css.map*/
+/*# sourceMappingURL=40532.d695154d98fb1f56689a.css.map*/
