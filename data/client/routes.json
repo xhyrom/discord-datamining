@@ -1234,7 +1234,10 @@
   },
   "FRIEND_SUGGESTION": {
     "url": "/friend-suggestions/:param",
-    "allowed_methods": null
+    "allowed_methods": [
+      "DELETE",
+      "OPTIONS"
+    ]
   },
   "TUTORIAL_INDICATORS": {
     "url": "/tutorial/indicators",
