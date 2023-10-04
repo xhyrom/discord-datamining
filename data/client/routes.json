@@ -558,7 +558,11 @@
   },
   "GUILD_ANALYTICS_GROWTH_ACTIVATION_OVERVIEW": {
     "url": "/guilds/:param/analytics/growth-activation/overview",
-    "allowed_methods": null
+    "allowed_methods": [
+      "GET",
+      "HEAD",
+      "OPTIONS"
+    ]
   },
   "GUILD_ANALYTICS_GROWTH_ACTIVATION_RETENTION": {
     "url": "/guilds/:param/analytics/growth-activation/retention",
@@ -1306,7 +1310,12 @@
   },
   "SETTINGS_CONSENT": {
     "url": "/users/@me/consent",
-    "allowed_methods": null
+    "allowed_methods": [
+      "GET",
+      "HEAD",
+      "OPTIONS",
+      "POST"
+    ]
   },
   "PHONE": {
     "url": "/users/@me/phone",
@@ -4084,7 +4093,10 @@
   },
   "VOICE_CHANNEL_EFFECTS": {
     "url": "/channels/:param/voice-channel-effects",
-    "allowed_methods": null
+    "allowed_methods": [
+      "OPTIONS",
+      "POST"
+    ]
   },
   "APPLICATION_SUBSCRIPTION_GROUP_LISTING": {
     "url": "/applications/:param/subscription-group-listings/:param",
