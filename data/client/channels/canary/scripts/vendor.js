@@ -1,4 +1,4 @@
-/*! For license information please see e7a0e1ca421b570f80be.js.LICENSE.txt */
+/*! For license information please see cf1107032f866e196367.js.LICENSE.txt */
 (this.webpackChunkdiscord_app = this.webpackChunkdiscord_app || []).push([
     [22897], {
         151131: (t, e, r) => {
@@ -23934,7 +23934,8 @@
                 t.VIDEO_EMBED_PLAYBACK_STARTED = "VIDEO_EMBED_PLAYBACK_STARTED";
                 t.VOICE_PANEL_OPEN = "VOICE_PANEL_OPEN";
                 t.VOICE_PANEL_CLOSE = "VOICE_PANEL_CLOSE";
-                t.VOICE_PANEL_PIP_CONTENT_READY = "VOICE_PANEL_PIP_CONTENT_READY"
+                t.VOICE_PANEL_PIP_CONTENT_READY = "VOICE_PANEL_PIP_CONTENT_READY";
+                t.MANUAL_IFRAME_RESIZING = "MANUAL_IFRAME_RESIZING"
             }(Ar || (Ar = {}));
             ! function(t) {
                 t.TOGGLE_REACTION_POPOUT = "TOGGLE_REACTION_POPOUT";
@@ -37086,7 +37087,7 @@ c.jH)(t)}.\nUrl: ${A(t)}`);
                     dsn: "https://fa97a90475514c03a42f80cd36d147c4@sentry.io/140984",
                     autoSessionTracking: !1,
                     environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                    release: "discord_web-11de6c87a88bf6d2d1956714acc106c09b0eea74",
+                    release: "discord_web-83fb3b2a99cf58c6e173e26ae48602c9224b6592",
                     beforeSend: function(t) {
                         return function(t) {
                             return null != t.exception && null != t.exception.values && t.exception.values.every((function(t) {
@@ -37113,8 +37114,8 @@ c.jH)(t)}.\nUrl: ${A(t)}`);
                     denyUrls: [/recaptcha/, /mobilediscord\.com/, /betterdiscord:\/\//]
                 });
                 var t;
-                X.YA("buildNumber", null !== (t = "234209") ? t : "");
-                X.YA("builtAt", String("1696440837794"));
+                X.YA("buildNumber", null !== (t = "234222") ? t : "");
+                X.YA("builtAt", String("1696441493602"));
                 var e = window.GLOBAL_ENV.SENTRY_TAGS;
                 if (null != e && "object" == typeof e)
                     for (var r in e) X.YA(r, e[r]);
@@ -48494,4 +48495,4 @@ c.jH)(t)}.\nUrl: ${A(t)}`);
         e(128594), e(535666), e(784633), e(678991)
     }
 ]);
-//# sourceMappingURL=e7a0e1ca421b570f80be.js.map
+//# sourceMappingURL=cf1107032f866e196367.js.map

@@ -23405,6 +23405,11 @@ html.disable-forced-colors * {
     height: 410px
 }
 
+.root-2w15VN.pipModeSquare-zbxVT- {
+    width: 160px;
+    height: 160px
+}
+
 .root-2w15VN.hidden-2gI5HH {
     width: 0;
     max-height: 0;
@@ -23772,7 +23777,10 @@ html.disable-forced-colors * {
 .pictureInPictureWindow-3ms5Zy {
     position: absolute;
     z-index: 1000;
-    overflow: hidden;
+    overflow: hidden
+}
+
+.borderRadius-jZ4Oy0 {
     border-radius: 5px
 }
 
@@ -94746,6 +94754,112 @@ strong {
     padding: 16px 8px 8px
 }
 
+.resizeHandle-2L16bc {
+    bottom: -2px;
+    cursor: ns-resize;
+    height: 4px;
+    position: absolute;
+    width: 100%
+}
+
+.arrow-qvRzze {
+    -webkit-transition: -webkit-transform .2s ease-in-out;
+    transition: -webkit-transform .2s ease-in-out;
+    transition: transform .2s ease-in-out;
+    transition: transform .2s ease-in-out, -webkit-transform .2s ease-in-out
+}
+
+.up-3w4q5v {
+    -webkit-transform: rotate(180deg);
+    transform: rotate(180deg)
+}
+
+.iframe-jbXfpM {
+    width: 100%;
+    height: 100%
+}
+
+.wrapper-19AMG2 {
+    -webkit-box-orient: vertical;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    position: relative;
+    background-color: #000;
+    z-index: 2;
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 auto;
+    flex: 0 0 auto;
+    height: 284px
+}
+
+.header-31XMpK,
+.wrapper-19AMG2 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-direction: normal
+}
+
+.header-31XMpK {
+    -webkit-box-orient: horizontal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    padding: 8px;
+    background-color: var(--background-primary);
+    border-bottom: 1px solid var(--background-modifier-accent);
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center
+}
+
+.arrowContainer-3aQm-H {
+    -webkit-box-flex: 0;
+    -ms-flex: 0;
+    flex: 0
+}
+
+.arrowButton-101BWu {
+    width: 24px;
+    height: 24px
+}
+
+.headerTitle-2Z0p0n {
+    -webkit-box-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+    text-align: center
+}
+
+.leaveButtonContainer-1Rxop2 {
+    -webkit-box-flex: 0;
+    -ms-flex: 0;
+    flex: 0;
+    -webkit-box-pack: right;
+    -ms-flex-pack: right;
+    justify-content: right
+}
+
+.leaveButton-3tRW0- {
+    border-radius: var(--custom-button-button-lg-height);
+    margin-left: auto
+}
+
+.activityContainer-24nR_3 {
+    -webkit-box-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center
+}
+
 .quickSelect-384d3G {
     font-size: 13px;
     cursor: default;
@@ -97620,18 +97734,6 @@ strong {
     color: var(--primary-300)
 }
 
-.arrow-qvRzze {
-    -webkit-transition: -webkit-transform .2s ease-in-out;
-    transition: -webkit-transform .2s ease-in-out;
-    transition: transform .2s ease-in-out;
-    transition: transform .2s ease-in-out, -webkit-transform .2s ease-in-out
-}
-
-.up-3w4q5v {
-    -webkit-transform: rotate(180deg);
-    transform: rotate(180deg)
-}
-
 .chatIcon-R5MUNn {
     position: relative;
     width: auto;
@@ -98408,14 +98510,6 @@ strong {
     margin: 0 -16px
 }
 
-.resizeHandle-1zU8BL {
-    bottom: -2px;
-    cursor: ns-resize;
-    height: 4px;
-    position: absolute;
-    width: 100%
-}
-
 .wrapper-1gVUIN.chatSidebarOpen--YCxhs .callContainer-HtHELf {
     border-radius: 0 8px 8px 0
 }
@@ -98446,6 +98540,90 @@ strong {
 
 .enable-forced-colors .resizeHandle-1zU8BL {
     background-color: ButtonText
+}
+
+.actionBarContainer-12GFUa {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    background-color: var(--background-floating);
+    padding: 8px 16px;
+    border-radius: 24px;
+    min-width: 232px;
+    -webkit-box-shadow: var(--elevation-stroke), var(--elevation-high);
+    box-shadow: var(--elevation-stroke), var(--elevation-high)
+}
+
+.actionBarContainer-12GFUa:hover {
+    cursor: pointer
+}
+
+.applicationIcon-UOzc7v {
+    width: 32px;
+    height: 32px;
+    border-radius: 8px;
+    border-width: 1px;
+    margin-right: 8px;
+    background-size: 100%
+}
+
+.textContainer-1tSj89 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column
+}
+
+.textSubtitle-14z1tO {
+    overflow: hidden;
+    white-space: nowrap
+}
+
+.userSummaryContainer-34Crxp {
+    margin-left: auto
+}
+
+.container-3H3gr7 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    position: relative;
+    width: 100%;
+    height: 100%
+}
+
+.chatContainer-2XIz4Y,
+.overlayContainer-5I2S0l {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 100%;
+    height: 100%;
+    position: absolute
+}
+
+.overlayContainer-5I2S0l {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    background-color: transparent;
+    pointer-events: none
+}
+
+.activityActionBarContainer-3fbC5p {
+    margin-top: 16px;
+    pointer-events: all
 }
 
 .emptyWrapper-3sMgwj {
@@ -171507,4 +171685,4 @@ html .invoiceCancelRow-dVOR64 {
     margin-bottom: 8px
 }
 
-/*# sourceMappingURL=40532.d695154d98fb1f56689a.css.map*/
+/*# sourceMappingURL=40532.2bc668af47410058e866.css.map*/
