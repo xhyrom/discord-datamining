@@ -20256,7 +20256,8 @@
                 discoverMorePerks: "discoverMorePerks-8syRxl",
                 modalContent: "modalContent-S_tIF8",
                 goToShopButton: "goToShopButton-2jWCIU",
-                newBadge: "newBadge-3yacPU"
+                newBadge: "newBadge-3yacPU",
+                spinner: "spinner-3ZlboE"
             }
         },
         818424: e => {
@@ -27022,4 +27023,4 @@
         }
     }
 ]);
-//# sourceMappingURL=3949c9c947026fdba9dd.js.map
+//# sourceMappingURL=989c90ef4ff2edf452be.js.map
