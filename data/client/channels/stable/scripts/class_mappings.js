@@ -1826,8 +1826,8 @@
                 libraryIcon: "libraryIcon-11UjLs",
                 invalidPoop: "invalidPoop--w1123",
                 invalidPoopHorizontal: "invalidPoopHorizontal-lVJuEM",
-                seasonalGiftEmbedWrapper: "seasonalGiftEmbedWrapper-3-ABcb",
                 customGiftEmbedWrapper: "customGiftEmbedWrapper-2juaPF",
+                seasonalGiftEmbedWrapper: "seasonalGiftEmbedWrapper-3-ABcb",
                 giftEmbedWrapperHorizontal: "giftEmbedWrapperHorizontal-wq8NY7",
                 snow: "snow-_q6DgL",
                 seasonalGiftEmbedBox: "seasonalGiftEmbedBox-2RnS0W",
@@ -4224,6 +4224,8 @@
             e.exports = {
                 editorAnimate: "editorAnimate-2BAiXS",
                 slidein: "slidein-zGJHpq",
+                title: "title-1_sM_T",
+                premiumIcon: "premiumIcon-3De-25",
                 editor: "editor-1m9XtV",
                 editorHeader: "editorHeader-3h2YIJ",
                 editorBody: "editorBody-NkD7E_",
@@ -6426,8 +6428,10 @@
                 innerHover: "innerHover-3lqG6f",
                 innerBlur: "innerBlur-3NYZ8j",
                 checkmarkWrapper: "checkmarkWrapper-30c52R",
+                profileEffectCheckmarkWrapper: "profileEffectCheckmarkWrapper-1XFz5M checkmarkWrapper-30c52R",
                 checkmark: "checkmark-1jbYXa",
-                profileEffectShopPreview: "profileEffectShopPreview-1yyQoX"
+                profileEffectShopPreview: "profileEffectShopPreview-1yyQoX",
+                productName: "productName-3cG1ZC"
             }
         },
         727918: e => {
@@ -18201,7 +18205,6 @@
                 responsiveWidthMobile: "485px",
                 root: "root-2s1-ri",
                 withHeader: "withHeader-1pNqnP",
-                giftMainAnimation: "giftMainAnimation-n9Ztg4",
                 shaker: "shaker-bevRrZ",
                 modalHeader: "modalHeader-2Rmdrh",
                 header: "header-2hQs-p",
@@ -18257,7 +18260,12 @@
         },
         518867: e => {
             e.exports = {
-                content: "content-1o8ytE"
+                content: "content-1o8ytE",
+                errorContent: "errorContent-B8afsA",
+                errorBody: "errorBody-3RleR7",
+                errorImage: "errorImage-37j9BC",
+                errorText: "errorText-3EVYmA",
+                okayCta: "okayCta-2H0KEs"
             }
         },
         435312: e => {
@@ -19787,8 +19795,7 @@
         22865: e => {
             e.exports = {
                 body: "body-2atPTk",
-                textArea: "textArea-2pmFjo",
-                bioTextArea: "bioTextArea-3TCvr_"
+                textArea: "textArea-2pmFjo"
             }
         },
         820794: e => {
@@ -19802,6 +19809,9 @@
                 infoIcon: "infoIcon-chB-oI",
                 giftBoxHeaderContainer: "giftBoxHeaderContainer-3BUaXT",
                 infoIconContainer: "infoIconContainer-7wlSbF",
+                giftMainAnimation: "giftMainAnimation-3mE9-P",
+                animation: "animation-2G0RUD",
+                spinner: "spinner-2R6WcU",
                 giftBoxHeaderText: "giftBoxHeaderText-2ndxNR",
                 giftBoxOptionContainer: "giftBoxOptionContainer-ruho5Z"
             }
@@ -20275,7 +20285,8 @@
                 previewContainerAnimation: "previewContainerAnimation-DIEHcA",
                 scaleIn: "scaleIn-3PX5jn",
                 preview: "preview-RKQD82",
-                previewForCollected: "previewForCollected-1k92_e preview-RKQD82"
+                previewForCollected: "previewForCollected-1k92_e preview-RKQD82",
+                purchasedEffect: "purchasedEffect-znrxGP"
             }
         },
         124715: e => {
@@ -26986,4 +26997,4 @@
         }
     }
 ]);
-//# sourceMappingURL=77b8f1d9a7bb53239626.js.map
+//# sourceMappingURL=859c4134684aa393c599.js.map

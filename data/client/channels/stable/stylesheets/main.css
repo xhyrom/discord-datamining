@@ -11254,6 +11254,25 @@ html.decorate-links .lowSaturationUnderline-Z6CW6z {
     }
 }
 
+.title-1_sM_T {
+    -webkit-box-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center
+}
+
+.title-1_sM_T .premiumIcon-3De-25 {
+    color: var(--header-primary);
+    margin-left: 8px;
+    width: 18px;
+    height: 18px
+}
+
 .editor-1m9XtV {
     position: relative;
     background: var(--background-primary);
@@ -41639,13 +41658,12 @@ input[type=checked]:focus-visible+.label-3TDpbn {
     height: 100%
 }
 
-.textArea-2pmFjo *>span {
+.theme-dark .textArea-2pmFjo *>span {
     color: var(--white-100)
 }
 
-.theme-dark .bioTextArea-3TCvr_,
-.theme-light .bioTextArea-3TCvr_ {
-    background: var(--input-background)
+.theme-light .textArea-2pmFjo *>span {
+    color: var(--text-normal)
 }
 
 .customGiftBox-fAjo-m,
@@ -41679,6 +41697,23 @@ input[type=checked]:focus-visible+.label-3TDpbn {
     flex-direction: row
 }
 
+.giftMainAnimation-3mE9-P {
+    margin-bottom: 65px;
+    height: 215px
+}
+
+.animation-2G0RUD {
+    -webkit-transform: scale(1);
+    transform: scale(1)
+}
+
+.spinner-2R6WcU {
+    -webkit-transform: scale(.75);
+    transform: scale(.75);
+    width: 100%;
+    height: 100%
+}
+
 .giftBoxHeaderText-2ndxNR {
     text-transform: uppercase;
     letter-spacing: .02em;
@@ -41698,7 +41733,7 @@ input[type=checked]:focus-visible+.label-3TDpbn {
     align-items: center;
     gap: 9px;
     margin: 25px auto auto;
-    max-width: 90%
+    max-width: 85%
 }
 
 .planOption-187LtR {
@@ -41978,11 +42013,6 @@ input[type=checked]:focus-visible+.label-3TDpbn {
 
 .root-2s1-ri.withHeader-1pNqnP>:first-child {
     background-color: transparent
-}
-
-.giftMainAnimation-n9Ztg4 {
-    margin-bottom: 15px;
-    height: 215px
 }
 
 .shaker-bevRrZ {
@@ -42999,6 +43029,14 @@ input[type=checked]:focus-visible+.label-3TDpbn {
 .content-1o8ytE {
     background-color: var(--modal-background);
     border-radius: 4px;
+    margin: 0 auto;
+    width: 440px;
+    max-height: 720px;
+    min-height: 200px
+}
+
+.content-1o8ytE,
+.errorContent-B8afsA {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -43011,11 +43049,40 @@ input[type=checked]:focus-visible+.label-3TDpbn {
     align-items: center;
     -webkit-box-pack: center;
     -ms-flex-pack: center;
-    justify-content: center;
-    margin: 0 auto;
-    width: 440px;
-    max-height: 720px;
-    min-height: 200px
+    justify-content: center
+}
+
+.errorContent-B8afsA {
+    margin: 40px
+}
+
+.errorBody-3RleR7 {
+    margin-top: 24px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center
+}
+
+.errorImage-37j9BC {
+    height: 111px
+}
+
+.errorText-3EVYmA {
+    text-align: center
+}
+
+.okayCta-2H0KEs {
+    margin-top: 24px
 }
 
 .accountIdentifier-3wwAW_ {
@@ -49148,6 +49215,10 @@ html .progress-2Otdc- {
     background-image: url(/assets/feaff2557c548146aad83669db695e0b.svg)
 }
 
+.theme-light .customGiftEmbedWrapper-2juaPF {
+    background: var(--primary-100)
+}
+
 .theme-dark .libraryLink-t3ekoU {
     color: hsl(var(--white-500-hsl)/.6)
 }
@@ -49159,6 +49230,10 @@ html .progress-2Otdc- {
 
 .theme-dark .metadata-3MqUp5 {
     color: var(--primary-400)
+}
+
+.theme-dark .customGiftEmbedWrapper-2juaPF {
+    background: var(--background-tertiary)
 }
 
 .seasonalGiftEmbedWrapper-3-ABcb {
@@ -49174,9 +49249,7 @@ html .progress-2Otdc- {
     height: 128px
 }
 
-.customGiftEmbedWrapper-2juaPF,
-.giftEmbedWrapperHorizontal-wq8NY7 {
-    background: var(--background-tertiary);
+.customGiftEmbedWrapper-2juaPF {
     background-position: 50% 50%
 }
 
@@ -49184,6 +49257,7 @@ html .progress-2Otdc- {
     margin: 0;
     overflow: hidden;
     position: relative;
+    background-position: 50% 50%;
     height: 100%;
     -webkit-box-flex: 1;
     -ms-flex: 1;
@@ -50017,7 +50091,7 @@ html .progress-2Otdc- {
 .container-Vrgqxz {
     border-radius: 12px;
     border: 1px solid var(--background-message-highlight-hover);
-    background: var(--background-message-highlight);
+    background: var(--background-secondary);
     -webkit-box-shadow: var(--shadow-low);
     box-shadow: var(--shadow-low);
     padding: 16px;
@@ -50032,10 +50106,6 @@ html .progress-2Otdc- {
     gap: 24px
 }
 
-.container-Vrgqxz:hover {
-    background: var(--background-message-highlight-hover)
-}
-
 @media (max-width:1439px) {
     .container-Vrgqxz {
         -webkit-box-orient: vertical;
@@ -50048,10 +50118,6 @@ html .progress-2Otdc- {
     .container-Vrgqxz .infoContainer-14dbs1 {
         max-width: none
     }
-}
-
-html:not(.custom-theme-background) .container-Vrgqxz {
-    background-color: var(--background-secondary)
 }
 
 .coverImageContainer-V8-U47 {
@@ -164034,6 +164100,10 @@ html .invoiceCancelRow-3s2UuC {
     object-position: top
 }
 
+.purchasedEffect-znrxGP {
+    opacity: .35
+}
+
 @-webkit-keyframes scaleIn-3PX5jn {
     0% {
         -webkit-transform: scale(.7);
@@ -164269,11 +164339,17 @@ html .invoiceCancelRow-3s2UuC {
     top: 80px
 }
 
+.profileEffectCheckmarkWrapper-1XFz5M {
+    top: 110px
+}
+
 .checkmark-1jbYXa {
     width: 100%;
     color: #fff;
     -webkit-transition: opacity .5s;
-    transition: opacity .5s
+    transition: opacity .5s;
+    -webkit-filter: drop-shadow(0 0 1px rgba(0, 0, 0, .2));
+    filter: drop-shadow(0 0 1px rgba(0, 0, 0, .2))
 }
 
 .shopCard-H3oN50:focus-within .innerHover-3lqG6f,
@@ -164304,6 +164380,10 @@ html .invoiceCancelRow-3s2UuC {
     width: 200px;
     top: -10px;
     margin: 0 auto
+}
+
+.productName-3cG1ZC {
+    position: relative
 }
 
 .wrapper-2pTC1G {
@@ -170259,7 +170339,7 @@ html .invoiceCancelRow-3s2UuC {
 .effectDescription-3TiVDd {
     font-weight: 400;
     font-family: gg sans;
-    padding: 2px 3px 10px 10px
+    padding: 0 3px 8px 10px
 }
 
 .effectDescription-3TiVDd,
@@ -171427,4 +171507,4 @@ html .invoiceCancelRow-dVOR64 {
     margin-bottom: 8px
 }
 
-/*# sourceMappingURL=40532.b422bc4e650ff4dee6f5.css.map*/
+/*# sourceMappingURL=40532.d695154d98fb1f56689a.css.map*/
