@@ -1108,7 +1108,11 @@
   },
   "CHANNEL_STORE_LISTING": {
     "url": "/channels/:param/store-listing",
-    "allowed_methods": null
+    "allowed_methods": [
+      "GET",
+      "HEAD",
+      "OPTIONS"
+    ]
   },
   "CHANNEL_STORE_LISTING_SKU": {
     "url": "/channels/:param/store-listings/:param",
@@ -1550,7 +1554,10 @@
   },
   "LOGIN_SMS_SEND": {
     "url": "/auth/mfa/sms/send",
-    "allowed_methods": null
+    "allowed_methods": [
+      "OPTIONS",
+      "POST"
+    ]
   },
   "REMOTE_AUTH_INITIALIZE": {
     "url": "/users/@me/remote-auth",
