@@ -18,10 +18,13 @@
 <h1 id="h_01G69FJQWTWN88HFEHK7Z6X79N">What are Forum Channels?</h1>
 <p><span class="discussion-id-f3716217-c974-4257-ba1f-236017cdcc42 discussion-level-1 discussion-id-f3716217-c974-4257-ba1f-236017cdcc42 notion-enable-hover" data-token-index="1" data-reactroot="">Forum Channels provide a space for organized discussions. With forums, you can discuss specific topics and not worry about talking over each other. Since discussions are contained in posts, it’s easier to jump in on an existing one (or start a new one) without worrying about your message getting buried!</span></p>
 <h1 id="h_01G69FKE0ZAX9C65DCGMJGQKFE">How do I create a Forum Channel?</h1>
+<h3 id="h_01HBW51AFGVN3CKY9A09K7EEMK">
+    <span id="docs-internal-guid-5ffacde6-7fff-80f7-0c78-a06e4ec07444" style="color: #434343;">In order to create and have forum channels on your server, you must enable Community on your server. You can learn how to enable Community </span><a href="https://support.discord.com/hc/en-us/articles/360047132851" target="_blank" rel="noopener noreferrer">here</a><span style="color: #434343;">.</span>
+</h3>
 <p>1. In the channel list, hover over the channel category where you want your <em><strong>Forum Channel</strong></em> to live and hit the <strong>"+"</strong> icon to <strong>Create a Channel</strong>.</p>
 <p class="wysiwyg-text-align-center"><img src="https://support.discord.com/hc/article_attachments/6289486804759" alt="3.png"></p>
 <p>2. Select <strong>Forum</strong> as the channel type, and enter a channel name.</p>
-<h3><span style="font-weight: 400;">Tip: Give your forum channel a clear, specific title that provides guidance on the purpose of the channel.</span></h3>
+<h3 id="h_01HBW50N3Z45QH5A28BQB8DYV9"><span style="font-weight: 400;">Tip: Give your forum channel a clear, specific title that provides guidance on the purpose of the channel.</span></h3>
 <p>3. Then click <strong>Create Channel </strong>when you're done!</p>
 <p class="wysiwyg-text-align-center"><img src="https://support.discord.com/hc/article_attachments/8871670593303" alt="forum-create-channel-window-2.png" width="348" height="555"></p>
 <h1 id="h_01G69FM0XC0EC3P3VPC78D949E">Getting Started</h1>
@@ -31,14 +34,14 @@
 <p class="wysiwyg-text-align-left">First up is channel permissions. These permissions determine which members have access to Forum channels.</p>
 <p class="wysiwyg-text-align-center"><img src="https://support.discord.com/hc/article_attachments/6289611533719" alt="permissions_1.png" width="794" height="425"></p>
 <p>Press <strong><span class="notion-enable-hover" data-token-index="1" data-reactroot="">Set recommended permissions</span></strong>. From here, you can limit access to the Forum Channel to specific roles. Or y<span class="discussion-id-87674705-1f03-4f41-a49f-9ccb8f07cdd5 discussion-level-1 discussion-id-87674705-1f03-4f41-a49f-9ccb8f07cdd5 notion-enable-hover" data-token-index="3" data-reactroot="">ou can also enable </span><strong><span class="discussion-id-87674705-1f03-4f41-a49f-9ccb8f07cdd5 discussion-level-1 discussion-id-87674705-1f03-4f41-a49f-9ccb8f07cdd5 notion-enable-hover" data-token-index="4" data-reactroot="">@everyone</span></strong><span class="discussion-id-87674705-1f03-4f41-a49f-9ccb8f07cdd5 discussion-level-1 discussion-id-87674705-1f03-4f41-a49f-9ccb8f07cdd5 notion-enable-hover" data-token-index="5" data-reactroot=""> to allow all users to gain access.</span></p>
-<h3><span class="discussion-id-87674705-1f03-4f41-a49f-9ccb8f07cdd5 discussion-level-1 discussion-id-87674705-1f03-4f41-a49f-9ccb8f07cdd5 notion-enable-hover" data-token-index="5" data-reactroot=""><span class="notion-enable-hover" data-token-index="0" data-reactroot="">Tip</span>: Allowing everyone to post in a forum channel helps increase overall engagement and usage of the channel!</span></h3>
+<h3 id="h_01HBW50N3Z7J22FVPGH6Y1ZKRC"><span class="discussion-id-87674705-1f03-4f41-a49f-9ccb8f07cdd5 discussion-level-1 discussion-id-87674705-1f03-4f41-a49f-9ccb8f07cdd5 notion-enable-hover" data-token-index="5" data-reactroot=""><span class="notion-enable-hover" data-token-index="0" data-reactroot="">Tip</span>: Allowing everyone to post in a forum channel helps increase overall engagement and usage of the channel!</span></h3>
 <p class="wysiwyg-text-align-center"><img src="https://support.discord.com/hc/article_attachments/6289608632215" alt="permissions_2.png"></p>
 <h2 id="h_01G69FN6ATWREBCZARMNDSD5BD">Guidelines</h2>
 <p>Next, you can create guidelines for your Forum Channel.</p>
 <p class="wysiwyg-text-align-center"><img src="https://support.discord.com/hc/article_attachments/6289626204311" alt="guidelines.png" width="805" height="431"></p>
 <p><span class="discussion-id-eef8c686-bb65-4a39-b53e-142ed9f6e070 discussion-level-1 discussion-id-eef8c686-bb65-4a39-b53e-142ed9f6e070 notion-enable-hover" data-token-index="1" data-reactroot=""><span style="font-weight: 400;">Pressing Create guidelines will take you to the Guidelines settings page. From here, you can change the channel name, add guidelines, and designate Tags to help your members.</span></span></p>
 <p class="wysiwyg-text-align-center"><img src="https://support.discord.com/hc/article_attachments/8871826583191" alt="forum-channel-overview-page-markdown-guidelines.png"></p>
-<h3 class="wysiwyg-text-align-center">Note: Tags can help label specific posts<img src="https://support.discord.com/hc/article_attachments/6289733890327" alt="tags.png">
+<h3 id="h_01HBW50N3ZKXVD8TKJFJCRTZQQ" class="wysiwyg-text-align-center">Note: Tags can help label specific posts<img src="https://support.discord.com/hc/article_attachments/6289733890327" alt="tags.png">
 </h3>
 <p>With your guidelines all set up, you can make your first post!</p>
 <p class="wysiwyg-text-align-center"><img src="https://support.discord.com/hc/article_attachments/6501589581207" alt="first_post.png"></p>
@@ -48,7 +51,7 @@
 <h2 id="h_01GCYC9M00A4SWTAHPK3VW4G78"><span style="font-weight: 400;">Setting a Default Layout</span></h2>
 <p><span style="font-weight: 400;">You can choose between List View and Gallery View as the default layout for your forum channel. Gallery View tends to work better for media-focused forum channels, whereas List View works better for text-based discussions.</span></p>
 <p><span style="font-weight: 400;"><img src="https://support.discord.com/hc/article_attachments/10579800668311" alt="forum-channel-grid-gallery-layout-option-dropdown-menu.png"></span></p>
-<h2><span style="font-weight: 400;">How to Search for a Forum Post</span></h2>
+<h2 id="h_01HBW50N3Z9X6WR8ZXAKE0GMZ5"><span style="font-weight: 400;">How to Search for a Forum Post</span></h2>
 <p><span style="font-weight: 400;">Looking for a specific discussion in a forum channel? You can search for the post using the forum channel’s dedicated search bar!</span></p>
 <p><span style="font-weight: 400;">First, go to your server’s channel list and find the forum channel with the post that you want to search for.</span></p>
 <p><span style="font-weight: 400;">Then, in the search bar at the top of the page, input the key word or phase of the post title you’re looking for. The search bar will show results that match with your searched word.</span></p>
