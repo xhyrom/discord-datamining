@@ -102487,7 +102487,7 @@ strong {
 .section-1cIikJ.noBackground-GkDHNy {
     background-image: none;
     background-color: transparent;
-    padding: 32px 0;
+    padding: 0;
     margin-bottom: 64px
 }
 
@@ -102500,6 +102500,10 @@ strong {
     max-width: 544px;
     margin-bottom: 24px;
     text-align: center
+}
+
+.section-1cIikJ.noBackground-GkDHNy .subtitle-16COWT {
+    max-width: unset
 }
 
 .fullWidth-NgZ6OT {
@@ -102803,7 +102807,7 @@ strong {
 
 .giftNitro-2xJWhA,
 .manageMembership-3EhpQs {
-    margin-top: 80px
+    margin-top: 64px
 }
 
 .footerSpacing-4r9UzV {
@@ -171524,4 +171528,4 @@ html .invoiceCancelRow-dVOR64 {
     margin-bottom: 8px
 }
 
-/*# sourceMappingURL=40532.59ef0968ab880a22c088.css.map*/
+/*# sourceMappingURL=40532.a1f4c59d1f4b54a32174.css.map*/
