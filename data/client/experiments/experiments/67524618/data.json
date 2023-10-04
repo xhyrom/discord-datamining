@@ -1,0 +1,23 @@
+{
+  "data": {
+    "kind": "user",
+    "id": "2023-09_clips_nitro_early_access",
+    "label": "Clips (Nitro EA)",
+    "description": [
+      "Not Eligible",
+      "Control Bucket",
+      "Treatment 1: Clips Nitro EA Upsells Visible",
+      "Treatment 2: Clips Enabled (Nitro)"
+    ],
+    "hash": 67524618,
+    "buckets": [
+      -1,
+      0,
+      1,
+      2
+    ],
+    "config_keys": [
+      "enabled"
+    ]
+  }
+}
