@@ -3623,6 +3623,7 @@
   "UPLOAD_DEBUG_LOG_FAILURE_UPLOAD": "\"Something went wrong while uploading debug files. Please try again.\"",
   "UPLOAD_DEBUG_LOG_FAILURE_READ": "\"Something went wrong while reading log files from your system. Please try again.\"",
   "UPLOAD_DEBUG_LOG_FAILURE": "\"Something went wrong and we were unable to upload your debug files. Please try again.\"",
+  "SHARE_PUSH_NOTIFICATION_LOGS": "\"Share Push Notification Logs\"",
   "FORM_CHECKBOX_AEC_DUMP": "\"Diagnostic Audio Recording\"",
   "FORM_HELP_AEC_DUMP": "\"Diagnostic audio recording is used for analyzing audio problems. The last five minutes of voice is saved to voice module folder.\"",
   "FORM_CHECKBOX_CONNECTION_LOG": "\"Save Connection Replay Log\"",
