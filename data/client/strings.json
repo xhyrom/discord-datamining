@@ -7031,6 +7031,8 @@
   "MOBILE_OUTBOUND_PROMOTION_CARD_CLAIMED_BODY": "\"Use your code before {endDate}\"",
   "OUTBOUND_PROMOTION_CODE_CONFIRMATION_EMAIL": "\"This code is included in a confirmation email we just sent you.\"",
   "REDEMPTION_CODE": "\"Redemption Code\"",
+  "PARTNER_PROMOTION_ERROR_TITLE": "\"Uh oh!\"",
+  "PARTNER_PROMOTION_ERROR_BODY": "\"Looks like something went wrong.\"",
   "REDEEM": "\"Redeem\"",
   "UNLOCK_CODE": "\"Unlock Code\"",
   "OUTBOUND_PROMOTION_REDEMPTION_MODAL_TITLE": "\"Awesome!\"",
