@@ -16008,8 +16008,7 @@ html.disable-forced-colors * {
 }
 
 .explicitContentWarningText-1Kq9Yl {
-    margin-top: 4px;
-    color: var(--__current--spoiler-warning-text-color)
+    margin-top: var(--spacing-4)
 }
 
 .spoilerWarning-1JN1Ot {
@@ -171527,4 +171526,4 @@ html .invoiceCancelRow-dVOR64 {
     margin-bottom: 8px
 }
 
-/*# sourceMappingURL=40532.581090e7a70756856990.css.map*/
+/*# sourceMappingURL=40532.cc5cf89d292eaaa638f9.css.map*/
