@@ -716,7 +716,15 @@
   },
   "GUILD_MEMBER_REQUEST_TO_JOIN": {
     "url": "/guilds/:param/requests/@me",
-    "allowed_methods": null
+    "allowed_methods": [
+      "DELETE",
+      "GET",
+      "HEAD",
+      "OPTIONS",
+      "PATCH",
+      "POST",
+      "PUT"
+    ]
   },
   "GUILD_JOIN_REQUEST": {
     "url": "/guilds/:param/requests/:param",
