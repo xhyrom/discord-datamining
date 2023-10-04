@@ -7008,6 +7008,7 @@
   "PROMOTION_ERROR_TITLE": "\"Wait a second...\"",
   "PROMOTION_ERROR_BODY": "\"Seems like something’s gone wrong and you can’t use that code. Sorry about that.\"",
   "PROMOTION_ERROR_CLAIMED_BODY": "\"Sorry, looks like this code has already been redeemed.\"",
+  "PROMOTION_ERROR_NOT_YOUR_CODE_BODY": "\"Looks like this code belongs to someone else.\"",
   "PROMOTION_ERROR_NO_CODE_BODY": "\"Looks like this code didn't work. Make sure you have the right code and try again.\"",
   "PROMOTION_ERROR_NOT_VERIFIED_BODY": "\"Looks like your email isn't verified. Make sure to verify your email before redeeming this code.\"",
   "PROMOTION_ERROR_HELP_CENTER_LINK": "\"Visit our [Help Center]({helpCenterLink}) for more information.\"",
