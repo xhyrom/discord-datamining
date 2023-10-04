@@ -170691,6 +170691,12 @@ html .invoiceCancelRow-3s2UuC {
     align-items: center
 }
 
+.spinner-3ZlboE {
+    margin: 8px;
+    -ms-flex-item-align: center;
+    align-self: center
+}
+
 .modalContentOverrides-a09q4S {
     padding: 0
 }
@@ -171617,4 +171623,4 @@ html .invoiceCancelRow-dVOR64 {
     margin-bottom: 8px
 }
 
-/*# sourceMappingURL=40532.dc8e1d3684da99600462.css.map*/
+/*# sourceMappingURL=40532.4583b8db9370961eec82.css.map*/
