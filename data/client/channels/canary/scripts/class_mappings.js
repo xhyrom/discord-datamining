@@ -6428,8 +6428,10 @@
                 innerHover: "innerHover-3lqG6f",
                 innerBlur: "innerBlur-3NYZ8j",
                 checkmarkWrapper: "checkmarkWrapper-30c52R",
+                profileEffectCheckmarkWrapper: "profileEffectCheckmarkWrapper-1XFz5M checkmarkWrapper-30c52R",
                 checkmark: "checkmark-1jbYXa",
-                profileEffectShopPreview: "profileEffectShopPreview-1yyQoX"
+                profileEffectShopPreview: "profileEffectShopPreview-1yyQoX",
+                productName: "productName-3cG1ZC"
             }
         },
         727918: e => {
@@ -20283,7 +20285,8 @@
                 previewContainerAnimation: "previewContainerAnimation-DIEHcA",
                 scaleIn: "scaleIn-3PX5jn",
                 preview: "preview-RKQD82",
-                previewForCollected: "previewForCollected-1k92_e preview-RKQD82"
+                previewForCollected: "previewForCollected-1k92_e preview-RKQD82",
+                purchasedEffect: "purchasedEffect-znrxGP"
             }
         },
         124715: e => {
@@ -26994,4 +26997,4 @@
         }
     }
 ]);
-//# sourceMappingURL=376be893ee5ade1e12d6.js.map
+//# sourceMappingURL=859c4134684aa393c599.js.map
