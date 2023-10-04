@@ -6101,6 +6101,13 @@
                 formItem: "formItem-G4fK7P"
             }
         },
+        894922: e => {
+            e.exports = {
+                nitroUpsellContainer: "nitroUpsellContainer-3iwvPO",
+                nitroUpsellTitle: "nitroUpsellTitle-2fp_C0",
+                nitroUpsellSubtitle: "nitroUpsellSubtitle-3uALnM"
+            }
+        },
         231852: e => {
             e.exports = {
                 container: "container-nB1UVn",
@@ -6111,6 +6118,15 @@
                 clipsEducationArt: "clipsEducationArt-23cRn5",
                 warningText: "warningText-1jNXdY",
                 description: "description-199YEm"
+            }
+        },
+        276914: e => {
+            e.exports = {
+                clipsArt: "clipsArt-1klTdV",
+                container: "container-1vsnaW",
+                premiumBadgeWrapper: "premiumBadgeWrapper-l0AnLj",
+                premiumBadge: "premiumBadge-2mWONN",
+                premiumBadgeText: "premiumBadgeText-2ACcLG"
             }
         },
         168190: e => {
@@ -8104,7 +8120,10 @@
                 pointer: "pointer-1iS5lL",
                 bottomPointer: "bottomPointer-1sVqrd",
                 leftPointer: "leftPointer-1VRQpy",
-                gifTag: "gifTag-34L65A"
+                gifTag: "gifTag-34L65A",
+                earlyAccessText: "earlyAccessText-3nhuQJ",
+                earlyAccessIcon: "earlyAccessIcon-ePDpML",
+                earlyAccessBadgeContainer: "earlyAccessBadgeContainer-j3F01K"
             }
         },
         228087: e => {
@@ -27003,4 +27022,4 @@
         }
     }
 ]);
-//# sourceMappingURL=55558bbbd51d497f54c8.js.map
+//# sourceMappingURL=3949c9c947026fdba9dd.js.map
