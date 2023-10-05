@@ -2275,6 +2275,10 @@
       "POST"
     ]
   },
+  "BILLING_ADYEN_PAYMENT_METHODS": {
+    "url": "/users/@me/billing/adyen/payment-methods",
+    "allowed_methods": null
+  },
   "BILLING_PAYMENT_SOURCES": {
     "url": "/users/@me/billing/payment-sources",
     "allowed_methods": [
