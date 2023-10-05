@@ -6429,6 +6429,11 @@
                 typePill: "typePill-3VTEut"
             }
         },
+        755537: e => {
+            e.exports = {
+                badge: "badge-22HHhz"
+            }
+        },
         207069: e => {
             e.exports = {
                 priceWrapper: "priceWrapper-3XSWjw",
@@ -6458,7 +6463,8 @@
                 discordLogo: "discordLogo-38RP1c",
                 discordIcon: "discordIcon-kJrghc",
                 discordWordmark: "discordWordmark-Xl1DUZ",
-                summary: "summary-YOl-Gl"
+                summary: "summary-YOl-Gl",
+                limitedTimeBadge: "limitedTimeBadge-3-C1Qz"
             }
         },
         36777: e => {
@@ -6485,6 +6491,7 @@
                 checkmarkWrapper: "checkmarkWrapper-30c52R",
                 profileEffectCheckmarkWrapper: "profileEffectCheckmarkWrapper-1XFz5M checkmarkWrapper-30c52R",
                 checkmark: "checkmark-1jbYXa",
+                limitedTimeBadge: "limitedTimeBadge-2vc4ux",
                 profileEffectShopPreview: "profileEffectShopPreview-1yyQoX",
                 productName: "productName-3cG1ZC"
             }
@@ -27033,4 +27040,4 @@
         }
     }
 ]);
-//# sourceMappingURL=579441658052b091beb9.js.map
+//# sourceMappingURL=53bf2b2fc01e868fed82.js.map
