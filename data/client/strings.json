@@ -247,6 +247,7 @@
   "MATURE_LISTING_DECLINE": "\"Nope\"",
   "FORM_LABEL_CHANNEL_NAME": "\"Channel Name\"",
   "FORM_LABEL_CHANNEL_TOPIC": "\"Channel Topic\"",
+  "A11Y_LABEL_CHANNEL_EMOJI_BUTTON": "\"!!{emojiName}!!, Change channel emoji\"",
   "OPEN_CHANNEL_TOPIC": "\"Open Channel Topic\"",
   "CHANNEL_TOPIC_EMPTY": "\"Let everyone know how to use this channel!\"",
   "DELETE_CHANNEL": "\"Delete Channel\"",
