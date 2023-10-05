@@ -1,0 +1,21 @@
+{
+  "data": {
+    "kind": "user",
+    "id": "2023-09_dm_list_shop_entry_point",
+    "label": "DM List Shop Entry Point Button",
+    "description": [
+      "Not Eligible",
+      "Control Bucket",
+      "Treatment 1: Shop entry point button"
+    ],
+    "hash": 1019122443,
+    "buckets": [
+      -1,
+      0,
+      1
+    ],
+    "config_keys": [
+      "canViewShopButton"
+    ]
+  }
+}
