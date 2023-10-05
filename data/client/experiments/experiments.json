@@ -9998,7 +9998,7 @@
             {
               "type": "guild_in_range_by_hash",
               "hash_key": 2716650836,
-              "target": 100
+              "target": 1000
             }
           ]
         },
