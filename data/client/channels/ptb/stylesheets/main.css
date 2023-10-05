@@ -141717,8 +141717,7 @@ html .invoiceCancelRow-3s2UuC {
 
 .headerImg-3pc9WG {
     width: 112px;
-    height: 112px;
-    margin-bottom: var(--spacing-16)
+    height: 112px
 }
 
 .headerText-lupoPT {
@@ -141727,7 +141726,7 @@ html .invoiceCancelRow-3s2UuC {
 
 .modalBody-1FMXCs {
     text-align: center;
-    padding: var(--spacing-8) var(--spacing-16) var(--spacing-16)
+    padding: 0 var(--spacing-16) var(--spacing-16)
 }
 
 .modalInteriorHeader-lLiM_t {
@@ -171677,4 +171676,4 @@ html .invoiceCancelRow-dVOR64 {
     margin-bottom: 8px
 }
 
-/*# sourceMappingURL=40532.fc33bfc43178a02c456c.css.map*/
+/*# sourceMappingURL=40532.298ca917b3df2f568707.css.map*/
