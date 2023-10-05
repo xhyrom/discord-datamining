@@ -85,7 +85,7 @@
             <div class="w-embed">
                 <div class="btn-wrapper"><a data-track="https://discord.com/careers" href="https://discord.com/careers" class="btn-blog w-button" target="_blank">Jobs &amp; Career Opportunities at Discord</a></div>
             </div>
-            <p>You can make an impact on the app needing to apply for a full-on job at Discord, too! Let us know what you think would be a great addition to Discord over at our <a href="https://support.discord.com/hc/en-us/community/topics">feedback forum</a>, or on <a href="https://x.com/discord">X</a>, <a href="https://www.tiktok.com/@discord">TikTok</a>, or <a href="https://instagram.com/discord">Instagram</a>.</p>
+            <p>You can make an impact on the app without needing to apply for a full-on job at Discord, too! Let us know what you think would be a great addition to Discord over at our <a href="https://support.discord.com/hc/en-us/community/topics">feedback forum</a>, or on <a href="https://x.com/discord">X</a>, <a href="https://www.tiktok.com/@discord">TikTok</a>, or <a href="https://instagram.com/discord">Instagram</a>.</p>
         </div>
     </div>
     <div id="heading-8" class="rich-wrapper">
