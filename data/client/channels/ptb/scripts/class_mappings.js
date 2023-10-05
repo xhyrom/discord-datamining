@@ -6849,7 +6849,9 @@
                 contentContainer: "contentContainer-1faF_F",
                 tabContainer: "tabContainer-2CNeKV",
                 sparkleCloudTop: "sparkleCloudTop-3D79_3",
-                sparkleCloudBottom: "sparkleCloudBottom-33rbkJ"
+                sparkleCloudBottom: "sparkleCloudBottom-33rbkJ",
+                copyShopLinkButton: "copyShopLinkButton-36VsMv",
+                copyShopLinkButtonInner: "copyShopLinkButtonInner-AKukjH"
             }
         },
         76314: e => {
@@ -27041,4 +27043,4 @@
         }
     }
 ]);
-//# sourceMappingURL=2c64080234443b836264.js.map
+//# sourceMappingURL=3abfb94d9cd00530d121.js.map

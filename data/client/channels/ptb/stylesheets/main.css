@@ -50091,6 +50091,32 @@ html .progress-2Otdc- {
     }
 }
 
+.copyShopLinkButton-36VsMv {
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    height: 28px;
+    min-width: 120px;
+    border-radius: var(--radius-xl);
+    padding: 2px 10px;
+    margin: 0 12px
+}
+
+.copyShopLinkButton-36VsMv,
+.copyShopLinkButtonInner-AKukjH {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex
+}
+
+.copyShopLinkButtonInner-AKukjH {
+    gap: 8px;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    color: var(--interactive-normal)
+}
+
 .container-Vrgqxz {
     border-radius: 12px;
     border: 1px solid var(--background-message-highlight-hover);
@@ -50176,11 +50202,18 @@ html .progress-2Otdc- {
 }
 
 .guildShopEmbed-1nkLdU {
-    background-color: var(--background-secondary);
     width: 510px;
     min-height: 300px;
     padding: 16px;
     border-radius: 12px
+}
+
+.theme-dark .guildShopEmbed-1nkLdU {
+    background-color: var(--background-secondary)
+}
+
+.theme-light .guildShopEmbed-1nkLdU {
+    background-color: var(--background-secondary-alt)
 }
 
 .spinnerContainer-1Rt31d {
@@ -116760,7 +116793,7 @@ button.button-12Fmur.disabled-GROwTe {
 }
 
 .metricCard-30mtXR {
-    height: 122px;
+    min-height: 122px;
     border-radius: 8px;
     padding: 16px;
     background-color: var(--background-secondary);
@@ -116770,14 +116803,18 @@ button.button-12Fmur.disabled-GROwTe {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
     -ms-flex-direction: column;
-    flex-direction: column
+    flex-direction: column;
+    gap: 12px
 }
 
 .metricCard-30mtXR,
 .metricCardLabelContainer-28pTxg {
     display: -webkit-box;
     display: -ms-flexbox;
-    display: flex;
+    display: flex
+}
+
+.metricCardLabelContainer-28pTxg {
     -webkit-box-pack: justify;
     -ms-flex-pack: justify;
     justify-content: space-between
@@ -171682,4 +171719,4 @@ html .invoiceCancelRow-dVOR64 {
     margin-bottom: 8px
 }
 
-/*# sourceMappingURL=40532.d5d211c5a710f9b1eb4b.css.map*/
+/*# sourceMappingURL=40532.b981f93370af214b5385.css.map*/
