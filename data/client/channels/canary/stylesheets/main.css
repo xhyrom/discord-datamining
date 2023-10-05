@@ -11166,6 +11166,8 @@ html.decorate-links .lowSaturationUnderline-Z6CW6z {
 .appIconSelection-3Iponf {
     border-radius: 50%;
     overflow: hidden;
+    -webkit-box-shadow: 0 0 2px var(--interactive-normal);
+    box-shadow: 0 0 2px var(--interactive-normal);
     cursor: pointer
 }
 
@@ -171719,4 +171721,4 @@ html .invoiceCancelRow-dVOR64 {
     margin-bottom: 8px
 }
 
-/*# sourceMappingURL=40532.b981f93370af214b5385.css.map*/
+/*# sourceMappingURL=40532.e6e3e0e401778265d918.css.map*/
