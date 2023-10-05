@@ -1,4 +1,4 @@
-/*! For license information please see 5818fb394cbf8a31e1ca.js.LICENSE.txt */
+/*! For license information please see 9d56c32852e8d267be94.js.LICENSE.txt */
 (this.webpackChunkdiscord_app = this.webpackChunkdiscord_app || []).push([
     [22897], {
         151131: (t, e, r) => {
@@ -24137,6 +24137,7 @@
             ! function(t) {
                 t.APP_OPENED = "app_opened";
                 t.APP_CRASHED = "app_crashed";
+                t.APP_BACKGROUND = "app_background";
                 t.APP_NATIVE_CRASH = "app_native_crash";
                 t.APP_UI_VIEWED = "app_ui_viewed";
                 t.APP_UI_VIEWED2 = "app_ui_viewed2";
@@ -37090,7 +37091,7 @@ c.jH)(t)}.\nUrl: ${A(t)}`);
                     dsn: "https://fa97a90475514c03a42f80cd36d147c4@sentry.io/140984",
                     autoSessionTracking: !1,
                     environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                    release: "discord_web-b0b1c07c1577453159561dbb04d6cf8bf534f6b6",
+                    release: "discord_web-bf9eb87b4228d3431b2719fff2b6563a6b68fd52",
                     beforeSend: function(t) {
                         return function(t) {
                             return null != t.exception && null != t.exception.values && t.exception.values.every((function(t) {
@@ -37117,8 +37118,8 @@ c.jH)(t)}.\nUrl: ${A(t)}`);
                     denyUrls: [/recaptcha/, /mobilediscord\.com/, /betterdiscord:\/\//]
                 });
                 var t;
-                X.YA("buildNumber", null !== (t = "234951") ? t : "");
-                X.YA("builtAt", String("1696542054503"));
+                X.YA("buildNumber", null !== (t = "234959") ? t : "");
+                X.YA("builtAt", String("1696542453848"));
                 var e = window.GLOBAL_ENV.SENTRY_TAGS;
                 if (null != e && "object" == typeof e)
                     for (var r in e) X.YA(r, e[r]);
@@ -48498,4 +48499,4 @@ c.jH)(t)}.\nUrl: ${A(t)}`);
         e(128594), e(535666), e(784633), e(678991)
     }
 ]);
-//# sourceMappingURL=5818fb394cbf8a31e1ca.js.map
+//# sourceMappingURL=9d56c32852e8d267be94.js.map
