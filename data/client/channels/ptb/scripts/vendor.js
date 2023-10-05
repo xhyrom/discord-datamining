@@ -1,4 +1,4 @@
-/*! For license information please see 9ca2aae1633cc5b85b41.js.LICENSE.txt */
+/*! For license information please see 6ad47de691b1bd8ad851.js.LICENSE.txt */
 (this.webpackChunkdiscord_app = this.webpackChunkdiscord_app || []).push([
     [22897], {
         151131: (t, e, r) => {
@@ -22987,6 +22987,7 @@
                 t.GUILD = "GUILD";
                 t.CHANNEL = "CHANNEL";
                 t.GUILD_CHANNEL = "GUILD_CHANNEL";
+                t.CHAT_SIDEBAR = "CHAT_SIDEBAR";
                 t.GIF = "GIF";
                 t.GUILD_DISCOVERY = "GUILD_DISCOVERY";
                 t.GUILD_DISCOVERY_TAG = "GUILD_DISCOVERY_TAG";
@@ -37089,7 +37090,7 @@ sentry_client:`${e.name}/${e.version}`}})}(t,n)}`
                     dsn: "https://fa97a90475514c03a42f80cd36d147c4@sentry.io/140984",
                     autoSessionTracking: !1,
                     environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                    release: "discord_web-8e4310aa68eb0e2c8d546f9dafb2d78bc9ead568",
+                    release: "discord_web-9dd7c729f1532cf94de81875587caf285b7d35b7",
                     beforeSend: function(t) {
                         return function(t) {
                             return null != t.exception && null != t.exception.values && t.exception.values.every((function(t) {
@@ -37116,8 +37117,8 @@ sentry_client:`${e.name}/${e.version}`}})}(t,n)}`
                     denyUrls: [/recaptcha/, /mobilediscord\.com/, /betterdiscord:\/\//]
                 });
                 var t;
-                X.YA("buildNumber", null !== (t = "234698") ? t : "");
-                X.YA("builtAt", String("1696526568713"));
+                X.YA("buildNumber", null !== (t = "234709") ? t : "");
+                X.YA("builtAt", String("1696527612322"));
                 var e = window.GLOBAL_ENV.SENTRY_TAGS;
                 if (null != e && "object" == typeof e)
                     for (var r in e) X.YA(r, e[r]);
@@ -48497,4 +48498,4 @@ sentry_client:`${e.name}/${e.version}`}})}(t,n)}`
         e(128594), e(535666), e(784633), e(678991)
     }
 ]);
-//# sourceMappingURL=9ca2aae1633cc5b85b41.js.map
+//# sourceMappingURL=6ad47de691b1bd8ad851.js.map
