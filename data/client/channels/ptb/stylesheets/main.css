@@ -103641,6 +103641,10 @@ strong {
     text-align: center
 }
 
+.moreSubtitleMargin-2VNvT8 {
+    margin-bottom: 32px
+}
+
 .section-1cIikJ.noBackground-GkDHNy .subtitle-16COWT {
     max-width: unset
 }
@@ -103941,12 +103945,16 @@ strong {
 }
 
 .perksCards-2Gq6cx {
-    width: 100%
+    width: calc(100% - 32px)
 }
 
 .giftNitro-2xJWhA,
 .manageMembership-3EhpQs {
     margin-top: 64px
+}
+
+.giftNitro-2xJWhA {
+    width: calc(100% - 32px)
 }
 
 .footerSpacing-4r9UzV {
@@ -171674,4 +171682,4 @@ html .invoiceCancelRow-dVOR64 {
     margin-bottom: 8px
 }
 
-/*# sourceMappingURL=40532.864cb61c80ae6b4a68a2.css.map*/
+/*# sourceMappingURL=40532.d5d211c5a710f9b1eb4b.css.map*/
