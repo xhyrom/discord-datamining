@@ -11166,6 +11166,8 @@ html.decorate-links .lowSaturationUnderline-Z6CW6z {
 .appIconSelection-3Iponf {
     border-radius: 50%;
     overflow: hidden;
+    -webkit-box-shadow: 0 0 2px var(--interactive-normal);
+    box-shadow: 0 0 2px var(--interactive-normal);
     cursor: pointer
 }
 
@@ -47886,12 +47888,10 @@ input[type=checked]:focus-visible+.label-3TDpbn {
     overflow: hidden;
     -o-object-fit: contain;
     object-fit: contain;
-    margin-left: .25rem;
     vertical-align: top;
     position: relative;
-    top: 1px;
-    height: calc(1rem + 4px);
-    width: calc(1rem + 4px);
+    height: 1rem;
+    width: 1rem;
     cursor: pointer;
     text-indent: 0
 }
@@ -50093,6 +50093,32 @@ html .progress-2Otdc- {
     }
 }
 
+.copyShopLinkButton-36VsMv {
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    height: 28px;
+    min-width: 120px;
+    border-radius: var(--radius-xl);
+    padding: 2px 10px;
+    margin: 0 12px
+}
+
+.copyShopLinkButton-36VsMv,
+.copyShopLinkButtonInner-AKukjH {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex
+}
+
+.copyShopLinkButtonInner-AKukjH {
+    gap: 8px;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    color: var(--interactive-normal)
+}
+
 .container-Vrgqxz {
     border-radius: 12px;
     border: 1px solid var(--background-message-highlight-hover);
@@ -50178,11 +50204,18 @@ html .progress-2Otdc- {
 }
 
 .guildShopEmbed-1nkLdU {
-    background-color: var(--background-secondary);
     width: 510px;
     min-height: 300px;
     padding: 16px;
     border-radius: 12px
+}
+
+.theme-dark .guildShopEmbed-1nkLdU {
+    background-color: var(--background-secondary)
+}
+
+.theme-light .guildShopEmbed-1nkLdU {
+    background-color: var(--background-secondary-alt)
 }
 
 .spinnerContainer-1Rt31d {
@@ -71930,13 +71963,14 @@ strong {
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
     position: relative;
-    min-width: 300px
+    min-width: 600px
 }
 
 .bannerBackgroundWrapper-29zgRc {
     max-width: 45%;
     height: inherit;
-    overflow: hidden
+    overflow: hidden;
+    border-radius: 0 0 32px
 }
 
 .bannerBackground-AHhCcI {
@@ -72047,11 +72081,33 @@ strong {
     opacity: .9
 }
 
-@media (orientation:portrait) {
+@media (max-width:1375px) {
 
     .largeLeftSparkle-3U3kQ1,
     .smallLeftSparkle-3AL0_n {
         display: none
+    }
+}
+
+@media (max-width:1075px) {
+    .largeTopSparkle-2PsYzN {
+        right: 300px
+    }
+
+    .smallTopSparkle-FBQpgC {
+        right: 280px
+    }
+
+    .heroDescription-2QJJDj>* {
+        margin-right: 8px
+    }
+
+    .bannerHand-2NxPzG {
+        right: 32px
+    }
+
+    .bannerForeground-2T7puc {
+        right: 16px
     }
 }
 
@@ -72088,9 +72144,10 @@ strong {
 
 .cardsContainer-2kdrm8 {
     max-width: 1060px;
+    min-width: 600px;
     display: grid;
     grid-gap: 24px;
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(285px, 1fr));
     overflow: visible
 }
 
@@ -72119,6 +72176,10 @@ strong {
     margin-top: 28px
 }
 
+.pageWrapperFullscreen-2nKaAh {
+    left: 20px
+}
+
 .pageWrapper-3Au6sJ {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -72130,8 +72191,23 @@ strong {
     -ms-flex-pack: center;
     justify-content: center;
     width: 100%;
-    position: relative;
-    left: 20px
+    position: relative
+}
+
+.headerBar-292C6X {
+    position: fixed;
+    width: calc(100% - 312px);
+    right: 0;
+    top: 0
+}
+
+.logo-2i6m3N {
+    height: 20px;
+    color: var(--text-normal)
+}
+
+.title-dzyan3 {
+    margin-left: -6px
 }
 
 @media (max-width:1124px) {
@@ -72362,22 +72438,6 @@ strong {
 .premiumUnlockHook-3W9Gfe {
     cursor: pointer;
     text-decoration: underline
-}
-
-.headerBar-31lc7l {
-    position: absolute;
-    height: 24px;
-    width: calc(100% - 120px);
-    right: 0
-}
-
-.logo-dP5Wg0 {
-    height: 20px;
-    color: var(--text-normal)
-}
-
-.title-2qzIW4 {
-    margin-left: -6px
 }
 
 .cardContainer-19n4Cc {
@@ -103643,6 +103703,10 @@ strong {
     text-align: center
 }
 
+.moreSubtitleMargin-2VNvT8 {
+    margin-bottom: 32px
+}
+
 .section-1cIikJ.noBackground-GkDHNy .subtitle-16COWT {
     max-width: unset
 }
@@ -103943,12 +104007,16 @@ strong {
 }
 
 .perksCards-2Gq6cx {
-    width: 100%
+    width: calc(100% - 32px)
 }
 
 .giftNitro-2xJWhA,
 .manageMembership-3EhpQs {
     margin-top: 64px
+}
+
+.giftNitro-2xJWhA {
+    width: calc(100% - 32px)
 }
 
 .footerSpacing-4r9UzV {
@@ -116754,7 +116822,7 @@ button.button-12Fmur.disabled-GROwTe {
 }
 
 .metricCard-30mtXR {
-    height: 122px;
+    min-height: 122px;
     border-radius: 8px;
     padding: 16px;
     background-color: var(--background-secondary);
@@ -116764,14 +116832,18 @@ button.button-12Fmur.disabled-GROwTe {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
     -ms-flex-direction: column;
-    flex-direction: column
+    flex-direction: column;
+    gap: 12px
 }
 
 .metricCard-30mtXR,
 .metricCardLabelContainer-28pTxg {
     display: -webkit-box;
     display: -ms-flexbox;
-    display: flex;
+    display: flex
+}
+
+.metricCardLabelContainer-28pTxg {
     -webkit-box-pack: justify;
     -ms-flex-pack: justify;
     justify-content: space-between
@@ -141716,8 +141788,8 @@ html .invoiceCancelRow-3s2UuC {
 }
 
 .headerImg-3pc9WG {
-    width: 112px;
-    height: 112px
+    width: 85px;
+    height: 100px
 }
 
 .headerText-lupoPT {
@@ -141745,7 +141817,7 @@ html .invoiceCancelRow-3s2UuC {
     -webkit-box-direction: normal;
     -ms-flex-direction: column;
     flex-direction: column;
-    margin-top: -72px
+    margin-top: -60px
 }
 
 .buttonContainer-UOdff1 {
@@ -171676,4 +171748,4 @@ html .invoiceCancelRow-dVOR64 {
     margin-bottom: 8px
 }
 
-/*# sourceMappingURL=40532.298ca917b3df2f568707.css.map*/
+/*# sourceMappingURL=40532.c3309e6eeb6d33bf0681.css.map*/

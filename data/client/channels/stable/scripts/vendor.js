@@ -1,4 +1,4 @@
-/*! For license information please see 6235e9cf6012f606eb8e.js.LICENSE.txt */
+/*! For license information please see d06828a758a758f93083.js.LICENSE.txt */
 (this.webpackChunkdiscord_app = this.webpackChunkdiscord_app || []).push([
     [22897], {
         151131: (t, e, r) => {
@@ -22987,6 +22987,7 @@
                 t.GUILD = "GUILD";
                 t.CHANNEL = "CHANNEL";
                 t.GUILD_CHANNEL = "GUILD_CHANNEL";
+                t.CHAT_SIDEBAR = "CHAT_SIDEBAR";
                 t.GIF = "GIF";
                 t.GUILD_DISCOVERY = "GUILD_DISCOVERY";
                 t.GUILD_DISCOVERY_TAG = "GUILD_DISCOVERY_TAG";
@@ -23406,7 +23407,6 @@
                 t.SETTINGS_PREMIUM_BANNER = "Nitro Upsell Banner";
                 t.SETTINGS_MOBILE_PREMIUM_BANNER = "Mobile Nitro Upsell Banner";
                 t.SETTINGS_PREMIUM_PLAN_SELECT = "Discord Premium Plan Select";
-                t.SETTINGS_PREMIUM_PLAN_COMPARISON = "Discord Premium Plan Comparison";
                 t.SETTINGS_PREMIUM_GIFTING = "Nitro Gifting";
                 t.GUILD_BOOSTING = "Nitro Server Boost";
                 t.GUILD_ROLE_SUBSCRIPTION = "Guild Role Subscription";
@@ -23761,14 +23761,14 @@
                         SUBSCRIPTIONS: er.SETTINGS_SUBSCRIPTIONS,
                         PREMIUM: er.SETTINGS_PREMIUM,
                         PREMIUM_PLAN_SELECT: er.SETTINGS_PREMIUM_PLAN_SELECT,
-                        PREMIUM_PLAN_COMPARISON: er.SETTINGS_PREMIUM_PLAN_COMPARISON,
                         GUILD_ROLE_SUBSCRIPTIONS: er.GUILD_ROLE_SUBSCRIPTION,
                         GUILD_ROLE_SUBSCRIPTIONS_CANCEL: er.GUILD_ROLE_SUBSCRIPTION_CANCEL,
                         GUILD_BOOSTING: er.GUILD_BOOSTING,
                         WEBAUTHN_VIEW: er.SETTINGS_WEBAUTHN_VIEW
-                    }, w.cP, er.GUILD_ROLE_SUBSCRIPTION), x(or, "BILLING", er.SETTINGS_BILLING), x(or, "EXPERIMENTS", er.SETTINGS_EXPERIMENTS), x(or, "DEVELOPER_OPTIONS", er.SETTINGS_DEVELOPER_OPTIONS), x(or, "WINDOWS", er.SETTINGS_WINDOWS), x(or, "LINUX", er.SETTINGS_LINUX), x(or, "HYPESQUAD_ONLINE", er.SETTINGS_HYPESQUAD_ONLINE), x(or, "DESKTOP_APP", er.SETTINGS_DESKTOP_APP), x(or, "INVENTORY", er.SETTINGS_INVENTORY), x(or, "DEBUG_LOGS", er.SETTINGS_DEBUG_LOGS), x(or, "PUSH_NOTIFICATION_LOGS", er.SETTINGS_PUSH_NOTIFICATION_LOGS), x(or, "DATABASE_CONTROLS", er.SETTINGS_DATABASE_CONTROLS), x(or, "STARTUP_TIMINGS", er.SETTINGS_STARTUP_TIMINGS), x(or, "TEXT_COMPONENT", er.TEXT_COMPONENT), x(or, "DESIGN_SYSTEM", er.DESIGN_SYSTEM), x(or, "DESIGN_SYSTEM_TEXT", er.DESIGN_SYSTEM_TEXT), x(or, "DESIGN_SYSTEM_BUTTON", er.DESIGN_SYSTEM_BUTTON), x(or, "DESIGN_SYSTEM_TABLE_ROW", er.DESIGN_SYSTEM_TABLE_ROW),
-                    x(or, "DESIGN_SYSTEM_ALERT_MODAL", er.DESIGN_SYSTEM_ALERT_MODAL), x(or, "DESIGN_SYSTEM_BACKGROUND_BLUR_VIEW", er.DESIGN_SYSTEM_BACKGROUND_BLUR_VIEW), x(or, "DESIGN_SYSTEM_SHADOWS", er.DESIGN_SYSTEM_SHADOWS), x(or, "DESIGN_SYSTEM_SEGMENTED_CONTROL", er.DESIGN_SYSTEM_SEGMENTED_CONTROL), x(or, "DESIGN_SYSTEM_TABS", er.DESIGN_SYSTEM_TABS), x(or, "DESIGN_SYSTEM_CONTEXT_MENU", er.DESIGN_SYSTEM_CONTEXT_MENU), x(or, "DESIGN_SYSTEM_TOAST", er.DESIGN_SYSTEM_TOAST), x(or, "DESIGN_SYSTEM_TEXT_INPUT", er.DESIGN_SYSTEM_TEXT_INPUT), x(or, "DESIGN_SYSTEM_TOOLTIP", er.DESIGN_SYSTEM_TOOLTIP), x(or, "DESIGN_SYSTEM_COACHMARK", er.DESIGN_SYSTEM_COACHMARK), x(or, "DESIGN_SYSTEM_STACK", er.DESIGN_SYSTEM_STACK), x(or, "DESIGN_SYSTEM_BACKDROP", er.DESIGN_SYSTEM_BACKDROP), x(or, "DESIGN_SYSTEM_MODAL", er.DESIGN_SYSTEM_MODAL), x(or, "DESIGN_SYSTEM_SHEETS", er.DESIGN_SYSTEM_SHEETS), x(or, "ADVANCED", er.SETTINGS_ADVANCED), x(or, "PROFILE_CUSTOMIZATION", er.SETTINGS_CUSTOMIZE_PROFILE),
-                    x(or, "PROFILE_CUSTOMIZATION_TRY_IT_OUT", er.SETTINGS_CUSTOMIZE_PROFILE_TRY_IT_OUT), x(or, "PROFILE_CUSTOMIZATION_AVATAR_DECORATION", er.SETTINGS_CUSTOMIZE_PROFILE_AVATAR_DECORATION), x(or, "HOTSPOT_OPTIONS", er.SETTINGS_HOTSPOT_OPTIONS), x(or, "DISMISSIBLE_CONTENT_OPTIONS", er.SETTINGS_DISMISSIBLE_CONTENT_OPTIONS), x(or, "PAYMENT_FLOW_MODAL_TEST_PAGE", er.SETTINGS_PAYMENT_FLOW_MODAL_TEST_PAGE), x(or, "POGGERMODE", er.SETTINGS_POGGERMODE), x(or, "SESSIONS", er.SETTINGS_SESSIONS), x(or, "FAMILY_CENTER", er.SETTINGS_FAMILY_CENTER), x(or, "FRIEND_REQUESTS", er.SETTINGS_FRIEND_REQUESTS), x(or, "CLIPS", er.SETTINGS_CLIPS), x(or, "SPEED_TEST", er.SETTINGS_SPEED_TEST), x(or, "COMMUNITY_ALERTS", er.COMMUNITY_ALERTS), or));
+                    }, w.cP, er.GUILD_ROLE_SUBSCRIPTION), x(or, "BILLING", er.SETTINGS_BILLING),
+                    x(or, "EXPERIMENTS", er.SETTINGS_EXPERIMENTS), x(or, "DEVELOPER_OPTIONS", er.SETTINGS_DEVELOPER_OPTIONS), x(or, "WINDOWS", er.SETTINGS_WINDOWS), x(or, "LINUX", er.SETTINGS_LINUX), x(or, "HYPESQUAD_ONLINE", er.SETTINGS_HYPESQUAD_ONLINE), x(or, "DESKTOP_APP", er.SETTINGS_DESKTOP_APP), x(or, "INVENTORY", er.SETTINGS_INVENTORY), x(or, "DEBUG_LOGS", er.SETTINGS_DEBUG_LOGS), x(or, "PUSH_NOTIFICATION_LOGS", er.SETTINGS_PUSH_NOTIFICATION_LOGS), x(or, "DATABASE_CONTROLS", er.SETTINGS_DATABASE_CONTROLS), x(or, "STARTUP_TIMINGS", er.SETTINGS_STARTUP_TIMINGS), x(or, "TEXT_COMPONENT", er.TEXT_COMPONENT), x(or, "DESIGN_SYSTEM", er.DESIGN_SYSTEM), x(or, "DESIGN_SYSTEM_TEXT", er.DESIGN_SYSTEM_TEXT), x(or, "DESIGN_SYSTEM_BUTTON", er.DESIGN_SYSTEM_BUTTON), x(or, "DESIGN_SYSTEM_TABLE_ROW", er.DESIGN_SYSTEM_TABLE_ROW), x(or, "DESIGN_SYSTEM_ALERT_MODAL", er.DESIGN_SYSTEM_ALERT_MODAL), x(or, "DESIGN_SYSTEM_BACKGROUND_BLUR_VIEW", er.DESIGN_SYSTEM_BACKGROUND_BLUR_VIEW), x(or, "DESIGN_SYSTEM_SHADOWS", er.DESIGN_SYSTEM_SHADOWS),
+                    x(or, "DESIGN_SYSTEM_SEGMENTED_CONTROL", er.DESIGN_SYSTEM_SEGMENTED_CONTROL), x(or, "DESIGN_SYSTEM_TABS", er.DESIGN_SYSTEM_TABS), x(or, "DESIGN_SYSTEM_CONTEXT_MENU", er.DESIGN_SYSTEM_CONTEXT_MENU), x(or, "DESIGN_SYSTEM_TOAST", er.DESIGN_SYSTEM_TOAST), x(or, "DESIGN_SYSTEM_TEXT_INPUT", er.DESIGN_SYSTEM_TEXT_INPUT), x(or, "DESIGN_SYSTEM_TOOLTIP", er.DESIGN_SYSTEM_TOOLTIP), x(or, "DESIGN_SYSTEM_COACHMARK", er.DESIGN_SYSTEM_COACHMARK), x(or, "DESIGN_SYSTEM_STACK", er.DESIGN_SYSTEM_STACK), x(or, "DESIGN_SYSTEM_BACKDROP", er.DESIGN_SYSTEM_BACKDROP), x(or, "DESIGN_SYSTEM_MODAL", er.DESIGN_SYSTEM_MODAL), x(or, "DESIGN_SYSTEM_SHEETS", er.DESIGN_SYSTEM_SHEETS), x(or, "ADVANCED", er.SETTINGS_ADVANCED), x(or, "PROFILE_CUSTOMIZATION", er.SETTINGS_CUSTOMIZE_PROFILE), x(or, "PROFILE_CUSTOMIZATION_TRY_IT_OUT", er.SETTINGS_CUSTOMIZE_PROFILE_TRY_IT_OUT), x(or, "PROFILE_CUSTOMIZATION_AVATAR_DECORATION", er.SETTINGS_CUSTOMIZE_PROFILE_AVATAR_DECORATION), x(or, "HOTSPOT_OPTIONS", er.SETTINGS_HOTSPOT_OPTIONS),
+                    x(or, "DISMISSIBLE_CONTENT_OPTIONS", er.SETTINGS_DISMISSIBLE_CONTENT_OPTIONS), x(or, "PAYMENT_FLOW_MODAL_TEST_PAGE", er.SETTINGS_PAYMENT_FLOW_MODAL_TEST_PAGE), x(or, "POGGERMODE", er.SETTINGS_POGGERMODE), x(or, "SESSIONS", er.SETTINGS_SESSIONS), x(or, "FAMILY_CENTER", er.SETTINGS_FAMILY_CENTER), x(or, "FRIEND_REQUESTS", er.SETTINGS_FRIEND_REQUESTS), x(or, "CLIPS", er.SETTINGS_CLIPS), x(or, "SPEED_TEST", er.SETTINGS_SPEED_TEST), x(or, "COMMUNITY_ALERTS", er.COMMUNITY_ALERTS), or));
             ! function(t) {
                 t.APPLICATION_STORE = "Application Store Verified Guild Invite - Lurker";
                 t.CHAT_INPUT_BLOCKER = "Chat Input Blocker - Lurker Mode";
@@ -24137,6 +24137,7 @@
             ! function(t) {
                 t.APP_OPENED = "app_opened";
                 t.APP_CRASHED = "app_crashed";
+                t.APP_BACKGROUND = "app_background";
                 t.APP_NATIVE_CRASH = "app_native_crash";
                 t.APP_UI_VIEWED = "app_ui_viewed";
                 t.APP_UI_VIEWED2 = "app_ui_viewed2";
@@ -25380,11 +25381,11 @@
                 t.GIF = "GIF"
             }(Sn || (Sn = {}));
             var Dn, Cn = Object.freeze({
-                GIPHY: {
+                GIF: {
                     type: Sn.GIF,
-                    command: "giphy",
-                    title: "Giphy",
-                    commandId: "-8"
+                    command: "gif",
+                    title: "Gif",
+                    commandId: "-16"
                 },
                 TENOR: {
                     type: Sn.GIF,
@@ -25528,7 +25529,8 @@
                 t.REMIXING_TEXT_SUPPORT = "15145601963031-Remix-FAQ#h_01H2Y1F86HNTVKWNVJJSB4C6A5";
                 t.SERVER_SUBSCRIPTION_AND_PRODUCTS = "10423011974551";
                 t.SERVER_PRODUCTS = "10423011974551#docs-internal-guid-918e991a-7fff-03d5-8326-5d065e5edeb1";
-                t.WIN32_DEPRECATE = "17997797368471"
+                t.WIN32_DEPRECATE = "17997797368471";
+                t.PROFILE_BADGES = "360035962891"
             }(Dn || (Dn = {}));
             var gn, Un, Pn, Mn, mn, Gn = function(t) {
                     return "https://www.youtube.com/embed/".concat(t)
@@ -26794,7 +26796,8 @@
                                             const r = A(t);
                                             return !r || (0, u.U0)(r, e)
                                         }(t, e.allowUrls)) {
-                                        ("undefined" == typeof __SENTRY_DEBUG__ || __SENTRY_DEBUG__) && E.kg.warn(`Event dropped due to not being matched by \`allowUrls\` option.\nEvent: ${(0,c.jH)(t)}.\nUrl: ${A(t)}`);
+                                        ("undefined" == typeof __SENTRY_DEBUG__ || __SENTRY_DEBUG__) && E.kg.warn(`Event dropped due to not being matched by \`allowUrls\` option.\nEvent: ${(0,
+c.jH)(t)}.\nUrl: ${A(t)}`);
                                         return !0
                                     }
                                     return !1
@@ -27078,7 +27081,8 @@
             }
 
             function v(t, e) {
-                const [r, n] = t;
+                const [r, n] = t
+                ;
                 let a = JSON.stringify(r);
 
                 function i(t) {
@@ -27417,8 +27421,7 @@
                                         }
                                         return t
                                     }()) return;
-                                (0,
-                                    o.hl)(Q, "fetch", (function(t) {
+                                (0, o.hl)(Q, "fetch", (function(t) {
                                     return function(...e) {
                                         const {
                                             method: r,
@@ -28491,8 +28494,7 @@
             function zt(t, e = {}) {
                 const r = "string" == typeof e ? e : e.tunnel,
                     n = "string" != typeof e && e._metadata ? e._metadata.sdk : void 0;
-                return r || `${function(t){return`${Xt(t)}${t.projectId}/envelope/`}(t)}?${function(t,e){return(0,o._j)({sentry_key:t.publicKey,sentry_version:"7",...e&&{
-sentry_client:`${e.name}/${e.version}`}})}(t,n)}`
+                return r || `${function(t){return`${Xt(t)}${t.projectId}/envelope/`}(t)}?${function(t,e){return(0,o._j)({sentry_key:t.publicKey,sentry_version:"7",...e&&{sentry_client:`${e.name}/${e.version}`}})}(t,n)}`
             }
 
             function Zt(t, e) {
@@ -29183,7 +29185,8 @@ sentry_client:`${e.name}/${e.version}`}})}(t,n)}`
                         return this._transport.send(t).then(null, (t => {
                             ("undefined" == typeof __SENTRY_DEBUG__ || __SENTRY_DEBUG__) && E.kg.error("Error while sending event:", t)
                         }))
-                    }("undefined" == typeof __SENTRY_DEBUG__ || __SENTRY_DEBUG__) && E.kg.error("Transport disabled")
+                    }
+                    ("undefined" == typeof __SENTRY_DEBUG__ || __SENTRY_DEBUG__) && E.kg.error("Transport disabled")
                 }
                 _clearOutcomes() {
                     const t = this._outcomes;
@@ -29414,8 +29417,7 @@ sentry_client:`${e.name}/${e.version}`}})}(t,n)}`
                                 }(t) ? (0, Le.Rt)(t.target, {
                                     keyAttrs: n,
                                     maxStringLength: a
-                                }) : (0,
-                                    Le.Rt)(t, {
+                                }) : (0, Le.Rt)(t, {
                                     keyAttrs: n,
                                     maxStringLength: a
                                 })
@@ -37089,7 +37091,7 @@ sentry_client:`${e.name}/${e.version}`}})}(t,n)}`
                     dsn: "https://fa97a90475514c03a42f80cd36d147c4@sentry.io/140984",
                     autoSessionTracking: !1,
                     environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                    release: "discord_web-ff6fdc444f5d0d761f83688e3a0ab948ced95222",
+                    release: "discord_web-e21597525c1509aec62c3a7876f0a03281a1b4e2",
                     beforeSend: function(t) {
                         return function(t) {
                             return null != t.exception && null != t.exception.values && t.exception.values.every((function(t) {
@@ -37116,8 +37118,8 @@ sentry_client:`${e.name}/${e.version}`}})}(t,n)}`
                     denyUrls: [/recaptcha/, /mobilediscord\.com/, /betterdiscord:\/\//]
                 });
                 var t;
-                X.YA("buildNumber", null !== (t = "234652") ? t : "");
-                X.YA("builtAt", String("1696520771932"));
+                X.YA("buildNumber", null !== (t = "234967") ? t : "");
+                X.YA("builtAt", String("1696543055376"));
                 var e = window.GLOBAL_ENV.SENTRY_TAGS;
                 if (null != e && "object" == typeof e)
                     for (var r in e) X.YA(r, e[r]);
@@ -48497,4 +48499,4 @@ sentry_client:`${e.name}/${e.version}`}})}(t,n)}`
         e(128594), e(535666), e(784633), e(678991)
     }
 ]);
-//# sourceMappingURL=6235e9cf6012f606eb8e.js.map
+//# sourceMappingURL=d06828a758a758f93083.js.map

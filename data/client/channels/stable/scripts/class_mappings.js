@@ -6451,7 +6451,11 @@
                 itemTypeTitleContainer: "itemTypeTitleContainer-3KVj87",
                 itemTypeTitle: "itemTypeTitle-fjLyoh",
                 newItemTypeBadge: "newItemTypeBadge-2_xpQl",
+                pageWrapperFullscreen: "pageWrapperFullscreen-2nKaAh",
                 pageWrapper: "pageWrapper-3Au6sJ",
+                headerBar: "headerBar-292C6X",
+                logo: "logo-2i6m3N",
+                title: "title-dzyan3",
                 closeWrapper: "closeWrapper-4ioOGM"
             }
         },
@@ -6527,13 +6531,6 @@
                 largeRightSparkle: "largeRightSparkle-3neVXZ",
                 smallRightSparkle: "smallRightSparkle-3WyLPd",
                 subscribeButton: "subscribeButton-3rUkdg"
-            }
-        },
-        852519: e => {
-            e.exports = {
-                headerBar: "headerBar-31lc7l",
-                logo: "logo-dP5Wg0",
-                title: "title-2qzIW4"
             }
         },
         315758: e => {
@@ -6849,7 +6846,9 @@
                 contentContainer: "contentContainer-1faF_F",
                 tabContainer: "tabContainer-2CNeKV",
                 sparkleCloudTop: "sparkleCloudTop-3D79_3",
-                sparkleCloudBottom: "sparkleCloudBottom-33rbkJ"
+                sparkleCloudBottom: "sparkleCloudBottom-33rbkJ",
+                copyShopLinkButton: "copyShopLinkButton-36VsMv",
+                copyShopLinkButtonInner: "copyShopLinkButtonInner-AKukjH"
             }
         },
         76314: e => {
@@ -11410,7 +11409,7 @@
                 cardClickableContainer: "cardClickableContainer-2nzN0M"
             }
         },
-        259367: e => {
+        853630: e => {
             e.exports = {
                 closeButton: "closeButton-13HeT4",
                 content: "content-9qWvW1",
@@ -19340,6 +19339,7 @@
                 noBackground: "noBackground-GkDHNy",
                 heading: "heading-2tPnY1",
                 subtitle: "subtitle-16COWT",
+                moreSubtitleMargin: "moreSubtitleMargin-2VNvT8",
                 fullWidth: "fullWidth-NgZ6OT",
                 cardContainer: "cardContainer-2ZcjK6"
             }
@@ -27040,4 +27040,4 @@
         }
     }
 ]);
-//# sourceMappingURL=10df33655039ad204daa.js.map
+//# sourceMappingURL=0b5df88286d8d8fd665c.js.map
