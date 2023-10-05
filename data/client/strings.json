@@ -16285,6 +16285,8 @@
   "POLLS": "\"Polls\"",
   "POLL_CHOOSE_SINGLE_ANSWER_PROMPT": "\"Choose an Answer\"",
   "POLL_SUBMIT_VOTE": "\"Submit Vote\"",
+  "POLL_VOTES_COUNT": "\"{count, plural, one {1 vote} other {{count} votes}}\"",
+  "POLL_ALREADY_VOTED": "\"Voted\"",
   "CHANGE_LANGUAGE_MODAL_TITLE_SPANISH": "\"¿Cambiar idioma?\"",
   "CHANGE_LANGUAGE_MODAL_SUBTITLE_SPANISH": "\"¿Te gustaría configurar Discord en Español?\"",
   "YES_TEXT_SPANISH": "\"Sí\"",
