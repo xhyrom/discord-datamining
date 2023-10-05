@@ -333,6 +333,9 @@
                 downloadProgressCircle: "downloadProgressCircle-2GOovI",
                 hideGameUpdateProgressIndicator: "hideGameUpdateProgressIndicator-gNdoqQ",
                 privateChannels: "privateChannels-oVe7HL",
+                shopSparkle: "shopSparkle-2Esh7g",
+                shopSparkleBig: "shopSparkleBig-1CvCPL shopSparkle-2Esh7g",
+                shopSparkleSmall: "shopSparkleSmall-1R-KsA shopSparkle-2Esh7g",
                 searchBar: "searchBar-3TnChZ",
                 searchBarComponent: "searchBarComponent-3N7dCG",
                 localizeBadge: "localizeBadge-24ZXps",
@@ -6517,6 +6520,13 @@
                 largeRightSparkle: "largeRightSparkle-3neVXZ",
                 smallRightSparkle: "smallRightSparkle-3WyLPd",
                 subscribeButton: "subscribeButton-3rUkdg"
+            }
+        },
+        852519: e => {
+            e.exports = {
+                headerBar: "headerBar-31lc7l",
+                logo: "logo-dP5Wg0",
+                title: "title-2qzIW4"
             }
         },
         315758: e => {
@@ -12856,7 +12866,7 @@
                 channelPrivate: "channelPrivate-3_fKe0"
             }
         },
-        881269: e => {
+        148767: e => {
             e.exports = {
                 content: "content-1w1SAN",
                 channelName: "channelName-1iPv7d",
@@ -27023,4 +27033,4 @@
         }
     }
 ]);
-//# sourceMappingURL=989c90ef4ff2edf452be.js.map
+//# sourceMappingURL=579441658052b091beb9.js.map
