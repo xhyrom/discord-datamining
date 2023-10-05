@@ -71461,6 +71461,11 @@ strong {
     --__header-bar-background: var(--home-background)
 }
 
+.badge-22HHhz {
+    background-color: var(--white-500);
+    color: var(--black-500)
+}
+
 .shopBanner-PEO5bV {
     grid-column: 1/-1;
     margin-top: 40px;
@@ -71526,6 +71531,13 @@ strong {
 }
 
 .summary-YOl-Gl {
+    z-index: 1
+}
+
+.limitedTimeBadge-3-C1Qz {
+    position: absolute;
+    top: 16px;
+    right: 16px;
     z-index: 1
 }
 
@@ -71812,6 +71824,12 @@ strong {
     transition: opacity .5s;
     -webkit-filter: drop-shadow(0 0 1px rgba(0, 0, 0, .2));
     filter: drop-shadow(0 0 1px rgba(0, 0, 0, .2))
+}
+
+.limitedTimeBadge-2vc4ux {
+    position: absolute;
+    top: 16px;
+    right: 16px
 }
 
 .shopCard-H3oN50:focus-within .innerHover-3lqG6f,
@@ -149416,7 +149434,7 @@ html .invoiceCancelRow-3s2UuC {
     align-items: stretch;
     padding: 16px;
     gap: 12px;
-    z-index: 1
+    z-index: 3
 }
 
 .mockMessage-3u7k9X {
@@ -149461,7 +149479,9 @@ html .invoiceCancelRow-3s2UuC {
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
-    gap: 4px;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
     margin-bottom: 64px
 }
 
@@ -171657,4 +171677,4 @@ html .invoiceCancelRow-dVOR64 {
     margin-bottom: 8px
 }
 
-/*# sourceMappingURL=40532.70d880f9a41eb368889f.css.map*/
+/*# sourceMappingURL=40532.fc33bfc43178a02c456c.css.map*/
