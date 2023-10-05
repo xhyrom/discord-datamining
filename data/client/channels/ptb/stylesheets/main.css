@@ -71963,13 +71963,14 @@ strong {
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
     position: relative;
-    min-width: 300px
+    min-width: 600px
 }
 
 .bannerBackgroundWrapper-29zgRc {
     max-width: 45%;
     height: inherit;
-    overflow: hidden
+    overflow: hidden;
+    border-radius: 0 0 32px
 }
 
 .bannerBackground-AHhCcI {
@@ -72080,11 +72081,33 @@ strong {
     opacity: .9
 }
 
-@media (orientation:portrait) {
+@media (max-width:1375px) {
 
     .largeLeftSparkle-3U3kQ1,
     .smallLeftSparkle-3AL0_n {
         display: none
+    }
+}
+
+@media (max-width:1075px) {
+    .largeTopSparkle-2PsYzN {
+        right: 300px
+    }
+
+    .smallTopSparkle-FBQpgC {
+        right: 280px
+    }
+
+    .heroDescription-2QJJDj>* {
+        margin-right: 8px
+    }
+
+    .bannerHand-2NxPzG {
+        right: 32px
+    }
+
+    .bannerForeground-2T7puc {
+        right: 16px
     }
 }
 
@@ -72121,9 +72144,10 @@ strong {
 
 .cardsContainer-2kdrm8 {
     max-width: 1060px;
+    min-width: 600px;
     display: grid;
     grid-gap: 24px;
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(285px, 1fr));
     overflow: visible
 }
 
@@ -72152,6 +72176,10 @@ strong {
     margin-top: 28px
 }
 
+.pageWrapperFullscreen-2nKaAh {
+    left: 20px
+}
+
 .pageWrapper-3Au6sJ {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -72163,8 +72191,23 @@ strong {
     -ms-flex-pack: center;
     justify-content: center;
     width: 100%;
-    position: relative;
-    left: 20px
+    position: relative
+}
+
+.headerBar-292C6X {
+    position: fixed;
+    width: calc(100% - 312px);
+    right: 0;
+    top: 0
+}
+
+.logo-2i6m3N {
+    height: 20px;
+    color: var(--text-normal)
+}
+
+.title-dzyan3 {
+    margin-left: -6px
 }
 
 @media (max-width:1124px) {
@@ -72395,22 +72438,6 @@ strong {
 .premiumUnlockHook-3W9Gfe {
     cursor: pointer;
     text-decoration: underline
-}
-
-.headerBar-31lc7l {
-    position: absolute;
-    height: 24px;
-    width: calc(100% - 120px);
-    right: 0
-}
-
-.logo-dP5Wg0 {
-    height: 20px;
-    color: var(--text-normal)
-}
-
-.title-2qzIW4 {
-    margin-left: -6px
 }
 
 .cardContainer-19n4Cc {
@@ -171721,4 +171748,4 @@ html .invoiceCancelRow-dVOR64 {
     margin-bottom: 8px
 }
 
-/*# sourceMappingURL=40532.e6e3e0e401778265d918.css.map*/
+/*# sourceMappingURL=40532.c3309e6eeb6d33bf0681.css.map*/
