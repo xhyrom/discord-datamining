@@ -13,6 +13,7 @@
         <ul>
             <li><a href="#h_01H3MBRCHQ4QMKR4AZ99ZSEKPP" target="_self">Avatar</a></li>
             <li><a href="https://support.discord.com/hc/en-us/articles/4403147417623#h_01HAWGZQYY8B5KQH1FJ2N2VJ01">Avatar Decorations</a></li>
+            <li><a href="https://support.discord.com/hc/en-us/articles/4403147417623#docs-internal-guid-ea763d6b-7fff-6ee8-d31a-959d9bf2907f">Profile Effects</a></li>
             <li><a href="#h_01H3MBRGVFHFKCS3GY314MR07Z" target="_self">“About Me”</a></li>
             <li><a href="#h_01H3MBRNC0NWF6G35ZE3D76DEM" target="_self">Pronouns</a></li>
             <li><a href="#h_01H3MBRVTWGPMFXVA0P26Z1T3F" target="_self">Banner</a></li>
@@ -57,10 +58,21 @@
 </h3>
 <p>Want to add more razzle-dazzle to your avatar? Apply a decoration to it!<br><a href="https://support.discord.com/hc/en-us/articles/13410113109911" target="_blank" rel="noopener noreferrer">Avatar Decorations</a> are unique cosmetics designed to style your avatar with fun and charming looks that you can wear for any occasion.</p>
 <p><a href="https://support.discord.com/hc/en-us/articles/115000435108" target="_blank" rel="noopener noreferrer">Nitro</a> subscribers can preview, purchase, and collect their favorite decoration styles from the shop, which can be located in your <strong>User Profile</strong> and <strong>Nitro</strong> tab. </p>
-<p class="wysiwyg-text-align-center"><img src="https://support.discord.com/hc/article_attachments/17718108093719" alt="profile_shop.png"></p>
+<p class="wysiwyg-text-align-center"><img src="https://support.discord.com/hc/article_attachments/18007284394647" alt="Nitro Profiles Page copy 2.png"></p>
 <p>Purchased decorations are yours to keep and get added to your collection - you can find them in your <strong>Profiles</strong> tab &gt; <strong>Change Decoration</strong>.</p>
 <p class="wysiwyg-text-align-center"><img src="https://support.discord.com/hc/article_attachments/17743199010071" alt="profile_avatar_decorations.png"></p>
 <p>Once you’ve decided on the decoration you’d like to use, apply it and save your changes!</p>
+<h2 id="docs-internal-guid-ea763d6b-7fff-6ee8-d31a-959d9bf2907f">Profile Effects</h2>
+<h3 id="h_01HBVTYZZ2AT9A3RB0N8ZHC7TW">
+    <a href="https://support.discord.com/hc/en-us/articles/115000435108" target="_blank" rel="noopener noreferrer">Nitro </a><span style="color: #434343;" data-darkreader-inline-color="">subscribers can purchase and apply </span><a href="https://support.discord.com/hc/en-us/articles/17828465914263" target="_blank" rel="noopener noreferrer">Profile Effects</a><span style="color: #434343;" data-darkreader-inline-color=""> to their profile.</span>
+</h3>
+<p>Profile Effects are snazzy animated effects that play on your profile when someone views your profile, letting you level up your look and wow your profile admirers. </p>
+<p><a href="https://support.discord.com/hc/en-us/articles/115000435108" target="_blank" rel="noopener noreferrer"><span class="wysiwyg-underline" style="color: #1155cc;" data-darkreader-inline-color="">Nitro</span></a> subscribers can preview, purchase, and collect a variety of different profile effects from the shop, which can be located in your <strong>User Profile</strong> and <strong>Nitro</strong> tab. </p>
+<p>After heading to your <strong>Profiles </strong>tab, tap on <strong>Change Effect</strong>.</p>
+<p><img src="https://support.discord.com/hc/article_attachments/18007331760407" alt="Nitro Profiles Page.png"></p>
+<p id="docs-internal-guid-f597f502-7fff-6b2c-96ca-204db6de09ef">Like avatar decorations, purchased profile effects are yours to keep and get added to your collection - you can find them in your <strong>Profiles</strong> tab &gt; <strong>Change Effect</strong>. From there, you can apply your owned profile effects or access the shop to purchase additional effects.</p>
+<p class="wysiwyg-text-align-center"><img src="https://support.discord.com/hc/article_attachments/18007331765655" alt="ezgif.com-video-to-gif(3).gif"></p>
+<p id="docs-internal-guid-e08199c3-7fff-8bcd-b474-772306167fd1">You can learn more about Profile Effects <a href="https://support.discord.com/hc/en-us/articles/17828465914263" target="_blank" rel="noopener noreferrer"><span class="wysiwyg-underline" style="color: #1155cc;" data-darkreader-inline-color="">here</span></a>.</p>
 <h1 id="h_01H3MBRGVFHFKCS3GY314MR07Z">“About Me”</h1>
 <h3 id="h_01HA5Q9PKNQ8GDGHXXM1RYV08A">
     <a href="https://support.discord.com/hc/en-us/articles/115000435108" target="_blank" rel="noopener noreferrer">Nitro</a><span style="color: #434343;" data-darkreader-inline-color=""> subscribers can also use </span><a href="https://support.discord.com/hc/en-us/articles/360036479811-Custom-Emojis" target="_blank" rel="noopener noreferrer">custom emojis</a><span style="color: #434343;" data-darkreader-inline-color=""> in their About Me.</span>
