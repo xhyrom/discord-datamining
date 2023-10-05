@@ -47886,12 +47886,10 @@ input[type=checked]:focus-visible+.label-3TDpbn {
     overflow: hidden;
     -o-object-fit: contain;
     object-fit: contain;
-    margin-left: .25rem;
     vertical-align: top;
     position: relative;
-    top: 1px;
-    height: calc(1rem + 4px);
-    width: calc(1rem + 4px);
+    height: 1rem;
+    width: 1rem;
     cursor: pointer;
     text-indent: 0
 }
@@ -171676,4 +171674,4 @@ html .invoiceCancelRow-dVOR64 {
     margin-bottom: 8px
 }
 
-/*# sourceMappingURL=40532.99ff92c50f631b6eb698.css.map*/
+/*# sourceMappingURL=40532.864cb61c80ae6b4a68a2.css.map*/
