@@ -19340,6 +19340,7 @@
                 noBackground: "noBackground-GkDHNy",
                 heading: "heading-2tPnY1",
                 subtitle: "subtitle-16COWT",
+                moreSubtitleMargin: "moreSubtitleMargin-2VNvT8",
                 fullWidth: "fullWidth-NgZ6OT",
                 cardContainer: "cardContainer-2ZcjK6"
             }
@@ -27040,4 +27041,4 @@
         }
     }
 ]);
-//# sourceMappingURL=9035116cc1db5c2e3e6b.js.map
+//# sourceMappingURL=2c64080234443b836264.js.map
