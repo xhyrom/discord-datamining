@@ -333,6 +333,9 @@
                 downloadProgressCircle: "downloadProgressCircle-2GOovI",
                 hideGameUpdateProgressIndicator: "hideGameUpdateProgressIndicator-gNdoqQ",
                 privateChannels: "privateChannels-oVe7HL",
+                shopSparkle: "shopSparkle-2Esh7g",
+                shopSparkleBig: "shopSparkleBig-1CvCPL shopSparkle-2Esh7g",
+                shopSparkleSmall: "shopSparkleSmall-1R-KsA shopSparkle-2Esh7g",
                 searchBar: "searchBar-3TnChZ",
                 searchBarComponent: "searchBarComponent-3N7dCG",
                 localizeBadge: "localizeBadge-24ZXps",
@@ -3595,6 +3598,28 @@
                 textInputError: "textInputError-2Dhe8I"
             }
         },
+        656836: e => {
+            e.exports = {
+                actionBarContainer: "actionBarContainer-12GFUa",
+                applicationIcon: "applicationIcon-UOzc7v",
+                textContainer: "textContainer-1tSj89",
+                textSubtitle: "textSubtitle-14z1tO",
+                userSummaryContainer: "userSummaryContainer-34Crxp"
+            }
+        },
+        36648: e => {
+            e.exports = {
+                iframe: "iframe-jbXfpM",
+                wrapper: "wrapper-19AMG2",
+                header: "header-31XMpK",
+                arrowContainer: "arrowContainer-3aQm-H",
+                arrowButton: "arrowButton-101BWu",
+                headerTitle: "headerTitle-2Z0p0n",
+                leaveButtonContainer: "leaveButtonContainer-1Rxop2",
+                leaveButton: "leaveButton-3tRW0-",
+                activityContainer: "activityContainer-24nR_3"
+            }
+        },
         979864: e => {
             e.exports = {
                 outerContainer: "outerContainer-2qLQSo",
@@ -4076,6 +4101,7 @@
                 pipMode: "pipMode-_uBhXq",
                 pipModeShort: "pipModeShort-2NBL3P",
                 pipModeTall: "pipModeTall-1cnlfN",
+                pipModeSquare: "pipModeSquare-zbxVT-",
                 hidden: "hidden-2gI5HH",
                 iframe: "iframe-2GuF98",
                 pipNonInteractive: "pipNonInteractive-H1RjSN",
@@ -5230,10 +5256,10 @@
                 volumeSlider: "volumeSlider-24MgYV",
                 badge: "badge-3y_4Wj",
                 headerWrapper: "headerWrapper-1ULEPv",
-                resizeHandle: "resizeHandle-1zU8BL",
                 voiceChannelEffectsLayerContainer: "voiceChannelEffectsLayerContainer-1rDYWI",
                 channelChatWrapper: "channelChatWrapper-35N3nR",
-                chatToasts: "chatToasts-3oZ62v"
+                chatToasts: "chatToasts-3oZ62v",
+                resizeHandle: "resizeHandle-1zU8BL"
             }
         },
         34973: e => {
@@ -5311,6 +5337,11 @@
                 popoutDisabled: "popoutDisabled-F42SI4"
             }
         },
+        992861: e => {
+            e.exports = {
+                resizeHandle: "resizeHandle-2L16bc"
+            }
+        },
         25578: e => {
             e.exports = {
                 root: "root-3J4La5",
@@ -5364,6 +5395,14 @@
                 content: "content-1ijuZ8",
                 title: "title-3t5FBr",
                 captchaContainer: "captchaContainer-3OckBV"
+            }
+        },
+        137017: e => {
+            e.exports = {
+                container: "container-3H3gr7",
+                chatContainer: "chatContainer-2XIz4Y",
+                overlayContainer: "overlayContainer-5I2S0l",
+                activityActionBarContainer: "activityActionBarContainer-3fbC5p"
             }
         },
         215315: e => {
@@ -6065,6 +6104,13 @@
                 formItem: "formItem-G4fK7P"
             }
         },
+        894922: e => {
+            e.exports = {
+                nitroUpsellContainer: "nitroUpsellContainer-3iwvPO",
+                nitroUpsellTitle: "nitroUpsellTitle-2fp_C0",
+                nitroUpsellSubtitle: "nitroUpsellSubtitle-3uALnM"
+            }
+        },
         231852: e => {
             e.exports = {
                 container: "container-nB1UVn",
@@ -6075,6 +6121,15 @@
                 clipsEducationArt: "clipsEducationArt-23cRn5",
                 warningText: "warningText-1jNXdY",
                 description: "description-199YEm"
+            }
+        },
+        276914: e => {
+            e.exports = {
+                clipsArt: "clipsArt-1klTdV",
+                container: "container-1vsnaW",
+                premiumBadgeWrapper: "premiumBadgeWrapper-l0AnLj",
+                premiumBadge: "premiumBadge-2mWONN",
+                premiumBadgeText: "premiumBadgeText-2ACcLG"
             }
         },
         168190: e => {
@@ -6374,6 +6429,11 @@
                 typePill: "typePill-3VTEut"
             }
         },
+        755537: e => {
+            e.exports = {
+                badge: "badge-22HHhz"
+            }
+        },
         207069: e => {
             e.exports = {
                 priceWrapper: "priceWrapper-3XSWjw",
@@ -6403,7 +6463,8 @@
                 discordLogo: "discordLogo-38RP1c",
                 discordIcon: "discordIcon-kJrghc",
                 discordWordmark: "discordWordmark-Xl1DUZ",
-                summary: "summary-YOl-Gl"
+                summary: "summary-YOl-Gl",
+                limitedTimeBadge: "limitedTimeBadge-3-C1Qz"
             }
         },
         36777: e => {
@@ -6430,6 +6491,7 @@
                 checkmarkWrapper: "checkmarkWrapper-30c52R",
                 profileEffectCheckmarkWrapper: "profileEffectCheckmarkWrapper-1XFz5M checkmarkWrapper-30c52R",
                 checkmark: "checkmark-1jbYXa",
+                limitedTimeBadge: "limitedTimeBadge-2vc4ux",
                 profileEffectShopPreview: "profileEffectShopPreview-1yyQoX",
                 productName: "productName-3cG1ZC"
             }
@@ -6465,6 +6527,13 @@
                 largeRightSparkle: "largeRightSparkle-3neVXZ",
                 smallRightSparkle: "smallRightSparkle-3WyLPd",
                 subscribeButton: "subscribeButton-3rUkdg"
+            }
+        },
+        852519: e => {
+            e.exports = {
+                headerBar: "headerBar-31lc7l",
+                logo: "logo-dP5Wg0",
+                title: "title-2qzIW4"
             }
         },
         315758: e => {
@@ -8068,7 +8137,10 @@
                 pointer: "pointer-1iS5lL",
                 bottomPointer: "bottomPointer-1sVqrd",
                 leftPointer: "leftPointer-1VRQpy",
-                gifTag: "gifTag-34L65A"
+                gifTag: "gifTag-34L65A",
+                earlyAccessText: "earlyAccessText-3nhuQJ",
+                earlyAccessIcon: "earlyAccessIcon-ePDpML",
+                earlyAccessBadgeContainer: "earlyAccessBadgeContainer-j3F01K"
             }
         },
         228087: e => {
@@ -12801,7 +12873,7 @@
                 channelPrivate: "channelPrivate-3_fKe0"
             }
         },
-        881269: e => {
+        148767: e => {
             e.exports = {
                 content: "content-1w1SAN",
                 channelName: "channelName-1iPv7d",
@@ -14239,28 +14311,6 @@
                 marginBottom20: "marginBottom20-2t4TRh",
                 flexRow: "flexRow-89It6P",
                 badgedItem: "badgedItem-qaR-jm"
-            }
-        },
-        541644: e => {
-            e.exports = {
-                container: "container-2mu_w0",
-                banner: "banner-2VHeQm",
-                featureCards: "featureCards-3kbM0o",
-                body: "body-35bJ0S",
-                separator: "separator-RaufQu",
-                pendingBar: "pendingBar-2HEzzu",
-                paragraph: "paragraph-1d4irM",
-                requirementsImage: "requirementsImage-B2ufg6",
-                loadingText: "loadingText-2DkVCO",
-                info: "info-aPENZ8",
-                warning: "warning-2DeIgm",
-                button: "button-1_qI1D",
-                applicationPauseWarning: "applicationPauseWarning-Wq2n1s",
-                checklistContainer: "checklistContainer-12xGp5",
-                checklistHeader: "checklistHeader-3liG7E",
-                cooldown: "cooldown-224fUv",
-                errorContainer: "errorContainer-2hyUhX",
-                checklistLoadErrorWarningIcon: "checklistLoadErrorWarningIcon-2U71WF"
             }
         },
         852370: e => {
@@ -18090,15 +18140,6 @@
                 active: "active-29lXRo"
             }
         },
-        443363: e => {
-            e.exports = {
-                healthFailingDescription: "healthFailingDescription-3ma0lW",
-                detailsButton: "detailsButton-1JOGHq",
-                healthPending: "healthPending-3dqcDy",
-                doesNot: "doesNot-2udAuk",
-                separator: "separator-2qVfIV"
-            }
-        },
         511820: e => {
             e.exports = {
                 guildPickerContainer: "guildPickerContainer-37d2wd",
@@ -20232,7 +20273,8 @@
                 discoverMorePerks: "discoverMorePerks-8syRxl",
                 modalContent: "modalContent-S_tIF8",
                 goToShopButton: "goToShopButton-2jWCIU",
-                newBadge: "newBadge-3yacPU"
+                newBadge: "newBadge-3yacPU",
+                spinner: "spinner-3ZlboE"
             }
         },
         818424: e => {
@@ -25409,6 +25451,7 @@
             e.exports = {
                 pictureInPicture: "pictureInPicture-1GQX91",
                 pictureInPictureWindow: "pictureInPictureWindow-3ms5Zy",
+                borderRadius: "borderRadius-jZ4Oy0",
                 hidden: "hidden-3X-9Lz"
             }
         },
@@ -26997,4 +27040,4 @@
         }
     }
 ]);
-//# sourceMappingURL=859c4134684aa393c599.js.map
+//# sourceMappingURL=10df33655039ad204daa.js.map
