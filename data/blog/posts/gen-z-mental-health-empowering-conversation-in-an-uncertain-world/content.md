@@ -30,10 +30,10 @@
                 <div class="btn-wrapper"><a data-track="https://www.dropbox.com/scl/fi/n00uh0g5z5lnc2g3u97do/Gen-Z-Mental-Health-Empowering-Conversation-in-an-Uncertain-World.pdf?rlkey=aqg9msb3bjmn9b051nrd3tssh&amp;dl=0" href="https://www.dropbox.com/scl/fi/n00uh0g5z5lnc2g3u97do/Gen-Z-Mental-Health-Empowering-Conversation-in-an-Uncertain-World.pdf?rlkey=aqg9msb3bjmn9b051nrd3tssh&amp;dl=0" class="btn-blog w-button">READ THE STUDY IN ENGLISH</a></div>
             </div>
             <div class="w-embed">
-                <div class="btn-wrapper"><a data-track="https://www.dropbox.com/scl/fi/fy2wqin1pjf0ij02h5kwu/Sante-mentale-de-la-Generation-Z-Liberer-la-parole-dans-un-monde-incertain.pdf?rlkey=gp1bdt8er5nz0mc06ejuc59pj&amp;dl=0" href="https://www.dropbox.com/scl/fi/fy2wqin1pjf0ij02h5kwu/Sante-mentale-de-la-Generation-Z-Liberer-la-parole-dans-un-monde-incertain.pdf?rlkey=gp1bdt8er5nz0mc06ejuc59pj&amp;dl=0" class="btn-blog w-button">READ THE STUDY IN FRENCH</a></div>
+                <div class="btn-wrapper"><a data-track="https://www.dropbox.com/scl/fi/az4ntfruab2syejtmalxu/Sante-mentale-de-la-Generation-Z-Liberer-la-parole-dans-un-monde-incertain.pdf?rlkey=x7tich1l60511p66xme6k29nh&amp;dl=0" href="https://www.dropbox.com/scl/fi/az4ntfruab2syejtmalxu/Sante-mentale-de-la-Generation-Z-Liberer-la-parole-dans-un-monde-incertain.pdf?rlkey=x7tich1l60511p66xme6k29nh&amp;dl=0" class="btn-blog w-button">READ THE STUDY IN FRENCH</a></div>
             </div>
             <div class="w-embed">
-                <div class="btn-wrapper"><a data-track="https://www.dropbox.com/scl/fi/n00uh0g5z5lnc2g3u97do/Gen-Z-Mental-Health-Empowering-Conversation-in-an-Uncertain-World.pdf?rlkey=aqg9msb3bjmn9b051nrd3tssh&amp;dl=0" href="https://www.dropbox.com/scl/fi/n00uh0g5z5lnc2g3u97do/Gen-Z-Mental-Health-Empowering-Conversation-in-an-Uncertain-World.pdf?rlkey=aqg9msb3bjmn9b051nrd3tssh&amp;dl=0" class="btn-blog w-button">READ THE STUDY IN GERMAN</a></div>
+                <div class="btn-wrapper"><a data-track="https://www.dropbox.com/scl/fi/ab6vrb72yltxbxs1dvjcq/Generation-Z-und-psychische-Gesundheit-Empowerment-f-r-den-Dialog-in-einer-unsicheren-Welt.pdf?rlkey=p9guz6hx3sbslskoxvvc6uira&amp;dl=0" href="https://www.dropbox.com/scl/fi/ab6vrb72yltxbxs1dvjcq/Generation-Z-und-psychische-Gesundheit-Empowerment-f-r-den-Dialog-in-einer-unsicheren-Welt.pdf?rlkey=p9guz6hx3sbslskoxvvc6uira&amp;dl=0" class="btn-blog w-button">READ THE STUDY IN GERMAN</a></div>
             </div>
         </div>
     </div>
