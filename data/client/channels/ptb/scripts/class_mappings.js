@@ -335,8 +335,6 @@
                 hideGameUpdateProgressIndicator: "hideGameUpdateProgressIndicator-gNdoqQ",
                 privateChannels: "privateChannels-oVe7HL",
                 shopSparkle: "shopSparkle-2Esh7g",
-                shopSparkleBig: "shopSparkleBig-1CvCPL shopSparkle-2Esh7g",
-                shopSparkleSmall: "shopSparkleSmall-1R-KsA shopSparkle-2Esh7g",
                 searchBar: "searchBar-3TnChZ",
                 searchBarComponent: "searchBarComponent-3N7dCG",
                 localizeBadge: "localizeBadge-24ZXps",
@@ -27046,4 +27044,4 @@
         }
     }
 ]);
-//# sourceMappingURL=abc6549e685bf0490729.js.map
+//# sourceMappingURL=ba2fba3b4a2c688a6a57.js.map
