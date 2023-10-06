@@ -1,22 +1,7 @@
 {
   "data": {
     "kind": "guild",
-    "id": "2023-07_server_guide_trigger",
-    "label": "server guide guild experiment for triggering purposes",
-    "description": [
-      "Not Eligible",
-      "Control Bucket",
-      "Treatment 1: useless treatment"
-    ],
-    "hash": 2104400771,
-    "buckets": [
-      -1,
-      0,
-      1
-    ],
-    "config_keys": [
-      "enabled"
-    ]
+    "hash": 2104400771
   },
   "rollout": {
     "populations": [
