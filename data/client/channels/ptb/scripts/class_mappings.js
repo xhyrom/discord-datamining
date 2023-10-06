@@ -22250,6 +22250,7 @@
             e.exports = {
                 container: "container-1gYwHN",
                 containerWithContent: "containerWithContent-2Yws8V container-1gYwHN",
+                clydeBadgeList: "clydeBadgeList-1CA7wP",
                 clickable: "clickable-1knRMS",
                 profileBadge: "profileBadge-12r2Nm",
                 profileBadge24: "profileBadge24-sH1efV profileBadge-12r2Nm",
@@ -27045,4 +27046,4 @@
         }
     }
 ]);
-//# sourceMappingURL=1cf228af589eb7321a7a.js.map
+//# sourceMappingURL=301b08f08a9c209f3b65.js.map
