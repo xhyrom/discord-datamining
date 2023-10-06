@@ -138,6 +138,7 @@
                 container: "container-2o3qEW",
                 membersWrap: "membersWrap-3NUR2t",
                 members: "members-3WRCEx",
+                membersListNotices: "membersListNotices-UstAx3",
                 member: "member-48YF_l",
                 membersGroup: "membersGroup-2eiWxl",
                 hiddenMembers: "hiddenMembers-8kpYM0",
@@ -6306,6 +6307,17 @@
                 button: "button-2hdNlu",
                 title: "title-1ul5ED",
                 titleContainer: "titleContainer-3Lez7G"
+            }
+        },
+        663325: e => {
+            e.exports = {
+                video: "video-FJevlt",
+                header: "header-3JdS4F",
+                footer: "footer-3wgcpK",
+                closeContainer: "closeContainer-1Dlpnq",
+                close: "close-3XLmeU",
+                hintText: "hintText-TIVJAK",
+                clydeText: "clydeText-1AhSmw"
             }
         },
         244192: e => {
@@ -27050,4 +27062,4 @@
         }
     }
 ]);
-//# sourceMappingURL=a03359caf70b24364497.js.map
+//# sourceMappingURL=f5eba7573f544d38cc69.js.map
