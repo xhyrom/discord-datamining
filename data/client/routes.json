@@ -1198,6 +1198,10 @@
       "OPTIONS"
     ]
   },
+  "CHANNEL_SAFETY_WARNINGS_ACK": {
+    "url": "/channels/:param/safety-warnings/ack",
+    "allowed_methods": null
+  },
   "FORUM_TAGS": {
     "url": "/channels/:param/tags",
     "allowed_methods": [
