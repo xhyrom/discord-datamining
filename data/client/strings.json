@@ -16298,6 +16298,7 @@
   "STRANGER_DANGER_BANNER_MORE_TIPS": "\"More tips\"",
   "STRANGER_DANGER_BANNER_BLOCK": "\"Block\"",
   "STRANGER_DANGER_BANNER_CLOSE_A11Y": "\"Close\"",
+  "STRANGER_DANGER_BANNER_BLOCK_CONFIRM": "\"User Blocked\"",
   "FORCED_SECURE_FRAMES_INCOMPATIBLE_TITLE": "\"Disconnected\"",
   "FORCED_SECURE_FRAMES_INCOMPATIBLE_BODY": "\"That channel forces testing of secure frames for audio/video, but your client does not support the protocol version and we do not yet support protocol negotiation.\\n\\n We disconnected you from the channel to protect your ears.\"",
   "SECURE_FRAMES_CONNECTION_INDICATOR": "\"SF Connection\"",
