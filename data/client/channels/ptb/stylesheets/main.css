@@ -21188,17 +21188,24 @@ html.disable-forced-colors * {
 
 .inner-2xMRmK {
     overflow: hidden;
+    position: absolute;
     border-radius: 8px;
     height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
     pointer-events: none
 }
 
-.effect-23JFo_,
-.inner-2xMRmK {
-    position: absolute;
-    width: 100%;
+.innerNoRadius-33APt0 {
+    border-radius: 0
+}
+
+.effect-23JFo_ {
     top: 0;
-    left: 0
+    left: 0;
+    width: 100%;
+    position: absolute
 }
 
 @-webkit-keyframes uploadIconAnimateInLeft-18-7XG {
@@ -175866,4 +175873,4 @@ html .invoiceCancelRow-dVOR64 {
     margin-bottom: 8px
 }
 
-/*# sourceMappingURL=40532.2fdd6c1fc76ed4e8b43a.css.map*/
+/*# sourceMappingURL=40532.ec858d1ea6dc18a9d873.css.map*/

@@ -1,4 +1,4 @@
-/*! For license information please see 31d3baac1762afe19642.js.LICENSE.txt */
+/*! For license information please see 68b26f068fa78dbd93b0.js.LICENSE.txt */
 (this.webpackChunkdiscord_app = this.webpackChunkdiscord_app || []).push([
     [22897], {
         151131: (t, e, r) => {
@@ -21625,6 +21625,9 @@
                     CHANNEL_INTEGRATION: function(t, e) {
                         return "/channels/".concat(t, "/integrations/").concat(e)
                     },
+                    CHANNEL_SAFETY_WARNINGS_ACK: function(t) {
+                        return "/channels/".concat(t, "/safety-warnings/ack")
+                    },
                     FORUM_TAGS: function(t) {
                         return "/channels/".concat(t, "/tags")
                     },
@@ -37093,7 +37096,7 @@ sentry_client:`${e.name}/${e.version}`}})}(t,n)}`
                     dsn: "https://fa97a90475514c03a42f80cd36d147c4@sentry.io/140984",
                     autoSessionTracking: !1,
                     environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                    release: "discord_web-620afb3f96a569e9bd76213d383c6c006a216a81",
+                    release: "discord_web-dc5d34204e39f8144a9003cc0c19caae07dd7d8e",
                     beforeSend: function(t) {
                         return function(t) {
                             return null != t.exception && null != t.exception.values && t.exception.values.every((function(t) {
@@ -37120,8 +37123,8 @@ sentry_client:`${e.name}/${e.version}`}})}(t,n)}`
                     denyUrls: [/recaptcha/, /mobilediscord\.com/, /betterdiscord:\/\//]
                 });
                 var t;
-                X.YA("buildNumber", null !== (t = "235323") ? t : "");
-                X.YA("builtAt", String("1696616366325"));
+                X.YA("buildNumber", null !== (t = "235331") ? t : "");
+                X.YA("builtAt", String("1696616851132"));
                 var e = window.GLOBAL_ENV.SENTRY_TAGS;
                 if (null != e && "object" == typeof e)
                     for (var r in e) X.YA(r, e[r]);
@@ -48501,4 +48504,4 @@ sentry_client:`${e.name}/${e.version}`}})}(t,n)}`
         e(128594), e(535666), e(784633), e(678991)
     }
 ]);
-//# sourceMappingURL=31d3baac1762afe19642.js.map
+//# sourceMappingURL=68b26f068fa78dbd93b0.js.map
