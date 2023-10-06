@@ -24927,6 +24927,7 @@ html.disable-forced-colors * {
     --background-secondary-alt: var(--primary-660);
     --background-tertiary: var(--primary-700);
     --bg-backdrop: hsl(var(--black-500-hsl)/0.7);
+    --bg-backdrop-no-opacity: var(--black-500);
     --bg-base-primary: var(--primary-600);
     --bg-base-secondary: var(--primary-630);
     --bg-base-tertiary: var(--primary-660);
@@ -25208,6 +25209,7 @@ html.disable-forced-colors * {
     --background-secondary-alt: var(--primary-160);
     --background-tertiary: var(--primary-200);
     --bg-backdrop: hsl(var(--black-500-hsl)/0.7);
+    --bg-backdrop-no-opacity: var(--black-500);
     --bg-base-primary: var(--white-500);
     --bg-base-secondary: var(--primary-130);
     --bg-base-tertiary: var(--primary-160);
@@ -25473,6 +25475,7 @@ html.disable-forced-colors * {
     --background-secondary-alt: var(--plum-17);
     --background-tertiary: var(--plum-19);
     --bg-backdrop: hsl(var(--plum-19-hsl)/0.75);
+    --bg-backdrop-no-opacity: var(--plum-19);
     --bg-base-primary: var(--black-500);
     --bg-base-secondary: var(--black-500);
     --bg-base-tertiary: var(--black-500);
@@ -25754,6 +25757,7 @@ html.disable-forced-colors * {
     --background-secondary-alt: var(--plum-15);
     --background-tertiary: var(--plum-16);
     --bg-backdrop: hsl(var(--black-500-hsl)/0.7);
+    --bg-backdrop-no-opacity: var(--black-500);
     --bg-base-primary: var(--plum-20);
     --bg-base-secondary: var(--plum-20);
     --bg-base-tertiary: var(--plum-22);
@@ -175957,4 +175961,4 @@ html .invoiceCancelRow-dVOR64 {
     margin-bottom: 8px
 }
 
-/*# sourceMappingURL=40532.22fa81a3e56680f0ba11.css.map*/
+/*# sourceMappingURL=40532.804ec28a4ee18496209f.css.map*/
