@@ -335,8 +335,6 @@
                 hideGameUpdateProgressIndicator: "hideGameUpdateProgressIndicator-gNdoqQ",
                 privateChannels: "privateChannels-oVe7HL",
                 shopSparkle: "shopSparkle-2Esh7g",
-                shopSparkleBig: "shopSparkleBig-1CvCPL shopSparkle-2Esh7g",
-                shopSparkleSmall: "shopSparkleSmall-1R-KsA shopSparkle-2Esh7g",
                 searchBar: "searchBar-3TnChZ",
                 searchBarComponent: "searchBarComponent-3N7dCG",
                 localizeBadge: "localizeBadge-24ZXps",
@@ -6449,12 +6447,12 @@
                 close: "close-1CF18x",
                 cardsContainer: "cardsContainer-2kdrm8",
                 shop: "shop-3sIaH8",
+                shopScroll: "shopScroll-2RzMLg",
                 itemTypeTitleContainer: "itemTypeTitleContainer-3KVj87",
                 itemTypeTitle: "itemTypeTitle-fjLyoh",
                 newItemTypeBadge: "newItemTypeBadge-2_xpQl",
                 pageWrapperFullscreen: "pageWrapperFullscreen-2nKaAh",
                 pageWrapper: "pageWrapper-3Au6sJ",
-                headerBar: "headerBar-292C6X",
                 logo: "logo-2i6m3N",
                 title: "title-dzyan3",
                 closeWrapper: "closeWrapper-4ioOGM"
@@ -16716,7 +16714,6 @@
                 flexEnd: "flexEnd-3jCkt2",
                 flexStart: "flexStart-fKratV",
                 topicsPillContainer: "topicsPillContainer-1LeYIf barBase-3xxDXu",
-                topicsPillPadForumPostActions: "topicsPillPadForumPostActions-31TaC6",
                 topicsPill: "topicsPill-2UkeUm",
                 topicsPillText: "topicsPillText-2isyFh",
                 topicsPillTextUnselected: "topicsPillTextUnselected-3c2gbi",
@@ -19333,6 +19330,7 @@
                 sizeGizmoText: "sizeGizmoText-OBigQJ",
                 arrow: "arrow-33qzVi",
                 subscriberNitroHome: "subscriberNitroHome-2yhIpB",
+                reducedMotion: "reducedMotion-3BlabZ",
                 partiallyHidden: "partiallyHidden-1_IhuR",
                 cover: "cover-20EvR4",
                 hidden: "hidden-3VVAdD"
@@ -19364,6 +19362,7 @@
                 cover: "cover-1nw8ay",
                 flipped: "flipped-1ykbgv",
                 flipCardButtonContainer: "flipCardButtonContainer--NA2Tt",
+                reducedMotion: "reducedMotion-Tfo8id",
                 flipCardBack: "flipCardBack-WarPiy",
                 flipCardFront: "flipCardFront-13TUSs",
                 flipCardHidden: "flipCardHidden-1lvo4J",
@@ -20262,6 +20261,7 @@
                 profileEffects: "profileEffects-km5xa2",
                 hovered: "hovered-1pHBzl",
                 inner: "inner-2xMRmK",
+                innerNoRadius: "innerNoRadius-33APt0 inner-2xMRmK",
                 effect: "effect-23JFo_"
             }
         },
@@ -22252,6 +22252,7 @@
             e.exports = {
                 container: "container-1gYwHN",
                 containerWithContent: "containerWithContent-2Yws8V container-1gYwHN",
+                clydeBadgeList: "clydeBadgeList-1CA7wP",
                 clickable: "clickable-1knRMS",
                 profileBadge: "profileBadge-12r2Nm",
                 profileBadge24: "profileBadge24-sH1efV profileBadge-12r2Nm",
@@ -27047,4 +27048,4 @@
         }
     }
 ]);
-//# sourceMappingURL=fcceb49ca6b6659a7b61.js.map
+//# sourceMappingURL=2e95b3b293da3c642ace.js.map
