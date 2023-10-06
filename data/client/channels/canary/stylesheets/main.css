@@ -140064,17 +140064,36 @@ input::-webkit-outer-spin-button {
     padding: 8px 32px
 }
 
-.badge-1IU7uc {
-    position: absolute;
-    right: -4px;
-    top: -4px
+.iconBadge-2grb37 {
+    top: -6px;
+    width: 20px;
+    height: 20px;
+    padding: 2px;
+    border-radius: 50%
 }
 
-.itemBadge-2VGhY3 {
-    width: 24px;
-    padding: 2px;
-    height: 24px;
-    border-radius: 50%
+.iconBadge-2grb37,
+.newBadge-29fT5u {
+    position: absolute;
+    right: -4px
+}
+
+.newBadge-29fT5u {
+    top: -4px;
+    text-transform: uppercase
+}
+
+.newBadgeText-3UcxPL {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    gap: 2px
 }
 
 .spinner-4mFvw6 {
@@ -175919,4 +175938,4 @@ html .invoiceCancelRow-dVOR64 {
     margin-bottom: 8px
 }
 
-/*# sourceMappingURL=40532.2e879dee46fad1973d2e.css.map*/
+/*# sourceMappingURL=40532.56ed972317ccb0208242.css.map*/
