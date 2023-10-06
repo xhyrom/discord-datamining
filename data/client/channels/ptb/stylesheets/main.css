@@ -146723,6 +146723,62 @@ html .invoiceCancelRow-3s2UuC {
     gap: 16px
 }
 
+.benefitLabel-3Mfa-N {
+    text-transform: uppercase
+}
+
+.viewContents-2DbsGe {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    gap: 8px;
+    padding: 6px 16px;
+    border-radius: 24px;
+    background-color: var(--background-modifier-selected);
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+    cursor: pointer
+}
+
+.caretIcon-3adpg1 {
+    color: var(--interactive-normal)
+}
+
+.contentsContainer-3DXO6B {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    padding: 16px;
+    background-color: var(--background-secondary)
+}
+
+.separator-3lZlUM {
+    border: 1px solid var(--background-modifier-hover);
+    margin-top: 16px;
+    margin-bottom: 16px
+}
+
+.attachmentGrid-1cTM1S {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    gap: 10px;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap
+}
+
 .modal-3NRxh5 {
     border-radius: 12px
 }
@@ -173968,10 +174024,6 @@ html .invoiceCancelRow-3s2UuC {
     margin-bottom: 16px
 }
 
-.benefitLabel-2Bue95 {
-    text-transform: uppercase
-}
-
 .attachmentsContainer-GWeM2V {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -176018,4 +176070,4 @@ html .invoiceCancelRow-dVOR64 {
     margin-bottom: 8px
 }
 
-/*# sourceMappingURL=40532.889a560e020068a448bb.css.map*/
+/*# sourceMappingURL=40532.da49a5da8d0aa6ca9687.css.map*/

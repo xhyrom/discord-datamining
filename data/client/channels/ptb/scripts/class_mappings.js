@@ -11461,9 +11461,23 @@
                 deleteButtonInner: "deleteButtonInner-CHsyPY"
             }
         },
+        349393: e => {
+            e.exports = {
+                benefitLabel: "benefitLabel-3Mfa-N"
+            }
+        },
         66691: e => {
             e.exports = {
                 textWithIcon: "textWithIcon-1Xi8lb"
+            }
+        },
+        712329: e => {
+            e.exports = {
+                viewContents: "viewContents-2DbsGe",
+                caretIcon: "caretIcon-3adpg1",
+                contentsContainer: "contentsContainer-3DXO6B",
+                separator: "separator-3lZlUM",
+                attachmentGrid: "attachmentGrid-1cTM1S"
             }
         },
         534997: e => {
@@ -11666,7 +11680,6 @@
                 purchaseSummaryPrice: "purchaseSummaryPrice-1iFYFE",
                 divider: "divider-20dEKa",
                 benefitsContainer: "benefitsContainer-c3wO0y",
-                benefitLabel: "benefitLabel-2Bue95",
                 attachmentsContainer: "attachmentsContainer-GWeM2V",
                 attachmentsContainerMultiple: "attachmentsContainerMultiple-3OjwHR",
                 attachmentGrid: "attachmentGrid-3duMCe"
@@ -27062,4 +27075,4 @@
         }
     }
 ]);
-//# sourceMappingURL=f5eba7573f544d38cc69.js.map
+//# sourceMappingURL=a78c482c2168ca0c0a0a.js.map
