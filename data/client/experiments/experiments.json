@@ -9874,7 +9874,7 @@
       "label": "Simple deadchat prompt",
       "description": [
         "Not Eligible",
-        "Control Bucket",
+        "Treatment 0: Control",
         "Treatment 1: trigger deadchat upon connection open"
       ],
       "hash": 2716650836,
