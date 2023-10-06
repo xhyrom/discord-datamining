@@ -1,4 +1,4 @@
-/*! For license information please see 7941a03d5855d64dccad.js.LICENSE.txt */
+/*! For license information please see e48c4cd5fd453eec594c.js.LICENSE.txt */
 (this.webpackChunkdiscord_app = this.webpackChunkdiscord_app || []).push([
     [22897], {
         151131: (t, e, r) => {
@@ -24900,6 +24900,8 @@
                 t.CLYDE_AI_MESSAGE_RATED = "clyde_ai_message_rated";
                 t.CLYDE_AI_THOUGHTS_VIEWED = "clyde_ai_thoughts_viewed";
                 t.CLYDE_AI_PRESET_PERSONALITY_SELECTED = "clyde_ai_preset_personality_selected";
+                t.CLYDE_AI_PROFILE_UPDATE_FAILED = "clyde_ai_profile_update_failed";
+                t.CLYDE_AI_PROFILE_MODAL_RESET_BUTTON_CLICKED = "clyde_ai_profile_modal_reset_button_clicked";
                 t.APPLE_PARTNER_IAP_REQUEST_SENT = "apple_partner_iap_request_sent";
                 t.POMELO_ERRORS = "pomelo_errors";
                 t.POMELO_EDIT_STEP_VIEWED = "pomelo_edit_step_viewed";
@@ -37096,7 +37098,7 @@ sentry_client:`${e.name}/${e.version}`}})}(t,n)}`
                     dsn: "https://fa97a90475514c03a42f80cd36d147c4@sentry.io/140984",
                     autoSessionTracking: !1,
                     environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                    release: "discord_web-104fd0ce83b8b1bed86f130158cd93e1af733c3d",
+                    release: "discord_web-d7eb931343c4ceb39be07ed8a1c3b5f1411423d2",
                     beforeSend: function(t) {
                         return function(t) {
                             return null != t.exception && null != t.exception.values && t.exception.values.every((function(t) {
@@ -37123,8 +37125,8 @@ sentry_client:`${e.name}/${e.version}`}})}(t,n)}`
                     denyUrls: [/recaptcha/, /mobilediscord\.com/, /betterdiscord:\/\//]
                 });
                 var t;
-                X.YA("buildNumber", null !== (t = "235397") ? t : "");
-                X.YA("builtAt", String("1696621376206"));
+                X.YA("buildNumber", null !== (t = "235408") ? t : "");
+                X.YA("builtAt", String("1696622076852"));
                 var e = window.GLOBAL_ENV.SENTRY_TAGS;
                 if (null != e && "object" == typeof e)
                     for (var r in e) X.YA(r, e[r]);
@@ -48504,4 +48506,4 @@ sentry_client:`${e.name}/${e.version}`}})}(t,n)}`
         e(128594), e(535666), e(784633), e(678991)
     }
 ]);
-//# sourceMappingURL=7941a03d5855d64dccad.js.map
+//# sourceMappingURL=e48c4cd5fd453eec594c.js.map
