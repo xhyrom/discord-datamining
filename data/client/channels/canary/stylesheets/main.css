@@ -18050,12 +18050,7 @@ html.disable-forced-colors * {
     height: 32px;
     background: var(--bg-overlay-2, var(--background-secondary));
     -webkit-box-shadow: 0 1px 0 rgba(4, 4, 5, .2), 0 1.5px 0 rgba(6, 6, 7, .05), 0 2px 0 rgba(4, 4, 5, .05);
-    box-shadow: 0 1px 0 rgba(4, 4, 5, .2), 0 1.5px 0 rgba(6, 6, 7, .05), 0 2px 0 rgba(4, 4, 5, .05);
-    z-index: 3
-}
-
-.topicsPillPadForumPostActions-31TaC6 {
-    top: 40px
+    box-shadow: 0 1px 0 rgba(4, 4, 5, .2), 0 1.5px 0 rgba(6, 6, 7, .05), 0 2px 0 rgba(4, 4, 5, .05)
 }
 
 .topicsPill-2UkeUm {
@@ -175884,4 +175879,4 @@ html .invoiceCancelRow-dVOR64 {
     margin-bottom: 8px
 }
 
-/*# sourceMappingURL=40532.5ca63096d44d8077c153.css.map*/
+/*# sourceMappingURL=40532.495a6a76714246c02908.css.map*/
