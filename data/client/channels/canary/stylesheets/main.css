@@ -76279,7 +76279,15 @@ strong {
 }
 
 .shop-3sIaH8 {
-    background-color: var(--background-floating)
+    background-color: var(--background-floating);
+    -webkit-box-flex: 1;
+    -ms-flex: 1;
+    flex: 1
+}
+
+.shop-3sIaH8,
+.shopScroll-2RzMLg {
+    height: 100%
 }
 
 .itemTypeTitleContainer-3KVj87 {
@@ -76319,13 +76327,6 @@ strong {
     justify-content: center;
     width: 100%;
     position: relative
-}
-
-.headerBar-292C6X {
-    position: fixed;
-    width: calc(100% - 312px);
-    right: 0;
-    top: 0
 }
 
 .logo-2i6m3N {
@@ -175883,4 +175884,4 @@ html .invoiceCancelRow-dVOR64 {
     margin-bottom: 8px
 }
 
-/*# sourceMappingURL=40532.5a7b84db450daef311fb.css.map*/
+/*# sourceMappingURL=40532.5ca63096d44d8077c153.css.map*/

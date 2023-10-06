@@ -6449,12 +6449,12 @@
                 close: "close-1CF18x",
                 cardsContainer: "cardsContainer-2kdrm8",
                 shop: "shop-3sIaH8",
+                shopScroll: "shopScroll-2RzMLg",
                 itemTypeTitleContainer: "itemTypeTitleContainer-3KVj87",
                 itemTypeTitle: "itemTypeTitle-fjLyoh",
                 newItemTypeBadge: "newItemTypeBadge-2_xpQl",
                 pageWrapperFullscreen: "pageWrapperFullscreen-2nKaAh",
                 pageWrapper: "pageWrapper-3Au6sJ",
-                headerBar: "headerBar-292C6X",
                 logo: "logo-2i6m3N",
                 title: "title-dzyan3",
                 closeWrapper: "closeWrapper-4ioOGM"
@@ -27047,4 +27047,4 @@
         }
     }
 ]);
-//# sourceMappingURL=2cd90a5b9a08b5e52205.js.map
+//# sourceMappingURL=ea6cbebf908ffc84fd6f.js.map
