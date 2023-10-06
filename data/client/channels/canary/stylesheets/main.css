@@ -54323,7 +54323,9 @@ html .progress-2Otdc- {
 }
 
 .guildShopEmbed-1nkLdU {
-    width: 510px;
+    max-width: 510px;
+    min-width: 160px;
+    width: 100%;
     min-height: 300px;
     padding: 16px;
     border-radius: 12px
@@ -54365,6 +54367,8 @@ html .progress-2Otdc- {
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
     width: 100%;
     gap: 12px
 }
@@ -55338,7 +55342,9 @@ html .progress-2Otdc- {
 }
 
 .postPreviewContainer-1loFYP {
-    width: 512px;
+    max-width: 512px;
+    min-width: 160px;
+    width: 100%;
     border-radius: 10px;
     overflow: hidden
 }
@@ -55428,6 +55434,8 @@ html .progress-2Otdc- {
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
     gap: 16px
 }
 
@@ -175875,4 +175883,4 @@ html .invoiceCancelRow-dVOR64 {
     margin-bottom: 8px
 }
 
-/*# sourceMappingURL=40532.86706621b18a50e63770.css.map*/
+/*# sourceMappingURL=40532.5a7b84db450daef311fb.css.map*/
