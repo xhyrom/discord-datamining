@@ -1,0 +1,21 @@
+{
+  "data": {
+    "kind": "user",
+    "id": "2023-10_halloween_2023",
+    "label": "Halloween assets 2023",
+    "description": [
+      "Not Eligible",
+      "Control Bucket",
+      "Treatment 1: Halloween assets enabled"
+    ],
+    "hash": 3705895930,
+    "buckets": [
+      -1,
+      0,
+      1
+    ],
+    "config_keys": [
+      "enabled"
+    ]
+  }
+}
