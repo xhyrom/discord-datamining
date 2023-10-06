@@ -20986,7 +20986,9 @@ html.disable-forced-colors * {
 }
 
 .pencilIcon-3ZoLdr {
-    padding-right: 8px
+    padding-right: 8px;
+    width: 16px;
+    height: 16px
 }
 
 .referencePosition-3awUp7 {
@@ -175873,4 +175875,4 @@ html .invoiceCancelRow-dVOR64 {
     margin-bottom: 8px
 }
 
-/*# sourceMappingURL=40532.ec858d1ea6dc18a9d873.css.map*/
+/*# sourceMappingURL=40532.1f5faa14807344351bc0.css.map*/
