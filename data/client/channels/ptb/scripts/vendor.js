@@ -1,4 +1,4 @@
-/*! For license information please see 13bd32aee9eb7cf4d543.js.LICENSE.txt */
+/*! For license information please see 77c958fc92758803094c.js.LICENSE.txt */
 (this.webpackChunkdiscord_app = this.webpackChunkdiscord_app || []).push([
     [22897], {
         151131: (t, e, r) => {
@@ -37099,7 +37099,7 @@ sentry_client:`${e.name}/${e.version}`}})}(t,n)}`
                     dsn: "https://fa97a90475514c03a42f80cd36d147c4@sentry.io/140984",
                     autoSessionTracking: !1,
                     environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                    release: "discord_web-87ee3fc4bd80f0e077d619f7668dfaadfe52416a",
+                    release: "discord_web-b5bffe9b92090d8db22f6839a36be6ffe63414ed",
                     beforeSend: function(t) {
                         return function(t) {
                             return null != t.exception && null != t.exception.values && t.exception.values.every((function(t) {
@@ -37126,8 +37126,8 @@ sentry_client:`${e.name}/${e.version}`}})}(t,n)}`
                     denyUrls: [/recaptcha/, /mobilediscord\.com/, /betterdiscord:\/\//]
                 });
                 var t;
-                X.YA("buildNumber", null !== (t = "235504") ? t : "");
-                X.YA("builtAt", String("1696627480792"));
+                X.YA("buildNumber", null !== (t = "235515") ? t : "");
+                X.YA("builtAt", String("1696628124836"));
                 var e = window.GLOBAL_ENV.SENTRY_TAGS;
                 if (null != e && "object" == typeof e)
                     for (var r in e) X.YA(r, e[r]);
@@ -37612,7 +37612,7 @@ sentry_client:`${e.name}/${e.version}`}})}(t,n)}`
                 u(_, o.CHANNELS_DEFAULT, [c.I.PRIMARY_360, c.I.PRIMARY_460, c.I.PLUM_9, c.I.PLUM_9]), u(_, o.CHANNELTEXTAREA_BACKGROUND, [c.I.PRIMARY_560, c.I.PRIMARY_160, c.I.PLUM_23, c.I.PLUM_15]), u(_, o.CHAT_BACKGROUND, [c.I.PRIMARY_600, c.I.WHITE_500, c.I.BLACK_500, c.I.PLUM_16]), u(_, o.CHAT_BORDER, [c.I.PRIMARY_700, c.I.PRIMARY_200, c.I.PLUM_20, c.I.PLUM_20]), u(_, o.CHAT_INPUT_CONTAINER_BACKGROUND, [c.I.PRIMARY_600, c.I.WHITE_500, c.I.PLUM_16, c.I.PLUM_16]), u(_, o.CHAT_SWIPE_TO_REPLY_BACKGROUND, [c.I.PRIMARY_660, c.I.PRIMARY_160, c.I.PLUM_22, c.I.PLUM_22]), u(_, o.CONTROL_BRAND_FOREGROUND, [c.I.BRAND_360, c.I.BRAND_500, c.I.BRAND_360, c.I.BRAND_360]), u(_, o.CONTROL_BRAND_FOREGROUND_NEW, [c.I.BRAND_360, c.I.BRAND_500, c.I.BRAND_360, c.I.BRAND_360]), u(_, o.CREATOR_REVENUE_ICON_GRADIENT_END, [c.I.TEAL_430, c.I.TEAL_400, c.I.TEAL_430, c.I.TEAL_430]), u(_, o.CREATOR_REVENUE_ICON_GRADIENT_START, [c.I.TEAL_360, c.I.TEAL_345, c.I.TEAL_360, c.I.TEAL_360]), u(_, o.CREATOR_REVENUE_INFO_BOX_BACKGROUND, [c.I.TEAL_430, c.I.TEAL_430, c.I.TEAL_430, c.I.TEAL_430]),
                 u(_, o.CREATOR_REVENUE_INFO_BOX_BORDER, [c.I.TEAL_400, c.I.TEAL_400, c.I.TEAL_400, c.I.TEAL_400]), u(_, o.CREATOR_REVENUE_LOCKED_CHANNEL_ICON, [c.I.TEAL_345, c.I.TEAL_400, c.I.TEAL_345, c.I.TEAL_345]), u(_, o.CREATOR_REVENUE_PROGRESS_BAR, [c.I.TEAL_400, c.I.TEAL_345, c.I.TEAL_400, c.I.TEAL_400]), u(_, o.DEPRECATED_CARD_BG, [c.I.PRIMARY_700, c.I.PRIMARY_100, c.I.PRIMARY_700, c.I.PRIMARY_700]), u(_, o.DEPRECATED_CARD_EDITABLE_BG, [c.I.PRIMARY_700, c.I.PRIMARY_100, c.I.PRIMARY_700, c.I.PRIMARY_700]), u(_, o.DEPRECATED_QUICKSWITCHER_INPUT_BACKGROUND, [c.I.PRIMARY_400, c.I.WHITE_500, c.I.PRIMARY_400, c.I.PRIMARY_400]), u(_, o.DEPRECATED_QUICKSWITCHER_INPUT_PLACEHOLDER, [c.I.WHITE_500, c.I.PRIMARY_500, c.I.WHITE_500, c.I.WHITE_500]), u(_, o.DEPRECATED_STORE_BG, [c.I.PRIMARY_600, c.I.PRIMARY_100, c.I.PRIMARY_600, c.I.PRIMARY_600]), u(_, o.DEPRECATED_TEXT_INPUT_BG, [c.I.PRIMARY_700, c.I.PRIMARY_200, c.I.PRIMARY_700, c.I.PRIMARY_700]), u(_, o.DEPRECATED_TEXT_INPUT_BORDER, [c.I.BLACK_500, c.I.PRIMARY_500, c.I.BLACK_500, c.I.BLACK_500]),
                 u(_, o.DEPRECATED_TEXT_INPUT_BORDER_DISABLED, [c.I.PRIMARY_700, c.I.PRIMARY_200, c.I.PRIMARY_700, c.I.PRIMARY_700]), u(_, o.DEPRECATED_TEXT_INPUT_BORDER_HOVER, [c.I.PRIMARY_900, c.I.PRIMARY_300, c.I.PRIMARY_900, c.I.PRIMARY_900]), u(_, o.DEPRECATED_TEXT_INPUT_PREFIX, [c.I.PRIMARY_200, c.I.PRIMARY_300, c.I.PRIMARY_200, c.I.PRIMARY_200]), u(_, o.DISPLAY_BANNER_OVERFLOW_BACKGROUND, [c.I.PRIMARY_700, c.I.WHITE_200, c.I.PLUM_20, c.I.PLUM_20]), u(_, o.DIVIDER_STRONG, [c.I.WHITE_500, c.I.BLACK_500, c.I.PLUM_11, c.I.PLUM_11]), u(_, o.DIVIDER_SUBTLE, [c.I.WHITE_500, c.I.BLACK_500, c.I.PLUM_11, c.I.PLUM_11]), u(_, o.FOCUS_PRIMARY, [c.I.BLUE_345, c.I.BLUE_345, c.I.BLUE_345, c.I.BLUE_345]), u(_, o.FORUM_POST_EXTRA_MEDIA_COUNT_CONTAINER_BACKGROUND, [c.I.PRIMARY_660, c.I.PRIMARY_160, c.I.PLUM_19, c.I.PLUM_19]), u(_, o.FORUM_POST_TAG_BACKGROUND, [c.I.PRIMARY_660, c.I.PRIMARY_160, c.I.PLUM_19, c.I.PLUM_19]), u(_, o.GUILD_NOTIFICATIONS_BOTTOM_SHEET_PILL_BACKGROUND, [c.I.PRIMARY_700, c.I.WHITE_500, c.I.PRIMARY_700, c.I.PRIMARY_700]),
-                u(_, o.HEADER_MUTED, [c.I.PRIMARY_360, c.I.PRIMARY_460, c.I.PLUM_10, c.I.PLUM_10]), u(_, o.HEADER_PRIMARY, [c.I.PRIMARY_130, c.I.PRIMARY_860, c.I.PLUM_2, c.I.PLUM_1]), u(_, o.HEADER_SECONDARY, [c.I.PRIMARY_330, c.I.PRIMARY_500, c.I.PLUM_8, c.I.PLUM_9]), u(_, o.HOME_BACKGROUND, [c.I.PRIMARY_645, c.I.PRIMARY_100, c.I.PLUM_18, c.I.PLUM_18]), u(_, o.HOME_CARD_RESTING_BORDER, [c.I.TRANSPARENT, c.I.PRIMARY_400, c.I.TRANSPARENT, c.I.TRANSPARENT]), u(_, o.ICON_MUTED, [c.I.PRIMARY_500, c.I.PRIMARY_400, c.I.PLUM_12, c.I.PLUM_11]), u(_, o.ICON_PRIMARY, [c.I.PRIMARY_130, c.I.PRIMARY_860, c.I.PLUM_5, c.I.PLUM_4]), u(_, o.ICON_SECONDARY, [c.I.PRIMARY_330, c.I.PRIMARY_500, c.I.PLUM_9, c.I.PLUM_9]), u(_, o.INFO_BOX_BACKGROUND, [c.I.BLUE_345, c.I.BLUE_345, c.I.BLUE_345, c.I.BLUE_345]), u(_, o.INFO_DANGER_BACKGROUND, [c.I.RED_400, c.I.RED_430, c.I.RED_400, c.I.RED_400]), u(_, o.INFO_DANGER_FOREGROUND, [c.I.RED_400, c.I.RED_430, c.I.RED_400, c.I.RED_400]), u(_, o.INFO_DANGER_TEXT, [c.I.WHITE_500, c.I.BLACK_500, c.I.WHITE_500, c.I.WHITE_500]),
+                u(_, o.HEADER_MUTED, [c.I.PRIMARY_360, c.I.PRIMARY_460, c.I.PLUM_10, c.I.PLUM_10]), u(_, o.HEADER_PRIMARY, [c.I.PRIMARY_130, c.I.PRIMARY_860, c.I.PLUM_2, c.I.PLUM_1]), u(_, o.HEADER_SECONDARY, [c.I.PRIMARY_330, c.I.PRIMARY_500, c.I.PLUM_8, c.I.PLUM_9]), u(_, o.HOME_BACKGROUND, [c.I.PRIMARY_645, c.I.PRIMARY_100, c.I.PLUM_18, c.I.PLUM_18]), u(_, o.HOME_CARD_RESTING_BORDER, [c.I.TRANSPARENT, c.I.PRIMARY_400, c.I.TRANSPARENT, c.I.TRANSPARENT]), u(_, o.ICON_MUTED, [c.I.PRIMARY_400, c.I.PRIMARY_400, c.I.PLUM_12, c.I.PLUM_11]), u(_, o.ICON_PRIMARY, [c.I.PRIMARY_130, c.I.PRIMARY_860, c.I.PLUM_5, c.I.PLUM_4]), u(_, o.ICON_SECONDARY, [c.I.PRIMARY_330, c.I.PRIMARY_500, c.I.PLUM_9, c.I.PLUM_9]), u(_, o.INFO_BOX_BACKGROUND, [c.I.BLUE_345, c.I.BLUE_345, c.I.BLUE_345, c.I.BLUE_345]), u(_, o.INFO_DANGER_BACKGROUND, [c.I.RED_400, c.I.RED_430, c.I.RED_400, c.I.RED_400]), u(_, o.INFO_DANGER_FOREGROUND, [c.I.RED_400, c.I.RED_430, c.I.RED_400, c.I.RED_400]), u(_, o.INFO_DANGER_TEXT, [c.I.WHITE_500, c.I.BLACK_500, c.I.WHITE_500, c.I.WHITE_500]),
                 u(_, o.INFO_HELP_BACKGROUND, [c.I.BLUE_345, c.I.BLUE_430, c.I.BLUE_345, c.I.BLUE_345]), u(_, o.INFO_HELP_FOREGROUND, [c.I.BLUE_345, c.I.BLUE_430, c.I.BLUE_345, c.I.BLUE_345]), u(_, o.INFO_HELP_TEXT, [c.I.WHITE_500, c.I.BLACK_500, c.I.WHITE_500, c.I.WHITE_500]), u(_, o.INFO_POSITIVE_BACKGROUND, [c.I.GREEN_360, c.I.GREEN_400, c.I.GREEN_360, c.I.GREEN_360]), u(_, o.INFO_POSITIVE_FOREGROUND, [c.I.GREEN_360, c.I.GREEN_400, c.I.GREEN_360, c.I.GREEN_360]), u(_, o.INFO_POSITIVE_TEXT, [c.I.WHITE_500, c.I.BLACK_500, c.I.WHITE_500, c.I.WHITE_500]), u(_, o.INFO_WARNING_BACKGROUND, [c.I.YELLOW_300, c.I.YELLOW_400, c.I.YELLOW_300, c.I.YELLOW_300]), u(_, o.INFO_WARNING_FOREGROUND, [c.I.YELLOW_300, c.I.YELLOW_400, c.I.YELLOW_300, c.I.YELLOW_300]), u(_, o.INFO_WARNING_TEXT, [c.I.WHITE_500, c.I.BLACK_500, c.I.WHITE_500, c.I.WHITE_500]), u(_, o.INPUT_BACKGROUND, [c.I.PRIMARY_700, c.I.BLACK_500, c.I.PLUM_16, c.I.PLUM_24]), u(_, o.INPUT_PLACEHOLDER_TEXT, [c.I.INPUT_PLACEHOLDER_TEXT_DARK, c.I.PRIMARY_500, c.I.PLUM_9, c.I.PLUM_9]),
                 u(_, o.INTERACTIVE_ACTIVE, [c.I.WHITE_500, c.I.PRIMARY_860, c.I.PLUM_3, c.I.PLUM_1]), u(_, o.INTERACTIVE_HOVER, [c.I.PRIMARY_230, c.I.PRIMARY_600, c.I.PLUM_4, c.I.PLUM_4]), u(_, o.INTERACTIVE_MUTED, [c.I.PRIMARY_500, c.I.PRIMARY_300, c.I.PLUM_13, c.I.PLUM_13]), u(_, o.INTERACTIVE_NORMAL, [c.I.PRIMARY_330, c.I.PRIMARY_500, c.I.PLUM_6, c.I.PLUM_6]), u(_, o.LEGACY_ANDROID_BLUR_OVERLAY_DEFAULT, [c.I.PRIMARY_660, c.I.PRIMARY_130, c.I.PRIMARY_660, c.I.PRIMARY_660]), u(_, o.LEGACY_ANDROID_BLUR_OVERLAY_ULTRA_THIN, [c.I.BLACK_500, c.I.WHITE_500, c.I.BLACK_500, c.I.BLACK_500]), u(_, o.LEGACY_BLUR_FALLBACK_DEFAULT, [c.I.PRIMARY_660, c.I.PRIMARY_230, c.I.PRIMARY_660, c.I.PRIMARY_660]), u(_, o.LEGACY_BLUR_FALLBACK_ULTRA_THIN, [c.I.BLACK_500, c.I.WHITE_500, c.I.BLACK_500, c.I.BLACK_500]), u(_, o.LIVE_STAGE_TILE_BORDER, [c.I.PRIMARY_500, c.I.PRIMARY_430, c.I.PLUM_13, c.I.PLUM_13]), u(_, o.LOGO_PRIMARY, [c.I.WHITE_500, c.I.BRAND_500, c.I.WHITE_500, c.I.WHITE_500]), u(_, o.MENTION_BACKGROUND, [c.I.BRAND_500, c.I.BRAND_500, c.I.BRAND_500, c.I.BRAND_500]),
                 u(_, o.MENTION_FOREGROUND, [c.I.BRAND_260, c.I.BRAND_500, c.I.BRAND_230, c.I.BRAND_230]), u(_, o.MODAL_BACKGROUND, [c.I.PRIMARY_600, c.I.WHITE_500, c.I.PLUM_16, c.I.PLUM_16]), u(_, o.MODAL_FOOTER_BACKGROUND, [c.I.PRIMARY_630, c.I.PRIMARY_130, c.I.PLUM_17, c.I.PLUM_17]), u(_, o.NAVIGATOR_HEADER_TINT, [c.I.WHITE_500, c.I.PRIMARY_500, c.I.WHITE_500, c.I.WHITE_500]), u(_, o.PROFILE_GRADIENT_CARD_BACKGROUND, [c.I.BLACK_500, c.I.WHITE_500, c.I.BLACK_500, c.I.BLACK_500]), u(_, o.PROFILE_GRADIENT_MESSAGE_INPUT_BORDER, [c.I.PRIMARY_500, c.I.PRIMARY_430, c.I.PRIMARY_500, c.I.PRIMARY_500]), u(_, o.PROFILE_GRADIENT_NOTE_BACKGROUND, [c.I.BLACK_500, c.I.WHITE_500, c.I.BLACK_500, c.I.BLACK_500]), u(_, o.PROFILE_GRADIENT_OVERLAY, [c.I.BLACK_500, c.I.WHITE_500, c.I.BLACK_500, c.I.BLACK_500]), u(_, o.PROFILE_GRADIENT_OVERLAY_SYNCED_WITH_USER_THEME, [c.I.BLACK_500, c.I.WHITE_500, c.I.BLACK_500, c.I.BLACK_500]), u(_, o.PROFILE_GRADIENT_PROFILE_BODY_BACKGROUND_HOVER, [c.I.WHITE_500, c.I.BLACK_500, c.I.WHITE_500, c.I.WHITE_500]),
@@ -42568,16 +42568,16 @@ sentry_client:`${e.name}/${e.version}`}})}(t,n)}`
                             }), xt),
                         CARD_GRADIENT_BG: (kt = {}, n(kt, Ea.DARK, {
                             raw: "BLACK_500",
-                            opacity: .7
+                            opacity: .4
                         }), n(kt, Ea.LIGHT, {
                             raw: "WHITE_500",
                             opacity: .7
                         }), n(kt, Ea.AMOLED, {
                             raw: "BLACK_500",
-                            opacity: .7
+                            opacity: .4
                         }), n(kt, Ea.DARKER, {
                             raw: "BLACK_500",
-                            opacity: .7
+                            opacity: .4
                         }), kt),
                         CARD_GRADIENT_PRESSED_BG: (Kt = {}, n(Kt, Ea.DARK, {
                             raw: "BLACK_500",
@@ -43140,7 +43140,7 @@ sentry_client:`${e.name}/${e.version}`}})}(t,n)}`
                             opacity: 0
                         }), Me),
                         ICON_MUTED: (me = {}, n(me, Ea.DARK, {
-                            raw: "PRIMARY_500",
+                            raw: "PRIMARY_400",
                             opacity: 1
                         }), n(me, Ea.LIGHT, {
                             raw: "PRIMARY_400",
@@ -48507,4 +48507,4 @@ sentry_client:`${e.name}/${e.version}`}})}(t,n)}`
         e(128594), e(535666), e(784633), e(678991)
     }
 ]);
-//# sourceMappingURL=13bd32aee9eb7cf4d543.js.map
+//# sourceMappingURL=77c958fc92758803094c.js.map

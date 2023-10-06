@@ -24991,7 +24991,7 @@ html.disable-forced-colors * {
     --button-secondary-background-active: var(--primary-400);
     --button-secondary-background-disabled: var(--primary-500);
     --button-secondary-background-hover: var(--primary-430);
-    --card-gradient-bg: hsl(var(--black-500-hsl)/0.7);
+    --card-gradient-bg: hsl(var(--black-500-hsl)/0.4);
     --card-gradient-pressed-bg: hsl(var(--black-500-hsl)/0.5);
     --card-primary-bg: var(--primary-560);
     --card-primary-pressed-bg: var(--primary-645);
@@ -25034,7 +25034,6 @@ html.disable-forced-colors * {
     --header-secondary: var(--primary-330);
     --home-background: var(--primary-645);
     --home-card-resting-border: hsl(var(--transparent-hsl)/0);
-    --icon-muted: var(--primary-500);
     --icon-primary: var(--primary-130);
     --icon-secondary: var(--primary-330);
     --info-danger-background: hsl(var(--red-400-hsl)/0.1);
@@ -25174,6 +25173,7 @@ html.disable-forced-colors * {
 .theme-light {
     --black: var(--black-500);
     --focus-primary: var(--blue-345);
+    --icon-muted: var(--primary-400);
     --info-box-background: hsl(var(--blue-345-hsl)/0.1);
     --theme-locked-blur-fallback: hsl(var(--primary-700-hsl)/0.96);
     --voice-video-tile-blur-fallback: hsl(var(--primary-700-hsl)/0.48);
@@ -25315,7 +25315,6 @@ html.disable-forced-colors * {
     --header-secondary: var(--primary-500);
     --home-background: var(--primary-100);
     --home-card-resting-border: hsl(var(--primary-400-hsl)/0.24);
-    --icon-muted: var(--primary-400);
     --icon-primary: var(--primary-860);
     --icon-secondary: var(--primary-500);
     --info-danger-background: hsl(var(--red-430-hsl)/0.1);
@@ -25535,7 +25534,7 @@ html.disable-forced-colors * {
     --button-secondary-background-active: var(--plum-10);
     --button-secondary-background-disabled: var(--plum-13);
     --button-secondary-background-hover: var(--plum-11);
-    --card-gradient-bg: hsl(var(--black-500-hsl)/0.7);
+    --card-gradient-bg: hsl(var(--black-500-hsl)/0.4);
     --card-gradient-pressed-bg: hsl(var(--black-500-hsl)/0.5);
     --card-primary-bg: var(--plum-22);
     --card-primary-pressed-bg: var(--plum-24);
@@ -25816,7 +25815,7 @@ html.disable-forced-colors * {
     --button-secondary-background-active: var(--plum-10);
     --button-secondary-background-disabled: var(--plum-13);
     --button-secondary-background-hover: var(--plum-11);
-    --card-gradient-bg: hsl(var(--black-500-hsl)/0.7);
+    --card-gradient-bg: hsl(var(--black-500-hsl)/0.4);
     --card-gradient-pressed-bg: hsl(var(--black-500-hsl)/0.5);
     --card-primary-bg: var(--plum-18);
     --card-primary-pressed-bg: var(--plum-19);
@@ -175920,4 +175919,4 @@ html .invoiceCancelRow-dVOR64 {
     margin-bottom: 8px
 }
 
-/*# sourceMappingURL=40532.fddb4942905e5029e667.css.map*/
+/*# sourceMappingURL=40532.2e879dee46fad1973d2e.css.map*/
