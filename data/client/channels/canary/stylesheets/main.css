@@ -106763,6 +106763,58 @@ strong {
     margin-top: 12px
 }
 
+.video-FJevlt {
+    margin-bottom: 14px;
+    border-radius: 6px 6px 0 0
+}
+
+.header-3JdS4F {
+    gap: 5px;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center
+}
+
+.footer-3wgcpK {
+    position: relative;
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 auto;
+    flex: 0 0 auto;
+    padding: 16px;
+    z-index: 1;
+    overflow-x: hidden;
+    gap: 10px
+}
+
+.closeContainer-1Dlpnq {
+    position: absolute;
+    top: 10px;
+    right: 10px
+}
+
+.close-3XLmeU {
+    cursor: pointer;
+    background-color: var(--interactive-muted);
+    color: #fff;
+    opacity: .8;
+    font-size: 16px;
+    padding: 4px;
+    border-radius: 12px
+}
+
+.hintText-TIVJAK {
+    margin-top: 24px;
+    margin-bottom: 6px;
+    display: inline;
+    padding: 4px 8px;
+    border-radius: 16px;
+    background-color: var(--background-secondary-alt)
+}
+
+.clydeText-1AhSmw {
+    color: var(--text-positive)
+}
+
 @-webkit-keyframes placeholderPulse-3fdRIz {
     0% {
         opacity: .5
@@ -106814,16 +106866,20 @@ strong {
 }
 
 .members-3WRCEx {
-    width: 240px;
     padding: 0 0 20px;
     -webkit-box-flex: 0;
     -ms-flex: 0 0 auto;
     flex: 0 0 auto;
-    height: auto
+    height: auto;
+    background: var(--bg-overlay-chat, var(--background-secondary))
 }
 
-.member-48YF_l,
-.members-3WRCEx {
+.members-3WRCEx,
+.membersListNotices-UstAx3 {
+    width: 240px
+}
+
+.member-48YF_l {
     background: var(--bg-overlay-chat, var(--background-secondary))
 }
 
@@ -106917,6 +106973,7 @@ strong {
     }
 
     .members-3WRCEx,
+    .membersListNotices-UstAx3,
     .membersWrap-3NUR2t {
         min-width: 100%
     }
@@ -146666,6 +146723,62 @@ html .invoiceCancelRow-3s2UuC {
     gap: 16px
 }
 
+.benefitLabel-3Mfa-N {
+    text-transform: uppercase
+}
+
+.viewContents-2DbsGe {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    gap: 8px;
+    padding: 6px 16px;
+    border-radius: 24px;
+    background-color: var(--background-modifier-selected);
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+    cursor: pointer
+}
+
+.caretIcon-3adpg1 {
+    color: var(--interactive-normal)
+}
+
+.contentsContainer-3DXO6B {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    padding: 16px;
+    background-color: var(--background-secondary)
+}
+
+.separator-3lZlUM {
+    border: 1px solid var(--background-modifier-hover);
+    margin-top: 16px;
+    margin-bottom: 16px
+}
+
+.attachmentGrid-1cTM1S {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    gap: 10px;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap
+}
+
 .modal-3NRxh5 {
     border-radius: 12px
 }
@@ -173911,10 +174024,6 @@ html .invoiceCancelRow-3s2UuC {
     margin-bottom: 16px
 }
 
-.benefitLabel-2Bue95 {
-    text-transform: uppercase
-}
-
 .attachmentsContainer-GWeM2V {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -175961,4 +176070,4 @@ html .invoiceCancelRow-dVOR64 {
     margin-bottom: 8px
 }
 
-/*# sourceMappingURL=40532.804ec28a4ee18496209f.css.map*/
+/*# sourceMappingURL=40532.da49a5da8d0aa6ca9687.css.map*/
