@@ -26873,6 +26873,7 @@ code {
     --custom-guild-shop-content-width-reduced: 688px;
     --custom-guild-shop-channel-row-gradient: linear-gradient(113deg, #2f3570 1.98%, #422c70 94.48%);
     --custom-guild-shop-channel-row-gradient-hover: linear-gradient(113deg, #383f86 1.98%, #4d3385 94.48%);
+    --custom-guild-shop-channel-row-border-gradient: linear-gradient(113deg, #6591ff, #d150ff);
     --custom-guild-shop-channel-row-glow: 0 0 4px rgba(189, 149, 255, 0.5);
     --custom-guild-shop-preview-pill-shadow-dark: -4px 5px #1d1d1d;
     --custom-guild-shop-preview-pill-shadow-light: -4px 5px #d7dce8
@@ -54245,8 +54246,7 @@ html .progress-2Otdc- {
     gap: 8px;
     -webkit-box-align: center;
     -ms-flex-align: center;
-    align-items: center;
-    color: var(--interactive-normal)
+    align-items: center
 }
 
 .container-Vrgqxz {
@@ -77443,14 +77443,19 @@ strong {
     -ms-flex-align: center;
     align-items: center;
     border-radius: var(--radius-sm);
-    background-color: var(--background-modifier-hover)
+    background-color: var(--background-modifier-hover);
+    cursor: pointer
 }
 
-.tabSelected-1a9MlN {
+.selected-2n29Ug {
     background-color: var(--brand-500);
     -webkit-box-shadow: 0 0 4px 0 var(--brand-500);
     box-shadow: 0 0 4px 0 var(--brand-500);
     border: 1px solid hsla(0, 0%, 100%, .15)
+}
+
+.selected-2n29Ug .tabPreviewClose-Ic6Mxe {
+    display: block
 }
 
 .tabDisabled-1l0OgZ {
@@ -77459,8 +77464,8 @@ strong {
 
 .tabPreviewClose-Ic6Mxe {
     margin-left: auto;
-    color: var(--interactive-normal);
-    padding-right: 4px
+    padding-right: 4px;
+    display: none
 }
 
 .iconContainer-2gP6IM {
@@ -77501,6 +77506,21 @@ strong {
         max-width: var(--custom-guild-shop-content-width-reduced);
         gap: 16px
     }
+}
+
+.newBadge-2tP8IH {
+    margin-left: auto;
+    padding-right: 4px;
+    color: var(--brand-560)
+}
+
+.preview-2LhLi4.tab-2E41_Z {
+    border: 1px dashed var(--interactive-muted)
+}
+
+.questionMark-1TqICZ {
+    height: 36px;
+    width: auto
 }
 
 .container-BY3bnw {
@@ -77622,7 +77642,7 @@ strong {
 }
 
 .muralImageReducedWidth-1qNk55 {
-    height: 100%;
+    width: 100%;
     -o-object-fit: cover;
     object-fit: cover;
     display: none
@@ -77696,6 +77716,19 @@ strong {
     .previewContent-2af7FX {
         gap: 24px
     }
+}
+
+.previewListingCard-ldXXr9 {
+    position: relative;
+    pointer-events: none
+}
+
+.questionMark-2Teekp {
+    position: absolute;
+    top: 50px;
+    right: 120px;
+    width: auto;
+    height: 100px
 }
 
 .learnMoreTipContainer-zpYfCh {
@@ -91904,8 +91937,9 @@ strong {
     position: relative;
     -webkit-transition: opacity .2s ease-in-out;
     transition: opacity .2s ease-in-out;
-    padding: 1px 0;
-    margin-left: 8px
+    padding: 1px;
+    margin-left: 8px;
+    overflow: hidden
 }
 
 .previewChannelRowContent-3fpJu0 {
@@ -91920,8 +91954,17 @@ strong {
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
-    overflow: hidden;
-    height: 34px
+    height: 32px
+}
+
+.previewChannelRowContent-3fpJu0:hover,
+.selected-VDl2J3 .previewChannelRowContent-3fpJu0 {
+    background: var(--bg-overlay-selected, var(--background-modifier-selected))
+}
+
+.previewChannelRowContent-3fpJu0:hover .channelLabel-14dlkc,
+.selected-VDl2J3 .previewChannelRowContent-3fpJu0 .channelLabel-14dlkc {
+    color: var(--interactive-active)
 }
 
 .channelLabel-14dlkc {
@@ -91950,25 +91993,39 @@ strong {
 }
 
 .selected-VDl2J3 .previewChannelRowContent-3fpJu0:hover .money-2DSXfU,
-.selected-VDl2J3 .previewChannelRowContent-3fpJu0:hover .questionMark-ZD83vL {
+.selected-VDl2J3 .previewChannelRowContent-3fpJu0:hover .newBadge-2eMr5J {
     display: none
 }
 
-.theme-light .previewChannelRowContent-3fpJu0 {
+.theme-light .phantomPreview-s7NLZP .previewChannelRowContent-3fpJu0 {
     border: 1px solid var(--interactive-muted);
-    background: var(--background-secondary)
+    background: hsla(0, 0%, 95.7%, .4)
 }
 
-.theme-light .selected-VDl2J3 .previewChannelRowContent-3fpJu0 {
-    border: 1px solid var(--interactive-active)
+.theme-light .phantomPreview-s7NLZP .previewChannelRowContent-3fpJu0:hover,
+.theme-light .phantomPreview-s7NLZP .selected-VDl2J3 .previewChannelRowContent-3fpJu0 {
+    border: 1px solid var(--interactive-active);
+    background: var(--white-500)
 }
 
-.theme-dark .previewChannelRowContent-3fpJu0 {
-    border: 1px solid var(--bg-gradient-cotton-candy-2);
+.theme-dark .phantomPreview-s7NLZP .previewChannelRowContent-3fpJu0 {
+    position: relative;
     background: var(--custom-guild-shop-channel-row-gradient)
 }
 
-.theme-dark .previewChannelRowContent-3fpJu0:hover {
+.theme-dark .phantomPreview-s7NLZP .previewChannelRowContent-3fpJu0:before {
+    content: "";
+    position: absolute;
+    border-radius: inherit;
+    top: -1px;
+    left: -1px;
+    right: -1px;
+    bottom: -1px;
+    z-index: -1;
+    background: var(--custom-guild-shop-channel-row-border-gradient)
+}
+
+.theme-dark .phantomPreview-s7NLZP .previewChannelRowContent-3fpJu0:hover {
     background: var(--custom-guild-shop-channel-row-gradient-hover);
     -webkit-box-shadow: var(--custom-guild-shop-channel-row-glow);
     box-shadow: var(--custom-guild-shop-channel-row-glow)
@@ -91986,14 +92043,8 @@ strong {
 }
 
 .money-2DSXfU {
-    max-height: 48px;
-    margin-top: -6px;
-    margin-bottom: -6px
-}
-
-.questionMark-ZD83vL {
-    width: 20px;
-    height: 20px
+    display: none;
+    max-height: 48px
 }
 
 .closeButton-1FeJeB {
@@ -92003,6 +92054,16 @@ strong {
     -ms-flex-align: center;
     align-items: center;
     display: none
+}
+
+.phantomPreview-s7NLZP .money-2DSXfU,
+.phantomPreview-s7NLZP .newBadge-2eMr5J {
+    display: block
+}
+
+.newBadge-2eMr5J {
+    display: none;
+    color: var(--brand-560)
 }
 
 .wrapper-2fEmwW {
@@ -121205,16 +121266,6 @@ button.button-12Fmur.disabled-GROwTe {
 
 .selfDemonetization-31z9KN {
     margin-top: 32px
-}
-
-.changeTeamButton-2u3mhe {
-    background-color: var(--interactive-muted);
-    color: var(--white-500)
-}
-
-.selectTeamButton-3yMx5j {
-    background-color: var(--brand-500);
-    color: var(--white-500)
 }
 
 .listingNameColumn-vgiiUi {
@@ -176070,4 +176121,4 @@ html .invoiceCancelRow-dVOR64 {
     margin-bottom: 8px
 }
 
-/*# sourceMappingURL=40532.da49a5da8d0aa6ca9687.css.map*/
+/*# sourceMappingURL=40532.0e836edc0766d5b49466.css.map*/
