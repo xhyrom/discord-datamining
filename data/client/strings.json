@@ -9093,6 +9093,7 @@
   "MOST_POPULAR": "\"Most Popular\"",
   "SPELLCHECK": "\"Spellcheck\"",
   "ADD_TO_DICTIONARY": "\"Add to Dictionary\"",
+  "REMOVE_FROM_DICTIONARY": "\"Remove from Dictionary\"",
   "LANGUAGES": "\"Languages\"",
   "AUTO_SUGGEST_STICKERS": "\"Sticker Suggestions\"",
   "AUTO_SUGGEST_STICKERS_DESCRIPTION": "\"Allows sticker suggestions to appear when typing messages.\"",
