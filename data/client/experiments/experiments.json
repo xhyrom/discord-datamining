@@ -6775,6 +6775,34 @@
         },
         {
           "buckets": {
+            "1": {
+              "rollout": [
+                {
+                  "start": 0,
+                  "end": 1000
+                }
+              ]
+            },
+            "none": {
+              "rollout": [
+                {
+                  "start": 1000,
+                  "end": 10000
+                }
+              ]
+            }
+          },
+          "filters": [
+            {
+              "type": "guild_has_feature",
+              "features": [
+                "COMMUNITY"
+              ]
+            }
+          ]
+        },
+        {
+          "buckets": {
             "none": {
               "rollout": [
                 {
