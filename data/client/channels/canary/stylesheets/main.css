@@ -108444,7 +108444,8 @@ strong {
     flex-direction: row;
     -webkit-box-pack: center;
     -ms-flex-pack: center;
-    justify-content: center
+    justify-content: center;
+    padding-right: 24px
 }
 
 .containerDefaultMargin-3T8Dq_ {
@@ -108490,26 +108491,12 @@ strong {
     -webkit-box-flex: 1;
     -ms-flex: 1;
     flex: 1;
-    padding: 18px 12px 18px 4px;
+    padding: 16px 4px;
     margin: auto 0
 }
 
 .title-CXxZie {
     margin-bottom: 4px
-}
-
-.buttons-2BQREU {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: column;
-    flex-direction: column;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    justify-content: center;
-    padding-right: 24px
 }
 
 .ctaButton-30CBdb {
@@ -108525,20 +108512,33 @@ strong {
 }
 
 .upsellArt-1BE-fp {
-    width: 146px;
-    min-height: 100px;
-    -ms-flex-item-align: end;
-    align-self: flex-end;
-    position: relative
+    -ms-flex-preferred-size: 150px;
+    flex-basis: 150px;
+    -ms-flex-item-align: stretch;
+    align-self: stretch;
+    position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center
 }
 
 .profileEffectsUpsellArt-1k9puR {
     position: absolute;
-    bottom: 0;
-    left: -16px;
+    left: -19px;
     -o-object-fit: contain;
     object-fit: contain;
-    width: 146px
+    width: 150px;
+    -webkit-transform: translateY(-3px);
+    transform: translateY(-3px)
+}
+
+.falloweenBackground-3tuKdZ {
+    background-image: url(/assets/6313ab1a327a3b926d115e9026d034fa.jpg);
+    background-size: cover;
+    background-position: 50%
 }
 
 .brandShine-2_xHTj {
@@ -176218,4 +176218,4 @@ html .invoiceCancelRow-dVOR64 {
     margin-bottom: 8px
 }
 
-/*# sourceMappingURL=40532.0e472b84826fe3130ff4.css.map*/
+/*# sourceMappingURL=40532.23d357fe4427dce47412.css.map*/
