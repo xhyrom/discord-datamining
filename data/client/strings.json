@@ -3736,6 +3736,8 @@
   "VOICE_SETTINGS": "\"Voice Settings\"",
   "VOICE_CALL_MEMBER_LIST_TITLE": "\"{count, plural, =1 {# Person} other {# People}}\"",
   "VOICE_CALL_ACTION_A11Y_HINT": "\"Open voice call actions\"",
+  "TURN_CAMERA_ON_A11Y_LABEL": "\"Turn Camera On\"",
+  "TURN_CAMERA_OFF_A11Y_LABEL": "\"Turn Camera Off\"",
   "IN_GAME_VOICE_SETTINGS": "\"In-Game Voice Settings\"",
   "VIDEO_SETTINGS": "\"Video Settings\"",
   "TEXT": "\"Text\"",
