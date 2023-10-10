@@ -1,4 +1,4 @@
-/*! For license information please see 40f784dd1721c46ca60c.js.LICENSE.txt */
+/*! For license information please see 1469de9705795637c520.js.LICENSE.txt */
 (this.webpackChunkdiscord_app = this.webpackChunkdiscord_app || []).push([
     [22897], {
         151131: (t, e, r) => {
@@ -22155,8 +22155,14 @@
                     GET_REPORT_MENU: function(t) {
                         return "/reporting/menu/".concat(t)
                     },
+                    GET_UNAUTHENTICATED_REPORT_MENU: function(t) {
+                        return "/reporting/unauthenticated/menu/".concat(t)
+                    },
                     SUBMIT_REPORT_MENU: function(t) {
                         return "/reporting/".concat(t)
+                    },
+                    SUBMIT_UNAUTHENTICATED_REPORT_MENU: function(t) {
+                        return "/reporting/unauthenticated/".concat(t)
                     },
                     STAGE_INSTANCES: "/stage-instances",
                     STAGE_INSTANCES_EXTRA: "/stage-instances/extra",
@@ -24761,6 +24767,8 @@
                 t.GUILD_SAFETY_MENTION_RAID_SETUP_CTA_CLICKED = "guild_safety_mention_raid_setup_cta_clicked";
                 t.GUILD_RAID_LOCKDOWN_FEEDBACK = "guild_raid_lockdown_feedback";
                 t.GUILD_RAID_INTERVENTION_STATE_CHANGE = "guild_raid_intervention_state_change";
+                t.BULK_MODERATION_ACTION_STARTED = "bulk_moderation_action_started";
+                t.BULK_MODERATION_ACTION_COMPLETED = "bulk_moderation_action_completed";
                 t.NEW_MEMBER_MENTION_CTA_CLICKED = "new_member_mention_cta_clicked";
                 t.MOBILE_OVERLAY_CLOSED = "mobile_overlay_closed";
                 t.MOBILE_OVERLAY_OPENED = "mobile_overlay_opened";
@@ -37100,7 +37108,7 @@ sentry_client:`${e.name}/${e.version}`}})}(t,n)}`
                     dsn: "https://fa97a90475514c03a42f80cd36d147c4@sentry.io/140984",
                     autoSessionTracking: !1,
                     environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                    release: "discord_web-7319f9a38342f4ce44759a14c9ddc6e75c6439df",
+                    release: "discord_web-7052527db6c86642e31735599ee63f6e06867132",
                     beforeSend: function(t) {
                         return function(t) {
                             return null != t.exception && null != t.exception.values && t.exception.values.every((function(t) {
@@ -37127,8 +37135,8 @@ sentry_client:`${e.name}/${e.version}`}})}(t,n)}`
                     denyUrls: [/recaptcha/, /mobilediscord\.com/, /betterdiscord:\/\//]
                 });
                 var t;
-                X.YA("buildNumber", null !== (t = "235819") ? t : "");
-                X.YA("builtAt", String("1696950773930"));
+                X.YA("buildNumber", null !== (t = "235912") ? t : "");
+                X.YA("builtAt", String("1696964206186"));
                 var e = window.GLOBAL_ENV.SENTRY_TAGS;
                 if (null != e && "object" == typeof e)
                     for (var r in e) X.YA(r, e[r]);
@@ -48525,4 +48533,4 @@ sentry_client:`${e.name}/${e.version}`}})}(t,n)}`
         e(128594), e(535666), e(784633), e(678991)
     }
 ]);
-//# sourceMappingURL=40f784dd1721c46ca60c.js.map
+//# sourceMappingURL=1469de9705795637c520.js.map
