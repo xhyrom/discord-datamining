@@ -22308,8 +22308,8 @@
         864030: e => {
             e.exports = {
                 container: "container-1gYwHN",
-                containerWithContent: "containerWithContent-2Yws8V container-1gYwHN",
                 clydeBadgeList: "clydeBadgeList-1CA7wP",
+                containerWithContent: "containerWithContent-2Yws8V container-1gYwHN",
                 clickable: "clickable-1knRMS",
                 profileBadge: "profileBadge-12r2Nm",
                 profileBadge24: "profileBadge24-sH1efV profileBadge-12r2Nm",
@@ -27106,4 +27106,4 @@
         }
     }
 ]);
-//# sourceMappingURL=6989dc28cf9bc886da1a.js.map
+//# sourceMappingURL=ba985a96e6f2e1a7abd5.js.map
