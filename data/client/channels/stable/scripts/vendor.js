@@ -1,4 +1,4 @@
-/*! For license information please see 1469de9705795637c520.js.LICENSE.txt */
+/*! For license information please see 660609587b38dc2af268.js.LICENSE.txt */
 (this.webpackChunkdiscord_app = this.webpackChunkdiscord_app || []).push([
     [22897], {
         151131: (t, e, r) => {
@@ -24911,6 +24911,9 @@
                 t.CLYDE_AI_PRESET_PERSONALITY_SELECTED = "clyde_ai_preset_personality_selected";
                 t.CLYDE_AI_PROFILE_UPDATE_FAILED = "clyde_ai_profile_update_failed";
                 t.CLYDE_AI_PROFILE_MODAL_RESET_BUTTON_CLICKED = "clyde_ai_profile_modal_reset_button_clicked";
+                t.CLYDE_AI_SHARE_LINK_COPIED = "clyde_ai_share_link_copied";
+                t.CLYDE_AI_SHARE_LINK_SENT = "clyde_ai_share_link_sent";
+                t.CLYDE_AI_SHARED_PROFILE_APPLIED = "clyde_ai_shared_profile_applied";
                 t.APPLE_PARTNER_IAP_REQUEST_SENT = "apple_partner_iap_request_sent";
                 t.POMELO_ERRORS = "pomelo_errors";
                 t.POMELO_EDIT_STEP_VIEWED = "pomelo_edit_step_viewed";
@@ -27436,8 +27439,7 @@
                                         }
                                         return t
                                     }()) return;
-                                (0,
-                                    o.hl)(Q, "fetch", (function(t) {
+                                (0, o.hl)(Q, "fetch", (function(t) {
                                     return function(...e) {
                                         const {
                                             method: r,
@@ -28399,7 +28401,8 @@
                 return {
                     $: e,
                     add: function(n) {
-                        if (!(void 0 === t || e.length < t)) return (0, Kt.$2)(new kt("Not adding Promise because buffer limit was reached."));
+                        if (!(void 0 === t || e.length < t)) return (0,
+                            Kt.$2)(new kt("Not adding Promise because buffer limit was reached."));
                         const a = n(); - 1 === e.indexOf(a) && e.push(a);
                         a.then((() => r(a))).then(null, (() => r(a).then(null, (() => {}))));
                         return a
@@ -28510,8 +28513,7 @@
             function zt(t, e = {}) {
                 const r = "string" == typeof e ? e : e.tunnel,
                     n = "string" != typeof e && e._metadata ? e._metadata.sdk : void 0;
-                return r || `${function(t){return`${Xt(t)}${t.projectId}/envelope/`}(t)}?${function(t,e){return(0,o._j)({sentry_key:t.publicKey,sentry_version:"7",...e&&{
-sentry_client:`${e.name}/${e.version}`}})}(t,n)}`
+                return r || `${function(t){return`${Xt(t)}${t.projectId}/envelope/`}(t)}?${function(t,e){return(0,o._j)({sentry_key:t.publicKey,sentry_version:"7",...e&&{sentry_client:`${e.name}/${e.version}`}})}(t,n)}`
             }
 
             function Zt(t, e) {
@@ -29293,7 +29295,8 @@ sentry_client:`${e.name}/${e.version}`}})}(t,n)}`
                     const a = e;
                     if ("stack" in e) i = Ae(t, e);
                     else {
-                        const e = a.name || ((0, h.TX)(a) ? "DOMError" : "DOMException"),
+                        const e = a.name || ((0,
+                                h.TX)(a) ? "DOMError" : "DOMException"),
                             o = a.message ? `${e}: ${a.message}` : e;
                         i = he(t, o, r, n);
                         (0, c.Db)(i, o)
@@ -29366,7 +29369,8 @@ sentry_client:`${e.name}/${e.version}`}})}(t,n)}`
             }) {
                 const r = (0, o.zf)(t),
                     n = e ? "promise rejection" : "exception";
-                if ((0, h.VW)(t)) return `Event \`ErrorEvent\` captured as ${n} with message \`${t.message}\``;
+                if ((0,
+                        h.VW)(t)) return `Event \`ErrorEvent\` captured as ${n} with message \`${t.message}\``;
                 if ((0, h.cO)(t)) {
                     return `Event \`${function(t){try{const e=Object.getPrototypeOf(t);return e?e.constructor.name:void 0}catch(t){}}(t)}\` (type=${t.type}) captured as ${n}`
                 }
@@ -29433,8 +29437,7 @@ sentry_client:`${e.name}/${e.version}`}})}(t,n)}`
                                 }(t) ? (0, Le.Rt)(t.target, {
                                     keyAttrs: n,
                                     maxStringLength: a
-                                }) : (0,
-                                    Le.Rt)(t, {
+                                }) : (0, Le.Rt)(t, {
                                     keyAttrs: n,
                                     maxStringLength: a
                                 })
@@ -29535,7 +29538,8 @@ sentry_client:`${e.name}/${e.version}`}})}(t,n)}`
                                 startTimestamp: e,
                                 endTimestamp: r
                             };
-                        (0, T.Gd)().addBreadcrumb({
+                        (0,
+                            T.Gd)().addBreadcrumb({
                             category: "fetch",
                             data: n,
                             level: "error",
@@ -37108,7 +37112,7 @@ sentry_client:`${e.name}/${e.version}`}})}(t,n)}`
                     dsn: "https://fa97a90475514c03a42f80cd36d147c4@sentry.io/140984",
                     autoSessionTracking: !1,
                     environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                    release: "discord_web-7052527db6c86642e31735599ee63f6e06867132",
+                    release: "discord_web-40a35e68e830abe0962bbdc6c514d84eb89a4181",
                     beforeSend: function(t) {
                         return function(t) {
                             return null != t.exception && null != t.exception.values && t.exception.values.every((function(t) {
@@ -37135,8 +37139,8 @@ sentry_client:`${e.name}/${e.version}`}})}(t,n)}`
                     denyUrls: [/recaptcha/, /mobilediscord\.com/, /betterdiscord:\/\//]
                 });
                 var t;
-                X.YA("buildNumber", null !== (t = "235912") ? t : "");
-                X.YA("builtAt", String("1696964206186"));
+                X.YA("buildNumber", null !== (t = "235965") ? t : "");
+                X.YA("builtAt", String("1696970498158"));
                 var e = window.GLOBAL_ENV.SENTRY_TAGS;
                 if (null != e && "object" == typeof e)
                     for (var r in e) X.YA(r, e[r]);
@@ -48533,4 +48537,4 @@ sentry_client:`${e.name}/${e.version}`}})}(t,n)}`
         e(128594), e(535666), e(784633), e(678991)
     }
 ]);
-//# sourceMappingURL=1469de9705795637c520.js.map
+//# sourceMappingURL=660609587b38dc2af268.js.map

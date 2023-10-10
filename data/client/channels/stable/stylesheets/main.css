@@ -23453,10 +23453,6 @@ html.disable-forced-colors * {
     bottom: 0
 }
 
-.clickable-1fwNHP {
-    cursor: pointer
-}
-
 .button-28qZiI {
     line-height: 0
 }
@@ -75729,6 +75725,11 @@ strong {
     --__header-bar-background: var(--home-background)
 }
 
+.banner-2jGL3c {
+    width: 100%;
+    height: 100%
+}
+
 .badge-22HHhz {
     background-color: var(--white-500);
     color: var(--black-500)
@@ -75758,17 +75759,6 @@ strong {
     gap: var(--spacing-16);
     outline: 2px solid transparent;
     outline-offset: -2px
-}
-
-.categoryBanner-uG9Olv {
-    position: absolute;
-    z-index: 0;
-    width: 100%;
-    height: 100%;
-    border-radius: inherit;
-    -webkit-box-sizing: border-box;
-    box-sizing: border-box;
-    padding: 2px
 }
 
 .categoryLogo-heQS7Z {
@@ -76588,8 +76578,6 @@ strong {
 
 .bannerBackground-HeU8g7 {
     position: absolute;
-    height: 100%;
-    width: 100%;
     z-index: 0
 }
 
@@ -108444,7 +108432,8 @@ strong {
     flex-direction: row;
     -webkit-box-pack: center;
     -ms-flex-pack: center;
-    justify-content: center
+    justify-content: center;
+    padding-right: 24px
 }
 
 .containerDefaultMargin-3T8Dq_ {
@@ -108490,26 +108479,12 @@ strong {
     -webkit-box-flex: 1;
     -ms-flex: 1;
     flex: 1;
-    padding: 18px 12px 18px 4px;
+    padding: 16px 4px;
     margin: auto 0
 }
 
 .title-CXxZie {
     margin-bottom: 4px
-}
-
-.buttons-2BQREU {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: column;
-    flex-direction: column;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    justify-content: center;
-    padding-right: 24px
 }
 
 .ctaButton-30CBdb {
@@ -108525,20 +108500,33 @@ strong {
 }
 
 .upsellArt-1BE-fp {
-    width: 146px;
-    min-height: 100px;
-    -ms-flex-item-align: end;
-    align-self: flex-end;
-    position: relative
+    -ms-flex-preferred-size: 150px;
+    flex-basis: 150px;
+    -ms-flex-item-align: stretch;
+    align-self: stretch;
+    position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center
 }
 
 .profileEffectsUpsellArt-1k9puR {
     position: absolute;
-    bottom: 0;
-    left: -16px;
+    left: -19px;
     -o-object-fit: contain;
     object-fit: contain;
-    width: 146px
+    width: 150px;
+    -webkit-transform: translateY(-3px);
+    transform: translateY(-3px)
+}
+
+.falloweenBackground-3tuKdZ {
+    background-image: url(/assets/6313ab1a327a3b926d115e9026d034fa.jpg);
+    background-size: cover;
+    background-position: 50%
 }
 
 .brandShine-2_xHTj {
@@ -140133,10 +140121,8 @@ input::-webkit-outer-spin-button {
 .shopPreviewBanner-1nFcMb {
     border-top-left-radius: 6px;
     border-top-right-radius: 6px;
-    width: 100%;
     min-height: 176px;
-    background-position: top;
-    background-size: cover
+    background-position: top
 }
 
 .shopPreviewBanner-1nFcMb,
@@ -153420,7 +153406,6 @@ html .invoiceCancelRow-3s2UuC {
 }
 
 .decorationBanner-3Mft4y {
-    height: 100%;
     position: absolute;
     left: 50%;
     top: 50%;
@@ -153926,7 +153911,7 @@ html .invoiceCancelRow-3s2UuC {
     position: absolute;
     top: 0;
     right: 0;
-    height: 100%
+    background-position: 100%
 }
 
 .collectiblePreviewsContainerNoChat-1IDSp_ {
@@ -176218,4 +176203,4 @@ html .invoiceCancelRow-dVOR64 {
     margin-bottom: 8px
 }
 
-/*# sourceMappingURL=40532.0e472b84826fe3130ff4.css.map*/
+/*# sourceMappingURL=40532.20975d285b3f06248cd7.css.map*/

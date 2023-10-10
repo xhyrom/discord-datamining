@@ -4105,8 +4105,7 @@
                 hidden: "hidden-2gI5HH",
                 iframe: "iframe-2GuF98",
                 pipNonInteractive: "pipNonInteractive-H1RjSN",
-                clickShield: "clickShield-3YjF1f",
-                clickable: "clickable-1fwNHP"
+                clickShield: "clickShield-3YjF1f"
             }
         },
         844203: e => {
@@ -6422,6 +6421,11 @@
                 loading: "loading-1Jf2O1"
             }
         },
+        673665: e => {
+            e.exports = {
+                banner: "banner-2jGL3c"
+            }
+        },
         731312: e => {
             e.exports = {
                 modalContentOverrides: "modalContentOverrides-a09q4S",
@@ -6475,7 +6479,6 @@
         247989: e => {
             e.exports = {
                 shopBanner: "shopBanner-PEO5bV",
-                categoryBanner: "categoryBanner-uG9Olv",
                 categoryLogo: "categoryLogo-heQS7Z",
                 discordLogo: "discordLogo-38RP1c",
                 discordIcon: "discordIcon-kJrghc",
@@ -6621,11 +6624,11 @@
                 avatar3: "avatar3-2d_OoU",
                 mainColumn: "mainColumn-3aeB42",
                 title: "title-CXxZie",
-                buttons: "buttons-2BQREU",
                 ctaButton: "ctaButton-30CBdb",
                 textBody: "textBody-1mECjS",
                 upsellArt: "upsellArt-1BE-fp",
-                profileEffectsUpsellArt: "profileEffectsUpsellArt-1k9puR"
+                profileEffectsUpsellArt: "profileEffectsUpsellArt-1k9puR",
+                falloweenBackground: "falloweenBackground-3tuKdZ"
             }
         },
         799012: e => {
@@ -27096,4 +27099,4 @@
         }
     }
 ]);
-//# sourceMappingURL=32becb8236d14801ca12.js.map
+//# sourceMappingURL=01df54b3302584c6e745.js.map
