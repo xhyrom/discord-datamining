@@ -88488,7 +88488,8 @@ strong {
     align-items: center;
     -webkit-box-pack: end;
     -ms-flex-pack: end;
-    justify-content: flex-end
+    justify-content: flex-end;
+    padding: 12px 0
 }
 
 .pageLabel-1HX0q- strong {
@@ -176263,4 +176264,4 @@ html .invoiceCancelRow-dVOR64 {
     margin-bottom: 8px
 }
 
-/*# sourceMappingURL=40532.f4cba022848b771d179f.css.map*/
+/*# sourceMappingURL=40532.26bdec55943e920fff1b.css.map*/
