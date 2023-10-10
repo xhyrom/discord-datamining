@@ -55509,6 +55509,94 @@ html .progress-2Otdc- {
     pointer-events: none
 }
 
+.answersContainer-3UoJTU {
+    -webkit-box-orient: vertical;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    gap: 8px
+}
+
+.answer-2O-3jX,
+.answersContainer-3UoJTU {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-direction: normal
+}
+
+.answer-2O-3jX {
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    background-color: var(--background-primary);
+    border-radius: 12px;
+    -webkit-box-shadow: var(--shadow-low);
+    box-shadow: var(--shadow-low);
+    cursor: pointer;
+    -webkit-box-orient: horizontal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    -webkit-transition: -webkit-box-shadow .12s ease-in;
+    transition: -webkit-box-shadow .12s ease-in;
+    transition: box-shadow .12s ease-in;
+    transition: box-shadow .12s ease-in, -webkit-box-shadow .12s ease-in
+}
+
+.selectedAnswer-VoVfDx {
+    -webkit-box-shadow: var(--shadow-high);
+    box-shadow: var(--shadow-high)
+}
+
+.label-2Iu6HQ {
+    margin-left: 12px;
+    padding-top: 12px;
+    padding-bottom: 12px
+}
+
+.avatarForSelected-SOh0il {
+    margin-left: 8px;
+    height: 20px;
+    width: 20px
+}
+
+.container-3iMGyg {
+    -webkit-box-orient: vertical;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    background-color: var(--background-secondary);
+    border: 1px solid var(--background-tertiary);
+    border-radius: 12px;
+    -webkit-box-shadow: var(--shadow-low);
+    box-shadow: var(--shadow-low);
+    gap: 12px;
+    padding: 16px;
+    width: 270px
+}
+
+.bottomBar-ro4pra,
+.container-3iMGyg {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-direction: normal
+}
+
+.bottomBar-ro4pra {
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-orient: horizontal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between
+}
+
 .invalidWrapper-wwtQW_ {
     display: block;
     position: relative;
@@ -176121,4 +176209,4 @@ html .invoiceCancelRow-dVOR64 {
     margin-bottom: 8px
 }
 
-/*# sourceMappingURL=40532.0e836edc0766d5b49466.css.map*/
+/*# sourceMappingURL=40532.c7174ed12bac42de2d37.css.map*/

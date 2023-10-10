@@ -18639,6 +18639,21 @@
                 achievementGrid: "achievementGrid-27DOpj"
             }
         },
+        442721: e => {
+            e.exports = {
+                container: "container-3iMGyg",
+                bottomBar: "bottomBar-ro4pra"
+            }
+        },
+        470366: e => {
+            e.exports = {
+                answersContainer: "answersContainer-3UoJTU",
+                answer: "answer-2O-3jX",
+                selectedAnswer: "selectedAnswer-VoVfDx",
+                label: "label-2Iu6HQ",
+                avatarForSelected: "avatarForSelected-SOh0il"
+            }
+        },
         491206: e => {
             e.exports = {
                 footer: "footer-1O3hHf",
@@ -27075,4 +27090,4 @@
         }
     }
 ]);
-//# sourceMappingURL=f390fe769baaac8670a6.js.map
+//# sourceMappingURL=07fe4839ba0483cefd1a.js.map
