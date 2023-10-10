@@ -22667,7 +22667,8 @@
         137983: e => {
             e.exports = {
                 title: "title-3CjiSS",
-                body: "body-N0onUF"
+                body: "body-N0onUF",
+                clydeMoreInfo: "clydeMoreInfo-2A8F4b"
             }
         },
         668165: e => {
@@ -27105,4 +27106,4 @@
         }
     }
 ]);
-//# sourceMappingURL=539bc70b20ca231b4f74.js.map
+//# sourceMappingURL=12e3fc1e0a60ff5ed005.js.map
