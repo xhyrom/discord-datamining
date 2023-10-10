@@ -15694,6 +15694,7 @@
   "SAFETY_HUB_CLASSIFICATION_DETAIL_ACTION_APPEAL": "\"Did we make a mistake? [Let us know]({link})\"",
   "SAFETY_HUB_CLASSIFICATION_DETAIL_POLICY_CARD_HEADER": "\"Learn about our {classificationDescription} policy.\"",
   "SAFETY_HUB_CLASSIFICATION_DETAIL_POLICY_CARD_SUBTEXT": "\"Discord's rules apply to everyone\"",
+  "SAFETY_HUB_CLASSIFICATION_DETAIL_REDIRECT": "\"Go to account standing\"",
   "SAFETY_HUB_VIOLATIONS_CONTAINER_HEADER_ACTIVE": "\"ACTIVE VIOLATIONS — {count}\"",
   "SAFETY_HUB_VIOLATIONS_CONTAINER_HEADER_EXPIRED": "\"EXPIRED VIOLATIONS — {count}\"",
   "SAFETY_HUB_VIOLATIONS_CONTAINER_SUBHEADER_ACTIVE": "\"Violations affect your account status until they expire\"",
