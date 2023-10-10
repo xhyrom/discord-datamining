@@ -6422,6 +6422,11 @@
                 loading: "loading-1Jf2O1"
             }
         },
+        673665: e => {
+            e.exports = {
+                banner: "banner-2jGL3c"
+            }
+        },
         731312: e => {
             e.exports = {
                 modalContentOverrides: "modalContentOverrides-a09q4S",
@@ -6475,7 +6480,6 @@
         247989: e => {
             e.exports = {
                 shopBanner: "shopBanner-PEO5bV",
-                categoryBanner: "categoryBanner-uG9Olv",
                 categoryLogo: "categoryLogo-heQS7Z",
                 discordLogo: "discordLogo-38RP1c",
                 discordIcon: "discordIcon-kJrghc",
@@ -27096,4 +27100,4 @@
         }
     }
 ]);
-//# sourceMappingURL=364f919f1cc20667ccae.js.map
+//# sourceMappingURL=6b5c5bb0cf70d777003c.js.map
