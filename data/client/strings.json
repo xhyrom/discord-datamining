@@ -9941,6 +9941,8 @@
   "VOICE_PANEL_INTRODUCTION_CLOSE": "\"Got it\"",
   "VOICE_PANEL_SHOW_VOICE_USERS": "\"Show Voice Users\"",
   "VOICE_PANEL_USERS_A11Y_LABEL": "\"Voice Users\"",
+  "VOICE_PANEL_USER_A11Y_DEAFENED_LABEL": "\"{username}, deafened and muted\"",
+  "VOICE_PANEL_USER_A11Y_MUTED_LABEL": "\"{username}, muted\"",
   "VOICE_PANEL_SHOW_EXTRAS": "\"Show All Users\"",
   "VOICE_PANEL_HIDE_EXTRAS": "\"Minimize\"",
   "VOICE_PANEL_USER_TOOLTIP": "\"!!{userName}!!, {status}\"",
