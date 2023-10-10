@@ -4105,8 +4105,7 @@
                 hidden: "hidden-2gI5HH",
                 iframe: "iframe-2GuF98",
                 pipNonInteractive: "pipNonInteractive-H1RjSN",
-                clickShield: "clickShield-3YjF1f",
-                clickable: "clickable-1fwNHP"
+                clickShield: "clickShield-3YjF1f"
             }
         },
         844203: e => {
@@ -27100,4 +27099,4 @@
         }
     }
 ]);
-//# sourceMappingURL=6b5c5bb0cf70d777003c.js.map
+//# sourceMappingURL=01df54b3302584c6e745.js.map
