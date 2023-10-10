@@ -13068,6 +13068,7 @@
   "MEMBER_SAFETY_TABLE_HEADER_FLAGS": "\"Signals\"",
   "MEMBER_SAFETY_TABLE_HEADER_ACTIONS": "\"\"",
   "MEMBER_SAFETY_TABLE_PAGINATION_LABEL": "\"members of **{count}**\"",
+  "MEMBER_SAFETY_TABLE_PAGINATION_ADVANCED_LABEL": "\"members **{pageRange}** of **{total}**\"",
   "MEMBER_SAFETY_TABLE_PAGINATION_TOOLTIP": "\"This only shows the most recent members - older members may not be shown (but will be soon).\"",
   "MEMBER_SAFETY_TABLE_PAGINATION_PRE_LABEL": "\"Showing\"",
   "MEMBER_SAFETY_TABLE_NEW_MEMBER_NOTICE_LABEL": "\"{count} new members since {date}\"",
