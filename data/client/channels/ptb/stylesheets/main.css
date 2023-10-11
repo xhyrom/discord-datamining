@@ -146160,6 +146160,11 @@ html .invoiceCancelRow-3s2UuC {
     width: 100%
 }
 
+.selectGuildErrorLabel-1eQ3Hq {
+    margin-top: 8px;
+    color: var(--text-danger)
+}
+
 .confirmationSlide-1q7h9r {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -176271,4 +176276,4 @@ html .invoiceCancelRow-dVOR64 {
     margin-bottom: 8px
 }
 
-/*# sourceMappingURL=40532.863ae32549ec11b56bb0.css.map*/
+/*# sourceMappingURL=40532.f5d855a628112e5b9f9c.css.map*/
