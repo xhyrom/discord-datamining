@@ -2289,6 +2289,7 @@
   "CLYDE_PROFILE_APPLY_PERSONALITY": "\"Apply Personality\"",
   "CLYDE_PROFILE_APPLY_PERSONALITY_SUBTITLE": "\"This will override the personality for @Clyde in the server you select.\"",
   "CLYDE_PROFILE_APPLY_TO_GUILD": "\"Apply to Server\"",
+  "CLYDE_PROFILE_APPLY_TO_GUILD_CAPTION": "\"Only servers in this Clyde Custom Profile Beta will show up in this list\"",
   "CLYDE_PROFILE_SELECT_GUILD": "\"Select server\"",
   "CLYDE_PROFILE_SELECT_GUILD_ERROR": "\"You've run into a feature that's in Beta, sorry but none of your servers are part of the Beta.\"",
   "CLYDE_PROFILE_APPLIED_TO": "\"Has been applied to\"",
