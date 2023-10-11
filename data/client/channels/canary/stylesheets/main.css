@@ -23454,6 +23454,16 @@ html.disable-forced-colors * {
     bottom: 0
 }
 
+.clickable-1fwNHP {
+    cursor: pointer
+}
+
+.fillParent-3nJ5Jf {
+    width: 100%;
+    height: 100%;
+    display: block
+}
+
 .button-28qZiI {
     line-height: 0
 }
@@ -176261,4 +176271,4 @@ html .invoiceCancelRow-dVOR64 {
     margin-bottom: 8px
 }
 
-/*# sourceMappingURL=40532.27ca15dbe0a05a4b5019.css.map*/
+/*# sourceMappingURL=40532.863ae32549ec11b56bb0.css.map*/
