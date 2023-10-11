@@ -2151,6 +2151,7 @@
   "CLYDE_SETTINGS_AVATAR_HEADER": "\"Avatar\"",
   "CLYDE_SETTINGS_BANNER_HEADER": "\"Profile Banner\"",
   "CLYDE_PERSONALITY_BADGE_TOOLTIP": "\"Clyde has a custom backstory in this server\"",
+  "CLYDE_PERSONALITY_TOO_SHORT": "\"This personality is a bit short. The best prompts are at least 200 characters.\"",
   "NONE": "\"None\"",
   "INTEGRATION_ADDED_USER": "\"Added by !!{user}!!\"",
   "INTEGRATION_ADDED_DATE": "\"Added on {timestamp, date, medium}\"",
