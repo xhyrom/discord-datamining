@@ -4572,6 +4572,9 @@
   },
   "POLL_ANSWERS": {
     "url": "/channels/:param/polls/:param/answers",
-    "allowed_methods": null
+    "allowed_methods": [
+      "OPTIONS",
+      "PUT"
+    ]
   }
 }
