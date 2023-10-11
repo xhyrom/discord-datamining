@@ -3268,7 +3268,10 @@
   },
   "SUBMIT_UNAUTHENTICATED_REPORT_MENU": {
     "url": "/reporting/unauthenticated/:param",
-    "allowed_methods": null
+    "allowed_methods": [
+      "OPTIONS",
+      "POST"
+    ]
   },
   "STAGE_INSTANCES": {
     "url": "/stage-instances",
