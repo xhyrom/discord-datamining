@@ -19,7 +19,7 @@
 <p>Edit your favorite clips and share epic moments with friends!</p>
 <h1 id="h_01H8CG7RQQ5DX463DFEV8YTPV8">How to Enable Clips</h1>
 <h3 id="docs-internal-guid-d964d01a-7fff-f263-a843-bf8a549a2a93"><span style="color: #434343;" data-darkreader-inline-color="">Clips is currently available in Early Access for Nitro members. </span></h3>
-<h3>
+<h3 id="h_01HCG6PJ08PS1HE3YQJX0V308W">
     <span style="color: #434343;" data-darkreader-inline-color="">Some users may already have Clips <a href="#h_01H919PQDVD16WNABXRR0JERAW" target="_self">enabled by default</a> if their system has high end hardware. <br></span><span style="color: #434343;" data-darkreader-inline-color="">Having Clips enabled may impact your game performance if you have lower end hardware. If you experience any issues with your game, please try disabling Clips.</span>
 </h3>
 <p>Before being able to create Clips, the feature first needs to be enabled. </p>
@@ -46,7 +46,8 @@
 <p>When you clip an epic moment, it’s saved directly on your computer! You can change the storage location at any time by tapping on the current location and selecting a new storage option.</p>
 <p class="wysiwyg-text-align-center"><img src="https://support.discord.com/hc/article_attachments/16920806158743" alt="storage_location.png"></p>
 <h2 id="h_01H919PQDVD16WNABXRR0JERAW">Minimum System Requirements</h2>
-<p>Minimum system requirements for Clips on a Windows machine is either Nvidia GTX 980s/1600s, all Nvidia RTX models, or AMD Radeon RX 500. For Mac machines, a MacBook 2017 or later.</p>
+<h3 id="h_01HCG6PWF0GZY5DQ227E5KT0XH"><span style="color: #434343;" data-darkreader-inline-color="">Early Access to Clips is only available for Windows. This feature is currently not supported on Mac, mobile, or console.</span></h3>
+<p>Minimum system requirements for Clips on a Windows machine is either Nvidia GTX 980s/1600s, all Nvidia RTX models, or AMD Radeon RX 500. </p>
 <p>Users may have Clips enabled by default if their system has either an Nvidia RTX 2000 series or greater, or a Radeon RX5700 series or greater.</p>
 <h1 id="h_01H8CG85XSK58RRBA1QA03BT6R">How to Create Clips</h1>
 <h3 id="h_01HBS4S67R6F4KRT65HB1ZGBH6"><span style="color: #434343;" data-darkreader-inline-color="">When streaming, make sure you’re streaming through Application and not just your screen. This ensures that game audio is also captured.</span></h3>
