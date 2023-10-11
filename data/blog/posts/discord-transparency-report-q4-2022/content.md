@@ -1,5 +1,5 @@
 <div class="w-layout-grid grid-branding new">
-    <div id="w-node-e3246c00-6cef-7ff7-987c-bc455633a33a-52a14bce" class="transparenty-content">
+    <div id="w-node-e3246c00-6cef-7ff7-987c-bc455633a33a-d9fcf1f8" class="transparenty-content">
         <h1 class="new-h1 font-white safety grey-font">Transparency Reports</h1>
         <div class="p-400-16-white grey-f6">Transparency is one of our core values of safety. This Transparency Center is our commitment to provide insight into the enormous effort that goes into keeping a safe place for all.</div>
         <div class="paddong-16px"></div>
@@ -46,7 +46,7 @@
             </div>
         </div>
     </div>
-    <div id="w-node-df543255-4e18-710e-4490-4a65bbfd3195-52a14bce" class="safety-block-button"><a id="w-node-e130421b-60a9-100e-8bf1-f8f9ea9683b6-52a14bce" href="https://discord.com/tags/transparency-reports" class="new-dark-button so-large w-inline-block">
+    <div id="w-node-df543255-4e18-710e-4490-4a65bbfd3195-d9fcf1f8" class="safety-block-button"><a id="w-node-e130421b-60a9-100e-8bf1-f8f9ea9683b6-d9fcf1f8" href="https://discord.com/tags/transparency-reports" class="new-dark-button so-large w-inline-block">
             <div class="button-text-big">View archived reports</div>
         </a></div>
 </div>
