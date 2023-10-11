@@ -18651,6 +18651,7 @@
         442721: e => {
             e.exports = {
                 container: "container-3iMGyg",
+                hasVoted: "hasVoted-_nJTyJ",
                 bottomBar: "bottomBar-ro4pra"
             }
         },
@@ -18658,9 +18659,14 @@
             e.exports = {
                 answersContainer: "answersContainer-3UoJTU",
                 answer: "answer-2O-3jX",
+                answerContent: "answerContent-1nElXU",
                 selectedAnswer: "selectedAnswer-VoVfDx",
                 label: "label-2Iu6HQ",
-                avatarForSelected: "avatarForSelected-SOh0il"
+                avatarForSelected: "avatarForSelected-SOh0il",
+                hasVoted: "hasVoted-39_Fso",
+                didSelfVote: "didSelfVote-EBW898",
+                votePercentageBar: "votePercentageBar-2knasZ",
+                votesData: "votesData-2PwvhU"
             }
         },
         491206: e => {
@@ -22302,8 +22308,8 @@
         864030: e => {
             e.exports = {
                 container: "container-1gYwHN",
-                containerWithContent: "containerWithContent-2Yws8V container-1gYwHN",
                 clydeBadgeList: "clydeBadgeList-1CA7wP",
+                containerWithContent: "containerWithContent-2Yws8V container-1gYwHN",
                 clickable: "clickable-1knRMS",
                 profileBadge: "profileBadge-12r2Nm",
                 profileBadge24: "profileBadge24-sH1efV profileBadge-12r2Nm",
@@ -22661,7 +22667,8 @@
         137983: e => {
             e.exports = {
                 title: "title-3CjiSS",
-                body: "body-N0onUF"
+                body: "body-N0onUF",
+                clydeMoreInfo: "clydeMoreInfo-2A8F4b"
             }
         },
         668165: e => {
@@ -27099,4 +27106,4 @@
         }
     }
 ]);
-//# sourceMappingURL=01df54b3302584c6e745.js.map
+//# sourceMappingURL=d193dc94b3233869b6d8.js.map

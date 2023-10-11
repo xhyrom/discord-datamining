@@ -14700,6 +14700,10 @@ html.disable-forced-colors * {
     line-height: 18px
 }
 
+.clydeMoreInfo-2A8F4b {
+    padding-bottom: 12px
+}
+
 .button-32Jo2d {
     position: relative;
     font-weight: 600;
@@ -16867,10 +16871,7 @@ html.disable-forced-colors * {
 }
 
 .audioElement-2sSZbc {
-    position: absolute;
-    display: block;
-    width: 0;
-    height: 0
+    display: none
 }
 
 .volumeButton-CSiHXl {
@@ -22505,12 +22506,12 @@ html.disable-forced-colors * {
     min-height: 22px
 }
 
-.containerWithContent-2Yws8V {
-    padding: 4px
+.container-1gYwHN.clydeBadgeList-1CA7wP {
+    background-color: transparent
 }
 
-.clydeBadgeList-1CA7wP {
-    background-color: "transparent"
+.containerWithContent-2Yws8V {
+    padding: 4px
 }
 
 .clickable-1knRMS {
@@ -55510,9 +55511,6 @@ html .progress-2Otdc- {
 }
 
 .answersContainer-3UoJTU {
-    -webkit-box-orient: vertical;
-    -ms-flex-direction: column;
-    flex-direction: column;
     gap: 8px
 }
 
@@ -55521,21 +55519,23 @@ html .progress-2Otdc- {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-direction: normal
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column
 }
 
 .answer-2O-3jX {
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
+    -webkit-box-align: stretch;
+    -ms-flex-align: stretch;
+    align-items: stretch;
     background-color: var(--background-primary);
     border-radius: 12px;
     -webkit-box-shadow: var(--shadow-low);
     box-shadow: var(--shadow-low);
+    color: var(--text-normal);
     cursor: pointer;
-    -webkit-box-orient: horizontal;
-    -ms-flex-direction: row;
-    flex-direction: row;
+    position: relative;
     -webkit-user-select: none;
     -moz-user-select: none;
     -ms-user-select: none;
@@ -55544,6 +55544,20 @@ html .progress-2Otdc- {
     transition: -webkit-box-shadow .12s ease-in;
     transition: box-shadow .12s ease-in;
     transition: box-shadow .12s ease-in, -webkit-box-shadow .12s ease-in
+}
+
+.answerContent-1nElXU {
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row
 }
 
 .selectedAnswer-VoVfDx {
@@ -55563,8 +55577,51 @@ html .progress-2Otdc- {
     width: 20px
 }
 
-.container-3iMGyg {
+.hasVoted-39_Fso {
+    background-color: #c0eed4;
+    border: 1px solid var(--text-positive);
+    color: var(--background-primary)
+}
+
+.hasVoted-39_Fso.didSelfVote-EBW898 {
+    border: 2px solid var(--text-positive)
+}
+
+.hasVoted-39_Fso:not(.didSelfVote-EBW898) {
+    opacity: .5
+}
+
+.votePercentageBar-2knasZ {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    background-color: var(--background-secondary);
+    border-radius: 10px
+}
+
+.hasVoted-39_Fso>.votePercentageBar-2knasZ {
+    background-color: var(--text-positive)
+}
+
+.votesData-2PwvhU {
+    margin-left: auto;
+    margin-right: 12px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
     -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column
+}
+
+.container-3iMGyg {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
     -ms-flex-direction: column;
     flex-direction: column;
     background-color: var(--background-secondary);
@@ -55577,19 +55634,19 @@ html .progress-2Otdc- {
     width: 270px
 }
 
-.bottomBar-ro4pra,
-.container-3iMGyg {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-direction: normal
+.hasVoted-_nJTyJ {
+    border-color: var(--text-positive)
 }
 
 .bottomBar-ro4pra {
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
     -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
     -ms-flex-direction: row;
     flex-direction: row;
     -webkit-box-pack: justify;
@@ -88428,7 +88485,8 @@ strong {
     align-items: center;
     -webkit-box-pack: end;
     -ms-flex-pack: end;
-    justify-content: flex-end
+    justify-content: flex-end;
+    padding: 12px 0
 }
 
 .pageLabel-1HX0q- strong {
@@ -176203,4 +176261,4 @@ html .invoiceCancelRow-dVOR64 {
     margin-bottom: 8px
 }
 
-/*# sourceMappingURL=40532.20975d285b3f06248cd7.css.map*/
+/*# sourceMappingURL=40532.27ca15dbe0a05a4b5019.css.map*/
