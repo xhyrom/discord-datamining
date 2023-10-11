@@ -1,0 +1,21 @@
+{
+  "data": {
+    "kind": "user",
+    "id": "2023-10_dcf_holdout",
+    "label": "DCF Holdout",
+    "description": [
+      "Not Eligible",
+      "Control Bucket",
+      "Treatment 1: Users will only see DCs that bypass the holdout"
+    ],
+    "hash": 2009146437,
+    "buckets": [
+      -1,
+      0,
+      1
+    ],
+    "config_keys": [
+      "enabled"
+    ]
+  }
+}
