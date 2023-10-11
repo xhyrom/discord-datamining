@@ -6042,27 +6042,6 @@
                 fadeOut: "fadeOut-3CmRbO"
             }
         },
-        895107: e => {
-            e.exports = {
-                clipItem: "clipItem-3fKTW2",
-                buttonContainer: "buttonContainer-2DnFpI",
-                newIcon: "newIcon-3qyXQQ",
-                clipBadges: "clipBadges-3SqEsf",
-                clipBadge: "clipBadge-eRKwdM",
-                clipNewBadge: "clipNewBadge-c99euT clipBadge-eRKwdM",
-                clipDurationBadge: "clipDurationBadge-2GUmDx clipBadge-eRKwdM",
-                clipDurationEditIcon: "clipDurationEditIcon-3SqknF",
-                clipThumb: "clipThumb-1PCUzz",
-                clipThumbContainer: "clipThumbContainer-3aFZ2y",
-                clipFooter: "clipFooter-34yjBL",
-                clipMetadata: "clipMetadata-3jhdkN",
-                clipName: "clipName-Q83UIm",
-                clipTitle: "clipTitle-zkDBCw",
-                usersAndDelete: "usersAndDelete-2nIrRW",
-                button: "button-1-uzof",
-                miniIcon: "miniIcon-2oK0u_"
-            }
-        },
         933568: e => {
             e.exports = {
                 mediumBreakPoint: "920px",
@@ -6221,6 +6200,27 @@
                 title: "title-_uSBQv",
                 userCountPill: "userCountPill-2DVO59",
                 userCountIcon: "userCountIcon-tRq2vz"
+            }
+        },
+        359064: e => {
+            e.exports = {
+                clipItem: "clipItem-3C35Ec",
+                buttonContainer: "buttonContainer-xgRHlG",
+                newIcon: "newIcon-RHqgRF",
+                clipBadges: "clipBadges-pgPUWI",
+                clipBadge: "clipBadge-3UcfAK",
+                clipNewBadge: "clipNewBadge-2wtTbP clipBadge-3UcfAK",
+                clipDurationBadge: "clipDurationBadge-WP8jOr clipBadge-3UcfAK",
+                clipDurationEditIcon: "clipDurationEditIcon-3KKvNy",
+                clipThumb: "clipThumb-2dUNyk",
+                clipThumbContainer: "clipThumbContainer-orlvSg",
+                clipFooter: "clipFooter-2cmlwX",
+                clipMetadata: "clipMetadata-3VIMh-",
+                clipName: "clipName-19oBTM",
+                clipTitle: "clipTitle-3T5TWz",
+                usersAndDelete: "usersAndDelete-vhdJvn",
+                button: "button-2yQUTy",
+                miniIcon: "miniIcon-O9W7vb"
             }
         },
         241657: e => {
@@ -27124,4 +27124,4 @@
         }
     }
 ]);
-//# sourceMappingURL=f4a25054ae4ac3b7af80.js.map
+//# sourceMappingURL=4efa8761ce370c563248.js.map
