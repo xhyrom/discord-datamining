@@ -100540,7 +100540,7 @@ strong {
     -ms-flex-direction: row;
     flex-direction: row;
     padding: 8px;
-    background-color: var(--background-primary);
+    background-color: var(--bg-overlay-1, var(--background-primary));
     border-bottom: 1px solid var(--background-modifier-accent);
     -webkit-box-align: center;
     -ms-flex-align: center;
@@ -176393,4 +176393,4 @@ html .invoiceCancelRow-dVOR64 {
     margin-bottom: 8px
 }
 
-/*# sourceMappingURL=40532.bc56cc398b6bb0587e43.css.map*/
+/*# sourceMappingURL=40532.a0681c24c344bdd9a636.css.map*/
