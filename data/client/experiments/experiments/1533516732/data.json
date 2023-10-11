@@ -1,0 +1,21 @@
+{
+  "data": {
+    "kind": "user",
+    "id": "2023-08_self_mod_stranger_danger_teens",
+    "label": "Stranger Danger Teens",
+    "description": [
+      "Not Eligible",
+      "Control Bucket",
+      "Treatment 1: Enable stranger danger for teens"
+    ],
+    "hash": 1533516732,
+    "buckets": [
+      -1,
+      0,
+      1
+    ],
+    "config_keys": [
+      "enabled"
+    ]
+  }
+}
