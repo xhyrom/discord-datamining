@@ -139389,6 +139389,11 @@ input::-webkit-outer-spin-button {
     padding-bottom: 8px
 }
 
+.personalityTip-16c-qj {
+    padding-top: 2px;
+    color: var(--text-warning)
+}
+
 .fakeActivityTitle-3-_pB_ {
     font-weight: 700
 }
@@ -176398,4 +176403,4 @@ html .invoiceCancelRow-dVOR64 {
     margin-bottom: 8px
 }
 
-/*# sourceMappingURL=40532.8be94438f3654d6d85ac.css.map*/
+/*# sourceMappingURL=40532.a72483159f0dcd57ce17.css.map*/

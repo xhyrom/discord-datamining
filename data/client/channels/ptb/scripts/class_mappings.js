@@ -6399,7 +6399,8 @@
         587629: e => {
             e.exports = {
                 errorBlock: "errorBlock-9lvTiZ",
-                description: "description-zNcVcn"
+                description: "description-zNcVcn",
+                personalityTip: "personalityTip-16c-qj"
             }
         },
         462128: e => {
@@ -27125,4 +27126,4 @@
         }
     }
 ]);
-//# sourceMappingURL=c4413ca3bb03cc01fa7e.js.map
+//# sourceMappingURL=c6dc8e85b227e51c67d2.js.map
