@@ -146149,11 +146149,14 @@ html .invoiceCancelRow-3s2UuC {
 }
 
 .serverSelectTitle-AQrb3T {
-    margin-bottom: 8px
+    margin-bottom: 8px;
+    color: var(--header-primary)
 }
 
 .serverSelectDescription-Ij3a7x {
-    margin-bottom: 24px
+    text-align: center;
+    margin-bottom: 24px;
+    color: var(--header-secondary)
 }
 
 .serverSelectField-1A-Gi1 {
@@ -176276,4 +176279,4 @@ html .invoiceCancelRow-dVOR64 {
     margin-bottom: 8px
 }
 
-/*# sourceMappingURL=40532.f5d855a628112e5b9f9c.css.map*/
+/*# sourceMappingURL=40532.c3dce8cfcf8134420a9f.css.map*/
