@@ -3252,6 +3252,7 @@
   "USER_SETTINGS_APPEARANCE_CHANNEL_LIST_LAYOUT_HYBRID": "\"Hybrid\"",
   "USER_SETTINGS_APPEARANCE_CHANNEL_LIST_PREVIEWS": "\"Message Previews\"",
   "USER_SETTINGS_APPEARANCE_CHANNEL_LIST_PREVIEWS_DEFAULT": "\"Default\"",
+  "USER_SETTINGS_APPEARANCE_CHANNEL_LIST_PREVIEWS_DEFAULT_SUBLABEL": "\"Based on the Channel List layout setting. If Cozy, all channels show message previews. If Compact, only unread channels show message previews.\"",
   "USER_SETTINGS_APPEARANCE_CHANNEL_LIST_PREVIEWS_ALL": "\"All channels\"",
   "USER_SETTINGS_APPEARANCE_CHANNEL_LIST_PREVIEWS_UNREADS": "\"Unread channels only\"",
   "USER_SETTINGS_APPEARANCE_CHANNEL_LIST_PREVIEWS_NONE": "\"None\"",
