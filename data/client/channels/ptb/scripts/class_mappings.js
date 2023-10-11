@@ -6345,6 +6345,7 @@
                 selectGuildErrorLabel: "selectGuildErrorLabel-1eQ3Hq",
                 confirmationSlide: "confirmationSlide-1q7h9r",
                 appliedToLabel: "appliedToLabel-2Am_xm",
+                applyToCaption: "applyToCaption-3RS8oz",
                 guildButton: "guildButton-2lrOPG",
                 guildButtonContainer: "guildButtonContainer-2aTc66",
                 closeButton: "closeButton-38GojK"
@@ -27124,4 +27125,4 @@
         }
     }
 ]);
-//# sourceMappingURL=633decb1bac2cca42c18.js.map
+//# sourceMappingURL=c4413ca3bb03cc01fa7e.js.map

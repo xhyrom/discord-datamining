@@ -146270,6 +146270,9 @@ html .invoiceCancelRow-3s2UuC {
 
 .characterContainer-1vhKFx {
     height: 100%;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
     padding: 24px;
     background-color: var(--background-tertiary)
 }
@@ -146285,10 +146288,7 @@ html .invoiceCancelRow-3s2UuC {
     flex-direction: column;
     -webkit-box-pack: center;
     -ms-flex-pack: center;
-    justify-content: center;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center
+    justify-content: center
 }
 
 .serverSelectContainer-2rDnht {
@@ -146338,7 +146338,6 @@ html .invoiceCancelRow-3s2UuC {
 }
 
 .serverSelectDescription-Ij3a7x {
-    text-align: center;
     margin-bottom: 24px;
     color: var(--header-secondary)
 }
@@ -146375,6 +146374,12 @@ html .invoiceCancelRow-3s2UuC {
 .appliedToLabel-2Am_xm {
     margin-top: 12px;
     margin-bottom: 8px
+}
+
+.applyToCaption-3RS8oz {
+    margin-top: -8px;
+    margin-bottom: 12px;
+    color: var(--text-muted)
 }
 
 .guildButton-2lrOPG {
@@ -176393,4 +176398,4 @@ html .invoiceCancelRow-dVOR64 {
     margin-bottom: 8px
 }
 
-/*# sourceMappingURL=40532.8f7a273c173edca3f06c.css.map*/
+/*# sourceMappingURL=40532.8be94438f3654d6d85ac.css.map*/
