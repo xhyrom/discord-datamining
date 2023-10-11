@@ -52038,16 +52038,19 @@ input[type=checked]:focus-visible+.label-3TDpbn {
 }
 
 .personalityBadge-pYraBr {
-    display: inline-block;
     overflow: hidden;
     -o-object-fit: contain;
     object-fit: contain;
-    vertical-align: top;
     position: relative;
-    height: 1rem;
-    width: 1rem;
     cursor: pointer;
-    text-indent: 0
+    text-indent: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    margin-right: 4px
 }
 
 .tooltip-2pLjoh {
@@ -176390,4 +176393,4 @@ html .invoiceCancelRow-dVOR64 {
     margin-bottom: 8px
 }
 
-/*# sourceMappingURL=40532.6145e4202c8fe53fa824.css.map*/
+/*# sourceMappingURL=40532.d38518af55b953f4ddc8.css.map*/
