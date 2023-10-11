@@ -154331,7 +154331,7 @@ html .invoiceCancelRow-3s2UuC {
     margin-bottom: 4px
 }
 
-.clipItem-3fKTW2 {
+.clipItem-3C35Ec {
     border-radius: var(--radius-sm);
     cursor: pointer;
     overflow: hidden;
@@ -154341,32 +154341,32 @@ html .invoiceCancelRow-3s2UuC {
     filter: var(--shadow-low-filter)
 }
 
-.clipItem-3fKTW2:hover {
+.clipItem-3C35Ec:hover {
     background: var(--background-modifier-selected);
     -webkit-filter: var(--shadow-low-hover-filter);
     filter: var(--shadow-low-hover-filter)
 }
 
-.clipItem-3fKTW2:hover .buttonContainer-2DnFpI {
+.clipItem-3C35Ec:hover .buttonContainer-xgRHlG {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex
 }
 
-.newIcon-3qyXQQ {
+.newIcon-RHqgRF {
     width: 24px;
     height: 24px
 }
 
-.clipBadges-3SqEsf {
+.clipBadges-pgPUWI {
     position: absolute;
     gap: 8px;
     bottom: 8px;
     left: 8px
 }
 
-.clipBadge-eRKwdM,
-.clipBadges-3SqEsf {
+.clipBadge-3UcfAK,
+.clipBadges-pgPUWI {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -154376,7 +154376,7 @@ html .invoiceCancelRow-3s2UuC {
     flex-direction: row
 }
 
-.clipBadge-eRKwdM {
+.clipBadge-3UcfAK {
     height: 28px;
     padding: 2px 10px;
     border-radius: var(--radius-xs);
@@ -154385,23 +154385,23 @@ html .invoiceCancelRow-3s2UuC {
     align-items: center
 }
 
-.clipNewBadge-c99euT {
+.clipNewBadge-2wtTbP {
     background: var(--brand-500);
     gap: 4px
 }
 
-.clipDurationBadge-2GUmDx {
+.clipDurationBadge-WP8jOr {
     background: var(--black-500);
     gap: 4px
 }
 
-.clipDurationEditIcon-3SqknF {
+.clipDurationEditIcon-3KKvNy {
     width: 16px;
     height: 16px;
     color: var(--white-500)
 }
 
-.clipThumb-1PCUzz {
+.clipThumb-2dUNyk {
     border-radius: var(--radius-sm);
     position: absolute;
     background-color: var(--background-tertiary);
@@ -154413,32 +154413,32 @@ html .invoiceCancelRow-3s2UuC {
     bottom: 0
 }
 
-.clipThumbContainer-3aFZ2y {
+.clipThumbContainer-orlvSg {
     position: relative
 }
 
-.clipFooter-34yjBL {
+.clipFooter-2cmlwX {
     padding: 8px
 }
 
-.clipMetadata-3jhdkN,
-.clipName-Q83UIm,
-.clipTitle-zkDBCw {
+.clipMetadata-3VIMh-,
+.clipName-19oBTM,
+.clipTitle-3T5TWz {
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis
 }
 
-.clipMetadata-3jhdkN,
-.clipName-Q83UIm {
+.clipMetadata-3VIMh-,
+.clipName-19oBTM {
     margin-top: 4px
 }
 
-.clipMetadata-3jhdkN {
+.clipMetadata-3VIMh- {
     opacity: .5
 }
 
-.usersAndDelete-2nIrRW {
+.usersAndDelete-vhdJvn {
     margin-top: 20px;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -154452,20 +154452,20 @@ html .invoiceCancelRow-3s2UuC {
     align-items: flex-end
 }
 
-.buttonContainer-2DnFpI,
-.usersAndDelete-2nIrRW {
+.buttonContainer-xgRHlG,
+.usersAndDelete-vhdJvn {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
     -ms-flex-direction: row;
     flex-direction: row
 }
 
-.buttonContainer-2DnFpI {
+.buttonContainer-xgRHlG {
     display: none;
     gap: 8px
 }
 
-.button-1-uzof {
+.button-2yQUTy {
     width: 40px;
     height: 40px;
     padding: 10px;
@@ -154483,11 +154483,11 @@ html .invoiceCancelRow-3s2UuC {
     line-height: 0
 }
 
-.button-1-uzof:hover {
+.button-2yQUTy:hover {
     background-color: var(--background-secondary-alt)
 }
 
-.miniIcon-2oK0u_ {
+.miniIcon-O9W7vb {
     width: 20px;
     height: 20px
 }
@@ -176393,4 +176393,4 @@ html .invoiceCancelRow-dVOR64 {
     margin-bottom: 8px
 }
 
-/*# sourceMappingURL=40532.598b5466e05e20eb9b3f.css.map*/
+/*# sourceMappingURL=40532.bc56cc398b6bb0587e43.css.map*/
