@@ -4792,6 +4792,7 @@
   "FRIENDS_SHARE_SHEET_SCANNING_TEXT_BOTTOM": "\"Scanning the airwaves for friends. Make sure your friends are on this page and scanning too.\"",
   "FRIENDS_SHARE_TABBAR_TITLE": "\"Add me on {url} so we can talk! My username is {username}.\"",
   "FRIENDS_ROW_ACTION_BUTTON_ACCESSIBILITY_LABEL_CANCEL_WITH_NAME": "\"Cancel Friend Request for {name}\"",
+  "FRIENDS_ROW_MUTUAL_FRIENDS": "\"{count, plural, =1 {1 mutual friend} other {{count} mutual friends}}\"",
   "FRIENDS_ROW_ACTION_BUTTON_ACCESSIBILITY_LABEL_DECLINE_WITH_NAME": "\"Ignore Invitation from {name}\"",
   "FRIENDS_ROW_ACTION_BUTTON_ACCESSIBILITY_LABEL_ACCEPT_WITH_NAME": "\"Accept Invitation from {name}\"",
   "FRIENDS_ROW_ACTION_BUTTON_ACCESSIBILITY_LABEL_MESSAGE_WITH_NAME": "\"Send a DM to {name}\"",
