@@ -20063,6 +20063,12 @@
                 giftRecipientTag: "giftRecipientTag-2-wRC-"
             }
         },
+        439460: e => {
+            e.exports = {
+                icon: "icon-1AmDFr",
+                connectionInstructions: "connectionInstructions-RMhd6Y"
+            }
+        },
         787257: e => {
             e.exports = {
                 back: "back-Uv5ziB"
@@ -27109,4 +27115,4 @@
         }
     }
 ]);
-//# sourceMappingURL=ae2bbc9ccf0c6df4f4e3.js.map
+//# sourceMappingURL=5e91559cb980677f640c.js.map
