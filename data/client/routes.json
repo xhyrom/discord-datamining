@@ -3257,7 +3257,11 @@
   },
   "GET_UNAUTHENTICATED_REPORT_MENU": {
     "url": "/reporting/unauthenticated/menu/:param",
-    "allowed_methods": null
+    "allowed_methods": [
+      "GET",
+      "HEAD",
+      "OPTIONS"
+    ]
   },
   "SUBMIT_REPORT_MENU": {
     "url": "/reporting/:param",
