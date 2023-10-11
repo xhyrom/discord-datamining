@@ -16871,10 +16871,7 @@ html.disable-forced-colors * {
 }
 
 .audioElement-2sSZbc {
-    position: absolute;
-    display: block;
-    width: 0;
-    height: 0
+    display: none
 }
 
 .volumeButton-CSiHXl {
@@ -176264,4 +176261,4 @@ html .invoiceCancelRow-dVOR64 {
     margin-bottom: 8px
 }
 
-/*# sourceMappingURL=40532.9cc9a03a9bd57263561c.css.map*/
+/*# sourceMappingURL=40532.27ca15dbe0a05a4b5019.css.map*/
