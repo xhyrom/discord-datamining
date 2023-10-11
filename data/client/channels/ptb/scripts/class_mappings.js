@@ -20933,6 +20933,15 @@
                 alt: "alt-3_Cl_W"
             }
         },
+        162630: e => {
+            e.exports = {
+                strangerDangerBanner: "strangerDangerBanner-2wxVfR",
+                safetyShieldIcon: "safetyShieldIcon-1zLay_",
+                buttons: "buttons-LfwThR",
+                shieldAndHeading: "shieldAndHeading-21F2Rf",
+                closeButton: "closeButton-1VfP30"
+            }
+        },
         103893: e => {
             e.exports = {
                 sharedCanvas: "sharedCanvas-1l4N32"
@@ -27115,4 +27124,4 @@
         }
     }
 ]);
-//# sourceMappingURL=5e91559cb980677f640c.js.map
+//# sourceMappingURL=80624f2e939e4f9e85ee.js.map
