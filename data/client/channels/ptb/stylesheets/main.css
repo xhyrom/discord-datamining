@@ -146236,6 +146236,19 @@ html .invoiceCancelRow-3s2UuC {
     background-color: var(--background-modifier-accent)
 }
 
+.container-2bxP_c {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    padding: 4px 8px;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    gap: 8px;
+    border-radius: 16px;
+    background-color: var(--background-secondary)
+}
+
 .modal-14bmJQ {
     border-radius: 5px;
     overflow: hidden
@@ -146406,6 +146419,10 @@ html .invoiceCancelRow-3s2UuC {
 
 .closeButton-38GojK {
     color: var(--text-muted)
+}
+
+.lastEditedByContainer-1q82y0 {
+    margin-top: 8px
 }
 
 .modal-fu-JnI {
@@ -176403,4 +176420,4 @@ html .invoiceCancelRow-dVOR64 {
     margin-bottom: 8px
 }
 
-/*# sourceMappingURL=40532.a72483159f0dcd57ce17.css.map*/
+/*# sourceMappingURL=40532.4c71d6868b7f88818302.css.map*/
