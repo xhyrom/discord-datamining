@@ -11376,14 +11376,16 @@
       "label": "Premium Likelihood Discount Offers",
       "description": [
         "Not Eligible",
-        "Control Bucket",
-        "Treatment 1: Premium likelihood discount enabled for user."
+        "Treatment 0: Control group. Users will only get trial offers",
+        "Treatment 1: Premium likelihood discount enabled for user.",
+        "Treatment 2: Holdout. No trial or discount offers"
       ],
       "hash": 2539775500,
       "buckets": [
         -1,
         0,
-        1
+        1,
+        2
       ],
       "config_keys": [
         "enabled"
