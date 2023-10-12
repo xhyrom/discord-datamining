@@ -2297,6 +2297,7 @@
   "CLYDE_PROFILE_SERVER_CAPTION": "\"{serverName} Server\"",
   "CLYDE_PROFILE_ERROR_MESSAGE_GENERIC": "\"An error has occured. Please try again soon.\"",
   "CLYDE_PROFILE_SHARE_HEADER": "\"Share Personality\"",
+  "CLYDE_LAST_EDITED_BY_TAG": "\"Last edited by {username}\"",
   "CLYDE_USER_RATING_THANKS_1": "\"Clyde's neurons are buzzing 🧠\"",
   "CLYDE_USER_RATING_THANKS_2": "\"Your feedback is the secret sauce 🌟\"",
   "CLYDE_USER_RATING_THANKS_3": "\"You're helping Clyde evolve one byte at a time 🙌\"",
