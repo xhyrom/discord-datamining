@@ -4261,6 +4261,7 @@
   "A11Y_ANDROID_POPUP_WINDOW_ANNOUNCEMENT": "\"Popup Window\"",
   "A11Y_IOS_DISMISS_CONTEXT_MENU_LABEL": "\"Dismiss context menu\"",
   "A11Y_ANDROID_DISMISS_CONTEXT_MENU_LABEL": "\"Dismiss popup window\"",
+  "A11Y_DISMISS_ALERT_MODAL": "\"Dismiss alert\"",
   "A11Y_NAVIGATE_TO_SETTINGS": "\"Navigate to settings\"",
   "FORM_LABEL_AVATAR_SIZE": "\"Avatar Size\"",
   "AVATAR_SIZE_OPTION_SMALL": "\"Small\"",
