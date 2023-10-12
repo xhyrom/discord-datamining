@@ -2284,7 +2284,8 @@
         "hasTabUI",
         "hasTwoButtonEntryPoint",
         "hasFreeBursts",
-        "hasUnlimited"
+        "hasUnlimited",
+        "hasBurstToggle"
       ]
     }
   },
@@ -11645,95 +11646,6 @@
   },
   {
     "data": {
-      "kind": "user",
-      "id": "2023-09_window_32_deprecation_message",
-      "label": "show deprecation message for 32-bit Windows",
-      "description": [
-        "Not Eligible",
-        "Control Bucket",
-        "Treatment 1: show message"
-      ],
-      "hash": 3258339487,
-      "buckets": [
-        -1,
-        0,
-        1
-      ],
-      "config_keys": [
-        "enabled"
-      ]
-    }
-  },
-  {
-    "data": {
-      "kind": "user",
-      "id": "2023-10_collectibles_falloween",
-      "label": "Collectibles Shop Falloween Content Drop",
-      "description": [
-        "Not Eligible",
-        "Control Bucket",
-        "Treatment 1: Collectibles Falloween Avatar Decorations",
-        "Treatment 2: Collectibles Falloween Avatar Decorations & Profile Effects"
-      ],
-      "hash": 1138748479,
-      "buckets": [
-        -1,
-        0,
-        1,
-        2
-      ],
-      "config_keys": [
-        "enabled"
-      ]
-    }
-  },
-  {
-    "data": {
-      "kind": "user",
-      "id": "2023-10_dcf_holdout",
-      "label": "DCF Holdout",
-      "description": [
-        "Not Eligible",
-        "Control Bucket",
-        "Treatment 1: Users will only see DCs that bypass the holdout"
-      ],
-      "hash": 2009146437,
-      "buckets": [
-        -1,
-        0,
-        1
-      ],
-      "config_keys": [
-        "enabled"
-      ]
-    }
-  },
-  {
-    "data": {
-      "kind": "user",
-      "id": "2023-10_mobile_redesign_one_percent_existing_users",
-      "label": "Tabs V2 - One Percent - Existing Users",
-      "description": [
-        "Not Eligible",
-        "Control Bucket",
-        "Treatment 1: Redesign",
-        "Treatment 2: Panels"
-      ],
-      "hash": 1541876684,
-      "buckets": [
-        -1,
-        0,
-        1,
-        2
-      ],
-      "config_keys": [
-        "showRedesign",
-        "showPanels"
-      ]
-    }
-  },
-  {
-    "data": {
       "kind": "guild",
       "hash": 3101260054
     },
@@ -11895,6 +11807,95 @@
         ]
       },
       "overrides_formatted": []
+    }
+  },
+  {
+    "data": {
+      "kind": "user",
+      "id": "2023-09_window_32_deprecation_message",
+      "label": "show deprecation message for 32-bit Windows",
+      "description": [
+        "Not Eligible",
+        "Control Bucket",
+        "Treatment 1: show message"
+      ],
+      "hash": 3258339487,
+      "buckets": [
+        -1,
+        0,
+        1
+      ],
+      "config_keys": [
+        "enabled"
+      ]
+    }
+  },
+  {
+    "data": {
+      "kind": "user",
+      "id": "2023-10_collectibles_falloween",
+      "label": "Collectibles Shop Falloween Content Drop",
+      "description": [
+        "Not Eligible",
+        "Control Bucket",
+        "Treatment 1: Collectibles Falloween Avatar Decorations",
+        "Treatment 2: Collectibles Falloween Avatar Decorations & Profile Effects"
+      ],
+      "hash": 1138748479,
+      "buckets": [
+        -1,
+        0,
+        1,
+        2
+      ],
+      "config_keys": [
+        "enabled"
+      ]
+    }
+  },
+  {
+    "data": {
+      "kind": "user",
+      "id": "2023-10_dcf_holdout",
+      "label": "DCF Holdout",
+      "description": [
+        "Not Eligible",
+        "Control Bucket",
+        "Treatment 1: Users will only see DCs that bypass the holdout"
+      ],
+      "hash": 2009146437,
+      "buckets": [
+        -1,
+        0,
+        1
+      ],
+      "config_keys": [
+        "enabled"
+      ]
+    }
+  },
+  {
+    "data": {
+      "kind": "user",
+      "id": "2023-10_mobile_redesign_one_percent_existing_users",
+      "label": "Tabs V2 - One Percent - Existing Users",
+      "description": [
+        "Not Eligible",
+        "Control Bucket",
+        "Treatment 1: Redesign",
+        "Treatment 2: Panels"
+      ],
+      "hash": 1541876684,
+      "buckets": [
+        -1,
+        0,
+        1,
+        2
+      ],
+      "config_keys": [
+        "showRedesign",
+        "showPanels"
+      ]
     }
   },
   {
