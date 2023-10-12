@@ -6348,7 +6348,8 @@
                 applyToCaption: "applyToCaption-3RS8oz",
                 guildButton: "guildButton-2lrOPG",
                 guildButtonContainer: "guildButtonContainer-2aTc66",
-                closeButton: "closeButton-38GojK"
+                closeButton: "closeButton-38GojK",
+                lastEditedByContainer: "lastEditedByContainer-1q82y0"
             }
         },
         536668: e => {
@@ -6383,6 +6384,11 @@
                 copySendBar: "copySendBar-16jcbU",
                 copyButton: "copyButton-2I69BM",
                 acronym: "acronym-lSSFxv"
+            }
+        },
+        268969: e => {
+            e.exports = {
+                container: "container-2bxP_c"
             }
         },
         498898: e => {
@@ -27126,4 +27132,4 @@
         }
     }
 ]);
-//# sourceMappingURL=c6dc8e85b227e51c67d2.js.map
+//# sourceMappingURL=07871a57baf34af1dd74.js.map
