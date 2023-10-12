@@ -4545,7 +4545,7 @@
   "SCOPE_MESSAGES_READ": "\"Read all messages\"",
   "SCOPE_APPLICATIONS_BUILDS_UPLOAD": "\"Upload and manage builds\"",
   "SCOPE_APPLICATIONS_BUILDS_READ": "\"Read build information\"",
-  "SCOPE_APPLICATIONS_COMMANDS": "\"Create commands in a server\"",
+  "SCOPE_APPLICATIONS_COMMANDS": "\"Create commands\"",
   "SCOPE_APPLICATIONS_COMMANDS_UPDATE": "\"Update commands\"",
   "SCOPE_APPLICATIONS_COMMANDS_PERMISSIONS_UPDATE": "\"Manage access to its commands in a server\"",
   "SCOPE_APPLICATIONS_STORE_UPDATE": "\"Manage store SKUs, listings, and assets\"",
