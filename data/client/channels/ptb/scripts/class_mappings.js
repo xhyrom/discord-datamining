@@ -6349,6 +6349,7 @@
                 guildButton: "guildButton-2lrOPG",
                 guildButtonContainer: "guildButtonContainer-2aTc66",
                 closeButton: "closeButton-38GojK",
+                clydeName: "clydeName-1oNFSV",
                 lastEditedByContainer: "lastEditedByContainer-1q82y0"
             }
         },
@@ -27132,4 +27133,4 @@
         }
     }
 ]);
-//# sourceMappingURL=07871a57baf34af1dd74.js.map
+//# sourceMappingURL=e9b663cc783d91be123a.js.map
