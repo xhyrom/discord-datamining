@@ -5949,6 +5949,8 @@
   "SUPER_REACTION_DESKTOP_NOTIFICATION_TITLE": "\"You got a super reaction!\"",
   "SUPER_REACTION_DESKTOP_NOTIFICATION_BODY": "\"{name} super reacted to your message in {channelName}, {guildName}\"",
   "SUPER_REACTION_DESKTOP_NOTIFICATION_BODY_NO_USER": "\"You got a super reaction to your message in {channelName}, {guildName}\"",
+  "SUPER_REACTION_TOGGLE_ENABLED": "\"Super Reactions enabled\"",
+  "SUPER_REACTION_TOGGLE_DISABLED": "\"Enable Super Reactions\"",
   "SUPER_REACTIONS_UPSELL_TITLE": "\"A better way to react on Discord\"",
   "SUPER_REACTIONS_UPSELL_TITLE_MOBILE": "\"A better way to react\"",
   "SUPER_REACTIONS_UPSELL_DESCRIPTION_MOBILE": "\"Hype up the chat with Super Reactions! Get weekly Super Reactions and other cool perks with Nitro.\"",
