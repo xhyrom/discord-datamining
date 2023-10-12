@@ -11983,13 +11983,21 @@ html.decorate-links .lowSaturationUnderline-Z6CW6z {
     border-radius: 3px
 }
 
-.clickableWrapper-2WTAkL {
+.clickableWrapper-2WTAkL,
+.loadingOverlay-35Eou1 {
     width: 100%;
     height: 100%
 }
 
 .imageWrapperBackground-3Vss_C {
     background: hsl(var(--black-500-hsl)/.05)
+}
+
+.imagePlaceholder-WivCMf {
+    display: block;
+    position: absolute;
+    top: 0;
+    background: var(--bg-overlay-chat, var(--background-primary))
 }
 
 .loadingWrapperInner-3CbkJc {
@@ -12040,6 +12048,34 @@ html.decorate-links .lowSaturationUnderline-Z6CW6z {
     bottom: 0;
     right: 0;
     background-color: hsl(var(--black-500-hsl)/.6)
+}
+
+.imageLoadingOverlay-3TAkHQ {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin: 4px;
+    width: 24px;
+    height: 24px;
+    padding: 3px;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    background-color: hsl(var(--black-500-hsl)/.5);
+    border-radius: 100%
+}
+
+.cornerLoadingSpinner-EYHL3S {
+    width: 100%;
+    height: 100%;
+    opacity: .75
+}
+
+.theme-dark .cornerLoadingSpinner-EYHL3S circle,
+.theme-light .cornerLoadingSpinner-EYHL3S circle {
+    stroke: var(--white-500)
 }
 
 .imageAccessory-2yA7Kb {
@@ -176424,4 +176460,4 @@ html .invoiceCancelRow-dVOR64 {
     margin-bottom: 8px
 }
 
-/*# sourceMappingURL=40532.7ac20f0a353bf31ef3f5.css.map*/
+/*# sourceMappingURL=40532.d74fc88c10cacb206a60.css.map*/

@@ -1,4 +1,4 @@
-/*! For license information please see ad488afaf0d6774c825f.js.LICENSE.txt */
+/*! For license information please see 520b21466f02ae1760e3.js.LICENSE.txt */
 (this.webpackChunkdiscord_app = this.webpackChunkdiscord_app || []).push([
     [22897], {
         151131: (t, e, r) => {
@@ -20557,8 +20557,9 @@
                 ETv: () => H.ET,
                 ldS: () => H.ld,
                 gLR: () => za,
-                T23: () => Ja,
-                BVn: () => qa
+                T23: () => Qa,
+                BVn: () => qa,
+                zo9: () => Ja
             });
             r(756583);
             var n, a, i, o, _, s, E, c, u, I, R, l, A, T, f, d, N, O, p, h, S, L, D, C = r(441143),
@@ -26269,11 +26270,16 @@
                 t[t.DISABLED = 1] = "DISABLED";
                 t[t.ENABLED = 2] = "ENABLED"
             }(za || (za = {}));
-            var qa, Ja = "https://creator-support.discord.com/hc/en-us/articles/12653663868823";
+            var qa, Ja, Qa = "https://creator-support.discord.com/hc/en-us/articles/12653663868823";
             ! function(t) {
                 t[t.CLIPS_ENABLED = 1] = "CLIPS_ENABLED";
                 t[t.ALLOW_VOICE_RECORDING = 2] = "ALLOW_VOICE_RECORDING"
-            }(qa || (qa = {}))
+            }(qa || (qa = {}));
+            ! function(t) {
+                t.LOADING = "LOADING";
+                t.ERROR = "ERROR";
+                t.READY = "READY"
+            }(Ja || (Ja = {}))
         },
         761001: (t, e, r) => {
             "use strict";
@@ -37114,7 +37120,7 @@
                     dsn: "https://fa97a90475514c03a42f80cd36d147c4@sentry.io/140984",
                     autoSessionTracking: !1,
                     environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                    release: "discord_web-c4a681a710b756ab6942f290644e2ce4698629a0",
+                    release: "discord_web-2e375ccc830c1c910187003f2255610c9c78ea4d",
                     beforeSend: function(t) {
                         return function(t) {
                             return null != t.exception && null != t.exception.values && t.exception.values.every((function(t) {
@@ -37141,8 +37147,8 @@
                     denyUrls: [/recaptcha/, /mobilediscord\.com/, /betterdiscord:\/\//]
                 });
                 var t;
-                X.YA("buildNumber", null !== (t = "236794") ? t : "");
-                X.YA("builtAt", String("1697144580898"));
+                X.YA("buildNumber", null !== (t = "236829") ? t : "");
+                X.YA("builtAt", String("1697148392304"));
                 var e = window.GLOBAL_ENV.SENTRY_TAGS;
                 if (null != e && "object" == typeof e)
                     for (var r in e) X.YA(r, e[r]);
@@ -48539,4 +48545,4 @@
         e(128594), e(535666), e(784633), e(678991)
     }
 ]);
-//# sourceMappingURL=ad488afaf0d6774c825f.js.map
+//# sourceMappingURL=520b21466f02ae1760e3.js.map

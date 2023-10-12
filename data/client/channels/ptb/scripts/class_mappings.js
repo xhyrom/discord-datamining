@@ -25211,13 +25211,17 @@
             e.exports = {
                 imageWrapper: "imageWrapper-oMkQl4",
                 clickableWrapper: "clickableWrapper-2WTAkL",
+                loadingOverlay: "loadingOverlay-35Eou1",
                 imageWrapperBackground: "imageWrapperBackground-3Vss_C",
+                imagePlaceholder: "imagePlaceholder-WivCMf",
                 loadingWrapperInner: "loadingWrapperInner-3CbkJc",
                 placeholderLoadingSpinner: "placeholderLoadingSpinner-2xCJ3h",
                 loadingSpinner: "loadingSpinner-3YlU8g",
                 imageErrorWrapper: "imageErrorWrapper-3hFRJG",
                 imageError: "imageError-dy476I",
                 imagePlaceholderOverlay: "imagePlaceholderOverlay-amcxdp",
+                imageLoadingOverlay: "imageLoadingOverlay-3TAkHQ",
+                cornerLoadingSpinner: "cornerLoadingSpinner-EYHL3S",
                 imageAccessory: "imageAccessory-2yA7Kb",
                 imageZoom: "imageZoom-3yLCXY",
                 clickable: "clickable-LksVCf",
@@ -27133,4 +27137,4 @@
         }
     }
 ]);
-//# sourceMappingURL=e9b663cc783d91be123a.js.map
+//# sourceMappingURL=43bc3c4c0f242c672811.js.map
