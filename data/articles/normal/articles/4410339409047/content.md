@@ -1,5 +1,8 @@
-<h1><span style="font-weight: 400;">Our related companies include:</span></h1>
-<p><span style="font-weight: 400;">Discord Inc.</span></p>
-<p><span style="font-weight: 400;">Discord Netherlands BV</span></p>
-<p><span style="font-weight: 400;">Discord Canada Holdings, Inc.</span></p>
-<p><span style="font-weight: 400;">Brazos Games, LLC</span></p>
+<h1 id="h_01HCMZF9WEBP0A5PPRD481R3G3">Our Related Companies Include:</h1>
+<p>Brazos Games LLC</p>
+<p>Discord International, Inc.</p>
+<p>Discord Netherlands BV</p>
+<p>Sentropy Technologies Inc.</p>
+<p>Flames Sub LLC</p>
+<p>Backgammon Merger Sub II, LLC</p>
+<p>Discord Canada Holdings Inc.</p>
