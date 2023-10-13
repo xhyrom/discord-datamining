@@ -7531,6 +7531,7 @@
   "PAYMENT_WAITING_FOR_BROWSER_CHECKOUT_MODAL_HEADER": "\"Complete checkout on your browser\"",
   "PAYMENT_WAITING_FOR_BROWSER_CHECKOUT_MODAL_NEXT_BUTTON": "\"Pay Here\"",
   "FORM_ERROR_GENERIC": "\"Oops! You've caught an ultra rare error. This is probably our fault, so please try again or check [our status page]({statusPageURL}).\"",
+  "FORM_ERROR_GENERIC_WITH_DETAILS": "\"Oops! You've caught an ultra rare error. This is probably our fault, so please try again or check [our status page]({statusPageURL}). ({details})\"",
   "ERROR_GENERIC_TITLE": "\"Oops, something went wrong...\"",
   "DATE": "\"Date\"",
   "DESCRIPTION": "\"Description\"",
