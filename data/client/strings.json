@@ -11085,6 +11085,7 @@
   "NEW_EVENT": "\"New Event\"",
   "DISCONNECT_MENU": "\"Disconnect Actions\"",
   "STARTING_IN_MINUTES": "\"Starting in {minutes}m\"",
+  "STARTING_ON_DATE": "\"Starting on {date}\"",
   "ENDING_ON_DATE": "\"Ends {date}\"",
   "START_DATE_TO_END_DATE": "\"{start} — {end}\"",
   "START_DATE_TO_END_DATE_WITH_COLOR": "\"$[!!{start}!!](startHook) — Ends {end}\"",
