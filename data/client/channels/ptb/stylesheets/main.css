@@ -30777,8 +30777,7 @@ code {
     --custom-premium-colors-premium-gradient-tier-2: linear-gradient(90deg, var(--premium-tier-2-purple-for-gradients), var(--premium-tier-2-pink-for-gradients));
     --custom-premium-colors-premium-gradient-tier-2-diagonal: linear-gradient(45deg, var(--premium-tier-2-purple-for-gradients), var(--premium-tier-2-pink-for-gradients));
     --custom-premium-colors-premium-gradient-tier-2-tri-color: linear-gradient(90deg, var(--premium-tier-2-purple-for-gradients), var(--premium-tier-2-purple-for-gradients-2), var(--premium-tier-2-pink-for-gradients));
-    --custom-premium-colors-premium-gradient-tier-2-old: linear-gradient(90deg, var(--premium-tier-2-purple), var(--premium-tier-2-pink));
-    --custom-premium-marketing-single-value-prop-responsive-width-mobile: 740px
+    --custom-premium-colors-premium-gradient-tier-2-old: linear-gradient(90deg, var(--premium-tier-2-purple), var(--premium-tier-2-pink))
 }
 
 :root {
@@ -176558,4 +176557,4 @@ html .invoiceCancelRow-dVOR64 {
     margin-bottom: 8px
 }
 
-/*# sourceMappingURL=40532.764f582b427fa5eb94f1.css.map*/
+/*# sourceMappingURL=40532.0fac1a1a3420f2dddec3.css.map*/
