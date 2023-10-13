@@ -27,18 +27,8 @@
     "executables": [
       {
         "os": "win32",
-        "name": "garenaloltw/gamedata/apps/loltw/lol.exe",
-        "is_launcher": false
-      },
-      {
-        "os": "win32",
         "name": "leagueclientux.exe",
         "is_launcher": true
-      },
-      {
-        "os": "darwin",
-        "name": "lollauncher.app",
-        "is_launcher": false
       },
       {
         "os": "win32",
@@ -47,7 +37,17 @@
       },
       {
         "os": "win32",
+        "name": "garenaloltw/gamedata/apps/loltw/lol.exe",
+        "is_launcher": false
+      },
+      {
+        "os": "win32",
         "name": "league of legends.exe",
+        "is_launcher": false
+      },
+      {
+        "os": "darwin",
+        "name": "lollauncher.app",
         "is_launcher": false
       }
     ],
@@ -155,12 +155,12 @@
       "free_period_starts_at": null,
       "free_period_ends_at": null,
       "client_platform_config": {
-        "android": {
+        "ios": {
           "label_type": 0,
           "label_until": null,
           "release_phase": "activities_team"
         },
-        "ios": {
+        "android": {
           "label_type": 0,
           "label_until": null,
           "release_phase": "activities_team"
@@ -213,12 +213,12 @@
           "label_until": null,
           "release_phase": "in_development"
         },
-        "ios": {
+        "web": {
           "label_type": 0,
           "label_until": null,
           "release_phase": "in_development"
         },
-        "web": {
+        "ios": {
           "label_type": 0,
           "label_until": null,
           "release_phase": "in_development"
@@ -262,12 +262,12 @@
       "free_period_starts_at": null,
       "free_period_ends_at": null,
       "client_platform_config": {
-        "web": {
+        "ios": {
           "label_type": 1,
           "label_until": null,
           "release_phase": "global_launch"
         },
-        "ios": {
+        "web": {
           "label_type": 1,
           "label_until": null,
           "release_phase": "global_launch"
@@ -278,7 +278,7 @@
           "release_phase": "global_launch"
         }
       },
-      "shelf_rank": 7,
+      "shelf_rank": 8,
       "has_csp_exception": false
     },
     "tags": [
@@ -332,7 +332,7 @@
           "release_phase": "global_launch"
         }
       },
-      "shelf_rank": 3,
+      "shelf_rank": 4,
       "has_csp_exception": false
     },
     "tags": [
@@ -375,18 +375,18 @@
           "label_until": "2023-07-13T12:00:00+00:00",
           "release_phase": "global_launch"
         },
-        "android": {
+        "ios": {
           "label_type": 1,
           "label_until": "2023-07-13T12:00:00+00:00",
           "release_phase": "global_launch"
         },
-        "ios": {
+        "android": {
           "label_type": 1,
           "label_until": "2023-07-13T12:00:00+00:00",
           "release_phase": "global_launch"
         }
       },
-      "shelf_rank": 14,
+      "shelf_rank": 15,
       "has_csp_exception": false
     },
     "tags": [
@@ -422,12 +422,12 @@
       "free_period_starts_at": null,
       "free_period_ends_at": null,
       "client_platform_config": {
-        "web": {
+        "android": {
           "label_type": 0,
           "label_until": null,
           "release_phase": "global_launch"
         },
-        "android": {
+        "web": {
           "label_type": 0,
           "label_until": null,
           "release_phase": "global_launch"
@@ -438,7 +438,7 @@
           "release_phase": "global_launch"
         }
       },
-      "shelf_rank": 15,
+      "shelf_rank": 16,
       "has_csp_exception": false
     },
     "tags": [
@@ -476,11 +476,6 @@
       "free_period_starts_at": null,
       "free_period_ends_at": null,
       "client_platform_config": {
-        "ios": {
-          "label_type": 0,
-          "label_until": null,
-          "release_phase": "global_launch"
-        },
         "android": {
           "label_type": 0,
           "label_until": null,
@@ -490,9 +485,14 @@
           "label_type": 0,
           "label_until": null,
           "release_phase": "global_launch"
+        },
+        "ios": {
+          "label_type": 0,
+          "label_until": null,
+          "release_phase": "global_launch"
         }
       },
-      "shelf_rank": 11,
+      "shelf_rank": 12,
       "has_csp_exception": false
     },
     "tags": [
@@ -536,18 +536,18 @@
           "label_until": null,
           "release_phase": "global_launch"
         },
-        "ios": {
+        "android": {
           "label_type": 0,
           "label_until": null,
           "release_phase": "global_launch"
         },
-        "android": {
+        "ios": {
           "label_type": 0,
           "label_until": null,
           "release_phase": "global_launch"
         }
       },
-      "shelf_rank": 2,
+      "shelf_rank": 3,
       "has_csp_exception": false
     },
     "tags": [
@@ -590,18 +590,18 @@
           "label_until": null,
           "release_phase": "global_launch"
         },
-        "ios": {
+        "android": {
           "label_type": 0,
           "label_until": null,
           "release_phase": "global_launch"
         },
-        "android": {
+        "ios": {
           "label_type": 0,
           "label_until": null,
           "release_phase": "global_launch"
         }
       },
-      "shelf_rank": 9,
+      "shelf_rank": 10,
       "has_csp_exception": false
     },
     "tags": [
@@ -645,18 +645,18 @@
           "label_until": null,
           "release_phase": "global_launch"
         },
-        "android": {
+        "ios": {
           "label_type": 0,
           "label_until": null,
           "release_phase": "global_launch"
         },
-        "ios": {
+        "android": {
           "label_type": 0,
           "label_until": null,
           "release_phase": "global_launch"
         }
       },
-      "shelf_rank": 10,
+      "shelf_rank": 11,
       "has_csp_exception": false
     },
     "tags": [
@@ -711,7 +711,7 @@
           "release_phase": "global_launch"
         }
       },
-      "shelf_rank": 17,
+      "shelf_rank": 18,
       "has_csp_exception": false
     },
     "tags": [
@@ -749,6 +749,11 @@
       "free_period_starts_at": null,
       "free_period_ends_at": null,
       "client_platform_config": {
+        "ios": {
+          "label_type": 0,
+          "label_until": null,
+          "release_phase": "global_launch"
+        },
         "web": {
           "label_type": 0,
           "label_until": null,
@@ -758,14 +763,9 @@
           "label_type": 0,
           "label_until": null,
           "release_phase": "global_launch"
-        },
-        "ios": {
-          "label_type": 0,
-          "label_until": null,
-          "release_phase": "global_launch"
         }
       },
-      "shelf_rank": 6,
+      "shelf_rank": 7,
       "has_csp_exception": false
     },
     "tags": [
@@ -808,18 +808,18 @@
           "label_until": null,
           "release_phase": "global_launch"
         },
-        "web": {
+        "ios": {
           "label_type": 0,
           "label_until": null,
           "release_phase": "global_launch"
         },
-        "ios": {
+        "web": {
           "label_type": 0,
           "label_until": null,
           "release_phase": "global_launch"
         }
       },
-      "shelf_rank": 8,
+      "shelf_rank": 9,
       "has_csp_exception": false
     },
     "tags": [
@@ -862,6 +862,11 @@
       "free_period_starts_at": null,
       "free_period_ends_at": null,
       "client_platform_config": {
+        "ios": {
+          "label_type": 0,
+          "label_until": null,
+          "release_phase": "global_launch"
+        },
         "web": {
           "label_type": 0,
           "label_until": null,
@@ -871,14 +876,9 @@
           "label_type": 0,
           "label_until": null,
           "release_phase": "global_launch"
-        },
-        "ios": {
-          "label_type": 0,
-          "label_until": null,
-          "release_phase": "global_launch"
         }
       },
-      "shelf_rank": 5,
+      "shelf_rank": 6,
       "has_csp_exception": false
     },
     "tags": [
@@ -933,7 +933,7 @@
           "release_phase": "global_launch"
         }
       },
-      "shelf_rank": 16,
+      "shelf_rank": 17,
       "has_csp_exception": false
     },
     "tags": [
@@ -976,18 +976,18 @@
           "label_until": null,
           "release_phase": "global_launch"
         },
-        "android": {
+        "web": {
           "label_type": 0,
           "label_until": null,
           "release_phase": "global_launch"
         },
-        "web": {
+        "android": {
           "label_type": 0,
           "label_until": null,
           "release_phase": "global_launch"
         }
       },
-      "shelf_rank": 12,
+      "shelf_rank": 13,
       "has_csp_exception": false
     },
     "tags": [
@@ -1027,17 +1027,17 @@
       "client_platform_config": {
         "web": {
           "label_type": 1,
-          "label_until": "2023-10-13T07:00:00+00:00",
-          "release_phase": "global_launch"
-        },
-        "ios": {
-          "label_type": 1,
-          "label_until": "2023-10-13T07:00:00+00:00",
+          "label_until": "2023-10-13T01:00:00+00:00",
           "release_phase": "global_launch"
         },
         "android": {
           "label_type": 1,
-          "label_until": "2023-10-13T07:00:00+00:00",
+          "label_until": "2023-10-13T01:00:00+00:00",
+          "release_phase": "global_launch"
+        },
+        "ios": {
+          "label_type": 1,
+          "label_until": "2023-10-13T01:00:00+00:00",
           "release_phase": "global_launch"
         }
       },
@@ -1079,11 +1079,6 @@
       "free_period_starts_at": null,
       "free_period_ends_at": null,
       "client_platform_config": {
-        "web": {
-          "label_type": 0,
-          "label_until": null,
-          "release_phase": "global_launch"
-        },
         "android": {
           "label_type": 0,
           "label_until": null,
@@ -1093,9 +1088,14 @@
           "label_type": 0,
           "label_until": null,
           "release_phase": "global_launch"
+        },
+        "web": {
+          "label_type": 0,
+          "label_until": null,
+          "release_phase": "global_launch"
         }
       },
-      "shelf_rank": 4,
+      "shelf_rank": 5,
       "has_csp_exception": false
     },
     "tags": [
