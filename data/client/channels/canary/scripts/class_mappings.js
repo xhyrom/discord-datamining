@@ -22552,7 +22552,9 @@
         470734: e => {
             e.exports = {
                 customStatusSection: "customStatusSection-2_fKRl",
+                lastEditedByContainer: "lastEditedByContainer-2ujgTg",
                 usernameSection: "usernameSection-3FppkT",
+                lastEditedByTag: "lastEditedByTag-2euTWS",
                 divider: "divider-1QVlfF",
                 scroller: "scroller-15bIdk",
                 scrollerSeparator: "scrollerSeparator-6DmwRQ",
@@ -27149,4 +27151,4 @@
         }
     }
 ]);
-//# sourceMappingURL=4029ff36bddfee8468fa.js.map
+//# sourceMappingURL=4782c64219c50a4502be.js.map
