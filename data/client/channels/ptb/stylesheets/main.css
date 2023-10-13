@@ -13658,6 +13658,19 @@ html.disable-forced-colors * {
     background-color: Canvas
 }
 
+.container-2bxP_c {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    padding: 4px 8px;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    gap: 8px;
+    border-radius: 16px;
+    background-color: var(--background-secondary)
+}
+
 .divider-2dDziJ {
     margin-top: 12px;
     height: 1px;
@@ -25087,10 +25100,21 @@ html.disable-forced-colors * {
 }
 
 .customStatusSection-2_fKRl,
+.lastEditedByContainer-2ujgTg,
 .usernameSection-3FppkT {
     padding-top: 12px;
     padding-right: 12px;
     padding-left: 12px
+}
+
+.lastEditedByContainer-2ujgTg {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex
+}
+
+.lastEditedByTag-2euTWS {
+    background-color: var(--background-modifier-accent)
 }
 
 .divider-1QVlfF {
@@ -146383,19 +146407,6 @@ html .invoiceCancelRow-3s2UuC {
     background-color: var(--background-modifier-accent)
 }
 
-.container-2bxP_c {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    padding: 4px 8px;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
-    gap: 8px;
-    border-radius: 16px;
-    background-color: var(--background-secondary)
-}
-
 .modal-14bmJQ {
     border-radius: 5px;
     overflow: hidden
@@ -176557,4 +176568,4 @@ html .invoiceCancelRow-dVOR64 {
     margin-bottom: 8px
 }
 
-/*# sourceMappingURL=40532.0fac1a1a3420f2dddec3.css.map*/
+/*# sourceMappingURL=40532.0db162f0b278a72af6a8.css.map*/
