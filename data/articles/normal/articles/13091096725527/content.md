@@ -13,7 +13,7 @@
     <li><a href="#h_01GWHZVRDT9K9FJA8EPS16GCM9" target="_self">Frequently Asked Questions</a></li>
 </ul>
 <h1 id="h_01GWHZTVQF14XB4MWF9JRS0QMT">What are Voice Messages?</h1>
-<p>Voice Messages give you the ability to send an audio recording directly to your friends. For now, you can only send Voice Messages through a direct message, group direct message, or in a server with fewer than 200 members. These can be listened to on any device where you can access Discord, but can only be sent through the mobile app. </p>
+<p>Voice Messages give you the ability to send an audio recording directly to your friends. For now, you can only send Voice Messages through a direct message, group direct message, or in a server with Voice Messages enabled. These can be listened to on any device where you can access Discord, but can only be sent through the mobile app.</p>
 <h1 id="h_01GWHZV65X6WFR736EB5123ZKY">How do I use Voice Messages?</h1>
 <h2 id="h_01GWHZVAH98HXS8E7W2KAFTV0A">Sending Voice Messages</h2>
 <p class="wysiwyg-text-align-center"><img src="https://support.discord.com/hc/article_attachments/13525679023255" alt="voice_messages_example.png" width="392" height="849"></p>
@@ -31,7 +31,7 @@
 <p>You can listen to Voice Messages on either desktop or mobile devices. To listen, simply click the “Play” button on any Voice Message for it to play. The audio will play through your default device. </p>
 <p>If you’re on mobile and you do not have an external audio device connected, the audio will play through your mobile speakers. </p>
 <h1 id="h_01GY0QJKCN13FJ6QXWXS6HD8BV">How to Disable Voice Messages in your server</h1>
-<h1 class="wysiwyg-text-align-center"><img src="https://support.discord.com/hc/article_attachments/13856365638935" alt="voice_messages_server_toggle.png"></h1>
+<h1 id="h_01HCN45MY2DYSVP15FE5E6NPXM" class="wysiwyg-text-align-center"><img src="https://support.discord.com/hc/article_attachments/13856365638935" alt="voice_messages_server_toggle.png"></h1>
 <p>If Voice Messages are available in your server, you can disable or enable them per role. To do so, go to <strong>Server Settings</strong> &gt; <strong>Roles</strong> and navigate to the Send Voice Messages toggle to enable or disable.</p>
 <h1 id="h_01GWHZVRDT9K9FJA8EPS16GCM9">Frequently Asked Questions</h1>
 <p><strong>Q: </strong>What is the maximum length of a Voice Message?</p>
