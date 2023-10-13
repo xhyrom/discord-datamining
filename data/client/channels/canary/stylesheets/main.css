@@ -16004,8 +16004,11 @@ html.disable-forced-colors * {
     background-color: var(--__current--spoiler-background-color)
 }
 
+.spoilerContainer-1Dl06W.hiddenSpoiler-k46d0j {
+    cursor: pointer
+}
+
 .spoilerContainer-1Dl06W.hidden-2lQZ5q {
-    cursor: pointer;
     overflow: hidden
 }
 
@@ -50410,19 +50413,34 @@ input[type=checkbox]:focus-visible+.label-3ake0C {
     text-shadow: 0 0 1px hsla(0, 0%, 100%, .2), 0 0 3px rgba(0, 0, 0, .4)
 }
 
-.spoilerEmbed-1LYr3G.hiddenSpoiler-3pPzRF {
-    cursor: pointer;
+.hiddenEmbed-2Apbq4.isHidden-3nlQtC {
     overflow: hidden
 }
 
-.spoilerEmbed-1LYr3G.hiddenSpoiler-3pPzRF .grid-1aWVsE {
+.hiddenEmbed-2Apbq4.isHidden-3nlQtC .grid-1aWVsE {
     -webkit-transition: -webkit-filter .1s ease-out;
     transition: -webkit-filter .1s ease-out;
     transition: filter .1s ease-out;
     transition: filter .1s ease-out, -webkit-filter .1s ease-out;
-    -webkit-filter: blur(var(--custom-embed-spoiler-blur-radius));
-    filter: blur(var(--custom-embed-spoiler-blur-radius));
     pointer-events: none
+}
+
+.spoilerEmbed-1LYr3G {}
+
+.spoilerEmbed-1LYr3G.isHidden-3nlQtC {
+    cursor: pointer
+}
+
+.spoilerEmbed-1LYr3G.isHidden-3nlQtC .grid-1aWVsE {
+    -webkit-filter: blur(var(--custom-embed-spoiler-blur-radius));
+    filter: blur(var(--custom-embed-spoiler-blur-radius))
+}
+
+.hiddenExplicitEmbed-5kvvta {}
+
+.hiddenExplicitEmbed-5kvvta.isHidden-3nlQtC .grid-1aWVsE {
+    -webkit-filter: blur(40px) brightness(.55);
+    filter: blur(40px) brightness(.55)
 }
 
 .justifyAuto-BLgJ2X {
@@ -50434,14 +50452,26 @@ input[type=checkbox]:focus-visible+.label-3ake0C {
     opacity: 1
 }
 
-.spoilerAttachment-1QvPhn.hiddenSpoiler-3pPzRF {
-    -webkit-filter: blur(var(--custom-embed-spoiler-blur-radius));
-    filter: blur(var(--custom-embed-spoiler-blur-radius));
+.hiddenAttachment-zk6AAR.isHidden-3nlQtC {
     pointer-events: none;
     -webkit-transition: -webkit-filter .1s ease;
     transition: -webkit-filter .1s ease;
     transition: filter .1s ease;
     transition: filter .1s ease, -webkit-filter .1s ease
+}
+
+.spoilerAttachment-1QvPhn {}
+
+.spoilerAttachment-1QvPhn.isHidden-3nlQtC {
+    -webkit-filter: blur(var(--custom-embed-spoiler-blur-radius));
+    filter: blur(var(--custom-embed-spoiler-blur-radius))
+}
+
+.hiddenExplicitAttachment-7zfu-W {}
+
+.hiddenExplicitAttachment-7zfu-W.isHidden-3nlQtC {
+    -webkit-filter: blur(40px) brightness(.55);
+    filter: blur(40px) brightness(.55)
 }
 
 .enable-forced-colors .embed-hKpSrO {
@@ -56253,9 +56283,17 @@ html .progress-2Otdc- {
 }
 
 .obscured-20kiwN.hiddenAttachment-1ujFOi {
-    -webkit-filter: blur(var(--custom-message-attachment-spoiler-blur-radius));
-    filter: blur(var(--custom-message-attachment-spoiler-blur-radius));
     pointer-events: none
+}
+
+.obscured-20kiwN.hiddenAttachment-1ujFOi.hiddenSpoiler-2TgN7W {
+    -webkit-filter: blur(var(--custom-message-attachment-spoiler-blur-radius));
+    filter: blur(var(--custom-message-attachment-spoiler-blur-radius))
+}
+
+.obscured-20kiwN.hiddenAttachment-1ujFOi.hiddenExplicit-d1iVMh {
+    -webkit-filter: blur(40px) brightness(.55);
+    filter: blur(40px) brightness(.55)
 }
 
 .obscureVideo-9qK0C4 {
@@ -176568,4 +176606,4 @@ html .invoiceCancelRow-dVOR64 {
     margin-bottom: 8px
 }
 
-/*# sourceMappingURL=40532.0db162f0b278a72af6a8.css.map*/
+/*# sourceMappingURL=40532.678cbf3dfe4ead53d26b.css.map*/
