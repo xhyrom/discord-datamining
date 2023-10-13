@@ -12079,7 +12079,8 @@
         2
       ],
       "config_keys": [
-        "enabled"
+        "enableSideEncoderViewerClipping",
+        "enableEndEncoderViewerClipping"
       ]
     }
   },
