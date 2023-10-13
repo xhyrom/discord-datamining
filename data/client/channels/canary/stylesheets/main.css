@@ -94778,6 +94778,15 @@ strong {
     margin-left: 4px
 }
 
+.eventNameClickable-1n2DRE {
+    cursor: pointer
+}
+
+.eventNameClickable-1n2DRE:hover {
+    text-decoration: underline;
+    text-underline-position: under
+}
+
 .eventName-63zAuJ {
     margin-bottom: 4px;
     display: -webkit-box;
@@ -94801,6 +94810,11 @@ strong {
     height: 8px;
     border-radius: 8px;
     background-color: var(--green-360)
+}
+
+.startTime-1-NgPk {
+    overflow: hidden;
+    text-overflow: ellipsis
 }
 
 .stageIcon-1Gi-1l {
@@ -176571,4 +176585,4 @@ html .invoiceCancelRow-dVOR64 {
     margin-bottom: 8px
 }
 
-/*# sourceMappingURL=40532.0a401144f6b4410bdf42.css.map*/
+/*# sourceMappingURL=40532.156e5e99fb35b0777dfc.css.map*/

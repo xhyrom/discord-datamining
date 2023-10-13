@@ -12847,10 +12847,12 @@
                 channelNotice: "channelNotice-K4UfZY",
                 textBlock: "textBlock-3rqvcj",
                 liveNowText: "liveNowText-v8cd6m",
+                eventNameClickable: "eventNameClickable-1n2DRE",
                 eventName: "eventName-63zAuJ",
                 channelName: "channelName-qk56Fc",
                 dotDivider: "dotDivider-MhkRZy",
                 liveIndicator: "liveIndicator-TJKS7N",
+                startTime: "startTime-1-NgPk",
                 stageIcon: "stageIcon-1Gi-1l",
                 userNames: "userNames-2j2GW-",
                 joinButton: "joinButton-1HdI2a",
@@ -27149,4 +27151,4 @@
         }
     }
 ]);
-//# sourceMappingURL=d4ecfe24c196144732f3.js.map
+//# sourceMappingURL=f2c8e0b283395c3993ca.js.map
