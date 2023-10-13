@@ -2,7 +2,15 @@
 <ul id="docs-internal-guid-878b6d59-7fff-72ea-b600-d97a1bd89d10">
     <li><a href="#docs-internal-guid-05f2f6d6-7fff-7b6f-7015-1c6f6719d40f" target="_self" rel="undefined">What is Clyde?</a></li>
     <li><a href="#docs-internal-guid-fe7b084f-7fff-ad24-ea6f-33753f84ccf2" target="_self" rel="undefined">How to set up Clyde</a></li>
-    <li><a href="#docs-internal-guid-d333d1c6-7fff-ca46-f4b6-8427ea6aa8b9" target="_self" rel="undefined">Chatting with Clyde</a></li>
+    <li>
+        <a href="#docs-internal-guid-d333d1c6-7fff-ca46-f4b6-8427ea6aa8b9" target="_self" rel="undefined">Chatting with Clyde</a>
+        <ul id="docs-internal-guid-878b6d59-7fff-72ea-b600-d97a1bd89d10">
+            <li><a href="#docs-internal-guid-50d86938-7fff-65a8-d295-1e786038457e">Characters Beta</a></li>
+            <li><a href="#h_01HCK8S0KWZX5ZJ09CQR41S81P">Banning Clyde</a></li>
+            <li><a href="#h_01HCK8RXZNPQ9628P9MB0DX6Z0">Unbanning Clyde</a></li>
+            <li><a href="#h_01HCK8RRVSP5DPDM8J6Z4W968G">Turn Off Clyde for Your Server</a></li>
+        </ul>
+    </li>
     <li><a href="#docs-internal-guid-eceee874-7fff-87bc-4dad-08d4917c72f9" target="_self" rel="undefined">Considerations</a></li>
     <li><a href="#h_01GVNJ6Z224YSWKJKKMYQ9B6KH" target="_self">Frequently Asked Questions</a></li>
 </ul>
@@ -20,9 +28,12 @@
 <p>Server Members will see a channel notice informing them that Clyde is enabled in their server. Once they receive this notice, Members can immediately begin <a href="#docs-internal-guid-d333d1c6-7fff-ca46-f4b6-8427ea6aa8b9" target="_self" rel="undefined">Chatting with Clyde.</a></p>
 <p class="wysiwyg-text-align-center"><em><span id="docs-internal-guid-e975996e-7fff-6b00-62d1-51d71620ec3c"><span id="docs-internal-guid-e7d6f9d5-7fff-5cf9-2f88-3dc960044b7f"><span id="docs-internal-guid-07ae88bf-7fff-a6af-4189-58d8b463695a"><img src="https://support.discord.com/hc/article_attachments/13827037374871" alt="clyde2.png"></span></span></span></em></p>
 <p>Server Admins may also customize Clyde’s personality for their server by providing a backstory. To do this, go to <strong>Clyde’s avatar &gt; Edit Clyde</strong>. If an Admin has created a custom Clyde personality, members will see a pencil icon next to Clyde’s AI tag and can message Clyde to ask for its backstory. Admins should ensure their customized backstory is consistent with Discord’s <a href="https://discord.com/guidelines"><span class="wysiwyg-underline" style="color: #1155cc;" data-darkreader-inline-color="">Community Guidelines</span></a>. Members can reach out to their Server Admin if there are any questions or concerns with Clyde’s custom personality or responses.</p>
-<h3 id="docs-internal-guid-50d86938-7fff-65a8-d295-1e786038457e" class="wysiwyg-text-align-center">
-    <span style="color: #434343;"><span class="wysiwyg-underline">Characters Beta</span><br></span><span style="color: #434343;">Some users may see a different experience with Clyde! With the Characters Beta, users have the ability to customize Clyde's display name, avatar, banner, and profile theme color, along with a backstory.<br></span><span style="color: #434343;">Sharing Profiles<br></span><span style="color: #434343;">When you press on Clyde's avatar and see Clyde’s profile card, you can share your character customizations to another server that has Clyde and is in the Characters Beta.<br><img src="https://support.discord.com/hc/article_attachments/18210801187991" alt="Clyde-character-beta-profile-example.png" width="253" height="385"><br></span><span style="color: #434343;"><span id="docs-internal-guid-365e7c69-7fff-faf5-71ae-ff468ae815c7" style="color: #434343;">Simply press on the share button and follow the prompts. <br></span></span>
-</h3>
+<h2 id="docs-internal-guid-50d86938-7fff-65a8-d295-1e786038457e" class="wysiwyg-text-align-left"><span style="color: #434343;">Characters Beta</span></h2>
+<p class="wysiwyg-text-align-left"><span style="color: #434343;">Some users may see a different experience with Clyde! With the Characters Beta, users have the ability to customize Clyde's display name, avatar, banner, and profile theme color, along with a backstory.</span></p>
+<p class="wysiwyg-text-align-left"><span class="wysiwyg-font-size-large"><strong><span style="color: #434343;">Sharing Profiles</span></strong></span></p>
+<p class="wysiwyg-text-align-left"><span style="color: #434343;">When you press on Clyde's avatar and see Clyde’s profile card, you can share your character customizations to another server that has Clyde and is in the Characters Beta.</span></p>
+<p class="wysiwyg-text-align-center"><span style="color: #434343;"><img src="https://support.discord.com/hc/article_attachments/18210801187991" alt="Clyde-character-beta-profile-example.png" width="253" height="385"><br></span><span id="docs-internal-guid-365e7c69-7fff-faf5-71ae-ff468ae815c7" style="color: #434343;"></span></p>
+<p class="wysiwyg-text-align-left"><span style="color: #434343;"><span id="docs-internal-guid-365e7c69-7fff-faf5-71ae-ff468ae815c7" style="color: #434343;">Simply press on the share button and follow the prompts. <br></span></span></p>
 <h2 id="h_01HCK8S0KWZX5ZJ09CQR41S81P"><span style="color: #434343;"><span style="color: #434343;"><span id="docs-internal-guid-ac1932d7-7fff-a941-46fa-351d11eb3dda">Banning Clyde</span></span></span></h2>
 <p><span style="color: #434343;"><span style="color: #434343;">To remove Clyde, Server Admins or Server Members with permissions can:</span></span></p>
 <p><span style="color: #434343;"><span style="color: #434343;"><strong>Ban Clyde</strong> by right-clicking on Clyde in the server member list, and selecting <strong>Ban</strong></span></span></p>
