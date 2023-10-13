@@ -1,0 +1,21 @@
+{
+  "data": {
+    "kind": "user",
+    "id": "2023-10_enable_stateful_animated_icons",
+    "label": "Stateful animated icons",
+    "description": [
+      "Not Eligible",
+      "Control Bucket",
+      "Treatment 1: Enable stateful animated icons"
+    ],
+    "hash": 3353189507,
+    "buckets": [
+      -1,
+      0,
+      1
+    ],
+    "config_keys": [
+      "enabled"
+    ]
+  }
+}
