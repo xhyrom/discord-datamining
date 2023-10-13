@@ -1,4 +1,4 @@
-/*! For license information please see 6aa539c49c7fcead0b19.js.LICENSE.txt */
+/*! For license information please see b609032f0dfa634f1be7.js.LICENSE.txt */
 (this.webpackChunkdiscord_app = this.webpackChunkdiscord_app || []).push([
     [22897], {
         151131: (t, e, r) => {
@@ -25553,7 +25553,8 @@
                 t.SERVER_SUBSCRIPTION_AND_PRODUCTS = "10423011974551";
                 t.SERVER_PRODUCTS = "10423011974551#docs-internal-guid-918e991a-7fff-03d5-8326-5d065e5edeb1";
                 t.WIN32_DEPRECATE = "17997797368471";
-                t.PROFILE_BADGES = "360035962891"
+                t.PROFILE_BADGES = "360035962891";
+                t.EXPLICIT_MEDIA_REDACTION = " 18210995019671"
             }(Dn || (Dn = {}));
             var gn, Un, Pn, Mn, mn, Gn = function(t) {
                     return "https://www.youtube.com/embed/".concat(t)
@@ -37120,7 +37121,7 @@
                     dsn: "https://fa97a90475514c03a42f80cd36d147c4@sentry.io/140984",
                     autoSessionTracking: !1,
                     environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                    release: "discord_web-76eb661a77dc9cf6990c4555ca33774fa59bcb18",
+                    release: "discord_web-50975c7acb50dececeaec51640405faa433ff7cb",
                     beforeSend: function(t) {
                         return function(t) {
                             return null != t.exception && null != t.exception.values && t.exception.values.every((function(t) {
@@ -37147,8 +37148,8 @@
                     denyUrls: [/recaptcha/, /mobilediscord\.com/, /betterdiscord:\/\//]
                 });
                 var t;
-                X.YA("buildNumber", null !== (t = "236967") ? t : "");
-                X.YA("builtAt", String("1697209824251"));
+                X.YA("buildNumber", null !== (t = "236977") ? t : "");
+                X.YA("builtAt", String("1697212431188"));
                 var e = window.GLOBAL_ENV.SENTRY_TAGS;
                 if (null != e && "object" == typeof e)
                     for (var r in e) X.YA(r, e[r]);
@@ -48545,4 +48546,4 @@
         e(128594), e(535666), e(784633), e(678991)
     }
 ]);
-//# sourceMappingURL=6aa539c49c7fcead0b19.js.map
+//# sourceMappingURL=b609032f0dfa634f1be7.js.map
