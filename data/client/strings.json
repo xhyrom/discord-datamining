@@ -4994,6 +4994,7 @@
   "INVITE_CONTACTS_SEE_ALL": "\"See All\"",
   "INVITE_CONTACTS_DM_SUBHEADER": "\"Invite Contacts to Message\"",
   "INVITE_CONTACTS_INCENTIVIZED_SUCCESS_MESSAGE": "\"Invitation sent! You will receive a free Boost when they accept.\"",
+  "INVITE_CONTACTS_INCENTIVIZED_SUCCESS_MESSAGE_NEW_USER": "\"Invitation sent! You will receive a free month of Nitro when they accept.\"",
   "USER_SUMMARY_WITH_OTHERS": "\"{name} and {count, plural, one {1 other} other {{count} others}}\"",
   "USER_SUMMARY_ONE": "\"!!{first}!!\"",
   "USER_SUMMARY_TWO": "\"!!{first}!!, !!{second}!!\"",
