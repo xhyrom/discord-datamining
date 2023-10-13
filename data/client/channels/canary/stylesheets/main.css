@@ -140719,34 +140719,22 @@ input::-webkit-outer-spin-button {
     border-radius: var(--radius-sm)
 }
 
-.modalBody-3r6E4y {
-    padding: 16px;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: column;
-    flex-direction: column;
-    gap: 16px
+.modalHeader-1ZzUf6 {
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    overflow: hidden;
+    padding: 16px
 }
 
-.modalBody-3r6E4y,
-.modalHeader-1ZzUf6 {
+.modalHeader-1ZzUf6,
+.modalHeadings-3LBRJZ {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex
 }
 
-.modalHeader-1ZzUf6 {
-    -webkit-box-pack: justify;
-    -ms-flex-pack: justify;
-    justify-content: space-between;
-    padding: 0;
-    overflow: hidden
-}
-
 .modalHeadings-3LBRJZ {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
     -ms-flex-direction: column;
@@ -140764,7 +140752,7 @@ input::-webkit-outer-spin-button {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    padding: 0
+    padding: 0 16px
 }
 
 .modalPreview-2hTuZp {
@@ -140772,7 +140760,6 @@ input::-webkit-outer-spin-button {
 }
 
 .modalFooter-jdWlLy {
-    margin: -16px;
     padding: 16px
 }
 
@@ -154194,42 +154181,28 @@ html .invoiceCancelRow-3s2UuC {
 }
 
 .modalFooter-2Xpaik {
-    margin: -16px;
     padding: 16px
 }
 
 .buttonsRight-3JWUcH,
-.modalBody-3w24P1 {
+.modalHeader-QZFdV1 {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex
-}
-
-.modalBody-3w24P1 {
-    padding: 16px;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: column;
-    flex-direction: column;
-    gap: 16px
 }
 
 .modalHeader-QZFdV1 {
     -webkit-box-pack: justify;
     -ms-flex-pack: justify;
     justify-content: space-between;
-    padding: 0;
-    overflow: hidden
+    overflow: hidden;
+    padding: 16px
 }
 
-.modalHeader-QZFdV1,
 .modalHeadings-1FFBHj {
     display: -webkit-box;
     display: -ms-flexbox;
-    display: flex
-}
-
-.modalHeadings-1FFBHj {
+    display: flex;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
     -ms-flex-direction: column;
@@ -154260,7 +154233,7 @@ html .invoiceCancelRow-3s2UuC {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    padding: 2px
+    padding: 0 16px
 }
 
 .goToShopButton-2jWCIU {
@@ -176585,4 +176558,4 @@ html .invoiceCancelRow-dVOR64 {
     margin-bottom: 8px
 }
 
-/*# sourceMappingURL=40532.156e5e99fb35b0777dfc.css.map*/
+/*# sourceMappingURL=40532.764f582b427fa5eb94f1.css.map*/

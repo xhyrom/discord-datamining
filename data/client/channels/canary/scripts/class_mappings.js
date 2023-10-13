@@ -5009,7 +5009,6 @@
             e.exports = {
                 spinner: "spinner-4mFvw6",
                 modal: "modal-1A4ZZd",
-                modalBody: "modalBody-3r6E4y",
                 modalHeader: "modalHeader-1ZzUf6",
                 modalHeadings: "modalHeadings-3LBRJZ",
                 modalCloseButton: "modalCloseButton-3n0qvD",
@@ -20358,7 +20357,6 @@
                 modal: "modal-3Dr350",
                 modalFooter: "modalFooter-2Xpaik",
                 buttonsRight: "buttonsRight-3JWUcH",
-                modalBody: "modalBody-3w24P1",
                 modalHeader: "modalHeader-QZFdV1",
                 modalHeadings: "modalHeadings-1FFBHj",
                 modalCloseButton: "modalCloseButton-3UuEsg",
@@ -27151,4 +27149,4 @@
         }
     }
 ]);
-//# sourceMappingURL=f2c8e0b283395c3993ca.js.map
+//# sourceMappingURL=2af3c0a429694d0f8f44.js.map
