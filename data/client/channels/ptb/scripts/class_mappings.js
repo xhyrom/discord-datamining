@@ -25009,10 +25009,14 @@
                 embedField: "embedField-2kda1Q",
                 embedMedia: "embedMedia-1mdWSP",
                 embedSpotify: "embedSpotify-1rDvOE",
-                spoilerEmbed: "spoilerEmbed-1LYr3G",
-                hiddenSpoiler: "hiddenSpoiler-3pPzRF",
+                hiddenEmbed: "hiddenEmbed-2Apbq4",
+                isHidden: "isHidden-3nlQtC",
+                spoilerEmbed: "spoilerEmbed-1LYr3G hiddenEmbed-2Apbq4",
+                hiddenExplicitEmbed: "hiddenExplicitEmbed-5kvvta hiddenEmbed-2Apbq4",
                 justifyAuto: "justifyAuto-BLgJ2X",
-                spoilerAttachment: "spoilerAttachment-1QvPhn"
+                hiddenAttachment: "hiddenAttachment-zk6AAR",
+                spoilerAttachment: "spoilerAttachment-1QvPhn hiddenAttachment-zk6AAR",
+                hiddenExplicitAttachment: "hiddenExplicitAttachment-7zfu-W hiddenAttachment-zk6AAR"
             }
         },
         307174: e => {
@@ -25462,6 +25466,7 @@
                 spoilerContent: "spoilerContent-32CqO-",
                 hidden: "hidden-2lQZ5q",
                 spoilerContainer: "spoilerContainer-1Dl06W",
+                hiddenSpoiler: "hiddenSpoiler-k46d0j",
                 spoilerInnerContainer: "spoilerInnerContainer-1P_w0A",
                 obscureWarning: "obscureWarning-2jkWgh",
                 explicitContentWarning: "explicitContentWarning-3g11Df obscureWarning-2jkWgh",
@@ -26547,6 +26552,8 @@
                 inline: "inline-18PIBU",
                 hiddenAttachment: "hiddenAttachment-1ujFOi",
                 obscured: "obscured-20kiwN",
+                hiddenSpoiler: "hiddenSpoiler-2TgN7W",
+                hiddenExplicit: "hiddenExplicit-d1iVMh",
                 obscureVideo: "obscureVideo-9qK0C4",
                 attachmentContentItem: "attachmentContentItem-UKeiCx",
                 removeAttachmentButton: "removeAttachmentButton-1iO1qS",
@@ -27151,4 +27158,4 @@
         }
     }
 ]);
-//# sourceMappingURL=4782c64219c50a4502be.js.map
+//# sourceMappingURL=3e2e47502c02b842532d.js.map
