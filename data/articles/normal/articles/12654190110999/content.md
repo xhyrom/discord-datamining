@@ -109,7 +109,7 @@
 <p id="h_01H78Z0FRP3XAW6MR0KZPPG5ZK"><strong><span class="wysiwyg-font-size-large" style="color: #434343; --darkreader-inline-color: #beb8b0;" data-darkreader-inline-color="">Friends List</span></strong></p>
 <p>We moved the Friends list to be in the You tab. To see your existing friends, view pending friend requests, and add new friends, tap ‘Your Friends’ in the You tab.</p>
 <p id="h_01H78Z0859RBH3C2N9D06ACE2M"><span class="wysiwyg-font-size-large"><strong><span style="color: #434343; --darkreader-inline-color: #beb8b0;" data-darkreader-inline-color="">Settings </span></strong></span></p>
-<p>App Settings are still in this tab and you can now access them by tapping the gear icon at the top right of the “You” tab. </p>
+<p>App Settings are still in this tab and you can now access them by tapping the gear icon at the top right of the “You” tab. If you want to get to settings quickly, you can also double-tap the “You” tab icon at the bottom of the screen.</p>
 <p>You can now search within Settings. It’s a small but mighty improvement. Now, you don't have to waste time scrolling through every single setting to find what you're looking for. Simply type in the search bar and watch the magic happen.</p>
 <p class="wysiwyg-text-align-center"><img style="height: 567px; width: 289px;" src="https://lh6.googleusercontent.com/rR_j1trKIzHOtYJcF5LO5DdJdiGwwksxb6di27krnwgPbQ0f7cRvRIILMIX4XHpB4rGvKDF0XvDg8yh5asiDObWjwlmLtoTuca_PTpSVG8NNnU96AuVyAQuLFnDNexe6BBCpEFhobihMsbD6Z3qrwG4"></p>
 <h2 id="h_01H78Z01FFM9K93PXN98336N4X">Voice &amp; Video Calls</h2>
@@ -123,6 +123,7 @@
 <p>2. Open call details and settings</p>
 <p>3. Change audio to speakerphone</p>
 <p>4. Add friends to call</p>
+<p>When you're in a fullscreen activity or stream, double-tap to minimize it and get back to the rest of the call participants.</p>
 <h2 id="h_01H78YZV2T3S317NGYTXCTH7SP">Swipe to Reply</h2>
 <p>We added swipe-to-reply on messages for faster witty retorts. Simply swipe from right to left across a message in a DM or channel to reply to that message. </p>
 <p>Previously swiping from right to left across a channel or DM/GDM would take you to see the details of that chat such as pinned messages or a list of who is in the channel or DM/GDM. To access channel or DM/GDM details, tap on the name of the DM/GDM or Channel at the top of the screen.</p>
@@ -141,7 +142,7 @@
 <p><strong>Q: Where can I provide feedback?</strong></p>
 <p>A: If you are enrolled in the current testing program, you can provide feedback by navigating to the "You" tab in the bottom right corner of the app → tapping the “App Settings” gear icon in the top right → selecting “Appearance” → scrolling to the “New Layout” section → and selecting “Give us Feedback”</p>
 <p><strong>Q: Were there any changes to the layout of the Settings page?</strong></p>
-<p>A: No. There are no changes to the layout of the Settings page. However, the location has changed. You can find your Settings page in the "You" tab on the bottom right of the app via the gear icon in the top right of the "You" tab.</p>
+<p>A: Yes, the location has changed and we have added a search bar to Settings. You can find your Settings page in the "You" tab on the bottom right of the app via the gear icon in the top right of the "You" tab. If you want to get to settings quickly, you can also double tap the “You” tab icon at the bottom of the screen to jump to settings.</p>
 <p><strong>Q: I would like to go back to the original mobile app layout.</strong></p>
 <p>A: You can opt out of the new layout by navigating to the "You" tab  → “App Settings” → selecting “Appearance” → scrolling to the “New Layout” section → and turning off the toggle for “Show New Layout” If you choose to opt out, please also take a moment to provide feedback on the experience to help us improve.</p>
 <p><strong>Q: How many users are you testing this with and which countries is the test rolling out to?</strong></p>
