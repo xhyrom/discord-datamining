@@ -1,4 +1,4 @@
-/*! For license information please see 7fb127d5bd7f0379317d.js.LICENSE.txt */
+/*! For license information please see 8d1634b258737fee7e3e.js.LICENSE.txt */
 (this.webpackChunkdiscord_app = this.webpackChunkdiscord_app || []).push([
     [22897], {
         151131: (t, e, r) => {
@@ -24862,6 +24862,7 @@
                 t.SERVER_GUIDE_ACTION_COMPLETED = "server_guide_action_completed";
                 t.MEDIA_PICKER_INFINITE_SCROLL_PAGED = "media_picker_infinite_scroll_paged";
                 t.MESSAGE_MENU_GOOGLE_SEARCHED = "message_menu_google_searched";
+                t.EVENT_RINGTONE_TOGGLED = "event_ringtone_toggled";
                 t.DM_PROFILE_TOGGLED = "dm_profile_toggled";
                 t.DM_PROFILE_VIEWED = "dm_profile_viewed";
                 t.PREMIUM_WOW_MOMENT_VIEWED = "premium_wow_moment_viewed";
@@ -37121,7 +37122,7 @@
                     dsn: "https://fa97a90475514c03a42f80cd36d147c4@sentry.io/140984",
                     autoSessionTracking: !1,
                     environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                    release: "discord_web-de829414c5829670eec1fecb07462a377aa0547c",
+                    release: "discord_web-01bab0283821c5542eb4b1e036cf89680877a443",
                     beforeSend: function(t) {
                         return function(t) {
                             return null != t.exception && null != t.exception.values && t.exception.values.every((function(t) {
@@ -37148,8 +37149,8 @@
                     denyUrls: [/recaptcha/, /mobilediscord\.com/, /betterdiscord:\/\//]
                 });
                 var t;
-                X.YA("buildNumber", null !== (t = "237271") ? t : "");
-                X.YA("builtAt", String("1697242927424"));
+                X.YA("buildNumber", null !== (t = "237280") ? t : "");
+                X.YA("builtAt", String("1697244305931"));
                 var e = window.GLOBAL_ENV.SENTRY_TAGS;
                 if (null != e && "object" == typeof e)
                     for (var r in e) X.YA(r, e[r]);
@@ -48546,4 +48547,4 @@
         e(128594), e(535666), e(784633), e(678991)
     }
 ]);
-//# sourceMappingURL=7fb127d5bd7f0379317d.js.map
+//# sourceMappingURL=8d1634b258737fee7e3e.js.map
