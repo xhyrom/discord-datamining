@@ -115,7 +115,7 @@ export class Applications implements Module {
     }
     
     const body = await response.json();
-    if (body.code === 10002 && body.message.toLowerCase().includes("Unknown Application")) {
+    if (body.code === 10002) {
       return {
         type: "invalid"
       }
