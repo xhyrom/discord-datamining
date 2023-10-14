@@ -1,6 +1,6 @@
 <h1 id="docs-internal-guid-43a62b5f-7fff-aa4f-d9e8-24cdd405e5c4">What is Remix?</h1>
 <p>While chatting with your friends on Discord, you are bound to run into various images worthy of memeifying! With the <strong>Remix</strong> feature on Discord, you can now quickly and easily edit an existing image with your choice of text, drawings, emoji, and stickers. </p>
-<h3><span style="color: #434343;" data-darkreader-inline-color="">Note: Remix is currently in Beta and launching first in early access for Nitro members across iOS and Android. The Remix Beta is only available in the following languages: EN, IT, FR, DE, PT and ES. Stay tuned as we plan to expand into more languages soon!</span></h3>
+<h3 id="h_01HCNPEMWRW8MT2HMJQV7NQ74P"><span style="color: #434343;" data-darkreader-inline-color="">Note: Remix is currently in Beta and launching first in early access for Nitro members across iOS and Android. The Remix Beta is only available in the following languages: EN, IT, FR, DE, PT and ES. Stay tuned as we plan to expand into more languages soon!</span></h3>
 <p><span class="wysiwyg-font-size-large"><strong>What this article covers: </strong></span></p>
 <ul>
     <li><a href="#docs-internal-guid-43a62b5f-7fff-aa4f-d9e8-24cdd405e5c4" target="_self">What is Remix?</a></li>
@@ -71,7 +71,7 @@
 <p>2. Once the emoji picker is visible, select an emoji or sticker you would like to use. </p>
 <p>You can move emojis and stickers by dragging it or by placing two fingers on the screen to rotate. The size can also be adjusted by placing two fingers and moving them apart to reduce or enlarge. </p>
 <p class="wysiwyg-text-align-center"><img src="https://support.discord.com/hc/article_attachments/15317321007895" alt="stamping.gif" width="291" height="599"></p>
-<h3><span style="color: #434343;" data-darkreader-inline-color="">Note: Animated emojis or stickers will become static. </span></h3>
+<h3 id="h_01HCNPEMWSSD2X3BESBCAHWXFP"><span style="color: #434343;" data-darkreader-inline-color="">Note: Animated emojis or stickers will become static. </span></h3>
 <h2 id="h_01H2Y1EEMADE7FGZRBAM2GNVXP">Undoing Changes</h2>
 <p>While creating, you can use the undo option located above to reverse the previous action you have just taken.</p>
 <p class="wysiwyg-text-align-center"><img src="https://support.discord.com/hc/article_attachments/15317321009431" alt="undo.gif" width="290" height="600"></p>
