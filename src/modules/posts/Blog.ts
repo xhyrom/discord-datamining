@@ -211,6 +211,8 @@ export class Blog implements Module {
       const response = await fetch(post.link._text, {
         redirect: "follow",
       });
+      if (!response.ok) continue; // skip if not ok
+
       const body = await response.text();
       const dom = new JSDOM(body);
 
