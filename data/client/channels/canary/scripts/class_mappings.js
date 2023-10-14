@@ -18836,25 +18836,11 @@
         },
         917199: e => {
             e.exports = {
-                root: "root-1HajSY",
-                bodySubText: "bodySubText-1lRt2a",
-                splash: "splash-29Nh1t",
-                headerText: "headerText-2KZnDi",
                 nitroIconSubHeader: "nitroIconSubHeader-VCSFm-",
-                closeButton: "closeButton-tXzH7O",
-                video: "video-13zh9T",
-                content: "content-3YkBFL",
-                bodyText: "bodyText-9YTW2l",
                 termsApplyBodyText: "termsApplyBodyText-1sjlJc",
                 termsApplyAnchor: "termsApplyAnchor-3r1D-z",
-                featureCardGroup: "featureCardGroup-2DxKq5",
-                featureCard: "featureCard-37wVa-",
-                featureCardImg: "featureCardImg-rz2qAH",
-                featureCardTextGroup: "featureCardTextGroup-eGkGYR",
-                featureCardTextHeader: "featureCardTextHeader-7LOL3-",
                 buttonWide: "buttonWide-3oGdx2",
-                innerButton: "innerButton-gRn8RE",
-                earlyAccessTag: "earlyAccessTag-s1_WiT"
+                innerButton: "innerButton-gRn8RE"
             }
         },
         621324: e => {
@@ -18893,6 +18879,25 @@
                 upsellText: "upsellText-xTV86p",
                 getNitroButton: "getNitroButton-1GtCqk",
                 getNitroButtonContents: "getNitroButtonContents-2Khbjz"
+            }
+        },
+        408532: e => {
+            e.exports = {
+                root: "root-2GYkVi",
+                splash: "splash-2Yb1wA",
+                headerText: "headerText-KAU_Cg",
+                closeButton: "closeButton-2xkTN1",
+                video: "video-w82t7q",
+                content: "content-3deQfB",
+                bodyText: "bodyText-3a6PQl",
+                featureCardGroup: "featureCardGroup-36ON_L",
+                wideStyle: "wideStyle-29ZhEw",
+                featureCard: "featureCard-Fyw01v",
+                featureCardImg: "featureCardImg-vtL1tc",
+                featureCardTextGroup: "featureCardTextGroup-2F37GN",
+                featureCardTextHeader: "featureCardTextHeader-dG1_gE",
+                featureCardTag: "featureCardTag-2S53-F",
+                tag: "tag-3aNT7f"
             }
         },
         225504: e => {
@@ -27158,4 +27163,4 @@
         }
     }
 ]);
-//# sourceMappingURL=0b884e704368ed8bfd09.js.map
+//# sourceMappingURL=945cf10802af24123f54.js.map

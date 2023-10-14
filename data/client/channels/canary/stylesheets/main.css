@@ -151020,48 +151020,34 @@ html .invoiceCancelRow-3s2UuC {
     }
 }
 
-.root-1HajSY {
+.root-2GYkVi {
     width: 700px;
     max-height: 880px;
     border-radius: 8px;
     overflow: hidden
 }
 
-.theme-dark .root-1HajSY {
+.theme-dark .root-2GYkVi {
     background: var(--background-primary)
 }
 
-.theme-dark .bodySubText-1lRt2a {
-    color: var(--interactive-hover)
-}
-
-.theme-light .root-1HajSY {
+.theme-light .root-2GYkVi {
     background: linear-gradient(20.94deg, var(--white-530) 56.05%, #fff 88.71%)
 }
 
-.theme-light .bodySubText-1lRt2a {
-    color: var(--interactive-normal)
-}
-
-.splash-29Nh1t {
+.splash-2Yb1wA {
     position: absolute;
     top: 31%
 }
 
-.headerText-2KZnDi {
+.headerText-KAU_Cg {
     width: 492px;
     margin-top: 40px;
     text-align: center;
     color: var(--header-primary)
 }
 
-.nitroIconSubHeader-VCSFm- {
-    width: 16px;
-    height: 16px;
-    margin-right: 4px
-}
-
-.closeButton-tXzH7O {
+.closeButton-2xkTN1 {
     position: absolute;
     top: 24px;
     right: 24px;
@@ -151070,13 +151056,13 @@ html .invoiceCancelRow-3s2UuC {
     z-index: 5
 }
 
-.video-13zh9T {
+.video-w82t7q {
     border-radius: 8px;
     margin-top: 16px;
     margin-bottom: 14px
 }
 
-.content-3YkBFL {
+.content-3deQfB {
     padding-bottom: 24px;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -151091,28 +151077,16 @@ html .invoiceCancelRow-3s2UuC {
     word-break: break-word
 }
 
-.bodyText-9YTW2l {
+.bodyText-3a6PQl {
+    text-align: center;
+    max-width: 500px;
     color: var(--header-primary)
 }
 
-.bodyText-9YTW2l,
-.termsApplyBodyText-1sjlJc {
-    text-align: center;
-    max-width: 500px
-}
-
-.termsApplyBodyText-1sjlJc {
-    padding-top: 8px;
-    color: var(--text-normal);
-    text-decoration: underline;
-    text-underline-offset: 2px
-}
-
-.termsApplyAnchor-3r1D-z:hover {
-    text-decoration: none
-}
-
-.featureCardGroup-2DxKq5 {
+.featureCardGroup-36ON_L {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
     -ms-flex-wrap: wrap;
     flex-wrap: wrap;
     margin-top: 12px;
@@ -151124,18 +151098,22 @@ html .invoiceCancelRow-3s2UuC {
     position: relative
 }
 
-.featureCard-37wVa-,
-.featureCardGroup-2DxKq5 {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex
+.featureCardGroup-36ON_L.wideStyle-29ZhEw {
+    margin-left: 16px;
+    -webkit-column-gap: 10px;
+    -moz-column-gap: 10px;
+    column-gap: 10px;
+    row-gap: 10px
 }
 
-.featureCard-37wVa- {
+.featureCard-Fyw01v {
     width: 212px;
     min-height: 130px;
     background: var(--background-secondary-alt);
     border-radius: 11px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
     -ms-flex-direction: column;
@@ -151145,11 +151123,27 @@ html .invoiceCancelRow-3s2UuC {
     align-items: center
 }
 
-.featureCardImg-rz2qAH {
+.featureCard-Fyw01v.wideStyle-29ZhEw {
+    width: 317px;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row
+}
+
+.featureCardImg-vtL1tc {
     padding: 24px 16px 0
 }
 
-.featureCardTextGroup-eGkGYR {
+.featureCardImg-vtL1tc.wideStyle-29ZhEw {
+    padding: 0 16px;
+    width: 88px
+}
+
+.featureCardTextGroup-2F37GN {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -151160,8 +151154,47 @@ html .invoiceCancelRow-3s2UuC {
     padding: 12px
 }
 
-.featureCardTextHeader-7LOL3- {
+.featureCardTextGroup-2F37GN.wideStyle-29ZhEw {
+    padding: 24px 12px
+}
+
+.featureCardTextHeader-dG1_gE {
     padding-bottom: 4px
+}
+
+.featureCardTag-2S53-F {
+    top: -8px;
+    left: 16px;
+    position: absolute;
+    border-radius: 10px;
+    color: #fff;
+    background: var(--custom-premium-colors-premium-gradient-tier-2)
+}
+
+.tag-3aNT7f {
+    background-color: var(--brand-experiment);
+    font-size: 12px;
+    line-height: 16px;
+    padding: 0 6px
+}
+
+.nitroIconSubHeader-VCSFm- {
+    width: 16px;
+    height: 16px;
+    margin-right: 4px
+}
+
+.termsApplyBodyText-1sjlJc {
+    text-align: center;
+    max-width: 500px;
+    padding-top: 8px;
+    color: var(--text-normal);
+    text-decoration: underline;
+    text-underline-offset: 2px
+}
+
+.termsApplyAnchor-3r1D-z:hover {
+    text-decoration: none
 }
 
 .buttonWide-3oGdx2 {
@@ -151177,15 +151210,6 @@ html .invoiceCancelRow-3s2UuC {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex
-}
-
-.earlyAccessTag-s1_WiT {
-    top: -8px;
-    left: 16px;
-    position: absolute;
-    border-radius: 10px;
-    color: #fff;
-    background: var(--custom-premium-colors-premium-gradient-tier-2)
 }
 
 .premiumProfilePreviewModal-2my5tu {
@@ -176606,4 +176630,4 @@ html .invoiceCancelRow-dVOR64 {
     margin-bottom: 8px
 }
 
-/*# sourceMappingURL=40532.678cbf3dfe4ead53d26b.css.map*/
+/*# sourceMappingURL=40532.bee28db395594d0b0dfa.css.map*/
