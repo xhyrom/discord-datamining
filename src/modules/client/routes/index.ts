@@ -137,7 +137,7 @@ export class Routes implements Module {
           allowed_methods: oldRoutes[name]?.allowed_methods ?? null,
         };
 
-        I++;
+        i++;
         continue;
       }
 
