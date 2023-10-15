@@ -129,8 +129,15 @@ export class Routes implements Module {
         i++;
         continue;
       }
-      if (res.status !== 200) {
+      if (!res.ok) {
         console.log(`Potentional outage ${url} ${res.text} (${res.status})`);
+
+        result[name] = {
+          url,
+          allowed_methods: oldRoutes[name]?.allowed_methods ?? null,
+        };
+
+        I++;
         continue;
       }
 
