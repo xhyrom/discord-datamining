@@ -24,6 +24,19 @@
             ]
           }
         ]
+      },
+      {
+        "buckets": {
+          "none": {
+            "rollout": [
+              {
+                "start": 500,
+                "end": 10000
+              }
+            ]
+          }
+        },
+        "filters": []
       }
     ],
     "revision": 0,

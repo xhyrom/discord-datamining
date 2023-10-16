@@ -42,10 +42,10 @@
       },
       {
         "buckets": {
-          "none": {
+          "1": {
             "rollout": [
               {
-                "start": 0,
+                "start": 5000,
                 "end": 10000
               }
             ]
