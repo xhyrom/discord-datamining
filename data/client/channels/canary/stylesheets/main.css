@@ -30202,6 +30202,7 @@ html.disable-forced-colors * {
 }
 
 :root {
+    --radius-none: 0px;
     --radius-xs: 4px;
     --radius-sm: 8px;
     --radius-md: 12px;
@@ -176715,4 +176716,4 @@ html .invoiceCancelRow-dVOR64 {
     margin-bottom: 8px
 }
 
-/*# sourceMappingURL=40532.260027fb01cb7aecca59.css.map*/
+/*# sourceMappingURL=40532.9acdfb96a71292859b69.css.map*/
