@@ -112484,17 +112484,8 @@ button.button-12Fmur.disabled-GROwTe {
 
 .sizeGizmo-2e2TJ3 {
     position: absolute;
-    bottom: -10px;
-    left: 50%;
-    -webkit-transform: translate(-50%, -100%);
-    transform: translate(-50%, -100%);
-    z-index: 1000
-}
-
-.sizeGizmoExpanded-1DrihT {
-    -webkit-transform: translate(-50%);
-    transform: translate(-50%);
-    bottom: 0
+    top: 0;
+    right: 0
 }
 
 .sizeGizmoText-3iC3QK {
@@ -112514,11 +112505,10 @@ button.button-12Fmur.disabled-GROwTe {
 }
 
 .subscriberNitroHome-2_AaPs {
-    -webkit-transition: all .4s ease-out;
-    transition: all .4s ease-out;
-    overflow: hidden;
-    padding-bottom: 40px;
-    margin-bottom: -20px
+    max-height: 2000px;
+    -webkit-transition: max-height .4s ease-in-out;
+    transition: max-height .4s ease-in-out;
+    overflow: hidden
 }
 
 .subscriberNitroHome-2_AaPs.reducedMotion-37y367 {
@@ -112527,26 +112517,7 @@ button.button-12Fmur.disabled-GROwTe {
 }
 
 .partiallyHidden-3nbrXP {
-    padding-bottom: 0;
-    margin-bottom: 0
-}
-
-.customButton-1_-Ifg {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    padding: 8px 8px 8px 16px;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    justify-content: center;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
-    gap: 4px;
-    background-color: var(--background-tertiary);
-    color: var(--text-normal);
-    font-size: 14px;
-    border-radius: 24px
+    max-height: 500px
 }
 
 .cover-2KjMR5 {
@@ -112555,9 +112526,8 @@ button.button-12Fmur.disabled-GROwTe {
     left: 0;
     right: 0;
     height: 30%;
-    pointer-events: none;
-    background-image: -webkit-gradient(linear, left top, left bottom, from(hsl(var(--primary-630-hsl)/0)), color-stop(85%, var(--background-primary)));
-    background-image: linear-gradient(180deg, hsl(var(--primary-630-hsl)/0) 0, var(--background-primary) 85%);
+    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(10%, hsl(var(--primary-630-hsl)/0)), color-stop(85%, var(--background-primary)));
+    background-image: linear-gradient(180deg, hsl(var(--primary-630-hsl)/0) 10%, var(--background-primary) 85%);
     -webkit-transition: opacity .4s ease-in-out;
     transition: opacity .4s ease-in-out
 }
@@ -176708,4 +176678,4 @@ html .invoiceCancelRow-dVOR64 {
     margin-bottom: 8px
 }
 
-/*# sourceMappingURL=40532.9678bc6ec41b369f5e98.css.map*/
+/*# sourceMappingURL=40532.652660d5422023b8bcff.css.map*/
