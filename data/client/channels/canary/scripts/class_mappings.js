@@ -19868,6 +19868,7 @@
                 bigPerkArt: "bigPerkArt-2WsBZm",
                 perksCardArt: "perksCardArt-2uOSXb",
                 smallPerkCardContainer: "smallPerkCardContainer-1Ee4A2",
+                smallPerkCardContainerExpanded: "smallPerkCardContainerExpanded-1GGu3N",
                 smallPerkCard: "smallPerkCard-39W9m_",
                 smallPerkCardNewBadge: "smallPerkCardNewBadge-3wnxII",
                 smallPerkCardHeading: "smallPerkCardHeading-RHhIVb",
@@ -19891,11 +19892,13 @@
                 newTag: "newTag-1dxayD",
                 betaTag: "betaTag-Du-GmI",
                 sizeGizmo: "sizeGizmo-2e2TJ3",
+                sizeGizmoExpanded: "sizeGizmoExpanded-1DrihT",
                 sizeGizmoText: "sizeGizmoText-3iC3QK",
                 arrow: "arrow-aRp2RJ",
                 subscriberNitroHome: "subscriberNitroHome-2_AaPs",
-                reducedMotion: "reducedMotion-37y367",
                 partiallyHidden: "partiallyHidden-3nbrXP",
+                reducedMotion: "reducedMotion-37y367",
+                customButton: "customButton-1_-Ifg",
                 cover: "cover-2KjMR5",
                 hidden: "hidden-1HKjZ1"
             }
@@ -27175,4 +27178,4 @@
         }
     }
 ]);
-//# sourceMappingURL=2c0766b48b6b4df41f60.js.map
+//# sourceMappingURL=329bd93ec383b9ce2071.js.map
