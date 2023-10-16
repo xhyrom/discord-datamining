@@ -1,4 +1,4 @@
-/*! For license information please see e388007646c5919ebbb6.js.LICENSE.txt */
+/*! For license information please see 3076fa1c76211afd581d.js.LICENSE.txt */
 (this.webpackChunkdiscord_app = this.webpackChunkdiscord_app || []).push([
     [22897], {
         151131: (t, e, r) => {
@@ -23945,7 +23945,6 @@
                 t.PREMIUM_SUBSCRIPTION_CREATED = "PREMIUM_SUBSCRIPTION_CREATED";
                 t.MEDIA_MODAL_CLOSE = "MEDIA_MODAL_CLOSE";
                 t.VOICE_MESSAGE_PLAYBACK_STARTED = "VOICE_MESSAGE_PLAYBACK_STARTED";
-                t.VOICE_MESSAGE_SEND = "VOICE_MESSAGE_SEND";
                 t.VIDEO_EMBED_PLAYBACK_STARTED = "VIDEO_EMBED_PLAYBACK_STARTED";
                 t.VOICE_PANEL_OPEN = "VOICE_PANEL_OPEN";
                 t.VOICE_PANEL_CLOSE = "VOICE_PANEL_CLOSE";
@@ -23954,7 +23953,8 @@
             }(Ar || (Ar = {}));
             ! function(t) {
                 t.TOGGLE_REACTION_POPOUT = "TOGGLE_REACTION_POPOUT";
-                t.ANIMATE_CHAT_AVATAR = "ANIMATE_CHAT_AVATAR"
+                t.ANIMATE_CHAT_AVATAR = "ANIMATE_CHAT_AVATAR";
+                t.VOICE_MESSAGE_SEND = "VOICE_MESSAGE_SEND"
             }(Tr || (Tr = {}));
             var Nr, Or, pr, hr, Sr = 50;
             ! function(t) {
@@ -24862,6 +24862,7 @@
                 t.SERVER_GUIDE_ACTION_COMPLETED = "server_guide_action_completed";
                 t.MEDIA_PICKER_INFINITE_SCROLL_PAGED = "media_picker_infinite_scroll_paged";
                 t.MESSAGE_MENU_GOOGLE_SEARCHED = "message_menu_google_searched";
+                t.EVENT_RINGTONE_TOGGLED = "event_ringtone_toggled";
                 t.DM_PROFILE_TOGGLED = "dm_profile_toggled";
                 t.DM_PROFILE_VIEWED = "dm_profile_viewed";
                 t.PREMIUM_WOW_MOMENT_VIEWED = "premium_wow_moment_viewed";
@@ -25553,7 +25554,8 @@
                 t.SERVER_SUBSCRIPTION_AND_PRODUCTS = "10423011974551";
                 t.SERVER_PRODUCTS = "10423011974551#docs-internal-guid-918e991a-7fff-03d5-8326-5d065e5edeb1";
                 t.WIN32_DEPRECATE = "17997797368471";
-                t.PROFILE_BADGES = "360035962891"
+                t.PROFILE_BADGES = "360035962891";
+                t.EXPLICIT_MEDIA_REDACTION = " 18210995019671"
             }(Dn || (Dn = {}));
             var gn, Un, Pn, Mn, mn, Gn = function(t) {
                     return "https://www.youtube.com/embed/".concat(t)
@@ -37120,7 +37122,7 @@
                     dsn: "https://fa97a90475514c03a42f80cd36d147c4@sentry.io/140984",
                     autoSessionTracking: !1,
                     environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                    release: "discord_web-4025e119282f8a6a465f5569b1e911a7416a49ec",
+                    release: "discord_web-c8efe13f4537780a42bc79a2dc07905f426bab90",
                     beforeSend: function(t) {
                         return function(t) {
                             return null != t.exception && null != t.exception.values && t.exception.values.every((function(t) {
@@ -37147,8 +37149,8 @@
                     denyUrls: [/recaptcha/, /mobilediscord\.com/, /betterdiscord:\/\//]
                 });
                 var t;
-                X.YA("buildNumber", null !== (t = "236850") ? t : "");
-                X.YA("builtAt", String("1697150199825"));
+                X.YA("buildNumber", null !== (t = "237546") ? t : "");
+                X.YA("builtAt", String("1697489544266"));
                 var e = window.GLOBAL_ENV.SENTRY_TAGS;
                 if (null != e && "object" == typeof e)
                     for (var r in e) X.YA(r, e[r]);
@@ -48545,4 +48547,4 @@
         e(128594), e(535666), e(784633), e(678991)
     }
 ]);
-//# sourceMappingURL=e388007646c5919ebbb6.js.map
+//# sourceMappingURL=3076fa1c76211afd581d.js.map
