@@ -8969,13 +8969,13 @@
             "1": {
               "rollout": [
                 {
+                  "start": 0,
+                  "end": 2500
+                },
+                {
                   "start": 2500,
                   "end": 5000
-                }
-              ]
-            },
-            "none": {
-              "rollout": [
+                },
                 {
                   "start": 5000,
                   "end": 10000
@@ -9018,7 +9018,7 @@
           "filters": []
         }
       ],
-      "revision": 1,
+      "revision": 2,
       "overrides": {},
       "overrides_formatted": [
         {
