@@ -1,0 +1,37 @@
+{
+  "data": {
+    "kind": "guild",
+    "hash": 1769978089
+  },
+  "rollout": {
+    "populations": [
+      {
+        "buckets": {
+          "none": {
+            "rollout": [
+              {
+                "start": 0,
+                "end": 10000
+              }
+            ]
+          }
+        },
+        "filters": [
+          {
+            "type": "guild_has_feature",
+            "features": [
+              "INTERNAL_EMPLOYEE_ONLY"
+            ]
+          }
+        ]
+      }
+    ],
+    "revision": 0,
+    "overrides": {
+      "1": [
+        "651595875897835540"
+      ]
+    },
+    "overrides_formatted": []
+  }
+}
