@@ -166276,7 +166276,8 @@ html .invoiceCancelRow-3s2UuC {
     left: -10px
 }
 
-.container-glqsPC {
+.container-glqsPC,
+.emptyPage-2BXsNA {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -166284,6 +166285,20 @@ html .invoiceCancelRow-3s2UuC {
     -webkit-box-direction: normal;
     -ms-flex-direction: column;
     flex-direction: column
+}
+
+.emptyPage-2BXsNA {
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    gap: 8px
+}
+
+div.nagbar-5a6j1M {
+    border-radius: 0 0 10px 10px
 }
 
 .list-2kUvmJ {
@@ -166380,6 +166395,10 @@ html .invoiceCancelRow-3s2UuC {
     position: relative;
     overflow-y: auto;
     overflow-x: hidden
+}
+
+.contentPanelNagbar-3Y1Yr0 {
+    margin-top: -24px
 }
 
 .description-21ac5O {
@@ -176689,4 +176708,4 @@ html .invoiceCancelRow-dVOR64 {
     margin-bottom: 8px
 }
 
-/*# sourceMappingURL=40532.285df63e5dc9ff9dab6d.css.map*/
+/*# sourceMappingURL=40532.dbd3d56a89b5afb7eda9.css.map*/
