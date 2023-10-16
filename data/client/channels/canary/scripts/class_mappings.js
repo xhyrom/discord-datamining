@@ -18867,6 +18867,15 @@
                 tag: "tag-3aNT7f"
             }
         },
+        586271: e => {
+            e.exports = {
+                nitroIconSubHeader: "nitroIconSubHeader-_QuFvv",
+                termsApplyBodyText: "termsApplyBodyText-3OCICg",
+                termsApplyAnchor: "termsApplyAnchor-3xz78k",
+                buttonWide: "buttonWide-1P1wWr",
+                innerButton: "innerButton-rYe1Qx"
+            }
+        },
         225504: e => {
             e.exports = {
                 bogoTrialBadge: "bogoTrialBadge-2-iWF2",
@@ -27165,4 +27174,4 @@
         }
     }
 ]);
-//# sourceMappingURL=6dc41e82b494e6f1677f.js.map
+//# sourceMappingURL=aeca172c96413de5e699.js.map
