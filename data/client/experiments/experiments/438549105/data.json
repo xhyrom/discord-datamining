@@ -1,0 +1,21 @@
+{
+  "data": {
+    "kind": "user",
+    "id": "2023-08_explicit_media_redaction_teen",
+    "label": "Explicit Media Redaction for Teens",
+    "description": [
+      "Not Eligible",
+      "Control Bucket",
+      "Treatment 1: Enable explicit media redaction for teens"
+    ],
+    "hash": 438549105,
+    "buckets": [
+      -1,
+      0,
+      1
+    ],
+    "config_keys": [
+      "enabled"
+    ]
+  }
+}
