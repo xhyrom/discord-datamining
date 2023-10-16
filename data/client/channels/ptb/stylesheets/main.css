@@ -112363,6 +112363,10 @@ button.button-12Fmur.disabled-GROwTe {
     margin-bottom: 32px
 }
 
+.smallPerkCardContainerExpanded-1GGu3N {
+    margin-bottom: 16px
+}
+
 .smallPerkCard-39W9m_ {
     position: relative;
     background-color: var(--background-secondary-alt);
@@ -112484,14 +112488,27 @@ button.button-12Fmur.disabled-GROwTe {
 
 .sizeGizmo-2e2TJ3 {
     position: absolute;
-    top: 0;
-    right: 0
+    bottom: 0;
+    left: 50%;
+    -webkit-transform: translate(-50%, -100%);
+    transform: translate(-50%, -100%);
+    z-index: 1000
 }
 
+.sizeGizmoExpanded-1DrihT {
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center
+}
+
+.sizeGizmoExpanded-1DrihT,
 .sizeGizmoText-3iC3QK {
     display: -webkit-box;
     display: -ms-flexbox;
-    display: flex;
+    display: flex
+}
+
+.sizeGizmoText-3iC3QK {
     -webkit-box-pack: end;
     -ms-flex-pack: end;
     justify-content: flex-end;
@@ -112511,6 +112528,7 @@ button.button-12Fmur.disabled-GROwTe {
     overflow: hidden
 }
 
+.partiallyHidden-3nbrXP,
 .subscriberNitroHome-2_AaPs.reducedMotion-37y367 {
     -webkit-transition: none;
     transition: none
@@ -112520,12 +112538,31 @@ button.button-12Fmur.disabled-GROwTe {
     max-height: 500px
 }
 
+.customButton-1_-Ifg {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    padding: 8px 8px 8px 16px;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    gap: 4px;
+    background-color: var(--background-tertiary);
+    color: var(--text-normal);
+    font-size: 14px;
+    border-radius: 24px
+}
+
 .cover-2KjMR5 {
     position: absolute;
     bottom: 0;
     left: 0;
     right: 0;
     height: 30%;
+    pointer-events: none;
     background-image: -webkit-gradient(linear, left top, left bottom, color-stop(10%, hsl(var(--primary-630-hsl)/0)), color-stop(85%, var(--background-primary)));
     background-image: linear-gradient(180deg, hsl(var(--primary-630-hsl)/0) 10%, var(--background-primary) 85%);
     -webkit-transition: opacity .4s ease-in-out;
@@ -176678,4 +176715,4 @@ html .invoiceCancelRow-dVOR64 {
     margin-bottom: 8px
 }
 
-/*# sourceMappingURL=40532.652660d5422023b8bcff.css.map*/
+/*# sourceMappingURL=40532.260027fb01cb7aecca59.css.map*/
