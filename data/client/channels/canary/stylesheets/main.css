@@ -112651,8 +112651,8 @@ button.button-12Fmur.disabled-GROwTe {
     -webkit-transition: all .2s ease-in-out;
     transition: all .2s ease-in-out;
     border-radius: 20px;
-    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(30%, #000), color-stop(80%, rgba(0, 0, 0, .5)));
-    background-image: linear-gradient(180deg, #000 30%, rgba(0, 0, 0, .5) 80%);
+    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(60%, #000), color-stop(80%, rgba(0, 0, 0, .5)));
+    background-image: linear-gradient(180deg, #000 60%, rgba(0, 0, 0, .5) 80%);
     z-index: 20
 }
 
@@ -112665,10 +112665,10 @@ button.button-12Fmur.disabled-GROwTe {
 }
 
 .cardDescription-1H1_9e button {
-    margin-top: 24px;
-    -ms-flex-item-align: center;
-    align-self: center;
-    min-width: 180px
+    position: absolute;
+    left: 24px;
+    right: 24px;
+    bottom: 24px
 }
 
 .reducedMotion-3Fy4k_ .cardDescription-1H1_9e {
@@ -176660,4 +176660,4 @@ html .invoiceCancelRow-dVOR64 {
     margin-bottom: 8px
 }
 
-/*# sourceMappingURL=40532.7cb569ae921afb878ebe.css.map*/
+/*# sourceMappingURL=40532.1eb8af4ce4b3c71150df.css.map*/
