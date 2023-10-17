@@ -4582,7 +4582,12 @@
   },
   "CLYDE_PROFILES_GENERATE_PERSONALITY": {
     "url": "/clyde-profiles/generate-personality",
-    "allowed_methods": null
+    "allowed_methods": [
+      "GET",
+      "HEAD",
+      "OPTIONS",
+      "POST"
+    ]
   },
   "POLL_ANSWERS": {
     "url": "/channels/:param/polls/:param/answers",
