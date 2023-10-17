@@ -24,6 +24,69 @@
     "populations": [
       {
         "buckets": {
+          "1": {
+            "rollout": [
+              {
+                "start": 2000,
+                "end": 4000
+              }
+            ]
+          },
+          "none": {
+            "rollout": [
+              {
+                "start": 4000,
+                "end": 10000
+              }
+            ]
+          }
+        },
+        "filters": [
+          {
+            "type": "guild_has_feature",
+            "features": [
+              "COMMUNITY"
+            ]
+          },
+          {
+            "type": "guild_member_count_range",
+            "min_count": 200,
+            "max_count": null
+          },
+          {
+            "type": "guild_in_range_by_hash",
+            "hash_key": 386483746,
+            "target": 10000
+          }
+        ]
+      },
+      {
+        "buckets": {
+          "none": {
+            "rollout": [
+              {
+                "start": 0,
+                "end": 10000
+              }
+            ]
+          }
+        },
+        "filters": [
+          {
+            "type": "guild_has_feature",
+            "features": [
+              "COMMUNITY"
+            ]
+          },
+          {
+            "type": "guild_member_count_range",
+            "min_count": 200,
+            "max_count": null
+          }
+        ]
+      },
+      {
+        "buckets": {
           "none": {
             "rollout": [
               {
@@ -36,7 +99,7 @@
         "filters": []
       }
     ],
-    "revision": 0,
+    "revision": 1,
     "overrides": {},
     "overrides_formatted": [
       {
