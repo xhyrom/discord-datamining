@@ -3369,7 +3369,11 @@
   },
   "GUILD_EVENT_EXCEPTION": {
     "url": "/guilds/:param/scheduled-events/:param/exceptions/:param",
-    "allowed_methods": null
+    "allowed_methods": [
+      "DELETE",
+      "OPTIONS",
+      "PATCH"
+    ]
   },
   "MEMBER_SAFETY_SUPPLEMENTAL": {
     "url": "/guilds/:param/members/supplemental",
