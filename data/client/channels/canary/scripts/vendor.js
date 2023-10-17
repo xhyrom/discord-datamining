@@ -1,4 +1,4 @@
-/*! For license information please see 4e92d87b9be4913a70b4.js.LICENSE.txt */
+/*! For license information please see 8494bd701c3d6e86daa1.js.LICENSE.txt */
 (this.webpackChunkdiscord_app = this.webpackChunkdiscord_app || []).push([
     [22897], {
         151131: (t, e, r) => {
@@ -21036,6 +21036,7 @@
                 t.AUTHORIZE_IP = "Authorize Ip";
                 t.REJECT_IP = "Reject Ip";
                 t.REJECT_MFA = "Reject MFA";
+                t.REPORT = "Report Illegal Content";
                 t.AUTHORIZE_PAYMENT = "Authorize Payment";
                 t.RESET = "Reset";
                 t.HANDOFF = "Handoff";
@@ -21048,8 +21049,8 @@
                 t.SEND_FAILED = "SEND_FAILED"
             }(j || (j = {}));
             var z, Z, $, q, J, Q, tt, et, rt, nt, at, it, ot, _t, st, Et = new Set([G.u.REPLY, G.u.THREAD_STARTER_MESSAGE]),
-                ct = Object.freeze((x(z = {}, G.u.DEFAULT, !0), x(z, G.u.CHANNEL_PINNED_MESSAGE, !0), x(z, G.u.USER_JOIN, !0), x(z, G.u.GUILD_BOOST, !0),
-                    x(z, G.u.GUILD_BOOST_TIER_1, !0), x(z, G.u.GUILD_BOOST_TIER_2, !0), x(z, G.u.GUILD_BOOST_TIER_3, !0), x(z, G.u.CHANNEL_FOLLOW_ADD, !0), x(z, G.u.THREAD_CREATED, !0), x(z, G.u.REPLY, !0), x(z, G.u.CHAT_INPUT_COMMAND, !0), x(z, G.u.GUILD_INVITE_REMINDER, !0), x(z, G.u.CONTEXT_MENU_COMMAND, !0), x(z, G.u.AUTO_MODERATION_ACTION, !0), x(z, G.u.ROLE_SUBSCRIPTION_PURCHASE, !0), x(z, G.u.INTERACTION_PREMIUM_UPSELL, !0), x(z, G.u.STAGE_START, !0), x(z, G.u.STAGE_END, !0), x(z, G.u.STAGE_TOPIC, !0), x(z, G.u.STAGE_SPEAKER, !0), x(z, G.u.GUILD_APPLICATION_PREMIUM_SUBSCRIPTION, !0), x(z, G.u.GUILD_DEADCHAT_REVIVE_PROMPT, !0), z));
+                ct = Object.freeze((x(z = {}, G.u.DEFAULT, !0), x(z, G.u.CHANNEL_PINNED_MESSAGE, !0),
+                    x(z, G.u.USER_JOIN, !0), x(z, G.u.GUILD_BOOST, !0), x(z, G.u.GUILD_BOOST_TIER_1, !0), x(z, G.u.GUILD_BOOST_TIER_2, !0), x(z, G.u.GUILD_BOOST_TIER_3, !0), x(z, G.u.CHANNEL_FOLLOW_ADD, !0), x(z, G.u.THREAD_CREATED, !0), x(z, G.u.REPLY, !0), x(z, G.u.CHAT_INPUT_COMMAND, !0), x(z, G.u.GUILD_INVITE_REMINDER, !0), x(z, G.u.CONTEXT_MENU_COMMAND, !0), x(z, G.u.AUTO_MODERATION_ACTION, !0), x(z, G.u.ROLE_SUBSCRIPTION_PURCHASE, !0), x(z, G.u.INTERACTION_PREMIUM_UPSELL, !0), x(z, G.u.STAGE_START, !0), x(z, G.u.STAGE_END, !0), x(z, G.u.STAGE_TOPIC, !0), x(z, G.u.STAGE_SPEAKER, !0), x(z, G.u.GUILD_APPLICATION_PREMIUM_SUBSCRIPTION, !0), x(z, G.u.GUILD_DEADCHAT_REVIVE_PROMPT, !0), z));
             ! function(t) {
                 t[t.CROSSPOSTED = 1] = "CROSSPOSTED";
                 t[t.IS_CROSSPOST = 2] = "IS_CROSSPOST";
@@ -22741,10 +22742,10 @@
                     GUILD_PRODUCT: function(t, e) {
                         return "/channels/".concat(t, "/shop/").concat(e)
                     },
-                    COLLECTIBLES_SHOP: "/shop"
+                    COLLECTIBLES_SHOP: "/shop",
+                    REPORT: "/report"
                 }),
-                Dt = (0,
-                    B.F)(St),
+                Dt = (0, B.F)(St),
                 Ct = (0, B.F)(Lt, [":", "?", "@"]);
             ! function(t) {
                 t.ANY = "$any";
@@ -25563,7 +25564,8 @@
                 t.SERVER_PRODUCTS = "10423011974551#docs-internal-guid-918e991a-7fff-03d5-8326-5d065e5edeb1";
                 t.WIN32_DEPRECATE = "17997797368471";
                 t.PROFILE_BADGES = "360035962891";
-                t.EXPLICIT_MEDIA_REDACTION = " 18210995019671"
+                t.EXPLICIT_MEDIA_REDACTION = " 18210995019671";
+                t.COPYRIGHT_AND_IP_POLICY = "4410339349655"
             }(Dn || (Dn = {}));
             var gn, Un, Pn, Mn, mn, Gn = function(t) {
                     return "https://www.youtube.com/embed/".concat(t)
@@ -37130,7 +37132,7 @@
                     dsn: "https://fa97a90475514c03a42f80cd36d147c4@sentry.io/140984",
                     autoSessionTracking: !1,
                     environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                    release: "discord_web-c6a3fdbda97ec85a797dffbd989b9f3cc8076ddb",
+                    release: "discord_web-285d9370d72cfd365e8b0429f209426c99e319fc",
                     beforeSend: function(t) {
                         return function(t) {
                             return null != t.exception && null != t.exception.values && t.exception.values.every((function(t) {
@@ -37157,8 +37159,8 @@
                     denyUrls: [/recaptcha/, /mobilediscord\.com/, /betterdiscord:\/\//]
                 });
                 var t;
-                X.YA("buildNumber", null !== (t = "237803") ? t : "");
-                X.YA("builtAt", String("1697560714186"));
+                X.YA("buildNumber", null !== (t = "237822") ? t : "");
+                X.YA("builtAt", String("1697563061302"));
                 var e = window.GLOBAL_ENV.SENTRY_TAGS;
                 if (null != e && "object" == typeof e)
                     for (var r in e) X.YA(r, e[r]);
@@ -38163,7 +38165,8 @@
                     },
                     CHANNEL: function(t, e) {
                         return "/channels/".concat(t, "/").concat(e)
-                    }
+                    },
+                    REPORT: "".concat(N, "/report")
                 });
             ! function(t) {
                 t.INDEX = "/";
@@ -48556,4 +48559,4 @@
         e(128594), e(535666), e(784633), e(678991)
     }
 ]);
-//# sourceMappingURL=4e92d87b9be4913a70b4.js.map
+//# sourceMappingURL=8494bd701c3d6e86daa1.js.map
