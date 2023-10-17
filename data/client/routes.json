@@ -3993,7 +3993,10 @@
   },
   "SEND_SOUNDBOARD_SOUND": {
     "url": "/channels/:param/send-soundboard-sound",
-    "allowed_methods": null
+    "allowed_methods": [
+      "OPTIONS",
+      "POST"
+    ]
   },
   "APPLICATION_COMMANDS_SEARCH": {
     "url": "/channels/:param/application-commands/search",
