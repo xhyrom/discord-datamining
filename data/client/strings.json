@@ -10264,7 +10264,7 @@
   "ROLE_PERMISSIONS_USE_APPLICATION_COMMANDS_GUILD_DESCRIPTION": "\"Allows members to use commands from applications, including slash commands and context menu commands.\"",
   "ROLE_PERMISSIONS_SEND_VOICE_MESSAGE": "\"Send Voice Messages\"",
   "ROLE_PERMISSIONS_SEND_VOICE_MESSAGE_GUILD_DESCRIPTION": "\"Allows members to send voice messages.\"",
-  "ROLE_PERMISSIONS_USE_CLYDE_AI": "\"Use Clyde AI\"",
+  "ROLE_PERMISSIONS_USE_CLYDE_AI": "\"Use Clyde\"",
   "ROLE_PERMISSIONS_USE_CLYDE_AI_GUILD_DESCRIPTION": "\"Allows members to interact with and customize the Clyde AI bot.\"",
   "ROLE_PERMISSIONS_USE_CLYDE_AI_CHANNEL_DESCRIPTION": "\"Allows members to interact with the Clyde AI bot.\"",
   "CONNECT": "\"Connect\"",
