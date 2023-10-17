@@ -3758,14 +3758,6 @@
       "PUT"
     ]
   },
-  "CHANNEL_BASED_CLYDE_PERSONALITY": {
-    "url": "/channels/:param/channel-based-clyde-personality",
-    "allowed_methods": [
-      "GET",
-      "HEAD",
-      "OPTIONS"
-    ]
-  },
   "CREATOR_MONETIZATION_ENABLE_REQUESTS": {
     "url": "/guilds/:param/creator-monetization/enable-requests",
     "allowed_methods": [
@@ -4587,6 +4579,10 @@
       "OPTIONS",
       "POST"
     ]
+  },
+  "CLYDE_PROFILES_GENERATE_PERSONALITY": {
+    "url": "/clyde-profiles/generate-personality",
+    "allowed_methods": null
   },
   "POLL_ANSWERS": {
     "url": "/channels/:param/polls/:param/answers",
