@@ -166199,50 +166199,65 @@ html .invoiceCancelRow-3s2UuC {
 .dropdown-22I09M {
     background-color: var(--background-secondary);
     border-radius: var(--radius-md);
+    -webkit-box-shadow: var(--shadow-border), var(--shadow-low);
+    box-shadow: var(--shadow-border), var(--shadow-low);
     margin-bottom: 8px
 }
 
 .header-3SCqi0 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
     -ms-flex-direction: row;
     flex-direction: row;
+    color: var(--white);
     width: 100%;
-    cursor: pointer;
-    padding: 10px
-}
-
-.header-3SCqi0,
-.headerIconWrapper-VPxUJJ {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
     -webkit-box-align: center;
     -ms-flex-align: center;
-    align-items: center
+    align-items: center;
+    cursor: pointer
 }
 
 .headerIconWrapper-VPxUJJ {
     background-color: var(--background-tertiary);
     border-radius: var(--radius-xl);
-    margin: 5px;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    justify-content: center;
-    width: 30px;
-    height: 30px
+    -ms-flex-preferred-size: 11%;
+    flex-basis: 11%;
+    margin: 8px;
+    max-height: -webkit-min-content;
+    max-height: -moz-min-content;
+    max-height: min-content;
+    max-width: -webkit-min-content;
+    max-width: -moz-min-content;
+    max-width: min-content;
+    padding: 8px
+}
+
+.headerIconActive-bQeHBZ {
+    color: var(--header-primary);
+    height: 28px;
+    width: 28px
+}
+
+.headerIconExpired-3B-2Fw {
+    color: var(--custom-header-icon-color-expired);
+    height: 28px;
+    width: 28px
 }
 
 .caret-1lASwx {
     margin: 8px;
     justify-self: flex-end;
-    color: var(--interactive-normal)
+    -ms-flex-preferred-size: 5%;
+    flex-basis: 5%
 }
 
 .title-3tlXGi {
-    color: var(--text-muted);
-    margin-left: 10px;
-    margin-right: auto
+    -ms-flex-preferred-size: 84%;
+    flex-basis: 84%;
+    color: var(--channels-default)
 }
 
 .items-2jXzOR,
@@ -166253,13 +166268,13 @@ html .invoiceCancelRow-3s2UuC {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
     -ms-flex-direction: column;
-    flex-direction: column
+    flex-direction: column;
+    gap: 8px
 }
 
 .items-2jXzOR {
     padding: 8px;
     color: var(--white);
-    gap: 8px;
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center
@@ -166357,14 +166372,14 @@ html .invoiceCancelRow-3s2UuC {
 
 .icon-2h8wJQ {
     color: var(--header-secondary);
-    height: 42px;
-    width: 42px;
+    height: 48px;
+    width: 48px;
     margin: 4px 2px 0
 }
 
 .stars-IkYlZI {
     position: absolute;
-    left: -18px
+    left: -10px
 }
 
 .container-glqsPC,
@@ -176799,4 +176814,4 @@ html .invoiceCancelRow-dVOR64 {
     margin-bottom: 8px
 }
 
-/*# sourceMappingURL=40532.3cda8c1b35408ad2c248.css.map*/
+/*# sourceMappingURL=40532.ddc718718a7dc801fa8b.css.map*/
