@@ -21,15 +21,21 @@
 <h3 id="h_01HCMKZTFVDT0C25J2DXTY0YTR" data-pm-slice="1 1 []">We suggest that you lower your CPU usage overall before you re-enable Krisp, otherwise Krisp will continue to automatically turn off.</h3>
 <h2 id="h_01HCMKZTFVN55MD43MKFRM9YFS"><strong>Am I passing any information to Krisp when I turn it on?</strong></h2>
 <p><span style="font-weight: 400;">We do not pass any information or data to Krisp when you enable the tech on Discord. This means that no voice, user, video or any data is ever sent or shared outside of Discord. The machine learning model runs on your device to cancel out noise - no data is ever sent to Krisp's servers under any circumstances.</span></p>
-<p> </p>
 <h1 id="h_01HCMKZTFVVJ9DSTE86SVR2HBQ"><span style="font-weight: 400;">Additional Frequently asked questions</span></h1>
-<p><strong>Q: How much does it cost? <br></strong><span style="font-weight: 400;">A: Krisp is free when you use it with Discord. If you want to use it outside of Discord in other apps, you can check out their pricing <a href="https://api.krisp.ai/v2/resource/link/discord" target="_blank" rel="noopener noreferrer">here</a>.</span></p>
-<p><strong>Q: Will Krisp filter noises for other people on the call when I have it on?<br></strong><span style="font-weight: 400;">A: No. Krisp will only filter noises coming from your side. So if your friends do not have it toggled on you may still hear their background noise. </span></p>
-<p><strong>Q: When should I use Krisp?<br></strong><span style="font-weight: 400;">A: Krisp works best in environments where there is a lot of non-human voice background noise.</span></p>
+<p><strong>Q: How much does it cost? </strong></p>
+<p><span style="font-weight: 400;">A: Krisp is free when you use it with Discord. If you want to use it outside of Discord in other apps, you can check out their pricing <a href="https://api.krisp.ai/v2/resource/link/discord" target="_blank" rel="noopener noreferrer">here</a>.</span></p>
+<p><strong>Q: Will Krisp filter noises for other people on the call when I have it on?</strong></p>
+<p><span style="font-weight: 400;">A: No. Krisp will only filter noises coming from your side. So if your friends do not have it toggled on you may still hear their background noise. </span></p>
+<p><strong>Q: When should I use Krisp?</strong></p>
+<p><span style="font-weight: 400;">A: Krisp works best in environments where there is a lot of non-human voice background noise.</span></p>
 <p><span style="font-weight: 400;">Because Krisp works to process out background noises if you are in a quiet environment and have a high-quality mic you may notice a decline in voice quality. If you’re in a quiet environment where you don’t need noise filtration we would encourage you to continue using voice chat without Krisp. </span></p>
-<p><strong>Q: Can I use Krisp on video calls?<br></strong><span style="font-weight: 400;">A: Yes! Krisp can also be used on audio for video calls as well.</span></p>
-<p><strong>Q: Will Krisp work for Go Live?<br></strong><span style="font-weight: 400;">A: Yes! Krisp can be used when you are using the voice channel in Go-Live stream. </span></p>
-<p><strong>Q: Does Krisp work on mobile?<br></strong><span style="font-weight: 400;">A: As of 7/27/20 Krisp will be available on mobile devices.</span></p>
-<p><strong>Q: If I toggle on Krisp in one voice chat will it toggle on in all other voice chats?<br></strong><span style="font-weight: 400;">A: Yes. Once you toggle on Krisp it will be active for any new voice chats until you toggle it back off again.</span></p>
+<p><strong>Q: Can I use Krisp on video calls?</strong></p>
+<p><span style="font-weight: 400;">A: Yes! Krisp can also be used on audio for video calls as well.</span></p>
+<p><strong>Q: Will Krisp work for Go Live?</strong></p>
+<p><span style="font-weight: 400;">A: Yes! Krisp can be used when you are using the voice channel in Go-Live stream. </span></p>
+<p><strong>Q: Does Krisp work on mobile?</strong></p>
+<p><span style="font-weight: 400;">A: As of 7/27/20 Krisp will be available on mobile devices.</span></p>
+<p><strong>Q: If I toggle on Krisp in one voice chat will it toggle on in all other voice chats?</strong></p>
+<p><span style="font-weight: 400;">A: Yes. Once you toggle on Krisp it will be active for any new voice chats until you toggle it back off again.</span></p>
 <p data-pm-slice="1 1 []"><strong>Q: Does Krisp work in browsers?</strong></p>
-<p>A: As of 10/30/23 Krisp is available on Chrome and Firefox desktop browsers.</p>
+<p data-pm-slice="1 1 []">A: As of 10/30/23 Krisp is available on Chrome and Firefox desktop browsers.</p>
