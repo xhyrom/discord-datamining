@@ -15858,6 +15858,7 @@
   "DELETE_STAGE_EVENT_CONFIRMATION_DESCRIPTION": "\"Are you sure you want to delete **!!{eventName}!!**? This action cannot be undone.\"",
   "CREATE_STAGE_INSTANCE_SELECT_GUILD_HEADER": "\"Where's the party?\"",
   "GUILD_STAGES_LANDING_MOBILE_SUBTITLE": "\"Visit this link on your desktop to buy a ticket. Once you have a ticket, you'll be able to attend the event on desktop or mobile.\"",
+  "GUILD_SCHEDULED_EVENT_RECURRENCE_RULE": "\"Repeats {recurrenceRule}\"",
   "GET_MOBILE_APP_SUBTITLE": "\"Discord isn't supported on mobile web browsers. Join over 100 million people who use Discord to talk with communities and friends.\"",
   "MOBILE_APP_DOWNLOAD_CTA": "\"Get our mobile app\"",
   "MOBILE_APP_DOWNLOAD_SUBHEADER": "\"Keep the conversion going on our iOS or Android app.\"",
