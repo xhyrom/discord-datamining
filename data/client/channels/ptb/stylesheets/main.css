@@ -26455,7 +26455,10 @@ html.decorate-links .lowSaturationUnderline-Z6CW6z {
     background: linear-gradient(var(--black-500), transparent 30%, transparent 60%, var(--black-500))
 }
 
-.bottomControls-34xgN7,
+.videoControlsTextActivity-2HvTK2 {
+    z-index: 2
+}
+
 .topControls-93Lu-m {
     width: 100%;
     -webkit-box-flex: 0;
@@ -26470,17 +26473,40 @@ html.decorate-links .lowSaturationUnderline-Z6CW6z {
     transition: transform .2s ease-in-out, -webkit-transform .2s ease-in-out
 }
 
-.bottomControls-34xgN7 {
+.topControlsTextActivity-1u1pgh {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -ms-flex-pack: justify
+}
+
+.bottomControls-34xgN7,
+.topControlsTextActivity-1u1pgh {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    -webkit-box-pack: justify;
+    justify-content: space-between
+}
+
+.bottomControls-34xgN7 {
+    -webkit-box-flex: 0;
+    -ms-flex: 0 1 auto;
+    flex: 0 1 auto;
+    width: 100%;
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
-    -webkit-box-pack: justify;
     -ms-flex-pack: justify;
-    justify-content: space-between;
-    color: var(--white-500)
+    pointer-events: all;
+    color: var(--white-500);
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+    -webkit-transition: -webkit-transform .2s ease-in-out;
+    transition: -webkit-transform .2s ease-in-out;
+    transition: transform .2s ease-in-out;
+    transition: transform .2s ease-in-out, -webkit-transform .2s ease-in-out
 }
 
 .bottomLeftControls-vcZYkU {
@@ -26823,6 +26849,13 @@ html.decorate-links .lowSaturationUnderline-Z6CW6z {
 
 .iframe-2GuF98.pipModeTall-1cnlfN {
     height: 410px
+}
+
+.iframe-2GuF98.pipModeSquare-zbxVT- {
+    width: 178%;
+    height: 100%;
+    position: relative;
+    left: -39%
 }
 
 .pipNonInteractive-H1RjSN {
@@ -136746,6 +136779,27 @@ input::-webkit-outer-spin-button {
     text-align: start
 }
 
+.container-18PaeG {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center
+}
+
+.buttonColumn-110RD1 {
+    margin: 12px;
+    width: 40%
+}
+
 .image-1q15YX {
     height: 100px
 }
@@ -176716,4 +176770,4 @@ html .invoiceCancelRow-dVOR64 {
     margin-bottom: 8px
 }
 
-/*# sourceMappingURL=40532.e20852e27b6fb48b74bc.css.map*/
+/*# sourceMappingURL=40532.50b41fd378ed47d5e1a7.css.map*/
