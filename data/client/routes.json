@@ -3365,7 +3365,10 @@
   },
   "GUILD_EVENT_EXCEPTIONS": {
     "url": "/guilds/:param/scheduled-events/:param/exceptions",
-    "allowed_methods": null
+    "allowed_methods": [
+      "OPTIONS",
+      "POST"
+    ]
   },
   "GUILD_EVENT_EXCEPTION": {
     "url": "/guilds/:param/scheduled-events/:param/exceptions/:param",
