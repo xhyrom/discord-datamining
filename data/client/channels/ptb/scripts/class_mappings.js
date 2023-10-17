@@ -22302,7 +22302,7 @@
             e.exports = {
                 userProfileOuter: "userProfileOuter-2tQwNf",
                 userPopoutOuter: "userPopoutOuter-1OHwPL userProfileOuter-2tQwNf",
-                allowOverflow: "allowOverflow-2P8o8L",
+                showOutOfBoundaryComponents: "showOutOfBoundaryComponents-6y8Xbv",
                 userProfileModalOuter: "userProfileModalOuter-2wdWjU userProfileOuter-2tQwNf",
                 userPanelOuter: "userPanelOuter-XfFELn",
                 userProfileOuterThemed: "userProfileOuterThemed-2BgJCM",
@@ -22515,7 +22515,8 @@
                 ctaLink: "ctaLink-2Wa-yK",
                 buttons: "buttons-2t4rDg",
                 closeButton: "closeButton-1FOk1_",
-                closeIcon: "closeIcon-2wyTZ8"
+                closeIcon: "closeIcon-2wyTZ8",
+                hasCollectiblesUpsell: "hasCollectiblesUpsell-2gU-NX"
             }
         },
         51448: e => {
@@ -27186,4 +27187,4 @@
         }
     }
 ]);
-//# sourceMappingURL=80e121ed7c2551fe0e56.js.map
+//# sourceMappingURL=440a49d5e3b32e4eadc4.js.map

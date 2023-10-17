@@ -10575,18 +10575,19 @@ html.decorate-links .lowSaturationUnderline-Z6CW6z {
 .userProfileOuter-2tQwNf {
     border-radius: 8px;
     position: relative;
-    overflow: hidden
+    overflow: hidden;
+    --custom-user-popout-outside-components-height: 0
 }
 
 .userPopoutOuter-1OHwPL {
     -webkit-box-shadow: var(--elevation-high);
     box-shadow: var(--elevation-high);
-    max-height: calc(100vh - 20px);
+    max-height: calc(100vh - 20px - var(--custom-user-popout-outside-components-height));
     width: var(--custom-user-profile-themed-container-user-popout-width)
 }
 
-.allowOverflow-2P8o8L {
-    overflow: unset
+.showOutOfBoundaryComponents-6y8Xbv {
+    overflow: visible
 }
 
 .userProfileModalOuter-2wdWjU {
@@ -10640,7 +10641,7 @@ html.decorate-links .lowSaturationUnderline-Z6CW6z {
 }
 
 .userPopoutInner-nv9Y92 {
-    max-height: calc(100vh - 28px)
+    max-height: calc(100vh - 28px - var(--custom-user-popout-outside-components-height))
 }
 
 .userPopoutInner-nv9Y92:before {
@@ -10727,7 +10728,7 @@ html.decorate-links .lowSaturationUnderline-Z6CW6z {
 
 .userPopoutOverlayBackground-3A0Pcz {
     margin: 28px 16px 16px;
-    max-height: calc(100vh - 128px)
+    max-height: calc(100vh - 128px - var(--custom-user-popout-outside-components-height))
 }
 
 .userPanelOverlayBackground-3Zmcq2,
@@ -23648,16 +23649,16 @@ html.decorate-links .lowSaturationUnderline-Z6CW6z {
 }
 
 .animation-2Ulm63 {
-    -webkit-animation: slideInFromBottom-OAY5yI .6s cubic-bezier(.26, .17, .28, 1.27) .1s 1 forwards;
-    animation: slideInFromBottom-OAY5yI .6s cubic-bezier(.26, .17, .28, 1.27) .1s 1 forwards;
+    -webkit-animation: slideInFromBottom-OAY5yI .6s cubic-bezier(.26, .17, .28, 1.27) .25s 1 forwards;
+    animation: slideInFromBottom-OAY5yI .6s cubic-bezier(.26, .17, .28, 1.27) .25s 1 forwards;
     -webkit-transform: translateY(90px);
     transform: translateY(90px);
     z-index: -1
 }
 
 .animation-2Ulm63.inSidebar-2ZaxJI {
-    -webkit-animation: slideInFromTop-3SK3LX .6s cubic-bezier(.26, .17, .28, 1.27) .1s 1 forwards;
-    animation: slideInFromTop-3SK3LX .6s cubic-bezier(.26, .17, .28, 1.27) .1s 1 forwards;
+    -webkit-animation: slideInFromTop-3SK3LX .6s cubic-bezier(.26, .17, .28, 1.27) .25s 1 forwards;
+    animation: slideInFromTop-3SK3LX .6s cubic-bezier(.26, .17, .28, 1.27) .25s 1 forwards;
     -webkit-transform: translateY(-90px);
     transform: translateY(-90px)
 }
@@ -23754,6 +23755,10 @@ html.decorate-links .lowSaturationUnderline-Z6CW6z {
 
 .containerWrapper-1kh54c.inSidebar-2ZaxJI.withoutAvatar-247vxY .content-2fvXP0 {
     margin-left: 0
+}
+
+.hasCollectiblesUpsell-2gU-NX {
+    --custom-user-popout-outside-components-height: 76px
 }
 
 .profileEffects-km5xa2 {
@@ -176770,4 +176775,4 @@ html .invoiceCancelRow-dVOR64 {
     margin-bottom: 8px
 }
 
-/*# sourceMappingURL=40532.50b41fd378ed47d5e1a7.css.map*/
+/*# sourceMappingURL=40532.fef7ecd3dd9a7ec14e26.css.map*/
