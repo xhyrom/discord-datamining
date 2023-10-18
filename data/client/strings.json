@@ -15741,6 +15741,7 @@
   "SAFETY_HUB_CLASSIFICATION_DETAIL_ACTION_EXPLAINED_HEADER": "\"WHY WE TOOK THIS ACTION\"",
   "SAFETY_HUB_CLASSIFICATION_DETAIL_ACTION_EXPLAINED_DESCRIPTION": "\"Our teams use automation and manual review to enforce our rules. We found your activity violated our [Terms of Service]({tosLink}) or [Community Guidelines]({communityGuidelinesLink}).\"",
   "SAFETY_HUB_CLASSIFICATION_DETAIL_ACTION_APPEAL": "\"Did we make a mistake? [Let us know]({link})\"",
+  "SAFETY_HUB_CLASSIFICATION_DETAIL_ACTION_APPEAL_V2": "\"Did we make a mistake? $[Let us know](letUsKnowHook)\"",
   "SAFETY_HUB_CLASSIFICATION_DETAIL_POLICY_CARD_HEADER": "\"Learn about our {classificationDescription} policy.\"",
   "SAFETY_HUB_CLASSIFICATION_DETAIL_POLICY_CARD_SUBTEXT": "\"Discord's rules apply to everyone\"",
   "SAFETY_HUB_CLASSIFICATION_DETAIL_REDIRECT": "\"Go to account standing\"",
