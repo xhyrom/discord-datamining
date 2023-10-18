@@ -3127,8 +3127,9 @@
                 arrowButton: "arrowButton-101BWu",
                 headerTitle: "headerTitle-2Z0p0n",
                 leaveButtonContainer: "leaveButtonContainer-1Rxop2",
-                leaveButton: "leaveButton-3tRW0-",
-                activityContainer: "activityContainer-24nR_3"
+                activityContainer: "activityContainer-24nR_3",
+                leaveActivityIcon: "leaveActivityIcon-1gGdQ5",
+                leaveActivityButton: "leaveActivityButton-23yDlt"
             }
         },
         979864: e => {
@@ -27191,4 +27192,4 @@
         }
     }
 ]);
-//# sourceMappingURL=5faca9d8e00f6151d235.js.map
+//# sourceMappingURL=1b18673ac556374fa555.js.map
