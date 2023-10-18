@@ -1,4 +1,4 @@
-/*! For license information please see 6dfdf0f8884c8d1eb1d3.js.LICENSE.txt */
+/*! For license information please see a3a8d049bfbbce4d6beb.js.LICENSE.txt */
 (this.webpackChunkdiscord_app = this.webpackChunkdiscord_app || []).push([
     [22897], {
         151131: (t, e, r) => {
@@ -23416,6 +23416,7 @@
                 t.SETTINGS_BACKUP_CODES = "Backup Codes";
                 t.SETTINGS_CONFIRM_VIEW_BACKUP_CODES = "Confirm View Backup Codes";
                 t.SETTINGS_PRIVACY_AND_SAFETY = "Privacy & Safety";
+                t.SETTINGS_ACCOUNT_STANDING = "Account Standing";
                 t.SETTINGS_AUTHORIZED_APPS = "Authorized Apps";
                 t.SETTINGS_CONNECTIONS = "Connections";
                 t.SETTINGS_FRIEND_REQUESTS = "Friend Requests";
@@ -23766,6 +23767,7 @@
                         TEXT: tr.SETTINGS_TEXT_AND_IMAGES,
                         VOICE: tr.SETTINGS_VOICE_AND_VIDEO,
                         PRIVACY_AND_SAFETY: tr.SETTINGS_PRIVACY_AND_SAFETY,
+                        ACCOUNT_STANDING: tr.SETTINGS_ACCOUNT_STANDING,
                         NOTIFICATIONS: tr.SETTINGS_NOTIFICATIONS,
                         SOUNDS: tr.SETTINGS_SOUNDS,
                         APP_ICONS: tr.SETTINGS_APP_ICONS,
@@ -23786,10 +23788,10 @@
                         GUILD_ROLE_SUBSCRIPTIONS_CANCEL: tr.GUILD_ROLE_SUBSCRIPTION_CANCEL,
                         GUILD_BOOSTING: tr.GUILD_BOOSTING,
                         WEBAUTHN_VIEW: tr.SETTINGS_WEBAUTHN_VIEW
-                    }, b.cP, tr.GUILD_ROLE_SUBSCRIPTION), Y(ir, "BILLING", tr.SETTINGS_BILLING), Y(ir, "EXPERIMENTS", tr.SETTINGS_EXPERIMENTS), Y(ir, "DEVELOPER_OPTIONS", tr.SETTINGS_DEVELOPER_OPTIONS), Y(ir, "WINDOWS", tr.SETTINGS_WINDOWS), Y(ir, "LINUX", tr.SETTINGS_LINUX), Y(ir, "HYPESQUAD_ONLINE", tr.SETTINGS_HYPESQUAD_ONLINE),
-                    Y(ir, "DESKTOP_APP", tr.SETTINGS_DESKTOP_APP), Y(ir, "INVENTORY", tr.SETTINGS_INVENTORY), Y(ir, "DEBUG_LOGS", tr.SETTINGS_DEBUG_LOGS), Y(ir, "PUSH_NOTIFICATION_LOGS", tr.SETTINGS_PUSH_NOTIFICATION_LOGS), Y(ir, "DATABASE_CONTROLS", tr.SETTINGS_DATABASE_CONTROLS), Y(ir, "STARTUP_TIMINGS", tr.SETTINGS_STARTUP_TIMINGS), Y(ir, "TEXT_COMPONENT", tr.TEXT_COMPONENT), Y(ir, "DESIGN_SYSTEM", tr.DESIGN_SYSTEM), Y(ir, "DESIGN_SYSTEM_TEXT", tr.DESIGN_SYSTEM_TEXT), Y(ir, "DESIGN_SYSTEM_BUTTON", tr.DESIGN_SYSTEM_BUTTON), Y(ir, "DESIGN_SYSTEM_TABLE_ROW", tr.DESIGN_SYSTEM_TABLE_ROW), Y(ir, "DESIGN_SYSTEM_ALERT_MODAL", tr.DESIGN_SYSTEM_ALERT_MODAL), Y(ir, "DESIGN_SYSTEM_BACKGROUND_BLUR_VIEW", tr.DESIGN_SYSTEM_BACKGROUND_BLUR_VIEW), Y(ir, "DESIGN_SYSTEM_SHADOWS", tr.DESIGN_SYSTEM_SHADOWS), Y(ir, "DESIGN_SYSTEM_SEGMENTED_CONTROL", tr.DESIGN_SYSTEM_SEGMENTED_CONTROL), Y(ir, "DESIGN_SYSTEM_TABS", tr.DESIGN_SYSTEM_TABS), Y(ir, "DESIGN_SYSTEM_CONTEXT_MENU", tr.DESIGN_SYSTEM_CONTEXT_MENU), Y(ir, "DESIGN_SYSTEM_TOAST", tr.DESIGN_SYSTEM_TOAST),
-                    Y(ir, "DESIGN_SYSTEM_TEXT_INPUT", tr.DESIGN_SYSTEM_TEXT_INPUT), Y(ir, "DESIGN_SYSTEM_TOOLTIP", tr.DESIGN_SYSTEM_TOOLTIP), Y(ir, "DESIGN_SYSTEM_COACHMARK", tr.DESIGN_SYSTEM_COACHMARK), Y(ir, "DESIGN_SYSTEM_STACK", tr.DESIGN_SYSTEM_STACK), Y(ir, "DESIGN_SYSTEM_BACKDROP", tr.DESIGN_SYSTEM_BACKDROP), Y(ir, "DESIGN_SYSTEM_MODAL", tr.DESIGN_SYSTEM_MODAL), Y(ir, "DESIGN_SYSTEM_PILE", tr.DESIGN_SYSTEM_PILE), Y(ir, "DESIGN_SYSTEM_SHEETS", tr.DESIGN_SYSTEM_SHEETS), Y(ir, "ADVANCED", tr.SETTINGS_ADVANCED), Y(ir, "PROFILE_CUSTOMIZATION", tr.SETTINGS_CUSTOMIZE_PROFILE), Y(ir, "PROFILE_CUSTOMIZATION_TRY_IT_OUT", tr.SETTINGS_CUSTOMIZE_PROFILE_TRY_IT_OUT), Y(ir, "PROFILE_CUSTOMIZATION_AVATAR_DECORATION", tr.SETTINGS_CUSTOMIZE_PROFILE_AVATAR_DECORATION), Y(ir, "HOTSPOT_OPTIONS", tr.SETTINGS_HOTSPOT_OPTIONS), Y(ir, "DISMISSIBLE_CONTENT_OPTIONS", tr.SETTINGS_DISMISSIBLE_CONTENT_OPTIONS), Y(ir, "PAYMENT_FLOW_MODAL_TEST_PAGE", tr.SETTINGS_PAYMENT_FLOW_MODAL_TEST_PAGE), Y(ir, "POGGERMODE", tr.SETTINGS_POGGERMODE), Y(ir, "SESSIONS", tr.SETTINGS_SESSIONS),
-                    Y(ir, "FAMILY_CENTER", tr.SETTINGS_FAMILY_CENTER), Y(ir, "FRIEND_REQUESTS", tr.SETTINGS_FRIEND_REQUESTS), Y(ir, "CLIPS", tr.SETTINGS_CLIPS), Y(ir, "SPEED_TEST", tr.SETTINGS_SPEED_TEST), Y(ir, "COMMUNITY_ALERTS", tr.COMMUNITY_ALERTS), ir));
+                    }, b.cP, tr.GUILD_ROLE_SUBSCRIPTION), Y(ir, "BILLING", tr.SETTINGS_BILLING), Y(ir, "EXPERIMENTS", tr.SETTINGS_EXPERIMENTS), Y(ir, "DEVELOPER_OPTIONS", tr.SETTINGS_DEVELOPER_OPTIONS), Y(ir, "WINDOWS", tr.SETTINGS_WINDOWS), Y(ir, "LINUX", tr.SETTINGS_LINUX),
+                    Y(ir, "HYPESQUAD_ONLINE", tr.SETTINGS_HYPESQUAD_ONLINE), Y(ir, "DESKTOP_APP", tr.SETTINGS_DESKTOP_APP), Y(ir, "INVENTORY", tr.SETTINGS_INVENTORY), Y(ir, "DEBUG_LOGS", tr.SETTINGS_DEBUG_LOGS), Y(ir, "PUSH_NOTIFICATION_LOGS", tr.SETTINGS_PUSH_NOTIFICATION_LOGS), Y(ir, "DATABASE_CONTROLS", tr.SETTINGS_DATABASE_CONTROLS), Y(ir, "STARTUP_TIMINGS", tr.SETTINGS_STARTUP_TIMINGS), Y(ir, "TEXT_COMPONENT", tr.TEXT_COMPONENT), Y(ir, "DESIGN_SYSTEM", tr.DESIGN_SYSTEM), Y(ir, "DESIGN_SYSTEM_TEXT", tr.DESIGN_SYSTEM_TEXT), Y(ir, "DESIGN_SYSTEM_BUTTON", tr.DESIGN_SYSTEM_BUTTON), Y(ir, "DESIGN_SYSTEM_TABLE_ROW", tr.DESIGN_SYSTEM_TABLE_ROW), Y(ir, "DESIGN_SYSTEM_ALERT_MODAL", tr.DESIGN_SYSTEM_ALERT_MODAL), Y(ir, "DESIGN_SYSTEM_BACKGROUND_BLUR_VIEW", tr.DESIGN_SYSTEM_BACKGROUND_BLUR_VIEW), Y(ir, "DESIGN_SYSTEM_SHADOWS", tr.DESIGN_SYSTEM_SHADOWS), Y(ir, "DESIGN_SYSTEM_SEGMENTED_CONTROL", tr.DESIGN_SYSTEM_SEGMENTED_CONTROL), Y(ir, "DESIGN_SYSTEM_TABS", tr.DESIGN_SYSTEM_TABS), Y(ir, "DESIGN_SYSTEM_CONTEXT_MENU", tr.DESIGN_SYSTEM_CONTEXT_MENU),
+                    Y(ir, "DESIGN_SYSTEM_TOAST", tr.DESIGN_SYSTEM_TOAST), Y(ir, "DESIGN_SYSTEM_TEXT_INPUT", tr.DESIGN_SYSTEM_TEXT_INPUT), Y(ir, "DESIGN_SYSTEM_TOOLTIP", tr.DESIGN_SYSTEM_TOOLTIP), Y(ir, "DESIGN_SYSTEM_COACHMARK", tr.DESIGN_SYSTEM_COACHMARK), Y(ir, "DESIGN_SYSTEM_STACK", tr.DESIGN_SYSTEM_STACK), Y(ir, "DESIGN_SYSTEM_BACKDROP", tr.DESIGN_SYSTEM_BACKDROP), Y(ir, "DESIGN_SYSTEM_MODAL", tr.DESIGN_SYSTEM_MODAL), Y(ir, "DESIGN_SYSTEM_PILE", tr.DESIGN_SYSTEM_PILE), Y(ir, "DESIGN_SYSTEM_SHEETS", tr.DESIGN_SYSTEM_SHEETS), Y(ir, "ADVANCED", tr.SETTINGS_ADVANCED), Y(ir, "PROFILE_CUSTOMIZATION", tr.SETTINGS_CUSTOMIZE_PROFILE), Y(ir, "PROFILE_CUSTOMIZATION_TRY_IT_OUT", tr.SETTINGS_CUSTOMIZE_PROFILE_TRY_IT_OUT), Y(ir, "PROFILE_CUSTOMIZATION_AVATAR_DECORATION", tr.SETTINGS_CUSTOMIZE_PROFILE_AVATAR_DECORATION), Y(ir, "HOTSPOT_OPTIONS", tr.SETTINGS_HOTSPOT_OPTIONS), Y(ir, "DISMISSIBLE_CONTENT_OPTIONS", tr.SETTINGS_DISMISSIBLE_CONTENT_OPTIONS), Y(ir, "PAYMENT_FLOW_MODAL_TEST_PAGE", tr.SETTINGS_PAYMENT_FLOW_MODAL_TEST_PAGE),
+                    Y(ir, "POGGERMODE", tr.SETTINGS_POGGERMODE), Y(ir, "SESSIONS", tr.SETTINGS_SESSIONS), Y(ir, "FAMILY_CENTER", tr.SETTINGS_FAMILY_CENTER), Y(ir, "FRIEND_REQUESTS", tr.SETTINGS_FRIEND_REQUESTS), Y(ir, "CLIPS", tr.SETTINGS_CLIPS), Y(ir, "SPEED_TEST", tr.SETTINGS_SPEED_TEST), Y(ir, "COMMUNITY_ALERTS", tr.COMMUNITY_ALERTS), ir));
             ! function(t) {
                 t.APPLICATION_STORE = "Application Store Verified Guild Invite - Lurker";
                 t.CHAT_INPUT_BLOCKER = "Chat Input Blocker - Lurker Mode";
@@ -24082,8 +24084,7 @@
                 t[t.TIER_2 = 2] = "TIER_2";
                 t[t.TIER_3 = 3] = "TIER_3"
             }(Br || (Br = {}));
-            var Yr, xr = Object.freeze((Y(br = {}, Br.NONE, 0), Y(br, Br.TIER_1, 2),
-                    Y(br, Br.TIER_2, 7), Y(br, Br.TIER_3, 14), br)),
+            var Yr, xr = Object.freeze((Y(br = {}, Br.NONE, 0), Y(br, Br.TIER_1, 2), Y(br, Br.TIER_2, 7), Y(br, Br.TIER_3, 14), br)),
                 kr = 7,
                 Kr = 0;
             ! function(t) {
@@ -37142,7 +37143,7 @@ _.jH)(t)}.\nUrl: ${I(t)}`);
                     dsn: "https://fa97a90475514c03a42f80cd36d147c4@sentry.io/140984",
                     autoSessionTracking: !1,
                     environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                    release: "discord_web-ef32b434f7a7d3d93bd2995cc90ce32408618474",
+                    release: "discord_web-e94fdb1be506c023b682a4c70481b2ed97e71d61",
                     beforeSend: function(t) {
                         return function(t) {
                             return null != t.exception && null != t.exception.values && t.exception.values.every((function(t) {
@@ -37169,8 +37170,8 @@ _.jH)(t)}.\nUrl: ${I(t)}`);
                     denyUrls: [/recaptcha/, /mobilediscord\.com/, /betterdiscord:\/\//]
                 });
                 var t;
-                Bt.YA("buildNumber", null !== (t = "238259") ? t : "");
-                Bt.YA("builtAt", String("1697643436162"));
+                Bt.YA("buildNumber", null !== (t = "238324") ? t : "");
+                Bt.YA("builtAt", String("1697652970248"));
                 var e = window.GLOBAL_ENV.SENTRY_TAGS;
                 if (null != e && "object" == typeof e)
                     for (var r in e) Bt.YA(r, e[r]);
@@ -48569,4 +48570,4 @@ _.jH)(t)}.\nUrl: ${I(t)}`);
         e(128594), e(535666), e(784633), e(678991)
     }
 ]);
-//# sourceMappingURL=6dfdf0f8884c8d1eb1d3.js.map
+//# sourceMappingURL=a3a8d049bfbbce4d6beb.js.map
