@@ -1,4 +1,4 @@
-/*! For license information please see 774e46df48f91f1577c7.js.LICENSE.txt */
+/*! For license information please see 938c9c8d393a4b07f276.js.LICENSE.txt */
 (this.webpackChunkdiscord_app = this.webpackChunkdiscord_app || []).push([
     [22897], {
         151131: (t, e, r) => {
@@ -23957,7 +23957,8 @@
                 t.VOICE_PANEL_OPEN = "VOICE_PANEL_OPEN";
                 t.VOICE_PANEL_CLOSE = "VOICE_PANEL_CLOSE";
                 t.VOICE_PANEL_PIP_CONTENT_READY = "VOICE_PANEL_PIP_CONTENT_READY";
-                t.MANUAL_IFRAME_RESIZING = "MANUAL_IFRAME_RESIZING"
+                t.MANUAL_IFRAME_RESIZING = "MANUAL_IFRAME_RESIZING";
+                t.NAVIGATOR_READY = "NAVIGATOR_READY"
             }(lr || (lr = {}));
             ! function(t) {
                 t.TOGGLE_REACTION_POPOUT = "TOGGLE_REACTION_POPOUT";
@@ -37141,7 +37142,7 @@ _.jH)(t)}.\nUrl: ${I(t)}`);
                     dsn: "https://fa97a90475514c03a42f80cd36d147c4@sentry.io/140984",
                     autoSessionTracking: !1,
                     environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                    release: "discord_web-fee7f2b3d55606b427686db22af3b613a017f71d",
+                    release: "discord_web-3ab4dd2e1be5b573c6f4ff69801a46d5d4b29001",
                     beforeSend: function(t) {
                         return function(t) {
                             return null != t.exception && null != t.exception.values && t.exception.values.every((function(t) {
@@ -37168,8 +37169,8 @@ _.jH)(t)}.\nUrl: ${I(t)}`);
                     denyUrls: [/recaptcha/, /mobilediscord\.com/, /betterdiscord:\/\//]
                 });
                 var t;
-                Bt.YA("buildNumber", null !== (t = "238183") ? t : "");
-                Bt.YA("builtAt", String("1697591639442"));
+                Bt.YA("buildNumber", null !== (t = "238204") ? t : "");
+                Bt.YA("builtAt", String("1697593997039"));
                 var e = window.GLOBAL_ENV.SENTRY_TAGS;
                 if (null != e && "object" == typeof e)
                     for (var r in e) Bt.YA(r, e[r]);
@@ -48568,4 +48569,4 @@ _.jH)(t)}.\nUrl: ${I(t)}`);
         e(128594), e(535666), e(784633), e(678991)
     }
 ]);
-//# sourceMappingURL=774e46df48f91f1577c7.js.map
+//# sourceMappingURL=938c9c8d393a4b07f276.js.map
