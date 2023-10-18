@@ -1,4 +1,4 @@
-/*! For license information please see c39a560cbc6ce7a3db98.js.LICENSE.txt */
+/*! For license information please see 5178cdbaff7f67343316.js.LICENSE.txt */
 (this.webpackChunkdiscord_app = this.webpackChunkdiscord_app || []).push([
     [22897], {
         151131: (t, e, r) => {
@@ -24700,6 +24700,7 @@
                 t.CLIP_SAVE_KEYBIND_PRESSED = "clip_save_keybind_pressed";
                 t.CLIP_SAVED = "clip_saved";
                 t.CLIP_SAVE_FAILURE = "clip_save_failure";
+                t.CLIPS_INIT_FAILURE = "clips_init_failure";
                 t.CLIP_DELETED = "clip_deleted";
                 t.CLIP_GALLERY_CARD_CLICKED = "clip_gallery_card_clicked";
                 t.CLIP_GALLERY_CARD_BUTTON_CLICKED = "clip_gallery_card_button_clicked";
@@ -37143,7 +37144,7 @@ _.jH)(t)}.\nUrl: ${I(t)}`);
                     dsn: "https://fa97a90475514c03a42f80cd36d147c4@sentry.io/140984",
                     autoSessionTracking: !1,
                     environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                    release: "discord_web-fe4c56679863d22acbffa5aded3ca986d7705ef6",
+                    release: "discord_web-a37cdda4a373b66fbf106f53e55d67bf9cce95a2",
                     beforeSend: function(t) {
                         return function(t) {
                             return null != t.exception && null != t.exception.values && t.exception.values.every((function(t) {
@@ -37170,8 +37171,8 @@ _.jH)(t)}.\nUrl: ${I(t)}`);
                     denyUrls: [/recaptcha/, /mobilediscord\.com/, /betterdiscord:\/\//]
                 });
                 var t;
-                Bt.YA("buildNumber", null !== (t = "238415") ? t : "");
-                Bt.YA("builtAt", String("1697661183957"));
+                Bt.YA("buildNumber", null !== (t = "238419") ? t : "");
+                Bt.YA("builtAt", String("1697661479151"));
                 var e = window.GLOBAL_ENV.SENTRY_TAGS;
                 if (null != e && "object" == typeof e)
                     for (var r in e) Bt.YA(r, e[r]);
@@ -48570,4 +48571,4 @@ _.jH)(t)}.\nUrl: ${I(t)}`);
         e(128594), e(535666), e(784633), e(678991)
     }
 ]);
-//# sourceMappingURL=c39a560cbc6ce7a3db98.js.map
+//# sourceMappingURL=5178cdbaff7f67343316.js.map
