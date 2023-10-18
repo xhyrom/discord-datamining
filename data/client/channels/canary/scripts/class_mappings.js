@@ -4548,9 +4548,6 @@
                 icon: "icon-2atuJf",
                 notAllowedIcon: "notAllowedIcon-Or7x8o icon-2atuJf",
                 shopIcon: "shopIcon-16KTrH icon-2atuJf",
-                shopSparkle: "shopSparkle-3YmbP8",
-                shopSparkleBig: "shopSparkleBig-18LvuW shopSparkle-3YmbP8",
-                shopSparkleSmall: "shopSparkleSmall-9vNmYY shopSparkle-3YmbP8",
                 presetDecorationImg: "presetDecorationImg-2qqgr2",
                 decorationGridItem: "decorationGridItem-3J_11G",
                 decorationGridItemChurned: "decorationGridItemChurned-1jRrX4",
@@ -20355,9 +20352,6 @@
                 selected: "selected-1KX8A2",
                 list: "list-1UuDOi",
                 shopIcon: "shopIcon-oIiJtJ icon-2MeLwV",
-                shopSparkle: "shopSparkle-3En2Kq",
-                shopSparkleBig: "shopSparkleBig-MaWgMd shopSparkle-3En2Kq",
-                shopSparkleSmall: "shopSparkleSmall-2LHy1a shopSparkle-3En2Kq",
                 tooltip: "tooltip-LmVZ7y",
                 tooltipInner: "tooltipInner-1NJzfW",
                 tooltipText: "tooltipText-2hhyIB",
@@ -27213,4 +27207,4 @@
         }
     }
 ]);
-//# sourceMappingURL=8854366c8f0096287885.js.map
+//# sourceMappingURL=e1bf9deebc8ea3f37e2c.js.map
