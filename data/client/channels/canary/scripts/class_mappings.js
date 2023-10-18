@@ -18294,12 +18294,25 @@
         },
         518867: e => {
             e.exports = {
+                responsiveWidthMobile: "485px",
                 content: "content-1o8ytE",
                 errorContent: "errorContent-B8afsA",
                 errorBody: "errorBody-3RleR7",
                 errorImage: "errorImage-37j9BC",
                 errorText: "errorText-3EVYmA",
-                okayCta: "okayCta-2H0KEs"
+                okayCta: "okayCta-2H0KEs",
+                body: "body-1LqKdx",
+                promotionImage: "promotionImage-1LMEcr",
+                promotionBody: "promotionBody-wc8OQu",
+                promotionTitle: "promotionTitle-2sXLPQ",
+                accountChooseSeparator: "accountChooseSeparator-1uDdMK",
+                accountChooseContent: "accountChooseContent-1vA7hO",
+                accountChooseBody: "accountChooseBody-3Itktw",
+                footer: "footer-3s5_ZK",
+                promotionAccountIdentifier: "promotionAccountIdentifier-3Czb7Q",
+                promotionAccountIdentifierAvatar: "promotionAccountIdentifierAvatar-ImHmeR",
+                promotionAccountIdentifierBody: "promotionAccountIdentifierBody-IeAjUY",
+                promotionAccountIdentifierError: "promotionAccountIdentifierError-17n57m"
             }
         },
         435312: e => {
@@ -27200,4 +27213,4 @@
         }
     }
 ]);
-//# sourceMappingURL=c735ef653aaa0fba543c.js.map
+//# sourceMappingURL=583442a8050a02c483a4.js.map
