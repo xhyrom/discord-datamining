@@ -12896,7 +12896,7 @@ html.decorate-links .lowSaturationUnderline-Z6CW6z {
 }
 
 .colorable-3rVGna.red-3T8maV {
-    background: var(--red-400)
+    background: var(--red-430)
 }
 
 .colorable-3rVGna.red-3T8maV,
@@ -12906,7 +12906,7 @@ html.decorate-links .lowSaturationUnderline-Z6CW6z {
 
 .colorable-3rVGna.red-3T8maV.active-3D763s,
 .colorable-3rVGna.red-3T8maV:hover {
-    background: var(--red-400)
+    background: var(--red-500)
 }
 
 .colorable-3rVGna.primaryDark-2UJt1G {
@@ -72871,7 +72871,7 @@ strong {
     -ms-flex-direction: row;
     flex-direction: row;
     padding: 8px;
-    background-color: var(--bg-overlay-1, var(--background-primary));
+    background: var(--bg-overlay-1, var(--background-primary));
     border-bottom: 1px solid var(--background-modifier-accent);
     -webkit-box-align: center;
     -ms-flex-align: center;
@@ -72885,8 +72885,10 @@ strong {
 }
 
 .arrowButton-101BWu {
-    width: 24px;
-    height: 24px
+    width: 32px;
+    height: 32px;
+    background: var(--bg-overlay-1, var(--background-secondary-alt));
+    border-radius: 16px
 }
 
 .headerTitle-2Z0p0n {
@@ -72905,11 +72907,6 @@ strong {
     justify-content: right
 }
 
-.leaveButton-3tRW0- {
-    border-radius: var(--custom-button-button-lg-height);
-    margin-left: auto
-}
-
 .activityContainer-24nR_3 {
     -webkit-box-flex: 1;
     -ms-flex: 1;
@@ -72924,6 +72921,15 @@ strong {
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center
+}
+
+.leaveActivityIcon-1gGdQ5 {
+    height: 20px;
+    width: 20px
+}
+
+.leaveActivityButton-23yDlt {
+    padding: 6px
 }
 
 .quickSelect-384d3G {
@@ -176823,4 +176829,4 @@ html .invoiceCancelRow-dVOR64 {
     margin-bottom: 8px
 }
 
-/*# sourceMappingURL=40532.8a741ec3b7c5ecfd8e08.css.map*/
+/*# sourceMappingURL=40532.2646e906ae132a325a26.css.map*/
