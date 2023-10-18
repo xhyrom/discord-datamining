@@ -15802,6 +15802,7 @@
   "URF_LANDING_PAGE_SUBTITLE": "\"Use these forms to report illegal content under the Digital Services Act (DSA). For reports of copyright or trademark infringement please [go here]({supportURL}).\"",
   "URF_LANDING_PAGE_REPORT_USER_PROFILE_BUTTON": "\"Report a User Profile\"",
   "URF_LANDING_PAGE_REPORT_MESSAGE_BUTTON": "\"Report a Message\"",
+  "IN_APP_REPORTING_FREE_TEXT_INPUT_ERROR": "\"Invalid Input\"",
   "DISCORD_NAME": "\"Discord\"",
   "DEFAULT_CONFIRMATION_MODAL_HEADER": "\"Are you sure?\"",
   "DISAPPROVAL": "\"ಠ_ಠ\"",
