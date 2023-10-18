@@ -12460,6 +12460,8 @@
             e.exports = {
                 card: "card-8UsK4b",
                 lurking: "lurking-1Ll8h7",
+                padding: "padding-3w9_tb",
+                isRecurring: "isRecurring-3pILBb",
                 joined: "joined-Mu0Ynl",
                 inline: "inline-1QmgL-",
                 guildIcon: "guildIcon-2qi8j7",
@@ -12474,7 +12476,9 @@
                 divider: "divider-2zyEHJ",
                 footer: "footer-nBNElu",
                 channelLocation: "channelLocation-1p_1ae label-3XICZC",
-                externalLocation: "externalLocation-1Pa18K label-3XICZC"
+                externalLocation: "externalLocation-1Pa18K label-3XICZC",
+                recurrences: "recurrences-28Bo-r",
+                heading: "heading-1FJ6rV"
             }
         },
         808985: e => {
@@ -12523,6 +12527,11 @@
                 tooltipIcon: "tooltipIcon-pC3Ka-",
                 pill: "pill-13hvUG",
                 tooltip: "tooltip-1wyiRo"
+            }
+        },
+        503569: e => {
+            e.exports = {
+                container: "container-1HnACW"
             }
         },
         908453: e => {
@@ -12586,7 +12595,6 @@
                 icon: "icon-3DnmvF",
                 divider: "divider-2_8P_2",
                 button: "button-3tENlF",
-                eventCard: "eventCard-2ZL9GD",
                 iconButton: "iconButton-2rHy7x"
             }
         },
@@ -27192,4 +27200,4 @@
         }
     }
 ]);
-//# sourceMappingURL=1b18673ac556374fa555.js.map
+//# sourceMappingURL=c735ef653aaa0fba543c.js.map
