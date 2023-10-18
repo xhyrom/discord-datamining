@@ -148848,9 +148848,17 @@ html .invoiceCancelRow-3s2UuC {
     margin: 0
 }
 
+.container-1HnACW {
+    padding: 4px;
+    border-radius: var(--radius-xs)
+}
+
+.container-1HnACW:hover {
+    background-color: var(--background-secondary)
+}
+
 .card-8UsK4b {
     background-color: var(--background-secondary);
-    padding: 16px 16px 12px;
     border-radius: 8px;
     border: 1px solid var(--background-secondary);
     -webkit-transition: border-color .5s;
@@ -148864,6 +148872,14 @@ html .invoiceCancelRow-3s2UuC {
 
 .lurking-1Ll8h7 {
     cursor: default
+}
+
+.padding-3w9_tb {
+    padding: 16px
+}
+
+.padding-3w9_tb.isRecurring-3pILBb {
+    padding-bottom: 0
 }
 
 .joined-Mu0Ynl {
@@ -148953,14 +148969,31 @@ html .invoiceCancelRow-3s2UuC {
 }
 
 .externalLocation-1Pa18K {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
     cursor: auto;
     -webkit-user-select: text;
     -moz-user-select: text;
     -ms-user-select: text;
     user-select: text
+}
+
+.externalLocation-1Pa18K,
+.recurrences-28Bo-r {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex
+}
+
+.recurrences-28Bo-r {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    padding: 4px 12px 12px
+}
+
+.heading-1FJ6rV {
+    margin-bottom: 8px;
+    margin-left: 4px
 }
 
 .enable-forced-colors .channelContainer-7uiQGJ {
@@ -150192,7 +150225,8 @@ html .invoiceCancelRow-3s2UuC {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
     -ms-flex-direction: column;
-    flex-direction: column
+    flex-direction: column;
+    gap: 16px
 }
 
 .icon-3DnmvF {
@@ -150207,10 +150241,6 @@ html .invoiceCancelRow-3s2UuC {
 
 .button-3tENlF {
     padding: 2px 4px
-}
-
-.eventCard-2ZL9GD+.eventCard-2ZL9GD {
-    margin-top: 16px
 }
 
 .iconButton-2rHy7x {
@@ -176829,4 +176859,4 @@ html .invoiceCancelRow-dVOR64 {
     margin-bottom: 8px
 }
 
-/*# sourceMappingURL=40532.2646e906ae132a325a26.css.map*/
+/*# sourceMappingURL=40532.8b15add21bd8698f06a5.css.map*/
