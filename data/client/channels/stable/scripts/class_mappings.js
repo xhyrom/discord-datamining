@@ -16787,6 +16787,8 @@
                 visuallyHidden: "visuallyHidden-2l2eT-",
                 tooltipContainer: "tooltipContainer-2dvP1b",
                 tooltip: "tooltip-YqxAkk",
+                tooltipHeadingContainer: "tooltipHeadingContainer-2beORg",
+                nitroWheel: "nitroWheel-1HmTvG",
                 shine: "shine-2nh48-",
                 Shine: "Shine-2jTWpi",
                 label: "label-3ake0C",
@@ -27189,4 +27191,4 @@
         }
     }
 ]);
-//# sourceMappingURL=d5f15b083af69ebffa4b.js.map
+//# sourceMappingURL=5faca9d8e00f6151d235.js.map
