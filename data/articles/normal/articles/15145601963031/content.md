@@ -1,6 +1,6 @@
 <h1 id="docs-internal-guid-43a62b5f-7fff-aa4f-d9e8-24cdd405e5c4">What is Remix?</h1>
 <p>While chatting with your friends on Discord, you are bound to run into various images worthy of memeifying! With the <strong>Remix</strong> feature on Discord, you can now quickly and easily edit an existing image with your choice of text, drawings, emoji, and stickers. </p>
-<h3 id="h_01HCNPEMWRW8MT2HMJQV7NQ74P"><span style="color: #434343;" data-darkreader-inline-color="">Note: Remix is currently in Beta and launching first in early access for Nitro members across iOS and Android. The Remix Beta is only available in the following languages: EN, IT, FR, DE, PT and ES. Stay tuned as we plan to expand into more languages soon!</span></h3>
+<h3 id="docs-internal-guid-522612ab-7fff-fe5e-7611-b6dddacba8c0"><span style="color: #434343;" data-darkreader-inline-color="">Note: Remix is currently available to Discord Nitro subscribers on iOS and Android only.</span></h3>
 <p><span class="wysiwyg-font-size-large"><strong>What this article covers: </strong></span></p>
 <ul>
     <li><a href="#docs-internal-guid-43a62b5f-7fff-aa4f-d9e8-24cdd405e5c4" target="_self">What is Remix?</a></li>
@@ -46,7 +46,7 @@
 <h2 id="h_01H2Y1CQH9T1HXTA0YE2HEV80Q">Cropping and Adjusting</h2>
 <p>1. To crop and adjust an image, tap on the <strong>crop tool</strong> within the <strong>Remix</strong> toolbar to get started. </p>
 <p class="wysiwyg-text-align-center"><img src="https://support.discord.com/hc/article_attachments/15317320996887" alt="crop_tool.jpeg" width="288" height="598"></p>
-<p>2. After you have selected the crop tool, you will be able to adjust the dimensions by choosing an option from the list or by manually adjusting the size. To manually adjust an image, place two fingers on the screen and move them apart to zoom in and out. </p>
+<p>2. After you have selected the crop tool, you will be able to adjust the dimensions by choosing an option from the list or by manually adjusting the size. To manually adjust an image, place two fingers on the screen and move them apart to zoom in and out.</p>
 <p>3. If you would like to move the image, place two fingers on the screen to drag. Once the image is to your liking, simply lift both fingers.    </p>
 <p class="wysiwyg-text-align-center"><img src="https://support.discord.com/hc/article_attachments/15317277157527" alt="cropping.gif" width="289" height="598"></p>
 <h2 id="h_01H2Y1CX8DV2TW2H3RA9DMH527">Drawing</h2>
@@ -65,13 +65,14 @@
 <p>You can also adjust the size of the text by placing two fingers on the screen and moving them apart to reduce or enlarge. </p>
 <p>Additionally, the position can be changed by holding-down and dragging, or by placing two fingers and rotating.  </p>
 <p class="wysiwyg-text-align-center"><img src="https://support.discord.com/hc/article_attachments/15317277169815" alt="writing.gif" width="290" height="602"></p>
+<h3 id="docs-internal-guid-8c1a8d45-7fff-670e-0a56-f217eb30f801"><span style="color: #434343;" data-darkreader-inline-color="">Note: Though Remix will be available in all countries, special characters in the text tool will be unavailable to users within non-Latin regions. </span></h3>
 <h2 id="h_01H2Y1E7NCQ5Z16DM2TASWC7DS">Stamping</h2>
 <p>1. If you would like to add an emoji or a sticker to the photo, tap on the <strong>stamp tool</strong> within the Remix toolbar to get started. </p>
 <p class="wysiwyg-text-align-center"><img src="https://support.discord.com/hc/article_attachments/15317277171607" alt="stamp_tool.jpeg" width="289" height="601"></p>
 <p>2. Once the emoji picker is visible, select an emoji or sticker you would like to use. </p>
 <p>You can move emojis and stickers by dragging it or by placing two fingers on the screen to rotate. The size can also be adjusted by placing two fingers and moving them apart to reduce or enlarge. </p>
 <p class="wysiwyg-text-align-center"><img src="https://support.discord.com/hc/article_attachments/15317321007895" alt="stamping.gif" width="291" height="599"></p>
-<h3 id="h_01HCNPEMWSSD2X3BESBCAHWXFP"><span style="color: #434343;" data-darkreader-inline-color="">Note: Animated emojis or stickers will become static. </span></h3>
+<h3 id="h_01HCNHHNWC5PWYX30TNHSJQ90E"><span style="color: #434343;" data-darkreader-inline-color="">Note: Animated emojis or stickers will become static. </span></h3>
 <h2 id="h_01H2Y1EEMADE7FGZRBAM2GNVXP">Undoing Changes</h2>
 <p>While creating, you can use the undo option located above to reverse the previous action you have just taken.</p>
 <p class="wysiwyg-text-align-center"><img src="https://support.discord.com/hc/article_attachments/15317321009431" alt="undo.gif" width="290" height="600"></p>
@@ -86,5 +87,5 @@
 <h1 id="h_01H2Y1F86HNTVKWNVJJSB4C6A5">Frequently Asked Questions</h1>
 <p><strong>Q: Are there any restrictions on what kind of Remixes I can share? </strong></p>
 <p>A: Like other spaces on Discord, content you create and share needs to abide by our <a href="https://discord.com/guidelines" target="_blank" rel="noopener noreferrer">Community Guidelines</a>.</p>
-<p><strong>Q: I'm a Nitro subscriber, but why don’t I see the remix option?</strong></p>
-<p><span id="docs-internal-guid-cb4f4020-7fff-a437-449a-e9faaa347660">A: The Remix Beta is only available in the following languages: EN, IT, FR, DE, PT and ES. If your app is set to one of those languages and you still don’t see the Remix button, please be sure to check if your mobile app is up to date. The Discord mobile app may need to take a few days for the update to be rolled out. </span></p>
+<p id="docs-internal-guid-1490ea23-7fff-d81f-0883-e43772aa7de2"><strong>Q: Why don’t I see the remix option?</strong></p>
+<p>A: Remix is only available to Discord Nitro subscribers on iOS and Android. You can learn more about Nitro and Nitro Basic <a href="https://support.discord.com/hc/en-us/articles/115000435108-What-are-Nitro-Nitro-Basic-" target="_blank" rel="noopener noreferrer">here</a>.</p>
