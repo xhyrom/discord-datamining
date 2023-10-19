@@ -6579,6 +6579,7 @@
         },
         730742: e => {
             e.exports = {
+                minimumWidth: "1200px",
                 twoColumnWidth: "1439px",
                 fullShopPageWidth: "1789px",
                 container: "container-20Ljoy",
@@ -6668,8 +6669,8 @@
             e.exports = {
                 twoColumnWidth: "1439px",
                 container: "container-Vrgqxz",
-                infoContainer: "infoContainer-14dbs1",
                 coverImageContainer: "coverImageContainer-V8-U47",
+                infoContainer: "infoContainer-14dbs1",
                 coverImage: "coverImage-2HWWxr",
                 infoContainerNoDescription: "infoContainerNoDescription-3y0gdG",
                 showMoreButton: "showMoreButton-13n9-g",
@@ -11687,7 +11688,6 @@
         313973: e => {
             e.exports = {
                 responsiveWidthMobile: "485px",
-                cardsGetCutOffWidth: "724px",
                 carouselMaxWidth: "carouselMaxWidth-1IREUy",
                 scroller: "scroller-ZG3UZ9",
                 tierPreviewsContainer: "tierPreviewsContainer-3tMaPR",
@@ -27254,4 +27254,4 @@
         }
     }
 ]);
-//# sourceMappingURL=72de2feb5d3cb37d975a.js.map
+//# sourceMappingURL=ed6fb7fd309f0e3e8ab5.js.map

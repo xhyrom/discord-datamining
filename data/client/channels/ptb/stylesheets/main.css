@@ -31150,7 +31150,8 @@ code {
     --custom-aspect-stable-image-container-padding: 20px;
     --custom-monetization-info-table-expandable-rows-toggle-expand-column-width: 30px;
     --custom-guild-shop-content-width: 1044px;
-    --custom-guild-shop-content-width-reduced: 688px;
+    --custom-guild-shop-content-width-reduced: 788px;
+    --custom-guild-shop-content-width-minimum: 688px;
     --custom-guild-shop-channel-row-gradient: linear-gradient(113deg, #2f3570 1.98%, #422c70 94.48%);
     --custom-guild-shop-channel-row-gradient-hover: linear-gradient(113deg, #383f86 1.98%, #4d3385 94.48%);
     --custom-guild-shop-channel-row-border-gradient: linear-gradient(113deg, #6591ff, #d150ff);
@@ -54473,8 +54474,9 @@ html .progress-2Otdc- {
 
 .container-20Ljoy {
     -webkit-box-flex: 1;
-    -ms-flex: 1;
-    flex: 1;
+    -ms-flex: 1 1 auto;
+    flex: 1 1 auto;
+    overflow: hidden;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -54487,7 +54489,8 @@ html .progress-2Otdc- {
 }
 
 .content-1tt_Au {
-    padding: 32px 42px
+    padding: 32px;
+    overflow: scroll scroll !important
 }
 
 .contentContainer-1faF_F {
@@ -54500,6 +54503,12 @@ html .progress-2Otdc- {
 @media (max-width:1439px) {
     .contentContainer-1faF_F {
         width: var(--custom-guild-shop-content-width-reduced)
+    }
+}
+
+@media (max-width:1200px) {
+    .contentContainer-1faF_F {
+        width: var(--custom-guild-shop-content-width-minimum)
     }
 }
 
@@ -54587,6 +54596,7 @@ html .progress-2Otdc- {
         max-width: var(--custom-guild-shop-content-width-reduced)
     }
 
+    .container-Vrgqxz .coverImageContainer-V8-U47,
     .container-Vrgqxz .infoContainer-14dbs1 {
         max-width: none
     }
@@ -86687,9 +86697,6 @@ input[type=checked]:focus-visible+.label-3TDpbn {
 }
 
 .tierPreviewsContainer-3tMaPR {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
     -ms-flex-direction: row;
@@ -86697,16 +86704,14 @@ input[type=checked]:focus-visible+.label-3TDpbn {
     min-width: 0
 }
 
-@media (max-width:724px) {
-    .tierPreviewsContainer-3tMaPR {
-        padding: 0 16px
-    }
+.tierPreviews-3hP4Ni,
+.tierPreviewsContainer-3tMaPR {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex
 }
 
 .tierPreviews-3hP4Ni {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
     -webkit-box-pack: center;
     -ms-flex-pack: center;
     justify-content: center;
@@ -87139,7 +87144,10 @@ input[type=checked]:focus-visible+.label-3TDpbn {
 
 .container-R77IJV {
     position: relative;
-    width: 320px;
+    max-width: 320px;
+    -webkit-box-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
     overflow: hidden;
     border-radius: 8px
 }
@@ -90732,7 +90740,10 @@ input[type=checked]:focus-visible+.label-3TDpbn {
 
 .tab-2E41_Z {
     padding: 8px;
-    width: 300px;
+    min-width: 300px;
+    -webkit-box-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -177160,4 +177171,4 @@ html .invoiceCancelRow-dVOR64 {
     margin-bottom: 8px
 }
 
-/*# sourceMappingURL=40532.70ef0c0b01cb9211dde2.css.map*/
+/*# sourceMappingURL=40532.4493d1b34beab86b3741.css.map*/
