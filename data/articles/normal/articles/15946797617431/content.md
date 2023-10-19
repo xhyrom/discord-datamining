@@ -1,16 +1,16 @@
 <p id="docs-internal-guid-0477851b-7fff-a062-4335-acc5c8ec4e70"><strong>What this article covers: </strong></p>
 <ul>
-    <li><a href="https://support.discord.com/hc/en-us/articles/15946797617431#h_01HAD8XEZPCZ38NAG9NJAYCEQA">What is the Members page?</a></li>
-    <li><a href="https://support.discord.com/hc/en-us/articles/15946797617431#h_01HAD8XEZP095H4QXP1QAA600P">How does the Members page work?</a></li>
+    <li><a href="#h_01HAD8XEZPCZ38NAG9NJAYCEQA">What is the Members page?</a></li>
+    <li><a href="#h_01HAD8XEZP095H4QXP1QAA600P">How does the Members page work?</a></li>
     <li>
-        <a href="https://support.discord.com/hc/en-us/articles/15946797617431#h_01HAD96EADBQ0G1V8RE27ATP8E">Managing Server Members</a>
+        <a href="#h_01HAD96EADBQ0G1V8RE27ATP8E">Managing Server Members</a>
         <ul>
-            <li><a href="https://support.discord.com/hc/en-us/articles/15946797617431#h_01HAD96EADXYYWVRBF85F6TV67">Adding Roles</a></li>
-            <li><a href="https://support.discord.com/hc/en-us/articles/15946797617431#h_01H5K0YX4XET5E6KP0Q1T9HWNP">Reviewing Signals</a></li>
-            <li><a href="https://support.discord.com/hc/en-us/articles/15946797617431#h_01H5K0Z46YY4M4G3PD9G9NJJGW">Searching, Pruning, and Reviewing Invite Codes</a></li>
+            <li><a href="#h_01HAD96EADXYYWVRBF85F6TV67">Adding Roles</a></li>
+            <li><a href="#h_01H5K0YX4XET5E6KP0Q1T9HWNP">Reviewing Signals</a></li>
+            <li><a href="#h_01H5K0Z46YY4M4G3PD9G9NJJGW">Searching, Pruning, and Reviewing Invite Codes</a></li>
         </ul>
     </li>
-    <li><a href="https://support.discord.com/hc/en-us/articles/15946797617431#h_01H5K0Z9RJ0AT89DSSRFDGYA8Y">Frequently Asked Questions </a></li>
+    <li><a href="#h_01H5K0Z9RJ0AT89DSSRFDGYA8Y">Frequently Asked Questions </a></li>
 </ul>
 <h1 id="h_01HAD8XEZPCZ38NAG9NJAYCEQA">What is the Members page?</h1>
 <p>The <strong>Members</strong> page provides moderators and admins with a dashboard view of new and existing server members within your server.</p>
@@ -59,7 +59,7 @@
 <h3 id="h_01HAD8VTS7WVTEE69JPNAGE65J"><span style="color: #434343;" data-darkreader-inline-color="">Note: You will need server-wide permissions enabled to manage, timeout, or perform other actions within the Members page. </span></h3>
 <h1 id="h_01H5K0Z9RJ0AT89DSSRFDGYA8Y">Frequently Asked Questions</h1>
 <p id="docs-internal-guid-e091bdd2-7fff-8089-c2cb-77f54ede7ef7"><strong>Q: Which servers have access to the Members page?</strong></p>
-<p>A: At this time, the new Members page is available to all Community-enabled servers.</p>
+<p id="docs-internal-guid-280a46d3-7fff-5d0c-e2a6-076a0be68fa8">A: The new Members page is available to all servers.</p>
 <p><strong>Q: How are the Signals defined?</strong></p>
 <p id="docs-internal-guid-8ac37960-7fff-a481-2afc-ef6b4b2623eb">A: We can’t share the specific details around the Unusual DM Activity signal at this time. The Timed Out signals are displayed for users who have been timed out.</p>
 <p id="docs-internal-guid-133f1c76-7fff-1f21-fbf5-c2194c47837a"><strong>Q: If a member has "Unknown" under Invite Code, then what does this mean?</strong></p>

@@ -1,11 +1,11 @@
-<h3 id="h_01HAD80CK6TCPEHXXWJVKQH504"><span style="color: #434343;" data-darkreader-inline-color="">This experimental feature is only available to a limited number of communities.</span></h3>
+<h3 id="docs-internal-guid-6837859d-7fff-3258-62ad-e662f39b0ac4"><span style="color: #434343;" data-darkreader-inline-color="">This feature is available to all servers!</span></h3>
 <p><span class="wysiwyg-font-size-large"><strong>What this article covers: </strong></span></p>
 <ul>
-    <li><a href="https://support.discord.com/hc/en-us/articles/17439993574167#h_01HAD80CK658SGQ90C9HVK5KGG">What are Activity Alerts?</a></li>
-    <li><a href="https://support.discord.com/hc/en-us/articles/17439993574167#h_01HAD80CK605PQ278XYQ8AASFX">What are Security Actions?</a></li>
-    <li><a href="https://support.discord.com/hc/en-us/articles/17439993574167#h_01HAD80CK6B6W8NCDBPV1JEF2P">How to use Activity Alerts</a></li>
-    <li><a href="https://support.discord.com/hc/en-us/articles/17439993574167#h_01HAD80CK67WF59GDGR7XGVAN8">How to enable Security Actions</a></li>
-    <li><a href="https://support.discord.com/hc/en-us/articles/17439993574167#h_01HAD85BC7T9NY94HNNC20XEN0">Frequently Asked Questions</a></li>
+    <li><a href="#h_01HAD80CK658SGQ90C9HVK5KGG">What are Activity Alerts?</a></li>
+    <li><a href="#h_01HAD80CK605PQ278XYQ8AASFX">What are Security Actions?</a></li>
+    <li><a href="#h_01HAD80CK6B6W8NCDBPV1JEF2P">How to use Activity Alerts</a></li>
+    <li><a href="#h_01HAD80CK67WF59GDGR7XGVAN8">How to enable Security Actions</a></li>
+    <li><a href="#h_01HAD85BC7T9NY94HNNC20XEN0">Frequently Asked Questions</a></li>
 </ul>
 <h1 id="h_01HAD80CK658SGQ90C9HVK5KGG">What are Activity Alerts?</h1>
 <p class="wysiwyg-text-align-center"><img src="https://support.discord.com/hc/article_attachments/17565739061783" alt="activity_alerts_banner1.png"></p>
@@ -16,10 +16,10 @@
 <h1 id="h_01HAD80CK6B6W8NCDBPV1JEF2P">How to use Activity Alerts</h1>
 <p>In the event of unusual activity in your server, you'll see a banner appear at the top of your Discord app (both on desktop and mobile) if you’re currently online, notifying you of this unusual activity. If you’re offline, you’ll receive a push notification instead. AutoMod will also post a message in your designated alert channel letting you know of any unusual activity as well.</p>
 <p class="wysiwyg-text-align-center"><img src="https://support.discord.com/hc/article_attachments/17565747216919" alt="activity_alerts_banner2.png"></p>
-<p>If this notification appears while you’re in the server in question, you can tap on <a href="https://support.discord.com/hc/en-us/articles/17439993574167#h_01HAD80CK67WF59GDGR7XGVAN8"><strong>Security Actions</strong></a> to pause Invites or DMs while you investigate.</p>
+<p>If this notification appears while you’re in the server in question, you can tap on <a href="#h_01HAD80CK67WF59GDGR7XGVAN8"><strong>Security Actions</strong></a> to pause Invites or DMs while you investigate.</p>
 <p class="wysiwyg-text-align-center"><img src="https://support.discord.com/hc/article_attachments/17565747230359" alt="activity_alerts_banner3.png"></p>
 <p>If you’re currently viewing another server when the alert comes in, tapping on <strong>Review the Alert</strong> will bring you to the <a href="https://support.discord.com/hc/en-us/articles/15946797617431"><span class="wysiwyg-underline" style="color: #1155cc;" data-darkreader-inline-color="">Members Page</span></a> for that server.</p>
-<p>If you notice unusual behavior, you can use <a href="https://support.discord.com/hc/en-us/articles/17439993574167#h_01HAD80CK67WF59GDGR7XGVAN8"><strong>Security Actions</strong></a> to pause Invites or DMs while you investigate.</p>
+<p>If you notice unusual behavior, you can use <a href="#h_01HAD80CK67WF59GDGR7XGVAN8"><strong>Security Actions</strong></a> to pause Invites or DMs while you investigate.</p>
 <h1 id="h_01HAD80CK67WF59GDGR7XGVAN8">How to enable Security Actions</h1>
 <p>If you received an alert about unusual activity in your server, you can utilize Security Actions to take any desired action on the unusual activity.</p>
 <p class="wysiwyg-text-align-center"><img src="https://support.discord.com/hc/article_attachments/17565747241623" alt="how_to_enable_security_actions.gif"></p>
