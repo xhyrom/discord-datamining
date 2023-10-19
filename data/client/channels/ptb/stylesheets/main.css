@@ -111725,49 +111725,12 @@ button.button-12Fmur.disabled-GROwTe {
     margin-bottom: 32px
 }
 
-.bigPerkCard-3KkaK3 {
-    background-color: var(--background-secondary-alt);
-    border-radius: 16px;
-    padding: 40px;
-    -webkit-box-sizing: border-box;
-    box-sizing: border-box;
-    width: 100%;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: column;
-    flex-direction: column;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center
-}
-
-.bigPerkCardContainer-3tgliF {
-    display: grid;
-    gap: 16px;
-    grid-template-columns: repeat(auto-fit, minmax(398px, 1fr));
-    margin-bottom: 16px;
-    justify-items: center
-}
-
-.bigPerkCardHeading-2GnYmp {
-    margin-bottom: 32px;
-    text-align: center
-}
-
-.bigPerkArt-2WsBZm {
-    max-width: 100%;
-    margin: auto 0
-}
-
 .perksCardArt-2uOSXb {
     -webkit-filter: saturate(var(--saturation-factor, 1));
     filter: saturate(var(--saturation-factor, 1))
 }
 
-.smallPerkCardContainer-1Ee4A2 {
+.perkCardContainer-1DyJSu {
     display: grid;
     gap: 16px;
     grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
@@ -111775,11 +111738,11 @@ button.button-12Fmur.disabled-GROwTe {
     margin-bottom: 32px
 }
 
-.smallPerkCardContainerExpanded-1GGu3N {
+.perkCardContainerExpanded-VIStYz {
     margin-bottom: 16px
 }
 
-.smallPerkCard-39W9m_ {
+.perkCard-1-wwDK {
     position: relative;
     background-color: var(--background-secondary-alt);
     border-radius: 16px;
@@ -111802,7 +111765,7 @@ button.button-12Fmur.disabled-GROwTe {
     justify-content: space-between
 }
 
-.smallPerkCardNewBadge-3wnxII {
+.perkCardNewBadge-rTWX54 {
     top: -4px;
     left: -4px;
     border-radius: 8px;
@@ -111811,18 +111774,18 @@ button.button-12Fmur.disabled-GROwTe {
     background: var(--custom-premium-colors-premium-gradient-tier-2)
 }
 
-.smallPerkCardHeading-RHhIVb {
+.perkCardHeading-20CMTN {
     text-align: center;
     margin-bottom: 8px;
     margin-top: 16px
 }
 
-.smallPerkCardDescription-29SYLJ {
+.perkCardDescription-32X8vF {
     text-align: center;
     min-height: 36px
 }
 
-.smallPerkCardEarlyAccessBadge-184f0n {
+.perkCardEarlyAccessBadge-2fSMFL {
     top: -4px;
     left: 24px;
     border-radius: 8px;
@@ -111839,7 +111802,7 @@ button.button-12Fmur.disabled-GROwTe {
     width: 195px
 }
 
-.clientThemesCard-1OyerH .smallPerkCardDescription-29SYLJ {
+.clientThemesCard-1OyerH .perkCardDescription-32X8vF {
     padding: 0 30px
 }
 
@@ -177171,4 +177134,4 @@ html .invoiceCancelRow-dVOR64 {
     margin-bottom: 8px
 }
 
-/*# sourceMappingURL=40532.4493d1b34beab86b3741.css.map*/
+/*# sourceMappingURL=40532.7cd6979f0330e87943e3.css.map*/
