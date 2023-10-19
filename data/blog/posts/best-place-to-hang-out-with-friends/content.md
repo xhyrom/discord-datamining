@@ -3,7 +3,7 @@
         <div class="blog-post-content w-richtext">
             <p>Everyone understands the importance of friendship.&nbsp; Hanging out and having fun is one of the most important parts of building relationships and bonding! That’s why we’re always trying to make Discord the best place to spend time with friends. More than 150 million people around the world chill on Discord every month — studying, enjoying clubs, learning languages, building software, talking about your daily lives, and, of course, playing games.</p>
             <p>Today we’re announcing new and upcoming features that make Discord even more fun and easier to use. We’re delivering a new and improved mobile experience, making apps even better, adding more value to Nitro, building opportunities for our incredible external developers, and continuing to deliver on our promise to keep you safe.</p>
-            <figure class="w-richtext-figure-type-video w-richtext-align-center" style="padding-bottom:33.723653395784545%">
+            <figure class="w-richtext-figure-type-video w-richtext-align-fullwidth" style="padding-bottom:56.206088992974244%">
                 <div><iframe allowfullscreen="true" frameborder="0" scrolling="no" src="https://www.youtube.com/embed/CbVAcKjhcBc" title="Fall Update for You and Your Friends"></iframe></div>
             </figure>
         </div>
