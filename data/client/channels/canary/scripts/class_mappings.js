@@ -26622,6 +26622,8 @@
                 hasBadges: "hasBadges-kliaM8",
                 botTagCompact: "botTagCompact-1idyyC botTag-1NoD0B",
                 botTagCozy: "botTagCozy-3NTBvK botTag-1NoD0B",
+                nitroBadgeSvg: "nitroBadgeSvg-15nli7 botTag-1NoD0B",
+                nitroAuthorBadgeContainer: "nitroAuthorBadgeContainer-2LKf05",
                 replyLink: "replyLink-25gPcI",
                 separator: "separator-AebOhG",
                 messageEditorCompact: "messageEditorCompact-3dWt-L",
@@ -27249,4 +27251,4 @@
         }
     }
 ]);
-//# sourceMappingURL=1958e3b33939f49ce507.js.map
+//# sourceMappingURL=17925e3dd4b9bc4e940f.js.map
