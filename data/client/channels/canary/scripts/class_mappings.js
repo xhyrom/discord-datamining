@@ -6149,6 +6149,11 @@
                 reload: "reload-1YKUlg"
             }
         },
+        35602: e => {
+            e.exports = {
+                art: "art-2to4_d"
+            }
+        },
         462030: e => {
             e.exports = {
                 shopLogo: "shopLogo-2NbABu",
@@ -27230,4 +27235,4 @@
         }
     }
 ]);
-//# sourceMappingURL=43319582fdf59e89fcff.js.map
+//# sourceMappingURL=b0486eaebf40f5a7d1e1.js.map
