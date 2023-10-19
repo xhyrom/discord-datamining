@@ -1,6 +1,6 @@
 <h1 id="docs-internal-guid-43a62b5f-7fff-aa4f-d9e8-24cdd405e5c4">What is Remix?</h1>
 <p>While chatting with your friends on Discord, you are bound to run into various images worthy of memeifying! With the <strong>Remix</strong> feature on Discord, you can now quickly and easily edit an existing image with your choice of text, drawings, emoji, and stickers. </p>
-<h3 id="docs-internal-guid-522612ab-7fff-fe5e-7611-b6dddacba8c0"><span style="color: #434343;" data-darkreader-inline-color="">Note: Remix is currently available to Discord Nitro subscribers on iOS and Android only.</span></h3>
+<h3 id="docs-internal-guid-802d6304-7fff-3253-baf5-bea0409dd5ba"><span style="color: #434343;" data-darkreader-inline-color="">Note: Remix is rolling out to all Discord users on iOS and Android. </span></h3>
 <p><span class="wysiwyg-font-size-large"><strong>What this article covers: </strong></span></p>
 <ul>
     <li><a href="#docs-internal-guid-43a62b5f-7fff-aa4f-d9e8-24cdd405e5c4" target="_self">What is Remix?</a></li>
@@ -88,4 +88,4 @@
 <p><strong>Q: Are there any restrictions on what kind of Remixes I can share? </strong></p>
 <p>A: Like other spaces on Discord, content you create and share needs to abide by our <a href="https://discord.com/guidelines" target="_blank" rel="noopener noreferrer">Community Guidelines</a>.</p>
 <p id="docs-internal-guid-1490ea23-7fff-d81f-0883-e43772aa7de2"><strong>Q: Why don’t I see the remix option?</strong></p>
-<p>A: Remix is only available to Discord Nitro subscribers on iOS and Android. You can learn more about Nitro and Nitro Basic <a href="https://support.discord.com/hc/en-us/articles/115000435108-What-are-Nitro-Nitro-Basic-" target="_blank" rel="noopener noreferrer">here</a>.</p>
+<p id="docs-internal-guid-7e71078b-7fff-791d-cb9b-1341477f7023">A: Remix is rolling out to all Discord users on iOS and Android. </p>
