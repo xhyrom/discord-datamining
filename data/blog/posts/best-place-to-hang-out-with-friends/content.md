@@ -12,7 +12,7 @@
     <div id="heading-2" class="rich-wrapper">
         <div class="blog-post-content w-richtext">
             <h2>Expanding Customization with the Shop<br></h2>
-            <p>We keep hearing that users love perks that enable them to customize how they show up on Discord. That’s why last month we launched a brand new in-app Shop,&nbsp; giving Nitro members the opportunity to purchase profile accessories, starting with cool new avatar decorations and now profile effects: animations that appear on your profile whenever you or another Discord user previews it.</p>
+            <p>We keep hearing that users love perks that enable them to customize how they show up on Discord. That’s why last month we launched a brand new in-app <a href="https://discord.com/shop/fullscreen?source=1">Shop</a>,&nbsp;giving Nitro members the opportunity to purchase profile accessories, starting with cool new avatar decorations and now profile effects: animations that appear on your profile whenever you or another Discord user previews it.</p>
             <figure class="w-richtext-figure-type-image w-richtext-align-center" style="max-width:">
                 <div><img src="https://assets-global.website-files.com/5f9072399b2640f14d6a2bf4/65303f866377dec7f38d88bb_65303a62d29fa499bd30191b_EN%2520GB%25201.png" alt=""></div>
             </figure>
