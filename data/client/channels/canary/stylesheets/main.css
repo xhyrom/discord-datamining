@@ -156626,6 +156626,66 @@ html .invoiceCancelRow-3s2UuC {
     opacity: .5
 }
 
+.modalHeader-aXX4U- {
+    background: -webkit-gradient(linear, right top, left top, from(rgba(88, 101, 242, 0)), color-stop(70.8%, var(--brand-500))), url(/assets/037a2d1c8236ff0f196a8db1dde6ee71.jpg);
+    background: linear-gradient(270deg, rgba(88, 101, 242, 0), var(--brand-500) 70.8%), url(/assets/037a2d1c8236ff0f196a8db1dde6ee71.jpg);
+    padding: var(--spacing-32);
+    background-size: cover;
+    background-position-y: -25px
+}
+
+.modalHeaderText-1XCDbV {
+    max-width: 211px;
+    gap: var(--spacing-4)
+}
+
+.closeButton-36t9Vn {
+    position: absolute;
+    right: 12px;
+    top: 12px
+}
+
+.closeButton-36t9Vn,
+.closeButton-36t9Vn * {
+    height: 34px;
+    width: 34px
+}
+
+.modalContent-1Avzh- {
+    padding: var(--spacing-32)
+}
+
+.tipsSection-1h5_LK {
+    padding: var(--spacing-16);
+    background: var(--background-secondary);
+    border-radius: var(--radius-sm);
+    gap: var(--spacing-16)
+}
+
+.tipRow-3yztTZ {
+    gap: var(--spacing-8)
+}
+
+.tipNumber-MasoFQ {
+    border-radius: var(--radius-round);
+    background: var(--background-secondary-alt);
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    min-width: 32px;
+    min-height: 32px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center
+}
+
 .container-1PV2aX {
     position: relative;
     display: -webkit-box;
@@ -176915,4 +176975,4 @@ html .invoiceCancelRow-dVOR64 {
     margin-bottom: 8px
 }
 
-/*# sourceMappingURL=40532.b1060d870598f5468a8e.css.map*/
+/*# sourceMappingURL=40532.3b36aefeccefe98e4b10.css.map*/
