@@ -3,7 +3,7 @@
         <div class="blog-post-content w-richtext">
             <p>Seven minutes. Seven minutes is how long it took for you to do the following on your phone: search the internet for “meme generator,” upload the image, save your creation, go BACK into Discord and find the chat you were gonna upload it to and post it. By the time all that happens, the moment’s passed and your sick meme didn’t get the attention it needed.&nbsp;</p>
             <p>Soon, you’ll be able to quickly create ‘em, directly within Discord, using <strong>Remix</strong>.&nbsp;</p>
-            <p>Remix is a new way to create and contribute your own flair to images uploaded to Discord. <strong>Currently in Beta, Remix is launching first in early access for Nitro members.</strong> Learn how to remix, create, meme and share below.<br>‍</p>
+            <p>Currently in Beta, Remix is a new way to create and contribute your own flair to images uploaded to Discord. Learn how to remix, create, meme and share below.<br>‍</p>
         </div>
     </div>
     <div class="btn-wrapper w-condition-invisible"><a href="#" class="btn-blog w-dyn-bind-empty w-button"></a></div>
@@ -23,8 +23,7 @@
     <div id="heading-3" class="rich-wrapper">
         <div class="blog-post-content w-richtext">
             <h2><strong>The First of Many Mixes of Remix<br></strong></h2>
-            <p>Nitro members are the first to try out the Remix on mobile, so make sure your mobile app’s all up to date while it’s rolling out! Early access availability is currently limited to specific languages, with more language support added in the future. Learn more about Remix’s availability at the support article mentioned above.&nbsp;</p>
-            <p>Mix, remix, make beautiful artwork or creative abominations — it’s all up to you. Show us what you’ve created using Remix, or tell us what you think would make Remix perfect for its final release out of Beta by giving us a shout at <a href="https://twitter.com/Discord">Twitter</a>, <a href="https://instagram.com/discord">Instagram</a> or <a href="https://www.tiktok.com/@discord">TikTok</a>. Help us make it be(t)ta!&nbsp;</p>
+            <p>Mix, remix, make beautiful artwork or creative abominations — it’s all up to you. Show us what you’ve created using Remix, or tell us what you think would make Remix perfect for its final release out of Beta by giving us a shout at <a href="https://twitter.com/Discord">Twitter</a>, <a href="https://instagram.com/discord">Instagram</a> or <a href="https://www.tiktok.com/@discord">TikTok</a>. Help us make it be(t)ta!</p>
         </div>
     </div>
     <div id="heading-4" class="rich-wrapper">
