@@ -19858,18 +19858,14 @@
             e.exports = {
                 perksContainer: "perksContainer-30pMZ3",
                 perksTitle: "perksTitle-2PFndG",
-                bigPerkCard: "bigPerkCard-3KkaK3",
-                bigPerkCardContainer: "bigPerkCardContainer-3tgliF",
-                bigPerkCardHeading: "bigPerkCardHeading-2GnYmp",
-                bigPerkArt: "bigPerkArt-2WsBZm",
                 perksCardArt: "perksCardArt-2uOSXb",
-                smallPerkCardContainer: "smallPerkCardContainer-1Ee4A2",
-                smallPerkCardContainerExpanded: "smallPerkCardContainerExpanded-1GGu3N",
-                smallPerkCard: "smallPerkCard-39W9m_",
-                smallPerkCardNewBadge: "smallPerkCardNewBadge-3wnxII",
-                smallPerkCardHeading: "smallPerkCardHeading-RHhIVb",
-                smallPerkCardDescription: "smallPerkCardDescription-29SYLJ",
-                smallPerkCardEarlyAccessBadge: "smallPerkCardEarlyAccessBadge-184f0n",
+                perkCardContainer: "perkCardContainer-1DyJSu",
+                perkCardContainerExpanded: "perkCardContainerExpanded-VIStYz",
+                perkCard: "perkCard-1-wwDK",
+                perkCardNewBadge: "perkCardNewBadge-rTWX54",
+                perkCardHeading: "perkCardHeading-20CMTN",
+                perkCardDescription: "perkCardDescription-32X8vF",
+                perkCardEarlyAccessBadge: "perkCardEarlyAccessBadge-2fSMFL",
                 stickersImage: "stickersImage-38Xy1J",
                 perGuildProfilesImage: "perGuildProfilesImage-2Fcmo1",
                 clientThemesCard: "clientThemesCard-1OyerH",
@@ -27254,4 +27250,4 @@
         }
     }
 ]);
-//# sourceMappingURL=ed6fb7fd309f0e3e8ab5.js.map
+//# sourceMappingURL=1180bed452bbc1c67924.js.map
