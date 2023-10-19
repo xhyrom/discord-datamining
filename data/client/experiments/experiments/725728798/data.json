@@ -1,0 +1,23 @@
+{
+  "data": {
+    "kind": "user",
+    "id": "2023-10_social_proofing_message_nitro_badge",
+    "label": "Social Proofing Message Nitro Badge",
+    "description": [
+      "Not Eligible",
+      "Control Bucket",
+      "Treatment 1: Prefer BOTH nitro badge AND role icon(s)",
+      "Treatment 2: Prefer role icon(s) over nitro badge if both are present"
+    ],
+    "hash": 725728798,
+    "buckets": [
+      -1,
+      0,
+      1,
+      2
+    ],
+    "config_keys": [
+      "enabled"
+    ]
+  }
+}
