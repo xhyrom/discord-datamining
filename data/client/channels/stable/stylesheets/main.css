@@ -10576,7 +10576,7 @@ html.decorate-links .lowSaturationUnderline-Z6CW6z {
     border-radius: 8px;
     position: relative;
     overflow: hidden;
-    --custom-user-popout-outside-components-height: 0
+    --custom-user-popout-outside-components-height: 1px
 }
 
 .userPopoutOuter-1OHwPL {
@@ -18436,6 +18436,59 @@ html.decorate-links .lowSaturationUnderline-Z6CW6z {
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center
+}
+
+.header-3zP9z_ {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    margin-bottom: 4px
+}
+
+.collapseable-1LT2E1 {
+    background-color: transparent !important;
+    border-radius: 0;
+    border: none;
+    -webkit-box-shadow: none;
+    box-shadow: none
+}
+
+.collapseable-1LT2E1:before {
+    -webkit-box-shadow: none;
+    box-shadow: none
+}
+
+.arrow-1nGGEX {
+    width: 18px;
+    height: 18px
+}
+
+.helpCenterCta-2jcySK {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    gap: 2px;
+    margin-top: -4px;
+    margin-bottom: 8px
+}
+
+.linkIcon-1dJrUj {
+    width: 18px;
+    height: 18px
 }
 
 .connectedAccountVanityMetadata-38KAgN {
@@ -105430,6 +105483,22 @@ input[type=checked]:focus-visible+.label-3TDpbn {
     bottom: 10px
 }
 
+.art-2to4_d {
+    width: 213px;
+    height: 176px;
+    background-color: green;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    margin: -63px auto 0
+}
+
 .container-2pEU_G {
     width: 285px;
     background-color: var(--brand-500);
@@ -158165,6 +158234,10 @@ html .invoiceCancelRow-3s2UuC {
     opacity: .7
 }
 
+.fullPrice-26UjNQ {
+    opacity: .7
+}
+
 .premiumIcon-3J0XnZ {
     display: inline-block;
     position: relative;
@@ -176260,6 +176333,21 @@ div.nagbar-5a6j1M {
     margin-bottom: 4px
 }
 
+.buttonsContainer-2tCf-a {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    gap: 8px
+}
+
+.unlockDiscountButton-XPl56S:hover {
+    background-color: hsl(var(--white-500-hsl)/.1)
+}
+
 .modal-3fnj3y {
     background-color: var(--background-secondary);
     border-radius: 8px;
@@ -176975,4 +177063,4 @@ html .invoiceCancelRow-dVOR64 {
     margin-bottom: 8px
 }
 
-/*# sourceMappingURL=40532.3b36aefeccefe98e4b10.css.map*/
+/*# sourceMappingURL=40532.90f92d84362dcd324342.css.map*/
