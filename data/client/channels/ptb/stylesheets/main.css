@@ -74106,7 +74106,7 @@ input[type=checked]:focus-visible+.label-3TDpbn {
     width: 268px
 }
 
-.container-3a5mk- {
+.container-2zjZXJ {
     -webkit-box-shadow: var(--elevation-stroke), var(--elevation-high);
     box-shadow: var(--elevation-stroke), var(--elevation-high);
     border-radius: var(--radius-sm);
@@ -74115,7 +74115,7 @@ input[type=checked]:focus-visible+.label-3TDpbn {
     isolation: isolate
 }
 
-.slotsContainer-3Li39W {
+.slotsContainer-3udOh4 {
     padding: var(--custom-voice-channel-effects-bar-effect-bar-padding-y) var(--custom-voice-channel-effects-bar-effect-bar-padding-x);
     -webkit-box-align: center;
     -ms-flex-align: center;
@@ -74126,87 +74126,87 @@ input[type=checked]:focus-visible+.label-3TDpbn {
     width: calc(var(--custom-voice-channel-effects-bar-max-width) - var(--custom-voice-channel-effects-bar-effect-bar-padding-x)*2)
 }
 
-.slots-paZlX-,
-.slotsContainer-3Li39W {
+.slots-3MAqKV,
+.slotsContainer-3udOh4 {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex
 }
 
-.slots-paZlX- {
+.slots-3MAqKV {
     gap: 24px;
     min-width: 272px
 }
 
-.slotsWide-31Ye9I {
+.slotsWide-nX9sAp {
     gap: 30px
 }
 
-.slot-JZjffO {
+.slot-PilZM8 {
     cursor: pointer
 }
 
-.emoji-18lX9z {
+.emoji-3NC9PY {
     width: 32px;
     height: 32px
 }
 
-.tooltipContainer-38MmYp {
+.tooltipContainer-3zQZeI {
     margin-bottom: 12px
 }
 
-.emojiPicker-2NoGga {
-    max-width: var(--custom-voice-channel-effects-bar-max-width);
-    border-radius: var(--radius-sm)
-}
-
-.emojiItemDisabled-1dczo_ {
+.emojiItemDisabled-R5FUpg {
     -webkit-filter: grayscale(100%);
     filter: grayscale(100%)
 }
 
-.animatedPicker-IdiG5I {
+.animatedPicker-3Q75NA {
     top: 0;
     height: 0;
     overflow: hidden;
-    -webkit-transition: height .15s ease-out;
-    transition: height .15s ease-out;
+    -webkit-transition: height .4s cubic-bezier(.16, 1, .3, 1);
+    transition: height .4s cubic-bezier(.16, 1, .3, 1);
     border-radius: 0;
     -webkit-box-shadow: none;
     box-shadow: none
 }
 
-.animatedPickerHide-2aEsbZ {
-    display: none
-}
-
-.animatedPickerTall-1Xg5Ez {
+.animatedPickerTall-JyXXGC {
     top: 498px;
     height: 440px
 }
 
-.emojiPickerHeader-2mWh2T {
+.emojiPickerHeader-ipciXm {
     background: var(--background-floating);
     padding-bottom: 4px;
     -webkit-box-shadow: none;
     box-shadow: none
 }
 
-.emojiPickerHeaderExpanded-qRmYMq {
+.emojiPickerHeaderExpanded-nIXhPW {
     padding-bottom: 12px
 }
 
-.dropDownContainer-2D2fq2 {
+.dropDownContainer-3-J6EG {
     margin-left: 8px
 }
 
-.dropDown-3dfe_z {
+.dropDown-1hj18M {
     color: var(--interactive-normal);
-    cursor: pointer
+    cursor: pointer;
+    -webkit-transition: -webkit-transform .4s cubic-bezier(.16, 1, .3, 1);
+    transition: -webkit-transform .4s cubic-bezier(.16, 1, .3, 1);
+    transition: transform .4s cubic-bezier(.16, 1, .3, 1);
+    transition: transform .4s cubic-bezier(.16, 1, .3, 1), -webkit-transform .4s cubic-bezier(.16, 1, .3, 1)
 }
 
-.dropDown-3dfe_z:hover {
+.dropDown-1hj18M:hover {
     color: var(--interactive-hover)
+}
+
+.dropDownOpen-3zUJpH {
+    -webkit-transform: rotate(180deg);
+    transform: rotate(180deg)
 }
 
 .reducedMotionTooltip-3O7Hr4 {
@@ -177160,4 +177160,4 @@ html .invoiceCancelRow-dVOR64 {
     margin-bottom: 8px
 }
 
-/*# sourceMappingURL=40532.ed16a2ed4fa5f9ac1ad7.css.map*/
+/*# sourceMappingURL=40532.70ef0c0b01cb9211dde2.css.map*/
