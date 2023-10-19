@@ -105483,6 +105483,22 @@ input[type=checked]:focus-visible+.label-3TDpbn {
     bottom: 10px
 }
 
+.art-2to4_d {
+    width: 213px;
+    height: 176px;
+    background-color: green;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    margin: -63px auto 0
+}
+
 .container-2pEU_G {
     width: 285px;
     background-color: var(--brand-500);
@@ -177047,4 +177063,4 @@ html .invoiceCancelRow-dVOR64 {
     margin-bottom: 8px
 }
 
-/*# sourceMappingURL=40532.4d6969a749ee5eb9c657.css.map*/
+/*# sourceMappingURL=40532.71c70c3b028724777229.css.map*/
