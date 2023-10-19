@@ -1,12 +1,12 @@
-<p class="callout">⚠️ Currently, Premium Apps are available to developers based in the US but check back <a href="https://support-dev.discord.com/hc/en-us/articles/17297949965079#h_01HB90E77QPN986GFV0S01ZSF2">here</a> and in the Discord Developers server for future announcements</p>
+<p class="callout">⚠️ Currently, Premium Apps are available to developers based <span class="discussion-id-132b3bf0-9cd2-43ff-98e6-5fddf35c4aad notion-enable-hover" data-token-index="1">in the </span><span class="discussion-id-386d9500-1ef7-4802-9c43-b17e99a1b96e discussion-id-132b3bf0-9cd2-43ff-98e6-5fddf35c4aad discussion-level-3 discussion-id-386d9500-1ef7-4802-9c43-b17e99a1b96e discussion-id-132b3bf0-9cd2-43ff-98e6-5fddf35c4aad discussion-id-1afeb757-aeb8-41a7-b3af-8e6b124e9ed3 notion-enable-hover" data-token-index="2">US</span><span class="discussion-level-1 discussion-id-1afeb757-aeb8-41a7-b3af-8e6b124e9ed3 notion-enable-hover" data-token-index="3">, UK, and EU but check</span> back <a href="#h_01HB90E77QPN986GFV0S01ZSF2">here</a> and in the Discord Developers server for future announcements</p>
 <p><a href="https://support-dev.discord.com/hc/en-us/articles/17709085688727" target="_blank" rel="noopener noreferrer">Premium Apps</a> are the key to taking your app to the next level. In this article, we’ll go step by step to help you tap into our end-to-end solution for monetizing your application and offering your app’s most loyal users new features.</p>
 <h2 id="h_01HAWJ6AVJMD315Q76KW6JFWVT">Prerequisites</h2>
 <p>Before considering monetization for your app, here are some fundamental requirements that will need to be met:</p>
 <ul>
-    <li><a href="https://support-dev.discord.com/hc/en-us/articles/17297949965079#h_01HAW6SCSSBWKGYSH77SM92GGV">App is owned by a Team</a></li>
-    <li><a href="https://support-dev.discord.com/hc/en-us/articles/17297949965079#h_01HAW6T0KAPTQ8YM6P8Z81BJPR">App uses Slash Commands or has Message Content Intent</a></li>
-    <li><a href="https://support-dev.discord.com/hc/en-us/articles/17297949965079#h_01HAW6T3JHPVZJACQEM94518TD">App is Verified</a></li>
-    <li><a href="https://support-dev.discord.com/hc/en-us/articles/17297949965079#h_01HB90E77QPN986GFV0S01ZSF2">Supported Countries</a></li>
+    <li><a href="#h_01HAW6SCSSBWKGYSH77SM92GGV">App is owned by a Team</a></li>
+    <li><a href="#h_01HAW6T0KAPTQ8YM6P8Z81BJPR">App uses Slash Commands or has Message Content Intent</a></li>
+    <li><a href="#h_01HAW6T3JHPVZJACQEM94518TD">App is Verified</a></li>
+    <li><a href="#h_01HB90E77QPN986GFV0S01ZSF2">Supported Countries</a></li>
 </ul>
 <h3 id="h_01HAW6SCSSBWKGYSH77SM92GGV">App Is Owned By A Team</h3>
 <p>If you don’t have a Team and/or an App you can create them from the <a href="https://discord.com/developers/teams" target="_blank" rel="noopener noreferrer">Developer Portal</a>. If your app is Verified but not yet owned by a Team, you can <a class="notion-link-token notion-focusable-token notion-enable-hover" tabindex="0" href="https://dis.gd/developer-support/teams-and-ownership" target="_blank" rel="noopener noreferrer" data-token-index="1">request an ownership transfer by submitting a ticket to the Developer Support team</a>.</p>
@@ -15,9 +15,11 @@
 <h3 id="h_01HAW6T3JHPVZJACQEM94518TD">App Is Verified</h3>
 <p>If your Team owns an App and uses Slash Commands but it isn’t verified, check out this article for more <a href="https://support-dev.discord.com/hc/en-us/articles/6206007597207-How-do-I-get-my-bot-verified-" target="_blank" rel="noopener noreferrer">information on applying for app verification</a>.</p>
 <p>If your app does not currently meet these initial requirements, work to accomplish them and you will gain access to the Monetization Onboarding flow.</p>
-<h3 id="h_01HB90E77QPN986GFV0S01ZSF2">Supported Countries</h3>
+<h3 id="h_01HB90E77QPN986GFV0S01ZSF2">Supported Locales</h3>
 <ul>
     <li>US</li>
+    <li>UK</li>
+    <li>EU</li>
 </ul>
 <h2 id="h_01HAW6RNXRFTXA40WXKWGXWDFQ">Next Steps</h2>
 <p>When your app meets the above requirements the “Getting Started” button under the Monetization section should now lead you to the onboarding flow.</p>

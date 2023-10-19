@@ -37,4 +37,11 @@
 <p>While many SKUs can be added, keep in mind that 1 SKU can be published at a time, which makes it available for sale. If you wish to change the SKU that is published, you can do so at any time by first unpublishing the currently published one. Keep in mind that when you unpublish a SKU, it is no longer available for sale, but <span class="discussion-id-904387d8-cccd-496c-b1a0-529121c2fb31 notion-enable-hover" data-token-index="1">users</span> who have already subscribed will remain <span class="discussion-id-398d4b7e-1df8-44da-9c44-ce476396c4cb notion-enable-hover" data-token-index="3">subscribed</span> and you must continue to make the premium offering available to them until the end of their subscription.</p>
 <h3 id="h_01HAWGFTVPA4X1VMP4XCG7RFBZ">Remove SKUs</h3>
 <p>When removing SKUs, keep in mind that this will unsubscribe everyone from it. If you are having any trouble removing SKUs, please <a href="https://dis.gd/developer-support/premium-apps" target="_blank" rel="noopener noreferrer">reach out to Developer Support</a>.</p>
-<p>After reviewing this and other linked articles, if you have any questions about Premium Apps SKU setup, please reach out to our Developer Support team!</p>
+<h2 id="h_01HCZP2Q53FJ6NBVP6J4DZ85MR">Analytics</h2>
+<p>In the Monetization section of the developer portal, you will also see an <strong>Analytics</strong> tab. When reviewing a Premium App’s analytics data, a couple of considerations should be made.</p>
+<h3 id="h_01HCZP2Q53SYESTQPWQK9YWS7Y">Availability</h3>
+<p>The available data can be considered up-to-date data as of 24 hours prior. Any representation of subscription data will reflect that of the previous day, based on system updates. This applies to user and revenue data, alike.</p>
+<h3 id="h_01HCZP2Q537A342VRBQ5932DWS">Accuracy</h3>
+<p>If after reviewing the analytics, it appears the data is inaccurate and the 24 hour period has been taken into account, keep in mind that only subscribers who have <code>Use data to improve Discord</code> enabled will be represented. Users that do not have this setting enabled will not reflect in a Premium App’s subscription analytics. However, this only applies to user data and does not apply to revenue data. Any representation of revenue data will be accurate based on the above mentioned availability period.</p>
+<p> </p>
+<p>After reviewing this and other linked articles, if you have any questions about Premium Apps SKU setup, please <a href="https://dis.gd/developer-support/premium-apps">reach out to our Developer Support team</a>!</p>
