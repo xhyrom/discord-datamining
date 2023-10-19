@@ -1,4 +1,4 @@
-/*! For license information please see 36876972b01ad8c0e4fb.js.LICENSE.txt */
+/*! For license information please see 128b9b02a9aca92d9f18.js.LICENSE.txt */
 (this.webpackChunkdiscord_app = this.webpackChunkdiscord_app || []).push([
     [22897], {
         151131: (t, e, r) => {
@@ -37150,7 +37150,7 @@ _.jH)(t)}.\nUrl: ${I(t)}`);
                     dsn: "https://fa97a90475514c03a42f80cd36d147c4@sentry.io/140984",
                     autoSessionTracking: !1,
                     environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                    release: "discord_web-dd2c65e50e3c7dceefdafa0aaf17ddb7b1fe7359",
+                    release: "discord_web-dd9e3859d6ef4f4e538c19d2512820afa6329a6e",
                     beforeSend: function(t) {
                         return function(t) {
                             return null != t.exception && null != t.exception.values && t.exception.values.every((function(t) {
@@ -37177,8 +37177,8 @@ _.jH)(t)}.\nUrl: ${I(t)}`);
                     denyUrls: [/recaptcha/, /mobilediscord\.com/, /betterdiscord:\/\//]
                 });
                 var t;
-                Bt.YA("buildNumber", null !== (t = "238533") ? t : "");
-                Bt.YA("builtAt", String("1697672547377"));
+                Bt.YA("buildNumber", null !== (t = "238545") ? t : "");
+                Bt.YA("builtAt", String("1697674137842"));
                 var e = window.GLOBAL_ENV.SENTRY_TAGS;
                 if (null != e && "object" == typeof e)
                     for (var r in e) Bt.YA(r, e[r]);
@@ -38256,6 +38256,7 @@ _.jH)(t)}.\nUrl: ${I(t)}`);
                 t.TERMS_MAY_2020 = "/archive/terms/may-2020";
                 t.PRIVACY_JUNE_2020 = "/archive/privacy/june-2020";
                 t.GUIDELINES_MAY_2020 = "/archive/guidelines/may-2020";
+                t.FALL_RELEASE_2023 = "/fallrelease";
                 t.REFRESH_XBOX_OFFER = "/new/discord-xbox-offer-2019";
                 t.REFRESH_WHY_DISCORD = "/why-discord-is-different";
                 t.WHY_DISCORD = "/why-discord";
@@ -48577,4 +48578,4 @@ _.jH)(t)}.\nUrl: ${I(t)}`);
         e(128594), e(535666), e(784633), e(678991)
     }
 ]);
-//# sourceMappingURL=36876972b01ad8c0e4fb.js.map
+//# sourceMappingURL=128b9b02a9aca92d9f18.js.map
