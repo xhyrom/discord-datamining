@@ -12,20 +12,20 @@
     <li><a href="https://support.discord.com/hc/en-us/articles/17828465914263#h_01HBVVFMX68ZV93YHYX7P3JMSK">Frequently Asked Questions</a></li>
 </ul>
 <h1 id="h_01HBVVFMX6PNR9Z7QH216V2WBN">What Are Profile Effects?</h1>
-<p>Profile effects are unique and snazzy animated effects that play on your profile when someone views your profile. In the new shop, you can buy and collect a variety of effects that’ll let you personalize and decorate your Discord profile and wow your profile admirers! Collected effects are yours to keep and apply to your profile whenever you want. </p>
+<p>Profile effects are unique and snazzy animated effects that play on your profile when someone views your profile. In the new Shop, you can buy and collect a variety of effects that’ll let you personalize and decorate your Discord profile and wow your profile admirers! Collected effects are yours to keep and apply to your profile whenever you want. </p>
 <p class="wysiwyg-text-align-center"><img src="https://support.discord.com/hc/article_attachments/18007554192919" alt="image4.gif" width="461" height="514"></p>
 <h3 id="h_01HBVVFMX67DFD07YR4A6WM0F7">
-    <strong><span style="color: #cbc6c0;" data-darkreader-inline-color="">Nitro members can enjoy early access to these new profile effects in the shop. Stay tuned as we slowly roll out this feature. To learn more about Nitro, check out this </span></strong><a href="https://support.discord.com/hc/en-us/articles/115000435108-What-are-Nitro-Nitro-Basic-"><strong><span class="wysiwyg-underline" style="color: #1155cc;" data-darkreader-inline-color="">article</span></strong></a><strong><span style="color: #cbc6c0;" data-darkreader-inline-color="">.</span></strong>
+    <strong><span style="color: #cbc6c0;" data-darkreader-inline-color="">Nitro members can enjoy early access to these new profile effects in the Shop. Stay tuned as we slowly roll out this feature. To learn more about Nitro, check out this </span></strong><a href="https://support.discord.com/hc/en-us/articles/115000435108-What-are-Nitro-Nitro-Basic-"><strong><span class="wysiwyg-underline" style="color: #1155cc;" data-darkreader-inline-color="">article</span></strong></a><strong><span style="color: #cbc6c0;" data-darkreader-inline-color="">.</span></strong>
 </h3>
 <h1 id="h_01HBVVFMX6SF10DY6CCGC7Y9MH">How Can I Collect A Profile Effect?</h1>
-<p>You can head over to the shop to preview and purchase profile effects! </p>
+<p>You can head over to the Shop to preview and purchase profile effects! </p>
 <p>1. Navigate to your <strong>User Settings &gt; Profiles</strong>. </p>
-<p>2. Once there, you will see the banner to the shop where you can select <strong>Go to Shop</strong>. You can also select <strong>Change Effect </strong>and select the <strong>Shop </strong>icon.  </p>
-<p class="wysiwyg-text-align-center"><img src="https://support.discord.com/hc/article_attachments/18007592257431" alt="image5.png" width="452" height="261">   <img src="https://support.discord.com/hc/article_attachments/18007554203927" alt="image7.png" width="235" height="262"></p>
-<h3 id="h_01HBVVFMX6MYJVBFDGSNQ6T6FF"><strong><span style="color: #cbc6c0;" data-darkreader-inline-color="">At this time, you can only access the shop on the desktop app or your browser. </span></strong></h3>
-<p>3. Once directed to the shop, you can preview and buy profile effects to add to your collection. </p>
+<p>2. Once there, you will see the banner to the Shop where you can select <strong>Go to Shop</strong>. You can also select <strong>Change Effect </strong>and select the <strong>Shop </strong>icon.  </p>
+<p><img src="https://support.discord.com/hc/article_attachments/18007592257431" alt="image5.png" width="452" height="261">   <img src="https://support.discord.com/hc/article_attachments/18007554203927" alt="image7.png" width="235" height="262"></p>
+<h3 id="h_01HBVVFMX6MYJVBFDGSNQ6T6FF"><strong><span style="color: #cbc6c0;" data-darkreader-inline-color="">At this time, you can only access the Shop on the desktop app or your browser. </span></strong></h3>
+<p>3. Once directed to the Shop, you can preview and buy profile effects to add to your collection. </p>
 <p class="wysiwyg-text-align-center"><img src="https://support.discord.com/hc/article_attachments/18007554209559" alt="image6.png" width="465" height="783"></p>
-<h3 id="h_01HBVVFMX6KXP6SBSYZ5ATF02S"><strong><span style="color: #cbc6c0;" data-darkreader-inline-color="">Purchased profile effects are yours to keep and can be used at any time! Selections available for purchase in the shop will change periodically.</span></strong></h3>
+<h3 id="h_01HBVVFMX6KXP6SBSYZ5ATF02S"><strong><span style="color: #cbc6c0;" data-darkreader-inline-color="">Purchased profile effects are yours to keep and can be used at any time! Selections available for purchase in the Shop will change periodically.</span></strong></h3>
 <h1 id="h_01HBVVFMX6VDPBCGPY25WKK6TN">How Do I Apply A Profile Effect To My Profile? </h1>
 <h2 id="h_01HBVVFMX6G2DRMA6NNAD38F9W">Desktop</h2>
 <p>1. On the desktop app or web app, head into your <strong>User Settings </strong>by selecting the cogwheel [<img style="height: 20px; width: 20px;" src="https://lh4.googleusercontent.com/k6yu328QNwhzIjnUbsNUltH_geoXh18lfz92OJU9usIDfIN5XJ_s7hGtkJQhu2lKb4oio6qxA9c9FbiP3WcQ-NvEGwElbIbGMU70JlRBRsyNTHd2FCJ5WhFQHmXM8KrT6wWDdoeE9iP9Ioz2Vs9pEqU">]. </p>
@@ -38,18 +38,16 @@
 <p>5. After you apply a profile effect, you will need to confirm your changes by selecting <strong>Save Changes</strong>. </p>
 <p class="wysiwyg-text-align-center"><img src="https://support.discord.com/hc/article_attachments/18007592286487" alt="image2.png"></p>
 <h1 id="h_01HBVVFMX68ZV93YHYX7P3JMSK">Frequently Asked Questions</h1>
-<p><strong>Q: Who can currently access the shop and buy and use profile effects?</strong></p>
-<p>A: During this early access period, only Nitro members can currently access the shop, buy and use profile effects.</p>
-<p><strong>Q: How do I get a discount on profile effects in the shop?</strong></p>
-<p>A: Discounts in the shop are an exclusive benefit for Nitro members. Subscribe to <a href="https://support.discord.com/hc/en-us/articles/115000435108-What-are-Nitro-Nitro-Basic-" target="_blank" rel="noopener noreferrer">Nitro</a> to get discounted prices on items in the shop, including profile effects. </p>
+<p><strong>Q: Who can currently access the Shop and buy and use profile effects?</strong></p>
+<p>A: During this early access period, only Nitro members can currently access the Shop, buy and use profile effects.</p>
+<p><strong>Q: How do I get a discount on profile effects in the Shop?</strong></p>
+<p>A: Discounts in the Shop are an exclusive benefit for Nitro members. Subscribe to <a href="https://support.discord.com/hc/en-us/articles/115000435108-What-are-Nitro-Nitro-Basic-" target="_blank" rel="noopener noreferrer">Nitro</a> to get discounted prices on items in the Shop, including profile effects. </p>
 <p><strong>Q: Do I keep the profile effects I’ve purchased? </strong></p>
 <p>A: Yes, any profile effects you’ve purchased are yours to keep and use anytime, even without an active Nitro subscription. </p>
 <p><strong>Q: Can I refund a profile effect I’ve purchased?</strong></p>
-<p>A: No, profile effects are non-refundable. You can learn more about our Refund Policy <a href="https://support.discord.com/hc/en-us/articles/360012668071-Refund-Policy" target="_blank" rel="noopener noreferrer">here</a>.</p>
-<p><strong>Q: Can I refund Nitro after buying a profile effect?</strong></p>
+<p>A: No, profile effects are non-refundable. You can learn more about our Refund Policy <a href="https://support.discord.com/hc/en-us/articles/360012668071-Refund-Policy" target="_blank" rel="noopener noreferrer">here</a>. <br><strong>Q: Can I refund Nitro after buying a profile effect?</strong></p>
 <p>A: No. If you’ve purchased a profile effect within <strong>5 days </strong>of your Nitro subscription renewing or becoming a new Nitro member, you will not be eligible to refund that Nitro subscription.</p>
-<p><strong>Q: Can I gift profile effects to others?</strong></p>
-<p>A: At this time, items purchased from the shop like profile effects cannot be gifted to others.</p>
+<p><strong>Q: Can I gift profile effects to others?</strong><br>A: At this time, items purchased from the Shop like profile effects cannot be gifted to others.</p>
 <p><strong>Q: Am I able to apply different profile effects for each of my server profiles?</strong></p>
 <p>A: No. At this time, any profile effects you apply will be applied across all your server profiles.</p>
 <p><strong>Q: Can profile effects be turned off? I don't want to see them. </strong></p>

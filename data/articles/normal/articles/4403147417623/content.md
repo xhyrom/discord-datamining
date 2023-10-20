@@ -12,8 +12,8 @@
         <a href="#h_01H3MBR8H9AJMP6J8F4G37MGR0" target="_self">How to Customize your Profile</a>
         <ul>
             <li><a href="#h_01H3MBRCHQ4QMKR4AZ99ZSEKPP" target="_self">Avatar</a></li>
-            <li><a href="https://support.discord.com/hc/en-us/articles/4403147417623#h_01HAWGZQYY8B5KQH1FJ2N2VJ01">Avatar Decorations</a></li>
-            <li><a href="https://support.discord.com/hc/en-us/articles/4403147417623#docs-internal-guid-ea763d6b-7fff-6ee8-d31a-959d9bf2907f">Profile Effects</a></li>
+            <li><a href="#h_01HAWGZQYY8B5KQH1FJ2N2VJ01">Avatar Decorations</a></li>
+            <li><a href="#docs-internal-guid-ea763d6b-7fff-6ee8-d31a-959d9bf2907f">Profile Effects</a></li>
             <li><a href="#h_01H3MBRGVFHFKCS3GY314MR07Z" target="_self">“About Me”</a></li>
             <li><a href="#h_01H3MBRNC0NWF6G35ZE3D76DEM" target="_self">Pronouns</a></li>
             <li><a href="#h_01H3MBRVTWGPMFXVA0P26Z1T3F" target="_self">Banner</a></li>
@@ -27,11 +27,11 @@
 </h3>
 <p>In order to change anything in your User Profile, you first need to access <strong>User Settings</strong>.</p>
 <h2 id="h_01H3MBQYKRKWTZNXSM1ZDKKQPG">Desktop</h2>
-<p class="wysiwyg-text-align-center"><img src="https://support.discord.com/hc/article_attachments/15527725387159" alt="desktop_profiles.gif"></p>
+<p class="wysiwyg-text-align-center"><img src="https://support.discord.com/hc/article_attachments/18440909739927" alt="user_settings_custom_profiles.gif"></p>
 <p>1. Tap on the <strong>Cog Wheel</strong> located at the bottom-left of  the app to open <strong>User Settings</strong>.</p>
 <p class="wysiwyg-text-align-center"><img src="https://support.discord.com/hc/article_attachments/15527697887511" alt="discord_user_settings.png"></p>
 <p>2. Next tap on the <strong>Profiles</strong> tab to access and update anything within your Profile.</p>
-<p class="wysiwyg-text-align-center"><img src="https://support.discord.com/hc/article_attachments/15527725396887" alt="user_settings_profiles.png"></p>
+<p class="wysiwyg-text-align-center"><img src="https://support.discord.com/hc/article_attachments/18440909751063" alt="custom_profiles_setting.png"></p>
 <h2 id="h_01H3MBR26H5GM5N8B6ZQB44Y29">Mobile</h2>
 <p class="wysiwyg-text-align-center"><img src="https://support.discord.com/hc/article_attachments/15527725398423" alt="user_settings_profiles_mobile.gif" width="347" height="750"></p>
 <p>1. Tap on your Avatar in the bottom-right corner of your mobile app. </p>
@@ -54,10 +54,10 @@
 <p>Once you’re happy with how it looks, tap on <strong>Apply</strong> to save changes.</p>
 <h2 id="h_01HAWGZQYY8B5KQH1FJ2N2VJ01"><strong>Avatar Decorations</strong></h2>
 <h3 id="h_01HAWGZQYYZB9RS5CGB0SF7G8B">
-    <a href="https://support.discord.com/hc/en-us/articles/115000435108" target="_blank" rel="noopener noreferrer">Nitro</a><span style="color: #434343;" data-darkreader-inline-color=""> subscribers can purchase and apply </span><a href="https://support.discord.com/hc/en-us/articles/13410113109911" target="_blank" rel="noopener noreferrer">Avatar Decorations</a><span style="color: #434343;" data-darkreader-inline-color=""> to their profile’s avatar.<br></span><span style="color: #434343;" data-darkreader-inline-color="">We’re slowly rolling out the shop so it may not be available to all users at this time. </span>
+    <a href="https://support.discord.com/hc/en-us/articles/115000435108" target="_blank" rel="noopener noreferrer">Nitro</a><span style="color: #434343;" data-darkreader-inline-color=""> subscribers can purchase and apply </span><a href="https://support.discord.com/hc/en-us/articles/13410113109911" target="_blank" rel="noopener noreferrer">Avatar Decorations</a><span style="color: #434343;" data-darkreader-inline-color=""> to their profile’s avatar.<br></span><span style="color: #434343;" data-darkreader-inline-color="">We’re slowly rolling out the Shop so it may not be available to all users at this time. </span>
 </h3>
 <p>Want to add more razzle-dazzle to your avatar? Apply a decoration to it!<br><a href="https://support.discord.com/hc/en-us/articles/13410113109911" target="_blank" rel="noopener noreferrer">Avatar Decorations</a> are unique cosmetics designed to style your avatar with fun and charming looks that you can wear for any occasion.</p>
-<p><a href="https://support.discord.com/hc/en-us/articles/115000435108" target="_blank" rel="noopener noreferrer">Nitro</a> subscribers can preview, purchase, and collect their favorite decoration styles from the shop, which can be located in your <strong>User Profile</strong> and <strong>Nitro</strong> tab. </p>
+<p><a href="https://support.discord.com/hc/en-us/articles/115000435108" target="_blank" rel="noopener noreferrer">Nitro</a> subscribers can preview, purchase, and collect their favorite decoration styles from the Shop, which can be located in your <strong>User Profile</strong> and <strong>Nitro</strong> tab. </p>
 <p class="wysiwyg-text-align-center"><img src="https://support.discord.com/hc/article_attachments/18007284394647" alt="Nitro Profiles Page copy 2.png"></p>
 <p>Purchased decorations are yours to keep and get added to your collection - you can find them in your <strong>Profiles</strong> tab &gt; <strong>Change Decoration</strong>.</p>
 <p class="wysiwyg-text-align-center"><img src="https://support.discord.com/hc/article_attachments/17743199010071" alt="profile_avatar_decorations.png"></p>
@@ -67,10 +67,10 @@
     <a href="https://support.discord.com/hc/en-us/articles/115000435108" target="_blank" rel="noopener noreferrer">Nitro </a><span style="color: #434343;" data-darkreader-inline-color="">subscribers can purchase and apply </span><a href="https://support.discord.com/hc/en-us/articles/17828465914263" target="_blank" rel="noopener noreferrer">Profile Effects</a><span style="color: #434343;" data-darkreader-inline-color=""> to their profile.</span>
 </h3>
 <p>Profile Effects are snazzy animated effects that play on your profile when someone views your profile, letting you level up your look and wow your profile admirers. </p>
-<p><a href="https://support.discord.com/hc/en-us/articles/115000435108" target="_blank" rel="noopener noreferrer"><span class="wysiwyg-underline" style="color: #1155cc;" data-darkreader-inline-color="">Nitro</span></a> subscribers can preview, purchase, and collect a variety of different profile effects from the shop, which can be located in your <strong>User Profile</strong> and <strong>Nitro</strong> tab. </p>
+<p><a href="https://support.discord.com/hc/en-us/articles/115000435108" target="_blank" rel="noopener noreferrer"><span class="wysiwyg-underline" style="color: #1155cc;" data-darkreader-inline-color="">Nitro</span></a> subscribers can preview, purchase, and collect a variety of different profile effects from the Shop, which can be located in your <strong>User Profile</strong> and <strong>Nitro</strong> tab. </p>
 <p>After heading to your <strong>Profiles </strong>tab, tap on <strong>Change Effect</strong>.</p>
 <p><img src="https://support.discord.com/hc/article_attachments/18007331760407" alt="Nitro Profiles Page.png"></p>
-<p id="docs-internal-guid-f597f502-7fff-6b2c-96ca-204db6de09ef">Like avatar decorations, purchased profile effects are yours to keep and get added to your collection - you can find them in your <strong>Profiles</strong> tab &gt; <strong>Change Effect</strong>. From there, you can apply your owned profile effects or access the shop to purchase additional effects.</p>
+<p id="docs-internal-guid-f597f502-7fff-6b2c-96ca-204db6de09ef">Like avatar decorations, purchased profile effects are yours to keep and get added to your collection - you can find them in your <strong>Profiles</strong> tab &gt; <strong>Change Effect</strong>. From there, you can apply your owned profile effects or access the Shop to purchase additional effects.</p>
 <p class="wysiwyg-text-align-center"><img src="https://support.discord.com/hc/article_attachments/18007331765655" alt="ezgif.com-video-to-gif(3).gif"></p>
 <p id="docs-internal-guid-e08199c3-7fff-8bcd-b474-772306167fd1">You can learn more about Profile Effects <a href="https://support.discord.com/hc/en-us/articles/17828465914263" target="_blank" rel="noopener noreferrer"><span class="wysiwyg-underline" style="color: #1155cc;" data-darkreader-inline-color="">here</span></a>.</p>
 <h1 id="h_01H3MBRGVFHFKCS3GY314MR07Z">“About Me”</h1>
