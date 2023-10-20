@@ -158652,7 +158652,7 @@ html .invoiceCancelRow-3s2UuC {
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
     position: relative;
-    min-width: 600px
+    min-width: 500px
 }
 
 .shopForAllHeroBanner-jXZ8ub {
@@ -158805,6 +158805,12 @@ html .invoiceCancelRow-3s2UuC {
     }
 }
 
+@media (max-width:1000px) {
+    .heroDescriptionWithSidebar-2aGzXk>* {
+        margin-left: 16px
+    }
+}
+
 .page-LilLhg {
     width: 100%;
     max-width: 1124px;
@@ -158837,8 +158843,6 @@ html .invoiceCancelRow-3s2UuC {
 }
 
 .cardsContainer-2kdrm8 {
-    max-width: 1060px;
-    min-width: 600px;
     display: grid;
     grid-gap: 24px;
     grid-template-columns: repeat(auto-fill, minmax(285px, 1fr));
@@ -158849,7 +158853,8 @@ html .invoiceCancelRow-3s2UuC {
     background-color: var(--background-floating);
     -webkit-box-flex: 1;
     -ms-flex: 1;
-    flex: 1
+    flex: 1;
+    min-width: 575px
 }
 
 .shop-3sIaH8,
@@ -177167,4 +177172,4 @@ html .invoiceCancelRow-dVOR64 {
     margin-bottom: 8px
 }
 
-/*# sourceMappingURL=40532.f5c5ef0838b944c491ae.css.map*/
+/*# sourceMappingURL=40532.2732ab368820f776f662.css.map*/
