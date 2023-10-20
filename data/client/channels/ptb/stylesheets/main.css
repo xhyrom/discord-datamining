@@ -29346,6 +29346,13 @@ html.disable-forced-colors * {
     --modal-background: var(--primary-600);
     --modal-footer-background: var(--primary-630);
     --navigator-header-tint: var(--white-500);
+    --polls-image-normal-border: hsl(var(--black-430-hsl)/0.9);
+    --polls-victor-border: var(--yellow-300);
+    --polls-victor-fill: var(--yellow-200);
+    --polls-victor-label: var(--primary-600);
+    --polls-voted-border: var(--green-330);
+    --polls-voted-fill: var(--green-160);
+    --polls-voted-label: var(--primary-600);
     --profile-gradient-card-background: hsl(var(--black-500-hsl)/0.7);
     --profile-gradient-message-input-border: hsl(var(--primary-500-hsl)/0.48);
     --profile-gradient-note-background: hsl(var(--black-500-hsl)/0.3);
@@ -29628,6 +29635,13 @@ html.disable-forced-colors * {
     --modal-background: var(--white-500);
     --modal-footer-background: var(--primary-130);
     --navigator-header-tint: var(--primary-500);
+    --polls-image-normal-border: hsl(var(--black-430-hsl)/0.9);
+    --polls-victor-border: var(--yellow-430);
+    --polls-victor-fill: var(--yellow-200);
+    --polls-victor-label: var(--primary-600);
+    --polls-voted-border: var(--green-430);
+    --polls-voted-fill: var(--green-160);
+    --polls-voted-label: var(--primary-600);
     --profile-gradient-card-background: hsl(var(--white-500-hsl)/0.7);
     --profile-gradient-message-input-border: hsl(var(--primary-430-hsl)/0.24);
     --profile-gradient-note-background: hsl(var(--white-500-hsl)/0.3);
@@ -29981,6 +29995,13 @@ html.disable-forced-colors * {
     --modal-background: var(--plum-16);
     --modal-footer-background: var(--plum-17);
     --navigator-header-tint: var(--white-500);
+    --polls-image-normal-border: hsl(var(--black-430-hsl)/0.9);
+    --polls-victor-border: var(--yellow-300);
+    --polls-victor-fill: var(--yellow-200);
+    --polls-victor-label: var(--primary-600);
+    --polls-voted-border: var(--green-330);
+    --polls-voted-fill: var(--green-160);
+    --polls-voted-label: var(--primary-600);
     --profile-gradient-card-background: hsl(var(--black-500-hsl)/0.7);
     --profile-gradient-message-input-border: hsl(var(--primary-500-hsl)/0.48);
     --profile-gradient-note-background: hsl(var(--black-500-hsl)/0.3);
@@ -177133,4 +177154,4 @@ html .invoiceCancelRow-dVOR64 {
     margin-bottom: 8px
 }
 
-/*# sourceMappingURL=40532.d053ca8cca61d3caca6f.css.map*/
+/*# sourceMappingURL=40532.748806648c7439109dff.css.map*/
