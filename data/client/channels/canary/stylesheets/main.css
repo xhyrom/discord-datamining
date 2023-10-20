@@ -111154,14 +111154,6 @@ button.button-12Fmur.disabled-GROwTe {
     background-image: url(/assets/80cb895c1ed74292d5cf0acabe103f32.svg)
 }
 
-.premiumFeatureBannerBackground-Epwl-X {
-    border-radius: var(--radius-sm);
-    background: linear-gradient(0deg, rgba(0, 0, 0, .2), rgba(0, 0, 0, .2)), linear-gradient(187deg, var(--premium-tier-0-header-gradient-1) -9.85%, var(--premium-tier-0-header-gradient-2) 35.44%, var(--premium-tier-0-header-gradient-3) 55.85%, var(--premium-tier-0-header-gradient-4) 100.07%, var(--premium-tier-0-header-gradient-5) 110.26%);
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center
-}
-
 .container-5BK5-N {
     border-radius: var(--radius-sm);
     display: -webkit-box;
@@ -111171,10 +111163,16 @@ button.button-12Fmur.disabled-GROwTe {
     -webkit-box-direction: normal;
     -ms-flex-direction: row;
     flex-direction: row;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
     -webkit-box-pack: center;
     -ms-flex-pack: center;
     justify-content: center;
-    padding-right: 24px
+    padding-right: 24px;
+    background: linear-gradient(0deg, hsl(var(--black-500-hsl)/.2), hsl(var(--black-500-hsl)/.2)), linear-gradient(187deg, var(--premium-tier-0-header-gradient-1) -9.85%, var(--premium-tier-0-header-gradient-2) 35.44%, var(--premium-tier-0-header-gradient-3) 55.85%, var(--premium-tier-0-header-gradient-4) 100.07%, var(--premium-tier-0-header-gradient-5) 110.26%);
+    background-size: cover;
+    background-position: 50%
 }
 
 .containerDefaultMargin-3T8Dq_ {
@@ -111210,21 +111208,29 @@ button.button-12Fmur.disabled-GROwTe {
     max-width: 400px
 }
 
-.upsellArt-1BE-fp {
-    -ms-flex-preferred-size: 150px;
-    flex-basis: 150px;
-    -ms-flex-item-align: stretch;
-    align-self: stretch;
+.artContainer-3BjlnX {
     position: relative;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    -ms-flex-item-align: stretch;
+    align-self: stretch;
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center
 }
 
-.profileEffectsUpsellArt-1k9puR {
+.falloweenArtContainer-2sRMlG {
+    -ms-flex-preferred-size: 150px;
+    flex-basis: 150px
+}
+
+.shopForAllArtContainer-2fkndk {
+    -ms-flex-preferred-size: 139px;
+    flex-basis: 139px
+}
+
+.art-18G8I8 {
     position: absolute;
     left: -19px;
     -o-object-fit: contain;
@@ -111234,10 +111240,12 @@ button.button-12Fmur.disabled-GROwTe {
     transform: translateY(-3px)
 }
 
-.falloweenBackground-3tuKdZ {
-    background-image: url(/assets/6313ab1a327a3b926d115e9026d034fa.jpg);
-    background-size: cover;
-    background-position: 50%
+.falloweenBackgroundImage-37JC2F {
+    background-image: url(/assets/6313ab1a327a3b926d115e9026d034fa.jpg)
+}
+
+.shopForAllBackgroundImage-kuo1zE {
+    background-image: url(/assets/82b4754d98e9db9b2bba4baf13ce8bb7.png)
 }
 
 .brandShine-10dOgm {
@@ -177154,4 +177162,4 @@ html .invoiceCancelRow-dVOR64 {
     margin-bottom: 8px
 }
 
-/*# sourceMappingURL=40532.cf2bd7106241514c4d14.css.map*/
+/*# sourceMappingURL=40532.24aec72fe22d21694462.css.map*/
