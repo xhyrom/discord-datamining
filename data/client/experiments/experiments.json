@@ -10167,15 +10167,7 @@
             "1": {
               "rollout": [
                 {
-                  "start": 100,
-                  "end": 200
-                },
-                {
-                  "start": 1600,
-                  "end": 3000
-                },
-                {
-                  "start": 6500,
+                  "start": 0,
                   "end": 10000
                 }
               ]
@@ -10184,7 +10176,7 @@
           "filters": []
         }
       ],
-      "revision": 1,
+      "revision": 2,
       "overrides": {},
       "overrides_formatted": []
     }
