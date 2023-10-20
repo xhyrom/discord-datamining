@@ -5203,26 +5203,6 @@
               ]
             }
           ]
-        },
-        {
-          "buckets": {
-            "1": {
-              "rollout": [
-                {
-                  "start": 0,
-                  "end": 10000
-                }
-              ]
-            }
-          },
-          "filters": [
-            {
-              "type": "guild_has_feature",
-              "features": [
-                "SUMMARIES_ENABLED"
-              ]
-            }
-          ]
         }
       ],
       "revision": 2,
@@ -8480,8 +8460,10 @@
             {
               "type": "guild_ids",
               "ids": [
+                "1114255235704180746",
                 "1150906756197785741",
-                "613425648685547541"
+                "613425648685547541",
+                "876918412369088582"
               ]
             }
           ]
@@ -8668,26 +8650,6 @@
               "type": "guild_has_feature",
               "features": [
                 "SUMMARIES_ENABLED_GA"
-              ]
-            }
-          ]
-        },
-        {
-          "buckets": {
-            "1": {
-              "rollout": [
-                {
-                  "start": 0,
-                  "end": 10000
-                }
-              ]
-            }
-          },
-          "filters": [
-            {
-              "type": "guild_has_feature",
-              "features": [
-                "SUMMARIES_ENABLED"
               ]
             }
           ]
