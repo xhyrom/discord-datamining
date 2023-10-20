@@ -1,4 +1,4 @@
-/*! For license information please see bb368a4151a4532c3fda.js.LICENSE.txt */
+/*! For license information please see 822ac14d770cd84fd974.js.LICENSE.txt */
 (this.webpackChunkdiscord_app = this.webpackChunkdiscord_app || []).push([
     [22897], {
         151131: (t, e, r) => {
@@ -24260,6 +24260,7 @@
                 t.SUMMARIES_REPORT_PROBLEM = "summaries_report_problem";
                 t.SUMMARIES_UNREAD_BAR_VIEWED = "summaries_unread_bar_viewed";
                 t.SUMMARIES_NOTICE_MANAGE_SETTINGS_CTA_CLICKED = "summaries_notice_manage_settings_cta_clicked";
+                t.SUMMARY_DELETED = "summary_deleted";
                 t.SETTINGS_PANE_VIEWED = "settings_pane_viewed";
                 t.PREVIEW_MARKDOWN_TOGGLED = "preview_markdown_toggled";
                 t.LEGACY_CHAT_INPUT_TOGGLED = "legacy_chat_input_toggled";
@@ -24714,6 +24715,7 @@
                 t.CLIP_SHARED = "clip_shared";
                 t.CLIPS_HARDWARE_CLASSIFICATION = "clips_hardware_classification";
                 t.CLIPS_ENABLED_TOGGLED = "clips_enabled_toggled";
+                t.CLIPS_SETTINGS_UPDATED = "clips_settings_updated";
                 t.STANDALONE_BILLING_FLOW_STARTED = "standalone_billing_flow_started";
                 t.STANDALONE_MANAGE_SUBSCRIPTION_PAGE_VIEWED = "standalone_manage_subscription_page_viewed";
                 t.INBOUND_PROMOTION_VIEWED = "inbound_promotion_viewed";
@@ -37150,7 +37152,7 @@ _.jH)(t)}.\nUrl: ${I(t)}`);
                     dsn: "https://fa97a90475514c03a42f80cd36d147c4@sentry.io/140984",
                     autoSessionTracking: !1,
                     environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                    release: "discord_web-b2b13cee64cf5e04a1ef98bde39a69f2c932fb09",
+                    release: "discord_web-48916fbbd819da93d6f8d972b2ac0e1e2b602122",
                     beforeSend: function(t) {
                         return function(t) {
                             return null != t.exception && null != t.exception.values && t.exception.values.every((function(t) {
@@ -37177,8 +37179,8 @@ _.jH)(t)}.\nUrl: ${I(t)}`);
                     denyUrls: [/recaptcha/, /mobilediscord\.com/, /betterdiscord:\/\//]
                 });
                 var t;
-                Bt.YA("buildNumber", null !== (t = "238640") ? t : "");
-                Bt.YA("builtAt", String("1697731143269"));
+                Bt.YA("buildNumber", null !== (t = "238831") ? t : "");
+                Bt.YA("builtAt", String("1697751876982"));
                 var e = window.GLOBAL_ENV.SENTRY_TAGS;
                 if (null != e && "object" == typeof e)
                     for (var r in e) Bt.YA(r, e[r]);
@@ -48578,4 +48580,4 @@ _.jH)(t)}.\nUrl: ${I(t)}`);
         e(128594), e(535666), e(784633), e(678991)
     }
 ]);
-//# sourceMappingURL=bb368a4151a4532c3fda.js.map
+//# sourceMappingURL=822ac14d770cd84fd974.js.map

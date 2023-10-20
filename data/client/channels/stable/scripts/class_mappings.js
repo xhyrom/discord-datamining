@@ -18622,6 +18622,18 @@
                 achievementGrid: "achievementGrid-27DOpj"
             }
         },
+        530087: e => {
+            e.exports = {
+                answersContainer: "answersContainer-OoXiSZ",
+                answer: "answer-2D7Tt-",
+                didSelfVote: "didSelfVote-3BpbOA",
+                hasVoted: "hasVoted-o-LtpH",
+                media: "media-2VWLkX",
+                mediaMissing: "mediaMissing-2ryO5-",
+                selectedIcon: "selectedIcon-Ayap_n",
+                votesData: "votesData-3IbqxL"
+            }
+        },
         442721: e => {
             e.exports = {
                 container: "container-3iMGyg",
@@ -18634,6 +18646,8 @@
                 answersContainer: "answersContainer-3UoJTU",
                 answer: "answer-2O-3jX",
                 answerContent: "answerContent-1nElXU",
+                mediaContainer: "mediaContainer-3sPcLS",
+                media: "media-ICPEeY",
                 selectedAnswer: "selectedAnswer-VoVfDx",
                 label: "label-2Iu6HQ",
                 avatarForSelected: "avatarForSelected-SOh0il",
@@ -26608,6 +26622,8 @@
                 hasBadges: "hasBadges-kliaM8",
                 botTagCompact: "botTagCompact-1idyyC botTag-1NoD0B",
                 botTagCozy: "botTagCozy-3NTBvK botTag-1NoD0B",
+                nitroBadgeSvg: "nitroBadgeSvg-15nli7 botTag-1NoD0B",
+                nitroAuthorBadgeContainer: "nitroAuthorBadgeContainer-2LKf05",
                 replyLink: "replyLink-25gPcI",
                 separator: "separator-AebOhG",
                 messageEditorCompact: "messageEditorCompact-3dWt-L",
@@ -27235,4 +27251,4 @@
         }
     }
 ]);
-//# sourceMappingURL=ca3b3b4b9c51e470aa53.js.map
+//# sourceMappingURL=17925e3dd4b9bc4e940f.js.map
