@@ -6251,10 +6251,6 @@
                 container: "container-5BK5-N premiumFeatureBannerBackground-Epwl-X",
                 containerDefaultMargin: "containerDefaultMargin-3T8Dq_",
                 marketingPage: "marketingPage-1HmCSX",
-                avatars: "avatars-bkeu7E",
-                avatar1: "avatar1-1rcc7k",
-                avatar2: "avatar2-vlNb-U",
-                avatar3: "avatar3-2d_OoU",
                 mainColumn: "mainColumn-3aeB42",
                 title: "title-CXxZie",
                 ctaButton: "ctaButton-30CBdb",
@@ -27250,4 +27246,4 @@
         }
     }
 ]);
-//# sourceMappingURL=1180bed452bbc1c67924.js.map
+//# sourceMappingURL=7588335786e97bfc23dd.js.map
