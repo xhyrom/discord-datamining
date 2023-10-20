@@ -6251,10 +6251,6 @@
                 container: "container-5BK5-N premiumFeatureBannerBackground-Epwl-X",
                 containerDefaultMargin: "containerDefaultMargin-3T8Dq_",
                 marketingPage: "marketingPage-1HmCSX",
-                avatars: "avatars-bkeu7E",
-                avatar1: "avatar1-1rcc7k",
-                avatar2: "avatar2-vlNb-U",
-                avatar3: "avatar3-2d_OoU",
                 mainColumn: "mainColumn-3aeB42",
                 title: "title-CXxZie",
                 ctaButton: "ctaButton-30CBdb",
@@ -6579,6 +6575,7 @@
         },
         730742: e => {
             e.exports = {
+                minimumWidth: "1200px",
                 twoColumnWidth: "1439px",
                 fullShopPageWidth: "1789px",
                 container: "container-20Ljoy",
@@ -6668,8 +6665,8 @@
             e.exports = {
                 twoColumnWidth: "1439px",
                 container: "container-Vrgqxz",
-                infoContainer: "infoContainer-14dbs1",
                 coverImageContainer: "coverImageContainer-V8-U47",
+                infoContainer: "infoContainer-14dbs1",
                 coverImage: "coverImage-2HWWxr",
                 infoContainerNoDescription: "infoContainerNoDescription-3y0gdG",
                 showMoreButton: "showMoreButton-13n9-g",
@@ -10890,7 +10887,10 @@
                 roleTooltip: "roleTooltip-WIu418",
                 roleTooltipItemContainer: "roleTooltipItemContainer-3Jvgqd",
                 roleTooltipItem: "roleTooltipItem-1kJZ1v",
-                disabledActionTooltip: "disabledActionTooltip-4AW_kU"
+                disabledActionTooltip: "disabledActionTooltip-4AW_kU",
+                inviteContainer: "inviteContainer-2ZmY4A",
+                inviterTooltipContainer: "inviterTooltipContainer-3tC9hF",
+                robot: "robot-Atwp3i"
             }
         },
         498087: e => {
@@ -11687,7 +11687,6 @@
         313973: e => {
             e.exports = {
                 responsiveWidthMobile: "485px",
-                cardsGetCutOffWidth: "724px",
                 carouselMaxWidth: "carouselMaxWidth-1IREUy",
                 scroller: "scroller-ZG3UZ9",
                 tierPreviewsContainer: "tierPreviewsContainer-3tMaPR",
@@ -19858,18 +19857,14 @@
             e.exports = {
                 perksContainer: "perksContainer-30pMZ3",
                 perksTitle: "perksTitle-2PFndG",
-                bigPerkCard: "bigPerkCard-3KkaK3",
-                bigPerkCardContainer: "bigPerkCardContainer-3tgliF",
-                bigPerkCardHeading: "bigPerkCardHeading-2GnYmp",
-                bigPerkArt: "bigPerkArt-2WsBZm",
                 perksCardArt: "perksCardArt-2uOSXb",
-                smallPerkCardContainer: "smallPerkCardContainer-1Ee4A2",
-                smallPerkCardContainerExpanded: "smallPerkCardContainerExpanded-1GGu3N",
-                smallPerkCard: "smallPerkCard-39W9m_",
-                smallPerkCardNewBadge: "smallPerkCardNewBadge-3wnxII",
-                smallPerkCardHeading: "smallPerkCardHeading-RHhIVb",
-                smallPerkCardDescription: "smallPerkCardDescription-29SYLJ",
-                smallPerkCardEarlyAccessBadge: "smallPerkCardEarlyAccessBadge-184f0n",
+                perkCardContainer: "perkCardContainer-1DyJSu",
+                perkCardContainerExpanded: "perkCardContainerExpanded-VIStYz",
+                perkCard: "perkCard-1-wwDK",
+                perkCardNewBadge: "perkCardNewBadge-rTWX54",
+                perkCardHeading: "perkCardHeading-20CMTN",
+                perkCardDescription: "perkCardDescription-32X8vF",
+                perkCardEarlyAccessBadge: "perkCardEarlyAccessBadge-2fSMFL",
                 stickersImage: "stickersImage-38Xy1J",
                 perGuildProfilesImage: "perGuildProfilesImage-2Fcmo1",
                 clientThemesCard: "clientThemesCard-1OyerH",
@@ -24100,23 +24095,6 @@
         },
         332342: e => {
             e.exports = {
-                maxWidth: "498px",
-                container: "container-3a5mk-",
-                slotsContainer: "slotsContainer-3Li39W",
-                slots: "slots-paZlX-",
-                slotsWide: "slotsWide-31Ye9I",
-                slot: "slot-JZjffO",
-                emoji: "emoji-18lX9z",
-                tooltipContainer: "tooltipContainer-38MmYp",
-                emojiPicker: "emojiPicker-2NoGga",
-                emojiItemDisabled: "emojiItemDisabled-1dczo_",
-                animatedPicker: "animatedPicker-IdiG5I",
-                animatedPickerHide: "animatedPickerHide-2aEsbZ",
-                animatedPickerTall: "animatedPickerTall-1Xg5Ez",
-                emojiPickerHeader: "emojiPickerHeader-2mWh2T",
-                emojiPickerHeaderExpanded: "emojiPickerHeaderExpanded-qRmYMq",
-                dropDownContainer: "dropDownContainer-2D2fq2",
-                dropDown: "dropDown-3dfe_z",
                 reducedMotionTooltip: "reducedMotionTooltip-3O7Hr4"
             }
         },
@@ -24124,6 +24102,26 @@
             e.exports = {
                 video: "video-2p_b7d",
                 artContainer: "artContainer-3LHzN3"
+            }
+        },
+        334994: e => {
+            e.exports = {
+                maxWidth: "498px",
+                container: "container-2zjZXJ",
+                slotsContainer: "slotsContainer-3udOh4",
+                slots: "slots-3MAqKV",
+                slotsWide: "slotsWide-nX9sAp",
+                slot: "slot-PilZM8",
+                emoji: "emoji-3NC9PY",
+                tooltipContainer: "tooltipContainer-3zQZeI",
+                emojiItemDisabled: "emojiItemDisabled-R5FUpg",
+                animatedPicker: "animatedPicker-3Q75NA",
+                animatedPickerTall: "animatedPickerTall-JyXXGC",
+                emojiPickerHeader: "emojiPickerHeader-ipciXm",
+                emojiPickerHeaderExpanded: "emojiPickerHeaderExpanded-nIXhPW",
+                dropDownContainer: "dropDownContainer-3-J6EG",
+                dropDown: "dropDown-1hj18M",
+                dropDownOpen: "dropDownOpen-3zUJpH"
             }
         },
         157031: e => {
@@ -27251,4 +27249,4 @@
         }
     }
 ]);
-//# sourceMappingURL=17925e3dd4b9bc4e940f.js.map
+//# sourceMappingURL=c314e4c421cad9607b51.js.map
