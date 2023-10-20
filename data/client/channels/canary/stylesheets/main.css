@@ -97439,6 +97439,35 @@ input[type=checked]:focus-visible+.label-3TDpbn {
     top: 10px
 }
 
+.inviteContainer-2ZmY4A {
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+    gap: 4px;
+    border-radius: var(--radius-xs);
+    background-color: var(--background-modifier-accent);
+    padding: 0 4px
+}
+
+.inviteContainer-2ZmY4A,
+.inviterTooltipContainer-3tC9hF {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center
+}
+
+.inviterTooltipContainer-3tC9hF {
+    gap: 6px;
+    padding: 8px
+}
+
+.robot-Atwp3i {
+    color: var(--text-link)
+}
+
 .tableHeaderRow-2Jri1A {
     position: relative
 }
@@ -177104,4 +177133,4 @@ html .invoiceCancelRow-dVOR64 {
     margin-bottom: 8px
 }
 
-/*# sourceMappingURL=40532.6f5c11d223255a439808.css.map*/
+/*# sourceMappingURL=40532.d053ca8cca61d3caca6f.css.map*/
