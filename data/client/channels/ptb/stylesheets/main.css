@@ -105642,14 +105642,9 @@ input[type=checked]:focus-visible+.label-3TDpbn {
 }
 
 .art-2to4_d {
-    margin: -75px auto 0
-}
-
-.art-2to4_d img {
-    height: 176px;
     width: 213px;
-    -webkit-transform: scale(1.15);
-    transform: scale(1.15)
+    height: 176px;
+    margin-top: -83px
 }
 
 .container-2pEU_G {
@@ -177172,4 +177167,4 @@ html .invoiceCancelRow-dVOR64 {
     margin-bottom: 8px
 }
 
-/*# sourceMappingURL=40532.2732ab368820f776f662.css.map*/
+/*# sourceMappingURL=40532.d48428be59cb97f8336a.css.map*/
