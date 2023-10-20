@@ -8462,7 +8462,7 @@
           "filters": []
         }
       ],
-      "revision": 1,
+      "revision": 2,
       "overrides": {},
       "overrides_formatted": [
         {
@@ -11363,6 +11363,37 @@
           ]
         }
       ]
+    }
+  },
+  {
+    "data": {
+      "kind": "guild",
+      "hash": 2275541075
+    },
+    "rollout": {
+      "populations": [
+        {
+          "buckets": {
+            "none": {
+              "rollout": [
+                {
+                  "start": 0,
+                  "end": 10000
+                }
+              ]
+            }
+          },
+          "filters": []
+        }
+      ],
+      "revision": 0,
+      "overrides": {
+        "1": [
+          "281683040739262465",
+          "1095810146761973830"
+        ]
+      },
+      "overrides_formatted": []
     }
   },
   {
