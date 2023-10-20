@@ -1,4 +1,4 @@
-<p class="callout">⚠️ Currently, Premium Apps are available to developers based <span class="discussion-id-132b3bf0-9cd2-43ff-98e6-5fddf35c4aad notion-enable-hover" data-token-index="1">in the </span><span class="discussion-id-386d9500-1ef7-4802-9c43-b17e99a1b96e discussion-id-132b3bf0-9cd2-43ff-98e6-5fddf35c4aad discussion-level-3 discussion-id-386d9500-1ef7-4802-9c43-b17e99a1b96e discussion-id-132b3bf0-9cd2-43ff-98e6-5fddf35c4aad discussion-id-1afeb757-aeb8-41a7-b3af-8e6b124e9ed3 notion-enable-hover" data-token-index="2">US</span><span class="discussion-level-1 discussion-id-1afeb757-aeb8-41a7-b3af-8e6b124e9ed3 notion-enable-hover" data-token-index="3">, UK, and EU but check</span> back <a href="#h_01HB90E77QPN986GFV0S01ZSF2">here</a> and in the Discord Developers server for future announcements</p>
+<p class="callout">⚠️ Currently, Premium Apps are available to developers based <span class="discussion-id-132b3bf0-9cd2-43ff-98e6-5fddf35c4aad notion-enable-hover" data-token-index="1">in the </span><span class="discussion-id-386d9500-1ef7-4802-9c43-b17e99a1b96e discussion-id-132b3bf0-9cd2-43ff-98e6-5fddf35c4aad discussion-level-3 discussion-id-386d9500-1ef7-4802-9c43-b17e99a1b96e discussion-id-132b3bf0-9cd2-43ff-98e6-5fddf35c4aad discussion-id-1afeb757-aeb8-41a7-b3af-8e6b124e9ed3 notion-enable-hover" data-token-index="2">US</span><span class="discussion-level-1 discussion-id-1afeb757-aeb8-41a7-b3af-8e6b124e9ed3 notion-enable-hover" data-token-index="3">, UK, and countries in the European Union but check</span> back <a href="#h_01HB90E77QPN986GFV0S01ZSF2">here</a> and in the Discord Developers server for future announcements</p>
 <p><a href="https://support-dev.discord.com/hc/en-us/articles/17709085688727" target="_blank" rel="noopener noreferrer">Premium Apps</a> are the key to taking your app to the next level. In this article, we’ll go step by step to help you tap into our end-to-end solution for monetizing your application and offering your app’s most loyal users new features.</p>
 <h2 id="h_01HAWJ6AVJMD315Q76KW6JFWVT">Prerequisites</h2>
 <p>Before considering monetization for your app, here are some fundamental requirements that will need to be met:</p>
@@ -17,9 +17,39 @@
 <p>If your app does not currently meet these initial requirements, work to accomplish them and you will gain access to the Monetization Onboarding flow.</p>
 <h3 id="h_01HB90E77QPN986GFV0S01ZSF2">Supported Locales</h3>
 <ul>
-    <li>US</li>
-    <li>UK</li>
-    <li>EU</li>
+    <li>United States</li>
+    <li>United Kingdom</li>
+    <li>European Union
+        <ul>
+            <li>Austria</li>
+            <li>Belgium</li>
+            <li>Bulgaria</li>
+            <li>Cyprus</li>
+            <li>Czech Republic</li>
+            <li>Germany</li>
+            <li>Denmark</li>
+            <li>Estonia</li>
+            <li>Greece</li>
+            <li>Spain</li>
+            <li>Finland</li>
+            <li>France</li>
+            <li>Croatia</li>
+            <li>Hungary</li>
+            <li>Ireland</li>
+            <li>Italy</li>
+            <li>Lithuania</li>
+            <li>Luxembourg</li>
+            <li>Latvia</li>
+            <li>Malta</li>
+            <li>Netherlands</li>
+            <li>Poland</li>
+            <li>Portugal</li>
+            <li>Romania</li>
+            <li>Sweden</li>
+            <li>Slovenia</li>
+            <li>Slovakia</li>
+        </ul>
+    </li>
 </ul>
 <h2 id="h_01HAW6RNXRFTXA40WXKWGXWDFQ">Next Steps</h2>
 <p>When your app meets the above requirements the “Getting Started” button under the Monetization section should now lead you to the onboarding flow.</p>
