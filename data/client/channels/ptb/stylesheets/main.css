@@ -105642,19 +105642,14 @@ input[type=checked]:focus-visible+.label-3TDpbn {
 }
 
 .art-2to4_d {
-    width: 213px;
+    margin: -75px auto 0
+}
+
+.art-2to4_d img {
     height: 176px;
-    background-color: green;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    justify-content: center;
-    margin: -63px auto 0
+    width: 213px;
+    -webkit-transform: scale(1.15);
+    transform: scale(1.15)
 }
 
 .container-2pEU_G {
@@ -158647,6 +158642,11 @@ html .invoiceCancelRow-3s2UuC {
     min-width: 600px
 }
 
+.shopForAllHeroBanner-jXZ8ub {
+    background: -webkit-gradient(linear, left top, left bottom, from(var(--brand-400)), to(var(--brand-500)));
+    background: linear-gradient(180deg, var(--brand-400), var(--brand-500))
+}
+
 .bannerBackgroundWrapper-29zgRc {
     max-width: 45%;
     height: inherit;
@@ -177154,4 +177154,4 @@ html .invoiceCancelRow-dVOR64 {
     margin-bottom: 8px
 }
 
-/*# sourceMappingURL=40532.748806648c7439109dff.css.map*/
+/*# sourceMappingURL=40532.cf2bd7106241514c4d14.css.map*/
