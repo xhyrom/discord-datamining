@@ -11413,7 +11413,7 @@
   "USER_SETTINGS_TRY_OUT_PREMIUM_DESCRIPTION_VARIANT": "\"See what your profile could look like with Nitro!\"",
   "USER_SETTINGS_TRY_OUT_PREMIUM_PREVIEW": "\"Nitro Preview\"",
   "USER_SETTINGS_TRY_OUT_PREMIUM_ALSO_INCLUDES": "\"Nitro also includes an exclusive Nitro badge.\"",
-  "USER_SETTINGS_TRY_OUT_PREMIUM_TRIAL_DESCRIPTION": "\"Try out all Nitro perks with a 1 month [free trial](onClick)!\"",
+  "USER_SETTINGS_TRY_OUT_PREMIUM_TRIAL_DESCRIPTION": "\"Try out all Nitro perks with a [free trial](onClick)!\"",
   "USER_SETTINGS_PROFILE_THEMES_USER_PROFILE_ICON_TOOLTIP_UPSELL": "\"Customize your own profile theme, banner, animated avatar, and more with Nitro!\"",
   "USER_SETTINGS_PROFILE_THEMES_UPSELL_FROM_BANNER_MODAL_TITLE": "\"Create a vibe with Profile Themes\"",
   "USER_SETTINGS_PROFILE_THEMES_UPSELL_FROM_ICON_MODAL_TITLE": "\"Make it yours with Profile Customization\"",
