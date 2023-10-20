@@ -27,11 +27,15 @@
           "2": {
             "rollout": [
               {
-                "start": 2000,
-                "end": 4000
-              },
+                "start": 500,
+                "end": 1000
+              }
+            ]
+          },
+          "none": {
+            "rollout": [
               {
-                "start": 7000,
+                "start": 1000,
                 "end": 10000
               }
             ]
@@ -95,7 +99,7 @@
         "filters": []
       }
     ],
-    "revision": 4,
+    "revision": 6,
     "overrides": {},
     "overrides_formatted": [
       {
