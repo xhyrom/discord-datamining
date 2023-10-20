@@ -4507,6 +4507,10 @@
       "OPTIONS"
     ]
   },
+  "EMOJI_CAPTIONS_GET": {
+    "url": "/users/@me/emoji-captions",
+    "allowed_methods": null
+  },
   "SAFETY_HUB": {
     "url": "/safety-hub/@me",
     "allowed_methods": [
