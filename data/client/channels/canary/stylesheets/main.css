@@ -37728,6 +37728,15 @@ img[alt] {
     height: 16px
 }
 
+.legacyInputCommandHeader-3-g7qu {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between
+}
+
 .noAutocompleteResults-1GxhnW {
     height: 200px
 }
@@ -142495,6 +142504,26 @@ input::-webkit-outer-spin-button {
     margin-right: 8px
 }
 
+.title-2dExsV {
+    font-weight: 700;
+    margin-top: 12px;
+    margin-bottom: 8px
+}
+
+.body-39n5Yj,
+.title-2dExsV {
+    text-align: center
+}
+
+.body-39n5Yj {
+    margin-bottom: 16px
+}
+
+.art-bUSygs {
+    height: 105px;
+    margin-top: -88px
+}
+
 .closeButton-1D1-a- {
     position: absolute;
     top: 4px;
@@ -177167,4 +177196,4 @@ html .invoiceCancelRow-dVOR64 {
     margin-bottom: 8px
 }
 
-/*# sourceMappingURL=40532.d48428be59cb97f8336a.css.map*/
+/*# sourceMappingURL=40532.83419ea707af02a7e835.css.map*/
