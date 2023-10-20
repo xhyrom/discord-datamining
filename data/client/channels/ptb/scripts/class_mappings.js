@@ -6110,7 +6110,8 @@
                 discordIcon: "discordIcon-kJrghc",
                 discordWordmark: "discordWordmark-Xl1DUZ",
                 summary: "summary-YOl-Gl",
-                limitedTimeBadge: "limitedTimeBadge-3-C1Qz"
+                limitedTimeBadge: "limitedTimeBadge-3-C1Qz",
+                getPremiumHook: "getPremiumHook-32OWJj"
             }
         },
         36777: e => {
@@ -27252,4 +27253,4 @@
         }
     }
 ]);
-//# sourceMappingURL=0f518b0525bf3d4be4d3.js.map
+//# sourceMappingURL=5e0156bc0e880baaa16a.js.map
