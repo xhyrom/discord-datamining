@@ -158254,6 +158254,11 @@ html .invoiceCancelRow-3s2UuC {
     z-index: 1
 }
 
+.getPremiumHook-32OWJj {
+    cursor: pointer;
+    text-decoration: underline
+}
+
 .previewContainer-3HzSb7 {
     position: relative;
     display: -webkit-box;
@@ -177162,4 +177167,4 @@ html .invoiceCancelRow-dVOR64 {
     margin-bottom: 8px
 }
 
-/*# sourceMappingURL=40532.24aec72fe22d21694462.css.map*/
+/*# sourceMappingURL=40532.f5c5ef0838b944c491ae.css.map*/
