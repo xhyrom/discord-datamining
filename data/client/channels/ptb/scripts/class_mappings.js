@@ -6248,17 +6248,19 @@
         },
         229531: e => {
             e.exports = {
-                premiumFeatureBannerBackground: "premiumFeatureBannerBackground-Epwl-X",
-                container: "container-5BK5-N premiumFeatureBannerBackground-Epwl-X",
+                container: "container-5BK5-N",
                 containerDefaultMargin: "containerDefaultMargin-3T8Dq_",
                 marketingPage: "marketingPage-1HmCSX",
                 mainColumn: "mainColumn-3aeB42",
                 title: "title-CXxZie",
                 ctaButton: "ctaButton-30CBdb",
                 textBody: "textBody-1mECjS",
-                upsellArt: "upsellArt-1BE-fp",
-                profileEffectsUpsellArt: "profileEffectsUpsellArt-1k9puR",
-                falloweenBackground: "falloweenBackground-3tuKdZ"
+                artContainer: "artContainer-3BjlnX",
+                falloweenArtContainer: "falloweenArtContainer-2sRMlG artContainer-3BjlnX",
+                shopForAllArtContainer: "shopForAllArtContainer-2fkndk artContainer-3BjlnX",
+                art: "art-18G8I8",
+                falloweenBackgroundImage: "falloweenBackgroundImage-37JC2F",
+                shopForAllBackgroundImage: "shopForAllBackgroundImage-kuo1zE"
             }
         },
         799012: e => {
@@ -27250,4 +27252,4 @@
         }
     }
 ]);
-//# sourceMappingURL=8f282aa4d51cc46cbefa.js.map
+//# sourceMappingURL=0f518b0525bf3d4be4d3.js.map
