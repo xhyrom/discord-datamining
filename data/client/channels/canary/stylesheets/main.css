@@ -137850,44 +137850,6 @@ input::-webkit-outer-spin-button {
     transition: opacity .2s ease
 }
 
-.container-1TbZ8q {
-    pointer-events: none;
-    position: fixed;
-    bottom: 10px;
-    left: 10px;
-    z-index: 100000;
-    background-color: var(--background-floating);
-    -webkit-box-shadow: var(--elevation-high);
-    box-shadow: var(--elevation-high);
-    padding: 10px;
-    border-radius: 999vw;
-    opacity: 0;
-    -webkit-transform: translateY(20px);
-    transform: translateY(20px);
-    -webkit-transition: opacity .2s ease, -webkit-transform .2s ease;
-    transition: opacity .2s ease, -webkit-transform .2s ease;
-    transition: opacity .2s ease, transform .2s ease;
-    transition: opacity .2s ease, transform .2s ease, -webkit-transform .2s ease;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    gap: 10px;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center
-}
-
-.container-1TbZ8q.visible-2E6oUc {
-    opacity: 1;
-    -webkit-transform: translateY(0);
-    transform: translateY(0)
-}
-
-.spinner-3zIAZf {
-    width: 20px;
-    height: 20px
-}
-
 [data-accessibility-violation] {
     -webkit-filter: url(#violation-overlay);
     filter: url(#violation-overlay)
@@ -177234,4 +177196,4 @@ html .invoiceCancelRow-dVOR64 {
     margin-bottom: 8px
 }
 
-/*# sourceMappingURL=40532.a7fa39a2da248848aa23.css.map*/
+/*# sourceMappingURL=40532.d5b92a80f1cf5a0e0370.css.map*/
