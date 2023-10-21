@@ -148178,11 +148178,49 @@ html .invoiceCancelRow-3s2UuC {
 
 .container-1HnACW {
     padding: 4px;
-    border-radius: var(--radius-xs)
+    border-radius: var(--radius-xs);
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between
 }
 
-.container-1HnACW:hover {
+.container-1HnACW.canceled-2sYP_G {
+    cursor: auto
+}
+
+.container-1HnACW:hover:not(.canceled-2sYP_G) {
     background-color: var(--background-secondary)
+}
+
+.timeStatus-3KJkIm {
+    width: 100%
+}
+
+.icon-2d25ku {
+    color: var(--header-secondary)
+}
+
+.iconButton-3rzQjG {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center
+}
+
+.iconButton-3rzQjG:hover {
+    cursor: pointer
+}
+
+.iconButton-3rzQjG:hover .icon-2d25ku {
+    color: var(--interactive-active)
 }
 
 .card-8UsK4b {
@@ -177196,4 +177234,4 @@ html .invoiceCancelRow-dVOR64 {
     margin-bottom: 8px
 }
 
-/*# sourceMappingURL=40532.83419ea707af02a7e835.css.map*/
+/*# sourceMappingURL=40532.a7fa39a2da248848aa23.css.map*/
