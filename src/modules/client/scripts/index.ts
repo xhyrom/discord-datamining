@@ -69,11 +69,11 @@ export class Scripts implements Module {
       join(this.#channel.baseDir, "info.json"),
       JSON.stringify(
         {
-          buildNumber: await build.buildNumber(),
-          versionHash: await build.versionHash(),
-          hostVersion:
+          build_number: await build.buildNumber(),
+          version_hash: await build.versionHash(),
+          host_version:
             manifest?.full.host_version.join(".") ?? oldInfo.hostVersion,
-          builtAt: await build.builtAt(),
+          built_at: await build.builtAt(),
         },
         null,
         2

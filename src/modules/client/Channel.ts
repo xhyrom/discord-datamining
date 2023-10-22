@@ -100,12 +100,12 @@ export class Channel implements Module {
     if (
       latestVersionHash &&
       currentVersionHash &&
-      latestVersionHash === currentVersionHash.versionHash
+      latestVersionHash === currentVersionHash.version_hash
     ) {
       console.log(
         `${this.name} Client %s (%s) is up to date`,
-        currentVersionHash.buildNumber,
-        currentVersionHash.versionHash
+        currentVersionHash.build_number,
+        currentVersionHash.version_hash
       );
       return;
     }
