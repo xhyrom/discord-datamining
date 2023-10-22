@@ -1,5 +1,6 @@
 {
-  "buildNumber": "239004",
-  "builtAt": 1697783178069,
-  "versionHash": "405d7a8520b674818d483254360d565aa408fec4"
+  "build_number": "239004",
+  "version_hash": "405d7a8520b674818d483254360d565aa408fec4",
+  "host_version": "1.0.9020",
+  "built_at": 1697783178069
 }
