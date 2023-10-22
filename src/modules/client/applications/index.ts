@@ -26,9 +26,10 @@ import {
   pushToGit,
   formatNumber,
 } from "../../../utils.ts";
-import { setTimeout as sleep } from "node:timers/promises"; 
+import { setTimeout as sleep } from "node:timers/promises";
 import { Client } from "../index.ts";
 import { Build } from "../scripts/Build.ts";
+import { Channel, ChannelType } from "../Channel.ts";
 
 interface FetchSnowflakeResponse {
   type: "invalid" | "valid" | "unknown";
@@ -47,11 +48,12 @@ export class Applications implements Module {
     console.log("Scraping applications");
 
     const mainScript = await this.mainScript();
-    this.#build = new Build(mainScript);
+    this.#build = new Build(new Channel(ChannelType.Canary), mainScript);
 
     await rm(join(this.baseDir, "applications"));
 
-    const invalidIdsText = (await readFile(join(this.baseDir, "invalid_ids.json"))) ?? "[]";
+    const invalidIdsText =
+      (await readFile(join(this.baseDir, "invalid_ids.json"))) ?? "[]";
     const invalidIds = JSON.parse(invalidIdsText);
 
     const ids = await this.getSnowflakes();
@@ -72,12 +74,20 @@ export class Applications implements Module {
       applications.push(result.data);
     }
 
-    await writeFile(join(this.baseDir, "applications.json"), JSON.stringify(applications, null, 2));
-    await writeFile(join(this.baseDir, "invalid_ids.json"), JSON.stringify(invalidIds, null, 2));
+    await writeFile(
+      join(this.baseDir, "applications.json"),
+      JSON.stringify(applications, null, 2)
+    );
+    await writeFile(
+      join(this.baseDir, "invalid_ids.json"),
+      JSON.stringify(invalidIds, null, 2)
+    );
 
     await pushToGit(
       "📱 Applications were updated",
-      `${formatNumber(applications.length)} valid, ${formatNumber(invalidIds.length)} invalid`,
+      `${formatNumber(applications.length)} valid, ${formatNumber(
+        invalidIds.length
+      )} invalid`
     );
   }
 
@@ -100,8 +110,8 @@ export class Applications implements Module {
     const url = `https://canary.discord.com/api/v9/applications/${id}/public`;
     const response = await fetch(url, {
       headers: {
-        "Authorization": process.env.DISCORD_USER_TOKEN!,
-      }
+        Authorization: process.env.DISCORD_USER_TOKEN!,
+      },
     });
 
     if (response.status === 429) {
@@ -109,35 +119,38 @@ export class Applications implements Module {
       const retryAfter = body.retry_after;
 
       console.log(`[applications] 429: Waiting ${retryAfter}ms`);
-      
+
       await sleep(retryAfter + 1000);
       return await this.fetchSnowflake(id);
     }
-    
+
     const body = await response.json();
     if (body.code === 10002) {
       return {
-        type: "invalid"
-      }
+        type: "invalid",
+      };
     }
 
     if (response.status === 200) {
       return {
         type: "valid",
-        data: body
-      }
+        data: body,
+      };
     }
 
     // Probably outage
     return {
-      type: "unknown"
-    }
+      type: "unknown",
+    };
   }
 
   async mainScript() {
     if (this.#mainScript) return this.#mainScript;
 
-    this.#mainScript = new File(join(Client.baseDir, "channels", "canary", "scripts", "main.js"), true);
+    this.#mainScript = new File(
+      join(Client.baseDir, "channels", "canary", "scripts", "main.js"),
+      true
+    );
 
     return this.#mainScript;
   }
