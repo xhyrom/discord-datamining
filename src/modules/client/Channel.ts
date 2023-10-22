@@ -126,7 +126,7 @@ export class Channel implements Module {
       [
         `Build Number: ${await build.buildNumber()}`,
         `Version Hash: ${await build.versionHash()}`,
-        `Host version: ${manifest?.full.host_version.join(".")}`,
+        `Host Version: ${manifest?.full.host_version.join(".")}`,
         `Build At: ${date.getDate()}/${date.getMonth()}/${date.getFullYear()} ${date.getHours()}:${date.getMinutes()}:${date.getSeconds()} (${date.getTime()})`,
       ].join("\n"),
       `Scripts (${scriptFiles.scripts.length}):\n${scriptFiles.scripts

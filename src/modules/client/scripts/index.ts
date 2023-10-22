@@ -70,10 +70,10 @@ export class Scripts implements Module {
       JSON.stringify(
         {
           buildNumber: await build.buildNumber(),
-          builtAt: await build.builtAt(),
           versionHash: await build.versionHash(),
           hostVersion:
             manifest?.full.host_version.join(".") ?? oldInfo.hostVersion,
+          builtAt: await build.builtAt(),
         },
         null,
         2

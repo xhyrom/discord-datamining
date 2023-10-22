@@ -51,6 +51,13 @@ export class HyrosCoffeeSender implements Sender {
           inline: true,
         },
         {
+          name: "Host Version",
+          value:
+            (await build.manifest())?.full?.host_version?.join?.(".") ??
+            "Unknown",
+          inline: true,
+        },
+        {
           name: "Built At",
           value: `<t:${Math.floor(date.getTime() / 1000)}> (<t:${Math.floor(
             date.getTime() / 1000
@@ -85,17 +92,17 @@ export class HyrosCoffeeSender implements Sender {
     );
   }
 
-  formatScriptName(scriptFiles: Awaited<ReturnType<Scripts["files"]>>, script: File) {
+  formatScriptName(
+    scriptFiles: Awaited<ReturnType<Scripts["files"]>>,
+    script: File
+  ) {
     let suffix = "";
 
-    if (script.name === scriptFiles.mainScript.name)
-      suffix = "main";
+    if (script.name === scriptFiles.mainScript.name) suffix = "main";
 
-    if (script.name === scriptFiles.vendor?.name)
-      suffix = "vendor";
+    if (script.name === scriptFiles.vendor?.name) suffix = "vendor";
 
-    if (script.name === scriptFiles.chunkLoader?.name)
-      suffix = "chunk loader";
+    if (script.name === scriptFiles.chunkLoader?.name) suffix = "chunk loader";
 
     if (script.name === scriptFiles.classMappings?.name)
       suffix = "class mappings";
