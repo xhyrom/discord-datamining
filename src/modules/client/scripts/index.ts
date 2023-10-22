@@ -88,10 +88,10 @@ export class Scripts implements Module {
           `# ${this.#channel.name}`,
           "",
           "### Info",
-          `Build number: ${await build.buildNumber()}`,
-          `Version hash: ${await build.versionHash()}`,
-          `Host version: ${manifest.full.host_version.join(".")}`,
-          `Built at: ${new Date((await build.builtAt())!).toLocaleString()}`,
+          `Build number: ${await build.buildNumber()}  `,
+          `Version hash: ${await build.versionHash()}  `,
+          `Host version: ${manifest.full.host_version.join(".")}  `,
+          `Built at: ${new Date((await build.builtAt())!).toLocaleString()}  `,
           "",
           "### Modules",
           markdownTable([
@@ -117,7 +117,7 @@ export class Scripts implements Module {
         await writeFile(
           join(this.#channel.baseDir, "modules", moduleName, "info.json"),
           JSON.stringify(
-            JSON.stringify({
+            {
               full: {
                 host_version: moduleData.full.host_version.join("."),
                 module_version: moduleData.full.module_version,
@@ -131,7 +131,7 @@ export class Scripts implements Module {
                   package_sha256: delta.package_sha256,
                   url: delta.url,
                 })) ?? [],
-            }),
+            },
             null,
             2
           )
