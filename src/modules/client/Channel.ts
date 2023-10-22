@@ -114,6 +114,7 @@ export class Channel implements Module {
     await this.stylesheets.run();
 
     const build = await this.scripts.build();
+    const manifest = await build.manifest();
     const date = new Date((await build.builtAt())!);
     const scriptFiles = await this.scripts.files();
     const stylesheetFiles = await this.stylesheets.files();
@@ -125,6 +126,7 @@ export class Channel implements Module {
       [
         `Build Number: ${await build.buildNumber()}`,
         `Version Hash: ${await build.versionHash()}`,
+        `Host version: ${manifest?.full.host_version.join(".")}`,
         `Build At: ${date.getDate()}/${date.getMonth()}/${date.getFullYear()} ${date.getHours()}:${date.getMinutes()}:${date.getSeconds()} (${date.getTime()})`,
       ].join("\n"),
       `Scripts (${scriptFiles.scripts.length}):\n${scriptFiles.scripts

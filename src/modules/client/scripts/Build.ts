@@ -17,16 +17,37 @@
   * **/
 
 import type { File } from "../File.ts";
+import type { Channel } from "../Channel.ts";
+
+interface ModuleContentFull {
+  full: {
+    host_version: [number, number, number];
+    module_version: number;
+    package_sha256: string;
+    url: string;
+  };
+}
+
+interface ModuleContent extends ModuleContentFull {
+  deltas: ModuleContentFull[];
+}
+
+interface ManifestContent extends ModuleContentFull {
+  modules: Record<string, ModuleContent>;
+}
 
 export class Build {
   script: File;
+  channel: Channel;
   #content?: string;
+  #manifestContent?: ManifestContent;
   #buildNumber?: string | undefined;
   #versionHash?: string | undefined;
   #builtAt?: number | null;
 
-  constructor(script: File) {
+  constructor(channel: Channel, script: File) {
     this.script = script;
+    this.channel = channel;
   }
 
   async buildNumber() {
@@ -74,5 +95,17 @@ export class Build {
     this.#content = content;
 
     return content;
+  }
+
+  async manifest(): Promise<ManifestContent | null> {
+    if (this.#manifestContent) return this.#manifestContent;
+
+    const manifest = await fetch(
+      `https://canary.discord.com/api/updates/distributions/app/manifests/latest?platform=win&channel=${this.channel.displayType}&arch=x86`
+    );
+    if (!manifest.ok) return null;
+
+    const manifestContent = await manifest.json();
+    return manifestContent;
   }
 }

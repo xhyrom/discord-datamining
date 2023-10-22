@@ -21,8 +21,9 @@ import { join } from "node:path";
 import { File } from "../File.ts";
 import type { Module } from "../../index.ts";
 import { Build } from "./Build.ts";
-import { beautify, writeFile, rm } from "../../../utils.ts";
+import { beautify, writeFile, rm, readFile } from "../../../utils.ts";
 import type { Channel } from "../Channel.ts";
+import { markdownTable } from "markdown-table";
 
 export class Scripts implements Module {
   #files?: {
@@ -46,7 +47,7 @@ export class Scripts implements Module {
   async build() {
     if (this.#build) return this.#build;
 
-    this.#build = new Build((await this.files()).mainScript);
+    this.#build = new Build(this.#channel, (await this.files()).mainScript);
     return this.#build;
   }
 
@@ -55,8 +56,13 @@ export class Scripts implements Module {
 
     const files = await this.files();
     const build = await this.build();
+    const manifest = await build.manifest();
 
     await rm(join(this.baseDir, "scripts"));
+
+    const oldInfo = JSON.parse(
+      (await readFile(join(this.#channel.baseDir, "info.json"))) ?? "{}"
+    );
 
     // This is also related to stylesheets but we are getting it here
     await writeFile(
@@ -66,11 +72,71 @@ export class Scripts implements Module {
           buildNumber: await build.buildNumber(),
           builtAt: await build.builtAt(),
           versionHash: await build.versionHash(),
+          hostVersion:
+            manifest?.full.host_version.join(".") ?? oldInfo.hostVersion,
         },
         null,
         2
       )
     );
+
+    // save only when manifest is available
+    if (manifest) {
+      await writeFile(
+        join(this.#channel.baseDir, "README.md"),
+        [
+          `# ${this.#channel.name}`,
+          "",
+          "### Info",
+          `Build number: ${await build.buildNumber()}`,
+          `Version hash: ${await build.versionHash()}`,
+          `Host version: ${manifest.full.host_version.join(".")}`,
+          `Built at: ${new Date((await build.builtAt())!).toLocaleString()}`,
+          "",
+          "### Modules",
+          markdownTable([
+            ["Module", "Version", "Package sha256", "URL"],
+            ...Object.entries(manifest.modules).map(
+              ([moduleName, moduleData]) => [
+                moduleName,
+                moduleData.full.module_version.toString(),
+                moduleData.full.package_sha256,
+                moduleData.full.url,
+              ]
+            ),
+          ]),
+        ].join("\n")
+      );
+
+      await writeFile(
+        join(this.#channel.baseDir, "manifest.json"),
+        JSON.stringify(manifest, null, 2)
+      );
+
+      for (const [moduleName, moduleData] of Object.entries(manifest.modules)) {
+        await writeFile(
+          join(this.#channel.baseDir, "modules", moduleName, "info.json"),
+          JSON.stringify(
+            JSON.stringify({
+              full: {
+                host_version: moduleData.full.host_version.join("."),
+                module_version: moduleData.full.module_version,
+                package_sha256: moduleData.full.package_sha256,
+                url: moduleData.full.url,
+              },
+              deltas: moduleData.deltas.map((delta) => ({
+                host_version: delta.full.host_version.join("."),
+                module_version: delta.full.module_version,
+                package_sha256: delta.full.package_sha256,
+                url: delta.full.url,
+              })),
+            }),
+            null,
+            2
+          )
+        );
+      }
+    }
 
     for (const file of files.scripts ?? []) {
       await writeFile(
@@ -119,7 +185,7 @@ export class Scripts implements Module {
     this.#files = {
       scripts,
       chunkLoader: scripts?.[0] ?? null,
-      classMappings: scripts.length > 2 ? scripts?.[1] ?? null : null,
+      classMappings: scripts.length > 2 ? scripts?.[1] ?? null : null,
       vendor: scripts.length > 3 ? scripts?.[2] ?? null : null,
       mainScript: scripts?.[scripts.length - 1]!,
     };
