@@ -124,12 +124,13 @@ export class Scripts implements Module {
                 package_sha256: moduleData.full.package_sha256,
                 url: moduleData.full.url,
               },
-              deltas: moduleData.deltas.map((delta) => ({
-                host_version: delta.full.host_version.join("."),
-                module_version: delta.full.module_version,
-                package_sha256: delta.full.package_sha256,
-                url: delta.full.url,
-              })),
+              deltas:
+                moduleData.deltas?.map((delta) => ({
+                  host_version: delta.host_version.join("."),
+                  module_version: delta.module_version,
+                  package_sha256: delta.package_sha256,
+                  url: delta.url,
+                })) ?? [],
             }),
             null,
             2

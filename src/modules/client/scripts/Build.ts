@@ -19,21 +19,22 @@
 import type { File } from "../File.ts";
 import type { Channel } from "../Channel.ts";
 
-interface ModuleContentFull {
-  full: {
-    host_version: [number, number, number];
-    module_version: number;
-    package_sha256: string;
-    url: string;
-  };
+interface ModuleContent {
+  host_version: [number, number, number];
+  module_version: number;
+  package_sha256: string;
+  url: string;
 }
 
-interface ModuleContent extends ModuleContentFull {
-  deltas: ModuleContentFull[];
-}
-
-interface ManifestContent extends ModuleContentFull {
-  modules: Record<string, ModuleContent>;
+interface ManifestContent {
+  modules: Record<
+    string,
+    {
+      full: ModuleContent;
+      deltas: ModuleContent[];
+    }
+  >;
+  full: ModuleContent;
 }
 
 export class Build {
