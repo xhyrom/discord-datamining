@@ -35542,6 +35542,19 @@ img[alt] {
     margin-bottom: 48px
 }
 
+.blockedPaymentsModalContent-2z38hs,
+.blockedPaymentsModalHeader-1Q9VKa {
+    background-color: var(--modal-background)
+}
+
+.blockedPaymentsModalHeader-1Q9VKa {
+    border-radius: 4px 4px 0 0
+}
+
+.blockedPaymentsModalContent-2z38hs {
+    border-radius: 0 0 4px 4px
+}
+
 .blockedPaymentsWarningIcon-1X2zhu {
     margin-right: 10px
 }
@@ -177352,4 +177365,4 @@ html .invoiceCancelRow-dVOR64 {
     margin-bottom: 8px
 }
 
-/*# sourceMappingURL=40532.9b77dbbd3719af4f170f.css.map*/
+/*# sourceMappingURL=40532.a9a47c539c7b668a1f76.css.map*/

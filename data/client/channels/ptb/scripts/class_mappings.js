@@ -4592,6 +4592,8 @@
                 splashImage: "splashImage-BnpuSj",
                 settings: "settings-2aAnOq",
                 modal: "modal-27JxPw",
+                blockedPaymentsModalContent: "blockedPaymentsModalContent-2z38hs",
+                blockedPaymentsModalHeader: "blockedPaymentsModalHeader-1Q9VKa",
                 blockedPaymentsWarningIcon: "blockedPaymentsWarningIcon-1X2zhu",
                 blockedPaymentsWarning: "blockedPaymentsWarning-T43O2z"
             }
@@ -27274,4 +27276,4 @@
         }
     }
 ]);
-//# sourceMappingURL=dee1f06c592fb48a93cb.js.map
+//# sourceMappingURL=2620b0dd9137f9489c4a.js.map
