@@ -6090,7 +6090,8 @@
         },
         207069: e => {
             e.exports = {
-                priceWrapper: "priceWrapper-3XSWjw",
+                priceTagsContainer: "priceTagsContainer-31jRp2",
+                priceTag: "priceTag-2NzQ72",
                 price: "price-1Nd6eJ",
                 strikedPrice: "strikedPrice-3AIrSN",
                 fullPrice: "fullPrice-26UjNQ",
@@ -27263,4 +27264,4 @@
         }
     }
 ]);
-//# sourceMappingURL=f93aed42d0357876aed7.js.map
+//# sourceMappingURL=66a06693e553b51ce638.js.map
