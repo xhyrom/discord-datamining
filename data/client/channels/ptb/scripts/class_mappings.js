@@ -16510,7 +16510,9 @@
                 giftCodeContainer: "giftCodeContainer-3ObH0O",
                 referralContainer: "referralContainer-3QW_NE",
                 confirmText: "confirmText-2FxFHs",
-                threadRoleMentionFailure: "threadRoleMentionFailure-2IPB1Y"
+                threadRoleMentionFailure: "threadRoleMentionFailure-2IPB1Y",
+                nitroFileSizeUpsell: "nitroFileSizeUpsell-3jNvvs",
+                nitroBadgeSvg: "nitroBadgeSvg-3Y1vFA"
             }
         },
         731194: e => {
@@ -27269,4 +27271,4 @@
         }
     }
 ]);
-//# sourceMappingURL=65b9bb4e37cf2ee989e1.js.map
+//# sourceMappingURL=7068f825d20458c57993.js.map

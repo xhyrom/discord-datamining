@@ -59487,6 +59487,24 @@ html .progress-2Otdc- {
     line-height: 16px
 }
 
+.nitroFileSizeUpsell-3jNvvs {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center
+}
+
+.nitroBadgeSvg-3Y1vFA {
+    margin-right: .25rem;
+    height: 18px;
+    width: 18px
+}
+
 .container-x059i8 {
     position: relative;
     display: -webkit-box;
@@ -177241,4 +177259,4 @@ html .invoiceCancelRow-dVOR64 {
     margin-bottom: 8px
 }
 
-/*# sourceMappingURL=40532.36e59c423718e76be1df.css.map*/
+/*# sourceMappingURL=40532.74bf934f28b93e454735.css.map*/
