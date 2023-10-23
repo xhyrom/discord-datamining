@@ -40165,8 +40165,8 @@ img[alt] {
 
 @-webkit-keyframes Shine-2jTWpi {
     0% {
-        -webkit-transform: translate3d(-75%, 0, 0);
-        transform: translate3d(-75%, 0, 0)
+        -webkit-transform: translate3d(-100%, 0, 0);
+        transform: translate3d(-100%, 0, 0)
     }
 
     to {
@@ -40177,8 +40177,8 @@ img[alt] {
 
 @keyframes Shine-2jTWpi {
     0% {
-        -webkit-transform: translate3d(-75%, 0, 0);
-        transform: translate3d(-75%, 0, 0)
+        -webkit-transform: translate3d(-100%, 0, 0);
+        transform: translate3d(-100%, 0, 0)
     }
 
     to {
@@ -177259,4 +177259,4 @@ html .invoiceCancelRow-dVOR64 {
     margin-bottom: 8px
 }
 
-/*# sourceMappingURL=40532.74bf934f28b93e454735.css.map*/
+/*# sourceMappingURL=40532.63cfc1e688e86aa6bcca.css.map*/
