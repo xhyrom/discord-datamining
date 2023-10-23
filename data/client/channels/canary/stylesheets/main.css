@@ -158344,8 +158344,23 @@ html .invoiceCancelRow-3s2UuC {
     }
 }
 
-.priceWrapper-3XSWjw {
-    display: inline-block
+.priceTagsContainer-31jRp2 {
+    -webkit-box-align: end;
+    -ms-flex-align: end;
+    align-items: flex-end
+}
+
+.priceTag-2NzQ72,
+.priceTagsContainer-31jRp2 {
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex
+}
+
+.priceTag-2NzQ72 {
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center
 }
 
 .price-1Nd6eJ {
@@ -158362,13 +158377,15 @@ html .invoiceCancelRow-3s2UuC {
 }
 
 .premiumIcon-3J0XnZ {
-    display: inline-block;
-    position: relative;
-    top: 2px;
-    margin-left: 8px;
-    margin-right: 4px;
     width: 16px;
-    height: 16px
+    height: 16px;
+    margin-left: 8px;
+    margin-right: 4px
+}
+
+.premiumIcon-3J0XnZ.fullPrice-26UjNQ {
+    margin-left: 4px;
+    margin-right: 2px
 }
 
 .shopCard-H3oN50 {
@@ -177196,4 +177213,4 @@ html .invoiceCancelRow-dVOR64 {
     margin-bottom: 8px
 }
 
-/*# sourceMappingURL=40532.d5b92a80f1cf5a0e0370.css.map*/
+/*# sourceMappingURL=40532.1da1ef98f1d3a859cd9b.css.map*/
