@@ -43,16 +43,22 @@
 <p>2. Next scroll down to <strong>App Settings</strong> and tap on <strong>Voice.</strong> </p>
 <p>3. Scroll to <strong>Noise Suppression</strong> and here you can enable <strong>Krisp</strong> by tapping on it. </p>
 <h1 id="h_01HDEGBA68ZFRKXF078FTWKRFY"><strong>Frequently Asked Questions</strong></h1>
-<p><strong>Q: How much does it cost? </strong><br>A: Krisp is free when you use it with Discord. If you want to use it outside of Discord in other apps, you can check out their pricing <a href="https://api.krisp.ai/v2/resource/link/discord" target="_blank" rel="noopener noreferrer">here</a>.</p>
+<p><strong>Q: How much does it cost?</strong></p>
+<p>A: Krisp is free when you use it with Discord. If you want to use it outside of Discord in other apps, you can check out their pricing <a href="https://api.krisp.ai/v2/resource/link/discord" target="_blank" rel="noopener noreferrer">here</a>.</p>
 <p><strong>Q: When enabled, am I passing any information to Krisp?</strong></p>
 <p>A: We do not pass any information or data to Krisp when you enable the tech on Discord. This means that no voice, user, video or any data is ever sent or shared outside of Discord. The machine learning model runs on your device to cancel out noise - no data is ever sent to Krisp's servers under any circumstances.</p>
-<p><strong>Q: Will Krisp filter noises for other people on the call when I have it on?</strong><br>A: No. Krisp will only filter noises coming from your side. So if your friends do not have it toggled on you may still hear their background noise. </p>
-<p><strong>Q: When should I use Krisp?</strong><br>A: Krisp works best in environments where there is a lot of non-human voice background noise.</p>
+<p><strong>Q: Will Krisp filter noises for other people on the call when I have it on?</strong></p>
+<p>A: No. Krisp will only filter noises coming from your side. So if your friends do not have it toggled on you may still hear their background noise. </p>
+<p><strong>Q: When should I use Krisp?</strong></p>
+<p>A: Krisp works best in environments where there is a lot of non-human voice background noise.</p>
 <p>Because Krisp works to process out background noises if you are in a quiet environment and have a high-quality mic you may notice a decline in voice quality. If you’re in a quiet environment where you don’t need noise filtration we would encourage you to continue using voice chat without Krisp. </p>
-<p><strong>Q: Can I use Krisp on video calls?</strong><br>A: Yes! Krisp can also be used on audio for video calls as well.</p>
+<p><strong>Q: Can I use Krisp on video calls?</strong></p>
+<p>A: Yes! Krisp can also be used on audio for video calls as well.</p>
 <p><strong>Q: Will Krisp work for Go Live?</strong></p>
 <p>A: Yes! Krisp can be used when you are using the voice channel in Go-Live stream. </p>
-<p><strong>Q: If I toggle on Krisp in one voice chat will it toggle on in all other voice chats?</strong><br>A: Yes. Once you enable Krisp, it will be active for any new voice chats until you toggle it back off again.<br><strong>Q: Why does my Krisp keep automatically turning off? </strong></p>
+<p><strong>Q: If I toggle on Krisp in one voice chat will it toggle on in all other voice chats?</strong></p>
+<p>A: Yes. Once you enable Krisp, it will be active for any new voice chats until you toggle it back off again.</p>
+<p><strong>Q: Why does my Krisp keep automatically turning off? </strong></p>
 <p>A: When device CPU usage is really high, Krisp will automatically turn off to preserve voice performance and notify you. We suggest that you lower your CPU usage overall before you re-enable Krisp, otherwise Krisp will continue to automatically turn off.</p>
 <p><strong>Q: Does Krisp work in browsers? </strong></p>
 <p>A: As of October 30, 2023, Krisp is available on Chrome and Firefox desktop browsers.</p>
