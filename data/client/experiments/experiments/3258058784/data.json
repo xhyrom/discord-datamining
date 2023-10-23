@@ -1,0 +1,21 @@
+{
+  "data": {
+    "kind": "user",
+    "id": "2023-10_social_proofing_file_size",
+    "label": "Social Proofing File Size",
+    "description": [
+      "Not Eligible",
+      "Control Bucket",
+      "Treatment 1: Should show nitro upsell for large files"
+    ],
+    "hash": 3258058784,
+    "buckets": [
+      -1,
+      0,
+      1
+    ],
+    "config_keys": [
+      "enabled"
+    ]
+  }
+}
