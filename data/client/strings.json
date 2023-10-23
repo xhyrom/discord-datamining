@@ -16501,6 +16501,7 @@
   "POLL_EXPIRED": "\"Poll Closed\"",
   "APP_LAUNCHER_UNKNOWN_COMMAND_ERROR_MODAL_TITLE": "\"Something went wrong...\"",
   "APP_LAUNCHER_UNKNOWN_COMMAND_ERROR_MODAL_BODY": "\"We were unable to run the command. Please try again later.\"",
+  "APP_LAUNCHER_AUTOCOMPLETE_OPTION_SEARCH_BAR_PLACEHOLDER": "\"Start typing...\"",
   "CHANGE_LANGUAGE_MODAL_TITLE_SPANISH": "\"¿Cambiar idioma?\"",
   "CHANGE_LANGUAGE_MODAL_SUBTITLE_SPANISH": "\"¿Te gustaría configurar Discord en Español?\"",
   "YES_TEXT_SPANISH": "\"Sí\"",
