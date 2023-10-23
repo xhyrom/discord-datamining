@@ -105989,7 +105989,8 @@ input[type=checked]:focus-visible+.label-3TDpbn {
     padding-top: 0;
     background-color: transparent;
     -webkit-box-shadow: none;
-    box-shadow: none
+    box-shadow: none;
+    z-index: 3
 }
 
 .menu-2-eHMB div[role=separator] {
@@ -177259,4 +177260,4 @@ html .invoiceCancelRow-dVOR64 {
     margin-bottom: 8px
 }
 
-/*# sourceMappingURL=40532.63cfc1e688e86aa6bcca.css.map*/
+/*# sourceMappingURL=40532.9c80b54771a2e3a28188.css.map*/
