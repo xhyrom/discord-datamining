@@ -7482,7 +7482,8 @@
                 categoryList: "categoryList-2qRrlj",
                 bodyWrapper: "bodyWrapper-1eSOtW",
                 emojiPickerListWrapper: "emojiPickerListWrapper-1T3YI3",
-                inspector: "inspector-2A2Chb"
+                inspector: "inspector-2A2Chb",
+                burstToggle: "burstToggle-2Cvt3v"
             }
         },
         390469: e => {
@@ -7505,6 +7506,9 @@
                 banner: "banner-25RWjr",
                 hasTrialOffer: "hasTrialOffer-303XEE",
                 wrapper: "wrapper-2nNnyW",
+                closeButton: "closeButton-37KKD6",
+                contentFill: "contentFill-cxa9-M",
+                nitroWheel: "nitroWheel-3NHyfq",
                 content: "content-35diC1",
                 header: "header-3FpRKn",
                 headerText: "headerText-36ij42",
@@ -16813,8 +16817,8 @@
         885261: e => {
             e.exports = {
                 visuallyHidden: "visuallyHidden-2l2eT-",
-                tooltipContainer: "tooltipContainer-2dvP1b",
                 tooltip: "tooltip-YqxAkk",
+                tooltipContainer: "tooltipContainer-2dvP1b",
                 tooltipHeadingContainer: "tooltipHeadingContainer-2beORg",
                 nitroWheel: "nitroWheel-1HmTvG",
                 shine: "shine-2nh48-",
@@ -27265,4 +27269,4 @@
         }
     }
 ]);
-//# sourceMappingURL=27b4c691ce53451553e0.js.map
+//# sourceMappingURL=65b9bb4e37cf2ee989e1.js.map
