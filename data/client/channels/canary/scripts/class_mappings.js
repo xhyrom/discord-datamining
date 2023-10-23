@@ -26636,6 +26636,7 @@
                 botTagCompact: "botTagCompact-1idyyC botTag-1NoD0B",
                 botTagCozy: "botTagCozy-3NTBvK botTag-1NoD0B",
                 nitroBadgeSvg: "nitroBadgeSvg-15nli7 botTag-1NoD0B",
+                nitroBadgeSvgRepliedMessage: "nitroBadgeSvgRepliedMessage-2G2JyO",
                 nitroAuthorBadgeContainer: "nitroAuthorBadgeContainer-2LKf05",
                 replyLink: "replyLink-25gPcI",
                 separator: "separator-AebOhG",
@@ -27264,4 +27265,4 @@
         }
     }
 ]);
-//# sourceMappingURL=66a06693e553b51ce638.js.map
+//# sourceMappingURL=27b4c691ce53451553e0.js.map
