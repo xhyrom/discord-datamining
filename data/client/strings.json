@@ -16442,6 +16442,7 @@
   "STRANGER_DANGER_MORE_BLOCK_DESCRIPTION": "\"Remove their ability to message, mention, or add you as a friend.\"",
   "STRANGER_DANGER_WAS_THIS_HELPFUL": "\"Was this helpful?\"",
   "STRANGER_DANGER_FEEDBACK_CONFIRM": "\"Thanks for your feedback!\"",
+  "STRANGER_DANGER_CONTEXT_MENU_CLEAR": "\"Reset Safety Warnings (Experimental)\"",
   "FORCED_SECURE_FRAMES_INCOMPATIBLE_TITLE": "\"Disconnected\"",
   "FORCED_SECURE_FRAMES_INCOMPATIBLE_BODY": "\"That channel forces testing of secure frames for audio/video, but your client does not support the protocol version and we do not yet support protocol negotiation.\\n\\n We disconnected you from the channel to protect your ears.\"",
   "SECURE_FRAMES_CONNECTION_INDICATOR": "\"SF Connection\"",
