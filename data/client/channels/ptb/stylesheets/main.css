@@ -79413,172 +79413,16 @@ input[type=checked]:focus-visible+.label-3TDpbn {
     color: var(--brand-experiment-560)
 }
 
-.flexVertical-z-D8C8 {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: column;
-    flex-direction: column
-}
-
-.flexVertical-z-D8C8>.flexSpacer-1DMqbm {
-    min-height: 1px
-}
-
-.flexHorizontal-1-DkV3 {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: row;
-    flex-direction: row
-}
-
-.flexHorizontal-1-DkV3>.flexSpacer-1DMqbm {
-    min-width: 1px
-}
-
-.flexHorizontalReverse-3M0RTo {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: reverse;
-    -ms-flex-direction: row-reverse;
-    flex-direction: row-reverse
-}
-
-.flexHorizontalReverse-3M0RTo>.flexSpacer-1DMqbm {
-    min-width: 1px
-}
-
-.flexSpacer-1DMqbm {
-    -webkit-box-flex: 1;
-    -ms-flex: 1;
-    flex: 1;
-    overflow: hidden
-}
-
-.flexCenter-32nHR4 {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    justify-content: center;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center
-}
-
-.flexAlignStart-3xOUfq {
-    -webkit-box-align: start;
-    -ms-flex-align: start;
-    align-items: flex-start
-}
-
-.flexAlignEnd-6yEMfa {
-    -webkit-box-align: end;
-    -ms-flex-align: end;
-    align-items: flex-end
-}
-
-.flexAlignCenter-2fSvlH {
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center
-}
-
-.flexAlignStretch-14GIWm {
-    -webkit-box-align: stretch;
-    -ms-flex-align: stretch;
-    align-items: stretch
-}
-
-.flexJustifyStart-11Utga {
-    -webkit-box-pack: start;
-    -ms-flex-pack: start;
-    justify-content: flex-start
-}
-
-.flexJustifyEnd-2Xkpya {
-    -webkit-box-pack: end;
-    -ms-flex-pack: end;
-    justify-content: flex-end
-}
-
-.flexJustifyCenter-Zqispl {
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    justify-content: center
-}
-
-.flexJustifyAround-12v95- {
-    -ms-flex-pack: distribute;
-    justify-content: space-around
-}
-
-.flexJustifyBetween-1PLlDW {
-    -webkit-box-pack: justify;
-    -ms-flex-pack: justify;
-    justify-content: space-between
-}
-
-.flexNowrap-3Rym8L {
-    -ms-flex-wrap: nowrap;
-    flex-wrap: nowrap
-}
-
-.flexWrap-PxieiF {
-    -ms-flex-wrap: wrap;
-    flex-wrap: wrap
-}
-
-.flexWrapReverse-1wZHpZ {
-    -ms-flex-wrap: wrap-reverse;
-    flex-wrap: wrap-reverse
-}
-
-.flex-2-vPQY {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex
-}
-
-.flex-2-vPQY,
-.flex-2-vPQY .flexChild-17jAcv {
-    -webkit-box-sizing: border-box;
-    box-sizing: border-box
-}
-
-.flex-2-vPQY .flexChild-17jAcv {
-    -webkit-box-flex: 1;
-    -ms-flex-positive: 1;
-    flex-grow: 1
-}
-
-.flex-2-vPQY.flexGutterSmall-H7sbyA {
-    margin-left: -10px;
-    margin-right: -10px
-}
-
-.flex-2-vPQY.flexGutterSmall-H7sbyA .flexChild-17jAcv {
-    padding: 0 10px
-}
-
-.flex-2-vPQY.flexGutterLarge-LiSQh9 {
-    margin-left: -30px;
-    margin-right: -30px
-}
-
-.flex-2-vPQY.flexGutterLarge-LiSQh9 .flexChild-17jAcv {
-    padding: 0 30px
-}
-
 .strangerDangerBanner-2wxVfR {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-flex: 1;
+    -ms-flex: 1 1 auto;
+    flex: 1 1 auto;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
     margin: var(--spacing-16);
     border-radius: 6px;
     padding: 6px 12px 6px 16px;
@@ -79601,6 +79445,17 @@ input[type=checked]:focus-visible+.label-3TDpbn {
 }
 
 .buttons-LfwThR {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: end;
+    -ms-flex-pack: end;
+    justify-content: flex-end;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -ms-flex-wrap: nowrap;
+    flex-wrap: nowrap;
     gap: 8px
 }
 
@@ -108831,6 +108686,171 @@ button.button-12Fmur.disabled-GROwTe {
 
 .supportHeader-tLjS3c {
     margin-bottom: 4px
+}
+
+.flexVertical-z-D8C8 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column
+}
+
+.flexVertical-z-D8C8>.flexSpacer-1DMqbm {
+    min-height: 1px
+}
+
+.flexHorizontal-1-DkV3 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row
+}
+
+.flexHorizontal-1-DkV3>.flexSpacer-1DMqbm {
+    min-width: 1px
+}
+
+.flexHorizontalReverse-3M0RTo {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+    -ms-flex-direction: row-reverse;
+    flex-direction: row-reverse
+}
+
+.flexHorizontalReverse-3M0RTo>.flexSpacer-1DMqbm {
+    min-width: 1px
+}
+
+.flexSpacer-1DMqbm {
+    -webkit-box-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+    overflow: hidden
+}
+
+.flexCenter-32nHR4 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center
+}
+
+.flexAlignStart-3xOUfq {
+    -webkit-box-align: start;
+    -ms-flex-align: start;
+    align-items: flex-start
+}
+
+.flexAlignEnd-6yEMfa {
+    -webkit-box-align: end;
+    -ms-flex-align: end;
+    align-items: flex-end
+}
+
+.flexAlignCenter-2fSvlH {
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center
+}
+
+.flexAlignStretch-14GIWm {
+    -webkit-box-align: stretch;
+    -ms-flex-align: stretch;
+    align-items: stretch
+}
+
+.flexJustifyStart-11Utga {
+    -webkit-box-pack: start;
+    -ms-flex-pack: start;
+    justify-content: flex-start
+}
+
+.flexJustifyEnd-2Xkpya {
+    -webkit-box-pack: end;
+    -ms-flex-pack: end;
+    justify-content: flex-end
+}
+
+.flexJustifyCenter-Zqispl {
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center
+}
+
+.flexJustifyAround-12v95- {
+    -ms-flex-pack: distribute;
+    justify-content: space-around
+}
+
+.flexJustifyBetween-1PLlDW {
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between
+}
+
+.flexNowrap-3Rym8L {
+    -ms-flex-wrap: nowrap;
+    flex-wrap: nowrap
+}
+
+.flexWrap-PxieiF {
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap
+}
+
+.flexWrapReverse-1wZHpZ {
+    -ms-flex-wrap: wrap-reverse;
+    flex-wrap: wrap-reverse
+}
+
+.flex-2-vPQY {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex
+}
+
+.flex-2-vPQY,
+.flex-2-vPQY .flexChild-17jAcv {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box
+}
+
+.flex-2-vPQY .flexChild-17jAcv {
+    -webkit-box-flex: 1;
+    -ms-flex-positive: 1;
+    flex-grow: 1
+}
+
+.flex-2-vPQY.flexGutterSmall-H7sbyA {
+    margin-left: -10px;
+    margin-right: -10px
+}
+
+.flex-2-vPQY.flexGutterSmall-H7sbyA .flexChild-17jAcv {
+    padding: 0 10px
+}
+
+.flex-2-vPQY.flexGutterLarge-LiSQh9 {
+    margin-left: -30px;
+    margin-right: -30px
+}
+
+.flex-2-vPQY.flexGutterLarge-LiSQh9 .flexChild-17jAcv {
+    padding: 0 30px
 }
 
 .container-3hcYbe {
@@ -156869,6 +156889,16 @@ html .invoiceCancelRow-3s2UuC {
 }
 
 .modalHeaderText-1XCDbV {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: start;
+    -ms-flex-align: start;
+    align-items: flex-start;
     max-width: 211px;
     gap: var(--spacing-4)
 }
@@ -156886,10 +156916,63 @@ html .invoiceCancelRow-3s2UuC {
 }
 
 .modalContent-1Avzh- {
-    padding: var(--spacing-32)
+    padding: var(--spacing-32);
+    gap: var(--spacing-32);
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column
+}
+
+.moreHeading-1l0_qD {
+    margin-bottom: var(--spacing-4)
+}
+
+.safetyAction-negsKp {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -ms-flex-wrap: nowrap;
+    flex-wrap: nowrap;
+    gap: var(--spacing-16);
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between
+}
+
+.safetyAction-negsKp button {
+    -ms-flex-negative: 0;
+    flex-shrink: 0
+}
+
+.safetyActionText-3flTm1 {
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -ms-flex: 0 1 240px;
+    flex: 0 1 240px
+}
+
+.safetyActionText-3flTm1,
+.tipsSection-1h5_LK {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-box-flex: 0
 }
 
 .tipsSection-1h5_LK {
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -ms-flex-positive: 0;
+    flex-grow: 0;
     padding: var(--spacing-16);
     background: var(--background-secondary);
     border-radius: var(--radius-sm);
@@ -156897,15 +156980,27 @@ html .invoiceCancelRow-3s2UuC {
 }
 
 .tipRow-3yztTZ {
+    -ms-flex-wrap: nowrap;
+    flex-wrap: nowrap;
+    -webkit-box-flex: 0;
+    -ms-flex-positive: 0;
+    flex-grow: 0;
     gap: var(--spacing-8)
+}
+
+.tipNumber-MasoFQ,
+.tipRow-3yztTZ {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center
 }
 
 .tipNumber-MasoFQ {
     border-radius: var(--radius-round);
     background: var(--background-secondary-alt);
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
     min-width: 32px;
     min-height: 32px;
     -webkit-box-orient: vertical;
@@ -156914,10 +157009,7 @@ html .invoiceCancelRow-3s2UuC {
     flex-direction: column;
     -webkit-box-pack: center;
     -ms-flex-pack: center;
-    justify-content: center;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center
+    justify-content: center
 }
 
 .container-1PV2aX {
@@ -177260,4 +177352,4 @@ html .invoiceCancelRow-dVOR64 {
     margin-bottom: 8px
 }
 
-/*# sourceMappingURL=40532.9c80b54771a2e3a28188.css.map*/
+/*# sourceMappingURL=40532.8fae3700330a34359a24.css.map*/
