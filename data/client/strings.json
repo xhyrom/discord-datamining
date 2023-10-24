@@ -15932,6 +15932,7 @@
   "DELETE_ALL_EVENTS": "\"Cancel all Events\"",
   "DELETE_THIS_EVENT": "\"Cancel this Event\"",
   "DELETE_ALL_EVENTS_IN_SERIES": "\"Cancel all Events in this Series\"",
+  "RESTORE_EVENT": "\"Restore Event\"",
   "CREATE_EVENT_RECUR_LABEL": "\"Event Frequency\"",
   "CREATE_EVENT_RECUR_NONE": "\"Does not repeat\"",
   "CREATE_EVENT_RECUR_WEEKLY": "\"Weekly on {weekday}\"",
