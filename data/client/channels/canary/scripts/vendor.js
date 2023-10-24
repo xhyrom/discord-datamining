@@ -1,4 +1,4 @@
-/*! For license information please see 3d4fb3222c5d8e0f999a.js.LICENSE.txt */
+/*! For license information please see 083a70f1e1240cb691a9.js.LICENSE.txt */
 (this.webpackChunkdiscord_app = this.webpackChunkdiscord_app || []).push([
     [22897], {
         151131: (t, e, r) => {
@@ -24363,6 +24363,8 @@
                 t.CONTACT_INVITE_TAPPED = "contact_invite_tapped";
                 t.CONTACT_INVITE_OVERLAY_DISMISSED = "contact_invite_overlay_dismissed";
                 t.FRIEND_SUGGESTION_ADDED = "friend_suggestion_added";
+                t.FRIEND_FINDER_SECTION_EXPANDED = "friend_finder_section_expanded";
+                t.FRIEND_FINDER_INITIAL_LOADED = "friend_finder_initial_loaded";
                 t.MESSAGE_REQUESTS_INITIALIZED = "message_requests_initialized";
                 t.GUILD_DEFAULT_MESSAGE_REQUEST_UPDATED = "guild_default_message_request_updated";
                 t.SPAM_MESSAGE_REQUESTS_VIEWED = "spam_message_requests_viewed";
@@ -25630,7 +25632,8 @@
                 t.GOG = "gog";
                 t.EPIC = "epic"
             }(Un || (Un = {}));
-            var vn, Bn, bn = Object.freeze((Y(Mn = {}, Un.DISCORD, "Discord"), Y(Mn, Un.STEAM, "Steam"), Y(Mn, Un.UPLAY, "Uplay"), Y(Mn, Un.BATTLENET, "Battle.net"), Y(Mn, Un.ORIGIN, "Origin"), Y(Mn, Un.GOG, "GOG"), Y(Mn, Un.TWITCH, "Twitch"), Y(Mn, Un.EPIC, "Epic"), Mn)),
+            var vn, Bn, bn = Object.freeze((Y(Mn = {}, Un.DISCORD, "Discord"), Y(Mn, Un.STEAM, "Steam"), Y(Mn, Un.UPLAY, "Uplay"), Y(Mn, Un.BATTLENET, "Battle.net"), Y(Mn, Un.ORIGIN, "Origin"), Y(Mn, Un.GOG, "GOG"),
+                    Y(Mn, Un.TWITCH, "Twitch"), Y(Mn, Un.EPIC, "Epic"), Mn)),
                 wn = 6016,
                 Hn = 3384;
             ! function(t) {
@@ -27033,7 +27036,8 @@
             function g(t, e = {}) {
                 const r = "string" == typeof e ? e : e.tunnel,
                     n = "string" != typeof e && e._metadata ? e._metadata.sdk : void 0;
-                return r || `${function(t){return`${C(t)}${t.projectId}/envelope/`}(t)}?${function(t,e){return(0,R._j)({sentry_key:t.publicKey,sentry_version:"7",...e&&{sentry_client:`${e.name}/${e.version}`}})}(t,n)}`
+                return r || `${function(t){
+return`${C(t)}${t.projectId}/envelope/`}(t)}?${function(t,e){return(0,R._j)({sentry_key:t.publicKey,sentry_version:"7",...e&&{sentry_client:`${e.name}/${e.version}`}})}(t,n)}`
             }
             const P = /\(error: (.*)\)/;
 
@@ -27871,7 +27875,8 @@
                     return a
                 }
                 captureEvent(t, e, r) {
-                    if (e && e.originalException && (0, _.YO)(e.originalException)) {
+                    if (e && e.originalException && (0,
+                            _.YO)(e.originalException)) {
                         ("undefined" == typeof __SENTRY_DEBUG__ || __SENTRY_DEBUG__) && o.kg.log(Nt);
                         return
                     }
@@ -28278,7 +28283,8 @@
                 if ((0, w.VZ)(e)) return Ct(t, e);
                 if ((0, w.PO)(e) || (0, w.cO)(e)) {
                     i = function(t, e, r, n) {
-                        const a = (0, T.Gd)().getClient(),
+                        const a = (0,
+                                T.Gd)().getClient(),
                             i = a && a.getOptions().normalizeDepth,
                             o = {
                                 exception: {
@@ -28555,8 +28561,7 @@
                 const {
                     startTimestamp: e,
                     endTimestamp: r
-                } = t
-                ;
+                } = t;
                 if (r && (!t.fetchData.url.match(/sentry_key/) || "POST" !== t.fetchData.method))
                     if (t.error) {
                         const n = t.fetchData,
@@ -28817,7 +28822,8 @@
             }
 
             function ae(t, e, r, n) {
-                (0, _.EG)(r, {
+                (0,
+                    _.EG)(r, {
                     handled: !1,
                     type: n
                 });
@@ -28971,7 +28977,8 @@
                 if (!(i.exception && i.exception.values && o && (0, w.V9)(o.originalException, Error))) return;
                 const _ = i.exception.values.length > 0 ? i.exception.values[i.exception.values.length - 1] : void 0;
                 _ && (i.exception.values = (E = Re(t, e, a, o.originalException, n, i.exception.values, _, 0), c = r, E.map((t => {
-                    t.value && (t.value = (0, s.$G)(t.value, c));
+                    t.value && (t.value = (0,
+                        s.$G)(t.value, c));
                     return t
                 }))));
                 var E, c
@@ -29270,7 +29277,8 @@
                 return {
                     $: e,
                     add: function(n) {
-                        if (!(void 0 === t || e.length < t)) return (0, b.$2)(new It("Not adding Promise because buffer limit was reached."));
+                        if (!(void 0 === t || e.length < t)) return (0,
+                            b.$2)(new It("Not adding Promise because buffer limit was reached."));
                         const a = n(); - 1 === e.indexOf(a) && e.push(a);
                         a.then((() => r(a))).then(null, (() => r(a).then(null, (() => {}))));
                         return a
@@ -30042,8 +30050,7 @@
                     if (Object.keys(this._measurements).length > 0) {
                         ("undefined" == typeof __SENTRY_DEBUG__ || __SENTRY_DEBUG__) && o.kg.log("[Measurements] Adding measurements to transaction", JSON.stringify(this._measurements, void 0, 2));
                         a.measurements = this._measurements
-                    }
-                    ("undefined" == typeof __SENTRY_DEBUG__ || __SENTRY_DEBUG__) && o.kg.log(`[Tracing] Finishing ${this.op} transaction: ${this.name}.`);
+                    }("undefined" == typeof __SENTRY_DEBUG__ || __SENTRY_DEBUG__) && o.kg.log(`[Tracing] Finishing ${this.op} transaction: ${this.name}.`);
                     return this._hub.captureEvent(a)
                 }
                 toContext() {
@@ -30296,7 +30303,8 @@
                     })
                 }
                 if (! function(t) {
-                        if ((0, w.i2)(t) || "number" != typeof t && "boolean" != typeof t) {
+                        if ((0,
+                                w.i2)(t) || "number" != typeof t && "boolean" != typeof t) {
                             ("undefined" == typeof __SENTRY_DEBUG__ || __SENTRY_DEBUG__) && o.kg.warn(`[Tracing] Given sample rate is invalid. Sample rate must be a boolean or a number between 0 and 1. Got ${JSON.stringify(t)} of type ${JSON.stringify(typeof t)}.`);
                             return !1
                         }
@@ -37153,7 +37161,7 @@
                     dsn: "https://fa97a90475514c03a42f80cd36d147c4@sentry.io/140984",
                     autoSessionTracking: !1,
                     environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                    release: "discord_web-3926693a8d3a1c7c71bff23d64c083e32b87be07",
+                    release: "discord_web-1aa6b292e45f59958223b0af7cbfeafe122e015f",
                     beforeSend: function(t) {
                         return function(t) {
                             return null != t.exception && null != t.exception.values && t.exception.values.every((function(t) {
@@ -37180,8 +37188,8 @@
                     denyUrls: [/recaptcha/, /mobilediscord\.com/, /betterdiscord:\/\//]
                 });
                 var t;
-                Bt.YA("buildNumber", null !== (t = "239742") ? t : "");
-                Bt.YA("builtAt", String("1698104450945"));
+                Bt.YA("buildNumber", null !== (t = "239785") ? t : "");
+                Bt.YA("builtAt", String("1698110509855"));
                 var e = window.GLOBAL_ENV.SENTRY_TAGS;
                 if (null != e && "object" == typeof e)
                     for (var r in e) Bt.YA(r, e[r]);
@@ -48686,4 +48694,4 @@
         e(128594), e(535666), e(784633), e(678991)
     }
 ]);
-//# sourceMappingURL=3d4fb3222c5d8e0f999a.js.map
+//# sourceMappingURL=083a70f1e1240cb691a9.js.map
