@@ -12556,7 +12556,8 @@
                 canceled: "canceled-2sYP_G",
                 timeStatus: "timeStatus-3KJkIm",
                 icon: "icon-2d25ku",
-                iconButton: "iconButton-3rzQjG"
+                iconButton: "iconButton-3rzQjG",
+                canceledStatus: "canceledStatus-255dT-"
             }
         },
         908453: e => {
@@ -27276,4 +27277,4 @@
         }
     }
 ]);
-//# sourceMappingURL=2620b0dd9137f9489c4a.js.map
+//# sourceMappingURL=4d368355cbda4e43bfd8.js.map
