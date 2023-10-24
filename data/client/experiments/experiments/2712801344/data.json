@@ -1,0 +1,21 @@
+{
+  "data": {
+    "kind": "user",
+    "id": "2023-10_staff_teen_safety_assist_age_bypass",
+    "label": "Staff Teen Safety Assist Age Bypass",
+    "description": [
+      "Not Eligible",
+      "Control Bucket",
+      "Treatment 1: Enable staff teen safety assist age bypass (your account will behave as a teen user)"
+    ],
+    "hash": 2712801344,
+    "buckets": [
+      -1,
+      0,
+      1
+    ],
+    "config_keys": [
+      "enabled"
+    ]
+  }
+}
