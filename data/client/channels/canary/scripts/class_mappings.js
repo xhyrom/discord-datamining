@@ -10599,6 +10599,7 @@
                 header: "header-PUhV5K",
                 tableContainer: "tableContainer-2EtuVA",
                 mainTableContainer: "mainTableContainer-3mGOxZ",
+                movedTable: "movedTable-1HWmry",
                 noResultsContainer: "noResultsContainer-2Mzh2h",
                 container: "container-2EzU_z"
             }
@@ -10612,6 +10613,13 @@
             e.exports = {
                 newChannel: "newChannel-3uRBAS",
                 coachmark: "coachmark-1Yj9lQ"
+            }
+        },
+        444856: e => {
+            e.exports = {
+                bannerContainer: "bannerContainer-1DVYQL",
+                headingContainer: "headingContainer-CQC3-8",
+                buttonContainer: "buttonContainer-nQPHdU"
             }
         },
         207518: e => {
@@ -14096,27 +14104,8 @@
         },
         471480: e => {
             e.exports = {
-                searchBar: "searchBar-3joS_I",
-                membersHeader: "membersHeader-6GlAlu",
-                "ui-select": "ui-select-2FOEkB",
-                search: "search-2KMv1o",
-                divider: "divider-3K9_Hx",
-                pruneLink: "pruneLink-jE0uo7",
-                membersCount: "membersCount-1G86bs",
-                membersFilterPopout: "membersFilterPopout-2bbQRK",
-                "ui-scroller-wrap": "ui-scroller-wrap-3OLs9o",
-                member: "member-2cj2PI",
-                active: "active-1_-Z4b",
-                overflowIcon: "overflowIcon-863s2Z",
-                nameTag: "nameTag-1UsB6_",
-                name: "name-3IqW9M",
-                tag: "tag-15nL6B",
-                username: "username-31KZyA",
-                ownerHelpIcon: "ownerHelpIcon-ZVaFw4",
-                roleWrapper: "roleWrapper-2IhvNd",
-                overflowButton: "overflowButton-19oxmH",
-                avatar: "avatar-rUnPfv",
-                overflowIconFg: "overflowIconFg-29oz-o"
+                linkIcon: "linkIcon-2eAcrt",
+                rowContainer: "rowContainer-3-Spfx"
             }
         },
         816125: e => {
@@ -27277,4 +27266,4 @@
         }
     }
 ]);
-//# sourceMappingURL=4d368355cbda4e43bfd8.js.map
+//# sourceMappingURL=b8e1a2f7e02e976c9f50.js.map
