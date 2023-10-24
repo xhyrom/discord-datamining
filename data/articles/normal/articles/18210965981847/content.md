@@ -54,9 +54,9 @@
 <h1 id="h_01HD4SVGAF50M8WFGS4W75W34E">Frequently Asked Questions</h1>
 <p><strong>Q: </strong>Are suspensions temporary or permanent? </p>
 <p><strong>A: </strong>Temporary suspensions can last up to 1 year. A user’s account and username will be preserved for that time. They will regain access at the end of the suspension.</p>
-<p>Permanent suspensions (formerly called “bans”) do not expire. The user will lose their account. They will have a grace period to appeal, after which, after which their username will be made available again.</p>
+<p>Permanent suspensions (formerly called “bans”) do not expire. The user will lose their account. They will have a grace period to appeal, after which their username will be made available again.</p>
 <p><strong>Q: </strong>Do any current or past violations I received before the launch of the Warning System count against my account standing? </p>
-<p><strong>A: </strong>No, only violations that have occurred after the launch of the wWarning Ssystem will count against your account standing.</p>
+<p><strong>A: </strong>No, only violations that have occurred after the launch of the Warning System will count against your account standing.</p>
 <p><strong>Q: </strong>Why did my account standing jump from “All Good” to a permanent suspension?</p>
 <p><strong>A: </strong>Each violation is weighed differently – depending on the severity of the incident. A high severity violation may cause the account standing to change more dramatically. The most severe violations lead straight to a permanent suspension (i.e. violations ofto a child safety policy).</p>
 <p><strong>Q:</strong> How many chances do I get? What are the penalties for one violation or five violations?</p>
