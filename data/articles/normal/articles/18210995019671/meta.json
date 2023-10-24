@@ -1,0 +1,23 @@
+{
+  "id": 18210995019671,
+  "url": "https://hammerandchisel.zendesk.com/api/v2/help_center/en-us/articles/18210995019671.json",
+  "html_url": "https://support.discord.com/hc/en-us/articles/18210995019671-Discord-Sensitive-Content-Filters",
+  "author_id": 424992137214,
+  "comments_disabled": true,
+  "draft": false,
+  "promoted": false,
+  "position": 0,
+  "section_id": 360007875171,
+  "created_at": "2023-10-12T01:40:51Z",
+  "name": "Discord Sensitive Content Filters",
+  "title": "Discord Sensitive Content Filters",
+  "source_locale": "en-us",
+  "locale": "en-us",
+  "outdated": false,
+  "outdated_locales": [],
+  "edited_at": "2023-10-24T02:46:43Z",
+  "user_segment_id": null,
+  "permission_group_id": 1720972,
+  "content_tag_ids": [],
+  "label_names": []
+}
