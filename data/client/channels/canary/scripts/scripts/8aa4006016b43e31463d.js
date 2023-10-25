@@ -1475,7 +1475,7 @@
             let p = /^\/([a-zA-Z0-9-]+)$/,
                 g = /^\/channels\/([0-9]+|@me)\/([0-9]+)$/,
                 T = /^\/(invite|template)\/([a-zA-Z0-9-]+)\/?$/,
-                I = RegExp("^/events/(\\d+)(?:/)(\\d+)?"),
+                I = RegExp("^/events/(\\d+)(?:/)(\\d+)?((?:/)(\\d+))?"),
                 S = /^\/application-directory\/([0-9-]+)\/?$/,
                 A = /^\/activities\/([0-9-]+)\/?$/,
                 C = /^\/channels\/([0-9]+)\/shop\/([0-9]+)$/,
@@ -1560,12 +1560,13 @@
                     let b = function(e) {
                         if (null == e) return null;
                         let t = e.match(I);
-                        return null != t && 3 === t.length ? {
+                        return null != t && t.length >= 4 ? {
                             guildId: t[1],
-                            guildEventId: t[2]
+                            guildEventId: t[2],
+                            recurrenceId: t[4]
                         } : null
                     }(r.pathname);
-                    null != b && E(_.CodedLinkType.EVENT, "".concat(b.guildId, "-").concat(b.guildEventId));
+                    null != b && E(_.CodedLinkType.EVENT, "".concat(b.guildId, "-").concat(b.guildEventId) + (null != b.recurrenceId ? "-".concat(b.recurrenceId) : ""));
                     let P = null == h ? void 0 : h.match(S);
                     if (null != P) {
                         let e = P[1];
@@ -2393,7 +2394,7 @@
                 c = new RegExp("^/channels/(\\d+|".concat(s.ME, ")(?:/)(\\d+|").concat(o, ")(?:/)(\\d+)")),
                 f = RegExp("^/channels/(\\d+)(?:/)(\\d+)(?:/threads/)(\\d+)(?:/)(\\d+)"),
                 h = RegExp("^/guild-stages/(\\d+)(?:/)?(\\d+)?"),
-                E = RegExp("^/events/(\\d+)(?:/)(\\d+)?"),
+                E = RegExp("^/events/(\\d+)(?:/)(\\d+)?((?:/)(\\d+))?"),
                 _ = new RegExp("^https://(?:canary\\.|ptb\\.)?discord.com/channels/(\\d+|".concat(s.ME, ")(?:/(\\d+|[a-zA-Z-]+))?(?:/(\\d+|[a-zA-Z-]+))?")),
                 m = RegExp("^https://(?:canary\\.|ptb\\.)?discord.com/channels/(\\d+)(?:/)(\\d+)(?:/threads/)(\\d+)(?:/)(\\d+)");
 
@@ -2431,7 +2432,8 @@
                 let t = e.match(E);
                 return null != t && t.length > 1 ? {
                     guildId: t[1],
-                    guildEventId: t[2]
+                    guildEventId: t[2],
+                    recurrenceId: t[3]
                 } : null
             }
 
@@ -5942,4 +5944,4 @@
         }
     }
 ]);
-//# sourceMappingURL=d75f116e192f6f03d594.js.map
+//# sourceMappingURL=8aa4006016b43e31463d.js.map

@@ -1684,7 +1684,7 @@
                             e = null == E ? T : "".concat(T, "/").concat(E);
                         return "".concat(e).concat(null != I ? "?feature=".concat(I) : "")
                     },
-                    GUILD_EVENT_DETAILS: (_, E) => "/events/".concat(_, "/").concat(E),
+                    GUILD_EVENT_DETAILS: (_, E, I) => "/events/".concat(_, "/").concat(E) + (null != I ? "/".concat(I) : ""),
                     FEATURE: _ => "/feature/".concat(_),
                     GUILD_JOIN_REQUEST: (_, E) => "/guilds/".concat(_, "/requests/").concat(E),
                     MOBILE_WEB_HANDOFF: "/mweb-handoff",
@@ -2632,4 +2632,4 @@
         }
     }
 ]);
-//# sourceMappingURL=589e6724ddcf2c06ecc9.js.map
+//# sourceMappingURL=a0b416973bc8e3bfaf82.js.map

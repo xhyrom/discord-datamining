@@ -15989,6 +15989,9 @@
                 GUILD_SCHEDULED_EVENT_VIEW_MORE_RECURRENCES: "View future events",
                 GUILD_SCHEDULED_EVENT_RECURRENCE_RULE: "Repeats {recurrenceRule}",
                 GUILD_SCHEDULED_EVENT_REPEATS: "Repeats on",
+                GUILD_SCHEDULED_EVENT_REPEATS_WEEKLY: "Repeats every {weekday}",
+                GUILD_SCHEDULED_EVENT_REPEATS_YEARLY: "Repeats every {date}",
+                GUILD_SCHEDULED_EVENT_REPEATS_WEEKDAYS: "Repeats every weekday (Monday to Friday)",
                 EDIT_THIS_EVENT: "Edit this Event",
                 EDIT_ALL_EVENTS: "Edit all Events in this Series",
                 GUILD_EVENT_EDIT_CONFIRM_BODY_CONFIRM: "Are you sure you want to edit this event?",
@@ -17768,7 +17771,7 @@
                 L = E("782340");
             (0, r.setUpdateRules)(i.default), (0, I.default)(L.default, n.default, s.default), a.default.Emitter.injectBatchEmitChanges(o.unstable_batchedUpdates), a.default.PersistedStore.disableWrites = __OVERLAY__, a.default.initialize();
             let u = window.GLOBAL_ENV.RELEASE_CHANNEL;
-            new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(u, ", Build Number: ").concat("240531", ", Version Hash: ").concat("b25406889f91372d6f1537b766ca0d32899b40c1")), t.default.setTags({
+            new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(u, ", Build Number: ").concat("240540", ", Version Hash: ").concat("8824e5dd4e8083e2aa7e07e3185f9f559eedd7a6")), t.default.setTags({
                 appContext: l.CURRENT_APP_CONTEXT
             }), S.default.initBasic(), N.default.init(), T.FocusRingManager.init(), O.init(), (0, R.cleanupTempFiles)()
         },
@@ -20130,8 +20133,8 @@
 
             function o() {
                 var e;
-                let _ = parseInt((e = "240531", "240531"));
-                return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("240531")), _ = 0), _
+                let _ = parseInt((e = "240540", "240540"));
+                return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("240540")), _ = 0), _
             }
         },
         990629: function(e, _, E) {
@@ -29382,4 +29385,4 @@
         }
     }
 ]);
-//# sourceMappingURL=ac829fdd67762c12943e.js.map
+//# sourceMappingURL=4c6f67b01e5d6003462c.js.map
