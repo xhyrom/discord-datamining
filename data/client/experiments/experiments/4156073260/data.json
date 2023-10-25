@@ -17,7 +17,9 @@
       2
     ],
     "config_keys": [
-      "enabled"
+      "isPopupEnabled",
+      "isTaglessAccountPanelEnabled",
+      "isJoinedTagButtonEnabled"
     ]
   }
 }

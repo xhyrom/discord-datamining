@@ -23,7 +23,8 @@
       5
     ],
     "config_keys": [
-      "enabled"
+      "enableSendingVoiceStats",
+      "percentageOfCalls"
     ]
   }
 }

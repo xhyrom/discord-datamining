@@ -19,7 +19,9 @@
       3
     ],
     "config_keys": [
-      "enabled"
+      "enableNewCopy",
+      "hasCopyAboveButton",
+      "hasProminentCopy"
     ]
   }
 }

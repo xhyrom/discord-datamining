@@ -17,7 +17,8 @@
       2
     ],
     "config_keys": [
-      "enabled"
+      "showListsAndHeaders",
+      "showMaskedLinks"
     ]
   },
   "rollout": {

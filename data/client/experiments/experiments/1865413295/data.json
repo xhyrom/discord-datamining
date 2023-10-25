@@ -22,7 +22,7 @@
     "populations": [
       {
         "buckets": {
-          "none": {
+          "1": {
             "rollout": [
               {
                 "start": 0,
@@ -41,7 +41,7 @@
         ]
       }
     ],
-    "revision": 1,
+    "revision": 2,
     "overrides": {
       "1": [
         "763838479293349899"

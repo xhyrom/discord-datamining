@@ -1,7 +1,22 @@
 {
   "data": {
     "kind": "guild",
-    "hash": 2275541075
+    "id": "2023-09_guild_events_auto_start",
+    "label": "Allow users to toggle automatically start events",
+    "description": [
+      "Not Eligible",
+      "Control Bucket",
+      "Treatment 1: User can see autostart toggle"
+    ],
+    "hash": 2275541075,
+    "buckets": [
+      -1,
+      0,
+      1
+    ],
+    "config_keys": [
+      "canUseEventsAutoStartToggle"
+    ]
   },
   "rollout": {
     "populations": [
@@ -23,7 +38,9 @@
     "overrides": {
       "1": [
         "281683040739262465",
-        "1095810146761973830"
+        "1095810146761973830",
+        "1103771563066658828",
+        "1096492110254964809"
       ]
     },
     "overrides_formatted": []

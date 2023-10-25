@@ -21,7 +21,9 @@
       4
     ],
     "config_keys": [
-      "enabled"
+      "hideStickers",
+      "moreEmojisToShow",
+      "showMobileStickerToggle"
     ]
   }
 }

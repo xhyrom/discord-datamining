@@ -17,7 +17,7 @@
       2
     ],
     "config_keys": [
-      "enabled"
+      "hdrCaptureMode"
     ]
   }
 }
