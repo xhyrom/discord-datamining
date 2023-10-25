@@ -120,6 +120,8 @@ export class HyrosCoffeeSender implements Sender {
     if (script.name === scriptFiles.classMappings?.name)
       suffix = "class mappings";
 
+    if (script.name === scriptFiles.strings?.name) suffix = "strings";
+
     return `${script.path}${suffix ? ` (${suffix})` : ""}`;
   }
 }
