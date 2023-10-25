@@ -121,7 +121,7 @@
 <p><span class="wysiwyg-font-size-large"><strong>Q: I have Nitro Classic credits in my account but I don’t know what Nitro Classic gives me.</strong></span></p>
 <p><span style="font-weight: 400;">A: Nitro Classic unlocks the following perks on your account:</span></p>
 <ul>
-    <li style="font-weight: 400;" aria-level="1"><span style="font-weight: 400;">Profile customization: animated avatar, custom Tag, Nitro badge.</span></li>
+    <li style="font-weight: 400;" aria-level="1"><span style="font-weight: 400;">Profile customization: animated avatar, Nitro badge.</span></li>
     <li style="font-weight: 400;" aria-level="1"><span style="font-weight: 400;">30% off Boost purchases</span></li>
     <li style="font-weight: 400;" aria-level="1"><span style="font-weight: 400;">Use custom and animated emojis anywhere</span></li>
     <li style="font-weight: 400;" aria-level="1"><span style="font-weight: 400;">Bigger file uploads (50MB)</span></li>
