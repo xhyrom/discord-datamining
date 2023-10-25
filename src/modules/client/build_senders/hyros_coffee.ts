@@ -35,6 +35,13 @@ export class HyrosCoffeeSender implements Sender {
     stylesheetFiles: Awaited<ReturnType<Stylesheets["files"]>>,
     date: Date
   ) {
+    const importantScripts = [
+      scriptFiles.chunkLoader,
+      scriptFiles.classMappings,
+      scriptFiles.mainScript,
+      scriptFiles.vendor,
+    ].filter((script): script is File => script !== null);
+
     const embed = new EmbedBuilder()
       .setTitle(`${channel.name} Build`)
       .setColor(channel.color)
@@ -66,9 +73,14 @@ export class HyrosCoffeeSender implements Sender {
         },
         {
           name: "Scripts",
-          value: scriptFiles.scripts
-            .map((script) => this.formatScriptName(scriptFiles, script))
-            .join("\n"),
+          value: [
+            importantScripts
+              .map((script) => this.formatScriptName(scriptFiles, script))
+              .join("\n"),
+            `And ${
+              scriptFiles.scripts.length - importantScripts.length
+            } more...`,
+          ].join("\n"),
         },
         {
           name: "Stylesheets",
