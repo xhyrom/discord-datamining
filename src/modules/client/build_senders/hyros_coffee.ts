@@ -77,9 +77,9 @@ export class HyrosCoffeeSender implements Sender {
             importantScripts
               .map((script) => this.formatScriptName(scriptFiles, script))
               .join("\n"),
-            `And ${
+            `*And ${
               scriptFiles.scripts.length - importantScripts.length
-            } more...`,
+            } more...*`,
           ].join("\n"),
         },
         {
