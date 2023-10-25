@@ -13297,7 +13297,7 @@ html.decorate-links .lowSaturationUnderline__95e71 {
 }
 
 .title__746ed {
-    font-size: 17px
+    font-size: 1.0625rem
 }
 
 .developerResources_fdd04d:hover {
@@ -13328,8 +13328,8 @@ html.decorate-links .lowSaturationUnderline__95e71 {
 }
 
 .backHeader__18afe {
-    font-size: 17px;
-    line-height: 24px;
+    font-size: 1.0625rem;
+    line-height: 1.5rem;
     color: var(--interactive-normal)
 }
 
@@ -59145,12 +59145,12 @@ strong {
 .streamerModeEnabledBtn__51c2f {
     margin-top: 20px;
     font-weight: 700;
-    font-size: 18px;
+    font-size: 1.125rem;
     color: var(--white-500);
     background-color: var(--twitch);
     padding: 10px 20px;
     border-radius: 3px;
-    line-height: 29px;
+    line-height: 1.8125rem;
     text-transform: uppercase;
     cursor: pointer
 }
@@ -64440,8 +64440,8 @@ strong {
 
 .message__13e98 {
     font-weight: 500;
-    font-size: 1rem;
-    line-height: 1.25rem;
+    font-size: 16px;
+    line-height: 20px;
     white-space: nowrap;
     text-overflow: ellipsis;
     overflow: hidden
@@ -79062,7 +79062,9 @@ button.button__4f306.disabled_dc5630 {
 }
 
 .flipCardContainer__314ea:hover .partialFlipCard__89bb1 {
-    transform: rotatey(330deg)
+    --y-rotation: -30deg;
+    transform: rotatey(330deg);
+    transform: rotatey(var(--y-rotation))
 }
 
 .flipCardContainer__314ea:hover .partialFlipCard__89bb1.reducedMotion__90450 {
@@ -79070,11 +79072,16 @@ button.button__4f306.disabled_dc5630 {
 }
 
 .flipCardContainer__314ea:hover .ultraFlipCard_d88e63 {
-    transform: rotatey(150deg)
+    --y-rotation: -570deg;
+    transform: rotatey(150deg);
+    transform: rotatey(var(--y-rotation))
 }
 
 .flipCardContainer__314ea:hover .rotateCard_d3db33 {
-    transform: rotatex(200deg)rotatey(300deg)
+    --x-rotation: -520deg;
+    --y-rotation: -1140deg;
+    transform: rotatex(200deg)rotatey(300deg);
+    transform: rotatex(var(--x-rotation))rotatey(var(--y-rotation))
 }
 
 .flipCard_c19f9d {
@@ -149341,4 +149348,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=baee91d0c47404c94a6b.css.map*/
+/*# sourceMappingURL=54a5e79cfc8531f71646.css.map*/
