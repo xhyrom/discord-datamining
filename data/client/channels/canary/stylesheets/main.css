@@ -67170,8 +67170,8 @@ html .progress__4ef76 {
 
 .message__13e98 {
     font-weight: 500;
-    font-size: 1rem;
-    line-height: 1.25rem;
+    font-size: 16px;
+    line-height: 20px;
     white-space: nowrap;
     text-overflow: ellipsis;
     overflow: hidden
@@ -103746,8 +103746,8 @@ html.disable-forced-colors * {
 
 .bodyText__923f7 {
     color: var(--interactive-normal);
-    font-size: 16px;
-    line-height: 20px;
+    font-size: 1rem;
+    line-height: 1.25rem;
     font-weight: 500;
     margin-bottom: 16px
 }
@@ -103794,8 +103794,8 @@ html.disable-forced-colors * {
 }
 
 .trialCheckboxLabel__0297c {
-    font-size: 14px;
-    line-height: 18px
+    font-size: .875rem;
+    line-height: 1.125rem
 }
 
 .loader_acb69b {
@@ -116974,6 +116974,37 @@ input::-webkit-inner-spin-button {
     margin: 32px 0
 }
 
+.guildProductRoleIcon__3b6be {
+    display: flex;
+    position: relative;
+    align-items: center;
+    border-radius: 50px;
+    padding: 4px;
+    margin-left: 12px;
+    background-image: linear-gradient(to right, var(--custom-guild-shop-gradient-start), var(--custom-guild-shop-gradient-end));
+    color: var(--white-500);
+    overflow: hidden
+}
+
+.shine__93d91 {
+    animation-delay: .75s;
+    animation-duration: 2s;
+    animation-name: Shine__844ef;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    color: hsl(var(--white-500-hsl)/.1)
+}
+
+@keyframes Shine__844ef {
+    0% {
+        transform: translate3d(-75%, 0, 0)
+    }
+
+    to {
+        transform: translate3d(200%, 0, 0)
+    }
+}
+
 .emptyRoles__3a6f7 {
     color: var(--text-muted)
 }
@@ -117061,7 +117092,7 @@ input::-webkit-inner-spin-button {
 
 .lock_e79f93,
 .subscriptionRoleIcon_e50c21 {
-    margin-right: 4px;
+    margin-left: 8px;
     flex-shrink: 0;
     color: var(--text-muted)
 }
@@ -148855,7 +148886,9 @@ code {
     --custom-guild-shop-channel-row-border-gradient: linear-gradient(113deg, rgb(101, 145, 255), rgb(209, 80, 255));
     --custom-guild-shop-channel-row-glow: 0 0 4px rgba(189, 149, 255, 0.5);
     --custom-guild-shop-preview-pill-shadow-dark: -4px 5px #1d1d1d;
-    --custom-guild-shop-preview-pill-shadow-light: -4px 5px #d7dce8
+    --custom-guild-shop-preview-pill-shadow-light: -4px 5px #d7dce8;
+    --custom-guild-shop-gradient-start: #686bff;
+    --custom-guild-shop-gradient-end: #c356fd
 }
 
 :root {
@@ -149182,4 +149215,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=1dd8fe28315f3af0728e.css.map*/
+/*# sourceMappingURL=aee486fa9b378124b098.css.map*/
