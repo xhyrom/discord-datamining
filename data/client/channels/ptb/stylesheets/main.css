@@ -62275,22 +62275,6 @@ html .progress__4ef76 {
     }
 }
 
-.copyShopLinkButton__648e1 {
-    display: flex;
-    justify-content: center;
-    height: 28px;
-    min-width: 120px;
-    border-radius: var(--radius-xl);
-    padding: 2px 10px;
-    margin: 0 12px
-}
-
-.copyShopLinkButtonInner_fdaf65 {
-    display: flex;
-    gap: 8px;
-    align-items: center
-}
-
 @use postcss-pxtorem;
 
 .tagContainer_f397f9 {
@@ -67186,8 +67170,8 @@ html .progress__4ef76 {
 
 .message__13e98 {
     font-weight: 500;
-    font-size: 16px;
-    line-height: 20px;
+    font-size: 1rem;
+    line-height: 1.25rem;
     white-space: nowrap;
     text-overflow: ellipsis;
     overflow: hidden
@@ -149198,4 +149182,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=38f42d26c658f0de8112.css.map*/
+/*# sourceMappingURL=1dd8fe28315f3af0728e.css.map*/
