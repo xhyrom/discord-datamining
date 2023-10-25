@@ -4566,7 +4566,7 @@
     "url": "/channels/:param/explicit-media",
     "allowed_methods": [
       "OPTIONS",
-      "PUT"
+      "PATCH"
     ]
   },
   "CLYDE_PROFILES": {
