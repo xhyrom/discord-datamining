@@ -21675,8 +21675,6 @@
                     channel_list_layout_animations: "Enable experimental channel list layout animations",
                     message_preview_animations: "Enable message preview animations",
                     recent_channels_throttle: "Throttle recent channels reordering",
-                    disable_day_0_nux_staff: "Disable new onboarding flow and friend screens. Day 0 is ENABLED for staff accounts by default.",
-                    enable_day_0_nux_non_staff: "Enable new onboarding flow and friend screens for non-staff accounts.",
                     force_voice_panel: "Force new voice panel to be shown.",
                     enable_server_discovery: "Enable Server Discovery Search on mobile",
                     new_guild_header: "New guild header design",
@@ -48614,7 +48612,7 @@
                         var i;
                         let d = {
                                 environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                                build_number: "240540"
+                                build_number: "240554"
                             },
                             _ = o.default.getCurrentUser();
                         null != _ && (d.user_id = _.id, d.user_name = _.tag, null != _.email && (d.email = _.email));
@@ -51559,4 +51557,4 @@
         }
     }
 ]);
-//# sourceMappingURL=2a46a0361829fbc2fe5b.js.map
+//# sourceMappingURL=38e46c73936e0aa6f9d3.js.map

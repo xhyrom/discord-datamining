@@ -15773,6 +15773,8 @@
                 CLIPS_NITRO_EA_ANNOUNCEMENT_COACHMARK_CTA_SUBS: "Got it",
                 CLIPS_NITRO_EA_ANNOUNCEMENT_COACHMARK_CTA_NON_SUBS: "Get Nitro",
                 CLIPS_UNTITLED: "Untitled",
+                CLIPS_SETTINGS_OPT_OUT_OF_VOICE_RECORDING: "Allow my voice to be recorded in Clips",
+                CLIPS_SETTINGS_OPT_OUT_OF_VOICE_RECORDING_DESCRIPTION: "By turning on this setting, your voice may be included when someone in the same voice channel uses Clips.",
                 SOUND_INCOMING_RING_HALLOWEEN: "Halloween Incoming Ring",
                 CUSTOM_SOUNDS: "Custom Sounds",
                 ENABLE_PHONE_INTEGRATION: "Enable integration with the Phone app to experience this.",
@@ -17771,7 +17773,7 @@
                 L = E("782340");
             (0, r.setUpdateRules)(i.default), (0, I.default)(L.default, n.default, s.default), a.default.Emitter.injectBatchEmitChanges(o.unstable_batchedUpdates), a.default.PersistedStore.disableWrites = __OVERLAY__, a.default.initialize();
             let u = window.GLOBAL_ENV.RELEASE_CHANNEL;
-            new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(u, ", Build Number: ").concat("240540", ", Version Hash: ").concat("8824e5dd4e8083e2aa7e07e3185f9f559eedd7a6")), t.default.setTags({
+            new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(u, ", Build Number: ").concat("240554", ", Version Hash: ").concat("0b02a9566dd568022fa5e7005c45319f6a88efa8")), t.default.setTags({
                 appContext: l.CURRENT_APP_CONTEXT
             }), S.default.initBasic(), N.default.init(), T.FocusRingManager.init(), O.init(), (0, R.cleanupTempFiles)()
         },
@@ -20133,8 +20135,8 @@
 
             function o() {
                 var e;
-                let _ = parseInt((e = "240540", "240540"));
-                return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("240540")), _ = 0), _
+                let _ = parseInt((e = "240554", "240554"));
+                return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("240554")), _ = 0), _
             }
         },
         990629: function(e, _, E) {
@@ -29385,4 +29387,4 @@
         }
     }
 ]);
-//# sourceMappingURL=4c6f67b01e5d6003462c.js.map
+//# sourceMappingURL=773151666cf277f9dd3b.js.map
