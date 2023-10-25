@@ -20341,16 +20341,6 @@
                 userTag: "userTag__096da"
             }
         },
-        358802: function(e, t, o) {
-            "use strict";
-            e.exports = {
-                banner: "banner__2af6a",
-                bannerContainer: "bannerContainer__9bbeb",
-                giftIcon: "giftIcon_f26842",
-                textContainer: "textContainer_a1a9b7",
-                textHeader: "textHeader_c5dc8a"
-            }
-        },
         989754: function(e, t, o) {
             "use strict";
             e.exports = {
@@ -21575,6 +21565,16 @@
                 star: "star__862b5",
                 starLeft: "starLeft__9dd4b",
                 starRight: "starRight__91111"
+            }
+        },
+        101619: function(e, t, o) {
+            "use strict";
+            e.exports = {
+                banner: "banner__384a7",
+                bannerContainer: "bannerContainer__6d741",
+                giftIcon: "giftIcon__2d040",
+                textContainer: "textContainer_ede2f5",
+                textHeader: "textHeader__322a0"
             }
         },
         964537: function(e, t, o) {
