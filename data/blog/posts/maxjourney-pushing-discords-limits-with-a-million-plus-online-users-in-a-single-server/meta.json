@@ -1,0 +1,10 @@
+{
+  "id": "maxjourney-pushing-discords-limits-with-a-million-plus-online-users-in-a-single-server",
+  "title": "Maxjourney: Pushing Discord’s Limits with a Million+ Online Users in a Single Server",
+  "link": "https://discord.com/blog/maxjourney-pushing-discords-limits-with-a-million-plus-online-users-in-a-single-server",
+  "guid": "https://discord.com/blog/maxjourney-pushing-discords-limits-with-a-million-plus-online-users-in-a-single-server",
+  "description": "In this post, we’ll talk about some of the ways we’ve scaled individual Discord servers from tens of thousands of concurrent users to approaching two million concurrent users in the past few years.",
+  "pubDate": "Wed, 25 Oct 2023 00:00:00 GMT",
+  "media:content": "https://uploads-ssl.webflow.com/5f9072399b2640f14d6a2bf4/62a281f083081c68ebb94672_Discord%20HQ%20-%203.png",
+  "media:thumbnail": "https://uploads-ssl.webflow.com/5f9072399b2640f14d6a2bf4/62a281f083081c68ebb94672_Discord%20HQ%20-%203.png"
+}
