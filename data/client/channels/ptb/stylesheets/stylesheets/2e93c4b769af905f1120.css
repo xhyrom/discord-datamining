@@ -13297,7 +13297,7 @@ html.decorate-links .lowSaturationUnderline__95e71 {
 }
 
 .title__746ed {
-    font-size: 1.0625rem
+    font-size: 17px
 }
 
 .developerResources_fdd04d:hover {
@@ -13328,8 +13328,8 @@ html.decorate-links .lowSaturationUnderline__95e71 {
 }
 
 .backHeader__18afe {
-    font-size: 1.0625rem;
-    line-height: 1.5rem;
+    font-size: 17px;
+    line-height: 24px;
     color: var(--interactive-normal)
 }
 
@@ -59145,12 +59145,12 @@ strong {
 .streamerModeEnabledBtn__51c2f {
     margin-top: 20px;
     font-weight: 700;
-    font-size: 1.125rem;
+    font-size: 18px;
     color: var(--white-500);
     background-color: var(--twitch);
     padding: 10px 20px;
     border-radius: 3px;
-    line-height: 1.8125rem;
+    line-height: 29px;
     text-transform: uppercase;
     cursor: pointer
 }
@@ -149348,4 +149348,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=54a5e79cfc8531f71646.css.map*/
+/*# sourceMappingURL=2e93c4b769af905f1120.css.map*/
