@@ -2020,8 +2020,8 @@
                 return {
                     logsUploaded: new Date().toISOString(),
                     releaseChannel: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                    buildNumber: "240394",
-                    versionHash: "17c720ff841d143845c57d10c781a2bbb3496112"
+                    buildNumber: "240396",
+                    versionHash: "681c1c8f341b578bad5f5c459f9be7050cce7269"
                 }
             }
             n.r(t), n.d(t, {
@@ -2256,7 +2256,7 @@
                     dsn: "https://fa97a90475514c03a42f80cd36d147c4@sentry.io/140984",
                     autoSessionTracking: !1,
                     environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                    release: "discord_web-17c720ff841d143845c57d10c781a2bbb3496112",
+                    release: "discord_web-681c1c8f341b578bad5f5c459f9be7050cce7269",
                     beforeSend: e => {
                         var t, n;
                         return !(null != (t = e).exception && null != t.exception.values && t.exception.values.every(e => null == e.stacktrace || null != e.stacktrace.frames && 1 === e.stacktrace.frames.length) && "canary" !== window.GLOBAL_ENV.RELEASE_CHANNEL || r.some(e => window.navigator.appVersion.toLowerCase().indexOf(e) >= 0)) && !s() && !("Aborted" === (n = e).message || "cancel captcha" === n.message) && i() ? e : null
@@ -2274,7 +2274,7 @@
                     })],
                     ignoreErrors: ["EADDRINUSE", "BetterDiscord", "EnhancedDiscord", "Powercord", "RecipeWebview", "jQuery", "localStorage", "has already been declared", "Cannot call hover while not dragging.", "Cannot call beginDrag while dragging.", "getHostNode", "setupCSS", "on missing remote object", "ChunkLoadError", "Cannot find module 'discord_utils'", "Failed to setup Krisp module", "Error invoking remote method 'DISCORD_NATIVE_MODULES_INSTALL': Error: Module updater is not available!", "Non-Error promise rejection captured with keys:", "Request has been terminated", "Cannot resolve a Slate point from DOM point", "Failed to fetch", "no suitable image found", "ResizeObserver loop limit exceeded", "The play() request was interrupted", "could not play audio", "notosans-400-normalitalic"],
                     denyUrls: [/recaptcha/, /mobilediscord\.com/, /betterdiscord:\/\//]
-                }), a.setTag("buildNumber", (e = "240394", "240394")), a.setTag("builtAt", String("1698261486870"));
+                }), a.setTag("buildNumber", (e = "240396", "240396")), a.setTag("builtAt", String("1698261687619"));
                 let t = window.GLOBAL_ENV.SENTRY_TAGS;
                 if (null != t && "object" == typeof t)
                     for (let e in t) a.setTag(e, t[e]);
@@ -5378,4 +5378,4 @@
         }
     }
 ]);
-//# sourceMappingURL=870d5d72e395b384e7b8.js.map
+//# sourceMappingURL=92eb5f8a1994d9456bd1.js.map
