@@ -7,17 +7,19 @@
 </ul>
 <h1 id="h_01HDME17HJQ0D68ZWPQNHA9BXZ">Welcome to the Shop</h1>
 <p>From <strong>avatar decorations</strong> to <strong>profile effects</strong>, our new Shop has a variety of items you can buy and collect to customize your profile! Items purchased from the Shop are yours to keep and apply whenever you want. Now you can add your favorite styles to your profile for any occasion!  </p>
-<h3 id="h_01HDME17HJ955GFVGD3WMC5TWM">
-    <strong><span style="color: #cbc6c0;" data-darkreader-inline-color="">Nitro members can enjoy early access to the Shop. Stay tuned as we slowly roll out this feature. To learn more about Nitro, check out this </span></strong><a href="https://support.discord.com/hc/en-us/articles/115000435108-What-are-Nitro-Nitro-Basic-" target="_blank" rel="noopener noreferrer">article</a><strong><span style="color: #cbc6c0;" data-darkreader-inline-color="">.</span></strong>
-</h3>
+<h3 id="h_01HDME17HJ955GFVGD3WMC5TWM">Nitro members can enjoy early access to the Shop. Stay tuned as we slowly roll out this feature. To learn more about Nitro, check out this <a href="https://support.discord.com/hc/en-us/articles/115000435108-What-are-Nitro-Nitro-Basic-">article</a>.</h3>
 <p class="wysiwyg-text-align-center"><img src="https://support.discord.com/hc/article_attachments/18566301151255" alt="image2.png"></p>
 <h1 id="h_01HDME17HJE3D9N3DWY2QYGF07">What will I find in the Shop?</h1>
 <p>Once you enter the Shop, you will be able to preview and purchase available avatar decorations and profile effects! </p>
-<h3 id="h_01HDME17HJYPBA9MPCDCBZCHDH"><strong><span style="color: #cbc6c0;" data-darkreader-inline-color="">Selections available for purchase in the Shop will change periodically and may be available for a limited time. However, any purchased items are yours to keep and can be used at any time. </span></strong></h3>
+<h3 id="h_01HDME17HJYPBA9MPCDCBZCHDH">
+    <span style="color: #cbc6c0;" data-darkreader-inline-color="">Selections available for purchase in the Shop will change periodically and may be available for a limited time. However, any purchased items are yours to keep and can be used at any time. </span><strong><span style="color: #cbc6c0;" data-darkreader-inline-color=""><br></span></strong>
+</h3>
 <p class="wysiwyg-text-align-center"><img src="https://support.discord.com/hc/article_attachments/18566301157527" alt="image1.png"></p>
 <p>You can learn more about customizing your profile by heading over to our Custom Profiles article <a href="https://support.discord.com/hc/en-us/articles/4403147417623" target="_blank" rel="noopener noreferrer">here</a>. </p>
 <h1 id="h_01HDME17HJX40G92JC7V3Q0WD6">How do I find the Shop?</h1>
-<h3 id="h_01HDME17HJCNFNTNESAWMHDKNZ"><strong><span style="color: #cbc6c0;" data-darkreader-inline-color="">At this time, you can only access the Shop on the desktop app or your browser. </span></strong></h3>
+<h3 id="h_01HDMK2VVGDSBWVGTVF9X7HX07">
+    <span style="color: #cbc6c0;" data-darkreader-inline-color="">At this time, you can only access the Shop on the desktop app or your browser. </span><strong><span style="color: #cbc6c0;" data-darkreader-inline-color=""><br></span></strong>
+</h3>
 <p>Head over to the Shop to start collecting avatar decorations and profile effects! </p>
 <p>1. Navigate to your <strong>User Settings &gt; Profiles</strong>. </p>
 <p>2. Once there, you will see the banner to the Shop where you can select <strong>Go to Shop</strong>. You can also select <strong>Change Effect </strong>or <strong>Change Decoration </strong>and press the <strong>Shop </strong>icon.  </p>
