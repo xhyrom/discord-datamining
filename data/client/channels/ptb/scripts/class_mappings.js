@@ -48,13 +48,6 @@
                 sofortLogo: "sofortLogo__40894"
             }
         },
-        802157: function(e, t, o) {
-            "use strict";
-            e.exports = {
-                app: "app__00c92",
-                layers: "layers__12c9f"
-            }
-        },
         57521: function(e, t, o) {
             "use strict";
             e.exports = {
@@ -72,16 +65,6 @@
             e.exports = {
                 gamepadButtonContainer: "gamepadButtonContainer_a682a6",
                 gamepadButtonText: "gamepadButtonText__77d59"
-            }
-        },
-        792428: function(e, t, o) {
-            "use strict";
-            e.exports = {
-                animating: "animating__64b42",
-                baseLayer: "baseLayer__13b6b",
-                bg: "bg__7adbf",
-                layer: "layer_e552e0",
-                layers: "layers_a40797"
             }
         },
         584617: function(e, t, o) {
@@ -6019,6 +6002,23 @@
                 container: "container__1eafb"
             }
         },
+        285887: function(e, t, o) {
+            "use strict";
+            e.exports = {
+                app: "app_de4237",
+                layers: "layers_a23c37"
+            }
+        },
+        31801: function(e, t, o) {
+            "use strict";
+            e.exports = {
+                animating: "animating__27211",
+                baseLayer: "baseLayer__8fda3",
+                bg: "bg__12180",
+                layer: "layer__2efaa",
+                layers: "layers__1c917"
+            }
+        },
         580468: function(e, t, o) {
             "use strict";
             e.exports = {
@@ -6898,7 +6898,7 @@
                 notAppAsidePanel: "notAppAsidePanel__9d124"
             }
         },
-        201074: function(e, t, o) {
+        74860: function(e, t, o) {
             "use strict";
             e.exports = {
                 body: "body_c562e6 contentBase__34e4c",
