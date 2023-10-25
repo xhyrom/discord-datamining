@@ -23,7 +23,7 @@
     <li>Signals that provide relevant safety information on users, such as who may be engaging in unusual DM activity or are timed out</li>
 </ul>
 <h1 id="h_01HAD8XEZP095H4QXP1QAA600P">How does the Members page work?</h1>
-<h3 id="h_01HAD8XEZPDDZZM8H2GXR3X4SF"><span style="color: #434343;" data-darkreader-inline-color="">To utilize the Members page, you will need to be the owner of that server or have the following permissions for that server: administrator, manage server, ban members, timeout members, or kick members. </span></h3>
+<h3 id="h_01HAD8XEZPDDZZM8H2GXR3X4SF"><span style="color: #434343;" data-darkreader-inline-color="">To utilize the Members page, you will need to be the owner of that server or have the following permissions for that server: administrator, manage server, manage roles, manage nicknames, ban members, timeout members, or kick members. </span></h3>
 <p>If you meet either requirements, then you can head into the server of your choice and select the <strong>Members </strong>tab above the server’s channel list. This will load a page where you can view all server members within that specific server.</p>
 <p class="wysiwyg-text-align-center"><img src="https://support.discord.com/hc/article_attachments/17566474149911" alt="1.png"></p>
 <h3 id="docs-internal-guid-af88eee7-7fff-2736-e7d2-ada233e92486"><span style="color: #434343;" data-darkreader-inline-color="">Note: The Members page is currently only available on browser/desktop. </span></h3>
@@ -65,7 +65,7 @@
 <p id="docs-internal-guid-133f1c76-7fff-1f21-fbf5-c2194c47837a"><strong>Q: If a member has "Unknown" under Invite Code, then what does this mean?</strong></p>
 <p>A: This means that the member joined the server through Server Discovery, through a bot, or the member joined the server before June 21, 2023.</p>
 <p id="docs-internal-guid-4f6d035e-7fff-cb0e-2232-62dca65f1ecc"><strong>Q: Who can see the Members page?</strong></p>
-<p>A: Currently, the Members page is visible for the server’s owner and admins who have admin/manage server/kick/ban permissions.</p>
+<p>A: Currently, the Members page is visible for the server’s owner and admins who have admin/manage server/manage nicknames/manage roles/kick/ban permissions.</p>
 <p>Specific information like invite codes will require Manage Server permission.</p>
 <p><strong>Q: Who can see the Members page?</strong></p>
 <p>A: Currently, the Members page is visible for your team members who have admin/manage/kick/ban/timeout permissions.</p>
