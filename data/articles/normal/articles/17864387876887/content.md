@@ -50,12 +50,15 @@
 </ul>
 <h1 id="h_01HDECVHC3P8222V31MMSPCMWS"><strong>What is Fortnite?</strong></h1>
 <p><a href="https://www.fortnite.com/" target="_blank" rel="noopener noreferrer">Fortnite</a> is a massive 100-player face-off that combines looting, crafting, shootouts and chaos. This PVP experience developed by <a href="https://store.epicgames.com/" target="_blank" rel="noopener noreferrer">Epic Games</a> is a completely unpredictable competitive online experience that gets bigger and even wilder with every new season.</p>
-<h1 id="h_01HDECVHC3K4FCZX3B9PTKFYFW"><strong>How do I claim the Nitro Promo from my Fortnite account?</strong></h1>
+<h1 id="h_01HDHPZRFH0505HH0PGAMCGQEC"><strong>How do I claim the Nitro Promo from my Fortnite account?</strong></h1>
 <p>1. Create a Discord server or install the <a href="https://discord.com/oauth2/authorize?client_id=1113137365838467176&amp;permissions=268435456&amp;scope=bot%20applications.commands" target="_blank" rel="noopener noreferrer">Fortnite Leaderboard bot</a> to a server you already own.</p>
 <p>2. Link your Discord account to an existing Epic Games account (if you don’t already have an Epic Games account, you can register one <a href="https://www.epicgames.com/id/register" target="_blank" rel="noopener noreferrer">here</a>).</p>
 <p>3. Play 1 match of either Battle Royale or Zero Build (ranked or unranked).</p>
-<p>4. You’ll receive a Direct Message with the 1 month Nitro trial offer. Press on the link to redeem the reward through Discord and enter your payment information.</p>
-<p><strong>The unique promotion link will look like this:</strong> https://discord.com/billing/promotions/XXXXXXXXXXXXXXXX  </p>
+<p>4. In the server you have the Leaderboard bot added to, type /leaderboard to check your stats. After doing so, you should see a button that says <strong>Rewards</strong>, tap on it to check your progress towards rewards eligibility.</p>
+<p class="wysiwyg-text-align-center"><img src="https://support.discord.com/hc/article_attachments/18536041205143" alt="leaderboard.png"></p>
+<p> 5. Press on the link to redeem the reward through Discord by pressing on <strong>Claim Discord Nitro </strong>and enter your payment information to complete the trial redemption.</p>
+<p class="wysiwyg-text-align-center"><img src="https://support.discord.com/hc/article_attachments/18536041212823" alt="leaderboard_claim.png"></p>
+<p id="h_01HDECVHC3K4FCZX3B9PTKFYFW"><strong>The unique promotion link will look like this:</strong> https://discord.com/billing/promotions/XXXXXXXXXXXXXXXX  </p>
 <h1 id="h_01HDECVHC3B755QC40M05YP3PJ"><strong>How do I redeem the Nitro Trial on my Discord Account?</strong></h1>
 <p>Once you have claimed the promo link, you'll now need to officially redeem this promo link on your Discord account (or share this code with a friend). You must redeem this Nitro trial by <strong>November 16, 2023 (4:59PM PST).</strong></p>
 <h2 id="h_01HDECVHC37EM4P6Z9BCEZB48J"><strong>Eligibility for Redeeming the Nitro Trial</strong></h2>
