@@ -4000,11 +4000,7 @@
   },
   "APPLICATION_COMMAND_INDEX_CHANNEL": {
     "url": "/channels/:param/application-command-index",
-    "allowed_methods": [
-      "GET",
-      "HEAD",
-      "OPTIONS"
-    ]
+    "allowed_methods": null
   },
   "APPLICATION_COMMAND_INDEX_GUILD": {
     "url": "/guilds/:param/application-command-index",
