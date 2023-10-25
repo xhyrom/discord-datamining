@@ -46,7 +46,7 @@ export class Strings implements Module {
 
     const strings = getLangStrings(
       (await readFile(
-        join(this.baseDir, "channels", "canary", "scripts", "main.js")
+        join(this.baseDir, "channels", "canary", "scripts", "strings.js")
       )) ?? ""
     );
 

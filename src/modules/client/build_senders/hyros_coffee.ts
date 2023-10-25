@@ -40,6 +40,7 @@ export class HyrosCoffeeSender implements Sender {
       scriptFiles.classMappings,
       scriptFiles.mainScript,
       scriptFiles.vendor,
+      scriptFiles.strings,
     ].filter((script): script is File => script !== null);
 
     const embed = new EmbedBuilder()

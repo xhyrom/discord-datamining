@@ -31,6 +31,7 @@ export class Scripts implements Module {
     chunkLoader: File | null;
     classMappings: File | null;
     vendor: File | null;
+    strings: File | null;
     mainScript: File;
   };
   #build?: Build;
@@ -171,6 +172,13 @@ export class Scripts implements Module {
         beautify(await files.vendor.content(), "js")
       );
     }
+
+    if (files.strings) {
+      await writeFile(
+        join(this.baseDir, "strings.js"),
+        beautify(await files.strings.content(), "js")
+      );
+    }
   }
 
   async files() {
@@ -194,6 +202,7 @@ export class Scripts implements Module {
       classMappings: scripts?.[0] ?? null,
       chunkLoader: scripts?.[scripts.length - 1] ?? null,
       vendor: scripts?.[22] ?? null,
+      strings: scripts?.[scripts.length - 2] ?? null, // contains all strings
       mainScript: scripts?.[scripts.length - 6]!, // contains build info
     };
 
