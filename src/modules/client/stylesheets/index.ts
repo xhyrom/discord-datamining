@@ -96,7 +96,7 @@ export class Stylesheets implements Module {
     const res = await (await fetch(`${this.#channel.baseUrl}/login`)).text();
 
     const stylesheets = res
-      .match(/<link rel="stylesheet" href="\/assets\/[a-z0-9.]+\.css"[^>]+>/g)
+      .match(/<link href="\/assets\/[a-z0-9.]+\.css"[^>]+>/g)
       ?.map((s) => s.match(/href="[^"]+"/g)?.[0].slice(14, -1))
       ?.map((s) => new File(s!))!;
 

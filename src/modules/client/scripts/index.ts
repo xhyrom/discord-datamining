@@ -185,10 +185,16 @@ export class Scripts implements Module {
 
     this.#files = {
       scripts,
-      chunkLoader: scripts?.[0] ?? null,
-      classMappings: scripts.length > 2 ? scripts?.[1] ?? null : null,
-      vendor: scripts.length > 3 ? scripts?.[2] ?? null : null,
-      mainScript: scripts?.[scripts.length - 1]!,
+      // old:
+      //chunkLoader: scripts?.[0] ?? null,
+      //classMappings: scripts.length > 2 ? scripts?.[1] ?? null : null,
+      //vendor: scripts.length > 3 ? scripts?.[2] ?? null : null,
+      //mainScript: scripts?.[scripts.length - 1]!,
+      // EXPERIMENTING:
+      classMappings: scripts?.[0] ?? null,
+      chunkLoader: scripts?.[scripts.length - 1] ?? null,
+      vendor: scripts?.[22] ?? null,
+      mainScript: scripts?.[scripts.length - 6]!, // contains build info
     };
 
     return this.#files;
