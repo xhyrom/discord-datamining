@@ -27,12 +27,7 @@
     "executables": [
       {
         "os": "win32",
-        "name": "league of legends.exe",
-        "is_launcher": false
-      },
-      {
-        "os": "win32",
-        "name": "garenalolth/gamedata/apps/lolth/lolex.exe",
+        "name": "garenaloltw/gamedata/apps/loltw/lol.exe",
         "is_launcher": false
       },
       {
@@ -42,7 +37,12 @@
       },
       {
         "os": "win32",
-        "name": "garenaloltw/gamedata/apps/loltw/lol.exe",
+        "name": "league of legends.exe",
+        "is_launcher": false
+      },
+      {
+        "os": "win32",
+        "name": "garenalolth/gamedata/apps/lolth/lolex.exe",
         "is_launcher": false
       },
       {
@@ -156,17 +156,17 @@
       "free_period_starts_at": null,
       "free_period_ends_at": null,
       "client_platform_config": {
+        "ios": {
+          "label_type": 0,
+          "label_until": null,
+          "release_phase": "activities_team"
+        },
         "android": {
           "label_type": 0,
           "label_until": null,
           "release_phase": "activities_team"
         },
         "web": {
-          "label_type": 0,
-          "label_until": null,
-          "release_phase": "activities_team"
-        },
-        "ios": {
           "label_type": 0,
           "label_until": null,
           "release_phase": "activities_team"
@@ -210,7 +210,7 @@
       "free_period_starts_at": null,
       "free_period_ends_at": null,
       "client_platform_config": {
-        "ios": {
+        "web": {
           "label_type": 0,
           "label_until": null,
           "release_phase": "in_development"
@@ -220,7 +220,7 @@
           "label_until": null,
           "release_phase": "in_development"
         },
-        "web": {
+        "ios": {
           "label_type": 0,
           "label_until": null,
           "release_phase": "in_development"
@@ -281,7 +281,7 @@
           "release_phase": "global_launch"
         }
       },
-      "shelf_rank": 1,
+      "shelf_rank": 9,
       "has_csp_exception": false,
       "instance_mode": 0
     },
@@ -320,7 +320,7 @@
       "free_period_starts_at": "2023-05-15T16:30:00+00:00",
       "free_period_ends_at": "2023-06-16T07:00:00+00:00",
       "client_platform_config": {
-        "android": {
+        "web": {
           "label_type": 0,
           "label_until": null,
           "release_phase": "global_launch"
@@ -330,7 +330,7 @@
           "label_until": null,
           "release_phase": "global_launch"
         },
-        "web": {
+        "android": {
           "label_type": 0,
           "label_until": null,
           "release_phase": "global_launch"
@@ -380,18 +380,18 @@
           "label_until": "2023-07-13T12:00:00+00:00",
           "release_phase": "global_launch"
         },
-        "android": {
+        "ios": {
           "label_type": 1,
           "label_until": "2023-07-13T12:00:00+00:00",
           "release_phase": "global_launch"
         },
-        "ios": {
+        "android": {
           "label_type": 1,
           "label_until": "2023-07-13T12:00:00+00:00",
           "release_phase": "global_launch"
         }
       },
-      "shelf_rank": 5,
+      "shelf_rank": 4,
       "has_csp_exception": false,
       "instance_mode": 0
     },
@@ -428,7 +428,7 @@
       "free_period_starts_at": null,
       "free_period_ends_at": null,
       "client_platform_config": {
-        "web": {
+        "ios": {
           "label_type": 0,
           "label_until": null,
           "release_phase": "global_launch"
@@ -438,13 +438,13 @@
           "label_until": null,
           "release_phase": "global_launch"
         },
-        "ios": {
+        "web": {
           "label_type": 0,
           "label_until": null,
           "release_phase": "global_launch"
         }
       },
-      "shelf_rank": 6,
+      "shelf_rank": 5,
       "has_csp_exception": false,
       "instance_mode": 0
     },
@@ -483,7 +483,7 @@
       "free_period_starts_at": null,
       "free_period_ends_at": null,
       "client_platform_config": {
-        "android": {
+        "web": {
           "label_type": 0,
           "label_until": null,
           "release_phase": "global_launch"
@@ -493,7 +493,7 @@
           "label_until": null,
           "release_phase": "global_launch"
         },
-        "web": {
+        "android": {
           "label_type": 0,
           "label_until": null,
           "release_phase": "global_launch"
@@ -539,7 +539,7 @@
       "free_period_starts_at": null,
       "free_period_ends_at": null,
       "client_platform_config": {
-        "ios": {
+        "android": {
           "label_type": 0,
           "label_until": null,
           "release_phase": "global_launch"
@@ -549,13 +549,13 @@
           "label_until": null,
           "release_phase": "global_launch"
         },
-        "android": {
+        "ios": {
           "label_type": 0,
           "label_until": null,
           "release_phase": "global_launch"
         }
       },
-      "shelf_rank": 3,
+      "shelf_rank": 1,
       "has_csp_exception": false,
       "instance_mode": 0
     },
@@ -650,12 +650,12 @@
       "free_period_starts_at": null,
       "free_period_ends_at": null,
       "client_platform_config": {
-        "web": {
+        "ios": {
           "label_type": 0,
           "label_until": null,
           "release_phase": "global_launch"
         },
-        "ios": {
+        "web": {
           "label_type": 0,
           "label_until": null,
           "release_phase": "global_launch"
@@ -706,17 +706,17 @@
       "free_period_starts_at": null,
       "free_period_ends_at": null,
       "client_platform_config": {
-        "ios": {
-          "label_type": 0,
-          "label_until": null,
-          "release_phase": "global_launch"
-        },
         "android": {
           "label_type": 0,
           "label_until": null,
           "release_phase": "global_launch"
         },
         "web": {
+          "label_type": 0,
+          "label_until": null,
+          "release_phase": "global_launch"
+        },
+        "ios": {
           "label_type": 0,
           "label_until": null,
           "release_phase": "global_launch"
@@ -761,7 +761,7 @@
       "free_period_starts_at": null,
       "free_period_ends_at": null,
       "client_platform_config": {
-        "ios": {
+        "web": {
           "label_type": 0,
           "label_until": null,
           "release_phase": "global_launch"
@@ -771,13 +771,13 @@
           "label_until": null,
           "release_phase": "global_launch"
         },
-        "web": {
+        "ios": {
           "label_type": 0,
           "label_until": null,
           "release_phase": "global_launch"
         }
       },
-      "shelf_rank": 9,
+      "shelf_rank": 8,
       "has_csp_exception": false,
       "instance_mode": 0
     },
@@ -816,12 +816,12 @@
       "free_period_starts_at": null,
       "free_period_ends_at": null,
       "client_platform_config": {
-        "android": {
+        "ios": {
           "label_type": 0,
           "label_until": null,
           "release_phase": "global_launch"
         },
-        "ios": {
+        "android": {
           "label_type": 0,
           "label_until": null,
           "release_phase": "global_launch"
@@ -876,12 +876,12 @@
       "free_period_starts_at": null,
       "free_period_ends_at": null,
       "client_platform_config": {
-        "ios": {
+        "web": {
           "label_type": 0,
           "label_until": null,
           "release_phase": "global_launch"
         },
-        "web": {
+        "ios": {
           "label_type": 0,
           "label_until": null,
           "release_phase": "global_launch"
@@ -892,7 +892,7 @@
           "release_phase": "global_launch"
         }
       },
-      "shelf_rank": 8,
+      "shelf_rank": 7,
       "has_csp_exception": false,
       "instance_mode": 0
     },
@@ -932,17 +932,17 @@
       "free_period_starts_at": null,
       "free_period_ends_at": null,
       "client_platform_config": {
-        "android": {
-          "label_type": 0,
-          "label_until": null,
-          "release_phase": "global_launch"
-        },
         "ios": {
           "label_type": 0,
           "label_until": null,
           "release_phase": "global_launch"
         },
         "web": {
+          "label_type": 0,
+          "label_until": null,
+          "release_phase": "global_launch"
+        },
+        "android": {
           "label_type": 0,
           "label_until": null,
           "release_phase": "global_launch"
@@ -987,11 +987,6 @@
       "free_period_starts_at": null,
       "free_period_ends_at": null,
       "client_platform_config": {
-        "web": {
-          "label_type": 0,
-          "label_until": null,
-          "release_phase": "global_launch"
-        },
         "android": {
           "label_type": 0,
           "label_until": null,
@@ -1001,9 +996,14 @@
           "label_type": 0,
           "label_until": null,
           "release_phase": "global_launch"
+        },
+        "web": {
+          "label_type": 0,
+          "label_until": null,
+          "release_phase": "global_launch"
         }
       },
-      "shelf_rank": 4,
+      "shelf_rank": 3,
       "has_csp_exception": false,
       "instance_mode": 0
     },
@@ -1023,8 +1023,8 @@
     "hook": true,
     "bot_public": false,
     "bot_require_code_grant": false,
-    "terms_of_service_url": "https://mojiworks.com/pages/privacy",
-    "privacy_policy_url": "https://mojiworks.com/pages/privacy",
+    "terms_of_service_url": "https://mojiworks.com/privacy-policy",
+    "privacy_policy_url": "https://mojiworks.com/privacy-policy",
     "verify_key": "65cadf28285c80d8caf20499091260d3b1b01f538d6be3585f67e1b532688b0d",
     "flags": 131080,
     "max_participants": 15,
@@ -1042,17 +1042,17 @@
       "free_period_starts_at": null,
       "free_period_ends_at": null,
       "client_platform_config": {
+        "ios": {
+          "label_type": 1,
+          "label_until": "2023-10-13T01:00:00+00:00",
+          "release_phase": "global_launch"
+        },
         "android": {
           "label_type": 1,
           "label_until": "2023-10-13T01:00:00+00:00",
           "release_phase": "global_launch"
         },
         "web": {
-          "label_type": 1,
-          "label_until": "2023-10-13T01:00:00+00:00",
-          "release_phase": "global_launch"
-        },
-        "ios": {
           "label_type": 1,
           "label_until": "2023-10-13T01:00:00+00:00",
           "release_phase": "global_launch"
@@ -1097,11 +1097,6 @@
       "free_period_starts_at": null,
       "free_period_ends_at": null,
       "client_platform_config": {
-        "web": {
-          "label_type": 0,
-          "label_until": null,
-          "release_phase": "global_launch"
-        },
         "android": {
           "label_type": 0,
           "label_until": null,
@@ -1111,15 +1106,76 @@
           "label_type": 0,
           "label_until": null,
           "release_phase": "global_launch"
+        },
+        "web": {
+          "label_type": 0,
+          "label_until": null,
+          "release_phase": "global_launch"
         }
       },
-      "shelf_rank": 7,
+      "shelf_rank": 6,
       "has_csp_exception": false,
       "instance_mode": 0
     },
     "tags": [
       "Arcade",
       "Mini golf"
+    ]
+  },
+  {
+    "id": "1011683823555199066",
+    "name": "Krunker Strike FRVR",
+    "icon": "cdc044d1552ae938203583a2672a34b3",
+    "description": "Enter the Krunker Strike FRVR universe and compete in a cross-platform shooter in REAL-TIME MULTIPLAYER EXPERIENCE with a wide range of arsenal across a pool of scenic locations.",
+    "summary": "",
+    "type": null,
+    "cover_image": "cdc044d1552ae938203583a2672a34b3",
+    "hook": true,
+    "bot_public": false,
+    "bot_require_code_grant": false,
+    "terms_of_service_url": "https://frvr.com/legal/krunker#TermsofService",
+    "privacy_policy_url": "https://frvr.com/legal/krunker#PrivacyPolicy",
+    "verify_key": "75e97499e54bb5489bd7e217e95cf3061fde7731a7c6b18257f827abaad3d8bf",
+    "flags": 131080,
+    "max_participants": 12,
+    "embedded_activity_config": {
+      "activity_preview_video_asset_id": "1113838534000922665",
+      "supported_platforms": [
+        "web",
+        "ios",
+        "android"
+      ],
+      "default_orientation_lock_state": 3,
+      "tablet_default_orientation_lock_state": 3,
+      "requires_age_gate": false,
+      "premium_tier_requirement": null,
+      "free_period_starts_at": null,
+      "free_period_ends_at": null,
+      "client_platform_config": {
+        "ios": {
+          "label_type": 0,
+          "label_until": null,
+          "release_phase": "global_launch"
+        },
+        "android": {
+          "label_type": 0,
+          "label_until": null,
+          "release_phase": "global_launch"
+        },
+        "web": {
+          "label_type": 0,
+          "label_until": null,
+          "release_phase": "global_launch"
+        }
+      },
+      "shelf_rank": 19,
+      "has_csp_exception": false,
+      "instance_mode": 0
+    },
+    "tags": [
+      "Arcade",
+      "FPS",
+      "Shooter"
     ]
   },
   {
@@ -1217,8 +1273,8 @@
     "privacy_policy_url": "https://realms.today/privacy-policy",
     "install_params": {
       "scopes": [
-        "bot",
-        "applications.commands"
+        "applications.commands",
+        "bot"
       ],
       "permissions": "2147483648"
     },
@@ -1269,8 +1325,8 @@
     "privacy_policy_url": "https://www.deviantart.com/about/policy/privacy/",
     "install_params": {
       "scopes": [
-        "bot",
-        "applications.commands"
+        "applications.commands",
+        "bot"
       ],
       "permissions": "2415921154"
     },
