@@ -64517,7 +64517,8 @@ strong {
     justify-content: center;
     gap: 16px;
     min-height: 300px;
-    padding: 36px
+    padding: 36px;
+    width: 100%
 }
 
 .searchContainer_bffd9f {
@@ -149368,4 +149369,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=326d1f06e10dee02d5c9.css.map*/
+/*# sourceMappingURL=539e46a67222ef5613b8.css.map*/
