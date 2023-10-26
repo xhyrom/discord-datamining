@@ -20,6 +20,7 @@ import type { PushResult } from "simple-git";
 import type { Diff } from "../.";
 import { HyrosCoffeeSender } from "./hyros_coffee.ts";
 import { WumpusCentralSender } from "./wumpus_central.ts";
+import { DiscordInsidersSender } from "./discord_insiders.ts";
 
 export interface Sender {
   send(diff: Diff, result: PushResult): Promise<void>;
@@ -27,5 +28,6 @@ export interface Sender {
 
 export const send = async (diff: Diff, result: PushResult) => {
   await new HyrosCoffeeSender().send(diff, result);
+  await new DiscordInsidersSender().send(diff, result);
   await new WumpusCentralSender().send(diff, result);
 };

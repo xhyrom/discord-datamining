@@ -71,7 +71,10 @@ export class Strings implements Module {
 
     const comment = await postToGithub(result?.update?.hash.to, diff);
     await postToDiscord(
-      getWebhookFromEnv("DISCORD_WEBHOOK_STRINGS"),
+      [
+        ...getWebhookFromEnv("DISCORD_WEBHOOK_STRINGS"),
+        ...getWebhookFromEnv("DISCORDINSIDERS_DISCORD_WEBHOOK_STRINGS"),
+      ],
       result?.update?.hash.to,
       {
         content: `<@&1105589256996524042>\n${

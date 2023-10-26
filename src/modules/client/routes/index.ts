@@ -57,7 +57,6 @@ export class Routes implements Module {
       return;
     }
 
-
     await writeFile(
       join(this.baseDir, "routes.json"),
       JSON.stringify(routes, null, 2)
@@ -86,7 +85,10 @@ export class Routes implements Module {
 
     const comment = await postToGithub(result?.update?.hash.to, diff);
     await postToDiscord(
-      getWebhookFromEnv("DISCORD_WEBHOOK_ROUTES"),
+      [
+        ...getWebhookFromEnv("DISCORD_WEBHOOK_ROUTES"),
+        ...getWebhookFromEnv("DISCORDINSIDERS_DISCORD_WEBHOOK_ROUTES"),
+      ],
       result?.update?.hash.to,
       {
         content: `<@&1115349386663305217>\n${
@@ -97,7 +99,9 @@ export class Routes implements Module {
     );
   }
 
-  private async routes(oldRoutes: Record<string, Route>): Promise<Record<string, Route> | null> {
+  private async routes(
+    oldRoutes: Record<string, Route>
+  ): Promise<Record<string, Route> | null> {
     const routes = await fetch("https://api.distools.xhyrom.dev/v2/routes");
     if (!routes.ok) {
       return null;

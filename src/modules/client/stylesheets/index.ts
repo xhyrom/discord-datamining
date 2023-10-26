@@ -80,7 +80,10 @@ export class Stylesheets implements Module {
     const desc = `\`\`\`diff\n${currentCssFile.patch}\n\`\`\``;
 
     await postToDiscord(
-      getWebhookFromEnv("DISCORD_WEBHOOK_STYLESHEETS"),
+      [
+        ...getWebhookFromEnv("DISCORD_WEBHOOK_STYLESHEETS"),
+        ...getWebhookFromEnv("DISCORDINSIDERS_DISCORD_WEBHOOK_STYLESHEETS"),
+      ],
       result.update?.hash.to,
       {
         content: `<@&1105847524662706226>\n${

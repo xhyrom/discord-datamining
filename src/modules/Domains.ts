@@ -90,7 +90,10 @@ export class Domains implements Module {
 
       const comment = await postToGithub(result?.update?.hash.to, diff);
       await postToDiscord(
-        getWebhookFromEnv("DISCORD_WEBHOOK_MISCELLANEOUS"),
+        [
+          ...getWebhookFromEnv("DISCORD_WEBHOOK_MISCELLANEOUS"),
+          ...getWebhookFromEnv("DISCORDINSIDERS_DISCORD_WEBHOOK_MISCELLANEOUS"),
+        ],
         result?.update?.hash.to,
         {
           content: `<@&1112738631615008818>\n${
