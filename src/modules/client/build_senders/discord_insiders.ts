@@ -102,7 +102,6 @@ export class DiscordInsidersSender implements Sender {
       getWebhookFromEnv("DISCORDINSIDERS_DISCORD_WEBHOOK_BUILDS"),
       result?.update?.hash.to,
       {
-        content: "<@&1117194731328393396>",
         embeds: [embed.toJSON()],
       }
     );
