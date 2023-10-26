@@ -42615,6 +42615,11 @@ html .progress__4ef76 {
     border-radius: var(--radius-md)
 }
 
+.emoji__27dab {
+    width: 30%;
+    height: 30%
+}
+
 .mediaMissing__2a6d1 {
     width: 100%;
     height: 100%;
@@ -42670,6 +42675,9 @@ html .progress__4ef76 {
 }
 
 .mediaContainer__32ff8 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     height: 42px;
     width: 42px
 }
@@ -149349,4 +149357,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=ca35347448f7163d1c29.css.map*/
+/*# sourceMappingURL=6eafd2e8db255ad494a0.css.map*/
