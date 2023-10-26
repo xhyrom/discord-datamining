@@ -1,0 +1,21 @@
+{
+  "data": {
+    "kind": "user",
+    "id": "2023-08_friendfinderincentivizedexistingusers",
+    "label": "Friend Finder Incentivized Invites for Existing Users",
+    "description": [
+      "Not Eligible",
+      "Control Bucket",
+      "Treatment 1: Enable Incentivized Invites"
+    ],
+    "hash": 553522630,
+    "buckets": [
+      -1,
+      0,
+      1
+    ],
+    "config_keys": [
+      "enabled"
+    ]
+  }
+}

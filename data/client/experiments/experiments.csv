@@ -143,6 +143,8 @@ id,hash,label
 2023-03_client_themes_16thru21,1212874525,Client Themes New Themes
 2023-03_clyde_ai,4083096281,ClydeAI
 2023-03_free_discord_stickers,887694445,Free Default Stickers
+2023-03_friend_finder,2937064747,Friend Finder User Experiment
+2023-03_friend_finder_employees,2030928172,Friend Finder Employees User Experiment
 2023-03_guild_media_channel,3890564237,Media Channel
 2023-03_home_deprecation,280214844,Home Deprecation
 2023-03_improved_message_markdown,1859132618,Improved Message Markdown 
@@ -211,6 +213,7 @@ id,hash,label
 2023-06_clyde_ai_channel_based_personality,3143066071,Channel based Clyde personalities
 2023-06_clyde_ai_gdm,1195502096,Clyde in DMs/GDMs
 2023-06_custom_call_sounds,3039064495,Custom Call Sounds
+2023-06_guild_contact_invite_imessage_overlay,631519303,Friend Finder guild contact invite imessage overlay
 2023-06_h265_macos,4148889709,Test how h265 works on macos
 2023-06_inventory_guild_setting,3883768363,Inventory Guild Settings Experiment
 2023-06_mobile_redesign_curry_existing_users,4015496517,Tabs V2 - Curry Existing Users
@@ -252,6 +255,11 @@ id,hash,label
 2023-08_decay_old_unreads,3052834880,Decay Unreads
 2023-08_explicit_media_redaction,3220737601,Explicit Media Redaction
 2023-08_explicit_media_redaction_teen,438549105,Explicit Media Redaction for Teens
+2023-08_friend_finder_contact_sync_landing_page,3704927451,Contact Sync landing page rework with friend finder.
+2023-08_friend_finder_incentivized_west_virginia,3011578501,Friend Finder Incentivized Invites for West Virginia
+2023-08_friend_finder_pymk,3412409298,Friend Finder People You May Know
+2023-08_friendfinderincentivizedexistingusers,553522630,Friend Finder Incentivized Invites for Existing Users
+2023-08_friendfinderincentivizednewusers,3308436081,Friend Finder Incentivized Invites for New Users
 2023-08_full_band_krisp_android_,2791827263,Let us control if full band is enabled on Android
 2023-08_guild_alert_mode_friend_server,2225390567,Guild Alert Mode (friend servers only)
 2023-08_guild_member_bulk_ban_experiment,2119968730,Bulk Banning Guild Members Experiment
@@ -330,6 +338,8 @@ id,hash,label
 2023-10_dcf_holdout,2009146437,DCF Holdout
 2023-10_emoji_captions,3610590624,Emoji Captions Experiment
 2023-10_enable_stateful_animated_icons,3353189507,Stateful animated icons
+2023-10_friend_finder_redesign,2064761972,Friend Finder Redesign User Experiment
+2023-10_friend_finder_virginia,2536084621,Friend Finder User Experiment for Virginia
 2023-10_halloween_2023,3705895930,Halloween assets 2023
 2023-10_mobile_redesign_one_percent_existing_users,1541876684,Tabs V2 - One Percent - Existing Users
 2023-10_mobile_redesign_one_percent_new_users,3475360205,Tabs V2 - One Percent - New Users

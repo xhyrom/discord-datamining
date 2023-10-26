@@ -1,0 +1,21 @@
+{
+  "data": {
+    "kind": "user",
+    "id": "2023-08_friend_finder_contact_sync_landing_page",
+    "label": "Contact Sync landing page rework with friend finder.",
+    "description": [
+      "Not Eligible",
+      "Control Bucket",
+      "Treatment 1: Enable contact sync landing page that has "
+    ],
+    "hash": 3704927451,
+    "buckets": [
+      -1,
+      0,
+      1
+    ],
+    "config_keys": [
+      "enabled"
+    ]
+  }
+}

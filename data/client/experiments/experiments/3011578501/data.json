@@ -1,0 +1,21 @@
+{
+  "data": {
+    "kind": "user",
+    "id": "2023-08_friend_finder_incentivized_west_virginia",
+    "label": "Friend Finder Incentivized Invites for West Virginia",
+    "description": [
+      "Not Eligible",
+      "Control Bucket",
+      "Treatment 1: Enable Incentivized Invites"
+    ],
+    "hash": 3011578501,
+    "buckets": [
+      -1,
+      0,
+      1
+    ],
+    "config_keys": [
+      "enabled"
+    ]
+  }
+}

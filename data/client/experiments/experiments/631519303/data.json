@@ -1,0 +1,21 @@
+{
+  "data": {
+    "kind": "user",
+    "id": "2023-06_guild_contact_invite_imessage_overlay",
+    "label": "Friend Finder guild contact invite imessage overlay",
+    "description": [
+      "Not Eligible",
+      "Control Bucket",
+      "Treatment 1: Enable iMessage Overlay"
+    ],
+    "hash": 631519303,
+    "buckets": [
+      -1,
+      0,
+      1
+    ],
+    "config_keys": [
+      "enabled"
+    ]
+  }
+}
