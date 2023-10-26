@@ -1140,6 +1140,7 @@
                 actionsProfileV2: "actionsProfileV2__1c710",
                 actionsStreamPreview: "actionsStreamPreview__244ff",
                 actionsUserPopout: "actionsUserPopout__000f8",
+                actionsUserPopoutV2: "actionsUserPopoutV2__025d9",
                 actionsVoiceChannel: "actionsVoiceChannel__1097b",
                 cannotLaunchImage: "cannotLaunchImage_a09448 errorImage__02a3f",
                 errorImage: "errorImage__02a3f"
@@ -24422,6 +24423,7 @@
                 applicationInstallButtonContent: "applicationInstallButtonContent__2a12f",
                 applicationInstallButtonText: "applicationInstallButtonText_fac811",
                 botUpgradeButtonContent: "botUpgradeButtonContent_d4c57c",
+                button: "button__5e6fe",
                 buttonsContainer: "buttonsContainer__241b0",
                 launchIcon: "launchIcon__94109"
             }

@@ -4142,7 +4142,7 @@
             "use strict";
             l.r(t), l.d(t, {
                 default: function() {
-                    return S
+                    return A
                 }
             });
             var n = l("920040");
@@ -4156,32 +4156,34 @@
                 d = l("252063"),
                 c = l("42203"),
                 f = l("18494"),
-                m = l("758710"),
-                E = l("306160"),
-                p = l("253981"),
-                T = l("613676"),
-                h = l("49111"),
-                _ = l("782340"),
-                I = l("790287");
+                m = l("191814"),
+                E = l("758710"),
+                p = l("351825"),
+                T = l("306160"),
+                h = l("253981"),
+                _ = l("613676"),
+                I = l("49111"),
+                S = l("782340"),
+                g = l("790287");
 
-            function S(e) {
+            function A(e) {
                 var t;
                 let {
                     application: l,
                     className: a
-                } = e, S = c.default.getChannel(f.default.getChannelId()), {
-                    appsInGDMEnabled: g,
-                    availableApplications: A
+                } = e, A = c.default.getChannel(f.default.getChannelId()), {
+                    appsInGDMEnabled: v,
+                    availableApplications: C
                 } = (0, d.usePrivateChannelIntegrationState)({
-                    channelId: null !== (t = null == S ? void 0 : S.id) && void 0 !== t ? t : ""
+                    channelId: null !== (t = null == A ? void 0 : A.id) && void 0 !== t ? t : ""
                 });
-                if (null == l || !(0, T.canInstallApplication)(l.id, l.customInstallUrl, l.installParams)) return null;
-                let v = g && null != A.find(e => e.id === (null == l ? void 0 : l.id));
+                if (null == l || !(0, _.canInstallApplication)(l.id, l.customInstallUrl, l.installParams)) return null;
+                let N = v && null != C.find(e => e.id === (null == l ? void 0 : l.id));
                 return (0, n.jsx)(i.Button, {
                     color: i.Button.Colors.PRIMARY,
                     look: i.Button.Looks.FILLED,
                     size: i.Button.Sizes.SMALL,
-                    onContextMenu: E.SUPPORTS_COPY ? e => {
+                    onContextMenu: T.SUPPORTS_COPY ? e => {
                         var t, a;
                         let s = (0, u.getApplicationInstallURL)({
                             id: l.id,
@@ -4191,38 +4193,44 @@
                         (0, r.openContextMenu)(e, e => (0, n.jsx)(i.Menu, {
                             navId: "component-button",
                             onClose: r.closeContextMenu,
-                            "aria-label": _.default.Messages.APPLICATION_ADD_TO_SERVER_ACTIONS,
+                            "aria-label": S.default.Messages.APPLICATION_ADD_TO_SERVER_ACTIONS,
                             onSelect: void 0,
                             ...e,
                             children: (0, n.jsx)(i.MenuGroup, {
                                 children: (0, n.jsx)(i.MenuItem, {
                                     id: "copy",
-                                    label: _.default.Messages.APPLICATION_ADD_TO_SERVER_ACTIONS_COPY,
-                                    action: () => (0, E.copy)(s)
+                                    label: S.default.Messages.APPLICATION_ADD_TO_SERVER_ACTIONS_COPY,
+                                    action: () => (0, T.copy)(s)
                                 })
                             })
                         }))
                     } : void 0,
                     onClick: () => {
-                        v ? (0, o.openOAuth2Modal)({
+                        N ? (0, o.openOAuth2Modal)({
                             clientId: l.id,
-                            scopes: [h.OAuth2Scopes.APPLICATIONS_COMMANDS],
-                            channelId: S.id,
+                            scopes: [I.OAuth2Scopes.APPLICATIONS_COMMANDS],
+                            channelId: A.id,
                             disableGuildSelect: !0
-                        }) : (0, T.installApplication)({
+                        }) : (0, _.installApplication)({
                             applicationId: l.id,
                             customInstallUrl: l.customInstallUrl,
                             installParams: l.installParams
                         })
                     },
-                    className: s(I.applicationInstallButton, a),
+                    className: s(g.applicationInstallButton, a),
                     children: (0, n.jsxs)("div", {
-                        className: I.applicationInstallButtonContent,
-                        children: [(0, n.jsx)("span", {
-                            className: I.applicationInstallButtonText,
-                            children: v ? _.default.Messages.ADD : _.default.Messages.APPLICATION_ADD_TO_SERVER
-                        }), null == l.customInstallUrl || p.default.isDiscordUrl(l.customInstallUrl) ? null : (0, n.jsx)(m.default, {
-                            className: I.launchIcon,
+                        className: g.applicationInstallButtonContent,
+                        children: [(0, n.jsx)(p.default, {
+                            width: 16,
+                            height: 16
+                        }), (0, n.jsx)(m.default, {
+                            size: 4,
+                            horizontal: !0
+                        }), (0, n.jsx)("span", {
+                            className: g.applicationInstallButtonText,
+                            children: N ? S.default.Messages.ADD : S.default.Messages.APPLICATION_ADD_BUTTON
+                        }), null == l.customInstallUrl || h.default.isDiscordUrl(l.customInstallUrl) ? null : (0, n.jsx)(E.default, {
+                            className: g.launchIcon,
                             width: 16,
                             height: 16
                         })]
@@ -5194,14 +5202,16 @@
                     children: (0, n.jsxs)("div", {
                         className: h.buttonsContainer,
                         children: [(0, n.jsx)(m.default, {
-                            application: _
+                            application: _,
+                            className: h.button
                         }), S && (0, n.jsx)(i.default, {
                             onClick: v,
+                            className: h.button,
                             children: (0, n.jsxs)("div", {
                                 className: h.botUpgradeButtonContent,
                                 children: [(0, n.jsx)(o.default, {
-                                    height: 16,
-                                    width: 16
+                                    width: 16,
+                                    height: 16
                                 }), (0, n.jsx)(u.default, {
                                     size: 4,
                                     horizontal: !0
@@ -7438,4 +7448,4 @@
         }
     }
 ]);
-//# sourceMappingURL=f95026ecaa4c96daa665.js.map
+//# sourceMappingURL=2f64583310103ffccb34.js.map
