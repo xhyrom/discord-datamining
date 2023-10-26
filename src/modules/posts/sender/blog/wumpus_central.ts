@@ -103,7 +103,7 @@ export class WumpusCentralSender implements Sender<Post> {
       .setTitle(`${action} Blogpost`)
       .addFields(fields);
 
-    if (post["media:thumbnail"]) embed.setThumbnail(post["media:thumbnail"]);
+    if (post["media:thumbnail"]) embed.setImage(post["media:thumbnail"]);
 
     return embed;
   }
