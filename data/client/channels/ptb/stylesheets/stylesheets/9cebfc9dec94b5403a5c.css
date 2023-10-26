@@ -22636,7 +22636,10 @@ html.decorate-links .lowSaturationUnderline__95e71 {
 
 .applicationInstallButtonContent__99c0c {
     display: flex;
-    flex-direction: row
+    flex-direction: row;
+    flex: 1;
+    min-width: -moz-max-content;
+    min-width: max-content
 }
 
 .applicationInstallButtonText__87545 {
@@ -22650,10 +22653,15 @@ html.decorate-links .lowSaturationUnderline__95e71 {
 }
 
 .buttonsContainer__241b0 {
-    display: grid;
-    grid-gap: 6px;
-    gap: 6px;
-    grid-template-columns: repeat(auto-fit, minmax(0, 1fr))
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px
+}
+
+.button__5e6fe {
+    flex: 1;
+    min-width: -moz-max-content;
+    min-width: max-content
 }
 
 .applicationInstallButtonContent__2a12f {
@@ -149360,4 +149368,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=3b5b45385a173a03d967.css.map*/
+/*# sourceMappingURL=9cebfc9dec94b5403a5c.css.map*/
