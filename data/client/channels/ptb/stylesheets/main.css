@@ -60323,8 +60323,8 @@ strong {
 }
 
 .memberCount_d3ce07 {
-    font-size: .75rem;
-    line-height: 1rem;
+    font-size: 12px;
+    line-height: 16px;
     display: flex;
     align-items: center
 }
@@ -64440,8 +64440,8 @@ strong {
 
 .message__13e98 {
     font-weight: 500;
-    font-size: 16px;
-    line-height: 20px;
+    font-size: 1rem;
+    line-height: 1.25rem;
     white-space: nowrap;
     text-overflow: ellipsis;
     overflow: hidden
@@ -149349,4 +149349,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=691b6a4a1142e3e50105.css.map*/
+/*# sourceMappingURL=8e2a553a749c2670a169.css.map*/
