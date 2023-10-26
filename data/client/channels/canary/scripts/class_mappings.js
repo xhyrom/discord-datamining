@@ -20055,6 +20055,7 @@
                 answer: "answer_be6c2e",
                 answersContainer: "answersContainer_fd091b",
                 didSelfVote: "didSelfVote__6dd05",
+                emoji: "emoji__27dab",
                 hasVoted: "hasVoted__13743",
                 media: "media_c99808",
                 mediaMissing: "mediaMissing__2a6d1",
