@@ -21157,21 +21157,29 @@
                 CLYDE_AI_MENTION_COLOR: function() {
                     return l
                 },
+                CLYDE_PERSONALITY_MAX_LENGTH: function() {
+                    return o
+                },
+                CLYDE_PERSONALITY_FEEDBACK_URL: function() {
+                    return u
+                },
                 ClydeFeedbackReasons: function() {
                     return r
                 },
                 getClydeFeedbackReasons: function() {
-                    return o
+                    return c
                 },
                 randomClydeThanks: function() {
-                    return u
+                    return d
                 }
             });
             var i, r, s = n("782340");
             let a = "1081004946872352958",
-                l = 3000177;
+                l = 3000177,
+                o = 1e3,
+                u = "https://forms.gle/T12GPi33Pt5ocg89A";
 
-            function o() {
+            function c() {
                 return [{
                     value: r.INACCURATE,
                     label: s.default.Messages.CLYDE_FEEDBACK_OPTION_INACCURATE
@@ -21190,7 +21198,7 @@
                 }]
             }
 
-            function u() {
+            function d() {
                 let e = [s.default.Messages.CLYDE_USER_RATING_THANKS_1, s.default.Messages.CLYDE_USER_RATING_THANKS_2, s.default.Messages.CLYDE_USER_RATING_THANKS_3, s.default.Messages.CLYDE_USER_RATING_THANKS_4, s.default.Messages.CLYDE_USER_RATING_THANKS_5, s.default.Messages.CLYDE_USER_RATING_THANKS_6, s.default.Messages.CLYDE_USER_RATING_THANKS_7, s.default.Messages.CLYDE_USER_RATING_THANKS_8, s.default.Messages.CLYDE_USER_RATING_THANKS_9, s.default.Messages.CLYDE_USER_RATING_THANKS_10];
                 return e[Math.floor(Math.random() * e.length)]
             }(i = r || (r = {})).INACCURATE = "INACCURATE", i.HARMFUL = "HARMFUL", i.NOT_HELPFUL = "NOT_HELPFUL", i.INAPPROPRIATE = "INAPPROPRIATE", i.OTHER = "OTHER"
@@ -48609,7 +48617,7 @@
                         var i;
                         let d = {
                                 environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                                build_number: "240736"
+                                build_number: "240759"
                             },
                             _ = o.default.getCurrentUser();
                         null != _ && (d.user_id = _.id, d.user_name = _.tag, null != _.email && (d.email = _.email));
@@ -51562,4 +51570,4 @@
         }
     }
 ]);
-//# sourceMappingURL=f9dd738dc828abbe45f3.js.map
+//# sourceMappingURL=e327580e0d3d65f2c53f.js.map

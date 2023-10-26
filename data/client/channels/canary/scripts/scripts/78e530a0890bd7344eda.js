@@ -171,8 +171,8 @@
                 CHARACTER_COUNT_AT_LIMIT: "Message is at max length",
                 CHARACTER_COUNT_CLOSE_TO_LIMIT: "{count} characters remaining",
                 CHARACTER_COUNT_OVER_LIMIT: "Message is too long",
-                CHANNEL_SETTINGS_SUMMARIES_TOGGLE: "Summaries",
-                CHANNEL_SETTINGS_SUMMARIES_TOGGLE_DESCRIPTION: "Enable Summaries for this channel. The Summaries feature uses OpenAI technology to quickly surface topics in any text channel, get a conversation preview and the number of messages in a specific topic, and indicate who is in the discussion. [Learn More]({helpdeskArticle})",
+                CHANNEL_SETTINGS_SUMMARIES_TOGGLE: "Enable Channel Summaries",
+                CHANNEL_SETTINGS_SUMMARIES_TOGGLE_DESCRIPTION: "If turned off, nobody will see the Summaries in this channel. [Learn More]({helpdeskArticle})",
                 CHANNEL_TOOLTIP_VOICE: "Voice",
                 CHANNEL_TOOLTIP_VOICE_LIMITED: "Voice (Limited)",
                 CHANNEL_TOOLTIP_VOICE_LOCKED: "Voice (Locked)",
@@ -2310,6 +2310,7 @@
                 CLYDE_GENERATE_PERSONALITY: "Generate",
                 CLYDE_GENERATE_PERSONALITY_HINT: "Generate a more detailed personality",
                 CLYDE_GENERATE_PERSONALITY_UNDO: "Undo generated personality",
+                CLYDE_EDIT_NAME_LABEL: "Name",
                 CLYDE_USER_RATING_THANKS_1: "Clyde's neurons are buzzing \uD83E\uDDE0",
                 CLYDE_USER_RATING_THANKS_2: "Your feedback is the secret sauce \uD83C\uDF1F",
                 CLYDE_USER_RATING_THANKS_3: "You're helping Clyde evolve one byte at a time \uD83D\uDE4C",
@@ -14204,8 +14205,8 @@
                 GUILD_SETTINGS_UPDATE_PERMISSIONS: "Update Permissions",
                 GUILD_SETTINGS_REVIEW_PERMISSIONS: "Review Permissions",
                 GUILD_SETTINGS_CHANNEL_SETTINGS: "Channel Settings",
-                GUILD_SETTINGS_SUMMARIES_TOGGLE: "Summaries",
-                GUILD_SETTINGS_SUMMARIES_TOGGLE_DESCRIPTION: "Enable Summaries for this server. The Summaries feature uses OpenAI technology to quickly surface topics in any text channel, get a conversation preview and the number of messages in a specific topic, and indicate who is in the discussion. [Learn More]({helpdeskArticle})",
+                GUILD_SETTINGS_SUMMARIES_TOGGLE: "Enable Channel Summaries",
+                GUILD_SETTINGS_SUMMARIES_TOGGLE_DESCRIPTION: "Enable Channel Summaries for this server to help your members catch up and dive into discussions. In text channels, members will be able to see a list of topics being discussed and which members are involved. [Learn More]({helpdeskArticle})",
                 UNLOCK: "Unlock",
                 DEFAULT_CHANNELS_PREVIEW_HEADER: "Preview",
                 DEFAULT_CHANNELS_PREVIEW_EMPTY_STATE: "Add 5-10 channels that all users will see!",
@@ -17775,7 +17776,7 @@
                 L = E("782340");
             (0, r.setUpdateRules)(i.default), (0, I.default)(L.default, n.default, s.default), a.default.Emitter.injectBatchEmitChanges(o.unstable_batchedUpdates), a.default.PersistedStore.disableWrites = __OVERLAY__, a.default.initialize();
             let u = window.GLOBAL_ENV.RELEASE_CHANNEL;
-            new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(u, ", Build Number: ").concat("240736", ", Version Hash: ").concat("d75dfd490a737b05494cf9a8cd15857821c7bc49")), t.default.setTags({
+            new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(u, ", Build Number: ").concat("240759", ", Version Hash: ").concat("56456dc6f9d91c377ecf6ce6e4c957f0efef0fc7")), t.default.setTags({
                 appContext: l.CURRENT_APP_CONTEXT
             }), S.default.initBasic(), N.default.init(), T.FocusRingManager.init(), O.init(), (0, R.cleanupTempFiles)()
         },
@@ -20137,8 +20138,8 @@
 
             function o() {
                 var e;
-                let _ = parseInt((e = "240736", "240736"));
-                return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("240736")), _ = 0), _
+                let _ = parseInt((e = "240759", "240759"));
+                return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("240759")), _ = 0), _
             }
         },
         990629: function(e, _, E) {
@@ -29389,4 +29390,4 @@
         }
     }
 ]);
-//# sourceMappingURL=07000c8984da3ef7b84c.js.map
+//# sourceMappingURL=78e530a0890bd7344eda.js.map
