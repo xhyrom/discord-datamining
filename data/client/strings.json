@@ -10044,6 +10044,7 @@
   "APPLICATION_IFRAME_MODAL_LOAD_ERROR": "\"There was an error trying to load the application.\"",
   "INTERACTION_RATE_LIMITED": "\"Slow down! You're clicking too fast.\"",
   "APPLICATION_ADD_TO_SERVER": "\"Add to Server\"",
+  "APPLICATION_ADD_BUTTON": "\"Add App\"",
   "APPLICATION_ADD_TO_SERVER_ACTIONS": "\"Add to Server Actions\"",
   "APPLICATION_ADD_TO_SERVER_ACTIONS_COPY": "\"Copy Add to Server URL\"",
   "COMMANDS_SCOPE_MIGRATION_OVERVIEW_TOOLTIP": "\"Members can't use this bot until you turn on permissions.\"",
