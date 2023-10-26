@@ -700,6 +700,12 @@
         466818: function(e, t, n) {
             "use strict";
             n.r(t), n.d(t, {
+                MemberSafetyPagePermissions: function() {
+                    return c
+                },
+                canAccessMemberSafetyPage: function() {
+                    return S
+                },
                 canAccessMemberSafetyPageWithExperiment: function() {
                     return I
                 },
@@ -726,9 +732,9 @@
                 a = n("697218"),
                 o = n("991170"),
                 s = n("536999"),
-                d = n("562980"),
-                c = n("49111");
-            let f = function(e) {
+                d = n("49111");
+            let c = i.default.combine(d.Permissions.ADMINISTRATOR, d.Permissions.MANAGE_GUILD, d.Permissions.BAN_MEMBERS, d.Permissions.KICK_MEMBERS, d.Permissions.MODERATE_MEMBERS),
+                f = function(e) {
                     let t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : [u.default, a.default],
                         [n, i] = t,
                         r = n.getGuild(e),
@@ -746,13 +752,13 @@
                         user: n.user,
                         context: n.guild,
                         checkElevated: !1
-                    }), d.MemberSafetyPagePermissions);
+                    }), c);
                     return r
                 },
                 E = function(e) {
                     let t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : [u.default, a.default],
                         n = f(e, t);
-                    return null != n && l.default.can(c.Permissions.MANAGE_GUILD, n.guild) && l.default.can(c.Permissions.BAN_MEMBERS, n.guild)
+                    return null != n && l.default.can(d.Permissions.MANAGE_GUILD, n.guild) && l.default.can(d.Permissions.BAN_MEMBERS, n.guild)
                 },
                 I = function(e) {
                     let t = arguments.length > 1 && void 0 !== arguments[1] && arguments[1],
@@ -789,20 +795,20 @@
             function R(e) {
                 return (0, r.useStateFromStores)([u.default, l.default], () => {
                     let t = u.default.getGuild(e);
-                    return null != t && l.default.can(c.Permissions.MANAGE_GUILD, t)
+                    return null != t && l.default.can(d.Permissions.MANAGE_GUILD, t)
                 }, [e])
             }
 
             function h(e, t, n) {
                 return (0, r.useStateFromStores)([l.default, u.default], () => {
                     let i = u.default.getGuild(e);
-                    return null != i && t && l.default.canManageUser(c.Permissions.BAN_MEMBERS, n, i)
+                    return null != i && t && l.default.canManageUser(d.Permissions.BAN_MEMBERS, n, i)
                 }, [t, e, n])
             }
 
             function b(e, t, n) {
                 let i = u.default.getGuild(e);
-                return null != i && t && l.default.canManageUser(c.Permissions.BAN_MEMBERS, n, i)
+                return null != i && t && l.default.canManageUser(d.Permissions.BAN_MEMBERS, n, i)
             }
         },
         287883: function(e, t, n) {
@@ -1565,4 +1571,4 @@
         }
     }
 ]);
-//# sourceMappingURL=a2cdd6f6383ce51bacbc.js.map
+//# sourceMappingURL=7d8da229e0177bbbb531.js.map
