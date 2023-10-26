@@ -16485,6 +16485,7 @@
   "POLLS": "\"Polls\"",
   "POLL_CHOOSE_SINGLE_ANSWER_PROMPT": "\"Choose an Answer\"",
   "POLL_SUBMIT_VOTE": "\"Submit Vote\"",
+  "POLL_SUBMIT_VOTE_EDIT": "\"Update Vote\"",
   "POLL_VOTES_COUNT": "\"{count, plural, one {1 vote} other {{count} votes}}\"",
   "POLL_ALREADY_VOTED": "\"Voted\"",
   "POLL_ANSWER_SELECTED_ARIA": "\"You selected this answer\"",
