@@ -13184,7 +13184,6 @@
   "MEMBER_SAFETY_INVITER_BOT_TOOLTIP": "\"Added by Bot\"",
   "GUILD_SETTINGS_SAFETY_ENABLE_MODERATION_EXPERIENCE": "\"Show Members In Channel List\"",
   "GUILD_SETTINGS_SAFETY_ENABLE_MODERATION_EXPERIENCE_DESCRIPTION": "\"Enabling this will show the members page in the channel list, allowing you to quickly see who's recently joined your server, and find any users flagged for unusual activity.\"",
-  "GUILD_SETTINGS_SAFETY_MODERATION_EXPERIENCE_ENABLED": "\"The members page has been moved to the server channel list. [Go There](onClick)\"",
   "GUILD_SETTINGS_SAFETY_MODERATION_EXPERIENCE_IN_COMMUNITY": "\"Becoming a community will automatically enable this experience for you.\"",
   "GUILD_ANTIRAID_SAFETY_SETUP_TITLE": "\"Raid Protection\"",
   "GUILD_ANTIRAID_SAFETY_SETUP_DESCRIPTION": "\"Takes automated actions to safeguard your server from potential raids or other suspicious activity. Report a raid that we miss to improve raid protection.\"",
