@@ -1,5 +1,5 @@
 (this.webpackChunkdiscord_app = this.webpackChunkdiscord_app || []).push([
-    ["87239"], {
+    ["94386"], {
         666020: function(e, t, n) {
             "use strict";
             n.r(t), n.d(t, {
@@ -274,10 +274,10 @@
                     return h
                 },
                 setPendingAvatarDecoration: function() {
-                    return L
+                    return m
                 },
                 setPendingProfileEffectID: function() {
-                    return m
+                    return L
                 },
                 clearErrors: function() {
                     return O
@@ -292,7 +292,7 @@
                     return U
                 },
                 setDisableSubmit: function() {
-                    return D
+                    return v
                 }
             });
             var i = n("990746"),
@@ -447,14 +447,14 @@
                 })
             }
 
-            function L(e) {
+            function m(e) {
                 a.default.dispatch({
                     type: "USER_SETTINGS_ACCOUNT_SET_PENDING_AVATAR_DECORATION",
                     avatarDecoration: e
                 })
             }
 
-            function m(e) {
+            function L(e) {
                 a.default.dispatch({
                     type: "USER_SETTINGS_ACCOUNT_SET_PENDING_PROFILE_EFFECT_ID",
                     profileEffectID: e
@@ -485,7 +485,7 @@
                 })
             }
 
-            function D(e) {
+            function v(e) {
                 a.default.dispatch({
                     type: "USER_SETTINGS_ACCOUNT_SET_DISABLE_SUBMIT",
                     disable: e
@@ -908,6 +908,42 @@
                         fill: "string" == typeof a ? a : a.css,
                         fillRule: "evenodd",
                         d: "M18.707 7.293a1 1 0 0 1 0 1.414l-8 8a1 1 0 0 1-1.414 0l-4-4a1 1 0 1 1 1.414-1.414L10 14.586l7.293-7.293a1 1 0 0 1 1.414 0Z",
+                        clipRule: "evenodd",
+                        className: u
+                    })
+                })
+            }
+        },
+        31745: function(e, t, n) {
+            "use strict";
+            n.r(t), n.d(t, {
+                CirclePlusIcon: function() {
+                    return a
+                }
+            });
+            var i = n("920040");
+            n("773670");
+            var l = n("912557"),
+                r = n("75196");
+            let a = e => {
+                let {
+                    width: t = 24,
+                    height: n = 24,
+                    color: a = l.default.colors.INTERACTIVE_NORMAL,
+                    colorClass: u = "",
+                    ...o
+                } = e;
+                return (0, i.jsx)("svg", {
+                    ...(0, r.default)(o),
+                    xmlns: "http://www.w3.org/2000/svg",
+                    width: t,
+                    height: n,
+                    fill: "none",
+                    viewBox: "0 0 24 24",
+                    children: (0, i.jsx)("path", {
+                        fill: "string" == typeof a ? a : a.css,
+                        fillRule: "evenodd",
+                        d: "M12 23c6.075 0 11-4.925 11-11S18.075 1 12 1 1 5.925 1 12s4.925 11 11 11Zm0-17a1 1 0 0 1 1 1v4h4a1 1 0 1 1 0 2h-4v4a1 1 0 1 1-2 0v-4H7a1 1 0 1 1 0-2h4V7a1 1 0 0 1 1-1Z",
                         clipRule: "evenodd",
                         className: u
                     })
@@ -1620,10 +1656,10 @@
                     return h
                 },
                 GIF_PICKER_TAB_ID: function() {
-                    return L
+                    return m
                 },
                 EMOJI_SIZE_MAP: function() {
-                    return m
+                    return L
                 },
                 EMOJI_ROW_SIZE: function() {
                     return O
@@ -1642,8 +1678,8 @@
                 R = "super-reaction-picker-tab";
             (o || (o = {})).TOOLTIP = "tooltip";
             let h = "gif-picker-tab-panel",
-                L = "gif-picker-tab",
-                m = {
+                m = "gif-picker-tab",
+                L = {
                     reaction: 32,
                     default: 44,
                     jumbo: 96
@@ -1665,7 +1701,7 @@
             "use strict";
             n.r(t), n.d(t, {
                 sendFeedShownAnalytics: function() {
-                    return m
+                    return L
                 },
                 fetchGuildFeed: function() {
                     return O
@@ -1680,10 +1716,10 @@
                     return U
                 },
                 hideItemFromGuildFeed: function() {
-                    return D
+                    return v
                 },
                 fetchGuildFeedFeaturedItems: function() {
-                    return v
+                    return D
                 },
                 featureGuildFeedItem: function() {
                     return P
@@ -1723,14 +1759,14 @@
                 R = n("515631"),
                 h = n("49111");
 
-            function L(e, t) {
+            function m(e, t) {
                 return t.map(t => p.default.getItem(e, t)).filter(e => {
                     let t = null == e ? null : (0, C.default)(e);
                     return null != t && !E.default.isBlocked(t.author.id)
                 }).filter(T.isNotNullish).map(e => (0, N.default)(e))
             }
 
-            function m(e) {
+            function L(e) {
                 f.default.track(h.AnalyticEvents.FEED_SHOWN, {
                     guild_id: e,
                     load_id: p.default.getLoadId(e),
@@ -1776,7 +1812,7 @@
                         fresh: I
                     });
                     let N = p.default.getFeedItemSection(t, R.GuildFeedSectionTypes.READ).map(e => e.id),
-                        m = p.default.getFeedItemSection(t, R.GuildFeedSectionTypes.UNREAD).map(e => e.id),
+                        L = p.default.getFeedItemSection(t, R.GuildFeedSectionTypes.UNREAD).map(e => e.id),
                         O = p.default.getFeedItemsForGuild(t).filter(e => e.featured).map(e => e.id),
                         g = Date.now() - E,
                         M = (null != _ ? _ : 0) / p.GUILD_FEED_FETCH_LIMIT;
@@ -1793,12 +1829,12 @@
                         f.default.track(h.AnalyticEvents.FEED_LOADED, {
                             guild_id: t,
                             load_id: p.default.getLoadId(t),
-                            unread_feed_item_ids: L(t, r),
-                            read_feed_item_ids: L(t, a),
+                            unread_feed_item_ids: m(t, r),
+                            read_feed_item_ids: m(t, a),
                             load_time_millis: n,
                             home_session_id: c.default.getHomeSessionId(t),
                             start_home_session_id: i,
-                            featured_item_ids: L(t, u),
+                            featured_item_ids: m(t, u),
                             page: l
                         })
                     }({
@@ -1807,7 +1843,7 @@
                         startHomeSessionId: T,
                         page: M,
                         newReadFeedItemIds: l.difference(N, S),
-                        newUnreadFeedItemIds: l.difference(m, C),
+                        newUnreadFeedItemIds: l.difference(L, C),
                         newFeaturedItemIds: l.difference(O, A)
                     }), ! function(e, t) {
                         let n = t.results.items.filter(e => e.type === r.GuildFeedItemTypes.FORUM_POST);
@@ -1844,7 +1880,7 @@
                     item: e
                 }), n
             }
-            async function D(e, t) {
+            async function v(e, t) {
                 let n = (0, C.default)(e),
                     i = await o.default.put({
                         url: h.Endpoints.GUILD_FEED_MESSAGE_SET_PREFERENCE(t),
@@ -1861,7 +1897,7 @@
                     item: e
                 }), i
             }
-            async function v(e) {
+            async function D(e) {
                 try {
                     let t = await o.default.get({
                             url: h.Endpoints.GUILD_FEED_FEATURE_ITEM(e)
@@ -3162,7 +3198,7 @@
                     return h
                 },
                 updateImpersonatedData: function() {
-                    return L
+                    return m
                 }
             });
             var i = n("913144"),
@@ -3256,7 +3292,7 @@
                 })
             }
 
-            function L(e, t) {
+            function m(e, t) {
                 C(e, {
                     type: f.ImpersonateType.NEW_MEMBER,
                     ...t
@@ -3731,13 +3767,13 @@
                 l.useEffect(() => {
                     N(null)
                 }, [S, N]), o(null != h, "Unknown step for current payment flow.");
-                let L = null !== (s = null == h ? void 0 : null === (t = h.options) || void 0 === t ? void 0 : t.hideSlider) && void 0 !== s && s,
-                    m = null == h ? void 0 : null === (n = h.options) || void 0 === n ? void 0 : n.bodyClassName,
+                let m = null !== (s = null == h ? void 0 : null === (t = h.options) || void 0 === t ? void 0 : t.hideSlider) && void 0 !== s && s,
+                    L = null == h ? void 0 : null === (n = h.options) || void 0 === n ? void 0 : n.bodyClassName,
                     O = void 0 !== f && f ? _.sliderBodyLarge : null == h ? void 0 : null === (r = h.options) || void 0 === r ? void 0 : r.sliderBodyClassName;
                 return (0, i.jsxs)(i.Fragment, {
-                    children: [null === (d = null == h ? void 0 : null === (u = h.options) || void 0 === u ? void 0 : u.renderHeader) || void 0 === d || d ? I : null, h.renderStep(T), null == S || L ? null : (0, i.jsxs)(i.Fragment, {
+                    children: [null === (d = null == h ? void 0 : null === (u = h.options) || void 0 === u ? void 0 : u.renderHeader) || void 0 === d || d ? I : null, h.renderStep(T), null == S || m ? null : (0, i.jsxs)(i.Fragment, {
                         children: [(0, i.jsx)(c.ModalContent, {
-                            className: a(_.body, m),
+                            className: a(_.body, L),
                             children: (0, i.jsx)(c.Slides, {
                                 activeSlide: S,
                                 centered: !1,
@@ -3811,14 +3847,14 @@
                     isGift: N = !1,
                     giftMessage: R,
                     subscriptionTier: h,
-                    trialId: L,
-                    postSuccessGuild: m,
+                    trialId: m,
+                    postSuccessGuild: L,
                     openInvoiceId: O,
                     applicationId: g,
                     referralTrialOfferId: M,
                     giftRecipient: U,
-                    returnRef: D
-                } = null != e ? e : {}, v = !1, P = (0, l.v4)();
+                    returnRef: v
+                } = null != e ? e : {}, D = !1, P = (0, l.v4)();
                 (0, r.openModalLazy)(async () => {
                     let {
                         default: e
@@ -3842,36 +3878,36 @@
                                 l(), null == I || I(e), e && (null == T || T())
                             },
                             onComplete: () => {
-                                v = !0, null == f || f(), !N && ((0, o.setIsPersistentHelperHidden)(!0), (0, o.setCanPlayWowMoment)(!0))
+                                D = !0, null == f || f(), !N && ((0, o.setIsPersistentHelperHidden)(!0), (0, o.setCanPlayWowMoment)(!0))
                             },
                             onSubscriptionConfirmation: T,
                             analyticsLocations: S,
                             analyticsObject: p,
                             analyticsLocation: C,
                             analyticsSourceLocation: A,
-                            trialId: L,
-                            postSuccessGuild: m,
+                            trialId: m,
+                            postSuccessGuild: L,
                             planGroup: E.ORDERED_PREMIUM_SUBSCRIPTION_PLANS,
                             openInvoiceId: O,
                             applicationId: g,
                             referralTrialOfferId: M,
-                            returnRef: D
+                            returnRef: v
                         })
                     }
                 }, {
                     modalKey: "payment-modal",
                     onCloseCallback: () => {
-                        !v && s.default.track(c.AnalyticEvents.PAYMENT_FLOW_CANCELED, {
+                        !D && s.default.track(c.AnalyticEvents.PAYMENT_FLOW_CANCELED, {
                             load_id: P,
                             payment_type: c.PurchaseTypeToAnalyticsPaymentType[c.PurchaseTypes.SUBSCRIPTION],
                             location: null != C ? C : p,
                             source: A,
                             subscription_type: c.SubscriptionTypes.PREMIUM,
                             is_gift: N,
-                            eligible_for_trial: null != L,
+                            eligible_for_trial: null != m,
                             application_id: g,
                             location_stack: S
-                        }), (0, a.clearError)(), (0, u.clearPurchaseTokenAuthState)(), null == I || I(v), v && (!N && d.ComponentDispatch.dispatch(c.ComponentActions.PREMIUM_SUBSCRIPTION_CREATED), null == T || T())
+                        }), (0, a.clearError)(), (0, u.clearPurchaseTokenAuthState)(), null == I || I(D), D && (!N && d.ComponentDispatch.dispatch(c.ComponentActions.PREMIUM_SUBSCRIPTION_CREATED), null == T || T())
                     },
                     onCloseRequest: c.NOOP
                 })
@@ -4424,8 +4460,8 @@
                 N = new Map,
                 R = null,
                 h = [],
-                L = null,
-                m = !1,
+                m = null,
+                L = !1,
                 O = new Map,
                 g = (e, t) => {
                     O = new Map(O.set(e, t))
@@ -4440,17 +4476,17 @@
                     if (null != t) {
                         for (let [e, n] of t)
                             if (I.default.isMember(e) && !O.has(e)) {
-                                for (let t of n) D(t, !0, f.default.getGuild(e));
+                                for (let t of n) v(t, !0, f.default.getGuild(e));
                                 g(e, n)
                             }
                     }
                 },
-                D = function(e) {
+                v = function(e) {
                     let t = !(arguments.length > 1) || void 0 === arguments[1] || arguments[1],
                         n = arguments.length > 2 && void 0 !== arguments[2] ? arguments[2] : null;
-                    N.set(e.id, e), t && v(e, n)
+                    N.set(e.id, e), t && D(e, n)
                 },
-                v = function(e) {
+                D = function(e) {
                     let t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : null;
                     if (null == R) return;
                     let {
@@ -4501,19 +4537,19 @@
                     let i = [...h];
                     if (t) {
                         let t = i.findIndex(t => t.id === e.id); - 1 !== t ? i[t] = e : i.push(e), h = i
-                    }(t || n) && e.stickers.forEach(e => D(e))
+                    }(t || n) && e.stickers.forEach(e => v(e))
                 },
                 G = () => {
                     O.forEach((e, t) => {
                         let n = f.default.getGuild(t);
-                        null != n && e.forEach(e => v(e, n))
+                        null != n && e.forEach(e => D(e, n))
                     }), h.forEach(e => {
-                        e.stickers.forEach(e => v(e))
+                        e.stickers.forEach(e => D(e))
                     })
                 };
 
             function y(e) {
-                null != e.stickers && (e.stickers.forEach(t => D(t, !0, e)), g(e.id, e.stickers))
+                null != e.stickers && (e.stickers.forEach(t => v(t, !0, e)), g(e.id, e.stickers))
             }
             class b extends a.default.Store {
                 initialize() {
@@ -4526,10 +4562,10 @@
                     return U(), null == R && (R = new Map, G()), R
                 }
                 get hasLoadedStickerPacks() {
-                    return null != L && L + M > Date.now()
+                    return null != m && m + M > Date.now()
                 }
                 get isFetchingStickerPacks() {
-                    return m
+                    return L
                 }
                 getStickerById(e) {
                     return !N.has(e) && U(), N.get(e)
@@ -4583,16 +4619,16 @@
                     }), O.delete(n.id), O = new Map(O)
                 },
                 LOGOUT: () => {
-                    C = 0, h = [], N.clear(), A.clear(), R = null, O.clear(), O = new Map(O), m = !1, L = null
+                    C = 0, h = [], N.clear(), A.clear(), R = null, O.clear(), O = new Map(O), L = !1, m = null
                 },
                 STICKER_PACKS_FETCH_START: () => {
-                    m = !0
+                    L = !0
                 },
                 STICKER_PACKS_FETCH_SUCCESS: e => {
                     let {
                         packs: t
                     } = e;
-                    t.forEach(e => P(e, !0)), L = Date.now(), m = !1
+                    t.forEach(e => P(e, !0)), m = Date.now(), L = !1
                 },
                 STICKER_PACK_FETCH_SUCCESS: e => {
                     let {
@@ -4606,7 +4642,7 @@
                         guildId: t,
                         stickers: n
                     } = e;
-                    n.forEach(e => D(e)), g(t, n)
+                    n.forEach(e => v(e)), g(t, n)
                 },
                 GUILD_STICKERS_CREATE_SUCCESS: e => {
                     var t, n;
@@ -4614,13 +4650,13 @@
                         guildId: i,
                         sticker: l
                     } = e, r = null !== (t = O.get(i)) && void 0 !== t ? t : [];
-                    g(i, [...null !== (n = r.filter(e => e.id !== l.id)) && void 0 !== n ? n : [], l]), D(l)
+                    g(i, [...null !== (n = r.filter(e => e.id !== l.id)) && void 0 !== n ? n : [], l]), v(l)
                 },
                 STICKER_FETCH_SUCCESS: e => {
                     let {
                         sticker: t
                     } = e;
-                    D(t, !1)
+                    v(t, !1)
                 },
                 GUILD_STICKERS_UPDATE: e => {
                     var t;
@@ -4639,7 +4675,7 @@
                         N.delete(e.id), null != R && R.delete(e.id)
                     });
                     let u = i.map(e => l(e));
-                    u.forEach(e => D(e)), g(n, u)
+                    u.forEach(e => v(e)), g(n, u)
                 }
             })
         },
@@ -4680,7 +4716,7 @@
                     return h
                 },
                 setTryItOutThemeColors: function() {
-                    return L
+                    return m
                 }
             });
             var i = n("990746"),
@@ -4809,7 +4845,7 @@
                 }), E(c.AnalyticsPremiumFeatureNames.PROFILE_BANNER)
             }
 
-            function L(e) {
+            function m(e) {
                 l.default.dispatch({
                     type: "USER_SETTINGS_ACCOUNT_SET_TRY_IT_OUT_THEME_COLORS",
                     themeColors: e
@@ -4989,9 +5025,9 @@
                 N = null,
                 R = [],
                 h = null,
-                L = null;
+                m = null;
 
-            function m(e) {
+            function L(e) {
                 var t, n, i, l, r, a;
                 let d = u.default.getCurrentUser();
                 if (null == d) return O();
@@ -5008,11 +5044,11 @@
                             claimed: d.isClaimed()
                         }
                     }
-                }, A = null !== (i = e.onClose) && void 0 !== i ? i : null, N = null !== (l = e.analyticsLocation) && void 0 !== l ? l : null, R = null !== (r = e.analyticsLocations) && void 0 !== r ? r : [], L = null !== (a = e.impressionSource) && void 0 !== a ? a : null
+                }, A = null !== (i = e.onClose) && void 0 !== i ? i : null, N = null !== (l = e.analyticsLocation) && void 0 !== l ? l : null, R = null !== (r = e.analyticsLocations) && void 0 !== r ? r : [], m = null !== (a = e.impressionSource) && void 0 !== a ? a : null
             }
 
             function O() {
-                s = o.FormStates.CLOSED, S = !1, f = null, h = null, T = null, d = null, c = null, E = {}, _ = {}, A = null, N = null, R = [], L = null
+                s = o.FormStates.CLOSED, S = !1, f = null, h = null, T = null, d = null, c = null, E = {}, _ = {}, A = null, N = null, R = [], m = null
             }
 
             function g() {
@@ -5056,7 +5092,7 @@
                         analyticsLocation: N,
                         analyticsLocations: R,
                         initialSection: h,
-                        impressionSource: L
+                        impressionSource: m
                     }
                 }
                 get onClose() {
@@ -5066,9 +5102,9 @@
             M.displayName = "UserSettingsModalStore";
             var U = new M(a.default, {
                 USER_SETTINGS_MODAL_OPEN: function(e) {
-                    S = !0, m(e)
+                    S = !0, L(e)
                 },
-                USER_SETTINGS_MODAL_INIT: m,
+                USER_SETTINGS_MODAL_INIT: L,
                 USER_SETTINGS_MODAL_CLOSE: O,
                 LOGOUT: O,
                 USER_SETTINGS_MODAL_SUBMIT: function() {
@@ -5125,7 +5161,7 @@
                     })
                 },
                 DRAWER_SELECT_TAB: function(e) {
-                    return C = e.tab, null == c && C === o.DrawerTabTypes.USER_SETTINGS && m({
+                    return C = e.tab, null == c && C === o.DrawerTabTypes.USER_SETTINGS && L({
                         type: "USER_SETTINGS_MODAL_INIT",
                         section: null,
                         subsection: null,
@@ -5969,6 +6005,38 @@
                     })
                 }, r.PlusSmallIcon)
         },
+        351825: function(e, t, n) {
+            "use strict";
+            n.r(t), n.d(t, {
+                default: function() {
+                    return a
+                }
+            });
+            var i = n("920040");
+            n("773670");
+            var l = n("469563"),
+                r = n("31745"),
+                a = (0, l.replaceIcon)(function(e) {
+                    let {
+                        width: t = 16,
+                        height: n = 16,
+                        color: l = "currentColor",
+                        className: r,
+                        foreground: a
+                    } = e;
+                    return (0, i.jsx)("svg", {
+                        className: r,
+                        width: t,
+                        height: n,
+                        viewBox: "0 0 24 24",
+                        children: (0, i.jsx)("path", {
+                            className: a,
+                            fill: l,
+                            d: "M12 2.00098C6.486 2.00098 2 6.48698 2 12.001C2 17.515 6.486 22.001 12 22.001C17.514 22.001 22 17.515 22 12.001C22 6.48698 17.514 2.00098 12 2.00098ZM17 13.001H13V17.001H11V13.001H7V11.001H11V7.00098H13V11.001H17V13.001Z"
+                        })
+                    })
+                }, r.CirclePlusIcon)
+        },
         368121: function(e, t, n) {
             "use strict";
             n.r(t), n.d(t, {
@@ -6461,4 +6529,4 @@
         }
     }
 ]);
-//# sourceMappingURL=3fadce39d26d97f5e182.js.map
+//# sourceMappingURL=dd826b74f60e2f229b34.js.map

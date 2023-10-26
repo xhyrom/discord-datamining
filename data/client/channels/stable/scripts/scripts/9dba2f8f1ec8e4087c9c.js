@@ -80,10 +80,10 @@
                     return S
                 },
                 ButtonHovers: function() {
-                    return m
+                    return v
                 },
                 ButtonSizes: function() {
-                    return v
+                    return m
                 },
                 getButtonStyle: function() {
                     return E
@@ -137,7 +137,7 @@
                     TRANSPARENT: f.borderTransparent,
                     BRAND_NEW: f.borderBrandNew
                 },
-                m = {
+                v = {
                     DEFAULT: "",
                     BRAND: f.hoverBrand,
                     RED: f.hoverRed,
@@ -149,7 +149,7 @@
                     BLACK: f.hoverBlack,
                     TRANSPARENT: f.hoverTransparent
                 },
-                v = {
+                m = {
                     NONE: "",
                     TINY: f.sizeTiny,
                     SMALL: f.sizeSmall,
@@ -167,7 +167,7 @@
                     color: t = g.BRAND,
                     borderColor: n,
                     hover: i,
-                    size: r = v.MEDIUM,
+                    size: r = m.MEDIUM,
                     fullWidth: o = !1,
                     grow: s = !0,
                     submitting: u = !1,
@@ -176,7 +176,7 @@
                 return l(f.button, e, t, n, i, r, {
                     [f.fullWidth]: o,
                     [f.grow]: s,
-                    [f.hasHover]: null != i && i !== m.DEFAULT,
+                    [f.hasHover]: null != i && i !== v.DEFAULT,
                     [f.submitting]: u && !a
                 })
             }
@@ -187,8 +187,8 @@
                     color: n = g.BRAND,
                     borderColor: o,
                     hover: s,
-                    size: S = v.MEDIUM,
-                    fullWidth: m = !1,
+                    size: S = m.MEDIUM,
+                    fullWidth: v = !1,
                     grow: p = !0,
                     disabled: A = !1,
                     submitting: T = !1,
@@ -208,8 +208,8 @@
                     rel: w,
                     buttonRef: U,
                     focusProps: x,
-                    "aria-label": k,
-                    submittingStartedLabel: B,
+                    "aria-label": B,
+                    submittingStartedLabel: k,
                     submittingFinishedLabel: G,
                     ...H
                 } = e, V = A || T, W = V && (null != P || null != M), z = W ? null : y, j = function(e, t) {
@@ -223,14 +223,14 @@
                     }
                 }(x, t), Y = r.useRef(!1);
                 r.useEffect(() => {
-                    !0 === T && (Y.current = !0, u.AccessibilityAnnouncer.announce(null != B ? B : d.default.Messages.A11Y_LOADING_STARTED)), !1 === T && !0 === Y.current && u.AccessibilityAnnouncer.announce(null != G ? G : d.default.Messages.A11Y_LOADING_FINISHED)
-                }, [T, B, G]);
+                    !0 === T && (Y.current = !0, u.AccessibilityAnnouncer.announce(null != k ? k : d.default.Messages.A11Y_LOADING_STARTED)), !1 === T && !0 === Y.current && u.AccessibilityAnnouncer.announce(null != G ? G : d.default.Messages.A11Y_LOADING_FINISHED)
+                }, [T, k, G]);
                 let Z = (0, i.jsx)(a.FocusRing, {
                     ...x,
                     offset: j,
                     children: (0, i.jsxs)("button", {
                         ...V ? null : H,
-                        "aria-label": k,
+                        "aria-label": B,
                         "aria-busy": !!T || void 0,
                         ref: U,
                         onClick: V ? e => e.preventDefault() : R,
@@ -250,7 +250,7 @@
                             borderColor: o,
                             hover: s,
                             size: S,
-                            fullWidth: m,
+                            fullWidth: v,
                             grow: p,
                             submitting: T,
                             disabled: A
@@ -268,7 +268,7 @@
                 return W ? (0, i.jsxs)("span", {
                     className: l(f.disabledButtonWrapper, y, S, {
                         [f.grow]: p,
-                        [f.fullWidth]: m
+                        [f.fullWidth]: v
                     }),
                     children: [Z, (0, i.jsx)("span", {
                         onMouseEnter: P,
@@ -284,7 +284,7 @@
                     color: n = g.BRAND,
                     borderColor: r,
                     hover: o,
-                    size: u = v.MEDIUM,
+                    size: u = m.MEDIUM,
                     fullWidth: a = !1,
                     grow: c = !0,
                     style: d,
@@ -309,7 +309,7 @@
                     className: l(S, f.button, t, n, r, o, u, {
                         [f.fullWidth]: a,
                         [f.grow]: c,
-                        [f.hasHover]: null != o && o !== m.DEFAULT
+                        [f.hasHover]: null != o && o !== v.DEFAULT
                     }),
                     children: (0, i.jsx)("span", {
                         className: l(f.contents, E),
@@ -317,7 +317,7 @@
                     })
                 })
             }
-            p.Looks = h, p.Colors = g, p.BorderColors = S, p.Hovers = m, p.Sizes = v, p.Link = A
+            p.Looks = h, p.Colors = g, p.BorderColors = S, p.Hovers = v, p.Sizes = m, p.Link = A
         },
         390534: function(e, t, n) {
             "use strict";
@@ -392,8 +392,8 @@
                     (0, o.useFocusLock)(S, {
                         returnRef: h
                     });
-                    let m = r.useContext(u.default);
-                    return m({
+                    let v = r.useContext(u.default);
+                    return v({
                         type: c,
                         name: null == d ? void 0 : d.impressionName,
                         properties: null == d ? void 0 : d.impressionProperties
@@ -580,8 +580,8 @@
                 return r.forwardRef(function(o, g) {
                     let {
                         className: S,
-                        onScroll: m,
-                        onResize: v = null,
+                        onScroll: v,
+                        onResize: m = null,
                         onContentResize: E = null,
                         dir: p = "ltr",
                         sections: A,
@@ -602,8 +602,8 @@
                         fade: w = !1,
                         customTheme: U = !1,
                         chunkSize: x,
-                        style: k,
-                        innerId: B,
+                        style: B,
+                        innerId: k,
                         innerRole: G,
                         innerAriaLabel: H,
                         innerAriaMultiselectable: V,
@@ -643,9 +643,9 @@
                         chunkSize: x,
                         getScrollerState: $,
                         getAnchorId: M
-                    }), es = (0, c.useScrollSpring)(J), eu = r.useRef(v), ea = r.useRef(E);
+                    }), es = (0, c.useScrollSpring)(J), eu = r.useRef(m), ea = r.useRef(E);
                     r.useLayoutEffect(() => {
-                        eu.current = v, ea.current = E
+                        eu.current = m, ea.current = E
                     });
                     let ec = r.useCallback(function() {
                             let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : 2;
@@ -703,8 +703,8 @@
                     let eg = r.useCallback(e => {
                         ec(1), null == Z.current ? q(!0) : clearTimeout(Z.current), Z.current = setTimeout(() => {
                             Z.current = null, q(!1)
-                        }, 200), null != m && m(e)
-                    }, [m, ec]);
+                        }, 200), null != v && v(e)
+                    }, [v, ec]);
                     return r.useLayoutEffect(() => {
                         2 !== Q.current.dirty && (Q.current.dirty = 2)
                     }, [en, N, R, O, P, et, ee, Q]), (0, c.useVirtualizedAnchor)({
@@ -723,10 +723,10 @@
                             [n]: U,
                             [d.scrolling]: X
                         }),
-                        style: (0, c.getMergedOrientationStyles)(k),
+                        style: (0, c.getMergedOrientationStyles)(B),
                         ...Y,
                         children: [r.useMemo(() => (0, i.jsx)(j, {
-                            id: B,
+                            id: k,
                             role: G,
                             "aria-label": H,
                             "aria-multiselectable": V,
@@ -783,7 +783,7 @@
                                     spacerTop: ee
                                 })
                             })
-                        }), [B, G, H, V, W, z, j, et, en, N, R, O, D, P, ee]), r.useMemo(() => (function(e) {
+                        }), [k, G, H, V, W, z, j, et, en, N, R, O, D, P, ee]), r.useMemo(() => (function(e) {
                             let {
                                 renderSidebar: t,
                                 sidebarHeight: n,
@@ -820,10 +820,10 @@
                     return S
                 },
                 closeModal: function() {
-                    return m
+                    return v
                 },
                 updateModal: function() {
-                    return v
+                    return m
                 },
                 hasAnyModalOpenSelector: function() {
                     return E
@@ -883,7 +883,7 @@
                         }, n)
                     }, 300),
                     u = await e();
-                return clearTimeout(s), l ? y(o, n) && v(o, u, i.onCloseRequest, i.onCloseCallback, n) : S(u, {
+                return clearTimeout(s), l ? y(o, n) && m(o, u, i.onCloseRequest, i.onCloseCallback, n) : S(u, {
                     ...i,
                     modalKey: o
                 }, n), o
@@ -913,7 +913,7 @@
                             key: a,
                             Layer: l,
                             render: e,
-                            onCloseRequest: null != s ? s : () => m(a, n),
+                            onCloseRequest: null != s ? s : () => v(a, n),
                             onCloseCallback: u,
                             instant: o
                         }]
@@ -921,7 +921,7 @@
                 }), a
             }
 
-            function m(e) {
+            function v(e) {
                 let t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : d(),
                     n = h.getState()[t],
                     i = null != n ? n.find(t => {
@@ -941,14 +941,14 @@
                 }), null != i && null != i.onCloseCallback && i.onCloseCallback()
             }
 
-            function v(e, t, n, i) {
+            function m(e, t, n, i) {
                 let r = arguments.length > 4 && void 0 !== arguments[4] ? arguments[4] : d();
                 h.setState(o => void 0 === o[r] ? o : {
                     ...o,
                     [r]: o[r].map(o => o.key === e ? {
                         ...o,
                         render: t,
-                        onCloseRequest: null == n ? () => m(e, r) : n,
+                        onCloseRequest: null == n ? () => v(e, r) : n,
                         onCloseCallback: i
                     } : o)
                 })
@@ -983,7 +983,7 @@
             function I() {
                 let e = h.getState();
                 for (let t in e)
-                    for (let n of e[t]) m(n.key, t)
+                    for (let n of e[t]) v(n.key, t)
             }
 
             function C(e, t) {
@@ -1032,8 +1032,8 @@
                 h = n("271841"),
                 g = n("130969"),
                 S = n("311720"),
-                m = n("718776"),
-                v = n("860226"),
+                v = n("718776"),
+                m = n("860226"),
                 E = n("433600"),
                 p = n("446662"),
                 A = n("145131"),
@@ -1057,7 +1057,7 @@
                     children: i,
                     size: s = r.SMALL,
                     role: h = "dialog",
-                    className: v,
+                    className: m,
                     fullscreenOnMobile: E = !0,
                     hideShadow: p = !1,
                     onAnimationEnd: A = C.NOOP,
@@ -1097,13 +1097,13 @@
                         "aria-labelledby": M ? void 0 : U.headerId,
                         ...y,
                         children: (0, o.jsx)(a.animated.div, {
-                            className: u(v, _.root, N[s], {
+                            className: u(m, _.root, N[s], {
                                 [_.fullscreenOnMobile]: E,
                                 [_.rootWithShadow]: !p
                             }),
                             ref: P,
                             style: L,
-                            children: (0, o.jsx)(m.FocusRingScope, {
+                            children: (0, o.jsx)(v.FocusRingScope, {
                                 containerRef: P,
                                 children: i
                             })
@@ -1154,7 +1154,7 @@
                     className: u(_.content, t),
                     ref: i,
                     ...l,
-                    children: (0, o.jsx)(v.HeadingLevel, {
+                    children: (0, o.jsx)(m.HeadingLevel, {
                         children: n
                     })
                 })
@@ -1172,7 +1172,7 @@
                     className: u(_.footer, e.className, {
                         [_.footerSeparator]: null === (l = e.separator) || void 0 === l || l
                     }),
-                    children: (0, o.jsx)(v.HeadingLevel, {
+                    children: (0, o.jsx)(m.HeadingLevel, {
                         children: e.children
                     })
                 })
@@ -1310,8 +1310,8 @@
                         dir: h = "ltr",
                         orientation: g = "vertical",
                         fade: S = !1,
-                        customTheme: m = !1,
-                        paddingFix: v = !0,
+                        customTheme: v = !1,
+                        paddingFix: m = !0,
                         style: E,
                         ...p
                     } = a, {
@@ -1324,7 +1324,7 @@
                         ...(0, u.getAnimatedScrollHelpers)(A, T, I, g)
                     }), [A, T, g, I]);
                     let C = (0, u.usePaddingFixes)({
-                        paddingFix: v,
+                        paddingFix: m,
                         orientation: g,
                         dir: h,
                         className: f,
@@ -1336,7 +1336,7 @@
                         className: l(f, {
                             [e]: !0,
                             [t]: S,
-                            [n]: m
+                            [n]: v
                         }),
                         style: (0, u.getMergedOrientationStyles)(E, g),
                         dir: h,
@@ -1672,8 +1672,8 @@
                             d = l(f),
                             S = this.getMaxColumnHeight(this.columnHeights);
                         f > 0 && (S = S - o + this.getSectionGutter());
-                        let m = d > 0 ? d + o : 0;
-                        for (let e = 0; e < this.columnHeights.length; e++) this.columnHeights[e] = S + m;
+                        let v = d > 0 ? d + o : 0;
+                        for (let e = 0; e < this.columnHeights.length; e++) this.columnHeights[e] = S + v;
                         for (; u < s;) {
                             var h, g;
                             let e = t(f, u);
@@ -2476,8 +2476,8 @@
                     itemGutter: h,
                     removeEdgeItemGutters: g,
                     sectionGutter: S,
-                    padding: m,
-                    paddingVertical: v,
+                    padding: v,
+                    paddingVertical: m,
                     paddingHorizontal: E,
                     dir: p
                 } = e, A = (0, o.default)(), T = (0, i.useRef)(s), [I] = (0, i.useState)(() => new r.default), C = f(), {
@@ -2502,11 +2502,11 @@
                     itemGutter: h,
                     removeEdgeItemGutters: g,
                     sectionGutter: S,
-                    padding: m,
-                    paddingVertical: v,
+                    padding: v,
+                    paddingVertical: m,
                     paddingHorizontal: E,
                     dir: p
-                }), I.computeVisibleSections(Math.max(0, N * d), R * d), I.getState()), [_, I, t, n, u, a, c, N, R, d, h, g, S, m, v, E, y, p]), {
+                }), I.computeVisibleSections(Math.max(0, N * d), R * d), I.getState()), [_, I, t, n, u, a, c, N, R, d, h, g, S, v, m, E, y, p]), {
                     ...T.current,
                     masonryComputer: I,
                     forceUpdateOnChunkChange: O,
@@ -2547,8 +2547,8 @@
                     paddingTop: h = 0,
                     paddingBottom: g = 0,
                     getScrollerState: S,
-                    getAnchorId: m
-                } = e, v = (0, o.default)(), E = (0, i.useRef)(s), [p] = (0, i.useState)(() => new r.default), {
+                    getAnchorId: v
+                } = e, m = (0, o.default)(), E = (0, i.useRef)(s), [p] = (0, i.useState)(() => new r.default), {
                     dirty: A,
                     chunkStart: T,
                     chunkEnd: I,
@@ -2556,7 +2556,7 @@
                 } = (0, l.default)({
                     chunkSize: f,
                     getScrollerState: S,
-                    forceUpdate: v
+                    forceUpdate: m
                 }), {
                     items: y
                 } = E.current, _ = null, {
@@ -2588,8 +2588,8 @@
                         paddingBottom: g,
                         paddingTop: h,
                         sections: t,
-                        getAnchorId: m
-                    }), p.compute(Math.max(0, T * f), I * f)), [A, T, I, n, u, a, d, g, h, t, p, f, m]);
+                        getAnchorId: v
+                    }), p.compute(Math.max(0, T * f), I * f)), [A, T, I, n, u, a, d, g, h, t, p, f, v]);
                 return (0, i.useLayoutEffect)(() => void(E.current = O)), {
                     ...O,
                     listComputer: p,
@@ -2697,7 +2697,7 @@
                         })
                     })
                 });
-                let m = u(d.item, s);
+                let v = u(d.item, s);
                 return (0, o.jsx)("span", {
                     className: u(d.spinner, i, {
                         [d.stopAnimation]: !n
@@ -2708,11 +2708,11 @@
                     children: (0, o.jsxs)("span", {
                         className: u(d.inner, d[S]),
                         children: [(0, o.jsx)("span", {
-                            className: m
+                            className: v
                         }), (0, o.jsx)("span", {
-                            className: m
+                            className: v
                         }), S === r.PULSING_ELLIPSIS || S === r.LOW_MOTION ? (0, o.jsx)("span", {
-                            className: m
+                            className: v
                         }) : null]
                     })
                 })
@@ -2911,7 +2911,7 @@
             "use strict";
             n.r(t), n.d(t, {
                 default: function() {
-                    return v
+                    return m
                 }
             });
             var i = n("498225"),
@@ -3124,7 +3124,7 @@
                 ...e,
                 alwaysShowLinkDecorations: e.saturation <= o.LOW_SATURATION_THRESHOLD
             })];
-            let m = new S(l.default, {
+            let v = new S(l.default, {
                 ACCESSIBILITY_SET_FONT_SIZE: function(e) {
                     var t;
                     let n = (t = e.fontSize, c.Accessibility.FONT_SIZES.indexOf(t) >= 0 ? t : c.Accessibility.FONT_SIZE_DEFAULT);
@@ -3255,7 +3255,7 @@
                     }).syncProfileThemeWithUserTheme = !h.syncProfileThemeWithUserTheme
                 }
             });
-            var v = m
+            var m = v
         },
         357626: function(e, t, n) {
             "use strict";
@@ -3297,10 +3297,10 @@
                     return S
                 },
                 NEW_MESSAGE_BAR_ID: function() {
-                    return m
+                    return v
                 },
                 SPOILER_ATTACHMENT_PREFIX: function() {
-                    return v
+                    return m
                 },
                 FileUploadErrorTypes: function() {
                     return o
@@ -3333,8 +3333,8 @@
                 h = 16,
                 g = 32,
                 S = 64,
-                m = "---new-messages-bar",
-                v = "SPOILER_";
+                v = "---new-messages-bar",
+                m = "SPOILER_";
             (i = o || (o = {})).ERROR_SOURCE_UNKNOWN = "ERROR_SOURCE_UNKNOWN", i.PRECOMPRESSION_SUM_TOO_LARGE = "PRECOMPRESSION_SUM_TOO_LARGE", i.PRECOMPRESSION_INDIVIDUAL_FILE_TOO_LARGE = "PRECOMPRESSION_INDIVIDUAL_FILE_TOO_LARGE", i.POSTCOMPRESSION_SUM_TOO_LARGE = "POSTCOMPRESSION_SUM_TOO_LARGE", i.POSTCOMPRESSION_INDIVIDUAL_FILE_TOO_LARGE = "POSTCOMPRESSION_INDIVIDUAL_FILE_TOO_LARGE", i.UPLOAD_ATTACHMENT_MAX_SIZE_ERROR = "UPLOAD_MESSAGE_ATTACHMENT_MAX_SIZE_ERROR", (r = l || (l = {})).SYSTEM_DM_TAG_SYSTEM_TYPE = "a", r.BOT_TAG_SERVER_TYPE = "b", r.AI_TAG_TYPE = "c", r.BOT_TAG_BOT_TYPE = "d", r.REMIXING_TYPE = "e";
             let E = 209715200;
 
@@ -3577,361 +3577,367 @@
             "use strict";
             n.r(t), n.d(t, {
                 UseLegacyChatInput: function() {
-                    return ei
-                },
-                UseRichChatInput: function() {
                     return er
                 },
-                ExpressionSuggestionsEnabled: function() {
+                UseRichChatInput: function() {
                     return eo
                 },
-                IncludeStickersInAutocomplete: function() {
+                ExpressionSuggestionsEnabled: function() {
                     return el
                 },
-                RenderSpoilers: function() {
+                IncludeStickersInAutocomplete: function() {
                     return es
                 },
-                UseThreadSidebar: function() {
+                RenderSpoilers: function() {
                     return eu
                 },
-                EmojiPickerCollapsedSections: function() {
-                    return ec
+                UseThreadSidebar: function() {
+                    return ea
                 },
-                StickerPickerCollapsedSections: function() {
+                EmojiPickerCollapsedSections: function() {
                     return ed
                 },
-                SoundboardPickerCollapsedSections: function() {
+                StickerPickerCollapsedSections: function() {
                     return ef
                 },
-                ViewImageDescriptions: function() {
+                SoundboardPickerCollapsedSections: function() {
                     return eh
                 },
-                ShowCommandSuggestions: function() {
+                ViewImageDescriptions: function() {
                     return eg
                 },
-                AlwaysPreviewVideo: function() {
+                ShowCommandSuggestions: function() {
                     return eS
+                },
+                AlwaysPreviewVideo: function() {
+                    return ev
                 },
                 NotifyFriendsOnGoLive: function() {
                     return em
                 },
                 NOTIFICATION_CENTER_ACKED_BEFORE_ID_UNSET: function() {
-                    return ev
-                },
-                NotificationCenterAckedBeforeId: function() {
                     return eE
                 },
-                EnableBurstReactionNotifications: function() {
+                NotificationCenterAckedBeforeId: function() {
                     return ep
                 },
-                InstallShortcutDesktop: function() {
+                EnableBurstReactionNotifications: function() {
                     return eA
                 },
-                InstallShortcutStartMenu: function() {
+                InstallShortcutDesktop: function() {
                     return eT
                 },
-                AllowActivityPartyPrivacyFriends: function() {
+                InstallShortcutStartMenu: function() {
                     return eI
                 },
-                AllowActivityPartyPrivacyVoiceChannel: function() {
+                AllowActivityPartyPrivacyFriends: function() {
                     return eC
                 },
-                MessageRequestRestrictedGuildIds: function() {
-                    return e_
+                AllowActivityPartyPrivacyVoiceChannel: function() {
+                    return ey
                 },
-                MessageRequestRestrictedDefault: function() {
+                MessageRequestRestrictedGuildIds: function() {
                     return eN
                 },
-                NonSpamRetrainingOptIn: function() {
+                MessageRequestRestrictedDefault: function() {
                     return eR
                 },
-                DefaultGuildsRestricted: function() {
+                NonSpamRetrainingOptIn: function() {
                     return eO
                 },
-                RestrictedGuildIds: function() {
+                DefaultGuildsRestricted: function() {
                     return eL
                 },
-                FriendSourceFlagsSetting: function() {
+                RestrictedGuildIds: function() {
                     return eD
                 },
-                RtcPanelShowVoiceStates: function() {
+                FriendSourceFlagsSetting: function() {
                     return eP
                 },
-                ConvertEmoticons: function() {
+                RtcPanelShowVoiceStates: function() {
                     return eM
                 },
-                MessageDisplayCompact: function() {
+                ConvertEmoticons: function() {
                     return eb
                 },
-                SoundboardSettings: function() {
+                MessageDisplayCompact: function() {
                     return eF
                 },
-                DropsOptedOut: function() {
+                SoundboardSettings: function() {
                     return ew
                 },
-                AfkTimeout: function() {
+                DropsOptedOut: function() {
                     return eU
                 },
-                ViewNsfwGuilds: function() {
+                AfkTimeout: function() {
                     return ex
+                },
+                ViewNsfwGuilds: function() {
+                    return eB
                 },
                 ViewNsfwCommands: function() {
                     return ek
                 },
                 DisableGamesTab: function() {
-                    return eB
-                },
-                EnableTTSCommand: function() {
                     return eG
                 },
-                ExplicitContentFilter: function() {
+                EnableTTSCommand: function() {
                     return eH
                 },
-                DmSpamFilterV2: function() {
+                ExplicitContentFilter: function() {
                     return eV
                 },
-                ShowCurrentGame: function() {
+                DmSpamFilterV2: function() {
                     return eW
                 },
-                StatusSetting: function() {
-                    return ej
+                ShowCurrentGame: function() {
+                    return ez
                 },
-                CustomStatusSetting: function() {
+                StatusSetting: function() {
                     return eY
                 },
-                BroadcastAllowFriends: function() {
-                    return eK
+                CustomStatusSetting: function() {
+                    return eZ
                 },
-                BroadcastAllowedGuildIds: function() {
+                BroadcastAllowFriends: function() {
                     return eX
                 },
-                BroadcastAllowedUserIds: function() {
+                BroadcastAllowedGuildIds: function() {
                     return eq
                 },
-                BroadcastAutoBroadcast: function() {
+                BroadcastAllowedUserIds: function() {
                     return eJ
                 },
-                InlineAttachmentMedia: function() {
+                BroadcastAutoBroadcast: function() {
                     return eQ
                 },
-                InlineEmbedMedia: function() {
+                ClipsAllowVoiceRecording: function() {
                     return e$
                 },
-                RenderEmbeds: function() {
+                InlineAttachmentMedia: function() {
                     return e0
                 },
-                RenderReactions: function() {
+                InlineEmbedMedia: function() {
                     return e1
                 },
-                TimezoneOffset: function() {
+                RenderEmbeds: function() {
                     return e2
                 },
+                RenderReactions: function() {
+                    return e3
+                },
+                TimezoneOffset: function() {
+                    return e7
+                },
                 DeveloperMode: function() {
-                    return e4
-                },
-                ClientThemeSettings: function() {
-                    return e6
-                },
-                GifAutoPlay: function() {
                     return e8
                 },
-                AnimateEmoji: function() {
+                ClientThemeSettings: function() {
                     return e5
                 },
-                AnimateStickers: function() {
+                GifAutoPlay: function() {
                     return e9
                 },
-                ActivityRestrictedGuilds: function() {
+                AnimateEmoji: function() {
+                    return te
+                },
+                AnimateStickers: function() {
                     return tt
                 },
-                ActivityJoiningRestrictedGuilds: function() {
+                ActivityRestrictedGuilds: function() {
                     return ti
                 },
-                DefaultGuildsActivityRestricted: function() {
-                    return tr
-                },
-                DisableHomeAutoNav: function() {
+                ActivityJoiningRestrictedGuilds: function() {
                     return to
                 },
-                FamilyCenterEnabled: function() {
+                DefaultGuildsActivityRestricted: function() {
                     return tl
                 },
-                LegacyUsernameDisabled: function() {
+                DisableHomeAutoNav: function() {
                     return ts
                 },
-                ExplicitContentSettings: function() {
+                FamilyCenterEnabled: function() {
                     return tu
+                },
+                LegacyUsernameDisabled: function() {
+                    return ta
+                },
+                ExplicitContentSettings: function() {
+                    return tc
                 }
             });
-            var i, r, o, l, s, u, a, c, d, f, h, g, S, m, v, E, p, A, T, I, C, y, _, N, R, O, L, D, P, M, b, F, w, U, x, k, B, G, H, V, W, z, j, Y, Z, K = n("498225"),
-                X = n("975162"),
-                q = n("360687"),
-                J = n("357626"),
-                Q = n("281473"),
-                $ = n("186709"),
-                ee = n("568456"),
-                et = n("49111"),
-                en = n("560241");
-            let ei = (0, Q.defineProtoSetting)("textAndImages", "useLegacyChatInput", e => null !== (i = null == e ? void 0 : e.value) && void 0 !== i && i, e => q.BoolValue.create({
+            var i, r, o, l, s, u, a, c, d, f, h, g, S, v, m, E, p, A, T, I, C, y, _, N, R, O, L, D, P, M, b, F, w, U, x, B, k, G, H, V, W, z, j, Y, Z, K, X = n("498225"),
+                q = n("975162"),
+                J = n("360687"),
+                Q = n("357626"),
+                $ = n("281473"),
+                ee = n("186709"),
+                et = n("568456"),
+                en = n("49111"),
+                ei = n("560241");
+            let er = (0, $.defineProtoSetting)("textAndImages", "useLegacyChatInput", e => null !== (i = null == e ? void 0 : e.value) && void 0 !== i && i, e => J.BoolValue.create({
                     value: e
                 })),
-                er = (0, Q.defineProtoSetting)("textAndImages", "useRichChatInput", e => null === (r = null == e ? void 0 : e.value) || void 0 === r || r, e => q.BoolValue.create({
+                eo = (0, $.defineProtoSetting)("textAndImages", "useRichChatInput", e => null === (r = null == e ? void 0 : e.value) || void 0 === r || r, e => J.BoolValue.create({
                     value: e
                 })),
-                eo = (0, Q.defineProtoSetting)("textAndImages", "expressionSuggestionsEnabled", e => null === (o = null == e ? void 0 : e.value) || void 0 === o || o, e => q.BoolValue.create({
+                el = (0, $.defineProtoSetting)("textAndImages", "expressionSuggestionsEnabled", e => null === (o = null == e ? void 0 : e.value) || void 0 === o || o, e => J.BoolValue.create({
                     value: e
                 })),
-                el = (0, Q.defineProtoSetting)("textAndImages", "includeStickersInAutocomplete", e => null !== (l = null == e ? void 0 : e.value) && void 0 !== l && l, e => q.BoolValue.create({
+                es = (0, $.defineProtoSetting)("textAndImages", "includeStickersInAutocomplete", e => null !== (l = null == e ? void 0 : e.value) && void 0 !== l && l, e => J.BoolValue.create({
                     value: e
                 })),
-                es = (0, Q.defineProtoSetting)("textAndImages", "renderSpoilers", e => null !== (s = null == e ? void 0 : e.value) && void 0 !== s ? s : et.SpoilerRenderSetting.ON_CLICK, e => q.StringValue.create({
+                eu = (0, $.defineProtoSetting)("textAndImages", "renderSpoilers", e => null !== (s = null == e ? void 0 : e.value) && void 0 !== s ? s : en.SpoilerRenderSetting.ON_CLICK, e => J.StringValue.create({
                     value: e
                 })),
-                eu = (0, Q.defineProtoSetting)("textAndImages", "useThreadSidebar", e => null === (u = null == e ? void 0 : e.value) || void 0 === u || u, e => q.BoolValue.create({
+                ea = (0, $.defineProtoSetting)("textAndImages", "useThreadSidebar", e => null === (u = null == e ? void 0 : e.value) || void 0 === u || u, e => J.BoolValue.create({
                     value: e
                 }));
-            (0, Q.defineProtoSetting)("notifications", "showInAppNotifications", e => null === (a = null == e ? void 0 : e.value) || void 0 === a || a, e => q.BoolValue.create({
+            (0, $.defineProtoSetting)("notifications", "showInAppNotifications", e => null === (a = null == e ? void 0 : e.value) || void 0 === a || a, e => J.BoolValue.create({
                 value: e
             }));
-            let ea = [],
-                ec = (0, Q.defineProtoSetting)("textAndImages", "emojiPickerCollapsedSections", e => null != e ? e : ea, e => e),
-                ed = (0, Q.defineProtoSetting)("textAndImages", "stickerPickerCollapsedSections", e => null != e ? e : ea, e => e),
-                ef = (0, Q.defineProtoSetting)("textAndImages", "soundboardPickerCollapsedSections", e => null != e ? e : ea, e => e),
-                eh = (0, Q.defineProtoSetting)("textAndImages", "viewImageDescriptions", e => null !== (c = null == e ? void 0 : e.value) && void 0 !== c && c, e => q.BoolValue.create({
+            let ec = [],
+                ed = (0, $.defineProtoSetting)("textAndImages", "emojiPickerCollapsedSections", e => null != e ? e : ec, e => e),
+                ef = (0, $.defineProtoSetting)("textAndImages", "stickerPickerCollapsedSections", e => null != e ? e : ec, e => e),
+                eh = (0, $.defineProtoSetting)("textAndImages", "soundboardPickerCollapsedSections", e => null != e ? e : ec, e => e),
+                eg = (0, $.defineProtoSetting)("textAndImages", "viewImageDescriptions", e => null !== (c = null == e ? void 0 : e.value) && void 0 !== c && c, e => J.BoolValue.create({
                     value: e
                 })),
-                eg = (0, Q.defineProtoSetting)("textAndImages", "showCommandSuggestions", e => null === (d = null == e ? void 0 : e.value) || void 0 === d || d, e => q.BoolValue.create({
+                eS = (0, $.defineProtoSetting)("textAndImages", "showCommandSuggestions", e => null === (d = null == e ? void 0 : e.value) || void 0 === d || d, e => J.BoolValue.create({
                     value: e
                 })),
-                eS = (0, Q.defineProtoSetting)("voiceAndVideo", "alwaysPreviewVideo", e => null !== (f = null == e ? void 0 : e.value) && void 0 !== f && f, e => q.BoolValue.create({
+                ev = (0, $.defineProtoSetting)("voiceAndVideo", "alwaysPreviewVideo", e => null !== (f = null == e ? void 0 : e.value) && void 0 !== f && f, e => J.BoolValue.create({
                     value: e
                 })),
-                em = (0, Q.defineProtoSetting)("notifications", "notifyFriendsOnGoLive", e => null == e ? void 0 : e.value, e => q.BoolValue.create({
+                em = (0, $.defineProtoSetting)("notifications", "notifyFriendsOnGoLive", e => null == e ? void 0 : e.value, e => J.BoolValue.create({
                     value: e
                 })),
-                ev = "0",
-                eE = (0, Q.defineProtoSetting)("notifications", "notificationCenterAckedBeforeId", e => null != e ? e : ev, e => e),
-                ep = (0, Q.defineProtoSetting)("notifications", "enableBurstReactionNotifications", e => null === (h = null == e ? void 0 : e.value) || void 0 === h || h, e => q.BoolValue.create({
+                eE = "0",
+                ep = (0, $.defineProtoSetting)("notifications", "notificationCenterAckedBeforeId", e => null != e ? e : eE, e => e),
+                eA = (0, $.defineProtoSetting)("notifications", "enableBurstReactionNotifications", e => null === (h = null == e ? void 0 : e.value) || void 0 === h || h, e => J.BoolValue.create({
                     value: e
                 })),
-                eA = (0, Q.defineProtoSetting)("gameLibrary", "installShortcutDesktop", e => null !== (g = null == e ? void 0 : e.value) && void 0 !== g && g, e => q.BoolValue.create({
+                eT = (0, $.defineProtoSetting)("gameLibrary", "installShortcutDesktop", e => null !== (g = null == e ? void 0 : e.value) && void 0 !== g && g, e => J.BoolValue.create({
                     value: e
                 })),
-                eT = (0, Q.defineProtoSetting)("gameLibrary", "installShortcutStartMenu", e => null === (S = null == e ? void 0 : e.value) || void 0 === S || S, e => q.BoolValue.create({
+                eI = (0, $.defineProtoSetting)("gameLibrary", "installShortcutStartMenu", e => null === (S = null == e ? void 0 : e.value) || void 0 === S || S, e => J.BoolValue.create({
                     value: e
                 })),
-                eI = (0, Q.defineProtoSetting)("privacy", "allowActivityPartyPrivacyFriends", e => null === (m = null == e ? void 0 : e.value) || void 0 === m || m, e => q.BoolValue.create({
+                eC = (0, $.defineProtoSetting)("privacy", "allowActivityPartyPrivacyFriends", e => null === (v = null == e ? void 0 : e.value) || void 0 === v || v, e => J.BoolValue.create({
                     value: e
                 })),
-                eC = (0, Q.defineProtoSetting)("privacy", "allowActivityPartyPrivacyVoiceChannel", e => null === (v = null == e ? void 0 : e.value) || void 0 === v || v, e => q.BoolValue.create({
+                ey = (0, $.defineProtoSetting)("privacy", "allowActivityPartyPrivacyVoiceChannel", e => null === (m = null == e ? void 0 : e.value) || void 0 === m || m, e => J.BoolValue.create({
                     value: e
                 })),
-                ey = [],
-                e_ = (0, Q.defineProtoSetting)("privacy", "messageRequestRestrictedGuildIds", e => null != e ? e : ey, e => e),
-                eN = (0, Q.defineProtoSetting)("privacy", "defaultMessageRequestRestricted", e => null !== (E = null == e ? void 0 : e.value) && void 0 !== E && E, e => q.BoolValue.create({
+                e_ = [],
+                eN = (0, $.defineProtoSetting)("privacy", "messageRequestRestrictedGuildIds", e => null != e ? e : e_, e => e),
+                eR = (0, $.defineProtoSetting)("privacy", "defaultMessageRequestRestricted", e => null !== (E = null == e ? void 0 : e.value) && void 0 !== E && E, e => J.BoolValue.create({
                     value: e
                 })),
-                eR = (0, Q.defineProtoSetting)("privacy", "nonSpamRetrainingOptIn", e => null == e ? void 0 : e.value, e => null == e ? void 0 : q.BoolValue.create({
+                eO = (0, $.defineProtoSetting)("privacy", "nonSpamRetrainingOptIn", e => null == e ? void 0 : e.value, e => null == e ? void 0 : J.BoolValue.create({
                     value: e
                 }));
-            (0, Q.defineProtoSetting)("privacy", "contactSyncEnabled", e => null !== (p = null == e ? void 0 : e.value) && void 0 !== p && p, e => q.BoolValue.create({
+            (0, $.defineProtoSetting)("privacy", "contactSyncEnabled", e => null !== (p = null == e ? void 0 : e.value) && void 0 !== p && p, e => J.BoolValue.create({
                 value: e
             }));
-            let eO = (0, Q.defineProtoSetting)("privacy", "defaultGuildsRestricted", e => null != e && e, e => e),
-                eL = (0, Q.defineProtoSetting)("privacy", "restrictedGuildIds", e => null != e ? e : [], e => e);
-            (0, Q.defineProtoSetting)("privacy", "friendDiscoveryFlags", e => null !== (A = null == e ? void 0 : e.value) && void 0 !== A ? A : 0, e => q.UInt32Value.create({
+            let eL = (0, $.defineProtoSetting)("privacy", "defaultGuildsRestricted", e => null != e && e, e => e),
+                eD = (0, $.defineProtoSetting)("privacy", "restrictedGuildIds", e => null != e ? e : [], e => e);
+            (0, $.defineProtoSetting)("privacy", "friendDiscoveryFlags", e => null !== (A = null == e ? void 0 : e.value) && void 0 !== A ? A : 0, e => J.UInt32Value.create({
                 value: e
             }));
-            let eD = (0, Q.defineProtoSetting)("privacy", "friendSourceFlags", e => null !== (T = null == e ? void 0 : e.value) && void 0 !== T ? T : et.AllFriendSourceFlags, e => q.UInt32Value.create({
+            let eP = (0, $.defineProtoSetting)("privacy", "friendSourceFlags", e => null !== (T = null == e ? void 0 : e.value) && void 0 !== T ? T : en.AllFriendSourceFlags, e => J.UInt32Value.create({
                     value: e
                 })),
-                eP = (0, Q.defineProtoSetting)("debug", "rtcPanelShowVoiceStates", e => null !== (I = null == e ? void 0 : e.value) && void 0 !== I && I, e => q.BoolValue.create({
+                eM = (0, $.defineProtoSetting)("debug", "rtcPanelShowVoiceStates", e => null !== (I = null == e ? void 0 : e.value) && void 0 !== I && I, e => J.BoolValue.create({
                     value: e
                 })),
-                eM = (0, Q.defineProtoSetting)("textAndImages", "convertEmoticons", e => null === (C = null == e ? void 0 : e.value) || void 0 === C || C, e => q.BoolValue.create({
+                eb = (0, $.defineProtoSetting)("textAndImages", "convertEmoticons", e => null === (C = null == e ? void 0 : e.value) || void 0 === C || C, e => J.BoolValue.create({
                     value: e
                 })),
-                eb = (0, Q.defineProtoSetting)("textAndImages", "messageDisplayCompact", e => null !== (y = null == e ? void 0 : e.value) && void 0 !== y && y, e => q.BoolValue.create({
+                eF = (0, $.defineProtoSetting)("textAndImages", "messageDisplayCompact", e => null !== (y = null == e ? void 0 : e.value) && void 0 !== y && y, e => J.BoolValue.create({
                     value: e
                 })),
-                eF = (0, Q.defineProtoSetting)("voiceAndVideo", "soundboardSettings", e => e, e => e);
-            (0, Q.defineProtoSetting)("voiceAndVideo", "streamNotificationsEnabled", e => null === (_ = null == e ? void 0 : e.value) || void 0 === _ || _, e => q.BoolValue.create({
+                ew = (0, $.defineProtoSetting)("voiceAndVideo", "soundboardSettings", e => e, e => e);
+            (0, $.defineProtoSetting)("voiceAndVideo", "streamNotificationsEnabled", e => null === (_ = null == e ? void 0 : e.value) || void 0 === _ || _, e => J.BoolValue.create({
                 value: e
             }));
-            let ew = (0, Q.defineProtoSetting)("privacy", "dropsOptedOut", e => null !== (N = null == e ? void 0 : e.value) && void 0 !== N && N, e => q.BoolValue.create({
+            let eU = (0, $.defineProtoSetting)("privacy", "dropsOptedOut", e => null !== (N = null == e ? void 0 : e.value) && void 0 !== N && N, e => J.BoolValue.create({
                 value: e
             }));
-            (0, Q.defineProtoSetting)("voiceAndVideo", "nativePhoneIntegrationEnabled", e => null === (R = null == e ? void 0 : e.value) || void 0 === R || R, e => q.BoolValue.create({
+            (0, $.defineProtoSetting)("voiceAndVideo", "nativePhoneIntegrationEnabled", e => null === (R = null == e ? void 0 : e.value) || void 0 === R || R, e => J.BoolValue.create({
                 value: e
             }));
-            let eU = (0, Q.defineProtoSetting)("voiceAndVideo", "afkTimeout", e => null !== (O = null == e ? void 0 : e.value) && void 0 !== O ? O : 600, e => q.UInt32Value.create({
+            let ex = (0, $.defineProtoSetting)("voiceAndVideo", "afkTimeout", e => null !== (O = null == e ? void 0 : e.value) && void 0 !== O ? O : 600, e => J.UInt32Value.create({
                     value: e
                 })),
-                ex = (0, Q.defineProtoSetting)("textAndImages", "viewNsfwGuilds", e => null !== (L = null == e ? void 0 : e.value) && void 0 !== L && L, e => q.BoolValue.create({
+                eB = (0, $.defineProtoSetting)("textAndImages", "viewNsfwGuilds", e => null !== (L = null == e ? void 0 : e.value) && void 0 !== L && L, e => J.BoolValue.create({
                     value: e
                 })),
-                ek = (0, Q.defineProtoSetting)("textAndImages", "viewNsfwCommands", e => null !== (D = null == e ? void 0 : e.value) && void 0 !== D && D, e => q.BoolValue.create({
+                ek = (0, $.defineProtoSetting)("textAndImages", "viewNsfwCommands", e => null !== (D = null == e ? void 0 : e.value) && void 0 !== D && D, e => J.BoolValue.create({
                     value: e
                 }));
-            (0, Q.defineProtoSetting)("privacy", "detectPlatformAccounts", e => null === (P = null == e ? void 0 : e.value) || void 0 === P || P, e => q.BoolValue.create({
+            (0, $.defineProtoSetting)("privacy", "detectPlatformAccounts", e => null === (P = null == e ? void 0 : e.value) || void 0 === P || P, e => J.BoolValue.create({
                 value: e
             }));
-            let eB = (0, Q.defineProtoSetting)("gameLibrary", "disableGamesTab", e => null !== (M = null == e ? void 0 : e.value) && void 0 !== M && M, e => q.BoolValue.create({
+            let eG = (0, $.defineProtoSetting)("gameLibrary", "disableGamesTab", e => null !== (M = null == e ? void 0 : e.value) && void 0 !== M && M, e => J.BoolValue.create({
                     value: e
                 })),
-                eG = (0, Q.defineProtoSetting)("textAndImages", "enableTtsCommand", e => null === (b = null == e ? void 0 : e.value) || void 0 === b || b, e => q.BoolValue.create({
+                eH = (0, $.defineProtoSetting)("textAndImages", "enableTtsCommand", e => null === (b = null == e ? void 0 : e.value) || void 0 === b || b, e => J.BoolValue.create({
                     value: e
                 })),
-                eH = (0, Q.defineProtoSetting)("textAndImages", "explicitContentFilter", e => null !== (F = null == e ? void 0 : e.value) && void 0 !== F ? F : ee.ExplicitContentFilterTypes.NON_FRIENDS, e => q.UInt32Value.create({
+                eV = (0, $.defineProtoSetting)("textAndImages", "explicitContentFilter", e => null !== (F = null == e ? void 0 : e.value) && void 0 !== F ? F : et.ExplicitContentFilterTypes.NON_FRIENDS, e => J.UInt32Value.create({
                     value: e
                 }));
-            (0, Q.defineProtoSetting)("textAndImages", "dmSpamFilter", e => null !== (w = null == e ? void 0 : e.value) && void 0 !== w ? w : ee.DmSpamFilterTypes.NON_FRIENDS, e => q.UInt32Value.create({
+            (0, $.defineProtoSetting)("textAndImages", "dmSpamFilter", e => null !== (w = null == e ? void 0 : e.value) && void 0 !== w ? w : et.DmSpamFilterTypes.NON_FRIENDS, e => J.UInt32Value.create({
                 value: e
             }));
-            let eV = (0, Q.defineProtoSetting)("textAndImages", "dmSpamFilterV2", e => null != e ? e : X.DmSpamFilterV2.DEFAULT_UNSET, e => e),
-                eW = (0, Q.defineProtoSetting)("status", "showCurrentGame", e => null === (U = null == e ? void 0 : e.value) || void 0 === U || U, e => q.BoolValue.create({
+            let eW = (0, $.defineProtoSetting)("textAndImages", "dmSpamFilterV2", e => null != e ? e : q.DmSpamFilterV2.DEFAULT_UNSET, e => e),
+                ez = (0, $.defineProtoSetting)("status", "showCurrentGame", e => null === (U = null == e ? void 0 : e.value) || void 0 === U || U, e => J.BoolValue.create({
                     value: e
                 })),
-                ez = new Set(Object.values(et.StatusTypes)),
-                ej = (0, Q.defineProtoSetting)("status", "status", e => null != e && ez.has(e.value) ? e.value : et.StatusTypes.UNKNOWN, e => q.StringValue.create({
+                ej = new Set(Object.values(en.StatusTypes)),
+                eY = (0, $.defineProtoSetting)("status", "status", e => null != e && ej.has(e.value) ? e.value : en.StatusTypes.UNKNOWN, e => J.StringValue.create({
                     value: e
                 })),
-                eY = (0, Q.defineProtoSetting)("status", "customStatus", e => e, e => e),
-                eZ = [],
-                eK = (0, Q.defineProtoSetting)("broadcast", "allowFriends", e => null == e ? void 0 : e.value, e => q.BoolValue.create({
+                eZ = (0, $.defineProtoSetting)("status", "customStatus", e => e, e => e),
+                eK = [],
+                eX = (0, $.defineProtoSetting)("broadcast", "allowFriends", e => null == e ? void 0 : e.value, e => J.BoolValue.create({
                     value: e
                 })),
-                eX = (0, Q.defineProtoSetting)("broadcast", "allowedGuildIds", e => null != e ? e : eZ, e => e),
-                eq = (0, Q.defineProtoSetting)("broadcast", "allowedUserIds", e => null != e ? e : eZ, e => e),
-                eJ = (0, Q.defineProtoSetting)("broadcast", "autoBroadcast", e => null !== (x = null == e ? void 0 : e.value) && void 0 !== x && x, e => q.BoolValue.create({
+                eq = (0, $.defineProtoSetting)("broadcast", "allowedGuildIds", e => null != e ? e : eK, e => e),
+                eJ = (0, $.defineProtoSetting)("broadcast", "allowedUserIds", e => null != e ? e : eK, e => e),
+                eQ = (0, $.defineProtoSetting)("broadcast", "autoBroadcast", e => null !== (x = null == e ? void 0 : e.value) && void 0 !== x && x, e => J.BoolValue.create({
                     value: e
                 })),
-                eQ = (0, Q.wrapSettingWithSelectiveSyncing)((0, Q.defineProtoSetting)("textAndImages", "inlineAttachmentMedia", e => null === (k = null == e ? void 0 : e.value) || void 0 === k || k, e => q.BoolValue.create({
+                e$ = (0, $.defineProtoSetting)("clips", "allowVoiceRecording", e => null === (B = null == e ? void 0 : e.value) || void 0 === B || B, e => J.BoolValue.create({
+                    value: e
+                })),
+                e0 = (0, $.wrapSettingWithSelectiveSyncing)((0, $.defineProtoSetting)("textAndImages", "inlineAttachmentMedia", e => null === (k = null == e ? void 0 : e.value) || void 0 === k || k, e => J.BoolValue.create({
                     value: e
                 })), "text", "inlineAttachmentMedia"),
-                e$ = (0, Q.wrapSettingWithSelectiveSyncing)((0, Q.defineProtoSetting)("textAndImages", "inlineEmbedMedia", e => null === (B = null == e ? void 0 : e.value) || void 0 === B || B, e => q.BoolValue.create({
+                e1 = (0, $.wrapSettingWithSelectiveSyncing)((0, $.defineProtoSetting)("textAndImages", "inlineEmbedMedia", e => null === (G = null == e ? void 0 : e.value) || void 0 === G || G, e => J.BoolValue.create({
                     value: e
                 })), "text", "inlineEmbedMedia"),
-                e0 = (0, Q.wrapSettingWithSelectiveSyncing)((0, Q.defineProtoSetting)("textAndImages", "renderEmbeds", e => null === (G = null == e ? void 0 : e.value) || void 0 === G || G, e => q.BoolValue.create({
+                e2 = (0, $.wrapSettingWithSelectiveSyncing)((0, $.defineProtoSetting)("textAndImages", "renderEmbeds", e => null === (H = null == e ? void 0 : e.value) || void 0 === H || H, e => J.BoolValue.create({
                     value: e
                 })), "text", "renderEmbeds"),
-                e1 = (0, Q.wrapSettingWithSelectiveSyncing)((0, Q.defineProtoSetting)("textAndImages", "renderReactions", e => null === (H = null == e ? void 0 : e.value) || void 0 === H || H, e => q.BoolValue.create({
+                e3 = (0, $.wrapSettingWithSelectiveSyncing)((0, $.defineProtoSetting)("textAndImages", "renderReactions", e => null === (V = null == e ? void 0 : e.value) || void 0 === V || V, e => J.BoolValue.create({
                     value: e
                 })), "text", "renderReactions"),
-                e2 = (0, Q.defineProtoSetting)("localization", "timezoneOffset", e => null !== (V = null == e ? void 0 : e.value) && void 0 !== V ? V : null, e => q.Int32Value.create({
+                e7 = (0, $.defineProtoSetting)("localization", "timezoneOffset", e => null !== (W = null == e ? void 0 : e.value) && void 0 !== W ? W : null, e => J.Int32Value.create({
                     value: null != e ? e : 0
                 }));
-            (0, Q.defineProtoSetting)("appearance", "mobileRedesignDisabled", e => null != e && e, e => e);
-            let e3 = new Set([J.ChannelListLayoutSettings.HYBRID, J.ChannelListLayoutSettings.COZY, J.ChannelListLayoutSettings.COMPACT, J.ChannelListLayoutSettings.MINIMAL]);
-            (0, Q.defineProtoSetting)("appearance", "channelListLayout", e => null != e && e3.has(e.value) ? e.value : J.ChannelListLayoutSettings.HYBRID, e => q.StringValue.create({
+            (0, $.defineProtoSetting)("appearance", "mobileRedesignDisabled", e => null != e && e, e => e);
+            let e4 = new Set([Q.ChannelListLayoutSettings.HYBRID, Q.ChannelListLayoutSettings.COZY, Q.ChannelListLayoutSettings.COMPACT, Q.ChannelListLayoutSettings.MINIMAL]);
+            (0, $.defineProtoSetting)("appearance", "channelListLayout", e => null != e && e4.has(e.value) ? e.value : Q.ChannelListLayoutSettings.HYBRID, e => J.StringValue.create({
                 value: e
             }));
-            let e7 = new Set([J.MessagePreviewSettings.DEFAULT, J.MessagePreviewSettings.ALL, J.MessagePreviewSettings.UNREADS, J.MessagePreviewSettings.NONE]);
-            (0, Q.defineProtoSetting)("appearance", "messagePreviews", e => null != e && e7.has(e.value) ? e.value : J.MessagePreviewSettings.DEFAULT, e => q.StringValue.create({
+            let e6 = new Set([Q.MessagePreviewSettings.DEFAULT, Q.MessagePreviewSettings.ALL, Q.MessagePreviewSettings.UNREADS, Q.MessagePreviewSettings.NONE]);
+            (0, $.defineProtoSetting)("appearance", "messagePreviews", e => null != e && e6.has(e.value) ? e.value : Q.MessagePreviewSettings.DEFAULT, e => J.StringValue.create({
                 value: e
             }));
-            let e4 = (0, Q.wrapSettingWithSelectiveSyncing)((0, Q.defineProtoSetting)("appearance", "developerMode", e => null != e && e, e => e), "appearance", "developerMode"),
-                e6 = (0, Q.defineProtoSetting)("appearance", "clientThemeSettings", e => {
+            let e8 = (0, $.wrapSettingWithSelectiveSyncing)((0, $.defineProtoSetting)("appearance", "developerMode", e => null != e && e, e => e), "appearance", "developerMode"),
+                e5 = (0, $.defineProtoSetting)("appearance", "clientThemeSettings", e => {
                     let {
                         backgroundGradientPresetId: t,
                         backgroundGradientAngle: n
@@ -3946,65 +3952,65 @@
                         backgroundGradientAngle: n
                     } = e;
                     return {
-                        backgroundGradientPresetId: null != t ? q.UInt32Value.create({
+                        backgroundGradientPresetId: null != t ? J.UInt32Value.create({
                             value: t
                         }) : void 0,
-                        backgroundGradientAngle: null != n ? q.FloatValue.create({
+                        backgroundGradientAngle: null != n ? J.FloatValue.create({
                             value: n
                         }) : void 0
                     }
                 }),
-                e8 = (0, Q.wrapSettingWithOverride)((0, Q.wrapSettingWithSelectiveSyncing)((0, Q.defineProtoSetting)("textAndImages", "gifAutoPlay", e => null === (W = null == e ? void 0 : e.value) || void 0 === W || W, e => q.BoolValue.create({
+                e9 = (0, $.wrapSettingWithOverride)((0, $.wrapSettingWithSelectiveSyncing)((0, $.defineProtoSetting)("textAndImages", "gifAutoPlay", e => null === (z = null == e ? void 0 : e.value) || void 0 === z || z, e => J.BoolValue.create({
                     value: e
                 })), "text", "gifAutoPlay"), "gifAutoPlay", () => {
                     var e;
-                    return null === (e = $.default.getOverride("gifAutoPlay")) || void 0 === e ? void 0 : e.value
-                }, () => (0, K.useStateFromStores)([$.default], () => {
+                    return null === (e = ee.default.getOverride("gifAutoPlay")) || void 0 === e ? void 0 : e.value
+                }, () => (0, X.useStateFromStores)([ee.default], () => {
                     var e;
-                    return null === (e = $.default.getOverride("gifAutoPlay")) || void 0 === e ? void 0 : e.value
+                    return null === (e = ee.default.getOverride("gifAutoPlay")) || void 0 === e ? void 0 : e.value
                 })),
-                e5 = (0, Q.wrapSettingWithOverride)((0, Q.wrapSettingWithSelectiveSyncing)((0, Q.defineProtoSetting)("textAndImages", "animateEmoji", e => null === (z = null == e ? void 0 : e.value) || void 0 === z || z, e => q.BoolValue.create({
+                te = (0, $.wrapSettingWithOverride)((0, $.wrapSettingWithSelectiveSyncing)((0, $.defineProtoSetting)("textAndImages", "animateEmoji", e => null === (j = null == e ? void 0 : e.value) || void 0 === j || j, e => J.BoolValue.create({
                     value: e
                 })), "text", "animateEmoji"), "animateEmoji", () => {
                     var e;
-                    return null === (e = $.default.getOverride("animateEmoji")) || void 0 === e ? void 0 : e.value
-                }, () => (0, K.useStateFromStores)([$.default], () => {
+                    return null === (e = ee.default.getOverride("animateEmoji")) || void 0 === e ? void 0 : e.value
+                }, () => (0, X.useStateFromStores)([ee.default], () => {
                     var e;
-                    return null === (e = $.default.getOverride("animateEmoji")) || void 0 === e ? void 0 : e.value
+                    return null === (e = ee.default.getOverride("animateEmoji")) || void 0 === e ? void 0 : e.value
                 })),
-                e9 = (0, Q.wrapSettingWithOverride)((0, Q.wrapSettingWithSelectiveSyncing)((0, Q.defineProtoSetting)("textAndImages", "animateStickers", e => null !== (j = null == e ? void 0 : e.value) && void 0 !== j ? j : en.StickerAnimationSettings.ALWAYS_ANIMATE, e => q.UInt32Value.create({
+                tt = (0, $.wrapSettingWithOverride)((0, $.wrapSettingWithSelectiveSyncing)((0, $.defineProtoSetting)("textAndImages", "animateStickers", e => null !== (Y = null == e ? void 0 : e.value) && void 0 !== Y ? Y : ei.StickerAnimationSettings.ALWAYS_ANIMATE, e => J.UInt32Value.create({
                     value: e
                 })), "text", "animateStickers"), "animateStickers", () => {
                     var e;
-                    return null === (e = $.default.getOverride("animateStickers")) || void 0 === e ? void 0 : e.value
-                }, () => (0, K.useStateFromStores)([$.default], () => {
+                    return null === (e = ee.default.getOverride("animateStickers")) || void 0 === e ? void 0 : e.value
+                }, () => (0, X.useStateFromStores)([ee.default], () => {
                     var e;
-                    return null === (e = $.default.getOverride("animateStickers")) || void 0 === e ? void 0 : e.value
+                    return null === (e = ee.default.getOverride("animateStickers")) || void 0 === e ? void 0 : e.value
                 })),
-                te = [],
-                tt = (0, Q.defineProtoSetting)("privacy", "activityRestrictedGuildIds", e => null != e ? e : te, e => e),
                 tn = [],
-                ti = (0, Q.defineProtoSetting)("privacy", "activityJoiningRestrictedGuildIds", e => null != e ? e : tn, e => e),
-                tr = (0, Q.defineProtoSetting)("privacy", "defaultGuildsActivityRestricted", e => e === X.GuildActivityStatusRestrictionDefault.ON_FOR_LARGE_GUILDS, e => !0 === e ? X.GuildActivityStatusRestrictionDefault.ON_FOR_LARGE_GUILDS : X.GuildActivityStatusRestrictionDefault.OFF),
-                to = (0, Q.defineProtoSetting)("communities", "disableHomeAutoNav", e => null !== (Y = null == e ? void 0 : e.value) && void 0 !== Y && Y, e => q.BoolValue.create({
+                ti = (0, $.defineProtoSetting)("privacy", "activityRestrictedGuildIds", e => null != e ? e : tn, e => e),
+                tr = [],
+                to = (0, $.defineProtoSetting)("privacy", "activityJoiningRestrictedGuildIds", e => null != e ? e : tr, e => e),
+                tl = (0, $.defineProtoSetting)("privacy", "defaultGuildsActivityRestricted", e => e === q.GuildActivityStatusRestrictionDefault.ON_FOR_LARGE_GUILDS, e => !0 === e ? q.GuildActivityStatusRestrictionDefault.ON_FOR_LARGE_GUILDS : q.GuildActivityStatusRestrictionDefault.OFF),
+                ts = (0, $.defineProtoSetting)("communities", "disableHomeAutoNav", e => null !== (Z = null == e ? void 0 : e.value) && void 0 !== Z && Z, e => J.BoolValue.create({
                     value: e
                 })),
-                tl = (0, Q.defineProtoSetting)("privacy", "familyCenterEnabledV2", e => null == e ? void 0 : e.value, e => q.BoolValue.create({
+                tu = (0, $.defineProtoSetting)("privacy", "familyCenterEnabledV2", e => null == e ? void 0 : e.value, e => J.BoolValue.create({
                     value: e
                 })),
-                ts = (0, Q.defineProtoSetting)("privacy", "hideLegacyUsername", e => null !== (Z = null == e ? void 0 : e.value) && void 0 !== Z && Z, e => q.BoolValue.create({
+                ta = (0, $.defineProtoSetting)("privacy", "hideLegacyUsername", e => null !== (K = null == e ? void 0 : e.value) && void 0 !== K && K, e => J.BoolValue.create({
                     value: e
                 })),
-                tu = (0, Q.defineProtoSetting)("textAndImages", "explicitContentSettings", e => {
+                tc = (0, $.defineProtoSetting)("textAndImages", "explicitContentSettings", e => {
                     let {
                         explicitContentGuilds: t,
                         explicitContentFriendDm: n,
                         explicitContentNonFriendDm: i
                     } = null != e ? e : {};
                     return {
-                        explicitContentGuilds: null != t ? t : X.ExplicitContentRedaction.UNSET_EXPLICIT_CONTENT_REDACTION,
-                        explicitContentFriendDm: null != n ? n : X.ExplicitContentRedaction.UNSET_EXPLICIT_CONTENT_REDACTION,
-                        explicitContentNonFriendDm: null != i ? i : X.ExplicitContentRedaction.UNSET_EXPLICIT_CONTENT_REDACTION
+                        explicitContentGuilds: null != t ? t : q.ExplicitContentRedaction.UNSET_EXPLICIT_CONTENT_REDACTION,
+                        explicitContentFriendDm: null != n ? n : q.ExplicitContentRedaction.UNSET_EXPLICIT_CONTENT_REDACTION,
+                        explicitContentNonFriendDm: null != i ? i : q.ExplicitContentRedaction.UNSET_EXPLICIT_CONTENT_REDACTION
                     }
                 }, e => {
                     let {
@@ -4143,8 +4149,8 @@
                 h = n("374363"),
                 g = n("116949"),
                 S = n("397336"),
-                m = n("49111");
-            let v = "UserSettingsProtoLastWriteTimes",
+                v = n("49111");
+            let m = "UserSettingsProtoLastWriteTimes",
                 E = Date.now();
             c.default.subscribe("CONNECTION_OPEN", () => {
                 Date.now()
@@ -4220,8 +4226,8 @@
                 }
                 saveLastSendTime() {
                     var e;
-                    let t = null !== (e = a.default.get(v)) && void 0 !== e ? e : {};
-                    t[this.type] = Date.now(), a.default.set(v, t)
+                    let t = null !== (e = a.default.get(m)) && void 0 !== e ? e : {};
+                    t[this.type] = Date.now(), a.default.set(m, t)
                 }
                 async loadIfNecessary(e) {
                     if (__OVERLAY__) {
@@ -4244,7 +4250,7 @@
                                     settings: t
                                 }
                             } = await l.default.get({
-                                url: m.Endpoints.USER_SETTINGS_PROTO(this.type)
+                                url: v.Endpoints.USER_SETTINGS_PROTO(this.type)
                             }), n = (0, g.b64ToProto)(this.ProtoClass, t);
                             if (null == n) {
                                 this.dispatchChanges({
@@ -4335,7 +4341,7 @@
                             let {
                                 body: n
                             } = await l.default.patch({
-                                url: m.Endpoints.USER_SETTINGS_PROTO(this.type),
+                                url: v.Endpoints.USER_SETTINGS_PROTO(this.type),
                                 body: {
                                     settings: t,
                                     required_data_version: e.offlineEditDataVersion
@@ -4363,7 +4369,7 @@
                                     rateLimited: !0,
                                     timeout: t
                                 })
-                            } else if (400 === e.status && (null === (n = e.body) || void 0 === n ? void 0 : n.code) === m.AbortCodes.INVALID_USER_SETTINGS_DATA) throw this.logger.log("Reloading do to invalid data"), this.loadIfNecessary(!0), e;
+                            } else if (400 === e.status && (null === (n = e.body) || void 0 === n ? void 0 : n.code) === v.AbortCodes.INVALID_USER_SETTINGS_DATA) throw this.logger.log("Reloading do to invalid data"), this.loadIfNecessary(!0), e;
                             else throw this.logger.log("Unknown user settings error"), e
                         }
                     }, this.logger = new o.default(this.ProtoClass.typeName)
@@ -4499,16 +4505,16 @@
                     wrap: h = f.NO_WRAP,
                     shrink: g,
                     grow: S,
-                    basis: m,
-                    style: v,
+                    basis: v,
+                    style: m,
                     ...E
                 } = e;
                 return (0, i.jsx)("div", {
                     style: {
                         flexShrink: g,
                         flexGrow: S,
-                        flexBasis: m,
-                        ...v
+                        flexBasis: v,
+                        ...m
                     },
                     className: l(s.flex, r, o, u, h, n),
                     ...E,
@@ -4650,4 +4656,4 @@
         }
     }
 ]);
-//# sourceMappingURL=4ae4bc2010679a6f8a06.js.map
+//# sourceMappingURL=9dba2f8f1ec8e4087c9c.js.map

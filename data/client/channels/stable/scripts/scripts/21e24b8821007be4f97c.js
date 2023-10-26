@@ -171,8 +171,8 @@
                 CHARACTER_COUNT_AT_LIMIT: "Message is at max length",
                 CHARACTER_COUNT_CLOSE_TO_LIMIT: "{count} characters remaining",
                 CHARACTER_COUNT_OVER_LIMIT: "Message is too long",
-                CHANNEL_SETTINGS_SUMMARIES_TOGGLE: "Summaries",
-                CHANNEL_SETTINGS_SUMMARIES_TOGGLE_DESCRIPTION: "Enable Summaries for this channel. The Summaries feature uses OpenAI technology to quickly surface topics in any text channel, get a conversation preview and the number of messages in a specific topic, and indicate who is in the discussion. [Learn More]({helpdeskArticle})",
+                CHANNEL_SETTINGS_SUMMARIES_TOGGLE: "Enable Channel Summaries",
+                CHANNEL_SETTINGS_SUMMARIES_TOGGLE_DESCRIPTION: "If turned off, nobody will see the Summaries in this channel. [Learn More]({helpdeskArticle})",
                 CHANNEL_TOOLTIP_VOICE: "Voice",
                 CHANNEL_TOOLTIP_VOICE_LIMITED: "Voice (Limited)",
                 CHANNEL_TOOLTIP_VOICE_LOCKED: "Voice (Locked)",
@@ -2310,6 +2310,7 @@
                 CLYDE_GENERATE_PERSONALITY: "Generate",
                 CLYDE_GENERATE_PERSONALITY_HINT: "Generate a more detailed personality",
                 CLYDE_GENERATE_PERSONALITY_UNDO: "Undo generated personality",
+                CLYDE_EDIT_NAME_LABEL: "Name",
                 CLYDE_USER_RATING_THANKS_1: "Clyde's neurons are buzzing \uD83E\uDDE0",
                 CLYDE_USER_RATING_THANKS_2: "Your feedback is the secret sauce \uD83C\uDF1F",
                 CLYDE_USER_RATING_THANKS_3: "You're helping Clyde evolve one byte at a time \uD83D\uDE4C",
@@ -10059,6 +10060,7 @@
                 APPLICATION_IFRAME_MODAL_LOAD_ERROR: "There was an error trying to load the application.",
                 INTERACTION_RATE_LIMITED: "Slow down! You're clicking too fast.",
                 APPLICATION_ADD_TO_SERVER: "Add to Server",
+                APPLICATION_ADD_BUTTON: "Add App",
                 APPLICATION_ADD_TO_SERVER_ACTIONS: "Add to Server Actions",
                 APPLICATION_ADD_TO_SERVER_ACTIONS_COPY: "Copy Add to Server URL",
                 COMMANDS_SCOPE_MIGRATION_OVERVIEW_TOOLTIP: "Members can't use this bot until you turn on permissions.",
@@ -14203,8 +14205,8 @@
                 GUILD_SETTINGS_UPDATE_PERMISSIONS: "Update Permissions",
                 GUILD_SETTINGS_REVIEW_PERMISSIONS: "Review Permissions",
                 GUILD_SETTINGS_CHANNEL_SETTINGS: "Channel Settings",
-                GUILD_SETTINGS_SUMMARIES_TOGGLE: "Summaries",
-                GUILD_SETTINGS_SUMMARIES_TOGGLE_DESCRIPTION: "Enable Summaries for this server. The Summaries feature uses OpenAI technology to quickly surface topics in any text channel, get a conversation preview and the number of messages in a specific topic, and indicate who is in the discussion. [Learn More]({helpdeskArticle})",
+                GUILD_SETTINGS_SUMMARIES_TOGGLE: "Enable Channel Summaries",
+                GUILD_SETTINGS_SUMMARIES_TOGGLE_DESCRIPTION: "Enable Channel Summaries for this server to help your members catch up and dive into discussions. In text channels, members will be able to see a list of topics being discussed and which members are involved. [Learn More]({helpdeskArticle})",
                 UNLOCK: "Unlock",
                 DEFAULT_CHANNELS_PREVIEW_HEADER: "Preview",
                 DEFAULT_CHANNELS_PREVIEW_EMPTY_STATE: "Add 5-10 channels that all users will see!",
@@ -15773,6 +15775,8 @@
                 CLIPS_NITRO_EA_ANNOUNCEMENT_COACHMARK_CTA_SUBS: "Got it",
                 CLIPS_NITRO_EA_ANNOUNCEMENT_COACHMARK_CTA_NON_SUBS: "Get Nitro",
                 CLIPS_UNTITLED: "Untitled",
+                CLIPS_SETTINGS_OPT_OUT_OF_VOICE_RECORDING: "Allow my voice to be recorded in Clips",
+                CLIPS_SETTINGS_OPT_OUT_OF_VOICE_RECORDING_DESCRIPTION: "By turning on this setting, your voice may be included when someone in the same voice channel uses Clips.",
                 SOUND_INCOMING_RING_HALLOWEEN: "Halloween Incoming Ring",
                 CUSTOM_SOUNDS: "Custom Sounds",
                 ENABLE_PHONE_INTEGRATION: "Enable integration with the Phone app to experience this.",
@@ -15989,6 +15993,9 @@
                 GUILD_SCHEDULED_EVENT_VIEW_MORE_RECURRENCES: "View future events",
                 GUILD_SCHEDULED_EVENT_RECURRENCE_RULE: "Repeats {recurrenceRule}",
                 GUILD_SCHEDULED_EVENT_REPEATS: "Repeats on",
+                GUILD_SCHEDULED_EVENT_REPEATS_WEEKLY: "Repeats every {weekday}",
+                GUILD_SCHEDULED_EVENT_REPEATS_YEARLY: "Repeats every {date}",
+                GUILD_SCHEDULED_EVENT_REPEATS_WEEKDAYS: "Repeats every weekday (Monday to Friday)",
                 EDIT_THIS_EVENT: "Edit this Event",
                 EDIT_ALL_EVENTS: "Edit all Events in this Series",
                 GUILD_EVENT_EDIT_CONFIRM_BODY_CONFIRM: "Are you sure you want to edit this event?",
@@ -16510,6 +16517,7 @@
                 POLLS: "Polls",
                 POLL_CHOOSE_SINGLE_ANSWER_PROMPT: "Choose an Answer",
                 POLL_SUBMIT_VOTE: "Submit Vote",
+                POLL_SUBMIT_VOTE_EDIT: "Update Vote",
                 POLL_VOTES_COUNT: "{count, plural, one {1 vote} other {{count} votes}}",
                 POLL_ALREADY_VOTED: "Voted",
                 POLL_ANSWER_SELECTED_ARIA: "You selected this answer",
@@ -17768,7 +17776,7 @@
                 L = E("782340");
             (0, r.setUpdateRules)(i.default), (0, I.default)(L.default, n.default, s.default), a.default.Emitter.injectBatchEmitChanges(o.unstable_batchedUpdates), a.default.PersistedStore.disableWrites = __OVERLAY__, a.default.initialize();
             let u = window.GLOBAL_ENV.RELEASE_CHANNEL;
-            new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(u, ", Build Number: ").concat("240372", ", Version Hash: ").concat("63f8ac70352bac296cee81c9024b1a8693bea8ca")), t.default.setTags({
+            new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(u, ", Build Number: ").concat("240780", ", Version Hash: ").concat("42434a975bd329edcdf32fbaa3dd3ca9f34e2c4c")), t.default.setTags({
                 appContext: l.CURRENT_APP_CONTEXT
             }), S.default.initBasic(), N.default.init(), T.FocusRingManager.init(), O.init(), (0, R.cleanupTempFiles)()
         },
@@ -20130,8 +20138,8 @@
 
             function o() {
                 var e;
-                let _ = parseInt((e = "240372", "240372"));
-                return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("240372")), _ = 0), _
+                let _ = parseInt((e = "240780", "240780"));
+                return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("240780")), _ = 0), _
             }
         },
         990629: function(e, _, E) {
@@ -29382,4 +29390,4 @@
         }
     }
 ]);
-//# sourceMappingURL=96ba78f4f206840a69f1.js.map
+//# sourceMappingURL=21e24b8821007be4f97c.js.map
