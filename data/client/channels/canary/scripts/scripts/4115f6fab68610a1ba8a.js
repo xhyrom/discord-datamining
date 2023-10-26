@@ -21418,9 +21418,11 @@
             "use strict";
             e.exports = {
                 cardContainer: "cardContainer__912d9",
+                centerAlignSection: "centerAlignSection_e8acae",
                 featureBorder: "featureBorder__365a4",
                 fullWidth: "fullWidth__2b90a",
                 heading: "heading__41621",
+                leftAlignSection: "leftAlignSection_b3e61a",
                 moreSubtitleMargin: "moreSubtitleMargin__91793",
                 noBackground: "noBackground_eead40",
                 section: "section__0bfb9",
@@ -21528,14 +21530,9 @@
                 button: "button_d584a2",
                 buttonContainer: "buttonContainer__19181",
                 container: "container_a82385",
-                description: "description__72675",
-                imageContainer: "imageContainer_d551f9",
-                sparkleStar: "sparkleStar_a55187",
-                sparkleStar1: "sparkleStar1_a822d2 sparkleStar_a55187",
-                sparkleStar2: "sparkleStar2__629c3 sparkleStar_a55187",
-                sparkleStar3: "sparkleStar3__9e51d sparkleStar_a55187",
-                sparkleStar4: "sparkleStar4__509ec sparkleStar_a55187",
-                textContainer: "textContainer_cca873",
+                content: "content__84e2b",
+                headerArt: "headerArt__851a2",
+                hidden: "hidden__174b8",
                 trialPill: "trialPill__821f4"
             }
         },
@@ -21546,15 +21543,6 @@
                 managePlanButton: "managePlanButton__44e1e",
                 managePlanButtonCTA: "managePlanButtonCTA_e4ebec",
                 textContainer: "textContainer__1765b"
-            }
-        },
-        396963: function(e, t, o) {
-            "use strict";
-            e.exports = {
-                root: "root__55007",
-                stop1: "stop1_e465c2",
-                stop2: "stop2_ebac02",
-                stop3: "stop3__4e01d"
             }
         },
         792076: function(e, t, o) {
