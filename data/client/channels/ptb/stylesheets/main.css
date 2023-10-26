@@ -64472,8 +64472,8 @@ strong {
 
 .message__13e98 {
     font-weight: 500;
-    font-size: 1rem;
-    line-height: 1.25rem;
+    font-size: 16px;
+    line-height: 20px;
     white-space: nowrap;
     text-overflow: ellipsis;
     overflow: hidden
@@ -78706,10 +78706,7 @@ button.button__4f306.disabled_dc5630 {
 }
 
 .termsApplyLink_db423e {
-    color: var(--white-500)
-}
-
-.termsApplyLink_db423e:hover {
+    color: var(--white-500);
     -webkit-text-decoration: underline var(--white-500);
     text-decoration: underline var(--white-500)
 }
@@ -149481,4 +149478,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=3ff9482b1115067bdbb3.css.map*/
+/*# sourceMappingURL=793a29f7017232dfdc45.css.map*/
