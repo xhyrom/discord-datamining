@@ -70,14 +70,23 @@ export class Strings implements Module {
     if (!diff) return;
 
     const comment = await postToGithub(result?.update?.hash.to, diff);
+
+    // TODO: switch to senders strategy
     await postToDiscord(
-      [
-        ...getWebhookFromEnv("DISCORD_WEBHOOK_STRINGS"),
-        ...getWebhookFromEnv("DISCORDINSIDERS_DISCORD_WEBHOOK_STRINGS"),
-      ],
+      getWebhookFromEnv("DISCORD_WEBHOOK_STRINGS"),
       result?.update?.hash.to,
       {
         content: `<@&1105589256996524042>\n${
+          diff.length > 2000 ? diff.slice(0, 1968) + "...```" : diff
+        }`,
+      },
+      comment.data.html_url
+    );
+    await postToDiscord(
+      getWebhookFromEnv("DISCORDINSIDERS_DISCORD_WEBHOOK_STRINGS"),
+      result?.update?.hash.to,
+      {
+        content: `${
           diff.length > 2000 ? diff.slice(0, 1968) + "...```" : diff
         }`,
       },

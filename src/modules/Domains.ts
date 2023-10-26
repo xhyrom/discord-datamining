@@ -89,14 +89,23 @@ export class Domains implements Module {
       if (!diff) continue;
 
       const comment = await postToGithub(result?.update?.hash.to, diff);
+
+      // TODO: switch to senders strategy
       await postToDiscord(
-        [
-          ...getWebhookFromEnv("DISCORD_WEBHOOK_MISCELLANEOUS"),
-          ...getWebhookFromEnv("DISCORDINSIDERS_DISCORD_WEBHOOK_MISCELLANEOUS"),
-        ],
+        getWebhookFromEnv("DISCORD_WEBHOOK_MISCELLANEOUS"),
         result?.update?.hash.to,
         {
           content: `<@&1112738631615008818>\n${
+            diff.length > 2000 ? diff.slice(0, 1968) + "...```" : diff
+          }`,
+        },
+        comment.data.html_url
+      );
+      await postToDiscord(
+        getWebhookFromEnv("DISCORDINSIDERS_DISCORD_WEBHOOK_MISCELLANEOUS"),
+        result?.update?.hash.to,
+        {
+          content: `${
             diff.length > 2000 ? diff.slice(0, 1968) + "...```" : diff
           }`,
         },

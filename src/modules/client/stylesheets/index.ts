@@ -79,14 +79,21 @@ export class Stylesheets implements Module {
 
     const desc = `\`\`\`diff\n${currentCssFile.patch}\n\`\`\``;
 
+    // TODO: switch to senders strategy
     await postToDiscord(
-      [
-        ...getWebhookFromEnv("DISCORD_WEBHOOK_STYLESHEETS"),
-        ...getWebhookFromEnv("DISCORDINSIDERS_DISCORD_WEBHOOK_STYLESHEETS"),
-      ],
+      getWebhookFromEnv("DISCORD_WEBHOOK_STYLESHEETS"),
       result.update?.hash.to,
       {
         content: `<@&1105847524662706226>\n${
+          desc.length > 2000 ? desc.slice(0, 1968) + "...```" : desc
+        }`,
+      }
+    );
+    await postToDiscord(
+      getWebhookFromEnv("DISCORDINSIDERS_DISCORD_WEBHOOK_STYLESHEETS"),
+      result.update?.hash.to,
+      {
+        content: `${
           desc.length > 2000 ? desc.slice(0, 1968) + "...```" : desc
         }`,
       }

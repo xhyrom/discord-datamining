@@ -84,14 +84,23 @@ export class Routes implements Module {
     if (!diff) return;
 
     const comment = await postToGithub(result?.update?.hash.to, diff);
+
+    // TODO: switch to senders strategy
     await postToDiscord(
-      [
-        ...getWebhookFromEnv("DISCORD_WEBHOOK_ROUTES"),
-        ...getWebhookFromEnv("DISCORDINSIDERS_DISCORD_WEBHOOK_ROUTES"),
-      ],
+      getWebhookFromEnv("DISCORD_WEBHOOK_ROUTES"),
       result?.update?.hash.to,
       {
         content: `<@&1115349386663305217>\n${
+          diff.length > 2000 ? diff.slice(0, 1968) + "...```" : diff
+        }`,
+      },
+      comment.data.html_url
+    );
+    await postToDiscord(
+      getWebhookFromEnv("DISCORDINSIDERS_DISCORD_WEBHOOK_ROUTES"),
+      result?.update?.hash.to,
+      {
+        content: `${
           diff.length > 2000 ? diff.slice(0, 1968) + "...```" : diff
         }`,
       },
