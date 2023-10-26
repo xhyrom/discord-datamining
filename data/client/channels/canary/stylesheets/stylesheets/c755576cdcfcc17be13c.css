@@ -60355,8 +60355,8 @@ strong {
 }
 
 .memberCount_d3ce07 {
-    font-size: .75rem;
-    line-height: 1rem;
+    font-size: 12px;
+    line-height: 16px;
     display: flex;
     align-items: center
 }
@@ -144294,6 +144294,22 @@ div.nagbar_c731ff {
     margin-top: 20px
 }
 
+.debugButton__6e8bc {
+    color: var(--text-normal);
+    padding: 0;
+    margin: 0;
+    min-width: auto;
+    min-height: auto
+}
+
+.debugTitle__74e49 {
+    margin-top: 16px
+}
+
+.pre__40b4b {
+    white-space: pre
+}
+
 .soundButtonSettingContainer__548af {
     box-sizing: border-box;
     position: relative;
@@ -149327,4 +149343,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=8e6f9663f1a30bc36f5d.css.map*/
+/*# sourceMappingURL=c755576cdcfcc17be13c.css.map*/
