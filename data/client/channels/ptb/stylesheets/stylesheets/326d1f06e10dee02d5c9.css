@@ -15950,7 +15950,7 @@ html.decorate-links .lowSaturationUnderline__95e71 {
     background: linear-gradient(0deg, rgba(0, 0, 0, .2), rgba(0, 0, 0, .2)), linear-gradient(151.11deg, var(--brand-460)16.55%, var(--brand-560)104.36%)
 }
 
-.playIconSpacing_bea4cd {
+.oldPlayIconSpacing__32916 {
     margin-left: 1px;
     margin-right: -1px
 }
@@ -64459,8 +64459,8 @@ strong {
 
 .message__13e98 {
     font-weight: 500;
-    font-size: 1rem;
-    line-height: 1.25rem;
+    font-size: 16px;
+    line-height: 20px;
     white-space: nowrap;
     text-overflow: ellipsis;
     overflow: hidden
@@ -149368,4 +149368,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=9c4441d486373ba95016.css.map*/
+/*# sourceMappingURL=326d1f06e10dee02d5c9.css.map*/
