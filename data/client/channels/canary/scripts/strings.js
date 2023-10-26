@@ -10059,6 +10059,7 @@
                 APPLICATION_IFRAME_MODAL_LOAD_ERROR: "There was an error trying to load the application.",
                 INTERACTION_RATE_LIMITED: "Slow down! You're clicking too fast.",
                 APPLICATION_ADD_TO_SERVER: "Add to Server",
+                APPLICATION_ADD_BUTTON: "Add App",
                 APPLICATION_ADD_TO_SERVER_ACTIONS: "Add to Server Actions",
                 APPLICATION_ADD_TO_SERVER_ACTIONS_COPY: "Copy Add to Server URL",
                 COMMANDS_SCOPE_MIGRATION_OVERVIEW_TOOLTIP: "Members can't use this bot until you turn on permissions.",
@@ -17774,7 +17775,7 @@
                 L = E("782340");
             (0, r.setUpdateRules)(i.default), (0, I.default)(L.default, n.default, s.default), a.default.Emitter.injectBatchEmitChanges(o.unstable_batchedUpdates), a.default.PersistedStore.disableWrites = __OVERLAY__, a.default.initialize();
             let u = window.GLOBAL_ENV.RELEASE_CHANNEL;
-            new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(u, ", Build Number: ").concat("240689", ", Version Hash: ").concat("81f4c339e631799684c239240f3b2b488df067e4")), t.default.setTags({
+            new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(u, ", Build Number: ").concat("240692", ", Version Hash: ").concat("ceae7543762098635387dd5547cc135e70751a59")), t.default.setTags({
                 appContext: l.CURRENT_APP_CONTEXT
             }), S.default.initBasic(), N.default.init(), T.FocusRingManager.init(), O.init(), (0, R.cleanupTempFiles)()
         },
@@ -20136,8 +20137,8 @@
 
             function o() {
                 var e;
-                let _ = parseInt((e = "240689", "240689"));
-                return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("240689")), _ = 0), _
+                let _ = parseInt((e = "240692", "240692"));
+                return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("240692")), _ = 0), _
             }
         },
         990629: function(e, _, E) {
@@ -29388,4 +29389,4 @@
         }
     }
 ]);
-//# sourceMappingURL=a20d4a1ae07ea34c5116.js.map
+//# sourceMappingURL=244df6a8c9a89e65fa9c.js.map
