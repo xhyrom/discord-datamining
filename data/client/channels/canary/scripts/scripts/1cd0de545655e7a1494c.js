@@ -48612,7 +48612,7 @@
                         var i;
                         let d = {
                                 environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                                build_number: "240676"
+                                build_number: "240678"
                             },
                             _ = o.default.getCurrentUser();
                         null != _ && (d.user_id = _.id, d.user_name = _.tag, null != _.email && (d.email = _.email));
@@ -49270,6 +49270,9 @@
                 getPremiumPlanItem: function() {
                     return G
                 },
+                getDefaultPrice: function() {
+                    return w
+                },
                 getPrice: function() {
                     return x
                 },
@@ -49390,8 +49393,11 @@
                 isNewUser: function() {
                     return eL
                 },
-                default: function() {
+                formatPriceString: function() {
                     return eM
+                },
+                default: function() {
+                    return eP
                 }
             });
             var i, r, s, a, l = n("161179"),
@@ -50345,7 +50351,13 @@
                 return n
             }
             let eL = e => null != e && Date.now() - e.createdAt.getTime() < 2592e6;
-            var eM = Object.freeze({
+
+            function eM(e, t) {
+                let n = (0, N.formatPrice)(e.amount, e.currency),
+                    i = B(t);
+                return "".concat(n, "/").concat(i)
+            }
+            var eP = Object.freeze({
                 isNewUser: eL,
                 isPremiumAtLeast: R.isPremiumAtLeast,
                 isPremium: R.isPremium,
@@ -50602,11 +50614,7 @@
                 canUseCollectibles: function(e) {
                     return (0, _.canUserUse)(_.COLLECTIBLES, e)
                 },
-                formatPriceString: function(e, t) {
-                    let n = (0, N.formatPrice)(e.amount, e.currency),
-                        i = B(t);
-                    return "".concat(n, "/").concat(i)
-                },
+                formatPriceString: eM,
                 StreamQuality: a
             })
         },
@@ -51557,4 +51565,4 @@
         }
     }
 ]);
-//# sourceMappingURL=5550e2afaf3b1fec247b.js.map
+//# sourceMappingURL=1cd0de545655e7a1494c.js.map
