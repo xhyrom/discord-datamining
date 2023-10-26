@@ -22178,7 +22178,7 @@
                 }
             });
             var i = n("975162");
-            let r = new Set([i.DismissibleContent.ACCOUNT_MULTIACCOUNT_TOOLTIP, i.DismissibleContent.ACTIVITIES_MOBILE_NUX, i.DismissibleContent.ACTIVITIES_MOBILE_VOICE_CONTROLS_TOGGLE_NUX, i.DismissibleContent.AUTH_SESSIONS_NEW, i.DismissibleContent.CHANNEL_NOTICE_CLYDE_NUX, i.DismissibleContent.CHANNEL_NOTICE_GUILD_BANNER, i.DismissibleContent.CHANNEL_NOTICE_HUBLINK, i.DismissibleContent.CHANNEL_NOTICE_INVITE, i.DismissibleContent.CHANNEL_NOTICE_PREMIUM_GUILD_SUBSCRIPTION, i.DismissibleContent.CHANNEL_NOTICE_QUICKSWITCHER, i.DismissibleContent.NAGBAR_NOTICE_MFA_SMS_BACKUP, i.DismissibleContent.NAGBAR_NOTICE_POMELO, i.DismissibleContent.VOICE_CHANNEL_EFFECTS_REDUCED_MOTION_TOOLTIP])
+            let r = new Set([i.DismissibleContent.AUTH_SESSIONS_NEW, i.DismissibleContent.CHANNEL_NOTICE_CLYDE_NUX, i.DismissibleContent.CHANNEL_NOTICE_QUICKSWITCHER, i.DismissibleContent.NAGBAR_NOTICE_MFA_SMS_BACKUP, i.DismissibleContent.NAGBAR_NOTICE_POMELO, i.DismissibleContent.VOICE_CHANNEL_EFFECTS_REDUCED_MOTION_TOOLTIP])
         },
         862853: function(e, t, n) {
             "use strict";
@@ -48617,7 +48617,7 @@
                         var i;
                         let d = {
                                 environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                                build_number: "240820"
+                                build_number: "240826"
                             },
                             _ = o.default.getCurrentUser();
                         null != _ && (d.user_id = _.id, d.user_name = _.tag, null != _.email && (d.email = _.email));
@@ -51570,4 +51570,4 @@
         }
     }
 ]);
-//# sourceMappingURL=97f4f9a9952be3efe8ea.js.map
+//# sourceMappingURL=acf624690298657ea092.js.map
