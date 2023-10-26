@@ -11404,18 +11404,9 @@
                 container: "container__00e2e",
                 header: "header_e9142d",
                 mainTableContainer: "mainTableContainer_ea650e",
-                movedTable: "movedTable__31aca",
                 noResultsContainer: "noResultsContainer_bebecd",
                 page: "page__6780f",
                 tableContainer: "tableContainer__62f2f"
-            }
-        },
-        144915: function(e, t, o) {
-            "use strict";
-            e.exports = {
-                bannerContainer: "bannerContainer__3f96d",
-                buttonContainer: "buttonContainer_b37f0d",
-                headingContainer: "headingContainer__4b459"
             }
         },
         958103: function(e, t, o) {
@@ -15150,8 +15141,27 @@
         718688: function(e, t, o) {
             "use strict";
             e.exports = {
-                linkIcon: "linkIcon_f4077d",
-                rowContainer: "rowContainer_b85ac6"
+                active: "active__5f2e8",
+                avatar: "avatar__0c6f8",
+                divider: "divider__20791",
+                member: "member__55269",
+                membersCount: "membersCount_ce7b5d",
+                membersFilterPopout: "membersFilterPopout_b652fa",
+                membersHeader: "membersHeader_d8e562",
+                name: "name__7635a",
+                nameTag: "nameTag_ea1776",
+                overflowButton: "overflowButton_c5225f",
+                overflowIcon: "overflowIcon_b3d30c",
+                overflowIconFg: "overflowIconFg__2b31c",
+                ownerHelpIcon: "ownerHelpIcon__021a4",
+                pruneLink: "pruneLink__1c75b",
+                roleWrapper: "roleWrapper__0f174",
+                search: "search__3de11",
+                searchBar: "searchBar_d72441",
+                tag: "tag__1a537",
+                "ui-scroller-wrap": "ui-scroller-wrap__3fac2",
+                "ui-select": "ui-select__2b7f6",
+                username: "username__1e2fd"
             }
         },
         175221: function(e, t, o) {
