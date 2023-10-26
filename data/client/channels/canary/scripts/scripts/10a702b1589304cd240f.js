@@ -48635,7 +48635,7 @@
                         var i;
                         let d = {
                                 environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                                build_number: "240856"
+                                build_number: "240870"
                             },
                             _ = o.default.getCurrentUser();
                         null != _ && (d.user_id = _.id, d.user_name = _.tag, null != _.email && (d.email = _.email));
@@ -51588,4 +51588,4 @@
         }
     }
 ]);
-//# sourceMappingURL=e8e1462fb8fa6a42dbf3.js.map
+//# sourceMappingURL=10a702b1589304cd240f.js.map
