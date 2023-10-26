@@ -1604,7 +1604,7 @@
                 }
             });
             let i = ["api_connection_error", "api_error", "authentication_error", "card_error", "idempotency_error", "invalid_request_error", "rate_limit_error", "validation_error"];
-            (a = r || (r = {})).CREATE = "create", a.CANCEL = "cancel", a.RESUBSCRIBE = "resubscribe"
+            (a = r || (r = {})).CREATE = "create", a.CANCEL = "cancel", a.RESUBSCRIBE = "resubscribe", a.CHARGE = "charge"
         },
         821879: function(e, t, n) {
             "use strict";
@@ -1802,4 +1802,4 @@
         }
     }
 ]);
-//# sourceMappingURL=896d08bc28d287f87b9d.js.map
+//# sourceMappingURL=b5428e687cd6b15c9322.js.map
