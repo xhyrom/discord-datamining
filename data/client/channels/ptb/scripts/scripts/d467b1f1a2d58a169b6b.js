@@ -1108,17 +1108,17 @@
                     }
                 }
                 static deriveMemberUsers(e, t) {
-                    var n, l, i;
-                    let r = new Set([t.author.id, null === (n = t.interaction) || void 0 === n ? void 0 : n.user.id, ...null !== (i = null === (l = t.mentions) || void 0 === l ? void 0 : l.map(e => e.id)) && void 0 !== i ? i : []]),
-                        d = [],
-                        u = [];
-                    for (let t of r) {
+                    var n, l, i, r;
+                    let d = new Set([null === (n = t.author) || void 0 === n ? void 0 : n.id, null === (l = t.interaction) || void 0 === l ? void 0 : l.user.id, ...null !== (r = null === (i = t.mentions) || void 0 === i ? void 0 : i.map(e => e.id)) && void 0 !== r ? r : []]),
+                        u = [],
+                        o = [];
+                    for (let t of d) {
                         if (null == t) continue;
                         let n = s.default.getUser(t),
                             l = a.default.getTrueMember(null != e ? e : "", t);
-                        null != n && u.push(n), null != l && d.push(l)
+                        null != n && o.push(n), null != l && u.push(l)
                     }
-                    return [d, u]
+                    return [u, o]
                 }
             }
         },
@@ -2539,24 +2539,24 @@
                     t = n, h.set(t.messageId, t)
                 },
                 MESSAGE_CREATE: function(e) {
+                    var t, n;
                     let {
-                        channelId: t,
+                        channelId: a,
                         message: {
-                            mentions: n,
-                            author: a,
-                            nonce: s
+                            mentions: s,
+                            author: l,
+                            nonce: i
                         }
                     } = e;
                     if (!o.default.isEnabled()) return !1;
-                    let l = r.default.getId();
-                    if (!S(a.id, l, s, _)) return !1;
-                    let i = g.get(m({
-                        userId: a.id,
-                        channelId: t
+                    let d = r.default.getId();
+                    if (!S(null == l ? void 0 : l.id, d, i, _)) return !1;
+                    let h = g.get(m({
+                        userId: null !== (t = null == l ? void 0 : l.id) && void 0 !== t ? t : "???",
+                        channelId: a
                     }));
-                    if (o.default.screenshakeEnabled && o.default.screenshakeEnabledLocations[E.ShakeLocation.MENTION] && null != n && null != n.find(e => e.id === l)) {
-                        var d;
-                        let e = null != i ? null !== (d = (0, c.getComboShakeIntensity)(i, E.ShakeLevel.LEVEL_4)) && void 0 !== d ? d : .001 : 4 * Math.random();
+                    if (o.default.screenshakeEnabled && o.default.screenshakeEnabledLocations[E.ShakeLocation.MENTION] && null != s && null != s.find(e => e.id === d)) {
+                        let e = null != h ? null !== (n = (0, c.getComboShakeIntensity)(h, E.ShakeLevel.LEVEL_4)) && void 0 !== n ? n : .001 : 4 * Math.random();
                         return u.ComponentDispatch.dispatch(f.ComponentActions.SHAKE_APP, {
                             duration: 1e3,
                             intensity: e
@@ -3105,4 +3105,4 @@
         }
     }
 ]);
-//# sourceMappingURL=9542ad1ed6d0bccb3cb8.js.map
+//# sourceMappingURL=d467b1f1a2d58a169b6b.js.map

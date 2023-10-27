@@ -46897,23 +46897,23 @@
                 S = (0, d.isAndroid)();
 
             function T(e) {
-                let {
-                    endpoint: t,
-                    path: n,
-                    id: i,
-                    hash: r,
-                    size: s,
-                    canAnimate: l = !1,
-                    keepAspectRatio: o,
-                    format: c = null
-                } = e, d = null != c ? c : l && k(r) ? "gif" : "jpg";
-                if (l && F(r) && (d = "mp4"), null != r) {
-                    let e;
-                    let l = window.GLOBAL_ENV.CDN_HOST;
-                    if (null != l ? ("jpg" === d && (d = h ? "webp" : "png"), e = "".concat(location.protocol, "//").concat(l, "/").concat(n, "/").concat(i, "/").concat(r, ".").concat(d)) : e = location.protocol + window.GLOBAL_ENV.API_ENDPOINT + t(i, r, d), "mp4" === d) return e;
-                    let c = {};
-                    return null != s && (c.size = (0, u.getBestMediaProxySize)(s * (0, u.getDevicePixelRatio)())), null != o && (c.keep_aspect_ratio = o), e + "?".concat(a.stringify(c))
-                }
+                let t, {
+                    endpoint: n,
+                    path: i,
+                    id: r,
+                    hash: s,
+                    size: l,
+                    canAnimate: o = !1,
+                    keepAspectRatio: c,
+                    format: d = null
+                } = e;
+                if (null == r || null == s) return;
+                let _ = null != d ? d : o && k(s) ? "gif" : "jpg";
+                o && F(s) && (_ = "mp4");
+                let E = window.GLOBAL_ENV.CDN_HOST;
+                if (null != E ? ("jpg" === _ && (_ = h ? "webp" : "png"), t = "".concat(location.protocol, "//").concat(E, "/").concat(i, "/").concat(r, "/").concat(s, ".").concat(_)) : t = location.protocol + window.GLOBAL_ENV.API_ENDPOINT + n(r, s, _), "mp4" === _) return t;
+                let f = {};
+                return null != l && (f.size = (0, u.getBestMediaProxySize)(l * (0, u.getDevicePixelRatio)())), null != c && (f.keep_aspect_ratio = c), t + "?".concat(a.stringify(f))
             }
 
             function I(e) {
@@ -48700,7 +48700,7 @@
                         var i;
                         let d = {
                                 environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                                build_number: "241024"
+                                build_number: "241044"
                             },
                             _ = o.default.getCurrentUser();
                         null != _ && (d.user_id = _.id, d.user_name = _.tag, null != _.email && (d.email = _.email));
@@ -51653,4 +51653,4 @@
         }
     }
 ]);
-//# sourceMappingURL=848e563b85dea6f727a1.js.map
+//# sourceMappingURL=030cd2e55cfe0e5a6b65.js.map

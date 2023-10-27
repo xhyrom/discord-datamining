@@ -668,21 +668,22 @@
                     return this.length <= c.MAX_LOADED_MESSAGES ? this : e ? this.truncateBottom(c.TRUNCATED_MESSAGE_VIEW_SIZE) : t ? this.truncateTop(c.TRUNCATED_MESSAGE_VIEW_SIZE) : this
                 }
                 receiveMessage(e) {
-                    let t = !(arguments.length > 1) || void 0 === arguments[1] || arguments[1],
-                        n = null == e.nonce ? null : this.get(e.nonce, !0);
-                    if (null != n && (e.author.id === n.author.id || null != e.interaction && e.interaction.user.id === n.author.id) && null != e.nonce && n.id === e.nonce) {
+                    var t, n;
+                    let r = !(arguments.length > 1) || void 0 === arguments[1] || arguments[1],
+                        l = null == e.nonce ? null : this.get(e.nonce, !0);
+                    if (null != l && ((null === (t = e.author) || void 0 === t ? void 0 : t.id) === (null === (n = l.author) || void 0 === n ? void 0 : n.id) || null != e.interaction && e.interaction.user.id === l.author.id) && null != e.nonce && l.id === e.nonce) {
                         let t = (0, u.createMessageRecord)(e);
-                        return null != n.interactionData && (t.interactionData = n.interactionData), this.replace(e.nonce, t)
+                        return null != l.interactionData && (t.interactionData = l.interactionData), this.replace(e.nonce, t)
                     }
                     if (this.hasMoreAfter) this._after.wasAtEdge && (this._after.wasAtEdge = !1);
                     else {
-                        let n = i.default.getCurrentConfig({
+                        let t = i.default.getCurrentConfig({
                                 location: "2ecb25_1"
                             }, {
                                 autoTrackExposure: !1
                             }).enabled ? (0, u.createMessageRecord)(e) : f(this, e),
-                            r = this.merge([n]);
-                        return t ? r.truncateTop(c.TRUNCATED_MESSAGE_VIEW_SIZE, !1) : this.length > c.MAX_LOADED_MESSAGES ? r.truncateBottom(c.TRUNCATED_MESSAGE_VIEW_SIZE, !1) : r
+                            n = this.merge([t]);
+                        return r ? n.truncateTop(c.TRUNCATED_MESSAGE_VIEW_SIZE, !1) : this.length > c.MAX_LOADED_MESSAGES ? n.truncateBottom(c.TRUNCATED_MESSAGE_VIEW_SIZE, !1) : n
                     }
                     return this
                 }
@@ -5947,4 +5948,4 @@
         }
     }
 ]);
-//# sourceMappingURL=f5171dd31e94cbdb4dac.js.map
+//# sourceMappingURL=538739fcb7c9e7ac1fb8.js.map
