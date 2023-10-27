@@ -1053,7 +1053,7 @@
                     explicitContentNonFriendDm: a
                 } = _(), i = c.default.getChannel(e.channel_id);
                 if (null == i) return !1;
-                if (i.isDM() || i.isGroupDM()) return m.default.getFriendIDs().includes(e.author.id) ? x(l) : x(a);
+                if (i.isDM() || i.isGroupDM()) return null != e.author && m.default.getFriendIDs().includes(e.author.id) ? x(l) : x(a);
                 return x(n)
             }
             let N = e => {
@@ -10849,4 +10849,4 @@
         }
     }
 ]);
-//# sourceMappingURL=1a5e27f77039b31f3c05.js.map
+//# sourceMappingURL=e32f08ea928d1c08ec49.js.map
