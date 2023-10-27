@@ -12,7 +12,7 @@
     </li>
 </ul>
 <p>Requirements:</p>
-<p>Claim through Discord <strong>Gift Inventory</strong> from October 24, 2023 (time start) to November 23, 2023 (time end), and redeem in your Picsart account by December 23, 2023 (11:59PM PST).</p>
+<p>Claim through Discord <strong>Gift Inventory</strong> from October 24, 2023 (10AM PST) to November 23, 2023 (11:59PM PST), and redeem in your Picsart account by December 23, 2023 (11:59PM PST).</p>
 <p>Subscription:</p>
 <p>After the 1 month free trial period, your Picsart Pro or Gold subscription will convert to a monthly or yearly recurring subscription, and Picsart will bill your payment method unless you cancel the subscription.</p>
 <p><strong><span class="wysiwyg-font-size-large">What does this article cover:</span></strong></p>
@@ -59,13 +59,13 @@
 <p><a href="https://picsart.com/gold" target="_blank" rel="noopener noreferrer">Picsart Pro and Picsart Gold</a> is a subscription plan for unlimited access to Picsart’s premium tools and content.</p>
 <p>This means access to: premium editing tools, 20+ million premium stock images, photos, videos, and graphics, cross-platform access on both the mobile app and the web, and more. <a href="https://picsart.com/gold" target="_blank" rel="noopener noreferrer">Learn about Picsart Pro and Picsart Gold here.</a></p>
 <h1 id="h_01HDEQFCK22E58ZERWEHTWAZF9"><span style="color: #2e3338;" data-darkreader-inline-color="">How Do I Claim The Picsart Pro/Picsart Gold Promo In Discord?</span></h1>
-<p>As long as you're a Discord Nitro member, you'll be able to claim the Picsart Pro or the Picsart Gold code in the <strong>Gift Inventory</strong> from October 24, 2023 (time start) to November 23, 2023 (time end)</p>
+<p>As long as you're a Discord Nitro member, you'll be able to claim the Picsart Pro or the Picsart Gold code in the <strong>Gift Inventory</strong> from October 24, 2023 (10AM PST to November 23, 2023 (11:59PM PST)</p>
 <h2 id="h_01HDEQFCK228SZNYX3B5P2EEYD">Eligibility for the Claiming this Promotion in Discord</h2>
 <p>In order to claim this code, you'll need to be an active subscriber to Discord Nitro, (and you can be either a monthly or yearly Nitro subscriber).</p>
 <ul>
-    <li>If you are an active Discord Nitro member, the code must be claimed in the <strong>Gift Inventory</strong> by November 23, 2023 (time end)
+    <li>If you are an active Discord Nitro member, the code must be claimed in the <strong>Gift Inventory</strong> by November 23, 2023 (11:59PM PST)
         <ul>
-            <li>Otherwise, the code will not be available to claim after November 23, 2023 (time end). </li>
+            <li>Otherwise, the code will not be available to claim after November 23, 2023 (11:59PM PST). </li>
         </ul>
     </li>
 </ul>
