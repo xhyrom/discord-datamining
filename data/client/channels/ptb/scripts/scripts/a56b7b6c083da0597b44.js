@@ -148,13 +148,13 @@
                 g = new Map,
                 y = !1,
                 h = new Map,
-                O = new Map,
                 C = new Map,
-                M = new Map,
+                O = new Map,
                 L = new Map,
-                F = new Map,
+                M = new Map,
+                P = new Map,
                 N = new Map,
-                P = new Set([]);
+                F = new Set([]);
             let w = _.ActivityPanelModes.ACTION_BAR;
 
             function m(e) {
@@ -200,9 +200,9 @@
                         return t !== i.application_id
                     }),
                     h = m(e),
-                    O = null !== (r = S.get(h)) && void 0 !== r ? r : [],
-                    C = O.filter(e => !(e.application_id === i.application_id && e.channelId === t));
-                0 !== n.length && (y.push(E), C.push(E)), g.set(t, y), S.set(h, C)
+                    C = null !== (r = S.get(h)) && void 0 !== r ? r : [],
+                    O = C.filter(e => !(e.application_id === i.application_id && e.channelId === t));
+                0 !== n.length && (y.push(E), O.push(E)), g.set(t, y), S.set(h, O)
             }
 
             function V(e) {
@@ -224,7 +224,7 @@
             function b(e, t) {
                 return "".concat(e, ":").concat(t)
             }
-            class B extends l.default.PersistedStore {
+            class Y extends l.default.PersistedStore {
                 initialize(e) {
                     var t;
                     let i = new Map;
@@ -281,12 +281,12 @@
                 }
                 getShelfFetchStatus(e) {
                     let t = m(e);
-                    return O.get(t)
+                    return C.get(t)
                 }
                 shouldFetchShelf(e) {
                     var t, i;
                     let n = m(e),
-                        l = null !== (t = O.get(n)) && void 0 !== t ? t : {
+                        l = null !== (t = C.get(n)) && void 0 !== t ? t : {
                             isFetching: !1
                         },
                         r = Date.now(),
@@ -295,21 +295,21 @@
                 }
                 getOrientationLockStateForApp(e) {
                     var t;
-                    return null !== (t = C.get(e)) && void 0 !== t ? t : null
+                    return null !== (t = O.get(e)) && void 0 !== t ? t : null
                 }
                 getPipOrientationLockStateForApp(e) {
                     var t;
-                    return null !== (t = M.get(e)) && void 0 !== t ? t : this.getOrientationLockStateForApp(e)
+                    return null !== (t = L.get(e)) && void 0 !== t ? t : this.getOrientationLockStateForApp(e)
                 }
                 getGridOrientationLockStateForApp(e) {
                     var t, i;
-                    return null !== (i = null !== (t = L.get(e)) && void 0 !== t ? t : M.get(e)) && void 0 !== i ? i : this.getOrientationLockStateForApp(e)
+                    return null !== (i = null !== (t = M.get(e)) && void 0 !== t ? t : L.get(e)) && void 0 !== i ? i : this.getOrientationLockStateForApp(e)
                 }
                 getLayoutModeForApp(e) {
-                    return F.get(e)
+                    return P.get(e)
                 }
                 getDismissedEmbeddedActivityMessageKeys() {
-                    return Array.from(P)
+                    return Array.from(F)
                 }
                 getUsersHavePlayedByApp(e) {
                     var t;
@@ -327,7 +327,7 @@
                     if (null != t) return null !== (e = this.getSelfEmbeddedActivityForChannel(t)) && void 0 !== e ? e : void 0
                 }
             }
-            B.displayName = "EmbeddedActivitiesStore", B.persistKey = "EmbeddedActivities", B.migrations = [e => ({
+            Y.displayName = "EmbeddedActivitiesStore", Y.persistKey = "EmbeddedActivities", Y.migrations = [e => ({
                 ...e,
                 seenFeaturedActivities: [],
                 shouldShowNewActivityIndicator: !1
@@ -348,13 +348,13 @@
                     seenUpdatedActivities: {}
                 }
             }];
-            let Y = new B(r.default, {
+            let B = new Y(r.default, {
                 ACTIVITY_LAYOUT_MODE_UPDATE: function(e) {
                     let {
                         applicationId: t,
                         layoutMode: i
                     } = e;
-                    F.set(t, i)
+                    P.set(t, i)
                 },
                 CONNECTION_OPEN_SUPPLEMENTAL: function(e) {
                     let {
@@ -477,8 +477,8 @@
                 EMBEDDED_ACTIVITY_FETCH_SHELF: function(e) {
                     let {
                         guildId: t
-                    } = e, i = m(t), n = O.get(i);
-                    O.set(i, {
+                    } = e, i = m(t), n = C.get(i);
+                    C.set(i, {
                         isFetching: !0,
                         lastFetchTimestampMs: null == n ? void 0 : n.lastFetchTimestampMs
                     })
@@ -513,7 +513,7 @@
                     }({
                         activities: i,
                         now: l
-                    }), O.set(n, {
+                    }), C.set(n, {
                         isFetching: !1,
                         lastFetchTimestampMs: l
                     })
@@ -521,8 +521,8 @@
                 EMBEDDED_ACTIVITY_FETCH_SHELF_FAIL: function(e) {
                     let {
                         guildId: t
-                    } = e, i = m(t), n = O.get(i);
-                    O.set(i, {
+                    } = e, i = m(t), n = C.get(i);
+                    C.set(i, {
                         isFetching: !1,
                         lastFetchTimestampMs: null == n ? void 0 : n.lastFetchTimestampMs
                     })
@@ -537,13 +537,13 @@
                         pictureInPictureLockState: n,
                         gridLockState: l
                     } = e;
-                    null == i ? C.delete(t) : C.set(t, i), null === n ? M.delete(t) : void 0 !== n && M.set(t, n), null === l ? L.delete(t) : void 0 !== l && L.set(t, l)
+                    null == i ? O.delete(t) : O.set(t, i), null === n ? L.delete(t) : void 0 !== n && L.set(t, n), null === l ? M.delete(t) : void 0 !== l && M.set(t, l)
                 },
                 EMBEDDED_ACTIVITY_DISMISS_MESSAGE: function(e) {
                     let {
                         embeddedActivityKey: t
                     } = e;
-                    P.add(t)
+                    F.add(t)
                 },
                 EMBEDDED_ACTIVITY_SET_PANEL_MODE: function(e) {
                     let {
@@ -558,7 +558,7 @@
                     n !== t && w === _.ActivityPanelModes.PANEL && (w = _.ActivityPanelModes.PIP)
                 }
             });
-            var H = Y
+            var H = B
         },
         711562: function(e, t, i) {
             "use strict";
@@ -584,8 +584,12 @@
             i.r(t), i.d(t, {
                 ActivityPanelModes: function() {
                     return n
+                },
+                LANDSCAPE_ACTIVITY_ASPECT_RATIO: function() {
+                    return r
                 }
-            }), (l = n || (n = {})).ACTION_BAR = "action_bar", l.PANEL = "panel", l.PIP = "pip"
+            }), (l = n || (n = {})).ACTION_BAR = "action_bar", l.PANEL = "panel", l.PIP = "pip";
+            let r = 16 / 9
         },
         334368: function(e, t, i) {
             "use strict";
@@ -715,4 +719,4 @@
         }
     }
 ]);
-//# sourceMappingURL=a73d674f617db9126677.js.map
+//# sourceMappingURL=a56b7b6c083da0597b44.js.map
