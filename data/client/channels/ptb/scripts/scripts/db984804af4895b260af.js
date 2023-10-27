@@ -22589,6 +22589,7 @@
                 buttonsBackground: "buttonsBackground__0addb",
                 buttonsBackgroundActive: "buttonsBackgroundActive__5341f",
                 buttonsContainer: "buttonsContainer_bde73f",
+                disabled: "disabled__42201",
                 feedback: "feedback__5acd4",
                 toast: "toast_c6f55a"
             }
