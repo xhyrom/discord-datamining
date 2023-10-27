@@ -1,0 +1,29 @@
+{
+  "data": {
+    "kind": "user",
+    "id": "2023-10_wgc_stale_frame_timeout",
+    "label": "Windows Graphics Capture Stale Frame Timeout",
+    "description": [
+      "Not Eligible",
+      "Control Bucket",
+      "Treatment 1: 1 second",
+      "Treatment 2: 5 seconds",
+      "Treatment 3: 10 seconds",
+      "Treatment 4: 30 seconds",
+      "Treatment 5: 120 seconds"
+    ],
+    "hash": 4008174795,
+    "buckets": [
+      -1,
+      0,
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "config_keys": [
+      "enabled"
+    ]
+  }
+}

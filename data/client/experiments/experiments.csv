@@ -352,4 +352,6 @@ id,hash,label
 2023-10_thumbhash_messages,3927145797,Display thumbhash placeholders when loading message images
 2023-10_trial_for_everyone_trial_creation,2559295447,Trial for everyone
 2023-10_video_hook_disable,1363886659,Video Hook disable on Windows 11
+2023-10_video_hook_stale_frame_timeout,1821813006,Video Hook Stale Frame Timeout
 2023-10_viewer_clipping,3351049965,Test viewer side clipping
+2023-10_wgc_stale_frame_timeout,4008174795,Windows Graphics Capture Stale Frame Timeout
