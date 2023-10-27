@@ -859,6 +859,7 @@
   "EMBEDDED_ACTIVITIES_IAP_NON_REFUNDABLE_SUBSCRIPTION_YEARLY": "\"Hey! This purchase is for a recurring subscription, which which means that we'll charge you today and continue to charge you monthly until you cancel. You may cancel anytime under User Settings > Subscriptions, and previous charges won’t be refunded unless required by law. This purchase is being offered to you by the developer of this Activity and can be accessed and used only when you’re in this Activity.\"",
   "EMBEDDED_ACTIVITIES_IAP_NON_REFUNDABLE_SUBSCRIPTION_RATE_AND_RENEWAL": "\"Hey! This purchase is for a recurring subscription, which will renew for **{rate}** on **{renewalDate, date, medium}**. You may cancel anytime under User Settings > Subscriptions, and previous charges won’t be refunded unless required by law. This purchase is being offered to you by the developer of this Activity and can be accessed and used only when you’re in this Activity.\"",
   "EMBEDDED_ACTIVITIES_MINIMIZE_A11Y_LABEL": "\"Minimize activity\"",
+  "EMBEDDED_ACTIVITIES_EXPAND_A11Y_LABEL": "\"Expand activity\"",
   "ACTIVITY_REPORT_POST_ACTIVITY_HEADER": "\"How'd !!{applicationName}!! go?\"",
   "ACTIVITY_REPORT_POST_ACTIVITY_PROBLEM_TITLE": "\"What could have gone better?\"",
   "ACTIVITY_REPORTED_POSITIVE": "\"Thanks for sharing! Feedback like yours helps us improve Activities.\"",
