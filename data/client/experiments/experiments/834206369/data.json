@@ -1,0 +1,25 @@
+{
+  "data": {
+    "kind": "user",
+    "id": "2023-10_bandwidth_estimation_v1",
+    "label": "Bandwidth Estimation",
+    "description": [
+      "Not Eligible",
+      "Control Bucket",
+      "Treatment 1: Sender: Loss-Based BWE V2",
+      "Treatment 2: Sender: Robust Estimator",
+      "Treatment 3: Sender:Loss-Based BWE V2 + Robust Estimator"
+    ],
+    "hash": 834206369,
+    "buckets": [
+      -1,
+      0,
+      1,
+      2,
+      3
+    ],
+    "config_keys": [
+      "enabled"
+    ]
+  }
+}
