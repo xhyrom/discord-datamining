@@ -7461,6 +7461,9 @@
         387111: function(e, t, n) {
             "use strict";
             n.r(t), n.d(t, {
+                getNickname: function() {
+                    return d
+                },
                 default: function() {
                     return E
                 }
@@ -7496,4 +7499,4 @@
         }
     }
 ]);
-//# sourceMappingURL=bab67c7847fc9663afcb.js.map
+//# sourceMappingURL=e1fa3e91ec551f52afab.js.map

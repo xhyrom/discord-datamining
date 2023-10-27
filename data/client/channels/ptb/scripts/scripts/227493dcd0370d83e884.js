@@ -5045,7 +5045,8 @@
                     rawTitle: n.title,
                     rawDescription: n.description,
                     referenceId: n.reference_id,
-                    flags: n.flags
+                    flags: n.flags,
+                    contentScanVersion: n.content_scan_version
                 };
                 if (null != n.footer && (r.footer = {
                         text: n.footer.text,
@@ -5948,4 +5949,4 @@
         }
     }
 ]);
-//# sourceMappingURL=538739fcb7c9e7ac1fb8.js.map
+//# sourceMappingURL=227493dcd0370d83e884.js.map
