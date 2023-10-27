@@ -7312,7 +7312,7 @@
   "BILLING_CHECKOUT_CONFIRMATION_CONFIRM": "\"Close Checkout\"",
   "BILLING_CHECKOUT_CONFIRMATION_CANCEL": "\"Cancel\"",
   "BILLING_PAY_FOR_IT_WITH": "\"Pay for it With\"",
-  "BILLING_PAYMENT_AUTHORIZATION_CHARGE": "\"A $0.99 USD hold may be placed on your payment method. [Learn More]({helpDeskArticle})\"",
+  "BILLING_PAYMENT_AUTHORIZATION_CHARGE": "\"A hold may be placed on your payment method. [Learn More]({helpDeskArticle})\"",
   "BILLING_IS_GIFT_PURCHASE": "\"Is this a gift?\"",
   "BILLING_GIFT_LINK": "\"Gift Link\"",
   "BILLING_GIFT_COPIED": "\"Copied!\"",
