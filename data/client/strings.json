@@ -7344,6 +7344,7 @@
   "BILLING_ACCEPT_TERMS_PAID_SERVICES_TOOLTIP": "\"Accept the Terms of Service and Paid Services Terms to continue\"",
   "BILLING_SELECT_PAYMENT_SOURCE_TOOLTIP": "\"Select a payment source to continue\"",
   "BILLING_PAYMENT_SOURCE_INVALID": "\"This payment source is invalid.\"",
+  "BILLING_TRIAL_REDEMPTION_DISABLED": "\"Trial redemption is temporarily unavailable. Please try again later.\"",
   "BILLING_ACCOUNT_CREDIT": "\"Account Credit\"",
   "BILLING_ACCOUNT_CREDIT_DESCRIPTION": "\"When you accept a gift while you have a running subscription, or accept a gift that differs from your current subscription, it will appear here as credit.\"",
   "BILLING_ACCOUNT_CREDIT_DESCRIPTION_IOS_DISCLAIMER": "\"Unfortunately mobile subscriptions are not eligible for account credit. Account credit will be applied while subscribing through the desktop app.\"",
