@@ -16,7 +16,7 @@
 <h1 id="h_01HDRZVGK9XFK1BRNC9MVVQQCX">What is a Data Package?</h1>
 <p>A Data Package is a ZIP folder of files that you can request through your <strong>User Settings</strong> that contains all of your Discord data for your account. This includes messages, current servers you’re in, activity, and more. The files within the ZIP folder are JSON files that can be opened easily in Notepad on Windows or through Textedit on MacOS. You can also drag and drop them into a browser like Chrome or Firefox. CSV files can easily be opened in Excel or Google Sheets.</p>
 <h1 id="h_01HDRZVGK9HMXFHVWEEP4DQPBP">How to Request a Data Package</h1>
-<h3 id="h_01HDRZVGK9N2NZCKYX26DV3TQ0"><span style="color: #434343;">The link to download your Data Package will be valid for 30 days.</span></h3>
+<h3 id="h_01HDRZVGK9N2NZCKYX26DV3TQ0"><span style="color: #434343;" data-darkreader-inline-color="">The link to download your Data Package will be valid for 30 days.</span></h3>
 <p>You can request your Data Package through the desktop, mobile, and browser. Here are steps on how to do this.</p>
 <p>1. Tap on <strong>User Settings</strong> to the right of your avatar in the bottom left of the Discord app.</p>
 <p>2. Next, under <strong>User Settings</strong> head to<strong> Privacy &amp; Safety</strong>.</p>
@@ -24,7 +24,7 @@
 <p>4. You will then see a pop-up confirming that you want to request your data. If you want to continue with the request, tap on <strong>Request my Data</strong>.</p>
 <p>5. Finally you’ll receive a confirmation stating you should receive your data package in 30 days. Tap on <strong>Okay</strong> to confirm and have the pop-up close.</p>
 <p class="wysiwyg-text-align-center"><img src="https://support.discord.com/hc/article_attachments/18610744760087" alt="data_package_request.gif"></p>
-<h3 id="h_01HDRZVGK90VYSZ72VH643RDRF"><span style="color: #434343;">If you disable or delete your account before you receive your download link, it will cancel your request.</span></h3>
+<h3 id="h_01HDRZVGK90VYSZ72VH643RDRF"><span style="color: #434343;" data-darkreader-inline-color="">If you disable or delete your account before you receive your download link, it will cancel your request.</span></h3>
 <h1 id="h_01HDRZVGK9Q2T2QZ8HK1MEX9XR">What information is inside a Data Package?</h1>
 <h2 id="h_01HDRZVGK9A36G9W6VKWV73ZKN">Account</h2>
 <p>The account folder contains a couple different items. The first is the avatar that you are using and the second is a JSON file which contains the following information:</p>
@@ -68,9 +68,9 @@
     <li>Contents - Your message.</li>
     <li>Attachments - A CDN link to any images, or files you included in your message.</li>
 </ul>
-<h3 id="h_01HDRZVGK995CVWTS56QEWMXCZ"><span style="color: #434343;">If you manually delete a message - it is no longer stored in Discord and therefore will not be included in your Data Package.</span></h3>
+<h3 id="h_01HDRZVGK995CVWTS56QEWMXCZ"><span style="color: #434343;" data-darkreader-inline-color="">If you manually delete a message - it is no longer stored in Discord and therefore will not be included in your Data Package.</span></h3>
 <h2 id="h_01HDRZVGK908Y6NEZ9QX51QG5P">Servers</h2>
-<h3 id="h_01HDRZVGK9YZY228TPH5KDT9JS"><span style="color: #434343;">If you leave a server before requesting your Data Package, that server will  not be included. Your Data Package only includes servers you are a member of at the time of the request.</span></h3>
+<h3 id="h_01HDRZVGK9YZY228TPH5KDT9JS"><span style="color: #434343;" data-darkreader-inline-color="">If you leave a server before requesting your Data Package, that server will  not be included. Your Data Package only includes servers you are a member of at the time of the request.</span></h3>
 <p>The servers folder contains information for all of the servers that you are a member of. This includes servers that you own. The information provided for each is a little different. There is a JSON file which also contains a full list of the folders included.</p>
 <p>The folder for a server you own will contain the following. </p>
 <ul>
@@ -98,4 +98,6 @@
     <li>Your website.</li>
 </ul>
 <p>The information included will vary based on what you provide, and which programs you previously applied for.</p>
-<p><span style="color: #434343;">Our Support Team cannot assist you with going through your Data Package, however, if you have any questions or notice something is missing please reach out through here: </span><a href="https://support.discord.com" target="_blank" rel="noopener noreferrer">https://support.discord.com</a></p>
+<h3 id="h_01HDS08Y8PP0KFA6315X8AYEGG">
+    <span style="color: #434343;" data-darkreader-inline-color="">Our Support Team cannot assist you with going through your Data Package, however, if you have any questions or notice something is missing please reach out through here: </span><a href="https://support.discord.com" target="_blank" rel="noopener noreferrer">https://support.discord.com</a>
+</h3>
