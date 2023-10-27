@@ -2020,8 +2020,8 @@
                 return {
                     logsUploaded: new Date().toISOString(),
                     releaseChannel: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                    buildNumber: "241269",
-                    versionHash: "ee8081fa5b4910577aa47a618308fe039bc9b78e"
+                    buildNumber: "241274",
+                    versionHash: "7456049ecb4a0a48238b09bf541b06ce17d55efe"
                 }
             }
             n.r(t), n.d(t, {
@@ -2256,7 +2256,7 @@
                     dsn: "https://fa97a90475514c03a42f80cd36d147c4@sentry.io/140984",
                     autoSessionTracking: !1,
                     environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                    release: "discord_web-ee8081fa5b4910577aa47a618308fe039bc9b78e",
+                    release: "discord_web-7456049ecb4a0a48238b09bf541b06ce17d55efe",
                     beforeSend: e => {
                         var t, n;
                         return !(null != (t = e).exception && null != t.exception.values && t.exception.values.every(e => null == e.stacktrace || null != e.stacktrace.frames && 1 === e.stacktrace.frames.length) && "canary" !== window.GLOBAL_ENV.RELEASE_CHANNEL || r.some(e => window.navigator.appVersion.toLowerCase().indexOf(e) >= 0)) && !s() && !("Aborted" === (n = e).message || "cancel captcha" === n.message) && i() ? e : null
@@ -2274,7 +2274,7 @@
                     })],
                     ignoreErrors: ["EADDRINUSE", "BetterDiscord", "EnhancedDiscord", "Powercord", "RecipeWebview", "jQuery", "localStorage", "has already been declared", "Cannot call hover while not dragging.", "Cannot call beginDrag while dragging.", "getHostNode", "setupCSS", "on missing remote object", "ChunkLoadError", "Cannot find module 'discord_utils'", "Failed to setup Krisp module", "Error invoking remote method 'DISCORD_NATIVE_MODULES_INSTALL': Error: Module updater is not available!", "Non-Error promise rejection captured with keys:", "Request has been terminated", "Cannot resolve a Slate point from DOM point", "Failed to fetch", "no suitable image found", "ResizeObserver loop limit exceeded", "The play() request was interrupted", "could not play audio", "notosans-400-normalitalic"],
                     denyUrls: [/recaptcha/, /mobilediscord\.com/, /betterdiscord:\/\//]
-                }), a.setTag("buildNumber", (e = "241269", "241269")), a.setTag("builtAt", String("1698438618686"));
+                }), a.setTag("buildNumber", (e = "241274", "241274")), a.setTag("builtAt", String("1698438939487"));
                 let t = window.GLOBAL_ENV.SENTRY_TAGS;
                 if (null != t && "object" == typeof t)
                     for (let e in t) a.setTag(e, t[e]);
@@ -3453,7 +3453,7 @@
                             guildId: n.getGuildId(),
                             channelId: n.id,
                             messageId: null == e ? void 0 : null === (t = e.params) || void 0 === t ? void 0 : t.message
-                        }), b(n.getGuildId(), n.id)
+                        }), O(n.getGuildId(), n.id)
                     }
                 }
             }
@@ -3472,11 +3472,11 @@
                         isPreload: e,
                         skipLocalFetch: t,
                         logFailures: n
-                    }) : n && L.log("Skipping fetch because the selected channel is not a text channel"), b(l.getGuildId(), l.id)) : n && L.log("Skipping fetch because channel is null")
+                    }) : n && L.log("Skipping fetch because the selected channel is not a text channel"), O(l.getGuildId(), l.id)) : n && L.log("Skipping fetch because channel is null")
                 } else n && L.log("Skipping fetch because there is no selected channel")
             }
 
-            function D(e) {
+            function b(e) {
                 let {
                     guildId: t,
                     channelId: n,
@@ -3488,10 +3488,10 @@
                     channelId: n,
                     messageId: a,
                     jumpType: l
-                }), b(t, n)
+                }), O(t, n)
             }
 
-            function O(e) {
+            function D(e) {
                 let {
                     guildId: t,
                     channelId: n
@@ -3502,7 +3502,7 @@
                 })
             }
 
-            function b(e, t) {
+            function O(e, t) {
                 let n = h.default.getCurrentSidebarChannelId(t);
                 if (null == n) return;
                 let a = h.default.getCurrentSidebarMessageId(t);
@@ -3518,7 +3518,7 @@
                     t = T.default.getGuildId();
                 if (null == t || null == e) return;
                 let n = h.default.getSidebarState(e);
-                (null == n ? void 0 : n.type) !== E.SidebarType.VIEW_CHANNEL && b(t, e)
+                (null == n ? void 0 : n.type) !== E.SidebarType.VIEW_CHANNEL && O(t, e)
             }
 
             function w(e) {
@@ -3532,7 +3532,7 @@
                     guildId: t,
                     channelId: n,
                     isHighlight: l
-                }), b(t, n))
+                }), O(t, n))
             }
 
             function P(e) {
@@ -3628,8 +3628,8 @@
                     super(...e), this.fetchMessages = N, this.loadSelectedChannelIfNecessary = R, this.stores = new Map().set(h.default, x), this.actions = {
                         APP_STATE_UPDATE: G,
                         OVERLAY_INITIALIZE: y,
-                        CHANNEL_SELECT: D,
-                        VOICE_CHANNEL_SELECT: O,
+                        CHANNEL_SELECT: b,
+                        VOICE_CHANNEL_SELECT: D,
                         THREAD_CREATE: P,
                         THREAD_LIST_SYNC: () => R(),
                         CHANNEL_CREATE: P,
@@ -4000,7 +4000,7 @@
                     onClose: v,
                     onSelect: I,
                     appContext: L = C.AppContext.APP
-                } = e, N = f.default.supports(_.Features.DESKTOP_CAPTURE_APPLICATIONS), M = null !== (t = i.find(e => e.ownerId === (null == l ? void 0 : l.id))) && void 0 !== t ? t : null, y = A(n, l, i), R = (0, o.default)(M, L), D = (0, u.default)(M, L, C.NOOP_NULL), O = null == M ? (0, a.jsx)(r.MenuItem, {
+                } = e, N = f.default.supports(_.Features.DESKTOP_CAPTURE_APPLICATIONS), M = null !== (t = i.find(e => e.ownerId === (null == l ? void 0 : l.id))) && void 0 !== t ? t : null, y = A(n, l, i), R = (0, o.default)(M, L), b = (0, u.default)(M, L, C.NOOP_NULL), D = null == M ? (0, a.jsx)(r.MenuItem, {
                     id: "share-your-screen",
                     label: T.default.Messages.SHARE_YOUR_SCREEN,
                     icon: E.default,
@@ -4010,7 +4010,7 @@
                         id: "stream-settings",
                         label: T.default.Messages.SCREENSHARE_STREAM_QUALITY,
                         children: R
-                    }) : null, g ? D : null, N ? (0, a.jsx)(r.MenuItem, {
+                    }) : null, g ? b : null, N ? (0, a.jsx)(r.MenuItem, {
                         id: "change-windows",
                         label: T.default.Messages.SCREENSHARE_CHANGE_WINDOWS,
                         icon: E.default,
@@ -4044,7 +4044,7 @@
                                     action: () => (0, d.default)(t)
                                 }, "manage-stream-menu".concat(t.ownerId))
                             })
-                        }), c ? null : O]
+                        }), c ? null : D]
                     })
                 })
             }
@@ -5378,4 +5378,4 @@
         }
     }
 ]);
-//# sourceMappingURL=b898a52d643d29038acc.js.map
+//# sourceMappingURL=ed603069f8953accb9cf.js.map
