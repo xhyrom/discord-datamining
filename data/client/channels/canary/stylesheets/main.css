@@ -101189,8 +101189,8 @@ html.disable-forced-colors * {
 
 .bodyText__923f7 {
     color: var(--interactive-normal);
-    font-size: 16px;
-    line-height: 20px;
+    font-size: 1rem;
+    line-height: 1.25rem;
     font-weight: 500;
     margin-bottom: 16px
 }
@@ -101237,8 +101237,8 @@ html.disable-forced-colors * {
 }
 
 .trialCheckboxLabel__0297c {
-    font-size: 14px;
-    line-height: 18px
+    font-size: .875rem;
+    line-height: 1.125rem
 }
 
 .loader_acb69b {
@@ -149527,4 +149527,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=094a8a8b98787a96a341.css.map*/
+/*# sourceMappingURL=a469d75f02ca997a99e9.css.map*/

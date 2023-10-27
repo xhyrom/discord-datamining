@@ -916,6 +916,7 @@
                     [ez.MessageTypes.CONTEXT_MENU_COMMAND]: !0,
                     [ez.MessageTypes.AUTO_MODERATION_ACTION]: !0,
                     [ez.MessageTypes.ROLE_SUBSCRIPTION_PURCHASE]: !0,
+                    [ez.MessageTypes.PURCHASE_NOTIFICATION]: !0,
                     [ez.MessageTypes.INTERACTION_PREMIUM_UPSELL]: !0,
                     [ez.MessageTypes.STAGE_START]: !0,
                     [ez.MessageTypes.STAGE_END]: !0,
@@ -2632,4 +2633,4 @@
         }
     }
 ]);
-//# sourceMappingURL=4d493aa94a83d4ac4b52.js.map
+//# sourceMappingURL=81a1ff6331f459deaea5.js.map
