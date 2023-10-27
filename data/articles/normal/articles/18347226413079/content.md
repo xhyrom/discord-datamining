@@ -143,7 +143,7 @@
 <p><strong>Q: Who can redeem this Nitro trial to their Discord account?</strong></p>
 <p><strong>A: </strong>Users who have never had an active Nitro subscription on their Discord accounts are eligible to redeem this Nitro promotion.</p>
 <p>Additionally, users who previously had a Discord Nitro subscription and have had a Nitro Classic or Nitro Basic subscription in the past 12 months are ineligible.</p>
-<p>[RU block - if applicable: This promotion is only available in certain regions. If you receive an "Unknown Gift Code" error during the claim/redemption process, you are not eligible to redeem this promotion. You can learn more at this<a href="https://support.discord.com/hc/en-us/articles/4708041338391"> <span class="wysiwyg-underline" style="color: #1155cc;" data-darkreader-inline-color="">Help Center article.]</span></a></p>
+<p>This promotion is only available in certain regions. If you receive an "Unknown Gift Code" error during the claim/redemption process, you are not eligible to redeem this promotion. You can learn more at this<a href="https://support.discord.com/hc/en-us/articles/4708041338391"> <span class="wysiwyg-underline" style="color: #1155cc;" data-darkreader-inline-color="">Help Center article.]</span></a></p>
 <p><strong>Q: What if I'm a current or previous Nitro Basic, Nitro Classic, or a Server Boost subscriber? Can I also take part in this promotion? </strong></p>
 <p><strong>A: </strong>If you previously had a Discord Nitro subscription at any point on your accounts and have had a Nitro Classic or Nitro Basic subscription in the past 12 months, you are ineligible to redeem this promotion.</p>
 <p>If you have had a Nitro Basic, Nitro Classic, or Server Boosting subscription active on your account and you’ve never had a Nitro subscription,  you will be able to redeem this promotion and replace it with the 1 month Nitro subscription.</p>
@@ -180,7 +180,6 @@
     <li>You are ineligible for this promotion</li>
     <li>The promotion is invalid</li>
     <li>The promotion has reached the maximum number of claims</li>
-    <li>The link is invalid</li>
 </ul>
 <p>Please note that the Discord support team is not able to assist if you run into this error when attempting to redeem. See the list above for possible reasons why your account may be ineligible or otherwise unable to redeem this promotion.</p>
 <p><strong>Q: I see a "Sorry, This Payment Source Cannot Be Used for Redemption" error when trying to redeem my promo!</strong></p>
