@@ -2905,7 +2905,7 @@
                 i = n("49111");
 
             function a(e, t) {
-                return !(null == t || e.author.id !== t || e.state !== i.MessageStates.SENT || (0, l.default)(e) || !(0, r.canEditMessageWithStickers)(e) || e.hasFlag(i.MessageFlags.IS_VOICE_MESSAGE)) && null == e.referralTrialOfferId && !0
+                return !(null == t || e.author.id !== t || e.state !== i.MessageStates.SENT || (0, l.default)(e) || !(0, r.canEditMessageWithStickers)(e) || e.hasFlag(i.MessageFlags.IS_VOICE_MESSAGE) || null != e.referralTrialOfferId || e.isPoll()) && !0
             }
         },
         406297: function(e, t, n) {
@@ -5949,4 +5949,4 @@
         }
     }
 ]);
-//# sourceMappingURL=a9bc2b84d6212a45a330.js.map
+//# sourceMappingURL=cebc7228b7e290fd0c40.js.map
