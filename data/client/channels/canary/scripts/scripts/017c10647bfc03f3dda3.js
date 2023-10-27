@@ -1000,7 +1000,7 @@
                     codeBlock: {
                         order: i.defaultRules.codeBlock.order,
                         requiredFirstCharacters: ["`"],
-                        match: e => /^```(?:([a-z0-9_+\-.]+?)\n)?\n*([^\n][^]*?)\n*```/i.exec(e),
+                        match: e => /^```(?:([a-z0-9_+\-.#]+?)\n)?\n*([^\n][^]*?)\n*```/i.exec(e),
                         parse(e, t, n) {
                             var l, r;
                             return {
@@ -3146,4 +3146,4 @@
         }
     }
 ]);
-//# sourceMappingURL=98f582214b1012cf335e.js.map
+//# sourceMappingURL=017c10647bfc03f3dda3.js.map

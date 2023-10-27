@@ -138267,9 +138267,14 @@ html .invoiceCancelRow_c1bfe7 {
     width: 34px
 }
 
-.closeButton__644a2 * {
+.closeButton__644a2 div {
+    background-color: hsl(var(--black-500-hsl)/.5);
     height: 34px;
     width: 34px
+}
+
+.closeButton__644a2 div:hover {
+    background-color: hsl(var(--black-500-hsl)/.6)
 }
 
 .modalContent_b9c5e8 {
@@ -149483,4 +149488,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=dfa5c6baf84c6e6f465e.css.map*/
+/*# sourceMappingURL=8e5f6ae774ffc74d8a8f.css.map*/
