@@ -64472,8 +64472,8 @@ strong {
 
 .message__13e98 {
     font-weight: 500;
-    font-size: 1rem;
-    line-height: 1.25rem;
+    font-size: 16px;
+    line-height: 20px;
     white-space: nowrap;
     text-overflow: ellipsis;
     overflow: hidden
@@ -146111,15 +146111,15 @@ div.nagbar_c731ff {
 
 .emailVerificationModal_e48dfa .title__78b45 {
     font-weight: 700;
-    font-size: 24px;
-    line-height: 30px;
+    font-size: 1.5rem;
+    line-height: 1.875rem;
     margin-top: 100px;
     color: var(--header-primary)
 }
 
 .emailVerificationModal_e48dfa .body_b7d0a4 {
-    font-size: 16px;
-    line-height: 20px;
+    font-size: 1rem;
+    line-height: 1.25rem;
     text-align: center;
     color: var(--header-secondary)
 }
@@ -149478,4 +149478,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=c4141315fa08b17cc1a7.css.map*/
+/*# sourceMappingURL=da0e7bd96333930d50e9.css.map*/

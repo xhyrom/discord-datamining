@@ -44916,6 +44916,9 @@
                 getSupportedSecureFramesProtocolVersion() {
                     return 0
                 }
+                getSupportedBandwidthEstimationExperiments(e) {
+                    e([])
+                }
                 constructor(...e) {
                     super(...e), this.Video = a, this.Camera = s
                 }
@@ -45733,6 +45736,11 @@
                 }
                 stopSamplesLocalPlayback(e) {
                     this.conn.stopSamplesLocalPlayback(e)
+                }
+                setBandwidthEstimationExperiments(e) {
+                    this.conn.setTransportOptions({
+                        bandwidthEstimationExperiments: e
+                    })
                 }
                 updateVideoQualityCore(e, t) {
                     this.videoSupported && !this.destroyed && this.conn.setTransportOptions(e)
@@ -46822,6 +46830,9 @@
                 getSupportedSecureFramesProtocolVersion() {
                     var e;
                     return null !== (e = (0, p.getVoiceEngine)().SupportedSecureFramesProtocolVersion) && void 0 !== e ? e : 0
+                }
+                getSupportedBandwidthEstimationExperiments(e) {
+                    null != (0, p.getVoiceEngine)().getSupportedBandwidthEstimationExperiments && (0, p.getVoiceEngine)().getSupportedBandwidthEstimationExperiments(e)
                 }
                 watchdogTick() {
                     let e = !1;
@@ -48079,6 +48090,7 @@
                 setRtcLogMarker(e) {}
                 setVideoQualityMeasurement(e) {}
                 setVideoEncoderExperiments(e) {}
+                setBandwidthEstimationExperiments(e) {}
                 constructor(e, t, n, r) {
                     var i, o;
                     super(e, t), i = this, this.silenced = !1, this.interacted = !1, this.outputVolume = f.DEFAULT_VOLUME, this.sinkId = f.DEFAULT_DEVICE_ID, this.lastPingTime = 0, this.outputs = {}, this.webrtcStats = new d.WebRTCStatsCalculator, this.silenceThreshold = -100, this.canHavePriority = new Set, this.prioritySpeakers = new Set, this.setEchoCancellation = e => this.input.setEchoCancellation(e), this.setNoiseSuppression = e => this.input.setNoiseSuppression(e), this.setNoiseCancellation = e => this.input.setNoiseCancellation(e), this.setAutomaticGainControl = e => this.input.setAutomaticGainControl(e), this.setAudioSource = e => this.input.setAudioSource(e), this.setVideoSource = e => this.input.setVideoSource(e), this.setDesktopInput = e => this.input.setDesktop(e), this.setForceAudioInput = function(e) {
@@ -50253,6 +50265,9 @@
                 getSupportedSecureFramesProtocolVersion() {
                     return 0
                 }
+                getSupportedBandwidthEstimationExperiments(e) {
+                    e([])
+                }
                 constructor() {
                     super(), this.Video = E.default, this.Camera = S.default, this._audioContext = null, this.outputVolume = C.DEFAULT_VOLUME, this.sourceId = C.DEFAULT_DEVICE_ID, this.sinkId = C.DEFAULT_DEVICE_ID, this.enabled = !1, this.connections = new Set, this.interacted = !1, this.loopback = null, this.voiceActivityInput = null, this.pendingDesktopInputs = {}, this.enablePromise = null, this.handleActiveSinksChange = (e, t) => {
                         this.connections.forEach(n => n.setHasActiveVideoOutputSink(e, t))
@@ -51146,4 +51161,4 @@
         }
     }
 ]);
-//# sourceMappingURL=28cbbf53e79cf7167475.js.map
+//# sourceMappingURL=10eb0ac8210dc747a5c0.js.map
