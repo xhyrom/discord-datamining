@@ -57,7 +57,7 @@
 <p>Once you have claimed the promo, you'll now need to officially redeem this promo on your Discord account. You must redeem this Nitro trial by <strong>December 23, 2023 (11:59PM PST).</strong></p>
 <h2 id="h_01HDEPYDMBPC9HD59MH4W7H3VX"><strong>Eligibility for Redeeming the Nitro Trial</strong></h2>
 <h3 id="h_01HDES7VB6VX5DCJAC46MHPYGR">
-    <strong>[RU block - If applicable: This promotion is only available in certain regions. If you receive an "Unknown Gift Code" error during the claim/redemption process, you are not eligible to redeem this promotion. You can learn more at this </strong><a href="https://support.discord.com/hc/en-us/articles/4708041338391" target="_blank" rel="noopener noreferrer">Help Center article</a>.]
+    <strong>This promotion is only available in certain regions. If you receive an "Unknown Gift Code" error during the claim/redemption process, you are not eligible to redeem this promotion. You can learn more at this </strong><a href="https://support.discord.com/hc/en-us/articles/4708041338391" target="_blank" rel="noopener noreferrer">Help Center article</a>.
 </h3>
 <p>Users who have never had an active Nitro subscription on their Discord accounts are eligible to redeem this Nitro promotion.</p>
 <p>Users who have had a Discord Nitro subscription at any point on their accounts and have had a Nitro Classic or Nitro Basic subscription in the past 12 months are ineligible to redeem this promotion.</p>
