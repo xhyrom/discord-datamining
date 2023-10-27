@@ -266,13 +266,13 @@
                 T = i("289732"),
                 C = i("550766"),
                 v = i("191225"),
-                S = i("602718"),
-                N = i("885829"),
+                N = i("602718"),
+                S = i("885829"),
                 p = i("986214"),
                 D = i("126939"),
-                h = i("334368"),
-                y = i("15264"),
-                O = i("673044"),
+                O = i("334368"),
+                h = i("15264"),
+                y = i("673044"),
                 g = i("803353"),
                 L = i("420444"),
                 m = i("954016"),
@@ -283,9 +283,9 @@
 
             function R(e) {
                 var t;
-                let i = (null == e ? void 0 : e.activity) != null ? !(0, y.default)(null == e ? void 0 : e.activity) : void 0,
-                    n = (null == e ? void 0 : e.activity) != null ? (0, O.default)(null == e ? void 0 : e.activity) : void 0,
-                    l = null == e ? void 0 : null === (t = e.activity) || void 0 === t ? void 0 : t.client_platform_config[(0, h.default)((0, A.getOS)())].release_phase;
+                let i = (null == e ? void 0 : e.activity) != null ? !(0, h.default)(null == e ? void 0 : e.activity) : void 0,
+                    n = (null == e ? void 0 : e.activity) != null ? (0, y.default)(null == e ? void 0 : e.activity) : void 0,
+                    l = null == e ? void 0 : null === (t = e.activity) || void 0 === t ? void 0 : t.client_platform_config[(0, O.default)((0, A.getOS)())].release_phase;
                 return {
                     isPremiumActivity: i,
                     isFreePeriod: n,
@@ -304,17 +304,17 @@
                 let c = v.default.getShelfActivities(u),
                     f = T.default.getState().shelfOrder,
                     _ = 0 === v.default.getEmbeddedActivitiesForChannel(t).filter(e => e.application_id === l).length,
-                    A = (0, S.default)({
+                    A = (0, N.default)({
                         applicationId: l,
                         activityConfigs: c
                     }),
                     C = 1 + f.findIndex(e => e === l),
                     {
-                        isPremiumActivity: N,
+                        isPremiumActivity: S,
                         isFreePeriod: p,
                         releasePhase: D
                     } = R(A),
-                    h = await (0, d.default)();
+                    O = await (0, d.default)();
                 U[l] = e => {
                     var t, i;
                     b[l] = e, I.default.track(P.AnalyticEvents.ACTIVITY_SESSION_JOINED, {
@@ -325,9 +325,9 @@
                         application_id: l,
                         location_stack: n,
                         user_premium_tier: o.premiumType,
-                        is_premium_activity: N,
+                        is_premium_activity: S,
                         is_free_period: p,
-                        raw_thermal_state: h,
+                        raw_thermal_state: O,
                         n_participants: r.default.getUserParticipantCount(a.id),
                         is_activity_start: _,
                         release_phase: D,
@@ -349,7 +349,7 @@
                 } = e, a = b[l], u = s.default.getChannel(n), r = v.default.getEmbeddedActivityDurationMs(n, l), o = E.default.getCurrentUser(), c = null == u ? void 0 : u.getGuildId();
                 if (null == a || null == u || null == o) return;
                 let f = v.default.getShelfActivities(c),
-                    _ = (0, S.default)({
+                    _ = (0, N.default)({
                         applicationId: l,
                         activityConfigs: f
                     }),
@@ -358,7 +358,7 @@
                         isFreePeriod: T,
                         releasePhase: C
                     } = R(_),
-                    N = await (0, d.default)();
+                    S = await (0, d.default)();
                 I.default.track(P.AnalyticEvents.ACTIVITY_SESSION_LEFT, {
                     channel_id: u.id,
                     guild_id: u.getGuildId(),
@@ -369,7 +369,7 @@
                     user_premium_tier: o.premiumType,
                     is_premium_activity: A,
                     is_free_period: T,
-                    raw_thermal_state: N,
+                    raw_thermal_state: S,
                     release_phase: C,
                     activity_premium_tier_requirement: null == _ ? void 0 : null === (t = _.activity) || void 0 === t ? void 0 : t.premium_tier_requirement,
                     shelf_rank: null == _ ? void 0 : null === (i = _.activity) || void 0 === i ? void 0 : i.shelf_rank
@@ -506,24 +506,24 @@
                         let A = null == f ? void 0 : f.application_id;
                         null != A && (await a.default.fetchApplication(A), u = c.default.getGame(A));
                         let T = s.default.getChannel(r),
-                            h = null !== (n = null == T ? void 0 : T.getGuildId()) && void 0 !== n ? n : void 0,
+                            O = null !== (n = null == T ? void 0 : T.getGuildId()) && void 0 !== n ? n : void 0,
                             {
-                                activityConfigs: y,
-                                applications: O
+                                activityConfigs: h,
+                                applications: y
                             } = await (0, C.fetchShelf)({
-                                guildId: h
+                                guildId: O
                             }),
-                            L = (0, S.default)({
+                            L = (0, N.default)({
                                 applicationId: d,
-                                activityConfigs: y,
-                                applications: O
+                                activityConfigs: h,
+                                applications: y
                             });
                         if (null == L) {
                             let e = await (0, C.fetchShelf)({
-                                guildId: h,
+                                guildId: O,
                                 force: !0
                             });
-                            L = (0, S.default)({
+                            L = (0, N.default)({
                                 applicationId: d,
                                 activityConfigs: e.activityConfigs,
                                 applications: e.applications
@@ -531,7 +531,7 @@
                         }
                         let m = v.default.getEmbeddedActivitiesForChannel(r).find(e => e.application_id === d),
                             P = null !== (l = null == m ? void 0 : null === (i = m.connections) || void 0 === i ? void 0 : i.size) && void 0 !== l ? l : 0;
-                        P > 0 ? (0, N.maybeJoinEmbeddedActivity)({
+                        P > 0 ? (0, S.maybeJoinEmbeddedActivity)({
                             channelId: r,
                             applicationId: d,
                             activityId: null,
@@ -542,7 +542,7 @@
                             activityItem: L,
                             currentActivity: u,
                             channelId: r,
-                            guildId: h,
+                            guildId: O,
                             embeddedActivitiesManager: this,
                             analyticsLocations: o
                         })
@@ -636,7 +636,7 @@
             "use strict";
             i.r(t), i.d(t, {
                 default: function() {
-                    return S
+                    return N
                 }
             });
             var n = i("823411"),
@@ -666,14 +666,14 @@
                         autoTrackExposure: !1
                     }).isActivitiesInTextEnabled,
                     v = (0, _.default)(u.id),
-                    S = T.SUPPORTED_ACTIVITY_IN_TEXT_CHANNEL_TYPES.includes(u.type);
+                    N = T.SUPPORTED_ACTIVITY_IN_TEXT_CHANNEL_TYPES.includes(u.type);
                 if (v) {
                     let e = await (0, E.default)({
                         channelId: u.id,
                         bypassChangeModal: l
                     });
                     if (!e) return !1
-                } else if (!f || !S) return !1;
+                } else if (!f || !N) return !1;
                 return (0, A.default)(r, t), (0, s.startEmbeddedActivity)(t, {
                     application_id: e.application_id
                 }, n), (0, I.default)({
@@ -685,7 +685,7 @@
                 }), !0
             }
 
-            function S(e) {
+            function N(e) {
                 let {
                     activity: t,
                     currentEmbeddedApplication: i,
@@ -693,16 +693,16 @@
                     locationObject: s,
                     embeddedActivitiesManager: _,
                     analyticsLocations: E
-                } = e, I = a.default.getChannel(o), T = null == I ? void 0 : I.getGuildId(), C = null == T || "" === T, S = d.default.getCurrentUser();
+                } = e, I = a.default.getChannel(o), T = null == I ? void 0 : I.getGuildId(), C = null == T || "" === T, N = d.default.getCurrentUser();
                 if (null == I || C && !I.isPrivate() || null == o) return Promise.resolve(!1);
                 if (r.default.getVoiceChannelId() === o && (null == i ? void 0 : i.id) === t.application_id) return (0, A.default)(T, o), Promise.resolve(!0);
-                let N = async function() {
+                let S = async function() {
                     var e, i;
                     let {
                         bypassChangeVcModal: a
                     } = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : {
                         bypassChangeVcModal: !1
-                    }, r = (null == S ? void 0 : S.nsfwAllowed) == null;
+                    }, r = (null == N ? void 0 : N.nsfwAllowed) == null;
                     if (r) {
                         let r = null !== (i = u.default.getGame(t.application_id)) && void 0 !== i ? i : l.default.createFromServer(await n.default.fetchApplication(t.application_id));
                         if ((null === (e = r.embeddedActivityConfig) || void 0 === e ? void 0 : e.requires_age_gate) === !0) return new Promise(e => {
@@ -722,11 +722,11 @@
                         _.leaveActivity({
                             channelId: o,
                             applicationId: i.id
-                        }), N({
+                        }), S({
                             bypassChangeVcModal: !0
                         })
                     }, () => e(!0))
-                }) : N()
+                }) : S()
             }
         },
         885829: function(e, t, i) {
@@ -757,21 +757,21 @@
                     applicationId: T,
                     activityId: C,
                     inputApplication: v,
-                    analyticsLocations: S,
-                    embeddedActivitiesManager: N
-                } = e, p = _.default.getEmbeddedActivitiesForChannel(i), D = p.find(e => e.application_id === T && (null == C || e.activity_id === C)), h = v;
-                if (null == h) {
+                    analyticsLocations: N,
+                    embeddedActivitiesManager: S
+                } = e, p = _.default.getEmbeddedActivitiesForChannel(i), D = p.find(e => e.application_id === T && (null == C || e.activity_id === C)), O = v;
+                if (null == O) {
                     let e = await l.default.fetchApplication(T);
-                    h = u.default.createFromServer(e)
+                    O = u.default.createFromServer(e)
                 }
-                if (null == D || null == h) return;
-                let y = c.default.getCurrentUser(),
-                    O = (0, I.default)({
-                        userId: null == y ? void 0 : y.id,
+                if (null == D || null == O) return;
+                let h = c.default.getCurrentUser(),
+                    y = (0, I.default)({
+                        userId: null == h ? void 0 : h.id,
                         activity: D,
-                        application: h,
+                        application: O,
                         channelId: i,
-                        currentUser: y,
+                        currentUser: h,
                         isActivitiesEnabledForCurrentPlatform: !0,
                         ChannelStore: r.default,
                         VoiceStateStore: f.default,
@@ -825,15 +825,15 @@
                             })
                     }
                 }({
-                    embeddedActivityJoinability: O,
+                    embeddedActivityJoinability: y,
                     handleCanJoin: async function e() {
                         null != D && await (0, E.default)({
                             activity: D,
                             currentEmbeddedApplication: m,
                             activityChannelId: i,
                             locationObject: {},
-                            embeddedActivitiesManager: N,
-                            analyticsLocations: S
+                            embeddedActivitiesManager: S,
+                            analyticsLocations: N
                         })
                     }
                 })
@@ -863,8 +863,8 @@
                 T = i("541473"),
                 C = i("407908"),
                 v = i("578708"),
-                S = i("702173"),
-                N = i("954016"),
+                N = i("702173"),
+                S = i("954016"),
                 p = i("49111");
 
             function D(e) {
@@ -877,10 +877,10 @@
                     embeddedActivitiesManager: f,
                     analyticsLocations: A
                 } = e, T = a.default.getGuild(c), C = r.default.getCurrentUser();
-                if (null == T && !(0, S.isPrivateChannelWithEnabledActivities)(s) || null == C || null == t) return Promise.resolve(!1);
+                if (null == T && !(0, N.isPrivateChannelWithEnabledActivities)(s) || null == C || null == t) return Promise.resolve(!1);
                 let {
                     application: v,
-                    activity: N
+                    activity: S
                 } = t;
                 if (null == v) return Promise.resolve(!1);
                 if (null == s) return d.ComponentDispatch.dispatch(p.ComponentActions.SHOW_ACTIVITIES_CHANNEL_SELECTOR, {
@@ -893,16 +893,16 @@
                     PermissionStore: u.default
                 }) : I.EmbeddedActivityLaunchability.NO_CHANNEL;
                 if (D !== I.EmbeddedActivityLaunchability.CAN_LAUNCH) return D === I.EmbeddedActivityLaunchability.NO_USE_EMBEDDED_ACTIVITIES_PERMISSION && (0, n.showActivitiesInvalidPermissionsAlert)(), Promise.resolve(!1);
-                let y = function() {
+                let h = function() {
                     let {
                         bypassChangeVcModal: e
                     } = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : {
                         bypassChangeVcModal: !1
-                    }, t = N.requires_age_gate && null == C.nsfwAllowed;
+                    }, t = S.requires_age_gate && null == C.nsfwAllowed;
                     if (t) return new Promise(t => {
                         (0, _.confirmActivityAgeGate)({
                             application: v,
-                            onAgree: () => t(h({
+                            onAgree: () => t(O({
                                 channelId: s,
                                 guildId: null == T ? void 0 : T.id,
                                 locationObject: o,
@@ -913,7 +913,7 @@
                             onDisagree: () => t(!1)
                         })
                     });
-                    return h({
+                    return O({
                         channelId: s,
                         guildId: null == T ? void 0 : T.id,
                         locationObject: o,
@@ -927,13 +927,13 @@
                         f.leaveActivity({
                             channelId: s,
                             applicationId: i.id
-                        }), e(y({
+                        }), e(h({
                             bypassChangeVcModal: !0
                         }))
                     }, () => e(!1))
-                }) : y()
+                }) : h()
             }
-            async function h(e) {
+            async function O(e) {
                 let {
                     channelId: t,
                     guildId: i,
@@ -948,9 +948,9 @@
                     }, {
                         autoTrackExposure: !1
                     }).isActivitiesInTextEnabled,
-                    S = (0, A.default)(t),
-                    D = N.SUPPORTED_ACTIVITY_IN_TEXT_CHANNEL_TYPES.includes(E.type);
-                if (S) {
+                    N = (0, A.default)(t),
+                    D = S.SUPPORTED_ACTIVITY_IN_TEXT_CHANNEL_TYPES.includes(E.type);
+                if (N) {
                     let e = await (0, T.default)({
                         channelId: t,
                         bypassChangeModal: d
@@ -1099,10 +1099,10 @@
                 if (null == C) return l.NO_CHANNEL;
                 let v = f.getChannel(d);
                 if (null == v) return l.NO_CHANNEL;
-                let S = v.getGuildId();
+                let N = v.getGuildId();
                 if (!v.isPrivate()) {
-                    if (null == S) return l.NO_GUILD;
-                    let e = T.getGuild(S);
+                    if (null == N) return l.NO_GUILD;
+                    let e = T.getGuild(N);
                     if ((null == e ? void 0 : e.afkChannelId) === v.id) return l.IS_AFK_CHANNEL;
                     let t = I.getCurrentClientVoiceChannelId(v.getGuildId()) === C,
                         i = (0, c.isChannelFull)(v, I, T),
@@ -1397,11 +1397,7 @@
                 l = i("191225");
 
             function a() {
-                return (0, n.useStateFromStores)([l.default], () => {
-                    var e;
-                    let t = l.default.getConnectedActivityChannelId();
-                    if (null != t) return null !== (e = l.default.getSelfEmbeddedActivityForChannel(t)) && void 0 !== e ? e : void 0
-                })
+                return (0, n.useStateFromStores)([l.default], () => l.default.getCurrentEmbeddedActivity())
             }
         },
         698372: function(e, t, i) {
@@ -1583,13 +1579,13 @@
                             locked: T = !1,
                             routeDirectlyToChannel: C = !1,
                             bypassChangeModal: v,
-                            bypassGuildIdCheck: S = !1
+                            bypassGuildIdCheck: N = !1
                         } = e;
                         t.isThread() && (await o.default.unarchiveThreadIfNecessary(t.id), !d.default.hasJoined(t.id) && await o.default.joinThread(t, "Join Voice"));
-                        let N = u.default.getRemoteSessionId(),
-                            p = f.default.getVoiceStateForSession(s.default.getId(), N),
+                        let S = u.default.getRemoteSessionId(),
+                            p = f.default.getVoiceStateForSession(s.default.getId(), S),
                             D = (null == p ? void 0 : p.channelId) === t.id,
-                            h = D || c.default.getChannelId() === f.default.getCurrentClientVoiceChannelId(t.guild_id);
+                            O = D || c.default.getChannelId() === f.default.getCurrentClientVoiceChannelId(t.guild_id);
                         return !v && !T && (0, _.shouldShowVoiceChannelChangeConfirmation)(t) ? new Promise(e => {
                             (0, l.openModalLazy)(async () => {
                                 let {
@@ -1608,12 +1604,12 @@
                                     ...i
                                 })
                             })
-                        }) : (!T && !I && a.default.selectVoiceChannel(t.id), !__OVERLAY__ && (I || h || A || C) && ! function(e) {
+                        }) : (!T && !I && a.default.selectVoiceChannel(t.id), !__OVERLAY__ && (I || O || A || C) && ! function(e) {
                             let t = arguments.length > 1 && void 0 !== arguments[1] && arguments[1],
                                 i = e.getGuildId();
                             if (null == i && !t) throw Error("VoiceChannel, transitionTo: Channel does not have a guildId");
                             (0, r.transitionTo)(E.Routes.CHANNEL(i, e.id))
-                        }(t, S), !0)
+                        }(t, N), !0)
                     }
                 }
         },
@@ -2173,4 +2169,4 @@
         }
     }
 ]);
-//# sourceMappingURL=f899108d59d672a4144b.js.map
+//# sourceMappingURL=f71af37f72940995baf3.js.map
