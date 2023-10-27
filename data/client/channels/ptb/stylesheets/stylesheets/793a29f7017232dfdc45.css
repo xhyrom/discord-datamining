@@ -146111,15 +146111,15 @@ div.nagbar_c731ff {
 
 .emailVerificationModal_e48dfa .title__78b45 {
     font-weight: 700;
-    font-size: 1.5rem;
-    line-height: 1.875rem;
+    font-size: 24px;
+    line-height: 30px;
     margin-top: 100px;
     color: var(--header-primary)
 }
 
 .emailVerificationModal_e48dfa .body_b7d0a4 {
-    font-size: 1rem;
-    line-height: 1.25rem;
+    font-size: 16px;
+    line-height: 20px;
     text-align: center;
     color: var(--header-secondary)
 }
@@ -149478,4 +149478,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=da0e7bd96333930d50e9.css.map*/
+/*# sourceMappingURL=793a29f7017232dfdc45.css.map*/
