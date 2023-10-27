@@ -1,14 +1,14 @@
 {
   "data": {
     "kind": "user",
-    "id": "2023-10_friend_finder_redesign",
-    "label": "Friend Finder Redesign User Experiment",
+    "id": "2023-10_friend_finder_launch",
+    "label": "Friend Finder Launch Experiment",
     "description": [
       "Not Eligible",
       "Control Bucket",
-      "Treatment 1: Enable Friend Finder on Redesign"
+      "Treatment 1: Enable Friend Finder"
     ],
-    "hash": 2064761972,
+    "hash": 1847389384,
     "buckets": [
       -1,
       0,
