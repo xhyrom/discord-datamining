@@ -1858,8 +1858,8 @@
                 }
             });
             let r = "guild-product-edit-modal",
-                l = 524288e3,
-                i = 524288e3,
+                l = 1073741824,
+                i = 1073741824,
                 a = 10
         },
         398604: function(e, t, n) {
@@ -5949,4 +5949,4 @@
         }
     }
 ]);
-//# sourceMappingURL=227493dcd0370d83e884.js.map
+//# sourceMappingURL=a9bc2b84d6212a45a330.js.map

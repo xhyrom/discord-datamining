@@ -79912,7 +79912,8 @@ button.button__4f306.disabled_dc5630 {
 }
 
 .headerArt__851a2 {
-    width: 100%
+    width: 100%;
+    pointer-events: none
 }
 
 .container__4ecff {
@@ -149482,4 +149483,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=b085e46d8d11839999dd.css.map*/
+/*# sourceMappingURL=dfa5c6baf84c6e6f465e.css.map*/
