@@ -57948,7 +57948,11 @@ strong {
     padding-top: 8px;
     padding-bottom: 8px;
     border-radius: 24px;
+    margin-right: 8px;
+    margin-left: 8px;
     min-width: 232px;
+    width: 388px;
+    align-items: center;
     box-shadow: var(--elevation-stroke), var(--elevation-high)
 }
 
@@ -58005,8 +58009,11 @@ strong {
 }
 
 .activityActionBarContainer_cd73d4 {
+    display: flex;
+    width: 100%;
     margin-top: 16px;
-    pointer-events: all
+    pointer-events: all;
+    justify-content: center
 }
 
 .container__42884 {
@@ -60384,8 +60391,8 @@ strong {
 }
 
 .memberCount_d3ce07 {
-    font-size: 12px;
-    line-height: 16px;
+    font-size: .75rem;
+    line-height: 1rem;
     display: flex;
     align-items: center
 }
@@ -149527,4 +149534,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=82a86d89ac34cfb1eb45.css.map*/
+/*# sourceMappingURL=20c9837d3b5bf93ed6c7.css.map*/
