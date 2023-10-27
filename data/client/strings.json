@@ -1022,7 +1022,7 @@
   "AFK_SETTINGS": "\"Inactive Settings\"",
   "NO_AFK_CHANNEL": "\"No Inactive Channel\"",
   "FORM_LABEL_AFK_CHANNEL": "\"Inactive Channel\"",
-  "FORM_HELP_AFK_CHANNEL": "\"\\nAutomatically move members to this channel and mute them when they have been idle for longer than the\\ninactive timeout. This does not affect browsers.\\n  \"",
+  "FORM_HELP_AFK_CHANNEL": "\"Automatically move members to this channel and mute them when they have been idle for longer than the\\ninactive timeout. This does not affect browsers.\"",
   "FORM_LABEL_AFK_TIMEOUT": "\"Inactive Timeout\"",
   "NO_SYSTEM_CHANNEL": "\"No System Messages\"",
   "FORM_LABEL_SYSTEM_CHANNEL": "\"System Messages Channel\"",
