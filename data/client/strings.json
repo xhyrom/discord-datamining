@@ -2143,7 +2143,7 @@
   "CLYDE_SECTION_DESCRIPTION": "\"Clyde is currently a free experiment and may generate content that could be considered biased, harmful, or inaccurate. Clyde follows server Automod rules. [Learn More]({helpdeskArticle})\"",
   "ENABLE_CLYDE_SECTION": "\"Enable Clyde\"",
   "EDIT_CLYDE": "\"Edit Clyde\"",
-  "CANNOT_EDIT_CLYDE": "\"Clyde cannot be edited, he has been kicked from this server.\"",
+  "CANNOT_EDIT_CLYDE": "\"Clyde cannot be edited, he has been banned from this server.\"",
   "CANNOT_ADD_CLYDE": "\"Clyde cannot be added to the server, he has been banned.\"",
   "SAD_CLYDE_ALT_TEXT": "\"sad face clyde\"",
   "ENABLE_CLYDE_SECTION_SWITCH_DESCRIPTION": "\"This enables our AI chatbot to interact with members in this server.\"",
