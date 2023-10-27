@@ -64501,8 +64501,8 @@ strong {
 
 .message__13e98 {
     font-weight: 500;
-    font-size: 1rem;
-    line-height: 1.25rem;
+    font-size: 16px;
+    line-height: 20px;
     white-space: nowrap;
     text-overflow: ellipsis;
     overflow: hidden
@@ -101189,8 +101189,8 @@ html.disable-forced-colors * {
 
 .bodyText__923f7 {
     color: var(--interactive-normal);
-    font-size: 1rem;
-    line-height: 1.25rem;
+    font-size: 16px;
+    line-height: 20px;
     font-weight: 500;
     margin-bottom: 16px
 }
@@ -101237,8 +101237,8 @@ html.disable-forced-colors * {
 }
 
 .trialCheckboxLabel__0297c {
-    font-size: .875rem;
-    line-height: 1.125rem
+    font-size: 14px;
+    line-height: 18px
 }
 
 .loader_acb69b {
@@ -149527,4 +149527,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=a469d75f02ca997a99e9.css.map*/
+/*# sourceMappingURL=82a86d89ac34cfb1eb45.css.map*/
