@@ -12349,6 +12349,14 @@
                 header: "header_f9332e"
             }
         },
+        759435: function(e, t, o) {
+            "use strict";
+            e.exports = {
+                thankYouCard: "thankYouCard_e40f4e",
+                thankYouText: "thankYouText_d91c4e",
+                userAvatar: "userAvatar_c53642"
+            }
+        },
         349670: function(e, t, o) {
             "use strict";
             e.exports = {

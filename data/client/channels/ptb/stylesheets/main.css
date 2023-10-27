@@ -45725,6 +45725,31 @@ html .progress__4ef76 {
     gap: 16px
 }
 
+.thankYouCard_e40f4e {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 440px;
+    height: 200px;
+    border-radius: 4px;
+    margin: 12px 0
+}
+
+.thankYouText_d91c4e {
+    position: absolute;
+    align-self: center;
+    min-width: 0;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none
+}
+
+.userAvatar_c53642 {
+    border-radius: 54px;
+    width: 100%
+}
+
 .CTAMessage__4101e {
     margin-bottom: 2px
 }
@@ -64472,8 +64497,8 @@ strong {
 
 .message__13e98 {
     font-weight: 500;
-    font-size: 1rem;
-    line-height: 1.25rem;
+    font-size: 16px;
+    line-height: 20px;
     white-space: nowrap;
     text-overflow: ellipsis;
     overflow: hidden
@@ -149488,4 +149513,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=aebab36e85b6487a3089.css.map*/
+/*# sourceMappingURL=fb886ab834ad1adf13e0.css.map*/
