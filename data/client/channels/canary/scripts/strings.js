@@ -17777,7 +17777,7 @@
                 L = E("782340");
             (0, r.setUpdateRules)(i.default), (0, I.default)(L.default, n.default, s.default), a.default.Emitter.injectBatchEmitChanges(o.unstable_batchedUpdates), a.default.PersistedStore.disableWrites = __OVERLAY__, a.default.initialize();
             let u = window.GLOBAL_ENV.RELEASE_CHANNEL;
-            new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(u, ", Build Number: ").concat("241129", ", Version Hash: ").concat("bcc74722bd349b0bfcff8d1846796315e313b77a")), t.default.setTags({
+            new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(u, ", Build Number: ").concat("241147", ", Version Hash: ").concat("46c5b2b43760a03b8ed0eff9f8ac55b7d175e1d7")), t.default.setTags({
                 appContext: l.CURRENT_APP_CONTEXT
             }), S.default.initBasic(), N.default.init(), T.FocusRingManager.init(), O.init(), (0, R.cleanupTempFiles)()
         },
@@ -20139,8 +20139,8 @@
 
             function o() {
                 var e;
-                let _ = parseInt((e = "241129", "241129"));
-                return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("241129")), _ = 0), _
+                let _ = parseInt((e = "241147", "241147"));
+                return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("241147")), _ = 0), _
             }
         },
         990629: function(e, _, E) {
@@ -25962,6 +25962,9 @@
                 isFetchingDefaultSounds() {
                     return C === o.FETCHING
                 }
+                isFetching() {
+                    return this.isFetchingSounds() || this.isFetchingDefaultSounds()
+                }
                 shouldFetchDefaultSounds() {
                     return C === o.NOT_FETCHED
                 }
@@ -29394,4 +29397,4 @@
         }
     }
 ]);
-//# sourceMappingURL=9f2c4ed9ffe230ad981d.js.map
+//# sourceMappingURL=8d36c02cf650810f89a6.js.map
