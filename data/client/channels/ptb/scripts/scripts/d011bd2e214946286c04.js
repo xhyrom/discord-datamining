@@ -388,7 +388,7 @@
             "use strict";
             r.r(t), r.d(t, {
                 default: function() {
-                    return L
+                    return M
                 }
             });
             var n = r("619415"),
@@ -403,8 +403,8 @@
                 _ = new Set,
                 E = !1,
                 f = new Set,
-                m = new Set,
-                I = {},
+                I = new Set,
+                m = {},
                 T = 0,
                 R = null,
                 p = () => !0;
@@ -423,7 +423,7 @@
             function S(e) {
                 let t = e.type === n.MessageTypes.PREMIUM_REFERRAL ? e.content : null;
                 if (null == t) return !1;
-                if (!m.has(t) && !f.has(t)) {
+                if (!I.has(t) && !f.has(t)) {
                     var r;
                     r = t, f.add(r), l.default.wait(() => (0, o.resolveReferralTrialOffer)(t).catch(s.NOOP_NULL))
                 }
@@ -451,14 +451,14 @@
                     return void 0 === d[e] && !_.has(e) && (0, o.checkRecipientEligibility)(e), d[e]
                 }
                 getRelevantUserTrialOffer(e) {
-                    return I[e]
+                    return m[e]
                 }
                 isResolving(e) {
                     return f.has(e)
                 }
             }
             C.displayName = "ReferralTrialStore";
-            var L = new C(l.default, {
+            var M = new C(l.default, {
                 BILLING_REFERRAL_TRIAL_OFFER_UPDATE: function(e) {
                     let {
                         userTrialOfferId: t,
@@ -507,19 +507,19 @@
                     let {
                         userTrialOffer: t
                     } = e;
-                    (0, o.fetchReferralsRemaining)(), I[t.id] = t, c = [...c, t.user_id]
+                    (0, o.fetchReferralsRemaining)(), m[t.id] = t, c = [...c, t.user_id]
                 },
                 BILLING_REFERRAL_RESOLVE_SUCCESS: function(e) {
                     let {
                         userTrialOffer: t
                     } = e;
-                    null != t && (f.delete(t.id), m.add(t.id), I[t.id] = t)
+                    null != t && (f.delete(t.id), I.add(t.id), m[t.id] = t)
                 },
                 BILLING_REFERRAL_RESOLVE_FAIL: function(e) {
                     let {
                         userTrialOfferId: t
                     } = e;
-                    f.delete(t), m.add(t)
+                    f.delete(t), I.add(t)
                 },
                 LOAD_MESSAGES_SUCCESS: O,
                 MESSAGE_CREATE: function(e) {
@@ -530,7 +530,7 @@
                 },
                 LOAD_MESSAGES_AROUND_SUCCESS: O,
                 LOGOUT: function() {
-                    u = null, d = {}, c = [], _ = new Set, E = !1, f = new Set, m = new Set, I = {}, T = 0, R = null
+                    u = null, d = {}, c = [], _ = new Set, E = !1, f = new Set, I = new Set, m = {}, T = 0, R = null
                 }
             })
         },
@@ -693,8 +693,8 @@
                     _ = (0, a.useTrialOffer)(o.PREMIUM_TIER_2_REACTIVATION_TRIAL_ID),
                     E = (0, a.useTrialOffer)(i.default.getAnyOfUserTrialOfferId([o.PREMIUM_TIER_2_HFU_ONE_WEEK_TRIAL_ID, o.PREMIUM_TIER_2_HFU_TWO_WEEK_TRIAL_ID, o.PREMIUM_TIER_2_HFU_ONE_MONTH_TRIAL_ID, o.PREMIUM_TIER_0_LIKELIHOOD_TRIAL_ID])),
                     f = (0, a.useTrialOffer)(o.PREMIUM_TIER_2_AUTH3_TRIAL_ID),
-                    m = (0, n.default)([l.default], () => void 0 === e ? null : l.default.getRelevantUserTrialOffer(e));
-                return null !== (u = null !== (s = null !== (r = null !== (t = null != d ? d : m) && void 0 !== t ? t : c) && void 0 !== r ? r : _) && void 0 !== s ? s : E) && void 0 !== u ? u : f
+                    I = (0, n.default)([l.default], () => void 0 === e ? null : l.default.getRelevantUserTrialOffer(e));
+                return null !== (u = null !== (s = null !== (r = null !== (t = null != d ? d : I) && void 0 !== t ? t : c) && void 0 !== r ? r : _) && void 0 !== s ? s : E) && void 0 !== u ? u : f
             }
         },
         772465: function(e, t, r) {
@@ -734,7 +734,7 @@
                     return f
                 },
                 fetchClaimedOutboundPromotionCodes: function() {
-                    return I
+                    return m
                 },
                 claimOutboundPromotion: function() {
                     return T
@@ -794,7 +794,7 @@
                 }
             }
 
-            function m(e) {
+            function I(e) {
                 return {
                     code: e.code,
                     userId: e.user_id,
@@ -802,7 +802,7 @@
                     promotion: E(e.promotion)
                 }
             }
-            async function I() {
+            async function m() {
                 let e = await n.default.get({
                         url: c.Endpoints.CLAIMED_OUTBOUND_PROMOTION_CODES,
                         query: {
@@ -811,14 +811,14 @@
                         oldFormErrors: !0
                     }),
                     t = e.body;
-                return t.map(m)
+                return t.map(I)
             }
             async function T(e) {
                 let t = await n.default.post({
                         url: c.Endpoints.CLAIM_OUTBOUND_PROMOTION_CODE(e)
                     }),
                     r = t.body;
-                return m(r)
+                return I(r)
             }
 
             function R(e, t) {
@@ -873,10 +873,10 @@
                     return f
                 },
                 fetchActiveBogoPromotion: function() {
-                    return m
+                    return I
                 },
                 default: function() {
-                    return I
+                    return m
                 }
             });
             var n = r("990746"),
@@ -926,7 +926,7 @@
                     })
                 }
             }
-            async function m() {
+            async function I() {
                 if (!c.default.isFetchingActiveBogoPromotion) try {
                     l.default.dispatch({
                         type: "ACTIVE_BOGO_PROMOTION_FETCH"
@@ -948,7 +948,7 @@
                     })
                 }
             }
-            var I = {
+            var m = {
                 fetchActiveOutboundPromotions: f,
                 dismissOutboundPromotionNotice: function() {
                     l.default.dispatch({
@@ -966,7 +966,7 @@
                         type: "OUTBOUND_PROMOTIONS_SEEN"
                     })
                 },
-                fetchActiveBogoPromotion: m
+                fetchActiveBogoPromotion: I
             }
         },
         694540: function(e, t, r) {
@@ -976,10 +976,10 @@
                     return f
                 },
                 useUnseenOutboundPromotions: function() {
-                    return m
+                    return I
                 },
                 useBogoPromotion: function() {
-                    return I
+                    return m
                 }
             });
             var n = r("773670"),
@@ -1010,7 +1010,7 @@
                     t = E(),
                     r = (0, i.useStateFromStores)([a.default], () => a.default.getCurrentUser()),
                     f = (0, s.useHasActiveTrial)(),
-                    [m, I] = n.useState(!1),
+                    [I, m] = n.useState(!1),
                     [T, R] = n.useState([]);
                 n.useEffect(() => {
                     null != e && l.default.wait(() => d.default.markOutboundPromotionsSeen())
@@ -1031,9 +1031,9 @@
                 }, [e, P]), n.useEffect(() => {
                     l.default.wait(() => {
                         (0, u.fetchClaimedOutboundPromotionCodes)().then(e => {
-                            R(e), I(!0)
+                            R(e), m(!0)
                         }).catch(() => {
-                            R([]), I(!0)
+                            R([]), m(!0)
                         })
                     })
                 }, []);
@@ -1055,9 +1055,9 @@
                         } = e;
                         return !S.has(t.id)
                     }),
-                    L = m && (!P || null != e);
+                    M = I && (!P || null != e);
                 return {
-                    promotionsLoaded: L,
+                    promotionsLoaded: M,
                     activeOutboundPromotions: t.filter(e => (0, u.shouldShowOutboundPromotionOnPlatform)(e) && (!f || (0, u.isTrialUserEligibleToSeeOutboundPromotion)(e, O))),
                     claimedEndedOutboundPromotions: C.filter(e => (0, u.shouldShowOutboundPromotionOnPlatform)(e.promotion)),
                     claimedOutboundPromotionCodeMap: O,
@@ -1065,7 +1065,7 @@
                 }
             }
 
-            function m() {
+            function I() {
                 let e = (0, i.useStateFromStores)([c.default], () => c.default.lastSeenOutboundPromotionStartDate),
                     t = (0, s.useHasActiveTrial)(),
                     r = E(),
@@ -1082,7 +1082,7 @@
                 return l.filter(e => (0, u.shouldShowOutboundPromotionOnPlatform)(e))
             }
 
-            function I() {
+            function m() {
                 let e = (0, i.useStateFromStores)([c.default], () => c.default.bogoPromotion);
                 return {
                     promotion: e
@@ -1122,13 +1122,13 @@
                 return e
             }
 
-            function m() {
+            function I() {
                 var e, t, r;
                 E = null !== (r = null === (t = l.default.settings.userContent) || void 0 === t ? void 0 : null === (e = t.lastDismissedOutboundPromotionStartDate) || void 0 === e ? void 0 : e.value) && void 0 !== r ? r : null
             }
-            class I extends n.default.PersistedStore {
+            class m extends n.default.PersistedStore {
                 initialize(e) {
-                    null != e && (o = e), this.waitFor(l.default), this.syncWith([l.default], m)
+                    null != e && (o = e), this.waitFor(l.default), this.syncWith([l.default], I)
                 }
                 get outboundPromotions() {
                     return _
@@ -1164,8 +1164,8 @@
                     return o
                 }
             }
-            I.displayName = "PromotionsStore", I.persistKey = "PromotionsPersistedStore";
-            var T = new I(i.default, {
+            m.displayName = "PromotionsStore", m.persistKey = "PromotionsPersistedStore";
+            var T = new m(i.default, {
                 ACTIVE_OUTBOUND_PROMOTIONS_FETCH_SUCCESS: function(e) {
                     let {
                         activeOutboundPromotions: t,
@@ -1276,8 +1276,8 @@
                 _ = r("697218"),
                 E = r("521012"),
                 f = r("340412"),
-                m = r("719923"),
-                I = r("982457"),
+                I = r("719923"),
+                m = r("982457"),
                 T = r("433947"),
                 R = r("705337"),
                 p = r("935566"),
@@ -1285,8 +1285,8 @@
                 O = r("538620"),
                 S = r("694540"),
                 C = r("807345"),
-                L = r("646718"),
-                M = r("49111"),
+                M = r("646718"),
+                L = r("49111"),
                 g = r("782340");
 
             function h(e) {
@@ -1296,17 +1296,17 @@
                     premiumSubscription: a,
                     mostRecentSubscription: o
                 } = e, s = !1, u = !1;
-                if (null != o && o.status === M.SubscriptionStatusTypes.ENDED) {
+                if (null != o && o.status === L.SubscriptionStatusTypes.ENDED) {
                     let e = (null === (t = o.metadata) || void 0 === t ? void 0 : t.ended_at) != null ? i(o.metadata.ended_at) : null,
-                        n = null === (r = (0, m.getPremiumPlanItem)(o)) || void 0 === r ? void 0 : r.planId,
-                        l = null != n && m.default.getPremiumType(n) === L.PremiumTypes.TIER_2;
+                        n = null === (r = (0, I.getPremiumPlanItem)(o)) || void 0 === r ? void 0 : r.planId,
+                        l = null != n && I.default.getPremiumType(n) === M.PremiumTypes.TIER_2;
                     u = null != e && l && e.add(10, "days").isAfter(i())
                 }
                 if (null != a) {
-                    let e = null === (n = (0, m.getPremiumPlanItem)(a)) || void 0 === n ? void 0 : n.planId,
-                        t = null != e && m.default.getPremiumType(e) === L.PremiumTypes.TIER_2,
+                    let e = null === (n = (0, I.getPremiumPlanItem)(a)) || void 0 === n ? void 0 : n.planId,
+                        t = null != e && I.default.getPremiumType(e) === M.PremiumTypes.TIER_2,
                         r = _.default.getCurrentUser(),
-                        i = (null == a ? void 0 : a.trialId) != null && m.default.isPremiumExactly(r, L.PremiumTypes.TIER_0);
+                        i = (null == a ? void 0 : a.trialId) != null && I.default.isPremiumExactly(r, M.PremiumTypes.TIER_0);
                     s = t || i
                 }
                 return !l || s || u
@@ -1340,14 +1340,14 @@
                     _ = c && null == o && null != r && !t,
                     f = Date.now(),
                     {
-                        enabled: m
+                        enabled: I
                     } = R.default.useExperiment({
                         location: "153d31_2"
                     }, {
                         autoTrackExposure: _,
                         disable: !_
                     });
-                return !(f > d) && m
+                return !(f > d) && I
             }
             async function A() {
                 var e;
@@ -1378,8 +1378,8 @@
                         autoTrackExposure: !1
                     });
                 if (r || n || !i || !a && !l) return !1;
-                if (f.default.shouldFetchOffer() && await I.default.fetchUserTrialOffer(), f.default.hasFetchedOffer() && f.default.hasAnyUnexpiredOffer()) return !1;
-                !E.default.hasFetchedMostRecentPremiumTypeSubscription() && (null === (e = _.default.getCurrentUser()) || void 0 === e ? void 0 : e.hasHadSKU(L.PremiumSubscriptionSKUs.TIER_2)) && await (0, o.fetchMostRecentSubscription)(), !E.default.hasFetchedSubscriptions() && await (0, o.fetchSubscriptions)();
+                if (f.default.shouldFetchOffer() && await m.default.fetchUserTrialOffer(), f.default.hasFetchedOffer() && f.default.hasAnyUnexpiredOffer()) return !1;
+                !E.default.hasFetchedMostRecentPremiumTypeSubscription() && (null === (e = _.default.getCurrentUser()) || void 0 === e ? void 0 : e.hasHadSKU(M.PremiumSubscriptionSKUs.TIER_2)) && await (0, o.fetchMostRecentSubscription)(), !E.default.hasFetchedSubscriptions() && await (0, o.fetchSubscriptions)();
                 let s = E.default.getMostRecentPremiumTypeSubscription(),
                     d = E.default.getPremiumTypeSubscription();
                 return !h({
@@ -1474,8 +1474,8 @@
                 _ = r("551042"),
                 E = r("819855"),
                 f = r("77078"),
-                m = r("841098"),
-                I = r("206230"),
+                I = r("841098"),
+                m = r("206230"),
                 T = r("32531"),
                 R = r("393414"),
                 p = r("945330"),
@@ -1483,8 +1483,8 @@
                 O = r("379863"),
                 S = r("216422"),
                 C = r("719923"),
-                L = r("286235"),
-                M = r("396053"),
+                M = r("286235"),
+                L = r("396053"),
                 g = r("917247"),
                 h = r("635956"),
                 U = r("400307"),
@@ -1648,7 +1648,7 @@
                         variant: "heading-md/semibold",
                         color: "text-normal",
                         children: x.default.Messages.USER_SETTINGS_TRY_OUT_PREMIUM_TRIAL_DESCRIPTION.format({
-                            onClick: M.navigateToPremiumMarketingPage
+                            onClick: L.navigateToPremiumMarketingPage
                         })
                     }), (0, n.jsx)(y, {
                         className: v.subscribeButtonWide,
@@ -1699,7 +1699,7 @@
                     analyticsLocationObject: P,
                     trialOffer: O,
                     discountOffer: S
-                } = e, M = (0, c.useStateFromStores)([I.default], () => I.default.useReducedMotion), g = (0, m.default)();
+                } = e, L = (0, c.useStateFromStores)([m.default], () => m.default.useReducedMotion), g = (0, I.default)();
                 switch (u) {
                     case A.PremiumUpsellTypes.EMPTY_STICKER_PICKER_UPSELL:
                         return (0, n.jsxs)(n.Fragment, {
@@ -1894,7 +1894,7 @@
                     case A.PremiumUpsellTypes.MESSAGE_LENGTH_IN_EDITOR_UPSELL:
                         return (0, n.jsxs)("div", {
                             className: a(v.messageLengthUpsellContainer, {
-                                [v.messageLengthUpsellAppearAnimation]: !M
+                                [v.messageLengthUpsellAppearAnimation]: !L
                             }),
                             children: [(0, n.jsx)(f.Text, {
                                 variant: "text-lg/bold",
@@ -1944,7 +1944,7 @@
                             children: l
                         });
                     default:
-                        return L.default.captureMessage("Possible mishandling of a PremiumUpsellType: ".concat(u)), (0, n.jsx)(B, {
+                        return M.default.captureMessage("Possible mishandling of a PremiumUpsellType: ".concat(u)), (0, n.jsx)(B, {
                             headingText: t,
                             context: i,
                             children: l,
@@ -1986,8 +1986,8 @@
                 _ = r("377849"),
                 E = r.n(_),
                 f = r("498225"),
-                m = r("912557"),
-                I = r("819855"),
+                I = r("912557"),
+                m = r("819855"),
                 T = r("77078"),
                 R = r("225664"),
                 p = r("841098"),
@@ -1995,8 +1995,8 @@
                 O = r("685665"),
                 S = r("441413"),
                 C = r("432173"),
-                L = r("915639"),
-                M = r("697218"),
+                M = r("915639"),
+                L = r("697218"),
                 g = r("521012"),
                 h = r("594098"),
                 U = r("491614"),
@@ -2084,7 +2084,7 @@
             function ee(e) {
                 let {
                     tier: t = W.PremiumTypes.TIER_2
-                } = e, r = (0, p.default)(), n = (0, I.isThemeLight)(r);
+                } = e, r = (0, p.default)(), n = (0, m.isThemeLight)(r);
                 return (0, u.jsxs)(u.Fragment, {
                     children: [!n && (0, u.jsxs)(u.Fragment, {
                         children: [(0, u.jsx)("div", {
@@ -2139,7 +2139,7 @@
                 } = e;
                 switch (i) {
                     case a.PREMIUM_TIER_0_GRADIENT_FILL:
-                        t = m.default.unsafe_rawColors.PREMIUM_TIER_0_PURPLE_FOR_GRADIENTS.css;
+                        t = I.default.unsafe_rawColors.PREMIUM_TIER_0_PURPLE_FOR_GRADIENTS.css;
                         break;
                     case a.PREMIUM_TIER_2_NEW_GRADIENT_FILL:
                         t = "url(#".concat(q, ")");
@@ -2251,7 +2251,7 @@
                     offerTierMatchesCard: a,
                     offerType: s,
                     showYearlyPrice: d
-                } = e, c = (0, f.useStateFromStores)([g.default], () => g.default.getPremiumTypeSubscription()), _ = (0, f.useStateFromStores)([M.default], () => M.default.getCurrentUser()), m = (0, B.useHasDiscountApplied)(), I = l === W.PremiumTypes.TIER_0 ? W.PremiumSubscriptionSKUs.TIER_0 : W.PremiumSubscriptionSKUs.TIER_2, R = (null == c ? void 0 : c.trialId) != null ? null == _ ? void 0 : _.premiumType : m ? W.PremiumTypes.TIER_2 : null, p = (0, k.usePremiumTrialOffer)(), P = null == p ? void 0 : p.subscription_trial;
+                } = e, c = (0, f.useStateFromStores)([g.default], () => g.default.getPremiumTypeSubscription()), _ = (0, f.useStateFromStores)([L.default], () => L.default.getCurrentUser()), I = (0, B.useHasDiscountApplied)(), m = l === W.PremiumTypes.TIER_0 ? W.PremiumSubscriptionSKUs.TIER_0 : W.PremiumSubscriptionSKUs.TIER_2, R = (null == c ? void 0 : c.trialId) != null ? null == _ ? void 0 : _.premiumType : I ? W.PremiumTypes.TIER_2 : null, p = (0, k.usePremiumTrialOffer)(), P = null == p ? void 0 : p.subscription_trial;
                 if (!i && null != R && l === R && null != c && null != c.planIdFromItems) {
                     let e = null != c.trialEndsAt ? E(null == c ? void 0 : c.trialEndsAt).diff(E(), "d") : 0,
                         t = W.SubscriptionPlanInfo[c.planIdFromItems],
@@ -2293,11 +2293,11 @@
                 }
                 return (0, u.jsxs)(u.Fragment, {
                     children: [(0, u.jsx)(K.default, {
-                        subscriptionTier: I,
+                        subscriptionTier: m,
                         isGift: i,
                         className: z.price
                     }), d && (0, u.jsx)(K.default, {
-                        subscriptionTier: I,
+                        subscriptionTier: m,
                         interval: W.SubscriptionIntervalTypes.YEAR,
                         isGift: i,
                         className: z.price
@@ -2321,15 +2321,15 @@
                     }), (0, u.jsx)(ei, {
                         Icon: N.default,
                         text: Y.default.Messages.PREMIUM_TIER_CUSTOM_EMOJI_ITEM
-                    }), (0, u.jsx)(ei, {
-                        Icon: F.default,
-                        text: Y.default.Messages.PREMIUM_TIER_NITRO_BADGE_ITEM
-                    }), e && !t ? (0, u.jsx)(ei, {
+                    }), e ? (0, u.jsx)(ei, {
                         Icon: U.default,
-                        text: Y.default.Messages.PREMIUM_TIER_SUPER_REACTIONS_ITEM.format({
+                        text: t ? Y.default.Messages.PREMIUM_MARKETING_SUPER_REACTIONS_PERK_TITLE_UNLIMITED : Y.default.Messages.PREMIUM_TIER_SUPER_REACTIONS_ITEM.format({
                             weeklyReactionsNumber: C.BurstRefillTierAmounts.TIER_0
                         })
-                    }) : null]
+                    }) : null, (0, u.jsx)(ei, {
+                        Icon: F.default,
+                        text: Y.default.Messages.PREMIUM_TIER_NITRO_BADGE_ITEM
+                    })]
                 })
             }
 
@@ -2342,13 +2342,13 @@
                     showYearlyPrice: l,
                     className: s,
                     isGift: d = !1
-                } = e, _ = (0, f.useStateFromStores)([g.default], () => g.default.getPremiumTypeSubscription()), E = (0, f.useStateFromStores)([M.default], () => M.default.getCurrentUser()), m = (0, k.usePremiumTrialOffer)(), I = null == m ? void 0 : null === (t = m.subscription_trial) || void 0 === t ? void 0 : t.sku_id, T = (null == _ ? void 0 : _.trialId) != null, R = (null == _ ? void 0 : _.trialId) != null ? null == E ? void 0 : E.premiumType : null, p = null != I || T;
+                } = e, _ = (0, f.useStateFromStores)([g.default], () => g.default.getPremiumTypeSubscription()), E = (0, f.useStateFromStores)([L.default], () => L.default.getCurrentUser()), I = (0, k.usePremiumTrialOffer)(), m = null == I ? void 0 : null === (t = I.subscription_trial) || void 0 === t ? void 0 : t.sku_id, T = (null == _ ? void 0 : _.trialId) != null, R = (null == _ ? void 0 : _.trialId) != null ? null == E ? void 0 : E.premiumType : null, p = null != m || T;
                 return (0, u.jsxs)("div", {
                     className: c(z.tier0, z.card, s, {
                         [z.withTier0Rim]: !d && p,
                         [z.withCardHover]: !d && p
                     }),
-                    children: [I === W.PremiumSubscriptionSKUs.TIER_0 ? (0, u.jsxs)(u.Fragment, {
+                    children: [m === W.PremiumSubscriptionSKUs.TIER_0 ? (0, u.jsxs)(u.Fragment, {
                         children: [(0, u.jsx)(er, {
                             text: Y.default.Messages.BILLING_TRIAL_FREE_TRIAL_TEXT,
                             className: z.topRimPill,
@@ -2367,7 +2367,7 @@
                             height: 242,
                             zoomable: !1
                         })
-                    }) : null, d || I !== W.PremiumSubscriptionSKUs.TIER_0 ? null : (0, u.jsxs)(u.Fragment, {
+                    }) : null, d || m !== W.PremiumSubscriptionSKUs.TIER_0 ? null : (0, u.jsxs)(u.Fragment, {
                         children: [(0, u.jsx)(er, {
                             text: Y.default.Messages.BILLING_TRIAL_FREE_TRIAL_TEXT,
                             className: z.topRimPill,
@@ -2395,11 +2395,11 @@
                                 isGift: d,
                                 premiumTier: W.PremiumTypes.TIER_0,
                                 offerType: o.PREMIUM_TRIAL,
-                                offerTierMatchesCard: I === W.PremiumSubscriptionSKUs.TIER_0,
+                                offerTierMatchesCard: m === W.PremiumSubscriptionSKUs.TIER_0,
                                 showYearlyPrice: l
                             }), (0, u.jsx)(ea, {})]
                         })
-                    }), i, d || I !== W.PremiumSubscriptionSKUs.TIER_0 ? null : (0, u.jsx)(ee, {
+                    }), i, d || m !== W.PremiumSubscriptionSKUs.TIER_0 ? null : (0, u.jsx)(ee, {
                         tier: W.PremiumTypes.TIER_0
                     })]
                 })
@@ -2411,7 +2411,7 @@
                 } = e, {
                     enabled: r,
                     hasUnlimited: n
-                } = (0, R.useBurstReactionsExperiment)(), i = (0, f.useStateFromStores)([L.default], () => L.default.locale);
+                } = (0, R.useBurstReactionsExperiment)(), i = (0, f.useStateFromStores)([M.default], () => M.default.locale);
                 if (t === s.BOOSTING) return (0, u.jsxs)(u.Fragment, {
                     children: [(0, u.jsx)(ei, {
                         Icon: x.default,
@@ -2448,15 +2448,15 @@
                     }), (0, u.jsx)(ei, {
                         Icon: N.default,
                         text: Y.default.Messages.PREMIUM_TIER_CUSTOM_EMOJI_ITEM
-                    }), (0, u.jsx)(ei, {
-                        Icon: D.default,
-                        text: Y.default.Messages.PREMIUM_TIER_HD_STREAMING_ITEM
-                    }), r && !n ? (0, u.jsx)(ei, {
+                    }), r ? (0, u.jsx)(ei, {
                         Icon: U.default,
-                        text: Y.default.Messages.PREMIUM_TIER_SUPER_REACTIONS_ITEM.format({
+                        text: n ? Y.default.Messages.PREMIUM_MARKETING_SUPER_REACTIONS_PERK_TITLE_UNLIMITED : Y.default.Messages.PREMIUM_TIER_SUPER_REACTIONS_ITEM.format({
                             weeklyReactionsNumber: C.BurstRefillTierAmounts.TIER_2
                         })
                     }) : null, (0, u.jsx)(ei, {
+                        Icon: D.default,
+                        text: Y.default.Messages.PREMIUM_TIER_HD_STREAMING_ITEM
+                    }), (0, u.jsx)(ei, {
                         Icon: x.default,
                         text: Y.default.Messages.PREMIUM_TIER_SERVER_BOOST_ITEM
                     }), (0, u.jsx)(ei, {
@@ -2474,14 +2474,14 @@
                     showYearlyPrice: d,
                     featureSet: _ = s.DEFAULT,
                     className: E,
-                    isGift: m = !1
-                } = e, I = (0, f.useStateFromStores)([g.default], () => g.default.getPremiumTypeSubscription()), R = (0, f.useStateFromStores)([M.default], () => M.default.getCurrentUser()), p = (0, k.usePremiumTrialOffer)(), P = null == p ? void 0 : null === (t = p.subscription_trial) || void 0 === t ? void 0 : t.sku_id, O = (null == I ? void 0 : I.trialId) != null ? null == R ? void 0 : R.premiumType : null, S = (0, B.useIsInPremiumOfferExperience)(), C = (0, H.usePremiumDiscountOffer)(), L = (0, B.useHasDiscountApplied)(), U = null != P || null != O ? o.PREMIUM_TRIAL : null != C || L ? o.PREMIUM_DISCOUNT : null, A = (0, V.useIsEligibleForBogoPromotion)(), N = (0, V.getBOGOPillCopy)();
+                    isGift: I = !1
+                } = e, m = (0, f.useStateFromStores)([g.default], () => g.default.getPremiumTypeSubscription()), R = (0, f.useStateFromStores)([L.default], () => L.default.getCurrentUser()), p = (0, k.usePremiumTrialOffer)(), P = null == p ? void 0 : null === (t = p.subscription_trial) || void 0 === t ? void 0 : t.sku_id, O = (null == m ? void 0 : m.trialId) != null ? null == R ? void 0 : R.premiumType : null, S = (0, B.useIsInPremiumOfferExperience)(), C = (0, H.usePremiumDiscountOffer)(), M = (0, B.useHasDiscountApplied)(), U = null != P || null != O ? o.PREMIUM_TRIAL : null != C || M ? o.PREMIUM_DISCOUNT : null, A = (0, V.useIsEligibleForBogoPromotion)(), N = (0, V.getBOGOPillCopy)();
                 return (0, u.jsxs)("div", {
                     className: c(z.tier2, z.card, E, {
-                        [z.withTier2Rim]: !m && S,
-                        [z.withCardHover]: !m && S
+                        [z.withTier2Rim]: !I && S,
+                        [z.withCardHover]: !I && S
                     }),
-                    children: [!m && null != C && (0, H.discountOfferHasTier)(C, W.PremiumSubscriptionSKUs.TIER_2) && (null === (r = C.discount) || void 0 === r ? void 0 : r.amount) !== void 0 ? (0, u.jsxs)(u.Fragment, {
+                    children: [!I && null != C && (0, H.discountOfferHasTier)(C, W.PremiumSubscriptionSKUs.TIER_2) && (null === (r = C.discount) || void 0 === r ? void 0 : r.amount) !== void 0 ? (0, u.jsxs)(u.Fragment, {
                         children: [(0, u.jsx)(er, {
                             text: Y.default.Messages.PREMIUM_DISCOUNT_AMOUNT_OFF_BADGE.format({
                                 percent: null === (n = C.discount) || void 0 === n ? void 0 : n.amount
@@ -2491,7 +2491,7 @@
                         }), (0, u.jsx)("div", {
                             className: z.rimGlowTier2
                         })]
-                    }) : null, m || P !== W.PremiumSubscriptionSKUs.TIER_2 ? null : (0, u.jsxs)(u.Fragment, {
+                    }) : null, I || P !== W.PremiumSubscriptionSKUs.TIER_2 ? null : (0, u.jsxs)(u.Fragment, {
                         children: [(0, u.jsx)(er, {
                             text: Y.default.Messages.BILLING_TRIAL_FREE_TRIAL_TEXT,
                             className: z.topRimPill,
@@ -2499,7 +2499,7 @@
                         }), (0, u.jsx)("div", {
                             className: z.rimGlowTier2
                         })]
-                    }), m || O !== W.PremiumTypes.TIER_2 ? null : (0, u.jsxs)(u.Fragment, {
+                    }), I || O !== W.PremiumTypes.TIER_2 ? null : (0, u.jsxs)(u.Fragment, {
                         children: [(0, u.jsx)(er, {
                             text: Y.default.Messages.PREMIUM_TIER_CARD_TRIAL_ACTIVATED,
                             className: z.topRimPill,
@@ -2507,7 +2507,7 @@
                         }), (0, u.jsx)("div", {
                             className: z.rimGlowTier2
                         })]
-                    }), !m && L && (0, u.jsxs)(u.Fragment, {
+                    }), !I && M && (0, u.jsxs)(u.Fragment, {
                         children: [(0, u.jsx)(er, {
                             text: Y.default.Messages.PREMIUM_TIER_CARD_DISCOUNT_APPLIED,
                             className: z.topRimPill,
@@ -2527,12 +2527,12 @@
                     }) : null, (0, u.jsxs)("div", {
                         children: [(0, u.jsx)(v.default, {
                             className: c(z.tier2Title, z.title)
-                        }), !m && P !== W.PremiumSubscriptionSKUs.TIER_2 && A && (0, u.jsx)(T.Text, {
+                        }), !I && P !== W.PremiumSubscriptionSKUs.TIER_2 && A && (0, u.jsx)(T.Text, {
                             variant: "text-xs/bold",
                             className: z.freeTrialPillInline,
                             children: N
                         }), (0, u.jsx)(el, {
-                            isGift: m,
+                            isGift: I,
                             premiumTier: W.PremiumTypes.TIER_2,
                             offerType: U,
                             offerTierMatchesCard: P === W.PremiumSubscriptionSKUs.TIER_2 || (0, H.discountOfferHasTier)(C, W.PremiumSubscriptionSKUs.TIER_2),
@@ -2540,7 +2540,7 @@
                         }), (0, u.jsx)(es, {
                             featureSet: _
                         })]
-                    }), l, m || P !== W.PremiumSubscriptionSKUs.TIER_2 && null == C ? null : (0, u.jsx)(ee, {
+                    }), l, I || P !== W.PremiumSubscriptionSKUs.TIER_2 && null == C ? null : (0, u.jsx)(ee, {
                         tier: W.PremiumTypes.TIER_2
                     })]
                 })
@@ -2600,14 +2600,14 @@
                         className: c.priceSpinner
                     });
                     let f = s.default.getForSkuAndInterval(t, r),
-                        m = null != f ? (0, u.getFormattedPriceForPlan)(f, void 0, !1, _) : null;
+                        I = null != f ? (0, u.getFormattedPriceForPlan)(f, void 0, !1, _) : null;
                     return (0, n.jsxs)(o.Heading, {
                         color: "always-white",
                         variant: "heading-md/medium",
                         className: l(c.pricePerInterval, i),
                         children: [(0, n.jsx)("span", {
                             className: c.price,
-                            children: m
+                            children: I
                         }), " / ", (0, u.getIntervalStringAsNoun)(r)]
                     })
                 }
@@ -2766,4 +2766,4 @@
         }
     }
 ]);
-//# sourceMappingURL=34d78c45b9c5a28318e0.js.map
+//# sourceMappingURL=d011bd2e214946286c04.js.map
