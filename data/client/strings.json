@@ -16077,6 +16077,8 @@
   "CREATOR_MONETIZATION_PAYMENT_ACCOUNT_VERIFICATION_REQUIRED_TITLE": "\"Verified payment account required\"",
   "CREATOR_MONETIZATION_PAYMENT_ACCOUNT_VERIFICATION_REQUIRED_BODY": "\"You must setup and complete verification of your payment account before you can publish.\\n\\nHead over to the $[Payment](highlightHook) tab and click $[Edit Payment Info](highlightHook) to get started.\"",
   "CREATOR_MONETIZATION_PAYMENT_ACCOUNT_VERIFICATION_REQUIRED_BODY_WITH_LINK": "\"You must setup and complete verification of your payment account before you can publish.\\n\\n[Click here]({url}) to get started, or head over to the $[Payment](highlightHook) tab at any time and click $[Edit Payment Info](highlightHook).\"",
+  "CREATOR_MONETIZATION_RESTRICTED_GUILD_CANNOT_EDIT_PRODUCT_TITLE": "\"Cannot edit the product\"",
+  "CREATOR_MONETIZATION_RESTRICTED_GUILD_CANNOT_EDIT_PRODUCT_BODY": "\"Your server is currently restricted for monetization and you cannot edit products. Check your email for details\"",
   "GUILD_PRODUCT_EDIT_MODAL_CARD_PREVIEW_HEADING": "\"Here's what members see\"",
   "GUILD_PRODUCT_EDIT_MODAL_CARD_PREVIEW_DESCRIPTION": "\"This is a preview of what your server product will look like to people on Discord when you share in-chat.\"",
   "GUILD_PRODUCT_EDIT_MODAL_SAVE_DRAFT_BUTTON": "\"Save as draft\"",
