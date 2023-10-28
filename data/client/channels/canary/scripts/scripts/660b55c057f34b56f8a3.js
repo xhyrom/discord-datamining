@@ -15816,6 +15816,9 @@
                 getVideoHealthManager() {
                     return this._videoHealthManager
                 }
+                getBandwidthEstimationExperiment() {
+                    return this._bandwidthEstimationExperiment
+                }
                 pauseStatsCollectionForUser(e, t) {
                     let n = this.getOrCreateVideoQuality();
                     if (null == n) {
@@ -16395,6 +16398,7 @@
                     }
                 }
                 _handleBandwidthEstimationExperiment(e) {
+                    this._bandwidthEstimationExperiment = e;
                     let t = g.default.getMediaEngineExperiments(e);
                     if (null !== t && 0 !== t.length) {
                         var n;
@@ -16505,7 +16509,7 @@
                             null === (i = this._connection) || void 0 === i || i.createUser(e, t, n)
                         })
                     }
-                    this._remoteVideoSinkWants = x.DEFAULT_WANTS_FULL, O.default.shouldRecordNextConnection() ? (this._recordingEnabled = !0, h.setShouldRecordNextConnection(!1)) : this._recordingEnabled = !1, this._soundshareStats = new k.default, M.default.addOnlineCallback(this._handleNetworkOnline), M.default.addOfflineCallback(this._handleNetworkOffline), (0, P.isDesktop)() && (this.powerMonitorListener = b.default.remotePowerMonitor.on("resume", this._handlePowerResume)), this._supportedBandwidthEstimationExperiments = [], v.default.getMediaEngine().getSupportedBandwidthEstimationExperiments(e => {
+                    this._remoteVideoSinkWants = x.DEFAULT_WANTS_FULL, O.default.shouldRecordNextConnection() ? (this._recordingEnabled = !0, h.setShouldRecordNextConnection(!1)) : this._recordingEnabled = !1, this._soundshareStats = new k.default, M.default.addOnlineCallback(this._handleNetworkOnline), M.default.addOfflineCallback(this._handleNetworkOffline), (0, P.isDesktop)() && (this.powerMonitorListener = b.default.remotePowerMonitor.on("resume", this._handlePowerResume)), this._supportedBandwidthEstimationExperiments = [], this._bandwidthEstimationExperiment = null, v.default.getMediaEngine().getSupportedBandwidthEstimationExperiments(e => {
                         this._supportedBandwidthEstimationExperiments = e
                     })
                 }
@@ -48843,7 +48847,7 @@
                         var i;
                         let d = {
                                 environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                                build_number: "241445"
+                                build_number: "241450"
                             },
                             _ = o.default.getCurrentUser();
                         null != _ && (d.user_id = _.id, d.user_name = _.tag, null != _.email && (d.email = _.email));
@@ -51796,4 +51800,4 @@
         }
     }
 ]);
-//# sourceMappingURL=474201e5cef89d3ab963.js.map
+//# sourceMappingURL=660b55c057f34b56f8a3.js.map

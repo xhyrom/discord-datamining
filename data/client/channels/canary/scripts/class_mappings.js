@@ -21437,7 +21437,6 @@
             e.exports = {
                 cardContainer: "cardContainer__912d9",
                 centerAlignSection: "centerAlignSection_e8acae",
-                featureBorder: "featureBorder__365a4",
                 fullWidth: "fullWidth__2b90a",
                 heading: "heading__41621",
                 leftAlignSection: "leftAlignSection_b3e61a",
@@ -21611,7 +21610,6 @@
                 collectiblesBanner: "collectiblesBanner__731b7",
                 collectiblesBannerFullscreen: "collectiblesBannerFullscreen_b2bd3b",
                 container: "container__74da1",
-                containerPadding: "containerPadding_cb78f7",
                 existingSubscriberSpacing: "existingSubscriberSpacing__3dfec",
                 footerSpacing: "footerSpacing__9d9e4",
                 footerSpacingFullscreen: "footerSpacingFullscreen__4122e",
@@ -21620,6 +21618,8 @@
                 fullscreenHero: "fullscreenHero_c52cb4",
                 marginTopForButtons: "marginTopForButtons__2d108",
                 noTopPaddingOverride: "noTopPaddingOverride__28e38",
+                pdSparklesBottom: "pdSparklesBottom__58f44",
+                pdSparklesTop: "pdSparklesTop_eeb019",
                 perkCardsContainer: "perkCardsContainer__30878",
                 perkCardsContainerSpacingFullscreen: "perkCardsContainerSpacingFullscreen__3a11c perkCardsContainer__30878",
                 perkCardsContainerSpacingSettings: "perkCardsContainerSpacingSettings__54b8c perkCardsContainer__30878",
@@ -21635,6 +21635,7 @@
                 tableLeftSideDecoration: "tableLeftSideDecoration__8c9e1",
                 tableRightSideDecoration: "tableRightSideDecoration__7ea51",
                 trialMarketingMargin: "trialMarketingMargin_dd639f",
+                whatsNewSection: "whatsNewSection_e83a8d",
                 zIndex1: "zIndex1__91aa3"
             }
         },
@@ -21647,7 +21648,9 @@
                 giftNitro: "giftNitro__7b37a",
                 heroHeading: "heroHeading_a17887",
                 manageMembership: "manageMembership__63c2c",
-                perksCards: "perksCards_e83187"
+                perksCards: "perksCards_e83187",
+                perksDiscoverability: "perksDiscoverability__4242c",
+                whatsNew: "whatsNew__2b2f9"
             }
         },
         447175: function(e, t, o) {

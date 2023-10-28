@@ -4566,6 +4566,9 @@
                         E = this.isOwner ? {
                             clips_enabled: _.clipsEnabled && c,
                             clips_buffer_length: _.clipsLength
+                        } : {},
+                        m = this.isOwner ? {
+                            bandwidth_estimation_experiment: this.getBandwidthEstimationExperiment()
                         } : {};
                     S.default.track(I.AnalyticEvents.VIDEO_STREAM_ENDED, {
                         ...a,
@@ -4575,6 +4578,7 @@
                         ...this._soundshareStats.getStats(),
                         ...this._getStreamAnalyticsProperties(),
                         ...E,
+                        ...m,
                         channel_type: i,
                         reason: e,
                         max_viewers: this.analyticsContext.maxViewers,
@@ -6817,4 +6821,4 @@
         }
     }
 ]);
-//# sourceMappingURL=fef447fb8a823fc0697b.js.map
+//# sourceMappingURL=fd28d9cb45cef90bb628.js.map
