@@ -21715,7 +21715,6 @@
                     main_tab_legacy_quick_switcher: "Enable Legacy Quick Switcher in Main Tab",
                     "0g_old_ui_fullwidth_left_panel": "(0g) Old UI: full width left panel",
                     "0g_old_ui_fullwidth_left_panel_no_swiping_or_highlight": "(0g) Old UI: full width left panel. Disabled swiping and selected channel highlight.",
-                    recently_visited_section: "Recently visited channels section",
                     "0g_enable_old_UI_messages_tab": "(0g) Enables a separate messages tab in the old UI",
                     disable_new_channel_details: "Enable new channel details sheet",
                     swipe_to_edit: "Enable Swipe-to-Edit",
@@ -48847,7 +48846,7 @@
                         var i;
                         let d = {
                                 environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                                build_number: "241489"
+                                build_number: "241490"
                             },
                             _ = o.default.getCurrentUser();
                         null != _ && (d.user_id = _.id, d.user_name = _.tag, null != _.email && (d.email = _.email));
@@ -51800,4 +51799,4 @@
         }
     }
 ]);
-//# sourceMappingURL=9000e38acb0cb3de293e.js.map
+//# sourceMappingURL=03fe94b94ee5a70d58e5.js.map
