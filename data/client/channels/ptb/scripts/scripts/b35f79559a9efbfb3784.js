@@ -21846,7 +21846,6 @@
                     recent_channels_throttle: "Throttle recent channels reordering",
                     force_voice_panel: "Force new voice panel to be shown.",
                     enable_server_discovery: "Enable Server Discovery Search on mobile",
-                    new_guild_header: "New guild header design",
                     messages_badge_num_channels: "Messages tab badge counts # of unread channels instead of # of unread messages",
                     main_tab_launchpad: "Enable LaunchPad in Main Tab",
                     main_tab_legacy_quick_switcher: "Enable Legacy Quick Switcher in Main Tab",
@@ -21864,7 +21863,8 @@
                     theme_setting_in_account_sheet: "Show theme settings in the Account action sheet",
                     is_new_search_tab_bar: "Enables the design systems version of the search tab bar",
                     global_panels: "Use global panels for chat",
-                    panels_navigator: "Use panels navigator"
+                    panels_navigator: "Use panels navigator",
+                    cozy_header: "Cozy header"
                 },
                 a = {};
             class o extends i.default.DeviceSettingsStore {
@@ -48983,7 +48983,7 @@
                         var i;
                         let d = {
                                 environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                                build_number: "241542"
+                                build_number: "241550"
                             },
                             E = l.default.getCurrentUser();
                         null != E && (d.user_id = E.id, d.user_name = E.tag, null != E.email && (d.email = E.email));
@@ -62309,4 +62309,4 @@
         }
     }
 ]);
-//# sourceMappingURL=fd77f3e614f03c22652f.js.map
+//# sourceMappingURL=b35f79559a9efbfb3784.js.map
