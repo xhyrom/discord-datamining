@@ -6,7 +6,7 @@
 <p>Users who have had a Discord Nitro subscription at any point on their accounts and have had a Nitro Classic or Nitro Basic subscription in the past 12 months are ineligible to redeem this promotion.</p>
 <p>If a user has had a Nitro Basic, Nitro Classic, or Server Boosting subscription active on their account and they’ve never had a Nitro subscription, redeeming this promotion will override that subscription.</p>
 <p>We will not be able to refund any leftover subscription time from those, and the user will be forfeiting the remainder of the existing sub when activating the 1 month Nitro trial.</p>
-<p>This promotion is available globally except in the following regions: RU, UA, CN, IR. If you receive an "Unknown Gift Code" error during the claim/redemption process, you are not eligible to redeem this promotion. You can learn more at this <a href="https://support.discord.com/hc/en-us/articles/4708041338391" target="_blank" rel="noopener noreferrer">Help Center article</a>.]</p>
+<p>This promotion is available globally except in the following regions: RU, UK, CN, IR. If you receive an "Unknown Gift Code" error during the claim/redemption process, you are not eligible to redeem this promotion. You can learn more at this <a href="https://support.discord.com/hc/en-us/articles/4708041338391" target="_blank" rel="noopener noreferrer">Help Center article</a>.</p>
 <p><strong>Requirements:</strong> Claim through the Fortnite Leaderboard Bot by November 2, 2023 (4:59PM PST), and redeem in Discord account by November 16, 2023 (4:59PM PST).</p>
 <p><strong>Subscription:</strong> After the 1 month free trial period, your Nitro subscription will convert to a monthly recurring subscription, and Discord will bill your payment method for per month until you cancel it. You can cancel at any time in your Discord User Settings. </p>
 <p id="h_01HDECVHC3PHKXECXGBTMZTJA7"><span class="wysiwyg-font-size-large"><strong>What this article covers:</strong></span></p>
@@ -58,7 +58,7 @@
 <p class="wysiwyg-text-align-center"><img src="https://support.discord.com/hc/article_attachments/18536041205143" alt="leaderboard.png"></p>
 <p> 5. Press on the link to redeem the reward through Discord by pressing on <strong>Claim Discord Nitro </strong>and enter your payment information to complete the trial redemption.</p>
 <p class="wysiwyg-text-align-center"><img src="https://support.discord.com/hc/article_attachments/18536041212823" alt="leaderboard_claim.png"></p>
-<p id="h_01HDECVHC3K4FCZX3B9PTKFYFW"><strong>The unique promotion link will look like this:</strong> https://discord.com/billing/promotions/XXXXXXXXXXXXXXXX  </p>
+<p id="h_01HDECVHC3K4FCZX3B9PTKFYFW"><strong>The unique promotion link will look like this:</strong> https://discord.com/billing/promotions/XXXXXXXXXXXXXXXX </p>
 <h1 id="h_01HDECVHC3B755QC40M05YP3PJ"><strong>How do I redeem the Nitro Trial on my Discord Account?</strong></h1>
 <p>Once you have claimed the promo link, you'll now need to officially redeem this promo link on your Discord account (or share this code with a friend). You must redeem this Nitro trial by <strong>November 16, 2023 (4:59PM PST).</strong></p>
 <h2 id="h_01HDECVHC37EM4P6Z9BCEZB48J"><strong>Eligibility for Redeeming the Nitro Trial</strong></h2>
