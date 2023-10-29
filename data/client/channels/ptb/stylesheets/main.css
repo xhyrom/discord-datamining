@@ -9919,7 +9919,7 @@ html.decorate-links .lowSaturationUnderline__95e71 {
 .authBox__7196a {
     width: 480px;
     padding: var(--custom-auth-box-auth-box-padding);
-    font-size: 18px;
+    font-size: 1.125rem;
     box-shadow: var(--legacy-elevation-high);
     border-radius: 5px;
     box-sizing: border-box;
@@ -10063,14 +10063,14 @@ html.decorate-links .lowSaturationUnderline__95e71 {
 }
 
 .pillMessage__48334 {
-    font-size: 14px;
+    font-size: .875rem;
     white-space: nowrap;
     color: var(--header-secondary)
 }
 
 @media(min-height:640px) {
     .pillMessage__48334 {
-        font-size: 16px
+        font-size: 1rem
     }
 }
 
@@ -10133,8 +10133,8 @@ html.decorate-links .lowSaturationUnderline__95e71 {
 }
 
 .button__47891 {
-    font-size: 16px;
-    line-height: 24px
+    font-size: 1rem;
+    line-height: 1.5rem
 }
 
 .linkButton_ba7970 {
@@ -10172,7 +10172,7 @@ html.decorate-links .lowSaturationUnderline__95e71 {
 
 .description_e01baa {
     margin-top: 8px;
-    font-size: 12px
+    font-size: .75rem
 }
 
 .container__856bd {
@@ -145953,15 +145953,15 @@ div.nagbar_c731ff {
 
 .emailVerificationModal_e48dfa .title__78b45 {
     font-weight: 700;
-    font-size: 24px;
-    line-height: 30px;
+    font-size: 1.5rem;
+    line-height: 1.875rem;
     margin-top: 100px;
     color: var(--header-primary)
 }
 
 .emailVerificationModal_e48dfa .body_b7d0a4 {
-    font-size: 16px;
-    line-height: 20px;
+    font-size: 1rem;
+    line-height: 1.25rem;
     text-align: center;
     color: var(--header-secondary)
 }
@@ -149551,4 +149551,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=074a289161d58d68d121.css.map*/
+/*# sourceMappingURL=06459e7d6b111d418376.css.map*/
