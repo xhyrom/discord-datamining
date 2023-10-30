@@ -1,10 +1,10 @@
 # Public Testing Beta
 
 ### Info
-Build number: 241609  
-Version hash: 09dbdb091dbcb294d6e3cadf167c5ccce1762256  
+Build number: 241629  
+Version hash: abe7437a73cd48f007f58ca3f4aa2bac263b53a1  
 Host version: 1.0.1040  
-Built at: 10/30/2023, 2:42:28 PM  
+Built at: 10/30/2023, 4:13:05 PM  
 
 ### Modules
 | Module               | Version | Package sha256                                                   | URL                                                                                              |
