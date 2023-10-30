@@ -1587,11 +1587,10 @@
                         if (n.permission) return !0;
                         a = !0
                     }
-                    if (a) return !1;
-                    let l = e[(0, T.toPermissionKey)(i, U.ApplicationCommandPermissionType.ROLE)];
-                    if (null != l) return l.permission
                 }
-                return null
+                if (a) return !1;
+                let s = e[(0, T.toPermissionKey)(i, U.ApplicationCommandPermissionType.ROLE)];
+                return null != s ? s.permission : null
             }(i = l || (l = {}))[i.NO_MATCH = 0] = "NO_MATCH", i[i.COMMAND_NAME_EXACT = 1] = "COMMAND_NAME_EXACT", i[i.COMMAND_NAME_STARTS_WITH = 2] = "COMMAND_NAME_STARTS_WITH", i[i.COMMAND_OPTION_NAME_EXACT = 3] = "COMMAND_OPTION_NAME_EXACT", i[i.COMMAND_OPTION_NAME_STARTS_WITH = 4] = "COMMAND_OPTION_NAME_STARTS_WITH", i[i.SECTION_NAME_EXACT = 5] = "SECTION_NAME_EXACT", i[i.SECTION_NAME_STARTS_WITH = 6] = "SECTION_NAME_STARTS_WITH", i[i.TAG_EXACT = 7] = "TAG_EXACT", i[i.TAG_STARTS_WITH = 8] = "TAG_STARTS_WITH", i[i.COMMAND_NAME_CONTAINS = 9] = "COMMAND_NAME_CONTAINS", i[i.SECTION_NAME_CONTAINS = 10] = "SECTION_NAME_CONTAINS", i[i.COMMAND_DESC_CONTAINS = 11] = "COMMAND_DESC_CONTAINS", i[i.COMMAND_NAME_FUZZY = 12] = "COMMAND_NAME_FUZZY", i[i.SECTION_NAME_FUZZY = 13] = "SECTION_NAME_FUZZY", i[i.COMMAND_DESC_FUZZY = 14] = "COMMAND_DESC_FUZZY";
 
             function eu(e, t) {
@@ -3713,4 +3712,4 @@
         }
     }
 ]);
-//# sourceMappingURL=6326cdcba13cf5ab9bac.js.map
+//# sourceMappingURL=131ab5dbcfa1bc1a363e.js.map
