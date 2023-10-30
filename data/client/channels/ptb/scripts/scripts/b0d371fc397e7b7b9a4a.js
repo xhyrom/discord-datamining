@@ -1547,33 +1547,33 @@
                 }
             }
         },
-        368646: function(e, t, n) {
+        374648: function(e, t, n) {
             "use strict";
             n.r(t), n.d(t, {
-                isProactiveClydeEnabled: function() {
+                isProactiveClydeV2Enabled: function() {
                     return l
                 }
             });
             var a = n("862205");
             let s = (0, a.createExperiment)({
                 kind: "guild",
-                id: "2023-07_clyde_ai_proactive_guilds",
-                label: "Proactive Clyde",
+                id: "2023-10_clyde_ai_proactive_guilds_v2",
+                label: "Proactive Clyde V2",
                 defaultConfig: {
-                    isProactiveClydeEnabled: !1
+                    isProactiveClydeV2Enabled: !1
                 },
                 treatments: [{
                     id: 1,
-                    label: "enable proactive clyde",
+                    label: "enable proactive clyde v2",
                     config: {
-                        isProactiveClydeEnabled: !0
+                        isProactiveClydeV2Enabled: !0
                     }
                 }]
             });
 
             function l(e, t) {
                 let {
-                    isProactiveClydeEnabled: n
+                    isProactiveClydeV2Enabled: n
                 } = s.getCurrentConfig({
                     guildId: e,
                     location: t
@@ -1587,32 +1587,29 @@
             "use strict";
             n.r(t), n.d(t, {
                 default: function() {
-                    return u
+                    return r
                 }
             });
             var a = n("271938"),
                 s = n("42203"),
-                l = n("305961"),
-                i = n("377253"),
-                r = n("368646"),
-                d = n("980215");
+                l = n("377253"),
+                i = n("374648");
 
-            function u(e) {
-                var t, n, u;
-                let o = null !== (n = null === (t = s.default.getBasicChannel(e)) || void 0 === t ? void 0 : t.guild_id) && void 0 !== n ? n : "",
-                    c = l.default.getGuild(o);
-                if (!(0, r.isProactiveClydeEnabled)(o, "allowProactiveClydeReply") && !(0, d.canUseCustomClydeProfiles)(c)) return !1;
-                let E = i.default.getMessages(e),
-                    f = E.last();
-                if (null == f) return !1;
-                let _ = null !== (u = E.getManyBefore(f.id, 10)) && void 0 !== u ? u : [],
-                    g = a.default.getId();
-                return _.some(t => {
+            function r(e) {
+                var t, n, r;
+                let d = null !== (n = null === (t = s.default.getBasicChannel(e)) || void 0 === t ? void 0 : t.guild_id) && void 0 !== n ? n : "",
+                    u = l.default.getMessages(e),
+                    o = u.last();
+                if (null == o) return !1;
+                let c = null !== (r = u.getManyBefore(o.id, 10)) && void 0 !== r ? r : [],
+                    E = a.default.getId();
+                return c.some(t => {
                     var n;
                     let a = t.author.isClyde();
                     if (!a || null == t.messageReference) return !1;
-                    let s = i.default.getMessage(e, t.messageReference.message_id);
-                    return (null == s ? void 0 : null === (n = s.author) || void 0 === n ? void 0 : n.id) === g
+                    let s = l.default.getMessage(e, t.messageReference.message_id);
+                    if (null != s && (0, i.isProactiveClydeV2Enabled)(d, "allowProactiveClydeV2")) return !0;
+                    return (null == s ? void 0 : null === (n = s.author) || void 0 === n ? void 0 : n.id) === E
                 })
             }
         },
@@ -3105,4 +3102,4 @@
         }
     }
 ]);
-//# sourceMappingURL=27b8ff02eea3762a3889.js.map
+//# sourceMappingURL=b0d371fc397e7b7b9a4a.js.map
