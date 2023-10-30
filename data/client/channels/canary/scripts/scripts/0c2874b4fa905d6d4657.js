@@ -341,7 +341,9 @@
                     subscriptionPlanId: C,
                     loadId: P,
                     recipientId: R,
-                    customMessage: O
+                    customMessage: O,
+                    emojiConfetti: U,
+                    soundEffect: L
                 } = {
                     ...N,
                     ...n
@@ -353,7 +355,7 @@
                         skuId: e
                     })
                 });
-                let U = c.default.inTestModeForApplication(t) || o.default.inDevModeForApplication(t);
+                let M = c.default.inTestModeForApplication(t) || o.default.inDevModeForApplication(t);
                 try {
                     let t = {
                         gift: A,
@@ -361,13 +363,18 @@
                         gateway_checkout_context: await (0, S.createGatewayCheckoutContext)(a),
                         load_id: P
                     };
-                    if (U) t.test_mode = !0;
+                    if (M) t.test_mode = !0;
                     else {
                         if (null != a && (t.payment_source_id = a.id, t.payment_source_token = await (0, _.createPaymentSourceToken)(a), T.ADYEN_PAYMENT_SOURCES.has(a.type))) {
                             let e = await (0, _.popupBridgeState)(a.type);
                             t.return_url = u.default.getAPIBaseURL() + T.Endpoints.BILLING_POPUP_BRIDGE_CALLBACK_REDIRECT_PREFIX(a.type, null != e ? e : "", "success")
                         }
-                        null != s && (t.expected_amount = s), null != f && (t.expected_currency = f), null != p && (t.gift_style = p), null != R && (t.recipient_id = R), null != R && (t.custom_message = O), t.purchase_token = (0, d.getPurchaseToken)()
+                        if (null != s && (t.expected_amount = s), null != f && (t.expected_currency = f), null != p && (t.gift_style = p), null != R && (t.recipient_id = R), null != R) t.custom_message = O, ((null == U ? void 0 : U.id) != null || (null == U ? void 0 : U.surrogates) != null || (null == L ? void 0 : L.soundId) != null) && (t.gift_info_options = {
+                            emoji_id: null == U ? void 0 : U.id,
+                            emoji_name: null == U ? void 0 : U.surrogates,
+                            sound_id: null == L ? void 0 : L.soundId
+                        });
+                        t.purchase_token = (0, d.getPurchaseToken)()
                     }
                     let n = await u.default.post({
                         url: T.Endpoints.STORE_SKU_PURCHASE(e),
@@ -1322,16 +1329,16 @@
             "use strict";
             n.r(e), n.d(e, {
                 PaymentContextProvider: function() {
-                    return v
+                    return b
                 },
                 PaymentContext: function() {
                     return H
                 },
                 usePaymentContext: function() {
-                    return K
+                    return v
                 },
                 useForwardedPaymentContext: function() {
-                    return b
+                    return K
                 }
             });
             var u = n("37983"),
@@ -1367,16 +1374,16 @@
                 G = n("646718");
             let D = E.PremiumGiftStyles.STANDARD_BOX,
                 B = void 0,
-                [H, K, b] = (0, _.default)();
+                [H, v, K] = (0, _.default)();
 
-            function v(t) {
+            function b(t) {
                 var e, n;
                 let {
                     loadId: E,
                     activeSubscription: _,
-                    stepConfigs: K,
-                    breadcrumbs: b = [],
-                    skuIDs: v,
+                    stepConfigs: v,
+                    breadcrumbs: K = [],
+                    skuIDs: b,
                     isGift: w = !1,
                     giftRecipient: Y,
                     children: W,
@@ -1401,7 +1408,7 @@
                     currencies: tl
                 } = (0, N.default)({
                     activeSubscription: _,
-                    skuIDs: v,
+                    skuIDs: b,
                     paymentSourceId: z,
                     isGift: w
                 }), ta = (0, M.default)(), [to, ts] = i.useState(!1), {
@@ -1410,8 +1417,8 @@
                     steps: tE,
                     breadcrumbsData: td
                 } = (0, h.default)({
-                    stepConfigs: K,
-                    breadcrumbs: b
+                    stepConfigs: v,
+                    breadcrumbs: K
                 }), [tf, t_] = (0, L.default)(tc), {
                     paymentError: tT,
                     paymentAuthenticationState: tI
@@ -1432,7 +1439,7 @@
                     selectedPlan: tR,
                     setSelectedSkuId: tO,
                     setSelectedPlanId: tU
-                } = (0, C.default)(), [tL, tM] = (0, o.useStateFromStoresArray)([d.default], () => [d.default.purchaseTokenAuthState, d.default.purchaseTokenHash]), [tF, th] = (0, o.useStateFromStoresArray)([y.default], () => [y.default.browserCheckoutState, y.default.loadId]), [tm, ty] = i.useState(null), [tg, tG] = i.useState(null), [tD, tB] = i.useState(null), [tH, tK] = i.useState(null), [tb, tv] = i.useState(null), [tw, tY] = i.useState(void 0), [tW, tV] = i.useState([]), tk = i.useMemo(() => null == tR || (0, A.isPremiumSubscriptionPlan)(tR.id), [tR]), [tZ, tx] = i.useState((0, I.isCustomGiftEnabled)(Y) ? D : B), tQ = i.useRef(null != _ ? _.planId : null);
+                } = (0, C.default)(), [tL, tM] = (0, o.useStateFromStoresArray)([d.default], () => [d.default.purchaseTokenAuthState, d.default.purchaseTokenHash]), [tF, th] = (0, o.useStateFromStoresArray)([y.default], () => [y.default.browserCheckoutState, y.default.loadId]), [tm, ty] = i.useState(null), [tg, tG] = i.useState(null), [tD, tB] = i.useState(null), [tH, tv] = i.useState(null), [tK, tb] = i.useState(null), [tw, tY] = i.useState(void 0), [tW, tV] = i.useState([]), tk = i.useMemo(() => null == tR || (0, A.isPremiumSubscriptionPlan)(tR.id), [tR]), [tZ, tx] = i.useState((0, I.isCustomGiftEnabled)(Y) ? D : B), tQ = i.useRef(null != _ ? _.planId : null);
                 i.useEffect(() => {
                     null == tQ.current && null != _ && (tQ.current = _.planId)
                 }, [_]);
@@ -1442,7 +1449,7 @@
                     skuPricePreviewsById: tj
                 } = (0, F.default)({
                     applicationId: null != Z ? Z : G.PREMIUM_SUBSCRIPTION_APPLICATION,
-                    skuIDs: v,
+                    skuIDs: b,
                     currentPaymentSourceId: z
                 }), tq = i.useMemo(() => {
                     if (null == tP) return null;
@@ -1467,9 +1474,9 @@
                         hasFetchedSubscriptions: X,
                         hasFetchedSubscriptionPlans: tn,
                         updatedSubscription: tH,
-                        setUpdatedSubscription: tK,
-                        subscriptionMetadataRequest: tb,
-                        setSubscriptionMetadataRequest: tv,
+                        setUpdatedSubscription: tv,
+                        subscriptionMetadataRequest: tK,
+                        setSubscriptionMetadataRequest: tb,
                         hasFetchedPaymentSources: tt,
                         paymentSources: j,
                         hasPaymentSources: q,
@@ -1485,7 +1492,7 @@
                         step: tc,
                         setStep: tS,
                         steps: tE,
-                        stepConfigs: K,
+                        stepConfigs: v,
                         breadcrumbs: td,
                         purchaseState: tf,
                         setPurchaseState: t_,
@@ -2812,4 +2819,4 @@
         }
     }
 ]);
-//# sourceMappingURL=dc41f47dea2561cb8a87.js.map
+//# sourceMappingURL=0c2874b4fa905d6d4657.js.map
