@@ -30,18 +30,18 @@
                         pendingAvatarDecoration: C
                     } = (0, u.default)({
                         isTryItOut: E
-                    }), f = A && (S || !I && !s), N = T && void 0 !== C ? C : null == e ? void 0 : e.avatarDecoration, O = n.useMemo(() => (0, l.getAvatarDecorationURL)({
+                    }), f = A && (S || !I && !s), N = T && void 0 !== C ? C : null == e ? void 0 : e.avatarDecoration, v = n.useMemo(() => (0, l.getAvatarDecorationURL)({
                         avatarDecoration: void 0 !== _ ? _ : N,
                         canAnimate: f,
                         size: r
-                    }), [N, f, r, _]), R = n.useCallback(() => d(!0), []), v = n.useCallback(() => d(!1), []);
+                    }), [N, f, r, _]), O = n.useCallback(() => d(!0), []), R = n.useCallback(() => d(!1), []);
                     return {
                         avatarPlaceholderSrc: c,
-                        avatarDecorationSrc: O,
+                        avatarDecorationSrc: v,
                         isAvatarDecorationAnimating: f,
                         eventHandlers: {
-                            onMouseEnter: R,
-                            onMouseLeave: v
+                            onMouseEnter: O,
+                            onMouseLeave: R
                         }
                     }
                 }
@@ -159,7 +159,7 @@
                     return f
                 },
                 groupProfileEffects: function() {
-                    return R
+                    return O
                 }
             });
             var n = r("917351"),
@@ -208,19 +208,20 @@
                 },
                 C = t => A(t, i.CollectiblesItemType.AVATAR_DECORATION),
                 f = (t, e) => {
+                    var r;
                     let {
-                        CDN_HOST: r,
-                        API_ENDPOINT: n
-                    } = window.GLOBAL_ENV, o = (0, u.getBestMediaProxySize)(e.size * (0, u.getDevicePixelRatio)());
-                    if (null != r) return "".concat(location.protocol, "//").concat(r, "/app-assets/").concat(s.COLLECTIBLES_APPLICATION_ID, "/").concat(t, ".png?size=").concat(o);
-                    let i = s.Endpoints.APPLICATION_ASSET(s.COLLECTIBLES_APPLICATION_ID, t, "png");
-                    return "".concat(location.protocol).concat(n).concat(i, "?size=").concat(o)
+                        CDN_HOST: n,
+                        API_ENDPOINT: o
+                    } = window.GLOBAL_ENV, i = (0, u.getBestMediaProxySize)(e.size * (0, u.getDevicePixelRatio)()), a = null !== (r = null == e ? void 0 : e.format) && void 0 !== r ? r : "png";
+                    if (null != n) return "".concat(location.protocol, "//").concat(n, "/app-assets/").concat(s.COLLECTIBLES_APPLICATION_ID, "/").concat(t, ".").concat(a, "?size=").concat(i);
+                    let l = s.Endpoints.APPLICATION_ASSET(s.COLLECTIBLES_APPLICATION_ID, t, a);
+                    return "".concat(location.protocol).concat(o).concat(l, "?size=").concat(i)
                 },
                 N = t => I(t, i.CollectiblesItemType.PROFILE_EFFECT),
-                O = t => A(t, i.CollectiblesItemType.PROFILE_EFFECT),
-                R = (t, e) => {
+                v = t => A(t, i.CollectiblesItemType.PROFILE_EFFECT),
+                O = (t, e) => {
                     let r = N(e),
-                        n = O(t).filter(t => {
+                        n = v(t).filter(t => {
                             let {
                                 id: e
                             } = t;
@@ -385,19 +386,19 @@
                 C = r("913144"),
                 f = r("49111");
             let N = f.FormStates.CLOSED,
-                O = {},
-                R = !1;
+                v = {},
+                O = !1;
 
-            function v() {
-                N = f.FormStates.OPEN, O = {}
+            function R() {
+                N = f.FormStates.OPEN, v = {}
             }
 
             function g() {
-                N = f.FormStates.CLOSED, O = {}
+                N = f.FormStates.CLOSED, v = {}
             }
 
             function P() {
-                U(), m(), O = {}
+                U(), m(), v = {}
             }
 
             function U() {
@@ -416,7 +417,7 @@
                     return N
                 }
                 getErrors() {
-                    return O
+                    return v
                 }
                 showNotice() {
                     return void 0 !== n || void 0 !== a || void 0 !== l || void 0 !== c || void 0 !== s || void 0 !== T || void 0 !== i || void 0 !== u || void 0 !== o
@@ -486,31 +487,31 @@
                     }
                 }
                 getIsDisableSubmit() {
-                    return R
+                    return O
                 }
             }
             y.displayName = "UserSettingsAccountStore";
             var L = new y(C.default, {
-                USER_SETTINGS_ACCOUNT_INIT: v,
-                USER_SETTINGS_MODAL_INIT: v,
-                USER_SETTINGS_ACCOUNT_SUBMIT_SUCCESS: v,
+                USER_SETTINGS_ACCOUNT_INIT: R,
+                USER_SETTINGS_MODAL_INIT: R,
+                USER_SETTINGS_ACCOUNT_SUBMIT_SUCCESS: R,
                 USER_SETTINGS_MODAL_SET_SECTION: function(t) {
                     let {
                         section: e
                     } = t;
-                    return e === f.UserSettingsSections.ACCOUNT && v()
+                    return e === f.UserSettingsSections.ACCOUNT && R()
                 },
                 USER_SETTINGS_ACCOUNT_CLOSE: g,
                 USER_SETTINGS_ACCOUNT_RESET_AND_CLOSE_FORM: function() {
                     P(), p(), g()
                 },
                 USER_SETTINGS_ACCOUNT_SUBMIT: function() {
-                    N = f.FormStates.SUBMITTING, O = {}
+                    N = f.FormStates.SUBMITTING, v = {}
                 },
                 USER_SETTINGS_ACCOUNT_SUBMIT_FAILURE: function(t) {
                     var e;
                     if (N !== f.FormStates.SUBMITTING) return !1;
-                    N = f.FormStates.OPEN, O = null !== (e = t.errors) && void 0 !== e ? e : {}
+                    N = f.FormStates.OPEN, v = null !== (e = t.errors) && void 0 !== e ? e : {}
                 },
                 USER_SETTINGS_ACCOUNT_SET_PENDING_AVATAR: function(t) {
                     let {
@@ -597,7 +598,7 @@
                     E = e
                 },
                 USER_SETTINGS_CLEAR_ERRORS: function() {
-                    O = {}
+                    v = {}
                 },
                 USER_SETTINGS_RESET_PENDING_ACCOUNT_CHANGES: U,
                 USER_SETTINGS_RESET_PENDING_PROFILE_CHANGES: m,
@@ -613,7 +614,7 @@
                     let {
                         disable: e
                     } = t;
-                    R = e
+                    O = e
                 }
             })
         },
@@ -644,4 +645,4 @@
         }
     }
 ]);
-//# sourceMappingURL=2177bbc8fdd1e41a3a28.js.map
+//# sourceMappingURL=68f53e9de6e51f3c7f7f.js.map
