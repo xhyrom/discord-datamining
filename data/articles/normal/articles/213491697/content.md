@@ -58,7 +58,7 @@
             </tr>
             <tr>
                 <td>Android</td>
-                <td>Android 6+</td>
+                <td>Android 7+</td>
                 <td>Android 10+</td>
             </tr>
             <tr>
@@ -73,6 +73,7 @@
 <h3 id="01H7XMWB5HZK7MCB3CDX46Q69Y"><span style="color: #434343;" data-darkreader-inline-color="">For Android: Discord only supports devices that ship with Google Play Services by default. This means some devices, including Amazon Kindles, are not supported.</span></h3>
 <p>Jailbroken or Rooted devices are <strong>not supported</strong>. </p>
 <p id="docs-internal-guid-d73153cf-7fff-d004-57fc-5c487ddc9887">Beta operating systems are <strong>not supported</strong>. While Discord may install and run on a beta version of an operating system, <span id="docs-internal-guid-0f046720-7fff-33c6-8d14-f0ffc02eaeff">some features of the app may not function correctly</span>.</p>
+<h3 id="docs-internal-guid-f7ea8e91-7fff-df8a-3071-ef5c394e05a0"><span style="color: #434343;">Discord has discontinued support for Android 6 with the release of version 202. If you are running a device with Android 6, you will no longer receive updates with the latest features and bug fixes. Versions released before 202 may stop working after an unspecified amount of time.</span></h3>
 <h1 id="h_01H30Q0T863H0VTGBN9BY653ZD"><strong>Browser</strong></h1>
 <p>Google Chrome, Firefox 80+, Opera, Microsoft Edge 17+ (including Chromium Edge 79+ on Windows and macOS), Safari 11+ (available on macOS 10.13 High Sierra and up)</p>
 <h3 id="01H7XMWB5H11V9R0437YRZBTTS"><span style="color: #434343;" data-darkreader-inline-color="">Note: Older browsers may lack functionality with newer features, and voice chat for Firefox is only supported by versions 80 and up!</span></h3>
