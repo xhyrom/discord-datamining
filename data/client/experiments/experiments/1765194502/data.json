@@ -7,7 +7,7 @@
     "populations": [
       {
         "buckets": {
-          "none": {
+          "1": {
             "rollout": [
               {
                 "start": 0,
