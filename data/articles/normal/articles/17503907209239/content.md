@@ -1,6 +1,4 @@
-<h3 id="h_01HACYH70R2MGGRT0ZE24RP1PV">
-    <span style="color: #434343;" data-darkreader-inline-color="">This feature is rolling out and will be available to all </span><a href="https://support.discord.com/hc/en-us/articles/115000435108"><span class="wysiwyg-underline" style="color: #1155cc;" data-darkreader-inline-color="">Nitro</span></a><span style="color: #434343;" data-darkreader-inline-color=""> members soon.</span>
-</h3>
+<h3 id="docs-internal-guid-f9bf7d74-7fff-4427-0a0a-458bc19fc387"><span style="color: #434343;">Custom app icons are only available to Nitro members. </span></h3>
 <p class="wysiwyg-text-align-center"><img src="https://support.discord.com/hc/article_attachments/17800376352023" alt="ezgif-2-3bf8156bec.gif" width="481" height="481"></p>
 <p><span class="wysiwyg-font-size-large"><strong>What this article covers: </strong></span></p>
 <ul>
@@ -8,16 +6,13 @@
     <li>
         <a href="https://support.discord.com/hc/en-us/articles/17503907209239#h_01HACYH70R05GDSSA7PQSVHC50">How to set a custom app icon</a>
         <ul>
-            <li><a href="https://support.discord.com/hc/en-us/articles/17503907209239#docs-internal-guid-4e8c293c-7fff-c502-d504-64c822bb2cdd">Desktop</a></li>
+            <li><a href="#docs-internal-guid-4e8c293c-7fff-c502-d504-64c822bb2cdd">Desktop</a></li>
             <li><a href="https://support.discord.com/hc/en-us/articles/17503907209239#h_01HCDAFTPTNM3QR1EH6C8RYTX5">Mobile</a></li>
         </ul>
     </li>
     <li><a href="https://support.discord.com/hc/en-us/articles/17503907209239#h_01HACYH70RDN1V4RYWXEVVQBCQ">Frequently Asked Questions</a></li>
 </ul>
 <h1 id="h_01HACYH70RNE834ZCQQWMQD2SD">What is a custom app icon?</h1>
-<h3 id="docs-internal-guid-aee4cb45-7fff-1c53-70b8-203a14490e0d">
-    <span style="color: #434343;" data-darkreader-inline-color="">This feature is now available on mobile and <span id="docs-internal-guid-0bb652bd-7fff-f04f-3676-47181ad77e0c" style="color: #434343;" data-darkreader-inline-color="">is slowly rolling out on desktop</span>! Feel free to check out our supported devices </span><a href="https://support.discord.com/hc/articles/213491697" target="_blank" rel="noopener noreferrer">here</a><span style="color: #434343;" data-darkreader-inline-color="">.</span>
-</h3>
 <p>Custom app icons allow <a href="https://support.discord.com/hc/en-us/articles/115000435108" target="_blank" rel="noopener noreferrer">Nitro</a> members to customize their Discord app icon on their Android and iOS mobile devices. Customize your home screen with a variety of new icons and find the one that matches your style. With Nitro, the app icon can be changed as often as you’d like!  </p>
 <h1 id="h_01HACYH70R05GDSSA7PQSVHC50">How to set a custom app icon</h1>
 <h2 id="docs-internal-guid-4e8c293c-7fff-c502-d504-64c822bb2cdd">Desktop</h2>
