@@ -1,22 +1,7 @@
 {
   "data": {
     "kind": "guild",
-    "id": "2023-07_clyde_ai_proactive_guilds",
-    "label": "Proactive Clyde",
-    "description": [
-      "Not Eligible",
-      "Control Bucket",
-      "Treatment 1: enable proactive clyde"
-    ],
-    "hash": 3041932109,
-    "buckets": [
-      -1,
-      0,
-      1
-    ],
-    "config_keys": [
-      "enabled"
-    ]
+    "hash": 3041932109
   },
   "rollout": {
     "populations": [

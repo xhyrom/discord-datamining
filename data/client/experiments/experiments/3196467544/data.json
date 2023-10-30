@@ -1,0 +1,21 @@
+{
+  "data": {
+    "kind": "guild",
+    "id": "2023-10_clyde_ai_proactive_guilds_v2",
+    "label": "Proactive Clyde V2",
+    "description": [
+      "Not Eligible",
+      "Control Bucket",
+      "Treatment 1: enable proactive clyde v2"
+    ],
+    "hash": 3196467544,
+    "buckets": [
+      -1,
+      0,
+      1
+    ],
+    "config_keys": [
+      "enabled"
+    ]
+  }
+}
