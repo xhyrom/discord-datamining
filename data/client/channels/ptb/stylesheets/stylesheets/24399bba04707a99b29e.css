@@ -34886,6 +34886,22 @@ input[type=checkbox]:focus-visible+.label_ee78c3 {
     text-align: center
 }
 
+.addButton__32787 {
+    margin: 3px;
+    display: flex;
+    align-items: center
+}
+
+.plusSign__48c5e {
+    color: var(--text-muted);
+    height: 18px;
+    width: 18px
+}
+
+.addButton__32787>* {
+    margin-right: 4px
+}
+
 .soundButton__5ad7b.focused_a3fd1a.hoverActiveBackground__32054,
 .soundButton__5ad7b:focus-within.hoverActiveBackground__32054,
 .soundButton__5ad7b:hover.hoverActiveBackground__32054 {
@@ -34895,6 +34911,13 @@ input[type=checkbox]:focus-visible+.label_ee78c3 {
 .soundButton__5ad7b.focused_a3fd1a:not(.premiumDisabled__07ada) .buttonOverlay__76d7d,
 .soundButton__5ad7b:focus-within:not(.premiumDisabled__07ada) .buttonOverlay__76d7d,
 .soundButton__5ad7b:hover:not(.premiumDisabled__07ada) .buttonOverlay__76d7d {
+    opacity: 1;
+    visibility: visible
+}
+
+.soundButton__5ad7b.focused_a3fd1a .addButtonOverlay_e41dfa,
+.soundButton__5ad7b:focus-within .addButtonOverlay_e41dfa,
+.soundButton__5ad7b:hover .addButtonOverlay_e41dfa {
     opacity: 1;
     visibility: visible
 }
@@ -34957,7 +34980,8 @@ input[type=checkbox]:focus-visible+.label_ee78c3 {
     bottom: 0
 }
 
-.buttonOverlay__76d7d {
+.buttonOverlay__76d7d,
+.addButtonOverlay_e41dfa {
     opacity: 0;
     visibility: hidden;
     transition: opacity.2s ease
@@ -101595,63 +101619,6 @@ html.disable-forced-colors * {
     color: var(--text-normal)
 }
 
-.customGiftBox__58f45,
-.customGiftBoxHighlighted__7a298 {
-    background-color: var(--transparent);
-    border-radius: 8px;
-    border: 3px solid var(--transparent)
-}
-
-.customGiftBoxHighlighted__7a298 {
-    border: 2px solid var(--brand-500);
-    padding: 2px
-}
-
-.infoIcon__25ffe {
-    height: 16px;
-    color: var(--header-primary)
-}
-
-.infoIconContainer__59e19 {
-    display: flex
-}
-
-.giftBoxHeaderContainer_f12d34 {
-    display: flex;
-    flex-direction: row
-}
-
-.giftMainAnimation_a99ef9 {
-    margin-bottom: 65px;
-    height: 215px
-}
-
-.animation_d821c9 {
-    transform: scale(1)
-}
-
-.spinner_e5df5b {
-    transform: scale(.75);
-    width: 100%;
-    height: 100%
-}
-
-.giftBoxHeaderText__98c54 {
-    text-transform: uppercase;
-    letter-spacing: .02em;
-    margin-right: 6px
-}
-
-.giftBoxOptionContainer_a91855 {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    gap: 9px;
-    margin: auto;
-    margin-top: 25px;
-    max-width: 85%
-}
-
 .subscriptionCostRowAmount__2386c {
     font-weight: 500
 }
@@ -102034,6 +102001,203 @@ html.disable-forced-colors * {
     align-items: center;
     justify-content: center;
     padding-top: 16px
+}
+
+.container__19fad {
+    cursor: pointer;
+    margin-right: 4px;
+    margin-left: 4px;
+    width: 140px;
+    display: flex;
+    justify-content: center;
+    align-items: center
+}
+
+.addButton__9d2f2 {
+    margin: 3px;
+    display: flex;
+    align-items: center
+}
+
+.plusSign__2d1b4 {
+    color: var(--text-muted);
+    height: 18px;
+    width: 18px
+}
+
+.addButton__9d2f2>* {
+    margin-right: 4px
+}
+
+.soundIcon__1f181 {
+    margin-right: 4px;
+    color: var(--button-outline-primary-text)
+}
+
+.textSelected__44937 {
+    margin-right: 5px
+}
+
+.sound_a5d0fd {
+    display: flex;
+    align-items: center;
+    padding: 3px
+}
+
+.text__0df17,
+.textSelected__44937 {
+    color: var(--button-outline-primary-text)
+}
+
+.customGiftHeader__13695 {
+    box-shadow: var(--elevation-low);
+    z-index: 1;
+    grid-column: 1/3;
+    grid-row: 1/2;
+    padding: 12px;
+    align-items: center;
+    display: block;
+    background-color: var(--primary-860)
+}
+
+.searchAndSound__1b526 {
+    display: flex;
+    margin-top: 10px;
+    align-items: center
+}
+
+.text__708a4,
+.textSelected__32734 {
+    color: var(--button-outline-primary-text)
+}
+
+.container__591e0 {
+    cursor: pointer;
+    margin-right: 4px;
+    margin-left: 4px;
+    width: 140px;
+    display: flex;
+    justify-content: center;
+    align-items: center
+}
+
+.textSelected__32734 {
+    margin-right: 5px
+}
+
+.emojiList__5e37b {
+    background-color: var(--background-floating)
+}
+
+.emoji__1fd29 {
+    display: flex;
+    align-items: center
+}
+
+.textSelected__32734 {
+    margin-right: 4px
+}
+
+.text__708a4,
+.textSelected__32734 {
+    color: var(--button-outline-primary-text)
+}
+
+.emojiIcon__2ac82 {
+    margin-right: 4px;
+    color: var(--button-outline-primary-text);
+    padding: 4px
+}
+
+.customGiftContent__85873 {
+    display: flex;
+    flex-direction: column;
+    width: 100%
+}
+
+.emojiHeader__27706,
+.customGiftContent__85873 {
+    background-color: var(--primary-860)
+}
+
+.customGiftHeader__1dea3 {
+    margin-bottom: 10px
+}
+
+.customGiftBox__58f45,
+.customGiftBoxHighlighted__7a298 {
+    background-color: var(--transparent);
+    border-radius: 8px;
+    border: 3px solid var(--transparent)
+}
+
+.customGiftBoxHighlighted__7a298 {
+    border: 2px solid var(--brand-500);
+    padding: 2px
+}
+
+.infoIcon__25ffe {
+    height: 16px;
+    color: var(--header-primary)
+}
+
+.infoIconContainer__59e19 {
+    display: flex
+}
+
+.giftBoxHeaderContainer_f12d34 {
+    display: flex;
+    flex-direction: row
+}
+
+.giftMainAnimation_a99ef9 {
+    margin-bottom: 65px;
+    height: 215px;
+    position: relative
+}
+
+.soundEmojiContainer__70464 {
+    position: absolute;
+    bottom: -35px;
+    margin-left: 40px;
+    display: flex
+}
+
+.sound__4e0b6,
+.emoji_e926fa {
+    background-color: var(--primary-860);
+    opacity: .7;
+    margin-right: 6px;
+    border-radius: 5px;
+    height: 32px;
+    display: flex;
+    align-items: center
+}
+
+.animation_d821c9 {
+    transform: scale(1)
+}
+
+.spinner_e5df5b {
+    transform: scale(.75);
+    width: 100%;
+    height: 100%
+}
+
+.giftBoxHeaderText__98c54 {
+    text-transform: uppercase;
+    letter-spacing: .02em;
+    margin-right: 6px
+}
+
+.giftBoxOptionContainer_a91855 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 9px;
+    margin: auto;
+    margin-top: 25px;
+    max-width: 85%
 }
 
 .planOption__45f58 {
@@ -149555,4 +149719,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=09802770bbda4bd18425.css.map*/
+/*# sourceMappingURL=24399bba04707a99b29e.css.map*/
