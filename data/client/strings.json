@@ -16260,7 +16260,6 @@
   "FRIEND_INVITE_SHEET_TITLE": "\"Send Link to Add Friends\"",
   "FRIEND_INVITE_EXPIRATION": "\"Links expire in {expirationDays} days, or {expirationUses} uses.\"",
   "FRIEND_INVITE_REVOKE_ALL": "\"Revoke All Links\"",
-  "FRIEND_ADD_INSTRUCTIONS": "\"Type both their username and 4-digit tag. Keep in mind that username is case sensitive.\"",
   "FRIEND_INVITE_ACCEPT_CONFIRMATION": "\"You are now friends with {username}!\"",
   "PAYMENTS_ALL_METHOD_BUTTON": "\"All payment methods\"",
   "DAY": "\"{count, plural, =1 {day} other {{count} days}}\"",
