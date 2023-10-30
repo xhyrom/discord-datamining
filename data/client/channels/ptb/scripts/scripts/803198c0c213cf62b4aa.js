@@ -26,17 +26,17 @@
                         channelId: g,
                         ...h
                     } = e, {
-                        analyticsLocations: R
-                    } = (0, d.default)(u.default.MASKED_LINK), E = l.useCallback(t => (0, o.handleClick)(e, t, R), [R, e]), C = l.useCallback(e => {
-                        1 === e.button && E(e)
-                    }, [E]), I = a.sanitizeUrl(c);
+                        analyticsLocations: E
+                    } = (0, d.default)(u.default.MASKED_LINK), R = l.useCallback(t => (0, o.handleClick)(e, t, E), [E, e]), C = l.useCallback(e => {
+                        1 === e.button && R(e)
+                    }, [R]), I = a.sanitizeUrl(c);
                     return (0, n.jsx)(s.Anchor, {
                         ...h,
                         title: i,
                         target: "_blank",
                         rel: "noreferrer noopener",
                         href: I,
-                        onClick: E,
+                        onClick: R,
                         onAuxClick: C,
                         children: null != f ? f : i
                     })
@@ -57,10 +57,10 @@
                 let {
                     width: t = 24,
                     height: r = 24,
-                    color: a = l.default.colors.INTERACTIVE_NORMAL,
-                    colorClass: s = "",
-                    secondaryColor: u = "transparent",
-                    secondaryColorClass: d = "",
+                    secondaryColor: a = "transparent",
+                    secondaryColorClass: s = "",
+                    color: u = l.default.colors.INTERACTIVE_NORMAL,
+                    colorClass: d = "",
                     ...o
                 } = e;
                 return (0, n.jsxs)("svg", {
@@ -70,16 +70,16 @@
                     height: r,
                     fill: "none",
                     viewBox: "0 0 24 24",
-                    children: [(0, n.jsx)("path", {
+                    children: [(0, n.jsx)("circle", {
+                        cx: "12",
+                        cy: "12",
+                        r: "10",
                         fill: "string" == typeof a ? a : a.css,
-                        fillRule: "evenodd",
-                        d: "M23 12c0 6.075-4.925 11-11 11S1 18.075 1 12 5.925 1 12 1s11 4.925 11 11Zm-9.5-4.75a1.25 1.25 0 1 1-2.5 0 1.25 1.25 0 0 1 2.5 0Zm-.772 3.96a1 1 0 1 0-1.956-.42L9.73 15.655a2.766 2.766 0 0 0 4.312 2.83l.24-.171a1 1 0 1 0-1.163-1.628l-.24.171a.766.766 0 0 1-1.194-.783l1.043-4.865Z",
-                        clipRule: "evenodd",
                         className: s
                     }), (0, n.jsx)("path", {
                         fill: "string" == typeof u ? u : u.css,
                         fillRule: "evenodd",
-                        d: "M12.25 8.5a1.25 1.25 0 1 0 0-2.5 1.25 1.25 0 0 0 0 2.5Zm.478 2.71a1 1 0 0 0-1.956-.42L9.73 15.655a2.766 2.766 0 0 0 4.312 2.83l.24-.171a1 1 0 1 0-1.163-1.628l-.24.171a.766.766 0 0 1-1.194-.783l1.043-4.865Z",
+                        d: "M23 12c0 6.075-4.925 11-11 11S1 18.075 1 12 5.925 1 12 1s11 4.925 11 11Zm-9.5-4.75a1.25 1.25 0 1 1-2.5 0 1.25 1.25 0 0 1 2.5 0Zm-.772 3.96a1 1 0 1 0-1.956-.42L9.73 15.655a2.766 2.766 0 0 0 4.312 2.83l.24-.171a1 1 0 1 0-1.163-1.628l-.24.171a.766.766 0 0 1-1.194-.783l1.043-4.865Z",
                         clipRule: "evenodd",
                         className: d
                     })]
@@ -348,8 +348,8 @@
                 v = r("306160"),
                 g = r("701909"),
                 h = r("161449"),
-                R = r("49111"),
-                E = r("782340"),
+                E = r("49111"),
+                R = r("782340"),
                 C = r("939848");
 
             function I(e) {
@@ -363,7 +363,7 @@
                     onClick: u,
                     children: [(0, n.jsx)(c.default, {
                         className: C.copyLinkIcon
-                    }), r ? E.default.Messages.BUILD_OVERRIDE_LINK_COPIED : E.default.Messages.BUILD_OVERRIDE_LINK_COPY]
+                    }), r ? R.default.Messages.BUILD_OVERRIDE_LINK_COPIED : R.default.Messages.BUILD_OVERRIDE_LINK_COPY]
                 }) : null
             }
 
@@ -420,12 +420,12 @@
                         className: C.titleRegion,
                         children: [(0, n.jsx)("strong", {
                             className: C.title,
-                            children: null != t && null != t.releaseChannel ? E.default.Messages.BUILD_OVERRIDE_FOR.format({
+                            children: null != t && null != t.releaseChannel ? R.default.Messages.BUILD_OVERRIDE_FOR.format({
                                 releaseChannel: t.releaseChannel
-                            }) : E.default.Messages.BUILD_OVERRIDE
+                            }) : R.default.Messages.BUILD_OVERRIDE
                         }), (0, n.jsx)(d.Anchor, {
                             className: C.infoLink,
-                            href: g.default.getArticleURL(R.HelpdeskArticles.BUILD_OVERRIDE_EMBED),
+                            href: g.default.getArticleURL(E.HelpdeskArticles.BUILD_OVERRIDE_EMBED),
                             target: "_blank",
                             children: (0, n.jsx)(o.default, {
                                 className: C.infoIcon
@@ -460,7 +460,7 @@
                                 v = (0, h.default)(s, ["discord_web"]);
                             if (!v.valid) return function(e) {
                                 return p({
-                                    subHead: E.default.Messages.BUILD_OVERRIDE_ISNT_AVAILABLE,
+                                    subHead: R.default.Messages.BUILD_OVERRIDE_ISNT_AVAILABLE,
                                     buttonColor: d.Button.Colors.TRANSPARENT,
                                     buttonText: "Invalid",
                                     buildDetails: e,
@@ -471,10 +471,10 @@
                             let {
                                 discord_web: g
                             } = s.targetBuildOverride;
-                            if (u(null != g, "BuildOverrideEmbed.renderResolved: linkMeta.targetBuildOverride.discord_web should never be null if resolved"), t = g, null == (r = a) || null == r.discord_web ? 1 : t.id !== r.discord_web.id || t.type !== r.discord_web.type) l = E.default.Messages.BUILD_OVERRIDE_APPLY, n = o, i = d.Button.Colors.GREEN;
-                            else l = E.default.Messages.BUILD_OVERRIDE_CLEAR, n = c, i = d.Button.Colors.RED;
+                            if (u(null != g, "BuildOverrideEmbed.renderResolved: linkMeta.targetBuildOverride.discord_web should never be null if resolved"), t = g, null == (r = a) || null == r.discord_web ? 1 : t.id !== r.discord_web.id || t.type !== r.discord_web.type) l = R.default.Messages.BUILD_OVERRIDE_APPLY, n = o, i = d.Button.Colors.GREEN;
+                            else l = R.default.Messages.BUILD_OVERRIDE_CLEAR, n = c, i = d.Button.Colors.RED;
                             return p({
-                                subHead: E.default.Messages.BUILD_OVERRIDE_ID,
+                                subHead: R.default.Messages.BUILD_OVERRIDE_ID,
                                 buildDetails: g.id,
                                 buttonClick: n,
                                 buttonText: l,
@@ -829,4 +829,4 @@
         }
     }
 ]);
-//# sourceMappingURL=47942abfeecac183336c.js.map
+//# sourceMappingURL=803198c0c213cf62b4aa.js.map

@@ -51,20 +51,24 @@
                     colorClass: u = "",
                     ...c
                 } = t;
-                return (0, i.jsx)("svg", {
+                return (0, i.jsxs)("svg", {
                     ...(0, a.default)(c),
                     xmlns: "http://www.w3.org/2000/svg",
                     width: e,
                     height: n,
                     fill: "none",
                     viewBox: "0 0 24 24",
-                    children: (0, i.jsx)("path", {
+                    children: [(0, i.jsx)("path", {
                         fill: "string" == typeof s ? s : s.css,
                         fillRule: "evenodd",
-                        d: "M2 5a3 3 0 0 1 3-3h14a3 3 0 0 1 3 3v8a3 3 0 0 1-3 3H5a3 3 0 0 1-3-3V5Zm11 14.5a.5.5 0 0 0 .5.5H15a1 1 0 1 1 0 2H9a1 1 0 1 1 0-2h1.5a.5.5 0 0 0 .5-.5v-2a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v2ZM8.293 5.293a1 1 0 0 1 1.414 0L12 7.586l2.293-2.293a1 1 0 1 1 1.414 1.414L13.414 9l2.293 2.293a1 1 0 0 1-1.414 1.414L12 10.414l-2.293 2.293a1 1 0 0 1-1.414-1.414L10.586 9 8.293 6.707a1 1 0 0 1 0-1.414Z",
+                        d: "M2 5a3 3 0 0 1 3-3h14a3 3 0 0 1 3 3v8a3 3 0 0 1-3 3H5a3 3 0 0 1-3-3V5Zm6.293.293a1 1 0 0 1 1.414 0L12 7.586l2.293-2.293a1 1 0 1 1 1.414 1.414L13.414 9l2.293 2.293a1 1 0 0 1-1.414 1.414L12 10.414l-2.293 2.293a1 1 0 0 1-1.414-1.414L10.586 9 8.293 6.707a1 1 0 0 1 0-1.414Z",
                         clipRule: "evenodd",
                         className: u
-                    })
+                    }), (0, i.jsx)("path", {
+                        fill: "string" == typeof s ? s : s.css,
+                        d: "M13 19.5a.5.5 0 0 0 .5.5H15a1 1 0 1 1 0 2H9a1 1 0 1 1 0-2h1.5a.5.5 0 0 0 .5-.5v-2a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v2Z",
+                        className: u
+                    })]
                 })
             }
         },
@@ -81,10 +85,10 @@
                     return _
                 },
                 getSimilarApplications: function() {
-                    return h
+                    return p
                 },
                 search: function() {
-                    return p
+                    return h
                 },
                 getCollections: function() {
                     return A
@@ -184,7 +188,7 @@
                     categories: n.body
                 })
             }
-            async function h(t) {
+            async function p(t) {
                 var e;
                 let {
                     applicationId: n,
@@ -238,7 +242,7 @@
                     }
                 }
             }
-            async function p(t) {
+            async function h(t) {
                 var e;
                 let {
                     query: n,
@@ -1149,4 +1153,4 @@
         }
     }
 ]);
-//# sourceMappingURL=6a2a9c09d39e33b53340.js.map
+//# sourceMappingURL=2963543fdad76d09a26e.js.map

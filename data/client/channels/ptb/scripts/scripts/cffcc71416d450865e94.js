@@ -4,19 +4,19 @@
             "use strict";
             t.r(l), t.d(l, {
                 ChannelListMagnifyingGlassIcon: function() {
-                    return i
+                    return s
                 }
             });
             var n = t("37983");
             t("884691");
             var a = t("669491"),
                 r = t("75196");
-            let i = e => {
+            let s = e => {
                 let {
                     width: l = 24,
                     height: t = 24,
-                    color: i = a.default.colors.INTERACTIVE_NORMAL,
-                    colorClass: s = "",
+                    color: s = a.default.colors.INTERACTIVE_NORMAL,
+                    colorClass: i = "",
                     ...c
                 } = e;
                 return (0, n.jsxs)("svg", {
@@ -26,60 +26,26 @@
                     height: t,
                     fill: "none",
                     viewBox: "0 0 24 24",
-                    children: [(0, n.jsx)("g", {
+                    children: [(0, n.jsxs)("g", {
+                        fill: "string" == typeof s ? s : s.css,
                         clipPath: "url(#a)",
-                        children: (0, n.jsx)("path", {
-                            fill: "string" == typeof i ? i : i.css,
+                        className: i,
+                        children: [(0, n.jsx)("path", {
                             fillRule: "evenodd",
-                            d: "M18.5 21a2.5 2.5 0 1 0 0-5 2.5 2.5 0 0 0 0 5Zm0 2a4.48 4.48 0 0 0 2.396-.69l1.397 1.397a1 1 0 0 0 1.414-1.414l-1.397-1.397A4.5 4.5 0 1 0 18.5 23ZM3 3a1 1 0 0 0 0 2h18a1 1 0 1 0 0-2H3ZM2 8a1 1 0 0 1 1-1h18a1 1 0 1 1 0 2H3a1 1 0 0 1-1-1Zm1 3a1 1 0 1 0 0 2h11a1 1 0 1 0 0-2H3Zm-1 5a1 1 0 0 1 1-1h8a1 1 0 1 1 0 2H3a1 1 0 0 1-1-1Zm1 3a1 1 0 1 0 0 2h8a1 1 0 1 0 0-2H3Z",
-                            clipRule: "evenodd",
-                            className: s
-                        })
+                            d: "M18.5 23a4.48 4.48 0 0 0 2.396-.69l1.397 1.397a1 1 0 0 0 1.414-1.414l-1.397-1.397A4.5 4.5 0 1 0 18.5 23Zm0-2a2.5 2.5 0 1 0 0-5 2.5 2.5 0 0 0 0 5Z",
+                            clipRule: "evenodd"
+                        }), (0, n.jsx)("path", {
+                            d: "M3 3a1 1 0 0 0 0 2h18a1 1 0 1 0 0-2H3ZM2 8a1 1 0 0 1 1-1h18a1 1 0 1 1 0 2H3a1 1 0 0 1-1-1ZM3 11a1 1 0 1 0 0 2h11a1 1 0 1 0 0-2H3ZM2 16a1 1 0 0 1 1-1h8a1 1 0 1 1 0 2H3a1 1 0 0 1-1-1ZM3 19a1 1 0 1 0 0 2h8a1 1 0 1 0 0-2H3Z"
+                        })]
                     }), (0, n.jsx)("defs", {
                         children: (0, n.jsx)("clipPath", {
                             id: "a",
                             children: (0, n.jsx)("path", {
                                 fill: "#fff",
-                                d: "M24 24H0V0h24z"
+                                d: "M0 24h24V0H0z"
                             })
                         })
                     })]
-                })
-            }
-        },
-        345728: function(e, l, t) {
-            "use strict";
-            t.r(l), t.d(l, {
-                ChannelsTextIcon: function() {
-                    return i
-                }
-            });
-            var n = t("37983");
-            t("884691");
-            var a = t("669491"),
-                r = t("75196");
-            let i = e => {
-                let {
-                    width: l = 24,
-                    height: t = 24,
-                    color: i = a.default.colors.INTERACTIVE_NORMAL,
-                    colorClass: s = "",
-                    ...c
-                } = e;
-                return (0, n.jsx)("svg", {
-                    ...(0, r.default)(c),
-                    xmlns: "http://www.w3.org/2000/svg",
-                    width: l,
-                    height: t,
-                    fill: "none",
-                    viewBox: "0 0 24 24",
-                    children: (0, n.jsx)("path", {
-                        fill: "string" == typeof i ? i : i.css,
-                        fillRule: "evenodd",
-                        d: "M10.986 3.164a1 1 0 1 0-1.972-.328L8.153 8H4a1 1 0 0 0 0 2h3.82l-.667 4H3a1 1 0 1 0 0 2h3.82l-.806 4.835a1 1 0 1 0 1.972.33L8.847 16h4.973l-.806 4.835a1 1 0 1 0 1.972.33L15.847 16H20a1 1 0 0 0 0-2h-3.82l.667-4H21a1 1 0 1 0 0-2h-3.82l.806-4.836a1 1 0 1 0-1.972-.328L15.153 8H10.18l.806-4.836ZM14.153 14l.666-4H9.848l-.667 4h4.973Z",
-                        clipRule: "evenodd",
-                        className: s
-                    })
                 })
             }
         },
@@ -87,91 +53,19 @@
             "use strict";
             t.r(l), t.d(l, {
                 ForumIcon: function() {
-                    return i
+                    return s
                 }
             });
             var n = t("37983");
             t("884691");
             var a = t("669491"),
                 r = t("75196");
-            let i = e => {
+            let s = e => {
                 let {
                     width: l = 24,
                     height: t = 24,
-                    color: i = a.default.colors.INTERACTIVE_NORMAL,
-                    colorClass: s = "",
-                    ...c
-                } = e;
-                return (0, n.jsx)("svg", {
-                    ...(0, r.default)(c),
-                    xmlns: "http://www.w3.org/2000/svg",
-                    width: l,
-                    height: t,
-                    fill: "none",
-                    viewBox: "0 0 24 24",
-                    children: (0, n.jsx)("path", {
-                        fill: "string" == typeof i ? i : i.css,
-                        fillRule: "evenodd",
-                        d: "M18.913 12.977c1.482.993 2.454 2.65 2.454 4.523 0 .575-.094 1.145-.275 1.688-.106.32-.087.673.093.957l.838 1.319A1 1 0 0 1 21.18 23h-5.497C12.55 23 10 20.533 10 17.5s2.55-5.5 5.683-5.5c1.2 0 2.313.361 3.23.977Zm.329-2.122c.318.163.718-.015.742-.372.01-.16.016-.32.016-.483 0-4.418-4.03-8-9-8s-9 3.582-9 8a7.31 7.31 0 0 0 1.279 4.113.523.523 0 0 1-.055.663l-1.517 1.517c-.63.63-.184 1.707.707 1.707h5.102c.271 0 .484-.23.484-.5 0-4.2 3.507-7.5 7.683-7.5a7.8 7.8 0 0 1 3.559.855Z",
-                        clipRule: "evenodd",
-                        className: s
-                    })
-                })
-            }
-        },
-        578478: function(e, l, t) {
-            "use strict";
-            t.r(l), t.d(l, {
-                ImageIcon: function() {
-                    return i
-                }
-            });
-            var n = t("37983");
-            t("884691");
-            var a = t("669491"),
-                r = t("75196");
-            let i = e => {
-                let {
-                    width: l = 24,
-                    height: t = 24,
-                    color: i = a.default.colors.INTERACTIVE_NORMAL,
-                    colorClass: s = "",
-                    ...c
-                } = e;
-                return (0, n.jsx)("svg", {
-                    ...(0, r.default)(c),
-                    xmlns: "http://www.w3.org/2000/svg",
-                    width: l,
-                    height: t,
-                    fill: "none",
-                    viewBox: "0 0 24 24",
-                    children: (0, n.jsx)("path", {
-                        fill: "string" == typeof i ? i : i.css,
-                        fillRule: "evenodd",
-                        d: "M2 5a3 3 0 0 1 3-3h14a3 3 0 0 1 3 3v14a3 3 0 0 1-3 3H5a3 3 0 0 1-3-3V5Zm13.35 8.133 3.5 4.667a.75.75 0 0 1-.6 1.2H5.81a.75.75 0 0 1-.585-1.218l1.854-2.318a1.5 1.5 0 0 1 2.342 0l.506.633 2.223-2.964a2 2 0 0 1 3.2 0Zm-5.146-7.156c.229-.91-.88-1.55-1.555-.898a.934.934 0 0 1-1.298 0c-.675-.653-1.784-.013-1.556.898a.934.934 0 0 1-.649 1.125c-.903.258-.903 1.538 0 1.796a.934.934 0 0 1 .65 1.125c-.229.91.88 1.55 1.555.898a.934.934 0 0 1 1.298 0c.675.653 1.784.013 1.556-.898a.934.934 0 0 1 .649-1.125c.903-.258.903-1.538 0-1.796a.934.934 0 0 1-.65-1.125Z",
-                        clipRule: "evenodd",
-                        className: s
-                    })
-                })
-            }
-        },
-        681187: function(e, l, t) {
-            "use strict";
-            t.r(l), t.d(l, {
-                ImageWarningIcon: function() {
-                    return i
-                }
-            });
-            var n = t("37983");
-            t("884691");
-            var a = t("669491"),
-                r = t("75196");
-            let i = e => {
-                let {
-                    width: l = 24,
-                    height: t = 24,
-                    color: i = a.default.colors.INTERACTIVE_NORMAL,
-                    colorClass: s = "",
+                    color: s = a.default.colors.INTERACTIVE_NORMAL,
+                    colorClass: i = "",
                     ...c
                 } = e;
                 return (0, n.jsxs)("svg", {
@@ -182,18 +76,128 @@
                     fill: "none",
                     viewBox: "0 0 24 24",
                     children: [(0, n.jsx)("path", {
-                        fill: "string" == typeof i ? i : i.css,
+                        fill: "string" == typeof s ? s : s.css,
+                        d: "M18.913 12.977c1.482.993 2.454 2.65 2.454 4.523 0 .575-.094 1.145-.275 1.688-.106.32-.087.673.093.957l.839 1.319A1 1 0 0 1 21.18 23h-5.497C12.55 23 10 20.533 10 17.5s2.55-5.5 5.683-5.5c1.2 0 2.313.361 3.23.977Z",
+                        className: i
+                    }), (0, n.jsx)("path", {
+                        fill: "string" == typeof s ? s : s.css,
+                        d: "M19.242 10.855c.318.163.718-.015.742-.372.01-.16.016-.32.016-.483 0-4.418-4.03-8-9-8s-9 3.582-9 8a7.31 7.31 0 0 0 1.279 4.113.523.523 0 0 1-.055.663l-1.517 1.517c-.63.63-.184 1.707.707 1.707h5.102c.271 0 .484-.23.484-.5 0-4.2 3.508-7.5 7.683-7.5a7.8 7.8 0 0 1 3.559.855Z",
+                        className: i
+                    })]
+                })
+            }
+        },
+        578478: function(e, l, t) {
+            "use strict";
+            t.r(l), t.d(l, {
+                ImageIcon: function() {
+                    return s
+                }
+            });
+            var n = t("37983");
+            t("884691");
+            var a = t("669491"),
+                r = t("75196");
+            let s = e => {
+                let {
+                    width: l = 24,
+                    height: t = 24,
+                    color: s = a.default.colors.INTERACTIVE_NORMAL,
+                    colorClass: i = "",
+                    ...c
+                } = e;
+                return (0, n.jsx)("svg", {
+                    ...(0, r.default)(c),
+                    xmlns: "http://www.w3.org/2000/svg",
+                    width: l,
+                    height: t,
+                    fill: "none",
+                    viewBox: "0 0 24 24",
+                    children: (0, n.jsx)("path", {
+                        fill: "string" == typeof s ? s : s.css,
+                        fillRule: "evenodd",
+                        d: "M2 5a3 3 0 0 1 3-3h14a3 3 0 0 1 3 3v14a3 3 0 0 1-3 3H5a3 3 0 0 1-3-3V5Zm13.35 8.133 3.5 4.667a.75.75 0 0 1-.6 1.2H5.81a.75.75 0 0 1-.585-1.218l1.854-2.318a1.5 1.5 0 0 1 2.342 0l.506.633 2.223-2.964a2 2 0 0 1 3.2 0Zm-5.146-7.156c.229-.91-.88-1.55-1.555-.898a.934.934 0 0 1-1.298 0c-.675-.653-1.784-.013-1.556.898a.934.934 0 0 1-.649 1.125c-.903.258-.903 1.538 0 1.796a.934.934 0 0 1 .65 1.125c-.229.91.88 1.55 1.555.898a.934.934 0 0 1 1.298 0c.675.653 1.784.013 1.556-.898a.934.934 0 0 1 .649-1.125c.903-.258.903-1.538 0-1.796a.934.934 0 0 1-.65-1.125Z",
+                        clipRule: "evenodd",
+                        className: i
+                    })
+                })
+            }
+        },
+        681187: function(e, l, t) {
+            "use strict";
+            t.r(l), t.d(l, {
+                ImageWarningIcon: function() {
+                    return s
+                }
+            });
+            var n = t("37983");
+            t("884691");
+            var a = t("669491"),
+                r = t("75196");
+            let s = e => {
+                let {
+                    width: l = 24,
+                    height: t = 24,
+                    color: s = a.default.colors.INTERACTIVE_NORMAL,
+                    colorClass: i = "",
+                    ...c
+                } = e;
+                return (0, n.jsxs)("svg", {
+                    ...(0, r.default)(c),
+                    xmlns: "http://www.w3.org/2000/svg",
+                    width: l,
+                    height: t,
+                    fill: "none",
+                    viewBox: "0 0 24 24",
+                    children: [(0, n.jsx)("path", {
+                        fill: "string" == typeof s ? s : s.css,
                         fillRule: "evenodd",
                         d: "M5 2a3 3 0 0 0-3 3v14a3 3 0 0 0 3 3h6.986c.002-.481.129-.982.41-1.472L13.273 19H5.81a.75.75 0 0 1-.585-1.218l1.854-2.318a1.5 1.5 0 0 1 2.342 0l.506.633 2.223-2.964a2 2 0 0 1 3.2 0l.731.975.274-.477c1.163-2.027 4.127-2.027 5.29 0l.355.618V5a3 3 0 0 0-3-3H5Zm3.65 3.08c.674-.654 1.783-.014 1.554.897a.934.934 0 0 0 .65 1.125c.903.258.903 1.538 0 1.796a.934.934 0 0 0-.65 1.125c.229.91-.88 1.55-1.555.898a.934.934 0 0 0-1.298 0c-.675.653-1.784.013-1.556-.898a.934.934 0 0 0-.649-1.125c-.903-.258-.903-1.538 0-1.796a.934.934 0 0 0 .65-1.125c-.229-.91.88-1.55 1.555-.898.362.351.936.351 1.298 0Z",
                         clipRule: "evenodd",
-                        className: s
+                        className: i
                     }), (0, n.jsx)("path", {
-                        fill: "string" == typeof i ? i : i.css,
+                        fill: "string" == typeof s ? s : s.css,
                         fillRule: "evenodd",
                         d: "M19.91 14.627c-.394-.688-1.426-.688-1.82 0l-3.96 6.897c-.38.664.12 1.476.91 1.476h7.919c.79 0 1.292-.812.91-1.476l-3.958-6.897Zm-.464 1.873h-.892a.5.5 0 0 0-.497.551l.208 2.017c.017.16.177.262.334.228.127-.027.264-.046.401-.046s.274.019.4.046c.158.034.318-.068.335-.228l.208-2.017a.5.5 0 0 0-.497-.551ZM20 21a1 1 0 1 1-2 0 1 1 0 0 1 2 0Z",
                         clipRule: "evenodd",
-                        className: s
+                        className: i
                     })]
+                })
+            }
+        },
+        346800: function(e, l, t) {
+            "use strict";
+            t.r(l), t.d(l, {
+                TextIcon: function() {
+                    return s
+                }
+            });
+            var n = t("37983");
+            t("884691");
+            var a = t("669491"),
+                r = t("75196");
+            let s = e => {
+                let {
+                    width: l = 24,
+                    height: t = 24,
+                    color: s = a.default.colors.INTERACTIVE_NORMAL,
+                    colorClass: i = "",
+                    ...c
+                } = e;
+                return (0, n.jsx)("svg", {
+                    ...(0, r.default)(c),
+                    xmlns: "http://www.w3.org/2000/svg",
+                    width: l,
+                    height: t,
+                    fill: "none",
+                    viewBox: "0 0 24 24",
+                    children: (0, n.jsx)("path", {
+                        fill: "string" == typeof s ? s : s.css,
+                        fillRule: "evenodd",
+                        d: "M10.986 3.164a1 1 0 1 0-1.972-.328L8.153 8H4a1 1 0 0 0 0 2h3.82l-.667 4H3a1 1 0 1 0 0 2h3.82l-.806 4.836a1 1 0 0 0 1.972.328L8.847 16h4.973l-.806 4.836a1 1 0 0 0 1.972.328L15.847 16H20a1 1 0 1 0 0-2h-3.82l.667-4H21a1 1 0 1 0 0-2h-3.82l.806-4.836a1 1 0 1 0-1.972-.328L15.153 8H10.18l.806-4.836ZM14.153 14l.666-4H9.848l-.667 4h4.973Z",
+                        clipRule: "evenodd",
+                        className: i
+                    })
                 })
             }
         },
@@ -201,15 +205,15 @@
             "use strict";
             t.r(l), t.d(l, {
                 default: function() {
-                    return s
+                    return i
                 }
             });
             var n = t("37983");
             t("884691");
             var a = t("469563"),
                 r = t("713876"),
-                i = t("75196"),
-                s = (0, a.replaceIcon)(function(e) {
+                s = t("75196"),
+                i = (0, a.replaceIcon)(function(e) {
                     let {
                         width: l = 24,
                         height: t = 24,
@@ -217,7 +221,7 @@
                         ...r
                     } = e;
                     return (0, n.jsxs)("svg", {
-                        ...(0, i.default)(r),
+                        ...(0, s.default)(r),
                         width: l,
                         height: t,
                         viewBox: "0 0 20 20",
@@ -239,21 +243,21 @@
             "use strict";
             t.r(l), t.d(l, {
                 default: function() {
-                    return s
+                    return i
                 }
             });
             var n = t("37983");
             t("884691");
             var a = t("469563"),
-                r = t("345728"),
-                i = t("75196"),
-                s = (0, a.replaceIcon)(function(e) {
+                r = t("346800"),
+                s = t("75196"),
+                i = (0, a.replaceIcon)(function(e) {
                     let {
                         width: l = 24,
                         height: t = 24,
                         color: a = "currentColor",
                         className: r,
-                        foreground: s,
+                        foreground: i,
                         ...c
                     } = e;
                     return (0, n.jsx)("svg", {
@@ -261,39 +265,39 @@
                         height: t,
                         viewBox: "0 0 24 24",
                         className: r,
-                        ...(0, i.default)(c),
+                        ...(0, s.default)(c),
                         children: (0, n.jsx)("path", {
-                            className: s,
+                            className: i,
                             fill: a,
                             fillRule: "evenodd",
                             clipRule: "evenodd",
                             d: "M5.88657 21C5.57547 21 5.3399 20.7189 5.39427 20.4126L6.00001 17H2.59511C2.28449 17 2.04905 16.7198 2.10259 16.4138L2.27759 15.4138C2.31946 15.1746 2.52722 15 2.77011 15H6.35001L7.41001 9H4.00511C3.69449 9 3.45905 8.71977 3.51259 8.41381L3.68759 7.41381C3.72946 7.17456 3.93722 7 4.18011 7H7.76001L8.39677 3.41262C8.43914 3.17391 8.64664 3 8.88907 3H9.87344C10.1845 3 10.4201 3.28107 10.3657 3.58738L9.76001 7H15.76L16.3968 3.41262C16.4391 3.17391 16.6466 3 16.8891 3H17.8734C18.1845 3 18.4201 3.28107 18.3657 3.58738L17.76 7H21.1649C21.4755 7 21.711 7.28023 21.6574 7.58619L21.4824 8.58619C21.4406 8.82544 21.2328 9 20.9899 9H17.41L16.35 15H19.7549C20.0655 15 20.301 15.2802 20.2474 15.5862L20.0724 16.5862C20.0306 16.8254 19.8228 17 19.5799 17H16L15.3632 20.5874C15.3209 20.8261 15.1134 21 14.8709 21H13.8866C13.5755 21 13.3399 20.7189 13.3943 20.4126L14 17H8.00001L7.36325 20.5874C7.32088 20.8261 7.11337 21 6.87094 21H5.88657ZM9.41045 9L8.35045 15H14.3504L15.4104 9H9.41045Z"
                         })
                     })
-                }, r.ChannelsTextIcon)
+                }, r.TextIcon)
         },
         991497: function(e, l, t) {
             "use strict";
             t.r(l), t.d(l, {
                 default: function() {
-                    return s
+                    return i
                 }
             });
             var n = t("37983");
             t("884691");
             var a = t("469563"),
                 r = t("841563"),
-                i = t("75196"),
-                s = (0, a.replaceIcon)(function(e) {
+                s = t("75196"),
+                i = (0, a.replaceIcon)(function(e) {
                     let {
                         width: l = 24,
                         height: t = 24,
                         color: a = "currentColor",
                         foreground: r,
-                        ...s
+                        ...i
                     } = e;
                     return (0, n.jsx)("svg", {
-                        ...(0, i.default)(s),
+                        ...(0, s.default)(i),
                         width: l,
                         height: t,
                         viewBox: "0 0 20 20",
@@ -312,31 +316,31 @@
             "use strict";
             t.r(l), t.d(l, {
                 default: function() {
-                    return s
+                    return i
                 }
             });
             var n = t("37983");
             t("884691");
             var a = t("469563"),
                 r = t("733154"),
-                i = t("75196"),
-                s = (0, a.replaceIcon)(function(e) {
+                s = t("75196"),
+                i = (0, a.replaceIcon)(function(e) {
                     let {
                         width: l = 24,
                         height: t = 24,
                         color: a = "currentColor",
                         strokeWidth: r = "2.5",
-                        foreground: s,
+                        foreground: i,
                         ...c
                     } = e;
                     return (0, n.jsx)("svg", {
-                        ...(0, i.default)(c),
+                        ...(0, s.default)(c),
                         width: l,
                         height: t,
                         viewBox: "0 0 24 24",
                         fill: "none",
                         children: (0, n.jsx)("path", {
-                            className: s,
+                            className: i,
                             stroke: a,
                             strokeWidth: r,
                             strokeLinecap: "round",
@@ -350,24 +354,24 @@
             "use strict";
             t.r(l), t.d(l, {
                 default: function() {
-                    return s
+                    return i
                 }
             });
             var n = t("37983");
             t("884691");
             var a = t("469563"),
                 r = t("578478"),
-                i = t("75196"),
-                s = (0, a.replaceIcon)(function(e) {
+                s = t("75196"),
+                i = (0, a.replaceIcon)(function(e) {
                     let {
                         width: l = 24,
                         height: t = 24,
                         color: a = "currentColor",
                         foreground: r,
-                        ...s
+                        ...i
                     } = e;
                     return (0, n.jsx)("svg", {
-                        ...(0, i.default)(s),
+                        ...(0, s.default)(i),
                         width: l,
                         height: t,
                         viewBox: "0 0 20 20",
@@ -399,23 +403,23 @@
                     width: l = 24,
                     height: t = 24,
                     color: r = "currentColor",
-                    foreground: i,
-                    ...s
+                    foreground: s,
+                    ...i
                 } = e;
                 return (0, n.jsxs)("svg", {
-                    ...(0, a.default)(s),
+                    ...(0, a.default)(i),
                     width: l,
                     height: t,
                     viewBox: "0 0 16 16",
                     fill: "none",
                     children: [(0, n.jsx)("path", {
-                        className: i,
+                        className: s,
                         fillRule: "evenodd",
                         clipRule: "evenodd",
                         d: "M7 15H9V8H12.5L15 5.5L12.5 3H9V1H7V3H1L3.5 5.5L1 8H7V15Z",
                         fill: r
                     }), (0, n.jsx)("path", {
-                        className: i,
+                        className: s,
                         d: "M5 14C5 12.8954 5.89543 12 7 12H9C10.1046 12 11 12.8954 11 14V15H5V14Z",
                         fill: r
                     })]
@@ -426,24 +430,24 @@
             "use strict";
             t.r(l), t.d(l, {
                 default: function() {
-                    return s
+                    return i
                 }
             });
             var n = t("37983");
             t("884691");
             var a = t("469563"),
-                r = t("345728"),
-                i = t("75196"),
-                s = (0, a.replaceIcon)(function(e) {
+                r = t("346800"),
+                s = t("75196"),
+                i = (0, a.replaceIcon)(function(e) {
                     let {
                         width: l = 24,
                         height: t = 24,
                         color: a = "currentColor",
                         foreground: r,
-                        ...s
+                        ...i
                     } = e;
                     return (0, n.jsxs)("svg", {
-                        ...(0, i.default)(s),
+                        ...(0, s.default)(i),
                         width: l,
                         height: t,
                         viewBox: "0 0 24 24",
@@ -458,8 +462,8 @@
                             d: "M13.4399 12.96C12.9097 12.96 12.4799 13.3898 12.4799 13.92V20.2213C12.4799 20.7515 12.9097 21.1813 13.4399 21.1813H14.3999C14.5325 21.1813 14.6399 21.2887 14.6399 21.4213V23.4597C14.6399 23.6677 14.8865 23.7773 15.0408 23.6378L17.4858 21.4289C17.6622 21.2695 17.8916 21.1813 18.1294 21.1813H22.5599C23.0901 21.1813 23.5199 20.7515 23.5199 20.2213V13.92C23.5199 13.3898 23.0901 12.96 22.5599 12.96H13.4399Z"
                         })]
                     })
-                }, r.ChannelsTextIcon)
+                }, r.TextIcon)
         }
     }
 ]);
-//# sourceMappingURL=da64ec4f6f39eb28aec5.js.map
+//# sourceMappingURL=cffcc71416d450865e94.js.map

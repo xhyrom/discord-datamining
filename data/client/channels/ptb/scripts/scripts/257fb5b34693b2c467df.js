@@ -206,20 +206,22 @@
                     colorClass: a = "",
                     ...o
                 } = e;
-                return (0, u.jsx)("svg", {
+                return (0, u.jsxs)("svg", {
                     ...(0, i.default)(o),
                     xmlns: "http://www.w3.org/2000/svg",
                     width: t,
                     height: n,
                     fill: "none",
                     viewBox: "0 0 24 24",
-                    children: (0, u.jsx)("path", {
+                    children: [(0, u.jsx)("path", {
                         fill: "string" == typeof r ? r : r.css,
-                        fillRule: "evenodd",
-                        d: "M12.657 21.979c.407-.027.567-.512.28-.8l-.058-.058a3 3 0 1 1 4.242-4.242l.525.525a.5.5 0 0 0 .707 0l2.526-2.525c.196-.197.413-.36.643-.49a.536.536 0 0 0 .27-.35c.136-.659.208-1.34.208-2.039 0-5.523-4.477-10-10-10S2 6.477 2 12c0 1.97.57 3.808 1.554 5.357a.517.517 0 0 1-.04.617l-2.067 2.369C.882 20.989 1.34 22 2.2 22H12c.22 0 .44-.007.657-.021Zm11.05-4.272a1 1 0 0 0-1.414-1.414L18 20.586l-2.293-2.293a1 1 0 0 0-1.414 1.414l3 3a1 1 0 0 0 1.414 0l5-5Z",
-                        clipRule: "evenodd",
+                        d: "M12.657 21.979c.407-.027.567-.512.28-.8l-.058-.058a3 3 0 1 1 4.242-4.242l.525.525a.5.5 0 0 0 .708 0l2.525-2.525c.196-.197.413-.36.644-.49a.535.535 0 0 0 .27-.35c.136-.659.207-1.34.207-2.039 0-5.523-4.477-10-10-10S2 6.477 2 12c0 1.97.57 3.808 1.554 5.357a.517.517 0 0 1-.04.617l-2.067 2.369C.882 20.989 1.342 22 2.2 22H12c.22 0 .44-.007.657-.021Z",
                         className: a
-                    })
+                    }), (0, u.jsx)("path", {
+                        fill: "string" == typeof r ? r : r.css,
+                        d: "M23.707 17.707a1 1 0 0 0-1.414-1.414L18 20.586l-2.293-2.293a1 1 0 0 0-1.414 1.414l3 3a1 1 0 0 0 1.414 0l5-5Z",
+                        className: a
+                    })]
                 })
             }
         },
@@ -1050,12 +1052,12 @@
                 return null != n && (_[n] = void 0, n === E && N(n), !0)
             }
 
-            function S() {
+            function p() {
                 N(c.FAVORITES)
             }
-            class p extends u.default.Store {
+            class S extends u.default.Store {
                 initialize() {
-                    this.waitFor(s.default, d.default, a.default, o.default, r.default), this.syncWith([r.default], S)
+                    this.waitFor(s.default, d.default, a.default, o.default, r.default), this.syncWith([r.default], p)
                 }
                 getCategories(e) {
                     return null != e ? function(e) {
@@ -1064,8 +1066,8 @@
                     }(e) : C
                 }
             }
-            p.displayName = "GuildCategoryStore";
-            var g = new p(l.default, {
+            S.displayName = "GuildCategoryStore";
+            var g = new S(l.default, {
                 CHANNEL_SELECT: function(e) {
                     let {
                         guildId: t
@@ -1172,4 +1174,4 @@
         }
     }
 ]);
-//# sourceMappingURL=e172c251188141bff1c4.js.map
+//# sourceMappingURL=257fb5b34693b2c467df.js.map
