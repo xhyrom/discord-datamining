@@ -4,15 +4,16 @@
 <p>Who is Eligible:</p>
 <ul>
     <li>To claim through Discord, you must be a current Nitro member. </li>
-    <li>To redeem in Picsart, this offer is only available to first-time Picsart Pro subscribers.
+    <li>To redeem in Picsart, this offer is only available to new Picsart Pro subscribers.
         <ul>
-            <li>If you have previously subscribed to Picsart Pro, you are not eligible to redeem this promotion.</li>
-            <li>Further terms and conditions to redeem this promotion can be found at the <a href="#h_01HDEQFCK302TG6R88BGHZTHXH">bottom of this article</a>.</li>
+            <li>If you are an existing Picsart Pro subscriber, you are not eligible to redeem.</li>
+            <li>If you had previously had a Picsart trial in the past but did not subscribe, you are still eligible for this Picsart Pro trial.</li>
+            <li>Further terms and conditions to redeem this promotion can be found at the <a href="https://support.discord.com/hc/en-us/articles/4492620838295/preview/eyJhbGciOiJIUzI1NiJ9.eyJpZCI6NDQ5MjYyMDgzODI5NSwicmV2aXNpb25faWQiOiIwMUhDSjZKQjI4M1g1UDhWTktDUjJNQ0JESyIsImV4cCI6MTY5NzEyNjU1NH0.2ViYzuFBBQnyO7cN5YJFsOSiwgSd4Dxk64EmKKJgOTE#h_01EJ8HY9TJ355BP1A6R57FD8NV"><span class="wysiwyg-underline" style="color: #1155cc;" data-darkreader-inline-color="">bottom of this article</span></a>.</li>
         </ul>
     </li>
 </ul>
 <p>Requirements:</p>
-<p>Claim through Discord <strong>Gift Inventory</strong> from October 24, 2023 (10AM PST) to November 23, 2023 (11:59PM PST), and redeem in your Picsart account by December 23, 2023 (11:59PM PST).</p>
+<p>Claim through Discord <strong>Gift Inventory</strong> from October 24, 2023 (10AM PST) to November 23, 2023 (11:59PM PST), and redeem in your Picsart account by November 23, 2023 (11:59PM PST)).</p>
 <p>Subscription:</p>
 <p>After the 1 month free trial period, your Picsart Pro or Gold subscription will convert to a monthly or yearly recurring subscription, and Picsart will bill your payment method unless you cancel the subscription.</p>
 <p><strong><span class="wysiwyg-font-size-large">What does this article cover:</span></strong></p>
@@ -78,7 +79,7 @@
 <p class="wysiwyg-text-align-center"><img src="https://support.discord.com/hc/article_attachments/18509889197335" alt="nitro_picsart_promo.png"></p>
 <p>2. Click on the <strong>Claim</strong> button for the Picsart Pro/Picsart Gold Gift</p>
 <p>Once you press <strong>Claim</strong> on the Picsart Pro Gift in the Gift Inventory and you'll then see a new pop-up with your 12 character code for this promotion.</p>
-<p>If you want to redeem your code later, you can press the <strong>Maybe Later</strong> button, and then redeem the code before December 23, 2023 (11:59PM PST).</p>
+<p>If you want to redeem your code later, you can press the <strong>Maybe Later</strong> button, and then redeem the code before November 23, 2023 (11:59PM PST).</p>
 <h1 id="h_01HDEQFCK2MY1KN7358XR6RSBS">How Do I Redeem The Picsart Pro/Picsart Gold Trial On My Picsart Account?</h1>
 <p>Once you have claimed the code in the <strong>Gift Inventory</strong>, you'll now need to officially redeem this code on your Picsart account.</p>
 <h2 id="h_01HDEQFCK2P60AN52607682B24">Eligibility For Redeeming The Picsart Pro/Picsart Gold Trial</h2>
@@ -110,8 +111,10 @@
 <p>A: This promotion runs from October 24, 2023 (10AM PST) to November 23, 2023 (11:59PM PST).</p>
 <p>After November 23, 2023 (11:59PM PST), Nitro members will no longer be able to claim a trial code.</p>
 <p><strong>Q: How long does my Picsart Pro/Picsart Gold code last for in my Gift Inventory?</strong></p>
-<p>A: Once a code is claimed in the Gift Inventory in Discord, all Picsart Pro or Picsart Gold codes must be redeemed by December 23, 2023 (11:59PM PST).</p>
-<p>If a code has not been redeemed to the Picsart account by December 23, 2023 (11:59PM PST), it will expire and you will no longer be able to claim 1 month of Picsart Pro/Picsart Gold.</p>
+<p>A: Once a code is claimed in the Gift Inventory in Discord, all Picsart Pro or Picsart Gold codes must be redeemed by November 23, 2023 (11:59PM PST).</p>
+<p>If a code has not been redeemed to the Picsart account by November 23, 2023 (11:59PM PST), it will expire and you will no longer be able to claim 1 month of Picsart Pro/Picsart Gold.</p>
+<p><strong>Q: Can I share my Picsart Pro/Picsart Gold code with a friend?</strong></p>
+<p>A: Unfortunately, no, you should not share your Picsart Pro/Picsart Gold promo code with a friend. Each code is developed for each Discord Nitro member and the code will not work if shared with a friend.</p>
 <h2 id="h_01HDEQFCK313HKQR8MFH08BZ0N">Eligibility For The Promotion</h2>
 <p><strong>Q: Who can claim this promotion in the Discord Gift Inventory?</strong></p>
 <p>A: All current and new Nitro members are eligible for this perk. </p>
@@ -148,6 +151,6 @@
 <p><strong>Q: I'm having trouble redeeming this promotion to my Picsart account? How do I contact Picsart support? </strong></p>
 <p>A: If you are having issues redeeming this promotion on your Picsart account, you can reach out to Picsart support at: support@picsart.com</p>
 <h1 id="h_01HDEQFCK302TG6R88BGHZTHXH">Terms And Conditions</h1>
-<p><span style="color: #2e3338;" data-darkreader-inline-color="">Picsart Offer is good towards one month of Picsart Pro / Picsart Gold on Picsart.com and via participating Picsart apps (up to $15 total value). In order to be eligible for the Offer, you must (i) be 13 years of age or older; (ii) have a Picsart account; (iii) newly subscribe to Picsart Gold during the promotion period to redeem your Offer; and (iv) provide a valid form of payment upon redemption of the Offer. After the promotional period, subscription will continue to be charged at the regular price of up to $15 per month or up to $84 per year USD (subject to change), unless canceled. The Offer must be redeemed to your Picsart account by December 23, 2023. Limit 1 Offer per person. If lost or stolen, cannot be replaced. No cash value, except as required by law. Not valid with any other offer. Not for resale; void if sold or exchanged. Offer valid in all jurisdictions where Picsart Pro/Picsart Gold is available, except where prohibited by law.</span></p>
+<p><span style="color: #2e3338;" data-darkreader-inline-color="">Picsart Offer is good towards one month of Picsart Pro / Picsart Gold on Picsart.com and via participating Picsart apps (up to $15 total value). In order to be eligible for the Offer, you must (i) be 13 years of age or older; (ii) have a Picsart account; (iii) newly subscribe to Picsart Gold during the promotion period to redeem your Offer; and (iv) provide a valid form of payment upon redemption of the Offer. After the promotional period, subscription will continue to be charged at the regular price of up to $15 per month or up to $84 per year USD (subject to change), unless canceled. The Offer must be redeemed to your Picsart account by November 23, 2023. Limit 1 Offer per person. If lost or stolen, cannot be replaced. No cash value, except as required by law. Not valid with any other offer. Not for resale; void if sold or exchanged. Offer valid in all jurisdictions where Picsart Pro/Picsart Gold is available, except where prohibited by law.</span></p>
 <p><span style="color: #2e3338;" data-darkreader-inline-color="">Terms and conditions apply - please see </span><a href="https://picsart.com/terms-of-use" target="_blank" rel="noopener noreferrer">https://picsart.com/terms-of-use</a><span style="color: #2e3338;" data-darkreader-inline-color=""> for more details.</span></p>
 <p><br><br></p>
