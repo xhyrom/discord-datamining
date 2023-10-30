@@ -11667,6 +11667,7 @@
                 "heading-xxl/normal": "heading-xxl-normal__5ffb4",
                 "heading-xxl/semibold": "heading-xxl-semibold_b19593",
                 highestRole: "highestRole__93122",
+                integrationIcon: "integrationIcon__4d2c6",
                 inviteChiplet: "inviteChiplet__8bf4b",
                 inviteChipletContainer: "inviteChipletContainer_aa2289",
                 inviteContainer: "inviteContainer__4d80b",

@@ -63754,8 +63754,8 @@ strong {
 
 .message__13e98 {
     font-weight: 500;
-    font-size: 1rem;
-    line-height: 1.25rem;
+    font-size: 16px;
+    line-height: 20px;
     white-space: nowrap;
     text-overflow: ellipsis;
     overflow: hidden
@@ -64687,6 +64687,10 @@ strong {
 
 .robot__70072 {
     color: var(--text-link)
+}
+
+.integrationIcon__4d2c6 {
+    background-size: contain
 }
 
 .tableHeaderRow__89a36 {
@@ -149551,4 +149555,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=7acb3ee172e222a77942.css.map*/
+/*# sourceMappingURL=09802770bbda4bd18425.css.map*/
