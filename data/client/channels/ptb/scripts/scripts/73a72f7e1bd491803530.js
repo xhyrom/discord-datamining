@@ -7076,11 +7076,12 @@
                 PARTNER_PROMOTION_ERROR_TITLE: "Uh oh!",
                 PARTNER_PROMOTION_ERROR_BODY: "Looks like something went wrong.",
                 PARTNER_PROMOTION_MAX_CLAIMS_ERROR_BODY: "Looks like this promotion has reached its maximum number of claims.",
-                PARTNER_PROMOTION_NEW_SUBSCRIPTION_REQUIRED_ERROR_BODY: "Oh no! It looks like you have Nitro already.",
+                PARTNER_PROMOTION_NEW_SUBSCRIPTION_REQUIRED_ERROR_BODY: "It looks like you have Nitro already.",
                 PARTNER_PROMOTION_PREVIOUS_PURCHASE_ERROR_BODY: "Sorry, looks like you’ve already had a Nitro sub!",
                 PARTNER_PROMOTION_USER_CLAIMED_ERROR_BODY: "Looks like you already claimed a gift.",
                 PARTNER_PROMOTION_GIFT_CLAIMED_ERROR_BODY: "Looks like this gift has already been claimed.",
                 PARTNER_PROMOTION_USER_NOT_VERIFIED_ERROR_BODY: "Looks like your email isn’t verified. Make sure to verify your email before claiming this gift.",
+                PARTNER_PROMOTION_UNKNOWN_GIFT_ERROR_BODY: "Unknown gift.",
                 REDEEM: "Redeem",
                 UNLOCK_CODE: "Unlock Code",
                 OUTBOUND_PROMOTION_REDEMPTION_MODAL_TITLE: "Awesome!",
@@ -17837,7 +17838,7 @@
                 u = E("782340");
             (0, i.setUpdateRules)(s.default), (0, r.default)(u.default, n.default, T.default), a.default.Emitter.injectBatchEmitChanges(o.unstable_batchedUpdates), a.default.PersistedStore.disableWrites = __OVERLAY__, a.default.initialize();
             let L = window.GLOBAL_ENV.RELEASE_CHANNEL;
-            new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(L, ", Build Number: ").concat("241698", ", Version Hash: ").concat("dda281bcfc5540869819d3397e674af1a377c541")), t.default.setTags({
+            new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(L, ", Build Number: ").concat("241706", ", Version Hash: ").concat("428929f43e3c3bb914c959a89a6699393783fb51")), t.default.setTags({
                 appContext: l.CURRENT_APP_CONTEXT
             }), S.default.initBasic(), N.default.init(), I.FocusRingManager.init(), O.init(), (0, R.cleanupTempFiles)()
         },
@@ -20189,8 +20190,8 @@
 
             function o() {
                 var e;
-                let _ = parseInt((e = "241698", "241698"));
-                return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("241698")), _ = 0), _
+                let _ = parseInt((e = "241706", "241706"));
+                return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("241706")), _ = 0), _
             }
         },
         990629: function(e, _, E) {
@@ -35717,4 +35718,4 @@
         }
     }
 ]);
-//# sourceMappingURL=cf2359ac9c5f85e6d3f1.js.map
+//# sourceMappingURL=73a72f7e1bd491803530.js.map
