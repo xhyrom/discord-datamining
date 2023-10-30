@@ -10,8 +10,8 @@
             var l = n("872717"),
                 a = n("913144"),
                 r = n("950104"),
-                s = n("27618"),
-                o = n("697218"),
+                o = n("27618"),
+                s = n("697218"),
                 i = n("599110"),
                 d = n("404118"),
                 u = n("736964"),
@@ -24,9 +24,9 @@
                             E.default.selectVoiceChannel(e, t), n && this.ring(e), null == r || r(e)
                         };
                         if (null != a) {
-                            let t = s.default.isBlocked(a);
+                            let t = o.default.isBlocked(a);
                             if (t) return;
-                            let r = o.default.getUser(a);
+                            let r = s.default.getUser(a);
                             l.default.get({
                                 url: _.Endpoints.CALL(e),
                                 oldFormErrors: !0
@@ -86,14 +86,14 @@
             "use strict";
             n.r(t), n.d(t, {
                 default: function() {
-                    return f
+                    return I
                 }
             });
             var l = n("872717"),
                 a = n("819855"),
                 r = n("913144"),
-                s = n("81732"),
-                o = n("21121"),
+                o = n("81732"),
+                s = n("21121"),
                 i = n("258158"),
                 d = n("393414"),
                 u = n("233069"),
@@ -103,33 +103,33 @@
                 A = n("987317"),
                 N = n("49111"),
                 R = n("782340"),
-                f = {
+                I = {
                     async openPrivateChannel(e) {
                         var t;
                         let n = arguments.length > 1 && void 0 !== arguments[1] && arguments[1],
                             a = arguments.length > 2 && void 0 !== arguments[2] && arguments[2],
                             r = arguments.length > 3 ? arguments[3] : void 0,
-                            s = arguments.length > 4 ? arguments[4] : void 0,
-                            o = this._getRecipients(e),
+                            o = arguments.length > 4 ? arguments[4] : void 0,
+                            s = this._getRecipients(e),
                             d = e => {
                                 n && c.default.call(e.id, a, !0, e.isDM() ? e.getRecipientId() : null)
                             };
-                        if (1 === o.length) {
-                            let [e] = o, t = this._openCachedDMChannel(e, s);
+                        if (1 === s.length) {
+                            let [e] = s, t = this._openCachedDMChannel(e, o);
                             if (null != t) return d(t), Promise.resolve(t.id)
                         }
                         try {
                             let e = await l.default.post({
                                 url: N.Endpoints.USER_CHANNELS,
                                 body: {
-                                    recipients: o
+                                    recipients: s
                                 },
                                 context: {
                                     location: r
                                 },
                                 oldFormErrors: !0
                             });
-                            null == s || s();
+                            null == o || o();
                             let t = this._openPrivateChannel(e.body);
                             return d(t), e.body.id
                         } catch (e) {
@@ -151,7 +151,7 @@
                     _openCachedDMChannel(e, t) {
                         let n = E.default.getDMFromUserId(e),
                             l = null != n ? E.default.getChannel(n) : null;
-                        if (null != l) return null == t || t(), null != (0, o.getRootNavigationRefIfInExperiment)() ? (0, d.transitionTo)(N.Routes.CHANNEL(N.ME, l.id), {
+                        if (null != l) return null == t || t(), null != (0, s.getRootNavigationRefIfInExperiment)() ? (0, d.transitionTo)(N.Routes.CHANNEL(N.ME, l.id), {
                             navigationReplace: !0
                         }) : A.default.selectPrivateChannel(l.id), l;
                         return null
@@ -189,7 +189,7 @@
                         return r.default.dispatch({
                             type: "CHANNEL_CREATE",
                             channel: t
-                        }), null != (0, o.getRootNavigationRefIfInExperiment)() ? (0, d.transitionTo)(N.Routes.CHANNEL(N.ME, t.id), {
+                        }), null != (0, s.getRootNavigationRefIfInExperiment)() ? (0, d.transitionTo)(N.Routes.CHANNEL(N.ME, t.id), {
                             navigationReplace: !0
                         }) : A.default.selectPrivateChannel(t.id), t
                     },
@@ -258,7 +258,7 @@
                                 oldFormErrors: !0
                             }),
                             r = null == n ? void 0 : n.getGuildId();
-                        return null != r && !(null == n ? void 0 : n.isThread()) && s.default.checkGuildTemplateDirty(r), a
+                        return null != r && !(null == n ? void 0 : n.isThread()) && o.default.checkGuildTemplateDirty(r), a
                     },
                     setIcon(e, t) {
                         let n = E.default.getChannel(e);
@@ -270,7 +270,7 @@
                             oldFormErrors: !0
                         }).then(() => {
                             let e = null == n ? void 0 : n.getGuildId();
-                            null != e && !(null == n ? void 0 : n.isThread()) && s.default.checkGuildTemplateDirty(e)
+                            null != e && !(null == n ? void 0 : n.isThread()) && o.default.checkGuildTemplateDirty(e)
                         })
                     },
                     convertToGuild: e => l.default.post({
@@ -303,12 +303,12 @@
                             permission_overwrites: []
                         };
                         null != n && (r.parent_id = n), null != a && (r.topic = a);
-                        let o = await l.default.post({
+                        let s = await l.default.post({
                             url: N.Endpoints.GUILD_CHANNELS(e),
                             body: r,
                             oldFormErrors: !0
                         });
-                        return s.default.checkGuildTemplateDirty(e), o
+                        return o.default.checkGuildTemplateDirty(e), s
                     }
                 }
         },
@@ -316,173 +316,178 @@
             "use strict";
             n.r(t), n.d(t, {
                 default: function() {
-                    return p
+                    return D
                 }
             });
-            var l = n("872717"),
-                a = n("819855"),
-                r = n("913144"),
-                s = n("774146"),
-                o = n("132774"),
-                i = n("258158"),
-                d = n("823348"),
-                u = n("697218"),
-                E = n("284609"),
-                _ = n("158998"),
-                c = n("404118"),
-                A = n("272030"),
-                N = n("49111"),
-                R = n("782340");
+            var l, a, r = n("872717"),
+                o = n("819855"),
+                s = n("913144"),
+                i = n("774146"),
+                d = n("132774"),
+                u = n("258158"),
+                E = n("823348"),
+                _ = n("697218"),
+                c = n("284609"),
+                A = n("158998"),
+                N = n("404118"),
+                R = n("272030"),
+                I = n("49111"),
+                f = n("782340");
 
-            function f(e) {
-                (0, A.closeContextMenu)(), c.default.show(e)
+            function C(e) {
+                (0, R.closeContextMenu)(), N.default.show(e)
             }
 
-            function I(e, t) {
+            function p(e, t, n) {
                 let {
-                    status: n,
-                    body: l
-                } = e, a = l && l.code;
-                switch (n) {
+                    status: l,
+                    body: r
+                } = e, o = r && r.code;
+                switch (l) {
                     case 429:
-                        f({
-                            title: R.default.Messages.FRIEND_REQUEST_RATE_LIMITED_HEADER,
-                            body: R.default.Messages.FRIEND_REQUEST_RATE_LIMITED_BODY,
-                            confirmText: R.default.Messages.FRIEND_REQUEST_RATE_LIMITED_BUTTON
+                        t === a.SHOW_ALWAYS && C({
+                            title: f.default.Messages.FRIEND_REQUEST_RATE_LIMITED_HEADER,
+                            body: f.default.Messages.FRIEND_REQUEST_RATE_LIMITED_BODY,
+                            confirmText: f.default.Messages.FRIEND_REQUEST_RATE_LIMITED_BUTTON
                         });
                         break;
                     case 403:
-                        if (a === N.AbortCodes.EMAIL_VERIFICATION_REQUIRED) {
-                            f({
-                                title: R.default.Messages.FRIEND_REQUEST_REQUIRES_EMAIL_VALIDATION_HEADER,
-                                body: R.default.Messages.FRIEND_REQUEST_REQUIRES_EMAIL_VALIDATION_BODY,
-                                confirmText: R.default.Messages.FRIEND_REQUEST_REQUIRES_EMAIL_VALIDATION_BUTTON,
+                        if (o === I.AbortCodes.EMAIL_VERIFICATION_REQUIRED) {
+                            C({
+                                title: f.default.Messages.FRIEND_REQUEST_REQUIRES_EMAIL_VALIDATION_HEADER,
+                                body: f.default.Messages.FRIEND_REQUEST_REQUIRES_EMAIL_VALIDATION_BODY,
+                                confirmText: f.default.Messages.FRIEND_REQUEST_REQUIRES_EMAIL_VALIDATION_BUTTON,
                                 onConfirm: () => {
-                                    s.openClaimAccountModal()
+                                    i.openClaimAccountModal()
                                 }
                             });
                             break
                         }
                     default:
-                        if (a === N.AbortCodes.USER_QUARANTINED)(0, A.closeContextMenu)(), (0, i.default)();
-                        else if ((0, d.isLimitedAccessErrorCode)(n, a)) break;
-                        else {
-                            let e = null != t ? (0, E.humanizeAbortCode)(a || 0, t) : R.default.Messages.POMELO_ADD_FRIEND_ERROR;
-                            f({
-                                title: R.default.Messages.FRIEND_REQUEST_FAILED_HEADER,
+                        if (o === I.AbortCodes.USER_QUARANTINED)(0, R.closeContextMenu)(), (0, u.default)();
+                        else if ((0, E.isLimitedAccessErrorCode)(l, o)) break;
+                        else if (t === a.SHOW_ALWAYS) {
+                            let e = null != n ? (0, c.humanizeAbortCode)(o || 0, n) : f.default.Messages.POMELO_ADD_FRIEND_ERROR;
+                            C({
+                                title: f.default.Messages.FRIEND_REQUEST_FAILED_HEADER,
                                 body: e,
-                                confirmText: R.default.Messages.OKAY
+                                confirmText: f.default.Messages.OKAY
                             })
                         }
                 }
                 throw e
-            }
-            let C = {
-                sendRequest(e, t, n) {
-                    let [a, r] = e.split("#");
-                    return l.default.post({
-                        url: N.Endpoints.USER_RELATIONSHIPS(),
+            }(l = a || (a = {}))[l.SHOW_ALWAYS = 0] = "SHOW_ALWAYS", l[l.SHOW_ONLY_IF_ACTION_NEEDED = 1] = "SHOW_ONLY_IF_ACTION_NEEDED";
+            let h = {
+                sendRequest(e) {
+                    let {
+                        discordTag: t,
+                        context: n,
+                        captchaPayload: l,
+                        errorUxConfig: o = a.SHOW_ALWAYS
+                    } = e, [s, i] = t.split("#");
+                    return r.default.post({
+                        url: I.Endpoints.USER_RELATIONSHIPS(),
                         body: {
-                            username: a,
-                            discriminator: parseInt(r),
-                            ...n
+                            username: s,
+                            discriminator: parseInt(i),
+                            ...l
                         },
-                        context: t,
+                        context: n,
                         oldFormErrors: !0
-                    }).catch(t => {
-                        I(t, e)
+                    }).catch(e => {
+                        p(e, o, t)
                     })
                 },
                 addRelationship(e, t) {
                     let {
                         userId: n,
-                        context: a,
-                        type: r,
+                        context: l,
+                        type: o,
                         friendToken: s,
-                        fromFriendSuggestion: o,
-                        captchaPayload: i
-                    } = e, d = u.default.getUser(n);
-                    return l.default.put({
-                        url: N.Endpoints.USER_RELATIONSHIP(n),
+                        fromFriendSuggestion: i,
+                        captchaPayload: d
+                    } = e, u = arguments.length > 2 && void 0 !== arguments[2] ? arguments[2] : a.SHOW_ALWAYS, E = _.default.getUser(n);
+                    return r.default.put({
+                        url: I.Endpoints.USER_RELATIONSHIP(n),
                         body: {
-                            type: r,
+                            type: o,
                             friend_token: s,
-                            from_friend_suggestion: o,
-                            ...i
+                            from_friend_suggestion: i,
+                            ...d
                         },
-                        context: a,
+                        context: l,
                         oldFormErrors: !0
                     }).then(() => {
                         null == t || t()
                     }).catch(e => {
-                        I(e, _.default.getUserTag(d))
+                        p(e, u, A.default.getUserTag(E))
                     })
                 },
-                acceptFriendRequest: e => C.addRelationship(e, function() {
-                    a.AccessibilityAnnouncer.announce(R.default.Messages.A11Y_ANNOUNCEMENT_FRIEND_ACCEPT_REQUEST)
+                acceptFriendRequest: e => h.addRelationship(e, function() {
+                    o.AccessibilityAnnouncer.announce(f.default.Messages.A11Y_ANNOUNCEMENT_FRIEND_ACCEPT_REQUEST)
                 }),
-                cancelFriendRequest: (e, t) => C.removeRelationship(e, t, function() {
-                    a.AccessibilityAnnouncer.announce(R.default.Messages.A11Y_ANNOUNCEMENT_FRIEND_CANCEL_REQUEST)
+                cancelFriendRequest: (e, t) => h.removeRelationship(e, t, function() {
+                    o.AccessibilityAnnouncer.announce(f.default.Messages.A11Y_ANNOUNCEMENT_FRIEND_CANCEL_REQUEST)
                 }),
                 removeFriend(e, t) {
-                    C.removeRelationship(e, t, function() {
-                        a.AccessibilityAnnouncer.announce(R.default.Messages.A11Y_ANNOUNCEMENT_FRIEND_REMOVED)
+                    h.removeRelationship(e, t, function() {
+                        o.AccessibilityAnnouncer.announce(f.default.Messages.A11Y_ANNOUNCEMENT_FRIEND_REMOVED)
                     })
                 },
                 unblockUser(e, t) {
-                    C.removeRelationship(e, t, function() {
-                        a.AccessibilityAnnouncer.announce(R.default.Messages.A11Y_ANNOUNCEMENT_USER_UNBLOCKED)
+                    h.removeRelationship(e, t, function() {
+                        o.AccessibilityAnnouncer.announce(f.default.Messages.A11Y_ANNOUNCEMENT_USER_UNBLOCKED)
                     })
                 },
-                removeRelationship: (e, t, n) => l.default.delete({
-                    url: N.Endpoints.USER_RELATIONSHIP(e),
+                removeRelationship: (e, t, n) => r.default.delete({
+                    url: I.Endpoints.USER_RELATIONSHIP(e),
                     context: t,
                     oldFormErrors: !0
                 }).then(() => {
                     null == n || n()
                 }).catch(() => {
-                    a.AccessibilityAnnouncer.announce(R.default.Messages.A11Y_ANNOUNCEMENT_GENERIC_FAIL)
+                    o.AccessibilityAnnouncer.announce(f.default.Messages.A11Y_ANNOUNCEMENT_GENERIC_FAIL)
                 }),
-                updateRelationship: (e, t) => l.default.patch({
-                    url: N.Endpoints.USER_RELATIONSHIP(e),
+                updateRelationship: (e, t) => r.default.patch({
+                    url: I.Endpoints.USER_RELATIONSHIP(e),
                     body: {
                         nickname: t
                     }
                 }),
                 fetchRelationships() {
-                    l.default.get({
-                        url: N.Endpoints.USER_RELATIONSHIPS(),
+                    r.default.get({
+                        url: I.Endpoints.USER_RELATIONSHIPS(),
                         oldFormErrors: !0
-                    }).then(e => r.default.dispatch({
+                    }).then(e => s.default.dispatch({
                         type: "LOAD_RELATIONSHIPS_SUCCESS",
                         relationships: e.body
-                    }), () => r.default.dispatch({
+                    }), () => s.default.dispatch({
                         type: "LOAD_RELATIONSHIPS_FAILURE"
                     }))
                 },
                 confirmClearPendingRelationships(e) {
-                    (0, o.default)(e)
+                    (0, d.default)(e)
                 },
-                clearPendingRelationships: () => l.default.delete({
-                    url: N.Endpoints.USER_RELATIONSHIPS(),
+                clearPendingRelationships: () => r.default.delete({
+                    url: I.Endpoints.USER_RELATIONSHIPS(),
                     query: {
-                        relationship_type: N.RelationshipTypes.PENDING_INCOMING
+                        relationship_type: I.RelationshipTypes.PENDING_INCOMING
                     }
                 }).then(() => {
-                    r.default.dispatch({
+                    s.default.dispatch({
                         type: "RELATIONSHIP_PENDING_INCOMING_REMOVED"
                     })
                 }).catch(() => {
-                    a.AccessibilityAnnouncer.announce(R.default.Messages.A11Y_ANNOUNCEMENT_GENERIC_FAIL)
+                    o.AccessibilityAnnouncer.announce(f.default.Messages.A11Y_ANNOUNCEMENT_GENERIC_FAIL)
                 })
             };
-            var p = C
+            var D = h
         },
         774146: function(e, t, n) {
             "use strict";
             n.r(t), n.d(t, {
                 openNewUserAgeGateModal: function() {
-                    return o
+                    return s
                 },
                 openClaimAccountModal: function() {
                     return i
@@ -492,9 +497,9 @@
             n("884691");
             var a = n("551042"),
                 r = n("586391"),
-                s = n("843455");
+                o = n("843455");
 
-            function o(e) {
+            function s(e) {
                 (0, a.openModalLazy)(async () => {
                     let {
                         default: e
@@ -504,7 +509,7 @@
                     })
                 }, {
                     modalKey: r.NEW_USER_AGE_GATE_MODAL_KEY,
-                    onCloseRequest: s.NOOP,
+                    onCloseRequest: o.NOOP,
                     onCloseCallback: e
                 })
             }
@@ -521,7 +526,7 @@
                         ...n
                     })
                 }, {
-                    onCloseRequest: e ? s.NOOP : null,
+                    onCloseRequest: e ? o.NOOP : null,
                     onCloseCallback: t
                 })
             }
@@ -590,8 +595,8 @@
             var l = n("599110"),
                 a = n("340454"),
                 r = n("49111"),
-                s = n("782340");
-            let o = /^\d+$/,
+                o = n("782340");
+            let s = /^\d+$/,
                 i = /^(.+?@.+?\..+?|.+?#\d{4})$/,
                 d = /^[a-zA-Z0-9_\\.]+$/;
 
@@ -605,35 +610,35 @@
                         username_len: t.length,
                         is_email_like: a.default.isEmail(e),
                         is_invite_like: a.default.isInvite(e),
-                        is_num_only: o.test(e)
+                        is_num_only: s.test(e)
                     })
-                }(e), s.default.Messages.POMELO_ADD_FRIEND_ERROR)
+                }(e), o.default.Messages.POMELO_ADD_FRIEND_ERROR)
             }
 
             function E(e, t) {
                 switch (e) {
                     case r.AbortCodes.RELATIONSHIP_INCOMING_DISABLED:
-                        return s.default.Messages.ADD_FRIEND_ERROR_INVALID_DISCORD_TAG.format({
+                        return o.default.Messages.ADD_FRIEND_ERROR_INVALID_DISCORD_TAG.format({
                             discordTag: t
                         });
                     case r.AbortCodes.TOO_MANY_FRIENDS:
-                        return s.default.Messages.ADD_FRIEND_ERROR_TOO_MANY_FRIENDS;
+                        return o.default.Messages.ADD_FRIEND_ERROR_TOO_MANY_FRIENDS;
                     case r.AbortCodes.RELATIONSHIP_ALREADY_FRIENDS:
-                        return s.default.Messages.ADD_FRIEND_ERROR_ALREADY_FRIENDS;
+                        return o.default.Messages.ADD_FRIEND_ERROR_ALREADY_FRIENDS;
                     case r.AbortCodes.USER_QUARANTINED:
                     case r.AbortCodes.USER_FRIEND_REQUEST_LIMITED_ACCESS:
-                        return s.default.Messages.LIMITED_ACCESS_INFO_MODAL_HEADING;
+                        return o.default.Messages.LIMITED_ACCESS_INFO_MODAL_HEADING;
                     case r.AbortCodes.TOO_MANY_BLOCKED_USERS:
-                        return s.default.Messages.BLOCK_USER_ERROR_TOO_MANY_BLOCKED_USERS;
+                        return o.default.Messages.BLOCK_USER_ERROR_TOO_MANY_BLOCKED_USERS;
                     case r.AbortCodes.RELATIONSHIP_INCOMING_BLOCKED:
                     case r.AbortCodes.RELATIONSHIP_INVALID_SELF:
                     case r.AbortCodes.RELATIONSHIP_INVALUD_USER_BOT:
                     case r.AbortCodes.RELATIONSHIP_INVALID_DISCORD_TAG:
                     default:
-                        return s.default.Messages.POMELO_ADD_FRIEND_ERROR
+                        return o.default.Messages.POMELO_ADD_FRIEND_ERROR
                 }
             }
         }
     }
 ]);
-//# sourceMappingURL=cf2ea86700794bad4557.js.map
+//# sourceMappingURL=ab5ae66f83934ac09063.js.map
