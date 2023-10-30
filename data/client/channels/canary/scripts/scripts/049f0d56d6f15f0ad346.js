@@ -21085,13 +21085,30 @@
             "use strict";
             e.exports = {
                 animation: "animation_d821c9",
+                emoji: "emoji_e926fa",
                 giftBoxHeaderContainer: "giftBoxHeaderContainer_f12d34",
                 giftBoxHeaderText: "giftBoxHeaderText__98c54",
                 giftBoxOptionContainer: "giftBoxOptionContainer_a91855",
                 giftMainAnimation: "giftMainAnimation_a99ef9",
                 infoIcon: "infoIcon__25ffe",
                 infoIconContainer: "infoIconContainer__59e19",
+                sound: "sound__4e0b6",
+                soundEmojiContainer: "soundEmojiContainer__70464",
                 spinner: "spinner_e5df5b"
+            }
+        },
+        347609: function(e, t, o) {
+            "use strict";
+            e.exports = {
+                container: "container__591e0",
+                customGiftContent: "customGiftContent__85873",
+                customGiftHeader: "customGiftHeader__1dea3",
+                emoji: "emoji__1fd29",
+                emojiHeader: "emojiHeader__27706",
+                emojiIcon: "emojiIcon__2ac82",
+                emojiList: "emojiList__5e37b",
+                text: "text__708a4",
+                textSelected: "textSelected__32734"
             }
         },
         107342: function(e, t, o) {
@@ -22704,10 +22721,26 @@
                 waveformContainer: "waveformContainer__39f7b"
             }
         },
+        895576: function(e, t, o) {
+            "use strict";
+            e.exports = {
+                addButton: "addButton__9d2f2",
+                container: "container__19fad",
+                customGiftHeader: "customGiftHeader__13695",
+                plusSign: "plusSign__2d1b4",
+                searchAndSound: "searchAndSound__1b526",
+                sound: "sound_a5d0fd",
+                soundIcon: "soundIcon__1f181",
+                text: "text__0df17",
+                textSelected: "textSelected__44937"
+            }
+        },
         955761: function(e, t, o) {
             "use strict";
             e.exports = {
                 absoluteFill: "absoluteFill_bda114",
+                addButton: "addButton__32787",
+                addButtonOverlay: "addButtonOverlay_e41dfa",
                 buttonDisabled: "buttonDisabled__11145",
                 buttonDisabledSecondaryActionsEnabled: "buttonDisabledSecondaryActionsEnabled__6b1d3",
                 buttonOverlay: "buttonOverlay__76d7d",
@@ -22720,6 +22753,7 @@
                 hoverActiveBackground: "hoverActiveBackground__32054",
                 playIcon: "playIcon__68d2d",
                 playing: "playing_ca65b9",
+                plusSign: "plusSign__48c5e",
                 premiumDisabled: "premiumDisabled__07ada",
                 secondaryButton: "secondaryButton__41267",
                 secondaryIcon: "secondaryIcon__8154f",
