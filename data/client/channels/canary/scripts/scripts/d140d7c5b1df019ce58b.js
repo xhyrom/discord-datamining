@@ -39,20 +39,24 @@
                     colorClass: o = "",
                     ...s
                 } = e;
-                return (0, n.jsx)("svg", {
+                return (0, n.jsxs)("svg", {
                     ...(0, l.default)(s),
                     xmlns: "http://www.w3.org/2000/svg",
                     width: t,
                     height: r,
                     fill: "none",
                     viewBox: "0 0 24 24",
-                    children: (0, n.jsx)("path", {
+                    children: [(0, n.jsx)("path", {
                         fill: "string" == typeof a ? a : a.css,
                         fillRule: "evenodd",
-                        d: "M2 6a3 3 0 0 1 3-3h14a3 3 0 0 1 3 3v8a3 3 0 0 1-3 3H5a3 3 0 0 1-3-3V6Zm11 14.5a.5.5 0 0 0 .5.5H15a1 1 0 1 1 0 2H9a1 1 0 1 1 0-2h1.5a.5.5 0 0 0 .5-.5v-2a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v2ZM7 8a2 2 0 0 1 2-2h3a2 2 0 0 1 2 2v.36a.5.5 0 0 1 .342-.474l2-.667a.5.5 0 0 1 .658.475v4.612a.5.5 0 0 1-.658.475l-2-.667A.5.5 0 0 1 14 11.64V12a2 2 0 0 1-2 2H9a2 2 0 0 1-2-2V8Z",
+                        d: "M2 5a3 3 0 0 1 3-3h14a3 3 0 0 1 3 3v8a3 3 0 0 1-3 3H5a3 3 0 0 1-3-3V5Zm5 2a2 2 0 0 1 2-2h3a2 2 0 0 1 2 2v.36a.5.5 0 0 1 .342-.474l2-.667a.5.5 0 0 1 .658.475v4.612a.5.5 0 0 1-.658.475l-2-.667A.5.5 0 0 1 14 10.64V11a2 2 0 0 1-2 2H9a2 2 0 0 1-2-2V7Z",
                         clipRule: "evenodd",
                         className: o
-                    })
+                    }), (0, n.jsx)("path", {
+                        fill: "string" == typeof a ? a : a.css,
+                        d: "M13 19.5a.5.5 0 0 0 .5.5H15a1 1 0 1 1 0 2H9a1 1 0 1 1 0-2h1.5a.5.5 0 0 0 .5-.5v-2a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v2Z",
+                        className: o
+                    })]
                 })
             }
         },
@@ -88,8 +92,10 @@
                         className: o,
                         children: [(0, n.jsx)("path", {
                             fillRule: "evenodd",
-                            d: "M15.396 1.534A10.992 10.992 0 0 0 12 1C5.925 1 1 5.925 1 12c0 1.292.223 2.532.632 3.683 1.395-1.207 3.803-.815 4.54 1.178l.262.705.705.261c1.993.737 2.385 3.146 1.178 4.541A10.98 10.98 0 0 0 12 23c6.075 0 11-4.925 11-11a10.99 10.99 0 0 0-.534-3.396c-1.226 1.966-4.34 1.779-5.206-.561l-.344-.93a.05.05 0 0 0-.03-.03l-.928-.343c-2.34-.866-2.528-3.98-.562-5.206Zm4.028 2.349c.241.22.473.452.693.693a3.99 3.99 0 0 0-.117.146A3.951 3.951 0 0 0 19.278 4c.05-.038.098-.077.146-.117ZM6.5 11a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3Zm9 3a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3Zm-2.79.54c.27-.433.018-.952-.43-1.089L8.222 12.22c-.448-.136-.947.156-.964.665-.046 1.395.758 2.669 2.048 3.06 1.291.393 2.667-.219 3.405-1.404Z",
+                            d: "M15.396 1.534A10.992 10.992 0 0 0 12 1C5.925 1 1 5.925 1 12c0 1.292.223 2.532.632 3.683 1.395-1.207 3.803-.815 4.54 1.178l.262.705.705.261c1.993.737 2.385 3.146 1.178 4.541A10.98 10.98 0 0 0 12 23c6.075 0 11-4.925 11-11a10.99 10.99 0 0 0-.534-3.396c-1.226 1.966-4.34 1.779-5.206-.561l-.344-.93a.05.05 0 0 0-.03-.03l-.928-.343c-2.34-.866-2.528-3.98-.562-5.206ZM6.5 11a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3Zm9 3a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3Zm-2.79.54c.27-.433.018-.952-.43-1.089L8.222 12.22c-.448-.136-.947.156-.964.665-.046 1.395.758 2.669 2.048 3.06 1.291.393 2.667-.219 3.405-1.404Z",
                             clipRule: "evenodd"
+                        }), (0, n.jsx)("path", {
+                            d: "M19.424 3.883c.241.22.473.452.693.693a3.99 3.99 0 0 0-.117.146A3.951 3.951 0 0 0 19.278 4c.05-.038.098-.077.146-.117Z"
                         }), (0, n.jsx)("path", {
                             d: "M19.09.634c.312-.845 1.508-.845 1.82 0l.345.93a2 2 0 0 0 1.181 1.181l.93.344c.845.313.845 1.509 0 1.822l-.93.344a2 2 0 0 0-1.181 1.181l-.344.93c-.313.845-1.509.845-1.822 0l-.344-.93a2 2 0 0 0-1.181-1.181l-.93-.344c-.845-.313-.845-1.509 0-1.822l.93-.344a2 2 0 0 0 1.181-1.181l.344-.93ZM2.703 17.555c.274-.74 1.32-.74 1.594 0l.261.705a2 2 0 0 0 1.182 1.182l.705.261c.74.274.74 1.32 0 1.594l-.705.261a2 2 0 0 0-1.182 1.182l-.261.705c-.274.74-1.32.74-1.594 0l-.261-.705a2 2 0 0 0-1.182-1.182l-.705-.261c-.74-.274-.74-1.32 0-1.594l.705-.261a2 2 0 0 0 1.182-1.182l.261-.705Z"
                         })]
@@ -1249,10 +1255,10 @@
             "use strict";
             r.r(t), r.d(t, {
                 isUserIneligibleBasedOnCurrentOrPreviousSubs: function() {
-                    return U
+                    return h
                 },
                 useIsEligibleForBogoPromotion: function() {
-                    return h
+                    return U
                 },
                 maybeFetchActiveBogoPromotion: function() {
                     return N
@@ -1289,7 +1295,7 @@
                 L = r("49111"),
                 g = r("782340");
 
-            function U(e) {
+            function h(e) {
                 var t, r, n;
                 let {
                     experimentEnabled: l,
@@ -1312,7 +1318,7 @@
                 return !l || s || u
             }
 
-            function h() {
+            function U() {
                 var e;
                 let {
                     paymentsBlocked: t
@@ -1332,7 +1338,7 @@
                     premiumSubscription: E.default.getPremiumTypeSubscription()
                 })), o = (0, P.usePremiumTrialOffer)(), d = new Date(null !== (e = null == r ? void 0 : r.endDate) && void 0 !== e ? e : 0).valueOf();
                 (0, s.default)(d, 1e3, void 0, d + 2e3 < Date.now());
-                let c = !U({
+                let c = !h({
                         experimentEnabled: n,
                         premiumSubscription: a,
                         mostRecentSubscription: i
@@ -1382,7 +1388,7 @@
                 !E.default.hasFetchedMostRecentPremiumTypeSubscription() && (null === (e = _.default.getCurrentUser()) || void 0 === e ? void 0 : e.hasHadSKU(M.PremiumSubscriptionSKUs.TIER_2)) && await (0, o.fetchMostRecentSubscription)(), !E.default.hasFetchedSubscriptions() && await (0, o.fetchSubscriptions)();
                 let s = E.default.getMostRecentPremiumTypeSubscription(),
                     d = E.default.getPremiumTypeSubscription();
-                return !U({
+                return !h({
                     experimentEnabled: i,
                     premiumSubscription: d,
                     mostRecentSubscription: s
@@ -1486,8 +1492,8 @@
                 M = r("286235"),
                 L = r("626301"),
                 g = r("917247"),
-                U = r("635956"),
-                h = r("400307"),
+                h = r("635956"),
+                U = r("400307"),
                 A = r("646718"),
                 N = r("49111"),
                 x = r("782340"),
@@ -1542,11 +1548,11 @@
                         className: v.copy,
                         color: "none",
                         children: o
-                    }), (0, n.jsx)(h.PremiumPillWithSparkles, {
+                    }), (0, n.jsx)(U.PremiumPillWithSparkles, {
                         text: null != u ? x.default.Messages.PREMIUM_DISCOUNT_AMOUNT_OFF_BADGE.format({
                             percent: u.discount.amount
                         }) : x.default.Messages.BILLING_TRIAL_FREE_TRIAL_TEXT,
-                        colorOptions: E === A.PremiumSubscriptionSKUs.TIER_0 ? h.PremiumPillAndSparklesColorOptions.PREMIUM_TIER_0_WHITE_FILL : h.PremiumPillAndSparklesColorOptions.PREMIUM_TIER_2_WHITE_FILL
+                        colorOptions: E === A.PremiumSubscriptionSKUs.TIER_0 ? U.PremiumPillAndSparklesColorOptions.PREMIUM_TIER_0_WHITE_FILL : U.PremiumPillAndSparklesColorOptions.PREMIUM_TIER_2_WHITE_FILL
                     }), (0, n.jsx)(f.Text, {
                         variant: "eyebrow",
                         className: v.countdownText,
@@ -1570,7 +1576,7 @@
                     intervalType: null == u ? void 0 : null === (t = u.subscription_trial) || void 0 === t ? void 0 : t.interval,
                     intervalCount: null == u ? void 0 : null === (r = u.subscription_trial) || void 0 === r ? void 0 : r.interval_count
                 });
-                return (0, n.jsx)(U.default, {
+                return (0, n.jsx)(h.default, {
                     className: l,
                     subscriptionTier: o,
                     trialId: null == u ? void 0 : u.trial_id,
@@ -1640,10 +1646,10 @@
                 } = e, i = (0, g.usePremiumTrialOffer)();
                 return (0, n.jsxs)("div", {
                     className: v.tryOutUpsellContainer,
-                    children: [(0, n.jsx)(h.PremiumPillWithSparkles, {
+                    children: [(0, n.jsx)(U.PremiumPillWithSparkles, {
                         className: v.topRimPill,
                         text: x.default.Messages.PREMIUM_FREE_NITRO_TRIAL_TEXT,
-                        colorOptions: h.PremiumPillAndSparklesColorOptions.PREMIUM_TIER_2_NEW_GRADIENT_FILL
+                        colorOptions: U.PremiumPillAndSparklesColorOptions.PREMIUM_TIER_2_NEW_GRADIENT_FILL
                     }), (0, n.jsx)(f.Heading, {
                         variant: "heading-md/semibold",
                         color: "text-normal",
@@ -1769,14 +1775,14 @@
                         });
                     case A.PremiumUpsellTypes.AGGREGATE_PREMIUM_UPSELL_MODAL_FEATURE_EMOJI:
                         s(null != l, "You must specify children for this upsell type");
-                        let U = (0, E.isThemeLight)(g) ? r("602291") : r("609708");
+                        let h = (0, E.isThemeLight)(g) ? r("602291") : r("609708");
                         return (0, n.jsxs)(n.Fragment, {
                             children: [(0, n.jsxs)("div", {
                                 className: v.contentContainer,
                                 children: [(0, n.jsx)("img", {
                                     alt: "",
                                     className: v.upsellImage,
-                                    src: U
+                                    src: h
                                 }), (0, n.jsx)(f.Heading, {
                                     variant: "heading-xl/bold",
                                     color: "header-primary",
@@ -1804,10 +1810,10 @@
                     case A.PremiumUpsellTypes.BURST_REACTION_UPSELL:
                     case A.PremiumUpsellTypes.STREAM_QUALITY_UPSELL:
                     case A.PremiumUpsellTypes.MESSAGE_LENGTH_UPSELL:
-                        let h;
+                        let U;
                         switch (u) {
                             case A.PremiumUpsellTypes.UPLOAD_ERROR_UPSELL:
-                                h = x.default.Messages.UPLOAD_AREA_PREMIUM_UPSELL_WITH_SIZE_AND_ACTION_V2.format({
+                                U = x.default.Messages.UPLOAD_AREA_PREMIUM_UPSELL_WITH_SIZE_AND_ACTION_V2.format({
                                     planName: (0, C.getDisplayNameFromSku)(d),
                                     premiumMaxSize: d === A.PremiumSubscriptionSKUs.TIER_0 ? x.default.Messages.FILE_UPLOAD_LIMIT_PREMIUM_TIER_0_CORRECTED : x.default.Messages.FILE_UPLOAD_LIMIT_PREMIUM_TIER_2_INCREASE,
                                     onClick: () => {
@@ -1816,7 +1822,7 @@
                                 });
                                 break;
                             case A.PremiumUpsellTypes.BURST_REACTION_UPSELL:
-                                h = x.default.Messages.SUPER_REACTIONS_LAUNCH_COACHMARK_DESCRIPTION_CLICK_V2.format({
+                                U = x.default.Messages.SUPER_REACTIONS_LAUNCH_COACHMARK_DESCRIPTION_CLICK_V2.format({
                                     planName: (0, C.getDisplayNameFromSku)(d),
                                     onClick: () => {
                                         (0, R.transitionTo)(N.Routes.APPLICATION_STORE), null == o || o()
@@ -1824,21 +1830,21 @@
                                 });
                                 break;
                             case A.PremiumUpsellTypes.STREAM_QUALITY_UPSELL:
-                                h = x.default.Messages.STREAM_PREMIUM_UPSELL_WITH_ACTION.format({
+                                U = x.default.Messages.STREAM_PREMIUM_UPSELL_WITH_ACTION.format({
                                     onClick: () => {
                                         (0, R.transitionTo)(N.Routes.APPLICATION_STORE), null == o || o(), (0, _.closeAllModals)()
                                     }
                                 });
                                 break;
                             case A.PremiumUpsellTypes.MESSAGE_LENGTH_UPSELL:
-                                h = x.default.Messages.PREMIUM_CHAT_PERKS_MAX_MESSAGE_LENGTH_UPSELL.format({
+                                U = x.default.Messages.PREMIUM_CHAT_PERKS_MAX_MESSAGE_LENGTH_UPSELL.format({
                                     premiumMaxMessageLength: N.MAX_MESSAGE_LENGTH_PREMIUM,
                                     onClick: () => {
                                         (0, R.transitionTo)(N.Routes.APPLICATION_STORE), null == o || o()
                                     }
                                 })
                         }
-                        return s(null != h, "There must be some upsell context"), (0, n.jsx)(n.Fragment, {
+                        return s(null != U, "There must be some upsell context"), (0, n.jsx)(n.Fragment, {
                             children: (0, n.jsxs)("div", {
                                 className: v.contentContainer,
                                 children: [(0, n.jsx)(f.Heading, {
@@ -1851,7 +1857,7 @@
                                 }), (0, n.jsx)(D, {
                                     trialOffer: O,
                                     discountOffer: S,
-                                    children: h
+                                    children: U
                                 })]
                             })
                         });
@@ -1998,8 +2004,8 @@
                 M = r("915639"),
                 L = r("697218"),
                 g = r("521012"),
-                U = r("594098"),
-                h = r("491614"),
+                h = r("594098"),
+                U = r("491614"),
                 A = r("716589"),
                 N = r("46829"),
                 x = r("118503"),
@@ -2322,7 +2328,7 @@
                         Icon: N.default,
                         text: Y.default.Messages.PREMIUM_TIER_CUSTOM_EMOJI_ITEM
                     }), e ? (0, u.jsx)(ei, {
-                        Icon: h.default,
+                        Icon: U.default,
                         text: t ? Y.default.Messages.PREMIUM_MARKETING_SUPER_REACTIONS_PERK_TITLE_UNLIMITED : Y.default.Messages.PREMIUM_TIER_SUPER_REACTIONS_ITEM.format({
                             weeklyReactionsNumber: C.BurstRefillTierAmounts.TIER_0
                         })
@@ -2360,7 +2366,7 @@
                         className: z.newCircleIcon
                     }), r ? (0, u.jsx)("div", {
                         className: z.wumpusImageContainer,
-                        children: (0, u.jsx)(U.default, {
+                        children: (0, u.jsx)(h.default, {
                             src: X,
                             mediaLayoutType: Z.MediaLayoutType.RESPONSIVE,
                             width: 270,
@@ -2449,7 +2455,7 @@
                         Icon: N.default,
                         text: Y.default.Messages.PREMIUM_TIER_CUSTOM_EMOJI_ITEM
                     }), r ? (0, u.jsx)(ei, {
-                        Icon: h.default,
+                        Icon: U.default,
                         text: n ? Y.default.Messages.PREMIUM_MARKETING_SUPER_REACTIONS_PERK_TITLE_UNLIMITED : Y.default.Messages.PREMIUM_TIER_SUPER_REACTIONS_ITEM.format({
                             weeklyReactionsNumber: C.BurstRefillTierAmounts.TIER_2
                         })
@@ -2475,7 +2481,7 @@
                     featureSet: _ = s.DEFAULT,
                     className: E,
                     isGift: I = !1
-                } = e, m = (0, f.useStateFromStores)([g.default], () => g.default.getPremiumTypeSubscription()), R = (0, f.useStateFromStores)([L.default], () => L.default.getCurrentUser()), p = (0, k.usePremiumTrialOffer)(), P = null == p ? void 0 : null === (t = p.subscription_trial) || void 0 === t ? void 0 : t.sku_id, O = (null == m ? void 0 : m.trialId) != null ? null == R ? void 0 : R.premiumType : null, S = (0, B.useIsInPremiumOfferExperience)(), C = (0, H.usePremiumDiscountOffer)(), M = (0, B.useHasDiscountApplied)(), h = null != P || null != O ? o.PREMIUM_TRIAL : null != C || M ? o.PREMIUM_DISCOUNT : null, A = (0, V.useIsEligibleForBogoPromotion)(), N = (0, V.getBOGOPillCopy)();
+                } = e, m = (0, f.useStateFromStores)([g.default], () => g.default.getPremiumTypeSubscription()), R = (0, f.useStateFromStores)([L.default], () => L.default.getCurrentUser()), p = (0, k.usePremiumTrialOffer)(), P = null == p ? void 0 : null === (t = p.subscription_trial) || void 0 === t ? void 0 : t.sku_id, O = (null == m ? void 0 : m.trialId) != null ? null == R ? void 0 : R.premiumType : null, S = (0, B.useIsInPremiumOfferExperience)(), C = (0, H.usePremiumDiscountOffer)(), M = (0, B.useHasDiscountApplied)(), U = null != P || null != O ? o.PREMIUM_TRIAL : null != C || M ? o.PREMIUM_DISCOUNT : null, A = (0, V.useIsEligibleForBogoPromotion)(), N = (0, V.getBOGOPillCopy)();
                 return (0, u.jsxs)("div", {
                     className: c(z.tier2, z.card, E, {
                         [z.withTier2Rim]: !I && S,
@@ -2517,7 +2523,7 @@
                         })]
                     }), i ? (0, u.jsx)("div", {
                         className: z.wumpusImageContainer,
-                        children: (0, u.jsx)(U.default, {
+                        children: (0, u.jsx)(h.default, {
                             src: J,
                             mediaLayoutType: Z.MediaLayoutType.RESPONSIVE,
                             width: 270,
@@ -2534,7 +2540,7 @@
                         }), (0, u.jsx)(el, {
                             isGift: I,
                             premiumTier: W.PremiumTypes.TIER_2,
-                            offerType: h,
+                            offerType: U,
                             offerTierMatchesCard: P === W.PremiumSubscriptionSKUs.TIER_2 || (0, H.discountOfferHasTier)(C, W.PremiumSubscriptionSKUs.TIER_2),
                             showYearlyPrice: d
                         }), (0, u.jsx)(es, {
@@ -2766,4 +2772,4 @@
         }
     }
 ]);
-//# sourceMappingURL=8cbd08241c1237f0d0c9.js.map
+//# sourceMappingURL=d140d7c5b1df019ce58b.js.map

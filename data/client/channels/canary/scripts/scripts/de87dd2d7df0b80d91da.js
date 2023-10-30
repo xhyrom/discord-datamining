@@ -125,8 +125,8 @@
                 M = l("476765"),
                 O = l("945330"),
                 y = l("907566"),
-                R = l("151185"),
-                x = l("483093"),
+                x = l("151185"),
+                R = l("483093"),
                 L = l("991170"),
                 P = l("487311"),
                 b = l("49111"),
@@ -185,7 +185,7 @@
                 } = e, {
                     tabIndex: M,
                     ...y
-                } = (0, d.useListItem)(g.id), R = (0, S.useRoleIcon)({
+                } = (0, d.useListItem)(g.id), x = (0, S.useRoleIcon)({
                     roleId: g.id,
                     size: 16,
                     guildId: v
@@ -247,9 +247,9 @@
                                 className: j.roleRemoveIcon,
                                 "aria-hidden": !0
                             }) : null]
-                        }), null != R ? (0, n.jsx)(x.default, {
+                        }), null != x ? (0, n.jsx)(R.default, {
                             className: j.roleIcon,
-                            ...R,
+                            ...x,
                             enableTooltip: !1
                         }) : null, (0, n.jsx)("div", {
                             "aria-hidden": !0,
@@ -322,7 +322,7 @@
                             "aria-label": D.default.Messages.GUILD_SETTINGS_MEMBERS_ADD_ROLE,
                             type: "button",
                             ...r,
-                            children: (0, n.jsx)(R.default, {
+                            children: (0, n.jsx)(x.default, {
                                 className: j.addButtonIcon,
                                 "aria-hidden": !0
                             })
@@ -376,8 +376,8 @@
                 }, [c, f, M]);
                 let y = C.default.getCurrentUser();
                 u(null != y, "MemberRolesList: currentUser cannot be undefined");
-                let R = !E && v.default.can(b.Permissions.MANAGE_ROLES, s),
-                    x = L.default.getHighestRole(s, y.id),
+                let x = !E && v.default.can(b.Permissions.MANAGE_ROLES, s),
+                    R = L.default.getHighestRole(s, y.id),
                     P = a.useMemo(() => "roles-".concat((0, o.v4)()), []),
                     w = (0, d.default)({
                         id: P,
@@ -391,7 +391,7 @@
                         return (0, n.jsx)(F, {
                             className: p,
                             role: e,
-                            canRemove: R && L.default.isRoleHigher(s, y.id, x, e) || (null === (t = e.tags) || void 0 === t ? void 0 : t.guild_connections) === null && l.id === y.id,
+                            canRemove: x && L.default.isRoleHigher(s, y.id, R, e) || (null === (t = e.tags) || void 0 === t ? void 0 : t.guild_connections) === null && l.id === y.id,
                             onRemove: () => I(e),
                             ref: t => {
                                 var l, n;
@@ -404,7 +404,7 @@
                 return null != A && 0 !== O ? t = (0, n.jsx)(G, {
                     ...e,
                     numRolesHidden: O
-                }) : R && (t = (0, n.jsx)(Y, {
+                }) : x && (t = (0, n.jsx)(Y, {
                     ...e,
                     handleAddRole: S
                 })), (0, n.jsx)(d.ListNavigatorProvider, {
@@ -1172,7 +1172,7 @@
                     viewBox: "0 0 24 24",
                     children: (0, n.jsx)("path", {
                         fill: "string" == typeof i ? i : i.css,
-                        d: "M19.636 4.424A17.94 17.94 0 0 0 15.097 3a13.28 13.28 0 0 0-.581 1.205 16.694 16.694 0 0 0-5.03 0A12.867 12.867 0 0 0 8.897 3a17.88 17.88 0 0 0-4.542 1.427C1.483 8.76.705 12.986 1.093 17.151a18.157 18.157 0 0 0 5.567 2.847c.448-.616.848-1.27 1.192-1.96a11.735 11.735 0 0 1-1.877-.912c.157-.116.311-.238.46-.363 3.62 1.69 7.553 1.69 11.13 0 .15.125.304.247.46.363-.595.358-1.225.665-1.88.914.343.688.742 1.344 1.191 1.96a18.124 18.124 0 0 0 5.57-2.85c.457-4.828-.78-9.014-3.27-12.726ZM8.346 14.589c-1.087 0-1.978-1.013-1.978-2.246s.872-2.247 1.977-2.247c1.106 0 1.997 1.012 1.978 2.247.002 1.233-.872 2.246-1.978 2.246Zm7.309 0c-1.087 0-1.978-1.013-1.978-2.246s.872-2.247 1.978-2.247c1.105 0 1.996 1.012 1.977 2.247 0 1.233-.872 2.246-1.978 2.246Z",
+                        d: "M19.733 4.866a18.196 18.196 0 0 0-4.597-1.437c-.216.395-.415.8-.59 1.215a17.084 17.084 0 0 0-5.093 0c-.18-.414-.377-.82-.593-1.21-1.59.273-3.136.753-4.602 1.437C1.343 9.239.557 13.503.952 17.7a18.43 18.43 0 0 0 5.641 2.87c.456-.622.86-1.286 1.205-1.979a11.646 11.646 0 0 1-1.904-.923c.162-.118.318-.236.47-.368a13.056 13.056 0 0 0 11.273 0c.151.128.307.25.463.368-.606.363-1.245.674-1.903.923.35.693.75 1.353 1.205 1.975a18.427 18.427 0 0 0 5.64-2.87h.006c.463-4.863-.791-9.085-3.315-12.831ZM8.297 15.118c-1.1 0-2.005-1.022-2.005-2.266s.884-2.267 2.005-2.267c1.122 0 2.023 1.023 2.005 2.267 0 1.244-.888 2.266-2.005 2.266Zm7.402 0c-1.1 0-2.005-1.022-2.005-2.266s.888-2.267 2.005-2.267 2.022 1.023 2.005 2.267c0 1.244-.888 2.266-2.005 2.266Z",
                         className: r
                     })
                 })
@@ -1197,20 +1197,22 @@
                     colorClass: r = "",
                     ...u
                 } = e;
-                return (0, n.jsx)("svg", {
+                return (0, n.jsxs)("svg", {
                     ...(0, s.default)(u),
                     xmlns: "http://www.w3.org/2000/svg",
                     width: t,
                     height: l,
                     fill: "none",
                     viewBox: "0 0 24 24",
-                    children: (0, n.jsx)("path", {
+                    children: [(0, n.jsx)("path", {
                         fill: "string" == typeof i ? i : i.css,
-                        fillRule: "evenodd",
-                        d: "M20.78 11.84c.046.102.051.206.006.308a.472.472 0 0 0 .13.544c.168.14.32.297.454.469.282.362.956.423 1.149.007.167-.361.289-.657.368-.86a.833.833 0 0 0 0-.615C22.273 10.115 19.113 3 12 3S1.727 10.115 1.113 11.693a.833.833 0 0 0 0 .614C1.727 13.885 4.887 21 12 21c.305 0 .465-.367.326-.638a2.98 2.98 0 0 1-.285-.864c-.045-.273-.265-.496-.54-.513-2.557-.153-4.466-1.47-5.886-3.068-1.196-1.345-1.97-2.814-2.378-3.72a.48.48 0 0 1 0-.395c.408-.905 1.182-2.374 2.377-3.719C7.127 6.383 9.191 5 12 5c2.81 0 4.874 1.382 6.386 3.083 1.212 1.364 1.99 2.855 2.394 3.757Zm-5.22-.075c.194-.091.44.02.44.235a4 4 0 1 1-4-4c.215 0 .326.246.235.44a2.5 2.5 0 0 0 3.324 3.324ZM19 14a1 1 0 0 1 1 1v3h3a1 1 0 1 1 0 2h-3v3a1 1 0 1 1-2 0v-3h-3a1 1 0 1 1 0-2h3v-3a1 1 0 0 1 1-1Z",
-                        clipRule: "evenodd",
+                        d: "M22.519 13.168c-.193.416-.867.355-1.149-.007a3.017 3.017 0 0 0-.454-.469.472.472 0 0 1-.13-.544.363.363 0 0 0-.006-.308c-.404-.902-1.182-2.393-2.395-3.757C16.875 6.383 14.81 5 12 5 9.19 5 7.126 6.382 5.614 8.083c-1.195 1.345-1.969 2.814-2.377 3.72a.48.48 0 0 0 0 .395c.408.905 1.182 2.374 2.377 3.719 1.42 1.598 3.33 2.915 5.886 3.068.276.017.496.24.541.513.051.306.149.596.285.864.138.27-.021.638-.326.638-7.113 0-10.273-7.115-10.887-8.693a.833.833 0 0 1 0-.614C1.727 10.115 4.887 3 12 3s10.273 7.115 10.887 8.693a.833.833 0 0 1 0 .614c-.08.204-.201.5-.368.86Z",
                         className: r
-                    })
+                    }), (0, n.jsx)("path", {
+                        fill: "string" == typeof i ? i : i.css,
+                        d: "M15.56 11.765c.194-.091.44.02.44.235a4 4 0 1 1-4-4c.215 0 .326.246.235.44a2.5 2.5 0 0 0 3.324 3.324ZM19 14a1 1 0 0 1 1 1v3h3a1 1 0 1 1 0 2h-3v3a1 1 0 1 1-2 0v-3h-3a1 1 0 1 1 0-2h3v-3a1 1 0 0 1 1-1Z",
+                        className: r
+                    })]
                 })
             }
         },
@@ -1242,45 +1244,7 @@
                     viewBox: "0 0 24 24",
                     children: (0, n.jsx)("path", {
                         fill: "string" == typeof i ? i : i.css,
-                        fillRule: "evenodd",
-                        d: "M3 1a1 1 0 0 1 1 1v.82l8.671-1.446A2 2 0 0 1 15 3.347V4.82l5.671-.946A2 2 0 0 1 23 5.847V13.153a2 2 0 0 1-1.671 1.973l-9 1.5a1.994 1.994 0 0 1-1.777-.594c-.204-.213-.083-.54.176-.683a5.011 5.011 0 0 0 1.94-1.939c.183-.322-.095-.658-.46-.597L10 13.18l-6 1V21a1 1 0 1 1-2 0V2a1 1 0 0 1 1-1Z",
-                        clipRule: "evenodd",
-                        className: r
-                    })
-                })
-            }
-        },
-        889196: function(e, t, l) {
-            "use strict";
-            l.r(t), l.d(t, {
-                LaunchIcon: function() {
-                    return i
-                }
-            });
-            var n = l("37983");
-            l("884691");
-            var a = l("669491"),
-                s = l("75196");
-            let i = e => {
-                let {
-                    width: t = 24,
-                    height: l = 24,
-                    color: i = a.default.colors.INTERACTIVE_NORMAL,
-                    colorClass: r = "",
-                    ...u
-                } = e;
-                return (0, n.jsx)("svg", {
-                    ...(0, s.default)(u),
-                    xmlns: "http://www.w3.org/2000/svg",
-                    width: t,
-                    height: l,
-                    fill: "none",
-                    viewBox: "0 0 24 24",
-                    children: (0, n.jsx)("path", {
-                        fill: "string" == typeof i ? i : i.css,
-                        fillRule: "evenodd",
-                        d: "M15 2a1 1 0 0 1 1-1h6a1 1 0 0 1 1 1v6a1 1 0 1 1-2 0V4.414l-4.293 4.293a1 1 0 1 1-1.414-1.414L19.586 3H16a1 1 0 0 1-1-1ZM5 2a3 3 0 0 0-3 3v14c0 1.655 1.34 3 2.998 3H19A2.999 2.999 0 0 0 22 19v-6a1 1 0 1 0-2 0v6c0 .553-.447 1-.999 1H4.998A.998.998 0 0 1 4 19V5a1 1 0 0 1 1-1h6a1 1 0 1 0 0-2H5Z",
-                        clipRule: "evenodd",
+                        d: "M3 1a1 1 0 0 1 1 1v.82l8.671-1.446A2 2 0 0 1 15 3.347V4.82l5.671-.946A2 2 0 0 1 23 5.847v7.306a2 2 0 0 1-1.671 1.973l-9 1.5a1.994 1.994 0 0 1-1.777-.594c-.204-.213-.083-.54.176-.683a5.011 5.011 0 0 0 1.94-1.939c.183-.322-.095-.658-.46-.597L4 14.18V21a1 1 0 1 1-2 0V2a1 1 0 0 1 1-1Z",
                         className: r
                     })
                 })
@@ -1314,9 +1278,7 @@
                     viewBox: "0 0 24 24",
                     children: (0, n.jsx)("path", {
                         fill: "string" == typeof i ? i : i.css,
-                        fillRule: "evenodd",
                         d: "m5.1 10.019 7.409 1.389a.602.602 0 0 1 0 1.184L5.1 13.982l-2.938 5.873c-.635 1.27.713 2.618 1.983 1.983l17.038-8.517c1.09-.544 1.09-2.098 0-2.643L4.145 2.162c-1.27-.635-2.618.713-1.983 1.983L5.1 10.019Z",
-                        clipRule: "evenodd",
                         className: r
                     })
                 })
@@ -1377,20 +1339,62 @@
                     colorClass: r = "",
                     ...u
                 } = e;
-                return (0, n.jsx)("svg", {
+                return (0, n.jsxs)("svg", {
                     ...(0, s.default)(u),
                     xmlns: "http://www.w3.org/2000/svg",
                     width: t,
                     height: l,
                     fill: "none",
                     viewBox: "0 0 24 24",
-                    children: (0, n.jsx)("path", {
+                    children: [(0, n.jsx)("path", {
+                        fill: "string" == typeof i ? i : i.css,
+                        d: "M12 10a4 4 0 1 0 0-8 4 4 0 0 0 0 8ZM11.533 11A9.533 9.533 0 0 0 2 20.533C2 21.343 2.657 22 3.467 22h.22c.24 0 .445-.17.504-.403.285-1.113.84-2.17 1.32-2.91.134-.208.43-.094.405.154l-.261 2.61a.5.5 0 0 0 .497.549h5.73c.368 0 .612-.385.494-.732a7 7 0 0 1 3.657-8.61c.404-.19.461-.78.048-.949A9.506 9.506 0 0 0 12.467 11h-.934Z",
+                        className: r
+                    }), (0, n.jsx)("path", {
                         fill: "string" == typeof i ? i : i.css,
                         fillRule: "evenodd",
-                        d: "M12 10a4 4 0 1 0 0-8 4 4 0 0 0 0 8Zm-.467 1A9.533 9.533 0 0 0 2 20.533C2 21.343 2.657 22 3.467 22h.22c.24 0 .445-.17.504-.403.285-1.113.84-2.17 1.32-2.91.134-.208.43-.094.405.154l-.261 2.61a.5.5 0 0 0 .497.549h5.73c.368 0 .612-.385.494-.732a7 7 0 0 1 3.657-8.61c.404-.19.461-.78.048-.949A9.506 9.506 0 0 0 12.467 11h-.934ZM24 19a5 5 0 1 1-10 0 5 5 0 0 1 10 0Zm-2.767-.2L17.9 16.3a.25.25 0 0 0-.4.2v5a.25.25 0 0 0 .4.2l3.333-2.5a.25.25 0 0 0 0-.4Z",
+                        d: "M24 19a5 5 0 1 1-10 0 5 5 0 0 1 10 0Zm-2.767-.2L17.9 16.3a.25.25 0 0 0-.4.2v5a.25.25 0 0 0 .4.2l3.333-2.5a.25.25 0 0 0 0-.4Z",
                         clipRule: "evenodd",
                         className: r
-                    })
+                    })]
+                })
+            }
+        },
+        249978: function(e, t, l) {
+            "use strict";
+            l.r(t), l.d(t, {
+                WindowLaunchIcon: function() {
+                    return i
+                }
+            });
+            var n = l("37983");
+            l("884691");
+            var a = l("669491"),
+                s = l("75196");
+            let i = e => {
+                let {
+                    width: t = 24,
+                    height: l = 24,
+                    color: i = a.default.colors.INTERACTIVE_NORMAL,
+                    colorClass: r = "",
+                    ...u
+                } = e;
+                return (0, n.jsxs)("svg", {
+                    ...(0, s.default)(u),
+                    xmlns: "http://www.w3.org/2000/svg",
+                    width: t,
+                    height: l,
+                    fill: "none",
+                    viewBox: "0 0 24 24",
+                    children: [(0, n.jsx)("path", {
+                        fill: "string" == typeof i ? i : i.css,
+                        d: "M15 2a1 1 0 0 1 1-1h6a1 1 0 0 1 1 1v6a1 1 0 1 1-2 0V4.414l-4.293 4.293a1 1 0 1 1-1.414-1.414L19.586 3H16a1 1 0 0 1-1-1Z",
+                        className: r
+                    }), (0, n.jsx)("path", {
+                        fill: "string" == typeof i ? i : i.css,
+                        d: "M5 2a3 3 0 0 0-3 3v14c0 1.655 1.34 3 2.998 3H19A2.999 2.999 0 0 0 22 19v-6a1 1 0 1 0-2 0v6c0 .553-.447 1-.999 1H4.998A.998.998 0 0 1 4 19V5a1 1 0 0 1 1-1h6a1 1 0 1 0 0-2H5Z",
+                        className: r
+                    })]
                 })
             }
         },
@@ -1538,8 +1542,8 @@
                 M = l("762806"),
                 O = l("438278"),
                 y = l("898481"),
-                R = l("49111"),
-                x = l("278433"),
+                x = l("49111"),
+                R = l("278433"),
                 L = (0, c.default)(e => {
                     let t, {
                             activity: l,
@@ -1569,12 +1573,12 @@
                     if ((0, _.default)(l)) t = [(0, n.jsx)(S.default, {
                         look: j,
                         color: D,
-                        platform: f.default.get(R.PlatformTypes.XBOX)
+                        platform: f.default.get(x.PlatformTypes.XBOX)
                     }, "ConnectPlatformActivityButton")];
-                    else if ((null == l ? void 0 : l.platform) != null && [R.ActivityGamePlatforms.PS4, R.ActivityGamePlatforms.PS5].includes(l.platform)) t = [(0, n.jsx)(S.default, {
+                    else if ((null == l ? void 0 : l.platform) != null && [x.ActivityGamePlatforms.PS4, x.ActivityGamePlatforms.PS5].includes(l.platform)) t = [(0, n.jsx)(S.default, {
                         look: j,
                         color: D,
-                        platform: f.default.get(R.PlatformTypes.PLAYSTATION)
+                        platform: f.default.get(x.PlatformTypes.PLAYSTATION)
                     }, "ConnectPlatformActivityButton")];
                     else if (V) {
                         let e = (0, n.jsx)(M.default, {
@@ -1650,7 +1654,7 @@
                         align: W,
                         direction: K,
                         wrap: z ? p.default.Wrap.WRAP : p.default.Wrap.NO_WRAP,
-                        className: s(c, x.buttonsWrapper, z ? x.vertical : x.horizontal),
+                        className: s(c, R.buttonsWrapper, z ? R.vertical : R.horizontal),
                         onClick: function(e) {
                             if ((0, u.isElement)(e.target)) "BUTTON" === e.target.nodeName && (null == w || w())
                         },
@@ -1804,8 +1808,8 @@
                 M = l("773336"),
                 O = l("602043"),
                 y = l("191225"),
-                R = l("706508"),
-                x = l("612696"),
+                x = l("706508"),
+                R = l("612696"),
                 L = l("126808"),
                 P = l("871388"),
                 b = l("407908"),
@@ -1844,7 +1848,7 @@
                         channelId: n
                     } = e;
                     return l === (null == t ? void 0 : t.application_id) && n === X
-                })), $ = (0, s.useStateFromStores)([C.default], () => null != t && null != t.application_id && C.default.getState(t.application_id, w.ActivityActionTypes.JOIN) === w.ActivityActionStates.LOADING), [ee] = (0, f.default)((null == t ? void 0 : t.application_id) != null ? [null == t ? void 0 : t.application_id] : []), et = (0, s.useStateFromStores)([E.default, h.default, T.default, S.default, g.default, v.default, I.default], () => (0, x.default)({
+                })), $ = (0, s.useStateFromStores)([C.default], () => null != t && null != t.application_id && C.default.getState(t.application_id, w.ActivityActionTypes.JOIN) === w.ActivityActionStates.LOADING), [ee] = (0, f.default)((null == t ? void 0 : t.application_id) != null ? [null == t ? void 0 : t.application_id] : []), et = (0, s.useStateFromStores)([E.default, h.default, T.default, S.default, g.default, v.default, I.default], () => (0, R.default)({
                     user: V,
                     activity: t,
                     application: ee,
@@ -1887,7 +1891,7 @@
                     let e = !1;
                     if (W) {
                         if (!et || null == X) return;
-                        e = await (0, R.default)({
+                        e = await (0, x.default)({
                             activity: t,
                             currentEmbeddedApplication: l,
                             activityChannelId: X,
@@ -2163,14 +2167,14 @@
                         } = e;
                         return t !== g.ownerId
                     }).length > 0
-                })), C = (0, a.useStateFromStores)([f.default], () => f.default.getChannel(null == g ? void 0 : g.channelId)), [N, M] = (0, d.useCanWatchStream)(C), O = (0, o.useWindowDispatch)(), y = null != A && null != g && A.state !== h.ApplicationStreamStates.ENDED && A.ownerId === g.ownerId, R = e => {
+                })), C = (0, a.useStateFromStores)([f.default], () => f.default.getChannel(null == g ? void 0 : g.channelId)), [N, M] = (0, d.useCanWatchStream)(C), O = (0, o.useWindowDispatch)(), y = null != A && null != g && A.state !== h.ApplicationStreamStates.ENDED && A.ownerId === g.ownerId, x = e => {
                     null != g && (r.default.selectVoiceChannel(g.channelId), !y && (0, u.watchStreamAndTransitionToStream)(g, {
                         forceMultiple: e
                     }), O.dispatch(h.ComponentActions.POPOUT_CLOSE), p.ComponentDispatch.dispatch(h.ComponentActions.MODAL_CLOSE), i.default.popAll())
                 };
                 if (null == g) return null;
-                let x = (0, d.getStreamCTAString)(M);
-                t ? x = _.default.Messages.WATCH_STREAM_STREAMING : y && (x = _.default.Messages.WATCH_STREAM_WATCHING);
+                let R = (0, d.getStreamCTAString)(M);
+                t ? R = _.default.Messages.WATCH_STREAM_STREAMING : y && (R = _.default.Messages.WATCH_STREAM_WATCHING);
                 let L = {
                     color: l,
                     look: S
@@ -2178,19 +2182,19 @@
                 return (0, n.jsxs)(n.Fragment, {
                     children: [(0, n.jsxs)(T.default, {
                         disabled: t || y || !N,
-                        onClick: () => R(!1),
+                        onClick: () => x(!1),
                         ...L,
                         fullWidth: !0,
                         children: [(0, n.jsx)(E.default, {
                             className: I.streamIcon
-                        }), x]
+                        }), R]
                     }, "play"), v && !y ? (0, n.jsx)(s.Tooltip, {
                         text: _.default.Messages.STREAM_WATCH_MULTIPLE_TOOLTIP,
                         children: e => (0, n.jsx)(T.default, {
                             ...e,
                             onClick: () => {
                                 var t;
-                                null === (t = e.onClick) || void 0 === t || t.call(e), R(!0)
+                                null === (t = e.onClick) || void 0 === t || t.call(e), x(!0)
                             },
                             ...L,
                             className: I.iconButton,
@@ -4431,15 +4435,15 @@
                     locale: M,
                     userId: O,
                     className: y,
-                    showMetadata: R,
-                    showInvisibleIcon: x
+                    showMetadata: x,
+                    showInvisibleIcon: R
                 } = e;
-                null == R && (R = !0);
+                null == x && (x = !0);
                 let L = null !== (l = h.metadata) && void 0 !== l ? l : {},
-                    P = R ? (0, E.getCreatedAtDate)(L[A.MetadataFields.CREATED_AT], M) : null,
+                    P = x ? (0, E.getCreatedAtDate)(L[A.MetadataFields.CREATED_AT], M) : null,
                     b = (0, o.useToken)(r.default.unsafe_rawColors.TWITTER).hex(),
                     D = v.default.Messages.CONNECTION_VERIFIED;
-                if (R) switch (h.type) {
+                if (x) switch (h.type) {
                     case g.PlatformTypes.REDDIT:
                         a = (0, p.generateRedditMetadataItems)(L);
                         break;
@@ -4463,7 +4467,7 @@
                 }
                 let j = c.default.get((0, m.useLegacyPlatformType)(h.type)),
                     U = null == j ? void 0 : null === (t = j.getPlatformUserUrl) || void 0 === t ? void 0 : t.call(j, h);
-                null != x && x ? d = (0, n.jsx)(I.default, {
+                null != R && R ? d = (0, n.jsx)(I.default, {
                     className: i(C.connectedAccountOpenIconContainer, C.connectedAccountHideIcon),
                     foregroundColor: "currentColor"
                 }) : null != U && (d = (0, n.jsx)(o.Anchor, {
@@ -4662,8 +4666,8 @@
                 M = l("561845"),
                 O = l("217513"),
                 y = l("641055"),
-                R = l("430312"),
-                x = l("763866"),
+                x = l("430312"),
+                R = l("763866"),
                 L = l("789321"),
                 P = l("935409"),
                 b = l("849674"),
@@ -4789,7 +4793,7 @@
                             onClick: F,
                             onContextMenu: F,
                             style: eu,
-                            children: (0, n.jsxs)(R.default, {
+                            children: (0, n.jsxs)(x.default, {
                                 user: t,
                                 guildId: l,
                                 profileType: D.UserProfileTypes.POPOUT,
@@ -4808,10 +4812,10 @@
                                     isHovering: H,
                                     showCollectiblesSocialUpsell: es,
                                     dismissCollectiblesSocialUpsell: ei
-                                }), (0, n.jsxs)(R.default.Inner, {
+                                }), (0, n.jsxs)(x.default.Inner, {
                                     children: [(0, n.jsx)(y.default, {
                                         onTooltipClose: v
-                                    }), (0, n.jsx)(x.default, {
+                                    }), (0, n.jsx)(R.default, {
                                         activity: J,
                                         customStatusActivity: Q,
                                         displayProfile: V,
@@ -4874,8 +4878,8 @@
                 M = l("648149"),
                 O = l("915712"),
                 y = l("261523"),
-                R = l("369869"),
-                x = l("545590"),
+                x = l("369869"),
+                R = l("545590"),
                 L = l("972595"),
                 P = l("316095"),
                 b = l("802279"),
@@ -5006,10 +5010,10 @@
                             }),
                             onScroll: ep,
                             ref: ef,
-                            children: [(0, n.jsx)(x.default, {
+                            children: [(0, n.jsx)(R.default, {
                                 user: z,
                                 guildId: null == X ? void 0 : X.id
-                            }), (0, n.jsx)(R.default, {
+                            }), (0, n.jsx)(x.default, {
                                 isUsingGuildBio: null !== (l = null == Z ? void 0 : Z.isUsingGuildMemberBio()) && void 0 !== l && l,
                                 bio: null == Z ? void 0 : Z.bio,
                                 guild: X,
@@ -5279,9 +5283,9 @@
                         guild: M,
                         theme: O,
                         onClose: y,
-                        className: R
+                        className: x
                     } = e,
-                    x = (0, d.default)(M, C, N),
+                    R = (0, d.default)(M, C, N),
                     [L, P] = a.useState(new Set),
                     b = (0, r.useStateFromStores)([E.default], () => E.default.getUserProfile(C)),
                     D = null !== (t = null == b ? void 0 : b.connectedAccounts) && void 0 !== t ? t : [],
@@ -5289,7 +5293,7 @@
                     U = (0, r.useStateFromStores)([f.default], () => f.default.hidePersonalInformation),
                     w = (0, r.useStateFromStores)([c.default], () => c.default.locale);
                 if (a.useEffect(() => {
-                        (null == M ? void 0 : M.id) != null && (null == x ? void 0 : x.id) != null && o.default.fetchGuildRoleConnectionsEligibility(M.id, x.id).then(e => {
+                        (null == M ? void 0 : M.id) != null && (null == R ? void 0 : R.id) != null && o.default.fetchGuildRoleConnectionsEligibility(M.id, R.id).then(e => {
                             let t = new Set;
                             for (let l of e)
                                 for (let {
@@ -5298,7 +5302,7 @@
                                     of l) t.add(e);
                             P(t)
                         })
-                    }, [null == M ? void 0 : M.id, null == x ? void 0 : x.id]), U || null == x) return null;
+                    }, [null == M ? void 0 : M.id, null == R ? void 0 : R.id]), U || null == R) return null;
                 let F = Array.from(L).map(e => {
                     let t = D.find(t => t.type === e);
                     return null == t ? null : (0, n.jsx)(p.ConnectedUserAccount, {
@@ -5314,7 +5318,7 @@
                         className: A.title,
                         children: S.default.Messages.CONNECTIONS
                     }), (0, n.jsxs)("div", {
-                        className: i(g.connectionsContainer, R),
+                        className: i(g.connectionsContainer, x),
                         children: [F, (0, n.jsxs)(u.Clickable, {
                             onClick: function() {
                                 (0, T.openUserProfileModal)({
@@ -5345,7 +5349,7 @@
                         className: A.title,
                         children: S.default.Messages.APPS
                     }), (0, n.jsx)("div", {
-                        className: i(g.connectionsContainer, R),
+                        className: i(g.connectionsContainer, x),
                         children: j.map(e => (0, n.jsx)(p.ConnectedApplicationUserRoleAccount, {
                             applicationRoleConnection: e,
                             locale: w
@@ -5901,7 +5905,7 @@
                     this.rows = [], this.groups = [], this.members = {}, this.version = 0, this.guildId = e, this.listId = t, this.updateOwnerId()
                 }
             }
-            let R = new class e {
+            let x = new class e {
                 get(e, t) {
                     let l = this._guildLists[e];
                     null == l && (l = this._guildLists[e] = {});
@@ -5931,8 +5935,8 @@
                 }
             };
 
-            function x() {
-                R.reset()
+            function R() {
+                x.reset()
             }
             let L = [];
 
@@ -5940,20 +5944,20 @@
                 let e = m.default.getAllApplicationStreams(),
                     t = L.concat(e);
                 L = e, t.forEach(e => {
-                    R.forEach(null, t => t.rebuildMember(e.ownerId))
+                    x.forEach(null, t => t.rebuildMember(e.ownerId))
                 })
             }
 
             function b() {
                 let e = E.default.getId();
-                R.forEach(null, t => t.rebuildMember(e))
+                x.forEach(null, t => t.rebuildMember(e))
             }
             class D extends d.default.Store {
                 initialize() {
                     this.waitFor(g.default, _.default, p.default, h.default, I.default, S.default, E.default, T.default, m.default), this.syncWith([S.default], b), this.syncWith([m.default], P)
                 }
                 getProps(e, t) {
-                    let l = R.get(e, O(t));
+                    let l = x.get(e, O(t));
                     return {
                         listId: "".concat(l.guildId, ":").concat(l.listId),
                         groups: l.groups,
@@ -5962,16 +5966,16 @@
                     }
                 }
                 getRows(e, t) {
-                    let l = R.get(e, O(t));
+                    let l = x.get(e, O(t));
                     return l.rows
                 }
             }
             D.displayName = "ChannelMemberStore";
             var j = new D(c.default, {
-                CONNECTION_OPEN: x,
-                OVERLAY_INITIALIZE: x,
+                CONNECTION_OPEN: R,
+                OVERLAY_INITIALIZE: R,
                 GUILD_MEMBER_LIST_UPDATE: function(e) {
-                    let t = R.get(e.guildId, e.id);
+                    let t = x.get(e.guildId, e.id);
                     e.ops.forEach(e => {
                         switch (e.op) {
                             case "SYNC":
@@ -5995,7 +5999,7 @@
                     let {
                         guild: t
                     } = e;
-                    R.forEach(t.id, e => {
+                    x.forEach(t.id, e => {
                         e.updateOwnerId() && e.rebuildMembers()
                     })
                 },
@@ -6003,20 +6007,20 @@
                     let {
                         guild: t
                     } = e;
-                    R.delete(t.id)
+                    x.delete(t.id)
                 },
                 GUILD_ROLE_UPDATE: function(e) {
                     let {
                         guildId: t
                     } = e;
-                    R.forEach(t, e => e.rebuildMembers())
+                    x.forEach(t, e => e.rebuildMembers())
                 },
                 GUILD_MEMBER_UPDATE: function(e) {
                     let {
                         guildId: t,
                         user: l
                     } = e;
-                    R.forEach(t, e => e.rebuildMember(l.id))
+                    x.forEach(t, e => e.rebuildMember(l.id))
                 },
                 CHANNEL_UPDATES: function() {
                     return !0
@@ -6362,8 +6366,8 @@
                 M = l("474293"),
                 O = l("339521"),
                 y = l("145131"),
-                R = l("953109"),
-                x = l("98292"),
+                x = l("953109"),
+                R = l("98292"),
                 L = l("280174"),
                 P = l("963422"),
                 b = l("587974"),
@@ -6480,7 +6484,7 @@
                             className: (0, M.getClass)(w, "headerText", e ? "EmptyBody" : "Normal"),
                             variant: "heading-deprecated-12/semibold",
                             color: d === a.PROFILE_V2 ? "header-primary" : void 0,
-                            children: (0, s.jsx)(x.default, {
+                            children: (0, s.jsx)(R.default, {
                                 children: l
                             })
                         }), null == o ? void 0 : o()]
@@ -6596,7 +6600,7 @@
                     } = this.props;
                     return null != e.assets || (0, h.default)(e) || e.type !== D.ActivityTypes.PLAYING || l === a.ACTIVITY_FEED || t.bot ? null : null == n && null != i ? (0, s.jsx)("div", {
                         className: u(w.gameIcon, w.screenshareIcon)
-                    }) : (0, s.jsx)(R.default, {
+                    }) : (0, s.jsx)(x.default, {
                         className: w.gameIcon,
                         game: n
                     })
@@ -7005,7 +7009,7 @@
             var n = l("37983");
             l("884691");
             var a = l("469563"),
-                s = l("889196"),
+                s = l("249978"),
                 i = l("75196"),
                 r = (0, a.replaceIcon)(function(e) {
                     let {
@@ -7030,7 +7034,7 @@
                             d: "M21 2.99902H14V4.99902H17.586L9.29297 13.292L10.707 14.706L19 6.41302V9.99902H21V2.99902Z"
                         })]
                     })
-                }, s.LaunchIcon)
+                }, s.WindowLaunchIcon)
         },
         616225: function(e, t, l) {
             "use strict";
@@ -7448,4 +7452,4 @@
         }
     }
 ]);
-//# sourceMappingURL=bebcd5610fc0ad0a089a.js.map
+//# sourceMappingURL=de87dd2d7df0b80d91da.js.map

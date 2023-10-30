@@ -319,42 +319,6 @@
                 }, t)
             }
         },
-        625665: function(e, t, n) {
-            "use strict";
-            n.r(t), n.d(t, {
-                DoorPremiumIcon: function() {
-                    return s
-                }
-            });
-            var a = n("37983");
-            n("884691");
-            var l = n("669491"),
-                r = n("75196");
-            let s = e => {
-                let {
-                    width: t = 24,
-                    height: n = 24,
-                    color: s = l.default.colors.INTERACTIVE_NORMAL,
-                    colorClass: i = "",
-                    ...u
-                } = e;
-                return (0, a.jsx)("svg", {
-                    ...(0, r.default)(u),
-                    xmlns: "http://www.w3.org/2000/svg",
-                    width: t,
-                    height: n,
-                    fill: "none",
-                    viewBox: "0 0 24 24",
-                    children: (0, a.jsx)("path", {
-                        fill: "string" == typeof s ? s : s.css,
-                        fillRule: "evenodd",
-                        d: "M2 10a9 9 0 0 1 9-9h2a9 9 0 0 1 9 9v8a3 3 0 0 1-3 3H5a3 3 0 0 1-3-3v-8Zm3.88-5.175A4 4 0 0 0 4 8.217v9.502a1 1 0 0 0 1.243.97l5.713-1.428A1.379 1.379 0 0 0 12 15.924V8.217c0-3.142-3.456-5.057-6.12-3.392ZM10 11a1 1 0 1 0-2 0v2a1 1 0 1 0 2 0v-2Zm7.683-2.524c-.235-.635-1.131-.635-1.366 0l-.178.481a2 2 0 0 1-1.182 1.182l-.481.178c-.635.235-.635 1.131 0 1.366l.481.178a2 2 0 0 1 1.182 1.182l.178.481c.235.635 1.131.635 1.366 0l.178-.481a2 2 0 0 1 1.182-1.182l.481-.178c.634-.235.634-1.131 0-1.366l-.481-.178a2 2 0 0 1-1.182-1.182l-.178-.481ZM16 5.5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0ZM18.5 19a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3Z",
-                        clipRule: "evenodd",
-                        className: i
-                    })
-                })
-            }
-        },
         739086: function(e, t, n) {
             "use strict";
             n.r(t), n.d(t, {
@@ -383,43 +347,7 @@
                     viewBox: "0 0 24 24",
                     children: (0, a.jsx)("path", {
                         fill: "string" == typeof s ? s : s.css,
-                        d: "m21.506 17.596-.14.142a.88.88 0 0 1-.964.195l-4.09-1.7a.987.987 0 0 1-.57-1.17l.732-2.71a5.58 5.58 0 0 0-8.948 0l.697 2.112a.988.988 0 0 1-.468 1.181l-4.131 2.208a.87.87 0 0 1-1.03-.156l-.1-.102a5.184 5.184 0 0 1-.328-6.916c5.1-6.24 14.569-6.24 19.668 0a5.184 5.184 0 0 1-.328 6.916Z",
-                        className: i
-                    })
-                })
-            }
-        },
-        424572: function(e, t, n) {
-            "use strict";
-            n.r(t), n.d(t, {
-                ScreenStopWatchingIcon: function() {
-                    return s
-                }
-            });
-            var a = n("37983");
-            n("884691");
-            var l = n("669491"),
-                r = n("75196");
-            let s = e => {
-                let {
-                    width: t = 24,
-                    height: n = 24,
-                    color: s = l.default.colors.INTERACTIVE_NORMAL,
-                    colorClass: i = "",
-                    ...u
-                } = e;
-                return (0, a.jsx)("svg", {
-                    ...(0, r.default)(u),
-                    xmlns: "http://www.w3.org/2000/svg",
-                    width: t,
-                    height: n,
-                    fill: "none",
-                    viewBox: "0 0 24 24",
-                    children: (0, a.jsx)("path", {
-                        fill: "string" == typeof s ? s : s.css,
-                        fillRule: "evenodd",
-                        d: "M15.293 1.293a1 1 0 0 1 1.414 0L19 3.586l2.293-2.293a1 1 0 1 1 1.414 1.414L20.414 5l2.293 2.293a1 1 0 0 1-1.414 1.414L19 6.414l-2.293 2.293a1 1 0 1 1-1.414-1.414L17.586 5l-2.293-2.293a1 1 0 0 1 0-1.414ZM13.04 2.498C12.996 2.225 12.776 2 12.5 2H5a3 3 0 0 0-3 3v8a3 3 0 0 0 3 3h14a3 3 0 0 0 3-3v-1.5c0-.276-.225-.496-.498-.541a2.986 2.986 0 0 1-1.623-.838l-.525-.525a.5.5 0 0 0-.708 0l-.525.525A3 3 0 1 1 13.88 5.88l.525-.525a.5.5 0 0 0 0-.708l-.525-.525a2.986 2.986 0 0 1-.838-1.623ZM13.5 20a.5.5 0 0 1-.5-.5v-2a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v2a.5.5 0 0 1-.5.5H9a1 1 0 1 0 0 2h6a1 1 0 1 0 0-2h-1.5Z",
-                        clipRule: "evenodd",
+                        d: "m21.506 16.596-.14.142a.88.88 0 0 1-.964.195l-4.09-1.7a.987.987 0 0 1-.57-1.17l.732-2.71a5.58 5.58 0 0 0-8.948 0l.697 2.112a.988.988 0 0 1-.468 1.181l-4.131 2.208a.87.87 0 0 1-1.03-.156l-.1-.102a5.184 5.184 0 0 1-.328-6.916c5.1-6.24 14.569-6.24 19.668 0a5.184 5.184 0 0 1-.328 6.916Z",
                         className: i
                     })
                 })
@@ -1347,11 +1275,11 @@
                     preset: S,
                     resolution: C,
                     fps: _
-                } = (0, r.useStateFromStoresObject)([d.default], () => d.default.getState()), T = (0, r.useStateFromStores)([f.default], () => f.default.getGoLiveSource()), A = (0, r.useStateFromStores)([g.default], () => g.default.getCurrentUser()), v = (0, r.useStateFromStores)([c.default], () => {
+                } = (0, r.useStateFromStoresObject)([d.default], () => d.default.getState()), T = (0, r.useStateFromStores)([f.default], () => f.default.getGoLiveSource()), A = (0, r.useStateFromStores)([g.default], () => g.default.getCurrentUser()), I = (0, r.useStateFromStores)([c.default], () => {
                     var t;
                     return null === (t = c.default.getGuild(null == e ? void 0 : e.guildId)) || void 0 === t ? void 0 : t.premiumTier
                 }), {
-                    location: I
+                    location: v
                 } = (0, u.useAnalyticsContext)(), N = l.useCallback((e, l, r, u) => {
                     if (e) {
                         if (null != T) {
@@ -1374,7 +1302,7 @@
                     } else {
                         var o, d;
                         o = t, d = {
-                            ...I,
+                            ...v,
                             object: E.AnalyticsObjects.RADIO_ITEM,
                             objectType: u
                         }, (0, s.openModalLazy)(async () => {
@@ -1389,14 +1317,14 @@
                             contextKey: o === E.AppContext.POPOUT ? s.POPOUT_MODAL_CONTEXT : s.DEFAULT_MODAL_CONTEXT
                         })
                     }
-                }, [t, I, T]);
+                }, [t, v, T]);
                 if (null == e) return null;
                 let L = S === m.ApplicationStreamPresets.PRESET_DOCUMENTS ? m.ApplicationStreamFPS.FPS_30 : _,
                     M = m.ApplicationStreamFPSButtonsWithSuffixLabel.map(e => {
                         let {
                             value: t,
                             label: n
-                        } = e, l = (0, o.default)(m.ApplicationStreamPresets.PRESET_CUSTOM, C, t, A, v);
+                        } = e, l = (0, o.default)(m.ApplicationStreamPresets.PRESET_CUSTOM, C, t, A, I);
                         return (0, a.jsx)(s.MenuRadioItem, {
                             group: "stream-settings-fps",
                             id: "stream-settings-fps-".concat(t),
@@ -1409,7 +1337,7 @@
                         let {
                             value: t,
                             label: n
-                        } = e, l = (0, o.default)(m.ApplicationStreamPresets.PRESET_CUSTOM, t, L, A, v);
+                        } = e, l = (0, o.default)(m.ApplicationStreamPresets.PRESET_CUSTOM, t, L, A, I);
                         return (0, a.jsx)(s.MenuRadioItem, {
                             group: "stream-settings-resolution",
                             id: "stream-settings-resolution-".concat(t),
@@ -1501,8 +1429,8 @@
                 _ = n("286235"),
                 T = n("50885"),
                 A = n("49111"),
-                v = n("782340"),
-                I = n("143941");
+                I = n("782340"),
+                v = n("143941");
 
             function N() {
                 let [e, t] = l.useState(!1), n = (0, d.useStateFromStores)([g.default], () => {
@@ -1521,8 +1449,8 @@
                     size: c.ButtonSizes.LARGE,
                     onClick: r,
                     submitting: e,
-                    className: I.clearOverrideButton,
-                    children: v.default.Messages.CLEAR_BUILD_OVERRIDE
+                    className: v.clearOverrideButton,
+                    children: I.default.Messages.CLEAR_BUILD_OVERRIDE
                 })
             }
             let L = s.throttle(() => {
@@ -1576,24 +1504,24 @@
                     if (null !== this.state.error) {
                         let e = (0, a.jsxs)("div", {
                                 children: [(0, a.jsx)("p", {
-                                    children: v.default.Messages.ERRORS_UNEXPECTED_CRASH
+                                    children: I.default.Messages.ERRORS_UNEXPECTED_CRASH
                                 }), (0, a.jsx)("p", {
-                                    children: v.default.Messages.ERRORS_ACTION_TO_TAKE
+                                    children: I.default.Messages.ERRORS_ACTION_TO_TAKE
                                 })]
                             }),
                             n = (0, a.jsxs)("div", {
-                                className: I.buttons,
+                                className: v.buttons,
                                 children: [(0, a.jsx)(c.Button, {
                                     size: c.ButtonSizes.LARGE,
                                     onClick: this._handleSubmitReport,
-                                    children: v.default.Messages.ERRORS_RELOAD
+                                    children: I.default.Messages.ERRORS_RELOAD
                                 }), (0, a.jsx)(N, {})]
                             });
                         return (0, a.jsx)(S.default, {
-                            title: v.default.Messages.UNSUPPORTED_BROWSER_TITLE,
+                            title: I.default.Messages.UNSUPPORTED_BROWSER_TITLE,
                             note: null != t ? t() : e,
                             action: n,
-                            className: I.errorPage
+                            className: v.errorPage
                         })
                     }
                     return e
@@ -1635,8 +1563,8 @@
                 _ = n("439932"),
                 T = n("50885"),
                 A = n("782340"),
-                v = n("793804");
-            let I = e => T.default.close(e),
+                I = n("793804");
+            let v = e => T.default.close(e),
                 N = e => T.default.minimize(e),
                 L = (e, t) => {
                     (0, C.isMac)() && !t.altKey ? T.default.fullscreen(e) : T.default.maximize(e)
@@ -1648,26 +1576,26 @@
                         hasOpenLayer: l
                     } = e;
                     return (0, a.jsxs)("div", {
-                        className: r(v.typeWindows, (0, _.getThemeClass)(n), {
-                            [v.withBackgroundOverride]: !l
+                        className: r(I.typeWindows, (0, _.getThemeClass)(n), {
+                            [I.withBackgroundOverride]: !l
                         }),
                         children: [(0, a.jsx)("div", {
-                            className: v.wordmarkWindows,
+                            className: I.wordmarkWindows,
                             children: (0, a.jsx)(f.default, {})
                         }), (0, a.jsx)(i.Clickable, {
-                            className: v.winButtonClose,
-                            onClick: () => I(t),
+                            className: I.winButtonClose,
+                            onClick: () => v(t),
                             "aria-label": A.default.Messages.TITLE_BAR_CLOSE_WINDOW,
                             tabIndex: -1,
                             children: (0, a.jsx)(g.default, {})
                         }), (0, a.jsx)(i.Clickable, {
-                            className: v.winButtonMinMax,
+                            className: I.winButtonMinMax,
                             onClick: e => L(t, e),
                             "aria-label": A.default.Messages.TITLE_BAR_MAXIMIZE_WINDOW,
                             tabIndex: -1,
                             children: (0, a.jsx)(m.default, {})
                         }), (0, a.jsx)(i.Clickable, {
-                            className: v.winButtonMinMax,
+                            className: I.winButtonMinMax,
                             onClick: () => N(t),
                             "aria-label": A.default.Messages.TITLE_BAR_MINIMIZE_WINDOW,
                             tabIndex: -1,
@@ -1684,25 +1612,25 @@
                         hasOpenLayer: u
                     } = e;
                     return (0, a.jsxs)(i.Clickable, {
-                        className: r(l ? v.typeMacOSWithFrame : v.typeMacOS, t ? v.focused : v.unfocused, (0, _.getThemeClass)(s), {
-                            [v.withBackgroundOverride]: !u
+                        className: r(l ? I.typeMacOSWithFrame : I.typeMacOS, t ? I.focused : I.unfocused, (0, _.getThemeClass)(s), {
+                            [I.withBackgroundOverride]: !u
                         }),
                         onDoubleClick: () => T.default.maximize(n),
                         tabIndex: -1,
                         children: [o.default.window.USE_OSX_NATIVE_TRAFFIC_LIGHTS ? (0, a.jsx)("div", {
-                            className: v.macDragRegion
+                            className: I.macDragRegion
                         }) : (0, a.jsxs)("div", {
-                            className: v.macButtons,
+                            className: I.macButtons,
                             children: [(0, a.jsx)(i.Clickable, {
-                                className: v.macButtonClose,
-                                onClick: () => I(n),
+                                className: I.macButtonClose,
+                                onClick: () => v(n),
                                 "aria-label": A.default.Messages.TITLE_BAR_CLOSE_WINDOW,
                                 tabIndex: -1,
                                 children: (0, a.jsx)(E.default, {
                                     color: "#4c0000"
                                 })
                             }), (0, a.jsx)(i.Clickable, {
-                                className: v.macButtonMinimize,
+                                className: I.macButtonMinimize,
                                 onClick: () => N(n),
                                 "aria-label": A.default.Messages.TITLE_BAR_MINIMIZE_WINDOW,
                                 tabIndex: -1,
@@ -1710,7 +1638,7 @@
                                     color: "#975500"
                                 })
                             }), (0, a.jsx)(i.Clickable, {
-                                className: v.macButtonMaximize,
+                                className: I.macButtonMaximize,
                                 onClick: e => L(n, e),
                                 "aria-label": A.default.Messages.TITLE_BAR_FULLSCREEN_WINDOW,
                                 tabIndex: -1,
@@ -1719,7 +1647,7 @@
                                 })
                             })]
                         }), l ? (0, a.jsx)("div", {
-                            className: v.wordmarkMacOS,
+                            className: I.wordmarkMacOS,
                             children: (0, a.jsx)(f.default, {
                                 color: "#ffffff"
                             })
@@ -2020,8 +1948,8 @@
                 return {
                     logsUploaded: new Date().toISOString(),
                     releaseChannel: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                    buildNumber: "241782",
-                    versionHash: "63a7a2a6684b6abf46568922a9dee7a606a676d4"
+                    buildNumber: "241795",
+                    versionHash: "552747ed051b49ee13ddfa35c5e583e0a93d6ea1"
                 }
             }
             n.r(t), n.d(t, {
@@ -2256,7 +2184,7 @@
                     dsn: "https://fa97a90475514c03a42f80cd36d147c4@sentry.io/140984",
                     autoSessionTracking: !1,
                     environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                    release: "discord_web-63a7a2a6684b6abf46568922a9dee7a606a676d4",
+                    release: "discord_web-552747ed051b49ee13ddfa35c5e583e0a93d6ea1",
                     beforeSend: e => {
                         var t, n;
                         return !(null != (t = e).exception && null != t.exception.values && t.exception.values.every(e => null == e.stacktrace || null != e.stacktrace.frames && 1 === e.stacktrace.frames.length) && "canary" !== window.GLOBAL_ENV.RELEASE_CHANNEL || r.some(e => window.navigator.appVersion.toLowerCase().indexOf(e) >= 0)) && !s() && !("Aborted" === (n = e).message || "cancel captcha" === n.message) && i() ? e : null
@@ -2274,7 +2202,7 @@
                     })],
                     ignoreErrors: ["EADDRINUSE", "BetterDiscord", "EnhancedDiscord", "Powercord", "RecipeWebview", "jQuery", "localStorage", "has already been declared", "Cannot call hover while not dragging.", "Cannot call beginDrag while dragging.", "getHostNode", "setupCSS", "on missing remote object", "ChunkLoadError", "Cannot find module 'discord_utils'", "Failed to setup Krisp module", "Error invoking remote method 'DISCORD_NATIVE_MODULES_INSTALL': Error: Module updater is not available!", "Non-Error promise rejection captured with keys:", "Request has been terminated", "Cannot resolve a Slate point from DOM point", "Failed to fetch", "no suitable image found", "ResizeObserver loop limit exceeded", "The play() request was interrupted", "could not play audio", "notosans-400-normalitalic"],
                     denyUrls: [/recaptcha/, /mobilediscord\.com/, /betterdiscord:\/\//]
-                }), a.setTag("buildNumber", (e = "241782", "241782")), a.setTag("builtAt", String("1698700907167"));
+                }), a.setTag("buildNumber", (e = "241795", "241795")), a.setTag("builtAt", String("1698701988376"));
                 let t = window.GLOBAL_ENV.SENTRY_TAGS;
                 if (null != t && "object" == typeof t)
                     for (let e in t) a.setTag(e, t[e]);
@@ -2410,7 +2338,7 @@
                     loaded: a,
                     firstMessage: l
                 } = (0, r.useStateFromStoresObject)([c.default], () => c.default.getMessage(e.id)), s = (0, r.useStateFromStores)([u.default], () => u.default.getChannel(e.parent_id));
-                if (null != s && (t = a, n = l, !t && null == n)) v(s, e.id);
+                if (null != s && (t = a, n = l, !t && null == n)) I(s, e.id);
                 return {
                     loaded: a,
                     firstMessage: l
@@ -2422,7 +2350,7 @@
                     loaded: n,
                     message: a
                 } = (0, r.useStateFromStoresObject)([f.default], () => f.default.getMessageState(t.id));
-                return null != e && p(t.guild_id, t.id) && v(e, t.id), {
+                return null != e && p(t.guild_id, t.id) && I(e, t.id), {
                     loaded: n,
                     mostRecentMessage: a
                 }
@@ -2437,21 +2365,21 @@
                         firstMessage: s
                     } = c.default.getMessage(t);
                     if (a = r, l = s, !a && null == l || p(e.guild_id, t)) m.request(e.id, t), n = !0
-                }), n && null == h && (h = setTimeout(I, 0))
+                }), n && null == h && (h = setTimeout(v, 0))
             }
 
             function A(e) {
                 T(e, (0, o.computeThreadIdsSnapshot)(e.id).slice(0, 10))
             }
 
-            function v(e, t) {
+            function I(e, t) {
                 if (m.hasRequested(e.id, t)) return;
                 let n = (0, o.computeThreadIdsSnapshot)(e.id),
                     a = n.findIndex(e => e === t),
                     l = n.slice(a, a + 5).filter(t => !m.hasRequested(e.id, t));
                 T(e, l)
             }
-            async function I() {
+            async function v() {
                 try {
                     for (; m.hasNext();) await N(m.next())
                 } finally {
@@ -3342,8 +3270,8 @@
                 _ = n("18494"),
                 T = n("162771"),
                 A = n("49111"),
-                v = n("724210"),
-                I = n("782340");
+                I = n("724210"),
+                v = n("782340");
             let N = new r.default("MessageManager");
 
             function L(e) {
@@ -3362,7 +3290,7 @@
                     m && N.log("Skipping fetch because channelId is null");
                     return
                 }
-                if ((0, v.isStaticChannelRoute)(n)) {
+                if ((0, I.isStaticChannelRoute)(n)) {
                     m && N.log("Skipping fetch because channelId is a static route");
                     return
                 }
@@ -3565,8 +3493,8 @@
                 if (t.body.code === A.AbortCodes.CHANNEL_FOLLOWING_EDIT_RATE_LIMITED) {
                     let e = t.body.retry_after;
                     null != e && u.default.show({
-                        title: I.default.Messages.RATE_LIMITED,
-                        body: I.default.Messages.ANNOUNCEMENT_EDIT_RATE_LIMIT.format({
+                        title: v.default.Messages.RATE_LIMITED,
+                        body: v.default.Messages.ANNOUNCEMENT_EDIT_RATE_LIMIT.format({
                             retryAfterMinutes: Math.ceil(e / 60)
                         })
                     })
@@ -3951,7 +3879,7 @@
                     return A
                 },
                 default: function() {
-                    return v
+                    return I
                 }
             });
             var a = n("37983");
@@ -3988,7 +3916,7 @@
                 return s
             }
 
-            function v(e) {
+            function I(e) {
                 var t;
                 let {
                     channel: n,
@@ -3997,8 +3925,8 @@
                     hideSelfOptions: c = !1,
                     showReportOption: g = !1,
                     handleGoLive: p,
-                    onClose: v,
-                    onSelect: I,
+                    onClose: I,
+                    onSelect: v,
                     appContext: N = C.AppContext.APP
                 } = e, L = f.default.supports(_.Features.DESKTOP_CAPTURE_APPLICATIONS), M = null !== (t = i.find(e => e.ownerId === (null == l ? void 0 : l.id))) && void 0 !== t ? t : null, R = A(n, l, i), y = (0, o.default)(M, N), D = (0, u.default)(M, N, C.NOOP_NULL), O = null == M ? (0, a.jsx)(r.MenuItem, {
                     id: "share-your-screen",
@@ -4025,9 +3953,9 @@
                 return (0, a.jsx)(s.default, {
                     section: C.AnalyticsSections.CONTEXT_MENU,
                     children: (0, a.jsxs)(r.Menu, {
-                        onSelect: I,
+                        onSelect: v,
                         navId: "manage-streams",
-                        onClose: v,
+                        onClose: I,
                         "aria-label": null != M ? T.default.Messages.STOP_STREAMING : T.default.Messages.SHARE_YOUR_SCREEN,
                         children: [(0, a.jsx)(r.MenuGroup, {
                             children: R.map(e => {
@@ -4904,7 +4832,7 @@
                         pulseSpeakingIndicator: h = !1,
                         speaking: p = !1,
                         ...S
-                    } = e, C = null != E ? E : n, _ = (0, i.default)(C, r.default.unsafe_rawColors.PRIMARY_800.css), T = (0, u.useCallBannerBackgroundExperiment)(!0, "VideoBackground-web").enabled, A = (0, c.default)(null != m ? m : ""), v = null == A ? void 0 : A.getBannerURL({
+                    } = e, C = null != E ? E : n, _ = (0, i.default)(C, r.default.unsafe_rawColors.PRIMARY_800.css), T = (0, u.useCallBannerBackgroundExperiment)(!0, "VideoBackground-web").enabled, A = (0, c.default)(null != m ? m : ""), I = null == A ? void 0 : A.getBannerURL({
                         size: 1024,
                         canAnimate: f.GifAutoPlay.getSetting()
                     });
@@ -4913,7 +4841,7 @@
                                 dispatchWait: !0
                             })
                         }, [T, m]), null == n) return null;
-                    let I = (0, a.jsx)(s.Avatar, {
+                    let v = (0, a.jsx)(s.Avatar, {
                             className: g.avatarWrapper,
                             src: n,
                             ...S
@@ -4922,13 +4850,13 @@
                             ...t,
                             backgroundColor: _
                         };
-                    return null != v && p && T && (N.backgroundImage = "url(".concat(v, ")"), N.backgroundSize = "cover"), (0, a.jsx)("div", {
+                    return null != I && p && T && (N.backgroundImage = "url(".concat(I, ")"), N.backgroundSize = "cover"), (0, a.jsx)("div", {
                         style: N,
                         className: g.background,
                         children: h ? (0, a.jsx)(o.default, {
                             shouldAnimate: p,
-                            children: I
-                        }) : I
+                            children: v
+                        }) : v
                     })
                 }
         },
@@ -5019,38 +4947,37 @@
             "use strict";
             n.r(t), n.d(t, {
                 default: function() {
-                    return i
+                    return r
                 }
             });
             var a = n("37983");
             n("884691");
-            var l = n("469563"),
-                r = n("625665"),
-                s = n("75196"),
-                i = (0, l.replaceIcon)(function(e) {
-                    let {
-                        width: t = 24,
-                        height: n = 24,
-                        color: l = "currentColor",
-                        className: r,
-                        foreground: i,
-                        ...u
-                    } = e;
-                    return (0, a.jsx)("svg", {
-                        ...(0, s.default)(u),
-                        className: r,
-                        width: t,
-                        height: n,
-                        viewBox: "0 0 24 24",
-                        children: (0, a.jsx)("path", {
-                            className: i,
-                            fill: l,
-                            fillRule: "evenodd",
-                            clipRule: "evenodd",
-                            d: "M2 11C2 6.02944 6.02944 2 11 2H13C17.9706 2 22 6.02944 22 11V19C22 20.6569 20.6569 22 19 22H5C3.34315 22 2 20.6569 2 19V11ZM5.88 5.82497C4.71048 6.55593 4 7.83781 4 9.21697V18.7192C4 19.3698 4.61139 19.8471 5.24254 19.6893L10.9558 18.261C11.5695 18.1076 12 17.5562 12 16.9236V9.21697C12 6.07522 8.5442 4.15985 5.88 5.82497ZM10 12C10 11.4477 9.55228 11 9 11C8.44772 11 8 11.4477 8 12V14C8 14.5523 8.44772 15 9 15C9.55228 15 10 14.5523 10 14V12ZM17.6832 9.47564C17.4485 8.84145 16.5515 8.84145 16.3168 9.47564L16.1387 9.95707C15.9361 10.5045 15.5045 10.9361 14.9571 11.1387L14.4756 11.3168C13.8415 11.5515 13.8415 12.4485 14.4756 12.6832L14.9571 12.8613C15.5045 13.0639 15.9361 13.4955 16.1387 14.0429L16.3168 14.5244C16.5515 15.1585 17.4485 15.1585 17.6832 14.5244L17.8613 14.0429C18.0639 13.4955 18.4955 13.0639 19.0429 12.8613L19.5244 12.6832C20.1585 12.4485 20.1585 11.5515 19.5244 11.3168L19.0429 11.1387C18.4955 10.9361 18.0639 10.5045 17.8613 9.95707L17.6832 9.47564ZM14.1584 5.23782C14.2758 4.92073 14.7242 4.92073 14.8416 5.23782C14.9994 5.66433 15.3357 6.0006 15.7622 6.15842C16.0793 6.27576 16.0793 6.72424 15.7622 6.84158C15.3357 6.9994 14.9994 7.33567 14.8416 7.76218C14.7242 8.07927 14.2758 8.07927 14.1584 7.76218C14.0006 7.33567 13.6643 6.9994 13.2378 6.84158C12.9207 6.72424 12.9207 6.27576 13.2378 6.15842C13.6643 6.0006 14.0006 5.66433 14.1584 5.23782ZM18.8416 16.2378C18.7242 15.9207 18.2758 15.9207 18.1584 16.2378C18.0006 16.6643 17.6643 17.0006 17.2378 17.1584C16.9207 17.2758 16.9207 17.7242 17.2378 17.8416C17.6643 17.9994 18.0006 18.3357 18.1584 18.7622C18.2758 19.0793 18.7242 19.0793 18.8416 18.7622C18.9994 18.3357 19.3357 17.9994 19.7622 17.8416C20.0793 17.7242 20.0793 17.2758 19.7622 17.1584C19.3357 17.0006 18.9994 16.6643 18.8416 16.2378Z"
-                        })
+            var l = n("75196");
+
+            function r(e) {
+                let {
+                    width: t = 24,
+                    height: n = 24,
+                    color: r = "currentColor",
+                    className: s,
+                    foreground: i,
+                    ...u
+                } = e;
+                return (0, a.jsx)("svg", {
+                    ...(0, l.default)(u),
+                    className: s,
+                    width: t,
+                    height: n,
+                    viewBox: "0 0 24 24",
+                    children: (0, a.jsx)("path", {
+                        className: i,
+                        fill: r,
+                        fillRule: "evenodd",
+                        clipRule: "evenodd",
+                        d: "M2 11C2 6.02944 6.02944 2 11 2H13C17.9706 2 22 6.02944 22 11V19C22 20.6569 20.6569 22 19 22H5C3.34315 22 2 20.6569 2 19V11ZM5.88 5.82497C4.71048 6.55593 4 7.83781 4 9.21697V18.7192C4 19.3698 4.61139 19.8471 5.24254 19.6893L10.9558 18.261C11.5695 18.1076 12 17.5562 12 16.9236V9.21697C12 6.07522 8.5442 4.15985 5.88 5.82497ZM10 12C10 11.4477 9.55228 11 9 11C8.44772 11 8 11.4477 8 12V14C8 14.5523 8.44772 15 9 15C9.55228 15 10 14.5523 10 14V12ZM17.6832 9.47564C17.4485 8.84145 16.5515 8.84145 16.3168 9.47564L16.1387 9.95707C15.9361 10.5045 15.5045 10.9361 14.9571 11.1387L14.4756 11.3168C13.8415 11.5515 13.8415 12.4485 14.4756 12.6832L14.9571 12.8613C15.5045 13.0639 15.9361 13.4955 16.1387 14.0429L16.3168 14.5244C16.5515 15.1585 17.4485 15.1585 17.6832 14.5244L17.8613 14.0429C18.0639 13.4955 18.4955 13.0639 19.0429 12.8613L19.5244 12.6832C20.1585 12.4485 20.1585 11.5515 19.5244 11.3168L19.0429 11.1387C18.4955 10.9361 18.0639 10.5045 17.8613 9.95707L17.6832 9.47564ZM14.1584 5.23782C14.2758 4.92073 14.7242 4.92073 14.8416 5.23782C14.9994 5.66433 15.3357 6.0006 15.7622 6.15842C16.0793 6.27576 16.0793 6.72424 15.7622 6.84158C15.3357 6.9994 14.9994 7.33567 14.8416 7.76218C14.7242 8.07927 14.2758 8.07927 14.1584 7.76218C14.0006 7.33567 13.6643 6.9994 13.2378 6.84158C12.9207 6.72424 12.9207 6.27576 13.2378 6.15842C13.6643 6.0006 14.0006 5.66433 14.1584 5.23782ZM18.8416 16.2378C18.7242 15.9207 18.2758 15.9207 18.1584 16.2378C18.0006 16.6643 17.6643 17.0006 17.2378 17.1584C16.9207 17.2758 16.9207 17.7242 17.2378 17.8416C17.6643 17.9994 18.0006 18.3357 18.1584 18.7622C18.2758 19.0793 18.7242 19.0793 18.8416 18.7622C18.9994 18.3357 19.3357 17.9994 19.7622 17.8416C20.0793 17.7242 20.0793 17.2758 19.7622 17.1584C19.3357 17.0006 18.9994 16.6643 18.8416 16.2378Z"
                     })
-                }, r.DoorPremiumIcon)
+                })
+            }
         },
         893011: function(e, t, n) {
             "use strict";
@@ -5095,7 +5022,7 @@
             var a = n("37983");
             n("884691");
             var l = n("469563"),
-                r = n("424572"),
+                r = n("671306"),
                 s = n("75196"),
                 i = (0, l.replaceIcon)(function(e) {
                     let {
@@ -5124,7 +5051,7 @@
                             fill: l
                         })]
                     })
-                }, r.ScreenStopWatchingIcon)
+                }, r.ScreenXIcon)
         },
         940277: function(e, t, n) {
             "use strict";
@@ -5396,4 +5323,4 @@
         }
     }
 ]);
-//# sourceMappingURL=3f322520516b244073e7.js.map
+//# sourceMappingURL=304e740727a22f0147c1.js.map

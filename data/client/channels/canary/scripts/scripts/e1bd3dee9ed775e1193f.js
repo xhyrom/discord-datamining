@@ -28,9 +28,7 @@
                     viewBox: "0 0 24 24",
                     children: (0, i.jsx)("path", {
                         fill: "string" == typeof o ? o : o.css,
-                        fillRule: "evenodd",
                         d: "M3.293 11.293a1 1 0 0 0 0 1.414l5 5a1 1 0 0 0 1.414-1.414L6.414 13H20a1 1 0 1 0 0-2H6.414l3.293-3.293a1 1 0 0 0-1.414-1.414l-5 5Z",
-                        clipRule: "evenodd",
                         className: a
                     })
                 })
@@ -126,7 +124,7 @@
                     return F
                 },
                 trackCustomCallSoundExternallyDeleted: function() {
-                    return R
+                    return M
                 }
             });
             var i = t("65597"),
@@ -264,7 +262,7 @@
                 })
             }
 
-            function R(e) {
+            function M(e) {
                 let {
                     location: n
                 } = e;
@@ -690,4 +688,4 @@
         }
     }
 ]);
-//# sourceMappingURL=f3594606c618dac91f88.js.map
+//# sourceMappingURL=e1bd3dee9ed775e1193f.js.map
