@@ -1,8 +1,5 @@
 {
   "extends": "@xhyrom/configs/ts",
-  "compilerOptions": {
-    "allowImportingTsExtensions": true
-  },
   "ts-node": {
     // Tell ts-node CLI to install the --loader automatically, explained below
     "esm": true

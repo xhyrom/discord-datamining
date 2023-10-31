@@ -28,8 +28,7 @@ import {
 } from "../../../utils.ts";
 import { setTimeout as sleep } from "node:timers/promises";
 import { Client } from "../index.ts";
-import { Build } from "../scripts/Build.ts";
-import { Channel, ChannelType } from "../Channel.ts";
+import { readdir } from "node:fs/promises";
 
 interface FetchSnowflakeResponse {
   type: "invalid" | "valid" | "unknown";
@@ -37,18 +36,12 @@ interface FetchSnowflakeResponse {
 }
 
 export class Applications implements Module {
-  #mainScript?: File;
-  #build?: Build;
-
   get baseDir() {
     return join(Client.baseDir, "applications");
   }
 
   async run() {
     console.log("Scraping applications");
-
-    const mainScript = await this.mainScript();
-    this.#build = new Build(new Channel(ChannelType.Canary), mainScript);
 
     await rm(join(this.baseDir, "applications"));
 
@@ -58,7 +51,7 @@ export class Applications implements Module {
 
     const ids = await this.getSnowflakes();
 
-    const applications = [];
+    const applications: object[] = [];
 
     for (const id of ids ?? []) {
       const result = await this.fetchSnowflake(id);
@@ -71,7 +64,7 @@ export class Applications implements Module {
         continue;
       }
 
-      applications.push(result.data);
+      applications.push(result.data!);
     }
 
     await writeFile(
@@ -92,15 +85,20 @@ export class Applications implements Module {
   }
 
   async getSnowflakes() {
-    const content = await this.#build?.data();
-    if (!content) return [];
+    const scripts = await readdir(
+      join(Client.baseDir, "channels", "canary", "scripts", "scripts")
+    );
+    const files = scripts.map((script) => new File(script));
 
-    const snowflakes = content.match(/\d{17,19}/g);
-    if (!snowflakes) return [];
+    const result: string[] = [];
+    for (const file of files) {
+      const content = await file.localContent();
+      if (!content) return [];
 
-    const result = [];
-    for (const match of snowflakes) {
-      result.push(match);
+      const snowflakes = content.match(/\d{17,19}/g);
+      if (!snowflakes) return [];
+
+      result.push(...Array.from(snowflakes));
     }
 
     return result;
@@ -142,16 +140,5 @@ export class Applications implements Module {
     return {
       type: "unknown",
     };
-  }
-
-  async mainScript() {
-    if (this.#mainScript) return this.#mainScript;
-
-    this.#mainScript = new File(
-      join(Client.baseDir, "channels", "canary", "scripts", "main.js"),
-      true
-    );
-
-    return this.#mainScript;
   }
 }
