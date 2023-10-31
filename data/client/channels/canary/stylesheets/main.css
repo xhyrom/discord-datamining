@@ -22698,6 +22698,29 @@ html.decorate-links .lowSaturationUnderline__95e71 {
     }
 }
 
+.actionButton_dac582 {
+    min-height: 32px
+}
+
+.actionRightButton__8ac12 {
+    margin-left: 10px
+}
+
+.pendingIncoming_c83b56 {
+    display: flex;
+    flex-grow: 0
+}
+
+.container__22d2b {
+    display: flex;
+    justify-content: space-between
+}
+
+.addFriendSection__7ab40 {
+    flex-shrink: 0;
+    margin-left: 8px
+}
+
 .copiableField__0c0e7 {
     padding-right: 8px
 }
@@ -63814,8 +63837,8 @@ strong {
 
 .message__13e98 {
     font-weight: 500;
-    font-size: 16px;
-    line-height: 20px;
+    font-size: 1rem;
+    line-height: 1.25rem;
     white-space: nowrap;
     text-overflow: ellipsis;
     overflow: hidden
@@ -140908,19 +140931,6 @@ html .invoiceCancelRow_c1bfe7 {
     height: 100%
 }
 
-.actionButton_dac582 {
-    min-height: 32px
-}
-
-.actionRightButton__8ac12 {
-    margin-left: 10px
-}
-
-.pendingIncoming_c83b56 {
-    display: flex;
-    flex-grow: 0
-}
-
 .header__7da4f {
     position: relative
 }
@@ -149745,4 +149755,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=889b96239b8a557064fb.css.map*/
+/*# sourceMappingURL=8a081a34e7ce1455a5b4.css.map*/

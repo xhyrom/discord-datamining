@@ -24564,6 +24564,8 @@
         119111: function(e, t, o) {
             "use strict";
             e.exports = {
+                addFriendSection: "addFriendSection__7ab40",
+                container: "container__22d2b",
                 copiableField: "copiableField__0c0e7",
                 copiableNameTag: "copiableNameTag__6b220",
                 copyIcon: "copyIcon__890d6",
