@@ -7513,6 +7513,8 @@
   "BILLING_TRIAL_PAYMENT_MODAL_INFO": "\"Your **free trial** will end on {trialEnd, date, short}. Choose a plan for after your {trialPeriod} trial ends.\"",
   "BILLING_TRIAL_MONTHLY_PRICE_AFTER_TRIAL": "\"{price}/month after trial\"",
   "BILLING_TRIAL_YEARLY_PRICE_AFTER_TRIAL": "\"{price}/year after trial\"",
+  "BILLING_TRIAL_MONTHLY_PRICE_AFTER_TRIAL_TAX_EXCLUSIVE": "\"{price} + tax /month after trial\"",
+  "BILLING_TRIAL_YEARLY_PRICE_AFTER_TRIAL_TAX_EXCLUSIVE": "\"{price} + tax /year after trial\"",
   "BILLING_TRIAL_PRICE_NOW": "\"{price} now\"",
   "BILLING_TRIAL_CANCEL_ANYTIME_LINK": "\"[Cancel anytime in your Subscriptions]({link})\"",
   "BILLING_TRIAL_CANCEL_ANYTIME": "\"Cancel anytime in your Subscriptions\"",
