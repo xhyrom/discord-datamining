@@ -8892,16 +8892,16 @@
       "populations": [
         {
           "buckets": {
-            "2": {
+            "none": {
               "rollout": [
+                {
+                  "start": 0,
+                  "end": 500
+                },
                 {
                   "start": 500,
                   "end": 1000
-                }
-              ]
-            },
-            "none": {
-              "rollout": [
+                },
                 {
                   "start": 1000,
                   "end": 10000
