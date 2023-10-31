@@ -19,7 +19,6 @@
 import { join } from "node:path";
 import type { Module } from "..";
 import { DATA_DIR } from "../../utils.ts";
-import { Routes } from "./routes/index.ts";
 import { Experiments } from "./experiments/index.ts";
 import { Channel, ChannelType } from "./Channel.ts";
 import { Strings } from "./strings/index.ts";
@@ -41,10 +40,5 @@ export class Client implements Module {
     await new Channel(ChannelType.Canary).run();
 
     await new Strings().run();
-  }
-
-  // This is a hack to run the routes last
-  async runLast() {
-    await new Routes().run();
   }
 }

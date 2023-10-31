@@ -23,6 +23,7 @@ import { Domains } from "./modules/Domains.ts";
 import { Client } from "./modules/client/index.ts";
 import { Posts } from "./modules/posts/index.ts";
 import { Applications } from "./modules/client/applications/index.ts";
+import { Routes } from "./modules/client/routes/index.ts";
 
 console.log("discord-datamining  Copyright (C) 2023 Jozef Steinhübl");
 
@@ -32,8 +33,8 @@ const client = new Client();
 if (process.env.SCRAPE_CLIENT === "true") await client.run();
 
 // Scrape applications (inside client)
-if (process.env.SCRAPE_CLIENT_APPLICATIONS === "true") await new Applications().run();
-
+if (process.env.SCRAPE_CLIENT_APPLICATIONS === "true")
+  await new Applications().run();
 
 if (process.env.SCRAPE_DOMAINS === "true")
   await new Domains(process.env.SECURITYTRAILS_API_KEY!).run();
@@ -43,6 +44,6 @@ if (process.env.SCRAPE_GITHUB === "true") await new Github().run();
 
 if (process.env.SCRAPE_POSTS === "true") await new Posts().run();
 
-if (process.env.SCRAPE_CLIENT === "true") await client.runLast();
+if (process.env.SCRAPE_CLIENT_ROUTES === "true") await new Routes().run();
 
 export {};
