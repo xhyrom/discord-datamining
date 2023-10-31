@@ -63837,8 +63837,8 @@ strong {
 
 .message__13e98 {
     font-weight: 500;
-    font-size: 1rem;
-    line-height: 1.25rem;
+    font-size: 16px;
+    line-height: 20px;
     white-space: nowrap;
     text-overflow: ellipsis;
     overflow: hidden
@@ -120782,7 +120782,8 @@ input::-webkit-inner-spin-button {
     top: 16px;
     right: 16px;
     padding: 0 4px;
-    background: var(--custom-premium-colors-premium-gradient-tier-2-diagonal)
+    background: var(--custom-premium-colors-premium-gradient-tier-2-diagonal);
+    z-index: 2
 }
 
 .premiumWheel_a23f0e {
@@ -149755,4 +149756,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=8a081a34e7ce1455a5b4.css.map*/
+/*# sourceMappingURL=0ffbd6955a27e36192a4.css.map*/
