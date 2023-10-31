@@ -219,8 +219,8 @@
                             rulesChannelId: L,
                             safetyAlertsChannelId: N,
                             discoverySplash: U,
-                            publicUpdatesChannelId: g,
-                            premiumProgressBarEnabled: R
+                            publicUpdatesChannelId: R,
+                            premiumProgressBarEnabled: g
                         } = t, C = arguments.length > 2 && void 0 !== arguments[2] ? arguments[2] : {}, h = {
                             name: n,
                             description: i,
@@ -239,10 +239,10 @@
                             system_channel_flags: f,
                             rules_channel_id: L,
                             discovery_splash: U,
-                            public_updates_channel_id: g,
+                            public_updates_channel_id: R,
                             safety_alerts_channel_id: N,
-                            ...null != R ? {
-                                premium_progress_bar_enabled: R
+                            ...null != g ? {
+                                premium_progress_bar_enabled: g
                             } : null
                         };
                         return r.default.dispatch({
@@ -510,8 +510,8 @@
                 L = n("517763"),
                 N = n("766274"),
                 U = n("305961"),
-                g = n("697218"),
-                R = n("468349"),
+                R = n("697218"),
+                g = n("468349"),
                 C = n("970700"),
                 h = n("49111"),
                 m = n("447621"),
@@ -579,7 +579,7 @@
                 if (i = e.section, l = e.subsection, i === h.GuildSettingsSections.BANS) {
                     let {
                         enabled: e
-                    } = R.GuildSettingsBansNewExperiment.getCurrentConfig({
+                    } = g.GuildSettingsBansNewExperiment.getCurrentConfig({
                         guildId: s.id,
                         location: "7f0c91_1"
                     });
@@ -650,7 +650,7 @@
             }
             class ei extends c.default.Store {
                 initialize() {
-                    this.waitFor(U.default, g.default)
+                    this.waitFor(U.default, R.default)
                 }
                 getMetadata() {
                     return K
@@ -1015,7 +1015,7 @@
                 u = "667560445975986187",
                 a = "669627189624307712",
                 o = "1",
-                E = [d.Permissions.ADMINISTRATOR, d.Permissions.MANAGE_GUILD, d.Permissions.MANAGE_CHANNELS, d.Permissions.MANAGE_ROLES, d.Permissions.KICK_MEMBERS, d.Permissions.BAN_MEMBERS, d.Permissions.MANAGE_MESSAGES, d.Permissions.MENTION_EVERYONE, d.Permissions.MANAGE_GUILD_EXPRESSIONS, d.Permissions.CREATE_GUILD_EXPRESSIONS, d.Permissions.MANAGE_EVENTS, d.Permissions.CREATE_EVENTS],
+                E = [d.Permissions.ADMINISTRATOR, d.Permissions.MANAGE_GUILD, d.Permissions.MANAGE_CHANNELS, d.Permissions.MANAGE_ROLES, d.Permissions.KICK_MEMBERS, d.Permissions.BAN_MEMBERS, d.Permissions.MANAGE_MESSAGES, d.Permissions.MENTION_EVERYONE, d.Permissions.MANAGE_GUILD_EXPRESSIONS, d.Permissions.CREATE_GUILD_EXPRESSIONS, d.Permissions.MANAGE_EVENTS, d.Permissions.CREATE_EVENTS, d.Permissions.MODERATE_MEMBERS],
                 _ = r.default.combine(...E),
                 S = 1e3,
                 I = "Enable Community Modal";
@@ -1023,4 +1023,4 @@
         }
     }
 ]);
-//# sourceMappingURL=89017014f99bd74c7159.js.map
+//# sourceMappingURL=8434d3712c3b5cc68dcf.js.map
