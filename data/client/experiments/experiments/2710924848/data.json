@@ -17,8 +17,7 @@
       2
     ],
     "config_keys": [
-      "showAlertMode",
-      "alsoShowMemberSafety"
+      "enabled"
     ]
   },
   "rollout": {
