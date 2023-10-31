@@ -165,9 +165,9 @@
                     c = (0, u.useIsDismissibleContentDismissed)(r.DismissibleContent.SERVER_SHOP_PHANTOM_PREVIEW),
                     f = (0, i.default)([a.default], () => null != e && a.default.can(s.Permissions.ADMINISTRATOR, e)),
                     S = null !== (n = null == e ? void 0 : e.hasFeature(s.GuildFeatures.PRODUCTS_AVAILABLE_FOR_PURCHASE)) && void 0 !== n && n,
-                    E = (0, l.useGuildEligibleForGuildProducts)(null == e ? void 0 : e.id, "useGuildShopPreviewVisible"),
-                    I = [s.GuildFeatures.CREATOR_MONETIZABLE, s.GuildFeatures.CREATOR_MONETIZABLE_PROVISIONAL, s.GuildFeatures.ROLE_SUBSCRIPTIONS_ENABLED].some(t => (null == e ? void 0 : e.hasFeature(t)) === !0);
-                return null != e && f && !S && I && d && E && !c
+                    I = (0, l.useGuildEligibleForGuildProducts)(null == e ? void 0 : e.id, "useGuildShopPreviewVisible"),
+                    E = [s.GuildFeatures.CREATOR_MONETIZABLE, s.GuildFeatures.CREATOR_MONETIZABLE_PROVISIONAL, s.GuildFeatures.ROLE_SUBSCRIPTIONS_ENABLED].some(t => (null == e ? void 0 : e.hasFeature(t)) === !0);
+                return null != e && f && !S && E && d && I && !c
             }
         },
         590260: function(e, t, n) {
@@ -239,7 +239,7 @@
                     return S
                 },
                 useIsMonetizationReapplicationDisabled: function() {
-                    return E
+                    return I
                 }
             });
             var i = n("884691"),
@@ -297,7 +297,7 @@
                         restrictionsLoading: u
                     }
                 },
-                E = e => {
+                I = e => {
                     let t = (0, r.useStateFromStores)([o.default], () => o.default.getGuild(e), [e]),
                         {
                             restrictions: n,
@@ -464,69 +464,29 @@
                 let n = (0, s.useIsMemberVerificationManualApproval)(e),
                     f = (0, r.useStateFromStores)([u.default], () => u.default.getGuild(e)),
                     S = null != f && n && l.default.can(c.Permissions.KICK_MEMBERS, f) && f.hasVerificationGate(),
-                    E = (0, r.useStateFromStores)([o.default], () => o.default.get(e), [e]);
+                    I = (0, r.useStateFromStores)([o.default], () => o.default.get(e), [e]);
                 i.useEffect(() => {
                     S && a.default.fetchVerificationForm(e)
                 }, [S, e]);
-                let I = i.useMemo(() => (null !== (t = null == E ? void 0 : E.formFields) && void 0 !== t ? t : []).some(e => !(0, d.isTermsFormField)(e)), [null == E ? void 0 : E.formFields]);
-                return S && I
+                let E = i.useMemo(() => (null !== (t = null == I ? void 0 : I.formFields) && void 0 !== t ? t : []).some(e => !(0, d.isTermsFormField)(e)), [null == I ? void 0 : I.formFields]);
+                return S && E
             }
         },
         536999: function(e, t, n) {
             "use strict";
             n.r(t), n.d(t, {
-                useMemberSafetyFriendExperiment: function() {
-                    return d
-                },
-                isInMemberSafetyExperiment: function() {
-                    return c
-                },
-                useMemberSafetyExperiment: function() {
-                    return f
-                },
                 useIsBulkBanningExperimentEnabled: function() {
-                    return S
+                    return l
                 },
                 isInMembersSearchV2Experiment: function() {
-                    return E
+                    return a
                 },
                 useMembersSearchV2Experiment: function() {
-                    return I
+                    return o
                 }
             });
-            var i = n("862205"),
-                r = n("610174");
-            let u = (0, i.createExperiment)({
-                    kind: "guild",
-                    id: "2023-05_guild_member_safety_experiment",
-                    label: "Guild Member Safety Experiment",
-                    defaultConfig: {
-                        enabled: !1
-                    },
-                    treatments: [{
-                        id: 1,
-                        label: "Guild Member Safety Experiment",
-                        config: {
-                            enabled: !0
-                        }
-                    }]
-                }),
-                l = (0, i.createExperiment)({
-                    kind: "guild",
-                    id: "2023-07_member_safety_non_community",
-                    label: "Members Safety Non Community Experiment",
-                    defaultConfig: {
-                        enabled: !1
-                    },
-                    treatments: [{
-                        id: 1,
-                        label: "Enable Members Safety Page for Non Community Guilds",
-                        config: {
-                            enabled: !0
-                        }
-                    }]
-                }),
-                a = (0, i.createExperiment)({
+            var i = n("862205");
+            let r = (0, i.createExperiment)({
                     kind: "guild",
                     id: "2023-08_guild_member_bulk_ban_experiment",
                     label: "Bulk Banning Guild Members Experiment",
@@ -541,7 +501,7 @@
                         }
                     }]
                 }),
-                o = (0, i.createExperiment)({
+                u = (0, i.createExperiment)({
                     kind: "guild",
                     id: "2023-07_guild_members_search_in_elasticsearch",
                     label: "Members Search V2 Experiment",
@@ -562,116 +522,30 @@
                         }
                     }]
                 }),
-                s = function(e) {
-                    let {
-                        autoTrackExposure: t = !1,
-                        disable: n = !1,
-                        location: i = "f03bed_1"
-                    } = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : {}, {
-                        enabled: r
-                    } = l.getCurrentConfig({
-                        guildId: e,
-                        location: i
-                    }, {
-                        autoTrackExposure: t,
-                        disable: n
-                    });
-                    return r
-                },
-                d = function(e) {
-                    let {
-                        autoTrackExposure: t = !1,
-                        disable: n = !1,
-                        location: i = "f03bed_2"
-                    } = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : {}, {
-                        enabled: r
-                    } = l.useExperiment({
-                        guildId: e,
-                        location: i
-                    }, {
-                        autoTrackExposure: t,
-                        disable: n
-                    });
-                    return r
-                },
-                c = function(e) {
-                    let {
-                        autoTrackExposure: t = !1,
-                        disable: n = !1,
-                        location: i = "f03bed_3"
-                    } = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : {}, {
-                        enabled: l
-                    } = u.getCurrentConfig({
-                        guildId: e,
-                        location: i
-                    }, {
-                        autoTrackExposure: t,
-                        disable: n
-                    }), {
-                        alsoShowMemberSafety: a
-                    } = r.GuildAlertModeExperiment.getCurrentConfig({
-                        guildId: e,
-                        location: i
-                    }, {
-                        autoTrackExposure: t,
-                        disable: n
-                    }), o = s(e, {
-                        autoTrackExposure: t,
-                        disable: n
-                    });
-                    return l || a || o
-                },
-                f = function(e) {
-                    let {
-                        autoTrackExposure: t = !1,
-                        disable: n = !1,
-                        location: i = "f03bed_4"
-                    } = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : {}, {
-                        alsoShowMemberSafety: l
-                    } = r.GuildAlertModeExperiment.useExperiment({
-                        guildId: e,
-                        location: i
-                    }, {
-                        autoTrackExposure: t,
-                        disable: n
-                    }), {
-                        enabled: a
-                    } = u.useExperiment({
-                        guildId: e,
-                        location: i
-                    }, {
-                        autoTrackExposure: t,
-                        disable: n
-                    }), o = d(e, {
-                        autoTrackExposure: t,
-                        disable: n
-                    });
-                    return a || l || o
-                },
-                S = function(e) {
+                l = function(e) {
                     let {
                         autoTrackExposure: t = !1,
                         disable: n = !1,
                         location: i = "f03bed_5"
                     } = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : {}, {
-                        enabled: r
-                    } = a.useExperiment({
+                        enabled: u
+                    } = r.useExperiment({
                         guildId: e,
                         location: i
                     }, {
                         autoTrackExposure: t,
                         disable: n
                     });
-                    return r
+                    return u
                 },
-                E = function(e) {
+                a = function(e) {
                     let {
                         autoTrackExposure: t = !1,
                         disable: n = !1,
                         location: i = "f03bed_7"
                     } = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : {}, {
                         enabled: r
-                    } = o.getCurrentConfig({
+                    } = u.getCurrentConfig({
                         guildId: e,
                         location: i
                     }, {
@@ -680,14 +554,14 @@
                     });
                     return r
                 },
-                I = function(e) {
+                o = function(e) {
                     let {
                         autoTrackExposure: t = !1,
                         disable: n = !1,
                         location: i = "f03bed_8"
                     } = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : {}, {
                         enabled: r
-                    } = o.useExperiment({
+                    } = u.useExperiment({
                         guildId: e,
                         location: i
                     }, {
@@ -706,23 +580,20 @@
                 canAccessMemberSafetyPage: function() {
                     return S
                 },
-                canAccessMemberSafetyPageWithExperiment: function() {
-                    return I
-                },
                 useCanAccessMemberSafetyPage: function() {
-                    return _
+                    return E
                 },
                 useCanAccessBulkBanningFeature: function() {
-                    return p
+                    return _
                 },
                 useCanAccessInviteCodeFeature: function() {
-                    return R
+                    return p
                 },
                 useCanBulkBanUser: function() {
-                    return h
+                    return R
                 },
                 canBulkBanUser: function() {
-                    return b
+                    return h
                 }
             });
             var i = n("316693"),
@@ -755,35 +626,21 @@
                     }), c);
                     return r
                 },
-                E = function(e) {
+                I = function(e) {
                     let t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : [u.default, a.default],
                         n = f(e, t);
                     return null != n && l.default.can(d.Permissions.MANAGE_GUILD, n.guild) && l.default.can(d.Permissions.BAN_MEMBERS, n.guild)
-                },
-                I = function(e) {
-                    let t = arguments.length > 1 && void 0 !== arguments[1] && arguments[1],
-                        n = S(e),
-                        i = (0, s.isInMemberSafetyExperiment)(e, {
-                            autoTrackExposure: t,
-                            disable: !n
-                        });
-                    return n && i
                 };
 
-            function _(e) {
-                let t = arguments.length > 1 && void 0 !== arguments[1] && arguments[1],
-                    n = (0, r.useStateFromStores)([u.default, a.default], () => S(e, [u.default, a.default]), [e]),
-                    i = (0, s.useMemberSafetyExperiment)(e, {
-                        autoTrackExposure: t,
-                        disable: !n
-                    });
-                return n && i
+            function E(e) {
+                let t = (0, r.useStateFromStores)([u.default, a.default], () => S(e, [u.default, a.default]), [e]);
+                return t
             }
 
-            function p(e, t) {
+            function _(e, t) {
                 let n = arguments.length > 2 && void 0 !== arguments[2] && arguments[2],
-                    i = _(e, n),
-                    l = (0, r.useStateFromStores)([u.default, a.default], () => E(e, [u.default, a.default]), [e]),
+                    i = E(e),
+                    l = (0, r.useStateFromStores)([u.default, a.default], () => I(e, [u.default, a.default]), [e]),
                     o = (0, s.useIsBulkBanningExperimentEnabled)(e, {
                         location: t,
                         autoTrackExposure: n,
@@ -792,21 +649,21 @@
                 return i && l && o
             }
 
-            function R(e) {
+            function p(e) {
                 return (0, r.useStateFromStores)([u.default, l.default], () => {
                     let t = u.default.getGuild(e);
                     return null != t && l.default.can(d.Permissions.MANAGE_GUILD, t)
                 }, [e])
             }
 
-            function h(e, t, n) {
+            function R(e, t, n) {
                 return (0, r.useStateFromStores)([l.default, u.default], () => {
                     let i = u.default.getGuild(e);
                     return null != i && t && l.default.canManageUser(d.Permissions.BAN_MEMBERS, n, i)
                 }, [t, e, n])
             }
 
-            function b(e, t, n) {
+            function h(e, t, n) {
                 let i = u.default.getGuild(e);
                 return null != i && t && l.default.canManageUser(d.Permissions.BAN_MEMBERS, n, i)
             }
@@ -880,10 +737,10 @@
                     return S
                 },
                 createSubscriptionGroupListing: function() {
-                    return E
+                    return I
                 },
                 fetchSubscriptionListingForPlan: function() {
-                    return I
+                    return E
                 },
                 deleteSubscriptionListing: function() {
                     return _
@@ -895,13 +752,13 @@
                     return R
                 },
                 createSubscriptionListing: function() {
-                    return b
+                    return G
                 },
                 updateSubscriptionListing: function() {
                     return g
                 },
                 fetchMonetizationRestrictions: function() {
-                    return G
+                    return b
                 }
             });
             var i = n("398183"),
@@ -954,14 +811,14 @@
                     })
                 }
             }
-            async function E(e, t) {
+            async function I(e, t) {
                 let n = await s.createGuildRoleSubscriptionGroupListing(e, t);
                 return r.default.dispatch({
                     type: "GUILD_ROLE_SUBSCRIPTIONS_UPDATE_GROUP_LISTING",
                     listing: n
                 }), n
             }
-            async function I(e) {
+            async function E(e) {
                 var t;
                 r.default.dispatch({
                     type: "GUILD_ROLE_SUBSCRIPTIONS_FETCH_LISTING_FOR_PLAN",
@@ -1003,7 +860,7 @@
                     listing: i
                 }), i
             }
-            async function b(e) {
+            async function G(e) {
                 let {
                     guildId: t,
                     groupListingId: n,
@@ -1038,7 +895,7 @@
                     includeArchivedListings: !0
                 }), l
             }
-            async function G(e) {
+            async function b(e) {
                 let {
                     signal: t
                 } = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : {}, n = !1;
@@ -1098,10 +955,10 @@
                     return S
                 },
                 getGuildRoleSubscriptionGroupListing: function() {
-                    return E
+                    return I
                 },
                 getGuildRoleSubscriptionGroupForSubscriptionPlan: function() {
-                    return I
+                    return E
                 },
                 deleteGuildRoleSubscriptionListing: function() {
                     return _
@@ -1116,13 +973,13 @@
                     return h
                 },
                 getGuildRoleSubscriptionTrialEligibility: function() {
-                    return b
+                    return G
                 },
                 getGuildMonetizationRestrictions: function() {
                     return g
                 },
                 fetchHighlightedCreatorGuildDetails: function() {
-                    return G
+                    return b
                 }
             });
             var i = n("872717"),
@@ -1218,7 +1075,7 @@
                 } catch (e) {
                     throw new r.APIError(e)
                 }
-            }, E = async function(e, t) {
+            }, I = async function(e, t) {
                 let n = arguments.length > 2 && void 0 !== arguments[2] ? arguments[2] : {};
                 try {
                     let r = await i.default.get({
@@ -1232,7 +1089,7 @@
                 } catch (e) {
                     throw new r.APIError(e)
                 }
-            }, I = async e => {
+            }, E = async e => {
                 try {
                     let t = await i.default.get({
                         url: u.Endpoints.SUBSCRIPTION_PLAN_GUILD_ROLE_GROUP_LISTING(e)
@@ -1277,7 +1134,7 @@
                 } catch (e) {
                     throw new r.APIError(e)
                 }
-            }, b = async (e, t, n) => {
+            }, G = async (e, t, n) => {
                 try {
                     let r = await i.default.get({
                         url: u.Endpoints.GUILD_ROLE_SUBSCRIPTION_TRIAL_ELIGIBILITY(e, t, n)
@@ -1299,7 +1156,7 @@
                 } catch (e) {
                     throw new r.APIError(e)
                 }
-            }, G = async e => {
+            }, b = async e => {
                 try {
                     var t;
                     let n = await i.default.get({
@@ -1355,7 +1212,7 @@
                     return S
                 },
                 useShowRoleSubscriptionsInChannelList: function() {
-                    return E
+                    return I
                 }
             });
             var i = n("446674"),
@@ -1390,7 +1247,7 @@
                 return !r && (n || t)
             }
 
-            function E(e) {
+            function I(e) {
                 let t = S(e),
                     n = (0, r.useIsEligibleForSubscriptionsInGuildShop)(e, "useShowRoleSubscriptionsInChannelList");
                 return t && !n
@@ -1414,8 +1271,8 @@
                 c = n("120252"),
                 f = n("42203"),
                 S = n("305961"),
-                E = n("449008"),
-                I = n("361572"),
+                I = n("449008"),
+                E = n("361572"),
                 _ = n("49111"),
                 p = n("724210");
             async function R(e) {
@@ -1441,12 +1298,12 @@
                     case p.StaticChannelRoute.CUSTOMIZE_COMMUNITY:
                         return null != R && R.hasFeature(_.GuildFeatures.COMMUNITY);
                     case p.StaticChannelRoute.MEMBER_SAFETY:
-                        return (0, a.canAccessMemberSafetyPageWithExperiment)(t, !0);
+                        return (0, a.canAccessMemberSafetyPage)(t);
                     default:
-                        (0, E.assertNever)(n)
+                        (0, I.assertNever)(n)
                 }
                 let h = f.default.getChannel(n);
-                return (null != h || (await c.default.loadThread(n), null != (h = f.default.getChannel(n)))) && ((0, I.canViewChannel)(h) || i.default.isChannelGatedAndVisible(t, n))
+                return (null != h || (await c.default.loadThread(n), null != (h = f.default.getChannel(n)))) && ((0, E.canViewChannel)(h) || i.default.isChannelGatedAndVisible(t, n))
             }
         },
         537325: function(e, t, n) {
@@ -1483,7 +1340,7 @@
                     (0, l.transitionTo)(e);
                     return
                 }
-                let E = function(e) {
+                let I = function(e) {
                     if (null == e.channelId) return e;
                     let t = o.default.getChannel(e.channelId);
                     if (null == t) return e;
@@ -1493,18 +1350,18 @@
                         guildId: null != n ? n : c.ME
                     }
                 }(S);
-                if (null == E.channelId) {
-                    (0, a.transitionToGuild)(E.guildId);
+                if (null == I.channelId) {
+                    (0, a.transitionToGuild)(I.guildId);
                     return
                 }
-                null != E.threadId ? (0, l.transitionTo)(c.Routes.CHANNEL_THREAD_VIEW(E.guildId, E.channelId, E.threadId, E.messageId), t, f) : (0, l.transitionTo)(c.Routes.CHANNEL(E.guildId, E.channelId, E.messageId), t, f)
+                null != I.threadId ? (0, l.transitionTo)(c.Routes.CHANNEL_THREAD_VIEW(I.guildId, I.channelId, I.threadId, I.messageId), t, f) : (0, l.transitionTo)(c.Routes.CHANNEL(I.guildId, I.channelId, I.messageId), t, f)
             }
         },
         120252: function(e, t, n) {
             "use strict";
             n.r(t), n.d(t, {
                 default: function() {
-                    return I
+                    return E
                 }
             });
             var i = n("803182"),
@@ -1519,13 +1376,13 @@
             let f = {},
                 S = !1;
 
-            function E(e) {
+            function I(e) {
                 if (null == e || e === c.FAKE_PLACEHOLDER_PRIVATE_CHANNEL_ID || (0, c.isStaticChannelRoute)(e) || null != o.default.getChannel(e)) return Promise.resolve();
                 if (S || (S = !0, u.default.subscribe("CONNECTION_OPEN", () => {
                         f = {};
                         let e = s.default.getChannelId(),
                             t = o.default.getChannel(e);
-                        null != e && null == t && E(e)
+                        null != e && null == t && I(e)
                     })), !l.default.isConnected()) return Promise.resolve();
                 let t = f[e];
                 if (null != t) return "LOADING" === t.type ? t.promise : Promise.resolve();
@@ -1533,7 +1390,7 @@
                         path: d.Routes.CHANNEL(":guildId", ":channelId", ":messageId"),
                         exact: !0
                     }),
-                    I = r.default.get(d.Endpoints.CHANNEL(e)).then(t => {
+                    E = r.default.get(d.Endpoints.CHANNEL(e)).then(t => {
                         let {
                             body: i
                         } = t;
@@ -1562,13 +1419,13 @@
                     });
                 return f[e] = {
                     type: "LOADING",
-                    promise: I
-                }, I
+                    promise: E
+                }, E
             }
-            var I = {
-                loadThread: E
+            var E = {
+                loadThread: I
             }
         }
     }
 ]);
-//# sourceMappingURL=26156c606cda527f2fd7.js.map
+//# sourceMappingURL=d1d386c979f8d71656be.js.map

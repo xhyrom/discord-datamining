@@ -63778,8 +63778,8 @@ strong {
 
 .message__13e98 {
     font-weight: 500;
-    font-size: 16px;
-    line-height: 20px;
+    font-size: 1rem;
+    line-height: 1.25rem;
     white-space: nowrap;
     text-overflow: ellipsis;
     overflow: hidden
@@ -100418,7 +100418,9 @@ html .tabBadge__002b3 {
 }
 
 .videoControlsTextActivity__6a0a5 {
-    z-index: 2
+    z-index: 2;
+    cursor: pointer;
+    pointer-events: all
 }
 
 .topControls__372d9 {
@@ -100430,9 +100432,11 @@ html .tabBadge__002b3 {
 }
 
 .topControlsTextActivity_a68ae1 {
+    height: 100%;
     display: flex;
     flex-direction: row;
-    justify-content: space-between
+    justify-content: space-between;
+    align-items: flex-start
 }
 
 .bottomControls__96434 {
@@ -100608,11 +100612,6 @@ html .tabBadge__002b3 {
     height: 410px
 }
 
-.root__6f92f.pipModeSquare__01856 {
-    width: 160px;
-    height: 160px
-}
-
 .root__6f92f.hidden_bbd1c9 {
     width: 0;
     max-height: 0;
@@ -100634,13 +100633,6 @@ html .tabBadge__002b3 {
     height: 410px
 }
 
-.iframe__214b3.pipModeSquare__01856 {
-    width: 178%;
-    height: 100%;
-    position: relative;
-    left: -39%
-}
-
 .pipNonInteractive__31cff {
     pointer-events: none
 }
@@ -100651,16 +100643,6 @@ html .tabBadge__002b3 {
     right: 0;
     left: 0;
     bottom: 0
-}
-
-.clickable__56953 {
-    cursor: pointer
-}
-
-.fillParent_bfa15d {
-    width: 100%;
-    height: 100%;
-    display: block
 }
 
 .button_e25369 {
@@ -149727,4 +149709,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=1a4c560a1341a6c93899.css.map*/
+/*# sourceMappingURL=39ec9fc76ec2c51458aa.css.map*/
