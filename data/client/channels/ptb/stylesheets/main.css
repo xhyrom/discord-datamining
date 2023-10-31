@@ -63815,8 +63815,8 @@ strong {
 
 .message__13e98 {
     font-weight: 500;
-    font-size: 16px;
-    line-height: 20px;
+    font-size: 1rem;
+    line-height: 1.25rem;
     white-space: nowrap;
     text-overflow: ellipsis;
     overflow: hidden
@@ -149746,4 +149746,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=c31926216efd158c6399.css.map*/
+/*# sourceMappingURL=cdda623315ffda35b55d.css.map*/
