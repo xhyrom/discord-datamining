@@ -16541,6 +16541,7 @@
                 REPORTS_USER_PREVIEW_TITLE: "Selected User",
                 REPORTS_FREE_TEXT_PLACEHOLDER: "(Optional) Provide more context about your report here",
                 REPORTS_USER_MENU_OPTION_MOBILE: "Report User Profile",
+                POLL: "Poll",
                 POLLS: "Polls",
                 POLL_CHOOSE_SINGLE_ANSWER_PROMPT: "Choose an Answer",
                 POLL_SUBMIT_VOTE: "Submit Vote",
@@ -17960,7 +17961,7 @@
                 u = E("782340");
             (0, a.setUpdateRules)(s.default), (0, r.default)(u.default, n.default, T.default), i.default.Emitter.injectBatchEmitChanges(o.unstable_batchedUpdates), i.default.PersistedStore.disableWrites = __OVERLAY__, i.default.initialize();
             let L = window.GLOBAL_ENV.RELEASE_CHANNEL;
-            new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(L, ", Build Number: ").concat("242163", ", Version Hash: ").concat("1c190868075f9851bf93d85be60ce8ed56b79639")), t.default.setTags({
+            new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(L, ", Build Number: ").concat("242171", ", Version Hash: ").concat("4863e71dda2e6e46c698e47be511a2bb07f3d233")), t.default.setTags({
                 appContext: l.CURRENT_APP_CONTEXT
             }), S.default.initBasic(), N.default.init(), I.FocusRingManager.init(), O.init(), (0, R.cleanupTempFiles)()
         },
@@ -20403,8 +20404,8 @@
 
             function o() {
                 var e;
-                let _ = parseInt((e = "242163", "242163"));
-                return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("242163")), _ = 0), _
+                let _ = parseInt((e = "242171", "242171"));
+                return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("242171")), _ = 0), _
             }
         },
         990629: function(e, _, E) {
@@ -36612,4 +36613,4 @@
         }
     }
 ]);
-//# sourceMappingURL=9b86a3021bd184e7ab77.js.map
+//# sourceMappingURL=086be7772da1552caaad.js.map
