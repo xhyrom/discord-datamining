@@ -34032,7 +34032,7 @@
                     return
                 }
                 let [s, a] = r;
-                for (let t of ((0, _.default)(s), k += 1, G.delete(e), f.default.restored(e), o.default.mark("❗", "loaded guild channels (guild: ".concat(e, ")"), a), s)) !Object.hasOwn(N, t.id) && (t.type === A.ChannelTypes.GUILD_VOICE && delete t.status, K((0, m.castChannelRecord)(t)));
+                for (let n of ((0, _.default)(s), 0 !== t && (k += 1), G.delete(e), f.default.restored(e), o.default.mark("❗", "loaded guild channels (guild: ".concat(e, ")"), a), s)) !Object.hasOwn(N, n.id) && (n.type === A.ChannelTypes.GUILD_VOICE && delete n.status, K((0, m.castChannelRecord)(n)));
                 v.verbose("hydration complete (guild: ".concat(e, ", channels: ").concat(s.length, ", guilds_loaded: ").concat(k, ")"))
             }
 
@@ -48901,7 +48901,7 @@
                         var i;
                         let d = {
                                 environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                                build_number: "241908"
+                                build_number: "241935"
                             },
                             E = l.default.getCurrentUser();
                         null != E && (d.user_id = E.id, d.user_name = E.tag, null != E.email && (d.email = E.email));
@@ -62227,4 +62227,4 @@
         }
     }
 ]);
-//# sourceMappingURL=1466d976f15113c20f55.js.map
+//# sourceMappingURL=4d2f3f11fa832f9b79ea.js.map
