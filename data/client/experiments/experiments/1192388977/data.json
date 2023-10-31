@@ -1,0 +1,21 @@
+{
+  "data": {
+    "kind": "user",
+    "id": "2023-10_add_friend_prominence",
+    "label": "Make adding friends more prominent (mobile DM)",
+    "description": [
+      "Not Eligible",
+      "Control Bucket",
+      "Treatment 1: enable"
+    ],
+    "hash": 1192388977,
+    "buckets": [
+      -1,
+      0,
+      1
+    ],
+    "config_keys": [
+      "enabled"
+    ]
+  }
+}

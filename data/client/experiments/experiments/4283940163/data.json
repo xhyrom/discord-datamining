@@ -1,0 +1,21 @@
+{
+  "data": {
+    "kind": "user",
+    "id": "2023-10_add_friend_prominence_desktop",
+    "label": "Make adding friends more prominent (desktop profile)",
+    "description": [
+      "Not Eligible",
+      "Control Bucket",
+      "Treatment 1: enable"
+    ],
+    "hash": 4283940163,
+    "buckets": [
+      -1,
+      0,
+      1
+    ],
+    "config_keys": [
+      "moreAddFriend"
+    ]
+  }
+}
