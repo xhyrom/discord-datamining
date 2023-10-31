@@ -1,5 +1,5 @@
 (this.webpackChunkdiscord_app = this.webpackChunkdiscord_app || []).push([
-    ["88321"], {
+    ["25279"], {
         516555: function(t, e, n) {
             "use strict";
             n.r(e), n.d(e, {
@@ -242,14 +242,14 @@
                 return C([t, e])[0]
             }
 
-            function A(t) {
+            function z(t) {
                 return "number" == typeof t ? {
                     x: t,
                     y: t
                 } : t
             }
 
-            function z(t) {
+            function A(t) {
                 return "number" == typeof t ? {
                     x: t,
                     y: t,
@@ -261,39 +261,39 @@
                 return function(t) {
                     switch (t.type) {
                         case "static":
-                            var e = A(t.value);
+                            var e = z(t.value);
                             return new y(new m(e.x), new m(e.y));
                         case "static-random":
-                            var n = A(t.minValue),
-                                r = A(t.maxValue);
+                            var n = z(t.minValue),
+                                r = z(t.maxValue);
                             return new y(new m(b(n.x, r.x)), new m(b(n.y, r.y)));
                         case "linear":
-                            e = A(t.value);
-                            var i = A(t.addValue);
+                            e = z(t.value);
+                            var i = z(t.addValue);
                             return new y(new w(e.x, i.x), new w(e.y, i.y));
                         case "linear-random":
-                            n = A(t.minValue), r = A(t.maxValue);
-                            var o = A(t.minAddValue),
-                                a = A(t.maxAddValue);
+                            n = z(t.minValue), r = z(t.maxValue);
+                            var o = z(t.minAddValue),
+                                a = z(t.maxAddValue);
                             return new y(new w(b(n.x, r.x), b(o.x, a.x)), new w(b(n.y, r.y), b(o.x, a.x)));
                         case "oscillating":
-                            e = A(t.value);
-                            var u = A(t.start),
-                                c = A(t.final),
-                                s = A(t.duration),
-                                l = A(t.direction);
+                            e = z(t.value);
+                            var u = z(t.start),
+                                c = z(t.final),
+                                s = z(t.duration),
+                                l = z(t.direction);
                             return new y(new x(e.x, u.x, c.x, s.x, l.x, t.easingFunction), new x(e.y, u.y, c.y, s.x, l.y, t.easingFunction));
                         case "oscillating-random":
-                            n = A(t.minValue), r = A(t.maxValue);
-                            var f = A(t.minStart),
-                                h = A(t.maxStart),
-                                d = A(t.minFinal),
-                                p = A(t.maxFinal),
-                                v = A(t.minDuration),
-                                g = A(t.maxDuration),
-                                z = A(t.minDirection),
-                                O = A(t.maxDirection);
-                            return new y(new x(b(n.x, r.x), b(f.x, h.x), b(d.x, p.x), b(v.x, g.x), j(z.x, O.x), C(t.easingFunctions)[0]), new x(b(n.y, r.y), b(f.y, h.y), b(d.y, p.y), b(v.y, g.y), j(z.y, O.y), C(t.easingFunctions)[0]))
+                            n = z(t.minValue), r = z(t.maxValue);
+                            var f = z(t.minStart),
+                                h = z(t.maxStart),
+                                d = z(t.minFinal),
+                                p = z(t.maxFinal),
+                                v = z(t.minDuration),
+                                g = z(t.maxDuration),
+                                A = z(t.minDirection),
+                                O = z(t.maxDirection);
+                            return new y(new x(b(n.x, r.x), b(f.x, h.x), b(d.x, p.x), b(v.x, g.x), j(A.x, O.x), C(t.easingFunctions)[0]), new x(b(n.y, r.y), b(f.y, h.y), b(d.y, p.y), b(v.y, g.y), j(A.y, O.y), C(t.easingFunctions)[0]))
                     }
                 }(p(p({}, t), {
                     valueType: "Vector2"
@@ -308,7 +308,7 @@
                     d = t.onMouseUp,
                     v = t.onBeforeRender,
                     y = t.onAfterRender,
-                    A = function(t, e) {
+                    z = function(t, e) {
                         var n = {};
                         for (var r in t) Object.prototype.hasOwnProperty.call(t, r) && 0 > e.indexOf(r) && (n[r] = t[r]);
                         if (null != t && "function" == typeof Object.getOwnPropertySymbols) {
@@ -347,9 +347,9 @@
                         }), null == S.current && P()
                     }, [P]),
                     F = r.useCallback(function(t, e, n, r, o) {
-                        var a, u, c, f, h, d, v, y, A, R, k, S, E, _, P, F = (a = null !== (P = t.id) && void 0 !== P ? P : (0, i.v4)(), u = t, c = n, f = r, h = o, y = O((v = (d = u, p(p({
+                        var a, u, c, f, h, d, v, y, z, R, k, S, E, _, P, F = (a = null !== (P = t.id) && void 0 !== P ? P : (0, i.v4)(), u = t, c = n, f = r, h = o, y = O((v = (d = u, p(p({
                             id: a
-                        }, l), d))).size), R = (A = function(t, e) {
+                        }, l), d))).size), R = (z = function(t, e) {
                             if (null != t) {
                                 var n = e.sprites.findIndex(function(e) {
                                     return "string" == typeof t ? e.src === t && e.colorize : e.src === t.src && e.colorize === t.colorize
@@ -357,7 +357,7 @@
                                 if (-1 !== n) return [t, n]
                             }
                             return C(e.sprites)
-                        }(f, c))[0], k = A[1], S = function(t, e, n) {
+                        }(f, c))[0], k = z[1], S = function(t, e, n) {
                             if (!("string" == typeof(r = t) || r.colorize)) return 0;
                             var r, i = null != e ? n.colors.findIndex(function(t) {
                                 return t === e
@@ -370,39 +370,39 @@
                             rotation: (E = v.rotation, function(t) {
                                 switch (t.type) {
                                     case "static":
-                                        var e = z(t.value);
+                                        var e = A(t.value);
                                         return new g(new m(e.x), new m(e.y), new m(e.z));
                                     case "static-random":
-                                        var n = z(t.minValue),
-                                            r = z(t.maxValue);
+                                        var n = A(t.minValue),
+                                            r = A(t.maxValue);
                                         return new g(new m(b(n.x, r.x)), new m(b(n.y, r.y)), new m(b(n.z, r.z)));
                                     case "linear":
-                                        e = z(t.value);
-                                        var i = z(t.addValue);
+                                        e = A(t.value);
+                                        var i = A(t.addValue);
                                         return new g(new w(e.x, i.x), new w(e.y, i.y), new w(e.z, i.z));
                                     case "linear-random":
-                                        n = z(t.minValue), r = z(t.maxValue);
-                                        var o = z(t.minAddValue),
-                                            a = z(t.maxAddValue);
+                                        n = A(t.minValue), r = A(t.maxValue);
+                                        var o = A(t.minAddValue),
+                                            a = A(t.maxAddValue);
                                         return new g(new w(b(n.x, r.x), b(o.x, a.x)), new w(b(n.y, r.y), b(o.y, a.y)), new w(b(n.z, r.z), b(o.z, a.z)));
                                     case "oscillating":
-                                        e = z(t.value);
-                                        var u = z(t.start),
-                                            c = z(t.final),
-                                            s = z(t.duration),
-                                            l = z(t.direction);
+                                        e = A(t.value);
+                                        var u = A(t.start),
+                                            c = A(t.final),
+                                            s = A(t.duration),
+                                            l = A(t.direction);
                                         return new g(new x(e.x, u.x, c.x, s.x, l.x, t.easingFunction), new x(e.y, u.y, c.y, s.z, l.y, t.easingFunction), new x(e.z, u.z, c.z, s.z, l.z, t.easingFunction));
                                     case "oscillating-random":
-                                        n = z(t.minValue), r = z(t.maxValue);
-                                        var f = z(t.minStart),
-                                            h = z(t.maxStart),
-                                            d = z(t.minFinal),
-                                            p = z(t.maxFinal),
-                                            v = z(t.minDuration),
-                                            y = z(t.maxDuration),
-                                            A = z(t.minDirection),
-                                            O = z(t.maxDirection);
-                                        return new g(new x(b(n.x, r.x), b(f.x, h.x), b(d.x, p.x), b(v.x, y.x), j(A.x, O.x), C(t.easingFunctions)[0]), new x(b(n.y, r.y), b(f.y, h.y), b(d.y, p.y), b(v.y, y.y), j(A.y, O.y), C(t.easingFunctions)[0]), new x(b(n.z, r.z), b(f.z, h.z), b(d.z, p.z), b(v.z, y.z), j(A.z, O.z), C(t.easingFunctions)[0]))
+                                        n = A(t.minValue), r = A(t.maxValue);
+                                        var f = A(t.minStart),
+                                            h = A(t.maxStart),
+                                            d = A(t.minFinal),
+                                            p = A(t.maxFinal),
+                                            v = A(t.minDuration),
+                                            y = A(t.maxDuration),
+                                            z = A(t.minDirection),
+                                            O = A(t.maxDirection);
+                                        return new g(new x(b(n.x, r.x), b(f.x, h.x), b(d.x, p.x), b(v.x, y.x), j(z.x, O.x), C(t.easingFunctions)[0]), new x(b(n.y, r.y), b(f.y, h.y), b(d.y, p.y), b(v.y, y.y), j(z.y, O.y), C(t.easingFunctions)[0]), new x(b(n.z, r.z), b(f.z, h.z), b(d.z, p.z), b(v.z, y.z), j(z.z, O.z), C(t.easingFunctions)[0]))
                                 }
                             }(p(p({}, E), {
                                 valueType: "Vector3"
@@ -541,7 +541,7 @@
                         function() {
                             null != t && e.unobserve(t)
                         }
-                }, []), r.createElement("canvas", p({}, A, {
+                }, []), r.createElement("canvas", p({}, z, {
                     className: o,
                     ref: R
                 }))
@@ -814,21 +814,6 @@
                         isReady: o && null != e && null != t
                     }
                 }, [s, f, t, u, c, l, o, e])
-            }
-        },
-        448105: function(t, e, n) {
-            "use strict";
-            t.exports = function(t, e) {
-                var n = e.length,
-                    r = t.length;
-                if (r > n) return !1;
-                if (r === n) return t === e;
-                t: for (var i = 0, o = 0; i < r; i++) {
-                    for (var a = t.charCodeAt(i); o < n;)
-                        if (e.charCodeAt(o++) === a) continue t;
-                    return !1
-                }
-                return !0
             }
         },
         458389: function(t, e, n) {
@@ -1445,8 +1430,8 @@
                     includes: e => j(v(t, g(t => x(t) && t.includes(e)))),
                     regex: e => j(v(t, g(t => x(t) && !!t.match(e))))
                 }),
-                A = j(g(x)),
-                z = (t, e) => g(n => w(n) && t <= n && e >= n),
+                z = j(g(x)),
+                A = (t, e) => g(n => w(n) && t <= n && e >= n),
                 O = t => g(e => w(e) && e < t),
                 R = t => g(e => w(e) && e > t),
                 k = t => g(e => w(e) && e <= t),
@@ -1456,7 +1441,7 @@
                 P = () => g(t => w(t) && t > 0),
                 V = () => g(t => w(t) && t < 0),
                 F = t => Object.assign(f(t), {
-                    between: (e, n) => F(v(t, z(e, n))),
+                    between: (e, n) => F(v(t, A(e, n))),
                     lt: e => F(v(t, O(e))),
                     gt: e => F(v(t, R(e))),
                     lte: e => F(v(t, k(e))),
@@ -1621,8 +1606,8 @@
                 select: m,
                 any: C,
                 _: C,
-                string: A,
-                between: z,
+                string: z,
+                between: A,
                 lt: O,
                 gt: R,
                 lte: k,
@@ -1723,4 +1708,4 @@
         }
     }
 ]);
-//# sourceMappingURL=5b9c5ef44a35660974fb.js.map
+//# sourceMappingURL=5819875dc2a2f1025d4b.js.map
