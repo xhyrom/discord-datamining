@@ -1045,7 +1045,7 @@
             }
 
             function b(e) {
-                let t = (0, s.canAccessMemberSafetyPageWithExperiment)(e),
+                let t = (0, s.canAccessMemberSafetyPage)(e),
                     i = a.default.getGuild(e);
                 return !!t && null != i && (i.hasFeature(d.GuildFeatures.COMMUNITY) || i.hasFeature(d.GuildFeatures.ENABLED_MODERATION_EXPERIENCE_FOR_NON_COMMUNITY) ? ((0, n.transitionTo)(d.Routes.CHANNEL(e, h.StaticChannelRoute.MEMBER_SAFETY)), !0) : (r.default.open(i.id, d.GuildSettingsSections.MEMBERS), !0))
             }
@@ -1351,4 +1351,4 @@
         }
     }
 ]);
-//# sourceMappingURL=1c13955be39cf3ce7588.js.map
+//# sourceMappingURL=8451055e8d6dec746a41.js.map
