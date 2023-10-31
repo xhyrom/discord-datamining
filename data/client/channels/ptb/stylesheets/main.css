@@ -63837,8 +63837,8 @@ strong {
 
 .message__13e98 {
     font-weight: 500;
-    font-size: 16px;
-    line-height: 20px;
+    font-size: 1rem;
+    line-height: 1.25rem;
     white-space: nowrap;
     text-overflow: ellipsis;
     overflow: hidden
@@ -122505,7 +122505,7 @@ input::-webkit-inner-spin-button {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    background-color: var(--activity-card-background);
+    background-color: var(--background-secondary);
     box-shadow: var(--shadow-medium);
     border-radius: var(--radius-lg);
     margin: var(--spacing-4)0 var(--spacing-4);
@@ -122569,6 +122569,10 @@ input::-webkit-inner-spin-button {
     margin-left: 2px;
     height: 12px;
     color: var(--white)
+}
+
+.discount__42f07 .icon_a1487f {
+    color: var(--text-normal)
 }
 
 .noMargin_c7fe93 {
@@ -149756,4 +149760,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=0ffbd6955a27e36192a4.css.map*/
+/*# sourceMappingURL=f8ba9fd8302179ce4cde.css.map*/
