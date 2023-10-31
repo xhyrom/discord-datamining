@@ -4439,20 +4439,24 @@
       "POST"
     ]
   },
-  "CREATE_USER_TRIAL_OFFER": {
-    "url": "/user-trial-offers/create/:param",
+  "CREATE_USER_OFFER": {
+    "url": "/user-offers/create/:param/:param",
     "allowed_methods": null
   },
-  "DELETE_USER_TRIAL_OFFER": {
-    "url": "/user-trial-offers/:param",
+  "DELETE_USER_OFFER": {
+    "url": "/user-offers/:param/:param",
     "allowed_methods": null
   },
-  "UNACK_USER_TRIAL_OFFER": {
-    "url": "/user-trial-offers/:param/unack",
+  "UNACK_USER_OFFER": {
+    "url": "/user-offers/:param/:param/unack",
     "allowed_methods": null
   },
-  "USER_TRIAL_OFFERS": {
-    "url": "/user-trial-offers",
+  "USER_OFFERS": {
+    "url": "/user-offers",
+    "allowed_methods": null
+  },
+  "USER_OFFER_IDS": {
+    "url": "/user-offer-ids",
     "allowed_methods": null
   },
   "INVENTORY_ADD_PACK": {
