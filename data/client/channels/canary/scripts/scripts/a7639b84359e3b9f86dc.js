@@ -21016,6 +21016,7 @@
                 I = {
                     clipsSettings: m,
                     hardwareClassification: null,
+                    hardwareClassificationForDecoupled: null,
                     hardwareClassificationVersion: 0,
                     newClipIds: [],
                     hasClips: !1
@@ -21049,6 +21050,9 @@
                 }
                 getHardwareClassification() {
                     return I.hardwareClassification
+                }
+                getHardwareClassificationForDecoupled() {
+                    return I.hardwareClassificationForDecoupled
                 }
                 getHardwareClassificationVersion() {
                     return I.hardwareClassificationVersion
@@ -21102,7 +21106,13 @@
                     ...e.clipsSettings,
                     decoupledClipsEnabled: m.decoupledClipsEnabled
                 }
-            })];
+            }), e => {
+                var t;
+                return {
+                    ...e,
+                    hardwareClassificationForDecoupled: null !== (t = e.hardwareClassificationForDecoupled) && void 0 !== t ? t : null
+                }
+            }];
             let A = new C(r.default, {
                 CLIPS_SETTINGS_UPDATE: function(e) {
                     let {
@@ -21216,7 +21226,9 @@
                     let {
                         classification: t
                     } = e, n = I.hardwareClassification;
-                    I.hardwareClassificationVersion = d.CLIPS_HARDWARE_CLASSIFICATION_VERSION, I.hardwareClassification = t, I.hardwareClassification === c.ClipsHardwareClassification.MEETS_AUTO_ENABLE && n !== c.ClipsHardwareClassification.MEETS_AUTO_ENABLE && (I.clipsSettings.clipsEnabled = !0)
+                    I.hardwareClassificationVersion = d.CLIPS_HARDWARE_CLASSIFICATION_VERSION, I.hardwareClassification = t, I.hardwareClassification === c.ClipsHardwareClassification.MEETS_AUTO_ENABLE && n !== c.ClipsHardwareClassification.MEETS_AUTO_ENABLE && (I.clipsSettings.clipsEnabled = !0);
+                    let i = I.hardwareClassificationForDecoupled;
+                    I.hardwareClassificationForDecoupled = t, I.hardwareClassificationForDecoupled === c.ClipsHardwareClassification.MEETS_AUTO_ENABLE && i !== c.ClipsHardwareClassification.MEETS_AUTO_ENABLE && I.clipsSettings.clipsEnabled && (I.clipsSettings.decoupledClipsEnabled = !0)
                 },
                 CLIPS_INIT: function(e) {
                     let {
@@ -48901,7 +48913,7 @@
                         var i;
                         let d = {
                                 environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                                build_number: "242221"
+                                build_number: "242225"
                             },
                             E = l.default.getCurrentUser();
                         null != E && (d.user_id = E.id, d.user_name = E.tag, null != E.email && (d.email = E.email));
@@ -62229,4 +62241,4 @@
         }
     }
 ]);
-//# sourceMappingURL=b8ae09449d9468285f20.js.map
+//# sourceMappingURL=a7639b84359e3b9f86dc.js.map
