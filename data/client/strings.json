@@ -15900,6 +15900,8 @@
   "STRANGER_DANGER_MORE_BLOCK": "\"Block\"",
   "STRANGER_DANGER_MORE_BLOCK_DESCRIPTION": "\"Remove their ability to message, mention, or add you as a friend.\"",
   "STRANGER_DANGER_WAS_THIS_HELPFUL": "\"Was this helpful?\"",
+  "STRANGER_DANGER_THUMBS_UP_A11Y": "\"Vote yes (thumbs up)\"",
+  "STRANGER_DANGER_THUMBS_DOWN_A11Y": "\"Vote no (thumbs down)\"",
   "STRANGER_DANGER_FEEDBACK_CONFIRM": "\"Thanks for your feedback!\"",
   "STRANGER_DANGER_CONTEXT_MENU_CLEAR": "\"Reset Safety Warnings (Experimental)\"",
   "URF_LANDING_PAGE_TITLE": "\"Report Illegal Content\"",
