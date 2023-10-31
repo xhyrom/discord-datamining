@@ -71,10 +71,10 @@
             };
 
             function a(e) {
-                return n(i(e))
+                return n(u(e))
             }
 
-            function i(e) {
+            function u(e) {
                 if (!n.o(s, e)) {
                     var t = Error("Cannot find module '" + e + "'");
                     throw t.code = "MODULE_NOT_FOUND", t
@@ -83,7 +83,7 @@
             }
             a.id = '"895637"', a.keys = function() {
                 return Object.keys(s)
-            }, a.resolve = i, e.exports = a
+            }, a.resolve = u, e.exports = a
         },
         329160: function(e, t, n) {
             "use strict";
@@ -358,8 +358,8 @@
             });
             var s = n("913144"),
                 a = n("504385"),
-                i = n("439141"),
-                u = n("533222"),
+                u = n("439141"),
+                i = n("533222"),
                 o = n("42887"),
                 d = n("599110"),
                 p = n("709681"),
@@ -373,13 +373,13 @@
 
             function _(e, t, n, s, a) {
                 if (t === n) return;
-                let i = e[t],
+                let u = e[t],
                     o = e[n];
                 d.default.track(c.AnalyticEvents.MEDIA_DEVICE_CHANGED, {
-                    device_from_name: u.default.getCertifiedDeviceName(t, null != i ? i.name : ""),
-                    device_to_name: u.default.getCertifiedDeviceName(n, null != o ? o.name : ""),
+                    device_from_name: i.default.getCertifiedDeviceName(t, null != u ? u.name : ""),
+                    device_to_name: i.default.getCertifiedDeviceName(n, null != o ? o.name : ""),
                     device_type: s,
-                    device_is_certified: u.default.isCertified(n),
+                    device_is_certified: i.default.isCertified(n),
                     location: a
                 })
             }
@@ -441,14 +441,14 @@
                 setDisableLocalVideo(e, t) {
                     let n = arguments.length > 2 && void 0 !== arguments[2] ? arguments[2] : l.MediaEngineContextTypes.DEFAULT,
                         a = !(arguments.length > 3) || void 0 === arguments[3] || arguments[3],
-                        i = arguments.length > 4 && void 0 !== arguments[4] && arguments[4];
+                        u = arguments.length > 4 && void 0 !== arguments[4] && arguments[4];
                     !S() && s.default.dispatch({
                         type: "AUDIO_SET_LOCAL_VIDEO_DISABLED",
                         context: n,
                         userId: e,
                         videoToggleState: t,
                         persist: a,
-                        isAutomatic: i
+                        isAutomatic: u
                     })
                 },
                 setLocalVolume(e, t) {
@@ -634,7 +634,7 @@
                     })
                 },
                 setVideoEnabled(e) {
-                    (0, i.applyInitialVideoBackgroundOption)(), s.default.dispatch({
+                    (0, u.applyInitialVideoBackgroundOption)(), s.default.dispatch({
                         type: "MEDIA_ENGINE_SET_VIDEO_ENABLED",
                         enabled: e
                     })
@@ -695,14 +695,14 @@
             var s = n("37983");
             n("884691");
             var a = n("77078"),
-                i = n("913144"),
-                u = n("605250"),
+                u = n("913144"),
+                i = n("605250"),
                 o = n("42887"),
                 d = n("599110"),
                 p = n("49111"),
                 r = n("180524"),
                 c = n("782340");
-            let l = new u.default("AudioActionCreators");
+            let l = new i.default("AudioActionCreators");
 
             function f() {
                 (0, a.openModalLazy)(async () => {
@@ -743,7 +743,7 @@
                 return _() ? Promise.resolve(!1) : (d.default.track(p.AnalyticEvents.PERMISSIONS_REQUESTED, {
                     type: "audio"
                 }), o.default.getMediaEngine().enable().then(() => {
-                    i.default.dispatch({
+                    u.default.dispatch({
                         type: "MEDIA_ENGINE_SET_AUDIO_ENABLED",
                         enabled: !0,
                         unmute: e
@@ -795,18 +795,18 @@
                     return a
                 },
                 getSoundpackOptionsAprilFools2023: function() {
-                    return u
+                    return i
                 }
             });
-            var s, a, i = n("782340");
+            var s, a, u = n("782340");
 
-            function u() {
+            function i() {
                 return [{
                     value: a.CLASSIC,
-                    label: i.default.Messages.SOUNDPACK_CLASSIC_LABEL
+                    label: u.default.Messages.SOUNDPACK_CLASSIC_LABEL
                 }, {
                     value: a.DETUNE,
-                    label: i.default.Messages.SOUNDPACK_DETUNE_LABEL
+                    label: u.default.Messages.SOUNDPACK_DETUNE_LABEL
                 }]
             }(s = a || (a = {})).CLASSIC = "classic", s.DETUNE = "detune"
         },
@@ -819,14 +819,14 @@
             });
             var s = n("446674"),
                 a = n("913144"),
-                i = n("168067"),
-                u = n("157246");
+                u = n("168067"),
+                i = n("157246");
             let o = {
-                soundpack: u.Soundpacks.CLASSIC
+                soundpack: i.Soundpacks.CLASSIC
             };
             class d extends s.default.PersistedStore {
                 initialize(e) {
-                    i.default.subscribe({
+                    u.default.subscribe({
                         location: "1"
                     }, () => this.emitChange()), null != e && (o = e)
                 }
@@ -837,12 +837,12 @@
                     var e;
                     let {
                         allowAprilFoolsSoundpack: t
-                    } = i.default.getCurrentConfig({
+                    } = u.default.getCurrentConfig({
                         location: "37bac2_1"
                     }, {
                         autoTrackExposure: !1
                     });
-                    return t && (e = o.soundpack, Object.values(u.Soundpacks).includes(e)) ? o.soundpack : u.Soundpacks.CLASSIC
+                    return t && (e = o.soundpack, Object.values(i.Soundpacks).includes(e)) ? o.soundpack : i.Soundpacks.CLASSIC
                 }
             }
             d.displayName = "SoundpackStore", d.persistKey = "SoundpackStore";
@@ -861,7 +861,7 @@
             "use strict";
             n.r(t), n.d(t, {
                 default: function() {
-                    return i
+                    return u
                 }
             });
             var s = n("157246");
@@ -912,7 +912,7 @@
                 }
             };
 
-            function i(e) {
+            function u(e) {
                 return a[e]
             }
         },
@@ -931,13 +931,13 @@
                 }
             });
             var a = n("870696"),
-                i = n("319291"),
-                u = n("102985");
+                u = n("319291"),
+                i = n("102985");
 
             function o(e, t) {
                 var n;
                 let s = arguments.length > 2 && void 0 !== arguments[2] ? arguments[2] : 1,
-                    a = (0, i.default)(t);
+                    a = (0, u.default)(t);
                 return d(null !== (n = a[e]) && void 0 !== n ? n : e, e, s)
             }
 
@@ -950,8 +950,8 @@
                 var t;
                 let n = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : 1,
                     s = arguments.length > 2 ? arguments[2] : void 0;
-                if (u.default.disableSounds) return;
-                let o = (0, i.default)(a.default.getSoundpack()),
+                if (i.default.disableSounds) return;
+                let o = (0, u.default)(a.default.getSoundpack()),
                     p = d(null !== (t = o[e]) && void 0 !== t ? t : e, e, n);
                 return null != s ? p.playWithListener().then(e => {
                     e && s()
@@ -962,31 +962,41 @@
         895737: function(e, t, n) {
             "use strict";
             n.r(t), n.d(t, {
+                playGiftSound: function() {
+                    return c
+                },
                 WebAudioSound: function() {
-                    return r
+                    return f
                 }
             });
             var s = n("917351"),
                 a = n.n(s),
-                i = n("42887"),
-                u = n("773336");
-            let o = "default",
-                d = o;
+                u = n("520497"),
+                i = n("812809"),
+                o = n("42887"),
+                d = n("773336");
+            let p = "default",
+                r = p;
 
-            function p() {
+            function c(e, t) {
+                let n = new Audio((0, u.default)(e));
+                n.volume = (0, i.default)(t), n.play()
+            }
+
+            function l() {
                 null != window.navigator.mediaDevices && window.navigator.mediaDevices.enumerateDevices().then(e => {
-                    let t = i.default.getOutputDevices(),
-                        n = a(t).sortBy(e => e.index).findIndex(e => e.id === i.default.getOutputDeviceId()),
-                        s = t[i.default.getOutputDeviceId()],
+                    let t = o.default.getOutputDevices(),
+                        n = a(t).sortBy(e => e.index).findIndex(e => e.id === o.default.getOutputDeviceId()),
+                        s = t[o.default.getOutputDeviceId()],
                         u = e.filter(e => "audiooutput" === e.kind && "communications" !== e.deviceId),
-                        p = u[n];
-                    null != s && (null == p || p.label !== s.name) && (p = u.find(e => e.label === s.name)), d = null != p ? p.deviceId : o
+                        i = u[n];
+                    null != s && (null == i || i.label !== s.name) && (i = u.find(e => e.label === s.name)), r = null != i ? i.deviceId : p
                 }).catch(() => {
-                    d = o
+                    r = p
                 })
             }
-            u.isPlatformEmbedded && (i.default.addChangeListener(p), p());
-            class r {
+            d.isPlatformEmbedded && (o.default.addChangeListener(l), l());
+            class f {
                 get volume() {
                     return this._volume
                 }
@@ -1028,7 +1038,7 @@
                     return this._audio = null !== (e = this._audio) && void 0 !== e ? e : new Promise((e, t) => {
                         let s = new Audio;
                         s.src = n("895637")("../../sounds/".concat(this.name, ".mp3").replace("../../sounds/", "./")), s.onloadeddata = () => {
-                            s.volume = Math.min(i.default.getOutputVolume() / 100 * this._volume, 1), u.isPlatformEmbedded && s.setSinkId(d), e(s)
+                            s.volume = Math.min(o.default.getOutputVolume() / 100 * this._volume, 1), d.isPlatformEmbedded && s.setSinkId(r), e(s)
                         }, s.onerror = () => t(Error("could not play audio")), s.onended = () => this._destroyAudio(), s.load()
                     }), this._audio
                 }
@@ -1039,4 +1049,4 @@
         }
     }
 ]);
-//# sourceMappingURL=3dbc91f424ea39853b3e.js.map
+//# sourceMappingURL=32c5bea01efe86e74ddf.js.map

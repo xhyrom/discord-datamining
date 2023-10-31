@@ -1,5 +1,5 @@
 (this.webpackChunkdiscord_app = this.webpackChunkdiscord_app || []).push([
-    ["4532"], {
+    ["94816"], {
         240249: function(e, t, n) {
             "use strict";
             n.r(t), n.d(t, {
@@ -158,7 +158,7 @@
                 let _ = l.useMemo(() => {
                     let e = [];
                     if (null != n.placeholderCount)
-                        for (let l = 0; l < n.placeholderCount; l++) e.push(R(l, t.commandType));
+                        for (let l = 0; l < n.placeholderCount; l++) e.push(M(l, t.commandType));
                     return e
                 }, [t.commandType, n.placeholderCount]);
                 return l.useMemo(() => {
@@ -218,7 +218,7 @@
                     loading: v
                 } = s.default.query(e, t, n), h = [];
                 if (null != n.placeholderCount && v)
-                    for (let e = 0; e < n.placeholderCount; e++) h.push(R(e, t.commandType));
+                    for (let e = 0; e < n.placeholderCount; e++) h.push(M(e, t.commandType));
                 return {
                     commands: v ? [...f, ...h] : f,
                     sections: v && 0 === p.length ? [d.BUILT_IN_SECTIONS[C.BuiltInSectionId.BUILT_IN]] : p
@@ -241,7 +241,7 @@
                     h = l.useMemo(() => {
                         let e = [];
                         if (null != n.placeholderCount)
-                            for (let l = 0; l < n.placeholderCount; l++) e.push(R(l, t.commandType));
+                            for (let l = 0; l < n.placeholderCount; l++) e.push(M(l, t.commandType));
                         return e
                     }, [t.commandType, n.placeholderCount]);
                 return l.useMemo(() => ({
@@ -364,7 +364,7 @@
                 return n
             }
 
-            function R(e, t) {
+            function M(e, t) {
                 return {
                     type: t,
                     inputType: f.ApplicationCommandInputType.PLACEHOLDER,
@@ -605,8 +605,8 @@
                 O = n("342564"),
                 P = n("524768"),
                 L = n("389153"),
-                R = n("317041"),
-                M = n("49111");
+                M = n("317041"),
+                R = n("49111");
 
             function D(e, t, n) {
                 var l;
@@ -631,7 +631,7 @@
                     var l, a, u;
                     if (null == t.start) return;
                     let d = performance.now() - t.start;
-                    T.default.track(M.AnalyticEvents.APPLICATION_COMMAND_PERFORMANCE, {
+                    T.default.track(R.AnalyticEvents.APPLICATION_COMMAND_PERFORMANCE, {
                         duration_ms: d,
                         aborted: null !== (l = null == n ? void 0 : n.signal.aborted) && void 0 !== l && l,
                         error: e,
@@ -642,7 +642,7 @@
                     })
                 };
                 return r.default.get({
-                    url: M.Endpoints.APPLICATION_COMMANDS_SEARCH(e),
+                    url: R.Endpoints.APPLICATION_COMMANDS_SEARCH(e),
                     query: o,
                     signal: (null == n ? void 0 : n.abortable) ? n.signal : void 0
                 }).then(e => {
@@ -679,7 +679,7 @@
 
             function b(e) {
                 let t = e.map(L.getApplicationCommandSection);
-                return t.concat(N.BUILT_IN_SECTIONS[R.BuiltInSectionId.BUILT_IN])
+                return t.concat(N.BUILT_IN_SECTIONS[M.BuiltInSectionId.BUILT_IN])
             }
             let x = (e, t) => ({
                     type: t,
@@ -691,7 +691,7 @@
                     displayDescription: "",
                     applicationId: ""
                 }),
-                B = [N.BUILT_IN_SECTIONS[R.BuiltInSectionId.BUILT_IN]];
+                B = [N.BUILT_IN_SECTIONS[M.BuiltInSectionId.BUILT_IN]];
             class H extends d.default.Store {
                 initialize() {
                     this.waitFor(I.default), this.syncWith([_.default], () => {
@@ -705,7 +705,7 @@
                 getOrInsertChannelState(e, t) {
                     let n = z.channelStates,
                         l = n.has(e);
-                    if (T.default.track(M.AnalyticEvents.APPLICATION_COMMAND_CACHE_FETCH, {
+                    if (T.default.track(R.AnalyticEvents.APPLICATION_COMMAND_CACHE_FETCH, {
                             miss: !l,
                             size: n.length
                         }), !l) {
@@ -961,7 +961,7 @@
                         channel: e,
                         guild: null != e.guild_id ? A.default.getGuild(e.guild_id) : null
                     }), [e]),
-                    M = (0, y.useTopCommands)(P),
+                    R = (0, y.useTopCommands)(P),
                     B = (0, y.useTopRealCommands)(P),
                     H = (0, d.useStateFromStores)([_.default, C.default], () => (0, L.canUseApplicationCommands)(_.default, C.default, null != o && o, e), [o, e]);
                 l.useEffect(() => {
@@ -1038,12 +1038,12 @@
                     k = l.useMemo(() => {
                         if (!a) return [];
                         let e = (H && null != v ? v : []).concat(q);
-                        return e.filter(e => M.includes(e.id)).sort((e, t) => {
+                        return e.filter(e => R.includes(e.id)).sort((e, t) => {
                             let n = O.default.getScoreWithoutLoadingLatest(P, e),
                                 l = O.default.getScoreWithoutLoadingLatest(P, t);
                             return l - n
-                        }).slice(0, R.DISCOVERY_COMMANDS_FRECENCY_LIMIT)
-                    }, [a, M, H, v, q, P]);
+                        }).slice(0, M.DISCOVERY_COMMANDS_FRECENCY_LIMIT)
+                    }, [a, R, H, v, q, P]);
                 l.useEffect(() => {
                     !I && k.length > 0 && S({
                         sawFrecencySection: !0
@@ -1052,7 +1052,7 @@
                 let Q = l.useMemo(() => {
                         var e;
                         let t = [];
-                        return (k.length > 0 || I) && (t = t.concat(N.BUILT_IN_SECTIONS[R.BuiltInSectionId.FRECENCY])), H && null != m && (t = t.concat(m)), (null === (e = t[t.length - 1]) || void 0 === e ? void 0 : e.id) !== R.BuiltInSectionId.BUILT_IN && (t = t.concat(N.BUILT_IN_SECTIONS[R.BuiltInSectionId.BUILT_IN])), t
+                        return (k.length > 0 || I) && (t = t.concat(N.BUILT_IN_SECTIONS[M.BuiltInSectionId.FRECENCY])), H && null != m && (t = t.concat(m)), (null === (e = t[t.length - 1]) || void 0 === e ? void 0 : e.id) !== M.BuiltInSectionId.BUILT_IN && (t = t.concat(N.BUILT_IN_SECTIONS[M.BuiltInSectionId.BUILT_IN])), t
                     }, [H, m, k, I]),
                     Y = H && (!u || g.current || null != c),
                     W = l.useMemo(() => {
@@ -1069,7 +1069,7 @@
                             t = [];
                         return Q.forEach(n => {
                             let l;
-                            (null == h || n.id === h) && ((l = n.id === R.BuiltInSectionId.BUILT_IN ? Y ? [] : [...q] : n.id === R.BuiltInSectionId.FRECENCY ? [...k] : (null != v ? v : []).filter(e => e.applicationId === n.id)).length > 0 || n.id === h) && (e.push(n), t.push({
+                            (null == h || n.id === h) && ((l = n.id === M.BuiltInSectionId.BUILT_IN ? Y ? [] : [...q] : n.id === M.BuiltInSectionId.FRECENCY ? [...k] : (null != v ? v : []).filter(e => e.applicationId === n.id)).length > 0 || n.id === h) && (e.push(n), t.push({
                                 section: n,
                                 data: l
                             }))
@@ -1449,7 +1449,28 @@
                 }
             });
             var p = c
+        },
+        812809: function(e, t, n) {
+            "use strict";
+            n.r(t), n.d(t, {
+                default: function() {
+                    return a
+                }
+            });
+            var l = n("845579"),
+                i = n("42887"),
+                o = n("829536");
+
+            function a(e) {
+                let t = function() {
+                        var e;
+                        let t = l.SoundboardSettings.getSetting();
+                        return (0, o.amplitudeToPerceptual)(null !== (e = null == t ? void 0 : t.volume) && void 0 !== e ? e : 100) / 100
+                    }(),
+                    n = Math.min(i.default.getOutputVolume() / 100, 1);
+                return Math.min(e * t * n, 1)
+            }
         }
     }
 ]);
-//# sourceMappingURL=8af74612550a0c24bbff.js.map
+//# sourceMappingURL=fab1133c7d4070677fcb.js.map
