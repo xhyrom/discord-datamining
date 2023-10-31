@@ -1559,10 +1559,11 @@
                     BADGE_ICON: _ => "/badge-icons/".concat(_, ".png"),
                     PRIVATE_CHANNEL_INTEGRATION_CONSENT: _ => "/channels/".concat(_, "/integrations/consent"),
                     FINISH_MFA_CHECK: "/mfa/finish",
-                    CREATE_USER_TRIAL_OFFER: _ => "/user-trial-offers/create/".concat(_),
-                    DELETE_USER_TRIAL_OFFER: _ => "/user-trial-offers/".concat(_),
-                    UNACK_USER_TRIAL_OFFER: _ => "/user-trial-offers/".concat(_, "/unack"),
-                    USER_TRIAL_OFFERS: "/user-trial-offers",
+                    CREATE_USER_OFFER: (_, E) => "/user-offers/create/".concat(E, "/").concat(_),
+                    DELETE_USER_OFFER: (_, E) => "/user-offers/".concat(E, "/").concat(_),
+                    UNACK_USER_OFFER: (_, E) => "/user-offers/".concat(E, "/").concat(_, "/unack"),
+                    USER_OFFERS: "/user-offers",
+                    USER_OFFER_IDS: "/user-offer-ids",
                     INVENTORY_ADD_PACK: "/users/@me/inventory/packs/add",
                     INVENTORY_REMOVE_PACK: "/users/@me/inventory/packs/remove",
                     INVENTORY_UPDATE_SETTINGS: _ => "/guilds/".concat(_, "/inventory/settings"),
@@ -12483,4 +12484,4 @@
         }
     }
 ]);
-//# sourceMappingURL=9e554ca167451fffc5dd.js.map
+//# sourceMappingURL=458c7cc3e12295e5916c.js.map

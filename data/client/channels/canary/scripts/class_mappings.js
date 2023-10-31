@@ -7529,6 +7529,7 @@
                 buttons: "buttons_b02aee",
                 card: "card_a166d0",
                 clickable: "clickable__7bf66",
+                discount: "discount__42f07",
                 expired: "expired__88c83",
                 gradientWrapperTier0: "gradientWrapperTier0__2312d",
                 gradientWrapperTier2: "gradientWrapperTier2__308b2",
