@@ -8896,14 +8896,6 @@
               "rollout": [
                 {
                   "start": 0,
-                  "end": 500
-                },
-                {
-                  "start": 500,
-                  "end": 1000
-                },
-                {
-                  "start": 1000,
                   "end": 10000
                 }
               ]
@@ -8967,7 +8959,7 @@
           "filters": []
         }
       ],
-      "revision": 6,
+      "revision": 7,
       "overrides": {},
       "overrides_formatted": [
         {
