@@ -88,7 +88,19 @@ export class Applications implements Module {
     const scripts = await readdir(
       join(Client.baseDir, "channels", "canary", "scripts", "scripts")
     );
-    const files = scripts.map((script) => new File(script));
+    const files = scripts.map(
+      (script) =>
+        new File(
+          join(
+            Client.baseDir,
+            "channels",
+            "canary",
+            "scripts",
+            "scripts",
+            script
+          )
+        )
+    );
 
     const result: string[] = [];
     for (const file of files) {
