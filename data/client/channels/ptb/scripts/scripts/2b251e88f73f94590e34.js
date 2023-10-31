@@ -48901,7 +48901,7 @@
                         var i;
                         let d = {
                                 environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                                build_number: "241935"
+                                build_number: "241947"
                             },
                             E = l.default.getCurrentUser();
                         null != E && (d.user_id = E.id, d.user_name = E.tag, null != E.email && (d.email = E.email));
@@ -58744,7 +58744,8 @@
                     Opera: 66,
                     "Node.js": 6,
                     Electron: 1,
-                    Safari: 13
+                    Safari: 13,
+                    "Microsoft Edge": 37
                 },
                 l = void 0 !== r.ua && r.ua.indexOf("OculusBrowser") > -1
         },
@@ -59488,6 +59489,7 @@
                         case "Safari":
                             return e >= 13;
                         case "Chrome":
+                        case "Microsoft Edge":
                             return e >= 80;
                         default:
                             return !1
@@ -62227,4 +62229,4 @@
         }
     }
 ]);
-//# sourceMappingURL=4d2f3f11fa832f9b79ea.js.map
+//# sourceMappingURL=2b251e88f73f94590e34.js.map
