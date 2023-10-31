@@ -63778,8 +63778,8 @@ strong {
 
 .message__13e98 {
     font-weight: 500;
-    font-size: 1rem;
-    line-height: 1.25rem;
+    font-size: 16px;
+    line-height: 20px;
     white-space: nowrap;
     text-overflow: ellipsis;
     overflow: hidden
@@ -78858,7 +78858,14 @@ button.button__4f306.disabled_dc5630 {
 
 .subtitle_c3170a {
     max-width: 544px;
-    margin-bottom: 24px;
+    margin-bottom: 24px
+}
+
+.leftAlignSubtitle_dd3314 {
+    text-align: left
+}
+
+.centerAlignSubtitle_f111db {
     text-align: center
 }
 
@@ -79255,7 +79262,7 @@ button.button__4f306.disabled_dc5630 {
 
 .button_d584a2 {
     height: 40px;
-    box-shadow: 0 1px 4px 0 rgba(0, 0, 0, .14)
+    box-shadow: 0 12px 36px 0 rgba(0, 0, 0, .12)
 }
 
 .headerArt__851a2 {
@@ -79307,7 +79314,8 @@ button.button__4f306.disabled_dc5630 {
 }
 
 .whatsNew__2b2f9 {
-    margin: 64px 0
+    margin-top: -128px;
+    margin-bottom: 64px
 }
 
 .perksDiscoverability__4242c {
@@ -149719,4 +149727,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=68b1f96cb41ea66377a5.css.map*/
+/*# sourceMappingURL=1a4c560a1341a6c93899.css.map*/
