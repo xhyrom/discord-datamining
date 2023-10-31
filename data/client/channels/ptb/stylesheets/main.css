@@ -32682,8 +32682,7 @@ input[type=checkbox]:focus-visible+.label_ee78c3 {
     row-gap: .25rem;
     margin-right: .25rem;
     text-indent: 0;
-    vertical-align: top;
-    position: relative
+    align-items: baseline
 }
 
 .compact__54ecc .badgesContainer_af6255 {
@@ -32700,6 +32699,43 @@ input[type=checkbox]:focus-visible+.label_ee78c3 {
     color: ButtonText;
     -webkit-text-decoration: underline;
     text-decoration: underline
+}
+
+.cozy_f5c119 .pollBadgeDefault_f48298,
+.pollBadgeReplied_d3492b {
+    margin: 0 0 0 .25rem
+}
+
+.badgeDefault__5dcfe {
+    padding: 0 .5rem;
+    background-color: var(--background-accent);
+    color: var(--text-normal)
+}
+
+.theme-light .badgeDefault__5dcfe {
+    background-color: var(--background-secondary)
+}
+
+.theme-light.custom-theme-background .badgeDefault__5dcfe {
+    background-color: var(--background-tertiary)
+}
+
+.badgeReplied_bb040a {
+    padding: 0 .5rem;
+    background-color: var(--brand-500);
+    color: var(--interactive-active)
+}
+
+.innerBadge__2f562 {
+    display: flex;
+    gap: 4px;
+    align-items: center;
+    justify-content: center
+}
+
+.icon_a9525f {
+    width: 8px;
+    height: 8px
 }
 
 .toastWrapper__47b90 {
@@ -63779,8 +63815,8 @@ strong {
 
 .message__13e98 {
     font-weight: 500;
-    font-size: 16px;
-    line-height: 20px;
+    font-size: 1rem;
+    line-height: 1.25rem;
     white-space: nowrap;
     text-overflow: ellipsis;
     overflow: hidden
@@ -149710,4 +149746,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=5879d0e6dae43b84fa7a.css.map*/
+/*# sourceMappingURL=cdda623315ffda35b55d.css.map*/

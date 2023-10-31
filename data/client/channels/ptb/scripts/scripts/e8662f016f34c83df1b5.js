@@ -20078,6 +20078,15 @@
                 votedStyles: "votedStyles__92837"
             }
         },
+        301893: function(e, t, o) {
+            "use strict";
+            e.exports = {
+                badgeDefault: "badgeDefault__5dcfe",
+                badgeReplied: "badgeReplied_bb040a",
+                icon: "icon_a9525f",
+                innerBadge: "innerBadge__2f562"
+            }
+        },
         652886: function(e, t, o) {
             "use strict";
             e.exports = {
@@ -28504,6 +28513,8 @@
                 nitroAuthorBadgeContainer: "nitroAuthorBadgeContainer__0b121",
                 nitroBadgeSvg: "nitroBadgeSvg__214e0 botTag__11e95",
                 nitroBadgeSvgRepliedMessage: "nitroBadgeSvgRepliedMessage__021fb",
+                pollBadgeDefault: "pollBadgeDefault_f48298",
+                pollBadgeReplied: "pollBadgeReplied_d3492b",
                 repliedMessage: "repliedMessage_e2bf4a",
                 repliedTextContent: "repliedTextContent__75526",
                 repliedTextContentIcon: "repliedTextContentIcon__4dd82",
