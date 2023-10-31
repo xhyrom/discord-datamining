@@ -82,6 +82,34 @@
                 }, [s, e, t])
             }
         },
+        970254: function(e, t, s) {
+            "use strict";
+            s.r(t), s.d(t, {
+                UserAppsTreatment: function() {
+                    return n
+                },
+                default: function() {
+                    return r
+                }
+            });
+            var i, n, a = s("862205");
+            (i = n || (n = {})).ALLOWED = "allowed", i.DEFAULT = "default";
+            var r = (0, a.createExperiment)({
+                kind: "user",
+                id: "2023-08_user_apps",
+                label: "Allow user app commands",
+                defaultConfig: {
+                    userAppsTreatment: n.DEFAULT
+                },
+                treatments: [{
+                    id: 1,
+                    label: "Allow user app commands",
+                    config: {
+                        userAppsTreatment: n.ALLOWED
+                    }
+                }]
+            })
+        },
         69927: function(e, t, s) {
             "use strict";
             s.r(t), s.d(t, {
@@ -805,8 +833,8 @@
                 L = s("29479"),
                 U = s("357974"),
                 w = s("580363"),
-                H = s("613070"),
-                b = s("530487"),
+                b = s("613070"),
+                H = s("530487"),
                 y = s("638992"),
                 j = s("223934"),
                 W = s("267570"),
@@ -905,7 +933,7 @@
                     }),
                     em = ep.userAppsTreatment === I.UserAppsTreatment.ALLOWED;
                 !em && (eA = !1);
-                let [eO, eI] = o.useState(a.NOT_LOADED), [eT, eN] = o.useState(null), [eg, eC] = o.useState(M.default.NONE), [eM, eP] = o.useState(r.AUTHORIZE_SCOPES), [ev, eR] = o.useState(null), [eD] = o.useState(L.OrderedAccountScopes.filter(e => e_.includes(e))), [ex, eL] = o.useState(null != es ? es : null), [eU, ew] = o.useState(null != ei ? ei : null), [eH, eb] = o.useState(!1), ey = o.useMemo(() => {
+                let [eO, eI] = o.useState(a.NOT_LOADED), [eT, eN] = o.useState(null), [eg, eC] = o.useState(M.default.NONE), [eM, eP] = o.useState(r.AUTHORIZE_SCOPES), [ev, eR] = o.useState(null), [eD] = o.useState(L.OrderedAccountScopes.filter(e => e_.includes(e))), [ex, eL] = o.useState(null != es ? es : null), [eU, ew] = o.useState(null != ei ? ei : null), [eb, eH] = o.useState(!1), ey = o.useMemo(() => {
                     var e;
                     return null == eT ? void 0 : null === (e = eT.guilds) || void 0 === e ? void 0 : e.find(e => e.id === ex)
                 }, [null == eT ? void 0 : eT.guilds, ex]), ej = (0, h.useStateFromStoresObject)([f.default, p.default], () => {
@@ -930,7 +958,7 @@
                         return
                     }
                     try {
-                        eb(!0);
+                        eH(!0);
                         let t = await (0, R.authorize)({
                             authorize: e,
                             clientId: Z,
@@ -961,10 +989,10 @@
                                     guild: ey
                                 }
                             }) : window.location = t.location
-                        } else eb(!1)
+                        } else eH(!1)
                     } catch (t) {
                         let e = t.body;
-                        (null == e ? void 0 : e.message) != null && "" !== e.message ? eR(Error(e.message)) : eR(e), eP(r.AUTHORIZE_SCOPES), eI(a.LOADED), eb(!1)
+                        (null == e ? void 0 : e.message) != null && "" !== e.message ? eR(Error(e.message)) : eR(e), eP(r.AUTHORIZE_SCOPES), eI(a.LOADED), eH(!1)
                     }
                 }, [eu, ed, Z, $, ee, eg, ec, en, J, Q, e_, ex, eU, et, eh, null == eT ? void 0 : eT.application, ey, eA]), eV = o.useRef(!1), eB = o.useCallback(async () => {
                     if (eO === a.NOT_LOADED) {
@@ -1031,7 +1059,7 @@
                             eq = null === (n = eT.guilds) || void 0 === n ? void 0 : n.sort((e, t) => e.name.toLowerCase().localeCompare(t.name.toLowerCase())),
                             eQ = e_.includes(V.OAuth2Scopes.BOT) || e_.includes(V.OAuth2Scopes.WEBHOOK_INCOMING) || e_.includes(V.OAuth2Scopes.APPLICATIONS_COMMANDS);
                         k = (0, l.jsxs)(l.Fragment, {
-                            children: [(0, l.jsx)(H.default, {
+                            children: [(0, l.jsx)(b.default, {
                                 application: eT.application,
                                 accountScopes: eD,
                                 errors: eZ,
@@ -1056,7 +1084,7 @@
                         eX = !eA && (eJ || e$);
                         break;
                     case r.AUTHORIZE_BOT_PERMISSIONS:
-                        k = (0, l.jsx)(b.default, {
+                        k = (0, l.jsx)(H.default, {
                             application: eT.application,
                             permissions: null != en ? en : M.default.NONE,
                             deniedPermissions: eg,
@@ -1091,7 +1119,7 @@
                         }) : (0, l.jsx)(E.Button, {
                             onClick: () => eG(!0),
                             disabled: eX,
-                            submitting: eH,
+                            submitting: eb,
                             children: F.default.Messages.AUTHORIZE
                         })]
                     }),
@@ -2664,4 +2692,4 @@
         }
     }
 ]);
-//# sourceMappingURL=5f67777e6b2178bdeb4b.js.map
+//# sourceMappingURL=1e4c5c36ec00d1fdb1d1.js.map
