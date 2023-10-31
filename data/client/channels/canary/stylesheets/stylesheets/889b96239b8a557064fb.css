@@ -10842,8 +10842,7 @@ html.decorate-links .lowSaturationUnderline__95e71 {
     font-weight: 600;
     line-height: 12px;
     margin-left: auto;
-    padding: 4px 0;
-    width: 78px;
+    padding: 4px 6px;
     pointer-events: all;
     text-transform: uppercase;
     background-image: linear-gradient(to right, var(--premium-tier-2-purple-for-gradients), var(--premium-tier-2-pink-for-gradients));
@@ -149746,4 +149745,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=4001d93f81483d453e19.css.map*/
+/*# sourceMappingURL=889b96239b8a557064fb.css.map*/
