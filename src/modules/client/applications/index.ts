@@ -101,17 +101,18 @@ export class Applications implements Module {
             "scripts",
             "scripts",
             script
-          )
+          ),
+          true
         )
     );
 
     const result: string[] = [];
     for (const file of files) {
-      const content = await file.localContent();
-      if (!content) return [];
+      const content = await file.content();
+      if (!content) continue;
 
       const snowflakes = content.match(/\d{17,19}/g);
-      if (!snowflakes) return [];
+      if (!snowflakes) continue;
 
       result.push(...Array.from(snowflakes));
     }
