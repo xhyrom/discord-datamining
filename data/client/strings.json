@@ -480,6 +480,8 @@
   "COMMAND_ACCESSIBILITY_DESC_APP_ITEM_SELECTED": "\"{applicationName} application selected\"",
   "COMMAND_ACCESSIBILITY_DESC_APP_HEADER_ITEM": "\"Slash command application {applicationName}\"",
   "COMMAND_ACCESSIBILITY_DESC_COMMAND_OPTION_BUTTON": "\"Add command argument {optionName}\"",
+  "APP_LAUNCHER_HOME_RECENT_COMMANDS_HEADER": "\"Recent Commands\"",
+  "APP_LAUNCHER_HOME_SERVER_APPS_HEADER": "\"Apps in this server\"",
   "APP_LAUNCHER_NO_REQUIRED_OPTIONS_CALLOUT": "\"Nothing required. You can send the command or add an option below\"",
   "APP_LAUNCHER_COMMAND_OPTIONAL_OPTIONS_LIST_HEADER": "\"Select an option below\"",
   "READY": "\"Ready\"",
