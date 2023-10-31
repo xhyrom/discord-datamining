@@ -16511,6 +16511,7 @@
   "SERVER_USAGE_SURVEY_BODY": "\"Help us make Discord better by answering a few questions about !!{guildName}!!\"",
   "SERVER_USAGE_SURVEY_CTA": "\"Take Survey\"",
   "REPORTS_USER_MENU_OPTION_MOBILE": "\"Report User Profile\"",
+  "POLL": "\"Poll\"",
   "POLLS": "\"Polls\"",
   "POLL_CHOOSE_SINGLE_ANSWER_PROMPT": "\"Choose an Answer\"",
   "POLL_SUBMIT_VOTE": "\"Submit Vote\"",
