@@ -25,6 +25,7 @@
                 guilds: "guilds__2b93a",
                 hasNotice: "hasNotice__1d477",
                 hidden: "hidden__3ab58",
+                loader: "loader__76b66",
                 panels: "panels__58331",
                 sidebar: "sidebar_ded4b5"
             }
