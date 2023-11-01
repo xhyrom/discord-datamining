@@ -11404,6 +11404,8 @@
   "USER_SETTINGS_PRONOUNS_EDIT_A11Y_LABEL": "\"Edit Pronouns\"",
   "USER_SETTINGS_PROFILE_EFFECT_EDIT_A11Y_HINT": "\"Tap to edit profile effect\"",
   "USER_SETTINGS_PROFILE_EFFECT_EDIT_A11Y_LABEL": "\"Edit Profile Effect\"",
+  "USER_SETTINGS_AVATAR_DECORATION_EDIT_A11Y_HINT": "\"Tap to edit avatar decoration\"",
+  "USER_SETTINGS_AVATAR_DECORATION_EDIT_A11Y_LABEL": "\"Edit avatar decoration\"",
   "USER_SETTINGS_ABOUT_ME_DETAILS": "\"You can use markdown and links if you’d like.\"",
   "USER_SETTINGS_BANNER_COLOR_TITLE": "\"Banner Color\"",
   "USER_SETTINGS_BANNER_COLOR_DESCRIPTION": "\"Visible when no image is set\"",
