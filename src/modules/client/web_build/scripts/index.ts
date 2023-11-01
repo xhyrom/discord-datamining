@@ -30,6 +30,7 @@ export class Scripts implements Module {
     chunkLoader: File | null;
     classMappings: File | null;
     vendor: File | null;
+    shared: File | null;
     routes: File | null;
     strings: File | null;
     mainScript: File;
@@ -139,6 +140,7 @@ export class Scripts implements Module {
     let mainScript;
     let stringsScript;
     let classMappingsScript;
+    let sharedScript;
     let vendorScript;
     let routesScript;
     for (const script of scripts) {
@@ -162,12 +164,17 @@ export class Scripts implements Module {
         continue;
       }
 
+      if (content.match(/(?<!\w)READY_TO_TRY_DISCORD:\s*".*"/g)?.length === 1) {
+        sharedScript = script;
+        continue;
+      }
+
       if (content.match(/setServerDeaf:\s*/g)?.length === 1) {
         vendorScript = script;
         continue;
       }
 
-      if (content.match(/(?<!\w)ME:\s*["']\/users\/@me["']/g)?.length === 1) {
+      if (content.match(/(?<!\w)ME:\s*"\/users\/@me"/g)?.length === 1) {
         routesScript = script;
         continue;
       }
@@ -191,6 +198,7 @@ export class Scripts implements Module {
       classMappings: classMappingsScript ?? null, // contains css classes
       chunkLoader: scripts?.[scripts.length - 1] ?? null,
       vendor: vendorScript ?? null,
+      shared: sharedScript ?? null,
       routes: routesScript ?? null,
       strings: stringsScript ?? null, // contains all strings
       mainScript: mainScript!, // contains build info

@@ -40,6 +40,7 @@ export class DiscordInsidersSender implements Sender {
       scriptFiles.classMappings,
       scriptFiles.mainScript,
       scriptFiles.vendor,
+      scriptFiles.shared,
       scriptFiles.strings,
     ].filter((script): script is File => script !== null);
 
