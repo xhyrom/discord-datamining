@@ -725,14 +725,16 @@
             async function s(e) {
                 let {
                     authorId: t,
-                    packId: n
+                    packId: n,
+                    expressionName: u
                 } = e;
                 try {
                     let e = await l.default.put({
                         url: a.Endpoints.INVENTORY_ADD_PACK,
                         body: {
                             author_id: t,
-                            pack_id: n
+                            pack_id: n,
+                            name_override: u
                         }
                     });
                     i.default.dispatch({
@@ -1006,16 +1008,19 @@
                         expressionSourceGuild: t,
                         action: n,
                         onComplete: l,
-                        nonce: u
+                        nonce: u,
+                        expressionName: a
                     } = e;
                     return () => {
                         if (null == t) {
                             null == l || l();
                             return
                         }
-                        let e = t.id;
+                        let e = t.id,
+                            o = t.isDiscoverable();
                         n === i.EmojiPopoutType.ADD_PACK ? (0, s.collectPack)({
-                            packId: e
+                            packId: e,
+                            expressionName: o ? void 0 : a
                         }) : n === i.EmojiPopoutType.REMOVE_PACK && (0, s.uncollectPack)({
                             packId: e
                         }), r.default.track(E.AnalyticEvents.INVENTORY_PACK_ACTION_COMPLETED, {
@@ -1549,4 +1554,4 @@
         }
     }
 ]);
-//# sourceMappingURL=857f367e1049c4cfb9b5.js.map
+//# sourceMappingURL=5827eb6e7f8047218c4f.js.map
