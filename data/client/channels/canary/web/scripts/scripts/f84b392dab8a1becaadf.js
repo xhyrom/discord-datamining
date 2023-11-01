@@ -920,19 +920,19 @@
                     return e1
                 },
                 RenderEmbeds: function() {
-                    return e4
+                    return e2
                 },
                 RenderReactions: function() {
-                    return e2
+                    return e4
                 },
                 TimezoneOffset: function() {
                     return e6
                 },
                 DeveloperMode: function() {
-                    return e7
+                    return e9
                 },
                 ClientThemeSettings: function() {
-                    return e9
+                    return e7
                 },
                 GifAutoPlay: function() {
                     return e8
@@ -1117,10 +1117,10 @@
                 e1 = (0, $.wrapSettingWithSelectiveSyncing)((0, $.defineProtoSetting)("textAndImages", "inlineEmbedMedia", e => null === (V = null == e ? void 0 : e.value) || void 0 === V || V, e => J.BoolValue.create({
                     value: e
                 })), "text", "inlineEmbedMedia"),
-                e4 = (0, $.wrapSettingWithSelectiveSyncing)((0, $.defineProtoSetting)("textAndImages", "renderEmbeds", e => null === (Y = null == e ? void 0 : e.value) || void 0 === Y || Y, e => J.BoolValue.create({
+                e2 = (0, $.wrapSettingWithSelectiveSyncing)((0, $.defineProtoSetting)("textAndImages", "renderEmbeds", e => null === (Y = null == e ? void 0 : e.value) || void 0 === Y || Y, e => J.BoolValue.create({
                     value: e
                 })), "text", "renderEmbeds"),
-                e2 = (0, $.wrapSettingWithSelectiveSyncing)((0, $.defineProtoSetting)("textAndImages", "renderReactions", e => null === (H = null == e ? void 0 : e.value) || void 0 === H || H, e => J.BoolValue.create({
+                e4 = (0, $.wrapSettingWithSelectiveSyncing)((0, $.defineProtoSetting)("textAndImages", "renderReactions", e => null === (H = null == e ? void 0 : e.value) || void 0 === H || H, e => J.BoolValue.create({
                     value: e
                 })), "text", "renderReactions"),
                 e6 = (0, $.defineProtoSetting)("localization", "timezoneOffset", e => null !== (W = null == e ? void 0 : e.value) && void 0 !== W ? W : null, e => J.Int32Value.create({
@@ -1135,8 +1135,8 @@
             (0, $.defineProtoSetting)("appearance", "messagePreviews", e => null != e && e5.has(e.value) ? e.value : Q.MessagePreviewSettings.DEFAULT, e => J.StringValue.create({
                 value: e
             }));
-            let e7 = (0, $.wrapSettingWithSelectiveSyncing)((0, $.defineProtoSetting)("appearance", "developerMode", e => null != e && e, e => e), "appearance", "developerMode"),
-                e9 = (0, $.defineProtoSetting)("appearance", "clientThemeSettings", e => {
+            let e9 = (0, $.wrapSettingWithSelectiveSyncing)((0, $.defineProtoSetting)("appearance", "developerMode", e => null != e && e, e => e), "appearance", "developerMode"),
+                e7 = (0, $.defineProtoSetting)("appearance", "clientThemeSettings", e => {
                     let {
                         backgroundGradientPresetId: t,
                         backgroundGradientAngle: n
@@ -2066,7 +2066,7 @@
                 let i = {},
                     r = window.GLOBAL_ENV.RELEASE_CHANNEL;
                 r && (i.release_channel = r.split("-")[0]);
-                let o = parseInt((n = "242685", "242685"), 10);
+                let o = parseInt((n = "242692", "242692"), 10);
                 !isNaN(o) && (i.client_build_number = o);
                 let s = null == C ? void 0 : null === (e = (t = C.remoteApp).getBuildNumber) || void 0 === e ? void 0 : e.call(t);
                 return !isNaN(s) && (i.native_build_number = s), i.client_event_source = function() {
@@ -2308,4 +2308,4 @@
         }
     }
 ]);
-//# sourceMappingURL=1953e93068aaa4ef2ee6.js.map
+//# sourceMappingURL=f84b392dab8a1becaadf.js.map
