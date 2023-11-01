@@ -27,16 +27,16 @@
 <h1 id="h_01G7DFWCRF6ZB54TWTJT911YE5" class="wysiwyg-text-align-left">Saturation Slider</h1>
 <h3 id="h_01HE6D3J3HRNGPCSQ07N81G0EF">Note: At this time, this feature is only on our Desktop client.</h3>
 <p>We are adding a Saturation slider to the Accessibility Settings Tab that allows users to adjust the contrast of the colors in the client for our users with color sensitivities.</p>
-<p><img src="https://support.discord.com/hc/article_attachments/4402360744343" alt="Saturation_setting.png"></p>
+<p class="wysiwyg-text-align-center"><img src="https://support.discord.com/hc/article_attachments/4402360744343" alt="Saturation_setting.png"></p>
 <h1 id="h_01G7DFYBHZ8FDQ2P59XHT9MAJQ">Sticker Animation Control</h1>
 <p>You can set Sticker animations to Always animate, Animate on interaction, or never animate. </p>
-<p><img src="https://support.discord.com/hc/article_attachments/4407501536407" alt="Screenshot_95.png"></p>
+<p class="wysiwyg-text-align-center"><img src="https://support.discord.com/hc/article_attachments/4407501536407" alt="Screenshot_95.png"></p>
 <h1 id="h_01FF8RQ8EHR2T5PPCF9MZY1E1Y">Text-to-Speech settings</h1>
 <h3 id="h_01HE6D3J3H6KJ0QV1DVJCZWT1P">Alongside the Text-to-Speech Rate Slider, we also have improved <a href="https://support.discord.com/hc/en-us/articles/4408877527703" target="_blank" rel="noopener noreferrer">Accessible Drag &amp; Drop</a> available.</h3>
 <p><a href="https://support.discord.com/hc/en-us/articles/212517297" target="_blank" rel="noopener noreferrer">Text-To-Speech</a> has been available to all users on Discord for some time now, but over the years we've listened to your need to adjust the speed at which message content is read back to you. Which is what led us to build the <strong>Text-To-Speech Slider</strong>.</p>
 <p class="wysiwyg-text-align-center"><img src="https://support.discord.com/hc/article_attachments/4409306111767" alt="improved-tts-slider.gif" width="359" height="359"></p>
 <p><span style="font-weight: 400;">From </span><strong>User Settings &gt; Accessibility, </strong><span style="font-weight: 400;">use the Text-to-Speech rate slider setting to adjust the speed at which you would like text read back to you.</span></p>
-<p><img src="https://support.discord.com/hc/article_attachments/4407494957975" alt="Screenshot_96.png"></p>
+<p class="wysiwyg-text-align-center"><img src="https://support.discord.com/hc/article_attachments/4407494957975" alt="Screenshot_96.png"></p>
 <p><span style="font-weight: 400;">After adjusting the speed, you can preview the Text-to-Speech rate by clicking on the ‘Preview’ button.</span></p>
 <p><span style="font-weight: 400;">For more information about <a href="https://support.discord.com/hc/en-us/articles/212517297" target="_blank" rel="noopener noreferrer">Text to Speech, check out this article</a>. </span></p>
 <h1 id="h_01G142FBDW2SF1D36Q0TS3N4SQ">High-Contrast Settings</h1>
