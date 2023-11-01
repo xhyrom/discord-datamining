@@ -55992,14 +55992,7 @@ html .progress__4ef76 {
     position: relative;
     display: flex;
     align-self: stretch;
-    align-items: center
-}
-
-.falloweenArtContainer_c637a3 {
-    flex-basis: 150px
-}
-
-.shopForAllArtContainer_f6e743 {
+    align-items: center;
     flex-basis: 139px
 }
 
@@ -56010,10 +56003,6 @@ html .progress__4ef76 {
     object-fit: contain;
     width: 150px;
     transform: translatey(-3px)
-}
-
-.falloweenBackgroundImage__7e271 {
-    background-image: url(/assets/86e981fd65ff1efe025e.jpg)
 }
 
 .shopForAllBackgroundImage__009d9 {
@@ -123416,4 +123405,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=app.ca500da8b1571dea2693.css.map*/
+/*# sourceMappingURL=app.84b965ea79d680a44e14.css.map*/

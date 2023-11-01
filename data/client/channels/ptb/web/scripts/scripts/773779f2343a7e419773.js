@@ -5848,11 +5848,8 @@
                 container: "container_d6bff4",
                 containerDefaultMargin: "containerDefaultMargin_dcee92",
                 ctaButton: "ctaButton__7d20c",
-                falloweenArtContainer: "falloweenArtContainer_c637a3 artContainer_fc2857",
-                falloweenBackgroundImage: "falloweenBackgroundImage__7e271",
                 mainColumn: "mainColumn_f44fc2",
                 marketingPage: "marketingPage_f11849",
-                shopForAllArtContainer: "shopForAllArtContainer_f6e743 artContainer_fc2857",
                 shopForAllBackgroundImage: "shopForAllBackgroundImage__009d9",
                 textBody: "textBody__282cf",
                 title: "title__5fd27"
