@@ -4793,6 +4793,7 @@
                 CONTACTS: "Contacts",
                 CONTACTS_ON_DISCORD: "Contacts on Discord",
                 FRIEND_REQUEST_NO_RESULTS_FOUND: "Wumpus looked, but couldn’t find anyone with that name.",
+                SEARCH_OR_ADD_BY_USERNAME: "Search or type a username",
                 ADD_BY_USERNAME: "Add by Username",
                 ADD_BY_ID_TITLE: "Add your friend on Discord",
                 ADD_BY_ID_BODY: "You will need both their username and a tag. Keep in mind that username is case sensitive.",
@@ -10838,6 +10839,7 @@
                 FRIEND_FINDER_INCENTIVIZED_BOOST_TITLE_NEW_USER: "Free Nitro Earned",
                 FRIEND_FINDER_INCENTIVIZED_BOOST_PROGRESS_NEW_USER: "{earned, plural, =1 {1 month} =0 {0 months} other {{earned} months}}",
                 FRIEND_FINDER_PEOPLE_YOU_MAY_KNOW_HEADER_NEW_USER: "People you may know — {count}",
+                FRIEND_FINDER_SEARCH_ROW_NOT_FOUND: "No exact username matches found",
                 CONTACT_SYNC_TITLE: "Find your friends",
                 CONTACT_SYNC_LANDING_TITLE: "Find your friends",
                 CONTACT_SYNC_LANDING_SUBTITLE_REDESIGN: "Let's see which of your contacts is already on Discord!",
@@ -17948,7 +17950,7 @@
                 L = E("782340");
             (0, i.setUpdateRules)(s.default), (0, r.default)(L.default, n.default, T.default), a.default.Emitter.injectBatchEmitChanges(o.unstable_batchedUpdates), a.default.PersistedStore.disableWrites = __OVERLAY__, a.default.initialize();
             let u = window.GLOBAL_ENV.RELEASE_CHANNEL;
-            new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(u, ", Build Number: ").concat("242439", ", Version Hash: ").concat("b2565baecf488cd7bf86e04a258f2c715629f065")), t.default.setTags({
+            new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(u, ", Build Number: ").concat("242454", ", Version Hash: ").concat("62eeab3999759285736da2815b21c0737afd68ff")), t.default.setTags({
                 appContext: l.CURRENT_APP_CONTEXT
             }), S.default.initBasic(), N.default.init(), I.FocusRingManager.init(), O.init(), (0, R.cleanupTempFiles)()
         },
@@ -20318,8 +20320,8 @@
 
             function o() {
                 var e;
-                let _ = parseInt((e = "242439", "242439"));
-                return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("242439")), _ = 0), _
+                let _ = parseInt((e = "242454", "242454"));
+                return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("242454")), _ = 0), _
             }
         },
         990629: function(e, _, E) {
@@ -35065,4 +35067,4 @@
         }
     }
 ]);
-//# sourceMappingURL=4a607104f7ef4d20c3fe.js.map
+//# sourceMappingURL=16b65a035df46ccc94a8.js.map
