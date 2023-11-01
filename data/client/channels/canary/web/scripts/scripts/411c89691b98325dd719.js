@@ -26,11 +26,11 @@
                         showPending: T = !1,
                         showTryItOut: E = !1,
                         avatarDecorationOverride: _
-                    } = t, [d, S] = n.useState(!1), I = (0, o.useStateFromStores)([i.default], () => i.default.useReducedMotion), f = (0, o.useStateFromStores)([a.default], () => a.default.isFocused()), {
-                        pendingAvatarDecoration: C
+                    } = t, [d, S] = n.useState(!1), C = (0, o.useStateFromStores)([i.default], () => i.default.useReducedMotion), I = (0, o.useStateFromStores)([a.default], () => a.default.isFocused()), {
+                        pendingAvatarDecoration: f
                     } = (0, u.default)({
                         isTryItOut: E
-                    }), A = f && (d || !I && !s), N = T && void 0 !== C ? C : null == e ? void 0 : e.avatarDecoration, v = n.useMemo(() => (0, l.getAvatarDecorationURL)({
+                    }), A = I && (d || !C && !s), N = T && void 0 !== f ? f : null == e ? void 0 : e.avatarDecoration, v = n.useMemo(() => (0, l.getAvatarDecorationURL)({
                         avatarDecoration: void 0 !== _ ? _ : N,
                         canAnimate: A,
                         size: r
@@ -65,12 +65,12 @@
                 _ = new Map,
                 d = s,
                 S = T,
-                I = E,
-                f = _,
-                C = !1;
+                C = E,
+                I = _,
+                f = !1;
             class A extends a.default.Store {
                 get isFetching() {
-                    return C
+                    return f
                 }
                 get error() {
                     return n
@@ -85,10 +85,10 @@
                     return S
                 }
                 get categorySkuIdsByProductSkuId() {
-                    return I
+                    return C
                 }
                 get productsByItemTypeAndCategory() {
-                    return f
+                    return I
                 }
                 getCategory(t) {
                     return null != t ? d.get(t) : void 0
@@ -97,19 +97,19 @@
                     return null != t ? S.get(t) : void 0
                 }
                 getCategoryForProduct(t) {
-                    return null != t ? this.getCategory(I[t]) : void 0
+                    return null != t ? this.getCategory(C[t]) : void 0
                 }
                 getProductsByItemType(t) {
-                    return null != t && u.CollectiblesCategorySkuIdSets.ALL.has(t) ? f.get(t) : void 0
+                    return null != t && u.CollectiblesCategorySkuIdSets.ALL.has(t) ? I.get(t) : void 0
                 }
             }
             A.displayName = "CollectiblesCategoryStore";
             var N = new A(l.default, {
                 COLLECTIBLES_CATEGORIES_FETCH: t => {
-                    C = !0, n = void 0
+                    f = !0, n = void 0
                 },
                 COLLECTIBLES_CATEGORIES_FETCH_SUCCESS: t => {
-                    0 === t.categories.length ? (d = s, S = T, I = E, f = _) : !(0, i.isEqual)([...d.values()], t.categories) && (d = new Map(t.categories.map(t => [t.skuId, t])), S = new Map((0, c.getProductsFromCategories)(d).map(t => [t.skuId, t])), I = t.categories.reduce((t, e) => (e.products.forEach(r => {
+                    0 === t.categories.length ? (d = s, S = T, C = E, I = _) : !(0, i.isEqual)([...d.values()], t.categories) && (d = new Map(t.categories.map(t => [t.skuId, t])), S = new Map((0, c.getProductsFromCategories)(d).map(t => [t.skuId, t])), C = t.categories.reduce((t, e) => (e.products.forEach(r => {
                         t[r.skuId] = e.skuId
                     }), t), {}), t.categories.forEach(t => {
                         let e = t.products.reduce((t, e) => {
@@ -120,17 +120,29 @@
                             }
                             return t
                         }, {});
-                        f.set(t.skuId, e)
-                    })), o = Date.now(), C = !1, n = void 0
+                        I.set(t.skuId, e)
+                    })), o = Date.now(), f = !1, n = void 0
                 },
                 COLLECTIBLES_CATEGORIES_FETCH_FAILURE: t => {
                     let {
                         error: e
                     } = t;
-                    d = s, S = T, I = E, f = _, C = !1, n = e
+                    d = s, S = T, C = E, I = _, f = !1, n = e
+                },
+                COLLECTIBLES_PRODUCT_FETCH: t => {
+                    f = !0, n = void 0
+                },
+                COLLECTIBLES_PRODUCT_FETCH_SUCCESS: t => {
+                    S.set(t.product.skuId, t.product), f = !1, n = void 0
+                },
+                COLLECTIBLES_PRODUCT_FETCH_FAILURE: t => {
+                    let {
+                        error: e
+                    } = t;
+                    f = !1, n = e
                 },
                 LOGOUT: t => {
-                    d = s, S = T, I = E, f = _, o = void 0, C = !1, n = void 0
+                    d = s, S = T, C = E, I = _, o = void 0, f = !1, n = void 0
                 }
             })
         },
@@ -153,7 +165,7 @@
                     return S
                 },
                 getAvatarDecorationsFromPurchases: function() {
-                    return C
+                    return f
                 },
                 getAvatarDecorationsFromCategories: function() {
                     return A
@@ -191,7 +203,7 @@
                     let e = (0, n.flatMap)([...t.values()], "products");
                     return (0, n.uniqBy)(e, "storeListingId")
                 },
-                I = (t, e) => {
+                C = (t, e) => {
                     if (e === i.CollectiblesItemType.AVATAR_DECORATION) {
                         let e = (0, n.flatMap)([...t.values()], "items").filter(l.isAvatarDecorationRecord);
                         return (0, n.uniqBy)(e, "id")
@@ -201,7 +213,7 @@
                         return (0, n.uniqBy)(e, "id")
                     }
                 },
-                f = (t, e) => {
+                I = (t, e) => {
                     let r = S(t);
                     if (e === i.CollectiblesItemType.AVATAR_DECORATION) {
                         let t = (0, n.flatMap)(r, "items").filter(l.isAvatarDecorationRecord);
@@ -212,8 +224,8 @@
                         return (0, n.uniqBy)(t, "id")
                     }
                 },
-                C = t => I(t, i.CollectiblesItemType.AVATAR_DECORATION),
-                A = t => f(t, i.CollectiblesItemType.AVATAR_DECORATION),
+                f = t => C(t, i.CollectiblesItemType.AVATAR_DECORATION),
+                A = t => I(t, i.CollectiblesItemType.AVATAR_DECORATION),
                 N = (t, e) => {
                     var r;
                     let {
@@ -224,8 +236,8 @@
                     let l = s.Endpoints.APPLICATION_ASSET(s.COLLECTIBLES_APPLICATION_ID, t, a);
                     return "".concat(location.protocol).concat(o).concat(l, "?size=").concat(i)
                 },
-                v = t => I(t, i.CollectiblesItemType.PROFILE_EFFECT),
-                O = t => f(t, i.CollectiblesItemType.PROFILE_EFFECT),
+                v = t => C(t, i.CollectiblesItemType.PROFILE_EFFECT),
+                O = t => I(t, i.CollectiblesItemType.PROFILE_EFFECT),
                 R = (t, e) => {
                     let r = v(e),
                         n = O(t).filter(t => {
@@ -383,14 +395,14 @@
         },
         790618: function(t, e, r) {
             "use strict";
-            let n, o, i, u, a, l, c, s, T, E, _, d, S, I;
+            let n, o, i, u, a, l, c, s, T, E, _, d, S, C;
             r.r(e), r.d(e, {
                 default: function() {
                     return D
                 }
             });
-            var f = r("446674"),
-                C = r("913144"),
+            var I = r("446674"),
+                f = r("913144"),
                 A = r("49111");
             let N = A.FormStates.CLOSED,
                 v = {},
@@ -417,9 +429,9 @@
             }
 
             function p() {
-                _ = void 0, d = void 0, S = void 0, I = void 0, E = void 0
+                _ = void 0, d = void 0, S = void 0, C = void 0, E = void 0
             }
-            class y extends f.default.Store {
+            class L extends I.default.Store {
                 getFormState() {
                     return N
                 }
@@ -482,7 +494,7 @@
                     return S
                 }
                 getTryItOutBanner() {
-                    return I
+                    return C
                 }
                 getAllTryItOut() {
                     return {
@@ -490,15 +502,15 @@
                         tryItOutAvatar: _,
                         tryItOutAvatarDecoration: d,
                         tryItOutProfileEffectID: S,
-                        tryItOutBanner: I
+                        tryItOutBanner: C
                     }
                 }
                 getIsDisableSubmit() {
                     return O
                 }
             }
-            y.displayName = "UserSettingsAccountStore";
-            var D = new y(C.default, {
+            L.displayName = "UserSettingsAccountStore";
+            var D = new L(f.default, {
                 USER_SETTINGS_ACCOUNT_INIT: R,
                 USER_SETTINGS_MODAL_INIT: R,
                 USER_SETTINGS_ACCOUNT_SUBMIT_SUCCESS: R,
@@ -596,7 +608,7 @@
                     let {
                         banner: e
                     } = t;
-                    I = e
+                    C = e
                 },
                 USER_SETTINGS_ACCOUNT_SET_TRY_IT_OUT_THEME_COLORS: function(t) {
                     let {
@@ -627,4 +639,4 @@
         }
     }
 ]);
-//# sourceMappingURL=993df709ed5483e8e7e0.js.map
+//# sourceMappingURL=411c89691b98325dd719.js.map
