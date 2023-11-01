@@ -2806,6 +2806,9 @@
                     var t;
                     null === (t = this._connection) || void 0 === t || t.setRtcLogMarker(e)
                 }
+                getSSRCsForUser(e) {
+                    return null == this._connection ? null : [this._connection.getRemoteVideoSSRCsForUser(e), this._connection.getRemoteAudioSSRCForUser(e)]
+                }
                 setClipRecordSSRC(e, t, n, i, r) {
                     var s;
                     let a = (() => {
@@ -33644,7 +33647,7 @@
                         var i;
                         let c = {
                                 environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                                build_number: "242611"
+                                build_number: "242648"
                             },
                             E = l.default.getCurrentUser();
                         null != E && (c.user_id = E.id, c.user_name = E.tag, null != E.email && (c.email = E.email));
@@ -40086,6 +40089,9 @@
                 saveClip(e, t) {
                     return Promise.reject(Error("UNSUPPORTED"))
                 }
+                saveClipForSSRC(e, t, n, i) {
+                    return Promise.reject(Error("UNSUPPORTED"))
+                }
                 updateClipMetadata(e, t) {
                     return Promise.reject(Error("UNSUPPORTED"))
                 }
@@ -40628,7 +40634,7 @@
                             };
                         if (this.connectionState === S.ConnectionStates.CONNECTED) {
                             var l, u;
-                            this.logger.info("Creating user: ".concat(e, " with audio SSRC: ").concat(t, " and video SSRCs: ").concat(null !== (u = null === (l = n) || void 0 === l ? void 0 : l.join(",")) && void 0 !== u ? u : 0)), this.conn.mergeUsers([r]), this.setClipRecordSsrc(t, "audio", "inbound", !0)
+                            this.logger.info("Creating user: ".concat(e, " with audio SSRC: ").concat(t, " and video SSRCs: ").concat(null !== (u = null === (l = n) || void 0 === l ? void 0 : l.join(",")) && void 0 !== u ? u : 0)), this.conn.mergeUsers([r])
                         }
                         let s = this.localPans[e];
                         null != s && this.setLocalPan(e, s.left, s.right);
@@ -40681,8 +40687,8 @@
                 }
                 setClipRecordSsrc(e, t, n, i) {
                     if (!this.destroyed) {
-                        var r, s;
-                        null === (r = (s = this.conn).setClipRecordSsrc) || void 0 === r || r.call(s, e, t, n, i)
+                        var r, s, a, o;
+                        null != this.conn.setClipRecordSsrc2 ? null === (r = (s = this.conn).setClipRecordSsrc2) || void 0 === r || r.call(s, e, this.context === S.MediaEngineContextTypes.STREAM ? "application" : "user", i) : null === (a = (o = this.conn).setClipRecordSsrc) || void 0 === a || a.call(o, e, t, n, i)
                     }
                 }
                 getLocalVolume(e) {
@@ -41872,6 +41878,22 @@
                         }, e => {
                             let t = JSON.parse(e);
                             return r(t)
+                        })
+                    })
+                }
+                saveClipForSSRC(e, t, n, i) {
+                    let r = (0, E.getVoiceEngine)();
+                    return null == r.saveClipForSSRC ? Promise.reject("unsupported") : new Promise((s, a) => {
+                        r.saveClipForSSRC(e, t, n, i, (e, t, n) => {
+                            let i = JSON.parse(n);
+                            return s({
+                                duration: e,
+                                thumbnail: t,
+                                clipStats: i
+                            })
+                        }, e => {
+                            let t = JSON.parse(e);
+                            return a(t)
                         })
                     })
                 }
@@ -45336,6 +45358,9 @@
                 saveClip(e, t) {
                     return Promise.reject(Error("UNSUPPORTED"))
                 }
+                saveClipForSSRC(e, t, n, i) {
+                    return Promise.reject(Error("UNSUPPORTED"))
+                }
                 updateClipMetadata(e, t) {
                     return Promise.reject(Error("UNSUPPORTED"))
                 }
@@ -46306,4 +46331,4 @@
         }
     }
 ]);
-//# sourceMappingURL=661e92563d607649f5de.js.map
+//# sourceMappingURL=6c2c47a6f91ab4a860c2.js.map

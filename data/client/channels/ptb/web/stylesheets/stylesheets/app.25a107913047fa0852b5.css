@@ -108169,6 +108169,63 @@ html .invoiceCancelRow_a8669b {
     right: 0
 }
 
+.header__4d74d {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: var(--spacing-24);
+    padding-bottom: var(--spacing-12)
+}
+
+.headerImage_b01780 {
+    position: absolute;
+    top: -68px;
+    left: 140px;
+    width: 170px
+}
+
+.title_b3b7a5 {
+    font-weight: 700;
+    text-align: center;
+    padding-bottom: var(--spacing-12)
+}
+
+.subtitle_f5a31e {
+    color: var(--header-secondary);
+    text-align: center
+}
+
+.description__7cb7c {
+    color: var(--text-normal);
+    text-align: center;
+    margin-top: var(--spacing-8)
+}
+
+.modalCloseButton__8c60a {
+    position: absolute;
+    top: var(--spacing-16);
+    right: var(--spacing-16)
+}
+
+.content__93530 {
+    padding-bottom: var(--spacing-16)
+}
+
+.help__2aa29 {
+    margin-top: var(--spacing-8);
+    margin-bottom: var(--spacing-8)
+}
+
+.password__30a1f {
+    margin-top: var(--spacing-16)
+}
+
+.buttons_ac8383 {
+    margin-top: var(--spacing-24);
+    display: flex;
+    flex-direction: column
+}
+
 .header__9ca73 {
     display: flex;
     flex-direction: column;
@@ -123359,4 +123416,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=app.93c207b014b4b476d031.css.map*/
+/*# sourceMappingURL=app.25a107913047fa0852b5.css.map*/

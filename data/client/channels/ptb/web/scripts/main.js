@@ -1314,16 +1314,16 @@
                     compact: p = !1,
                     disableInteraction: _ = !1,
                     maxVisibleUsers: I = 3
-                } = e, [v, y] = l.useState(!1), R = l.useRef(new d.DelayedCall(150, () => y(!1))), L = (0, o.useStateFromStoresArray)([E.default, S.default], () => {
+                } = e, [v, y] = l.useState(!1), L = l.useRef(new d.DelayedCall(150, () => y(!1))), R = (0, o.useStateFromStoresArray)([E.default, S.default], () => {
                     if (i.type === T.ParticipantTypes.STREAM) {
                         let e = E.default.getViewerIds(i.id);
                         return e.length > 0 ? e.map(e => S.default.getUser(e)).filter(h.isNotNullish) : D
                     }
                     return i.type === T.ParticipantTypes.ACTIVITY ? i.participants.size > 0 ? Array.from(i.participants).map(e => S.default.getUser(e)).filter(h.isNotNullish) : D : D
                 }, [i]), O = l.useCallback(() => {
-                    R.current.cancel(), y(!0)
+                    L.current.cancel(), y(!0)
                 }, []), b = l.useCallback(() => {
-                    R.current.delay()
+                    L.current.delay()
                 }, []), P = l.useCallback((e, t) => {
                     O(), (0, f.openContextMenuLazy)(e, async () => {
                         let {
@@ -1337,24 +1337,24 @@
                         onClose: b
                     })
                 }, [b, O]);
-                if (0 === L.length) return null;
+                if (0 === R.length) return null;
                 if (p) return (0, a.jsx)(M, {
                     maxVisibleUsers: I,
-                    users: L,
+                    users: R,
                     guildId: s,
                     channelId: t,
                     className: m,
                     participantType: i.type
                 });
-                let U = u(L).take(I).map(e => (0, a.jsx)(c.Avatar, {
+                let U = u(R).take(I).map(e => (0, a.jsx)(c.Avatar, {
                     src: e.getAvatarURL(s, 24),
                     "aria-label": e.username,
                     size: c.AvatarSizes.SIZE_24,
                     className: C.viewer
                 }, e.id)).value();
-                return L.length > I && (U[U.length - 1] = (0, a.jsxs)("div", {
+                return R.length > I && (U[U.length - 1] = (0, a.jsxs)("div", {
                     className: C.overflow,
-                    children: ["+", L.length - I + 1]
+                    children: ["+", R.length - I + 1]
                 }, "overflow")), (0, a.jsx)(g.default, {
                     section: A.AnalyticsSections.STREAM_VIEWER_POPOUT,
                     children: (0, a.jsx)("div", {
@@ -1366,7 +1366,7 @@
                                 handleUserContextMenu: P,
                                 guildId: s,
                                 channelId: t,
-                                users: L,
+                                users: R,
                                 disableInteraction: _
                             }),
                             shouldShow: v,
@@ -1739,8 +1739,8 @@
                 return {
                     logsUploaded: new Date().toISOString(),
                     releaseChannel: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                    buildNumber: "242611",
-                    versionHash: "52075da91e3237b88c6d213759c9dc7d0d97957f"
+                    buildNumber: "242648",
+                    versionHash: "0834ec7b33fbf47d549c2086bbce65210bf6ebad"
                 }
             }
             n.r(t), n.d(t, {
@@ -1975,7 +1975,7 @@
                     dsn: "https://fa97a90475514c03a42f80cd36d147c4@sentry.io/140984",
                     autoSessionTracking: !1,
                     environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                    release: "discord_web-52075da91e3237b88c6d213759c9dc7d0d97957f",
+                    release: "discord_web-0834ec7b33fbf47d549c2086bbce65210bf6ebad",
                     beforeSend: e => {
                         var t, n;
                         return !(null != (t = e).exception && null != t.exception.values && t.exception.values.every(e => null == e.stacktrace || null != e.stacktrace.frames && 1 === e.stacktrace.frames.length) && "canary" !== window.GLOBAL_ENV.RELEASE_CHANNEL || s.some(e => window.navigator.appVersion.toLowerCase().indexOf(e) >= 0)) && !r() && !("Aborted" === (n = e).message || "cancel captcha" === n.message) && i() ? e : null
@@ -1993,7 +1993,7 @@
                     })],
                     ignoreErrors: ["EADDRINUSE", "BetterDiscord", "EnhancedDiscord", "Powercord", "RecipeWebview", "jQuery", "localStorage", "has already been declared", "Cannot call hover while not dragging.", "Cannot call beginDrag while dragging.", "getHostNode", "setupCSS", "on missing remote object", "ChunkLoadError", "Cannot find module 'discord_utils'", "Failed to setup Krisp module", "Error invoking remote method 'DISCORD_NATIVE_MODULES_INSTALL': Error: Module updater is not available!", "Non-Error promise rejection captured with keys:", "Request has been terminated", "Cannot resolve a Slate point from DOM point", "Failed to fetch", "no suitable image found", "ResizeObserver loop limit exceeded", "The play() request was interrupted", "could not play audio", "notosans-400-normalitalic"],
                     denyUrls: [/recaptcha/, /mobilediscord\.com/, /betterdiscord:\/\//]
-                }), a.setTag("buildNumber", (e = "242611", "242611")), a.setTag("builtAt", String("1698867548583"));
+                }), a.setTag("buildNumber", (e = "242648", "242648")), a.setTag("builtAt", String("1698869764196"));
                 let t = window.GLOBAL_ENV.SENTRY_TAGS;
                 if (null != t && "object" == typeof t)
                     for (let e in t) a.setTag(e, t[e]);
@@ -2008,6 +2008,9 @@
                 },
                 sendMessagesForScanning: function() {
                     return r
+                },
+                sendMultiChannelMessagesForScanning: function() {
+                    return i
                 }
             });
             var a = n("872717"),
@@ -2030,6 +2033,19 @@
                     url: l.Endpoints.EXPLICIT_MEDIA_SCAN_MESSAGES(e),
                     body: {
                         message_ids: t
+                    }
+                })
+            }
+
+            function i(e) {
+                let t = e.map(e => ({
+                    channel_id: e.channel_id,
+                    message_id: e.id
+                }));
+                return a.default.patch({
+                    url: l.Endpoints.EXPLICIT_MEDIA_SCAN_MULTI_CHANNEL_MESSAGES,
+                    body: {
+                        messages: t
                     }
                 })
             }
@@ -3177,7 +3193,7 @@
                 }
             }
 
-            function R() {
+            function L() {
                 let {
                     isPreload: e,
                     skipLocalFetch: t,
@@ -3195,7 +3211,7 @@
                 } else n && N.log("Skipping fetch because there is no selected channel")
             }
 
-            function L(e) {
+            function R(e) {
                 let {
                     guildId: t,
                     channelId: n,
@@ -3344,22 +3360,22 @@
                     i.default.unsubscribe("CONNECTION_OPEN", y)
                 }
                 constructor(...e) {
-                    super(...e), this.fetchMessages = M, this.loadSelectedChannelIfNecessary = R, this.stores = new Map().set(m.default, P), this.actions = {
+                    super(...e), this.fetchMessages = M, this.loadSelectedChannelIfNecessary = L, this.stores = new Map().set(m.default, P), this.actions = {
                         APP_STATE_UPDATE: j,
                         OVERLAY_INITIALIZE: y,
-                        CHANNEL_SELECT: L,
+                        CHANNEL_SELECT: R,
                         VOICE_CHANNEL_SELECT: O,
                         THREAD_CREATE: x,
-                        THREAD_LIST_SYNC: () => R(),
+                        THREAD_LIST_SYNC: () => L(),
                         CHANNEL_CREATE: x,
                         CHANNEL_PRELOAD: U,
                         THREAD_CREATE_LOCAL: w,
-                        GUILD_CREATE: () => R(),
+                        GUILD_CREATE: () => L(),
                         MESSAGE_END_EDIT: B,
                         LOAD_MESSAGES_SUCCESS: G,
                         UPLOAD_FAIL: V,
-                        CHANNEL_DELETE: () => R(),
-                        THREAD_DELETE: () => R()
+                        CHANNEL_DELETE: () => L(),
+                        THREAD_DELETE: () => L()
                     }
                 }
             }
@@ -3939,7 +3955,7 @@
                     onClose: C,
                     onSelect: v,
                     appContext: N = _.AppContext.APP
-                } = e, M = f.default.supports(T.Features.DESKTOP_CAPTURE_APPLICATIONS), D = null !== (t = i.find(e => e.ownerId === (null == l ? void 0 : l.id))) && void 0 !== t ? t : null, y = I(n, l, i), R = (0, o.default)(D, N), L = (0, u.default)(D, N, _.NOOP_NULL), O = null == D ? (0, a.jsx)(s.MenuItem, {
+                } = e, M = f.default.supports(T.Features.DESKTOP_CAPTURE_APPLICATIONS), D = null !== (t = i.find(e => e.ownerId === (null == l ? void 0 : l.id))) && void 0 !== t ? t : null, y = I(n, l, i), L = (0, o.default)(D, N), R = (0, u.default)(D, N, _.NOOP_NULL), O = null == D ? (0, a.jsx)(s.MenuItem, {
                     id: "share-your-screen",
                     label: A.default.Messages.SHARE_YOUR_SCREEN,
                     icon: E.default,
@@ -3948,8 +3964,8 @@
                     children: [h.isPlatformEmbedded ? (0, a.jsx)(s.MenuItem, {
                         id: "stream-settings",
                         label: A.default.Messages.SCREENSHARE_STREAM_QUALITY,
-                        children: R
-                    }) : null, g ? L : null, M ? (0, a.jsx)(s.MenuItem, {
+                        children: L
+                    }) : null, g ? R : null, M ? (0, a.jsx)(s.MenuItem, {
                         id: "change-windows",
                         label: A.default.Messages.SCREENSHARE_CHANGE_WINDOWS,
                         icon: E.default,
@@ -4774,4 +4790,4 @@
         }
     }
 ]);
-//# sourceMappingURL=123b2b9aa5fb2a1bc7ca.js.map
+//# sourceMappingURL=fe954610700d4e8bd3ea.js.map
