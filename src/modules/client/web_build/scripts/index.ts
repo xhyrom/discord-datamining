@@ -143,17 +143,21 @@ export class Scripts implements Module {
     let routesScript;
     for (const script of scripts) {
       const content = await script.content();
-      if (content.match(/buildNumber:\s*"(?<number>[0-9]+)"/g)?.length === 1) {
+
+      if (
+        content.match(/(?<!\w)buildNumber:\s*"(?<number>[0-9]+)"/g)?.length ===
+        1
+      ) {
         mainScript = script;
         continue;
       }
 
-      if (content.match(/(DISCORD:\s*["']Discord["'])/g)?.length === 1) {
+      if (content.match(/(?<!\w)DISCORD:\s*"Discord"/g)?.length === 1) {
         stringsScript = script;
         continue;
       }
 
-      if (content.match(/"heading-lg\/bold":\s*/g)?.length === 1) {
+      if (content.match(/(?<!\w)loadingBar:\s*"/g)?.length === 1) {
         classMappingsScript = script;
         continue;
       }
@@ -163,7 +167,7 @@ export class Scripts implements Module {
         continue;
       }
 
-      if (content.match(/(ME:\s*["']\/users\/@me["'])/g)?.length === 1) {
+      if (content.match(/(?<!\w)ME:\s*["']\/users\/@me["']/g)?.length === 1) {
         routesScript = script;
         continue;
       }
