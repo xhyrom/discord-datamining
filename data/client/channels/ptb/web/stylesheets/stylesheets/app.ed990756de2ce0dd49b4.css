@@ -29012,7 +29012,7 @@ html .progress__4ef76 {
     align-items: center;
     margin: var(--spacing-16);
     border-radius: 6px;
-    padding: 6px 12px 6px 16px;
+    padding: var(--spacing-8)var(--spacing-12)var(--spacing-8)var(--spacing-16);
     background: var(--background-floating);
     position: sticky;
     height: -moz-fit-content;
@@ -53574,8 +53574,8 @@ html .progress__4ef76 {
 
 .message__13e98 {
     font-weight: 500;
-    font-size: 16px;
-    line-height: 20px;
+    font-size: 1rem;
+    line-height: 1.25rem;
     white-space: nowrap;
     text-overflow: ellipsis;
     overflow: hidden
@@ -113993,8 +113993,10 @@ html .invoiceCancelRow_c1bfe7 {
     border: 1px solid transparent
 }
 
-.buttonsBackground__0addb:hover {
-    cursor: pointer
+.buttonsBackground__0addb svg {
+    height: 15px;
+    width: 15px;
+    fill: var(--interactive-normal)
 }
 
 .buttonsBackground__0addb.disabled__42201 {
@@ -114004,6 +114006,19 @@ html .invoiceCancelRow_c1bfe7 {
 .buttonsBackgroundActive__5341f {
     border: 1px solid var(--brand-500);
     background: hsl(var(--brand-500-hsl)/.15)
+}
+
+.buttonsBackgroundActive__5341f svg {
+    fill: var(--interactive-active)
+}
+
+.buttonsBackgroundInactive__18982:hover {
+    cursor: pointer;
+    border: 1px solid var(--background-modifier-hover)
+}
+
+.buttonsBackgroundInactive__18982:hover svg {
+    fill: var(--interactive-hover)
 }
 
 .modalHeader_f08afe {
@@ -114088,7 +114103,7 @@ html .invoiceCancelRow_c1bfe7 {
 
 .tipNumber_ee8aea {
     border-radius: var(--radius-round);
-    background: var(--background-secondary-alt);
+    background: var(--background-tertiary);
     display: flex;
     min-width: 32px;
     min-height: 32px;
@@ -123412,4 +123427,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=app.92678c8ec7400e7a1adc.css.map*/
+/*# sourceMappingURL=app.ed990756de2ce0dd49b4.css.map*/
