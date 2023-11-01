@@ -83504,6 +83504,10 @@ input::-webkit-inner-spin-button {
     background-color: transparent
 }
 
+.theme-light .video__47ab5 {
+    background-color: black
+}
+
 .header__78150 {
     width: 85%
 }
@@ -123427,4 +123431,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=app.b16c6c3a0ccfb81ec162.css.map*/
+/*# sourceMappingURL=app.4dc2c4945aa713d4d316.css.map*/
