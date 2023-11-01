@@ -174,14 +174,12 @@ export class Channel implements Module {
   }
 
   private async getVersionHash() {
-    const res = await fetch(
-      `${this.baseUrl}/assets/version.${this.displayType}.json`
-    );
+    const res = await fetch(`${this.baseUrl}/login`);
     if (!res.ok) {
       return null;
     }
 
-    const json = await res.json();
-    return json.hash;
+    // That's version hash
+    return res.headers.get("X-Build-Id");
   }
 }
