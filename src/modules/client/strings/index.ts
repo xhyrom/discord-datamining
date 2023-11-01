@@ -86,7 +86,7 @@ export class Strings implements Module {
       getWebhookFromEnv("DISCORDINSIDERS_DISCORD_WEBHOOK_STRINGS"),
       result?.update?.hash.to,
       {
-        content: `${
+        content: `<@&1167155135403794572>${
           diff.length > 2000 ? diff.slice(0, 1968) + "...```" : diff
         }`,
       },
