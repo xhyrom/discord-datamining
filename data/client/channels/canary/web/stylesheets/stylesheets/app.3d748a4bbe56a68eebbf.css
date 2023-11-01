@@ -24651,25 +24651,33 @@ html .progress__4ef76 {
 .normalStylesDefault_b8063d {
     --poll-style-border: var(--background-tertiary);
     --poll-style-fill: var(--background-secondary);
-    --poll-style-label: var(--text-normal)
+    --poll-style-label: var(--text-normal);
+    --poll-style-shadow: var(--shadow-low)
 }
 
 .normalStylesImageOnlyAnswers__10b2a {
     --poll-style-border: var(--polls-image-normal-border);
     --poll-style-fill: var(--background-secondary);
-    --poll-style-label: var(--white)
+    --poll-style-label: var(--white);
+    --poll-style-shadow: var(--shadow-low)
+}
+
+.selectedMixinStyles__6dfd9 {
+    --poll-style-shadow: var(--shadow-high)
 }
 
 .victorStyles_d67b5e {
     --poll-style-border: var(--polls-victor-border);
     --poll-style-fill: var(--polls-victor-fill);
-    --poll-style-label: var(--polls-victor-label)
+    --poll-style-label: var(--polls-victor-label);
+    --poll-style-shadow: var(--shadow-high)
 }
 
 .votedStyles__92837 {
     --poll-style-border: var(--polls-voted-border);
     --poll-style-fill: var(--polls-voted-fill);
-    --poll-style-label: var(--polls-voted-label)
+    --poll-style-label: var(--polls-voted-label);
+    --poll-style-shadow: var(--shadow-high)
 }
 
 .enabled__75d0c {
@@ -24689,13 +24697,14 @@ html .progress__4ef76 {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center
+    justify-content: center;
+    box-shadow: var(--poll-style-shadow);
+    transition: box-shadow.12s ease-in
 }
 
 .answer_be6c2e.didSelfVote__6dd05 {
     border: 1px solid var(--poll-style-border);
-    border-radius: var(--radius-md);
-    box-shadow: var(--shadow-high)
+    border-radius: var(--radius-md)
 }
 
 .hasVoted__13743:not(.didSelfVote__6dd05) {
@@ -24747,7 +24756,7 @@ html .progress__4ef76 {
     align-items: stretch;
     background-color: var(--poll-style-fill);
     border-radius: var(--radius-md);
-    box-shadow: var(--shadow-low);
+    box-shadow: var(--poll-style-shadow);
     color: var(--poll-style-label);
     display: flex;
     flex-direction: column;
@@ -24776,10 +24785,6 @@ html .progress__4ef76 {
 .media_a7fe08 {
     border-top-left-radius: var(--radius-md);
     border-bottom-left-radius: var(--radius-md)
-}
-
-.selectedAnswer__2ed5e {
-    box-shadow: var(--shadow-high)
 }
 
 .label_f6dfd2 {
@@ -123350,4 +123355,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=app.1adefd8dcec00ad6f0b5.css.map*/
+/*# sourceMappingURL=app.3d748a4bbe56a68eebbf.css.map*/

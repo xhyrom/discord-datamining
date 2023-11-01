@@ -19012,6 +19012,7 @@
             e.exports = {
                 normalStylesDefault: "normalStylesDefault_b8063d",
                 normalStylesImageOnlyAnswers: "normalStylesImageOnlyAnswers__10b2a",
+                selectedMixinStyles: "selectedMixinStyles__6dfd9",
                 victorStyles: "victorStyles_d67b5e",
                 votedStyles: "votedStyles__92837"
             }
@@ -19064,7 +19065,6 @@
                 label: "label_f6dfd2",
                 media: "media_a7fe08",
                 mediaContainer: "mediaContainer__32ff8",
-                selectedAnswer: "selectedAnswer__2ed5e",
                 votePercentageBar: "votePercentageBar__4c440",
                 votesData: "votesData__4d275"
             }
