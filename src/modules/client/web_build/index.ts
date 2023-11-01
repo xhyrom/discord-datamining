@@ -23,7 +23,7 @@ import { pushToGit, readFile } from "../../../utils.ts";
 import { ChannelType, type Channel } from "../Channel.ts";
 import { Scripts } from "./scripts/index.ts";
 import { Stylesheets } from "./stylesheets/index.ts";
-import { send } from "./build_senders/index.js";
+import { send } from "./senders/index.ts";
 
 export class WebBuild implements Module {
   #channel: Channel;
@@ -75,7 +75,7 @@ export class WebBuild implements Module {
     const result = await pushToGit(
       `📥 ${
         this.#channel.name
-      } Build ${await build.buildNumber()} (${await build.versionHash()})`,
+      } Web Build ${await build.buildNumber()} (${await build.versionHash()})`,
       [
         `Build Number: ${await build.buildNumber()}`,
         `Version Hash: ${await build.versionHash()}`,

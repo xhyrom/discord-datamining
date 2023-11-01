@@ -139,7 +139,7 @@ export class HostBuild implements Module {
     await this.#channel.summary();
 
     const result = await pushToGit(
-      `📥 ${this.#channel.name} Host Version ${manifest.full.host_version.join(
+      `📥 ${this.#channel.name} Host Build ${manifest.full.host_version.join(
         "."
       )}`,
       [`Host Version: ${manifest.full.host_version.join(".")}`].join("\n"),

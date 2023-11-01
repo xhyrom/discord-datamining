@@ -22,7 +22,6 @@ import { File } from "../../File.ts";
 import type { Module } from "../../../index.ts";
 import { Build } from "./Build.ts";
 import { beautify, writeFile, rm } from "../../../../utils.ts";
-import type { Channel } from "../../Channel.ts";
 import type { WebBuild } from "../index.ts";
 
 export class Scripts implements Module {
