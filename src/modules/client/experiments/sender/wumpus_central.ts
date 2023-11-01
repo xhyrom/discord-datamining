@@ -30,21 +30,38 @@ export class WumpusCentralSender implements Sender {
     const embeds = [];
 
     for (const exp of diff.addedExperiments) {
-      embeds.push(this.buildEmbed(exp, result?.update?.hash.to).setColor(0x58ff80).toJSON());
+      embeds.push(
+        this.buildEmbed(exp, result?.update?.hash.to)
+          .setColor(0x58ff80)
+          .toJSON()
+      );
       if (exp.rollout?.overrides)
         embeds.push(
-          this.buildOverridesEmbed(exp, {}, exp.rollout.overrides, result?.update?.hash.to)
+          this.buildOverridesEmbed(
+            exp,
+            {},
+            exp.rollout.overrides,
+            result?.update?.hash.to
+          )
             .setColor(0x58ff80)
             .toJSON()
         );
     }
 
     for (const exp of diff.removedExperiments) {
-      embeds.push(this.buildEmbed(exp, result?.update?.hash.to).setColor(0xff6565).toJSON());
+      embeds.push(
+        this.buildEmbed(exp, result?.update?.hash.to)
+          .setColor(0xff6565)
+          .toJSON()
+      );
     }
 
     for (const exp of diff.updatedExperiments) {
-      embeds.push(this.buildEmbed(exp.after, result?.update?.hash.to).setColor(0xfff673).toJSON());
+      embeds.push(
+        this.buildEmbed(exp.after, result?.update?.hash.to)
+          .setColor(0xfff673)
+          .toJSON()
+      );
       if (
         !deepEqual(
           exp.after.rollout?.overrides ?? {},
@@ -56,7 +73,7 @@ export class WumpusCentralSender implements Sender {
             exp.after,
             exp.before.rollout?.overrides ?? {},
             exp.after.rollout?.overrides ?? {},
-              result?.update?.hash.to
+            result?.update?.hash.to
           )
             .setColor(0xfff673)
             .toJSON()
@@ -64,20 +81,14 @@ export class WumpusCentralSender implements Sender {
     }
 
     for (const exp of diff.firstRolloutBeganExperiments) {
-      embeds.push(this.buildEmbed(exp, result?.update?.hash.to).setColor(0x6571ff).toJSON());
+      embeds.push(
+        this.buildEmbed(exp, result?.update?.hash.to)
+          .setColor(0x6571ff)
+          .toJSON()
+      );
     }
 
     const embedsPerTen = chunk(embeds, 10);
-
-    console.log("=== Wumpus Central ===");
-    console.log(embedsPerTen.length);
-    console.log(embeds.length);
-
-    console.log("Embeds per ten");
-    console.log(embedsPerTen);
-
-    console.log("Embeds");
-    console.log(embeds);
 
     for (const embeds of embedsPerTen) {
       await postToDiscord(
@@ -91,7 +102,10 @@ export class WumpusCentralSender implements Sender {
     }
   }
 
-  private buildEmbed(exp: Experiment, commitHash: string | undefined): EmbedBuilder {
+  private buildEmbed(
+    exp: Experiment,
+    commitHash: string | undefined
+  ): EmbedBuilder {
     let description = "";
 
     for (const population of [
@@ -152,11 +166,12 @@ export class WumpusCentralSender implements Sender {
 
     const embed = new EmbedBuilder()
       .setTitle(this.experimentName(exp))
-      .setURL(commitHash ? `https://github.com/xHyroM/discord-datamining/commit/${commitHash}` : 'https://discord.gg/QgEbfFa9XA')
-      .addFields(fields)
-      .setFooter({
-        text: "src: discord.gg/datamining @ xHyroM/discord-datamining",
-      });
+      .setURL(
+        commitHash
+          ? `https://github.com/xHyroM/discord-datamining/commit/${commitHash}`
+          : "https://discord.gg/QgEbfFa9XA"
+      )
+      .addFields(fields);
 
     if (description) embed.setDescription(description);
 
@@ -208,7 +223,11 @@ export class WumpusCentralSender implements Sender {
 
     return new EmbedBuilder()
       .setTitle(this.experimentName(exp))
-      .setURL(commitHash ? `https://github.com/xHyroM/discord-datamining/commit/${commitHash}` : 'https://discord.gg/QgEbfFa9XA')
+      .setURL(
+        commitHash
+          ? `https://github.com/xHyroM/discord-datamining/commit/${commitHash}`
+          : "https://discord.gg/QgEbfFa9XA"
+      )
       .setDescription(descripton)
       .setFooter({
         text: "src: discord.gg/datamining @ xHyroM/discord-datamining",
