@@ -39379,8 +39379,8 @@ html .progress__4ef76 {
 }
 
 .memberCount_d3ce07 {
-    font-size: .75rem;
-    line-height: 1rem;
+    font-size: 12px;
+    line-height: 16px;
     display: flex;
     align-items: center
 }
@@ -43937,8 +43937,8 @@ html .progress__4ef76 {
 
 .message__13e98 {
     font-weight: 500;
-    font-size: 16px;
-    line-height: 20px;
+    font-size: 1rem;
+    line-height: 1.25rem;
     white-space: nowrap;
     text-overflow: ellipsis;
     overflow: hidden
@@ -88981,8 +88981,8 @@ input::-webkit-inner-spin-button {
 
 .bodyText__923f7 {
     color: var(--interactive-normal);
-    font-size: 1rem;
-    line-height: 1.25rem;
+    font-size: 16px;
+    line-height: 20px;
     font-weight: 500;
     margin-bottom: 16px
 }
@@ -89029,8 +89029,8 @@ input::-webkit-inner-spin-button {
 }
 
 .trialCheckboxLabel__0297c {
-    font-size: .875rem;
-    line-height: 1.125rem
+    font-size: 14px;
+    line-height: 18px
 }
 
 .loader_acb69b {
@@ -113810,10 +113810,6 @@ html .invoiceCancelRow_c1bfe7 {
     padding: 8px
 }
 
-.shieldIcon__066b5 {
-    color: var(--focus-primary)
-}
-
 .classificationPolicyDescriptionContainer_a80226 {
     display: flex;
     flex-direction: column
@@ -113822,10 +113818,6 @@ html .invoiceCancelRow_c1bfe7 {
 .classificationPolicyLinkIcon__3685d {
     margin-left: auto;
     margin-right: 12px
-}
-
-.arrowIcon__3eda8 {
-    color: var(--interactive-normal)
 }
 
 .image__9f923 {
@@ -118383,18 +118375,6 @@ html .invoiceCancelRow_c1bfe7 {
     max-width: 100%;
     overflow: hidden;
     text-overflow: ellipsis
-}
-
-.checkmarkCircle__98098 {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 34px;
-    height: 34px;
-    margin-left: -2px;
-    margin-top: -2px;
-    margin-bottom: -4px;
-    z-index: 1
 }
 
 .marker__6f061 {
@@ -123370,4 +123350,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=app.8353051b194eebeecd4e.css.map*/
+/*# sourceMappingURL=app.4e0ca0898e4d5e9facae.css.map*/
