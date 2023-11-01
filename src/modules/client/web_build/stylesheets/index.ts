@@ -17,35 +17,36 @@
   * **/
 
 import { join } from "node:path";
-import { File } from "../File.ts";
-import type { Module } from "../../index.ts";
+import { File } from "../../File.ts";
+import type { Module } from "../../../index.ts";
 import {
   beautify,
   writeFile,
   rm,
   postToDiscord,
   getWebhookFromEnv,
-} from "../../../utils.ts";
-import { ChannelType, type Channel } from "../Channel.ts";
+} from "../../../../utils.ts";
+import { ChannelType, type Channel } from "../../Channel.ts";
 import type { PushResult } from "simple-git";
+import type { WebBuild } from "../index.ts";
 
 export class Stylesheets implements Module {
   #files?: {
     stylesheets: File[];
     mainStylesheet: File;
   };
-  #channel: Channel;
+  #webBuild: WebBuild;
 
-  constructor(channel: Channel) {
-    this.#channel = channel;
+  constructor(webBuild: WebBuild) {
+    this.#webBuild = webBuild;
   }
 
   get baseDir() {
-    return join(this.#channel.baseDir, "stylesheets");
+    return join(this.#webBuild.baseDir, "stylesheets");
   }
 
   async run() {
-    console.log(`Scraping stylesheets for ${this.#channel.type}`);
+    console.log(`Scraping stylesheets for ${this.#webBuild.channel.type}`);
 
     const files = await this.files();
 
@@ -63,11 +64,11 @@ export class Stylesheets implements Module {
       beautify(await files.mainStylesheet!.content(), "css")
     );
 
-    // Stylesheets diff is posted in Channel#run
+    // Stylesheets diff is posted in WebBuild#run
   }
 
   async diff(result: PushResult, channel: Channel) {
-    if (this.#channel.type !== ChannelType.Canary) return;
+    if (this.#webBuild.channel.type !== ChannelType.Canary) return;
 
     const diff = await channel.diff(result);
     if (!diff) return;
@@ -103,7 +104,9 @@ export class Stylesheets implements Module {
   async files() {
     if (this.#files) return this.#files;
 
-    const res = await (await fetch(`${this.#channel.baseUrl}/login`)).text();
+    const res = await (
+      await fetch(`${this.#webBuild.channel.baseUrl}/login`)
+    ).text();
 
     const stylesheets = res
       .match(/<link href="\/assets\/[a-z0-9.]+\.css"[^>]+>/g)

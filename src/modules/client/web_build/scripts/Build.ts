@@ -16,32 +16,13 @@
   *  along with this program.  If not, see <https://www.gnu.org/licenses/>.
   * **/
 
-import type { File } from "../File.ts";
-import type { Channel } from "../Channel.ts";
-
-interface ModuleContent {
-  host_version: [number, number, number];
-  module_version: number;
-  package_sha256: string;
-  url: string;
-}
-
-interface ManifestContent {
-  modules: Record<
-    string,
-    {
-      full: ModuleContent;
-      deltas: ModuleContent[];
-    }
-  >;
-  full: ModuleContent;
-}
+import type { File } from "../../File.ts";
+import type { Channel } from "../../Channel.ts";
 
 export class Build {
   script: File;
   channel: Channel;
   #content?: string;
-  #manifestContent?: ManifestContent;
   #buildNumber?: string | undefined;
   #versionHash?: string | undefined;
   #builtAt?: number | null;
@@ -96,17 +77,5 @@ export class Build {
     this.#content = content;
 
     return content;
-  }
-
-  async manifest(): Promise<ManifestContent | null> {
-    if (this.#manifestContent) return this.#manifestContent;
-
-    const manifest = await fetch(
-      `https://canary.discord.com/api/updates/distributions/app/manifests/latest?platform=win&channel=${this.channel.displayType}&arch=x86`
-    );
-    if (!manifest.ok) return null;
-
-    const manifestContent = await manifest.json();
-    return manifestContent;
   }
 }

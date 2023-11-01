@@ -18,10 +18,10 @@
 
 import type { PushResult } from "simple-git";
 import type { Sender } from ".";
-import { getWebhookFromEnv, postToDiscord } from "../../../utils.ts";
+import { getWebhookFromEnv, postToDiscord } from "../../../../utils.ts";
 import { EmbedBuilder } from "@discordjs/builders";
 import type { Build } from "../scripts/Build.ts";
-import { ChannelType, type Channel } from "../Channel.ts";
+import { ChannelType, type Channel } from "../../Channel.ts";
 import type { Scripts } from "../scripts/index.ts";
 import type { Stylesheets } from "../stylesheets/index.ts";
 

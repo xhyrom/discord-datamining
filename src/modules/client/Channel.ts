@@ -18,13 +18,13 @@
 
 import { join } from "node:path";
 import type { Module } from "..";
-import { octokit, pushToGit, readFile } from "../../utils.ts";
-import { Scripts } from "./scripts/index.ts";
-import { Stylesheets } from "./stylesheets/index.ts";
+import { octokit, pushToGit, readFile, writeFile } from "../../utils.ts";
+import { WebBuild } from "./web_build/index.ts";
+import { HostBuild } from "./host_build/index.ts";
 import { Client } from "./index.ts";
-import { send } from "./build_senders/index.ts";
 import type { PushResult } from "simple-git";
 import type { RestEndpointMethodTypes } from "@octokit/rest";
+import { markdownTable } from "markdown-table";
 
 export enum ChannelType {
   Stable,
@@ -33,8 +33,8 @@ export enum ChannelType {
 }
 
 export class Channel implements Module {
-  scripts: Scripts = new Scripts(this);
-  stylesheets: Stylesheets = new Stylesheets(this);
+  hostBuild: HostBuild = new HostBuild(this);
+  webBuild: WebBuild = new WebBuild(this);
   #diff?: RestEndpointMethodTypes["repos"]["compareCommits"]["response"];
   public type: ChannelType;
 
@@ -93,67 +93,65 @@ export class Channel implements Module {
   async run() {
     console.log(`Scraping ${this.displayType} channel`);
 
-    const latestVersionHash = await this.getVersionHash();
-    const currentVersionHash = JSON.parse(
+    await this.hostBuild.run();
+    await this.webBuild.run();
+
+    await this.summary();
+  }
+
+  async summary() {
+    const hostManifest = await this.hostBuild.manifest();
+    const webBuild = await this.webBuild.scripts.build();
+
+    const oldInfo = JSON.parse(
       (await readFile(join(this.baseDir, "info.json"))) ?? "{}"
     );
-    if (
-      latestVersionHash &&
-      currentVersionHash &&
-      latestVersionHash === currentVersionHash.version_hash
-    ) {
-      console.log(
-        `${this.name} Client %s (%s) is up to date`,
-        currentVersionHash.build_number,
-        currentVersionHash.version_hash
-      );
-      return;
-    }
 
-    await this.scripts.run();
-    await this.stylesheets.run();
-
-    const build = await this.scripts.build();
-    const manifest = await build.manifest();
-    const date = new Date((await build.builtAt())!);
-    const scriptFiles = await this.scripts.files();
-    const stylesheetFiles = await this.stylesheets.files();
-
-    const result = await pushToGit(
-      `📥 ${
-        this.name
-      } Build ${await build.buildNumber()} (${await build.versionHash()})`,
-      [
-        `Build Number: ${await build.buildNumber()}`,
-        `Version Hash: ${await build.versionHash()}`,
-        `Host Version: ${manifest?.full.host_version.join(".")}`,
-        `Build At: ${date.getDate()}/${date.getMonth()}/${date.getFullYear()} ${date.getHours()}:${date.getMinutes()}:${date.getSeconds()} (${date.getTime()})`,
-      ].join("\n"),
-      `Scripts (${scriptFiles.scripts.length}):\n${scriptFiles.scripts
-        .map((script) =>
-          script.name === scriptFiles.mainScript.name
-            ? `* ${script.path}`
-            : `  ${script.path}`
-        )
-        .join("\n")}`,
-      `Stylesheets (${
-        stylesheetFiles.stylesheets.length
-      }):\n${stylesheetFiles.stylesheets
-        .map((stylesheet) =>
-          stylesheet.name === stylesheetFiles.mainStylesheet.name
-            ? `* ${stylesheet.path}`
-            : `  ${stylesheet.path}`
-        )
-        .join("\n")}`
+    await writeFile(
+      join(this.baseDir, "info.json"),
+      JSON.stringify(
+        {
+          build_number: await webBuild.buildNumber(),
+          version_hash: await webBuild.versionHash(),
+          host_version:
+            (await hostManifest?.full?.host_version?.join?.(".")) ??
+            oldInfo.host_version,
+          built_at: await webBuild.builtAt(),
+        },
+        null,
+        2
+      )
     );
 
-    if (!result?.update?.hash) return;
-
-    await send(result, this, build, scriptFiles, stylesheetFiles, date);
-
-    if (this.type !== ChannelType.Canary) return;
-
-    await this.stylesheets.diff(result, this);
+    if (hostManifest) {
+      await writeFile(
+        join(this.baseDir, "README.md"),
+        [
+          `# ${this.name}`,
+          "",
+          "### Info",
+          `Build number: ${await webBuild.buildNumber()}  `,
+          `Version hash: ${await webBuild.versionHash()}  `,
+          `Host version: ${hostManifest.full.host_version.join(".")}  `,
+          `Built at: ${new Date(
+            (await webBuild.builtAt())!
+          ).toLocaleString()}  `,
+          "",
+          "### Modules",
+          markdownTable([
+            ["Module", "Version", "Package sha256", "URL"],
+            ...Object.entries(hostManifest.modules).map(
+              ([moduleName, moduleData]) => [
+                moduleName,
+                moduleData.full.module_version.toString(),
+                moduleData.full.package_sha256,
+                moduleData.full.url,
+              ]
+            ),
+          ]),
+        ].join("\n")
+      );
+    }
   }
 
   async diff(result: PushResult) {
@@ -171,15 +169,5 @@ export class Channel implements Module {
     this.#diff = diff;
 
     return diff;
-  }
-
-  private async getVersionHash() {
-    const res = await fetch(`${this.baseUrl}/login`);
-    if (!res.ok) {
-      return null;
-    }
-
-    // That's version hash
-    return res.headers.get("X-Build-Id");
   }
 }

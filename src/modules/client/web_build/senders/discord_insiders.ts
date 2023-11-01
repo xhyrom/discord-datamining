@@ -18,15 +18,15 @@
 
 import type { PushResult } from "simple-git";
 import type { Sender } from ".";
-import { getWebhookFromEnv, postToDiscord } from "../../../utils.ts";
+import { getWebhookFromEnv, postToDiscord } from "../../../../utils.ts";
 import { EmbedBuilder } from "@discordjs/builders";
 import type { Build } from "../scripts/Build.ts";
-import type { Channel } from "../Channel.ts";
+import type { Channel } from "../../Channel.ts";
 import type { Scripts } from "../scripts/index.ts";
 import type { Stylesheets } from "../stylesheets/index.ts";
-import type { File } from "../File.ts";
+import type { File } from "../../File.ts";
 
-export class HyrosCoffeeSender implements Sender {
+export class DiscordInsidersSender implements Sender {
   async send(
     result: PushResult,
     channel: Channel,
@@ -47,6 +47,9 @@ export class HyrosCoffeeSender implements Sender {
       .setTitle(`${channel.name} Build`)
       .setColor(channel.color)
       .setTimestamp(date.getTime())
+      .setFooter({
+        text: "Powered by xHyroM/discord-datamining",
+      })
       .addFields(
         {
           name: "Build Number",
@@ -56,13 +59,6 @@ export class HyrosCoffeeSender implements Sender {
         {
           name: "Version Hash",
           value: (await build.versionHash()) ?? "Unknown",
-          inline: true,
-        },
-        {
-          name: "Host Version",
-          value:
-            (await build.manifest())?.full?.host_version?.join?.(".") ??
-            "Unknown",
           inline: true,
         },
         {
@@ -96,10 +92,9 @@ export class HyrosCoffeeSender implements Sender {
       );
 
     await postToDiscord(
-      getWebhookFromEnv("DISCORD_WEBHOOK_BUILDS"),
+      getWebhookFromEnv("DISCORDINSIDERS_DISCORD_WEBHOOK_BUILDS"),
       result?.update?.hash.to,
       {
-        content: "<@&1117194731328393396>",
         embeds: [embed.toJSON()],
       }
     );
