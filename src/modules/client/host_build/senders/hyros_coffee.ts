@@ -21,7 +21,7 @@ import type { Sender } from ".";
 import { getWebhookFromEnv, postToDiscord } from "../../../../utils.ts";
 import { EmbedBuilder } from "@discordjs/builders";
 import type { Channel } from "../../Channel.ts";
-import { HostBuild } from "..";
+import { HostBuild } from "../index.ts";
 
 export class HyrosCoffeeSender implements Sender {
   async send(
