@@ -344,6 +344,7 @@ id,hash,label
 2023-10_friend_finder_launch,1847389384,Friend Finder Launch Experiment
 2023-10_friend_finder_redesign,2064761972,Friend Finder Redesign User Experiment
 2023-10_friend_finder_virginia,2536084621,Friend Finder User Experiment for Virginia
+2023-10_guildaa,3928972551,Trigger Debugging Guild AA Experiment
 2023-10_halloween_2023,3705895930,Halloween assets 2023
 2023-10_mobile_redesign_one_percent_existing_users,1541876684,Tabs V2 - One Percent - Existing Users
 2023-10_mobile_redesign_one_percent_new_users,3475360205,Tabs V2 - One Percent - New Users
@@ -354,6 +355,7 @@ id,hash,label
 2023-10_staff_teen_safety_assist_age_bypass,2712801344,Staff Teen Safety Assist Age Bypass
 2023-10_thumbhash_messages,3927145797,Display thumbhash placeholders when loading message images
 2023-10_trial_for_everyone_trial_creation,2559295447,Trial for everyone
+2023-10_triggerdebuggingaa,1863147434,Trigger Debugging User AA Experiment
 2023-10_video_hook_disable,1363886659,Video Hook disable on Windows 11
 2023-10_video_hook_stale_frame_timeout,1821813006,Video Hook Stale Frame Timeout
 2023-10_viewer_clipping,3351049965,Test viewer side clipping

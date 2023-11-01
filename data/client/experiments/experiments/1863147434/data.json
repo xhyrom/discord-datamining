@@ -1,0 +1,21 @@
+{
+  "data": {
+    "kind": "user",
+    "id": "2023-10_triggerdebuggingaa",
+    "label": "Trigger Debugging User AA Experiment",
+    "description": [
+      "Not Eligible",
+      "Control Bucket",
+      "Treatment 1: On"
+    ],
+    "hash": 1863147434,
+    "buckets": [
+      -1,
+      0,
+      1
+    ],
+    "config_keys": [
+      "enabled"
+    ]
+  }
+}
