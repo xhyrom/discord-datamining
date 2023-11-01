@@ -19,6 +19,7 @@
 import { readFile } from "../../utils.ts";
 
 export class File {
+  #content?: string;
   path: string;
   local: boolean;
 
@@ -36,11 +37,13 @@ export class File {
   }
 
   async content() {
+    if (this.#content) return this.#content;
     if (this.local) return await this.localContent();
 
-    return await (
+    this.#content = await (
       await fetch(`https://canary.discord.com/assets/${this.path}`)
     ).text();
+    return this.#content;
   }
 
   async localContent() {

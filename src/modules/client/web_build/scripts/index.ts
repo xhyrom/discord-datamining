@@ -128,13 +128,40 @@ export class Scripts implements Module {
       ?.map((s) => s.match(/src="[^"]+"/g)?.[0].slice(13, -1))
       ?.map((s) => new File(s!))!;
 
+    let mainScript;
+    let stringsScript;
+    let classMappingsScript;
+    for (const script of scripts) {
+      const content = await script.content();
+      if (
+        Array.from(content.matchAll(/buildNumber:\s*"(?<number>[0-9]+)"/g))[0]
+          ?.groups?.number
+      ) {
+        mainScript = script;
+        continue;
+      }
+
+      if (content.match(/(DISCORD:\s*["']Discord["'])/g)?.length === 1) {
+        stringsScript = script;
+      }
+
+      if (content.match(/"heading-lg\/bold":\s*/g)?.length === 1) {
+        classMappingsScript = script;
+      }
+    }
+
+    if (!mainScript) {
+      console.log("DISCORD FUCKED UP EVERYHING AGAIN");
+      process.exit(1);
+    }
+
     this.#files = {
       scripts,
-      classMappings: scripts?.[0] ?? null, // contains css classes
+      classMappings: classMappingsScript ?? null, // contains css classes
       chunkLoader: scripts?.[scripts.length - 1] ?? null,
       vendor: scripts?.[22] ?? null,
-      strings: scripts?.[scripts.length - 2] ?? null, // contains all strings
-      mainScript: scripts?.[scripts.length - 6]!, // contains build info
+      strings: stringsScript ?? null, // contains all strings
+      mainScript: mainScript!, // contains build info
     };
 
     return this.#files;
