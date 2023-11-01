@@ -20334,7 +20334,8 @@
                 nitroIconSubHeader: "nitroIconSubHeader__04f30",
                 termsApplyAnchor: "termsApplyAnchor_fcdbe9",
                 termsApplyBodyText: "termsApplyBodyText_f45b74",
-                trialPill: "trialPill_d04c59"
+                trialPill: "trialPill_d04c59",
+                video: "video__47ab5"
             }
         },
         212942: function(e, t, o) {
@@ -24382,6 +24383,7 @@
         956330: function(e, t, o) {
             "use strict";
             e.exports = {
+                addFriendSection: "addFriendSection__413d3",
                 clydeErrorText: "clydeErrorText_b9fc7e",
                 customStatusSection: "customStatusSection_ce6c27",
                 divider: "divider__56f26",
@@ -24565,7 +24567,6 @@
         119111: function(e, t, o) {
             "use strict";
             e.exports = {
-                addFriendSection: "addFriendSection__7ab40",
                 container: "container__22d2b",
                 copiableField: "copiableField__0c0e7",
                 copiableNameTag: "copiableNameTag__6b220",
