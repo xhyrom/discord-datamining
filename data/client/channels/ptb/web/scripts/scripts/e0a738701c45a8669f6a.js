@@ -920,10 +920,10 @@
                     return e1
                 },
                 RenderEmbeds: function() {
-                    return e2
+                    return e4
                 },
                 RenderReactions: function() {
-                    return e4
+                    return e2
                 },
                 TimezoneOffset: function() {
                     return e6
@@ -1117,10 +1117,10 @@
                 e1 = (0, $.wrapSettingWithSelectiveSyncing)((0, $.defineProtoSetting)("textAndImages", "inlineEmbedMedia", e => null === (V = null == e ? void 0 : e.value) || void 0 === V || V, e => J.BoolValue.create({
                     value: e
                 })), "text", "inlineEmbedMedia"),
-                e2 = (0, $.wrapSettingWithSelectiveSyncing)((0, $.defineProtoSetting)("textAndImages", "renderEmbeds", e => null === (Y = null == e ? void 0 : e.value) || void 0 === Y || Y, e => J.BoolValue.create({
+                e4 = (0, $.wrapSettingWithSelectiveSyncing)((0, $.defineProtoSetting)("textAndImages", "renderEmbeds", e => null === (Y = null == e ? void 0 : e.value) || void 0 === Y || Y, e => J.BoolValue.create({
                     value: e
                 })), "text", "renderEmbeds"),
-                e4 = (0, $.wrapSettingWithSelectiveSyncing)((0, $.defineProtoSetting)("textAndImages", "renderReactions", e => null === (H = null == e ? void 0 : e.value) || void 0 === H || H, e => J.BoolValue.create({
+                e2 = (0, $.wrapSettingWithSelectiveSyncing)((0, $.defineProtoSetting)("textAndImages", "renderReactions", e => null === (H = null == e ? void 0 : e.value) || void 0 === H || H, e => J.BoolValue.create({
                     value: e
                 })), "text", "renderReactions"),
                 e6 = (0, $.defineProtoSetting)("localization", "timezoneOffset", e => null !== (W = null == e ? void 0 : e.value) && void 0 !== W ? W : null, e => J.Int32Value.create({
@@ -2066,7 +2066,7 @@
                 let i = {},
                     r = window.GLOBAL_ENV.RELEASE_CHANNEL;
                 r && (i.release_channel = r.split("-")[0]);
-                let o = parseInt((n = "242502", "242502"), 10);
+                let o = parseInt((n = "242510", "242510"), 10);
                 !isNaN(o) && (i.client_build_number = o);
                 let s = null == C ? void 0 : null === (e = (t = C.remoteApp).getBuildNumber) || void 0 === e ? void 0 : e.call(t);
                 return !isNaN(s) && (i.native_build_number = s), i.client_event_source = function() {
@@ -2308,4 +2308,4 @@
         }
     }
 ]);
-//# sourceMappingURL=fe6776bb14c27f678c99.js.map
+//# sourceMappingURL=e0a738701c45a8669f6a.js.map
