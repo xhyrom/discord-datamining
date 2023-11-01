@@ -20719,6 +20719,19 @@ html.decorate-links .lowSaturationUnderline__95e71 {
     background-color: var(--background-secondary)
 }
 
+.actionButton_dac582 {
+    min-height: 32px
+}
+
+.actionRightButton__8ac12 {
+    margin-left: 10px
+}
+
+.pendingIncoming_c83b56 {
+    display: flex;
+    flex-grow: 0
+}
+
 .divider__2bbbc {
     margin-top: 12px;
     height: 1px;
@@ -22698,27 +22711,9 @@ html.decorate-links .lowSaturationUnderline__95e71 {
     }
 }
 
-.actionButton_dac582 {
-    min-height: 32px
-}
-
-.actionRightButton__8ac12 {
-    margin-left: 10px
-}
-
-.pendingIncoming_c83b56 {
-    display: flex;
-    flex-grow: 0
-}
-
 .container__22d2b {
     display: flex;
     justify-content: space-between
-}
-
-.addFriendSection__7ab40 {
-    flex-shrink: 0;
-    margin-left: 8px
 }
 
 .copiableField__0c0e7 {
@@ -22867,6 +22862,15 @@ html.decorate-links .lowSaturationUnderline__95e71 {
     padding-right: 8px;
     width: 16px;
     height: 16px
+}
+
+.addFriendSection__413d3 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 8px;
+    margin-left: 12px;
+    margin-top: 8px
 }
 
 .referencePosition__76f5a {
@@ -63837,8 +63841,8 @@ strong {
 
 .message__13e98 {
     font-weight: 500;
-    font-size: 1rem;
-    line-height: 1.25rem;
+    font-size: 16px;
+    line-height: 20px;
     white-space: nowrap;
     text-overflow: ellipsis;
     overflow: hidden
@@ -137710,6 +137714,11 @@ html .invoiceCancelRow_c1bfe7 {
     background-color: transparent
 }
 
+.video__47ab5 {
+    width: 100%;
+    background-color: transparent
+}
+
 .learnMoreLink__43492 {
     cursor: pointer;
     color: var(--text-link)
@@ -149760,4 +149769,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=f8ba9fd8302179ce4cde.css.map*/
+/*# sourceMappingURL=5991c0bb665a97fdbe1e.css.map*/
