@@ -2598,6 +2598,7 @@
                 _LOGIN_STAGE: "Listen In",
                 REGISTER: "Register",
                 ENTER_PHONE_OR_EMAIL: "Enter phone or email",
+                ENTER_EMAIL: "Enter email",
                 REGISTER_USERNAME_HINT: "You can always change this later!",
                 REGISTER_LOGIN_PRIVACY_NOTICE: "[View our Privacy Policy]({privacyURL})",
                 FORGOT_PASSWORD: "Forgot your password?",
@@ -15731,6 +15732,7 @@
                 CLIPS_SETTINGS_KEYBIND: "Clipping Keybind",
                 CLIPS_SETTINGS_KEYBIND_HELP: "Set up your keybind to capture clips. The default is ALT + C.",
                 CLIPS_SAVE: "Save Clip",
+                CLIPS_VIEWERSIDE_SAVE: "Capture Clip",
                 CLIPS_SETTINGS_ALLOW_VIEWER_CLIPS: "Allow viewers to capture clips",
                 CLIPS_SETTINGS_ALLOW_VIEWER_CLIPS_HELP: "Enable the creation of clips from your Go Live stream",
                 CLIPS_SETTINGS_WHO_CAN_CAPTURE: "Who can capture clips",
@@ -17950,7 +17952,7 @@
                 L = E("782340");
             (0, i.setUpdateRules)(s.default), (0, r.default)(L.default, n.default, T.default), a.default.Emitter.injectBatchEmitChanges(o.unstable_batchedUpdates), a.default.PersistedStore.disableWrites = __OVERLAY__, a.default.initialize();
             let u = window.GLOBAL_ENV.RELEASE_CHANNEL;
-            new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(u, ", Build Number: ").concat("242611", ", Version Hash: ").concat("52075da91e3237b88c6d213759c9dc7d0d97957f")), t.default.setTags({
+            new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(u, ", Build Number: ").concat("242648", ", Version Hash: ").concat("0834ec7b33fbf47d549c2086bbce65210bf6ebad")), t.default.setTags({
                 appContext: l.CURRENT_APP_CONTEXT
             }), S.default.initBasic(), N.default.init(), I.FocusRingManager.init(), O.init(), (0, R.cleanupTempFiles)()
         },
@@ -19302,7 +19304,7 @@
                     loadRightBeforeConnectionOpen: !0
                 },
                 ExplicitMediaManager: {
-                    actions: ["LOAD_MESSAGES_SUCCESS", "MESSAGE_CREATE"],
+                    actions: ["LOAD_MESSAGES_SUCCESS", "MESSAGE_CREATE", "SEARCH_FINISH"],
                     inlineRequire: () => E("983850").default,
                     neverLoadBeforeConnectionOpen: !0
                 },
@@ -20320,8 +20322,8 @@
 
             function o() {
                 var e;
-                let _ = parseInt((e = "242611", "242611"));
-                return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("242611")), _ = 0), _
+                let _ = parseInt((e = "242648", "242648"));
+                return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("242648")), _ = 0), _
             }
         },
         990629: function(e, _, E) {
@@ -21393,64 +21395,82 @@
             "use strict";
             E.r(_), E.d(_, {
                 default: function() {
-                    return N
+                    return u
                 }
             });
-            var t = E("689988"),
-                o = E("271938"),
-                n = E("982108"),
-                r = E("18494"),
-                a = E("695681"),
-                i = E("457971"),
-                I = E("793441");
+            var t = E("345570"),
+                o = E.n(t),
+                n = E("452016"),
+                r = E.n(n),
+                a = E("689988"),
+                i = E("271938"),
+                I = E("982108"),
+                s = E("18494"),
+                T = E("695681"),
+                S = E("457971"),
+                N = E("793441");
 
-            function s(e) {
+            function O(e) {
+                var _, E, t, o, n, r, a, i, I, s;
+                let T = null !== (a = null == e ? void 0 : null === (_ = e.attachments) || void 0 === _ ? void 0 : _.length) && void 0 !== a ? a : 0,
+                    S = null !== (i = null == e ? void 0 : null === (E = e.embeds) || void 0 === E ? void 0 : E.length) && void 0 !== i ? i : 0;
+                if (0 === T && 0 === S) return !1;
+                let N = null !== (I = null == e ? void 0 : null === (o = e.attachments) || void 0 === o ? void 0 : null === (t = o.filter(e => null == e.content_scan_version)) || void 0 === t ? void 0 : t.length) && void 0 !== I ? I : 0,
+                    O = null !== (s = null == e ? void 0 : null === (r = e.embeds) || void 0 === r ? void 0 : null === (n = r.filter(e => null == e.content_scan_version)) || void 0 === n ? void 0 : n.length) && void 0 !== s ? s : 0;
+                return N > 0 || O > 0
+            }
+
+            function A(e) {
                 var _;
                 let {
                     channelId: E,
                     message: t,
-                    optimistic: s,
-                    isPushNotification: T
+                    optimistic: o,
+                    isPushNotification: n
                 } = e;
-                if (!(0, i.isEligibleForExplicitMediaRedaction)() || s || T || null == E || (null === (_ = t.author) || void 0 === _ ? void 0 : _.id) === o.default.getId()) return !1;
-                let S = r.default.getChannelId(),
-                    N = n.default.getCurrentSidebarChannelId(S),
-                    O = E === S || E === N;
-                return !!(O && (0, I.shouldRedactExplicitContent)(t)) && ((0, a.sendMessagesForScanning)(E, [t.id]), !0)
+                if (!(0, S.isEligibleForExplicitMediaRedaction)() || o || n || null == E || (null === (_ = t.author) || void 0 === _ ? void 0 : _.id) === i.default.getId()) return !1;
+                let r = s.default.getChannelId(),
+                    a = I.default.getCurrentSidebarChannelId(r),
+                    O = E === r || E === a;
+                return !!(O && (0, N.shouldRedactExplicitContent)(t)) && ((0, T.sendMessagesForScanning)(E, [t.id]), !0)
             }
 
-            function T(e) {
+            function R(e) {
                 let {
                     channelId: _,
                     messages: E
                 } = e;
-                if (!(0, i.isEligibleForExplicitMediaRedaction)() || null == _ || null == E) return !1;
-                let t = r.default.getChannelId(),
-                    o = n.default.getCurrentSidebarChannelId(t),
-                    s = _ === t || _ === o;
-                if (s) {
-                    let e = E.filter(e => (function(e) {
-                        var _, E, t, o, n, r, a, i, I, s;
-                        let T = null !== (a = null == e ? void 0 : null === (_ = e.attachments) || void 0 === _ ? void 0 : _.length) && void 0 !== a ? a : 0,
-                            S = null !== (i = null == e ? void 0 : null === (E = e.embeds) || void 0 === E ? void 0 : E.length) && void 0 !== i ? i : 0;
-                        if (0 === T && 0 === S) return !1;
-                        let N = null !== (I = null == e ? void 0 : null === (o = e.attachments) || void 0 === o ? void 0 : null === (t = o.filter(e => null == e.content_scan_version)) || void 0 === t ? void 0 : t.length) && void 0 !== I ? I : 0,
-                            O = null !== (s = null == e ? void 0 : null === (r = e.embeds) || void 0 === r ? void 0 : null === (n = r.filter(e => null == e.content_scan_version)) || void 0 === n ? void 0 : n.length) && void 0 !== s ? s : 0;
-                        return N > 0 || O > 0
-                    })(e) && (0, I.shouldRedactExplicitContent)(e)).map(e => e.id);
-                    if (e.length > 0) return (0, a.sendMessagesForScanning)(_, e), !0
+                if (!(0, S.isEligibleForExplicitMediaRedaction)() || null == _ || null == E) return !1;
+                let t = s.default.getChannelId(),
+                    o = I.default.getCurrentSidebarChannelId(t),
+                    n = _ === t || _ === o;
+                if (n) {
+                    let e = E.filter(e => O(e) && (0, N.shouldRedactExplicitContent)(e)).map(e => e.id);
+                    if (e.length > 0) return (0, T.sendMessagesForScanning)(_, e), !0
                 }
                 return !1
             }
-            class S extends t.default {
+
+            function l(e) {
+                let {
+                    messages: _
+                } = e;
+                if (!(0, S.isEligibleForExplicitMediaRedaction)() || null == _) return !1;
+                let E = o(_),
+                    t = r(E, (e, _) => e.id === _.id && e.channel_id === _.channel_id),
+                    n = t.filter(e => O(e) && (0, N.shouldRedactExplicitContent)(e));
+                return !!(n.length > 0) && ((0, T.sendMultiChannelMessagesForScanning)(n), !0)
+            }
+            class L extends a.default {
                 constructor(...e) {
                     super(...e), this.actions = {
-                        LOAD_MESSAGES_SUCCESS: T,
-                        MESSAGE_CREATE: s
+                        LOAD_MESSAGES_SUCCESS: R,
+                        MESSAGE_CREATE: A,
+                        SEARCH_FINISH: l
                     }
                 }
             }
-            var N = new S
+            var u = new L
         },
         722333: function(e, _, E) {
             "use strict";
@@ -35064,4 +35084,4 @@
         }
     }
 ]);
-//# sourceMappingURL=77d3a41031dcc73cfe2d.js.map
+//# sourceMappingURL=a90f8217911f1df1f30b.js.map
