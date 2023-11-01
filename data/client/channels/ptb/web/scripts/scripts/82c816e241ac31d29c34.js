@@ -4,7 +4,7 @@
             "use strict";
             n.r(t), n.d(t, {
                 default: function() {
-                    return eS
+                    return eM
                 }
             });
             var a = n("394846"),
@@ -71,8 +71,9 @@
                 eo = n("579033"),
                 ec = n("782340");
             let eE = new S.default("MessageActionCreators"),
-                ef = !1;
-            class e_ {
+                ef = new S.default("MessageQueue"),
+                e_ = !1;
+            class eg {
                 markComplete() {
                     this.completed = !0
                 }
@@ -81,7 +82,7 @@
                 }
             }
 
-            function eg(e) {
+            function eh(e) {
                 let {
                     inviteKey: t,
                     channelId: n,
@@ -133,7 +134,7 @@
                     }, u.default.trackWithMetadata(ed.AnalyticEvents.INVITE_SENT, e))
                 }
             }
-            let eh = {
+            let em = {
                     [ed.AbortCodes.EMAIL_VERIFICATION_REQUIRED]: {
                         messageName: "BOT_REQUIRES_EMAIL_VERIFICATION",
                         messageGetter: () => ec.default.Messages.BOT_REQUIRES_EMAIL_VERIFICATION
@@ -157,7 +158,7 @@
                         messageGetter: () => ec.default.Messages.BOT_DM_SEND_MESSAGE_TEMPORARILY_DISABLED
                     }
                 },
-                em = {
+                eS = {
                     receiveMessage(e, t) {
                         let n = arguments.length > 2 && void 0 !== arguments[2] && arguments[2],
                             a = arguments.length > 3 && void 0 !== arguments[3] ? arguments[3] : {};
@@ -174,7 +175,7 @@
                         null != n && u.default.trackWithMetadata(ed.AnalyticEvents.AUTOMATED_MESSAGE_RECEIVED, {
                             message_author: "Clyde",
                             message_name: n
-                        }), em.receiveMessage(e, (0, y.createBotMessage)({
+                        }), eS.receiveMessage(e, (0, y.createBotMessage)({
                             channelId: e,
                             content: t,
                             loggingName: n
@@ -209,10 +210,10 @@
                                 t = e ? ec.default.Messages.BOT_DM_TOO_MANY_POSTS : ec.default.Messages.BOT_DM_TOO_MANY_THREADS, n = "TOO_MANY_THREADS"
                             } else a === ed.AbortCodes.TOO_MANY_ANNOUNCEMENT_THREADS ? (t = ec.default.Messages.BOT_DM_TOO_MANY_ANNOUNCEMENT_THREADS, n = "TOO_MANY_ANNOUNCEMENT_THREADS") : a === ed.AbortCodes.HARMFUL_LINK_MESSAGE_BLOCKED ? (t = ec.default.Messages.HARMFUL_LINK_MESSAGE_BLOCKED_ERROR.format({
                                 helpUrl: ed.MarketingURLs.HARMFUL_LINKS
-                            }), n = "HARMFUL_LINK_MESSAGE_BLOCKED") : a in eh ? (n = eh[a].messageName, t = eh[a].messageGetter()) : (t = ec.default.Messages.BOT_DM_SEND_FAILED_WITH_HELP_LINK.format({
+                            }), n = "HARMFUL_LINK_MESSAGE_BLOCKED") : a in em ? (n = em[a].messageName, t = em[a].messageGetter()) : (t = ec.default.Messages.BOT_DM_SEND_FAILED_WITH_HELP_LINK.format({
                                 helpUrl: es.default.getArticleURL(ed.HelpdeskArticles.DM_COULD_NOT_BE_DELIVERED)
                             }), n = "SEND_FAILED (".concat(a, ")"));
-                            em.sendBotMessage(e, t, n)
+                            eS.sendBotMessage(e, t, n)
                         }
                     },
                     truncateMessages(e, t, n) {
@@ -230,7 +231,7 @@
                         })
                     },
                     jumpToPresent(e, t) {
-                        em.trackJump(e, null, "Present");
+                        eS.trackJump(e, null, "Present");
                         let n = {
                             present: !0
                         };
@@ -239,7 +240,7 @@
                             jump: n,
                             channelId: e,
                             limit: t
-                        }) : em.fetchMessages({
+                        }) : eS.fetchMessages({
                             channelId: e,
                             limit: t,
                             jump: n
@@ -266,7 +267,7 @@
                             skipLocalFetch: u,
                             jumpType: o
                         } = e;
-                        return "string" == typeof l && em.trackJump(t, n, l, i), em.fetchMessages({
+                        return "string" == typeof l && eS.trackJump(t, n, l, i), eS.fetchMessages({
                             channelId: t,
                             limit: ed.MAX_MESSAGES_FOR_JUMP,
                             jump: {
@@ -285,7 +286,7 @@
                             channelId: t,
                             messageId: n
                         } = e;
-                        em.fetchMessages({
+                        eS.fetchMessages({
                             channelId: t,
                             limit: ed.MAX_MESSAGES_FOR_JUMP,
                             focus: {
@@ -308,7 +309,7 @@
                         } = e, g = K.default.getChannel(n), h = M.default.isConnectedOrOverlay(), m = Date.now();
                         if (null != g && g.type === ed.ChannelTypes.GUILD_STORE) return !1;
                         if (n === eu.FAKE_PLACEHOLDER_PRIVATE_CHANNEL_ID) return;
-                        if (eE.log("Fetching messages for ".concat(n, " between ").concat(a, " and ").concat(l, ". jump=").concat(JSON.stringify(u))), em._tryFetchMessagesCached({
+                        if (eE.log("Fetching messages for ".concat(n, " between ").concat(a, " and ").concat(l, ". jump=").concat(JSON.stringify(u))), eS._tryFetchMessagesCached({
                                 channelId: n,
                                 before: a,
                                 after: l,
@@ -328,7 +329,7 @@
                             type: "LOAD_MESSAGES"
                         });
                         let A = null === (t = S) || void 0 === t ? void 0 : t.messageId,
-                            C = new e_;
+                            C = new eg;
                         return !E && this.fetchLocalMessages(n, a, l, d, C), s.default.get({
                             url: ed.Endpoints.MESSAGES(n),
                             query: {
@@ -368,7 +369,7 @@
                                 let e = (0, _.getUnreadChannelHighlights)(n, z.default.ackMessageId(n));
                                 if (e.length >= 0) {
                                     let t = e[0];
-                                    if (null == s.find(e => e.id === t)) return em.jumpToMessage({
+                                    if (null == s.find(e => e.id === t)) return eS.jumpToMessage({
                                         channelId: n,
                                         messageId: t,
                                         flash: null == u ? void 0 : u.flash,
@@ -509,8 +510,8 @@
                             s = arguments.length > 3 && void 0 !== arguments[3] ? arguments[3] : {};
                         if (t.reaction) return Promise.resolve();
                         let l = await (0, P.default)(e);
-                        if (null != l) return em.sendMessage(l, t, a, s);
-                        let i = () => em._sendMessage(e, t, s),
+                        if (null != l) return eS.sendMessage(l, t, a, s);
+                        let i = () => eS._sendMessage(e, t, s),
                             r = L.LocalMessageBackgroundSendingExperiment.getCurrentConfig({
                                 location: "8e1e29_1"
                             }).enableBackgroundSending ? D.default.backgroundify(i, void 0) : i,
@@ -518,9 +519,11 @@
                         return (s = {
                             ...s,
                             nonce: d
-                        }, O.default.recordMessageSendAttempt(e, d), a && e !== eu.FAKE_PLACEHOLDER_PRIVATE_CHANNEL_ID) ? new Promise((t, n) => {
-                            j.default.whenReady(e, () => r().then(t, n))
-                        }) : r()
+                        }, O.default.recordMessageSendAttempt(e, d), j.default.isReady(e)) ? r() : a && e !== eu.FAKE_PLACEHOLDER_PRIVATE_CHANNEL_ID ? (ef.info("Waiting for channel ".concat(e, " to be ready before sending.")), new Promise((t, n) => {
+                            j.default.whenReady(e, () => {
+                                ef.info("Channel ".concat(e, " is ready for sending now.")), r().then(t, n)
+                            })
+                        })) : r()
                     },
                     getSendMessageOptionsForReply(e) {
                         var t;
@@ -539,7 +542,7 @@
                             allowedMentions: a
                         }
                     },
-                    sendInvite: (e, t, n, a) => em._sendMessage(e, {
+                    sendInvite: (e, t, n, a) => eS._sendMessage(e, {
                         content: (0, I.default)(t),
                         tts: !1,
                         validNonShortcutEmojis: [],
@@ -548,7 +551,7 @@
                         location: n,
                         suggestedInvite: null != a ? a : void 0
                     }),
-                    sendActivityBookmark: (e, t, n, a) => em._sendMessage(e, {
+                    sendActivityBookmark: (e, t, n, a) => eS._sendMessage(e, {
                         content: t,
                         tts: !1,
                         validNonShortcutEmojis: [],
@@ -557,7 +560,7 @@
                         location: n,
                         suggestedInvite: null != a ? a : void 0
                     }),
-                    sendClydeProfileOverride: (e, t, n, a) => em._sendMessage(e, {
+                    sendClydeProfileOverride: (e, t, n, a) => eS._sendMessage(e, {
                         content: t,
                         tts: !1,
                         validNonShortcutEmojis: [],
@@ -570,7 +573,7 @@
                         let n = arguments.length > 2 && void 0 !== arguments[2] ? arguments[2] : "",
                             a = arguments.length > 3 && void 0 !== arguments[3] ? arguments[3] : {},
                             s = arguments.length > 4 && void 0 !== arguments[4] && arguments[4];
-                        return em._sendMessage(e, {
+                        return eS._sendMessage(e, {
                             content: n,
                             invalidEmojis: [],
                             validNonShortcutEmojis: [],
@@ -594,11 +597,11 @@
                                 message_reference: a
                             },
                             oldFormErrors: !0
-                        }).then(n => (v.default.donateSentMessage(n.body.content, e), em.receiveMessage(e, n.body), i.default.dispatch({
+                        }).then(n => (v.default.donateSentMessage(n.body.content, e), eS.receiveMessage(e, n.body), i.default.dispatch({
                             type: "STICKER_TRACK_USAGE",
                             stickerIds: [t]
                         }), n), t => {
-                            throw eE.log("Failed to send greeting"), 429 !== t.status && em.sendClydeError(e, t.body.code), i.default.dispatch({
+                            throw eE.log("Failed to send greeting"), 429 !== t.status && eS.sendClydeError(e, t.body.code), i.default.dispatch({
                                 type: "MESSAGE_SEND_FAILED",
                                 messageId: t.body.id,
                                 channelId: e
@@ -608,7 +611,9 @@
                     _sendMessage(e, t, n) {
                         var s, l;
                         let r = (0, P.default)(e);
-                        if (null != r) return r.then(e => em._sendMessage(e, t, n));
+                        if (null != r) return ef.info("Converting channel to a private channel"), r.then(e => {
+                            ef.info("Finished converting channel to a private channel"), eS._sendMessage(e, t, n)
+                        });
                         let o = t.content,
                             {
                                 invalidEmojis: c,
@@ -639,15 +644,15 @@
                                 flags: 0 !== L ? L : void 0,
                                 nonce: w
                             });
-                            (0, G.updateComboOnMessageSend)(e, t.id), null != p && (t.sticker_items = p.map(e => k.default.getStickerById(e)).filter(e => null != e)), em.receiveMessage(e, t, !0, n)
+                            (0, G.updateComboOnMessageSend)(e, t.id), null != p && (t.sticker_items = p.map(e => k.default.getStickerById(e)).filter(e => null != e)), eS.receiveMessage(e, t, !0, n)
                         }
-                        if (!ef && null != c && c.length > 0) {
+                        if (!e_ && null != c && c.length > 0) {
                             let t, n;
-                            ef = !0;
+                            e_ = !0;
                             let a = ee.default.getCurrentUser();
                             c.some(e => e.animated) && !el.default.canUseAnimatedEmojis(a) ? (t = ec.default.Messages.INVALID_ANIMATED_EMOJI_BODY_UPGRADE, n = "INVALID_ANIMATED_EMOJI_BODY") : X.default.canWithPartialContext(ed.Permissions.USE_EXTERNAL_EMOJIS, {
                                 channelId: e
-                            }) ? (t = ec.default.Messages.INVALID_EXTERNAL_EMOJI_BODY_UPGRADE, n = "INVALID_EXTERNAL_EMOJI_BODY_UPGRADE") : (t = ec.default.Messages.INVALID_EXTERNAL_EMOJI_BODY, n = "INVALID_EXTERNAL_EMOJI_BODY"), em.sendBotMessage(e, t, n)
+                            }) ? (t = ec.default.Messages.INVALID_EXTERNAL_EMOJI_BODY_UPGRADE, n = "INVALID_EXTERNAL_EMOJI_BODY_UPGRADE") : (t = ec.default.Messages.INVALID_EXTERNAL_EMOJI_BODY, n = "INVALID_EXTERNAL_EMOJI_BODY"), eS.sendBotMessage(e, t, n)
                         }
                         let F = {
                             type: d.MessageDataType.SEND,
@@ -676,10 +681,11 @@
                         }
                         return null != p && (F.message.sticker_ids = p), U.default.isEnabled() && (F.message.has_poggermode_enabled = !0), (0, g.default)(e) && (F.message.allow_proactive_clyde_reply = !0), new Promise((t, s) => {
                             let l = Date.now(),
-                                r = d.default.length;
-                            d.default.enqueue(F, d => {
+                                r = d.default.length,
+                                c = Math.floor(1e4 * Math.random());
+                            ef.info("Queueing message to be sent LogId:".concat(c)), d.default.enqueue(F, d => {
                                 let c = Date.now() - l;
-                                if (d.ok) v.default.donateSentMessage(o, e), em.receiveMessage(e, d.body, !0, {
+                                if (d.ok) v.default.donateSentMessage(o, e), eS.receiveMessage(e, d.body, !0, {
                                     sendAnalytics: {
                                         duration: c,
                                         queueSize: r
@@ -708,7 +714,7 @@
                                             type: t,
                                             code: d
                                         } = e;
-                                        if (t === h.CodedLinkType.INVITE) eg({
+                                        if (t === h.CodedLinkType.INVITE) eh({
                                             inviteKey: d,
                                             channelId: n,
                                             messageId: s,
@@ -793,9 +799,9 @@
                                             type: "MESSAGE_FAILED_CLYDE_CONSENT",
                                             messageId: w,
                                             channelId: e
-                                        }) : em.sendClydeError(e, d.body.code)
+                                        }) : eS.sendClydeError(e, d.body.code)
                                     }
-                                    t ? em.deleteMessage(e, w, !0) : (i.default.dispatch({
+                                    t ? eS.deleteMessage(e, w, !0) : (i.default.dispatch({
                                         type: "MESSAGE_SEND_FAILED",
                                         messageId: w,
                                         channelId: e
@@ -804,7 +810,7 @@
                                         errorMessage: d.hasErr ? d.err.message : void 0
                                     })), s(d)
                                 }
-                            })
+                            }, c)
                         })
                     },
                     startEditMessage(e, t, n) {
@@ -871,7 +877,7 @@
                                     }
                                 })
                             }
-                            n.hasErr ? l.AccessibilityAnnouncer.announce(ec.default.Messages.A11Y_ANNOUNCEMENT_MESSAGE_EDITED_FAILED) : a ? l.AccessibilityAnnouncer.announce(ec.default.Messages.A11Y_ANNOUNCEMENT_MESSAGE_EDITED_AUTOMOD_BLOCKED) : l.AccessibilityAnnouncer.announce(ec.default.Messages.A11Y_ANNOUNCEMENT_MESSAGE_EDITED), em.endEditMessage(e, n.hasErr ? void 0 : n), em.focusMessage({
+                            n.hasErr ? l.AccessibilityAnnouncer.announce(ec.default.Messages.A11Y_ANNOUNCEMENT_MESSAGE_EDITED_FAILED) : a ? l.AccessibilityAnnouncer.announce(ec.default.Messages.A11Y_ANNOUNCEMENT_MESSAGE_EDITED_AUTOMOD_BLOCKED) : l.AccessibilityAnnouncer.announce(ec.default.Messages.A11Y_ANNOUNCEMENT_MESSAGE_EDITED), eS.endEditMessage(e, n.hasErr ? void 0 : n), eS.focusMessage({
                                 channelId: e,
                                 messageId: t
                             })
@@ -941,9 +947,9 @@
                             confirmText: ec.default.Messages.OKAY
                         })
                     }),
-                    trackInvite: eg
+                    trackInvite: eh
                 };
-            var eS = em
+            var eM = eS
         },
         219788: function(e, t, n) {
             "use strict";
@@ -3102,4 +3108,4 @@
         }
     }
 ]);
-//# sourceMappingURL=b0d371fc397e7b7b9a4a.js.map
+//# sourceMappingURL=82c816e241ac31d29c34.js.map
