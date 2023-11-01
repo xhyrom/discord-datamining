@@ -9500,177 +9500,7 @@
                 }
             }
         },
-        630915: function(e, t, n) {
-            "use strict";
-            n.r(t), n.d(t, {
-                default: function() {
-                    return i
-                }
-            });
-            var i = (0, n("296892").default)({
-                kind: "user",
-                id: "2023-08_overlay3_out_of_process_enablement",
-                label: "Overlay3 - Out of Process Enablement",
-                defaultConfig: {
-                    useGlobalOverlay: !1
-                },
-                treatments: [{
-                    id: 1,
-                    label: "Enabled",
-                    config: {
-                        useGlobalOverlay: !0
-                    }
-                }]
-            })
-        },
-        296892: function(e, t, n) {
-            "use strict";
-            n.r(t), n.d(t, {
-                default: function() {
-                    return c
-                }
-            });
-            var i = n("884691"),
-                r = n("261810"),
-                s = n("271938"),
-                a = n("442437"),
-                o = n("996777"),
-                l = n("848601");
-
-            function u(e, t, n) {
-                return "guild" === e ? o.default.getGuildExperimentDescriptor(t, n.guildId) : o.default.getUserExperimentDescriptor(t)
-            }
-
-            function d(e, t, n, i) {
-                var r, s;
-                return (null == i ? void 0 : i.aaMode) ? e.defaultConfig : null !== (s = null === (r = n.get(t)) || void 0 === r ? void 0 : r.config) && void 0 !== s ? s : e.defaultConfig
-            }
-
-            function c(e) {
-                var t, n;
-                let c = new Map;
-                c.set(l.ExperimentBuckets.NOT_ELIGIBLE, {
-                    description: "Not Eligible",
-                    config: e.defaultConfig
-                }), c.set(l.ExperimentBuckets.CONTROL, {
-                    description: "Control Bucket",
-                    config: e.defaultConfig
-                }), e.treatments.forEach(e => {
-                    c.set(e.id, {
-                        description: "Treatment ".concat(e.id, ": ").concat(e.label),
-                        config: e.config
-                    })
-                });
-                let E = (t = e.kind, n = {
-                    id: e.id,
-                    title: e.label,
-                    description: [...c.values()].map(e => e.description),
-                    buckets: [...c.keys()]
-                }, "guild" === t ? (0, a.registerGuildExperiment)(n) : (0, a.registerUserExperiment)(n));
-
-                function _(e) {
-                    let t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : {},
-                        n = arguments.length > 2 ? arguments[2] : void 0,
-                        i = arguments.length > 3 && void 0 !== arguments[3] ? arguments[3] : null;
-                    if (t.exposureType = n ? l.ExposureTypes.AUTO_FALLBACK : l.ExposureTypes.AUTO, t.excluded = !1, null == i) {
-                        f(e, t);
-                        return
-                    }
-                    h(e, t, i)
-                }
-
-                function f(t) {
-                    let n = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : {
-                            excluded: !1,
-                            exposureType: l.ExposureTypes.MANUAL
-                        },
-                        i = u(e.kind, E.id, t);
-                    null != i && h(t, n, i)
-                }
-
-                function h(e, t, n) {
-                    if (null != n) {
-                        var i, r, o, u, d;
-                        let c = l.ExposureTypes.MANUAL;
-                        (0, a.trackExposureToExperiment)(E.id, n, {
-                            location: null !== (i = null == e ? void 0 : e.location) && void 0 !== i ? i : "unknown",
-                            analyticsLocations: null !== (r = null == t ? void 0 : t.analyticsLocations) && void 0 !== r ? r : [],
-                            fingerprint: null !== (u = null !== (o = null == t ? void 0 : t.fingerprint) && void 0 !== o ? o : s.default.getFingerprint()) && void 0 !== u ? u : void 0,
-                            excluded: (null == t ? void 0 : t.excluded) || !1,
-                            exposureType: null !== (d = null == t ? void 0 : t.exposureType) && void 0 !== d ? d : c
-                        })
-                    }
-                }
-
-                function p(t, n) {
-                    let i = arguments.length > 2 && void 0 !== arguments[2] ? arguments[2] : {},
-                        r = null != i.disable && i.disable,
-                        s = u(e.kind, e.id, t),
-                        a = null == s || r ? l.ExperimentBuckets.NOT_ELIGIBLE : s.bucket,
-                        E = null == s ? -1 : s.revision,
-                        _ = d(e, a, c, s);
-
-                    function f() {
-                        let i = u(e.kind, e.id, t),
-                            s = null == i || r ? l.ExperimentBuckets.NOT_ELIGIBLE : i.bucket,
-                            o = null == i ? -1 : i.revision;
-                        (s !== a || E !== o) && (n(d(e, s, c, i), s, o), a = s, E = o)
-                    }
-                    return n(_, a, E), o.default.addReactChangeListener(f), () => {
-                        o.default.removeReactChangeListener(f)
-                    }
-                }
-                return {
-                    useExperiment: function(t) {
-                        var n, s, a;
-                        let o = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : {
-                                autoTrackExposure: !0
-                            },
-                            E = null !== (n = o.disable) && void 0 !== n && n,
-                            f = !1 !== o.autoTrackExposure,
-                            h = u(e.kind, e.id, t),
-                            S = null == o.trackExposureOptions ? void 0 : (0, r.default)(null !== (s = o.trackExposureOptions) && void 0 !== s ? s : {}),
-                            T = null !== (a = null == h ? void 0 : h.triggerDebuggingEnabled) && void 0 !== a && a,
-                            [
-                                [I, m, g], C
-                            ] = (0, i.useState)(() => {
-                                let t = null == h || E ? l.ExperimentBuckets.NOT_ELIGIBLE : h.bucket;
-                                return [d(e, t, c, h), t, null == h ? -1 : h.revision]
-                            }),
-                            A = (0, r.default)(t);
-                        return (0, i.useEffect)(() => {
-                            if (E || !f && !T) return;
-                            let e = !1 === f;
-                            _(A, S, e)
-                        }, [E, f, A, S, m, g, T]), (0, i.useEffect)(() => p(A, (e, t, n) => {
-                            C(i => i[0] === e && i[1] === t && i[2] === n ? i : [e, t, n])
-                        }, {
-                            disable: E
-                        }), [E, A]), I
-                    },
-                    subscribe: p,
-                    trackExposure: f,
-                    getCurrentConfig: function(t) {
-                        let n = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : {
-                                autoTrackExposure: !0
-                            },
-                            i = u(e.kind, e.id, t);
-                        if (null == i || n.disable) return d(e, l.ExperimentBuckets.NOT_ELIGIBLE, c, i);
-                        if (!1 !== n.autoTrackExposure || i.triggerDebuggingEnabled) {
-                            let e = !1 === n.autoTrackExposure;
-                            _(t, n.trackExposureOptions, e, i)
-                        }
-                        return d(e, i.bucket, c, i)
-                    },
-                    definition: e,
-                    isAAMode: function(t) {
-                        let n = u(e.kind, e.id, t);
-                        return !!(null == n ? void 0 : n.aaMode)
-                    }
-                }
-            }
-        },
-        848601: function(e, t, n) {
+        565034: function(e, t, n) {
             "use strict";
             var i, r, s, a, o, l;
             n.r(t), n.d(t, {
@@ -9685,7 +9515,7 @@
                 }
             }), (a = i || (i = {}))[a.NOT_ELIGIBLE = -1] = "NOT_ELIGIBLE", a[a.CONTROL = 0] = "CONTROL", a[a.TREATMENT_1 = 1] = "TREATMENT_1", a[a.TREATMENT_2 = 2] = "TREATMENT_2", a[a.TREATMENT_3 = 3] = "TREATMENT_3", a[a.TREATMENT_4 = 4] = "TREATMENT_4", a[a.TREATMENT_5 = 5] = "TREATMENT_5", a[a.TREATMENT_6 = 6] = "TREATMENT_6", a[a.TREATMENT_7 = 7] = "TREATMENT_7", a[a.TREATMENT_8 = 8] = "TREATMENT_8", a[a.TREATMENT_9 = 9] = "TREATMENT_9", a[a.TREATMENT_10 = 10] = "TREATMENT_10", a[a.TREATMENT_11 = 11] = "TREATMENT_11", a[a.TREATMENT_12 = 12] = "TREATMENT_12", a[a.TREATMENT_13 = 13] = "TREATMENT_13", a[a.TREATMENT_14 = 14] = "TREATMENT_14", a[a.TREATMENT_15 = 15] = "TREATMENT_15", a[a.TREATMENT_16 = 16] = "TREATMENT_16", a[a.TREATMENT_17 = 17] = "TREATMENT_17", a[a.TREATMENT_18 = 18] = "TREATMENT_18", a[a.TREATMENT_19 = 19] = "TREATMENT_19", a[a.TREATMENT_20 = 20] = "TREATMENT_20", a[a.TREATMENT_21 = 21] = "TREATMENT_21", a[a.TREATMENT_22 = 22] = "TREATMENT_22", a[a.TREATMENT_23 = 23] = "TREATMENT_23", a[a.TREATMENT_24 = 24] = "TREATMENT_24", a[a.TREATMENT_25 = 25] = "TREATMENT_25", (o = r || (r = {})).NONE_LEGACY = "none", o.GUILD = "guild", o.USER = "user", (l = s || (s = {})).MANUAL = "manual", l.AUTO = "auto", l.AUTO_FALLBACK = "auto_fallback"
         },
-        442437: function(e, t, n) {
+        211470: function(e, t, n) {
             "use strict";
             n.r(t), n.d(t, {
                 trackExposureToExperiment: function() {
@@ -9702,8 +9532,8 @@
                 }
             });
             var i = n("913144"),
-                r = n("996777"),
-                s = n("848601");
+                r = n("789563"),
+                s = n("565034");
 
             function a(e, t, n) {
                 var i, s;
@@ -9762,7 +9592,7 @@
                 })
             }
         },
-        996777: function(e, t, n) {
+        789563: function(e, t, n) {
             "use strict";
             n.r(t), n.d(t, {
                 registerExperiment: function() {
@@ -9783,8 +9613,8 @@
                 c = n("271938"),
                 E = n("455079"),
                 _ = n("599110"),
-                f = n("366507"),
-                h = n("848601"),
+                f = n("316805"),
+                h = n("565034"),
                 p = n("49111");
             let S = "scientist:triggered",
                 T = "exerimentOverrides",
@@ -10344,7 +10174,7 @@
             $.displayName = "ExperimentStore", $.LATEST_SNAPSHOT_VERSION = 1;
             var ee = new $
         },
-        366507: function(e, t, n) {
+        316805: function(e, t, n) {
             "use strict";
             n.r(t), n.d(t, {
                 GUILD_FILTERS: function() {
@@ -10449,6 +10279,176 @@
                     return e => {
                         let i = a.v3("".concat(t, ":").concat(e));
                         return (i > 0 ? i + i : i >>> 0) % 1e4 < n
+                    }
+                }
+            }
+        },
+        630915: function(e, t, n) {
+            "use strict";
+            n.r(t), n.d(t, {
+                default: function() {
+                    return i
+                }
+            });
+            var i = (0, n("296892").default)({
+                kind: "user",
+                id: "2023-08_overlay3_out_of_process_enablement",
+                label: "Overlay3 - Out of Process Enablement",
+                defaultConfig: {
+                    useGlobalOverlay: !1
+                },
+                treatments: [{
+                    id: 1,
+                    label: "Enabled",
+                    config: {
+                        useGlobalOverlay: !0
+                    }
+                }]
+            })
+        },
+        296892: function(e, t, n) {
+            "use strict";
+            n.r(t), n.d(t, {
+                default: function() {
+                    return c
+                }
+            });
+            var i = n("884691"),
+                r = n("261810"),
+                s = n("271938"),
+                a = n("211470"),
+                o = n("789563"),
+                l = n("565034");
+
+            function u(e, t, n) {
+                return "guild" === e ? o.default.getGuildExperimentDescriptor(t, n.guildId) : o.default.getUserExperimentDescriptor(t)
+            }
+
+            function d(e, t, n, i) {
+                var r, s;
+                return (null == i ? void 0 : i.aaMode) ? e.defaultConfig : null !== (s = null === (r = n.get(t)) || void 0 === r ? void 0 : r.config) && void 0 !== s ? s : e.defaultConfig
+            }
+
+            function c(e) {
+                var t, n;
+                let c = new Map;
+                c.set(l.ExperimentBuckets.NOT_ELIGIBLE, {
+                    description: "Not Eligible",
+                    config: e.defaultConfig
+                }), c.set(l.ExperimentBuckets.CONTROL, {
+                    description: "Control Bucket",
+                    config: e.defaultConfig
+                }), e.treatments.forEach(e => {
+                    c.set(e.id, {
+                        description: "Treatment ".concat(e.id, ": ").concat(e.label),
+                        config: e.config
+                    })
+                });
+                let E = (t = e.kind, n = {
+                    id: e.id,
+                    title: e.label,
+                    description: [...c.values()].map(e => e.description),
+                    buckets: [...c.keys()]
+                }, "guild" === t ? (0, a.registerGuildExperiment)(n) : (0, a.registerUserExperiment)(n));
+
+                function _(e) {
+                    let t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : {},
+                        n = arguments.length > 2 ? arguments[2] : void 0,
+                        i = arguments.length > 3 && void 0 !== arguments[3] ? arguments[3] : null;
+                    if (t.exposureType = n ? l.ExposureTypes.AUTO_FALLBACK : l.ExposureTypes.AUTO, t.excluded = !1, null == i) {
+                        f(e, t);
+                        return
+                    }
+                    h(e, t, i)
+                }
+
+                function f(t) {
+                    let n = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : {
+                            excluded: !1,
+                            exposureType: l.ExposureTypes.MANUAL
+                        },
+                        i = u(e.kind, E.id, t);
+                    null != i && h(t, n, i)
+                }
+
+                function h(e, t, n) {
+                    if (null != n) {
+                        var i, r, o, u, d;
+                        let c = l.ExposureTypes.MANUAL;
+                        (0, a.trackExposureToExperiment)(E.id, n, {
+                            location: null !== (i = null == e ? void 0 : e.location) && void 0 !== i ? i : "unknown",
+                            analyticsLocations: null !== (r = null == t ? void 0 : t.analyticsLocations) && void 0 !== r ? r : [],
+                            fingerprint: null !== (u = null !== (o = null == t ? void 0 : t.fingerprint) && void 0 !== o ? o : s.default.getFingerprint()) && void 0 !== u ? u : void 0,
+                            excluded: (null == t ? void 0 : t.excluded) || !1,
+                            exposureType: null !== (d = null == t ? void 0 : t.exposureType) && void 0 !== d ? d : c
+                        })
+                    }
+                }
+
+                function p(t, n) {
+                    let i = arguments.length > 2 && void 0 !== arguments[2] ? arguments[2] : {},
+                        r = null != i.disable && i.disable,
+                        s = u(e.kind, e.id, t),
+                        a = null == s || r ? l.ExperimentBuckets.NOT_ELIGIBLE : s.bucket,
+                        E = null == s ? -1 : s.revision,
+                        _ = d(e, a, c, s);
+
+                    function f() {
+                        let i = u(e.kind, e.id, t),
+                            s = null == i || r ? l.ExperimentBuckets.NOT_ELIGIBLE : i.bucket,
+                            o = null == i ? -1 : i.revision;
+                        (s !== a || E !== o) && (n(d(e, s, c, i), s, o), a = s, E = o)
+                    }
+                    return n(_, a, E), o.default.addReactChangeListener(f), () => {
+                        o.default.removeReactChangeListener(f)
+                    }
+                }
+                return {
+                    useExperiment: function(t) {
+                        var n, s, a;
+                        let o = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : {
+                                autoTrackExposure: !0
+                            },
+                            E = null !== (n = o.disable) && void 0 !== n && n,
+                            f = !1 !== o.autoTrackExposure,
+                            h = u(e.kind, e.id, t),
+                            S = null == o.trackExposureOptions ? void 0 : (0, r.default)(null !== (s = o.trackExposureOptions) && void 0 !== s ? s : {}),
+                            T = null !== (a = null == h ? void 0 : h.triggerDebuggingEnabled) && void 0 !== a && a,
+                            [
+                                [I, m, g], C
+                            ] = (0, i.useState)(() => {
+                                let t = null == h || E ? l.ExperimentBuckets.NOT_ELIGIBLE : h.bucket;
+                                return [d(e, t, c, h), t, null == h ? -1 : h.revision]
+                            }),
+                            A = (0, r.default)(t);
+                        return (0, i.useEffect)(() => {
+                            if (E || !f && !T) return;
+                            let e = !1 === f;
+                            _(A, S, e)
+                        }, [E, f, A, S, m, g, T]), (0, i.useEffect)(() => p(A, (e, t, n) => {
+                            C(i => i[0] === e && i[1] === t && i[2] === n ? i : [e, t, n])
+                        }, {
+                            disable: E
+                        }), [E, A]), I
+                    },
+                    subscribe: p,
+                    trackExposure: f,
+                    getCurrentConfig: function(t) {
+                        let n = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : {
+                                autoTrackExposure: !0
+                            },
+                            i = u(e.kind, e.id, t);
+                        if (null == i || n.disable) return d(e, l.ExperimentBuckets.NOT_ELIGIBLE, c, i);
+                        if (!1 !== n.autoTrackExposure || i.triggerDebuggingEnabled) {
+                            let e = !1 === n.autoTrackExposure;
+                            _(t, n.trackExposureOptions, e, i)
+                        }
+                        return d(e, i.bucket, c, i)
+                    },
+                    definition: e,
+                    isAAMode: function(t) {
+                        let n = u(e.kind, e.id, t);
+                        return !!(null == n ? void 0 : n.aaMode)
                     }
                 }
             }
@@ -13777,7 +13777,7 @@
             var i = n("650033");
             n("362391");
             var r = n("862205");
-            n("996777");
+            n("789563");
             let s = [{
                     id: 2,
                     label: "App Navbar Always Visible",
@@ -13871,7 +13871,7 @@
             }), n("884691");
             var i, r, s = n("308503"),
                 a = n("95410");
-            n("996777"), n("697218"), n("916863"), n("126198"), n("900226"), n("985268"), n("699145"), n("102425"), n("460609");
+            n("789563"), n("697218"), n("916863"), n("126198"), n("900226"), n("985268"), n("699145"), n("102425"), n("460609");
             var o = n("693051"),
                 l = n("139404"),
                 u = n("61796"),
@@ -21291,7 +21291,7 @@
                 s = n("517001"),
                 a = n("305961"),
                 o = n("697218"),
-                l = n("848601"),
+                l = n("565034"),
                 u = n("963903");
             let d = "production" === u.Environments.DEVELOPMENT || window.GLOBAL_ENV.RELEASE_CHANNEL === u.Environments.STAGING;
 
@@ -21477,7 +21477,7 @@
             });
             var i = n("446674"),
                 r = n("913144"),
-                s = n("996777");
+                s = n("789563");
             class a extends i.default.Store {
                 initialize() {
                     this.waitFor(s.default)
@@ -33623,7 +33623,7 @@
                         var i;
                         let c = {
                                 environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                                build_number: "242434"
+                                build_number: "242439"
                             },
                             E = l.default.getCurrentUser();
                         null != E && (c.user_id = E.id, c.user_name = E.tag, null != E.email && (c.email = E.email));
@@ -46285,4 +46285,4 @@
         }
     }
 ]);
-//# sourceMappingURL=a3b80d2a68793702554c.js.map
+//# sourceMappingURL=0bd782cd4fe57bd333b4.js.map
