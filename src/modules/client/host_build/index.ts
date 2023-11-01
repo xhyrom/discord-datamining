@@ -19,10 +19,11 @@
 import { join } from "node:path";
 
 import type { Module } from "../../index.ts";
-import { writeFile, rm, pushToGit } from "../../../utils.ts";
+import { writeFile, rm, pushToGit, readFile } from "../../../utils.ts";
 import type { Channel } from "../Channel.ts";
 import { send } from "./senders/index.ts";
 import { markdownTable } from "markdown-table";
+import deepEqual from "fast-deep-equal";
 
 interface ModuleContent {
   host_version: [number, number, number];
@@ -60,6 +61,15 @@ export class HostBuild implements Module {
     const manifest = await this.manifest();
     if (!manifest) {
       console.log("Manifest not found, potentional outage?");
+      return;
+    }
+
+    const oldManifest = JSON.parse(
+      (await readFile(join(this.baseDir, "manifest.json"))) ?? "{}"
+    );
+
+    if (deepEqual(manifest, oldManifest)) {
+      console.log("Manifests are equal, skipping");
       return;
     }
 

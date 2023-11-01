@@ -38,16 +38,15 @@ export class HyrosCoffeeSender implements Sender {
         {
           name: "Host Version",
           value: await hostBuild.hostVersion(),
-          inline: true,
         },
         {
           name: "Modules",
           value: Object.entries((await hostBuild.manifest())?.modules ?? [])
             ?.map(
-              ([moduleName, moduleVersion]) => `${moduleName}: ${moduleVersion}`
+              ([moduleName, moduleVersion]) =>
+                `${moduleName}: **${moduleVersion.full.module_version}**`
             )
             .join("\n"),
-          inline: true,
         }
       );
 
