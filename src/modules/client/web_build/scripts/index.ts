@@ -30,6 +30,7 @@ export class Scripts implements Module {
     chunkLoader: File | null;
     classMappings: File | null;
     vendor: File | null;
+    routes: File | null;
     strings: File | null;
     mainScript: File;
   };
@@ -108,6 +109,13 @@ export class Scripts implements Module {
       );
     }
 
+    if (files.routes) {
+      await writeFile(
+        join(this.baseDir, "routes.js"),
+        beautify(await files.routes.content(), "js")
+      );
+    }
+
     if (files.strings) {
       await writeFile(
         join(this.baseDir, "strings.js"),
@@ -131,22 +139,33 @@ export class Scripts implements Module {
     let mainScript;
     let stringsScript;
     let classMappingsScript;
+    let vendorScript;
+    let routesScript;
     for (const script of scripts) {
       const content = await script.content();
-      if (
-        Array.from(content.matchAll(/buildNumber:\s*"(?<number>[0-9]+)"/g))[0]
-          ?.groups?.number
-      ) {
+      if (content.match(/buildNumber:\s*"(?<number>[0-9]+)"/g)?.length === 1) {
         mainScript = script;
         continue;
       }
 
       if (content.match(/(DISCORD:\s*["']Discord["'])/g)?.length === 1) {
         stringsScript = script;
+        continue;
       }
 
       if (content.match(/"heading-lg\/bold":\s*/g)?.length === 1) {
         classMappingsScript = script;
+        continue;
+      }
+
+      if (content.match(/setServerDeaf:\s*/g)?.length === 1) {
+        vendorScript = script;
+        continue;
+      }
+
+      if (content.match(/(ME:\s*["']\/users\/@me["'])/g)?.length === 1) {
+        routesScript = script;
+        continue;
       }
     }
 
@@ -155,11 +174,20 @@ export class Scripts implements Module {
       process.exit(1);
     }
 
+    console.log("Found scripts");
+    console.log(`Class Mappings: ${classMappingsScript?.path}`);
+    console.log(`Chunk Loader: ${scripts?.[scripts.length - 1]?.path}`);
+    console.log(`Vendor: ${vendorScript?.path}`);
+    console.log(`Routes: ${routesScript?.path}`);
+    console.log(`Strings: ${stringsScript?.path}`);
+    console.log(`Main Script: ${mainScript?.path}`);
+
     this.#files = {
       scripts,
       classMappings: classMappingsScript ?? null, // contains css classes
       chunkLoader: scripts?.[scripts.length - 1] ?? null,
-      vendor: scripts?.[22] ?? null,
+      vendor: vendorScript ?? null,
+      routes: routesScript ?? null,
       strings: stringsScript ?? null, // contains all strings
       mainScript: mainScript!, // contains build info
     };
