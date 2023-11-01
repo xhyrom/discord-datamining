@@ -89,7 +89,7 @@ export class Applications implements Module {
 
   async getSnowflakes() {
     const scripts = await readdir(
-      join(Client.baseDir, "channels", "canary", "scripts", "scripts")
+      join(Client.baseDir, "channels", "canary", "web", "scripts", "scripts")
     );
     const files = scripts.map(
       (script) =>
@@ -98,6 +98,7 @@ export class Applications implements Module {
             Client.baseDir,
             "channels",
             "canary",
+            "web",
             "scripts",
             "scripts",
             script
