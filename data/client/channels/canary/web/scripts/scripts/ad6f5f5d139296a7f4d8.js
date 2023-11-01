@@ -703,20 +703,20 @@
                 }
                 loadComplete(e) {
                     var t, n, r, s, o, d, c, h, E, _, m;
-                    let p = [...e.newMessages],
-                        g = null !== (t = e.isBefore) && void 0 !== t && t,
+                    let g = [...e.newMessages],
+                        p = null !== (t = e.isBefore) && void 0 !== t && t,
                         T = null !== (n = e.isAfter) && void 0 !== n && n,
                         I = null !== (r = e.jump) && void 0 !== r ? r : null,
                         S = null !== (s = e.hasMoreBefore) && void 0 !== s && s,
                         A = null !== (o = e.hasMoreAfter) && void 0 !== o && o,
                         C = null !== (d = e.cached) && void 0 !== d && d,
-                        v = l(p).reverse().map(i.default.getCurrentConfig({
+                        v = l(g).reverse().map(i.default.getCurrentConfig({
                             location: "2ecb25_2"
                         }, {
                             autoTrackExposure: !1
                         }).enabled ? e => (0, u.createMessageRecord)(e) : e => f(this, e)).value(),
                         M = null;
-                    return M = (M = (g || T) && null == I && this.ready ? this.merge(v, g, !0) : this.reset(v)).mutate({
+                    return M = (M = (p || T) && null == I && this.ready ? this.merge(v, p, !0) : this.reset(v)).mutate({
                         ready: !0,
                         loadingMore: !1,
                         jumpType: null !== (c = null == I ? void 0 : I.jumpType) && void 0 !== c ? c : a.JumpTypes.ANIMATED,
@@ -728,7 +728,7 @@
                         jumpSequenceId: null != I ? M.jumpSequenceId + 1 : M.jumpSequenceId,
                         jumpReturnTargetId: null !== (m = null == I ? void 0 : I.returnMessageId) && void 0 !== m ? m : null,
                         hasMoreBefore: null == I && T ? M.hasMoreBefore : S,
-                        hasMoreAfter: null == I && g ? M.hasMoreAfter : A,
+                        hasMoreAfter: null == I && p ? M.hasMoreAfter : A,
                         cached: C,
                         hasFetched: e.hasFetched,
                         error: !1
@@ -776,8 +776,8 @@
                 E = n("676574"),
                 _ = n("618421"),
                 m = n("271938"),
-                p = n("985365"),
-                g = n("254490"),
+                g = n("985365"),
+                p = n("254490"),
                 T = n("231987"),
                 I = n("980134"),
                 S = n("282928"),
@@ -836,7 +836,7 @@
                         filename: a,
                         ...s
                     } = e, u = (0, _.getSignalStrength)(), c = {
-                        mobile_network_type: p.default.getType(),
+                        mobile_network_type: g.default.getType(),
                         ...s,
                         ...null != u && {
                             signal_strength: u
@@ -955,7 +955,7 @@
                             this.requests.set(s, E), e.on("progress", e => {
                                 let {
                                     total: t
-                                } = e, n = (0, g.maxFileSize)(l);
+                                } = e, n = (0, p.maxFileSize)(l);
                                 if (null != t && t > n) this.cancelRequest(s), null == f || f(n)
                             })
                         }
@@ -989,8 +989,8 @@
                 E = n("966724"),
                 _ = n("142852"),
                 m = n("49111");
-            let p = new o.default("CloudUpload.tsx"),
-                g = n("123010").default;
+            let g = new o.default("CloudUpload.tsx"),
+                p = n("123010").default;
             (r = l || (l = {})).NOT_STARTED = "NOT_STARTED", r.STARTED = "STARTED", r.UPLOADING = "UPLOADING", r.ERROR = "ERROR", r.COMPLETED = "COMPLETED", r.CANCELED = "CANCELED";
             class T extends E.default {
                 static fromJson(e) {
@@ -1019,7 +1019,7 @@
                 uploadFileToCloud() {
                     let e, t;
                     if (null == this.responseUrl) throw Error("_uploadFileToCloud - responseUrl is not set");
-                    p.log("Uploading ".concat(this.id)), this.item.platform === E.UploadPlatform.REACT_NATIVE ? t = null != (e = {
+                    g.log("Uploading ".concat(this.id)), this.item.platform === E.UploadPlatform.REACT_NATIVE ? t = null != (e = {
                         type: this.item.mimeType,
                         uri: this.item.uri,
                         name: this.item.filename
@@ -1050,10 +1050,10 @@
                         this.handleComplete(this.id);
                         return
                     }
-                    let r = await g.getUploadPayload(this),
+                    let r = await p.getUploadPayload(this),
                         i = (0, _.getUploadTarget)(this.item.target);
                     if (null == r.filename || "" === r.filename || 0 === this.currentSize) {
-                        p.error("File does not have a filename or size is 0.", JSON.stringify(r)), this.handleError(m.AbortCodes.INVALID_FILE_ASSET);
+                        g.error("File does not have a filename or size is 0.", JSON.stringify(r)), this.handleError(m.AbortCodes.INVALID_FILE_ASSET);
                         return
                     }
                     if ((null !== (e = this.currentSize) && void 0 !== e ? e : 0) > i.getMaxFileSize(this.channelId)) {
@@ -1067,7 +1067,7 @@
                         return
                     }
                     try {
-                        p.log("Requesting upload url for ".concat(this.id));
+                        g.log("Requesting upload url for ".concat(this.id));
                         let e = await u.default.post({
                             url: i.getCreateAttachmentURL(this.channelId),
                             body: {
@@ -1078,33 +1078,33 @@
                         this.setResponseUrl(e.body.attachments[0].upload_url), this.setUploadedFilename(e.body.attachments[0].upload_filename)
                     } catch (r) {
                         let e = null !== (n = null == r ? void 0 : null === (t = r.body) || void 0 === t ? void 0 : t.code) && void 0 !== n ? n : r.status;
-                        e !== m.AbortCodes.ENTITY_TOO_LARGE && (p.error("Requesting upload url failed with code ".concat(null != e ? e : JSON.stringify(r.body), " for ").concat(this.id)), f.default.captureException(r)), this.handleError(e);
+                        e !== m.AbortCodes.ENTITY_TOO_LARGE && (g.error("Requesting upload url failed with code ".concat(null != e ? e : JSON.stringify(r.body), " for ").concat(this.id)), f.default.captureException(r)), this.handleError(e);
                         return
                     }
                     try {
                         let e = await this.uploadFileToCloud();
                         this.handleComplete(e)
                     } catch (e) {
-                        this.status === l.CANCELED ? this.handleComplete(e) : (p.info("Error: status ".concat(e.status, " for ").concat(this.id)), this.handleError(e))
+                        this.status === l.CANCELED ? this.handleComplete(e) : (g.info("Error: status ".concat(e.status, " for ").concat(this.id)), this.handleError(e))
                     }
                 }
                 async reactNativeCompressAndExtractData() {
                     var e, t;
                     if (!(0, _.getUploadTarget)(this.item.target).shouldReactNativeCompressUploads) {
-                        p.log("reactNativeCompressAndExtractData() disabled by upload target");
+                        g.log("reactNativeCompressAndExtractData() disabled by upload target");
                         return
                     }
                     if (!0 === this.reactNativeFilePrepped) {
-                        p.log("reactNativeCompressAndExtractData() file already prepped - ".concat(this.id));
+                        g.log("reactNativeCompressAndExtractData() file already prepped - ".concat(this.id));
                         return
                     }
-                    p.log("Starting compression/conversion for ".concat(this.id));
+                    g.log("Starting compression/conversion for ".concat(this.id));
                     let n = await (0, c.getAttachmentFile)(this, null !== (e = this.reactNativeFileIndex) && void 0 !== e ? e : 0);
                     if (null == n || null == n.file) return;
                     let r = n.uri,
                         l = n.file.name,
                         i = n.file.type;
-                    if (this.filename = l, null == l || null == r || null == i) throw p.error("Insufficient file data: ".concat({
+                    if (this.filename = l, null == l || null == r || null == i) throw g.error("Insufficient file data: ".concat({
                         filename: l,
                         uri: r,
                         mimeType: i
@@ -1114,8 +1114,8 @@
                         mimeType: i
                     }));
                     let a = null !== (t = n.fileSize) && void 0 !== t ? t : (await (0, h.getFileData)(r)).size;
-                    if (this.postCompressionSize = a, this.currentSize = a, null == a) throw p.error("Size missing from file data for ".concat(this.id)), Error("Size missing from file data");
-                    p.log("Completed compression and conversion. Output size=".concat(a, " bytes; filename=").concat(l, " for ").concat(this.id));
+                    if (this.postCompressionSize = a, this.currentSize = a, null == a) throw g.error("Size missing from file data for ".concat(this.id)), Error("Size missing from file data");
+                    g.log("Completed compression and conversion. Output size=".concat(a, " bytes; filename=").concat(l, " for ").concat(this.id));
                     this.item = {
                         ...this.item,
                         uri: r,
@@ -1131,10 +1131,10 @@
                     this.removeAllListeners()
                 }
                 handleComplete(e) {
-                    this.setStatus(l.COMPLETED), p.log("Upload complete for ".concat(this.id)), this.emit("complete", e), this.removeAllListeners()
+                    this.setStatus(l.COMPLETED), g.log("Upload complete for ".concat(this.id)), this.emit("complete", e), this.removeAllListeners()
                 }
                 cancel() {
-                    p.log("Cancelled called for ".concat(this.id)), this._abortController.abort(), this.status === l.COMPLETED && this.delete(), this.setStatus(l.CANCELED), this.emit("complete"), this.removeAllListeners()
+                    g.log("Cancelled called for ".concat(this.id)), this._abortController.abort(), this.status === l.COMPLETED && this.delete(), this.setStatus(l.CANCELED), this.emit("complete"), this.removeAllListeners()
                 }
                 resetState() {
                     return this.status = l.NOT_STARTED, this.uploadedFilename = void 0, this.responseUrl = void 0, this.error = void 0, this._abortController = new AbortController, super.resetState()
@@ -1468,8 +1468,8 @@
                 E = n("253981"),
                 _ = n("139514"),
                 m = n("49111");
-            let p = /^\/([a-zA-Z0-9-]+)$/,
-                g = /^\/channels\/([0-9]+|@me)\/([0-9]+)$/,
+            let g = /^\/([a-zA-Z0-9-]+)$/,
+                p = /^\/channels\/([0-9]+|@me)\/([0-9]+)$/,
                 T = /^\/(invite|template)\/([a-zA-Z0-9-]+)\/?$/,
                 I = RegExp("^/events/(\\d+)(?:/)(\\d+)?((?:/)(\\d+))?"),
                 S = /^\/application-directory\/([0-9-]+)\/?$/,
@@ -1541,10 +1541,10 @@
                                 code: r
                             }))
                         };
-                    if ((null == u ? void 0 : u.match(p)) != null) {
+                    if ((null == u ? void 0 : u.match(g)) != null) {
                         let e = (0, c.generateInviteKeyFromUrlParams)(u.substring(1), r.search);
                         f.default.getInvite(e), E(_.CodedLinkType.INVITE, e)
-                    }(null == o ? void 0 : o.match(p)) != null && E(_.CodedLinkType.TEMPLATE, o.substring(1));
+                    }(null == o ? void 0 : o.match(g)) != null && E(_.CodedLinkType.TEMPLATE, o.substring(1));
                     let m = null == h ? void 0 : h.match(T);
                     if (null != m) {
                         let e = m[1].toUpperCase();
@@ -1552,7 +1552,7 @@
                             let e = (0, c.generateInviteKeyFromUrlParams)(m[2], r.search);
                             E(_.CodedLinkType.INVITE, e)
                         } else E(e, m[2])
-                    }(null == h ? void 0 : h.match(g)) != null && E(_.CodedLinkType.CHANNEL_LINK, h.replace("/channels/", ""));
+                    }(null == h ? void 0 : h.match(p)) != null && E(_.CodedLinkType.CHANNEL_LINK, h.replace("/channels/", ""));
                     let b = function(e) {
                         if (null == e) return null;
                         let t = e.match(I);
@@ -1925,28 +1925,28 @@
                 e.user_count = Math.max(l, null != r ? r : 0), _.set(e.id, e), T += 1
             }
 
-            function p(e, t) {
+            function g(e, t) {
                 _.delete(e), v(e, t), T += 1
             }
-            let g = "orphaned",
+            let p = "orphaned",
                 T = 0,
                 I = {},
                 S = [];
 
             function A(e) {
                 var t, n;
-                let r = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : g;
-                return r !== g && (null === (t = I[g]) || void 0 === t ? void 0 : t.has(e)) && (C(e, r), v(e, g)), !!(null === (n = I[r]) || void 0 === n ? void 0 : n.has(e))
+                let r = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : p;
+                return r !== p && (null === (t = I[p]) || void 0 === t ? void 0 : t.has(e)) && (C(e, r), v(e, p)), !!(null === (n = I[r]) || void 0 === n ? void 0 : n.has(e))
             }
 
             function C(e) {
-                let t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : g;
+                let t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : p;
                 null == I[t] && (I[t] = new Set), I[t].add(e), T += 1
             }
 
             function v(e) {
                 var t;
-                let n = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : g;
+                let n = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : p;
                 null === (t = I[n]) || void 0 === t || t.delete(e), T += 1
             }
             let M = {};
@@ -1957,7 +1957,7 @@
             }
 
             function R(e) {
-                _.values(h.GUILD_EVENT(e)).forEach(t => p(t.id, e))
+                _.values(h.GUILD_EVENT(e)).forEach(t => g(t.id, e))
             }
 
             function O(e) {
@@ -2051,7 +2051,7 @@
                         guildScheduledEvents: n
                     } = e, r = _.values(h.GUILD_EVENT(t), !0).map(e => e.id), i = n.map(e => e.id);
                     for (let e of (l.difference(r, i).forEach(e => {
-                            p(e, t)
+                            g(e, t)
                         }), n)) m(e);
                     return !0
                 },
@@ -2061,7 +2061,7 @@
                     let {
                         guildScheduledEvent: t
                     } = e;
-                    return p(t.id, t.guild_id), !0
+                    return g(t.id, t.guild_id), !0
                 },
                 GUILD_SCHEDULED_EVENT_USER_ADD: function(e) {
                     var t, n, r;
@@ -2367,10 +2367,10 @@
                     return m
                 },
                 tryParseChannelPath: function() {
-                    return p
+                    return g
                 },
                 tryParseEventDetailsPath: function() {
-                    return g
+                    return p
                 },
                 canViewChannel: function() {
                     return T
@@ -2394,7 +2394,7 @@
                 _ = new RegExp("^https://(?:canary\\.|ptb\\.)?discord.com/channels/(\\d+|".concat(s.ME, ")(?:/(\\d+|[a-zA-Z-]+))?(?:/(\\d+|[a-zA-Z-]+))?")),
                 m = RegExp("^https://(?:canary\\.|ptb\\.)?discord.com/channels/(\\d+)(?:/)(\\d+)(?:/threads/)(\\d+)(?:/)(\\d+)");
 
-            function p(e) {
+            function g(e) {
                 if (null == e) return null;
                 let t = e.match(c);
                 if (null != t && t.length > 3) return {
@@ -2423,7 +2423,7 @@
                 } : null
             }
 
-            function g(e) {
+            function p(e) {
                 if (null == e) return null;
                 let t = e.match(E);
                 return null != t && t.length > 1 ? {
@@ -2452,7 +2452,7 @@
             "use strict";
             n.r(t), n.d(t, {
                 punycodeLink: function() {
-                    return g
+                    return p
                 },
                 default: function() {
                     return T
@@ -2487,13 +2487,13 @@
                 _ = [...E, o.AST_KEY.EMOJI, o.AST_KEY.CUSTOM_EMOJI],
                 m = [o.AST_KEY.TEXT];
 
-            function p(e, t) {
+            function g(e, t) {
                 for (let n of (!Array.isArray(e) && (e = [e]), e))
-                    if (!t.includes(n.type) || n.type === o.AST_KEY.INLINE_CODE && null == p(n.validationChildContent, t) || Array.isArray(n.content) && null == p(n.content, t)) return null;
+                    if (!t.includes(n.type) || n.type === o.AST_KEY.INLINE_CODE && null == g(n.validationChildContent, t) || Array.isArray(n.content) && null == g(n.content, t)) return null;
                 return e
             }
 
-            function g(e) {
+            function p(e) {
                 try {
                     var t;
                     let n = new URL(e),
@@ -2521,7 +2521,7 @@
                     }), h = f(i), T = f(l), I = f(null != d ? d : ""), S = h.whitespaceSanitized, A = T.fullySanitized, C = I.fullySanitized, v = A.trim(), M = S.trim();
                     if (0 === M.length || 0 === v.length) return c();
                     let N = a.unescapeUrl(i),
-                        R = g(N),
+                        R = p(N),
                         O = (0, s.default)(l).length > 0 || (0, s.default)(d).length > 0;
                     if (null == R || O) return c();
                     let y = {
@@ -2531,8 +2531,8 @@
                         },
                         L = t(A, y),
                         D = t(C, y),
-                        U = p(L, n.allowEmojiLinks ? _ : E),
-                        b = p(D, m);
+                        U = g(L, n.allowEmojiLinks ? _ : E),
+                        b = g(D, m);
                     if (null == U || null == b) return c();
                     let P = function e(t) {
                             let n = "";
@@ -2741,9 +2741,9 @@
                 _ = n("697218"),
                 m = n("240873");
             n("61069");
-            var p = n("659632");
+            var g = n("659632");
             n("773336"), n("158998");
-            var g = n("406297");
+            var p = n("406297");
             n("574073");
             var T = n("894488"),
                 I = n("49111");
@@ -2777,7 +2777,7 @@
                     mentionRoles: L,
                     mentionChannels: D,
                     messageReference: U,
-                    mentioned: (0, g.isMentioned)({
+                    mentioned: (0, p.isMentioned)({
                         userId: f.default.getId(),
                         channelId: e.channel_id,
                         mentionEveryone: null !== (m = e.mention_everyone) && void 0 !== m && m,
@@ -2787,7 +2787,7 @@
                     attachments: M(e),
                     embeds: R(e),
                     codedLinks: P,
-                    giftCodes: (0, p.isGiftCodeEmbed)(e) ? (0, p.findGiftCodes)(null == e ? void 0 : e.embeds[0].url) : (0, p.findGiftCodes)(e.content),
+                    giftCodes: (0, g.isGiftCodeEmbed)(e) ? (0, g.findGiftCodes)(null == e ? void 0 : e.embeds[0].url) : (0, g.findGiftCodes)(e.content),
                     content: x,
                     referralTrialOfferId: B,
                     call: N(e.call, b),
@@ -3036,7 +3036,7 @@
                     E = c.default.useName((null == e ? void 0 : e.author.bot) ? null == e ? void 0 : e.author : h),
                     _ = (0, i.useStateFromStores)([u.default], () => u.default.getGuild(l)),
                     m = (0, i.useStateFromStores)([o.default], () => null != r && (null == n ? void 0 : n.isPrivate()) ? o.default.getNickname(r) : null);
-                return null == e ? null : p({
+                return null == e ? null : g({
                     user: e.author,
                     channel: n,
                     guild: _,
@@ -3058,7 +3058,7 @@
                     a = (0, i.useStateFromStores)([u.default], () => u.default.getGuild(r)),
                     d = (0, i.useStateFromStores)([o.default], () => null != n && (null == t ? void 0 : t.isPrivate()) ? o.default.getNickname(n) : null),
                     f = c.default.useName(e);
-                return p({
+                return g({
                     user: e,
                     channel: t,
                     guild: a,
@@ -3074,7 +3074,7 @@
                     l = u.default.getGuild(r),
                     i = null == r || null == n ? null : s.default.getMember(r, n),
                     a = null != n && null != t && t.isPrivate() ? o.default.getNickname(n) : null;
-                return p({
+                return g({
                     user: e,
                     channel: t,
                     guild: l,
@@ -3083,7 +3083,7 @@
                 })
             }
 
-            function p(e) {
+            function g(e) {
                 var t, n, r;
                 let {
                     user: l,
@@ -3181,10 +3181,10 @@
                     return m
                 },
                 toReactionEmoji: function() {
-                    return p
+                    return g
                 },
                 emojiEquals: function() {
-                    return g
+                    return p
                 },
                 BurstRefillTierAmounts: function() {
                     return l
@@ -3233,7 +3233,7 @@
                 return u
             }
 
-            function p(e) {
+            function g(e) {
                 var t, n, r;
                 return {
                     id: null !== (t = e.id) && void 0 !== t ? t : null,
@@ -3242,7 +3242,7 @@
                 }
             }
 
-            function g(e, t) {
+            function p(e, t) {
                 return null != t.id ? t.id === e.id : null == e.id && t.name === e.name
             }
 
@@ -3319,7 +3319,7 @@
                     return E
                 },
                 SpotifyEndpoints: function() {
-                    return p
+                    return g
                 }
             });
             var r, l, i, a, s = n("376556"),
@@ -3335,7 +3335,7 @@
             let E = ["open.spotify.com", "www.spotify.com"],
                 _ = "https://api.spotify.com/v1",
                 m = e => "?utm_source=discord&utm_medium=".concat(e),
-                p = Object.freeze({
+                g = Object.freeze({
                     PROFILE: "".concat(_, "/me"),
                     NOTIFICATIONS_PLAYER: "".concat(_, "/me/notifications/player"),
                     PLAYER: "".concat(_, "/me/player"),
@@ -3417,10 +3417,10 @@
                     return i
                 },
                 isAnimatedSticker: function() {
-                    return p
+                    return g
                 },
                 isCustomSticker: function() {
-                    return g
+                    return p
                 },
                 StickerGridItemTypes: function() {
                     return a
@@ -3435,8 +3435,8 @@
                     return o
                 }
             }), (d = r || (r = {}))[d.PNG = 1] = "PNG", d[d.APNG = 2] = "APNG", d[d.LOTTIE = 3] = "LOTTIE", d[d.GIF = 4] = "GIF", (c = l || (l = {}))[c.STANDARD = 1] = "STANDARD", c[c.GUILD = 2] = "GUILD", (f = i || (i = {})).PNG = "png", f.APNG = "png", f.LOTTIE = "json", f.WEBP = "webp", f.GIF = "gif";
-            let p = e => e !== r.PNG,
-                g = e => e !== l.STANDARD;
+            let g = e => e !== r.PNG,
+                p = e => e !== l.STANDARD;
             (h = a || (a = {}))[h.STICKER = 0] = "STICKER", h[h.CREATE_STICKER = 1] = "CREATE_STICKER", (E = s || (s = {})).PACK = "PACK", E.FAVORITE = "FAVORITE", E.RECENT = "RECENT", E.SEARCH_RESULTS = "SEARCH_RESULTS", E.SEARCH_SUGGESTIONS = "SEARCH_SUGGESTIONS", E.GUILD = "GUILD", E.EMPTY_GUILD_UPSELL = "EMPTY_GUILD_UPSELL", E.CREATE_STICKER = "CREATE_STICKER", (_ = u || (u = {}))[_.STICKER_NAME = 0] = "STICKER_NAME", _[_.TAG = 1] = "TAG", _[_.CORRELATED_EMOJI = 2] = "CORRELATED_EMOJI", _[_.GUILD_NAME = 3] = "GUILD_NAME", _[_.PACK_NAME = 4] = "PACK_NAME", (m = o || (o = {}))[m.STICKER_PICKER = 0] = "STICKER_PICKER", m[m.EXPRESSION_SUGGESTIONS = 1] = "EXPRESSION_SUGGESTIONS", m[m.AUTOCOMPLETE = 2] = "AUTOCOMPLETE"
         },
         24373: function(e, t, n) {
@@ -3500,8 +3500,8 @@
                 MEDIA_PROXY_ENDPOINT: E,
                 PROJECT_ENV: _,
                 ASSET_ENDPOINT: m,
-                CDN_HOST: p
-            } = window.GLOBAL_ENV, g = Object.values(d.StickerExtensions), T = decodeURIComponent(f.Endpoints.STICKER_ASSET("[\\d]+", "(".concat(g.join("|"), ")"))), I = RegExp("(".concat(location.protocol).concat(m, "|").concat(location.protocol).concat(E, ")(").concat(T, ")"), "ig"), S = RegExp("".concat(location.protocol).concat(h, "(").concat(T, ")"), "ig"), A = e => {
+                CDN_HOST: g
+            } = window.GLOBAL_ENV, p = Object.values(d.StickerExtensions), T = decodeURIComponent(f.Endpoints.STICKER_ASSET("[\\d]+", "(".concat(p.join("|"), ")"))), I = RegExp("(".concat(location.protocol).concat(m, "|").concat(location.protocol).concat(E, ")(").concat(T, ")"), "ig"), S = RegExp("".concat(location.protocol).concat(h, "(").concat(T, ")"), "ig"), A = e => {
                 if (null != e.cover_sticker_id) {
                     let t = e.stickers.find(t => t.id === e.cover_sticker_id);
                     if (null != t) return t
@@ -3553,7 +3553,7 @@
                 let r = e.banner_asset_id;
                 if (null == r) return null;
                 let i = s.SUPPORTS_WEBP ? "webp" : "png";
-                return n = null != p ? "".concat(location.protocol, "//").concat(p, "/app-assets/").concat(c.STICKER_APPLICATION_ID, "/store/").concat(r, ".").concat(i) : "".concat(location.protocol).concat(h).concat(f.Endpoints.STORE_ASSET(c.STICKER_APPLICATION_ID, r, i)), null != t && (n += "?size=".concat((0, l.getBestMediaProxySize)(t))), n
+                return n = null != g ? "".concat(location.protocol, "//").concat(g, "/app-assets/").concat(c.STICKER_APPLICATION_ID, "/store/").concat(r, ".").concat(i) : "".concat(location.protocol).concat(h).concat(f.Endpoints.STORE_ASSET(c.STICKER_APPLICATION_ID, r, i)), null != t && (n += "?size=".concat((0, l.getBestMediaProxySize)(t))), n
             }, O = e => e.match("development" !== _ ? I : S), y = e => e.stickers.some(e => {
                 let {
                     format_type: t
@@ -4002,7 +4002,7 @@
                 return null == t && (t = _[e] = {}), t
             }
 
-            function p(e) {
+            function g(e) {
                 var t, n;
                 let {
                     type: r,
@@ -4021,11 +4021,11 @@
                         timestamp: Date.now(),
                         draft: i
                     }
-                } else g(l, a);
+                } else p(l, a);
                 return "DRAFT_SAVE" === r
             }
 
-            function g(e, t) {
+            function p(e, t) {
                 let n = arguments.length > 2 && void 0 !== arguments[2] ? arguments[2] : d.default.getId();
                 if (null == n) return !1;
                 let r = m(n),
@@ -4057,7 +4057,7 @@
                         for (let [e, t] of Object.entries(_))
                             for (let [n, r] of Object.entries(t)) {
                                 let t = r[l.ChannelMessage];
-                                null != t && ("" === t.draft || "" === t.draft.trim()) && g(n, l.ChannelMessage, e)
+                                null != t && ("" === t.draft || "" === t.draft.trim()) && p(n, l.ChannelMessage, e)
                             }
                     }(), this.waitFor(d.default, c.default, f.default)
                 }
@@ -4165,17 +4165,17 @@
                                 timestamp: Date.now(),
                                 draft: n
                             }
-                        }), g(t.parent_id, l.ThreadSettings), g(t.parent_id, l.FirstThreadMessage)
+                        }), p(t.parent_id, l.ThreadSettings), p(t.parent_id, l.FirstThreadMessage)
                     }
                 },
-                DRAFT_SAVE: p,
-                DRAFT_CHANGE: p,
+                DRAFT_SAVE: g,
+                DRAFT_CHANGE: g,
                 DRAFT_CLEAR: function(e) {
                     let {
                         channelId: t,
                         draftType: n
                     } = e;
-                    return g(t, n)
+                    return p(t, n)
                 },
                 THREAD_SETTINGS_DRAFT_CHANGE: function(e) {
                     let {
@@ -4198,7 +4198,7 @@
             "use strict";
             n.r(t), n.d(t, {
                 default: function() {
-                    return p
+                    return g
                 }
             });
             var r, l = n("446674"),
@@ -4252,7 +4252,7 @@
                 }
             }
             m.displayName = "MaskedLinkStore";
-            var p = new m(a.default, {
+            var g = new m(a.default, {
                 MASKED_LINK_ADD_TRUSTED_DOMAIN: function(e) {
                     let {
                         url: t
@@ -4318,8 +4318,8 @@
             var E = n("432173"),
                 _ = n("915639"),
                 m = n("568734"),
-                p = n("271938"),
-                g = n("42203"),
+                g = n("271938"),
+                p = n("42203"),
                 T = n("162805"),
                 I = n("923959"),
                 S = n("26989"),
@@ -4355,7 +4355,7 @@
                     let {
                         channelId: t
                     } = e;
-                    null == g.default.getChannel(t) && s.default.clear(t)
+                    null == p.default.getChannel(t) && s.default.clear(t)
                 })
             }
 
@@ -4377,7 +4377,7 @@
                     burst: a
                 } = e, u = s.default.get(n);
                 if (null == u || !(0, E.shouldApplyReaction)(e)) return !1;
-                let o = p.default.getId() === l;
+                let o = g.default.getId() === l;
                 u = u.update(r, n => {
                     if ("MESSAGE_REACTION_ADD" !== t) return n.removeReaction(i, o, a);
                     {
@@ -4404,11 +4404,11 @@
             }
             class k extends i.default.Store {
                 initialize() {
-                    this.waitFor(R.default, g.default, T.default, S.default, _.default, M.default, N.default, A.default, v.default, I.default), this.syncWith([c.default], () => {})
+                    this.waitFor(R.default, p.default, T.default, S.default, _.default, M.default, N.default, A.default, v.default, I.default), this.syncWith([c.default], () => {})
                 }
                 getMessages(e) {
                     if (c.default.hasViewingRoles()) {
-                        let t = g.default.getChannel(e),
+                        let t = p.default.getChannel(e),
                             n = null == t ? void 0 : t.getGuildId();
                         if (c.default.isViewingRoles(n) && !C.default.can(O.Permissions.VIEW_CHANNEL, t)) return new s.default(e)
                     }
@@ -4437,10 +4437,12 @@
                     let t = s.default.get(e);
                     return null != t && t.ready && t.hasPresent()
                 }
+                isReady(e) {
+                    return s.default.getOrCreate(e).ready
+                }
                 whenReady(e, t) {
                     this.addConditionalChangeListener(() => {
-                        let n = s.default.getOrCreate(e);
-                        if (n.ready) return setImmediate(t), !1
+                        if (this.isReady(e)) return setImmediate(t), !1
                     })
                 }
                 isLoadingMessages(e) {
@@ -4798,16 +4800,16 @@
 
             function m(e, t) {
                 var n, r;
-                return null !== (r = null === (n = p(e)) || void 0 === n ? void 0 : n.get(t)) && void 0 !== r ? r : _
+                return null !== (r = null === (n = g(e)) || void 0 === n ? void 0 : n.get(t)) && void 0 !== r ? r : _
             }
 
-            function p(e) {
+            function g(e) {
                 var t;
                 return null !== (t = E.get(e)) && void 0 !== t ? t : new Map
             }
 
-            function g(e, t, n) {
-                let r = p(e);
+            function p(e, t, n) {
+                let r = g(e);
                 r.set(t, n), E.set(e, r)
             }
             class T extends i.default.Store {
@@ -4839,7 +4841,7 @@
                     let {
                         channelId: t
                     } = e, n = [...m(t, c.DraftType.ChannelMessage)];
-                    n.shift(), g(t, c.DraftType.ChannelMessage, n)
+                    n.shift(), p(t, c.DraftType.ChannelMessage, n)
                 },
                 UPLOAD_ATTACHMENT_ADD_FILES: e => {
                     var t;
@@ -4865,7 +4867,7 @@
                     l.forEach(n, e => {
                         let t = new o.CloudUpload(e, r, i, d.length);
                         t.upload(), d.push(t)
-                    }), g(r, a, d)
+                    }), p(r, a, d)
                 },
                 UPLOAD_ATTACHMENT_UPDATE_FILE: function(e) {
                     let {
@@ -4877,7 +4879,7 @@
                         thumbnail: a,
                         draftType: s
                     } = e, u = [...m(t, s)], o = u.map(e => (e.id === n && (void 0 !== r && (e.filename = r), void 0 !== i && (e.spoiler = i), void 0 !== l && (e.description = l), void 0 !== a && (e.isThumbnail = a)), e));
-                    g(t, s, o)
+                    p(t, s, o)
                 },
                 UPLOAD_ATTACHMENT_REMOVE_FILE: function(e) {
                     var t;
@@ -4897,7 +4899,7 @@
                             filename: l
                         }, e)) : s.findIndex(e => l === e.id)) > -1) {
                         let e = s.splice(n, 1)[0];
-                        e.cancel(), g(r, i, s)
+                        e.cancel(), p(r, i, s)
                     }
                 },
                 UPLOAD_ATTACHMENT_REMOVE_FILES: function(e) {
@@ -4912,14 +4914,14 @@
                             let e = l.splice(t, 1)[0];
                             e.cancel()
                         }
-                    }), g(t, r, l)
+                    }), p(t, r, l)
                 },
                 UPLOAD_ATTACHMENT_CLEAR_ALL_FILES: function(e) {
                     let {
                         channelId: t,
                         draftType: n
                     } = e;
-                    g(t, n, [])
+                    p(t, n, [])
                 },
                 UPLOAD_ATTACHMENT_SET_UPLOADS: function(e) {
                     let {
@@ -4927,7 +4929,7 @@
                         uploads: n,
                         draftType: r
                     } = e;
-                    g(t, r, n)
+                    p(t, r, n)
                 },
                 UPLOAD_ATTACHMENT_SET_FILE: function(e) {
                     let {
@@ -4936,13 +4938,13 @@
                         file: r,
                         draftType: l
                     } = e, i = [...m(t, l)], a = i.filter(e => e.id !== n), s = new o.CloudUpload(r, t);
-                    s.upload(), a.push(s), g(t, l, a)
+                    s.upload(), a.push(s), p(t, l, a)
                 },
                 SIDEBAR_CLOSE: function(e) {
                     let {
                         baseChannelId: t
                     } = e;
-                    g(t, c.DraftType.FirstThreadMessage, [])
+                    p(t, c.DraftType.FirstThreadMessage, [])
                 }
             })
         },
@@ -5009,7 +5011,7 @@
                 _ = /^https?:\/\/(?:canary\.|ptb\.|www\.)?discord(?:app)?\.com\/channels\/([0-9]+)\/shop\/([0-9]+)$/,
                 m = new Set([o.MessageEmbedTypes.AUTO_MODERATION_MESSAGE, o.MessageEmbedTypes.AUTO_MODERATION_NOTIFICATION, o.MessageEmbedTypes.RICH, o.MessageEmbedTypes.SAFETY_POLICY_NOTICE]);
 
-            function p(e) {
+            function g(e) {
                 let {
                     width: t,
                     height: n
@@ -5017,7 +5019,7 @@
                 return t > 0 && n > 0
             }
 
-            function g(e) {
+            function p(e) {
                 let {
                     url: t,
                     proxy_url: n,
@@ -5055,23 +5057,23 @@
                     }), null != n.provider && null != n.provider.name && (r.provider = {
                         name: n.provider.name,
                         url: n.provider.url
-                    }), null != n.timestamp && (r.timestamp = a(new Date(n.timestamp))), null != n.color && (r.color = (0, s.int2hsl)(n.color, !0)), null != n.thumbnail && p(n.thumbnail)) switch (r.type) {
+                    }), null != n.timestamp && (r.timestamp = a(new Date(n.timestamp))), null != n.color && (r.color = (0, s.int2hsl)(n.color, !0)), null != n.thumbnail && g(n.thumbnail)) switch (r.type) {
                     case o.MessageEmbedTypes.ARTICLE:
                     case o.MessageEmbedTypes.IMAGE:
-                        r.image = g(n.thumbnail);
+                        r.image = p(n.thumbnail);
                         break;
                     default:
-                        r.thumbnail = g(n.thumbnail)
+                        r.thumbnail = p(n.thumbnail)
                 }
-                if (null != n.image && p(n.image) && (r.image = g(n.image)), null != n.video && (null == r.thumbnail && null != n.video.proxy_url && p(n.video) && (r.thumbnail = {
+                if (null != n.image && g(n.image) && (r.image = p(n.image)), null != n.video && (null == r.thumbnail && null != n.video.proxy_url && g(n.video) && (r.thumbnail = {
                         width: n.video.width,
                         height: n.video.height,
                         url: "".concat(n.video.proxy_url, "?format=jpeg")
-                    }), null != r.thumbnail && p(n.video) && function(e, t, n) {
+                    }), null != r.thumbnail && g(n.video) && function(e, t, n) {
                         if (null != t && c.test(t.name) || f.test(n.url)) return !1;
                         let r = null != n.proxy_url || /^https:/i.test(n.url);
                         return 1492472454139 > u.default.extractTimestamp(e) && (r = r && null != t && h.test(t.name)), r
-                    }(t, n.provider, n.video) && (r.video = g(n.video))), m.has(r.type)) {
+                    }(t, n.provider, n.video) && (r.video = p(n.video))), m.has(r.type)) {
                     var i;
                     let e = null !== (i = n.fields) && void 0 !== i ? i : [];
                     r.fields = e.map(e => {
@@ -5183,7 +5185,7 @@
                     return z
                 },
                 useGetGiftCode: function() {
-                    return W
+                    return q
                 }
             });
             var r = n("446674"),
@@ -5200,10 +5202,10 @@
                 E = n("271560"),
                 _ = n("49111"),
                 m = n("646718"),
-                p = n("782340");
-            let g = h.default.escape(window.GLOBAL_ENV.GIFT_CODE_HOST),
+                g = n("782340");
+            let p = h.default.escape(window.GLOBAL_ENV.GIFT_CODE_HOST),
                 T = ["discordapp.com/gifts", "discord.com/gifts"].map(e => h.default.escape(e)),
-                I = [g, ...T].join("|"),
+                I = [p, ...T].join("|"),
                 S = RegExp("(?: |^|https?://)(?:".concat(I, ")/([a-z0-9-]+)"), "gi"),
                 A = ["discord.com/billing/promotions", "promos.discord.gg"].map(e => h.default.escape(e)),
                 C = [...A].join("|"),
@@ -5299,34 +5301,34 @@
             function H(e, t, n) {
                 switch (e) {
                     case _.GiftCodeModalStates.ERROR:
-                        return p.default.Messages.GIFT_CONFIRMATION_HEADER_FAIL;
+                        return g.default.Messages.GIFT_CONFIRMATION_HEADER_FAIL;
                     case _.GiftCodeModalStates.SUCCESS:
-                        return t.isSubscription ? p.default.Messages.GIFT_CONFIRMATION_HEADER_SUCCESS_NITRO.format({
+                        return t.isSubscription ? g.default.Messages.GIFT_CONFIRMATION_HEADER_SUCCESS_NITRO.format({
                             skuName: n.name
-                        }) : p.default.Messages.GIFT_CONFIRMATION_HEADER_SUCCESS;
+                        }) : g.default.Messages.GIFT_CONFIRMATION_HEADER_SUCCESS;
                     case _.GiftCodeModalStates.CONFIRM:
                     default:
-                        return t.isSubscription ? p.default.Messages.GIFT_CONFIRMATION_HEADER_CONFIRM_NITRO.format({
+                        return t.isSubscription ? g.default.Messages.GIFT_CONFIRMATION_HEADER_CONFIRM_NITRO.format({
                             skuName: n.name
-                        }) : p.default.Messages.GIFT_CONFIRMATION_HEADER_CONFIRM
+                        }) : g.default.Messages.GIFT_CONFIRMATION_HEADER_CONFIRM
                 }
             }
 
             function V(e, t, n) {
                 switch (e) {
                     case _.GiftCodeModalStates.ERROR:
-                        return p.default.Messages.GIFT_CONFIRMATION_BUTTON_FAIL;
+                        return g.default.Messages.GIFT_CONFIRMATION_BUTTON_FAIL;
                     case _.GiftCodeModalStates.SUCCESS:
-                        if (__OVERLAY__) return p.default.Messages.GIFT_CONFIRMATION_BUTTON_NOICE;
-                        if (t.isSubscription) return p.default.Messages.GIFT_CONFIRMATION_BUTTON_SUBSCRIPTION_SUCCESS;
-                        return p.default.Messages.GIFT_CONFIRMATION_BUTTON_GO_TO_LIBRARY;
+                        if (__OVERLAY__) return g.default.Messages.GIFT_CONFIRMATION_BUTTON_NOICE;
+                        if (t.isSubscription) return g.default.Messages.GIFT_CONFIRMATION_BUTTON_SUBSCRIPTION_SUCCESS;
+                        return g.default.Messages.GIFT_CONFIRMATION_BUTTON_GO_TO_LIBRARY;
                     case _.GiftCodeModalStates.OPEN:
-                        return p.default.Messages.GIFT_OPEN_PROMPT;
+                        return g.default.Messages.GIFT_OPEN_PROMPT;
                     case _.GiftCodeModalStates.CONFIRM:
                     default:
-                        if (null != n && n) return p.default.Messages.GIFT_CODE_AUTH_ACCEPT;
-                        if (null != t.giftStyle) return t.isClaimed ? p.default.Messages.GIFT_CONFIRMATION_BUTTON_CONFIRM : p.default.Messages.GIFT_CONFIRMATION_BUTTON_CONFIRM_MOBILE;
-                        return t.isSubscription ? p.default.Messages.GIFT_CONFIRMATION_BUTTON_CONFIRM_SUBSCRIPTION : p.default.Messages.GIFT_CONFIRMATION_BUTTON_CONFIRM
+                        if (null != n && n) return g.default.Messages.GIFT_CODE_AUTH_ACCEPT;
+                        if (null != t.giftStyle) return t.isClaimed ? g.default.Messages.GIFT_CONFIRMATION_BUTTON_CONFIRM : g.default.Messages.GIFT_CONFIRMATION_BUTTON_CONFIRM_MOBILE;
+                        return t.isSubscription ? g.default.Messages.GIFT_CONFIRMATION_BUTTON_CONFIRM_SUBSCRIPTION : g.default.Messages.GIFT_CONFIRMATION_BUTTON_CONFIRM
                 }
             }
 
@@ -5348,70 +5350,70 @@
                         if (null != u) {
                             if (null != u.premiumSubscriptionType) {
                                 if (u.premiumSubscriptionType === m.PremiumTypes.TIER_2) {
-                                    let e = u.interval === m.SubscriptionIntervalTypes.MONTH ? p.default.Messages.GIFT_CONFIRMATION_BODY_SUCCESS_PREMIUM_TIER_2_MONTHLY : p.default.Messages.GIFT_CONFIRMATION_BODY_SUCCESS_PREMIUM_TIER_2_YEARLY;
+                                    let e = u.interval === m.SubscriptionIntervalTypes.MONTH ? g.default.Messages.GIFT_CONFIRMATION_BODY_SUCCESS_PREMIUM_TIER_2_MONTHLY : g.default.Messages.GIFT_CONFIRMATION_BODY_SUCCESS_PREMIUM_TIER_2_YEARLY;
                                     return e.format({
                                         intervalCount: u.intervalCount
                                     })
                                 }
-                                let e = u.interval === m.SubscriptionIntervalTypes.MONTH ? p.default.Messages.GIFT_CONFIRMATION_BODY_SUCCESS_PREMIUM_TIER_1_MONTHLY : p.default.Messages.GIFT_CONFIRMATION_BODY_SUCCESS_PREMIUM_TIER_1_YEARLY;
+                                let e = u.interval === m.SubscriptionIntervalTypes.MONTH ? g.default.Messages.GIFT_CONFIRMATION_BODY_SUCCESS_PREMIUM_TIER_1_MONTHLY : g.default.Messages.GIFT_CONFIRMATION_BODY_SUCCESS_PREMIUM_TIER_1_YEARLY;
                                 return e.format({
                                     intervalCount: u.intervalCount
                                 })
                             }
-                            let e = u.interval === m.SubscriptionIntervalTypes.MONTH ? p.default.Messages.GIFT_CONFIRMATION_BODY_SUCCESS_GENERIC_SUBSCRIPTION_MONTHLY : p.default.Messages.GIFT_CONFIRMATION_BODY_SUCCESS_GENERIC_SUBSCRIPTION_YEARLY;
+                            let e = u.interval === m.SubscriptionIntervalTypes.MONTH ? g.default.Messages.GIFT_CONFIRMATION_BODY_SUCCESS_GENERIC_SUBSCRIPTION_MONTHLY : g.default.Messages.GIFT_CONFIRMATION_BODY_SUCCESS_GENERIC_SUBSCRIPTION_YEARLY;
                             return e.format({
                                 skuName: n.name,
                                 intervalCount: u.intervalCount
                             })
                         }
-                        return p.default.Messages.GIFT_CONFIRMATION_BODY_SUCCESS.format({
+                        return g.default.Messages.GIFT_CONFIRMATION_BODY_SUCCESS.format({
                             skuName: n.name
                         });
                     case _.GiftCodeModalStates.CONFIRM:
                     default:
                         if (null != u) {
-                            let e = u.interval === m.SubscriptionIntervalTypes.MONTH ? p.default.Messages.GIFT_CONFIRMATION_BODY_SUBSCRIPTION_MONTHLY_CONFIRM : p.default.Messages.GIFT_CONFIRMATION_BODY_SUBSCRIPTION_YEARLY_CONFIRM;
+                            let e = u.interval === m.SubscriptionIntervalTypes.MONTH ? g.default.Messages.GIFT_CONFIRMATION_BODY_SUBSCRIPTION_MONTHLY_CONFIRM : g.default.Messages.GIFT_CONFIRMATION_BODY_SUBSCRIPTION_YEARLY_CONFIRM;
                             return e.format({
                                 skuName: n.name,
                                 intervalCount: u.intervalCount
                             })
                         }
-                        return p.default.Messages.GIFT_CONFIRMATION_BODY_CONFIRM.format({
+                        return g.default.Messages.GIFT_CONFIRMATION_BODY_CONFIRM.format({
                             skuName: n.name
                         })
                 }
             }
 
             function Y(e, t, n, r, l) {
-                let i = p.default.Messages.GIFT_CONFIRMATION_BODY_OWNED.format({
+                let i = g.default.Messages.GIFT_CONFIRMATION_BODY_OWNED.format({
                     onGoToLibrary: l
                 });
                 if (null != (n || r ? void 0 : e)) return i;
                 if (null == t) return null;
                 switch (t.code) {
                     case _.AbortCodes.INVALID_GIFT_SELF_REDEMPTION:
-                        return p.default.Messages.GIFT_CONFIRMATION_BODY_SELF_GIFT_NO_PAYMENT;
+                        return g.default.Messages.GIFT_CONFIRMATION_BODY_SELF_GIFT_NO_PAYMENT;
                     case _.AbortCodes.INVALID_GIFT_REDEMPTION_EXHAUSTED:
-                        return p.default.Messages.GIFT_CONFIRMATION_BODY_CLAIMED;
+                        return g.default.Messages.GIFT_CONFIRMATION_BODY_CLAIMED;
                     case _.AbortCodes.INVALID_GIFT_REDEMPTION_OWNED:
                         return i;
                     case _.AbortCodes.UNKNOWN_GIFT_CODE:
-                        return p.default.Messages.GIFT_CONFIRMATION_BODY_INVALID;
+                        return g.default.Messages.GIFT_CONFIRMATION_BODY_INVALID;
                     case _.AbortCodes.INVALID_GIFT_REDEMPTION_SUBSCRIPTION_INCOMPATIBLE:
                         let a = u.default.getCurrentUser();
-                        return p.default.Messages.GIFT_EMBED_BODY_SUBSCRIPTION_MISMATCH.format({
-                            planName: (0, f.isPremiumExactly)(a, m.PremiumTypes.TIER_2) ? p.default.Messages.PREMIUM_TIER_2 : p.default.Messages.PREMIUM_TIER_1
+                        return g.default.Messages.GIFT_EMBED_BODY_SUBSCRIPTION_MISMATCH.format({
+                            planName: (0, f.isPremiumExactly)(a, m.PremiumTypes.TIER_2) ? g.default.Messages.PREMIUM_TIER_2 : g.default.Messages.PREMIUM_TIER_1
                         });
                     case _.AbortCodes.INVALID_GIFT_REDEMPTION_SUBSCRIPTION_MANAGED:
-                        return p.default.Messages.GIFT_CONFIRMATION_BODY_ERROR_SUBSCRIPTION_MANAGED;
+                        return g.default.Messages.GIFT_CONFIRMATION_BODY_ERROR_SUBSCRIPTION_MANAGED;
                     case _.AbortCodes.INVALID_GIFT_REDEMPTION_INVOICE_OPEN:
-                        return p.default.Messages.GIFT_CONFIRMATION_BODY_ERROR_INVOICE_OPEN;
+                        return g.default.Messages.GIFT_CONFIRMATION_BODY_ERROR_INVOICE_OPEN;
                     case _.AbortCodes.INVALID_GIFT_REDEMPTION_FRAUD_REJECTED:
-                        return p.default.Messages.GIFT_CODE_SMITE_REJECT_HELP_TEXT;
+                        return g.default.Messages.GIFT_CODE_SMITE_REJECT_HELP_TEXT;
                     case _.AbortCodes.BILLING_NON_REFUNDABLE_PAYMENT_SOURCE:
-                        return p.default.Messages.GIFT_CODE_PAYMENT_SOURCE_INVALID;
+                        return g.default.Messages.GIFT_CODE_PAYMENT_SOURCE_INVALID;
                     default:
-                        return p.default.Messages.GIFT_CONFIRMATION_BODY_UNKNOWN_ERROR
+                        return g.default.Messages.GIFT_CONFIRMATION_BODY_UNKNOWN_ERROR
                 }
             }
 
@@ -5429,7 +5431,7 @@
                 let [r, l, i] = n;
                 return null == i ? null : i.replace(/-/g, "")
             }
-            let W = (e, t) => (0, r.useStateFromStores)([s.default], () => {
+            let q = (e, t) => (0, r.useStateFromStores)([s.default], () => {
                 if (null == e || !t) return null;
                 let n = s.default.getGiftCode(e);
                 return null == n || "" === n ? null : n
@@ -5459,8 +5461,8 @@
                 E = n("91984"),
                 _ = n("835174"),
                 m = n("566271"),
-                p = n("42203"),
-                g = n("305961"),
+                g = n("42203"),
+                p = n("305961"),
                 T = n("569983"),
                 I = n("48703"),
                 S = n("377253"),
@@ -5472,7 +5474,7 @@
 
             function R(e, t) {
                 var n;
-                let r = p.default.getChannel(C.default.getChannelId());
+                let r = g.default.getChannel(C.default.getChannelId());
                 return !!(null == r || r.type !== M.ChannelTypes.DM || A.default.isFriend(null !== (n = r.getRecipientId()) && void 0 !== n ? n : "")) && e === t
             }
             async function O(e, t) {
@@ -5504,17 +5506,17 @@
                     x = null;
                 if (null != b && null != P) {
                     let e = S.default.getMessage(P, b),
-                        t = p.default.getBasicChannel(P);
+                        t = g.default.getBasicChannel(P);
                     G = null !== (R = null == t ? void 0 : t.guild_id) && void 0 !== R ? R : null;
-                    let n = g.default.getGuild(G),
+                    let n = p.default.getGuild(G),
                         l = (null == e ? void 0 : null === (r = e.messageReference) || void 0 === r ? void 0 : r.guild_id) != null && (null == e ? void 0 : e.webhookId) != null && (null == e ? void 0 : e.hasFlag(M.MessageFlags.IS_CROSSPOST)) && null != G;
                     l && (null == e ? void 0 : null === (A = e.messageReference) || void 0 === A ? void 0 : A.guild_id) != null ? (k = e.messageReference.message_id, B = e.messageReference.channel_id, x = e.messageReference.guild_id) : x = G;
                     let i = (null == t ? void 0 : t.type) === M.ChannelTypes.GUILD_ANNOUNCEMENT && (null == n ? void 0 : n.hasFeature(M.GuildFeatures.COMMUNITY)) === !0,
                         a = (null == e ? void 0 : e.hasFlag(M.MessageFlags.EPHEMERAL)) === !0;
                     w = null != e && !a && (l || i)
                 }
-                let H = p.default.getChannel(C.default.getChannelId()),
-                    V = g.default.getGuild(null == H ? void 0 : H.getGuildId());
+                let H = g.default.getChannel(C.default.getChannelId()),
+                    V = p.default.getGuild(null == H ? void 0 : H.getGuildId());
                 if (null != H && null != V && V.hasFeature(M.GuildFeatures.DISCOVERABLE) && v.default.track(M.AnalyticEvents.URL_CLICKED, {
                         url_domain: (0, I.getHostname)(F),
                         guild_id: V.id,
@@ -5557,8 +5559,8 @@
                 }
                 let K = "function" == typeof y ? y() : y,
                     z = (0, I.getProtocol)(F),
-                    W = !("http:" === z || "https:" === z);
-                if (!W && (K || T.default.isTrustedDomain(F)) || W && T.default.isTrustedProtocol(F)) {
+                    q = !("http:" === z || "https:" === z);
+                if (!q && (K || T.default.isTrustedDomain(F)) || q && T.default.isTrustedProtocol(F)) {
                     null == t || null != U && U ? j() : w && f.default.trackAnnouncementMessageLinkClicked({
                         messageId: k,
                         channelId: P,
@@ -5568,7 +5570,7 @@
                     });
                     return
                 }
-                if (null != t && t.preventDefault(), W) E.default.show({
+                if (null != t && t.preventDefault(), q) E.default.show({
                     url: F,
                     trustUrl: a.trustProtocol,
                     onConfirm: j,
@@ -5598,10 +5600,11 @@
                 i = n("605250");
             let a = new i.default("Queue");
             class s {
-                enqueue(e, t) {
+                enqueue(e, t, n) {
                     this.queue.push({
                         message: e,
-                        success: t
+                        success: t,
+                        logId: n
                     }), this._drainIfNecessary()
                 }
                 get length() {
@@ -5613,20 +5616,21 @@
                     let e = this.queue.shift(),
                         {
                             message: t,
-                            success: n
+                            success: n,
+                            logId: r
                         } = e;
-                    this.drain(t, (t, r) => {
-                        if (this.draining = !1, null == t) {
+                    this.logger.log("Draining message from queue LogId:".concat(r, " QueueLength: ").concat(this.queue.length)), this.drain(t, (t, l) => {
+                        if (this.logger.log("Finished draining message from queue LogId:".concat(r, " QueueLength: ").concat(this.queue.length)), this.draining = !1, null == t) {
                             setImmediate(() => this._drainIfNecessary());
                             try {
-                                n(r)
+                                n(l)
                             } catch (e) {
                                 this.logger.error("", e)
                             }
                         } else {
-                            var l;
-                            let n = null !== (l = t.retryAfter) && void 0 !== l ? l : this.defaultRetryAfter;
-                            this.logger.info("Rate limited. Delaying draining of queue for ".concat(n, " ms.")), this.timeout = setTimeout(() => {
+                            var i;
+                            let n = null !== (i = t.retryAfter) && void 0 !== i ? i : this.defaultRetryAfter;
+                            this.logger.info("Rate limited. Delaying draining of queue for ".concat(n, " ms. LogId:").concat(r, " QueueLength: ").concat(this.queue.length)), this.timeout = setTimeout(() => {
                                 this.queue.unshift(e), this.timeout = null, this._drainIfNecessary()
                             }, n)
                         }
@@ -5703,8 +5707,8 @@
                 E = n("357957"),
                 _ = n("521012"),
                 m = n("560528"),
-                p = n("568734"),
-                g = n("449008"),
+                g = n("568734"),
+                p = n("449008"),
                 T = n("773336"),
                 I = n("49111"),
                 S = n("782340");
@@ -5848,7 +5852,7 @@
                                     user: n,
                                     startTime: l[n.id].startedPlaying
                                 }
-                            }).filter(g.isNotNullish).sort((e, t) => t.startTime - e.startTime);
+                            }).filter(p.isNotNullish).sort((e, t) => t.startTime - e.startTime);
                         return 0 === a.length ? null : {
                             type: I.StoreRecommendationTypes.NOW_PLAYING,
                             userInfo: a
@@ -5873,7 +5877,7 @@
                                     user: n,
                                     endTime: Date.parse(e.last_played_at)
                                 }
-                            }).filter(g.isNotNullish).sort((e, t) => t.endTime - e.endTime);
+                            }).filter(p.isNotNullish).sort((e, t) => t.endTime - e.endTime);
                             return 0 === l.length ? null : {
                                 type: I.StoreRecommendationTypes.EVER_PLAYED,
                                 userInfo: l
@@ -5891,7 +5895,7 @@
                     l = n.getForSKU(e);
                 if (null == r || null == l) return U;
                 let i = [];
-                (0, p.hasFlag)(r.flags, I.SKUFlags.HAS_FREE_PREMIUM_CONTENT) && i.push({
+                (0, g.hasFlag)(r.flags, I.SKUFlags.HAS_FREE_PREMIUM_CONTENT) && i.push({
                     type: I.StoreRecommendationTypes.HAS_FREE_PREMIUM_CONTENT
                 });
                 let s = r.releaseDate;
@@ -5944,4 +5948,4 @@
         }
     }
 ]);
-//# sourceMappingURL=248a53552879817ef6b0.js.map
+//# sourceMappingURL=ad6f5f5d139296a7f4d8.js.map

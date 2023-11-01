@@ -19267,6 +19267,7 @@
             "use strict";
             e.exports = {
                 buttonWide: "buttonWide__483cd",
+                header: "header__78150",
                 innerButton: "innerButton__7d545",
                 nitroIconSubHeader: "nitroIconSubHeader__04f30",
                 termsApplyAnchor: "termsApplyAnchor_fcdbe9",
