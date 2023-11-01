@@ -21,6 +21,7 @@ import { join } from "node:path";
 import type { Module } from "../../index.ts";
 import { writeFile, rm, pushToGit } from "../../../utils.ts";
 import type { Channel } from "../Channel.ts";
+import { send } from "./senders/index.ts";
 import { markdownTable } from "markdown-table";
 
 interface ModuleContent {
@@ -104,7 +105,7 @@ export class HostBuild implements Module {
               url: moduleData.full.url,
             })
           ),
-          host_version: manifest.full.host_version.join("."),
+          host_version: await this.hostVersion(),
         },
         null,
         2
@@ -142,7 +143,7 @@ export class HostBuild implements Module {
       `📥 ${this.#channel.name} Host Build ${manifest.full.host_version.join(
         "."
       )}`,
-      [`Host Version: ${manifest.full.host_version.join(".")}`].join("\n"),
+      [`Host Version: ${await this.hostVersion()}`].join("\n"),
       `Modules (${manifest.modules.length}):\n${Object.entries(manifest.modules)
         .map(
           ([moduleName, moduleVersion]) =>
@@ -153,7 +154,14 @@ export class HostBuild implements Module {
 
     if (!result?.update?.hash) return;
 
-    // TODO: sender
+    await send(result, this.#channel, this, new Date());
+  }
+
+  async hostVersion(): Promise<string> {
+    return (
+      ((await this.manifest()) || {})?.full?.host_version?.join?.(".") ??
+      "Unknown"
+    );
   }
 
   async manifest(): Promise<ManifestContent | null> {
