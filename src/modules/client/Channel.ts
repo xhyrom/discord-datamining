@@ -18,7 +18,7 @@
 
 import { join } from "node:path";
 import type { Module } from "..";
-import { octokit, pushToGit, readFile, writeFile } from "../../utils.ts";
+import { octokit, readFile, writeFile } from "../../utils.ts";
 import { WebBuild } from "./web_build/index.ts";
 import { HostBuild } from "./host_build/index.ts";
 import { Client } from "./index.ts";
