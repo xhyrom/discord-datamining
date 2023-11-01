@@ -3994,7 +3994,7 @@
                 f = n("341542"),
                 h = n("49111");
             let E = h.MAX_MESSAGE_LENGTH_PREMIUM + 500;
-            (r = l || (l = {}))[r.ChannelMessage = 0] = "ChannelMessage", r[r.ThreadSettings = 1] = "ThreadSettings", r[r.FirstThreadMessage = 2] = "FirstThreadMessage", r[r.ApplicationLauncherCommand = 3] = "ApplicationLauncherCommand";
+            (r = l || (l = {}))[r.ChannelMessage = 0] = "ChannelMessage", r[r.ThreadSettings = 1] = "ThreadSettings", r[r.FirstThreadMessage = 2] = "FirstThreadMessage", r[r.ApplicationLauncherCommand = 3] = "ApplicationLauncherCommand", r[r.Poll = 4] = "Poll";
             let _ = {};
 
             function m(e) {
@@ -5944,4 +5944,4 @@
         }
     }
 ]);
-//# sourceMappingURL=d88cebc08b6be28647d7.js.map
+//# sourceMappingURL=248a53552879817ef6b0.js.map
