@@ -116,6 +116,10 @@ export class HyrosCoffeeSender implements Sender {
 
     if (script.name === scriptFiles.strings?.name) suffix = "strings";
 
+    if (script.name === scriptFiles.shared?.name) suffix = "shared";
+
+    if (script.name === scriptFiles.routes?.name) suffix = "routes";
+
     return `${script.path}${suffix ? ` (${suffix})` : ""}`;
   }
 }
