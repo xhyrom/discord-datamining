@@ -25687,7 +25687,7 @@ html .progress__4ef76 {
     text-align: center;
     border-radius: 3px;
     font-weight: 500;
-    font-size: .875rem;
+    font-size: 14px;
     padding: 12px 0;
     margin-top: 16px;
     color: var(--white-500);
@@ -48699,12 +48699,12 @@ html .progress__4ef76 {
 .streamerModeEnabledBtn__51c2f {
     margin-top: 20px;
     font-weight: 700;
-    font-size: 1.125rem;
+    font-size: 18px;
     color: var(--white-500);
     background-color: var(--twitch);
     padding: 10px 20px;
     border-radius: 3px;
-    line-height: 1.8125rem;
+    line-height: 29px;
     text-transform: uppercase;
     cursor: pointer
 }
@@ -85188,8 +85188,8 @@ input::-webkit-inner-spin-button {
 
 .bodyText__923f7 {
     color: var(--interactive-normal);
-    font-size: 1rem;
-    line-height: 1.25rem;
+    font-size: 16px;
+    line-height: 20px;
     font-weight: 500;
     margin-bottom: 16px
 }
@@ -85236,8 +85236,8 @@ input::-webkit-inner-spin-button {
 }
 
 .trialCheckboxLabel__0297c {
-    font-size: .875rem;
-    line-height: 1.125rem
+    font-size: 14px;
+    line-height: 18px
 }
 
 .loader_acb69b {
@@ -123431,4 +123431,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=app.ab183db79ea691a9f93b.css.map*/
+/*# sourceMappingURL=app.4dc2c4945aa713d4d316.css.map*/
