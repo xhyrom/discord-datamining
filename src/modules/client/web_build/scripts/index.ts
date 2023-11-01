@@ -143,6 +143,7 @@ export class Scripts implements Module {
     let sharedScript;
     let vendorScript;
     let routesScript;
+    let chunkLoaderScript;
     for (const script of scripts) {
       const content = await script.content();
 
@@ -178,6 +179,11 @@ export class Scripts implements Module {
         routesScript = script;
         continue;
       }
+
+      if (content.match(/\s+(\d*):\s*"[\d\w]*.js",/g)) {
+        chunkLoaderScript = script;
+        continue;
+      }
     }
 
     if (!mainScript) {
@@ -196,7 +202,7 @@ export class Scripts implements Module {
     this.#files = {
       scripts,
       classMappings: classMappingsScript ?? null, // contains css classes
-      chunkLoader: scripts?.[scripts.length - 1] ?? null,
+      chunkLoader: chunkLoaderScript ?? scripts?.[scripts.length - 1] ?? null,
       vendor: vendorScript ?? null,
       shared: sharedScript ?? null,
       routes: routesScript ?? null,
