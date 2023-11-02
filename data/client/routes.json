@@ -3287,7 +3287,10 @@
   },
   "SEND_UNAUTHENTICATED_REPORT_PINCODE": {
     "url": "/reporting/unauthenticated/:param/code",
-    "allowed_methods": null
+    "allowed_methods": [
+      "OPTIONS",
+      "POST"
+    ]
   },
   "VERIFY_UNAUTHENTICATED_REPORT": {
     "url": "/reporting/unauthenticated/:param/verify",
