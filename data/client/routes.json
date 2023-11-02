@@ -3291,7 +3291,10 @@
   },
   "VERIFY_UNAUTHENTICATED_REPORT": {
     "url": "/reporting/unauthenticated/:param/verify",
-    "allowed_methods": null
+    "allowed_methods": [
+      "OPTIONS",
+      "POST"
+    ]
   },
   "STAGE_INSTANCES": {
     "url": "/stage-instances",
