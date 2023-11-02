@@ -40,8 +40,7 @@
 <p><span style="font-weight: 400;">After adjusting the speed, you can preview the Text-to-Speech rate by clicking on the ‘Preview’ button.</span></p>
 <p><span style="font-weight: 400;">For more information about <a href="https://support.discord.com/hc/en-us/articles/212517297" target="_blank" rel="noopener noreferrer">Text to Speech, check out this article</a>. </span></p>
 <h1 id="h_01G142FBDW2SF1D36Q0TS3N4SQ">High-Contrast Settings</h1>
-<h3 id="h_01HE6D3J3HBA9E0MHQSBGQB0MV">This feature is rolling out slowly to all Discord users on a Windows device.</h3>
-<h3 id="h_01HE6D3J3HRVJSZR7AWGFJCHRK">Please note that this setting will only appear for Windows users. It will not show up for MacOS, iOS, and Android users.</h3>
+<h3 id="h_01HE6D3J3HBA9E0MHQSBGQB0MV">This feature is rolling out slowly to all Discord users on a Windows device.<br>Please note that this setting will only appear for Windows users. It will not show up for MacOS, iOS, and Android users.</h3>
 <p id="docs-internal-guid-50da16a3-7fff-cc3e-075c-86f00f56b2f0">If you’re on a Windows device, you can <strong>Sync contrast settings</strong> on your Discord client if you have Windows <strong>High Contrast Mode</strong> enabled on your device. Check out this <a href="https://support.microsoft.com/en-us/windows/turn-high-contrast-mode-on-or-off-in-windows-909e9d89-a0f9-a3a9-b993-7a6dcee85025#ID0EBD=Windows_11" target="_blank" rel="noopener noreferrer">article</a> to find steps on how to enable High Contrast mode on Windows.  </p>
 <h4 id="h_01HE6D5SH1C0FMAETPGSMDVE4A">With High Contrast Mode enabled on your Windows device, Discord will adopt its theme colors. You can choose to opt-out by turning off <strong>Sync contrast settings.</strong>
 </h4>
