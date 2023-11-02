@@ -6,16 +6,19 @@
     "description": [
       "Not Eligible",
       "Control Bucket",
-      "Treatment 1: enable"
+      "Treatment 1: enable add friend button",
+      "Treatment 2: enable both buttons"
     ],
     "hash": 4283940163,
     "buckets": [
       -1,
       0,
-      1
+      1,
+      2
     ],
     "config_keys": [
-      "moreAddFriend"
+      "moreAddFriend",
+      "messageButton"
     ]
   }
 }
