@@ -15918,6 +15918,7 @@
   "URF_LANDING_PAGE_SUBTITLE": "\"Use these forms to report illegal content under the Digital Services Act (DSA). For reports of copyright or trademark infringement please [go here]({supportURL}).\"",
   "URF_LANDING_PAGE_REPORT_USER_PROFILE_BUTTON": "\"Report a User Profile\"",
   "URF_LANDING_PAGE_REPORT_MESSAGE_BUTTON": "\"Report a Message\"",
+  "EMAIL_ENTER_MODAL_INPUT_ERROR": "\"Not a well formed email address.\"",
   "IN_APP_REPORTING_FREE_TEXT_INPUT_ERROR": "\"Invalid Input\"",
   "LEGACY_CHAT_INPUT_SLASH_COMMAND_MISSING_HELP_MESSAGE": "\"Why don't I see application commands?\"",
   "LEGACY_CHAT_INPUT_SLASH_COMMAND_EXPLANATION_MODAL_TITLE": "\"Upgrade your chat\"",
