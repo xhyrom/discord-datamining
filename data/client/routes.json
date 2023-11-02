@@ -895,7 +895,11 @@
   },
   "COLLECTIBLES_PRODUCTS": {
     "url": "/collectibles-products/:param",
-    "allowed_methods": null
+    "allowed_methods": [
+      "GET",
+      "HEAD",
+      "OPTIONS"
+    ]
   },
   "GUILD_MEMBER_BANNER": {
     "url": "/guilds/:param/users/:param/banners/:param.:param",
