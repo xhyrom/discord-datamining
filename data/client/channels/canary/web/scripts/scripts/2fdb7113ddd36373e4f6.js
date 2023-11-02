@@ -128,9 +128,9 @@
                 y = l("151185"),
                 x = l("483093"),
                 L = l("991170"),
-                P = l("487311"),
-                D = l("49111"),
-                b = l("782340"),
+                b = l("487311"),
+                P = l("49111"),
+                D = l("782340"),
                 U = l("618600");
             let j = () => Promise.resolve();
 
@@ -160,7 +160,7 @@
                         }), (0, n.jsx)("div", {
                             className: U.overflowRolesPopoutHeaderText,
                             id: s,
-                            children: b.default.Messages.ROLES_LIST.format({
+                            children: D.default.Messages.ROLES_LIST.format({
                                 numRoles: t.length
                             })
                         })]
@@ -189,7 +189,7 @@
                     roleId: h.id,
                     size: 16,
                     guildId: C
-                }), L = (0, f.useStateFromStores)([S.default], () => S.default.roleStyle), P = (null === (s = h.tags) || void 0 === s ? void 0 : s.guild_connections) === null, D = a.useCallback(e => {
+                }), L = (0, f.useStateFromStores)([S.default], () => S.default.roleStyle), b = (null === (s = h.tags) || void 0 === s ? void 0 : s.guild_connections) === null, P = a.useCallback(e => {
                     (0, T.openContextMenuLazy)(e, async () => {
                         let {
                             default: e
@@ -197,11 +197,11 @@
                         return t => (0, n.jsx)(e, {
                             ...t,
                             id: h.id,
-                            label: b.default.Messages.COPY_ID_ROLE
+                            label: D.default.Messages.COPY_ID_ROLE
                         })
                     })
                 }, [h.id]), j = (0, E.useToken)(m.default.unsafe_rawColors.PRIMARY_300).hsl(), F = null !== (o = h.colorString) && void 0 !== o ? o : j, G = null !== (r = (0, c.hex2rgb)(F, .6)) && void 0 !== r ? r : void 0, B = m.default.unsafe_rawColors.WHITE_500.css, Y = (0, c.hex2int)(F);
-                null != Y && .3 > (0, c.getDarkness)(Y) && (B = m.default.unsafe_rawColors.PRIMARY_630.css), u = P ? (0, n.jsx)(I.default, {
+                null != Y && .3 > (0, c.getDarkness)(Y) && (B = m.default.unsafe_rawColors.PRIMARY_630.css), u = b ? (0, n.jsx)(I.default, {
                     className: U.roleFlowerStar,
                     iconClassName: _ ? U.roleVerifiedIcon : void 0,
                     color: F,
@@ -226,7 +226,7 @@
                         ref: t,
                         className: i(U.role, p),
                         style: k,
-                        onContextMenu: D,
+                        onContextMenu: P,
                         onMouseDown: v,
                         "aria-label": h.name,
                         tabIndex: O,
@@ -239,7 +239,7 @@
                                 focusClassName: U.roleRemoveIconFocused
                             },
                             "aria-hidden": !_,
-                            "aria-label": b.default.Messages.GUILD_SETTINGS_MEMBERS_REMOVE_ROLE.format({
+                            "aria-label": D.default.Messages.GUILD_SETTINGS_MEMBERS_REMOVE_ROLE.format({
                                 roleName: h.name
                             }),
                             children: [u, _ ? (0, n.jsx)(M.default, {
@@ -305,7 +305,7 @@
                         let {
                             closePopout: l
                         } = e;
-                        return (0, n.jsx)(P.default, {
+                        return (0, n.jsx)(b.default, {
                             guild: t,
                             roleStyle: r,
                             roleFilter: m,
@@ -319,7 +319,7 @@
                         children: (0, n.jsx)("button", {
                             ...e,
                             className: i(U.addButton, s),
-                            "aria-label": b.default.Messages.GUILD_SETTINGS_MEMBERS_ADD_ROLE,
+                            "aria-label": D.default.Messages.GUILD_SETTINGS_MEMBERS_ADD_ROLE,
                             type: "button",
                             ...o,
                             children: (0, n.jsx)(y.default, {
@@ -376,11 +376,11 @@
                 }, [c, f, O]);
                 let R = N.default.getCurrentUser();
                 r(null != R, "MemberRolesList: currentUser cannot be undefined");
-                let y = !E && C.default.can(D.Permissions.MANAGE_ROLES, s),
+                let y = !E && C.default.can(P.Permissions.MANAGE_ROLES, s),
                     x = L.default.getHighestRole(s, R.id),
-                    P = a.useMemo(() => "roles-".concat((0, u.v4)()), []),
+                    b = a.useMemo(() => "roles-".concat((0, u.v4)()), []),
                     F = (0, d.default)({
-                        id: P,
+                        id: b,
                         isEnabled: !0,
                         scrollToStart: j,
                         scrollToEnd: j,
@@ -417,7 +417,7 @@
                             } = e;
                             return (0, n.jsxs)("div", {
                                 className: i(U.root, m),
-                                "aria-label": b.default.Messages.ROLES_LIST.format({
+                                "aria-label": D.default.Messages.ROLES_LIST.format({
                                     numRoles: o.length
                                 }),
                                 ref: l,
@@ -1297,9 +1297,9 @@
                             applicationStream: i,
                             className: c,
                             guildId: L,
-                            channelId: P,
-                            source: D,
-                            color: b = d.Button.Colors.WHITE,
+                            channelId: b,
+                            source: P,
+                            color: D = d.Button.Colors.WHITE,
                             look: U = d.Button.Looks.OUTLINED,
                             type: j,
                             onAction: F,
@@ -1318,32 +1318,32 @@
                         K = H || w ? T.default.Direction.HORIZONTAL : T.default.Direction.VERTICAL;
                     if ((0, S.default)(l)) t = [(0, n.jsx)(A.default, {
                         look: U,
-                        color: b,
+                        color: D,
                         platform: f.default.get(y.PlatformTypes.XBOX)
                     }, "ConnectPlatformActivityButton")];
                     else if ((null == l ? void 0 : l.platform) != null && [y.ActivityGamePlatforms.PS4, y.ActivityGamePlatforms.PS5].includes(l.platform)) t = [(0, n.jsx)(A.default, {
                         look: U,
-                        color: b,
+                        color: D,
                         platform: f.default.get(y.PlatformTypes.PLAYSTATION)
                     }, "ConnectPlatformActivityButton")];
                     else if (H) {
                         let e = (0, n.jsx)(O.default, {
                                 activity: l,
                                 user: a,
-                                color: b,
+                                color: D,
                                 look: U,
                                 guildId: L,
-                                channelId: P,
-                                source: D
+                                channelId: b,
+                                source: P
                             }, "spotify-activity-sync-button"),
                             s = (0, n.jsx)(v.default, {
                                 activity: l,
                                 user: a,
-                                color: b,
+                                color: D,
                                 look: U,
                                 guildId: L,
-                                channelId: P,
-                                source: D
+                                channelId: b,
+                                source: P
                             }, "spotify-activity-play-button");
                         t = [s, e]
                     } else if (V) {
@@ -1351,14 +1351,14 @@
                         null != e && (t = [(0, n.jsx)(C.default, {
                             guildId: e.guildId,
                             channelId: e.channelId,
-                            color: b,
+                            color: D,
                             look: U,
                             isProfile: k
                         }, e.channelId)])
                     } else if (w) {
                         let e = (0, n.jsx)(R.default, {
                             isCurrentUser: Y.id === a.id,
-                            color: b,
+                            color: D,
                             look: U,
                             applicationStream: i
                         }, "watch-button");
@@ -1366,7 +1366,7 @@
                     } else {
                         let e = (0, n.jsx)(M.default, {
                                 activity: l,
-                                color: b,
+                                color: D,
                                 look: U
                             }, "watch-button"),
                             s = (0, n.jsx)(g.default, {
@@ -1374,20 +1374,20 @@
                                 currentEmbeddedApplication: B,
                                 user: a,
                                 isCurrentUser: Y.id === a.id,
-                                color: b,
+                                color: D,
                                 look: U,
-                                channelId: P,
+                                channelId: b,
                                 isEmbedded: G
                             }, "join-activity-button"),
                             i = (0, n.jsx)(N.default, {
                                 activity: l,
                                 user: a,
-                                color: b,
+                                color: D,
                                 look: U
                             }, "notify-button"),
                             o = (0, n.jsx)(h.default, {
                                 user: a,
-                                color: b,
+                                color: D,
                                 look: U,
                                 activity: l
                             }, "custom-activity-button");
@@ -1557,9 +1557,9 @@
                 y = l("706508"),
                 x = l("612696"),
                 L = l("126808"),
-                P = l("871388"),
-                D = l("407908"),
-                b = l("141962"),
+                b = l("871388"),
+                P = l("407908"),
+                D = l("141962"),
                 U = l("295999"),
                 j = l("954016"),
                 F = l("49111"),
@@ -1608,7 +1608,7 @@
                     SelectedChannelStore: h.default,
                     VoiceStateStore: C.default,
                     PermissionStore: I.default
-                })), el = (0, d.useAnalyticsContext)(), en = !O.isPlatformEmbedded, ea = (0, P.default)(t, F.ActivityFlags.JOIN) || W;
+                })), el = (0, d.useAnalyticsContext)(), en = !O.isPlatformEmbedded, ea = (0, b.default)(t, F.ActivityFlags.JOIN) || W;
                 if (null == t || !ea || null == t.application_id) return null;
                 let es = !B && (en || q) && !z && !Z && (!W || et),
                     ei = null;
@@ -1624,8 +1624,8 @@
                         channelId: h.default.getVoiceChannelId(),
                         messageId: null,
                         intent: j.ActivityIntent.PLAY,
-                        embedded: (0, P.default)(t, F.ActivityFlags.EMBEDDED)
-                    }), (0, D.default)({
+                        embedded: (0, b.default)(t, F.ActivityFlags.EMBEDDED)
+                    }), (0, P.default)({
                         type: F.AnalyticsGameOpenTypes.JOIN,
                         userId: e.id,
                         applicationId: t.application_id,
@@ -1642,7 +1642,7 @@
                             currentEmbeddedApplication: l,
                             activityChannelId: Q,
                             locationObject: el.location,
-                            embeddedActivitiesManager: b.default,
+                            embeddedActivitiesManager: D.default,
                             analyticsLocations: K
                         })
                     }
@@ -3190,13 +3190,22 @@
                 id: "2023-10_add_friend_prominence_desktop",
                 label: "Make adding friends more prominent (desktop profile)",
                 defaultConfig: {
-                    moreAddFriend: !1
+                    moreAddFriend: !1,
+                    messageButton: !1
                 },
                 treatments: [{
                     id: 1,
-                    label: "enable",
+                    label: "enable add friend button",
                     config: {
-                        moreAddFriend: !0
+                        moreAddFriend: !0,
+                        messageButton: !1
+                    }
+                }, {
+                    id: 2,
+                    label: "enable both buttons",
+                    config: {
+                        moreAddFriend: !0,
+                        messageButton: !0
                     }
                 }]
             });
@@ -3205,13 +3214,15 @@
                 id: "2023-10_add_friend_prominence",
                 label: "Make adding friends more prominent (mobile DM)",
                 defaultConfig: {
-                    moreAddFriend: !1
+                    moreAddFriend: !1,
+                    messageButton: !1
                 },
                 treatments: [{
                     id: 1,
                     label: "enable",
                     config: {
-                        moreAddFriend: !0
+                        moreAddFriend: !0,
+                        messageButton: !1
                     }
                 }]
             })
@@ -4225,9 +4236,9 @@
                 } = e;
                 null == y && (y = !0);
                 let L = null !== (l = p.metadata) && void 0 !== l ? l : {},
-                    P = y ? (0, E.getCreatedAtDate)(L[g.MetadataFields.CREATED_AT], O) : null,
-                    D = (0, u.useToken)(o.default.unsafe_rawColors.TWITTER).hex(),
-                    b = C.default.Messages.CONNECTION_VERIFIED;
+                    b = y ? (0, E.getCreatedAtDate)(L[g.MetadataFields.CREATED_AT], O) : null,
+                    P = (0, u.useToken)(o.default.unsafe_rawColors.TWITTER).hex(),
+                    D = C.default.Messages.CONNECTION_VERIFIED;
                 if (y) switch (p.type) {
                     case h.PlatformTypes.REDDIT:
                         a = (0, T.generateRedditMetadataItems)(L);
@@ -4238,7 +4249,7 @@
                     case h.PlatformTypes.TWITTER: {
                         a = (0, T.generateTwitterMetadataItems)(L);
                         let e = "1" === L[g.MetadataFields.TWITTER_VERIFIED];
-                        e && (s = D, b = C.default.Messages.CONNECTION_VERIFIED_ON_TWITTER);
+                        e && (s = P, D = C.default.Messages.CONNECTION_VERIFIED_ON_TWITTER);
                         break
                     }
                     case h.PlatformTypes.PAYPAL:
@@ -4279,10 +4290,10 @@
                         color: null != s ? s : F,
                         forcedIconColor: G,
                         size: 16,
-                        tooltipText: b
+                        tooltipText: D
                     }) : null;
                 return (0, n.jsxs)("div", {
-                    className: i(N.connectedAccountContainer, null != a && a.length > 0 || null != P ? N.connectedAccountContainerWithMetadata : null, R),
+                    className: i(N.connectedAccountContainer, null != a && a.length > 0 || null != b ? N.connectedAccountContainerWithMetadata : null, R),
                     children: [(0, n.jsxs)("div", {
                         className: N.connectedAccount,
                         children: [(0, n.jsx)(u.Tooltip, {
@@ -4313,11 +4324,11 @@
                                         })
                                     }), B]
                                 }), d]
-                            }), null != P ? (0, n.jsx)(u.Text, {
+                            }), null != b ? (0, n.jsx)(u.Text, {
                                 variant: "text-xs/normal",
                                 color: "header-secondary",
                                 children: C.default.Messages.CONNECTIONS_PROFILE_MEMBER_SINCE.format({
-                                    date: P
+                                    date: b
                                 })
                             }) : null]
                         })]
@@ -4521,9 +4532,9 @@
                 y = l("430312"),
                 x = l("763866"),
                 L = l("789321"),
-                P = l("935409"),
-                D = l("849674"),
-                b = l("590456"),
+                b = l("935409"),
+                P = l("849674"),
+                D = l("590456"),
                 U = l("49111"),
                 j = l("450484"),
                 F = l("304118");
@@ -4581,7 +4592,7 @@
                         shouldShow: es,
                         markAsDismissed: ei,
                         isReadyForAnimation: eo
-                    } = (0, D.useShouldShowUserPopoutCollectiblesUpsell)(t, l),
+                    } = (0, P.useShouldShowUserPopoutCollectiblesUpsell)(t, l),
                     er = a.useMemo(() => ({
                         marginTop: es ? L.DEFAULT_COLLECTIBLES_UPSELL_HEIGHT : void 0
                     }), [es]),
@@ -4648,10 +4659,10 @@
                             children: (0, n.jsxs)(y.default, {
                                 user: t,
                                 guildId: l,
-                                profileType: b.UserProfileTypes.POPOUT,
+                                profileType: D.UserProfileTypes.POPOUT,
                                 className: es ? F.hasCollectiblesUpsell : void 0,
                                 showOutOfBoundaryComponents: eo,
-                                children: [(0, n.jsx)(P.default, {
+                                children: [(0, n.jsx)(b.default, {
                                     user: t,
                                     displayProfile: H,
                                     guildId: l,
@@ -4733,9 +4744,9 @@
                 y = l("906889"),
                 x = l("717226"),
                 L = l("10532"),
-                P = l("648149"),
-                D = l("915712"),
-                b = l("261523"),
+                b = l("648149"),
+                P = l("915712"),
+                D = l("261523"),
                 U = l("369869"),
                 j = l("545590"),
                 F = l("972595"),
@@ -4789,9 +4800,10 @@
                     }))
                 }, []);
                 let ev = (0, o.useStateFromStores)([g.default], () => g.default.getRelationshipType($.id)),
-                    eO = !$.bot && !$.isClyde(),
+                    eO = !$.bot && !$.isClyde() && ev !== z.RelationshipTypes.FRIEND && ev !== z.RelationshipTypes.BLOCKED,
                     {
-                        moreAddFriend: eM
+                        moreAddFriend: eM,
+                        messageButton: eR
                     } = p.AddFriendProminenceExperimentDesktop.useExperiment({
                         location: "user popout"
                     }, {
@@ -4806,17 +4818,17 @@
                     className: Q.usernameSection,
                     lastSection: !0
                 });
-                let eR = null !== (t = O.default.getNickname(null == et ? void 0 : et.id, en, $)) && void 0 !== t ? t : M.default.getName($),
-                    ey = $.isNonUserBot() && !$.isClyde() || $.isClyde() && eC || !ei;
+                let ey = null !== (t = O.default.getNickname(null == et ? void 0 : et.id, en, $)) && void 0 !== t ? t : M.default.getName($),
+                    ex = $.isNonUserBot() && !$.isClyde() || $.isClyde() && eC || !ei;
                 return (0, n.jsxs)(n.Fragment, {
                     children: [(0, n.jsx)(K.default, {
                         className: Q.usernameSection,
                         user: $,
-                        nickname: eR,
+                        nickname: ey,
                         pronouns: null == ee ? void 0 : ee.pronouns,
-                        usernameIcon: $.hasAvatarForGuild(null == et ? void 0 : et.id) && (0, n.jsx)(P.default, {
+                        usernameIcon: $.hasAvatarForGuild(null == et ? void 0 : et.id) && (0, n.jsx)(b.default, {
                             user: $,
-                            nickname: eR
+                            nickname: ey
                         }),
                         shouldCopyOnClick: er
                     }), $.isClyde() ? (0, n.jsx)("div", {
@@ -4829,34 +4841,7 @@
                         children: [(0, n.jsx)(B.default, {
                             className: Q.customStatusSection,
                             customStatusActivity: Z
-                        }), eM && eO ? (0, n.jsxs)("div", {
-                            className: Q.addFriendSection,
-                            children: [ev !== z.RelationshipTypes.FRIEND ? (0, n.jsx)(x.default, {
-                                user: $,
-                                isCurrentUser: $.id === S.default.getId(),
-                                relationshipType: ev,
-                                onAddFriend: function() {
-                                    d.default.addRelationship({
-                                        userId: $.id,
-                                        context: {
-                                            location: "User Profile Popout"
-                                        }
-                                    })
-                                },
-                                onIgnoreFriend: function() {
-                                    d.default.cancelFriendRequest($.id, {
-                                        location: "User Profile Popout"
-                                    })
-                                },
-                                onSendMessage: () => {},
-                                addFriendText: J.default.Messages.FRIENDS_SECTION_ADD_FRIEND
-                            }) : null, ey ? null : (0, n.jsx)(r.Button, {
-                                size: r.Button.Sizes.SMALL,
-                                color: r.Button.Colors.PRIMARY,
-                                onClick: () => u.default.openPrivateChannel($.id),
-                                children: J.default.Messages.SEND_MESSAGE
-                            })]
-                        }) : null, (0, n.jsx)(L.default, {
+                        }), (0, n.jsx)(L.default, {
                             className: Q.divider
                         }), $.isClyde() && eg && null != et ? !eN && eC ? e_ && !em ? (0, n.jsx)(r.Button, {
                             className: Q.editClydeButton,
@@ -4920,7 +4905,7 @@
                                     userId: $.id,
                                     guild: et,
                                     guildMember: el
-                                }), (0, n.jsx)(D.default, {
+                                }), (0, n.jsx)(P.default, {
                                     activity: q,
                                     user: $,
                                     guild: et,
@@ -4932,7 +4917,7 @@
                                     channel: eT,
                                     guildId: null == et ? void 0 : et.id,
                                     onClick: ea
-                                }) : null, (0, n.jsx)(b.default, {
+                                }) : null, (0, n.jsx)(D.default, {
                                     user: $,
                                     guildId: null == et ? void 0 : et.id
                                 }), (0, n.jsx)(W.default, {
@@ -4956,13 +4941,39 @@
                                     lastSection: !ei,
                                     hideNote: eu || eo
                                 })]
-                            }), eM && eO ? null : (0, n.jsx)(Y.default, {
+                            }), eR ? null : (0, n.jsx)(Y.default, {
                                 user: $,
                                 setNote: es,
                                 canDM: ei,
                                 onClose: ea,
                                 inClydeProfilesExperiment: eC
-                            })]
+                            }), eO && eM ? (0, n.jsxs)("div", {
+                                className: Q.addFriendSection,
+                                children: [(0, n.jsx)(x.default, {
+                                    user: $,
+                                    isCurrentUser: $.id === S.default.getId(),
+                                    relationshipType: ev,
+                                    onAddFriend: function() {
+                                        d.default.addRelationship({
+                                            userId: $.id,
+                                            context: {
+                                                location: "User Profile Popout"
+                                            }
+                                        })
+                                    },
+                                    onIgnoreFriend: function() {
+                                        d.default.cancelFriendRequest($.id, {
+                                            location: "User Profile Popout"
+                                        })
+                                    },
+                                    onSendMessage: () => {}
+                                }), !ex && eR ? (0, n.jsx)(r.Button, {
+                                    size: r.Button.Sizes.SMALL,
+                                    color: r.Button.Colors.PRIMARY,
+                                    onClick: () => u.default.openPrivateChannel($.id),
+                                    children: J.default.Messages.SEND_MESSAGE
+                                }) : null]
+                            }) : null]
                         })]
                     })]
                 })
@@ -5183,10 +5194,10 @@
                         className: y
                     } = e,
                     x = (0, d.default)(O, N, v),
-                    [L, P] = a.useState(new Set),
-                    D = (0, o.useStateFromStores)([E.default], () => E.default.getUserProfile(N)),
-                    b = null !== (t = null == D ? void 0 : D.connectedAccounts) && void 0 !== t ? t : [],
-                    U = null !== (l = null == D ? void 0 : D.applicationRoleConnections) && void 0 !== l ? l : [],
+                    [L, b] = a.useState(new Set),
+                    P = (0, o.useStateFromStores)([E.default], () => E.default.getUserProfile(N)),
+                    D = null !== (t = null == P ? void 0 : P.connectedAccounts) && void 0 !== t ? t : [],
+                    U = null !== (l = null == P ? void 0 : P.applicationRoleConnections) && void 0 !== l ? l : [],
                     j = (0, o.useStateFromStores)([f.default], () => f.default.hidePersonalInformation),
                     F = (0, o.useStateFromStores)([c.default], () => c.default.locale);
                 if (a.useEffect(() => {
@@ -5197,11 +5208,11 @@
                                         connection_type: e
                                     }
                                     of l) t.add(e);
-                            P(t)
+                            b(t)
                         })
                     }, [null == O ? void 0 : O.id, null == x ? void 0 : x.id]), j || null == x) return null;
                 let G = Array.from(L).map(e => {
-                    let t = b.find(t => t.type === e);
+                    let t = D.find(t => t.type === e);
                     return null == t ? null : (0, n.jsx)(T.ConnectedUserAccount, {
                         connectedAccount: t,
                         theme: M,
@@ -5882,4 +5893,4 @@
         }
     }
 ]);
-//# sourceMappingURL=af6898f5f2af036d7580.js.map
+//# sourceMappingURL=2fdb7113ddd36373e4f6.js.map
