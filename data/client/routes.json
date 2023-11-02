@@ -893,6 +893,10 @@
       "OPTIONS"
     ]
   },
+  "COLLECTIBLES_PRODUCTS": {
+    "url": "/collectibles-products/:param",
+    "allowed_methods": null
+  },
   "GUILD_MEMBER_BANNER": {
     "url": "/guilds/:param/users/:param/banners/:param.:param",
     "allowed_methods": null
@@ -3280,6 +3284,14 @@
       "OPTIONS",
       "POST"
     ]
+  },
+  "SEND_UNAUTHENTICATED_REPORT_PINCODE": {
+    "url": "/reporting/unauthenticated/:param/code",
+    "allowed_methods": null
+  },
+  "VERIFY_UNAUTHENTICATED_REPORT": {
+    "url": "/reporting/unauthenticated/:param/verify",
+    "allowed_methods": null
   },
   "STAGE_INSTANCES": {
     "url": "/stage-instances",
