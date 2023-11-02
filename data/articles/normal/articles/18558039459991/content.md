@@ -172,11 +172,10 @@
 <p><strong>Q: I see a "Sorry, looks like you’ve already had a Nitro sub!" error when I try to redeem my Nitro promo.</strong></p>
 <p><strong>A: </strong>If you're seeing an “Sorry, looks like you’ve already had a Nitro sub” error, that means that you've previously had a Nitro membership on your Discord account and you won't be able to redeem this 1 month perk.</p>
 <p>If you have never a Nitro member, please submit a ticket through our support system:<a href="https://dis.gd/contact" target="_blank" rel="noopener noreferrer"> https://dis.gd/contact</a> and our support team will be able to investigate further.</p>
-<p>Be sure to include your full Discord ID and email address tied to your Discord account</p>
-<p><strong>Q: I see a "This gift has already been redeemed" error when I try to redeem my Nitro promo.</strong></p>
-<p><strong>A:</strong> If you are seeing a "This gift has been redeemed already" error, that means that the Nitro promo has already been used and cannot be used again. You may need to double check if you've redeemed this promo on another Discord account.</p>
-<p>In particular, if you redeemed this promo using your mobile device, double check the browser on your mobile device and see which Discord account you are currently logged into.</p>
-<p>Unfortunately, once the promo has been redeemed, the promo cannot be re-enabled, and the Nitro cannot be transferred from one account to another.</p>
+<p>Be sure to include your full Discord ID and email address tied to your Discord account.</p>
+<p id="docs-internal-guid-a57ab32e-7fff-feb8-765d-29661769f505"><strong>Q: I see a "This gift has already been claimed" error when I try to claim my Nitro promo.</strong></p>
+<p><strong>A:</strong> If you are seeing a "This gift has been claimed already" error, that means that the Nitro promo has already been used and cannot be used again. You may need to double check if you've claimed this promo on another Discord account.</p>
+<p>Unfortunately, once the promo has been claimed, the promo cannot be re-enabled, and the Nitro cannot be transferred from one account to another.</p>
 <p><strong>Q: I see a "Wait a Second...Looks like this code didn't work." error when I try to redeem my Nitro promo.</strong></p>
 <p><strong>A:</strong> If you're seeing an “Wait a Second...Looks like this code didn't work.” error, that means that the promo is invalid.</p>
 <p>Please note that our support team is unable to intervene if you are given an invalid promo and we will not be able to provide a new promo.</p>
@@ -184,5 +183,11 @@
 <p><strong>A:</strong> If you're seeing a "Sorry, This Payment Source Cannot Be Used for Redemption" error, that means that the payment method you've selected to cover the temporary $1 hold cannot be used for that purpose. </p>
 <p>Please keep in mind that prepaid payment methods, such as Gcash, cannot be used to cover temporary holds due to the nature of how prepaid payment methods function.</p>
 <p>For more information on temporary holds, please check out<a href="https://support.discord.com/hc/en-us/articles/4402712000663" target="_blank" rel="noopener noreferrer"> this article</a>!</p>
+<p id="docs-internal-guid-8db13f9b-7fff-65e4-e6f7-6799a45e839e"><strong>Q: I see a “Looks like this promotion has reached its maximum number of claims” error when trying to redeem my promo!</strong></p>
+<p>A: If you are seeing a “Looks like this promotion has reached its maximum number of claims” error, that means the maximum limit for claims of this promotion has been reached and this promotion can no longer be claimed. If you have claimed this Nitro promotion, you are still able to redeem it to your Discord account!</p>
+<p>Please note that the support team is unable to assist you if you run into this error and we are not able to increase the limit of claims.</p>
+<p><strong>Q: I see a “Looks like your email isn’t verified. Make sure to verify your email before claiming this gift.”</strong></p>
+<p>A: If you are seeing a “Looks like your email isn’t verified, make sure to verify your email before claiming this gift” error, you are trying to redeem this Nitro promotion on a Discord account with an email that hasn’t been verified yet.</p>
+<p>You can check out <a href="https://support.discord.com/hc/articles/213219267" target="_blank" rel="noopener noreferrer">this support article</a> on how to resend the email verification for your Discord account. If you need help setting up your Discord account, you can read our <a href="https://support.discord.com/hc/articles/360033931551" target="_blank" rel="noopener noreferrer">Getting Started article</a>.</p>
 <p><strong>Q: I’m having trouble with my Party Animals account.</strong></p>
 <p><strong>A:</strong> Reach out to Party Animals' support team: submit a ticket to <a href="https://support.partyanimals.com/" target="_blank" rel="noopener noreferrer">https://support.partyanimals.com/</a> or send an email to support@recreate.games</p>
