@@ -4597,7 +4597,10 @@
   },
   "EXPLICIT_MEDIA_SCAN_MULTI_CHANNEL_MESSAGES": {
     "url": "/messages/explicit-media",
-    "allowed_methods": null
+    "allowed_methods": [
+      "OPTIONS",
+      "PATCH"
+    ]
   },
   "CLYDE_PROFILES": {
     "url": "/clyde-profiles/:param",
