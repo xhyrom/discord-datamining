@@ -20873,7 +20873,10 @@ html.disable-forced-colors * {
 
 .pictureInPictureWindow_dc49a8 {
     position: absolute;
-    z-index: 1000;
+    z-index: 1000
+}
+
+.pictureInPictureWindowOverflow__3abe4 {
     overflow: hidden
 }
 
@@ -26396,4 +26399,4 @@ button.button__4f306.disabled_dc5630 {
     }
 }
 
-/*# sourceMappingURL=shared.728e83b107d2546bf411.css.map*/
+/*# sourceMappingURL=shared.301e5be701b38ac4ce31.css.map*/
