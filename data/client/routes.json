@@ -1288,7 +1288,11 @@
   },
   "USERNAME_LOOKUP": {
     "url": "/users/username/:param",
-    "allowed_methods": null
+    "allowed_methods": [
+      "GET",
+      "HEAD",
+      "OPTIONS"
+    ]
   },
   "POMELO_SUGGESTIONS": {
     "url": "/users/@me/pomelo-suggestions",
