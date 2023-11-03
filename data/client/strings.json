@@ -4967,7 +4967,7 @@
   "NOISE_CANCELLATION_OFF": "\"Noise Suppression Off\"",
   "TOAST_FRIEND_REQUEST_ACCEPTED": "\"Friend added\"",
   "TOAST_FRIEND_REQUEST_IGNORED": "\"Friend Request Cleared\"",
-  "TOAST_REMIX_LANGUAGE_SUPPORT_WARNING": "\"Some characters are not availabe in remix.\"",
+  "TOAST_REMIX_LANGUAGE_SUPPORT_WARNING": "\"Some characters are not available in remix.\"",
   "FRIEND_REQUEST_RATE_LIMITED_HEADER": "\"WOAH THERE. WAY TOO SPICY\"",
   "FRIEND_REQUEST_RATE_LIMITED_BODY": "\"You're sending friend requests too quickly!\"",
   "FRIEND_REQUEST_RATE_LIMITED_BUTTON": "\"Enter the chill zone\"",
