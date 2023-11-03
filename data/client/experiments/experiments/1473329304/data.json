@@ -10,7 +10,9 @@
       "Treatment 2: Desktop view/use/collect and mobile view/use",
       "Treatment 3: Read-only pack emoji for logged out users",
       "Treatment 4: Mobile/desktop view/use/collect, and show Try Packs Modal",
-      "Treatment 5: Mobile/desktop view/use/collect, and show Try Packs Modal (second group)"
+      "Treatment 5: Mobile/desktop view/use/collect, and show Try Packs Modal (second group)",
+      "Treatment 6: Non-nitro same as bucket 4 + auto-unfurl reactions",
+      "Treatment 7: Nitro same as bucket 4 + auto-unfurl reactions"
     ],
     "hash": 1473329304,
     "buckets": [
@@ -20,7 +22,9 @@
       2,
       3,
       4,
-      5
+      5,
+      6,
+      7
     ],
     "config_keys": [
       "enabled"

@@ -1,14 +1,14 @@
 {
   "data": {
     "kind": "user",
-    "id": "2023-09_subscriber_nitro_home",
-    "label": "Subscriber Nitro Home",
+    "id": "2023-11_no_manage_subscriptions_section",
+    "label": "No Manage Subscriptions Section",
     "description": [
       "Not Eligible",
       "Control Bucket",
       "Treatment 1: Enabled"
     ],
-    "hash": 1154210951,
+    "hash": 4037560221,
     "buckets": [
       -1,
       0,

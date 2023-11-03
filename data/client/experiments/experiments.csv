@@ -335,6 +335,7 @@ id,hash,label
 2023-10_add_friend_prominence_desktop,4283940163,Make adding friends more prominent (desktop profile)
 2023-10_bandwidth_estimation_v1,834206369,Bandwidth Estimation
 2023-10_call_banner_bg,2681214381,Call Banner Background Experiment
+2023-10_client_themes_mobile_tokens,262667022,Client Themes Mobile Tokens
 2023-10_clyde_ai_proactive_guilds_v2,3196467544,Proactive Clyde V2
 2023-10_collectibles_falloween,1138748479,Collectibles Shop Falloween Content Drop
 2023-10_collectibles_shop_for_all,640079350,Collectibles Shop For All
@@ -360,3 +361,4 @@ id,hash,label
 2023-10_video_hook_stale_frame_timeout,1821813006,Video Hook Stale Frame Timeout
 2023-10_viewer_clipping,3351049965,Test viewer side clipping
 2023-10_wgc_stale_frame_timeout,4008174795,Windows Graphics Capture Stale Frame Timeout
+2023-11_no_manage_subscriptions_section,4037560221,No Manage Subscriptions Section

@@ -1,14 +1,14 @@
 {
   "data": {
     "kind": "user",
-    "id": "2022-11_notification_redesign",
-    "label": "NotificationRedesign",
+    "id": "2023-10_client_themes_mobile_tokens",
+    "label": "Client Themes Mobile Tokens",
     "description": [
       "Not Eligible",
       "Control Bucket",
-      "Treatment 1: Notification Redesign Enabled"
+      "Treatment 1: Client Themes Mobile Tokens"
     ],
-    "hash": 1792467213,
+    "hash": 262667022,
     "buckets": [
       -1,
       0,
