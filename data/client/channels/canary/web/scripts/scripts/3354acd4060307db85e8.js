@@ -15588,7 +15588,7 @@
                         darkSVG: n("496955"),
                         whiteSVG: n("152071")
                     },
-                    enabled: !1,
+                    enabled: !0,
                     getPlatformUserUrl: e => {
                         let {
                             name: t
@@ -48936,7 +48936,7 @@
                         var i;
                         let d = {
                                 environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                                build_number: "243480"
+                                build_number: "243495"
                             },
                             E = l.default.getCurrentUser();
                         null != E && (d.user_id = E.id, d.user_name = E.tag, null != E.email && (d.email = E.email));
@@ -62202,4 +62202,4 @@
         }
     }
 ]);
-//# sourceMappingURL=54724cc9a8b7e777f1f0.js.map
+//# sourceMappingURL=3354acd4060307db85e8.js.map
