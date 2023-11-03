@@ -2959,32 +2959,34 @@
                             data: s,
                             nonce: r,
                             attachments: u,
-                            maxSizeCallback: _
+                            maxSizeCallback: _,
+                            analytics_location: E
                         } = e,
-                        E = {
+                        h = {
                             type: c.InteractionTypes.APPLICATION_COMMAND,
                             application_id: i,
                             guild_id: a,
                             channel_id: l,
                             session_id: p.default.getSessionId(),
                             data: s,
-                            nonce: r
+                            nonce: r,
+                            analytics_location: E
                         };
                     if (null != u) {
-                        E.data.attachments = [], n = [];
-                        E.data.attachments = u.map((e, t) => (o(e.status === I.CloudUploadStatus.COMPLETED, "Uploads must be staged before trying to send a message"), (0, m.getAttachmentPayload)(e, t)))
+                        h.data.attachments = [], n = [];
+                        h.data.attachments = u.map((e, t) => (o(e.status === I.CloudUploadStatus.COMPLETED, "Uploads must be staged before trying to send a message"), (0, m.getAttachmentPayload)(e, t)))
                     }
-                    let h = new AbortController;
+                    let f = new AbortController;
                     d.default.post({
                         url: A.Endpoints.INTERACTIONS,
                         fields: [{
                             name: "payload_json",
-                            value: JSON.stringify(E)
+                            value: JSON.stringify(h)
                         }],
                         attachments: n,
-                        signal: h.signal,
+                        signal: f.signal,
                         onRequestCreated: e => {
-                            this.requests.set(r, h), e.on("progress", e => {
+                            this.requests.set(r, f), e.on("progress", e => {
                                 let {
                                     total: t
                                 } = e, n = (0, C.maxFileSize)(a);
@@ -4895,7 +4897,7 @@
                 CommandOrigin: function() {
                     return o
                 }
-            }), (u = i || (i = {}))[u.BUILT_IN = 0] = "BUILT_IN", u[u.APPLICATION = 1] = "APPLICATION", (d = a || (a = {}))[d.BUILT_IN = 0] = "BUILT_IN", d[d.BUILT_IN_TEXT = 1] = "BUILT_IN_TEXT", d[d.BUILT_IN_INTEGRATION = 2] = "BUILT_IN_INTEGRATION", d[d.BOT = 3] = "BOT", d[d.PLACEHOLDER = 4] = "PLACEHOLDER", (c = l || (l = {}))[c.ROLE = 1] = "ROLE", c[c.USER = 2] = "USER", c[c.CHANNEL = 3] = "CHANNEL", (_ = s || (s = {})).DISCOVERY = "discovery", _.SUGGESTION = "suggestion", _.MENTION = "mention", _.PASTE = "paste", _.RECALL = "recall", _.POPULAR_COMMANDS = "popular_commands", _.MJ_CHAT_BAR = "mj_chat_bar", _.QUERY = "query", (E = r || (r = {}))[E.BUILT_IN = 1] = "BUILT_IN", E[E.FRECENCY = 2] = "FRECENCY", E[E.APP = 3] = "APP", (h = o || (o = {}))[h.CHAT = 0] = "CHAT", h[h.APPLICATION_LAUNCHER = 1] = "APPLICATION_LAUNCHER"
+            }), (u = i || (i = {}))[u.BUILT_IN = 0] = "BUILT_IN", u[u.APPLICATION = 1] = "APPLICATION", (d = a || (a = {}))[d.BUILT_IN = 0] = "BUILT_IN", d[d.BUILT_IN_TEXT = 1] = "BUILT_IN_TEXT", d[d.BUILT_IN_INTEGRATION = 2] = "BUILT_IN_INTEGRATION", d[d.BOT = 3] = "BOT", d[d.PLACEHOLDER = 4] = "PLACEHOLDER", (c = l || (l = {}))[c.ROLE = 1] = "ROLE", c[c.USER = 2] = "USER", c[c.CHANNEL = 3] = "CHANNEL", (_ = s || (s = {})).DISCOVERY = "discovery", _.SUGGESTION = "suggestion", _.MENTION = "mention", _.PASTE = "paste", _.RECALL = "recall", _.POPULAR_COMMANDS = "popular_commands", _.MJ_CHAT_BAR = "mj_chat_bar", _.QUERY = "query", _.SLASH_UI = "slash_ui", _.APP_LAUNCHER = "app_launcher", _.APP_LAUNCHER_DOCK = "app_launcher_dock", _.APP_LAUNCHER_COMMAND_LIST = "app_launcher_command_list", (E = r || (r = {}))[E.BUILT_IN = 1] = "BUILT_IN", E[E.FRECENCY = 2] = "FRECENCY", E[E.APP = 3] = "APP", (h = o || (o = {}))[h.CHAT = 0] = "CHAT", h[h.APPLICATION_LAUNCHER = 1] = "APPLICATION_LAUNCHER"
         },
         970254: function(e, t, n) {
             "use strict";
@@ -32965,4 +32967,4 @@
         }
     }
 ]);
-//# sourceMappingURL=48cc9ad9622d1a4d2aa4.js.map
+//# sourceMappingURL=749177e4c84e2d476a8f.js.map
