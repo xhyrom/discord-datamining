@@ -18067,7 +18067,7 @@
                 u = E("782340");
             (0, i.setUpdateRules)(s.default), (0, r.default)(u.default, n.default, T.default), a.default.Emitter.injectBatchEmitChanges(o.unstable_batchedUpdates), a.default.PersistedStore.disableWrites = __OVERLAY__, a.default.initialize();
             let L = window.GLOBAL_ENV.RELEASE_CHANNEL;
-            new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(L, ", Build Number: ").concat("243718", ", Version Hash: ").concat("bac24203e9185082da0f66b108ab4a3a66a9d0b3")), t.default.setTags({
+            new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(L, ", Build Number: ").concat("243721", ", Version Hash: ").concat("747499e8646af798b63a6df0740a0132b107b3fa")), t.default.setTags({
                 appContext: l.CURRENT_APP_CONTEXT
             }), S.default.initBasic(), N.default.init(), I.FocusRingManager.init(), O.init(), (0, R.cleanupTempFiles)()
         },
@@ -20451,8 +20451,8 @@
 
             function o() {
                 var e;
-                let _ = parseInt((e = "243718", "243718"));
-                return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("243718")), _ = 0), _
+                let _ = parseInt((e = "243721", "243721"));
+                return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("243721")), _ = 0), _
             }
         },
         990629: function(e, _, E) {
@@ -22099,7 +22099,7 @@
                 let T = null !== (a = null == e ? void 0 : null === (t = e.attachments) || void 0 === t ? void 0 : t.filter(e => null == e.content_scan_version)) && void 0 !== a ? a : [],
                     S = null !== (i = null == e ? void 0 : null === (o = e.embeds) || void 0 === o ? void 0 : o.filter(e => {
                         var _;
-                        return null != (null != (_ = e).content_scan_version ? _.content_scan_version : null != _.contentScanVersion ? _.contentScanVersion : null)
+                        return null == (null != (_ = e).content_scan_version ? _.content_scan_version : null != _.contentScanVersion ? _.contentScanVersion : null)
                     })) && void 0 !== i ? i : [];
                 return T.length > 0 || S.length > 0
             }
@@ -36150,4 +36150,4 @@
         }
     }
 ]);
-//# sourceMappingURL=e635fbf327192aef4f0f.js.map
+//# sourceMappingURL=19cf2c74b0f7f0eca35e.js.map
