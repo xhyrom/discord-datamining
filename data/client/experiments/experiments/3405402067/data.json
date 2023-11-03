@@ -1,22 +1,7 @@
 {
   "data": {
     "kind": "guild",
-    "id": "2022-12_home_header_redesign",
-    "label": "Home New Header",
-    "description": [
-      "Not Eligible",
-      "Control Bucket",
-      "Treatment 1: New Header"
-    ],
-    "hash": 3405402067,
-    "buckets": [
-      -1,
-      0,
-      1
-    ],
-    "config_keys": [
-      "hasNewHeader"
-    ]
+    "hash": 3405402067
   },
   "rollout": {
     "populations": [

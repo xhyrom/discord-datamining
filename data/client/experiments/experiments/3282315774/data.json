@@ -1,24 +1,7 @@
 {
   "data": {
     "kind": "guild",
-    "id": "2022-06_community_admin_server",
-    "label": "Show the button to join the admin server in community overview server settings page",
-    "description": [
-      "Not Eligible",
-      "Control Bucket",
-      "Treatment 1: Show button if requirements met",
-      "Treatment 2: Bypass requirements"
-    ],
-    "hash": 3282315774,
-    "buckets": [
-      -1,
-      0,
-      1,
-      2
-    ],
-    "config_keys": [
-      "enabled"
-    ]
+    "hash": 3282315774
   },
   "rollout": {
     "populations": [

@@ -1,22 +1,7 @@
 {
   "data": {
     "kind": "guild",
-    "id": "2022-02_guild_audit_log_guild",
-    "label": "Guild Audit Log - Guild Feature Flag",
-    "description": [
-      "Not Eligible",
-      "Control Bucket",
-      "Treatment 1: Show Guild Audit Log 2.0 for guild"
-    ],
-    "hash": 1412337990,
-    "buckets": [
-      -1,
-      0,
-      1
-    ],
-    "config_keys": [
-      "enabled"
-    ]
+    "hash": 1412337990
   },
   "rollout": {
     "populations": [

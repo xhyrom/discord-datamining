@@ -1,22 +1,7 @@
 {
   "data": {
     "kind": "guild",
-    "id": "2023-02_onboarding_advanced_mode",
-    "label": "Enables setting up onboarding with advanced mode",
-    "description": [
-      "Not Eligible",
-      "Control Bucket",
-      "Treatment 1: On"
-    ],
-    "hash": 2544556038,
-    "buckets": [
-      -1,
-      0,
-      1
-    ],
-    "config_keys": [
-      "enabled"
-    ]
+    "hash": 2544556038
   },
   "rollout": {
     "populations": [

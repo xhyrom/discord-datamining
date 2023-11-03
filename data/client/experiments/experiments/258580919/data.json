@@ -1,22 +1,7 @@
 {
   "data": {
     "kind": "guild",
-    "id": "2022-06_free_sticker_slots_design_updates",
-    "label": "Free Sticker Slots Design Updates",
-    "description": [
-      "Not Eligible",
-      "Control Bucket",
-      "Treatment 1: Enabled"
-    ],
-    "hash": 258580919,
-    "buckets": [
-      -1,
-      0,
-      1
-    ],
-    "config_keys": [
-      "enabled"
-    ]
+    "hash": 258580919
   },
   "rollout": {
     "populations": [
