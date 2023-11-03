@@ -5054,16 +5054,19 @@
                     }))
                 }, []);
                 let eN = (0, r.useStateFromStores)([A.default], () => A.default.getRelationshipType($.id)),
-                    eM = !$.bot && !$.isClyde() && eN !== z.RelationshipTypes.FRIEND && eN !== z.RelationshipTypes.BLOCKED,
+                    eM = $.isNonUserBot() && !$.isClyde() || $.isClyde() && eC || !ei,
+                    ey = !$.bot && !$.isClyde() && eN !== z.RelationshipTypes.BLOCKED,
                     {
-                        moreAddFriend: ey,
-                        messageButton: eO
+                        moreAddFriend: eO,
+                        messageButton: eR
                     } = h.AddFriendProminenceExperimentDesktop.useExperiment({
                         location: "user popout"
                     }, {
-                        disable: !eM,
+                        disable: !ey,
                         autoTrackExposure: !0
-                    });
+                    }),
+                    ex = eO && eN !== z.RelationshipTypes.FRIEND,
+                    eL = eR && !eM;
                 if ($.isSystemUser()) return null;
                 if ($.isNonUserBot() && !$.isClyde()) return (0, n.jsx)(K.default, {
                     user: $,
@@ -5072,17 +5075,16 @@
                     className: X.usernameSection,
                     lastSection: !0
                 });
-                let eR = null !== (t = M.default.getNickname(null == et ? void 0 : et.id, en, $)) && void 0 !== t ? t : y.default.getName($),
-                    ex = $.isNonUserBot() && !$.isClyde() || $.isClyde() && eC || !ei;
+                let eP = null !== (t = M.default.getNickname(null == et ? void 0 : et.id, en, $)) && void 0 !== t ? t : y.default.getName($);
                 return (0, n.jsxs)(n.Fragment, {
                     children: [(0, n.jsx)(K.default, {
                         className: X.usernameSection,
                         user: $,
-                        nickname: eR,
+                        nickname: eP,
                         pronouns: null == ee ? void 0 : ee.pronouns,
                         usernameIcon: $.hasAvatarForGuild(null == et ? void 0 : et.id) && (0, n.jsx)(P.default, {
                             user: $,
-                            nickname: eR
+                            nickname: eP
                         }),
                         shouldCopyOnClick: eo
                     }), $.isClyde() ? (0, n.jsx)("div", {
@@ -5195,15 +5197,15 @@
                                     lastSection: !ei,
                                     hideNote: eu || er
                                 })]
-                            }), eO ? null : (0, n.jsx)(B.default, {
+                            }), eL ? null : (0, n.jsx)(B.default, {
                                 user: $,
                                 setNote: ea,
                                 canDM: ei,
                                 onClose: es,
                                 inClydeProfilesExperiment: eC
-                            }), eM && ey ? (0, n.jsxs)("div", {
+                            }), ex || eL ? (0, n.jsxs)("div", {
                                 className: X.addFriendSection,
-                                children: [(0, n.jsx)(x.default, {
+                                children: [ex ? (0, n.jsx)(x.default, {
                                     user: $,
                                     isCurrentUser: $.id === _.default.getId(),
                                     relationshipType: eN,
@@ -5222,7 +5224,7 @@
                                     },
                                     onSendMessage: () => {},
                                     addFriendText: Z.default.Messages.FRIENDS_SECTION_ADD_FRIEND
-                                }), !ex && eO ? (0, n.jsx)(o.Button, {
+                                }) : null, eL ? (0, n.jsx)(o.Button, {
                                     size: o.Button.Sizes.SMALL,
                                     color: o.Button.Colors.PRIMARY,
                                     onClick: () => u.default.openPrivateChannel($.id),
@@ -5842,7 +5844,7 @@
             "use strict";
             l.r(t), l.d(t, {
                 useShouldShowUserPopoutCollectiblesUpsell: function() {
-                    return T
+                    return p
                 }
             });
             var n = l("884691"),
@@ -5853,12 +5855,11 @@
                 o = l("875212"),
                 u = l("340066"),
                 d = l("619935"),
-                c = l("563775"),
-                f = l("729022"),
-                m = l("10641"),
-                E = l("509802"),
-                p = l("697218");
-            let T = (e, t) => {
+                c = l("729022"),
+                f = l("10641"),
+                m = l("509802"),
+                E = l("697218");
+            let p = (e, t) => {
                 let l = "useShouldShowUserPopoutCollectiblesUpsell";
                 (0, o.useTriggerDebuggingAA)({
                     location: l + "auto on",
@@ -5866,41 +5867,39 @@
                 }), (0, o.useTriggerDebuggingAA)({
                     location: l + "auto off",
                     autoTrackExposure: !1
-                }), (0, c.default)({
-                    location: l
                 });
-                let s = (0, i.default)([p.default], () => p.default.getCurrentUser());
+                let s = (0, i.default)([E.default], () => E.default.getCurrentUser());
                 a(null != s, "currentUser should not be null");
-                let T = (0, d.useBlockedPaymentsConfig)(),
-                    h = (null == s ? void 0 : s.id) !== e.id && !T,
+                let p = (0, d.useBlockedPaymentsConfig)(),
+                    T = (null == s ? void 0 : s.id) !== e.id && !p,
                     {
-                        shouldUpsellAvatarDecoration: _,
-                        shouldUpsellProfileEffect: I
-                    } = (0, f.default)({
+                        shouldUpsellAvatarDecoration: h,
+                        shouldUpsellProfileEffect: _
+                    } = (0, c.default)({
                         currentUser: s,
                         popoutUser: e,
                         guildId: t
                     }),
-                    S = n.useMemo(() => {
+                    I = n.useMemo(() => {
                         let e = [];
-                        return h && (_ && e.push(r.DismissibleContent.COLLECTIBLES_USER_POPOUT_UPSELL), I && e.push(r.DismissibleContent.COLLECTIBLES_PROFILE_EFFECT_SOCIAL_UPSELL)), e
-                    }, [_, I, h]),
-                    [g, A] = (0, E.useDismissibleContentGroup)(S, void 0, !0),
-                    C = g === r.DismissibleContent.COLLECTIBLES_USER_POPOUT_UPSELL || g === r.DismissibleContent.COLLECTIBLES_PROFILE_EFFECT_SOCIAL_UPSELL,
-                    v = n.useCallback(e => {
-                        _ && (0, m.markDismissibleContentAsDismissed)(r.DismissibleContent.COLLECTIBLES_USER_POPOUT_UPSELL, {
+                        return T && (h && e.push(r.DismissibleContent.COLLECTIBLES_USER_POPOUT_UPSELL), _ && e.push(r.DismissibleContent.COLLECTIBLES_PROFILE_EFFECT_SOCIAL_UPSELL)), e
+                    }, [h, _, T]),
+                    [S, g] = (0, m.useDismissibleContentGroup)(I, void 0, !0),
+                    A = S === r.DismissibleContent.COLLECTIBLES_USER_POPOUT_UPSELL || S === r.DismissibleContent.COLLECTIBLES_PROFILE_EFFECT_SOCIAL_UPSELL,
+                    C = n.useCallback(e => {
+                        h && (0, f.markDismissibleContentAsDismissed)(r.DismissibleContent.COLLECTIBLES_USER_POPOUT_UPSELL, {
                             dismissAction: e,
                             forceTrack: !0
-                        }), I && (0, m.markDismissibleContentAsDismissed)(r.DismissibleContent.COLLECTIBLES_PROFILE_EFFECT_SOCIAL_UPSELL, {
+                        }), _ && (0, f.markDismissibleContentAsDismissed)(r.DismissibleContent.COLLECTIBLES_PROFILE_EFFECT_SOCIAL_UPSELL, {
                             dismissAction: e,
                             forceTrack: !0
                         })
-                    }, [_, I]),
-                    [N, M] = n.useState(!1);
-                return (0, u.default)(() => M(!0), C ? 250 : null), {
-                    shouldShow: C,
-                    markAsDismissed: v,
-                    isReadyForAnimation: N
+                    }, [h, _]),
+                    [v, N] = n.useState(!1);
+                return (0, u.default)(() => N(!0), A ? 250 : null), {
+                    shouldShow: A,
+                    markAsDismissed: C,
+                    isReadyForAnimation: v
                 }
             }
         },
@@ -7615,4 +7614,4 @@
         }
     }
 ]);
-//# sourceMappingURL=baa7b6aab8365f522fbb.js.map
+//# sourceMappingURL=8c736a8ecc907e3cfce9.js.map

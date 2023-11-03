@@ -22902,7 +22902,7 @@
                     return P
                 },
                 EMOJI_ROW_SIZE: function() {
-                    return C
+                    return E
                 }
             }), (_ = i || (i = {})).GUILD = "GUILD", _.PACK = "PACK", _.UNICODE = "UNICODE", _.RECENT = "RECENT", _.CUSTOM = "CUSTOM", _.SEARCH_RESULTS = "SEARCH_RESULTS", _.FAVORITES = "FAVORITES", _.TOP_GUILD_EMOJI = "TOP_GUILD_EMOJI", _.PREMIUM_UPSELL = "PREMIUM_UPSELL";
             let v = "emoji-picker-grid";
@@ -22924,7 +22924,7 @@
                     default: 44,
                     jumbo: 96
                 },
-                C = 9
+                E = 9
         },
         61559: function(e, s, n) {
             "use strict";
@@ -23101,8 +23101,8 @@
                 p = n("166465"),
                 D = n("915639"),
                 P = n("374363"),
-                C = n("26989"),
-                E = n("778689"),
+                E = n("26989"),
+                C = n("778689"),
                 M = n("305961"),
                 j = n("677099"),
                 I = n("697218"),
@@ -23110,8 +23110,8 @@
                 O = n("402671"),
                 x = n("449008"),
                 T = n("655518"),
-                R = n("299039"),
-                U = n("858619"),
+                U = n("299039"),
+                R = n("858619"),
                 N = n("867805"),
                 A = n("802461"),
                 L = n("26430"),
@@ -23132,7 +23132,7 @@
                 }
                 isUsable(e) {
                     if (0 === e.roles.length) return !0;
-                    let s = C.default.getMember(this.id, this._userId);
+                    let s = E.default.getMember(this.id, this._userId);
                     if (null == s) return !1;
                     let n = s.roles.some(s => e.roles.includes(s));
                     return !!(n || (0, k.isPurchasableRoleSubscriptionEmoji)(e)) || !1
@@ -23155,14 +23155,14 @@
                             id: e.id,
                             animated: e.animated,
                             size: 48
-                        }), e.allNamesString = ":".concat(e.name, ":"), e.guildId = this.id, e.type = U.EmojiTypes.GUILD, this._emojiMap[e.id] = e
+                        }), e.allNamesString = ":".concat(e.name, ":"), e.guildId = this.id, e.type = R.EmojiTypes.GUILD, this._emojiMap[e.id] = e
                     }), this._usableEmojis = a.sortBy(this._emojis.filter(e => this.isUsable(e)), e => e.name), this._emoticons = this._usableEmojis.filter(e => !e.require_colons))
                 }
                 constructor(e, s, n, i = !1) {
                     this._dirty = !0, this._emojiMap = {}, this._emoticons = [], this._usableEmojis = [], this._canSeeServerSubIAP = !1, this._totalUsable = 0, this.id = e, this._userId = s, this._emojis = n, this._canSeeServerSubIAP = i
                 }
             }
-            let K = R.default.fromTimestamp(Date.now() - 5184e6),
+            let K = U.default.fromTimestamp(Date.now() - 5184e6),
                 W = [];
             (i = r || (r = {}))[i.Unloaded = 0] = "Unloaded", i[i.MaybeLoaded = 1] = "MaybeLoaded", i[i.Loaded = 2] = "Loaded";
             let J = 2,
@@ -23199,7 +23199,7 @@
                 J = 2;
                 let s = (0, c.tryLoadOrResetCacheGateway)("EmojiStore.loadSavedEmojis", () => d.default.time("\uD83D\uDCBE", "loadSavedEmojis", () => h.default.getSync(e)));
                 if (null != s) {
-                    for (let [e, n] of s) !Object.hasOwn($, e) && E.default.isMember(e) && ef(e, n);
+                    for (let [e, n] of s) !Object.hasOwn($, e) && C.default.isMember(e) && ef(e, n);
                     ea()
                 }
             }
@@ -23311,7 +23311,7 @@
                         if (null != s[e]) {
                             let r = s[e].filter(e => !n.includes(e.id) && !i.includes(e.id)),
                                 o = n.length + i.length;
-                            this.backfillTopEmojis[e] = r.sort((e, s) => R.default.compare(e.id, s.id)).slice(0, o < 9 ? 9 - o : 0)
+                            this.backfillTopEmojis[e] = r.sort((e, s) => U.default.compare(e.id, s.id)).slice(0, o < 9 ? 9 - o : 0)
                         } else this.backfillTopEmojis[e] = W
                     }
                     return this.backfillTopEmojis[e]
@@ -23351,13 +23351,13 @@
                             if (this.emojisByName[s.name] = s, "names" in s && (null === (i = s.names) || void 0 === i || i.slice(1).forEach(e => this.unicodeAliases[e] = s.name)), null != s.id) {
                                 let e, n;
                                 switch (this.emojisById[s.id] = s, this.customEmojis[s.name] = s, s.type) {
-                                    case U.EmojiTypes.GUILD:
+                                    case R.EmojiTypes.GUILD:
                                         e = s.guildId, n = !0;
                                         break;
-                                    case U.EmojiTypes.PACK:
+                                    case R.EmojiTypes.PACK:
                                         e = s.packId
                                 }
-                                null != e && (null != this.groupedCustomEmojis[e] ? this.groupedCustomEmojis[e].push(s) : this.groupedCustomEmojis[e] = [s], n && R.default.compare(s.id, K) >= 0 && (null != this.newlyAddedEmoji[e] ? this.newlyAddedEmoji[e].push(s) : this.newlyAddedEmoji[e] = [s]))
+                                null != e && (null != this.groupedCustomEmojis[e] ? this.groupedCustomEmojis[e].push(s) : this.groupedCustomEmojis[e] = [s], n && U.default.compare(s.id, K) >= 0 && (null != this.newlyAddedEmoji[e] ? this.newlyAddedEmoji[e].push(s) : this.newlyAddedEmoji[e] = [s]))
                             }
                             null == this.disambiguatedEmoji && (this.disambiguatedEmoji = []), this.disambiguatedEmoji.push(s)
                         },
@@ -23370,7 +23370,7 @@
                         null != s && (a.each(s.usableEmojis, n), a.each(s.emoticons, i))
                     };
                     r(this.guildId);
-                    for (let e in this.newlyAddedEmoji) null != this.newlyAddedEmoji[e] ? this.newlyAddedEmoji[e] = this.newlyAddedEmoji[e].sort((e, s) => R.default.compare(s.id, e.id)).slice(0, 3) : this.newlyAddedEmoji[e] = [];
+                    for (let e in this.newlyAddedEmoji) null != this.newlyAddedEmoji[e] ? this.newlyAddedEmoji[e] = this.newlyAddedEmoji[e].sort((e, s) => U.default.compare(s.id, e.id)).slice(0, 3) : this.newlyAddedEmoji[e] = [];
                     j.default.getFlattenedGuildIds().forEach(e => {
                         e !== this.guildId && r(e)
                     }), p.default.getPacksForUser().map(e => {
@@ -23464,7 +23464,7 @@
             }
             class em extends u.default.PersistedStore {
                 initialize(e) {
-                    this.waitFor(v.default, E.default, C.default, M.default, p.default, D.default, b.default, L.default, I.default), null != e && (q = e), this.syncWith([P.default], e_), this.syncWith([p.default], eg)
+                    this.waitFor(v.default, C.default, E.default, M.default, p.default, D.default, b.default, L.default, I.default), null != e && (q = e), this.syncWith([P.default], e_), this.syncWith([p.default], eg)
                 }
                 getState() {
                     return q
@@ -23837,8 +23837,8 @@
                 }
             }
             let P = String.fromCodePoint(917631),
-                C = String.fromCodePoint(127988),
-                E = /^[\u{E0061}-\u{E007A}]$/u;
+                E = String.fromCodePoint(127988),
+                C = /^[\u{E0061}-\u{E007A}]$/u;
 
             function M(e, s) {
                 var n;
@@ -23853,11 +23853,11 @@
                     let s = o[e];
                     if (null != i && "" !== i) {
                         if (s === P) s = i + s, i = "";
-                        else if (E.test(s)) {
+                        else if (C.test(s)) {
                             i += s;
                             continue
                         } else r.push(D(i)), i = ""
-                    } else if (s === C) {
+                    } else if (s === E) {
                         i = s;
                         continue
                     }
@@ -24405,92 +24405,6 @@
                 }
             })
         },
-        103475: function(e, s, n) {
-            "use strict";
-            n.r(s), n.d(s, {
-                BurstAnalyticTypes: function() {
-                    return i
-                },
-                getBurstColorPalette: function() {
-                    return a
-                },
-                replaceAnimationColors: function() {
-                    return f
-                },
-                getBurstAnimationHash: function() {
-                    return _
-                }
-            });
-            var i, r = n("917351"),
-                o = n("172182"),
-                t = n("284679");
-
-            function a(e) {
-                var s, n;
-                let {
-                    colors: i,
-                    saturationFactor: r = 1
-                } = e;
-                if (null == i || i.length < 1) return null;
-                let a = (0, t.findColorByHsv)(i),
-                    f = o.default.parseString("#ffffff");
-                if (null == f) return null;
-                let _ = o.default.parseString("#36393e");
-                if (null == _) return null;
-                let d = o.default.parseString(a);
-                if (null == d) return null;
-                let u = (0, t.rawRgbToHsl)(d.red, d.blue, d.green),
-                    g = null !== (s = (0, t.getAccessibleColor)({
-                        colors: [(0, t.getColorLightnessAdjusted)(d, .6, !0), f],
-                        ratio: 3,
-                        saturationFactor: r
-                    })) && void 0 !== s ? s : d,
-                    m = null !== (n = (0, t.getAccessibleColor)({
-                        colors: [(0, t.getColorLightnessAdjusted)(d, .6, !1), _],
-                        ratio: 5,
-                        saturationFactor: r
-                    })) && void 0 !== n ? n : d,
-                    v = (0, t.getAccessibleColor)({
-                        colors: [d, f],
-                        ratio: 7,
-                        saturationFactor: r
-                    }),
-                    c = (0, t.getAccessibleColor)({
-                        colors: [d, _],
-                        ratio: 7,
-                        saturationFactor: r
-                    });
-                return {
-                    LIGHT: {
-                        accentColor: null == v ? void 0 : v.toHexString(),
-                        backgroundColor: (0, t.getSaturatedColorHex)({
-                            colorRGB: g,
-                            saturationFactor: r
-                        }),
-                        highlightColor: null == d ? void 0 : d.toHexString(),
-                        opacity: (null == u ? void 0 : u.saturation) < .1 ? .35 : .1
-                    },
-                    DARK: {
-                        accentColor: null == c ? void 0 : c.toHexString(),
-                        backgroundColor: (0, t.getSaturatedColorHex)({
-                            colorRGB: m,
-                            saturationFactor: r
-                        }),
-                        highlightColor: null == d ? void 0 : d.toHexString(),
-                        opacity: (null == u ? void 0 : u.saturation) < .1 ? .5 : .2
-                    }
-                }
-            }(i || (i = {})).OUT_OF_BURSTS = "out of burst reactions modal";
-            let f = (e, s) => {
-                    let n = (0, t.getComplimentaryPaletteForColor)([s.r, s.g, s.b], 2);
-                    return e = (e = e.replace(/(\[1,0,0,)/g, "[".concat(n[0][0] / 255, ",").concat(n[0][1] / 255, ",").concat(n[0][2] / 255, ","))).replace(/\[0,0,1,/g, "[".concat(n[1][0] / 255, ",").concat(n[1][1] / 255, ",").concat(n[1][2] / 255, ","))
-                },
-                _ = (0, r.memoize)(e => {
-                    let s = 0;
-                    for (let n = 0; n < e.length; n++) s = (s << 5) - s + e.charCodeAt(n);
-                    return Math.abs(s)
-                })
-        },
         172182: function(e, s, n) {
             "use strict";
             n.r(s), n.d(s, {
@@ -24905,7 +24819,7 @@
                     return P
                 },
                 getEmojiUrl: function() {
-                    return C
+                    return E
                 }
             });
             var i = n("736271"),
@@ -25008,7 +24922,6 @@
                 },
                 filterUnsupportedEmojis: u.default.filterUnsupportedEmojis,
                 getURL: u.default.getURL,
-                buildEmojiReactionColors: u.default.buildEmojiReactionColorsPlatformed,
                 isInternalEmojiForGuildId: b,
                 getEmojiUnavailableReason: w,
                 isCustomEmoji: V,
@@ -25084,7 +24997,7 @@
                 return await u.default.getEmojiColors(e)
             }
 
-            function C(e) {
+            function E(e) {
                 let s = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : 32,
                     {
                         id: n,
@@ -25102,19 +25015,18 @@
             "use strict";
             n.r(s), n.d(s, {
                 default: function() {
-                    return g
+                    return u
                 }
             });
             var i = n("247015"),
-                r = n("103475"),
-                o = n("315102"),
-                t = n("284679"),
-                a = n("103603"),
-                f = n("261742");
-            let _ = new Set(["™", "™️", "\xa9", "\xa9️", "\xae", "\xae️"]);
+                r = n("315102"),
+                o = n("284679"),
+                t = n("103603"),
+                a = n("261742");
+            let f = new Set(["™", "™️", "\xa9", "\xa9️", "\xae", "\xae️"]);
 
-            function d(e) {
-                if (_.has(e)) return "";
+            function _(e) {
+                if (f.has(e)) return "";
                 try {
                     let s = 0 > e.indexOf("‍") ? e.replace("️", "") : e;
                     return n("667057")("@discordapp/twemoji/dist/svg/".concat(i.default.convert.toCodePoint(s), ".svg").replace("@discordapp/twemoji/dist/svg/", "./"))
@@ -25122,40 +25034,36 @@
                     return console.warn(s, "no emoji for", e), ""
                 }
             }
-            async function u(e) {
+            async function d(e) {
                 let s;
                 let {
                     id: n,
                     name: i
                 } = e;
-                s = null != n ? o.default.getEmojiURL({
+                s = null != n ? r.default.getEmojiURL({
                     id: n,
                     size: 32,
                     animated: !1
-                }) : d(i);
-                let r = await (0, a.getPaletteForAvatar)(s);
-                return null == r ? void 0 : r.map(e => {
+                }) : _(i);
+                let a = await (0, t.getPaletteForAvatar)(s);
+                return null == a ? void 0 : a.map(e => {
                     let [s, n, i] = e;
-                    return (0, t.rgbToHex)(s, n, i)
+                    return (0, o.rgbToHex)(s, n, i)
                 })
             }
-            var g = {
-                getURL: f.default.makeMemoizer(d),
+            var u = {
+                getURL: a.default.makeMemoizer(_),
                 filterUnsupportedEmojis: function(e) {
                     return e
                 },
-                buildEmojiReactionColorsPlatformed: function(e) {
+                applyPlatformToThemedEmojiColorPalette: function(e) {
                     let {
-                        colors: s,
-                        saturationFactor: n = 1,
-                        shouldProcessMobileColors: i = !1
+                        palette: s,
+                        shouldProcessMobileColors: n = !1
                     } = e;
-                    return (0, r.getBurstColorPalette)({
-                        colors: s,
-                        saturationFactor: n
-                    })
+                    return s
                 },
-                getEmojiColors: u,
+                getEmojiColors: d,
                 triggerFullscreenAnimation: function(e) {
                     let {
                         channelId: s,
@@ -25246,4 +25154,4 @@
         }
     }
 ]);
-//# sourceMappingURL=807b107e2e7bb243a13f.js.map
+//# sourceMappingURL=7642c3ed74fa65b8c321.js.map

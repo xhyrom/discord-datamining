@@ -30,8 +30,8 @@
             });
             var u = n("249654"),
                 l = n("913144"),
-                i = n("401690"),
-                r = n("233069"),
+                r = n("401690"),
+                i = n("233069"),
                 a = n("42203"),
                 o = n("245997"),
                 s = n("697218"),
@@ -41,7 +41,7 @@
                 let t = arguments.length > 1 && void 0 !== arguments[1] && arguments[1],
                     n = arguments.length > 2 && void 0 !== arguments[2] && arguments[2],
                     u = arguments.length > 3 ? arguments[3] : void 0,
-                    i = arguments.length > 4 ? arguments[4] : void 0;
+                    r = arguments.length > 4 ? arguments[4] : void 0;
                 l.default.dispatch({
                     type: "CHANNEL_ACK",
                     channelId: e,
@@ -49,7 +49,7 @@
                     immediate: t,
                     force: n,
                     context: d.CURRENT_APP_CONTEXT,
-                    location: i
+                    location: r
                 })
             }
 
@@ -65,7 +65,7 @@
                             let {
                                 channel: t
                             } = e;
-                            return (0, r.isGuildReadableType)(t.type)
+                            return (0, i.isGuildReadableType)(t.type)
                         }).map(e => {
                             let {
                                 channel: t
@@ -74,7 +74,7 @@
                         }),
                         d = [...s];
                     for (let e of (s.forEach(e => {
-                            let t = i.default.getActiveJoinedThreadsForParent(u.guild_id, e);
+                            let t = r.default.getActiveJoinedThreadsForParent(u.guild_id, e);
                             for (let e in t) d.push(e)
                         }), d)) c(e, t, n)
                 }(e.id, !0, !0) : e.isForumLikeChannel() ? c(e.id, !0, !0, u.default.fromTimestamp(Date.now())) : c(e.id, !0, !0)
@@ -139,10 +139,10 @@
                     return I
                 }
             });
-            var u, l, i = n("37983");
+            var u, l, r = n("37983");
             n("884691");
-            var r = n("414456"),
-                a = n.n(r),
+            var i = n("414456"),
+                a = n.n(i),
                 o = n("394846"),
                 s = n("77078"),
                 d = n("945330"),
@@ -155,27 +155,27 @@
                     closeAction: t,
                     variant: n,
                     keybind: u,
-                    className: r
+                    className: i
                 } = e;
-                return (0, i.jsxs)("div", {
-                    className: a(_.container, r),
-                    children: [(0, i.jsx)(s.Clickable, {
+                return (0, r.jsxs)("div", {
+                    className: a(_.container, i),
+                    children: [(0, r.jsx)(s.Clickable, {
                         className: a(_.closeButton, {
                             [_.closeButtonBold]: n === l.BOLD,
                             [_.closeButtonSolid]: n === l.SOLID
                         }),
                         onClick: t,
                         "aria-label": E.default.Messages.CLOSE,
-                        children: n === l.SOLID ? (0, i.jsx)(c.default, {
+                        children: n === l.SOLID ? (0, r.jsx)(c.default, {
                             width: 24,
                             height: 24,
                             "aria-hidden": !0
-                        }) : (0, i.jsx)(d.default, {
+                        }) : (0, r.jsx)(d.default, {
                             width: 18,
                             height: 18,
                             "aria-hidden": !0
                         })
-                    }), o.isMobile ? null : (0, i.jsx)("div", {
+                    }), o.isMobile ? null : (0, r.jsx)("div", {
                         className: a(_.keybind),
                         "aria-hidden": !0,
                         children: u
@@ -191,34 +191,34 @@
             "use strict";
             n.r(t), n.d(t, {
                 ChatCheckIcon: function() {
-                    return r
+                    return i
                 }
             });
             var u = n("37983");
             n("884691");
             var l = n("669491"),
-                i = n("75196");
-            let r = e => {
+                r = n("75196");
+            let i = e => {
                 let {
                     width: t = 24,
                     height: n = 24,
-                    color: r = l.default.colors.INTERACTIVE_NORMAL,
+                    color: i = l.default.colors.INTERACTIVE_NORMAL,
                     colorClass: a = "",
                     ...o
                 } = e;
                 return (0, u.jsxs)("svg", {
-                    ...(0, i.default)(o),
+                    ...(0, r.default)(o),
                     xmlns: "http://www.w3.org/2000/svg",
                     width: t,
                     height: n,
                     fill: "none",
                     viewBox: "0 0 24 24",
                     children: [(0, u.jsx)("path", {
-                        fill: "string" == typeof r ? r : r.css,
+                        fill: "string" == typeof i ? i : i.css,
                         d: "M12.657 21.979c.407-.027.567-.512.28-.8l-.058-.058a3 3 0 1 1 4.242-4.242l.525.525a.5.5 0 0 0 .708 0l2.525-2.525c.196-.197.413-.36.644-.49a.535.535 0 0 0 .27-.35c.136-.659.207-1.34.207-2.039 0-5.523-4.477-10-10-10S2 6.477 2 12c0 1.97.57 3.808 1.554 5.357a.517.517 0 0 1-.04.617l-2.067 2.369C.882 20.989 1.342 22 2.2 22H12c.22 0 .44-.007.657-.021Z",
                         className: a
                     }), (0, u.jsx)("path", {
-                        fill: "string" == typeof r ? r : r.css,
+                        fill: "string" == typeof i ? i : i.css,
                         d: "M23.707 17.707a1 1 0 0 0-1.414-1.414L18 20.586l-2.293-2.293a1 1 0 0 0-1.414 1.414l3 3a1 1 0 0 0 1.414 0l5-5Z",
                         className: a
                     })]
@@ -229,111 +229,15 @@
             "use strict";
             n.r(t), n.d(t, {
                 default: function() {
-                    return i
+                    return r
                 }
             });
             var u = n("917351"),
                 l = n.n(u);
 
-            function i(e, t) {
+            function r(e, t) {
                 let n = arguments.length > 2 && void 0 !== arguments[2] ? arguments[2] : () => !0;
                 return l(e).map(e => "null" === e.channel.id ? t[e.channel.id] : [e, t[e.channel.id]]).flattenDeep().filter(n).value()
-            }
-        },
-        558986: function(e, t, n) {
-            "use strict";
-            n.r(t), n.d(t, {
-                getEmojiCaptionsForUser: function() {
-                    return r
-                }
-            });
-            var u = n("872717"),
-                l = n("913144"),
-                i = n("49111");
-            async function r() {
-                l.default.dispatch({
-                    type: "EMOJI_CAPTIONS_FETCH"
-                });
-                try {
-                    let {
-                        body: e
-                    } = await u.default.get({
-                        url: i.Endpoints.EMOJI_CAPTIONS_GET
-                    }), t = {};
-                    for (let n of e.items) t[n.emoji_id] = n.emoji_captions;
-                    l.default.dispatch({
-                        type: "EMOJI_CAPTIONS_FETCH_SUCCESS",
-                        emojiCaptions: t
-                    })
-                } catch (e) {
-                    l.default.dispatch({
-                        type: "EMOJI_CAPTIONS_FETCH_ERROR",
-                        is4XXError: function(e) {
-                            return (null == e ? void 0 : e.status) >= 400 && (null == e ? void 0 : e.status) <= 499
-                        }(e.body)
-                    })
-                }
-            }
-        },
-        236266: function(e, t, n) {
-            "use strict";
-            n.r(t), n.d(t, {
-                getEmojiCaptionsExperimentConfig: function() {
-                    return i
-                }
-            });
-            var u = n("862205");
-            let l = (0, u.createExperiment)({
-                kind: "user",
-                id: "2023-10_emoji_captions",
-                label: "Emoji Captions Experiment",
-                defaultConfig: {
-                    isEnabled: !1
-                },
-                treatments: [{
-                    id: 1,
-                    label: "Enabled",
-                    config: {
-                        isEnabled: !0
-                    }
-                }]
-            });
-
-            function i(e) {
-                let {
-                    location: t,
-                    trackExposureOptions: n = {},
-                    autoTrackExposure: u = !0
-                } = e, i = l.getCurrentConfig({
-                    location: t
-                }, {
-                    autoTrackExposure: u,
-                    trackExposureOptions: n
-                });
-                return i
-            }
-        },
-        765969: function(e, t, n) {
-            "use strict";
-            n.r(t), n.d(t, {
-                maybeGetEmojiCaptionsForUser: function() {
-                    return a
-                }
-            });
-            var u = n("697218"),
-                l = n("558986"),
-                i = n("236266"),
-                r = n("802461");
-            async function a() {
-                let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : "unknown",
-                    t = u.default.getCurrentUser();
-                if (null == t) return;
-                let n = (0, i.getEmojiCaptionsExperimentConfig)({
-                    location: e
-                });
-                if (!n.isEnabled || r.default.getIsFetching()) return;
-                let a = r.default.getEmojiCaptionsTTL();
-                !(null != a && Date.now() < a) && await (0, l.getEmojiCaptionsForUser)()
             }
         },
         298878: function(e, t, n) {
@@ -346,8 +250,8 @@
             var u = n("37983");
             n("884691");
             var l = n("669491"),
-                i = n("956089"),
-                r = n("782340");
+                r = n("956089"),
+                i = n("782340");
 
             function a(e) {
                 let {
@@ -355,9 +259,9 @@
                     color: n = l.default.unsafe_rawColors.BRAND_500.css,
                     ...a
                 } = e;
-                return (0, u.jsx)(i.TextBadge, {
+                return (0, u.jsx)(r.TextBadge, {
                     ...a,
-                    text: r.default.Messages.BETA,
+                    text: i.default.Messages.BETA,
                     color: n,
                     className: t
                 })
@@ -387,8 +291,8 @@
             });
             var u = n("872717"),
                 l = n("913144"),
-                i = n("569883"),
-                r = n("871336"),
+                r = n("569883"),
+                i = n("871336"),
                 a = n("49111");
             async function o() {
                 l.default.dispatch({
@@ -400,7 +304,7 @@
                     });
                     l.default.dispatch({
                         type: "INVENTORY_FETCH_SUCCESS",
-                        packs: e.body.map(e => r.default.fromServer(e))
+                        packs: e.body.map(e => i.default.fromServer(e))
                     })
                 } catch (e) {
                     l.default.dispatch({
@@ -415,7 +319,7 @@
                 let {
                     authorId: t,
                     packId: n,
-                    expressionName: i
+                    expressionName: r
                 } = e;
                 try {
                     let e = await u.default.put({
@@ -423,12 +327,12 @@
                         body: {
                             author_id: t,
                             pack_id: n,
-                            name_override: i
+                            name_override: r
                         }
                     });
                     l.default.dispatch({
                         type: "INVENTORY_COLLECT_PACK_SUCCESS",
-                        pack: r.default.fromServer(e.body)
+                        pack: i.default.fromServer(e.body)
                     })
                 } catch (e) {
                     return
@@ -476,7 +380,7 @@
                     let e = await u.default.get({
                         url: a.Endpoints.INVENTORY_PACK_METADATA(t)
                     });
-                    return i.default.createFromServer(e.body)
+                    return r.default.createFromServer(e.body)
                 } catch (e) {
                     return
                 }
@@ -498,24 +402,24 @@
                     return l
                 },
                 INVENTORY_PACK_ADDED_NOTIFICATION_DURATION: function() {
-                    return i
+                    return r
                 }
             });
             let u = 100,
                 l = 1,
-                i = 2e3
+                r = 2e3
         },
         529932: function(e, t, n) {
             "use strict";
             n.r(t), n.d(t, {
                 getJoinedEmojiSourceGuildData: function() {
-                    return C
-                },
-                useEmojiAndSourceGuild: function() {
                     return O
                 },
+                useEmojiAndSourceGuild: function() {
+                    return N
+                },
                 usePackCollectionData: function() {
-                    return P
+                    return R
                 },
                 useExpressionSourceGuildDataForGuildLeaveModal: function() {
                     return T
@@ -523,9 +427,9 @@
             });
             var u = n("884691"),
                 l = n("65597"),
+                r = n("913144"),
                 i = n("385976"),
-                r = n("858619"),
-                a = n("765969"),
+                a = n("858619"),
                 o = n("305961"),
                 s = n("697218"),
                 d = n("719923"),
@@ -533,15 +437,16 @@
                 E = n("166465"),
                 _ = n("557562"),
                 f = n("446066"),
-                I = n("49111");
-            let C = (e, t, n) => {
+                I = n("49111"),
+                C = n("958706");
+            let O = (e, t, n) => {
                     let u = null != n ? e.getCustomEmojiById(n) : null;
                     switch (null == u ? void 0 : u.type) {
-                        case r.EmojiTypes.GUILD:
+                        case a.EmojiTypes.GUILD:
                             return {
                                 emoji: u, joinedEmojiSourceGuildRecord: t.getGuild(null == u ? void 0 : u.guildId)
                             };
-                        case r.EmojiTypes.PACK:
+                        case a.EmojiTypes.PACK:
                             return {
                                 emoji: u, joinedEmojiSourceGuildRecord: t.getGuild(null == u ? void 0 : u.packId)
                             };
@@ -551,14 +456,14 @@
                             }
                     }
                 },
-                O = e => {
+                N = e => {
                     let {
                         emojiId: t,
                         refreshPositionKey: n
                     } = e, {
                         joinedEmojiSourceGuildRecord: r,
                         emoji: a
-                    } = (0, l.useStateFromStoresObject)([i.default, o.default], () => C(i.default, o.default, t)), s = null != r, d = null != r && r.hasFeature(I.GuildFeatures.DISCOVERABLE), c = (!s || d) && null != t, [E, _] = u.useState(c), O = null != r ? f.default.createFromGuildRecord(r) : null, [N, P] = u.useState(O);
+                    } = (0, l.useStateFromStoresObject)([i.default, o.default], () => O(i.default, o.default, t)), s = null != r, d = null != r && r.hasFeature(I.GuildFeatures.DISCOVERABLE), c = (!s || d) && null != t, [E, _] = u.useState(c), C = null != r ? f.default.createFromGuildRecord(r) : null, [N, P] = u.useState(C);
                     return u.useEffect(() => {
                         null == n || n();
                         let e = async () => {
@@ -578,7 +483,7 @@
                         isFetching: E
                     }
                 },
-                N = e => {
+                P = e => {
                     let {
                         expressionSourceGuild: t
                     } = e, n = (0, l.default)([E.default], () => null != t ? E.default.getPackByPackId({
@@ -586,18 +491,18 @@
                     }) : null);
                     return null != n ? n : null
                 },
-                P = e => {
+                R = e => {
                     let {
                         expressionSourceGuild: t
-                    } = e, n = (0, l.default)([s.default], () => s.default.getCurrentUser()), u = d.default.isPremium(n), i = (0, c.useInventoryGuildPacksUserExperiment)({
+                    } = e, n = (0, l.default)([s.default], () => s.default.getCurrentUser()), u = d.default.isPremium(n), r = (0, c.useInventoryGuildPacksUserExperiment)({
                         expressionSourceGuild: t
-                    }), r = (0, l.default)([E.default], () => E.default.countPacksCollected()), a = N({
+                    }), i = (0, l.default)([E.default], () => E.default.countPacksCollected()), a = P({
                         expressionSourceGuild: t
-                    }), o = r >= (0, _.getMaxPacksForUserType)(u);
+                    }), o = i >= (0, _.getMaxPacksForUserType)(u);
                     return {
-                        ...i,
+                        ...r,
                         collectedPack: a,
-                        numPacksCollected: r,
+                        numPacksCollected: i,
                         hasReachedMaxPacksCollected: o,
                         isPremium: u
                     }
@@ -611,7 +516,7 @@
                             guildId: e.id,
                             autoTrackExposure: !1
                         }),
-                        r = t.collectEnabled && n.allowCollection,
+                        a = t.collectEnabled && n.allowCollection,
                         o = (0, l.default)([i.default], () => {
                             let t = i.default.getGuildEmoji(e.id).filter(e => 0 === e.roles.length && e.available && !e.managed);
                             return 0 === t.length ? null : t[0].id
@@ -621,9 +526,12 @@
                         let e = async e => {
                             d(await f.default.getGuildFromEmojiId(e))
                         };
-                        r && null != o && e(o)
+                        a && null != o && e(o)
                     }, []), u.useEffect(() => {
-                        (0, _.maybeGetPacksForUser)("guild leave modal"), (0, a.maybeGetEmojiCaptionsForUser)("guild leave modal")
+                        r.default.dispatch({
+                            type: "EMOJI_INTERACTION_INITIATED",
+                            interaction: C.EmojiInteractionPoint.GuildLeaveModalShown
+                        })
                     }, []), s
                 }
         },
@@ -645,8 +553,8 @@
             });
             var u = n("811022"),
                 l = n("412745"),
-                i = n("697218"),
-                r = n("599110"),
+                r = n("697218"),
+                i = n("599110"),
                 a = n("315102"),
                 o = n("252931"),
                 s = n("13162"),
@@ -659,7 +567,7 @@
             async function I() {
                 let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : "unknown",
                     t = "maybeGetPacks, trigger point: ".concat(e, " "),
-                    n = i.default.getCurrentUser();
+                    n = r.default.getCurrentUser();
                 if (null == n) {
                     f(t + "no current user");
                     return
@@ -697,7 +605,7 @@
                         expressionSourceGuild: t,
                         action: n,
                         onComplete: u,
-                        nonce: i,
+                        nonce: r,
                         expressionName: a
                     } = e;
                     return () => {
@@ -712,10 +620,10 @@
                             expressionName: o ? void 0 : a
                         }) : n === l.EmojiPopoutType.REMOVE_PACK && (0, s.uncollectPack)({
                             packId: e
-                        }), r.default.track(E.AnalyticEvents.INVENTORY_PACK_ACTION_COMPLETED, {
+                        }), i.default.track(E.AnalyticEvents.INVENTORY_PACK_ACTION_COMPLETED, {
                             type: n,
                             inventory_pack_id: e,
-                            nonce: i
+                            nonce: r
                         }), null == u || u()
                     }
                 },
@@ -729,8 +637,8 @@
                 }
             });
             var u, l = n("872717"),
-                i = n("666038"),
-                r = n("813006"),
+                r = n("666038"),
+                i = n("813006"),
                 a = n("315102"),
                 o = n("159885"),
                 s = n("886167"),
@@ -752,7 +660,7 @@
                 } catch {}
                 return t
             };
-            class E extends i.default {
+            class E extends r.default {
                 getIconURL(e) {
                     let t = arguments.length > 1 && void 0 !== arguments[1] && arguments[1];
                     return a.default.getGuildIconURL({
@@ -829,7 +737,7 @@
                     })
                 }
                 static createFromGuildType(e) {
-                    return e instanceof E ? e : e instanceof r.default ? E.createFromGuildRecord(e) : E.createFromDiscoverableGuild(e)
+                    return e instanceof E ? e : e instanceof i.default ? E.createFromGuildRecord(e) : E.createFromDiscoverableGuild(e)
                 }
                 constructor(e) {
                     super(), this.id = e.id, this.name = e.name, this.icon = e.icon, this.description = e.description, this.features = e.features, this.premiumTier = e.premiumTier, this.premiumSubscriberCount = e.premiumSubscriberCount, this.presenceCount = e.presenceCount, this.memberCount = e.memberCount, this.emojis = e.emojis, this.inventorySettings = e.inventorySettings
@@ -859,24 +767,24 @@
             "use strict";
             n.r(t), n.d(t, {
                 EmojiPopoutType: function() {
-                    return r
+                    return i
                 },
                 getEmojiPopoutData: function() {
                     return E
                 }
             });
-            var u, l, i, r, a = n("365058"),
+            var u, l, r, i, a = n("365058"),
                 o = n("782340");
-            (u = i || (i = {})).DEFAULT = "Custom Emoji Popout", u.CROSS_SERVER = "Custom Emoji Popout (Cross-Server)", u.UPSELL_CURRENT_SERVER_JOINED = "Custom Emoji Popout (Upsell Joined Current-Server)", u.UPSELL_CROSS_SERVER_JOINED = "Custom Emoji Popout (Upsell Joined Cross-Server)", u.UPSELL_CROSS_SERVER_JOINABLE = "Custom Emoji Popout (Upsell Not-Joined Cross-Server)", u.UPSELL_CROSS_SERVER_UNJOINABLE = "Custom Emoji Popout (Soft Upsell)", (l = r || (r = {})).GET_PREMIUM_INVENTORY_DISABLED = "GET_PREMIUM_INVENTORY_DISABLED", l.GET_PREMIUM_INVENTORY_ENABLED = "GET_PREMIUM_INVENTORY_ENABLED", l.JOIN_GUILD = "JOIN_GUILD", l.ADD_PACK = "ADD_PACK", l.REMOVE_PACK = "REMOVE_PACK", l.UNAVAILABLE = "UNAVAILABLE";
+            (u = r || (r = {})).DEFAULT = "Custom Emoji Popout", u.CROSS_SERVER = "Custom Emoji Popout (Cross-Server)", u.UPSELL_CURRENT_SERVER_JOINED = "Custom Emoji Popout (Upsell Joined Current-Server)", u.UPSELL_CROSS_SERVER_JOINED = "Custom Emoji Popout (Upsell Joined Cross-Server)", u.UPSELL_CROSS_SERVER_JOINABLE = "Custom Emoji Popout (Upsell Not-Joined Cross-Server)", u.UPSELL_CROSS_SERVER_UNJOINABLE = "Custom Emoji Popout (Soft Upsell)", (l = i || (i = {})).GET_PREMIUM_INVENTORY_DISABLED = "GET_PREMIUM_INVENTORY_DISABLED", l.GET_PREMIUM_INVENTORY_ENABLED = "GET_PREMIUM_INVENTORY_ENABLED", l.JOIN_GUILD = "JOIN_GUILD", l.ADD_PACK = "ADD_PACK", l.REMOVE_PACK = "REMOVE_PACK", l.UNAVAILABLE = "UNAVAILABLE";
             let s = e => {
                     let {
                         isPremium: t,
                         hasJoinedEmojiSourceGuild: n,
                         isUnusableRoleSubscriptionEmoji: u,
                         emojiComesFromCurrentGuild: l,
-                        isDiscoverable: r
-                    } = e, a = i.DEFAULT;
-                    return t && !n && r ? a = i.CROSS_SERVER : t || !n || u ? !t && !n && (a = r ? i.UPSELL_CROSS_SERVER_JOINABLE : i.UPSELL_CROSS_SERVER_UNJOINABLE) : a = l ? i.UPSELL_CURRENT_SERVER_JOINED : i.UPSELL_CROSS_SERVER_JOINED, a
+                        isDiscoverable: i
+                    } = e, a = r.DEFAULT;
+                    return t && !n && i ? a = r.CROSS_SERVER : t || !n || u ? !t && !n && (a = i ? r.UPSELL_CROSS_SERVER_JOINABLE : r.UPSELL_CROSS_SERVER_UNJOINABLE) : a = l ? r.UPSELL_CURRENT_SERVER_JOINED : r.UPSELL_CROSS_SERVER_JOINED, a
                 },
                 d = e => {
                     let {
@@ -884,8 +792,8 @@
                         hasJoinedEmojiSourceGuild: n,
                         isUnusableRoleSubscriptionEmoji: u,
                         isDiscoverable: l,
-                        emojiComesFromCurrentGuild: i,
-                        userIsRoleSubscriber: r,
+                        emojiComesFromCurrentGuild: r,
+                        userIsRoleSubscriber: i,
                         isRoleSubscriptionEmoji: a,
                         shouldHideRoleSubscriptionCTA: s,
                         packCollectionData: d,
@@ -895,7 +803,7 @@
                         let e = _ && (null == d ? void 0 : d.showTryPacksModalAndV2Copy) === !0;
                         return e ? I ? o.default.Messages.EMOJI_POPOUT_ADDED_PACK_DESCRIPTION : o.default.Messages.INVENTORY_EMOJI_FROM_ADDABLE_PACK : null
                     }
-                    return E = t ? n ? a ? s && u ? o.default.Messages.ROLE_SUBSCRIPTION_EMOJI_POPOUT_PURCHASE_UNAVAILABLE_DESCRIPTION : u ? r ? o.default.Messages.ROLE_SUBSCRIPTION_EMOJI_POPOUT_UPGRADE_UPSELL_DESCRIPTION : o.default.Messages.ROLE_SUBSCRIPTION_EMOJI_POPOUT_PURCHASE_UPSELL_DESCRIPTION : o.default.Messages.ROLE_SUBSCRIPTION_EMOJI_POPOUT_SUBSCRIBED_DESCRIPTION : i ? o.default.Messages.EMOJI_POPOUT_PREMIUM_CURRENT_GUILD_DESCRIPTION : o.default.Messages.EMOJI_POPOUT_PREMIUM_JOINED_GUILD_DESCRIPTION : l ? o.default.Messages.EMOJI_POPOUT_PREMIUM_UNJOINED_DISCOVERABLE_GUILD_DESCRIPTION : o.default.Messages.EMOJI_POPOUT_PREMIUM_UNJOINED_PRIVATE_GUILD_DESCRIPTION : n ? s && u ? o.default.Messages.ROLE_SUBSCRIPTION_EMOJI_POPOUT_PURCHASE_UNAVAILABLE_DESCRIPTION : u ? r ? o.default.Messages.ROLE_SUBSCRIPTION_EMOJI_POPOUT_UPGRADE_UPSELL_DESCRIPTION : o.default.Messages.ROLE_SUBSCRIPTION_EMOJI_POPOUT_PURCHASE_UPSELL_DESCRIPTION : i ? o.default.Messages.EMOJI_POPOUT_CURRENT_GUILD_DESCRIPTION : o.default.Messages.EMOJI_POPOUT_JOINED_GUILD_DESCRIPTION : l ? o.default.Messages.EMOJI_POPOUT_UNJOINED_DISCOVERABLE_GUILD_DESCRIPTION : o.default.Messages.EMOJI_POPOUT_UNJOINED_PRIVATE_GUILD_DESCRIPTION.format({
+                    return E = t ? n ? a ? s && u ? o.default.Messages.ROLE_SUBSCRIPTION_EMOJI_POPOUT_PURCHASE_UNAVAILABLE_DESCRIPTION : u ? i ? o.default.Messages.ROLE_SUBSCRIPTION_EMOJI_POPOUT_UPGRADE_UPSELL_DESCRIPTION : o.default.Messages.ROLE_SUBSCRIPTION_EMOJI_POPOUT_PURCHASE_UPSELL_DESCRIPTION : o.default.Messages.ROLE_SUBSCRIPTION_EMOJI_POPOUT_SUBSCRIBED_DESCRIPTION : r ? o.default.Messages.EMOJI_POPOUT_PREMIUM_CURRENT_GUILD_DESCRIPTION : o.default.Messages.EMOJI_POPOUT_PREMIUM_JOINED_GUILD_DESCRIPTION : l ? o.default.Messages.EMOJI_POPOUT_PREMIUM_UNJOINED_DISCOVERABLE_GUILD_DESCRIPTION : o.default.Messages.EMOJI_POPOUT_PREMIUM_UNJOINED_PRIVATE_GUILD_DESCRIPTION : n ? s && u ? o.default.Messages.ROLE_SUBSCRIPTION_EMOJI_POPOUT_PURCHASE_UNAVAILABLE_DESCRIPTION : u ? i ? o.default.Messages.ROLE_SUBSCRIPTION_EMOJI_POPOUT_UPGRADE_UPSELL_DESCRIPTION : o.default.Messages.ROLE_SUBSCRIPTION_EMOJI_POPOUT_PURCHASE_UPSELL_DESCRIPTION : r ? o.default.Messages.EMOJI_POPOUT_CURRENT_GUILD_DESCRIPTION : o.default.Messages.EMOJI_POPOUT_JOINED_GUILD_DESCRIPTION : l ? o.default.Messages.EMOJI_POPOUT_UNJOINED_DISCOVERABLE_GUILD_DESCRIPTION : o.default.Messages.EMOJI_POPOUT_UNJOINED_PRIVATE_GUILD_DESCRIPTION.format({
                         openPremiumSettings: c
                     })
                 },
@@ -905,21 +813,21 @@
                         isPremium: n,
                         hasJoinedEmojiSourceGuild: u,
                         isUnusableRoleSubscriptionEmoji: l,
-                        isDiscoverable: i,
+                        isDiscoverable: r,
                         packCollectionData: s
-                    } = e, d = (null == s ? void 0 : s.collectEnabled) === !0, c = (null == s ? void 0 : s.viewAndUseEnabled) === !0, E = (null == s ? void 0 : s.collectedPack) != null, _ = (null == s ? void 0 : s.showTryPacksModalAndV2Copy) === !0, f = !d && !E, I = !u && i;
+                    } = e, d = (null == s ? void 0 : s.collectEnabled) === !0, c = (null == s ? void 0 : s.viewAndUseEnabled) === !0, E = (null == s ? void 0 : s.collectedPack) != null, _ = (null == s ? void 0 : s.showTryPacksModalAndV2Copy) === !0, f = !d && !E, I = !u && r;
                     if ((f || !c) && n && I) return {
-                        type: r.JOIN_GUILD,
+                        type: i.JOIN_GUILD,
                         text: o.default.Messages.GUILD_PROFILE_JOIN_SERVER_BUTTON,
                         description: null
                     };
                     if (!n && (u && !l || (f || !c) && I)) return {
-                        type: r.GET_PREMIUM_INVENTORY_DISABLED,
+                        type: i.GET_PREMIUM_INVENTORY_DISABLED,
                         text: o.default.Messages.EMOJI_POPOUT_PREMIUM_CTA,
                         description: null
                     };
                     if (d && !u && !E && n) return {
-                        type: r.ADD_PACK,
+                        type: i.ADD_PACK,
                         text: o.default.Messages.INVENTORY_ADD_PACK,
                         description: _ ? o.default.Messages.INVENTORY_ADD_PACK_WITHOUT_JOINING_V2.format({
                             maxPacks: a.INVENTORY_MAX_PACKS
@@ -927,7 +835,7 @@
                     };
                     else if (!d || u || E || n) {
                         if (d && !u && E) return {
-                            type: r.REMOVE_PACK,
+                            type: i.REMOVE_PACK,
                             text: o.default.Messages.INVENTORY_REMOVE_PACK,
                             description: _ ? null : o.default.Messages.INVENTORY_REMOVE_PACK_DESCRIPTION
                         }
@@ -941,13 +849,13 @@
                                 maxPacks: a.INVENTORY_MAX_PACKS
                             });
                         return {
-                            type: e ? r.GET_PREMIUM_INVENTORY_ENABLED : r.ADD_PACK,
+                            type: e ? i.GET_PREMIUM_INVENTORY_ENABLED : i.ADD_PACK,
                             text: e ? o.default.Messages.EMOJI_POPOUT_PREMIUM_CTA : o.default.Messages.INVENTORY_ADD_PACK,
                             description: n
                         }
                     }
                     return {
-                        type: r.UNAVAILABLE,
+                        type: i.UNAVAILABLE,
                         text: null,
                         description: null
                     }
@@ -967,13 +875,13 @@
             "use strict";
             n.r(t), n.d(t, {
                 default: function() {
-                    return g
+                    return U
                 }
             });
             var u = n("446674"),
                 l = n("913144"),
-                i = n("320954"),
-                r = n("379881"),
+                r = n("320954"),
+                i = n("379881"),
                 a = n("271938"),
                 o = n("42203"),
                 s = n("923959"),
@@ -1016,14 +924,14 @@
                         channel: t,
                         index: -1
                     }), n[t.id] = []
-                }), t[0, s.GUILD_SELECTABLE_CHANNELS_KEY].forEach(u), t[0, s.GUILD_VOCAL_CHANNELS_KEY].forEach(u), (0, i.default)(n._categories, n).forEach(O), _[e] = n, n
+                }), t[0, s.GUILD_SELECTABLE_CHANNELS_KEY].forEach(u), t[0, s.GUILD_VOCAL_CHANNELS_KEY].forEach(u), (0, r.default)(n._categories, n).forEach(O), _[e] = n, n
             }
 
             function P() {
                 _ = {}, null != E && N(E)
             }
 
-            function T(e) {
+            function R(e) {
                 let {
                     guild: {
                         id: t
@@ -1032,7 +940,7 @@
                 _[t] = void 0, E === t && N(t)
             }
 
-            function R(e) {
+            function T(e) {
                 let {
                     channel: {
                         guild_id: t
@@ -1042,25 +950,25 @@
                 _[t] = void 0, E === t && N(t)
             }
 
-            function m(e) {
+            function A(e) {
                 let {
                     guildId: t
                 } = e;
                 _[t] = void 0, t === E && N(t)
             }
 
-            function A(e, t) {
+            function S(e, t) {
                 if (f = t, null == e || null == e.getGuildId()) return !1;
                 let n = e.getGuildId();
                 return null != n && (_[n] = void 0, n === E && N(n), !0)
             }
 
-            function p() {
+            function m() {
                 N(c.FAVORITES)
             }
-            class S extends u.default.Store {
+            class p extends u.default.Store {
                 initialize() {
-                    this.waitFor(s.default, d.default, a.default, o.default, r.default), this.syncWith([r.default], p)
+                    this.waitFor(s.default, d.default, a.default, o.default, i.default), this.syncWith([i.default], m)
                 }
                 getCategories(e) {
                     return null != e ? function(e) {
@@ -1069,8 +977,8 @@
                     }(e) : C
                 }
             }
-            S.displayName = "GuildCategoryStore";
-            var g = new S(l.default, {
+            p.displayName = "GuildCategoryStore";
+            var U = new p(l.default, {
                 CHANNEL_SELECT: function(e) {
                     let {
                         guildId: t
@@ -1081,8 +989,8 @@
                 CONNECTION_OPEN: P,
                 OVERLAY_INITIALIZE: P,
                 CACHE_LOADED_LAZY: P,
-                GUILD_CREATE: T,
-                GUILD_UPDATE: T,
+                GUILD_CREATE: R,
+                GUILD_UPDATE: R,
                 GUILD_DELETE: function(e) {
                     let {
                         guild: {
@@ -1091,8 +999,8 @@
                     } = e;
                     delete _[t]
                 },
-                CHANNEL_CREATE: R,
-                CHANNEL_DELETE: R,
+                CHANNEL_CREATE: T,
+                CHANNEL_DELETE: T,
                 CHANNEL_UPDATES: function(e) {
                     let {
                         channels: t
@@ -1115,16 +1023,16 @@
                     if (null == E) return !1;
                     N(E)
                 },
-                GUILD_ROLE_CREATE: m,
-                GUILD_ROLE_UPDATE: m,
-                GUILD_ROLE_DELETE: m,
-                IMPERSONATE_UPDATE: m,
-                IMPERSONATE_STOP: m,
+                GUILD_ROLE_CREATE: A,
+                GUILD_ROLE_UPDATE: A,
+                GUILD_ROLE_DELETE: A,
+                IMPERSONATE_UPDATE: A,
+                IMPERSONATE_STOP: A,
                 VOICE_CHANNEL_SELECT: function(e) {
                     let {
                         channelId: t
                     } = e;
-                    return null == t && null != f ? A(o.default.getChannel(f), null) : A(o.default.getChannel(t), t)
+                    return null == t && null != f ? S(o.default.getChannel(f), null) : S(o.default.getChannel(t), t)
                 },
                 VOICE_STATE_UPDATES: function(e) {
                     let {
@@ -1135,7 +1043,7 @@
                             channelId: n,
                             sessionId: u
                         } = t;
-                        return a.default.getSessionId() !== u ? e : A(o.default.getChannel(n), n) || e
+                        return a.default.getSessionId() !== u ? e : S(o.default.getChannel(n), n) || e
                     }, !1)
                 }
             })
@@ -1150,31 +1058,31 @@
             var u = n("37983");
             n("884691");
             var l = n("469563"),
-                i = n("253980"),
-                r = n("75196"),
+                r = n("253980"),
+                i = n("75196"),
                 a = (0, l.replaceIcon)(function(e) {
                     let {
                         width: t = 24,
                         height: n = 24,
                         color: l = "currentColor",
-                        foreground: i,
+                        foreground: r,
                         ...a
                     } = e;
                     return (0, u.jsx)("svg", {
-                        ...(0, r.default)(a),
+                        ...(0, i.default)(a),
                         width: t,
                         height: n,
                         viewBox: "0 0 24 24",
                         children: (0, u.jsx)("path", {
-                            className: i,
+                            className: r,
                             fill: l,
                             fillRule: "evenodd",
                             clipRule: "evenodd",
                             d: "M12.291 5.70697L15.998 9.41397L21.705 3.70697L20.291 2.29297L15.998 6.58597L13.705 4.29297L12.291 5.70697ZM1.99805 7H11.088C11.564 9.837 14.025 12 16.998 12V18C16.998 19.103 16.102 20 14.998 20H8.33205L2.99805 24V20H1.99805C0.894047 20 -0.00195312 19.103 -0.00195312 18V9C-0.00195312 7.897 0.894047 7 1.99805 7Z"
                         })
                     })
-                }, i.ChatCheckIcon)
+                }, r.ChatCheckIcon)
         }
     }
 ]);
-//# sourceMappingURL=5d2955d6ca8f768a1f2d.js.map
+//# sourceMappingURL=20d8baaccac5b15e47f6.js.map

@@ -10727,6 +10727,7 @@
                 "text-xxs/medium": "text-xxs-medium__2fc94",
                 "text-xxs/normal": "text-xxs-normal__21171",
                 "text-xxs/semibold": "text-xxs-semibold__13ba2",
+                unknownInvite: "unknownInvite__9f726",
                 xsmallCol: "xsmallCol__5f935"
             }
         },

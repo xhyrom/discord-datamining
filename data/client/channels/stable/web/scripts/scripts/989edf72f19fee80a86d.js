@@ -186,20 +186,22 @@
             function s(e) {
                 var t;
                 let n = arguments.length > 1 && void 0 !== arguments[1] && arguments[1],
-                    l = null !== (t = null == e ? void 0 : e.id) && void 0 !== t ? t : "",
-                    r = a.default.useExperiment({
-                        guildId: l,
-                        location: "1e9ccc_1"
+                    l = arguments.length > 2 && void 0 !== arguments[2] ? arguments[2] : "1e9ccc_1",
+                    r = null !== (t = null == e ? void 0 : e.id) && void 0 !== t ? t : "",
+                    i = a.default.useExperiment({
+                        guildId: r,
+                        location: l
                     }, {
                         autoTrackExposure: n
                     }).experimentState;
-                return r
+                return i
             }
 
             function c(e) {
                 let t = arguments.length > 1 && void 0 !== arguments[1] && arguments[1],
-                    n = s(e, t);
-                return n === a.ClydeExperimentState.ClydeProfiles
+                    n = arguments.length > 2 ? arguments[2] : void 0,
+                    l = s(e, t, n);
+                return l === a.ClydeExperimentState.ClydeProfiles
             }
 
             function d(e, t) {
@@ -445,7 +447,7 @@
 
             function _(e, t) {
                 let n;
-                let l = v((0, g.truncateText)(e.name, 32));
+                let l = N((0, g.truncateText)(e.name, 32));
                 return {
                     type: "channel",
                     content: [n = "italics" === t ? {
@@ -460,7 +462,7 @@
             function T(e) {
                 return {
                     type: "channel",
-                    content: [v("")],
+                    content: [N("")],
                     iconType: e ? "post" : "message"
                 }
             }
@@ -501,7 +503,7 @@
                 } : null
             }
 
-            function N(e) {
+            function v(e) {
                 return {
                     type: "link",
                     content: [{
@@ -513,7 +515,7 @@
                 }
             }
 
-            function v(e) {
+            function N(e) {
                 return {
                     type: "text",
                     content: e
@@ -542,7 +544,7 @@
                 if (!e.canViewChannel) return function(e, t) {
                     let n = {
                         type: "channel",
-                        content: [v(e.roleSubscriptionGated ? e.name : L.default.Messages.NO_ACCESS)],
+                        content: [N(e.roleSubscriptionGated ? e.name : L.default.Messages.NO_ACCESS)],
                         channelType: e.roleSubscriptionGated ? e.type : y.ChannelTypes.UNKNOWN,
                         iconType: "locked"
                     };
@@ -555,7 +557,7 @@
                         content: [n]
                     }
                 }(e, t);
-                if (!e.isMentionable) return v("#".concat(e.name));
+                if (!e.isMentionable) return N("#".concat(e.name));
                 let r = {
                         type: "channelMention",
                         channelId: e.id,
@@ -572,7 +574,7 @@
                         inContent: [_(e)],
                         content: [T(!1)]
                     };
-                    return null != (i = l) ? N(i) : v("#".concat(L.default.Messages.UNKNOWN_CHANNEL_PLACEHOLDER))
+                    return null != (i = l) ? v(i) : N("#".concat(L.default.Messages.UNKNOWN_CHANNEL_PLACEHOLDER))
                 }
                 let u = e.guildId === n,
                     o = null != t;
@@ -643,7 +645,7 @@
                             r = e[1],
                             a = e[2],
                             i = e[3];
-                        if (null == a) return N(l);
+                        if (null == a) return v(l);
                         let u = I(a, null);
                         return null == u ? R(r, a, i, A(n.channelId), l) : b(u, i, A(n.channelId), l)
                     }
@@ -658,7 +660,7 @@
                             a = e[2],
                             i = e[3],
                             u = e[4];
-                        if (null == a || null == i) return N(l);
+                        if (null == a || null == i) return v(l);
                         let o = I(i, null);
                         if (null != o) return b(o, u, A(n.channelId), l);
                         let s = I(a, null);
@@ -783,8 +785,8 @@
                 _ = n("49111"),
                 T = n("317041"),
                 I = n("680894"),
-                N = n("782340");
-            let v = /^( *>>> +([\s\S]*))|^( *>(?!>>) +[^\n]*(\n *>(?!>>) +[^\n]*)*\n?)/,
+                v = n("782340");
+            let N = /^( *>>> +([\s\S]*))|^( *>(?!>>) +[^\n]*(\n *>(?!>>) +[^\n]*)*\n?)/,
                 R = /^$|\n *$/,
                 b = /^ *>>> ?/,
                 M = /^ *> ?/gm;
@@ -831,9 +833,9 @@
                                 nested: r
                             } = t;
                             if (l || r) return null;
-                            if (null == n) return v.exec(e);
+                            if (null == n) return N.exec(e);
                             let a = n[0];
-                            return R.test(a) ? v.exec(e) : null
+                            return R.test(a) ? N.exec(e) : null
                         },
                         parse(e, t, n) {
                             let l = e[0],
@@ -932,7 +934,7 @@
                                 i = null != a ? a.roles[r] : null;
                             return null == i ? {
                                 type: "text",
-                                content: "@".concat(N.default.Messages.DELETED_ROLE_PLACEHOLDER)
+                                content: "@".concat(v.default.Messages.DELETED_ROLE_PLACEHOLDER)
                             } : {
                                 type: "mention",
                                 channelId: n.channelId,
@@ -970,7 +972,7 @@
                             null != i && (a = i.id, r = i.toString(), null != o && (r = null !== (l = p.default.getNickname(o.getGuildId(), n.channelId, i)) && void 0 !== l ? l : h.default.getName(i))), null == i && "@Clyde" === e[0] && (0, u.getClydeEnabled)(O(n), o) && (a = I.CLYDE_AI_USER_ID);
                             let s = e[1],
                                 d = null != s && _.ID_REGEX.test(s.trim()),
-                                m = d && n.unknownUserMentionPlaceholder ? "@".concat(N.default.Messages.UNKNOWN_USER_MENTION_PLACEHOLDER) : e[0];
+                                m = d && n.unknownUserMentionPlaceholder ? "@".concat(v.default.Messages.UNKNOWN_USER_MENTION_PLACEHOLDER) : e[0];
                             return {
                                 userId: a,
                                 channelId: n.channelId,
@@ -1083,10 +1085,10 @@
                         match: e => _.MARKDOWN_STATIC_ROUTE_NAME_REGEXP.exec(e),
                         parse(e, t, n) {
                             let l = {
-                                home: N.default.Messages.SERVER_GUIDE,
-                                guide: N.default.Messages.SERVER_GUIDE,
-                                browse: N.default.Messages.CHANNEL_BROWSER_TITLE,
-                                customize: N.default.Messages.CHANNELS_AND_ROLES
+                                home: v.default.Messages.SERVER_GUIDE,
+                                guide: v.default.Messages.SERVER_GUIDE,
+                                browse: v.default.Messages.CHANNEL_BROWSER_TITLE,
+                                customize: v.default.Messages.CHANNELS_AND_ROLES
                             };
                             return {
                                 content: [{
@@ -1390,8 +1392,8 @@
                 _ = n("697218"),
                 T = n("25292"),
                 I = n("402671"),
-                N = n("158998"),
-                v = n("49111"),
+                v = n("158998"),
+                N = n("49111"),
                 R = n("958706"),
                 b = n("782340");
 
@@ -1593,14 +1595,14 @@
                             if (null == r) return {
                                 content: e[0]
                             };
-                            let a = N.default.getUserTag(r, {
+                            let a = v.default.getUserTag(r, {
                                 identifiable: l && S.default.enabled ? "never" : "always"
                             });
                             if (!l) return {
                                 content: "@".concat(a)
                             };
                             {
-                                let e = N.default.getGlobalName(r);
+                                let e = v.default.getGlobalName(r);
                                 return {
                                     content: null != e ? "@".concat(e) : "@".concat(a)
                                 }
@@ -1654,13 +1656,13 @@
                         }
                     },
                     spoiler: {
-                        match: i.anyScopeRegex(v.MARKDOWN_SPOILER_REGEXP),
+                        match: i.anyScopeRegex(N.MARKDOWN_SPOILER_REGEXP),
                         parse: () => ({
                             content: "<".concat(b.default.Messages.SPOILER.toLowerCase(), ">")
                         })
                     },
                     staticRouteLink: {
-                        match: i.anyScopeRegex(v.MARKDOWN_STATIC_ROUTE_NAME_REGEXP),
+                        match: i.anyScopeRegex(N.MARKDOWN_STATIC_ROUTE_NAME_REGEXP),
                         parse: e => ({
                             content: "<id:".concat(e[1], ">")
                         })
@@ -1718,7 +1720,7 @@
                 let t;
                 let n = null == e ? void 0 : e.getGuildId(),
                     l = null != n ? y.default.getGuild(n) : null,
-                    a = L.default.can(v.Permissions.MENTION_EVERYONE, e);
+                    a = L.default.can(N.Permissions.MENTION_EVERYONE, e);
                 t = (null == e ? void 0 : e.isPrivate()) ? e.recipients.map(e => ({
                     userId: e,
                     nick: null
@@ -1783,7 +1785,7 @@
                         user: S,
                         autoTrackExposure: !1
                     }).viewAndUseEnabled,
-                    N = {
+                    v = {
                         inline: !0,
                         mentionableRoles: u,
                         guild: l,
@@ -1796,7 +1798,7 @@
                         textExclusions: m,
                         disableErrorGuards: !0
                     };
-                return N
+                return v
             }
 
             function Y(e) {
@@ -1926,8 +1928,8 @@
                 _ = n("449008"),
                 T = n("964889"),
                 I = n("773336"),
-                N = n("50885"),
-                v = n("602043"),
+                v = n("50885"),
+                N = n("602043"),
                 R = n("9377"),
                 b = n("49111");
             let M = o().subtract(1, "week"),
@@ -1994,7 +1996,7 @@
                             isNew: (a = e, i = s, null != a && o(a.createdAt).isAfter(M) && 0 === i),
                             isLaunching: d.default.launchingGames.has(e.id),
                             isRunning: l.has(e.id),
-                            isLaunchable: (0, v.isLaunchable)({
+                            isLaunchable: (0, N.isLaunchable)({
                                 LibraryApplicationStore: m.default,
                                 LaunchableGameStore: d.default,
                                 DispatchApplicationStore: L.default,
@@ -2019,7 +2021,7 @@
                             isNew: !1,
                             isLaunching: d.default.launchingGames.has(e),
                             isRunning: l.has(e),
-                            isLaunchable: (0, v.isLaunchable)({
+                            isLaunchable: (0, N.isLaunchable)({
                                 LibraryApplicationStore: m.default,
                                 LaunchableGameStore: d.default,
                                 DispatchApplicationStore: L.default,
@@ -2034,7 +2036,7 @@
                         }
                     })(l, n, t, e)).filter(_.isNotNullish),
                     s = [...u, ...a].sort((e, t) => e.lastPlayed === t.lastPlayed ? 0 : e.lastPlayed > t.lastPlayed ? -1 : 1);
-                return O = null != h.default.lastFetched && m.default.fetched, !i.isEqual(s, x) && (x = s, I.isPlatformEmbedded && N.default.setSystemTrayApplications(w(x).map(e => e.application).slice(0, 5)), !0)
+                return O = null != h.default.lastFetched && m.default.fetched, !i.isEqual(s, x) && (x = s, I.isPlatformEmbedded && v.default.setSystemTrayApplications(w(x).map(e => e.application).slice(0, 5)), !0)
             }
             class V extends s.default.Store {
                 initialize() {
@@ -2209,8 +2211,8 @@
                 _ = n("766274"),
                 T = n("42203"),
                 I = n("923959"),
-                N = n("26989"),
-                v = n("305961"),
+                v = n("26989"),
+                N = n("305961"),
                 R = n("377253"),
                 b = n("957255"),
                 M = n("824563"),
@@ -2285,10 +2287,10 @@
                     allowSnowflake: i
                 } = e, u = D.default.getUsers(), s = O.default.getGuildId(), c = t.toLocaleLowerCase(), d = (0, q.normalize)(c), f = [], p = [], h = n.length, m = 0, g = 0;
                 for (; m < h;) {
-                    var E, C, y, L, A, S, T, I, v, R;
+                    var E, C, y, L, A, S, T, I, N, R;
                     let e, l;
                     let o = n[m];
-                    o instanceof _.default ? (l = o, e = null === (C = N.default.getNick(s, l.id)) || void 0 === C ? void 0 : C.toLocaleLowerCase()) : (e = null === (y = o.nick) || void 0 === y ? void 0 : y.toLocaleLowerCase(), l = u[o.userId]);
+                    o instanceof _.default ? (l = o, e = null === (C = v.default.getNick(s, l.id)) || void 0 === C ? void 0 : C.toLocaleLowerCase()) : (e = null === (y = o.nick) || void 0 === y ? void 0 : y.toLocaleLowerCase(), l = u[o.userId]);
                     let h = null === (E = H.default.getGlobalName(l)) || void 0 === E ? void 0 : E.toLocaleLowerCase();
                     if (null == r || r(l)) {
                         let n = l.username.toLocaleLowerCase(),
@@ -2314,7 +2316,7 @@
                             type: V.AutocompleterResultTypes.USER,
                             record: l,
                             score: 1,
-                            comparator: null !== (v = null != h ? h : e) && void 0 !== v ? v : n,
+                            comparator: null !== (N = null != h ? h : e) && void 0 !== N ? N : n,
                             sortable: null !== (R = null != m ? m : o) && void 0 !== R ? R : r
                         }), g += 1)
                     }
@@ -2339,12 +2341,12 @@
                     if (null == e || e.isNonUserBot() && !e.isClyde()) return !1;
                     let t = n.getGuildId();
                     if (null == t) return !0;
-                    let l = N.default.getMember(t, e.id);
+                    let l = v.default.getMember(t, e.id);
                     return el(l)
                 }).map(e => {
                     var t;
                     let l = n.getGuildId(),
-                        r = null != l ? N.default.getMember(l, e.id) : null;
+                        r = null != l ? v.default.getMember(l, e.id) : null;
                     return {
                         type: V.AutocompleterResultTypes.USER,
                         record: e,
@@ -2411,7 +2413,7 @@
                             let e = ei(o.id, r);
                             if (e.length > 0) return e
                         }
-                        t = N.default.getMembers(c.guild_id).filter(el), a && w.default.requestMembers(c.guild_id, l, r)
+                        t = v.default.getMembers(c.guild_id).filter(el), a && w.default.requestMembers(c.guild_id, l, r)
                     }
                     return er({
                         query: l,
@@ -2435,12 +2437,12 @@
                         filter: i,
                         allowSnowflake: u
                     } = e;
-                    if (null == v.default.getGuild(t)) return [];
+                    if (null == N.default.getGuild(t)) return [];
                     if (0 === n.length && a) {
                         let e = ei(U.default.getChannelId(t), l);
                         if (e.length > 0) return e
                     }
-                    let o = N.default.getMembers(t).filter(el);
+                    let o = v.default.getMembers(t).filter(el);
                     return r && n.length > 0 && w.default.requestMembers(t, n, l), er({
                         query: n,
                         members: o,
@@ -2512,7 +2514,7 @@
                                         let n = t[e.guild_id];
                                         if (null == n) {
                                             var l;
-                                            n = t[e.guild_id] = null === (l = v.default.getGuild(e.guild_id)) || void 0 === l ? void 0 : l.toString().toLocaleLowerCase()
+                                            n = t[e.guild_id] = null === (l = N.default.getGuild(e.guild_id)) || void 0 === l ? void 0 : l.toString().toLocaleLowerCase()
                                         }
                                         return n
                                     }(e, g), function(e, t) {
@@ -2552,7 +2554,7 @@
                         exactQuery: RegExp("^".concat(F.default.escape(i)), "i"),
                         containQuery: RegExp(F.default.escape(i), "i"),
                         queryLower: i
-                    }, c = [], d = u(v.default.getGuilds()).values().value();
+                    }, c = [], d = u(N.default.getGuilds()).values().value();
                     for (let e of d) {
                         if (!r(e)) continue;
                         let t = e.name.toLocaleLowerCase(),
@@ -2684,13 +2686,13 @@
                             user: t,
                             score: l,
                             comparator: r,
-                            nick: N.default.getNick(n.guild_id, t.id),
+                            nick: v.default.getNick(n.guild_id, t.id),
                             status: M.default.getStatus(t.id)
                         }
                     }) : [], E = g.length, C = t.toLowerCase(), y = [];
                     if (E < p && o) {
                         let e = n.getGuildId(),
-                            t = v.default.getGuild(e);
+                            t = N.default.getGuild(e);
                         null != t && (u(t.roles).filter(t => {
                             let {
                                 mentionable: n,
@@ -2725,7 +2727,7 @@
                         status: M.default.getStatus(e.record.id)
                     })) : [], c = s.length, d = t.toLowerCase(), f = [];
                     if (c < B.MAX_AUTOCOMPLETE_RESULTS && i) {
-                        let e = v.default.getGuild(n);
+                        let e = N.default.getGuild(n);
                         null != e && (u(e.roles).filter(e => {
                             let {
                                 mentionable: t,
@@ -2942,7 +2944,7 @@
                 hasSameRoleAsUsername(e, t) {
                     var n;
                     if (!t.isPomelo()) return !1;
-                    let l = v.default.getGuild(e.getGuildId()),
+                    let l = N.default.getGuild(e.getGuildId()),
                         r = null !== (n = null == l ? void 0 : l.roles) && void 0 !== n ? n : {};
                     for (let {
                             name: e
@@ -3054,4 +3056,4 @@
         }
     }
 ]);
-//# sourceMappingURL=578e8029123c2c4025de.js.map
+//# sourceMappingURL=989edf72f19fee80a86d.js.map

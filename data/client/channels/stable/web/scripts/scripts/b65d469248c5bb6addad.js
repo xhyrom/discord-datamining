@@ -1439,13 +1439,13 @@
                     return D
                 },
                 trackForumPostLinkCopied: function() {
-                    return L
+                    return b
                 },
                 trackForumOnboardingClicked: function() {
                     return y
                 },
                 trackForumUpsellModalClicked: function() {
-                    return b
+                    return L
                 },
                 trackForumAddMediaToOriginalPostClicked: function() {
                     return F
@@ -1735,7 +1735,7 @@
                 })
             }
 
-            function L(e) {
+            function b(e) {
                 let {
                     postId: t,
                     location: n
@@ -1755,7 +1755,7 @@
                 })
             }
 
-            function b(e) {
+            function L(e) {
                 let {
                     forumDemoId: t
                 } = e;
@@ -2022,7 +2022,7 @@
                     return A
                 },
                 default: function() {
-                    return b
+                    return L
                 }
             });
             var a = n("917351"),
@@ -2076,7 +2076,7 @@
                 if (!(v.indexOf(e) >= 0)) return !1;
                 v = v.filter(t => t !== e)
             }
-            let L = [];
+            let b = [];
             class y extends s.default.Store {
                 initialize() {
                     this.waitFor(f.default, g.default, h.default)
@@ -2094,11 +2094,11 @@
                     return M === e && p === t && (0, E.areSetsEqual)(i, n) ? m : (R(), !1)
                 }
                 getThreads(e, t, n) {
-                    return M === e && p === t && (0, E.areSetsEqual)(i, n) ? v : L
+                    return M === e && p === t && (0, E.areSetsEqual)(i, n) ? v : b
                 }
             }
             y.displayName = "ArchivedThreadsStore";
-            var b = new y(d.default, {
+            var L = new y(d.default, {
                 CONNECTION_OPEN: R,
                 THREAD_DELETE: function(e) {
                     let {
@@ -3171,6 +3171,10 @@
                 isSubscribedToThreads(e) {
                     return T.isSubscribedToThreads(e)
                 }
+                isSubscribedToAnyGuildChannel(e) {
+                    let t = T.get(e).channels;
+                    return null != t && Object.keys(t).length > 0
+                }
             }
             O.displayName = "GuildSubscriptionsStore";
             var I = new O(l.default, {
@@ -3438,4 +3442,4 @@
         }
     }
 ]);
-//# sourceMappingURL=b27dbddb5df375f1151f.js.map
+//# sourceMappingURL=b65d469248c5bb6addad.js.map

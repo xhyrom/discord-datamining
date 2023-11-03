@@ -1,5 +1,5 @@
 (this.webpackChunkdiscord_app = this.webpackChunkdiscord_app || []).push([
-    ["19770"], {
+    ["89505"], {
         895637: function(e, t, n) {
             var s = {
                 "./activities-rocket-time.mp3": "329160",
@@ -372,6 +372,61 @@
                     }
                 }
         },
+        884422: function(e, t, n) {
+            "use strict";
+            n.r(t), n.d(t, {
+                fetchChannelHighlights: function() {
+                    return o
+                },
+                jumpToHighlight: function() {
+                    return c
+                }
+            });
+            var s = n("872717"),
+                a = n("913144"),
+                i = n("819689"),
+                u = n("267363"),
+                l = n("716241"),
+                d = n("599110"),
+                r = n("49111");
+            async function o(e) {
+                a.default.dispatch({
+                    type: "CHANNEL_HIGHLIGHTS_FETCH_START",
+                    guildId: e
+                });
+                let t = await s.default.get({
+                        url: r.Endpoints.CHANNEL_HIGHLIGHTS(e)
+                    }),
+                    n = t.body;
+                await a.default.dispatch({
+                    type: "CHANNEL_HIGHLIGHTS_FETCH_SUCCESS",
+                    guildId: e,
+                    data: n
+                })
+            }
+            async function c(e) {
+                let {
+                    guildId: t,
+                    channelId: n,
+                    targetMessageId: s,
+                    highlightedMessageIds: a,
+                    numHighlightsVisited: o
+                } = e;
+                await i.default.jumpToMessage({
+                    channelId: n,
+                    messageId: s,
+                    flash: !0
+                }), d.default.track(r.AnalyticEvents.CHANNEL_HIGHLIGHTS_ACKED, {
+                    ...(0, l.collectGuildAnalyticsMetadata)(t),
+                    ...(0, l.collectChannelAnalyticsMetadataFromId)(n),
+                    message_id: s,
+                    index: o,
+                    ack_type: "navigator"
+                });
+                let c = a[o - 1];
+                return null != c && u.ack(n, !0, !1, c), Promise.resolve()
+            }
+        },
         370492: function(e, t, n) {
             "use strict";
             n.r(t), n.d(t, {
@@ -530,7 +585,7 @@
                     return A
                 },
                 preloadForumThreads: function() {
-                    return b
+                    return I
                 }
             });
             var s = n("917351"),
@@ -615,7 +670,7 @@
                     loaded: s,
                     firstMessage: a
                 } = (0, i.useStateFromStoresObject)([c.default], () => c.default.getMessage(e.id)), u = (0, i.useStateFromStores)([d.default], () => d.default.getChannel(e.parent_id));
-                if (null != u && (t = s, n = a, !t && null == n)) I(u, e.id);
+                if (null != u && (t = s, n = a, !t && null == n)) v(u, e.id);
                 return {
                     loaded: s,
                     firstMessage: a
@@ -627,7 +682,7 @@
                     loaded: n,
                     message: s
                 } = (0, i.useStateFromStoresObject)([f.default], () => f.default.getMessageState(t.id));
-                return null != e && E(t.guild_id, t.id) && I(e, t.id), {
+                return null != e && E(t.guild_id, t.id) && v(e, t.id), {
                     loaded: n,
                     mostRecentMessage: s
                 }
@@ -642,21 +697,21 @@
                         firstMessage: u
                     } = c.default.getMessage(t);
                     if (s = i, a = u, !s && null == a || E(e.guild_id, t)) _.request(e.id, t), n = !0
-                }), n && null == g && (g = setTimeout(v, 0))
+                }), n && null == g && (g = setTimeout(b, 0))
             }
 
-            function b(e) {
+            function I(e) {
                 T(e, (0, r.computeThreadIdsSnapshot)(e.id).slice(0, 10))
             }
 
-            function I(e, t) {
+            function v(e, t) {
                 if (_.hasRequested(e.id, t)) return;
                 let n = (0, r.computeThreadIdsSnapshot)(e.id),
                     s = n.findIndex(e => e === t),
                     a = n.slice(s, s + 5).filter(t => !_.hasRequested(e.id, t));
                 T(e, a)
             }
-            async function v() {
+            async function b() {
                 try {
                     for (; _.hasNext();) await C(_.next())
                 } finally {
@@ -1281,9 +1336,9 @@
                 S = n("660478"),
                 A = n("18494"),
                 T = n("162771"),
-                b = n("49111"),
-                I = n("724210"),
-                v = n("782340");
+                I = n("49111"),
+                v = n("724210"),
+                b = n("782340");
             let C = new i.default("MessageManager");
 
             function N(e) {
@@ -1302,12 +1357,12 @@
                     _ && C.log("Skipping fetch because channelId is null");
                     return
                 }
-                if ((0, I.isStaticChannelRoute)(n)) {
+                if ((0, v.isStaticChannelRoute)(n)) {
                     _ && C.log("Skipping fetch because channelId is a static route");
                     return
                 }
                 let g = E.default.getChannel(n);
-                if ((null == g ? void 0 : g.type) === b.ChannelTypes.GUILD_STORE || (null == g ? void 0 : g.type) != null && b.ChannelTypesSets.GUILD_THREADS_ONLY.has(g.type)) {
+                if ((null == g ? void 0 : g.type) === I.ChannelTypes.GUILD_STORE || (null == g ? void 0 : g.type) != null && I.ChannelTypesSets.GUILD_THREADS_ONLY.has(g.type)) {
                     _ && C.log("Skipping fetch because channel is a forum/store");
                     return
                 }
@@ -1344,7 +1399,7 @@
                             return u.default.set(D, s), !0
                         }(n)) C.log("Jumping to start of thread ".concat(g.id)), r.default.fetchMessages({
                         channelId: n,
-                        limit: b.MAX_MESSAGES_PER_CHANNEL,
+                        limit: I.MAX_MESSAGES_PER_CHANNEL,
                         jump: {
                             messageId: n,
                             flash: !1
@@ -1356,7 +1411,7 @@
                         let e = S.default.getTrackedAckMessageId(g.id);
                         C.log("Jumping to most recent message in thread ".concat(g.id, " - ").concat(e)), r.default.fetchMessages({
                             channelId: n,
-                            limit: b.MAX_MESSAGES_PER_CHANNEL,
+                            limit: I.MAX_MESSAGES_PER_CHANNEL,
                             jump: {
                                 messageId: e,
                                 flash: !1,
@@ -1367,7 +1422,7 @@
                         })
                     } else r.default.fetchMessages({
                         channelId: n,
-                        limit: b.MAX_MESSAGES_PER_CHANNEL,
+                        limit: I.MAX_MESSAGES_PER_CHANNEL,
                         isPreload: l,
                         skipLocalFetch: m,
                         jump: {
@@ -1386,7 +1441,7 @@
                     if (null != n) {
                         var t;
                         let e = (0, a.matchPath)(location.pathname, {
-                            path: b.Routes.CHANNEL(":guild", ":channel", ":message"),
+                            path: I.Routes.CHANNEL(":guild", ":channel", ":message"),
                             exact: !0
                         });
                         N({
@@ -1416,7 +1471,7 @@
                 } else n && C.log("Skipping fetch because there is no selected channel")
             }
 
-            function O(e) {
+            function L(e) {
                 let {
                     guildId: t,
                     channelId: n,
@@ -1431,7 +1486,7 @@
                 }), R(t, n)
             }
 
-            function L(e) {
+            function O(e) {
                 let {
                     guildId: t,
                     channelId: n
@@ -1468,7 +1523,7 @@
                     context: s,
                     isHighlight: a
                 } = e;
-                s === b.CURRENT_APP_CONTEXT && (N({
+                s === I.CURRENT_APP_CONTEXT && (N({
                     guildId: t,
                     channelId: n,
                     isHighlight: a
@@ -1487,26 +1542,26 @@
                 })
             }
 
-            function P(e) {
+            function G(e) {
                 let {
                     channelId: t
                 } = e;
                 r.default.fetchMessages({
                     channelId: t,
-                    limit: b.MAX_MESSAGES_PER_CHANNEL
+                    limit: I.MAX_MESSAGES_PER_CHANNEL
                 })
             }
 
-            function G(e) {
+            function P(e) {
                 let {
                     response: t
                 } = e;
                 if (null == t || null == t.body) return null;
-                if (t.body.code === b.AbortCodes.CHANNEL_FOLLOWING_EDIT_RATE_LIMITED) {
+                if (t.body.code === I.AbortCodes.CHANNEL_FOLLOWING_EDIT_RATE_LIMITED) {
                     let e = t.body.retry_after;
                     null != e && d.default.show({
-                        title: v.default.Messages.RATE_LIMITED,
-                        body: v.default.Messages.ANNOUNCEMENT_EDIT_RATE_LIMIT.format({
+                        title: b.default.Messages.RATE_LIMITED,
+                        body: b.default.Messages.ANNOUNCEMENT_EDIT_RATE_LIMIT.format({
                             retryAfterMinutes: Math.ceil(e / 60)
                         })
                     })
@@ -1531,12 +1586,12 @@
                     o = n === l || n === d;
                 a && p.default.isConnected() && o && r.default.fetchMessages({
                     channelId: n,
-                    limit: b.MAX_MESSAGES_PER_CHANNEL,
+                    limit: I.MAX_MESSAGES_PER_CHANNEL,
                     jump: s
                 })
             }
 
-            function j(e) {
+            function H(e) {
                 let {
                     channelId: t,
                     messageRecord: n
@@ -1548,14 +1603,14 @@
                 })
             }
 
-            function H(e) {
+            function j(e) {
                 let {
                     state: t
                 } = e;
                 if ("active" !== t) return !1;
                 let n = A.default.getChannelId();
                 if (null == n) return !1;
-                r.default.fetchNewLocalMessages(n, b.MAX_MESSAGES_PER_CHANNEL)
+                r.default.fetchNewLocalMessages(n, I.MAX_MESSAGES_PER_CHANNEL)
             }
             class B extends c.default {
                 _initialize() {
@@ -1566,19 +1621,19 @@
                 }
                 constructor(...e) {
                     super(...e), this.fetchMessages = N, this.loadSelectedChannelIfNecessary = M, this.stores = new Map().set(g.default, x), this.actions = {
-                        APP_STATE_UPDATE: H,
+                        APP_STATE_UPDATE: j,
                         OVERLAY_INITIALIZE: y,
-                        CHANNEL_SELECT: O,
-                        VOICE_CHANNEL_SELECT: L,
+                        CHANNEL_SELECT: L,
+                        VOICE_CHANNEL_SELECT: O,
                         THREAD_CREATE: U,
                         THREAD_LIST_SYNC: () => M(),
                         CHANNEL_CREATE: U,
                         CHANNEL_PRELOAD: k,
-                        THREAD_CREATE_LOCAL: P,
+                        THREAD_CREATE_LOCAL: G,
                         GUILD_CREATE: () => M(),
-                        MESSAGE_END_EDIT: G,
+                        MESSAGE_END_EDIT: P,
                         LOAD_MESSAGES_SUCCESS: F,
-                        UPLOAD_FAIL: j,
+                        UPLOAD_FAIL: H,
                         CHANNEL_DELETE: () => M(),
                         THREAD_DELETE: () => M()
                     }
@@ -2195,4 +2250,4 @@
         }
     }
 ]);
-//# sourceMappingURL=6440ce6db8a28d82581d.js.map
+//# sourceMappingURL=2ca6e177891152e39fdd.js.map
