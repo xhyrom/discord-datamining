@@ -1751,7 +1751,7 @@
                     y.current.cancel(), N(!0)
                 }, []), x = r.useCallback(() => {
                     y.current.delay()
-                }, []), b = r.useCallback((e, t) => {
+                }, []), P = r.useCallback((e, t) => {
                     R(), (0, f.openContextMenuLazy)(e, async () => {
                         let {
                             default: e
@@ -1773,13 +1773,13 @@
                     className: g,
                     participantType: s.type
                 });
-                let P = o(D).take(v).map(e => (0, a.jsx)(c.Avatar, {
+                let b = o(D).take(v).map(e => (0, a.jsx)(c.Avatar, {
                     src: e.getAvatarURL(l, 24),
                     "aria-label": e.username,
                     size: c.AvatarSizes.SIZE_24,
                     className: I.viewer
                 }, e.id)).value();
-                return D.length > v && (P[P.length - 1] = (0, a.jsxs)("div", {
+                return D.length > v && (b[b.length - 1] = (0, a.jsxs)("div", {
                     className: I.overflow,
                     children: ["+", D.length - v + 1]
                 }, "overflow")), (0, a.jsx)(p.default, {
@@ -1790,7 +1790,7 @@
                         children: (0, a.jsx)(c.Popout, {
                             renderPopout: () => (0, a.jsx)(M, {
                                 participantType: s.type,
-                                handleUserContextMenu: b,
+                                handleUserContextMenu: P,
                                 guildId: l,
                                 channelId: t,
                                 users: D,
@@ -1800,7 +1800,7 @@
                             position: "top",
                             children: () => (0, a.jsx)("div", {
                                 className: i(I.viewers, g),
-                                children: P
+                                children: b
                             })
                         })
                     })
@@ -2594,8 +2594,8 @@
                 return {
                     logsUploaded: new Date().toISOString(),
                     releaseChannel: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                    buildNumber: "243652",
-                    versionHash: "6403bceacc4e719de96b338c111bb63d76799a67"
+                    buildNumber: "243665",
+                    versionHash: "e0d1ac7c1beb7a3eab2e6714344086430bfa6c83"
                 }
             }
             n.r(t), n.d(t, {
@@ -2732,7 +2732,7 @@
                     dsn: "https://fa97a90475514c03a42f80cd36d147c4@sentry.io/140984",
                     autoSessionTracking: !1,
                     environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                    release: "discord_web-6403bceacc4e719de96b338c111bb63d76799a67",
+                    release: "discord_web-e0d1ac7c1beb7a3eab2e6714344086430bfa6c83",
                     beforeSend: e => {
                         var t, n;
                         return !(null != (t = e).exception && null != t.exception.values && t.exception.values.every(e => null == e.stacktrace || null != e.stacktrace.frames && 1 === e.stacktrace.frames.length) && "canary" !== window.GLOBAL_ENV.RELEASE_CHANNEL || l.some(e => window.navigator.appVersion.toLowerCase().indexOf(e) >= 0)) && !i() && !("Aborted" === (n = e).message || "cancel captcha" === n.message) && s() ? e : null
@@ -2750,7 +2750,7 @@
                     })],
                     ignoreErrors: ["EADDRINUSE", "BetterDiscord", "EnhancedDiscord", "Powercord", "RecipeWebview", "jQuery", "localStorage", "has already been declared", "Cannot call hover while not dragging.", "Cannot call beginDrag while dragging.", "getHostNode", "setupCSS", "on missing remote object", "ChunkLoadError", "Cannot find module 'discord_utils'", "Failed to setup Krisp module", "Error invoking remote method 'DISCORD_NATIVE_MODULES_INSTALL': Error: Module updater is not available!", "Non-Error promise rejection captured with keys:", "Request has been terminated", "Cannot resolve a Slate point from DOM point", "Failed to fetch", "no suitable image found", "ResizeObserver loop limit exceeded", "The play() request was interrupted", "could not play audio", "notosans-400-normalitalic"],
                     denyUrls: [/recaptcha/, /mobilediscord\.com/, /betterdiscord:\/\//]
-                }), a.setTag("buildNumber", (e = "243652", "243652")), a.setTag("builtAt", String("1699047207603"));
+                }), a.setTag("buildNumber", (e = "243665", "243665")), a.setTag("builtAt", String("1699048380229"));
                 let t = window.GLOBAL_ENV.SENTRY_TAGS;
                 if (null != t && "object" == typeof t)
                     for (let e in t) a.setTag(e, t[e]);
@@ -4586,16 +4586,17 @@
                         maxY: t,
                         dockedRect: n,
                         hidden: r,
-                        roundCorners: l
-                    } = this.props, s = {};
-                    return null != n && (s = {
+                        roundCorners: l,
+                        className: s
+                    } = this.props, o = {};
+                    return null != n && (o = {
                         transform: "translate3d(".concat(n.x, ", ").concat(n.y, ", 0)"),
                         width: n.width,
                         height: n.height
                     }), (0, a.jsx)(u.default, {
                         dragAnywhere: !0,
                         ref: this.handleSetDraggableRef,
-                        className: i(c.pictureInPictureWindow, f.elevationHigh, {
+                        className: i(c.pictureInPictureWindow, s, {
                             [c.hidden]: r,
                             [c.borderRadius]: l
                         }),
@@ -4607,7 +4608,7 @@
                         onDragEnd: this.handleDragEnd,
                         children: (0, a.jsx)("div", {
                             ref: this.handleSetInnerDivRef,
-                            style: s,
+                            style: o,
                             children: this.props.children
                         })
                     })
@@ -4654,11 +4655,11 @@
                     pipWindows: n,
                     maxX: r,
                     maxY: l,
-                    onWindowMove: i,
-                    dockedRect: s,
-                    pictureInPictureComponents: o,
-                    appContext: u,
-                    roundCorners: f
+                    onWindowMove: s,
+                    dockedRect: o,
+                    pictureInPictureComponents: u,
+                    appContext: h,
+                    roundCorners: g
                 } = e;
                 return (0, a.jsx)("div", {
                     className: c.pictureInPicture,
@@ -4666,25 +4667,26 @@
                         if (null == t) return null;
                         let e = Array.from(n.values()).map(e => {
                             if (e.id !== t.id && e.component !== d.PictureInPictureComponents.EMBED_IFRAME) return null;
-                            let n = "string" == typeof e.component ? o[e.component] : e.component;
+                            let n = "string" == typeof e.component ? u[e.component] : e.component;
                             return (0, a.jsx)(n, {
                                 ...e.props
                             }, "pipWindow-".concat(e.id))
                         });
                         return (0, a.jsx)(E, {
-                            appContext: u,
+                            className: i(c.pictureInPictureWindowOverflow, f.elevationHigh),
+                            appContext: h,
                             position: t.position,
                             id: t.id,
                             hidden: t.hidden,
-                            onMove: i,
+                            onMove: s,
                             maxX: r,
                             maxY: l,
-                            dockedRect: s,
+                            dockedRect: o,
                             edgeOffsetTop: p.top,
                             edgeOffsetBottom: p.bottom,
                             edgeOffsetLeft: p.left,
                             edgeOffsetRight: p.top,
-                            roundCorners: f,
+                            roundCorners: g,
                             children: e
                         })
                     })()
@@ -5173,4 +5175,4 @@
         }
     }
 ]);
-//# sourceMappingURL=7b4eabafcfc811a72630.js.map
+//# sourceMappingURL=f6d0613210b400aa98e4.js.map

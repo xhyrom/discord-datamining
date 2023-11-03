@@ -2291,7 +2291,8 @@
                 borderRadius: "borderRadius__3965c",
                 hidden: "hidden__576d2",
                 pictureInPicture: "pictureInPicture__48d51",
-                pictureInPictureWindow: "pictureInPictureWindow_dc49a8"
+                pictureInPictureWindow: "pictureInPictureWindow_dc49a8",
+                pictureInPictureWindowOverflow: "pictureInPictureWindowOverflow__3abe4"
             }
         },
         618556: function(e, t, a) {

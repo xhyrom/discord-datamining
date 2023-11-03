@@ -17010,7 +17010,8 @@ input[type=checkbox]:focus-visible+.label_ee78c3 {
 .tile__58650 {
     width: 160px;
     height: 90px;
-    margin-right: 8px
+    margin-right: 8px;
+    border-radius: 8px
 }
 
 .tile__58650:last-child {
@@ -19389,8 +19390,8 @@ input[type=checkbox]:focus-visible+.label_ee78c3 {
 
 .message__13e98 {
     font-weight: 500;
-    font-size: 16px;
-    line-height: 20px;
+    font-size: 1rem;
+    line-height: 1.25rem;
     white-space: nowrap;
     text-overflow: ellipsis;
     overflow: hidden
@@ -123480,4 +123481,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=app.d66c3b5b885c9dc8d41c.css.map*/
+/*# sourceMappingURL=app.ca165c6ac6e7715ccb8c.css.map*/
