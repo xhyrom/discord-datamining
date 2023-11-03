@@ -53587,8 +53587,8 @@ html .progress__4ef76 {
 
 .message__13e98 {
     font-weight: 500;
-    font-size: 1rem;
-    line-height: 1.25rem;
+    font-size: 16px;
+    line-height: 20px;
     white-space: nowrap;
     text-overflow: ellipsis;
     overflow: hidden
@@ -67972,7 +67972,9 @@ input::-webkit-inner-spin-button {
     gap: 4px;
     border-radius: var(--radius-xs);
     background-color: var(--background-modifier-accent);
-    padding: 0 4px
+    padding: 0 4px;
+    overflow: hidden;
+    white-space: nowrap
 }
 
 .inviterTooltipContainer_a6dcab {
@@ -67988,6 +67990,12 @@ input::-webkit-inner-spin-button {
 
 .integrationIcon__4d2c6 {
     background-size: contain
+}
+
+.unknownInvite__9f726 {
+    flex: 0;
+    width: -moz-fit-content;
+    width: fit-content
 }
 
 .tableHeaderRow__89a36 {
@@ -123464,4 +123472,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=app.6d8675c4a7a5037130d8.css.map*/
+/*# sourceMappingURL=app.fbb8846a4b403041c4e1.css.map*/
