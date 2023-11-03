@@ -13193,6 +13193,7 @@
   "MEMBER_SAFETY_ACTION_PERMISSIONS_MISSING": "\"Cannot action this member\"",
   "MEMBER_SAFETY_CANNOT_SELECT_ALL": "\"There are no actionable members\"",
   "MEMBER_SAFETY_JOIN_TYPE_UNKNOWN": "\"Unknown\"",
+  "MEMBER_SAFETY_JOIN_TYPE_UNKNOWN_TOOLTIP": "\"Join method not available\"",
   "MEMBER_SAFETY_JOIN_TYPE_BOT": "\"Bot Invite\"",
   "MEMBER_SAFETY_JOIN_TYPE_INTEGRATION": "\"Integration\"",
   "MEMBER_SAFETY_JOIN_TYPE_INTEGRATION_TWITCH": "\"Twitch (Integration)\"",
