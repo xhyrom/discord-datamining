@@ -53587,8 +53587,8 @@ html .progress__4ef76 {
 
 .message__13e98 {
     font-weight: 500;
-    font-size: 16px;
-    line-height: 20px;
+    font-size: 1rem;
+    line-height: 1.25rem;
     white-space: nowrap;
     text-overflow: ellipsis;
     overflow: hidden
@@ -123464,4 +123464,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=app.906137cd435f87ac636f.css.map*/
+/*# sourceMappingURL=app.6d8675c4a7a5037130d8.css.map*/
