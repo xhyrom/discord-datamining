@@ -226,13 +226,13 @@
                     return R
                 },
                 clearPurchaseError: function() {
-                    return O
-                },
-                showPurchaseConfirmationStep: function() {
                     return U
                 },
+                showPurchaseConfirmationStep: function() {
+                    return O
+                },
                 updateSKUPaymentIsGift: function() {
-                    return L
+                    return M
                 }
             });
             var u = n("872717"),
@@ -341,9 +341,9 @@
                     subscriptionPlanId: C,
                     loadId: P,
                     recipientId: R,
-                    customMessage: O,
-                    emojiConfetti: U,
-                    soundEffect: L
+                    customMessage: U,
+                    emojiConfetti: O,
+                    soundEffect: M
                 } = {
                     ...N,
                     ...n
@@ -355,7 +355,7 @@
                         skuId: e
                     })
                 });
-                let M = c.default.inTestModeForApplication(t) || o.default.inDevModeForApplication(t);
+                let L = c.default.inTestModeForApplication(t) || o.default.inDevModeForApplication(t);
                 try {
                     let t = {
                         gift: A,
@@ -363,16 +363,16 @@
                         gateway_checkout_context: await (0, E.createGatewayCheckoutContext)(a),
                         load_id: P
                     };
-                    if (M) t.test_mode = !0;
+                    if (L) t.test_mode = !0;
                     else {
                         if (null != a && (t.payment_source_id = a.id, t.payment_source_token = await (0, _.createPaymentSourceToken)(a), T.ADYEN_PAYMENT_SOURCES.has(a.type))) {
                             let e = await (0, _.popupBridgeState)(a.type);
                             t.return_url = u.default.getAPIBaseURL() + T.Endpoints.BILLING_POPUP_BRIDGE_CALLBACK_REDIRECT_PREFIX(a.type, null != e ? e : "", "success")
                         }
-                        if (null != s && (t.expected_amount = s), null != f && (t.expected_currency = f), null != p && (t.gift_style = p), null != R && (t.recipient_id = R), null != R) t.custom_message = O, ((null == U ? void 0 : U.id) != null || (null == U ? void 0 : U.surrogates) != null || (null == L ? void 0 : L.soundId) != null) && (t.gift_info_options = {
-                            emoji_id: null == U ? void 0 : U.id,
-                            emoji_name: null == U ? void 0 : U.surrogates,
-                            sound_id: null == L ? void 0 : L.soundId
+                        if (null != s && (t.expected_amount = s), null != f && (t.expected_currency = f), null != p && (t.gift_style = p), null != R && (t.recipient_id = R), null != R) t.custom_message = U, ((null == O ? void 0 : O.id) != null || (null == O ? void 0 : O.surrogates) != null || (null == M ? void 0 : M.soundId) != null) && (t.gift_info_options = {
+                            emoji_id: null == O ? void 0 : O.id,
+                            emoji_name: null == O ? void 0 : O.surrogates,
+                            sound_id: null == M ? void 0 : M.soundId
                         });
                         t.purchase_token = (0, d.getPurchaseToken)()
                     }
@@ -428,19 +428,19 @@
                 }
             }
 
-            function O() {
+            function U() {
                 i.default.dispatch({
                     type: "SKU_PURCHASE_CLEAR_ERROR"
                 })
             }
 
-            function U() {
+            function O() {
                 i.default.wait(() => i.default.dispatch({
                     type: "SKU_PURCHASE_SHOW_CONFIRMATION_STEP"
                 }))
             }
 
-            function L(t) {
+            function M(t) {
                 i.default.dispatch({
                     type: "SKU_PURCHASE_UPDATE_IS_GIFT",
                     isGift: t
@@ -590,7 +590,7 @@
                     return R
                 },
                 useSubscriptionListingsForGroup: function() {
-                    return U
+                    return O
                 },
                 useActiveSubscriptionListingForApplication: function() {
                     return F
@@ -658,7 +658,7 @@
                         entitlementsLoaded: i === p.FetchState.FETCHED
                     }
                 },
-                O = t => {
+                U = t => {
                     let {
                         applicationId: e,
                         canFetch: n = !0,
@@ -677,7 +677,7 @@
                         entitlementsLoaded: o
                     }
                 },
-                U = function(t) {
+                O = function(t) {
                     let e = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : {
                         includeSoftDeleted: !1
                     };
@@ -693,8 +693,8 @@
                         return u
                     }, [t, e.includeSoftDeleted])
                 },
-                L = [],
-                M = [];
+                M = [],
+                L = [];
 
             function F(t, e) {
                 var n;
@@ -707,8 +707,8 @@
                         var u;
                         return {
                             subscriptionGroupListing: null != t ? p.default.getSubscriptionGroupListingForApplication(t) : null,
-                            guildEntitlements: null != t && null != e ? p.default.getApplicationEntitlementsForGuild(t, e) : L,
-                            userEntitlements: null != t && null !== (n = null === (u = f.default.getForApplication(t)) || void 0 === u ? void 0 : u.values()) && void 0 !== n ? n : M
+                            guildEntitlements: null != t && null != e ? p.default.getApplicationEntitlementsForGuild(t, e) : M,
+                            userEntitlements: null != t && null !== (n = null === (u = f.default.getForApplication(t)) || void 0 === u ? void 0 : u.values()) && void 0 !== n ? n : L
                         }
                     }, [t, e]),
                     s = r.useMemo(() => [...a, ...o], [a, o]),
@@ -816,7 +816,7 @@
                     guildId: u
                 }), {
                     entitlementsLoaded: a
-                } = O({
+                } = U({
                     applicationId: e,
                     loggedIn: i
                 }), {
@@ -915,7 +915,7 @@
                     return i
                 },
                 default: function() {
-                    return U
+                    return O
                 }
             });
             var u, i, r = n("627445"),
@@ -962,7 +962,7 @@
                     A.set(t.id, t)
                 })(n)
             }
-            class O extends a.default.Store {
+            class U extends a.default.Store {
                 getSubscriptionGroupListingsForApplicationFetchState(t) {
                     var e;
                     return null !== (e = C[t]) && void 0 !== e ? e : i.NOT_FETCHED
@@ -1000,8 +1000,8 @@
                     return p.values(T(e, t))
                 }
             }
-            O.displayName = "ApplicationSubscriptionStore";
-            var U = new O(s.default, {
+            U.displayName = "ApplicationSubscriptionStore";
+            var O = new U(s.default, {
                 LOGOUT: function() {
                     I.clear(), A.clear(), p.clear(), C = {}, N = {}
                 },
@@ -1109,98 +1109,6 @@
             function S(t, e, n) {
                 return t.subscription_plans[0].sku_id === e.skuId && (c(t.sku_flags) ? null != n && e.guildId === n && n !== l.ME : !!E(t.sku_flags) && null == e.guildId)
             }
-        },
-        299285: function(t, e, n) {
-            "use strict";
-            n.r(e), n.d(e, {
-                default: function() {
-                    return E
-                }
-            });
-            var u = n("446674"),
-                i = n("913144"),
-                r = n("653047");
-            let l = {},
-                a = {},
-                o = [];
-
-            function s(t) {
-                let {
-                    entitlements: e
-                } = t, n = !1;
-                for (let {
-                        sku: t
-                    }
-                    of e)
-                    if (null != t && null != t.application) {
-                        let e = t.application;
-                        l[e.id] = r.default.createFromServer(e), n = !0
-                    } return n && (l = {
-                    ...l
-                }), n
-            }
-            class c extends u.default.Store {
-                getApplications() {
-                    return l
-                }
-                getGuildApplication(t, e) {
-                    if (null != t) {
-                        for (let n of Object.values(l))
-                            if (n.guildId === t && n.type === e) return n
-                    }
-                }
-                getGuildApplications(t) {
-                    return null == t ? o : a[t]
-                }
-                getApplication(t) {
-                    return l[t]
-                }
-            }
-            c.displayName = "ApplicationStore";
-            var E = new c(i.default, {
-                APPLICATION_FETCH_SUCCESS: function(t) {
-                    let {
-                        application: e
-                    } = t;
-                    l = {
-                        ...l,
-                        [e.id]: r.default.createFromServer(e)
-                    }
-                },
-                APPLICATIONS_FETCH_SUCCESS: function(t) {
-                    let {
-                        applications: e
-                    } = t, n = {
-                        ...l
-                    };
-                    for (let t of e) n[t.id] = r.default.createFromServer(t);
-                    l = n
-                },
-                APPLICATION_SUBSCRIPTIONS_FETCH_ENTITLEMENTS_SUCCESS: s,
-                ENTITLEMENTS_FETCH_FOR_USER_SUCCESS: s,
-                GUILD_SETTINGS_LOADED_INTEGRATIONS: function(t) {
-                    let {
-                        integrations: e,
-                        guildId: n
-                    } = t, u = !1, i = [];
-                    for (let {
-                            application: t
-                        }
-                        of e) null != t && (i.push(t.id), l[t.id] = t, u = !0);
-                    if (u) {
-                        l = {
-                            ...l
-                        }, a[n] = i;
-                        let t = {};
-                        for (let e in a) t[e] = a[e];
-                        a = t
-                    }
-                    return u
-                },
-                CONNECTION_OPEN: function() {
-                    l = {}, a = {}
-                }
-            })
         },
         619935: function(t, e, n) {
             "use strict";
@@ -1329,16 +1237,16 @@
             "use strict";
             n.r(e), n.d(e, {
                 PaymentContextProvider: function() {
-                    return b
+                    return v
                 },
                 PaymentContext: function() {
                     return H
                 },
                 usePaymentContext: function() {
-                    return v
+                    return K
                 },
                 useForwardedPaymentContext: function() {
-                    return K
+                    return b
                 }
             });
             var u = n("37983"),
@@ -1362,10 +1270,10 @@
                 N = n("854381"),
                 P = n("237288"),
                 R = n("986681"),
-                O = n("702924"),
-                U = n("241006"),
-                L = n("284797"),
-                M = n("383802"),
+                U = n("702924"),
+                O = n("241006"),
+                M = n("284797"),
+                L = n("383802"),
                 F = n("334702"),
                 h = n("775325"),
                 m = n("403293"),
@@ -1374,16 +1282,16 @@
                 G = n("646718");
             let D = S.PremiumGiftStyles.STANDARD_BOX,
                 B = void 0,
-                [H, v, K] = (0, _.default)();
+                [H, K, b] = (0, _.default)();
 
-            function b(t) {
+            function v(t) {
                 var e, n;
                 let {
                     loadId: S,
                     activeSubscription: _,
-                    stepConfigs: v,
-                    breadcrumbs: K = [],
-                    skuIDs: b,
+                    stepConfigs: K,
+                    breadcrumbs: b = [],
+                    skuIDs: v,
                     isGift: w = !1,
                     giftRecipient: Y,
                     children: W,
@@ -1408,25 +1316,25 @@
                     currencies: tl
                 } = (0, N.default)({
                     activeSubscription: _,
-                    skuIDs: b,
+                    skuIDs: v,
                     paymentSourceId: z,
                     isGift: w
-                }), ta = (0, M.default)(), [to, ts] = i.useState(!1), {
+                }), ta = (0, L.default)(), [to, ts] = i.useState(!1), {
                     step: tc,
                     setStep: tE,
                     steps: tS,
                     breadcrumbsData: td
                 } = (0, h.default)({
-                    stepConfigs: v,
-                    breadcrumbs: K
-                }), [tf, t_] = (0, L.default)(tc), {
+                    stepConfigs: K,
+                    breadcrumbs: b
+                }), [tf, t_] = (0, M.default)(tc), {
                     paymentError: tT,
                     paymentAuthenticationState: tI
-                } = (0, O.default)(), {
+                } = (0, U.default)(), {
                     purchaseError: tA,
                     purchaseErrorBlockRef: tp,
                     setPurchaseError: tC
-                } = (0, U.default)(), tN = (0, l.useLazyValue)(() => {
+                } = (0, O.default)(), tN = (0, l.useLazyValue)(() => {
                     let t = null != S ? S : (0, a.v4)();
                     return p.default.addBreadcrumb({
                         message: "Checkout session ID: ".concat(t)
@@ -1437,9 +1345,9 @@
                 }), {
                     selectedSkuId: tP,
                     selectedPlan: tR,
-                    setSelectedSkuId: tO,
-                    setSelectedPlanId: tU
-                } = (0, C.default)(), [tL, tM] = (0, o.useStateFromStoresArray)([d.default], () => [d.default.purchaseTokenAuthState, d.default.purchaseTokenHash]), [tF, th] = (0, o.useStateFromStoresArray)([y.default], () => [y.default.browserCheckoutState, y.default.loadId]), [tm, ty] = i.useState(null), [tg, tG] = i.useState(null), [tD, tB] = i.useState(null), [tH, tv] = i.useState(null), [tK, tb] = i.useState(null), [tw, tY] = i.useState(void 0), [tW, tV] = i.useState([]), tk = i.useMemo(() => null == tR || (0, A.isPremiumSubscriptionPlan)(tR.id), [tR]), [tZ, tx] = i.useState((0, I.isCustomGiftEnabled)(Y) ? D : B), tQ = i.useRef(null != _ ? _.planId : null);
+                    setSelectedSkuId: tU,
+                    setSelectedPlanId: tO
+                } = (0, C.default)(), [tM, tL] = (0, o.useStateFromStoresArray)([d.default], () => [d.default.purchaseTokenAuthState, d.default.purchaseTokenHash]), [tF, th] = (0, o.useStateFromStoresArray)([y.default], () => [y.default.browserCheckoutState, y.default.loadId]), [tm, ty] = i.useState(null), [tg, tG] = i.useState(null), [tD, tB] = i.useState(null), [tH, tK] = i.useState(null), [tb, tv] = i.useState(null), [tw, tY] = i.useState(void 0), [tW, tV] = i.useState([]), tk = i.useMemo(() => null == tR || (0, A.isPremiumSubscriptionPlan)(tR.id), [tR]), [tZ, tx] = i.useState((0, I.isCustomGiftEnabled)(Y) ? D : B), tQ = i.useRef(null != _ ? _.planId : null);
                 i.useEffect(() => {
                     null == tQ.current && null != _ && (tQ.current = _.planId)
                 }, [_]);
@@ -1449,7 +1357,7 @@
                     skuPricePreviewsById: tj
                 } = (0, F.default)({
                     applicationId: null != Z ? Z : G.PREMIUM_SUBSCRIPTION_APPLICATION,
-                    skuIDs: b,
+                    skuIDs: v,
                     currentPaymentSourceId: z
                 }), tq = i.useMemo(() => {
                     if (null == tP) return null;
@@ -1474,9 +1382,9 @@
                         hasFetchedSubscriptions: X,
                         hasFetchedSubscriptionPlans: tn,
                         updatedSubscription: tH,
-                        setUpdatedSubscription: tv,
-                        subscriptionMetadataRequest: tK,
-                        setSubscriptionMetadataRequest: tb,
+                        setUpdatedSubscription: tK,
+                        subscriptionMetadataRequest: tb,
+                        setSubscriptionMetadataRequest: tv,
                         hasFetchedPaymentSources: tt,
                         paymentSources: j,
                         hasPaymentSources: q,
@@ -1492,7 +1400,7 @@
                         step: tc,
                         setStep: tE,
                         steps: tS,
-                        stepConfigs: v,
+                        stepConfigs: K,
                         breadcrumbs: td,
                         purchaseState: tf,
                         setPurchaseState: t_,
@@ -1501,8 +1409,8 @@
                         purchaseError: tA,
                         setPurchaseError: tC,
                         purchaseErrorBlockRef: tp,
-                        purchaseTokenAuthState: tL,
-                        purchaseTokenHash: tM,
+                        purchaseTokenAuthState: tM,
+                        purchaseTokenHash: tL,
                         browserCheckoutState: tF,
                         browserCheckoutStateLoadId: th,
                         bodyNode: tm,
@@ -1513,8 +1421,8 @@
                         setModalOverlayNode: tB,
                         selectedSkuId: tP,
                         selectedPlan: tR,
-                        setSelectedSkuId: tO,
-                        setSelectedPlanId: tU,
+                        setSelectedSkuId: tU,
+                        setSelectedPlanId: tO,
                         readySlideId: tw,
                         setReadySlideId: tY,
                         defaultPlanId: V,
@@ -2052,17 +1960,17 @@
                 N = null,
                 P = null,
                 R = null,
-                O = null;
+                U = null;
 
-            function U() {
-                s = null, l = "", a = null, o = "", c = !1, E = null, S = "US", d = "", f = "", _ = "", T = "", I = "", A = "", p = "", C = !1, N = null, P = null, R = null, O = null
+            function O() {
+                s = null, l = "", a = null, o = "", c = !1, E = null, S = "US", d = "", f = "", _ = "", T = "", I = "", A = "", p = "", C = !1, N = null, P = null, R = null, U = null
             }
 
-            function L(t) {
+            function M(t) {
                 d = t.name, S = t.country, _ = t.line1, T = t.line2, I = t.city, A = t.postalCode, p = t.state, f = t.email
             }
 
-            function M() {
+            function L() {
                 N = null
             }
 
@@ -2095,7 +2003,7 @@
                     return E
                 }
                 get redirectedPaymentSourceId() {
-                    return O
+                    return U
                 }
                 getCreditCardInfo() {
                     return {
@@ -2131,14 +2039,14 @@
                         stripePaymentMethod: e
                     } = t;
                     if (null == e) {
-                        U();
+                        O();
                         return
                     }
                     s = e;
                     let {
                         billingAddressInfo: n
                     } = r.parseStripePaymentMethod(s);
-                    L(n)
+                    M(n)
                 },
                 NEW_PAYMENT_SOURCE_CARD_INFO_UPDATE: function(t) {
                     let {
@@ -2163,7 +2071,7 @@
                         nonce: n,
                         billingAddress: u
                     } = t;
-                    l = e, a = n, L(u), C = S.length > 0
+                    l = e, a = n, M(u), C = S.length > 0
                 },
                 BRAINTREE_TOKENIZE_VENMO_START: function() {
                     o = "", a = null
@@ -2181,18 +2089,18 @@
                     } = t;
                     E = e
                 },
-                BILLING_PAYMENT_SOURCE_CREATE_START: M,
-                MODAL_POP: M,
-                NEW_PAYMENT_SOURCE_CLEAR_ERROR: M,
+                BILLING_PAYMENT_SOURCE_CREATE_START: L,
+                MODAL_POP: L,
+                NEW_PAYMENT_SOURCE_CLEAR_ERROR: L,
                 BILLING_PAYMENT_SOURCE_CREATE_FAIL: F,
                 STRIPE_TOKEN_FAILURE: F,
-                BILLING_PAYMENT_SOURCE_CREATE_SUCCESS: U,
-                LOGOUT: U,
+                BILLING_PAYMENT_SOURCE_CREATE_SUCCESS: O,
+                LOGOUT: O,
                 BILLING_POPUP_BRIDGE_CALLBACK: function(t) {
                     let {
                         query: e
                     } = t;
-                    (null == e ? void 0 : e.payment_id) != null ? (R = !0, P = e.payment_id) : (null == e ? void 0 : e.payment_source_id) != null && (R = !0, O = e.payment_source_id)
+                    (null == e ? void 0 : e.payment_id) != null ? (R = !0, P = e.payment_id) : (null == e ? void 0 : e.payment_source_id) != null && (R = !0, U = e.payment_source_id)
                 },
                 RESET_PAYMENT_ID: function() {
                     R = !1, P = null
@@ -2365,7 +2273,7 @@
             "use strict";
             n.r(e), n.d(e, {
                 default: function() {
-                    return O
+                    return U
                 }
             });
             var u = n("917351"),
@@ -2463,7 +2371,7 @@
                 }
             }
             R.displayName = "EntitlementStore";
-            var O = new R(l.default, {
+            var U = new R(l.default, {
                 ENTITLEMENT_FETCH_APPLICATION_START: function(t) {
                     let {
                         applicationId: e
@@ -2537,7 +2445,7 @@
                     return o
                 },
                 default: function() {
-                    return U
+                    return O
                 }
             });
             var r = n("446674"),
@@ -2562,7 +2470,7 @@
             function R(t) {
                 null != u && null != _ ? u(_) : null != i && i(t), u = null, i = null
             }
-            class O extends r.default.Store {
+            class U extends r.default.Store {
                 getPricesForSku(t) {
                     return f[t]
                 }
@@ -2601,8 +2509,8 @@
                     return N
                 }
             }
-            O.displayName = "SKUPaymentModalStore";
-            var U = new O(l.default, {
+            U.displayName = "SKUPaymentModalStore";
+            var O = new U(l.default, {
                 SKU_PURCHASE_MODAL_OPEN: function(t) {
                     R(), s = t.skuId, E = t.applicationId, p = t.isIAP, S = t.analyticsLocation, P = t.context, N = t.isGift, C = !0, A = !1, u = t.resolve, i = t.reject, I = null, _ = null, d = t.promotionId
                 },
@@ -2821,4 +2729,4 @@
         }
     }
 ]);
-//# sourceMappingURL=11eec8468d4986cfd908.js.map
+//# sourceMappingURL=de0465bf1e946aed725e.js.map

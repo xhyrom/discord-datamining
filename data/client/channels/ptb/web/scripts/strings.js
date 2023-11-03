@@ -18067,7 +18067,7 @@
                 u = E("782340");
             (0, i.setUpdateRules)(s.default), (0, r.default)(u.default, n.default, T.default), a.default.Emitter.injectBatchEmitChanges(o.unstable_batchedUpdates), a.default.PersistedStore.disableWrites = __OVERLAY__, a.default.initialize();
             let L = window.GLOBAL_ENV.RELEASE_CHANNEL;
-            new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(L, ", Build Number: ").concat("243665", ", Version Hash: ").concat("e0d1ac7c1beb7a3eab2e6714344086430bfa6c83")), t.default.setTags({
+            new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(L, ", Build Number: ").concat("243689", ", Version Hash: ").concat("3e651687a9afc8bd557469c97d749f94ba0dd5b1")), t.default.setTags({
                 appContext: l.CURRENT_APP_CONTEXT
             }), S.default.initBasic(), N.default.init(), I.FocusRingManager.init(), O.init(), (0, R.cleanupTempFiles)()
         },
@@ -20451,8 +20451,8 @@
 
             function o() {
                 var e;
-                let _ = parseInt((e = "243665", "243665"));
-                return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("243665")), _ = 0), _
+                let _ = parseInt((e = "243689", "243689"));
+                return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("243689")), _ = 0), _
             }
         },
         990629: function(e, _, E) {
@@ -22254,13 +22254,13 @@
             var t = E("37983");
             E("884691");
             var o = E("77078"),
-                n = E("374014"),
-                r = E("582415"),
-                a = E("643130"),
-                i = E("292687"),
-                I = E("271938"),
-                s = E("42203"),
-                T = E("546463"),
+                n = E("299285"),
+                r = E("374014"),
+                a = E("582415"),
+                i = E("643130"),
+                I = E("292687"),
+                s = E("271938"),
+                T = E("42203"),
                 S = E("824563"),
                 N = E("945956"),
                 O = E("205817"),
@@ -22269,7 +22269,7 @@
                 l = E("49111");
             class u extends A.default {
                 _initialize() {
-                    a.default.init()
+                    i.default.init()
                 }
                 constructor(...e) {
                     super(...e), this.actions = {
@@ -22296,13 +22296,13 @@
                     }, this.handleStreamClose = e => {
                         var _;
                         let {
-                            streamKey: a,
+                            streamKey: n,
                             canShowFeedback: i
-                        } = e, s = (0, n.decodeStreamKey)(a), T = (0, r.getStreamerApplication)(s, S.default), N = null !== (_ = O.default.getVideoStats(a)) && void 0 !== _ ? _ : {}, A = {
-                            media_session_id: O.default.getMediaSessionId(a),
-                            rtc_connection_id: O.default.getRtcConnectionId(a),
-                            stream_region: O.default.getRegion(a),
-                            max_viewers: O.default.getMaxViewers(a),
+                        } = e, I = (0, r.decodeStreamKey)(n), T = (0, a.getStreamerApplication)(I, S.default), N = null !== (_ = O.default.getVideoStats(n)) && void 0 !== _ ? _ : {}, A = {
+                            media_session_id: O.default.getMediaSessionId(n),
+                            rtc_connection_id: O.default.getRtcConnectionId(n),
+                            stream_region: O.default.getRegion(n),
+                            max_viewers: O.default.getMaxViewers(n),
                             ...N
                         };
                         i && this.possiblyShowFeedbackModal(R.FeedbackType.STREAM, () => {
@@ -22311,9 +22311,9 @@
                                     default: e
                                 } = await E.el("363787").then(E.bind(E, "363787"));
                                 return _ => (0, t.jsx)(e, {
-                                    stream: s,
+                                    stream: I,
                                     streamApplication: T,
-                                    isStreamer: s.ownerId === I.default.getId(),
+                                    isStreamer: I.ownerId === s.default.getId(),
                                     ..._,
                                     analyticsData: A
                                 })
@@ -22337,21 +22337,21 @@
                     }, this.handleActivityClose = e => {
                         let {
                             applicationId: _,
-                            channelId: n,
-                            showFeedback: r
-                        } = e, a = T.default.getGame(_), I = s.default.getChannel(n), S = {
+                            channelId: r,
+                            showFeedback: a
+                        } = e, i = n.default.getApplication(_), s = T.default.getChannel(r), S = {
                             rtc_connection_id: N.default.getRTCConnectionId(),
                             media_session_id: N.default.getMediaSessionId()
-                        }, O = i.default.getWindowOpen(l.PopoutWindowKeys.CHANNEL_CALL_POPOUT), A = O ? o.POPOUT_MODAL_CONTEXT : o.DEFAULT_MODAL_CONTEXT;
-                        null != a && null != I && r && this.possiblyShowFeedbackModal(R.FeedbackType.ACTIVITY, () => {
+                        }, O = I.default.getWindowOpen(l.PopoutWindowKeys.CHANNEL_CALL_POPOUT), A = O ? o.POPOUT_MODAL_CONTEXT : o.DEFAULT_MODAL_CONTEXT;
+                        null != i && null != s && a && this.possiblyShowFeedbackModal(R.FeedbackType.ACTIVITY, () => {
                             (0, o.openModalLazy)(async () => {
                                 let {
                                     default: e
                                 } = await E.el("959350").then(E.bind(E, "959350"));
                                 return _ => (0, t.jsx)(e, {
                                     ..._,
-                                    activityApplication: a,
-                                    channel: I,
+                                    activityApplication: i,
+                                    channel: s,
                                     analyticsData: S
                                 })
                             }, {
@@ -36150,4 +36150,4 @@
         }
     }
 ]);
-//# sourceMappingURL=95ea8ee36c4518c39911.js.map
+//# sourceMappingURL=d9aaf71e3d03b47e47e1.js.map

@@ -924,9 +924,9 @@
             });
             var i = n("872717"),
                 r = n("913144"),
-                s = n("393414"),
-                a = n("845579"),
-                o = n("546463"),
+                s = n("299285"),
+                a = n("393414"),
+                o = n("845579"),
                 l = n("568307"),
                 u = n("98328"),
                 c = n("599110"),
@@ -1031,7 +1031,7 @@
             }
 
             function C(e, t, n) {
-                let i = o.default.getGame(e);
+                let i = s.default.getApplication(e);
                 null != i && (E.default.removeShortcuts(i.name), c.default.track(_.AnalyticEvents.LIBRARY_UNINSTALL_INITIATED, {
                     application_id: i.id,
                     application_name: i.name,
@@ -1077,16 +1077,16 @@
             }
 
             function D(e, t) {
-                let n = o.default.getGame(e);
-                null != n && E.default.createShortcuts(a.InstallShortcutDesktop.getSetting(), a.InstallShortcutStartMenu.getSetting(), n.name, n.id, t.installPath)
+                let n = s.default.getApplication(e);
+                null != n && E.default.createShortcuts(o.InstallShortcutDesktop.getSetting(), o.InstallShortcutStartMenu.getSetting(), n.name, n.id, t.installPath)
             }
 
             function y(e, t) {
-                let r = o.default.getGame(e);
+                let r = s.default.getApplication(e);
                 i.default.post({
                     url: _.Endpoints.LIBRARY_APPLICATION_INSTALLED(e, e),
                     oldFormErrors: !0
-                }), null != r && (E.default.createShortcuts(a.InstallShortcutDesktop.getSetting(), a.InstallShortcutStartMenu.getSetting(), r.name, r.id, t.installPath), n.el("193990").then(n.bind(n, "193990")).then(e => {
+                }), null != r && (E.default.createShortcuts(o.InstallShortcutDesktop.getSetting(), o.InstallShortcutStartMenu.getSetting(), r.name, r.id, t.installPath), n.el("193990").then(n.bind(n, "193990")).then(e => {
                     let {
                         default: t
                     } = e;
@@ -1095,7 +1095,7 @@
                     }), {
                         notif_type: "Game Library Game Installed"
                     }, {
-                        onClick: () => (0, s.transitionTo)(_.Routes.APPLICATION_LIBRARY),
+                        onClick: () => (0, a.transitionTo)(_.Routes.APPLICATION_LIBRARY),
                         omitViewTracking: !0
                     })
                 }))
@@ -19638,6 +19638,195 @@
                 }
             })
         },
+        299285: function(e, t, n) {
+            "use strict";
+            n.r(t), n.d(t, {
+                default: function() {
+                    return f
+                }
+            });
+            var i = n("446674"),
+                r = n("913144"),
+                s = n("653047");
+            let a = [],
+                o = {},
+                l = {},
+                u = {},
+                c = {};
+
+            function d(e) {
+                for (let t of (o[e.id] = e, u[e.name.toLowerCase()] = e, e.aliases)) u[t.toLowerCase()] = e;
+                delete c[e.id]
+            }
+
+            function E(e) {
+                let {
+                    entitlements: t
+                } = e, n = !1;
+                for (let {
+                        sku: e
+                    }
+                    of t)(null == e ? void 0 : e.application) != null && (d(s.default.createFromServer(e.application)), n = !0);
+                return n
+            }
+            class h extends i.default.Store {
+                _getAllApplications() {
+                    return Object.values(o)
+                }
+                getGuildApplication(e, t) {
+                    if (null != e) {
+                        for (let n of Object.values(o))
+                            if (n.guildId === e && n.type === t) return n
+                    }
+                }
+                getGuildApplicationIds(e) {
+                    var t;
+                    return null == e ? a : null !== (t = l[e]) && void 0 !== t ? t : a
+                }
+                getApplication(e) {
+                    return o[e]
+                }
+                getApplicationByName(e) {
+                    if (null == e) return;
+                    let t = e.toLowerCase();
+                    return Object.prototype.hasOwnProperty.call(u, t) ? u[t] : void 0
+                }
+                isFetchingApplication(e) {
+                    return !0 === c[e]
+                }
+                didFetchingApplicationFail(e) {
+                    return !1 === c[e]
+                }
+                getFetchingOrFailedFetchingIds() {
+                    return Object.keys(c)
+                }
+            }
+            h.displayName = "ApplicationStore";
+            var f = new h(r.default, {
+                CONNECTION_OPEN: function() {
+                    o = {}, l = {}
+                },
+                OVERLAY_INITIALIZE: function(e) {
+                    let {
+                        applications: t
+                    } = e;
+                    for (let e of t) d(new s.default(e))
+                },
+                APPLICATION_FETCH: function(e) {
+                    let {
+                        applicationId: t
+                    } = e, n = c[t];
+                    return c[t] = !0, !0 !== n
+                },
+                APPLICATION_FETCH_SUCCESS: function(e) {
+                    let {
+                        application: t
+                    } = e;
+                    d(s.default.createFromServer(t))
+                },
+                APPLICATION_FETCH_FAIL: function(e) {
+                    let {
+                        applicationId: t
+                    } = e, n = c[t];
+                    return c[t] = !1, !1 !== n
+                },
+                APPLICATIONS_FETCH: function(e) {
+                    let {
+                        applicationIds: t
+                    } = e, n = !1;
+                    for (let e of t) {
+                        let t = c[e];
+                        c[e] = !0, n = !0 !== t
+                    }
+                    return n
+                },
+                APPLICATIONS_FETCH_SUCCESS: function(e) {
+                    let {
+                        applications: t
+                    } = e;
+                    for (let e of t) d(s.default.createFromServer(e))
+                },
+                APPLICATIONS_FETCH_FAIL: function(e) {
+                    let {
+                        applicationIds: t
+                    } = e, n = !1;
+                    for (let e of t) {
+                        let t = c[e];
+                        c[e] = !1, n = !1 !== t
+                    }
+                    return n
+                },
+                APPLICATION_SUBSCRIPTIONS_FETCH_ENTITLEMENTS_SUCCESS: E,
+                ENTITLEMENTS_FETCH_FOR_USER_SUCCESS: E,
+                ENTITLEMENTS_GIFTABLE_FETCH_SUCCESS: E,
+                GUILD_SETTINGS_LOADED_INTEGRATIONS: function(e) {
+                    let {
+                        integrations: t,
+                        guildId: n
+                    } = e, i = !1, r = [];
+                    for (let {
+                            application: e
+                        }
+                        of t) null != e && (d(e), r.push(e.id), i = !0);
+                    return i && (l[n] = r), i
+                },
+                GUILD_APPLICATIONS_FETCH_SUCCESS: function(e) {
+                    let {
+                        guildId: t,
+                        applications: n
+                    } = e, i = [];
+                    for (let e of n) i.push(e.id), d(s.default.createFromServer(e));
+                    l[t] = i
+                },
+                BILLING_PAYMENTS_FETCH_SUCCESS: function(e) {
+                    let {
+                        payments: t
+                    } = e, n = new Set;
+                    for (let e of t) {
+                        var i;
+                        let t = null === (i = e.sku) || void 0 === i ? void 0 : i.application;
+                        !(null == t || n.has(t.id)) && d(s.default.createFromServer(t))
+                    }
+                    return n.size > 0
+                },
+                PAYMENT_UPDATE: function(e) {
+                    var t;
+                    let {
+                        payment: n
+                    } = e;
+                    if ((null === (t = n.sku) || void 0 === t ? void 0 : t.application) == null) return !1;
+                    d(s.default.createFromServer(n.sku.application))
+                },
+                INVITE_RESOLVE_SUCCESS: function(e) {
+                    let {
+                        invite: t
+                    } = e;
+                    if (null == t.target_application) return !1;
+                    d(s.default.createFromServer(t.target_application))
+                },
+                GIFT_CODE_RESOLVE_SUCCESS: function(e) {
+                    var t;
+                    let {
+                        giftCode: n
+                    } = e;
+                    if ((null === (t = n.store_listing) || void 0 === t ? void 0 : t.sku.application) == null) return !1;
+                    d(s.default.createFromServer(n.store_listing.sku.application))
+                },
+                LIBRARY_FETCH_SUCCESS: function(e) {
+                    let {
+                        libraryApplications: t
+                    } = e;
+                    for (let e of t) d(s.default.createFromServer(e.application))
+                },
+                STORE_LISTING_FETCH_SUCCESS: function(e) {
+                    let {
+                        storeListing: t
+                    } = e;
+                    if (null == t.sku.application) return !1;
+                    d(s.default.createFromServer(t.sku.application))
+                }
+            })
+        },
         519820: function(e, t, n) {
             "use strict";
             n.r(t), n.d(t, {
@@ -32359,7 +32548,7 @@
             var i = n("866227"),
                 r = n.n(i),
                 s = n("666038"),
-                a = n("546463"),
+                a = n("299285"),
                 o = n("568734"),
                 l = n("984273"),
                 u = n("49111");
@@ -32434,7 +32623,7 @@
                     return this.sku.id
                 }
                 getAnalyticsData() {
-                    let e = a.default.getGame(this.id);
+                    let e = a.default.getApplication(this.id);
                     return {
                         application_id: null != e ? e.id : null,
                         application_name: null != e ? e.name : null,
@@ -34665,109 +34854,81 @@
         },
         546463: function(e, t, n) {
             "use strict";
+            let i;
             n.r(t), n.d(t, {
                 default: function() {
-                    return P
+                    return g
                 }
             });
-            var i, r = n("917351"),
-                s = n.n(r),
-                a = n("446674"),
-                o = n("95410"),
-                l = n("913144"),
-                u = n("845579"),
-                c = n("653047"),
-                d = n("449008"),
-                E = n("773336");
-            let h = "GameStoreReportedGames",
-                f = "DETECTABLE",
-                _ = {},
-                p = new Set,
-                S = {},
-                T = {},
-                m = {},
-                I = {},
-                g = null !== (i = o.default.get(h)) && void 0 !== i ? i : {},
-                C = "",
-                A = {},
-                v = null;
+            var r, s = n("446674"),
+                a = n("95410"),
+                o = n("913144"),
+                l = n("845579"),
+                u = n("653047"),
+                c = n("773336");
+            let d = "GameStoreReportedGames",
+                E = {},
+                h = {},
+                f = {},
+                _ = null !== (r = a.default.get(d)) && void 0 !== r ? r : {},
+                p = "";
+            let S = null;
 
-            function R(e, t) {
-                return "".concat(e, ":").concat(null != t ? t : "null")
+            function T(e) {
+                return {
+                    id: e.id,
+                    name: e.name,
+                    executables: e.executables,
+                    overlayWarn: e.overlayWarn,
+                    overlayCompatibilityHook: e.overlayCompatibilityHook,
+                    overlay: e.overlay,
+                    hook: e.hook,
+                    aliases: e.aliases
+                }
             }
 
-            function N(e) {
-                if ("applicationIds" in e && null != e.applicationIds)
-                    for (let t of e.applicationIds) A[t] = !0;
-                else A[f] = !0
+            function m(e) {
+                let t = e instanceof u.default ? T(e) : e;
+                for (let n of (E[e.id] = t, h[e.name.toLowerCase()] = t, e.aliases)) h[n.toLowerCase()] = t;
+                if ((0, c.isDesktop)())
+                    for (let n of e.executables) f[n.name] = t
             }
-
-            function O(e) {
-                if ("applicationIds" in e && null != e.applicationIds)
-                    for (let t of e.applicationIds) A[t] = !1;
-                else A[f] = !1
-            }
-
-            function D(e) {
-                for (let {
-                        distributor: t,
-                        id: n
-                    }
-                    of(_[e.id] = e, S[e.name.toLowerCase()] = e, e.thirdPartySkus)) T[R(t, n)] = e;
-                for (let t of e.aliases) S[t.toLowerCase()] = e;
-                if ((0, E.isDesktop)())
-                    for (let t of e.executables) m[t.name] = e;
-                delete A[e.id]
-            }
-            class y extends a.default.PersistedStore {
+            class I extends s.default.PersistedStore {
                 initialize(e) {
-                    if (null != e && (null != e.detectableGamesEtag && (C = e.detectableGamesEtag), null != e.detectableGames))
+                    if (null != e && (null != e.detectableGamesEtag && (p = e.detectableGamesEtag), null != e.detectableGames))
                         for (let t of Object.values(e.detectableGames)) {
-                            let e = new c.default(t);
-                            D(e), p.add(e.id)
+                            let e = new u.default(t);
+                            m(e)
                         }
                 }
                 getState() {
-                    let e = [];
-                    for (let t of p) {
-                        let n = _[t];
-                        null != n && e.push(n)
-                    }
                     return {
-                        detectableGamesEtag: C,
-                        detectableGames: e
+                        detectableGamesEtag: p,
+                        detectableGames: Object.values(E)
                     }
                 }
                 get games() {
-                    return s.values(_)
-                }
-                getGame(e) {
-                    return _[e]
+                    return Object.values(E)
                 }
                 getDetectableGame(e) {
-                    if (p.has(e)) return _[e]
+                    return E[e]
                 }
                 getGameByName(e) {
                     if (null == e) return null;
                     let t = e.toLowerCase();
-                    return Object.prototype.hasOwnProperty.call(S, t) ? S[t] : null
+                    return Object.prototype.hasOwnProperty.call(h, t) ? h[t] : null
                 }
                 get fetching() {
-                    for (let e of s.values(A))
-                        if (e) return e;
-                    return !1
+                    return !0 === i
                 }
                 get detectableGamesEtag() {
-                    return C
+                    return p
                 }
                 get lastFetched() {
-                    return v
-                }
-                getGameByDistributorGame(e, t) {
-                    return T[R(e, t)]
+                    return S
                 }
                 getGameByExecutable(e) {
-                    return m[e]
+                    return f[e]
                 }
                 getGameByGameData(e) {
                     var t, n;
@@ -34783,131 +34944,49 @@
                     }
                     return null !== (n = null !== (t = this.getGameByExecutable(r)) && void 0 !== t ? t : this.getGameByExecutable(s)) && void 0 !== n ? n : i
                 }
-                getApplicationsForGuild(e) {
-                    return null == I[e] ? null : I[e].map(e => _[e]).filter(d.isNotNullish)
-                }
                 shouldReport(e) {
                     let t = null != this.getGameByName(e),
-                        n = null != g[e];
-                    return u.ShowCurrentGame.getSetting() && !A[f] && !(t || n)
+                        n = null != _[e];
+                    return l.ShowCurrentGame.getSetting() && !i && !(t || n)
                 }
                 markGameReported(e) {
-                    g[e] = !0, o.default.set(h, g)
-                }
-                isFetching(e) {
-                    return !0 === A[e]
-                }
-                didFetchingFail(e) {
-                    return !1 === A[e]
-                }
-                getFetchingOrFailedFetchingIds() {
-                    return [...Object.entries(A).map(e => {
-                        let [t] = e;
-                        return t
-                    })]
+                    _[e] = !0, a.default.set(d, _)
                 }
             }
-            y.displayName = "GameStore", y.persistKey = "GameStore";
-            var P = new y(l.default, {
+            I.displayName = "GameStore", I.persistKey = "GameStore", I.migrations = [e => {
+                var t, n;
+                if (null == e) return {
+                    detectableGamesEtag: "",
+                    detectableGames: []
+                };
+                return {
+                    detectableGamesEtag: e.detectableGamesEtag,
+                    detectableGames: null !== (n = null === (t = e.detectableGames) || void 0 === t ? void 0 : t.map(e => T(new u.default(e)))) && void 0 !== n ? n : []
+                }
+            }];
+            var g = new I(o.default, {
                 OVERLAY_INITIALIZE: function(e) {
                     let {
-                        applications: t
+                        detectableApplications: t
                     } = e;
-                    for (let e of t) D(new c.default(e))
+                    for (let e of t) m(e)
                 },
-                GAMES_DATABASE_FETCH: N,
-                GAMES_DATABASE_FETCH_FAIL: O,
+                GAMES_DATABASE_FETCH: function() {
+                    i = !0
+                },
+                GAMES_DATABASE_FETCH_FAIL: function() {
+                    i = !1
+                },
                 GAMES_DATABASE_UPDATE: function(e) {
                     let {
                         games: t,
                         etag: n
                     } = e;
-                    for (let e of (null != n && C !== n && (C = n), t)) {
-                        let t = c.default.createFromServer(e);
-                        D(t), p.add(t.id)
+                    for (let e of (null != n && p !== n && (p = n), t)) {
+                        let t = u.default.createFromServer(e);
+                        m(t)
                     }
-                    delete A[f], v = Date.now()
-                },
-                STORE_LISTING_FETCH_SUCCESS: function(e) {
-                    let {
-                        storeListing: t
-                    } = e;
-                    if (null == t.sku.application) return !1;
-                    D(c.default.createFromServer(t.sku.application))
-                },
-                LIBRARY_FETCH_SUCCESS: function(e) {
-                    let {
-                        libraryApplications: t
-                    } = e;
-                    for (let e of t) D(c.default.createFromServer(e.application))
-                },
-                GIFT_CODE_RESOLVE_SUCCESS: function(e) {
-                    let {
-                        giftCode: t
-                    } = e, n = t.store_listing;
-                    if (null == n || null == n.sku.application) return !1;
-                    D(c.default.createFromServer(n.sku.application))
-                },
-                APPLICATION_FETCH: function(e) {
-                    let {
-                        applicationId: t
-                    } = e;
-                    null != t && (A[t] = !0)
-                },
-                APPLICATION_FETCH_FAIL: function(e) {
-                    let {
-                        applicationId: t
-                    } = e;
-                    null != t && (A[t] = !1)
-                },
-                APPLICATION_FETCH_SUCCESS: function(e) {
-                    let {
-                        application: t
-                    } = e;
-                    D(c.default.createFromServer(t))
-                },
-                GUILD_APPLICATIONS_FETCH_SUCCESS: function(e) {
-                    let {
-                        guildId: t,
-                        applications: n
-                    } = e;
-                    for (let e of (I[t] = n.map(e => e.id), n)) D(c.default.createFromServer(e))
-                },
-                APPLICATIONS_FETCH: N,
-                APPLICATIONS_FETCH_FAIL: O,
-                APPLICATIONS_FETCH_SUCCESS: function(e) {
-                    let {
-                        applications: t
-                    } = e;
-                    if (0 === t.length) return !1;
-                    t.forEach(e => D(c.default.createFromServer(e)))
-                },
-                BILLING_PAYMENTS_FETCH_SUCCESS: function(e) {
-                    let {
-                        payments: t
-                    } = e, n = new Set;
-                    return t.forEach(e => {
-                        let t = null != e.sku ? e.sku.application : null;
-                        null != t && !n.has(t.id) && D(c.default.createFromServer(t))
-                    }), n.size > 0
-                },
-                PAYMENT_UPDATE: function(e) {
-                    let {
-                        payment: t
-                    } = e, n = null != t.sku ? t.sku.application : null;
-                    return null != n && (D(c.default.createFromServer(n)), !0)
-                },
-                ENTITLEMENTS_GIFTABLE_FETCH_SUCCESS: function(e) {
-                    let {
-                        entitlements: t
-                    } = e;
-                    for (let e of t) null != e.sku && null != e.sku.application && D(c.default.createFromServer(e.sku.application))
-                },
-                INVITE_RESOLVE_SUCCESS: function(e) {
-                    let {
-                        invite: t
-                    } = e;
-                    return null != t.target_application && (D(c.default.createFromServer(t.target_application)), !0)
+                    i = void 0, S = Date.now()
                 }
             })
         },
@@ -39947,7 +40026,7 @@
             function ei() {
                 let e = !1;
                 return M = o.values(A.default.libraryApplications).reduce((t, n) => {
-                    let i = C.default.getGame(n.id);
+                    let i = C.default.getDetectableGame(n.id);
                     if (null == i) return t;
                     let r = v.default.getLaunchOptions(n.id, n.branchId);
                     for (let s of r) {
@@ -40210,7 +40289,7 @@
                     if (V.enableOverlay[Z(t)] = !n, et(), E.default.dispatch({
                             type: "OVERLAY_GAMES_CHANGE"
                         }), !__OVERLAY__) {
-                        let e = null != t.id ? C.default.getGame(t.id) : null;
+                        let e = null != t.id ? C.default.getDetectableGame(t.id) : null;
                         null != e && S.default.track(R.AnalyticEvents.OVERLAY_TOGGLED, {
                             enabled: !n,
                             setting_type: "overlay toggled - game",
@@ -40259,7 +40338,7 @@
                     if (__OVERLAY__ || !I.isPlatformEmbedded) return;
                     let n = g.default.getDiscordUtils().notifyGameLaunched;
                     if (null == n) return;
-                    let i = C.default.getGame(e.applicationId);
+                    let i = C.default.getDetectableGame(e.applicationId);
                     null != i && n(i.id, i.name, null !== (t = e.pids) && void 0 !== t ? t : [])
                 },
                 GAME_DETECTION_WATCH_CANDIDATE_GAMES_START: function() {
@@ -43172,7 +43251,7 @@
                 l = n("157552"),
                 u = n("71313"),
                 c = n("190017"),
-                d = n("546463"),
+                d = n("299285"),
                 E = n("686470"),
                 h = n("535974"),
                 f = n("98328"),
@@ -43205,7 +43284,7 @@
                         i = n.manifestIds,
                         s = h.default.getState(e, t);
                     null != s && s.shouldPatch && (s.buildId !== n.id || !r.isEqual(s.manifestIds, i)) && o.default.wait(() => {
-                        let r = d.default.getGame(e);
+                        let r = d.default.getApplication(e);
                         null != r ? (g.delete((0, _.getComboId)(e, t)), (0, c.updateApplication)(r, t, n.id, i, !0)) : g.add((0, _.getComboId)(e, t))
                     })
                 }
@@ -43248,7 +43327,7 @@
                         let {
                             applicationId: t,
                             branchId: n
-                        } = (0, _.convertComboId)(e), i = d.default.getGame(t);
+                        } = (0, _.convertComboId)(e), i = d.default.getApplication(t);
                         null != i && (g.delete(e), N(t, n))
                     }
                 },
@@ -48903,7 +48982,7 @@
                         var i;
                         let d = {
                                 environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                                build_number: "243665"
+                                build_number: "243689"
                             },
                             E = l.default.getCurrentUser();
                         null != E && (d.user_id = E.id, d.user_name = E.tag, null != E.email && (d.email = E.email));
@@ -62169,4 +62248,4 @@
         }
     }
 ]);
-//# sourceMappingURL=afd0ec808a80d298e2b9.js.map
+//# sourceMappingURL=2e92fedc421216b7dad6.js.map
