@@ -1,32 +1,32 @@
 (this.webpackChunkdiscord_app = this.webpackChunkdiscord_app || []).push([
     ["37102"], {
-        565581: function(e, t, l) {
+        565581: function(t, e, l) {
             "use strict";
-            e.exports = l.p + "f6bc645aead00959a690.svg"
+            t.exports = l.p + "f6bc645aead00959a690.svg"
         },
-        154393: function(e, t, l) {
+        154393: function(t, e, l) {
             "use strict";
-            e.exports = l.p + "fef39f80370ecfd7507d.svg"
+            t.exports = l.p + "fef39f80370ecfd7507d.svg"
         },
-        280609: function(e, t, l) {
+        280609: function(t, e, l) {
             "use strict";
-            e.exports = l.p + "c00cfaed1382bf7f33d4.svg"
+            t.exports = l.p + "c00cfaed1382bf7f33d4.svg"
         },
-        595247: function(e, t, l) {
+        595247: function(t, e, l) {
             "use strict";
-            e.exports = l.p + "c8576c5063b9f32889cb.svg"
+            t.exports = l.p + "c8576c5063b9f32889cb.svg"
         },
-        551921: function(e, t, l) {
+        551921: function(t, e, l) {
             "use strict";
-            e.exports = l.p + "27f92332674f9dacc1e9.svg"
+            t.exports = l.p + "27f92332674f9dacc1e9.svg"
         },
-        153518: function(e, t, l) {
+        153518: function(t, e, l) {
             "use strict";
-            e.exports = l.p + "f95c22b2edd5edef268b.svg"
+            t.exports = l.p + "f95c22b2edd5edef268b.svg"
         },
-        959254: function(e, t, l) {
+        959254: function(t, e, l) {
             "use strict";
-            l.r(t), l.d(t, {
+            l.r(e), l.d(e, {
                 sync: function() {
                     return c
                 }
@@ -37,22 +37,22 @@
                 i = l("49111");
             let o = new a.default("CloudSync");
             class u {
-                constructor(e) {
-                    this.message = e
+                constructor(t) {
+                    this.message = t
                 }
             }
-            async function c(e, t) {
+            async function c(t, e) {
                 let l, a = arguments.length > 2 && void 0 !== arguments[2] ? arguments[2] : null;
                 n.default.dispatch({
                     type: "GAME_CLOUD_SYNC_START",
-                    applicationId: e,
-                    branchId: t
+                    applicationId: t,
+                    branchId: e
                 });
                 try {
-                    if ((l = await s.syncApplication(e, t, a)).type === i.CloudSyncResultTypes.CONFLICT) throw n.default.dispatch({
+                    if ((l = await s.syncApplication(t, e, a)).type === i.CloudSyncResultTypes.CONFLICT) throw n.default.dispatch({
                         type: "GAME_CLOUD_SYNC_CONFLICT",
-                        applicationId: e,
-                        branchId: t,
+                        applicationId: t,
+                        branchId: e,
                         next: l.next,
                         remote: l.remote
                     }), new u("Conflict in cloud sync.");
@@ -61,76 +61,76 @@
                     if (l instanceof u) throw l;
                     throw n.default.dispatch({
                         type: "GAME_CLOUD_SYNC_ERROR",
-                        applicationId: e,
-                        branchId: t
+                        applicationId: t,
+                        branchId: e
                     }), o.error("Failed to cloud sync:", l), Error("Failed to cloud sync.")
                 }
                 return n.default.dispatch({
                     type: "GAME_CLOUD_SYNC_COMPLETE",
-                    applicationId: e,
-                    branchId: t
+                    applicationId: t,
+                    branchId: e
                 }), l
             }
         },
-        406189: function(e, t, l) {
+        406189: function(t, e, l) {
             "use strict";
-            l.r(t), l.d(t, {
+            l.r(e), l.d(e, {
                 default: function() {
                     return a
                 }
             });
             var n = l("913144"),
                 a = {
-                    updateChannelDimensions(e, t, l, a, s) {
+                    updateChannelDimensions(t, e, l, a, s) {
                         n.default.wait(() => {
                             n.default.dispatch({
                                 type: "UPDATE_CHANNEL_DIMENSIONS",
-                                channelId: e,
-                                scrollTop: t,
+                                channelId: t,
+                                scrollTop: e,
                                 scrollHeight: l,
                                 offsetHeight: a
                             }), null != s && s()
                         })
                     },
-                    updateChannelListScroll(e, t) {
+                    updateChannelListScroll(t, e) {
                         let l = arguments.length > 2 && void 0 !== arguments[2] ? arguments[2] : [];
                         n.default.dispatch({
                             type: "UPDATE_CHANNEL_LIST_DIMENSIONS",
-                            guildId: e,
-                            scrollTop: t,
+                            guildId: t,
+                            scrollTop: e,
                             channelIds: l
                         })
                     },
-                    channelListScrollTo(e, t) {
+                    channelListScrollTo(t, e) {
                         n.default.dispatch({
                             type: "UPDATE_CHANNEL_LIST_DIMENSIONS",
-                            guildId: e,
-                            scrollTo: t,
+                            guildId: t,
+                            scrollTo: e,
                             channelIds: []
                         })
                     },
-                    clearChannelListScrollTo(e) {
+                    clearChannelListScrollTo(t) {
                         n.default.dispatch({
                             type: "UPDATE_CHANNEL_LIST_DIMENSIONS",
-                            guildId: e,
+                            guildId: t,
                             scrollTo: null,
                             channelIds: []
                         })
                     },
-                    clearChannelDimensions(e, t) {
-                        this.updateChannelDimensions(e, null, null, null, t)
+                    clearChannelDimensions(t, e) {
+                        this.updateChannelDimensions(t, null, null, null, e)
                     },
-                    updateGuildListScrollTo(e) {
+                    updateGuildListScrollTo(t) {
                         n.default.dispatch({
                             type: "UPDATE_GUILD_LIST_DIMENSIONS",
-                            scrollTop: e
+                            scrollTop: t
                         })
                     }
                 }
         },
-        596169: function(e, t, l) {
+        596169: function(t, e, l) {
             "use strict";
-            l.r(t), l.d(t, {
+            l.r(e), l.d(e, {
                 playApplication: function() {
                     return S
                 }
@@ -143,63 +143,63 @@
                 u = l("77078"),
                 c = l("959254"),
                 r = l("823411"),
-                d = l("546463"),
+                d = l("299285"),
                 p = l("148813"),
                 f = l("145131"),
                 C = l("599110"),
-                _ = l("49111"),
-                h = l("782340"),
-                y = l("141804"),
-                A = l("926622");
+                A = l("49111"),
+                _ = l("782340"),
+                h = l("141804"),
+                y = l("926622");
             class T extends a.PureComponent {
-                renderConflictButton(e, t, l, a) {
+                renderConflictButton(t, e, l, a) {
                     return (0, n.jsxs)(u.Button, {
-                        className: y.conflictButton,
-                        innerClassName: y.conflictButtonInner,
+                        className: h.conflictButton,
+                        innerClassName: h.conflictButtonInner,
                         onClick: a,
                         children: [(0, n.jsx)("div", {
                             className: l
                         }), (0, n.jsxs)("div", {
-                            className: y.buttonBody,
+                            className: h.buttonBody,
                             children: [(0, n.jsx)("div", {
-                                className: y.conflictTitle,
-                                children: e
+                                className: h.conflictTitle,
+                                children: t
                             }), (0, n.jsx)("div", {
-                                children: h.default.Messages.CLOUD_SYNC_MODAL_CONFLICT_LAST_MODIFIED
+                                children: _.default.Messages.CLOUD_SYNC_MODAL_CONFLICT_LAST_MODIFIED
                             }), (0, n.jsx)("div", {
-                                className: y.timestamp,
-                                children: i(t).calendar()
+                                className: h.timestamp,
+                                children: i(e).calendar()
                             })]
                         })]
                     })
                 }
                 renderError() {
                     let {
-                        application: e
+                        application: t
                     } = this.props;
                     return (0, n.jsxs)(a.Fragment, {
                         children: [(0, n.jsxs)(u.ModalContent, {
                             children: [(0, n.jsx)(f.default, {
                                 justify: f.default.Justify.CENTER,
                                 children: (0, n.jsx)("div", {
-                                    className: y.errorArt
+                                    className: h.errorArt
                                 })
                             }), (0, n.jsx)("div", {
-                                className: y.description,
-                                children: h.default.Messages.CLOUD_SYNC_MODAL_ERROR_DESCRIPTION.format({
-                                    applicationName: e.name
+                                className: h.description,
+                                children: _.default.Messages.CLOUD_SYNC_MODAL_ERROR_DESCRIPTION.format({
+                                    applicationName: t.name
                                 })
                             })]
                         }), (0, n.jsx)(u.ModalFooter, {
                             children: (0, n.jsxs)(f.default, {
                                 justify: f.default.Justify.BETWEEN,
                                 children: [(0, n.jsx)(u.Button, {
-                                    className: y.linkButton,
-                                    size: y.linkButtonSize,
+                                    className: h.linkButton,
+                                    size: h.linkButtonSize,
                                     look: u.Button.Looks.LINK,
                                     color: u.Button.Colors.PRIMARY,
                                     onClick: this.onClose,
-                                    children: h.default.Messages.CANCEL
+                                    children: _.default.Messages.CANCEL
                                 }), (0, n.jsxs)(f.default, {
                                     direction: f.default.Direction.HORIZONTAL,
                                     justify: f.default.Justify.END,
@@ -207,11 +207,11 @@
                                         look: u.Button.Looks.LINK,
                                         color: u.Button.Colors.PRIMARY,
                                         onClick: () => this.handlePlay(),
-                                        className: y.retryButton,
-                                        children: h.default.Messages.RETRY
+                                        className: h.retryButton,
+                                        children: _.default.Messages.RETRY
                                     }), (0, n.jsx)(u.Button, {
                                         onClick: () => this.handlePlay(!1),
-                                        children: h.default.Messages.GAME_ACTION_BUTTON_PLAY
+                                        children: _.default.Messages.GAME_ACTION_BUTTON_PLAY
                                     })]
                                 })]
                             })
@@ -220,126 +220,126 @@
                 }
                 renderConflict() {
                     let {
-                        application: e,
-                        cloudSyncState: t
+                        application: t,
+                        cloudSyncState: e
                     } = this.props;
-                    if (t.type !== _.CloudSyncStateTypes.CONFLICT) throw Error("Cannot render conflict for non conflict type");
+                    if (e.type !== A.CloudSyncStateTypes.CONFLICT) throw Error("Cannot render conflict for non conflict type");
                     return (0, n.jsxs)(u.ModalContent, {
-                        className: A.marginBottom20,
+                        className: y.marginBottom20,
                         children: [(0, n.jsx)("div", {
-                            className: y.description,
-                            children: h.default.Messages.CLOUD_SYNC_MODAL_CONFLICT_DESCRIPTION.format({
-                                applicationName: e.name
+                            className: h.description,
+                            children: _.default.Messages.CLOUD_SYNC_MODAL_CONFLICT_DESCRIPTION.format({
+                                applicationName: t.name
                             })
-                        }), this.renderConflictButton(h.default.Messages.CLOUD_SYNC_MODAL_CONFLICT_CHOICE_DOWNLOAD, t.remote.timestamp, y.conflictDownloadArt, this.handleChooseDownload), (0, n.jsxs)(f.default, {
-                            className: y.choiceWrapper,
+                        }), this.renderConflictButton(_.default.Messages.CLOUD_SYNC_MODAL_CONFLICT_CHOICE_DOWNLOAD, e.remote.timestamp, h.conflictDownloadArt, this.handleChooseDownload), (0, n.jsxs)(f.default, {
+                            className: h.choiceWrapper,
                             align: f.default.Align.CENTER,
                             children: [(0, n.jsx)("div", {
-                                className: y.choiceLine
+                                className: h.choiceLine
                             }), (0, n.jsx)("div", {
-                                className: y.choiceTitle,
-                                children: h.default.Messages.CLOUD_SYNC_MODAL_OR
+                                className: h.choiceTitle,
+                                children: _.default.Messages.CLOUD_SYNC_MODAL_OR
                             }), (0, n.jsx)("div", {
-                                className: y.choiceLine
+                                className: h.choiceLine
                             })]
-                        }), this.renderConflictButton(h.default.Messages.CLOUD_SYNC_MODAL_CONFLICT_CHOICE_UPLOAD, t.next.timestamp, y.conflictUploadArt, this.handleChooseUpload)]
+                        }), this.renderConflictButton(_.default.Messages.CLOUD_SYNC_MODAL_CONFLICT_CHOICE_UPLOAD, e.next.timestamp, h.conflictUploadArt, this.handleChooseUpload)]
                     })
                 }
                 render() {
                     let {
-                        cloudSyncState: e,
-                        transitionState: t
-                    } = this.props, l = e.type === _.CloudSyncStateTypes.CONFLICT ? h.default.Messages.CLOUD_SYNC_MODAL_CONFLICT_HEADER : h.default.Messages.CLOUD_SYNC_MODAL_ERROR_HEADER;
+                        cloudSyncState: t,
+                        transitionState: e
+                    } = this.props, l = t.type === A.CloudSyncStateTypes.CONFLICT ? _.default.Messages.CLOUD_SYNC_MODAL_CONFLICT_HEADER : _.default.Messages.CLOUD_SYNC_MODAL_ERROR_HEADER;
                     return (0, n.jsxs)(u.ModalRoot, {
-                        transitionState: t,
-                        className: y.modal,
+                        transitionState: e,
+                        className: h.modal,
                         "aria-label": l,
                         children: [(0, n.jsxs)(u.ModalHeader, {
                             separator: !1,
                             children: [(0, n.jsx)(u.ModalCloseButton, {
-                                className: y.closeButton,
+                                className: h.closeButton,
                                 onClick: this.onClose
                             }), (0, n.jsx)(u.FormTitle, {
                                 tag: "h2",
-                                className: A.marginReset,
+                                className: y.marginReset,
                                 children: l
                             })]
-                        }), e.type === _.CloudSyncStateTypes.CONFLICT ? this.renderConflict() : this.renderError()]
+                        }), t.type === A.CloudSyncStateTypes.CONFLICT ? this.renderConflict() : this.renderError()]
                     })
                 }
-                constructor(...e) {
-                    var t;
-                    super(...e), t = this, this.onClose = () => {
+                constructor(...t) {
+                    var e;
+                    super(...t), e = this, this.onClose = () => {
                         this.props.onClose()
                     }, this.handlePlay = function() {
-                        let e = !(arguments.length > 0) || void 0 === arguments[0] || arguments[0],
+                        let t = !(arguments.length > 0) || void 0 === arguments[0] || arguments[0],
                             l = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : null,
                             {
                                 libraryApplication: n,
                                 analyticsParams: a
-                            } = t.props;
-                        t.onClose(), S(n.id, n, {
+                            } = e.props;
+                        e.onClose(), S(n.id, n, {
                             analyticsParams: a,
-                            cloudSync: e,
+                            cloudSync: t,
                             cloudSyncForceHash: l
                         })
                     }, this.handleChooseDownload = () => {
                         let {
-                            cloudSyncState: e
+                            cloudSyncState: t
                         } = this.props;
-                        e.type === _.CloudSyncStateTypes.CONFLICT && this.handlePlay(!0, e.remote.hash)
+                        t.type === A.CloudSyncStateTypes.CONFLICT && this.handlePlay(!0, t.remote.hash)
                     }, this.handleChooseUpload = () => {
                         let {
-                            cloudSyncState: e
+                            cloudSyncState: t
                         } = this.props;
-                        e.type === _.CloudSyncStateTypes.CONFLICT && this.handlePlay(!0, e.next.hash)
+                        t.type === A.CloudSyncStateTypes.CONFLICT && this.handlePlay(!0, t.next.hash)
                     }
                 }
             }
-            let E = o.default.connectStores([p.default, d.default], e => {
+            let E = o.default.connectStores([p.default, d.default], t => {
                 let {
-                    libraryApplication: t,
+                    libraryApplication: e,
                     branchId: l
-                } = e;
+                } = t;
                 return {
-                    cloudSyncState: p.default.getState(t.id, l),
-                    application: d.default.getGame(t.id)
+                    cloudSyncState: p.default.getState(e.id, l),
+                    application: d.default.getApplication(e.id)
                 }
             })(T);
-            async function S(e, t, l) {
-                let a = d.default.getGame(e);
+            async function S(t, e, l) {
+                let a = d.default.getApplication(t);
                 if (null == a) return;
                 let {
                     cloudSync: s = !0,
                     cloudSyncForceHash: i = null,
                     analyticsParams: o
                 } = l;
-                if (s && null != t) {
-                    let e = t.branchId;
+                if (s && null != e) {
+                    let t = e.branchId;
                     try {
-                        await c.sync(t.id, e, i)
+                        await c.sync(e.id, t, i)
                     } catch (l) {
                         (0, u.openModal)(l => (0, n.jsx)(E, {
-                            libraryApplication: t,
+                            libraryApplication: e,
                             analyticsParams: o,
-                            branchId: e,
+                            branchId: t,
                             ...l
                         }));
                         return
                     }
                 }
-                return C.default.track(_.AnalyticEvents.APPLICATION_OPENED, {
+                return C.default.track(A.AnalyticEvents.APPLICATION_OPENED, {
                     application_id: a.id,
                     application_name: a.name,
-                    type: _.AnalyticsGameOpenTypes.LAUNCH,
-                    distributor: null != t ? t.getDistributor() : null,
+                    type: A.AnalyticsGameOpenTypes.LAUNCH,
+                    distributor: null != e ? e.getDistributor() : null,
                     ...o
-                }), r.default.launch(a.id, null == t ? void 0 : t.branchId)
+                }), r.default.launch(a.id, null == e ? void 0 : e.branchId)
             }
         },
-        104589: function(e, t, l) {
+        104589: function(t, e, l) {
             "use strict";
-            l.r(t), l.d(t, {
+            l.r(e), l.d(e, {
                 show: function() {
                     return g
                 },
@@ -368,16 +368,16 @@
                 p = l("42203"),
                 f = l("686470"),
                 C = l("18494"),
-                _ = l("162771"),
-                h = l("599110"),
-                y = l("340454"),
-                A = l("116460"),
+                A = l("162771"),
+                _ = l("599110"),
+                h = l("340454"),
+                y = l("116460"),
                 T = l("49111"),
                 E = l("724210");
             let S = () => Promise.resolve();
             {
-                let e = l("780009");
-                S = e.playApplication
+                let t = l("780009");
+                S = t.playApplication
             }
             let I = Object.freeze({
                     [o.AutocompleterQuerySymbols.USER]: o.AutocompleterResultTypes.USER,
@@ -388,26 +388,26 @@
                 }),
                 N = new RegExp("^".concat(o.AutocompleterQuerySymbols.USER, "|").concat(o.AutocompleterQuerySymbols.TEXT_CHANNEL, "|").concat(o.AutocompleterQuerySymbols.VOICE_CHANNEL, "|\\").concat(o.AutocompleterQuerySymbols.GUILD, "|\\").concat(o.AutocompleterQuerySymbols.APPLICATION));
 
-            function m(e) {
-                let [t, l] = function(e) {
-                    var t;
-                    let l = e.charAt(0),
-                        n = null !== (t = I[l]) && void 0 !== t ? t : null;
-                    return [e.replace(N, ""), n]
-                }(e);
+            function m(t) {
+                let [e, l] = function(t) {
+                    var e;
+                    let l = t.charAt(0),
+                        n = null !== (e = I[l]) && void 0 !== e ? e : null;
+                    return [t.replace(N, ""), n]
+                }(t);
                 return {
-                    query: t,
+                    query: e,
                     queryMode: l
                 }
             }
 
-            function L(e, t) {
+            function L(t, e) {
                 let {
                     results: l,
                     queryMode: n,
                     query: a,
                     maxQueryLength: s
-                } = A.default.getProps(), i = _.default.getGuildId(), u = C.default.getChannelId(i), c = l[(0, o.findNextSelectedResult)(o.FindResultDirections.DOWN, -1, l)], r = y.default.isEmail(a), f = y.default.isPhoneNumber(a), T = y.default.isUserTagLike(a), S = null != u && (0, E.isStaticChannelRoute)(u), I = {
+                } = y.default.getProps(), i = A.default.getGuildId(), u = C.default.getChannelId(i), c = l[(0, o.findNextSelectedResult)(o.FindResultDirections.DOWN, -1, l)], r = h.default.isEmail(a), f = h.default.isPhoneNumber(a), T = h.default.isUserTagLike(a), S = null != u && (0, E.isStaticChannelRoute)(u), I = {
                     current_channel_id: S ? void 0 : u,
                     current_channel_static_route: S ? u : void 0,
                     current_guild_id: i,
@@ -420,24 +420,24 @@
                     query: r || f || T ? null : a,
                     top_result_type: null != c ? c.type : null,
                     top_result_score: null != c ? c.score : null,
-                    num_results_total: A.default.getResultTotals(),
-                    num_results_users: A.default.getResultTotals(o.AutocompleterResultTypes.USER),
-                    num_results_text_channels: A.default.getResultTotals(o.AutocompleterResultTypes.TEXT_CHANNEL),
-                    num_results_voice_channels: A.default.getResultTotals(o.AutocompleterResultTypes.VOICE_CHANNEL),
-                    num_results_guilds: A.default.getResultTotals(o.AutocompleterResultTypes.GUILD),
-                    num_results_group_dms: A.default.getResultTotals(o.AutocompleterResultTypes.GROUP_DM)
+                    num_results_total: y.default.getResultTotals(),
+                    num_results_users: y.default.getResultTotals(o.AutocompleterResultTypes.USER),
+                    num_results_text_channels: y.default.getResultTotals(o.AutocompleterResultTypes.TEXT_CHANNEL),
+                    num_results_voice_channels: y.default.getResultTotals(o.AutocompleterResultTypes.VOICE_CHANNEL),
+                    num_results_guilds: y.default.getResultTotals(o.AutocompleterResultTypes.GUILD),
+                    num_results_group_dms: y.default.getResultTotals(o.AutocompleterResultTypes.GROUP_DM)
                 };
                 if (null != u) {
-                    let e = p.default.getChannel(u);
-                    I.current_channel_type = null != e ? e.type : null
+                    let t = p.default.getChannel(u);
+                    I.current_channel_type = null != t ? t.type : null
                 }
-                if (null != t) {
+                if (null != e) {
                     let {
-                        type: e,
+                        type: t,
                         score: n,
                         record: a
-                    } = t;
-                    switch (I.selected_type = e, I.selected_score = n, I.selected_index = l.indexOf(t), e) {
+                    } = e;
+                    switch (I.selected_type = t, I.selected_score = n, I.selected_index = l.indexOf(e), t) {
                         case o.AutocompleterResultTypes.GUILD:
                             I.selected_guild_id = a.id;
                             break;
@@ -452,7 +452,7 @@
                             I.selected_user_id = a.id
                     }
                 }
-                h.default.track(e, I)
+                _.default.track(t, I)
             }
 
             function R() {
@@ -462,26 +462,26 @@
             }
 
             function g() {
-                let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : "KEYBIND",
-                    t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : "";
-                ! function(e) {
-                    let t;
-                    if (A.default.isOpen()) return;
-                    let l = _.default.getGuildId(),
+                let t = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : "KEYBIND",
+                    e = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : "";
+                ! function(t) {
+                    let e;
+                    if (y.default.isOpen()) return;
+                    let l = A.default.getGuildId(),
                         n = C.default.getChannelId(l);
                     if (null != n) {
-                        let e = p.default.getChannel(n);
-                        t = null != e ? e.type : null
+                        let t = p.default.getChannel(n);
+                        e = null != t ? t.type : null
                     }
-                    h.default.track(T.AnalyticEvents.QUICKSWITCHER_OPENED, {
-                        source: e,
+                    _.default.track(T.AnalyticEvents.QUICKSWITCHER_OPENED, {
+                        source: t,
                         current_guild_id: l,
                         current_channel_id: n,
-                        current_channel_type: t
+                        current_channel_type: e
                     })
-                }(e), n.default.dispatch({
+                }(t), n.default.dispatch({
                     type: "QUICKSWITCHER_SHOW",
-                    ...m(t)
+                    ...m(e)
                 })
             }
 
@@ -489,27 +489,27 @@
                 L(T.AnalyticEvents.QUICKSWITCHER_CLOSED), R()
             }
 
-            function D(e) {
+            function D(t) {
                 n.default.dispatch({
                     type: "QUICKSWITCHER_SEARCH",
-                    ...m(e)
+                    ...m(t)
                 })
             }
 
-            function U(e) {
+            function U(t) {
                 n.default.dispatch({
                     type: "QUICKSWITCHER_SELECT",
-                    selectedIndex: e
+                    selectedIndex: t
                 })
             }
 
-            function P(e) {
-                let t;
-                R(), L(T.AnalyticEvents.QUICKSWITCHER_RESULT_SELECTED, e);
+            function P(t) {
+                let e;
+                R(), L(T.AnalyticEvents.QUICKSWITCHER_RESULT_SELECTED, t);
                 let {
                     type: l,
                     record: d
-                } = e, C = {
+                } = t, C = {
                     page: T.AnalyticsPages.QUICK_SWITCHER
                 };
                 switch (l) {
@@ -519,7 +519,7 @@
                         });
                         break;
                     case o.AutocompleterResultTypes.TEXT_CHANNEL:
-                        null != (t = p.default.getChannel(d.id)) && (0, c.transitionToChannel)(t.id, {
+                        null != (e = p.default.getChannel(d.id)) && (0, c.transitionToChannel)(e.id, {
                             state: {
                                 analyticsSource: C
                             },
@@ -527,7 +527,7 @@
                         });
                         break;
                     case o.AutocompleterResultTypes.VOICE_CHANNEL:
-                        null != (t = p.default.getChannel(d.id)) && (i.default.selectVoiceChannel(d.id), (0, c.transitionToChannel)(t.id, {
+                        null != (e = p.default.getChannel(d.id)) && (i.default.selectVoiceChannel(d.id), (0, c.transitionToChannel)(e.id, {
                             state: {
                                 analyticsSource: C
                             },
@@ -543,8 +543,8 @@
                         }), s.default.channelListScrollTo(T.ME, d.id);
                         break;
                     case o.AutocompleterResultTypes.APPLICATION:
-                        let _ = f.default.getActiveLibraryApplication(d.id);
-                        S(d.id, _, {
+                        let A = f.default.getActiveLibraryApplication(d.id);
+                        S(d.id, A, {
                             analyticsParams: {
                                 source: T.AnalyticsLocations.QUICK_SWITCHER,
                                 location: T.AnalyticsLocations.QUICK_SWITCHER
@@ -558,14 +558,14 @@
                 }
                 n.default.dispatch({
                     type: "QUICKSWITCHER_SWITCH_TO",
-                    result: e
+                    result: t
                 })
             }
         },
-        971427: function(e, t, l) {
+        971427: function(t, e, l) {
             "use strict";
             let n;
-            l.r(t), l.d(t, {
+            l.r(e), l.d(e, {
                 default: function() {
                     return u
                 }
@@ -577,8 +577,8 @@
                 hasAcceptedEulaIds: []
             };
             class o extends a.default.PersistedStore {
-                initialize(e) {
-                    n = null != e ? e : i
+                initialize(t) {
+                    n = null != t ? t : i
                 }
                 getState() {
                     return n
@@ -586,33 +586,33 @@
                 get hasAcceptedStoreTerms() {
                     return n.hasAcceptedStoreTerms
                 }
-                hasAcceptedEULA(e) {
-                    return n.hasAcceptedEulaIds.includes(e)
+                hasAcceptedEULA(t) {
+                    return n.hasAcceptedEulaIds.includes(t)
                 }
             }
-            o.displayName = "ApplicationStoreUserSettingsStore", o.persistKey = "ApplicationStoreUserSettingsStore", o.migrations = [e => null == e.hasAcceptedEulaIds ? {
-                ...e,
+            o.displayName = "ApplicationStoreUserSettingsStore", o.persistKey = "ApplicationStoreUserSettingsStore", o.migrations = [t => null == t.hasAcceptedEulaIds ? {
+                ...t,
                 hasAcceptedEulaIds: []
-            } : e];
+            } : t];
             var u = new o(s.default, {
                 APPLICATION_STORE_ACCEPT_STORE_TERMS: function() {
                     n.hasAcceptedStoreTerms = !0
                 },
-                APPLICATION_STORE_ACCEPT_EULA: function(e) {
+                APPLICATION_STORE_ACCEPT_EULA: function(t) {
                     let {
-                        eulaId: t
-                    } = e;
-                    if (n.hasAcceptedEulaIds.includes(t)) return !1;
-                    n.hasAcceptedEulaIds.push(t)
+                        eulaId: e
+                    } = t;
+                    if (n.hasAcceptedEulaIds.includes(e)) return !1;
+                    n.hasAcceptedEulaIds.push(e)
                 }
             })
         },
-        148813: function(e, t, l) {
+        148813: function(t, e, l) {
             "use strict";
             let n, a, s;
-            l.r(t), l.d(t, {
+            l.r(e), l.d(e, {
                 default: function() {
-                    return h
+                    return _
                 }
             });
             var i = l("446674"),
@@ -624,90 +624,90 @@
                 p = l("773336"),
                 f = l("355045"),
                 C = l("49111");
-            class _ extends i.default.Store {
+            class A extends i.default.Store {
                 initialize() {
                     p.isPlatformEmbedded && f.init(), n = {}, a = new Set, s = []
                 }
-                getState(e, t) {
-                    let l = (0, d.getComboId)(e, t);
+                getState(t, e) {
+                    let l = (0, d.getComboId)(t, e);
                     return n[l]
                 }
-                isSyncing(e, t) {
-                    let l = (0, d.getComboId)(e, t);
+                isSyncing(t, e) {
+                    let l = (0, d.getComboId)(t, e);
                     return a.has(l)
                 }
             }
-            _.displayName = "CloudSyncStore";
-            var h = new _(o.default, {
-                GAME_CLOUD_SYNC_START: function(e) {
+            A.displayName = "CloudSyncStore";
+            var _ = new A(o.default, {
+                GAME_CLOUD_SYNC_START: function(t) {
                     let {
-                        applicationId: t,
+                        applicationId: e,
                         branchId: l
-                    } = e, n = (0, d.getComboId)(t, l);
+                    } = t, n = (0, d.getComboId)(e, l);
                     a.add(n)
                 },
-                GAME_CLOUD_SYNC_UPDATE: function(e) {
+                GAME_CLOUD_SYNC_UPDATE: function(t) {
                     let {
-                        state: t
-                    } = e;
-                    for (let e of Object.keys(t)) n[e] = t[e]
+                        state: e
+                    } = t;
+                    for (let t of Object.keys(e)) n[t] = e[t]
                 },
-                GAME_CLOUD_SYNC_COMPLETE: function(e) {
+                GAME_CLOUD_SYNC_COMPLETE: function(t) {
                     let {
-                        applicationId: t,
+                        applicationId: e,
                         branchId: l
-                    } = e, s = (0, d.getComboId)(t, l);
+                    } = t, s = (0, d.getComboId)(e, l);
                     return a.delete(s), n[s] = {
                         type: C.CloudSyncStateTypes.DONE,
                         timestamp: Date.now()
                     }, !0
                 },
-                GAME_CLOUD_SYNC_CONFLICT: function(e) {
+                GAME_CLOUD_SYNC_CONFLICT: function(t) {
                     let {
-                        applicationId: t,
+                        applicationId: e,
                         branchId: l,
                         next: s,
                         remote: i
-                    } = e, o = (0, d.getComboId)(t, l);
+                    } = t, o = (0, d.getComboId)(e, l);
                     n[o] = {
                         type: C.CloudSyncStateTypes.CONFLICT,
                         next: s,
                         remote: i
                     }, a.delete(o)
                 },
-                GAME_CLOUD_SYNC_ERROR: function(e) {
+                GAME_CLOUD_SYNC_ERROR: function(t) {
                     let {
-                        applicationId: t,
+                        applicationId: e,
                         branchId: l
-                    } = e, s = (0, d.getComboId)(t, l);
+                    } = t, s = (0, d.getComboId)(e, l);
                     n[s] = {
                         type: C.CloudSyncStateTypes.ERROR
                     }, a.delete(s)
                 },
                 RUNNING_GAMES_CHANGE: function() {
-                    let e = r.default.getRunningDiscordApplicationIds(),
-                        t = s.filter(t => !e.includes(t));
-                    for (let e of t) {
-                        let t = c.default.getActiveLibraryApplication(e);
-                        null != t && o.default.wait(() => {
+                    let t = r.default.getRunningDiscordApplicationIds(),
+                        e = s.filter(e => !t.includes(e));
+                    for (let t of e) {
+                        let e = c.default.getActiveLibraryApplication(t);
+                        null != e && o.default.wait(() => {
                             try {
-                                u.sync(t.id, t.branchId)
-                            } catch (e) {}
+                                u.sync(e.id, e.branchId)
+                            } catch (t) {}
                         })
                     }
-                    return s = e, !1
+                    return s = t, !1
                 }
             })
         },
-        355045: function(e, t, l) {
+        355045: function(t, e, l) {
             "use strict";
             let n;
-            l.r(t), l.d(t, {
+            l.r(e), l.d(e, {
                 init: function() {
                     return C
                 },
                 syncApplication: function() {
-                    return _
+                    return A
                 }
             });
             var a = l("872717"),
@@ -727,59 +727,59 @@
                     return
                 }
                 await p.default.ensureModule("discord_cloudsync");
-                let e = p.default.getCloudSync();
-                (n = new e).on("state", e => s.default.dispatch({
+                let t = p.default.getCloudSync();
+                (n = new t).on("state", t => s.default.dispatch({
                     type: "GAME_CLOUD_SYNC_UPDATE",
-                    state: e
+                    state: t
                 }))
             }
 
-            function _(e, t) {
+            function A(t, e) {
                 var l;
                 let s = arguments.length > 2 && void 0 !== arguments[2] ? arguments[2] : null;
-                if (!c.default.supportsCloudSync(e, t)) return Promise.resolve({
+                if (!c.default.supportsCloudSync(t, e)) return Promise.resolve({
                     type: f.CloudSyncResultTypes.NONE
                 });
                 let i = function() {
                         if (null == n) throw Error("Initialize cloud sync module before syncing.");
                         return n
                     }(),
-                    d = c.default.getState(e, t);
-                if (null == d) throw Error("No dispatch state for ".concat(e, ":").concat(t));
+                    d = c.default.getState(t, e);
+                if (null == d) throw Error("No dispatch state for ".concat(t, ":").concat(e));
                 let p = null !== (l = d.storage) && void 0 !== l ? l : {},
-                    C = (0, r.getComboId)(e, t),
-                    _ = u.default.getToken();
-                if (null == _) throw Error("Cannot use cloud sync when not authenticated.");
-                let h = null != d.installPath ? (0, o.default)(d.installPath) : null;
-                if (null == h) throw Error("No install path for ".concat(e, ":").concat(t));
-                let y = u.default.getId(),
-                    A = {
+                    C = (0, r.getComboId)(t, e),
+                    A = u.default.getToken();
+                if (null == A) throw Error("Cannot use cloud sync when not authenticated.");
+                let _ = null != d.installPath ? (0, o.default)(d.installPath) : null;
+                if (null == _) throw Error("No install path for ".concat(t, ":").concat(e));
+                let h = u.default.getId(),
+                    y = {
                         forceHash: s,
-                        manifestPath: f.DefaultCloudSyncConfiguration.STORAGE_MANIFEST(h, y),
+                        manifestPath: f.DefaultCloudSyncConfiguration.STORAGE_MANIFEST(_, h),
                         roots: null != p.roots ? p.roots : [{
                             id: f.DefaultCloudSyncConfiguration.ROOT_ID,
-                            paths: Object.keys(f.DefaultCloudSyncConfiguration.ROOT_PLATFORMS).map(e => ({
-                                platform: e,
-                                path: f.DefaultCloudSyncConfiguration.ROOT_STORAGE_PATH(h, y)
+                            paths: Object.keys(f.DefaultCloudSyncConfiguration.ROOT_PLATFORMS).map(t => ({
+                                platform: t,
+                                path: f.DefaultCloudSyncConfiguration.ROOT_STORAGE_PATH(_, h)
                             })),
                             patterns: f.DefaultCloudSyncConfiguration.ROOT_PATTERN
                         }],
                         storage: {
-                            baseURL: "".concat(a.default.getAPIBaseURL()).concat(f.Endpoints.APPLICATION_STORAGE(e, t)),
-                            token: _
+                            baseURL: "".concat(a.default.getAPIBaseURL()).concat(f.Endpoints.APPLICATION_STORAGE(t, e)),
+                            token: A
                         },
                         replacements: {
-                            INSTALLDIR: f.DefaultCloudSyncConfiguration.INSTALL_DIR(h),
-                            USERID: y,
-                            BRANCHID: t
+                            INSTALLDIR: f.DefaultCloudSyncConfiguration.INSTALL_DIR(_),
+                            USERID: h,
+                            BRANCHID: e
                         }
                     };
-                return i.sync(C, A)
+                return i.sync(C, y)
             }
         },
-        551994: function(e, t, l) {
+        551994: function(t, e, l) {
             "use strict";
-            l.r(t), l.d(t, {
+            l.r(e), l.d(e, {
                 installApplication: function() {
                     return u
                 }
@@ -791,22 +791,22 @@
                 i = l("971427"),
                 o = l("98328");
 
-            function u(e, t, u, c, r) {
-                let d = o.default.getInstallationPath(e.id, t),
-                    p = null != e.eulaId && !i.default.hasAcceptedEULA(e.eulaId);
+            function u(t, e, u, c, r) {
+                let d = o.default.getInstallationPath(t.id, e),
+                    p = null != t.eulaId && !i.default.hasAcceptedEULA(t.eulaId);
                 null == d || p ? (0, a.openModalLazy)(async () => {
                     let {
                         default: a
                     } = await l.el("727441").then(l.bind(l, "727441"));
                     return l => (0, n.jsx)(a, {
                         ...l,
-                        applicationId: e.id,
-                        branchId: t,
+                        applicationId: t.id,
+                        branchId: e,
                         analyticsLocation: r
                     })
                 }) : (0, s.installApplication)({
-                    application: e,
-                    branchId: t,
+                    application: t,
+                    branchId: e,
                     buildId: u,
                     manifestIds: c,
                     installationPath: d,
@@ -814,9 +814,9 @@
                 })
             }
         },
-        780009: function(e, t, l) {
+        780009: function(t, e, l) {
             "use strict";
-            l.r(t), l.d(t, {
+            l.r(e), l.d(e, {
                 playApplication: function() {
                     return a.playApplication
                 },
@@ -830,12 +830,12 @@
                     return C
                 },
                 performDefaultLibraryApplicationAction: function() {
-                    return _
+                    return A
                 }
             });
             var n = l("190017"),
                 a = l("596169"),
-                s = l("546463"),
+                s = l("299285"),
                 i = l("677225"),
                 o = l("9377"),
                 u = l("535974"),
@@ -843,41 +843,41 @@
                 r = l("551994"),
                 d = l("49111");
 
-            function p(e, t, l) {
-                let n = s.default.getGame(e);
+            function p(t, e, l) {
+                let n = s.default.getApplication(t);
                 if (null == n) return;
-                let a = i.default.getTargetBuildId(n.id, t),
-                    o = i.default.getTargetManifests(n.id, t);
-                null != a && null != o && null != r.installApplication && (0, r.installApplication)(n, t, a, o, l)
+                let a = i.default.getTargetBuildId(n.id, e),
+                    o = i.default.getTargetManifests(n.id, e);
+                null != a && null != o && null != r.installApplication && (0, r.installApplication)(n, e, a, o, l)
             }
 
-            function f(e, t) {
-                let l = s.default.getGame(e);
-                if (null != l) return n.updateApplication(l, t, i.default.getTargetBuildId(l.id, t), i.default.getTargetManifests(l.id, t))
+            function f(t, e) {
+                let l = s.default.getApplication(t);
+                if (null != l) return n.updateApplication(l, e, i.default.getTargetBuildId(l.id, e), i.default.getTargetManifests(l.id, e))
             }
 
-            function C(e, t, l) {
-                let a = s.default.getGame(e);
-                if (null != a) return n.repairApplication(a, t, l)
+            function C(t, e, l) {
+                let a = s.default.getApplication(t);
+                if (null != a) return n.repairApplication(a, e, l)
             }
 
-            function _(e, t) {
-                let l = (0, o.getDefaultLibraryApplicationAction)(e, u.default, c.default),
+            function A(t, e) {
+                let l = (0, o.getDefaultLibraryApplicationAction)(t, u.default, c.default),
                     {
                         analyticsParams: n
-                    } = t;
+                    } = e;
                 switch (l) {
                     case d.LibraryApplicationActions.PLAY:
-                        return (0, a.playApplication)(e.id, e, {
+                        return (0, a.playApplication)(t.id, t, {
                             analyticsParams: n
                         });
                     case d.LibraryApplicationActions.INSTALL:
-                        return p(e.id, e.branchId, n.source);
+                        return p(t.id, t.branchId, n.source);
                     case d.LibraryApplicationActions.UPDATE:
-                        return f(e.id, e.branchId)
+                        return f(t.id, t.branchId)
                 }
             }
         }
     }
 ]);
-//# sourceMappingURL=a3892550d233eb36a0ef.js.map
+//# sourceMappingURL=1f4fff5e0bafe1096b45.js.map

@@ -8808,13 +8808,13 @@
                     return l
                 }
             });
-            var i = n("546463"),
+            var i = n("299285"),
                 a = n("49111");
 
             function l(e) {
                 let t = arguments.length > 1 && void 0 !== arguments[1] && arguments[1],
                     n = !(arguments.length > 2) || void 0 === arguments[2] || arguments[2],
-                    l = i.default.getGame(e.applicationId),
+                    l = i.default.getApplication(e.applicationId),
                     s = e.getPrice(),
                     r = e.getPrice(null, !1),
                     o = {
@@ -25053,14 +25053,14 @@
                 r = n("446674"),
                 o = n("913144"),
                 u = n("191225"),
-                d = n("225772"),
-                c = n("925880"),
-                _ = n("662285"),
-                E = n("845579"),
-                h = n("374363"),
-                f = n("373469"),
-                p = n("848872"),
-                T = n("546463"),
+                d = n("299285"),
+                c = n("225772"),
+                _ = n("925880"),
+                E = n("662285"),
+                h = n("845579"),
+                f = n("374363"),
+                p = n("373469"),
+                T = n("848872"),
                 C = n("568307"),
                 S = n("49111"),
                 m = n("782340");
@@ -25069,11 +25069,11 @@
 
             function g() {
                 let e = [],
-                    t = E.CustomStatusSetting.getSetting();
-                null != t && ("0" === t.expiresAtMs || new Date(Number(t.expiresAtMs)).getTime() - new Date().getTime() > 0) && e.push((0, d.default)(t));
-                let n = c.default.getActivities();
+                    t = h.CustomStatusSetting.getSetting();
+                null != t && ("0" === t.expiresAtMs || new Date(Number(t.expiresAtMs)).getTime() - new Date().getTime() > 0) && e.push((0, c.default)(t));
+                let n = _.default.getActivities();
                 e.push(...n);
-                let i = p.default.getStream();
+                let i = T.default.getStream();
                 null != i && e.push({
                     type: S.ActivityTypes.STREAMING,
                     ...i
@@ -25088,7 +25088,7 @@
                         application_id: i
                     } = t;
                     if (r.has(i)) return;
-                    let a = null === (n = T.default.getGame(i)) || void 0 === n ? void 0 : n.name;
+                    let a = null === (n = d.default.getApplication(i)) || void 0 === n ? void 0 : n.name;
                     e.push({
                         type: S.ActivityTypes.PLAYING,
                         name: null != a ? a : m.default.Messages.EMBEDDED_ACTIVITIES_LAUNCHING_ACTIVITY,
@@ -25097,10 +25097,10 @@
                     })
                 });
                 let o = C.default.getVisibleGame(),
-                    h = null != o && null != o.name && l.has(o.name),
+                    f = null != o && null != o.name && l.has(o.name),
                     g = null != o && o.isLauncher,
-                    N = f.default.getCurrentUserActiveStream();
-                null != o && null != o.name && !(h || g && !(null != N)) && e.push({
+                    N = p.default.getCurrentUserActiveStream();
+                null != o && null != o.name && !(f || g && !(null != N)) && e.push({
                     type: S.ActivityTypes.PLAYING,
                     name: o.name,
                     application_id: o.id,
@@ -25108,7 +25108,7 @@
                         start: o.start
                     }
                 });
-                let O = _.default.getActivity();
+                let O = E.default.getActivity();
                 null != O && e.push({
                     type: S.ActivityTypes.LISTENING,
                     ...O
@@ -25116,7 +25116,7 @@
             }
             class N extends r.default.Store {
                 initialize() {
-                    this.waitFor(C.default, u.default, p.default, f.default, _.default, h.default), this.syncWith([c.default], () => g())
+                    this.waitFor(C.default, u.default, T.default, p.default, E.default, f.default), this.syncWith([_.default], () => g())
                 }
                 getActivities() {
                     return I
@@ -28519,58 +28519,28 @@
             let i;
             n.r(t), n.d(t, {
                 default: function() {
-                    return _
+                    return u
                 }
             });
             var a = n("446674"),
                 l = n("913144"),
-                s = n("653047"),
-                r = n("546463"),
-                o = n("568307"),
-                u = n("988268");
-
-            function d(e) {
-                let t = {
-                    os: e.os,
-                    name: e.name
-                };
-                return null != e.arguments && (t.arguments = e.arguments), null != e.isLauncher && (t.is_launcher = e.isLauncher), t
-            }
-            class c extends a.default.Store {
+                s = n("546463"),
+                r = n("568307");
+            class o extends a.default.Store {
                 getGameForPID(e) {
                     var t;
                     if (__OVERLAY__ || null == e) return null;
-                    let n = null === (t = o.default.getGameForPID(e)) || void 0 === t ? void 0 : t.name;
-                    return r.default.getGameByName(n)
+                    let n = null === (t = r.default.getGameForPID(e)) || void 0 === t ? void 0 : t.name;
+                    return s.default.getGameByName(n)
                 }
                 getGame() {
                     return __OVERLAY__ ? i : null
                 }
-                getGameAsJSON(e) {
-                    let t = this.getGameForPID(e);
-                    return null == t ? null : {
-                        id: t.id,
-                        name: t.name,
-                        description: t.description,
-                        type: u.ApplicationTypes.GAME,
-                        icon: t.icon,
-                        splash: t.splash,
-                        overlay: t.overlay,
-                        overlay_warn: t.overlayWarn,
-                        aliases: [...t.aliases],
-                        publishers: [...t.publishers],
-                        developers: [...t.developers],
-                        third_party_skus: [...t.thirdPartySkus],
-                        executables: t.executables.map(d),
-                        hashes: [...t.hashes],
-                        tags: [...t.tags]
-                    }
-                }
             }
-            c.displayName = "OverlayRunningGameStore";
-            var _ = new c(l.default, {
+            o.displayName = "OverlayRunningGameStore";
+            var u = new o(l.default, {
                 OVERLAY_INITIALIZE: function(e) {
-                    i = null != e.currentGame ? new s.default(e.currentGame) : null
+                    i = e.currentGame
                 }
             })
         },
@@ -31316,7 +31286,7 @@
             }
 
             function M(e, t, n) {
-                let i = t.getGame(e);
+                let i = t.getApplication(e);
                 return null == i || null == i.primarySkuId ? null : n.get(i.primarySkuId)
             }
             let L = [];
@@ -32967,4 +32937,4 @@
         }
     }
 ]);
-//# sourceMappingURL=749177e4c84e2d476a8f.js.map
+//# sourceMappingURL=afbfd48f51eeb2975477.js.map

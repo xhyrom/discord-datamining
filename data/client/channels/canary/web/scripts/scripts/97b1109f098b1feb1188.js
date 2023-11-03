@@ -635,10 +635,10 @@
                 i = l("871388"),
                 r = l("152311"),
                 o = l("532602"),
-                u = l("769791"),
-                d = l("373469"),
-                c = l("42203"),
-                f = l("546463"),
+                u = l("299285"),
+                d = l("769791"),
+                c = l("373469"),
+                f = l("42203"),
                 m = l("305961"),
                 E = l("800762"),
                 p = l("313873"),
@@ -683,11 +683,11 @@
                     showActions: r = !0,
                     hideHeader: o = !1,
                     ...T
-                } = e, _ = (0, s.useStateFromStores)([d.default], () => a ? d.default.getAnyStreamForUser(l.id) : null), S = (0, s.useStateFromStores)([m.default, E.default, c.default], () => {
+                } = e, _ = (0, s.useStateFromStores)([c.default], () => a ? c.default.getAnyStreamForUser(l.id) : null), S = (0, s.useStateFromStores)([m.default, E.default, f.default], () => {
                     var e, n;
-                    return (0, i.default)(t, h.ActivityFlags.EMBEDDED) ? m.default.getGuild(null === (e = c.default.getChannel(null === (n = E.default.getVoiceStateForSession(l.id, null == t ? void 0 : t.session_id)) || void 0 === n ? void 0 : n.channelId)) || void 0 === e ? void 0 : e.getGuildId()) : null
-                }), g = (0, s.useStateFromStores)([m.default], () => null != _ ? m.default.getGuild(_.guildId) : null), A = (0, s.useStateFromStores)([f.default], () => {
-                    if (null != t) return null != t.application_id ? f.default.getGame(t.application_id) : f.default.getGameByName(t.name);
+                    return (0, i.default)(t, h.ActivityFlags.EMBEDDED) ? m.default.getGuild(null === (e = f.default.getChannel(null === (n = E.default.getVoiceStateForSession(l.id, null == t ? void 0 : t.session_id)) || void 0 === n ? void 0 : n.channelId)) || void 0 === e ? void 0 : e.getGuildId()) : null
+                }), g = (0, s.useStateFromStores)([m.default], () => null != _ ? m.default.getGuild(_.guildId) : null), A = (0, s.useStateFromStores)([u.default], () => {
+                    if (null != t) return null != t.application_id ? u.default.getApplication(t.application_id) : u.default.getApplicationByName(t.name);
                     return null
                 });
                 return (0, n.jsx)(p.default, {
@@ -703,9 +703,9 @@
                         activity: t,
                         user: l
                     }) : null,
-                    onOpenSpotifyTrack: u.openTrack,
-                    onOpenSpotifyArtist: u.openArtist,
-                    onOpenSpotifyAlbum: u.openAlbum
+                    onOpenSpotifyTrack: d.openTrack,
+                    onOpenSpotifyArtist: d.openArtist,
+                    onOpenSpotifyAlbum: d.openAlbum
                 })
             }
         },
@@ -4763,16 +4763,16 @@
                 i = l.n(a),
                 r = l("446674"),
                 o = l("77078"),
-                u = l("823411"),
-                d = l("901582"),
-                c = l("252744"),
-                f = l("750560"),
-                m = l("575365"),
-                E = l("502651"),
-                p = l("812204"),
-                T = l("685665"),
-                h = l("373469"),
-                _ = l("546463"),
+                u = l("901582"),
+                d = l("252744"),
+                c = l("750560"),
+                f = l("575365"),
+                m = l("502651"),
+                E = l("812204"),
+                p = l("685665"),
+                T = l("299285"),
+                h = l("442939"),
+                _ = l("373469"),
                 I = l("26989"),
                 S = l("305961"),
                 g = l("824563"),
@@ -4798,151 +4798,148 @@
             }
 
             function G(e) {
+                var t;
                 let {
-                    user: t,
-                    guildId: l,
-                    channelId: a,
-                    setNote: i,
-                    closePopout: C,
-                    setPopoutRef: G,
-                    disableUserProfileLink: B = __OVERLAY__,
-                    analyticsParams: k = {}
-                } = e, Y = s.useRef(null), V = (0, y.default)(t.id, l), H = (0, c.default)(Y), W = (0, r.useStateFromStores)([N.default], () => {
+                    user: l,
+                    guildId: a,
+                    channelId: i,
+                    setNote: C,
+                    closePopout: G,
+                    setPopoutRef: B,
+                    disableUserProfileLink: k = __OVERLAY__,
+                    analyticsParams: Y = {}
+                } = e, V = s.useRef(null), H = (0, y.default)(l.id, a), W = (0, d.default)(V), K = (0, r.useStateFromStores)([N.default], () => {
                     var e;
-                    return null === (e = N.default.getUserProfile(t.id)) || void 0 === e ? void 0 : e.application
+                    return null === (e = N.default.getUserProfile(l.id)) || void 0 === e ? void 0 : e.application
                 }), {
-                    AnalyticsLocationProvider: K
-                } = (0, T.default)(p.default.PROFILE_POPOUT), z = (0, r.useStateFromStores)([S.default], () => null != l ? S.default.getGuild(l) : null), Z = (0, r.useStateFromStores)([I.default], () => null != l ? I.default.getMember(l, t.id) : null), X = t.isNonUserBot(), {
-                    activity: J,
-                    customStatusActivity: Q,
-                    status: q,
-                    isMobile: $,
-                    isApplicationStreaming: ee
-                } = (0, r.useStateFromStoresObject)([h.default, g.default], () => {
-                    let e = null != h.default.getAnyStreamForUser(t.id);
+                    AnalyticsLocationProvider: z
+                } = (0, p.default)(E.default.PROFILE_POPOUT), Z = (0, r.useStateFromStores)([S.default], () => null != a ? S.default.getGuild(a) : null), X = (0, r.useStateFromStores)([I.default], () => null != a ? I.default.getMember(a, l.id) : null), J = l.isNonUserBot(), {
+                    activity: Q,
+                    customStatusActivity: q,
+                    status: $,
+                    isMobile: ee,
+                    isApplicationStreaming: et
+                } = (0, r.useStateFromStoresObject)([_.default, g.default], () => {
+                    let e = null != _.default.getAnyStreamForUser(l.id);
                     return {
-                        activity: g.default.findActivity(t.id, t => {
+                        activity: g.default.findActivity(l.id, t => {
                             let {
                                 type: l
                             } = t;
                             return e ? l === j.ActivityTypes.PLAYING : l !== j.ActivityTypes.CUSTOM_STATUS
                         }),
-                        customStatusActivity: g.default.findActivity(t.id, e => {
+                        customStatusActivity: g.default.findActivity(l.id, e => {
                             let {
                                 type: t
                             } = e;
                             return t === j.ActivityTypes.CUSTOM_STATUS
                         }),
-                        status: X ? null : g.default.getStatus(t.id),
-                        isMobile: g.default.isMobileOnline(t.id),
+                        status: J ? null : g.default.getStatus(l.id),
+                        isMobile: g.default.isMobileOnline(l.id),
                         isApplicationStreaming: e
                     }
-                }), [et, el] = s.useState(!1), en = s.useMemo(() => null != l ? {
-                    [l]: [t.id]
-                } : {}, [l, t.id]);
-                (0, f.useSubscribeGuildMembers)(en);
-                let es = (0, M.default)(t.id, l),
+                }), [el, en] = s.useState(!1), es = s.useMemo(() => null != a ? {
+                    [a]: [l.id]
+                } : {}, [a, l.id]);
+                (0, c.useSubscribeGuildMembers)(es);
+                let ea = (0, M.default)(l.id, a),
                     {
-                        shouldShow: ea,
-                        markAsDismissed: ei,
-                        isReadyForAnimation: er
-                    } = (0, b.useShouldShowUserPopoutCollectiblesUpsell)(t, l),
-                    eo = s.useMemo(() => ({
-                        marginTop: ea ? L.DEFAULT_COLLECTIBLES_UPSELL_HEIGHT : void 0
-                    }), [ea]),
-                    eu = s.useCallback(() => null != J && null != J.application_id && null == _.default.getGame(J.application_id) ? u.default.fetchApplication(J.application_id) : Promise.resolve(), [J]);
+                        shouldShow: ei,
+                        markAsDismissed: er,
+                        isReadyForAnimation: eo
+                    } = (0, b.useShouldShowUserPopoutCollectiblesUpsell)(l, a),
+                    eu = s.useMemo(() => ({
+                        marginTop: ei ? L.DEFAULT_COLLECTIBLES_UPSELL_HEIGHT : void 0
+                    }), [ei]),
+                    [ed] = (0, h.default)([null !== (t = null == Q ? void 0 : Q.application_id) && void 0 !== t ? t : ""]);
                 return s.useEffect(() => {
-                    null == G || G(null == Y ? void 0 : Y.current)
-                }, [Y, G]), s.useEffect(() => {
-                    async function e() {
-                        await eu(), (null == l || (null == Z ? void 0 : Z.fullProfileLoadedTimestamp) != null) && (function() {
-                            var e, n, s;
-                            let i, r, o;
-                            null != J && (i = J.party, r = J.assets, o = null != J.application_id ? _.default.getGame(J.application_id) : null);
-                            let u = q;
-                            q === j.StatusTypes.ONLINE && (u = $ ? j.AnalyticsUserStatusTypes.ONLINE_MOBILE : j.AnalyticsUserStatusTypes.ONLINE_DESKTOP);
-                            let d = null != Z ? {
-                                    has_nickname: !!(null == Z ? void 0 : Z.nick),
-                                    has_guild_member_avatar: !!(null == Z ? void 0 : Z.avatar),
-                                    has_guild_member_banner: !!(null == V ? void 0 : V.isUsingGuildMemberBanner()),
-                                    has_guild_member_bio: !!(null == V ? void 0 : V.isUsingGuildMemberBio())
-                                } : {},
-                                c = null != W ? {
-                                    other_application_id: null == W ? void 0 : W.id,
-                                    other_application_name: t.toString()
-                                } : {};
-                            v.default.track(j.AnalyticEvents.OPEN_POPOUT, {
-                                type: "Profile Popout",
-                                guild_id: l,
-                                channel_id: a,
-                                other_user_id: t.id,
-                                application_id: null != J ? J.application_id : void 0,
-                                application_name: null != J ? J.name : void 0,
-                                sku_id: null != o ? o.primarySkuId : null,
-                                is_friend: A.default.isFriend(t.id),
-                                has_images: !!(null !== (s = null === (e = r) || void 0 === e ? void 0 : e.large_image) && void 0 !== s ? s : null === (n = r) || void 0 === n ? void 0 : n.small_image),
-                                party_max: null != i && null != i.size ? i.size[1] : void 0,
-                                party_id: null != i ? i.id : void 0,
-                                party_platform: null != i && (0, U.isSpotifyParty)(i.id) ? j.PlatformTypes.SPOTIFY : null,
-                                game_platform: (0, m.default)(J),
-                                profile_user_status: u,
-                                is_streaming: ee,
-                                has_custom_status: null != Q,
-                                has_avatar_decoration: null != t.avatarDecoration,
-                                has_profile_effect: (null == V ? void 0 : V.profileEffectID) != null,
-                                profile_has_nitro_customization: null != V && (null == V ? void 0 : V.hasPremiumCustomization()),
-                                profile_has_theme_color_customized: null != V && V.hasThemeColors(),
-                                profile_has_theme_animation: (null == V ? void 0 : V.popoutAnimationParticleType) != null,
-                                ...d,
-                                ...c,
-                                ...k
-                            })
-                        }(), el(!0))
-                    }!et && e()
-                }, [Z, et, l]), s.useEffect(() => {
-                    eu()
-                }, [eu]), (0, n.jsx)(K, {
-                    children: (0, n.jsx)(d.default, {
+                    null == B || B(null == V ? void 0 : V.current)
+                }, [V, B]), s.useEffect(() => {
+                    if (!el)((null == Q ? void 0 : Q.application_id) == null || null != ed) && (null == a || (null == X ? void 0 : X.fullProfileLoadedTimestamp) != null) && (function() {
+                        var e, t, n;
+                        let s, r, o;
+                        null != Q && (s = Q.party, r = Q.assets, o = null != Q.application_id ? T.default.getApplication(Q.application_id) : null);
+                        let u = $;
+                        $ === j.StatusTypes.ONLINE && (u = ee ? j.AnalyticsUserStatusTypes.ONLINE_MOBILE : j.AnalyticsUserStatusTypes.ONLINE_DESKTOP);
+                        let d = null != X ? {
+                                has_nickname: !!(null == X ? void 0 : X.nick),
+                                has_guild_member_avatar: !!(null == X ? void 0 : X.avatar),
+                                has_guild_member_banner: !!(null == H ? void 0 : H.isUsingGuildMemberBanner()),
+                                has_guild_member_bio: !!(null == H ? void 0 : H.isUsingGuildMemberBio())
+                            } : {},
+                            c = null != K ? {
+                                other_application_id: null == K ? void 0 : K.id,
+                                other_application_name: l.toString()
+                            } : {};
+                        v.default.track(j.AnalyticEvents.OPEN_POPOUT, {
+                            type: "Profile Popout",
+                            guild_id: a,
+                            channel_id: i,
+                            other_user_id: l.id,
+                            application_id: null != Q ? Q.application_id : void 0,
+                            application_name: null != Q ? Q.name : void 0,
+                            sku_id: null != o ? o.primarySkuId : null,
+                            is_friend: A.default.isFriend(l.id),
+                            has_images: !!(null !== (n = null === (e = r) || void 0 === e ? void 0 : e.large_image) && void 0 !== n ? n : null === (t = r) || void 0 === t ? void 0 : t.small_image),
+                            party_max: null != s && null != s.size ? s.size[1] : void 0,
+                            party_id: null != s ? s.id : void 0,
+                            party_platform: null != s && (0, U.isSpotifyParty)(s.id) ? j.PlatformTypes.SPOTIFY : null,
+                            game_platform: (0, f.default)(Q),
+                            profile_user_status: u,
+                            is_streaming: et,
+                            has_custom_status: null != q,
+                            has_avatar_decoration: null != l.avatarDecoration,
+                            has_profile_effect: (null == H ? void 0 : H.profileEffectID) != null,
+                            profile_has_nitro_customization: null != H && (null == H ? void 0 : H.hasPremiumCustomization()),
+                            profile_has_theme_color_customized: null != H && H.hasThemeColors(),
+                            profile_has_theme_animation: (null == H ? void 0 : H.popoutAnimationParticleType) != null,
+                            ...d,
+                            ...c,
+                            ...Y
+                        })
+                    }(), en(!0))
+                }, [X, null == Q ? void 0 : Q.application_id, ed, el, a]), (0, n.jsx)(z, {
+                    children: (0, n.jsx)(u.default, {
                         section: j.AnalyticsSections.PROFILE_POPOUT,
                         children: (0, n.jsx)(o.Dialog, {
-                            ref: Y,
-                            "aria-label": t.username,
+                            ref: V,
+                            "aria-label": l.username,
                             onClick: w,
                             onContextMenu: w,
-                            style: eo,
+                            style: eu,
                             children: (0, n.jsxs)(R.default, {
-                                user: t,
-                                guildId: l,
+                                user: l,
+                                guildId: a,
                                 profileType: D.UserProfileTypes.POPOUT,
-                                className: ea ? F.hasCollectiblesUpsell : void 0,
-                                showOutOfBoundaryComponents: er,
+                                className: ei ? F.hasCollectiblesUpsell : void 0,
+                                showOutOfBoundaryComponents: eo,
                                 children: [(0, n.jsx)(P.default, {
-                                    user: t,
-                                    displayProfile: V,
-                                    guildId: l,
-                                    channelId: a,
-                                    onClose: () => null == C ? void 0 : C(),
-                                    isMobile: $,
-                                    isStreaming: (0, E.default)(J),
-                                    status: q,
-                                    disableUserProfileLink: B,
-                                    isHovering: H,
-                                    showCollectiblesSocialUpsell: ea,
-                                    dismissCollectiblesSocialUpsell: ei
+                                    user: l,
+                                    displayProfile: H,
+                                    guildId: a,
+                                    channelId: i,
+                                    onClose: () => null == G ? void 0 : G(),
+                                    isMobile: ee,
+                                    isStreaming: (0, m.default)(Q),
+                                    status: $,
+                                    disableUserProfileLink: k,
+                                    isHovering: W,
+                                    showCollectiblesSocialUpsell: ei,
+                                    dismissCollectiblesSocialUpsell: er
                                 }), (0, n.jsxs)(R.default.Inner, {
                                     children: [(0, n.jsx)(O.default, {
-                                        onTooltipClose: C
+                                        onTooltipClose: G
                                     }), (0, n.jsx)(x.default, {
-                                        activity: J,
-                                        customStatusActivity: Q,
-                                        displayProfile: V,
-                                        user: t,
-                                        guild: z,
-                                        guildMember: Z,
-                                        channelId: a,
-                                        onClose: C,
-                                        setNote: i,
-                                        canDM: es
+                                        activity: Q,
+                                        customStatusActivity: q,
+                                        displayProfile: H,
+                                        user: l,
+                                        guild: Z,
+                                        guildMember: X,
+                                        channelId: i,
+                                        onClose: G,
+                                        setNote: C,
+                                        canDM: ea
                                     })]
                                 })]
                             })
@@ -7614,4 +7611,4 @@
         }
     }
 ]);
-//# sourceMappingURL=8c736a8ecc907e3cfce9.js.map
+//# sourceMappingURL=97b1109f098b1feb1188.js.map

@@ -45,10 +45,10 @@
             });
             var i = n("872717"),
                 r = n("913144"),
-                l = n("84460"),
-                a = n("393414");
-            n("546463");
-            var s = n("552712");
+                l = n("84460");
+            n("299285");
+            var a = n("393414"),
+                s = n("552712");
             n("698041");
             var o = n("167726"),
                 u = n("271560"),
@@ -796,10 +796,10 @@
             "use strict";
             n.r(t), n.d(t, {
                 openApplicationSubscriptionPaymentModal: function() {
-                    return m
+                    return S
                 },
                 openActivityApplicationPaymentModal: function() {
-                    return C
+                    return g
                 }
             });
             var i = n("37983");
@@ -814,10 +814,9 @@
                 d = n("186211"),
                 f = n("90592"),
                 p = n("299285"),
-                h = n("546463"),
-                S = n("49111");
+                h = n("49111");
 
-            function m(e) {
+            function S(e) {
                 let {
                     initialPlanId: t,
                     activeSubscription: r,
@@ -829,7 +828,7 @@
                     planGroup: d,
                     skuId: f,
                     guildId: p,
-                    reviewWarningMessage: h,
+                    reviewWarningMessage: S,
                     listing: m,
                     application: I,
                     showBenefitsFirst: _,
@@ -841,8 +840,8 @@
                     let {
                         PaymentContextProvider: e
                     } = await n.el("642906").then(n.bind(n, "642906")), a = (await n.el("452113").then(n.bind(n, "452113"))).default, {
-                        getApplicationSubscriptionPaymentSteps: S
-                    } = await n.el("590749").then(n.bind(n, "590749")), E = S({
+                        getApplicationSubscriptionPaymentSteps: h
+                    } = await n.el("590749").then(n.bind(n, "590749")), E = h({
                         guildId: p,
                         application: I,
                         listing: m,
@@ -864,7 +863,7 @@
                             analyticsSubscriptionType: u,
                             renderHeader: c,
                             planGroup: d,
-                            reviewWarningMessage: h,
+                            reviewWarningMessage: S,
                             applicationId: I.id,
                             guildId: null != p ? p : void 0,
                             onComplete: C,
@@ -872,30 +871,29 @@
                         })
                     })
                 }, {
-                    onCloseRequest: S.NOOP
+                    onCloseRequest: h.NOOP
                 })
             }
-            let I = async e => {
-                var t;
-                let n = p.default.getApplication(e);
-                if (null != n) return n;
+            let m = async e => {
+                let t = p.default.getApplication(e);
+                if (null != t) return t;
                 await o.default.fetchApplications([e], !1);
-                let i = null !== (t = p.default.getApplication(e)) && void 0 !== t ? t : h.default.getGame(e);
-                return l(null != i, "Failed to find application with ID %s", e), i
-            }, _ = async e => {
+                let n = p.default.getApplication(e);
+                return l(null != n, "Failed to find application with ID %s", e), n
+            }, I = async e => {
                 let t = d.default.getSubscriptionGroupListingForApplication(e);
                 if (null != t) return t;
                 let n = await (0, u.fetchAllStoreListingsForApplication)(e),
-                    i = n.find(e => e.sku.type === S.SKUTypes.SUBSCRIPTION_GROUP);
+                    i = n.find(e => e.sku.type === h.SKUTypes.SUBSCRIPTION_GROUP);
                 l(null != i, "Failed to find subscription store listing"), await (0, c.fetchAllSubscriptionListingsDataForApplication)(e, null == i ? void 0 : i.id);
                 let r = d.default.getSubscriptionGroupListingForApplication(e);
                 return l(null != r, "Failed to find subscription group listing"), r
-            }, g = async (e, t) => {
+            }, _ = async (e, t) => {
                 let n = await (0, s.fetchUserEntitlementsForApplication)(e),
                     i = n.find(e => e.sku_id === t);
                 l(null == i, "User already has an active subscription to this SKU")
             };
-            async function C(e) {
+            async function g(e) {
                 let {
                     applicationId: t,
                     skuId: n,
@@ -903,16 +901,16 @@
                     analyticsLocationObject: r,
                     analyticsLocations: a,
                     renderHeader: s
-                } = e, o = await I(t), u = await _(t), c = (0, f.getPayableSubscriptionListing)(u);
+                } = e, o = await m(t), u = await I(t), c = (0, f.getPayableSubscriptionListing)(u);
                 l(null != c, "Failed to find subscription listing");
                 let d = (0, f.isApplicationUserSubscription)(c.sku_flags);
-                l(d, "Guild application subscriptions unsupported!"), l(c.published, "Subscription listing not published"), await g(t, n);
+                l(d, "Guild application subscriptions unsupported!"), l(c.published, "Subscription listing not published"), await _(t, n);
                 let p = {
                     initialPlanId: null != i ? i : null == c ? void 0 : c.subscription_plans[0].id,
                     activeSubscription: null,
                     analyticsLocations: a,
                     analyticsLocationObject: r,
-                    analyticsSubscriptionType: S.SubscriptionTypes.APPLICATION,
+                    analyticsSubscriptionType: h.SubscriptionTypes.APPLICATION,
                     renderHeader: s,
                     planGroup: u.subscription_listings_ids,
                     skuId: n,
@@ -922,7 +920,7 @@
                     application: o,
                     listing: c
                 };
-                m(p)
+                S(p)
             }
         },
         159149: function(e, t, n) {
@@ -1521,4 +1519,4 @@
         }
     }
 ]);
-//# sourceMappingURL=afb8048bf11e456aea78.js.map
+//# sourceMappingURL=f033d8d458dd87931684.js.map
