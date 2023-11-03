@@ -232,7 +232,7 @@
                     return O
                 },
                 updateSKUPaymentIsGift: function() {
-                    return M
+                    return L
                 }
             });
             var u = n("872717"),
@@ -343,7 +343,7 @@
                     recipientId: R,
                     customMessage: U,
                     emojiConfetti: O,
-                    soundEffect: M
+                    soundEffect: L
                 } = {
                     ...N,
                     ...n
@@ -355,7 +355,7 @@
                         skuId: e
                     })
                 });
-                let L = c.default.inTestModeForApplication(t) || o.default.inDevModeForApplication(t);
+                let M = c.default.inTestModeForApplication(t) || o.default.inDevModeForApplication(t);
                 try {
                     let t = {
                         gift: A,
@@ -363,16 +363,16 @@
                         gateway_checkout_context: await (0, E.createGatewayCheckoutContext)(a),
                         load_id: P
                     };
-                    if (L) t.test_mode = !0;
+                    if (M) t.test_mode = !0;
                     else {
                         if (null != a && (t.payment_source_id = a.id, t.payment_source_token = await (0, _.createPaymentSourceToken)(a), T.ADYEN_PAYMENT_SOURCES.has(a.type))) {
                             let e = await (0, _.popupBridgeState)(a.type);
                             t.return_url = u.default.getAPIBaseURL() + T.Endpoints.BILLING_POPUP_BRIDGE_CALLBACK_REDIRECT_PREFIX(a.type, null != e ? e : "", "success")
                         }
-                        if (null != s && (t.expected_amount = s), null != f && (t.expected_currency = f), null != p && (t.gift_style = p), null != R && (t.recipient_id = R), null != R) t.custom_message = U, ((null == O ? void 0 : O.id) != null || (null == O ? void 0 : O.surrogates) != null || (null == M ? void 0 : M.soundId) != null) && (t.gift_info_options = {
+                        if (null != s && (t.expected_amount = s), null != f && (t.expected_currency = f), null != p && (t.gift_style = p), null != R && (t.recipient_id = R), null != R) t.custom_message = U, ((null == O ? void 0 : O.id) != null || (null == O ? void 0 : O.surrogates) != null || (null == L ? void 0 : L.soundId) != null) && (t.gift_info_options = {
                             emoji_id: null == O ? void 0 : O.id,
                             emoji_name: null == O ? void 0 : O.surrogates,
-                            sound_id: null == M ? void 0 : M.soundId
+                            sound_id: null == L ? void 0 : L.soundId
                         });
                         t.purchase_token = (0, d.getPurchaseToken)()
                     }
@@ -440,7 +440,7 @@
                 }))
             }
 
-            function M(t) {
+            function L(t) {
                 i.default.dispatch({
                     type: "SKU_PURCHASE_UPDATE_IS_GIFT",
                     isGift: t
@@ -693,8 +693,8 @@
                         return u
                     }, [t, e.includeSoftDeleted])
                 },
-                M = [],
-                L = [];
+                L = [],
+                M = [];
 
             function F(t, e) {
                 var n;
@@ -707,8 +707,8 @@
                         var u;
                         return {
                             subscriptionGroupListing: null != t ? p.default.getSubscriptionGroupListingForApplication(t) : null,
-                            guildEntitlements: null != t && null != e ? p.default.getApplicationEntitlementsForGuild(t, e) : M,
-                            userEntitlements: null != t && null !== (n = null === (u = f.default.getForApplication(t)) || void 0 === u ? void 0 : u.values()) && void 0 !== n ? n : L
+                            guildEntitlements: null != t && null != e ? p.default.getApplicationEntitlementsForGuild(t, e) : L,
+                            userEntitlements: null != t && null !== (n = null === (u = f.default.getForApplication(t)) || void 0 === u ? void 0 : u.values()) && void 0 !== n ? n : M
                         }
                     }, [t, e]),
                     s = r.useMemo(() => [...a, ...o], [a, o]),
@@ -1272,8 +1272,8 @@
                 R = n("986681"),
                 U = n("702924"),
                 O = n("241006"),
-                M = n("284797"),
-                L = n("383802"),
+                L = n("284797"),
+                M = n("383802"),
                 F = n("334702"),
                 h = n("775325"),
                 m = n("403293"),
@@ -1319,7 +1319,7 @@
                     skuIDs: v,
                     paymentSourceId: z,
                     isGift: w
-                }), ta = (0, L.default)(), [to, ts] = i.useState(!1), {
+                }), ta = (0, M.default)(), [to, ts] = i.useState(!1), {
                     step: tc,
                     setStep: tE,
                     steps: tS,
@@ -1327,7 +1327,7 @@
                 } = (0, h.default)({
                     stepConfigs: K,
                     breadcrumbs: b
-                }), [tf, t_] = (0, M.default)(tc), {
+                }), [tf, t_] = (0, L.default)(tc), {
                     paymentError: tT,
                     paymentAuthenticationState: tI
                 } = (0, U.default)(), {
@@ -1347,7 +1347,7 @@
                     selectedPlan: tR,
                     setSelectedSkuId: tU,
                     setSelectedPlanId: tO
-                } = (0, C.default)(), [tM, tL] = (0, o.useStateFromStoresArray)([d.default], () => [d.default.purchaseTokenAuthState, d.default.purchaseTokenHash]), [tF, th] = (0, o.useStateFromStoresArray)([y.default], () => [y.default.browserCheckoutState, y.default.loadId]), [tm, ty] = i.useState(null), [tg, tG] = i.useState(null), [tD, tB] = i.useState(null), [tH, tK] = i.useState(null), [tb, tv] = i.useState(null), [tw, tY] = i.useState(void 0), [tW, tV] = i.useState([]), tk = i.useMemo(() => null == tR || (0, A.isPremiumSubscriptionPlan)(tR.id), [tR]), [tZ, tx] = i.useState((0, I.isCustomGiftEnabled)(Y) ? D : B), tQ = i.useRef(null != _ ? _.planId : null);
+                } = (0, C.default)(), [tL, tM] = (0, o.useStateFromStoresArray)([d.default], () => [d.default.purchaseTokenAuthState, d.default.purchaseTokenHash]), [tF, th] = (0, o.useStateFromStoresArray)([y.default], () => [y.default.browserCheckoutState, y.default.loadId]), [tm, ty] = i.useState(null), [tg, tG] = i.useState(null), [tD, tB] = i.useState(null), [tH, tK] = i.useState(null), [tb, tv] = i.useState(null), [tw, tY] = i.useState(void 0), [tW, tV] = i.useState([]), tk = i.useMemo(() => null == tR || (0, A.isPremiumSubscriptionPlan)(tR.id), [tR]), [tZ, tx] = i.useState((0, I.isCustomGiftEnabled)(Y) ? D : B), tQ = i.useRef(null != _ ? _.planId : null);
                 i.useEffect(() => {
                     null == tQ.current && null != _ && (tQ.current = _.planId)
                 }, [_]);
@@ -1409,8 +1409,8 @@
                         purchaseError: tA,
                         setPurchaseError: tC,
                         purchaseErrorBlockRef: tp,
-                        purchaseTokenAuthState: tM,
-                        purchaseTokenHash: tL,
+                        purchaseTokenAuthState: tL,
+                        purchaseTokenHash: tM,
                         browserCheckoutState: tF,
                         browserCheckoutStateLoadId: th,
                         bodyNode: tm,
@@ -1966,11 +1966,11 @@
                 s = null, l = "", a = null, o = "", c = !1, E = null, S = "US", d = "", f = "", _ = "", T = "", I = "", A = "", p = "", C = !1, N = null, P = null, R = null, U = null
             }
 
-            function M(t) {
+            function L(t) {
                 d = t.name, S = t.country, _ = t.line1, T = t.line2, I = t.city, A = t.postalCode, p = t.state, f = t.email
             }
 
-            function L() {
+            function M() {
                 N = null
             }
 
@@ -2046,7 +2046,7 @@
                     let {
                         billingAddressInfo: n
                     } = r.parseStripePaymentMethod(s);
-                    M(n)
+                    L(n)
                 },
                 NEW_PAYMENT_SOURCE_CARD_INFO_UPDATE: function(t) {
                     let {
@@ -2071,7 +2071,7 @@
                         nonce: n,
                         billingAddress: u
                     } = t;
-                    l = e, a = n, M(u), C = S.length > 0
+                    l = e, a = n, L(u), C = S.length > 0
                 },
                 BRAINTREE_TOKENIZE_VENMO_START: function() {
                     o = "", a = null
@@ -2089,9 +2089,9 @@
                     } = t;
                     E = e
                 },
-                BILLING_PAYMENT_SOURCE_CREATE_START: L,
-                MODAL_POP: L,
-                NEW_PAYMENT_SOURCE_CLEAR_ERROR: L,
+                BILLING_PAYMENT_SOURCE_CREATE_START: M,
+                MODAL_POP: M,
+                NEW_PAYMENT_SOURCE_CLEAR_ERROR: M,
                 BILLING_PAYMENT_SOURCE_CREATE_FAIL: F,
                 STRIPE_TOKEN_FAILURE: F,
                 BILLING_PAYMENT_SOURCE_CREATE_SUCCESS: O,
@@ -2720,6 +2720,7 @@
                 TAX_DOMESTIC: new Set(["CA", "GB", "US"]),
                 EU_COUNTRIES: new Set(["AD", "AL", "AT", "AX", "BA", "BE", "BG", "BY", "CH", "CY", "CZ", "DE", "DK", "EE", "EL", "ES", "FI", "FO", "FR", "GG", "GR", "HR", "HU", "IC", "IE", "IM", "IT", "JE", "LI", "LT", "LU", "LV", "MC", "MD", "MK", "MT", "NL", "NO", "PL", "PT", "RO", "RU", "SE", "SI", "SJ", "SK", "SM", "UA", "VA"]),
                 EEA_COUNTRIES: new Set(["AT", "BE", "BG", "CY", "CZ", "DE", "DK", "EE", "EL", "ES", "FI", "FR", "GR", "HR", "HU", "IE", "IS", "IT", "LI", "LT", "LU", "LV", "MT", "NL", "NO", "PL", "PT", "RO", "SE", "SI", "SK"]),
+                DSA_COUNTRIES: new Set(["AT", "BE", "BG", "CY", "CZ", "DE", "DK", "EE", "EL", "ES", "FI", "FR", "GR", "HR", "HU", "IE", "IT", "LT", "LU", "LV", "MT", "NL", "PL", "PT", "RO", "SE", "SI", "SK"]),
                 WITHOUT_POSTAL_CODES: new Set(["AE", "AG", "AN", "AO", "AW", "BF", "BI", "BJ", "BM", "BO", "BQ", "BS", "BW", "BZ", "CD", "CF", "CG", "CI", "CK", "CM", "CW", "DJ", "DM", "ER", "FJ", "GA", "GD", "GH", "GM", "GQ", "GY", "HK", "HM", "IE", "JM", "KE", "KI", "KM", "KN", "KP", "LY", "ML", "MO", "MR", "MW", "NA", "NR", "NU", "QA", "RW", "SB", "SC", "SL", "SR", "ST", "SX", "SY", "TD", "TF", "TG", "TK", "TL", "TO", "TV", "UG", "VU", "YE", "ZA", "ZW"]),
                 TAX_EXCLUSIVE: new Set(["CA", "US"]),
                 TAX_ADDRESS_REQUIRE_POSTAL_CODE: new Set(["CA", "US"]),
@@ -2729,4 +2730,4 @@
         }
     }
 ]);
-//# sourceMappingURL=de0465bf1e946aed725e.js.map
+//# sourceMappingURL=4102ed4ceb6e95058e5e.js.map
