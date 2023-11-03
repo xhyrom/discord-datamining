@@ -19389,8 +19389,8 @@ input[type=checkbox]:focus-visible+.label_ee78c3 {
 
 .message__13e98 {
     font-weight: 500;
-    font-size: 1rem;
-    line-height: 1.25rem;
+    font-size: 16px;
+    line-height: 20px;
     white-space: nowrap;
     text-overflow: ellipsis;
     overflow: hidden
@@ -31035,55 +31035,55 @@ html .progress__4ef76 {
 }
 
 .normalStylesDefault_b8063d {
-    --poll-style-opacity: 1;
-    --poll-style-border: var(--background-tertiary);
-    --poll-style-border-width: 0px;
-    --poll-style-fill: var(--background-secondary);
-    --poll-style-label: var(--text-normal);
-    --poll-style-shadow: var(--shadow-low)
+    --custom-poll-style-opacity: 1;
+    --custom-poll-style-border: var(--background-tertiary);
+    --custom-poll-style-border-width: 0;
+    --custom-poll-style-fill: var(--background-secondary);
+    --custom-poll-style-label: var(--text-normal);
+    --custom-poll-style-shadow: var(--shadow-low)
 }
 
 .normalStylesImageOnlyAnswers__10b2a {
-    --poll-style-opacity: 1;
-    --poll-style-border: var(--polls-image-normal-border);
-    --poll-style-fill: var(--background-secondary);
-    --poll-style-label: var(--white);
-    --poll-style-shadow: var(--shadow-low)
+    --custom-poll-style-opacity: 1;
+    --custom-poll-style-border: var(--polls-image-normal-border);
+    --custom-poll-style-fill: var(--background-secondary);
+    --custom-poll-style-label: var(--white);
+    --custom-poll-style-shadow: var(--shadow-low)
 }
 
 .victorStyles_d67b5e {
-    --poll-style-opacity: 1;
-    --poll-style-border-width: 2px;
-    --poll-style-border: var(--polls-victor-border);
-    --poll-style-fill: var(--polls-victor-fill);
-    --poll-style-label: var(--polls-victor-label);
-    --poll-style-shadow: var(--shadow-high)
+    --custom-poll-style-opacity: 1;
+    --custom-poll-style-border-width: 2px;
+    --custom-poll-style-border: var(--polls-victor-border);
+    --custom-poll-style-fill: var(--polls-victor-fill);
+    --custom-poll-style-label: var(--polls-victor-label);
+    --custom-poll-style-shadow: var(--shadow-high)
 }
 
 .votedStyles__92837 {
-    --poll-style-opacity: 1;
-    --poll-style-border-width: 2px;
-    --poll-style-border: var(--polls-voted-border);
-    --poll-style-fill: var(--polls-voted-fill);
-    --poll-style-label: var(--polls-voted-label);
-    --poll-style-shadow: var(--shadow-high)
+    --custom-poll-style-opacity: 1;
+    --custom-poll-style-border-width: 2px;
+    --custom-poll-style-border: var(--polls-voted-border);
+    --custom-poll-style-fill: var(--polls-voted-fill);
+    --custom-poll-style-label: var(--polls-voted-label);
+    --custom-poll-style-shadow: var(--shadow-high)
 }
 
 .loserMixinStyles__72af9 {
-    --poll-style-opacity: 0.5
+    --custom-poll-style-opacity: 0.5
 }
 
 .selectedMixinStyles__6dfd9 {
-    --poll-style-shadow: var(--shadow-high)
+    --custom-poll-style-shadow: var(--shadow-high)
 }
 
 .defaultNotVotedMixinStyles__762b9 {
-    --poll-style-border-width: 1px;
-    --poll-style-shadow: none
+    --custom-poll-style-border-width: 1px;
+    --custom-poll-style-shadow: none
 }
 
 .imageVotedAndVictorMixinStyles_ae3068 {
-    --poll-style-border-width: 1px
+    --custom-poll-style-border-width: 1px
 }
 
 .enabled__75d0c {
@@ -31112,11 +31112,11 @@ html .progress__4ef76 {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    box-shadow: var(--poll-style-shadow);
+    box-shadow: var(--custom-poll-style-shadow);
     transition: box-shadow.12s ease-in;
-    border: var(--poll-style-border-width)solid var(--poll-style-border);
+    border: var(--custom-poll-style-border-width)solid var(--custom-poll-style-border);
     border-radius: var(--radius-md);
-    opacity: var(--poll-style-opacity)
+    opacity: var(--custom-poll-style-opacity)
 }
 
 .media_c99808 {
@@ -31132,7 +31132,7 @@ html .progress__4ef76 {
 }
 
 .mediaMissing__2a6d1 {
-    background-color: var(--poll-style-fill)
+    background-color: var(--custom-poll-style-fill)
 }
 
 .selectedIcon__1a872 {
@@ -31147,10 +31147,10 @@ html .progress__4ef76 {
     align-items: center;
     gap: 4px;
     align-self: flex-end;
-    background-color: var(--poll-style-border);
+    background-color: var(--custom-poll-style-border);
     border-bottom-right-radius: var(--radius-sm);
     border-top-left-radius: var(--radius-sm);
-    color: var(--poll-style-label);
+    color: var(--custom-poll-style-label);
     padding: 4px 6px
 }
 
@@ -31162,14 +31162,14 @@ html .progress__4ef76 {
 
 .answer__07489 {
     align-items: stretch;
-    background-color: var(--poll-style-fill);
+    background-color: var(--custom-poll-style-fill);
     border-radius: var(--radius-md);
-    border: var(--poll-style-border-width)solid var(--poll-style-border);
-    box-shadow: var(--poll-style-shadow);
-    color: var(--poll-style-label);
+    border: var(--custom-poll-style-border-width)solid var(--custom-poll-style-border);
+    box-shadow: var(--custom-poll-style-shadow);
+    color: var(--custom-poll-style-label);
     display: flex;
     flex-direction: column;
-    opacity: var(--poll-style-opacity);
+    opacity: var(--custom-poll-style-opacity);
     position: relative;
     -webkit-user-select: none;
     -moz-user-select: none;
@@ -31214,7 +31214,7 @@ html .progress__4ef76 {
     top: 0;
     left: 0;
     bottom: 0;
-    background-color: var(--poll-style-border);
+    background-color: var(--custom-poll-style-border);
     border-radius: 10px
 }
 
@@ -31229,7 +31229,7 @@ html .progress__4ef76 {
     display: flex;
     flex-direction: column;
     background-color: var(--background-secondary);
-    border: 1px solid var(--poll-style-border);
+    border: 1px solid var(--custom-poll-style-border);
     border-radius: 12px;
     box-shadow: var(--shadow-low);
     gap: 12px;
@@ -58367,9 +58367,9 @@ html .progress__4ef76 {
 }
 
 .flipCardContainer__314ea:hover .partialFlipCard__89bb1 {
-    --y-rotation: -30deg;
+    --custom-y-rotation: -30deg;
     transform: rotatey(330deg);
-    transform: rotatey(var(--y-rotation))
+    transform: rotatey(var(--custom-y-rotation))
 }
 
 .flipCardContainer__314ea:hover .partialFlipCard__89bb1.reducedMotion__90450 {
@@ -58377,16 +58377,16 @@ html .progress__4ef76 {
 }
 
 .flipCardContainer__314ea:hover .ultraFlipCard_d88e63 {
-    --y-rotation: -570deg;
+    --custom-y-rotation: -570deg;
     transform: rotatey(150deg);
-    transform: rotatey(var(--y-rotation))
+    transform: rotatey(var(--custom-y-rotation))
 }
 
 .flipCardContainer__314ea:hover .rotateCard_d3db33 {
-    --x-rotation: -520deg;
-    --y-rotation: -1140deg;
+    --custom-x-rotation: -520deg;
+    --custom-y-rotation: -1140deg;
     transform: rotatex(200deg)rotatey(300deg);
-    transform: rotatex(var(--x-rotation))rotatey(var(--y-rotation))
+    transform: rotatex(var(--custom-x-rotation))rotatey(var(--custom-y-rotation))
 }
 
 .flipCard_c19f9d {
@@ -123480,4 +123480,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=app.13b01920d69b40cbae0b.css.map*/
+/*# sourceMappingURL=app.d66c3b5b885c9dc8d41c.css.map*/
