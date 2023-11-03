@@ -1,7 +1,7 @@
 <div class="w-layout-grid grid-branding">
     <div id="w-node-_682ba5bf-e04f-2536-35cb-8e92dc53082e-d9fcf1f6" class="title-wrapper">
         <div class="safetie-author-wrapper">
-            <div class="safetie-author-photo-wrapper"><img src="https://assets-global.website-files.com/625fe439fb70a9d901e138ab/64af2d1f80a05070de51d18c_6238e5e426d561bf1e7d0b6f_Discord%20Policy%20Team.png" loading="lazy" alt="" class="safetie-author-image">
+            <div class="safetie-author-photo-wrapper"><img src="https://cdn.prod.website-files.com/625fe439fb70a9d901e138ab/64af2d1f80a05070de51d18c_6238e5e426d561bf1e7d0b6f_Discord%20Policy%20Team.png" loading="lazy" alt="" class="safetie-author-image">
                 <div class="safetie-author-title">Discord Policy</div>
             </div>
             <div>
