@@ -1,5 +1,5 @@
 (this.webpackChunkdiscord_app = this.webpackChunkdiscord_app || []).push([
-    ["55454"], {
+    ["67615"], {
         273215: function(e, t, n) {
             "use strict";
             e.exports = n.p + "63900a1ba1f23d305c53.png"
@@ -4834,6 +4834,7 @@
                         return s.default.Messages.COMMAND_VALIDATION_GENERAL_ERROR
                 }
             }
+            Object.freeze([]), Object.freeze([])
         },
         14090: function(e, t, n) {
             "use strict";
@@ -32964,4 +32965,4 @@
         }
     }
 ]);
-//# sourceMappingURL=b2d59c807a4160e2b604.js.map
+//# sourceMappingURL=48cc9ad9622d1a4d2aa4.js.map
