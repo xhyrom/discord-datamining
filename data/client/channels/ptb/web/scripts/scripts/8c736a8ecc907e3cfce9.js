@@ -5054,16 +5054,19 @@
                     }))
                 }, []);
                 let eN = (0, r.useStateFromStores)([A.default], () => A.default.getRelationshipType($.id)),
-                    eM = !$.bot && !$.isClyde() && eN !== z.RelationshipTypes.FRIEND && eN !== z.RelationshipTypes.BLOCKED,
+                    eM = $.isNonUserBot() && !$.isClyde() || $.isClyde() && eC || !ei,
+                    ey = !$.bot && !$.isClyde() && eN !== z.RelationshipTypes.BLOCKED,
                     {
-                        moreAddFriend: ey,
-                        messageButton: eO
+                        moreAddFriend: eO,
+                        messageButton: eR
                     } = h.AddFriendProminenceExperimentDesktop.useExperiment({
                         location: "user popout"
                     }, {
-                        disable: !eM,
+                        disable: !ey,
                         autoTrackExposure: !0
-                    });
+                    }),
+                    ex = eO && eN !== z.RelationshipTypes.FRIEND,
+                    eL = eR && !eM;
                 if ($.isSystemUser()) return null;
                 if ($.isNonUserBot() && !$.isClyde()) return (0, n.jsx)(K.default, {
                     user: $,
@@ -5072,17 +5075,16 @@
                     className: X.usernameSection,
                     lastSection: !0
                 });
-                let eR = null !== (t = M.default.getNickname(null == et ? void 0 : et.id, en, $)) && void 0 !== t ? t : y.default.getName($),
-                    ex = $.isNonUserBot() && !$.isClyde() || $.isClyde() && eC || !ei;
+                let eP = null !== (t = M.default.getNickname(null == et ? void 0 : et.id, en, $)) && void 0 !== t ? t : y.default.getName($);
                 return (0, n.jsxs)(n.Fragment, {
                     children: [(0, n.jsx)(K.default, {
                         className: X.usernameSection,
                         user: $,
-                        nickname: eR,
+                        nickname: eP,
                         pronouns: null == ee ? void 0 : ee.pronouns,
                         usernameIcon: $.hasAvatarForGuild(null == et ? void 0 : et.id) && (0, n.jsx)(P.default, {
                             user: $,
-                            nickname: eR
+                            nickname: eP
                         }),
                         shouldCopyOnClick: eo
                     }), $.isClyde() ? (0, n.jsx)("div", {
@@ -5195,15 +5197,15 @@
                                     lastSection: !ei,
                                     hideNote: eu || er
                                 })]
-                            }), eO ? null : (0, n.jsx)(B.default, {
+                            }), eL ? null : (0, n.jsx)(B.default, {
                                 user: $,
                                 setNote: ea,
                                 canDM: ei,
                                 onClose: es,
                                 inClydeProfilesExperiment: eC
-                            }), eM && ey ? (0, n.jsxs)("div", {
+                            }), ex || eL ? (0, n.jsxs)("div", {
                                 className: X.addFriendSection,
-                                children: [(0, n.jsx)(x.default, {
+                                children: [ex ? (0, n.jsx)(x.default, {
                                     user: $,
                                     isCurrentUser: $.id === _.default.getId(),
                                     relationshipType: eN,
@@ -5222,7 +5224,7 @@
                                     },
                                     onSendMessage: () => {},
                                     addFriendText: Z.default.Messages.FRIENDS_SECTION_ADD_FRIEND
-                                }), !ex && eO ? (0, n.jsx)(o.Button, {
+                                }) : null, eL ? (0, n.jsx)(o.Button, {
                                     size: o.Button.Sizes.SMALL,
                                     color: o.Button.Colors.PRIMARY,
                                     onClick: () => u.default.openPrivateChannel($.id),
@@ -7612,4 +7614,4 @@
         }
     }
 ]);
-//# sourceMappingURL=3496b87461057ba323cf.js.map
+//# sourceMappingURL=8c736a8ecc907e3cfce9.js.map

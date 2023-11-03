@@ -48935,7 +48935,7 @@
                         var i;
                         let d = {
                                 environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                                build_number: "243540"
+                                build_number: "243588"
                             },
                             E = l.default.getCurrentUser();
                         null != E && (d.user_id = E.id, d.user_name = E.tag, null != E.email && (d.email = E.email));
@@ -56441,7 +56441,7 @@
                         !this.videoEncoderFallbackPending && (this.logger.info("Falling back from current video encoder:" + e), this.codecs = this.codecs.map(t => ((e === t.name || "AV1" === t.name && "AV1X" === e) && (t.encode = !1), t)).filter(e => !("video" === e.type && !1 === e.encode && !1 === e.decode)), this.emit(c.BaseConnectionEvent.VideoEncoderFallback, this.codecs), this.videoEncoderFallbackPending = !0)
                     }, this.handleVideo = (e, t, n, i) => {
                         let s = r.cloneDeep(this.videoStreamParameters);
-                        e === this.ids.userId ? (this.context === S.MediaEngineContextTypes.STREAM && this.streamUserId === this.ids.userId && this.setClipRecordSsrc(t, "video", "outbound", !0), null != i && Array.isArray(i) && i.length > 0 ? i.forEach(e => {
+                        e === this.ids.userId ? (this.context === S.MediaEngineContextTypes.STREAM && this.streamUserId === this.ids.userId && t > 0 && this.setClipRecordSsrc(t, "video", "outbound", !0), null != i && Array.isArray(i) && i.length > 0 ? i.forEach(e => {
                             s.forEach((t, n) => {
                                 t.rid === e.rid && (s[n] = {
                                     ...t,
@@ -62201,4 +62201,4 @@
         }
     }
 ]);
-//# sourceMappingURL=77c00d4e221596a7d7c4.js.map
+//# sourceMappingURL=a9134718a1fbbf85a9ce.js.map
