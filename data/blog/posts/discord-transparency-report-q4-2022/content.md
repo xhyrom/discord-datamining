@@ -8,7 +8,7 @@
         <div class="dropdown_wrapper">
             <div data-hover="false" data-delay="0" class="dropdown_years w-dropdown">
                 <div class="dropdown-transparency w-dropdown-toggle">
-                    <div>2022</div><img src="https://assets-global.website-files.com/6257adef93867e50d84d30e2/646735865f11dd15cd77dfba_Icon%20-%20Down.svg" loading="lazy" alt="" class="icon-dropdown-s">
+                    <div>2022</div><img src="https://cdn.prod.website-files.com/6257adef93867e50d84d30e2/646735865f11dd15cd77dfba_Icon%20-%20Down.svg" loading="lazy" alt="" class="icon-dropdown-s">
                 </div>
                 <nav class="dropdown_list w-dropdown-list">
                     <div class="dropdown_list-wr">
@@ -22,7 +22,7 @@
             </div>
             <div data-hover="false" data-delay="0" class="dropdown_quarter w-dropdown">
                 <div class="dropdown-transparency w-dropdown-toggle">
-                    <div>Q4</div><img src="https://assets-global.website-files.com/6257adef93867e50d84d30e2/646735865f11dd15cd77dfba_Icon%20-%20Down.svg" loading="lazy" alt="" class="icon-dropdown-s">
+                    <div>Q4</div><img src="https://cdn.prod.website-files.com/6257adef93867e50d84d30e2/646735865f11dd15cd77dfba_Icon%20-%20Down.svg" loading="lazy" alt="" class="icon-dropdown-s">
                 </div>
                 <nav class="dropdown_list w-dropdown-list">
                     <div class="dropdown_list-wr">
@@ -38,10 +38,10 @@
             </div>
             <div data-hover="false" data-delay="0" class="dropdown_download w-dropdown">
                 <div class="dropdown-transparency download w-dropdown-toggle">
-                    <div>Download Report</div><img src="https://assets-global.website-files.com/6257adef93867e50d84d30e2/63092c47b497c57545695569_Icon%20-%20Down.svg" loading="lazy" alt="" class="icon-dropdown-s">
+                    <div>Download Report</div><img src="https://cdn.prod.website-files.com/6257adef93867e50d84d30e2/63092c47b497c57545695569_Icon%20-%20Down.svg" loading="lazy" alt="" class="icon-dropdown-s">
                 </div>
                 <nav class="dropdown_list w-dropdown-list">
-                    <div class="dropdown_list-black"><a href="https://cdn.prod.website-files.com/625fe439fb70a9d901e138ab/649e9479864503a6354dedd7_Q4%2022%20%7C%20DISCORD%20TRANSPARENCY%20REPORT_%20OCTOBER%20-%20DECEMBER%202022%20-%20Data.csv" class="dropdown_link-bl hidden w-button">CSV format</a><a href="https://cdn.prod.website-files.com/625fe439fb70a9d901e138ab/64a5ccdbdc6455f8cb71df90_Q4%2022%20%7C%20DISCORD%20TRANSPARENCY%20REPORT_%20OCTOBER%20-%20DECEMBER%202022.pdf" target="_blank" class="dropdown_link-bl">PDF format</a><a href="https://cdn.prod.website-files.com/625fe439fb70a9d901e138ab/649e9479864503a6354dedd7_Q4%2022%20%7C%20DISCORD%20TRANSPARENCY%20REPORT_%20OCTOBER%20-%20DECEMBER%202022%20-%20Data.csv" target="_blank" class="dropdown_link-bl">CSV format</a></div>
+                    <div class="dropdown_list-black"><a href="https://assets-global.website-files.com/625fe439fb70a9d901e138ab/649e9479864503a6354dedd7_Q4%2022%20%7C%20DISCORD%20TRANSPARENCY%20REPORT_%20OCTOBER%20-%20DECEMBER%202022%20-%20Data.csv" class="dropdown_link-bl hidden w-button">CSV format</a><a href="https://assets-global.website-files.com/625fe439fb70a9d901e138ab/64a5ccdbdc6455f8cb71df90_Q4%2022%20%7C%20DISCORD%20TRANSPARENCY%20REPORT_%20OCTOBER%20-%20DECEMBER%202022.pdf" target="_blank" class="dropdown_link-bl">PDF format</a><a href="https://assets-global.website-files.com/625fe439fb70a9d901e138ab/649e9479864503a6354dedd7_Q4%2022%20%7C%20DISCORD%20TRANSPARENCY%20REPORT_%20OCTOBER%20-%20DECEMBER%202022%20-%20Data.csv" target="_blank" class="dropdown_link-bl">CSV format</a></div>
                 </nav>
             </div>
         </div>
