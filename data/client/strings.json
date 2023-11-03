@@ -10836,6 +10836,7 @@
   "CONTACT_SYNC_SUBTITLE": "\"Discord can connect you with your friends and help them find you.\"",
   "CONTACT_SYNC_ADD_FRIENDS_SUBTITLE": "\"Sync your phone contacts to find people you know on Discord. [Learn more](learnMoreHook)\"",
   "CONTACT_SYNC_LANDING_TOGGLE_LABEL": "\"Allow contacts to add me\"",
+  "CONTACT_SYNC_FIND_FRIENDS": "\"Find friends\"",
   "CONTACT_SYNC_LANDING_DISCOVERABILITY_FOOTER": "\"This allows people to send you friend requests if they have your phone number saved in their contacts. $[Learn more about finding your friends](learnMoreHook)\"",
   "CONTACT_SYNC_SETTING_LABEL": "\"Sync Contacts\"",
   "CONTACT_SYNC_LANDING_INFO_2": "\"Allow someone to add you if they have your phone number saved in their phone contacts. (Email coming soon!)\"",
