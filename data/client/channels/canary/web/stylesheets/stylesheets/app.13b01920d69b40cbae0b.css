@@ -19389,8 +19389,8 @@ input[type=checkbox]:focus-visible+.label_ee78c3 {
 
 .message__13e98 {
     font-weight: 500;
-    font-size: 16px;
-    line-height: 20px;
+    font-size: 1rem;
+    line-height: 1.25rem;
     white-space: nowrap;
     text-overflow: ellipsis;
     overflow: hidden
@@ -31090,6 +31090,14 @@ html .progress__4ef76 {
     cursor: pointer
 }
 
+.attachmentImage__468d1 {
+    -o-object-fit: cover;
+    object-fit: cover;
+    -o-object-position: center;
+    object-position: center;
+    height: 100%
+}
+
 .answersContainer_fd091b {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -31113,7 +31121,9 @@ html .progress__4ef76 {
 
 .media_c99808 {
     position: absolute;
-    border-radius: var(--radius-md)
+    border-radius: var(--radius-md);
+    width: 100%;
+    height: 100%
 }
 
 .emoji__27dab {
@@ -31122,8 +31132,6 @@ html .progress__4ef76 {
 }
 
 .mediaMissing__2a6d1 {
-    width: 100%;
-    height: 100%;
     background-color: var(--poll-style-fill)
 }
 
@@ -123472,4 +123480,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=app.26bd04944fcc35ab5111.css.map*/
+/*# sourceMappingURL=app.13b01920d69b40cbae0b.css.map*/
