@@ -1003,14 +1003,6 @@
       "PUT"
     ]
   },
-  "GUILD_CHANNEL_EMOJIS": {
-    "url": "/guilds/:param/get-channel-emojis",
-    "allowed_methods": [
-      "GET",
-      "HEAD",
-      "OPTIONS"
-    ]
-  },
   "POPULATE_CHANNEL_EMOJIS": {
     "url": "/guilds/:param/populate-channel-emojis",
     "allowed_methods": [
