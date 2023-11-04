@@ -1,0 +1,21 @@
+{
+  "data": {
+    "kind": "user",
+    "id": "2023-10_screencapturekit",
+    "label": "ScreenCaptureKit",
+    "description": [
+      "Not Eligible",
+      "Control Bucket",
+      "Treatment 1: enabled"
+    ],
+    "hash": 3417823975,
+    "buckets": [
+      -1,
+      0,
+      1
+    ],
+    "config_keys": [
+      "allowScreenCaptureKit"
+    ]
+  }
+}
