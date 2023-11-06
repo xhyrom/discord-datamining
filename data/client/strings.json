@@ -4186,6 +4186,7 @@
   "LIMITED_ACCESS_NAG_BAR_APPEAL": "\"Regain access here\"",
   "LIMITED_ACCESS_INFO_MODAL_HEADING": "\"Your account has limited access\"",
   "LIMITED_ACCESS_INFO_MODAL_DESCRIPTION": "\"We noticed that something looks off with your account, and to be safe we limited your account access.\"",
+  "LIMITED_ACCESS_INFO_MODAL_DESCRIPTION_V2": "\"Discord has limited your access to some features. Please check for system messages from Discord with more information.\"",
   "LIMITED_ACCESS_INFO_MODAL_APPEAL": "\"Did we make a mistake? [Regain access here]({appealLink}).\"",
   "LIMITED_ACCESS_DM_BAR_SUBTEXT": "\"You can't start new direct messages right now. [Did we make a mistake? Regain access here]({appealLink}).\"",
   "GUILD_LIMITED_ACCESS_INFO_MODAL_HEADING": "\"This server's features are limited\"",
