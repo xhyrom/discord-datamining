@@ -3839,10 +3839,10 @@
                     return e8
                 },
                 ClientThemeSettings: function() {
-                    return e9
+                    return e5
                 },
                 GifAutoPlay: function() {
-                    return e5
+                    return e9
                 },
                 AnimateEmoji: function() {
                     return te
@@ -4043,7 +4043,7 @@
                 value: e
             }));
             let e8 = (0, $.wrapSettingWithSelectiveSyncing)((0, $.defineProtoSetting)("appearance", "developerMode", e => null != e && e, e => e), "appearance", "developerMode"),
-                e9 = (0, $.defineProtoSetting)("appearance", "clientThemeSettings", e => {
+                e5 = (0, $.defineProtoSetting)("appearance", "clientThemeSettings", e => {
                     let {
                         backgroundGradientPresetId: t,
                         backgroundGradientAngle: n
@@ -4066,7 +4066,7 @@
                         }) : void 0
                     }
                 }),
-                e5 = (0, $.wrapSettingWithOverride)((0, $.wrapSettingWithSelectiveSyncing)((0, $.defineProtoSetting)("textAndImages", "gifAutoPlay", e => null === (Y = null == e ? void 0 : e.value) || void 0 === Y || Y, e => J.BoolValue.create({
+                e9 = (0, $.wrapSettingWithOverride)((0, $.wrapSettingWithSelectiveSyncing)((0, $.defineProtoSetting)("textAndImages", "gifAutoPlay", e => null === (Y = null == e ? void 0 : e.value) || void 0 === Y || Y, e => J.BoolValue.create({
                     value: e
                 })), "text", "gifAutoPlay"), "gifAutoPlay", () => {
                     var e;
@@ -5144,7 +5144,7 @@
                 let i = {},
                     r = window.GLOBAL_ENV.RELEASE_CHANNEL;
                 r && (i.release_channel = r.split("-")[0]);
-                let o = parseInt((n = "243991", "243991"), 10);
+                let o = parseInt((n = "244001", "244001"), 10);
                 !isNaN(o) && (i.client_build_number = o);
                 let s = null == N ? void 0 : null === (e = (t = N.remoteApp).getBuildNumber) || void 0 === e ? void 0 : e.call(t);
                 return !isNaN(s) && (i.native_build_number = s), i.client_event_source = function() {
@@ -5386,4 +5386,4 @@
         }
     }
 ]);
-//# sourceMappingURL=63a8fa8002641e6d401d.js.map
+//# sourceMappingURL=c6a2463489e8e0416359.js.map

@@ -3559,8 +3559,8 @@
                     this.uploadedFilename = e
                 }
                 constructor(e, t, n, a) {
-                    var l, s, r, o, u;
-                    super(e, n), this.status = i.NOT_STARTED, this.loaded = 0, this.reactNativeFilePrepped = !1, this._aborted = !1, this.channelId = t, this.preCompressionSize = null !== (r = null === (l = e.file) || void 0 === l ? void 0 : l.size) && void 0 !== r ? r : 0, this.currentSize = null !== (o = null === (s = e.file) || void 0 === s ? void 0 : s.size) && void 0 !== o ? o : 0, this.reactNativeFileIndex = a, this._abortController = new AbortController, this.isClip = null !== (u = e.isClip) && void 0 !== u && u
+                    var l, s, r, o;
+                    super(e, n), this.status = i.NOT_STARTED, this.loaded = 0, this.reactNativeFilePrepped = !1, this._aborted = !1, this.channelId = t, this.preCompressionSize = null !== (r = null === (l = e.file) || void 0 === l ? void 0 : l.size) && void 0 !== r ? r : 0, this.currentSize = null !== (o = null === (s = e.file) || void 0 === s ? void 0 : s.size) && void 0 !== o ? o : 0, this.reactNativeFileIndex = a, this._abortController = new AbortController
                 }
             }
         },
@@ -3595,9 +3595,9 @@
                             overrideFilename: e.filename,
                             overrideType: e.mimeType
                         });
-                        this.filename = t.filename, this.isImage = t.isImage, this.isVideo = t.isVideo, this.mimeType = t.type, this.origin = e.origin, this.durationSecs = e.durationSecs, this.waveform = e.waveform, this.isRemix = e.isRemix, this.isThumbnail = e.isThumbnail
-                    } else this.id = null !== (i = e.id) && void 0 !== i ? i : u.uniqueId("upload"), this.classification = c.classifyFile(e.file), this.isImage = "image" === this.classification, this.isVideo = "video" === this.classification, this.filename = e.file.name, this.mimeType = e.file.type, this.isThumbnail = e.isThumbnail;
-                    this.isClip = e.isClip, this.uniqueId = (0, d.v4)(), this.showLargeMessageDialog = t, this.spoiler = !1, this.description = null
+                        this.filename = t.filename, this.isImage = t.isImage, this.isVideo = t.isVideo, this.mimeType = t.type, this.origin = e.origin, this.durationSecs = e.durationSecs, this.waveform = e.waveform, this.isRemix = e.isRemix
+                    } else this.id = null !== (i = e.id) && void 0 !== i ? i : u.uniqueId("upload"), this.classification = c.classifyFile(e.file), this.isImage = "image" === this.classification, this.isVideo = "video" === this.classification, this.filename = e.file.name, this.mimeType = e.file.type;
+                    this.isThumbnail = e.isThumbnail, this.clip = e.clip, this.uniqueId = (0, d.v4)(), this.showLargeMessageDialog = t, this.spoiler = !1, this.description = null
                 }
             }
         },
@@ -3685,28 +3685,34 @@
             "use strict";
             n.r(t), n.d(t, {
                 getUploadPayload: function() {
-                    return r
+                    return o
                 },
                 default: function() {
-                    return o
+                    return u
                 }
             });
             var i = n("627445"),
                 a = n.n(i),
                 l = n("917351"),
-                s = n.n(l);
+                s = n.n(l),
+                r = n("299039");
 
-            function r(e) {
-                let t = e.item.file;
-                return a(null != t, "file data must not be empty"), {
-                    filename: t.name,
-                    file_size: t.size,
+            function o(e) {
+                var t, n, i;
+                let l = e.item.file;
+                return a(null != l, "file data must not be empty"), {
+                    filename: l.name,
+                    file_size: l.size,
                     id: s.uniqueId(),
-                    is_clip: e.isClip
+                    is_clip: null != e.clip,
+                    title: null === (t = e.clip) || void 0 === t ? void 0 : t.name,
+                    application_id: null === (n = e.clip) || void 0 === n ? void 0 : n.applicationId,
+                    clip_created_at: null != e.clip ? new Date(r.default.extractTimestamp(e.clip.id)).toISOString() : void 0,
+                    clip_participant_ids: null === (i = e.clip) || void 0 === i ? void 0 : i.users
                 }
             }
-            var o = {
-                getUploadPayload: r
+            var u = {
+                getUploadPayload: o
             }
         },
         810793: function(e, t, n) {
@@ -33013,4 +33019,4 @@
         }
     }
 ]);
-//# sourceMappingURL=d5cf0717b5fbf2464207.js.map
+//# sourceMappingURL=6353f5e5fe648d7d3e60.js.map
