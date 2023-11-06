@@ -10124,7 +10124,7 @@
             }), n("702976");
             var i, a, l = n("44170"),
                 s = n("590401");
-            (a = i || (i = {}))[a.DISPATCH = 0] = "DISPATCH", a[a.HEARTBEAT = 1] = "HEARTBEAT", a[a.IDENTIFY = 2] = "IDENTIFY", a[a.PRESENCE_UPDATE = 3] = "PRESENCE_UPDATE", a[a.VOICE_STATE_UPDATE = 4] = "VOICE_STATE_UPDATE", a[a.VOICE_SERVER_PING = 5] = "VOICE_SERVER_PING", a[a.RESUME = 6] = "RESUME", a[a.RECONNECT = 7] = "RECONNECT", a[a.REQUEST_GUILD_MEMBERS = 8] = "REQUEST_GUILD_MEMBERS", a[a.INVALID_SESSION = 9] = "INVALID_SESSION", a[a.HELLO = 10] = "HELLO", a[a.HEARTBEAT_ACK = 11] = "HEARTBEAT_ACK", a[a.CALL_CONNECT = 13] = "CALL_CONNECT", a[a.GUILD_SUBSCRIPTIONS = 14] = "GUILD_SUBSCRIPTIONS", a[a.LOBBY_CONNECT = 15] = "LOBBY_CONNECT", a[a.LOBBY_DISCONNECT = 16] = "LOBBY_DISCONNECT", a[a.LOBBY_VOICE_STATES_UPDATE = 17] = "LOBBY_VOICE_STATES_UPDATE", a[a.STREAM_CREATE = 18] = "STREAM_CREATE", a[a.STREAM_DELETE = 19] = "STREAM_DELETE", a[a.STREAM_WATCH = 20] = "STREAM_WATCH", a[a.STREAM_PING = 21] = "STREAM_PING", a[a.STREAM_SET_PAUSED = 22] = "STREAM_SET_PAUSED", a[a.REQUEST_GUILD_APPLICATION_COMMANDS = 24] = "REQUEST_GUILD_APPLICATION_COMMANDS", a[a.EMBEDDED_ACTIVITY_LAUNCH = 25] = "EMBEDDED_ACTIVITY_LAUNCH", a[a.EMBEDDED_ACTIVITY_CLOSE = 26] = "EMBEDDED_ACTIVITY_CLOSE", a[a.EMBEDDED_ACTIVITY_UPDATE = 27] = "EMBEDDED_ACTIVITY_UPDATE", a[a.REQUEST_FORUM_UNREADS = 28] = "REQUEST_FORUM_UNREADS", a[a.REMOTE_COMMAND = 29] = "REMOTE_COMMAND", a[a.GET_DELETED_ENTITY_IDS_NOT_MATCHING_HASH = 30] = "GET_DELETED_ENTITY_IDS_NOT_MATCHING_HASH", a[a.REQUEST_SOUNDBOARD_SOUNDS = 31] = "REQUEST_SOUNDBOARD_SOUNDS", a[a.SPEED_TEST_CREATE = 32] = "SPEED_TEST_CREATE", a[a.SPEED_TEST_DELETE = 33] = "SPEED_TEST_DELETE", a[a.REQUEST_LAST_MESSAGES = 34] = "REQUEST_LAST_MESSAGES", a[a.SEARCH_RECENT_MEMBERS = 35] = "SEARCH_RECENT_MEMBERS";
+            (a = i || (i = {}))[a.DISPATCH = 0] = "DISPATCH", a[a.HEARTBEAT = 1] = "HEARTBEAT", a[a.IDENTIFY = 2] = "IDENTIFY", a[a.PRESENCE_UPDATE = 3] = "PRESENCE_UPDATE", a[a.VOICE_STATE_UPDATE = 4] = "VOICE_STATE_UPDATE", a[a.VOICE_SERVER_PING = 5] = "VOICE_SERVER_PING", a[a.RESUME = 6] = "RESUME", a[a.RECONNECT = 7] = "RECONNECT", a[a.REQUEST_GUILD_MEMBERS = 8] = "REQUEST_GUILD_MEMBERS", a[a.INVALID_SESSION = 9] = "INVALID_SESSION", a[a.HELLO = 10] = "HELLO", a[a.HEARTBEAT_ACK = 11] = "HEARTBEAT_ACK", a[a.CALL_CONNECT = 13] = "CALL_CONNECT", a[a.GUILD_SUBSCRIPTIONS = 14] = "GUILD_SUBSCRIPTIONS", a[a.LOBBY_CONNECT = 15] = "LOBBY_CONNECT", a[a.LOBBY_DISCONNECT = 16] = "LOBBY_DISCONNECT", a[a.LOBBY_VOICE_STATES_UPDATE = 17] = "LOBBY_VOICE_STATES_UPDATE", a[a.STREAM_CREATE = 18] = "STREAM_CREATE", a[a.STREAM_DELETE = 19] = "STREAM_DELETE", a[a.STREAM_WATCH = 20] = "STREAM_WATCH", a[a.STREAM_PING = 21] = "STREAM_PING", a[a.STREAM_SET_PAUSED = 22] = "STREAM_SET_PAUSED", a[a.REQUEST_GUILD_APPLICATION_COMMANDS = 24] = "REQUEST_GUILD_APPLICATION_COMMANDS", a[a.EMBEDDED_ACTIVITY_LAUNCH = 25] = "EMBEDDED_ACTIVITY_LAUNCH", a[a.EMBEDDED_ACTIVITY_CLOSE = 26] = "EMBEDDED_ACTIVITY_CLOSE", a[a.EMBEDDED_ACTIVITY_UPDATE = 27] = "EMBEDDED_ACTIVITY_UPDATE", a[a.REQUEST_FORUM_UNREADS = 28] = "REQUEST_FORUM_UNREADS", a[a.REMOTE_COMMAND = 29] = "REMOTE_COMMAND", a[a.GET_DELETED_ENTITY_IDS_NOT_MATCHING_HASH = 30] = "GET_DELETED_ENTITY_IDS_NOT_MATCHING_HASH", a[a.REQUEST_SOUNDBOARD_SOUNDS = 31] = "REQUEST_SOUNDBOARD_SOUNDS", a[a.SPEED_TEST_CREATE = 32] = "SPEED_TEST_CREATE", a[a.SPEED_TEST_DELETE = 33] = "SPEED_TEST_DELETE", a[a.REQUEST_LAST_MESSAGES = 34] = "REQUEST_LAST_MESSAGES", a[a.SEARCH_RECENT_MEMBERS = 35] = "SEARCH_RECENT_MEMBERS", a[a.REQUEST_CHANNEL_STATUSES = 36] = "REQUEST_CHANNEL_STATUSES";
             class r extends l.EventEmitter {
                 presenceUpdate(e, t, n, a, l) {
                     this.send(i.PRESENCE_UPDATE, {
@@ -10292,6 +10292,11 @@
                         role_ids_hash: n,
                         emoji_ids_hash: a,
                         sticker_ids_hash: l
+                    })
+                }
+                requestChannelStatuses(e) {
+                    this.send(i.REQUEST_CHANNEL_STATUSES, {
+                        guild_id: e
                     })
                 }
                 remoteCommand(e, t) {
@@ -11023,7 +11028,15 @@
                         G({
                             type: e,
                             id: t.id,
+                            guildId: t.guild_id,
                             status: t.status
+                        });
+                        break;
+                    case "CHANNEL_STATUSES":
+                        G({
+                            type: e,
+                            guildId: t.guild_id,
+                            channels: t.channels
                         });
                         break;
                     case "CHANNEL_UPDATE":
@@ -33000,4 +33013,4 @@
         }
     }
 ]);
-//# sourceMappingURL=b550570a32db8b11d9e2.js.map
+//# sourceMappingURL=d5cf0717b5fbf2464207.js.map
