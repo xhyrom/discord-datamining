@@ -17533,6 +17533,11 @@ input[type=checkbox]:focus-visible+.label_ee78c3 {
     border-bottom: 1px solid hsl(var(--white-500-hsl)/6%)
 }
 
+.deletedHelpMessage__375ee {
+    margin-bottom: 16px;
+    align-items: center
+}
+
 .changePlanNotice_fe9c5f {
     margin-bottom: 16px;
     background-color: var(--background-secondary-alt)
@@ -19390,8 +19395,8 @@ input[type=checkbox]:focus-visible+.label_ee78c3 {
 
 .message__13e98 {
     font-weight: 500;
-    font-size: 1rem;
-    line-height: 1.25rem;
+    font-size: 16px;
+    line-height: 20px;
     white-space: nowrap;
     text-overflow: ellipsis;
     overflow: hidden
@@ -123356,4 +123361,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=app.8e61b8abfbb0c6229f24.css.map*/
+/*# sourceMappingURL=app.e6111af0aafdb16ff893.css.map*/
