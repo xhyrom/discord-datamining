@@ -15853,6 +15853,7 @@
   "SAFETY_HUB_VIOLATIONS_CONTAINER_EXPIRATION_DATE_ACTIVE": "\"Expires on {expirationDate}\"",
   "SAFETY_HUB_VIOLATIONS_CONTAINER_EXPIRATION_DATE_EXPIRED": "\"Expired on {expirationDate}\"",
   "SAFETY_HUB_VIOLATIONS_CONTAINER_DESCRIPTION": "\"You broke the rules against $[!!{description}!!](descriptionHook).\"",
+  "SAFETY_HUB_VIOLATIONS_CONTAINER_NEW": "\"NEW\"",
   "SAFETY_POLICY_NOTICE_BUTTON": "\"Learn more\"",
   "SAFETY_POLICY_NOTICE_HEADER": "\"You broke Discord's community guidelines\"",
   "SAFETY_POLICY_NOTICE_BODY": "\"We've taken action that affects your account.\"",
