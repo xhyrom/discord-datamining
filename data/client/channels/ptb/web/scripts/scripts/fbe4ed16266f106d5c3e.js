@@ -49021,7 +49021,7 @@
                         var i;
                         let d = {
                                 environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                                build_number: "243991"
+                                build_number: "244001"
                             },
                             E = l.default.getCurrentUser();
                         null != E && (d.user_id = E.id, d.user_name = E.tag, null != E.email && (d.email = E.email));
@@ -51311,20 +51311,21 @@
             "use strict";
             n.r(t), n.d(t, {
                 MAX_TOTAL_ATTACHMENT_SIZE: function() {
-                    return s
-                },
-                getAttachmentPayload: function() {
                     return a
                 },
-                getFileData: function() {
+                getAttachmentPayload: function() {
                     return o
                 },
-                getFile: function() {
+                getFileData: function() {
                     return l
+                },
+                getFile: function() {
+                    return u
                 }
             });
-            var i = n("894488");
-            let r = [{
+            var i = n("299039"),
+                r = n("894488");
+            let s = [{
                     reName: /\.jpe?g$/i,
                     name: e => "image".concat(e, ".jpg"),
                     type: "image/jpeg"
@@ -51369,28 +51370,28 @@
                     name: e => "video".concat(e, ".webm"),
                     type: "image/webm"
                 }],
-                s = 524288e3;
+                a = 524288e3;
 
-            function a(e) {
+            function o(e) {
                 var t;
                 let n = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : null,
-                    r = arguments.length > 2 ? arguments[2] : void 0,
-                    s = {
+                    s = arguments.length > 2 ? arguments[2] : void 0,
+                    a = {
                         id: null !== (t = null == n ? void 0 : n.toString()) && void 0 !== t ? t : e.id
                     };
-                null != e.description && (s.description = e.description);
-                let a = function(e) {
+                null != e.description && (a.description = e.description);
+                let o = function(e) {
                     let {
                         spoiler: t
                     } = e;
-                    return t ? i.SPOILER_ATTACHMENT_PREFIX : ""
+                    return t ? r.SPOILER_ATTACHMENT_PREFIX : ""
                 }({
                     spoiler: e.spoiler
                 });
-                return s.filename = "".concat(a).concat(null != r ? r : e.filename), s.uploaded_filename = e.uploadedFilename, "durationSecs" in e && null != e.durationSecs && (s.duration_secs = e.durationSecs), "waveform" in e && null != e.waveform && (s.waveform = e.waveform), "isThumbnail" in e && !0 === e.isThumbnail && (s.is_thumbnail = e.isThumbnail), "isRemix" in e && !0 === e.isRemix && (s.is_remix = e.isRemix), "isClip" in e && !0 === e.isClip && (s.is_clip = e.isClip), s
+                return a.filename = "".concat(o).concat(null != s ? s : e.filename), a.uploaded_filename = e.uploadedFilename, "durationSecs" in e && null != e.durationSecs && (a.duration_secs = e.durationSecs), "waveform" in e && null != e.waveform && (a.waveform = e.waveform), "isThumbnail" in e && !0 === e.isThumbnail && (a.is_thumbnail = e.isThumbnail), "isRemix" in e && !0 === e.isRemix && (a.is_remix = e.isRemix), "clip" in e && null != e.clip && (a.is_clip = !0, a.title = e.clip.name, a.application_id = e.clip.applicationId, a.clip_created_at = new Date(i.default.extractTimestamp(e.clip.id)).toISOString(), a.clip_participant_ids = e.clip.users), a
             }
 
-            function o(e) {
+            function l(e) {
                 let t = new XMLHttpRequest;
                 return new Promise((n, i) => {
                     t.open("GET", e, !0), t.responseType = "blob", t.onabort = e => i(e), t.onerror = e => i(e), t.ontimeout = e => i(e), t.onload = () => {
@@ -51400,8 +51401,8 @@
                 })
             }
 
-            function l(e) {
-                var t, n, i, s, a, o, l, u, c;
+            function u(e) {
+                var t, n, i, r, a, o, l, u, c;
                 let d, {
                         uri: E,
                         i: h,
@@ -51411,8 +51412,8 @@
                     p = E.split("/"),
                     S = p[p.length - 1];
                 S = null !== (o = null === (n = S.split("?")) || void 0 === n ? void 0 : null === (t = n[0]) || void 0 === t ? void 0 : t.toLowerCase()) && void 0 !== o ? o : "";
-                let T = r.find(e => e.reName.test(S));
-                if (null == T && null != f && (T = r.find(e => e.reName.test(f))), null != T && null != f) {
+                let T = s.find(e => e.reName.test(S));
+                if (null == T && null != f && (T = s.find(e => e.reName.test(f))), null != T && null != f) {
                     let e = T.name(h).split(".").pop(),
                         t = f.lastIndexOf(".");
                     d = -1 !== t ? "".concat(f.substr(0, t), ".").concat(e) : "".concat(f, ".").concat(e)
@@ -51421,7 +51422,7 @@
                     uri: E,
                     filename: d,
                     type: null !== (l = null != _ ? _ : null === (i = T) || void 0 === i ? void 0 : i.type) && void 0 !== l ? l : "unknown",
-                    isVideo: -1 !== (null !== (u = null != _ ? _ : null === (s = T) || void 0 === s ? void 0 : s.name(h)) && void 0 !== u ? u : "").indexOf("video"),
+                    isVideo: -1 !== (null !== (u = null != _ ? _ : null === (r = T) || void 0 === r ? void 0 : r.name(h)) && void 0 !== u ? u : "").indexOf("video"),
                     isImage: -1 !== (null !== (c = null != _ ? _ : null === (a = T) || void 0 === a ? void 0 : a.name(h)) && void 0 !== c ? c : "").indexOf("image")
                 }
             }
@@ -62287,4 +62288,4 @@
         }
     }
 ]);
-//# sourceMappingURL=17134a2be16ca8889204.js.map
+//# sourceMappingURL=fbe4ed16266f106d5c3e.js.map
