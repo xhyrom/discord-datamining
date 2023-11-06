@@ -21414,11 +21414,14 @@
                 icon: "icon_dd98d2",
                 iconBackground: "iconBackground_a14261",
                 iconContainer: "iconContainer_a44e31",
+                incidentTimeBase: "incidentTimeBase__5345d",
                 itemDetail: "itemDetail__846d8",
+                itemDetailNew: "itemDetailNew_f61dbc",
                 items: "items_dee160",
+                newBadge: "newBadge__2ff4b incidentTimeBase__5345d",
                 paginationButton: "paginationButton__092f8",
                 stars: "stars__3c528",
-                timestamp: "timestamp__8e624",
+                timestamp: "timestamp__8e624 incidentTimeBase__5345d",
                 title: "title__50894"
             }
         },

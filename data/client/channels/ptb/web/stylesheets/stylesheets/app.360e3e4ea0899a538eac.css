@@ -118587,18 +118587,30 @@ html .invoiceCancelRow_c1bfe7 {
     width: 100%
 }
 
+.itemDetailNew_f61dbc {
+    border: 1px solid var(--brand-500)
+}
+
 .descriptionContainer_a79e81 {
     display: flex;
     flex-direction: column;
     gap: 8px
 }
 
-.timestamp__8e624 {
-    padding: 8px;
+.incidentTimeBase__5345d {
     border-radius: var(--radius-md);
-    background-color: var(--background-tertiary);
+    padding: 3px 6px;
     width: -moz-max-content;
     width: max-content
+}
+
+.timestamp__8e624 {
+    background-color: var(--background-tertiary)
+}
+
+.newBadge__2ff4b {
+    background-color: var(--brand-500);
+    color: var(--white-500)
 }
 
 .expirationDate__5ab40 {
@@ -123482,4 +123494,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=app.6346de4b72fa6c924b8e.css.map*/
+/*# sourceMappingURL=app.360e3e4ea0899a538eac.css.map*/
