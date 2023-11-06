@@ -3806,6 +3806,7 @@
                 arrowIconExpanded: "arrowIconExpanded__6a65e",
                 changePlanNotice: "changePlanNotice_fe9c5f",
                 container: "container__9bc50",
+                deletedHelpMessage: "deletedHelpMessage__375ee",
                 divider: "divider__37598",
                 guildIcon: "guildIcon__17455",
                 headerContainer: "headerContainer__1c5a5",
