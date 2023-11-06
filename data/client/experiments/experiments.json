@@ -9854,14 +9854,7 @@
               ]
             }
           },
-          "filters": [
-            {
-              "type": "guild_has_feature",
-              "features": [
-                "SUMMARIES_ENABLED_GA"
-              ]
-            }
-          ]
+          "filters": []
         }
       ],
       "revision": 1,
