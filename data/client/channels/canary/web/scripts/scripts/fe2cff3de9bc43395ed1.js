@@ -15874,6 +15874,7 @@
                 SAFETY_HUB_VIOLATIONS_CONTAINER_EXPIRATION_DATE_ACTIVE: "Expires on {expirationDate}",
                 SAFETY_HUB_VIOLATIONS_CONTAINER_EXPIRATION_DATE_EXPIRED: "Expired on {expirationDate}",
                 SAFETY_HUB_VIOLATIONS_CONTAINER_DESCRIPTION: "You broke the rules against $[!!{description}!!](descriptionHook).",
+                SAFETY_HUB_VIOLATIONS_CONTAINER_NEW: "NEW",
                 SAFETY_POLICY_NOTICE_BUTTON: "Learn more",
                 SAFETY_POLICY_NOTICE_HEADER: "You broke Discord's community guidelines",
                 SAFETY_POLICY_NOTICE_BODY: "We've taken action that affects your account.",
@@ -18067,7 +18068,7 @@
                 u = E("782340");
             (0, i.setUpdateRules)(s.default), (0, r.default)(u.default, n.default, T.default), a.default.Emitter.injectBatchEmitChanges(o.unstable_batchedUpdates), a.default.PersistedStore.disableWrites = __OVERLAY__, a.default.initialize();
             let L = window.GLOBAL_ENV.RELEASE_CHANNEL;
-            new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(L, ", Build Number: ").concat("243806", ", Version Hash: ").concat("7f6f8779207735539c535b851e278d3f401b3748")), t.default.setTags({
+            new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(L, ", Build Number: ").concat("243817", ", Version Hash: ").concat("cf81c5226ce750801d5955ecabcdb2b3d3f4ee4a")), t.default.setTags({
                 appContext: l.CURRENT_APP_CONTEXT
             }), S.default.initBasic(), N.default.init(), I.FocusRingManager.init(), O.init(), (0, R.cleanupTempFiles)()
         },
@@ -20451,8 +20452,8 @@
 
             function o() {
                 var e;
-                let _ = parseInt((e = "243806", "243806"));
-                return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("243806")), _ = 0), _
+                let _ = parseInt((e = "243817", "243817"));
+                return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("243817")), _ = 0), _
             }
         },
         990629: function(e, _, E) {
@@ -36150,4 +36151,4 @@
         }
     }
 ]);
-//# sourceMappingURL=03b582e82c761291c8bc.js.map
+//# sourceMappingURL=fe2cff3de9bc43395ed1.js.map
