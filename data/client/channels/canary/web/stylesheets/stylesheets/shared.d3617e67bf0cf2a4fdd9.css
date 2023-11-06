@@ -13850,6 +13850,11 @@ html.decorate-links .lowSaturationUnderline__95e71 {
     opacity: 0
 }
 
+.nitroAuthorBadgeTootip__967e6 {
+    max-width: 30vw !important;
+    white-space: nowrap
+}
+
 .mouse-mode .wrapper__09ecc:hover .timestampVisibleOnHover_e8cc6d {
     opacity: 1
 }
@@ -13926,7 +13931,9 @@ html.decorate-links .lowSaturationUnderline__95e71 {
 
 .nitroBadgeSvg__214e0 {
     position: relative;
-    margin-left: .2rem
+    margin-left: .2rem;
+    width: 24px;
+    height: 14px
 }
 
 .nitroBadgeSvgRepliedMessage__021fb {
@@ -26399,4 +26406,4 @@ button.button__4f306.disabled_dc5630 {
     }
 }
 
-/*# sourceMappingURL=shared.301e5be701b38ac4ce31.css.map*/
+/*# sourceMappingURL=shared.d3617e67bf0cf2a4fdd9.css.map*/

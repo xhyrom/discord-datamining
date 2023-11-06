@@ -3836,7 +3836,7 @@
                     return e6
                 },
                 DeveloperMode: function() {
-                    return e7
+                    return e8
                 },
                 ClientThemeSettings: function() {
                     return e5
@@ -4038,11 +4038,11 @@
             (0, $.defineProtoSetting)("appearance", "channelListLayout", e => null != e && e3.has(e.value) ? e.value : Q.ChannelListLayoutSettings.HYBRID, e => J.StringValue.create({
                 value: e
             }));
-            let e8 = new Set([Q.MessagePreviewSettings.DEFAULT, Q.MessagePreviewSettings.ALL, Q.MessagePreviewSettings.UNREADS, Q.MessagePreviewSettings.NONE]);
-            (0, $.defineProtoSetting)("appearance", "messagePreviews", e => null != e && e8.has(e.value) ? e.value : Q.MessagePreviewSettings.DEFAULT, e => J.StringValue.create({
+            let e7 = new Set([Q.MessagePreviewSettings.DEFAULT, Q.MessagePreviewSettings.ALL, Q.MessagePreviewSettings.UNREADS, Q.MessagePreviewSettings.NONE]);
+            (0, $.defineProtoSetting)("appearance", "messagePreviews", e => null != e && e7.has(e.value) ? e.value : Q.MessagePreviewSettings.DEFAULT, e => J.StringValue.create({
                 value: e
             }));
-            let e7 = (0, $.wrapSettingWithSelectiveSyncing)((0, $.defineProtoSetting)("appearance", "developerMode", e => null != e && e, e => e), "appearance", "developerMode"),
+            let e8 = (0, $.wrapSettingWithSelectiveSyncing)((0, $.defineProtoSetting)("appearance", "developerMode", e => null != e && e, e => e), "appearance", "developerMode"),
                 e5 = (0, $.defineProtoSetting)("appearance", "clientThemeSettings", e => {
                     let {
                         backgroundGradientPresetId: t,
@@ -5144,7 +5144,7 @@
                 let i = {},
                     r = window.GLOBAL_ENV.RELEASE_CHANNEL;
                 r && (i.release_channel = r.split("-")[0]);
-                let o = parseInt((n = "243840", "243840"), 10);
+                let o = parseInt((n = "243875", "243875"), 10);
                 !isNaN(o) && (i.client_build_number = o);
                 let s = null == N ? void 0 : null === (e = (t = N.remoteApp).getBuildNumber) || void 0 === e ? void 0 : e.call(t);
                 return !isNaN(s) && (i.native_build_number = s), i.client_event_source = function() {
@@ -5386,4 +5386,4 @@
         }
     }
 ]);
-//# sourceMappingURL=999dcb6ceecdbc0243e9.js.map
+//# sourceMappingURL=f42c621152bb3787823e.js.map

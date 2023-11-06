@@ -3326,6 +3326,7 @@
                 messageContent: "messageContent__21e69",
                 messageEditorCompact: "messageEditorCompact__94038",
                 nitroAuthorBadgeContainer: "nitroAuthorBadgeContainer__0b121",
+                nitroAuthorBadgeTootip: "nitroAuthorBadgeTootip__967e6",
                 nitroBadgeSvg: "nitroBadgeSvg__214e0 botTag__11e95",
                 nitroBadgeSvgRepliedMessage: "nitroBadgeSvgRepliedMessage__021fb",
                 pollBadgeDefault: "pollBadgeDefault_f48298",

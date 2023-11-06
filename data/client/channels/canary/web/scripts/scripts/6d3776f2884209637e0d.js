@@ -13264,9 +13264,6 @@
         466818: function(e, t, n) {
             "use strict";
             n.r(t), n.d(t, {
-                MemberSafetyPagePermissions: function() {
-                    return c
-                },
                 canAccessMemberSafetyPage: function() {
                     return E
                 },
@@ -13293,9 +13290,9 @@
                 r = n("697218"),
                 o = n("991170"),
                 u = n("536999"),
-                d = n("49111");
-            let c = i.default.combine(d.Permissions.ADMINISTRATOR, d.Permissions.MANAGE_GUILD, d.Permissions.BAN_MEMBERS, d.Permissions.KICK_MEMBERS, d.Permissions.MODERATE_MEMBERS),
-                _ = function(e) {
+                d = n("562980"),
+                c = n("49111");
+            let _ = function(e) {
                     let t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : [l.default, r.default],
                         [n, i] = t,
                         a = n.getGuild(e),
@@ -13313,13 +13310,13 @@
                         user: n.user,
                         context: n.guild,
                         checkElevated: !1
-                    }), c);
+                    }), d.MemberSafetyPagePermissions);
                     return a
                 },
                 h = function(e) {
                     let t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : [l.default, r.default],
                         n = _(e, t);
-                    return null != n && s.default.can(d.Permissions.MANAGE_GUILD, n.guild) && s.default.can(d.Permissions.BAN_MEMBERS, n.guild)
+                    return null != n && s.default.can(c.Permissions.MANAGE_GUILD, n.guild) && s.default.can(c.Permissions.BAN_MEMBERS, n.guild)
                 };
 
             function f(e) {
@@ -13342,20 +13339,20 @@
             function T(e) {
                 return (0, a.useStateFromStores)([l.default, s.default], () => {
                     let t = l.default.getGuild(e);
-                    return null != t && s.default.can(d.Permissions.MANAGE_GUILD, t)
+                    return null != t && s.default.can(c.Permissions.MANAGE_GUILD, t)
                 }, [e])
             }
 
             function C(e, t, n) {
                 return (0, a.useStateFromStores)([s.default, l.default], () => {
                     let i = l.default.getGuild(e);
-                    return null != i && t && s.default.canManageUser(d.Permissions.BAN_MEMBERS, n, i)
+                    return null != i && t && s.default.canManageUser(c.Permissions.BAN_MEMBERS, n, i)
                 }, [t, e, n])
             }
 
             function S(e, t, n) {
                 let i = l.default.getGuild(e);
-                return null != i && t && s.default.canManageUser(d.Permissions.BAN_MEMBERS, n, i)
+                return null != i && t && s.default.canManageUser(c.Permissions.BAN_MEMBERS, n, i)
             }
         },
         572679: function(e, t, n) {
@@ -18844,24 +18841,48 @@
                 })
             }
         },
-        677156: function(e, t, n) {
+        78710: function(e, t, n) {
             "use strict";
             n.r(t), n.d(t, {
-                CustomGiftExperiment: function() {
+                CustomGiftSoundboardEmojiExperiment: function() {
                     return a
                 }
             });
             var i = n("862205");
             let a = (0, i.createExperiment)({
                 kind: "user",
-                id: "2023-08_custom_gift",
-                label: "Custom Gift Experiment",
+                id: "2023-10_custom_gift_soundboard_emoji",
+                label: "Custom Gift - Soundboard and Emoji Experiment",
                 defaultConfig: {
                     enabled: !1
                 },
                 treatments: [{
                     id: 1,
-                    label: "Show gift purchaser custom gift flow",
+                    label: "Show gift purchaser custom gift flow with soundboard and emoji features",
+                    config: {
+                        enabled: !0
+                    }
+                }]
+            })
+        },
+        977591: function(e, t, n) {
+            "use strict";
+            n.r(t), n.d(t, {
+                ExpandedGiftingRevampExperiment: function() {
+                    return a
+                }
+            });
+            var i = n("862205");
+            let a = (0, i.createExperiment)({
+                kind: "user",
+                id: "2023-11_expanded_gifting_revamp_experiment",
+                label: "Expanded Gifting Revamp Experiment",
+                defaultConfig: {
+                    enabled: !1
+                },
+                treatments: [{
+                    id: 1,
+                    label: "Show expanded gifting revamp experience",
                     config: {
                         enabled: !0
                     }
@@ -30263,95 +30284,128 @@
             "use strict";
             n.r(t), n.d(t, {
                 isCustomGiftEnabled: function() {
-                    return D
+                    return b
                 },
-                makeComboId: function() {
-                    return U
+                GiftExperience: function() {
+                    return i
                 },
-                parseComboId: function() {
-                    return P
-                },
-                isGiftCodeEmbed: function() {
+                GIFT_EXPERIENCES_WITH_CUSTOM_MESSAGING: function() {
                     return G
                 },
-                findGiftCodes: function() {
+                GIFT_EXPERIENCES_WITH_CUSTOM_EMOJI_SOUNDBOARD: function() {
                     return w
                 },
-                getGiftCodeURL: function() {
+                getGiftExperience: function() {
                     return k
                 },
-                resolveGiftCode: function() {
+                shouldShowCustomGiftExperience: function() {
                     return F
                 },
-                trackGiftCodeCopy: function() {
+                makeComboId: function() {
                     return H
                 },
-                getStep: function() {
+                parseComboId: function() {
                     return V
                 },
-                getHeaderText: function() {
-                    return B
-                },
-                getButtonText: function() {
+                isGiftCodeEmbed: function() {
                     return x
                 },
-                getBodyText: function() {
+                findGiftCodes: function() {
                     return Y
                 },
-                getErrorMessage: function() {
+                getGiftCodeURL: function() {
                     return K
                 },
-                firstLibraryApplicationForGiftCode: function() {
+                resolveGiftCode: function() {
                     return W
                 },
-                processGiftCodeInput: function() {
+                trackGiftCodeCopy: function() {
                     return j
                 },
-                useGetGiftCode: function() {
+                getStep: function() {
                     return z
+                },
+                getHeaderText: function() {
+                    return q
+                },
+                getButtonText: function() {
+                    return Q
+                },
+                getBodyText: function() {
+                    return X
+                },
+                getErrorMessage: function() {
+                    return Z
+                },
+                firstLibraryApplicationForGiftCode: function() {
+                    return J
+                },
+                processGiftCodeInput: function() {
+                    return $
+                },
+                useGetGiftCode: function() {
+                    return ee
                 }
             }), n("222007"), n("781738");
-            var i = n("446674"),
-                a = n("333805"),
-                l = n("791160"),
-                s = n("677156"),
-                r = n("353365"),
-                o = n("697218"),
-                u = n("599110"),
-                d = n("449008"),
-                c = n("773336"),
-                _ = n("719923"),
-                E = n("655518"),
-                h = n("271560"),
-                f = n("49111"),
-                p = n("646718"),
-                T = n("782340");
-            let C = E.default.escape(window.GLOBAL_ENV.GIFT_CODE_HOST),
-                S = ["discordapp.com/gifts", "discord.com/gifts"].map(e => E.default.escape(e)),
-                m = [C, ...S].join("|"),
-                I = RegExp("(?: |^|https?://)(?:".concat(m, ")/([a-z0-9-]+)"), "gi"),
-                A = ["discord.com/billing/promotions", "promos.discord.gg"].map(e => E.default.escape(e)),
-                g = [...A].join("|"),
+            var i, a, l = n("446674"),
+                s = n("333805"),
+                r = n("791160"),
+                o = n("78710"),
+                u = n("977591"),
+                d = n("353365"),
+                c = n("697218"),
+                _ = n("599110"),
+                E = n("449008"),
+                h = n("773336"),
+                f = n("719923"),
+                p = n("655518"),
+                T = n("271560"),
+                C = n("49111"),
+                S = n("646718"),
+                m = n("782340");
+            let I = p.default.escape(window.GLOBAL_ENV.GIFT_CODE_HOST),
+                A = ["discordapp.com/gifts", "discord.com/gifts"].map(e => p.default.escape(e)),
+                g = [I, ...A].join("|"),
                 N = RegExp("(?: |^|https?://)(?:".concat(g, ")/([a-z0-9-]+)"), "gi"),
-                O = (e, t) => Array(t).fill(void 0).map(() => "[".concat("abcdefghjkmnpqrstuvwxyzABCDEFGHJKMNPQRSTUVWXYZ23456789", "]{").concat(e, "}")).join("-?"),
-                R = O(4, 4),
-                y = O(4, 6),
-                v = O(5, 3),
-                M = [R, y, v, "[a-zA-Z]{4}-?[0-9a-zA-Z]{4}-?[a-zA-Z]{4}"].join("|"),
-                L = new RegExp("^(".concat("WUMP-?", ")?(").concat(M, ")$")),
-                D = e => null != e && s.CustomGiftExperiment.getCurrentConfig({
-                    location: "isCustomGiftEnabled"
-                }, {
-                    autoTrackExposure: !1
-                }).enabled;
+                O = ["discord.com/billing/promotions", "promos.discord.gg"].map(e => p.default.escape(e)),
+                R = [...O].join("|"),
+                y = RegExp("(?: |^|https?://)(?:".concat(R, ")/([a-z0-9-]+)"), "gi"),
+                v = (e, t) => Array(t).fill(void 0).map(() => "[".concat("abcdefghjkmnpqrstuvwxyzABCDEFGHJKMNPQRSTUVWXYZ23456789", "]{").concat(e, "}")).join("-?"),
+                M = v(4, 4),
+                L = v(4, 6),
+                D = v(5, 3),
+                U = [M, L, D, "[a-zA-Z]{4}-?[0-9a-zA-Z]{4}-?[a-zA-Z]{4}"].join("|"),
+                P = new RegExp("^(".concat("WUMP-?", ")?(").concat(U, ")$")),
+                b = e => null != e && !0;
+            (a = i || (i = {}))[a.DEFAULT = 0] = "DEFAULT", a[a.CUSTOM_STYLE = 1] = "CUSTOM_STYLE", a[a.CUSTOM_MESSAGE = 2] = "CUSTOM_MESSAGE", a[a.EMOJI_SOUNDBOARD = 3] = "EMOJI_SOUNDBOARD";
+            let G = new Set([i.CUSTOM_MESSAGE, i.EMOJI_SOUNDBOARD]),
+                w = new Set([i.EMOJI_SOUNDBOARD]),
+                k = function(e) {
+                    let t = arguments.length > 1 && void 0 !== arguments[1] && arguments[1],
+                        n = arguments.length > 2 && void 0 !== arguments[2] ? arguments[2] : "getGiftExperience";
+                    return null != e ? o.CustomGiftSoundboardEmojiExperiment.getCurrentConfig({
+                        location: n
+                    }, {
+                        autoTrackExposure: t
+                    }).enabled ? i.EMOJI_SOUNDBOARD : i.CUSTOM_MESSAGE : u.ExpandedGiftingRevampExperiment.getCurrentConfig({
+                        location: n
+                    }, {
+                        autoTrackExposure: t
+                    }).enabled ? i.CUSTOM_STYLE : i.DEFAULT
+                },
+                F = function(e) {
+                    let t = arguments.length > 1 && void 0 !== arguments[1] && arguments[1],
+                        n = arguments.length > 2 && void 0 !== arguments[2] ? arguments[2] : "shouldShowCustomGiftExperience";
+                    return k(e, t, n) !== i.DEFAULT
+                };
 
-            function U(e) {
+            function H(e) {
                 let t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : null,
                     n = arguments.length > 2 ? arguments[2] : void 0;
                 return "".concat(e, ":").concat(null != t ? t : "", ":").concat(null != n ? n : "")
             }
 
-            function P(e) {
+            function V(e) {
                 let [t, n, i] = e.split(":");
                 return {
                     skuId: t,
@@ -30360,30 +30414,30 @@
                 }
             }
 
-            function b(e) {
+            function B(e) {
                 return e.replace(/[^A-Za-z0-9]/g, "")
             }
-            let G = e => (null == e ? void 0 : e.type) === f.MessageTypes.CUSTOM_GIFT && (null == e ? void 0 : e.embeds.length) === 1 && (null == e ? void 0 : e.embeds[0].type) === f.MessageEmbedTypes.GIFT,
-                w = e => {
+            let x = e => (null == e ? void 0 : e.type) === C.MessageTypes.CUSTOM_GIFT && (null == e ? void 0 : e.embeds.length) === 1 && (null == e ? void 0 : e.embeds[0].type) === C.MessageEmbedTypes.GIFT,
+                Y = e => {
                     let t;
                     if (null == e) return [];
                     let n = new Set;
-                    for (; null != (t = I.exec(e)) && n.size < 3;) n.add(b(t[1]));
-                    for (; null != (t = N.exec(e)) && n.size < 3;) n.add(b(t[1]));
+                    for (; null != (t = N.exec(e)) && n.size < 3;) n.add(B(t[1]));
+                    for (; null != (t = y.exec(e)) && n.size < 3;) n.add(B(t[1]));
                     return Array.from(n)
                 };
 
-            function k() {
+            function K() {
                 let e, t = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : "",
                     n = window.GLOBAL_ENV.GIFT_CODE_HOST;
-                return null == n || (0, c.isAndroid)() ? (n = location.host, e = "/gifts/".concat(t)) : e = "/".concat(t), "".concat(location.protocol, "//").concat(n).concat(e)
+                return null == n || (0, h.isAndroid)() ? (n = location.host, e = "/gifts/".concat(t)) : e = "/".concat(t), "".concat(location.protocol, "//").concat(n).concat(e)
             }
-            async function F(e) {
+            async function W(e) {
                 let t = arguments.length > 1 && void 0 !== arguments[1] && arguments[1],
                     n = arguments.length > 2 && void 0 !== arguments[2] && arguments[2];
                 try {
-                    let i = await (0, h.httpGetWithCountryCodeQuery)({
-                            url: f.Endpoints.GIFT_CODE_RESOLVE(e),
+                    let i = await (0, T.httpGetWithCountryCodeQuery)({
+                            url: C.Endpoints.GIFT_CODE_RESOLVE(e),
                             query: {
                                 with_application: t,
                                 with_subscription_plan: n
@@ -30391,7 +30445,7 @@
                             oldFormErrors: !0
                         }),
                         a = i.body;
-                    return u.default.track(f.AnalyticEvents.GIFT_CODE_RESOLVED, {
+                    return _.default.track(C.AnalyticEvents.GIFT_CODE_RESOLVED, {
                         resolved: !0,
                         gift_code: a.code,
                         gift_code_max_uses: a.max_uses,
@@ -30403,59 +30457,59 @@
                         flush: !0
                     }), a
                 } catch (t) {
-                    throw u.default.track(f.AnalyticEvents.GIFT_CODE_RESOLVED, {
+                    throw _.default.track(C.AnalyticEvents.GIFT_CODE_RESOLVED, {
                         resolved: !1,
                         gift_code: e
-                    }), new a.default(t)
+                    }), new s.default(t)
                 }
             }
 
-            function H(e, t) {
-                u.default.track(f.AnalyticEvents.GIFT_CODE_COPIED, {
-                    ...(0, l.default)(t, !1, !1),
+            function j(e, t) {
+                _.default.track(C.AnalyticEvents.GIFT_CODE_COPIED, {
+                    ...(0, r.default)(t, !1, !1),
                     ...e.analyticsData
                 })
             }
 
-            function V(e, t, n, i, a, l, s) {
-                return null == n && (i || a || null == e) ? !s || l || i || a ? i && (t.isSubscription || null != e) ? f.GiftCodeModalStates.SUCCESS : f.GiftCodeModalStates.CONFIRM : f.GiftCodeModalStates.OPEN : f.GiftCodeModalStates.ERROR
+            function z(e, t, n, i, a, l, s) {
+                return null == n && (i || a || null == e) ? !s || l || i || a ? i && (t.isSubscription || null != e) ? C.GiftCodeModalStates.SUCCESS : C.GiftCodeModalStates.CONFIRM : C.GiftCodeModalStates.OPEN : C.GiftCodeModalStates.ERROR
             }
 
-            function B(e, t, n) {
+            function q(e, t, n) {
                 switch (e) {
-                    case f.GiftCodeModalStates.ERROR:
-                        return T.default.Messages.GIFT_CONFIRMATION_HEADER_FAIL;
-                    case f.GiftCodeModalStates.SUCCESS:
-                        return t.isSubscription ? T.default.Messages.GIFT_CONFIRMATION_HEADER_SUCCESS_NITRO.format({
+                    case C.GiftCodeModalStates.ERROR:
+                        return m.default.Messages.GIFT_CONFIRMATION_HEADER_FAIL;
+                    case C.GiftCodeModalStates.SUCCESS:
+                        return t.isSubscription ? m.default.Messages.GIFT_CONFIRMATION_HEADER_SUCCESS_NITRO.format({
                             skuName: n.name
-                        }) : T.default.Messages.GIFT_CONFIRMATION_HEADER_SUCCESS;
-                    case f.GiftCodeModalStates.CONFIRM:
+                        }) : m.default.Messages.GIFT_CONFIRMATION_HEADER_SUCCESS;
+                    case C.GiftCodeModalStates.CONFIRM:
                     default:
-                        return t.isSubscription ? T.default.Messages.GIFT_CONFIRMATION_HEADER_CONFIRM_NITRO.format({
+                        return t.isSubscription ? m.default.Messages.GIFT_CONFIRMATION_HEADER_CONFIRM_NITRO.format({
                             skuName: n.name
-                        }) : T.default.Messages.GIFT_CONFIRMATION_HEADER_CONFIRM
+                        }) : m.default.Messages.GIFT_CONFIRMATION_HEADER_CONFIRM
                 }
             }
 
-            function x(e, t, n) {
+            function Q(e, t, n) {
                 switch (e) {
-                    case f.GiftCodeModalStates.ERROR:
-                        return T.default.Messages.GIFT_CONFIRMATION_BUTTON_FAIL;
-                    case f.GiftCodeModalStates.SUCCESS:
-                        if (__OVERLAY__) return T.default.Messages.GIFT_CONFIRMATION_BUTTON_NOICE;
-                        if (t.isSubscription) return T.default.Messages.GIFT_CONFIRMATION_BUTTON_SUBSCRIPTION_SUCCESS;
-                        return T.default.Messages.GIFT_CONFIRMATION_BUTTON_GO_TO_LIBRARY;
-                    case f.GiftCodeModalStates.OPEN:
-                        return T.default.Messages.GIFT_OPEN_PROMPT;
-                    case f.GiftCodeModalStates.CONFIRM:
+                    case C.GiftCodeModalStates.ERROR:
+                        return m.default.Messages.GIFT_CONFIRMATION_BUTTON_FAIL;
+                    case C.GiftCodeModalStates.SUCCESS:
+                        if (__OVERLAY__) return m.default.Messages.GIFT_CONFIRMATION_BUTTON_NOICE;
+                        if (t.isSubscription) return m.default.Messages.GIFT_CONFIRMATION_BUTTON_SUBSCRIPTION_SUCCESS;
+                        return m.default.Messages.GIFT_CONFIRMATION_BUTTON_GO_TO_LIBRARY;
+                    case C.GiftCodeModalStates.OPEN:
+                        return m.default.Messages.GIFT_OPEN_PROMPT;
+                    case C.GiftCodeModalStates.CONFIRM:
                     default:
-                        if (null != n && n) return T.default.Messages.GIFT_CODE_AUTH_ACCEPT;
-                        if (null != t.giftStyle) return t.isClaimed ? T.default.Messages.GIFT_CONFIRMATION_BUTTON_CONFIRM : T.default.Messages.GIFT_CONFIRMATION_BUTTON_CONFIRM_MOBILE;
-                        return t.isSubscription ? T.default.Messages.GIFT_CONFIRMATION_BUTTON_CONFIRM_SUBSCRIPTION : T.default.Messages.GIFT_CONFIRMATION_BUTTON_CONFIRM
+                        if (null != n && n) return m.default.Messages.GIFT_CODE_AUTH_ACCEPT;
+                        if (null != t.giftStyle) return t.isClaimed ? m.default.Messages.GIFT_CONFIRMATION_BUTTON_CONFIRM : m.default.Messages.GIFT_CONFIRMATION_BUTTON_CONFIRM_MOBILE;
+                        return t.isSubscription ? m.default.Messages.GIFT_CONFIRMATION_BUTTON_CONFIRM_SUBSCRIPTION : m.default.Messages.GIFT_CONFIRMATION_BUTTON_CONFIRM
                 }
             }
 
-            function Y(e) {
+            function X(e) {
                 let {
                     step: t,
                     sku: n,
@@ -30467,96 +30521,96 @@
                     subscriptionPlan: o = null
                 } = e;
                 switch (t) {
-                    case f.GiftCodeModalStates.ERROR:
-                        return K(i, a, l, s, r);
-                    case f.GiftCodeModalStates.SUCCESS:
+                    case C.GiftCodeModalStates.ERROR:
+                        return Z(i, a, l, s, r);
+                    case C.GiftCodeModalStates.SUCCESS:
                         if (null != o) {
                             if (null != o.premiumSubscriptionType) {
-                                if (o.premiumSubscriptionType === p.PremiumTypes.TIER_2) {
-                                    let e = o.interval === p.SubscriptionIntervalTypes.MONTH ? T.default.Messages.GIFT_CONFIRMATION_BODY_SUCCESS_PREMIUM_TIER_2_MONTHLY : T.default.Messages.GIFT_CONFIRMATION_BODY_SUCCESS_PREMIUM_TIER_2_YEARLY;
+                                if (o.premiumSubscriptionType === S.PremiumTypes.TIER_2) {
+                                    let e = o.interval === S.SubscriptionIntervalTypes.MONTH ? m.default.Messages.GIFT_CONFIRMATION_BODY_SUCCESS_PREMIUM_TIER_2_MONTHLY : m.default.Messages.GIFT_CONFIRMATION_BODY_SUCCESS_PREMIUM_TIER_2_YEARLY;
                                     return e.format({
                                         intervalCount: o.intervalCount
                                     })
                                 }
-                                let e = o.interval === p.SubscriptionIntervalTypes.MONTH ? T.default.Messages.GIFT_CONFIRMATION_BODY_SUCCESS_PREMIUM_TIER_1_MONTHLY : T.default.Messages.GIFT_CONFIRMATION_BODY_SUCCESS_PREMIUM_TIER_1_YEARLY;
+                                let e = o.interval === S.SubscriptionIntervalTypes.MONTH ? m.default.Messages.GIFT_CONFIRMATION_BODY_SUCCESS_PREMIUM_TIER_1_MONTHLY : m.default.Messages.GIFT_CONFIRMATION_BODY_SUCCESS_PREMIUM_TIER_1_YEARLY;
                                 return e.format({
                                     intervalCount: o.intervalCount
                                 })
                             }
-                            let e = o.interval === p.SubscriptionIntervalTypes.MONTH ? T.default.Messages.GIFT_CONFIRMATION_BODY_SUCCESS_GENERIC_SUBSCRIPTION_MONTHLY : T.default.Messages.GIFT_CONFIRMATION_BODY_SUCCESS_GENERIC_SUBSCRIPTION_YEARLY;
+                            let e = o.interval === S.SubscriptionIntervalTypes.MONTH ? m.default.Messages.GIFT_CONFIRMATION_BODY_SUCCESS_GENERIC_SUBSCRIPTION_MONTHLY : m.default.Messages.GIFT_CONFIRMATION_BODY_SUCCESS_GENERIC_SUBSCRIPTION_YEARLY;
                             return e.format({
                                 skuName: n.name,
                                 intervalCount: o.intervalCount
                             })
                         }
-                        return T.default.Messages.GIFT_CONFIRMATION_BODY_SUCCESS.format({
+                        return m.default.Messages.GIFT_CONFIRMATION_BODY_SUCCESS.format({
                             skuName: n.name
                         });
-                    case f.GiftCodeModalStates.CONFIRM:
+                    case C.GiftCodeModalStates.CONFIRM:
                     default:
                         if (null != o) {
-                            let e = o.interval === p.SubscriptionIntervalTypes.MONTH ? T.default.Messages.GIFT_CONFIRMATION_BODY_SUBSCRIPTION_MONTHLY_CONFIRM : T.default.Messages.GIFT_CONFIRMATION_BODY_SUBSCRIPTION_YEARLY_CONFIRM;
+                            let e = o.interval === S.SubscriptionIntervalTypes.MONTH ? m.default.Messages.GIFT_CONFIRMATION_BODY_SUBSCRIPTION_MONTHLY_CONFIRM : m.default.Messages.GIFT_CONFIRMATION_BODY_SUBSCRIPTION_YEARLY_CONFIRM;
                             return e.format({
                                 skuName: n.name,
                                 intervalCount: o.intervalCount
                             })
                         }
-                        return T.default.Messages.GIFT_CONFIRMATION_BODY_CONFIRM.format({
+                        return m.default.Messages.GIFT_CONFIRMATION_BODY_CONFIRM.format({
                             skuName: n.name
                         })
                 }
             }
 
-            function K(e, t, n, i, a) {
-                let l = T.default.Messages.GIFT_CONFIRMATION_BODY_OWNED.format({
+            function Z(e, t, n, i, a) {
+                let l = m.default.Messages.GIFT_CONFIRMATION_BODY_OWNED.format({
                     onGoToLibrary: a
                 });
                 if (null != (n || i ? void 0 : e)) return l;
                 if (null == t) return null;
                 switch (t.code) {
-                    case f.AbortCodes.INVALID_GIFT_SELF_REDEMPTION:
-                        return T.default.Messages.GIFT_CONFIRMATION_BODY_SELF_GIFT_NO_PAYMENT;
-                    case f.AbortCodes.INVALID_GIFT_REDEMPTION_EXHAUSTED:
-                        return T.default.Messages.GIFT_CONFIRMATION_BODY_CLAIMED;
-                    case f.AbortCodes.INVALID_GIFT_REDEMPTION_OWNED:
+                    case C.AbortCodes.INVALID_GIFT_SELF_REDEMPTION:
+                        return m.default.Messages.GIFT_CONFIRMATION_BODY_SELF_GIFT_NO_PAYMENT;
+                    case C.AbortCodes.INVALID_GIFT_REDEMPTION_EXHAUSTED:
+                        return m.default.Messages.GIFT_CONFIRMATION_BODY_CLAIMED;
+                    case C.AbortCodes.INVALID_GIFT_REDEMPTION_OWNED:
                         return l;
-                    case f.AbortCodes.UNKNOWN_GIFT_CODE:
-                        return T.default.Messages.GIFT_CONFIRMATION_BODY_INVALID;
-                    case f.AbortCodes.INVALID_GIFT_REDEMPTION_SUBSCRIPTION_INCOMPATIBLE:
-                        let s = o.default.getCurrentUser();
-                        return T.default.Messages.GIFT_EMBED_BODY_SUBSCRIPTION_MISMATCH.format({
-                            planName: (0, _.isPremiumExactly)(s, p.PremiumTypes.TIER_2) ? T.default.Messages.PREMIUM_TIER_2 : T.default.Messages.PREMIUM_TIER_1
+                    case C.AbortCodes.UNKNOWN_GIFT_CODE:
+                        return m.default.Messages.GIFT_CONFIRMATION_BODY_INVALID;
+                    case C.AbortCodes.INVALID_GIFT_REDEMPTION_SUBSCRIPTION_INCOMPATIBLE:
+                        let s = c.default.getCurrentUser();
+                        return m.default.Messages.GIFT_EMBED_BODY_SUBSCRIPTION_MISMATCH.format({
+                            planName: (0, f.isPremiumExactly)(s, S.PremiumTypes.TIER_2) ? m.default.Messages.PREMIUM_TIER_2 : m.default.Messages.PREMIUM_TIER_1
                         });
-                    case f.AbortCodes.INVALID_GIFT_REDEMPTION_SUBSCRIPTION_MANAGED:
-                        return T.default.Messages.GIFT_CONFIRMATION_BODY_ERROR_SUBSCRIPTION_MANAGED;
-                    case f.AbortCodes.INVALID_GIFT_REDEMPTION_INVOICE_OPEN:
-                        return T.default.Messages.GIFT_CONFIRMATION_BODY_ERROR_INVOICE_OPEN;
-                    case f.AbortCodes.INVALID_GIFT_REDEMPTION_FRAUD_REJECTED:
-                        return T.default.Messages.GIFT_CODE_SMITE_REJECT_HELP_TEXT;
-                    case f.AbortCodes.BILLING_NON_REFUNDABLE_PAYMENT_SOURCE:
-                        return T.default.Messages.GIFT_CODE_PAYMENT_SOURCE_INVALID;
+                    case C.AbortCodes.INVALID_GIFT_REDEMPTION_SUBSCRIPTION_MANAGED:
+                        return m.default.Messages.GIFT_CONFIRMATION_BODY_ERROR_SUBSCRIPTION_MANAGED;
+                    case C.AbortCodes.INVALID_GIFT_REDEMPTION_INVOICE_OPEN:
+                        return m.default.Messages.GIFT_CONFIRMATION_BODY_ERROR_INVOICE_OPEN;
+                    case C.AbortCodes.INVALID_GIFT_REDEMPTION_FRAUD_REJECTED:
+                        return m.default.Messages.GIFT_CODE_SMITE_REJECT_HELP_TEXT;
+                    case C.AbortCodes.BILLING_NON_REFUNDABLE_PAYMENT_SOURCE:
+                        return m.default.Messages.GIFT_CODE_PAYMENT_SOURCE_INVALID;
                     default:
-                        return T.default.Messages.GIFT_CONFIRMATION_BODY_UNKNOWN_ERROR
+                        return m.default.Messages.GIFT_CONFIRMATION_BODY_UNKNOWN_ERROR
                 }
             }
 
-            function W(e, t, n) {
+            function J(e, t, n) {
                 let i = t.applicationId,
                     a = null != e.entitlementBranches && e.entitlementBranches.length > 0 ? e.entitlementBranches : [i],
-                    l = a.map(e => n.getLibraryApplication(i, e, !0)).filter(d.isNotNullish);
+                    l = a.map(e => n.getLibraryApplication(i, e, !0)).filter(E.isNotNullish);
                 return l.length === a.length ? l[0] : null
             }
 
-            function j(e) {
+            function $(e) {
                 let t = e.trim().split("/").pop(),
-                    n = t.match(L);
+                    n = t.match(P);
                 if (null == n) return null;
                 let [i, a, l] = n;
                 return null == l ? null : l.replace(/-/g, "")
             }
-            let z = (e, t) => (0, i.useStateFromStores)([r.default], () => {
+            let ee = (e, t) => (0, l.useStateFromStores)([d.default], () => {
                 if (null == e || !t) return null;
-                let n = r.default.getGiftCode(e);
+                let n = d.default.getGiftCode(e);
                 return null == n || "" === n ? null : n
             })
         },
@@ -32937,4 +32991,4 @@
         }
     }
 ]);
-//# sourceMappingURL=80a36704af1a6536384e.js.map
+//# sourceMappingURL=6d3776f2884209637e0d.js.map
