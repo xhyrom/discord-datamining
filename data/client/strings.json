@@ -12919,6 +12919,7 @@
   "HIGHLIGHTS_LEARN_MORE": "\"Learn more about Highlights\"",
   "HIGHLIGHTS_SERVER_TOO_LARGE": "\"Due to the server's size, you may not receive highlights.\"",
   "HIGHLIGHTS_NOTE_SUBTEXT": "\"Highlights are occasional notifications about popular messages, friend activity, and more.\"",
+  "GUILD_HIGHLIGHTS_NOTIFICATIONS_CATEGORY": "\"Highlights\"",
   "NOTIFICATION_BODY_DISCORD_HIDDEN": "\"Discord is still running, click to change settings\"",
   "CHAT_DISABLED_CHANNEL_LIST": "\"Done reading? Check out other channels.\"",
   "CHAT_DISABLED_CHANNEL_LINK": "\"Done reading? Check out #{channelName}.\"",
