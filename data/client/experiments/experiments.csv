@@ -338,6 +338,7 @@ id,hash,label
 2023-10_clyde_ai_proactive_guilds_v2,3196467544,Proactive Clyde V2
 2023-10_collectibles_falloween,1138748479,Collectibles Shop Falloween Content Drop
 2023-10_collectibles_shop_for_all,640079350,Collectibles Shop For All
+2023-10_custom_gift_soundboard_emoji,308592502,Custom Gift - Soundboard and Emoji Experiment
 2023-10_dcf_holdout,2009146437,DCF Holdout
 2023-10_emoji_captions,3610590624,Emoji Captions Experiment
 2023-10_enable_stateful_animated_icons,3353189507,Stateful animated icons
@@ -362,4 +363,5 @@ id,hash,label
 2023-10_viewer_clipping,3351049965,Test viewer side clipping
 2023-10_wgc_stale_frame_timeout,4008174795,Windows Graphics Capture Stale Frame Timeout
 2023-11_clyde_ai_aa,1485389700,ClydeAI
+2023-11_expanded_gifting_revamp_experiment,2053162821,Expanded Gifting Revamp Experiment
 2023-11_no_manage_subscriptions_section,4037560221,No Manage Subscriptions Section

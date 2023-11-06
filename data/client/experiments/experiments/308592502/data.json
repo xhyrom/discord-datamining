@@ -1,0 +1,21 @@
+{
+  "data": {
+    "kind": "user",
+    "id": "2023-10_custom_gift_soundboard_emoji",
+    "label": "Custom Gift - Soundboard and Emoji Experiment",
+    "description": [
+      "Not Eligible",
+      "Control Bucket",
+      "Treatment 1: Show gift purchaser custom gift flow with soundboard and emoji features"
+    ],
+    "hash": 308592502,
+    "buckets": [
+      -1,
+      0,
+      1
+    ],
+    "config_keys": [
+      "enabled"
+    ]
+  }
+}

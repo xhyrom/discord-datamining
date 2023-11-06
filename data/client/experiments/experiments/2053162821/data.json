@@ -1,14 +1,14 @@
 {
   "data": {
     "kind": "user",
-    "id": "2023-08_custom_gift",
-    "label": "Custom Gift Experiment",
+    "id": "2023-11_expanded_gifting_revamp_experiment",
+    "label": "Expanded Gifting Revamp Experiment",
     "description": [
       "Not Eligible",
       "Control Bucket",
-      "Treatment 1: Show gift purchaser custom gift flow"
+      "Treatment 1: Show expanded gifting revamp experience"
     ],
-    "hash": 1100309809,
+    "hash": 2053162821,
     "buckets": [
       -1,
       0,
