@@ -10526,22 +10526,23 @@
             "use strict";
             n.r(t), n.d(t, {
                 default: function() {
-                    return f
+                    return p
                 }
             }), n("702976");
             var i = n("201876"),
                 a = n("56947"),
                 l = n("386045"),
                 s = n("584687"),
-                r = n("845579"),
-                o = n("373469"),
-                u = n("42203"),
-                d = n("42887"),
-                c = n("590401"),
-                _ = n("568307"),
-                E = n("568734"),
-                h = n("49111");
-            class f extends i.default {
+                r = n("103979"),
+                o = n("845579"),
+                u = n("373469"),
+                d = n("42203"),
+                c = n("42887"),
+                _ = n("590401"),
+                E = n("568307"),
+                h = n("568734"),
+                f = n("49111");
+            class p extends i.default {
                 get guildId() {
                     return this.getState().guildId
                 }
@@ -10551,24 +10552,32 @@
                 computeVoiceFlags() {
                     var e, t, n;
                     let i = 0,
-                        u = r.ClipsAllowVoiceRecording.getSetting();
-                    i = (0, E.setFlag)(i, h.VoiceFlags.ALLOW_VOICE_RECORDING, u);
-                    let d = l.default.getSettings().clipsEnabled && (0, a.areClipsEnabled)() && ((null === (e = o.default.getCurrentUserActiveStream()) || void 0 === e ? void 0 : e.state) === h.ApplicationStreamStates.ACTIVE || (null === (t = o.default.getCurrentUserActiveStream()) || void 0 === t ? void 0 : t.state) === h.ApplicationStreamStates.PAUSED),
+                        d = o.ClipsAllowVoiceRecording.getSetting();
+                    i = (0, h.setFlag)(i, f.VoiceFlags.ALLOW_VOICE_RECORDING, d);
+                    let c = l.default.getSettings().clipsEnabled && (0, a.areClipsEnabled)() && ((null === (e = u.default.getCurrentUserActiveStream()) || void 0 === e ? void 0 : e.state) === f.ApplicationStreamStates.ACTIVE || (null === (t = u.default.getCurrentUserActiveStream()) || void 0 === t ? void 0 : t.state) === f.ApplicationStreamStates.PAUSED),
                         {
-                            enableDecoupledGameClipping: c
+                            enableDecoupledGameClipping: _
                         } = s.default.getCurrentConfig({
                             location: "computeVoiceFlags"
                         }),
-                        f = l.default.getSettings().decoupledClipsEnabled && (null === (n = _.default.getVisibleGame()) || void 0 === n ? void 0 : n.windowHandle) != null && c;
-                    return i = (0, E.setFlag)(i, h.VoiceFlags.CLIPS_ENABLED, d || f)
+                        {
+                            enableViewerClipping: p
+                        } = r.default.getCurrentConfig({
+                            location: "computeVoiceFlags"
+                        }, {
+                            autoTrackExposure: !1
+                        });
+                    p && (i = (0, h.setFlag)(i, f.VoiceFlags.ALLOW_ANY_VIEWER_CLIPS, l.default.getSettings().viewerClipsEnabled));
+                    let T = l.default.getSettings().decoupledClipsEnabled && (null === (n = E.default.getVisibleGame()) || void 0 === n ? void 0 : n.windowHandle) != null && _;
+                    return i = (0, h.setFlag)(i, f.VoiceFlags.CLIPS_ENABLED, c || T)
                 }
                 getInitialState() {
                     return {
                         guildId: null,
                         channelId: null,
-                        selfMute: d.default.isSelfMute(),
-                        selfDeaf: d.default.isSelfDeaf(),
-                        selfVideo: d.default.isVideoEnabled(),
+                        selfMute: c.default.isSelfMute(),
+                        selfDeaf: c.default.isSelfDeaf(),
+                        selfVideo: c.default.isVideoEnabled(),
                         preferredRegion: null,
                         videoStreamParameters: null,
                         flags: 0
@@ -10582,11 +10591,11 @@
                     return {
                         guildId: t,
                         channelId: n,
-                        selfMute: d.default.isSelfMute(),
-                        selfDeaf: d.default.isSelfDeaf(),
-                        selfVideo: d.default.isVideoEnabled(),
-                        preferredRegion: c.default.getPreferredRegion(),
-                        videoStreamParameters: d.default.getVideoStreamParameters(),
+                        selfMute: c.default.isSelfMute(),
+                        selfDeaf: c.default.isSelfDeaf(),
+                        selfVideo: c.default.isVideoEnabled(),
+                        preferredRegion: _.default.getPreferredRegion(),
+                        videoStreamParameters: c.default.getVideoStreamParameters(),
                         flags: this.computeVoiceFlags()
                     }
                 }
@@ -10603,9 +10612,9 @@
                         selfVideo: s,
                         preferredRegion: r,
                         videoStreamParameters: o,
-                        flags: d = 0
+                        flags: u = 0
                     } = e;
-                    s && (null === (t = u.default.getChannel(i)) || void 0 === t ? void 0 : t.type) === h.ChannelTypes.GUILD_STAGE_VOICE ? this.socket.voiceStateUpdate({
+                    s && (null === (t = d.default.getChannel(i)) || void 0 === t ? void 0 : t.type) === f.ChannelTypes.GUILD_STAGE_VOICE ? this.socket.voiceStateUpdate({
                         guildId: n,
                         channelId: i,
                         selfMute: a,
@@ -10613,7 +10622,7 @@
                         selfVideo: s,
                         preferredRegion: r,
                         videoStreamParameters: o,
-                        flags: d
+                        flags: u
                     }) : this.socket.voiceStateUpdate({
                         guildId: n,
                         channelId: i,
@@ -10621,7 +10630,7 @@
                         selfDeaf: l,
                         selfVideo: s,
                         preferredRegion: r,
-                        flags: d
+                        flags: u
                     })
                 }
                 constructor(e) {
@@ -32991,4 +33000,4 @@
         }
     }
 ]);
-//# sourceMappingURL=6d3776f2884209637e0d.js.map
+//# sourceMappingURL=b550570a32db8b11d9e2.js.map

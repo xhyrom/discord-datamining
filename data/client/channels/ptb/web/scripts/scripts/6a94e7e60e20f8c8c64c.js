@@ -21266,6 +21266,10 @@
                     var t, n;
                     return null !== (n = null === (t = T[e]) || void 0 === t ? void 0 : t.allowVoiceRecording) && void 0 !== n && n
                 }
+                isViewerClippingAllowedForUser(e) {
+                    var t, n;
+                    return null !== (n = null === (t = T[e]) || void 0 === t ? void 0 : t.allowAnyViewerClips) && void 0 !== n && n
+                }
                 hasClips() {
                     return I.hasClips
                 }
@@ -21408,7 +21412,8 @@
                 RTC_CONNECTION_FLAGS: function(e) {
                     T[e.userId] = {
                         clipsEnabled: (0, u.hasFlag)(e.flags, E.VoiceFlags.CLIPS_ENABLED),
-                        allowVoiceRecording: (0, u.hasFlag)(e.flags, E.VoiceFlags.ALLOW_VOICE_RECORDING)
+                        allowVoiceRecording: (0, u.hasFlag)(e.flags, E.VoiceFlags.ALLOW_VOICE_RECORDING),
+                        allowAnyViewerClips: (0, u.hasFlag)(e.flags, E.VoiceFlags.ALLOW_ANY_VIEWER_CLIPS)
                     }
                 },
                 CLIPS_SHOW_CALL_WARNING: function(e) {
@@ -28553,22 +28558,13 @@
                 id: "2023-10_viewer_clipping",
                 label: "Test viewer side clipping",
                 defaultConfig: {
-                    enableSideEncoderViewerClipping: !1,
-                    enableEndEncoderViewerClipping: !1
+                    enableViewerClipping: !1
                 },
                 treatments: [{
                     id: 1,
-                    label: "Viewer Clipping with side encoder",
+                    label: "Viewer Clipping enabled",
                     config: {
-                        enableSideEncoderViewerClipping: !0,
-                        enableEndEncoderViewerClipping: !1
-                    }
-                }, {
-                    id: 2,
-                    label: "Viewer Clipping with enc encoder",
-                    config: {
-                        enableSideEncoderViewerClipping: !1,
-                        enableEndEncoderViewerClipping: !0
+                        enableViewerClipping: !0
                     }
                 }]
             })
@@ -37522,14 +37518,13 @@
                         });
                         if (l && eT.setHasFullbandPerformance((0, N.hasPerformanceForKrispFullband)()), v.default.getSettings().clipsEnabled) {
                             let {
-                                enableSideEncoderViewerClipping: t,
-                                enableEndEncoderViewerClipping: n
+                                enableViewerClipping: t
                             } = F.default.getCurrentConfig({
                                 location: "f627ab_15"
                             }, {
                                 autoTrackExposure: !1
                             });
-                            t ? e.setExperimentFlag(eE.ExperimentFlags.VIEWER_CLIP_WITH_SIDE_ENCODER, !0) : n && e.setExperimentFlag(eE.ExperimentFlags.VIEWER_CLIP_WITH_END_ENCODER, !0)
+                            t && e.setExperimentFlag(eE.ExperimentFlags.VIEWER_CLIP_WITH_END_ENCODER, !0)
                         }
                         for (let t of (n = eJ(e.context), e.setPostponeDecodeLevel(100), Object.keys(n.localMutes))) t !== J.default.getId() && e.setLocalMute(t, n.localMutes[t]);
                         for (let t of Object.keys(n.localVolumes)) t !== J.default.getId() && e.setLocalVolume(t, n.localVolumes[t]);
@@ -39228,6 +39223,8 @@
                             type: "RTC_CONNECTION_FLAGS",
                             flags: t,
                             userId: e,
+                            guildId: u.guildId,
+                            channelId: u.channelId,
                             context: u.context
                         })
                     })
@@ -49030,7 +49027,7 @@
                         var i;
                         let d = {
                                 environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                                build_number: "243897"
+                                build_number: "243904"
                             },
                             E = l.default.getCurrentUser();
                         null != E && (d.user_id = E.id, d.user_name = E.tag, null != E.email && (d.email = E.email));
@@ -62296,4 +62293,4 @@
         }
     }
 ]);
-//# sourceMappingURL=afbcb0edb56dbdead7fd.js.map
+//# sourceMappingURL=6a94e7e60e20f8c8c64c.js.map
