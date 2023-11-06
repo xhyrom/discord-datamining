@@ -12493,19 +12493,16 @@
       "description": [
         "Not Eligible",
         "Control Bucket",
-        "Treatment 1: Viewer Clipping with side encoder",
-        "Treatment 2: Viewer Clipping with enc encoder"
+        "Treatment 1: Viewer Clipping enabled"
       ],
       "hash": 3351049965,
       "buckets": [
         -1,
         0,
-        1,
-        2
+        1
       ],
       "config_keys": [
-        "enableSideEncoderViewerClipping",
-        "enableEndEncoderViewerClipping"
+        "enableViewerClipping"
       ]
     }
   },
