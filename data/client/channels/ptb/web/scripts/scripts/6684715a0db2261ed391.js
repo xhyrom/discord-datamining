@@ -23968,6 +23968,9 @@
                 getEmojiCaptionsTTL() {
                     return f
                 }
+                hasPersistedState() {
+                    return t.captionsById.size > 0
+                }
                 clear() {
                     t = o, a = !1, f = null
                 }
@@ -25154,4 +25157,4 @@
         }
     }
 ]);
-//# sourceMappingURL=95ac6f9da37d13abe215.js.map
+//# sourceMappingURL=6684715a0db2261ed391.js.map
