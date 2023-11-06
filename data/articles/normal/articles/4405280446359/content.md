@@ -3,7 +3,7 @@
 <p><span class="wysiwyg-font-size-large wysiwyg-color-blue90"><strong>What this article covers:</strong></span></p>
 <p><span style="font-weight: 400;"><span class="wysiwyg-color-orange110"><strong>Offer Details:</strong></span> <span id="docs-internal-guid-4ebf78e8-7fff-2849-2e50-4b4e2f4581e2">3 months of Discord Nitro for YouTube Premium subscribers</span><br></span></p>
 <p><span style="font-weight: 400;"><span class="wysiwyg-color-orange110"><strong>Who is Eligible:</strong></span> </span></p>
-<p><span style="font-weight: 400;"><span class="wysiwyg-color-red"><strong>To claim through YouTube Premium, </strong></span></span><span id="docs-internal-guid-b55cee41-7fff-e78d-b74e-df0f57033420">you must be a current YouTube Premium subscriber in the United States. </span></p>
+<p><span style="font-weight: 400;"><span class="wysiwyg-color-red"><strong>To claim through YouTube Premium, </strong></span></span><span id="docs-internal-guid-b55cee41-7fff-e78d-b74e-df0f57033420">you must be a current YouTube Premium subscriber in the United States and South Korea. </span></p>
 <ul>
     <li><span id="docs-internal-guid-9fc41b47-7fff-3c5e-a0d9-9a6ff44af0ee">If you currently have a YouTube Premium trial subscription, you will not be eligible to claim this promotion.</span></li>
 </ul>
@@ -187,7 +187,7 @@
 <p>If a code has not been redeemed to the Discord account by <span style="font-weight: 400;"><strong><span id="docs-internal-guid-81e72060-7fff-90a1-b57d-64fe953088d1">April 30, 2024</span> (11:59pm PT)</strong></span>, it will expire and you will no longer be able to claim three months of Discord Nitro.</p>
 <h2 id="h_01FCZMZH0A73Y0S83JS09J1R0H"><span style="font-weight: 400;">Eligibility for the Promotion </span></h2>
 <p><span class="wysiwyg-color-blue80 wysiwyg-font-size-large"><strong>Q: Who can claim this promotion from their YouTube Premium Member Hub?<br></strong></span></p>
-<p><span style="font-weight: 400;"><strong>A: </strong></span><span id="docs-internal-guid-b4df2ab6-7fff-dc4a-225c-6836fd986be6">In order to receive this offer from YouTube, you must be a current</span><strong> YouTube Premium subscriber in the United States.</strong></p>
+<p><span style="font-weight: 400;"><strong>A: </strong></span><span id="docs-internal-guid-b4df2ab6-7fff-dc4a-225c-6836fd986be6">In order to receive this offer from YouTube, you must be a current</span><strong> YouTube Premium subscriber in the United States and South Korea.</strong></p>
 <ul>
     <li><span style="font-weight: 400;"><strong>Note:</strong> <span id="docs-internal-guid-9fc41b47-7fff-3c5e-a0d9-9a6ff44af0ee">If you currently have a YouTube Premium trial subscription, you will not be eligible to claim this promotion.</span><br></span></li>
 </ul>
@@ -215,7 +215,7 @@
 <p>If your Discord transaction history does not show the hold released after 5 business days, please let us know at <a href="https://dis.gd/contact" target="_blank" rel="noopener noreferrer">https://dis.gd/contact</a>, and our support team will be able to investigate this issue further.</p>
 <h2 id="h_01FCZMZX80MVAKFFS5AM4SYJC2">Potential Errors and Other Issues</h2>
 <p><strong><span class="wysiwyg-color-blue80 wysiwyg-font-size-large">Q: What if I can’t find the Nitro promo in my YouTube Premium account, even if I'm a YouTube Premium subscriber?<br></span></strong></p>
-<p><strong>A:</strong>In order to receive this Nitro offer from YouTube, you must be a current YouTube Premium subscriber in the United States. </p>
+<p><strong>A:</strong>In order to receive this Nitro offer from YouTube, you must be a current YouTube Premium subscriber in the United States and South Korea. </p>
 <p>If you aren’t sure how to find offers in your YouTube Premium account, follow the steps in the following link: <a href="https://support.google.com/youtube/answer/13365794" target="_blank" rel="noopener noreferrer">https://support.google.com/youtube/answer/13365794</a>. If you still can’t find it,contact YouTube's support team through their Twitter page at<a href="https://twitter.com/TeamYouTube" target="_blank" rel="noopener noreferrer">https://twitter.com/TeamYouTube</a> or at the bottom of this help article: <a href="https://support.google.com/youtube/answer/13365794" target="_blank" rel="noopener noreferrer">https://support.google.com/youtube/answer/13365794</a></p>
 <p><strong><span class="wysiwyg-color-blue80 wysiwyg-font-size-large">Q: I see a Sad Trombone error when I try to redeem my Nitro promo link!</span></strong></p>
 <p><strong>A: </strong><span style="font-weight: 400;">Would you happen to be entering this Nitro promo link from the YouTube premium promotion into the Discord Gift Inventory or as a link within Discord chat? </span></p>
