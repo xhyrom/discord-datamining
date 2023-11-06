@@ -46,8 +46,8 @@
 <p class="wysiwyg-text-align-center"><img src="https://support.discord.com/hc/article_attachments/12931076069655" alt="image10.png"></p>
 <p>5. If there’s a sound you really like, you can also press on the <strong>Star icon</strong> to favorite a sound or to preview a sound and only play it for yourself.</p>
 <h2 id="h_01H93M0X2JH7F0M2VBG87VN3HH">Mobile</h2>
-<h3 id="h_01HEK2Y9GHCE6BW1ZT6CRQY0KW">
-    <span style="color: #434343;">If you currently have the </span><a href="https://support.discord.com/hc/en-us/articles/12654190110999" target="_blank" rel="noopener noreferrer">New Mobile App Layout</a><span style="color: #434343;">, Soundboard may look a little different for you on your mobile device.</span>
+<h3 id="h_01HEK3NJK5AACF9745AR7DD5HX">
+    <span style="color: #434343;" data-darkreader-inline-color="">If you currently have the </span><a href="https://support.discord.com/hc/en-us/articles/12654190110999"><span class="wysiwyg-underline" style="color: #1155cc;" data-darkreader-inline-color="">New Mobile App Layout</span></a><span style="color: #434343;" data-darkreader-inline-color="">, Soundboard may look a little different for you on your mobile device.</span>
 </h3>
 <p><strong>Option 1</strong></p>
 <p>1. Navigate to a server and join your intended voice channel.</p>
@@ -55,7 +55,7 @@
 <p>3. Here you will see a list of available servers and sounds that you can use. Tap on any sound that you’d like to play.</p>
 <p><strong>Option 2 : New Mobile App Layout</strong></p>
 <p>1. Navigate to a server and join your intended voice channel.</p>
-<p>2. While in the voice channel, swipe from the bottom up to pull up the mobile menu and then tap on the <strong>Activities </strong>button.</p>
+<p>2. While in the voice channel, tap on the Rocket icon at the bottom of the screen that will launch the <strong>Activities</strong>. From there, tap the <strong>Soundboard</strong> option at the top of the menu.</p>
 <p>3. Next, tap on <strong>Soundboard</strong> and then here you will see a list of available servers and sounds that you can use. Tap on any sound that you’d like to play.</p>
 <h2 id="h_01GTYZSNM9T3V440WDB2SVEVDX">How can I upload new sounds to the server’s Soundboard?</h2>
 <p>To upload new sounds press on the <strong>Add Sound</strong> button with the Soundboard panel open.</p>
