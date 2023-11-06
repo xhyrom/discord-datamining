@@ -15812,6 +15812,8 @@
                 CLIPS_UNTITLED: "Untitled",
                 CLIPS_SETTINGS_OPT_OUT_OF_VOICE_RECORDING: "Allow my voice to be recorded in Clips",
                 CLIPS_SETTINGS_OPT_OUT_OF_VOICE_RECORDING_DESCRIPTION: "By turning on this setting, your voice may be included when someone in the same voice channel uses Clips.",
+                CLIPS_SETTINGS_VIEWERSIDE_CLIPS_TOGGLE: "Allow viewers to capture clips",
+                CLIPS_SETTINGS_VIEWERSIDE_CLIPS_TOGGLE_DESCRIPTION: "If this is on, viewers can take clips of your stream.",
                 SOUND_INCOMING_RING_HALLOWEEN: "Halloween Incoming Ring",
                 CUSTOM_SOUNDS: "Custom Sounds",
                 ENABLE_PHONE_INTEGRATION: "Enable integration with the Phone app to experience this.",
@@ -18070,7 +18072,7 @@
                 u = E("782340");
             (0, i.setUpdateRules)(s.default), (0, r.default)(u.default, n.default, T.default), a.default.Emitter.injectBatchEmitChanges(o.unstable_batchedUpdates), a.default.PersistedStore.disableWrites = __OVERLAY__, a.default.initialize();
             let L = window.GLOBAL_ENV.RELEASE_CHANNEL;
-            new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(L, ", Build Number: ").concat("243897", ", Version Hash: ").concat("61db70378e26b8355ed46c9357fa6c207794579c")), t.default.setTags({
+            new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(L, ", Build Number: ").concat("243904", ", Version Hash: ").concat("351fcbcd886ad96628149988808fe2edaf7f9cc3")), t.default.setTags({
                 appContext: l.CURRENT_APP_CONTEXT
             }), S.default.initBasic(), N.default.init(), I.FocusRingManager.init(), O.init(), (0, R.cleanupTempFiles)()
         },
@@ -20454,8 +20456,8 @@
 
             function o() {
                 var e;
-                let _ = parseInt((e = "243897", "243897"));
-                return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("243897")), _ = 0), _
+                let _ = parseInt((e = "243904", "243904"));
+                return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("243904")), _ = 0), _
             }
         },
         990629: function(e, _, E) {
@@ -20848,9 +20850,20 @@
                 handleRTCConnectionFlags(e) {
                     let {
                         userId: _,
-                        context: E
+                        context: E,
+                        channelId: o,
+                        guildId: n
                     } = e;
-                    E === t.MediaEngineContextTypes.DEFAULT && (this.maybeShowClipsWarning(_), this.applySSRCRecording(_))
+                    if (E === t.MediaEngineContextTypes.DEFAULT) this.maybeShowClipsWarning(_), this.applySSRCRecording(_);
+                    else if (E === t.MediaEngineContextTypes.STREAM) {
+                        let e = T.default.getRTCConnection(a.encodeStreamKey({
+                            streamType: null != n ? C.StreamTypes.GUILD : C.StreamTypes.CALL,
+                            ownerId: _,
+                            channelId: o,
+                            guildId: n
+                        }));
+                        this.recordInboundStream(_, e)
+                    }
                 }
                 handleRTCUserSSRC(e) {
                     let {
@@ -20959,12 +20972,13 @@
                 recordInboundStream(e, _) {
                     if (!(0, l.default)() || e === I.default.getId()) return;
                     let {
-                        enableEndEncoderViewerClipping: E,
-                        enableSideEncoderViewerClipping: t
+                        enableViewerClipping: E
                     } = i.default.getCurrentConfig({
                         location: "ClipsManager:recordInboundStream"
                     });
-                    (E || t) && (this.applyNativeClipsSettings(), _.setClipRecordSSRC(e, "audio", "inbound", !0), _.setClipRecordSSRC(e, "video", "inbound", !0))
+                    if (!E) return;
+                    let t = A.default.isViewerClippingAllowedForUser(e);
+                    this.applyNativeClipsSettings(), _.setClipRecordSSRC(e, "audio", "inbound", t), _.setClipRecordSSRC(e, "video", "inbound", t)
                 }
                 constructor(...e) {
                     super(...e), this.actions = {
@@ -36157,4 +36171,4 @@
         }
     }
 ]);
-//# sourceMappingURL=7078269210473bab067d.js.map
+//# sourceMappingURL=69f0fba275037ba5e01f.js.map
