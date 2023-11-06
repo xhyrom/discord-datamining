@@ -1,4 +1,5 @@
 <p>Starting from <strong>October 31, 2023 (5PM PT)</strong> to <strong>December 29, 2023 (8PM PT)</strong> Party Animals users can claim 1 month of free Discord Nitro. Learn below about how you can claim<a href="https://support.discord.com/hc/en-us/articles/115000435108" target="_blank" rel="noopener noreferrer"> Discord Nitro</a>.</p>
+<h3 id="docs-internal-guid-b1438098-7fff-9b3f-1bed-b51911530d6c"><span style="color: #434343;">Note: Eligible users will be able to claim a Nitro trial while supplies last. </span></h3>
 <p class="wysiwyg-text-align-center"><img src="https://support.discord.com/hc/article_attachments/18709331210391" alt="party_animals_banner.png"></p>
 <p><strong>Promotion Summary</strong></p>
 <p><strong>Offer Details:</strong> 1 month of free Discord Nitro</p>

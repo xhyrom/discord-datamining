@@ -1,4 +1,5 @@
 <p id="docs-internal-guid-311e1665-7fff-3ece-e9fc-661f7da0011a">Starting from <strong>October 18th, 2023 (9am PST)</strong> to <strong>November 17th, 2023 (11:59pm PST)</strong>, MARVEL SNAP players can claim 1 month of free Discord Nitro. Learn below about how you can claim<a href="https://support.discord.com/hc/en-us/articles/115000435108" target="_blank" rel="noopener noreferrer"> Discord Nitro</a>.</p>
+<h3 id="docs-internal-guid-aa725556-7fff-2b6c-de9e-0b294a84e088"><span style="color: #434343;">Note: Eligible users will be able to claim a Nitro trial while supplies last. </span></h3>
 <p class="wysiwyg-text-align-center"><img src="https://support.discord.com/hc/article_attachments/18351057641111" alt="image3.jpg"></p>
 <p><strong>Promotion Summary</strong></p>
 <p><strong>Offer Details:</strong> 1 month of Discord Nitro</p>
