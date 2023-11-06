@@ -13752,6 +13752,7 @@
   "APPLICATION_MANAGE_SUBSCRIPTION_CARD_IN_GUILD": "\"in {guildName}\"",
   "APPLICATION_MANAGE_SUBSCRIPTION_CARD_PERSONAL_SUBSCRIPTION": "\"Personal subscription\"",
   "APPLICATION_MANAGE_SUBSCRIPTION_CARD_GUILD_NAME_UNAVAILABLE": "\"Server Name Unavailable\"",
+  "APPLICATION_MANAGE_SUBSCRIPTION_DELETED_WARNING": "\"This subscription has been discontinued by the app developer. You will not be charged next billing cycle\"",
   "APPLICATION_MANAGE_SUBSCRIPTION_INFO_SUBSCRIPTION_ENDED": "\"Subscription ended\"",
   "APPLICATION_MANAGE_SUBSCRIPTION_INFO_CURRENT_PERIOD_END_DATE": "\"{timestamp, date, short}\"",
   "APPLICATION_MANAGE_SUBSCRIPTION_INFO_SUBSCRIBED_SINCE_DATE": "\"{timestamp, date, short}\"",
