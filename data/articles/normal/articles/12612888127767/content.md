@@ -3,28 +3,28 @@
 <p><span class="wysiwyg-font-size-large"><strong>What this article covers: </strong></span></p>
 <ul>
     <li>
-        <a href="https://support.discord.com/hc/en-us/articles/12612888127767#h_01GTYZS5ZCTGQ92MBZAQX0QCW1">What is Soundboard?</a>
+        <a href="#h_01GTYZS5ZCTGQ92MBZAQX0QCW1">What is Soundboard?</a>
         <ul>
-            <li><a href="https://support.discord.com/hc/en-us/articles/12612888127767#docs-internal-guid-98910e3a-7fff-d156-b753-835d493e7571">Server Boost Soundboard</a></li>
+            <li><a href="#docs-internal-guid-98910e3a-7fff-d156-b753-835d493e7571">Server Boost Soundboard</a></li>
         </ul>
     </li>
     <li>
-        <a href="https://support.discord.com/hc/en-us/articles/12612888127767#h_01GTYZSGZ15S6B5RVD4W8EZWG9">How do I use Soundboard?</a>
+        <a href="#h_01GTYZSGZ15S6B5RVD4W8EZWG9">How do I use Soundboard?</a>
         <ul>
-            <li><a href="https://support.discord.com/hc/en-us/articles/12612888127767#h_01H93M0BWWG19PFPB0SNM7RQ7W">Desktop</a></li>
-            <li><a href="https://support.discord.com/hc/en-us/articles/12612888127767#h_01H93M0X2JH7F0M2VBG87VN3HH">Mobile</a></li>
-            <li><a href="https://support.discord.com/hc/en-us/articles/12612888127767#h_01GTYZSNM9T3V440WDB2SVEVDX">How can I upload new sounds to the server’s Soundboard?</a></li>
+            <li><a href="#h_01H93M0BWWG19PFPB0SNM7RQ7W">Desktop</a></li>
+            <li><a href="#h_01H93M0X2JH7F0M2VBG87VN3HH">Mobile</a></li>
+            <li><a href="#h_01GTYZSNM9T3V440WDB2SVEVDX">How can I upload new sounds to the server’s Soundboard?</a></li>
         </ul>
     </li>
     <li>
-        <a href="https://support.discord.com/hc/en-us/articles/12612888127767#h_01GTYZSTZQV1GXSRVX1A420WPX">As a Server Admin, how can I manage Soundboard?</a>
+        <a href="#h_01GTYZSTZQV1GXSRVX1A420WPX">As a Server Admin, how can I manage Soundboard?</a>
         <ul>
-            <li><a href="https://support.discord.com/hc/en-us/articles/12612888127767#docs-internal-guid-0a96be67-7fff-98dd-6c53-96e299527e36">How to give/remove Soundboard permissions</a></li>
-            <li><a href="https://support.discord.com/hc/en-us/articles/12612888127767#h_01GWJXHA3ABX5H4KCBGPRZCF69">How to manage sounds for Soundboard</a></li>
+            <li><a href="#docs-internal-guid-0a96be67-7fff-98dd-6c53-96e299527e36">How to give/remove Soundboard permissions</a></li>
+            <li><a href="#h_01GWJXHA3ABX5H4KCBGPRZCF69">How to manage sounds for Soundboard</a></li>
         </ul>
     </li>
-    <li><a href="https://support.discord.com/hc/en-us/articles/12612888127767#h_01H5JJ9XK68MMK1WXBFAQ0AQGR">Soundboard Entrance Sounds</a></li>
-    <li><a href="https://support.discord.com/hc/en-us/articles/12612888127767#h_01GTYZT0R7SHN43R0HEHGGTBGH">Frequently Asked Questions</a></li>
+    <li><a href="#h_01H5JJ9XK68MMK1WXBFAQ0AQGR">Soundboard Entrance Sounds</a></li>
+    <li><a href="#h_01GTYZT0R7SHN43R0HEHGGTBGH">Frequently Asked Questions</a></li>
 </ul>
 <h1 id="h_01GTYZS5ZCTGQ92MBZAQX0QCW1">What is Soundboard?</h1>
 <p class="wysiwyg-text-align-center"><img src="https://support.discord.com/hc/article_attachments/12931011736343" alt="soundboard_example.gif"></p>
@@ -46,9 +46,17 @@
 <p class="wysiwyg-text-align-center"><img src="https://support.discord.com/hc/article_attachments/12931076069655" alt="image10.png"></p>
 <p>5. If there’s a sound you really like, you can also press on the <strong>Star icon</strong> to favorite a sound or to preview a sound and only play it for yourself.</p>
 <h2 id="h_01H93M0X2JH7F0M2VBG87VN3HH">Mobile</h2>
+<h3 id="h_01HEK2Y9GHCE6BW1ZT6CRQY0KW">
+    <span style="color: #434343;">If you currently have the </span><a href="https://support.discord.com/hc/en-us/articles/12654190110999" target="_blank" rel="noopener noreferrer">New Mobile App Layout</a><span style="color: #434343;">, Soundboard may look a little different for you on your mobile device.</span>
+</h3>
+<p><strong>Option 1</strong></p>
 <p>1. Navigate to a server and join your intended voice channel.</p>
 <p>2. While in the voice channel, swipe from the bottom up to pull up the mobile menu and then tap on <strong>Soundboard</strong>.</p>
 <p>3. Here you will see a list of available servers and sounds that you can use. Tap on any sound that you’d like to play.</p>
+<p><strong>Option 2 : New Mobile App Layout</strong></p>
+<p>1. Navigate to a server and join your intended voice channel.</p>
+<p>2. While in the voice channel, swipe from the bottom up to pull up the mobile menu and then tap on the <strong>Activities </strong>button.</p>
+<p>3. Next, tap on <strong>Soundboard</strong> and then here you will see a list of available servers and sounds that you can use. Tap on any sound that you’d like to play.</p>
 <h2 id="h_01GTYZSNM9T3V440WDB2SVEVDX">How can I upload new sounds to the server’s Soundboard?</h2>
 <p>To upload new sounds press on the <strong>Add Sound</strong> button with the Soundboard panel open.</p>
 <p class="wysiwyg-text-align-center"><img src="https://support.discord.com/hc/article_attachments/12931070997527" alt="image3.png"></p>
@@ -86,6 +94,3 @@
 <p><strong>A.</strong> For Windows only, <strong>CTRL + `</strong> is the Soundboard keybind to easily use Soundboard from within the game overlay.</p>
 <p><strong>Q.</strong> Can any server’s Soundboard sounds be used in other servers?</p>
 <p><strong>A. </strong>In order to use Soundboard sounds across servers, you do need to have an active <a href="https://support.discord.com/hc/en-us/articles/115000435108" target="_blank" rel="noopener noreferrer">Nitro subscription</a>. You do not need Nitro in order to use the Soundboard within the server itself.</p>
-<div id="gtx-trans" style="position: absolute; left: 23px; top: 238.641px;">
-    <div class="gtx-trans-icon"> </div>
-</div>
