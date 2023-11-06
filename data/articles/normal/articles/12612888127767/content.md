@@ -51,12 +51,12 @@
 </h3>
 <p><strong>Option 1</strong></p>
 <p>1. Navigate to a server and join your intended voice channel.</p>
-<p>2. While in the voice channel, swipe from the bottom up to pull up the mobile menu and then tap on <strong>Soundboard</strong>.</p>
+<p>2. While in the voice channel, swipe from the bottom to top to pull up the mobile menu and then tap on <strong>Soundboard</strong>.</p>
 <p>3. Here you will see a list of available servers and sounds that you can use. Tap on any sound that you’d like to play.</p>
 <p><strong>Option 2 : New Mobile App Layout</strong></p>
 <p>1. Navigate to a server and join your intended voice channel.</p>
-<p>2. While in the voice channel, tap on the Rocket icon at the bottom of the screen that will launch the <strong>Activities</strong>. From there, tap the <strong>Soundboard</strong> option at the top of the menu.</p>
-<p>3. Next, tap on <strong>Soundboard</strong> and then here you will see a list of available servers and sounds that you can use. Tap on any sound that you’d like to play.</p>
+<p>2. While in the voice channel, tap on the rocket icon at the bottom of the screen to launch <strong>Activities</strong>. From there, tap the <strong>Soundboard</strong> option at the top of the menu.</p>
+<p>3. After tapping the <strong>Soundboard</strong> option, you will see a list of available servers and sounds that you can use. Tap on any sound that you’d like to play.</p>
 <h2 id="h_01GTYZSNM9T3V440WDB2SVEVDX">How can I upload new sounds to the server’s Soundboard?</h2>
 <p>To upload new sounds press on the <strong>Add Sound</strong> button with the Soundboard panel open.</p>
 <p class="wysiwyg-text-align-center"><img src="https://support.discord.com/hc/article_attachments/12931070997527" alt="image3.png"></p>
