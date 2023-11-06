@@ -4193,6 +4193,7 @@
                 LIMITED_ACCESS_NAG_BAR_APPEAL: "Regain access here",
                 LIMITED_ACCESS_INFO_MODAL_HEADING: "Your account has limited access",
                 LIMITED_ACCESS_INFO_MODAL_DESCRIPTION: "We noticed that something looks off with your account, and to be safe we limited your account access.",
+                LIMITED_ACCESS_INFO_MODAL_DESCRIPTION_V2: "Discord has limited your access to some features. Please check for system messages from Discord with more information.",
                 LIMITED_ACCESS_INFO_MODAL_APPEAL: "Did we make a mistake? [Regain access here]({appealLink}).",
                 LIMITED_ACCESS_DM_BAR_SUBTEXT: "You can't start new direct messages right now. [Did we make a mistake? Regain access here]({appealLink}).",
                 GUILD_LIMITED_ACCESS_INFO_MODAL_HEADING: "This server's features are limited",
@@ -18069,7 +18070,7 @@
                 u = E("782340");
             (0, i.setUpdateRules)(s.default), (0, r.default)(u.default, n.default, T.default), a.default.Emitter.injectBatchEmitChanges(o.unstable_batchedUpdates), a.default.PersistedStore.disableWrites = __OVERLAY__, a.default.initialize();
             let L = window.GLOBAL_ENV.RELEASE_CHANNEL;
-            new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(L, ", Build Number: ").concat("243886", ", Version Hash: ").concat("767a7e617dc696b50645ef95e75d89207653a3a4")), t.default.setTags({
+            new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(L, ", Build Number: ").concat("243890", ", Version Hash: ").concat("d9c8459796a9e426f168ea4eb1d1a81fcb2fa052")), t.default.setTags({
                 appContext: l.CURRENT_APP_CONTEXT
             }), S.default.initBasic(), N.default.init(), I.FocusRingManager.init(), O.init(), (0, R.cleanupTempFiles)()
         },
@@ -20453,8 +20454,8 @@
 
             function o() {
                 var e;
-                let _ = parseInt((e = "243886", "243886"));
-                return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("243886")), _ = 0), _
+                let _ = parseInt((e = "243890", "243890"));
+                return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("243890")), _ = 0), _
             }
         },
         990629: function(e, _, E) {
@@ -36152,4 +36153,4 @@
         }
     }
 ]);
-//# sourceMappingURL=5febb91fc9f843b2c556.js.map
+//# sourceMappingURL=d9081214f17e6d3e41ca.js.map
