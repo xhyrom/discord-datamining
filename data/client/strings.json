@@ -15791,6 +15791,8 @@
   "CLIPS_UNTITLED": "\"Untitled\"",
   "CLIPS_SETTINGS_OPT_OUT_OF_VOICE_RECORDING": "\"Allow my voice to be recorded in Clips\"",
   "CLIPS_SETTINGS_OPT_OUT_OF_VOICE_RECORDING_DESCRIPTION": "\"By turning on this setting, your voice may be included when someone in the same voice channel uses Clips.\"",
+  "CLIPS_SETTINGS_VIEWERSIDE_CLIPS_TOGGLE": "\"Allow viewers to capture clips\"",
+  "CLIPS_SETTINGS_VIEWERSIDE_CLIPS_TOGGLE_DESCRIPTION": "\"If this is on, viewers can take clips of your stream.\"",
   "SOUND_INCOMING_RING_HALLOWEEN": "\"Halloween Incoming Ring\"",
   "CUSTOM_SOUNDS": "\"Custom Sounds\"",
   "ENABLE_PHONE_INTEGRATION": "\"Enable integration with the Phone app to experience this.\"",
