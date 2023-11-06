@@ -45,8 +45,10 @@
 <p>4. Once you’ve found an avatar decoration you want to use, tap <strong>Save</strong> to confirm your changes.</p>
 <p class="wysiwyg-text-align-center"><img src="https://support.discord.com/hc/article_attachments/17808425706391" alt="image3.gif" width="253" height="516"></p>
 <h1 id="h_01GWJJX4GZDK1QJAXZBB7N4RNG">Frequently Asked Questions</h1>
-<p id="docs-internal-guid-43737dc2-7fff-6d6f-dff3-b8e118678317"><strong>Q: Who can currently access the Shop and buy and use avatar decorations?</strong>A: At this time, only Nitro members can buy avatar decorations from the Shop and use them as an early access benefit.  </p>
-<p><strong>Q: Do I keep the avatar decorations I’ve purchased? </strong>A: Yes, any decorations you’ve purchased are yours to keep and use anytime, even without an active Nitro subscription. </p>
+<p id="docs-internal-guid-43737dc2-7fff-6d6f-dff3-b8e118678317"><strong>Q: Who can currently access the Shop and buy and use avatar decorations?</strong></p>
+<p>A: At this time, only Nitro members can buy avatar decorations from the Shop and use them as an early access benefit.  </p>
+<p><strong>Q: Do I keep the avatar decorations I’ve purchased? </strong></p>
+<p>A: Yes, any decorations you’ve purchased are yours to keep and use anytime, even without an active Nitro subscription. </p>
 <p><strong>Q: Do I get to keep the DISXCORE bonus decorations I’ve collected?</strong></p>
 <p>A: The bonus DISXCORE decorations can be freely collected by Nitro members, but require an active Nitro subscription to use. If you decide to cancel your Nitro subscription, the bonus decorations will remain in your collection but you won’t be able to use them. </p>
 <p><strong>Q: I thought avatar decorations used to be free for Nitro members. Why do I have to buy them now?</strong></p>
