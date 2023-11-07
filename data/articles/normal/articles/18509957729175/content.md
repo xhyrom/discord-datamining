@@ -28,7 +28,7 @@
     <li>Users who don’t currently have a redeemed Nitro trial or Nitro gift </li>
     <li>Users who were not offered a trial or discount in the last 45 days</li>
     <li>Users who live in regions where Nitro memberships are available</li>
-    <li>Users who joined Discord in the last 30 days</li>
+    <li>Users who didn't join Discord in the last 30 days</li>
 </ul>
 <h1 id="h_01HE35R8SEE3DXF3NA4CMSDES8">How do I claim the Nitro Trial?</h1>
 <p>If you’re eligible to claim this Nitro membership, you’ll want to head over to the <strong>Nitro</strong> settings page.</p>
@@ -51,7 +51,7 @@
     <li>Users who don’t have an active Nitro trial or Nitro gift </li>
     <li>Users who were not offered a trial or discount in the last 45 days</li>
     <li>Users who live in regions where Nitro memberships are available</li>
-    <li><span id="docs-internal-guid-7eca4dc7-7fff-f786-2451-6a23429db430">Users who joined Discord in the last 30 days</span></li>
+    <li>Users who didn't join Discord in the last 30 days</li>
 </ul>
 <h3 id="h_01HE36A0HNDEVEY5X0XE2J1M0Z">Please note: The Discord support team does not have the ability to add this offer to user accounts or make an account eligible to redeem this trial.</h3>
 <p id="docs-internal-guid-28377a92-7fff-842d-302c-432e40de01a4"><strong>Q: Why don't I see this offer in my Discord app?</strong></p>
