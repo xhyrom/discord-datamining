@@ -179,10 +179,10 @@
                     return h
                 },
                 setPendingProfileEffectID: function() {
-                    return m
+                    return O
                 },
                 clearErrors: function() {
-                    return O
+                    return m
                 },
                 resetPendingAccountChanges: function() {
                     return U
@@ -356,14 +356,14 @@
                 })
             }
 
-            function m(e) {
+            function O(e) {
                 o.default.dispatch({
                     type: "USER_SETTINGS_ACCOUNT_SET_PENDING_PROFILE_EFFECT_ID",
                     profileEffectID: e
                 })
             }
 
-            function O() {
+            function m() {
                 o.default.dispatch({
                     type: "USER_SETTINGS_CLEAR_ERRORS"
                 })
@@ -2279,12 +2279,12 @@
                     A(null)
                 }, [N, A]), a(null != L, "Unknown step for current payment flow.");
                 let h = null !== (s = null == L ? void 0 : null === (t = L.options) || void 0 === t ? void 0 : t.hideSlider) && void 0 !== s && s,
-                    m = null == L ? void 0 : null === (n = L.options) || void 0 === n ? void 0 : n.bodyClassName,
-                    O = void 0 !== T && T ? _.sliderBodyLarge : null == L ? void 0 : null === (l = L.options) || void 0 === l ? void 0 : l.sliderBodyClassName;
+                    O = null == L ? void 0 : null === (n = L.options) || void 0 === n ? void 0 : n.bodyClassName,
+                    m = void 0 !== T && T ? _.sliderBodyLarge : null == L ? void 0 : null === (l = L.options) || void 0 === l ? void 0 : l.sliderBodyClassName;
                 return (0, i.jsxs)(i.Fragment, {
                     children: [null === (c = null == L ? void 0 : null === (u = L.options) || void 0 === u ? void 0 : u.renderHeader) || void 0 === c || c ? I : null, L.renderStep(f), null == N || h ? null : (0, i.jsxs)(i.Fragment, {
                         children: [(0, i.jsx)(d.ModalContent, {
-                            className: o(_.body, m),
+                            className: o(_.body, O),
                             children: (0, i.jsx)(d.Slides, {
                                 activeSlide: N,
                                 centered: !1,
@@ -2292,7 +2292,7 @@
                                 children: S.filter(e => null != e.key).map(e => (0, i.jsx)(d.Slide, {
                                     id: e.key,
                                     children: (0, i.jsx)("form", {
-                                        className: o(_.sliderBody, O),
+                                        className: o(_.sliderBody, m),
                                         ref: e => C(e),
                                         onSubmit: e => e.preventDefault()
                                     })
@@ -2359,8 +2359,8 @@
                     giftMessage: R,
                     subscriptionTier: L,
                     trialId: h,
-                    postSuccessGuild: m,
-                    openInvoiceId: O,
+                    postSuccessGuild: O,
+                    openInvoiceId: m,
                     applicationId: U,
                     referralTrialOfferId: g,
                     giftRecipient: v,
@@ -2397,9 +2397,9 @@
                             analyticsLocation: C,
                             analyticsSourceLocation: p,
                             trialId: h,
-                            postSuccessGuild: m,
+                            postSuccessGuild: O,
                             planGroup: E.ORDERED_PREMIUM_SUBSCRIPTION_PLANS,
-                            openInvoiceId: O,
+                            openInvoiceId: m,
                             applicationId: U,
                             referralTrialOfferId: g,
                             returnRef: M
@@ -2793,31 +2793,6 @@
                 return "development" !== n ? "".concat(location.protocol, "//").concat(t).concat(i.Endpoints.SOUNDBOARD_SOUND(e)) : "".concat(location.protocol).concat(window.GLOBAL_ENV.API_ENDPOINT).concat(i.Endpoints.SOUNDBOARD_SOUND(e))
             }
         },
-        4233: function(e, t, n) {
-            "use strict";
-            n.r(t), n.d(t, {
-                default: function() {
-                    return l
-                }
-            });
-            var i = n("862205");
-            let r = (0, i.createExperiment)({
-                kind: "user",
-                id: "2023-03_free_discord_stickers",
-                label: "Free Default Stickers",
-                defaultConfig: {
-                    freeStickersEnabled: !1
-                },
-                treatments: [{
-                    id: 1,
-                    label: "Enabled",
-                    config: {
-                        freeStickersEnabled: !0
-                    }
-                }]
-            });
-            var l = r
-        },
         866353: function(e, t, n) {
             "use strict";
             n.r(t), n.d(t, {
@@ -2825,39 +2800,29 @@
                     return r
                 },
                 getStickerSendability: function() {
-                    return c
+                    return s
                 },
                 isSendableSticker: function() {
-                    return d
+                    return c
                 }
             });
             var i, r, l = n("991170"),
                 o = n("719923"),
-                u = n("4233"),
-                a = n("24373"),
-                s = n("49111");
+                u = n("24373"),
+                a = n("49111");
             (i = r || (r = {}))[i.SENDABLE = 0] = "SENDABLE", i[i.SENDABLE_WITH_PREMIUM = 1] = "SENDABLE_WITH_PREMIUM", i[i.NONSENDABLE = 2] = "NONSENDABLE", i[i.SENDABLE_WITH_BOOSTED_GUILD = 3] = "SENDABLE_WITH_BOOSTED_GUILD";
-            let c = (e, t, n) => {
+            let s = (e, t, n) => {
                     if (null == t) return r.NONSENDABLE;
-                    let i = o.default.canUseStickersEverywhere(t);
-                    if ((0, a.isStandardSticker)(e)) {
-                        let {
-                            freeStickersEnabled: e
-                        } = u.default.getCurrentConfig({
-                            location: "c036ff_1"
-                        }, {
-                            autoTrackExposure: !1
-                        });
-                        return i || e ? r.SENDABLE : r.SENDABLE_WITH_PREMIUM
-                    }
-                    if ((0, a.isGuildSticker)(e) && null != n) return e.available ? null != n.guild_id && "" !== n.guild_id && n.guild_id === e.guild_id ? r.SENDABLE : null == n.guild_id || l.default.can({
-                        permission: s.Permissions.USE_EXTERNAL_STICKERS,
+                    let i = o.default.canUseCustomStickersEverywhere(t);
+                    if ((0, u.isStandardSticker)(e)) return r.SENDABLE;
+                    if ((0, u.isGuildSticker)(e) && null != n) return e.available ? null != n.guild_id && "" !== n.guild_id && n.guild_id === e.guild_id ? r.SENDABLE : null == n.guild_id || l.default.can({
+                        permission: a.Permissions.USE_EXTERNAL_STICKERS,
                         user: t,
                         context: n
                     }) ? i ? r.SENDABLE : r.SENDABLE_WITH_PREMIUM : r.NONSENDABLE : r.SENDABLE_WITH_BOOSTED_GUILD;
                     return r.NONSENDABLE
                 },
-                d = (e, t, n) => c(e, t, n) === r.SENDABLE
+                c = (e, t, n) => s(e, t, n) === r.SENDABLE
         },
         865372: function(e, t, n) {
             "use strict";
@@ -4312,4 +4277,4 @@
         }
     }
 ]);
-//# sourceMappingURL=7faaf4b94712a746be0b.js.map
+//# sourceMappingURL=d9bb0847d826fc3cec91.js.map
