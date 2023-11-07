@@ -1751,7 +1751,7 @@
                     y.current.cancel(), N(!0)
                 }, []), x = r.useCallback(() => {
                     y.current.delay()
-                }, []), b = r.useCallback((e, t) => {
+                }, []), P = r.useCallback((e, t) => {
                     R(), (0, f.openContextMenuLazy)(e, async () => {
                         let {
                             default: e
@@ -1773,13 +1773,13 @@
                     className: g,
                     participantType: s.type
                 });
-                let P = o(D).take(v).map(e => (0, a.jsx)(c.Avatar, {
+                let b = o(D).take(v).map(e => (0, a.jsx)(c.Avatar, {
                     src: e.getAvatarURL(l, 24),
                     "aria-label": e.username,
                     size: c.AvatarSizes.SIZE_24,
                     className: I.viewer
                 }, e.id)).value();
-                return D.length > v && (P[P.length - 1] = (0, a.jsxs)("div", {
+                return D.length > v && (b[b.length - 1] = (0, a.jsxs)("div", {
                     className: I.overflow,
                     children: ["+", D.length - v + 1]
                 }, "overflow")), (0, a.jsx)(p.default, {
@@ -1790,7 +1790,7 @@
                         children: (0, a.jsx)(c.Popout, {
                             renderPopout: () => (0, a.jsx)(M, {
                                 participantType: s.type,
-                                handleUserContextMenu: b,
+                                handleUserContextMenu: P,
                                 guildId: l,
                                 channelId: t,
                                 users: D,
@@ -1800,7 +1800,7 @@
                             position: "top",
                             children: () => (0, a.jsx)("div", {
                                 className: i(I.viewers, g),
-                                children: P
+                                children: b
                             })
                         })
                     })
@@ -2594,8 +2594,8 @@
                 return {
                     logsUploaded: new Date().toISOString(),
                     releaseChannel: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                    buildNumber: "244200",
-                    versionHash: "e1fb90fcfb01ae5892bb3a3b69f7afdb533cee36"
+                    buildNumber: "244215",
+                    versionHash: "1966a0cd09ae1cc54baca3fa57c5f2ee36937f95"
                 }
             }
             n.r(t), n.d(t, {
@@ -2732,7 +2732,7 @@
                     dsn: "https://fa97a90475514c03a42f80cd36d147c4@sentry.io/140984",
                     autoSessionTracking: !1,
                     environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                    release: "discord_web-e1fb90fcfb01ae5892bb3a3b69f7afdb533cee36",
+                    release: "discord_web-1966a0cd09ae1cc54baca3fa57c5f2ee36937f95",
                     beforeSend: e => {
                         var t, n;
                         return !(null != (t = e).exception && null != t.exception.values && t.exception.values.every(e => null == e.stacktrace || null != e.stacktrace.frames && 1 === e.stacktrace.frames.length) && "canary" !== window.GLOBAL_ENV.RELEASE_CHANNEL || l.some(e => window.navigator.appVersion.toLowerCase().indexOf(e) >= 0)) && !i() && !("Aborted" === (n = e).message || "cancel captcha" === n.message) && s() ? e : null
@@ -2750,7 +2750,7 @@
                     })],
                     ignoreErrors: ["EADDRINUSE", "BetterDiscord", "EnhancedDiscord", "Powercord", "RecipeWebview", "jQuery", "localStorage", "has already been declared", "Cannot call hover while not dragging.", "Cannot call beginDrag while dragging.", "getHostNode", "setupCSS", "on missing remote object", "ChunkLoadError", "Cannot find module 'discord_utils'", "Failed to setup Krisp module", "Error invoking remote method 'DISCORD_NATIVE_MODULES_INSTALL': Error: Module updater is not available!", "Non-Error promise rejection captured with keys:", "Request has been terminated", "Cannot resolve a Slate point from DOM point", "Failed to fetch", "no suitable image found", "ResizeObserver loop limit exceeded", "The play() request was interrupted", "could not play audio", "notosans-400-normalitalic"],
                     denyUrls: [/recaptcha/, /mobilediscord\.com/, /betterdiscord:\/\//]
-                }), a.setTag("buildNumber", (e = "244200", "244200")), a.setTag("builtAt", String("1699379696847"));
+                }), a.setTag("buildNumber", (e = "244215", "244215")), a.setTag("builtAt", String("1699381230222"));
                 let t = window.GLOBAL_ENV.SENTRY_TAGS;
                 if (null != t && "object" == typeof t)
                     for (let e in t) a.setTag(e, t[e]);
@@ -5175,4 +5175,4 @@
         }
     }
 ]);
-//# sourceMappingURL=6e12f0b87d23ee35ea56.js.map
+//# sourceMappingURL=44c61d10c397fa3e1d4d.js.map
