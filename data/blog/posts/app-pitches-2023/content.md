@@ -17,7 +17,6 @@
             <figure class="w-richtext-figure-type-image w-richtext-align-fullwidth" style="max-width:1600pxpx">
                 <div><img src="https://assets-global.website-files.com/5f9072399b2640f14d6a2bf4/654a67bc3474da2d0d1cf59e_p2o-NCL_qqmJgI5tvXzE4iaJ0ZbSFTGbF5Uq1NAbS2wYWi6qmEPmj3uXbJIJlw2o_laOh7dRgA6igVFE9Xe5MAIrhwD6WOADAYetS-9Yrgy03r2AA0FRx7nc2sdHw2yITtKR611CFOVwAbwFdkfp4iQ.png" alt="Prototype assets for Art Arena. Support for competitions, portfolios, and profiles are shown."></div>
             </figure>
-            <p>Once users submit their artwork, the server’s community members can vote on which one’s the best — or, if someone discovers an artist they like, look through their Art Arena portfolio for more of their work.</p>
             <p>Our judges were super excited for this one — Judge Brooke, Sr. Product Designer - Platform Ecosystem at Discord, thinks this will help artists connect and engage in exciting new ways, while Judge Josiah, founder and owner of <a href="https://canary.discord.com/application-directory/557628352828014614">Ticket Tool</a>, believes people have been looking for something like Art Arena for ages. And thanks to their incoming funding, it’s closer than ever to becoming a reality!</p>
             <p>See the picture they’ve painted? That’s why they’re the ideal choice for the<a href="https://discord.com/blog/app-pitches-2023#heading-9"> Apps for Artists</a><strong> </strong>category.</p>
         </div>
