@@ -16851,24 +16851,25 @@
             N.displayName = "NotificationCenterItemsStore", N.persistKey = "NotificationCenterItemsStore_v2";
             var O = new N(a.default, {
                 CONNECTION_OPEN: function(e) {
-                    C();
-                    let t = [];
-                    e.relationships.forEach(e => {
-                        let {
-                            type: n,
-                            user: i,
-                            since: a
-                        } = e;
-                        if (n !== h.RelationshipTypes.PENDING_INCOMING || null == i || null == a) return null;
-                        let l = u.default.getUser(i.id);
-                        if (null == l) return null;
-                        let s = (0, E.incomingFriendRequestLocalItem)(l, a);
-                        !(d.default.age(s.id) > 7776e6) && t.push(s)
-                    }), e.guilds.forEach(e => {
-                        e.guild_scheduled_events.forEach(e => {
-                            g(e)
-                        })
-                    }), p.notifCenterLocalItems = t
+                    C(), f.default.initialLanguageLoad.then(() => {
+                        let t = [];
+                        e.relationships.forEach(e => {
+                            let {
+                                type: n,
+                                user: i,
+                                since: a
+                            } = e;
+                            if (n !== h.RelationshipTypes.PENDING_INCOMING || null == i || null == a) return null;
+                            let l = u.default.getUser(i.id);
+                            if (null == l) return null;
+                            let s = (0, E.incomingFriendRequestLocalItem)(l, a);
+                            !(d.default.age(s.id) > 7776e6) && t.push(s)
+                        }), e.guilds.forEach(e => {
+                            e.guild_scheduled_events.forEach(e => {
+                                g(e)
+                            })
+                        }), p.notifCenterLocalItems = t
+                    })
                 },
                 LOGOUT: C,
                 NOTIFICATION_CENTER_ITEMS_ACK: function(e) {
@@ -33019,4 +33020,4 @@
         }
     }
 ]);
-//# sourceMappingURL=6353f5e5fe648d7d3e60.js.map
+//# sourceMappingURL=bc507c9e16f03ffbf2d5.js.map
