@@ -50,7 +50,7 @@
 <ul>
     <li>Users who don't currently have a Nitro, Nitro Classic, or Nitro Basic membership or have not had a Nitro, Nitro Classic, or Nitro Basic membership in the last 30 days</li>
     <li>Users who don’t have an active Nitro trial or Nitro gift </li>
-    <li>Users who were offered a trial or discount in the last 45 days</li>
+    <li>Users who were not offered a trial or discount in the last 45 days</li>
     <li>Users who live in regions where Nitro memberships are available</li>
     <li><span id="docs-internal-guid-7eca4dc7-7fff-f786-2451-6a23429db430">Users who joined Discord in the last 30 days</span></li>
 </ul>
