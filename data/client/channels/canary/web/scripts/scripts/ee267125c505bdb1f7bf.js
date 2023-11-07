@@ -18078,7 +18078,7 @@
                 u = E("782340");
             (0, i.setUpdateRules)(s.default), (0, r.default)(u.default, n.default, T.default), a.default.Emitter.injectBatchEmitChanges(o.unstable_batchedUpdates), a.default.PersistedStore.disableWrites = __OVERLAY__, a.default.initialize();
             let L = window.GLOBAL_ENV.RELEASE_CHANNEL;
-            new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(L, ", Build Number: ").concat("244133", ", Version Hash: ").concat("351234d2bcba6d7ef90670b3157717a2cb656119")), t.default.setTags({
+            new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(L, ", Build Number: ").concat("244185", ", Version Hash: ").concat("73b04d63a4b80459b42c3c9cbb4dda5ac668a0ca")), t.default.setTags({
                 appContext: l.CURRENT_APP_CONTEXT
             }), S.default.initBasic(), N.default.init(), I.FocusRingManager.init(), O.init(), (0, R.cleanupTempFiles)()
         },
@@ -19432,7 +19432,7 @@
                     loadRightBeforeConnectionOpen: !0
                 },
                 ExplicitMediaManager: {
-                    actions: ["LOAD_MESSAGES_SUCCESS", "MESSAGE_CREATE", "SEARCH_FINISH", "LOGOUT"],
+                    actions: ["LOAD_MESSAGES_SUCCESS", "MESSAGE_CREATE", "SEARCH_FINISH", "LOAD_FORUM_POSTS", "LOAD_ARCHIVED_THREADS_SUCCESS", "LOAD_THREADS_SUCCESS", "LOGOUT"],
                     inlineRequire: () => E("983850").default,
                     neverLoadBeforeConnectionOpen: !0
                 },
@@ -20462,8 +20462,8 @@
 
             function o() {
                 var e;
-                let _ = parseInt((e = "244133", "244133"));
-                return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("244133")), _ = 0), _
+                let _ = parseInt((e = "244185", "244185"));
+                return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("244185")), _ = 0), _
             }
         },
         990629: function(e, _, E) {
@@ -22067,7 +22067,7 @@
             "use strict";
             E.r(_), E.d(_, {
                 default: function() {
-                    return M
+                    return m
                 }
             }), E("222007");
             var t = E("345570"),
@@ -22080,45 +22080,46 @@
                 s = E("982108"),
                 T = E("377253"),
                 S = E("18494"),
-                N = E("695681"),
-                O = E("457971"),
-                A = E("793441");
-            let R = {};
+                N = E("162771"),
+                O = E("695681"),
+                A = E("457971"),
+                R = E("793441");
+            let l = {};
 
-            function l(e) {
+            function u(e) {
                 return "".concat(e.channel_id, ":").concat(e.id)
             }
 
-            function u() {
-                Object.values(R).forEach(e => {
+            function L() {
+                Object.values(l).forEach(e => {
                     clearTimeout(e)
-                }), R = {}
+                }), l = {}
             }
 
-            function L(e, _) {
+            function C(e, _) {
                 if (e.forEach(_ => {
-                        let E = l(_);
-                        R[E] = setTimeout(() => {
+                        let E = u(_);
+                        l[E] = setTimeout(() => {
                             ! function(e) {
                                 e.forEach(e => {
-                                    let _ = l(e);
-                                    clearTimeout(R[_]);
+                                    let _ = u(e);
+                                    clearTimeout(l[_]);
                                     let E = T.default.getMessage(e.channel_id, e.id);
-                                    null != E && C(E) && a.default.dispatch({
+                                    null != E && c(E) && a.default.dispatch({
                                         type: "MESSAGE_EXPLICIT_CONTENT_SCAN_TIMEOUT",
                                         messageId: e.id,
                                         channelId: e.channel_id
-                                    }), delete R[_]
+                                    }), delete l[_]
                                 })
                             }(e)
                         }, 2e4)
                     }), _) {
-                    (0, N.sendMultiChannelMessagesForScanning)(e);
+                    (0, O.sendMultiChannelMessagesForScanning)(e);
                     return
-                }(0, N.sendMessagesForScanning)(e[0].channel_id, e.map(e => e.id))
+                }(0, O.sendMessagesForScanning)(e[0].channel_id, e.map(e => e.id))
             }
 
-            function C(e) {
+            function c(e) {
                 var _, E, t, o, n, r, a, i;
                 let I = null !== (n = null == e ? void 0 : null === (_ = e.attachments) || void 0 === _ ? void 0 : _.length) && void 0 !== n ? n : 0,
                     s = null !== (r = null == e ? void 0 : null === (E = e.embeds) || void 0 === E ? void 0 : E.length) && void 0 !== r ? r : 0;
@@ -22131,7 +22132,7 @@
                 return T.length > 0 || S.length > 0
             }
 
-            function c(e) {
+            function D(e) {
                 var _;
                 let {
                     channelId: E,
@@ -22139,50 +22140,82 @@
                     optimistic: o,
                     isPushNotification: n
                 } = e;
-                if (!(0, O.isEligibleForExplicitMediaRedaction)() || o || n || null == E || (null === (_ = t.author) || void 0 === _ ? void 0 : _.id) === I.default.getId()) return !1;
+                if (!(0, A.isEligibleForExplicitMediaRedaction)() || o || n || null == E || (null === (_ = t.author) || void 0 === _ ? void 0 : _.id) === I.default.getId()) return !1;
                 let r = S.default.getChannelId(),
                     a = s.default.getCurrentSidebarChannelId(r),
                     i = E === r || E === a;
-                return !!(i && (0, A.shouldRedactExplicitContent)(t)) && (L([t]), !0)
-            }
-
-            function D(e) {
-                let {
-                    channelId: _,
-                    messages: E
-                } = e;
-                if (!(0, O.isEligibleForExplicitMediaRedaction)() || null == _ || null == E) return !1;
-                let t = S.default.getChannelId(),
-                    o = s.default.getCurrentSidebarChannelId(t),
-                    n = _ === t || _ === o;
-                if (n) {
-                    let e = E.filter(e => C(e) && (0, A.shouldRedactExplicitContent)(e));
-                    if (e.length > 0) return L(e), !0
-                }
-                return !1
+                return !!(i && (0, R.shouldRedactExplicitContent)(t)) && (C([t]), !0)
             }
 
             function d(e) {
                 let {
+                    channelId: _,
+                    messages: E
+                } = e;
+                if (!(0, A.isEligibleForExplicitMediaRedaction)() || null == _ || null == E) return !1;
+                let t = S.default.getChannelId(),
+                    o = s.default.getCurrentSidebarChannelId(t),
+                    n = _ === t || _ === o;
+                if (n) {
+                    let e = E.filter(e => c(e) && (0, R.shouldRedactExplicitContent)(e));
+                    if (e.length > 0) return C(e), !0
+                }
+                return !1
+            }
+
+            function U(e) {
+                let {
                     messages: _
                 } = e;
-                if (!(0, O.isEligibleForExplicitMediaRedaction)() || null == _) return !1;
+                if (!(0, A.isEligibleForExplicitMediaRedaction)() || null == _) return !1;
                 let E = o(_),
                     t = r(E, (e, _) => e.id === _.id && e.channel_id === _.channel_id),
-                    n = t.filter(e => C(e) && (0, A.shouldRedactExplicitContent)(e));
-                return !!(n.length > 0) && (L(n, !0), !0)
+                    n = t.filter(e => c(e) && (0, R.shouldRedactExplicitContent)(e));
+                return !!(n.length > 0) && (C(n, !0), !0)
             }
-            class U extends i.default {
+
+            function M(e) {
+                let {
+                    guildId: _,
+                    threads: E
+                } = e;
+                if (null == E || !(0, A.isEligibleForExplicitMediaRedaction)()) return !1;
+                let t = N.default.getGuildId() === _;
+                if (t) {
+                    let e = Object.keys(E).map(e => E[e].first_message),
+                        _ = e.filter(e => c(e) && (0, R.shouldRedactExplicitContent)(e));
+                    if (_.length > 0) return C(_, !0), !0
+                }
+                return !1
+            }
+
+            function h(e) {
+                let {
+                    guildId: _,
+                    firstMessages: E
+                } = e;
+                if (null == E || !(0, A.isEligibleForExplicitMediaRedaction)()) return !1;
+                let t = N.default.getGuildId() === _;
+                if (t) {
+                    let e = E.filter(e => c(e) && (0, R.shouldRedactExplicitContent)(e));
+                    if (e.length > 0) return C(e, !0), !0
+                }
+                return !1
+            }
+            class P extends i.default {
                 constructor(...e) {
                     super(...e), this.actions = {
-                        LOAD_MESSAGES_SUCCESS: D,
-                        MESSAGE_CREATE: c,
-                        LOGOUT: u,
-                        SEARCH_FINISH: d
+                        LOAD_MESSAGES_SUCCESS: d,
+                        LOAD_FORUM_POSTS: M,
+                        LOAD_THREADS_SUCCESS: h,
+                        LOAD_ARCHIVED_THREADS_SUCCESS: h,
+                        MESSAGE_CREATE: D,
+                        LOGOUT: L,
+                        SEARCH_FINISH: U
                     }
                 }
             }
-            var M = new U
+            var m = new P
         },
         722333: function(e, _, E) {
             "use strict";
@@ -36317,4 +36350,4 @@
         }
     }
 ]);
-//# sourceMappingURL=44a3769fe379fcbfa7f9.js.map
+//# sourceMappingURL=ee267125c505bdb1f7bf.js.map
