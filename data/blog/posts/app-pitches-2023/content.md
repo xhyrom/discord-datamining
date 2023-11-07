@@ -35,7 +35,7 @@
     </div>
     <div id="heading-4" class="rich-wrapper">
         <div class="blog-post-content w-richtext">
-            <h2><strong>“Learning” Finalist: Teranga</strong></h2>
+            <h2><strong>“Learning” Winner: Teranga</strong></h2>
             <p>Some people have incredible ideas brewing in their minds for a Discord app that hasn’t been made yet. But those same people might not know where to start — if you have something in mind that you need to see come to life but you’ve never written a line of code in your life, where would you even begin?</p>
             <p>The team behind Teranga wants to be there to support you on your road to Discord Development. Their app pitch is a no-code, drag-and-drop editor that gives you the pieces to put together an app for Discord that does what you want, made by you.</p>
             <figure class="w-richtext-figure-type-image w-richtext-align-fullwidth" style="max-width:1600pxpx">
