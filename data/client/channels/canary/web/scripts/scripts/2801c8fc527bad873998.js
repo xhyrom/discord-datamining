@@ -9539,6 +9539,7 @@
                 ONE_TIME_CHARGE_INFO: "This will be a one time charge for the amount of time chosen. You will not be billed yearly.",
                 GIFT_RECIPIENT_NOTIFICATION: "{recipientDisplayName}, you have a gift!",
                 GIFT_DURATION: "1 {timeInterval} of Nitro",
+                BASIC_GIFT_DURATION: "1 {timeInterval} of Nitro Basic",
                 GIFT_OPEN_PROMPT: "Open gift",
                 GIFT_RECIPIENT_INFO: "To: {recipientDisplayName}",
                 GIFT_SENDER_INFO: "From: {senderDisplayName}",
@@ -18078,7 +18079,7 @@
                 u = E("782340");
             (0, i.setUpdateRules)(s.default), (0, r.default)(u.default, n.default, T.default), a.default.Emitter.injectBatchEmitChanges(o.unstable_batchedUpdates), a.default.PersistedStore.disableWrites = __OVERLAY__, a.default.initialize();
             let L = window.GLOBAL_ENV.RELEASE_CHANNEL;
-            new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(L, ", Build Number: ").concat("244238", ", Version Hash: ").concat("64ac851eb741923eb8e091a7f687c0f83689f095")), t.default.setTags({
+            new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(L, ", Build Number: ").concat("244244", ", Version Hash: ").concat("7f304a047ac0c708f6040d530d9dfcaa08fb6f4e")), t.default.setTags({
                 appContext: l.CURRENT_APP_CONTEXT
             }), S.default.initBasic(), N.default.init(), I.FocusRingManager.init(), O.init(), (0, R.cleanupTempFiles)()
         },
@@ -20462,8 +20463,8 @@
 
             function o() {
                 var e;
-                let _ = parseInt((e = "244238", "244238"));
-                return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("244238")), _ = 0), _
+                let _ = parseInt((e = "244244", "244244"));
+                return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("244244")), _ = 0), _
             }
         },
         990629: function(e, _, E) {
@@ -36350,4 +36351,4 @@
         }
     }
 ]);
-//# sourceMappingURL=4def55a791495587992b.js.map
+//# sourceMappingURL=2801c8fc527bad873998.js.map
