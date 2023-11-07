@@ -2798,6 +2798,7 @@
   "JOIN_SERVER_INVITE_EXAMPLES_HEADER": "\"Invites should look like\"",
   "JOIN_SERVER_INVITE_EXAMPLES_MOBILE_REFRESH": "\"Invites should look like $[!!{example1}!!](exampleHook), $[!!{example2}!!](exampleHook), or $[!!{example3}!!](exampleHook)\"",
   "NOTICE_CONNECTION_CONFLICT": "\"Your voice has been disconnected because you connected at another location.\"",
+  "NOTICE_VOICE_CONNECTED_LAST_SESSION": "\"You were in a voice channel last time you left Discord.\"",
   "NOTICE_UNCLAIMED_ACCOUNT": "\"This is an unclaimed account. Claim it before it's lost.\"",
   "NOTICE_UNVERIFIED_ACCOUNT": "\"Please check your email and follow the instructions to verify your account.\"",
   "NOTICE_NATIVE_APPS_2020_06": "\"Want to take full advantage of Discord with better performance, in-game overlay, and more? Get the desktop app!\"",
