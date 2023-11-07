@@ -1,5 +1,4 @@
 <p id="docs-internal-guid-31a70ddd-7fff-19d1-7dee-3e06a8354c1c">For a limited time, Discord is offering a 2-week Nitro trial to eligible non-Nitro users starting <strong>November 7th, 2023 </strong>to <strong>November 13th, 2023</strong> <strong>(11:59pm PST)</strong>! </p>
-<h3 id="docs-internal-guid-20215deb-7fff-f1b3-1577-dd39c1ac68ef"><span style="color: #434343;">This trial is slowly rolling out, but will be available to all eligible users by November 7, 2023.</span></h3>
 <p><span class="wysiwyg-font-size-large"><strong>What this article covers: </strong></span></p>
 <ul>
     <li><a href="https://support.discord.com/hc/en-us/articles/18509957729175#h_01HE35R8SDSGFW05GH5FVB1K8V">What is Nitro?</a></li>
