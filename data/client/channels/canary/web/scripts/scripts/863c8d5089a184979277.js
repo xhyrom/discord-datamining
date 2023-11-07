@@ -714,7 +714,7 @@
                 return i.rebuildAllMembers()
             }
 
-            function b(e) {
+            function E(e) {
                 let {
                     guildId: t,
                     userId: i
@@ -722,7 +722,7 @@
                 return r.updateMembersByMemberIds([i])
             }
 
-            function E(e) {
+            function b(e) {
                 let t = !1;
                 return e.guilds.forEach(e => {
                     let {
@@ -810,10 +810,10 @@
                     return c ? c = !1 : ! function() {
                         let e = arguments.length > 0 && void 0 !== arguments[0] && arguments[0];
                         for (let t in _) f(t, e)
-                    }(!0), E(e)
+                    }(!0), b(e)
                 },
                 CONNECTION_OPEN_SUPPLEMENTAL: function(e) {
-                    return E(e)
+                    return b(e)
                 },
                 LOCAL_MESSAGES_LOADED: function(e) {
                     let {
@@ -895,8 +895,8 @@
                     } = e, r = M(t);
                     return r.updateMembersByMemberIds([i.user.id])
                 },
-                GUILD_ROLE_MEMBER_REMOVE: b,
-                GUILD_ROLE_MEMBER_ADD: b,
+                GUILD_ROLE_MEMBER_REMOVE: E,
+                GUILD_ROLE_MEMBER_ADD: E,
                 THREAD_MEMBER_LIST_UPDATE: function(e) {
                     let {
                         guildId: t,
@@ -1026,72 +1026,74 @@
             "use strict";
             i.r(t), i.d(t, {
                 initializeMemberSafetyStore: function() {
-                    return m
-                },
-                refreshMemberSafetyTimestamp: function() {
                     return c
                 },
-                updateMemberSafetyTablePagination: function() {
+                refreshMemberSafetyTimestamp: function() {
                     return _
                 },
-                requestNewPaginationChunk: function() {
+                updateMemberSafetyTablePagination: function() {
                     return M
                 },
-                updateSearchState: function() {
+                requestNewPaginationChunk: function() {
                     return f
                 },
-                getMemberSupplemental: function() {
+                updateSearchState: function() {
                     return S
                 },
-                goToMemberSafetyDashboard: function() {
+                getMemberSupplemental: function() {
                     return p
+                },
+                goToMemberSafetyDashboard: function() {
+                    return E
                 }
             });
-            var r = i("592407"),
-                n = i("393414"),
-                a = i("305961"),
-                u = i("536999"),
-                s = i("466818"),
-                l = i("95429"),
-                o = i("447038"),
-                d = i("49111"),
-                h = i("724210");
-            async function m(e) {
-                let t = (0, u.isInMembersSearchV2Experiment)(e, {
-                    autoTrackExposure: !0
+            var r = i("812204"),
+                n = i("592407"),
+                a = i("393414"),
+                u = i("305961"),
+                s = i("536999"),
+                l = i("466818"),
+                o = i("95429"),
+                d = i("447038"),
+                h = i("49111"),
+                m = i("724210");
+            async function c(e) {
+                let t = (0, s.isInMembersSearchV2Experiment)(e, {
+                    autoTrackExposure: !0,
+                    location: r.default.MEMBER_SAFETY_PAGE
                 });
-                return t ? await (0, o.initializeMemberSafetyStoreV2)(e) : await (0, l.initializeMemberSafetyStoreV1)(e)
+                return t ? await (0, d.initializeMemberSafetyStoreV2)(e) : await (0, o.initializeMemberSafetyStoreV1)(e)
             }
 
-            function c(e) {
-                let t = (0, u.isInMembersSearchV2Experiment)(e);
-                return t ? (0, o.refreshMemberSafetyTimestampV2)(e) : (0, l.refreshMemberSafetyTimestampV1)(e)
-            }
-
-            function _(e, t) {
-                let i = (0, u.isInMembersSearchV2Experiment)(e);
-                return i ? (0, o.updateMemberSafetyTablePaginationV2)(e, t) : (0, l.updateMemberSafetyTablePaginationV1)(e, t)
+            function _(e) {
+                let t = (0, s.isInMembersSearchV2Experiment)(e);
+                return t ? (0, d.refreshMemberSafetyTimestampV2)(e) : (0, o.refreshMemberSafetyTimestampV1)(e)
             }
 
             function M(e, t) {
-                let i = (0, u.isInMembersSearchV2Experiment)(e);
-                return i ? (0, o.requestNewPaginationChunkV2)(e, t) : (0, l.requestNewPaginationChunkV1)(e, t)
+                let i = (0, s.isInMembersSearchV2Experiment)(e);
+                return i ? (0, d.updateMemberSafetyTablePaginationV2)(e, t) : (0, o.updateMemberSafetyTablePaginationV1)(e, t)
             }
 
             function f(e, t) {
-                let i = (0, u.isInMembersSearchV2Experiment)(e);
-                return i ? (0, o.updateSearchStateV2)(e, t) : (0, l.updateSearchStateV1)(e, t)
+                let i = (0, s.isInMembersSearchV2Experiment)(e);
+                return i ? (0, d.requestNewPaginationChunkV2)(e, t) : (0, o.requestNewPaginationChunkV1)(e, t)
             }
 
             function S(e, t) {
-                let i = (0, u.isInMembersSearchV2Experiment)(e);
-                return i ? (0, o.getMemberSupplementalV2)(e, t) : (0, l.getMemberSupplementalV1)(e, t)
+                let i = (0, s.isInMembersSearchV2Experiment)(e);
+                return i ? (0, d.updateSearchStateV2)(e, t) : (0, o.updateSearchStateV1)(e, t)
             }
 
-            function p(e) {
-                let t = (0, s.canAccessMemberSafetyPage)(e),
-                    i = a.default.getGuild(e);
-                return !!t && null != i && (i.hasFeature(d.GuildFeatures.COMMUNITY) || i.hasFeature(d.GuildFeatures.ENABLED_MODERATION_EXPERIENCE_FOR_NON_COMMUNITY) ? ((0, n.transitionTo)(d.Routes.CHANNEL(e, h.StaticChannelRoute.MEMBER_SAFETY)), !0) : (r.default.open(i.id, d.GuildSettingsSections.MEMBERS), !0))
+            function p(e, t) {
+                let i = (0, s.isInMembersSearchV2Experiment)(e);
+                return i ? (0, d.getMemberSupplementalV2)(e, t) : (0, o.getMemberSupplementalV1)(e, t)
+            }
+
+            function E(e) {
+                let t = (0, l.canAccessMemberSafetyPage)(e),
+                    i = u.default.getGuild(e);
+                return !!t && null != i && (i.hasFeature(h.GuildFeatures.COMMUNITY) || i.hasFeature(h.GuildFeatures.ENABLED_MODERATION_EXPERIENCE_FOR_NON_COMMUNITY) ? ((0, a.transitionTo)(h.Routes.CHANNEL(e, m.StaticChannelRoute.MEMBER_SAFETY)), !0) : (n.default.open(i.id, h.GuildSettingsSections.MEMBERS), !0))
             }
         },
         95429: function(e, t, i) {
@@ -1395,4 +1397,4 @@
         }
     }
 ]);
-//# sourceMappingURL=2340543c038e72514026.js.map
+//# sourceMappingURL=863c8d5089a184979277.js.map
