@@ -2803,6 +2803,7 @@
                 JOIN_SERVER_INVITE_EXAMPLES_HEADER: "Invites should look like",
                 JOIN_SERVER_INVITE_EXAMPLES_MOBILE_REFRESH: "Invites should look like $[!!{example1}!!](exampleHook), $[!!{example2}!!](exampleHook), or $[!!{example3}!!](exampleHook)",
                 NOTICE_CONNECTION_CONFLICT: "Your voice has been disconnected because you connected at another location.",
+                NOTICE_VOICE_CONNECTED_LAST_SESSION: "You were in a voice channel last time you left Discord.",
                 NOTICE_UNCLAIMED_ACCOUNT: "This is an unclaimed account. Claim it before it's lost.",
                 NOTICE_UNVERIFIED_ACCOUNT: "Please check your email and follow the instructions to verify your account.",
                 NOTICE_NATIVE_APPS_2020_06: "Want to take full advantage of Discord with better performance, in-game overlay, and more? Get the desktop app!",
@@ -18078,7 +18079,7 @@
                 u = E("782340");
             (0, i.setUpdateRules)(s.default), (0, r.default)(u.default, n.default, T.default), a.default.Emitter.injectBatchEmitChanges(o.unstable_batchedUpdates), a.default.PersistedStore.disableWrites = __OVERLAY__, a.default.initialize();
             let L = window.GLOBAL_ENV.RELEASE_CHANNEL;
-            new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(L, ", Build Number: ").concat("244295", ", Version Hash: ").concat("2eafb2c4b805dfeca858efe3f3ca2b3bac27e895")), t.default.setTags({
+            new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(L, ", Build Number: ").concat("244307", ", Version Hash: ").concat("8a71eb3fc0dc64ac5727f0030033dfe606da5086")), t.default.setTags({
                 appContext: l.CURRENT_APP_CONTEXT
             }), S.default.initBasic(), N.default.init(), I.FocusRingManager.init(), O.init(), (0, R.cleanupTempFiles)()
         },
@@ -20462,8 +20463,8 @@
 
             function o() {
                 var e;
-                let _ = parseInt((e = "244295", "244295"));
-                return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("244295")), _ = 0), _
+                let _ = parseInt((e = "244307", "244307"));
+                return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("244307")), _ = 0), _
             }
         },
         990629: function(e, _, E) {
@@ -36350,4 +36351,4 @@
         }
     }
 ]);
-//# sourceMappingURL=98dd5203b6203f27c224.js.map
+//# sourceMappingURL=3ae20d6e9854095e779f.js.map
