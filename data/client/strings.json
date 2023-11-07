@@ -9524,6 +9524,7 @@
   "ONE_TIME_CHARGE_INFO": "\"This will be a one time charge for the amount of time chosen. You will not be billed yearly.\"",
   "GIFT_RECIPIENT_NOTIFICATION": "\"{recipientDisplayName}, you have a gift!\"",
   "GIFT_DURATION": "\"1 {timeInterval} of Nitro\"",
+  "BASIC_GIFT_DURATION": "\"1 {timeInterval} of Nitro Basic\"",
   "GIFT_OPEN_PROMPT": "\"Open gift\"",
   "GIFT_RECIPIENT_INFO": "\"To: {recipientDisplayName}\"",
   "GIFT_SENDER_INFO": "\"From: {senderDisplayName}\"",
