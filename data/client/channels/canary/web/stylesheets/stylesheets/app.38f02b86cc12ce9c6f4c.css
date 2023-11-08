@@ -34286,17 +34286,26 @@ html .progress__4ef76 {
     height: 68px;
     margin-top: 16px;
     border-radius: 50%;
-    background-color: var(--background-accent);
+    background-color: var(--background-accent)
+}
+
+.emptyChannelIconComponent_b97aed {
+    display: flex;
+    align-items: center;
+    justify-content: center
+}
+
+.emptyChannelIconSvg__25a2f {
     background-image: url(/assets/1b60cdb56c8c081495ac.svg);
     background-repeat: no-repeat;
     background-position: center
 }
 
-.emptyChannelIcon__1a1ba.locked_e10853 {
+.emptyChannelIconSvg__25a2f.locked_e10853 {
     background-image: url(/assets/bfba1f104721c7575159.svg)
 }
 
-.emptyChannelIcon__1a1ba.voiceChat_cde7ee {
+.emptyChannelIconSvg__25a2f.voiceChat_cde7ee {
     background-image: url(/assets/c4f5ae4d8c171de59f01.svg)
 }
 
@@ -123361,4 +123370,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=app.e6111af0aafdb16ff893.css.map*/
+/*# sourceMappingURL=app.38f02b86cc12ce9c6f4c.css.map*/

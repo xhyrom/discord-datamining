@@ -1,5 +1,5 @@
 (this.webpackChunkdiscord_app = this.webpackChunkdiscord_app || []).push([
-    ["24347"], {
+    ["73749"], {
         666020: function(e, t, n) {
             "use strict";
             n.r(t), n.d(t, {
@@ -179,10 +179,10 @@
                     return h
                 },
                 setPendingProfileEffectID: function() {
-                    return O
+                    return m
                 },
                 clearErrors: function() {
-                    return m
+                    return O
                 },
                 resetPendingAccountChanges: function() {
                     return U
@@ -356,14 +356,14 @@
                 })
             }
 
-            function O(e) {
+            function m(e) {
                 o.default.dispatch({
                     type: "USER_SETTINGS_ACCOUNT_SET_PENDING_PROFILE_EFFECT_ID",
                     profileEffectID: e
                 })
             }
 
-            function m() {
+            function O() {
                 o.default.dispatch({
                     type: "USER_SETTINGS_CLEAR_ERRORS"
                 })
@@ -767,6 +767,40 @@
                     children: (0, i.jsx)("path", {
                         fill: "string" == typeof o ? o : o.css,
                         d: "M13 6a1 1 0 1 0-2 0v5H6a1 1 0 1 0 0 2h5v5a1 1 0 1 0 2 0v-5h5a1 1 0 1 0 0-2h-5V6Z",
+                        className: u
+                    })
+                })
+            }
+        },
+        265614: function(e, t, n) {
+            "use strict";
+            n.r(t), n.d(t, {
+                ScreenIcon: function() {
+                    return o
+                }
+            });
+            var i = n("37983");
+            n("884691");
+            var r = n("669491"),
+                l = n("75196");
+            let o = e => {
+                let {
+                    width: t = 24,
+                    height: n = 24,
+                    color: o = r.default.colors.INTERACTIVE_NORMAL,
+                    colorClass: u = "",
+                    ...a
+                } = e;
+                return (0, i.jsx)("svg", {
+                    ...(0, l.default)(a),
+                    xmlns: "http://www.w3.org/2000/svg",
+                    width: t,
+                    height: n,
+                    fill: "none",
+                    viewBox: "0 0 24 24",
+                    children: (0, i.jsx)("path", {
+                        fill: "string" == typeof o ? o : o.css,
+                        d: "M5 2a3 3 0 0 0-3 3v8a3 3 0 0 0 3 3h14a3 3 0 0 0 3-3V5a3 3 0 0 0-3-3H5ZM13.5 20a.5.5 0 0 1-.5-.5v-2a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v2a.5.5 0 0 1-.5.5H9a1 1 0 1 0 0 2h6a1 1 0 1 0 0-2h-1.5Z",
                         className: u
                     })
                 })
@@ -2279,12 +2313,12 @@
                     A(null)
                 }, [N, A]), a(null != L, "Unknown step for current payment flow.");
                 let h = null !== (s = null == L ? void 0 : null === (t = L.options) || void 0 === t ? void 0 : t.hideSlider) && void 0 !== s && s,
-                    O = null == L ? void 0 : null === (n = L.options) || void 0 === n ? void 0 : n.bodyClassName,
-                    m = void 0 !== T && T ? _.sliderBodyLarge : null == L ? void 0 : null === (l = L.options) || void 0 === l ? void 0 : l.sliderBodyClassName;
+                    m = null == L ? void 0 : null === (n = L.options) || void 0 === n ? void 0 : n.bodyClassName,
+                    O = void 0 !== T && T ? _.sliderBodyLarge : null == L ? void 0 : null === (l = L.options) || void 0 === l ? void 0 : l.sliderBodyClassName;
                 return (0, i.jsxs)(i.Fragment, {
                     children: [null === (c = null == L ? void 0 : null === (u = L.options) || void 0 === u ? void 0 : u.renderHeader) || void 0 === c || c ? I : null, L.renderStep(f), null == N || h ? null : (0, i.jsxs)(i.Fragment, {
                         children: [(0, i.jsx)(d.ModalContent, {
-                            className: o(_.body, O),
+                            className: o(_.body, m),
                             children: (0, i.jsx)(d.Slides, {
                                 activeSlide: N,
                                 centered: !1,
@@ -2292,7 +2326,7 @@
                                 children: S.filter(e => null != e.key).map(e => (0, i.jsx)(d.Slide, {
                                     id: e.key,
                                     children: (0, i.jsx)("form", {
-                                        className: o(_.sliderBody, m),
+                                        className: o(_.sliderBody, O),
                                         ref: e => C(e),
                                         onSubmit: e => e.preventDefault()
                                     })
@@ -2359,8 +2393,8 @@
                     giftMessage: R,
                     subscriptionTier: L,
                     trialId: h,
-                    postSuccessGuild: O,
-                    openInvoiceId: m,
+                    postSuccessGuild: m,
+                    openInvoiceId: O,
                     applicationId: U,
                     referralTrialOfferId: g,
                     giftRecipient: v,
@@ -2397,9 +2431,9 @@
                             analyticsLocation: C,
                             analyticsSourceLocation: p,
                             trialId: h,
-                            postSuccessGuild: O,
+                            postSuccessGuild: m,
                             planGroup: E.ORDERED_PREMIUM_SUBSCRIPTION_PLANS,
-                            openInvoiceId: m,
+                            openInvoiceId: O,
                             applicationId: U,
                             referralTrialOfferId: g,
                             returnRef: M
@@ -4277,4 +4311,4 @@
         }
     }
 ]);
-//# sourceMappingURL=d9bb0847d826fc3cec91.js.map
+//# sourceMappingURL=472ef6caafde49a5fb43.js.map

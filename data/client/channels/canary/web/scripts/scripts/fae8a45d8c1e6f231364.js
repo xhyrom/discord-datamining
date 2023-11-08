@@ -17555,6 +17555,68 @@
                 })
             }
         },
+        568131: function(e, _, E) {
+            "use strict";
+            E.r(_), E.d(_, {
+                fetchLibrary: function() {
+                    return i
+                },
+                createTestModeLibraryApplications: function() {
+                    return I
+                },
+                setActiveLaunchOptionId: function() {
+                    return s
+                }
+            });
+            var t = E("872717"),
+                o = E("913144"),
+                n = E("370999"),
+                r = E("271560"),
+                a = E("49111");
+            async function i() {
+                try {
+                    let e = await (0, r.httpGetWithCountryCodeQuery)({
+                        url: a.Endpoints.LIBRARY,
+                        oldFormErrors: !0
+                    }, !1);
+                    o.default.dispatch({
+                        type: "LIBRARY_FETCH_SUCCESS",
+                        libraryApplications: e.body
+                    })
+                } catch (e) {
+                    o.default.dispatch({
+                        type: "LIBRARY_FETCH_FAIL",
+                        error: e
+                    })
+                }
+            }
+            async function I(e) {
+                let _ = e.primarySkuId;
+                if (null == _) return;
+                let E = await t.default.get({
+                        url: a.Endpoints.APPLICATION_BRANCH_LIST(e.id),
+                        oldFormErrors: !0
+                    }).then(e => e.body),
+                    r = E.map(E => n.default.createForTestMode({
+                        id: e.id,
+                        skuId: _,
+                        branch: E
+                    }));
+                o.default.dispatch({
+                    type: "LIBRARY_APPLICATIONS_TEST_MODE_ENABLED",
+                    libraryApplications: r
+                })
+            }
+
+            function s(e, _, E) {
+                o.default.dispatch({
+                    type: "LIBRARY_APPLICATION_ACTIVE_LAUNCH_OPTION_UPDATE",
+                    applicationId: e,
+                    branchId: _,
+                    launchOptionId: E
+                })
+            }
+        },
         193990: function(e, _, E) {
             "use strict";
             E.r(_), E.d(_, {
@@ -18079,7 +18141,7 @@
                 u = E("782340");
             (0, i.setUpdateRules)(s.default), (0, r.default)(u.default, n.default, T.default), a.default.Emitter.injectBatchEmitChanges(o.unstable_batchedUpdates), a.default.PersistedStore.disableWrites = __OVERLAY__, a.default.initialize();
             let L = window.GLOBAL_ENV.RELEASE_CHANNEL;
-            new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(L, ", Build Number: ").concat("244322", ", Version Hash: ").concat("493fcd2f48eba8c3c601fca60cfc7394884ceed5")), t.default.setTags({
+            new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(L, ", Build Number: ").concat("244409", ", Version Hash: ").concat("f2025e2cc3db28029d4e5e8df5992a5944733f2b")), t.default.setTags({
                 appContext: l.CURRENT_APP_CONTEXT
             }), S.default.initBasic(), N.default.init(), I.FocusRingManager.init(), O.init(), (0, R.cleanupTempFiles)()
         },
@@ -19657,6 +19719,11 @@
                     actions: ["CHANNEL_SELECT"],
                     inlineRequire: () => E("596512").default,
                     neverLoadBeforeConnectionOpen: !0
+                },
+                DetectableGamesManager: {
+                    actions: ["POST_CONNECTION_OPEN"],
+                    inlineRequire: () => E("597090").default,
+                    neverLoadBeforeConnectionOpen: !0
                 }
             };
             (0, t.initialize)(o)
@@ -20463,8 +20530,8 @@
 
             function o() {
                 var e;
-                let _ = parseInt((e = "244322", "244322"));
-                return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("244322")), _ = 0), _
+                let _ = parseInt((e = "244409", "244409"));
+                return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("244409")), _ = 0), _
             }
         },
         990629: function(e, _, E) {
@@ -22796,6 +22863,30 @@
                     errorCode: E.code
                 })), r
             }
+        },
+        597090: function(e, _, E) {
+            "use strict";
+            E.r(_), E.d(_, {
+                default: function() {
+                    return I
+                }
+            }), E("222007");
+            var t = E("823411"),
+                o = E("568131"),
+                n = E("689988"),
+                r = E("686470"),
+                a = E("773336");
+            class i extends n.default {
+                handlePostConnectionOpen() {
+                    (0, a.isDesktop)() && (!r.default.fetched && (0, o.fetchLibrary)(), t.default.getDetectableGames())
+                }
+                constructor(...e) {
+                    super(...e), this.actions = {
+                        POST_CONNECTION_OPEN: this.handlePostConnectionOpen
+                    }
+                }
+            }
+            var I = new i
         },
         676258: function(e, _, E) {
             "use strict";
@@ -36351,4 +36442,4 @@
         }
     }
 ]);
-//# sourceMappingURL=db8b2d00267b0e6aacca.js.map
+//# sourceMappingURL=fae8a45d8c1e6f231364.js.map
