@@ -417,8 +417,8 @@
                 S = l("773336"),
                 I = l("50885"),
                 N = l("13798"),
-                f = l("860957"),
-                L = l("49111"),
+                L = l("860957"),
+                f = l("49111"),
                 C = l("80028"),
                 D = l("846325"),
                 y = l("390493");
@@ -428,7 +428,7 @@
                 h = 0,
                 g = !0,
                 P = {},
-                G = [L.GlobalKeybindActions.PUSH_TO_TALK, L.GlobalKeybindActions.TOGGLE_OVERLAY_INPUT_LOCK, L.GlobalKeybindActions.OVERLAY_ACTIVATE_REGION_TEXT_WIDGET];
+                G = [f.GlobalKeybindActions.PUSH_TO_TALK, f.GlobalKeybindActions.TOGGLE_OVERLAY_INPUT_LOCK, f.GlobalKeybindActions.OVERLAY_ACTIVATE_REGION_TEXT_WIDGET];
 
             function U(e) {
                 if (S.isPlatformEmbedded) I.default.inputEventUnregister(parseInt(e, 10));
@@ -449,7 +449,7 @@
                     action: l,
                     enabled: n
                 } = e;
-                if ("" === t || null == t || l === L.GlobalKeybindActions.UNASSIGNED || !n) return;
+                if ("" === t || null == t || l === f.GlobalKeybindActions.UNASSIGNED || !n) return;
                 if (null == P[l]) {
                     R.error("[kb store] KeybindStore: Looking for callback action ".concat(l, " but it doesn't exist in this version. Skipping"));
                     return
@@ -479,7 +479,7 @@
                 let t = {
                     id: h.toString(),
                     enabled: !0,
-                    action: L.GlobalKeybindActions.UNASSIGNED,
+                    action: f.GlobalKeybindActions.UNASSIGNED,
                     shortcut: [],
                     managed: !1,
                     params: {},
@@ -504,14 +504,14 @@
                 p = {
                     ...p,
                     [t.id]: t
-                }, !__OVERLAY__ && (A.default.track(L.AnalyticEvents.USER_SETTINGS_KEYBIND_UPDATED, {
+                }, !__OVERLAY__ && (A.default.track(f.AnalyticEvents.USER_SETTINGS_KEYBIND_UPDATED, {
                     keybind_action: t.action,
                     keybind_is_bound: !0,
                     keybind_has_shortcut: t.shortcut.length > 0
-                }), t.action === L.GlobalKeybindActions.TOGGLE_OVERLAY_INPUT_LOCK ? A.default.track(L.AnalyticEvents.OVERLAY_SETTINGS_UPDATED, {
-                    hotkey: t.action === L.GlobalKeybindActions.TOGGLE_OVERLAY_INPUT_LOCK ? (0, N.toString)(t.shortcut) : null
-                }) : t.action === L.GlobalKeybindActions.OVERLAY_ACTIVATE_REGION_TEXT_WIDGET && A.default.track(L.AnalyticEvents.OVERLAY_SETTINGS_UPDATED, {
-                    text_activation_hotkey: t.action === L.GlobalKeybindActions.OVERLAY_ACTIVATE_REGION_TEXT_WIDGET ? (0, N.toString)(t.shortcut) : null
+                }), t.action === f.GlobalKeybindActions.TOGGLE_OVERLAY_INPUT_LOCK ? A.default.track(f.AnalyticEvents.OVERLAY_SETTINGS_UPDATED, {
+                    hotkey: t.action === f.GlobalKeybindActions.TOGGLE_OVERLAY_INPUT_LOCK ? (0, N.toString)(t.shortcut) : null
+                }) : t.action === f.GlobalKeybindActions.OVERLAY_ACTIVATE_REGION_TEXT_WIDGET && A.default.track(f.AnalyticEvents.OVERLAY_SETTINGS_UPDATED, {
+                    text_activation_hotkey: t.action === f.GlobalKeybindActions.OVERLAY_ACTIVATE_REGION_TEXT_WIDGET ? (0, N.toString)(t.shortcut) : null
                 })), b(t)
             }
 
@@ -529,11 +529,11 @@
             let V = [function() {
                 let e = T.default.getShortcuts();
                 return _.each(p, t => {
-                    t.action === L.GlobalKeybindActions.PUSH_TO_TALK && !0 === t.managed && (null == t.context || null == e[t.context]) && M(t)
+                    t.action === f.GlobalKeybindActions.PUSH_TO_TALK && !0 === t.managed && (null == t.context || null == e[t.context]) && M(t)
                 }), _.reduce(T.default.getShortcuts(), (e, t, l) => {
-                    let n = _.find(p, e => e.action === L.GlobalKeybindActions.PUSH_TO_TALK && !0 === e.managed && e.context === l);
+                    let n = _.find(p, e => e.action === f.GlobalKeybindActions.PUSH_TO_TALK && !0 === e.managed && e.context === l);
                     if (null == n) b(m({
-                        action: L.GlobalKeybindActions.PUSH_TO_TALK,
+                        action: f.GlobalKeybindActions.PUSH_TO_TALK,
                         enabled: !0,
                         shortcut: t,
                         managed: !0,
@@ -553,13 +553,13 @@
                     return !0
                 }, !1)
             }, function() {
-                return !!f.default.enabled && H(L.GlobalKeybindActions.TOGGLE_OVERLAY_INPUT_LOCK, "shift+`")
+                return !!L.default.enabled && H(f.GlobalKeybindActions.TOGGLE_OVERLAY_INPUT_LOCK, "shift+`")
             }, function() {
-                return !!f.default.enabled && H(L.GlobalKeybindActions.OVERLAY_ACTIVATE_REGION_TEXT_WIDGET, "]`")
+                return !!L.default.enabled && H(f.GlobalKeybindActions.OVERLAY_ACTIVATE_REGION_TEXT_WIDGET, "]`")
             }, function() {
-                return H(L.GlobalKeybindActions.SOUNDBOARD_HOLD, D.DEFAULT_KEYBIND, !1)
+                return H(f.GlobalKeybindActions.SOUNDBOARD_HOLD, D.DEFAULT_KEYBIND, !1)
             }, function() {
-                return H(L.GlobalKeybindActions.SAVE_CLIP, C.DEFAULT_KEYBIND)
+                return H(f.GlobalKeybindActions.SAVE_CLIP, C.DEFAULT_KEYBIND)
             }];
 
             function w() {
@@ -572,7 +572,7 @@
             });
             class W extends u.default.DeviceSettingsStore {
                 initialize(e) {
-                    !__OVERLAY__ && this.waitFor(T.default, f.default), p = null != e ? e : {}
+                    !__OVERLAY__ && this.waitFor(T.default, L.default), p = null != e ? e : {}
                 }
                 getUserAgnosticState() {
                     return p
@@ -595,10 +595,10 @@
                     return _.find(p, l => l.action === e && (!t || t && !0 === l.managed))
                 }
                 getOverlayKeybind() {
-                    return this.getKeybindForAction(L.GlobalKeybindActions.TOGGLE_OVERLAY_INPUT_LOCK, !0)
+                    return this.getKeybindForAction(f.GlobalKeybindActions.TOGGLE_OVERLAY_INPUT_LOCK, !0)
                 }
                 getOverlayChatKeybind() {
-                    return this.getKeybindForAction(L.GlobalKeybindActions.OVERLAY_ACTIVATE_REGION_TEXT_WIDGET, !0)
+                    return this.getKeybindForAction(f.GlobalKeybindActions.OVERLAY_ACTIVATE_REGION_TEXT_WIDGET, !0)
                 }
             }
             W.displayName = "KeybindsStore", W.persistKey = "keybinds", W.migrations = [function() {
@@ -616,7 +616,7 @@
                     keybinds: t = e
                 } = e;
                 return _.reduce(t, (e, t, l) => {
-                    if ((0, S.isLinux)() && t.action === L.GlobalKeybindActions.SOUNDBOARD_HOLD) {
+                    if ((0, S.isLinux)() && t.action === f.GlobalKeybindActions.SOUNDBOARD_HOLD) {
                         let l = t.shortcut.map(e => e[1]),
                             n = (0, N.toCombo)("`").map(e => e[1]);
                         if (r(l, n)) return e
@@ -660,7 +660,7 @@
                     let {
                         id: t
                     } = e, l = p[t];
-                    !__OVERLAY__ && A.default.track(L.AnalyticEvents.USER_SETTINGS_KEYBIND_UPDATED, {
+                    !__OVERLAY__ && A.default.track(f.AnalyticEvents.USER_SETTINGS_KEYBIND_UPDATED, {
                         keybind_action: l.action,
                         keybind_is_bound: !1,
                         keybind_has_shortcut: !1
@@ -698,7 +698,7 @@
                     return en
                 },
                 default: function() {
-                    return ef
+                    return eL
                 }
             }), l("222007"), l("70102"), l("311790"), l("477657"), l("811875"), l("90301"), l("652153"), l("28797"), l("817884"), l("597349"), l("667536"), l("690341"), l("101997"), l("313619"), l("654714"), l("287168"), l("956660"), l("860677");
             var i, o, E = l("992830"),
@@ -714,8 +714,8 @@
                 S = l("121338"),
                 I = l("605250"),
                 N = l("630915"),
-                f = l("32128"),
-                L = l("127080"),
+                L = l("32128"),
+                f = l("127080"),
                 C = l("116949"),
                 D = l("271938"),
                 y = l("546463"),
@@ -819,7 +819,7 @@
                 let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : null;
                 switch (null == e && (e = V && W ? v.default.getOverlayEligiblePIDs() : []), w) {
                     case U.OverlayMethod.Global:
-                        var t, l, n, a, i, o, E, r, d, _, u, c, s, O, A, S, I, N, f, L;
+                        var t, l, n, a, i, o, E, r, d, _, u, c, s, O, A, S, I, N, L, f;
                         let C = v.default.getVisibleGame(),
                             D = -1 !== e.indexOf(null !== (t = null == C ? void 0 : C.pid) && void 0 !== t ? t : -1);
                         if (null != C && D) {
@@ -848,7 +848,7 @@
                                     null === (l = T.default) || void 0 === l || null === (t = l.globalOverlay) || void 0 === t || t.showOverlay()
                                 }
                             })
-                        } else await (null === (N = T.default) || void 0 === N ? void 0 : null === (I = N.globalOverlay) || void 0 === I ? void 0 : null === (S = I.closeOverlay) || void 0 === S ? void 0 : S.call(I)), null === (f = (L = g.default.getDiscordUtils()).globalOverlayClearTrackedGame) || void 0 === f || f.call(L), F = null;
+                        } else await (null === (N = T.default) || void 0 === N ? void 0 : null === (I = N.globalOverlay) || void 0 === I ? void 0 : null === (S = I.closeOverlay) || void 0 === S ? void 0 : S.call(I)), null === (L = (f = g.default.getDiscordUtils()).globalOverlayClearTrackedGame) || void 0 === L || L.call(f), F = null;
                         break;
                     case U.OverlayMethod.Hook:
                     case U.OverlayMethod.Default:
@@ -889,7 +889,7 @@
                 })(),
                 ei = j(b, async e => {
                     if (!U.OVERLAY_SUPPORTED || V === e) return;
-                    V = e, f.OverlayStoredSettings.update({
+                    V = e, L.OverlayStoredSettings.update({
                         enabled: e
                     }), eN.emitChange();
                     let t = await ea();
@@ -984,7 +984,7 @@
                     case G.OverlayEventTypes.CONNECT:
                         let t = D.default.getToken();
                         if (null == t) break;
-                        (0, c.createLayout)(P.OVERLAY_LAYOUT_ID, R.default.getDefaultLayout(P.OVERLAY_LAYOUT_ID)), Promise.all([(0, L.default)(t, e.pid), r.default.PersistedStore.getAllStates()]).then(t => {
+                        (0, c.createLayout)(P.OVERLAY_LAYOUT_ID, R.default.getDefaultLayout(P.OVERLAY_LAYOUT_ID)), Promise.all([(0, f.default)(t, e.pid), r.default.PersistedStore.getAllStates()]).then(t => {
                             let [l, n] = t, {
                                 pid: a,
                                 token: o
@@ -1016,13 +1016,13 @@
                 N.default.subscribe({
                     location: "1"
                 }, t => {
-                    null != t && t.useGlobalOverlay && H.add(U.OverlayMethod.Global), w = f.OverlayStoredSettings.method, e()
+                    null != t && t.useGlobalOverlay && H.add(U.OverlayMethod.Global), w = L.OverlayStoredSettings.method, e()
                 })
             });
             class eI extends r.default.Store {
                 initialize() {
                     !(!U.OVERLAY_SUPPORTED || __OVERLAY__) && (H.add(U.OverlayMethod.Hook), this.waitFor(v.default, D.default), this.syncWith([v.default], ed), S.setReceiveCommandHandler(eA, eT), D.default.addChangeListener(er), eS.then(() => {
-                        ei(f.OverlayStoredSettings.enabled), d.default.addInterceptor(es)
+                        ei(L.OverlayStoredSettings.enabled), d.default.addInterceptor(es)
                     }))
                 }
                 isInputLocked(e) {
@@ -1066,7 +1066,7 @@
                 },
                 OVERLAY_SET_METHOD: function(e) {
                     if (e.method !== w) return b(async () => {
-                        await et([]), w = e.method, f.OverlayStoredSettings.update({
+                        await et([]), w = e.method, L.OverlayStoredSettings.update({
                             method: w
                         }), await et(), eN.emitChange()
                     }), !1
@@ -1105,7 +1105,7 @@
                     } = e, l = crypto.getRandomValues(new Uint8Array(8));
                     k = btoa(String.fromCharCode(...l));
                     let a = new URLSearchParams;
-                    a.append("build_id", "dfe8e8f334ee383f82b4fe058e8abbf49af53567"), a.append("rpc", String(t)), a.append("rpc_auth_token", k), n = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(a.toString())
+                    a.append("build_id", "2629c28b4bdfbcdd303562ae4557078a5f5689cb"), a.append("rpc", String(t)), a.append("rpc_auth_token", k), n = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(a.toString())
                 },
                 OVERLAY_CALL_PRIVATE_CHANNEL: function(e) {
                     let {
@@ -1141,7 +1141,7 @@
                     q(t, i.CRASHED)
                 }
             });
-            var ef = eN
+            var eL = eN
         },
         27571: function(e, t, l) {
             "use strict";
@@ -1175,4 +1175,4 @@
         }
     }
 ]);
-//# sourceMappingURL=a810e6ed501e14ab56ec.js.map
+//# sourceMappingURL=3c65766973f7e43257dc.js.map
