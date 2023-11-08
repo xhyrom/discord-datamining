@@ -15956,7 +15956,17 @@
                 ASSISTANT_SKIP_BUTTON: "Skip Tutorial",
                 ASSISTANT_SPLASH_TITLE: "Welcome, $[username](usernameHook)",
                 ASSISTANT_SPLASH_DESCRIPTION: "Say hello to Wumpus, our mascot and your personal guide through Discord!",
-                ASSISTANT_SPLASH_BUTTON: "Get Started"
+                ASSISTANT_SPLASH_BUTTON: "Get Started",
+                ASSISTANT_SPLASH_BODY: "Say hi to Wumpus, he's here to show you how Discord works!",
+                ASSISTANT_VOICE_STEP_BODY: '**Tap "Join"** to show your friends you\'re available to hang.',
+                ASSISTANT_VOICE_JOINED_STEP_BODY: "**Nice!** Now your friends can see you're around and stop by!",
+                ASSISTANT_TEXT_STEP_BODY: "**Text in the main chat** while you chill in !!{voiceChannelName}!!.",
+                ASSISTANT_TEXT_STEP_BODY_NO_VC: "Text in the main chat.",
+                ASSISTANT_CHAT_BANNER_TEXT: "Say hi so your friends know you're here.",
+                ASSISTANT_CHAT_BANNER_BUTTON_TEXT: "Wave",
+                ASSISTANT_CHAT_BANNER_CLOSE_A11Y_LABEL: "Close",
+                ASSISTANT_VOICE_PANEL_PIP_OVERLAY_TITLE: "While you're chilling, friends will pop in like this. Tap to see more.",
+                ASSISTANT_VOICE_PANEL_ACTIVITY_TITLE: "Share your screen, listen to music or play games together!"
             })
         },
         444051: function(e, _, E) {
@@ -18131,7 +18141,7 @@
                 u = E("782340");
             (0, i.setUpdateRules)(s.default), (0, r.default)(u.default, n.default, T.default), a.default.Emitter.injectBatchEmitChanges(o.unstable_batchedUpdates), a.default.PersistedStore.disableWrites = __OVERLAY__, a.default.initialize();
             let L = window.GLOBAL_ENV.RELEASE_CHANNEL;
-            new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(L, ", Build Number: ").concat("244561", ", Version Hash: ").concat("0dffc4432c4a26b0028baf824f76cba51f3c5e59")), t.default.setTags({
+            new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(L, ", Build Number: ").concat("244572", ", Version Hash: ").concat("6cfdd2b5915decf2bac38f8a1a1ab1f063fc46fe")), t.default.setTags({
                 appContext: l.CURRENT_APP_CONTEXT
             }), S.default.initBasic(), N.default.init(), I.FocusRingManager.init(), O.init(), (0, R.cleanupTempFiles)()
         },
@@ -20520,8 +20530,8 @@
 
             function o() {
                 var e;
-                let _ = parseInt((e = "244561", "244561"));
-                return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("244561")), _ = 0), _
+                let _ = parseInt((e = "244572", "244572"));
+                return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("244572")), _ = 0), _
             }
         },
         990629: function(e, _, E) {
@@ -36432,4 +36442,4 @@
         }
     }
 ]);
-//# sourceMappingURL=8f422ec157e9d6aa6422.js.map
+//# sourceMappingURL=8589f3fab240a1376014.js.map
