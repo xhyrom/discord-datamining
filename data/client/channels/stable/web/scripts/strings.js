@@ -14955,17 +14955,12 @@
                 INVENTORY_ADD_NITRO_DESCRIPTION_WITH_PLURAL: "You have already added your {maxFreePacks, plural, one {**{maxFreePacks}** free pack} other {**{maxFreePacks}** free packs}}. Upgrade to Nitro to add up to **{maxPacks}**.",
                 INVENTORY_EMOJI_DETAILS: "See details",
                 INVENTORY_EMOJI_DETAILS_V2: "See emoji details",
-                INVENTORY_ALLOW_USE_SETTING_MOBILE: "Allow anyone to use server emoji",
-                INVENTORY_ALLOW_USE_SETTING: "Allow anyone to use and collect this server’s emoji",
                 INVENTORY_ALLOW_USE_SETTING_V2: "Allow anyone to add and use this server’s emoji",
                 INVENTORY_EMOJI_VISIBLE_DESCRIPTION: "Custom emoji from this server will be visible in previews across servers.",
-                INVENTORY_EMOJI_COLLECTED_DESCRIPTION: "{number, plural, one {**{number}** person has} other {**{number}** people have}} collected your server’s emoji.",
                 INVENTORY_EMOJI_COLLECTED_DESCRIPTION_V2: "{number, plural, one {**{number}** person has} other {**{number}** people have}} added your server’s emoji.",
                 INVENTORY_NEW_SETTING: "New Emoji Setting",
-                INVENTORY_NEW_SETTING_DESCRIPTION_SOON: "Starting soon, users outside of your server will be able to collect and use your server's emoji. You can change this setting at any time.",
                 INVENTORY_NEW_SETTING_DESCRIPTION_SOON_V2: "Starting soon, users outside of your server will be able to access your server's emoji and use them throughout Discord. You can change this setting at any time.",
                 INVENTORY_VIEW_SETTING: "View Setting",
-                INVENTORY_DISABLE_SETTING_TITLE: "Are you sure you want to disable collection?",
                 INVENTORY_DISABLE_SETTING_TITLE_V2: "Are you sure you want to turn off external access to your server’s emoji?",
                 INVENTORY_DISABLE_SETTING_TITLE_MOBILE: "Disable Pack Collection",
                 INVENTORY_DISABLE_SETTING_DESCRIPTION: "{collectedCount, plural, one {**{collectedCount}** person} other {**{collectedCount}** people}} will lose access to your server’s emoji.",
@@ -14973,11 +14968,6 @@
                 INVENTORY_DISABLE_SETTING_TOAST_DESCRIPTION: "Non-members of your server can no longer access and use your server’s emoji.",
                 INVENTORY_LOCKED_PACK_EMOJI_UPSELL: "To use the full pack from **!!{packName}!!**, upgrade to Nitro",
                 INVENTORY_LEAVE_SERVER_DESCRIPTION: "Keep emoji from servers you aren’t in.",
-                INVENTORY_TRY_PACKS_TITLE: "Add your favorite emoji packs",
-                INVENTORY_TRY_PACKS_DESCRIPTION: "Now you can add up to {maxPacks} emoji packs straight to your emoji picker with Nitro.",
-                INVENTORY_TRY_PACKS_DESCRIPTION_2: "Here are some popular packs to get you started:",
-                INVENTORY_TRY_PACKS_DESCRIPTION_FREEMIUM: "Now you can add {maxFreePacks, plural, one {{maxFreePacks} emoji pack} other {{maxFreePacks} emoji packs}} straight to your emoji picker and use {maxFreePacks, plural, one {it} other {them}} anywhere on Discord.",
-                INVENTORY_TRY_PACKS_DESCRIPTION_FREEMIUM_2: "Let the emoji party begin with one of the popular packs below:",
                 INVENTORY_TRY_PACKS_TITLE_NITRO: "Up your emoji game with packs",
                 INVENTORY_TRY_PACKS_TITLE_FREEMIUM: "Start your emoji collection with a free pack",
                 INVENTORY_TRY_PACKS_DESCRIPTION_V2: "You can now click on emoji from [eligible servers]({helpCenterLink}) to add a pack straight to your emoji collection.",
@@ -15966,7 +15956,17 @@
                 ASSISTANT_SKIP_BUTTON: "Skip Tutorial",
                 ASSISTANT_SPLASH_TITLE: "Welcome, $[username](usernameHook)",
                 ASSISTANT_SPLASH_DESCRIPTION: "Say hello to Wumpus, our mascot and your personal guide through Discord!",
-                ASSISTANT_SPLASH_BUTTON: "Get Started"
+                ASSISTANT_SPLASH_BUTTON: "Get Started",
+                ASSISTANT_SPLASH_BODY: "Say hi to Wumpus, he's here to show you how Discord works!",
+                ASSISTANT_VOICE_STEP_BODY: '**Tap "Join"** to show your friends you\'re available to hang.',
+                ASSISTANT_VOICE_JOINED_STEP_BODY: "**Nice!** Now your friends can see you're around and stop by!",
+                ASSISTANT_TEXT_STEP_BODY: "**Text in the main chat** while you chill in !!{voiceChannelName}!!.",
+                ASSISTANT_TEXT_STEP_BODY_NO_VC: "Text in the main chat.",
+                ASSISTANT_CHAT_BANNER_TEXT: "Say hi so your friends know you're here.",
+                ASSISTANT_CHAT_BANNER_BUTTON_TEXT: "Wave",
+                ASSISTANT_CHAT_BANNER_CLOSE_A11Y_LABEL: "Close",
+                ASSISTANT_VOICE_PANEL_PIP_OVERLAY_TITLE: "While you're chilling, friends will pop in like this. Tap to see more.",
+                ASSISTANT_VOICE_PANEL_ACTIVITY_TITLE: "Share your screen, listen to music or play games together!"
             })
         },
         444051: function(e, _, E) {
@@ -18141,7 +18141,7 @@
                 u = E("782340");
             (0, i.setUpdateRules)(s.default), (0, r.default)(u.default, n.default, T.default), a.default.Emitter.injectBatchEmitChanges(o.unstable_batchedUpdates), a.default.PersistedStore.disableWrites = __OVERLAY__, a.default.initialize();
             let L = window.GLOBAL_ENV.RELEASE_CHANNEL;
-            new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(L, ", Build Number: ").concat("244358", ", Version Hash: ").concat("c189fc12370cb266be57cc968e278e86f7030f9b")), t.default.setTags({
+            new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(L, ", Build Number: ").concat("244594", ", Version Hash: ").concat("b95e30fe0ae50f3f150dc42d20369445fbfdb3ed")), t.default.setTags({
                 appContext: l.CURRENT_APP_CONTEXT
             }), S.default.initBasic(), N.default.init(), I.FocusRingManager.init(), O.init(), (0, R.cleanupTempFiles)()
         },
@@ -20530,8 +20530,8 @@
 
             function o() {
                 var e;
-                let _ = parseInt((e = "244358", "244358"));
-                return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("244358")), _ = 0), _
+                let _ = parseInt((e = "244594", "244594"));
+                return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("244594")), _ = 0), _
             }
         },
         990629: function(e, _, E) {
@@ -36442,4 +36442,4 @@
         }
     }
 ]);
-//# sourceMappingURL=ce9a11b74fd1658abe56.js.map
+//# sourceMappingURL=d13d362ac5338cd65242.js.map
