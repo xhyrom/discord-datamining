@@ -20,9 +20,9 @@
     <div class="btn-wrapper w-condition-invisible"><a href="#" class="btn-blog w-dyn-bind-empty w-button"></a></div>
     <div id="heading-2" class="rich-wrapper">
         <div class="blog-post-content w-richtext">
-            <h2><strong>How to use Super Reactions with Nitro</strong></h2>
-            <p><strong>Subscribers to any tier of Nitro will be able to use unlimited Super Reactions</strong> on a message. When you do, your emoji reaction will pop up on the page with a fun animation. If you want, you can add another emoji as a Super Reaction right after… and again… and <em>again…</em>&nbsp;<strong>‍</strong></p>
-            <p><strong>Any of your emojis can be used as a Super Reaction</strong>: That in-joke emoji of your friend’s face after eating a whole lemon? Super-Lemon. Your favorite streamer’s pog emoji? Super-Pog. The incredibly low-resolution animated emoji that’s actually a 15-minute video clip you managed to shove into the 256 KB emoji file limit? You’re obligated to sit through the whole thing now.&nbsp;</p>
+            <h2>How to use Super Reactions with Nitro</h2>
+            <p><strong>Subscribers to any tier of Nitro will be able to use unlimited Super Reactions</strong> on a message. When you do, your emoji reaction will pop up on the page with a fun animation. If you want, you can add another emoji as a Super Reaction right after... and again... and <em>again</em>...<strong>‍</strong></p>
+            <p><strong>Any of your emojis can be used as a Super Reaction</strong>: That in-joke emoji of your friend’s face after eating a whole lemon? Super-Lemon. Your favorite streamer’s pog emoji? Super-Pog. The incredibly low-resolution animated emoji that’s actually a 15-minute video clip you managed to shove into the 256 KB emoji file limit? You’re obligated to sit through the whole thing now.</p>
             <figure class="w-richtext-figure-type-image w-richtext-align-fullwidth" style="max-width:1600pxpx">
                 <div><img src="https://assets-global.website-files.com/5f9072399b2640f14d6a2bf4/654412d22b38e8e74ae7c07d_kADZ81ibrAEkmpGVWsfH1TQAG3YFp_rRHJ08VPoU_QDt3EBdzGwHf9FIsMrWXG0y4upkibJqspwpsOERrmjsOvDofMSHm0wzAkTHjqwxi5LAXwjnwXPMJva446DCa4hvr_JtkEpIFM2SuyB5qECyzyc.png" alt="When selecting a Reaction, you’ll see a new Super Reaction option. Selecting a Super Reaction works just like a normal Reaction.&nbsp;"></div>
                 <figcaption>When selecting a Reaction, you’ll see a new Super Reaction option. Selecting a Super Reaction works just like a normal Reaction.&nbsp;</figcaption>
