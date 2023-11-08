@@ -23071,7 +23071,7 @@
                     return this.type === c.MessageTypes.CHAT_INPUT_COMMAND || this.type === c.MessageTypes.CONTEXT_MENU_COMMAND
                 }
                 isPoll() {
-                    return null != this.poll || this.type === c.MessageTypes.POLL
+                    return null != this.poll
                 }
                 toJS() {
                     return {
@@ -33031,4 +33031,4 @@
         }
     }
 ]);
-//# sourceMappingURL=1670b1e49a739a399f8d.js.map
+//# sourceMappingURL=579236f60c9ad5a01b7a.js.map
