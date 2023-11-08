@@ -95,7 +95,7 @@
 <h2 id="h_01HE3QEPTDRR6SA6RD4FANED0A"><strong>Promotion Details</strong></h2>
 <p><strong>Q: How long does this promotion for Nitro Members run for?</strong></p>
 <p><strong>A: </strong>This promotion runs from O<strong>ctober 31, 2023 (5PM PT)</strong> to <strong>December 29, 2023 (8PM PT)</strong>.</p>
-<p>After <strong>December 29, 2023 (8PM PT)</strong>, Nitro members will no longer be able to claim a trial code.</p>
+<p>After <strong>December 29, 2023 (8PM PT)</strong>, Nitro members will no longer be able to claim the bundle code.</p>
 <p><strong>Q: How long does my Party Animals Exclusive Nitro Bundle code last for in my Gift Inventory?</strong></p>
 <p><strong>A: </strong>Once a code is claimed in the <strong>Gift Inventory</strong> in Discord, all Party Animals Exclusive Nitro Bundle code must be redeemed by <strong>December 29, 2023 (8PM PT)</strong>.</p>
 <p>If a code has not been redeemed to the Party Animals account by <strong>December 29, 2023 (8PM PT)</strong>, it will expire and you will no longer be able to claim the Party Animals Exclusive Nitro Bundle.</p>
