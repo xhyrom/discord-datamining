@@ -21157,8 +21157,11 @@
                 CLIPS_THUMBNAIL_MAX_HEIGHT: function() {
                     return N
                 },
-                CLIP_NAME_TEMPLATE: function() {
+                CLIPS_MAX_PARTICIPANTS: function() {
                     return O
+                },
+                CLIP_NAME_TEMPLATE: function() {
+                    return D
                 }
             });
             var i, r, s, a, o, l, u = n("605250"),
@@ -21180,7 +21183,8 @@
                 v = "clips-gallery",
                 R = 640,
                 N = 360,
-                O = e => "Clip - ".concat(new Date(e).toLocaleString())
+                O = 100,
+                D = e => "Clip - ".concat(new Date(e).toLocaleString())
         },
         386045: function(e, t, n) {
             "use strict";
@@ -21458,6 +21462,27 @@
                     return i
                 }
             }), (r = i || (i = {})).UNKNOWN = "unknown", r.BELOW_MINIMUM = "below_minimum", r.MEETS_MINIMUM = "meets_minimum", r.MEETS_AUTO_ENABLE = "meets_auto_enable"
+        },
+        66175: function(e, t, n) {
+            "use strict";
+            n.r(t), n.d(t, {
+                getClipCreatedAt: function() {
+                    return s
+                },
+                getClipParticipantIds: function() {
+                    return a
+                }
+            });
+            var i = n("299039"),
+                r = n("80028");
+
+            function s(e) {
+                return new Date(i.default.extractTimestamp(e)).toISOString()
+            }
+
+            function a(e) {
+                return e.slice(0, r.CLIPS_MAX_PARTICIPANTS)
+            }
         },
         680894: function(e, t, n) {
             "use strict";
@@ -22010,7 +22035,8 @@
                     is_new_search_tab_bar: "Enables the design systems version of the search tab bar",
                     global_panels: "Use global panels for chat",
                     panels_navigator: "Use panels navigator",
-                    cozy_header: "Cozy header"
+                    cozy_header: "Cozy header",
+                    disable_search_preview: "Disable new search previews"
                 },
                 a = {};
             class o extends i.default.DeviceSettingsStore {
@@ -31520,6 +31546,9 @@
         653047: function(e, t, n) {
             "use strict";
             n.r(t), n.d(t, {
+                createExecutable: function() {
+                    return u
+                },
                 default: function() {
                     return c
                 }
@@ -31530,16 +31559,17 @@
                 a = n("766274"),
                 o = n("954016");
             let l = {
-                    [o.POKER_NIGHT_APPLICATION_ID]: 7,
-                    [o.END_GAME_APPLICATION_ID]: 12
-                },
-                u = e => {
-                    let t = {
-                        os: e.os,
-                        name: e.name
-                    };
-                    return null != e.arguments && (t.arguments = e.arguments), null != e.is_launcher && (t.isLauncher = e.is_launcher), t
+                [o.POKER_NIGHT_APPLICATION_ID]: 7,
+                [o.END_GAME_APPLICATION_ID]: 12
+            };
+
+            function u(e) {
+                let t = {
+                    os: e.os,
+                    name: e.name
                 };
+                return null != e.arguments && (t.arguments = e.arguments), null != e.is_launcher && (t.isLauncher = e.is_launcher), t
+            }
             class c extends i.default {
                 static createFromServer(e) {
                     var t;
@@ -34923,11 +34953,8 @@
             }
             class I extends s.default.PersistedStore {
                 initialize(e) {
-                    if (null != e && (null != e.detectableGamesEtag && (p = e.detectableGamesEtag), null != e.detectableGames))
-                        for (let t of Object.values(e.detectableGames)) {
-                            let e = new u.default(t);
-                            m(e)
-                        }
+                    var t;
+                    null != e && (null != e.detectableGamesEtag && (p = e.detectableGamesEtag), null === (t = e.detectableGames) || void 0 === t || t.forEach(e => m(e)))
                 }
                 getState() {
                     return {
@@ -35010,10 +35037,19 @@
                         games: t,
                         etag: n
                     } = e;
-                    for (let e of (null != n && p !== n && (p = n), t)) {
-                        let t = u.default.createFromServer(e);
-                        m(t)
-                    }
+                    for (let e of (null != n && p !== n && (p = n), t)) m(function(e) {
+                        var t, n, i, r, s, a;
+                        return {
+                            id: e.id,
+                            name: e.name,
+                            executables: (null !== (t = e.executables) && void 0 !== t ? t : []).map(u.createExecutable),
+                            overlay: null !== (n = e.overlay) && void 0 !== n && n,
+                            overlayWarn: null !== (i = e.overlay_warn) && void 0 !== i && i,
+                            overlayCompatibilityHook: null !== (r = e.overlay_compatibility_hook) && void 0 !== r && r,
+                            hook: null === (s = e.hook) || void 0 === s || s,
+                            aliases: null !== (a = e.aliases) && void 0 !== a ? a : []
+                        }
+                    }(e));
                     i = void 0, S = Date.now()
                 }
             })
@@ -39150,7 +39186,7 @@
             let i, r;
             n.r(t), n.d(t, {
                 default: function() {
-                    return D
+                    return y
                 }
             }), n("70102"), n("808653");
             var s = n("446674"),
@@ -39167,10 +39203,11 @@
             let p = null,
                 S = null,
                 T = null,
-                m = !1,
-                I = !1;
+                m = null,
+                I = !1,
+                g = !1;
 
-            function g(e, t) {
+            function C(e, t) {
                 if (null == r) throw Error("Creating RTCConnection without session.");
                 let i = E.default.getId(),
                     s = n("997722").default,
@@ -39210,7 +39247,7 @@
                     }))
                 }), u.on(o.RTCConnectionEvent.Speaking, (e, t) => {
                     var n;
-                    null === (n = S) || void 0 === n || n.setSpeaking(e, t)
+                    null === (n = T) || void 0 === n || n.setSpeaking(e, t)
                 }), u.on(o.RTCConnectionEvent.Flags, (e, t) => {
                     a.default.wait(() => {
                         a.default.dispatch({
@@ -39231,30 +39268,30 @@
                             channelId: n
                         })
                     })
-                }), null == S && (S = new l.default(E.default.getId(), t)), T = null, m = !1, I = !1, u
-            }
-
-            function C() {
-                if (null == i) return !1;
-                T = i.getDuration(), i.destroy(), i = null
+                }), null == T && (T = new l.default(E.default.getId(), t)), m = null, I = !1, g = !1, u
             }
 
             function A() {
+                if (null == i) return !1;
+                m = i.getDuration(), i.destroy(), i = null
+            }
+
+            function v() {
                 p = null
             }
 
-            function v(e) {
+            function R(e) {
                 let {
                     channel: t
                 } = e;
                 if (null == i || i.channelId !== t.id) return !1;
-                C()
+                A()
             }
 
-            function R() {
+            function N() {
                 return !0
             }
-            class N extends s.default.Store {
+            class O extends s.default.Store {
                 initialize() {
                     this.waitFor(h.default), (0, d.setVideoToggleAnalyticsParams)(this.getRTCConnectionId, this.getMediaSessionId)
                 }
@@ -39272,6 +39309,12 @@
                 }
                 getRemoteDisconnectVoiceChannelId() {
                     return p
+                }
+                getLastSessionVoiceChannelId() {
+                    return S
+                }
+                setLastSessionVoiceChannelId(e) {
+                    S = e
                 }
                 getGuildId() {
                     var e;
@@ -39312,7 +39355,7 @@
                 }
                 getDuration() {
                     var e, t;
-                    return null !== (t = null === (e = i) || void 0 === e ? void 0 : e.getDuration()) && void 0 !== t ? t : T
+                    return null !== (t = null === (e = i) || void 0 === e ? void 0 : e.getDuration()) && void 0 !== t ? t : m
                 }
                 getPacketStats() {
                     var e;
@@ -39320,32 +39363,32 @@
                 }
                 getVoiceStateStats() {
                     var e;
-                    return null === (e = S) || void 0 === e ? void 0 : e.getStats()
+                    return null === (e = T) || void 0 === e ? void 0 : e.getStats()
                 }
                 getWasEverMultiParticipant() {
-                    return m
+                    return I
                 }
                 getWasEverRtcConnected() {
-                    return I
+                    return g
                 }
                 isSecureFramesEnabled() {
                     var e, t;
                     return null !== (t = null === (e = i) || void 0 === e ? void 0 : e.isSecureFramesEnabled) && void 0 !== t && t
                 }
             }
-            N.displayName = "RTCConnectionStore";
-            let O = new N(a.default, __OVERLAY__ ? {} : {
+            O.displayName = "RTCConnectionStore";
+            let D = new O(a.default, __OVERLAY__ ? {} : {
                 CONNECTION_OPEN: function(e) {
-                    return r = e.sessionId, p = null, C(), !1
+                    return r = e.sessionId, p = null, S = null, A(), !1
                 },
                 CONNECTION_CLOSED: function() {
-                    r = null, p = null, C()
+                    r = null, p = null, S = null, A()
                 },
                 RTC_CONNECTION_STATE: function(e) {
-                    return e.state === f.RTCConnectionStates.RTC_CONNECTED && (I = !0), !0
+                    return e.state === f.RTCConnectionStates.RTC_CONNECTED && (g = !0), !0
                 },
-                RTC_CONNECTION_PING: R,
-                RTC_CONNECTION_LOSS_RATE: R,
+                RTC_CONNECTION_PING: N,
+                RTC_CONNECTION_LOSS_RATE: N,
                 RTC_CONNECTION_UPDATE_ID: function(e) {
                     return e.connection === i
                 },
@@ -39355,16 +39398,16 @@
                     } = e;
                     return t.reduce((e, t) => {
                         var n, s, a, o, l, u, d;
-                        if (null === (n = S) || void 0 === n || n.updateVoiceStates(t.userId, t.channelId), m = m || (null !== (a = null === (s = S) || void 0 === s ? void 0 : s.getStats().max_voice_state_count) && void 0 !== a ? a : 0) > 1, E.default.getId() !== t.userId) return !1;
+                        if (null === (n = T) || void 0 === n || n.updateVoiceStates(t.userId, t.channelId), I = I || (null !== (a = null === (s = T) || void 0 === s ? void 0 : s.getStats().max_voice_state_count) && void 0 !== a ? a : 0) > 1, E.default.getId() !== t.userId) return !1;
                         if (null != i) {
-                            if (t.sessionId === r) null != t.guildId && t.guildId === i.guildId || null == t.guildId && t.channelId === i.channelId ? null == t.channelId ? C() : i.channelId = t.channelId : (t.guildId !== i.guildId && null == t.channelId || C(), null != t.channelId && (p = null, i = g(t.guildId, t.channelId), m = (null !== (l = null === (o = S) || void 0 === o ? void 0 : o.getStats().max_voice_state_count) && void 0 !== l ? l : 0) > 1));
+                            if (t.sessionId === r) null != t.guildId && t.guildId === i.guildId || null == t.guildId && t.channelId === i.channelId ? null == t.channelId ? A() : i.channelId = t.channelId : (t.guildId !== i.guildId && null == t.channelId || A(), null != t.channelId && (p = null, S = null, i = C(t.guildId, t.channelId), I = (null !== (l = null === (o = T) || void 0 === o ? void 0 : o.getStats().max_voice_state_count) && void 0 !== l ? l : 0) > 1));
                             else if (t.guildId === i.guildId) {
                                 let e = null != c.default.getAwaitingRemoteSessionInfo() && null != c.default.getRemoteSessionId();
-                                !e && (p = i.channelId), C()
+                                !e && (p = i.channelId), A()
                             }
                         } else {
                             if (t.sessionId !== r || null == t.channelId) return e;
-                            p = null, i = g(t.guildId, t.channelId), m = (null !== (d = null === (u = S) || void 0 === u ? void 0 : u.getStats().max_voice_state_count) && void 0 !== d ? d : 0) > 1
+                            p = null, S = null, i = C(t.guildId, t.channelId), I = (null !== (d = null === (u = T) || void 0 === u ? void 0 : u.getStats().max_voice_state_count) && void 0 !== d ? d : 0) > 1
                         }
                         return !0
                     }, !1)
@@ -39374,29 +39417,32 @@
                         channelId: t
                     } = e;
                     if (null != t || null == i) return !1;
-                    C()
+                    A()
                 },
                 VOICE_SERVER_UPDATE: function(e) {
                     if (null == i || null != e.guildId && e.guildId !== i.guildId || null != e.channelId && e.channelId !== i.channelId) return !1;
                     i.connect(e.endpoint, e.token)
                 },
-                CLEAR_REMOTE_DISCONNECT_VOICE_CHANNEL_ID: A,
-                REMOTE_SESSION_CONNECT: A,
+                CLEAR_REMOTE_DISCONNECT_VOICE_CHANNEL_ID: v,
+                REMOTE_SESSION_CONNECT: v,
+                CLEAR_LAST_SESSION_VOICE_CHANNEL_ID: function() {
+                    S = null
+                },
                 GUILD_DELETE: function(e) {
                     let {
                         guild: t
                     } = e;
                     if (null == i || i.guildId !== t.id) return !1;
-                    C()
+                    A()
                 },
-                CHANNEL_DELETE: v,
-                THREAD_DELETE: v,
+                CHANNEL_DELETE: R,
+                THREAD_DELETE: R,
                 CALL_DELETE: function(e) {
                     let {
                         channelId: t
                     } = e;
                     if (null == i || i.channelId !== t) return !1;
-                    C()
+                    A()
                 },
                 APP_STATE_UPDATE: function(e) {
                     if (null != i) {
@@ -39419,10 +39465,10 @@
                     addExtraAnalyticsDecorator: t
                 } = e;
                 t(e => {
-                    e.client_rtc_state = O.getState()
+                    e.client_rtc_state = D.getState()
                 })
             });
-            var D = O
+            var y = D
         },
         661919: function(e, t, n) {
             "use strict";
@@ -49021,7 +49067,7 @@
                         var i;
                         let d = {
                                 environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                                build_number: "244133"
+                                build_number: "244358"
                             },
                             E = l.default.getCurrentUser();
                         null != E && (d.user_id = E.id, d.user_name = E.tag, null != E.email && (d.email = E.email));
@@ -49982,16 +50028,19 @@
 
             function V(e, t, n) {
                 let i = arguments.length > 3 && void 0 !== arguments[3] ? arguments[3] : 1,
-                    r = arguments.length > 4 && void 0 !== arguments[4] && arguments[4];
+                    r = arguments.length > 4 && void 0 !== arguments[4] && arguments[4],
+                    s = arguments.length > 5 && void 0 !== arguments[5] ? arguments[5] : D.PremiumTypes.TIER_2;
                 if (t || n) switch (e) {
                     case D.SubscriptionIntervalTypes.MONTH:
-                        return r ? P.default.Messages.GIFT_DURATION.format({
+                        let a = (s === D.PremiumTypes.TIER_0 ? P.default.Messages.BASIC_GIFT_DURATION : P.default.Messages.GIFT_DURATION).format({
                             timeInterval: P.default.Messages.PREMIUM_SUBSCRIPTION_INTERVAL_MONTH
-                        }) : P.default.Messages.PAYMENT_MODAL_ONE_MONTH;
+                        });
+                        return r ? a : P.default.Messages.PAYMENT_MODAL_ONE_MONTH;
                     case D.SubscriptionIntervalTypes.YEAR:
-                        return r ? P.default.Messages.GIFT_DURATION.format({
+                        let o = (s === D.PremiumTypes.TIER_0 ? P.default.Messages.BASIC_GIFT_DURATION : P.default.Messages.GIFT_DURATION).format({
                             timeInterval: P.default.Messages.PREMIUM_SUBSCRIPTION_INTERVAL_YEAR
-                        }) : P.default.Messages.PAYMENT_MODAL_ONE_YEAR;
+                        });
+                        return r ? o : P.default.Messages.PAYMENT_MODAL_ONE_YEAR;
                     default:
                         throw Error("Unexpected interval")
                 }
@@ -51323,7 +51372,7 @@
                     return u
                 }
             });
-            var i = n("299039"),
+            var i = n("66175"),
                 r = n("894488");
             let s = [{
                     reName: /\.jpe?g$/i,
@@ -51388,7 +51437,7 @@
                 }({
                     spoiler: e.spoiler
                 });
-                return a.filename = "".concat(o).concat(null != s ? s : e.filename), a.uploaded_filename = e.uploadedFilename, "durationSecs" in e && null != e.durationSecs && (a.duration_secs = e.durationSecs), "waveform" in e && null != e.waveform && (a.waveform = e.waveform), "isThumbnail" in e && !0 === e.isThumbnail && (a.is_thumbnail = e.isThumbnail), "isRemix" in e && !0 === e.isRemix && (a.is_remix = e.isRemix), "clip" in e && null != e.clip && (a.is_clip = !0, a.title = e.clip.name, a.application_id = e.clip.applicationId, a.clip_created_at = new Date(i.default.extractTimestamp(e.clip.id)).toISOString(), a.clip_participant_ids = e.clip.users), a
+                return a.filename = "".concat(o).concat(null != s ? s : e.filename), a.uploaded_filename = e.uploadedFilename, "durationSecs" in e && null != e.durationSecs && (a.duration_secs = e.durationSecs), "waveform" in e && null != e.waveform && (a.waveform = e.waveform), "isThumbnail" in e && !0 === e.isThumbnail && (a.is_thumbnail = e.isThumbnail), "isRemix" in e && !0 === e.isRemix && (a.is_remix = e.isRemix), "clip" in e && null != e.clip && (a.is_clip = !0, a.title = e.clip.name, a.application_id = e.clip.applicationId, a.clip_created_at = (0, i.getClipCreatedAt)(e.clip.id), a.clip_participant_ids = (0, i.getClipParticipantIds)(e.clip.users)), a
             }
 
             function l(e) {
@@ -62288,4 +62337,4 @@
         }
     }
 ]);
-//# sourceMappingURL=48d98d96e0074fd8b104.js.map
+//# sourceMappingURL=dc6c28d21e1cb0f996ea.js.map
