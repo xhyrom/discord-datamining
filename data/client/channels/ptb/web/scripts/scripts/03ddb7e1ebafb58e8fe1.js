@@ -111,8 +111,8 @@
                     f = t("391679"),
                     l = t("446674"),
                     u = t("95410"),
-                    p = t("795137"),
-                    b = t("837319"),
+                    b = t("795137"),
+                    p = t("837319"),
                     h = t("73749"),
                     j = t("269936"),
                     m = t("231032"),
@@ -235,7 +235,7 @@
                             children: [(0, s.jsx)(i.Route, {
                                 exact: !0,
                                 path: A.Routes.INDEX,
-                                render: () => (0, s.jsx)(p.default, {})
+                                render: () => (0, s.jsx)(b.default, {})
                             }), (0, s.jsx)(h.default, {
                                 exact: !0,
                                 path: A.Routes.APPS,
@@ -259,7 +259,7 @@
                             children: [(0, s.jsx)(h.default, {
                                 exact: !0,
                                 path: A.Routes.INDEX,
-                                render: () => (0, s.jsx)(p.default, {})
+                                render: () => (0, s.jsx)(b.default, {})
                             }), (0, s.jsx)(i.Route, {
                                 path: Y([A.Routes.LOGIN, A.Routes.LOGIN_HANDOFF, A.Routes.REGISTER, A.Routes.BILLING_PREFIX, A.Routes.BILLING_PROMOTION_REDEMPTION(":code"), A.Routes.INVITE(":inviteCode"), A.Routes.INVITE_LOGIN(":inviteCode"), A.Routes.GIFT_CODE(":giftCode"), A.Routes.GIFT_CODE_LOGIN(":giftCode"), A.Routes.GUILD_TEMPLATE(":guildTemplateCode"), A.Routes.GUILD_TEMPLATE_LOGIN(":guildTemplateCode"), A.Routes.DISABLE_EMAIL_NOTIFICATIONS, A.Routes.DISABLE_SERVER_HIGHLIGHT_NOTIFICATIONS, A.Routes.RESET, A.Routes.REPORT], v.CONFERENCE_MODE_ENABLED),
                                 component: V
@@ -349,7 +349,7 @@
                                 component: H
                             }), a ? null : (0, s.jsx)(i.Route, {
                                 path: A.Routes.APPLICATION_STORE,
-                                component: b.default
+                                component: p.default
                             }), a ? null : (0, s.jsx)(i.Route, {
                                 path: [A.Routes.APPLICATION_DIRECTORY_SEARCH, A.Routes.APPLICATION_DIRECTORY_PROFILE(":applicationId", ":section?"), A.Routes.APPLICATION_DIRECTORY],
                                 component: F
@@ -394,8 +394,8 @@
                 var f = t("288661"),
                     l = t("627445"),
                     u = t.n(l),
-                    p = t("521143"),
-                    b = t("938460"),
+                    b = t("521143"),
+                    p = t("938460"),
                     h = t("156820"),
                     j = t("878175"),
                     m = t("864088"),
@@ -444,8 +444,8 @@
                     let o = Object.keys(t).filter(e => null != t[e]).map(e => "".concat(e, ": ").concat(t[e])).join(", ");
                     new(0, y.default)().log("[NATIVE INFO] host ".concat(e, ", modules: ").concat(o, ", build: ").concat(a)), O.default.setBackgroundThrottling(!1), O.default.initializeExitHook()
                 }
-                if ((0, v.setupWindow)(window), __OVERLAY__) U(p.default.Overlay);
-                else if (null != window.require && null == window.DiscordNative) U(p.default.OutdatedClient);
+                if ((0, v.setupWindow)(window), __OVERLAY__) U(b.default.Overlay);
+                else if (null != window.require && null == window.DiscordNative) U(b.default.OutdatedClient);
                 else {
                     if (document.addEventListener("scroll", e => e.preventDefault()), S.isPlatformEmbedded) {
                         window.onbeforeunload = () => O.default.beforeUnload(), O.default.on("HELP_OPEN", () => window.open(I.default.getCommunityURL()));
@@ -458,7 +458,7 @@
                             (0, A.hidden)(window)
                         })
                     }
-                    j.default.initialize(), b.default.init(), E.default.init(), m.default.init(), M.default.init(), h.default.initialize(), T.default.initialize(), R.default.initialize(), _.initialize(), U(p.default.App)
+                    j.default.initialize(), p.default.init(), E.default.init(), m.default.init(), M.default.init(), h.default.initialize(), T.default.initialize(), R.default.initialize(), _.initialize(), U(b.default.App)
                 }
             },
             521143: function(e, a, t) {
@@ -562,8 +562,8 @@
                     f = t("77078"),
                     l = t("430568"),
                     u = t("471671"),
-                    p = t("90404"),
-                    b = t("402671"),
+                    b = t("90404"),
+                    p = t("402671"),
                     h = t("701909"),
                     j = t("773336"),
                     m = t("439932"),
@@ -593,7 +593,7 @@
                         let e = (0, s.jsx)("div", {
                                 children: (0, s.jsxs)("p", {
                                     children: [I.default.Messages.VERY_OUT_OF_DATE_DESCRIPTION, " ", (0, s.jsx)(l.default, {
-                                        src: b.default.getURL(o.default.convert.fromCodePoint("1f44c")),
+                                        src: p.default.getURL(o.default.convert.fromCodePoint("1f44c")),
                                         emojiName: ":ok_hand:",
                                         animated: !1
                                     })]
@@ -611,7 +611,7 @@
                                 })
                             }), (0, s.jsx)(T, {
                                 type: this.getPlatform()
-                            }), (0, s.jsx)(p.default, {
+                            }), (0, s.jsx)(b.default, {
                                 title: I.default.Messages.UNSUPPORTED_BROWSER_TITLE,
                                 note: e,
                                 action: a
@@ -794,8 +794,8 @@
                     f = t("625454"),
                     l = t("441822"),
                     u = t("862337"),
-                    p = t("913144"),
-                    b = t("605250"),
+                    b = t("913144"),
+                    p = t("605250"),
                     h = t("271938"),
                     j = t("773336"),
                     m = t("50885"),
@@ -890,7 +890,7 @@
                             })
                         }(t);
                         let d = S.toDataURL("image/jpeg");
-                        if (p.default.dispatch({
+                        if (b.default.dispatch({
                                 type: "STREAM_PREVIEW_FETCH_SUCCESS",
                                 streamKey: a,
                                 previewURL: d
@@ -910,14 +910,14 @@
                             oldFormErrors: !0
                         })
                     } catch (a) {
-                        new(0, b.default)("ApplicationStreamPreviewUploadManager").error("Failed to post stream preview", a), s === e && O.start(6e4, t);
+                        new(0, p.default)("ApplicationStreamPreviewUploadManager").error("Failed to post stream preview", a), s === e && O.start(6e4, t);
                         return
                     }
                     s === e && (R ? O.start(6e4, t) : O.start(3e5, t))
                 }
                 var C = {
                     init() {
-                        p.default.subscribe("CONNECTION_OPEN", A), p.default.subscribe("LOGOUT", A), p.default.subscribe("STREAM_DELETE", A), p.default.subscribe("RTC_CONNECTION_VIDEO", e => {
+                        b.default.subscribe("CONNECTION_OPEN", A), b.default.subscribe("LOGOUT", A), b.default.subscribe("STREAM_DELETE", A), b.default.subscribe("RTC_CONNECTION_VIDEO", e => {
                             let {
                                 guildId: a,
                                 channelId: t,
@@ -926,7 +926,7 @@
                                 context: c
                             } = e;
                             !(null == n || c !== I.MediaEngineContextTypes.STREAM || d !== h.default.getId() || __OVERLAY__) && (A(), s = n, v(n, a, t, d))
-                        }), p.default.subscribe("MEDIA_ENGINE_VIDEO_STATE_CHANGED", e => {
+                        }), b.default.subscribe("MEDIA_ENGINE_VIDEO_STATE_CHANGED", e => {
                             let {
                                 videoState: a
                             } = e;
@@ -952,8 +952,8 @@
                     f = t("271938"),
                     l = t("374014"),
                     u = t("16916"),
-                    p = t("49111"),
-                    b = t("353927");
+                    b = t("49111"),
+                    p = t("353927");
                 class h {
                     _onGameDetectionUpdate(e) {
                         this.applications = e.map(e => {
@@ -1022,7 +1022,7 @@
                                             resolution: t.resolution,
                                             frameRate: t.fps
                                         },
-                                        context: b.MediaEngineContextTypes.STREAM
+                                        context: p.MediaEngineContextTypes.STREAM
                                     })
                                 } else d.default.setGoLiveSource({
                                     desktopSettings: {
@@ -1034,7 +1034,7 @@
                                         resolution: t.resolution,
                                         frameRate: t.fps
                                     },
-                                    context: b.MediaEngineContextTypes.STREAM
+                                    context: p.MediaEngineContextTypes.STREAM
                                 });
                                 break;
                             case i.StreamDirectorActionType.PAUSE:
@@ -1100,12 +1100,12 @@
                                 videoState: a,
                                 context: t
                             } = e;
-                            t === b.MediaEngineContextTypes.STREAM && this._onCapturePaused(a === p.MediaEngineVideoStates.PAUSED)
+                            t === p.MediaEngineContextTypes.STREAM && this._onCapturePaused(a === b.MediaEngineVideoStates.PAUSED)
                         }), s.default.subscribe("MEDIA_ENGINE_SET_GO_LIVE_SOURCE", e => {
                             let {
                                 settings: a
                             } = e;
-                            (null == a ? void 0 : a.context) === b.MediaEngineContextTypes.STREAM && (null == a ? void 0 : a.desktopSettings) == null && (null == a ? void 0 : a.cameraSettings) == null && this._onCaptureEnded()
+                            (null == a ? void 0 : a.context) === p.MediaEngineContextTypes.STREAM && (null == a ? void 0 : a.desktopSettings) == null && (null == a ? void 0 : a.cameraSettings) == null && this._onCaptureEnded()
                         })
                     }
                 }
@@ -1146,7 +1146,7 @@
                 "use strict";
                 t.r(a), t.d(a, {
                     default: function() {
-                        return b
+                        return p
                     }
                 }), t("222007");
                 var s = t("37983");
@@ -1160,7 +1160,7 @@
                     f = t("701909"),
                     l = t("49111"),
                     u = t("782340");
-                class p extends o.default {
+                class b extends o.default {
                     _initialize() {
                         i.default.subscribe("MEDIA_ENGINE_PERMISSION", this.handlePermission)
                     }
@@ -1186,7 +1186,7 @@
                         }
                     }
                 }
-                var b = new p
+                var p = new b
             },
             891653: function(e, a, t) {
                 "use strict";
@@ -1303,14 +1303,14 @@
                     f = t("934306"),
                     l = t("742171"),
                     u = t("393027"),
-                    p = t("393414"),
-                    b = t("49111"),
+                    b = t("393414"),
+                    p = t("49111"),
                     h = new class e {
                         initialize() {
-                            this.cleanup(), this.unlistenHistory = (0, p.getHistory)().listen(this.handleRouteChange);
+                            this.cleanup(), this.unlistenHistory = (0, b.getHistory)().listen(this.handleRouteChange);
                             let {
                                 pathname: e
-                            } = (0, p.getHistory)().location;
+                            } = (0, b.getHistory)().location;
                             u.default.getState().resetPath(e), this.unlistenKeyboardChange = u.default.subscribe(this.handleKeybindRouteChange), n.default.addChangeListener(this.handleConnectionChange)
                         }
                         convertRouteToNavigation(e, a) {
@@ -1318,14 +1318,14 @@
                                 pathname: t
                             } = e, s = (0, i.getRootNavigationRef)(), n = (0, c.isInMainTabsExperiment)();
                             if (null != s && s.isReady()) {
-                                if (n && (0, f.isSplitMessagesTab)() && t === b.Routes.ME) {
+                                if (n && (0, f.isSplitMessagesTab)() && t === p.Routes.ME) {
                                     (0, r.navigateToRootTab)({
                                         screen: "messages",
                                         resetRoot: e.navigationReplace
                                     });
                                     return
                                 }
-                                if (n && t === b.Routes.NOTIFICATIONS) {
+                                if (n && t === p.Routes.NOTIFICATIONS) {
                                     (0, r.navigateToRootTab)({
                                         screen: "notifications",
                                         resetRoot: e.navigationReplace
@@ -1334,15 +1334,15 @@
                                 }
                                 if (t.startsWith("/channels/")) {
                                     let a = (0, d.matchPath)(t, {
-                                            path: b.Routes.CHANNEL(":guildId", ":channelId?", ":messageId?")
+                                            path: p.Routes.CHANNEL(":guildId", ":channelId?", ":messageId?")
                                         }),
                                         c = (0, d.matchPath)(t, {
-                                            path: "".concat(b.Routes.CHANNEL(":guildId", ":channelId?")).concat(b.Routes.VOICE_CHAT_CHANNEL_PARTIAL(":voiceGuildId", ":voiceChannelId", ":voiceMessageId?"))
+                                            path: "".concat(p.Routes.CHANNEL(":guildId", ":channelId?")).concat(p.Routes.VOICE_CHAT_CHANNEL_PARTIAL(":voiceGuildId", ":voiceChannelId", ":voiceMessageId?"))
                                         });
                                     if (!n) {
-                                        var u, p;
+                                        var u, b;
                                         let e = s.getRootState();
-                                        (null == e ? void 0 : null === (p = e.routes) || void 0 === p ? void 0 : null === (u = p[0]) || void 0 === u ? void 0 : u.name) !== "panels" && (0, r.resetToPanelsUI)();
+                                        (null == e ? void 0 : null === (b = e.routes) || void 0 === b ? void 0 : null === (u = b[0]) || void 0 === u ? void 0 : u.name) !== "panels" && (0, r.resetToPanelsUI)();
                                         return
                                     }
                                     if (null != c) {
@@ -1373,7 +1373,7 @@
                                             });
                                             return
                                         }
-                                        null == t || (0, f.shouldHandleNewPanelsRoute)(s) || (0, o.isOnGlobalPanels)() && !1 !== e.navigationReplace ? s === b.ME ? (0, r.navigateToRootTab)({
+                                        null == t || (0, f.shouldHandleNewPanelsRoute)(s) || (0, o.isOnGlobalPanels)() && !1 !== e.navigationReplace ? s === p.ME ? (0, r.navigateToRootTab)({
                                             screen: "messages",
                                             resetRoot: e.navigationReplace
                                         }) : (0, r.navigateToRootTab)({
@@ -1391,7 +1391,7 @@
                                 }
                                 if (t.startsWith("/member-verification/")) {
                                     let e = (0, d.matchPath)(t, {
-                                        path: b.Routes.GUILD_MEMBER_VERIFICATION(":guildId", ":inviteCode?")
+                                        path: p.Routes.GUILD_MEMBER_VERIFICATION(":guildId", ":inviteCode?")
                                     });
                                     null != e && (0, r.navigateToMemberVerification)(e.params.guildId, e.params.inviteCode);
                                     return
@@ -1409,7 +1409,7 @@
                         executeRouteRewrites(e, a) {
                             if (this.routeChangeCount += 1, this.routeChangeCount < 10)
                                 for (let t of this.rewrites) {
-                                    let d = (0, p.getHistory)().location.pathname,
+                                    let d = (0, b.getHistory)().location.pathname,
                                         n = t(e, a);
                                     if (null != n) return (0, s.addBreadcrumb)({
                                         message: "RouteManager.handleRouteChange: A route rewrite is replacing the current route",
@@ -1417,7 +1417,7 @@
                                             replacePath: n.path,
                                             previousPath: d
                                         }
-                                    }), (0, p.replaceWith)(n.path, n.state), !0
+                                    }), (0, b.replaceWith)(n.path, n.state), !0
                                 } else throw Error("RouteManager: Something has gone horribly wrong with rewrites");
                             return !1
                         }
@@ -1426,12 +1426,12 @@
                             null === (e = this.unlistenHistory) || void 0 === e || e.call(this), this.unlistenHistory = void 0, null === (a = this.unlistenKeyboardChange) || void 0 === a || a.call(this), this.unlistenKeyboardChange = void 0, n.default.removeChangeListener(this.handleConnectionChange)
                         }
                         addRouteChangeListener(e) {
-                            return null != this.unlistenHistory && e((0, p.getHistory)().location, "REPLACE"), this.listeners.add(e), () => this.removeRouteChangeListener(e)
+                            return null != this.unlistenHistory && e((0, b.getHistory)().location, "REPLACE"), this.listeners.add(e), () => this.removeRouteChangeListener(e)
                         }
                         addRouteRewriter(e) {
                             if (null != this.unlistenHistory) {
-                                let a = e((0, p.getHistory)().location, (0, p.getHistory)().action);
-                                null != a && (0, p.replaceWith)(a.path, a.state)
+                                let a = e((0, b.getHistory)().location, (0, b.getHistory)().action);
+                                null != a && (0, b.replaceWith)(a.path, a.state)
                             }
                             return this.rewrites.add(e), () => this.removeRouteRewriter(e)
                         }
@@ -1442,13 +1442,13 @@
                             this.rewrites.delete(e)
                         }
                         getHistory() {
-                            return (0, p.getHistory)()
+                            return (0, b.getHistory)()
                         }
                         constructor() {
                             this.rewrites = new Set, this.listeners = new Set, this.routeChangeCount = 0, this.timer = -1, this.connected = !1, this.handleConnectionChange = () => {
                                 let e = n.default.isConnected(),
                                     a = e && !this.connected;
-                                this.connected = e, a && (this.routeChangeCount = 0, this.executeRouteRewrites((0, p.getHistory)().location, "REPLACE"))
+                                this.connected = e, a && (this.routeChangeCount = 0, this.executeRouteRewrites((0, b.getHistory)().location, "REPLACE"))
                             }, this.handleRouteChange = (e, a) => {
                                 if (this.executeRouteRewrites(e, a)) return;
                                 let t = u.default.getState();
@@ -1466,7 +1466,7 @@
                             }, this.flushRoute = () => {
                                 clearTimeout(this.timer);
                                 let e = u.default.getState();
-                                null != e.path && (0, p.transitionTo)(e.path)
+                                null != e.path && (0, b.transitionTo)(e.path)
                             }
                         }
                     }
@@ -1632,8 +1632,8 @@
                     f = t("316272"),
                     l = t("830210"),
                     u = t("289180"),
-                    p = t("289656"),
-                    b = t("727284"),
+                    b = t("289656"),
+                    p = t("727284"),
                     h = t("42203"),
                     j = t("42887"),
                     m = t("18494"),
@@ -1654,7 +1654,7 @@
                     constructor(...e) {
                         super(...e), this.callbackActions = {
                             [E.ThumbarButtonName.VIDEO]: () => {
-                                j.default.isVideoEnabled() ? r.default.setVideoEnabled(!1) : (0, b.default)(() => r.default.setVideoEnabled(!0), g.AppContext.APP)
+                                j.default.isVideoEnabled() ? r.default.setVideoEnabled(!1) : (0, p.default)(() => r.default.setVideoEnabled(!0), g.AppContext.APP)
                             },
                             [E.ThumbarButtonName.MUTE]: () => r.default.toggleSelfMute(),
                             [E.ThumbarButtonName.DEAFEN]: () => r.default.toggleSelfDeaf(),
@@ -1684,7 +1684,7 @@
                                     reachedLimit: void 0,
                                     limit: void 0
                                 },
-                                o = (0, p.getVideoButtonLabel)({
+                                o = (0, b.getVideoButtonLabel)({
                                     enabled: s,
                                     join: !1,
                                     channel: n,
@@ -1960,7 +1960,7 @@
                         return u
                     },
                     getMobileDownloadLink: function() {
-                        return p
+                        return b
                     }
                 });
                 var s = t("597755"),
@@ -1997,7 +1997,7 @@
                     return o(e, !1, a)
                 }
 
-                function p(e, a, t) {
+                function b(e, a, t) {
                     let s = null != t ? t.toString() : null;
                     switch (a) {
                         case "iOS":
@@ -2139,7 +2139,7 @@
         127563: ["37637", "app"],
         127891: ["64777"],
         129670: ["79326"],
-        130074: ["12446", "13508", "13798", "18407", "19263", "21251", "21396", "22198", "23777", "26737", "27057", "28411", "28473", "31717", "33525", "34426", "35090", "37102", "37580", "37746", "4082", "40894", "43870", "47146", "47692", "482", "48590", "49191", "56145", "60499", "62768", "63181", "63550", "67929", "70201", "73810", "74836", "74970", "75851", "78995", "80574", "84009", "94816", "95121", "99742", "9975", "app", "shared"],
+        130074: ["12446", "13508", "13798", "18407", "19263", "21251", "21396", "22198", "23777", "26737", "27057", "28411", "28473", "31717", "34426", "35090", "37102", "37580", "37746", "4082", "40894", "43870", "44830", "47146", "47692", "482", "48590", "49191", "56145", "60499", "62768", "63181", "63550", "67929", "70201", "73810", "74836", "74970", "75851", "78995", "80574", "84009", "94816", "95121", "99742", "9975", "app", "shared"],
         133541: ["58056"],
         13406: ["24676"],
         134064: ["28145", "app"],
@@ -2603,7 +2603,7 @@
         826269: ["27043", "31897", "48023", "55348", "5552", "90117", "app", "shared"],
         827619: ["64715", "app"],
         830979: ["66591"],
-        833843: ["13508", "13798", "18407", "19263", "20117", "21251", "21396", "22198", "23777", "27047", "27057", "3045", "31717", "34426", "35306", "37102", "37580", "4082", "40894", "43870", "47146", "47692", "482", "48590", "49191", "51077", "56145", "60499", "62768", "63550", "66888", "67929", "69709", "73810", "74108", "74836", "74970", "75851", "78995", "80574", "81161", "8240", "84009", "94816", "95121", "99742", "9975", "9989", "app", "shared"],
+        833843: ["13508", "13798", "18407", "19263", "20117", "21251", "21396", "22198", "23777", "27047", "27057", "3045", "31717", "33525", "34426", "35306", "37102", "37580", "4082", "40894", "43870", "47146", "47692", "482", "48590", "49191", "51077", "56145", "60499", "62768", "63550", "66888", "67929", "69709", "73810", "74108", "74836", "74970", "75851", "78995", "80574", "81161", "8240", "84009", "94816", "95121", "99742", "9975", "app", "shared"],
         834247: ["12446", "21396", "28473", "31717", "35090", "37580", "37746", "4633", "47146", "48590", "49191", "6291", "70201", "74836", "94816", "app"],
         837366: ["23595"],
         838093: ["18120", "39385"],
@@ -2687,7 +2687,7 @@
         962512: ["67288", "app"],
         965179: ["1862", "68560", "app"],
         968710: ["67337"],
-        969715: ["10991", "13508", "13553", "13798", "14701", "18120", "18407", "19263", "20117", "21251", "21396", "22198", "23398", "23497", "23777", "27057", "28473", "3045", "31717", "32656", "33107", "34426", "37102", "37580", "4082", "40894", "43870", "44504", "44830", "45978", "47146", "47692", "482", "48590", "49191", "49578", "51077", "51719", "53181", "53509", "54746", "56145", "56854", "60499", "6105", "62768", "63550", "64814", "64883", "67131", "67929", "68526", "73749", "73810", "74836", "74970", "75102", "75851", "7704", "78995", "80574", "80803", "81161", "84009", "85568", "85740", "88081", "94816", "95121", "95664", "99742", "9975", "app", "shared"],
+        969715: ["10991", "13508", "13553", "13798", "14701", "18120", "18407", "19263", "20117", "21251", "21396", "22198", "23398", "23497", "23777", "27057", "28473", "3045", "31717", "32656", "33107", "34426", "37102", "37580", "4082", "40894", "43870", "44504", "45978", "47146", "47692", "482", "48590", "49191", "49578", "51077", "51719", "53181", "53509", "54746", "56145", "56854", "60499", "6105", "62768", "63550", "64814", "64883", "67131", "67929", "68526", "73749", "73810", "74836", "74970", "75102", "75851", "7704", "78995", "80574", "80803", "81161", "84009", "85568", "85740", "88081", "94816", "95121", "95664", "99742", "9975", "9989", "app", "shared"],
         969927: ["91771", "app"],
         970725: ["88603"],
         972119: ["54361", "66043", "shared"],
@@ -2800,7 +2800,7 @@
             20092: "6f1970358d9326eed158.js",
             20132: "90dbf71a50fc2eb7f126.js",
             20153: "ad849afad20375084c6d.js",
-            20208: "66128a2255581a08b2ca.js",
+            20208: "46b2b2ee5785b3dfcb26.js",
             20833: "f122c6a677887b4479c1.js",
             20883: "c4c57c5f6020429b9b91.js",
             20940: "96c8b8536c4551c15770.js",
@@ -2869,7 +2869,7 @@
             27207: "af1c87b24e5b1cfd0c1d.js",
             27408: "d56e55c48003bcf18006.js",
             27470: "74b8efb5df7ff3725a3d.js",
-            27545: "3fd9e1b6ecf6c993eec4.js",
+            27545: "5362f59e0a5b7fa463df.js",
             27665: "a0e371393c3d3b212d2d.js",
             27949: "afee2c2f3f15a981af84.js",
             28145: "cfffe3cffcfb3d193961.js",
@@ -3009,6 +3009,7 @@
             44504: "b763f5164b142f15b2c8.js",
             44532: "b9c5d72acd84257894a1.js",
             44592: "e71061bf6702bc10073c.js",
+            44830: "b454e6420b01b163d528.js",
             44893: "ae33f184b959ab9f9755.js",
             44941: "ccfc39a9e56c04c00bfc.js",
             44986: "73ccaf2cc1ad58fd6f77.js",
@@ -3407,7 +3408,7 @@
             91918: "608a2943124eb7595306.js",
             92336: "e4014c60f1f73a7437f4.js",
             92536: "cbeac99142b8081112cd.js",
-            92544: "aa27a627f11e7318ef9d.js",
+            92544: "2b92254b8f09bcf19549.js",
             92683: "a5c9bf93a4f42b95fdd7.js",
             92870: "50e9718052c03041d4f3.js",
             92932: "3b275a8962bc1e3cd827.js",
@@ -3457,7 +3458,7 @@
             98538: "b20046615a04cd4fce94.js",
             98695: "ab5fedecbf0bd60847d3.js",
             98738: "f72690d383b00b068744.js",
-            98904: "7ab62ab954d128afacd2.js",
+            98904: "956a9edbf378a8ec6027.js",
             98999: "9a67780f5f36475430fe.js",
             99517: "69dc3d71552cf29e8be0.js",
             99541: "70d2a18c454815945ed9.js",
@@ -3467,7 +3468,6 @@
             99636: "ec48f843c530747dd8a5.js",
             99708: "1bdac160edf759dfa12d.js",
             99860: "3ee97a35e351b5ccf723.js",
-            9989: "33dc0f0f36e3fa50c2b9.js",
             99931: "088034dfbb0fb5dc6625.js",
             "krisp-sdk": "606b83b83a304002d895.js"
         })[e]
@@ -3547,11 +3547,11 @@
     }), u.a = (e, a, t) => {
         t && ((r = []).d = -1);
         var r, o, f, l, u = new Set,
-            p = e.exports,
-            b = new Promise((e, a) => {
+            b = e.exports,
+            p = new Promise((e, a) => {
                 l = a, f = e
             });
-        b[d] = p, b[s] = e => (r && e(r), u.forEach(e), b.catch(e => {})), e.exports = b, a(e => {
+        p[d] = b, p[s] = e => (r && e(r), u.forEach(e), p.catch(e => {})), e.exports = p, a(e => {
             o = i(e);
             var a, t = () => o.map(e => {
                     if (e[n]) throw e[n];
@@ -3563,7 +3563,7 @@
                     o.map(e => e[s](d))
                 });
             return a.r ? c : t()
-        }, e => (e ? l(b[n] = e) : f(p), c(r))), r && r.d < 0 && (r.d = 0)
+        }, e => (e ? l(p[n] = e) : f(b), c(r))), r && r.d < 0 && (r.d = 0)
     }, u.d = function(e, a) {
         for (var t in a) u.o(a, t) && !u.o(e, t) && Object.defineProperty(e, t, {
             enumerable: !0,
@@ -3641,7 +3641,6 @@
                 4327: 0,
                 43820: 0,
                 43870: 0,
-                44830: 0,
                 46318: 0,
                 47146: 0,
                 47470: 0,
@@ -3699,6 +3698,7 @@
                 98086: 0,
                 99742: 0,
                 9975: 0,
+                9989: 0,
                 web: 0
             },
             a = "webpack",
@@ -3708,24 +3708,24 @@
                 if (!n) {
                     for (var o = document.getElementsByTagName("link"), f = 0; f < o.length; f++) {
                         var l = o[f],
-                            p = l.getAttribute("href") || l.href;
-                        if (p && !p.startsWith(u.p) && (p = u.p + (p.startsWith("/") ? p.slice(1) : p)), "stylesheet" == l.rel && (p && p.startsWith(s) || l.getAttribute("data-webpack") == a + ":" + r)) {
+                            b = l.getAttribute("href") || l.href;
+                        if (b && !b.startsWith(u.p) && (b = u.p + (b.startsWith("/") ? b.slice(1) : b)), "stylesheet" == l.rel && (b && b.startsWith(s) || l.getAttribute("data-webpack") == a + ":" + r)) {
                             c = l;
                             break
                         }
                     }
                     if (!d) return c
                 }!c && (i = !0, (c = document.createElement("link")).setAttribute("data-webpack", a + ":" + r), c.setAttribute(t, 1), c.rel = "stylesheet", c.href = s);
-                var b = function(e, a) {
+                var p = function(e, a) {
                     if (c.onerror = c.onload = null, c.removeAttribute(t), clearTimeout(h), a && "load" != a.type && c.parentNode.removeChild(c), d(a), e) return e(a)
                 };
                 if (c.getAttribute(t)) {
-                    var h = setTimeout(b.bind(null, void 0, {
+                    var h = setTimeout(p.bind(null, void 0, {
                         type: "timeout",
                         target: c
                     }), 12e4);
-                    c.onerror = b.bind(null, c.onerror), c.onload = b.bind(null, c.onload)
-                } else b(void 0, {
+                    c.onerror = p.bind(null, c.onerror), c.onload = p.bind(null, c.onload)
+                } else p(void 0, {
                     type: "load",
                     target: c
                 });
@@ -3809,9 +3809,9 @@
         var d = fetch(u.p + t);
         return "function" == typeof WebAssembly.instantiateStreaming ? WebAssembly.instantiateStreaming(d, s).then(a => Object.assign(e, a.instance.exports)) : d.then(e => e.arrayBuffer()).then(e => WebAssembly.instantiate(e, s)).then(a => Object.assign(e, a.instance.exports))
     };
-    var p = u.O(void 0, ["shared", "app", "87822", "5114", "21396", "13798", "61160", "63550", "482", "19263", "10991", "20117", "58409", "31897", "48023", "3341", "88790", "47470", "22843", "94288", "25653", "44830", "92637", "46318", "31717", "75851", "95121", "34426", "27057", "67079", "4082", "47692", "21251", "37580", "80574", "67615", "8240", "18814", "89894", "99742", "47146", "18407", "40894", "9975", "69039", "74836", "48590", "98086", "13508", "21413", "43870", "74970", "64873", "23777", "94816", "37102", "60499", "67929", "22198", "49191", "56145", "84009", "79417", "26230", "62768", "73810", "35306", "66888", "23398", "4327", "77015", "7704", "23824", "81161", "26737", "27043", "90117", "48059", "47498", "43820", "64612", "87711", "55348", "14701", "6086", "62597", "53509", "96041", "89505", "73749", "7273", "65800", "57789", "27405"], function() {
+    var b = u.O(void 0, ["shared", "app", "87822", "5114", "21396", "13798", "61160", "63550", "482", "19263", "10991", "20117", "58409", "31897", "48023", "3341", "88790", "47470", "22843", "94288", "25653", "9989", "92637", "46318", "31717", "75851", "95121", "34426", "27057", "67079", "4082", "47692", "21251", "37580", "80574", "67615", "8240", "18814", "89894", "99742", "47146", "18407", "40894", "9975", "69039", "74836", "48590", "98086", "13508", "21413", "43870", "74970", "64873", "23777", "94816", "37102", "60499", "67929", "22198", "49191", "56145", "84009", "79417", "26230", "62768", "73810", "35306", "66888", "23398", "4327", "77015", "7704", "23824", "81161", "26737", "27043", "90117", "48059", "47498", "43820", "64612", "87711", "55348", "14701", "6086", "62597", "53509", "96041", "89505", "73749", "7273", "65800", "57789", "27405"], function() {
         return u("20423")
     });
-    u.O(p)
+    u.O(b)
 }();
-//# sourceMappingURL=fb45c0690541ea6a8fd1.js.map
+//# sourceMappingURL=03ddb7e1ebafb58e8fe1.js.map
