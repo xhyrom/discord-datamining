@@ -1,0 +1,27 @@
+{
+  "id": 18902971553303,
+  "url": "https://hammerandchisel.zendesk.com/api/v2/help_center/en-us/articles/18902971553303.json",
+  "html_url": "https://support.discord.com/hc/en-us/articles/18902971553303--Notice-Emails-from-Discord",
+  "author_id": 12415876668,
+  "comments_disabled": true,
+  "draft": false,
+  "promoted": true,
+  "position": 0,
+  "section_id": 360007875111,
+  "created_at": "2023-11-08T00:43:10Z",
+  "name": "[Notice] Emails from Discord",
+  "title": "[Notice] Emails from Discord",
+  "source_locale": "en-us",
+  "locale": "en-us",
+  "outdated": false,
+  "outdated_locales": [],
+  "edited_at": "2023-11-08T00:44:59Z",
+  "user_segment_id": null,
+  "permission_group_id": 6449276657303,
+  "content_tag_ids": [],
+  "label_names": [
+    "email",
+    "email domain",
+    "domain"
+  ]
+}
