@@ -1,39 +1,5 @@
 (this.webpackChunkdiscord_app = this.webpackChunkdiscord_app || []).push([
     ["23398"], {
-        265614: function(e, t, i) {
-            "use strict";
-            i.r(t), i.d(t, {
-                ScreenIcon: function() {
-                    return o
-                }
-            });
-            var n = i("37983");
-            i("884691");
-            var r = i("669491"),
-                l = i("75196");
-            let o = e => {
-                let {
-                    width: t = 24,
-                    height: i = 24,
-                    color: o = r.default.colors.INTERACTIVE_NORMAL,
-                    colorClass: u = "",
-                    ...a
-                } = e;
-                return (0, n.jsx)("svg", {
-                    ...(0, l.default)(a),
-                    xmlns: "http://www.w3.org/2000/svg",
-                    width: t,
-                    height: i,
-                    fill: "none",
-                    viewBox: "0 0 24 24",
-                    children: (0, n.jsx)("path", {
-                        fill: "string" == typeof o ? o : o.css,
-                        d: "M5 2a3 3 0 0 0-3 3v8a3 3 0 0 0 3 3h14a3 3 0 0 0 3-3V5a3 3 0 0 0-3-3H5ZM13.5 20a.5.5 0 0 1-.5-.5v-2a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v2a.5.5 0 0 1-.5.5H9a1 1 0 1 0 0 2h6a1 1 0 1 0 0-2h-1.5Z",
-                        className: u
-                    })
-                })
-            }
-        },
         824986: function(e, t, i) {
             "use strict";
             i.r(t), i.d(t, {
@@ -46,8 +12,8 @@
             });
             var n, r, l, o = i("446674"),
                 u = i("913144"),
-                a = i("521012"),
-                s = i("565785"),
+                s = i("521012"),
+                a = i("565785"),
                 d = i("646718");
             (n = l || (l = {})).FILE_UPLOAD = "file_upload", n.STICKER_PICKER = "sticker_picker", n.EMOJI_PICKER = "emoji_picker", n.BOOSTING_FLOW = "boosting_flow";
             let c = {
@@ -170,7 +136,7 @@
                         subscription: t
                     } = e, {
                         enabled: i
-                    } = s.default.getCurrentConfig({
+                    } = a.default.getCurrentConfig({
                         location: "5f2710_1"
                     }, {
                         autoTrackExposure: !1
@@ -182,12 +148,12 @@
                         entitlement: t
                     } = e, {
                         enabled: i
-                    } = s.default.getCurrentConfig({
+                    } = a.default.getCurrentConfig({
                         location: "5f2710_2"
                     }, {
                         autoTrackExposure: !1
                     });
-                    i && (null == t ? void 0 : t.sku_id) === d.PremiumSubscriptionSKUs.TIER_2 && null == a.default.getPremiumSubscription(!1) && null == c.tutorialExpirationTime && E()
+                    i && (null == t ? void 0 : t.sku_id) === d.PremiumSubscriptionSKUs.TIER_2 && null == s.default.getPremiumSubscription(!1) && null == c.tutorialExpirationTime && E()
                 }
             })
         },
@@ -259,8 +225,8 @@
                 l = i("151426"),
                 o = i("850068"),
                 u = i("10641"),
-                a = i("374363"),
-                s = i("697218"),
+                s = i("374363"),
+                a = i("697218"),
                 d = i("521012"),
                 c = i("719923"),
                 m = i("324878"),
@@ -268,30 +234,30 @@
                 f = i("694768"),
                 T = i("565785"),
                 p = i("646718");
-            let M = () => {
+            let S = () => {
                     let e = (0, r.useStateFromStores)([d.default], () => d.default.getPremiumTypeSubscription()),
                         t = (0, u.useIsDismissibleContentDismissed)(l.DismissibleContent.PREMIUM_TUTORIAL_EXPERIENCE);
                     return (0, m.isEligibleTrialSub)(e) && !t
                 },
-                S = () => {
+                M = () => {
                     let e = (0, m.useHasActiveTrial)(),
                         t = (0, u.useIsDismissibleContentDismissed)(l.DismissibleContent.PREMIUM_TUTORIAL_EXPERIENCE),
-                        i = (0, r.useStateFromStores)([s.default], () => s.default.getCurrentUser()),
-                        a = (0, c.isPremiumExactly)(i, p.PremiumTypes.TIER_2),
+                        i = (0, r.useStateFromStores)([a.default], () => a.default.getCurrentUser()),
+                        s = (0, c.isPremiumExactly)(i, p.PremiumTypes.TIER_2),
                         E = (0, r.useStateFromStores)([d.default], () => d.default.hasFetchedPreviousPremiumTypeSubscription()),
                         f = (0, r.useStateFromStores)([d.default], () => d.default.getPreviousPremiumTypeSubscription()),
-                        T = !e && a;
+                        T = !e && s;
                     n.useEffect(() => {
                         T && !E && !t && (0, o.fetchMostRecentSubscription)()
                     }, [T, E, t]);
-                    let M = T && E && null == f;
-                    return M && !t
+                    let S = T && E && null == f;
+                    return S && !t
                 };
 
             function _(e) {
                 var t;
                 let i = !(arguments.length > 1) || void 0 === arguments[1] || arguments[1],
-                    n = M() && i,
+                    n = S() && i,
                     {
                         enabled: l
                     } = f.default.useExperiment({
@@ -302,37 +268,37 @@
                     }),
                     o = (0, r.useStateFromStores)([E.default], () => E.default.tutorialExpirationTime),
                     u = new Date().getTime(),
-                    a = (0, r.useStateFromStores)([d.default], () => {
+                    s = (0, r.useStateFromStores)([d.default], () => {
                         var e, i;
                         return null !== (t = null === (i = d.default.getPremiumSubscription()) || void 0 === i ? void 0 : null === (e = i.createdAt) || void 0 === e ? void 0 : e.getTime()) && void 0 !== t ? t : 0
                     }),
-                    s = S() && i,
+                    a = M() && i,
                     c = T.default.useExperiment({
                         location: e
                     }, {
-                        autoTrackExposure: s && u - a < 18e5,
-                        disable: !s
+                        autoTrackExposure: a && u - s < 18e5,
+                        disable: !a
                     }).enabled && null != o && o > u;
                 return l || c
             }
-            let v = () => {
+            let P = () => {
                     let e = d.default.getPremiumTypeSubscription(),
                         t = (0, u.isDismissibleContentDismissed)(l.DismissibleContent.PREMIUM_TUTORIAL_EXPERIENCE);
                     return (0, m.isEligibleTrialSub)(e) && !t
                 },
-                P = () => {
+                C = () => {
                     let e = (0, m.hasActiveTrial)(),
                         t = (0, u.isDismissibleContentDismissed)(l.DismissibleContent.PREMIUM_TUTORIAL_EXPERIENCE),
-                        i = s.default.getCurrentUser(),
+                        i = a.default.getCurrentUser(),
                         n = (0, c.isPremiumExactly)(i, p.PremiumTypes.TIER_2),
                         r = d.default.hasFetchedPreviousPremiumTypeSubscription(),
-                        a = d.default.getPreviousPremiumTypeSubscription();
-                    return !r && n && !t && (0, o.fetchMostRecentSubscription)(), !t && !e && n && r && null == a
+                        s = d.default.getPreviousPremiumTypeSubscription();
+                    return !r && n && !t && (0, o.fetchMostRecentSubscription)(), !t && !e && n && r && null == s
                 },
                 I = function(e) {
                     var t, i, n;
                     let r = !(arguments.length > 1) || void 0 === arguments[1] || arguments[1],
-                        l = v() && r,
+                        l = P() && r,
                         {
                             enabled: o
                         } = f.default.getCurrentConfig({
@@ -342,18 +308,18 @@
                             autoTrackExposure: l
                         }),
                         u = new Date().getTime(),
-                        a = E.default.tutorialExpirationTime,
-                        s = null !== (n = null === (i = d.default.getPremiumSubscription()) || void 0 === i ? void 0 : null === (t = i.createdAt) || void 0 === t ? void 0 : t.getTime()) && void 0 !== n ? n : 0,
-                        c = P() && r,
+                        s = E.default.tutorialExpirationTime,
+                        a = null !== (n = null === (i = d.default.getPremiumSubscription()) || void 0 === i ? void 0 : null === (t = i.createdAt) || void 0 === t ? void 0 : t.getTime()) && void 0 !== n ? n : 0,
+                        c = C() && r,
                         m = T.default.getCurrentConfig({
                             location: e
                         }, {
                             disable: !c,
-                            autoTrackExposure: c && u - s < 18e5
-                        }).enabled && null != a && a > u;
+                            autoTrackExposure: c && u - a < 18e5
+                        }).enabled && null != s && s > u;
                     return o || m
                 },
-                C = [];
+                v = [];
 
             function R() {
                 return p.PremiumTutorialStepOrder.filter(e => (0, u.isDismissibleContentDismissed)(e))
@@ -362,12 +328,12 @@
             function g() {
                 return function(e, t) {
                     let i = _("useMemoizedValueSyncedWithDismissibleContents"),
-                        l = (0, r.useStateFromStores)([a.default], () => {
+                        l = (0, r.useStateFromStores)([s.default], () => {
                             var e;
-                            return null === (e = a.default.settings.userContent) || void 0 === e ? void 0 : e.dismissedContents
+                            return null === (e = s.default.settings.userContent) || void 0 === e ? void 0 : e.dismissedContents
                         });
                     return n.useMemo(() => i ? e() : t, [i, t, e, l])
-                }(R, C)
+                }(R, v)
             }
         },
         394832: function(e, t, i) {
@@ -413,10 +379,10 @@
                     return I
                 },
                 useFullScreenLayerStore: function() {
-                    return S
+                    return M
                 },
                 openFullScreenLayer: function() {
-                    return C
+                    return v
                 },
                 closeFullScreenLayer: function() {
                     return R
@@ -425,8 +391,8 @@
             var n, r, l = i("37983"),
                 o = i("884691"),
                 u = i("995008"),
-                a = i.n(u),
-                s = i("324134"),
+                s = i.n(u),
+                a = i("324134"),
                 d = i("308503"),
                 c = i("769846"),
                 m = i("77078"),
@@ -434,9 +400,9 @@
                 f = i("159885"),
                 T = i("983782"),
                 p = i("275495");
-            let M = (0, f.cssValueToNumber)(c.default.FULL_SCREEN_LAYER_ANIMATION_DURATION);
+            let S = (0, f.cssValueToNumber)(c.default.FULL_SCREEN_LAYER_ANIMATION_DURATION);
             (r = n || (n = {}))[r.ENTERING = 1] = "ENTERING", r[r.ENTERED = 2] = "ENTERED", r[r.EXITING = 3] = "EXITING", r[r.EXITED = 4] = "EXITED";
-            let S = (0, d.default)(e => ({
+            let M = (0, d.default)(e => ({
                 fullScreenLayers: [],
                 addLayer: t => e(e => {
                     let {
@@ -477,7 +443,7 @@
                     })
                 })
             }
-            let v = {
+            let P = {
                     enter: p.enter,
                     enterActive: p.enterActive,
                     enterDone: p.enterDone,
@@ -485,7 +451,7 @@
                     exitActive: p.exitActive,
                     exitDone: p.exitDone
                 },
-                P = {
+                C = {
                     enter: p.enterReducedMotion,
                     enterActive: p.enterActiveReducedMotion,
                     enterDone: p.enterDoneReducedMotion,
@@ -497,13 +463,13 @@
             function I() {
                 let {
                     reducedMotion: e
-                } = o.useContext(m.AccessibilityPreferencesContext), t = e.enabled, i = t ? P : v, r = S(e => e.fullScreenLayers);
-                return (0, l.jsx)(s.TransitionGroup, {
-                    children: r.map(e => (0, l.jsx)(s.CSSTransition, {
+                } = o.useContext(m.AccessibilityPreferencesContext), t = e.enabled, i = t ? C : P, r = M(e => e.fullScreenLayers);
+                return (0, l.jsx)(a.TransitionGroup, {
+                    children: r.map(e => (0, l.jsx)(a.CSSTransition, {
                         classNames: i,
-                        timeout: M,
+                        timeout: S,
                         onEntered: () => {
-                            S.setState({
+                            M.setState({
                                 fullScreenLayers: r.map(t => t.key === e.key ? {
                                     ...t,
                                     transitionState: n.ENTERED
@@ -518,14 +484,14 @@
                 })
             }
 
-            function C(e) {
+            function v(e) {
                 let t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : Object.freeze({}),
                     {
                         layerKey: i,
                         Layer: r
                     } = t,
-                    l = null != i ? i : a();
-                return S.setState(t => ({
+                    l = null != i ? i : s();
+                return M.setState(t => ({
                     fullScreenLayers: [...t.fullScreenLayers, {
                         key: l,
                         transitionState: n.ENTERING,
@@ -536,11 +502,11 @@
             }
 
             function R(e) {
-                S.setState(t => ({
+                M.setState(t => ({
                     fullScreenLayers: t.fullScreenLayers.filter(t => t.key !== e)
                 }))
             }
         }
     }
 ]);
-//# sourceMappingURL=6c436512108ac1b50204.js.map
+//# sourceMappingURL=da0edbe038c3ba57471a.js.map

@@ -21157,8 +21157,11 @@
                 CLIPS_THUMBNAIL_MAX_HEIGHT: function() {
                     return N
                 },
-                CLIP_NAME_TEMPLATE: function() {
+                CLIPS_MAX_PARTICIPANTS: function() {
                     return O
+                },
+                CLIP_NAME_TEMPLATE: function() {
+                    return D
                 }
             });
             var i, r, s, a, o, l, u = n("605250"),
@@ -21180,7 +21183,8 @@
                 v = "clips-gallery",
                 R = 640,
                 N = 360,
-                O = e => "Clip - ".concat(new Date(e).toLocaleString())
+                O = 100,
+                D = e => "Clip - ".concat(new Date(e).toLocaleString())
         },
         386045: function(e, t, n) {
             "use strict";
@@ -21458,6 +21462,27 @@
                     return i
                 }
             }), (r = i || (i = {})).UNKNOWN = "unknown", r.BELOW_MINIMUM = "below_minimum", r.MEETS_MINIMUM = "meets_minimum", r.MEETS_AUTO_ENABLE = "meets_auto_enable"
+        },
+        66175: function(e, t, n) {
+            "use strict";
+            n.r(t), n.d(t, {
+                getClipCreatedAt: function() {
+                    return s
+                },
+                getClipParticipantIds: function() {
+                    return a
+                }
+            });
+            var i = n("299039"),
+                r = n("80028");
+
+            function s(e) {
+                return new Date(i.default.extractTimestamp(e)).toISOString()
+            }
+
+            function a(e) {
+                return e.slice(0, r.CLIPS_MAX_PARTICIPANTS)
+            }
         },
         680894: function(e, t, n) {
             "use strict";
@@ -31521,6 +31546,9 @@
         653047: function(e, t, n) {
             "use strict";
             n.r(t), n.d(t, {
+                createExecutable: function() {
+                    return u
+                },
                 default: function() {
                     return c
                 }
@@ -31531,16 +31559,17 @@
                 a = n("766274"),
                 o = n("954016");
             let l = {
-                    [o.POKER_NIGHT_APPLICATION_ID]: 7,
-                    [o.END_GAME_APPLICATION_ID]: 12
-                },
-                u = e => {
-                    let t = {
-                        os: e.os,
-                        name: e.name
-                    };
-                    return null != e.arguments && (t.arguments = e.arguments), null != e.is_launcher && (t.isLauncher = e.is_launcher), t
+                [o.POKER_NIGHT_APPLICATION_ID]: 7,
+                [o.END_GAME_APPLICATION_ID]: 12
+            };
+
+            function u(e) {
+                let t = {
+                    os: e.os,
+                    name: e.name
                 };
+                return null != e.arguments && (t.arguments = e.arguments), null != e.is_launcher && (t.isLauncher = e.is_launcher), t
+            }
             class c extends i.default {
                 static createFromServer(e) {
                     var t;
@@ -34924,11 +34953,8 @@
             }
             class I extends s.default.PersistedStore {
                 initialize(e) {
-                    if (null != e && (null != e.detectableGamesEtag && (p = e.detectableGamesEtag), null != e.detectableGames))
-                        for (let t of Object.values(e.detectableGames)) {
-                            let e = new u.default(t);
-                            m(e)
-                        }
+                    var t;
+                    null != e && (null != e.detectableGamesEtag && (p = e.detectableGamesEtag), null === (t = e.detectableGames) || void 0 === t || t.forEach(e => m(e)))
                 }
                 getState() {
                     return {
@@ -35011,10 +35037,19 @@
                         games: t,
                         etag: n
                     } = e;
-                    for (let e of (null != n && p !== n && (p = n), t)) {
-                        let t = u.default.createFromServer(e);
-                        m(t)
-                    }
+                    for (let e of (null != n && p !== n && (p = n), t)) m(function(e) {
+                        var t, n, i, r, s, a;
+                        return {
+                            id: e.id,
+                            name: e.name,
+                            executables: (null !== (t = e.executables) && void 0 !== t ? t : []).map(u.createExecutable),
+                            overlay: null !== (n = e.overlay) && void 0 !== n && n,
+                            overlayWarn: null !== (i = e.overlay_warn) && void 0 !== i && i,
+                            overlayCompatibilityHook: null !== (r = e.overlay_compatibility_hook) && void 0 !== r && r,
+                            hook: null === (s = e.hook) || void 0 === s || s,
+                            aliases: null !== (a = e.aliases) && void 0 !== a ? a : []
+                        }
+                    }(e));
                     i = void 0, S = Date.now()
                 }
             })
@@ -49032,7 +49067,7 @@
                         var i;
                         let d = {
                                 environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                                build_number: "244322"
+                                build_number: "244409"
                             },
                             E = l.default.getCurrentUser();
                         null != E && (d.user_id = E.id, d.user_name = E.tag, null != E.email && (d.email = E.email));
@@ -51337,7 +51372,7 @@
                     return u
                 }
             });
-            var i = n("299039"),
+            var i = n("66175"),
                 r = n("894488");
             let s = [{
                     reName: /\.jpe?g$/i,
@@ -51402,7 +51437,7 @@
                 }({
                     spoiler: e.spoiler
                 });
-                return a.filename = "".concat(o).concat(null != s ? s : e.filename), a.uploaded_filename = e.uploadedFilename, "durationSecs" in e && null != e.durationSecs && (a.duration_secs = e.durationSecs), "waveform" in e && null != e.waveform && (a.waveform = e.waveform), "isThumbnail" in e && !0 === e.isThumbnail && (a.is_thumbnail = e.isThumbnail), "isRemix" in e && !0 === e.isRemix && (a.is_remix = e.isRemix), "clip" in e && null != e.clip && (a.is_clip = !0, a.title = e.clip.name, a.application_id = e.clip.applicationId, a.clip_created_at = new Date(i.default.extractTimestamp(e.clip.id)).toISOString(), a.clip_participant_ids = e.clip.users), a
+                return a.filename = "".concat(o).concat(null != s ? s : e.filename), a.uploaded_filename = e.uploadedFilename, "durationSecs" in e && null != e.durationSecs && (a.duration_secs = e.durationSecs), "waveform" in e && null != e.waveform && (a.waveform = e.waveform), "isThumbnail" in e && !0 === e.isThumbnail && (a.is_thumbnail = e.isThumbnail), "isRemix" in e && !0 === e.isRemix && (a.is_remix = e.isRemix), "clip" in e && null != e.clip && (a.is_clip = !0, a.title = e.clip.name, a.application_id = e.clip.applicationId, a.clip_created_at = (0, i.getClipCreatedAt)(e.clip.id), a.clip_participant_ids = (0, i.getClipParticipantIds)(e.clip.users)), a
             }
 
             function l(e) {
@@ -62302,4 +62337,4 @@
         }
     }
 ]);
-//# sourceMappingURL=492b99d88a521bd8bbf8.js.map
+//# sourceMappingURL=b06c8ed24cde178b8dae.js.map

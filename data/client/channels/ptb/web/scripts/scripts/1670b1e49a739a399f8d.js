@@ -3695,20 +3695,20 @@
                 a = n.n(i),
                 l = n("917351"),
                 s = n.n(l),
-                r = n("299039");
+                r = n("66175");
 
             function o(e) {
-                var t, n, i;
-                let l = e.item.file;
-                return a(null != l, "file data must not be empty"), {
-                    filename: l.name,
-                    file_size: l.size,
+                var t, n;
+                let i = e.item.file;
+                return a(null != i, "file data must not be empty"), {
+                    filename: i.name,
+                    file_size: i.size,
                     id: s.uniqueId(),
                     is_clip: null != e.clip,
                     title: null === (t = e.clip) || void 0 === t ? void 0 : t.name,
                     application_id: null === (n = e.clip) || void 0 === n ? void 0 : n.applicationId,
-                    clip_created_at: null != e.clip ? new Date(r.default.extractTimestamp(e.clip.id)).toISOString() : void 0,
-                    clip_participant_ids: null === (i = e.clip) || void 0 === i ? void 0 : i.users
+                    clip_created_at: null != e.clip ? (0, r.getClipCreatedAt)(e.clip.id) : void 0,
+                    clip_participant_ids: null != e.clip ? (0, r.getClipParticipantIds)(e.clip.users) : void 0
                 }
             }
             var u = {
@@ -33031,4 +33031,4 @@
         }
     }
 ]);
-//# sourceMappingURL=b34f4b2d6d036863c2c0.js.map
+//# sourceMappingURL=1670b1e49a739a399f8d.js.map
