@@ -14955,17 +14955,12 @@
                 INVENTORY_ADD_NITRO_DESCRIPTION_WITH_PLURAL: "You have already added your {maxFreePacks, plural, one {**{maxFreePacks}** free pack} other {**{maxFreePacks}** free packs}}. Upgrade to Nitro to add up to **{maxPacks}**.",
                 INVENTORY_EMOJI_DETAILS: "See details",
                 INVENTORY_EMOJI_DETAILS_V2: "See emoji details",
-                INVENTORY_ALLOW_USE_SETTING_MOBILE: "Allow anyone to use server emoji",
-                INVENTORY_ALLOW_USE_SETTING: "Allow anyone to use and collect this server’s emoji",
                 INVENTORY_ALLOW_USE_SETTING_V2: "Allow anyone to add and use this server’s emoji",
                 INVENTORY_EMOJI_VISIBLE_DESCRIPTION: "Custom emoji from this server will be visible in previews across servers.",
-                INVENTORY_EMOJI_COLLECTED_DESCRIPTION: "{number, plural, one {**{number}** person has} other {**{number}** people have}} collected your server’s emoji.",
                 INVENTORY_EMOJI_COLLECTED_DESCRIPTION_V2: "{number, plural, one {**{number}** person has} other {**{number}** people have}} added your server’s emoji.",
                 INVENTORY_NEW_SETTING: "New Emoji Setting",
-                INVENTORY_NEW_SETTING_DESCRIPTION_SOON: "Starting soon, users outside of your server will be able to collect and use your server's emoji. You can change this setting at any time.",
                 INVENTORY_NEW_SETTING_DESCRIPTION_SOON_V2: "Starting soon, users outside of your server will be able to access your server's emoji and use them throughout Discord. You can change this setting at any time.",
                 INVENTORY_VIEW_SETTING: "View Setting",
-                INVENTORY_DISABLE_SETTING_TITLE: "Are you sure you want to disable collection?",
                 INVENTORY_DISABLE_SETTING_TITLE_V2: "Are you sure you want to turn off external access to your server’s emoji?",
                 INVENTORY_DISABLE_SETTING_TITLE_MOBILE: "Disable Pack Collection",
                 INVENTORY_DISABLE_SETTING_DESCRIPTION: "{collectedCount, plural, one {**{collectedCount}** person} other {**{collectedCount}** people}} will lose access to your server’s emoji.",
@@ -14973,11 +14968,6 @@
                 INVENTORY_DISABLE_SETTING_TOAST_DESCRIPTION: "Non-members of your server can no longer access and use your server’s emoji.",
                 INVENTORY_LOCKED_PACK_EMOJI_UPSELL: "To use the full pack from **!!{packName}!!**, upgrade to Nitro",
                 INVENTORY_LEAVE_SERVER_DESCRIPTION: "Keep emoji from servers you aren’t in.",
-                INVENTORY_TRY_PACKS_TITLE: "Add your favorite emoji packs",
-                INVENTORY_TRY_PACKS_DESCRIPTION: "Now you can add up to {maxPacks} emoji packs straight to your emoji picker with Nitro.",
-                INVENTORY_TRY_PACKS_DESCRIPTION_2: "Here are some popular packs to get you started:",
-                INVENTORY_TRY_PACKS_DESCRIPTION_FREEMIUM: "Now you can add {maxFreePacks, plural, one {{maxFreePacks} emoji pack} other {{maxFreePacks} emoji packs}} straight to your emoji picker and use {maxFreePacks, plural, one {it} other {them}} anywhere on Discord.",
-                INVENTORY_TRY_PACKS_DESCRIPTION_FREEMIUM_2: "Let the emoji party begin with one of the popular packs below:",
                 INVENTORY_TRY_PACKS_TITLE_NITRO: "Up your emoji game with packs",
                 INVENTORY_TRY_PACKS_TITLE_FREEMIUM: "Start your emoji collection with a free pack",
                 INVENTORY_TRY_PACKS_DESCRIPTION_V2: "You can now click on emoji from [eligible servers]({helpCenterLink}) to add a pack straight to your emoji collection.",
@@ -18141,7 +18131,7 @@
                 u = E("782340");
             (0, i.setUpdateRules)(s.default), (0, r.default)(u.default, n.default, T.default), a.default.Emitter.injectBatchEmitChanges(o.unstable_batchedUpdates), a.default.PersistedStore.disableWrites = __OVERLAY__, a.default.initialize();
             let L = window.GLOBAL_ENV.RELEASE_CHANNEL;
-            new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(L, ", Build Number: ").concat("244537", ", Version Hash: ").concat("3fe2dc6e58b19c9e869c45d49d8aa5b58ecd27ce")), t.default.setTags({
+            new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(L, ", Build Number: ").concat("244546", ", Version Hash: ").concat("fb4d5ee28521e54e5979b6bad84ef6f3349e05b0")), t.default.setTags({
                 appContext: l.CURRENT_APP_CONTEXT
             }), S.default.initBasic(), N.default.init(), I.FocusRingManager.init(), O.init(), (0, R.cleanupTempFiles)()
         },
@@ -20530,8 +20520,8 @@
 
             function o() {
                 var e;
-                let _ = parseInt((e = "244537", "244537"));
-                return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("244537")), _ = 0), _
+                let _ = parseInt((e = "244546", "244546"));
+                return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("244546")), _ = 0), _
             }
         },
         990629: function(e, _, E) {
@@ -36442,4 +36432,4 @@
         }
     }
 ]);
-//# sourceMappingURL=bfd6038d181b1d6107bf.js.map
+//# sourceMappingURL=61cdf3304b9d7d5b0977.js.map
