@@ -116,30 +116,30 @@
 <p class="wysiwyg-text-align-center"><img src="https://support.discord.com/hc/article_attachments/18913904081943" alt="directmessage.jpeg" width="215" height="447"> <img src="https://support.discord.com/hc/article_attachments/18913889040279" alt="start.jpeg" width="214" height="448">  <img src="https://support.discord.com/hc/article_attachments/18913904087191" alt="gdm.jpeg" width="214" height="446"></p>
 <h1 id="docs-internal-guid-f4cec749-7fff-1016-fb81-afc19458f1e8">Expressing Yourself</h1>
 <p>Now that you’re connected with your friends in servers and DMs, you can now start chatting away through text, emojis, photos and more! </p>
-<p class="wysiwyg-text-align-center"><img src="https://support.discord.com/hc/article_attachments/18913904091543" alt="custom copy.jpeg"></p>
+<p class="wysiwyg-text-align-center"><img src="https://support.discord.com/hc/article_attachments/18913904091543" alt="custom copy.jpeg" width="416" height="563"></p>
 <h2 id="h_01GVRBZ8WFA93W2989N833NPSF">Sending Photos and Files</h2>
 <p>Want to stay in chat and directly send a photo without opening your camera app? </p>
 <p>1. You can send a photo on the fly to your friends by tapping the <strong>Add File</strong> icon in the bottom left corner. </p>
 <p>2. This will let you view your photos within your photo gallery or select the Camera button.</p>
 <p>3. If you would like to directly take a photo, select the <strong>Camera</strong> button to open the Camera app within Discord. Then, you will be able to take a photo. </p>
 <p>4. Once you have taken or chosen the photo, you will be able to send a message along with the photo to your friends. </p>
-<p class="wysiwyg-text-align-center"><span id="docs-internal-guid-9a7ca63e-7fff-7307-1f82-a733dcd0a5c8"><img src="https://lh4.googleusercontent.com/LsjOJOBJrKGu0RAau4yJdOab3xobElEOq0_30Gopn7iMvsOiIlDVCVjc_7LMmrSNO78Io3ljengLy40i12sh6jJzc8k8qHaHkSI19pZ-I01yG9TNkR9ra-afzEjTecc6LDd_twrL1oVibRccj6gGQSE" width="217" height="469"></span></p>
+<p class="wysiwyg-text-align-center"><img src="https://support.discord.com/hc/article_attachments/18914001382551" alt="snorlax.gif" width="253" height="547"></p>
 <h2 id="docs-internal-guid-5effe00a-7fff-1c03-9c72-31d98f0a484d">Sending Gifs</h2>
 <p>You’ll also be able to send gifs directly into chat by using the GIF Picker! </p>
 <p>1. To send a gif, tap the <strong>emoji</strong> icon located to the right of the message bar. This icon resembles a smiley face. </p>
 <p>2. Once you have tapped the emoji icon, the Emoji, GIFs, and Stickers selection menu will appear. </p>
 <p>3. Select the <strong>GIFs</strong> tab to view and choose various gifs to send to your friends. If you’d like to search for a specific gif, you can type within the <strong>Search Tenor </strong>bar to populate more choices.  </p>
-<p class="wysiwyg-text-align-center"><span id="docs-internal-guid-9f7bbf83-7fff-d406-7d67-1d42a8bdbfed"><img src="https://lh3.googleusercontent.com/tv3h8aIZM_annMQIOERGPcIwCbxO5bEXqWom1YgvY3SZ7emnMAqeRlEriPrHHWBL3JKKxADkC65HYFy8awn-gg4uDK9kRyfbPIN8VFP3PXWhBte-DoKW7gk0Uzcrq8WD2M4B6Xg1wKY8Vrwk7Wz7Gjw" width="217" height="469"></span><span style="font-weight: 400;"><br></span></p>
+<p class="wysiwyg-text-align-center"><span style="font-weight: 400;"><img src="https://support.discord.com/hc/article_attachments/18914034436503" alt="gif.gif" width="271" height="586"></span></p>
 <h2 id="docs-internal-guid-048110e6-7fff-df9d-0da5-954cd88790a3">Adding Emojis</h2>
 <p>You can directly send emojis through chat by pressing on that <strong>Emoji</strong> icon in the message bar! </p>
 <p>You’ll be able to see your most frequently used emojis, or directly search for the exact emoji you’re looking for in the emoji search bar! </p>
-<p class="wysiwyg-text-align-center"><img src="https://lh6.googleusercontent.com/z5X8_AJ10FWnUE8bvAG1QF9nIWTNRJxPBSO44vqiiqvH0tNzrYzKTHEi7ePQGQbH7FQCv7wQnQZfxVpgkPqghv3Y1W88C2QqJlRyKSdMtQ91H6x_FEL-I39gYPrrb9xIUJNjqZSGKNlSpKWh7p_SvOQ"></p>
+<p class="wysiwyg-text-align-center"><img src="https://support.discord.com/hc/article_attachments/18914001393303" alt="emoji.jpeg"></p>
 <h2 id="h_01GVRBYKP55NK4YQGQWV5H8AZ8">Adding Reactions</h2>
 <p>Not only are you able to send emojis within messages, but you can also choose an emoji to react to posted messages. </p>
 <p>1. To add a reaction on the mobile app, long press the message you’d like to react to. This will allow a new menu to appear. </p>
 <p>2. From this menu, you can choose one of your frequently used emojis as a reaction, or you can directly search for a specific emoji to use as a reaction by pressing on the Reactions icon.  </p>
 <p>3. If another person has already reacted to the message, you can tap on their reaction to add to the reaction counter or you press on the <strong>emoji</strong> icon to select another emoji you’d like to add. </p>
-<p class="wysiwyg-text-align-center"><img src="https://lh6.googleusercontent.com/wM7F13cQqKBJ7koU6jTErSw2_KIsNM2cEsCnrwAlTy7-2akQcge6eIBVtWOSzVWbiJE0ue_WBc0gWYMFMqiKyiLxGnhFirO_73rcVXaUbT8CDkxXg9WKkJzxU0axr--2nemtUv4tp_HYtptjwJxAqYw" width="225" height="468">   <img src="https://lh5.googleusercontent.com/A5Uvhqz0heDNF5AKAc_FuDnt2cMQZ-OyTGln03wWkoNHYLUc_3Nh8lO_qqU3ZjerFzyuxZ-cWqitW9HzWT7a-4_SQwcOpD0Po46xHl5Yi-7GCtyy9kvQ5W10TgVUAMWjX4gTuV_4PZge-nc3vHKmMyc" width="216" height="467">   <img src="https://lh3.googleusercontent.com/bFM6nFnwqZI1qBPQ9gZqfqqR1gllxpvLVyIoLuGKiS6CYN-7DmkQwxDiqf_OrK1naIy72ChcirbPdUgz99lkqfbPecYwKkrNJn424f7QPLNq__3L-F0wbd55bfDtUSc6f_SZCdjFPtZfkSEwNKH_Yxw" width="224" height="467"></p>
+<p class="wysiwyg-text-align-center"><img src="https://support.discord.com/hc/article_attachments/18914001400215" alt="reactions.jpeg" width="232" height="482"> <img src="https://support.discord.com/hc/article_attachments/18914001405463" alt="emojipicker.gif" width="223" height="482">  <img src="https://support.discord.com/hc/article_attachments/18914034456983" alt="addedreaction.jpeg" width="231" height="482"></p>
 <h1 id="h_01HEP8F32QGWR3B67R1FC1AD4F"><strong>And you've made it! </strong></h1>
 <p>Hopefully this guide helped you to understand the basics of getting started on Discord mobile! For other useful guides to learn more about Discord, check out these articles below.</p>
 <ul>
