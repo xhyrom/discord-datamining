@@ -49060,7 +49060,7 @@
                         var i;
                         let d = {
                                 environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                                build_number: "244736"
+                                build_number: "244739"
                             },
                             h = l.default.getCurrentUser();
                         null != h && (d.user_id = h.id, d.user_name = h.tag, null != h.email && (d.email = h.email));
@@ -57949,7 +57949,7 @@
                     transport: T,
                     clips: g
                 } = _, I = {};
-                null != T && (I.availableOutgoingBitrate = T.sendBandwidth, I.ping = T.rtt, I.decryptionFailures = T.decryptionFailures, null != T.routingFailures && (I.routingFailures = T.routingFailures), I.localAddress = T.localAddress, I.pacerDelay = T.pacerDelay, null != T.receiverReports && (I.receiverReports = T.receiverReports), I.receiverBitrateEstimate = T.receiverBitrateEstimate, I.outboundBitrateEstimate = T.outboundBitrateEstimate, I.inboundBitrateEstimate = null !== (a = T.inboundBitrateEstimate) && void 0 !== a ? a : 0, I.packetsReceived = T.packetsReceived, I.packetsSent = T.packetsSent), ((null == T ? void 0 : T.bytesReceived) != null || null != E && !Number.isNaN(E)) && (I.bytesReceived = null !== (d = null !== (c = null == T ? void 0 : T.bytesReceived) && void 0 !== c ? c : E) && void 0 !== d ? d : void 0), ((null == T ? void 0 : T.bytesSent) != null || null != p && !Number.isNaN(p)) && (I.bytesSent = null !== (f = null !== (h = null == T ? void 0 : T.bytesSent) && void 0 !== h ? h : p) && void 0 !== f ? f : void 0);
+                null != T && (I.availableOutgoingBitrate = T.sendBandwidth, I.ping = T.rtt, I.decryptionFailures = T.decryptionFailures, null != T.routingFailures && (I.routingFailures = T.routingFailures), I.localAddress = T.localAddress, I.pacerDelay = T.pacerDelay, null != T.receiverReports && (I.receiverReports = T.receiverReports), I.receiverBitrateEstimate = T.receiverBitrateEstimate, I.outboundBitrateEstimate = T.outboundBitrateEstimate, I.inboundBitrateEstimate = null !== (a = T.inboundBitrateEstimate) && void 0 !== a ? a : 0, I.packetsReceived = T.packetsReceived, I.packetsSent = T.packetsSent, null != T.secureFramesProtocolVersion && (I.secureFramesProtocolVersion = T.secureFramesProtocolVersion)), ((null == T ? void 0 : T.bytesReceived) != null || null != E && !Number.isNaN(E)) && (I.bytesReceived = null !== (d = null !== (c = null == T ? void 0 : T.bytesReceived) && void 0 !== c ? c : E) && void 0 !== d ? d : void 0), ((null == T ? void 0 : T.bytesSent) != null || null != p && !Number.isNaN(p)) && (I.bytesSent = null !== (f = null !== (h = null == T ? void 0 : T.bytesSent) && void 0 !== h ? h : p) && void 0 !== f ? f : void 0);
                 let {
                     screenshare: C,
                     camera: v
@@ -62310,4 +62310,4 @@
         }
     }
 ]);
-//# sourceMappingURL=11f6c493ea2766f0ff58.js.map
+//# sourceMappingURL=3ed4da138ae12fcefa55.js.map

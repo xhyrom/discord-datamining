@@ -15313,7 +15313,7 @@ input[type=checkbox]:focus-visible+.label_ee78c3 {
 
 .grandfatheredMessage_b731ea {
     border-radius: 3px;
-    font-size: .75rem;
+    font-size: 12px;
     line-height: 1.25;
     padding: 8px 16px 8px 8px;
     display: flex;
@@ -15349,8 +15349,8 @@ input[type=checkbox]:focus-visible+.label_ee78c3 {
     color: var(--white-500);
     display: flex;
     align-items: flex-start;
-    font-size: 1rem;
-    line-height: 1.25rem;
+    font-size: 16px;
+    line-height: 20px;
     padding: 16px;
     position: relative
 }
@@ -15398,7 +15398,7 @@ input[type=checkbox]:focus-visible+.label_ee78c3 {
 
 .sectionDescription__93f73 {
     color: var(--text-normal);
-    line-height: 1.25rem;
+    line-height: 20px;
     margin-bottom: 16px;
     margin-top: 0
 }
@@ -15484,8 +15484,8 @@ input[type=checkbox]:focus-visible+.label_ee78c3 {
 
 .billingInformation_ed226c {
     color: var(--text-normal);
-    font-size: .875rem;
-    line-height: 1.125rem
+    font-size: 14px;
+    line-height: 18px
 }
 
 .finePrint_a624a3 {
@@ -15499,9 +15499,9 @@ input[type=checkbox]:focus-visible+.label_ee78c3 {
 }
 
 .noItemsCard__4a2f1 {
-    font-size: 1rem;
+    font-size: 16px;
     font-weight: 500;
-    line-height: 1.25rem;
+    line-height: 20px;
     margin-top: 16px;
     padding: 16px 19px;
     border: none;
@@ -123370,4 +123370,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=app.1bc209acfbc508771b88.css.map*/
+/*# sourceMappingURL=app.d6c236a71b5ddf3d6750.css.map*/
