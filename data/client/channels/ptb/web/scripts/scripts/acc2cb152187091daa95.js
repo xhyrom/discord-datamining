@@ -22041,7 +22041,8 @@
                     global_panels: "Use global panels for chat",
                     panels_navigator: "Use panels navigator",
                     cozy_header: "Cozy header",
-                    disable_search_preview: "Disable new search previews"
+                    disable_search_preview: "Disable new search previews",
+                    enable_file_link_redesign: "Enables the new file and links in search"
                 },
                 a = {};
             class o extends i.default.DeviceSettingsStore {
@@ -49063,7 +49064,7 @@
                         var i;
                         let d = {
                                 environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                                build_number: "244828"
+                                build_number: "244833"
                             },
                             h = l.default.getCurrentUser();
                         null != h && (d.user_id = h.id, d.user_name = h.tag, null != h.email && (d.email = h.email));
@@ -62313,4 +62314,4 @@
         }
     }
 ]);
-//# sourceMappingURL=bd04463a27888fe5f5c1.js.map
+//# sourceMappingURL=acc2cb152187091daa95.js.map
