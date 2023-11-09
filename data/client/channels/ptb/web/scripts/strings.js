@@ -16566,8 +16566,6 @@
                 DEADCHAT_ACTION_CAMERA: "My View",
                 DEADCHAT_ACTION_STICKER: "Surprise Me",
                 USER_SETTINGS_APPEARANCE_CHANNEL_LIST_LAYOUT_MINIMAL: "Minimal",
-                FORCED_SECURE_FRAMES_INCOMPATIBLE_TITLE: "Disconnected",
-                FORCED_SECURE_FRAMES_INCOMPATIBLE_BODY: "That channel forces testing of secure frames for audio/video, but your client does not support the protocol version and we do not yet support protocol negotiation.\n\n We disconnected you from the channel to protect your ears.",
                 SERVER_USAGE_SURVEY_BODY: "Help us make Discord better by answering a few questions about !!{guildName}!!",
                 SERVER_USAGE_SURVEY_CTA: "Take Survey",
                 REPORTS_USER_PREVIEW_TITLE: "Selected User",
@@ -18141,7 +18139,7 @@
                 u = E("782340");
             (0, i.setUpdateRules)(s.default), (0, r.default)(u.default, n.default, T.default), a.default.Emitter.injectBatchEmitChanges(o.unstable_batchedUpdates), a.default.PersistedStore.disableWrites = __OVERLAY__, a.default.initialize();
             let L = window.GLOBAL_ENV.RELEASE_CHANNEL;
-            new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(L, ", Build Number: ").concat("244664", ", Version Hash: ").concat("c6a59c5f1f212290bab8128e73ba1e7d0ff12a71")), t.default.setTags({
+            new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(L, ", Build Number: ").concat("244686", ", Version Hash: ").concat("ad913f98b104214d082f17ae88ba378f167f13ec")), t.default.setTags({
                 appContext: l.CURRENT_APP_CONTEXT
             }), S.default.initBasic(), N.default.init(), I.FocusRingManager.init(), O.init(), (0, R.cleanupTempFiles)()
         },
@@ -20532,8 +20530,8 @@
 
             function o() {
                 var e;
-                let _ = parseInt((e = "244664", "244664"));
-                return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("244664")), _ = 0), _
+                let _ = parseInt((e = "244686", "244686"));
+                return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("244686")), _ = 0), _
             }
         },
         990629: function(e, _, E) {
@@ -36444,4 +36442,4 @@
         }
     }
 ]);
-//# sourceMappingURL=2958c7e2ef1437aaa28a.js.map
+//# sourceMappingURL=828da5665f1d8dd5f6f2.js.map
