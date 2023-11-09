@@ -307,6 +307,7 @@ id,hash,label
 2023-09_guild_events_auto_start,2275541075,Allow users to toggle automatically start events
 2023-09_guild_events_entrypoint,1943118067,Experiments with showing Events entrypoint in the channel list in friends guilds
 2023-09_guild_events_improvements,2181787089,Experiments with various improvements to our events system
+2023-09_guild_polls,2254848082,Polls
 2023-09_iar_dsa_webform,1438986391,Safety Experience Unauthenticated Report Form
 2023-09_limited_time_custom_app_icons,4133484951,Limited-time icons
 2023-09_member_safety_release_coachmark,1865413295,Members Safety Release Coachmark Experiment
@@ -349,6 +350,7 @@ id,hash,label
 2023-10_halloween_2023,3705895930,Halloween assets 2023
 2023-10_mobile_redesign_one_percent_existing_users,1541876684,Tabs V2 - One Percent - Existing Users
 2023-10_mobile_redesign_one_percent_new_users,3475360205,Tabs V2 - One Percent - New Users
+2023-10_poll_users,3497865233,Polls User Experiment
 2023-10_premium_tier_2_trial_offer_expiring_notice,3950847537,Premium Tier 2 Trial Offer Expiring Notice
 2023-10_q4_drop,65716927,Q4 Drop
 2023-10_screencapturekit,3417823975,ScreenCaptureKit

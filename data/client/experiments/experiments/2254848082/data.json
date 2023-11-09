@@ -1,7 +1,22 @@
 {
   "data": {
     "kind": "guild",
-    "hash": 2254848082
+    "id": "2023-09_guild_polls",
+    "label": "Polls",
+    "description": [
+      "Not Eligible",
+      "Control Bucket",
+      "Treatment 1: Enables creation of polls within a guild"
+    ],
+    "hash": 2254848082,
+    "buckets": [
+      -1,
+      0,
+      1
+    ],
+    "config_keys": [
+      "enabled"
+    ]
   },
   "rollout": {
     "populations": [
