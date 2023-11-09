@@ -1297,6 +1297,7 @@
                             onClick: g.navigateToPremiumMarketingPage
                         })
                     }), (0, n.jsx)(y, {
+                        trialOffer: i,
                         className: A.subscribeButtonWide,
                         subscriptionTier: L.PremiumSubscriptionSKUs.TIER_2,
                         analyticsLocationObject: r,
@@ -2410,4 +2411,4 @@
         }
     }
 ]);
-//# sourceMappingURL=3aa1f2257bf1a73eea6d.js.map
+//# sourceMappingURL=108bf353f6a3d2f5cb03.js.map
