@@ -1,4 +1,4 @@
-<h3 id="docs-internal-guid-7c779590-7fff-ad76-fc71-b85eca26520f"><strong><span style="color: #cbc6c0;" data-darkreader-inline-color="">Profile effects are slowly rolling out to our users.  </span></strong></h3>
+<h3 id="h_01HETN5M2S9XCYQFNG49N4TX7A"><span class="wysiwyg-font-size-large"><strong>Profile effects are slowly rolling out to our users.  </strong></span></h3>
 <p><span class="wysiwyg-font-size-large"><strong>What this article covers: </strong></span></p>
 <ul>
     <li><a href="https://support.discord.com/hc/en-us/articles/17828465914263#h_01HBVVFMX6PNR9Z7QH216V2WBN">What are profile effects?</a></li>
@@ -14,18 +14,16 @@
 <h1 id="h_01HBVVFMX6PNR9Z7QH216V2WBN">What Are Profile Effects?</h1>
 <p>Profile effects are unique and snazzy animated effects that play on your profile when someone views your profile. In the new Shop, you can buy and collect a variety of effects that’ll let you personalize and decorate your Discord profile and wow your profile admirers! Collected effects are yours to keep and apply to your profile whenever you want. </p>
 <p class="wysiwyg-text-align-center"><img src="https://support.discord.com/hc/article_attachments/18007554192919" alt="image4.gif" width="461" height="514"></p>
-<h3 id="h_01HBVVFMX67DFD07YR4A6WM0F7">
-    <strong><span style="color: #cbc6c0;" data-darkreader-inline-color="">Nitro members can enjoy early access to these new profile effects in the Shop. Stay tuned as we slowly roll out this feature. To learn more about Nitro, check out this </span></strong><a href="https://support.discord.com/hc/en-us/articles/115000435108-What-are-Nitro-Nitro-Basic-"><strong><span class="wysiwyg-underline" style="color: #1155cc;" data-darkreader-inline-color="">article</span></strong></a><strong><span style="color: #cbc6c0;" data-darkreader-inline-color="">.</span></strong>
-</h3>
+<h3 id="h_01HETN5YHTJF1FQ41WG7DEFY3W">Nitro members can enjoy early access to these new profile effects in the Shop. Stay tuned as we slowly roll out this feature. To learn more about Nitro, check out this <a href="https://support.discord.com/hc/articles/115000435108-What-are-Nitro-Nitro-Basic-">article</a>.</h3>
 <h1 id="h_01HBVVFMX6SF10DY6CCGC7Y9MH">How Can I Collect A Profile Effect?</h1>
 <p>You can head over to the Shop to preview and purchase profile effects! </p>
 <p>1. Navigate to your <strong>User Settings &gt; Profiles</strong>. </p>
 <p>2. Once there, you will see the banner to the Shop where you can select <strong>Go to Shop</strong>. You can also select <strong>Change Effect </strong>and select the <strong>Shop </strong>icon.  </p>
 <p><img src="https://support.discord.com/hc/article_attachments/18007592257431" alt="image5.png" width="452" height="261">   <img src="https://support.discord.com/hc/article_attachments/18007554203927" alt="image7.png" width="235" height="262"></p>
-<h3 id="h_01HBVVFMX6MYJVBFDGSNQ6T6FF"><strong><span style="color: #cbc6c0;" data-darkreader-inline-color="">At this time, you can only access the Shop on the desktop app or your browser. </span></strong></h3>
+<h3 id="h_01HETN6WNE56A2QDCB2S7MDQ3J">At this time, you can only access the Shop on the desktop app or your browser. </h3>
 <p>3. Once directed to the Shop, you can preview and buy profile effects to add to your collection. </p>
 <p class="wysiwyg-text-align-center"><img src="https://support.discord.com/hc/article_attachments/18007554209559" alt="image6.png" width="465" height="783"></p>
-<h3 id="h_01HBVVFMX6KXP6SBSYZ5ATF02S"><strong><span style="color: #cbc6c0;" data-darkreader-inline-color="">Purchased profile effects are yours to keep and can be used at any time! Selections available for purchase in the Shop will change periodically.</span></strong></h3>
+<h3 id="h_01HETN75EJ2C506TNDVJGH19JF">Purchased profile effects are yours to keep and can be used at any time! Selections available for purchase in the Shop will change periodically.</h3>
 <h1 id="h_01HBVVFMX6VDPBCGPY25WKK6TN">How Do I Apply A Profile Effect To My Profile? </h1>
 <h2 id="h_01HBVVFMX6G2DRMA6NNAD38F9W">Desktop</h2>
 <p>1. On the desktop app or web app, head into your <strong>User Settings </strong>by selecting the cogwheel [<img style="height: 20px; width: 20px;" src="https://lh4.googleusercontent.com/k6yu328QNwhzIjnUbsNUltH_geoXh18lfz92OJU9usIDfIN5XJ_s7hGtkJQhu2lKb4oio6qxA9c9FbiP3WcQ-NvEGwElbIbGMU70JlRBRsyNTHd2FCJ5WhFQHmXM8KrT6wWDdoeE9iP9Ioz2Vs9pEqU">]. </p>
