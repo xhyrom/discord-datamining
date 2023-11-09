@@ -35346,10 +35346,16 @@
                     let n;
                     return null != e ? (null == (n = N[t = e]) && (n = x(t)), n) : L
                 }
+                getFirstChannel(e, t) {
+                    let n = this.getChannels(e)[v],
+                        i = n.find(t);
+                    return null != i ? i.channel : null
+                }
                 getDefaultChannel(e) {
-                    let t = this.getChannels(e)[v],
-                        n = t.find(e => m.default.can(I.Permissions.VIEW_CHANNEL, e.channel));
-                    return null != n ? n.channel : null
+                    return this.getFirstChannel(e, e => m.default.can(I.Permissions.VIEW_CHANNEL, e.channel))
+                }
+                getSFWDefaultChannel(e) {
+                    return this.getFirstChannel(e, e => m.default.can(I.Permissions.VIEW_CHANNEL, e.channel) && !e.channel.nsfw)
                 }
                 getSelectableChannelIds(e) {
                     return this.getChannels(e)[v].map(e => {
@@ -49084,7 +49090,7 @@
                         var i;
                         let d = {
                                 environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                                build_number: "244888"
+                                build_number: "244905"
                             },
                             f = l.default.getCurrentUser();
                         null != f && (d.user_id = f.id, d.user_name = f.tag, null != f.email && (d.email = f.email));
@@ -62337,4 +62343,4 @@
         }
     }
 ]);
-//# sourceMappingURL=e05c5c29c2dae7285d8e.js.map
+//# sourceMappingURL=fedf144d3aee1695e947.js.map

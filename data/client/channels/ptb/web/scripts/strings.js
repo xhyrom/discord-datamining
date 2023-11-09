@@ -928,6 +928,10 @@
                 UNIQUE_USERNAME_TOGGLE_TITLE: "Legacy Username Badge",
                 UNIQUE_USERNAME_TOGGLE_SUBTITLE: "Display {username} on your profile.",
                 ORIGINALLY_KNOWN_AS: "Originally known as {legacyUsername}",
+                POMELO_ACTION_LABEL_OCF: "Update your username",
+                POMELO_EXISTING_FLOW_PROMPT_OCF: "We are asking everyone to update to unique usernames from discriminators (username**#0000**).",
+                POMELO_SUGGESTIONS_OCF: "Recommended for you",
+                POMELO_CHANGE_LATER_OCF: "You can always change this later.",
                 UU_REGISTER_DISPLAY_NAME_HEADER: "What's your name?",
                 UU_REGISTER_DISPLAY_NAME_HINT: "You can use emoji and special characters.",
                 UU_REGISTER_HEADER: "Next, create an account",
@@ -18126,7 +18130,7 @@
                 u = E("782340");
             (0, i.setUpdateRules)(s.default), (0, r.default)(u.default, n.default, T.default), a.default.Emitter.injectBatchEmitChanges(o.unstable_batchedUpdates), a.default.PersistedStore.disableWrites = __OVERLAY__, a.default.initialize();
             let L = window.GLOBAL_ENV.RELEASE_CHANNEL;
-            new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(L, ", Build Number: ").concat("244888", ", Version Hash: ").concat("76b943ac5711c1edfe5419e126363d07374b53cc")), t.default.setTags({
+            new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(L, ", Build Number: ").concat("244905", ", Version Hash: ").concat("a93d43a13b2e08f09b6faad5c8763f803ba91ad7")), t.default.setTags({
                 appContext: l.CURRENT_APP_CONTEXT
             }), S.default.initBasic(), N.default.init(), I.FocusRingManager.init(), O.init(), (0, R.cleanupTempFiles)()
         },
@@ -20517,8 +20521,8 @@
 
             function o() {
                 var e;
-                let _ = parseInt((e = "244888", "244888"));
-                return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("244888")), _ = 0), _
+                let _ = parseInt((e = "244905", "244905"));
+                return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("244905")), _ = 0), _
             }
         },
         990629: function(e, _, E) {
@@ -36429,4 +36433,4 @@
         }
     }
 ]);
-//# sourceMappingURL=275e4711e27fab8854a1.js.map
+//# sourceMappingURL=ad3185c1026d6b482fda.js.map
