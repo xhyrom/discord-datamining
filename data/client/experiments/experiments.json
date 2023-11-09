@@ -10667,7 +10667,9 @@
         "Control Bucket",
         "Treatment 1: Sender: Loss-Based BWE V2",
         "Treatment 2: Sender: Robust Estimator",
-        "Treatment 3: Sender:Loss-Based BWE V2 + Robust Estimator"
+        "Treatment 3: Sender: Loss-Based BWE V2 + Robust Estimator",
+        "Treatment 4: Sender: Trendline Window Size",
+        "Treatment 5: Sender: Trendline Window Size + Robust Estimator"
       ],
       "hash": 834206369,
       "buckets": [
@@ -10675,7 +10677,9 @@
         0,
         1,
         2,
-        3
+        3,
+        4,
+        5
       ],
       "config_keys": [
         "enabled"
