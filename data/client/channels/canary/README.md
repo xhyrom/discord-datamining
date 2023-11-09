@@ -1,8 +1,8 @@
 # Canary
 
 ### Info
-Build number: 244840  
-Version hash: bc3e0d531115689e7281409bb50d896a28667eb3  
+Build number: 244845  
+Version hash: 468dc3f253552cd54066997cbafa9dd30ffce587  
 Host version: 1.0.93  
 Built at: 1/1/1970, 12:00:00 AM  
 
