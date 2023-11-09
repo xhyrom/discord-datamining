@@ -39388,7 +39388,7 @@
                     let {
                         channelId: t
                     } = e;
-                    if (null != t || null == i) return !1;
+                    if (null == i || null != t && i.channelId === t) return !1;
                     v()
                 },
                 VOICE_SERVER_UPDATE: function(e) {
@@ -49049,7 +49049,7 @@
                         var i;
                         let d = {
                                 environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                                build_number: "244686"
+                                build_number: "244692"
                             },
                             f = l.default.getCurrentUser();
                         null != f && (d.user_id = f.id, d.user_name = f.tag, null != f.email && (d.email = f.email));
@@ -62303,4 +62303,4 @@
         }
     }
 ]);
-//# sourceMappingURL=f3b5d0130426a1adfa08.js.map
+//# sourceMappingURL=c49019f3dd2a9cdaa00f.js.map
