@@ -30641,7 +30641,7 @@
 
             function J(e, t, n) {
                 let i = t.applicationId,
-                    a = null != e.entitlementBranches && e.entitlementBranches.length > 0 ? e.entitlementBranches : [i],
+                    a = e.length > 0 ? e : [i],
                     l = a.map(e => n.getLibraryApplication(i, e, !0)).filter(E.isNotNullish);
                 return l.length === a.length ? l[0] : null
             }
@@ -33036,4 +33036,4 @@
         }
     }
 ]);
-//# sourceMappingURL=8b6cae3ad666328b0547.js.map
+//# sourceMappingURL=a84b5aab9949a4798167.js.map
