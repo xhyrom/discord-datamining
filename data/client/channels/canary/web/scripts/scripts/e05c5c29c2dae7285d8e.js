@@ -28092,10 +28092,24 @@
                     }
                 }, {
                     id: 3,
-                    label: "Sender:Loss-Based BWE V2 + Robust Estimator",
+                    label: "Sender: Loss-Based BWE V2 + Robust Estimator",
                     config: {
                         enabled: !0,
                         fullname: "bandwidth_estimation/loss-based-bwe-v2,robust-estimator/"
+                    }
+                }, {
+                    id: 4,
+                    label: "Sender: Trendline Window Size",
+                    config: {
+                        enabled: !0,
+                        fullname: "bandwidth_estimation/trendline-window-size/"
+                    }
+                }, {
+                    id: 5,
+                    label: "Sender: Trendline Window Size + Robust Estimator",
+                    config: {
+                        enabled: !0,
+                        fullname: "bandwidth_estimation/trendline-window-size,robust-estimator/"
                     }
                 }]
             });
@@ -49070,7 +49084,7 @@
                         var i;
                         let d = {
                                 environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                                build_number: "244874"
+                                build_number: "244888"
                             },
                             f = l.default.getCurrentUser();
                         null != f && (d.user_id = f.id, d.user_name = f.tag, null != f.email && (d.email = f.email));
@@ -62323,4 +62337,4 @@
         }
     }
 ]);
-//# sourceMappingURL=56e8d66933cba72ec1d2.js.map
+//# sourceMappingURL=e05c5c29c2dae7285d8e.js.map
