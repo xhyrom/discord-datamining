@@ -16463,7 +16463,7 @@
                 }
                 _handleSecureFramesInit(e) {
                     var t;
-                    e > 0 && this.logger.info("Secure frames init with protocol version: ".concat(0)), null === (t = this._connection) || void 0 === t || t.prepareSecureFramesTransition(0, e, () => {
+                    e > 0 && this.logger.info("Secure frames init with protocol version: ".concat(e)), null === (t = this._connection) || void 0 === t || t.prepareSecureFramesTransition(0, e, () => {
                         var e;
                         null === (e = this._connection) || void 0 === e || e.executeSecureFramesTransition(0)
                     })
@@ -38255,19 +38255,21 @@
                         _ = null !== (t = p[u]) && void 0 !== t && t,
                         S = ez.has(u),
                         m = c === el.VideoToggleState.AUTO_ENABLED || c === el.VideoToggleState.MANUAL_ENABLED;
-                    h(!(S && !_), "If you are auto-disabled, then you are also disabled.");
+                    eE.info("disableVideo=".concat(E, " currentlyDisabled=").concat(_, " currentlyAutoDisabled=").concat(S, ", isVideoShown=").concat(m)), h(!(S && !_), "If you are auto-disabled, then you are also disabled.");
                     let T = E !== _,
                         g = l === eh.MediaEngineContextTypes.DEFAULT,
-                        I = d && T && g,
-                        {
-                            videoToggleStateMap: C
-                        } = eJ(l);
-                    if (C[u] === el.VideoToggleState.AUTO_PROBING && c === el.VideoToggleState.AUTO_ENABLED && (0, H.default)(u, E ? eh.VideoToggleReason.AUTO_DISABLE : eh.VideoToggleReason.AUTO_ENABLE, m), C[u] = c, e9({
-                            videoToggleStateMap: C
-                        }, l, d), c === el.VideoToggleState.AUTO_PROBING ? null === (n = er.default.getRTCConnection()) || void 0 === n || n.pauseStatsCollectionForUser(u, !0) : null === (i = er.default.getRTCConnection()) || void 0 === i || i.pauseStatsCollectionForUser(u, !1), !eq && (eE.info("isAutoDisableAllowed=".concat(eq, " - disabling VideoHealthManager")), null === (s = er.default.getRTCConnection()) || void 0 === s || null === (r = s.getVideoHealthManager()) || void 0 === r || r.disable()), f && T && g) {
+                        I = f && T && g,
+                        C = d && T && g;
+                    eE.info("changed=".concat(T, " isDefaultContext=").concat(g, " isUpdateCausedByVideoHealthManager=").concat(I, " isManualToggleByUser=").concat(C));
+                    let {
+                        videoToggleStateMap: v
+                    } = eJ(l);
+                    if (v[u] === el.VideoToggleState.AUTO_PROBING && c === el.VideoToggleState.AUTO_ENABLED && (0, H.default)(u, E ? eh.VideoToggleReason.AUTO_DISABLE : eh.VideoToggleReason.AUTO_ENABLE, m), v[u] = c, e9({
+                            videoToggleStateMap: v
+                        }, l, d), c === el.VideoToggleState.AUTO_PROBING ? null === (n = er.default.getRTCConnection()) || void 0 === n || n.pauseStatsCollectionForUser(u, !0) : null === (i = er.default.getRTCConnection()) || void 0 === i || i.pauseStatsCollectionForUser(u, !1), !eq && (eE.info("isAutoDisableAllowed=".concat(eq, " - disabling VideoHealthManager")), null === (s = er.default.getRTCConnection()) || void 0 === s || null === (r = s.getVideoHealthManager()) || void 0 === r || r.disable()), I) {
                         if (!E && !S || E && !eq) return;
                         (0, H.default)(u, E ? eh.VideoToggleReason.AUTO_DISABLE : eh.VideoToggleReason.AUTO_ENABLE, m), E ? ez.add(u) : ez.delete(u)
-                    } else I && (S && !E ? (eE.info("disallowing auto-disable for this session because of manual override by user"), eq = !1, null === (o = er.default.getRTCConnection()) || void 0 === o || null === (a = o.getVideoHealthManager()) || void 0 === a || a.disable(), (0, H.default)(u, eh.VideoToggleReason.MANUAL_REENABLE, m)) : (0, H.default)(u, E ? eh.VideoToggleReason.MANUAL_DISABLE : eh.VideoToggleReason.MANUAL_ENABLE, m));
+                    } else C && (S && !E ? (eE.info("disallowing auto-disable for this session because of manual override by user"), eq = !1, null === (o = er.default.getRTCConnection()) || void 0 === o || null === (a = o.getVideoHealthManager()) || void 0 === a || a.disable(), (0, H.default)(u, eh.VideoToggleReason.MANUAL_REENABLE, m)) : (0, H.default)(u, E ? eh.VideoToggleReason.MANUAL_DISABLE : eh.VideoToggleReason.MANUAL_ENABLE, m));
                     g && !E && ez.delete(u), E ? p[u] = !0 : delete p[u], e9({
                         disabledLocalVideos: p
                     }, l, d), em.eachConnection(e => {
@@ -49060,7 +49062,7 @@
                         var i;
                         let d = {
                                 environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                                build_number: "244793"
+                                build_number: "244805"
                             },
                             h = l.default.getCurrentUser();
                         null != h && (d.user_id = h.id, d.user_name = h.tag, null != h.email && (d.email = h.email));
@@ -62310,4 +62312,4 @@
         }
     }
 ]);
-//# sourceMappingURL=ffe2e4e27ec683de6e62.js.map
+//# sourceMappingURL=6b7c7181105252346fc2.js.map
