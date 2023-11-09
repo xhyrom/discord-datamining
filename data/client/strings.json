@@ -16538,8 +16538,6 @@
   "DEADCHAT_ACTION_CAMERA": "\"My View\"",
   "DEADCHAT_ACTION_STICKER": "\"Surprise Me\"",
   "USER_SETTINGS_APPEARANCE_CHANNEL_LIST_LAYOUT_MINIMAL": "\"Minimal\"",
-  "FORCED_SECURE_FRAMES_INCOMPATIBLE_TITLE": "\"Disconnected\"",
-  "FORCED_SECURE_FRAMES_INCOMPATIBLE_BODY": "\"That channel forces testing of secure frames for audio/video, but your client does not support the protocol version and we do not yet support protocol negotiation.\\n\\n We disconnected you from the channel to protect your ears.\"",
   "SERVER_USAGE_SURVEY_BODY": "\"Help us make Discord better by answering a few questions about !!{guildName}!!\"",
   "SERVER_USAGE_SURVEY_CTA": "\"Take Survey\"",
   "REPORTS_USER_MENU_OPTION_MOBILE": "\"Report User Profile\"",
