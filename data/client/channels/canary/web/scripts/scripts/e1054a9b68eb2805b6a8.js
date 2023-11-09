@@ -37410,12 +37410,15 @@
                 }
             }
 
-            function ta(e, t, n) {
+            function ta(e, t) {
                 (0, q.isWindows)() && v.attachToProcess(e, {
                     soundshare_session: t
                 }).then(t => {
                     null != t && !es.default.shouldContinueWithoutElevatedProcessForPID(e) && I.default.wait(() => {
-                        I.default.dispatch(n(t))
+                        I.default.dispatch({
+                            type: "MEDIA_ENGINE_SOUNDSHARE_FAILED",
+                            errorMessage: t
+                        })
                     })
                 })
             }
@@ -37783,6 +37786,9 @@
                                 applicationName: t
                             })
                         })
+                    }), em.on(m.MediaEngineEvent.ClipsRecordingEnded, (e, t) => {
+                        var n, i;
+                        (null == a ? void 0 : null === (n = a.desktopSource) || void 0 === n ? void 0 : n.id) === e && (null != t && (null == s ? void 0 : null === (i = s.desktopSource) || void 0 === i ? void 0 : i.soundshareId) !== t && v.cancelAttachToProcess(t), a = null)
                     }), e8.reset(), ! function() {
                         var e;
                         let t = T.default.get("audio");
@@ -38521,10 +38527,7 @@
                         q.isPlatformEmbedded && !0 === l && ({
                             soundshareId: e,
                             soundshareSession: i
-                        } = ts(d), null != e && ta(e, i, e => ({
-                            type: "MEDIA_ENGINE_SOUNDSHARE_FAILED",
-                            errorMessage: e
-                        }))), (a = u) !== ev && (null != s && em.setGoLiveSource(null, ev), ev = a);
+                        } = ts(d), null != e && ta(e, i)), (a = u) !== ev && (null != s && em.setGoLiveSource(null, ev), ev = a);
                         let f = u === ef.MediaEngineContextTypes.STREAM && eb;
                         e2(f, {
                             desktopSource: {
@@ -38747,7 +38750,7 @@
                     null == c && I.default.wait(() => {
                         I.default.dispatch({
                             type: "CLIPS_INIT_FAILURE",
-                            errMsg: "Failed to get pid for ".concat(t),
+                            errMsg: "Failed to get pid for sourceId",
                             applicationName: n
                         })
                     }), {
@@ -38763,11 +38766,7 @@
                         },
                         quality: u
                     };
-                    null != a && a.desktopSource.id !== d.desktopSource.id && (em.setClipsSource(null), (0, q.isWindows)() && null != a.desktopSource.soundshareId && v.cancelAttachToProcess(a.desktopSource.soundshareId)), null != o && ta(o, l, e => ({
-                        type: "CLIPS_INIT_FAILURE",
-                        errMsg: e,
-                        applicationName: n
-                    })), a = d;
+                    null != a && a.desktopSource.id !== d.desktopSource.id && (em.setClipsSource(null), (0, q.isWindows)() && null != a.desktopSource.soundshareId && v.cancelAttachToProcess(a.desktopSource.soundshareId)), null != o && ta(o, l), a = d;
                     let {
                         useQuartzCapturer: f
                     } = w.default.getCurrentConfig({
@@ -49068,7 +49067,7 @@
                         var i;
                         let d = {
                                 environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                                build_number: "244645"
+                                build_number: "244664"
                             },
                             f = l.default.getCurrentUser();
                         null != f && (d.user_id = f.id, d.user_name = f.tag, null != f.email && (d.email = f.email));
@@ -55559,7 +55558,7 @@
                 MediaEngineEvent: function() {
                     return i
                 }
-            }), (r = i || (i = {})).Destroy = "destroy", r.Silence = "silence", r.Connection = "connection", r.DeviceChange = "devicechange", r.VolumeChange = "volumechange", r.VoiceActivity = "voiceactivity", r.WatchdogTimeout = "watchdogtimeout", r.AudioPermission = "audio-permission", r.VideoPermission = "video-permission", r.DesktopSourceEnd = "desktopsourceend", r.ConnectionStats = "connection-stats", r.VideoInputInitialized = "video-input-initialized", r.ClipsRecordingRestartNeeded = "clips-recording-restart-needed", r.ClipsInitFailure = "clips-init-failure"
+            }), (r = i || (i = {})).Destroy = "destroy", r.Silence = "silence", r.Connection = "connection", r.DeviceChange = "devicechange", r.VolumeChange = "volumechange", r.VoiceActivity = "voiceactivity", r.WatchdogTimeout = "watchdogtimeout", r.AudioPermission = "audio-permission", r.VideoPermission = "video-permission", r.DesktopSourceEnd = "desktopsourceend", r.ConnectionStats = "connection-stats", r.VideoInputInitialized = "video-input-initialized", r.ClipsRecordingRestartNeeded = "clips-recording-restart-needed", r.ClipsInitFailure = "clips-init-failure", r.ClipsRecordingEnded = "clips-recording-ended"
         },
         582663: function(e, t, n) {
             "use strict";
@@ -57214,7 +57213,7 @@
                         hdrCaptureMode: d
                     } = e.desktopDescription;
                     (0, E.getVoiceEngine)().setOnClipsRecordingEvent(t => {
-                        this.logger.info("Clips recording event: ".concat(S.ClipsRecordingEvent[t], " received for stream ").concat(i, " and sound ").concat(r, ".")), t === S.ClipsRecordingEvent.GoLiveEnded && this.emit(u.MediaEngineEvent.ClipsRecordingRestartNeeded), t === S.ClipsRecordingEvent.Error && this.emit(u.MediaEngineEvent.ClipsInitFailure, "Failed to set clips source in media engine", e.applicationName)
+                        this.logger.info("Clips recording event: ".concat(S.ClipsRecordingEvent[t], " received for stream ").concat(i, " and sound ").concat(r, ".")), t === S.ClipsRecordingEvent.GoLiveEnded ? this.emit(u.MediaEngineEvent.ClipsRecordingRestartNeeded) : t === S.ClipsRecordingEvent.Error ? this.emit(u.MediaEngineEvent.ClipsInitFailure, "Failed to set clips source in media engine", e.applicationName) : (t === S.ClipsRecordingEvent.Ended || t === S.ClipsRecordingEvent.StoppedByGoLive) && this.emit(u.MediaEngineEvent.ClipsRecordingEnded, i, r)
                     }), (0, E.getVoiceEngine)().applyClipsSettings({
                         useVideoHook: a,
                         useGraphicsCapture: o,
@@ -62322,4 +62321,4 @@
         }
     }
 ]);
-//# sourceMappingURL=b02f27e6132d69afcbb6.js.map
+//# sourceMappingURL=e1054a9b68eb2805b6a8.js.map
