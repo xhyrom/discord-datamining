@@ -666,27 +666,23 @@
             "use strict";
             n.r(t), n.d(t, {
                 channelEligibleForSummaries: function() {
-                    return o
+                    return r
                 },
                 canSeeChannelSummaries: function() {
-                    return u
+                    return o
                 },
                 canGuildUseConversationSummaries: function() {
-                    return d
+                    return u
                 },
                 useChannelSummariesExperiment: function() {
-                    return c
-                },
-                useGuildEligibleForSummaries: function() {
-                    return m
+                    return d
                 }
-            });
-            var l = n("65597"),
-                a = n("862205"),
-                s = n("305961"),
-                i = n("49111"),
-                r = n("724210");
-            (0, a.createExperiment)({
+            }), n("65597");
+            var l = n("862205"),
+                a = n("305961"),
+                s = n("49111"),
+                i = n("724210");
+            (0, l.createExperiment)({
                 kind: "user",
                 id: "2023-07_p13n_guild_dock_summaries",
                 label: "Guild Dock Summaries on Mobile Experiment",
@@ -702,43 +698,35 @@
                 }]
             });
 
-            function o(e) {
-                return u(e, !0, !1)
+            function r(e) {
+                return o(e, !0, !1)
             }
 
-            function u(e) {
+            function o(e) {
                 let t = arguments.length > 1 && void 0 !== arguments[1] && arguments[1],
                     n = !(arguments.length > 2) || void 0 === arguments[2] || arguments[2];
                 if (null == e || ! function(e) {
                         var t;
                         if (null == e) return !1;
-                        let n = s.default.getGuild(null !== (t = null == e ? void 0 : e.guild_id) && void 0 !== t ? t : ""),
+                        let n = a.default.getGuild(null !== (t = null == e ? void 0 : e.guild_id) && void 0 !== t ? t : ""),
                             l = null != n && n.rulesChannelId === e.id;
-                        return i.ChannelTypesSets.SUMMARIZEABLE.has(e.type) && !e.isNSFW() && !l
-                    }(e) || !1 === t && e.hasFlag(r.ChannelFlags.SUMMARIES_DISABLED)) return !1;
-                let l = s.default.getGuild(e.guild_id);
-                return d(l, n)
+                        return s.ChannelTypesSets.SUMMARIZEABLE.has(e.type) && !e.isNSFW() && !l
+                    }(e) || !1 === t && e.hasFlag(i.ChannelFlags.SUMMARIES_DISABLED)) return !1;
+                let l = a.default.getGuild(e.guild_id);
+                return u(l, n)
             }
 
-            function d(e) {
+            function u(e) {
                 var t;
                 let n = !(arguments.length > 1) || void 0 === arguments[1] || arguments[1];
                 if (null == e) return !1;
-                return !!((null == (t = e.id) || t !== i.ME && t !== i.FAVORITES) && e.hasFeature(i.GuildFeatures.SUMMARIES_ENABLED_GA)) && (!n || e.hasFeature(i.GuildFeatures.SUMMARIES_ENABLED_BY_USER))
+                return !!((null == (t = e.id) || t !== s.ME && t !== s.FAVORITES) && e.hasFeature(s.GuildFeatures.SUMMARIES_ENABLED_GA)) && (!n || e.hasFeature(s.GuildFeatures.SUMMARIES_ENABLED_BY_USER))
             }
 
-            function c(e) {
+            function d(e) {
                 arguments.length > 1 && void 0 !== arguments[1] && arguments[1];
                 let t = arguments.length > 2 && void 0 !== arguments[2] && arguments[2];
-                return u(e, t)
-            }
-
-            function m(e) {
-                return arguments.length > 1 && void 0 !== arguments[1] && arguments[1], (0, l.default)([s.default], () => {
-                    var t;
-                    let n = s.default.getGuild(null !== (t = null == e ? void 0 : e.id) && void 0 !== t ? t : "");
-                    return d(n, !1)
-                }, [e])
+                return o(e, t)
             }
         },
         554743: function(e, t, n) {
@@ -10797,4 +10785,4 @@
         }
     }
 ]);
-//# sourceMappingURL=cbee5cf1428e45590d8b.js.map
+//# sourceMappingURL=07628dbc9d0a928bbce1.js.map
