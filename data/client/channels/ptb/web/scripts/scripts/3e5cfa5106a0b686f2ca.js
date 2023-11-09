@@ -22028,6 +22028,7 @@
                     messages_badge_num_channels: "Messages tab badge counts # of unread channels instead of # of unread messages",
                     main_tab_launchpad: "Enable LaunchPad in Main Tab",
                     main_tab_legacy_quick_switcher: "Enable Legacy Quick Switcher in Main Tab",
+                    disable_new_channel_details: "Enable new channel details sheet",
                     swipe_to_edit: "Enable Swipe-to-Edit",
                     new_panels: "Use panels for chat",
                     new_channels_for_panels: "Use new channel list for panels",
@@ -49062,7 +49063,7 @@
                         var i;
                         let d = {
                                 environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                                build_number: "244805"
+                                build_number: "244812"
                             },
                             h = l.default.getCurrentUser();
                         null != h && (d.user_id = h.id, d.user_name = h.tag, null != h.email && (d.email = h.email));
@@ -62312,4 +62313,4 @@
         }
     }
 ]);
-//# sourceMappingURL=6b7c7181105252346fc2.js.map
+//# sourceMappingURL=3e5cfa5106a0b686f2ca.js.map
