@@ -374,6 +374,7 @@
   "SEARCH_ACTIVE_AGO_TIMESTAMP_DAYS": "\"Active {count} days ago\"",
   "SEARCH_ACTIVE_AGO_TIMESTAMP_MONTHS": "\"Active {count} months ago\"",
   "SEARCH_ACTIVE_AGO_TIMESTAMP_YEARS": "\"Active {count} years ago\"",
+  "SEARCH_TAP_TO_SEE_LINK": "\"Tap to see message\"",
   "CONTENT_MATCHING": "\"!!{command}!! content matching **!!{query}!!**\"",
   "EMOJI_MATCHING": "\"Emoji matching **!!{prefix}!!**\"",
   "REACTIONS_MATCHING": "\"Add reaction **!!{prefix}!!**\"",
