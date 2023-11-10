@@ -1,8 +1,8 @@
 # Public Testing Beta
 
 ### Info
-Build number: 244996  
-Version hash: 5b6058182a0795b49dd5d7b449c1fcd95fa05359  
+Build number: 245009  
+Version hash: dfcb7e2179177008f3a6ba06d6aa92eb7140c2e3  
 Host version: 1.0.1042  
 Built at: 1/1/1970, 12:00:00 AM  
 
