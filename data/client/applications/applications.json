@@ -1,13 +1,62 @@
 [
   {
-    "id": "710982414301790216",
-    "name": "Stickers",
-    "icon": null,
-    "description": "",
+    "id": "356869127241072640",
+    "name": "League of Legends",
+    "icon": "5a15a24a3931880801709a32accd0a1d",
+    "description": "League of Legends is a fast-paced, competitive online game that blends the speed and intensity of an RTS with RPG elements. Two teams of powerful champions, each with a unique design and playstyle, battle head-to-head across multiple battlefields and game modes.",
     "summary": "",
-    "type": null,
+    "type": 1,
+    "splash": "9915146539e20aceff096bd4e856aab3",
+    "overlay": true,
     "hook": true,
-    "verify_key": "4be0b338ea2e6b55ca654be7d08534b99260888d08b7f2636cca1a962a5cd21b",
+    "aliases": [
+      "League of Legends (TW)"
+    ],
+    "guild_id": "417825368062558219",
+    "executables": [
+      {
+        "os": "win32",
+        "name": "garenalolth/gamedata/apps/lolth/lolex.exe",
+        "is_launcher": false
+      },
+      {
+        "os": "win32",
+        "name": "leagueclientux.exe",
+        "is_launcher": true
+      },
+      {
+        "os": "win32",
+        "name": "garenaloltw/gamedata/apps/loltw/lol.exe",
+        "is_launcher": false
+      },
+      {
+        "os": "darwin",
+        "name": "lollauncher.app",
+        "is_launcher": false
+      },
+      {
+        "os": "win32",
+        "name": "league of legends.exe",
+        "is_launcher": false
+      }
+    ],
+    "verify_key": "c0ced86fd10d46be85cb9cfe84157c9c0bf2400f89ad29061758b29b9779d2d9",
+    "publishers": [
+      {
+        "id": "521816780168232961",
+        "name": "Riot Games, Inc"
+      },
+      {
+        "id": "521816780168232960",
+        "name": "Riot Games"
+      }
+    ],
+    "developers": [
+      {
+        "id": "521816780168232960",
+        "name": "Riot Games"
+      }
+    ],
     "flags": 0
   },
   {
@@ -105,8 +154,8 @@
     "privacy_policy_url": "https://www.deviantart.com/about/policy/privacy/",
     "install_params": {
       "scopes": [
-        "bot",
-        "applications.commands"
+        "applications.commands",
+        "bot"
       ],
       "permissions": "2415921154"
     },
@@ -135,8 +184,8 @@
     "privacy_policy_url": "https://www.jefit.com/privacy-policy",
     "install_params": {
       "scopes": [
-        "bot",
-        "applications.commands"
+        "applications.commands",
+        "bot"
       ],
       "permissions": "8"
     },
@@ -271,17 +320,17 @@
       "free_period_starts_at": null,
       "free_period_ends_at": null,
       "client_platform_config": {
+        "web": {
+          "label_type": 0,
+          "label_until": null,
+          "release_phase": "activities_team"
+        },
         "android": {
           "label_type": 0,
           "label_until": null,
           "release_phase": "activities_team"
         },
         "ios": {
-          "label_type": 0,
-          "label_until": null,
-          "release_phase": "activities_team"
-        },
-        "web": {
           "label_type": 0,
           "label_until": null,
           "release_phase": "activities_team"
@@ -380,7 +429,7 @@
       "free_period_starts_at": null,
       "free_period_ends_at": null,
       "client_platform_config": {
-        "web": {
+        "ios": {
           "label_type": 2,
           "label_until": "2023-10-24T00:00:00+00:00",
           "release_phase": "global_launch"
@@ -390,7 +439,7 @@
           "label_until": "2023-10-24T00:00:00+00:00",
           "release_phase": "global_launch"
         },
-        "ios": {
+        "web": {
           "label_type": 2,
           "label_until": "2023-10-24T00:00:00+00:00",
           "release_phase": "global_launch"
@@ -435,12 +484,12 @@
       "free_period_starts_at": "2023-05-15T16:30:00+00:00",
       "free_period_ends_at": "2023-06-16T07:00:00+00:00",
       "client_platform_config": {
-        "android": {
+        "ios": {
           "label_type": 0,
           "label_until": null,
           "release_phase": "global_launch"
         },
-        "ios": {
+        "android": {
           "label_type": 0,
           "label_until": null,
           "release_phase": "global_launch"
@@ -490,17 +539,17 @@
       "free_period_starts_at": null,
       "free_period_ends_at": null,
       "client_platform_config": {
-        "android": {
-          "label_type": 1,
-          "label_until": "2023-07-13T12:00:00+00:00",
-          "release_phase": "global_launch"
-        },
         "ios": {
           "label_type": 1,
           "label_until": "2023-07-13T12:00:00+00:00",
           "release_phase": "global_launch"
         },
         "web": {
+          "label_type": 1,
+          "label_until": "2023-07-13T12:00:00+00:00",
+          "release_phase": "global_launch"
+        },
+        "android": {
           "label_type": 1,
           "label_until": "2023-07-13T12:00:00+00:00",
           "release_phase": "global_launch"
@@ -543,7 +592,7 @@
       "free_period_starts_at": null,
       "free_period_ends_at": null,
       "client_platform_config": {
-        "android": {
+        "web": {
           "label_type": 0,
           "label_until": null,
           "release_phase": "global_launch"
@@ -553,7 +602,7 @@
           "label_until": null,
           "release_phase": "global_launch"
         },
-        "web": {
+        "android": {
           "label_type": 0,
           "label_until": null,
           "release_phase": "global_launch"
@@ -714,12 +763,12 @@
           "label_until": null,
           "release_phase": "global_launch"
         },
-        "web": {
+        "android": {
           "label_type": 0,
           "label_until": null,
           "release_phase": "global_launch"
         },
-        "android": {
+        "web": {
           "label_type": 0,
           "label_until": null,
           "release_phase": "global_launch"
@@ -765,12 +814,12 @@
       "free_period_starts_at": null,
       "free_period_ends_at": null,
       "client_platform_config": {
-        "ios": {
+        "android": {
           "label_type": 0,
           "label_until": null,
           "release_phase": "global_launch"
         },
-        "android": {
+        "ios": {
           "label_type": 0,
           "label_until": null,
           "release_phase": "global_launch"
@@ -821,12 +870,12 @@
       "free_period_starts_at": null,
       "free_period_ends_at": null,
       "client_platform_config": {
-        "web": {
+        "android": {
           "label_type": 0,
           "label_until": null,
           "release_phase": "global_launch"
         },
-        "android": {
+        "web": {
           "label_type": 0,
           "label_until": null,
           "release_phase": "global_launch"
@@ -876,7 +925,7 @@
       "free_period_starts_at": null,
       "free_period_ends_at": null,
       "client_platform_config": {
-        "android": {
+        "ios": {
           "label_type": 0,
           "label_until": null,
           "release_phase": "global_launch"
@@ -886,7 +935,7 @@
           "label_until": null,
           "release_phase": "global_launch"
         },
-        "ios": {
+        "android": {
           "label_type": 0,
           "label_until": null,
           "release_phase": "global_launch"
@@ -931,12 +980,12 @@
       "free_period_starts_at": null,
       "free_period_ends_at": null,
       "client_platform_config": {
-        "web": {
+        "android": {
           "label_type": 0,
           "label_until": null,
           "release_phase": "global_launch"
         },
-        "android": {
+        "web": {
           "label_type": 0,
           "label_until": null,
           "release_phase": "global_launch"
@@ -991,17 +1040,17 @@
       "free_period_starts_at": null,
       "free_period_ends_at": null,
       "client_platform_config": {
+        "web": {
+          "label_type": 0,
+          "label_until": null,
+          "release_phase": "global_launch"
+        },
         "ios": {
           "label_type": 0,
           "label_until": null,
           "release_phase": "global_launch"
         },
         "android": {
-          "label_type": 0,
-          "label_until": null,
-          "release_phase": "global_launch"
-        },
-        "web": {
           "label_type": 0,
           "label_until": null,
           "release_phase": "global_launch"
@@ -1047,12 +1096,12 @@
       "free_period_starts_at": null,
       "free_period_ends_at": null,
       "client_platform_config": {
-        "ios": {
+        "web": {
           "label_type": 0,
           "label_until": null,
           "release_phase": "global_launch"
         },
-        "web": {
+        "ios": {
           "label_type": 0,
           "label_until": null,
           "release_phase": "global_launch"
@@ -1107,12 +1156,12 @@
           "label_until": null,
           "release_phase": "global_launch"
         },
-        "android": {
+        "ios": {
           "label_type": 0,
           "label_until": null,
           "release_phase": "global_launch"
         },
-        "ios": {
+        "android": {
           "label_type": 0,
           "label_until": null,
           "release_phase": "global_launch"
@@ -1157,7 +1206,7 @@
       "free_period_starts_at": null,
       "free_period_ends_at": null,
       "client_platform_config": {
-        "web": {
+        "ios": {
           "label_type": 1,
           "label_until": "2023-10-13T01:00:00+00:00",
           "release_phase": "global_launch"
@@ -1167,7 +1216,7 @@
           "label_until": "2023-10-13T01:00:00+00:00",
           "release_phase": "global_launch"
         },
-        "ios": {
+        "web": {
           "label_type": 1,
           "label_until": "2023-10-13T01:00:00+00:00",
           "release_phase": "global_launch"
@@ -1212,12 +1261,12 @@
       "free_period_starts_at": null,
       "free_period_ends_at": null,
       "client_platform_config": {
-        "android": {
+        "web": {
           "label_type": 0,
           "label_until": null,
           "release_phase": "global_launch"
         },
-        "web": {
+        "android": {
           "label_type": 0,
           "label_until": null,
           "release_phase": "global_launch"
@@ -1359,63 +1408,14 @@
     "flags": 0
   },
   {
-    "id": "356869127241072640",
-    "name": "League of Legends",
-    "icon": "5a15a24a3931880801709a32accd0a1d",
-    "description": "League of Legends is a fast-paced, competitive online game that blends the speed and intensity of an RTS with RPG elements. Two teams of powerful champions, each with a unique design and playstyle, battle head-to-head across multiple battlefields and game modes.",
+    "id": "710982414301790216",
+    "name": "Stickers",
+    "icon": null,
+    "description": "",
     "summary": "",
-    "type": 1,
-    "splash": "9915146539e20aceff096bd4e856aab3",
-    "overlay": true,
+    "type": null,
     "hook": true,
-    "aliases": [
-      "League of Legends (TW)"
-    ],
-    "guild_id": "417825368062558219",
-    "executables": [
-      {
-        "os": "win32",
-        "name": "leagueclientux.exe",
-        "is_launcher": true
-      },
-      {
-        "os": "win32",
-        "name": "league of legends.exe",
-        "is_launcher": false
-      },
-      {
-        "os": "darwin",
-        "name": "lollauncher.app",
-        "is_launcher": false
-      },
-      {
-        "os": "win32",
-        "name": "garenalolth/gamedata/apps/lolth/lolex.exe",
-        "is_launcher": false
-      },
-      {
-        "os": "win32",
-        "name": "garenaloltw/gamedata/apps/loltw/lol.exe",
-        "is_launcher": false
-      }
-    ],
-    "verify_key": "c0ced86fd10d46be85cb9cfe84157c9c0bf2400f89ad29061758b29b9779d2d9",
-    "publishers": [
-      {
-        "id": "521816780168232961",
-        "name": "Riot Games, Inc"
-      },
-      {
-        "id": "521816780168232960",
-        "name": "Riot Games"
-      }
-    ],
-    "developers": [
-      {
-        "id": "521816780168232960",
-        "name": "Riot Games"
-      }
-    ],
+    "verify_key": "4be0b338ea2e6b55ca654be7d08534b99260888d08b7f2636cca1a962a5cd21b",
     "flags": 0
   },
   {
