@@ -2502,6 +2502,9 @@
                 some(e, t) {
                     return this._array.some(e, t)
                 }
+                filter(e, t) {
+                    return this._array.filter(e, t)
+                }
                 forAll(e, t) {
                     this._before.forEach(e, t), this._array.forEach(e, t), this._after.forEach(e, t)
                 }
@@ -33046,4 +33049,4 @@
         }
     }
 ]);
-//# sourceMappingURL=ab92e36880bf2e791ae1.js.map
+//# sourceMappingURL=fd3bf211676b5dd3c4b3.js.map
