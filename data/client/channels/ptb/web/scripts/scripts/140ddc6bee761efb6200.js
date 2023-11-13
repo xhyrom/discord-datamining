@@ -2433,15 +2433,29 @@
             "use strict";
             e.exports = {
                 activityContainer: "activityContainer__49787",
-                arrowButton: "arrowButton__9a3da",
-                arrowContainer: "arrowContainer__1ad19",
+                circularButton: "circularButton__88b89",
+                footer: "footer__4f337",
                 header: "header__263c7",
                 headerTitle: "headerTitle__901c1",
                 iframe: "iframe__3dd58",
                 leaveActivityButton: "leaveActivityButton__5535d",
                 leaveActivityIcon: "leaveActivityIcon__38dcc",
                 leaveButtonContainer: "leaveButtonContainer__67662",
+                minimizeContainer: "minimizeContainer_d5ce9e",
+                minimizeIcon: "minimizeIcon__65052",
+                noChat: "noChat_a99ce5",
+                resizable: "resizable_ebfa5d",
                 wrapper: "wrapper__89bfc"
+            }
+        },
+        369026: function(e, t, o) {
+            "use strict";
+            e.exports = {
+                badge: "badge__93f9e",
+                circularButton: "circularButton_e0aa9b",
+                downArrow: "downArrow__335ff",
+                upArrow: "upArrow_cd14ec",
+                wrapper: "wrapper__93c36"
             }
         },
         808516: function(e, t, o) {
@@ -24831,13 +24845,22 @@
                 up: "up_de1d07"
             }
         },
-        117264: function(e, t, o) {
+        887326: function(e, t, o) {
             "use strict";
             e.exports = {
-                chatIcon: "chatIcon__75eea",
-                mention: "mention_cb3c2f",
-                unreadCount: "unreadCount__40154",
-                upsellTooltipOffset: "upsellTooltipOffset__1d670"
+                mention: "mention__96a15",
+                unreadCount: "unreadCount_f0c075"
+            }
+        },
+        574586: function(e, t, o) {
+            "use strict";
+            e.exports = {
+                badge: "badge__1f7b6",
+                chatIcon: "chatIcon__4e2d2",
+                downArrow: "downArrow__539b4",
+                mention: "mention__418e5",
+                unreadCount: "unreadCount__183b0",
+                upArrow: "upArrow_c0474e"
             }
         },
         397651: function(e, t, o) {
