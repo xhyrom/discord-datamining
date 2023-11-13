@@ -2686,6 +2686,8 @@
   "DELETE_MESSAGE_CONTEXT_MENU_HINT": "\"\\nYou can hold down shift when clicking **delete message** to bypass this confirmation entirely.\"",
   "EDIT": "\"Edit\"",
   "PREVIEW": "\"Preview\"",
+  "EXIT_PREVIEW": "\"Exit Preview\"",
+  "PREVIEW_MODE": "\"Preview Mode\"",
   "DELETE": "\"Delete\"",
   "DELETED": "\"Deleted\"",
   "RETRY": "\"Retry\"",
