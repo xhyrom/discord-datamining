@@ -3361,8 +3361,12 @@
       "POST"
     ]
   },
+  "GUILD_EVENT_USER_COUNTS": {
+    "url": "/guilds/:param/scheduled-events/:param/users/counts",
+    "allowed_methods": null
+  },
   "GUILD_EVENT_USERS": {
-    "url": "/guilds/:param/scheduled-events/:param/users",
+    "url": "/guilds/:param/scheduled-events/:param/:param/users",
     "allowed_methods": [
       "GET",
       "HEAD",
@@ -3370,7 +3374,7 @@
     ]
   },
   "USER_GUILD_EVENT": {
-    "url": "/guilds/:param/scheduled-events/:param/users/@me",
+    "url": "/guilds/:param/scheduled-events/:param/:param/users/@me",
     "allowed_methods": [
       "DELETE",
       "OPTIONS",
