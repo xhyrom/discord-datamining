@@ -3981,17 +3981,6 @@
                 tooltipText: "tooltipText_f4107b"
             }
         },
-        578501: function(e, t, o) {
-            "use strict";
-            e.exports = {
-                avatar1: "avatar1__82f1d",
-                avatar2: "avatar2_f8b5a4",
-                avatar3: "avatar3_d276d3",
-                avatars: "avatars__78e86",
-                logo: "logo__784f8",
-                shopArt: "shopArt__2bac7"
-            }
-        },
         469510: function(e, t, o) {
             "use strict";
             e.exports = {
