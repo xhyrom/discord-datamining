@@ -927,6 +927,7 @@
   "POMELO_EXISTING_FLOW_PROMPT_OCF": "\"We are asking everyone to update to unique usernames from discriminators (username**#0000**).\"",
   "POMELO_SUGGESTIONS_OCF": "\"Recommended for you\"",
   "POMELO_CHANGE_LATER_OCF": "\"You can always change this later.\"",
+  "POMELO_FETCH_OCF": "\"Checking if username is available\"",
   "UU_REGISTER_DISPLAY_NAME_HEADER": "\"What's your name?\"",
   "UU_REGISTER_DISPLAY_NAME_HINT": "\"You can use emoji and special characters.\"",
   "UU_REGISTER_HEADER": "\"Next, create an account\"",
