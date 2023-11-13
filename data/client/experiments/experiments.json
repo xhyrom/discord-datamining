@@ -9693,11 +9693,7 @@
         5
       ],
       "config_keys": [
-        "showRedesign",
-        "showMinimalChannelList",
-        "showFullWidthPanel",
-        "showRecentChannels",
-        "showNotificationTimer"
+        "enabled"
       ]
     }
   },
@@ -10397,14 +10393,7 @@
         8
       ],
       "config_keys": [
-        "showRedesign",
-        "showMessagesTab",
-        "showLaunchpadPullTab",
-        "showMinimalChannelList",
-        "showQuickswitcherTab",
-        "showLaunchpadTab",
-        "showFullWidthPanel",
-        "showFullWidthPanelNoSwipingOrSelected"
+        "enabled"
       ]
     }
   },
@@ -10481,8 +10470,7 @@
         2
       ],
       "config_keys": [
-        "isStaff",
-        "isStaffPersonal"
+        "enabled"
       ]
     }
   },

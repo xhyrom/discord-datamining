@@ -23,11 +23,7 @@
       5
     ],
     "config_keys": [
-      "showRedesign",
-      "showMinimalChannelList",
-      "showFullWidthPanel",
-      "showRecentChannels",
-      "showNotificationTimer"
+      "enabled"
     ]
   }
 }
