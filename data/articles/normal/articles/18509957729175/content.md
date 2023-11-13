@@ -38,7 +38,7 @@
 <p>3. When you’re ready to claim the trial, press the <strong>Try 2 Weeks Free</strong> button within the Nitro section. </p>
 <p class="wysiwyg-text-align-center"><img src="https://support.discord.com/hc/article_attachments/18699419485719" alt="image3.png"></p>
 <h2 id="h_01HE35R8SE8KPM6QWAWKHZN8A3">Mobile</h2>
-<p>1. To get started on mobile, head over to your <strong>User Settings</strong> by tapping on your avatar in the bottom left corner. </p>
+<p>1. To get started on mobile, head over to your <strong>User Settings</strong> by tapping on your avatar in the bottom right corner. </p>
 <p class="wysiwyg-text-align-center"><img src="https://support.discord.com/hc/article_attachments/18699405797911" alt="image5.png" width="358" height="46"></p>
 <p>2. Then, scroll down and select <strong>Get Nitro</strong> to navigate to the <strong>Nitro </strong>page. <br>3. While there, you will be able to review the details and tap <strong>Try Nitro for Free</strong> to claim the trial.  </p>
 <p class="wysiwyg-text-align-center"><img src="https://support.discord.com/hc/article_attachments/18699419501207" alt="image1.png" width="305" height="639">   <img src="https://support.discord.com/hc/article_attachments/18699405837719" alt="image4.png" width="303" height="640"></p>
@@ -68,7 +68,7 @@
 <p><strong>Q: Why do I need to submit my payment info to redeem Nitro?</strong></p>
 <p>A: Because Nitro is a membership, at the end of your 2 week trial, we will start your first billing cycle so you can continue to enjoy Nitro.</p>
 <p>However, you can <a href="https://support.discord.com/hc/en-us/articles/115000435108-What-are-Nitro-Nitro-Basic-#h_01GFV3PNMEJEF92W0XX69MEE2W" target="_blank" rel="noopener noreferrer">cancel Nitro</a> at any time, including during trial. To cancel Nitro on desktop, head to your <strong>User Settings </strong>&gt; select <strong>Subscriptions</strong> &gt; press <strong>Cancel </strong>within the Nitro banner. These steps may appear slightly different on mobile.  </p>
-<h3 id="h_01HE35R8SE6YGJPBAT5K3W8HP6">Please Note: You will not be charged until the trial ends and the membership renews. We’ll send an email before the paid membership begins, and you’ll have the opportunity to cancel before you are charged by following the steps here.</h3>
+<h3 id="h_01HE35R8SE6YGJPBAT5K3W8HP6">Please Note: You will not be charged until the trial ends and the membership renews. We’ll send an email before the paid membership begins, and you’ll have the opportunity to cancel before you are charged by following the steps <a href="https://support.discord.com/hc/en-us/articles/115000435108-What-are-Nitro-Nitro-Basic-#h_01GFV3PNMEJEF92W0XX69MEE2W">here</a>.</h3>
 <p><strong>Q: Why do I see a temporary hold/charge on my account when this is supposed to be a trial?</strong></p>
 <p>A: There is no charge for this 2-week Nitro trial. However, there will be a <strong>temporary hold</strong> placed on the payment method upon activating the promotion. This is to help Discord confirm that the submitted payment method is valid. This charge will appear in your Discord transaction history, and it may appear as a hold on your payment method.</p>
 <p>After you redeem the trial offer, we reverse the temporary hold to return the funds, and you’ll see that reflected in your Discord transaction history. Your bank may take longer to remove the hold from your payment method.</p>
