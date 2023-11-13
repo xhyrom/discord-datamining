@@ -1439,13 +1439,13 @@
                     return D
                 },
                 trackForumPostLinkCopied: function() {
-                    return b
-                },
-                trackForumOnboardingClicked: function() {
                     return y
                 },
-                trackForumUpsellModalClicked: function() {
+                trackForumOnboardingClicked: function() {
                     return L
+                },
+                trackForumUpsellModalClicked: function() {
+                    return b
                 },
                 trackForumAddMediaToOriginalPostClicked: function() {
                     return F
@@ -1459,14 +1459,17 @@
                 trackForumEnableAutomodClicked: function() {
                     return H
                 },
-                trackForumPostSidebarViewed: function() {
+                trackForumPreviewPostClicked: function() {
                     return w
                 },
-                trackForumUpsellModalViewed: function() {
+                trackForumPostSidebarViewed: function() {
                     return G
                 },
-                trackForumCreateNewPostStarted: function() {
+                trackForumUpsellModalViewed: function() {
                     return k
+                },
+                trackForumCreateNewPostStarted: function() {
+                    return V
                 }
             });
             var i = n("482402"),
@@ -1735,7 +1738,7 @@
                 })
             }
 
-            function b(e) {
+            function y(e) {
                 let {
                     postId: t,
                     location: n
@@ -1746,7 +1749,7 @@
                 })
             }
 
-            function y(e) {
+            function L(e) {
                 let {
                     onboardingCTA: t
                 } = e;
@@ -1755,7 +1758,7 @@
                 })
             }
 
-            function L(e) {
+            function b(e) {
                 let {
                     forumDemoId: t
                 } = e;
@@ -1795,7 +1798,11 @@
                 a.default.trackWithMetadata(E.AnalyticEvents.FORUM_CHANNEL_ENABLE_AUTOMOD_CLICKED)
             }
 
-            function w(e) {
+            function w() {
+                a.default.trackWithMetadata(E.AnalyticEvents.FORUM_CHANNEL_ENABLE_PREVIEW_CLICKED)
+            }
+
+            function G(e) {
                 a.default.trackWithMetadata(E.AnalyticEvents.CHANNEL_OPENED, {
                     ...(0, a.collectGuildAnalyticsMetadata)(e.guild_id),
                     ...(0, a.collectChannelAnalyticsMetadata)(e),
@@ -1809,7 +1816,7 @@
                 })
             }
 
-            function G() {
+            function k() {
                 a.default.trackWithMetadata(E.AnalyticEvents.OPEN_MODAL, {
                     type: "Forum Channel Upsell Modal",
                     location: {
@@ -1818,7 +1825,7 @@
                 })
             }
 
-            function k(e) {
+            function V(e) {
                 let {
                     guildId: t,
                     channelId: n
@@ -2024,7 +2031,7 @@
                     return A
                 },
                 default: function() {
-                    return L
+                    return b
                 }
             }), n("222007");
             var a = n("917351"),
@@ -2078,8 +2085,8 @@
                 if (!(v.indexOf(e) >= 0)) return !1;
                 v = v.filter(t => t !== e)
             }
-            let b = [];
-            class y extends s.default.Store {
+            let y = [];
+            class L extends s.default.Store {
                 initialize() {
                     this.waitFor(f.default, g.default, h.default)
                 }
@@ -2096,11 +2103,11 @@
                     return M === e && p === t && (0, E.areSetsEqual)(i, n) ? m : (R(), !1)
                 }
                 getThreads(e, t, n) {
-                    return M === e && p === t && (0, E.areSetsEqual)(i, n) ? v : b
+                    return M === e && p === t && (0, E.areSetsEqual)(i, n) ? v : y
                 }
             }
-            y.displayName = "ArchivedThreadsStore";
-            var L = new y(d.default, {
+            L.displayName = "ArchivedThreadsStore";
+            var b = new L(d.default, {
                 CONNECTION_OPEN: R,
                 THREAD_DELETE: function(e) {
                     let {
@@ -3444,4 +3451,4 @@
         }
     }
 ]);
-//# sourceMappingURL=5b5a4cc2e79476d1aaaf.js.map
+//# sourceMappingURL=2d2fb338c4ce133c5cac.js.map
