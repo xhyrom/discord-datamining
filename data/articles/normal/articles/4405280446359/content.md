@@ -1,4 +1,5 @@
-<p><span id="docs-internal-guid-e8bb891d-7fff-22ac-dd4c-65c484a34b69"></span><span id="docs-internal-guid-be4b2c76-7fff-ec13-78f6-7180820ad0a2">Starting from </span><strong>March 29, 2023 (10:00am PT)</strong> to <strong><span id="docs-internal-guid-3f2862af-7fff-886f-d980-31559542a0e0">March 31, 2024 (11:59pm PT)</span></strong>, YouTube Premium subscribers can claim 3 months of free Discord Nitro. Learn below about how you can claim Discord Nitro.</p>
+<p>Starting from <strong>March 29, 2023 (10:00am PT)</strong> to <strong>DecemberMarch 31, 20234 (11:59pm PT)</strong>, YouTube Premium subscribers within the United States can claim 3 months of free Discord Nitro. </p>
+<p>YouTube Premium subscribers within South Korea can claim 3 months of free Discord Nitro from <strong> March 29, 2023 (10:00am PT)</strong> to <strong>March 31, 2024 [11:59pm PT]</strong>. Learn below about how you can claim Discord Nitro.</p>
 <p class="wysiwyg-text-align-center"><img src="https://support.discord.com/hc/article_attachments/13440621474967" alt="YouTube_Premium_x_Nitro_2023_Help_Article.png"></p>
 <p><span class="wysiwyg-font-size-large wysiwyg-color-blue90"><strong>What this article covers:</strong></span></p>
 <p><span style="font-weight: 400;"><span class="wysiwyg-color-orange110"><strong>Offer Details:</strong></span> <span id="docs-internal-guid-4ebf78e8-7fff-2849-2e50-4b4e2f4581e2">3 months of Discord Nitro for YouTube Premium subscribers</span><br></span></p>
@@ -14,7 +15,7 @@
 <p><span id="docs-internal-guid-741bb6d5-7fff-39dc-62d2-bc72d7b6b302">We will not be able to refund any leftover subscription time from those, and the user will be forfeiting the remainder of the existing sub when activating the 3 month Nitro trial.</span></p>
 <div id="chat-messages-874720871959375922" class="message-2qnXI6 cozyMessage-3V1Y8y wrapper-2a6GCs cozy-3raOZG zalgo-jN1Ica" tabindex="-1" data-list-item-id="chat-messages___chat-messages-874720871959375922">
     <div class="contents-2mQqc9">
-        <div class="markup-2BOw-j messageContent-2qWWxC"><span class="wysiwyg-color-orange110"><strong style="color: #cc7a00; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif;">Requirements:</strong></span></div>
+        <div class="markup-2BOw-j messageContent-2qWWxC"><span class="wysiwyg-color-orange110"><strong style="color: #cc7a00; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif;" data-darkreader-inline-color="">Requirements:</strong></span></div>
     </div>
 </div>
 <p><span style="font-weight: 400;"><span id="docs-internal-guid-6dd34bc3-7fff-789f-a678-1913a2903d4a">Redeem to Discord account by </span><strong><span id="docs-internal-guid-81e72060-7fff-90a1-b57d-64fe953088d1">April 30, 2024</span> (11:59pm PT)</strong>.</span></p>
@@ -67,24 +68,24 @@
     <li><a href="https://support.discord.com/hc/en-us/articles/115000435108" target="_blank" rel="noopener noreferrer">More!</a></li>
 </ul>
 <h1 id="h_01FCFMZ4DN4Y1KKEK4CKSMSAXH"><strong>How do I claim the Nitro Promo from YouTube </strong></h1>
-<p><span id="docs-internal-guid-6498c5f9-7fff-2e3a-be4c-58639f77ce03">As long as you're a </span><strong>YouTube Premium </strong>member, you'll be able to claim the Nitro promo from YouTube from <strong>March 29, 2023 (10:00am PT) </strong>to <strong><span id="docs-internal-guid-3f2862af-7fff-886f-d980-31559542a0e0">March 31, 2024 (11:59pm PT)</span>. </strong></p>
+<p>As long as you're a <strong>YouTube Premium </strong>member, you'll be able to claim the Nitro promo from YouTube from <strong>March 29, 2023 (10:00am PT) </strong>to <strong>December 31, 2024(11:59pm PT) for those within the United States. </strong></p>
+<p>If you are a <strong>YouTube Premium </strong>member in South Korea<strong>, </strong>you’ll be able to claim the Nitro promo from YouTube unti<strong>l March 31, 2024 (11:59pm PT). </strong></p>
 <h2 id="h_01EJ8HW3XWKKS85C8VJZY4CN07">Eligibility for the Claiming this Promotion from YouTube</h2>
-<p><span style="font-weight: 400;">In order to claim this promotion link, you'll need to be an active subscriber to </span><span style="font-weight: 400;"><strong>YouTube Premium.</strong></span></p>
+<p>In order to claim this promotion link, you'll need to be an active subscriber to <strong>YouTube Premium.</strong></p>
 <ul>
-    <li>If you are an active YouTube Premium subscriber, the code must be claimed from your YouTube Premium Member Hub by <strong><span id="docs-internal-guid-3f2862af-7fff-886f-d980-31559542a0e0">March 31, 2024 (11:59pm PT)</span></strong>.
+    <li>If you are an active <strong>YouTube Premium subscriber, </strong>the code must be claimed from your YouTube Premium Member Hub by <strong>December 31, 2023 (11:59pm PT)</strong> for those within the United States and by <strong>March 31, 2024 (11:59pm PT) </strong>for those within South Korea<strong>. </strong>.
         <ul>
-            <li>Otherwise, the code will not be available to claim after <strong><span id="docs-internal-guid-3f2862af-7fff-886f-d980-31559542a0e0">March 31, 2024 (11:59pm PT)</span></strong>.</li>
+            <li>Otherwise, the code will not be available to claim after <strong>December 31, 2023 (11:59pm PT) for subscribers within the United States and </strong><strong>March 31, 2024 (11:59pm PT) for subscribers in South Korea. </strong>
+            </li>
         </ul>
     </li>
 </ul>
-<h3 id="h_01HEC1WQK4Q6C50F6XX0HA0TNE">
-    <strong>Note:</strong> If you currently have a YouTube Premium trial subscription, you will not be eligible to claim this promotion.
-</h3>
+<h3 id="h_01HF4GTG7BDZFR7C403B2HZNZD">Note: If you currently have a YouTube Premium trial subscription, you will not be eligible to claim this promotion.</h3>
 <h2 id="h_01EH66SKEX14DD8S4NWEPX1HE8" class="wysiwyg-text-align-left">Step By Step Claim Instructions </h2>
-<p id="docs-internal-guid-301722bb-7fff-b369-623c-d3b3a39d4ee5"><span style="color: #222222;">1. Visit </span><a href="https://www.youtube.com/" target="_blank" rel="noopener noreferrer">YouTube</a><span style="color: #222222;"> and log in to your YouTube Premium account.</span></p>
-<p><span style="color: #222222;">2. Press on your profile </span>picture in the top right, and select “<strong>Your Premium Benefits</strong>” from the dropdown menu. This is where you can find all your YouTube Premium membership benefits including the Discord Nitro benefit.</p>
-<p><span style="color: #222222;">3. Select the Discord Nitro benefit and from here the promo link and details will appear in a pop-up. </span>Press on the promo link and you will be automatically redirected to claim your free Nitro. You can also copy and paste the link into your browser. </p>
-<p><span style="color: #222222;">4. Select “Redeem Now” to be redirected to redeem your 3-month free trial of Discord Nitro.</span></p>
+<p id="docs-internal-guid-301722bb-7fff-b369-623c-d3b3a39d4ee5"><span style="color: #222222;" data-darkreader-inline-color="">1. Visit </span><a href="https://www.youtube.com/" target="_blank" rel="noopener noreferrer">YouTube</a><span style="color: #222222;" data-darkreader-inline-color=""> and log in to your YouTube Premium account.</span></p>
+<p><span style="color: #222222;" data-darkreader-inline-color="">2. Press on your profile </span>picture in the top right, and select “<strong>Your Premium Benefits</strong>” from the dropdown menu. This is where you can find all your YouTube Premium membership benefits including the Discord Nitro benefit.</p>
+<p><span style="color: #222222;" data-darkreader-inline-color="">3. Select the Discord Nitro benefit and from here the promo link and details will appear in a pop-up. </span>Press on the promo link and you will be automatically redirected to claim your free Nitro. You can also copy and paste the link into your browser. </p>
+<p><span style="color: #222222;" data-darkreader-inline-color="">4. Select “Redeem Now” to be redirected to redeem your 3-month free trial of Discord Nitro.</span></p>
 <h1 id="h_01FCFN1GRYWSNKT58PTCR8ZT8S" class="wysiwyg-text-align-left"><strong>How do I redeem the Nitro Trial on my Discord Account? </strong></h1>
 <p>Once you have claimed the promo link in your YouTube Premium Member Hub, you'll now need to officially redeem this promo link on your <span style="font-weight: 400;">Discord</span> account (or share this code with a friend)! </p>
 <h2 id="h_01FCZN7DAE284PT52X250Q8VN6">Eligibility for Redeeming the Nitro Trial</h2>
@@ -180,8 +181,8 @@
 </ul>
 <h2 id="h_01FCZMYZN05BHAKKQY863FS8CC">Promotion Details</h2>
 <p><strong><span class="wysiwyg-color-blue80 wysiwyg-font-size-large">Q: How long does this promotion run for?</span></strong></p>
-<p><strong>A: </strong>YouTube Premium subscribers can claim Discord Nitro promo between <strong>March 29, 2023 (10:00am PT)</strong> - <strong><span id="docs-internal-guid-3f2862af-7fff-886f-d980-31559542a0e0">March 31, 2024 (11:59pm PT)</span></strong>.</p>
-<p>After <strong><span id="docs-internal-guid-3f2862af-7fff-886f-d980-31559542a0e0">March 31, 2024 (11:59pm PT)</span></strong>, YouTube Premium subscribers will no longer be able to claim a trial promo link.</p>
+<p><strong>A:</strong> YouTube Premium subscribers within the United States can claim Discord Nitro promo between <strong>March 29, 2023 (10:00am PT)</strong> - <strong>December 31, 2023 (11:59pm PT). </strong>After <strong>December 31, 2023 (11:59pm PT), </strong>subscribers within the United States will no longer be able to claim a trial promo link. <strong> </strong></p>
+<p><strong>YouTube Premium </strong>subscribers within South Korea can claim Discord Nitro promo between <strong>March 29, 2023 (10:00am PT) - </strong><strong>March 31, 2024 (11:59pm PT)</strong>. After <strong>March 31, 2024 (11:59pm PT), </strong>subscribers within South Korea will no longer be able to claim a trial promo link. <strong> </strong></p>
 <p id="h_01FBTHEAQD2388YZPRA1KP4MQM"><strong><span class="wysiwyg-color-blue80 wysiwyg-font-size-large">Q: How long does the Discord Nitro promotion link last for?</span></strong></p>
 <p><strong>A: </strong>You must redeem the Nitro promotion by <span style="font-weight: 400;"><strong><span id="docs-internal-guid-81e72060-7fff-90a1-b57d-64fe953088d1">April 30, 2024</span> (11:59pm PT)</strong></span>.</p>
 <p>If a code has not been redeemed to the Discord account by <span style="font-weight: 400;"><strong><span id="docs-internal-guid-81e72060-7fff-90a1-b57d-64fe953088d1">April 30, 2024</span> (11:59pm PT)</strong></span>, it will expire and you will no longer be able to claim three months of Discord Nitro.</p>
