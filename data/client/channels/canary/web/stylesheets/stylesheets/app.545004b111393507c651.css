@@ -11651,12 +11651,58 @@
     width: 100%
 }
 
-.arrow__7f6c6 {
-    transition: transform.2s ease-in-out
+.unreadCount_f0c075 {
+    flex-shrink: 0;
+    margin-left: -12px;
+    height: 16px;
+    min-width: 16px;
+    width: auto;
+    padding: 0 4px;
+    border-radius: 999px;
+    background: var(--interactive-normal);
+    color: var(--black-500);
+    font-weight: 600;
+    box-sizing: border-box;
+    text-align: center
 }
 
-.up_de1d07 {
+.mention__96a15 {
+    background: var(--status-danger);
+    color: var(--white-500)
+}
+
+.circularButton_e0aa9b {
+    width: 32px;
+    height: 32px;
+    background: var(--bg-overlay-1, var(--background-secondary-alt));
+    border-radius: 16px
+}
+
+.wrapper__93c36 {
+    display: flex;
+    position: relative;
+    width: auto;
+    min-width: 32px
+}
+
+.wrapper__93c36 svg {
+    flex-shrink: 0
+}
+
+.badge__93f9e {
+    flex-shrink: 1;
+    flex-grow: 0;
+    position: absolute;
+    right: -4px;
+    top: -4px
+}
+
+.upArrow_cd14ec {
     transform: rotate(180deg)
+}
+
+.downArrow__335ff {
+    transform: rotate(0)
 }
 
 .iframe__3dd58 {
@@ -11670,28 +11716,45 @@
     position: relative;
     background-color: black;
     z-index: 2;
-    flex: 0 0 auto;
-    height: 284px
+    flex: 0 0 auto
+}
+
+.wrapper__89bfc.resizable_ebfa5d {
+    height: 65%
+}
+
+.wrapper__89bfc.noChat_a99ce5 {
+    height: 100%
 }
 
 .header__263c7 {
     display: flex;
     flex-direction: row;
     padding: 8px;
-    background: var(--bg-overlay-1, var(--background-primary));
-    border-bottom: 1px solid var(--background-modifier-accent);
     align-items: center
 }
 
-.arrowContainer__1ad19 {
+.footer__4f337 {
+    display: flex;
+    flex-direction: row;
+    padding: 8px;
+    align-items: start
+}
+
+.minimizeContainer_d5ce9e {
     flex: 0
 }
 
-.arrowButton__9a3da {
+.circularButton__88b89 {
     width: 32px;
     height: 32px;
     background: var(--bg-overlay-1, var(--background-secondary-alt));
     border-radius: 16px
+}
+
+.minimizeIcon__65052 {
+    width: 16px;
+    height: 16px
 }
 
 .headerTitle__901c1 {
@@ -11708,7 +11771,8 @@
     flex: 1;
     flex-direction: row;
     justify-content: center;
-    align-items: center
+    align-items: center;
+    margin: 8px
 }
 
 .leaveActivityIcon__38dcc {
@@ -22349,48 +22413,43 @@ input[type=checkbox]:focus-visible+.label_ee78c3 {
     color: var(--primary-300)
 }
 
-.chatIcon__75eea {
+.arrow__7f6c6 {
+    transition: transform.2s ease-in-out
+}
+
+.up_de1d07 {
+    transform: rotate(180deg)
+}
+
+.chatIcon__4e2d2 {
     position: relative;
     width: auto;
     min-width: 32px;
     margin-right: -8px
 }
 
-.chatIcon__75eea svg {
+.chatIcon__4e2d2 svg {
     flex-shrink: 0
 }
 
-.unreadCount__40154 {
-    flex-shrink: 0;
-    margin-left: -12px;
-    margin-top: 11px;
-    height: 16px;
-    min-width: 16px;
-    width: auto;
-    padding: 0 4px;
-    border-radius: 999px;
-    background: var(--interactive-normal);
-    color: var(--black-500);
-    font-weight: 600;
-    box-sizing: border-box
-}
-
-.mention_cb3c2f {
-    background: var(--status-danger);
-    color: var(--white-500)
-}
-
-.chatIcon__75eea:hover .unreadCount__40154 {
+.chatIcon__4e2d2:hover .unreadCount__183b0 {
     background: var(--white-500)
 }
 
-.chatIcon__75eea:hover .unreadCount__40154.mention_cb3c2f {
+.chatIcon__4e2d2:hover .unreadCount__183b0.mention__418e5 {
     background: var(--red-360)
 }
 
-.upsellTooltipOffset__1d670 {
-    position: relative;
-    right: 4px
+.upArrow_c0474e {
+    transform: rotate(180deg)
+}
+
+.downArrow__539b4 {
+    transform: rotate(0)
+}
+
+.badge__1f7b6 {
+    margin-top: 11px
 }
 
 .popIn__93999 {
@@ -76858,8 +76917,8 @@ input::-webkit-inner-spin-button {
 
 .bodyText__923f7 {
     color: var(--interactive-normal);
-    font-size: 1rem;
-    line-height: 1.25rem;
+    font-size: 16px;
+    line-height: 20px;
     font-weight: 500;
     margin-bottom: 16px
 }
@@ -76906,8 +76965,8 @@ input::-webkit-inner-spin-button {
 }
 
 .trialCheckboxLabel__0297c {
-    font-size: .875rem;
-    line-height: 1.125rem
+    font-size: 14px;
+    line-height: 18px
 }
 
 .loader_acb69b {
@@ -123189,4 +123248,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=app.313acb7359669532cd2d.css.map*/
+/*# sourceMappingURL=app.545004b111393507c651.css.map*/

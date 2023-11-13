@@ -3854,7 +3854,7 @@
                     return S
                 },
                 default: function() {
-                    return V
+                    return x
                 }
             }), n("222007"), n("424973"), n("581081");
             var a = n("446674"),
@@ -3891,13 +3891,14 @@
                 M = new Map,
                 L = new Map,
                 D = new Set([]);
-            let U = f.ActivityPanelModes.ACTION_BAR;
+            let U = f.ActivityPanelModes.ACTION_BAR,
+                P = f.FocusedActivityLayouts.NO_CHAT;
 
-            function P(e) {
+            function b(e) {
                 return null != e ? e : "0"
             }
 
-            function b(e, t, n, i) {
+            function G(e, t, n, i) {
                 var a, l;
                 let s = (0, E.default)(n.application_id);
                 if (null == s) return;
@@ -3935,13 +3936,13 @@
                         } = e;
                         return t !== n.application_id
                     }),
-                    N = P(e),
+                    N = b(e),
                     O = null !== (l = I.get(N)) && void 0 !== l ? l : [],
                     R = O.filter(e => !(e.application_id === n.application_id && e.channelId === t));
                 0 !== i.length && (A.push(_), R.push(_)), g.set(t, A), I.set(N, R)
             }
 
-            function G(e) {
+            function k(e) {
                 let t = e.embedded_activities;
                 t.forEach(t => {
                     let {
@@ -3949,18 +3950,18 @@
                         embedded_activity: i,
                         connections: a
                     } = t;
-                    b(e.id, n, i, a)
+                    G(e.id, n, i, a)
                 })
             }
 
-            function k() {
+            function w() {
                 A = !1
             }
 
-            function w(e, t) {
+            function F(e, t) {
                 return "".concat(e, ":").concat(t)
             }
-            class F extends a.default.PersistedStore {
+            class H extends a.default.PersistedStore {
                 initialize(e) {
                     var t;
                     let n = new Map;
@@ -4004,7 +4005,7 @@
                     return g
                 }
                 getEmbeddedActivityDurationMs(e, t) {
-                    let n = L.get(w(e, t));
+                    let n = L.get(F(e, t));
                     return null == n ? null : Date.now() - n
                 }
                 isLaunchingActivity() {
@@ -4012,16 +4013,16 @@
                 }
                 getShelfActivities(e) {
                     var t;
-                    let n = P(e);
+                    let n = b(e);
                     return null !== (t = N.get(n)) && void 0 !== t ? t : []
                 }
                 getShelfFetchStatus(e) {
-                    let t = P(e);
+                    let t = b(e);
                     return O.get(t)
                 }
                 shouldFetchShelf(e) {
                     var t, n;
-                    let i = P(e),
+                    let i = b(e),
                         a = null !== (t = O.get(i)) && void 0 !== t ? t : {
                             isFetching: !1
                         },
@@ -4057,13 +4058,16 @@
                 getActivityPanelMode() {
                     return U
                 }
+                getFocusedLayout() {
+                    return P
+                }
                 getCurrentEmbeddedActivity() {
                     var e;
                     let t = this.getConnectedActivityChannelId();
                     if (null != t) return null !== (e = this.getSelfEmbeddedActivityForChannel(t)) && void 0 !== e ? e : void 0
                 }
             }
-            F.displayName = "EmbeddedActivitiesStore", F.persistKey = "EmbeddedActivities", F.migrations = [e => ({
+            H.displayName = "EmbeddedActivitiesStore", H.persistKey = "EmbeddedActivities", H.migrations = [e => ({
                 ...e,
                 seenFeaturedActivities: [],
                 shouldShowNewActivityIndicator: !1
@@ -4084,7 +4088,7 @@
                     seenUpdatedActivities: {}
                 }
             }];
-            let H = new F(l.default, {
+            let V = new H(l.default, {
                 ACTIVITY_LAYOUT_MODE_UPDATE: function(e) {
                     let {
                         applicationId: t,
@@ -4096,13 +4100,13 @@
                     let {
                         guilds: t
                     } = e;
-                    g.clear(), I.clear(), t.forEach(e => G(e))
+                    g.clear(), I.clear(), t.forEach(e => k(e))
                 },
                 GUILD_CREATE: function(e) {
                     let {
                         guild: t
                     } = e;
-                    G(t)
+                    k(t)
                 },
                 CALL_CREATE: function(e) {
                     let {
@@ -4116,7 +4120,7 @@
                                 embedded_activity: n,
                                 connections: i
                             } = e;
-                            b(null, t, n, i)
+                            G(null, t, n, i)
                         })
                     }(0, n)
                 },
@@ -4128,7 +4132,7 @@
                     let n = t.guild_id;
                     if (null != n) {
                         var i;
-                        let e = P(n),
+                        let e = b(n),
                             a = null !== (i = I.get(e)) && void 0 !== i ? i : [],
                             l = a.filter(e => e.channelId !== t.id);
                         I.set(e, l)
@@ -4140,8 +4144,8 @@
                     } = e;
                     A = !0, U = t.channelId === d.default.getChannelId() ? f.ActivityPanelModes.PANEL : f.ActivityPanelModes.PIP
                 },
-                EMBEDDED_ACTIVITY_LAUNCH_SUCCESS: k,
-                EMBEDDED_ACTIVITY_LAUNCH_FAIL: k,
+                EMBEDDED_ACTIVITY_LAUNCH_SUCCESS: w,
+                EMBEDDED_ACTIVITY_LAUNCH_FAIL: w,
                 EMBEDDED_ACTIVITY_OPEN: function(e) {
                     var t, n, a;
                     let {
@@ -4169,7 +4173,7 @@
                         type: p.ActivityTypes.PLAYING,
                         connections: S,
                         connectedSince: Date.now()
-                    }), L.set(w(l, u), Date.now())
+                    }), L.set(F(l, u), Date.now())
                 },
                 EMBEDDED_ACTIVITY_CLOSE: function(e) {
                     let {
@@ -4184,7 +4188,7 @@
                         embeddedActivity: i,
                         connections: a
                     } = e;
-                    b(t, n, i, a)
+                    G(t, n, i, a)
                 },
                 LOCAL_ACTIVITY_UPDATE: function(e) {
                     var t, n;
@@ -4213,7 +4217,7 @@
                 EMBEDDED_ACTIVITY_FETCH_SHELF: function(e) {
                     let {
                         guildId: t
-                    } = e, n = P(t), i = O.get(n);
+                    } = e, n = b(t), i = O.get(n);
                     O.set(n, {
                         isFetching: !0,
                         lastFetchTimestampMs: null == i ? void 0 : i.lastFetchTimestampMs
@@ -4223,7 +4227,7 @@
                     let {
                         guildId: t,
                         activities: n
-                    } = e, i = P(t);
+                    } = e, i = b(t);
                     N.set(i, n);
                     let a = Date.now();
                     ! function(e) {
@@ -4257,7 +4261,7 @@
                 EMBEDDED_ACTIVITY_FETCH_SHELF_FAIL: function(e) {
                     let {
                         guildId: t
-                    } = e, n = P(t), i = O.get(n);
+                    } = e, n = b(t), i = O.get(n);
                     O.set(n, {
                         isFetching: !1,
                         lastFetchTimestampMs: null == i ? void 0 : i.lastFetchTimestampMs
@@ -4287,6 +4291,12 @@
                     } = e;
                     U = t
                 },
+                EMBEDDED_ACTIVITY_SET_FOCUSED_LAYOUT: function(e) {
+                    let {
+                        focusedActivityLayout: t
+                    } = e;
+                    P = t
+                },
                 CHANNEL_SELECT: function(e) {
                     let {
                         channelId: t
@@ -4294,7 +4304,7 @@
                     i !== t && U === f.ActivityPanelModes.PANEL && (U = f.ActivityPanelModes.PIP)
                 }
             });
-            var V = H
+            var x = V
         },
         711562: function(e, t, n) {
             "use strict";
@@ -4316,16 +4326,19 @@
         },
         272505: function(e, t, n) {
             "use strict";
-            var i, a;
+            var i, a, l, s;
             n.r(t), n.d(t, {
                 ActivityPanelModes: function() {
                     return i
                 },
+                FocusedActivityLayouts: function() {
+                    return a
+                },
                 LANDSCAPE_ACTIVITY_ASPECT_RATIO: function() {
-                    return l
+                    return r
                 }
-            }), (a = i || (i = {})).ACTION_BAR = "action_bar", a.PANEL = "panel", a.PIP = "pip";
-            let l = 16 / 9
+            }), (l = i || (i = {})).ACTION_BAR = "action_bar", l.PANEL = "panel", l.PIP = "pip", (s = a || (a = {}))[s.NO_CHAT = 0] = "NO_CHAT", s[s.RESIZABLE = 1] = "RESIZABLE";
+            let r = 16 / 9
         },
         644223: function(e, t, n) {
             "use strict";
@@ -26351,10 +26364,10 @@
             let i;
             n.r(t), n.d(t, {
                 shouldBadgeMessage: function() {
-                    return eN
+                    return eR
                 },
                 default: function() {
-                    return eZ
+                    return e$
                 }
             }), n("222007"), n("70102"), n("424973"), n("702976");
             var a, l, s = n("627445"),
@@ -26366,159 +26379,161 @@
                 _ = n("862337"),
                 E = n("627929"),
                 h = n("913144"),
-                f = n("716241"),
-                p = n("191145"),
-                T = n("203288"),
-                C = n("358269"),
-                S = n("605250"),
-                m = n("398604"),
-                I = n("811400"),
-                g = n("21121"),
-                A = n("288518"),
-                N = n("415435"),
-                O = n("486503"),
-                R = n("406297"),
-                y = n("136511"),
-                v = n("342176"),
-                M = n("512395"),
-                L = n("614305"),
-                D = n("689275"),
-                U = n("755624"),
-                P = n("526311"),
-                b = n("374363"),
-                G = n("233069"),
-                k = n("845078"),
-                w = n("718517"),
-                F = n("568734"),
-                H = n("449008"),
-                V = n("35468"),
-                x = n("299039"),
-                B = n("271938"),
-                Y = n("982108"),
-                K = n("42203"),
-                j = n("162805"),
-                W = n("760190"),
-                z = n("341542"),
-                q = n("305961"),
-                Q = n("603699"),
-                X = n("377253"),
-                Z = n("957255"),
-                J = n("27618"),
-                $ = n("18494"),
-                ee = n("282109"),
-                et = n("697218"),
-                en = n("471671"),
-                ei = n("49111"),
-                ea = n("724210"),
-                el = n("745049"),
-                es = n("627869"),
-                er = n("133335");
-            let eo = new S.default("ReadStateStore");
+                f = n("191225"),
+                p = n("716241"),
+                T = n("191145"),
+                C = n("203288"),
+                S = n("358269"),
+                m = n("605250"),
+                I = n("398604"),
+                g = n("811400"),
+                A = n("21121"),
+                N = n("288518"),
+                O = n("415435"),
+                R = n("486503"),
+                y = n("406297"),
+                v = n("136511"),
+                M = n("342176"),
+                L = n("512395"),
+                D = n("614305"),
+                U = n("689275"),
+                P = n("755624"),
+                b = n("526311"),
+                G = n("374363"),
+                k = n("233069"),
+                w = n("845078"),
+                F = n("718517"),
+                H = n("568734"),
+                V = n("449008"),
+                x = n("35468"),
+                B = n("299039"),
+                Y = n("271938"),
+                K = n("982108"),
+                j = n("42203"),
+                W = n("162805"),
+                z = n("760190"),
+                q = n("341542"),
+                Q = n("305961"),
+                X = n("603699"),
+                Z = n("377253"),
+                J = n("957255"),
+                $ = n("27618"),
+                ee = n("18494"),
+                et = n("282109"),
+                en = n("697218"),
+                ei = n("471671"),
+                ea = n("49111"),
+                el = n("272505"),
+                es = n("724210"),
+                er = n("745049"),
+                eo = n("627869"),
+                eu = n("133335");
+            let ed = new m.default("ReadStateStore");
             __OVERLAY__ && (i = n("901165").default);
-            let eu = ei.BasicPermissions.VIEW_CHANNEL | ei.BasicPermissions.READ_MESSAGE_HISTORY,
-                ed = null,
-                ec = null,
+            let ec = ea.BasicPermissions.VIEW_CHANNEL | ea.BasicPermissions.READ_MESSAGE_HISTORY,
                 e_ = null,
-                eE = !1,
-                eh = [],
+                eE = null,
+                eh = null,
                 ef = !1,
-                ep = null,
-                eT = {};
+                ep = [],
+                eT = !1,
+                eC = null,
+                eS = {};
 
-            function eC() {
-                return x.default.fromTimestamp(Date.now() - 2592e6)
+            function em() {
+                return B.default.fromTimestamp(Date.now() - 2592e6)
             }
-            let eS = 0,
-                em = 0,
-                eI = null;
+            let eI = 0,
+                eg = 0,
+                eA = null;
 
-            function eg() {
-                eS = Date.now() - 6048e5, em = Date.now() - 2592e5, clearTimeout(eI), eI = setTimeout(() => {
+            function eN() {
+                eI = Date.now() - 6048e5, eg = Date.now() - 2592e5, clearTimeout(eA), eA = setTimeout(() => {
                     h.default.dispatch({
                         type: "DECAY_READ_STATES"
                     })
                 }, 36e5)
             }
 
-            function eA(e) {
+            function eO(e) {
                 if (null == e) return 0;
                 let t = Date.parse(e);
                 return isNaN(t) ? 0 : t
             }
 
-            function eN(e, t) {
-                let n = K.default.getChannel(e.channel_id);
-                return !(null == n || J.default.isBlocked(e.author.id)) && (!!((0, R.default)({
+            function eR(e, t) {
+                let n = j.default.getChannel(e.channel_id);
+                return !(null == n || $.default.isBlocked(e.author.id)) && (!!((0, y.default)({
                     message: e,
                     userId: t.id,
-                    suppressEveryone: ee.default.isSuppressEveryoneEnabled(n.guild_id),
-                    suppressRoles: ee.default.isSuppressRolesEnabled(n.guild_id)
-                }) || eO(n)) || !1)
+                    suppressEveryone: et.default.isSuppressEveryoneEnabled(n.guild_id),
+                    suppressRoles: et.default.isSuppressRolesEnabled(n.guild_id)
+                }) || ey(n)) || !1)
             }
 
-            function eO(e) {
-                return null != e && e.isPrivate() && !ee.default.isGuildOrCategoryOrChannelMuted(e.guild_id, e.id)
+            function ey(e) {
+                return null != e && e.isPrivate() && !et.default.isGuildOrCategoryOrChannelMuted(e.guild_id, e.id)
             }
-            async function eR() {
-                if (0 === eh.length) {
-                    ef = !1;
+            async function ev() {
+                if (0 === ep.length) {
+                    eT = !1;
                     return
                 }
-                ef = !0;
-                let e = eh.splice(0, 100);
-                await ey(() => c.default.post({
-                    url: ei.Endpoints.BULK_ACK,
+                eT = !0;
+                let e = ep.splice(0, 100);
+                await eM(() => c.default.post({
+                    url: ea.Endpoints.BULK_ACK,
                     body: {
                         read_states: e
                     },
                     oldFormErrors: !0
-                })), await (0, _.timeoutPromise)(1e3), eR()
+                })), await (0, _.timeoutPromise)(1e3), ev()
             }
-            async function ey(e) {
-                let t = B.default.getId();
+            async function eM(e) {
+                let t = Y.default.getId();
                 for (let n = 0; n < 3; n++) try {
                     return await e()
                 } catch (e) {
-                    if (eo.error("", e), n + 1 < 3 && (await (0, _.timeoutPromise)((n + 1) * 2e3), await V.default.awaitOnline(), t !== B.default.getId())) return Promise.reject(Error("User changed."))
+                    if (ed.error("", e), n + 1 < 3 && (await (0, _.timeoutPromise)((n + 1) * 2e3), await x.default.awaitOnline(), t !== Y.default.getId())) return Promise.reject(Error("User changed."))
                 }
             }
 
-            function ev(e) {
-                if (e.type !== er.ReadStateTypes.CHANNEL) return !1;
-                let t = K.default.getChannel(e.channelId),
+            function eL(e) {
+                if (e.type !== eu.ReadStateTypes.CHANNEL) return !1;
+                let t = j.default.getChannel(e.channelId),
                     n = null != t && t.isForumPost();
-                if (Q.default.isIdle() || !e.canTrackUnreads()) return !1;
+                if (null != f.default.getConnectedActivityChannelId() && f.default.getActivityPanelMode() === el.ActivityPanelModes.PANEL && f.default.getFocusedLayout() === el.FocusedActivityLayouts.NO_CHAT || X.default.isIdle() || !e.canTrackUnreads()) return !1;
                 if ((null == t ? void 0 : t.isForumLikeChannel()) !== !0) {
-                    let t = eT[e.channelId],
-                        n = null != t && en.default.isFocused(t),
-                        a = null != i && i.isInstanceFocused() && i.isPinned(ei.OverlayWidgets.TEXT);
+                    let t = eS[e.channelId],
+                        n = null != t && ei.default.isFocused(t),
+                        a = null != i && i.isInstanceFocused() && i.isPinned(ea.OverlayWidgets.TEXT);
                     if (!n && !a) return !1
                 }
                 if (n && !e._persisted) return !0;
                 let a = e.hasUnreadOrMentions();
                 if (!a || (null == t ? void 0 : t.isForumLikeChannel()) === !0) return !1;
                 let l = n && !e._isJoinedThread;
-                if (!l && !j.default.isAtBottom(e.channelId)) return !1;
-                let s = p.default.getLayout(e.channelId),
-                    r = p.default.getChatOpen(e.channelId);
-                if (!r && (s === ei.ChannelLayouts.NO_CHAT || s === ei.ChannelLayouts.FULL_SCREEN) || null == eT[e.channelId]) return !1;
-                let o = X.default.getMessages(e.channelId);
-                return !(null == o || !o.ready || o.loadingMore || (0, L.default)() && !r) && !0
+                if (!l && !W.default.isAtBottom(e.channelId)) return !1;
+                let s = T.default.getLayout(e.channelId),
+                    r = T.default.getChatOpen(e.channelId);
+                if (!r && (s === ea.ChannelLayouts.NO_CHAT || s === ea.ChannelLayouts.FULL_SCREEN) || null == eS[e.channelId]) return !1;
+                let o = Z.default.getMessages(e.channelId);
+                return !(null == o || !o.ready || o.loadingMore || (0, D.default)() && !r) && !0
             }(l = a || (a = {}))[l.IS_GUILD_CHANNEL = 1] = "IS_GUILD_CHANNEL", l[l.IS_THREAD = 2] = "IS_THREAD";
-            class eM {
+            class eD {
                 static forEach(e) {
-                    for (let n of Object.keys(eM._readStates)) {
+                    for (let n of Object.keys(eD._readStates)) {
                         var t;
-                        let i = null !== (t = eM._readStates[parseInt(n)]) && void 0 !== t ? t : {};
+                        let i = null !== (t = eD._readStates[parseInt(n)]) && void 0 !== t ? t : {};
                         for (let t of Object.keys(i))
                             if (!1 === e(i[t])) break
                     }
                 }
                 static get(e) {
                     var t;
-                    let n = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : er.ReadStateTypes.CHANNEL,
-                        i = null === (t = eM._readStates[n]) || void 0 === t ? void 0 : t[e];
-                    return null == i && (i = new eM(e, n), null == eM._readStates[n] && (eM._readStates[n] = {}), eM._readStates[n][e] = i), i
+                    let n = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : eu.ReadStateTypes.CHANNEL,
+                        i = null === (t = eD._readStates[n]) || void 0 === t ? void 0 : t[e];
+                    return null == i && (i = new eD(e, n), null == eD._readStates[n] && (eD._readStates[n] = {}), eD._readStates[n][e] = i), i
                 }
                 static getGuildSentinels(e) {
                     return null == this._guildReadStateSentinels[e] && (this._guildReadStateSentinels[e] = {
@@ -26530,32 +26545,32 @@
                 }
                 static getIfExists(e) {
                     var t;
-                    let n = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : er.ReadStateTypes.CHANNEL;
-                    return null === (t = eM._readStates[n]) || void 0 === t ? void 0 : t[e]
+                    let n = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : eu.ReadStateTypes.CHANNEL;
+                    return null === (t = eD._readStates[n]) || void 0 === t ? void 0 : t[e]
                 }
                 static getMentionChannelIds() {
                     let e = [];
-                    for (let t of eM._mentionChannels) {
-                        let n = eM.getIfExists(t);
-                        null != n && n.canHaveMentions() ? e.push(t) : eM._mentionChannels.delete(t)
+                    for (let t of eD._mentionChannels) {
+                        let n = eD.getIfExists(t);
+                        null != n && n.canHaveMentions() ? e.push(t) : eD._mentionChannels.delete(t)
                     }
                     return e
                 }
                 static getValue(e) {
                     var t;
-                    let n = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : er.ReadStateTypes.CHANNEL,
+                    let n = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : eu.ReadStateTypes.CHANNEL,
                         i = arguments.length > 2 ? arguments[2] : void 0,
                         a = arguments.length > 3 ? arguments[3] : void 0,
-                        l = null === (t = eM._readStates[n]) || void 0 === t ? void 0 : t[e];
+                        l = null === (t = eD._readStates[n]) || void 0 === t ? void 0 : t[e];
                     return null == l ? a : i(l)
                 }
                 static clear(e) {
                     var t;
-                    let n = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : er.ReadStateTypes.CHANNEL;
-                    return (null === (t = eM._readStates[n]) || void 0 === t ? void 0 : t[e]) != null && (delete eM._readStates[n][e], eM._mentionChannels.delete(e), !0)
+                    let n = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : eu.ReadStateTypes.CHANNEL;
+                    return (null === (t = eD._readStates[n]) || void 0 === t ? void 0 : t[e]) != null && (delete eD._readStates[n][e], eD._mentionChannels.delete(e), !0)
                 }
                 static clearAll() {
-                    eM._readStates = {}, eM._mentionChannels.clear()
+                    eD._readStates = {}, eD._mentionChannels.clear()
                 }
                 serialize(e) {
                     let {
@@ -26646,10 +26661,10 @@
                         flags: g,
                         lastViewed: A
                     } = e;
-                    this.channelId = t, this.type = null != n ? n : er.ReadStateTypes.CHANNEL, this._guildId = i, this._isThread = null != a && a, null != l ? (this._isActiveThread = l, this._isJoinedThread = l) : (this._isActiveThread = null != s && s, this._isJoinedThread = null != r && r), this._persisted = !1 !== o, this.loadedMessages = null != u && u, this._lastMessageId = d, this._lastMessageTimestamp = c, this._ackMessageId = _, this._ackMessageTimestamp = E, this.ackPinTimestamp = h, this.isManualAck = null != f && f, this.lastPinTimestamp = p, this._oldestUnreadMessageId = T, this.oldestUnreadMessageIdStale = null != C && C, this.estimated = null != S && S, this._unreadCount = null != m ? m : 0, this._mentionCount = I, this.flags = g, this.lastViewed = A, eM._mentionChannels.delete(this.channelId), this._mentionCount > 0 && this.canHaveMentions() && eM._mentionChannels.add(this.channelId)
+                    this.channelId = t, this.type = null != n ? n : eu.ReadStateTypes.CHANNEL, this._guildId = i, this._isThread = null != a && a, null != l ? (this._isActiveThread = l, this._isJoinedThread = l) : (this._isActiveThread = null != s && s, this._isJoinedThread = null != r && r), this._persisted = !1 !== o, this.loadedMessages = null != u && u, this._lastMessageId = d, this._lastMessageTimestamp = c, this._ackMessageId = _, this._ackMessageTimestamp = E, this.ackPinTimestamp = h, this.isManualAck = null != f && f, this.lastPinTimestamp = p, this._oldestUnreadMessageId = T, this.oldestUnreadMessageIdStale = null != C && C, this.estimated = null != S && S, this._unreadCount = null != m ? m : 0, this._mentionCount = I, this.flags = g, this.lastViewed = A, eD._mentionChannels.delete(this.channelId), this._mentionCount > 0 && this.canHaveMentions() && eD._mentionChannels.add(this.channelId)
                 }
                 incrementGuildUnreadsSentinel() {
-                    null != this._guildId && eM.getGuildSentinels(this._guildId).unreadsSentinel++
+                    null != this._guildId && eD.getGuildSentinels(this._guildId).unreadsSentinel++
                 }
                 get oldestUnreadMessageId() {
                     return this._oldestUnreadMessageId
@@ -26661,7 +26676,7 @@
                     return this._lastMessageId
                 }
                 set lastMessageId(e) {
-                    this._lastMessageId = e, this._lastMessageTimestamp = null != e ? x.default.extractTimestamp(e) : 0
+                    this._lastMessageId = e, this._lastMessageTimestamp = null != e ? B.default.extractTimestamp(e) : 0
                 }
                 get lastMessageTimestamp() {
                     return this._lastMessageTimestamp
@@ -26670,7 +26685,7 @@
                     return this._ackMessageId
                 }
                 set ackMessageId(e) {
-                    this._ackMessageId = e, this._ackMessageTimestamp = null != e ? x.default.extractTimestamp(e) : 0
+                    this._ackMessageId = e, this._ackMessageTimestamp = null != e ? B.default.extractTimestamp(e) : 0
                 }
                 get unreadCount() {
                     var e;
@@ -26683,15 +26698,15 @@
                     return this._mentionCount
                 }
                 set mentionCount(e) {
-                    (0 === this._mentionCount || 0 === e) && this._mentionCount !== e && this.incrementGuildUnreadsSentinel(), this._mentionCount = e, eM._mentionChannels.delete(this.channelId), this._mentionCount > 0 && this.canHaveMentions() && eM._mentionChannels.add(this.channelId)
+                    (0 === this._mentionCount || 0 === e) && this._mentionCount !== e && this.incrementGuildUnreadsSentinel(), this._mentionCount = e, eD._mentionChannels.delete(this.channelId), this._mentionCount > 0 && this.canHaveMentions() && eD._mentionChannels.add(this.channelId)
                 }
                 guessAckMessageId() {
-                    let e = X.default.getMessages(this.channelId);
+                    let e = Z.default.getMessages(this.channelId);
                     if (null != this.ackMessageId || !this.isPrivate() || e.hasMoreAfter) return this.ackMessageId;
                     if (!this.hasMentions()) return this.lastMessageId;
                     let t = null,
                         n = this.mentionCount,
-                        i = et.default.getCurrentUser();
+                        i = en.default.getCurrentUser();
                     return e.forEach(e => {
                         if (n > 0 && e.author.id !== (null == i ? void 0 : i.id)) --n;
                         else if (0 === n) return t = e.id, !1
@@ -26699,12 +26714,12 @@
                 }
                 get guildId() {
                     if (null != this._guildId) return this._guildId;
-                    let e = K.default.getChannel(this.channelId);
+                    let e = j.default.getChannel(this.channelId);
                     return this._guildId = null != e ? e.getGuildId() : null
                 }
                 isPrivate() {
-                    if (this.type !== er.ReadStateTypes.CHANNEL) return !1;
-                    let e = K.default.getChannel(this.channelId);
+                    if (this.type !== eu.ReadStateTypes.CHANNEL) return !1;
+                    let e = j.default.getChannel(this.channelId);
                     return null != e && e.isPrivate()
                 }
                 rebuildChannelState(e) {
@@ -26712,58 +26727,58 @@
                     let i = arguments.length > 1 && void 0 !== arguments[1] && arguments[1],
                         a = arguments.length > 2 ? arguments[2] : void 0;
                     if (this.ackMessageId = null !== (t = null != e ? e : this._ackMessageId) && void 0 !== t ? t : this.guessAckMessageId(), this.isManualAck = null != e, this.oldestUnreadMessageId = null, this.estimated = !1, this.unreadCount = 0, i && (this.mentionCount = 0), this.hasUnread()) {
-                        let e = et.default.getCurrentUser(),
+                        let e = en.default.getCurrentUser(),
                             t = this.getAckTimestamp(),
                             a = !1,
                             l = !1,
                             s = null,
-                            r = X.default.getMessages(this.channelId);
+                            r = Z.default.getMessages(this.channelId);
                         r.forAll(n => {
                             if (a) {
                                 var r;
                                 this.oldestUnreadMessageId = null !== (r = this._oldestUnreadMessageId) && void 0 !== r ? r : n.id
                             } else a = n.id === this._ackMessageId;
-                            x.default.extractTimestamp(n.id) > t ? (this.unreadCount++, i && eN(n, e) && this.mentionCount++, s = null != s ? s : n.id) : l = !0
+                            B.default.extractTimestamp(n.id) > t ? (this.unreadCount++, i && eR(n, e) && this.mentionCount++, s = null != s ? s : n.id) : l = !0
                         }), this.estimated = !r.hasPresent() || !(a || l) && r.length === this.unreadCount, this.oldestUnreadMessageId = null !== (n = this._oldestUnreadMessageId) && void 0 !== n ? n : s
                     }
                     null != a && (this.mentionCount = a)
                 }
                 handleGuildEventRemoval(e, t) {
                     var n;
-                    if (x.default.compare(this.ackMessageId, t) >= 0) return;
-                    let i = m.default.getGuildScheduledEventsForGuild(e),
+                    if (B.default.compare(this.ackMessageId, t) >= 0) return;
+                    let i = I.default.getGuildScheduledEventsForGuild(e),
                         a = this.getAckTimestamp();
                     if (isNaN(a)) return;
-                    let l = null !== (n = this._ackMessageId) && void 0 !== n ? n : x.default.fromTimestamp(a),
+                    let l = null !== (n = this._ackMessageId) && void 0 !== n ? n : B.default.fromTimestamp(a),
                         s = null,
                         r = 0;
                     i.forEach(e => {
-                        (0, m.isEventUpcoming)(e) && (x.default.compare(e.id, s) > 0 && (s = e.id), x.default.compare(e.id, l) > 0 && r++)
+                        (0, I.isEventUpcoming)(e) && (B.default.compare(e.id, s) > 0 && (s = e.id), B.default.compare(e.id, l) > 0 && r++)
                     }), this.lastMessageId = s, this.mentionCount = r
                 }
                 canTrackUnreads() {
-                    if (this.type !== er.ReadStateTypes.CHANNEL) return !0;
+                    if (this.type !== eu.ReadStateTypes.CHANNEL) return !0;
                     if (this._isThread && !this._isActiveThread || this._isResourceChannel) return !1;
-                    let e = K.default.getBasicChannel(this.channelId);
-                    return null != e && ("basicPermissions" in e ? k.default.has(e.basicPermissions, ei.BasicPermissions.VIEW_CHANNEL) : !T.default.isChannelGated(this.guildId, this.channelId) || Z.default.can(ei.Permissions.VIEW_CHANNEL, e))
+                    let e = j.default.getBasicChannel(this.channelId);
+                    return null != e && ("basicPermissions" in e ? w.default.has(e.basicPermissions, ea.BasicPermissions.VIEW_CHANNEL) : !C.default.isChannelGated(this.guildId, this.channelId) || J.default.can(ea.Permissions.VIEW_CHANNEL, e))
                 }
                 canBeUnread() {
-                    return !(this._isThread && !this._isJoinedThread || (0, N.isMessageRequestOrSpamRequest)(this.channelId, [A.default, O.default]) || !this._isThread && (0, M.isOptInEnabledForGuild)(this._guildId) && (this._lastMessageTimestamp < eS || !ee.default.isChannelOrParentOptedIn(this._guildId, this.channelId) && !this.hasRecentlyVisitedAndRead() && !this.hasMentions())) && this.canTrackUnreads()
+                    return !(this._isThread && !this._isJoinedThread || (0, O.isMessageRequestOrSpamRequest)(this.channelId, [N.default, R.default]) || !this._isThread && (0, L.isOptInEnabledForGuild)(this._guildId) && (this._lastMessageTimestamp < eI || !et.default.isChannelOrParentOptedIn(this._guildId, this.channelId) && !this.hasRecentlyVisitedAndRead() && !this.hasMentions())) && this.canTrackUnreads()
                 }
                 canHaveMentions() {
-                    return !(0 === this.mentionCount || this._isThread && !this._isJoinedThread || (0, N.isMessageRequestOrSpamRequest)(this.channelId, [A.default, O.default]) || (0, M.isOptInEnabledForGuild)(this._guildId) && this._lastMessageTimestamp < eS) && this.canTrackUnreads()
+                    return !(0 === this.mentionCount || this._isThread && !this._isJoinedThread || (0, O.isMessageRequestOrSpamRequest)(this.channelId, [N.default, R.default]) || (0, L.isOptInEnabledForGuild)(this._guildId) && this._lastMessageTimestamp < eI) && this.canTrackUnreads()
                 }
                 getGuildChannelUnreadState(e, t, n, i, a, l) {
-                    if (t && (this._lastMessageTimestamp < eS || !ee.default.isChannelRecordOrParentOptedIn(e) && !this.hasRecentlyVisitedAndRead() && this.mentionCount <= 0)) return {
+                    if (t && (this._lastMessageTimestamp < eI || !et.default.isChannelRecordOrParentOptedIn(e) && !this.hasRecentlyVisitedAndRead() && this.mentionCount <= 0)) return {
                         mentionCount: 0,
                         hasNotableUnread: !1
                     };
                     if ("basicPermissions" in e) {
-                        if (!k.default.has(e.basicPermissions, ei.BasicPermissions.VIEW_CHANNEL)) return {
+                        if (!w.default.has(e.basicPermissions, ea.BasicPermissions.VIEW_CHANNEL)) return {
                             mentionCount: 0,
                             hasNotableUnread: !1
                         }
-                    } else if (T.default.isChannelGated(this.guildId, this.channelId) && !Z.default.can(ei.Permissions.VIEW_CHANNEL, e)) return {
+                    } else if (C.default.isChannelGated(this.guildId, this.channelId) && !J.default.can(ea.Permissions.VIEW_CHANNEL, e)) return {
                         mentionCount: 0,
                         hasNotableUnread: !1
                     };
@@ -26771,16 +26786,16 @@
                         mentionCount: this.mentionCount,
                         hasNotableUnread: !1
                     };
-                    let s = (0, I.calculateUnreadSetting)({
+                    let s = (0, g.calculateUnreadSetting)({
                             isExperimentEnabled: n,
-                            hasUserEnabledGuildUnreads: ee.default.isGuildUnreadSettingEnabled(e.guild_id),
+                            hasUserEnabledGuildUnreads: et.default.isGuildUnreadSettingEnabled(e.guild_id),
                             channelNotificationOverrides: i[e.id],
                             categoryNotificationOverrides: null == e.parent_id ? null : i[e.parent_id],
-                            unreadSetting: ee.default.getChannelUnreadSetting(e.guild_id, e.id),
-                            hasJoinedThread: U.default.hasJoined(e.id)
+                            unreadSetting: et.default.getChannelUnreadSetting(e.guild_id, e.id),
+                            hasJoinedThread: P.default.hasJoined(e.id)
                         }),
                         r = !1;
-                    return r = s === es.UserUnreadSettings.NULL || s === es.UserUnreadSettings.MENTIONS_AND_HIGHLIGHTS ? this.mentionCount > 0 || (0, C.hasUnreadChannelHighlights)(this.channelId, this._ackMessageId) : this.getAckTimestamp() < this._lastMessageTimestamp, {
+                    return r = s === eo.UserUnreadSettings.NULL || s === eo.UserUnreadSettings.MENTIONS_AND_HIGHLIGHTS ? this.mentionCount > 0 || (0, S.hasUnreadChannelHighlights)(this.channelId, this._ackMessageId) : this.getAckTimestamp() < this._lastMessageTimestamp, {
                         mentionCount: this.mentionCount,
                         hasNotableUnread: r
                     }
@@ -26789,12 +26804,12 @@
                     return this.getAckTimestamp() < this._lastMessageTimestamp
                 }
                 hasNotableUnread() {
-                    let e = K.default.getBasicChannel(this.channelId),
-                        t = null != e ? (0, I.getGuildUnreadSetting)(e) : es.UserUnreadSettings.ALL_MESSAGES;
-                    return t === es.UserUnreadSettings.NULL || t === es.UserUnreadSettings.MENTIONS_AND_HIGHLIGHTS ? (0, C.getUnreadChannelHighlights)(this.channelId, this._ackMessageId).length > 0 || this.hasMentions() : this.getAckTimestamp() < this._lastMessageTimestamp
+                    let e = j.default.getBasicChannel(this.channelId),
+                        t = null != e ? (0, g.getGuildUnreadSetting)(e) : eo.UserUnreadSettings.ALL_MESSAGES;
+                    return t === eo.UserUnreadSettings.NULL || t === eo.UserUnreadSettings.MENTIONS_AND_HIGHLIGHTS ? (0, S.getUnreadChannelHighlights)(this.channelId, this._ackMessageId).length > 0 || this.hasMentions() : this.getAckTimestamp() < this._lastMessageTimestamp
                 }
                 hasRecentlyVisitedAndRead() {
-                    return this._lastMessageTimestamp > 0 && null != this._ackMessageId && this.getAckTimestamp() > em && b.default.getGuildRecentsDismissedAt(this._guildId) < this.getAckTimestamp()
+                    return this._lastMessageTimestamp > 0 && null != this._ackMessageId && this.getAckTimestamp() > eg && G.default.getGuildRecentsDismissedAt(this._guildId) < this.getAckTimestamp()
                 }
                 isForumPostUnread() {
                     return !!this._isActiveThread && this.hasUnread()
@@ -26810,15 +26825,15 @@
                 }
                 ackPins() {
                     let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : null;
-                    if (this.type !== er.ReadStateTypes.CHANNEL || !this.canTrackUnreads()) return !1;
+                    if (this.type !== eu.ReadStateTypes.CHANNEL || !this.canTrackUnreads()) return !1;
                     if (null == e) {
                         if (this.lastPinTimestamp === this.ackPinTimestamp) return !1;
-                        this._persisted = !0, ey(() => c.default.post({
-                            url: ei.Endpoints.PINS_ACK(this.channelId),
+                        this._persisted = !0, eM(() => c.default.post({
+                            url: ea.Endpoints.PINS_ACK(this.channelId),
                             oldFormErrors: !0
                         }))
                     }
-                    let t = eA(e);
+                    let t = eO(e);
                     return this.ackPinTimestamp = 0 !== t ? t : this.lastPinTimestamp, !0
                 }
                 ack(e) {
@@ -26829,7 +26844,7 @@
                         force: a = !1,
                         isExplicitUserAction: l = !1,
                         location: s = {
-                            section: ei.AnalyticsSections.CHANNEL
+                            section: ea.AnalyticsSections.CHANNEL
                         },
                         trackAnalytics: r = !0
                     } = e;
@@ -26837,15 +26852,15 @@
                     let o = this.hasMentions();
                     return this.estimated = !1, this.unreadCount = 0, this.mentionCount = 0, (null != t || null != (t = this.lastMessageId)) && (this.ackMessageId = t, this.isManualAck = !1, this._persisted = !0, function(e) {
                         if (null == e) return;
-                        let t = eM.get(e);
-                        if (t.type !== er.ReadStateTypes.CHANNEL) return;
-                        let n = K.default.getChannel(t.channelId);
+                        let t = eD.get(e);
+                        if (t.type !== eu.ReadStateTypes.CHANNEL) return;
+                        let n = j.default.getChannel(t.channelId);
                         if (null == n || !n.isForumPost() || null == n.parent_id) return;
                         let i = n.parent_id,
-                            a = eM.get(i);
-                        D.default.hasLoaded(n.guild_id) && Object.keys(D.default.getThreadsForParent(n.guild_id, i)).every(e => eX.hasOpenedThread(e) || 0 > x.default.compare(e, a.ackMessageId)) && a.ack({})
+                            a = eD.get(i);
+                        U.default.hasLoaded(n.guild_id) && Object.keys(U.default.getThreadsForParent(n.guild_id, i)).every(e => eJ.hasOpenedThread(e) || 0 > B.default.compare(e, a.ackMessageId)) && a.ack({})
                     }(this.channelId), n ? this.oldestUnreadMessageId = null : (null == this.outgoingAck && (this.outgoingAckTimer = setTimeout(() => {
-                        this.type === er.ReadStateTypes.CHANNEL ? this._ack(s, r) : this._nonChannelAck(), this.outgoingAck = null, this.outgoingAckTimer = null
+                        this.type === eu.ReadStateTypes.CHANNEL ? this._ack(s, r) : this._nonChannelAck(), this.outgoingAck = null, this.outgoingAckTimer = null
                     }, o || i ? 0 : 3e3)), this.outgoingAck = t), !0)
                 }
                 clearOutgoingAck() {
@@ -26853,32 +26868,32 @@
                 }
                 _shouldAck(e, t, n) {
                     var i;
-                    return !!e || !!n || !!t || !!(!this.isManualAck && (this.type !== er.ReadStateTypes.CHANNEL || this.loadedMessages || (null === (i = K.default.getChannel(this.channelId)) || void 0 === i ? void 0 : i.isForumLikeChannel()))) || !1
+                    return !!e || !!n || !!t || !!(!this.isManualAck && (this.type !== eu.ReadStateTypes.CHANNEL || this.loadedMessages || (null === (i = j.default.getChannel(this.channelId)) || void 0 === i ? void 0 : i.isForumLikeChannel()))) || !1
                 }
                 _ack(e, t) {
                     let {
                         outgoingAck: n
                     } = this;
                     if (null == n) return;
-                    let i = B.default.getId(),
-                        a = e_;
+                    let i = Y.default.getId(),
+                        a = eh;
                     this._persisted = !0;
                     let l = this.recalculateFlags(),
                         s = l === this.flags ? void 0 : l;
-                    ey(() => c.default.post({
-                        url: ei.Endpoints.MESSAGE_ACK(this.channelId, n),
+                    eM(() => c.default.post({
+                        url: ea.Endpoints.MESSAGE_ACK(this.channelId, n),
                         body: {
-                            token: e_,
+                            token: eh,
                             last_viewed: this.lastViewed,
                             flags: s
                         },
                         oldFormErrors: !0
                     })).then(n => {
-                        if (null != n && (e_ === a && i === B.default.getId() && (e_ = n.body.token), h.default.dispatch({
+                        if (null != n && (eh === a && i === Y.default.getId() && (eh = n.body.token), h.default.dispatch({
                                 type: "MESSAGE_ACKED"
                             }), t)) {
-                            let t = K.default.getChannel(this.channelId);
-                            (0, f.trackWithMetadata)(ei.AnalyticEvents.ACK_MESSAGES, {
+                            let t = j.default.getChannel(this.channelId);
+                            (0, p.trackWithMetadata)(ea.AnalyticEvents.ACK_MESSAGES, {
                                 channel_id: this.channelId,
                                 guild_id: null == t ? void 0 : t.getGuildId(),
                                 location: e
@@ -26887,8 +26902,8 @@
                     })
                 }
                 recalculateFlags() {
-                    if (this.type !== er.ReadStateTypes.CHANNEL) return;
-                    let e = K.default.getChannel(this.channelId);
+                    if (this.type !== eu.ReadStateTypes.CHANNEL) return;
+                    let e = j.default.getChannel(this.channelId);
                     if (null != e) return e.isThread() ? 2 : null != e.guild_id ? 1 : 0
                 }
                 _nonChannelAck() {
@@ -26900,18 +26915,18 @@
                     } = this;
                     if (null != t) {
                         switch (i) {
-                            case er.ReadStateTypes.GUILD_HOME:
-                            case er.ReadStateTypes.GUILD_EVENT:
-                            case er.ReadStateTypes.GUILD_ONBOARDING_QUESTION:
-                                e = ei.Endpoints.GUILD_FEATURE_ACK(n, t, i);
+                            case eu.ReadStateTypes.GUILD_HOME:
+                            case eu.ReadStateTypes.GUILD_EVENT:
+                            case eu.ReadStateTypes.GUILD_ONBOARDING_QUESTION:
+                                e = ea.Endpoints.GUILD_FEATURE_ACK(n, t, i);
                                 break;
-                            case er.ReadStateTypes.NOTIFICATION_CENTER:
-                                e = ei.Endpoints.USER_NON_CHANNEL_ACK(t, i);
+                            case eu.ReadStateTypes.NOTIFICATION_CENTER:
+                                e = ea.Endpoints.USER_NON_CHANNEL_ACK(t, i);
                                 break;
                             default:
                                 return
                         }
-                        this._persisted = !0, ey(() => c.default.post({
+                        this._persisted = !0, eM(() => c.default.post({
                             url: e,
                             body: {},
                             oldFormErrors: !0
@@ -26921,156 +26936,156 @@
                 delete() {
                     var e;
                     let t = !(arguments.length > 0) || void 0 === arguments[0] || arguments[0],
-                        n = K.default.getBasicChannel(this.channelId);
-                    eo.log("Deleting ReadState", this.channelId, this.type, {
+                        n = j.default.getBasicChannel(this.channelId);
+                    ed.log("Deleting ReadState", this.channelId, this.type, {
                         remote: t,
                         persisted: this._persisted,
                         channelMissing: null == n,
-                        isOld: eG(this, eC()),
-                        validType: null != n && G.ALL_CHANNEL_TYPES.has(n.type),
-                        readableType: null != n && (0, G.isReadableType)(n.type),
-                        oldThreadCutoff: eC(),
+                        isOld: ew(this, em()),
+                        validType: null != n && k.ALL_CHANNEL_TYPES.has(n.type),
+                        readableType: null != n && (0, k.isReadableType)(n.type),
+                        oldThreadCutoff: em(),
                         mentionCount: this.mentionCount,
                         channelId: this.channelId,
                         ackMessageId: this._ackMessageId,
                         lastMessageId: this._lastMessageId
                     }), t && this._persisted && c.default.delete({
-                        url: ei.Endpoints.CHANNEL_ACK(this.channelId),
+                        url: ea.Endpoints.CHANNEL_ACK(this.channelId),
                         body: {
                             version: 2,
                             read_state_type: this.type
                         },
                         oldFormErrors: !0
-                    }), null === (e = eM._readStates[this.type]) || void 0 === e || delete e[this.channelId], eM._mentionChannels.delete(this.channelId)
+                    }), null === (e = eD._readStates[this.type]) || void 0 === e || delete e[this.channelId], eD._mentionChannels.delete(this.channelId)
                 }
                 shouldDeleteReadState(e) {
-                    if (0 !== z.default.totalUnavailableGuilds) return !1;
-                    if (null != this.type && this.type !== er.ReadStateTypes.CHANNEL) return ! function(e) {
+                    if (0 !== q.default.totalUnavailableGuilds) return !1;
+                    if (null != this.type && this.type !== eu.ReadStateTypes.CHANNEL) return ! function(e) {
                         switch (e.type) {
-                            case er.ReadStateTypes.GUILD_HOME:
-                            case er.ReadStateTypes.GUILD_EVENT:
-                            case er.ReadStateTypes.GUILD_ONBOARDING_QUESTION:
-                                return null != q.default.getGuild(e.channelId);
-                            case er.ReadStateTypes.NOTIFICATION_CENTER:
+                            case eu.ReadStateTypes.GUILD_HOME:
+                            case eu.ReadStateTypes.GUILD_EVENT:
+                            case eu.ReadStateTypes.GUILD_ONBOARDING_QUESTION:
+                                return null != Q.default.getGuild(e.channelId);
+                            case eu.ReadStateTypes.NOTIFICATION_CENTER:
                                 var t;
-                                return (null === (t = et.default.getCurrentUser()) || void 0 === t ? void 0 : t.id) === e.channelId;
+                                return (null === (t = en.default.getCurrentUser()) || void 0 === t ? void 0 : t.id) === e.channelId;
                             default:
                                 return !0
                         }
                     }(this);
-                    let t = K.default.getBasicChannel(this.channelId);
-                    if (null == t) return !!eG(this, e) || !1;
-                    return !!G.ALL_CHANNEL_TYPES.has(t.type) && (!(0, G.isReadableType)(t.type) || !(0, G.isPrivate)(t.type) && (!!(G.THREAD_CHANNEL_TYPES.has(t.type) && function(e, t, n) {
+                    let t = j.default.getBasicChannel(this.channelId);
+                    if (null == t) return !!ew(this, e) || !1;
+                    return !!k.ALL_CHANNEL_TYPES.has(t.type) && (!(0, k.isReadableType)(t.type) || !(0, k.isPrivate)(t.type) && (!!(k.THREAD_CHANNEL_TYPES.has(t.type) && function(e, t, n) {
                         let i = e.guildId,
-                            a = null != i && D.default.isActive(i, t.parent_id, e.channelId);
-                        return !a && eG(e, n)
-                    }(this, t, e)) || !!(this.mentionCount > 0) && !Z.default.canBasicChannel(eu, t) || !1))
+                            a = null != i && U.default.isActive(i, t.parent_id, e.channelId);
+                        return !a && ew(e, n)
+                    }(this, t, e)) || !!(this.mentionCount > 0) && !J.default.canBasicChannel(ec, t) || !1))
                 }
                 getAckTimestamp() {
                     let e, t;
                     if (0 !== this._ackMessageTimestamp) return this._ackMessageTimestamp;
-                    if (this._isThread) return this._ackMessageTimestamp = eP(this.guildId, this.channelId), this._ackMessageId = x.default.fromTimestamp(this._ackMessageTimestamp), this._ackMessageTimestamp;
-                    if (this.type === er.ReadStateTypes.GUILD_EVENT || this.type === er.ReadStateTypes.GUILD_ONBOARDING_QUESTION) e = q.default.getGuild(this.channelId);
-                    else if ((0, ea.isStaticChannelRoute)(this.channelId)) e = q.default.getGuild(this.guildId);
+                    if (this._isThread) return this._ackMessageTimestamp = eG(this.guildId, this.channelId), this._ackMessageId = B.default.fromTimestamp(this._ackMessageTimestamp), this._ackMessageTimestamp;
+                    if (this.type === eu.ReadStateTypes.GUILD_EVENT || this.type === eu.ReadStateTypes.GUILD_ONBOARDING_QUESTION) e = Q.default.getGuild(this.channelId);
+                    else if ((0, es.isStaticChannelRoute)(this.channelId)) e = Q.default.getGuild(this.guildId);
                     else {
-                        let t = K.default.getChannel(this.channelId);
+                        let t = j.default.getChannel(this.channelId);
                         if (null != t) {
                             let n = t.getGuildId();
-                            e = q.default.getGuild(n)
+                            e = Q.default.getGuild(n)
                         }
                     }
-                    return t = null != e ? eb(e) : x.default.extractTimestamp(this.channelId), this._ackMessageTimestamp = t, t
+                    return t = null != e ? ek(e) : B.default.extractTimestamp(this.channelId), this._ackMessageTimestamp = t, t
                 }
                 get oldestUnreadTimestamp() {
-                    return null != this.oldestUnreadMessageId ? x.default.extractTimestamp(this.oldestUnreadMessageId) : 0
+                    return null != this.oldestUnreadMessageId ? B.default.extractTimestamp(this.oldestUnreadMessageId) : 0
                 }
                 syncThreadSettings() {
                     this._isThread = !0;
-                    let e = K.default.getChannel(this.channelId);
-                    if (null == e) return eo.warn("syncThreadSettings called with channel not in memory ".concat(this.channelId)), !1;
+                    let e = j.default.getChannel(this.channelId);
+                    if (null == e) return ed.warn("syncThreadSettings called with channel not in memory ".concat(this.channelId)), !1;
                     let t = this.guildId,
-                        n = null != t && D.default.isActive(t, e.parent_id, this.channelId),
-                        i = U.default.hasJoined(this.channelId);
+                        n = null != t && U.default.isActive(t, e.parent_id, this.channelId),
+                        i = P.default.hasJoined(this.channelId);
                     return (this._isActiveThread !== n || this._isJoinedThread !== i) && (this._isActiveThread = n, this._isJoinedThread = i, !0)
                 }
                 recordLastViewedTime() {
-                    let e = Math.ceil((Date.now() - x.DISCORD_EPOCH) / w.default.Millis.DAY);
+                    let e = Math.ceil((Date.now() - B.DISCORD_EPOCH) / F.default.Millis.DAY);
                     e !== this.lastViewed && (this.lastViewed = e, this.canTrackUnreads() && !this.hasUnread() && this.ack({
                         force: !0,
                         trackAnalytics: !1
                     }))
                 }
-                constructor(e, t = er.ReadStateTypes.CHANNEL) {
-                    this.type = er.ReadStateTypes.CHANNEL, this.outgoingAckTimer = null, this.ackMessageIdAtChannelSelect = null, this.channelId = e, this.type = t, this._guildId = null, this._isThread = !1, this._isActiveThread = !1, this._isJoinedThread = !1, this._isResourceChannel = !1, this._persisted = !1, this.loadedMessages = !1, this._lastMessageId = null, this._lastMessageTimestamp = 0, this._ackMessageId = null, this._ackMessageTimestamp = 0, this.isManualAck = !1, this.ackPinTimestamp = 0, this.lastPinTimestamp = 0, this._oldestUnreadMessageId = null, this.oldestUnreadMessageIdStale = !1, this.estimated = !1, this._unreadCount = 0, this._mentionCount = 0, this.outgoingAck = null
+                constructor(e, t = eu.ReadStateTypes.CHANNEL) {
+                    this.type = eu.ReadStateTypes.CHANNEL, this.outgoingAckTimer = null, this.ackMessageIdAtChannelSelect = null, this.channelId = e, this.type = t, this._guildId = null, this._isThread = !1, this._isActiveThread = !1, this._isJoinedThread = !1, this._isResourceChannel = !1, this._persisted = !1, this.loadedMessages = !1, this._lastMessageId = null, this._lastMessageTimestamp = 0, this._ackMessageId = null, this._ackMessageTimestamp = 0, this.isManualAck = !1, this.ackPinTimestamp = 0, this.lastPinTimestamp = 0, this._oldestUnreadMessageId = null, this.oldestUnreadMessageIdStale = !1, this.estimated = !1, this._unreadCount = 0, this._mentionCount = 0, this.outgoingAck = null
                 }
             }
 
-            function eL(e) {
-                e.forEach(e => {
-                    if ((0, G.isReadableType)(e.type)) {
-                        let t = eM.get(e.id);
-                        t._guildId = e.guild_id, t.lastMessageId = e.lastMessageId, t.lastPinTimestamp = eA(e.lastPinTimestamp), t._isResourceChannel = e.hasFlag(ea.ChannelFlags.IS_GUILD_RESOURCE_CHANNEL), G.THREAD_CHANNEL_TYPES.has(e.type) && t.syncThreadSettings()
-                    }
-                })
-            }
-
-            function eD(e) {
-                e.forEach(e => {
-                    if ((0, G.isReadableType)(e.type)) {
-                        var t;
-                        let n = eM.get(e.id);
-                        n.lastMessageId = e.last_message_id, n.lastPinTimestamp = eA(e.last_pin_timestamp), n._isResourceChannel = (0, F.hasFlag)(null !== (t = e.flags) && void 0 !== t ? t : 0, ea.ChannelFlags.IS_GUILD_RESOURCE_CHANNEL), G.THREAD_CHANNEL_TYPES.has(e.type) && n.syncThreadSettings()
-                    }
-                })
-            }
-
             function eU(e) {
+                e.forEach(e => {
+                    if ((0, k.isReadableType)(e.type)) {
+                        let t = eD.get(e.id);
+                        t._guildId = e.guild_id, t.lastMessageId = e.lastMessageId, t.lastPinTimestamp = eO(e.lastPinTimestamp), t._isResourceChannel = e.hasFlag(es.ChannelFlags.IS_GUILD_RESOURCE_CHANNEL), k.THREAD_CHANNEL_TYPES.has(e.type) && t.syncThreadSettings()
+                    }
+                })
+            }
+
+            function eP(e) {
+                e.forEach(e => {
+                    if ((0, k.isReadableType)(e.type)) {
+                        var t;
+                        let n = eD.get(e.id);
+                        n.lastMessageId = e.last_message_id, n.lastPinTimestamp = eO(e.last_pin_timestamp), n._isResourceChannel = (0, H.hasFlag)(null !== (t = e.flags) && void 0 !== t ? t : 0, es.ChannelFlags.IS_GUILD_RESOURCE_CHANNEL), k.THREAD_CHANNEL_TYPES.has(e.type) && n.syncThreadSettings()
+                    }
+                })
+            }
+
+            function eb(e) {
                 (function(e) {
                     var t;
                     null === (t = e.threads) || void 0 === t || t.forEach(t => {
-                        if (!G.ALL_CHANNEL_TYPES.has(t.type)) return;
-                        let n = eM.get(t.id);
-                        n.lastMessageId = t.lastMessageId, n.lastPinTimestamp = eA(t.lastPinTimestamp), n._isThread = !0, n._isActiveThread = !0, n._isJoinedThread = null != t.member, null == n.ackMessageId && (n.ackMessageId = x.default.fromTimestamp(eP(e.id, t.id))), null == n.ackPinTimestamp && (n.ackPinTimestamp = eP(e.id, t.id))
+                        if (!k.ALL_CHANNEL_TYPES.has(t.type)) return;
+                        let n = eD.get(t.id);
+                        n.lastMessageId = t.lastMessageId, n.lastPinTimestamp = eO(t.lastPinTimestamp), n._isThread = !0, n._isActiveThread = !0, n._isJoinedThread = null != t.member, null == n.ackMessageId && (n.ackMessageId = B.default.fromTimestamp(eG(e.id, t.id))), null == n.ackPinTimestamp && (n.ackPinTimestamp = eG(e.id, t.id))
                     })
                 })(e),
                 function(e) {
                     var t, n;
-                    if ((null === (t = e.guild_scheduled_events) || void 0 === t ? void 0 : t.length) === 0 && null == eM.getIfExists(e.id, er.ReadStateTypes.GUILD_EVENT)) return;
-                    let i = eM.get(e.id, er.ReadStateTypes.GUILD_EVENT);
+                    if ((null === (t = e.guild_scheduled_events) || void 0 === t ? void 0 : t.length) === 0 && null == eD.getIfExists(e.id, eu.ReadStateTypes.GUILD_EVENT)) return;
+                    let i = eD.get(e.id, eu.ReadStateTypes.GUILD_EVENT);
                     i._guildId = e.id;
                     let a = 0,
                         l = null,
-                        s = null !== (n = i._ackMessageId) && void 0 !== n ? n : x.default.fromTimestamp(i.getAckTimestamp());
+                        s = null !== (n = i._ackMessageId) && void 0 !== n ? n : B.default.fromTimestamp(i.getAckTimestamp());
                     e.guild_scheduled_events.forEach(e => {
-                        x.default.compare(e.id, l) > 0 && (l = e.id), x.default.compare(e.id, s) > 0 && a++
+                        B.default.compare(e.id, l) > 0 && (l = e.id), B.default.compare(e.id, s) > 0 && a++
                     }), i.lastMessageId = l, i.mentionCount = a
                 }(e),
                 function(e) {
-                    let t = eM.get(e.id, er.ReadStateTypes.GUILD_HOME);
-                    t.lastMessageId = x.default.fromTimestamp(u(Date.now()).subtract(24, "h").valueOf())
+                    let t = eD.get(e.id, eu.ReadStateTypes.GUILD_HOME);
+                    t.lastMessageId = B.default.fromTimestamp(u(Date.now()).subtract(24, "h").valueOf())
                 }(e),
                 function(e) {
                     let t = e.properties.latest_onboarding_question_id;
                     if (null == t) return;
-                    let n = eM.get(e.id, er.ReadStateTypes.GUILD_ONBOARDING_QUESTION);
+                    let n = eD.get(e.id, eu.ReadStateTypes.GUILD_ONBOARDING_QUESTION);
                     n._guildId = e.id, n.lastMessageId = t
                 }(e)
             }
-            eM._guildReadStateSentinels = {}, eM._readStates = {}, eM._mentionChannels = new Set;
+            eD._guildReadStateSentinels = {}, eD._readStates = {}, eD._mentionChannels = new Set;
 
-            function eP(e, t) {
+            function eG(e, t) {
                 var n, i, a;
-                let l = K.default.getChannel(t),
-                    s = q.default.getGuild(null != e ? e : null == l ? void 0 : l.guild_id),
-                    r = (null == l ? void 0 : l.isForumPost()) ? 0 : eb(s),
-                    o = (null !== (a = null === (n = U.default.joinTimestamp(t)) || void 0 === n ? void 0 : n.getTime()) && void 0 !== a ? a : 0) - 5e3,
+                let l = j.default.getChannel(t),
+                    s = Q.default.getGuild(null != e ? e : null == l ? void 0 : l.guild_id),
+                    r = (null == l ? void 0 : l.isForumPost()) ? 0 : ek(s),
+                    o = (null !== (a = null === (n = P.default.joinTimestamp(t)) || void 0 === n ? void 0 : n.getTime()) && void 0 !== a ? a : 0) - 5e3,
                     u = null == l ? void 0 : null === (i = l.threadMetadata) || void 0 === i ? void 0 : i.archiveTimestamp,
                     d = null != u ? new Date(u).getTime() - 1 : 0,
                     c = Math.max(o, d);
-                return c <= 0 && (c = x.default.extractTimestamp(t) - 1), isNaN(r) ? c : Math.max(r, c)
+                return c <= 0 && (c = B.default.extractTimestamp(t) - 1), isNaN(r) ? c : Math.max(r, c)
             }
 
-            function eb(e) {
+            function ek(e) {
                 if (null != e && null != e.joinedAt) {
                     if (e.joinedAt instanceof Date) return e.joinedAt.getTime();
                     if ("string" == typeof e.joinedAt) return new Date(e.joinedAt).getTime();
@@ -27079,221 +27094,221 @@
                 return Date.now()
             }
 
-            function eG(e, t) {
-                return !!(e.mentionCount > 0) || !(x.default.compare(e.channelId, t) > 0 || null != e._ackMessageId && x.default.compare(e._ackMessageId, t) > 0 || null != e._lastMessageId && x.default.compare(e._lastMessageId, t) > 0) && !0
+            function ew(e, t) {
+                return !!(e.mentionCount > 0) || !(B.default.compare(e.channelId, t) > 0 || null != e._ackMessageId && B.default.compare(e._ackMessageId, t) > 0 || null != e._lastMessageId && B.default.compare(e._lastMessageId, t) > 0) && !0
             }
 
-            function ek(e) {
+            function eF(e) {
                 if (null != e) {
-                    let t = eM.get(e);
-                    if (ev(t)) return t.ack({})
+                    let t = eD.get(e);
+                    if (eL(t)) return t.ack({})
                 }
                 return !1
             }
 
-            function ew() {
-                null != ep && clearTimeout(ep)
-            }
-
-            function eF(e) {
-                if (null != e.channelUpdates) {
-                    var t;
-                    eL(null === (t = e.channelUpdates) || void 0 === t ? void 0 : t.writes)
-                }
-                if (null != e.channelTimestampUpdates)
-                    for (let t of e.channelTimestampUpdates) {
-                        let e = eM.get(t.id);
-                        null != t.last_message_id && (e.lastMessageId = t.last_message_id), null != t.last_pin_timestamp && (e.lastPinTimestamp = eA(t.last_pin_timestamp))
-                    }
-            }
-
-            function eH(e) {
-                let {
-                    channelId: t
-                } = e, n = eM.get(t);
-                n.rebuildChannelState()
+            function eH() {
+                null != eC && clearTimeout(eC)
             }
 
             function eV(e) {
-                let {
-                    threads: t
-                } = e;
-                eD(t)
+                if (null != e.channelUpdates) {
+                    var t;
+                    eU(null === (t = e.channelUpdates) || void 0 === t ? void 0 : t.writes)
+                }
+                if (null != e.channelTimestampUpdates)
+                    for (let t of e.channelTimestampUpdates) {
+                        let e = eD.get(t.id);
+                        null != t.last_message_id && (e.lastMessageId = t.last_message_id), null != t.last_pin_timestamp && (e.lastPinTimestamp = eO(t.last_pin_timestamp))
+                    }
             }
 
             function ex(e) {
-                let t = et.default.getCurrentUser();
-                return null != e.creator_id && null != t && e.creator_id === t.id
+                let {
+                    channelId: t
+                } = e, n = eD.get(t);
+                n.rebuildChannelState()
             }
 
             function eB(e) {
                 let {
-                    channel: t
+                    threads: t
                 } = e;
-                return eM.clear(t.id)
+                eP(t)
             }
 
-            function eY() {
-                let e = Y.default.getCurrentSidebarChannelId(ed),
-                    t = !1;
-                return ec !== e ? (t = ej(ec), ec = e) : t = ek(e) || t, t
+            function eY(e) {
+                let t = en.default.getCurrentUser();
+                return null != e.creator_id && null != t && e.creator_id === t.id
             }
 
             function eK(e) {
-                if (null == e) return;
-                let t = eM.get(e);
-                t.isManualAck = !1
+                let {
+                    channel: t
+                } = e;
+                return eD.clear(t.id)
             }
 
-            function ej(e) {
-                if (null == e) return !1;
-                let t = eM.get(e);
-                return !t.hasUnread() && (t.oldestUnreadMessageId = null, !0)
+            function ej() {
+                let e = K.default.getCurrentSidebarChannelId(e_),
+                    t = !1;
+                return eE !== e ? (t = ez(eE), eE = e) : t = eF(e) || t, t
             }
 
             function eW(e) {
+                if (null == e) return;
+                let t = eD.get(e);
+                t.isManualAck = !1
+            }
+
+            function ez(e) {
+                if (null == e) return !1;
+                let t = eD.get(e);
+                return !t.hasUnread() && (t.oldestUnreadMessageId = null, !0)
+            }
+
+            function eq(e) {
                 let {
                     channelId: t,
                     messageId: n,
                     manual: i,
                     newMentionCount: a
-                } = e, l = eM.get(t);
+                } = e, l = eD.get(t);
                 return i ? (l.rebuildChannelState(n, !0, a), !0) : n !== l._ackMessageId && l.ack({
                     messageId: n,
                     local: !0
                 })
             }
 
-            function ez(e) {
+            function eQ(e) {
                 let {
                     id: t,
                     ackType: n,
                     ackedId: i,
                     local: a
                 } = e;
-                return eq(t, n, i, a)
+                return eX(t, n, i, a)
             }
 
-            function eq(e, t, n, i) {
+            function eX(e, t, n, i) {
                 var a;
-                let l = eM.get(e, t);
-                return n !== l.ackMessageId && l.lastMessageId !== l.ackMessageId && (null != l.lastMessageId || 0 !== l.mentionCount) && (n = null !== (a = null != n ? n : l.lastMessageId) && void 0 !== a ? a : x.default.fromTimestamp(l.getAckTimestamp()), l.ack({
+                let l = eD.get(e, t);
+                return n !== l.ackMessageId && l.lastMessageId !== l.ackMessageId && (null != l.lastMessageId || 0 !== l.mentionCount) && (n = null !== (a = null != n ? n : l.lastMessageId) && void 0 !== a ? a : B.default.fromTimestamp(l.getAckTimestamp()), l.ack({
                     messageId: n,
                     local: null == i || i
                 }))
             }
-            class eQ extends d.default.Store {
+            class eZ extends d.default.Store {
                 initialize() {
-                    this.waitFor(j.default, et.default, q.default, z.default, K.default, $.default, X.default, Z.default, p.default, D.default, U.default, Y.default, m.default, W.default, T.default, ee.default, en.default, y.default, A.default, b.default, O.default), this.syncWith([Y.default], eY)
+                    this.waitFor(W.default, en.default, Q.default, q.default, j.default, ee.default, Z.default, J.default, T.default, U.default, P.default, K.default, I.default, z.default, C.default, et.default, ei.default, v.default, N.default, G.default, R.default), this.syncWith([K.default], ej)
                 }
                 getReadStatesByChannel() {
                     var e;
-                    return null !== (e = eM._readStates[er.ReadStateTypes.CHANNEL]) && void 0 !== e ? e : {}
+                    return null !== (e = eD._readStates[eu.ReadStateTypes.CHANNEL]) && void 0 !== e ? e : {}
                 }
                 getForDebugging(e) {
-                    let t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : er.ReadStateTypes.CHANNEL;
-                    return eM.getIfExists(e, t)
+                    let t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : eu.ReadStateTypes.CHANNEL;
+                    return eD.getIfExists(e, t)
                 }
                 getNotifCenterReadState(e) {
-                    return eM._readStates[er.ReadStateTypes.NOTIFICATION_CENTER][e]
+                    return eD._readStates[eu.ReadStateTypes.NOTIFICATION_CENTER][e]
                 }
                 hasUnread(e) {
-                    let t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : er.ReadStateTypes.CHANNEL;
-                    return eM.getValue(e, t, e => e.canBeUnread() && e.hasUnread(), !1)
+                    let t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : eu.ReadStateTypes.CHANNEL;
+                    return eD.getValue(e, t, e => e.canBeUnread() && e.hasUnread(), !1)
                 }
                 hasNotableUnread(e) {
-                    let t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : er.ReadStateTypes.CHANNEL;
-                    return eM.getValue(e, t, e => e.canBeUnread() && e.hasNotableUnread(), !1)
+                    let t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : eu.ReadStateTypes.CHANNEL;
+                    return eD.getValue(e, t, e => e.canBeUnread() && e.hasNotableUnread(), !1)
                 }
                 hasTrackedUnread(e) {
-                    let t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : er.ReadStateTypes.CHANNEL;
-                    return eM.getValue(e, t, e => e.canTrackUnreads() && e.hasUnread(), !1)
+                    let t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : eu.ReadStateTypes.CHANNEL;
+                    return eD.getValue(e, t, e => e.canTrackUnreads() && e.hasUnread(), !1)
                 }
                 isForumPostUnread(e) {
-                    let t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : er.ReadStateTypes.CHANNEL;
-                    return eM.getValue(e, t, e => e.isForumPostUnread(), !1)
+                    let t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : eu.ReadStateTypes.CHANNEL;
+                    return eD.getValue(e, t, e => e.isForumPostUnread(), !1)
                 }
                 hasRelevantUnread(e) {
-                    let t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : er.ReadStateTypes.CHANNEL;
-                    return this.hasNotableUnread(e.id, t) && ee.default.isChannelRelevant(e)
+                    let t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : eu.ReadStateTypes.CHANNEL;
+                    return this.hasNotableUnread(e.id, t) && et.default.isChannelRelevant(e)
                 }
                 getUnreadCount(e) {
-                    let t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : er.ReadStateTypes.CHANNEL;
-                    return eM.getValue(e, t, e => e.canBeUnread() ? e.unreadCount : 0, 0)
+                    let t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : eu.ReadStateTypes.CHANNEL;
+                    return eD.getValue(e, t, e => e.canBeUnread() ? e.unreadCount : 0, 0)
                 }
                 getMentionCount(e) {
-                    let t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : er.ReadStateTypes.CHANNEL;
-                    return eM.getValue(e, t, e => e.canHaveMentions() ? e.getMentionCount() : 0, 0)
+                    let t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : eu.ReadStateTypes.CHANNEL;
+                    return eD.getValue(e, t, e => e.canHaveMentions() ? e.getMentionCount() : 0, 0)
                 }
                 getGuildChannelUnreadState(e, t, n, i, a, l) {
-                    return eM.getValue(e.id, er.ReadStateTypes.CHANNEL, s => s.getGuildChannelUnreadState(e, t, n, i, a, l), {
+                    return eD.getValue(e.id, eu.ReadStateTypes.CHANNEL, s => s.getGuildChannelUnreadState(e, t, n, i, a, l), {
                         mentionCount: 0,
                         hasNotableUnread: !1
                     })
                 }
                 hasRecentlyVisitedAndRead(e) {
-                    let t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : er.ReadStateTypes.CHANNEL;
-                    return eM.getValue(e, t, e => e.hasRecentlyVisitedAndRead(), !1)
+                    let t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : eu.ReadStateTypes.CHANNEL;
+                    return eD.getValue(e, t, e => e.hasRecentlyVisitedAndRead(), !1)
                 }
                 ackMessageId(e) {
-                    let t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : er.ReadStateTypes.CHANNEL;
-                    return eM.getValue(e, t, e => e.canBeUnread() ? e.ackMessageId : null, null)
+                    let t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : eu.ReadStateTypes.CHANNEL;
+                    return eD.getValue(e, t, e => e.canBeUnread() ? e.ackMessageId : null, null)
                 }
                 getTrackedAckMessageId(e) {
-                    let t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : er.ReadStateTypes.CHANNEL;
-                    return eM.getValue(e, t, e => e.canTrackUnreads() ? e._ackMessageId : null, null)
+                    let t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : eu.ReadStateTypes.CHANNEL;
+                    return eD.getValue(e, t, e => e.canTrackUnreads() ? e._ackMessageId : null, null)
                 }
                 lastMessageId(e) {
-                    let t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : er.ReadStateTypes.CHANNEL;
-                    return eM.getValue(e, t, e => e.lastMessageId, null)
+                    let t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : eu.ReadStateTypes.CHANNEL;
+                    return eD.getValue(e, t, e => e.lastMessageId, null)
                 }
                 lastMessageTimestamp(e) {
-                    let t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : er.ReadStateTypes.CHANNEL;
-                    return eM.getValue(e, t, e => e.lastMessageTimestamp, 0)
+                    let t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : eu.ReadStateTypes.CHANNEL;
+                    return eD.getValue(e, t, e => e.lastMessageTimestamp, 0)
                 }
                 lastPinTimestamp(e) {
-                    return eM.getValue(e, er.ReadStateTypes.CHANNEL, e => e.lastPinTimestamp, null)
+                    return eD.getValue(e, eu.ReadStateTypes.CHANNEL, e => e.lastPinTimestamp, null)
                 }
                 getOldestUnreadMessageId(e) {
-                    let t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : er.ReadStateTypes.CHANNEL;
-                    return eM.getValue(e, t, e => e.canTrackUnreads() ? e.oldestUnreadMessageId : null, null)
+                    let t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : eu.ReadStateTypes.CHANNEL;
+                    return eD.getValue(e, t, e => e.canTrackUnreads() ? e.oldestUnreadMessageId : null, null)
                 }
                 getOldestUnreadTimestamp(e) {
-                    let t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : er.ReadStateTypes.CHANNEL;
-                    return eM.getValue(e, t, e => e.canTrackUnreads() ? e.oldestUnreadTimestamp : 0, 0)
+                    let t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : eu.ReadStateTypes.CHANNEL;
+                    return eD.getValue(e, t, e => e.canTrackUnreads() ? e.oldestUnreadTimestamp : 0, 0)
                 }
                 isEstimated(e) {
-                    let t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : er.ReadStateTypes.CHANNEL;
-                    return eM.getValue(e, t, e => e.estimated, !1)
+                    let t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : eu.ReadStateTypes.CHANNEL;
+                    return eD.getValue(e, t, e => e.estimated, !1)
                 }
                 hasOpenedThread(e) {
-                    let t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : er.ReadStateTypes.CHANNEL;
-                    return eM.getValue(e, t, e => e._persisted, !1)
+                    let t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : eu.ReadStateTypes.CHANNEL;
+                    return eD.getValue(e, t, e => e._persisted, !1)
                 }
                 hasUnreadPins(e) {
-                    return eM.getValue(e, er.ReadStateTypes.CHANNEL, e => e.canBeUnread() && e.lastPinTimestamp > e.ackPinTimestamp, !1)
+                    return eD.getValue(e, eu.ReadStateTypes.CHANNEL, e => e.canBeUnread() && e.lastPinTimestamp > e.ackPinTimestamp, !1)
                 }
                 isNewForumThread(e, t, n) {
-                    let i = eM.get(t),
-                        a = eM.get(e);
-                    if (!0 === a._persisted || null == i.ackMessageIdAtChannelSelect || 0 >= x.default.compare(e, i.ackMessageIdAtChannelSelect)) return !1;
-                    let l = eb(n),
-                        s = x.default.extractTimestamp(e);
+                    let i = eD.get(t),
+                        a = eD.get(e);
+                    if (!0 === a._persisted || null == i.ackMessageIdAtChannelSelect || 0 >= B.default.compare(e, i.ackMessageIdAtChannelSelect)) return !1;
+                    let l = ek(n),
+                        s = B.default.extractTimestamp(e);
                     return s > l
                 }
                 getAllReadStates(e) {
                     let t = [];
-                    return eM.forEach(n => {
+                    return eD.forEach(n => {
                         switch (n.type) {
-                            case er.ReadStateTypes.GUILD_HOME:
-                            case er.ReadStateTypes.GUILD_EVENT:
-                            case er.ReadStateTypes.GUILD_ONBOARDING_QUESTION:
-                                let i = q.default.getGuild(n.channelId);
+                            case eu.ReadStateTypes.GUILD_HOME:
+                            case eu.ReadStateTypes.GUILD_EVENT:
+                            case eu.ReadStateTypes.GUILD_ONBOARDING_QUESTION:
+                                let i = Q.default.getGuild(n.channelId);
                                 null != i && t.push(n.serialize(e));
                                 break;
-                            case er.ReadStateTypes.NOTIFICATION_CENTER:
+                            case eu.ReadStateTypes.NOTIFICATION_CENTER:
                                 var a;
-                                let l = null === (a = et.default.getCurrentUser()) || void 0 === a ? void 0 : a.id;
+                                let l = null === (a = en.default.getCurrentUser()) || void 0 === a ? void 0 : a.id;
                                 l === n.channelId && t.push(n.serialize(e));
                                 break;
                             default:
@@ -27302,14 +27317,14 @@
                     }), t
                 }
                 getGuildUnreadsSentinel(e) {
-                    return eM.getGuildSentinels(e).unreadsSentinel
+                    return eD.getGuildSentinels(e).unreadsSentinel
                 }
                 getMentionChannelIds() {
-                    return eM.getMentionChannelIds()
+                    return eD.getMentionChannelIds()
                 }
             }
-            eQ.displayName = "ReadStateStore";
-            let eX = new eQ(h.default, {
+            eZ.displayName = "ReadStateStore";
+            let eJ = new eZ(h.default, {
                 CONNECTION_OPEN: function(e) {
                     var t, n;
                     let {
@@ -27318,10 +27333,10 @@
                         initialPrivateChannels: l,
                         readState: s
                     } = e;
-                    eg(), e_ = null, !eE && !s.partial && eM.clearAll(), eE = !1, s.entries.forEach(e => {
+                    eN(), eh = null, !ef && !s.partial && eD.clearAll(), ef = !1, s.entries.forEach(e => {
                         var t, n, i;
-                        let a = null !== (t = e.read_state_type) && void 0 !== t ? t : er.ReadStateTypes.CHANNEL;
-                        if (a !== er.ReadStateTypes.CHANNEL) {
+                        let a = null !== (t = e.read_state_type) && void 0 !== t ? t : eu.ReadStateTypes.CHANNEL;
+                        if (a !== eu.ReadStateTypes.CHANNEL) {
                             ;
                             e = {
                                 id: (i = e).id,
@@ -27330,33 +27345,33 @@
                                 last_message_id: i.last_acked_id
                             }
                         }
-                        let l = eM.get(e.id, a);
+                        let l = eD.get(e.id, a);
                         l._persisted = !0, l._mentionCount = null !== (n = e.mention_count) && void 0 !== n ? n : 0, l.flags = e.flags, l.lastViewed = e.last_viewed;
-                        let s = K.default.getBasicChannel(e.id);
-                        null != s && (0, G.isThread)(s.type) && (null == e.last_message_id || 0 === e.last_message_id) ? l.ackMessageId = x.default.fromTimestamp(eP(s.guild_id, s.id)) : l.ackMessageId = e.last_message_id, l.ackPinTimestamp = eA(e.last_pin_timestamp), eM._mentionChannels.delete(l.channelId), l._mentionCount > 0 && l.canHaveMentions() && eM._mentionChannels.add(l.channelId)
-                    }), eM.resetGuildSentinels();
-                    let r = null === (t = et.default.getCurrentUser()) || void 0 === t ? void 0 : t.id;
+                        let s = j.default.getBasicChannel(e.id);
+                        null != s && (0, k.isThread)(s.type) && (null == e.last_message_id || 0 === e.last_message_id) ? l.ackMessageId = B.default.fromTimestamp(eG(s.guild_id, s.id)) : l.ackMessageId = e.last_message_id, l.ackPinTimestamp = eO(e.last_pin_timestamp), eD._mentionChannels.delete(l.channelId), l._mentionCount > 0 && l.canHaveMentions() && eD._mentionChannels.add(l.channelId)
+                    }), eD.resetGuildSentinels();
+                    let r = null === (t = en.default.getCurrentUser()) || void 0 === t ? void 0 : t.id;
                     if (null != r) {
-                        let e = eM.get(r, er.ReadStateTypes.NOTIFICATION_CENTER);
-                        e.lastMessageId = x.default.fromTimestamp(Date.now())
+                        let e = eD.get(r, eu.ReadStateTypes.NOTIFICATION_CENTER);
+                        e.lastMessageId = B.default.fromTimestamp(Date.now())
                     }
                     for (let e of (function(e) {
-                            let t = et.default.getCurrentUser();
-                            if (!(0, v.inNotificationCenterEnabled)() || null == t) return 0;
-                            let n = eM.get(t.id, er.ReadStateTypes.NOTIFICATION_CENTER);
+                            let t = en.default.getCurrentUser();
+                            if (!(0, M.inNotificationCenterEnabled)() || null == t) return 0;
+                            let n = eD.get(t.id, eu.ReadStateTypes.NOTIFICATION_CENTER);
                             e.forEach(e => {
-                                if (null == e.since || e.type !== ei.RelationshipTypes.PENDING_INCOMING) return;
+                                if (null == e.since || e.type !== ea.RelationshipTypes.PENDING_INCOMING) return;
                                 let t = new Date(e.since).getTime(),
-                                    i = null != n.ackMessageId ? x.default.extractTimestamp(n.ackMessageId) : 0;
-                                i < t && (n.mentionCount++, n.lastMessageId = x.default.fromTimestamp(t))
+                                    i = null != n.ackMessageId ? B.default.extractTimestamp(n.ackMessageId) : 0;
+                                i < t && (n.mentionCount++, n.lastMessageId = B.default.fromTimestamp(t))
                             })
-                        }(a), eL(l), i)) eL(null !== (n = e.channels) && void 0 !== n ? n : []), eF(e), eU(e);
-                    ew(), ep = setTimeout(() => (function(e) {
-                        let t = eC();
+                        }(a), eU(l), i)) eU(null !== (n = e.channels) && void 0 !== n ? n : []), eV(e), eb(e);
+                    eH(), eC = setTimeout(() => (function(e) {
+                        let t = em();
                         for (let i of e) {
                             var n;
-                            let e = null !== (n = i.read_state_type) && void 0 !== n ? n : er.ReadStateTypes.CHANNEL,
-                                a = eM.get(i.id, e);
+                            let e = null !== (n = i.read_state_type) && void 0 !== n ? n : eu.ReadStateTypes.CHANNEL,
+                                a = eD.get(i.id, e);
                             a.shouldDeleteReadState(t) && a.delete()
                         }
                     })(s.entries), 1e4)
@@ -27365,47 +27380,47 @@
                     let {
                         lazyPrivateChannels: t
                     } = e;
-                    eL(t)
+                    eU(t)
                 },
-                LOGOUT: ew,
+                LOGOUT: eH,
                 OVERLAY_INITIALIZE: function(e) {
                     let {
                         readStates: t,
                         selectedChannelId: n
                     } = e;
-                    eg(), e_ = null, ed = n, ec = Y.default.getCurrentSidebarChannelId(ed), eM.clearAll(), t.forEach(e => {
-                        let t = eM.get(e.channelId);
-                        t.deserializeForOverlay(e), t.type === er.ReadStateTypes.CHANNEL && t.rebuildChannelState()
+                    eN(), eh = null, e_ = n, eE = K.default.getCurrentSidebarChannelId(e_), eD.clearAll(), t.forEach(e => {
+                        let t = eD.get(e.channelId);
+                        t.deserializeForOverlay(e), t.type === eu.ReadStateTypes.CHANNEL && t.rebuildChannelState()
                     })
                 },
                 CACHE_LOADED: function(e) {
                     let {
                         readStates: t
                     } = e;
-                    eE = !0, eg(), t.forEach(e => {
+                    ef = !0, eN(), t.forEach(e => {
                         var t;
-                        let n = null !== (t = e.type) && void 0 !== t ? t : er.ReadStateTypes.CHANNEL;
-                        e.type = n, null == eM._readStates[n] && (eM._readStates[n] = {}), eM._readStates[n][e.channelId] = (0, E.dangerouslyCast)(e, eM)
+                        let n = null !== (t = e.type) && void 0 !== t ? t : eu.ReadStateTypes.CHANNEL;
+                        e.type = n, null == eD._readStates[n] && (eD._readStates[n] = {}), eD._readStates[n][e.channelId] = (0, E.dangerouslyCast)(e, eD)
                     })
                 },
                 GUILD_CREATE: function(e) {
                     var t;
                     let {
                         guild: n
-                    } = e, i = eC();
-                    eM.forEach(e => {
+                    } = e, i = em();
+                    eD.forEach(e => {
                         e.guildId === n.id && e.shouldDeleteReadState(i) && e.delete(!1)
-                    }), eL(null !== (t = n.channels) && void 0 !== t ? t : []), eF(n), eU(n)
+                    }), eU(null !== (t = n.channels) && void 0 !== t ? t : []), eV(n), eb(n)
                 },
                 LOAD_MESSAGES_SUCCESS: function(e) {
                     let {
                         channelId: t,
                         isAfter: n,
                         messages: i
-                    } = e, a = eM.get(t);
+                    } = e, a = eD.get(t);
                     a.loadedMessages = !0;
-                    let l = X.default.getMessages(t);
-                    null != l && (i.length > 0 && 1 === x.default.compare(i[0].id, a.ackMessageId) && 0 === a.unreadCount ? a.rebuildChannelState() : l.hasPresent() || l.jumpTargetId === a.ackMessageId ? a.rebuildChannelState() : n && null != a.ackMessageId && l.has(a.ackMessageId, !0) && (a.unreadCount += i.length, null == a.oldestUnreadMessageId && a.rebuildChannelState())), eD(i.map(e => e.thread).filter(H.isNotNullish))
+                    let l = Z.default.getMessages(t);
+                    null != l && (i.length > 0 && 1 === B.default.compare(i[0].id, a.ackMessageId) && 0 === a.unreadCount ? a.rebuildChannelState() : l.hasPresent() || l.jumpTargetId === a.ackMessageId ? a.rebuildChannelState() : n && null != a.ackMessageId && l.has(a.ackMessageId, !0) && (a.unreadCount += i.length, null == a.oldestUnreadMessageId && a.rebuildChannelState())), eP(i.map(e => e.thread).filter(V.isNotNullish))
                 },
                 MESSAGE_CREATE: function(e) {
                     let t, n, {
@@ -27413,37 +27428,37 @@
                             message: l,
                             isPushNotification: s
                         } = e,
-                        r = eM.get(a);
+                        r = eD.get(a);
                     r.lastMessageId = l.id;
-                    let o = et.default.getCurrentUser(),
-                        u = K.default.getBasicChannel(a);
-                    if (null != l.author && null != o && l.author.id === o.id) return null != r.outgoingAck && r.clearOutgoingAck(), eW({
+                    let o = en.default.getCurrentUser(),
+                        u = j.default.getBasicChannel(a);
+                    if (null != l.author && null != o && l.author.id === o.id) return null != r.outgoingAck && r.clearOutgoingAck(), eq({
                         channelId: a,
                         messageId: l.id,
                         manual: !1
                     });
-                    let d = (0, g.getRootNavigationRefIfInExperiment)();
+                    let d = (0, A.getRootNavigationRefIfInExperiment)();
                     if ((null == d ? void 0 : d.isReady()) === !0) {
                         let e = d.getCurrentRoute(),
-                            n = p.default.getChatOpen(r.channelId);
+                            n = T.default.getChatOpen(r.channelId);
                         n ? t = r.channelId : (null == e ? void 0 : e.name) === "channel" && (t = e.params.channelId)
-                    } else null == d && (t = $.default.getChannelId(), n = Y.default.getCurrentSidebarChannelId(t));
+                    } else null == d && (t = ee.default.getChannelId(), n = K.default.getCurrentSidebarChannelId(t));
                     let c = t === a || n === a;
-                    if (c && ev(r) && !s || null != i && i.isInstanceFocused() && c && i.isInstanceUILocked() && i.isPinned(ei.OverlayWidgets.TEXT)) return r.ack({
+                    if (c && eL(r) && !s || null != i && i.isInstanceFocused() && c && i.isInstanceUILocked() && i.isPinned(ea.OverlayWidgets.TEXT)) return r.ack({
                         messageId: l.id
                     });
                     (null == r.oldestUnreadMessageId || r.oldestUnreadMessageIdStale) && (r.oldestUnreadMessageId = l.id), r.unreadCount++;
-                    let _ = null != l.author && J.default.isBlocked(l.author.id) || l.type === ei.MessageTypes.RECIPIENT_REMOVE && (null == u ? void 0 : u.type) === ei.ChannelTypes.GROUP_DM;
-                    !_ && (null != o && (0, R.isRawMessageMentioned)({
+                    let _ = null != l.author && $.default.isBlocked(l.author.id) || l.type === ea.MessageTypes.RECIPIENT_REMOVE && (null == u ? void 0 : u.type) === ea.ChannelTypes.GROUP_DM;
+                    !_ && (null != o && (0, y.isRawMessageMentioned)({
                         rawMessage: l,
                         userId: o.id,
-                        suppressEveryone: ee.default.isSuppressEveryoneEnabled(r.guildId),
-                        suppressRoles: ee.default.isSuppressRolesEnabled(r.guildId)
-                    }) || eO(K.default.getChannel(a))) && r.mentionCount++
+                        suppressEveryone: et.default.isSuppressEveryoneEnabled(r.guildId),
+                        suppressRoles: et.default.isSuppressRolesEnabled(r.guildId)
+                    }) || ey(j.default.getChannel(a))) && r.mentionCount++
                 },
-                MESSAGE_DELETE: eH,
-                MESSAGE_DELETE_BULK: eH,
-                MESSAGE_ACK: eW,
+                MESSAGE_DELETE: ex,
+                MESSAGE_DELETE_BULK: ex,
+                MESSAGE_ACK: eq,
                 CHANNEL_ACK: function(e) {
                     let {
                         channelId: t,
@@ -27452,9 +27467,9 @@
                         force: a = !1,
                         context: l,
                         location: s
-                    } = e, r = eM.get(t), o = r.ack({
+                    } = e, r = eD.get(t), o = r.ack({
                         messageId: n,
-                        local: l !== ei.CURRENT_APP_CONTEXT,
+                        local: l !== ea.CURRENT_APP_CONTEXT,
                         immediate: i,
                         force: a,
                         isExplicitUserAction: !0,
@@ -27465,7 +27480,7 @@
                 CHANNEL_LOCAL_ACK: function(e) {
                     let {
                         channelId: t
-                    } = e, n = eM.get(t);
+                    } = e, n = eD.get(t);
                     return n.ack({
                         messageId: void 0,
                         local: !0,
@@ -27478,35 +27493,35 @@
                     let {
                         channelId: t,
                         timestamp: n
-                    } = e, i = eM.get(t);
+                    } = e, i = eD.get(t);
                     return i.ackPins(n)
                 },
                 CHANNEL_PINS_UPDATE: function(e) {
                     let {
                         channelId: t,
                         lastPinTimestamp: n
-                    } = e, i = eM.get(t), a = eA(n);
+                    } = e, i = eD.get(t), a = eO(n);
                     return i.lastPinTimestamp !== a && (i.lastPinTimestamp = a, !0)
                 },
                 CHANNEL_SELECT: function(e) {
                     let {
                         channelId: t
-                    } = e, n = Y.default.getCurrentSidebarChannelId(t), i = K.default.getChannel(t);
+                    } = e, n = K.default.getCurrentSidebarChannelId(t), i = j.default.getChannel(t);
                     if (null != i) {
                         var a;
-                        let e = eM.get(i.id);
-                        e.ackMessageIdAtChannelSelect = null !== (a = e.ackMessageId) && void 0 !== a ? a : x.default.fromTimestamp(e.getAckTimestamp()), e.recordLastViewedTime()
+                        let e = eD.get(i.id);
+                        e.ackMessageIdAtChannelSelect = null !== (a = e.ackMessageId) && void 0 !== a ? a : B.default.fromTimestamp(e.getAckTimestamp()), e.recordLastViewedTime()
                     }
-                    eK(ed), eK(ec);
+                    eW(e_), eW(eE);
                     let l = !1;
-                    return ed !== t && (l = ej(ed) || l, l = ej(ec) || l), (ed === t || (null == i ? void 0 : i.type) != null && ei.ChannelTypesSets.GUILD_THREADS_ONLY.has(i.type)) && (l = ek(t) || l), ed === t && (l = ek(n) || l), ed = t, ec = n, l
+                    return e_ !== t && (l = ez(e_) || l, l = ez(eE) || l), (e_ === t || (null == i ? void 0 : i.type) != null && ea.ChannelTypesSets.GUILD_THREADS_ONLY.has(i.type)) && (l = eF(t) || l), e_ === t && (l = eF(n) || l), e_ = t, eE = n, l
                 },
                 VOICE_CHANNEL_SELECT: function(e) {
                     let {
                         channelId: t
                     } = e;
                     if (null == t) return;
-                    let n = eM.get(t);
+                    let n = eD.get(t);
                     if (!n.hasMentions()) return n.oldestUnreadMessageId = null, n.ack({
                         isExplicitUserAction: !0
                     })
@@ -27515,27 +27530,27 @@
                     let {
                         channel: t
                     } = e;
-                    if (!(0, G.isReadableType)(t.type)) return !1;
-                    let n = eM.get(t.id);
-                    n.lastMessageId = t.lastMessageId, n.lastPinTimestamp = eA(t.lastPinTimestamp)
+                    if (!(0, k.isReadableType)(t.type)) return !1;
+                    let n = eD.get(t.id);
+                    n.lastMessageId = t.lastMessageId, n.lastPinTimestamp = eO(t.lastPinTimestamp)
                 },
                 THREAD_CREATE: function(e) {
                     let {
                         channel: t
                     } = e;
                     (function(e) {
-                        if (!G.ALL_CHANNEL_TYPES.has(e.type)) return 0;
-                        let t = eM.get(e.id);
-                        t.lastMessageId = e.lastMessageId, t.lastPinTimestamp = eA(e.lastPinTimestamp), t.syncThreadSettings(), e.ownerId === B.default.getId() && (t.loadedMessages = !0)
+                        if (!k.ALL_CHANNEL_TYPES.has(e.type)) return 0;
+                        let t = eD.get(e.id);
+                        t.lastMessageId = e.lastMessageId, t.lastPinTimestamp = eO(e.lastPinTimestamp), t.syncThreadSettings(), e.ownerId === Y.default.getId() && (t.loadedMessages = !0)
                     })(t),
                     function(e) {
                         let t = e.parent_id,
-                            n = eM.get(t);
+                            n = eD.get(t);
                         n.lastMessageId = e.id;
-                        let i = et.default.getCurrentUser();
+                        let i = en.default.getCurrentUser();
                         if (e.ownerId === (null == i ? void 0 : i.id)) {
-                            let n = eM.get(e.id);
-                            n._persisted = !0, eW({
+                            let n = eD.get(e.id);
+                            n._persisted = !0, eq({
                                 channelId: t,
                                 messageId: e.id,
                                 manual: !1
@@ -27547,53 +27562,53 @@
                     let {
                         channel: t
                     } = e;
-                    return !!G.ALL_CHANNEL_TYPES.has(t.type) && eM.get(t.id).syncThreadSettings()
+                    return !!k.ALL_CHANNEL_TYPES.has(t.type) && eD.get(t.id).syncThreadSettings()
                 },
                 THREAD_LIST_SYNC: function(e) {
                     let {
                         threads: t
                     } = e;
                     t.forEach(e => {
-                        if (!G.ALL_CHANNEL_TYPES.has(e.type)) return;
-                        let t = eM.get(e.id);
-                        if (t.lastMessageId = e.lastMessageId, t.lastPinTimestamp = eA(e.lastPinTimestamp), t._isThread = !0, t._isActiveThread = !0, t._isJoinedThread = U.default.hasJoined(e.id), e.isForumPost()) {
-                            let t = eM.get(e.parent_id);
-                            0 > x.default.compare(t.lastMessageId, e.id) && (t.lastMessageId = e.id)
+                        if (!k.ALL_CHANNEL_TYPES.has(e.type)) return;
+                        let t = eD.get(e.id);
+                        if (t.lastMessageId = e.lastMessageId, t.lastPinTimestamp = eO(e.lastPinTimestamp), t._isThread = !0, t._isActiveThread = !0, t._isJoinedThread = P.default.hasJoined(e.id), e.isForumPost()) {
+                            let t = eD.get(e.parent_id);
+                            0 > B.default.compare(t.lastMessageId, e.id) && (t.lastMessageId = e.id)
                         }
                     })
                 },
-                LOAD_THREADS_SUCCESS: eV,
-                LOAD_ARCHIVED_THREADS_SUCCESS: eV,
+                LOAD_THREADS_SUCCESS: eB,
+                LOAD_ARCHIVED_THREADS_SUCCESS: eB,
                 SEARCH_FINISH: function(e) {
                     let {
                         messages: t,
                         threads: n
                     } = e;
-                    for (let e of t) eD(e.map(e => {
+                    for (let e of t) eP(e.map(e => {
                         let {
                             thread: t
                         } = e;
                         return t
-                    }).filter(H.isNotNullish));
-                    eD(n)
+                    }).filter(V.isNotNullish));
+                    eP(n)
                 },
                 THREAD_MEMBER_UPDATE: function(e) {
                     let {
                         id: t
                     } = e;
-                    return eM.get(t).syncThreadSettings()
+                    return eD.get(t).syncThreadSettings()
                 },
                 THREAD_MEMBERS_UPDATE: function(e) {
-                    return (0, P.doesThreadMembersActionAffectMe)(e) && eM.get(e.id).syncThreadSettings()
+                    return (0, b.doesThreadMembersActionAffectMe)(e) && eD.get(e.id).syncThreadSettings()
                 },
-                CHANNEL_DELETE: eB,
-                THREAD_DELETE: eB,
+                CHANNEL_DELETE: eK,
+                THREAD_DELETE: eK,
                 WINDOW_FOCUS: function(e) {
                     let t = !1;
-                    for (let [n, i] of Object.entries(eT)) i === e.windowId && (t = function(e, t) {
+                    for (let [n, i] of Object.entries(eS)) i === e.windowId && (t = function(e, t) {
                         if (null == e) return !1;
-                        let n = eM.get(e);
-                        return !t && !n.hasUnread() && (n.oldestUnreadMessageIdStale = !0), ek(e)
+                        let n = eD.get(e);
+                        return !t && !n.hasUnread() && (n.oldestUnreadMessageIdStale = !0), eF(e)
                     }(n, e.focused) || t);
                     return t
                 },
@@ -27601,33 +27616,33 @@
                     let {
                         channelId: t
                     } = e;
-                    return ek(t)
+                    return eF(t)
                 },
                 CURRENT_USER_UPDATE: function() {
-                    e_ = null
+                    eh = null
                 },
                 DRAWER_OPEN: function() {
-                    if (null != ed) {
-                        let e = eM.get(ed);
+                    if (null != e_) {
+                        let e = eD.get(e_);
                         !e.hasUnread() && (e.oldestUnreadMessageIdStale = !0)
                     }
                     return !1
                 },
                 DRAWER_CLOSE: function() {
-                    return ek(ed)
+                    return eF(e_)
                 },
                 BULK_ACK: function(e) {
                     var t, n;
                     let {
                         channels: i,
                         context: a
-                    } = e, l = i.filter(e => null != e.messageId && eX.hasUnread(e.channelId, e.readStateType));
+                    } = e, l = i.filter(e => null != e.messageId && eJ.hasUnread(e.channelId, e.readStateType));
                     t = l, n = a, t.forEach(e => {
                         let {
                             channelId: t,
                             messageId: n,
                             readStateType: i
-                        } = e, a = eM.get(t, i);
+                        } = e, a = eD.get(t, i);
                         a.ack({
                             messageId: n,
                             local: !0,
@@ -27635,76 +27650,76 @@
                             force: void 0,
                             isExplicitUserAction: !0
                         })
-                    }), n !== ei.CURRENT_APP_CONTEXT || (eh.push(...t.map(e => ({
+                    }), n !== ea.CURRENT_APP_CONTEXT || (ep.push(...t.map(e => ({
                         channel_id: e.channelId,
                         message_id: e.messageId,
                         read_state_type: e.readStateType
-                    }))), ef || eR())
+                    }))), eT || ev())
                 },
                 ENABLE_AUTOMATIC_ACK: function(e) {
                     let {
                         channelId: t,
                         windowId: n
                     } = e;
-                    return eT[t] !== n && (r(void 0 === eT[t], "handleEnableAutomaticAck: channel already visible in another window"), eT[t] = n, ek(t))
+                    return eS[t] !== n && (r(void 0 === eS[t], "handleEnableAutomaticAck: channel already visible in another window"), eS[t] = n, eF(t))
                 },
                 DISABLE_AUTOMATIC_ACK: function(e) {
                     let {
                         channelId: t
                     } = e;
-                    return eT[t] = void 0, !1
+                    return eS[t] = void 0, !1
                 },
-                GUILD_FEATURE_ACK: ez,
+                GUILD_FEATURE_ACK: eQ,
                 GUILD_SCHEDULED_EVENT_CREATE: function(e) {
                     let {
                         guildScheduledEvent: t
-                    } = e, n = t.guild_id, i = eM.get(t.guild_id, er.ReadStateTypes.GUILD_EVENT);
-                    if (i.lastMessageId = t.id, ex(t)) {
-                        ez({
+                    } = e, n = t.guild_id, i = eD.get(t.guild_id, eu.ReadStateTypes.GUILD_EVENT);
+                    if (i.lastMessageId = t.id, eY(t)) {
+                        eQ({
                             type: "GUILD_FEATURE_ACK",
                             id: n,
-                            ackType: er.ReadStateTypes.GUILD_EVENT,
+                            ackType: eu.ReadStateTypes.GUILD_EVENT,
                             ackedId: t.id,
                             local: !1
                         });
                         return
-                    }!ee.default.isMuteScheduledEventsEnabled(n) && i.mentionCount++
+                    }!et.default.isMuteScheduledEventsEnabled(n) && i.mentionCount++
                 },
                 GUILD_SCHEDULED_EVENT_UPDATE: function(e) {
                     let {
                         guildScheduledEvent: t
                     } = e, n = t.guild_id;
-                    if (ex(t) || ![el.GuildScheduledEventStatus.CANCELED, el.GuildScheduledEventStatus.COMPLETED].includes(t.status)) return !1;
-                    let i = eM.get(n, er.ReadStateTypes.GUILD_EVENT);
+                    if (eY(t) || ![er.GuildScheduledEventStatus.CANCELED, er.GuildScheduledEventStatus.COMPLETED].includes(t.status)) return !1;
+                    let i = eD.get(n, eu.ReadStateTypes.GUILD_EVENT);
                     i.handleGuildEventRemoval(n, t.id)
                 },
                 GUILD_SCHEDULED_EVENT_DELETE: function(e) {
                     let {
                         guildScheduledEvent: t
                     } = e, n = t.guild_id;
-                    if (ex(t)) return !1;
-                    let i = eM.get(t.guild_id, er.ReadStateTypes.GUILD_EVENT);
+                    if (eY(t)) return !1;
+                    let i = eD.get(t.guild_id, eu.ReadStateTypes.GUILD_EVENT);
                     i.handleGuildEventRemoval(n, t.id)
                 },
                 GUILD_DELETE: function(e) {
                     let {
                         guild: t
                     } = e;
-                    return eM.clear(t.id, er.ReadStateTypes.GUILD_EVENT)
+                    return eD.clear(t.id, eu.ReadStateTypes.GUILD_EVENT)
                 },
                 GUILD_UPDATE: function(e) {
                     let {
                         guild: t
                     } = e, n = t.latest_onboarding_question_id;
                     if (null == n) return;
-                    let i = eM.get(t.id, er.ReadStateTypes.GUILD_ONBOARDING_QUESTION);
+                    let i = eD.get(t.id, eu.ReadStateTypes.GUILD_ONBOARDING_QUESTION);
                     i._guildId = t.id, i.lastMessageId = n
                 },
                 RESORT_THREADS: function(e) {
                     let {
                         channelId: t
                     } = e;
-                    return ek(t)
+                    return eF(t)
                 },
                 CHANNEL_RTC_UPDATE_CHAT_OPEN: function(e) {
                     let {
@@ -27712,38 +27727,38 @@
                         chatOpen: n
                     } = e
                 },
-                DECAY_READ_STATES: eg,
+                DECAY_READ_STATES: eN,
                 NOTIFICATION_CENTER_ITEM_CREATE: function(e) {
                     var t;
                     let {
                         item: n
                     } = e;
-                    if (!(0, v.inNotificationCenterEnabled)()) return !1;
-                    let i = null === (t = et.default.getCurrentUser()) || void 0 === t ? void 0 : t.id;
+                    if (!(0, M.inNotificationCenterEnabled)()) return !1;
+                    let i = null === (t = en.default.getCurrentUser()) || void 0 === t ? void 0 : t.id;
                     if (null == i) return !1;
-                    let a = eM.get(i, er.ReadStateTypes.NOTIFICATION_CENTER);
+                    let a = eD.get(i, eu.ReadStateTypes.NOTIFICATION_CENTER);
                     a.lastMessageId = n.id;
-                    if (0, y.default.active) {
-                        eq(i, er.ReadStateTypes.NOTIFICATION_CENTER, n.id, !1);
+                    if (0, v.default.active) {
+                        eX(i, eu.ReadStateTypes.NOTIFICATION_CENTER, n.id, !1);
                         return
                     }
                     a.mentionCount++
                 },
                 RELATIONSHIP_ADD: function(e) {
-                    let t = et.default.getCurrentUser();
-                    if (!(0, v.inNotificationCenterEnabled)() || null == t || null == e.relationship.since || e.relationship.type !== ei.RelationshipTypes.PENDING_INCOMING && e.relationship.type !== ei.RelationshipTypes.FRIEND) return !1;
-                    let n = eM.get(t.id, er.ReadStateTypes.NOTIFICATION_CENTER),
-                        i = e.relationship.type === ei.RelationshipTypes.FRIEND,
+                    let t = en.default.getCurrentUser();
+                    if (!(0, M.inNotificationCenterEnabled)() || null == t || null == e.relationship.since || e.relationship.type !== ea.RelationshipTypes.PENDING_INCOMING && e.relationship.type !== ea.RelationshipTypes.FRIEND) return !1;
+                    let n = eD.get(t.id, eu.ReadStateTypes.NOTIFICATION_CENTER),
+                        i = e.relationship.type === ea.RelationshipTypes.FRIEND,
                         a = i ? new Date(Date.now()).getTime() : new Date(e.relationship.since).getTime(),
-                        l = null != n.ackMessageId ? x.default.extractTimestamp(n.ackMessageId) : 0;
-                    l < a && (n.lastMessageId = x.default.fromTimestamp(a), (0, y.default.active) ? eq(t.id, er.ReadStateTypes.NOTIFICATION_CENTER, void 0, !1) : i ? n.mentionCount-- : n.mentionCount++)
+                        l = null != n.ackMessageId ? B.default.extractTimestamp(n.ackMessageId) : 0;
+                    l < a && (n.lastMessageId = B.default.fromTimestamp(a), (0, v.default.active) ? eX(t.id, eu.ReadStateTypes.NOTIFICATION_CENTER, void 0, !1) : i ? n.mentionCount-- : n.mentionCount++)
                 },
                 RELATIONSHIP_REMOVE: function(e) {
-                    let t = et.default.getCurrentUser();
-                    if (!(0, v.inNotificationCenterEnabled)() || null == t || null == e.relationship.since || e.relationship.type !== ei.RelationshipTypes.PENDING_INCOMING) return !1;
-                    let n = eM.get(t.id, er.ReadStateTypes.NOTIFICATION_CENTER),
+                    let t = en.default.getCurrentUser();
+                    if (!(0, M.inNotificationCenterEnabled)() || null == t || null == e.relationship.since || e.relationship.type !== ea.RelationshipTypes.PENDING_INCOMING) return !1;
+                    let n = eD.get(t.id, eu.ReadStateTypes.NOTIFICATION_CENTER),
                         i = new Date(e.relationship.since).getTime(),
-                        a = null != n.ackMessageId ? x.default.extractTimestamp(n.ackMessageId) : 0;
+                        a = null != n.ackMessageId ? B.default.extractTimestamp(n.ackMessageId) : 0;
                     a <= i && (n.mentionCount = Math.max(0, n.mentionCount - 1))
                 },
                 NOTIFICATION_CENTER_ITEMS_ACK: function(e) {
@@ -27752,12 +27767,12 @@
                         ids: n,
                         optimistic: i
                     } = e;
-                    if (i || !(0, v.inNotificationCenterEnabled)() || y.default.active) return !1;
-                    let a = null === (t = et.default.getCurrentUser()) || void 0 === t ? void 0 : t.id;
+                    if (i || !(0, M.inNotificationCenterEnabled)() || v.default.active) return !1;
+                    let a = null === (t = en.default.getCurrentUser()) || void 0 === t ? void 0 : t.id;
                     if (null == a) return !1;
-                    let l = eM.get(a, er.ReadStateTypes.NOTIFICATION_CENTER);
+                    let l = eD.get(a, eu.ReadStateTypes.NOTIFICATION_CENTER);
                     n.forEach(e => {
-                        0 > x.default.compare(l.ackMessageId, e) && (l.mentionCount = Math.max(l.mentionCount - 1, 0))
+                        0 > B.default.compare(l.ackMessageId, e) && (l.mentionCount = Math.max(l.mentionCount - 1, 0))
                     })
                 },
                 USER_NON_CHANNEL_ACK: function(e) {
@@ -27766,15 +27781,15 @@
                         ackType: n,
                         ackedId: i,
                         local: a
-                    } = e, l = null === (t = et.default.getCurrentUser()) || void 0 === t ? void 0 : t.id;
-                    return null != l && eq(l, n, i, a)
+                    } = e, l = null === (t = en.default.getCurrentUser()) || void 0 === t ? void 0 : t.id;
+                    return null != l && eX(l, n, i, a)
                 },
                 PASSIVE_UPDATE_V1: function(e) {
                     var t;
                     let n = !1;
                     for (let i of null !== (t = e.channels) && void 0 !== t ? t : []) {
-                        let e = eM.get(i.id),
-                            t = eA(i.lastPinTimestamp);
+                        let e = eD.get(i.id),
+                            t = eO(i.lastPinTimestamp);
                         (e.lastMessageId !== i.lastMessageId || e.lastPinTimestamp !== t) && (n = !0, e.lastMessageId = i.lastMessageId, e.lastPinTimestamp = t)
                     }
                     return n
@@ -27783,10 +27798,10 @@
                     let {
                         channelId: t
                     } = e;
-                    return ej(t)
+                    return ez(t)
                 }
             });
-            var eZ = eX
+            var e$ = eJ
         },
         744983: function(e, t, n) {
             "use strict";
@@ -33540,4 +33555,4 @@
         }
     }
 ]);
-//# sourceMappingURL=16b02bdaf47e5fb3a783.js.map
+//# sourceMappingURL=e209e25ec605d39c3272.js.map

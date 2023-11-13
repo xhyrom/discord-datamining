@@ -31435,12 +31435,12 @@
                 get callHeaderHeight() {
                     return m.callHeaderHeight
                 }
-                get activityPanelHeight() {
-                    return m.activityPanelHeight
-                }
                 get useSystemTheme() {
                     var e;
                     return null !== (e = m.useSystemTheme) && void 0 !== e ? e : h.SystemThemeState.UNSET
+                }
+                get activityPanelHeight() {
+                    return m.activityPanelHeight
                 }
                 get useAMOLEDTheme() {
                     var e;
@@ -49049,7 +49049,7 @@
                         var i;
                         let d = {
                                 environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                                build_number: "245307"
+                                build_number: "245313"
                             },
                             h = l.default.getCurrentUser();
                         null != h && (d.user_id = h.id, d.user_name = h.tag, null != h.email && (d.email = h.email));
@@ -62299,4 +62299,4 @@
         }
     }
 ]);
-//# sourceMappingURL=e85de184a96622291cfc.js.map
+//# sourceMappingURL=c8935d78fb9224550b1d.js.map
