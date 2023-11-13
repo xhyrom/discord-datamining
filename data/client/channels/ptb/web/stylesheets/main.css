@@ -19395,8 +19395,8 @@ input[type=checkbox]:focus-visible+.label_ee78c3 {
 
 .message__13e98 {
     font-weight: 500;
-    font-size: 16px;
-    line-height: 20px;
+    font-size: 1rem;
+    line-height: 1.25rem;
     white-space: nowrap;
     text-overflow: ellipsis;
     overflow: hidden
@@ -53213,50 +53213,6 @@ html .progress__4ef76 {
 
 .switchAccountsIcon__18618 {
     margin-left: -2px
-}
-
-.shopArt__2bac7 {
-    background: var(--black-500)url(/assets/91541de57302ebd24644.svg)50%58px no-repeat;
-    height: 237px;
-    width: 100%;
-    border-radius: var(--radius-sm);
-    align-self: center;
-    -o-object-fit: cover;
-    object-fit: cover;
-    position: relative;
-    display: flex;
-    flex-direction: column
-}
-
-.logo__784f8 {
-    margin: 16px auto 0
-}
-
-.avatars__78e86 {
-    position: relative;
-    flex: 1;
-    height: 100px
-}
-
-.avatar1__82f1d {
-    position: absolute;
-    transform: scale(.925)rotate(-18.81deg);
-    left: 25px;
-    top: 17px
-}
-
-.avatar2_f8b5a4 {
-    position: absolute;
-    transform: scale(.8125)rotate(15deg);
-    right: 17px;
-    top: 26px
-}
-
-.avatar3_d276d3 {
-    position: absolute;
-    transform: scale(.778)rotate(-5.441deg);
-    left: 82px;
-    bottom: 10px
 }
 
 .art_eaee27 {
@@ -123233,4 +123189,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=app.ba184c9cc7c3a8cd1ae3.css.map*/
+/*# sourceMappingURL=app.061d03df2e45e9088872.css.map*/
