@@ -4,11 +4,11 @@
 <p>However, because protecting our users is a top priority, when we become aware of a user engaging in repeated violations or particularly egregious harms, we will take swift action to permanently remove that user and the violating content.</p>
 <p><span class="wysiwyg-font-size-large"><strong>What this article covers:</strong></span></p>
 <ul>
-    <li><a href="#h_01HD4SVGAFKAQKYVGEBHS14HSQ">Violations</a></li>
-    <li><a href="#h_01HD4SVGAF2KT4AG7NH8BJBFKV">Account Standing</a></li>
-    <li><a href="#h_01HD4SVGAFZKN50P6BHNPPFFR0">Warnings</a></li>
-    <li><a href="#h_01HD4SXRQB3DVNPA6BKY6JZ677">Submitting Feedback</a></li>
-    <li><a href="#h_01HD4SVGAF50M8WFGS4W75W34E">Frequently Asked Questions</a></li>
+    <li><a href="https://support.discord.com/hc/en-us/articles/18210965981847#h_01HD4SVGAFKAQKYVGEBHS14HSQ">Violations</a></li>
+    <li><a href="https://support.discord.com/hc/en-us/articles/18210965981847#h_01HD4SVGAF2KT4AG7NH8BJBFKV">Account Standing</a></li>
+    <li><a href="https://support.discord.com/hc/en-us/articles/18210965981847#h_01HD4SVGAFZKN50P6BHNPPFFR0">Warnings</a></li>
+    <li><a href="https://support.discord.com/hc/en-us/articles/18210965981847#h_01HD4SXRQB3DVNPA6BKY6JZ677">Submitting Feedback</a></li>
+    <li><a href="https://support.discord.com/hc/en-us/articles/18210965981847#h_01HD4SVGAF50M8WFGS4W75W34E">Frequently Asked Questions</a></li>
 </ul>
 <h1 id="h_01HD4SVGAFKAQKYVGEBHS14HSQ">Violations</h1>
 <p>Users who break the rules will receive a system direct message (DM) from Discord letting them know they received a violation. Users will receive a DM each time they break our rules. </p>
@@ -24,12 +24,12 @@
 <p>Our system determines a relevant and specific set of actions to take for a particular violation of our policies. When weighing what action to take, we consider the severity of the harm, the type of user content (i.e. text, image, behavior), and the user’s history of past violations.</p>
 <p>For example, if a user posted an image that broke the rules, they may temporarily lose the ability to post images. If the violation was not particularly severe, they may lose these features for a few hours. If it was a repeated violation or higher severity violation, they may lose some features for a few days or up to one year. </p>
 <p>For the most severe harms, users will be immediately subject to a permanent suspension and should look to their email inbox for more information from Discord.</p>
-<p class="wysiwyg-text-align-center"><span style="background-color: #d9d9d9;"><img src="https://support.discord.com/hc/article_attachments/18514409328919" alt="warningsystem-viomodal-redacted_desktop.png"></span></p>
+<p class="wysiwyg-text-align-center"><span style="background-color: #d9d9d9;" data-darkreader-inline-bgcolor=""><img src="https://support.discord.com/hc/article_attachments/18514409328919" alt="warningsystem-viomodal-redacted_desktop.png"></span></p>
 <h4 id="h_01HDFQQK45BC3XJVHHCV6M3MHT" class="wysiwyg-text-align-center">Desktop</h4>
 <p class="wysiwyg-text-align-center"><img src="https://support.discord.com/hc/article_attachments/18514409329815" alt="warningsystem-viomodal-redacted_mobile.png" width="376" height="913"></p>
 <h4 id="h_01HDFQR66KPTDBF83KECF8P0ZQ" class="wysiwyg-text-align-center">Mobile</h4>
 <h1 id="h_01HD4SVGAF2KT4AG7NH8BJBFKV">Account Standing</h1>
-<p class="wysiwyg-text-align-center"><span style="background-color: #d9d9d9;"><img src="https://support.discord.com/hc/article_attachments/18514409330967" alt="warningsystem-accountstanding-redacted_desktop.png"></span></p>
+<p class="wysiwyg-text-align-center"><span style="background-color: #d9d9d9;" data-darkreader-inline-bgcolor=""><img src="https://support.discord.com/hc/article_attachments/18514409330967" alt="warningsystem-accountstanding-redacted_desktop.png"></span></p>
 <p>Users will be able to see their account’s standing with Discord in their <strong>Privacy &amp; Safety</strong> settings. For most users, they will see that they’re all good, and not much else. </p>
 <p>When users break our rules and receive a violation, they will be brought to the <strong>Account Standing</strong> section. This section will show users a summary of their violations and how they have affected their standing. Repeated violations will add up to trigger increasingly strong penalties, up to permanent suspensions.</p>
 <p>Users will be able to see where they stand based on their track record. Since we weigh each violation based on the severity of the harm, a user does not have a fixed number of chances before they receive a harsher penalty. Where they stand will depend on the severity of the violation.</p>
@@ -45,7 +45,7 @@
 <p>After violations expire, they can still be viewed in the <strong>Expired Violation</strong> section</p>
 <h1 id="h_01HD4SVGAFZKN50P6BHNPPFFR0">Warnings</h1>
 <p>Discord will continue to send warnings to users that inform them of our rules. We may send warnings when a user was in a server that broke our rules or if they interacted with content that broke our rules, but did not engage in the violating behavior themselves.</p>
-<p class="wysiwyg-text-align-center"><span style="background-color: #d9d9d9;"><img src="https://support.discord.com/hc/article_attachments/18514403350423" alt="warningsystem_DM.png"></span></p>
+<p class="wysiwyg-text-align-center"><span style="background-color: #d9d9d9;" data-darkreader-inline-bgcolor=""><img src="https://support.discord.com/hc/article_attachments/18514403350423" alt="warningsystem_DM.png"></span></p>
 <p>Warnings will come via a system DM and will contain information about what happened and more information about our rules. Warnings do not impact account standing but are still important for users to understand our rules so they can correct future behavior.  These warnings are similar to those that Discord has sent in the past.</p>
 <h1 id="h_01HD4SXRQB3DVNPA6BKY6JZ677">Submitting Feedback</h1>
 <p>Sometimes we get it wrong. Every violation notice includes a link to our webform, where users can provide feedback or ask that Discord review a violation and penalty applied to their account. While it may take time to respond to every request, we prioritize helping users that believe they have been permanently suspended in error.</p>
@@ -68,3 +68,6 @@
 <p id="h_01HD4SVGAF9XK56K6QNR5VYCHV"><strong>Q:</strong> What’s the difference between a violation and a warning?</p>
 <p><strong>A: </strong>Discord issues violations when we become aware of users who have broken our rules. Discord will take action on their account and their account standing will be impacted. The intervention depends on each unique violation. The account standing impact depends both on the unique violation and culmination of active violations. </p>
 <p>Warnings may be issued when a user was in a server that broke our rules or engaged with content that broke our rules, but the user did not do anything themselves. Warnings do not affect account standing. They provide users with more information about the rules.</p>
+<p><strong>Q:</strong> Are you now scanning all my messages in servers, GDMs and DMs? </p>
+<p><strong>A:</strong> Warning System doesn’t introduce any new scanning of content or messages. This feature is a new way for users to have more transparency into Discord content moderation decisions and the status of their account. </p>
+<p>As described in our Terms of Service and Privacy Policy, Discord does scan all spaces for high harm content like malware and child sexual abuse material, and we may scan for other policy violations in large communities. We do <em>not</em> scan all content in smaller spaces–such as direct messages (DM) and small/non-community servers–for other violations of our Community Guidelines.</p>
