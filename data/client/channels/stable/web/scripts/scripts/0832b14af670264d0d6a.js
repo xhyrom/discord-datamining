@@ -606,6 +606,18 @@
                             }), t
                         })
                     },
+                    sendPollMessage(e, t) {
+                        let n = arguments.length > 2 && void 0 !== arguments[2] ? arguments[2] : {};
+                        return eS._sendMessage(e, {
+                            content: "",
+                            tts: !1,
+                            validNonShortcutEmojis: [],
+                            invalidEmojis: []
+                        }, {
+                            ...n,
+                            poll: t
+                        })
+                    },
                     _sendMessage(e, t, n) {
                         var s, l;
                         let r = (0, P.default)(e);
@@ -624,23 +636,24 @@
                                 suggestedInvite: M,
                                 stickerIds: p,
                                 messageReference: A,
-                                allowedMentions: I
+                                allowedMentions: I,
+                                poll: L
                             } = n,
-                            L = null !== (s = n.flags) && void 0 !== s ? s : 0,
-                            [D, N] = (0, B.default)(o);
-                        if (D && (o = N, L = (0, en.addFlag)(L, ed.MessageFlags.SUPPRESS_NOTIFICATIONS)), "" === o && null == _ && null == p) return Promise.reject(Error("not sending empty message"));
-                        let b = null != A ? ed.MessageTypes.REPLY : ed.MessageTypes.DEFAULT,
-                            w = null !== (l = n.nonce) && void 0 !== l ? l : (0, y.createNonce)();
+                            D = null !== (s = n.flags) && void 0 !== s ? s : 0,
+                            [N, b] = (0, B.default)(o);
+                        if (N && (o = b, D = (0, en.addFlag)(D, ed.MessageFlags.SUPPRESS_NOTIFICATIONS)), "" === o && null == _ && null == p && null == L) return Promise.reject(Error("not sending empty message"));
+                        let w = null != A ? ed.MessageTypes.REPLY : ed.MessageTypes.DEFAULT,
+                            F = null !== (l = n.nonce) && void 0 !== l ? l : (0, y.createNonce)();
                         if (!1 !== n.eagerDispatch) {
                             let t = (0, y.default)({
                                 channelId: e,
                                 content: o,
                                 tts: f,
-                                type: b,
+                                type: w,
                                 messageReference: A,
                                 allowedMentions: I,
-                                flags: 0 !== L ? L : void 0,
-                                nonce: w
+                                flags: 0 !== D ? D : void 0,
+                                nonce: F
                             });
                             (0, G.updateComboOnMessageSend)(e, t.id), null != p && (t.sticker_items = p.map(e => k.default.getStickerById(e)).filter(e => null != e)), eS.receiveMessage(e, t, !0, n)
                         }
@@ -652,16 +665,16 @@
                                 channelId: e
                             }) ? (t = ec.default.Messages.INVALID_EXTERNAL_EMOJI_BODY_UPGRADE, n = "INVALID_EXTERNAL_EMOJI_BODY_UPGRADE") : (t = ec.default.Messages.INVALID_EXTERNAL_EMOJI_BODY, n = "INVALID_EXTERNAL_EMOJI_BODY"), eS.sendBotMessage(e, t, n)
                         }
-                        let F = {
+                        let H = {
                             type: d.MessageDataType.SEND,
                             message: {
                                 channelId: e,
                                 content: o,
-                                nonce: w,
+                                nonce: F,
                                 tts: f,
                                 message_reference: A,
                                 allowed_mentions: I,
-                                flags: L
+                                flags: D
                             }
                         };
                         if (null != _) {
@@ -674,21 +687,21 @@
                                     {
                                         activity: n
                                     } = _;
-                                null != n.party && null != n.party.id && (t.party_id = n.party.id), F.message.application_id = n.application_id, F.message.activity = t
+                                null != n.party && null != n.party.id && (t.party_id = n.party.id), H.message.application_id = n.application_id, H.message.activity = t
                             }
                         }
-                        return null != p && (F.message.sticker_ids = p), U.default.isEnabled() && (F.message.has_poggermode_enabled = !0), (0, g.default)(e) && (F.message.allow_proactive_clyde_reply = !0), new Promise((t, s) => {
+                        return null != L && (H.message.poll = L), null != p && (H.message.sticker_ids = p), U.default.isEnabled() && (H.message.has_poggermode_enabled = !0), (0, g.default)(e) && (H.message.allow_proactive_clyde_reply = !0), new Promise((t, s) => {
                             let l = Date.now(),
                                 r = d.default.length,
                                 c = Math.floor(1e4 * Math.random());
-                            ef.info("Queueing message to be sent LogId:".concat(c)), d.default.enqueue(F, d => {
+                            ef.info("Queueing message to be sent LogId:".concat(c)), d.default.enqueue(H, d => {
                                 let c = Date.now() - l;
                                 if (d.ok) v.default.donateSentMessage(o, e), eS.receiveMessage(e, d.body, !0, {
                                     sendAnalytics: {
                                         duration: c,
                                         queueSize: r
                                     }
-                                }), O.default.recordMessageSendApiResponse(w), i.default.dispatch({
+                                }), O.default.recordMessageSendApiResponse(F), i.default.dispatch({
                                     type: "SLOWMODE_RESET_COOLDOWN",
                                     slowmodeType: $.SlowmodeType.SendMessage,
                                     channelId: e
@@ -786,7 +799,7 @@
                                             })
                                         } else C.AUTOMOD_ERROR_CODES.has(d.body.code) ? i.default.dispatch({
                                             type: "MESSAGE_SEND_FAILED_AUTOMOD",
-                                            messageData: F,
+                                            messageData: H,
                                             errorResponseBody: {
                                                 code: d.body.code,
                                                 message: d.body.message
@@ -795,13 +808,13 @@
                                             type: "POGGERMODE_TEMPORARILY_DISABLED"
                                         }) : d.body.code === ed.AbortCodes.CLYDE_CONSENT_REQUIRED ? i.default.dispatch({
                                             type: "MESSAGE_FAILED_CLYDE_CONSENT",
-                                            messageId: w,
+                                            messageId: F,
                                             channelId: e
                                         }) : eS.sendClydeError(e, d.body.code)
                                     }
-                                    t ? eS.deleteMessage(e, w, !0) : (i.default.dispatch({
+                                    t ? eS.deleteMessage(e, F, !0) : (i.default.dispatch({
                                         type: "MESSAGE_SEND_FAILED",
-                                        messageId: w,
+                                        messageId: F,
                                         channelId: e
                                     }), (0, R.logMessageSendFailure)({
                                         failureCode: d.hasErr ? void 0 : d.status,
@@ -2008,11 +2021,12 @@
                     allowedMentions: f,
                     author: _,
                     flags: g,
-                    nonce: h
-                } = e, m = [];
+                    nonce: h,
+                    poll: m
+                } = e, S = [];
                 if (d === u.MessageTypes.REPLY && (s(null != E, "Replies must have a message reference"), null == f || f.replied_user)) {
                     let e = l.default.getMessageByReference(E);
-                    (null == e ? void 0 : e.state) === l.ReferencedMessageState.LOADED && m.push(c(e.message.author))
+                    (null == e ? void 0 : e.state) === l.ReferencedMessageState.LOADED && S.push(c(e.message.author))
                 }
                 return null == _ && (_ = r.default.getCurrentUser()), _ instanceof i.default && (_ = c(_)), s(null != _, "createMessage: author cannot be undefined"), {
                     id: null != h ? h : o(),
@@ -2023,7 +2037,7 @@
                     attachments: [],
                     embeds: [],
                     pinned: !1,
-                    mentions: m,
+                    mentions: S,
                     mention_channels: [],
                     mention_roles: [],
                     mention_everyone: !1,
@@ -2032,7 +2046,8 @@
                     tts: a,
                     message_reference: E,
                     flags: g,
-                    nonce: h
+                    nonce: h,
+                    poll: m
                 }
             }
 
@@ -3107,4 +3122,4 @@
         }
     }
 ]);
-//# sourceMappingURL=eefc786dd2836b085546.js.map
+//# sourceMappingURL=0832b14af670264d0d6a.js.map

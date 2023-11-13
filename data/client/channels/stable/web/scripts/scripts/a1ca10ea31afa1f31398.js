@@ -2502,6 +2502,9 @@
                 some(e, t) {
                     return this._array.some(e, t)
                 }
+                filter(e, t) {
+                    return this._array.filter(e, t)
+                }
                 forAll(e, t) {
                     this._before.forEach(e, t), this._array.forEach(e, t), this._after.forEach(e, t)
                 }
@@ -6977,21 +6980,6 @@
                     });
                     return !!n && i
                 }
-        },
-        18346: function(e, t, n) {
-            "use strict";
-            n.r(t), n.d(t, {
-                default: function() {
-                    return s
-                }
-            });
-            var i = n("42887"),
-                a = n("773336"),
-                l = n("353927");
-
-            function s() {
-                return a.isDesktop() && i.default.getMediaEngine().supports(l.Features.CLIPS)
-            }
         },
         139514: function(e, t, n) {
             "use strict";
@@ -23155,7 +23143,7 @@
             let i, a, l, s;
             n.r(t), n.d(t, {
                 default: function() {
-                    return P
+                    return b
                 }
             }), n("222007"), n("424973"), n("808653");
             var r = n("446674"),
@@ -23176,18 +23164,19 @@
                 g = n("49111"),
                 A = n("706530");
             let N = null,
-                O = {};
+                O = {},
+                R = null;
 
-            function R() {
+            function y() {
                 i = new Map, a = {}, l = {}, s = {}, O = {}
             }
-            R();
+            y();
 
-            function y(e) {
+            function v(e) {
                 i.delete(e)
             }
 
-            function v() {
+            function M() {
                 let e = [];
                 for (let t in a) {
                     let n = a[t];
@@ -23196,7 +23185,7 @@
                 return e
             }
 
-            function M(e) {
+            function L(e) {
                 let {
                     streamKey: t,
                     region: n,
@@ -23213,17 +23202,17 @@
                 }
             }
 
-            function L(e, t) {
+            function D(e, t) {
                 return e === A.StreamTypes.CALL || T.default.canWithPartialContext(g.Permissions.VIEW_CHANNEL, {
                     channelId: t
                 })
             }
 
-            function D(e) {
+            function U(e) {
                 let t = h.default.getChannel(e.channelId);
-                return !!L(e.streamType, e.channelId) || null != t && (0, c.canWatchStream)(t, I.default, f.default, T.default, u.default)[0]
+                return !!D(e.streamType, e.channelId) || null != t && (0, c.canWatchStream)(t, I.default, f.default, T.default, u.default)[0]
             }
-            class U extends r.default.Store {
+            class P extends r.default.Store {
                 initialize() {
                     this.syncWith([T.default], () => !0), this.waitFor(m.default, T.default)
                 }
@@ -23273,23 +23262,23 @@
                     var t;
                     if (!(0, _.default)(p.default)) return null;
                     let n = a[e];
-                    return null == n ? null : null !== (t = Object.values(n).find(e => D(e))) && void 0 !== t ? t : null
+                    return null == n ? null : null !== (t = Object.values(n).find(e => U(e))) && void 0 !== t ? t : null
                 }
                 getStreamForUser(e, t) {
                     var n;
                     if (!(0, _.default)(p.default)) return null;
                     let i = null === (n = a[e]) || void 0 === n ? void 0 : n[null != t ? t : "null"];
-                    return null != i && D(i) ? i : null
+                    return null != i && U(i) ? i : null
                 }
                 getRTCStream(e) {
                     var t;
                     return (0, _.default)(p.default) ? null !== (t = l[e]) && void 0 !== t ? t : null : null
                 }
                 getAllApplicationStreams() {
-                    return (0, _.default)(p.default) ? v().filter(e => null != e && L(e.streamType, e.channelId)) : []
+                    return (0, _.default)(p.default) ? M().filter(e => null != e && D(e.streamType, e.channelId)) : []
                 }
                 getAllApplicationStreamsForChannel(e) {
-                    return (0, _.default)(p.default) ? v().filter(t => null != t && t.channelId === e && L(t.streamType, t.channelId)) : []
+                    return (0, _.default)(p.default) ? M().filter(t => null != t && t.channelId === e && D(t.streamType, t.channelId)) : []
                 }
                 getViewerIds(e) {
                     if (!(0, _.default)(p.default)) return [];
@@ -23297,6 +23286,9 @@
                     t = "string" == typeof e ? e : (0, d.encodeStreamKey)(e);
                     let n = null != t ? l[t] : null;
                     return null != n ? n.viewerIds : []
+                }
+                getCurrentAppIntent() {
+                    return R
                 }
                 getState() {
                     return (0, _.default)(p.default) ? {
@@ -23312,8 +23304,8 @@
                     }
                 }
             }
-            U.displayName = "ApplicationStreamingStore";
-            var P = new U(o.default, {
+            P.displayName = "ApplicationStreamingStore";
+            var b = new P(o.default, {
                 OVERLAY_INITIALIZE: function(e) {
                     let {
                         applicationStreamState: t
@@ -23389,8 +23381,8 @@
                     } = e;
                     s[t] = null
                 },
-                STREAM_CREATE: M,
-                STREAM_UPDATE: M,
+                STREAM_CREATE: L,
+                STREAM_UPDATE: L,
                 STREAM_TIMED_OUT: function(e) {
                     let {
                         streamKey: t
@@ -23427,13 +23419,13 @@
                     i.set(t, {
                         ...r,
                         state: o
-                    }), o === g.ApplicationStreamStates.ENDED && N !== t && y(t)
+                    }), o === g.ApplicationStreamStates.ENDED && N !== t && v(t)
                 },
                 STREAM_CLOSE: function(e) {
                     let {
                         streamKey: t
                     } = e;
-                    y(t)
+                    v(t)
                 },
                 STREAM_UPDATE_SELF_HIDDEN: function(e) {
                     let {
@@ -23441,6 +23433,12 @@
                         selfStreamHidden: n
                     } = e, i = (0, d.isStreamKey)(N);
                     i && (null == N ? void 0 : N.includes(E.default.getId())) && !1 === O[t] && !0 === n && (N = null), O[t] = n
+                },
+                SET_STREAM_APP_INTENT: function(e) {
+                    let {
+                        intent: t
+                    } = e;
+                    R = t
                 },
                 RTC_CONNECTION_STATE: function(e) {
                     let {
@@ -23470,14 +23468,14 @@
                         channelId: n
                     } = e;
                     if (N = t, Array.from(i.values()).forEach(e => {
-                            (0, d.encodeStreamKey)(e) !== N && e.state === g.ApplicationStreamStates.ENDED && y((0, d.encodeStreamKey)(e))
+                            (0, d.encodeStreamKey)(e) !== N && e.state === g.ApplicationStreamStates.ENDED && v((0, d.encodeStreamKey)(e))
                         }), null == t) return;
                     let a = (0, d.isStreamKey)(t);
                     a && t.includes(E.default.getId()) && (O[n] = !1)
                 },
-                CONNECTION_OPEN: R,
-                CONNECTION_CLOSED: R,
-                LOGOUT: R
+                CONNECTION_OPEN: y,
+                CONNECTION_CLOSED: y,
+                LOGOUT: y
             })
         },
         950104: function(e, t, n) {
@@ -33036,4 +33034,4 @@
         }
     }
 ]);
-//# sourceMappingURL=a84b5aab9949a4798167.js.map
+//# sourceMappingURL=a1ca10ea31afa1f31398.js.map
