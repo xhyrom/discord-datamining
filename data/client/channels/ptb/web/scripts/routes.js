@@ -4724,6 +4724,24 @@
                         opacity: 1
                     }
                 },
+                CHAT_SWIPE_TO_REPLY_GRADIENT_BACKGROUND: {
+                    [a.DARK]: {
+                        raw: "BLACK_500",
+                        opacity: .1
+                    },
+                    [a.LIGHT]: {
+                        raw: "WHITE_500",
+                        opacity: .4
+                    },
+                    [a.AMOLED]: {
+                        raw: "BLACK_500",
+                        opacity: .1
+                    },
+                    [a.DARKER]: {
+                        raw: "BLACK_500",
+                        opacity: .1
+                    }
+                },
                 CONTROL_BRAND_FOREGROUND: {
                     [a.DARK]: {
                         raw: "BRAND_360",
@@ -12705,4 +12723,4 @@
         }
     }
 ]);
-//# sourceMappingURL=f1750c66aba8c3b3e2f3.js.map
+//# sourceMappingURL=c4be09c7bb6c8587a6b4.js.map

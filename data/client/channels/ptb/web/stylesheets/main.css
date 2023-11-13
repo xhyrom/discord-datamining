@@ -120904,6 +120904,7 @@ div.nagbar_c731ff {
     --chat-border: var(--primary-700);
     --chat-input-container-background: var(--primary-600);
     --chat-swipe-to-reply-background: var(--primary-660);
+    --chat-swipe-to-reply-gradient-background: hsl(var(--black-500-hsl) / 0.1);
     --control-brand-foreground: var(--brand-360);
     --control-brand-foreground-new: var(--brand-360);
     --creator-revenue-icon-gradient-end: var(--teal-430);
@@ -121189,6 +121190,7 @@ div.nagbar_c731ff {
     --chat-border: var(--primary-200);
     --chat-input-container-background: var(--white-500);
     --chat-swipe-to-reply-background: var(--primary-160);
+    --chat-swipe-to-reply-gradient-background: hsl(var(--white-500-hsl) / 0.4);
     --control-brand-foreground: var(--brand-500);
     --control-brand-foreground-new: var(--brand-500);
     --creator-revenue-icon-gradient-end: var(--teal-400);
@@ -121474,6 +121476,7 @@ div.nagbar_c731ff {
     --chat-border: var(--plum-20);
     --chat-input-container-background: var(--plum-16);
     --chat-swipe-to-reply-background: var(--plum-22);
+    --chat-swipe-to-reply-gradient-background: hsl(var(--black-500-hsl) / 0.1);
     --control-brand-foreground: var(--brand-360);
     --control-brand-foreground-new: var(--brand-360);
     --creator-revenue-icon-gradient-end: var(--teal-430);
@@ -121759,6 +121762,7 @@ div.nagbar_c731ff {
     --chat-border: var(--plum-20);
     --chat-input-container-background: var(--plum-16);
     --chat-swipe-to-reply-background: var(--plum-22);
+    --chat-swipe-to-reply-gradient-background: hsl(var(--black-500-hsl) / 0.1);
     --control-brand-foreground: var(--brand-360);
     --control-brand-foreground-new: var(--brand-360);
     --creator-revenue-icon-gradient-end: var(--teal-430);
@@ -123229,4 +123233,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=app.3377899339badd9c213a.css.map*/
+/*# sourceMappingURL=app.ba184c9cc7c3a8cd1ae3.css.map*/
