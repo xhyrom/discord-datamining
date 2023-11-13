@@ -1418,8 +1418,9 @@
                     GUILD_EVENT: (_, E) => "/guilds/".concat(_, "/scheduled-events/").concat(E),
                     GUILD_EVENT_IMAGE: (_, E, I) => "/guild-events/".concat(_, "/images/").concat(E, ".").concat(I),
                     GUILD_EVENTS_FOR_GUILD: _ => "/guilds/".concat(_, "/scheduled-events"),
-                    GUILD_EVENT_USERS: (_, E) => "/guilds/".concat(_, "/scheduled-events/").concat(E, "/users"),
-                    USER_GUILD_EVENT: (_, E) => "/guilds/".concat(_, "/scheduled-events/").concat(E, "/users/@me"),
+                    GUILD_EVENT_USER_COUNTS: (_, E) => "/guilds/".concat(_, "/scheduled-events/").concat(E, "/users/counts"),
+                    GUILD_EVENT_USERS: (_, E, I) => "/guilds/".concat(_, "/scheduled-events/").concat(E).concat(null != I ? "/".concat(I) : "", "/users"),
+                    USER_GUILD_EVENT: (_, E, I) => "/guilds/".concat(_, "/scheduled-events/").concat(E).concat(null != I ? "/".concat(I) : "", "/users/@me"),
                     USER_GUILD_EVENTS: "/users/@me/scheduled-events",
                     GUILD_EVENT_EXCEPTIONS: (_, E) => "/guilds/".concat(_, "/scheduled-events/").concat(E, "/exceptions"),
                     GUILD_EVENT_EXCEPTION: (_, E, I) => "/guilds/".concat(_, "/scheduled-events/").concat(E, "/exceptions/").concat(I),
@@ -12723,4 +12724,4 @@
         }
     }
 ]);
-//# sourceMappingURL=c4be09c7bb6c8587a6b4.js.map
+//# sourceMappingURL=9c0fc2bc4f041ef5a43a.js.map
