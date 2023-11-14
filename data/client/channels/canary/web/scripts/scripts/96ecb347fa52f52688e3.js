@@ -250,8 +250,8 @@
             }), i("222007");
             var n, l = i("913144"),
                 a = i("255397"),
-                u = i("823411"),
-                r = i("316272"),
+                u = i("316272"),
+                r = i("651057"),
                 d = i("299285"),
                 o = i("191145"),
                 s = i("601222"),
@@ -412,7 +412,7 @@
                     }
                 }
             }
-            n = class extends r.default {
+            n = class extends u.default {
                 _initialize() {
                     E.default.addChangeListener(this.handleSelectedChannelUpdate), l.default.subscribe("EMBEDDED_ACTIVITY_LAUNCH_FAIL", this.handleActivityLaunchFail), l.default.subscribe("EMBEDDED_ACTIVITY_OPEN", F), l.default.subscribe("EMBEDDED_ACTIVITY_CLOSE", w), l.default.subscribe("EMBEDDED_ACTIVITY_INBOUND_UPDATE", G), l.default.subscribe("EMBEDDED_ACTIVITY_DEFERRED_OPEN", this.handleDeferredOpen), l.default.subscribe("RPC_APP_DISCONNECTED", this.handleRPCDisconnect), l.default.subscribe("MEDIA_SESSION_JOINED", B)
                 }
@@ -487,14 +487,14 @@
                         var t, i, n, l;
                         let a;
                         let {
-                            channelId: r,
+                            channelId: u,
                             applicationId: o,
                             analyticsLocations: s
                         } = e;
-                        if (E.default.getVoiceChannelId() !== r) return;
-                        let c = S.default.getSelfEmbeddedActivityForChannel(r);
+                        if (E.default.getVoiceChannelId() !== u) return;
+                        let c = S.default.getSelfEmbeddedActivityForChannel(u);
                         if ((null == c ? void 0 : c.application_id) === o) return;
-                        let _ = await u.default.fetchApplication(o),
+                        let _ = await r.default.fetchApplication(o),
                             A = (0, h.getIsActivitiesEnabledForCurrentPlatform)();
                         if (!A) {
                             this.showLaunchErrorModal(b.default.Messages.EMBEDDED_ACTIVITIES_NOT_AVAILABLE_ON_OS);
@@ -505,8 +505,8 @@
                             return
                         }
                         let I = null == c ? void 0 : c.application_id;
-                        null != I && (await u.default.fetchApplication(I), a = d.default.getApplication(I));
-                        let T = f.default.getChannel(r),
+                        null != I && (await r.default.fetchApplication(I), a = d.default.getApplication(I));
+                        let T = f.default.getChannel(u),
                             C = null !== (n = null == T ? void 0 : T.getGuildId()) && void 0 !== n ? n : void 0,
                             {
                                 activityConfigs: D,
@@ -530,10 +530,10 @@
                                 applications: e.applications
                             })
                         }
-                        let m = S.default.getEmbeddedActivitiesForChannel(r).find(e => e.application_id === o),
+                        let m = S.default.getEmbeddedActivitiesForChannel(u).find(e => e.application_id === o),
                             P = null !== (l = null == m ? void 0 : null === (i = m.connections) || void 0 === i ? void 0 : i.size) && void 0 !== l ? l : 0;
                         P > 0 ? (0, N.maybeJoinEmbeddedActivity)({
-                            channelId: r,
+                            channelId: u,
                             applicationId: o,
                             activityId: null,
                             inputApplication: null,
@@ -542,7 +542,7 @@
                         }) : await (0, y.default)({
                             activityItem: g,
                             currentActivity: a,
-                            channelId: r,
+                            channelId: u,
                             guildId: C,
                             embeddedActivitiesManager: this,
                             analyticsLocations: s
@@ -640,7 +640,7 @@
                     return S
                 }
             });
-            var n = i("823411"),
+            var n = i("651057"),
                 l = i("299285"),
                 a = i("653047"),
                 u = i("42203"),
@@ -738,7 +738,7 @@
                 }
             });
             var n = i("404118"),
-                l = i("823411"),
+                l = i("651057"),
                 a = i("299285"),
                 u = i("645999"),
                 r = i("653047"),
@@ -1526,7 +1526,7 @@
             });
             var n = i("884691"),
                 l = i("446674"),
-                a = i("823411"),
+                a = i("651057"),
                 u = i("299285");
 
             function r(e) {
@@ -2158,4 +2158,4 @@
         }
     }
 ]);
-//# sourceMappingURL=21313f31f07ab7306ca3.js.map
+//# sourceMappingURL=96ecb347fa52f52688e3.js.map
