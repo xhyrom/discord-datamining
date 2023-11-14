@@ -2433,15 +2433,29 @@
             "use strict";
             e.exports = {
                 activityContainer: "activityContainer__49787",
-                arrowButton: "arrowButton__9a3da",
-                arrowContainer: "arrowContainer__1ad19",
+                circularButton: "circularButton__88b89",
+                footer: "footer__4f337",
                 header: "header__263c7",
                 headerTitle: "headerTitle__901c1",
                 iframe: "iframe__3dd58",
                 leaveActivityButton: "leaveActivityButton__5535d",
                 leaveActivityIcon: "leaveActivityIcon__38dcc",
                 leaveButtonContainer: "leaveButtonContainer__67662",
+                minimizeContainer: "minimizeContainer_d5ce9e",
+                minimizeIcon: "minimizeIcon__65052",
+                noChat: "noChat_a99ce5",
+                resizable: "resizable_ebfa5d",
                 wrapper: "wrapper__89bfc"
+            }
+        },
+        369026: function(e, t, o) {
+            "use strict";
+            e.exports = {
+                badge: "badge__93f9e",
+                circularButton: "circularButton_e0aa9b",
+                downArrow: "downArrow__335ff",
+                upArrow: "upArrow_cd14ec",
+                wrapper: "wrapper__93c36"
             }
         },
         808516: function(e, t, o) {
@@ -3979,17 +3993,6 @@
                 tooltip: "tooltip__371f9",
                 tooltipInner: "tooltipInner_f3ca3a",
                 tooltipText: "tooltipText_f4107b"
-            }
-        },
-        578501: function(e, t, o) {
-            "use strict";
-            e.exports = {
-                avatar1: "avatar1__82f1d",
-                avatar2: "avatar2_f8b5a4",
-                avatar3: "avatar3_d276d3",
-                avatars: "avatars__78e86",
-                logo: "logo__784f8",
-                shopArt: "shopArt__2bac7"
             }
         },
         469510: function(e, t, o) {
@@ -7957,8 +7960,8 @@
                 expressionPicker: "expressionPicker_e96a84",
                 form: "form_c73970",
                 formContainer: "formContainer__8f0e4",
-                guidelinesButton: "guidelinesButton_d7afe7",
-                guidelinesOpen: "guidelinesOpen_b4b204",
+                forumPostFormButton: "forumPostFormButton__503e5",
+                forumPostFormButtonActive: "forumPostFormButtonActive__04d5d",
                 horizontalPadding: "horizontalPadding__526a0",
                 loader: "loader__0b0fd",
                 loaderAnimation: "loaderAnimation__0e789",
@@ -7966,6 +7969,8 @@
                 mediaIcon: "mediaIcon_aa9048",
                 pencilIcon: "pencilIcon__47fef",
                 prefixElement: "prefixElement__829f9",
+                previewForm: "previewForm__87c77",
+                previewModeIndicator: "previewModeIndicator_c9ec62",
                 searchIcon: "searchIcon_affa6a",
                 submitButton: "submitButton__6a7c5",
                 submitButtonInner: "submitButtonInner__74f89",
@@ -12538,6 +12543,12 @@
                 timeStatus: "timeStatus_b84727"
             }
         },
+        572721: function(e, t, o) {
+            "use strict";
+            e.exports = {
+                title: "title_fc7ecc"
+            }
+        },
         849882: function(e, t, o) {
             "use strict";
             e.exports = {
@@ -12691,6 +12702,13 @@
                 iconButton: "iconButton_c2b6d2",
                 innerButton: "innerButton_a4ed91",
                 tooltips: "tooltips__27512"
+            }
+        },
+        928936: function(e, t, o) {
+            "use strict";
+            e.exports = {
+                coachmark: "coachmark__51b85",
+                image: "image_bdd7c1"
             }
         },
         738021: function(e, t, o) {
@@ -22952,6 +22970,7 @@
                 caretBottomCenter: "caretBottomCenter__9b96e",
                 caretBottomLeft: "caretBottomLeft__2b5a3",
                 caretLeftCenter: "caretLeftCenter__85989",
+                caretLeftTop: "caretLeftTop__47113",
                 caretRightCenter: "caretRightCenter__04179",
                 caretTopCenter: "caretTopCenter__3f88f",
                 caretTopLeft: "caretTopLeft__58d33",
@@ -24840,13 +24859,22 @@
                 up: "up_de1d07"
             }
         },
-        117264: function(e, t, o) {
+        887326: function(e, t, o) {
             "use strict";
             e.exports = {
-                chatIcon: "chatIcon__75eea",
-                mention: "mention_cb3c2f",
-                unreadCount: "unreadCount__40154",
-                upsellTooltipOffset: "upsellTooltipOffset__1d670"
+                mention: "mention__96a15",
+                unreadCount: "unreadCount_f0c075"
+            }
+        },
+        574586: function(e, t, o) {
+            "use strict";
+            e.exports = {
+                badge: "badge__1f7b6",
+                chatIcon: "chatIcon__4e2d2",
+                downArrow: "downArrow__539b4",
+                mention: "mention__418e5",
+                unreadCount: "unreadCount__183b0",
+                upArrow: "upArrow_c0474e"
             }
         },
         397651: function(e, t, o) {

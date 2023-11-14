@@ -674,16 +674,19 @@
                     return M
                 },
                 sendEmbeddedActivityInviteUser: function() {
-                    return G
+                    return U
                 },
                 dismissNewActivityIndicator: function() {
-                    return U
+                    return G
                 },
                 validateTestMode: function() {
                     return H
                 },
                 updateActivityPanelMode: function() {
                     return V
+                },
+                updateFocusedActivityLayout: function() {
+                    return w
                 }
             }), i("222007");
             var n = i("759843"),
@@ -934,7 +937,7 @@
                 }, a);
                 null != f.default.getChannel(i) && c.default.sendInvite(i, l.code, a, null)
             }
-            async function G(t) {
+            async function U(t) {
                 let {
                     channelId: e,
                     applicationId: i,
@@ -949,7 +952,7 @@
                 })
             }
 
-            function U() {
+            function G() {
                 l.default.dispatch({
                     type: "EMBEDDED_ACTIVITY_DISMISS_NEW_INDICATOR"
                 })
@@ -970,6 +973,13 @@
                 l.default.dispatch({
                     type: "EMBEDDED_ACTIVITY_SET_PANEL_MODE",
                     activityPanelMode: t
+                })
+            }
+
+            function w(t) {
+                l.default.dispatch({
+                    type: "EMBEDDED_ACTIVITY_SET_FOCUSED_LAYOUT",
+                    focusedActivityLayout: t
                 })
             }
         },
@@ -1055,4 +1065,4 @@
         }
     }
 ]);
-//# sourceMappingURL=7e48766a0dead75fa5ae.js.map
+//# sourceMappingURL=076ed90c0bb9c8c8d90a.js.map

@@ -1,39 +1,39 @@
 (this.webpackChunkdiscord_app = this.webpackChunkdiscord_app || []).push([
-    ["4327"], {
+    ["7105"], {
         272030: function(e, t, n) {
             "use strict";
             n.r(t), n.d(t, {
                 closeContextMenu: function() {
-                    return o
+                    return a
                 },
                 openContextMenu: function() {
-                    return a
+                    return o
                 },
                 openContextMenuLazy: function() {
                     return E
                 }
             }), n("506083");
-            var l = n("913144"),
-                i = n("244201"),
+            var i = n("913144"),
+                l = n("244201"),
                 u = n("773336"),
                 r = n("749866"),
-                _ = n("49111");
+                s = n("49111");
 
-            function s(e) {
-                l.default.dispatch({
+            function _(e) {
+                i.default.dispatch({
                     type: "CONTEXT_MENU_OPEN",
                     contextMenu: e
                 })
             }
 
-            function o(e) {
+            function a(e) {
                 {
                     let {
                         flushSync: t
                     } = n("817736");
                     t(() => {
-                        l.default.wait(() => {
-                            l.default.dispatch({
+                        i.default.wait(() => {
+                            i.default.dispatch({
                                 type: "CONTEXT_MENU_CLOSE"
                             }).finally(e)
                         })
@@ -41,51 +41,81 @@
                 }
             }
 
-            function a(e, t, n, l) {
-                var o, a, E;
+            function o(e, t, n, i) {
+                var a, o, E;
                 if (e.stopPropagation(), null != e.currentTarget.contains && !e.currentTarget.contains(e.target)) return;
                 let d = 0,
-                    I = 0;
-                if ("pageX" in e && (d = e.pageX, I = e.pageY), 0 === d && 0 === I) {
-                    let t = null === (o = e.target) || void 0 === o ? void 0 : o.getBoundingClientRect(),
+                    c = 0;
+                if ("pageX" in e && (d = e.pageX, c = e.pageY), 0 === d && 0 === c) {
+                    let t = null === (a = e.target) || void 0 === a ? void 0 : a.getBoundingClientRect(),
                         {
                             left: n = 0,
-                            top: l = 0,
-                            width: i = 0,
+                            top: i = 0,
+                            width: l = 0,
                             height: u = 0
                         } = null != t ? t : {};
-                    d = n + i / 2, I = l + u / 2
+                    d = n + l / 2, c = i + u / 2
                 }
-                let c = {
+                let I = {
                     render: t,
-                    renderLazy: l,
-                    target: null !== (a = e.target) && void 0 !== a ? a : e.currentTarget,
-                    rect: new DOMRect(d, I, 0, 0),
+                    renderLazy: i,
+                    target: null !== (o = e.target) && void 0 !== o ? o : e.currentTarget,
+                    rect: new DOMRect(d, c, 0, 0),
                     config: {
-                        context: __OVERLAY__ ? _.AppContext.OVERLAY : null !== (E = (0, i.getCurrentlyInteractingAppContext)()) && void 0 !== E ? E : _.AppContext.APP,
+                        context: __OVERLAY__ ? s.AppContext.OVERLAY : null !== (E = (0, l.getCurrentlyInteractingAppContext)()) && void 0 !== E ? E : s.AppContext.APP,
                         ...n
                     }
                 };
                 if ((null == n ? void 0 : n.enableSpellCheck) && (0, u.isDesktop)()) {
                     let e = (0, r.addResultListener)(() => {
-                        e(), s(c)
+                        e(), _(I)
                     })
-                } else e.preventDefault(), s(c)
+                } else e.preventDefault(), _(I)
             }
 
             function E(e, t, n) {
-                a(e, void 0, n, t)
+                o(e, void 0, n, t)
+            }
+        },
+        689988: function(e, t, n) {
+            "use strict";
+            n.r(t), n.d(t, {
+                default: function() {
+                    return i
+                }
+            }), n("70102"), n("222007"), n("704744");
+            var i, l = n("913144");
+            i = class {
+                initialize() {
+                    this.initializedCount++, !(this.initializedCount > 1) && (this._initialize(), Object.entries(this.actions).forEach(e => {
+                        let [t, n] = e;
+                        l.default.subscribe(t, "function" == typeof n ? n : n.callback)
+                    }), this.stores.forEach((e, t) => {
+                        t.addChangeListener(e), e()
+                    }))
+                }
+                terminate(e) {
+                    !(this.initializedCount <= 0) && (e ? this.initializedCount = 0 : this.initializedCount--, 0 === this.initializedCount && (this._terminate(), Object.entries(this.actions).forEach(e => {
+                        let [t, n] = e;
+                        l.default.unsubscribe(t, "function" == typeof n ? n : n.callback)
+                    })))
+                }
+                _initialize() {}
+                _terminate() {}
+                constructor() {
+                    this.initializedCount = 0, this.actions = {}, this.stores = new Map
+                }
             }
         },
         851234: function(e, t, n) {
             "use strict";
             n.r(t), n.d(t, {
                 default: function() {
-                    return l
+                    return i
                 }
             }), n("70102");
-            var l, i = n("50885");
-            l = class {
+            var i, l = n("50885");
+            i = class {
                 get language() {
                     return this._language
                 }
@@ -97,22 +127,22 @@
                 }
                 process(e) {
                     !this._processing && (this._processing = !0, requestIdleCallback(t => {
-                        var n, l;
+                        var n, i;
                         let u = t.timeRemaining();
                         if (u <= this._minimumTimeRemaining) {
                             this._processEnd();
                             return
                         }
-                        e.length > 256 && (e = e.slice(0, 256)), (n = e, l = this._languageHint, i.default.ensureModule("discord_spellcheck").then(() => {
+                        e.length > 256 && (e = e.slice(0, 256)), (n = e, i = this._languageHint, l.default.ensureModule("discord_spellcheck").then(() => {
                             let {
                                 cld: e
-                            } = i.default.requireModule("discord_spellcheck");
-                            return new Promise((t, i) => {
+                            } = l.default.requireModule("discord_spellcheck");
+                            return new Promise((t, l) => {
                                 e.detect(n, {
-                                    httpHint: l,
+                                    httpHint: i,
                                     encodingHint: "UTF8"
                                 }, (e, n) => {
-                                    null != e ? i(Error(e.message)) : !n.reliable || n.languages[0].percent < 90 || n.languages[0].score < 500 ? i(Error("Not enough reliable text.")) : t(n.languages[0].code)
+                                    null != e ? l(Error(e.message)) : !n.reliable || n.languages[0].percent < 90 || n.languages[0].score < 500 ? l(Error("Not enough reliable text.")) : t(n.languages[0].code)
                                 })
                             })
                         })).then(e => {
@@ -138,32 +168,32 @@
                     return D
                 }
             }), n("781738"), n("222007");
-            var l = n("78349"),
-                i = n("917351"),
-                u = n.n(i),
+            var i = n("78349"),
+                l = n("917351"),
+                u = n.n(l),
                 r = n("118810"),
-                _ = n("49671"),
-                s = n("605250"),
-                o = n("915639"),
-                a = n("449008"),
+                s = n("49671"),
+                _ = n("605250"),
+                a = n("915639"),
+                o = n("449008"),
                 E = n("851234"),
                 d = n("648610");
-            let I = new s.default("Spellchecker"),
-                c = null === _.default || void 0 === _.default ? void 0 : _.default.spellCheck;
+            let c = new _.default("Spellchecker"),
+                I = null === s.default || void 0 === s.default ? void 0 : s.default.spellCheck;
 
             function T(e) {
                 var t;
                 e = null !== (t = d.default[e]) && void 0 !== t ? t : e;
-                let n = (0, l.parse)(e.replace(/[_-]/g, "-"));
+                let n = (0, i.parse)(e.replace(/[_-]/g, "-"));
                 if (null == n || null == n.langtag.language || null == n.langtag.region) {
-                    I.error("".concat(e, " is not a valid locale."));
+                    c.error("".concat(e, " is not a valid locale."));
                     return
                 }
                 let {
-                    language: i,
+                    language: l,
                     region: u
                 } = n.langtag;
-                return "".concat(i.language.toLowerCase(), "-").concat(u.toUpperCase())
+                return "".concat(l.language.toLowerCase(), "-").concat(u.toUpperCase())
             }
             class N {
                 get enabled() {
@@ -173,12 +203,12 @@
                     this._enabled = e
                 }
                 setLearnedWords(e) {
-                    c.setLearnedWords(e)
+                    I.setLearnedWords(e)
                 }
                 setLocale(e) {
                     var t;
-                    null === (t = c.setLocale(e)) || void 0 === t || t.then(t => {
-                        I.info("Switching to ".concat(e), t ? "(available)" : "(unavailable)")
+                    null === (t = I.setLocale(e)) || void 0 === t || t.then(t => {
+                        c.info("Switching to ".concat(e), t ? "(available)" : "(unavailable)")
                     })
                 }
                 setAppLocale(e) {
@@ -191,8 +221,8 @@
                     let t = {};
                     return e.forEach(e => {
                         var n;
-                        let [l] = e.split("-");
-                        t[l] = null !== (n = t[l]) && void 0 !== n ? n : e
+                        let [i] = e.split("-");
+                        t[i] = null !== (n = t[i]) && void 0 !== n ? n : e
                     }), t
                 }
                 isMisspelled(e, t) {
@@ -202,22 +232,22 @@
                     return this.isMisspelled(e, t) ? this.corrections : []
                 }
                 replaceMisspelling(e) {
-                    c.replaceMisspelling(e)
+                    I.replaceMisspelling(e)
                 }
                 constructor(e) {
                     this._enabled = !0, this.misspelledWord = "", this.corrections = [];
-                    let [t, n] = o.default.locale.split("-");
+                    let [t, n] = a.default.locale.split("-");
                     this.regionPreference = n;
-                    let l = this.getAvailableLanguages(e);
+                    let i = this.getAvailableLanguages(e);
                     this.languageDetector = new E.default(t, n => {
-                        let i = "".concat(n, "-").concat(this.regionPreference);
-                        if (-1 !== e.indexOf(i)) this.setLocale(i);
+                        let l = "".concat(n, "-").concat(this.regionPreference);
+                        if (-1 !== e.indexOf(l)) this.setLocale(l);
                         else {
                             var u;
-                            let e = null !== (u = l[n]) && void 0 !== u ? u : d.default[t];
+                            let e = null !== (u = i[n]) && void 0 !== u ? u : d.default[t];
                             null != e && this.setLocale(e)
                         }
-                    }), c.on("spellcheck-result", (e, t) => {
+                    }), I.on("spellcheck-result", (e, t) => {
                         this.misspelledWord = null != e ? e : "", this.corrections = null != t ? t : []
                     })
                 }
@@ -230,20 +260,20 @@
             }, 250);
             async function D() {
                 var e, t;
-                let n = null !== (e = await c.getAvailableDictionaries()) && void 0 !== e ? e : [],
-                    l = n.map(T).filter(a.isNotNullish),
-                    i = new N(l);
-                return t = i, null != document.body && document.body.addEventListener("beforeinput", e => A(t, e.target), !0), i
+                let n = null !== (e = await I.getAvailableDictionaries()) && void 0 !== e ? e : [],
+                    i = n.map(T).filter(o.isNotNullish),
+                    l = new N(i);
+                return t = l, null != document.body && document.body.addEventListener("beforeinput", e => A(t, e.target), !0), l
             }
         },
         648610: function(e, t, n) {
             "use strict";
             n.r(t), n.d(t, {
                 default: function() {
-                    return l
+                    return i
                 }
             });
-            var l = {
+            var i = {
                 aa: "aa-ET",
                 af: "af-ZA",
                 ak: "ak-GH",
@@ -385,16 +415,16 @@
         },
         533613: function(e, t, n) {
             "use strict";
-            var l, i;
+            var i, l;
             n.r(t), n.d(t, {
                 HotspotLocations: function() {
-                    return l
+                    return i
                 }
-            }), (i = l || (l = {})).REPORT_PROBLEM_POST_STREAM = "REPORT_PROBLEM_POST_STREAM", i.VIDEO_BACKGROUND_FEEDBACK = "VIDEO_BACKGROUND_FEEDBACK", i.VOICE_CALL_FEEDBACK = "VOICE_CALL_FEEDBACK", i.GUILD_ANALYTICS_GUILD_SETTINGS_MENU = "GUILD_ANALYTICS_GUILD_SETTINGS_MENU", i.NOW_PLAYING_CONSENT_CARD = "NOW_PLAYING_CONSENT_CARD", i.IOS_GUILD_NAV_EDUCATION = "IOS_GUILD_NAV_EDUCATION", i.VOICE_PANEL_INTRODUCTION = "VOICE_PANEL_INTRODUCTION", i.GUILD_SETTINGS_COMMUNITY_GUILD_UPSELL = "GUILD_SETTINGS_COMMUNITY_GUILD_UPSELL", i.FAVORITE_EMOJI_TOOLTIP = "FAVORITE_EMOJI_TOOLTIP", i.POST_ACTIVITY_FEEDBACK = "POST_ACTIVITY_FEEDBACK", i.GUILD_DELETE_FEEDBACK = "GUILD_DELETE_FEEDBACK", i.GUILD_LEAVE_FEEDBACK = "GUILD_LEAVE_FEEDBACK", i.APPLICATION_COMMAND_TOOLTIP = "APPLICATION_COMMAND_TOOLTIP", i.GUILD_CAP_INLINE_UPSELL = "GUILD_CAP_INLINE_UPSELL", i.STAGE_CHANNEL_UPSELL = "STAGE_CHANNEL_UPSELL", i.HUB_WAITLIST_UPSELL = "HUB_WAITLIST_UPSELL", i.HUB_NEW = "HUB_NEW", i.HUB_SECOND_EMAIL_CONNECTION_UPSELL = "HUB_SECOND_EMAIL_CONNECTION_UPSELL", i.LIVE_STAGE_NOTIFICATION_BADGE = "LIVE_STAGE_NOTIFICATION_BADGE", i.GUILD_EVENT_UPSELL = "GUILD_EVENT_UPSELL", i.HUB_LINK_CHANNEL_NOTICE = "HUB_LINK_CHANNEL_NOTICE", i.PREMIUM_PROGRESS_BAR_GUILD_HEADER_TOOLTIP = "PREMIUM_PROGRESS_BAR_GUILD_HEADER_TOOLTIP", i.ANIMATED_GUILD_BANNER_GUILD_HEADER_TOOLTIP = "ANIMATED_GUILD_BANNER_GUILD_HEADER_TOOLTIP", i.ANIMATED_GUILD_BANNER_SETTINGS_NEW_PILL = "ANIMATED_GUILD_BANNER_SETTINGS_NEW_PILL", i.MULTI_ACCOUNT_TOOLTIP = "MULTI_ACCOUNT_TOOLTIP", i.HUB_STUDY_ROOM_NOTICE = "HUB_STUDY_ROOM_NOTICE", i.CHANNEL_BANNER_MEMBER_LIST_NOTICE = "CHANNEL_BANNER_MEMBER_LIST_NOTICE", i.CHANGE_LANGUAGE_MODAL = "CHANGE_LANGUAGE_MODAL", i.ACTIVITY_BEB_TUTORIAL = "ACTIVITY_BEB_TUTORIAL", i.APP_DIRECTORY_SETTINGS_NEW_PILL = "APP_DIRECTORY_SETTINGS_NEW_PILL", i.INVITE_SPLASH_GUILD_HEADER_TOOLTIP = "INVITE_SPLASH_GUILD_HEADER_TOOLTIP", i.ANIMATED_VIDEO_BG_CAPERNITE_DAY_NEW = "ANIMATED_VIDEO_BG_CAPERNITE_DAY_NEW", i.ANIMATED_VIDEO_BG_CAPERNITE_NIGHT_NEW = "ANIMATED_VIDEO_BG_CAPERNITE_NIGHT_NEW", i.ANIMATED_VIDEO_BG_HACKER_DEN_NEW = "ANIMATED_VIDEO_BG_HACKER_DEN_NEW", i.ANIMATED_VIDEO_BG_WUMPICE_NEW = "ANIMATED_VIDEO_BG_WUMPICE_NEW", i.ANIMATED_VIDEO_BG_CUSTOM_TOOLTIP_NEW = "ANIMATED_VIDEO_BG_CUSTOM_TOOLTIP_NEW", i.ANIMATED_VIDEO_BG_BIRTHDAY_1_NEW = "ANIMATED_VIDEO_BG_BIRTHDAY_1_NEW", i.SOUNDBOARD_WHEEL_EDUCATION_MODAL = "SOUNDBOARD_WHEEL_EDUCATION_MODAL", i.IN_APP_REPORTS_FEEDBACK = "IN_APP_REPORTS_FEEDBACK", i.CLIPS_CHANNEL_ATTACH_REMINDER = "CLIPS_CHANNEL_ATTACH_REMINDER"
+            }), (l = i || (i = {})).REPORT_PROBLEM_POST_STREAM = "REPORT_PROBLEM_POST_STREAM", l.VIDEO_BACKGROUND_FEEDBACK = "VIDEO_BACKGROUND_FEEDBACK", l.VOICE_CALL_FEEDBACK = "VOICE_CALL_FEEDBACK", l.GUILD_ANALYTICS_GUILD_SETTINGS_MENU = "GUILD_ANALYTICS_GUILD_SETTINGS_MENU", l.NOW_PLAYING_CONSENT_CARD = "NOW_PLAYING_CONSENT_CARD", l.IOS_GUILD_NAV_EDUCATION = "IOS_GUILD_NAV_EDUCATION", l.VOICE_PANEL_INTRODUCTION = "VOICE_PANEL_INTRODUCTION", l.GUILD_SETTINGS_COMMUNITY_GUILD_UPSELL = "GUILD_SETTINGS_COMMUNITY_GUILD_UPSELL", l.FAVORITE_EMOJI_TOOLTIP = "FAVORITE_EMOJI_TOOLTIP", l.POST_ACTIVITY_FEEDBACK = "POST_ACTIVITY_FEEDBACK", l.GUILD_DELETE_FEEDBACK = "GUILD_DELETE_FEEDBACK", l.GUILD_LEAVE_FEEDBACK = "GUILD_LEAVE_FEEDBACK", l.APPLICATION_COMMAND_TOOLTIP = "APPLICATION_COMMAND_TOOLTIP", l.GUILD_CAP_INLINE_UPSELL = "GUILD_CAP_INLINE_UPSELL", l.STAGE_CHANNEL_UPSELL = "STAGE_CHANNEL_UPSELL", l.HUB_WAITLIST_UPSELL = "HUB_WAITLIST_UPSELL", l.HUB_NEW = "HUB_NEW", l.HUB_SECOND_EMAIL_CONNECTION_UPSELL = "HUB_SECOND_EMAIL_CONNECTION_UPSELL", l.LIVE_STAGE_NOTIFICATION_BADGE = "LIVE_STAGE_NOTIFICATION_BADGE", l.GUILD_EVENT_UPSELL = "GUILD_EVENT_UPSELL", l.HUB_LINK_CHANNEL_NOTICE = "HUB_LINK_CHANNEL_NOTICE", l.PREMIUM_PROGRESS_BAR_GUILD_HEADER_TOOLTIP = "PREMIUM_PROGRESS_BAR_GUILD_HEADER_TOOLTIP", l.ANIMATED_GUILD_BANNER_GUILD_HEADER_TOOLTIP = "ANIMATED_GUILD_BANNER_GUILD_HEADER_TOOLTIP", l.ANIMATED_GUILD_BANNER_SETTINGS_NEW_PILL = "ANIMATED_GUILD_BANNER_SETTINGS_NEW_PILL", l.MULTI_ACCOUNT_TOOLTIP = "MULTI_ACCOUNT_TOOLTIP", l.HUB_STUDY_ROOM_NOTICE = "HUB_STUDY_ROOM_NOTICE", l.CHANNEL_BANNER_MEMBER_LIST_NOTICE = "CHANNEL_BANNER_MEMBER_LIST_NOTICE", l.CHANGE_LANGUAGE_MODAL = "CHANGE_LANGUAGE_MODAL", l.ACTIVITY_BEB_TUTORIAL = "ACTIVITY_BEB_TUTORIAL", l.APP_DIRECTORY_SETTINGS_NEW_PILL = "APP_DIRECTORY_SETTINGS_NEW_PILL", l.INVITE_SPLASH_GUILD_HEADER_TOOLTIP = "INVITE_SPLASH_GUILD_HEADER_TOOLTIP", l.ANIMATED_VIDEO_BG_CAPERNITE_DAY_NEW = "ANIMATED_VIDEO_BG_CAPERNITE_DAY_NEW", l.ANIMATED_VIDEO_BG_CAPERNITE_NIGHT_NEW = "ANIMATED_VIDEO_BG_CAPERNITE_NIGHT_NEW", l.ANIMATED_VIDEO_BG_HACKER_DEN_NEW = "ANIMATED_VIDEO_BG_HACKER_DEN_NEW", l.ANIMATED_VIDEO_BG_WUMPICE_NEW = "ANIMATED_VIDEO_BG_WUMPICE_NEW", l.ANIMATED_VIDEO_BG_CUSTOM_TOOLTIP_NEW = "ANIMATED_VIDEO_BG_CUSTOM_TOOLTIP_NEW", l.ANIMATED_VIDEO_BG_BIRTHDAY_1_NEW = "ANIMATED_VIDEO_BG_BIRTHDAY_1_NEW", l.SOUNDBOARD_WHEEL_EDUCATION_MODAL = "SOUNDBOARD_WHEEL_EDUCATION_MODAL", l.IN_APP_REPORTS_FEEDBACK = "IN_APP_REPORTS_FEEDBACK", l.CLIPS_CHANNEL_ATTACH_REMINDER = "CLIPS_CHANNEL_ATTACH_REMINDER"
         },
         846325: function(e, t, n) {
             "use strict";
-            var l, i;
+            var i, l;
             n.r(t), n.d(t, {
                 MAX_LENGTH_SOUND_NAME: function() {
                     return u
@@ -403,16 +433,16 @@
                     return r
                 },
                 DEFAULT_SOUND_GUILD_ID: function() {
-                    return _
-                },
-                SoundboardWheelSize: function() {
                     return s
                 },
+                SoundboardWheelSize: function() {
+                    return _
+                },
                 DEFAULT_KEYBIND: function() {
-                    return o
+                    return a
                 },
                 EMPTY_SOUND_LIST: function() {
-                    return a
+                    return o
                 },
                 CUSTOM_CALL_SOUND_GLOBAL_GUILD_ID: function() {
                     return E
@@ -420,15 +450,15 @@
             }), n("222007");
             let u = 32,
                 r = 5,
-                _ = "DEFAULT";
-            (i = l || (l = {}))[i.SUCCESS = 0] = "SUCCESS", i[i.INTERRUPTED = 1] = "INTERRUPTED";
-            let s = {
+                s = "DEFAULT";
+            (l = i || (i = {}))[l.SUCCESS = 0] = "SUCCESS", l[l.INTERRUPTED = 1] = "INTERRUPTED";
+            let _ = {
                     width: 424,
                     height: 424,
                     padding: 100
                 },
-                o = "ctrl+`",
-                a = [],
+                a = "ctrl+`",
+                o = [],
                 E = "0"
         },
         235004: function(e, t, n) {
@@ -438,51 +468,51 @@
                     return G
                 }
             }), n("222007"), n("424973"), n("834022");
-            var l, i, u = n("917351"),
+            var i, l, u = n("917351"),
                 r = n.n(u),
-                _ = n("446674"),
-                s = n("913144"),
-                o = n("845579"),
-                a = n("374363"),
+                s = n("446674"),
+                _ = n("913144"),
+                a = n("845579"),
+                o = n("374363"),
                 E = n("697218"),
                 d = n("599110"),
-                I = n("829536"),
-                c = n("846325"),
+                c = n("829536"),
+                I = n("846325"),
                 T = n("49111"),
                 N = n("397336");
-            (i = l || (l = {}))[i.NOT_FETCHED = 0] = "NOT_FETCHED", i[i.FETCHING = 1] = "FETCHING", i[i.FETCHED = 2] = "FETCHED";
+            (l = i || (i = {}))[l.NOT_FETCHED = 0] = "NOT_FETCHED", l[l.FETCHING = 1] = "FETCHING", l[l.FETCHED = 2] = "FETCHED";
             let A = new Map,
                 D = new Map,
                 L = new Set,
                 O = 0,
                 S = 0,
                 g = new Set,
-                U = new Map,
-                f = !1;
+                f = new Map,
+                U = !1;
 
             function C(e) {
                 let {
                     sound: t
-                } = e, n = A.get(t.guildId), l = null == n ? void 0 : n.findIndex(e => e.soundId === t.soundId);
-                null != n && null != l && -1 !== l ? (n[l] = t, A.set(t.guildId, [...n])) : null != n && (null == n || n.push(t), A.set(t.guildId, [...n]))
+                } = e, n = A.get(t.guildId), i = null == n ? void 0 : n.findIndex(e => e.soundId === t.soundId);
+                null != n && null != i && -1 !== i ? (n[i] = t, A.set(t.guildId, [...n])) : null != n && (null == n || n.push(t), A.set(t.guildId, [...n]))
             }
             let h = r.debounce(e => {
                 d.default.track(T.AnalyticEvents.UPDATE_SOUNDBOARD_SETTINGS, {
-                    volume: Math.round((0, I.amplitudeToPerceptual)(e))
-                }), o.SoundboardSettings.updateSetting({
+                    volume: Math.round((0, c.amplitudeToPerceptual)(e))
+                }), a.SoundboardSettings.updateSetting({
                     volume: e
                 })
             }, 1e3);
 
             function R(e) {
                 var t, n;
-                let l = null !== (n = null == e ? void 0 : null === (t = e.audioContextSettings) || void 0 === t ? void 0 : t.user) && void 0 !== n ? n : {};
-                for (let [e, t] of Object.entries(l)) t.soundboardMuted ? L.add(e) : L.delete(e);
-                for (let e of L.keys()) null == l[e] && L.delete(e)
+                let i = null !== (n = null == e ? void 0 : null === (t = e.audioContextSettings) || void 0 === t ? void 0 : t.user) && void 0 !== n ? n : {};
+                for (let [e, t] of Object.entries(i)) t.soundboardMuted ? L.add(e) : L.delete(e);
+                for (let e of L.keys()) null == i[e] && L.delete(e)
             }
-            class p extends _.default.Store {
+            class p extends s.default.Store {
                 initialize() {
-                    this.waitFor(a.default), R(a.default.settings)
+                    this.waitFor(o.default), R(o.default.settings)
                 }
                 getOverlaySerializedState() {
                     return {
@@ -499,8 +529,8 @@
                 }
                 getSound(e, t) {
                     var n;
-                    let l = null !== (n = A.get(e)) && void 0 !== n ? n : [];
-                    return l.find(e => e.soundId === t)
+                    let i = null !== (n = A.get(e)) && void 0 !== n ? n : [];
+                    return i.find(e => e.soundId === t)
                 }
                 getSoundById(e) {
                     let t = Array.from(A.values()).flat();
@@ -522,7 +552,7 @@
                     return 2 === O
                 }
                 isUserPlayingSounds(e) {
-                    let t = U.get(e);
+                    let t = f.get(e);
                     return null != t && t > 0
                 }
                 isPlayingSound(e) {
@@ -538,16 +568,16 @@
                     return L.has(e)
                 }
                 hasHadOtherUserPlaySoundInSession() {
-                    return f
+                    return U
                 }
                 hasFetchedAllSounds() {
                     return 2 === S && 2 === O
                 }
             }
             p.displayName = "SoundboardStore";
-            var G = new p(s.default, {
+            var G = new p(_.default, {
                 LOGOUT: function() {
-                    A.clear(), D.clear(), U.clear(), f = !1, S = 0, O = 0
+                    A.clear(), D.clear(), f.clear(), U = !1, S = 0, O = 0
                 },
                 GUILD_SOUNDBOARD_FETCH: function() {
                     S = 1
@@ -560,25 +590,25 @@
                         guildId: n
                     } = e;
                     A.delete(t);
-                    let l = A.get(n),
-                        i = null == l ? void 0 : l.findIndex(e => e.soundId === t);
-                    null != l && null != i && !(i < 0) && (l.splice(i, 1), A.set(n, [...l]))
+                    let i = A.get(n),
+                        l = null == i ? void 0 : i.findIndex(e => e.soundId === t);
+                    null != i && null != l && !(l < 0) && (i.splice(l, 1), A.set(n, [...i]))
                 },
                 GUILD_SOUNDBOARD_SOUND_PLAY_START: function(e) {
-                    var t, n, l;
+                    var t, n, i;
                     let {
-                        soundId: i,
+                        soundId: l,
                         userId: u
-                    } = e, r = (null !== (n = D.get(i)) && void 0 !== n ? n : 0) + 1, _ = (null !== (l = U.get(u)) && void 0 !== l ? l : 0) + 1;
-                    D.set(i, r), U.set(u, _), u !== (null === (t = E.default.getCurrentUser()) || void 0 === t ? void 0 : t.id) && (f = !0)
+                    } = e, r = (null !== (n = D.get(l)) && void 0 !== n ? n : 0) + 1, s = (null !== (i = f.get(u)) && void 0 !== i ? i : 0) + 1;
+                    D.set(l, r), f.set(u, s), u !== (null === (t = E.default.getCurrentUser()) || void 0 === t ? void 0 : t.id) && (U = !0)
                 },
                 GUILD_SOUNDBOARD_SOUND_PLAY_END: function(e) {
                     var t, n;
                     let {
-                        soundId: l,
-                        userId: i
-                    } = e, u = (null !== (t = D.get(l)) && void 0 !== t ? t : 0) - 1, r = (null !== (n = U.get(i)) && void 0 !== n ? n : 0) - 1;
-                    u <= 0 ? D.delete(l) : D.set(l, u), r <= 0 ? U.delete(i) : U.set(i, r)
+                        soundId: i,
+                        userId: l
+                    } = e, u = (null !== (t = D.get(i)) && void 0 !== t ? t : 0) - 1, r = (null !== (n = f.get(l)) && void 0 !== n ? n : 0) - 1;
+                    u <= 0 ? D.delete(i) : D.set(i, u), r <= 0 ? f.delete(l) : f.set(l, r)
                 },
                 USER_SOUNDBOARD_SET_VOLUME: function(e) {
                     let {
@@ -587,19 +617,19 @@
                     h(t)
                 },
                 VOICE_CHANNEL_SELECT: function() {
-                    D.clear(), U.clear()
+                    D.clear(), f.clear()
                 },
                 USER_SETTINGS_PROTO_UPDATE: function(e) {
                     let {
                         settings: t
                     } = e, {
                         type: n,
-                        proto: l
+                        proto: i
                     } = t;
                     if (n === N.UserSettingsTypes.FRECENCY_AND_FAVORITES_SETTINGS) {
-                        var i, u;
-                        g = new Set(null !== (u = null == l ? void 0 : null === (i = l.favoriteSoundboardSounds) || void 0 === i ? void 0 : i.soundIds) && void 0 !== u ? u : [])
-                    } else n === N.UserSettingsTypes.PRELOADED_USER_SETTINGS && R(l)
+                        var l, u;
+                        g = new Set(null !== (u = null == i ? void 0 : null === (l = i.favoriteSoundboardSounds) || void 0 === l ? void 0 : l.soundIds) && void 0 !== u ? u : [])
+                    } else n === N.UserSettingsTypes.PRELOADED_USER_SETTINGS && R(i)
                 },
                 SOUNDBOARD_FETCH_DEFAULT_SOUNDS: function() {
                     O = 1
@@ -608,7 +638,7 @@
                     let {
                         soundboardSounds: t
                     } = e;
-                    A.set(c.DEFAULT_SOUND_GUILD_ID, t), O = 2
+                    A.set(I.DEFAULT_SOUND_GUILD_ID, t), O = 2
                 },
                 SOUNDBOARD_SOUNDS_RECEIVED: function(e) {
                     let {
@@ -653,36 +683,36 @@
             "use strict";
             n.r(t), n.d(t, {
                 perceptualToAmplitude: function() {
-                    return l
+                    return i
                 },
                 amplitudeToPerceptual: function() {
-                    return i
+                    return l
                 }
             });
 
-            function l(e) {
+            function i(e) {
                 let t, n = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : 100;
                 return 0 === e ? 0 : (t = e > n ? (e - n) / n * 6 : e / n * 50 - 50, n * Math.pow(10, t / 20))
             }
 
-            function i(e) {
+            function l(e) {
                 let t, n = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : 100;
                 if (0 === e) return 0;
-                let l = 20 * Math.log10(e / n);
-                return n * (t = l > 0 ? l / 6 + 1 : (50 + l) / 50)
+                let i = 20 * Math.log10(e / n);
+                return n * (t = i > 0 ? i / 6 + 1 : (50 + i) / 50)
             }
         },
         749866: function(e, t, n) {
             "use strict";
             n.r(t), n.d(t, {
                 isSupported: function() {
-                    return _
+                    return s
                 },
                 setEnabled: function() {
-                    return o
+                    return a
                 },
                 setLearnedWords: function() {
-                    return a
+                    return o
                 },
                 isMisspelled: function() {
                     return E
@@ -691,61 +721,61 @@
                     return d
                 },
                 replaceWithCorrection: function() {
-                    return I
+                    return c
                 },
                 setAppLocale: function() {
-                    return c
+                    return I
                 },
                 addResultListener: function() {
                     return T
                 }
             });
-            var l = n("49671"),
-                i = n("852046"),
+            var i = n("49671"),
+                l = n("852046"),
                 u = n("773336");
 
             function r() {
-                return (null === l.default || void 0 === l.default ? void 0 : l.default.spellCheck) != null
+                return (null === i.default || void 0 === i.default ? void 0 : i.default.spellCheck) != null
             }
 
-            function _() {
+            function s() {
                 return (0, u.isDesktop)() && r()
             }
-            let s = _() ? (0, i.install)() : null;
-            async function o(e) {
-                let t = await s;
+            let _ = s() ? (0, l.install)() : null;
+            async function a(e) {
+                let t = await _;
                 null != t && (t.enabled = e)
             }
-            async function a(e) {
-                let t = await s;
+            async function o(e) {
+                let t = await _;
                 null != t && t.setLearnedWords(e)
             }
             async function E(e) {
                 let t = arguments.length > 1 && void 0 !== arguments[1] && arguments[1],
-                    n = await s;
+                    n = await _;
                 return null != n && n.isMisspelled(e, t)
             }
             async function d(e) {
                 let t = arguments.length > 1 && void 0 !== arguments[1] && arguments[1],
                     n = arguments.length > 2 && void 0 !== arguments[2] ? arguments[2] : 5,
-                    l = await s;
-                return null == l ? [] : l.getCorrectionsForMisspelling(e, t).slice(0, n)
-            }
-            async function I(e) {
-                let t = await s;
-                null != t && t.replaceMisspelling(e)
+                    i = await _;
+                return null == i ? [] : i.getCorrectionsForMisspelling(e, t).slice(0, n)
             }
             async function c(e) {
-                let t = await s;
+                let t = await _;
+                null != t && t.replaceMisspelling(e)
+            }
+            async function I(e) {
+                let t = await _;
                 null != t && t.setAppLocale(e)
             }
 
             function T(e) {
                 if (!r()) return () => {};
-                let t = l.default.spellCheck.on("spellcheck-result", e);
+                let t = i.default.spellCheck.on("spellcheck-result", e);
                 return null != t ? t : () => {}
             }
         }
     }
 ]);
-//# sourceMappingURL=6fd59308225556b7f410.js.map
+//# sourceMappingURL=e3b24155f058a2dd292f.js.map
