@@ -26088,7 +26088,6 @@ input[type=checkbox]:focus-visible+.label_ee78c3 {
 .defaultContainer__91554 {
     display: flex;
     align-items: center;
-    margin-top: 12px;
     background-color: var(--input-background)
 }
 
@@ -26105,7 +26104,6 @@ input[type=checkbox]:focus-visible+.label_ee78c3 {
 }
 
 .imageOnlyContainer__04301 {
-    margin-top: 12px;
     border-radius: var(--radius-lg);
     background-color: var(--background-primary);
     display: flex;
@@ -26114,6 +26112,11 @@ input[type=checkbox]:focus-visible+.label_ee78c3 {
     width: 48%;
     height: 158px;
     cursor: pointer
+}
+
+.imageUploadIcon__48563 {
+    width: 24px;
+    color: var(--interactive-active)
 }
 
 .container_e78017 {
@@ -26150,6 +26153,24 @@ input[type=checkbox]:focus-visible+.label_ee78c3 {
     border-bottom: 1px solid var(--background-modifier-hover)
 }
 
+.answerInputsContainer__7160e {
+    margin-top: 12px;
+    display: flex;
+    row-gap: 12px
+}
+
+.defaultContainer_bf47e3 {
+    flex-direction: column
+}
+
+.imageOnlyContainer__87813 {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    -moz-column-gap: 12px;
+    column-gap: 12px
+}
+
 .formInput_f4ef33 {
     border-radius: var(--radius-lg)
 }
@@ -26174,6 +26195,38 @@ input[type=checkbox]:focus-visible+.label_ee78c3 {
 
 .postIcon__8b0b3 {
     width: 12px
+}
+
+.container_d9f390 {
+    display: flex;
+    flex-direction: row;
+    margin-top: 16px;
+    margin-bottom: 16px
+}
+
+.option_aec314 {
+    border-radius: 25px;
+    background-color: var(--bg-base-primary);
+    box-shadow: var(--shadow-low);
+    padding: 8px 20px;
+    display: inline-flex;
+    align-items: center;
+    margin-right: 8px;
+    cursor: pointer;
+    border: 1px solid transparent
+}
+
+.optionSelected_ebb40c {
+    border: 2px solid var(--brand-500)
+}
+
+.icon__60715 {
+    width: 16px;
+    color: var(--interactive-muted)
+}
+
+.iconSelected__362aa {
+    color: var(--interactive-normal)
 }
 
 .userTooltip__658ae {
@@ -123513,4 +123566,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=app.b32fc61f209489be55a2.css.map*/
+/*# sourceMappingURL=app.ea50d8adf2613b294fd8.css.map*/
