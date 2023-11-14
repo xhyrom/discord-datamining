@@ -14747,20 +14747,20 @@
                 getRsvpVersion() {
                     return h
                 }
-                hasRsvp(e, t) {
-                    var n, i, a, l;
-                    if (null == e) return !1;
-                    let s = o.default.getId(),
-                        r = null === (i = T[e]) || void 0 === i ? void 0 : null === (n = i[p]) || void 0 === n ? void 0 : n[s];
-                    if (null == t) return (null == r ? void 0 : r.response) === d.GuildScheduledEventUserResponses.INTERESTED;
-                    let u = null === (l = T[e]) || void 0 === l ? void 0 : null === (a = l[t]) || void 0 === a ? void 0 : a[s];
-                    return (null == r ? void 0 : r.response) === d.GuildScheduledEventUserResponses.INTERESTED || (null == u ? void 0 : u.response) === d.GuildScheduledEventUserResponses.INTERESTED
-                }
                 getRsvp(e, t, n) {
                     var i, a;
                     if (null == e) return null;
                     let l = I(t);
                     return null === (a = T[e]) || void 0 === a ? void 0 : null === (i = a[l]) || void 0 === i ? void 0 : i[n]
+                }
+                isInterestedInEventRecurrence(e, t) {
+                    let n = o.default.getId(),
+                        i = this.getRsvp(e, null, n),
+                        a = this.getRsvp(e, t, n),
+                        l = (null == i ? void 0 : i.response) === d.GuildScheduledEventUserResponses.INTERESTED,
+                        s = (null == a ? void 0 : a.response) === d.GuildScheduledEventUserResponses.INTERESTED,
+                        r = (null == a ? void 0 : a.response) === d.GuildScheduledEventUserResponses.UNINTERESTED;
+                    return l && !r || s
                 }
                 getUserCount(e, t) {
                     var n, i, a, l;
@@ -33567,4 +33567,4 @@
         }
     }
 ]);
-//# sourceMappingURL=6bd933bd4e53f637b36d.js.map
+//# sourceMappingURL=93af8b3b602687419942.js.map

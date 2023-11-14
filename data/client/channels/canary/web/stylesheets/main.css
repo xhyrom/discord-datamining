@@ -15378,7 +15378,7 @@ input[type=checkbox]:focus-visible+.label_ee78c3 {
 
 .grandfatheredMessage_b731ea {
     border-radius: 3px;
-    font-size: 12px;
+    font-size: .75rem;
     line-height: 1.25;
     padding: 8px 16px 8px 8px;
     display: flex;
@@ -15414,8 +15414,8 @@ input[type=checkbox]:focus-visible+.label_ee78c3 {
     color: var(--white-500);
     display: flex;
     align-items: flex-start;
-    font-size: 16px;
-    line-height: 20px;
+    font-size: 1rem;
+    line-height: 1.25rem;
     padding: 16px;
     position: relative
 }
@@ -15463,7 +15463,7 @@ input[type=checkbox]:focus-visible+.label_ee78c3 {
 
 .sectionDescription__93f73 {
     color: var(--text-normal);
-    line-height: 20px;
+    line-height: 1.25rem;
     margin-bottom: 16px;
     margin-top: 0
 }
@@ -15549,8 +15549,8 @@ input[type=checkbox]:focus-visible+.label_ee78c3 {
 
 .billingInformation_ed226c {
     color: var(--text-normal);
-    font-size: 14px;
-    line-height: 18px
+    font-size: .875rem;
+    line-height: 1.125rem
 }
 
 .finePrint_a624a3 {
@@ -15564,9 +15564,9 @@ input[type=checkbox]:focus-visible+.label_ee78c3 {
 }
 
 .noItemsCard__4a2f1 {
-    font-size: 16px;
+    font-size: 1rem;
     font-weight: 500;
-    line-height: 20px;
+    line-height: 1.25rem;
     margin-top: 16px;
     padding: 16px 19px;
     border: none;
@@ -19460,8 +19460,8 @@ input[type=checkbox]:focus-visible+.label_ee78c3 {
 
 .message__13e98 {
     font-weight: 500;
-    font-size: 16px;
-    line-height: 20px;
+    font-size: 1rem;
+    line-height: 1.25rem;
     white-space: nowrap;
     text-overflow: ellipsis;
     overflow: hidden
@@ -30466,6 +30466,14 @@ html .progress__4ef76 {
     color: ButtonText;
     -webkit-text-decoration: underline;
     text-decoration: underline
+}
+
+.responseOptions_f63aff {
+    margin-top: 8px
+}
+
+.confirmButton_d88769 {
+    margin-left: 8px
 }
 
 .inviteDetailsContainer__90905 {
@@ -123396,4 +123404,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=app.d1e1b2971c0bdb8bc99b.css.map*/
+/*# sourceMappingURL=app.215380fe7ff4f6886c67.css.map*/
