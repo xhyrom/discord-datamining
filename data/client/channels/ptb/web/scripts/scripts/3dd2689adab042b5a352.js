@@ -595,10 +595,10 @@
                     return F
                 },
                 useUnseenEndedApplicationSubscriptionEntitlements: function() {
-                    return m
+                    return h
                 },
                 useFetchListingsForSubscriptions: function() {
-                    return h
+                    return m
                 },
                 useFetchUserApplicationSubscriptionEntitlements: function() {
                     return y
@@ -745,7 +745,7 @@
                 }
             }
 
-            function m(t) {
+            function h(t) {
                 var e;
                 let n = null !== (e = null == t ? void 0 : t.id) && void 0 !== e ? e : "",
                     u = (0, l.useStateFromStores)([S.default], () => S.default.can(P.Permissions.ADMINISTRATOR, t)),
@@ -769,7 +769,7 @@
                     }), [o, s]);
                 return i ? c.filter(t => null != t.endsAt && t.endsAt.getTime() > Math.max(null != a ? a : 0, Date.now() - 2592e6)) : []
             }
-            let h = t => {
+            let m = t => {
                     let [e, n] = r.useState(!1), u = r.useMemo(() => t.map(C.getApplicationSubscriptionPlanId), [t]), i = (0, l.useStateFromStoresArray)([E.default], () => u.filter(t => null == E.default.get(t)), [u]);
                     return r.useEffect(() => {
                         i.length > 0 && (n(!0), Promise.all(i.map(t => (0, A.fetchSubscriptionListingForPlan)(t))).catch(() => {}).then(() => {
@@ -797,8 +797,11 @@
                 },
                 g = t => {
                     let e = (0, o.default)(),
-                        n = (0, l.useStateFromStores)([s.default], () => null != t ? s.default.getApplication(t) : null);
-                    return null == n && null != t && e && (0, I.getApplication)(t), n
+                        n = (0, l.useStateFromStores)([s.default], () => null != t ? s.default.getApplication(t) : null, [t]),
+                        u = null != n;
+                    return r.useEffect(() => {
+                        !u && null != t && e && (0, I.fetchApplication)(t)
+                    }, [u, t, e]), n
                 };
 
             function G(t) {
@@ -848,7 +851,7 @@
                 getSubscriptionGroupForSubscriptionPlan: function() {
                     return s
                 },
-                getApplication: function() {
+                fetchApplication: function() {
                     return c
                 },
                 fetchEligibleApplicationSubscriptionGuilds: function() {
@@ -1273,8 +1276,8 @@
                 M = n("284797"),
                 O = n("383802"),
                 F = n("334702"),
-                m = n("775325"),
-                h = n("403293"),
+                h = n("775325"),
+                m = n("403293"),
                 y = n("523591"),
                 g = n("49111"),
                 G = n("646718");
@@ -1297,7 +1300,7 @@
                     purchaseType: V = g.PurchaseTypes.SUBSCRIPTION,
                     applicationId: Z,
                     referralCode: x
-                } = t, X = (0, h.default)(), J = (0, S.useBlockedPaymentsConfig)(), Q = (0, N.default)(), {
+                } = t, X = (0, m.default)(), J = (0, S.useBlockedPaymentsConfig)(), Q = (0, N.default)(), {
                     paymentSources: j,
                     hasPaymentSources: q,
                     paymentSourceId: z,
@@ -1322,7 +1325,7 @@
                     setStep: tS,
                     steps: tE,
                     breadcrumbsData: td
-                } = (0, m.default)({
+                } = (0, h.default)({
                     stepConfigs: v,
                     breadcrumbs: K
                 }), [tf, t_] = (0, M.default)(tc), {
@@ -1345,7 +1348,7 @@
                     selectedPlan: tR,
                     setSelectedSkuId: tU,
                     setSelectedPlanId: tL
-                } = (0, C.default)(), [tM, tO] = (0, o.useStateFromStoresArray)([d.default], () => [d.default.purchaseTokenAuthState, d.default.purchaseTokenHash]), [tF, tm] = (0, o.useStateFromStoresArray)([y.default], () => [y.default.browserCheckoutState, y.default.loadId]), [th, ty] = i.useState(null), [tg, tG] = i.useState(null), [tD, tB] = i.useState(null), [tH, tv] = i.useState(null), [tK, tb] = i.useState(null), [tw, tY] = i.useState(void 0), [tW, tk] = i.useState([]), tV = i.useMemo(() => null == tR || (0, I.isPremiumSubscriptionPlan)(tR.id), [tR]), [tZ, tx] = i.useState((0, A.shouldShowCustomGiftExperience)(Y) ? D : B), tX = i.useRef(null != _ ? _.planId : null);
+                } = (0, C.default)(), [tM, tO] = (0, o.useStateFromStoresArray)([d.default], () => [d.default.purchaseTokenAuthState, d.default.purchaseTokenHash]), [tF, th] = (0, o.useStateFromStoresArray)([y.default], () => [y.default.browserCheckoutState, y.default.loadId]), [tm, ty] = i.useState(null), [tg, tG] = i.useState(null), [tD, tB] = i.useState(null), [tH, tv] = i.useState(null), [tK, tb] = i.useState(null), [tw, tY] = i.useState(void 0), [tW, tk] = i.useState([]), tV = i.useMemo(() => null == tR || (0, I.isPremiumSubscriptionPlan)(tR.id), [tR]), [tZ, tx] = i.useState((0, A.shouldShowCustomGiftExperience)(Y) ? D : B), tX = i.useRef(null != _ ? _.planId : null);
                 i.useEffect(() => {
                     null == tX.current && null != _ && (tX.current = _.planId)
                 }, [_]);
@@ -1410,8 +1413,8 @@
                         purchaseTokenAuthState: tM,
                         purchaseTokenHash: tO,
                         browserCheckoutState: tF,
-                        browserCheckoutStateLoadId: tm,
-                        bodyNode: th,
+                        browserCheckoutStateLoadId: th,
+                        bodyNode: tm,
                         setBodyNode: ty,
                         footerNode: tg,
                         setFooterNode: tG,
@@ -1933,7 +1936,7 @@
             "use strict";
             n.r(e), n.d(e, {
                 default: function() {
-                    return h
+                    return m
                 }
             });
             var u = n("446674"),
@@ -1977,7 +1980,7 @@
                 } = t;
                 P = e
             }
-            class m extends u.default.Store {
+            class h extends u.default.Store {
                 get stripePaymentMethod() {
                     return s
                 }
@@ -2029,8 +2032,8 @@
                     return P
                 }
             }
-            m.displayName = "NewPaymentSourceStore";
-            var h = new m(i.default, {
+            h.displayName = "NewPaymentSourceStore";
+            var m = new h(i.default, {
                 NEW_PAYMENT_SOURCE_STRIPE_PAYMENT_REQUEST_UPDATE: function(t) {
                     let {
                         stripePaymentMethod: e
@@ -2727,4 +2730,4 @@
         }
     }
 ]);
-//# sourceMappingURL=7473651bebed6c9a8925.js.map
+//# sourceMappingURL=3dd2689adab042b5a352.js.map
