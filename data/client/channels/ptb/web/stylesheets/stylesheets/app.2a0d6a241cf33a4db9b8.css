@@ -59926,7 +59926,10 @@ html .progress__4ef76 {
 }
 
 .card_e97590:hover .cardDescription__46c9d button {
-    pointer-events: all
+    pointer-events: all;
+    bottom: 24px;
+    opacity: 1;
+    transform: scale(1)
 }
 
 .card_e97590:hover .cardImage__9da5b {
@@ -59996,7 +59999,7 @@ html .progress__4ef76 {
     pointer-events: none;
     transition: all.2s ease-in-out;
     border-radius: 20px;
-    background-image: linear-gradient(to bottom, var(--background-secondary-alt)50%, hsl(var(--primary-660-hsl)/.5)80%);
+    background-image: linear-gradient(to bottom, var(--background-secondary-alt)50%, hsl(var(--primary-660-hsl)/.75)80%);
     z-index: 20
 }
 
@@ -60012,7 +60015,10 @@ html .progress__4ef76 {
     position: absolute;
     left: 24px;
     right: 24px;
-    bottom: 24px
+    bottom: 8px;
+    opacity: .5;
+    transform: scale(.75);
+    transition: all.2s ease-in-out
 }
 
 .reducedMotion__90450 .cardDescription__46c9d {
@@ -123507,4 +123513,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=app.05d11dbf0c7765bf6698.css.map*/
+/*# sourceMappingURL=app.2a0d6a241cf33a4db9b8.css.map*/
