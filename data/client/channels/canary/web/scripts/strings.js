@@ -18158,7 +18158,7 @@
                 u = E("782340");
             (0, i.setUpdateRules)(s.default), (0, r.default)(u.default, n.default, T.default), a.default.Emitter.injectBatchEmitChanges(o.unstable_batchedUpdates), a.default.PersistedStore.disableWrites = __OVERLAY__, a.default.initialize();
             let L = window.GLOBAL_ENV.RELEASE_CHANNEL;
-            new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(L, ", Build Number: ").concat("245606", ", Version Hash: ").concat("5c1ea98d44d6088dc371f3bf9a08ab15e6270996")), t.default.setTags({
+            new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(L, ", Build Number: ").concat("245617", ", Version Hash: ").concat("db053cb9b0d32cf442e0de750a7050399a90b15f")), t.default.setTags({
                 appContext: l.CURRENT_APP_CONTEXT
             }), S.default.initBasic(), N.default.init(), I.FocusRingManager.init(), O.init(), (0, R.cleanupTempFiles)()
         },
@@ -20524,8 +20524,8 @@
 
             function o() {
                 var e;
-                let _ = parseInt((e = "245606", "245606"));
-                return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("245606")), _ = 0), _
+                let _ = parseInt((e = "245617", "245617"));
+                return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("245617")), _ = 0), _
             }
         },
         990629: function(e, _, E) {
@@ -21040,13 +21040,14 @@
                 recordInboundStream(e, _) {
                     if (!(0, u.default)() || e === s.default.getId()) return;
                     let {
-                        enableViewerClipping: E
+                        enableViewerClipping: E,
+                        ignoreSenderPreference: t
                     } = I.default.getCurrentConfig({
                         location: "ClipsManager:recordInboundStream"
                     });
                     if (!E) return;
-                    let t = R.default.isViewerClippingAllowedForUser(e);
-                    this.applyNativeClipsSettings(), _.setClipRecordSSRC(e, "audio", "inbound", t), _.setClipRecordSSRC(e, "video", "inbound", t)
+                    let o = t || R.default.isViewerClippingAllowedForUser(e);
+                    this.applyNativeClipsSettings(), _.setClipRecordSSRC(e, "audio", "inbound", o), _.setClipRecordSSRC(e, "video", "inbound", o)
                 }
                 constructor(...e) {
                     super(...e), this.actions = {
@@ -36338,4 +36339,4 @@
         }
     }
 ]);
-//# sourceMappingURL=6c9af0cdaf4b813c8b96.js.map
+//# sourceMappingURL=51565cac9600af610992.js.map
