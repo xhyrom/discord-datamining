@@ -49049,7 +49049,7 @@
                         var i;
                         let d = {
                                 environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                                build_number: "245468"
+                                build_number: "245485"
                             },
                             h = l.default.getCurrentUser();
                         null != h && (d.user_id = h.id, d.user_name = h.tag, null != h.email && (d.email = h.email));
@@ -61910,7 +61910,7 @@
                 DesignIds: function() {
                     return i
                 }
-            }), n("222007"), (r = i || (i = {}))[r.CLASSIC_IA = 0] = "CLASSIC_IA", r[r.DESIGN_IA = 1] = "DESIGN_IA", r[r.DESIGN_TABS_IA = 2] = "DESIGN_TABS_IA"
+            }), (r = i || (i = {}))[r.CLASSIC_IA = 0] = "CLASSIC_IA", r[r.DESIGN_IA = 1] = "DESIGN_IA", r[r.DESIGN_TABS_IA = 2] = "DESIGN_TABS_IA"
         },
         482402: function(e, t, n) {
             "use strict";
@@ -62299,4 +62299,4 @@
         }
     }
 ]);
-//# sourceMappingURL=f114ad39f0a45045d9c6.js.map
+//# sourceMappingURL=031eaa973a55a48efd6f.js.map
