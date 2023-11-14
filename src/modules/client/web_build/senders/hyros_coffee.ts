@@ -51,12 +51,12 @@ export class HyrosCoffeeSender implements Sender {
       .addFields(
         {
           name: "Build Number",
-          value: (await build.buildNumber()) ?? "Unknown",
+          value: build.buildNumber,
           inline: true,
         },
         {
           name: "Version Hash",
-          value: (await build.versionHash()) ?? "Unknown",
+          value: build.versionHash,
           inline: true,
         },
         {

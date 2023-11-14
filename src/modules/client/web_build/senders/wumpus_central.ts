@@ -47,7 +47,7 @@ export class WumpusCentralSender implements Sender {
     const embed = new EmbedBuilder().setColor(0xf4b524).addFields(
       {
         name: "Release",
-        value: `\`\`\`js\n${(await build.buildNumber()) ?? "Unknown"}\n\`\`\``,
+        value: `\`\`\`js\n${build.buildNumber}\n\`\`\``,
         inline: true,
       },
       {

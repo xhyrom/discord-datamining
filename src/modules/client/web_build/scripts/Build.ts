@@ -16,66 +16,36 @@
   *  along with this program.  If not, see <https://www.gnu.org/licenses/>.
   * **/
 
-import type { File } from "../../File.ts";
-import type { Channel } from "../../Channel.ts";
-
 export class Build {
-  script: File;
-  channel: Channel;
-  #content?: string;
-  #buildNumber?: string | undefined;
-  #versionHash?: string | undefined;
-  #builtAt?: number | null;
+  #buildNumber?: string;
+  #versionHash?: string;
+  #builtAt?: number;
 
-  constructor(channel: Channel, script: File) {
-    this.script = script;
-    this.channel = channel;
+  get buildNumber() {
+    return this.#buildNumber ?? "???";
   }
 
-  async buildNumber() {
-    if (this.#buildNumber) return this.#buildNumber;
+  get versionHash() {
+    return this.#versionHash ?? "???";
+  }
 
-    const content = await this.data();
-    const buildNumber = Array.from(
-      content.matchAll(/buildNumber:\s*"(?<number>[0-9]+)"/g)
-    )[0]?.groups?.number;
+  get builtAt() {
+    return this.#builtAt ?? Date.now();
+  }
 
+  set buildNumber(buildNumber: string) {
     this.#buildNumber = buildNumber;
-    return this.#buildNumber;
   }
 
-  async versionHash() {
-    if (this.#versionHash) return this.#versionHash;
-
-    const content = await this.data();
-    const versionHash = Array.from(
-      content.matchAll(/versionHash:\s*"(?<hash>(.*?))"/g)
-    )[0]?.groups?.hash;
-
+  set versionHash(versionHash: string) {
     this.#versionHash = versionHash;
-    return this.#versionHash;
   }
 
-  async builtAt() {
-    if (this.#builtAt) return this.#builtAt;
-
-    const content = await this.data();
-    const builtAt = Array.from(
-      content.matchAll(
-        /"builtAt",\s*(?:String\("(?<timestamp>[^"]+)"\)|"(?<value>[^"]+)")\s*/g
-      )
-    )[0]?.groups?.timestamp;
-
-    this.#builtAt = builtAt ? parseInt(builtAt) : null;
-    return this.#builtAt;
+  set builtAt(builtAt: number) {
+    this.#builtAt = builtAt;
   }
 
-  async data() {
-    if (this.#content) return this.#content;
-
-    const content = await this.script.content();
-    this.#content = content;
-
-    return content;
+  filled() {
+    return !!(this.#buildNumber && this.#versionHash && this.#builtAt);
   }
 }

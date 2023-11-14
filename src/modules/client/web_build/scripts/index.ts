@@ -21,6 +21,7 @@ import { join } from "node:path";
 import { File } from "../../File.ts";
 import type { Module } from "../../../index.ts";
 import { Build } from "./Build.ts";
+import { BuildResolver } from "./BuildResolver.ts";
 import { beautify, writeFile, rm } from "../../../../utils.ts";
 import type { WebBuild } from "../index.ts";
 
@@ -46,13 +47,27 @@ export class Scripts implements Module {
     return join(this.#webBuild.baseDir, "scripts");
   }
 
-  async build() {
+  async build(): Promise<Build> {
     if (this.#build) return this.#build;
 
-    this.#build = new Build(
-      this.#webBuild.channel,
-      (await this.files()).mainScript
-    );
+    const files = await this.files();
+    const build = new Build();
+
+    for (const file of [files.mainScript, ...files.scripts]) {
+      if (build.filled()) break;
+
+      const resolver = new BuildResolver(this.#webBuild.channel, file);
+
+      const buildNumber = await resolver.buildNumber();
+      const versionHash = await resolver.versionHash();
+      const builtAt = await resolver.builtAt();
+
+      if (buildNumber) build.buildNumber = buildNumber;
+      if (versionHash) build.versionHash = versionHash;
+      if (builtAt) build.builtAt = builtAt;
+    }
+
+    this.#build = build;
     return this.#build;
   }
 
@@ -68,9 +83,9 @@ export class Scripts implements Module {
       join(this.#webBuild.baseDir, "web_build.json"),
       JSON.stringify(
         {
-          build_number: await build.buildNumber(),
-          version_hash: await build.versionHash(),
-          built_at: await build.builtAt(),
+          build_number: build.buildNumber,
+          version_hash: build.versionHash,
+          built_at: build.builtAt,
         },
         null,
         2

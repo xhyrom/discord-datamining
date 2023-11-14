@@ -66,19 +66,19 @@ export class WebBuild implements Module {
     await this.stylesheets.run();
 
     const build = await this.scripts.build();
-    const date = new Date((await build.builtAt())!);
+    const date = new Date(build.builtAt);
     const scriptFiles = await this.scripts.files();
     const stylesheetFiles = await this.stylesheets.files();
 
     await this.#channel.summary();
 
     const result = await pushToGit(
-      `📥 ${
-        this.#channel.name
-      } Web Build ${await build.buildNumber()} (${await build.versionHash()})`,
+      `📥 ${this.#channel.name} Web Build ${build.buildNumber} (${
+        build.versionHash
+      })`,
       [
-        `Build Number: ${await build.buildNumber()}`,
-        `Version Hash: ${await build.versionHash()}`,
+        `Build Number: ${build.buildNumber}`,
+        `Version Hash: ${build.versionHash}`,
         `Build At: ${date.getDate()}/${date.getMonth()}/${date.getFullYear()} ${date.getHours()}:${date.getMinutes()}:${date.getSeconds()} (${date.getTime()})`,
       ].join("\n"),
       `Scripts (${scriptFiles.scripts.length}):\n${scriptFiles.scripts
