@@ -1,0 +1,21 @@
+{
+  "data": {
+    "kind": "user",
+    "id": "2023-11_enable_hang_status",
+    "label": "Hang Statuses",
+    "description": [
+      "Not Eligible",
+      "Control Bucket",
+      "Treatment 1: enable hang statuses"
+    ],
+    "hash": 1033614739,
+    "buckets": [
+      -1,
+      0,
+      1
+    ],
+    "config_keys": [
+      "enableHangStatus"
+    ]
+  }
+}
