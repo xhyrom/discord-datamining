@@ -1,5 +1,5 @@
-<p>Starting from <strong>March 29, 2023 (10:00am PT)</strong> to <strong>DecemberMarch 31, 20234 (11:59pm PT)</strong>, YouTube Premium subscribers within the United States can claim 3 months of free Discord Nitro. </p>
-<p>YouTube Premium subscribers within South Korea can claim 3 months of free Discord Nitro from <strong> March 29, 2023 (10:00am PT)</strong> to <strong>March 31, 2024 [11:59pm PT]</strong>. Learn below about how you can claim Discord Nitro.</p>
+<p>Starting from <strong>March 29, 2023 (10:00am PT)</strong> to <strong>December 31, 2023 (11:59pm PT)</strong>, YouTube Premium subscribers within the United States can claim 3 months of free Discord Nitro.</p>
+<p>YouTube Premium subscribers within South Korea can claim 3 months of free Discord Nitro from <strong> March 29, 2023 (10:00am PT)</strong> to <strong>March 31, 2024 (11:59pm PT)</strong>. Learn below about how you can claim Discord Nitro.</p>
 <p class="wysiwyg-text-align-center"><img src="https://support.discord.com/hc/article_attachments/13440621474967" alt="YouTube_Premium_x_Nitro_2023_Help_Article.png"></p>
 <p><span class="wysiwyg-font-size-large wysiwyg-color-blue90"><strong>What this article covers:</strong></span></p>
 <p><span style="font-weight: 400;"><span class="wysiwyg-color-orange110"><strong>Offer Details:</strong></span> <span id="docs-internal-guid-4ebf78e8-7fff-2849-2e50-4b4e2f4581e2">3 months of Discord Nitro for YouTube Premium subscribers</span><br></span></p>
@@ -68,7 +68,7 @@
     <li><a href="https://support.discord.com/hc/en-us/articles/115000435108" target="_blank" rel="noopener noreferrer">More!</a></li>
 </ul>
 <h1 id="h_01FCFMZ4DN4Y1KKEK4CKSMSAXH"><strong>How do I claim the Nitro Promo from YouTube </strong></h1>
-<p>As long as you're a <strong>YouTube Premium </strong>member, you'll be able to claim the Nitro promo from YouTube from <strong>March 29, 2023 (10:00am PT) </strong>to <strong>December 31, 2024(11:59pm PT) for those within the United States. </strong></p>
+<p>As long as you're a <strong>YouTube Premium </strong>member, you'll be able to claim the Nitro promo from YouTube from <strong>March 29, 2023 (10:00am PT) </strong>to <strong>December 31, 2024 (11:59pm PT) for those within the United States. </strong></p>
 <p>If you are a <strong>YouTube Premium </strong>member in South Korea<strong>, </strong>you’ll be able to claim the Nitro promo from YouTube unti<strong>l March 31, 2024 (11:59pm PT). </strong></p>
 <h2 id="h_01EJ8HW3XWKKS85C8VJZY4CN07">Eligibility for the Claiming this Promotion from YouTube</h2>
 <p>In order to claim this promotion link, you'll need to be an active subscriber to <strong>YouTube Premium.</strong></p>
@@ -181,11 +181,10 @@
 </ul>
 <h2 id="h_01FCZMYZN05BHAKKQY863FS8CC">Promotion Details</h2>
 <p><strong><span class="wysiwyg-color-blue80 wysiwyg-font-size-large">Q: How long does this promotion run for?</span></strong></p>
-<p><strong>A:</strong> YouTube Premium subscribers within the United States can claim Discord Nitro promo between <strong>March 29, 2023 (10:00am PT)</strong> - <strong>December 31, 2023 (11:59pm PT). </strong>After <strong>December 31, 2023 (11:59pm PT), </strong>subscribers within the United States will no longer be able to claim a trial promo link. <strong> </strong></p>
+<p><strong>A:</strong> YouTube Premium subscribers within the United States can claim Discord Nitro promo between <strong>March 29, 2023 (10:00am PT)</strong> - <strong>December 31, 2023 (11:59pm PT). </strong>After <strong>January 30, 2024</strong> <strong>(11:59pm PT), </strong>subscribers within the United States will no longer be able to claim a trial promo link. <strong> </strong></p>
 <p><strong>YouTube Premium </strong>subscribers within South Korea can claim Discord Nitro promo between <strong>March 29, 2023 (10:00am PT) - </strong><strong>March 31, 2024 (11:59pm PT)</strong>. After <strong>March 31, 2024 (11:59pm PT), </strong>subscribers within South Korea will no longer be able to claim a trial promo link. <strong> </strong></p>
 <p id="h_01FBTHEAQD2388YZPRA1KP4MQM"><strong><span class="wysiwyg-color-blue80 wysiwyg-font-size-large">Q: How long does the Discord Nitro promotion link last for?</span></strong></p>
-<p><strong>A: </strong>You must redeem the Nitro promotion by <span style="font-weight: 400;"><strong><span id="docs-internal-guid-81e72060-7fff-90a1-b57d-64fe953088d1">April 30, 2024</span> (11:59pm PT)</strong></span>.</p>
-<p>If a code has not been redeemed to the Discord account by <span style="font-weight: 400;"><strong><span id="docs-internal-guid-81e72060-7fff-90a1-b57d-64fe953088d1">April 30, 2024</span> (11:59pm PT)</strong></span>, it will expire and you will no longer be able to claim three months of Discord Nitro.</p>
+<p><strong>A:</strong> You must redeem the Nitro promotion by <strong>January 30, 2024</strong> <strong>(11:59PM PT)</strong> if you’re a <strong>YouTube Premium</strong> subscriber in the United States or by <strong>April 30, 2024 (11:59pm PT)</strong> if you’re a <strong>YouTube Premium</strong> subscriber within South Korea.</p>
 <h2 id="h_01FCZMZH0A73Y0S83JS09J1R0H"><span style="font-weight: 400;">Eligibility for the Promotion </span></h2>
 <p><span class="wysiwyg-color-blue80 wysiwyg-font-size-large"><strong>Q: Who can claim this promotion from their YouTube Premium Member Hub?<br></strong></span></p>
 <p><span style="font-weight: 400;"><strong>A: </strong></span><span id="docs-internal-guid-b4df2ab6-7fff-dc4a-225c-6836fd986be6">In order to receive this offer from YouTube, you must be a current</span><strong> YouTube Premium subscriber in the United States and South Korea.</strong></p>
