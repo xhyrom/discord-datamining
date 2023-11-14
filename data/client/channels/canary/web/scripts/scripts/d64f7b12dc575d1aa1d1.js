@@ -270,6 +270,9 @@
         925749: function(A, C, g) {
             "use strict";
             g.r(C), g.d(C, {
+                getHangStatusOptions: function() {
+                    return r
+                },
                 getHangStatusDetails: function() {
                     return t
                 },
@@ -1033,8 +1036,8 @@
                 J = g("782340"),
                 N = g("524466"),
                 T = g("231185");
-            let M = t.AvatarSizes.SIZE_80,
-                p = (0, a.getDecorationSizeForAvatarSize)(M);
+            let p = t.AvatarSizes.SIZE_80,
+                M = (0, a.getDecorationSizeForAvatarSize)(p);
 
             function x(A) {
                 let {
@@ -1088,12 +1091,12 @@
                 } = (0, R.default)({
                     user: C,
                     guildId: u,
-                    size: M,
+                    size: p,
                     animateOnHover: h
                 }), {
                     avatarDecorationSrc: z
                 } = (0, l.default)({
-                    size: p,
+                    size: M,
                     animateOnHover: !H,
                     showPending: C.id === (null == Y ? void 0 : Y.id),
                     showTryItOut: C.id === (null == Y ? void 0 : Y.id)
@@ -1103,7 +1106,7 @@
                     children: [(0, I.jsx)(X, {
                         src: null != B ? B : Z,
                         avatarDecoration: null != z ? null : j,
-                        size: M,
+                        size: p,
                         "aria-label": C.username,
                         status: y ? m.StatusTypes.UNKNOWN : a,
                         statusBackdropColor: null != x && O && !y ? (0, t.getStatusBackdropColor)(x) : void 0,
@@ -1114,7 +1117,7 @@
                         children: (0, I.jsx)(X, {
                             src: T,
                             avatarDecoration: z,
-                            size: M,
+                            size: p,
                             status: m.StatusTypes.UNKNOWN,
                             isMobile: i,
                             className: N.tryingOutAvatarDecoration,
@@ -1150,7 +1153,7 @@
                         },
                         children: [_, !P && function() {
                             let A = null != j,
-                                C = A ? p : (0, t.getAvatarSize)(M);
+                                C = A ? M : (0, t.getAvatarSize)(p);
                             return (0, I.jsx)(S.default, {
                                 mask: null == a || a === m.StatusTypes.UNKNOWN || y ? S.default.Masks.AVATAR_DEFAULT : (0, e.match)([A, i]).with([!0, !0], () => S.default.Masks.AVATAR_DECORATION_PROFILE_STATUS_MOBILE_SQUARE_80).with([!0, !1], () => S.default.Masks.AVATAR_DECORATION_PROFILE_STATUS_SQUARE_80).with([!1, !0], () => S.default.Masks.AVATAR_STATUS_MOBILE_80).with([!1, !1], () => S.default.Masks.AVATAR_STATUS_ROUND_80).exhaustive(),
                                 className: A ? N.avatarDecorationHint : N.avatarHint,
@@ -1515,4 +1518,4 @@
         }
     }
 ]);
-//# sourceMappingURL=1c24f2b35e132223a5e1.js.map
+//# sourceMappingURL=d64f7b12dc575d1aa1d1.js.map

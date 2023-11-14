@@ -25624,7 +25624,7 @@
             "use strict";
             n.r(t), n.d(t, {
                 default: function() {
-                    return O
+                    return R
                 }
             }), n("424973"), n("222007");
             var i = n("714617"),
@@ -25636,32 +25636,33 @@
                 u = n("191225"),
                 d = n("299285"),
                 c = n("225772"),
-                _ = n("925880"),
-                E = n("662285"),
-                h = n("845579"),
-                f = n("374363"),
-                p = n("373469"),
-                T = n("848872"),
-                C = n("568307"),
-                S = n("49111"),
-                m = n("782340");
-            let I = [],
-                g = {};
+                _ = n("32346"),
+                E = n("925880"),
+                h = n("662285"),
+                f = n("845579"),
+                p = n("374363"),
+                T = n("373469"),
+                C = n("848872"),
+                S = n("568307"),
+                m = n("49111"),
+                I = n("782340");
+            let g = [],
+                A = {};
 
-            function A() {
+            function N() {
                 let e = [],
-                    t = h.CustomStatusSetting.getSetting();
+                    t = f.CustomStatusSetting.getSetting();
                 null != t && ("0" === t.expiresAtMs || new Date(Number(t.expiresAtMs)).getTime() - new Date().getTime() > 0) && e.push((0, c.default)(t));
-                let n = _.default.getActivities();
+                let n = E.default.getActivities();
                 e.push(...n);
-                let i = T.default.getStream();
+                let i = C.default.getStream();
                 null != i && e.push({
-                    type: S.ActivityTypes.STREAMING,
+                    type: m.ActivityTypes.STREAMING,
                     ...i
                 });
                 let l = new Set,
                     r = new Set;
-                s.forEach(g, t => {
+                s.forEach(A, t => {
                     null != t.application_id && (l.add(t.name), r.add(t.application_id), e.push(t))
                 }), u.default.getSelfEmbeddedActivities().forEach(t => {
                     var n;
@@ -25671,91 +25672,98 @@
                     if (r.has(i)) return;
                     let a = null === (n = d.default.getApplication(i)) || void 0 === n ? void 0 : n.name;
                     e.push({
-                        type: S.ActivityTypes.PLAYING,
-                        name: null != a ? a : m.default.Messages.EMBEDDED_ACTIVITIES_LAUNCHING_ACTIVITY,
+                        type: m.ActivityTypes.PLAYING,
+                        name: null != a ? a : I.default.Messages.EMBEDDED_ACTIVITIES_LAUNCHING_ACTIVITY,
                         application_id: i,
-                        flags: S.ActivityFlags.EMBEDDED
+                        flags: m.ActivityFlags.EMBEDDED
                     })
                 });
-                let o = C.default.getVisibleGame(),
-                    f = null != o && null != o.name && l.has(o.name),
-                    A = null != o && o.isLauncher,
-                    N = p.default.getCurrentUserActiveStream();
-                null != o && null != o.name && !(f || A && !(null != N)) && e.push({
-                    type: S.ActivityTypes.PLAYING,
+                let o = S.default.getVisibleGame(),
+                    p = null != o && null != o.name && l.has(o.name),
+                    N = null != o && o.isLauncher,
+                    O = T.default.getCurrentUserActiveStream();
+                null != o && null != o.name && !(p || N && !(null != O)) && e.push({
+                    type: m.ActivityTypes.PLAYING,
                     name: o.name,
                     application_id: o.id,
                     timestamps: {
                         start: o.start
                     }
                 });
-                let O = E.default.getActivity();
-                null != O && e.push({
-                    type: S.ActivityTypes.LISTENING,
-                    ...O
-                }), !a(I, e) && (I = e)
+                let R = h.default.getActivity();
+                null != R && e.push({
+                    type: m.ActivityTypes.LISTENING,
+                    ...R
+                });
+                let y = _.default.getCurrentHangStatus();
+                null != y && e.push({
+                    type: m.ActivityTypes.HANG_STATUS,
+                    name: "Hang Status",
+                    state: y
+                }), !a(g, e) && (g = e)
             }
-            class N extends r.default.Store {
+            class O extends r.default.Store {
                 initialize() {
-                    this.waitFor(C.default, u.default, T.default, p.default, E.default, f.default), this.syncWith([_.default], () => A())
+                    this.waitFor(S.default, u.default, C.default, T.default, h.default, p.default, _.default), this.syncWith([E.default], () => N())
                 }
                 getActivities() {
-                    return I
+                    return g
                 }
                 getPrimaryActivity() {
-                    return I[0]
+                    return g[0]
                 }
                 getApplicationActivity(e) {
                     return this.findActivity(t => t.application_id === e)
                 }
                 getCustomStatusActivity() {
-                    return this.findActivity(e => e.type === S.ActivityTypes.CUSTOM_STATUS)
+                    return this.findActivity(e => e.type === m.ActivityTypes.CUSTOM_STATUS)
                 }
                 findActivity(e) {
-                    return I.find(e)
+                    return g.find(e)
                 }
                 getApplicationActivities() {
-                    return g
+                    return A
                 }
             }
-            N.displayName = "LocalActivityStore";
-            var O = new N(o.default, {
+            O.displayName = "LocalActivityStore";
+            var R = new O(o.default, {
                 OVERLAY_INITIALIZE: function(e) {
                     let {
                         localActivities: t
                     } = e;
-                    g = {
+                    A = {
                         ...t
-                    }, A()
+                    }, N()
                 },
                 START_SESSION: function() {
-                    g = {}, A()
+                    A = {}, N()
                 },
                 LOCAL_ACTIVITY_UPDATE: function(e) {
                     let {
                         socketId: t,
                         activity: n
                     } = e;
-                    if (a(g[t], n)) return !1;
-                    null != n ? g[t] = n : delete g[t], A()
+                    if (a(A[t], n)) return !1;
+                    null != n ? A[t] = n : delete A[t], N()
                 },
                 RPC_APP_DISCONNECTED: function(e) {
                     let {
                         socketId: t
                     } = e;
-                    delete g[t], A()
+                    delete A[t], N()
                 },
-                RUNNING_GAMES_CHANGE: A,
-                LIBRARY_APPLICATION_FLAGS_UPDATE_SUCCESS: A,
-                SPOTIFY_PLAYER_STATE: A,
-                SPOTIFY_PLAYER_PLAY: A,
-                STREAMING_UPDATE: A,
-                USER_CONNECTIONS_UPDATE: A,
-                STREAM_START: A,
-                STREAM_STOP: A,
-                USER_SETTINGS_PROTO_UPDATE: A,
-                EMBEDDED_ACTIVITY_OPEN: A,
-                EMBEDDED_ACTIVITY_CLOSE: A
+                RUNNING_GAMES_CHANGE: N,
+                LIBRARY_APPLICATION_FLAGS_UPDATE_SUCCESS: N,
+                SPOTIFY_PLAYER_STATE: N,
+                SPOTIFY_PLAYER_PLAY: N,
+                STREAMING_UPDATE: N,
+                USER_CONNECTIONS_UPDATE: N,
+                STREAM_START: N,
+                STREAM_STOP: N,
+                USER_SETTINGS_PROTO_UPDATE: N,
+                EMBEDDED_ACTIVITY_OPEN: N,
+                EMBEDDED_ACTIVITY_CLOSE: N,
+                UPDATE_HANG_STATUS: N
             })
         },
         569983: function(e, t, n) {
@@ -33559,4 +33567,4 @@
         }
     }
 ]);
-//# sourceMappingURL=c8dca2bf786e1fbc6c86.js.map
+//# sourceMappingURL=832064086a84f66dd133.js.map
