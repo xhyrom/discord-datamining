@@ -19460,8 +19460,8 @@ input[type=checkbox]:focus-visible+.label_ee78c3 {
 
 .message__13e98 {
     font-weight: 500;
-    font-size: 16px;
-    line-height: 20px;
+    font-size: 1rem;
+    line-height: 1.25rem;
     white-space: nowrap;
     text-overflow: ellipsis;
     overflow: hidden
@@ -27286,6 +27286,18 @@ input[type=checkbox]:focus-visible+.label_ee78c3 {
 .image_f4d883 {
     position: absolute;
     top: -62px
+}
+
+.dmButtonContainer__06f1f {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    margin: 16px;
+    gap: 4px
+}
+
+.dmButton__598d3 {
+    flex: 1
 }
 
 .container__5eb17 {
@@ -123433,4 +123445,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=app.323955e0735569dfd1cd.css.map*/
+/*# sourceMappingURL=app.cba55d3f55d62f4b6939.css.map*/
