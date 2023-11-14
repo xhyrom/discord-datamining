@@ -2542,22 +2542,22 @@
         },
         397336: function(_, E, I) {
             "use strict";
-            var R, a, e, A, o, t, T, r, N, O, i, L, c;
+            var R, a, e, A, o, t, T, r, N, O, i, L, c, n;
             I.r(E), I.d(E, {
                 MAX_FAVORITES: function() {
-                    return n
-                },
-                MAX_FAVORITE_GIFS_SIZE: function() {
                     return D
                 },
-                ROLE_SUBSCRIPTION_SUBSECTION: function() {
+                MAX_FAVORITE_GIFS_SIZE: function() {
                     return S
                 },
-                APPLICATION_SUBSCRIPTION_SUBSECTION: function() {
+                ROLE_SUBSCRIPTION_SUBSECTION: function() {
                     return C
                 },
-                SOUNDBOARD_SUBSECTION: function() {
+                APPLICATION_SUBSCRIPTION_SUBSECTION: function() {
                     return l
+                },
+                SOUNDBOARD_SUBSECTION: function() {
+                    return s
                 },
                 ProfileCustomizationSubsection: function() {
                     return R
@@ -2569,42 +2569,43 @@
                     return e
                 },
                 UserSettingsScrollPositions: function() {
-                    return s
-                },
-                UserSettingsTypes: function() {
-                    return A
-                },
-                UserSettingsDelay: function() {
-                    return o
-                },
-                createEmptyEditInfo: function() {
                     return P
                 },
-                ChangeEmailSteps: function() {
+                UserSettingsTypes: function() {
+                    return o
+                },
+                UserSettingsDelay: function() {
                     return t
                 },
-                ChannelNotificationSettingsFlags: function() {
+                createEmptyEditInfo: function() {
                     return M
                 },
-                GuildNotificationSettingsFlags: function() {
+                ChangeEmailSteps: function() {
+                    return T
+                },
+                ChannelNotificationSettingsFlags: function() {
                     return U
                 },
+                GuildNotificationSettingsFlags: function() {
+                    return d
+                },
                 ProtoAudioSettingsContextTypes: function() {
-                    return T
+                    return r
                 }
             });
-            let n = 250,
-                D = 762880,
-                S = "ROLE_SUBSCRIPTIONS",
-                C = "APPLICATION_SUBSCRIPTION_SUBSECTION",
-                l = "SOUNDBOARD_SUBSECTION";
-            (r = R || (R = {})).USER_PROFILE = "user_profile", r.GUILD = "guild", r.TRY_IT_OUT = "try_it_out", (a || (a = {})).TRY_IT_OUT = "try_it_out", (N = e || (e = {})).REDUCED_MOTION = "reduced_motion", N.SYNC_PROFILE_THEME_WITH_USER_THEME = "sync_profile_theme_with_user_theme", N.LEGACY_CHAT_INPUT = "legacy_chat_input";
-            let s = {
+            let D = 250,
+                S = 762880,
+                C = "ROLE_SUBSCRIPTIONS",
+                l = "APPLICATION_SUBSCRIPTION_SUBSECTION",
+                s = "SOUNDBOARD_SUBSECTION";
+            (N = R || (R = {})).USER_PROFILE = "user_profile", N.GUILD = "guild", N.TRY_IT_OUT = "try_it_out", (a || (a = {})).TRY_IT_OUT = "try_it_out", (O = e || (e = {})).REDUCED_MOTION = "reduced_motion", O.SYNC_PROFILE_THEME_WITH_USER_THEME = "sync_profile_theme_with_user_theme", O.LEGACY_CHAT_INPUT = "legacy_chat_input", (A || (A = {})).HARDWARE_ACCELERATION = "hardware_acceleration";
+            let P = {
                 ProfileCustomizationScrollPositions: a,
-                AccessibilityScrollPositions: e
+                AccessibilityScrollPositions: e,
+                VoiceAndVideoScrollPositions: A
             };
 
-            function P() {
+            function M() {
                 return {
                     protoToSave: void 0,
                     timeout: void 0,
@@ -2616,8 +2617,8 @@
                     triggeredMigrations: !1,
                     offlineEditDataVersion: void 0
                 }
-            }(O = A || (A = {}))[O.PRELOADED_USER_SETTINGS = 1] = "PRELOADED_USER_SETTINGS", O[O.FRECENCY_AND_FAVORITES_SETTINGS = 2] = "FRECENCY_AND_FAVORITES_SETTINGS", O[O.TEST_SETTINGS = 3] = "TEST_SETTINGS", (i = o || (o = {}))[i.INFREQUENT_USER_ACTION = 0] = "INFREQUENT_USER_ACTION", i[i.FREQUENT_USER_ACTION = 10] = "FREQUENT_USER_ACTION", i[i.SLOW_USER_ACTION = 20] = "SLOW_USER_ACTION", i[i.AUTOMATED = 30] = "AUTOMATED", i[i.DAILY = 86400] = "DAILY", (L = t || (t = {}))[L.CONFIRM_START = 0] = "CONFIRM_START", L[L.CONFIRM_CODE = 1] = "CONFIRM_CODE", L[L.EMAIL_AND_PASSWORD = 2] = "EMAIL_AND_PASSWORD";
-            let M = {
+            }(i = o || (o = {}))[i.PRELOADED_USER_SETTINGS = 1] = "PRELOADED_USER_SETTINGS", i[i.FRECENCY_AND_FAVORITES_SETTINGS = 2] = "FRECENCY_AND_FAVORITES_SETTINGS", i[i.TEST_SETTINGS = 3] = "TEST_SETTINGS", (L = t || (t = {}))[L.INFREQUENT_USER_ACTION = 0] = "INFREQUENT_USER_ACTION", L[L.FREQUENT_USER_ACTION = 10] = "FREQUENT_USER_ACTION", L[L.SLOW_USER_ACTION = 20] = "SLOW_USER_ACTION", L[L.AUTOMATED = 30] = "AUTOMATED", L[L.DAILY = 86400] = "DAILY", (c = T || (T = {}))[c.CONFIRM_START = 0] = "CONFIRM_START", c[c.CONFIRM_CODE = 1] = "CONFIRM_CODE", c[c.EMAIL_AND_PASSWORD = 2] = "EMAIL_AND_PASSWORD";
+            let U = {
                     NEW_FORUM_THREADS_ON: 16384,
                     NEW_FORUM_THREADS_OFF: 8192,
                     OPT_IN_ENABLED: 4096,
@@ -2625,13 +2626,13 @@
                     UNREADS_ALL_MESSAGES: 1024,
                     UNREADS_MENTIONS_AND_HIGHLIGHTS: 512
                 },
-                U = {
+                d = {
                     OPT_IN_CHANNELS_ON: 16384,
                     OPT_IN_CHANNELS_OFF: 8192,
                     UNREADS_MENTIONS_AND_HIGHLIGHTS: 4096,
                     UNREADS_ALL_MESSAGES: 2048
                 };
-            (c = T || (T = {})).USER = "user", c.STREAM = "stream"
+            (n = r || (r = {})).USER = "user", n.STREAM = "stream"
         },
         996763: function(_, E, I) {
             if (I("70102"), null == window.GLOBAL_ENV && (window.GLOBAL_ENV = {}), !(null != window.GLOBAL_ENV.API_VERSION || null != window.GLOBAL_ENV.API_ENDPOINT || null != window.GLOBAL_ENV.GATEWAY_ENDPOINT || null != window.GLOBAL_ENV.WEBAPP_ENDPOINT || null != window.GLOBAL_ENV.CDN_HOST || null != window.GLOBAL_ENV.ASSET_ENDPOINT || null != window.GLOBAL_ENV.MEDIA_PROXY_ENDPOINT || null != window.GLOBAL_ENV.WIDGET_ENDPOINT || null != window.GLOBAL_ENV.INVITE_HOST || null != window.GLOBAL_ENV.GUILD_TEMPLATE_HOST || null != window.GLOBAL_ENV.GIFT_CODE_HOST || null != window.GLOBAL_ENV.RELEASE_CHANNEL || null != window.GLOBAL_ENV.DEVELOPERS_ENDPOINT || null != window.GLOBAL_ENV.MARKETING_ENDPOINT || null != window.GLOBAL_ENV.NETWORKING_ENDPOINT || null != window.GLOBAL_ENV.BRAINTREE_KEY || null != window.GLOBAL_ENV.STRIPE_KEY || null != window.GLOBAL_ENV.ADYEN_KEY || null != window.GLOBAL_ENV.PROJECT_ENV || null != window.GLOBAL_ENV.REMOTE_AUTH_ENDPOINT || null != window.GLOBAL_ENV.ALGOLIA_KEY || null != window.GLOBAL_ENV.RTC_LATENCY_ENDPOINT || null != window.GLOBAL_ENV.ACTIVITY_APPLICATION_HOST || null != window.GLOBAL_ENV.PUBLIC_PATH)) throw window.alert("Global environment variables not set!"), Error("Global environment variables not set! Aborting.")
@@ -12754,4 +12755,4 @@
         }
     }
 ]);
-//# sourceMappingURL=64d7c4e4c614d6d38f08.js.map
+//# sourceMappingURL=a969e87afe490d8cd351.js.map
