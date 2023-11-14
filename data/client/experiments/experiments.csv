@@ -365,6 +365,7 @@ id,hash,label
 2023-10_video_hook_stale_frame_timeout,1821813006,Video Hook Stale Frame Timeout
 2023-10_viewer_clipping,3351049965,Test viewer side clipping
 2023-10_wgc_stale_frame_timeout,4008174795,Windows Graphics Capture Stale Frame Timeout
+2023-11_adyen_auth_without_capture,1511378616,Adyen auth without capture rollout
 2023-11_clyde_ai_aa,1485389700,ClydeAI
 2023-11_enable_hang_status,1033614739,Hang Statuses
 2023-11_expanded_gifting_revamp_experiment,2053162821,Expanded Gifting Revamp Experiment

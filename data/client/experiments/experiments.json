@@ -4919,40 +4919,6 @@
   },
   {
     "data": {
-      "kind": "guild",
-      "hash": 3832113202
-    },
-    "rollout": {
-      "populations": [
-        {
-          "buckets": {
-            "none": {
-              "rollout": [
-                {
-                  "start": 0,
-                  "end": 10000
-                }
-              ]
-            }
-          },
-          "filters": []
-        }
-      ],
-      "revision": 4,
-      "overrides": {
-        "0": [
-          "814669604840013874"
-        ],
-        "2": [
-          "662267976984297473",
-          "1064959560890204271"
-        ]
-      },
-      "overrides_formatted": []
-    }
-  },
-  {
-    "data": {
       "kind": "user",
       "id": "2022-12_localized_pricing_promo_manager",
       "label": "Localized Pricing Promo Manager",
@@ -12577,16 +12543,19 @@
       "description": [
         "Not Eligible",
         "Control Bucket",
-        "Treatment 1: Viewer Clipping enabled"
+        "Treatment 1: Viewer Clipping enabled",
+        "Treatment 99: Viewer Clipping enabled; For developer testing"
       ],
       "hash": 3351049965,
       "buckets": [
         -1,
         0,
-        1
+        1,
+        99
       ],
       "config_keys": [
-        "enableViewerClipping"
+        "enableViewerClipping",
+        "ignoreSenderPreference"
       ]
     }
   },
@@ -12613,6 +12582,27 @@
         3,
         4,
         5
+      ],
+      "config_keys": [
+        "enabled"
+      ]
+    }
+  },
+  {
+    "data": {
+      "kind": "user",
+      "id": "2023-11_adyen_auth_without_capture",
+      "label": "Adyen auth without capture rollout",
+      "description": [
+        "Not Eligible",
+        "Control Bucket",
+        "Treatment 1: Enabled"
+      ],
+      "hash": 1511378616,
+      "buckets": [
+        -1,
+        0,
+        1
       ],
       "config_keys": [
         "enabled"
@@ -12797,44 +12787,36 @@
   },
   {
     "data": {
-      "kind": "user",
-      "id": "2023-11_no_manage_subscriptions_section",
-      "label": "No Manage Subscriptions Section",
-      "description": [
-        "Not Eligible",
-        "Control Bucket",
-        "Treatment 1: Enabled"
+      "kind": "guild",
+      "hash": 3832113202
+    },
+    "rollout": {
+      "populations": [
+        {
+          "buckets": {
+            "none": {
+              "rollout": [
+                {
+                  "start": 0,
+                  "end": 10000
+                }
+              ]
+            }
+          },
+          "filters": []
+        }
       ],
-      "hash": 4037560221,
-      "buckets": [
-        -1,
-        0,
-        1
-      ],
-      "config_keys": [
-        "enabled"
-      ]
-    }
-  },
-  {
-    "data": {
-      "kind": "user",
-      "id": "2023-11_seasonal_gifting_marketing_2023",
-      "label": "Seasonal Gifting Marketing 2023",
-      "description": [
-        "Not Eligible",
-        "Control Bucket",
-        "Treatment 1: Enabled"
-      ],
-      "hash": 3863309922,
-      "buckets": [
-        -1,
-        0,
-        1
-      ],
-      "config_keys": [
-        "enabled"
-      ]
+      "revision": 4,
+      "overrides": {
+        "0": [
+          "814669604840013874"
+        ],
+        "2": [
+          "662267976984297473",
+          "1064959560890204271"
+        ]
+      },
+      "overrides_formatted": []
     }
   },
   {
@@ -12984,6 +12966,48 @@
         ]
       },
       "overrides_formatted": []
+    }
+  },
+  {
+    "data": {
+      "kind": "user",
+      "id": "2023-11_no_manage_subscriptions_section",
+      "label": "No Manage Subscriptions Section",
+      "description": [
+        "Not Eligible",
+        "Control Bucket",
+        "Treatment 1: Enabled"
+      ],
+      "hash": 4037560221,
+      "buckets": [
+        -1,
+        0,
+        1
+      ],
+      "config_keys": [
+        "enabled"
+      ]
+    }
+  },
+  {
+    "data": {
+      "kind": "user",
+      "id": "2023-11_seasonal_gifting_marketing_2023",
+      "label": "Seasonal Gifting Marketing 2023",
+      "description": [
+        "Not Eligible",
+        "Control Bucket",
+        "Treatment 1: Enabled"
+      ],
+      "hash": 3863309922,
+      "buckets": [
+        -1,
+        0,
+        1
+      ],
+      "config_keys": [
+        "enabled"
+      ]
     }
   },
   {
