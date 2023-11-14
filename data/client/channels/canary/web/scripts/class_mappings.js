@@ -23328,7 +23328,6 @@
             "use strict";
             e.exports = {
                 animation: "animation_fb8933",
-                avatarSection: "avatarSection__70250",
                 buttons: "buttons_f09f3a",
                 closeButton: "closeButton_bf7ece",
                 closeIcon: "closeIcon_f4b9e3",
