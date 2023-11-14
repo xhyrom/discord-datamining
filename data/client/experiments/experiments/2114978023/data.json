@@ -1,7 +1,22 @@
 {
   "data": {
     "kind": "guild",
-    "hash": 2114978023
+    "id": "2023-09_recurring_events",
+    "label": "Allows guild to create recurring events",
+    "description": [
+      "Not Eligible",
+      "Control Bucket",
+      "Treatment 1: Recurring Events are enabled"
+    ],
+    "hash": 2114978023,
+    "buckets": [
+      -1,
+      0,
+      1
+    ],
+    "config_keys": [
+      "enabled"
+    ]
   },
   "rollout": {
     "populations": [
