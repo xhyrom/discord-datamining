@@ -8571,134 +8571,136 @@
             "use strict";
             n.r(t), n.d(t, {
                 resolveDefaultSetting: function() {
-                    return I
+                    return A
                 },
                 getExplicitContentSettingOrDefault: function() {
-                    return g
-                },
-                shouldRedactExplicitContent: function() {
                     return N
                 },
+                shouldRedactExplicitContent: function() {
+                    return R
+                },
                 updateExplicitContentSetting: function() {
-                    return O
+                    return y
                 },
                 shouldRedactExplicitContentForForum: function() {
-                    return R
+                    return v
                 },
                 ObscuredMediaTypes: function() {
                     return i
                 },
                 isMediaObscured: function() {
-                    return y
+                    return M
                 },
                 getObscuredMediaForMessage: function() {
-                    return v
+                    return L
                 },
                 isPendingScan: function() {
-                    return M
+                    return D
                 },
                 TrackMediaRedactionActionType: function() {
                     return a
                 },
                 trackMediaRedactionAction: function() {
-                    return L
+                    return U
                 },
                 trackScanningTimedOut: function() {
-                    return D
+                    return P
                 }
             }), n("702976");
-            var i, a, l, s, r = n("151426"),
-                o = n("676574"),
-                u = n("684337"),
-                d = n("845579"),
-                c = n("42203"),
-                _ = n("27618"),
-                E = n("697218"),
-                h = n("599110"),
-                f = n("568734"),
-                p = n("983850"),
-                T = n("457971"),
-                C = n("49111"),
-                S = n("568456");
+            var i, a, l, s, r = n("432710"),
+                o = n("151426"),
+                u = n("676574"),
+                d = n("155084"),
+                c = n("684337"),
+                _ = n("845579"),
+                E = n("42203"),
+                h = n("27618"),
+                f = n("697218"),
+                p = n("599110"),
+                T = n("568734"),
+                C = n("983850"),
+                S = n("457971"),
+                m = n("49111"),
+                I = n("568456");
             n("782340");
-            let m = () => {
-                    let e = E.default.getCurrentUser();
-                    return (null == e ? void 0 : e.nsfwAllowed) === !1 ? r.ExplicitContentRedaction.BLUR : r.ExplicitContentRedaction.SHOW
+            let g = () => {
+                    let e = f.default.getCurrentUser();
+                    return (null == e ? void 0 : e.nsfwAllowed) === !1 ? o.ExplicitContentRedaction.BLUR : o.ExplicitContentRedaction.SHOW
                 },
-                I = function() {
+                A = function() {
                     let e = arguments.length > 0 && void 0 !== arguments[0] && arguments[0],
                         t = arguments.length > 1 && void 0 !== arguments[1] && arguments[1];
-                    if (!e) return m();
-                    let n = d.ExplicitContentFilter.getSetting();
-                    return t ? n === S.ExplicitContentFilterTypes.FRIENDS_AND_NON_FRIENDS ? r.ExplicitContentRedaction.BLOCK : m() : n === S.ExplicitContentFilterTypes.NON_FRIENDS || n === S.ExplicitContentFilterTypes.FRIENDS_AND_NON_FRIENDS ? r.ExplicitContentRedaction.BLOCK : m()
+                    if (!e) return g();
+                    let n = _.ExplicitContentFilter.getSetting();
+                    return t ? n === I.ExplicitContentFilterTypes.FRIENDS_AND_NON_FRIENDS ? o.ExplicitContentRedaction.BLOCK : g() : n === I.ExplicitContentFilterTypes.NON_FRIENDS || n === I.ExplicitContentFilterTypes.FRIENDS_AND_NON_FRIENDS ? o.ExplicitContentRedaction.BLOCK : g()
                 },
-                g = () => {
-                    let e = d.ExplicitContentSettings.getSetting();
+                N = () => {
+                    let e = _.ExplicitContentSettings.getSetting();
                     return {
-                        explicitContentGuilds: e.explicitContentGuilds === r.ExplicitContentRedaction.UNSET_EXPLICIT_CONTENT_REDACTION ? I() : e.explicitContentGuilds,
-                        explicitContentNonFriendDm: e.explicitContentNonFriendDm === r.ExplicitContentRedaction.UNSET_EXPLICIT_CONTENT_REDACTION ? I(!0) : e.explicitContentNonFriendDm,
-                        explicitContentFriendDm: e.explicitContentFriendDm === r.ExplicitContentRedaction.UNSET_EXPLICIT_CONTENT_REDACTION ? I(!0, !0) : e.explicitContentFriendDm
+                        explicitContentGuilds: e.explicitContentGuilds === o.ExplicitContentRedaction.UNSET_EXPLICIT_CONTENT_REDACTION ? A() : e.explicitContentGuilds,
+                        explicitContentNonFriendDm: e.explicitContentNonFriendDm === o.ExplicitContentRedaction.UNSET_EXPLICIT_CONTENT_REDACTION ? A(!0) : e.explicitContentNonFriendDm,
+                        explicitContentFriendDm: e.explicitContentFriendDm === o.ExplicitContentRedaction.UNSET_EXPLICIT_CONTENT_REDACTION ? A(!0, !0) : e.explicitContentFriendDm
                     }
                 };
 
-            function A(e) {
-                return e === r.ExplicitContentRedaction.BLUR || e === r.ExplicitContentRedaction.BLOCK
+            function O(e) {
+                return e === o.ExplicitContentRedaction.BLUR || e === o.ExplicitContentRedaction.BLOCK
             }
 
-            function N(e) {
+            function R(e) {
                 var t;
-                if (!(0, T.isEligibleForExplicitMediaRedaction)()) return !1;
-                let n = E.default.getCurrentUser();
+                if (!(0, S.isEligibleForExplicitMediaRedaction)()) return !1;
+                let n = f.default.getCurrentUser();
                 if (null == n || (null === (t = e.author) || void 0 === t ? void 0 : t.id) === n.id) return !1;
                 let {
                     explicitContentGuilds: i,
                     explicitContentFriendDm: a,
                     explicitContentNonFriendDm: l
-                } = g(), s = c.default.getChannel(e.channel_id);
+                } = N(), s = E.default.getChannel(e.channel_id);
                 if (null == s) return !1;
-                if (s.isDM() || s.isGroupDM()) return null != e.author && _.default.getFriendIDs().includes(e.author.id) ? A(a) : A(l);
-                return A(i)
+                if (s.isDM() || s.isGroupDM()) return null != e.author && h.default.getFriendIDs().includes(e.author.id) ? O(a) : O(l);
+                return O(i)
             }
-            let O = e => {
-                let t = g();
-                d.ExplicitContentSettings.updateSetting({
+            let y = e => {
+                let t = N();
+                _.ExplicitContentSettings.updateSetting({
                     ...t,
                     ...e
                 })
             };
 
-            function R() {
-                if (!(0, T.isEligibleForExplicitMediaRedaction)()) return !1;
-                let e = E.default.getCurrentUser();
+            function v() {
+                if (!(0, S.isEligibleForExplicitMediaRedaction)()) return !1;
+                let e = f.default.getCurrentUser();
                 if (null == e) return !1;
                 let {
                     explicitContentGuilds: t
-                } = g();
-                return A(t)
+                } = N();
+                return O(t)
             }
 
-            function y(e, t) {
+            function M(e, t) {
                 var n, i;
                 if (!t) return !1;
-                if (o.default.get("obscure_blur_effect_enabled")) return !0;
+                if (u.default.get("obscure_blur_effect_enabled")) return !0;
                 switch (e.type) {
                     case 1:
-                        return (0, f.hasFlag)(null !== (n = e.media.flags) && void 0 !== n ? n : 0, C.MessageEmbedFlags.CONTAINS_EXPLICIT_MEDIA);
+                        return (0, T.hasFlag)(null !== (n = e.media.flags) && void 0 !== n ? n : 0, m.MessageEmbedFlags.CONTAINS_EXPLICIT_MEDIA);
                     case 0:
-                        return (0, f.hasFlag)(null !== (i = e.media.flags) && void 0 !== i ? i : 0, C.MessageAttachmentFlags.CONTAINS_EXPLICIT_MEDIA);
+                        return (0, T.hasFlag)(null !== (i = e.media.flags) && void 0 !== i ? i : 0, m.MessageAttachmentFlags.CONTAINS_EXPLICIT_MEDIA);
                     default:
                         return !1
                 }
             }
 
-            function v(e) {
-                let t = N(e);
+            function L(e) {
+                let t = R(e);
                 return t ? {
-                    obscuredAttachments: e.attachments.filter(e => y({
+                    obscuredAttachments: e.attachments.filter(e => M({
                         type: 0,
                         media: e
                     }, !0)),
-                    obscuredEmbeds: e.embeds.filter(e => y({
+                    obscuredEmbeds: e.embeds.filter(e => M({
                         type: 1,
                         media: e
                     }, !0))
@@ -8708,28 +8710,28 @@
                 }
             }
 
-            function M(e) {
-                return !o.default.get("explicit_media_redaction_ignore_pending_scan") && null == e
+            function D(e) {
+                return !u.default.get("explicit_media_redaction_ignore_pending_scan") && null == e
             }
 
-            function L(e) {
+            function U(e) {
                 let {
                     action: t,
                     channelId: n,
                     messageId: i
                 } = e;
                 if (null == n || null == i) return;
-                let a = c.default.getChannel(n);
-                h.default.track(C.AnalyticEvents.EXPLICIT_MEDIA_ACTION, {
+                let a = E.default.getChannel(n);
+                p.default.track(m.AnalyticEvents.EXPLICIT_MEDIA_ACTION, {
                     action: t,
                     guild_id: null == a ? void 0 : a.guild_id,
                     channel_id: n,
                     message_id: i,
-                    user_is_underage: (0, u.isCurrentUserTeen)()
+                    user_is_underage: (0, c.isCurrentUserTeen)()
                 })
             }
 
-            function D(e) {
+            function P(e) {
                 let {
                     channelId: t,
                     messageId: n,
@@ -8737,15 +8739,17 @@
                     embedIds: a
                 } = e;
                 if (null == t || null == n) return;
-                let l = c.default.getChannel(t);
-                h.default.track(C.AnalyticEvents.EXPLICIT_MEDIA_SCAN_CLIENT_TIMED_OUT, {
+                let l = E.default.getChannel(t);
+                p.default.track(m.AnalyticEvents.EXPLICIT_MEDIA_SCAN_CLIENT_TIMED_OUT, {
                     channel_id: t,
                     guild_id: null == l ? void 0 : l.guild_id,
                     message_id: n,
                     attachment_ids: i,
                     embed_ids: a,
-                    user_is_underage: (0, u.isCurrentUserTeen)(),
-                    scan_timeout_duration: p.MESSAGE_SCAN_TIMEOUT
+                    user_is_underage: (0, c.isCurrentUserTeen)(),
+                    scan_timeout_duration: C.MESSAGE_SCAN_TIMEOUT
+                }), d.default.increment({
+                    name: r.MetricEvents.EXPLICIT_MEDIA_SCAN_CLIENT_TIMED_OUT
                 })
             }(l = i || (i = {}))[l.Attachment = 0] = "Attachment", l[l.Embed = 1] = "Embed", (s = a || (a = {})).EXPLICIT_MEDIA_LEARN_MORE_VIEWED = "explicit_media_learn_more_viewed", s.EXPLICIT_MEDIA_LEARN_MORE_CLICK_SETTINGS = "explicit_media_learn_more_click_settings", s.EXPLICIT_MEDIA_LEARN_MORE_CLICK_LEARN_MORE = "explicit_media_learn_more_click_learn_more", s.EXPLICIT_MEDIA_LEARN_MORE_CLICK_DISMISS = "explicit_media_learn_more_click_dismiss", s.EXPLICIT_MEDIA_LEARN_MORE_CLICK_FALSE_POSITIVE = "explicit_media_learn_more_click_false_positive", s.EXPLICIT_MEDIA_FALSE_POSITIVE_VIEWED = "explicit_media_false_positive_viewed", s.EXPLICIT_MEDIA_FALSE_POSITIVE_CLICK_CONFIRM = "explicit_media_false_positive_click_confirm", s.EXPLICIT_MEDIA_FALSE_POSITIVE_CLICK_CANCEL = "explicit_media_false_positive_click_cancel"
         },
@@ -33535,7 +33539,7 @@
                 MetricEvents: function() {
                     return i
                 }
-            }), n("222007"), (a = i || (i = {})).APP_CRASHED = "app_crashed", a.SOCKET_CRASHED = "socket_crashed", a.MESSAGE_REQUEST_VIEW = "message_request_view", a.SPAM_MESSAGE_REQUEST_VIEW = "spam_message_request_view", a.SPAM_MESSAGE_REQUEST_ERROR_VIEW = "spam_message_request_error_view", a.FAMILY_CENTER_VIEW = "family_center_view", a.SAFETY_HUB_VIEW = "safety_hub_view", a.MESSAGE_REQUEST_COUNT_DRIFT = "message_request_count_drift", a.FORUM_CHANNEL_GRID_AUTO_ENABLED = "forum_channel_grid_auto_enabled", a.REMIX_FONT_LOADING_ERROR = "remix_font_loading_error", a.AFK_NOT_IDLE = "afk_not_idle", a.CAPTCHA_EVENT = "captcha_event", a.SAFETY_WARNING_VIEW = "safety_warning_view", a.SAFETY_WARNING_MODAL_VIEW = "safety_warning_modal_view", a.OTA_CHECK_ATTEMPT = "OtaCheckAttempt", a.OTA_ASSET_DOWNLOAD_ATTEMPT = "OtaAssetDownloadAttempt", a.OTA_UPDATE_CHECK = "ota_update_check", a.OTA_ASSET_DOWNLOAD = "ota_asset_download"
+            }), n("222007"), (a = i || (i = {})).APP_CRASHED = "app_crashed", a.SOCKET_CRASHED = "socket_crashed", a.MESSAGE_REQUEST_VIEW = "message_request_view", a.SPAM_MESSAGE_REQUEST_VIEW = "spam_message_request_view", a.SPAM_MESSAGE_REQUEST_ERROR_VIEW = "spam_message_request_error_view", a.FAMILY_CENTER_VIEW = "family_center_view", a.SAFETY_HUB_VIEW = "safety_hub_view", a.MESSAGE_REQUEST_COUNT_DRIFT = "message_request_count_drift", a.FORUM_CHANNEL_GRID_AUTO_ENABLED = "forum_channel_grid_auto_enabled", a.REMIX_FONT_LOADING_ERROR = "remix_font_loading_error", a.AFK_NOT_IDLE = "afk_not_idle", a.CAPTCHA_EVENT = "captcha_event", a.SAFETY_WARNING_VIEW = "safety_warning_view", a.SAFETY_WARNING_MODAL_VIEW = "safety_warning_modal_view", a.EXPLICIT_MEDIA_SCAN_CLIENT_TIMED_OUT = "explicit_media_scan_client_timed_out", a.OTA_CHECK_ATTEMPT = "OtaCheckAttempt", a.OTA_ASSET_DOWNLOAD_ATTEMPT = "OtaAssetDownloadAttempt", a.OTA_UPDATE_CHECK = "ota_update_check", a.OTA_ASSET_DOWNLOAD = "ota_asset_download"
         },
         615361: function(e, t, n) {
             "use strict";
@@ -33555,4 +33559,4 @@
         }
     }
 ]);
-//# sourceMappingURL=e209e25ec605d39c3272.js.map
+//# sourceMappingURL=c8dca2bf786e1fbc6c86.js.map
