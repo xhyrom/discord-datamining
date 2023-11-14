@@ -12440,6 +12440,12 @@
                             eventException: t
                         });
                         break;
+                    case "GUILD_SCHEDULED_EVENT_EXCEPTIONS_DELETE":
+                        G({
+                            type: "GUILD_SCHEDULED_EVENT_EXCEPTIONS_DELETE",
+                            eventId: t.event_id
+                        });
+                        break;
                     case "GUILD_SCHEDULED_EVENT_USER_ADD":
                         G({
                             type: "GUILD_SCHEDULED_EVENT_USER_ADD",
@@ -14900,6 +14906,15 @@
                         ...n,
                         guild_scheduled_event_exceptions: i
                     }), !0
+                },
+                GUILD_SCHEDULED_EVENT_EXCEPTIONS_DELETE: function(e) {
+                    let {
+                        eventId: t
+                    } = e, n = E.get(t);
+                    return null != n && (S({
+                        ...n,
+                        guild_scheduled_event_exceptions: []
+                    }), !0)
                 },
                 LOGOUT: function() {
                     return E.clear(), !0
@@ -33567,4 +33582,4 @@
         }
     }
 ]);
-//# sourceMappingURL=93af8b3b602687419942.js.map
+//# sourceMappingURL=9e189e7b79784dd09075.js.map
