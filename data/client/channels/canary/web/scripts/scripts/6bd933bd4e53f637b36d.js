@@ -10126,7 +10126,7 @@
                             }
                         }), t => {
                             let i = t.data;
-                            n += k(i), e.feed(i)
+                            null != t.raw_length ? n += t.raw_length : n += k(i), e.feed(i)
                         }),
                         onError: () => {
                             this.setResumeUrl(null), I.default.flushDNSCache(), this._handleClose(!1, 0, "An error with the websocket occurred")
@@ -33567,4 +33567,4 @@
         }
     }
 ]);
-//# sourceMappingURL=832064086a84f66dd133.js.map
+//# sourceMappingURL=6bd933bd4e53f637b36d.js.map
