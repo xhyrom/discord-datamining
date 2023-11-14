@@ -6856,6 +6856,12 @@
     border-right-color: var(--brand-experiment)
 }
 
+.upsellTooltipWrapper_df8272.caretLeftTop__47113:after {
+    right: 100%;
+    top: 8px;
+    border-right-color: var(--brand-experiment)
+}
+
 .upsellTooltipWrapper_df8272.caretRightCenter__04179:after {
     right: -16px;
     top: calc(50% - 8px);
@@ -19459,8 +19465,8 @@ input[type=checkbox]:focus-visible+.label_ee78c3 {
 
 .message__13e98 {
     font-weight: 500;
-    font-size: 16px;
-    line-height: 20px;
+    font-size: 1rem;
+    line-height: 1.25rem;
     white-space: nowrap;
     text-overflow: ellipsis;
     overflow: hidden
@@ -43759,6 +43765,15 @@ html .progress__4ef76 {
 .noChannel__7bbff {
     flex: 1 1 auto;
     position: relative
+}
+
+.coachmark__51b85 {
+    width: 280px
+}
+
+.image_bdd7c1 {
+    width: 220px;
+    margin: 0 16px 16px
 }
 
 .container__24643 {
@@ -101444,6 +101459,12 @@ html .invoiceCancelRow_a8669b {
     min-width: 20em
 }
 
+.title_fc7ecc {
+    display: inline-flex;
+    flex-direction: row;
+    gap: 4px
+}
+
 .doubleInput_b48729 {
     display: flex;
     flex-direction: row;
@@ -123248,4 +123269,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=app.545004b111393507c651.css.map*/
+/*# sourceMappingURL=app.87c6784ef22c2b59e833.css.map*/
