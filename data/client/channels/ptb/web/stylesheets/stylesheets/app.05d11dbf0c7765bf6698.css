@@ -26085,6 +26085,37 @@ input[type=checkbox]:focus-visible+.label_ee78c3 {
     opacity: .95
 }
 
+.defaultContainer__91554 {
+    display: flex;
+    align-items: center;
+    margin-top: 12px;
+    background-color: var(--input-background)
+}
+
+.emojiIcon_ae6565 {
+    width: 20px;
+    cursor: pointer;
+    color: var(--interactive-active);
+    padding-right: 8px;
+    padding-left: 20px
+}
+
+.defaultTextInput__91909 {
+    flex: 1
+}
+
+.imageOnlyContainer__04301 {
+    margin-top: 12px;
+    border-radius: var(--radius-lg);
+    background-color: var(--background-primary);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 48%;
+    height: 158px;
+    cursor: pointer
+}
+
 .container_e78017 {
     border-radius: 8px;
     box-shadow: var(--elevation-stroke), var(--elevation-high);
@@ -26112,6 +26143,37 @@ input[type=checkbox]:focus-visible+.label_ee78c3 {
     width: 16px;
     height: 16px;
     cursor: pointer
+}
+
+.form__15f72 {
+    padding: 20px 15px;
+    border-bottom: 1px solid var(--background-modifier-hover)
+}
+
+.formInput_f4ef33 {
+    border-radius: var(--radius-lg)
+}
+
+.footer__9fa48 {
+    padding: 15px;
+    padding-top: 20px;
+    display: flex
+}
+
+.postButton__42d75 {
+    background-color: var(--redesign-button-primary-background);
+    border-radius: 48px
+}
+
+.postButtonInner__8d85f {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 4px
+}
+
+.postIcon__8b0b3 {
+    width: 12px
 }
 
 .userTooltip__658ae {
@@ -123445,4 +123507,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=app.f1422d0c6e7d41b56ea8.css.map*/
+/*# sourceMappingURL=app.05d11dbf0c7765bf6698.css.map*/

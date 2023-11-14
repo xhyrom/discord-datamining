@@ -181,7 +181,7 @@
             let c = new _.default("Spellchecker"),
                 I = null === s.default || void 0 === s.default ? void 0 : s.default.spellCheck;
 
-            function T(e) {
+            function N(e) {
                 var t;
                 e = null !== (t = d.default[e]) && void 0 !== t ? t : e;
                 let n = (0, i.parse)(e.replace(/[_-]/g, "-"));
@@ -195,7 +195,7 @@
                 } = n.langtag;
                 return "".concat(l.language.toLowerCase(), "-").concat(u.toUpperCase())
             }
-            class N {
+            class T {
                 get enabled() {
                     return this._enabled
                 }
@@ -261,8 +261,8 @@
             async function D() {
                 var e, t;
                 let n = null !== (e = await I.getAvailableDictionaries()) && void 0 !== e ? e : [],
-                    i = n.map(T).filter(o.isNotNullish),
-                    l = new N(i);
+                    i = n.map(N).filter(o.isNotNullish),
+                    l = new T(i);
                 return t = l, null != document.body && document.body.addEventListener("beforeinput", e => A(t, e.target), !0), l
             }
         },
@@ -446,6 +446,9 @@
                 },
                 CUSTOM_CALL_SOUND_GLOBAL_GUILD_ID: function() {
                     return E
+                },
+                NUM_RECENTLY_HEARD_SOUNDS: function() {
+                    return d
                 }
             }), n("222007");
             let u = 32,
@@ -459,7 +462,8 @@
                 },
                 a = "ctrl+`",
                 o = [],
-                E = "0"
+                E = "0",
+                d = 6
         },
         235004: function(e, t, n) {
             "use strict";
@@ -478,16 +482,16 @@
                 d = n("599110"),
                 c = n("829536"),
                 I = n("846325"),
-                T = n("49111"),
-                N = n("397336");
+                N = n("49111"),
+                T = n("397336");
             (l = i || (i = {}))[l.NOT_FETCHED = 0] = "NOT_FETCHED", l[l.FETCHING = 1] = "FETCHING", l[l.FETCHED = 2] = "FETCHED";
             let A = new Map,
                 D = new Map,
                 L = new Set,
                 O = 0,
                 S = 0,
-                g = new Set,
-                f = new Map,
+                f = new Set,
+                g = new Map,
                 U = !1;
 
             function C(e) {
@@ -497,7 +501,7 @@
                 null != n && null != i && -1 !== i ? (n[i] = t, A.set(t.guildId, [...n])) : null != n && (null == n || n.push(t), A.set(t.guildId, [...n]))
             }
             let h = r.debounce(e => {
-                d.default.track(T.AnalyticEvents.UPDATE_SOUNDBOARD_SETTINGS, {
+                d.default.track(N.AnalyticEvents.UPDATE_SOUNDBOARD_SETTINGS, {
                     volume: Math.round((0, c.amplitudeToPerceptual)(e))
                 }), a.SoundboardSettings.updateSetting({
                     volume: e
@@ -517,7 +521,7 @@
                 getOverlaySerializedState() {
                     return {
                         soundboardSounds: Object.fromEntries(A),
-                        favoritedSoundIds: Array.from(g),
+                        favoritedSoundIds: Array.from(f),
                         localSoundboardMutes: Array.from(L)
                     }
                 }
@@ -552,17 +556,17 @@
                     return 2 === O
                 }
                 isUserPlayingSounds(e) {
-                    let t = f.get(e);
+                    let t = g.get(e);
                     return null != t && t > 0
                 }
                 isPlayingSound(e) {
                     return null != D.get(e)
                 }
                 isFavoriteSound(e) {
-                    return g.has(e)
+                    return f.has(e)
                 }
                 getFavorites() {
-                    return g
+                    return f
                 }
                 isLocalSoundboardMuted(e) {
                     return L.has(e)
@@ -577,7 +581,7 @@
             p.displayName = "SoundboardStore";
             var G = new p(_.default, {
                 LOGOUT: function() {
-                    A.clear(), D.clear(), f.clear(), U = !1, S = 0, O = 0
+                    A.clear(), D.clear(), g.clear(), U = !1, S = 0, O = 0
                 },
                 GUILD_SOUNDBOARD_FETCH: function() {
                     S = 1
@@ -599,16 +603,16 @@
                     let {
                         soundId: l,
                         userId: u
-                    } = e, r = (null !== (n = D.get(l)) && void 0 !== n ? n : 0) + 1, s = (null !== (i = f.get(u)) && void 0 !== i ? i : 0) + 1;
-                    D.set(l, r), f.set(u, s), u !== (null === (t = E.default.getCurrentUser()) || void 0 === t ? void 0 : t.id) && (U = !0)
+                    } = e, r = (null !== (n = D.get(l)) && void 0 !== n ? n : 0) + 1, s = (null !== (i = g.get(u)) && void 0 !== i ? i : 0) + 1;
+                    D.set(l, r), g.set(u, s), u !== (null === (t = E.default.getCurrentUser()) || void 0 === t ? void 0 : t.id) && (U = !0)
                 },
                 GUILD_SOUNDBOARD_SOUND_PLAY_END: function(e) {
                     var t, n;
                     let {
                         soundId: i,
                         userId: l
-                    } = e, u = (null !== (t = D.get(i)) && void 0 !== t ? t : 0) - 1, r = (null !== (n = f.get(l)) && void 0 !== n ? n : 0) - 1;
-                    u <= 0 ? D.delete(i) : D.set(i, u), r <= 0 ? f.delete(l) : f.set(l, r)
+                    } = e, u = (null !== (t = D.get(i)) && void 0 !== t ? t : 0) - 1, r = (null !== (n = g.get(l)) && void 0 !== n ? n : 0) - 1;
+                    u <= 0 ? D.delete(i) : D.set(i, u), r <= 0 ? g.delete(l) : g.set(l, r)
                 },
                 USER_SOUNDBOARD_SET_VOLUME: function(e) {
                     let {
@@ -617,7 +621,7 @@
                     h(t)
                 },
                 VOICE_CHANNEL_SELECT: function() {
-                    D.clear(), f.clear()
+                    D.clear(), g.clear()
                 },
                 USER_SETTINGS_PROTO_UPDATE: function(e) {
                     let {
@@ -626,10 +630,10 @@
                         type: n,
                         proto: i
                     } = t;
-                    if (n === N.UserSettingsTypes.FRECENCY_AND_FAVORITES_SETTINGS) {
+                    if (n === T.UserSettingsTypes.FRECENCY_AND_FAVORITES_SETTINGS) {
                         var l, u;
-                        g = new Set(null !== (u = null == i ? void 0 : null === (l = i.favoriteSoundboardSounds) || void 0 === l ? void 0 : l.soundIds) && void 0 !== u ? u : [])
-                    } else n === N.UserSettingsTypes.PRELOADED_USER_SETTINGS && R(i)
+                        f = new Set(null !== (u = null == i ? void 0 : null === (l = i.favoriteSoundboardSounds) || void 0 === l ? void 0 : l.soundIds) && void 0 !== u ? u : [])
+                    } else n === T.UserSettingsTypes.PRELOADED_USER_SETTINGS && R(i)
                 },
                 SOUNDBOARD_FETCH_DEFAULT_SOUNDS: function() {
                     O = 1
@@ -668,7 +672,7 @@
                     let {
                         soundboardStoreState: t
                     } = e;
-                    A = new Map(Object.entries(t.soundboardSounds)), g = new Set(t.favoritedSoundIds), L = new Set(t.localSoundboardMutes)
+                    A = new Map(Object.entries(t.soundboardSounds)), f = new Set(t.favoritedSoundIds), L = new Set(t.localSoundboardMutes)
                 },
                 GUILD_SOUNDBOARD_SOUNDS_UPDATE: function(e) {
                     let {
@@ -727,7 +731,7 @@
                     return I
                 },
                 addResultListener: function() {
-                    return T
+                    return N
                 }
             });
             var i = n("49671"),
@@ -770,7 +774,7 @@
                 null != t && t.setAppLocale(e)
             }
 
-            function T(e) {
+            function N(e) {
                 if (!r()) return () => {};
                 let t = i.default.spellCheck.on("spellcheck-result", e);
                 return null != t ? t : () => {}
@@ -778,4 +782,4 @@
         }
     }
 ]);
-//# sourceMappingURL=e3b24155f058a2dd292f.js.map
+//# sourceMappingURL=ef7fab730fc37d0f37b4.js.map
