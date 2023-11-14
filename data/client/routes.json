@@ -3363,7 +3363,11 @@
   },
   "GUILD_EVENT_USER_COUNTS": {
     "url": "/guilds/:param/scheduled-events/:param/users/counts",
-    "allowed_methods": null
+    "allowed_methods": [
+      "GET",
+      "HEAD",
+      "OPTIONS"
+    ]
   },
   "GUILD_EVENT_USERS": {
     "url": "/guilds/:param/scheduled-events/:param/:param/users",
