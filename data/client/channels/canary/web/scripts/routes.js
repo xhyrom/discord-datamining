@@ -2735,6 +2735,16 @@
                     [a.DARKER]: {
                         raw: "PLUM_15",
                         opacity: 1
+                    },
+                    gradient: {
+                        light: {
+                            raw: "BLACK_500",
+                            opacity: .1
+                        },
+                        dark: {
+                            raw: "WHITE_500",
+                            opacity: .1
+                        }
                     }
                 },
                 BACKGROUND_FLOATING: {
@@ -3193,11 +3203,11 @@
                     gradient: {
                         light: {
                             raw: "WHITE_500",
-                            opacity: .5
+                            opacity: .8
                         },
                         dark: {
                             raw: "BLACK_500",
-                            opacity: .5
+                            opacity: .7
                         }
                     }
                 },
@@ -3221,11 +3231,11 @@
                     gradient: {
                         light: {
                             raw: "WHITE_500",
-                            opacity: .5
+                            opacity: .8
                         },
                         dark: {
                             raw: "BLACK_500",
-                            opacity: .5
+                            opacity: .7
                         }
                     }
                 },
@@ -3249,11 +3259,11 @@
                     gradient: {
                         light: {
                             raw: "WHITE_500",
-                            opacity: .5
+                            opacity: .8
                         },
                         dark: {
                             raw: "BLACK_500",
-                            opacity: .5
+                            opacity: .7
                         }
                     }
                 },
@@ -3305,11 +3315,11 @@
                     gradient: {
                         light: {
                             raw: "WHITE_500",
-                            opacity: .5
+                            opacity: .8
                         },
                         dark: {
                             raw: "BLACK_500",
-                            opacity: .5
+                            opacity: .7
                         }
                     }
                 },
@@ -5587,6 +5597,16 @@
                     [a.DARKER]: {
                         raw: "PLUM_24",
                         opacity: .65
+                    },
+                    gradient: {
+                        light: {
+                            raw: "BLACK_500",
+                            opacity: .1
+                        },
+                        dark: {
+                            raw: "WHITE_500",
+                            opacity: .1
+                        }
                     }
                 },
                 INPUT_PLACEHOLDER_TEXT: {
@@ -5659,6 +5679,16 @@
                     [a.DARKER]: {
                         raw: "PLUM_13",
                         opacity: 1
+                    },
+                    gradient: {
+                        light: {
+                            raw: "BLACK_500",
+                            opacity: .3
+                        },
+                        dark: {
+                            raw: "WHITE_500",
+                            opacity: .3
+                        }
                     }
                 },
                 INTERACTIVE_NORMAL: {
@@ -12724,4 +12754,4 @@
         }
     }
 ]);
-//# sourceMappingURL=dd3e8baa80156576c1c8.js.map
+//# sourceMappingURL=64d7c4e4c614d6d38f08.js.map
