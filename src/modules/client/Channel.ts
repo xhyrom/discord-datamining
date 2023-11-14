@@ -111,12 +111,12 @@ export class Channel implements Module {
       join(this.baseDir, "info.json"),
       JSON.stringify(
         {
-          build_number: await webBuild.buildNumber(),
-          version_hash: await webBuild.versionHash(),
+          build_number: webBuild.buildNumber,
+          version_hash: webBuild.versionHash,
           host_version:
             (await hostManifest?.full?.host_version?.join?.(".")) ??
             oldInfo.host_version,
-          built_at: await webBuild.builtAt(),
+          built_at: webBuild.builtAt,
         },
         null,
         2
@@ -130,12 +130,10 @@ export class Channel implements Module {
           `# ${this.name}`,
           "",
           "### Info",
-          `Build number: ${await webBuild.buildNumber()}  `,
-          `Version hash: ${await webBuild.versionHash()}  `,
+          `Build number: ${webBuild.buildNumber}  `,
+          `Version hash: ${webBuild.versionHash}  `,
           `Host version: ${hostManifest.full.host_version.join(".")}  `,
-          `Built at: ${new Date(
-            (await webBuild.builtAt())!
-          ).toLocaleString()}  `,
+          `Built at: ${new Date(webBuild.builtAt!).toLocaleString()}  `,
           "",
           "### Modules",
           markdownTable([
