@@ -19098,6 +19098,15 @@
                 innerBadge: "innerBadge__2f562"
             }
         },
+        415973: function(e, t, o) {
+            "use strict";
+            e.exports = {
+                closeIcon: "closeIcon_af678b",
+                container: "container_e78017",
+                header: "header_b229ef",
+                headerText: "headerText_a04687"
+            }
+        },
         652886: function(e, t, o) {
             "use strict";
             e.exports = {
