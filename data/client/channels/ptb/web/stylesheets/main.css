@@ -19460,8 +19460,8 @@ input[type=checkbox]:focus-visible+.label_ee78c3 {
 
 .message__13e98 {
     font-weight: 500;
-    font-size: 16px;
-    line-height: 20px;
+    font-size: 1rem;
+    line-height: 1.25rem;
     white-space: nowrap;
     text-overflow: ellipsis;
     overflow: hidden
@@ -39770,6 +39770,92 @@ html .progress__4ef76 {
 
 .theme-light .previewHover__1e0e0 {
     background: hsl(var(--primary-500-hsl)/.6)
+}
+
+.statusGroup__7809a {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 4px;
+    padding: 8px 12px;
+    border-radius: 8px
+}
+
+.statusIcon__87cd6 {
+    flex-shrink: 0;
+    margin-left: 4px;
+    height: 28px
+}
+
+.customStatusText__79d70 {
+    font-size: 12px;
+    color: var(--header-secondary)
+}
+
+.statusTextRow__084d2 {
+    display: flex;
+    flex-direction: row;
+    gap: 8px;
+    align-items: center
+}
+
+.iconWidget_b2ac71 {
+    border-radius: 8px;
+    height: 40px;
+    width: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center
+}
+
+.iconWidgetIcon__4c03a {
+    flex-shrink: 0;
+    height: 28px
+}
+
+.statusButtonRegion__47ea7 {
+    z-index: 1;
+    margin-top: 4px
+}
+
+.statusButtonRegion__47ea7 .statusWidget__878ca {
+    padding: 4px 4px 4px 26px;
+    border-top: 1px solid var(--background-modifier-active);
+    border-radius: 0
+}
+
+.popoutWrapper__16db8 {
+    background-color: var(--background-secondary-alt);
+    padding: 8px;
+    border-radius: 12px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px
+}
+
+.iconWidget_db0821 {
+    border-radius: 8px;
+    cursor: pointer;
+    border: 1px solid var(--background-modifier-hover);
+    background-color: var(--background-modifier-hover)
+}
+
+.iconWidget_db0821:hover {
+    border: 1px solid var(--background-modifier-active);
+    background-color: var(--background-modifier-active)
+}
+
+.wrapper__139c2 {
+    background-color: var(--background-secondary-alt);
+    padding: 12px;
+    width: 252px;
+    border-radius: 5px;
+    box-shadow: var(--elevation-high)
+}
+
+.widget_c99b48 {
+    margin-bottom: 8px
 }
 
 .draggable__081c0 {
@@ -103895,6 +103981,43 @@ html .invoiceCancelRow_a8669b {
     margin-bottom: 24px
 }
 
+.modalHeader_a62250 {
+    flex-direction: column;
+    align-items: flex-start;
+    border-bottom: 1px solid var(--background-modifier-accent);
+    padding: 24px
+}
+
+.closeButton__918af {
+    position: absolute;
+    top: 8px;
+    right: 8px
+}
+
+.modalContent_a47f81 {
+    padding: 24px
+}
+
+.hangStatusSelector_c82f29 {
+    display: flex;
+    flex-direction: row;
+    gap: 12px;
+    row-gap: 12px;
+    flex-wrap: wrap;
+    margin: 4px 0 28px
+}
+
+.statusWidget__729de {
+    width: 184px;
+    cursor: pointer;
+    border: 1px solid var(--background-modifier-accent);
+    min-height: 36px
+}
+
+.statusWidget__729de:hover {
+    background-color: var(--background-modifier-accent)
+}
+
 .formHeaderContainer__6f476 {
     padding: 24px 16px 0;
     overflow: visible;
@@ -123264,4 +123387,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=app.9708714bea07e8d1158a.css.map*/
+/*# sourceMappingURL=app.91a8814ca90c1d6699b9.css.map*/
