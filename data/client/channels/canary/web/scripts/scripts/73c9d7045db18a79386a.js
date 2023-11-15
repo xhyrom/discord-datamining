@@ -1105,7 +1105,7 @@
                     } = e, l = crypto.getRandomValues(new Uint8Array(8));
                     k = btoa(String.fromCharCode(...l));
                     let a = new URLSearchParams;
-                    a.append("build_id", "ade4ee4cafafcdc0b6386af476d91f331cf6bee8"), a.append("rpc", String(t)), a.append("rpc_auth_token", k), n = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(a.toString())
+                    a.append("build_id", "4107008fac9c58c77efad1a79ff57c6869d09a1e"), a.append("rpc", String(t)), a.append("rpc_auth_token", k), n = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(a.toString())
                 },
                 OVERLAY_CALL_PRIVATE_CHANNEL: function(e) {
                     let {
@@ -1175,4 +1175,4 @@
         }
     }
 ]);
-//# sourceMappingURL=e4f86e5ed1334c22d1b3.js.map
+//# sourceMappingURL=73c9d7045db18a79386a.js.map
