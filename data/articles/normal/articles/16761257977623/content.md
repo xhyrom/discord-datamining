@@ -22,8 +22,8 @@
     <span style="color: #434343;" data-darkreader-inline-color="">With a Nitro or Nitro Basic subscription, you can add up to 100 packs! If you are not subscribed to Nitro or Nitro Basic, you will be able to add up to 1 pack for free. If you’d like to learn more about our subscription perks, you can find out more </span><a href="https://support.discord.com/hc/en-us/articles/115000435108-Nitro-Nitro-Classic-Nitro-Basic" target="_blank" rel="noopener noreferrer">here</a><span style="color: #434343;" data-darkreader-inline-color="">.</span>
 </h3>
 <h1 id="h_01H96AKBVM8ZA70KC69DVYESGB">How to Manage your Server’s Pack</h1>
-<h3 id="h_01H96AKBVM6X9QXA312THH8F12"><span style="color: #434343;" data-darkreader-inline-color="">Note: The pack sharing setting is enabled by default for servers. </span></h3>
-<p>To manage your pack settings, you will need to be the owner of the server. </p>
+<h3 id="h_01H96AKBVM6X9QXA312THH8F12"><span style="color: #434343;" data-darkreader-inline-color="">Note: The pack sharing setting is enabled by default for <span id="docs-internal-guid-91d1c491-7fff-de3e-a8c3-b0351e6fdb5f" style="color: #434343;" data-darkreader-inline-color="">discoverable</span> servers. </span></h3>
+<p>To manage your pack settings, you will need to be the owner of the server or have the <strong>Manage</strong> <strong>Server</strong> permission enabled.  </p>
 <p>1. To get started, head into your <strong>Server Settings</strong> by selecting the drop-down menu located next to the server name. </p>
 <p class="wysiwyg-text-align-center"><img src="https://support.discord.com/hc/article_attachments/17191243213719" alt="Screen Shot 2023-08-14 at 4.27.56 PM copy.png"></p>
 <p>2. Once redirected, press the <strong>Emoji</strong> tab. </p>
@@ -34,4 +34,8 @@
 <p><strong>Q: Who can use my pack? </strong></p>
 <p>A: Anyone on Discord will be able to add your pack and use the emojis if you have chosen to enable the setting. </p>
 <p><strong>Q: Are there any rules around what type of emoji can be shared in a pack?</strong></p>
-<p>A: All emoji added to Discord should follow our <a href="https://discord.com/guidelines" target="_blank" rel="noopener noreferrer">community guidelines</a> and <a href="https://discord.com/terms" target="_blank" rel="noopener noreferrer">Terms of Service</a>. If you see inappropriate content in emoji packs, please <a href="https://discord.com/safety/360044103651-reporting-abusive-behavior-to-discord" target="_blank" rel="noopener noreferrer">report the content</a><span style="color: #2c2f33; background-color: #f7f7f7;" data-darkreader-inline-color="" data-darkreader-inline-bgcolor="">. </span></p>
+<p>A: All emoji added to Discord should follow our <a href="https://discord.com/guidelines" target="_blank" rel="noopener noreferrer">Community Guidelines</a> and <a href="https://discord.com/terms" target="_blank" rel="noopener noreferrer">Terms of Service</a>. If you see inappropriate content in emoji packs, please <a href="https://discord.com/safety/360044103651-reporting-abusive-behavior-to-discord" target="_blank" rel="noopener noreferrer">report the content</a><span style="color: #2c2f33; background-color: #f7f7f7;" data-darkreader-inline-color="" data-darkreader-inline-bgcolor="">. </span></p>
+<p id="docs-internal-guid-934f0834-7fff-b9ca-3046-86d524d6ae34"><strong>Q: I don’t want my pack to show the name of my server. How can I hide this?</strong></p>
+<p>A: If you collect a pack from a private server, the pack will only display the name of the emoji you first selected within that pack. If you collect a pack from a public server, the name of the pack will be the same name as the server.</p>
+<p class="wysiwyg-text-align-center"><img src="https://support.discord.com/hc/article_attachments/18899822259095" alt="image4.png" width="266" height="217"></p>
+<h4 id="h_01HENYR8R1TFS9HW2MWF8AS2RW" class="wysiwyg-text-align-center"><span style="color: #666666;">Example Image of Private Server Pack </span></h4>
