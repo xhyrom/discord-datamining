@@ -16041,6 +16041,8 @@
   "GUILD_EVENT_RECURRING_COACHMARK_CTA": "\"Try it\"",
   "GUILD_EVENT_RECURRING_COACHMARK_TITLE": "\"NEW! Repeating Events\"",
   "GUILD_EVENT_RECURRING_COACHMARK_BODY": "\"You can now easily repeat events.\"",
+  "COPY_RECURRENCE_LINK": "\"Copy this Event Link\"",
+  "COPY_SERIES_LINK": "\"Copy Event Series Link\"",
   "GET_MOBILE_APP_SUBTITLE": "\"Discord isn't supported on mobile web browsers. Join over 100 million people who use Discord to talk with communities and friends.\"",
   "MOBILE_APP_DOWNLOAD_CTA": "\"Get our mobile app\"",
   "MOBILE_APP_DOWNLOAD_SUBHEADER": "\"Keep the conversion going on our iOS or Android app.\"",
