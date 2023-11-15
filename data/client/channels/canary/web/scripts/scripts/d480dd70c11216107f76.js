@@ -1,5 +1,5 @@
 (this.webpackChunkdiscord_app = this.webpackChunkdiscord_app || []).push([
-    ["96569"], {
+    ["94638"], {
         304983: function(e, t, n) {
             "use strict";
             n.r(t), n.d(t, {
@@ -237,12 +237,12 @@
                 _ = n("744983"),
                 f = n("18494"),
                 T = n("162771"),
-                h = n("102985"),
-                S = n("697218"),
+                S = n("102985"),
+                h = n("697218"),
                 R = n("25292"),
                 p = n("655518"),
-                g = n("158998"),
-                A = n("49111"),
+                A = n("158998"),
+                g = n("49111"),
                 N = n("782340");
 
             function I() {
@@ -253,27 +253,27 @@
                 return new Set(c.weekdays().map(e => e.toLowerCase()))
             }
 
-            function C() {
+            function y() {
                 let e = new Date().getFullYear();
                 return new Set(i.range(2015, e + 1).map(e => e.toString()))
             }
 
-            function y(e, t) {
+            function C(e, t) {
                 return [e, e.clone().add(1, t)]
             }
 
             function M(e) {
                 let t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : 0,
                     n = c().startOf(e).add(t, e);
-                return y(n, e)
+                return C(n, e)
             }
 
             function L(e, t, n) {
                 let l = c(e, t).local();
-                return y(l, n)
+                return C(l, n)
             }
 
-            function F() {
+            function v() {
                 return {
                     [N.default.Messages.SEARCH_SHORTCUT_TODAY]: () => M("day"),
                     [N.default.Messages.SEARCH_SHORTCUT_YESTERDAY]: () => M("day", -1),
@@ -282,34 +282,34 @@
                     [N.default.Messages.SEARCH_SHORTCUT_YEAR]: () => M("year")
                 }
             }
-            let v = RegExp("(?:\\s*(".concat("([0-9]{4})-([0-9]{1,2})-([0-9]{1,2})", "|").concat("([0-9]{4})-([0-9]{1,2})", "|").concat("\\d{4}", "|").concat("([^\\d\\s]+)", "))"), "i"),
+            let F = RegExp("(?:\\s*(".concat("([0-9]{4})-([0-9]{1,2})-([0-9]{1,2})", "|").concat("([0-9]{4})-([0-9]{1,2})", "|").concat("\\d{4}", "|").concat("([^\\d\\s]+)", "))"), "i"),
                 H = RegExp("\\s*(true|false)", "i");
 
             function O(e) {
                 return "".concat(e, ":")
             }
 
-            function D(e) {
+            function k(e) {
                 return RegExp(O(e), "i")
             }
 
-            function k(e) {
+            function D(e) {
                 let t;
                 let n = e.getMatch(1),
                     l = e => null != e ? null == e ? void 0 : e.id : null;
-                return null != (t = A.ID_REGEX.test(n) ? n : n === A.ME ? l(S.default.getCurrentUser()) : null != e.getMatch(4) ? l(S.default.findByTag(e.getMatch(4))) : l(S.default.findByTag(e.getMatch(2), e.getMatch(3)))) && (e.setData("userId", t), !0)
+                return null != (t = g.ID_REGEX.test(n) ? n : n === g.ME ? l(h.default.getCurrentUser()) : null != e.getMatch(4) ? l(h.default.findByTag(e.getMatch(4))) : l(h.default.findByTag(e.getMatch(2), e.getMatch(3)))) && (e.setData("userId", t), !0)
             }
 
             function w(e, t) {
                 let n, l;
                 let r = e.getFullMatch().trim().toLowerCase(),
-                    a = F()[r];
-                null != a ? [n, l] = a() : I().has(r) ? [n, l] = L(r, "MMMM", "month") : m().has(r) ? [n, l] = L(r, "dddd", "day") : C().has(r) ? [n, l] = L(r, "YYYY", "year") : [n, l] = L(r, A.SEARCH_DATE_FORMAT, "day");
+                    a = v()[r];
+                null != a ? [n, l] = a() : I().has(r) ? [n, l] = L(r, "MMMM", "month") : m().has(r) ? [n, l] = L(r, "dddd", "day") : y().has(r) ? [n, l] = L(r, "YYYY", "year") : [n, l] = L(r, g.SEARCH_DATE_FORMAT, "day");
                 let u = n.isValid() && l.isValid();
                 return !!u && ("before" === t ? (l = n, n = null) : "after" === t && (n = l, l = null), e.setData("start", n), e.setData("end", l), !0)
             }
 
-            function b(e) {
+            function U(e) {
                 let t = e.getMatch(1),
                     n = T.default.getGuildId(),
                     l = d.default.getChannels(n)[d.GUILD_SELECTABLE_CHANNELS_KEY].concat(d.default.getChannels(n)[d.GUILD_VOCAL_CHANNELS_KEY]),
@@ -326,7 +326,7 @@
                 return null != a && (e.setData("channel", a), !0)
             }
 
-            function U(e) {
+            function b(e) {
                 let t = {
                     [N.default.Messages.SEARCH_ANSWER_HAS_LINK]: "link",
                     [N.default.Messages.SEARCH_ANSWER_HAS_EMBED]: "embed",
@@ -340,7 +340,7 @@
             }
 
             function G() {
-                return [...Array.from(I()), ...Array.from(m()), ...Array.from(C()), ...Object.keys(F())]
+                return [...Array.from(I()), ...Array.from(m()), ...Array.from(y()), ...Object.keys(v())]
             }
 
             function W() {
@@ -373,19 +373,19 @@
                     request: r
                 };
                 switch (a) {
-                    case A.SearchTypes.GUILD:
+                    case g.SearchTypes.GUILD:
                         n = R.default.queryGuildUsers({
                             ...u,
                             guildId: t
                         });
                         break;
-                    case A.SearchTypes.CHANNEL:
+                    case g.SearchTypes.CHANNEL:
                         n = R.default.queryChannelUsers({
                             ...u,
                             channelId: t
                         });
                         break;
-                    case A.SearchTypes.DMS:
+                    case g.SearchTypes.DMS:
                         n = R.default.queryUsers(e, l, !0, r, () => !0);
                         break;
                     default:
@@ -401,18 +401,18 @@
                         record: t
                     } = e;
                     return {
-                        text: g.default.getUserTag(t),
+                        text: A.default.getUserTag(t),
                         user: t
                     }
                 })
             }
 
             function B() {
-                return _.default.getSearchType() === A.SearchTypes.GUILD
+                return _.default.getSearchType() === g.SearchTypes.GUILD
             }
 
             function j() {
-                return !h.default.hidePersonalInformation
+                return !S.default.hidePersonalInformation
             }
             let q = /^(?:\s*(\d{17,20}|@me|([^@#:]+)#([0-9]{4})|([a-z0-9_.]{2,32})))/i;
             (r = l || (l = {})).FILTER = "FILTER", r.ANSWER = "ANSWER";
@@ -422,114 +422,114 @@
                 Object.assign(Y, function() {
                     let e = [N.default.Messages.SEARCH_ANSWER_HAS_LINK, N.default.Messages.SEARCH_ANSWER_HAS_EMBED, N.default.Messages.SEARCH_ANSWER_HAS_ATTACHMENT, N.default.Messages.SEARCH_ANSWER_HAS_VIDEO, N.default.Messages.SEARCH_ANSWER_HAS_IMAGE, N.default.Messages.SEARCH_ANSWER_HAS_SOUND, N.default.Messages.SEARCH_ANSWER_HAS_STICKER];
                     return {
-                        [A.SearchTokenTypes.FILTER_FROM]: {
-                            regex: D(N.default.Messages.SEARCH_FILTER_FROM),
+                        [g.SearchTokenTypes.FILTER_FROM]: {
+                            regex: k(N.default.Messages.SEARCH_FILTER_FROM),
                             componentType: "FILTER",
                             key: O(N.default.Messages.SEARCH_FILTER_FROM),
                             validator: j,
                             getAutocompletions: K
                         },
-                        [A.SearchTokenTypes.ANSWER_USERNAME_FROM]: {
-                            follows: [A.SearchTokenTypes.FILTER_FROM],
+                        [g.SearchTokenTypes.ANSWER_USERNAME_FROM]: {
+                            follows: [g.SearchTokenTypes.FILTER_FROM],
                             regex: q,
-                            validator: k,
+                            validator: D,
                             mutable: !0,
                             componentType: "ANSWER",
                             queryKey: "author_id"
                         },
-                        [A.SearchTokenTypes.FILTER_MENTIONS]: {
-                            regex: D(N.default.Messages.SEARCH_FILTER_MENTIONS),
+                        [g.SearchTokenTypes.FILTER_MENTIONS]: {
+                            regex: k(N.default.Messages.SEARCH_FILTER_MENTIONS),
                             componentType: "FILTER",
                             key: O(N.default.Messages.SEARCH_FILTER_MENTIONS),
                             validator: j,
                             getAutocompletions: K
                         },
-                        [A.SearchTokenTypes.ANSWER_USERNAME_MENTIONS]: {
-                            follows: [A.SearchTokenTypes.FILTER_MENTIONS],
+                        [g.SearchTokenTypes.ANSWER_USERNAME_MENTIONS]: {
+                            follows: [g.SearchTokenTypes.FILTER_MENTIONS],
                             regex: q,
-                            validator: k,
+                            validator: D,
                             mutable: !0,
                             componentType: "ANSWER",
                             queryKey: "mentions"
                         },
-                        [A.SearchTokenTypes.FILTER_HAS]: {
-                            regex: D(N.default.Messages.SEARCH_FILTER_HAS),
+                        [g.SearchTokenTypes.FILTER_HAS]: {
+                            regex: k(N.default.Messages.SEARCH_FILTER_HAS),
                             componentType: "FILTER",
                             key: O(N.default.Messages.SEARCH_FILTER_HAS),
                             getAutocompletions: (t, n, l) => x(t, l, e)
                         },
-                        [A.SearchTokenTypes.ANSWER_HAS]: {
+                        [g.SearchTokenTypes.ANSWER_HAS]: {
                             regex: RegExp("(?:\\s*-?(".concat(e.map(e => p.default.escape(e)).join("|"), "))"), "i"),
-                            follows: [A.SearchTokenTypes.FILTER_HAS],
-                            validator: U,
+                            follows: [g.SearchTokenTypes.FILTER_HAS],
+                            validator: b,
                             componentType: "ANSWER",
                             queryKey: "has"
                         },
-                        [A.SearchTokenTypes.FILTER_FILE_TYPE]: {
-                            regex: D(N.default.Messages.SEARCH_FILTER_FILE_TYPE),
+                        [g.SearchTokenTypes.FILTER_FILE_TYPE]: {
+                            regex: k(N.default.Messages.SEARCH_FILTER_FILE_TYPE),
                             key: O(N.default.Messages.SEARCH_FILTER_FILE_TYPE),
                             componentType: "FILTER"
                         },
-                        [A.SearchTokenTypes.ANSWER_FILE_TYPE]: {
+                        [g.SearchTokenTypes.ANSWER_FILE_TYPE]: {
                             regex: /(?:\s*([^\s]+))/,
-                            follows: [A.SearchTokenTypes.FILTER_FILE_TYPE],
+                            follows: [g.SearchTokenTypes.FILTER_FILE_TYPE],
                             mutable: !0,
                             componentType: "ANSWER",
                             queryKey: "attachment_extensions"
                         },
-                        [A.SearchTokenTypes.FILTER_FILE_NAME]: {
-                            regex: D(N.default.Messages.SEARCH_FILTER_FILE_NAME),
+                        [g.SearchTokenTypes.FILTER_FILE_NAME]: {
+                            regex: k(N.default.Messages.SEARCH_FILTER_FILE_NAME),
                             key: O(N.default.Messages.SEARCH_FILTER_FILE_NAME),
                             componentType: "FILTER"
                         },
-                        [A.SearchTokenTypes.ANSWER_FILE_NAME]: {
+                        [g.SearchTokenTypes.ANSWER_FILE_NAME]: {
                             regex: /(?:\s*([^\s]+)(?=\s))/,
-                            follows: [A.SearchTokenTypes.FILTER_FILE_NAME],
+                            follows: [g.SearchTokenTypes.FILTER_FILE_NAME],
                             mutable: !0,
                             componentType: "ANSWER",
                             queryKey: "attachment_filename"
                         },
-                        [A.SearchTokenTypes.FILTER_BEFORE]: {
-                            regex: D(N.default.Messages.SEARCH_FILTER_BEFORE),
+                        [g.SearchTokenTypes.FILTER_BEFORE]: {
+                            regex: k(N.default.Messages.SEARCH_FILTER_BEFORE),
                             componentType: "FILTER",
                             key: O(N.default.Messages.SEARCH_FILTER_BEFORE),
-                            getAutocompletions: (e, t, n) => P(e, n, A.SearchTokenTypes.FILTER_BEFORE)
+                            getAutocompletions: (e, t, n) => P(e, n, g.SearchTokenTypes.FILTER_BEFORE)
                         },
-                        [A.SearchTokenTypes.FILTER_ON]: {
-                            regex: D("(".concat(N.default.Messages.SEARCH_FILTER_ON, "|").concat(N.default.Messages.SEARCH_FILTER_DURING, ")")),
+                        [g.SearchTokenTypes.FILTER_ON]: {
+                            regex: k("(".concat(N.default.Messages.SEARCH_FILTER_ON, "|").concat(N.default.Messages.SEARCH_FILTER_DURING, ")")),
                             componentType: "FILTER",
                             key: O(N.default.Messages.SEARCH_FILTER_DURING),
-                            getAutocompletions: (e, t, n) => P(e, n, A.SearchTokenTypes.FILTER_ON)
+                            getAutocompletions: (e, t, n) => P(e, n, g.SearchTokenTypes.FILTER_ON)
                         },
-                        [A.SearchTokenTypes.FILTER_AFTER]: {
-                            regex: D(N.default.Messages.SEARCH_FILTER_AFTER),
+                        [g.SearchTokenTypes.FILTER_AFTER]: {
+                            regex: k(N.default.Messages.SEARCH_FILTER_AFTER),
                             componentType: "FILTER",
                             key: O(N.default.Messages.SEARCH_FILTER_AFTER),
-                            getAutocompletions: (e, t, n) => P(e, n, A.SearchTokenTypes.FILTER_AFTER)
+                            getAutocompletions: (e, t, n) => P(e, n, g.SearchTokenTypes.FILTER_AFTER)
                         },
-                        [A.SearchTokenTypes.ANSWER_BEFORE]: {
-                            regex: v,
-                            follows: [A.SearchTokenTypes.FILTER_BEFORE],
+                        [g.SearchTokenTypes.ANSWER_BEFORE]: {
+                            regex: F,
+                            follows: [g.SearchTokenTypes.FILTER_BEFORE],
                             componentType: "ANSWER",
                             mutable: !0,
                             validator: e => w(e, "before")
                         },
-                        [A.SearchTokenTypes.ANSWER_ON]: {
-                            regex: v,
-                            follows: [A.SearchTokenTypes.FILTER_ON],
+                        [g.SearchTokenTypes.ANSWER_ON]: {
+                            regex: F,
+                            follows: [g.SearchTokenTypes.FILTER_ON],
                             componentType: "ANSWER",
                             mutable: !0,
                             validator: e => w(e, "on")
                         },
-                        [A.SearchTokenTypes.ANSWER_AFTER]: {
-                            regex: v,
-                            follows: [A.SearchTokenTypes.FILTER_AFTER],
+                        [g.SearchTokenTypes.ANSWER_AFTER]: {
+                            regex: F,
+                            follows: [g.SearchTokenTypes.FILTER_AFTER],
                             componentType: "ANSWER",
                             mutable: !0,
                             validator: e => w(e, "after")
                         },
-                        [A.SearchTokenTypes.FILTER_IN]: {
-                            regex: D(N.default.Messages.SEARCH_FILTER_IN),
+                        [g.SearchTokenTypes.FILTER_IN]: {
+                            regex: k(N.default.Messages.SEARCH_FILTER_IN),
                             componentType: "FILTER",
                             key: O(N.default.Messages.SEARCH_FILTER_IN),
                             validator: B,
@@ -566,16 +566,16 @@
                                 }).value()
                             }
                         },
-                        [A.SearchTokenTypes.ANSWER_IN]: {
+                        [g.SearchTokenTypes.ANSWER_IN]: {
                             regex: /(?:\s*#?([^ ]+))/i,
                             mutable: !0,
-                            follows: [A.SearchTokenTypes.FILTER_IN],
+                            follows: [g.SearchTokenTypes.FILTER_IN],
                             componentType: "ANSWER",
-                            validator: b,
+                            validator: U,
                             queryKey: "channel_id"
                         },
-                        [A.SearchTokenTypes.FILTER_PINNED]: {
-                            regex: D(N.default.Messages.SEARCH_FILTER_PINNED),
+                        [g.SearchTokenTypes.FILTER_PINNED]: {
+                            regex: k(N.default.Messages.SEARCH_FILTER_PINNED),
                             componentType: "FILTER",
                             key: O(N.default.Messages.SEARCH_FILTER_PINNED),
                             getAutocompletions: () => [{
@@ -584,10 +584,10 @@
                                 text: "false"
                             }]
                         },
-                        [A.SearchTokenTypes.ANSWER_PINNED]: {
+                        [g.SearchTokenTypes.ANSWER_PINNED]: {
                             regex: H,
                             componentType: "ANSWER",
-                            follows: [A.SearchTokenTypes.FILTER_PINNED],
+                            follows: [g.SearchTokenTypes.FILTER_PINNED],
                             queryKey: "pinned",
                             validator: e => {
                                 let t = e.getMatch(1);
@@ -600,7 +600,7 @@
 
             function X(e) {
                 let t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : Object.keys(Y).length;
-                return i(Y).keys().filter(e => A.IS_SEARCH_FILTER_TOKEN.test(e)).filter(e => null != Y[e].key).map(e => ({
+                return i(Y).keys().filter(e => g.IS_SEARCH_FILTER_TOKEN.test(e)).filter(e => null != Y[e].key).map(e => ({
                     token: e,
                     text: Y[e].key
                 })).filter(t => {
@@ -611,56 +611,6 @@
                 }).take(t).value()
             }
             var z = Y
-        },
-        200029: function(e, t, n) {
-            "use strict";
-            n.r(t), n.d(t, {
-                default: function() {
-                    return _
-                }
-            }), n("222007");
-            var l = n("689988"),
-                r = n("44574"),
-                a = n("512395"),
-                u = n("305961"),
-                o = n("162771"),
-                i = n("718517"),
-                s = n("884422"),
-                c = n("483038"),
-                d = n("49111");
-            class E extends l.default {
-                maybeLoadFeedForGuild(e) {
-                    if (null == e) return !1;
-                    let t = (0, a.isChannelHighlightsEnabledForGuild)(e);
-                    (function(e) {
-                        let t = c.default.getLastFetchedMillis(e);
-                        if (null != t && Date.now() - t < 3 * i.default.Millis.HOUR || c.default.isLoading(e)) return !1;
-                        let n = u.default.getGuild(e);
-                        return null != n && !n.hasFeature(d.GuildFeatures.CHANNEL_HIGHLIGHTS_DISABLED)
-                    })(e) && (t || (0, r.isGuildUnreadsExperimentEnabled)()) && (0, s.fetchChannelHighlights)(e)
-                }
-                constructor(...e) {
-                    super(...e), this.actions = {
-                        CHANNEL_PRELOAD: e => this.handleChannelPreload(e),
-                        CHANNEL_SELECT: e => this.handleChannelSelect(e),
-                        POST_CONNECTION_OPEN: () => this.handleConnectionOpen()
-                    }, this.handleChannelPreload = e => {
-                        let {
-                            guildId: t
-                        } = e;
-                        this.maybeLoadFeedForGuild(t)
-                    }, this.handleChannelSelect = e => {
-                        let {
-                            guildId: t
-                        } = e;
-                        this.maybeLoadFeedForGuild(t)
-                    }, this.handleConnectionOpen = () => {
-                        let e = o.default.getGuildId();
-                        this.maybeLoadFeedForGuild(e)
-                    }
-                }
-            }
-            var _ = new E
         },
         578899: function(e, t, n) {
             "use strict";
@@ -801,10 +751,10 @@
             "use strict";
             n.r(t), n.d(t, {
                 useIsMakingRequestV2: function() {
-                    return F
+                    return v
                 },
                 useIsStillIndexingV2: function() {
-                    return v
+                    return F
                 },
                 handleInitializeV2: function() {
                     return H
@@ -813,16 +763,16 @@
                     return O
                 },
                 handleSearchStateUpdateV2: function() {
-                    return D
+                    return k
                 },
                 handlePaginationUpdateV2: function() {
-                    return k
+                    return D
                 },
                 handleGuildMemberSearchSuccessV2: function() {
                     return w
                 },
                 handleGuildMemberSearchStillIndexingV2: function() {
-                    return b
+                    return U
                 }
             }), n("222007"), n("70102");
             var l, r, a, u, o = n("714617"),
@@ -834,16 +784,16 @@
                 _ = n("449008"),
                 f = n("691386"),
                 T = n("770115"),
-                h = n("490931"),
-                S = n("225982"),
+                S = n("490931"),
+                h = n("225982"),
                 R = n("178406");
             let p = new d.default("MemberSafetySearchManagerV2");
 
-            function g(e) {
+            function A(e) {
                 return "guild_".concat(e)
             }
 
-            function A(e) {
+            function g(e) {
                 return {
                     requestState: e,
                     abortController: null,
@@ -857,7 +807,7 @@
 
             function I(e, t) {
                 let n = N.getState()[e];
-                return null == n && (n = A(1)), n = {
+                return null == n && (n = g(1)), n = {
                     ...n,
                     ...t
                 }, N.setState(t => ({
@@ -870,12 +820,12 @@
                 return N.getState()[e]
             }
 
-            function C(e) {
+            function y(e) {
                 let t = m(e);
-                return null == t && I(e, t = A(1)), t
+                return null == t && I(e, t = g(1)), t
             }
 
-            function y(e) {
+            function C(e) {
                 let t = m(e);
                 null != t && I(e, {
                     requestState: 3,
@@ -886,7 +836,7 @@
 
             function M(e) {
                 var t;
-                let n = g(e);
+                let n = A(e);
                 t = n, N.setState(e => {
                     let n = {
                         ...e
@@ -898,9 +848,9 @@
                 var t, n, l, r;
                 let a = R.default.getSearchStateByGuildId(e),
                     u = R.default.getPaginationStateByGuildId(e),
-                    o = g(e),
-                    c = C(o),
-                    [d, A] = function(e, t, n) {
+                    o = A(e),
+                    c = y(o),
+                    [d, g] = function(e, t, n) {
                         var l, r, a, u, o, i;
                         let s = function(e, t) {
                                 var n;
@@ -920,7 +870,7 @@
                                     }
                                 }(t), {
                                     previousPagination: u
-                                } = C(g(e)), o = t.currentPage, i = null !== (n = null == u ? void 0 : u.currentPage) && void 0 !== n ? n : 0, s = R.default.getElasticSearchPaginationByGuildId(e);
+                                } = y(A(e)), o = t.currentPage, i = null !== (n = null == u ? void 0 : u.currentPage) && void 0 !== n ? n : 0, s = R.default.getElasticSearchPaginationByGuildId(e);
                                 switch (!0) {
                                     case null == s:
                                     case l === a && 0 === l:
@@ -990,7 +940,7 @@
                     } = e, u = {};
                     r && (u.unusual_dm_activity_until = {
                         range: {
-                            gte: Date.now() - h.UNUSUAL_DM_COMPARISON_DELTA
+                            gte: Date.now() - S.UNUSUAL_DM_COMPARISON_DELTA
                         }
                     }), a && (u.communication_disabled_until = {
                         range: {
@@ -1003,12 +953,12 @@
                     return o.size > 0 && (n.and_query.role_ids = {
                         and_query: Array.from(o)
                     }), n
-                }(a), null == (n = A) ? t : {
+                }(a), null == (n = g) ? t : {
                     ...t,
                     ...n
                 });
                 if (function(e, t) {
-                        let n = C(e);
+                        let n = y(e);
                         return i(n.query, t)
                     }(o, N) && (0, s.isEqual)(d, c.cursor)) return;
                 let M = function(e, t, n, l) {
@@ -1032,7 +982,7 @@
                             query: M.query,
                             guildId: e
                         }), null == M.query) throw Error("Query is null");
-                    await (0, S.searchGuildMembers)(e, M.query, {
+                    await (0, h.searchGuildMembers)(e, M.query, {
                         signal: null !== (r = null === (l = M.abortController) || void 0 === l ? void 0 : l.signal) && void 0 !== r ? r : void 0
                     })
                 } catch (e) {
@@ -1047,21 +997,21 @@
                     }(o);
                     return
                 }
-                y(o)
-            }
-
-            function F(e) {
-                return N(t => {
-                    var n;
-                    let l = g(e);
-                    return (null === (n = t[l]) || void 0 === n ? void 0 : n.requestState) === 2
-                })
+                C(o)
             }
 
             function v(e) {
                 return N(t => {
                     var n;
-                    let l = g(e);
+                    let l = A(e);
+                    return (null === (n = t[l]) || void 0 === n ? void 0 : n.requestState) === 2
+                })
+            }
+
+            function F(e) {
+                return N(t => {
+                    var n;
+                    let l = A(e);
                     return (null === (n = t[l]) || void 0 === n ? void 0 : n.requestState) === 4
                 })
             }
@@ -1080,14 +1030,14 @@
                 M(t.id)
             }
 
-            function D(e) {
+            function k(e) {
                 let {
                     guildId: t
                 } = e;
                 L(t)
             }
 
-            function k(e) {
+            function D(e) {
                 let {
                     guildId: t
                 } = e;
@@ -1097,14 +1047,14 @@
             function w(e) {
                 let {
                     guildId: t
-                } = e, n = g(t);
-                y(n)
+                } = e, n = A(t);
+                C(n)
             }
 
-            function b(e) {
+            function U(e) {
                 let {
                     guildId: t
-                } = e, n = g(t);
+                } = e, n = A(t);
                 I(n, {
                     requestState: 4,
                     abortController: null,
@@ -1116,10 +1066,10 @@
             "use strict";
             n.r(t), n.d(t, {
                 fetchGuildHomeSettings: function() {
-                    return h
+                    return S
                 },
                 fetchNewMemberActions: function() {
-                    return S
+                    return h
                 },
                 selectHomeResourceChannel: function() {
                     return R
@@ -1128,10 +1078,10 @@
                     return p
                 },
                 completeNewMemberAction: function() {
-                    return g
+                    return A
                 },
                 getBlockForChannelDeletion: function() {
-                    return A
+                    return g
                 }
             }), n("808653");
             var l = n("872717"),
@@ -1147,7 +1097,7 @@
                 _ = n("675305"),
                 f = n("290886"),
                 T = n("49111");
-            let h = async e => {
+            let S = async e => {
                 r.default.dispatch({
                     type: "GUILD_HOME_SETTINGS_FETCH_START",
                     guildId: e
@@ -1169,7 +1119,7 @@
                         guildId: e
                     })
                 }
-            }, S = async e => {
+            }, h = async e => {
                 if (!o.default.isFullServerPreview(e)) {
                     r.default.dispatch({
                         type: "GUILD_NEW_MEMBER_ACTIONS_FETCH_START",
@@ -1227,7 +1177,7 @@
                     server_guide_channel_type: "member action",
                     channel_action_type: l.actionType
                 }), (0, i.transitionToChannel)(t)
-            }, g = (e, t) => {
+            }, A = (e, t) => {
                 if (r.default.dispatch({
                         type: "COMPLETE_NEW_MEMBER_ACTION",
                         guildId: e,
@@ -1250,12 +1200,12 @@
                     url: T.Endpoints.GUILD_MEMBER_ACTION_UPDATE(e, t)
                 })
             };
-            async function A(e, t) {
+            async function g(e, t) {
                 if (null == e) return !1;
                 let n = (0, f.canSeeOnboardingHome)(e);
                 if (!n) return !1;
                 let l = d.default.getSettings(e);
-                return l === d.NO_SETTINGS && (await h(e), l = d.default.getSettings(e)), l !== d.NO_SETTINGS && null != l && (null != l.newMemberActions && null != l.newMemberActions.find(e => e.channelId === t) ? "todo" : null != l.resourceChannels && null != l.resourceChannels.find(e => e.channelId === t) && "resource")
+                return l === d.NO_SETTINGS && (await S(e), l = d.default.getSettings(e)), l !== d.NO_SETTINGS && null != l && (null != l.newMemberActions && null != l.newMemberActions.find(e => e.channelId === t) ? "todo" : null != l.resourceChannels && null != l.resourceChannels.find(e => e.channelId === t) && "resource")
             }
         },
         129092: function(e, t, n) {
@@ -1283,10 +1233,10 @@
                     return T
                 },
                 RESOURCE_CHANNEL_DESCRIPTION_MAX_LENGTH: function() {
-                    return h
+                    return S
                 },
                 RESOURCE_CHANNEL_MAX: function() {
-                    return S
+                    return h
                 },
                 NewMemberActionTypes: function() {
                     return r
@@ -1298,10 +1248,10 @@
                     return p
                 },
                 settingsFromServer: function() {
-                    return g
+                    return A
                 },
                 settingsToServer: function() {
-                    return A
+                    return g
                 },
                 actionsFromServer: function() {
                     return N
@@ -1313,10 +1263,10 @@
                     return m
                 },
                 isSettingsValid: function() {
-                    return C
+                    return y
                 },
                 isChannelValidForResourceChannel: function() {
-                    return y
+                    return C
                 },
                 isChannelValidForNewMemberAction: function() {
                     return M
@@ -1333,8 +1283,8 @@
                 _ = 5,
                 f = 1,
                 T = 30,
-                h = 200,
-                S = 7;
+                S = 200,
+                h = 7;
 
             function R(e) {
                 var t;
@@ -1367,7 +1317,7 @@
                 }
             }
 
-            function g(e) {
+            function A(e) {
                 if (null == e) return null;
                 let {
                     welcome_message: t,
@@ -1386,7 +1336,7 @@
                 }
             }
 
-            function A(e, t) {
+            function g(e, t) {
                 var n, l;
                 if (null == t) return null;
                 let {
@@ -1448,12 +1398,12 @@
                 return null == e || !!I(e.welcomeMessage) && (null == e.newMemberActions || !(e.newMemberActions.length > 0)) && (null == e.resourceChannels || !(e.resourceChannels.length > 0)) && !0
             }
 
-            function C(e) {
+            function y(e) {
                 var t, n;
                 return null != e && (!!m(e) || (null === (t = e.welcomeMessage) || void 0 === t ? void 0 : t.message) != null && !(e.welcomeMessage.message.length < s) && (null === (n = e.welcomeMessage) || void 0 === n ? void 0 : n.authorIds) != null && 0 !== e.welcomeMessage.authorIds.length && null != e.newMemberActions && !(e.newMemberActions.length < 3) && !0)
             }
 
-            function y(e) {
+            function C(e) {
                 return e.type === i.ChannelTypes.GUILD_TEXT && !o.default.canEveryoneRole(i.Permissions.SEND_MESSAGES, e) && o.default.canEveryoneRole(i.Permissions.VIEW_CHANNEL, e)
             }
 
@@ -1669,10 +1619,10 @@
                     return T
                 },
                 getSelectionScope: function() {
-                    return h
+                    return S
                 },
                 getAutocompleteMode: function() {
-                    return S
+                    return h
                 },
                 getFlattenedStringArray: function() {
                     return R
@@ -1681,7 +1631,7 @@
                     return p
                 },
                 getQueryFromTokens: function() {
-                    return g
+                    return A
                 },
                 tokenizeQuery: function() {
                     return N
@@ -1693,10 +1643,10 @@
                     return m
                 },
                 filterHasAnswer: function() {
-                    return C
+                    return y
                 },
                 refreshSearchTokens: function() {
-                    return y
+                    return C
                 }
             }), n("222007"), n("808653");
             var l = n("917351"),
@@ -1792,7 +1742,7 @@
                 return t.content && (t.content = t.content.join(" ").trim(), !t.content && delete t.content), t
             }
 
-            function h(e, t, n) {
+            function S(e, t, n) {
                 let l, r;
                 let a = e.find((a, u) => t >= a.start && t <= a.end && n >= a.start && n <= a.end ? (null != e[u + 1] && (r = e[u + 1]), !0) : (l = a, !1));
                 return null == a ? null : {
@@ -1804,7 +1754,7 @@
                 }
             }
 
-            function S(e, t) {
+            function h(e, t) {
                 let n;
                 e = null != e ? e : {};
                 let {
@@ -1867,30 +1817,30 @@
                 return e.reduce((e, t) => null == t ? e : t.results.length + e, 0)
             }
 
-            function g(e) {
+            function A(e) {
                 return null == e ? "" : e.map(e => e.getFullMatch()).join("")
             }
-            let A = new a.default;
+            let g = new a.default;
 
             function N(e) {
-                return A.tokenize(e)
+                return g.tokenize(e)
             }
 
             function I() {
-                return A.clearCache()
+                return g.clearCache()
             }
 
             function m(e) {
                 return null != e ? _[e] : null
             }
 
-            function C(e, t) {
+            function y(e, t) {
                 let n = c.IS_SEARCH_FILTER_TOKEN.test(e.type);
                 return (null != t || !n) && (null == t || !n || !!c.IS_SEARCH_ANSWER_TOKEN.test(t.type)) && !0
             }
 
-            function y() {
-                (0, u.refreshSearchTokens)(), A.reset(), r(u.default).forOwn((e, t) => A.addRule({
+            function C() {
+                (0, u.refreshSearchTokens)(), g.reset(), r(u.default).forOwn((e, t) => g.addRule({
                     type: t,
                     ...e
                 }))
@@ -1898,4 +1848,4 @@
         }
     }
 ]);
-//# sourceMappingURL=e1e5cc7fe127e6611cad.js.map
+//# sourceMappingURL=d480dd70c11216107f76.js.map

@@ -4625,12 +4625,12 @@
 }
 
 .topicsPillTextUnselected__5a35e {
-    padding-left: 2px;
     align-items: center;
     display: flex;
     text-overflow: ellipsis;
     overflow: hidden;
-    white-space: nowrap
+    white-space: nowrap;
+    padding-left: 4px
 }
 
 .topicsPillTextSelected_fdcbd4 {
@@ -19460,8 +19460,8 @@ input[type=checkbox]:focus-visible+.label_ee78c3 {
 
 .message__13e98 {
     font-weight: 500;
-    font-size: 1rem;
-    line-height: 1.25rem;
+    font-size: 16px;
+    line-height: 20px;
     white-space: nowrap;
     text-overflow: ellipsis;
     overflow: hidden
@@ -53674,6 +53674,16 @@ html .progress__4ef76 {
     position: absolute;
     top: 100%;
     left: 128px
+}
+
+.container_dc9894 {
+    display: flex;
+    flex-direction: row;
+    align-items: center
+}
+
+.emoji_a0e68f {
+    flex-shrink: 0
 }
 
 .container__0ec3c {
@@ -123579,4 +123589,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=app.f6db9878e2f6fa645ad0.css.map*/
+/*# sourceMappingURL=app.26fb081c9849d0896141.css.map*/
