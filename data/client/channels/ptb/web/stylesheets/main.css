@@ -110695,6 +110695,10 @@ html .invoiceCancelRow_a8669b {
     margin-bottom: 32px
 }
 
+.link__36df4 {
+    margin-top: 12px
+}
+
 .subtitleFinish__59e16 {
     text-align: center;
     padding: 0 12px;
@@ -110919,6 +110923,15 @@ html .invoiceCancelRow_a8669b {
 .legacyUsernameBadge__465a4 {
     width: 24px;
     height: 24px
+}
+
+.spinnerIcon__114cb {
+    width: 13px;
+    height: 13px
+}
+
+.fetchText_faa37c {
+    padding-left: 10px
 }
 
 .footer_bd542b {
@@ -123589,4 +123602,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=app.26fb081c9849d0896141.css.map*/
+/*# sourceMappingURL=app.a6ee3eb645f7096597d6.css.map*/
