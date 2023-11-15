@@ -4,6 +4,7 @@
 <p>Who is Eligible:</p>
 <ul>
     <li>To claim through Discord, you must be a current Nitro member. </li>
+    <li>If you’re a Nitro trial member, you will not see this offer in your gift inventory.</li>
     <li>To redeem in Picsart, this offer is only available to new Picsart Pro subscribers.
         <ul>
             <li>If you are an existing Picsart Pro subscriber, you are not eligible to redeem.</li>
@@ -18,32 +19,32 @@
 <p>After the 1 month free trial period, your Picsart Pro or Gold subscription will convert to a monthly or yearly recurring subscription, and Picsart will bill your payment method unless you cancel the subscription.</p>
 <p><strong><span class="wysiwyg-font-size-large">What does this article cover:</span></strong></p>
 <ul>
-    <li><a href="#h_01HDEQFCK2EPEN16F538X9C9CC">What is Discord Nitro?</a></li>
-    <li><a href="#h_01HDEQFCK2KNYH1WNV3CD4MD1X">What is Picsart Pro/Picsart Gold? </a></li>
+    <li><a href="https://support.discord.com/hc/en-us/articles/18347288083991#h_01HDEQFCK2EPEN16F538X9C9CC">What is Discord Nitro?</a></li>
+    <li><a href="https://support.discord.com/hc/en-us/articles/18347288083991#h_01HDEQFCK2KNYH1WNV3CD4MD1X">What is Picsart Pro/Picsart Gold? </a></li>
     <li>
-        <a href="#h_01HDEQFCK22E58ZERWEHTWAZF9">How do I claim the Picsart Pro/Picsart Gold Promo in Discord? </a>
+        <a href="https://support.discord.com/hc/en-us/articles/18347288083991#h_01HDEQFCK22E58ZERWEHTWAZF9">How do I claim the Picsart Pro/Picsart Gold Promo in Discord? </a>
         <ul>
-            <li><a href="#h_01HDEQFCK228SZNYX3B5P2EEYD">Eligibility for the Claiming this Promotion in Discord</a></li>
-            <li><a href="#h_01HDEQFCK21DMHG1JRBYFJTVW3">Step By Step Claim Instructions</a></li>
+            <li><a href="https://support.discord.com/hc/en-us/articles/18347288083991#h_01HDEQFCK228SZNYX3B5P2EEYD">Eligibility for the Claiming this Promotion in Discord</a></li>
+            <li><a href="https://support.discord.com/hc/en-us/articles/18347288083991#h_01HDEQFCK21DMHG1JRBYFJTVW3">Step By Step Claim Instructions</a></li>
         </ul>
     </li>
     <li>
-        <a href="#h_01HDEQFCK2MY1KN7358XR6RSBS">How do I redeem the Picsart Pro Trial on my Picsart Account?</a> 
+        <a href="https://support.discord.com/hc/en-us/articles/18347288083991#h_01HDEQFCK2MY1KN7358XR6RSBS">How do I redeem the Picsart Pro Trial on my Picsart Account?</a> 
         <ul>
-            <li><a href="#h_01HDEQFCK2P60AN52607682B24">Eligibility for Redeeming the Picsart Pro/Picsart Gold Trial</a></li>
-            <li><a href="#h_01HDEQFCK2F24SGNNSYP5RDBAB">Step by Step Redeem Instructions</a></li>
+            <li><a href="https://support.discord.com/hc/en-us/articles/18347288083991#h_01HDEQFCK2P60AN52607682B24">Eligibility for Redeeming the Picsart Pro/Picsart Gold Trial</a></li>
+            <li><a href="https://support.discord.com/hc/en-us/articles/18347288083991#h_01HDEQFCK2F24SGNNSYP5RDBAB">Step by Step Redeem Instructions</a></li>
         </ul>
     </li>
     <li>
-        <a href="#h_01HDEQFCK3ZV4A32ZPKEGJ1P8H">Frequently Asked Questions</a>
+        <a href="https://support.discord.com/hc/en-us/articles/18347288083991#h_01HDEQFCK3ZV4A32ZPKEGJ1P8H">Frequently Asked Questions</a>
         <ul>
-            <li><a href="#h_01HDEQFCK3W73FQ0DA6D6AFVNY">Promotion Details</a></li>
-            <li><a href="#h_01HDEQFCK313HKQR8MFH08BZ0N">Eligibility for the Promotion</a></li>
-            <li><a href="#h_01HDEQFCK3FZBRFKF4G0BWAGBK">Claiming and Redemption Process</a></li>
-            <li><a href="#h_01HDEQFCK3EX10WTRBJGB861AH">Potential Errors and Other Issues</a></li>
+            <li><a href="https://support.discord.com/hc/en-us/articles/18347288083991#h_01HDEQFCK3W73FQ0DA6D6AFVNY">Promotion Details</a></li>
+            <li><a href="https://support.discord.com/hc/en-us/articles/18347288083991#h_01HDEQFCK313HKQR8MFH08BZ0N">Eligibility for the Promotion</a></li>
+            <li><a href="https://support.discord.com/hc/en-us/articles/18347288083991#h_01HDEQFCK3FZBRFKF4G0BWAGBK">Claiming and Redemption Process</a></li>
+            <li><a href="https://support.discord.com/hc/en-us/articles/18347288083991#h_01HDEQFCK3EX10WTRBJGB861AH">Potential Errors and Other Issues</a></li>
         </ul>
     </li>
-    <li><a href="#h_01HDEQFCK302TG6R88BGHZTHXH">Terms and Conditions</a></li>
+    <li><a href="https://support.discord.com/hc/en-us/articles/18347288083991#h_01HDEQFCK302TG6R88BGHZTHXH">Terms and Conditions</a></li>
 </ul>
 <h1 id="h_01HDEQFCK2EPEN16F538X9C9CC">What is Discord Nitro?</h1>
 <p>Discord Nitro is our subscription plan that gives you access to special perks that’ll make your time on Discord as fun as ever! Personalize and enhance your experience with popular perks like HD streaming, 500MB file uploads, profile and avatar customizations, 2 free Server Boosts, and more:</p>
@@ -121,7 +122,7 @@
 <p>This does not include Nitro Basic or Sever Boost-only members.</p>
 <p><strong>Q: Who can redeem this Picsart Pro/Picsart Gold trial to their Picsart account?</strong></p>
 <p>A: This offer is only for new, first-time Picsart Pro/Picsart Gold subscribers only.</p>
-<p>Further terms and conditions to redeem this promotion can be found at <a href="#h_01HDEQFCK302TG6R88BGHZTHXH">the bottom of this article</a>.</p>
+<p>Further terms and conditions to redeem this promotion can be found at <a href="https://support.discord.com/hc/en-us/articles/18347288083991#h_01HDEQFCK302TG6R88BGHZTHXH">the bottom of this article</a>.</p>
 <p><strong>Q: Can I redeem the Picsart Pro promotion to my Picsart account in my region? </strong></p>
 <p>A: In order to check whether or not you meet the eligibility requirements to redeem this Picsart Pro/Picsart Gold promotion, please make sure to review this link for the full details: <a href="https://picsart.com/terms-of-use" target="_blank" rel="noopener noreferrer">https://picsart.com/terms-of-use</a></p>
 <h2 id="h_01HDEQFCK3FZBRFKF4G0BWAGBK">Claiming And Redemption Process</h2>
