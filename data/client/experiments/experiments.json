@@ -9515,7 +9515,7 @@
       "populations": [
         {
           "buckets": {
-            "2": {
+            "3": {
               "rollout": [
                 {
                   "start": 0,
@@ -9548,127 +9548,14 @@
                 {
                   "start": 0,
                   "end": 1500
-                }
-              ]
-            }
-          },
-          "filters": [
-            {
-              "type": "guild_member_count_range",
-              "min_count": 300,
-              "max_count": null
-            }
-          ]
-        },
-        {
-          "buckets": {
-            "1": {
-              "rollout": [
-                {
-                  "start": 0,
-                  "end": 10000
                 }
               ]
             }
           },
           "filters": []
-        },
-        {
-          "buckets": {
-            "2": {
-              "rollout": [
-                {
-                  "start": 0,
-                  "end": 10000
-                }
-              ]
-            }
-          },
-          "filters": [
-            {
-              "type": "guild_has_feature",
-              "features": [
-                "DISCOVERABLE"
-              ]
-            }
-          ]
-        },
-        {
-          "buckets": {
-            "2": {
-              "rollout": [
-                {
-                  "start": 0,
-                  "end": 10000
-                }
-              ]
-            }
-          },
-          "filters": [
-            {
-              "type": "guild_has_feature",
-              "features": [
-                "DISCOVERABLE"
-              ]
-            }
-          ]
-        },
-        {
-          "buckets": {
-            "3": {
-              "rollout": [
-                {
-                  "start": 0,
-                  "end": 1500
-                }
-              ]
-            },
-            "none": {
-              "rollout": [
-                {
-                  "start": 1500,
-                  "end": 10000
-                }
-              ]
-            }
-          },
-          "filters": [
-            {
-              "type": "guild_member_count_range",
-              "min_count": 300,
-              "max_count": null
-            }
-          ]
-        },
-        {
-          "buckets": {
-            "3": {
-              "rollout": [
-                {
-                  "start": 0,
-                  "end": 1500
-                }
-              ]
-            },
-            "none": {
-              "rollout": [
-                {
-                  "start": 1500,
-                  "end": 10000
-                }
-              ]
-            }
-          },
-          "filters": [
-            {
-              "type": "guild_member_count_range",
-              "min_count": 300,
-              "max_count": null
-            }
-          ]
         }
       ],
-      "revision": 8,
+      "revision": 9,
       "overrides": {
         "3": [
           "1009606240546066473",
