@@ -78,9 +78,9 @@
                             location: n
                         })
                     },
-                    open(e, t, n, i) {
-                        var l;
-                        (null === (l = c.default.getGuild(e)) || void 0 === l ? void 0 : l.hasFeature(p.GuildFeatures.COMMUNITY)) && (t === p.GuildSettingsSections.GUILD_AUTOMOD && (t = p.GuildSettingsSections.SAFETY, i = p.GuildSettingsSubsections.SAFETY_AUTOMOD), t === p.GuildSettingsSections.MEMBER_VERIFICATION && (t = p.GuildSettingsSections.SAFETY, i = p.GuildSettingsSubsections.SAFETY_DM_AND_SPAM_PROTECTION)), L.init(e, t, n, i), (0, d.pushLayer)(p.Layers.GUILD_SETTINGS)
+                    async open(e, t, i, l) {
+                        var r;
+                        await n.el("725621").then(n.bind(n, "725621")), (null === (r = c.default.getGuild(e)) || void 0 === r ? void 0 : r.hasFeature(p.GuildFeatures.COMMUNITY)) && (t === p.GuildSettingsSections.GUILD_AUTOMOD && (t = p.GuildSettingsSections.SAFETY, l = p.GuildSettingsSubsections.SAFETY_AUTOMOD), t === p.GuildSettingsSections.MEMBER_VERIFICATION && (t = p.GuildSettingsSections.SAFETY, l = p.GuildSettingsSubsections.SAFETY_DM_AND_SPAM_PROTECTION)), L.init(e, t, i, l), (0, d.pushLayer)(p.Layers.GUILD_SETTINGS)
                     },
                     close() {
                         r.default.dispatch({
@@ -1023,4 +1023,4 @@
         }
     }
 ]);
-//# sourceMappingURL=f71cc9f79f08bd3c3257.js.map
+//# sourceMappingURL=631462826643175a32e4.js.map
