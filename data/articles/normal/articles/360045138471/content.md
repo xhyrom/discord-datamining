@@ -1,4 +1,3 @@
-<h1>Running into Voice and Video Shenanigans? </h1>
 <p>Not able to hear your friend in your voice channel? Friends not able to hear you in group DMs even when you're shouting at the top of your lungs? Is your video not loading at all? </p>
 <p>If you answered "<strong><em><span class="wysiwyg-underline">YES</span>"</em></strong> to any of those questions above, or are having any other shenanigans, hopefully this guide below can help you resolve any audio/voice and video issues that pop up for you! </p>
 <p><span class="wysiwyg-font-size-large"><strong>What this article covers: <br></strong></span></p>
@@ -51,13 +50,12 @@
 <p><span style="font-weight: 400;">Sometimes if you identify these issues early on, you won’t have to try any other steps!</span> </p>
 <h2 id="h_27782bc4-e6e7-412d-a096-e6a0d11a5746">Check for Mutes or Deafens</h2>
 <ul>
-    <li>First steps first, check if you have muted/deafened yourself or another user! You’ll be able to check this by seeing if the mic or headset icon has a slash across it or not.</li>
+    <li>First steps first, check if you have muted/deafened yourself or another user. You’ll be able to check this by seeing if the mic or headset icon has a slash across it or not.</li>
 </ul>
-<p class="wysiwyg-text-align-center"><img src="https://support.discord.com/hc/article_attachments/12334626673047" alt="mute_deafen_1_.jpg"></p>
+<p class="wysiwyg-text-align-center"><img src="https://support.discord.com/hc/article_attachments/19102679763863" alt="image9.png"></p>
 <ul>
-    <li><span style="font-weight: 400;">Additionally, it’s possible that you may have been Server Muted or Deafened by an admin or Server Owner! In these cases, you will need to reach out to the server owner or admins to remove the Server Mute or Deafen.</span></li>
+    <li><span style="font-weight: 400;">Additionally, it’s possible that you may have been Server Muted or Deafened by an admin or Server Owner. In these cases, you will need to reach out to the server owner or admins to remove the Server Mute or Deafen.</span></li>
 </ul>
-<p class="wysiwyg-text-align-center"><img src="https://support.discord.com/hc/article_attachments/12334631765015" alt="servermuted.png"></p>
 <h2 id="h_5423de57-b662-4bb6-9673-698527b2ed58">Check Channel/Role Permissions</h2>
 <ul>
     <li><span style="font-weight: 400;">Does this voice/audio/video issue happen in all servers, or only within a specific channel or server? </span></li>
@@ -74,21 +72,21 @@
 <h2 id="h_3e79f2bf-5065-4b06-a958-185dbed8edad">Check Volume Settings</h2>
 <ul>
     <li>
-        <span style="font-weight: 400;">If you’re not able to hear a specific user in the server or direct call, it’s possible that you may have changed the volume settings for an individual user! </span>
+        <span style="font-weight: 400;">If you’re not able to hear a specific user in the server or direct call, it’s possible that you may have changed the volume settings for an individual user. <br></span>
         <ul>
-            <li><span style="font-weight: 400;">On <strong>Desktop or Browser</strong>, you can right click the user’s icon and then change the User Volume using the volume slider in the menu.</span></li>
-            <li><span style="font-weight: 400;">On <strong>mobile</strong>, when you’re in a voice channel/voice call, you can tap on the user’s icon and then change the Volume Settings directly.</span></li>
+            <li><span style="font-weight: 400;">On <strong>Desktop or Browser: </strong>right-click the user’s icon and then change the <strong>User Volume</strong> using the volume slider in the menu.</span></li>
+            <li><span style="font-weight: 400;">On <strong>M</strong><strong>obile:</strong> in a voice channel/voice call, you can tap on the member’s icon in the top right and select the user. Then, you will be able to change the <strong>Volume Settings</strong> directly by adjusting the volume slider.</span></li>
         </ul>
     </li>
 </ul>
-<p class="wysiwyg-text-align-center"><span style="font-weight: 400;"><img src="https://support.discord.com/hc/article_attachments/12334756805527" alt="desktop_volume_1_.jpg" width="541" height="298"> <img src="https://support.discord.com/hc/article_attachments/12334742426263" alt="volume_mobile_1_.jpg" width="137" height="296"><br></span></p>
+<p class="wysiwyg-text-align-center"><span style="font-weight: 400;"><img src="https://support.discord.com/hc/article_attachments/19102693855767" alt="image22.gif" width="537" height="298">   <img src="https://support.discord.com/hc/article_attachments/19102693859223" alt="image7.gif" width="149" height="299"></span></p>
 <h1 id="h_5a079da6-3cf3-441b-99d3-9ae874dd1bc6"><span style="font-weight: 400;">Desktop Troubleshooting</span></h1>
-<p><span style="font-weight: 400;">For those of you that have installed our desktop client on your Mac or Windows' desktop, here are some troubleshooting steps that might be able to help you out!</span></p>
+<p><span style="font-weight: 400;">For those of you that have installed our desktop app on your Mac or Windows, here are some troubleshooting steps that might be able to help you out!</span></p>
 <h2 id="h_0098f091-6bc4-4964-b54c-4e6a7e96cb14"><span style="font-weight: 400;">Initial Steps for Desktop Users</span></h2>
 <p><strong>🔲   Check that your OS is compatible with our app! </strong></p>
 <ul>
     <li style="font-weight: 400;">
-        <span style="font-weight: 400;">Click </span><a href="https://support.discord.com/hc/articles/213491697"><span style="font-weight: 400;">this link here</span></a><span style="font-weight: 400;"> to check!</span>
+        <span id="docs-internal-guid-eb99e20a-7fff-6433-c91f-e5e8f22283a6">Head over to our OS/system requirements </span><a href="https://support.discord.com/hc/articles/213491697" target="_blank" rel="noopener noreferrer"><span class="wysiwyg-underline" style="color: #1155cc;">article</span></a> to learn more.
     </li>
 </ul>
 <p><strong>🔲   Make sure that your OS is fully up to date for your computer! </strong></p>
@@ -116,7 +114,7 @@
     </li>
     <li style="font-weight: 400;"><strong>Mac: <span style="font-weight: 400;"><a href="https://support.apple.com/guide/mac-help/change-privacy-security-settings-on-mac-mchl211c911f/13.0/mac/13.0">https://support.apple.com/guide/mac-help/change-privacy-security-settings-on-mac-mchl211c911f/13.0/mac/13.0</a></span></strong></li>
 </ul>
-<p class="wysiwyg-text-align-center"><strong><img src="https://support.discord.com/hc/article_attachments/360060466111" alt="image12.png" width="494" height="423"></strong></p>
+<p class="wysiwyg-text-align-center"><strong><img src="https://support.discord.com/hc/article_attachments/19102693861015" alt="image12.png" width="531" height="469"></strong></p>
 <p><strong>🔲   And for PC/Windows Users:</strong><strong> Check that your sound/audio or webcam/video/graphic card drivers and software are fully up to date! </strong></p>
 <ul>
     <li style="font-weight: 400;"><span style="font-weight: 400;">Follow these official guides here for more information on how to update your drivers for your device:</span></li>
@@ -215,16 +213,14 @@
     </li>
     <li style="font-weight: 400;"><span style="font-weight: 400;">If you’re still having an issue while also in the <strong>Voice &amp; Video tab</strong>, please also disable the <strong>AV1 video codec</strong> option. </span></li>
 </ul>
-<h3><span style="font-weight: 400;">If a viewer is seeing high CPU while watching AV1 streams, they may consider disabling the AV1 video codec option. </span></h3>
+<h3 id="h_01HFAJVG003H5D9F857MR7KQJR"><span style="font-weight: 400;">If a viewer is seeing high CPU while watching AV1 streams, they may consider disabling the AV1 video codec option. </span></h3>
 <p class="wysiwyg-text-align-center"><img src="https://support.discord.com/hc/article_attachments/12335067230743" alt="voice_settings_video_codec.jpg"></p>
 <h1 id="h_b373929a-d071-46f8-a98b-9f26fa0cfe36"><span style="font-weight: 400;">Browser Troubleshooting</span></h1>
 <p><span style="font-weight: 400;">If you're logging in through <a href="https://discord.com/">https://discord.com/</a> and using our app on a browser like Chrome, Firefox or Safari, follow these troubleshooting steps to help you resolve your audio, voice, video issues! </span></p>
 <h2 id="h_2ad277da-bbca-4e4a-abd5-8e2e1ca09184"><span style="font-weight: 400;">Initial Steps for Browser Users</span></h2>
 <p><strong>🔲   Check that your browser and browser version is compatible with our app! </strong></p>
 <ul>
-    <li>
-        <span style="font-weight: 400;">Click </span><a href="https://support.discord.com/hc/articles/213491697"><span style="font-weight: 400;">this link here</span></a><span style="font-weight: 400;"> to check!</span>
-    </li>
+    <li>Navigate<a href="https://support.discord.com/hc/articles/213491697" target="_blank" rel="noopener noreferrer"> here</a> to double-check your browser compatibility!</li>
 </ul>
 <p><strong>🔲   Check that you have given permissions to Discord to use your Microphone and Camera with the browser!</strong></p>
 <ul>
@@ -272,13 +268,11 @@
     <li style="font-weight: 400;"><span style="font-weight: 400;">A list of input and output devices you’re using</span></li>
 </ol>
 <h1 id="h_2f36a508-3978-454d-b596-a28356d78033"><span style="font-weight: 400;">Mobile Troubleshooting</span></h1>
-<p><span style="font-weight: 400;">If you're using Discord on your phone, give these troubleshooting steps below a shot! </span></p>
+<p><span style="font-weight: 400;">If you're using Discord on your mobile device, give these troubleshooting steps below a shot! </span></p>
 <h2 id="h_0c7665e5-aad9-4f67-8e25-e69ba53a8c00"><span style="font-weight: 400;">Initial Steps for Mobile Users</span></h2>
 <p><strong>🔲   Check that your OS is compatible with our app! </strong></p>
 <ul>
-    <li>
-        <span style="font-weight: 400;">Click </span><a href="https://support.discord.com/hc/articles/213491697"><span style="font-weight: 400;">this link here</span></a><span style="font-weight: 400;"> to check.</span>
-    </li>
+    <li>Head over to this <a href="https://support.discord.com/hc/articles/213491697"><span class="wysiwyg-underline" style="color: #1155cc;">article</span></a> to check your OS compatibility.</li>
 </ul>
 <p><strong>🔲   Make sure that your OS is fully up to date for your device!</strong></p>
 <ul>
@@ -352,7 +346,7 @@
 </ul>
 <h2 id="h_97c51449-7815-408a-b344-d12a8524a015"><span style="font-weight: 400;">Next Steps for Mobile Users</span></h2>
 <p><strong>🔲   Tap on your avatar in the bottom right hand corner to head into your User Settings and then scroll down to press on Voice &amp; Video. </strong></p>
-<p class="wysiwyg-text-align-center"><img src="https://support.discord.com/hc/article_attachments/12335232641687" alt="volume_mobile.gif" width="218" height="471"></p>
+<p class="wysiwyg-text-align-center"><img src="https://support.discord.com/hc/article_attachments/19102679782039" alt="image5.gif" width="368" height="762"></p>
 <ul>
     <li style="font-weight: 400;">
         <span style="font-weight: 400;">Check your </span><strong>input mode </strong><span style="font-weight: 400;">- Make sure you’re not accidentally on </span><strong>Push to Talk</strong><span style="font-weight: 400;"> mode</span>
@@ -398,11 +392,11 @@
 </ul>
 <p class="wysiwyg-text-align-left">The <strong>Airplay</strong> button can be found when pressing on the<strong> bluetooth </strong>icon while in a call. You can, then, select the Bluetooth device that you’d like to connect to Discord.</p>
 <p class="wysiwyg-text-align-center"><span id="docs-internal-guid-647d2e6f-7fff-2c61-1f66-c243c8f93fce"><img src="https://lh5.googleusercontent.com/Y2a_wnuAYPJMAUoY2nFI2BeNgutBEICeRBFT6e17XhTt0iFmDnNkn0DknYbm8HXtET0o2dAolTtBhxkcT8m3C6hO7T7XjEW2Co1HNwmsUgruflgLrE2gzVqt7mMVz2ocb3_3zopbJ-Rq6erE9LPCZjI" width="264" height="486">   </span><img src="https://lh6.googleusercontent.com/QoJQ2HbHrvcWRFZQyDoQiroqq-jOc8rQnzu0__9aWWn7YiMpYC73QQlm9_VkH7w1YgsSExH1rsy-I7VPDt9ICLpEOOKTxFUOVgMV3L2F_3k7B3UdsmOFa8dE6B9Oe7jUMrp7_6Bxyeh5tjllfInmvdw" width="264" height="486"></p>
-<h3 class="wysiwyg-text-align-left"><span id="docs-internal-guid-7baad4f9-7fff-0d3b-dc2d-dfe4cdb971a2" style="color: #434343;" data-darkreader-inline-color="">Note: If you are using Discord via iOS, you will have to enable Airplay to select an external output source if you prefer not to use speakerphone.   </span></h3>
+<h3 id="h_01HFAJVG02DPW5FKSBXG70WKDC" class="wysiwyg-text-align-left"><span id="docs-internal-guid-7baad4f9-7fff-0d3b-dc2d-dfe4cdb971a2" style="color: #434343;" data-darkreader-inline-color="">Note: If you are using Discord via iOS, you will have to enable Airplay to select an external output source if you prefer not to use speakerphone.   </span></h3>
 <p class="wysiwyg-text-align-left"><span class="wysiwyg-color-blue"><strong>🔲   Last but not least, if all of the above didn’t work, send a ticket to our support team at </strong><a href="https://dis.gd/contact" target="_blank" rel="noopener noreferrer">https://dis.gd/contact</a><strong> with all the following information:</strong></span></p>
 <ol>
     <li style="font-weight: 400;"><span style="font-weight: 400;">A clear description of your issue</span></li>
-    <li style="font-weight: 400;"><span style="font-weight: 400;">The device and OS version you’re using? (ex: Pixel 3, Android Version 10)</span></li>
+    <li>The device and OS version you’re using? (ex. ipadOS 13, iOS 13, iOS 16)</li>
     <li style="font-weight: 400;"><span style="font-weight: 400;">The Discord app version you’re using (ex: Version 26.1)</span></li>
     <li style="font-weight: 400;"><span style="font-weight: 400;">Which clients is this issue occurring on (ex: browser, mobile and/or desktop)?</span></li>
     <li style="font-weight: 400;"><span style="font-weight: 400;">Screenshots of all your Voice &amp; Video settings</span></li>
