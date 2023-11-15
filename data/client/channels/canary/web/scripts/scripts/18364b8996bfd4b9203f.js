@@ -246,10 +246,10 @@
                         pid: t
                     })
                 },
-                toggleOverlay(t) {
-                    let e = s.default.getGameByName(t.name);
-                    if (null != e) {
-                        let t = E.default.getActiveLibraryApplication(e.id);
+                toggleOverlay(t, e) {
+                    let i = s.default.getGameByName(t.name);
+                    if (null != i) {
+                        let t = E.default.getActiveLibraryApplication(i.id);
                         if (null != t) {
                             let e = f.toggleFlag(t.getFlags(), C.LibraryApplicationFlags.OVERLAY_DISABLED);
                             T.updateFlags(t.id, t.branchId, e);
@@ -258,7 +258,8 @@
                     }
                     l.default.dispatch({
                         type: "RUNNING_GAME_TOGGLE_OVERLAY",
-                        game: t
+                        game: t,
+                        newEnabledValue: e
                     })
                 },
                 toggleDetection(t) {
@@ -1011,4 +1012,4 @@
         }
     }
 ]);
-//# sourceMappingURL=4d7483011eca542b5520.js.map
+//# sourceMappingURL=18364b8996bfd4b9203f.js.map
