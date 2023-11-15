@@ -8273,10 +8273,10 @@
             "use strict";
             n.r(t), n.d(t, {
                 MESSAGE_SCAN_TIMEOUT: function() {
-                    return T
+                    return C
                 },
                 default: function() {
-                    return L
+                    return D
                 }
             }), n("222007");
             var i = n("345570"),
@@ -8292,44 +8292,46 @@
                 E = n("162771"),
                 h = n("695681"),
                 f = n("457971"),
-                p = n("793441");
-            let T = 2e4,
-                C = {};
+                p = n("793441"),
+                T = n("574933");
+            let C = 2e4,
+                S = {};
 
-            function S(e) {
+            function m(e) {
                 return "".concat(e.channel_id, ":").concat(e.id)
             }
 
-            function m() {
-                Object.values(C).forEach(e => {
+            function I() {
+                Object.values(S).forEach(e => {
                     clearTimeout(e)
-                }), C = {}
+                }), S = {}
             }
 
-            function I(e, t) {
+            function g(e, t) {
                 if (e.forEach(t => {
-                        let n = S(t);
-                        C[n] = setTimeout(() => {
+                        let n = m(t);
+                        S[n] = setTimeout(() => {
                             ! function(e) {
                                 e.forEach(e => {
-                                    let t = S(e);
-                                    clearTimeout(C[t]);
-                                    let n = c.default.getMessage(e.channel_id, e.id);
-                                    null != n && g(n) && r.default.dispatch({
+                                    let t = m(e);
+                                    clearTimeout(S[t]);
+                                    let n = c.default.getMessage(e.channel_id, e.id),
+                                        i = T.default.getMessage(e.id, e.channel_id);
+                                    (null != n && A(n) || null != i && A(i)) && r.default.dispatch({
                                         type: "MESSAGE_EXPLICIT_CONTENT_SCAN_TIMEOUT",
                                         messageId: e.id,
                                         channelId: e.channel_id
-                                    }), delete C[t]
+                                    }), delete S[t]
                                 })
                             }(e)
-                        }, T)
+                        }, C)
                     }), t) {
                     (0, h.sendMultiChannelMessagesForScanning)(e);
                     return
                 }(0, h.sendMessagesForScanning)(e[0].channel_id, e.map(e => e.id))
             }
 
-            function g(e) {
+            function A(e) {
                 var t, n, i, a, l, s, r, o;
                 let u = null !== (l = null == e ? void 0 : null === (t = e.attachments) || void 0 === t ? void 0 : t.length) && void 0 !== l ? l : 0,
                     d = null !== (s = null == e ? void 0 : null === (n = e.embeds) || void 0 === n ? void 0 : n.length) && void 0 !== s ? s : 0;
@@ -8342,7 +8344,7 @@
                 return c.length > 0 || _.length > 0
             }
 
-            function A(e) {
+            function N(e) {
                 var t;
                 let {
                     channelId: n,
@@ -8354,10 +8356,10 @@
                 let s = _.default.getChannelId(),
                     r = d.default.getCurrentSidebarChannelId(s),
                     o = n === s || n === r;
-                return !!(o && g(i) && (0, p.shouldRedactExplicitContent)(i)) && (I([i]), !0)
+                return !!(o && A(i) && (0, p.shouldRedactExplicitContent)(i)) && (g([i]), !0)
             }
 
-            function N(e) {
+            function O(e) {
                 let {
                     channelId: t,
                     messages: n
@@ -8367,24 +8369,24 @@
                     a = d.default.getCurrentSidebarChannelId(i),
                     l = t === i || t === a;
                 if (l) {
-                    let e = n.filter(e => g(e) && (0, p.shouldRedactExplicitContent)(e));
-                    if (e.length > 0) return I(e), !0
+                    let e = n.filter(e => A(e) && (0, p.shouldRedactExplicitContent)(e));
+                    if (e.length > 0) return g(e), !0
                 }
                 return !1
             }
 
-            function O(e) {
+            function R(e) {
                 let {
                     messages: t
                 } = e;
                 if (!(0, f.isEligibleForExplicitMediaRedaction)() || null == t) return !1;
                 let n = a(t),
                     i = s(n, (e, t) => e.id === t.id && e.channel_id === t.channel_id),
-                    l = i.filter(e => g(e) && (0, p.shouldRedactExplicitContent)(e));
-                return !!(l.length > 0) && (I(l, !0), !0)
+                    l = i.filter(e => A(e) && (0, p.shouldRedactExplicitContent)(e));
+                return !!(l.length > 0) && (g(l, !0), !0)
             }
 
-            function R(e) {
+            function y(e) {
                 let {
                     guildId: t,
                     threads: n
@@ -8393,13 +8395,13 @@
                 let i = E.default.getGuildId() === t;
                 if (i) {
                     let e = Object.keys(n).map(e => n[e].first_message),
-                        t = e.filter(e => g(e) && (0, p.shouldRedactExplicitContent)(e));
-                    if (t.length > 0) return I(t, !0), !0
+                        t = e.filter(e => A(e) && (0, p.shouldRedactExplicitContent)(e));
+                    if (t.length > 0) return g(t, !0), !0
                 }
                 return !1
             }
 
-            function y(e) {
+            function v(e) {
                 let {
                     guildId: t,
                     firstMessages: n
@@ -8407,13 +8409,13 @@
                 if (null == n || !(0, f.isEligibleForExplicitMediaRedaction)()) return !1;
                 let i = E.default.getGuildId() === t;
                 if (i) {
-                    let e = n.filter(e => g(e) && (0, p.shouldRedactExplicitContent)(e));
-                    if (e.length > 0) return I(e, !0), !0
+                    let e = n.filter(e => A(e) && (0, p.shouldRedactExplicitContent)(e));
+                    if (e.length > 0) return g(e, !0), !0
                 }
                 return !1
             }
 
-            function v(e) {
+            function M(e) {
                 let {
                     channelId: t
                 } = e;
@@ -8422,24 +8424,25 @@
                 if (!n) return !1;
                 let i = c.default.getMessages(t);
                 if (0 === i.length) return !1;
-                let a = i.filter(e => g(e) && (0, p.shouldRedactExplicitContent)(e));
-                return !!(a.length > 0) && (I(a), !0)
+                let a = i.filter(e => A(e) && (0, p.shouldRedactExplicitContent)(e));
+                return !!(a.length > 0) && (g(a), !0)
             }
-            class M extends o.default {
+            class L extends o.default {
                 constructor(...e) {
                     super(...e), this.actions = {
-                        LOAD_MESSAGES_SUCCESS: N,
-                        LOAD_FORUM_POSTS: R,
-                        LOAD_THREADS_SUCCESS: y,
-                        LOAD_ARCHIVED_THREADS_SUCCESS: y,
-                        MESSAGE_CREATE: A,
-                        LOGOUT: m,
-                        SEARCH_FINISH: O,
-                        CHANNEL_SELECT: v
+                        LOAD_MESSAGES_SUCCESS: O,
+                        LOAD_FORUM_POSTS: y,
+                        LOAD_THREADS_SUCCESS: v,
+                        LOAD_ARCHIVED_THREADS_SUCCESS: v,
+                        MESSAGE_CREATE: N,
+                        LOGOUT: I,
+                        SEARCH_FINISH: R,
+                        CHANNEL_SELECT: M,
+                        LOAD_PINNED_MESSAGES_SUCCESS: R
                     }
                 }
             }
-            var L = new M
+            var D = new L
         },
         695681: function(e, t, n) {
             "use strict";
@@ -8752,6 +8755,87 @@
                     name: r.MetricEvents.EXPLICIT_MEDIA_SCAN_CLIENT_TIMED_OUT
                 })
             }(l = i || (i = {}))[l.Attachment = 0] = "Attachment", l[l.Embed = 1] = "Embed", (s = a || (a = {})).EXPLICIT_MEDIA_LEARN_MORE_VIEWED = "explicit_media_learn_more_viewed", s.EXPLICIT_MEDIA_LEARN_MORE_CLICK_SETTINGS = "explicit_media_learn_more_click_settings", s.EXPLICIT_MEDIA_LEARN_MORE_CLICK_LEARN_MORE = "explicit_media_learn_more_click_learn_more", s.EXPLICIT_MEDIA_LEARN_MORE_CLICK_DISMISS = "explicit_media_learn_more_click_dismiss", s.EXPLICIT_MEDIA_LEARN_MORE_CLICK_FALSE_POSITIVE = "explicit_media_learn_more_click_false_positive", s.EXPLICIT_MEDIA_FALSE_POSITIVE_VIEWED = "explicit_media_false_positive_viewed", s.EXPLICIT_MEDIA_FALSE_POSITIVE_CLICK_CONFIRM = "explicit_media_false_positive_click_confirm", s.EXPLICIT_MEDIA_FALSE_POSITIVE_CLICK_CANCEL = "explicit_media_false_positive_click_cancel"
+        },
+        574933: function(e, t, n) {
+            "use strict";
+            n.r(t), n.d(t, {
+                default: function() {
+                    return _
+                }
+            }), n("808653"), n("424973");
+            var i = n("446674"),
+                a = n("913144"),
+                l = n("692038"),
+                s = n("457971"),
+                r = n("793441");
+            let o = {};
+
+            function u(e) {
+                return "".concat(e.channel_id, ":").concat(e.id)
+            }
+
+            function d() {
+                o = {}
+            }
+            class c extends i.default.Store {
+                getMessage(e, t) {
+                    return o[u({
+                        id: e,
+                        channel_id: t
+                    })]
+                }
+            }
+            c.displayName = "SearchMessageStore";
+            var _ = new c(a.default, {
+                SEARCH_FINISH: function(e) {
+                    return !!(0, s.isEligibleForExplicitMediaRedaction)() && null != e.messages && (o = e.messages.reduce((e, t) => (t.forEach(t => {
+                        e[u(t)] = (0, l.createMessageRecord)(t)
+                    }), e), {}), !0)
+                },
+                MESSAGE_UPDATE: function(e) {
+                    let {
+                        message: t
+                    } = e;
+                    if (!(0, s.isEligibleForExplicitMediaRedaction)() || null == t.id || null == t.channel_id) return !1;
+                    let n = u(t),
+                        i = o[n];
+                    return null != i && (o[n] = (0, l.updateMessageRecord)(i, {
+                        attachments: t.attachments,
+                        embeds: t.embeds
+                    }), !0)
+                },
+                LOGOUT: function() {
+                    (function() {
+                        o = {}
+                    })()
+                },
+                CONNECTION_OPEN: function() {
+                    (function() {
+                        o = {}
+                    })()
+                },
+                MESSAGE_EXPLICIT_CONTENT_SCAN_TIMEOUT: function(e) {
+                    let {
+                        messageId: t,
+                        channelId: n
+                    } = e, i = [], a = [], l = u({
+                        id: t,
+                        channel_id: n
+                    }), s = o[l];
+                    if (null != s) {
+                        let e = o[l],
+                            s = e.attachments.map(e => (null == e.content_scan_version && (e.content_scan_version = -1, i.push(parseInt(e.id))), e));
+                        e.set("attachments", s);
+                        let u = e.embeds.map(e => (null == e.contentScanVersion && (e.contentScanVersion = -1, a.push(e.id)), e));
+                        e.set("embeds", u), (0, r.trackScanningTimedOut)({
+                            channelId: n,
+                            messageId: t,
+                            embedIds: a,
+                            attachmentIds: i
+                        })
+                    }
+                }
+            })
         },
         721423: function(e, t, n) {
             "use strict";
@@ -33582,4 +33666,4 @@
         }
     }
 ]);
-//# sourceMappingURL=6953e2a4f9fadb21ec06.js.map
+//# sourceMappingURL=676ce94b1e3158755400.js.map
