@@ -8548,35 +8548,35 @@
                 getExplicitContentSettingOrDefault: function() {
                     return N
                 },
+                getShouldObscureForSetting: function() {
+                    return O
+                },
                 shouldRedactExplicitContent: function() {
                     return R
                 },
                 updateExplicitContentSetting: function() {
                     return y
                 },
-                shouldRedactExplicitContentForForum: function() {
-                    return v
-                },
                 ObscuredMediaTypes: function() {
                     return i
                 },
                 isMediaObscured: function() {
-                    return M
+                    return v
                 },
                 getObscuredMediaForMessage: function() {
-                    return L
+                    return M
                 },
                 isPendingScan: function() {
-                    return D
+                    return L
                 },
                 TrackMediaRedactionActionType: function() {
                     return a
                 },
                 trackMediaRedactionAction: function() {
-                    return U
+                    return D
                 },
                 trackScanningTimedOut: function() {
-                    return P
+                    return U
                 }
             }), n("702976");
             var i, a, l, s, r = n("432710"),
@@ -8641,17 +8641,7 @@
                 })
             };
 
-            function v() {
-                if (!(0, S.isEligibleForExplicitMediaRedaction)()) return !1;
-                let e = f.default.getCurrentUser();
-                if (null == e) return !1;
-                let {
-                    explicitContentGuilds: t
-                } = N();
-                return O(t)
-            }
-
-            function M(e, t) {
+            function v(e, t) {
                 var n, i;
                 if (!t) return !1;
                 if (o.default.get("obscure_blur_effect_enabled")) return !0;
@@ -8665,14 +8655,14 @@
                 }
             }
 
-            function L(e) {
+            function M(e) {
                 let t = R(e);
                 return t ? {
-                    obscuredAttachments: e.attachments.filter(e => M({
+                    obscuredAttachments: e.attachments.filter(e => v({
                         type: 0,
                         media: e
                     }, !0)),
-                    obscuredEmbeds: e.embeds.filter(e => M({
+                    obscuredEmbeds: e.embeds.filter(e => v({
                         type: 1,
                         media: e
                     }, !0))
@@ -8682,11 +8672,11 @@
                 }
             }
 
-            function D(e) {
+            function L(e) {
                 return !o.default.get("explicit_media_redaction_ignore_pending_scan") && null == e
             }
 
-            function U(e) {
+            function D(e) {
                 let {
                     action: t,
                     channelId: n,
@@ -8703,7 +8693,7 @@
                 })
             }
 
-            function P(e) {
+            function U(e) {
                 let {
                     channelId: t,
                     messageId: n,
@@ -33635,4 +33625,4 @@
         }
     }
 ]);
-//# sourceMappingURL=c7f7872b5c501538fad1.js.map
+//# sourceMappingURL=33330256fb0bcb679624.js.map
