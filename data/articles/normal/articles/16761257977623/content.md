@@ -22,8 +22,8 @@
     <span style="color: #434343;" data-darkreader-inline-color="">With a Nitro or Nitro Basic subscription, you can add up to 100 packs! If you are not subscribed to Nitro or Nitro Basic, you will be able to add up to 1 pack for free. If you’d like to learn more about our subscription perks, you can find out more </span><a href="https://support.discord.com/hc/en-us/articles/115000435108-Nitro-Nitro-Classic-Nitro-Basic" target="_blank" rel="noopener noreferrer">here</a><span style="color: #434343;" data-darkreader-inline-color="">.</span>
 </h3>
 <h1 id="h_01H96AKBVM8ZA70KC69DVYESGB">How to Manage your Server’s Pack</h1>
-<h3 id="h_01H96AKBVM6X9QXA312THH8F12"><span style="color: #434343;" data-darkreader-inline-color="">Note: The pack sharing setting is enabled by default for <span id="docs-internal-guid-91d1c491-7fff-de3e-a8c3-b0351e6fdb5f" style="color: #434343;" data-darkreader-inline-color="">discoverable</span> servers. </span></h3>
-<p>To manage your pack settings, you will need to be the owner of the server or have the <strong>Manage</strong> <strong>Server</strong> permission enabled.  </p>
+<h3 id="h_01H96AKBVM6X9QXA312THH8F12"><span style="color: #434343;" data-darkreader-inline-color="">Note: The pack sharing setting is enabled by default for servers. </span></h3>
+<p>To manage your pack settings, you will need to be the owner of the server. </p>
 <p>1. To get started, head into your <strong>Server Settings</strong> by selecting the drop-down menu located next to the server name. </p>
 <p class="wysiwyg-text-align-center"><img src="https://support.discord.com/hc/article_attachments/17191243213719" alt="Screen Shot 2023-08-14 at 4.27.56 PM copy.png"></p>
 <p>2. Once redirected, press the <strong>Emoji</strong> tab. </p>
