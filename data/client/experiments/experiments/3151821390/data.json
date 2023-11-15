@@ -1,0 +1,21 @@
+{
+  "data": {
+    "kind": "user",
+    "id": "2023-11_uu_one_click",
+    "label": "Unique Username one click",
+    "description": [
+      "Not Eligible",
+      "Control Bucket",
+      "Treatment 1: Enable one click"
+    ],
+    "hash": 3151821390,
+    "buckets": [
+      -1,
+      0,
+      1
+    ],
+    "config_keys": [
+      "enabled"
+    ]
+  }
+}
