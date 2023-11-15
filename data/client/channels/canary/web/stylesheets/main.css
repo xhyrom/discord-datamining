@@ -120722,6 +120722,8 @@ div.nagbar_c731ff {
     --paypal-hsl: 230 calc(var(--saturation-factor, 1) * 69.8%) 24.7%;
     --playstation: hsl(var(--playstation-hsl) / 1);
     --playstation-hsl: 220 calc(var(--saturation-factor, 1) * 95.7%) 27.1%;
+    --plum-23-alpha: hsl(var(--plum-23-alpha-hsl) / 0.09);
+    --plum-23-alpha-hsl: 230 calc(var(--saturation-factor, 1) * 60.7%) 78%;
     --plum-0: hsl(var(--plum-0-hsl) / 1);
     --plum-0-hsl: 240 calc(var(--saturation-factor, 1) * 9.1%) 97.8%;
     --plum-1: hsl(var(--plum-1-hsl) / 1);
@@ -121307,6 +121309,7 @@ div.nagbar_c731ff {
     --icon-muted: var(--primary-400);
     --icon-primary: var(--primary-130);
     --icon-secondary: var(--primary-330);
+    --icon-transparent: hsl(var(--transparent-hsl) / 0);
     --info-box-background: hsl(var(--blue-345-hsl) / 0.1);
     --info-danger-background: hsl(var(--red-400-hsl) / 0.1);
     --info-danger-foreground: var(--red-400);
@@ -121337,6 +121340,7 @@ div.nagbar_c731ff {
     --modal-background: var(--primary-600);
     --modal-footer-background: var(--primary-630);
     --navigator-header-tint: var(--white-500);
+    --panel-bg: var(--primary-600);
     --polls-image-normal-border: hsl(var(--black-430-hsl) / 0.9);
     --polls-victor-border: var(--yellow-300);
     --polls-victor-fill: var(--yellow-200);
@@ -121593,6 +121597,7 @@ div.nagbar_c731ff {
     --icon-muted: var(--primary-400);
     --icon-primary: var(--primary-860);
     --icon-secondary: var(--primary-500);
+    --icon-transparent: hsl(var(--transparent-hsl) / 0);
     --info-box-background: hsl(var(--blue-345-hsl) / 0.1);
     --info-danger-background: hsl(var(--red-430-hsl) / 0.1);
     --info-danger-foreground: var(--red-430);
@@ -121623,6 +121628,7 @@ div.nagbar_c731ff {
     --modal-background: var(--white-500);
     --modal-footer-background: var(--primary-130);
     --navigator-header-tint: var(--primary-500);
+    --panel-bg: var(--white-500);
     --polls-image-normal-border: hsl(var(--black-430-hsl) / 0.9);
     --polls-victor-border: var(--yellow-430);
     --polls-victor-fill: var(--yellow-200);
@@ -121754,7 +121760,7 @@ div.nagbar_c731ff {
     --background-message-hover: var(--plum-21);
     --background-mobile-primary: var(--black-500);
     --background-mobile-secondary: var(--black-500);
-    --background-modifier-accent: hsl(var(--plum-16-hsl) / 0.455);
+    --background-modifier-accent: hsl(var(--plum-23-alpha-hsl) / 0.09);
     --background-modifier-accent-2: hsl(var(--plum-11-hsl) / 0.32);
     --background-modifier-active: hsl(var(--plum-13-hsl) / 0.48);
     --background-modifier-hover: hsl(var(--plum-13-hsl) / 0.3);
@@ -121769,12 +121775,12 @@ div.nagbar_c731ff {
     --bg-base-primary: var(--black-500);
     --bg-base-secondary: var(--black-500);
     --bg-base-tertiary: var(--black-500);
-    --bg-mod-faint: hsl(var(--plum-11-hsl) / 0.06);
+    --bg-mod-faint: hsl(var(--plum-11-hsl) / 0.08);
     --bg-mod-strong: hsl(var(--plum-11-hsl) / 0.18);
     --bg-mod-subtle: hsl(var(--plum-11-hsl) / 0.12);
     --bg-surface-overlay: var(--plum-19);
-    --bg-surface-overlay-tmp: var(--plum-23);
-    --bg-surface-raised: var(--plum-22);
+    --bg-surface-overlay-tmp: var(--plum-21);
+    --bg-surface-raised: var(--plum-24);
     --black: var(--black-500);
     --blur-fallback: hsl(var(--plum-19-hsl) / 0.96);
     --blur-fallback-pressed: hsl(var(--plum-20-hsl) / 0.96);
@@ -121833,10 +121839,10 @@ div.nagbar_c731ff {
     --button-secondary-background-hover: var(--plum-11);
     --card-gradient-bg: hsl(var(--black-500-hsl) / 0.4);
     --card-gradient-pressed-bg: hsl(var(--black-500-hsl) / 0.5);
-    --card-primary-bg: var(--plum-22);
-    --card-primary-pressed-bg: var(--plum-24);
-    --card-secondary-bg: var(--plum-23);
-    --card-secondary-pressed-bg: var(--plum-25);
+    --card-primary-bg: var(--plum-24);
+    --card-primary-pressed-bg: var(--plum-25);
+    --card-secondary-bg: var(--plum-25);
+    --card-secondary-pressed-bg: var(--plum-26);
     --channel-icon: var(--plum-10);
     --channel-text-area-placeholder: var(--plum-11);
     --channels-default: var(--plum-9);
@@ -121879,6 +121885,7 @@ div.nagbar_c731ff {
     --icon-muted: var(--plum-12);
     --icon-primary: var(--plum-5);
     --icon-secondary: var(--plum-9);
+    --icon-transparent: hsl(var(--transparent-hsl) / 0);
     --info-box-background: hsl(var(--blue-345-hsl) / 0.1);
     --info-danger-background: hsl(var(--red-400-hsl) / 0.1);
     --info-danger-foreground: var(--red-400);
@@ -121892,7 +121899,7 @@ div.nagbar_c731ff {
     --info-warning-background: hsl(var(--yellow-300-hsl) / 0.1);
     --info-warning-foreground: var(--yellow-300);
     --info-warning-text: var(--white-500);
-    --input-background: hsl(var(--plum-16-hsl) / 0.455);
+    --input-background: hsl(var(--plum-23-alpha-hsl) / 0.09);
     --input-placeholder-text: var(--plum-9);
     --interactive-active: var(--plum-3);
     --interactive-hover: var(--plum-4);
@@ -121909,6 +121916,7 @@ div.nagbar_c731ff {
     --modal-background: var(--plum-16);
     --modal-footer-background: var(--plum-17);
     --navigator-header-tint: var(--white-500);
+    --panel-bg: var(--plum-24);
     --polls-image-normal-border: hsl(var(--black-430-hsl) / 0.9);
     --polls-victor-border: var(--yellow-300);
     --polls-victor-fill: var(--yellow-200);
@@ -121960,20 +121968,20 @@ div.nagbar_c731ff {
     --redesign-button-primary-on-blurple-text: var(--brand-500);
     --redesign-button-primary-pressed-background: var(--brand-560);
     --redesign-button-primary-text: var(--white-500);
-    --redesign-button-secondary-alt-background: hsl(var(--plum-16-hsl) / 0.455);
+    --redesign-button-secondary-alt-background: hsl(var(--plum-23-alpha-hsl) / 0.09);
     --redesign-button-secondary-alt-pressed-background: hsl(var(--plum-11-hsl) / 0.2);
     --redesign-button-secondary-alt-pressed-text: var(--plum-8);
     --redesign-button-secondary-alt-text: var(--plum-4);
-    --redesign-button-secondary-background: var(--plum-15);
+    --redesign-button-secondary-background: var(--plum-17);
     --redesign-button-secondary-border: hsl(var(--plum-11-hsl) / 0.12);
-    --redesign-button-secondary-pressed-background: var(--plum-13);
-    --redesign-button-secondary-pressed-border: hsl(var(--plum-11-hsl) / 0.12);
+    --redesign-button-secondary-pressed-background: var(--plum-15);
+    --redesign-button-secondary-pressed-border: hsl(var(--plum-11-hsl) / 0.06);
     --redesign-button-secondary-text: var(--plum-4);
     --redesign-channel-category-name-text: var(--plum-8);
     --redesign-channel-message-preview-text: var(--plum-10);
     --redesign-channel-name-muted-text: var(--plum-10);
     --redesign-channel-name-text: var(--plum-2);
-    --redesign-chat-input-background: hsl(var(--plum-16-hsl) / 0.455);
+    --redesign-chat-input-background: hsl(var(--plum-23-alpha-hsl) / 0.09);
     --redesign-input-control-active-bg: var(--plum-17);
     --redesign-input-control-selected: var(--brand-500);
     --redesign-only-background-active: var(--primary-530);
@@ -122054,7 +122062,7 @@ div.nagbar_c731ff {
     --bg-backdrop-no-opacity: var(--black-500);
     --bg-base-primary: var(--plum-20);
     --bg-base-secondary: var(--plum-20);
-    --bg-base-tertiary: var(--plum-22);
+    --bg-base-tertiary: var(--plum-23);
     --bg-mod-faint: hsl(var(--plum-11-hsl) / 0.12);
     --bg-mod-strong: hsl(var(--plum-11-hsl) / 0.24);
     --bg-mod-subtle: hsl(var(--plum-11-hsl) / 0.16);
@@ -122165,6 +122173,7 @@ div.nagbar_c731ff {
     --icon-muted: var(--plum-11);
     --icon-primary: var(--plum-4);
     --icon-secondary: var(--plum-9);
+    --icon-transparent: hsl(var(--transparent-hsl) / 0);
     --info-box-background: hsl(var(--blue-345-hsl) / 0.1);
     --info-danger-background: hsl(var(--red-400-hsl) / 0.1);
     --info-danger-foreground: var(--red-400);
@@ -122195,6 +122204,7 @@ div.nagbar_c731ff {
     --modal-background: var(--plum-16);
     --modal-footer-background: var(--plum-17);
     --navigator-header-tint: var(--white-500);
+    --panel-bg: var(--plum-20);
     --polls-image-normal-border: hsl(var(--black-430-hsl) / 0.9);
     --polls-victor-border: var(--yellow-300);
     --polls-victor-fill: var(--yellow-200);
@@ -122253,7 +122263,7 @@ div.nagbar_c731ff {
     --redesign-button-secondary-background: var(--plum-15);
     --redesign-button-secondary-border: hsl(var(--plum-11-hsl) / 0.12);
     --redesign-button-secondary-pressed-background: var(--plum-13);
-    --redesign-button-secondary-pressed-border: hsl(var(--plum-11-hsl) / 0.12);
+    --redesign-button-secondary-pressed-border: hsl(var(--plum-11-hsl) / 0.06);
     --redesign-button-secondary-text: var(--plum-3);
     --redesign-channel-category-name-text: var(--plum-9);
     --redesign-channel-message-preview-text: var(--plum-10);
@@ -123602,4 +123612,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=app.a6ee3eb645f7096597d6.css.map*/
+/*# sourceMappingURL=app.782fe3c53f27d28c279c.css.map*/
