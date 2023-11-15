@@ -8794,14 +8794,14 @@
                     if (null != s) {
                         let e = u[l],
                             s = e.attachments.map(e => (null == e.content_scan_version && (e.content_scan_version = -1, i.push(parseInt(e.id))), e));
-                        e.set("attachments", s);
+                        e = e.set("attachments", s);
                         let o = e.embeds.map(e => (null == e.contentScanVersion && (e.contentScanVersion = -1, a.push(e.id)), e));
-                        e.set("embeds", o), (0, r.trackScanningTimedOut)({
+                        e = e.set("embeds", o), (0, r.trackScanningTimedOut)({
                             channelId: n,
                             messageId: t,
                             embedIds: a,
                             attachmentIds: i
-                        })
+                        }), u[l] = e
                     }
                 }
             })
@@ -26236,14 +26236,14 @@
                         let i = [],
                             a = [],
                             l = e.attachments.map(e => (null == e.content_scan_version && (e.content_scan_version = -1, i.push(parseInt(e.id))), e));
-                        e.set("attachments", l);
+                        e = e.set("attachments", l);
                         let s = e.embeds.map(e => (null == e.contentScanVersion && (e.contentScanVersion = -1, a.push(e.id)), e));
                         return (0, d.trackScanningTimedOut)({
                             channelId: n,
                             messageId: t,
                             embedIds: a,
                             attachmentIds: i
-                        }), e.set("embeds", s), e
+                        }), e = e.set("embeds", s)
                     }), r.default.commit(i)
                 },
                 MESSAGE_DELETE: function(e) {
@@ -33635,4 +33635,4 @@
         }
     }
 ]);
-//# sourceMappingURL=1555d84084b6e28c7611.js.map
+//# sourceMappingURL=c7f7872b5c501538fad1.js.map
