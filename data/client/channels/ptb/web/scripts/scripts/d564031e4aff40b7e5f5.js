@@ -41,7 +41,7 @@
             let n, i, u, l, s, a;
             r.r(t), r.d(t, {
                 default: function() {
-                    return L
+                    return f
                 }
             });
             var E = r("446674"),
@@ -51,15 +51,15 @@
                 d = null,
                 C = {},
                 S = {},
-                A = {},
+                T = {},
                 I = {};
 
-            function f() {
+            function A() {
                 n = void 0, i = void 0, u = void 0, l = void 0, s = void 0, d = null
             }
-            class T extends E.default.Store {
+            class L extends E.default.Store {
                 getSettings(e) {
-                    if (null != e) return A[e]
+                    if (null != e) return T[e]
                 }
                 getProfile(e) {
                     return null == e ? null : C[e]
@@ -112,8 +112,8 @@
                     return _
                 }
             }
-            T.displayName = "ClydeStore";
-            var L = new T(o.default, {
+            L.displayName = "ClydeStore";
+            var f = new L(o.default, {
                 CLYDE_GUILD_SETTINGS_FETCH_START: function(e) {
                     let {
                         guildId: t
@@ -131,7 +131,7 @@
                     I[t] = {
                         isFetching: !1,
                         lastFetchTimestampMs: Date.now()
-                    }, A[t] = r
+                    }, T[t] = r
                 },
                 CLYDE_GUILD_SETTINGS_FETCH_FAIL: function(e) {
                     let {
@@ -180,12 +180,12 @@
                     let {
                         settings: t
                     } = e;
-                    c = !1, A[t.guild_id] = t, f()
+                    c = !1, T[t.guild_id] = t, A()
                 },
                 CLYDE_GUILD_SETTINGS_SAVE_FAIL: function(e) {
                     c = !1, d = e.errors
                 },
-                CLYDE_RESET_PENDING_CHANGES: f,
+                CLYDE_RESET_PENDING_CHANGES: A,
                 CLYDE_PROFILE_FETCH_START: function(e) {
                     let {
                         clydeProfileId: t
@@ -231,22 +231,25 @@
             "use strict";
             r.r(t), r.d(t, {
                 trackCollectiblesShopOpened: function() {
-                    return o
-                },
-                openCollectiblesShop: function() {
                     return c
                 },
-                closeCollectiblesShop: function() {
+                openCollectiblesShop: function() {
                     return _
                 },
-                fetchCollectiblesCategories: function() {
+                closeCollectiblesShop: function() {
                     return d
                 },
-                fetchCollectiblesPurchases: function() {
+                fetchCollectiblesCategories: function() {
                     return C
                 },
-                claimPremiumCollectiblesProduct: function() {
+                fetchCollectiblesPurchases: function() {
                     return S
+                },
+                fetchCollectiblesProduct: function() {
+                    return T
+                },
+                claimPremiumCollectiblesProduct: function() {
+                    return I
                 },
                 setCollectiblesCategoryItemsViewed: function() {
                     return A
@@ -256,31 +259,31 @@
                 i = r("913144"),
                 u = r("54239"),
                 l = r("448993"),
-                s = r("514296");
-            r("407788");
-            var a = r("489134"),
-                E = r("49111");
+                s = r("514296"),
+                a = r("407788"),
+                E = r("489134"),
+                o = r("49111");
             r("853987"), r("426497"), r("775416"), r("216719");
-            let o = e => {
+            let c = e => {
                     i.default.dispatch({
                         type: "COLLECTIBLES_SHOP_OPEN",
                         ...e
                     })
                 },
-                c = e => {
-                    o(e), (0, u.pushLayer)(E.Layers.COLLECTIBLES_SHOP)
+                _ = e => {
+                    c(e), (0, u.pushLayer)(o.Layers.COLLECTIBLES_SHOP)
                 },
-                _ = () => {
+                d = () => {
                     i.default.dispatch({
                         type: "COLLECTIBLES_SHOP_CLOSE"
                     }), (0, u.popLayer)()
                 },
-                d = async () => {
+                C = async () => {
                     i.default.dispatch({
                         type: "COLLECTIBLES_CATEGORIES_FETCH"
                     });
                     try {
-                        let e = await n.default.get(E.Endpoints.COLLECTIBLES_CATEGORIES);
+                        let e = await n.default.get(o.Endpoints.COLLECTIBLES_CATEGORIES);
                         i.default.dispatch({
                             type: "COLLECTIBLES_CATEGORIES_FETCH_SUCCESS",
                             categories: e.body.map(s.default.fromServer)
@@ -291,15 +294,15 @@
                             error: e
                         }), new l.APIError(e)
                     }
-                }, C = async () => {
+                }, S = async () => {
                     i.default.dispatch({
                         type: "COLLECTIBLES_PURCHASES_FETCH"
                     });
                     try {
-                        let e = await n.default.get(E.Endpoints.COLLECTIBLES_PURCHASES);
+                        let e = await n.default.get(o.Endpoints.COLLECTIBLES_PURCHASES);
                         i.default.dispatch({
                             type: "COLLECTIBLES_PURCHASES_FETCH_SUCCESS",
-                            purchases: e.body.map(a.default.fromServer)
+                            purchases: e.body.map(E.default.fromServer)
                         })
                     } catch (e) {
                         throw i.default.dispatch({
@@ -307,7 +310,23 @@
                             error: e
                         }), new l.APIError(e)
                     }
-                }, S = async e => {
+                }, T = async e => {
+                    i.default.dispatch({
+                        type: "COLLECTIBLES_PRODUCT_FETCH"
+                    });
+                    try {
+                        let t = await n.default.get(o.Endpoints.COLLECTIBLES_PRODUCTS(e));
+                        i.default.dispatch({
+                            type: "COLLECTIBLES_PRODUCT_FETCH_SUCCESS",
+                            product: a.default.fromServer(t.body)
+                        })
+                    } catch (e) {
+                        throw i.default.dispatch({
+                            type: "COLLECTIBLES_PRODUCT_FETCH_FAILURE",
+                            error: e
+                        }), new l.APIError(e)
+                    }
+                }, I = async e => {
                     i.default.dispatch({
                         type: "COLLECTIBLES_CLAIM",
                         skuId: e
@@ -315,7 +334,7 @@
                     try {
                         var t;
                         let r = await n.default.put({
-                            url: E.Endpoints.COLLECTIBLES_CLAIM,
+                            url: o.Endpoints.COLLECTIBLES_CLAIM,
                             body: {
                                 sku_id: e
                             }
@@ -323,7 +342,7 @@
                         i.default.dispatch({
                             type: "COLLECTIBLES_CLAIM_SUCCESS",
                             skuId: e,
-                            purchases: null === (t = r.body) || void 0 === t ? void 0 : t.map(a.default.fromServer)
+                            purchases: null === (t = r.body) || void 0 === t ? void 0 : t.map(E.default.fromServer)
                         })
                     } catch (t) {
                         throw i.default.dispatch({
@@ -677,19 +696,19 @@
                     return S
                 },
                 HOME_HEADER_MAX_HEIGHT: function() {
-                    return A
+                    return T
                 },
                 BANNER_ASPECT_RATIO: function() {
                     return I
                 },
                 GUILD_BANNER_ASPECT_RATIO: function() {
-                    return f
+                    return A
                 },
                 SCHEDULED_EVENT_IMAGE_ASPECT_RATIO: function() {
-                    return T
+                    return L
                 },
                 HOME_HEADER_ASPECT_RATIO: function() {
-                    return L
+                    return f
                 },
                 MAX_BANNER_OVERLAY_HEIGHT: function() {
                     return p
@@ -723,15 +742,15 @@
                 d = 2400,
                 C = 960,
                 S = 2400,
-                A = 600,
+                T = 600,
                 I = 17 / 6,
-                f = 16 / 9,
-                T = 2.5,
-                L = 4,
+                A = 16 / 9,
+                L = 2.5,
+                f = 4,
                 p = a / I,
-                O = a / f,
-                R = a / T,
-                h = a / L,
+                O = a / A,
+                R = a / L,
+                h = a / f,
                 v = s.BACKGROUND_REPLACEMENT_SIZE.width / s.BACKGROUND_REPLACEMENT_SIZE.height,
                 g = a / v;
             (i = l || (l = {}))[i.CROP_GIF_START = 0] = "CROP_GIF_START", i[i.CROP_GIF_COMPLETE = 1] = "CROP_GIF_COMPLETE", i[i.CROP_GIF_ERROR = 2] = "CROP_GIF_ERROR"
@@ -782,16 +801,16 @@
                     return S
                 },
                 getPreviewAvatar: function() {
-                    return A
+                    return T
                 },
                 getPreviewNickname: function() {
                     return I
                 },
                 getPreviewDisplayName: function() {
-                    return f
+                    return A
                 },
                 isColorDark: function() {
-                    return T
+                    return L
                 }
             });
             var n = r("37983");
@@ -839,7 +858,7 @@
                 })
             }
 
-            function A(e, t, r) {
+            function T(e, t, r) {
                 let n = arguments.length > 3 && void 0 !== arguments[3] ? arguments[3] : {};
                 if (null != e) return e;
                 let {
@@ -853,11 +872,11 @@
                 return "" === e ? null : null != e ? e : t
             }
 
-            function f(e, t) {
+            function A(e, t) {
                 return "" === e ? null : null != e ? e : t
             }
 
-            function T(e) {
+            function L(e) {
                 let t = null != e ? (0, i.getDarkness)(e) : 1;
                 return t > .25
             }
@@ -888,7 +907,7 @@
                 } = e, {
                     avatarSrc: C,
                     isAvatarAnimating: S,
-                    eventHandlers: A
+                    eventHandlers: T
                 } = (0, s.useAnimatedAvatarSrc)({
                     user: t,
                     guildId: r,
@@ -898,8 +917,8 @@
                     avatarOverride: d
                 }), {
                     avatarPlaceholderSrc: I,
-                    avatarDecorationSrc: f,
-                    eventHandlers: T
+                    avatarDecorationSrc: A,
+                    eventHandlers: L
                 } = (0, l.default)({
                     user: t,
                     size: (0, u.getDecorationSizeForAvatarSize)(a),
@@ -907,18 +926,18 @@
                     animateOnHover: c,
                     avatarDecorationOverride: _,
                     showTryItOut: o
-                }), L = n.useCallback(() => {
-                    A.onMouseEnter(), T.onMouseEnter()
-                }, [A, T]), p = n.useCallback(() => {
-                    A.onMouseLeave(), T.onMouseLeave()
-                }, [A, T]);
+                }), f = n.useCallback(() => {
+                    T.onMouseEnter(), L.onMouseEnter()
+                }, [T, L]), p = n.useCallback(() => {
+                    T.onMouseLeave(), L.onMouseLeave()
+                }, [T, L]);
                 return {
                     avatarPlaceholderSrc: I,
-                    avatarDecorationSrc: f,
+                    avatarDecorationSrc: A,
                     avatarSrc: C,
                     isAnimating: S,
                     eventHandlers: {
-                        onMouseEnter: L,
+                        onMouseEnter: f,
                         onMouseLeave: p
                     }
                 }
@@ -947,15 +966,15 @@
                     showPending: c = !1,
                     animateOnHover: _ = !1,
                     avatarOverride: d
-                } = e, [C, S] = n.useState(!1), A = (0, i.useStateFromStores)([u.default], () => u.default.useReducedMotion), I = (0, i.useStateFromStores)([a.default], () => a.default.isFocused()), f = I && (C || !A && !_), {
-                    pendingAvatar: T
-                } = (0, E.default)({}), L = (0, i.useStateFromStores)([s.default], () => null != r && null != t ? s.default.getMember(r, t.id) : null), p = n.useMemo(() => null != t ? (0, l.getPreviewAvatar)(c ? null != d ? d : T : void 0, L, t, {
-                    canAnimate: f,
+                } = e, [C, S] = n.useState(!1), T = (0, i.useStateFromStores)([u.default], () => u.default.useReducedMotion), I = (0, i.useStateFromStores)([a.default], () => a.default.isFocused()), A = I && (C || !T && !_), {
+                    pendingAvatar: L
+                } = (0, E.default)({}), f = (0, i.useStateFromStores)([s.default], () => null != r && null != t ? s.default.getMember(r, t.id) : null), p = n.useMemo(() => null != t ? (0, l.getPreviewAvatar)(c ? null != d ? d : L : void 0, f, t, {
+                    canAnimate: A,
                     size: o
-                }) : void 0, [c, T, L, t, f, o, d]), O = n.useCallback(() => S(!0), []), R = n.useCallback(() => S(!1), []);
+                }) : void 0, [c, L, f, t, A, o, d]), O = n.useCallback(() => S(!0), []), R = n.useCallback(() => S(!1), []);
                 return {
                     avatarSrc: p,
-                    isAvatarAnimating: f,
+                    isAvatarAnimating: A,
                     eventHandlers: {
                         onMouseEnter: O,
                         onMouseLeave: R
@@ -965,4 +984,4 @@
         }
     }
 ]);
-//# sourceMappingURL=9221a252a9d51e007cca.js.map
+//# sourceMappingURL=d564031e4aff40b7e5f5.js.map
