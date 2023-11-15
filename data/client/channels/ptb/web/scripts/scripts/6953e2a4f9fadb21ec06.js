@@ -9564,21 +9564,21 @@
                 D = null,
                 U = !0;
             async function P(e) {
-                var t, n, i, a, l, s, o, u;
                 L = Date.now(), D = e.sessionId, A.localPresenceState.handleConnectionOpen();
-                let d = (null === (l = window) || void 0 === l ? void 0 : null === (a = l.performance) || void 0 === a ? void 0 : null === (i = a.getEntriesByType) || void 0 === i ? void 0 : null === (n = i.call(a, "navigation")) || void 0 === n ? void 0 : null === (t = n[0]) || void 0 === t ? void 0 : t.type) === "reload" || (null === (s = await (null == v ? void 0 : null === (u = v.processUtils) || void 0 === u ? void 0 : null === (o = u.getLastCrash) || void 0 === o ? void 0 : o.call(u))) || void 0 === s ? void 0 : s.rendererCrashReason) != null,
-                    c = {},
-                    _ = S.default.getVoiceChannelId();
-                if (d || !U) {
-                    if (null != _) {
-                        let e = h.default.getChannel(_);
-                        null != e && (c = {
+                let t = {},
+                    n = S.default.getVoiceChannelId();
+                if (null != n) {
+                    var i, a, l, s, o, u, d, c;
+                    let e = (null === (o = window) || void 0 === o ? void 0 : null === (s = o.performance) || void 0 === s ? void 0 : null === (l = s.getEntriesByType) || void 0 === l ? void 0 : null === (a = l.call(s, "navigation")) || void 0 === a ? void 0 : null === (i = a[0]) || void 0 === i ? void 0 : i.type) === "reload" || (null === (u = await (null == v ? void 0 : null === (c = v.processUtils) || void 0 === c ? void 0 : null === (d = c.getLastCrash) || void 0 === d ? void 0 : d.call(c))) || void 0 === u ? void 0 : u.rendererCrashReason) != null;
+                    if (e || !U) {
+                        let e = h.default.getChannel(n);
+                        null != e && (t = {
                             guildId: e.getGuildId(),
-                            channelId: _
+                            channelId: n
                         })
-                    }
-                } else T.default.setLastSessionVoiceChannelId(null != _ ? _ : null), r.default.selectVoiceChannel(null);
-                A.localVoiceState.update(c, !0), A.localLobbyVoiceStates.update({}, !0), U = !1
+                    } else T.default.setLastSessionVoiceChannelId(null != n ? n : null), r.default.selectVoiceChannel(null)
+                }
+                A.localVoiceState.update(t, !0), A.localLobbyVoiceStates.update({}, !0), U = !1
             }
 
             function b() {
@@ -33582,4 +33582,4 @@
         }
     }
 ]);
-//# sourceMappingURL=9e189e7b79784dd09075.js.map
+//# sourceMappingURL=6953e2a4f9fadb21ec06.js.map
