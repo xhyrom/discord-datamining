@@ -19460,8 +19460,8 @@ input[type=checkbox]:focus-visible+.label_ee78c3 {
 
 .message__13e98 {
     font-weight: 500;
-    font-size: 1rem;
-    line-height: 1.25rem;
+    font-size: 16px;
+    line-height: 20px;
     white-space: nowrap;
     text-overflow: ellipsis;
     overflow: hidden
@@ -60524,7 +60524,13 @@ html .progress__4ef76 {
     background: var(--background-tertiary);
     padding: 40px;
     margin-top: 80px;
-    margin-bottom: 80px
+    margin-bottom: 80px;
+    overflow: hidden
+}
+
+.giftCardSeasonal__09a1e {
+    justify-content: space-between;
+    background: linear-gradient(104.85deg, #66bcff 21.98%, #4c7ceb 40.85%, #303ed1 62.29%)
 }
 
 .giftInfo__7d210 {
@@ -60533,6 +60539,13 @@ html .progress__4ef76 {
 
 .giftImage__40a78 {
     height: 146px
+}
+
+.seasonalGiftImage__62179 {
+    position: absolute;
+    right: 47.5%;
+    bottom: 0;
+    height: 100%
 }
 
 .giftTitle_d10afa,
@@ -60797,7 +60810,6 @@ html .progress__4ef76 {
     max-width: 1066px;
     width: 100%;
     background-color: var(--background-secondary-alt);
-    background-image: url(/assets/0f137d8896df88e135d6.svg);
     background-repeat: no-repeat;
     background-position: right center;
     filter: saturate(1);
@@ -123567,4 +123579,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=app.e42e4bf5bf045e15e798.css.map*/
+/*# sourceMappingURL=app.2e2b1a667c943a01bc52.css.map*/

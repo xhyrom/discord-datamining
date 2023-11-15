@@ -6547,6 +6547,8 @@
                 PREMIUM_TRIAL_MARKETING_EXPERIMENT_TRIAL_CTA: "Try Nitro for Free",
                 PREMIUM_TRIAL_MARKETING_EXPERIMENT_GIFT_HEADING: "Give the gift of Nitro",
                 PREMIUM_TRIAL_MARKETING_EXPERIMENT_GIFT_BODY: "Gift someone Nitro to give them access to profile customization, emoji, and superpowered chat features.",
+                PREMIUM_TRIAL_MARKETING_EXPERIMENT_SEASONAL_GIFT_HEADING: "Gift the joy of Nitro",
+                PREMIUM_TRIAL_MARKETING_EXPERIMENT_SEASONAL_GIFT_BODY: "Gift Nitro and unlock profile customization, custom emoji, and superpowered chat features for your friends to unleash more holiday fun.",
                 PREMIUM_TRIAL_UPSELL_STICKERS_IN_HOUSE: "Subscribe to add personality to your conversations.",
                 PREMIUM_TRIAL_ACTION_SHEET_TIER_0_HEADER: "Try Nitro Basic free for 30 days",
                 PREMIUM_TRIAL_ACTION_SHEET_TIER_2_HEADER: "Try Nitro free for 30 days",
@@ -18158,7 +18160,7 @@
                 u = E("782340");
             (0, i.setUpdateRules)(s.default), (0, r.default)(u.default, n.default, T.default), a.default.Emitter.injectBatchEmitChanges(o.unstable_batchedUpdates), a.default.PersistedStore.disableWrites = __OVERLAY__, a.default.initialize();
             let L = window.GLOBAL_ENV.RELEASE_CHANNEL;
-            new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(L, ", Build Number: ").concat("245841", ", Version Hash: ").concat("dac71046f72d0f50912be3279e294af5d8dd0812")), t.default.setTags({
+            new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(L, ", Build Number: ").concat("245858", ", Version Hash: ").concat("f75e9ad1ba3d6e4dda5d3c00477ea7eca1732dab")), t.default.setTags({
                 appContext: l.CURRENT_APP_CONTEXT
             }), S.default.initBasic(), N.default.init(), I.FocusRingManager.init(), O.init(), (0, R.cleanupTempFiles)()
         },
@@ -20524,8 +20526,8 @@
 
             function o() {
                 var e;
-                let _ = parseInt((e = "245841", "245841"));
-                return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("245841")), _ = 0), _
+                let _ = parseInt((e = "245858", "245858"));
+                return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("245858")), _ = 0), _
             }
         },
         990629: function(e, _, E) {
@@ -36363,4 +36365,4 @@
         }
     }
 ]);
-//# sourceMappingURL=8303751bbababaaf4ff4.js.map
+//# sourceMappingURL=8fb6162c0b3116ed9318.js.map
