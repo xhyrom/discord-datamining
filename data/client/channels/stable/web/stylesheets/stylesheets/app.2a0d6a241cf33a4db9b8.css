@@ -8325,6 +8325,10 @@
     padding: 2px
 }
 
+.containerWrapper_fa6aa6 .content_e8dcfc {
+    margin-left: 8px
+}
+
 .animation_fb8933 {
     animation: slideInFromBottom__593e9.6s cubic-bezier(.26, .17, .28, 1.27).25s 1 forwards;
     transform: translatey(90px);
@@ -8348,21 +8352,12 @@
     gap: 12px
 }
 
-.avatarSection__70250 {
-    width: 52px;
-    cursor: pointer
-}
-
 .content_e8dcfc {
     flex: 1;
     display: flex;
     flex-direction: column;
     justify-content: center;
     cursor: pointer
-}
-
-.withoutAvatar__0549d .content_e8dcfc {
-    margin-left: 8px
 }
 
 .ctaLink__2ccbd {
@@ -19465,8 +19460,8 @@ input[type=checkbox]:focus-visible+.label_ee78c3 {
 
 .message__13e98 {
     font-weight: 500;
-    font-size: 1rem;
-    line-height: 1.25rem;
+    font-size: 16px;
+    line-height: 20px;
     white-space: nowrap;
     text-overflow: ellipsis;
     overflow: hidden
@@ -26090,6 +26085,97 @@ input[type=checkbox]:focus-visible+.label_ee78c3 {
     opacity: .95
 }
 
+.defaultContainer__91554 {
+    display: flex;
+    align-items: center;
+    margin-top: 12px;
+    background-color: var(--input-background)
+}
+
+.emojiIcon_ae6565 {
+    width: 20px;
+    cursor: pointer;
+    color: var(--interactive-active);
+    padding-right: 8px;
+    padding-left: 20px
+}
+
+.defaultTextInput__91909 {
+    flex: 1
+}
+
+.imageOnlyContainer__04301 {
+    margin-top: 12px;
+    border-radius: var(--radius-lg);
+    background-color: var(--background-primary);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 48%;
+    height: 158px;
+    cursor: pointer
+}
+
+.container_e78017 {
+    border-radius: 8px;
+    box-shadow: var(--elevation-stroke), var(--elevation-high);
+    position: absolute;
+    bottom: calc(100% + 8px);
+    overflow: hidden;
+    background-color: var(--background-secondary);
+    width: 377px
+}
+
+.header_b229ef {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 16px 20px 16px 8px;
+    border-bottom: 1px solid var(--background-modifier-hover)
+}
+
+.headerText_a04687 {
+    flex: 1
+}
+
+.closeIcon_af678b {
+    color: var(--interactive-normal);
+    width: 16px;
+    height: 16px;
+    cursor: pointer
+}
+
+.form__15f72 {
+    padding: 20px 15px;
+    border-bottom: 1px solid var(--background-modifier-hover)
+}
+
+.formInput_f4ef33 {
+    border-radius: var(--radius-lg)
+}
+
+.footer__9fa48 {
+    padding: 15px;
+    padding-top: 20px;
+    display: flex
+}
+
+.postButton__42d75 {
+    background-color: var(--redesign-button-primary-background);
+    border-radius: 48px
+}
+
+.postButtonInner__8d85f {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 4px
+}
+
+.postIcon__8b0b3 {
+    width: 12px
+}
+
 .userTooltip__658ae {
     display: flex;
     align-items: center;
@@ -27262,6 +27348,18 @@ input[type=checkbox]:focus-visible+.label_ee78c3 {
 .image_f4d883 {
     position: absolute;
     top: -62px
+}
+
+.dmButtonContainer__06f1f {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    margin: 16px;
+    gap: 4px
+}
+
+.dmButton__598d3 {
+    flex: 1
 }
 
 .container__5eb17 {
@@ -30471,6 +30569,14 @@ html .progress__4ef76 {
     color: ButtonText;
     -webkit-text-decoration: underline;
     text-decoration: underline
+}
+
+.responseOptions_f63aff {
+    margin-top: 8px
+}
+
+.confirmButton_d88769 {
+    margin-left: 8px
 }
 
 .inviteDetailsContainer__90905 {
@@ -39775,6 +39881,92 @@ html .progress__4ef76 {
 
 .theme-light .previewHover__1e0e0 {
     background: hsl(var(--primary-500-hsl)/.6)
+}
+
+.statusGroup__7809a {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 4px;
+    padding: 8px 12px;
+    border-radius: 8px
+}
+
+.statusIcon__87cd6 {
+    flex-shrink: 0;
+    margin-left: 4px;
+    height: 28px
+}
+
+.customStatusText__79d70 {
+    font-size: 12px;
+    color: var(--header-secondary)
+}
+
+.statusTextRow__084d2 {
+    display: flex;
+    flex-direction: row;
+    gap: 8px;
+    align-items: center
+}
+
+.iconWidget_b2ac71 {
+    border-radius: 8px;
+    height: 40px;
+    width: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center
+}
+
+.iconWidgetIcon__4c03a {
+    flex-shrink: 0;
+    height: 28px
+}
+
+.statusButtonRegion__47ea7 {
+    z-index: 1;
+    margin-top: 4px
+}
+
+.statusButtonRegion__47ea7 .statusWidget__878ca {
+    padding: 4px 4px 4px 26px;
+    border-top: 1px solid var(--background-modifier-active);
+    border-radius: 0
+}
+
+.popoutWrapper__16db8 {
+    background-color: var(--background-secondary-alt);
+    padding: 8px;
+    border-radius: 12px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px
+}
+
+.iconWidget_db0821 {
+    border-radius: 8px;
+    cursor: pointer;
+    border: 1px solid var(--background-modifier-hover);
+    background-color: var(--background-modifier-hover)
+}
+
+.iconWidget_db0821:hover {
+    border: 1px solid var(--background-modifier-active);
+    background-color: var(--background-modifier-active)
+}
+
+.wrapper__139c2 {
+    background-color: var(--background-secondary-alt);
+    padding: 12px;
+    width: 252px;
+    border-radius: 5px;
+    box-shadow: var(--elevation-high)
+}
+
+.widget_c99b48 {
+    margin-bottom: 8px
 }
 
 .draggable__081c0 {
@@ -59734,7 +59926,16 @@ html .progress__4ef76 {
 }
 
 .card_e97590:hover .cardDescription__46c9d button {
-    pointer-events: all
+    pointer-events: all;
+    bottom: 24px;
+    opacity: 1;
+    transform: scale(1)
+}
+
+.card_e97590:hover .cardImage__9da5b {
+    margin: -24px;
+    width: calc(100% + 48px);
+    border-radius: 20px
 }
 
 .reducedMotion__90450 .card_e97590 {
@@ -59778,7 +59979,9 @@ html .progress__4ef76 {
 
 .cardImage__9da5b {
     width: 100%;
-    z-index: 10
+    z-index: 10;
+    pointer-events: none;
+    transition: all.2s ease-in-out
 }
 
 .cardDescription__46c9d {
@@ -59796,7 +59999,7 @@ html .progress__4ef76 {
     pointer-events: none;
     transition: all.2s ease-in-out;
     border-radius: 20px;
-    background-image: linear-gradient(to bottom, var(--background-secondary-alt)30%, hsl(var(--primary-660-hsl)/.5)90%);
+    background-image: linear-gradient(to bottom, var(--background-secondary-alt)50%, hsl(var(--primary-660-hsl)/.75)80%);
     z-index: 20
 }
 
@@ -59812,7 +60015,10 @@ html .progress__4ef76 {
     position: absolute;
     left: 24px;
     right: 24px;
-    bottom: 24px
+    bottom: 8px;
+    opacity: .5;
+    transform: scale(.75);
+    transition: all.2s ease-in-out
 }
 
 .reducedMotion__90450 .cardDescription__46c9d {
@@ -59820,7 +60026,7 @@ html .progress__4ef76 {
 }
 
 .theme-light .cardDescription__46c9d {
-    background-image: linear-gradient(to bottom, var(--background-secondary-alt)30%, hsl(var(--primary-160-hsl)/.5)90%)
+    background-image: linear-gradient(to bottom, var(--background-secondary-alt)50%, hsl(var(--primary-160-hsl)/.5)80%)
 }
 
 .cover__60fa6 {
@@ -59913,7 +60119,8 @@ html .progress__4ef76 {
     gap: 16px;
     grid-template-columns: 1fr;
     justify-content: center;
-    width: 100%
+    width: 100%;
+    min-height: 350px
 }
 
 @media(min-width:960px) {
@@ -103900,6 +104107,43 @@ html .invoiceCancelRow_a8669b {
     margin-bottom: 24px
 }
 
+.modalHeader_a62250 {
+    flex-direction: column;
+    align-items: flex-start;
+    border-bottom: 1px solid var(--background-modifier-accent);
+    padding: 24px
+}
+
+.closeButton__918af {
+    position: absolute;
+    top: 8px;
+    right: 8px
+}
+
+.modalContent_a47f81 {
+    padding: 24px
+}
+
+.hangStatusSelector_c82f29 {
+    display: flex;
+    flex-direction: row;
+    gap: 12px;
+    row-gap: 12px;
+    flex-wrap: wrap;
+    margin: 4px 0 28px
+}
+
+.statusWidget__729de {
+    width: 184px;
+    cursor: pointer;
+    border: 1px solid var(--background-modifier-accent);
+    min-height: 36px
+}
+
+.statusWidget__729de:hover {
+    background-color: var(--background-modifier-accent)
+}
+
 .formHeaderContainer__6f476 {
     padding: 24px 16px 0;
     overflow: visible;
@@ -123269,4 +123513,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=app.87c6784ef22c2b59e833.css.map*/
+/*# sourceMappingURL=app.2a0d6a241cf33a4db9b8.css.map*/
