@@ -23345,7 +23345,7 @@ button.button__4f306.disabled_dc5630 {
 .seasonalGiftBoxHeaderIcon__42454 {
     width: 260px;
     position: absolute;
-    top: -131px;
+    bottom: -11px;
     align-self: center;
     z-index: 1
 }
@@ -23355,7 +23355,8 @@ button.button__4f306.disabled_dc5630 {
     background-size: 100%calc(100% - 20px);
     display: flex;
     justify-content: center;
-    align-items: center
+    align-items: center;
+    position: relative
 }
 
 .closeButton_bf11e4 {
@@ -26406,4 +26407,4 @@ button.button__4f306.disabled_dc5630 {
     }
 }
 
-/*# sourceMappingURL=shared.d3617e67bf0cf2a4fdd9.css.map*/
+/*# sourceMappingURL=shared.52d9520089ae820788ba.css.map*/

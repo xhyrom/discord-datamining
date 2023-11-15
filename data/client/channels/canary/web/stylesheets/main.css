@@ -29856,10 +29856,9 @@ html .progress__4ef76 {
 
 .customGiftEmbedBox_a3693f {
     position: absolute;
-    top: -8px;
-    height: 90%;
-    right: 36px;
-    z-index: 1
+    width: 234px;
+    bottom: 24px;
+    left: 36px
 }
 
 .headerIcon__97d68 {
@@ -76859,14 +76858,13 @@ input::-webkit-inner-spin-button {
 }
 
 .giftMainAnimation_a99ef9 {
-    margin-bottom: 65px;
-    height: 215px;
-    position: relative
+    position: relative;
+    height: 275px
 }
 
 .soundEmojiContainer__70464 {
     position: absolute;
-    bottom: -20px;
+    bottom: 16px;
     margin-left: 35px;
     display: flex
 }
@@ -76883,7 +76881,10 @@ input::-webkit-inner-spin-button {
 }
 
 .animation_d821c9 {
-    transform: scale(1)
+    transform: scale(1);
+    position: absolute;
+    bottom: 0;
+    left: 0
 }
 
 .spinner_e5df5b {
@@ -123566,4 +123567,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=app.ea50d8adf2613b294fd8.css.map*/
+/*# sourceMappingURL=app.99a732d181c4dadc657d.css.map*/
