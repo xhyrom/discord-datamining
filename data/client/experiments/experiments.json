@@ -9579,7 +9579,7 @@
         1
       ],
       "config_keys": [
-        "useGlobalOverlay"
+        "enabled"
       ]
     }
   },
