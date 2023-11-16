@@ -8263,7 +8263,7 @@
                 f = n("457971"),
                 p = n("793441"),
                 T = n("574933");
-            let C = 2e4,
+            let C = 3e3,
                 S = {};
 
             function m(e) {
@@ -33630,4 +33630,4 @@
         }
     }
 ]);
-//# sourceMappingURL=84cb042be3b5dcca8e15.js.map
+//# sourceMappingURL=528986147b62e5d565f0.js.map
