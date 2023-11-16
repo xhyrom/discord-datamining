@@ -5953,17 +5953,20 @@
         "Not Eligible",
         "Control Bucket",
         "Treatment 1: Clips without upsells",
-        "Treatment 2: Clips with upsells"
+        "Treatment 2: Clips with upsells",
+        "Treatment 99: Clips 4 da Developerz"
       ],
       "hash": 1651184307,
       "buckets": [
         -1,
         0,
         1,
-        2
+        2,
+        99
       ],
       "config_keys": [
-        "enabled"
+        "enableClips",
+        "ignorePlatformRestriction"
       ]
     }
   },
