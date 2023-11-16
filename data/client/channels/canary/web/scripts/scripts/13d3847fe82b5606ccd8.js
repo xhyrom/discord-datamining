@@ -283,7 +283,12 @@
                                 type: "BILLING_USER_TRIAL_OFFER_ACKNOWLEDGED_SUCCESS",
                                 userTrialOffer: t
                             })
-                        } catch (e) {}
+                        } catch (e) {
+                            404 === e.status && i.default.dispatch({
+                                type: "BILLING_USER_TRIAL_OFFER_ACKNOWLEDGED_SUCCESS",
+                                userTrialOffer: null
+                            })
+                        }
                     }
                 }
         },
@@ -895,10 +900,10 @@
             "use strict";
             r.r(t), r.d(t, {
                 isUserIneligibleBasedOnCurrentOrPreviousSubs: function() {
-                    return h
+                    return U
                 },
                 useIsEligibleForBogoPromotion: function() {
-                    return U
+                    return h
                 },
                 maybeFetchActiveBogoPromotion: function() {
                     return N
@@ -935,7 +940,7 @@
                 g = r("49111"),
                 x = r("782340");
 
-            function h(e) {
+            function U(e) {
                 var t, r, n;
                 let {
                     experimentEnabled: l,
@@ -958,7 +963,7 @@
                 return !l || a || u
             }
 
-            function U() {
+            function h() {
                 var e;
                 let {
                     paymentsBlocked: t
@@ -978,7 +983,7 @@
                     premiumSubscription: f.default.getPremiumTypeSubscription()
                 })), s = (0, O.usePremiumTrialOffer)(), d = new Date(null !== (e = null == r ? void 0 : r.endDate) && void 0 !== e ? e : 0).valueOf();
                 (0, a.default)(d, 1e3, void 0, d + 2e3 < Date.now());
-                let c = !h({
+                let c = !U({
                         experimentEnabled: n,
                         premiumSubscription: o,
                         mostRecentSubscription: i
@@ -1028,7 +1033,7 @@
                 !f.default.hasFetchedMostRecentPremiumTypeSubscription() && (null === (e = m.default.getCurrentUser()) || void 0 === e ? void 0 : e.hasHadSKU(M.PremiumSubscriptionSKUs.TIER_2)) && await (0, s.fetchMostRecentSubscription)(), !f.default.hasFetchedSubscriptions() && await (0, s.fetchSubscriptions)();
                 let a = f.default.getMostRecentPremiumTypeSubscription(),
                     d = f.default.getPremiumTypeSubscription();
-                return !h({
+                return !U({
                     experimentEnabled: i,
                     premiumSubscription: d,
                     mostRecentSubscription: a
@@ -1099,7 +1104,7 @@
             "use strict";
             r.r(t), r.d(t, {
                 getOfferEndsText: function() {
-                    return j
+                    return D
                 },
                 PremiumTrialGradientBadge: function() {
                     return F
@@ -1132,15 +1137,15 @@
                 M = r("286235"),
                 g = r("626301"),
                 x = r("917247"),
-                h = r("635956"),
-                U = r("400307"),
+                U = r("635956"),
+                h = r("400307"),
                 L = r("646718"),
                 N = r("49111"),
                 v = r("782340"),
                 A = r("670714"),
                 b = r("481927");
 
-            function j(e) {
+            function D(e) {
                 if (null == e) return null;
                 let t = d(e),
                     r = t.diff(d(), "h");
@@ -1159,7 +1164,7 @@
                 })
             }
 
-            function D(e) {
+            function j(e) {
                 var t, r, i;
                 let {
                     className: l,
@@ -1188,15 +1193,15 @@
                         className: A.copy,
                         color: "none",
                         children: s
-                    }), (0, n.jsx)(U.PremiumPillWithSparkles, {
+                    }), (0, n.jsx)(h.PremiumPillWithSparkles, {
                         text: null != u ? v.default.Messages.PREMIUM_DISCOUNT_AMOUNT_OFF_BADGE.format({
                             percent: u.discount.amount
                         }) : v.default.Messages.BILLING_TRIAL_FREE_TRIAL_TEXT,
-                        colorOptions: f === L.PremiumSubscriptionSKUs.TIER_0 ? U.PremiumPillAndSparklesColorOptions.PREMIUM_TIER_0_WHITE_FILL : U.PremiumPillAndSparklesColorOptions.PREMIUM_TIER_2_WHITE_FILL
+                        colorOptions: f === L.PremiumSubscriptionSKUs.TIER_0 ? h.PremiumPillAndSparklesColorOptions.PREMIUM_TIER_0_WHITE_FILL : h.PremiumPillAndSparklesColorOptions.PREMIUM_TIER_2_WHITE_FILL
                     }), (0, n.jsx)(_.Text, {
                         variant: "eyebrow",
                         className: A.countdownText,
-                        children: j(c)
+                        children: D(c)
                     })]
                 })
             }
@@ -1216,7 +1221,7 @@
                     intervalType: null == u ? void 0 : null === (t = u.subscription_trial) || void 0 === t ? void 0 : t.interval,
                     intervalCount: null == u ? void 0 : null === (r = u.subscription_trial) || void 0 === r ? void 0 : r.interval_count
                 });
-                return (0, n.jsx)(h.default, {
+                return (0, n.jsx)(U.default, {
                     className: l,
                     subscriptionTier: s,
                     trialId: null == u ? void 0 : u.trial_id,
@@ -1286,10 +1291,10 @@
                 } = e, i = (0, x.usePremiumTrialOffer)();
                 return (0, n.jsxs)("div", {
                     className: A.tryOutUpsellContainer,
-                    children: [(0, n.jsx)(U.PremiumPillWithSparkles, {
+                    children: [(0, n.jsx)(h.PremiumPillWithSparkles, {
                         className: A.topRimPill,
                         text: v.default.Messages.PREMIUM_FREE_NITRO_TRIAL_TEXT,
-                        colorOptions: U.PremiumPillAndSparklesColorOptions.PREMIUM_TIER_2_NEW_GRADIENT_FILL
+                        colorOptions: h.PremiumPillAndSparklesColorOptions.PREMIUM_TIER_2_NEW_GRADIENT_FILL
                     }), (0, n.jsx)(_.Heading, {
                         variant: "heading-md/semibold",
                         color: "text-normal",
@@ -1305,7 +1310,7 @@
                     }), (0, n.jsx)(_.Text, {
                         variant: "eyebrow",
                         className: A.countdownTextInSetting,
-                        children: j(null == i ? void 0 : i.expires_at)
+                        children: D(null == i ? void 0 : i.expires_at)
                     })]
                 })
             }
@@ -1327,7 +1332,7 @@
                         className: A.context,
                         variant: "text-md/normal",
                         children: r
-                    }), (0, n.jsx)(D, {
+                    }), (0, n.jsx)(j, {
                         trialOffer: l,
                         discountOffer: o,
                         children: i
@@ -1364,7 +1369,7 @@
                                     variant: "heading-xl/bold",
                                     color: "header-primary",
                                     children: v.default.Messages.STICKER_PICKER_PREMIUM_EMPTY_STATE_TITLE
-                                }), (0, n.jsx)(D, {
+                                }), (0, n.jsx)(j, {
                                     trialOffer: R,
                                     discountOffer: C,
                                     children: v.default.Messages.STICKER_PICKER_PREMIUM_UPSELL_DESCRIPTION_NO_BOLD_V2.format({
@@ -1395,7 +1400,7 @@
                                     variant: "heading-xl/bold",
                                     color: "header-primary",
                                     children: v.default.Messages.STICKER_PICKER_PREMIUM_UPSELL_TITLE
-                                }), (0, n.jsx)(D, {
+                                }), (0, n.jsx)(j, {
                                     trialOffer: R,
                                     discountOffer: C,
                                     children: v.default.Messages.STICKER_PICKER_PREMIUM_UPSELL_DESCRIPTION_NO_BOLD_V2.format({
@@ -1416,19 +1421,19 @@
                         });
                     case L.PremiumUpsellTypes.AGGREGATE_PREMIUM_UPSELL_MODAL_FEATURE_EMOJI:
                         a(null != l, "You must specify children for this upsell type");
-                        let h = (0, f.isThemeLight)(x) ? r("602291") : r("609708");
+                        let U = (0, f.isThemeLight)(x) ? r("602291") : r("609708");
                         return (0, n.jsxs)(n.Fragment, {
                             children: [(0, n.jsxs)("div", {
                                 className: A.contentContainer,
                                 children: [(0, n.jsx)("img", {
                                     alt: "",
                                     className: A.upsellImage,
-                                    src: h
+                                    src: U
                                 }), (0, n.jsx)(_.Heading, {
                                     variant: "heading-xl/bold",
                                     color: "header-primary",
                                     children: v.default.Messages.PREMIUM_PROMO_TITLE_SEARCH_UPSELL
-                                }), (0, n.jsx)(D, {
+                                }), (0, n.jsx)(j, {
                                     trialOffer: R,
                                     discountOffer: C,
                                     children: v.default.Messages.PREMIUM_PROMO_DESCRIPTION_SEARCH_UPSELL_NO_BOLD_V2.format({
@@ -1451,10 +1456,10 @@
                     case L.PremiumUpsellTypes.BURST_REACTION_UPSELL:
                     case L.PremiumUpsellTypes.STREAM_QUALITY_UPSELL:
                     case L.PremiumUpsellTypes.MESSAGE_LENGTH_UPSELL:
-                        let U;
+                        let h;
                         switch (u) {
                             case L.PremiumUpsellTypes.UPLOAD_ERROR_UPSELL:
-                                U = v.default.Messages.UPLOAD_AREA_PREMIUM_UPSELL_WITH_SIZE_AND_ACTION_V2.format({
+                                h = v.default.Messages.UPLOAD_AREA_PREMIUM_UPSELL_WITH_SIZE_AND_ACTION_V2.format({
                                     planName: (0, S.getDisplayNameFromSku)(d),
                                     premiumMaxSize: d === L.PremiumSubscriptionSKUs.TIER_0 ? v.default.Messages.FILE_UPLOAD_LIMIT_PREMIUM_TIER_0_CORRECTED : v.default.Messages.FILE_UPLOAD_LIMIT_PREMIUM_TIER_2_INCREASE,
                                     onClick: () => {
@@ -1463,7 +1468,7 @@
                                 });
                                 break;
                             case L.PremiumUpsellTypes.BURST_REACTION_UPSELL:
-                                U = v.default.Messages.SUPER_REACTIONS_LAUNCH_COACHMARK_DESCRIPTION_CLICK_V2.format({
+                                h = v.default.Messages.SUPER_REACTIONS_LAUNCH_COACHMARK_DESCRIPTION_CLICK_V2.format({
                                     planName: (0, S.getDisplayNameFromSku)(d),
                                     onClick: () => {
                                         (0, p.transitionTo)(N.Routes.APPLICATION_STORE), null == s || s()
@@ -1471,21 +1476,21 @@
                                 });
                                 break;
                             case L.PremiumUpsellTypes.STREAM_QUALITY_UPSELL:
-                                U = v.default.Messages.STREAM_PREMIUM_UPSELL_WITH_ACTION.format({
+                                h = v.default.Messages.STREAM_PREMIUM_UPSELL_WITH_ACTION.format({
                                     onClick: () => {
                                         (0, p.transitionTo)(N.Routes.APPLICATION_STORE), null == s || s(), (0, m.closeAllModals)()
                                     }
                                 });
                                 break;
                             case L.PremiumUpsellTypes.MESSAGE_LENGTH_UPSELL:
-                                U = v.default.Messages.PREMIUM_CHAT_PERKS_MAX_MESSAGE_LENGTH_UPSELL.format({
+                                h = v.default.Messages.PREMIUM_CHAT_PERKS_MAX_MESSAGE_LENGTH_UPSELL.format({
                                     premiumMaxMessageLength: N.MAX_MESSAGE_LENGTH_PREMIUM,
                                     onClick: () => {
                                         (0, p.transitionTo)(N.Routes.APPLICATION_STORE), null == s || s()
                                     }
                                 })
                         }
-                        return a(null != U, "There must be some upsell context"), (0, n.jsx)(n.Fragment, {
+                        return a(null != h, "There must be some upsell context"), (0, n.jsx)(n.Fragment, {
                             children: (0, n.jsxs)("div", {
                                 className: A.contentContainer,
                                 children: [(0, n.jsx)(_.Heading, {
@@ -1495,10 +1500,10 @@
                                 }), (0, n.jsx)(_.Text, {
                                     variant: "text-md/normal",
                                     children: i
-                                }), (0, n.jsx)(D, {
+                                }), (0, n.jsx)(j, {
                                     trialOffer: R,
                                     discountOffer: C,
-                                    children: U
+                                    children: h
                                 })]
                             })
                         });
@@ -1512,7 +1517,7 @@
                             }), (0, n.jsx)(_.Text, {
                                 variant: "text-md/normal",
                                 children: i
-                            }), (0, n.jsx)(D, {
+                            }), (0, n.jsx)(j, {
                                 trialOffer: R,
                                 discountOffer: C,
                                 children: v.default.Messages.SUPER_REACTIONS_LAUNCH_COACHMARK_DESCRIPTION_CLICK_V2.format({
@@ -1529,7 +1534,7 @@
                             })]
                         });
                     case L.PremiumUpsellTypes.PREMIUM_CLIENT_THEME_TRY_IT_OUT:
-                        return a(null != l, "You must specify children for this upsell type"), (0, n.jsx)(D, {
+                        return a(null != l, "You must specify children for this upsell type"), (0, n.jsx)(j, {
                             trialOffer: R,
                             discountOffer: C,
                             children: v.default.Messages.CLIENT_THEMES_EDITOR_UPSELL.format({
@@ -1554,7 +1559,7 @@
                                 children: v.default.Messages.PREMIUM_MESSAGE_LENGTH_ROADBLOCK_MODAL_CONTEXT_NO_COUNT
                             }), (0, n.jsx)("div", {
                                 className: A.divider
-                            }), (0, n.jsx)(D, {
+                            }), (0, n.jsx)(j, {
                                 trialOffer: R,
                                 discountOffer: C,
                                 className: A.messageLengthBrandedContainer,
@@ -1645,15 +1650,15 @@
                 M = r("915639"),
                 g = r("697218"),
                 x = r("521012"),
-                h = r("594098"),
-                U = r("491614"),
+                U = r("594098"),
+                h = r("491614"),
                 L = r("716589"),
                 N = r("46829"),
                 v = r("118503"),
                 A = r("41250"),
                 b = r("379863"),
-                j = r("216422"),
-                D = r("619911"),
+                D = r("216422"),
+                j = r("619911"),
                 y = r("698015"),
                 F = r("75196"),
                 w = r("719923"),
@@ -1967,12 +1972,12 @@
                         Icon: N.default,
                         text: Y.default.Messages.PREMIUM_TIER_CUSTOM_EMOJI_ITEM
                     }), e ? (0, u.jsx)(ei, {
-                        Icon: U.default,
+                        Icon: h.default,
                         text: t ? Y.default.Messages.PREMIUM_MARKETING_SUPER_REACTIONS_PERK_TITLE_UNLIMITED : Y.default.Messages.PREMIUM_TIER_SUPER_REACTIONS_ITEM.format({
                             weeklyReactionsNumber: S.BurstRefillTierAmounts.TIER_0
                         })
                     }) : null, (0, u.jsx)(ei, {
-                        Icon: j.default,
+                        Icon: D.default,
                         text: Y.default.Messages.PREMIUM_TIER_NITRO_BADGE_ITEM
                     })]
                 })
@@ -2005,7 +2010,7 @@
                         className: X.newCircleIcon
                     }), r ? (0, u.jsx)("div", {
                         className: X.wumpusImageContainer,
-                        children: (0, u.jsx)(h.default, {
+                        children: (0, u.jsx)(U.default, {
                             src: z,
                             mediaLayoutType: Z.MediaLayoutType.RESPONSIVE,
                             width: 270,
@@ -2075,7 +2080,7 @@
                         Icon: N.default,
                         text: Y.default.Messages.PREMIUM_TIER_CUSTOM_EMOJI_ITEM
                     }), (0, u.jsx)(ei, {
-                        Icon: D.default,
+                        Icon: j.default,
                         text: Y.default.Messages.PREMIUM_TIER_HD_STREAMING_ITEM
                     }), (0, u.jsx)(ei, {
                         Icon: L.default,
@@ -2094,12 +2099,12 @@
                         Icon: N.default,
                         text: Y.default.Messages.PREMIUM_TIER_CUSTOM_EMOJI_ITEM
                     }), r ? (0, u.jsx)(ei, {
-                        Icon: U.default,
+                        Icon: h.default,
                         text: n ? Y.default.Messages.PREMIUM_MARKETING_SUPER_REACTIONS_PERK_TITLE_UNLIMITED : Y.default.Messages.PREMIUM_TIER_SUPER_REACTIONS_ITEM.format({
                             weeklyReactionsNumber: S.BurstRefillTierAmounts.TIER_2
                         })
                     }) : null, (0, u.jsx)(ei, {
-                        Icon: D.default,
+                        Icon: j.default,
                         text: Y.default.Messages.PREMIUM_TIER_HD_STREAMING_ITEM
                     }), (0, u.jsx)(ei, {
                         Icon: v.default,
@@ -2162,7 +2167,7 @@
                         })]
                     }), i ? (0, u.jsx)("div", {
                         className: X.wumpusImageContainer,
-                        children: (0, u.jsx)(h.default, {
+                        children: (0, u.jsx)(U.default, {
                             src: J,
                             mediaLayoutType: Z.MediaLayoutType.RESPONSIVE,
                             width: 270,
@@ -2411,4 +2416,4 @@
         }
     }
 ]);
-//# sourceMappingURL=108bf353f6a3d2f5cb03.js.map
+//# sourceMappingURL=13d3847fe82b5606ccd8.js.map
