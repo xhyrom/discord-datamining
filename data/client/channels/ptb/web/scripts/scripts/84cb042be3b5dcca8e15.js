@@ -25754,15 +25754,20 @@
                     ...R
                 });
                 let y = _.default.getCurrentHangStatus();
-                null != y && e.push({
-                    type: m.ActivityTypes.HANG_STATUS,
-                    name: "Hang Status",
-                    state: y
-                }), !a(g, e) && (g = e)
+                if (null != y) {
+                    var v, M;
+                    e.push({
+                        type: m.ActivityTypes.HANG_STATUS,
+                        name: "Hang Status",
+                        state: y,
+                        details: null !== (v = _.default.getCustomHangStatus()) && void 0 !== v ? v : void 0,
+                        emoji: null !== (M = _.default.getCustomHangStatusEmoji()) && void 0 !== M ? M : void 0
+                    })
+                }!a(g, e) && (g = e)
             }
             class O extends r.default.Store {
                 initialize() {
-                    this.waitFor(S.default, o.default, C.default, T.default, h.default, p.default, _.default), this.syncWith([E.default], () => N())
+                    this.waitFor(S.default, o.default, C.default, T.default, h.default, p.default, _.default), this.syncWith([E.default, _.default], () => N())
                 }
                 getActivities() {
                     return g
@@ -33625,4 +33630,4 @@
         }
     }
 ]);
-//# sourceMappingURL=9f3c987f3df5decdd702.js.map
+//# sourceMappingURL=84cb042be3b5dcca8e15.js.map
