@@ -1919,7 +1919,7 @@
                     children: (0, i.jsx)("path", {
                         fill: "string" == typeof s ? s : s.css,
                         fillRule: "evenodd",
-                        d: "M7 8H5a3 3 0 0 0-3 3v8a3 3 0 0 0 3 3h14a3 3 0 0 0 3-3v-8a3 3 0 0 0-3-3h-2V6A5 5 0 0 0 7 6v2Zm8 0V6a3 3 0 1 0-6 0v2h6Zm-2 7.732A2 2 0 0 0 12 12a2 2 0 0 0-1 3.732V17a1 1 0 1 0 2 0v-1.268Z",
+                        d: "M6 9h1V6a5 5 0 0 1 10 0v3h1a3 3 0 0 1 3 3v8a3 3 0 0 1-3 3H6a3 3 0 0 1-3-3v-8a3 3 0 0 1 3-3Zm9-3v3H9V6a3 3 0 1 1 6 0Zm-1 8a2 2 0 0 1-1 1.732V18a1 1 0 1 1-2 0v-2.268A2 2 0 0 1 12 12a2 2 0 0 1 2 2Z",
                         clipRule: "evenodd",
                         className: r
                     })
@@ -33625,4 +33625,4 @@
         }
     }
 ]);
-//# sourceMappingURL=33330256fb0bcb679624.js.map
+//# sourceMappingURL=e457124ec109d9782734.js.map

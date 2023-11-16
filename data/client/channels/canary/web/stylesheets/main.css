@@ -19460,8 +19460,8 @@ input[type=checkbox]:focus-visible+.label_ee78c3 {
 
 .message__13e98 {
     font-weight: 500;
-    font-size: 1rem;
-    line-height: 1.25rem;
+    font-size: 16px;
+    line-height: 20px;
     white-space: nowrap;
     text-overflow: ellipsis;
     overflow: hidden
@@ -76754,13 +76754,9 @@ input::-webkit-inner-spin-button {
     width: 18px
 }
 
-.addButton__9d2f2>* {
-    margin-right: 4px
-}
-
+.addButton__9d2f2>*,
 .soundIcon__1f181 {
-    margin-right: 4px;
-    color: var(--button-outline-primary-text)
+    margin-right: 4px
 }
 
 .textSelected__44937 {
@@ -76775,7 +76771,7 @@ input::-webkit-inner-spin-button {
 
 .text__0df17,
 .textSelected__44937 {
-    color: var(--button-outline-primary-text)
+    color: var(--white-500)
 }
 
 .customGiftHeader__13695 {
@@ -76786,18 +76782,13 @@ input::-webkit-inner-spin-button {
     padding: 12px;
     align-items: center;
     display: block;
-    background-color: var(--primary-860)
+    background-color: var(--background-floating)
 }
 
 .searchAndSound__1b526 {
     display: flex;
     margin-top: 10px;
     align-items: center
-}
-
-.text__708a4,
-.textSelected__32734 {
-    color: var(--button-outline-primary-text)
 }
 
 .container__591e0 {
@@ -76808,10 +76799,6 @@ input::-webkit-inner-spin-button {
     display: flex;
     justify-content: center;
     align-items: center
-}
-
-.textSelected__32734 {
-    margin-right: 5px
 }
 
 .emojiList__5e37b {
@@ -76829,12 +76816,12 @@ input::-webkit-inner-spin-button {
 
 .text__708a4,
 .textSelected__32734 {
-    color: var(--button-outline-primary-text)
+    color: var(--white-500)
 }
 
 .emojiIcon__2ac82 {
     margin-right: 4px;
-    color: var(--button-outline-primary-text);
+    color: var(--white-500);
     padding: 4px
 }
 
@@ -76844,9 +76831,8 @@ input::-webkit-inner-spin-button {
     width: 100%
 }
 
-.emojiHeader__27706,
-.customGiftContent__85873 {
-    background-color: var(--primary-860)
+.emojiHeader__27706 {
+    background-color: var(--background-floating)
 }
 
 .customGiftHeader__1dea3 {
@@ -123612,4 +123598,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=app.87bfda3362b960870c9b.css.map*/
+/*# sourceMappingURL=app.c909f063ebabe2a0b861.css.map*/
