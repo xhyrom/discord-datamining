@@ -1,0 +1,23 @@
+{
+  "data": {
+    "kind": "user",
+    "id": "2023-11_attachment_link_markup",
+    "label": "Attachment Link Config User Experiment",
+    "description": [
+      "Not Eligible",
+      "Control Bucket",
+      "Treatment 1: Shows links to attachments as regular links",
+      "Treatment 2: Shows links to attachments as \"mentions\" of the filename"
+    ],
+    "hash": 1894288113,
+    "buckets": [
+      -1,
+      0,
+      1,
+      2
+    ],
+    "config_keys": [
+      "enabled"
+    ]
+  }
+}
