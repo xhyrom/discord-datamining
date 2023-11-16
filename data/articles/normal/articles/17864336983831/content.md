@@ -1,4 +1,5 @@
 <p id="docs-internal-guid-c6c1654f-7fff-2ca1-96f1-5828479b73ba">Starting from <strong>October 18th, 2023 (9am PST)</strong> to <strong>November 17th, 2023 (11:59pm PST)</strong>, <a href="https://support.discord.com/hc/en-us/articles/115000435108"><span class="wysiwyg-underline" style="color: #1155cc;" data-darkreader-inline-color="">Discord Nitro</span></a> members can claim an exclusive in-game variant for the card battler game. </p>
+<h3 id="docs-internal-guid-d233aaf0-7fff-31b4-2ffb-c46f42126c4b"><span style="color: #434343;">Note: All available variant codes have been claimed as of November 15, 2023.</span></h3>
 <p class="wysiwyg-text-align-center"><img src="https://support.discord.com/hc/article_attachments/18368792267543" alt="NitroRewards_1920x1080.png"></p>
 <p><strong>Promotion Summary</strong></p>
 <p><strong>Offer Details:</strong> MARVEL SNAP in-game variant for<a href="https://support.discord.com/hc/en-us/articles/115000435108"> <span class="wysiwyg-underline" style="color: #1155cc;" data-darkreader-inline-color="">Discord Nitro</span></a> members</p>
@@ -6,7 +7,7 @@
 <ol>
     <li>Exclusive Hawkeye Variant</li>
 </ol>
-<p class="wysiwyg-text-align-center"><img src="https://support.discord.com/hc/article_attachments/18351950158871" alt="image2.png" width="342" height="740"> </p>
+<p class="wysiwyg-text-align-center"><img src="https://support.discord.com/hc/article_attachments/18351950158871" alt="image2.png" width="342" height="740"></p>
 <ol start="2">
     <li>Exclusive Snap Title “I’m in the Discord” </li>
 </ol>
@@ -92,7 +93,7 @@
     <li>Scroll to the very bottom </li>
     <li>Snap: ID [Tap to reveal Snap Id] </li>
 </ul>
-<p class="wysiwyg-text-align-center"><img style="height: 351px; width: 624px;" src="https://lh7-us.googleusercontent.com/eCyC6f2dOuF3tk4wctY7X4SbRVJAL1akNzbiGhQy2I21ffaUTUfp5Eox_v4_WstyslyeIDx-yaqgPDd9JqGysbQoVuPf0WUqkbQzIhXKoHHmKjh9d4XkXwp8ovsG234d-ZSuaeEFYejfacCYxFQW-fU"></p>
+<p class="wysiwyg-text-align-center"><img style="height: 351px; width: 624px;" src="https://support.discord.com/hc/article_attachments/19126234796183"></p>
 <p><strong>2) Then, enter your redemption code within the Redeem Code box and select “Confirm”. </strong></p>
 <p><strong>3) Once you have redeemed your code, you can check your rewards through in-game collections via MARVEL SNAP. And that's it! Happy gaming!</strong></p>
 <h3 id="h_01HD00JG95WQNNWCGP8STQ1CKV"><span style="color: #434343;" data-darkreader-inline-color="">Note: Please enter the code accurately and be wary of spacing to ensure a successful redemption. There will not be a confirmation in-game that you have received the variant and title. Go to your Cards and Titles sections to check that you’ve successfully redeemed the rewards. </span></h3>
