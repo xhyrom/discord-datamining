@@ -684,8 +684,8 @@
                 Y = n("990766"),
                 K = n("49111"),
                 j = n("724210"),
-                z = n("706530"),
-                W = n("91366"),
+                W = n("706530"),
+                z = n("91366"),
                 q = n("837979");
             let Q = "invite",
                 X = null;
@@ -694,13 +694,13 @@
                 var t, n, i;
                 let a = {};
                 switch (e.target_type) {
-                    case W.InviteTargetTypes.STREAM:
+                    case z.InviteTargetTypes.STREAM:
                         a.targetType = e.target_type, a.targetUserId = null === (n = e.target_user) || void 0 === n ? void 0 : n.id;
                         break;
-                    case W.InviteTargetTypes.EMBEDDED_APPLICATION:
+                    case z.InviteTargetTypes.EMBEDDED_APPLICATION:
                         a.targetType = e.target_type, a.targetApplicationId = null === (i = e.target_application) || void 0 === i ? void 0 : i.id;
                         break;
-                    case W.InviteTargetTypes.ROLE_SUBSCRIPTIONS_PURCHASE:
+                    case z.InviteTargetTypes.ROLE_SUBSCRIPTIONS_PURCHASE:
                         a.targetType = e.target_type
                 }
                 let l = null != b.default.getGuild(null === (t = e.guild) || void 0 === t ? void 0 : t.id),
@@ -718,7 +718,7 @@
                     type: s
                 } = i, r = function(e, t, n) {
                     var i, a;
-                    if ((null == n ? void 0 : n.targetType) === W.InviteTargetTypes.ROLE_SUBSCRIPTIONS_PURCHASE) return j.StaticChannelRoute.ROLE_SUBSCRIPTIONS;
+                    if ((null == n ? void 0 : n.targetType) === z.InviteTargetTypes.ROLE_SUBSCRIPTIONS_PURCHASE) return j.StaticChannelRoute.ROLE_SUBSCRIPTIONS;
                     if ((null == n ? void 0 : n.targetType) == null && !M.GUILD_VOCAL_CHANNEL_TYPES.has(t.type) && ((0, p.canSeeGuildHome)(e) || (0, S.canSeeOnboardingHome)(e))) return j.StaticChannelRoute.GUILD_HOME;
                     let l = D.default.getChannel(t.id);
                     return w.default.can(K.Permissions.VIEW_CHANNEL, l) ? t.id : null !== (a = null === (i = U.default.getDefaultChannel(e)) || void 0 === i ? void 0 : i.id) && void 0 !== a ? a : t.id
@@ -736,12 +736,12 @@
                                 (0, v.connectAndOpen)(i instanceof M.ChannelRecordBase ? i : (0, M.createChannelRecord)(i)), (0, y.transitionTo)(_);
                                 return
                             }
-                            n.selectVoiceChannel(r), o === W.InviteTargetTypes.STREAM && null != u && Y.watchStreamAndTransitionToStream({
-                                streamType: z.StreamTypes.GUILD,
+                            n.selectVoiceChannel(r), o === z.InviteTargetTypes.STREAM && null != u && Y.watchStreamAndTransitionToStream({
+                                streamType: W.StreamTypes.GUILD,
                                 ownerId: u,
                                 guildId: t,
                                 channelId: r
-                            }), o === W.InviteTargetTypes.EMBEDDED_APPLICATION && null != d && ((0, y.transitionTo)(K.Routes.CHANNEL(null != t ? t : K.ME, r)), (0, E.default)(r, d, l, null == a ? void 0 : a.intent))
+                            }), o === z.InviteTargetTypes.EMBEDDED_APPLICATION && null != d && ((0, y.transitionTo)(K.Routes.CHANNEL(null != t ? t : K.ME, r)), (0, E.default)(r, d, l, null == a ? void 0 : a.intent))
                         };
                         (0, C.shouldShowMembershipVerificationGate)(t, [b.default, G.default, F.default, P.default]) ? (0, T.openMemberVerificationModal)(t, s) : s()
                     })
@@ -6193,11 +6193,11 @@
                 return e.size(g.ChannelRTCParticipantsIndexes.STREAM) > 0 || e.size(g.ChannelRTCParticipantsIndexes.VIDEO) > 0 || e.hasEmbeddedActivity()
             }
 
-            function z(e) {
+            function W(e) {
                 delete v[e], delete M[e], delete D[e], delete U[e]
             }
 
-            function W() {
+            function z() {
                 return H(e => e.rebuild(), function() {
                     let e = [],
                         t = T.default.getChannelId();
@@ -6206,7 +6206,7 @@
                     null != n && !e.includes(n) && e.push(n);
                     let i = c.default.getRemoteSessionId(),
                         a = I.default.getVoiceStateForSession(h.default.getId(), i);
-                    (null == a ? void 0 : a.channelId) != null && e.push(null == a ? void 0 : a.channelId), s.difference(y, e).forEach(z);
+                    (null == a ? void 0 : a.channelId) != null && e.push(null == a ? void 0 : a.channelId), s.difference(y, e).forEach(W);
                     let l = s.difference(e, y);
                     return y = e, l
                 }())
@@ -6243,7 +6243,7 @@
                         id: t
                     }
                 } = e;
-                return delete G[t], delete k[t], z(t)
+                return delete G[t], delete k[t], W(t)
             }
 
             function $(e) {
@@ -6262,7 +6262,7 @@
             }
             class et extends r.default.Store {
                 initialize() {
-                    this.waitFor(E.default, h.default, f.default, p.default, o.default, T.default, C.default, S.default, m.default, I.default), this.syncWith([o.default], q), this.syncWith([c.default], W)
+                    this.waitFor(E.default, h.default, f.default, p.default, o.default, T.default, C.default, S.default, m.default, I.default), this.syncWith([o.default], q), this.syncWith([c.default], z)
                 }
                 getParticipantsVersion(e) {
                     return F(e).version
@@ -6350,25 +6350,25 @@
             }
             et.displayName = "ChannelRTCStore";
             var en = new et(u.default, {
-                CONNECTION_OPEN: W,
-                CONNECTION_OPEN_SUPPLEMENTAL: W,
-                THREAD_LIST_SYNC: W,
-                OVERLAY_INITIALIZE: W,
+                CONNECTION_OPEN: z,
+                CONNECTION_OPEN_SUPPLEMENTAL: z,
+                THREAD_LIST_SYNC: z,
+                OVERLAY_INITIALIZE: z,
                 VOICE_CHANNEL_SELECT: function(e) {
                     let {
                         channelId: t,
                         currentVoiceChannelId: n
                     } = e;
-                    return null != t ? delete L[t] : null != n && (delete G[n], delete k[n], Y(n)), W()
+                    return null != t ? delete L[t] : null != n && (delete G[n], delete k[n], Y(n)), z()
                 },
                 CHANNEL_SELECT: function(e) {
                     let {
                         channelId: t,
                         messageId: n
-                    } = e, i = W(), a = p.default.getChannel(t);
+                    } = e, i = z(), a = p.default.getChannel(t);
                     return null == t || null == n || (null == a ? void 0 : a.type) !== N.ChannelTypes.GUILD_VOICE && (null == a ? void 0 : a.type) !== N.ChannelTypes.GUILD_STAGE_VOICE || G[t] ? i : (G[t] = !0, !0)
                 },
-                CHANNEL_RTC_ACTIVE_CHANNELS: W,
+                CHANNEL_RTC_ACTIVE_CHANNELS: z,
                 VOICE_STATE_UPDATES: function(e) {
                     let {
                         voiceStates: t,
@@ -6408,7 +6408,7 @@
                     let {
                         channelId: t
                     } = e;
-                    return z(t)
+                    return W(t)
                 },
                 CHANNEL_RTC_SELECT_PARTICIPANT: function(e) {
                     let {
@@ -6540,7 +6540,7 @@
                             let i = p.default.getChannel(e);
                             (null == i || i.getGuildId() === t.id) && n.push(e)
                         }), 0 === n.length) return !1;
-                    s.forEach(n, e => z(e))
+                    s.forEach(n, e => W(e))
                 }
             })
         },
@@ -18204,7 +18204,7 @@
             "use strict";
             n.r(t), n.d(t, {
                 OAuth2AuthorizePage: function() {
-                    return W
+                    return z
                 },
                 OAuth2AuthorizeModal: function() {
                     return q
@@ -18261,9 +18261,9 @@
                 Y = n("954016"),
                 K = n("782340"),
                 j = n("392507");
-            let z = "oauth2-authorize-header-id";
+            let W = "oauth2-authorize-header-id";
 
-            function W() {
+            function z() {
                 let e = (0, o.useLocation)(),
                     t = u.useMemo(() => (0, M.parseOAuth2AuthorizeProps)(e.search), [e.search]);
                 return (0, I.default)(), (0, r.jsx)(V.OAuth2Page, {
@@ -18281,7 +18281,7 @@
                 } = e;
                 return (0, r.jsx)(V.OAuth2Modal, {
                     transitionState: t,
-                    "aria-labelledby": z,
+                    "aria-labelledby": W,
                     children: (0, r.jsx)(Q, {
                         ...n,
                         scrollable: !0
@@ -18322,7 +18322,7 @@
             function X(e) {
                 var t, n, i, a, l, s, d, f;
                 let p, I, V, {
-                        clientId: W,
+                        clientId: z,
                         scopes: q,
                         responseType: Q,
                         redirectUri: X,
@@ -18379,7 +18379,7 @@
                         eb(!0);
                         let t = await (0, L.authorize)({
                             authorize: e,
-                            clientId: W,
+                            clientId: z,
                             scopes: eh,
                             responseType: Q,
                             redirectUri: X,
@@ -18412,7 +18412,7 @@
                         let e = t.body;
                         (null == e ? void 0 : e.message) != null && "" !== e.message ? ey(Error(e.message)) : ey(e), eO(1), eS(2), eb(!1)
                     }
-                }, [er, eu, W, Z, J, eg, eo, en, X, Q, eh, eM, eD, $, ed, null == em ? void 0 : em.application, eG, eE]), eH = u.useRef(!1), eV = u.useCallback(async () => {
+                }, [er, eu, z, Z, J, eg, eo, en, X, Q, eh, eM, eD, $, ed, null == em ? void 0 : em.application, eG, eE]), eH = u.useRef(!1), eV = u.useCallback(async () => {
                     if (0 === eC) {
                         if (eS(1), !O.default.isAuthenticated()) {
                             (0, L.logoutWithRedirect)(ef);
@@ -18422,7 +18422,7 @@
                             eH.current = !0;
                             try {
                                 let e = null != es ? es : await (0, L.fetchAuthorization)({
-                                    clientId: W,
+                                    clientId: z,
                                     scopes: eh,
                                     responseType: Q,
                                     redirectUri: X,
@@ -18449,7 +18449,7 @@
                             }
                         }
                     }
-                }, [es, W, Z, J, eC, ef, ei, X, Q, eh, eF, $, eE, eT]), ex = u.useCallback((e, t) => {
+                }, [es, z, Z, J, eC, ef, ei, X, Q, eh, eF, $, eE, eT]), ex = u.useCallback((e, t) => {
                     eA(n => e ? _.default.remove(n, t) : _.default.add(n, t))
                 }, []);
                 u.useEffect(() => {
@@ -18470,20 +18470,20 @@
                 };
                 let eK = new N.default(em.user),
                     ej = null === (i = em.bot) || void 0 === i ? void 0 : i.approximate_guild_count,
-                    ez = !1;
+                    eW = !1;
                 switch (eN) {
                     case 1:
-                        let eW = null == eR || eR instanceof Error ? {} : eR,
+                        let ez = null == eR || eR instanceof Error ? {} : eR,
                             eq = null === (a = em.guilds) || void 0 === a ? void 0 : a.sort((e, t) => e.name.toLowerCase().localeCompare(t.name.toLowerCase())),
                             eQ = eh.includes(B.OAuth2Scopes.BOT) || eh.includes(B.OAuth2Scopes.WEBHOOK_INCOMING) || eh.includes(B.OAuth2Scopes.APPLICATIONS_COMMANDS);
                         p = (0, r.jsxs)(r.Fragment, {
                             children: [(0, r.jsx)(k.default, {
                                 application: em.application,
                                 accountScopes: ev,
-                                errors: eW,
+                                errors: ez,
                                 isTrustedName: ec
                             }), null == eB && eQ && !eE ? (0, r.jsx)(F.GuildSelector, {
-                                error: (null !== (s = null !== (l = eW[B.OAuth2Scopes.BOT]) && void 0 !== l ? l : eW[B.OAuth2Scopes.APPLICATIONS_COMMANDS]) && void 0 !== s ? s : [])[0],
+                                error: (null !== (s = null !== (l = ez[B.OAuth2Scopes.BOT]) && void 0 !== l ? l : ez[B.OAuth2Scopes.APPLICATIONS_COMMANDS]) && void 0 !== s ? s : [])[0],
                                 selectedGuildId: eM,
                                 onGuildChange: e => {
                                     eL(e)
@@ -18491,14 +18491,14 @@
                                 guilds: null != eq ? eq : [],
                                 disabled: "" !== eM && !0 === ea
                             }) : null, eh.includes(B.OAuth2Scopes.WEBHOOK_INCOMING) ? (0, r.jsx)(F.WebhookGuildChannelSelector, {
-                                error: (null !== (d = eW[B.OAuth2Scopes.WEBHOOK_INCOMING]) && void 0 !== d ? d : [])[0],
+                                error: (null !== (d = ez[B.OAuth2Scopes.WEBHOOK_INCOMING]) && void 0 !== d ? d : [])[0],
                                 selectedChannelId: eD,
                                 selectedGuildId: eM,
                                 onChannelChange: e => eU(e)
                             }) : null]
                         }), eh.includes(B.OAuth2Scopes.BOT) && !_.default.equals(en, y.default.NONE) && (V = 2);
                         let eX = null != eY && eh.includes(B.OAuth2Scopes.WEBHOOK_INCOMING) && null == eD;
-                        ez = !eE && (eQ && null == eY && null == eB || eX);
+                        eW = !eE && (eQ && null == eY && null == eB || eX);
                         break;
                     case 2:
                         p = (0, r.jsx)(w.default, {
@@ -18531,17 +18531,17 @@
                             children: K.default.Messages.CANCEL
                         }), null != V ? (0, r.jsx)(h.Button, {
                             onClick: () => eO(V),
-                            disabled: ez,
+                            disabled: eW,
                             children: K.default.Messages.CONTINUE
                         }) : (0, r.jsx)(h.Button, {
                             onClick: () => eF(!0),
-                            disabled: ez,
+                            disabled: eW,
                             submitting: eP,
                             children: K.default.Messages.AUTHORIZE
                         })]
                     }),
                     e$ = (0, r.jsx)(H.default, {
-                        id: z,
+                        id: W,
                         user: eK,
                         application: em.application,
                         bot: em.bot,
@@ -18569,7 +18569,7 @@
                 } = c.parse(t.location, !0), l = v.default.isDiscordHostname(n) || window.location.host === n;
                 if (l && i === B.Routes.OAUTH2_AUTHORIZED)(0, f.openModal)(e => (0, r.jsx)(V.OAuth2Modal, {
                     ...e,
-                    "aria-labelledby": z,
+                    "aria-labelledby": W,
                     children: (0, r.jsx)(x.OAuth2AuthorizedSuccess, {
                         guild: t.guild,
                         application: t.application,
@@ -18580,7 +18580,7 @@
                     let t = a.error_description || a.error || K.default.Messages.OAUTH2_UNKNOWN_ERROR;
                     return Array.isArray(t) && (t = t[0]), (0, r.jsxs)(V.OAuth2Modal, {
                         ...e,
-                        "aria-labelledby": z,
+                        "aria-labelledby": W,
                         children: [(0, r.jsx)(x.OAuth2Error, {
                             message: t,
                             onClose: e.onClose
@@ -20183,7 +20183,7 @@
                 K = !1,
                 j = null;
 
-            function z() {
+            function W() {
                 for (let e in x) {
                     let t = x[e];
                     if (!t.connected || null == B[e]) continue;
@@ -20195,7 +20195,7 @@
                 }
             }
 
-            function W(e) {
+            function z(e) {
                 h.default.dispatch({
                     type: "SPOTIFY_PLAYER_STATE",
                     accountId: e,
@@ -20307,7 +20307,7 @@
             }
 
             function ee(e, t, n) {
-                let i = z();
+                let i = W();
                 if (null == i) return !1;
                 let {
                     socket: l,
@@ -20346,7 +20346,7 @@
                 });
                 let e = null != a ? a.trackId : null;
                 a = null, G.info("Listen along stopped");
-                let t = z();
+                let t = W();
                 if (null == t) return;
                 let {
                     socket: n
@@ -20382,7 +20382,7 @@
 
             function ei() {
                 if (null == i) return;
-                let e = z();
+                let e = W();
                 if (null == e) return;
                 let {
                     socket: t
@@ -20465,14 +20465,14 @@
                     onlyRetryOnAuthorizationErrors: !0
                 }).then(n => {
                     let i = n.body;
-                    null != i ? el(e, t, i).then(() => n) : W(e)
-                }).catch(() => W(e))
+                    null != i ? el(e, t, i).then(() => n) : z(e)
+                }).catch(() => z(e))
             }
             class er extends c.default.Store {
                 initialize() {
                     this.waitFor(m.default, N.default), this.syncWith([g.default], () => (function() {
                         if (null == a) return !1;
-                        let e = z();
+                        let e = W();
                         if (null == e) return !1;
                         let {
                             userId: t
@@ -20493,7 +20493,7 @@
                     return Object.keys(x).length > 0
                 }
                 getActiveSocketAndDevice() {
-                    return z()
+                    return W()
                 }
                 getPlayableComputerDevices() {
                     let e = [];
@@ -20513,7 +20513,7 @@
                         sync_id: t,
                         party: n
                     } = e;
-                    return null != z() && null != t && null != n && null != n.id && (0, M.isSpotifyParty)(n.id)
+                    return null != W() && null != t && null != n && null != n.id && (0, M.isSpotifyParty)(n.id)
                 }
                 getSyncingWith() {
                     return a
@@ -20648,8 +20648,8 @@
                         p = null != u && null != a && 0 === r && !n;
                     !p && (Y[t] = f);
                     let C = i;
-                    if (i = o.values(Y).find(e => null != e), ea(S.default.getId()), null == s || p ? H.stop() : H.start(s.duration - r + 5e3, () => W(E.id)), null != a && (!n && r > 0 || null == u || null != f && a.trackId !== f.track.id) ? (G.info("Listen along active but playback stopped or track changed. Stopping listen along in ".concat(5e3, "ms")), V.start(5e3, () => {
-                            G.info("Stopping listening along"), (0, T.default)(), W(E.id)
+                    if (i = o.values(Y).find(e => null != e), ea(S.default.getId()), null == s || p ? H.stop() : H.start(s.duration - r + 5e3, () => z(E.id)), null != a && (!n && r > 0 || null == u || null != f && a.trackId !== f.track.id) ? (G.info("Listen along active but playback stopped or track changed. Stopping listen along in ".concat(5e3, "ms")), V.start(5e3, () => {
+                            G.info("Stopping listening along"), (0, T.default)(), z(E.id)
                         })) : V.isStarted() && (G.info("Listen along stop cancelled as playback of track resumed"), V.stop()), C === i || null == h && null == f || null != h && null != f && h.track.id === f.track.id && h.startTime === f.startTime) return c;
                     null != s && R.default.track(L.AnalyticEvents.ACTIVITY_UPDATED, {
                         party_platform: L.PlatformTypes.SPOTIFY,
@@ -20668,7 +20668,7 @@
                             activity: n,
                             metadata: i
                         } = e,
-                        l = z();
+                        l = W();
                     if (null == l) return !1;
                     let {
                         socket: s,
@@ -26485,8 +26485,8 @@
                 Y = n("271938"),
                 K = n("982108"),
                 j = n("42203"),
-                z = n("162805"),
-                W = n("760190"),
+                W = n("162805"),
+                z = n("760190"),
                 q = n("341542"),
                 Q = n("305961"),
                 X = n("603699"),
@@ -26588,7 +26588,7 @@
                 let a = e.hasUnreadOrMentions();
                 if (!a || (null == t ? void 0 : t.isForumLikeChannel()) === !0) return !1;
                 let l = n && !e._isJoinedThread;
-                if (!l && !z.default.isAtBottom(e.channelId)) return !1;
+                if (!l && !W.default.isAtBottom(e.channelId)) return !1;
                 let s = T.default.getLayout(e.channelId),
                     r = T.default.getChatOpen(e.channelId);
                 if (!r && (s === ea.ChannelLayouts.NO_CHAT || s === ea.ChannelLayouts.FULL_SCREEN) || null == eS[e.channelId]) return !1;
@@ -27226,16 +27226,16 @@
             function ej() {
                 let e = K.default.getCurrentSidebarChannelId(e_),
                     t = !1;
-                return eE !== e ? (t = eW(eE), eE = e) : t = eF(e) || t, t
+                return eE !== e ? (t = ez(eE), eE = e) : t = eF(e) || t, t
             }
 
-            function ez(e) {
+            function eW(e) {
                 if (null == e) return;
                 let t = eD.get(e);
                 t.isManualAck = !1
             }
 
-            function eW(e) {
+            function ez(e) {
                 if (null == e) return !1;
                 let t = eD.get(e);
                 return !t.hasUnread() && (t.oldestUnreadMessageId = null, !0)
@@ -27274,7 +27274,7 @@
             }
             class eZ extends d.default.Store {
                 initialize() {
-                    this.waitFor(z.default, en.default, Q.default, q.default, j.default, ee.default, Z.default, J.default, T.default, U.default, P.default, K.default, I.default, W.default, C.default, et.default, ei.default, v.default, N.default, G.default, R.default), this.syncWith([K.default], ej)
+                    this.waitFor(W.default, en.default, Q.default, q.default, j.default, ee.default, Z.default, J.default, T.default, U.default, P.default, K.default, I.default, z.default, C.default, et.default, ei.default, v.default, N.default, G.default, R.default), this.syncWith([K.default], ej)
                 }
                 getReadStatesByChannel() {
                     var e;
@@ -27587,9 +27587,9 @@
                         let e = eD.get(i.id);
                         e.ackMessageIdAtChannelSelect = null !== (a = e.ackMessageId) && void 0 !== a ? a : B.default.fromTimestamp(e.getAckTimestamp()), e.recordLastViewedTime()
                     }
-                    ez(e_), ez(eE);
+                    eW(e_), eW(eE);
                     let l = !1;
-                    return e_ !== t && (l = eW(e_) || l, l = eW(eE) || l), (e_ === t || (null == i ? void 0 : i.type) != null && ea.ChannelTypesSets.GUILD_THREADS_ONLY.has(i.type)) && (l = eF(t) || l), e_ === t && (l = eF(n) || l), e_ = t, eE = n, l
+                    return e_ !== t && (l = ez(e_) || l, l = ez(eE) || l), (e_ === t || (null == i ? void 0 : i.type) != null && ea.ChannelTypesSets.GUILD_THREADS_ONLY.has(i.type)) && (l = eF(t) || l), e_ === t && (l = eF(n) || l), e_ = t, eE = n, l
                 },
                 VOICE_CHANNEL_SELECT: function(e) {
                     let {
@@ -27873,7 +27873,7 @@
                     let {
                         channelId: t
                     } = e;
-                    return eW(t)
+                    return ez(t)
                 }
             });
             var e$ = eJ
@@ -30959,10 +30959,10 @@
                     return j
                 },
                 trackGiftCodeCopy: function() {
-                    return z
+                    return W
                 },
                 getStep: function() {
-                    return W
+                    return z
                 },
                 getHeaderText: function() {
                     return q
@@ -31103,14 +31103,14 @@
                 }
             }
 
-            function z(e, t) {
+            function W(e, t) {
                 _.default.track(C.AnalyticEvents.GIFT_CODE_COPIED, {
                     ...(0, r.default)(t, !1, !1),
                     ...e.analyticsData
                 })
             }
 
-            function W(e, t, n, i, a, l, s) {
+            function z(e, t, n, i, a, l, s) {
                 return null == n && (i || a || null == e) ? !s || l || i || a ? i && (t.isSubscription || null != e) ? C.GiftCodeModalStates.SUCCESS : C.GiftCodeModalStates.CONFIRM : C.GiftCodeModalStates.OPEN : C.GiftCodeModalStates.ERROR
             }
 
@@ -31206,31 +31206,33 @@
                 });
                 if (null != (n || i ? void 0 : e)) return l;
                 if (null == t) return null;
-                switch (t.code) {
-                    case C.AbortCodes.INVALID_GIFT_SELF_REDEMPTION:
-                        return m.default.Messages.GIFT_CONFIRMATION_BODY_SELF_GIFT_NO_PAYMENT;
-                    case C.AbortCodes.INVALID_GIFT_REDEMPTION_EXHAUSTED:
-                        return m.default.Messages.GIFT_CONFIRMATION_BODY_CLAIMED;
-                    case C.AbortCodes.INVALID_GIFT_REDEMPTION_OWNED:
-                        return l;
-                    case C.AbortCodes.UNKNOWN_GIFT_CODE:
-                        return m.default.Messages.GIFT_CONFIRMATION_BODY_INVALID;
-                    case C.AbortCodes.INVALID_GIFT_REDEMPTION_SUBSCRIPTION_INCOMPATIBLE:
-                        let s = c.default.getCurrentUser();
-                        return m.default.Messages.GIFT_EMBED_BODY_SUBSCRIPTION_MISMATCH.format({
-                            planName: (0, f.isPremiumExactly)(s, S.PremiumTypes.TIER_2) ? m.default.Messages.PREMIUM_TIER_2 : m.default.Messages.PREMIUM_TIER_1
-                        });
-                    case C.AbortCodes.INVALID_GIFT_REDEMPTION_SUBSCRIPTION_MANAGED:
-                        return m.default.Messages.GIFT_CONFIRMATION_BODY_ERROR_SUBSCRIPTION_MANAGED;
-                    case C.AbortCodes.INVALID_GIFT_REDEMPTION_INVOICE_OPEN:
-                        return m.default.Messages.GIFT_CONFIRMATION_BODY_ERROR_INVOICE_OPEN;
-                    case C.AbortCodes.INVALID_GIFT_REDEMPTION_FRAUD_REJECTED:
-                        return m.default.Messages.GIFT_CODE_SMITE_REJECT_HELP_TEXT;
-                    case C.AbortCodes.BILLING_NON_REFUNDABLE_PAYMENT_SOURCE:
-                        return m.default.Messages.GIFT_CODE_PAYMENT_SOURCE_INVALID;
-                    default:
-                        return m.default.Messages.GIFT_CONFIRMATION_BODY_UNKNOWN_ERROR
-                }
+                let s = c.default.getCurrentUser();
+                return function(e, t) {
+                    switch (e.code) {
+                        case C.AbortCodes.INVALID_GIFT_SELF_REDEMPTION:
+                            return m.default.Messages.GIFT_CONFIRMATION_BODY_SELF_GIFT_NO_PAYMENT;
+                        case C.AbortCodes.INVALID_GIFT_REDEMPTION_EXHAUSTED:
+                            return m.default.Messages.GIFT_CONFIRMATION_BODY_CLAIMED;
+                        case C.AbortCodes.INVALID_GIFT_REDEMPTION_OWNED:
+                            return m.default.Messages.GIFT_ERROR_OWNED;
+                        case C.AbortCodes.UNKNOWN_GIFT_CODE:
+                            return m.default.Messages.GIFT_CONFIRMATION_BODY_INVALID;
+                        case C.AbortCodes.INVALID_GIFT_REDEMPTION_SUBSCRIPTION_INCOMPATIBLE:
+                            return m.default.Messages.GIFT_EMBED_BODY_SUBSCRIPTION_MISMATCH.format({
+                                planName: (0, f.isPremiumExactly)(t, S.PremiumTypes.TIER_2) ? m.default.Messages.PREMIUM_TIER_2 : m.default.Messages.PREMIUM_TIER_1
+                            });
+                        case C.AbortCodes.INVALID_GIFT_REDEMPTION_SUBSCRIPTION_MANAGED:
+                            return m.default.Messages.GIFT_CONFIRMATION_BODY_ERROR_SUBSCRIPTION_MANAGED;
+                        case C.AbortCodes.INVALID_GIFT_REDEMPTION_INVOICE_OPEN:
+                            return m.default.Messages.GIFT_CONFIRMATION_BODY_ERROR_INVOICE_OPEN;
+                        case C.AbortCodes.INVALID_GIFT_REDEMPTION_FRAUD_REJECTED:
+                            return m.default.Messages.GIFT_CODE_SMITE_REJECT_HELP_TEXT;
+                        case C.AbortCodes.BILLING_NON_REFUNDABLE_PAYMENT_SOURCE:
+                            return m.default.Messages.GIFT_CODE_PAYMENT_SOURCE_INVALID;
+                        default:
+                            return m.default.Messages.GIFT_CONFIRMATION_BODY_UNKNOWN_ERROR
+                    }
+                }(t, s)
             }
 
             function J(e, t, n) {
@@ -31375,9 +31377,9 @@
                     return
                 }
                 let j = "function" == typeof g ? g() : g,
-                    z = (0, m.getProtocol)(U),
-                    W = !("http:" === z || "https:" === z);
-                if (!W && (j || S.default.isTrustedDomain(U)) || W && S.default.isTrustedProtocol(U)) {
+                    W = (0, m.getProtocol)(U),
+                    z = !("http:" === W || "https:" === W);
+                if (!z && (j || S.default.isTrustedDomain(U)) || z && S.default.isTrustedProtocol(U)) {
                     null == t || null != M && M ? Y() : b && _.default.trackAnnouncementMessageLinkClicked({
                         messageId: G,
                         channelId: D,
@@ -31387,7 +31389,7 @@
                     });
                     return
                 }
-                if (null != t && t.preventDefault(), W) h.default.show({
+                if (null != t && t.preventDefault(), z) h.default.show({
                     url: U,
                     trustUrl: s.trustProtocol,
                     onConfirm: Y,
@@ -33630,4 +33632,4 @@
         }
     }
 ]);
-//# sourceMappingURL=528986147b62e5d565f0.js.map
+//# sourceMappingURL=caf4177f9d29b71d9a65.js.map
