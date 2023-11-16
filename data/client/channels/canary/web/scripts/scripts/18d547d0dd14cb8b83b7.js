@@ -19840,136 +19840,132 @@
             "use strict";
             n.r(t), n.d(t, {
                 default: function() {
-                    return C
+                    return T
                 }
             }), n("424973");
             var i = n("627445"),
                 r = n.n(i),
                 s = n("446674"),
-                a = n("151426"),
-                o = n("913144"),
-                l = n("10641"),
-                u = n("42203"),
-                c = n("923959"),
-                d = n("305961"),
-                f = n("957255"),
-                h = n("677099"),
-                E = n("299039"),
-                p = n("49111");
-            let _ = null,
-                S = [],
-                m = null,
-                g = null;
+                a = n("913144"),
+                o = n("42203"),
+                l = n("923959"),
+                u = n("305961"),
+                c = n("957255"),
+                d = n("677099"),
+                f = n("299039"),
+                h = n("49111");
+            let E = null,
+                p = [],
+                _ = null,
+                S = null;
 
-            function T(e) {
+            function m(e) {
                 return null == e ? 0 : new Date().getTime() - e.getTime()
             }
-            class I extends s.default.Store {
+            class g extends s.default.Store {
                 initialize() {
-                    this.waitFor(h.default, c.default, u.default)
+                    this.waitFor(d.default, l.default, o.default)
                 }
                 isCallout(e) {
-                    return S.some(t => t.targetId === e)
+                    return p.some(t => t.targetId === e)
                 }
                 getCurrentAction() {
-                    return 0 === S.length ? null : S[0]
+                    return 0 === p.length ? null : p[0]
                 }
                 isCurrentKind(e) {
-                    return 0 !== S.length && S[0].kind === e
+                    return 0 !== p.length && p[0].kind === e
                 }
                 isActive(e) {
-                    return null != _ && _ === e && S.length > 0
+                    return null != E && E === e && p.length > 0
                 }
                 getAnalyticsProperties() {
                     let e = this.getCurrentAction();
                     return {
                         step: null == e ? void 0 : e.kind,
-                        is_final_step: 1 === S.length,
-                        step_duration: T(g),
-                        total_duration: T(m)
+                        is_final_step: 1 === p.length,
+                        step_duration: m(S),
+                        total_duration: m(_)
                     }
                 }
                 isAnyActive() {
-                    return S.length > 0
+                    return p.length > 0
                 }
             }
-            I.displayName = "AssistantStore";
-            var C = new I(o.default, {
+            g.displayName = "AssistantStore";
+            var T = new g(a.default, {
                 ASSISTANT_REBUILD_ACTION_STACK: function(e) {
                     let {
                         guildId: t
-                    } = e;
-                    if ((0, l.isDismissibleContentDismissed)(a.DismissibleContent.NUX_GUILD_CHANNEL_EXPLAINER)) return !1;
-                    let n = d.default.getGuild(t);
+                    } = e, n = u.default.getGuild(t);
                     if (null == n) return !1;
-                    _ = t, (S = []).push({
+                    E = t, (p = []).push({
                         guildId: t,
                         kind: "splashScreen",
                         targetKey: void 0,
                         targetId: void 0
                     });
                     let i = function(e) {
-                        let t = c.default.getVocalChannelIds(e);
+                        let t = l.default.getVocalChannelIds(e);
                         for (var n = 0; n < t.length; n++) {
                             let e = t[n],
-                                i = u.default.getChannel(e);
-                            if (null != i && !i.nsfw && f.default.can(p.Permissions.VIEW_CHANNEL, i)) return i
+                                i = o.default.getChannel(e);
+                            if (null != i && !i.nsfw && c.default.can(h.Permissions.VIEW_CHANNEL, i)) return i
                         }
                         return null
                     }(t);
-                    null != i && (S.push({
+                    null != i && (p.push({
                         guildId: t,
                         kind: "joinVoiceChannel",
                         targetKey: "voiceChannel",
                         targetId: i.id
-                    }), S.push({
+                    }), p.push({
                         guildId: t,
                         kind: "joinVoiceChannelMultitask",
                         targetKey: "voiceChannel",
                         targetId: i.id
                     }));
                     let r = function(e) {
-                        let t = c.default.getSelectableChannels(e.id),
-                            n = t.sort((e, t) => E.default.compare(e.channel.id, t.channel.id)).find(e => !e.channel.nsfw);
+                        let t = l.default.getSelectableChannels(e.id),
+                            n = t.sort((e, t) => f.default.compare(e.channel.id, t.channel.id)).find(e => !e.channel.nsfw);
                         if (null != n) return n.channel;
-                        let i = u.default.getChannel(e.systemChannelId);
-                        return null != i && !i.nsfw && f.default.can(p.Permissions.VIEW_CHANNEL, i) ? i : c.default.getSFWDefaultChannel(e.id)
+                        let i = o.default.getChannel(e.systemChannelId);
+                        return null != i && !i.nsfw && c.default.can(h.Permissions.VIEW_CHANNEL, i) ? i : l.default.getSFWDefaultChannel(e.id)
                     }(n);
-                    null != r && (S.push({
+                    null != r && (p.push({
                         guildId: t,
                         kind: "openTextChannel",
                         targetKey: "textChannel",
                         targetId: r.id
-                    }), S.push({
+                    }), p.push({
                         guildId: t,
                         kind: "sendMessage",
                         targetKey: void 0,
                         targetId: void 0
-                    })), S.push({
+                    })), p.push({
                         guildId: t,
                         kind: "navigateAround",
                         targetKey: void 0,
                         targetId: void 0
-                    }), S.push({
+                    }), p.push({
                         guildId: t,
                         kind: "wumpusJoined",
                         targetKey: void 0,
                         targetId: void 0
-                    }), S.push({
+                    }), p.push({
                         guildId: t,
                         kind: "startActivity",
                         targetKey: void 0,
                         targetId: void 0
-                    }), m = new Date, g = new Date
+                    }), _ = new Date, S = new Date
                 },
                 ASSISTANT_COMPLETE_ACTION: function(e) {
                     let {
                         kind: t
                     } = e;
-                    return 0 === S.length ? (r("AssistantStore: no actions to complete"), !1) : S[0].kind === t && void(S.shift(), g = new Date)
+                    return 0 === p.length ? (r("AssistantStore: no actions to complete"), !1) : p[0].kind === t && void(p.shift(), S = new Date)
                 },
                 ASSISTANT_DISMISS: function() {
-                    S = [], g = null, m = null
+                    p = [], S = null, _ = null
                 }
             })
         },
@@ -49501,7 +49497,7 @@
                         var i;
                         let d = {
                                 environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                                build_number: "246476"
+                                build_number: "246485"
                             },
                             f = l.default.getCurrentUser();
                         null != f && (d.user_id = f.id, d.user_name = f.tag, null != f.email && (d.email = f.email));
@@ -62752,4 +62748,4 @@
         }
     }
 ]);
-//# sourceMappingURL=155858035c4696d2557e.js.map
+//# sourceMappingURL=18d547d0dd14cb8b83b7.js.map
