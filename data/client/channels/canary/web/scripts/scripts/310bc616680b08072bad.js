@@ -39013,16 +39013,10 @@
                             frameRate: 30
                         },
                         c = q.default.getPidFromDesktopSource(t);
-                    null == c && I.default.wait(() => {
-                        I.default.dispatch({
-                            type: "CLIPS_INIT_FAILURE",
-                            errMsg: "Failed to get pid for sourceId",
-                            applicationName: n
-                        })
-                    }), {
+                    ({
                         soundshareId: o,
                         soundshareSession: l
-                    } = ta(c);
+                    } = ta(c));
                     let d = {
                         desktopSource: {
                             id: t,
@@ -49344,7 +49338,7 @@
                         var i;
                         let d = {
                                 environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                                build_number: "246348"
+                                build_number: "246350"
                             },
                             f = l.default.getCurrentUser();
                         null != f && (d.user_id = f.id, d.user_name = f.tag, null != f.email && (d.email = f.email));
@@ -62595,4 +62589,4 @@
         }
     }
 ]);
-//# sourceMappingURL=fd0e2431778b1f4063da.js.map
+//# sourceMappingURL=310bc616680b08072bad.js.map
