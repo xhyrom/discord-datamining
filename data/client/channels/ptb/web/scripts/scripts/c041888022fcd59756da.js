@@ -21339,6 +21339,161 @@
                 D = e => "Clip - ".concat(new Date(e).toLocaleString()),
                 y = 15
         },
+        56947: function(e, t, n) {
+            "use strict";
+            n.r(t), n.d(t, {
+                ClipsExperiment: function() {
+                    return a
+                },
+                areClipsEnabled: function() {
+                    return l
+                },
+                useEnableClips: function() {
+                    return u
+                },
+                useShouldSeeClipsPremiumEarlyAccessGoLiveRoadblock: function() {
+                    return c
+                },
+                useShouldSeeClipsPremiumEarlyAccessAnnouncementCoachmark: function() {
+                    return d
+                }
+            });
+            var i = n("862205"),
+                r = n("584687"),
+                s = n("18346");
+            let a = (0, i.createExperiment)({
+                    kind: "user",
+                    id: "2022-11_clips_experiment",
+                    label: "Clips Experiment",
+                    defaultConfig: {
+                        enableClips: !1,
+                        ignorePlatformRestriction: !1
+                    },
+                    treatments: [{
+                        id: 1,
+                        label: "Clips without upsells",
+                        config: {
+                            enableClips: !0,
+                            ignorePlatformRestriction: !1
+                        }
+                    }, {
+                        id: 2,
+                        label: "Clips with upsells",
+                        config: {
+                            enableClips: !0,
+                            ignorePlatformRestriction: !1
+                        }
+                    }, {
+                        id: 99,
+                        label: "Clips 4 da Developerz",
+                        config: {
+                            enableClips: !0,
+                            ignorePlatformRestriction: !0
+                        }
+                    }]
+                }),
+                o = (0, i.createExperiment)({
+                    kind: "user",
+                    id: "2023-09_clips_nitro_early_access",
+                    label: "Clips (Nitro EA)",
+                    defaultConfig: {
+                        enableClips: !1,
+                        enablePremiumEarlyAccessAnnouncementCoachmark: !1,
+                        enablePremiumEarlyAccessGoLiveRoadblock: !1
+                    },
+                    treatments: [{
+                        id: 1,
+                        label: "Clips Nitro EA Upsells Visible",
+                        config: {
+                            enableClips: !1,
+                            enablePremiumEarlyAccessAnnouncementCoachmark: !0,
+                            enablePremiumEarlyAccessGoLiveRoadblock: !0
+                        }
+                    }, {
+                        id: 2,
+                        label: "Clips Enabled (Nitro)",
+                        config: {
+                            enableClips: !0,
+                            enablePremiumEarlyAccessAnnouncementCoachmark: !0,
+                            enablePremiumEarlyAccessGoLiveRoadblock: !1
+                        }
+                    }]
+                });
+
+            function l() {
+                if (!(0, s.default)()) return !1;
+                let {
+                    enableClips: e
+                } = o.getCurrentConfig({
+                    location: "areClipsEnabled"
+                }, {
+                    autoTrackExposure: !1
+                }), {
+                    enableClips: t
+                } = a.getCurrentConfig({
+                    location: "areClipsEnabled"
+                }, {
+                    autoTrackExposure: !1
+                }), {
+                    enableDecoupledGameClipping: n
+                } = r.default.getCurrentConfig({
+                    location: "areClipsEnabled"
+                }, {
+                    autoTrackExposure: !1
+                });
+                return e || t || n
+            }
+
+            function u() {
+                let e = (0, s.default)(),
+                    {
+                        enableClips: t
+                    } = o.useExperiment({
+                        location: "useEnableClips"
+                    }, {
+                        autoTrackExposure: !1
+                    }),
+                    {
+                        enableClips: n
+                    } = a.useExperiment({
+                        location: "useEnableClips"
+                    }, {
+                        autoTrackExposure: !1
+                    }),
+                    {
+                        enableDecoupledGameClipping: i
+                    } = r.default.useExperiment({
+                        location: "useEnableClips"
+                    }, {
+                        autoTrackExposure: !1
+                    });
+                return (n || t || i) && e
+            }
+            let c = e => {
+                    let {
+                        autoTrackExposure: t
+                    } = e, n = (0, s.default)(), {
+                        enablePremiumEarlyAccessGoLiveRoadblock: i
+                    } = o.useExperiment({
+                        location: "useShouldSeeClipsPremiumEarlyAccessGoLiveRoadblock"
+                    }, {
+                        autoTrackExposure: t && n
+                    });
+                    return !!n && i
+                },
+                d = e => {
+                    let {
+                        autoTrackExposure: t
+                    } = e, n = (0, s.default)(), {
+                        enablePremiumEarlyAccessAnnouncementCoachmark: i
+                    } = o.useExperiment({
+                        location: "useShouldSeeClipsPremiumEarlyAccessGoLiveRoadblock"
+                    }, {
+                        autoTrackExposure: t && n
+                    });
+                    return !!n && i
+                }
+        },
         386045: function(e, t, n) {
             "use strict";
             n.r(t), n.d(t, {
@@ -21652,15 +21807,23 @@
             "use strict";
             n.r(t), n.d(t, {
                 default: function() {
-                    return a
+                    return o
                 }
             });
             var i = n("42887"),
                 r = n("773336"),
-                s = n("353927");
+                s = n("56947"),
+                a = n("353927");
 
-            function a() {
-                return r.isDesktop() && i.default.getMediaEngine().supports(s.Features.CLIPS)
+            function o() {
+                let {
+                    ignorePlatformRestriction: e
+                } = s.ClipsExperiment.getCurrentConfig({
+                    location: "isClipsClientCapable"
+                }, {
+                    autoTrackExposure: !1
+                });
+                return e || r.isDesktop() && i.default.getMediaEngine().supports(a.Features.CLIPS)
             }
         },
         680894: function(e, t, n) {
@@ -49338,7 +49501,7 @@
                         var i;
                         let d = {
                                 environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                                build_number: "246459"
+                                build_number: "246469"
                             },
                             f = l.default.getCurrentUser();
                         null != f && (d.user_id = f.id, d.user_name = f.tag, null != f.email && (d.email = f.email));
@@ -62589,4 +62752,4 @@
         }
     }
 ]);
-//# sourceMappingURL=10d8aa8aecaa10d0c7b8.js.map
+//# sourceMappingURL=c041888022fcd59756da.js.map
