@@ -1442,6 +1442,27 @@
   {
     "data": {
       "kind": "user",
+      "id": "2023-03_activitieswatchtogetherpromo",
+      "label": "Activities Watch Together Promo",
+      "description": [
+        "Not Eligible",
+        "Control Bucket",
+        "Treatment 1: enable Watch Together promo"
+      ],
+      "hash": 3238880497,
+      "buckets": [
+        -1,
+        0,
+        1
+      ],
+      "config_keys": [
+        "enabled"
+      ]
+    }
+  },
+  {
+    "data": {
+      "kind": "user",
       "id": "2023-03_activity_gartic_phone_coach_mark",
       "label": "Activity Coach Mark Gartic Phone",
       "description": [
@@ -3156,29 +3177,6 @@
       ],
       "config_keys": [
         "enableKrunkerStrikeMiniShelfBanner"
-      ]
-    }
-  },
-  {
-    "data": {
-      "kind": "user",
-      "id": "2023-10_collectibles_shop_for_all",
-      "label": "Collectibles Shop For All",
-      "description": [
-        "Not Eligible",
-        "Control Bucket",
-        "Treatment 1: Enables Collectibles Shop For All",
-        "Treatment 2: Enables Collectibles Shop For All with in-app DCF marketing"
-      ],
-      "hash": 640079350,
-      "buckets": [
-        -1,
-        0,
-        1,
-        2
-      ],
-      "config_keys": [
-        "enabled"
       ]
     }
   },
@@ -6920,27 +6918,6 @@
         "Treatment 1: Enable Activities Game Night"
       ],
       "hash": 2171590360,
-      "buckets": [
-        -1,
-        0,
-        1
-      ],
-      "config_keys": [
-        "enabled"
-      ]
-    }
-  },
-  {
-    "data": {
-      "kind": "user",
-      "id": "2023-03_activitieswatchtogetherpromo",
-      "label": "Activities Watch Together Promo",
-      "description": [
-        "Not Eligible",
-        "Control Bucket",
-        "Treatment 1: enable Watch Together promo"
-      ],
-      "hash": 3238880497,
       "buckets": [
         -1,
         0,
@@ -11110,6 +11087,29 @@
         -1,
         0,
         1
+      ],
+      "config_keys": [
+        "enabled"
+      ]
+    }
+  },
+  {
+    "data": {
+      "kind": "user",
+      "id": "2023-10_collectibles_shop_for_all",
+      "label": "Collectibles Shop For All",
+      "description": [
+        "Not Eligible",
+        "Control Bucket",
+        "Treatment 1: Enables Collectibles Shop For All",
+        "Treatment 2: Enables Collectibles Shop For All with in-app DCF marketing"
+      ],
+      "hash": 640079350,
+      "buckets": [
+        -1,
+        0,
+        1,
+        2
       ],
       "config_keys": [
         "enabled"
