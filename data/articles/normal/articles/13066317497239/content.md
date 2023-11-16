@@ -1,3 +1,4 @@
+<h3 id="h_01HFCSM38Z2NZXY3PX03ZZBG4B">Clyde will be deactivated at the end of the month. By December 1, 2023, users will no longer be able to invoke Clyde in Group DMs or server chats.<br>Thank you for your support &amp; feedback - we are constantly working on bringing you new features and experiences!</h3>
 <p id="docs-internal-guid-c23cc3cf-7fff-14b9-4750-2df4e12e8756"><span class="wysiwyg-font-size-large"><strong><span style="background-color: #ffffff;" data-darkreader-inline-bgcolor="">What this article covers: </span></strong></span></p>
 <ul id="docs-internal-guid-878b6d59-7fff-72ea-b600-d97a1bd89d10">
     <li><a href="#docs-internal-guid-05f2f6d6-7fff-7b6f-7015-1c6f6719d40f" target="_self" rel="undefined">What is Clyde?</a></li>
@@ -5,10 +6,10 @@
     <li>
         <a href="#docs-internal-guid-d333d1c6-7fff-ca46-f4b6-8427ea6aa8b9" target="_self" rel="undefined">Chatting with Clyde</a>
         <ul id="docs-internal-guid-878b6d59-7fff-72ea-b600-d97a1bd89d10">
-            <li><a href="#docs-internal-guid-50d86938-7fff-65a8-d295-1e786038457e">Characters Beta</a></li>
-            <li><a href="#h_01HCK8S0KWZX5ZJ09CQR41S81P">Banning Clyde</a></li>
-            <li><a href="#h_01HCK8RXZNPQ9628P9MB0DX6Z0">Unbanning Clyde</a></li>
-            <li><a href="#h_01HCK8RRVSP5DPDM8J6Z4W968G">Turn Off Clyde for Your Server</a></li>
+            <li><a href="https://support.discord.com/hc/en-us/articles/13066317497239#docs-internal-guid-50d86938-7fff-65a8-d295-1e786038457e">Characters Beta</a></li>
+            <li><a href="https://support.discord.com/hc/en-us/articles/13066317497239#h_01HCK8S0KWZX5ZJ09CQR41S81P">Banning Clyde</a></li>
+            <li><a href="https://support.discord.com/hc/en-us/articles/13066317497239#h_01HCK8RXZNPQ9628P9MB0DX6Z0">Unbanning Clyde</a></li>
+            <li><a href="https://support.discord.com/hc/en-us/articles/13066317497239#h_01HCK8RRVSP5DPDM8J6Z4W968G">Turn Off Clyde for Your Server</a></li>
         </ul>
     </li>
     <li><a href="#docs-internal-guid-eceee874-7fff-87bc-4dad-08d4917c72f9" target="_self" rel="undefined">Considerations</a></li>
