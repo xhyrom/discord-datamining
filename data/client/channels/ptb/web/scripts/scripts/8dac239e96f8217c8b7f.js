@@ -90,7 +90,8 @@
                                 entity_type: t.entityType,
                                 channel_id: r,
                                 entity_metadata: d,
-                                broadcast_to_directory_channels: l.broadcastToDirectoryChannels
+                                broadcast_to_directory_channels: l.broadcastToDirectoryChannels,
+                                recurrence_rule: (0, E.recurrenceRuleToServer)(t.recurrenceRule)
                             };
                         return a && (o.auto_start = t.autoStart), u.default.patch({
                             url: _.Endpoints.GUILD_EVENT(n, e),
@@ -495,7 +496,7 @@
                     return f
                 },
                 getEventTimeData: function() {
-                    return T
+                    return R
                 },
                 getScheduleFromEventData: function() {
                     return S
@@ -550,7 +551,7 @@
                     return n > 1 ? p(e, t) : e.calendar(t)
                 };
 
-            function T(e, t, n) {
+            function R(e, t, n) {
                 null == n && (n = r());
                 let u = r(e),
                     l = null != t && "" !== t ? r(t) : void 0,
@@ -565,7 +566,7 @@
                 }
             }
 
-            function R(e, t) {
+            function T(e, t) {
                 let n;
                 return null != e && (n = {
                     startDate: r(e),
@@ -574,11 +575,11 @@
             }
 
             function S(e) {
-                return R(e.scheduledStartTime, e.scheduledEndTime)
+                return T(e.scheduledStartTime, e.scheduledEndTime)
             }
 
             function D(e) {
-                return R(e.scheduled_start_time, e.scheduled_end_time)
+                return T(e.scheduled_start_time, e.scheduled_end_time)
             }
 
             function m(e, t) {
@@ -702,4 +703,4 @@
         }
     }
 ]);
-//# sourceMappingURL=b0fab8ddaff228be20b2.js.map
+//# sourceMappingURL=8dac239e96f8217c8b7f.js.map
