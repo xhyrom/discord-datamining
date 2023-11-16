@@ -1,5 +1,5 @@
 (this.webpackChunkdiscord_app = this.webpackChunkdiscord_app || []).push([
-    ["27068"], {
+    ["28794"], {
         666020: function(e, t, n) {
             "use strict";
             n.r(t), n.d(t, {
@@ -772,10 +772,10 @@
                 })
             }
         },
-        265614: function(e, t, n) {
+        125094: function(e, t, n) {
             "use strict";
             n.r(t), n.d(t, {
-                ScreenIcon: function() {
+                ScreenArrowIcon: function() {
                     return u
                 }
             });
@@ -791,18 +791,24 @@
                     colorClass: o = "",
                     ...s
                 } = e;
-                return (0, i.jsx)("svg", {
+                return (0, i.jsxs)("svg", {
                     ...(0, l.default)(s),
                     xmlns: "http://www.w3.org/2000/svg",
                     width: t,
                     height: n,
                     fill: "none",
                     viewBox: "0 0 24 24",
-                    children: (0, i.jsx)("path", {
+                    children: [(0, i.jsx)("path", {
                         fill: "string" == typeof u ? u : u.css,
-                        d: "M5 2a3 3 0 0 0-3 3v8a3 3 0 0 0 3 3h14a3 3 0 0 0 3-3V5a3 3 0 0 0-3-3H5ZM13.5 20a.5.5 0 0 1-.5-.5v-2a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v2a.5.5 0 0 1-.5.5H9a1 1 0 1 0 0 2h6a1 1 0 1 0 0-2h-1.5Z",
+                        fillRule: "evenodd",
+                        d: "M2 5a3 3 0 0 1 3-3h14a3 3 0 0 1 3 3v8a3 3 0 0 1-3 3H5a3 3 0 0 1-3-3V5Zm16 3a1 1 0 0 0-.293-.707l-3-3a1 1 0 1 0-1.414 1.414L14.586 7H13a6 6 0 0 0-6 6 1 1 0 1 0 2 0 4 4 0 0 1 4-4h1.586l-1.293 1.293a1 1 0 0 0 1.414 1.414l3-3A1 1 0 0 0 18 8Z",
+                        clipRule: "evenodd",
                         className: o
-                    })
+                    }), (0, i.jsx)("path", {
+                        fill: "string" == typeof u ? u : u.css,
+                        d: "M13 19.5a.5.5 0 0 0 .5.5H15a1 1 0 1 1 0 2H9a1 1 0 1 1 0-2h1.5a.5.5 0 0 0 .5-.5v-2a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v2Z",
+                        className: o
+                    })]
                 })
             }
         },
@@ -4270,4 +4276,4 @@
         }
     }
 ]);
-//# sourceMappingURL=48fa9e982f3220ed51dc.js.map
+//# sourceMappingURL=38e1fd4b6116a5c621e4.js.map

@@ -19466,8 +19466,8 @@ input[type=checkbox]:focus-visible+.label_ee78c3 {
 
 .message__13e98 {
     font-weight: 500;
-    font-size: 16px;
-    line-height: 20px;
+    font-size: 1rem;
+    line-height: 1.25rem;
     white-space: nowrap;
     text-overflow: ellipsis;
     overflow: hidden
@@ -51322,7 +51322,8 @@ html .progress__4ef76 {
 }
 
 .statusDiv_a4cf67 {
-    display: flex
+    display: flex;
+    align-items: center
 }
 
 .statusDiv_a4cf67.hoverable__46c19:hover .pencilIcon__1ec62,
@@ -123638,4 +123639,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=app.741ce7e3d8810afc88ff.css.map*/
+/*# sourceMappingURL=app.baa1515c64113ae0d673.css.map*/
