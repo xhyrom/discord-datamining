@@ -746,6 +746,40 @@
                 })
             }
         },
+        157697: function(e, t, n) {
+            "use strict";
+            n.r(t), n.d(t, {
+                VideoSlashIcon: function() {
+                    return i
+                }
+            });
+            var a = n("37983");
+            n("884691");
+            var r = n("669491"),
+                s = n("75196");
+            let i = e => {
+                let {
+                    width: t = 24,
+                    height: n = 24,
+                    color: i = r.default.colors.INTERACTIVE_NORMAL,
+                    colorClass: l = "",
+                    ...u
+                } = e;
+                return (0, a.jsx)("svg", {
+                    ...(0, s.default)(u),
+                    xmlns: "http://www.w3.org/2000/svg",
+                    width: t,
+                    height: n,
+                    fill: "none",
+                    viewBox: "0 0 24 24",
+                    children: (0, a.jsx)("path", {
+                        fill: "string" == typeof i ? i : i.css,
+                        d: "M22.707 2.707a1 1 0 0 0-1.414-1.414l-20 20a1 1 0 1 0 1.414 1.414l20-20ZM9.207 20a.5.5 0 0 1-.353-.854L20.943 7.057a.5.5 0 0 1 .13-.093l.48-.24A1 1 0 0 1 23 7.618v8.764a1 1 0 0 1-1.447.894l-3-1.5a1 1 0 0 1-.553-.894V17a3 3 0 0 1-3 3H9.207ZM15.281 4.719c.268-.268.146-.712-.231-.719H4a3 3 0 0 0-3 3v10c0 .346.059.68.167.989.106.305.491.353.72.124L15.281 4.719Z",
+                        className: l
+                    })
+                })
+            }
+        },
         368598: function(e, t, n) {
             "use strict";
             n.r(t), n.d(t, {
@@ -1660,18 +1694,18 @@
                     compact: m = !1,
                     disableInteraction: _ = !1,
                     maxVisibleUsers: v = 3
-                } = e, [I, L] = r.useState(!1), D = r.useRef(new d.DelayedCall(150, () => L(!1))), y = (0, o.useStateFromStoresArray)([h.default, p.default], () => {
+                } = e, [I, L] = r.useState(!1), D = r.useRef(new d.DelayedCall(150, () => L(!1))), x = (0, o.useStateFromStoresArray)([h.default, p.default], () => {
                     if (l.type === g.ParticipantTypes.STREAM) {
                         let e = h.default.getViewerIds(l.id);
                         return e.length > 0 ? e.map(e => p.default.getUser(e)).filter(C.isNotNullish) : N
                     }
                     return l.type === g.ParticipantTypes.ACTIVITY ? l.participants.size > 0 ? Array.from(l.participants).map(e => p.default.getUser(e)).filter(C.isNotNullish) : N : N
-                }, [l]), R = r.useCallback(() => {
+                }, [l]), y = r.useCallback(() => {
                     D.current.cancel(), L(!0)
-                }, []), x = r.useCallback(() => {
+                }, []), R = r.useCallback(() => {
                     D.current.delay()
                 }, []), P = r.useCallback((e, t) => {
-                    R(), (0, f.openContextMenuLazy)(e, async () => {
+                    y(), (0, f.openContextMenuLazy)(e, async () => {
                         let {
                             default: e
                         } = await n.el("406784").then(n.bind(n, "406784"));
@@ -1680,39 +1714,39 @@
                             user: t
                         })
                     }, {
-                        onClose: x
+                        onClose: R
                     })
-                }, [x, R]);
-                if (0 === y.length) return null;
+                }, [R, y]);
+                if (0 === x.length) return null;
                 if (m) return (0, a.jsx)(O, {
                     maxVisibleUsers: v,
-                    users: y,
+                    users: x,
                     guildId: s,
                     channelId: t,
                     className: S,
                     participantType: l.type
                 });
-                let b = u(y).take(v).map(e => (0, a.jsx)(c.Avatar, {
+                let b = u(x).take(v).map(e => (0, a.jsx)(c.Avatar, {
                     src: e.getAvatarURL(s, 24),
                     "aria-label": e.username,
                     size: c.AvatarSizes.SIZE_24,
                     className: A.viewer
                 }, e.id)).value();
-                return y.length > v && (b[b.length - 1] = (0, a.jsxs)("div", {
+                return x.length > v && (b[b.length - 1] = (0, a.jsxs)("div", {
                     className: A.overflow,
-                    children: ["+", y.length - v + 1]
+                    children: ["+", x.length - v + 1]
                 }, "overflow")), (0, a.jsx)(E.default, {
                     section: T.AnalyticsSections.STREAM_VIEWER_POPOUT,
                     children: (0, a.jsx)("div", {
-                        onMouseEnter: R,
-                        onMouseLeave: x,
+                        onMouseEnter: y,
+                        onMouseLeave: R,
                         children: (0, a.jsx)(c.Popout, {
                             renderPopout: () => (0, a.jsx)(M, {
                                 participantType: l.type,
                                 handleUserContextMenu: P,
                                 guildId: s,
                                 channelId: t,
-                                users: y,
+                                users: x,
                                 disableInteraction: _
                             }),
                             shouldShow: I,
@@ -2376,7 +2410,7 @@
                     dsn: "https://fa97a90475514c03a42f80cd36d147c4@sentry.io/140984",
                     autoSessionTracking: !1,
                     environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                    release: "discord_web-679b6a07318ac830ce612cfa83bb799781c94427",
+                    release: "discord_web-aaeec01d648ddf1051166fba2f4569787c5cd05c",
                     beforeSend: e => {
                         var t, n;
                         return !(null != (t = e).exception && null != t.exception.values && t.exception.values.every(e => null == e.stacktrace || null != e.stacktrace.frames && 1 === e.stacktrace.frames.length) && "canary" !== window.GLOBAL_ENV.RELEASE_CHANNEL || s.some(e => window.navigator.appVersion.toLowerCase().indexOf(e) >= 0)) && !i() && !("Aborted" === (n = e).message || "cancel captcha" === n.message) && l() ? e : null
@@ -2394,7 +2428,7 @@
                     })],
                     ignoreErrors: ["EADDRINUSE", "BetterDiscord", "EnhancedDiscord", "Powercord", "RecipeWebview", "jQuery", "localStorage", "has already been declared", "Cannot call hover while not dragging.", "Cannot call beginDrag while dragging.", "getHostNode", "setupCSS", "on missing remote object", "ChunkLoadError", "Cannot find module 'discord_utils'", "Failed to setup Krisp module", "Error invoking remote method 'DISCORD_NATIVE_MODULES_INSTALL': Error: Module updater is not available!", "Non-Error promise rejection captured with keys:", "Request has been terminated", "Cannot resolve a Slate point from DOM point", "Failed to fetch", "no suitable image found", "ResizeObserver loop limit exceeded", "The play() request was interrupted", "could not play audio", "notosans-400-normalitalic"],
                     denyUrls: [/recaptcha/, /mobilediscord\.com/, /betterdiscord:\/\//]
-                }), a.setTag("buildNumber", (e = "246485", "246485")), a.setTag("builtAt", String("1700175625101"));
+                }), a.setTag("buildNumber", (e = "246499", "246499")), a.setTag("builtAt", String("1700177006008"));
                 let t = window.GLOBAL_ENV.SENTRY_TAGS;
                 if (null != t && "object" == typeof t)
                     for (let e in t) a.setTag(e, t[e]);
@@ -3272,7 +3306,7 @@
                     onClose: A,
                     onSelect: I,
                     appContext: M = _.AppContext.APP
-                } = e, O = f.default.supports(g.Features.DESKTOP_CAPTURE_APPLICATIONS), N = null !== (t = l.find(e => e.ownerId === (null == r ? void 0 : r.id))) && void 0 !== t ? t : null, L = v(n, r, l), D = (0, o.default)(N, M), y = (0, u.default)(N, M, _.NOOP_NULL), R = null == N ? (0, a.jsx)(s.MenuItem, {
+                } = e, O = f.default.supports(g.Features.DESKTOP_CAPTURE_APPLICATIONS), N = null !== (t = l.find(e => e.ownerId === (null == r ? void 0 : r.id))) && void 0 !== t ? t : null, L = v(n, r, l), D = (0, o.default)(N, M), x = (0, u.default)(N, M, _.NOOP_NULL), y = null == N ? (0, a.jsx)(s.MenuItem, {
                     id: "share-your-screen",
                     label: T.default.Messages.SHARE_YOUR_SCREEN,
                     icon: h.default,
@@ -3282,7 +3316,7 @@
                         id: "stream-settings",
                         label: T.default.Messages.SCREENSHARE_STREAM_QUALITY,
                         children: D
-                    }) : null, E ? y : null, O ? (0, a.jsx)(s.MenuItem, {
+                    }) : null, E ? x : null, O ? (0, a.jsx)(s.MenuItem, {
                         id: "change-windows",
                         label: T.default.Messages.SCREENSHARE_CHANGE_WINDOWS,
                         icon: h.default,
@@ -3316,7 +3350,7 @@
                                     action: () => (0, d.default)(t)
                                 }, "manage-stream-menu".concat(t.ownerId))
                             })
-                        }), c ? null : R]
+                        }), c ? null : y]
                     })
                 })
             }
@@ -3854,10 +3888,10 @@
             "use strict";
             n.r(t), n.d(t, {
                 VideoButtonWrapper: function() {
-                    return c
+                    return f
                 },
                 default: function() {
-                    return f
+                    return E
                 }
             });
             var a = n("37983");
@@ -3867,35 +3901,36 @@
                 i = n("244201"),
                 l = n("289656"),
                 u = n("437825"),
-                o = n("981913"),
-                d = n("911360");
+                o = n("142303"),
+                d = n("981913"),
+                c = n("911360");
 
-            function c(e) {
+            function f(e) {
                 let t = (0, l.getVideoButtonLabel)(e),
                     {
                         enabled: n,
                         cameraUnavailable: r,
                         onChange: s,
-                        onCameraUnavailable: o,
-                        hasPermission: d,
-                        children: c,
-                        channelLimitReached: f = !1
+                        onCameraUnavailable: d,
+                        hasPermission: c,
+                        children: f,
+                        channelLimitReached: E = !1
                     } = e,
-                    E = (0, i.useAppContext)(),
-                    h = r ? () => o() : () => s(!e.enabled, E);
+                    h = (0, i.useAppContext)(),
+                    p = r ? () => d() : () => s(!e.enabled, h);
                 return (0, a.jsx)(a.Fragment, {
-                    children: c({
-                        onClick: h,
+                    children: f({
+                        onClick: p,
                         active: n,
-                        disabled: !n && (!d || f),
-                        iconComponent: u.default,
+                        disabled: !n && (!c || E),
+                        iconComponent: n ? u.default : o.default,
                         label: t,
                         unavailable: r
                     })
                 })
             }
 
-            function f(e) {
+            function E(e) {
                 let {
                     enabled: t,
                     join: n,
@@ -3903,22 +3938,22 @@
                     onChange: i,
                     onCameraUnavailable: l,
                     cameraUnavailable: u,
-                    hasPermission: f,
+                    hasPermission: o,
                     className: E,
                     channelLimitReached: h,
                     channelLimit: p,
                     centerButton: S = !1,
                     onPopoutClick: m,
                     ...C
-                } = e, _ = S ? o.CenterControlButton : o.default;
-                return (0, a.jsx)(c, {
+                } = e, _ = S ? d.CenterControlButton : d.default;
+                return (0, a.jsx)(f, {
                     enabled: t,
                     join: n,
                     channel: r,
                     onChange: i,
                     onCameraUnavailable: l,
                     cameraUnavailable: u,
-                    hasPermission: f,
+                    hasPermission: o,
                     channelLimitReached: h,
                     channelLimit: p,
                     children: e => {
@@ -3931,7 +3966,7 @@
                             ...C,
                             isActive: t,
                             className: s(E, {
-                                [d.fauxDisabled]: n
+                                [c.fauxDisabled]: n
                             }),
                             onPopoutClick: m
                         })
@@ -4504,6 +4539,47 @@
                     })
                 }, s.PhoneHangUpIcon)
         },
+        142303: function(e, t, n) {
+            "use strict";
+            n.r(t), n.d(t, {
+                default: function() {
+                    return l
+                }
+            });
+            var a = n("37983");
+            n("884691");
+            var r = n("469563"),
+                s = n("157697"),
+                i = n("75196"),
+                l = (0, r.replaceIcon)(function(e) {
+                    let {
+                        width: t = 24,
+                        height: n = 24,
+                        color: r = "currentColor",
+                        foreground: s,
+                        ...l
+                    } = e;
+                    return (0, a.jsxs)("svg", {
+                        ...(0, i.default)(l),
+                        width: t,
+                        height: n,
+                        viewBox: "0 0 24 24",
+                        children: [(0, a.jsx)("path", {
+                            fillRule: "evenodd",
+                            clipRule: "evenodd",
+                            d: "M6.74273 19H16C17.103 19 18 18.104 18 17V14.618L20.553 15.894C20.694 15.965 20.847 16 21 16C21.183 16 21.365 15.949 21.526 15.851C21.82 15.668 22 15.347 22 15V9C22 8.653 21.82 8.332 21.526 8.149C21.231 7.966 20.862 7.951 20.553 8.105L18 9.382V7.74273L6.74273 19ZM12.2574 5H4C2.897 5 2 5.897 2 7V15.2574L12.2574 5Z",
+                            fill: r
+                        }), (0, a.jsx)("rect", {
+                            y: "19.9623",
+                            width: "26",
+                            height: "2",
+                            transform: "rotate(-45 0 19.9623)",
+                            className: s,
+                            fill: r
+                        })]
+                    })
+                }, s.VideoSlashIcon)
+        },
         270227: function(e, t, n) {
             "use strict";
             n.r(t), n.d(t, {
@@ -4896,4 +4972,4 @@
         }
     }
 ]);
-//# sourceMappingURL=49eb57c97fda4f8cf149.js.map
+//# sourceMappingURL=1368cf5f95395f2ca906.js.map

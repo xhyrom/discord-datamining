@@ -2352,7 +2352,7 @@
             var n = r("37983");
             r("884691");
             var i = r("469563"),
-                l = r("265614"),
+                l = r("125094"),
                 o = r("75196"),
                 s = (0, i.replaceIcon)(function(e) {
                     let {
@@ -2377,7 +2377,7 @@
                             fill: i
                         })]
                     })
-                }, l.ScreenIcon)
+                }, l.ScreenArrowIcon)
         },
         698015: function(e, t, r) {
             "use strict";
@@ -2416,4 +2416,4 @@
         }
     }
 ]);
-//# sourceMappingURL=13d3847fe82b5606ccd8.js.map
+//# sourceMappingURL=c9dc017d68c2325c0431.js.map
