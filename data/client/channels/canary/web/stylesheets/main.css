@@ -8325,10 +8325,6 @@
     padding: 2px
 }
 
-.containerWrapper_fa6aa6 .content_e8dcfc {
-    margin-left: 8px
-}
-
 .animation_fb8933 {
     animation: slideInFromBottom__593e9.6s cubic-bezier(.26, .17, .28, 1.27).25s 1 forwards;
     transform: translatey(90px);
@@ -8357,6 +8353,16 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
+    cursor: pointer;
+    margin-left: 8px
+}
+
+.contentWithAvatar_c8a371 {
+    margin-left: 0
+}
+
+.avatarButton_cf8136 {
+    width: 52px;
     cursor: pointer
 }
 
@@ -19460,8 +19466,8 @@ input[type=checkbox]:focus-visible+.label_ee78c3 {
 
 .message__13e98 {
     font-weight: 500;
-    font-size: 16px;
-    line-height: 20px;
+    font-size: 1rem;
+    line-height: 1.25rem;
     white-space: nowrap;
     text-overflow: ellipsis;
     overflow: hidden
@@ -123610,4 +123616,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=app.b6aa532f7ef46aaf8293.css.map*/
+/*# sourceMappingURL=app.2ca94bbdc8647b0a08be.css.map*/
