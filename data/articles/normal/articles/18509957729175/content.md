@@ -1,3 +1,4 @@
+<h3 id="docs-internal-guid-877fd8af-7fff-e5a1-0d13-ea1f50622c2e"><span style="color: #434343;">This offer has expired and users will no longer be able to claim this Nitro trial as of November 13th, 2023 (11:59pm PST). <br></span></h3>
 <p id="docs-internal-guid-31a70ddd-7fff-19d1-7dee-3e06a8354c1c">For a limited time, Discord is offering a 2-week Nitro trial to eligible non-Nitro users starting <strong>November 7th, 2023 </strong>to <strong>November 13th, 2023</strong> <strong>(11:59pm PST)</strong>! </p>
 <p><span class="wysiwyg-font-size-large"><strong>What this article covers: </strong></span></p>
 <ul>
