@@ -1255,7 +1255,7 @@
             "use strict";
             n.r(t), n.d(t, {
                 default: function() {
-                    return U
+                    return k
                 }
             }), n("222007");
             var l = n("37983"),
@@ -1282,17 +1282,18 @@
                 M = n("794818"),
                 N = n("844659"),
                 T = n("657057"),
-                A = n("180161"),
-                j = n("781423"),
-                y = n("47677"),
-                R = n("49111"),
-                b = n("724210"),
-                L = n("782340"),
-                O = n("862839");
+                A = n("886125"),
+                j = n("180161"),
+                y = n("781423"),
+                R = n("47677"),
+                b = n("49111"),
+                L = n("724210"),
+                O = n("782340"),
+                D = n("862839");
             n("706250");
-            var D = n("632215");
+            var P = n("632215");
 
-            function P(e) {
+            function w(e) {
                 let {
                     text: t
                 } = e, [n, s] = a.useState(!1);
@@ -1313,12 +1314,12 @@
                     })
                 })
             }
-            let w = {
+            let U = {
                 blockQuote: {
                     react: (e, t, n) => (0, l.jsxs)("div", {
-                        className: D.blockquoteContainer,
+                        className: P.blockquoteContainer,
                         children: [(0, l.jsx)("div", {
-                            className: D.blockquoteDivider
+                            className: P.blockquoteDivider
                         }), (0, l.jsx)("blockquote", {
                             children: t(e.content, n)
                         })]
@@ -1349,15 +1350,15 @@
                 codeBlock: {
                     react(e, t, a) {
                         let s = () => (0, l.jsx)("code", {
-                            className: i(O.scrollbarGhostHairline, "hljs"),
+                            className: i(D.scrollbarGhostHairline, "hljs"),
                             children: (0, N.smartOutput)(e, t, a)
                         });
                         return (0, l.jsx)("pre", {
                             children: (0, l.jsxs)("div", {
-                                className: D.codeContainer,
+                                className: P.codeContainer,
                                 children: [S.SUPPORTS_COPY ? (0, l.jsx)("div", {
-                                    className: D.codeActions,
-                                    children: (0, l.jsx)(P, {
+                                    className: P.codeActions,
+                                    children: (0, l.jsx)(w, {
                                         text: e.content
                                     })
                                 }) : null, (0, l.jsx)(d.LazyLibrary, {
@@ -1369,7 +1370,7 @@
                                         {
                                             let n = t.highlight(e.lang, e.content, !0);
                                             return null == n ? s() : (0, l.jsx)("code", {
-                                                className: i(O.scrollbarGhostHairline, "hljs", n.language),
+                                                className: i(D.scrollbarGhostHairline, "hljs", n.language),
                                                 dangerouslySetInnerHTML: {
                                                     __html: n.value
                                                 }
@@ -1410,12 +1411,12 @@
                         let a = () => {
                             ! function(e, t) {
                                 let n = h.default.getGuild(e);
-                                if (null == e || null == n || !n.hasFeature(R.GuildFeatures.COMMUNITY)) return;
+                                if (null == e || null == n || !n.hasFeature(b.GuildFeatures.COMMUNITY)) return;
                                 let l = {
-                                        home: b.StaticChannelRoute.GUILD_HOME,
-                                        browse: b.StaticChannelRoute.CHANNEL_BROWSER,
-                                        customize: b.StaticChannelRoute.CUSTOMIZE_COMMUNITY,
-                                        guide: b.StaticChannelRoute.GUILD_HOME
+                                        home: L.StaticChannelRoute.GUILD_HOME,
+                                        browse: L.StaticChannelRoute.CHANNEL_BROWSER,
+                                        customize: L.StaticChannelRoute.CUSTOMIZE_COMMUNITY,
+                                        guide: L.StaticChannelRoute.GUILD_HOME
                                     },
                                     a = l[t],
                                     s = h.default.getGuild(e);
@@ -1424,21 +1425,21 @@
                                         channelId: a
                                     });
                                     return
-                                }(0, f.transitionTo)(R.Routes.CHANNEL(e, a))
+                                }(0, f.transitionTo)(b.Routes.CHANNEL(e, a))
                             }(e.guildId, e.channelId)
                         };
                         if (!(0, N.isStaticRouteIconType)(e.channelId)) return null;
                         let s = "".concat(e.channelId);
                         switch (e.channelId) {
-                            case b.StaticChannelId.GUILD_HOME:
-                            case b.StaticChannelId.SERVER_GUIDE:
-                                s = L.default.Messages.SERVER_GUIDE;
+                            case L.StaticChannelId.GUILD_HOME:
+                            case L.StaticChannelId.SERVER_GUIDE:
+                                s = O.default.Messages.SERVER_GUIDE;
                                 break;
-                            case b.StaticChannelId.CHANNEL_BROWSER:
-                                s = L.default.Messages.GUILD_SIDEBAR_CHANNEL_BROWSER;
+                            case L.StaticChannelId.CHANNEL_BROWSER:
+                                s = O.default.Messages.GUILD_SIDEBAR_CHANNEL_BROWSER;
                                 break;
-                            case b.StaticChannelId.CUSTOMIZE_COMMUNITY:
-                                s = L.default.Messages.CHANNELS_AND_ROLES
+                            case L.StaticChannelId.CUSTOMIZE_COMMUNITY:
+                                s = O.default.Messages.CHANNELS_AND_ROLES
                         }
                         return (0, l.jsx)(o.Tooltip, {
                             text: s,
@@ -1472,7 +1473,7 @@
                             a = null == e.start ? void 0 : (e.start + (e.items.length - 1)).toString().length;
                         return (0, r.reactElement)(l, "".concat(n.key), {
                             start: e.start,
-                            className: n.formatInline ? D.inlineFormat : null,
+                            className: n.formatInline ? P.inlineFormat : null,
                             style: {
                                 "--totalCharacters": a
                             },
@@ -1494,7 +1495,7 @@
                         });
                         return (0, r.reactElement)("h" + e.level, (null == n ? void 0 : n.key) != null ? "".concat(n.key) : null, {
                             children: l,
-                            className: n.formatInline ? D.inlineFormat : null
+                            className: n.formatInline ? P.inlineFormat : null
                         })
                     }
                 },
@@ -1518,10 +1519,10 @@
                 }
             };
 
-            function U(e) {
+            function k(e) {
                 return {
-                    ...w,
-                    link: (0, y.default)(e),
+                    ...U,
+                    link: (0, R.default)(e),
                     emoji: function(e) {
                         let {
                             emojiTooltipPosition: t = "top",
@@ -1570,8 +1571,9 @@
                             }
                         }
                     }(e),
-                    channelMention: (0, A.default)(e),
-                    commandMention: (0, j.default)(e)
+                    channelMention: (0, j.default)(e),
+                    commandMention: (0, y.default)(e),
+                    attachmentLink: (0, A.default)(e)
                 }
             }
         },
@@ -1658,6 +1660,53 @@
                     }, n);
                     return () => clearInterval(a)
                 }, [t, e.format, e.parsed]), "R" === e.format) ? r.TIMESTAMP_FORMATS.R(e.parsed) : e.formatted
+            }
+        },
+        886125: function(e, t, n) {
+            "use strict";
+            n.r(t), n.d(t, {
+                default: function() {
+                    return c
+                }
+            });
+            var l = n("37983");
+            n("884691");
+            var a = n("77078"),
+                s = n("272030"),
+                i = n("545158"),
+                r = n("765089"),
+                o = n("666897"),
+                u = n("844659"),
+                d = n("49111");
+
+            function c(e) {
+                return {
+                    react(t, c, m) {
+                        let f = m.noStyleAndInteraction ? void 0 : n => {
+                                e.shouldStopPropagation && (null == n || n.stopPropagation()), r.default.trackLinkClicked(t.attachmentUrl), e.shouldCloseDefaultModals && (0, a.closeAllModals)(), (0, i.default)(t.attachmentUrl)
+                            },
+                            h = m.noStyleAndInteraction ? d.NOOP : e => {
+                                (0, s.openContextMenuLazy)(e, async () => {
+                                    let {
+                                        default: e
+                                    } = await n.el("136394").then(n.bind(n, "136394"));
+                                    return n => (0, l.jsx)(e, {
+                                        ...n,
+                                        attachmentUrl: t.attachmentUrl,
+                                        attachmentName: t.attachmentName
+                                    })
+                                })
+                            };
+                        return (0, l.jsx)(o.default, {
+                            role: "link",
+                            href: t.attachmentUrl,
+                            onClick: f,
+                            onContextMenu: h,
+                            className: "attachmentLink",
+                            children: (0, u.smartOutput)(t, c, m)
+                        }, m.key)
+                    }
+                }
             }
         },
         180161: function(e, t, n) {
@@ -10602,4 +10651,4 @@
         }
     }
 ]);
-//# sourceMappingURL=85fe1ecf0ab8c295babe.js.map
+//# sourceMappingURL=8feb329f2ff83a01a1e8.js.map
