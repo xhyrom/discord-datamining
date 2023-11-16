@@ -13297,10 +13297,6 @@ input[type=checkbox]:focus-visible+.label_ee78c3 {
     opacity: 1
 }
 
-.iconHidden__8b643 {
-    opacity: 0
-}
-
 .diversitySelectorButton_a4f274 {
     width: var(--custom-emoji-picker-constants-diversity-emoji-size);
     height: var(--custom-emoji-picker-constants-diversity-emoji-size);
@@ -123642,4 +123638,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=app.8a0ee11c07d4cdf9a649.css.map*/
+/*# sourceMappingURL=app.be59d53f53e1dc1099e2.css.map*/

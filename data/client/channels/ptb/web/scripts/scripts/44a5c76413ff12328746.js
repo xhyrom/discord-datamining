@@ -17202,7 +17202,6 @@
             e.exports = {
                 Shine: "Shine__245a1",
                 icon: "icon__88132",
-                iconHidden: "iconHidden__8b643",
                 label: "label_ee78c3",
                 labelChecked: "labelChecked__9347e",
                 nitroWheel: "nitroWheel_aa56ce",
