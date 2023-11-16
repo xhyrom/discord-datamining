@@ -39,3 +39,4 @@
 <p>A: If you collect a pack from a private server, the pack will only display the name of the emoji you first selected within that pack. If you collect a pack from a public server, the name of the pack will be the same name as the server.</p>
 <p class="wysiwyg-text-align-center"><img src="https://support.discord.com/hc/article_attachments/18899822259095" alt="image4.png" width="335" height="273"></p>
 <h4 id="h_01HENYR8R1TFS9HW2MWF8AS2RW" class="wysiwyg-text-align-center"><span style="color: #666666;">Example Image of Private Server Pack </span></h4>
+<p class="wysiwyg-text-align-center"><span style="color: #666666;"><span id="docs-internal-guid-c03b498f-7fff-d119-80f4-fc030757dc41" style="color: #666666;">Collecting </span><strong>:tooSpicy:</strong> as the first emoji results in <strong>tooSpicy</strong> as the name of the pack.</span></p>
