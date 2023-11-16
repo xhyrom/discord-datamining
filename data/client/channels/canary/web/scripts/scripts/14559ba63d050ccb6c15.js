@@ -1,5 +1,5 @@
 (this.webpackChunkdiscord_app = this.webpackChunkdiscord_app || []).push([
-    ["90117"], {
+    ["72243"], {
         662697: function(e, t, n) {
             let i = {};
             i.isSafari = function() {
@@ -22203,7 +22203,6 @@
                     messages_badge_num_channels: "Messages tab badge counts # of unread channels instead of # of unread messages",
                     main_tab_launchpad: "Enable LaunchPad in Main Tab",
                     main_tab_legacy_quick_switcher: "Enable Legacy Quick Switcher in Main Tab",
-                    disable_new_channel_details: "Enable new channel details sheet",
                     swipe_to_edit: "Enable Swipe-to-Edit",
                     new_panels: "Use panels for chat",
                     new_channels_for_panels: "Use new channel list for panels",
@@ -49345,7 +49344,7 @@
                         var i;
                         let d = {
                                 environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                                build_number: "246251"
+                                build_number: "246258"
                             },
                             f = l.default.getCurrentUser();
                         null != f && (d.user_id = f.id, d.user_name = f.tag, null != f.email && (d.email = f.email));
@@ -62596,4 +62595,4 @@
         }
     }
 ]);
-//# sourceMappingURL=b199f3af9ba0ae0e681d.js.map
+//# sourceMappingURL=14559ba63d050ccb6c15.js.map
