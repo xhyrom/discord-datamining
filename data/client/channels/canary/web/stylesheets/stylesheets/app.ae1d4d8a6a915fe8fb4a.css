@@ -7149,6 +7149,20 @@
     margin-top: 1px
 }
 
+.icon_d942d4 {
+    flex: 0 0 auto;
+    margin-left: 2px
+}
+
+.emoji__814a3 {
+    flex: 0 0 auto
+}
+
+.textRuler__61dab {
+    position: absolute;
+    visibility: hidden
+}
+
 .button__9491f {
     font-size: 14px
 }
@@ -7640,20 +7654,6 @@
     color: var(--interactive-normal);
     height: 20px;
     width: 20px
-}
-
-.icon_d942d4 {
-    flex: 0 0 auto;
-    margin-left: 2px
-}
-
-.emoji__814a3 {
-    flex: 0 0 auto
-}
-
-.textRuler__61dab {
-    position: absolute;
-    visibility: hidden
 }
 
 .emoji__6100d {
@@ -19466,8 +19466,8 @@ input[type=checkbox]:focus-visible+.label_ee78c3 {
 
 .message__13e98 {
     font-weight: 500;
-    font-size: 16px;
-    line-height: 20px;
+    font-size: 1rem;
+    line-height: 1.25rem;
     white-space: nowrap;
     text-overflow: ellipsis;
     overflow: hidden
@@ -40000,7 +40000,9 @@ html .progress__4ef76 {
     border-radius: 12px;
     display: flex;
     flex-wrap: wrap;
-    gap: 8px
+    gap: 8px;
+    max-width: 148px;
+    justify-content: center
 }
 
 .iconWidget_db0821 {
@@ -40013,6 +40015,10 @@ html .progress__4ef76 {
 .iconWidget_db0821:hover {
     border: 1px solid var(--background-modifier-active);
     background-color: var(--background-modifier-active)
+}
+
+.defaultIcon__8ffba {
+    color: var(--interactive-normal)
 }
 
 .wrapper__139c2 {
@@ -60580,12 +60586,13 @@ html .progress__4ef76 {
     font-weight: 700
 }
 
-.theme-light .giftCardButton__12614 {
+.theme-light .giftCardButtonColor__59b3f {
     border-color: var(--premium-tier-2-pink-for-gradients-2);
     color: var(--premium-tier-2-pink-for-gradients-2)
 }
 
-.theme-dark .giftCardButton__12614 {
+.theme-dark .giftCardButtonColor__59b3f,
+.seasonalColor__0b327 {
     border-color: white;
     color: white
 }
@@ -104224,6 +104231,21 @@ html .invoiceCancelRow_a8669b {
     background-color: var(--background-modifier-accent)
 }
 
+.statusWidgetSelected__37084 {
+    box-shadow: -3px 4px 0 0 black;
+    border-color: "transparent"
+}
+
+.customInputRow__1eb00 {
+    display: flex;
+    flex-direction: row
+}
+
+.customInput_ac30ac {
+    margin-left: 8px;
+    flex: 1
+}
+
 .formHeaderContainer__6f476 {
     padding: 24px 16px 0;
     overflow: visible;
@@ -123616,4 +123638,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=app.36fdfbaaaa50403b194b.css.map*/
+/*# sourceMappingURL=app.ae1d4d8a6a915fe8fb4a.css.map*/

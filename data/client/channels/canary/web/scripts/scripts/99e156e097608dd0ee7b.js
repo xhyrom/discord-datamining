@@ -1666,12 +1666,12 @@
                         return e.length > 0 ? e.map(e => p.default.getUser(e)).filter(C.isNotNullish) : N
                     }
                     return l.type === g.ParticipantTypes.ACTIVITY ? l.participants.size > 0 ? Array.from(l.participants).map(e => p.default.getUser(e)).filter(C.isNotNullish) : N : N
-                }, [l]), x = r.useCallback(() => {
+                }, [l]), R = r.useCallback(() => {
                     D.current.cancel(), L(!0)
-                }, []), R = r.useCallback(() => {
+                }, []), x = r.useCallback(() => {
                     D.current.delay()
                 }, []), P = r.useCallback((e, t) => {
-                    x(), (0, f.openContextMenuLazy)(e, async () => {
+                    R(), (0, f.openContextMenuLazy)(e, async () => {
                         let {
                             default: e
                         } = await n.el("406784").then(n.bind(n, "406784"));
@@ -1680,9 +1680,9 @@
                             user: t
                         })
                     }, {
-                        onClose: R
+                        onClose: x
                     })
-                }, [R, x]);
+                }, [x, R]);
                 if (0 === y.length) return null;
                 if (m) return (0, a.jsx)(O, {
                     maxVisibleUsers: v,
@@ -1704,8 +1704,8 @@
                 }, "overflow")), (0, a.jsx)(E.default, {
                     section: T.AnalyticsSections.STREAM_VIEWER_POPOUT,
                     children: (0, a.jsx)("div", {
-                        onMouseEnter: x,
-                        onMouseLeave: R,
+                        onMouseEnter: R,
+                        onMouseLeave: x,
                         children: (0, a.jsx)(c.Popout, {
                             renderPopout: () => (0, a.jsx)(M, {
                                 participantType: l.type,
@@ -2376,7 +2376,7 @@
                     dsn: "https://fa97a90475514c03a42f80cd36d147c4@sentry.io/140984",
                     autoSessionTracking: !1,
                     environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                    release: "discord_web-a2ceae9a3e365b075e6fb7d47c7ceee237d64f9f",
+                    release: "discord_web-bde207d29e2e6fb1b2c93a5aadb9e03724de97da",
                     beforeSend: e => {
                         var t, n;
                         return !(null != (t = e).exception && null != t.exception.values && t.exception.values.every(e => null == e.stacktrace || null != e.stacktrace.frames && 1 === e.stacktrace.frames.length) && "canary" !== window.GLOBAL_ENV.RELEASE_CHANNEL || s.some(e => window.navigator.appVersion.toLowerCase().indexOf(e) >= 0)) && !i() && !("Aborted" === (n = e).message || "cancel captcha" === n.message) && l() ? e : null
@@ -2394,7 +2394,7 @@
                     })],
                     ignoreErrors: ["EADDRINUSE", "BetterDiscord", "EnhancedDiscord", "Powercord", "RecipeWebview", "jQuery", "localStorage", "has already been declared", "Cannot call hover while not dragging.", "Cannot call beginDrag while dragging.", "getHostNode", "setupCSS", "on missing remote object", "ChunkLoadError", "Cannot find module 'discord_utils'", "Failed to setup Krisp module", "Error invoking remote method 'DISCORD_NATIVE_MODULES_INSTALL': Error: Module updater is not available!", "Non-Error promise rejection captured with keys:", "Request has been terminated", "Cannot resolve a Slate point from DOM point", "Failed to fetch", "no suitable image found", "ResizeObserver loop limit exceeded", "The play() request was interrupted", "could not play audio", "notosans-400-normalitalic"],
                     denyUrls: [/recaptcha/, /mobilediscord\.com/, /betterdiscord:\/\//]
-                }), a.setTag("buildNumber", (e = "246258", "246258")), a.setTag("builtAt", String("1700149923400"));
+                }), a.setTag("buildNumber", (e = "246272", "246272")), a.setTag("builtAt", String("1700153933416"));
                 let t = window.GLOBAL_ENV.SENTRY_TAGS;
                 if (null != t && "object" == typeof t)
                     for (let e in t) a.setTag(e, t[e]);
@@ -2525,23 +2525,49 @@
             "use strict";
             n.r(t), n.d(t, {
                 updateHangStatus: function() {
-                    return s
+                    return i
+                },
+                updateCustomHangStatus: function() {
+                    return l
                 }
             });
             var a = n("913144"),
-                r = n("699209");
+                r = n("699209"),
+                s = n("843455");
 
-            function s(e, t) {
+            function i(e, t) {
                 let {
                     enableHangStatus: n
                 } = r.HangStatusExperiment.getCurrentConfig({
                     location: t
                 });
-                !n && null != e && a.default.dispatch({
+                if (!n || null == e || e === s.HangStatusTypes.NONE) {
+                    a.default.dispatch({
+                        type: "CLEAR_HANG_STATUS"
+                    });
+                    return
+                }
+                a.default.dispatch({
                     type: "UPDATE_HANG_STATUS",
-                    status: null
-                }), a.default.dispatch({
-                    type: "UPDATE_HANG_STATUS",
+                    status: e
+                })
+            }
+
+            function l(e, t, n) {
+                let {
+                    enableHangStatus: s
+                } = r.HangStatusExperiment.getCurrentConfig({
+                    location: n
+                });
+                if (!s || "" === e) {
+                    a.default.dispatch({
+                        type: "CLEAR_HANG_STATUS"
+                    });
+                    return
+                }
+                a.default.dispatch({
+                    type: "UPDATE_HANG_STATUS_CUSTOM",
+                    emoji: t,
                     status: e
                 })
             }
@@ -3246,7 +3272,7 @@
                     onClose: A,
                     onSelect: I,
                     appContext: M = _.AppContext.APP
-                } = e, O = f.default.supports(g.Features.DESKTOP_CAPTURE_APPLICATIONS), N = null !== (t = l.find(e => e.ownerId === (null == r ? void 0 : r.id))) && void 0 !== t ? t : null, L = v(n, r, l), D = (0, o.default)(N, M), y = (0, u.default)(N, M, _.NOOP_NULL), x = null == N ? (0, a.jsx)(s.MenuItem, {
+                } = e, O = f.default.supports(g.Features.DESKTOP_CAPTURE_APPLICATIONS), N = null !== (t = l.find(e => e.ownerId === (null == r ? void 0 : r.id))) && void 0 !== t ? t : null, L = v(n, r, l), D = (0, o.default)(N, M), y = (0, u.default)(N, M, _.NOOP_NULL), R = null == N ? (0, a.jsx)(s.MenuItem, {
                     id: "share-your-screen",
                     label: T.default.Messages.SHARE_YOUR_SCREEN,
                     icon: h.default,
@@ -3290,7 +3316,7 @@
                                     action: () => (0, d.default)(t)
                                 }, "manage-stream-menu".concat(t.ownerId))
                             })
-                        }), c ? null : x]
+                        }), c ? null : R]
                     })
                 })
             }
@@ -4870,4 +4896,4 @@
         }
     }
 ]);
-//# sourceMappingURL=5f8a3f7ff49b2fb718b8.js.map
+//# sourceMappingURL=99e156e097608dd0ee7b.js.map
