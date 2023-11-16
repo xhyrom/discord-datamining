@@ -262,6 +262,40 @@
                 })
             }
         },
+        641531: function(e, t, n) {
+            "use strict";
+            n.r(t), n.d(t, {
+                AttachmentIcon: function() {
+                    return i
+                }
+            });
+            var l = n("37983");
+            n("884691");
+            var a = n("669491"),
+                s = n("75196");
+            let i = e => {
+                let {
+                    width: t = 24,
+                    height: n = 24,
+                    color: i = a.default.colors.INTERACTIVE_NORMAL,
+                    colorClass: r = "",
+                    ...o
+                } = e;
+                return (0, l.jsx)("svg", {
+                    ...(0, s.default)(o),
+                    xmlns: "http://www.w3.org/2000/svg",
+                    width: t,
+                    height: n,
+                    fill: "none",
+                    viewBox: "0 0 24 24",
+                    children: (0, l.jsx)("path", {
+                        fill: "string" == typeof i ? i : i.css,
+                        d: "M10.575 4.011a6.966 6.966 0 0 1 9.85 0l.547.547a6.99 6.99 0 0 1 0 9.884l-7.265 7.265a1 1 0 0 1-1.414-1.414l7.265-7.265a4.99 4.99 0 0 0 0-7.056l-.547-.547a4.966 4.966 0 0 0-7.022 0l-8.022 8.022a3.243 3.243 0 1 0 4.586 4.585l6.24-6.24a1.121 1.121 0 0 0-1.586-1.585l-3.5 3.5a1 1 0 0 1-1.414-1.414l3.5-3.5a3.121 3.121 0 1 1 4.414 4.414l-6.24 6.24a5.243 5.243 0 0 1-7.414-7.414l8.021-8.022Z",
+                        className: r
+                    })
+                })
+            }
+        },
         4997: function(e, t, n) {
             "use strict";
             n.r(t), n.d(t, {
@@ -1666,27 +1700,32 @@
             "use strict";
             n.r(t), n.d(t, {
                 default: function() {
-                    return c
+                    return g
                 }
             });
             var l = n("37983");
             n("884691");
-            var a = n("77078"),
-                s = n("272030"),
-                i = n("545158"),
-                r = n("765089"),
-                o = n("666897"),
-                u = n("844659"),
-                d = n("49111");
+            var a = n("414456"),
+                s = n.n(a),
+                i = n("641531"),
+                r = n("77078"),
+                o = n("272030"),
+                u = n("545158"),
+                d = n("765089"),
+                c = n("666897"),
+                m = n("844659"),
+                f = n("49111"),
+                h = n("909266"),
+                p = n("671934");
 
-            function c(e) {
+            function g(e) {
                 return {
-                    react(t, c, m) {
-                        let f = m.noStyleAndInteraction ? void 0 : n => {
-                                e.shouldStopPropagation && (null == n || n.stopPropagation()), r.default.trackLinkClicked(t.attachmentUrl), e.shouldCloseDefaultModals && (0, a.closeAllModals)(), (0, i.default)(t.attachmentUrl)
+                    react(t, a, g) {
+                        let C = g.noStyleAndInteraction ? void 0 : n => {
+                                e.shouldStopPropagation && (null == n || n.stopPropagation()), d.default.trackLinkClicked(t.attachmentUrl), e.shouldCloseDefaultModals && (0, r.closeAllModals)(), (0, u.default)(t.attachmentUrl)
                             },
-                            h = m.noStyleAndInteraction ? d.NOOP : e => {
-                                (0, s.openContextMenuLazy)(e, async () => {
+                            E = g.noStyleAndInteraction ? f.NOOP : e => {
+                                (0, o.openContextMenuLazy)(e, async () => {
                                     let {
                                         default: e
                                     } = await n.el("136394").then(n.bind(n, "136394"));
@@ -1697,14 +1736,19 @@
                                     })
                                 })
                             };
-                        return (0, l.jsx)(o.default, {
+                        return (0, l.jsxs)(c.default, {
                             role: "link",
                             href: t.attachmentUrl,
-                            onClick: f,
-                            onContextMenu: h,
+                            onClick: C,
+                            onContextMenu: E,
                             className: "attachmentLink",
-                            children: (0, u.smartOutput)(t, c, m)
-                        }, m.key)
+                            children: [(0, l.jsx)(i.AttachmentIcon, {
+                                className: s(p.icon, h.icon),
+                                color: r.tokens.colors.MENTION_FOREGROUND,
+                                width: 16,
+                                height: 16
+                            }), (0, m.smartOutput)(t, a, g)]
+                        }, g.key)
                     }
                 }
             }
@@ -10651,4 +10695,4 @@
         }
     }
 ]);
-//# sourceMappingURL=8feb329f2ff83a01a1e8.js.map
+//# sourceMappingURL=4985cbcce24b683610ad.js.map
