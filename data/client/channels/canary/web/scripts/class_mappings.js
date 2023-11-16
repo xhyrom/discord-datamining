@@ -12557,7 +12557,8 @@
                 button: "button__4900d",
                 heading: "heading__2f354",
                 recurrences: "recurrences_c13348",
-                scroller: "scroller__6589a"
+                scroller: "scroller__6589a",
+                showScroller: "showScroller__06348"
             }
         },
         234865: function(e, t, o) {
@@ -12834,6 +12835,7 @@
                 creator: "creator__7ba98",
                 cursorPointer: "cursorPointer__41d35",
                 description: "description__6f48b",
+                divider: "divider_a10d0d",
                 externalLocation: "externalLocation_a32c26",
                 guildBadge: "guildBadge__9a293",
                 guildIcon: "guildIcon__94100",

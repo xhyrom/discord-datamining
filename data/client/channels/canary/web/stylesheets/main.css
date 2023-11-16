@@ -62103,68 +62103,6 @@ html .progress__4ef76 {
     color: var(--header-secondary)
 }
 
-.container__03455 {
-    padding: 4px;
-    border-radius: var(--radius-xs);
-    display: flex;
-    justify-content: space-between
-}
-
-.container__03455.canceled__5c690 {
-    cursor: auto
-}
-
-.container__03455:hover:not(.canceled__5c690) {
-    background-color: var(--background-secondary)
-}
-
-.timeStatus_b84727 {
-    width: 100%
-}
-
-.icon__4b3d5 {
-    color: var(--header-secondary)
-}
-
-.iconButton__42fca {
-    display: flex;
-    align-items: center;
-    justify-content: center
-}
-
-.iconButton__42fca:hover {
-    cursor: pointer
-}
-
-.iconButton__42fca:hover .icon__4b3d5 {
-    color: var(--interactive-active)
-}
-
-.canceledStatus__43ff2 {
-    margin-right: 8px
-}
-
-.recurrences_c13348 {
-    display: flex;
-    flex-direction: column;
-    padding: 4px 12px 12px
-}
-
-.heading__2f354 {
-    margin-bottom: 8px;
-    margin-left: 4px
-}
-
-.scroller__6589a {
-    max-height: 140px;
-    display: flex;
-    flex-direction: column
-}
-
-.button__4900d {
-    align-self: center
-}
-
 .container__6f79b {
     display: flex;
     flex-direction: row;
@@ -62281,6 +62219,71 @@ html .progress__4ef76 {
     margin-right: 32px
 }
 
+.container__03455 {
+    padding: 4px;
+    border-radius: var(--radius-xs);
+    display: flex;
+    justify-content: space-between
+}
+
+.container__03455.canceled__5c690 {
+    cursor: auto
+}
+
+.container__03455:hover:not(.canceled__5c690) {
+    background-color: var(--background-secondary)
+}
+
+.timeStatus_b84727 {
+    width: 100%
+}
+
+.icon__4b3d5 {
+    color: var(--header-secondary)
+}
+
+.iconButton__42fca {
+    display: flex;
+    align-items: center;
+    justify-content: center
+}
+
+.iconButton__42fca:hover {
+    cursor: pointer
+}
+
+.iconButton__42fca:hover .icon__4b3d5 {
+    color: var(--interactive-active)
+}
+
+.canceledStatus__43ff2 {
+    margin-right: 8px
+}
+
+.recurrences_c13348 {
+    display: flex;
+    flex-direction: column;
+    padding: 4px 12px 12px
+}
+
+.heading__2f354 {
+    margin-bottom: 8px;
+    margin-left: 4px
+}
+
+.scroller__6589a {
+    display: flex;
+    flex-direction: column
+}
+
+.showScroller__06348 {
+    max-height: 140px
+}
+
+.button__4900d {
+    align-self: center
+}
+
 .header__9dbe3 {
     padding-top: calc(3*var(--custom-event-detail-info-tab-base-spacing));
     padding-left: calc(2*var(--custom-event-detail-info-tab-base-spacing));
@@ -62378,6 +62381,15 @@ html .progress__4ef76 {
 .creator__7ba98:hover {
     -webkit-text-decoration: underline;
     text-decoration: underline
+}
+
+.divider_a10d0d {
+    height: 1px;
+    background-color: var(--background-modifier-accent);
+    border: none;
+    margin-left: 16px;
+    margin-right: 16px;
+    margin-top: calc(-3*var(--custom-event-detail-info-tab-base-spacing))
 }
 
 .guildInfoCard__67194 {
@@ -102069,7 +102081,7 @@ html .invoiceCancelRow_a8669b {
     padding-right: 0;
     background-color: var(--background-primary);
     min-height: 230px;
-    max-height: 500px
+    max-height: 516px
 }
 
 .footer__7a7ed {
@@ -123598,4 +123610,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=app.c909f063ebabe2a0b861.css.map*/
+/*# sourceMappingURL=app.b6aa532f7ef46aaf8293.css.map*/
