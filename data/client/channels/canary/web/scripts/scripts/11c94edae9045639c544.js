@@ -296,11 +296,8 @@
                         return {
                             type: "attachmentLink",
                             content: [{
-                                type: "mention",
-                                content: [{
-                                    type: "text",
-                                    content: l = a
-                                }]
+                                type: "text",
+                                content: l = a
                             }],
                             attachmentUrl: r,
                             attachmentName: l
@@ -1814,4 +1811,4 @@
         }
     }
 ]);
-//# sourceMappingURL=4a9f4376aea040c732c9.js.map
+//# sourceMappingURL=11c94edae9045639c544.js.map
