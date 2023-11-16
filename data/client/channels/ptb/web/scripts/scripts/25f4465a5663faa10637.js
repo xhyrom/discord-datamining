@@ -845,7 +845,7 @@
                         fuzzy: a = !0,
                         filter: i = W,
                         boosters: n = {}
-                    } = e, r = t.toLocaleLowerCase(), c = {
+                    } = e, r = (0, x.stripDiacritics)((0, x.normalize)(t.toLocaleLowerCase())), c = {
                         exactQuery: RegExp("^".concat(H.default.escape(r)), "i"),
                         containQuery: RegExp(H.default.escape(r), "i"),
                         queryLower: r
@@ -853,13 +853,14 @@
                     for (let e of d) {
                         if (!e.isMultiUserDM() || !i(e)) continue;
                         let t = (0, o.computeChannelName)(e, O.default, M.default).toLocaleLowerCase(),
-                            l = el(t, c, a);
-                        l > 0 && f.push({
+                            l = (0, x.stripDiacritics)(t),
+                            r = el(l, c, a);
+                        r > 0 && f.push({
                             type: K.AutocompleterResultTypes.GROUP_DM,
                             record: e,
-                            score: ee(l, n[e.id]),
+                            score: ee(r, n[e.id]),
                             comparator: (0, o.computeChannelName)(e, O.default, M.default),
-                            sortable: t
+                            sortable: l
                         })
                     }
                     return f.sort(s.default), f.length > l && (f.length = l), f
@@ -1325,4 +1326,4 @@
         }
     }
 ]);
-//# sourceMappingURL=f5d379cb13ab4bbfb1ed.js.map
+//# sourceMappingURL=25f4465a5663faa10637.js.map
