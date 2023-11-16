@@ -15787,6 +15787,7 @@
   "CLIPS_NITRO_EA_ANNOUNCEMENT_COACHMARK_CTA_SUBS": "\"Got it\"",
   "CLIPS_NITRO_EA_ANNOUNCEMENT_COACHMARK_CTA_NON_SUBS": "\"Get Nitro\"",
   "CLIPS_UNTITLED": "\"Untitled\"",
+  "CLIPS_UNKNOWN_SOURCE": "\"Unknown\"",
   "CLIPS_SETTINGS_OPT_OUT_OF_VOICE_RECORDING": "\"Allow my voice to be recorded in Clips\"",
   "CLIPS_SETTINGS_OPT_OUT_OF_VOICE_RECORDING_DESCRIPTION": "\"By turning on this setting, your voice may be included when someone in the same voice channel uses Clips.\"",
   "CLIPS_SETTINGS_VIEWERSIDE_CLIPS_TOGGLE": "\"Allow viewers to capture clips\"",
