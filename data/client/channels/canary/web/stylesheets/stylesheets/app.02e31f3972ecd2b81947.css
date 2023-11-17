@@ -53057,8 +53057,11 @@ html .progress__4ef76 {
     overflow: hidden;
     box-sizing: border-box;
     cursor: pointer;
-    border-bottom: 1px solid var(--background-modifier-accent);
     padding: 16px 10px
+}
+
+.messageRequestItem__3b951:not(.firstItem_ab16cb) {
+    border-top: 1px solid var(--background-modifier-accent)
 }
 
 .messageRequestItem__3b951:hover+.messageRequestItem__3b951,
@@ -123638,4 +123641,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=app.eaebd8072f55994bc3fb.css.map*/
+/*# sourceMappingURL=app.02e31f3972ecd2b81947.css.map*/
