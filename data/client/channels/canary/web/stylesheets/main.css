@@ -2740,7 +2740,7 @@
 }
 
 .title__746ed {
-    font-size: 17px
+    font-size: 1.0625rem
 }
 
 .developerResources_fdd04d:hover {
@@ -2771,8 +2771,8 @@
 }
 
 .backHeader__18afe {
-    font-size: 17px;
-    line-height: 24px;
+    font-size: 1.0625rem;
+    line-height: 1.5rem;
     color: var(--interactive-normal)
 }
 
@@ -19152,8 +19152,8 @@ input[type=checkbox]:focus-visible+.label_ee78c3 {
 }
 
 .planInfo_cd8cba {
-    font-size: 16px;
-    line-height: 20px;
+    font-size: 1rem;
+    line-height: 1.25rem;
     margin-top: 8px
 }
 
@@ -19465,8 +19465,8 @@ input[type=checkbox]:focus-visible+.label_ee78c3 {
 
 .message__13e98 {
     font-weight: 500;
-    font-size: 1rem;
-    line-height: 1.25rem;
+    font-size: 16px;
+    line-height: 20px;
     white-space: nowrap;
     text-overflow: ellipsis;
     overflow: hidden
@@ -22806,8 +22806,8 @@ input[type=checkbox]:focus-visible+.label_ee78c3 {
 }
 
 .name__8d1ec {
-    font-size: 16px;
-    line-height: 20px;
+    font-size: 1rem;
+    line-height: 1.25rem;
     font-weight: 500;
     flex: 1 1 auto
 }
@@ -41856,8 +41856,8 @@ html .progress__4ef76 {
 .errorState_b806b1 {
     padding: 20px 20px 40px;
     font-weight: 500;
-    font-size: 16px;
-    line-height: 20px;
+    font-size: 1rem;
+    line-height: 1.25rem;
     text-align: center
 }
 
@@ -41919,7 +41919,7 @@ html .progress__4ef76 {
 
 .confirmChannelName_c49514 {
     font-weight: 500;
-    font-size: 14px;
+    font-size: .875rem;
     margin-left: 8px;
     color: var(--header-primary)
 }
@@ -41927,7 +41927,7 @@ html .progress__4ef76 {
 .lastActiveTimestamp__56cd7 {
     margin-left: 8px;
     color: var(--text-muted);
-    font-size: 12px;
+    font-size: .75rem;
     margin-top: 2px
 }
 
@@ -123644,4 +123644,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=app.054ac8e5c5a38057893e.css.map*/
+/*# sourceMappingURL=app.9dc975aae357fb8e76d0.css.map*/
