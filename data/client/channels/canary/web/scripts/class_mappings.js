@@ -15209,7 +15209,12 @@
         730039: function(e, t, o) {
             "use strict";
             e.exports = {
-                widget: "widget_c99b48",
+                avatar: "avatar__3547f",
+                contentContainer: "contentContainer__4f798",
+                cta: "cta__86081",
+                iconGroup: "iconGroup__93485",
+                statusGroup: "statusGroup_ebfa6c",
+                statusIcon: "statusIcon__3e5cd",
                 wrapper: "wrapper__139c2"
             }
         },
@@ -15217,7 +15222,14 @@
             "use strict";
             e.exports = {
                 defaultIcon: "defaultIcon__8ffba",
+                divider: "divider__26943",
+                editIcon: "editIcon__562b8",
+                editOption: "editOption_fbe509",
                 iconWidget: "iconWidget_db0821",
+                iconsContainer: "iconsContainer__44b35",
+                optionIcon: "optionIcon__4e55f",
+                popoutOption: "popoutOption__8c8cf",
+                popoutTitle: "popoutTitle__00ba8",
                 popoutWrapper: "popoutWrapper__16db8",
                 statusButtonRegion: "statusButtonRegion__47ea7",
                 statusWidget: "statusWidget__878ca"

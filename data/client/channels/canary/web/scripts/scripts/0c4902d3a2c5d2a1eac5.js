@@ -16574,10 +16574,12 @@
                 BROADCASTING_BETA_TOOLTIP_TEXT: "Open Parties is an experimental feature. A limited number of users have the ability to host or join.",
                 START_BROADCAST_NOTIFICATION_BODY: "Start a party, so your friends can drop by!",
                 START_BROADCAST_NOTIFICATION_CTA: "Open a Party",
-                SET_STATUS_MODAL_TITLE: "Set your Hang Status",
-                SET_STATUS_MODAL_SUBTITLE: "Display to your friends know what your vibes are right now. Depending on your selection, we’ll let your friends will know you’re probably available to hang out in your server.",
-                STATUS_LEAD_IN_JUST: "I'm just -",
-                STATUS_LEAD_IN_HERE: "Here, but -",
+                STATUS_POPOUT_DEFAULTS: "The Basics",
+                STATUS_POPOUT_SET_CUSTOM: "Set Custom Activity",
+                STATUS_POPOUT_CLEAR_STATUS: "Clear Status",
+                SET_STATUS_MODAL_TITLE: "Set Custom Voice Activity",
+                SET_STATUS_MODAL_SUBTITLE: "Get unique with letting everyone know what you're doing.",
+                STATUS_LEAD_IN_JUST: "Right now, I'm just -",
                 STATUS_CHILLING: "Chilling tbh",
                 STATUS_GAMING: "GAMING",
                 STATUS_FOCUSING: "Focusing atm",
@@ -16586,6 +16588,7 @@
                 HANG_STATUS: "Hang Status",
                 HANG_STATUS_LOCATION: "in !!{guildName}!!",
                 CUSTOM_HANG_STATUS: "Custom Status",
+                CUSTOM_HANG_STATUS_CTA: "Jump in here!",
                 XBOX: "Xbox",
                 PLAYSTATION: "PlayStation",
                 GO_LIVE_MODAL_CAPTURE: "Capture Devices",
@@ -18220,7 +18223,7 @@
                 u = E("782340");
             (0, i.setUpdateRules)(s.default), (0, r.default)(u.default, n.default, T.default), a.default.Emitter.injectBatchEmitChanges(o.unstable_batchedUpdates), a.default.PersistedStore.disableWrites = __OVERLAY__, a.default.initialize();
             let L = window.GLOBAL_ENV.RELEASE_CHANNEL;
-            new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(L, ", Build Number: ").concat("246962", ", Version Hash: ").concat("36c5a728e682d6cc86d9f01c592ba4cc487ca6d6")), t.default.setTags({
+            new(0, A.default)().log("[BUILD INFO] Release Channel: ".concat(L, ", Build Number: ").concat("246973", ", Version Hash: ").concat("c68c29a37040d22576fe8823d41b6188b6e7b76a")), t.default.setTags({
                 appContext: l.CURRENT_APP_CONTEXT
             }), S.default.initBasic(), N.default.init(), I.FocusRingManager.init(), O.init(), (0, R.cleanupTempFiles)()
         },
@@ -20502,8 +20505,8 @@
 
             function o() {
                 var e;
-                let _ = parseInt((e = "246962", "246962"));
-                return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("246962")), _ = 0), _
+                let _ = parseInt((e = "246973", "246973"));
+                return Number.isNaN(_) && (t.default.captureMessage("Trying to open a changelog for an invalid build number ".concat("246973")), _ = 0), _
             }
         },
         990629: function(e, _, E) {
@@ -25019,7 +25022,7 @@
                         let I = o.default.getChannel(_);
                         if (null == I || I.type !== i.ChannelTypes.GUILD_VOICE) return;
                         let s = a.default.getCurrentHangStatus();
-                        if (null == s || s === i.HangStatusTypes.NONE) {
+                        if (null == s) {
                             (0, n.updateHangStatus)(i.HangStatusTypes.CHILLING, "HangStatusManager");
                             return
                         }
@@ -36346,4 +36349,4 @@
         }
     }
 ]);
-//# sourceMappingURL=bf1d749facc61885eb1f.js.map
+//# sourceMappingURL=0c4902d3a2c5d2a1eac5.js.map

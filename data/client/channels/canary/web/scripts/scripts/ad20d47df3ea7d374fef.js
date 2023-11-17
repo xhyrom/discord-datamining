@@ -2410,7 +2410,7 @@
                     dsn: "https://fa97a90475514c03a42f80cd36d147c4@sentry.io/140984",
                     autoSessionTracking: !1,
                     environment: window.GLOBAL_ENV.RELEASE_CHANNEL,
-                    release: "discord_web-36c5a728e682d6cc86d9f01c592ba4cc487ca6d6",
+                    release: "discord_web-c68c29a37040d22576fe8823d41b6188b6e7b76a",
                     beforeSend: e => {
                         var t, n;
                         return !(null != (t = e).exception && null != t.exception.values && t.exception.values.every(e => null == e.stacktrace || null != e.stacktrace.frames && 1 === e.stacktrace.frames.length) && "canary" !== window.GLOBAL_ENV.RELEASE_CHANNEL || s.some(e => window.navigator.appVersion.toLowerCase().indexOf(e) >= 0)) && !i() && !("Aborted" === (n = e).message || "cancel captcha" === n.message) && l() ? e : null
@@ -2428,7 +2428,7 @@
                     })],
                     ignoreErrors: ["EADDRINUSE", "BetterDiscord", "EnhancedDiscord", "Powercord", "RecipeWebview", "jQuery", "localStorage", "has already been declared", "Cannot call hover while not dragging.", "Cannot call beginDrag while dragging.", "getHostNode", "setupCSS", "on missing remote object", "ChunkLoadError", "Cannot find module 'discord_utils'", "Failed to setup Krisp module", "Error invoking remote method 'DISCORD_NATIVE_MODULES_INSTALL': Error: Module updater is not available!", "Non-Error promise rejection captured with keys:", "Request has been terminated", "Cannot resolve a Slate point from DOM point", "Failed to fetch", "no suitable image found", "ResizeObserver loop limit exceeded", "The play() request was interrupted", "could not play audio", "notosans-400-normalitalic"],
                     denyUrls: [/recaptcha/, /mobilediscord\.com/, /betterdiscord:\/\//]
-                }), a.setTag("buildNumber", (e = "246962", "246962")), a.setTag("builtAt", String("1700256161623"));
+                }), a.setTag("buildNumber", (e = "246973", "246973")), a.setTag("builtAt", String("1700256955312"));
                 let t = window.GLOBAL_ENV.SENTRY_TAGS;
                 if (null != t && "object" == typeof t)
                     for (let e in t) a.setTag(e, t[e]);
@@ -2559,26 +2559,26 @@
             "use strict";
             n.r(t), n.d(t, {
                 updateHangStatus: function() {
-                    return i
+                    return s
                 },
                 updateCustomHangStatus: function() {
+                    return i
+                },
+                clearHangStatus: function() {
                     return l
                 }
             });
             var a = n("913144"),
-                r = n("699209"),
-                s = n("843455");
+                r = n("699209");
 
-            function i(e, t) {
+            function s(e, t) {
                 let {
                     enableHangStatus: n
                 } = r.HangStatusExperiment.getCurrentConfig({
                     location: t
                 });
-                if (!n || null == e || e === s.HangStatusTypes.NONE) {
-                    a.default.dispatch({
-                        type: "CLEAR_HANG_STATUS"
-                    });
+                if (!n || null == e) {
+                    l();
                     return
                 }
                 a.default.dispatch({
@@ -2587,22 +2587,26 @@
                 })
             }
 
-            function l(e, t, n) {
+            function i(e, t, n) {
                 let {
                     enableHangStatus: s
                 } = r.HangStatusExperiment.getCurrentConfig({
                     location: n
                 });
                 if (!s || "" === e) {
-                    a.default.dispatch({
-                        type: "CLEAR_HANG_STATUS"
-                    });
+                    l();
                     return
                 }
                 a.default.dispatch({
                     type: "UPDATE_HANG_STATUS_CUSTOM",
                     emoji: t,
                     status: e
+                })
+            }
+
+            function l() {
+                a.default.dispatch({
+                    type: "CLEAR_HANG_STATUS"
                 })
             }
         },
@@ -4972,4 +4976,4 @@
         }
     }
 ]);
-//# sourceMappingURL=33985b8b6d82744e40f4.js.map
+//# sourceMappingURL=ad20d47df3ea7d374fef.js.map

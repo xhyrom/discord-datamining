@@ -15263,12 +15263,12 @@ input[type=checkbox]:focus-visible+.label_ee78c3 {
 .streamerModeEnabledBtn__51c2f {
     margin-top: 20px;
     font-weight: 700;
-    font-size: 18px;
+    font-size: 1.125rem;
     color: var(--white-500);
     background-color: var(--twitch);
     padding: 10px 20px;
     border-radius: 3px;
-    line-height: 29px;
+    line-height: 1.8125rem;
     text-transform: uppercase;
     cursor: pointer
 }
@@ -19465,8 +19465,8 @@ input[type=checkbox]:focus-visible+.label_ee78c3 {
 
 .message__13e98 {
     font-weight: 500;
-    font-size: 1rem;
-    line-height: 1.25rem;
+    font-size: 16px;
+    line-height: 20px;
     white-space: nowrap;
     text-overflow: ellipsis;
     overflow: hidden
@@ -40283,7 +40283,8 @@ html .progress__4ef76 {
     width: 40px;
     display: flex;
     align-items: center;
-    justify-content: center
+    justify-content: center;
+    overflow: hidden
 }
 
 .iconWidgetIcon__4c03a {
@@ -40304,13 +40305,23 @@ html .progress__4ef76 {
 
 .popoutWrapper__16db8 {
     background-color: var(--background-secondary-alt);
-    padding: 8px;
     border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+    max-width: 216px;
+    justify-content: center
+}
+
+.popoutTitle__00ba8 {
+    text-transform: uppercase;
+    margin: 12px 12px 4px
+}
+
+.iconsContainer__44b35 {
     display: flex;
     flex-wrap: wrap;
     gap: 8px;
-    max-width: 148px;
-    justify-content: center
+    padding: 4px 12px
 }
 
 .iconWidget_db0821 {
@@ -40325,20 +40336,84 @@ html .progress__4ef76 {
     background-color: var(--background-modifier-active)
 }
 
+.divider__26943 {
+    height: 1px;
+    background-color: var(--background-modifier-hover);
+    margin: 8px 0 0
+}
+
+.popoutOption__8c8cf {
+    cursor: pointer;
+    display: flex;
+    gap: 4px;
+    align-items: center;
+    padding: 8px;
+    margin: 4px;
+    border-radius: 8px
+}
+
+.popoutOption__8c8cf:hover {
+    background-color: var(--background-modifier-hover)
+}
+
+.editOption_fbe509 {
+    margin-bottom: 0
+}
+
+.optionIcon__4e55f {
+    height: 12px;
+    width: 12px
+}
+
+.editIcon__562b8,
 .defaultIcon__8ffba {
     color: var(--interactive-normal)
 }
 
 .wrapper__139c2 {
     background-color: var(--background-secondary-alt);
-    padding: 12px;
+    padding: 16px;
     width: 252px;
-    border-radius: 5px;
-    box-shadow: var(--elevation-high)
+    border-radius: 12px;
+    box-shadow: var(--elevation-high);
+    background-image: url(/assets/053ece9d4d0e004f1c47.svg);
+    background-position: bottom right;
+    background-repeat: no-repeat
 }
 
-.widget_c99b48 {
-    margin-bottom: 8px
+.contentContainer__4f798 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between
+}
+
+.statusGroup_ebfa6c {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    flex: 1
+}
+
+.iconGroup__93485 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 8px
+}
+
+.statusIcon__3e5cd {
+    height: 40px;
+    width: 40px
+}
+
+.avatar__3547f {
+    border-radius: 50%;
+    border: 2px solid rgba(var(--white), .2)
+}
+
+.cta__86081 {
+    margin-top: 12px
 }
 
 .draggable__081c0 {
@@ -123632,4 +123707,4 @@ img[alt] {
     }
 }
 
-/*# sourceMappingURL=app.88796491ff4f0115e956.css.map*/
+/*# sourceMappingURL=app.d64d1b80720bc1aa9e6e.css.map*/
